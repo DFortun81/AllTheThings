@@ -125,8 +125,8 @@ _.Holidays =
 					},
 				}),
 				n(150950, {	-- Tia Shortsleeve
-					["coord"] = { 84.4, 30.9, 535 },
-					["maps"] = { 535 },	-- Talador
+					["coord"] = { 84.4, 30.9, TALADOR },
+					["maps"] = { TALADOR },
 					["groups"] = {
 						i(167215),	-- Tia Shortsleeve's Short Sleeve Shirt
 					},

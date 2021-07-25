@@ -78,9 +78,9 @@ _.ExpansionFeatures =
 									{ 54.9, 79.7, SPIRES_OF_ARAK },
 									{ 59.0, 38.4, DRAENOR_NAGRAND },
 									{ 56.0, 70.0, DRAENOR_NAGRAND },
-									{ 59.0, 29.0, 535 },	-- Talador
-									{ 73.0, 28.0, 535 },	-- Talador
-									{ 73.7, 64.0, 535 },	-- Talador
+									{ 59.0, 29.0, TALADOR },
+									{ 73.0, 28.0, TALADOR },
+									{ 73.7, 64.0, TALADOR },
 									{ 46.0, 31.5, DRAENOR_SHADOWMOON_VALLEY },
 									{ 45.5, 66.3, GORGROND },
 								},

@@ -49,13 +49,13 @@ _.Toys =
 					{ 47.4, 12.4, SPIRES_OF_ARAK },	-- 'Ridge on the boarder with Talador' 47.4 12.45
 					{ 70.8, 75.9, TEROKKAR_FOREST },	-- (Outland) Skettis 70.78 75.88
 
-					{ 57.9, 80.5, 535 },	-- Talador (Draenor) Deathweb Hollow 57.85 80.53
+					{ 57.9, 80.5, TALADOR },	-- Deathweb Hollow 57.85 80.53
 					{ 45.4, 47.5, TEROKKAR_FOREST },	-- (Outland) The Bone Wastes 45.37 47.53
 
-					{ 50.4, 35.2, 535 },	-- Talador (Draenor) Shattrath City 'New' 50.41 35.19
+					{ 50.4, 35.2, TALADOR },	-- Shattrath City 'New' 50.41 35.19
 					{ 35.3, 12.5, TEROKKAR_FOREST },	-- (Outland) Shattrath City 'Old' 35.27 12.51
 
-					{ 68.4, 09.3, 535 },	-- Talador (Draenor) 'Path of Glory' 68.42 9.32
+					{ 68.4, 09.3, TALADOR },	-- 'Path of Glory' 68.42 9.32
 					{ 82.6, 66.1, ZANGARMARSH },	-- (Outland) Boarder between Hellfire and Zangarmarsh 82.59 66.13
 				}
 			}),

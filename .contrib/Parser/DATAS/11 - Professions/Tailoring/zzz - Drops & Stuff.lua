@@ -20,7 +20,7 @@ profession(TAILORING, {
 				DRAENOR_NAGRAND,
 				DRAENOR_SHADOWMOON_VALLEY,
 				SPIRES_OF_ARAK,
-				535,	-- Talador
+				TALADOR,
 			},
 		}),
 		q(36301, {	-- Trega's Tailoring Kit
@@ -34,7 +34,7 @@ profession(TAILORING, {
 				DRAENOR_NAGRAND,
 				DRAENOR_SHADOWMOON_VALLEY,
 				SPIRES_OF_ARAK,
-				535,	-- Talador
+				TALADOR,
 			},
 		}),
 	}),

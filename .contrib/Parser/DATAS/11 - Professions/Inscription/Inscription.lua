@@ -16,7 +16,7 @@ profession(INSCRIPTION, {
 				DRAENOR_NAGRAND,
 				DRAENOR_SHADOWMOON_VALLEY,
 				SPIRES_OF_ARAK,
-				535,	-- Talador
+				TALADOR,
 			},
 			["lvl"] = 90,
 		}),
@@ -31,7 +31,7 @@ profession(INSCRIPTION, {
 				DRAENOR_NAGRAND,
 				DRAENOR_SHADOWMOON_VALLEY,
 				SPIRES_OF_ARAK,
-				535,	-- Talador
+				TALADOR,
 			},
 			["lvl"] = 90,
 		}),

@@ -61,7 +61,7 @@ _.Toys =
 			}),
 			i(127869, {	-- A Tiny Plated Helm
 				["questID"] = 39266,	-- Pepe can be sometimes be summoned with this mask
-				["coord"] = { 51.01, 63.31, 535 },
+				["coord"] = { 51.01, 63.31, TALADOR },
 			}),
 			i(128874, {	-- A Tiny Scarecrow Costume
 				["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask

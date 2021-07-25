@@ -2029,8 +2029,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44571, {	-- Honor the Flame — Talador
 			["provider"] = { "n", 114489 },	-- Talador Flame Guardian
 			["isYearly"] = true,
-			["coord"] = { 43.4, 71.8, 535 },
-			["maps"] = { 535 },	-- Talador
+			["coord"] = { 43.4, 71.8, TALADOR },
+			["maps"] = { TALADOR },
 		}),
 		q(32501, {	-- Honor the Flame — Townlong Steppes
 			["provider"] = { "n", 69536 },	-- Townlong Steppes Flame Guardian

@@ -154,8 +154,8 @@ _.Achievements =
 				crit(35, {	-- Sully "The Pickle" McLeary (Celestial Tournament)
 					["coord"] = { 37.8, 57.2, 554 },
 				}),
-				crit(36, {	-- Taralune (Talador)
-					["coord"] = { 49.0, 80.4, 535 },
+				crit(36, {	-- Taralune
+					["coord"] = { 49.0, 80.4, TALADOR },
 				}),
 				crit(37, {	-- Taran Zhu (Celestial Tournament)
 					["coord"] = { 37.8, 57.2, 554 },

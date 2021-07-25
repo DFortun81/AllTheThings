@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(535, {	-- Talador
+		m(TALADOR, {
 			n(VENDORS, {
 				n(84212, {	-- Kazbala
 					["description"] = "This vendor is only available until you reach level 100. Items are also available from vendors in Stormwind, Orgrimmar, and Dalaran.|r",
-					["coord"] = { 45.2, 38.8, 535 },
+					["coord"] = { 45.2, 38.8, TALADOR },
 					["g"] = {
 						i(54436),	-- Blue Clockwork Rocket Bot (PET!)
 						i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
@@ -27,7 +27,7 @@ _.Zones =
 				}),
 				n(84216, {	-- Talgaiir the Ironrender
 					["description"] = "This vendor is only available at lower levels before he becomes phased out. Items are also available from Big Zokk Torquewrench in Area 52. Items require Legionnaire/Knight-Captain or higher to purchase. |r",
-					["coord"] = { 45.6, 38.6, 535 },
+					["coord"] = { 45.6, 38.6, TALADOR },
 					["g"] = {
 						-- Note: don't mark these as unobtainable here because they are obtainable from Big Zokk in Netherstorm.
 						a(i(77596)),	-- Replica Grand Marshal's Aegis
@@ -73,7 +73,7 @@ _.Zones =
 					},
 				}),
 				n(80765, {	-- Wixxa the Sapper <Explosives>
-					["coord"] = { 71.6, 30.2, 535 },
+					["coord"] = { 71.6, 30.2, TALADOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(23799, {	-- Schematic: Adamantite Rifle
@@ -109,7 +109,7 @@ _.Zones =
 					},
 				}),
 				n(86949, {	-- Zooti Fizzlefury
-					["coord"] = { 85.0, 31.0, 535 },
+					["coord"] = { 85.0, 31.0, TALADOR },
 					["g"] = {
 						-- currency(1191, {	-- Valor
 						un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel

@@ -5,14 +5,14 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(535, {	-- Talador
+		m(TALADOR, {
 			n(ACHIEVEMENTS, {
 				ach(9069,  {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(36, {	-- Taralune
-							["coord"] = { 49.0, 80.4, 535 },
+							["coord"] = { 49.0, 80.4, TALADOR },
 							["cr"] = 87125,	-- Taralune <Grand Master Pet Tamer>
 						}),
 					},
@@ -65,7 +65,7 @@ _.Zones =
 					["g"] = {
 						i(127869, {	-- A Tiny Plated Helm
 							["questID"] = 39266,
-							["coord"] = { 51.0, 63.3, 535 },	-- Pepe Location
+							["coord"] = { 51.0, 63.3, TALADOR },	-- Pepe Location
 							["g"] = {
 								crit(3),	-- Knight Pepe
 							},

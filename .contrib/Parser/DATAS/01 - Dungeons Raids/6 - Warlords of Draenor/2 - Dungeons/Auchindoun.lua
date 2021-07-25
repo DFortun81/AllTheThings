@@ -6,7 +6,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 	inst(547, {	-- Auchindoun
 		["lvl"] = 94,
 		["mapID"] = 593,
-		["coord"] = { 46.27, 73.92, 535 },	-- Talador, Draenor
+		["coord"] = { 46.27, 73.92, TALADOR },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
