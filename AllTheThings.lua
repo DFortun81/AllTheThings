@@ -19156,13 +19156,16 @@ end
 
 -- Clickable ATT Chat Link Handling
 (function()
-	-- Replace the default link-click handler since custom links otherwise cause it to break...?
-	local SetItemRef_orig = SetItemRef;
-	local function ClickURL_SetItemRef(...)
-		local op = ...;
-		if (string.sub(op, 1, 7) == "attlink") then
-			op = string.sub(op, 9);
+	hooksecurefunc("SetItemRef", function(link, text)
+		-- print("Chat Link Click",link,text)
+		-- if IsShiftKeyDown() then
+		-- 	ChatEdit_InsertLink(text);
+		-- else
+		if (string.sub(link, 1, 15) == "garrmission:ATT") then
+			local op = string.sub(link, 17)
+			-- print("ATT Link",op)
 			local type, paramA, paramB = strsplit(":", op);
+			-- print(type,paramA,paramB)
 			if type == "search" then
 				local cmd = paramA .. ":" .. paramB;
 				local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
@@ -19170,18 +19173,49 @@ end
 				return true;
 			elseif type == "dialog" then
 				return app:TriggerReportDialog(paramA);
+			-- elseif type == "nav" then
+			-- 	print(type,paramA,paramB)
 			end
-		else
-			SetItemRef_orig(...);
 		end
-	end
-	SetItemRef = ClickURL_SetItemRef;
+	end);
 
 	-- Turns a bit of text into a colored link which ATT will attempt to understand
 	function app:Linkify(text, color, operation)
-		text = "|cff"..color.."|Hattlink:"..operation.."|h["..text.."]|h|r";
+		text = "|Hgarrmission:ATT:"..operation.."|h|cff"..color.."["..text.."]|r|h";
+		-- print("Linkify",text)
 		return text;
 	end
+	-- Turns a bit of text into a chat-sendable link which other ATT users will attempt to understand
+	-- function app:ChatLink(text, operation)
+	-- 	text = "|Hgarrmission:ATT:"..operation.."|h["..text.."]|h";
+	-- 	print("ChatLink",text)
+	-- 	return text;
+	-- end
+
+	-- local function GetNavPath(group)
+	-- 	local current, nav, hash = group;
+	-- 	repeat
+	-- 		hash = app.GetHash(current);
+	-- 		if hash then
+	-- 			if nav then
+	-- 				nav = hash .. ">" .. nav;
+	-- 			else
+	-- 				nav = hash;
+	-- 			end
+	-- 		end
+	-- 		current = current.parent;
+	-- 	until not current;
+	-- 	return nav;
+	-- end
+
+	-- function app:GroupNavLink(group)
+	-- 	local nav = GetNavPath(group);
+	-- 	if nav then
+	-- 		print("nav:",nav)
+	-- 		return app:Linkify(group.text, "f5d142", "nav:"..nav);
+	-- 		-- return app:ChatLink(group.text, "nav:"..nav);
+	-- 	end
+	-- end
 
 	-- Stores some information for use by a report popup by id
 	function app:SetupReportDialog(id, reportMessage, text)
