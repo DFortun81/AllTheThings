@@ -73,6 +73,7 @@ _.Zones =
 						172713,	-- Muckpool Vandal
 					},
 				}),
+				i(187430),	-- Harvester's Sinvyr Chalice
 				i(183420, {	-- Hopebreaker's Right Boot
 					["classes"] = { DEMONHUNTER, DRUID, MONK, ROGUE },
 					["g"] = {

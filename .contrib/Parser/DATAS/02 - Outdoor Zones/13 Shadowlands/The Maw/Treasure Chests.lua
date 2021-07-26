@@ -191,6 +191,7 @@ _.Zones =
 						i(186185),	-- Lil'Abom Legs
 					},
 				}),
+				-- TODO: Stolen Anima Vessels are tied to their Covenant it seems, move them to respective Covenants as checked
 			}),
 		}),
 	}),
@@ -198,6 +199,4 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(64261),	-- Desmotaeron treasure - Jeweled Heart of Ezekiel
-	q(64055),	-- Stolen Anima Vessel
-	q(64056),	-- Stolen Anima Vessel
 };

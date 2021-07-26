@@ -114,13 +114,23 @@ _.Zones =
 						}),
 					}),
 					n(TREASURES, {
-						-- TODO: objectID instead of quest
-						q(64269, {	-- Stolen Anima Vessel Loot trigger
-							["name"] = "Looted a Stolen Anima Vessel.",
+						-- TODO: Stolen Anima Vessels are tied to their Covenant it seems?, move them to respective Covenants as checked
+						o(369227, {	-- Stolen Anima Vessel
+							["questID"] = 64265,
 							["isWeekly"] = true,
-							-- ["coords"] = {
-							-- },
+							["coords"] = {
+								{ 46.0, 83.1, THE_MAW },	-- Cave entrance
+								{ 47.8, 86.5, THE_MAW },	-- Object
+							},
 						}),
+						o(369235, {	-- Stolen Anima Vessel
+							["questID"] = 64269,
+							["isWeekly"] = true,
+							["coords"] = {
+								{ 32.4, 43.1, THE_MAW },
+							},
+						}),
+						-- TODO: objectID instead of quest
 						q(64270, {	-- Stolen Anima Vessel Loot trigger
 							["name"] = "Looted a Stolen Anima Vessel.",
 							["isWeekly"] = true,
@@ -133,8 +143,4 @@ _.Zones =
 			}),
 		}),
 	}),
-};
-
-_.HiddenQuestTriggers = {
-	q(64265),	-- this was for a hidden anima vessel in the beastwarrens, didn't get coords
 };

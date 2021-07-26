@@ -198,6 +198,24 @@ _.Zones =
 								},
 							}),
 						}),
+						n(TREASURES, {
+							o(368950, {	-- Stolen Anima Vessel
+								["questID"] = 64057,
+								["isWeekly"] = true,
+								["coords"] = {
+									{ 32.6, 40.9, THE_MAW },
+									{ 32.6, 43.3, THE_MAW },
+								},
+							}),
+							o(368951, {	-- Stolen Anima Vessel
+								["questID"] = 64058,
+								["isWeekly"] = true,
+								["coords"] = {
+									{ 34.1, 35.7, THE_MAW },
+									{ 45.4, 47.7, THE_MAW },
+								},
+							}),
+						}),
 					},
 				}),
 				q(63543, {	-- Necrolord Assault
@@ -437,6 +455,15 @@ _.Zones =
 								},
 								["cr"] = 179601,	-- Mad Maw Construct
 							}),
+							o(368946, {	-- Stolen Anima Vessel
+								["questID"] = 64044,
+								["isWeekly"] = true,
+								["coords"] = {
+									{ 30.6, 58.4, THE_MAW },
+									{ 34.2, 64.6, THE_MAW },
+									{ 36.7, 68.0, THE_MAW },
+								},
+							}),
 						}),
 					},
 				}),
@@ -626,6 +653,22 @@ _.Zones =
 									i(186191),	-- Infused Etherwyrm (PET!)
 								},
 							}),
+							o(368952, {	-- Stolen Anima Vessel
+								["questID"] = 64059,
+								["isWeekly"] = true,
+								["coords"] = {
+									{ 25.3, 38.3, THE_MAW },
+									{ 25.3, 33.2, THE_MAW },
+								},
+							}),
+							o(368953, {	-- Stolen Anima Vessel
+								["questID"] = 64060,
+								["isWeekly"] = true,
+								["coords"] = {
+									{ 19.0, 50.2, THE_MAW },
+									{ 22.6, 48.6, THE_MAW },
+								},
+							}),
 						}),
 						n(-18, {	-- Rewards
 							crit(3, {	-- Night Fae Assault
@@ -781,6 +824,22 @@ _.Zones =
 								i(187410),	-- Death's Advance Battlefield Drape
 							}),
 						}),
+						n(TREASURES, {
+							o(368948, {	-- Stolen Anima Vessel
+								["questID"] = 64055,
+								["isWeekly"] = true,
+								["coords"] = {
+									{ 27.9, 19.4, THE_MAW },
+								},
+							}),
+							o(368949, {	-- Stolen Anima Vessel
+								["questID"] = 64056,
+								["isWeekly"] = true,
+								["coords"] = {
+									{ 26.1, 19.6, THE_MAW },
+								},
+							}),
+						}),
 					},
 				}),
 			}),
@@ -791,11 +850,8 @@ _.Zones =
 _.HiddenQuestTriggers = {
 --	TODO: Stolen Anima Vessels probably need to be added at some point, but i'm not really sure how they work (example: NF ones are all the fuck over, in and out of the rift, some have multiple coords, can't tell when/how they reset, etc.) so i am just throwing them here for now
 --	Kyrian
-	q(64057),	-- Stolen Anima Vessel (32.6, 43.3) - didn't get objectID
-	q(64058),	-- Stolen Anima Vessel (34.1, 35.7) - 368951
 
 --	Necrolord
-	q(64044),	-- Stolen Anima Vessel (30.6, 58.4) / (34.2, 64.6) / (36.7, 68.0) - 368946
 	q(63807),	-- selecting Boil Master Yetch to accompany you on You and What Army
 	q(63809),	-- selecting Cutter Fin to accompany you on You and What Army
 	q(63806),	-- selecting Flytrap to accompany you on You and What Army
@@ -805,8 +861,6 @@ _.HiddenQuestTriggers = {
 
 --	Night Fae
 	q(63821),	-- triggered when completing the assault (#63823)
-	q(64059),	-- Stolen Anima Vessel (25.3, 38.3)
-	q(64060),	-- Stolen Anima Vessel (19.0, 50.2) - 368953
 
 --	Venthyr
 	q(63938),	-- triggered when returning Shadow to Reldorn on "They Grow Up So Quickly"
