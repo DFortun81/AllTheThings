@@ -4106,7 +4106,14 @@ end
 -- visibility in popouts
 app.BuildSourceParent = function(group)
 	-- only show sources for Things and not 'headers'
-	if not group or group.key == "headerID" then return; end
+	if not group or not group.key
+		or group.key == "headerID"
+		or group.key == "filterID"
+		or group.key == "flightPathID"
+		or group.key == "professionID"
+		or group.key == "categoryID"
+		then return;
+	end
 
 	-- pull all listings of this 'Thing'
 	local things = app.SearchForLink(group.key .. ":" .. group[group.key]);
