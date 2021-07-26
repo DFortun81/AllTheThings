@@ -1158,6 +1158,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(186377),	-- Tarnished Insignia of Quel'Thalas
 						i(186438),	-- Old Warrior's Soul
 						i(187592),	-- Wraithwisp Sinew (Upgrade Legendary)
+						i(182177),	-- Owlcat Soul (NF Soulshape)
 					},
 				}),
 			}),
@@ -1518,6 +1519,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(186377),	-- Tarnished Insignia of Quel'Thalas
 						i(186438),	-- Old Warrior's Soul
 						i(187593),	-- Ethereal Fletching (Upgrade Legendary)
+						i(182177),	-- Owlcat Soul (NF Soulshape)
 					},
 				}),
 			}),
@@ -1589,6 +1591,7 @@ _.HiddenQuestTriggers = {
 	q(64475),	-- The Nine (Heroic) (Heroic-Week 2)
 	q(64631),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
 	q(64658),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
+	q(64476),	-- The Nine (Mythic)
 
 	q(64481),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
 	q(64482),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
@@ -1632,7 +1635,7 @@ _.HiddenQuestTriggers = {
 	q(64502),	-- Sylvanas Windrunner (Normal)?
 	q(64638),	-- Sylvanas Windrunner (Normal)?
 	q(64665),	-- Sylvanas Windrunner (Normal)?
-	-- q( ),	-- Sylvanas Windrunner (Heroic)
+	q(64503),	-- Sylvanas Windrunner (Heroic)
 
 	q(64707),	-- Sylvanas Windrunner Cinematic?
 };

@@ -59,6 +59,7 @@ _.ExpansionFeatures =
 					}),
 					q(62432, {	-- Owlcat Soul
 						["provider"] = { "i", 182177 },	-- Owlcat Soul
+						["crs"] = { 175732 },	-- Sylvanas Windrunner
 					}),
 					q(62433, {	-- Raptor Soul
 						["provider"] = { "i", 182178 },	-- Raptor Soul
