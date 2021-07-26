@@ -545,9 +545,11 @@ _.Zones =
 				}),
 				q(41778, {	-- Firing Up the Forge
 					["provider"] = { "n", 90463 },	-- Archmage Karlain
-					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 42.7, 28.4, 627 },
 					["lvl"] = 45,
+					["timeline"] = {
+						"removed 9.1",
+					},
 				}),
 				q(45917, {	-- Following the Scent
 					["sourceQuests"] = { 45125 },	-- Dabbling in the Demonic
@@ -757,7 +759,10 @@ _.Zones =
 					["repeatable"] = true,
 					["provider"] = { "n", 114719 },	-- Trader Caelen
 					["coord"] = { 42.3, 27.0, 627 },
-					["lvl"] = 110,
+					["lvl"] = 45,
+					["timeline"] = {
+						"removed 9.1",
+					},
 				}),
 				q(45185, {	-- Message from the Shadows
 					["sourceQuests"] = {
@@ -822,7 +827,10 @@ _.Zones =
 					["repeatable"] = true,
 					["provider"] = { "n", 114719 },	-- Trader Caelen
 					["coord"] = { 42.3, 27.0, 627 },
-					["lvl"] = 110,
+					["lvl"] = 45,
+					["timeline"] = {
+						"removed 9.1",
+					},
 				}),
 				q(47022, {	-- Protection: Aid of the Illidari
 					["sourceQuests"] = {

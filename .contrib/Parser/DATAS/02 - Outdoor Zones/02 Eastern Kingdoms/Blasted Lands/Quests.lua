@@ -499,6 +499,7 @@ _.Zones =
 					["provider"] = { "n", 7505 },	-- Bloodmage Drazial
 				}),
 				q(25681, {	-- Some People Just Need Killing
+					["description"] = "|cffFF0000DO NOT GET IN THE BOX.|r\nThe box will change which phase your character is in, and waste a lot of time.",
 					["provider"] = { "n", 41134 },	-- Tak'arili
 					["coord"] = { 62.2, 1.4, BLASTED_LANDS },
 					["races"] = HORDE_ONLY,

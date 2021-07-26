@@ -113,6 +113,7 @@ _.Zones =
 							}),
 						}),
 					}),
+					--[[
 					n(ZONEDROPS, {
 						-- TODO: this might be from screaming shade, which has been bugged on live the entire first week
 						i(187174, {	-- Shaded Judgment Stone (TOY!)
@@ -121,7 +122,7 @@ _.Zones =
 								179832,	-- Skittering Shadow
 							},
 						}),
-					}),
+					}),--]]
 				},
 			}),
 		}),

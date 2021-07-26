@@ -83,7 +83,7 @@ _.Zones =
 					},
 				}),
 				n(161310, {	-- Executioner Adrastia
-				--	TODO: unsure what triggers this rare's spawn.  speculation that it's tied to Executioner Aatron or has a similar aggro mechanic to him.  i have seen both up at the same time
+					["description"] = "As of 9.1, there is now an on-screen counter in the area: 'Dredgers Escaped: 0/50'. Freeing 50 dredgers causes the rare to spawn. Once the rare is killed, the counter resets.",
 					["questID"] = 58441,
 					["isDaily"] = true,
 					["coord"] = { 44.0, 51.0, REVENDRETH },
