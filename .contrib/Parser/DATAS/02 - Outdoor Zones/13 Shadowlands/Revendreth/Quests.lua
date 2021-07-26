@@ -440,8 +440,9 @@ _.Zones =
 					["coord"] = { 36.0, 22.4, REVENDRETH },
 				}),
 				q(61839, {	-- Nipping at the Undergrowth
-					["description"] = "Becomes available in the Endmire north of Darkhaven, after looting Impressionable Gorger Spawn from the Worldedge Gorger.",
+					["description"] = "Becomes available in the Endmire north of Darkhaven after looting Impressionable Gorger Spawn from the Worldedge Gorger.",
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["cost"] = { { "i", 180583, 1 } },	-- Impressionable Gorger Spawn (technically this doesn't stay in your inventory, but i think this is a better way to display it - when it was added as a drop, the rare still showed up as something you needed to do, vs 'cost' that will disappear as soon as this quest is done)
 					["g"] = {
 						i(182590),	-- Vinewormed Coin Pouch
 					}

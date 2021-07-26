@@ -356,9 +356,7 @@ _.Zones =
 						crit(6, {	-- Worldedge Gorger
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
-						i(180583, {	-- Impressionable Gorger Spawn
-							i(182589),	-- Loyal Gorger (MOUNT!)
-						}),
+						i(180583),	-- Impressionable Gorger Spawn
 					},
 				}),
 			}),

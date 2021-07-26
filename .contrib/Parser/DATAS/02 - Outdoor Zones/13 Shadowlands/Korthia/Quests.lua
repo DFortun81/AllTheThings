@@ -652,13 +652,14 @@ _.Zones =
 					["g"] = {
 						--	different characters can have different rewards for this quest on the same day.  checked all 3 back to back on 5/18, priest had Paint Brush Cup, shaman had Wheelbarrow, and mage had Chalice
 						i(186690),	-- Gold Filled Barrel
-						i(186693),	-- Gold Filled Wheelbarrow on 5/4 but hadn't before, so perhaps not every time?  contained ~893g
-						i(186707),	-- Gold Filled Crate on 5/14.  contained ~401g
-						i(186708),	-- Gold Filled Paint Brush Cup on 5/18.  contained ~251g
-						i(186705),	-- Gold Filled Chalice (didn't do daily on this character so not sure how much it contains)
-						i(186688),	-- Gold Filled Wash Bucket
-						i(186691),	-- Gold Filled Satchel
+						i(186705),	-- Gold Filled Chalice
+						i(186707),	-- Gold Filled Crate
 						i(186706),	-- Gold Filled Hat
+						i(186692),	-- Gold Filled Helmet
+						i(186708),	-- Gold Filled Paint Brush Cup
+						i(186691),	-- Gold Filled Satchel
+						i(186688),	-- Gold Filled Wash Bucket
+						i(186693),	-- Gold Filled Wheelbarrow
 					},
 				}),
 				q(64065, {	-- Local Reagents
@@ -776,11 +777,23 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 63.3, 25.2, KORTHIA },
 				}),
+				q(63786, {	-- Sweep the Windswept Aerie
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178794 },	-- General Draven
+					["isDaily"] = true,
+					["coord"] = { 61.5, 25.2, KORTHIA },
+				}),
 				q(64101, {	-- The Proper Procedures
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178790 },	-- The Accuser
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.3, KORTHIA },
+				}),
+				q(64018, {	-- The Weight of Stone
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178794 },	-- General Draven
+					["isDaily"] = true,
+					["coord"] = { 61.5, 25.2, KORTHIA },
 				}),
 				q(64194, {	-- War Prototype
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -913,23 +926,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.6, 25.7, KORTHIA },
 				}),
-				q(63786, {	-- Sweep the Windswept Aerie
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178794 },	-- General Draven
-					["isDaily"] = true,
-					["coord"] = { 61.5, 25.2, KORTHIA },
-				}),
 				q(64089, {	-- Teas and Tinctures
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179218 },	-- Theotar
 					["isDaily"] = true,
 					["coord"] = { 61.6, 25.7, KORTHIA },
-				}),
-				q(64018, {	-- The Weight of Stone
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178794 },	-- General Draven
-					["isDaily"] = true,
-					["coord"] = { 61.5, 25.2, KORTHIA },
 				}),
 				q(64104, {	-- Think of the Critters
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance

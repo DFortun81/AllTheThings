@@ -131,9 +131,9 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(187040, {	-- Twin-Scythe Spaulders
-					-- ["crs"] = {
-					--	no drop data yet, just reported by players
-					-- },
+					["crs"] = {
+						169859,	-- Observer Zelgar
+					},
 				}),
 				i(187045, {	-- Veiled Tormentor's Mantle
 					["crs"] = {

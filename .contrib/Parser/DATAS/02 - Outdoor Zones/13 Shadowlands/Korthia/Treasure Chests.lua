@@ -432,10 +432,10 @@ _.Zones =
 							["name"] = "Third Chain",
 						}),
 						i(187016),	-- Eviscerator's Spiked Mantle
+						i(187026),	-- Field Warden's Torture Kit
 						i(187240),	-- Field Warden's Watchful Eye
 						i(187023),	-- Instructor's Mantle
 						i(187020),	-- Necrobinder's Shoulderpads
-						i(187026),	-- Field Warden's Torture Kit
 					},
 				}),
 			}),

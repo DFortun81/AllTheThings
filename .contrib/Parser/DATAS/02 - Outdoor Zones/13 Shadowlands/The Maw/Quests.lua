@@ -234,7 +234,7 @@ _.Zones =
 								},
 							}),
 							n(177330, {	-- Promathiz
-								-- ["questID"] = ,
+								["questID"] = 64115,
 								["isDaily"] = true,
 								["g"] = {
 									i(186007),	-- Cudgel of the Tin Sentinel
