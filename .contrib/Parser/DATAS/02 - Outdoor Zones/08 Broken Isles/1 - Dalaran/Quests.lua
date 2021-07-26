@@ -545,8 +545,9 @@ _.Zones =
 				}),
 				q(41778, {	-- Firing Up the Forge
 					["provider"] = { "n", 90463 },	-- Archmage Karlain
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 42.7, 28.4, 627 },
-					["lvl"] = 110,
+					["lvl"] = 45,
 				}),
 				q(45917, {	-- Following the Scent
 					["sourceQuests"] = { 45125 },	-- Dabbling in the Demonic

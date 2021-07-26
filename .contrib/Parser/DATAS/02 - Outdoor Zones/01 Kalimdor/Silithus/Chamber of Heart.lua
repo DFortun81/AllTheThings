@@ -741,6 +741,7 @@ _.Zones =
 							["sourceQuest"] = 58631,	-- Into Dreams
 						}),
 						q(58991, {	-- Curious Corruption
+							["u"] = REMOVED_FROM_GAME,
 							["description"] = "Automatically granted when you get your first corrupted item.",
 						}),
 						un(REMOVED_FROM_GAME, q(58876, {	-- Lost Flight
