@@ -41,14 +41,6 @@ _.Zones =
 					["provider"] = { "n", 177900 },	-- Xandria
 					["isWeekly"] = true,
 					["g"] = {
-					--[[ treasure that contains pet supposedly during kyrian assault, haven't found it yet
-						o(368935, {	-- Sinfall Screecher Cage
-							["coord"] = { , , THE_MAW },
-							["g"] = {
-								i(186544),	-- Sinfall Screecher (PET!)
-							},
-						}),
-					--]]
 						n(QUESTS, {
 							q(63858, {	-- Courage of the Soul
 								["provider"] = { "n", 178227 },
@@ -199,6 +191,14 @@ _.Zones =
 							}),
 						}),
 						n(TREASURES, {
+							o(368935, {	-- Sinfall Screecher Cage
+								["questID"] = 64039,	-- To show whether the character can obtain another of the pet
+								["coord"] = { 30.0, 43.1, THE_MAW },
+								["crs"] = { 179189 },	-- Chain of Domination
+								["g"] = {
+									i(186544),	-- Sinfall Screecher (PET!)
+								},
+							}),
 							o(368950, {	-- Stolen Anima Vessel
 								["questID"] = 64057,
 								["isWeekly"] = true,
