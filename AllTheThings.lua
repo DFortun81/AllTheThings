@@ -15968,7 +15968,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			-- Cache that we're in the current map ID.
 			-- print("new map");
 			self.mapID = id;
-			Callback(self.Update, self);
+			-- force update when showing the minilist
+			Callback(self.Update, self, true);
 		end
 		local function OpenMiniListForCurrentZone()
 			OpenMiniList(app.GetCurrentMapID(), true);
