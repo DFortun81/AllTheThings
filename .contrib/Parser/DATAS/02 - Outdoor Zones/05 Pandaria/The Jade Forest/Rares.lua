@@ -253,7 +253,7 @@ _.Zones =
 				n(69769, {	-- Zandalari Warbringer (Slate)
 					["coords"] = {
 						{ 47.4, 61.5, 422 },	-- Dread Wastes
-						{ 39.8, 65.9, 418 },	-- Krasarang Wilds
+						{ 39.8, 65.9, KRASARANG_WILDS },
 						{ 75.1, 67.4, 379 },	-- Kun-Lai Summit
 						{ 52.5, 18.8, 371 },	-- The Jade Forest
 						{ 36.5, 85.6, 388 },	-- Townlong Steppes

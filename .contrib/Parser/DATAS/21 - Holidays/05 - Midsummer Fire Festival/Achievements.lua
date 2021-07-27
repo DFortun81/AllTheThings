@@ -575,9 +575,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { 371 },	-- Jade Forest
 				}),
 				crit(3, {	-- Krasarang Wilds
-					["coord"] = { 77.8, 3.60, 418 },
+					["coord"] = { 77.8, 3.60, KRASARANG_WILDS },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 418 },	-- Krasarang Wilds
+					["maps"] = { KRASARANG_WILDS },
 				}),
 				crit(4, {	-- Kun-Lai Summit
 					["coord"] = { 71.1, 90.9, 379 },
@@ -1281,9 +1281,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { 371 },	-- Jade Forest
 				}),
 				crit(3, {	-- Krasarang Wilds
-					["coord"] = { 77.8, 3.60, 418 },
+					["coord"] = { 77.8, 3.60, KRASARANG_WILDS },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 418 },	-- Krasarang Wilds
+					["maps"] = { KRASARANG_WILDS },
 				}),
 				crit(4, {	-- Kun-Lai Summit
 					["coord"] = { 71.1, 90.9, 379 },

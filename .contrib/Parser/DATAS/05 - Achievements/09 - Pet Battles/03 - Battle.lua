@@ -118,8 +118,8 @@ _.Achievements =
 				crit(23, {	-- Major Payne (Icecrown)
 					["coord"] = { 77.4, 19.6, 118 },
 				}),
-				crit(24, {	-- Mo'ruk (Krasarang Wilds)
-					["coord"] = { 65.0, 42.7, 418 },
+				crit(24, {	-- Mo'ruk
+					["coord"] = { 65.0, 42.7, KRASARANG_WILDS },
 				}),
 				crit(25, {	-- Morulu The Elder
 					["coord"] = { 59.0, 70.0, SHATTRATH_CITY },

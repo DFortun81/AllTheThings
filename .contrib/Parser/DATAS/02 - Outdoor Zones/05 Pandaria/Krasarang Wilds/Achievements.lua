@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(424, {	-- Pandaria
-		m(418, {	-- Krasarang Wilds
+		m(KRASARANG_WILDS, {
 			--	IMPORTANT: if you add coordinates to any part of this file, make sure you verify them manually!  the coordinates listed on wowhead (as of september 2019) are incorrect and probably based on an older version of the krasarang map.  if you use those coordinates instead of manually confirming them, they'll place you outside of /tar range.
 			--	TODO:
 				-- find out if "The Incursion" criteria requires "Lotus Tea" (30351) and "Threats from Dojan" (30349)
@@ -17,7 +17,7 @@ _.Zones =
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(24, {	-- Mo'ruk
-							["coord"] = { 65.0, 42.7, 418 },
+							["coord"] = { 65.0, 42.7, KRASARANG_WILDS },
 							["cr"] = 66733,	-- Mo'ruk <Grand Master Pet Tamer>
 						}),
 					},
@@ -26,7 +26,7 @@ _.Zones =
 					["collectible"] = false,
 					["g"] = {
 						crit(4, {	-- The Last Stand
-							["coord"] = { 33.3, 25.0, 418 },
+							["coord"] = { 33.3, 25.0, KRASARANG_WILDS },
 						}),
 					},
 				}),
@@ -35,13 +35,13 @@ _.Zones =
 					["g"] = {
 						o(214439, {		-- Barrel of Banana Infused Rum
 							["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
-							["coord"] = { 54.0, 88.0, 418 },
+							["coord"] = { 54.0, 88.0, KRASARANG_WILDS },
 							["g"] = {
 								i(87266),	-- Recipe: Banana Infused Rum
 							},
 						}),
 						o(213651, {	-- Equipment Locker
-							["coord"] = { 43.7, 92.3, 418 },
+							["coord"] = { 43.7, 92.3, KRASARANG_WILDS },
 							["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 							["questID"] = 31410,
 							["description"] = "On the bottom level of the ship — you will have to go down two sets of stairs.",
@@ -59,7 +59,7 @@ _.Zones =
 						}),
 						o(213653, {		-- Pandaren Fishing Spear
 							["questID"] = 31409,
-							["coord"] = { 52.0, 46.0, 418 },
+							["coord"] = { 52.0, 46.0, KRASARANG_WILDS },
 							["g"] = {
 								i(86124),	-- Pandaren Fishing Spear
 							},
@@ -130,7 +130,7 @@ _.Zones =
 				}),
 				ach(6754, {	-- The Dark Heart of the Mogu
 					crit(2, {	-- The Lost Dynasty
-						["coord"] = { 52.96, 27.42, 418 },
+						["coord"] = { 52.96, 27.42, KRASARANG_WILDS },
 					}),
 				}),
 				ach(6350, {	-- To All the Squirrels I Once Caressed?

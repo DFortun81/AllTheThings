@@ -1265,12 +1265,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 371 },	-- Jade Forest
 						}),
 						crit(10, {	-- Krasarang Wilds, Marista
-							["coord"] = { 53.4, 76.5, 418 },
-							["maps"] = { 418 },	-- Krasarang Wilds
+							["coord"] = { 53.4, 76.5, KRASARANG_WILDS },
+							["maps"] = { KRASARANG_WILDS },
 						}),
 						crit(11, {	-- Krasarang Wilds, Zhu's Watch
-							["coord"] = { 79.8, 0.71, 418 },
-							["maps"] = { 418 },	-- Krasarang Wilds
+							["coord"] = { 79.8, 0.71, KRASARANG_WILDS },
+							["maps"] = { KRASARANG_WILDS },
 						}),
 						crit(12, {	-- Kun-Lai Summit, Binan Village
 							["coord"] = { 72.7, 92.2, 379 },
@@ -1358,20 +1358,20 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 371 },	-- Jade Forest
 						}),
 						crit(10, {	-- Krasarang Wilds, Dawnchaser Retreat
-							["coord"] = { 28.5, 47.9, 418 },
-							["maps"] = { 418 },	-- Krasarang Wilds
+							["coord"] = { 28.5, 47.9, KRASARANG_WILDS },
+							["maps"] = { KRASARANG_WILDS },
 						}),
 						crit(11, {	-- Krasarang Wilds, Marista
-							["coord"] = { 53.4, 76.5, 418 },
-							["maps"] = { 418 },	-- Krasarang Wilds
+							["coord"] = { 53.4, 76.5, KRASARANG_WILDS },
+							["maps"] = { KRASARANG_WILDS },
 						}),
 						crit(12, {	-- Krasarang Wilds, Thunder Cleft
-							["coord"] = { 63.8, 20.4, 418 },
-							["maps"] = { 418 },	-- Krasarang Wilds
+							["coord"] = { 63.8, 20.4, KRASARANG_WILDS },
+							["maps"] = { KRASARANG_WILDS },
 						}),
 						crit(13, {	-- Krasarang Wilds, Zhu's Watch
-							["coord"] = { 79.8, 0.71, 418 },
-							["maps"] = { 418 },	-- Krasarang Wilds
+							["coord"] = { 79.8, 0.71, KRASARANG_WILDS },
+							["maps"] = { KRASARANG_WILDS },
 						}),
 						crit(14, {	-- Kun-Lai Summit, Binan Village
 							["coord"] = { 72.7, 92.2, 379 },

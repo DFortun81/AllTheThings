@@ -10,7 +10,7 @@ _.Zones =
 				422,	-- Dread Wastes
 				507,	-- Isle of Giants
 				504,	-- Isle of Thunder
-				418,	-- Krasarang Wilds
+				KRASARANG_WILDS,
 				379,	-- Kun-Lai Summit
 				371,	-- The Jade Forest
 				433,	-- The Veiled Stair

@@ -371,8 +371,8 @@ _.Achievements =
 					["coord"] = { 53.0, 46.58, 379 },
 					["description"] = "The scroll is in the first big room."
 				}),
-				crit(2, {	-- The Lost Dynasty (Krasarang Wilds)
-					["coord"] = { 52.96, 27.42, 418 },
+				crit(2, {	-- The Lost Dynasty
+					["coord"] = { 52.96, 27.42, KRASARANG_WILDS },
 				}),
 				crit(3, {	-- Spirit Binders (Jade Forest)
 					["coord"] = { 42.26, 17.46, 371 },

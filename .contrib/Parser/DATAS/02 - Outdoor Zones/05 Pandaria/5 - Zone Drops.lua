@@ -10,7 +10,7 @@ _.Zones =
 				422,	-- Dread Wastes
 				371,	-- Jade Forest
 				388,	-- Towlong Steppes
-				418,	-- Krasarang Wilds
+				KRASARANG_WILDS,
 			},
 			["g"] = {
 				i(94158, {	-- Big Bag of Zandalari Supplies
@@ -27,7 +27,7 @@ _.Zones =
 						422,	-- Dread Wastes
 						371,	-- Jade Forest
 						388,	-- Towlong Steppes
-						418,	-- Krasarang Wilds
+						KRASARANG_WILDS,
 					},
 					--]]
 					["g"] = {
@@ -64,7 +64,7 @@ _.Zones =
 						422,	-- Dread Wastes
 						371,	-- Jade Forest
 						388,	-- Towlong Steppes
-						418,	-- Krasarang Wilds
+						KRASARANG_WILDS,
 					},
 					--]]
 				}),
@@ -82,7 +82,7 @@ _.Zones =
 						422,	-- Dread Wastes
 						371,	-- Jade Forest
 						388,	-- Towlong Steppes
-						418,	-- Krasarang Wilds
+						KRASARANG_WILDS,
 					},
 					--]]
 				}),
@@ -100,7 +100,7 @@ _.Zones =
 						422,	-- Dread Wastes
 						371,	-- Jade Forest
 						388,	-- Towlong Steppes
-						418,	-- Krasarang Wilds
+						KRASARANG_WILDS,
 					},
 					--]]
 				}),
@@ -118,7 +118,7 @@ _.Zones =
 						422,	-- Dread Wastes
 						371,	-- Jade Forest
 						388,	-- Towlong Steppes
-						418,	-- Krasarang Wilds
+						KRASARANG_WILDS,
 					},
 					--]]
 				}),
@@ -136,7 +136,7 @@ _.Zones =
 						422,	-- Dread Wastes
 						371,	-- Jade Forest
 						388,	-- Towlong Steppes
-						418,	-- Krasarang Wilds
+						KRASARANG_WILDS,
 					},
 					--]]
 				}),

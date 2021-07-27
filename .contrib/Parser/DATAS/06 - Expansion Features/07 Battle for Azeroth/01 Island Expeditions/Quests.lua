@@ -277,7 +277,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163483, {	-- Razorfin Hunting Spear
-					["coord"] = { 29.6, 39.0, 418 },
+					["coord"] = { 29.6, 39.0, KRASARANG_WILDS },
 					["g"] = {
 						q(53178, {	-- Razorfin Hunting Spear
 							["provider"] = { "n", 58278 },	-- Tired Shushen <Waterspeaker>

@@ -1999,8 +1999,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(32499, {	-- Honor the Flame — Krasarang Wilds
 			["provider"] = { "n", 69533 },	-- Krasarang Wilds Flame Guardian
 			["isYearly"] = true,
-			["coord"] = { 77.8, 3.60, 418 },
-			["maps"] = { 418 },	-- Krasarang Wilds
+			["coord"] = { 77.8, 3.60, KRASARANG_WILDS },
+			["maps"] = { KRASARANG_WILDS },
 		}),
 		q(32500, {	-- Honor the Flame — Kun-Lai Summit
 			["provider"] = { "n", 69535 },	-- Kun-Lai Summit Flame Guardian

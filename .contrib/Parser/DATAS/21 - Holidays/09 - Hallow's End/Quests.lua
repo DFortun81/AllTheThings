@@ -1090,34 +1090,34 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(32020, {	-- Candy Bucket — Krasarang Wilds, Dawnchaser Retreat, Horde
 				["isYearly"] = true,
-				["coord"] = { 28.3, 50.7, 418 },
+				["coord"] = { 28.3, 50.7, KRASARANG_WILDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 418 },	-- Krasarang Wilds
+				["maps"] = { KRASARANG_WILDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32034, {	-- Candy Bucket — Krasarang Wilds, Marista, neutral
 				["isYearly"] = true,
-				["coord"] = { 53.44, 76.49, 418 },
-				["maps"] = { 418 },	-- Krasarang Wilds
+				["coord"] = { 53.44, 76.49, KRASARANG_WILDS },
+				["maps"] = { KRASARANG_WILDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32047, {	-- Candy Bucket — Krasarang Wilds, Thunder Cleft, Horde
 				["isYearly"] = true,
-				["coord"] = { 61.0, 25.1, 418 },
+				["coord"] = { 61.0, 25.1, KRASARANG_WILDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 418 },	-- Krasarang Wilds
+				["maps"] = { KRASARANG_WILDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32036, {	-- Candy Bucket — Krasarang Wilds, Zhu's Watch, neutral
 				["isYearly"] = true,
-				["coord"] = { 79.48, 0.72, 418 },
-				["maps"] = { 418 },	-- Krasarang Wilds
+				["coord"] = { 79.48, 0.72, KRASARANG_WILDS },
+				["maps"] = { KRASARANG_WILDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

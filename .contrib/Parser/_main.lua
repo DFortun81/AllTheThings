@@ -168,7 +168,9 @@ SHADOWMOON_VALLEY = 104;	-- Confirmed!
 -- Cataclysm
 MOUNT_HYJAL = 198;
 
--- MOP Additions to Old World
+-- Mists of Pandaria
+KRASARANG_WILDS = 418;
+PANDARIA = 424;
 ECHO_ISLES = 463;
 VALLEY_OF_TRIALS = 461;
 
