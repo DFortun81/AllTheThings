@@ -1499,6 +1499,7 @@ namespace ATT
                     case "displayID":
                     case "modID":
                     case "bonusID":
+                    case "runeforgePowerID":
                     case "f":
                     case "u":
                     case "b":

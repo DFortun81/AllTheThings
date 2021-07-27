@@ -2012,6 +2012,7 @@ namespace ATT
                 case "qgs":
                 case "r": // horde/alliance faction
                 case "races":
+                case "runeforgePowerID":
                 case "customCollect":
                 case "setHeaderID":
                 case "setSubHeaderID":

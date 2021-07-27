@@ -387,6 +387,7 @@ namespace ATT
                     case "speciesID":
                     case "spellID":
                     case "objectiveID":
+                    case "runeforgePowerID":
                     case "f":
                     case "u":
                     case "b":
@@ -601,6 +602,7 @@ namespace ATT
                     case "isMonthly":
                     case "isYearly":
                     case "isWorldQuest":
+                    case "runeforgePowerID":
                         {
                             data[field] = value;
                             break;

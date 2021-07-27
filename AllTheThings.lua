@@ -6261,42 +6261,7 @@ app.CreateArtifact = function(id, t)
 	return setmetatable(constructor(id, t, "artifactID"), app.BaseArtifact);
 end
 end)();
--- Runeforge Legendary Lib
---[[(function()
-local fields = {
-	["key"] = function(t)
-		return "runeforgePowerID";
-	end,
-	["info"] = C_LegendaryCrafting.GetRuneforgePowerInfo(t.runeforgePowerID) or {};
-	end,
-	["collectible"] = function(t)
-		return app.CollectibleRuneforgeLegendaries;
-	end,
-	["collected"] = function(t)
-		local info = t.info;
-		if (info and info.state == 0) then	-- state=0 means you have obtain it.
-			app.CurrentCharacter.RuneforgeLegendaries[t.runeforgePowerID] = info.state; end
-			return 1;
-	end,
-	["text"] = function(t)
-		return t.info.description;
-	end,
-	["lvl"] = function(t)
-		return 60;
-	end,
-	["icon"] = function(t)
-		return t.info.iconFileID;
-	end,
-	["name"] = function(t)
-		return t.info.name;
-	end,
-};
-app.BaseRuneforgeLegendary = app.BaseObjectFields(fields);
-app.CreateRuneforgeLegendary = function(id, t)
-	return setmetatable(constructor(id, t, "runeforgePowerID"), app.BaseRuneforgeLegendary);
-end
-end)();
-]]
+--]]
 -- Conduit Lib
 --[[
 (function()
@@ -8665,6 +8630,56 @@ app.CreateItem = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
 end
 
+-- Runeforge Legendary Lib
+(function()
+local fields = {
+	["key"] = function(t)
+		return "runeforgePowerID";
+	end,
+	["info"] = function(t)
+		-- print("RFL.info",t.runeforgePowerID)
+		-- app.PrintTable(C_LegendaryCrafting.GetRuneforgePowerInfo(t.runeforgePowerID))
+		-- print("---")
+		return C_LegendaryCrafting.GetRuneforgePowerInfo(t.runeforgePowerID);
+	end,
+	-- ["collectible"] = app.ReturnTrue,
+	["collectible"] = function(t)
+		return app.CollectibleRuneforgeLegendaries;
+	end,
+	["collected"] = function(t)
+		-- print("RFL.collected")
+		local info = t.info;
+		if (info and info.state == 0) then	-- state=0 means you have obtain it.
+			-- app.CurrentCharacter.RuneforgeLegendaries[t.runeforgePowerID] = info.state;
+			-- print("RFL.collected",t.runeforgePowerID)
+			return 1;
+		end
+	end,
+	-- ["text"] = function(t)
+	-- 	return t.info.description;
+	-- end,
+	["lvl"] = function(t)
+		return 60;
+	end,
+	-- ["icon"] = function(t)
+	-- 	return t.info.iconFileID;
+	-- end,
+	-- ["name"] = function(t)
+	-- 	return t.info.name;
+	-- end,
+	["trackable"] = app.ReturnTrue,
+	["saved"] = function(t)
+		-- print("RFL.saved",t.collected)
+		return t.collected;
+	end,
+};
+MergeProperties(fields, itemFields, true);
+app.BaseRuneforgeLegendary = app.BaseObjectFields(fields);
+app.CreateRuneforgeLegendary = function(id, t)
+	return setmetatable(constructor(id, t, "runeforgePowerID"), app.BaseRuneforgeLegendary);
+end
+end)();
+
 local HarvestedItemDatabase = {};
 local C_Item_GetItemInventoryTypeByID = C_Item.GetItemInventoryTypeByID;
 local itemHarvesterFields = RawCloneData(itemFields);
@@ -10274,6 +10289,95 @@ app.BaseQuestObjective = app.BaseObjectFields(fields);
 app.CreateQuestObjective = function(id, t)
 	return setmetatable(constructor(id, t, "objectiveID"), app.BaseQuestObjective);
 end
+
+-- Vignette Lib
+(function()
+local fields = {
+	["text"] = function(t)
+		-- TODO: something about this is weird with it using from the quest fields... check questID 32961
+		if t.qgs then
+			local all = true;
+			for i,qg in ipairs(t.qgs) do
+				if not NPCNameFromID[qg] then
+					all = false;
+				end
+			end
+			if all then
+				t.name = nil;
+				local count = #t.qgs;
+				for i=1,count,1 do
+					local qg = t.qgs[i];
+					if t.name then
+						t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[qg];
+					else
+						t.name = NPCNameFromID[qg];
+					end
+					if not t.title then
+						t.title = NPCTitlesFromID[qg];
+					end
+				end
+				return t.name;
+			end
+		elseif t.crs then
+			local all = true;
+			for i,cr in ipairs(t.crs) do
+				if not NPCNameFromID[cr] then
+					all = false;
+				end
+			end
+			if all then
+				t.name = nil;
+				local count = #t.crs;
+				for i=1,count,1 do
+					local cr = t.crs[i];
+					if t.name then
+						t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[cr];
+					else
+						t.name = NPCNameFromID[cr];
+					end
+					if not t.title then
+						t.title = NPCTitlesFromID[cr];
+					end
+				end
+				return t.name;
+			end
+		elseif t.qg then
+			if NPCNameFromID[t.qg] then
+				t.name = NPCNameFromID[t.qg];
+				if not t.title then
+					t.title = NPCTitlesFromID[t.qg];
+				end
+				return t.name;
+			end
+		elseif t.creatureID then
+			if t.creatureID > 0 then
+				if NPCNameFromID[t.creatureID] then
+					t.name = NPCNameFromID[t.creatureID];
+					if not t.title then
+						t.title = NPCTitlesFromID[t.creatureID];
+					end
+					return t.name;
+				end
+			else
+				t.name = L["HEADER_NAMES"][t.creatureID];
+				return t.name;
+			end
+		end
+		return t.name;
+	end,
+	["icon"] = function(t)
+		return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
+	end,
+	["isVignette"] = app.ReturnTrue,
+};
+-- copy most Quest fields as Vignette fields
+MergeProperties(fields, questFields, true);
+app.BaseVignette = app.BaseObjectFields(fields);
+app.CreateVignette = function(id, t)
+	return setmetatable(constructor(id, t, "questID"), app.BaseVignette);
+end
+end)();
+
 app:RegisterEvent("QUEST_SESSION_JOINED");
 end)();
 
@@ -10844,91 +10948,6 @@ local fields = {
 app.BaseToy = app.BaseObjectFields(fields);
 app.CreateToy = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseToy);
-end
-end)();
-
--- Vignette Lib
-(function()
-local fields = {
-	["text"] = function(t)
-		if t.qgs then
-			local all = true;
-			for i,qg in ipairs(t.qgs) do
-				if not NPCNameFromID[qg] then
-					all = false;
-				end
-			end
-			if all then
-				t.name = nil;
-				local count = #t.qgs;
-				for i=1,count,1 do
-					local qg = t.qgs[i];
-					if t.name then
-						t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[qg];
-					else
-						t.name = NPCNameFromID[qg];
-					end
-					if not t.title then
-						t.title = NPCTitlesFromID[qg];
-					end
-				end
-				return t.name;
-			end
-		elseif t.crs then
-			local all = true;
-			for i,cr in ipairs(t.crs) do
-				if not NPCNameFromID[cr] then
-					all = false;
-				end
-			end
-			if all then
-				t.name = nil;
-				local count = #t.crs;
-				for i=1,count,1 do
-					local cr = t.crs[i];
-					if t.name then
-						t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[cr];
-					else
-						t.name = NPCNameFromID[cr];
-					end
-					if not t.title then
-						t.title = NPCTitlesFromID[cr];
-					end
-				end
-				return t.name;
-			end
-		elseif t.qg then
-			if NPCNameFromID[t.qg] then
-				t.name = NPCNameFromID[t.qg];
-				if not t.title then
-					t.title = NPCTitlesFromID[t.qg];
-				end
-				return t.name;
-			end
-		elseif t.creatureID then
-			if t.creatureID > 0 then
-				if NPCNameFromID[t.creatureID] then
-					t.name = NPCNameFromID[t.creatureID];
-					if not t.title then
-						t.title = NPCTitlesFromID[t.creatureID];
-					end
-					return t.name;
-				end
-			else
-				t.name = L["HEADER_NAMES"][t.creatureID];
-				return t.name;
-			end
-		end
-		return t.name;
-	end,
-	["icon"] = function(t)
-		return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
-	end,
-	["isVignette"] = app.ReturnTrue,
-};
-app.BaseVignette = setmetatable(app.BaseObjectFields(fields), app.BaseQuest);
-app.CreateVignette = function(id, t)
-	return setmetatable(constructor(id, t, "questID"), app.BaseVignette);
 end
 end)();
 

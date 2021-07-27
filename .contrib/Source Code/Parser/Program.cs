@@ -431,6 +431,7 @@ namespace ATT
             {
                 try
                 {
+                    //Trace.WriteLine("Parsing:" + fileName);
                     lua.DoString("AllTheThings = {};_ = AllTheThings;");
                     lua.DoString(content = ProcessContent(File.ReadAllText(fileName)));
                     Framework.Merge(lua.GetTable("AllTheThings"));

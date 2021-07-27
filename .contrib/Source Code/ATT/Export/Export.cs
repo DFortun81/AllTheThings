@@ -53,6 +53,7 @@ namespace ATT
             ObjectData.Create("titleID",            "title",        "_.CreateTitle", "f");
             ObjectData.Create("currencyID",         "cu",           "_.CreateCurrencyClass", "f");
             ObjectData.Create("azeriteEssenceID",   "aze",          "_.CreateAzeriteEssence", "f");
+            ObjectData.Create("runeforgePowerID",   "rfl",          "_.CreateRuneforgeLegendary", "f");
             ObjectData.Create<ItemData>("itemID",   "i",            "_.CreateItem");
             ObjectData.Create("factionID",          "faction",      "_.CreateFaction", "f");
             ObjectData.Create<QuestData>("questID", "q",            "_.CreateQuest", "f");
