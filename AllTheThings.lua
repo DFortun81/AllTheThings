@@ -12911,7 +12911,7 @@ function app:CreateMiniListForGroup(group)
 				-- print("EVENT", e, ...)
 				if self:IsVisible() then
 					-- print("QUEST_LOG_UPDATE:questChainWindow")
-					self:Update();
+					self:Update(true);
 				end
 			end);
 		end
