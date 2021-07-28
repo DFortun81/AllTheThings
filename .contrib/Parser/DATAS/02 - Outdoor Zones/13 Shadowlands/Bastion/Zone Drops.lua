@@ -44,6 +44,7 @@ _.Zones =
 				i(176803),	-- Harmonious Mallet
 				i(176793),	-- Honorguide Crossbow
 				i(176798),	-- Larion Claw
+				i(187427),	-- Lost Meditation Bell
 				i(176802),	-- Meditator's Blade
 				i(176800),	-- Modest Greatblade
 				i(176987),	-- Ossein Scale Belt

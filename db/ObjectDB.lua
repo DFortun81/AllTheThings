@@ -1862,6 +1862,7 @@ select(2, ...).ObjectNames = {
 	[369227] = "Stolen Anima Vessel",
 	[369232] = "Offering Box",
 	[369235] = "Stolen Anima Vessel",
+	[369236] = "Stolen Anima Vessel",
 	[369245] = "Korthian Relic Box",
 	[369292] = "Relic Cache",
 	[369296] = "Shardhide Stash",

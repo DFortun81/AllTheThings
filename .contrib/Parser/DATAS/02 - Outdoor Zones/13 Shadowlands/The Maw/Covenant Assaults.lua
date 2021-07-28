@@ -639,6 +639,29 @@ _.Zones =
 											i(187251),	-- Shaded Skull Shoulderguards
 										},
 									}),
+									o(369227, {	-- Stolen Anima Vessel
+										["questID"] = 64265,
+										["isWeekly"] = true,
+										["coords"] = {
+											{ 46.0, 83.1, THE_MAW },	-- Cave entrance
+											{ 47.8, 86.5, THE_MAW },	-- Object
+										},
+									}),
+									o(369235, {	-- Stolen Anima Vessel
+										["questID"] = 64269,
+										["isWeekly"] = true,
+										["coords"] = {
+											{ 32.4, 43.1, THE_MAW },
+											{ 35.7, 46.4, THE_MAW },
+										},
+									}),
+									o(369236, {	-- Stolen Anima Vessel Loot trigger
+										["questID"] = 64270,
+										["isWeekly"] = true,
+										["coords"] = {
+											{ 27.5, 49.5, THE_MAW },
+										},
+									}),
 								}),
 							},
 						}),
