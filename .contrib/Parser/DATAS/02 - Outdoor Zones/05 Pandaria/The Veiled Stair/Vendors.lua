@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(433, {	-- The Veiled Stair
+		m(THE_VEILED_STAIR, {
 			n(VENDORS, {
 				n(70436, {	-- Blacktalon Quartermaster <Supplier to the Black Prince>
 					["description"] = "To purchase the epic cloaks you must have obtained the achievement |r |cFFFFD700'Chapter IV: Celestial Blessings'|r during Mists of Pandaria. ",
-					["coord"] = { 54.2, 72.9, 433 },
+					["coord"] = { 54.2, 72.9, THE_VEILED_STAIR },
 					["g"] = {
 						i(98149, {	-- Cranewing Cloak
 							["cost"] = 100000000,	-- 10,000g

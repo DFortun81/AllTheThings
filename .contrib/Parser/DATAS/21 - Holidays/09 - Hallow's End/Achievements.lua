@@ -1293,8 +1293,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { KUN_LAI_SUMMIT },
 						}),
 						crit(17, {	-- The Veiled Stair, Tavern in the Mists
-							["coord"] = { 54.9, 72.3, 433 },
-							["maps"] = { 433 },	-- The Veiled Stair
+							["coord"] = { 54.9, 72.3, THE_VEILED_STAIR },
+							["maps"] = { THE_VEILED_STAIR },
 						}),
 						crit(18, {	-- Townlong Steppes, Longying Outpost
 							["coord"] = { 71.1, 57.8, TOWNLONG_STEPPES },
@@ -1394,8 +1394,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { KUN_LAI_SUMMIT },
 						}),
 						crit(19, {	-- The Veiled Stair, Tavern in the Mists
-							["coord"] = { 54.9, 72.3, 433 },
-							["maps"] = { 433 },	-- The Veiled Stair
+							["coord"] = { 54.9, 72.3, THE_VEILED_STAIR },
+							["maps"] = { THE_VEILED_STAIR },
 						}),
 						crit(20, {	-- Townlong Steppes, Longying Outpost
 							["coord"] = { 71.1, 57.8, TOWNLONG_STEPPES },

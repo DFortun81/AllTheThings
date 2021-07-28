@@ -8,7 +8,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["sharedLockout"] = 1,
 		["lvl"] = 90,
 		["maps"] = { 456 },	-- Terrace of Endless Spring
-		["coord"] = { 48.4, 61.4, 433 },	-- Terrace of Endless Spring, The Veiled Stair
+		["coord"] = { 48.4, 61.4, THE_VEILED_STAIR },	-- Terrace of Endless Spring
 		["g"] = {
 			d(7, {	-- LFR
 				["description"] = "Speak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.",

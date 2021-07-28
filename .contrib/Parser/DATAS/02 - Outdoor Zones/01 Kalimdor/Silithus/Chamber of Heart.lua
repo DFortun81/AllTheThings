@@ -467,9 +467,9 @@ _.Zones =
 						}),
 						q(56187, {	-- Black Winged Shadow
 							["provider"] = { "n", 154500 },	-- Left
-							["coord"] = { 54.5, 72.5, 433 },
+							["coord"] = { 54.5, 72.5, THE_VEILED_STAIR },
 							["sourceQuest"] = 56186,	-- Spies to the Left and Right
-							["maps"] = { 433 },	-- The Veiled Stair
+							["maps"] = { THE_VEILED_STAIR },
 							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
 						}),
 						q(56188, {	-- To the Catacombs!

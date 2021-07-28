@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(433, {	-- The Veiled Stair
+		m(THE_VEILED_STAIR, {
 			n(QUESTS, {
 				q(33104, {	-- A Pandaren Legend
 					["u"] = REMOVED_FROM_GAME,
@@ -23,24 +23,24 @@ _.Zones =
 				q(32861, {	-- Cloak of Virtue
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 71424 },	-- Wrathion <The Black Prince>
-					["coord"] = { 73.2, 79.6, 433 },
+					["coord"] = { 73.2, 79.6, THE_VEILED_STAIR },
 				}),
 				q(31287, {	-- Educating Saurok
 					["provider"] = { "n", 63484 },	-- Len the Whisperer
-					["coord"] = { 53.51, 65.75, 433 },
+					["coord"] = { 53.51, 65.75, THE_VEILED_STAIR },
 				}),
 				q(31286, {	-- Robbing Robbers of Robbers
 					["provider"] = { "n", 63484 },	-- Len the Whisperer
-					["coord"] = { 53.51, 65.75, 433 },
+					["coord"] = { 53.51, 65.75, THE_VEILED_STAIR },
 				}),
 				q(31611, {	-- The Kun-Lai Kicker
 					["provider"] = { "n", 63367 },	-- Brewmaster Boof
-					["coord"] = { 51.90, 43.73, 433 },
+					["coord"] = { 51.90, 43.73, THE_VEILED_STAIR },
 					["description"] = "If you don't see questgiver in The Veiled Stair, look in the Binan Village to the north.",
 				}),
 				q(31285, {	-- The Spring Drifter
 					["provider"] = { "n", 63367 },	-- Brewmaster Boof
-					["coord"] = { 51.90, 43.73, 433 },
+					["coord"] = { 51.90, 43.73, THE_VEILED_STAIR },
 				}),
 			}),
 		}),

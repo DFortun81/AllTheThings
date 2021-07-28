@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(433, {	-- The Veiled Stair
+		m(THE_VEILED_STAIR, {
 			["icon"] = "Interface\\Icons\\inv_legendary_theblackprince",
 		}),
 	}),

@@ -1659,8 +1659,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(32026, {	-- Candy Bucket — The Veiled Stair, Tavern in the Mists, neutral
 				["isYearly"] = true,
-				["coord"] = { 54.9, 72.3, 433 },
-				["maps"] = { 433 },	-- The Veiled Stair
+				["coord"] = { 54.9, 72.3, THE_VEILED_STAIR },
+				["maps"] = { THE_VEILED_STAIR },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

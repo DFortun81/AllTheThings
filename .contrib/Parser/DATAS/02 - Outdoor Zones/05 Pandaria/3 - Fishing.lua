@@ -13,7 +13,7 @@ _.Zones =
 				KRASARANG_WILDS,
 				KUN_LAI_SUMMIT,
 				THE_JADE_FOREST,
-				433,	-- The Veiled Stair
+				THE_VEILED_STAIR,
 				554,	-- Timeless Isle
 				TOWNLONG_STEPPES,
 				VALE_OF_ETERNAL_BLOSSOMS,

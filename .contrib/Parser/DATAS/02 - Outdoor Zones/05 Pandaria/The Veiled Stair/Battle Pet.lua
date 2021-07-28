@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(433, {	-- The Veiled Stair
+		m(THE_VEILED_STAIR, {
 			filter(101, {	-- Pet Battle
 				p(706),	-- Bandicoon
 				p(708),	-- Malayan Quillrat
