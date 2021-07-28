@@ -29,7 +29,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
 					210,	-- The Cape of Stranglethorn
-					504,	-- Isle of Thunder
+					ISLE_OF_THUNDER,
 				},
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,

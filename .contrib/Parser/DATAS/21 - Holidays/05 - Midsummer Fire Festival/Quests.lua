@@ -2522,7 +2522,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 				125,	-- Dalaran (Northrend)
 				-- #endif
 				-- #if AFTER MOP
-				504,	-- Isle of Thunder
+				ISLE_OF_THUNDER,
 				-- #endif
 			},
 			["timeline"] = { "added 2.4.0.7994" },
@@ -2563,7 +2563,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 				125,	-- Dalaran (Northrend)
 				-- #endif
 				-- #if AFTER MOP
-				504,	-- Isle of Thunder
+				ISLE_OF_THUNDER,
 				-- #endif
 			},
 			["timeline"] = { "added 2.4.0.7994" },

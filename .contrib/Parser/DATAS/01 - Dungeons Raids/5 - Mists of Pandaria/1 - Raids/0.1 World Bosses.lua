@@ -11,9 +11,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["isWeekly"] = true,
 				["questID"] = 32518,
 				["isRaid"] = true,
-				["coord"] = { 60.0, 37.7, 504 },
+				["coord"] = { 60.0, 37.7, ISLE_OF_THUNDER },
 				["maps"] = {	-- all Isle of Thunder maps
-					504,	-- Isle of Thunder
+					ISLE_OF_THUNDER,
 					505,	-- Lightning Vein Mine
 					506,	-- The Swollen Vault
 					516,	-- Scenario [Phase 1]

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(504, {	-- Isle of Thunder
+		m(ISLE_OF_THUNDER, {
 			n(ZONEDROPS, {
 				["crs"] = {
 					69909,	-- Amani'shi Flame Chanter

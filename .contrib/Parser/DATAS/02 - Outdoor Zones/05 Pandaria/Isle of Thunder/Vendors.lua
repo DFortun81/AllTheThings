@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(504, {	-- Isle of Thunder
+		m(ISLE_OF_THUNDER, {
 			n(VENDORS, {
 				n(68000, {	-- Hiren Loresong <Kirin Tor Offensive Quartermaster>
-					["coord"] = { 64.6, 74.6, 504 },
+					["coord"] = { 64.6, 74.6, ISLE_OF_THUNDER },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(97191),	-- Ancient Overlord's Onyx Band
@@ -47,7 +47,7 @@ _.Zones =
 					},
 				}),
 				n(70535, {	-- Teng of the Flying Daggers <Shado-Pan Assault Quartermaster>
-					["coord"] = { 51.6, 46.6, 504 },
+					["coord"] = { 51.6, 46.6, ISLE_OF_THUNDER },
 					["g"] = {
 						i(95129),	-- Axebinder Wristguards
 						i(95140),	-- Band of the Shado-Pan Assault
@@ -1211,7 +1211,7 @@ _.Zones =
 					},
 				}),
 				n(67672, {	-- Vasarin Redmorn <Sunreaver Onslaught Quartermaster>
-					["coord"] = { 33.4, 32.4, 504 },
+					["coord"] = { 33.4, 32.4, ISLE_OF_THUNDER },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(97196),	-- Ancient Overlord's Onyx Band

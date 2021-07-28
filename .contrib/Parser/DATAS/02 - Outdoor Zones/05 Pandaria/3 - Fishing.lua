@@ -9,7 +9,7 @@ _.Zones =
 			["maps"] = {
 				DREAD_WASTES,
 				507,	-- Isle of Giants
-				504,	-- Isle of Thunder
+				ISLE_OF_THUNDER,
 				KRASARANG_WILDS,
 				KUN_LAI_SUMMIT,
 				THE_JADE_FOREST,

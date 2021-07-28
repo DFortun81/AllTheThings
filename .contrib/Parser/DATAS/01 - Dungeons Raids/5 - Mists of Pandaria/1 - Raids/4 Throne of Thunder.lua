@@ -17,7 +17,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			514,	-- Pinnacle of Storms
 			515,	-- Hidden Cell
 		},
-		["coord"] = { 63.4, 32.6, 504 },	-- Throne of Thunder, Isle of Thunder
+		["coord"] = { 63.4, 32.6, ISLE_OF_THUNDER },	-- Throne of Thunder
 		["g"] = {
 			n(QUESTS, {
 				i(97153, {	-- Spoils of the Thunder King

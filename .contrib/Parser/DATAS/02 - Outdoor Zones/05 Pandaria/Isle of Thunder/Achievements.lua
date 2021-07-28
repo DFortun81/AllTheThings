@@ -6,7 +6,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(504, {	-- Isle of Thunder
+		m(ISLE_OF_THUNDER, {
 			n(ACHIEVEMENTS, {
 				ach(8112),	-- Blue Response
 				ach(8118),	-- Boop
@@ -19,22 +19,22 @@ _.Zones =
 						{
 							["objectID"] = 218435,	-- Agents of Order
 							["criteriaID"] = 1,
-							["coord"] = { 35.8, 54.7, 504 },
+							["coord"] = { 35.8, 54.7, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218436,	-- Shadow, Storm, and Stone
 							["criteriaID"] = 2,
-							["coord"] = { 59.3, 26.3, 504 },
+							["coord"] = { 59.3, 26.3, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218437,	-- The Curse and the Silence
 							["criteriaID"] = 3,
-							["coord"] = { 49.9, 20.4, 504 },
+							["coord"] = { 49.9, 20.4, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218438,	-- Age of a Hundred Kings
 							["criteriaID"] = 4,
-							["coord"] = { 62.5, 37.8, 504 },
+							["coord"] = { 62.5, 37.8, ISLE_OF_THUNDER },
 						},
 					},
 				},
@@ -62,22 +62,22 @@ _.Zones =
 						{
 							["objectID"] = 218431,	-- Lei Shen
 							["criteriaID"] = 1,
-							["coord"] = { 40.2, 40.7, 504 },
+							["coord"] = { 40.2, 40.7, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218432,	-- The Sacred Mount
 							["criteriaID"] = 2,
-							["coord"] = { 47.1, 59.9, 504 },
+							["coord"] = { 47.1, 59.9, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218433,	-- Unity at a Price
 							["criteriaID"] = 3,
-							["coord"] = { 34.9, 65.6, 504 },
+							["coord"] = { 34.9, 65.6, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218434,	-- The Pandaren Problem
 							["criteriaID"] = 4,
-							["coord"] = { 60.7, 68.8, 504 },
+							["coord"] = { 60.7, 68.8, ISLE_OF_THUNDER },
 						},
 					},
 				},
@@ -89,22 +89,22 @@ _.Zones =
 						{
 							["objectID"] = 218427,	-- Coming of Age
 							["criteriaID"] = 1,
-							["coord"] = { 35.4, 70.2, 504 },
+							["coord"] = { 35.4, 70.2, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218428,	-- For Council and King
 							["criteriaID"] = 2,
-							["coord"] = { 66.0, 44.7, 504 },
+							["coord"] = { 66.0, 44.7, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218429,	-- Shadows of the Loa
 							["criteriaID"] = 3,
-							["coord"] = { 36.3, 70.1, 504 },
+							["coord"] = { 36.3, 70.1, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218430,	-- The Dark Prophet Zul
 							["criteriaID"] = 4,
-							["coord"] = { 52.6, 41.4, 504 },
+							["coord"] = { 52.6, 41.4, ISLE_OF_THUNDER },
 						},
 					},
 				},

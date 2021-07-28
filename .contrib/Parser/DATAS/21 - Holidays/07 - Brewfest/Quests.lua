@@ -56,7 +56,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						IRONFORGE,
 						DARNASSUS,
 						THE_EXODAR,
-						504,	-- Isle of Thunder
+						ISLE_OF_THUNDER,
 					},
 					["isYearly"] = true,
 				}),

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(504, {	-- Isle of Thunder
+		m(ISLE_OF_THUNDER, {
 			n(QUESTS, {
 				q(32655, {	-- A Bold Idea
 					["races"] = ALLIANCE_ONLY,
@@ -142,7 +142,7 @@ _.Zones =
 				q(32255, {	-- De-Constructed (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-					["coord"] = { 46.8, 66.9, 504 },
+					["coord"] = { 46.8, 66.9, ISLE_OF_THUNDER },
 					["provider"] = { "n", 67660 },	-- Archmage Aethas Sunreaver
 				}),
 				q(32278, {	-- Decisive Action
@@ -266,7 +266,7 @@ _.Zones =
 				q(32730, {	-- Ihgaluk Crag (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-					["coord"] = { 32.4, 35.2, 504 },
+					["coord"] = { 32.4, 35.2, ISLE_OF_THUNDER },
 					["provider"] = { "n", 67663 },	-- Magister Hathorel
 				}),
 				q(32577, {	-- Imposing Threat (A)
@@ -316,7 +316,7 @@ _.Zones =
 				q(32491, {	-- Left To Rot (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-					["coord"] = { 47.0, 66.7, 504 },
+					["coord"] = { 47.0, 66.7, ISLE_OF_THUNDER },
 					["provider"] = { "n", 69371 },	-- Amalia Penshire
 				}),
 				q(32589, {	-- Life Blood (H)
@@ -456,7 +456,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(32707, {	-- Secrets in the Isle of Thunder
-					["coord"] = { 51.4, 46.0, 504 },
+					["coord"] = { 51.4, 46.0, ISLE_OF_THUNDER },
 					["provider"] = { "n", 70160 },	-- Taran Zhu <Lord of the Shado-Pan>
 					["sourceQuests"] = {
 						32709,	-- Allies in the Shadows [Horde]
@@ -476,7 +476,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32507, {	-- Skin of the Saurok (H)
-					["coord"] = { 46.9, 66.8, 504 },
+					["coord"] = { 46.9, 66.8, ISLE_OF_THUNDER },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 69433 },	-- Magistrix Saia
 				}),
@@ -508,7 +508,7 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 					["questID"] = 32621,	-- Lightning Steel
 					["itemID"] = 94721,	-- Strange Metal Ingot
-					["coord"] = { 57.6, 33.8, 504 },
+					["coord"] = { 57.6, 33.8, ISLE_OF_THUNDER },
 					["provider"] = { "n", 69461 },	-- Itoka
 					["g"] = {
 						i(94553, {	-- Notes on Lightning Steel
@@ -630,7 +630,7 @@ _.Zones =
 				q(32274, {	-- The Residents of Ihgaluk (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-					["coord"] = { 46.7, 66.7, 504 },
+					["coord"] = { 46.7, 66.7, ISLE_OF_THUNDER },
 					["provider"] = { "n", 69425 },	-- Sunwalker Dezco
 				}),
 				q(32574, {	-- The Shuddering Moor (A)
@@ -640,7 +640,7 @@ _.Zones =
 				q(32228, {	-- The Shuddering Moor (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-					["coord"] = { 32.4, 35.2, 504 },
+					["coord"] = { 32.4, 35.2, ISLE_OF_THUNDER },
 					["provider"] = { "n", 67673 },	-- Girana the Blooded
 				}),
 				q(32535, {	-- The Skumblade Threat (A)
@@ -650,7 +650,7 @@ _.Zones =
 				q(32204, {	-- The Skumblade Threat (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-					["coord"] = { 46.8, 66.9, 504 },
+					["coord"] = { 46.8, 66.9, ISLE_OF_THUNDER },
 					["provider"] = { "n", 67660 },	-- Archmage Aethas Sunreaver
 				}),
 				q(32534, {	-- The Skumblade Threat (NYI)

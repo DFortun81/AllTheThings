@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(504, {	-- Isle of Thunder
+		m(ISLE_OF_THUNDER, {
 			filter(101, {	-- Pet Battle
 				p(1181, {	-- Elder Python
 					["crs"] = { 69818 },	-- Elder Python

@@ -5,12 +5,12 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(504, {	-- Isle of Thunder
+		m(ISLE_OF_THUNDER, {
 			n(RARES, {
 				n(70000, {	-- Al'tabim the All-Seeing
 					["isWeekly"] = true,
 					["questID"] = 32610,
-					["coord"] = { 44.7, 29.8, 504 },
+					["coord"] = { 44.7, 29.8, ISLE_OF_THUNDER },
 					["g"] = {
 						crit(7, {	-- Al'tabim the All-Seeing
 							["achievementID"] = 8103,	-- Champions of Lei Shen
@@ -21,7 +21,7 @@ _.Zones =
 					["isWeekly"] = true,
 					["questID"] = 32610,
 					["coords"] = {
-						{ 48.0, 25.5, 504 },
+						{ 48.0, 25.5, ISLE_OF_THUNDER },
 						{ 42.9, 36.3, 505 },
 					},
 					["g"] = {
@@ -33,7 +33,7 @@ _.Zones =
 				n(69999, {	-- God-Hulk Ramuk
 					["isWeekly"] = true,
 					["questID"] = 32610,
-					["coord"] = { 61.4, 49.5, 504 },
+					["coord"] = { 61.4, 49.5, ISLE_OF_THUNDER },
 					["g"] = {
 						crit(6, {	-- God-Hulk Ramuk
 							["achievementID"] = 8103,	-- Champions of Lei Shen
@@ -43,7 +43,7 @@ _.Zones =
 				n(69998, {	-- Goda
 					["isWeekly"] = true,
 					["questID"] = 32610,
-					["coord"] = { 53.7, 53.1, 504 },
+					["coord"] = { 53.7, 53.1, ISLE_OF_THUNDER },
 					["g"] = {
 						crit(5, {	-- Goda
 							["achievementID"] = 8103,	-- Champions of Lei Shen
@@ -54,8 +54,8 @@ _.Zones =
 					["isWeekly"] = true,
 					["questID"] = 32610,
 					["coords"] = {
-						{ 48.4, 86.4, 504 },
-						{ 50.2, 90.8, 504 },
+						{ 48.4, 86.4, ISLE_OF_THUNDER },
+						{ 50.2, 90.8, ISLE_OF_THUNDER },
 					 },
 					 ["g"] = {
 						crit(1, {	-- Haywire Sunreaver Construct
@@ -68,8 +68,8 @@ _.Zones =
 					["isWeekly"] = true,
 					["questID"] = 32610,
 					["coords"] = {
-						{ 33.0, 81.0, 504 },
-						{ 37.6, 82.6, 504 },
+						{ 33.0, 81.0, ISLE_OF_THUNDER },
+						{ 37.6, 82.6, ISLE_OF_THUNDER },
 					},
 					["g"] = {
 						crit(3, {	-- Ku'lai the Skyclaw
@@ -80,7 +80,7 @@ _.Zones =
 				n(70002, {	-- Lu-Ban
 					["isWeekly"] = true,
 					["questID"] = 32610,
-					["coord"] = { 54.3, 35.4, 504 },
+					["coord"] = { 54.3, 35.4, ISLE_OF_THUNDER },
 					["g"] = {
 						crit(6, {	-- Lu-Ban
 							["achievementID"] = 8103,	-- Champions of Lei Shen
@@ -91,7 +91,7 @@ _.Zones =
 					["isWeekly"] = true,
 					["questID"] = 32610,
 					["coords"] = {
-						{ 63.5, 49.2, 504 },
+						{ 63.5, 49.2, ISLE_OF_THUNDER },
 						{ 39.0, 37.2, 506 },
 					},
 					["g"] = {
@@ -103,7 +103,7 @@ _.Zones =
 				n(69664, {	-- Mumta
 					["isWeekly"] = true,
 					["questID"] = 32610,
-					["coord"] = { 35.10, 62.45, 504 },
+					["coord"] = { 35.10, 62.45, ISLE_OF_THUNDER },
 					["g"] = {
 						crit(2, {	-- Mumta
 							["achievementID"] = 8103,	-- Champions of Lei Shen
@@ -114,8 +114,8 @@ _.Zones =
 					["isWeekly"] = true,
 					["questID"] = 32610,
 					["coords"] = {
-						{ 51.31, 71.19, 504 },	-- Spawn
-						{ 50.49, 74.96, 504 },	-- Path Start
+						{ 51.31, 71.19, ISLE_OF_THUNDER },	-- Spawn
+						{ 50.49, 74.96, ISLE_OF_THUNDER },	-- Path Start
 					},
 					["g"] = {
 						crit(4, {	-- Progenitus
@@ -124,7 +124,7 @@ _.Zones =
 					},
 				}),
 				n(70530, {	-- Ra'sha
-					["coord"] = { 39.41, 81.60, 504 },
+					["coord"] = { 39.41, 81.60, ISLE_OF_THUNDER },
 					["g"] = {
 						i(95566),	-- Ra'sha's Sacrificial Dagger
 					--	items not linked to bags to avoid unnecessary bloat.
@@ -241,7 +241,7 @@ _.Zones =
 					["f"] = 999,	-- Event Item (so it doesn't filter out with Miscellaneous)
 					["g"] = {
 						n(69767, {	-- Ancient Mogu Guardian
-							["coord"] = { 53.13, 47.07, 504 },
+							["coord"] = { 53.13, 47.07, ISLE_OF_THUNDER },
 							["crs"] = { 70197 },	-- Lightning Ritual Stone
 							["g"] = {
 								i(94826),	-- Mogu Sportsman's Bow
@@ -249,8 +249,8 @@ _.Zones =
 						}),
 						n(69396, {	-- Cera
 							["coords"] = {
-								{ 33.18, 45.58, 504 },
-								{ 57.84, 79.17, 504 },
+								{ 33.18, 45.58, ISLE_OF_THUNDER },
+								{ 57.84, 79.17, ISLE_OF_THUNDER },
 							},
 							["crs"] = {
 								70614,	-- Primal Ritual Stone
@@ -261,7 +261,7 @@ _.Zones =
 							},
 						}),
 						n(69341, {	-- Echo of Kros
-							["coord"] = { 55.1, 87.7, 504 },
+							["coord"] = { 55.1, 87.7, ISLE_OF_THUNDER },
 							["crs"] = { 70203 },	-- Spirit Ritual Stone
 							["g"] = {
 								i(94708),	-- Saurok Ritualist's Sacrificial Dagger
@@ -269,20 +269,20 @@ _.Zones =
 						}),
 						n(69339, {	-- Electromancer Ju'le
 							["crs"] = { 69770 },	-- Lightning Ritual Stone
-							["coord"] = { 44.4, 61.0, 504 },
+							["coord"] = { 44.4, 61.0, ISLE_OF_THUNDER },
 							["g"] = {
 								i(94825),	-- Lightning Snare
 							},
 						}),
 						n(69347, {	-- Incomplete Drakkari Colossus
-							["coord"] = { 49.9, 20.6, 504 },
+							["coord"] = { 49.9, 20.6, ISLE_OF_THUNDER },
 							["crs"] = { 70200 },	--- Primal Ritual Stone
 							["g"] = {
 								i(94823),	-- Drakkari Decapitator
 							},
 						}),
 						n(69633, {	-- Kor'dok
-							["coord"] = { 30.71, 58.56, 504 },
+							["coord"] = { 30.71, 58.56, ISLE_OF_THUNDER },
 							["crs"] = {
 								69644,	-- Tinzo the Emberkeeper
 								70204,	-- Spiritual Ritual Stone
@@ -292,7 +292,7 @@ _.Zones =
 							},
 						}),
 						n(69749, {	-- Qi'nor
-							["coord"] = { 48.0, 25.9, 504 },
+							["coord"] = { 48.0, 25.9, ISLE_OF_THUNDER },
 							["crs"] = { 70196 },	-- Lightning Ritual Stone
 							["g"] = {
 								i(94824),	-- Gaze of Qi'nor
@@ -300,14 +300,14 @@ _.Zones =
 						}),
 						n(69471, {	-- Spirit of Warlord Teng
 							["description"] = "Located underneath the building.",
-							["coord"] = { 35.6, 63.8, 504 },
+							["coord"] = { 35.6, 63.8, ISLE_OF_THUNDER },
 							["crs"] = { 70201 },	-- Spiritual Ritual Stone
 							["g"] = {
 								i(94707),	-- Teng's Reach
 							},
 						}),
 						n(70080, {	-- Windweaver Akil'amon
-							["coord"] = { 68.9, 39.2, 504 },
+							["coord"] = { 68.9, 39.2, ISLE_OF_THUNDER },
 							["crs"] = { 70198 },	-- Primal Ritual Stone
 							["g"] = {
 								i(94709),	-- Talonblade of Akil'amon
