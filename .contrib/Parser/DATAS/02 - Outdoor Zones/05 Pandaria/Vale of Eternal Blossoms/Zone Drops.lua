@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(390, {	-- Vale of Eternal Blossoms
+		m(VALE_OF_ETERNAL_BLOSSOMS, {
 			n(ZONEDROPS, {
 				i(87779, {	-- Ancient Guo-Lai Cache Key
 					["description"] = "Use these keys to unlock Ancient Guo Lai Cache chests in the Vault.",

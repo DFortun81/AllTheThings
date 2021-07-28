@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(390, {	-- Vale of Eternal Blossoms
+		m(VALE_OF_ETERNAL_BLOSSOMS, {
 			n(VENDORS, {
 				n(64922, {	-- Brann Bronzebeard <Archaeology Trainer>
-					["coord"] = { 83.4, 30.9, 390 },
+					["coord"] = { 83.4, 30.9, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						i(104198, {	-- Mantid Artifact Hunter's Kit
 							["cost"] = { { "i", 87399, 2 }, },	-- 2x Restored Artifact
@@ -17,7 +17,7 @@ _.Zones =
 				}),
 				n(64028, {	-- Challenger Soong <Challenge Dungeons>
 					["description"] = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon.  You can only buy the set for your class.",
-					["coord"] = { 86.3, 61.5, 390 },
+					["coord"] = { 86.3, 61.5, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(90049)),	-- Girdle of the Lich Lord
@@ -112,7 +112,7 @@ _.Zones =
 				}),
 				n(63994, {	-- Challenger Wuli <Challenge Dungeons>
 					["description"] = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon.  You can only buy the set for your class.",
-					["coord"] = { 61.2, 20.8, 390 },
+					["coord"] = { 61.2, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(90049)),	-- Girdle of the Lich Lord
@@ -207,8 +207,8 @@ _.Zones =
 				}),
 				n(59908, {	-- Jaluu the Generous <The Golden Lotus Quartermaster>
 					["coords"] = {
-						{ 84.2, 62.7, 390 },	-- Alliance
-						{ 63.2, 22.0, 390 },	-- Horde
+						{ 84.2, 62.7, VALE_OF_ETERNAL_BLOSSOMS },	-- Alliance
+						{ 63.2, 22.0, VALE_OF_ETERNAL_BLOSSOMS },	-- Horde
 					},
 					["g"] = {
 						i(89071),	-- Alani's Inflexible Ring
@@ -283,7 +283,7 @@ _.Zones =
 					},
 				}),
 				n(66973, {	-- Kai Featherfall <Phoenix Egg Trader>
-					["coord"] = { 82.2, 34.0, 390 },
+					["coord"] = { 82.2, 34.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(90045, {	-- Ancestral Phoenix Egg
 							i(89154),	-- Reins of the Crimson Pandaren Phoenix
@@ -294,7 +294,7 @@ _.Zones =
 					},
 				}),
 				n(65172, {	-- Len at Arms <Adventuring Supplies>
-					["coord"] = { 14.1, 78.8, 390 },
+					["coord"] = { 14.1, 78.8, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						i(83234),	-- Wasteland Amulet
 						i(83229),	-- Wasteland Armored Bracers
@@ -407,13 +407,13 @@ _.Zones =
 					},
 				}),
 				n(64691, {	-- Lorewalker Huynh <Inscription Trainer>
-					["coord"] = { 82.0, 29.3, 390 },
+					["coord"] = { 82.0, 29.3, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						i(137788),	-- Technique: Songs of Peace
 					},
 				}),
 				n(64001, {	-- Sage Lotusbloom <The August Celestials Quartermaster>
-					["coord"] = { 62.7, 23.3, 390 },
+					["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(89799),	-- August Celestials Tabard
@@ -469,7 +469,7 @@ _.Zones =
 					},
 				}),
 				n(64032, {	-- Sage Whiteheart <The August Celestials Quartermaster>
-					["coord"] = { 84.6, 63.8, 390 },
+					["coord"] = { 84.6, 63.8, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(89799),	-- August Celestials Tabard
@@ -525,7 +525,7 @@ _.Zones =
 					},
 				}),
 				n(64605, {	-- Tan Shin Tiao <Lorewalkers Quartermaster>
-					["coord"] = { 82.2, 29.4, 390 },
+					["coord"] = { 82.2, 29.4, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						i(89363, {	-- Disc of the Red Flying Cloud (MOUNT!)
 							["cost"] = 6000000,	-- 600g

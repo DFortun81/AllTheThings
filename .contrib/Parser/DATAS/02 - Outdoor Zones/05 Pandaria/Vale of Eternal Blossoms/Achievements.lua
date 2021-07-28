@@ -5,14 +5,14 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(390, {	-- Vale of Eternal Blossoms
+		m(VALE_OF_ETERNAL_BLOSSOMS, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(1, {	-- Aki the Chosen
-							["coord"] = { 31.2, 74.2, 390 },
+							["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
 							["cr"] = 66741,	-- Aki the Chosen <Grand Master Pet Tamer>
 						}),
 					},
@@ -34,7 +34,7 @@ _.Zones =
 					["collectible"] = false,
 					["g"] = {
 						crit(4, {	-- The Thunder King
-							["coord"] = { 40.1, 75.6, 390 },
+							["coord"] = { 40.1, 75.6, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 					},
 				}),

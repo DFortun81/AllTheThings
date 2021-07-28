@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(390, {	-- Vale of Eternal Blossoms
+		m(VALE_OF_ETERNAL_BLOSSOMS, {
 			filter(101, {	-- Pet Battle
 				q(32603, {	-- Beasts of Fable
 					["g"] = {
@@ -71,7 +71,7 @@ _.Zones =
 				}),
 				q(32863, {	-- What We've Been Training For
 					["provider"] = { "n", 64582 },	-- Gentle San
-					["coord"] = { 60.8, 23.6, 390 },
+					["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["description"] = "Account-Wide Weekly Quest.|r",
 					["isWeekly"] = true,
 					["g"] = {

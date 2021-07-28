@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(390, {	-- Vale of Eternal Blossoms
+		m(VALE_OF_ETERNAL_BLOSSOMS, {
 			n(QUESTS, {
 				q(33229, {	-- A Flash of Bronze... (A)
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
@@ -33,14 +33,14 @@ _.Zones =
 					["sourceQuests"] = { 31512 },	-- A Witness to History
 					["provider"] = { "n", 64032 },	-- Sage Whiteheart
 					["isDaily"] = true,
-					["coord"] = { 84.6, 63.6, 390 },
+					["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31377, {	-- Attack At The Temple of the Jade Serpent (H)
 					["sourceQuests"] = { 31511 },	-- A Witness to History
 					["provider"] = { "n", 64001 },	-- Sage Lotusbloom
 					["isDaily"] = true,
-					["coord"] = { 62.7, 23.3, 390 },
+					["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(30642, {	-- Battle Axe of the Thunder King
@@ -76,7 +76,7 @@ _.Zones =
 					},
 				}),
 				q(30266, {	-- Bloodied Skies
-					["coord"] = { 21.3, 71.4, 390 },
+					["coord"] = { 21.3, 71.4, VALE_OF_ETERNAL_BLOSSOMS },
 					["isDaily"] = true,
 					["provider"] = { "n", 58920 },	-- Kun Autumnlight
 				}),
@@ -84,21 +84,21 @@ _.Zones =
 					["sourceQuests"] = { 31512 },	-- A Witness to History
 					["provider"] = { "n", 64032 },	-- Sage Whiteheart
 					["isDaily"] = true,
-					["coord"] = { 84.6, 63.6, 390 },
+					["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31379, {	-- Challenge At The Temple of the Red Crane (H)
 					["sourceQuests"] = { 31511 },	-- A Witness to History
 					["provider"] = { "n", 64001 },	-- Sage Lotusbloom
 					["isDaily"] = true,
-					["coord"] = { 62.7, 23.3, 390 },
+					["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31382, {	-- Defense At Niuzao Temple
 					["sourceQuests"] = { 31512 },	-- A Witness to History
 					["provider"] = { "n", 64032 },	-- Sage Whiteheart
 					["isDaily"] = true,
-					["coord"] = { 84.6, 63.6, 390 },
+					["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY
 				}),
 				q(31097, {	-- Heart of the Mantid Swarm
@@ -117,32 +117,32 @@ _.Zones =
 					},
 				}),
 				q(30243, {	-- Mantid Under Fire
-					["coord"] = { 21.3, 71.4, 390 },
+					["coord"] = { 21.3, 71.4, VALE_OF_ETERNAL_BLOSSOMS },
 					["isDaily"] = true,
 					["provider"] = { "n", 58920 },	-- Kun Autumnlight
 				}),
 				q(32246, {	-- Meet the Scout (A)
 					["provider"] = { "n", 64610 },	-- Lyalia
-					["coord"] = { 84.0, 58.7, 390 },
+					["coord"] = { 84.0, 58.7, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32249, {	-- Meet the Scout (H)
 					["provider"] = { "n", 64566 },	-- Sunwalker Dezco
-					["coord"] = { 62.8, 27.9, 390 },
+					["coord"] = { 62.8, 27.9, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(30261, {	-- Roll Club: Serpent's Spine
-					["coord"] = { 18.1, 63.5, 390 },
+					["coord"] = { 18.1, 63.5, VALE_OF_ETERNAL_BLOSSOMS },
 					["isDaily"] = true,
 					["provider"] = { "n", 58704 },	-- Kelari Featherfoot
 				}),
 				q(30242, {	-- Survival Ring: Blades
-					["coord"] = { 18.4, 71.5, 390 },
+					["coord"] = { 18.4, 71.5, VALE_OF_ETERNAL_BLOSSOMS },
 					["isDaily"] = true,
 					["provider"] = { "n", 58743 },	-- Yumi Goldenpaw
 				}),
 				q(30240, {	-- Survival Ring: Flame
-					["coord"] = { 18.4, 71.5, 390 },
+					["coord"] = { 18.4, 71.5, VALE_OF_ETERNAL_BLOSSOMS },
 					["isDaily"] = true,
 					["provider"] = { "n", 58743 },	-- Yumi Goldenpaw
 				}),
@@ -150,7 +150,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 64033 },	-- Master Angler Karu
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 86.5, 60.2, 390 },
+					["coord"] = { 86.5, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
 					["u"] = REMOVED_FROM_GAME,	-- tried: fresh character, capped character, character with no general fishing, character with fishing, characters with/without fishing who had and had not approached anglers area, character with/without fishing who had and had not spoken to the fishing trainer in valley of the four winds, and all the same stuff but with characters who did/did not have mop fishing specifically.  if these are available i can't think of any other circumstances under which to test!
 				}),
 				q(31370, {	-- The Anglers
@@ -164,12 +164,12 @@ _.Zones =
 					["provider"] = { "i", 83780 },	-- The Ballad of Liu Lang
 				}),
 				q(30306, {	-- The Battle Ring
-					["coord"] = { 19.0, 75.4, 390 },
+					["coord"] = { 19.0, 75.4, VALE_OF_ETERNAL_BLOSSOMS },
 					["isDaily"] = true,
 					["provider"] = { "n", 58962 },	-- Hai-Me Heavyhands
 				}),
 				q(30277, {	-- The Crumbling Hall
-					["coord"] = { 21.4, 71.5, 390 },
+					["coord"] = { 21.4, 71.5, VALE_OF_ETERNAL_BLOSSOMS },
 					["isDaily"] = true,
 					["provider"] = { "n", 58919 },	-- Anji Autumnlight
 				}),
@@ -179,13 +179,13 @@ _.Zones =
 				}),
 				q(31384, {	-- The Golden Lotus (A)
 					["isBreadcrumb"] = true,
-					["coord"] = { 84.2, 62.4, 390 },
+					["coord"] = { 84.2, 62.4, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 64031 },	-- Xari the Kind
 				}),
 				q(31385, {	-- The Golden Lotus (H)
 					["isBreadcrumb"] = true,
-					["coord"] = { 63.0, 22.2, 390 },
+					["coord"] = { 63.0, 22.2, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 64007 },	-- Weng the Merciful
 				}),
@@ -193,27 +193,27 @@ _.Zones =
 					["requireSkill"] = INSCRIPTION,
 					["provider"] = { "n", 64691 },	-- Lorewalker Huynh
 					["isWeekly"] = true,
-					["coord"] = { 82.0, 29.4, 390 },
+					["coord"] = { 82.0, 29.4, VALE_OF_ETERNAL_BLOSSOMS },
 				}),
 				q(32806, {	-- The King and the Council
 					["providers"] = {
 						{ "n", 61962 },	-- Lorewalker Cho
 						{ "n", 63577 },	-- Lorewalker Cho
 					},
-					["coord"] = { 83.2, 29.6, 390 },
+					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["maps"] = { 523 },	-- Dun Morogh (Blood in the Snow scenario)
 					["g"] = {
 						i(98133),	-- Greater Cache of Treasures
 					},
 				}),
 				q(31390, {	-- The Klaxxi (A)
-					["coord"] = { 84.4, 61.6, 390 },
+					["coord"] = { 84.4, 61.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 64488 },	-- Riki the Shifting Shadow
 					["isBreadcrumb"] = true,
 				}),
 				q(31391, {	-- The Klaxxi (H)
-					["coord"] = { 63.2, 20.8, 390 },
+					["coord"] = { 63.2, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 64534 },	-- Bowmaster Ku
 					["isBreadcrumb"] = true,
@@ -226,23 +226,23 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 64030 },    -- Lao Lang
-					["coord"] = { 84.4, 61.6, 390 },    -- Vale of Eternal Blossoms
+					["coord"] = { 84.4, 61.6, VALE_OF_ETERNAL_BLOSSOMS },
 				}),
 				q(31388, {    -- The Shado-Pan Offensive (H)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 64002 },    -- Sang-Bo
-					["coord"] = { 63.0, 21.2, 390 },    -- Vale of Eternal Blossoms
+					["coord"] = { 63.0, 21.2, VALE_OF_ETERNAL_BLOSSOMS },
 				}),
 				q(30280, {	-- The Thunder Below
-					["coord"] = { 21.4, 71.5, 390 },
+					["coord"] = { 21.4, 71.5, VALE_OF_ETERNAL_BLOSSOMS },
 					["isDaily"] = true,
 					["provider"] = { "n", 58919 },	-- Anji Autumnlight
 				}),
 				q(32807, {	-- The Warchief and the Darkness
 					["sourceQuests"] = { 32806 },	-- The King and the Council
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
-					["coord"] = { 83.2, 29.6, 390 },
+					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["maps"] = { 520, 521 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
 					["g"] = {
 						i(98133),	-- Greater Cache of Treasures
@@ -251,11 +251,11 @@ _.Zones =
 				q(32679, {	-- Thunder Calls (A)
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 64610 },	-- Lyalia
-					["coord"] = { 84.0, 58.8, 390 },
+					["coord"] = { 84.0, 58.8, VALE_OF_ETERNAL_BLOSSOMS },
 					["isBreadcrumb"] = true,
 				}),
 				q(32678, {	-- Thunder Calls (H)
-					["coord"] = { 62.8, 28.0, 390 },
+					["coord"] = { 62.8, 28.0, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 64566 },	-- Sunwalker Dezco
 					["isBreadcrumb"] = true,
@@ -264,26 +264,26 @@ _.Zones =
 					["sourceQuests"] = { 31512 },	-- A Witness to History
 					["provider"] = { "n", 64032 },	-- Sage Whiteheart
 					["isDaily"] = true,
-					["coord"] = { 84.6, 63.6, 390 },
+					["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31381, {	-- Trial At The Temple of the White Tiger (H)
 					["sourceQuests"] = { 31511 },	-- A Witness to History
 					["provider"] = { "n", 64001 },	-- Sage Lotusbloom
 					["isDaily"] = true,
-					["coord"] = { 62.7, 23.3, 390 },
+					["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(33134, {	-- Warforged Seals (A)
 					["repeatable"] = true,
 					["provider"] = { "n", 64029 },	-- Elder Lin
-					["coord"] = { 85.2, 62.6, 390 },
+					["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(33133, {	-- Warforged Seals (H)
 					["repeatable"] = true,
 					["provider"] = { "n", 63996 },	-- Elder Liao
-					["coord"] = { 62.0, 20.6, 390 },
+					["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31015, {	-- Your Private Collection
@@ -291,7 +291,7 @@ _.Zones =
 						{ "n", 61962 },	-- Lorewalker Cho
 						{ "n", 63577 },	-- Lorewalker Cho
 					},
-					["coord"] = { 83.2, 29.6, 390 },
+					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 				}),
 				--[[
 				q(31383, {	-- Defense At Niuzao Temple

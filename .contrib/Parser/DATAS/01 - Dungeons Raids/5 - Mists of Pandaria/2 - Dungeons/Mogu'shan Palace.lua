@@ -4,7 +4,7 @@
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(321, {	-- Mogu'shan Palace
-		["coord"] = { 80.5, 33.0, 390 },	-- Vale of Eternal Blossoms
+		["coord"] = { 80.5, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
 		["maps"] = { 453, 454, 455 },
 		["lvl"] = 87,
 		["g"] = {

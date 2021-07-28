@@ -633,10 +633,10 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(32496, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
 			["isYearly"] = true,
 			["provider"] = { "o", 217852 },	-- Horde Bonfire
-			["coord"] = { 77.9, 33.9, 390 },
+			["coord"] = { 77.9, 33.9, VALE_OF_ETERNAL_BLOSSOMS },
 			["races"] = ALLIANCE_ONLY,
 			["icon"] = "Interface\\Icons\\spell_fire_fire",
-			["maps"] = { 390, },	-- Vale of Eternal Blossoms
+			["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 		}),
 		q(54749, {	-- Desecrate this Fire! — Vol'dun
 			["isYearly"] = true,
@@ -1059,10 +1059,10 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(32503, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
 			["isYearly"] = true,
 			["provider"] = { "o", 217851 },	-- Alliance Bonfire
-			["coord"] = { 79.8, 37.0, 390 },
+			["coord"] = { 79.8, 37.0, VALE_OF_ETERNAL_BLOSSOMS },
 			["races"] = HORDE_ONLY,
 			["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-			["maps"] = { 390 },	-- Vale of Eternal Blossoms
+			["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 		}),
 		q(11756, {	-- Desecrate this Fire! — Western Plaguelands
 			["isYearly"] = true,
@@ -1531,9 +1531,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(32510, {	-- Honor the Flame — Vale of Eternal Blossoms
 			["provider"] = { "n", 69572 },	-- Vale of Eternal Blossoms Flame Warden
 			["isYearly"] = true,
-			["coord"] = { 79.6, 37.2, 390 },
+			["coord"] = { 79.6, 37.2, VALE_OF_ETERNAL_BLOSSOMS },
 			["races"] = ALLIANCE_ONLY,
-			["maps"] = { 390 },	-- Vale of Eternal Blossoms
+			["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 		}),
 		q(29031, {	-- Honor the Flame — Vashj'ir
 			["provider"] = { "n", 51697 },	-- Vashj'ir Flame Guardian
@@ -1911,9 +1911,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(32509, {	-- Honor the Flame — Vale of Eternal Blossoms
 			["provider"] = { "n", 69551 },	-- Vale of Eternal Blossoms Flame Keeper
 			["isYearly"] = true,
-			["coord"] = { 77.8, 33.1, 390 },
+			["coord"] = { 77.8, 33.1, VALE_OF_ETERNAL_BLOSSOMS },
 			["races"] = HORDE_ONLY,
-			["maps"] = { 390 },	-- Vale of Eternal Blossoms
+			["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 		}),
 		q(29031, {	-- Honor the Flame — Vashj'ir
 			["provider"] = { "n", 51697 },	-- Vashj'ir Flame Guardian

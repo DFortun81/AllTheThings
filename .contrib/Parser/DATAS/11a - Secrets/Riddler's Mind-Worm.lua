@@ -43,7 +43,7 @@ _.Secrets =
 			o(220821, {	-- Step 5: Page 845
 				["model"] = 305393,
 				["questID"] = 47210,
-				["coord"] = { 72.4, 44.3, 390 },	-- Siege of Orgrimmar
+				["coord"] = { 72.4, 44.3, VALE_OF_ETERNAL_BLOSSOMS },	-- Siege of Orgrimmar
 				["sourceQuest"] = 47209,	-- Step 4: Page 655
 				["description"] = "|cFFFFFFFFStep 5:|r This step will take us to |cFFFFD700Siege of Orgrimmar|r.  This does not spawn on LFR.  Head to the |cFFFFD700Sha of Pride|r room.  |cFFFFD700Page 845|r is found in the far back left corner of the room (southwest on the minimap).  Click this to continue.  The page reads...\n\n|cFFFFFFFF...in snow, sand, and stone...|r",
 				["isWeekly"] = true,

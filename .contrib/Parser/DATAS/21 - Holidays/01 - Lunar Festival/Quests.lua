@@ -82,7 +82,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					THE_EXODAR,
 					SHATTRATH_CITY,
 					125,	-- Dalaran: Northrend
-					390,	-- Vale of Eternal Blossoms
+					VALE_OF_ETERNAL_BLOSSOMS,
 				},
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
@@ -157,7 +157,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					THE_EXODAR,
 					SHATTRATH_CITY,
 					125,	-- Dalaran: Northrend
-					390,	-- Vale of Eternal Blossoms
+					VALE_OF_ETERNAL_BLOSSOMS,
 				},
 				["u"] = 17,	-- Lunar Festival
 			}),

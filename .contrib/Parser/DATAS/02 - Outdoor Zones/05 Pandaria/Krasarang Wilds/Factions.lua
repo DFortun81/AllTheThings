@@ -614,7 +614,7 @@ _.Zones =
 							q(32257, {	-- Voice of the Gods
 								["sourceQuests"] = { 32242 },	-- Buried Secrets
 								["provider"] = { "n", 67834 },	-- Fanlyr Silverthorn
-								["coord"] = { 20.9, 15.7, 390 },
+								["coord"] = { 20.9, 15.7, VALE_OF_ETERNAL_BLOSSOMS },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32222, {	-- Wanted: Chief Engineer Cogwrench

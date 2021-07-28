@@ -1301,8 +1301,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { TOWNLONG_STEPPES },
 						}),
 						crit(19, {	-- Vale of Eternal Blossoms, Mistfall Village
-							["coord"] = { 35.1, 77.7, 390 },
-							["maps"] = { 390 },	-- Vale of Eternal Blossoms
+							["coord"] = { 35.1, 77.7, VALE_OF_ETERNAL_BLOSSOMS },
+							["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 						crit(20, {	-- Vale of Eternal Blossoms, Shrine of Seven Stars
 							["coord"] = { 37.7, 66.1, 393 },
@@ -1402,8 +1402,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { TOWNLONG_STEPPES },
 						}),
 						crit(21, {	-- Vale of Eternal Blossoms, Mistfall Village
-							["coord"] = { 35.1, 77.7, 390 },
-							["maps"] = { 390 },	-- Vale of Eternal Blossoms
+							["coord"] = { 35.1, 77.7, VALE_OF_ETERNAL_BLOSSOMS },
+							["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 						crit(22, {	-- Vale of Eternal Blossoms, Shrine of Two Moons
 							["coord"] = { 61.9, 16.1, 391 },

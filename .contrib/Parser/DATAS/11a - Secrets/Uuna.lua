@@ -15,7 +15,7 @@ _.Secrets =
 			115,
 			MOUNT_HYJAL,
 			KUN_LAI_SUMMIT,
-			390,
+			VALE_OF_ETERNAL_BLOSSOMS,
 			DRAENOR_SHADOWMOON_VALLEY,
 			627,
 			680,
@@ -108,7 +108,7 @@ _.Secrets =
 						["sourceQuests"] = { 50109 },	-- Step 12: A Dark Place
 						["name"] = "Step 1: Gate of the Setting Sun",
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
-						["coord"] = { 8.00, 59.0, 390 },
+						["coord"] = { 8.00, 59.0, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
 					q(50141, {	-- Step 2: Nighthold
 						["sourceQuests"] = { 50140 },	-- Step 1: Gate of the Setting Sun

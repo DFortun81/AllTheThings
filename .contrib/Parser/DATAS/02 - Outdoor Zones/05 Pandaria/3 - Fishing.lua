@@ -16,7 +16,7 @@ _.Zones =
 				433,	-- The Veiled Stair
 				554,	-- Timeless Isle
 				TOWNLONG_STEPPES,
-				390,	-- Vale of Eternal Blossoms
+				VALE_OF_ETERNAL_BLOSSOMS,
 				VALLEY_OF_THE_FOUR_WINDS,
 			},
 			["g"] = {

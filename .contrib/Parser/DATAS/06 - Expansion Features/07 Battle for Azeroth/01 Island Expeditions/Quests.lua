@@ -152,7 +152,7 @@ _.ExpansionFeatures =
 				}),
 				-- Item drop quests
 				i(163470, {	-- Ancient Crypt Key
-					["coord"] = { 83.2, 29.6, 390 },
+					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						q(53160, {	-- Ancient Crypt Key
 							["provider"] = { "n", 61962 },	-- Lorewalker Cho

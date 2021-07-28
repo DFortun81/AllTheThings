@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(390, {	-- Vale of Eternal Blossoms
+		m(VALE_OF_ETERNAL_BLOSSOMS, {
 			n(RARES, {
 				n(58778, {	-- Aetha
-					["coord"] = { 35.0, 89.9, 390 },
+					["coord"] = { 35.0, 89.9, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(5, {	-- Aetha
 							["achievementID"] = 7317,	-- One Many Army
@@ -17,7 +17,7 @@ _.Zones =
 					},
 				}),
 				n(50822, {	-- Ai-Ran the Shifting Cloud
-					["coord"] = { 42.8, 69.2, 390 },
+					["coord"] = { 42.8, 69.2, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(42, {	-- Ai-Ran the Shifting Cloud
 							["achievementID"] = 7439,	-- Glorious!
@@ -34,9 +34,9 @@ _.Zones =
 				n(64403, {	-- Alani
 					["description"] = "Only the person who uses the Sky Crystal on Alani will get the mount, and they can sell or trade it.",
 					["coords"] = {
-						{ 56.2, 42.6, 390 },
-						{ 35.6, 26.0, 390 },
-						{ 38.6, 64.6, 390 },
+						{ 56.2, 42.6, VALE_OF_ETERNAL_BLOSSOMS },
+						{ 35.6, 26.0, VALE_OF_ETERNAL_BLOSSOMS },
+						{ 38.6, 64.6, VALE_OF_ETERNAL_BLOSSOMS },
 					},
 					["cost"] = {
 						{ "i", 86546, 1 },	-- Sky Crystal
@@ -46,7 +46,7 @@ _.Zones =
 					},
 				}),
 				n(58949, {	-- Bai-Jin the Butcher
-					["coord"] = { 17.0, 48.7, 390 },
+					["coord"] = { 17.0, 48.7, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(14, {	-- Bai-Jin the Butcher
 							["achievementID"] = 7317,	-- One Many Army
@@ -55,7 +55,7 @@ _.Zones =
 					},
 				}),
 				n(63695, {	-- Baolai the Immolator
-					["coord"] = { 28.7, 43.3, 390 },
+					["coord"] = { 28.7, 43.3, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(8, {	-- Baolai the Immolator
 							["achievementID"] = 7317,	-- One Many Army
@@ -76,7 +76,7 @@ _.Zones =
 					},
 				}),
 				n(58768, {	-- Cracklefang
-					["coord"] = { 46.4, 59.3, 390 },
+					["coord"] = { 46.4, 59.3, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(1, {	-- Cracklefang
 							["achievementID"] = 7317,	-- One Many Army
@@ -98,8 +98,8 @@ _.Zones =
 				}),
 				n(63101, {	-- General Temuja
 					["coords"] = {
-						{ 26.3, 51.1, 390 },
-						{ 28.9, 56.3, 390 },
+						{ 26.3, 51.1, VALE_OF_ETERNAL_BLOSSOMS },
+						{ 28.9, 56.3, VALE_OF_ETERNAL_BLOSSOMS },
 					},
 					["g"] = {
 						crit(3, {	-- General Temuja
@@ -109,7 +109,7 @@ _.Zones =
 					},
 				}),
 				n(62880, {	-- Gochao the Ironfist
-					["coord"] = { 26.86, 13.08, 390 },
+					["coord"] = { 26.86, 13.08, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(12, {	-- Gochao the Ironfist
 							["achievementID"] = 7317,	-- One Many Army
@@ -131,7 +131,7 @@ _.Zones =
 					},
 				}),
 				n(50749, {	-- Kal'tik the Blight
-					["coord"] = { 14.0, 58.6, 390 },
+					["coord"] = { 14.0, 58.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(21, {	-- Kal'tik the Blight
 							["achievementID"] = 7439,	-- Glorious!
@@ -146,7 +146,7 @@ _.Zones =
 					},
 				}),
 				n(50349, {	-- Kang the Soul Thief
-					["coord"] = { 15.2, 35.2, 390 },
+					["coord"] = { 15.2, 35.2, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(28, {	-- Kang the Soul Thief
 							["achievementID"] = 7439,	-- Glorious!
@@ -161,7 +161,7 @@ _.Zones =
 					},
 				}),
 				n(63978, {	-- Kri'chon
-					["coord"] = { 6.27, 58.5, 390 },
+					["coord"] = { 6.27, 58.5, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(15, {	-- Kri'chon
 							["achievementID"] = 7317,	-- One Many Army
@@ -170,7 +170,7 @@ _.Zones =
 					},
 				}),
 				n(50840, {	-- Major Nanners
-					["coord"] = { 30.7, 91.5, 390 },
+					["coord"] = { 30.7, 91.5, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(7, {	-- Major Nanners
 							["achievementID"] = 7439,	-- Glorious!
@@ -186,8 +186,8 @@ _.Zones =
 				}),
 				n(50806, {	-- Moldo One-Eye
 					["coords"] = {
-						{ 39.1, 54.0, 390 },
-						{ 34.8, 60.7, 390 },
+						{ 39.1, 54.0, VALE_OF_ETERNAL_BLOSSOMS },
+						{ 34.8, 60.7, VALE_OF_ETERNAL_BLOSSOMS },
 					},
 					["g"] = {
 						crit(49, {	-- Moldo One-Eye
@@ -203,7 +203,7 @@ _.Zones =
 					},
 				}),
 				n(58771, {	-- Quid
-					["coord"] = { 66.4, 39.3, 390 },
+					["coord"] = { 66.4, 39.3, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(6, {	-- Quid
 							["achievementID"] = 7317,	-- One Many Army
@@ -212,7 +212,7 @@ _.Zones =
 					},
 				}),
 				n(50780, {	-- Sahn Tidehunter
-					["coord"] = { 69.4, 30.5, 390 },
+					["coord"] = { 69.4, 30.5, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(14, {	-- Sahn Tidehunter
 							["achievementID"] = 7439,	-- Glorious!
@@ -227,7 +227,7 @@ _.Zones =
 					},
 				}),
 				n(63240, {	-- Shadowmaster Sydow
-					["coord"] = { 30.5, 78.4, 390 },
+					["coord"] = { 30.5, 78.4, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(4, {	-- Shadowmaster Sydow
 							["achievementID"] = 7317,	-- One Many Army
@@ -236,7 +236,7 @@ _.Zones =
 					},
 				}),
 				n(58817, {	-- Spirit of Lao-Fe
-					["coord"] = { 47.4, 65.6, 390 },
+					["coord"] = { 47.4, 65.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(7, {	-- Spirit of Lao-Fe
 							["achievementID"] = 7317,	-- One Many Army
@@ -245,7 +245,7 @@ _.Zones =
 					},
 				}),
 				n(50359, {	-- Urgolax
-					["coord"] = { 39.5, 25.1, 390 },
+					["coord"] = { 39.5, 25.1, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(35, {	-- Urgolax
 							["achievementID"] = 7439,	-- Glorious!
@@ -260,7 +260,7 @@ _.Zones =
 					},
 				}),
 				n(58769, {	-- Vicejaw
-					["coord"] = { 37.4, 50.9, 390 },
+					["coord"] = { 37.4, 50.9, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(2, {	-- Vicejaw
 							["achievementID"] = 7317,	-- One Many Army
@@ -269,7 +269,7 @@ _.Zones =
 					},
 				}),
 				n(63977, {	-- Vyraxxis
-					["coord"] = { 7.92, 33.8, 390 },
+					["coord"] = { 7.92, 33.8, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(16, {	-- Vyraxxis
 							["achievementID"] = 7317,	-- One Many Army
@@ -279,8 +279,8 @@ _.Zones =
 				}),
 				n(63510, {	-- Wulon
 					["coords"] = {
-						{ 45.3, 76.3, 390 },
-						{ 40.2, 77.1, 390 },
+						{ 45.3, 76.3, VALE_OF_ETERNAL_BLOSSOMS },
+						{ 40.2, 77.1, VALE_OF_ETERNAL_BLOSSOMS },
 					},
 					["g"] = {
 						crit(11, {	-- Wulon
@@ -290,7 +290,7 @@ _.Zones =
 					},
 				}),
 				n(50336, {	-- Yorik Sharpeye
-					["coord"] = { 88.0, 44.3, 390 },
+					["coord"] = { 88.0, 44.3, VALE_OF_ETERNAL_BLOSSOMS },
 					["g"] = {
 						crit(56, {	-- Yorik Sharpeye
 							["achievementID"] = 7439,	-- Glorious!

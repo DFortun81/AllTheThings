@@ -377,8 +377,8 @@ _.Achievements =
 				crit(3, {	-- Spirit Binders
 					["coord"] = { 42.26, 17.46, THE_JADE_FOREST },
 				}),
-				crit(4, {	-- The Thunder King (Vale of Eternal Blossoms)
-					["coord"] = { 40.19, 75.63, 390 },
+				crit(4, {	-- The Thunder King
+					["coord"] = { 40.19, 75.63, VALE_OF_ETERNAL_BLOSSOMS },
 				}),
 			}),
 			ach(6855, {	-- The Seven Burdens of Shaohao

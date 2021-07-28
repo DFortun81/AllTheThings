@@ -369,7 +369,7 @@ _.Zones =
 					},
 				}),
 				q(31001, {	-- Falling Down
-					["coord"] = { 14.1, 76.9, 390 },
+					["coord"] = { 14.1, 76.9, VALE_OF_ETERNAL_BLOSSOMS },
 					["provider"] = { "n", 62112 },	-- Bowmistress Li
 					["sourceQuests"] = {
 						-- NOTE: all of these are breadcrumbs from multiple places.. crazy
@@ -616,7 +616,7 @@ _.Zones =
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31002, {	-- Nope
-					["coord"] = { 14.1, 76.9, 390 },
+					["coord"] = { 14.1, 76.9, VALE_OF_ETERNAL_BLOSSOMS },
 					["provider"] = { "n", 62112 },	-- Bowmistress Li
 					["g"] = {
 						i(84037),	-- Motherseed Gloves

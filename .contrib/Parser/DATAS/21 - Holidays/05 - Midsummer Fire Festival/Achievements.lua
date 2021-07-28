@@ -590,9 +590,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { TOWNLONG_STEPPES },
 				}),
 				crit(6, {	-- Vale of Eternal Blossoms
-					["coord"] = { 79.6, 37.2, 390 },
+					["coord"] = { 79.6, 37.2, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 390 },	-- Vale of Eternal Blossoms
+					["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 				}),
 				crit(7, {	-- Valley of the Four Winds
 					["coord"] = { 51.8, 51.4, VALLEY_OF_THE_FOUR_WINDS },
@@ -682,9 +682,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 			},
 		}),
 		ach(8042,  {	-- Extinguishing Pandaria
-			["coord"] = { 77.9, 33.9, 390 },
+			["coord"] = { 77.9, 33.9, VALE_OF_ETERNAL_BLOSSOMS },
 			["races"] = ALLIANCE_ONLY,
-			["maps"] = { 390 },	-- Vale of Eternal Blossoms
+			["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 		}),
 		ach(11276, {	-- Extinguishing Draenor
 			["coord"] = { 72.8, 65.2, FROSTFIRE_RIDGE },
@@ -1296,9 +1296,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { TOWNLONG_STEPPES },
 				}),
 				crit(6, {	-- Vale of Eternal Blossoms
-					["coord"] = { 77.8, 33.1, 390 },
+					["coord"] = { 77.8, 33.1, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 390 },	-- Vale of Eternal Blossoms
+					["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 				}),
 				crit(7, {	-- Valley of the Four Winds
 					["coord"] = { 51.8, 51.4, VALLEY_OF_THE_FOUR_WINDS },
@@ -1388,9 +1388,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 			},
 		}),
 		ach(8043,  {	-- Extinguishing Pandaria
-			["coord"] = { 79.8, 37.0, 390 },
+			["coord"] = { 79.8, 37.0, VALE_OF_ETERNAL_BLOSSOMS },
 			["races"] = HORDE_ONLY,
-			["maps"] = { 390, },	-- Vale of Eternal Blossoms
+			["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 		}),
 		ach(11277, {	-- Extinguishing Draenor
 			["coord"] = { 42.8, 35.9, DRAENOR_SHADOWMOON_VALLEY },

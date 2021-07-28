@@ -17,7 +17,7 @@ _.Achievements =
 			ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 				i(184512),	-- Winterleaf Spriggan
 				crit(1,  {	-- Crystalsnap
-					--["coord"] = { 31.2, 74.2, 390 },
+					--["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
 				}),
 				crit(2,  {	-- Briarpaw
 					--["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
@@ -50,7 +50,7 @@ _.Achievements =
 			ach(9069,  {	-- An Awfully Big Adventure
 				i(120121),	-- Trunks
 				crit(1,  {	-- Aki the Chosen (Vale of Eternal Blossoms)
-					["coord"] = { 31.2, 74.2, 390 },
+					["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
 				}),
 				crit(2,  {	-- Ashlei (Shadowmoon Valley, Draenor)
 					["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
