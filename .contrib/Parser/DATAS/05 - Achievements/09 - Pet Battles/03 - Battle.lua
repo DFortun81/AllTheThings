@@ -91,8 +91,8 @@ _.Achievements =
 				crit(14, {	-- Farmer Nishi
 					["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
 				}),
-				crit(15, {	-- Flowing Pandaren Spirit (Dread Wastes)
-					["coord"] = { 61.2, 87.6, 422 },
+				crit(15, {	-- Flowing Pandaren Spirit
+					["coord"] = { 61.2, 87.6, DREAD_WASTES },
 				}),
 				crit(16, {	-- Gargra
 					["coord"] = { 68.6, 64.6, FROSTFIRE_RIDGE },
@@ -169,8 +169,8 @@ _.Achievements =
 				crit(40, {	-- Vesharr
 					["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },
 				}),
-				crit(41, {	-- Wastewalker Shu (Dread Wastes)
-					["coord"] = { 55.0, 37.6, 422 },
+				crit(41, {	-- Wastewalker Shu
+					["coord"] = { 55.0, 37.6, DREAD_WASTES },
 				}),
 				crit(42, {	-- Whispering Pandaren Spirit
 					["coord"] = { 28.8, 36.0, THE_JADE_FOREST },

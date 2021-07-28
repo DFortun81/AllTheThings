@@ -7,7 +7,7 @@ _.Zones =
 	m(PANDARIA, {
 		n(ZONEDROPS, {
 			["maps"] = {
-				422,	-- Dread Wastes
+				DREAD_WASTES,
 				THE_JADE_FOREST,
 				TOWNLONG_STEPPES,
 				KRASARANG_WILDS,
@@ -24,7 +24,7 @@ _.Zones =
 					},
 					--[[
 					["maps"] = {
-						422,	-- Dread Wastes
+						DREAD_WASTES,
 						THE_JADE_FOREST,
 						TOWNLONG_STEPPES,
 						KRASARANG_WILDS,
@@ -61,7 +61,7 @@ _.Zones =
 					},
 					--[[
 					["maps"] = {
-						422,	-- Dread Wastes
+						DREAD_WASTES,
 						THE_JADE_FOREST,
 						TOWNLONG_STEPPES,
 						KRASARANG_WILDS,
@@ -79,7 +79,7 @@ _.Zones =
 					},
 					--[[
 					["maps"] = {
-						422,	-- Dread Wastes
+						DREAD_WASTES,
 						THE_JADE_FOREST,
 						TOWNLONG_STEPPES,
 						KRASARANG_WILDS,
@@ -97,7 +97,7 @@ _.Zones =
 					},
 					--[[
 					["maps"] = {
-						422,	-- Dread Wastes
+						DREAD_WASTES,
 						THE_JADE_FOREST,
 						TOWNLONG_STEPPES,
 						KRASARANG_WILDS,
@@ -115,7 +115,7 @@ _.Zones =
 					},
 					--[[
 					["maps"] = {
-						422,	-- Dread Wastes
+						DREAD_WASTES,
 						THE_JADE_FOREST,
 						TOWNLONG_STEPPES,
 						KRASARANG_WILDS,
@@ -133,7 +133,7 @@ _.Zones =
 					},
 					--[[
 					["maps"] = {
-						422,	-- Dread Wastes
+						DREAD_WASTES,
 						THE_JADE_FOREST,
 						TOWNLONG_STEPPES,
 						KRASARANG_WILDS,

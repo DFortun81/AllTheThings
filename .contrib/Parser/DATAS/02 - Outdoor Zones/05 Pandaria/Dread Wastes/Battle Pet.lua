@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(422, {	-- Dread Wastes
+		m(DREAD_WASTES, {
 			filter(101, {	-- Battle Pet
 				p(732, {	-- Amber Moth
 					["cr"] = 65187,
@@ -29,7 +29,7 @@ _.Zones =
 					["cr"] = 64804,
 				}),
 				q(31957, {	-- Grand Master Shu
-					["coord"] = { 55.1, 37.6, 422 },
+					["coord"] = { 55.1, 37.6, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 66739 },	-- Wastewalker Shu
 					["g"] = {
@@ -37,7 +37,7 @@ _.Zones =
 					},
 				}),
 				q(32439, {	-- Flowing Pandaren Spirit
-					["coord"] = { 61.1, 87.5, 422 },
+					["coord"] = { 61.1, 87.5, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 68462 },	-- Flowing Pandaren Spirit
 					["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer

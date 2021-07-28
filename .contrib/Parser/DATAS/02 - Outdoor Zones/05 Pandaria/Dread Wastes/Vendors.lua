@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(422, {	-- Dread Wastes
+		m(DREAD_WASTES, {
 			n(VENDORS, {
 				n(64599, {	-- Ambersmith Zikk <Klaxxi Quartermaster>
-					["coord"] = { 55.0, 35.5, 422 },
+					["coord"] = { 55.0, 35.5, DREAD_WASTES },
 					["g"] = {
 						i(89396),	-- Amber Espada of Klaxxi'vess
 						i(89398),	-- Amber Flammard of Klaxxi'vess

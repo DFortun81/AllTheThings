@@ -9,7 +9,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["lvl"] = 90,
 		["mapID"] = 474,
 		["maps"] = { 475 },	-- 2nd wing
-		["coord"] = { 39.0, 34.9, 422 },	-- Heart of Fear, Dread Wastes
+		["coord"] = { 39.0, 34.9, DREAD_WASTES },	-- Heart of Fear
 		["groups"] = {
 			d(7, {	-- LFR
 				["description"] = "Speak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.",

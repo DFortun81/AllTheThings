@@ -565,9 +565,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				crit(1, {	-- Dread Wastes
-					["coord"] = { 56.1, 69.5, 422 },
+					["coord"] = { 56.1, 69.5, DREAD_WASTES },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 422 },	-- Dread Wastes
+					["maps"] = { DREAD_WASTES },
 				}),
 				crit(2, {	-- Jade Forest
 					["coord"] = { 47.2, 47.2, THE_JADE_FOREST },
@@ -1271,9 +1271,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				crit(1, {	-- Dread Wastes
-					["coord"] = { 56.1, 69.5, 422 },
+					["coord"] = { 56.1, 69.5, DREAD_WASTES },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 422 },	-- Dread Wastes
+					["maps"] = { DREAD_WASTES },
 				}),
 				crit(2, {	-- Jade Forest
 					["coord"] = { 47.2, 47.2, THE_JADE_FOREST },

@@ -633,16 +633,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(32024, {	-- Candy Bucket — Dread Wastes, Klaxxi'vess, neutral
 				["isYearly"] = true,
-				["coord"] = { 55.9, 32.3, 422 },
-				["maps"] = { 422 },	-- Dread Wastes
+				["coord"] = { 55.9, 32.3, DREAD_WASTES },
+				["maps"] = { DREAD_WASTES },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32023, {	-- Candy Bucket — Dread Wastes, Soggy's Gamble, neutral
 				["isYearly"] = true,
-				["coord"] = { 55.2, 71.1, 422 },
-				["maps"] = { 422 },	-- Dread Wastes
+				["coord"] = { 55.2, 71.1, DREAD_WASTES },
+				["maps"] = { DREAD_WASTES },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

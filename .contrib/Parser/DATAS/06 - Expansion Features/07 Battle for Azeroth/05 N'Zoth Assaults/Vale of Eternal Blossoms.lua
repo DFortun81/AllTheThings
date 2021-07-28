@@ -822,7 +822,7 @@ _.ExpansionFeatures =
 						}),
 						q(56647, {	-- The Mantid Threat
 							["lvl"] = 120,
-							["coord"] = { 12.2, 95.3, 422 },
+							["coord"] = { 12.2, 95.3, DREAD_WASTES },
 							["provider"] = { "n", 155487 },	-- Taoshi
 							["sourceQuest"] = 56645,	-- Heart of the Swarm
 						}),

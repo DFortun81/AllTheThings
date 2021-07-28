@@ -204,7 +204,7 @@ _.Zones =
 				}),
 				n(69841, {	-- Zandalari Warbringer (Amber)
 					["coords"] = {
-						{ 47.42, 61.54, 422 },	-- Dread Wastes
+						{ 47.42, 61.54, DREAD_WASTES },
 						{ 75.11, 67.47, KUN_LAI_SUMMIT },
 						{ 52.56, 18.85, THE_JADE_FOREST },
 						{ 36.58, 85.67, TOWNLONG_STEPPES },
@@ -215,7 +215,7 @@ _.Zones =
 				}),
 				n(69842, {	-- Zandalari Warbringer (Jade)
 					["coords"] = {
-						{ 47.42, 61.54, 422 },	-- Dread Wastes
+						{ 47.42, 61.54, DREAD_WASTES },
 						{ 75.11, 67.47, KUN_LAI_SUMMIT },
 						{ 52.56, 18.85, THE_JADE_FOREST },
 						{ 36.58, 85.67, TOWNLONG_STEPPES },
@@ -226,7 +226,7 @@ _.Zones =
 				}),
 				n(69769, {	-- Zandalari Warbringer (Slate)
 					["coords"] = {
-						{ 47.42, 61.54, 422 },	-- Dread Wastes
+						{ 47.42, 61.54, DREAD_WASTES },
 						{ 39.83, 65.92, KRASARANG_WILDS },
 						{ 75.11, 67.47, KUN_LAI_SUMMIT },
 						{ 52.56, 18.85, THE_JADE_FOREST },

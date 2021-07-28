@@ -7,7 +7,7 @@ _.Zones =
 	m(PANDARIA, {
 		prof(FISHING, {
 			["maps"] = {
-				422,	-- Dread Wastes
+				DREAD_WASTES,
 				507,	-- Isle of Giants
 				504,	-- Isle of Thunder
 				KRASARANG_WILDS,

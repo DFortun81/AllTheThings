@@ -1229,12 +1229,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 					["g"] = {
 						crit(1, {	-- Dread Wastes, Klaxi'vess
-							["coord"] = { 55.9, 32.3, 422 },
-							["maps"] = { 422 },	-- Dread Wastes
+							["coord"] = { 55.9, 32.3, DREAD_WASTES },
+							["maps"] = { DREAD_WASTES },
 						}),
 						crit(2, {	-- Dread Wastes, Soggy's Gamble
-							["coord"] = { 55.2, 71.1, 422 },
-							["maps"] = { 422 },	-- Dread Wastes
+							["coord"] = { 55.2, 71.1, DREAD_WASTES },
+							["maps"] = { DREAD_WASTES },
 						}),
 						crit(3, {	-- Jade Forest, Dawn's Blossom
 							["coord"] = { 45.7, 43.6, THE_JADE_FOREST },
@@ -1322,12 +1322,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
 					["g"] = {
 						crit(1,  {	-- Dread Wastes, Klaxxi'vess
-							["coord"] = { 55.9, 32.3, 422 },
-							["maps"] = { 422 },	-- Dread Wastes
+							["coord"] = { 55.9, 32.3, DREAD_WASTES },
+							["maps"] = { DREAD_WASTES },
 						}),
 						crit(2,  {	-- Dread Wastes, Soggy's Gamble
-							["coord"] = { 55.2, 71.1, 422 },
-							["maps"] = { 422 },	-- Dread Wastes
+							["coord"] = { 55.2, 71.1, DREAD_WASTES },
+							["maps"] = { DREAD_WASTES },
 						}),
 						crit(3,  {	-- Jade Forest, Dawn's Blossom
 							["coord"] = { 45.7, 43.6, THE_JADE_FOREST },

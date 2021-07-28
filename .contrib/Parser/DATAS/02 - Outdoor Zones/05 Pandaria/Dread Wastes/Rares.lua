@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(422, {	-- Dread Wastes
+		m(DREAD_WASTES, {
 			n(RARES, {
 				n(50821, {	-- Ai-Li Skymirror
-					["coord"] = { 34.8, 23.2, 422 },
+					["coord"] = { 34.8, 23.2, DREAD_WASTES },
 					["g"] = {
 						i(87629),	-- Chestplate of Manifest
 						i(86589),	-- Ai-Li's Skymirror
@@ -26,7 +26,7 @@ _.Zones =
 					},
 				}),
 				n(66935, {	-- Clamstok
-					["coord"] = { 27, 69.2, 422 },
+					["coord"] = { 27.0, 69.2, DREAD_WASTES },
 					["g"] = {
 						i(90170, {	-- Clamstok's Clamshell
 							i(90172),	-- Clamshell Band
@@ -35,7 +35,7 @@ _.Zones =
 					},
 				}),
 				n(50334, {	-- Dak the Breaker
-					["coord"] = { 25.2, 28.6, 422 },
+					["coord"] = { 25.2, 28.6, DREAD_WASTES },
 					["g"] = {
 						i(86567),	-- Yaungol Wind Chime
 						i(87635),	-- Amber-Starched Robes
@@ -54,9 +54,9 @@ _.Zones =
 				}),
 				n(50739, {	-- Gar'lok
 					["coords"] = {
-						{ 38.8, 29.6, 422 },
-						{ 35.6, 30.8, 422 },
-						{ 39.2, 41.8, 422 },
+						{ 38.8, 29.6, DREAD_WASTES },
+						{ 35.6, 30.8, DREAD_WASTES },
+						{ 39.2, 41.8, DREAD_WASTES },
 					},
 					["g"] = {
 						i(86578),	-- Eternal Warrior's Sigil
@@ -75,7 +75,7 @@ _.Zones =
 					},
 				}),
 				n(50836, {	-- Ik-Ik the Nimble
-					["coord"] = { 54.9, 65.7, 422 },
+					["coord"] = { 54.9, 65.7, DREAD_WASTES },
 					["g"] = {
 						i(87634),	-- Mazu's Robe
 						i(87630),	-- Chestpiece of Twinkling Stars
@@ -93,7 +93,7 @@ _.Zones =
 					},
 				}),
 				n(50347, {	-- Karr the Darkener
-					["coord"] = { 71.8, 37.6, 422 },
+					["coord"] = { 71.8, 37.6, DREAD_WASTES },
 					["g"] = {
 						i(87634),	-- Mazu's Robe
 						i(87630),	-- Chestpiece of Twinkling Stars
@@ -112,9 +112,9 @@ _.Zones =
 				}),
 				n(50356, {	-- Krol the Blade
 					["coords"] = {
-						{ 74.2, 20.4, 422 },
-						{ 72.8, 22.2, 422 },
-						{ 74.5, 22.9, 422 },
+						{ 74.2, 20.4, DREAD_WASTES },
+						{ 72.8, 22.2, DREAD_WASTES },
+						{ 74.5, 22.9, DREAD_WASTES },
 					},
 					["g"] = {
 						i(87629),	-- Chestplate of Manifest Dread
@@ -133,7 +133,7 @@ _.Zones =
 					},
 				}),
 				n(50776, {	-- Nalash Verdantis
-					["coord"] = { 64.2, 58.6, 422 },
+					["coord"] = { 64.2, 58.6, DREAD_WASTES },
 					["g"] = {
 						i(87635),	-- Amber-Starched Robes
 						i(87628),	-- Spinebreaker Chestpiece
@@ -152,10 +152,10 @@ _.Zones =
 				}),
 				n(50805, {	-- Omnis Grinlok
 					["coords"] = {
-						{ 38.2, 58.0, 422 },
-						{ 39.2, 62.4, 422 },
-						{ 36.6, 64.2, 422 },
-						{ 36.4, 61.2, 422 },
+						{ 38.2, 58.0, DREAD_WASTES },
+						{ 39.2, 62.4, DREAD_WASTES },
+						{ 36.6, 64.2, DREAD_WASTES },
+						{ 36.4, 61.2, DREAD_WASTES },
 					},
 					["g"] = {
 						i(86585),	-- Golden Fleece
@@ -175,7 +175,7 @@ _.Zones =
 				}),
 				n(69841, {	-- Zandalari Warbringer (Amber)
 					["coords"] = {
-						{ 47.42, 61.54, 422 },	-- Dread Wastes
+						{ 47.42, 61.54, DREAD_WASTES },
 						{ 75.11, 67.47, KUN_LAI_SUMMIT },
 						{ 52.56, 18.85, THE_JADE_FOREST },
 						{ 36.58, 85.67, TOWNLONG_STEPPES },
@@ -186,7 +186,7 @@ _.Zones =
 				}),
 				n(69842, {	-- Zandalari Warbringer (Jade)
 					["coords"] = {
-						{ 47.42, 61.54, 422 },	-- Dread Wastes
+						{ 47.42, 61.54, DREAD_WASTES },
 						{ 75.11, 67.47, KUN_LAI_SUMMIT },
 						{ 52.56, 18.85, THE_JADE_FOREST },
 						{ 36.58, 85.67, TOWNLONG_STEPPES },
@@ -197,7 +197,7 @@ _.Zones =
 				}),
 				n(69769, {	-- Zandalari Warbringer (Slate)
 					["coords"] = {
-						{ 47.42, 61.54, 422 },	-- Dread Wastes
+						{ 47.42, 61.54, DREAD_WASTES },
 						{ 39.83, 65.92, KRASARANG_WILDS },
 						{ 75.11, 67.47, KUN_LAI_SUMMIT },
 						{ 52.56, 18.85, THE_JADE_FOREST },

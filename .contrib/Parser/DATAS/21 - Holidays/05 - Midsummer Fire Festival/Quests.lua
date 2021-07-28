@@ -1975,8 +1975,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(32497, {	-- Honor the Flame — Dread Wastes
 			["provider"] = { "n", 69522 },	-- Dread Wastes Flame Guardian
 			["isYearly"] = true,
-			["coord"] = { 56.1, 69.5, 422 },
-			["maps"] = { 422 },	-- Dread Wastes
+			["coord"] = { 56.1, 69.5, DREAD_WASTES },
+			["maps"] = { DREAD_WASTES },
 		}),
 		q(44573, {	-- Honor the Flame — Gorgrond
 			["provider"] = { "n", 114491 },	-- Gorgrond Flame Guardian

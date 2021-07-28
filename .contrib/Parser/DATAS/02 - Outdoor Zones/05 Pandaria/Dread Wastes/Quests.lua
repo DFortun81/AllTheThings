@@ -5,16 +5,16 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(422, {	-- Dread Wastes
+		m(DREAD_WASTES, {
 			-- NOTE:: this zone is largely driven by reputation. If verifying any sourceQuest chains, I recommend doing all dailies in Klaxxi'vess as they become available to ensure you don't miss something
 			n(QUESTS, {
 				q(31178, {	-- A Bloody Delight
-					["coord"] = { 25.7, 50.2, 422 },
+					["coord"] = { 25.7, 50.2, DREAD_WASTES },
 					["provider"] = { "n", 63071 },	-- Skeer the Bloodseeker
 					["sourceQuest"] = 31175,	-- Skeer the Bloodseeker
 				}),
 				q(31066, {	-- A Cry From Darkness
-					["coord"] = { 54.7, 34.0, 422 },
+					["coord"] = { 54.7, 34.0, DREAD_WASTES },
 					["provider"] = { "n", 64815 },	-- Kor'ik
 					["sourceQuests"] = {
 						31010,	-- In Her Clutch
@@ -30,7 +30,7 @@ _.Zones =
 					},
 				}),
 				q(31268, {	-- A Little Brain Work
-					["coord"] = { 54.3, 35.8, 422 },
+					["coord"] = { 54.3, 35.8, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
 					["sourceQuests"] = {
@@ -39,34 +39,34 @@ _.Zones =
 					},
 				}),
 				q(31730, {	-- A Not So Friendly Request
-					["coord"] = { 55.0, 35.8, 422 },
+					["coord"] = { 55.0, 35.8, DREAD_WASTES },
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 31398,	-- Falling to Pieces
 				}),
 				q(31210, {	-- A Shade of Dread
-					["coord"] = { 28.6, 42.1, 422 },
+					["coord"] = { 28.6, 42.1, DREAD_WASTES },
 					["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 					["sourceQuest"] = 31018,	-- Beneath the Heart of Fear
 				}),
 				q(31661, {	-- A Source of Terrifying Power
-					["coord"] = { 44.5, 41.3, 422 },
+					["coord"] = { 44.5, 41.3, DREAD_WASTES },
 					["provider"] = { "o", 214562 },	-- Sha-Haunted Crystal
 					["sourceQuest"] = 31006,	-- The Klaxxi Council
 				}),
 				q(31176, {	-- A Strange Appetite
-					["coord"] = { 25.7, 50.2, 422 },
+					["coord"] = { 25.7, 50.2, DREAD_WASTES },
 					["provider"] = { "n", 63071 },	-- Skeer the Bloodseeker
 					["sourceQuest"] = 31175,	-- Skeer the Bloodseeker
 				}),
 				q(56617, {	-- A Unified Swarm
 					["lvl"] = 120,
-					["coord"] = { 45.3, 16.4, 422 },
+					["coord"] = { 45.3, 16.4, DREAD_WASTES },
 					["provider"] = { "n", 155582 },	-- Taoshi
 					["sourceQuest"] = 56616,	-- Old Faces, New Problems
 				}),
 				q(31008, {	-- Amber Arms
-					["coord"] = { 55.0, 35.5, 422 },
+					["coord"] = { 55.0, 35.5, DREAD_WASTES },
 					["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 					["sourceQuest"] = 31006,	-- The Klaxxi Council
 					["g"] = {
@@ -82,13 +82,13 @@ _.Zones =
 					},
 				}),
 				q(31019, {	-- Amber Is Life
-					["coord"] = { 55.0, 35.8, 422 },
+					["coord"] = { 55.0, 35.8, DREAD_WASTES },
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(56580, {	-- Amber Secrets
 					["lvl"] = 120,
-					["coord"] = { 45.3, 16.4, 422 },
+					["coord"] = { 45.3, 16.4, DREAD_WASTES },
 					["provider"] = { "n", 155582 },	-- Taoshi
 					["sourceQuests"] = {
 						56577,	-- Crippling the Hive
@@ -96,18 +96,18 @@ _.Zones =
 					},
 				}),
 				q(31232, {	-- An Ancient Empire
-					["coord"] = { 54.3, 36.0, 422 },
+					["coord"] = { 54.3, 36.0, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 62180 },	-- Korven the Prime
 					["sourceQuest"] = 31026,	-- The Root of the Problem
 				}),
 				q(31676, {	-- Ancient Vengeance
-					["coord"] = { 70.1, 25.6, 422 },
+					["coord"] = { 70.1, 25.6, DREAD_WASTES },
 					["provider"] = { "n", 62202 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31004,	-- Preserved in Amber
 				}),
 				q(31271, {	-- Bad Genes
-					["coord"] = { 54.4, 35.9, 422 },
+					["coord"] = { 54.4, 35.9, DREAD_WASTES },
 					["isDaily"] = true,
 					["sourceQuest"] = 31606,	-- The Dissector Wakens
 					["providers"] = {
@@ -116,12 +116,12 @@ _.Zones =
 					},
 				}),
 				q(31018, {	-- Beneath the Heart of Fear
-					["coord"] = { 55.0, 35.8, 422 },
+					["coord"] = { 55.0, 35.8, DREAD_WASTES },
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["minReputation"] = { 1337, REVERED },
 				}),
 				q(31090, {	-- Better With Age
-					["coord"] = { 48.1, 49.6, 422 },
+					["coord"] = { 48.1, 49.6, DREAD_WASTES },
 					["provider"] = { "n", 65365 },	-- Kor'ik
 					["altQuests"] = { 31681 },	-- Better With Age
 					["sourceQuest"] = 31087,	-- Extending Our Coverage
@@ -135,7 +135,7 @@ _.Zones =
 					},
 				}),
 				q(31681, {	-- Better With Age
-					["coord"] = { 48.1, 49.6, 422 },
+					["coord"] = { 48.1, 49.6, DREAD_WASTES },
 					["provider"] = { "n", 65975 },	-- Zer'ik
 					["altQuests"] = { 31090 },	-- Better With Age
 					["sourceQuest"] = 31679,	-- Extending Our Coverage
@@ -149,7 +149,7 @@ _.Zones =
 					},
 				}),
 				q(31084, {	-- Bind the Glamour
-					["coord"] = { 38.6, 17.2, 422 },
+					["coord"] = { 38.6, 17.2, DREAD_WASTES },
 					["provider"] = { "n", 62771 },	-- Chief Rikkitun
 					["sourceQuests"] = {
 						31080,	-- Fiery Wings
@@ -159,12 +159,12 @@ _.Zones =
 					},
 				}),
 				q(31086, {	-- Blood of Ancients
-					["coord"] = { 38.1, 17.1, 422 },
+					["coord"] = { 38.1, 17.1, DREAD_WASTES },
 					["provider"] = { "n", 62666 },	-- Sapmaster Vu
 					["sourceQuest"] = 31084,	-- Bind the Glamour
 				}),
 				q(31069, {	-- Bound With Shade
-					["coord"] = { 51.2, 11.3, 422 },
+					["coord"] = { 51.2, 11.3, DREAD_WASTES },
 					["provider"] = { "n", 62666 },	-- Sapmaster Vu
 					["sourceQuest"] = 31067,	-- The Heavens Hum With War
 					["g"] = {
@@ -176,7 +176,7 @@ _.Zones =
 					},
 				}),
 				q(31073, {	-- Bound With Wood
-					["coord"] = { 51.2, 11.3, 422 },
+					["coord"] = { 51.2, 11.3, DREAD_WASTES },
 					["provider"] = { "n", 62666 },	-- Sapmaster Vu
 					["sourceQuests"] = {
 						31070,	-- Daggers of the Great Ones
@@ -184,7 +184,7 @@ _.Zones =
 					},
 				}),
 				q(31238, {	-- Brain Food
-					["coord"] = { 54.3, 35.8, 422 },
+					["coord"] = { 54.3, 35.8, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
 					["sourceQuests"] = {
@@ -193,7 +193,7 @@ _.Zones =
 					},
 				}),
 				q(31682, {	-- By the Sea, Nevermore
-					["coord"] = { 48.1, 49.6, 422 },
+					["coord"] = { 48.1, 49.6, DREAD_WASTES },
 					["provider"] = { "n", 65975 },	-- Zer'ik
 					["altQuests"] = { 31089 },	-- By the Sea, Nevermore
 					["description"] = "This version is available if Kor'ik has been killed.",
@@ -203,7 +203,7 @@ _.Zones =
 					},
 				}),
 				q(31089, {	-- By the Sea, Nevermore
-					["coord"] = { 48.1, 49.6, 422 },
+					["coord"] = { 48.1, 49.6, DREAD_WASTES },
 					["provider"] = { "n", 65365 },	-- Kor'ik
 					["altQuests"] = { 31682 },	-- By the Sea, Nevermore
 					["description"] = "This version is available if Kor'ik has not been killed yet.",
@@ -213,7 +213,7 @@ _.Zones =
 					},
 				}),
 				q(31107, {	-- Citizens of a New Empire
-					["coord"] = { 55.0, 35.4, 422 },
+					["coord"] = { 55.0, 35.4, DREAD_WASTES },
 					["provider"] = { "n", 62774 },	-- Malik the Unscathed
 					["sourceQuests"] = {
 						31010,	-- In Her Clutch
@@ -222,12 +222,12 @@ _.Zones =
 					},
 				}),
 				q(31108, {	-- Concentrated Fear
-					["coord"] = { 55.0, 35.5, 422 },
+					["coord"] = { 55.0, 35.5, DREAD_WASTES },
 					["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 					["sourceQuest"] = 31661,	-- A Source of Terrifying Power
 				}),
 				q(31441, {	-- Corruption Runs Deep
-					["coord"] = { 56.2, 58.2, 422 },
+					["coord"] = { 56.2, 58.2, DREAD_WASTES },
 					["sourceQuest"] = 31439,	-- Dropping Our Signal
 					["providers"] = {
 						{ "n", 64569 },	-- Hisek the Swarmkeeper
@@ -248,24 +248,24 @@ _.Zones =
 				}),
 				q(56577, {	-- Crippling the Hive
 					["lvl"] = 120,
-					["coord"] = { 44.8, 19.1, 422 },
+					["coord"] = { 44.8, 19.1, DREAD_WASTES },
 					["provider"] = { "n", 155562 },	-- Shado-Pan Master (Taoshi follower)
 					["description"] = "Must be on or have completed |cFFFFD700Once More Into Kor'vess|r to get this quest.",
 					["sourceQuest"] = 56574,	-- Reflections in Amber
 				}),
 				q(31109, {	-- Culling the Swarm
-					["coord"] = { 55.0, 35.8, 422 },
+					["coord"] = { 55.0, 35.8, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31070, {	-- Daggers of the Great Ones
-					["coord"] = { 51.1, 11.2, 422 },
+					["coord"] = { 51.1, 11.2, DREAD_WASTES },
 					["provider"] = { "n", 62668 },	-- Olon
 					["sourceQuest"] = 31068,	-- Sacred Recipe
 				}),
 				q(31458, {	-- Damage Control
-					["coord"] = { 56.2, 58.2, 422 },
+					["coord"] = { 56.2, 58.2, DREAD_WASTES },
 					["sourceQuest"] = 31441,	-- Corruption Runs Deep
 					["providers"] = {
 						{ "n", 64705 },	-- Hisek the Swarmkeeper
@@ -273,23 +273,23 @@ _.Zones =
 					},
 				}),
 				q(31216, {	-- Dark Skies
-					["coord"] = { 54.9, 36.1, 422 },
+					["coord"] = { 54.9, 36.1, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 					["sourceQuest"] = 31211,	-- The Poisoned Mind
 				}),
 				q(31209, {	-- Dark Wings, Dark Things
-					["coord"] = { 28.6, 42.1, 422 },
+					["coord"] = { 28.6, 42.1, DREAD_WASTES },
 					["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 					["sourceQuest"] = 31018,	-- Beneath the Heart of Fear
 				}),
 				q(31009, {	-- Dead Zone
-					["coord"] = { 54.7, 34.0, 422 },
+					["coord"] = { 54.7, 34.0, DREAD_WASTES },
 					["provider"] = { "n", 64815 },	-- Kor'ik
 					["sourceQuest"] = 31006,	-- The Klaxxi Council
 				}),
 				q(31237, {	-- Debugging the Terrace
-					["coord"] = { 54.8, 36.2, 422 },
+					["coord"] = { 54.8, 36.2, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 63785 },	-- Hisek the Swarmkeeper
 					["sourceQuests"] = {
@@ -298,39 +298,39 @@ _.Zones =
 					},
 				}),
 				q(31186, {	-- Dog Food
-					["coord"] = { 46.2, 76.8, 422 },
+					["coord"] = { 46.2, 76.8, DREAD_WASTES },
 					["provider"] = { "n", 63955 },	-- Dog
 					["sourceQuest"] = 31183,	-- Meet the Cap'n
 				}),
 				q(31000, {	-- Dread Space
-					["coord"] = { 50.7, 11.7, 422 },
+					["coord"] = { 50.7, 11.7, DREAD_WASTES },
 					["provider"] = { "n", 62667 },	-- Lya of Ten Songs
 					["isBreadcrumb"] = true,
 				}),
 				q(31886, {	-- Dread Space
-					["coord"] = { 56.0, 70.1, 422 },
+					["coord"] = { 56.0, 70.1, DREAD_WASTES },
 					["provider"] = { "n", 63498 },	-- Min the Breeze Rider
 					["isBreadcrumb"] = true,
 				}),
 				q(31231, {	-- Dreadspinner Extermination
-					["coord"] = { 55.0, 35.8, 422 },
+					["coord"] = { 55.0, 35.8, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31439, {	-- Dropping Our Signal
-					["coord"] = { 54.7, 34.0, 422 },
+					["coord"] = { 54.7, 34.0, DREAD_WASTES },
 					["provider"] = { "n", 64815 },	-- Kor'ik
 					["minReputation"] = { 1337, REVERED },
 				}),
 				q(31111, {	-- Eradicating the Zan'thik
-					["coord"] = { 55.0, 35.8, 422 },
+					["coord"] = { 55.0, 35.8, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31077, {	-- Evie Stormstout
-					["coord"] = { 54.0, 20.4, 422 },
+					["coord"] = { 54.0, 20.4, DREAD_WASTES },
 					["provider"] = { "n", 67138 },	-- Chen Stormstout
 					["sourceQuests"] = {
 						31076,	-- Fate of the Stormstouts
@@ -338,19 +338,19 @@ _.Zones =
 					},
 				}),
 				q(31087, {	-- Extending Our Coverage
-					["coord"] = { 54.7, 34.0, 422 },
+					["coord"] = { 54.7, 34.0, DREAD_WASTES },
 					["provider"] = { "n", 64815 },	-- Kor'ik
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31679, {	-- Extending Our Coverage
-					["coord"] = { 48.0, 49.6, 422 },
+					["coord"] = { 48.0, 49.6, DREAD_WASTES },
 					["provider"] = { "n", 65975 },	-- Zer'ik
 					["altQuests"] = { 31087 },	-- Extending Our Coverage
 					["description"] = "This version is available if Kor'ik has been killed.",
 					["sourceQuest"] = 31441,	-- Corruption Runs Deep
 				}),
 				q(31465, {	-- Extracting Answers
-					["coord"] = { 56.2, 58.2, 422 },
+					["coord"] = { 56.2, 58.2, DREAD_WASTES },
 					["sourceQuest"] = 31441,	-- Corruption Runs Deep
 					["providers"] = {
 						{ "n", 64705 },	-- Hisek the Swarmkeeper
@@ -385,7 +385,7 @@ _.Zones =
 					},
 				}),
 				q(31398, {	-- Falling to Pieces
-					["coord"] = { 41.8, 63.7, 422 },
+					["coord"] = { 41.8, 63.7, DREAD_WASTES },
 					["provider"] = { "o", 214062 },	-- Glowing Amber
 					["sourceQuest"] = 31091,	-- Reunited
 					["g"] = {
@@ -402,16 +402,16 @@ _.Zones =
 				}),
 				q(31129, {	-- Fate of the Stormstouts (NYI - appears to be an used duplicate?)
 					["u"] = NEVER_IMPLEMENTED,
-					["coord"] = { 50.4, 12.0, 422 },
+					["coord"] = { 50.4, 12.0, DREAD_WASTES },
 					["provider"] = { "n", 62779 },	-- Chen Stormstout
 				}),
 				q(31076, {	-- Fate of the Stormstouts
-					["coord"] = { 50.4, 12.0, 422 },
+					["coord"] = { 50.4, 12.0, DREAD_WASTES },
 					["provider"] = { "n", 62779 },	-- Chen Stormstout
 					["sourceQuest"] = 31068,	-- Sacred Recipe
 				}),
 				q(31509, {	-- Fear Takes Root
-					["coord"] = { 54.4, 35.9, 422 },
+					["coord"] = { 54.4, 35.9, DREAD_WASTES },
 					["isDaily"] = true,
 					["sourceQuest"] = 31606,	-- The Dissector Wakens
 					["providers"] = {
@@ -420,12 +420,12 @@ _.Zones =
 					},
 				}),
 				q(31092, {	-- Feed or Be Eaten
-					["coord"] = { 41.7, 72.0, 422 },
+					["coord"] = { 41.7, 72.0, DREAD_WASTES },
 					["provider"] = { "n", 64344 },	-- Kaz'tik the Manipulator
 					["sourceQuest"] = 31091,	-- Reunited
 				}),
 				q(31020, {	-- Feeding the Beast
-					["coord"] = { 66.8, 65.3, 422 },
+					["coord"] = { 66.8, 65.3, DREAD_WASTES },
 					["sourceQuest"] = 31019,	-- Amber is Life
 					["providers"] = {
 						{ "n", 62232 },	-- Korven the Prime
@@ -433,17 +433,17 @@ _.Zones =
 					},
 				}),
 				q(31080, {	-- Fiery Wings
-					["coord"] = { 38.1, 17.1, 422 },
+					["coord"] = { 38.1, 17.1, DREAD_WASTES },
 					["provider"] = { "n", 62668 },	-- Olon
 					["sourceQuest"] = 31075,	-- Sunset Kings
 				}),
 				q(31177, {	-- Fine Dining
-					["coord"] = { 25.7, 50.2, 422 },
+					["coord"] = { 25.7, 50.2, DREAD_WASTES },
 					["provider"] = { "n", 63071 },	-- Skeer the Bloodseeker
 					["sourceQuest"] = 31175,	-- Skeer the Bloodseeker
 				}),
 				q(31085, {	-- Fires and Fears of Old
-					["coord"] = { 38.2, 17.1, 422 },
+					["coord"] = { 38.2, 17.1, DREAD_WASTES },
 					["provider"] = { "n", 62667 },	-- Lya of Ten Songs
 					["sourceQuest"] = 31084,	-- Bind the Glamour
 					["g"] = {
@@ -459,7 +459,7 @@ _.Zones =
 					},
 				}),
 				q(31494, {	-- Free From Her Clutches
-					["coord"] = { 54.2, 35.7, 422 },
+					["coord"] = { 54.2, 35.7, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
 					["sourceQuests"] = {
@@ -468,7 +468,7 @@ _.Zones =
 					},
 				}),
 				q(31181, {	-- Fresh Pots
-					["coord"] = { 54.7, 72.1, 422 },
+					["coord"] = { 54.7, 72.1, DREAD_WASTES },
 					["provider"] = { "n", 63349 },	-- Deck Boss Arie
 					["sourceQuest"] = 31265,	-- Mazu's Breath
 					["g"] = {
@@ -484,44 +484,44 @@ _.Zones =
 					},
 				}),
 				q(31727, {	-- Gambling Problem
-					["coord"] = { 55.0, 35.5, 422 },
+					["coord"] = { 55.0, 35.5, DREAD_WASTES },
 					["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 					["sourceQuest"] = 31398,	-- Falling to Pieces
 					["isBreadcrumb"] = true,
 				}),
 				q(31082, {	-- Great Vessel of Salvation
-					["coord"] = { 38.6, 17.2, 422 },
+					["coord"] = { 38.6, 17.2, DREAD_WASTES },
 					["provider"] = { "n", 62771 },	-- Chief Rikkitun
 					["sourceQuest"] = 31075,	-- Sunset Kings
 				}),
 				q(31078, {	-- Han Stormstout
-					["coord"] = { 50.1, 10.2, 422 },
+					["coord"] = { 50.1, 10.2, DREAD_WASTES },
 					["provider"] = { "n", 67138 },	-- Chen Stormstout
 					["sourceQuest"] = 31077,	-- Evie Stormstout
 				}),
 				q(56645, {	-- Heart of the Swarm
 					["lvl"] = 120,
-					["coord"] = { 53.2, 39.5, 422 },
+					["coord"] = { 53.2, 39.5, DREAD_WASTES },
 					["provider"] = { "n", 155707 },	-- Taoshi
 					["sourceQuest"] = 56617,	-- A Unified Swarm
 				}),
 				q(31071, {	-- I Bring Us Great Shame
-					["coord"] = { 51.1, 11.1, 422 },
+					["coord"] = { 51.1, 11.1, DREAD_WASTES },
 					["provider"] = { "n", 62859 },	-- Thirsty Missho
 					["sourceQuest"] = 31068,	-- Sacred Recipe
 				}),
 				q(31010, {	-- In Her Clutch
-					["coord"] = { 40.0, 39.0, 422 },
+					["coord"] = { 40.0, 39.0, DREAD_WASTES },
 					["provider"] = { "o", 213973 },	-- Klaxxi Sonic Relay
 					["sourceQuest"] = 31009,	-- Dead Zone
 				}),
 				q(31081, {	-- Incantations Fae and Primal
-					["coord"] = { 38.2, 17.1, 422 },
+					["coord"] = { 38.2, 17.1, DREAD_WASTES },
 					["provider"] = { "n", 62667 },	-- Lya of Ten Songs
 					["sourceQuest"] = 31075,	-- Sunset Kings
 				}),
 				q(31272, {	-- Infection
-					["coord"] = { 54.8, 36.2, 422 },
+					["coord"] = { 54.8, 36.2, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 63785 },	-- Hisek the Swarmkeeper
 					["sourceQuests"] = {
@@ -530,7 +530,7 @@ _.Zones =
 					},
 				}),
 				q(31133, {	-- Kor'thik Aggression
-					["coord"] = { 50.1, 12.4, 422 },
+					["coord"] = { 50.1, 12.4, DREAD_WASTES },
 					["provider"] = { "n", 63218 },	-- Defender Azzo
 					["sourceQuests"] = {
 						31070,	-- Daggers of the Great Ones
@@ -549,7 +549,7 @@ _.Zones =
 					},
 				}),
 				q(31024, {	-- Kunchong Treats
-					["coord"] = { 54.3, 35.8, 422 },
+					["coord"] = { 54.3, 35.8, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
 					["sourceQuests"] = {
@@ -559,12 +559,12 @@ _.Zones =
 				}),
 				q(31598, {	-- Kypa'rak's Core
 					["cr"] = 65229,	-- Kypa'rak
-					["coord"] = { 31.8, 57.8, 422 },
+					["coord"] = { 31.8, 57.8, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "i", 87871 },	-- Massive Kyparite Core
 				}),
 				q(31022, {	-- Kypari Zar
-					["coord"] = { 66.8, 65.3, 422 },
+					["coord"] = { 66.8, 65.3, DREAD_WASTES },
 					["providers"] = {
 						{ "n", 62232 },	-- Korven the Prime
 						{ "n", 63328 },	-- Korven the Prime
@@ -575,7 +575,7 @@ _.Zones =
 					},
 				}),
 				q(31021, {	-- Living Amber
-					["coord"] = { 66.8, 65.3, 422 },
+					["coord"] = { 66.8, 65.3, DREAD_WASTES },
 					["sourceQuest"] = 31019,	-- Amber is Life
 					["providers"] = {
 						{ "n", 62232 },	-- Korven the Prime
@@ -583,12 +583,12 @@ _.Zones =
 					},
 				}),
 				q(31354, {	-- Mazu's Bounty
-					["coord"] = { 56.5, 75.8, 422 },
+					["coord"] = { 56.5, 75.8, DREAD_WASTES },
 					["provider"] = { "n", 63349 },	-- Deck Boss Arie
 					["sourceQuest"] = 31190,	-- The Mariner's Revenge
 				}),
 				q(31265, {	-- Mazu's Breath
-					["coord"] = { 54.7, 72.1, 422 },
+					["coord"] = { 54.7, 72.1, DREAD_WASTES },
 					["provider"] = { "n", 63349 },	-- Deck Boss Arie
 					["sourceQuests"] = {
 						31066,	-- A Cry From Darkness
@@ -596,7 +596,7 @@ _.Zones =
 					},
 				}),
 				q(31183, {	-- Meet the Cap'n
-					["coord"] = { 54.7, 72.1, 422 },
+					["coord"] = { 54.7, 72.1, DREAD_WASTES },
 					["provider"] = { "n", 63349 },	-- Deck Boss Arie
 					["sourceQuests"] = {
 						31181,	-- Fresh Pots
@@ -604,13 +604,13 @@ _.Zones =
 					},
 				}),
 				q(31507, {	-- Meltdown
-					["coord"] = { 54.3, 36.0, 422 },
+					["coord"] = { 54.3, 36.0, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 62180 },	-- Korven the Prime
 					["sourceQuest"] = 31026,	-- The Root of the Problem
 				}),
 				q(31267, {	-- Mistblade Destruction
-					["coord"] = { 55.0, 35.8, 422 },
+					["coord"] = { 55.0, 35.8, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
@@ -631,29 +631,29 @@ _.Zones =
 					},
 				}),
 				q(31235, {	-- Nope Nope Nope
-					["coord"] = { 55.0, 35.8, 422 },
+					["coord"] = { 55.0, 35.8, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31660, {	-- Not Fit to Swarm
-					["coord"] = { 54.9, 34.0, 422 },
+					["coord"] = { 54.9, 34.0, DREAD_WASTES },
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31006,	-- The Klaxxi Council
 				}),
 				q(31184, {	-- Old Age and Treachery
-					["coord"] = { 55.6, 72.4, 422 },
+					["coord"] = { 55.6, 72.4, DREAD_WASTES },
 					["provider"] = { "n", 63317 },	-- Captain "Soggy" Su-Dao
 					["sourceQuest"] = 31183,	-- Meet the Cap'n
 				}),
 				q(31187, {	-- On the Crab
-					["coord"] = { 54.7, 72.1, 422 },
+					["coord"] = { 54.7, 72.1, DREAD_WASTES },
 					["provider"] = { "n", 63349 },	-- Deck Boss Arie
 					["sourceQuest"] = 31183,	-- Meet the Cap'n
 				}),
 				q(56616, {	-- Old Faces, New Problems
 					["lvl"] = 120,
-					["coord"] = { 45.3, 16.4, 422 },
+					["coord"] = { 45.3, 16.4, DREAD_WASTES },
 					["provider"] = { "n", 155582 },	-- Taoshi
 					["sourceQuests"] = {
 						56580,	-- Amber Secrets
@@ -662,8 +662,8 @@ _.Zones =
 				}),
 				q(32030, {	-- Once in a Hundred Lifetimes
 					["coords"] = {
-						{ 54.7, 72.1, 422 },
-						{ 50.2, 12.0, 422 },
+						{ 54.7, 72.1, DREAD_WASTES },
+						{ 50.2, 12.0, DREAD_WASTES },
 					},
 					["providers"] = {
 						{ "n", 63349 },	-- Deck Boss Arie
@@ -677,7 +677,7 @@ _.Zones =
 					},
 				}),
 				q(31504, {	-- Ordnance Disposal
-					["coord"] = { 54.8, 36.2, 422 },
+					["coord"] = { 54.8, 36.2, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 63785 },	-- Hisek the Swarmkeeper
 					["sourceQuests"] = {
@@ -686,7 +686,7 @@ _.Zones =
 					},
 				}),
 				q(31782, {	-- Overthrone
-					["coord"] = { 54.7, 34.7, 422 },
+					["coord"] = { 54.7, 34.7, DREAD_WASTES },
 					["provider"] = { "n", 65395 },	-- Klaxxi'va Ik
 					["sourceQuest"] = 32030,	-- Once in a Hundred Lifetimes
 					["g"] = {
@@ -702,19 +702,19 @@ _.Zones =
 					},
 				}),
 				q(31004, {	-- Preserved in Amber
-					["coord"] = { 73.6, 27.5, 422 },
+					["coord"] = { 73.6, 27.5, DREAD_WASTES },
 					["provider"] = { "n", 62203 },	-- Klaxxi'va Tik
 					["sourceQuest"] = 31003,	-- Psycho Mantid
 				}),
 				q(31083, {	-- Promises of Gold
-					["coord"] = { 27.4, 16.2, 422 },
+					["coord"] = { 27.4, 16.2, DREAD_WASTES },
 					["provider"] = { "n", 62767 },	-- Gokk'lok
 					["g"] = {
 						i(88417),	-- Gokk'lok's Shell
 					},
 				}),
 				q(31003, {	-- Psycho Mantid
-					["coord"] = { 72.5, 28.6, 422 },
+					["coord"] = { 72.5, 28.6, DREAD_WASTES },
 					["provider"] = { "n", 62166 },	-- Marksman Lann
 					["sourceQuests"] = {
 						31001,	-- Falling Down
@@ -722,7 +722,7 @@ _.Zones =
 					},
 				}),
 				q(31234, {	-- Putting An Eye Out
-					["coord"] = { 54.4, 35.9, 422 },
+					["coord"] = { 54.4, 35.9, DREAD_WASTES },
 					["isDaily"] = true,
 					["sourceQuest"] = 31606,	-- The Dissector Wakens
 					["providers"] = {
@@ -731,7 +731,7 @@ _.Zones =
 					},
 				}),
 				q(31510, {	-- Quiet Now
-					["coord"] = { 54.8, 36.2, 422 },
+					["coord"] = { 54.8, 36.2, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 63785 },	-- Hisek the Swarmkeeper
 					["sourceQuests"] = {
@@ -740,7 +740,7 @@ _.Zones =
 					},
 				}),
 				q(31808, {	-- Rampage Against the Machine
-					["coord"] = { 54.3, 35.8, 422 },
+					["coord"] = { 54.3, 35.8, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
 					["sourceQuests"] = {
@@ -749,7 +749,7 @@ _.Zones =
 					},
 				}),
 				q(31189, {	-- Reeltime Strategy
-					["coord"] = { 54.7, 72.1, 422 },
+					["coord"] = { 54.7, 72.1, DREAD_WASTES },
 					["provider"] = { "n", 63349 },	-- Deck Boss Arie
 					["sourceQuests"] = {
 						31184,	-- Old Age and Treachery
@@ -759,11 +759,11 @@ _.Zones =
 				}),
 				q(31023, {	-- Relics of the Swarm
 					["cr"] = 61970,	-- Mistblade Ripper
-					["coord"] = { 62.9, 57.8, 422 },
+					["coord"] = { 62.9, 57.8, DREAD_WASTES },
 					["provider"] = { "i", 82870 },	-- Strange Relic
 				}),
 				q(31072, {	-- Rending Daggers
-					["coord"] = { 50.7, 11.7, 422 },
+					["coord"] = { 50.7, 11.7, DREAD_WASTES },
 					["provider"] = { "n", 62667 },	-- Lya of Ten Songs
 					["sourceQuest"] = 31068,	-- Sacred Recipe
 					["g"] = {
@@ -779,7 +779,7 @@ _.Zones =
 					},
 				}),
 				q(31091, {	-- Reunited
-					["coord"] = { 43.3, 63.4, 422 },
+					["coord"] = { 43.3, 63.4, DREAD_WASTES },
 					["provider"] = { "n", 63876 },	-- Kaz'tik the Manipulator
 					["sourceQuests"] = {
 						31089,	-- By the Sea, Nevermore (Kor'ik version)
@@ -799,7 +799,7 @@ _.Zones =
 				}),
 				q(56578, {	-- Rotten at the Roots
 					["lvl"] = 120,
-					["coord"] = { 43.1, 13.0, 422 },	-- can really be picked up anywhere
+					["coord"] = { 43.1, 13.0, DREAD_WASTES },	-- can really be picked up anywhere
 					["provider"] = { "n", 155562 },	-- Shadow-Pan Master (Taoshi follower)
 					["sourceQuests"] = {
 						56577,	-- Crippling the Hive
@@ -807,7 +807,7 @@ _.Zones =
 					},
 				}),
 				q(31068, {	-- Sacred Recipe
-					["coord"] = { 53.1, 12.4, 422 },
+					["coord"] = { 53.1, 12.4, DREAD_WASTES },
 					["provider"] = { "o", 212389 },	-- Scroll of Auspice
 					["sourceQuest"] = 31398,	-- Falling to Pieces
 					["description"] = "Must be on or have completed |cFFFFD700The Heavens Hum With War|r.",
@@ -818,25 +818,25 @@ _.Zones =
 					},
 				}),
 				q(31496, {	-- Sampling the Empire's Finest
-					["coord"] = { 54.3, 36.0, 422 },
+					["coord"] = { 54.3, 36.0, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 62180 },	-- Korven the Prime
 					["sourceQuest"] = 31026,	-- The Root of the Problem
 				}),
 				q(31233, {	-- Sap Tapping
-					["coord"] = { 54.3, 36.0, 422 },
+					["coord"] = { 54.3, 36.0, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 62180 },	-- Korven the Prime
 					["sourceQuest"] = 31026,	-- The Root of the Problem
 				}),
 				q(31603, {	-- Seeds of Fear
-					["coord"] = { 55.0, 35.6, 422 },
+					["coord"] = { 55.0, 35.6, DREAD_WASTES },
 					["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 					["repeatable"] = true,
 					["sourceQuest"] = 31108,	-- Concentrated Fear
 				}),
 				q(31506, {	-- Shackles of Manipulation
-					["coord"] = { 54.3, 35.8, 422 },
+					["coord"] = { 54.3, 35.8, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
 					["sourceQuests"] = {
@@ -845,7 +845,7 @@ _.Zones =
 					},
 				}),
 				q(31612, {	-- Shadow of the Empire
-					["coord"] = { 55.1, 35.9, 422 },
+					["coord"] = { 55.1, 35.9, DREAD_WASTES },
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31609,	-- The Wrath of Shek'zeer
 					["minReputation"] = { 1337, EXALTED },
@@ -858,7 +858,7 @@ _.Zones =
 					},
 				}),
 				q(31188, {	-- Shark Week
-					["coord"] = { 54.7, 72.1, 422 },
+					["coord"] = { 54.7, 72.1, DREAD_WASTES },
 					["sourceQuest"] = 31183,	-- Meet the Cap'n
 					["providers"] = {
 						{ "n", 63349 },	-- Deck Boss Arie
@@ -869,8 +869,8 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 31606,	-- The Dissector Wakens
 					["coords"] = {
-						{ 31.7, 88.9, 422 },
-						{ 54.4, 35.9, 422 },
+						{ 31.7, 88.9, DREAD_WASTES },
+						{ 54.4, 35.9, DREAD_WASTES },
 					},
 					["providers"] = {
 						{ "n", 63072 },	-- Rik'kal the Dissector
@@ -878,13 +878,13 @@ _.Zones =
 					},
 				}),
 				q(31175, {	-- Skeer the Bloodseeker
-					["coord"] = { 55.0, 35.8, 422 },
+					["coord"] = { 55.0, 35.8, DREAD_WASTES },
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
 					["minReputation"] = { 1337, HONORED },
 				}),
 				q(31487, {	-- Sonic Disruption
-					["coord"] = { 54.2, 35.7, 422 },
+					["coord"] = { 54.2, 35.7, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
 					["sourceQuests"] = {
@@ -893,7 +893,7 @@ _.Zones =
 					},
 				}),
 				q(31508, {	-- Specimen Request
-					["coord"] = { 54.4, 35.9, 422 },
+					["coord"] = { 54.4, 35.9, DREAD_WASTES },
 					["isDaily"] = true,
 					["sourceQuest"] = 31606,	-- The Dissector Wakens
 					["providers"] = {
@@ -902,7 +902,7 @@ _.Zones =
 					},
 				}),
 				q(31075, {	-- Sunset Kings
-					["coord"] = { 51.2, 11.3, 422 },
+					["coord"] = { 51.2, 11.3, DREAD_WASTES },
 					["provider"] = { "n", 62666 },	-- Sapmaster Vu
 					["sourceQuests"] = {
 						31073,	-- Bound With Wood
@@ -910,7 +910,7 @@ _.Zones =
 					},
 				}),
 				q(31606, {	-- The Dissector Wakens
-					["coord"] = { 31.8, 88.9, 422 },
+					["coord"] = { 31.8, 88.9, DREAD_WASTES },
 					["provider"] = { "n", 65253 },	-- Rik'kal the Dissector
 					["sourceQuests"] = {
 						31066,	-- A Cry From Darkness
@@ -929,7 +929,7 @@ _.Zones =
 					},
 				}),
 				q(31007, {	-- The Dread Clutches
-					["coord"] = { 54.9, 34.0, 422 },
+					["coord"] = { 54.9, 34.0, DREAD_WASTES },
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31006,	-- The Klaxxi Council
 				}),
@@ -937,24 +937,24 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(31689, {	-- The Dreadsworn
-					["coord"] = { 55.0, 35.4, 422 },
+					["coord"] = { 55.0, 35.4, DREAD_WASTES },
 					["provider"] = { "n", 62774 },	-- Malik the Unscathed
 					["sourceQuest"] = 31661,	-- A Source of Terrifying Power
 				}),
 				q(31959, {	-- The Empress' Gambit
-					["coord"] = { 55.1, 35.5, 422 },
+					["coord"] = { 55.1, 35.5, DREAD_WASTES },
 					["provider"] = { "n", 62774 },	-- Malik the Unscathed
 					["minReputation"] = { 1337, EXALTED },
 					["description"] = "Must also have have completed the |cFFFFD700Amber is the Color of My Energy|r achievement.",
 				}),
 				q(31270, {	-- The Fight Against Fear
-					["coord"] = { 54.3, 36.0, 422 },
+					["coord"] = { 54.3, 36.0, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 62180 },	-- Korven the Prime
 					["sourceQuest"] = 31026,	-- The Root of the Problem
 				}),
 				q(31067, {	-- The Heavens Hum With War
-					["coord"] = { 51.2, 11.3, 422 },
+					["coord"] = { 51.2, 11.3, DREAD_WASTES },
 					["provider"] = { "n", 62666 },	-- Sapmaster Vu
 					["sourceQuests"] = {
 						31066,	-- A Cry From Darkness
@@ -962,7 +962,7 @@ _.Zones =
 					},
 				}),
 				q(31079, {	-- The Horror Comes A-Rising
-					["coord"] = { 38.1, 17.3, 422 },
+					["coord"] = { 38.1, 17.3, DREAD_WASTES },
 					["provider"] = { "n", 62772 },	-- Boggeo
 					["sourceQuest"] = 31075,	-- Sunset Kings
 					["g"] = {
@@ -979,7 +979,7 @@ _.Zones =
 					},
 				}),
 				q(31006, {	-- The Klaxxi Council
-					["coord"] = { 70.1, 25.6, 422 },
+					["coord"] = { 70.1, 25.6, DREAD_WASTES },
 					["provider"] = { "n", 62202 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuests"] = {
 						31676,	-- Ancient Vengeance
@@ -994,12 +994,12 @@ _.Zones =
 					},
 				}),
 				q(31359, {	-- The Kunchong Whisperer
-					["coord"] = { 41.7, 72.0, 422 },
+					["coord"] = { 41.7, 72.0, DREAD_WASTES },
 					["provider"] = { "n", 64344 },	-- Kaz'tik the Manipulator
 					["sourceQuest"] = 31091,	-- Reunited
 				}),
 				q(31190, {	-- The Mariner's Revenge
-					["coord"] = { 54.7, 72.1, 422 },
+					["coord"] = { 54.7, 72.1, DREAD_WASTES },
 					["provider"] = { "n", 63317 },	-- Captain "Soggy" Su-Dao
 					["sourceQuest"] = 31189,	-- Reeltime Strategy
 					["g"] = {
@@ -1019,13 +1019,13 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "i", 87878 },	-- Enormous Kunchong Mandibles
 					["coords"] = {
-						{ 42.0, 35.6, 422 },
-						{ 41.6, 34.0, 422 },
-						{ 41.6, 29.8, 422 },
+						{ 42.0, 35.6, DREAD_WASTES },
+						{ 41.6, 34.0, DREAD_WASTES },
+						{ 41.6, 29.8, DREAD_WASTES },
 					},
 				}),
 				q(31211, {	-- The Poisoned Mind
-					["coord"] = { 28.6, 42.1, 422 },
+					["coord"] = { 28.6, 42.1, DREAD_WASTES },
 					["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 					["sourceQuests"] = {
 						31210,	-- A Shade of Dread
@@ -1041,7 +1041,7 @@ _.Zones =
 					},
 				}),
 				q(31026, {	-- The Root of the Problem
-					["coord"] = { 59.8, 59.4, 422 },
+					["coord"] = { 59.8, 59.4, DREAD_WASTES },
 					["sourceQuest"] = 31022,	-- Kypari Zar
 					["providers"] = {
 						{ "n", 62232 },	-- Klaxxi Warrior
@@ -1056,13 +1056,13 @@ _.Zones =
 					},
 				}),
 				q(31269, {	-- The Scale-Lord
-					["coord"] = { 54.3, 36.0, 422 },
+					["coord"] = { 54.3, 36.0, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 62180 },	-- Korven the Prime
 					["sourceQuest"] = 31026,	-- The Root of the Problem
 				}),
 				q(31179, {	-- The Scent of Blood
-					["coord"] = { 25.7, 50.6, 422 },
+					["coord"] = { 25.7, 50.6, DREAD_WASTES },
 					["provider"] = { "n", 63071 },	-- Skeer the Bloodseeker
 					["sourceQuests"] = {
 						31178,	-- A Bloody Delight
@@ -1081,42 +1081,42 @@ _.Zones =
 					},
 				}),
 				q(31677, {	-- The Warlord's Ashes
-					["coord"] = { 66.3, 31.7, 422 },
+					["coord"] = { 66.3, 31.7, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "i", 88715 },	-- Ashes of Warlord Gurthan
 					["description"] = "Requires 2 players. One must |cFFFFD700/sit|r on the red rune while the other must |cFFFFD700/lay|r on the green rune.",
 				}),
 				q(31609, {	-- The Wrath of Shek'zeer
-					["coord"] = { 55.0, 35.6, 422 },
+					["coord"] = { 55.0, 35.6, DREAD_WASTES },
 					["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 					["sourceQuest"] = 31959,	-- The Empress' Gambit
 					["minReputation"] = { 1337, EXALTED },
 				}),
 				q(31605, {	-- The Zan'thik Dig
-					["coord"] = { 54.7, 34.0, 422 },
+					["coord"] = { 54.7, 34.0, DREAD_WASTES },
 					["provider"] = { "n", 64815 },	-- Kor'ik
 					["isBreadcrumb"] = true,
 					["minReputation"] = { 1337, HONORED },
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31208, {	-- Venomous Intent
-					["coord"] = { 28.6, 42.1, 422 },
+					["coord"] = { 28.6, 42.1, DREAD_WASTES },
 					["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 					["sourceQuest"] = 31018,	-- Beneath the Heart of Fear
 				}),
 				q(31505, {	-- Vess-Guard Duty
-					["coord"] = { 55.0, 35.8, 422 },
+					["coord"] = { 55.0, 35.8, DREAD_WASTES },
 					["isDaily"] = true,
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31005, {	-- Wakening Sickness
-					["coord"] = { 70.1, 25.6, 422 },
+					["coord"] = { 70.1, 25.6, DREAD_WASTES },
 					["provider"] = { "n", 62202 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31004,	-- Preserved in Amber
 				}),
 				q(31185, {	-- Walking Dog
-					["coord"] = { 55.6, 72.4, 422 },
+					["coord"] = { 55.6, 72.4, DREAD_WASTES },
 					["provider"] = { "n", 63317 },	-- Captain "Soggy" Su-Dao
 					["sourceQuest"] = 31183,	-- Meet the Cap'n
 					["g"] = {
@@ -1135,8 +1135,8 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 31606,	-- The Dissector Wakens
 					["coords"] = {
-						{ 31.7, 88.9, 422 },
-						{ 54.4, 35.9, 422 },
+						{ 31.7, 88.9, DREAD_WASTES },
+						{ 54.4, 35.9, DREAD_WASTES },
 					},
 					["providers"] = {
 						{ "n", 63072 },	-- Rik'kal the Dissector
@@ -1144,12 +1144,12 @@ _.Zones =
 					},
 				}),
 				q(31074, {	-- Wood and Shade
-					["coord"] = { 50.7, 11.7, 422 },
+					["coord"] = { 50.7, 11.7, DREAD_WASTES },
 					["provider"] = { "n", 62667 },	-- Lya of Ten Songs
 					["sourceQuest"] = 31072,	-- Rending Daggers
 				}),
 				q(31182, {	-- You Otter Know
-					["coord"] = { 54.7, 72.1, 422 },
+					["coord"] = { 54.7, 72.1, DREAD_WASTES },
 					["provider"] = { "n", 63349 },	-- Deck Boss Arie
 					["sourceQuest"] = 31265,	-- Mazu's Breath
 				}),
