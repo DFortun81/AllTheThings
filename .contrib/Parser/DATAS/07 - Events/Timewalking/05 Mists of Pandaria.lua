@@ -13,7 +13,7 @@ _.WorldEvents =
 					["isWeekly"] = true,
 				}),
 				n(118828, {	-- Mistweaver Xia <Timewalking Vendor>
-					["maps"] = { 554 },	-- Timeless Isle
+					["maps"] = { TIMELESS_ISLE },
 					["g"] = {
 						-- Mounts / Pets / Toys
 						i(87775, {	-- Yu'lei, Daughter of Jade (MOUNT!)

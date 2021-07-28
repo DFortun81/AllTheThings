@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(554, {	-- Timeless Isle
+		m(TIMELESS_ISLE, {
 			n(-38, {	-- Profession
 				prof(FISHING, {
 					i(104034, {	-- Purse of Timeless Coins

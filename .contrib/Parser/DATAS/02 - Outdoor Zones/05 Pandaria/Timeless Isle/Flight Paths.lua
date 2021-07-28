@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(554, {	-- Timeless Isle
+		m(TIMELESS_ISLE, {
 			n(FLIGHT_PATHS, {
-				fp(1294, {	-- Huojin Landing, Timeless Isle
-					["coord"] = { 21.8, 39.8, 554 },
+				fp(1294, {	-- Huojin Landing
+					["coord"] = { 21.8, 39.8, TIMELESS_ISLE },
 				}),
-				fp(1293, {	-- Tushui Landing, Timeless Isle
-					["coord"] = { 23.2, 71.0, 554 },
+				fp(1293, {	-- Tushui Landing
+					["coord"] = { 23.2, 71.0, TIMELESS_ISLE },
 				}),
 			}),
 		}),

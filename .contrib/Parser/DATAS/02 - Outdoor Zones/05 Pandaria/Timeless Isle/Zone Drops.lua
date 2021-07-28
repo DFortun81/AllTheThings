@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(554, {	-- Timeless Isle
+		m(TIMELESS_ISLE, {
 			n(ZONEDROPS, {
 				n(72766,  {	-- Ancient Spineclaw
 					i(104293, {	-- Scuttler's Shell

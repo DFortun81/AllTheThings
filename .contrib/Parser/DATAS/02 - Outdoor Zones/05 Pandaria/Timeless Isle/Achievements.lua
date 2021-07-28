@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(554, {	-- Timeless Isle
+		m(TIMELESS_ISLE, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
@@ -13,39 +13,39 @@ _.Zones =
 					["maps"] = { 571 },	-- Celestial Tournament
 					["g"] = {
 						crit(4, {	-- Blingtron 4000
-							["coord"] = { 34.8, 59.6, 554 },
+							["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 							["cr"] = 71933,	-- Blingtron 4000
 						}),
 						crit(9, {	-- Chen Stormstout
-							["coord"] = { 34.8, 59.6, 554 },
+							["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 							["cr"] = 71927,	-- Chen Stormstout
 						}),
 						crit(13, {	-- Dr. Ion Goldbloom
-							["coord"] = { 34.8, 59.6, 554 },
+							["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 							["cr"] = 71934,	-- Dr. Ion Goldbloom <Jurassic Expedition>
 						}),
 						crit(21, {	-- Lorewalker Cho
-							["coord"] = { 34.8, 59.6, 554 },
+							["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 							["cr"] = 71926,	-- Lorewalker Cho
 						}),
 						crit(33, {	-- Shademaster Kiryn
-							["coord"] = { 37.8, 57.2, 554 },
+							["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 							["cr"] = 71930,	-- Shademaster Kiryn
 						}),
 						crit(35, {	-- Sully "The Pickle" McLeary
-							["coord"] = { 37.8, 57.2, 554 },
+							["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 							["cr"] = 71929,	-- Sully "The Pickle" McLeary <SI:7>
 						}),
 						crit(37, {	-- Taran Zhu
-							["coord"] = { 37.8, 57.2, 554 },
+							["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 							["cr"] = 71931,	-- Taran Zhu <Lord of the Shado-Pan>
 						}),
 						crit(43, {	-- Wise Mari
-							["coord"] = { 37.8, 57.2, 554 },
+							["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 							["cr"] = 71932,	-- Wise Mari <Waterspeaker>
 						}),
 						crit(44, {	-- Wrathion
-							["coord"] = { 37.8, 57.2, 554 },
+							["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 							["cr"] = 71924,	-- Wrathion <The Black Prince>
 						}),
 					},
@@ -161,19 +161,19 @@ _.Zones =
 				}),
 				ach(8724, {	-- Pilgrimage
 					["coords"] = {
-						{ 22.8, 29.3, 554 },
-						{ 26.7, 52.1, 554 },
-						{ 28.0, 72.0, 554 },
-						{ 30.2, 45.5, 554 },
-						{ 30.6, 62.5, 554 },
-						{ 35.0, 29.4, 554 },
-						{ 37.5, 74.2, 554 },
-						{ 43.4, 55.8, 554 },
-						{ 49.8, 70.1, 554 },
-						{ 53.0, 60.8, 554 },
-						{ 58.1, 46.6, 554 },
-						{ 63.9, 50.6, 554 },
-						{ 66.1, 72.3, 554 },
+						{ 22.8, 29.3, TIMELESS_ISLE },
+						{ 26.7, 52.1, TIMELESS_ISLE },
+						{ 28.0, 72.0, TIMELESS_ISLE },
+						{ 30.2, 45.5, TIMELESS_ISLE },
+						{ 30.6, 62.5, TIMELESS_ISLE },
+						{ 35.0, 29.4, TIMELESS_ISLE },
+						{ 37.5, 74.2, TIMELESS_ISLE },
+						{ 43.4, 55.8, TIMELESS_ISLE },
+						{ 49.8, 70.1, TIMELESS_ISLE },
+						{ 53.0, 60.8, TIMELESS_ISLE },
+						{ 58.1, 46.6, TIMELESS_ISLE },
+						{ 63.9, 50.6, TIMELESS_ISLE },
+						{ 66.1, 72.3, TIMELESS_ISLE },
 					},
 					["g"] = {
 						crit(1),	-- Niuzao's Blessing Obtained
@@ -188,25 +188,25 @@ _.Zones =
 				ach(8714),	-- Timeless Champion
 				ach(8784, {	-- Timeless Legends
 					["coords"] = {
-						{ 22.4, 38.7, 554 },
-						{ 25.0, 71.9, 554 },
-						{ 32.0, 61.5, 554 },
-						{ 32.6, 32.8, 554 },
-						{ 33.8, 54.5, 554 },
-						{ 37.7, 41.1, 554 },
-						{ 39.6, 41.1, 554 },
-						{ 42.8, 55.4, 554 },
-						{ 47.3, 80.8, 554 },
-						{ 48.0, 51.2, 554 },
-						{ 50.4, 71.7, 554 },
-						{ 52.2, 62.6, 554 },
-						{ 55.1, 72.9, 554 },
-						{ 55.3, 50.3, 554 },
-						{ 55.6, 59.3, 554 },
-						{ 63.1, 45.3, 554 },
-						{ 64.5, 72.3, 554 },
-						{ 65.4, 51.7, 554 },
-						{ 68.4, 60.4, 554 },
+						{ 22.4, 38.7, TIMELESS_ISLE },
+						{ 25.0, 71.9, TIMELESS_ISLE },
+						{ 32.0, 61.5, TIMELESS_ISLE },
+						{ 32.6, 32.8, TIMELESS_ISLE },
+						{ 33.8, 54.5, TIMELESS_ISLE },
+						{ 37.7, 41.1, TIMELESS_ISLE },
+						{ 39.6, 41.1, TIMELESS_ISLE },
+						{ 42.8, 55.4, TIMELESS_ISLE },
+						{ 47.3, 80.8, TIMELESS_ISLE },
+						{ 48.0, 51.2, TIMELESS_ISLE },
+						{ 50.4, 71.7, TIMELESS_ISLE },
+						{ 52.2, 62.6, TIMELESS_ISLE },
+						{ 55.1, 72.9, TIMELESS_ISLE },
+						{ 55.3, 50.3, TIMELESS_ISLE },
+						{ 55.6, 59.3, TIMELESS_ISLE },
+						{ 63.1, 45.3, TIMELESS_ISLE },
+						{ 64.5, 72.3, TIMELESS_ISLE },
+						{ 65.4, 51.7, TIMELESS_ISLE },
+						{ 68.4, 60.4, TIMELESS_ISLE },
 					},
 					["g"] = {
 						crit(1),	-- Cloudstrike Family Helm

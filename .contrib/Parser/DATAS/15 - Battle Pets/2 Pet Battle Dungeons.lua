@@ -7,15 +7,15 @@ _.BattlePets =
 	n(-796,	{	-- Battle
 		q(33137, {	-- The Celestial Tournament
 			["provider"] = { "n", 73082 },	-- Master Li
-			["coord"] = { 34.8, 59.6, 554 },
+			["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 			["isWeekly"] = true,
 			["maps"] = {
-				554,	-- Timeless Isle
+				TIMELESS_ISLE,
 				571,	-- Pet Dungeon
 			},
 			["g"] = {
 				n(73082, {	-- Master Li <Celestial Tournament Host>
-					["coord"] = { 34.7, 59.6, 554 },
+					["coord"] = { 34.7, 59.6, TIMELESS_ISLE },
 					["g"] = {
 						i(102145, {	-- Chi-Chi, Hatchling of Chi-Ji
 							["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
@@ -55,7 +55,7 @@ _.BattlePets =
 					["provider"] = { "n", 73082 },	-- Master Li
 					["sourceQuest"] = 33137,	-- The Celestial Tournament
 					["description"] = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",
-					["coord"] = { 34.8, 59.6, 554 },
+					["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 					["lvl"] = 90,
 					["g"] = {
 						i(101529),	-- Celestial Coin

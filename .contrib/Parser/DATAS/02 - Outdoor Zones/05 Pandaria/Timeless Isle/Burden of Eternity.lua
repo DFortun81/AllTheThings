@@ -7,7 +7,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(554, {	-- Timeless Isle
+		m(TIMELESS_ISLE, {
 			n(-799, {	-- Burden of Eternity
 				-- Cloth
 				i(101891, {	-- Amaranthine Cowl

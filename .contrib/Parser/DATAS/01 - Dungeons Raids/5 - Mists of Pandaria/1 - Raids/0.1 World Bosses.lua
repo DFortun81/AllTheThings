@@ -416,9 +416,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["isWeekly"] = true,
 				["questID"] = 33118,
 				["isRaid"] = true,
-				["coord"] = { 54.9, 17.3, 554 },
+				["coord"] = { 54.9, 17.3, TIMELESS_ISLE },
 				["maps"] = {	-- all Timeless Isle maps
-					554,	-- Timeless Isle
+					TIMELESS_ISLE,
 					555,	-- Cavern of Lost Spirits
 				},
 				["lvl"] = 80,	-- Confirmed by Lucetia November 5, 2018
@@ -876,11 +876,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["isWeekly"] = true,
 				["questID"] = 33117,
 				["maps"] = {	-- all Timeless Isle maps
-					554,	-- Timeless Isle
+					TIMELESS_ISLE,
 					555,	-- Cavern of Lost Spirits
 				},
 				["isRaid"] = true,
-				["coord"] = { 38.87, 55.29, 554 },
+				["coord"] = { 38.87, 55.29, TIMELESS_ISLE },
 				["lvl"] = 80,	-- Confirmed by Lucetia November 5, 2018
 				["crs"] = {
 					71952,	-- Chi-Ji, The Red Crane

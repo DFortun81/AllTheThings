@@ -74,10 +74,10 @@ _.Secrets =
 							n(73293, {	-- Whizzig <Merchant of Time>
 								["description"] = "Limited time vendor on Timeless Isle",
 								["coords"] = {
-									{ 41.6, 47.2, 554 },
-									{ 35.0, 52.8, 554 },
-									{ 42.8, 59.4, 554 },
-									{ 40.0, 63.0, 554 },
+									{ 41.6, 47.2, TIMELESS_ISLE },
+									{ 35.0, 52.8, TIMELESS_ISLE },
+									{ 42.8, 59.4, TIMELESS_ISLE },
+									{ 40.0, 63.0, TIMELESS_ISLE },
 								},
 							}),
 						},

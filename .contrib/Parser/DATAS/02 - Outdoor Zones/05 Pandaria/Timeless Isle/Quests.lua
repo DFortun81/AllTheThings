@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(554, {	-- Timeless Isle
+		m(TIMELESS_ISLE, {
 			n(QUESTS, {
 				q(33211, {	-- A Timeless Question
 					["provider"] = { "n", 73570 },	-- Senior Historian Evelyna <The Timewalkers>
@@ -102,13 +102,13 @@ _.Zones =
 					["sourceQuests"] = { 32974 },	-- Rolo's Riddle
 					["description"] = "Find the second clue at the back of Three-Breeze Terrace (|cFFFFFFFF34.5, 26.5|r).",
 					["provider"] = { "n", 72751 },	-- Mound of Dirt
-					["coord"] = { 49.4, 69.3, 554 },
+					["coord"] = { 49.4, 69.3, TIMELESS_ISLE },
 				}),
 				q(32976, {	-- Rolo's Riddle #3
 					["sourceQuests"] = { 32975 },	-- Rolo's Riddle #2
 					["description"] = "The final treasure you're looking for is high up at the bloody lake where Garnia lives (|cFFFFFFFF66.0, 23.2|r).\n\nYou can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
 					["provider"] = { "n", 72754 },	-- Mound of Dirt
-					["coord"] = { 34.5, 26.5, 554 },
+					["coord"] = { 34.5, 26.5, TIMELESS_ISLE },
 					["g"] = {
 						i(104013),	-- Timeless Cloth Armor Cache
 						i(104012),	-- Timeless Leather Armor Cache

@@ -5,20 +5,20 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(554, {	-- Timeless Isle
+		m(TIMELESS_ISLE, {
 			n(RARES, {
 				--[[
 				{	-- Blackguard's Jetsam
-					["coord"] = { 22.69, 58.93, 554 },
+					["coord"] = { 22.69, 58.93, TIMELESS_ISLE },
 					-- Turns into Spectral Treasure Chest npcID 72018
 				--]]
 				n(73174,  {	-- Archiereus of Flame
 					["questID"] = 33312,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 58.1, 25.0, 554 },
-						{ 56.6, 35.9, 554 },
-						{ 48.4, 33.3, 554 },
+						{ 58.1, 25.0, TIMELESS_ISLE },
+						{ 56.6, 35.9, TIMELESS_ISLE },
+						{ 48.4, 33.3, TIMELESS_ISLE },
 					},
 					["g"] = {
 						crit(31, {	-- Archiereus of Flame
@@ -32,7 +32,7 @@ _.Zones =
 				}),
 				n(73666, {	-- Archiereus of Flame
 					["description"] = "This is the summonable version of this rare. It drops more things.",
-					["coord"] = { 34.6, 31.6, 554 },
+					["coord"] = { 34.6, 31.6, TIMELESS_ISLE },
 					["cost"] = {
 						{ "i", 103684, 1 },	-- Scroll of Challenge
 					},
@@ -45,10 +45,10 @@ _.Zones =
 					["questID"] = 33301,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 66.8, 67.2, 554 },
-						{ 65.6, 69.8, 554 },
-						{ 63.6, 72.6, 554 },
-						{ 62.1, 77.1, 554 },
+						{ 66.8, 67.2, TIMELESS_ISLE },
+						{ 65.6, 69.8, TIMELESS_ISLE },
+						{ 63.6, 72.6, TIMELESS_ISLE },
+						{ 62.1, 77.1, TIMELESS_ISLE },
 					},
 					["g"] = {
 						crit(14, {	-- Bufo
@@ -66,8 +66,8 @@ _.Zones =
 					["questID"] = 33299,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 60.6, 48.4, 554 },
-						{ 65.4, 60.2, 554 },
+						{ 60.6, 48.4, TIMELESS_ISLE },
+						{ 65.4, 60.2, TIMELESS_ISLE },
 					},
 					["g"] = {
 						crit(23, {	-- Champion of the Black Flame
@@ -90,7 +90,7 @@ _.Zones =
 					["description"] = "Click on Conspicuously Empty Shell to spawn Chelon.",
 					["questID"] = 32966,
 					["isDaily"] = true,
-					["coord"] = { 25.2, 35.8, 554 },
+					["coord"] = { 25.2, 35.8, TIMELESS_ISLE },
 					["g"] = {
 						crit(8, {	-- Chelon
 							["achievementID"] = 8714,	-- Timeless Champion
@@ -105,7 +105,7 @@ _.Zones =
 				n(73175,  {	-- Cinderfall
 					["questID"] = 33310,
 					["isDaily"] = true,
-					["coord"] = { 54.1, 52.9, 554 },
+					["coord"] = { 54.1, 52.9, TIMELESS_ISLE },
 					["g"] = {
 						crit(24, {	-- Cinderfall
 							["achievementID"] = 8714,	-- Timeless Champion
@@ -126,7 +126,7 @@ _.Zones =
 					["description"] = "Locate the bloodied red crane corpse, Fishgorged Crane at ~44, 70. If it's not present, then the rare can't be spawned yet.\n\nIf the corpse is there, head south and aggro one of the Fishgorged Cranes by the ocean at ~45, 84. Kite it back to the corpse, and Cranegnasher should appear and attack!",
 					["questID"] = 32967,
 					["isDaily"] = true,
-					["coord"] = { 44.0, 70.0, 554 },
+					["coord"] = { 44.0, 70.0, TIMELESS_ISLE },
 					["g"] = {
 						i(104268, {	-- Pristine Stalker Hide
 							crit(41, {	-- Pristine Stalker Hide
@@ -139,7 +139,7 @@ _.Zones =
 					["description"] = "You need to have a Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active.",
 					["questID"] = 33314,	-- Note!! Quest 33314 also fires off on first kill of the week.  Need to check on another day if both fire off still
 					["isDaily"] = true,
-					["coord"] = { 26.5, 27.8, 554 },
+					["coord"] = { 26.5, 27.8, TIMELESS_ISLE },
 					["g"] = {
 						i(104294, {	-- Rime of the Time-Lost Mariner
 							crit(31, {	-- Rime of the Time-Lost Mariner
@@ -153,11 +153,11 @@ _.Zones =
 					["questID"] = 33295,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 44.2, 61.6, 554 },
-						{ 45.0, 53.5, 554 },
-						{ 44.7, 54.8, 554 },
-						{ 36.4, 46.3, 554 },
-						{ 36.7, 84.0, 554 },
+						{ 44.2, 61.6, TIMELESS_ISLE },
+						{ 45.0, 53.5, TIMELESS_ISLE },
+						{ 44.7, 54.8, TIMELESS_ISLE },
+						{ 36.4, 46.3, TIMELESS_ISLE },
+						{ 36.7, 84.0, TIMELESS_ISLE },
 					},
 					["g"] = {
 						crit(1, {	-- Emerald Gander
@@ -167,7 +167,7 @@ _.Zones =
 							["description"] = "Can be turned in to Great Chef Woo for 20 Timeless Isle coins.",
 							["repeatable"] = true,
 							["questID"] = 33234,	-- Meaty Crane Leg
-							["coord"] = { 41.8, 63.7, 554 },
+							["coord"] = { 41.8, 63.7, TIMELESS_ISLE },
 							["provider"] = { "n", 73657 },	-- Great Chef Woo
 						}),
 						i(104287, {		-- Windfeather Plume
@@ -195,11 +195,11 @@ _.Zones =
 					["questID"] = 33309,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 55.6, 38.0, 554 },
-						{ 48.8, 36.0, 554 },
-						{ 46.6, 39.6, 554 },
-						{ 44.2, 33.8, 554 },
-						{ 40.6, 27.2, 554 },
+						{ 55.6, 38.0, TIMELESS_ISLE },
+						{ 48.8, 36.0, TIMELESS_ISLE },
+						{ 46.6, 39.6, TIMELESS_ISLE },
+						{ 44.2, 33.8, TIMELESS_ISLE },
+						{ 40.6, 27.2, TIMELESS_ISLE },
 					},
 					["g"] = {
 						i(104298, {	-- Ordon Death Chime
@@ -212,7 +212,7 @@ _.Zones =
 				n(73282,  {	-- Garnia
 					["questID"] = 33300,
 					["isDaily"] = true,
-					["coord"] = { 64.6, 28.6, 554 },
+					["coord"] = { 64.6, 28.6, TIMELESS_ISLE },
 					["g"] = {
 						i(104159, {	-- Ruby Droplet (PET!)
 							crit(54, {	-- Ruby Droplet
@@ -224,7 +224,7 @@ _.Zones =
 				n(72970,  {	-- Golganarr
 					["questID"] = 33315,
 					["isDaily"] = true,
-					["coord"] = { 62.2, 63.2, 554 },
+					["coord"] = { 62.2, 63.2, TIMELESS_ISLE },
 					["g"] = {
 						i(104262, {	-- Odd Polished Stone
 							crit(43, {	-- Odd Polished Stone
@@ -243,8 +243,8 @@ _.Zones =
 					["questID"] = 33297,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 20.6, 43.2, 554 },
-						{ 26.6, 72.4, 554 },
+						{ 20.6, 43.2, TIMELESS_ISLE },
+						{ 26.6, 72.4, TIMELESS_ISLE },
 					},
 					["g"] = {
 						i(86584, {	-- Hardened Shell
@@ -258,10 +258,10 @@ _.Zones =
 					["questID"] = 33294,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 30.2, 71.6, 554 },
-						{ 40.8, 69.2, 554 },
-						{ 40.2, 82.8, 554 },
-						{ 32.4, 78.2, 554 },
+						{ 30.2, 71.6, TIMELESS_ISLE },
+						{ 40.8, 69.2, TIMELESS_ISLE },
+						{ 40.2, 82.8, TIMELESS_ISLE },
+						{ 32.4, 78.2, TIMELESS_ISLE },
 					},
 					["g"] = {
 						i(104290, {	-- Sticky Silkworm Goo
@@ -280,7 +280,7 @@ _.Zones =
 					["description"] = "Huolon spawns around the coordinate we have listed, but if he's not pulled immediately he will fly up the hill, over the first upper bridge, and loop back down.",
 					["questID"] = 33311,
 					["isDaily"] = true,
-					["coord"] = { 66.0, 58.8, 554 },
+					["coord"] = { 66.0, 58.8, TIMELESS_ISLE },
 					["g"] = {
 						i(104286, {	-- Quivering Firestorm Egg
 							crit(39, {	-- Quivering Firestorm Egg
@@ -299,19 +299,19 @@ _.Zones =
 					["questID"] = 33303,
 					["isDaily"] = true,
 					["coords"] = {	-- listing basically all the coordinates, just because they're so spread out!
-						{ 30.8, 36.2, 554 },
-						{ 29.0, 43.6, 554 },
-						{ 25.8, 46.6, 554 },
-						{ 33.8, 46.6, 554 },
-						{ 28.8, 62.0, 554 },
-						{ 27.4, 69.2, 554 },
-						{ 29.6, 73.6, 554 },
-						{ 31.2, 75.8, 554 },
-						{ 34.6, 73.4, 554 },
-						{ 36.4, 73.4, 554 },
-						{ 44.6, 65.4, 554 },
-						{ 53.0, 58.8, 554 },
-						{ 50.8, 46.2, 554 },
+						{ 30.8, 36.2, TIMELESS_ISLE },
+						{ 29.0, 43.6, TIMELESS_ISLE },
+						{ 25.8, 46.6, TIMELESS_ISLE },
+						{ 33.8, 46.6, TIMELESS_ISLE },
+						{ 28.8, 62.0, TIMELESS_ISLE },
+						{ 27.4, 69.2, TIMELESS_ISLE },
+						{ 29.6, 73.6, TIMELESS_ISLE },
+						{ 31.2, 75.8, TIMELESS_ISLE },
+						{ 34.6, 73.4, TIMELESS_ISLE },
+						{ 36.4, 73.4, TIMELESS_ISLE },
+						{ 44.6, 65.4, TIMELESS_ISLE },
+						{ 53.0, 58.8, TIMELESS_ISLE },
+						{ 50.8, 46.2, TIMELESS_ISLE },
 					},
 					["g"] = {
 						i(104161, {	-- Death Adder Hatchling (PET!)
@@ -331,11 +331,11 @@ _.Zones =
 					["questID"] = 33296,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 43.8, 43.8, 554 },
-						{ 35.2, 41.8, 554 },
-						{ 29.6, 45.8, 554 },
-						{ 31.6, 58.8, 554 },
-						{ 34.2, 71.0, 554 },
+						{ 43.8, 43.8, TIMELESS_ISLE },
+						{ 35.2, 41.8, TIMELESS_ISLE },
+						{ 29.6, 45.8, TIMELESS_ISLE },
+						{ 31.6, 58.8, TIMELESS_ISLE },
+						{ 34.2, 71.0, TIMELESS_ISLE },
 					},
 					["g"] = {
 						i(89770),	-- Tuft of Yak Fur
@@ -344,7 +344,7 @@ _.Zones =
 				n(73169,  {	-- Jakur of Ordon
 					["questID"] = 33306,
 					["isDaily"] = true,
-					["coord"] = { 53.0, 82.4, 554 },
+					["coord"] = { 53.0, 82.4, TIMELESS_ISLE },
 					["g"] = {
 						i(104331, {	-- Warning Sign (TOY!)
 							crit(13, {	-- Warning Sign
@@ -362,7 +362,7 @@ _.Zones =
 				n(72193,  {	-- Karkanos
 					["questID"] = 33292,
 					["isDaily"] = true,
-					["coord"] = { 33.8, 85.8, 554 },
+					["coord"] = { 33.8, 85.8, TIMELESS_ISLE },
 					["g"] = {
 						i(104035, {	-- Giant Purse of Timeless Coins
 							crit(3, {	-- Giant Purse of Timeless Coins
@@ -374,7 +374,7 @@ _.Zones =
 				n(73277,  {	-- Leafmender
 					["questID"] = 33298,
 					["isDaily"] = true,
-					["coord"] = { 67.2, 44.0, 554 },
+					["coord"] = { 67.2, 44.0, TIMELESS_ISLE },
 					["g"] = {
 						i(104289, {	-- Faintly-Glowing Herb
 							crit(36, {	-- Faintly-Glowing Herb
@@ -393,8 +393,8 @@ _.Zones =
 					["questID"] = 33302,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 23.6, 28.6, 554 },
-						{ 68.8, 74.8, 554 },
+						{ 23.6, 28.6, TIMELESS_ISLE },
+						{ 68.8, 74.8, TIMELESS_ISLE },
 					},
 					["g"] = {
 						i(104293, {	-- Scuttler's Shell
@@ -411,7 +411,7 @@ _.Zones =
 				}),
 				n(72048,  {	-- Rattleskew
 				--	no daily questID popped.  may have a one-time questID?
-					["coord"] = { 60.6, 87.8, 554 },	-- mapID needs verification
+					["coord"] = { 60.6, 87.8, TIMELESS_ISLE },	-- mapID needs verification
 					["g"] = {
 						i(104321, {	-- Captain Zvezdan's Lost Leg
 							crit(16, {	-- Captain Zvezdan's Lost Leg
@@ -426,7 +426,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coords"] = {
 						{ 44.0, 30.9, 555 },	-- actual spawn, in Cavern of Lost Spirits
-						{ 43.1, 41.2, 554 },	-- entrance
+						{ 43.1, 41.2, TIMELESS_ISLE },	-- entrance
 					},
 					["g"] = {
 						i(104312, {	-- Strange Glowing Mushroom
@@ -445,7 +445,7 @@ _.Zones =
 					["description"] = "Classes that can snap/jump forward abruptly (like Mage Blink) can force their way into the cave and spawn the rare.  Using a toy like the Mushroom Chair or the Leather Love Seat may also work.",
 					["questID"] = 32960,
 					["isDaily"] = true,
-					["coord"] = { 59.5, 48.9, 554 },
+					["coord"] = { 59.5, 48.9, TIMELESS_ISLE },
 					["g"] = {
 						crit(9, {	-- Spelurk
 							["achievementID"] = 8714,	-- Timeless Champion
@@ -460,7 +460,7 @@ _.Zones =
 				n(73704,  {	-- Stinkbraid
 					["questID"] = 33305,
 					["isDaily"] = true,
-					["coord"] = { 71.2, 82.6, 554 },	-- mapID needs verification
+					["coord"] = { 71.2, 82.6, TIMELESS_ISLE },	-- mapID needs verification
 					["g"] = {
 						i(103982),	-- Burden of Eternity
 					},
@@ -485,7 +485,7 @@ _.Zones =
 				n(72808,  {	-- Tsavo'ka
 					["questID"] = 33304,
 					["isDaily"] = true,
-					["coord"] = { 54.2, 42.8, 554 },
+					["coord"] = { 54.2, 42.8, TIMELESS_ISLE },
 					["g"] = {
 						i(104268, {	-- Pristine Stalker Hide
 							crit(41, {	-- Pristine Stalker Hide
@@ -497,7 +497,7 @@ _.Zones =
 				n(73173,  {	-- Urdur the Cauterizer
 					["questID"] = 33308,
 					["isDaily"] = true,
-					["coord"] = { 43.6, 26.0, 554 },
+					["coord"] = { 43.6, 26.0, TIMELESS_ISLE },
 					["g"] = {
 						i(104306, {	-- Sunset Stone
 							crit(22, {	-- Sunset Stone
@@ -514,7 +514,7 @@ _.Zones =
 				n(73170,  {	-- Watcher Osu
 					["questID"] = 33322,
 					["isDaily"] = true,
-					["coord"] = { 57.6, 76.6, 554 },
+					["coord"] = { 57.6, 76.6, TIMELESS_ISLE },
 					["g"] = {
 						i(104296, {	-- Ordon Ceremonial Robes
 							crit(30, {	-- Ordon Ceremonial Robes
@@ -531,7 +531,7 @@ _.Zones =
 				n(72245,  {	-- Zesqua
 					["questID"] = 33316,
 					["isDaily"] = true,
-					["coord"] = { 47.0, 87.4, 554 },	-- mapID needs verification
+					["coord"] = { 47.0, 87.4, TIMELESS_ISLE },	-- mapID needs verification
 					["g"] = {
 						i(104303, {	-- Rain Stone
 							crit(25, {	-- Rain Stone
@@ -544,7 +544,7 @@ _.Zones =
 					["description"] = "Kill 10 Skunky Brew Alementals to spawn Zhu-gon the Sour in the town when the event is active.",
 					["questID"] = 32959,
 					["isDaily"] = true,
-					["coord"] = { 37.8, 77.2, 554 },
+					["coord"] = { 37.8, 77.2, TIMELESS_ISLE },
 					["g"] = {
 						i(104167, {	-- Skunky Alemental (PET!)
 							crit(49, {	-- Skunky Alemental

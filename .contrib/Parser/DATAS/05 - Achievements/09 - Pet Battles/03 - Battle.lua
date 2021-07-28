@@ -26,7 +26,7 @@ _.Achievements =
 					--["coord"] = { 28.6, 33.8, 117 },
 				}),
 				crit(4,  {	-- Mistwing
-					--["coord"] = { 34.8, 59.6, 554 },
+					--["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 				}),
 				crit(5,  {	-- Sewer Creeper
 					--["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
@@ -41,10 +41,10 @@ _.Achievements =
 					--["coord"] = { 57.0, 42.2, TOWNLONG_STEPPES },
 				}),
 				crit(9,  {	-- Kostos <Challenger of the Small>
-					--["coord"] = { 34.8, 59.6, 554 },
+					--["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 				}),
 				crit(10, {	-- Glurp
-					--["coord"] = { 34.8, 59.6, 554 },
+					--["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 				}),
 			}),
 			ach(9069,  {	-- An Awfully Big Adventure
@@ -59,7 +59,7 @@ _.Achievements =
 					["coord"] = { 28.6, 33.8, 117 },
 				}),
 				crit(4,  {	-- Blingtron 4000 (Celestial Tournament)
-					["coord"] = { 34.8, 59.6, 554 },
+					["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 				}),
 				crit(5,  {	-- Bloodknight Antari (Outland)
 					["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
@@ -74,7 +74,7 @@ _.Achievements =
 					["coord"] = { 57.0, 42.2, TOWNLONG_STEPPES },
 				}),
 				crit(9,  {	-- Chen Stormstout (Celestial Tournament)
-					["coord"] = { 34.8, 59.6, 554 },
+					["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 				}),
 				crit(10, {	-- Christoph VonFeasel (Darkmoon Island)
 					["coord"] = { 47.4, 62.2, 407 },
@@ -86,7 +86,7 @@ _.Achievements =
 					["coord"] = { 51.0, 70.6, GORGROND },
 				}),
 				crit(13, {	-- Dr. Ion Goldbloom (Celestial Tournament)
-					["coord"] = { 34.8, 59.6, 554 },
+					["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 				}),
 				crit(14, {	-- Farmer Nishi
 					["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
@@ -110,7 +110,7 @@ _.Achievements =
 					["coord"] = { 47.8, 62.6, 407 },
 				}),
 				crit(21, {	-- Lorewalker Cho (Celestial Tournament)
-					["coord"] = { 34.8, 59.6, 554 },
+					["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 				}),
 				crit(22, {	-- Lydia Accoste
 					["coord"] = { 40.2, 76.6, DEADWIND_PASS },
@@ -146,19 +146,19 @@ _.Achievements =
 					["coord"] = { 36.2, 52.2, TOWNLONG_STEPPES },
 				}),
 				crit(33, {	-- Shademaster Kiryn (Celestial Tournament)
-					["coord"] = { 37.8, 57.2, 554 },
+					["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 				}),
 				crit(34, {	-- Stone Cold Trixxy
 					["coord"] = { 65.6, 64.6, WINTERSPRING },
 				}),
 				crit(35, {	-- Sully "The Pickle" McLeary (Celestial Tournament)
-					["coord"] = { 37.8, 57.2, 554 },
+					["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 				}),
 				crit(36, {	-- Taralune
 					["coord"] = { 49.0, 80.4, TALADOR },
 				}),
 				crit(37, {	-- Taran Zhu (Celestial Tournament)
-					["coord"] = { 37.8, 57.2, 554 },
+					["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 				}),
 				crit(38, {	-- Tarr the Terrible
 					["coord"] = { 56.2, 9.80, DRAENOR_NAGRAND },
@@ -176,10 +176,10 @@ _.Achievements =
 					["coord"] = { 28.8, 36.0, THE_JADE_FOREST },
 				}),
 				crit(43, {	-- Wise Mari (Celestial Tournament)
-					["coord"] = { 37.8, 57.2, 554 },
+					["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 				}),
 				crit(44, {	-- Wrathion (Celestial Tournament)
-					["coord"] = { 37.8, 57.2, 554 },
+					["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 				}),
 			}),
 			ach(12088, {	-- Anomalous Animals of Argus

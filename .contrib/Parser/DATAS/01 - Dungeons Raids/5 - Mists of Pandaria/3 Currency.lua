@@ -15,7 +15,7 @@ _.Instances = {
 				}),
 				currency(752, {	-- Mogu Rune of Fate
 					["description"] = "Purchased from Mistweaver Ai on Timeless Isle |cffffffff(42.8, 55.6)|r for 1,000 Timeless Coins.\n",
-					["coord"] = { 42.8, 55.6, 554 },	-- Mistweaver Ai, Timeless Isle
+					["coord"] = { 42.8, 55.6, TIMELESS_ISLE },	-- Mistweaver Ai
 					["cost"] = { { "c", 777, 1000 } },	-- 1,000x Timeless Coin
 				}),
 				currency(776, {	-- Warforged Seal
