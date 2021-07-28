@@ -17,7 +17,7 @@ _.Zones =
 				554,	-- Timeless Isle
 				388,	-- Townlong Steppes
 				390,	-- Vale of Eternal Blossoms
-				376,	-- Valley of the Four Winds
+				VALLEY_OF_THE_FOUR_WINDS,
 			},
 			["g"] = {
 				i(94933, {	-- Tiny Blue Carp

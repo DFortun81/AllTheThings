@@ -2041,8 +2041,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(32502, {	-- Honor the Flame — Valley of the Four Winds
 			["provider"] = { "n", 69550 },	-- Valley of the Four Winds Flame Guardian
 			["isYearly"] = true,
-			["coord"] = { 51.8, 51.4, 376 },
-			["maps"] = { 376 },	-- Valley of the Four Winds
+			["coord"] = { 51.8, 51.4, VALLEY_OF_THE_FOUR_WINDS },
+			["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 		}),
 		q(44575, {	-- Honor the Flame — Val'sharah
 			["provider"] = { "n", 114493 },	-- Val'sharah Flame Guardian

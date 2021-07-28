@@ -5,12 +5,12 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(376, {	-- Valley of the Four Winds
+		m(VALLEY_OF_THE_FOUR_WINDS, {
 			n(RARES, {
 				n(51059, {	-- Blackhoof
 					["coords"] = {
-						{ 39.6, 57.6, 376 },
-						{ 32.8, 62.8, 376 },
+						{ 39.6, 57.6, VALLEY_OF_THE_FOUR_WINDS },
+						{ 32.8, 62.8, VALLEY_OF_THE_FOUR_WINDS },
 					},
 					["g"] = {
 						i(87217),	-- Small Bag of Goods
@@ -36,10 +36,10 @@ _.Zones =
 				}),
 				n(50828, {	-- Bonobos
 					["coords"] = {
-						{ 15.6, 32.2, 376 },
-						{ 19.0, 35.8, 376 },
-						{ 14.0, 38.2, 376 },
-						{ 16.6, 41.0, 376 },
+						{ 15.6, 32.2, VALLEY_OF_THE_FOUR_WINDS },
+						{ 19.0, 35.8, VALLEY_OF_THE_FOUR_WINDS },
+						{ 14.0, 38.2, VALLEY_OF_THE_FOUR_WINDS },
+						{ 16.6, 41.0, VALLEY_OF_THE_FOUR_WINDS },
 					},
 					["g"] = {
 						i(87217),	-- Small Bag of Goods
@@ -60,7 +60,7 @@ _.Zones =
 					},
 				}),
 				n(50351, {	-- Jonn-Dar
-					["coord"] = { 18.6, 77.6, 376 },
+					["coord"] = { 18.6, 77.6, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						i(87217),	-- Small Bag of Goods
 						i(86572),	-- Terracotta Fragment
@@ -81,8 +81,8 @@ _.Zones =
 				}),
 				n(50364, {	-- Nal'lak the Ripper
 					["coords"] = {
-						{ 10.8, 49.0, 376 },
-						{ 9.20, 59.8, 376 },
+						{ 10.8, 49.0, VALLEY_OF_THE_FOUR_WINDS },
+						{ 9.20, 59.8, VALLEY_OF_THE_FOUR_WINDS },
 					},
 					["g"] = {
 						i(86576),	-- Dynasty of Steel
@@ -103,7 +103,7 @@ _.Zones =
 					},
 				}),
 				n(50811, {	-- Nasra Spothide
-					["coord"] = { 88.6, 18.0, 376 },
+					["coord"] = { 88.6, 18.0, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						i(86587),	-- Seed of Tranquil Growth
 						i(87217),	-- Small Bag of Goods
@@ -124,8 +124,8 @@ _.Zones =
 				}),
 				n(50783, {	-- Salyin Warscout
 					["coords"] = {
-						{ 67.6, 59.6, 376 },
-						{ 75.8, 46.8, 376 },
+						{ 67.6, 59.6, VALLEY_OF_THE_FOUR_WINDS },
+						{ 75.8, 46.8, VALLEY_OF_THE_FOUR_WINDS },
 					},
 					["g"] = {
 						i(87217),	-- Small Bag of Goods
@@ -147,8 +147,8 @@ _.Zones =
 				}),
 				n(50766, {	-- Sele'na
 					["coords"] = {
-						{ 52.8, 28.6, 376 },
-						{ 60.2, 39.2, 376 },
+						{ 52.8, 28.6, VALLEY_OF_THE_FOUR_WINDS },
+						{ 60.2, 39.2, VALLEY_OF_THE_FOUR_WINDS },
 					},
 					["g"] = {
 						i(86580, {	-- Wilted Lilypad
@@ -174,7 +174,7 @@ _.Zones =
 					},
 				}),
 				n(50339, {	-- Sulik'shor
-					["coord"] = { 37.0, 25.6, 376 },
+					["coord"] = { 37.0, 25.6, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						i(87217),	-- Small Bag of Goods
 						i(87599),	-- Grower's Gloves

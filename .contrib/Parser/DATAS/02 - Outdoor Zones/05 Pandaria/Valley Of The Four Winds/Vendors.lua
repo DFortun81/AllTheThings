@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(376, {	-- Valley of the Four Winds
+		m(VALLEY_OF_THE_FOUR_WINDS, {
 			n(VENDORS, {
 				n(58713, {	-- Anthea Ironpaw <Master of the Wok>
-					["coord"] = { 52.8, 51.8, 376 },
+					["coord"] = { 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						un(NEVER_IMPLEMENTED, i(87231)),	-- Recipe: Banquet of the Wok
 						recipe(125594),		-- Banquet of the Wok
@@ -29,7 +29,7 @@ _.Zones =
 					},
 				}),
 				n(75694, {	-- Armsmaster Holinka <Tyrannical Gladiator>
-					["coord"] = { 12.0, 34.0, 376 },
+					["coord"] = { 12.0, 34.0, VALLEY_OF_THE_FOUR_WINDS },
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
@@ -850,7 +850,7 @@ _.Zones =
 					},
 				}),
 				n(58717, {	-- Bobo Ironpaw <Master of the Brew>
-					["coord"] = { 53.0, 52.0, 376 },
+					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						un(NEVER_IMPLEMENTED, i(87247)),	-- Recipe: Banquet of the Brew
 						recipe(125602),		-- Banquet of the Brew
@@ -862,7 +862,7 @@ _.Zones =
 					},
 				}),
 				n(61215, {	-- Claretta <Adventuring Supplies>
-					["coord"] = { 84.8, 21.6, 376 },
+					["coord"] = { 84.8, 21.6, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						i(81655),	-- Faded Forest Amulet
 						i(81650),	-- Faded Forest Armored Bracers
@@ -985,7 +985,7 @@ _.Zones =
 					},
 				}),
 				n(75692, {	-- Ethan Natice <Grievous Gladiator>
-					["coord"] = { 12.0, 34.2, 376 },
+					["coord"] = { 12.0, 34.2, VALLEY_OF_THE_FOUR_WINDS },
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
@@ -1824,7 +1824,7 @@ _.Zones =
 					},
 				}),
 				n(58706, {	-- Gina Mudclaw <Tillers Quartermaster>
-					["coord"] = { 53.2, 51.6, 376 },
+					["coord"] = { 53.2, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						i(89812, {	-- "Jinyu Princess" Irrigation System
 							["cost"] = 800000,	-- 80g
@@ -1873,7 +1873,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				n(75691, {	-- Hayden Christophen <Dreadful Gladiator>
-					["coord"] = { 12.2, 34.2, 376 },
+					["coord"] = { 12.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
@@ -2458,7 +2458,7 @@ _.Zones =
 					},
 				}),
 				n(58716, {	-- Jian Ironpaw <Master of the Oven>
-					["coord"] = { 53.2, 51.6, 376 },
+					["coord"] = { 53.2, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						un(NEVER_IMPLEMENTED, i(87243)),	-- Recipe: Banquet of the Oven
 						recipe(125600),		-- Banquet of the Oven
@@ -2473,7 +2473,7 @@ _.Zones =
 					},
 				}),
 				n(58712, {	-- Kol Ironpaw <Master of the Grill>
-					["coord"] = { 53.0, 51.4, 376 },
+					["coord"] = { 53.0, 51.4, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						un(NEVER_IMPLEMENTED, i(87227)),	-- Recipe: Banquet of the Grill
 						recipe(125141),		-- Banquet of the Grill
@@ -2492,7 +2492,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				n(75689, {	-- Lucan Malory Season 12: Malevolent Gladiator Vendor. Items are tagged as Season 13
-					["coord"] = { 12.2, 34.2, 376 },
+					["coord"] = { 12.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
@@ -3480,7 +3480,7 @@ _.Zones =
 					},
 				}),
 				n(58714, {	-- Mei Mei Ironpaw <Master of the Pot>
-					["coord"] = { 52.6, 51.6, 376 },
+					["coord"] = { 52.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						un(NEVER_IMPLEMENTED, i(87235)),	-- Recipe: Banquet of the Pot
 						recipe(125596),		-- Banquet of the Pot
@@ -3495,7 +3495,7 @@ _.Zones =
 					},
 				}),
 				n(58718, {	-- Merchant Greenfield
-					["coord"] = { 52.8, 52.0, 376 },
+					["coord"] = { 52.8, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						i(85219, {	-- Ominous Seeds
 							["description"] = "You get this seed by planting any seeds this vendor sells and waiting for it to drop.  Once dropped, then plant it and wait a day to harvest the pet.",
@@ -3506,7 +3506,7 @@ _.Zones =
 					},
 				}),
 				n(64395, {	-- Nam Ironpaw <Stockmaster>
-					["coord"] = { 53.6, 51.2, 376 },
+					["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						i(86468, {	-- Apron
 							["cost"] = { { "c", 402, 50 }, },	-- 50x Ironpaw Token
@@ -3537,14 +3537,14 @@ _.Zones =
 					},
 				}),
 				n(64465, {	-- Noodles <Cooking Supplies>
-					["coord"] = { 52.6, 51.6, 376 },
+					["coord"] = { 52.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
 				n(55143, {	-- Sally Fizzlefury <Engineering Trainer>
-					["coord"] = { 16.0, 83.0, 376 },
+					["coord"] = { 16.0, 83.0, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						i(88802, {	-- Foxicopter Controller (TOY!)
 							["cost"] = 10000000,	-- 1,000g
@@ -3563,7 +3563,7 @@ _.Zones =
 					}),
 				}),
 				n(78456, {	-- Starlight Sinclair <Prideful Gladiator>
-					["coord"] = { 12.0, 34.0, 376 },
+					["coord"] = { 12.0, 34.0, VALLEY_OF_THE_FOUR_WINDS },
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
@@ -4239,7 +4239,7 @@ _.Zones =
 					},
 				}),
 				n(64231, {	-- Sungshin Ironpaw <Guide to the Ways>
-					["coord"] = { 53.6, 51.2, 376 },
+					["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						-- TODO: https://www.wowhead.com/npc=64231/sungshin-ironpaw#starts
 						recipe(124233),	-- Blanched Needle Mushrooms
@@ -4266,8 +4266,8 @@ _.Zones =
 				}),
 				n(59583, {	-- Trader Jambeezi <Adventuring Supplies>
 					["coords"] = {
-						{ 56.2, 47.0, 376 },
-						{ 55.6, 49.8, 376 },
+						{ 56.2, 47.0, VALLEY_OF_THE_FOUR_WINDS },
+						{ 55.6, 49.8, VALLEY_OF_THE_FOUR_WINDS },
 					},
 					["g"] = {
 						i(81655),	-- Faded Forest Amulet
@@ -4381,7 +4381,7 @@ _.Zones =
 					},
 				}),
 				n(58715, {	-- Yan Ironpaw <Master of the Steamer>
-					["coord"] = { 52.6, 51.6, 376 },
+					["coord"] = { 52.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						un(NEVER_IMPLEMENTED, i(87239)),	-- Recipe: Banquet of the Steamer
 						recipe(125598),		-- Banquet of the Steamer

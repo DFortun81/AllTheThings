@@ -88,8 +88,8 @@ _.Achievements =
 				crit(13, {	-- Dr. Ion Goldbloom (Celestial Tournament)
 					["coord"] = { 34.8, 59.6, 554 },
 				}),
-				crit(14, {	-- Farmer Nishi (Valley of the Four Winds)
-					["coord"] = { 46.0, 43.6, 376 },
+				crit(14, {	-- Farmer Nishi
+					["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
 				}),
 				crit(15, {	-- Flowing Pandaren Spirit (Dread Wastes)
 					["coord"] = { 61.2, 87.6, 422 },

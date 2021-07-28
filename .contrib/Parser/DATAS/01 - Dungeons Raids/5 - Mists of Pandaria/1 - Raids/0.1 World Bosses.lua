@@ -518,9 +518,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["isWeekly"] = true,
 				["questID"] = 32098,
 				["isRaid"] = true,
-				["coord"] = { 70.79, 63.51, 376 },
+				["coord"] = { 70.79, 63.51, VALLEY_OF_THE_FOUR_WINDS },
 				["maps"] = {	-- all Valley of the Four Winds maps
-					376,	-- Valley of the Four Winds
+					VALLEY_OF_THE_FOUR_WINDS,
 					377,	-- Cavern of Endless Echoes
 				},
 				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018

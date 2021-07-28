@@ -330,7 +330,7 @@ _.ExpansionFeatures =
 						},
 						["provider"] = { "n", 109049 },	-- The Monkey King
 						["classes"] = { MONK },
-						["maps"] = { 376 },	-- Valley of the Four Winds
+						["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(46144, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,

@@ -595,9 +595,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { 390 },	-- Vale of Eternal Blossoms
 				}),
 				crit(7, {	-- Valley of the Four Winds
-					["coord"] = { 51.8, 51.4, 376 },
+					["coord"] = { 51.8, 51.4, VALLEY_OF_THE_FOUR_WINDS },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 376 },	-- Valley of the Four Winds
+					["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 				}),
 			},
 		}),
@@ -1301,9 +1301,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { 390 },	-- Vale of Eternal Blossoms
 				}),
 				crit(7, {	-- Valley of the Four Winds
-					["coord"] = { 51.8, 51.4, 376 },
+					["coord"] = { 51.8, 51.4, VALLEY_OF_THE_FOUR_WINDS },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 376 },	-- Valley of the Four Winds
+					["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 				}),
 			},
 		}),

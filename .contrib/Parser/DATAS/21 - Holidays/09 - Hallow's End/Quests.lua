@@ -1843,16 +1843,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(32048, {	-- Candy Bucket — Valley of the Four Winds, Pang's Stead, neutral
 				["isYearly"] = true,
-				["coord"] = { 83.6, 20.3, 376 },
-				["maps"] = { 376 },	-- Valley of the Four Winds
+				["coord"] = { 83.6, 20.3, VALLEY_OF_THE_FOUR_WINDS },
+				["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32046, {	-- Candy Bucket — Valley of the Four Winds, Stoneplow, neutral
 				["isYearly"] = true,
-				["coord"] = { 19.8, 55.7, 376 },
-				["maps"] = { 376 },	-- Valley of the Four Winds
+				["coord"] = { 19.8, 55.7, VALLEY_OF_THE_FOUR_WINDS },
+				["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

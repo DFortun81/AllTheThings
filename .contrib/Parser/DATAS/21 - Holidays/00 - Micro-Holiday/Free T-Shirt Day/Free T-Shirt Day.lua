@@ -90,8 +90,8 @@ _.Holidays =
 					},
 				}),
 				n(146961, {	-- Jade Lovelyshirts
-					["coord"] = { 61.9, 58.8, 376 },
-					["maps"] = { 376 },	-- Valley of the Four Winds
+					["coord"] = { 61.9, 58.8, VALLEY_OF_THE_FOUR_WINDS },
+					["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = {
 						i(167207),	-- Jade's Lovely Shirt
 					},

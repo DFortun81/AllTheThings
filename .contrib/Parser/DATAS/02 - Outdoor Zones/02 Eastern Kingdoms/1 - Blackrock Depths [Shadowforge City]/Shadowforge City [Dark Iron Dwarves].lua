@@ -137,10 +137,10 @@ _.Zones =
 						}),
 						q(53598, {	-- Stormstout Brewery
 							["name"] = "Stormstout Brewery",
-							["coord"] = { 31.51, 73.57, 376 },
+							["coord"] = { 31.51, 73.57, VALLEY_OF_THE_FOUR_WINDS },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 376 },	-- Valley of the Four Winds
+							["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 						}),
 					},
 				}),
