@@ -6,7 +6,7 @@
 -- This would be the desired format for how upgrades should be.
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(554, {	-- Timeless Isle
 			n(-799, {	-- Burden of Eternity
 				-- Cloth

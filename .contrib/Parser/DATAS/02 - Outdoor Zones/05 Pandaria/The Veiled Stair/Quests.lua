@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(433, {	-- The Veiled Stair
 			n(QUESTS, {
 				q(33104, {	-- A Pandaren Legend

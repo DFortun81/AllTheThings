@@ -5,7 +5,7 @@
 -- TODO: formatting
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(504, {	-- Isle of Thunder
 			n(ACHIEVEMENTS, {
 				ach(8112),	-- Blue Response

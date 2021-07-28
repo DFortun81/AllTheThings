@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(504, {	-- Isle of Thunder
 			n(RARES, {
 				n(70000, {	-- Al'tabim the All-Seeing

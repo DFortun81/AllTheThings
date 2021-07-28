@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(422, {	-- Dread Wastes
 			n(VENDORS, {
 				n(64599, {	-- Ambersmith Zikk <Klaxxi Quartermaster>

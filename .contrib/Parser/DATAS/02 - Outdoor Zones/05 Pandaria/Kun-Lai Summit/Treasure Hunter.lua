@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(379, {	-- Kun-Lai Summit
 			n(-222, {	-- Treasure Hunter
 				o(214407, {	-- Mo-Mo's Treasure Chest

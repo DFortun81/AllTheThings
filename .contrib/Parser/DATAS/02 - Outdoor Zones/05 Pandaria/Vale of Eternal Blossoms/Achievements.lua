@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(390, {	-- Vale of Eternal Blossoms
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure

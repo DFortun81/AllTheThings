@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(376, {	-- Valley of the Four Winds
 			n(RARES, {
 				n(51059, {	-- Blackhoof

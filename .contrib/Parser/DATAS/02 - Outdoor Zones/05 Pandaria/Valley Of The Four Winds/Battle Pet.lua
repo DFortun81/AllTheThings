@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(376, {	-- Valley of the Four Winds
 			filter(101, {	-- Pet Battle
 				p(706),	-- Bandicoon

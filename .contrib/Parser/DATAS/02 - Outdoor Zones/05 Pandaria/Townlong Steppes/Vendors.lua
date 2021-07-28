@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(388, {	-- Townlong Steppes
 			n(VENDORS, {
 				n(65171, {	-- Alin the Finder <Adventuring Supplies>

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(371, {	-- The Jade Forest
 			n(TREASURES, {
 				n(-246, {	-- Is Another Man's Treasure

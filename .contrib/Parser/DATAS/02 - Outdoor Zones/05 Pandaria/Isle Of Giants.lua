@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(507, {	-- Isle of Giants
 			["description"] = "The Isle of Giants is an island that has been lost in time, home to primal devilsaurs, direhorns, and skyscreamers raised by the Zandalar tribe on the isle since the loss of Zandalar.",
 			["icon"] = "Interface\\Icons\\ability_hunter_pet_devilsaur",

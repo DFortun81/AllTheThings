@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(554, {	-- Timeless Isle
 			n(FLIGHT_PATHS, {
 				fp(1294, {	-- Huojin Landing, Timeless Isle

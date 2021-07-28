@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(390, {	-- Vale of Eternal Blossoms
 			n(ZONEDROPS, {
 				i(87779, {	-- Ancient Guo-Lai Cache Key

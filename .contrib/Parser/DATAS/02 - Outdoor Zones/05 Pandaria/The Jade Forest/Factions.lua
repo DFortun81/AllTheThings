@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(371, {	-- Jade Forest
 			n(FACTIONS, {
 				faction(1271, {	-- Order of the Cloud Serpent

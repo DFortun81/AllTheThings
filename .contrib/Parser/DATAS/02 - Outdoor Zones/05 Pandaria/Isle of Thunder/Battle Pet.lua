@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(504, {	-- Isle of Thunder
 			filter(101, {	-- Pet Battle
 				p(1181, {	-- Elder Python

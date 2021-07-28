@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(390, {	-- Vale of Eternal Blossoms
 			filter(101, {	-- Pet Battle
 				q(32603, {	-- Beasts of Fable

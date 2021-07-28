@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(379, {	-- Kun-Lai Summit
 			f(101, {	-- Pet Battle
 				p(724, {	-- Alpine Foxling

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(422, {	-- Dread Wastes
 			n(ZONEDROPS, {
 				i(120140, {	-- Tome of Polymorph: Porcupine

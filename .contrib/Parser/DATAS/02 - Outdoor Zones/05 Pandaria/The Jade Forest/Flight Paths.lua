@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(371, {	-- The Jade Forest
 			n(FLIGHT_PATHS, {
 				fp(895, {	-- Dawn's Blossom, Jade Forest

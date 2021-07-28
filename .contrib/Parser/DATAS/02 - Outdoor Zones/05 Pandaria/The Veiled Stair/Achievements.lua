@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(433, {	-- The Veiled Stair
 			n(ACHIEVEMENTS, {
 				ach(7997, {	-- Riches of Pandaria

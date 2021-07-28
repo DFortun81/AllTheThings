@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(379, {	-- Kun-Lai Summit
 			n(QUESTS, {
 				q(30581, {	-- ... and the Pot, Too!

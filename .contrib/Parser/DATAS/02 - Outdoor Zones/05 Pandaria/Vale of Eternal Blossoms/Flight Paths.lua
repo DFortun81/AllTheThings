@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(390, {	-- Vale of Eternal Blossoms
 			n(FLIGHT_PATHS, {
 				fp(1073, {	-- Serpent's Spine, Vale of Eternal Blossoms

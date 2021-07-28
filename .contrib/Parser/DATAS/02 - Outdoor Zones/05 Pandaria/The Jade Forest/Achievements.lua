@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(371, {	-- The Jade Forest
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(504, {	-- Isle of Thunder
 			n(QUESTS, {
 				q(32655, {	-- A Bold Idea

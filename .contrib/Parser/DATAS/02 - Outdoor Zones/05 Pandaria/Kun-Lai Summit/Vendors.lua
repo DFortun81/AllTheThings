@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(379, {	-- Kun-Lai Summit
 			n(VENDORS, {
 				n(65515, {	-- Acon Deathwielder (Removed Season 12 Elite Vendor)

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(504, {	-- Isle of Thunder
 			n(VENDORS, {
 				n(68000, {	-- Hiren Loresong <Kirin Tor Offensive Quartermaster>

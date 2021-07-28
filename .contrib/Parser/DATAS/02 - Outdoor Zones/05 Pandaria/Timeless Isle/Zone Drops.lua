@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(554, {	-- Timeless Isle
 			n(ZONEDROPS, {
 				n(72766,  {	-- Ancient Spineclaw

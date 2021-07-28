@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(388, {	-- Townlong Steppes
 			n(FLIGHT_PATHS, {
 				fp(1054, {	-- Gao-Ran Battlefront, Townlong Steppes

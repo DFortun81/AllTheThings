@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(422, {	-- Dread Wastes
 			n(FLIGHT_PATHS, {
 				fp(1070, {	-- Klaxxi'vess, Dread Wastes

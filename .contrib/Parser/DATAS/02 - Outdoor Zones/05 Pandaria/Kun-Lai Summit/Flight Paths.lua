@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(379, {	-- Kun-Lai Summit
 			n(FLIGHT_PATHS, {
 				fp(1017, {	-- Binan Village, Kun-Lai Summit

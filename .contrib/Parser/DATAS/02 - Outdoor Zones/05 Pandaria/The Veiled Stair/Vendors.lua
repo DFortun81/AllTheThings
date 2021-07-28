@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(433, {	-- The Veiled Stair
 			n(VENDORS, {
 				n(70436, {	-- Blacktalon Quartermaster <Supplier to the Black Prince>

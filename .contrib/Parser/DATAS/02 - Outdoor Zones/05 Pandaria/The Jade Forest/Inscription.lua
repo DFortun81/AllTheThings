@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(371, {	-- The Jade Forest
 			prof(INSCRIPTION, {
 				q(31539, {	-- A Thing of Beauty

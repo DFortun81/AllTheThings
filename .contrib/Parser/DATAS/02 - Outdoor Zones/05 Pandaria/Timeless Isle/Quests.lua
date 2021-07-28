@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(554, {	-- Timeless Isle
 			n(QUESTS, {
 				q(33211, {	-- A Timeless Question

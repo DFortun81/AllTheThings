@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(388, {	-- Townlong Steppes
 			n(RARES, {
 				n(50772, {	-- Eshelon

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(388, {	-- Townlong Steppes
 			n(QUESTS, {
 				q(31894, {	-- A Delicate Balance

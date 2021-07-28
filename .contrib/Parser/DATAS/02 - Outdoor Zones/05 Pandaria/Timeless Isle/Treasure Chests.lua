@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(554, {	-- Timeless Isle
 			n(-212, {	-- Treasure Chest
 				o(220986, {	-- Blackguard's Jetsam
