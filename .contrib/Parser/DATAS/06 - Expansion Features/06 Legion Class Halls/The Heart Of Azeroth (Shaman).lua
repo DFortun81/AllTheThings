@@ -510,7 +510,7 @@ _.ExpansionFeatures =
 					q(43338, {	-- The Codex of Ra
 						["sourceQuests"] = { 43334 },	-- The Coming Storm
 						["classes"] = { SHAMAN },
-						["coord"] = { 66.9, 56.2, 379 },	-- Kun-Lai Summit
+						["coord"] = { 66.9, 56.2, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60968 },	-- Xuen
 					}),
 					q(43334, {	-- The Coming Storm

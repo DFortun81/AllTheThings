@@ -9,7 +9,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["lvl"] = 90,
 		["mapID"] = 471,
 		["maps"] = { 472, 473 },	-- 2nd LFR Wing
-		["coord"] = { 59.6, 39.1, 379 },	-- Kun-Lai Summit (Mogu'shan Terrace)
+		["coord"] = { 59.6, 39.1, KUN_LAI_SUMMIT },	-- Mogu'shan Terrace
 		["groups"] = {
 			d(7, {	-- LFR
 				["description"] = "Speak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from the Elegon chest is NOT tradeable to others in group.",

@@ -1273,24 +1273,24 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { KRASARANG_WILDS },
 						}),
 						crit(12, {	-- Kun-Lai Summit, Binan Village
-							["coord"] = { 72.7, 92.2, 379 },
-							["maps"] = { 379 },	-- Kun-Lai Summit
+							["coord"] = { 72.7, 92.2, KUN_LAI_SUMMIT },
+							["maps"] = { KUN_LAI_SUMMIT },
 						}),
 						crit(13, {	-- Kun-Lai Summit, The Grummle Bazaar
-							["coord"] = { 57.4, 59.9, 379 },
-							["maps"] = { 379 },	-- Kun-Lai Summit
+							["coord"] = { 57.4, 59.9, KUN_LAI_SUMMIT },
+							["maps"] = { KUN_LAI_SUMMIT },
 						}),
 						crit(14, {	-- Kun-Lai Summit, One Keg
-							["coord"] = { 64.2, 61.2, 379 },
-							["maps"] = { 379 },	-- Kun-Lai Summit
+							["coord"] = { 64.2, 61.2, KUN_LAI_SUMMIT },
+							["maps"] = { KUN_LAI_SUMMIT },
 						}),
 						crit(15, {	-- Kun-Lai Summit, Westwind Rest
-							["coord"] = { 54.1, 82.8, 379 },
-							["maps"] = { 379 },	-- Kun-Lai Summit
+							["coord"] = { 54.1, 82.8, KUN_LAI_SUMMIT },
+							["maps"] = { KUN_LAI_SUMMIT },
 						}),
 						crit(16, {	-- Kun-Lai Summit, Zouchin Village
-							["coord"] = { 62.3, 29.0, 379 },
-							["maps"] = { 379 },	-- Kun-Lai Summit
+							["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
+							["maps"] = { KUN_LAI_SUMMIT },
 						}),
 						crit(17, {	-- The Veiled Stair, Tavern in the Mists
 							["coord"] = { 54.9, 72.3, 433 },
@@ -1374,24 +1374,24 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { KRASARANG_WILDS },
 						}),
 						crit(14, {	-- Kun-Lai Summit, Binan Village
-							["coord"] = { 72.7, 92.2, 379 },
-							["maps"] = { 379 },	-- Kun-Lai Summit
+							["coord"] = { 72.7, 92.2, KUN_LAI_SUMMIT },
+							["maps"] = { KUN_LAI_SUMMIT },
 						}),
 						crit(15, {	-- Kun-Lai Summit, Eastwind Rest
-							["coord"] = { 62.7, 80.5, 379 },
-							["maps"] = { 379 },	-- Kun-Lai Summit
+							["coord"] = { 62.7, 80.5, KUN_LAI_SUMMIT },
+							["maps"] = { KUN_LAI_SUMMIT },
 						}),
 						crit(16, {	-- Kun-Lai Summit, The Grummle Bazaar
-							["coord"] = { 57.4, 59.9, 379 },
-							["maps"] = { 379 },	-- Kun-Lai Summit
+							["coord"] = { 57.4, 59.9, KUN_LAI_SUMMIT },
+							["maps"] = { KUN_LAI_SUMMIT },
 						}),
 						crit(17, {	-- Kun-Lai Summit, One Keg
-							["coord"] = { 64.2, 61.2, 379 },
-							["maps"] = { 379 },	-- Kun-Lai Summit
+							["coord"] = { 64.2, 61.2, KUN_LAI_SUMMIT },
+							["maps"] = { KUN_LAI_SUMMIT },
 						}),
 						crit(18, {	-- Kun-Lai Summit, Zouchin Village
-							["coord"] = { 62.3, 29.0, 379 },
-							["maps"] = { 379 },	-- Kun-Lai Summit
+							["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
+							["maps"] = { KUN_LAI_SUMMIT },
 						}),
 						crit(19, {	-- The Veiled Stair, Tavern in the Mists
 							["coord"] = { 54.9, 72.3, 433 },

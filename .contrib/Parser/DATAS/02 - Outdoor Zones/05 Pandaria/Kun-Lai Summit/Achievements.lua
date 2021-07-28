@@ -5,18 +5,18 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(379, {	-- Kun-Lai Summit
+		m(KUN_LAI_SUMMIT, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(11, {	-- Courageous Yon
-							["coord"] = { 35.8, 73.6, 379 },
+							["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
 							["cr"] = 66738,	-- Courageous Yon <Grand Master Pet Tamer>
 						}),
 						crit(39, {	-- Thundering Pandaren Spirit
-							["coord"] = { 64.8, 93.6, 379 },
+							["coord"] = { 64.8, 93.6, KUN_LAI_SUMMIT },
 							["cr"] = 68465,	-- Thundering Pandaren Spirit <Grand Master Pet Tamer>
 						}),
 					},
@@ -27,7 +27,7 @@ _.Zones =
 						crit(2, {	-- The Defiant
 							["description"] = "At the north end of the circular room at the back of the cave.",
 							["coords"] = {
-								{ 73.2, 94.6, 379 },	-- entrance
+								{ 73.2, 94.6, KUN_LAI_SUMMIT },	-- entrance
 								{ 54.9, 16.9, 434 },	-- actual object
 							},
 						}),
@@ -52,7 +52,7 @@ _.Zones =
 						o(213768, {	-- Hozen Warrior Spear
 							["description"] = "Cave entrance is at |cFFFFD70052.8 71.3|r, go down and to the section with water, it is in a rock. Might take some time to spawn.",
 							["questID"] = 31413,
-							["coord"] = { 51.50, 74.0, 379 },
+							["coord"] = { 51.5, 74.0, KUN_LAI_SUMMIT },
 							["g"] = {
 								i(86394),	-- Hozen Warrior Spear
 							},
@@ -80,8 +80,8 @@ _.Zones =
 							["modelScale"] = 3.2,
 							["questID"] = 31421,
 							["coords"] = {
-								{ 70.1, 63.9, 379 },
-								{ 71.1, 62.6, 379 },
+								{ 70.1, 63.9, KUN_LAI_SUMMIT },
+								{ 71.1, 62.6, KUN_LAI_SUMMIT },
 							},
 							["model"] = 593274,
 							["icon"] = "Interface\\Icons\\inv_misc_ornatebox",
@@ -103,29 +103,29 @@ _.Zones =
 						o(214438, {	-- Ancient Mogu Tablet
 							["description"] = "Entrance is at |cFFFFD70063.94 49.84|r.",
 							["questID"] = 31420,
-							["coord"] = { 64.2, 45.2, 379 },
+							["coord"] = { 64.2, 45.2, KUN_LAI_SUMMIT },
 							["g"] = {
 								i(86471),	-- Ancient Mogu Tablet
 							},
 						}),
 						o(213769, {	-- Hozen Treasure Cache
 							["questID"] = 31414,	-- Hozen Treasure Cache
-							["coord"] = { 49.5, 59.4, 379 },
+							["coord"] = { 49.5, 59.4, KUN_LAI_SUMMIT },
 						}),
 						o(213774, {	-- Lost Adventurer's Belongings
 							["questID"] = 31418,	-- Lost Adventurer's Belongings
-							["coord"] = { 36.7, 79.8, 379 },
+							["coord"] = { 36.7, 79.8, KUN_LAI_SUMMIT },
 						}),
 						o(213793, {	-- Rikktik's Tiny Chest
 							["questID"] = 31419,
-							["coord"] = { 52.5, 51.5, 379 },
+							["coord"] = { 52.5, 51.5, KUN_LAI_SUMMIT },
 							["g"] = {
 								i(86430),	-- Rikktik's Tiny Chest
 							},
 						}),
 						o(213771, {	-- Statue of Xuen
 							["questID"] = 31416,	-- Statue of Xuen
-							["coord"] = { 72.0, 33.9, 379 },
+							["coord"] = { 72.0, 33.9, KUN_LAI_SUMMIT },
 						}),
 						o(213770, {	-- Stolen Sprite Treasure
 							["description"] = "Entrance is at |cFFFFD70059.5 52.9|r.",
@@ -134,7 +134,7 @@ _.Zones =
 						}),
 						o(213782, {	-- Terracotta Head
 							["questID"] = 31422,
-							["coord"] = { 59.2, 73.0, 379 },
+							["coord"] = { 59.2, 73.0, KUN_LAI_SUMMIT },
 							["g"] = {
 								i(86427),	-- Terracotta Head
 							},
@@ -225,7 +225,7 @@ _.Zones =
 				}),
 				ach(6754, {	-- The Dark Heart of the Mogu
 					crit(1, {	-- Valley of the Emperors (Kun-Lai Summit)
-						["coord"] = { 53.0, 46.58, 379 },
+						["coord"] = { 53.0, 46.58, KUN_LAI_SUMMIT },
 						["description"] = "The scroll is in the first big room."
 					}),
 				}),

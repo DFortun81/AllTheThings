@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(379, {	-- Kun-Lai Summit
+		m(KUN_LAI_SUMMIT, {
 			n(RARES, {
 				n(50817, {	-- Ahone the Wanderer
-					["coord"] = { 40.8, 42.5, 379 },
+					["coord"] = { 40.8, 42.5, KUN_LAI_SUMMIT },
 					["g"] = {
 						i(87614),	-- Kafa Picker's Bracers
 						i(87619),	-- Terracotta Guardian's Bracer
@@ -26,7 +26,7 @@ _.Zones =
 					},
 				}),
 				n(50341, {	-- Borginn Darkfist
-					["coord"] = { 55.7, 43.4, 379 },
+					["coord"] = { 55.7, 43.4, KUN_LAI_SUMMIT },
 					["g"] = {
 						i(87617),	-- Bracers of the Serene Mountaintop
 						i(86570),	-- Crate of Kidnapped Puppies
@@ -45,9 +45,9 @@ _.Zones =
 				}),
 				n(50354, {	-- Havak
 					["coords"] = {
-						{ 59.3, 73.7, 379 },
-						{ 57.5, 74.7, 379 },
-						{ 57.0, 76.0, 379 },
+						{ 59.3, 73.7, KUN_LAI_SUMMIT },
+						{ 57.5, 74.7, KUN_LAI_SUMMIT },
+						{ 57.0, 76.0, KUN_LAI_SUMMIT },
 					},
 					["g"] = {
 						i(86573),	-- Shard of Archstone
@@ -67,10 +67,10 @@ _.Zones =
 				}),
 				n(66933, {	-- Kishak
 					["coords"] = {
-						{ 45.60, 19.61, 379 },
-						{ 42.58, 22.98, 379 },
-						{ 54.32, 21.65, 379 },
-						{ 49.38, 18.54, 379 },
+						{ 45.60, 19.61, KUN_LAI_SUMMIT },
+						{ 42.58, 22.98, KUN_LAI_SUMMIT },
+						{ 54.32, 21.65, KUN_LAI_SUMMIT },
+						{ 49.38, 18.54, KUN_LAI_SUMMIT },
 					},
 					["g"] = {
 						i(90168, {	-- Kishak's Clamshell
@@ -81,10 +81,10 @@ _.Zones =
 				}),
 				n(50332, {	-- Korda Torros
 					["coords"] = {
-						{ 47.89, 81.24, 379 },
-						{ 49.23, 80.59, 379 },
-						{ 51.60, 80.80, 379 },
-						{ 51.23, 79.59, 379 },
+						{ 47.89, 81.24, KUN_LAI_SUMMIT },
+						{ 49.23, 80.59, KUN_LAI_SUMMIT },
+						{ 51.60, 80.80, KUN_LAI_SUMMIT },
+						{ 51.23, 79.59, KUN_LAI_SUMMIT },
 					},
 					["g"] = {
 						i(87620),	-- Bracers of the Frozen Summit
@@ -115,7 +115,7 @@ _.Zones =
 					}),
 				}),
 				n(50789, {	-- Nessos the Oracle
-					["coord"] = { 63.8, 13.7, 379 },
+					["coord"] = { 63.8, 13.7, KUN_LAI_SUMMIT },
 					["g"] = {
 						i(86584, {	-- Hardened Shell
 							crit(9, {	-- Hardened Shell
@@ -138,10 +138,10 @@ _.Zones =
 				}),
 				n(50831, {	-- Scritch
 					["coords"] = {
-						{ 44.8, 65.2, 379 },
-						{ 44.8, 63.6, 379 },
-						{ 47.2, 63.0, 379 },
-						{ 46.2, 61.5, 379 },
+						{ 44.8, 65.2, KUN_LAI_SUMMIT },
+						{ 44.8, 63.6, KUN_LAI_SUMMIT },
+						{ 47.2, 63.0, KUN_LAI_SUMMIT },
+						{ 46.2, 61.5, KUN_LAI_SUMMIT },
 					},
 					["g"] = {
 						i(87615),	-- Yakwasher's Bracers
@@ -159,7 +159,7 @@ _.Zones =
 					},
 				}),
 				n(50733, {	-- Ski'thik
-					["coord"] = { 36.71, 79.76, 379 },
+					["coord"] = { 36.71, 79.76, KUN_LAI_SUMMIT },
 					["g"] = {
 						i(86577),	-- Rod of Ambershaping
 						i(87613),	-- Frozen Zandalari Bracer
@@ -178,9 +178,9 @@ _.Zones =
 				}),
 				n(50769, {	-- Zai the Outcast
 					["coords"] = {
-						{ 73.35, 76.31, 379 },
-						{ 74.41, 79.34, 379 },
-						{ 73.86, 77.21, 379 },
+						{ 73.35, 76.31, KUN_LAI_SUMMIT },
+						{ 74.41, 79.34, KUN_LAI_SUMMIT },
+						{ 73.86, 77.21, KUN_LAI_SUMMIT },
 					},
 					["g"] = {
 						i(86581),	-- Farwater Conch
@@ -201,7 +201,7 @@ _.Zones =
 				n(69841, {	-- Zandalari Warbringer (Amber)
 					["coords"] = {
 						{ 47.42, 61.54, 422 },	-- Dread Wastes
-						{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
+						{ 75.11, 67.47, KUN_LAI_SUMMIT },
 						{ 52.56, 18.85, THE_JADE_FOREST },
 						{ 36.58, 85.67, 388 },	-- Townlong Steppes
 					},
@@ -212,7 +212,7 @@ _.Zones =
 				n(69842, {	-- Zandalari Warbringer (Jade)
 					["coords"] = {
 						{ 47.42, 61.54, 422 },	-- Dread Wastes
-						{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
+						{ 75.11, 67.47, KUN_LAI_SUMMIT },
 						{ 52.56, 18.85, THE_JADE_FOREST },
 						{ 36.58, 85.67, 388 },	-- Townlong Steppes
 					},
@@ -224,7 +224,7 @@ _.Zones =
 					["coords"] = {
 						{ 47.42, 61.54, 422 },	-- Dread Wastes
 						{ 39.83, 65.92, KRASARANG_WILDS },
-						{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
+						{ 75.11, 67.47, KUN_LAI_SUMMIT },
 						{ 52.56, 18.85, THE_JADE_FOREST },
 						{ 36.58, 85.67, 388 },	-- Townlong Steppes
 					},

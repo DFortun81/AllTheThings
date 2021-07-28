@@ -367,8 +367,8 @@ _.Achievements =
 				crit(4),	-- The Pandaren Problem
 			}),
 			ach(6754, {	-- The Dark Heart of the Mogu
-				crit(1, {	-- Valley of the Emperors (Kun-Lai Summit)
-					["coord"] = { 53.0, 46.58, 379 },
+				crit(1, {	-- Valley of the Emperors
+					["coord"] = { 53.0, 46.58, KUN_LAI_SUMMIT },
 					["description"] = "The scroll is in the first big room."
 				}),
 				crit(2, {	-- The Lost Dynasty

@@ -11,7 +11,7 @@ _.Zones =
 				507,	-- Isle of Giants
 				504,	-- Isle of Thunder
 				KRASARANG_WILDS,
-				379,	-- Kun-Lai Summit
+				KUN_LAI_SUMMIT,
 				THE_JADE_FOREST,
 				433,	-- The Veiled Stair
 				554,	-- Timeless Isle

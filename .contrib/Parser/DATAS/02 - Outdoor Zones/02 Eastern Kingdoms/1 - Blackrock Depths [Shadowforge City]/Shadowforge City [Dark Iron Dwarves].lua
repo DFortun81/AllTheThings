@@ -130,10 +130,10 @@ _.Zones =
 					["g"] = {
 						q(53595, {	-- One Keg
 							["name"] = "One Keg",
-							["coord"] = { 57.68, 62.81, 379 },
+							["coord"] = { 57.68, 62.81, KUN_LAI_SUMMIT },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 379 },	-- Kun-Lai Summit
+							["maps"] = { KUN_LAI_SUMMIT },
 						}),
 						q(53598, {	-- Stormstout Brewery
 							["name"] = "Stormstout Brewery",

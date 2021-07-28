@@ -14,7 +14,7 @@ _.Secrets =
 			SHATTRATH_CITY,
 			115,
 			MOUNT_HYJAL,
-			379,
+			KUN_LAI_SUMMIT,
 			390,
 			DRAENOR_SHADOWMOON_VALLEY,
 			627,
@@ -138,7 +138,7 @@ _.Secrets =
 					q(50145, {	-- Step 6: Kun-Lai Summit
 						["sourceQuests"] = { 50144 },	-- Step 5: Mount Hyjal
 						["name"] = "Step 6: Kun-Lai Summit",
-						["coord"] = { 44.8, 52.3, 379 },
+						["coord"] = { 44.8, 52.3, KUN_LAI_SUMMIT },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50146, {	-- Step 7: Blackrock Mountain

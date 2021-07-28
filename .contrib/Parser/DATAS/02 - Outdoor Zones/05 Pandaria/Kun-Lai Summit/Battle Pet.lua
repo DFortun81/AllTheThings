@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(379, {	-- Kun-Lai Summit
+		m(KUN_LAI_SUMMIT, {
 			f(101, {	-- Pet Battle
 				p(724, {	-- Alpine Foxling
 					["crs"] = { 63550 },	-- Alpine Foxling
@@ -41,11 +41,11 @@ _.Zones =
 					["crs"] = { 63555 },	-- Zooey Snake
 				}),
 				n(68563, {	-- Kafi
-					["coord"] = { 35.2, 56.2, 379 },
+					["coord"] = { 35.2, 56.2, KUN_LAI_SUMMIT },
 					["description"] = "This pet is needed for |cFFFFD700Beasts of Fable|r quests.",
 				}),
 				q(31956, {	-- Grand Master Yon
-					["coord"] = { 35.8, 73.6, 379 },
+					["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
 					["isDaily"] = true,
 					["provider"] = { "n", 66738 },	-- Courageous Yon
 					["g"] = {
@@ -56,7 +56,7 @@ _.Zones =
 					["timeline"] = { "added 9.1.0.39226" },
 					["provider"] = { "n", 176655 },	-- Anthea <Carefree Pet Tamer>
 					["isDaily"] = true,
-					["coord"] = { 70.4, 51.4, 379 },
+					["coord"] = { 70.4, 51.4, KUN_LAI_SUMMIT },
 					["g"] = {
 						i(184866, {	-- Grummlepouch
 							i(184867),	-- Squibbles (PET!)
@@ -64,7 +64,7 @@ _.Zones =
 					},
 				}),
 				q(32441, {	-- Thundering Pandaren Spirit
-					["coord"] = { 64.9, 93.8, 379 },
+					["coord"] = { 64.9, 93.8, KUN_LAI_SUMMIT },
 					["isDaily"] = true,
 					["provider"] = { "n", 68465 },	-- Thundering Pandaren Spirit
 					["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer

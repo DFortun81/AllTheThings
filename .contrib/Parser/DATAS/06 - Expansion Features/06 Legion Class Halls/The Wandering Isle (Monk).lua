@@ -210,7 +210,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46346 },	-- The Shadow of Ban-Lu
 						["provider"] = { "n", 120722 },	-- Master Bu
 						["classes"] = { MONK },
-						["coord"] = { 36.5, 48.2, 379 },	-- Kun-Lai Summit
+						["coord"] = { 36.5, 48.2, KUN_LAI_SUMMIT },
 					}),
 					q(41730, {	-- Desperate Strike
 						["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
@@ -340,7 +340,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46348 },	-- The River to Ban-Lu
 						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["classes"] = { MONK },
-						["coord"] = { 74.4, 88.7, 379 },	-- Kun-Lai Summit
+						["coord"] = { 74.4, 88.7, KUN_LAI_SUMMIT },
 					}),
 					q(43151, {	-- Making a Trade
 						["sourceQuests"] = { 41911 },	-- Amaranthine Hops (technically part of this quest)
@@ -463,7 +463,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
 						["provider"] = { "n", 120744 },	-- Smelly Mountaintop
 						["classes"] = { MONK },
-						["coord"] = { 47.9, 49.0, 379 },	-- Kun-Lai Summit
+						["coord"] = { 47.9, 49.0, KUN_LAI_SUMMIT },
 					}),
 					q(43058, {	-- Spiced Rib Roast
 					--	repeatable quest during "An Ample Stockpile"
@@ -618,13 +618,13 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46347 },	-- Clean-up on Aisle Sha
 						["provider"] = { "n", 120722 },	-- Master Bu
 						["classes"] = { MONK },
-						["coord"] = { 36.5, 48.3, 379 },	-- Kun-Lai Summit
+						["coord"] = { 36.5, 48.3, KUN_LAI_SUMMIT },
 					}),
 					q(46346, {	-- The Shadow of Ban-Lu
 						["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
 						["provider"] = { "n", 120722 },	-- Master Bu
 						["classes"] = { MONK },
-						["coord"] = { 47.9, 48.8, 379 },	-- Kun-Lai Summit
+						["coord"] = { 47.9, 48.8, KUN_LAI_SUMMIT },
 					}),
 					q(46341, {	-- The Tale of Ban-Lu
 						["sourceQuests"] = { 46353 },	-- Master Who?
@@ -636,7 +636,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46342 },	-- Return ot the Broken Peak
 						["provider"] = { "n", 120722 },	-- Master Bu
 						["classes"] = { MONK },
-						["coord"] = { 47.3, 41.7, 379 },	-- Kun-Lai Summit
+						["coord"] = { 47.3, 41.7, KUN_LAI_SUMMIT },
 					}),
 					q(42765, {	-- The Trial at the Temple
 						["sourceQuests"] = { 42868 },	-- The Monkey King's Challenge
@@ -656,7 +656,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46349 },	-- Lilies for Ryuli
 						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["classes"] = { MONK },
-						["coord"] = { 73.9, 88.9, 379 },	-- Kun-Lai Summit
+						["coord"] = { 73.9, 88.9, KUN_LAI_SUMMIT },
 						["g"] = {
 							i(142225),	-- Ban-Lu, Grandmaster's Companion (MOUNT!)
 						},

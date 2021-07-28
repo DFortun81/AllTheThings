@@ -136,7 +136,7 @@ _.Zones =
 							q(32191, {	-- Ancient Guardians
 								["sourceQuests"] = { 32190 },	-- To Mogujia
 								["provider"] = { "n", 67603 },	-- Fanlyr Silverthorn
-								["coord"] = { 57.1, 78.6, 379 },
+								["coord"] = { 57.1, 78.6, KUN_LAI_SUMMIT },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32167, {	-- Ancient's Fall
@@ -206,13 +206,13 @@ _.Zones =
 							q(32192, {	-- Bloodlines
 								["sourceQuests"] = { 32190 },	-- To Mogujia
 								["provider"] = { "n", 67581 },	-- Lor'themar Theron
-								["coord"] = { 57.1, 78.9, 379 },
+								["coord"] = { 57.1, 78.9, KUN_LAI_SUMMIT },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32399, {	-- Breath of Darkest Shadow (H)
 								["sourceQuests"] = { 32398 },	-- The Bell Speaks
 								["provider"] = { "n", 67844 },	-- Malkorok
-								["coord"] = { 55.9, 33.9, 379 },
+								["coord"] = { 55.9, 33.9, KUN_LAI_SUMMIT },
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									i(93386),	-- Grand Wyvern (MOUNT!)
@@ -234,7 +234,7 @@ _.Zones =
 							q(32378, {	-- Clearing a Path
 								["sourceQuests"] = { 32376 },	-- To the Valley!
 								["provider"] = { "n", 68370 },	-- Lor'themar Theron
-								["coord"] = { 53.8, 49.1, 379 },
+								["coord"] = { 53.8, 49.1, KUN_LAI_SUMMIT },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32251, {	-- Dagger in the Dark
@@ -284,7 +284,7 @@ _.Zones =
 							q(32319, {	-- Find Thrall!
 								["sourceQuests"] = { 32318 },	-- Regeneration Takes Time
 								["provider"] = { "n", 68023 },	-- Vol'jin
-								["coord"] = { 71.6, 93.1, 379 },
+								["coord"] = { 71.6, 93.1, KUN_LAI_SUMMIT },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32235, {	-- Flash! Aaaaaahhhh!
@@ -371,13 +371,13 @@ _.Zones =
 							q(32379, {	-- Legacy of the Korune
 								["sourceQuests"] = { 32376 },	-- To the Valley!
 								["provider"] = { "n", 68370 },	-- Lor'themar Theron
-								["coord"] = { 53.8, 49.1, 379 },
+								["coord"] = { 53.8, 49.1, KUN_LAI_SUMMIT },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32368, {	-- Memory Wine
 								["sourceQuests"] = { 32448 },	-- Ties with the Past
 								["provider"] = { "n", 68287 },	-- Baine Bloodhoof
-								["coord"] = { 60.3, 55.2, 379 },
+								["coord"] = { 60.3, 55.2, KUN_LAI_SUMMIT },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32197, {	-- Mystery Meatloaf
@@ -417,7 +417,7 @@ _.Zones =
 							q(32318, {	-- Regeneration Takes Time
 								["sourceQuests"] = { 32284 },	-- Someone You Should See
 								["provider"] = { "n", 67866 },	-- Chen Stormstout
-								["coord"] = { 71.6, 93.1, 379 },
+								["coord"] = { 71.6, 93.1, KUN_LAI_SUMMIT },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32256, {	-- Rise Of An Empire
@@ -478,7 +478,7 @@ _.Zones =
 							q(32392, {	-- The Divine Bell
 								["sourceQuests"] = { 32391 },	-- The Ruins of Korune
 								["provider"] = { "n", 68337 },	-- Ishi
-								["coord"] = { 32.9, 26.3, 379 },
+								["coord"] = { 32.9, 26.3, KUN_LAI_SUMMIT },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32320, {	-- The Horde Is Family
@@ -490,7 +490,7 @@ _.Zones =
 							q(32244, {	-- The Korune
 								["sourceQuests"] = { 32190 },	-- To Mogujia
 								["provider"] = { "n", 67603 },	-- Fanlyr Silverthorn
-								["coord"] = { 57.1, 78.6, 379 },
+								["coord"] = { 57.1, 78.6, KUN_LAI_SUMMIT },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32363, {	-- The Kun-Lai Expedition
@@ -569,7 +569,7 @@ _.Zones =
 							q(32448, {	-- Ties with the Past
 								["sourceQuests"] = { 32363 },	-- The Kun-Lai Expedition
 								["provider"] = { "n", 68267 },	-- Baine Bloodhoof
-								["coord"] = { 60.3, 55.2, 379 },
+								["coord"] = { 60.3, 55.2, KUN_LAI_SUMMIT },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32190, {	-- To Mogujia
@@ -596,7 +596,7 @@ _.Zones =
 									32379,	-- Legacy of the Korune
 								},
 								["provider"] = { "n", 68370 },	-- Lor'themar Theron
-								["coord"] = { 53.8, 49.1, 379 },
+								["coord"] = { 53.8, 49.1, KUN_LAI_SUMMIT },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32328, {	-- Victorious Return
@@ -832,7 +832,7 @@ _.Zones =
 							q(32377, {	-- A Kor'kron In Our Midst
 								["sourceQuests"] = { 32370 },	-- The Kun-Lai Expedition
 								["provider"] = { "n", 68375 },	-- Agent Connelly
-								["coord"] = { 65.1, 60.8, 379 },	-- Kun-Lai Summit
+								["coord"] = { 65.1, 60.8, KUN_LAI_SUMMIT },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32248, {	-- A Little Patience
@@ -878,7 +878,7 @@ _.Zones =
 							q(32194, {	-- Bad Blood
 								["sourceQuests"] = { 32193 },	-- To Mogujia
 								["provider"] = { "n", 67734 },	-- Sarannha Skyglaive
-								["coord"] = { 59.9, 75.4, 379 },
+								["coord"] = { 59.9, 75.4, KUN_LAI_SUMMIT },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32166, {	-- Beastmaster's Hunt: The Crab
@@ -923,13 +923,13 @@ _.Zones =
 							q(32401, {	-- Breath of Darkest Shadow
 								["sourceQuests"] = { 32400 },	-- The Bell Speaks
 								["provider"] = { "n", 68939 },	-- Anduin Wrynn
-								["coord"] = { 56.3, 34.2, 379 },
+								["coord"] = { 56.3, 34.2, KUN_LAI_SUMMIT },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32383, {	-- Bugging Out
 								["sourceQuests"] = { 32382 },	-- He's In Deep
 								["provider"] = { "n", 68417 },	-- Cousin Goottooth
-								["coord"] = { 59.2, 84.3, 379 },
+								["coord"] = { 59.2, 84.3, KUN_LAI_SUMMIT },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32154, {	-- Burn Out!
@@ -997,7 +997,7 @@ _.Zones =
 							q(32397, {	-- He Won't Even Miss It
 								["sourceQuests"] = { 32382 },	-- He's In Deep
 								["provider"] = { "n", 68417 },	-- Cousin Goottooth
-								["coord"] = { 59.2, 84.3, 379 },
+								["coord"] = { 59.2, 84.3, KUN_LAI_SUMMIT },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32316, {	-- Heart Of The Alliance
@@ -1041,7 +1041,7 @@ _.Zones =
 							q(32371, {	-- Memory Wine
 								["sourceQuests"] = { 32377 },	-- A Kor'kron in Our Midst
 								["provider"] = { "n", 68375 },	-- Agent Connelly
-								["coord"] = { 65.1, 60.8, 379 },	-- Kun-Lai Summit
+								["coord"] = { 65.1, 60.8, KUN_LAI_SUMMIT },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32122, {	-- Ogudei's Lieutenants
@@ -1145,7 +1145,7 @@ _.Zones =
 							q(32394, {	-- The Divine Bell
 								["sourceQuests"] = { 32393 },	-- The Ruins of Korune
 								["provider"] = { "n", 67734 },	-- Sarannha Skyglaive
-								["coord"] = { 32.8, 26.1, 379 },
+								["coord"] = { 32.8, 26.1, KUN_LAI_SUMMIT },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32362, {	-- The Fate of Dalaran
@@ -1157,7 +1157,7 @@ _.Zones =
 							q(32332, {	-- The First Riddle: Mercy
 								["sourceQuests"] = { 32321 },	-- The Monkey King
 								["provider"] = { "n", 68003 },	-- The Monkey King
-								["coord"] = { 48.8, 50.3, 379 },
+								["coord"] = { 48.8, 50.3, KUN_LAI_SUMMIT },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32335, {	-- The Greatest Prank
@@ -1218,7 +1218,7 @@ _.Zones =
 							q(32321, {	-- The Monkey King
 								["sourceQuests"] = { 32355 },	-- The Harmonic Mallet
 								["provider"] = { "n", 68004 },	-- Anduin Wrynn
-								["coord"] = { 53.0, 46.4, 379 },
+								["coord"] = { 53.0, 46.4, KUN_LAI_SUMMIT },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32157, {	-- The Only Good Goblin...
@@ -1238,13 +1238,13 @@ _.Zones =
 							q(32333, {	-- The Second Riddle: Fellowship
 								["sourceQuests"] = { 32321 },	-- The Monkey King
 								["provider"] = { "n", 68003 },	-- The Monkey King
-								["coord"] = { 48.8, 50.3, 379 },
+								["coord"] = { 48.8, 50.3, KUN_LAI_SUMMIT },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32455, {	-- The Silence
 								["sourceQuests"] = { 32401 },	-- Breath of Darkest Shadow
 								["provider"] = { "n", 68987 },	-- Anduin Wrynn
-								["coord"] = { 55.9, 31.9, 379 },
+								["coord"] = { 55.9, 31.9, KUN_LAI_SUMMIT },
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(93385),	-- Grand Gryphon (MOUNT!)
@@ -1253,7 +1253,7 @@ _.Zones =
 							q(32243, {	-- The Source of Korune Power
 								["sourceQuests"] = { 32193 },	-- To Mogujia
 								["provider"] = { "n", 67716 },	-- Hilda Hornswaggle
-								["coord"] = { 59.8, 76.0, 379 },
+								["coord"] = { 59.8, 76.0, KUN_LAI_SUMMIT },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32121, {	-- The Spirit Trap
@@ -1266,7 +1266,7 @@ _.Zones =
 							q(32334, {	-- The Third Riddle: Strength
 								["sourceQuests"] = { 32321 },	-- The Monkey King
 								["provider"] = { "n", 68003 },	-- The Monkey King
-								["coord"] = { 48.8, 50.3, 379 },
+								["coord"] = { 48.8, 50.3, KUN_LAI_SUMMIT },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32381, {	-- To Catch a Spy

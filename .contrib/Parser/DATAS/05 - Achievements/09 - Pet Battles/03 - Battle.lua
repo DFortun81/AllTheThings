@@ -79,8 +79,8 @@ _.Achievements =
 				crit(10, {	-- Christoph VonFeasel (Darkmoon Island)
 					["coord"] = { 47.4, 62.2, 407 },
 				}),
-				crit(11, {	-- Courageous Yon (Kun-Lai Summit)
-					["coord"] = { 35.8, 73.6, 379 },
+				crit(11, {	-- Courageous Yon
+					["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
 				}),
 				crit(12, {	-- Cymre Brightblade
 					["coord"] = { 51.0, 70.6, GORGROND },
@@ -163,8 +163,8 @@ _.Achievements =
 				crit(38, {	-- Tarr the Terrible
 					["coord"] = { 56.2, 9.80, DRAENOR_NAGRAND },
 				}),
-				crit(39, {	-- Thundering Pandaren Spirit  (Kun-Lai Summit)
-					["coord"] = { 64.8, 93.6, 379 },
+				crit(39, {	-- Thundering Pandaren Spirit
+					["coord"] = { 64.8, 93.6, KUN_LAI_SUMMIT },
 				}),
 				crit(40, {	-- Vesharr
 					["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },

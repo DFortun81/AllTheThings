@@ -13,7 +13,7 @@ _.Secrets =
 			DEADWIND_PASS, 41, 43, 44, 45, 46,						-- Deadwind Pass
 			207,													-- Deepholm
 			226, 227, 228, 229,										-- Gnomeregan
-			379, 380, 381, 382, 383, 384, 385, 386, 387, 421, 434,	-- Kun-Lai Summit
+			KUN_LAI_SUMMIT, 380, 381, 382, 383, 384, 385, 386, 387, 421, 434,	-- Kun-Lai Summit
 			319, 320, 321,											-- Temple of Ahn'Qiraj
 			148, 149, 150, 151, 152,								-- Ulduar
 			641, 642, 643, 644, 758, 868,							-- Val'sharah
@@ -81,7 +81,7 @@ _.Secrets =
 			o(272220, {	-- Step 9: Inconspicuous Note
 				["model"] = 1661948,
 				["questID"] = 47881,
-				["coord"] = { 53.4, 49.0, 379 },	-- Kun-Lai Summit
+				["coord"] = { 53.4, 49.0, KUN_LAI_SUMMIT },
 				["sourceQuest"] = 47863,	-- Step 8: Inconspicuous Note
 				["description"] = "|cFFFFFFFFStep 9:|r This step requires visiting |cFFFFD700Kun-Lai Summit|r.  Head to |cFFFFFFFF53.4, 49.0|r.  This is the entrance to the |cFFFFD700Tomb of Secrets|r.  At the very back of the tomb, there will be an |cFFFFD700Urn|r at the base of a tall Mogu statue.  Click it.\r\r|cffcc33ffWARNING: You are about to consume the ashes of an evil sorcerer.  There is no way to tell what will happen.  Are you VERY sure you want to do this?|r\n\nYou will be teleported to the |cFFFFD700Endless Halls|r where you will have to figure a way out. \r\r1. (Optional) Download the addon |cFFFFFFFFLucid Nightmare Helper|r, which will help you with the endless maze by generating a map of the rooms as you go and letting you notate special things in each one.\n2. Each room in the Endless Halls is identical, but some doorways will be blocked by stones. \r3. Each room has an altar in the middle.  The runes spawn on the altar and the orbs spawn on the torches to either side. \r4. Most rooms will have unlit torches and no rune. \r5. The goal is to find a colored orb and then take the orb to the corresponding rune. \r6. The colors are |cFFFFD700Red, Blue, Green, Yellow, and Purple|r. \r\r|cffcc33ffNotes:|r\n|cffcc33ff1. Do not try this close to server reset.  It could easily take a couple of hours to complete.\n|cffcc33ff2.If you are struggling with the maze and want to reset it, you need to leave the area for one hour.|r\n\nOnce you match all the orbs and runes, walk through any doorway.  In the next room, there will be another |cFFFFD700Inconspicuous Note|r on an altar.  Click it.  After you read it, turn around and walk up the stairs to exit the maze.  The note reads...\n\n|cFFFFFFFFThe way is now open.|r\n|cFFFFFFFFTo the greatest secret never told.|r\n|cFFFFFFFFA fitting end to your journey.|r\n",
 			}),

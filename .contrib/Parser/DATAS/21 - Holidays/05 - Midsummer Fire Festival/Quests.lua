@@ -2005,8 +2005,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(32500, {	-- Honor the Flame — Kun-Lai Summit
 			["provider"] = { "n", 69535 },	-- Kun-Lai Summit Flame Guardian
 			["isYearly"] = true,
-			["coord"] = { 71.1, 90.9, 379 },
-			["maps"] = { 379 },	-- Kun-Lai Summit
+			["coord"] = { 71.1, 90.9, KUN_LAI_SUMMIT },
+			["maps"] = { KUN_LAI_SUMMIT },
 		}),
 		q(44572, {	-- Honor the Flame — Nagrand (WoD)
 			["provider"] = { "n", 114490 },	-- Nagrand Flame Guardian

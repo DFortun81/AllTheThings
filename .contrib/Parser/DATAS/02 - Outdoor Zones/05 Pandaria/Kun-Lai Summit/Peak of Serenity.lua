@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(379, {	-- Kun-Lai Summit
+		m(KUN_LAI_SUMMIT, {
 			n(-362, {	-- Peak of Serenity
 				["description"] = "This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.|r",
 				["classes"] = { MONK },

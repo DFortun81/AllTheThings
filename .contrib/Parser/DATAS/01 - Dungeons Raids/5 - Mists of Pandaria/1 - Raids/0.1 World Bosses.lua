@@ -644,9 +644,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["isWeekly"] = true,
 				["questID"] = 32099,
 				["isRaid"] = true,
-				["coord"] = { 53.53, 65.26, 379 },
+				["coord"] = { 53.53, 65.26, KUN_LAI_SUMMIT },
 				["maps"] = {	-- all Kun-Lai Summit maps
-					379,	-- Kun-Lai Summit
+					KUN_LAI_SUMMIT,
 					380,	-- Howlingwind Cavern
 					381,	-- Pranksters' Hollow
 					382,	-- Knucklethump Hole

@@ -213,7 +213,7 @@ _.Zones =
 									q(53355, {	-- Echo of Garrosh Hellscream
 										["sourceQuests"] = { 53353 },	-- Echo of Warlord Zaela
 										["provider"] = { "n", 143692 },	-- Anachronos
-										["coord"] = { 68.8, 44.0, 379 },
+										["coord"] = { 68.8, 44.0, KUN_LAI_SUMMIT },
 										["races"] = HORDE_ONLY,
 									}),
 									q(52942, {	-- Restoring Old Bonds

@@ -62,7 +62,7 @@ _.Secrets =
 			o(19023, {	-- Step 7: Page 2351
 				["model"] = 305393,
 				["questID"] = 47212,
-				["coord"] = { 34.6, 50.9, 379 },
+				["coord"] = { 34.6, 50.9, KUN_LAI_SUMMIT },
 				["sourceQuest"] = 47211,	-- Step 6: Page 1127
 				["description"] = "|cFFFFFFFFStep 7:|r This step will take us to |cFFFFD700Kun-Lai Summit|r near the |cFFFFD700Shado-Pan Monastery|r.  Head to |cFFFFFFFF34.61, 50.88|r.  |cFFFFD700Page 2351|r will be between the statue's paws on the platform.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...bejeweled watcher...|r",
 				["isWeekly"] = true,

@@ -5,14 +5,14 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(379, {	-- Kun-Lai Summit
+		m(KUN_LAI_SUMMIT, {
 			n(VENDORS, {
 				n(65515, {	-- Acon Deathwielder (Removed Season 12 Elite Vendor)
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				n(75695, {	-- Acon Deathwielder
-					["coord"] = { 35.4, 83.2, 379 },
+					["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 					["races"] = HORDE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
@@ -851,7 +851,7 @@ _.Zones =
 					},
 				}),
 				n(75693, {	-- Doris Chiltonius Season 12: Malevolent Gladiator Vendor. Items are tagged as S13
-					["coord"] = { 35.4, 83.2, 379 },
+					["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 					["races"] = HORDE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
@@ -1855,7 +1855,7 @@ _.Zones =
 					},
 				}),
 				n(75690, {	-- Lok'nor Bloodfist <Dreadful Gladiator>
-					["coord"] = { 35.4, 83.2, 379 },
+					["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 					["races"] = HORDE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
@@ -2446,7 +2446,7 @@ _.Zones =
 					},
 				}),
 				n(75688, {	-- Roo Desvin S13 Tyrannical Vendor
-					["coord"] = { 35.4, 83.2, 379 },
+					["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 					["races"] = HORDE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
@@ -3267,7 +3267,7 @@ _.Zones =
 					},
 				}),
 				n(78461, {	-- Shonn Su (Prideful Gladiator Vendor)
-					["coord"] = { 35.4, 83.2, 379 },
+					["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 					["races"] = HORDE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
@@ -3949,7 +3949,7 @@ _.Zones =
 					},
 				}),
 				n(61749, {	-- The Metal Paw <Adventuring Supplies>
-					["coord"] = { 71.4, 92.1, 379 },
+					["coord"] = { 71.4, 92.1, KUN_LAI_SUMMIT },
 					["g"] = {
 						i(82690),	-- Mountainscaler Amulet
 						i(82685),	-- Mountainscaler Armored Bracers
@@ -4062,7 +4062,7 @@ _.Zones =
 					},
 				}),
 				n(64518, {	-- Uncle Bigpocket <Used Yak Salesgrummle>
-					["coord"] = { 65.4, 61.6, 379 },
+					["coord"] = { 65.4, 61.6, KUN_LAI_SUMMIT },
 					["g"] = {
 						i(87789, {	-- Reins of the Blonde Riding Yak Mount
 							["cost"] = 30000000,	-- 3,000g

@@ -522,8 +522,8 @@ _.Zones =
 							["sourceQuest"] = 56377,	-- Forging Onward
 						}),
 						q(56537, {	-- The Mysterious Sigil
-							["maps"] = { 379 },	-- Kun-lai Summit
-							["coord"] = { 59.6, 39.1, 379 },
+							["maps"] = { KUN_LAI_SUMMIT },
+							["coord"] = { 59.6, 39.1, KUN_LAI_SUMMIT },
 							["provider"] = { "n", 155336 },	-- Mogu Warrior
 							["sourceQuest"] = 56536,	-- It's Never Easy
 						}),

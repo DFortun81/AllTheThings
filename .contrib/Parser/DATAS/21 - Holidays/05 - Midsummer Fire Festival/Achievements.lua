@@ -580,9 +580,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { KRASARANG_WILDS },
 				}),
 				crit(4, {	-- Kun-Lai Summit
-					["coord"] = { 71.1, 90.9, 379 },
+					["coord"] = { 71.1, 90.9, KUN_LAI_SUMMIT },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 379 },	-- Kun-Lai Summit
+					["maps"] = { KUN_LAI_SUMMIT },
 				}),
 				crit(5, {	-- Townlong Steppes
 					["coord"] = { 71.5, 56.3, 388 },
@@ -1286,9 +1286,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { KRASARANG_WILDS },
 				}),
 				crit(4, {	-- Kun-Lai Summit
-					["coord"] = { 71.1, 90.9, 379 },
+					["coord"] = { 71.1, 90.9, KUN_LAI_SUMMIT },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 379 },	-- Kun-Lai Summit
+					["maps"] = { KUN_LAI_SUMMIT },
 				}),
 				crit(5, {	-- Townlong Steppes
 					["coord"] = { 71.5, 56.3, 388 },

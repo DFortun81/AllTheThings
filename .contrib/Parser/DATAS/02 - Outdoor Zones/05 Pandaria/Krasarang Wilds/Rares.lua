@@ -200,7 +200,7 @@ _.Zones =
 					["coords"] = {
 						{ 47.42, 61.54, 422 },	-- Dread Wastes
 						{ 39.83, 65.92, KRASARANG_WILDS },
-						{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
+						{ 75.11, 67.47, KUN_LAI_SUMMIT },
 						{ 52.56, 18.85, THE_JADE_FOREST },
 						{ 36.58, 85.67, 388 },	-- Townlong Steppes
 					},

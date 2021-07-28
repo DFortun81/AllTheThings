@@ -1124,50 +1124,50 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(32039, {	-- Candy Bucket — Kun-Lai Summit, Binan Village, neutral
 				["isYearly"] = true,
-				["coord"] = { 72.7, 92.2, 379 },
-				["maps"] = { 379 },	-- Kun-Lai Summit
+				["coord"] = { 72.7, 92.2, KUN_LAI_SUMMIT },
+				["maps"] = { KUN_LAI_SUMMIT },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32040, {	-- Candy Bucket — Kun-Lai Summit, Eastwind Rest, Horde
 				["isYearly"] = true,
-				["coord"] = { 62.7, 80.5, 379 },
+				["coord"] = { 62.7, 80.5, KUN_LAI_SUMMIT },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 379 },	-- Kun-Lai Summit
+				["maps"] = { KUN_LAI_SUMMIT },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32041, {	-- Candy Bucket — Kun-Lai Summit, Grummle Bazaar, neutral
 				["isYearly"] = true,
-				["coord"] = { 57.4, 59.9, 379 },
-				["maps"] = { 379 },	-- Kun-Lai Summit
+				["coord"] = { 57.4, 59.9, KUN_LAI_SUMMIT },
+				["maps"] = { KUN_LAI_SUMMIT },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32037, {	-- Candy Bucket — Kun-Lai Summit, One Keg, neutral
 				["isYearly"] = true,
-				["coord"] = { 64.2, 61.2, 379 },
-				["maps"] = { 379 },	-- Kun-Lai Summit
+				["coord"] = { 64.2, 61.2, KUN_LAI_SUMMIT },
+				["maps"] = { KUN_LAI_SUMMIT },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32042, {	-- Candy Bucket — Kun-Lai Summit, Westwind Rest, Alliance
 				["isYearly"] = true,
-				["coord"] = { 54.1, 82.8, 379 },
+				["coord"] = { 54.1, 82.8, KUN_LAI_SUMMIT },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 379 },	-- Kun-Lai Summit
+				["maps"] = { KUN_LAI_SUMMIT },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32051, {	-- Candy Bucket — Kun-Lai Summit, Zouchin Village, neutral
 				["isYearly"] = true,
-				["coord"] = { 62.3, 29.0, 379 },
-				["maps"] = { 379 },	-- Kun-Lai Summit
+				["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
+				["maps"] = { KUN_LAI_SUMMIT },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

@@ -26,7 +26,7 @@ _.Secrets =
 			121,
 			125,
 			TWILIGHT_HIGHLANDS,
-			379,
+			KUN_LAI_SUMMIT,
 			DRAENOR_SHADOWMOON_VALLEY,
 			SPIRES_OF_ARAK,
 		},
@@ -242,7 +242,7 @@ _.Secrets =
 				["questID"] = 52826,
 				["sourceQuests"] = { 52918 },
 				["description"] = "Kun-Lai Summit\n\n/dance",
-				["coord"] = { 44.4, 90.3, 379 },	-- Stained Mug <Innkeeper>
+				["coord"] = { 44.4, 90.3, KUN_LAI_SUMMIT },	-- Stained Mug <Innkeeper>
 			}),
 			n(138578, {	-- Grimmy Dialogue
 				["questID"] = 52919,
