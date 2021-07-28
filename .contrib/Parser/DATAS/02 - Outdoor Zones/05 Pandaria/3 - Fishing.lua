@@ -8,7 +8,7 @@ _.Zones =
 		prof(FISHING, {
 			["maps"] = {
 				DREAD_WASTES,
-				507,	-- Isle of Giants
+				ISLE_OF_GIANTS,
 				ISLE_OF_THUNDER,
 				KRASARANG_WILDS,
 				KUN_LAI_SUMMIT,

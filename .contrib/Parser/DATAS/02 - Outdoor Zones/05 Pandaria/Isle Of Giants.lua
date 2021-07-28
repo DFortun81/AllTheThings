@@ -5,24 +5,24 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(507, {	-- Isle of Giants
+		m(ISLE_OF_GIANTS, {
 			["description"] = "The Isle of Giants is an island that has been lost in time, home to primal devilsaurs, direhorns, and skyscreamers raised by the Zandalar tribe on the isle since the loss of Zandalar.",
 			["icon"] = "Interface\\Icons\\ability_hunter_pet_devilsaur",
 			["g"] = {
 				n(FLIGHT_PATHS, {
 					fp(1221, {	-- Beeble's Wreck, Isle Of Giants
-						["coord"] = { 41.8, 79.2, 507 },
+						["coord"] = { 41.8, 79.2, ISLE_OF_GIANTS },
 					}),
 					fp(1222, {	-- Bozzle's Wreck, Isle Of Giants
-						["coord"] = { 51.8, 75.4, 507 },
+						["coord"] = { 51.8, 75.4, ISLE_OF_GIANTS },
 					}),
 				}),
 				n(RARES, {
 					n(70096, {	-- War-God Dokah
 						["coords"] = {
-							{ 77.6, 82.6, 507 },
-							{ 78.6, 80.6, 507 },
-							{ 76.4, 83.8, 507 },
+							{ 77.6, 82.6, ISLE_OF_GIANTS },
+							{ 78.6, 80.6, ISLE_OF_GIANTS },
+							{ 76.4, 83.8, ISLE_OF_GIANTS },
 						},
 						["g"] = {
 							i(94158),	-- Big Bag of Zandalari Supplies
@@ -36,8 +36,8 @@ _.Zones =
 					i(94288, {	-- Giant Dinosaur Bone
 						["description"] = "These bones can be gathered and turned into Ku'ma on the Isle of Giants.\n\n        1 Bone = 1g 14s\n      9 Bones = 1 Mote of Harmony\n    99 Bones = 1 Spirit of Harmony\n  999 Bones = Spectral Porcupette\n9999 Bones = Primal Raptor",
 						["coords"] = {
-							{ 27.32, 58.07, 507 },	-- Cave Entrance
-							{ 32.72, 54.26, 507 },	-- Ku'ma
+							{ 27.32, 58.07, ISLE_OF_GIANTS },	-- Cave Entrance
+							{ 32.72, 54.26, ISLE_OF_GIANTS },	-- Ku'ma
 						},
 						["crs"] = {
 							70096,	-- War-God Dokah <Ward of Beasts>
