@@ -85,6 +85,12 @@ _.Zones =
 					},
 				}),
 			--	confirmed on live
+				q(63672, {	-- A Cry From the Heart
+					["description"] = "Requires Renown 52.",
+					["sourceQuests"] = { 63656 },	-- The Meaning of Wrath
+					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
+					["coord"] = { 63.4, 24.6, KORTHIA },
+				}),
 				q(63755, {	-- A Matter of Urgency
 					["sourceQuests"] = { 64106 },	-- A Unified Effort
 					["provider"] = { "n", 177155 },	-- Pathscribe Roh-Vess
@@ -457,11 +463,6 @@ _.Zones =
 				}),
 
 			--	ptr data
-				q(63672, {	-- A Cry From the Heart
-					["sourceQuests"] = { 63656 },	-- The Meaning of Wrath
-					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
-					["coord"] = { 63.4, 24.6, KORTHIA },
-				}),
 				q(63579, {	-- A Paladin's Soul
 					["sourceQuests"] = { 63683 },	-- Winter's Sigil
 					["provider"] = { "n", 179356 },	-- Thenios
