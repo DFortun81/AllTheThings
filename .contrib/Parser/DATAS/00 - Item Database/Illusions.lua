@@ -394,43 +394,43 @@ _.IllusionDB = {
 		["itemID"] = 183189,	-- Illusion: Undying Spirit
 		["illusionID"] = 6261,
 		["text"] = "Undying Spirit",
-		--["questID"] = 57596,
+		["questID"] = 62964,
 	},
 	{	-- Illusion: Sinwrath
 		["itemID"] = 172177,	-- Illusion: Sinwrath
 		["illusionID"] = 6258,
 		["text"] = "Sinwrath",
-		--["questID"] = 57596,
+		["questID"] = 62398,
 	},
 	{	-- Illusion: Hunt's Favor
 		["itemID"] = 183134,	-- Illusion: Hunt's Favor
 		["illusionID"] = 6264,
 		["text"] = "Hunt's Favor",
-		--["questID"] = 57596,
+		["questID"] = 62965,
 	},
 	{	-- Illusion: Sinsedge
 		["itemID"] = 182207,	-- Illusion: Sinsedge
 		["illusionID"] = 6259,
 		["text"] = "Sinsedge",
-		--["questID"] = 57596,
+		["questID"] = 61727,
 	},
 	{	-- Illusion: Unbreakable Resolve
 		["itemID"] = 183462,	-- Illusion: Unbreakable Resolve
 		["illusionID"] = 6262,
 		["text"] = "Unbreakable Resolve",
-		--["questID"] = 57596,
+		["questID"] = 62396,
 	},
 	{	-- Illusion: Wild Soul
 		["itemID"] = 184164,	-- Illusion: Wild Soul
 		["illusionID"] = 6263,
 		["text"] = "Wild Soul",
-		--["questID"] = 57596,
+		["questID"] = 62397,
 	},
 	{	-- Illusion: Devoted Spirit
 		["itemID"] = 184351,	-- Illusion: Devoted Spirit
 		["illusionID"] = 6256,
 		["text"] = "Devoted Spirit",
-	--	["questID"] = 63004,
+		["questID"] = 63004,
 	},
 	{	-- Illusion: Transcendent Soul
 		["itemID"] = 184352,
