@@ -1014,76 +1014,76 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(32027, {	-- Candy Bucket — Jade Forest, Dawn's Blossom, neutral
 				["isYearly"] = true,
-				["coord"] = { 45.7, 43.6, 371 },
-				["maps"] = { 371 },	-- Jade Forest
+				["coord"] = { 45.7, 43.6, THE_JADE_FOREST },
+				["maps"] = { THE_JADE_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32029, {	-- Candy Bucket — Jade Forest, Greenstone Village, neutral
 				["isYearly"] = true,
-				["coord"] = { 48.0, 34.6, 371 },
-				["maps"] = { 371 },	-- Jade Forest
+				["coord"] = { 48.0, 34.6, THE_JADE_FOREST },
+				["maps"] = { THE_JADE_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32028, {	-- Candy Bucket — Jade Forest, Grookin Hill, Horde
 				["isYearly"] = true,
-				["coord"] = { 28.0, 47.4, 371 },
+				["coord"] = { 28.0, 47.4, THE_JADE_FOREST },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 371 },	-- Jade Forest
+				["maps"] = { THE_JADE_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32050, {	-- Candy Bucket — Jade Forest, Honeydew Village, Horde
 				["isYearly"] = true,
-				["coord"] = { 28.5, 13.3, 371 },
+				["coord"] = { 28.5, 13.3, THE_JADE_FOREST },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 371 },	-- Jade Forest
+				["maps"] = { THE_JADE_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32032, {	-- Candy Bucket — Jade Forest, Jade Temple Grounds, neutral
 				["isYearly"] = true,
-				["coord"] = { 54.6, 63.3, 371 },
-				["maps"] = { 371 },	-- Jade Forest
+				["coord"] = { 54.6, 63.3, THE_JADE_FOREST },
+				["maps"] = { THE_JADE_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32049, {	-- Candy Bucket — Jade Forest, Paw'don Village, Alliance
 				["isYearly"] = true,
-				["coord"] = { 44.8, 84.4, 371 },
+				["coord"] = { 44.8, 84.4, THE_JADE_FOREST },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 371 },	-- Jade Forest
+				["maps"] = { THE_JADE_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32033, {	-- Candy Bucket — Jade Forest, Pearlfin Village, Alliance
 				["isYearly"] = true,
-				["coord"] = { 59.6, 83.2, 371 },
+				["coord"] = { 59.6, 83.2, THE_JADE_FOREST },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 371 },	-- Jade Forest
+				["maps"] = { THE_JADE_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32031, {	-- Candy Bucket — Jade Forest, Sri-La Village, neutral
 				["isYearly"] = true,
-				["coord"] = { 55.7, 24.4, 371 },
-				["maps"] = { 371 },	-- Jade Forest
+				["coord"] = { 55.7, 24.4, THE_JADE_FOREST },
+				["maps"] = { THE_JADE_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(32021, {	-- Candy Bucket — Jade Forest, Tian Monastery, neutral
 				["isYearly"] = true,
-				["coord"] = { 41.6, 23.1, 371 },
-				["maps"] = { 371 },	-- Jade Forest
+				["coord"] = { 41.6, 23.1, THE_JADE_FOREST },
+				["maps"] = { THE_JADE_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

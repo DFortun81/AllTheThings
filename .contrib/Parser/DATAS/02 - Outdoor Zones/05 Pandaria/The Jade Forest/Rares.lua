@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(371, {	-- The Jade Forest
+		m(THE_JADE_FOREST, {
 			n(RARES, {
 				n(50750, {	-- Aethis
-					["coord"] = { 33.5, 50.7, 371 },
+					["coord"] = { 33.5, 50.7, THE_JADE_FOREST },
 					["g"] = {
 						i(87217),	-- Small Bag of Goods
 						i(87649),	-- Pool-Stirrer
@@ -28,7 +28,7 @@ _.Zones =
 					},
 				}),
 				n(66937, {	-- Akkalar
-					["coord"] = { 59.6, 96.0, 371 },
+					["coord"] = { 59.6, 96.0, THE_JADE_FOREST },
 					["g"] = {
 						i(90167, {	-- Akkalar's Clamshel
 							i(90172),	-- Clamshell Band
@@ -37,7 +37,7 @@ _.Zones =
 					},
 				}),
 				n(66932, {	-- Akkalou
-					["coord"] = { 59.3, 36.4, 371 },
+					["coord"] = { 59.3, 36.4, THE_JADE_FOREST },
 					["g"] = {
 						i(90166, {	-- Akkalou's Clamshell
 							i(90172),	-- Clamshell Band
@@ -47,11 +47,11 @@ _.Zones =
 				}),
 				n(51078, {	-- Ferdinand
 					["coords"] = {
-						{ 52.2, 44.4, 371 },
-						{ 54.2, 42.4, 371 },
-						{ 53.8, 45.6, 371 },
-						{ 53.6, 49.6, 371 },
-						{ 56.4, 48.0, 371 },
+						{ 52.2, 44.4, THE_JADE_FOREST },
+						{ 54.2, 42.4, THE_JADE_FOREST },
+						{ 53.8, 45.6, THE_JADE_FOREST },
+						{ 53.6, 49.6, THE_JADE_FOREST },
+						{ 56.4, 48.0, THE_JADE_FOREST },
 					},
 					["g"] = {
 						i(87217),	-- Small Bag of Goods
@@ -73,9 +73,9 @@ _.Zones =
 				}),
 				n(50338, {	-- Kor'nas Nightsavage
 					["coords"] = {
-						{ 44.6, 69.3, 371 },
-						{ 45.1, 71.5, 371 },
-						{ 45.2, 74.2, 371 },
+						{ 44.6, 69.3, THE_JADE_FOREST },
+						{ 45.1, 71.5, THE_JADE_FOREST },
+						{ 45.2, 74.2, THE_JADE_FOREST },
 					},
 					["g"] = {
 						i(87217),	-- Small Bag of Goods
@@ -98,8 +98,8 @@ _.Zones =
 				n(70323, {	-- Krakkanon
 					["description"] = "Fished out of the daily Pandaria fishing holes. Talk to Ben of the Booming Voice near Halfhill in Valley of the Four Winds to find out what is the daily fishing hole.",
 					["coords"] = {
-						{ 50.8, 20.8, 371 },
-						{ 55.8, 21.4, 371 },
+						{ 50.8, 20.8, THE_JADE_FOREST },
+						{ 55.8, 21.4, THE_JADE_FOREST },
 					},
 					["g"] = {
 						i(88563, {	-- Nat's Fishing Journal
@@ -111,7 +111,7 @@ _.Zones =
 					},
 				}),
 				n(50363, {	-- Krax'ik
-					["coord"] = { 39.5, 62.7, 371 },
+					["coord"] = { 39.5, 62.7, THE_JADE_FOREST },
 					["g"] = {
 						i(87217),	-- Small Bag of Goods
 						i(87646),	-- Needlefang Throatripper
@@ -132,17 +132,17 @@ _.Zones =
 				}),
 				n(65003, {	-- Martar the Not-So-Smart
 					["coords"] = {
-						{ 54.4, 32.6, 371 },
-						{ 55.2, 30.6, 371 },
-						{ 56.2, 32.4, 371 },
-						{ 55.6, 33.2, 371 },
+						{ 54.4, 32.6, THE_JADE_FOREST },
+						{ 55.2, 30.6, THE_JADE_FOREST },
+						{ 56.2, 32.4, THE_JADE_FOREST },
+						{ 55.6, 33.2, THE_JADE_FOREST },
 					},
 					["g"] = {
 						i(87780),	-- Martar's Magnifying Glass
 					},
 				}),
 				n(50823, {	-- Mister Ferocious
-					["coord"] = { 42.5, 38.8, 371 },
+					["coord"] = { 42.5, 38.8, THE_JADE_FOREST },
 					["g"] = {
 						i(87217),	-- Small Bag of Goods
 						i(87652),	-- Ook-Breaker Mace
@@ -163,12 +163,12 @@ _.Zones =
 				}),
 				n(50350, {	-- Morgrinn Crackfang
 					["coords"] = {
-						{ 40.8, 15.2, 371 },
-						{ 42.6, 16.2, 371 },
-						{ 42.2, 17.6, 371 },
-						{ 46.6, 16.8, 371 },
-						{ 48.0, 18.4, 371 },
-						{ 48.2, 20.6, 371 },
+						{ 40.8, 15.2, THE_JADE_FOREST },
+						{ 42.6, 16.2, THE_JADE_FOREST },
+						{ 42.2, 17.6, THE_JADE_FOREST },
+						{ 46.6, 16.8, THE_JADE_FOREST },
+						{ 48.0, 18.4, THE_JADE_FOREST },
+						{ 48.2, 20.6, THE_JADE_FOREST },
 					},
 					["g"] = {
 						i(87217),	-- Small Bag of Goods
@@ -189,7 +189,7 @@ _.Zones =
 					},
 				}),
 				n(50782, {	-- Sarnak
-					["coord"] = { 64.9, 74.3, 371 },
+					["coord"] = { 64.9, 74.3, THE_JADE_FOREST },
 					["g"] = {
 						i(87217),	-- Small Bag of Goods
 						i(87650),	-- Fishsticker Crossbow
@@ -209,7 +209,7 @@ _.Zones =
 					},
 				}),
 				n(50808, {	-- Urobi the Walker
-					["coord"] = { 57.3, 71.6, 371 },
+					["coord"] = { 57.3, 71.6, THE_JADE_FOREST },
 					["g"] = {
 						i(87217),	-- Small Bag of Goods
 						i(87651),	-- Pathwalker Greatstaff
@@ -232,7 +232,7 @@ _.Zones =
 					["coords"] = {
 						{ 47.4, 61.5, 422 },	-- Dread Wastes
 						{ 75.1, 67.4, 379 },	-- Kun-Lai Summit
-						{ 52.5, 18.8, 371 },	-- The Jade Forest
+						{ 52.5, 18.8, THE_JADE_FOREST },
 						{ 36.5, 85.6, 388 },	-- Townlong Steppes
 					},
 					["g"] = {
@@ -243,7 +243,7 @@ _.Zones =
 					["coords"] = {
 						{ 47.4, 61.5, 422 },	-- Dread Wastes
 						{ 75.1, 67.4, 379 },	-- Kun-Lai Summit
-						{ 52.5, 18.8, 371 },	-- The Jade Forest
+						{ 52.5, 18.8, THE_JADE_FOREST },
 						{ 36.5, 85.6, 388 },	-- Townlong Steppes
 					},
 					["g"] = {
@@ -255,7 +255,7 @@ _.Zones =
 						{ 47.4, 61.5, 422 },	-- Dread Wastes
 						{ 39.8, 65.9, KRASARANG_WILDS },
 						{ 75.1, 67.4, 379 },	-- Kun-Lai Summit
-						{ 52.5, 18.8, 371 },	-- The Jade Forest
+						{ 52.5, 18.8, THE_JADE_FOREST },
 						{ 36.5, 85.6, 388 },	-- Townlong Steppes
 					},
 					["g"] = {

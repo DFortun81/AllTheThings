@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(371, {	-- The Jade Forest
+		m(THE_JADE_FOREST, {
 			prof(INSCRIPTION, {
 				q(31539, {	-- A Thing of Beauty
 					["requireSkill"] = INSCRIPTION,
 					["provider"] = { "n", 56065 },	-- Inkmaster Wei
 					["isWeekly"] = true,
-					["coord"] = { 54.6, 44.2, 371 },
+					["coord"] = { 54.6, 44.2, THE_JADE_FOREST },
 					["g"] = {
 						recipe(127378),	-- Commissioned Painting
 					},
@@ -20,7 +20,7 @@ _.Zones =
 					["requireSkill"] = INSCRIPTION,
 					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
 					["isWeekly"] = true,
-					["coord"] = { 55.2, 45.2, 371 },
+					["coord"] = { 55.2, 45.2, THE_JADE_FOREST },
 					["g"] = {
 						recipe(127481),	-- Inscribed Monument
 					},
@@ -29,7 +29,7 @@ _.Zones =
 					["requireSkill"] = INSCRIPTION,
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 					["isWeekly"] = true,
-					["coord"] = { 54.8, 45.2, 371 },
+					["coord"] = { 54.8, 45.2, THE_JADE_FOREST },
 					["g"] = {
 						recipe(127475),	-- Incarnadine Ink
 					},
@@ -38,7 +38,7 @@ _.Zones =
 					["requireSkill"] = INSCRIPTION,
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 					["isWeekly"] = true,
-					["coord"] = { 54.8, 45.2, 371 },
+					["coord"] = { 54.8, 45.2, THE_JADE_FOREST },
 					["g"] = {
 						recipe(128922),	-- Portrait of Madam Goya
 					},
@@ -47,7 +47,7 @@ _.Zones =
 					["requireSkill"] = INSCRIPTION,
 					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
 					["isWeekly"] = true,
-					["coord"] = { 55.2, 45.2, 371 },
+					["coord"] = { 55.2, 45.2, THE_JADE_FOREST },
 					["g"] = {
 						recipe(127391),	-- Engraved Jade Disk
 					},
@@ -56,7 +56,7 @@ _.Zones =
 					["requireSkill"] = INSCRIPTION,
 					["provider"] = { "n", 56065 },	-- Inkmaster Wei
 					["isWeekly"] = true,
-					["coord"] = { 54.6, 44.2, 371 },
+					["coord"] = { 54.6, 44.2, THE_JADE_FOREST },
 				}),
 			}),
 		}),

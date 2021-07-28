@@ -266,7 +266,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163466, {	-- Notched Coin
-					["coord"] = { 55.2, 19.2, 371 },
+					["coord"] = { 55.2, 19.2, THE_JADE_FOREST },
 					["g"] = {
 						q(53155, {	-- Notched Coin
 							["provider"] = { "n", 64365 },	-- Mili Wanderbrew <Apprentice Brewmaster>

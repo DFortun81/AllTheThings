@@ -374,8 +374,8 @@ _.Achievements =
 				crit(2, {	-- The Lost Dynasty
 					["coord"] = { 52.96, 27.42, KRASARANG_WILDS },
 				}),
-				crit(3, {	-- Spirit Binders (Jade Forest)
-					["coord"] = { 42.26, 17.46, 371 },
+				crit(3, {	-- Spirit Binders
+					["coord"] = { 42.26, 17.46, THE_JADE_FOREST },
 				}),
 				crit(4, {	-- The Thunder King (Vale of Eternal Blossoms)
 					["coord"] = { 40.19, 75.63, 390 },
@@ -384,8 +384,8 @@ _.Achievements =
 			ach(6855, {	-- The Seven Burdens of Shaohao
 				crit(1),	-- The Emperor's Burden - Part 1 (Jade Forest)
 				crit(2),	-- The Emperor's Burden - Part 2 (Kun-Lai Summit)
-				crit(3, {	-- The Emperor's Burden - Part 3 (Jade Forest)
-					["coord"] = { 55.88, 56.84, 371 },
+				crit(3, {	-- The Emperor's Burden - Part 3
+					["coord"] = { 55.88, 56.84, THE_JADE_FOREST },
 				}),
 				crit(4),	-- The Emperor's Burden - Part 4 (Krasarang Wilds)
 				crit(5),	-- The Emperor's Burden - Part 5 (Townlong Steppes)

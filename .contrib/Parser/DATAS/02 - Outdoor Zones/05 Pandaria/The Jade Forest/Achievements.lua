@@ -5,18 +5,18 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(371, {	-- The Jade Forest
+		m(THE_JADE_FOREST, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(19, {	-- Hyuna of the Shrines
-							["coord"] = { 48.0, 54.0, 371 },
+							["coord"] = { 48.0, 54.0, THE_JADE_FOREST },
 							["cr"] = 66730,	-- Hyuna of the Shrines <Grand Master Pet Tamer>
 						}),
 						crit(42, {	-- Whispering Pandaren Spirit
-							["coord"] = { 28.8, 36.0, 371 },
+							["coord"] = { 28.8, 36.0, THE_JADE_FOREST },
 							["cr"] = 68464,	-- Whispering Pandaren Spirit <Grand Master Pet Tamer>
 						}),
 					},
@@ -25,7 +25,7 @@ _.Zones =
 					["collectible"] = false,
 					["g"] = {
 						crit(1, {	-- The Saurok
-							["coord"] = { 67.7, 29.3, 371 },
+							["coord"] = { 67.7, 29.3, THE_JADE_FOREST },
 						}),
 					},
 				}),
@@ -39,14 +39,14 @@ _.Zones =
 					["collectible"] = false,
 					["g"] = {
 						crit(3, {	-- Spirit Binders
-							["coord"] = { 42.2, 17.4, 371 },
+							["coord"] = { 42.2, 17.4, THE_JADE_FOREST },
 						}),
 					},
 				}),
 				ach(6855, {	-- The Seven Burdens of Shaohao
 					crit(1),	-- The Emperor's Burden - Part 1
 					crit(3, {	-- The Emperor's Burden - Part 3
-						["coord"] = { 55.8, 56.8, 371 },
+						["coord"] = { 55.8, 56.8, THE_JADE_FOREST },
 					}),
 				}),
 				ach(6350, {	-- To All the Squirrels I Once Caressed?

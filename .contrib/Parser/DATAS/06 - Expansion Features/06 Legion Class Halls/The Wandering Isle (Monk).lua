@@ -216,8 +216,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
 						["provider"] = { "n", 104784 },	-- Taran Zhu
 						["classes"] = { MONK },
-						["coord"] = { 38.9, 25.1, 371 },	-- Jade Forest
-						["maps"] = { 371 },	-- Jade Forest
+						["coord"] = { 38.9, 25.1, THE_JADE_FOREST },
+						["maps"] = { THE_JADE_FOREST },
 					}),
 					q(45574, {	-- Fel Ingredients
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
@@ -413,8 +413,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41732 },	-- The Hand of Keletress
 						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
 						["classes"] = { MONK },
-						["coord"] = { 45.4, 25.0, 371 },	-- Jade Forest
-						["maps"] = { 371 },	-- Jade Forest
+						["coord"] = { 45.4, 25.0, THE_JADE_FOREST },
+						["maps"] = { THE_JADE_FOREST },
 					}),
 					q(41905, {	-- Report from Tian Monastery
 						["sourceQuests"] = { 42191 }, -- Tech It Up a Notch
@@ -456,8 +456,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
 						["provider"] = { "n", 104745 },	-- Instructor Myang
 						["classes"] = { MONK },
-						["coord"] = { 38.3, 25.8, 371 },	-- Jade Forest
-						["maps"] = { 371 }	-- Jade Forest
+						["coord"] = { 38.3, 25.8, THE_JADE_FOREST },
+						["maps"] = { THE_JADE_FOREST },
 					}),
 					q(46344, {	-- Smelly's Luckydo
 						["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
@@ -503,8 +503,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
 						["provider"] = { "n", 104784 },	-- Taran Zhu
 						["classes"] = { MONK },
-						["coord"] = { 38.9, 25.1, 371 },	-- Jade Forest
-						["maps"] = { 371 },	-- Jade Forest
+						["coord"] = { 38.9, 25.1, THE_JADE_FOREST },
+						["maps"] = { THE_JADE_FOREST },
 					}),
 					q(45459, {	-- Storming the Legion
 						["sourceQuests"] = { 45404 },	-- Panic at the Brewery
@@ -554,8 +554,8 @@ _.ExpansionFeatures =
 						},
 						["provider"] = { "n", 104850 },	-- The Monkey King
 						["classes"] = { MONK },
-						["coord"] = { 42.0, 25.5, 371 },	-- Jade Forest
-						["maps"] = { 371 },	-- Jade Forest
+						["coord"] = { 42.0, 25.5, THE_JADE_FOREST },
+						["maps"] = { THE_JADE_FOREST },
 					}),
 					q(41849, {	-- The Iron Fist
 						["sourceQuests"] = { 43054 },	-- An Ample Stockpile
@@ -590,29 +590,29 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42957 },	-- Journey to the East
 						["provider"] = { "n", 109187 },	-- The Monkey King
 						["classes"] = { MONK },
-						["coord"] = { 55.3, 58.1, 371 },	-- Jade Forest
-						["maps"] = { 371 },	-- Jade Forest
+						["coord"] = { 55.3, 58.1, THE_JADE_FOREST },
+						["maps"] = { THE_JADE_FOREST },
 					}),
 					q(42768, {	-- The Riddle of Purity
 						["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
 						["provider"] = { "n", 108700 },	-- The Monkey King
 						["classes"] = { MONK },
-						["coord"] = { 41.6, 27.4, 371 },	-- Jade Forest
-						["maps"] = { 371 },	-- Jade Forest
+						["coord"] = { 41.6, 27.4, THE_JADE_FOREST },
+						["maps"] = { THE_JADE_FOREST },
 					}),
 					q(42766, {	-- The Riddle of the Barrel
 						["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
 						["provider"] = { "n", 108700 },	-- The Monkey King
 						["classes"] = { MONK },
-						["coord"] = { 41.6, 27.4, 371 },	-- Jade Forest
-						["maps"] = { 371 },	-- Jade Forest
+						["coord"] = { 41.6, 27.4, THE_JADE_FOREST },
+						["maps"] = { THE_JADE_FOREST },
 					}),
 					q(42767, {	-- The Riddle of the Land
 						["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
 						["provider"] = { "n", 108700 },	-- The Monkey King
 						["classes"] = { MONK },
-						["coord"] = { 41.6, 27.4, 371 },	-- Jade Forest
-						["maps"] = { 371 },	-- Jade Forest
+						["coord"] = { 41.6, 27.4, THE_JADE_FOREST },
+						["maps"] = { THE_JADE_FOREST },
 					}),
 					q(46348, {	-- The River to Ban-Lu
 						["sourceQuests"] = { 46347 },	-- Clean-up on Aisle Sha
@@ -642,9 +642,9 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42868 },	-- The Monkey King's Challenge
 						["provider"] = { "n", 109187 },	-- The Monkey King
 						["classes"] = { MONK },
-						["coord"] = { 55.4, 58.3, 371 },	-- Jade Forest
+						["coord"] = { 55.4, 58.3, THE_JADE_FOREST },
 						["maps"] = {
-							371,	-- Jade Forest
+							THE_JADE_FOREST,
 							791,	-- Temple of the Jade Serpent (Crisis in the Temple scenario)
 							792,	-- The Scrollkeeper's Sanctum (Crisis in the Temple scenario)
 						},

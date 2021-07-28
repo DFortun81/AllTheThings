@@ -8,7 +8,7 @@ _.Zones =
 		n(ZONEDROPS, {
 			["maps"] = {
 				422,	-- Dread Wastes
-				371,	-- Jade Forest
+				THE_JADE_FOREST,
 				388,	-- Towlong Steppes
 				KRASARANG_WILDS,
 			},
@@ -25,7 +25,7 @@ _.Zones =
 					--[[
 					["maps"] = {
 						422,	-- Dread Wastes
-						371,	-- Jade Forest
+						THE_JADE_FOREST,
 						388,	-- Towlong Steppes
 						KRASARANG_WILDS,
 					},
@@ -62,7 +62,7 @@ _.Zones =
 					--[[
 					["maps"] = {
 						422,	-- Dread Wastes
-						371,	-- Jade Forest
+						THE_JADE_FOREST,
 						388,	-- Towlong Steppes
 						KRASARANG_WILDS,
 					},
@@ -80,7 +80,7 @@ _.Zones =
 					--[[
 					["maps"] = {
 						422,	-- Dread Wastes
-						371,	-- Jade Forest
+						THE_JADE_FOREST,
 						388,	-- Towlong Steppes
 						KRASARANG_WILDS,
 					},
@@ -98,7 +98,7 @@ _.Zones =
 					--[[
 					["maps"] = {
 						422,	-- Dread Wastes
-						371,	-- Jade Forest
+						THE_JADE_FOREST,
 						388,	-- Towlong Steppes
 						KRASARANG_WILDS,
 					},
@@ -116,7 +116,7 @@ _.Zones =
 					--[[
 					["maps"] = {
 						422,	-- Dread Wastes
-						371,	-- Jade Forest
+						THE_JADE_FOREST,
 						388,	-- Towlong Steppes
 						KRASARANG_WILDS,
 					},
@@ -134,7 +134,7 @@ _.Zones =
 					--[[
 					["maps"] = {
 						422,	-- Dread Wastes
-						371,	-- Jade Forest
+						THE_JADE_FOREST,
 						388,	-- Towlong Steppes
 						KRASARANG_WILDS,
 					},

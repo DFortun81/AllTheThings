@@ -12,7 +12,7 @@ _.Zones =
 				504,	-- Isle of Thunder
 				KRASARANG_WILDS,
 				379,	-- Kun-Lai Summit
-				371,	-- The Jade Forest
+				THE_JADE_FOREST,
 				433,	-- The Veiled Stair
 				554,	-- Timeless Isle
 				388,	-- Townlong Steppes

@@ -103,8 +103,8 @@ _.Achievements =
 				crit(18, {	-- Gutretch (Zul'Drak)
 					["coord"] = { 13.2, 66.8, 121 },
 				}),
-				crit(19, {	-- Hyuna of the Shrines (The Jade Forest)
-					["coord"] = { 48.0, 54.0, 371 },
+				crit(19, {	-- Hyuna of the Shrines
+					["coord"] = { 48.0, 54.0, THE_JADE_FOREST },
 				}),
 				crit(20, {	-- Jeremy Feasel (Darkmoon Island)
 					["coord"] = { 47.8, 62.6, 407 },
@@ -172,8 +172,8 @@ _.Achievements =
 				crit(41, {	-- Wastewalker Shu (Dread Wastes)
 					["coord"] = { 55.0, 37.6, 422 },
 				}),
-				crit(42, {	-- Whispering Pandaren Spirit  (The Jade Forest)
-					["coord"] = { 28.8, 36.0, 371 },
+				crit(42, {	-- Whispering Pandaren Spirit
+					["coord"] = { 28.8, 36.0, THE_JADE_FOREST },
 				}),
 				crit(43, {	-- Wise Mari (Celestial Tournament)
 					["coord"] = { 37.8, 57.2, 554 },

@@ -5,15 +5,15 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(371, {	-- The Jade Forest
+		m(THE_JADE_FOREST, {
 			n(TREASURES, {
 				n(-246, {	-- Is Another Man's Treasure
 					o(213741, {	-- Ancient Jinyu Staff
 						["questID"] = 31402,
 						["coords"] = {
-							{ 44.9, 64.6, 371 },
-							{ 47.1, 67.5, 371 },
-							{ 46.2, 71.2, 371 },
+							{ 44.9, 64.6, THE_JADE_FOREST },
+							{ 47.1, 67.5, THE_JADE_FOREST },
+							{ 46.2, 71.2, THE_JADE_FOREST },
 						},
 						["g"] = {
 							i(86196),	-- Ancient Jinyu Staff
@@ -35,11 +35,11 @@ _.Zones =
 					o(213742, {	-- Hammer of Ten Thunders
 						["questID"] = 31403,
 						["coords"] = {
-							{ 40.24, 13.67, 371 },
-							{ 41.21, 13.84, 371 },
-							{ 41.76, 17.66, 371 },
-							{ 42.01, 17.56, 371 },
-							{ 42.97, 11.63, 371 },
+							{ 40.24, 13.67, THE_JADE_FOREST },
+							{ 41.21, 13.84, THE_JADE_FOREST },
+							{ 41.76, 17.66, THE_JADE_FOREST },
+							{ 42.01, 17.56, THE_JADE_FOREST },
+							{ 42.97, 11.63, THE_JADE_FOREST },
 						},
 						["g"] = {
 							i(86198),	-- Hammer of Ten Thunders
@@ -47,14 +47,14 @@ _.Zones =
 					}),
 					o(213743, {	-- Jade Infused Blade
 						["questID"] = 31307,
-						["coord"] = { 39.26, 46.65, 371 },
+						["coord"] = { 39.26, 46.65, THE_JADE_FOREST },
 						["g"] = {
 							i(86199),	-- Jade Infused Blade
 						},
 					}),
 					o(213363, {	-- Wodin's Mantid Shanker
 						["questID"] = 31397,
-						["coord"] = { 39.41, 7.23, 371 },
+						["coord"] = { 39.41, 7.23, THE_JADE_FOREST },
 						["g"] = {
 							i(85776),	-- Wodin's Mantid Shanker
 						},
@@ -63,7 +63,7 @@ _.Zones =
 				n(-247, {	-- Riches of Pandaria
 					o(213366, {	-- Ancient Pandaren Tea Pot
 						["questID"] = 31400,
-						["coord"] = { 26.22, 32.35, 371 },
+						["coord"] = { 26.22, 32.35, THE_JADE_FOREST },
 						["g"] = {
 							i(85780),	-- Ancient Pandaren Tea Pot
 						},
@@ -71,14 +71,14 @@ _.Zones =
 					o(213368, {	-- Lucky Pandaren Coin
 						["questID"] = 31401,
 						["description"] = "Located in the wishing fountain.",
-						["coord"] = { 31.96, 27.76, 371 },
+						["coord"] = { 31.96, 27.76, THE_JADE_FOREST },
 						["g"] = {
 							i(85781),	-- Lucky Pandaren Coin
 						},
 					}),
 					o(213748, {	-- Pandaren Ritual Stone
 						["questID"] = 31404,
-						["coord"] = { 23.49, 35.05, 371 },
+						["coord"] = { 23.49, 35.05, THE_JADE_FOREST },
 						["g"] = {
 							i(86216),	-- Pandaren Ritual Stone
 						},
@@ -86,21 +86,21 @@ _.Zones =
 					o(213362, {	-- Ship's Locker
 						["questID"] = 31396, -- Ship's Locker
 						["description"] = "Located underwater in a boat.",
-						["coord"] = { 51.28, 100.54, 371 }, -- Can't use Uncharted Sea MapID, plots the point incorrectly.
+						["coord"] = { 51.28, 100.54, THE_JADE_FOREST }, -- Can't use Uncharted Sea MapID, plots the point incorrectly.
 					}),
 				}),
 				o(214339, {	-- Chest of Supplies
 					["questID"] = 31864, -- Chest of Supplies
-					["coord"] = { 24.6, 53.2, 371 },
+					["coord"] = { 24.6, 53.2, THE_JADE_FOREST },
 				}),
 				o(214338, {	-- Offering of Remembrance
 					["questID"] = 31865, -- Offering of Remembrance
-					["coord"] = { 46.3, 80.6, 371 },
+					["coord"] = { 46.3, 80.6, THE_JADE_FOREST },
 				}),
 				o(214337, {	-- Stash of Gems
 					["description"] = "Located in a cave.",
 					["questID"] = 31866, -- Stash of Gems
-					["coord"] = { 62.4, 27.5, 371 },
+					["coord"] = { 62.4, 27.5, THE_JADE_FOREST },
 				}),
 			}),
 		}),

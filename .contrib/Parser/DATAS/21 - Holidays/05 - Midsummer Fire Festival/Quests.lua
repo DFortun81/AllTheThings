@@ -1993,8 +1993,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(32498, {	-- Honor the Flame — Jade Forest
 			["provider"] = { "n", 69529 },	-- Jade Forest Flame Guardian
 			["isYearly"] = true,
-			["coord"] = { 47.2, 47.2, 371 },
-			["maps"] = { 371 },	-- Jade Forest
+			["coord"] = { 47.2, 47.2, THE_JADE_FOREST },
+			["maps"] = { THE_JADE_FOREST },
 		}),
 		q(32499, {	-- Honor the Flame — Krasarang Wilds
 			["provider"] = { "n", 69533 },	-- Krasarang Wilds Flame Guardian

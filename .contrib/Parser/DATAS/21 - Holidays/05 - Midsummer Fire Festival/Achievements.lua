@@ -570,9 +570,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { 422 },	-- Dread Wastes
 				}),
 				crit(2, {	-- Jade Forest
-					["coord"] = { 47.2, 47.2, 371 },
+					["coord"] = { 47.2, 47.2, THE_JADE_FOREST },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 371 },	-- Jade Forest
+					["maps"] = { THE_JADE_FOREST },
 				}),
 				crit(3, {	-- Krasarang Wilds
 					["coord"] = { 77.8, 3.60, KRASARANG_WILDS },
@@ -1276,9 +1276,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { 422 },	-- Dread Wastes
 				}),
 				crit(2, {	-- Jade Forest
-					["coord"] = { 47.2, 47.2, 371 },
+					["coord"] = { 47.2, 47.2, THE_JADE_FOREST },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 371 },	-- Jade Forest
+					["maps"] = { THE_JADE_FOREST },
 				}),
 				crit(3, {	-- Krasarang Wilds
 					["coord"] = { 77.8, 3.60, KRASARANG_WILDS },

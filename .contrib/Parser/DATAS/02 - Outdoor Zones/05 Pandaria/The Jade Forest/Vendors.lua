@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(371, {	-- The Jade Forest
+		m(THE_JADE_FOREST, {
 			n(VENDORS, {
 				n(56707, {	-- Chin <Master of Noodles>
-					["coord"] = { 46.2, 45.4, 371 },
+					["coord"] = { 46.2, 45.4, THE_JADE_FOREST },
 					["g"] = {
 						recipe(124233),	-- Blanched Needle Mushrooms
 						recipe(124228),	-- Boiled Silkworm Pupa
@@ -33,7 +33,7 @@ _.Zones =
 					},
 				}),
 				n(56687, {	-- Metalworker Sashi <Trade Goods>
-					["coord"] = { 58.1, 83.6, 371 },
+					["coord"] = { 58.1, 83.6, THE_JADE_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
@@ -42,9 +42,9 @@ _.Zones =
 				}),
 				n(56406, {	-- Rivett Clutchpop
 					["coords"] = {	-- apparently this NPC can be found in different places throughout the horde jade forest questline.
-						{ 28.2, 47.8, 371 },
-						{ 27.2, 50.6, 371 },
-						{ 30.8, 52.2, 371 },
+						{ 28.2, 47.8, THE_JADE_FOREST },
+						{ 27.2, 50.6, THE_JADE_FOREST },
+						{ 30.8, 52.2, THE_JADE_FOREST },
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -159,7 +159,7 @@ _.Zones =
 					},
 				}),
 				n(61598, {	-- Silkweaver Rui <Adventuring Supplies>
-					["coord"] = { 58.1, 84.1, 371 },
+					["coord"] = { 58.1, 84.1, THE_JADE_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(81655),	-- Faded Forest Amulet
@@ -273,7 +273,7 @@ _.Zones =
 					},
 				}),
 				n(56705, {	-- Singegruff <Adventuring Supplies>
-					["coord"] = { 46.6, 45.6, 371 },
+					["coord"] = { 46.6, 45.6, THE_JADE_FOREST },
 					["g"] = {
 						i(81655),	-- Faded Forest Amulet
 						i(81650),	-- Faded Forest Armored Bracers

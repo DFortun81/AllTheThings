@@ -1237,32 +1237,32 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 422 },	-- Dread Wastes
 						}),
 						crit(3, {	-- Jade Forest, Dawn's Blossom
-							["coord"] = { 45.7, 43.6, 371 },
-							["maps"] = { 371 },	-- Jade Forest
+							["coord"] = { 45.7, 43.6, THE_JADE_FOREST },
+							["maps"] = { THE_JADE_FOREST },
 						}),
 						crit(4, {	-- Jade Forest, Greenstone Village
-							["coord"] = { 48.0, 34.6, 371 },
-							["maps"] = { 371 },	-- Jade Forest
+							["coord"] = { 48.0, 34.6, THE_JADE_FOREST },
+							["maps"] = { THE_JADE_FOREST },
 						}),
 						crit(5, {	-- Jade Forest, Jade Temple Grounds
-							["coord"] = { 54.6, 63.3, 371 },
-							["maps"] = { 371 },	-- Jade Forest
+							["coord"] = { 54.6, 63.3, THE_JADE_FOREST },
+							["maps"] = { THE_JADE_FOREST },
 						}),
 						crit(6, {	-- Jade Forest, Paw'don Village
-							["coord"] = { 44.8, 84.4, 371 },
-							["maps"] = { 371 },	-- Jade Forest
+							["coord"] = { 44.8, 84.4, THE_JADE_FOREST },
+							["maps"] = { THE_JADE_FOREST },
 						}),
 						crit(7, {	-- Jade Forest, Pearlfin Village
-							["coord"] = { 59.6, 83.2, 371 },
-							["maps"] = { 371 },	-- Jade Forest
+							["coord"] = { 59.6, 83.2, THE_JADE_FOREST },
+							["maps"] = { THE_JADE_FOREST },
 						}),
 						crit(8, {	-- Jade Forest, Sri-La Village
-							["coord"] = { 55.7, 24.4, 371 },
-							["maps"] = { 371 },	-- Jade Forest
+							["coord"] = { 55.7, 24.4, THE_JADE_FOREST },
+							["maps"] = { THE_JADE_FOREST },
 						}),
 						crit(9, {	-- Jade Forest, Tian Monastery
-							["coord"] = { 41.6, 23.1, 371 },
-							["maps"] = { 371 },	-- Jade Forest
+							["coord"] = { 41.6, 23.1, THE_JADE_FOREST },
+							["maps"] = { THE_JADE_FOREST },
 						}),
 						crit(10, {	-- Krasarang Wilds, Marista
 							["coord"] = { 53.4, 76.5, KRASARANG_WILDS },
@@ -1330,32 +1330,32 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 422 },	-- Dread Wastes
 						}),
 						crit(3,  {	-- Jade Forest, Dawn's Blossom
-							["coord"] = { 45.7, 43.6, 371 },
-							["maps"] = { 371 },	-- Jade Forest
+							["coord"] = { 45.7, 43.6, THE_JADE_FOREST },
+							["maps"] = { THE_JADE_FOREST },
 						}),
 						crit(4,  {	-- Jade Forest, Greenstone Village
-							["coord"] = { 48.0, 34.6, 371 },
-							["maps"] = { 371 },	-- Jade Forest
+							["coord"] = { 48.0, 34.6, THE_JADE_FOREST },
+							["maps"] = { THE_JADE_FOREST },
 						}),
 						crit(5,  {	-- Jade Forest, Grookin, Hill
-							["coord"] = { 28.0, 47.4, 371 },
-							["maps"] = { 371 },	-- Jade Forest
+							["coord"] = { 28.0, 47.4, THE_JADE_FOREST },
+							["maps"] = { THE_JADE_FOREST },
 						}),
 						crit(6,  {	-- Jade Forest, Honeydew Village
-							["coord"] = { 28.5, 13.3, 371 },
-							["maps"] = { 371 },	-- Jade Forest
+							["coord"] = { 28.5, 13.3, THE_JADE_FOREST },
+							["maps"] = { THE_JADE_FOREST },
 						}),
 						crit(7,  {	-- Jade Forest, Jade Temple Grounds
-							["coord"] = { 54.6, 63.3, 371 },
-							["maps"] = { 371 },	-- Jade Forest
+							["coord"] = { 54.6, 63.3, THE_JADE_FOREST },
+							["maps"] = { THE_JADE_FOREST },
 						}),
 						crit(8,  {	-- Jade Forest, Sri-La Village
-							["coord"] = { 55.7, 24.4, 371 },
-							["maps"] = { 371 },	-- Jade Forest
+							["coord"] = { 55.7, 24.4, THE_JADE_FOREST },
+							["maps"] = { THE_JADE_FOREST },
 						}),
 						crit(9,  {	-- Jade Forest, Tian Monastery
-							["coord"] = { 41.6, 23.1, 371 },
-							["maps"] = { 371 },	-- Jade Forest
+							["coord"] = { 41.6, 23.1, THE_JADE_FOREST },
+							["maps"] = { THE_JADE_FOREST },
 						}),
 						crit(10, {	-- Krasarang Wilds, Dawnchaser Retreat
 							["coord"] = { 28.5, 47.9, KRASARANG_WILDS },
