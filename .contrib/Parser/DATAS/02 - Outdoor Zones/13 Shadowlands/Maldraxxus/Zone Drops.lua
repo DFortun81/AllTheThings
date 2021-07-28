@@ -7,6 +7,7 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(MALDRAXXUS, {
 			n(ZONEDROPS, {
+				i(187425),	-- Ancient Maldraxxi Armament
 				i(184104, {	-- Blight-Touched Egg
 					["crs"] = {
 						170456,	-- Diseased Galescreamer

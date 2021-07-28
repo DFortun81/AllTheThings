@@ -183,10 +183,12 @@ _.GearSets =
 				n(-322, {	-- Back
 					un(REMOVED_FROM_GAME, i(62040)),	-- Ancient Bloodmoon Cloak
 					i(122262),	-- Ancient Bloodmoon Cloak
+					i(166770),	-- Banded Gilean Cloal
 					un(REMOVED_FROM_GAME, i(62039)),	-- Inherited Cape of the Black Baron
 					i(122261),	-- Inherited Cape of the Black Baron
 					un(REMOVED_FROM_GAME, i(69892)),	-- Ripped Sandstorm Cloak
 					i(122266),	-- Ripped Sandstorm Cloak
+					i(166752),	-- Stone Guard's Bladed Cloak
 					un(REMOVED_FROM_GAME, i(62038)),	-- Worn Stoneskin Gargoyle Cape
 					i(122260),	-- Worn Stoneskin Gargoyle Cape
 				}),
