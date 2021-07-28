@@ -1297,8 +1297,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 433 },	-- The Veiled Stair
 						}),
 						crit(18, {	-- Townlong Steppes, Longying Outpost
-							["coord"] = { 71.1, 57.8, 388 },
-							["maps"] = { 388 },	-- Townlong Steppes
+							["coord"] = { 71.1, 57.8, TOWNLONG_STEPPES },
+							["maps"] = { TOWNLONG_STEPPES },
 						}),
 						crit(19, {	-- Vale of Eternal Blossoms, Mistfall Village
 							["coord"] = { 35.1, 77.7, 390 },
@@ -1398,8 +1398,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 433 },	-- The Veiled Stair
 						}),
 						crit(20, {	-- Townlong Steppes, Longying Outpost
-							["coord"] = { 71.1, 57.8, 388 },
-							["maps"] = { 388 },	-- Townlong Steppes
+							["coord"] = { 71.1, 57.8, TOWNLONG_STEPPES },
+							["maps"] = { TOWNLONG_STEPPES },
 						}),
 						crit(21, {	-- Vale of Eternal Blossoms, Mistfall Village
 							["coord"] = { 35.1, 77.7, 390 },

@@ -10,7 +10,7 @@ _.Instances = {
 			["g"] = {
 				currency(697, {	-- Elder Charm of Good Fortune
 					["description"] = "Purchased from Commander Lo Ping in Townlong Steppes |cffffffff(37.8, 64.6)|r for 20 Lesser Charms of Good Fortune.  You also have a chance to get them from killing rares or opening Troves of the Thunder King on the Isle of Thunder.\n",
-					["coord"] = { 37.8, 64.6, 388 },	-- Commander Lo Ping, Townlong Steppes
+					["coord"] = { 37.8, 64.6, TOWNLONG_STEPPES },	-- Commander Lo Ping
 					["cost"] = { { "c", 738, 20 } },	-- 20x Lesser Charm of Good Fortune
 				}),
 				currency(752, {	-- Mogu Rune of Fate

@@ -38,7 +38,7 @@ _.Achievements =
 					--["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
 				}),
 				crit(8,  {	-- Gelatinous
-					--["coord"] = { 57.0, 42.2, 388 },
+					--["coord"] = { 57.0, 42.2, TOWNLONG_STEPPES },
 				}),
 				crit(9,  {	-- Kostos <Challenger of the Small>
 					--["coord"] = { 34.8, 59.6, 554 },
@@ -70,8 +70,8 @@ _.Achievements =
 				crit(7,  {	-- Brok
 					["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
 				}),
-				crit(8,  {	-- Burning Pandaren Spirit (Townlong Steppes)
-					["coord"] = { 57.0, 42.2, 388 },
+				crit(8,  {	-- Burning Pandaren Spirit
+					["coord"] = { 57.0, 42.2, TOWNLONG_STEPPES },
 				}),
 				crit(9,  {	-- Chen Stormstout (Celestial Tournament)
 					["coord"] = { 34.8, 59.6, 554 },
@@ -142,8 +142,8 @@ _.Achievements =
 				crit(31, {	-- Ras'an
 					["coord"] = { 17.2, 50.6, ZANGARMARSH },
 				}),
-				crit(32, {	-- Seeker Zusshi (Townlong Steppes)
-					["coord"] = { 36.2, 52.2, 388 },
+				crit(32, {	-- Seeker Zusshi
+					["coord"] = { 36.2, 52.2, TOWNLONG_STEPPES },
 				}),
 				crit(33, {	-- Shademaster Kiryn (Celestial Tournament)
 					["coord"] = { 37.8, 57.2, 554 },

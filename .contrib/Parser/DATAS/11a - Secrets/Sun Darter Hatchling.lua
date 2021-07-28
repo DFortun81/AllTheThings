@@ -118,7 +118,7 @@ _.Secrets =
 						["description"] = "Qty:1\n\nObtained from killing Scotty in Townlong Steppes.\n\nScotty's behind the Mantid house in the middle of the tree, so either walk around the left side of the house, or fly just above the house down into the crevice.",
 						["g"] = {
 							n(66162, {	-- Scotty
-								["coord"] = { 21.6, 46.5, 388 },
+								["coord"] = { 21.6, 46.5, TOWNLONG_STEPPES },
 							}),
 						},
 					}),

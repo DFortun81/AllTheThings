@@ -15,7 +15,7 @@ _.Zones =
 				THE_JADE_FOREST,
 				433,	-- The Veiled Stair
 				554,	-- Timeless Isle
-				388,	-- Townlong Steppes
+				TOWNLONG_STEPPES,
 				390,	-- Vale of Eternal Blossoms
 				VALLEY_OF_THE_FOUR_WINDS,
 			},

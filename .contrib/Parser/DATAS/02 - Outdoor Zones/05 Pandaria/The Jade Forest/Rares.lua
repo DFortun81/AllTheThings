@@ -233,7 +233,7 @@ _.Zones =
 						{ 47.4, 61.5, 422 },	-- Dread Wastes
 						{ 75.1, 67.4, KUN_LAI_SUMMIT },
 						{ 52.5, 18.8, THE_JADE_FOREST },
-						{ 36.5, 85.6, 388 },	-- Townlong Steppes
+						{ 36.5, 85.6, TOWNLONG_STEPPES },
 					},
 					["g"] = {
 						i(94230),	-- Reins of the Amber Primordial Direhorn
@@ -244,7 +244,7 @@ _.Zones =
 						{ 47.4, 61.5, 422 },	-- Dread Wastes
 						{ 75.1, 67.4, KUN_LAI_SUMMIT },
 						{ 52.5, 18.8, THE_JADE_FOREST },
-						{ 36.5, 85.6, 388 },	-- Townlong Steppes
+						{ 36.5, 85.6, TOWNLONG_STEPPES },
 					},
 					["g"] = {
 						i(94231),	-- Reins of the Jade Primordial Direhorn
@@ -256,7 +256,7 @@ _.Zones =
 						{ 39.8, 65.9, KRASARANG_WILDS },
 						{ 75.1, 67.4, KUN_LAI_SUMMIT },
 						{ 52.5, 18.8, THE_JADE_FOREST },
-						{ 36.5, 85.6, 388 },	-- Townlong Steppes
+						{ 36.5, 85.6, TOWNLONG_STEPPES },
 					},
 					["g"] = {
 						i(94229),	-- Reins of the Slate Primordial Direhorn

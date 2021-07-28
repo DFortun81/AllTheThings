@@ -299,7 +299,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163473, {	-- Sonic Stone
-					["coord"] = { 39.4, 62.0, 388 },
+					["coord"] = { 39.4, 62.0, TOWNLONG_STEPPES },
 					["g"] = {
 						q(53164, {	-- Sonic Stone
 							["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan

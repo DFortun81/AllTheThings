@@ -16,22 +16,22 @@ _.Zones =
 							q(30954, {	-- A Blade is a Blade
 								["provider"] = { "n", 61581 },	-- Ogo the Younger
 								["isDaily"] = true,
-								["coord"] = { 39.3, 62.2, 388 },
+								["coord"] = { 39.3, 62.2, TOWNLONG_STEPPES },
 							}),
 							q(30953, {	-- Fallen Sentinels
 								["provider"] = { "n", 61585 },	-- Yak-Keeper Kyana
 								["isDaily"] = true,
-								["coord"] = { 39.1, 62.0, 388 },
+								["coord"] = { 39.1, 62.0, TOWNLONG_STEPPES },
 							}),
 							q(30955, {	-- Paying Tribute
 								["provider"] = { "n", 61583 },	-- High Adept Paosha
 								["isDaily"] = true,
-								["coord"] = { 38.9, 62.5, 388 },
+								["coord"] = { 38.9, 62.5, TOWNLONG_STEPPES },
 							}),
 							q(30952, {	-- The Unending Siege
 								["provider"] = { "n", 61580 },	-- Ogo the Elder
 								["isDaily"] = true,
-								["coord"] = { 39.3, 62.2, 388 },
+								["coord"] = { 39.3, 62.2, TOWNLONG_STEPPES },
 							}),
 						}),
 					},

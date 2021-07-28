@@ -1713,8 +1713,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(32043, {	-- Candy Bucket — Townlong Steppes, Longying Outpost, neutral
 				["isYearly"] = true,
-				["coord"] = { 71.1, 57.8, 388 },
-				["maps"] = { 388 },	-- Townlong Steppes
+				["coord"] = { 71.1, 57.8, TOWNLONG_STEPPES },
+				["maps"] = { TOWNLONG_STEPPES },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

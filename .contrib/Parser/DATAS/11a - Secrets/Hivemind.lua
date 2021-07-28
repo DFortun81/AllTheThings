@@ -18,7 +18,7 @@ _.Secrets =
 			201,
 			204,
 			205,
-			388,
+			TOWNLONG_STEPPES,
 			594,
 			650,
 		},
@@ -85,7 +85,7 @@ _.Secrets =
 							o(280844, {	-- Letter 7: Niuzao Temple, Townlong Steppes
 								["model"] = 1661948,
 								["questID"] = 50187,
-								["coord"] = { 66.0, 36.5, 388 },	-- Townlong Steppes
+								["coord"] = { 66.0, 36.5, TOWNLONG_STEPPES },
 								["sourceQuest"] = 40288,	-- Letter 6: Ironwall Dam, Icecrown
 								["description"] = "|cFFFFFFFFLetter 7:|r Go to |cFFFFFFFF37.7, 63.0|r in |cFFFFD700Townlong Steppes|r. The final |cFFFFD700Letter from Ms. Graham|r is located near a bell on the back part of the temple. Click it. The note reads...\r\r|cFFFFFFFFMice look so sad when they have a Cleft lip.\n\nHoping you succeed,\n~Ana|r\n",
 							}),

@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(388, {	-- Townlong Steppes
+		m(TOWNLONG_STEPPES, {
 			n(VENDORS, {
 				n(65171, {	-- Alin the Finder <Adventuring Supplies>
-					["coord"] = { 71.4, 57.2, 388 },
+					["coord"] = { 71.4, 57.2, TOWNLONG_STEPPES },
 					["g"] = {
 						i(82690),	-- Mountainscaler Amulet
 						i(82685),	-- Mountainscaler Armored Bracers
@@ -121,7 +121,7 @@ _.Zones =
 					},
 				}),
 				n(70346, {	-- Ao Pye <Shado-Pan Assault Quartermaster>
-					["coord"] = { 38.0, 64.6, 388 },
+					["coord"] = { 38.0, 64.6, TOWNLONG_STEPPES },
 					["g"] = {
 						i(95129),	-- Axebinder Wristguards
 						i(95140),	-- Band of the Shado-Pan Assault
@@ -1285,7 +1285,7 @@ _.Zones =
 					},
 				}),
 				n(64607, {	-- Commander Lo Ping <Justice Quartermaster>
-					["coord"] = { 37.8, 64.6, 388 },
+					["coord"] = { 37.8, 64.6, TOWNLONG_STEPPES },
 					["g"] = {
 						i(89527),	-- Amulet of Swirling Mists
 						i(89532),	-- Bladesong Cloak
@@ -1339,7 +1339,7 @@ _.Zones =
 					},
 				}),
 				n(64606, {	-- Commander Oxheart <Valor Quartermaster>
-					["coord"] = { 37.8, 64.6, 388 },
+					["coord"] = { 37.8, 64.6, TOWNLONG_STEPPES },
 					["g"] = {
 						i(86702, {	-- Guardian Serpent Cowl
 							["cost"] = { { "i", 89274, 1 }, },	-- Helm of the Shadowy Conqueror (LFR)
@@ -2471,7 +2471,7 @@ _.Zones =
 					},
 				}),
 				n(64595, {	-- Rushi the Fox <Shado-Pan Quartermaster>
-					["coord"] = { 48.8, 70.5, 388 },
+					["coord"] = { 48.8, 70.5, TOWNLONG_STEPPES },
 					["g"] = {
 						i(89076),	-- Blackguard Cape
 						i(89081),	-- Blossom of Pure Snow
@@ -2528,7 +2528,7 @@ _.Zones =
 					},
 				}),
 				n(62737, {	-- Supplier Xin
-					["coord"] = { 70.8, 55.8, 388 },
+					["coord"] = { 70.8, 55.8, TOWNLONG_STEPPES },
 					["g"] = {
 						i(83234),	-- Wasteland Amulet
 						i(83229),	-- Wasteland Armored Bracers

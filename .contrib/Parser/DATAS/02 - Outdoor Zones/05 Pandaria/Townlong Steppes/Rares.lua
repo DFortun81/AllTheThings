@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(388, {	-- Townlong Steppes
+		m(TOWNLONG_STEPPES, {
 			n(RARES, {
 				n(50772, {	-- Eshelon
 					["coords"] = {
-						{ 65.4, 87.6, 388 },
-						{ 67.8, 87.6, 388 },
-						{ 68.8, 89.0, 388 },
+						{ 65.4, 87.6, TOWNLONG_STEPPES },
+						{ 67.8, 87.6, TOWNLONG_STEPPES },
+						{ 68.8, 89.0, TOWNLONG_STEPPES },
 					},
 					["g"] = {
 						i(87624),	-- Yaungol Mist-Shaman's Amulet
@@ -28,22 +28,22 @@ _.Zones =
 				}),
 				n(66467, {	-- G'nathus
 					["coords"] = {
-						{ 17.8, 11.6, 388 },
-						{ 20.4, 7.40, 388 },
-						{ 36.4, 7.80, 388 },
+						{ 17.8, 11.6, TOWNLONG_STEPPES },
+						{ 20.4, 7.40, TOWNLONG_STEPPES },
+						{ 36.4, 7.80, TOWNLONG_STEPPES },
 					},
 					["g"] = {
 						i(94595),	-- Spawn of G'nathus (PET!)
 					},
 				}),
 				n(66900, {	-- Huggalon the Heart Watcher
-					["coord"] = { 37.2, 57.6, 388 },
+					["coord"] = { 37.2, 57.6, TOWNLONG_STEPPES },
 					["g"] = {
 						i(90067),	-- B. F. F. Necklace
 					},
 				}),
 				n(50355, {	-- Kah'tir
-					["coord"] = { 63.0, 35.6, 388 },
+					["coord"] = { 63.0, 35.6, TOWNLONG_STEPPES },
 					["g"] = {
 						i(87626),	-- Suna's Shattered Locket
 						i(87217),	-- Small Bag of Goods
@@ -77,10 +77,10 @@ _.Zones =
 				}),
 				n(50734, {	-- Lith'ik the Stalker
 					["coords"] = {
-						{ 42.0, 78.4, 388 },
-						{ 46.4, 74.4, 388 },
-						{ 47.8, 84.2, 388 },
-						{ 47.8, 88.6, 388 },
+						{ 42.0, 78.4, TOWNLONG_STEPPES },
+						{ 46.4, 74.4, TOWNLONG_STEPPES },
+						{ 47.8, 84.2, TOWNLONG_STEPPES },
+						{ 47.8, 88.6, TOWNLONG_STEPPES },
 					},
 					["g"] = {
 						i(87625),	-- Congealed Mist Amulet
@@ -97,10 +97,10 @@ _.Zones =
 				}),
 				n(50333, {	-- Lon the Bull
 					["coords"] = {
-						{ 66.6, 44.4, 388 },
-						{ 67.8, 49.2, 388 },
-						{ 66.6, 52.8, 388 },
-						{ 65.4, 50.6, 388 },
+						{ 66.6, 44.4, TOWNLONG_STEPPES },
+						{ 67.8, 49.2, TOWNLONG_STEPPES },
+						{ 66.6, 52.8, TOWNLONG_STEPPES },
+						{ 65.4, 50.6, TOWNLONG_STEPPES },
 					},
 					["g"] = {
 						i(87623),	-- Razor-Sharp Chitin Choker
@@ -116,7 +116,7 @@ _.Zones =
 					},
 				}),
 				n(50344, {	-- Norlaxx
-					["coord"] = { 54.0, 63.4, 388 },
+					["coord"] = { 54.0, 63.4, TOWNLONG_STEPPES },
 					["g"] = {
 						i(87622),	-- Yoke of Niuzao
 						i(87626),	-- Suna's Shattered Locket
@@ -149,7 +149,7 @@ _.Zones =
 					},
 				}),
 				n(66938, {	-- Odd'nirok <Seer of Kril'mandar>
-					["coord"] = { 42.3, 92.67, 388 },
+					["coord"] = { 42.3, 92.67, TOWNLONG_STEPPES },
 					["g"] = {
 						i(90171, {	-- Odd'nirok's Clamshell
 							i(90172),	-- Clamshell Band
@@ -158,7 +158,7 @@ _.Zones =
 					},
 				}),
 				n(50791, {	-- Siltriss the Sharpener
-					["coord"] = { 59.2, 85.6, 388 },
+					["coord"] = { 59.2, 85.6, TOWNLONG_STEPPES },
 					["g"] = {
 						i(87623),	-- Razor-Sharp Chitin Choker
 						i(87622),	-- Yoke of Niuzao
@@ -173,7 +173,7 @@ _.Zones =
 					},
 				}),
 				n(50832, {  -- The Yowler
-					["coord"] = { 67.6, 74.6, 388 },
+					["coord"] = { 67.6, 74.6, TOWNLONG_STEPPES },
 					["g"] = {
 						i(87625),	-- Congealed Mist Amulet
 						i(87623),	-- Razor-Sharp Chitin Choker
@@ -188,7 +188,7 @@ _.Zones =
 					},
 				}),
 				n(50820, {	-- Yul Wildpaw
-					["coord"] = { 32.0, 61.8, 388 },
+					["coord"] = { 32.0, 61.8, TOWNLONG_STEPPES },
 					["g"] = {
 						i(87623),	-- Razor-Sharp Chitin Choker
 						i(87217),	-- Small Bag of Goods
@@ -207,7 +207,7 @@ _.Zones =
 						{ 47.42, 61.54, 422 },	-- Dread Wastes
 						{ 75.11, 67.47, KUN_LAI_SUMMIT },
 						{ 52.56, 18.85, THE_JADE_FOREST },
-						{ 36.58, 85.67, 388 },	-- Townlong Steppes
+						{ 36.58, 85.67, TOWNLONG_STEPPES },
 					},
 					["g"] = {
 						i(94230),	-- Reins of the Amber Primordial Direhorn
@@ -218,7 +218,7 @@ _.Zones =
 						{ 47.42, 61.54, 422 },	-- Dread Wastes
 						{ 75.11, 67.47, KUN_LAI_SUMMIT },
 						{ 52.56, 18.85, THE_JADE_FOREST },
-						{ 36.58, 85.67, 388 },	-- Townlong Steppes
+						{ 36.58, 85.67, TOWNLONG_STEPPES },
 					},
 					["g"] = {
 						i(94231),	-- Reins of the Jade Primordial Direhorn
@@ -230,7 +230,7 @@ _.Zones =
 						{ 39.83, 65.92, KRASARANG_WILDS },
 						{ 75.11, 67.47, KUN_LAI_SUMMIT },
 						{ 52.56, 18.85, THE_JADE_FOREST },
-						{ 36.58, 85.67, 388 },	-- Townlong Steppes
+						{ 36.58, 85.67, TOWNLONG_STEPPES },
 					},
 					["g"] = {
 						i(94229),	-- Reins of the Slate Primordial Direhorn

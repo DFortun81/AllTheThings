@@ -5,18 +5,18 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		m(388, {	-- Townlong Steppes
+		m(TOWNLONG_STEPPES, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(8, {	-- Burning Pandaren Spirit
-							["coord"] = { 57.0, 42.2, 388 },
+							["coord"] = { 57.0, 42.2, TOWNLONG_STEPPES },
 							["cr"] = 68463,	-- Burning Pandaren Spirit <Grand Master Pet Tamer>
 						}),
 						crit(32, {	-- Seeker Zusshi
-							["coord"] = { 36.2, 52.2, 388 },
+							["coord"] = { 36.2, 52.2, TOWNLONG_STEPPES },
 							["cr"] = 66918,	-- Seeker Zusshi <Grand Master Pet Tamer>
 						}),
 					},
@@ -40,8 +40,8 @@ _.Zones =
 						o(213960, {		-- Yaungol Fire Carrier
 							["questID"] = 31425,
 							["coords"] = {
-								{ 66.2, 44.7, 388 },
-								{ 66.8, 48.0, 388 },
+								{ 66.2, 44.7, TOWNLONG_STEPPES },
+								{ 66.8, 48.0, TOWNLONG_STEPPES },
 							},
 							["g"] = {
 								i(86518),	-- Yaungol Fire Carrier
@@ -96,11 +96,11 @@ _.Zones =
 					["g"] = {
 						o(213961, {	-- Abandoned Crate of Goods
 							["questID"] = 31427,	-- Abandoned Crate of Goods
-							["coord"] = { 62.8, 34.1, 388 },
+							["coord"] = { 62.8, 34.1, TOWNLONG_STEPPES },
 						}),
 						o(213844, {	-- Amber Encased Moth
 							["questID"] = 31426,
-							["coord"] = { 65.8, 86.1, 388 },
+							["coord"] = { 65.8, 86.1, TOWNLONG_STEPPES },
 							["g"] = {
 								i(86472),	-- Amber Encased Moth
 							},

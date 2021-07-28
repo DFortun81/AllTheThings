@@ -585,9 +585,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { KUN_LAI_SUMMIT },
 				}),
 				crit(5, {	-- Townlong Steppes
-					["coord"] = { 71.5, 56.3, 388 },
+					["coord"] = { 71.5, 56.3, TOWNLONG_STEPPES },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 388 },	-- Townlong Steppes
+					["maps"] = { TOWNLONG_STEPPES },
 				}),
 				crit(6, {	-- Vale of Eternal Blossoms
 					["coord"] = { 79.6, 37.2, 390 },
@@ -1291,9 +1291,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { KUN_LAI_SUMMIT },
 				}),
 				crit(5, {	-- Townlong Steppes
-					["coord"] = { 71.5, 56.3, 388 },
+					["coord"] = { 71.5, 56.3, TOWNLONG_STEPPES },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 388 },	-- Townlong Steppes
+					["maps"] = { TOWNLONG_STEPPES },
 				}),
 				crit(6, {	-- Vale of Eternal Blossoms
 					["coord"] = { 77.8, 33.1, 390 },

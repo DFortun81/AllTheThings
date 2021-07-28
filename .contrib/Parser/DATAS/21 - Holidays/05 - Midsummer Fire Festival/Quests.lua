@@ -2035,8 +2035,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(32501, {	-- Honor the Flame — Townlong Steppes
 			["provider"] = { "n", 69536 },	-- Townlong Steppes Flame Guardian
 			["isYearly"] = true,
-			["coord"] = { 71.5, 56.3, 388 },
-			["maps"] = { 388 },	-- Townlong Steppes
+			["coord"] = { 71.5, 56.3, TOWNLONG_STEPPES },
+			["maps"] = { TOWNLONG_STEPPES },
 		}),
 		q(32502, {	-- Honor the Flame — Valley of the Four Winds
 			["provider"] = { "n", 69550 },	-- Valley of the Four Winds Flame Guardian

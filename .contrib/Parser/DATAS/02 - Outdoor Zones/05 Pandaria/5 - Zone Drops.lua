@@ -9,7 +9,7 @@ _.Zones =
 			["maps"] = {
 				422,	-- Dread Wastes
 				THE_JADE_FOREST,
-				388,	-- Towlong Steppes
+				TOWNLONG_STEPPES,
 				KRASARANG_WILDS,
 			},
 			["g"] = {
@@ -26,7 +26,7 @@ _.Zones =
 					["maps"] = {
 						422,	-- Dread Wastes
 						THE_JADE_FOREST,
-						388,	-- Towlong Steppes
+						TOWNLONG_STEPPES,
 						KRASARANG_WILDS,
 					},
 					--]]
@@ -63,7 +63,7 @@ _.Zones =
 					["maps"] = {
 						422,	-- Dread Wastes
 						THE_JADE_FOREST,
-						388,	-- Towlong Steppes
+						TOWNLONG_STEPPES,
 						KRASARANG_WILDS,
 					},
 					--]]
@@ -81,7 +81,7 @@ _.Zones =
 					["maps"] = {
 						422,	-- Dread Wastes
 						THE_JADE_FOREST,
-						388,	-- Towlong Steppes
+						TOWNLONG_STEPPES,
 						KRASARANG_WILDS,
 					},
 					--]]
@@ -99,7 +99,7 @@ _.Zones =
 					["maps"] = {
 						422,	-- Dread Wastes
 						THE_JADE_FOREST,
-						388,	-- Towlong Steppes
+						TOWNLONG_STEPPES,
 						KRASARANG_WILDS,
 					},
 					--]]
@@ -117,7 +117,7 @@ _.Zones =
 					["maps"] = {
 						422,	-- Dread Wastes
 						THE_JADE_FOREST,
-						388,	-- Towlong Steppes
+						TOWNLONG_STEPPES,
 						KRASARANG_WILDS,
 					},
 					--]]
@@ -135,7 +135,7 @@ _.Zones =
 					["maps"] = {
 						422,	-- Dread Wastes
 						THE_JADE_FOREST,
-						388,	-- Towlong Steppes
+						TOWNLONG_STEPPES,
 						KRASARANG_WILDS,
 					},
 					--]]
