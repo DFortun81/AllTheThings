@@ -25,6 +25,9 @@ _.Zones =
 						crit(6, {	-- The Unseen Guests
 							["sourceQuests"] = { 63656 },	-- The Meaning of Wrath
 						}),
+						crit(7, {	-- The Power of Night
+							["sourceQuests"] = { 64437 },	-- Inform the Primus
+						}),
 					},
 				}),
 				ach(15107),	-- Conquering Korthia

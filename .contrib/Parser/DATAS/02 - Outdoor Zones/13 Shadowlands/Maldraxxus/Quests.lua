@@ -42,6 +42,14 @@ _.Zones =
 					["provider"] = { "n", 161559 },	-- Louison
 					["coord"] = { 54.4, 48.6, MALDRAXXUS },
 				}),
+				q(63678, {	-- Akarek Avenged
+					["sourceQuests"] = {
+						63677,	-- You Can Only Die
+						63676,	-- You Cannot Hide
+						63675,	-- You Cannot Run
+					},
+					["provider"] = { "n", 177437 },	-- Khaliiq
+				}),
 				q(59202, {	-- Among the Chosen
 					["sourceQuests"] = {
 						59231,	-- Fathomless Power
@@ -149,6 +157,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 58.3, 71.6, MALDRAXXUS },
+				}),
+				q(63674, {	-- By Your Leave
+					["sourceQuests"] = { 63990 },	-- The Blade in the Night
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 42.1, 23.2, MALDRAXXUS },
 				}),
 				q(57301, {	-- Callous Concoctions
 					["sourceQuests"] = { 58431 },	-- Pool of Potions
@@ -288,6 +301,11 @@ _.Zones =
 					["sourceQuests"] = { 59879 },	-- This Thing of Ours
 					["provider"] = { "n", 159830 },	-- Au'narim
 					["coord"] = { 53.6, 47.5, MALDRAXXUS },
+				}),
+				q(63679, {	-- Magical Mystery Tour!
+					["sourceQuests"] = { 63678 },	-- Akarek Avenged
+					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
+					["coord"] = { 74.7, 33.6, MALDRAXXUS },
 				}),
 				q(58617, {	-- Maintaining Order
 					["sourceQuests"] = { 57514 },	-- The First Act of War
@@ -483,6 +501,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 161559 },	-- Louison
 					["coord"] = { 54.4, 48.6, MALDRAXXUS },
+				}),
+				q(63990, {	-- The Blade in the Night
+					["sourceQuests"] = { 63728, 63673 },	-- Hunting Amid Houses (Kyrian/Necrolord/Venthyr, Night Fae)
+					["provider"] = { "n", 177471 },	-- Huln Highmountain
+					["coord"] = { 42.8, 25.2, MALDRAXXUS },
 				}),
 				q(60428, {	-- The Blade of the Primus
 					["sourceQuests"] = {
@@ -701,9 +724,21 @@ _.Zones =
 					["coord"] = { 53.6, 47.5, MALDRAXXUS },
 					["maps"] = { 1691 },	-- Shattered Grove
 				}),
-
-				-- Sojourner of Maldraxxus
-				-- Theater of Pain
+				q(63677, {	-- You Can Only Die
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
+				}),
+				q(63676, {	-- You Cannot Hide
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
+				}),
+				q(63675, {	-- You Cannot Run
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
+				}),
 
 				-- Bonus Objectives
 				q(62742, {	-- Avoid 'Em Like the Plague (pre-60)

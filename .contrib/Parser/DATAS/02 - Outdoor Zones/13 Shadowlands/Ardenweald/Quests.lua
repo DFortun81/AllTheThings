@@ -447,6 +447,11 @@ _.Zones =
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
 					["coord"] = { 63.5, 36.2, ARDENWEALD },
 				}),
+				q(64042, {	-- Rituals of Night
+					["sourceQuests"] = { 63681 },	-- Back to The Heart
+					["provider"] = { "n", 177434 },	-- Ysera
+					["coord"] = { 48.0, 53.9, ARDENWEALD },
+				}),
 				q(60064, {	-- Save Ol' Gertie
 					["sourceQuests"] = { 60062 },	-- The Shattered Harp
 					["provider"] = { "n", 167047 },	-- Artisan Rees
@@ -629,6 +634,11 @@ _.Zones =
 					["sourceQuests"] = { 60521 },	-- Call of the Hunt
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
 					["coord"] = { 51.3, 34.0, ARDENWEALD },
+				}),
+				q(63682, {	-- The Power of Elune
+					["sourceQuests"] = { 64042 },	-- Rituals of Night
+					["provider"] = { "n", 177434 },	-- Ysera
+					["coord"] = { 45.3, 64.8, ARDENWEALD },
 				}),
 				q(58724, {	-- The Queen's Request
 					["sourceQuests"] = { 58723 },	-- The Court of Winter
@@ -826,6 +836,12 @@ _.Zones =
 					["sourceQuests"] = { 60341 },	-- First on the Agenda
 					["provider"] = { "n", 170175 },	-- Featherlight
 					["coord"] = { 65.0, 19.5, ARDENWEALD },
+				}),
+				q(63683, {	-- Winter's Sigil
+					["sourceQuests"] = { 63682 },	-- The Power of Elune
+					["provider"] = { "n", 178669 },	-- Winter Queen
+					["coord"] = { 45.2, 65.1, ARDENWEALD },
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 
 				-- Bonus Objectives

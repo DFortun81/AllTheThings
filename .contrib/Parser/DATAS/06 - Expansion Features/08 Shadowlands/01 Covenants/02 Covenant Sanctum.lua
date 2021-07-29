@@ -279,6 +279,17 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 178260 },	-- The Stonewright
 						["coord"] = { 54.6, 40.3, SINFALL_REACHES },
 					}),
+					q(63728, {	-- Hunting Amid Houses TODO: fix customCollect hiding quest
+						["customCollect"] = { "SL_COV_KYR", "SL_COV_NEC", "SL_COV_VEN" },	-- Kyrian / Necrolord / Venthyr (Night Fae have their own version of the quest)
+						["sourceQuests"] = { 63672 },	-- A Cry From the Heart
+						["provider"] = { "n", 177434 },	-- Ysera
+						["coord"] = { 47.8, 53.5, ARDENWEALD },
+					}),
+					q(64437, {	-- Inform the Primus
+						["sourceQuests"] = { 63683 },	-- Winter's Sigil
+						["provider"] = { "n", 177434 },	-- Ysera
+						["coord"] = { 47.8, 53.6, THE_TRUNK },	-- Heart of the Forest
+					}),
 					q(63652, {	-- The "Unwelcome" Guests
 						["sourceQuests"] = { 63650 },	-- De-Infiltration
 						["provider"] = { "n", 158653 },	-- Prince Renathal
@@ -305,12 +316,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 63585 },	-- Blind Loyalty
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 						["coord"] = { 66.5, 16.5, ARCHONS_RISE },
-					}),
-					q(63728, {	-- Hunting Amid Houses
-					--	TODO - not sure if this is non-NF or Venthyr-only.  will verify on Kyrian/Necrolord
-						["sourceQuests"] = { 63672 },	-- A Cry From the Heart
-						["provider"] = { "n", 177434 },	-- Ysera
-						["coord"] = { 47.8, 53.5, ARDENWEALD },
 					}),
 					q(63593, {	-- New Sigil of the Kyrian
 					--	currently picked up on the same 'nil' map from A New Path

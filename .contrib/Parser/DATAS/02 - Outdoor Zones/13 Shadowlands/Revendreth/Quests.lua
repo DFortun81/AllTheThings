@@ -124,6 +124,14 @@ _.Zones =
 					["description"] = "The quest item drops from Depraved and Dredger mobs in the Court of the Harvesters.",
 					["provider"] = { "i", 172957 },	-- Atonement Crypt Key
 				}),
+				q(63681, {	-- Back to The Heart
+					["sourceQuests"] = { 63680 },	-- Out On the Edge
+					["providers"] = {
+						{ "n", 177962 },	-- Lady Moonberry <Court of Night>
+						{ "n", 177964 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
+					},
+					["coord"] = { 34.0, 9.65, REVENDRETH },
+				}),
 				q(58936, {	-- Beast Control
 				--	TODO: verify SQs.  i saw it after turning in 57098, "The Grove of Terror," not sure if it was available before that
 					["provider"] = { "o", 355296 },	-- Bounty: Beast Control
@@ -294,6 +302,11 @@ _.Zones =
 					["provider"] = { "n", 160248 },	-- Archivist Fane
 					["coord"] = { 73.0, 52.0, REVENDRETH },
 				}),
+				q(64092, {	-- Hunting Huln
+					["sourceQuests"] = { 63679 },	-- Magical Mystery Tour!
+					["provider"] = { "n", 177962 },	-- Lady Moonberry
+					["coord"] = { 25.3, 29.0, REVENDRETH },
+				}),
 				q(60514, {	-- Hunting Trophies
 					["sourceQuests"] = { 59014 },	-- King of the Hill
 					["provider"] = { "n", 156384 },	-- Huntmaster Constantin
@@ -393,6 +406,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 157650 },	-- Theotar
 				}),
+				q(64091, {	-- Mal'appropriated
+					["sourceQuests"] = { 64092 },	-- Hunting Huln
+					["provider"] = { "n", 179327 },	-- Mal'Ganis
+					["coord"] = { 37.9, 23.4, REVENDRETH },
+				}),
 				q(59715, {	-- Message for Matyas
 					["sourceQuests"] = {
 						59714,	-- A Fine Vintage
@@ -475,6 +493,14 @@ _.Zones =
 					["altQuests"] = { 57918 },	-- The Absolution of Souls
 					["provider"] = { "n", 160248 },	-- Archivist Fane
 					["coord"] = { 72.9, 52.0, REVENDRETH },
+				}),
+				q(63680, {	-- Out On the Edge
+					["sourceQuests"] = { 64090 },	-- The Big Squeeze
+					["providers"] = {
+						{ "n", 177964 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
+						{ "n", 177967 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
+					},
+					["coord"] = { 35.6, 22.6, REVENDRETH },
 				}),
 				q(62189, {	-- Parasol Components
 					["provider"] = { "i", 182738 },	-- Bundle of Smuggled Parasol Components
@@ -677,6 +703,11 @@ _.Zones =
 					["sourceQuests"] = { 57178 },	-- The Master Awaits
 					["provider"] = { "n", 156644 },	-- Sire Denathrius
 					["coord"] = { 57.4, 49.4, REVENDRETH },
+				}),
+				q(64090, {	-- The Big Squeeze
+					["sourceQuests"] = { 64091 },	-- Mal'appropriated
+					["provider"] = { "n", 177968 },	-- Cudgelface
+					["coord"] = { 38.0, 23.7, REVENDRETH },
 				}),
 				q(57876, {	-- The End of the Beginning
 					["sourceQuests"] = { 58086 },	-- The Master of Lies
@@ -942,99 +973,12 @@ _.Zones =
 				}),
 				-------------------------------------------------
 
-				q(63678, {	-- Akarek Avenged
-					["sourceQuests"] = {
-						63677,	-- You Can Only Die
-						63676,	-- You Cannot Hide
-						63675,	-- You Cannot Run
-					},
-					["provider"] = { "n", 177437 },	-- Khaliiq
-				}),
-				q(63681, {	-- Back to The Heart
-					["sourceQuests"] = { 63680 },	-- Out On the Edge
-					["providers"] = {
-						{ "n", 177962 },	-- Lady Moonberry <Court of Night>
-						{ "n", 177964 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
-					},
-					["coord"] = { 34.0, 9.65, REVENDRETH },
-				}),
-				q(63674, {	-- By Your Leave
-					["sourceQuests"] = { 63990 },	-- The Blade in the Night
-					["provider"] = { "n", 177435 },	-- Khaliiq
-					["coord"] = { 42.1, 23.2, MALDRAXXUS },
-				}),
-				q(64092, {	-- Hunting Huln
-					["sourceQuests"] = { 63679 },	-- Magical Mystery Tour!
-					["provider"] = { "n", 177962 },	-- Lady Moonberry
-					["coord"] = { 25.3, 29.0, REVENDRETH },
-				}),
-				q(64437, {	-- Inform the Primus
-					["sourceQuests"] = { 63683 },	-- Winter's Sigil
-					["provider"] = { "n", 177434 },	-- Ysera
-					["coord"] = { 47.8, 53.6, THE_TRUNK },	-- Heart of the Forest
-				}),
-				q(63679, {	-- Magical Mystery Tour!
-					["sourceQuests"] = { 63678 },	-- Akarek Avenged
-					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
-					["coord"] = { 74.7, 33.6, MALDRAXXUS },
-				}),
-				q(64091, {	-- Mal'appropriated
-					["sourceQuests"] = { 64092 },	-- Hunting Huln
-					["provider"] = { "n", 179327 },	-- Mal'Ganis
-					["coord"] = { 37.9, 23.4, REVENDRETH },
-				}),
-				q(63680, {	-- Out On the Edge
-					["sourceQuests"] = { 64090 },	-- The Big Squeeze
-					["provider"] = { "n", 177967 },	-- Lady Moonberry
-					["coord"] = { 35.6, 22.6, REVENDRETH },
-				}),
-				q(64042, {	-- Rituals of Night
-					["sourceQuests"] = { 63681 },	-- Back to The Heart
-					["provider"] = { "n", 177434 },	-- Ysera
-					["coord"] = { 48.0, 53.9, ARDENWEALD },
-				}),
-				q(64090, {	-- The Big Squeeze
-					["sourceQuests"] = { 64091 },	-- Mal'appropriated
-					["provider"] = { "n", 177968 },	-- Cudgelface
-					["coord"] = { 38.0, 23.7, REVENDRETH },
-				}),
-				q(63990, {	-- The Blade in the Night
-					["sourceQuests"] = { 63728 },	-- Hunting Amid Houses
-					["provider"] = { "n", 177471 },	-- Huln Highmountain
-					["coord"] = { 42.8, 25.2, MALDRAXXUS },
-				}),
 				q(63645, {	-- The Dawnkeep Prisoner
 				--	i think this is only for characters who haven't already killed Denathrius, so will have to find a way to check it off for characters who aren't eligible
 					["sourceQuests"] = { 63644 },	-- Dread Tidings
 					["provider"] = { "n", 168898 },	-- Prince Renathal
 					["coord"] = { 22.9, 43.7, REVENDRETH },
 				}),
-				q(63682, {	-- The Power of Elune
-					["sourceQuests"] = { 64042 },	-- Rituals of Night
-					["provider"] = { "n", 177434 },	-- Ysera
-					["coord"] = { 45.3, 64.8, ARDENWEALD },
-				}),
-				q(63683, {	-- Winter's Sigil
-					["sourceQuests"] = { 63682 },	-- The Power of Elune
-					["provider"] = { "n", 178669 },	-- Winter Queen
-					["coord"] = { 45.2, 65.1, ARDENWEALD },
-				}),
-				q(63677, {	-- You Can Only Die
-					["sourceQuests"] = { 63674 },	-- By Your Leave
-					["provider"] = { "n", 177435 },	-- Khaliiq
-					["coord"] = { 52.8, 68.6, MALDRAXXUS },
-				}),
-				q(63676, {	-- You Cannot Hide
-					["sourceQuests"] = { 63674 },	-- By Your Leave
-					["provider"] = { "n", 177435 },	-- Khaliiq
-					["coord"] = { 52.8, 68.6, MALDRAXXUS },
-				}),
-				q(63675, {	-- You Cannot Run
-					["sourceQuests"] = { 63674 },	-- By Your Leave
-					["provider"] = { "n", 177435 },	-- Khaliiq
-					["coord"] = { 52.8, 68.6, MALDRAXXUS },
-				}),
-
 
 
 				-- Bonus Objectives

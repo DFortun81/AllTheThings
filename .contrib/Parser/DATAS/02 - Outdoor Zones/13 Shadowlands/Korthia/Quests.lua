@@ -86,8 +86,8 @@ _.Zones =
 				}),
 			--	confirmed on live
 				q(63672, {	-- A Cry From the Heart
-					["description"] = "Requires Renown 52.",
 					["sourceQuests"] = { 63656 },	-- The Meaning of Wrath
+					["description"] = "Requires Renown 52.",
 					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
 					["coord"] = { 63.4, 24.6, KORTHIA },
 				}),
@@ -621,6 +621,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
+				q(64129, {	-- Charge of the Wild Hunt
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178840 },	-- Niya
+					["isDaily"] = true,
+					["coord"] = { 61.1, 21.2, KORTHIA },
+				}),
 				q(63787, {	-- Continued Efforts: Mauler's Outlook
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179149 },	-- Baroness Vashj
@@ -694,6 +700,12 @@ _.Zones =
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63958, {	-- Observational Records
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, KORTHIA },
+				}),
+				q(63960, {	-- Observational Records
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178844 },	-- Ta'nasi
 					["isDaily"] = true,
@@ -802,6 +814,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.4, 23.9, KORTHIA },
 				}),
+				q(63778, {	-- We Move Forward
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178840 },	-- Niya
+					["isDaily"] = true,
+					["coord"] = { 61.1, 21.2, KORTHIA },
+				}),
 				q(64043, {	-- We Need a Healer - You!
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179216 },	-- Mikanikos
@@ -828,12 +846,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
-				q(64129, {	-- Charge of the Wild Hunt
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178840 },	-- Niya
-					["isDaily"] = true,
-					["coord"] = { 61.1, 21.2, KORTHIA },
-				}),
 				q(63788, {	-- Continued Efforts: Sanctuary of Guidance
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178800 },	-- Voitha
@@ -851,12 +863,6 @@ _.Zones =
 					["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.7, KORTHIA },
-				}),
-				q(63960, {	-- Encrypted Databanks
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178844 },	-- Ta'nasi
-					["isDaily"] = true,
-					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(64240, {	-- Flight of the Kyrian
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -938,12 +944,6 @@ _.Zones =
 					["provider"] = { "n", 178839 },	-- Dreamweaver
 					["isDaily"] = true,
 					["coord"] = { 61.4, 21.4, KORTHIA },
-				}),
-				q(63778, {	-- We Move Forward
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178840 },	-- Niya
-					["isDaily"] = true,
-					["coord"] = { 61.1, 21.2, KORTHIA },
 				}),
 			}),
 		}),
