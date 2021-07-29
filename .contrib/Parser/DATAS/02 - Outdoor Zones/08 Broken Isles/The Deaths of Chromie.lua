@@ -151,10 +151,10 @@ _.Zones =
 								i(151285),	-- Keg of Booty Bay Rum
 							},
 						}),
-						n(123782, {	-- Fras Siabi
+						n(123782, {	-- Ezra Grimm
 							["g"] = {
 								i(151284),	-- Flinty Firestarter
-								i(151280),	-- Fras' Special Pipe Blend
+								i(151280),	-- Grimm's Special Pipe Blend
 							},
 						}),
 						n(123778, {	-- George Goodman <General Goods>

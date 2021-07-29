@@ -140,7 +140,7 @@ _.Zones =
 						}),
 						-- #endif
 						q(10071, {	-- Evisceration (Cata+) / Well Watcher Solanian (TBC)
-							["qg"] = 15285,	-- Pathstalker Kariel <Rogue Trainer>
+							["qg"] = 15285,	-- Pathstalker Avokor <Rogue Trainer>
 							["sourceQuest"] = 9392,	-- Rogue Training
 							-- #if AFTER LEGION
 							["coord"] = { 63.8, 42.2, SUNSTRIDER_ISLE },
@@ -631,7 +631,7 @@ _.Zones =
 						}),
 						-- #if BEFORE CATA
 						q(10071, {	-- Well Watcher Solanian (TBC) / Evisceration (Cata+)
-							["qg"] = 15285,	-- Pathstalker Kariel <Rogue Trainer>
+							["qg"] = 15285,	-- Pathstalker Avokor <Rogue Trainer>
 							["sourceQuest"] = 9392,	-- Rogue Training
 							-- #if AFTER LEGION
 							["coord"] = { 63.8, 42.2, SUNSTRIDER_ISLE },

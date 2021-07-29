@@ -37,7 +37,7 @@ _.Instances = { tier(1, {	-- Classic
 								un(REMOVED_FROM_GAME, i(12725)),	-- Plans: Enchanted Thorium Helm
 							},
 						}),
-						i(18401, {	-- Foror's Compendium of Dragon Slaying
+						i(18401, {	-- Nostro's Compendium of Dragon Slaying
 							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { WARRIOR, PALADIN },
 							["description"] = "This item used to drop from any boss in Dire Maul.",
@@ -221,7 +221,7 @@ _.Instances = { tier(1, {	-- Classic
 								un(REMOVED_FROM_GAME, i(18466)),	--Royal Seal of Eldre'Thalas
 							},
 						}),
-						i(18401, {	-- Foror's Compendium of Dragon Slaying
+						i(18401, {	-- Nostro's Compendium of Dragon Slaying
 							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { WARRIOR, PALADIN },
 							["description"] = "This item used to drop from any boss in Dire Maul.",
@@ -496,7 +496,7 @@ _.Instances = { tier(1, {	-- Classic
 								un(REMOVED_FROM_GAME, i(12726)),	-- Plans: Enchanted Thorium Leggings
 							},
 						}),
-						i(18401, {	-- Foror's Compendium of Dragon Slaying
+						i(18401, {	-- Nostro's Compendium of Dragon Slaying
 							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { WARRIOR, PALADIN },
 							["description"] = "This item used to drop from any boss in Dire Maul.",
@@ -569,7 +569,7 @@ _.Instances = { tier(1, {	-- Classic
 							["sourceQuest"] = 27110,	-- The Madness Within
 							["g"] = {
 								i(65949),	-- Dire Maul
-								i(65973),	-- Fras Siabi's Cigar Cutter
+								i(65973),	-- Grimm's Cigar Cutter
 								i(65924),	-- Shen'dralar Trident
 								i(65994),	-- Staff of Athen'a
 							},

@@ -17,7 +17,7 @@ _.Achievements =
 			n(-10018, {	-- Children's Week
 				ach(1792),	-- Aw, Isn't It Cute?
 				ach(1788, {	-- Bad Example
-					crit(1),	-- Tigule and Foror's Strawberry Ice Cream
+					crit(1),	-- Tigule's Strawberry Ice Cream
 					crit(2),	-- Tasty Cupcake
 					crit(3),	-- Red Velvet Cupcake
 					crit(4),	-- Delicious Chocolate Cake

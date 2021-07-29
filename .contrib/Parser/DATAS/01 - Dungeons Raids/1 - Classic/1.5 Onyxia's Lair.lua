@@ -113,9 +113,9 @@ _.Instances = { tier(1, {	-- Classic
 						i(18406),	-- Onyxia Blood Talisman
 					},
 				})),
-				q(7507, bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {	-- Foror's Compendium
-					["provider"] = { "i", 18401 },	-- Foror's Compendium of Dragon Slaying
-					["description"] = "You get this quest by looting Foror's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
+				q(7507, bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {	-- Nostro's Compendium
+					["provider"] = { "i", 18401 },	-- Nostro's Compendium of Dragon Slaying
+					["description"] = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
 					["classes"] = { WARRIOR, PALADIN },
 					["maps"] = { DIRE_MAUL },
 					["lvl"] = lvlsquish(60, 30, 60),
@@ -191,7 +191,7 @@ _.Instances = { tier(1, {	-- Classic
 				})),
 				q(7508, bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {	-- The Forging of Quel'Serrar
 					["qg"] = 14368,	-- Lorekeeper Lydros
-					["sourceQuest"] = 7507,	-- Foror's Compendium
+					["sourceQuest"] = 7507,	-- Nostro's Compendium
 					["maps"] = { DIRE_MAUL },
 					["classes"] = { WARRIOR, PALADIN },
 					["cost"] = {

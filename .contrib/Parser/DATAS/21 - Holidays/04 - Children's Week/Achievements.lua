@@ -113,10 +113,10 @@ _.Holidays =
 										["cost"] = { { "i", 43490, 1 } },	-- Tasty Cupcake
 										-- ["description"] = "Comes from cooking.",
 									},
-									{	-- Tigule and Foror's Strawberry Ice Cream
+									{	-- Tigule's Strawberry Ice Cream
 										["achievementID"] = 1788,	-- Bad Example
-										["criteriaID"] = 1,			-- Tigule and Foror's Strawberry Ice Cream
-										["cost"] = { { "i", 7228, 1 } },	-- Tigule and Foror's Strawberry Ice Cream
+										["criteriaID"] = 1,			-- Tigule's Strawberry Ice Cream
+										["cost"] = { { "i", 7228, 1 } },	-- Tigule's Strawberry Ice Cream
 										["crs"] = {
 											14480,	-- Alowicious Czervik
 											47383,	-- Brivelthwerp

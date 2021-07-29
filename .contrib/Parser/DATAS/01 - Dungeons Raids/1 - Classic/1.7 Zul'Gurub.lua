@@ -1544,7 +1544,7 @@ _.Instances = { tier(1, {	-- Classic
 					{ "i", 19975, 5 },	-- Zulian Mudskunk
 				},
 				["g"] = {
-					un(REMOVED_FROM_GAME, i(19945)),	-- Foror's Eyepatch
+					un(REMOVED_FROM_GAME, i(19945)),	-- Lizardscale Eyepatch
 					un(REMOVED_FROM_GAME, i(19947)),	-- Nat Pagle's Broken Reel
 					un(REMOVED_FROM_GAME, i(19944)),	-- Nat Pagle's Fish Terminator
 					un(REMOVED_FROM_GAME, i(19946)),	-- Tigule's Harpoon

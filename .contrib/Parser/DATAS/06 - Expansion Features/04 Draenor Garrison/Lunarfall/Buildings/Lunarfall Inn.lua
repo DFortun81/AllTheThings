@@ -158,7 +158,7 @@ _.ExpansionFeatures =
 								follower(386),	-- Kai Earthwhisper
 								follower(416),	-- Kalandra Starhelm
 								follower(432),	-- Kang Bramblestaff
-								follower(112),	-- Kariel Whisperwind
+								follower(112),	-- Denalea Meadowglaive
 								follower(414),	-- Karyn Whitmoor
 								follower(284),	-- Kathrena Winterwisp
 								follower(407),	-- Kayt Miccoats

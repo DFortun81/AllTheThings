@@ -148,7 +148,7 @@ _.Zones =
 					["provider"] = { "n", 7750 },	-- Corporal Thund Splithoof
 					["sourceQuest"] = 2702,	-- Heroes of Old
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(10659)),	-- Shard of Afrasa
+						un(REMOVED_FROM_GAME, i(10659)),	-- Shard of the Splithooves
 					},
 				}),
 				q(27600, {	-- In With a Bang

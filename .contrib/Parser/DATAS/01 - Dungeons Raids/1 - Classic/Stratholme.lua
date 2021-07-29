@@ -38,7 +38,7 @@ _.Instances = { tier(1, {	-- Classic
 								i(65928),	-- Leggings of Stratholme
 							},
 						}),
-						q(27192, {	-- The Great Fras Siabi
+						q(27192, {	-- The Great Ezra Grimm
 							["provider"] = { "n", 45323 },	-- Packmaster Stonebruiser
 						}),
 					}),
