@@ -283,14 +283,13 @@ _.Zones =
 						},
 					}),
 					q(40213),	-- Hounds Abound
-					--[[
+					
 					q(40212, {	-- Wrong End of the Knife
 						["requireSkill"] = LEATHERWORKING,
-						["provider"] = { 98969 },	-- Stalriss Dawnrunner
+						["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
 						["coord"] = { 26.6, 71.6, 680 },
 						["sourceQuests"] = { 40211 },	-- Demon Flesh
 					}),
-					--]]
 				}),
 				prof(SKINNING, {
 					q(40158),	-- Darkheart Thicket: Demons Be Different

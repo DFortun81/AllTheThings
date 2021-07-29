@@ -276,15 +276,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
 						["coord"] = { 52.3, 78.1, 24 },
 					}),
-					--[[
 					q(49812, {	-- Delas in Dalaran
-						["provider"] = { 90251 },	-- Aponi Brightmane
+						["provider"] = { "n", 90251 },	-- Aponi Brightmane
 						["classes"] = { PALADIN },
 						["races"] = { BLOODELF, DARKIRONDWARF }, -- Might need confirmation
 						["sourceQuests"] = { 43486 },	-- Cracking the Codex
 						["description"] = "Complete Cracking the Codex (43486) and don't accept the next quest. Go back to Aponi instead."
 					}),
-					--]]
 					q(45149, {	-- Ending the Crescent Curse
 						["sourceQuests"] = { 45147 },	-- Felstone Destruction
 						["classes"] = { PALADIN },

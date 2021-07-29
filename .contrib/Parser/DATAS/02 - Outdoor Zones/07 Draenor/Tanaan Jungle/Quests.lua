@@ -375,17 +375,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 37889,	-- The Invasion of Tanaan
 				}),
-				--q(39395, {	-- Oronok's Offer
-				--	["provider"] = { 92338 },	-- Oronok Torn-heart
-				--	["coord"] = { 62.8, 27.8, 534 },
-				--	["sourceQuests"] = {
-				--		39394,	-- The Cipher of Damnation (A)
-				--		38463,	-- The Cipher of Damnation (H)
-				--	},
-				--	["g"] = {
-				--		follower(468),	-- Oronok Torn-heart
-				--	},
-				--}),
+				q(39395, {	-- Oronok's Offer
+					["provider"] = { "n", 92338 },	-- Oronok Torn-heart
+					["coord"] = { 62.8, 27.8, 534 },
+					["sourceQuests"] = {
+						39394,	-- The Cipher of Damnation (A)
+						38463,	-- The Cipher of Damnation (H)
+					},
+					["g"] = {
+						follower(468),	-- Oronok Torn-heart
+					},
+				}),
 				q(39526, {	-- Pressing the Attack
 					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
 					["coord"] = { 61.6, 45.7, 534 },
