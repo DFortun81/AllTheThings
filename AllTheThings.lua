@@ -3738,13 +3738,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			group.total = 0;
 			group.progress = 0;
 			BuildGroups(group, group.g);
-			app.UpdateGroups(group, group.g);
-			if not group.collectibleAsCost and group.collectible then
-				group.total = group.total + 1;
-				if group.collected then
-					group.progress = group.progress + 1;
-				end
-			end
+			app.TopLevelUpdateGroup(group);
 			-- reapply the previous BoE filter
 			app.ItemBindFilter = oldItemBindFilter;
 		end
@@ -11727,6 +11721,18 @@ end
 app.UpdateGroup = UpdateGroup;
 app.UpdateGroups = UpdateGroups;
 app.UpdateParentProgress = UpdateParentProgress;
+-- For directly applying the full Update operation for the top-level data group within a window
+local function TopLevelUpdateGroup(group, window)
+	UpdateGroups(group, group.g, window);
+	if group.collectible then
+		group.total = group.total + 1;
+		if group.collected then
+			group.progress = group.progress + 1;
+		end
+	end
+	if group.OnUpdate then group.OnUpdate(group); end
+end
+app.TopLevelUpdateGroup = TopLevelUpdateGroup;
 
 -- Helper Methods
 -- The following Helper Methods are used when you obtain a new appearance.
@@ -12710,7 +12716,6 @@ function app:CreateMiniListForGroup(group)
 			end
 			-- Create a copy of the root group
 			local root = CreateObject(group);
-			root.collectible = not root.repeatable;
 			local g = { root };
 			popout.isQuestChain = true;
 
@@ -12727,7 +12732,6 @@ function app:CreateMiniListForGroup(group)
 					end
 					if sq then
 						root = CloneData(sq);
-						root.collectible = true;
 						root.g = g;
 						g = { root };
 					end
@@ -14301,7 +14305,7 @@ local function UpdateWindow(self, force, got)
 				self.data.progress = 0;
 				self.data.total = 0;
 				-- print("UpdateGroups",self.suffix or self.Suffix)
-				UpdateGroups(self.data, self.data.g, self);
+				TopLevelUpdateGroup(self.data, self);
 				-- print("Done")
 			end
 			ProcessGroup(self.rowData, self.data);
@@ -15434,7 +15438,7 @@ customWindowUpdates["AuctionData"] = function(self)
 	self.data.indent = 0;
 	self.data.back = 1;
 	BuildGroups(self.data, self.data.g);
-	UpdateGroups(self.data, self.data.g);
+	TopLevelUpdateGroup(self.data, self);
 	self.data.visible = true;
 	self:BaseUpdate(true);
 end;
@@ -16421,8 +16425,7 @@ customWindowUpdates["SourceFinder"] = function(self)
 		self.data.progress = 0;
 		self.data.total = 0;
 		BuildGroups(self.data, self.data.g);
-		UpdateGroups(self.data, self.data.g);
-		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+		TopLevelUpdateGroup(self.data, self);
 		self:BaseUpdate(true);
 	end
 end;
@@ -18911,7 +18914,7 @@ local ProcessAuctionData = function()
 		return (b.priority or 0) > (a.priority or 0);
 	end);
 	BuildGroups(window.data, window.data.g);
-	UpdateGroups(window.data, window.data.g);
+	TopLevelUpdateGroup(window.data, window);
 	window:Show();
 	window:Update();
 end
