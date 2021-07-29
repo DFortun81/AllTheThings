@@ -317,6 +317,11 @@ namespace ATT
             // Check to make sure the data is valid.
             if (data == null) return false;
 
+#if RETAIL
+            // Retail has no reason to include Objective groups since the in-game Quest system does not warrant ATT including all this extra information
+            if (data.ContainsKey("objectiveID")) return false;
+#endif
+
             // If this item has an "unobtainable" flag on it, meaning for a different phase of content.
             if (data.TryGetValue("u", out long phase))
             {
@@ -2102,7 +2107,7 @@ namespace ATT
                             // This means that it becomes really easy to merge into the database.
                             if (pair.Value is List<object> illusionDB)
                             {
-                                foreach(var o in illusionDB)
+                                foreach (var o in illusionDB)
                                 {
                                     if (o is Dictionary<string, object> illusion)
                                     {
