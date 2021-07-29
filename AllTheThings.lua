@@ -10378,6 +10378,22 @@ app.CreateVignette = function(id, t)
 end
 end)();
 
+-- Will print a warning message and play a warning sound if the given QuestID begin completed will prevent being able to complete a breadcrumb
+-- (as far as ATT is capable of knowing)
+app.CheckForBreadcrumbPrevention = function(questID)
+	local nextQuests = app.SearchForField("nextQuests", questID);
+	if nextQuests then
+		local warning;
+		for _,group in pairs(nextQuests) do
+			if not group.collected and app.RecursiveGroupRequirementsFilter(group) then
+				app.print(string.format(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, app:Linkify(questID, "149bfd", "search:questID:"..questID), group.text or RETRIEVING_DATA, app:Linkify(group.questID, "7f40bf", "search:questID:"..group.questID)));
+				warning = true;
+			end
+		end
+		if warning then app:PlayRemoveSound(); end
+	end
+end
+
 app:RegisterEvent("QUEST_SESSION_JOINED");
 end)();
 
@@ -20099,17 +20115,8 @@ app.events.QUEST_ACCEPTED = function(questID)
 		PrintQuestInfo(questID, true, freq);
 		-- Check if this quest is a nextQuest of a non-collected breadcrumb if breadcrumbs are being tracked
 		if app.Settings:Get("Thing:QuestBreadcrumbs") then
-			local nextQuests = app.SearchForField("nextQuests", questID);
-			if nextQuests then
-				local warning;
-				for _,group in pairs(nextQuests) do
-					if not group.collected and app.RecursiveGroupRequirementsFilter(group) then
-						app.print(string.format(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, app:Linkify(questID, "149bfd", "search:questID:"..questID), group.text or RETRIEVING_DATA, app:Linkify(group.questID, "7f40bf", "search:questID:"..group.questID)));
-						warning = true;
-					end
-				end
-				if warning then app:PlayRemoveSound(); end
-			end
+			-- Run this warning check after a small delay in case addons pick up quests before the turned in quest is registered as complete
+			DelayedCallback(app.CheckForBreadcrumbPrevention, 1, questID);
 		end
 		-- Make sure windows update incase any show the picked up quest
 		app:UpdateWindows();

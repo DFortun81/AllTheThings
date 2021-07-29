@@ -440,3 +440,7 @@ _.Zones =
 		}),
 	}),
 };
+
+_.HiddenQuestTriggers = {
+	q(57741),	-- when defeating Sundancer after also having ridden Sundancer using the Skyfeather Glider
+};
