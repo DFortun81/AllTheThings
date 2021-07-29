@@ -722,3 +722,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(39410),	-- (Tracking Quest) First interaction with the Garrison Mission Table this week. Completed a bunch of mission + one of the followers leveled up
+	q(39408),	-- (Tracking Quest) interact with the mission table.
+};

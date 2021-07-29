@@ -1273,4 +1273,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 });
 _.HiddenQuestTriggers = {
 	q(36885),	-- Ogre Waygate
+	q(36364),	-- Spires - Treasure 041 - Toxicfang Venom
 };

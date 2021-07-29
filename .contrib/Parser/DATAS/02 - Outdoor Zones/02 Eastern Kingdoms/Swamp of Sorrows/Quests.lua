@@ -277,6 +277,7 @@ _.Zones =
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27857,	-- We're Under Attack!
+					["isBreadcrumb"] = true,
 				}),
 				q(1392, {	-- Noboru the Cudgel
 					["u"] = REMOVED_FROM_GAME,
@@ -331,6 +332,7 @@ _.Zones =
 					["provider"] = { "n", 47041 },	-- Neeka Bloodscar
 					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 27906,	-- Neeka Bloodscar
 				}),
 				q(27843, {	-- Reinforcements Denied
 					["provider"] = { "n", 46676 },	-- Joanna Blueheart
@@ -384,6 +386,7 @@ _.Zones =
 					["provider"] = { "n", 47041 },	-- Neeka Bloodscar
 					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 27906,	-- Neeka Bloodscar
 				}),
 				q(27818, {	-- Slithering Signs
 					["provider"] = { "n", 46172 },	-- Baba Bogbrew

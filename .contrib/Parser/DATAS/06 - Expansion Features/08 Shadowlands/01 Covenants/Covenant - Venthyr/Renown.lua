@@ -63,7 +63,7 @@ _.HiddenQuestTriggers = {
 	q(64381),	-- hitting Renown 48 [Death Knight] (received Memory of Insatiable Hunger)
 	-- q( ),	-- hitting Renown 48 [Demon Hunter] (received Memory of ??)
 	q(64389),	-- hitting Renown 48 [Druid] (received Memory of ??)
-	-- q( ),	-- hitting Renown 48 [Hunter] (received Memory of ??)
+	q(64419),	-- hitting Renown 48 [Hunter] (received Memory of the Pouch of Razor Fragments)
 	q(64390),	-- hitting Renown 48 [Mage] (received Memory of Sinful Delight)
 	-- q( ),	-- hitting Renown 48 [Monk] (received Memory of ??)
 	q(64400),	-- hitting Renown 48 [Paladin] (received Memory of Radiant Embers)

@@ -283,6 +283,14 @@ _.Zones =
 						},
 					}),
 					q(40213),	-- Hounds Abound
+					--[[
+					q(40212, {	-- Wrong End of the Knife
+						["requireSkill"] = LEATHERWORKING,
+						["provider"] = { 98969 },	-- Stalriss Dawnrunner
+						["coord"] = { 26.6, 71.6, 680 },
+						["sourceQuests"] = { 40211 },	-- Demon Flesh
+					}),
+					--]]
 				}),
 				prof(SKINNING, {
 					q(40158),	-- Darkheart Thicket: Demons Be Different
@@ -321,9 +329,6 @@ _.Zones =
 						["requireSkill"] = SKINNING,
 						["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
 						["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
-					}),
-					q(40212, {	-- Wrong End of the Knife
-						["requireSkill"] = SKINNING,
 					}),
 				}),
 				prof(TAILORING, {

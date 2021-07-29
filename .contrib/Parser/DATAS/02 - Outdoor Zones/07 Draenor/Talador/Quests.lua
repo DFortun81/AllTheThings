@@ -1884,3 +1884,6 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(34199),	-- Vignette: Anchorite's Sojourn
+};

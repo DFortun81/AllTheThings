@@ -370,7 +370,7 @@ _.Zones =
 						i(175312),	-- Resilient Outcast's Coif (no azerite version)
 						i(175347),	-- Resilient Outcast's Spaulders (no azerite version)
 						i(175313),	-- Scorching Sands Mask (no azerite version)
-						i(175338),	-- Scorching Sands Shoulderspads (no azerite version)
+						i(175348),	-- Scorching Sands Shoulderspads (no azerite version)
 					},
 				}),
 				q(49141, {	-- Diplomacy and Dominance
@@ -433,7 +433,7 @@ _.Zones =
 									i(155385),	-- Exiled Veteran's Cuirass
 									i(155406),	-- Exiled Veteran's Pauldrons
 									i(155387),	-- Scorching Sands Wraps
-									i(155405),	-- Scorching Sand Shoulderpads
+									i(155405),	-- Scorching Sands Shoulderguards
 								},
 						}),
 						i(175373),	-- Lastwind Robes (no azerite item)
@@ -443,7 +443,7 @@ _.Zones =
 						i(175370),	-- Exiled Veteran's Cuirass (no azerite item)
 						i(175339),	-- Exiled Veteran's Pauldrons (no azerite item)
 						i(175372),	-- Scorching Sands Wraps (no azerite item)
-						i(175348),	-- Scorching Sand Shoulderpads (no azerite item)
+						i(175338),	-- Scorching Sands Shoulderguards (no azerite item)
 					},
 				}),
 				q(51062, {	-- Escaping Zem'lan
