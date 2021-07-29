@@ -20,3 +20,6 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(64288),	-- Paragon of Ve'nari
+};

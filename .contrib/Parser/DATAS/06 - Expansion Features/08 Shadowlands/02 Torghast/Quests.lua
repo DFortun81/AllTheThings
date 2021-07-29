@@ -721,6 +721,14 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["name"] = "Mort'regar, Layer 10",
 				}),
+				q(63886, {	-- Mort'regar, Layer 11
+					["isWeekly"] = true,
+					["name"] = "Mort'regar, Layer 11",
+				}),
+				q(63887, {	-- Mort'regar, Layer 12
+					["isWeekly"] = true,
+					["name"] = "Mort'regar, Layer 12",
+				}),
 
 				-- Skoldus Hall
 				q(59328, {	-- Skoldus Hall, Layer 1

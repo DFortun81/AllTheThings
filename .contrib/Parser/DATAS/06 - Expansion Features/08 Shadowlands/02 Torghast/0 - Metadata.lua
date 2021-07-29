@@ -79,7 +79,11 @@ _.ExpansionFeatures =
 				1804,	-- Skoldus Hall - Layer 3, Floor 5
 				1809,	-- Skoldus Hall - Layer 3, Floor 5
 				--
+				1983,	-- Skoldus Hall - Layer 12, Some floor
+				--
 				1623,	-- Soulforges - Layer 8, Floor 4
+				--
+				1981,	-- Soulforges - Layer 12, Some floor
 				--
 				1792,	-- Upper Reaches - Layer 1, Floor 1 / Layer 3, Floor 4
 				1791,	-- Upper Reaches - Layer 1, Floor 2 / Layer 2, Floor 4 / Layer 3, Floor 1
@@ -127,6 +131,8 @@ _.ExpansionFeatures =
 				1811,	-- Torghast
 				1812,	-- Torghast
 				1911,	-- Torghast Entrance
+				--
+				1986,	-- Uknown floor(Probably Mort-regar)
 			},
 		}),
 	}),

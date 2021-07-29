@@ -69,6 +69,18 @@ _.Zones =
 						},
 					}),
 				}),
+				prof(ENGINEERING, {
+					q(40861, {	-- In My Sights
+						["provider"] = { "n", 102197 },	-- Fargo Flintlocke
+						["coord"] = { 59.8, 62.2, 641 },
+						["sourceQuest"] = 40860,	-- Resupplying the Line
+					}),
+					q(40862, {	-- All Charged Up
+						["provider"] = { "n", 102197 },	-- Fargo Flintlocke
+						["coord"] = { 59.8, 62.2, 641 },
+						["sourceQuest"] = 40861,	-- In My Sights
+					}),
+				}),
 				prof(FISHING, {
 					n(-10067, {	-- Artifact
 						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",

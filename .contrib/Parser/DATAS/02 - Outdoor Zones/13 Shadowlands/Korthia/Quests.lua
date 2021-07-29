@@ -952,7 +952,7 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(64563),	-- triggered when turning in #64556, "In Need of Assistance"
-	q(64737),	-- triggered when turning in #64271, "A More Civilized Way" - received i(185115), Redeemed Inquisitor's Drape - perhaps a universal 'received covenant transmog' tracking quest?  got it the next day on my Kyrian shaman, who received i(184989), Foresworn Aspirant's Wraps.  was the first covenant mog for both characters ever but perhaps could be a weekly lockout or something?
+	q(64737),	-- triggered when turning in #64271, "A More Civilized Way" - received i(185115), Redeemed Inquisitor's Drape - perhaps a universal 'received covenant transmog' tracking quest?  got it the next day on my Kyrian shaman, who received i(184989), Foresworn Aspirant's Wraps.  was the first covenant mog for both characters ever but perhaps could be a weekly lockout or something? (See Errors for other ways to get this)
 };
 
 _NeverImplemented = {

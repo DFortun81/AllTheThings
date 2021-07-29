@@ -1388,4 +1388,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 _.HiddenQuestTriggers = {
 	q(61268),	-- Triggered from buff recieved from Kyrian Conductor Tier 3
 	q(61267),	-- Triggered from buff recieved from Kyrian Conductor Tier 3
+	q(61266),	-- Triggered from buff recieved from Kyrian Conductor Tier 3
 };

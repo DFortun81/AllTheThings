@@ -83,6 +83,9 @@ _.Zones =
 						}),
 					},
 				}),
+				q(39451 , {	-- Assault on Ironhold Harbor [Bonus Objective]
+					["coord"] = { 61.5, 45.9, 534 },
+				}),
 				q(38441, {	-- Assault on The Fel Forge
 					["coord"] = { 61.5, 45.9, 534 },
 					["races"] = HORDE_ONLY,
@@ -102,6 +105,10 @@ _.Zones =
 							["achievementID"] = 10068,	-- Draenor's Last Stand
 						}),
 					},
+				}),
+				q(38439, {	-- Assault on The Fel Forge [Bonus Objective]
+					["coord"] = { 58.5, 60.4, 534 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38252, {	-- Assault on the Ruins of Kra'nak
 					["coord"] = { 61.5, 45.9, 534 },
@@ -123,6 +130,10 @@ _.Zones =
 						}),
 					},
 				}),
+				q(39447 , {	-- Assault on the Ruins of Kra'nak [Bonus Objective]
+					["coord"] = { 58.5, 60.4, 534 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(38449, {	-- Assault on the Temple of Sha'naar
 					["coord"] = { 61.5, 45.9, 534 },
 					["races"] = HORDE_ONLY,
@@ -142,6 +153,10 @@ _.Zones =
 							["achievementID"] = 10068,	-- Draenor's Last Stand
 						}),
 					},
+				}),
+				q(39449, {	-- Assault on the Temple of Sha'naar [Bonus Objective]
+					["coord"] = { 58.5, 60.4, 534 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38586, {	-- Assault on the Throne of Kil'jaeden
 					["coord"] = { 61.5, 45.9, 534 },
@@ -163,6 +178,10 @@ _.Zones =
 						}),
 					},
 				}),
+				q(38439 , {	-- Assault on the Throne of Kil'jaeden [Bonus Objective]
+					["coord"] = { 58.5, 60.4, 534 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(38047, {	-- Battle At The Iron Front
 					["coord"] = { 61.5, 45.9, 534 },
 					["races"] = HORDE_ONLY,
@@ -181,6 +200,14 @@ _.Zones =
 						37935,	-- The Assault Base (horde)
 					},
 				}),
+				q(39443, {	-- Battle At The Iron Front [Bonus Objective]
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 58.5, 60.4, 534 },
+					["sourceQuests"] = {
+						38445,	-- The Assault Base (alliance)
+						37935,	-- The Assault Base (horde)
+					},
+				}),
 				q(38046, {	-- Battle At The Iron Front
 					["coord"] = { 58.5, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
@@ -192,6 +219,7 @@ _.Zones =
 					},
 				}),
 				q(38044, {	-- Bleeding the Bleeding Hollow
+					["sourceQuest"] = 38453,
 					["coord"] = { 61.5, 45.9, 534 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -201,12 +229,13 @@ _.Zones =
 						}),
 					},
 				}),
-				q(38045, {	-- Bleeding the Bleeding Hollow
+				q(39441, {	-- Bleeding the Bleeding Hollow [Bonus Objective]
 					["sourceQuest"] = 38453,
 					["coord"] = { 61.5, 45.9, 534 },
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38045, {	-- Bleeding the Bleeding Hollow
+					["sourceQuest"] = 38453,
 					["coord"] = { 58.5, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
