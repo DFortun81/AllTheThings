@@ -637,6 +637,10 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["name"] = "Coldheart Interstitia, Layer 11",
 				}),
+				q(63883, {	-- Coldheart Interstitia, Layer 12
+					["isWeekly"] = true,
+					["name"] = "Coldheart Interstitia, Layer 12",
+				}),
 
 				-- Fracture Chambers
 				q(58186, {	-- Fracture Chambers, Layer 1
@@ -678,6 +682,14 @@ _.ExpansionFeatures =
 				q(63873, {	-- Fracture Chambers, Layer 10
 					["isWeekly"] = true,
 					["name"] = "Fracture Chambers, Layer 10",
+				}),
+				q(63874, {	-- Fracture Chambers, Layer 11
+					["isWeekly"] = true,
+					["name"] = "Fracture Chambers, Layer 11",
+				}),
+				q(63875, {	-- Fracture Chambers, Layer 12
+					["isWeekly"] = true,
+					["name"] = "Fracture Chambers, Layer 12",
 				}),
 
 				-- Mort'regar
@@ -874,6 +886,10 @@ _.ExpansionFeatures =
 				q(63890, {	-- Upper Reaches, Layer 11
 					["isWeekly"] = true,
 					["name"] = "Upper Reaches, Layer 11",
+				}),
+				q(63891, {	-- Upper Reaches, Layer 12
+					["isWeekly"] = true,
+					["name"] = "Upper Reaches, Layer 12",
 				}),
 			}),
 		}),
