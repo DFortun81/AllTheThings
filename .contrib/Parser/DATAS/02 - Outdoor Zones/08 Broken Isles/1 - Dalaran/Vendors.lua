@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(627, {	-- Dalaran
+	m(BROKEN_ISLES, {
+		m(LEGION_DALARAN, {
 			n(VENDORS, {
 				n(93528,  {	-- Angelique Butler <First Aid Supplies>
-					["coord"] = { 36.6, 37.6, 627 },
+					["coord"] = { 36.6, 37.6, LEGION_DALARAN },
 					["g"] = {
 						i(44694),	-- Antiseptic-Soaked Dressing
 						i(44693),	-- Wound Dressing
@@ -17,7 +17,7 @@ _.Zones =
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["races"] = HORDE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 56.5, 28.1, 627 },
+					["coord"] = { 56.5, 28.1, LEGION_DALARAN },
 					["g"] = {
 						un(14, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
 						--i(139775),	-- Alliance Enthusiast
@@ -1658,7 +1658,7 @@ _.Zones =
 				n(106655, {	-- Arcanomancer Vridiel <Blacksmithing Trainer>
 					-- TODO: remove this nonsense and put cost on things...
 					["currencyID"] = 1533,	-- Wakening Essences
-					["coord"] = { 45.2, 29.1, 627 },
+					["coord"] = { 45.2, 29.1, LEGION_DALARAN },
 					["g"] = {
 						i(154879, {	-- Awoken Titan Essence
 							["description"] = "Unless you played during Legion and have legendaries still not at their maximum iLvl, this item is completely useless.",
@@ -1986,19 +1986,19 @@ _.Zones =
 					},
 				}),
 				n(96979,  {	-- Bragund Brightlink <Mail Armor Merchant>
-					["coord"] = { 51.0, 73.5, 627 },
+					["coord"] = { 51.0, 73.5, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 29523},	-- Bragund Brightlink <Mail Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(96479,  {	-- Breanni <Pet Supplies>
-					["coord"] = { 58.3, 39.4, 627 },
+					["coord"] = { 58.3, 39.4, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 28951},	-- Breanni <Pet Supplies> (Dalaran Northrend)
 					},
 				}),
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
-					["coord"] = { 29.6, 74.8, 627 },
+					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(14, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
@@ -2828,20 +2828,20 @@ _.Zones =
 					},
 				}),
 				n(97339,  {	-- Cho Ironpalm <Dagger & Fist Weapon Merchant>
-					["coord"] = { 53.1, 62.8, 627 },
+					["coord"] = { 53.1, 62.8, LEGION_DALARAN },
 					["g"] = {
 						i(40702),	-- Rolfsen's Ripper
 						i(40704),	-- Pride
 					},
 				}),
 				n(96484,  {	-- Clockwork Assistant <Jepetto's Companion>
-					["coord"] = { 43.4, 45.7, 627 },
+					["coord"] = { 43.4, 45.7, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 29716},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
 					},
 				}),
 				n(96976,  {	-- Cloth Merchant <Cloth Armor Merchant>
-					["coord"] = { 37.3, 56.3, 627 },
+					["coord"] = { 37.3, 56.3, LEGION_DALARAN },
 					["g"] = {
 						i(50275),	-- Bloodmage Gloves
 						i(50276),	-- Bloodmage Hood
@@ -2946,7 +2946,7 @@ _.Zones =
 					},
 				}),
 				n(107326, {	-- Draemus <Exotic Pet Supplier>
-					["coord"] = { 58.7, 39.3, 627 },
+					["coord"] = { 58.7, 39.3, LEGION_DALARAN },
 					["g"] = {
 						i(136910, {	-- Alarm-o-Bot (PET!)
 							["cost"] = { { "i", 116415, 200 }, },	-- 200x Pet Charm
@@ -2972,7 +2972,7 @@ _.Zones =
 					},
 				}),
 				n(98724,  {	-- Giada Goldleash <Exotic Pets and Accessories>
-					["coord"] = { 58.3, 38.0, 627 },
+					["coord"] = { 58.3, 38.0, LEGION_DALARAN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(127704, {	-- Bloodthorn Hatchling (PET!)
@@ -2999,7 +2999,7 @@ _.Zones =
 					},
 				}),
 				n(93539,  {	-- Hobart Grapplehammer <Engineering Supplies>
-					["coord"] = { 38.4, 24.7, 627 },
+					["coord"] = { 38.4, 24.7, LEGION_DALARAN },
 					["g"] = {
 						i(136630),	-- "Twirling Bottom" Repeater
 						i(144328, {	-- Boon of the Builder
@@ -3045,7 +3045,7 @@ _.Zones =
 					},
 				}),
 				n(93530,  {	-- Ildine Sorrowspear <Enchanting Supplies>
-					["coord"] = { 38.5, 41.2, 627 },
+					["coord"] = { 38.5, 41.2, LEGION_DALARAN },
 					["g"] = {
 						i(139494, {	-- Forgotten Formulas of the Broken Isles
 							["collectible"] = false,
@@ -3073,7 +3073,7 @@ _.Zones =
 				}),
 				n(100500, {	-- Jabrul <Jewelcrafting Master>
 					["sourceQuests"] = { 40547 },	-- To Dalaran, With Love
-					["coord"] = { 39.6, 34.5, 627 },
+					["coord"] = { 39.6, 34.5, LEGION_DALARAN },
 					["g"] = {
 						i(137809),	-- Design: Ancient Maelstrom Amulet (Rank 1)
 						i(137794),	-- Design: Azsunite Loop (Rank 1)
@@ -3109,7 +3109,7 @@ _.Zones =
 					},
 				}),
 				n(93544,  {	-- Jang Quillpaw <Inscription Supplies>
-					["coord"] = { 41.4, 36.7, 627 },
+					["coord"] = { 41.4, 36.7, LEGION_DALARAN },
 					["g"] = {
 						i(141042),	-- Technique: Glyph of Autumnal Bloom
 						i(137733),	-- Technique: Glyph of Blackout
@@ -3134,7 +3134,7 @@ _.Zones =
 					},
 				}),
 				n(96483,  {	-- Jepetto Joybuzz <Toymaker>
-					["coord"] = { 43.6, 45.6, 627 },
+					["coord"] = { 43.6, 45.6, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 29716},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
 					},
@@ -3143,7 +3143,7 @@ _.Zones =
 					},
 				}),
 				n(93524,  {	-- Lalla Brightweave <Tailoring Supplies>
-					["coord"] = { 36.1, 33.3, 627 },
+					["coord"] = { 36.1, 33.3, LEGION_DALARAN },
 					["g"] = {
 						i(137965),	-- Pattern: Imbued Silkweave Bracers (Rank 2)
 						i(137967),	-- Pattern: Imbued Silkweave Epaulets (Rank 2)
@@ -3165,7 +3165,7 @@ _.Zones =
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 29.4, 75.6, 627 },
+					["coord"] = { 29.4, 75.6, LEGION_DALARAN },
 					["g"] = {
 						n(-660, {	-- Aspirant / Combatant PvP Gear Season1+Season2
 							cl(DEATHKNIGHT, {
@@ -4791,7 +4791,7 @@ _.Zones =
 				}),
 				n(120906, {	-- Marshal Frazer <Gladiator Quartermaster>
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 33.4, 74.0, 627 },
+					["coord"] = { 33.4, 74.0, LEGION_DALARAN },
 					["g"] = {
 						currency(1356, {	-- Echoes of Battle
 							["u"] = REMOVED_FROM_GAME,
@@ -5292,37 +5292,37 @@ _.Zones =
 					},
 				}),
 				n(96980,  {	-- Matilda Brightlink <Mail Armor Merchant>
-					["coord"] = { 51.3, 73.4, 627 },
+					["coord"] = { 51.3, 73.4, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 35500},	--  Matilda Brightlink <Mail Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(92489,  {	-- Mei Francis <Exotic Mounts>
-					["coord"] = { 57.3, 42.4, 627 },
+					["coord"] = { 57.3, 42.4, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 32216},	-- Mei Francis <Exotic Mounts> (Dalaran Northrend)
 					},
 				}),
 				n(96987,  {	-- Norvin Alderman <Cloaks>
-					["coord"] = { 36.9, 55.8, 627 },
+					["coord"] = { 36.9, 55.8, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 29495},	-- Norvin Alderman <Cloaks> (Dalaran Northrend)
 					},
 				}),
 				n(97001,  {	-- Orton Bennet <Offhand Offerings>
-					["coord"] = { 51.5, 55.5, 627 },
+					["coord"] = { 51.5, 55.5, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 29527},	-- Orton Bennet <Offhand Offerings> (Dalaran Northrend)
 					},
 				}),
 				n(96975,  {	-- Paldesse <Cloth Armor Merchant>
-					["coord"] = { 37.5, 56.1, 627 },
+					["coord"] = { 37.5, 56.1, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 28995},	--  Paldesse <Cloth Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(92457,  {	-- Patricia Egan <Alchemy Supplier>
-					["coord"] = { 42.2, 32.3, 627 },
+					["coord"] = { 42.2, 32.3, LEGION_DALARAN },
 					["g"] = {
 						i(127898),	-- Recipe: Ancient Healing Potion (Rank 1)
 						i(127917),	-- Recipe: Ancient Healing Potion (Rank 2)
@@ -5348,19 +5348,19 @@ _.Zones =
 					},
 				}),
 				n(92195,  {	-- Professor Pallin <Inscription Trainer>
-					["coord"] = { 41.5, 37.3, 627 },
+					["coord"] = { 41.5, 37.3, LEGION_DALARAN },
 					["g"] = {
 						i(137787),	-- Technique: Songs of Battle
 					},
 				}),
 				n(96978,  {	-- Rafael Langrom <Leather Armor Merchant>
-					["coord"] = { 50.8, 72.0, 627 },
+					["coord"] = { 50.8, 72.0, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 35497},	-- Rafael Langrom <Leather Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(93521,  {	-- Ranid Glowergold <Leatherworking & Skinning Supplies>
-					["coord"] = { 34.6, 28.6, 627 },
+					["coord"] = { 34.6, 28.6, LEGION_DALARAN },
 					["g"] = {
 						i(137884),	-- Recipe: Dreadleather Bindings (Rank 2)
 						i(137890),	-- Recipe: Dreadleather Footpads (Rank 2)
@@ -5386,7 +5386,7 @@ _.Zones =
 					},
 				}),
 				n(97342,  {	-- Salan Sunthread <Clothier>
-					["coord"] = { 37.7, 55.6, 627 },
+					["coord"] = { 37.7, 55.6, LEGION_DALARAN },
 					["g"] = {
 						i(42365),	-- Amber Filigreed Doublet
 						i(42371),	-- Amber Filigreeed Shirt
@@ -5409,7 +5409,7 @@ _.Zones =
 					},
 				}),
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
-					["coord"] = { 57.0, 27.8, 627 },
+					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(14, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
@@ -6238,7 +6238,7 @@ _.Zones =
 					},
 				}),
 				n(93543,  {	-- Sminx Glasseye
-					["coord"] = { 39.6, 35.1, 627 },
+					["coord"] = { 39.6, 35.1, LEGION_DALARAN },
 					["g"] = {
 						i(139599, {	-- Empowered Ring of the Kirin Tor
 					--		["cost"] = 2500000000‬,	-- 250,000g
@@ -6247,7 +6247,7 @@ _.Zones =
 				}),
 				n(108468, {	-- The Mad Merchant
 					["description"] = "This vendor is not always present.",
-					["coord"] = { 43.2, 46.6, 627 },
+					["coord"] = { 43.2, 46.6, LEGION_DALARAN },
 					["g"] = {
 						i(137570, {	-- Blood Fang Cocoon (MOUNT!)
 							["cost"] = 20000000000,	-- 2,000,000g
@@ -6264,7 +6264,7 @@ _.Zones =
 					},
 				}),
 				n(93526,  {	-- Tiffany Cartier <Jewelcrafting Supplies>
-					["coord"] = { 39.86, 34.77, 627 },
+					["coord"] = { 39.86, 34.77, LEGION_DALARAN },
 					["g"] = {
 						i(137834),	-- Design: Ancient Maelstrom Amulet (Rank 2)
 						i(137819),	-- Design: Azsunite Loop (Rank 2)
@@ -6285,7 +6285,7 @@ _.Zones =
 					},
 				}),
 				n(98723,  {	-- Tiffy Trapspring <Exotic Pets and Accessories>
-					["coord"] = { 59.2, 39.9, 627 },
+					["coord"] = { 59.2, 39.9, LEGION_DALARAN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(127704, {	-- Bloodthorn Hatchling (PET!)
@@ -6312,20 +6312,20 @@ _.Zones =
 					},
 				}),
 				n(97011,  {	-- Valaden Silverblade <Sword Merchant>
-					["coord"] = { 54.1, 63.2, 627 },
+					["coord"] = { 54.1, 63.2, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 28991},	--  Valaden Silverblade <Sword Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(96977,  {	-- Valerie Langrom <Leather Armor Merchant>
-					["coord"] = { 51.1, 72.7, 627 },
+					["coord"] = { 51.1, 72.7, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 28992},	-- Valerie Langrom <Leather Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(120687, {	-- Violet Shadowmend <Gladiator Quartermaster> -- Horde
 					["races"] = HORDE_ONLY,
-					["coord"] = { 59.6, 25.2, 627 },
+					["coord"] = { 59.6, 25.2, LEGION_DALARAN },
 					["g"] = {
 						currency(1356, {	-- Echoes of Battle
 							["u"] = REMOVED_FROM_GAME,
@@ -6826,13 +6826,13 @@ _.Zones =
 					},
 				}),
 				n(97012,  {	-- Wanda Chanter
-					["coord"] = { 48.6, 73.8, 627 },
+					["coord"] = { 48.6, 73.8, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 28994},	--  Wanda Chanter (Dalaran Northrend)
 					},
 				}),
 				n(107109, {	-- Xur'ios <Vaultkeeper of the Void>
-					["coord"] = { 48.8, 13.5, 627 },
+					["coord"] = { 48.8, 13.5, LEGION_DALARAN },
 					["g"] = {
 						i(141713, {	-- Arcadian War Turtle (MOUNT!)
 							["cost"] = { { "c", 1275, 150 }, },	-- 150x Curious Coin

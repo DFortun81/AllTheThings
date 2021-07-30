@@ -28,14 +28,14 @@ _.ExpansionFeatures =
 							{ "n", 107317 },	-- Emmarel Shadewarden
 							{ "n", 107973 },	-- Emmarel Shadewarden
 						},
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(46336, {	-- A Golden Ticket
 						["sourceQuests"] = { 46246 },	-- Strike Them Down
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 117810 },	-- Nimi Brightcastle
-						["coord"] = { 43.8, 63.2, 646 },
-						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 43.8, 63.2, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(43423, {	-- A Hero's Weapon
 						["sourceQuests"] = { 42659 },	-- In Defense of Dalaran
@@ -72,22 +72,22 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42385 },	-- Lending a Hand
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107372 },	-- Hudson Crawford
-						["coord"] = { 41.7, 60.0, 641 },
-						["maps"] = { 641 },	-- Val'sharah
+						["coord"] = { 41.7, 60.0, VALSHARAH },
+						["maps"] = { VALSHARAH },
 					}),
 					q(42404, {	-- Assisting the Archmage
 						["sourceQuest"] = 42401,  -- The Scent of Magic
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 108089 },	-- Archmage Khadgar
-						["coord"] = { 33.1, 57.0, 680 },
-						["maps"] = { 680 },	-- Suramar
+						["coord"] = { 33.1, 57.0, SURAMAR },
+						["maps"] = { SURAMAR },
 					}),
 					q(42398, {	-- Awakening the Senses
 						["sourceQuests"] = { 42397 },	-- Baron and the Huntsman
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107981 },	-- Huntsman Blake
-						["coord"] = { 80.1, 66.2, 634 },
-						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 80.1, 66.2, STORMHEIM },
+						["maps"] = { STORMHEIM },
 					}),
 					q(42656, {	-- Azure Weaponry
 						["sourceQuests"] = {
@@ -108,16 +108,16 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42436 },	-- Aiding Our Allies
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 109227 },	-- Mellah Greyfeather
-						["coord"] = { 53.0, 44.5, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 53.0, 44.5, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 						["repeatable"] = true,
 					}),
 					q(42391, {	-- Bite of the Beast
 						["sourceQuests"] = { 42389 },	-- Calling Hilaire Home
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107316 },	-- Beastmaster Hilaire
-						["coord"] = { 34.7, 41.6, 634 },
-						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 34.7, 41.6, STORMHEIM },
+						["maps"] = { STORMHEIM },
 					}),
 					q(40392, {	-- Call of the Marksman
 						["sourceQuests"] = { 41540 },	-- Rendezvous with the Courier
@@ -126,8 +126,8 @@ _.ExpansionFeatures =
 							{ "n", 103415 },	-- Courier Larkspur
 							{ "n", 103741 },	-- Courier Larkspur
 						},
-						["coord"] = { 71.5, 49.8, 627 },
-						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 71.5, 49.8, LEGION_DALARAN },
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(42389, {	-- Calling Hilaire Home
 						["sourceQuests"] = { 42388 },	-- Urgent Summons
@@ -142,8 +142,8 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 99095 },	-- Addie Fizzlebog
-						["coord"] = { 39.9, 52.2, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 39.9, 52.2, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 						["g"] = {
 							follower(746),	-- Addie Fizzlebog
 							i(139714),	-- Wristwraps of the Unseen Path
@@ -153,8 +153,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42391 },	-- Bite of the Beast
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107316 },	-- Beastmaster Hilaire
-						["coord"] = { 34.7, 41.6, 634 },
-						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 34.7, 41.6, STORMHEIM },
+						["maps"] = { STORMHEIM },
 						["g"] = {
 							follower(744),	-- Beastmaster Hilaire
 						},
@@ -174,8 +174,8 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 94409 },	-- Hemet Nesingwary
-						["coord"] = { 40.0, 52.2, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 40.0, 52.2, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 						["g"] = {
 							follower(745),	-- Hemet Nesingwary
 						},
@@ -184,8 +184,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42398 },	-- Awakening the Senses
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107981 },	-- Huntsman Blake <Beastmaster>
-						["coord"] = { 80.1, 66.2, 634 },
-						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 80.1, 66.2, STORMHEIM },
+						["maps"] = { STORMHEIM },
 						["g"] = {
 							follower(747),	-- Huntsman Blake
 						},
@@ -201,8 +201,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46235 },	-- Secured Surroundings
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 117246 },	-- Nighthuntress Syrenne
-						["coord"] = { 44.8, 61.1, 646 },
-						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 44.8, 61.1, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 						["g"] = {
 							follower(996),	-- Nighthuntress Syrenne
 						},
@@ -211,8 +211,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42392 },	-- Survive the Night
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107425 },	-- Rexxar
-						["coord"] = { 36.7, 35.4, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 36.7, 35.4, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 						["g"] = {
 							follower(743),	-- Rexxar
 						},
@@ -222,24 +222,24 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40392 },	-- Call of the Marksman
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 100190 },	-- Vereesa Windrunner
-						["coord"] = { 32.3, 32.5, 646 },
-						["maps"] = { 646, 714 },	-- Broken Shore, Niskara (scenario)
+						["coord"] = { 32.3, 32.5, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE, 714 },	-- Niskara (scenario)
 					}),
 					q(40402, {	-- Clandestine Operation (H, Non-BloodElf)
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 40392 },	-- Call of the Marksman
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 100190 },	-- Vereesa Windrunner
-						["coord"] = { 32.3, 32.5, 646 },
-						["maps"] = { 646, 714 },	-- Broken Shore, Niskara (scenario)
+						["coord"] = { 32.3, 32.5, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE, 714 },	-- Niskara (scenario)
 					}),
 					q(40403, {	-- Clandestine Operation (H, BloodElf only)
 						["races"] = exclude(BLOODELF, HORDE_ONLY),
 						["sourceQuests"] = { 40392 },	-- Call of the Marksman
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 100190 },	-- Vereesa Windrunner
-						["coord"] = { 32.3, 32.5, 646 },
-						["maps"] = { 646, 714 },	-- Broken Shore, Niskara (scenario)
+						["coord"] = { 32.3, 32.5, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE, 714 },	-- Niskara (scenario)
 					}),
 					q(44043, {	-- Continuing the Legend
 						["classes"] = { HUNTER },
@@ -255,8 +255,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42657 },	-- Meeting in Moonclaw Vale
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 108492 },	-- Lyana Stardust
-						["coord"] = { 60.1, 72.2, 641 },
-						["maps"] = { 641 },	-- Val'sharah
+						["coord"] = { 60.1, 72.2, VALSHARAH },
+						["maps"] = { VALSHARAH },
 					}),
 					q(42654, {	-- Darkheart Thicket: Nightmare Oak
 						["sourceQuests"] = { 42405 },	-- Informing Our Allies
@@ -274,8 +274,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45554 },	-- Taking Control
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 117308 },	-- Nighthuntress Syrenne
-						["coord"] = { 57.5, 44.8, 680 },
-						["maps"] = { 680 },	-- Suramar
+						["coord"] = { 57.5, 44.8, SURAMAR },
+						["maps"] = { SURAMAR },
 					}),
 					q(46783, {	-- Further Advancement
 						["sourceQuests"] = { 46048 },	-- Champion: Nighthuntress Syrenne
@@ -302,16 +302,16 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42436 },	-- Aiding Our Allies
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 109227 },	-- Mellah Greyfeather
-						["coord"] = { 53.0, 44.5, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 53.0, 44.5, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 						["repeatable"] = true,
 					}),
 					q(42393, {	-- Homecoming
 						["sourceQuests"] = { 42411 },	-- Champion: Beastmaster Hilaire
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107316 },	-- Beastmaster Hilaire
-						["coord"] = { 34.7, 41.6, 634 },
-						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 34.7, 41.6, STORMHEIM },
+						["maps"] = { STORMHEIM },
 					}),
 					q(41009, {	-- Hunter to Hunter
 					--	these are possibly tied to specs?  this one is probably for BM hunters, quest text references Titanstrike
@@ -319,7 +319,7 @@ _.ExpansionFeatures =
 						["classes"] = { HUNTER },
 						["altQuests"] = { 40952, 41008 },	-- Hunter to Hunter
 						["provider"] = { "n", 106879 },	-- Grif Wildheart
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(40952, {	-- Hunter to Hunter
 					--	probably for MM hunters, quest text references Thas'dorah
@@ -327,7 +327,7 @@ _.ExpansionFeatures =
 						["classes"] = { HUNTER },
 						["altQuests"] = { 41009, 41008 },	-- Hunter to Hunter
 						["provider"] = { "n", 102570 },	-- Vereesa Windrunner
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(41008, {	-- Hunter to Hunter
 					-- marking as never implemented, because on DFA 8.32% completed 41009, 6.41% completed 40952, 0% completed 41008. Possibly survival spec gets the 41009 quest instead of 41008.
@@ -336,7 +336,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40419 },	-- Rescue Mission
 						["classes"] = { HUNTER },
 						["altQuests"] = { 41009, 40952 },	-- Hunter to Hunter
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(42659, {	-- In Defense of Dalaran
 						["sourceQuests"] = {
@@ -390,8 +390,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42689 },	-- Knowing Our Enemy
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 105816 },	-- Kira Iresoul
-						["coord"] = { 60.8, 30.7, 630 },
-						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 60.8, 30.7, AZSUNA },
+						["maps"] = { AZSUNA },
 					}),
 					q(42523, {	-- Making Contact
 						["classes"] = { HUNTER },
@@ -472,15 +472,15 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45555 },	-- Felbound Beasts
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 117246 },	-- Nighthuntress Syrenne
-						["coord"] = { 55.8, 42.2, 680 },
-						["maps"] = { 680 },	-- Suramar
+						["coord"] = { 55.8, 42.2, SURAMAR },
+						["maps"] = { SURAMAR },
 					}),
 					q(42399, {	-- Ready to Work
 						["sourceQuests"] = { 42412 },	-- Champion: Huntsman Blake
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107981 },	-- Huntsman Blake <Beastmaster>
-						["coord"] = { 80.1, 66.2, 634 },
-						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 80.1, 66.2, STORMHEIM },
+						["maps"] = { STORMHEIM },
 					}),
 					q(42134, {	-- Recruiting More Troops
 						["sourceQuests"] = { 42395 },	-- Signaling Trouble
@@ -529,8 +529,8 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 100190 },	-- Vareesa Windrunner
-						["coord"] = { 32.3, 32.5, 646 },
-						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 32.3, 32.5, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(42519, {	-- Rise, Champions
 						["provider"] = { "n", 102940 },	-- Altar Keeper Biehn
@@ -542,22 +542,22 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42385 },	-- Lending a Hand
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107372 },	-- Hudson Crawford
-						["coord"] = { 41.7, 60.0, 641 },
-						["maps"] = { 641 },	-- Val'sharah
+						["coord"] = { 41.7, 60.0, VALSHARAH },
+						["maps"] = { VALSHARAH },
 					}),
 					q(46060, {	-- Salvation
 						["sourceQuests"] = { 45556 },	-- Ready to Strike
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 119097 },	-- Nighthuntress Syrenne
-						["coord"] = { 50.9, 30.7, 646 },
-						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 50.9, 30.7, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(42133, {	-- Same Day Delivery
 						["sourceQuests"] = { 42658 },	-- Delicate Enchantments
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 108492 },	-- Lyana Stardust
-						["coord"] = { 60.1, 72.2, 641 },
-						["maps"] = { 641 },	-- Val'sharah
+						["coord"] = { 60.1, 72.2, VALSHARAH },
+						["maps"] = { VALSHARAH },
 					}),
 					q(42384, {	-- Scouting Reports
 						["sourceQuests"] = { 42526 },	-- Tech It Up A Notch
@@ -572,8 +572,8 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 119097 },	-- Nighthuntress Syrenne
-						["coord"] = { 50.9, 30.7, 646 },
-						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 50.9, 30.7, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(42395, {	-- Signaling Trouble
 						["sourceQuests"] = { 42393 },	-- Homecoming
@@ -585,36 +585,36 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42436 },	-- Aiding Our Allies
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 109227 },	-- Mellah Greyfeather
-						["coord"] = { 53.0, 44.5, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 53.0, 44.5, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 						["repeatable"] = true,
 					}),
 					q(45552, {	-- Soothing Wounds
 						["sourceQuests"] = { 45551 },	-- Devastating Effects
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 117308 },	-- D'Bynn
-						["coord"] = { 52.2, 48.9, 680 },
-						["maps"] = { 680 },	-- Suramar
+						["coord"] = { 52.2, 48.9, SURAMAR },
+						["maps"] = { SURAMAR },
 					}),
 					q(41574, {	-- Stolen Thunder
 						["sourceQuests"] = { 41541 },	-- A Beastly Expedition
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 104381 },	-- Grif Wildheart
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(43335, {	-- Survival Skills
 						["sourceQuests"] = { 42390 },	-- Recruiting Rexxar
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107425 },	-- Rexxar
-						["coord"] = { 36.7, 35.4, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 36.7, 35.4, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 					}),
 					q(42392, {	-- Survive the Night
 						["sourceQuests"] = { 43335 },	-- Survival Skills
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107425 },	-- Rexxar
-						["coord"] = { 36.7, 35.4, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 36.7, 35.4, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 					}),
 					q(40958, {	-- Tactical Matters
 						["sourceQuests"] = { 40955 },	-- Oath of Service
@@ -626,8 +626,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45553 },	-- The Nighthuntress Beckons
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 117308 },	-- Nighthuntress Syrenne
-						["coord"] = { 57.5, 44.8, 680 },
-						["maps"] = { 680 },	-- Suramar
+						["coord"] = { 57.5, 44.8, SURAMAR },
+						["maps"] = { SURAMAR },
 					}),
 					q(42526, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 42525 },	-- Troops in the Field
@@ -647,8 +647,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41542 },	-- Preparation for the Hunt
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 104382 },	-- Apata Highmountain
-						["coord"] = { 71.0, 50.0, 627 },
-						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 71.0, 50.0, LEGION_DALARAN },
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(41415, {	-- The Hunter's Call
 						["classes"] = { HUNTER },
@@ -664,22 +664,22 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42406 },	-- To Tame the Beast
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 108375 },	-- Kira Iresoul
-						["coord"] = { 60.8, 30.7, 630 },
-						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 60.8, 30.7, AZSUNA },
+						["maps"] = { AZSUNA },
 					}),
 					q(45553, {	-- The Nighthuntress Beckons
 						["sourceQuests"] = { 45552 },	-- Soothing Wounds
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 117308 },	-- D'Bynn
-						["coord"] = { 52.2, 48.9, 680 },
-						["maps"] = { 680 },	-- Suramar
+						["coord"] = { 52.2, 48.9, SURAMAR },
+						["maps"] = { SURAMAR },
 					}),
 					q(42401, {	-- The Scent of Magic
 						["sourceQuest"] = 42400,  -- Missing Mages
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 107966 },	-- Archmage Khadgar
-						["coord"] = { 38.1, 47.1, 680 },
-						["maps"] = { 680 },	-- Suramar
+						["coord"] = { 38.1, 47.1, SURAMAR },
+						["maps"] = { SURAMAR },
 					}),
 					q(40385, {	-- The Spear in the Shadow
 						["sourceQuests"] = { 39427 },	-- The Eagle Spirit's Blessing
@@ -688,8 +688,8 @@ _.ExpansionFeatures =
 							{ "n", 110821 },	-- Apata Highmountain
 							{ "n", 110986 },	-- Apata Highmountain
 						},
-						["coord"] = { 60.8, 80.9, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 60.8, 80.9, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 					}),
 					q(40954, {	-- The Unseen Path
 						["sourceQuests"] = { 40953 },	-- On Eagle's Wings
@@ -701,8 +701,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42691 },	-- Leystone Lure
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 105816 },	-- Kira Iresoul
-						["coord"] = { 60.8, 30.7, 630 },
-						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 60.8, 30.7, AZSUNA },
+						["maps"] = { AZSUNA },
 					}),
 					q(42525, {	-- Troops in the Field
 						["classes"] = { HUNTER },
@@ -713,8 +713,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45556 },	-- Ready to Strike
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 119097 },	-- Nighthuntress Syrenne
-						["coord"] = { 50.9, 30.7, 646 },
-						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 50.9, 30.7, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(44211, {	-- Unseen Armaments
 						["classes"] = { HUNTER },
@@ -741,8 +741,8 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { HUNTER },
 						["provider"] = { "n", 113325 },	-- Snowfeather
-						["coord"] = { 41.7, 659.9, 641 },
-						["maps"] = { 641 },	-- Val'sharah
+						["coord"] = { 41.7, 59.9, VALSHARAH },
+						["maps"] = { VALSHARAH },
 					}),
 					q(44233, {	-- Walk This Way
 						["classes"] = { HUNTER },

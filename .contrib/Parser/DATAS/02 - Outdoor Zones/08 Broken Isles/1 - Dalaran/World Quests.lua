@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(627, {	-- Dalaran
+	m(BROKEN_ISLES, {
+		m(LEGION_DALARAN, {
 			n(WORLD_QUESTS, {
 				q(42442, {	-- Fight Night: Amalia
 					["isWorldQuest"] = true,

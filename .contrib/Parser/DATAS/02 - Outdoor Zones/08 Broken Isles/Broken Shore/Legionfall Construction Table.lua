@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(646, {	-- Broken Shore
+	m(BROKEN_ISLES, {
+		m(BROKEN_SHORE, {
 			n(119305, {	-- Legionfall Construction Table
 				ach(11735),	-- Take Command
 				ach(11736),	-- Assume Command

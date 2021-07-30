@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(627, {	-- Dalaran
+	m(BROKEN_ISLES, {
+		m(LEGION_DALARAN, {
 			n(ACHIEVEMENTS, {
 				ach(9696, {		-- Family Familiar
 					["collectible"] = false,
@@ -17,19 +17,19 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 							},
 						}),
@@ -39,19 +39,19 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 							},
 						}),
@@ -61,19 +61,19 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 							},
 						}),
@@ -83,19 +83,19 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 							},
 						}),
@@ -105,19 +105,19 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 							},
 						}),
@@ -127,19 +127,19 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 							},
 						}),
@@ -149,19 +149,19 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 							},
 						}),
@@ -171,19 +171,19 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 							},
 						}),
@@ -193,19 +193,19 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 							},
 						}),
@@ -215,19 +215,19 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Bodhi Sunwayver
 									["creatureID"] = 99210,	-- Bodhi Sunwayver <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(3, {	-- Tiffany Nelson
 									["creatureID"] = 97804,	-- Tiffany Nelson <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(4, {	-- Amalia
 									["creatureID"] = 107489,	-- Amalia <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 								crit(5, {	-- Sir Galveston
 									["creatureID"] = 99182,	-- Sir Galveston <Grand Master Pet Tamer>
-									["coord"] = { 28.0, 23.6, 627 },
+									["coord"] = { 28.0, 23.6, LEGION_DALARAN },
 								}),
 							},
 						}),

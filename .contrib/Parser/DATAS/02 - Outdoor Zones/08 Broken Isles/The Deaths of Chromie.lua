@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
+	m(BROKEN_ISLES, {
 		m(897, {	-- Death's of Chromie Scenario
 			["lvl"] = 110,
 			["achievementID"] = 11941,
@@ -230,8 +230,8 @@ _.Zones =
 				}),
 				n(QUESTS, {
 					q(48021, {	-- Chromie
-						["maps"] = { 627 },	-- Dalaran (Legion)
-						["coord"] = { 26.4, 44.6, 627 },
+						["maps"] = { LEGION_DALARAN },
+						["coord"] = { 26.4, 44.6, LEGION_DALARAN },
 						["provider"] = { "n", 122926 },	-- Image of Chromie
 						["g"] = {
 							i(151700),	-- Wayfinder's Sundial

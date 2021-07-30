@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(646, {	-- Broken Shore
+	m(BROKEN_ISLES, {
+		m(BROKEN_SHORE, {
 			n(ACHIEVEMENTS, {
 				ach(11546, {	-- Breaching the Tomb
 					crit(1,  {	-- Armies of Legionfall

@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(650, {	-- Highmountain
+	m(BROKEN_ISLES, {
+		m(HIGHMOUNTAIN, {
 			n(-38,  {	-- Profession
 				prof(ALCHEMY, {
 					q(39334, {	-- Thanks for Flasking

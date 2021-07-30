@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(680, {	-- Suramar
+	m(BROKEN_ISLES, {
+		m(SURAMAR, {
 			n(ACHIEVEMENTS, {
 				ach(11265),		-- Adventurer of Suramar
 				ach(9696,  {	-- Family Familiar
@@ -18,15 +18,15 @@ _.Zones =
 							["g"] = {
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
-									["coord"] = { 52.0, 54.8, 680 },
+									["coord"] = { 52.0, 54.8, SURAMAR },
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
-									["coord"] = { 25.2, 62.6, 680 },
+									["coord"] = { 25.2, 62.6, SURAMAR },
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
-									["coord"] = { 63.0, 60.6, 680 },
+									["coord"] = { 63.0, 60.6, SURAMAR },
 								}),
 							},
 						}),
@@ -36,15 +36,15 @@ _.Zones =
 							["g"] = {
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
-									["coord"] = { 52.0, 54.8, 680 },
+									["coord"] = { 52.0, 54.8, SURAMAR },
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
-									["coord"] = { 25.2, 62.6, 680 },
+									["coord"] = { 25.2, 62.6, SURAMAR },
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
-									["coord"] = { 63.0, 60.6, 680 },
+									["coord"] = { 63.0, 60.6, SURAMAR },
 								}),
 							},
 						}),
@@ -54,15 +54,15 @@ _.Zones =
 							["g"] = {
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
-									["coord"] = { 52.0, 54.8, 680 },
+									["coord"] = { 52.0, 54.8, SURAMAR },
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
-									["coord"] = { 25.2, 62.6, 680 },
+									["coord"] = { 25.2, 62.6, SURAMAR },
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
-									["coord"] = { 63.0, 60.6, 680 },
+									["coord"] = { 63.0, 60.6, SURAMAR },
 								}),
 							},
 						}),
@@ -72,15 +72,15 @@ _.Zones =
 							["g"] = {
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
-									["coord"] = { 52.0, 54.8, 680 },
+									["coord"] = { 52.0, 54.8, SURAMAR },
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
-									["coord"] = { 25.2, 62.6, 680 },
+									["coord"] = { 25.2, 62.6, SURAMAR },
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
-									["coord"] = { 63.0, 60.6, 680 },
+									["coord"] = { 63.0, 60.6, SURAMAR },
 								}),
 							},
 						}),
@@ -90,15 +90,15 @@ _.Zones =
 							["g"] = {
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
-									["coord"] = { 52.0, 54.8, 680 },
+									["coord"] = { 52.0, 54.8, SURAMAR },
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
-									["coord"] = { 25.2, 62.6, 680 },
+									["coord"] = { 25.2, 62.6, SURAMAR },
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
-									["coord"] = { 63.0, 60.6, 680 },
+									["coord"] = { 63.0, 60.6, SURAMAR },
 								}),
 							},
 						}),
@@ -108,15 +108,15 @@ _.Zones =
 							["g"] = {
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
-									["coord"] = { 52.0, 54.8, 680 },
+									["coord"] = { 52.0, 54.8, SURAMAR },
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
-									["coord"] = { 25.2, 62.6, 680 },
+									["coord"] = { 25.2, 62.6, SURAMAR },
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
-									["coord"] = { 63.0, 60.6, 680 },
+									["coord"] = { 63.0, 60.6, SURAMAR },
 								}),
 							},
 						}),
@@ -126,15 +126,15 @@ _.Zones =
 							["g"] = {
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
-									["coord"] = { 52.0, 54.8, 680 },
+									["coord"] = { 52.0, 54.8, SURAMAR },
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
-									["coord"] = { 25.2, 62.6, 680 },
+									["coord"] = { 25.2, 62.6, SURAMAR },
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
-									["coord"] = { 63.0, 60.6, 680 },
+									["coord"] = { 63.0, 60.6, SURAMAR },
 								}),
 							},
 						}),
@@ -144,15 +144,15 @@ _.Zones =
 							["g"] = {
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
-									["coord"] = { 52.0, 54.8, 680 },
+									["coord"] = { 52.0, 54.8, SURAMAR },
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
-									["coord"] = { 25.2, 62.6, 680 },
+									["coord"] = { 25.2, 62.6, SURAMAR },
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
-									["coord"] = { 63.0, 60.6, 680 },
+									["coord"] = { 63.0, 60.6, SURAMAR },
 								}),
 							},
 						}),
@@ -162,15 +162,15 @@ _.Zones =
 							["g"] = {
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
-									["coord"] = { 52.0, 54.8, 680 },
+									["coord"] = { 52.0, 54.8, SURAMAR },
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
-									["coord"] = { 25.2, 62.6, 680 },
+									["coord"] = { 25.2, 62.6, SURAMAR },
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
-									["coord"] = { 63.0, 60.6, 680 },
+									["coord"] = { 63.0, 60.6, SURAMAR },
 								}),
 							},
 						}),
@@ -180,15 +180,15 @@ _.Zones =
 							["g"] = {
 								crit(11, {	-- Aulier
 									["creatureID"] = 105250,	-- Aulier <Master of Pets>
-									["coord"] = { 52.0, 54.8, 680 },
+									["coord"] = { 52.0, 54.8, SURAMAR },
 								}),
 								crit(12, {	-- Master Tamer Flummox
 									["creatureID"] = 97709,	-- Master Tamer Flummox <Super Epic Grand Master Pet Tamer>
-									["coord"] = { 25.2, 62.6, 680 },
+									["coord"] = { 25.2, 62.6, SURAMAR },
 								}),
 								crit(13, {	-- Varenne
 									["creatureID"] = 105674,	-- Varenne <Master of the Dish>
-									["coord"] = { 63.0, 60.6, 680 },
+									["coord"] = { 63.0, 60.6, SURAMAR },
 								}),
 							},
 						}),
@@ -304,15 +304,15 @@ _.Zones =
 						["sourceQuest"] = 41028,	-- Power Grid
 					}),
 					crit(2, {	-- Elor'shan
-						["coord"] = { 65.9, 42.0, 680 },
+						["coord"] = { 65.9, 42.0, SURAMAR },
 						["sourceQuest"] = 43587,	-- Leyline Feed: Elor'shan
 					}),
 					crit(3, {	-- Kel'balor
-						["coord"] = { 59.3, 42.9, 680 },
+						["coord"] = { 59.3, 42.9, SURAMAR },
 						["sourceQuest"] = 43588,	-- Leyline Feed: Kel'balor
 					}),
 					crit(4, {	-- Moonwhisper Gulch
-						["coord"] = { 35.7, 24.2, 680 },
+						["coord"] = { 35.7, 24.2, SURAMAR },
 						["sourceQuest"] = 43590,	-- Leyline Feed: Ley Station Moonfall
 					}),
 					crit(5, {	-- Falanaar North
@@ -320,15 +320,15 @@ _.Zones =
 						["sourceQuest"] = 43592,	-- Leyline Feed: Falanaar Arcway
 					}),
 					crit(6, {	-- Falanaar South
-						["coord"] = { 20.5, 50.4, 680 },
+						["coord"] = { 20.5, 50.4, SURAMAR },
 						["sourceQuest"] = 43593,	-- Leyline Feed: Falanaar Depths
 					}),
 					crit(7, {	-- Halls of the Eclipse
-						["coord"] = { 29.1, 84.6, 680 },
+						["coord"] = { 29.1, 84.6, SURAMAR },
 						["sourceQuest"] = 43594,	-- Leyline Feed: Halls of the Eclipse
 					}),
 					crit(8, {	-- Moon Guard
-						["coord"] = { 24.2, 19.3, 680 },
+						["coord"] = { 24.2, 19.3, SURAMAR },
 						["sourceQuest"] = 43591,	-- Leyline Feed: Ley Station Aethenar
 					}),
 				}),
@@ -373,7 +373,7 @@ _.Zones =
 					["g"] = {
 						i(136269, {	-- Kel'danath's Manaflask -- objectID 248407
 							["questID"] = 42842,
-							["coord"] = { 21.4, 54.5, 680 },
+							["coord"] = { 21.4, 54.5, SURAMAR },
 						}),
 						i(140328, {	-- Volatile Leyline Crystal
 							["questID"] = 43988,
@@ -381,15 +381,15 @@ _.Zones =
 						}),
 						i(140329, {	-- Infinite Stone -- objectID 254023
 							["questID"] = 43989,
-							["coord"] = { 35.6, 12.1, 680 },
+							["coord"] = { 35.6, 12.1, SURAMAR },
 						}),
 						i(140326, {	-- Enchanted Burial Urn -- objectID 254006
 							["questID"] = 43986,
-							["coord"] = { 44.8, 31.0, 680 },
+							["coord"] = { 44.8, 31.0, SURAMAR },
 						}),
 						i(140327, {	-- Krytos's Research Notes -- objectID 254008
 							["questID"] = 43987,
-							["coord"] = { 26.9, 70.7, 680 },
+							["coord"] = { 26.9, 70.7, SURAMAR },
 						}),
 					},
 				}),

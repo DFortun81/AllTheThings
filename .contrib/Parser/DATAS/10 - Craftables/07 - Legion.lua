@@ -288,7 +288,7 @@ _.Craftables =
 		}),
 		prof(FISHING, {
 			spell(201943, {	-- Better Luck Next Time
-				["maps"] = { 630, 646, 790, 650, 634, 680, 641 },	-- Azsuna / Broken Shore / Eye of Azshara / Highmountain / Stormheim / Suramar / Val'sharah
+				["maps"] = { AZSUNA, BROKEN_SHORE, EYE_OF_AZSHARA, HIGHMOUNTAIN, STORMHEIM, SURAMAR, VALSHARAH },
 				["g"] = {
 					i(139408, {	-- Deck Sandals
 						["bonusID"] = 1812,

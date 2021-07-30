@@ -4,13 +4,13 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(646, {	-- Broken Shore
+	m(BROKEN_ISLES, {
+		m(BROKEN_SHORE, {
 			n(-169, {	-- Emissary Quests
 				q(48641, {	-- Armies of Legionfall
 					["repeatable"] = true,
 					["provider"] = { "n", 120414 },	-- Captain Ruysantos
-					["coord"] = { 42.2, 58.8, 646 },
+					["coord"] = { 42.2, 58.8, BROKEN_SHORE },
 					["g"] = {
 						i(157830, {	-- Legionfall Spoils
 							["sym"] = {
@@ -45,7 +45,7 @@ _.Zones =
 					q(46777, {	-- The Bounties of Legionfall
 						["repeatable"] = true,
 						["provider"] = { "n", 120414 },	-- Captain Ruysantos
-						["coord"] = { 42.2, 58.8, 646 },
+						["coord"] = { 42.2, 58.8, BROKEN_SHORE },
 						["g"] = {
 							i(152108, {	-- Legionfall Chest
 								i(147841),	-- Orphaned Felbat (PET!)

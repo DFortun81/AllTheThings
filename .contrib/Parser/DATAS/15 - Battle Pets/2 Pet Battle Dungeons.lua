@@ -148,9 +148,9 @@ _.BattlePets =
 				}),
 				q(46293, {	-- Deadmines, Part Three?
 					["provider"] = { "n", 96479 },	-- Breanni
-					["coord"] = { 58.2, 39.4, 627 },
+					["coord"] = { 58.2, 39.4, LEGION_DALARAN },
 					["lvl"] = 110,
-					["maps"] = { 627 },	-- Dalaran (Legion)
+					["maps"] = { LEGION_DALARAN },
 				}),
 				q(46291, {	-- The Deadmines Strike Back
 					["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
@@ -352,11 +352,11 @@ _.BattlePets =
 						{ "n", 115287 },	-- Serr'ah (H)
 					},
 					["coords"] = {
-						{ 59.2, 39.6, 627 },	-- Lio the Lioness (A)
-						{ 58.4, 38.0, 627 },	-- Serr'ah (H)
+						{ 59.2, 39.6, LEGION_DALARAN },	-- Lio the Lioness (A)
+						{ 58.4, 38.0, LEGION_DALARAN },	-- Serr'ah (H)
 					},
 					["lvl"] = 110,
-					["maps"] = { 627 },	-- Dalaran (Legion)
+					["maps"] = { LEGION_DALARAN },
 				}),
 				q(45423, {	-- Wailing Critters
 					["provider"] = { "n", 116781 },	-- Muyani

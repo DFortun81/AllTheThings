@@ -76,8 +76,8 @@ _.ExpansionFeatures =
 					}),
 					q(46719, {	-- Amal'thazad's Message
 						["provider"] = { "n", 117573 }, -- Dread Commander Thalanor
-						["coord"] = { 43.4, 62.7, 646 },	-- Broken Shore
-						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 43.4, 62.7, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 46246, -- Strike Them Down
 					}),
@@ -107,7 +107,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 114282 }, -- Dread Commander Thalanor
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuests"] = { 42484 }, -- The Firstborn Rises
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(44231, {	-- Champion Armaments
 						["provider"] = { "n", 110410 },	-- Dread Collector Bane
@@ -244,8 +244,8 @@ _.ExpansionFeatures =
 					}),
 					q(44783, {	-- From Bones They Rise
 						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
-						["coord"] = { 51.3, 84.3, 634 },
-						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 51.3, 84.3, STORMHEIM },
+						["maps"] = { STORMHEIM },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 44775, -- The Peak of Bones
 					}),
@@ -434,7 +434,7 @@ _.ExpansionFeatures =
 					q(44787, {	-- The Bonemother
 						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
 						["classes"] = { DEATHKNIGHT },
-						["maps"] = { 634 },	-- Stormheim
+						["maps"] = { STORMHEIM },
 						["sourceQuests"] = {
 							44783, -- From Bones They Rise
 							46305, -- Thorim's Flame
@@ -462,7 +462,7 @@ _.ExpansionFeatures =
 					q(40714, {	-- The Call To War
 						["description"] = "Automatically given to you when you arrive in Dalaran.",
 						["classes"] = { DEATHKNIGHT },
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(40934, {	-- The Dark Riders
 						["provider"] = { "n", 100812 },	-- Revil Kost
@@ -563,8 +563,8 @@ _.ExpansionFeatures =
 					}),
 					q(46305, {	-- Thorim's Flame
 						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
-						["coord"] = { 51.3, 84.3, 634 },
-						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 51.3, 84.3, STORMHEIM },
+						["maps"] = { STORMHEIM },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 44775,	-- The Peak of Bones
 					}),
@@ -590,8 +590,8 @@ _.ExpansionFeatures =
 					}),
 					q(45103, {	-- We Ride!
 						["provider"] = { "n", 116128 },	-- Highlord Darion Mograine
-						["coord"] = { 51.6, 21.8, 646 },
-						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 51.6, 21.8, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 45243,	-- On Daumyr's Wings
 					}),

@@ -8,7 +8,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 		n(34383, {	-- Catrina
 			["coords"] = {
 				{ 47.8, 55.9, AZUREMYST_ISLE },
-				{ 33.9, 39.3, 627 },	-- Dalaran: Broken Isles
+				{ 33.9, 39.3, LEGION_DALARAN },
 				{ 34.4, 39.1, 125 },	-- Dalaran: Northrend
 				{ 69.4, 40.5, DARNASSUS },
 				{ 61.0, 36.9, DUN_MOROGH },
@@ -21,7 +21,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 			},
 			["maps"] = {
 				AZUREMYST_ISLE,
-				627,	-- Dalaran: Broken Isles
+				LEGION_DALARAN,
 				125,	-- Dalaran: Northrend
 				DARNASSUS,
 				DUN_MOROGH,

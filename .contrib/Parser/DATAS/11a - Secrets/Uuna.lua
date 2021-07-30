@@ -17,8 +17,8 @@ _.Secrets =
 			KUN_LAI_SUMMIT,
 			VALE_OF_ETERNAL_BLOSSOMS,
 			DRAENOR_SHADOWMOON_VALLEY,
-			627,
-			680,
+			LEGION_DALARAN,
+			SURAMAR,
 		},
 		["g"] = {
 			q(50098, {	-- Steps 1-4: A New Friend
@@ -113,14 +113,14 @@ _.Secrets =
 					q(50141, {	-- Step 2: Nighthold
 						["sourceQuests"] = { 50140 },	-- Step 1: Gate of the Setting Sun
 						["name"] = "Step 2: Nighthold",
-						["coord"] = { 62.3, 83.7, 680 },
-						["maps"] = { 680 },
+						["coord"] = { 62.3, 83.7, SURAMAR },
+						["maps"] = { SURAMAR },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50142, {	-- Step 3: Krasus Landing, Legion Dalaran
 						["sourceQuests"] = { 50141 },	-- Step 2: Nighthold
 						["name"] = "Step 3: Krasus Landing, Legion Dalaran",
-						["coord"] = { 72.4, 45.9, 627 },
+						["coord"] = { 72.4, 45.9, LEGION_DALARAN },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50143, {	-- Step 4: Dragonblight

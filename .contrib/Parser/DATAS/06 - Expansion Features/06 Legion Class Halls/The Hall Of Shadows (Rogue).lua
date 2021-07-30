@@ -98,7 +98,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 43015,	-- What Winstone Suggests
 					}),
 					q(43485, {	-- A Burning Distraction
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 98100 },	-- Taoshi
 						["sourceQuests"] = {
@@ -118,14 +118,14 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(43422, {	-- A Hero's Weapon
-						["coord"] = { 38.0, 58.0, 627 },
+						["coord"] = { 38.0, 58.0, LEGION_DALARAN },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 113362 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 44215,	-- One More Thing...
 					}),
 					q(41920, {	-- A Matter of Finesse
-						["maps"] = { 627 },	-- Dalaran
-						["coord"] = { 51.6, 70.4, 627 },
+						["maps"] = { LEGION_DALARAN },
+						["coord"] = { 51.6, 70.4, LEGION_DALARAN },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 41919,	-- The Shadows Reveal
@@ -326,8 +326,8 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 44177,	-- Dark Secrets and Shady Deals
 					}),
 					q(44177, {	-- Dark Secrets and Shady Deals
-						["maps"] = { 634 },	-- Stormheim
-						["coord"] = { 77.2, 55.0, 634 },
+						["maps"] = { STORMHEIM },
+						["coord"] = { 77.2, 55.0, STORMHEIM },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
 						["sourceQuests"] = {
@@ -336,7 +336,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42680, {	-- Deciphering the Letter
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuests"] = { 42678 },	-- Black Rook Hold: Into Black Rook Hold
@@ -351,15 +351,15 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 40950,	-- Honoring Success
 					}),
 					q(46103, {	-- Dread Infiltrators
-						["maps"] = { 646 },	-- Broken Shore
-						["coord"] = { 45.0, 64.0, 646 },
+						["maps"] = { BROKEN_SHORE },
+						["coord"] = { 45.0, 64.0, BROKEN_SHORE },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 119259 },	-- Apothecary Keever
 						["sourceQuest"] = 46246,	-- Strike Them Down
 					}),
 					q(45835, {	-- False Orders (A)
-						["maps"] = { 630 },	-- Azsuna
-						["coord"] = { 57.7, 63.5, 630 },
+						["maps"] = { AZSUNA },
+						["coord"] = { 57.7, 63.5, AZSUNA },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 119821 },	-- Tess Graymane
 						["races"] = ALLIANCE_ONLY,
@@ -393,8 +393,8 @@ _.ExpansionFeatures =
 						["description"] = "Pursue |cFFFFD700The Kingslayer|r.",
 					}),
 					q(45848, {	-- Fit For a Pirate
-						["coord"] = { 57.7, 63.5, 630 },
-						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 57.7, 63.5, AZSUNA },
+						["maps"] = { AZSUNA },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 118126 },	-- Crackers
 						["sourceQuests"] = {
@@ -507,17 +507,17 @@ _.ExpansionFeatures =
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
 					q(45836, {	-- Jorach's Calling (A)
-						["maps"] = { 630 },	-- Azsuna
+						["maps"] = { AZSUNA },
 						["classes"] = { ROGUE },
-						["coord"] = { 57.6, 63.4, 630 },
+						["coord"] = { 57.6, 63.4, AZSUNA },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 119821 },	-- Princess Tess Greymane
 						["sourceQuest"] = 45848,	-- Fit For a Pirate
 					}),
 					q(46326, {	-- Jorach's Calling (H)
-						["maps"] = { 630 },	-- Azsuna
+						["maps"] = { AZSUNA },
 						["classes"] = { ROGUE },
-						["coord"] = { 57.6, 63.4, 630 },
+						["coord"] = { 57.6, 63.4, AZSUNA },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 119822 },	-- Lilian Voss
 						["sourceQuest"] = 45848,	-- Fit For a Pirate
@@ -532,8 +532,8 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 40996,	-- Delegation
 					}),
 					q(45073, {	-- Loot and Plunder!
-						["maps"] = { 630 },	-- Azsuna
-						["coord"] = { 57.7, 63.6, 630 },
+						["maps"] = { AZSUNA },
+						["coord"] = { 57.7, 63.6, AZSUNA },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 118125 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 45833,	-- The Pirate's Bay
@@ -558,16 +558,16 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(46260, {	-- Meld Into the Shadows (A)
-						["maps"] = { 646 },	-- Broken Shore
-						["coord"] = { 76.9, 39.8, 646 },
+						["maps"] = { BROKEN_SHORE },
+						["coord"] = { 76.9, 39.8, BROKEN_SHORE },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 45628,	-- This Time, Leave a Trail
 					}),
 					q(46827, {	-- Meld Into the Shadows (H)
-						["maps"] = { 646 },	-- Broken Shore
-						["coord"] = { 76.9, 39.8, 646 },
+						["maps"] = { BROKEN_SHORE },
+						["coord"] = { 76.9, 39.8, BROKEN_SHORE },
 						["races"] = HORDE_ONLY,
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
@@ -604,8 +604,8 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 37689,	-- The Imposter
 					}),
 					q(37666, {	-- Picking a Fight
-						["maps"] = { 680 },	-- Suramar
-						["coord"] = { 27.0, 89.1, 680 },
+						["maps"] = { SURAMAR },
+						["coord"] = { 27.0, 89.1, SURAMAR },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 110793 },	-- Taoshi
 						["sourceQuest"] = 43508,	-- The Captive Spymaster
@@ -624,7 +624,7 @@ _.ExpansionFeatures =
 					}),
 					q(43007, {	-- Return to the Chamber of Shadows
 						["lvl"] = 101,
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 112679 },	-- Valeera Sanguinar
 						["isBreadcrumb"] = true,
@@ -642,16 +642,16 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 43007,	-- Return to the Chamber of Shadows
 					}),
 					q(45573, {	-- Rise Up (A)
-						["maps"] = { 646 },	-- Broken Shore
-						["coord"] = { 70.1, 47.0, 646 },
+						["maps"] = { BROKEN_SHORE },
+						["coord"] = { 70.1, 47.0, BROKEN_SHORE },
 						["classes"] = { ROGUE },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 45571,	-- A Bit of Espionage
 					}),
 					q(45576, {	-- Rise Up (H)
-						["maps"] = { 646 },	-- Broken Shore
-						["coord"] = { 70.1, 47.0, 646 },
+						["maps"] = { BROKEN_SHORE },
+						["coord"] = { 70.1, 47.0, BROKEN_SHORE },
 						["classes"] = { ROGUE },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
@@ -663,8 +663,8 @@ _.ExpansionFeatures =
 						["description"] = "Only available if you you have the |cFFFFD700Plunder|r order hall upgrade.",
 					}),
 					q(44155, {	-- Searching For Clues
-						["maps"] = { 634 },	-- Stormheim
-						["coord"] = { 77.2, 55.0, 634 },
+						["maps"] = { STORMHEIM },
+						["coord"] = { 77.2, 55.0, STORMHEIM },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 44116,	-- Mystery at Citrine Bay
@@ -804,15 +804,15 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 98100 },	-- Taoshi
 					}),
 					q(45628, {	-- This Time, Leave a Trail (A)
-						["maps"] = { 646 },	-- Broken Shore
-						["coord"] = { 71.6, 41.9, 646 },
+						["maps"] = { BROKEN_SHORE },
+						["coord"] = { 71.6, 41.9, BROKEN_SHORE },
 						["classes"] = { ROGUE },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 117262 },	-- Princess Tess Greymane
 						["sourceQuest"] = 45573,	-- Rise Up
 					}),
 					q(45629, {	-- This Time, Leave a Trail (H)
-						["maps"] = { 646 },	-- Broken Shore
+						["maps"] = { BROKEN_SHORE },
 						["classes"] = { ROGUE },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 45576,	-- Rise Up
@@ -824,15 +824,15 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
 					}),
 					q(44117, {	-- Time Flies When Yer Havin' Rum!
-						["maps"] = { 634 },	-- Stormheim
-						["coord"] = { 77.2, 55.0, 634 },
+						["maps"] = { STORMHEIM },
+						["coord"] = { 77.2, 55.0, STORMHEIM },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 44116,	-- Mystery at Citrine Bay
 					}),
 					q(41922, {	-- Traitor!
-						["maps"] = { 627 },	-- Dalaran
-						["coord"] = { 49.4, 41.2, 627 },
+						["maps"] = { LEGION_DALARAN },
+						["coord"] = { 49.4, 41.2, LEGION_DALARAN },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 41921,	-- Closing In
@@ -858,8 +858,8 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 43014,	-- The Big Bad Wolfe
 					}),
 					q(44758, {	-- What's the Cache? (A)
-						["maps"] = { 630 },	-- Azsuna
-						["coord"] = { 57.7, 63.5, 630 },
+						["maps"] = { AZSUNA },
+						["coord"] = { 57.7, 63.5, AZSUNA },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 119821 },	-- Tess Graymane
 						["races"] = ALLIANCE_ONLY,

@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(630, {	-- Azsuna
+	m(BROKEN_ISLES, {
+		m(AZSUNA, {
 			n(ACHIEVEMENTS, {
 				ach(10994, {	-- A Glorious Campaign
 					cl(PALADIN, {
@@ -65,7 +65,7 @@ _.Zones =
 							["g"] = {
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
-									["coord"] = { 46.4, 40.4, 630 },
+									["coord"] = { 46.4, 40.4, AZSUNA },
 								}),
 							},
 						}),
@@ -75,7 +75,7 @@ _.Zones =
 							["g"] = {
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
-									["coord"] = { 46.4, 40.4, 630 },
+									["coord"] = { 46.4, 40.4, AZSUNA },
 								}),
 							},
 						}),
@@ -85,7 +85,7 @@ _.Zones =
 							["g"] = {
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
-									["coord"] = { 46.4, 40.4, 630 },
+									["coord"] = { 46.4, 40.4, AZSUNA },
 								}),
 							},
 						}),
@@ -95,7 +95,7 @@ _.Zones =
 							["g"] = {
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
-									["coord"] = { 46.4, 40.4, 630 },
+									["coord"] = { 46.4, 40.4, AZSUNA },
 								}),
 							},
 						}),
@@ -105,7 +105,7 @@ _.Zones =
 							["g"] = {
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
-									["coord"] = { 46.4, 40.4, 630 },
+									["coord"] = { 46.4, 40.4, AZSUNA },
 								}),
 							},
 						}),
@@ -115,7 +115,7 @@ _.Zones =
 							["g"] = {
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
-									["coord"] = { 46.4, 40.4, 630 },
+									["coord"] = { 46.4, 40.4, AZSUNA },
 								}),
 							},
 						}),
@@ -125,7 +125,7 @@ _.Zones =
 							["g"] = {
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
-									["coord"] = { 46.4, 40.4, 630 },
+									["coord"] = { 46.4, 40.4, AZSUNA },
 								}),
 							},
 						}),
@@ -135,7 +135,7 @@ _.Zones =
 							["g"] = {
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
-									["coord"] = { 46.4, 40.4, 630 },
+									["coord"] = { 46.4, 40.4, AZSUNA },
 								}),
 							},
 						}),
@@ -145,7 +145,7 @@ _.Zones =
 							["g"] = {
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
-									["coord"] = { 46.4, 40.4, 630 },
+									["coord"] = { 46.4, 40.4, AZSUNA },
 								}),
 							},
 						}),
@@ -155,7 +155,7 @@ _.Zones =
 							["g"] = {
 								crit(1, {	-- Nightwatcher Merayl
 									["creatureID"] = 106552,	-- Nightwatcher Merayl
-									["coord"] = { 46.4, 40.4, 630 },
+									["coord"] = { 46.4, 40.4, AZSUNA },
 								}),
 							},
 						}),

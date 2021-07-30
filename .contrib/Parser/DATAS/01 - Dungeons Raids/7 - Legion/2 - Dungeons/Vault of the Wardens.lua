@@ -4,7 +4,7 @@
 
 _.Instances = { tier(LEGION_TIER, {
 	inst(707, {	-- Vault of the Wardens
-		["coord"] = { 48.0, 82.1, 630 },
+		["coord"] = { 48.0, 82.1, AZSUNA },
 		["maps"] = { 710, 711, 712 },
 		["g"] = {
 			n(QUESTS, {

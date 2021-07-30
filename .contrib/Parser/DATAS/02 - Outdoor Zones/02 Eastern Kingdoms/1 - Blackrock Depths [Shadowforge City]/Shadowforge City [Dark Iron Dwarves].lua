@@ -168,17 +168,17 @@ _.Zones =
 					["g"] = {
 						q(53589, {	-- Aalgen Point
 							["name"] = "Aalgen Point",
-							["coord"] = { 71.68, 48.01, 646 },
+							["coord"] = { 71.68, 48.01, BROKEN_SHORE },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 646 },	-- Broken Shore
+							["maps"] = { BROKEN_SHORE },
 						}),
 						q(53593, {	-- Neltharion's Vault
 							["name"] = "Neltharion's Vault",
-							["coord"] = { 44.66, 72.87, 650 },
+							["coord"] = { 44.66, 72.87, HIGHMOUNTAIN },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 650 },	-- Highmountain
+							["maps"] = { HIGHMOUNTAIN },
 						}),
 					},
 				}),

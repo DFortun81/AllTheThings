@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(619, {	-- Broken Isles
+	m(BROKEN_ISLES, {
 		m(971, {	-- Telogrus Rift
 			["maps"] = { 972 },	-- Telogrus Rift
 			["races"] = { VOIDELF },

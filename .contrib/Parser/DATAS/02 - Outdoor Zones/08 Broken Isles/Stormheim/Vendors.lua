@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(634, {	-- Stormheim
+	m(BROKEN_ISLES, {
+		m(STORMHEIM, {
 			n(VENDORS, {
 				n(98367, {	-- Tigrid the Charmer <Enchantress>
-					["coord"] = { 39.4, 42.6, 634 },
+					["coord"] = { 39.4, 42.6, STORMHEIM },
 					["g"] = {
 						i(128617, {	-- Formula: Enchant Gloves - Legion Herbalism
 							["cost"] = { { "i", 124440, 50 }, },	-- 50x Arkhana
@@ -31,7 +31,7 @@ _.Zones =
 					},
 				}),
 				n(90866, {	-- Tinkmaster Overspark <Chief Architect of Gnomish Engineering>
-					["coord"] = { 33.6, 50.8, 634 },
+					["coord"] = { 33.6, 50.8, STORMHEIM },
 					["g"] = {
 						i(23799, {	-- Schematic: Adamantite Rifle
 							["spellID"] = 30313,	-- Adamantite Rifle
@@ -66,7 +66,7 @@ _.Zones =
 					},
 				}),
 				n(106904, {	-- Valdemar Stormseeker <Valarjar Emissary>
-					["coord"] = { 60.2, 51.2, 634 },
+					["coord"] = { 60.2, 51.2, STORMHEIM },
 					["g"] = {
 						i(140225, {	-- Boon of the Salvager
 							["cost"] = 1275000,	-- 127,5g

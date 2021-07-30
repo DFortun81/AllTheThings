@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(630, {	-- Azsuna
+	m(BROKEN_ISLES, {
+		m(AZSUNA, {
 			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(42119, {	-- A Cleansing Cocktail

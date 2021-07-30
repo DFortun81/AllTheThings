@@ -16,8 +16,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46071 },	-- The Hammer of Dalaran
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, 627 },
-						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+						["maps"] = { LEGION_DALARAN },
 						["cost"] = {
 							{ "i", 123918, 25 },	-- Leystone Ore x25
 							{ "i", 147768, 1 },		-- Suramarian Sapphire
@@ -27,21 +27,21 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45644 },	-- Oh Doloria, My Sweet Doloria
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 117438 },	-- Doloria
-						["coord"] = { 48.2, 41.0, 627 },
-						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 48.2, 41.0, LEGION_DALARAN },
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(43424, {	-- A Hero's Weapon
 						["sourceQuests"] = { 43697 },	-- Warriors of Light
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 72.6, 25.8, 646 },
+						["coord"] = { 72.6, 25.8, BROKEN_SHORE },
 					}),
 					q(45566, {	-- A Knight's Belongings
 						["sourceQuests"] = { 45565 },	-- Further Training
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
-						["coord"] = { 55.8, 16.2, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 					}),
 					q(43700, {	-- A Light in the Darkness
 						["sourceQuests"] = {
@@ -90,7 +90,7 @@ _.ExpansionFeatures =
 					q(38710, {	-- An Urgent Gathering
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 92909 },	-- Lord Maxwell Tyrosus
-						["maps"] = { 627 },
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(45974, {	-- An Urgent Warning
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
@@ -105,15 +105,18 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 43489 },	-- To Felblaze Ingress
 						["classes"] = { PALADIN },
 						["provider"] = { "o", 252232 },	-- Aponi's Libram
-						["coord"] = { 66.2, 26.1, 630 },	-- Azsuna
-						["maps"] = { 630, 748 },	-- Azsuna, Niskara
+						["coord"] = { 66.2, 26.1, AZSUNA },
+						["maps"] = {
+							AZSUNA,
+							748,	-- Niskara
+						},
 					}),
 					q(43487, {	-- Assault on Violet Hold: The Fel Lexicon
 						["sourceQuests"] = { 43486 },	-- Cracking the Codex
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 110571 },	-- Delas Moonfang
-						["coord"] = { 44.6, 23.1, 627 },
-						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 44.6, 23.1, LEGION_DALARAN },
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(43493, {	-- Black Rook Hold: Lord Ravencrest
 						["sourceQuests"] = { 43535 },	-- Translation: Danger!
@@ -128,8 +131,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 43486 },	-- Cracking the Codex
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 110571 },	-- Delas Moonfang
-						["coord"] = { 44.6, 23.1, 627 },
-						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 44.6, 23.1, LEGION_DALARAN },
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(43534, {	-- Blood of Sargeras
 						["sourceQuests"] = {
@@ -239,8 +242,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42887 },	-- This Is Retribution
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 109384 },	-- Justicar Julia Celeste
-						["coord"] = { 30.6, 44.9, 630 },
-						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 30.6, 44.9, AZSUNA },
+						["maps"] = { AZSUNA },
 					}),
 					q(44370, {	-- Completing Your Arsenal
 						["sourceQuests"] = { 42120 },	-- The Silver Hand
@@ -264,8 +267,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45890 },	-- Ancestors and Enemies
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 119209 },	-- Erelyn Moonfang
-						["coord"] = { 66.8, 53.4, 641 },
-						["maps"] = { 641 },	-- Val'sharah
+						["coord"] = { 66.8, 53.4, VALSHARAH },
+						["maps"] = { VALSHARAH },
 					}),
 					q(43699, {	-- Defenders of the World
 						["sourceQuests"] = {
@@ -308,8 +311,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45562 },	-- Kneel and Be Squired!
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
-						["coord"] = { 55.8, 16.2, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 					}),
 					q(46151, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
@@ -344,8 +347,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45561 },	-- Seek Me Out
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
-						["coord"] = { 55.8, 16.2, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 					}),
 					q(46132, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
@@ -354,8 +357,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46083 },	-- A Few Things First
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, 627 },
-						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(38933, {	-- Logistical Matters
 						["sourceQuests"] = { 38566 },	-- A United Force
@@ -382,22 +385,22 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46259 },	-- Darkbinder Dilemma
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 119209 },	-- Erelyn Moonfang
-						["coord"] = { 66.8, 53.4, 641 },
-						["maps"] = { 641 },	-- Val'sharah
+						["coord"] = { 66.8, 53.4, VALSHARAH },
+						["maps"] = { VALSHARAH },
 					}),
 					q(43462, {	-- Mother Ozram
 						["sourceQuests"] = { 42887 },	-- This Is Retribution
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 109384 },	-- Justicar Julia Celeste
-						["coord"] = { 30.6, 44.9, 630 },
-						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 30.6, 44.9, AZSUNA },
+						["maps"] = { AZSUNA },
 					}),
 					q(45567, {	-- My Kingdom for a Horse
 						["sourceQuests"] = { 45566 },	-- A Knight's Belongings
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
-						["coord"] = { 55.8, 16.2, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 					}),
 					q(45148, {	-- Oath Breaker
 						["sourceQuests"] = { 45147 },	-- Felstone Destruction
@@ -409,8 +412,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45568 },	-- They Stole Excaliberto!
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 118009 },	-- Maximillian of Northshire
-						["coord"] = { 55.8, 16.2, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 					}),
 					q(46070, {	-- Preparations Underway
 						["sourceQuests"] = { 46069 },	-- Worthy of the Title
@@ -458,7 +461,7 @@ _.ExpansionFeatures =
 							{ "n", 90259 },	-- Lord Maxwell Tyrosus
 							{ "n", 90369 },	-- Lord Maxwell Tyrosus
 						},
-						["coord"] = { 74.8, 48.2, 627 },
+						["coord"] = { 74.8, 48.2, LEGION_DALARAN },
 					}),
 					q(42770, {	-- Seeking Guidance
 						["sourceQuests"] = { 44370 },	-- Completing Your Arsenal
@@ -470,8 +473,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42005 },	-- The End of the Saga
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 105813 },	-- Orik Trueheart
-						["coord"] = { 73.9, 49.0, 627 },
-						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 73.9, 49.0, LEGION_DALARAN },
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(43494, {	-- Silver Hand Knights
 						["sourceQuests"] = { 42890 },	-- The Codex of Command
@@ -504,8 +507,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42231 },	-- The Mysterious Paladin
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 106337 },	-- Travard
-						["coord"] = { 72.0, 49.3, 627 },
-						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 72.0, 49.3, LEGION_DALARAN },
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(42890, {	-- The Codex of Command
 						["sourceQuests"] = {
@@ -514,7 +517,7 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 109434 },	-- Justicar Julia Celeste
-						["maps"] = { 630 },	-- Azsuna
+						["maps"] = { AZSUNA },
 					}),
 					q(42005, {	-- The End of the Saga
 						["sourceQuests"] = { 42002 }, -- To Northrend
@@ -576,22 +579,22 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42377 },	-- The Brother's Trail
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 106337 },	-- Travard
-						["coord"] = { 72.0, 49.3, 627 },
-						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 72.0, 49.3, LEGION_DALARAN },
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(45568, {	-- They Stole Excaliberto!
 						["sourceQuests"] = { 45567 },	-- My Kingdom for a Horse
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
-						["coord"] = { 55.8, 16.2, 650 },
-						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
+						["maps"] = { HIGHMOUNTAIN },
 					}),
 					q(42887, {	-- This Is Retribution
 						["sourceQuests"] = { 42886 },	-- To Faronaar
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 109356 },	-- Vindicator Boros
-						["coord"] = { 45.9, 51.6, 630 },
-						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 45.9, 51.6, AZSUNA },
+						["maps"] = { AZSUNA },
 					}),
 					q(42886, {	-- To Faronaar
 						["sourceQuests"] = { 42966 },	-- The Highlord's Command
@@ -609,8 +612,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42000 },	-- Seeker of Truth
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 105689 },	-- Orik Trueheart
-						["coord"] = { 73.9, 49.0, 627 },
-						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 73.9, 49.0, LEGION_DALARAN },
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(43535, {	-- Translation: Danger!
 						["sourceQuests"] = {
@@ -619,8 +622,8 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 110571 },	-- Delas Moonfang
-						["coord"] = { 44.6, 23.1, 627 },
-						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 44.6, 23.1, LEGION_DALARAN },
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(43541, {	-- United As One
 						["sourceQuests"] = {
@@ -652,7 +655,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 43700 },	-- A Light in the Darkness
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 72.6, 25.8, 646 },
+						["coord"] = { 72.6, 25.8, BROKEN_SHORE },
 						["g"] = {
 							i(139690),	-- Breastplate of the Silver Hand
 							title(345),	-- Highlord %s
@@ -665,26 +668,26 @@ _.ExpansionFeatures =
 							{ "n", 106209 },	-- Lord Maxwell Tyrosus
 							{ "n", 106834 },	-- Lord Maxwell Tyrosus
 						},
-						["coord"] = { 71.7, 45.1, 627 },
-						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 71.7, 45.1, LEGION_DALARAN },
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(42811, {	-- We Meet at Light's Hope
 						["sourceQuests"] = { 38376 },	-- The Search for the Highlord
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 91144 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 20.4, 61.4, 646 },
+						["coord"] = { 20.4, 61.4, BROKEN_SHORE },
 					}),
 					q(40408, {	-- Weapons of Legend
 						["sourceQuests"] = { 38710 },	-- An Urgent Gathering
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 74.8, 48.2, 627 },
+						["coord"] = { 74.8, 48.2, LEGION_DALARAN },
 					}),
 					q(45813, {	-- Where Art Thou, My Sweet
 						["sourceQuests"] = { 45645 },	-- A Fool's Errand
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 118088 },	-- Maximillian of Northshire <Knight-Errant>
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 						["g"] = {
 							follower(1001),	-- Maximillian of Northshire
 						},
@@ -693,8 +696,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46246 },	-- Strike Them Down
 						["provider"] = { "n", 118376 },	-- Champion Cyssa Dawnrose
 						["classes"] = { PALADIN },
-						["coord"] = { 43.8, 63.0, 646 },
-						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 43.8, 63.0, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(42849, {	-- Wrath and Justice
 						["sourceQuests"] = { 42848 },	-- Recruiting the Troops

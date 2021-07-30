@@ -113,20 +113,20 @@ _.ExpansionFeatures =
 					q(46237, {	-- Bloodbringer's Missive
 						["sourceQuests"] = { 46253 },	-- Pillars of Creation
 						["classes"] = { WARLOCK },
-						["coord"] = { 43.9, 63.2, 646 },
-						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 43.9, 63.2, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 						["provider"] = { "n", 117622 },	-- Elithys Firestorm
 					}),
 					q(39179, {	-- Bloodstone Bandit
 						["sourceQuests"] = { 41759 },	-- An Unlikely Ally
 						["classes"] = { WARLOCK },
-						["coord"] = { 60.8, 30.6, 630 },	-- Azsuna
+						["coord"] = { 60.8, 30.6, AZSUNA },
 						["provider"] = { "n", 105816 },	-- Kira Iresoul
 					}),
 					q(41784, {	-- Borrowed Time
 						["sourceQuests"] = { 41780 },	-- Doom and Gloom
 						["classes"] = { WARLOCK },
-						["coord"] = { 39.1, 62.6, 641 },
+						["coord"] = { 39.1, 62.6, VALSHARAH },
 						["provider"] = { "n", 104824 },	-- Ernest Carlisle
 						["g"] = {
 							i(139770),	-- Wristbands of the Black Harvest
@@ -215,16 +215,16 @@ _.ExpansionFeatures =
 					q(46020, {	-- Crystal Containment
 						["sourceQuests"] = { 45028 },	-- The Fate of Kanrethad
 						["classes"] = { WARLOCK },
-						["coord"] = { 78.1, 39.7, 646 },
+						["coord"] = { 78.1, 39.7, BROKEN_SHORE },
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
-						["maps"] = { 646 },	-- Broken Shore
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(45024, {	-- Cult Culling
 						["sourceQuests"] = { 45021 },	-- Answers Unknown
 						["classes"] = { WARLOCK },
-						["coord"] = { 30.4, 44.6, 630 },
+						["coord"] = { 30.4, 44.6, AZSUNA },
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
-						["maps"] = { 630 },	-- Azsuna
+						["maps"] = { AZSUNA },
 					}),
 					q(42125, {	-- Dark Whispers
 						["sourceQuests"] = {
@@ -233,13 +233,13 @@ _.ExpansionFeatures =
 							42168,	-- Looking into the Darkness
 						},
 						["classes"] = { WARLOCK },
-						["coord"] = { 54.0, 47.0, 627 },
+						["coord"] = { 54.0, 47.0, LEGION_DALARAN },
 						["provider"] = { "n", 106610 },	-- Calydus
 					}),
 					q(40218, {	-- Debt Repaid
 						["sourceQuests"] = { 39142 },	-- Testing a Theory
 						["classes"] = { WARLOCK },
-						["coord"] = { 60.8, 30.6, 630 },	-- Azsuna
+						["coord"] = { 60.8, 30.6, AZSUNA },
 						["provider"] = { "n", 105816 },	-- Kira Iresoul
 					}),
 					q(40604, {	-- Disturbing the Past
@@ -252,7 +252,7 @@ _.ExpansionFeatures =
 					q(41780, {	-- Doom and Gloom
 						["sourceQuest"] = 41781,	-- Herding Goats
 						["classes"] = { WARLOCK },
-						["coord"] = { 39.1, 62.6, 641 },
+						["coord"] = { 39.1, 62.6, VALSHARAH },
 						["provider"] = { "n", 104824 },	-- Ernest Carlisle
 					}),
 					q(42100, {	-- Empowering the Soul
@@ -270,9 +270,9 @@ _.ExpansionFeatures =
 							45025,	-- Stealing the Source of Power
 						},
 						["classes"] = { WARLOCK },
-						["coord"] = { 30.4, 44.6, 630 },
+						["coord"] = { 30.4, 44.6, AZSUNA },
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
-						["maps"] = { 630 },	-- Azsuna
+						["maps"] = { AZSUNA },
 					}),
 					q(46239, {	-- Fel to the Core
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
@@ -322,7 +322,7 @@ _.ExpansionFeatures =
 					q(41781, {	-- Herding Goats
 						["sourceQuest"] = 41769,	-- Mad Ernie the Alchemist
 						["classes"] = { WARLOCK },
-						["coord"] = { 39.1, 62.6, 641 },
+						["coord"] = { 39.1, 62.6, VALSHARAH },
 						["provider"] = { "n", 104824 },	-- Ernest Carlisle
 					}),
 					q(43887, {	-- Hitting the Books
@@ -346,9 +346,9 @@ _.ExpansionFeatures =
 					q(45794, {	-- Informing the Council
 						["sourceQuests"] = { 45026 },	-- Expending Fel Energy
 						["classes"] = { WARLOCK },
-						["coord"] = { 30.4, 44.6, 630 },
+						["coord"] = { 30.4, 44.6, AZSUNA },
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
-						["maps"] = { 630 },	-- Azsuna
+						["maps"] = { AZSUNA },
 					}),
 					q(45990, {	-- Investigate the Broken Shore
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
@@ -356,7 +356,7 @@ _.ExpansionFeatures =
 					q(39389, {	-- It Hungers for Blood
 						["sourceQuests"] = { 39179 },	-- Bloodstone Bandit
 						["classes"] = { WARLOCK },
-						["coord"] = { 60.8, 30.6, 630 },	-- Azsuna
+						["coord"] = { 60.8, 30.6, AZSUNA },
 						["provider"] = { "n", 105816 },	-- Kira Iresoul
 					}),
 					q(46131, {	-- Knowledge is Power
@@ -374,7 +374,7 @@ _.ExpansionFeatures =
 							42128,	-- Ritual Reagents
 						},
 						["classes"] = { WARLOCK },
-						["coord"] = { 54.0, 47.0, 627 },
+						["coord"] = { 54.0, 47.0, LEGION_DALARAN },
 						["provider"] = { "n", 106610 },	-- Calydus
 					}),
 					q(41769, {	-- Mad Ernie the Alchemist
@@ -434,7 +434,7 @@ _.ExpansionFeatures =
 					q(43254, {	-- Ritual Ruination
 						["sourceQuests"] = { 43153 },	-- An Eye for a Scepter
 						["classes"] = { WARLOCK },
-						["coord"] = { 73.8, 42.9, 627 },	-- Dalaran
+						["coord"] = { 73.8, 42.9, LEGION_DALARAN },
 						["provider"] = { "n", 109838 },	-- Calydus
 					}),
 					q(42128, {	-- Ritual Reagents
@@ -462,9 +462,9 @@ _.ExpansionFeatures =
 					q(45025, {	-- Stealing the Source of Power
 						["sourceQuests"] = { 45021 },	-- Answers Unknown
 						["classes"] = { WARLOCK },
-						["coord"] = { 30.4, 44.6, 630 },
+						["coord"] = { 30.4, 44.6, AZSUNA },
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
-						["maps"] = { 630 },	-- Azsuna
+						["maps"] = { AZSUNA },
 					}),
 					q(42601, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 42602 },	-- Troops in the Field
@@ -475,7 +475,7 @@ _.ExpansionFeatures =
 					q(39142, {	-- Testing a Theory
 						["sourceQuests"] = { 39389 },	-- It Hungers for Blood
 						["classes"] = { WARLOCK },
-						["coord"] = { 60.8, 30.6, 630 },	-- Azsuna
+						["coord"] = { 60.8, 30.6, AZSUNA },
 						["provider"] = { "n", 105816 },	-- Kira Iresoul
 					}),
 					q(40623, {	-- The Dark Riders
@@ -489,7 +489,7 @@ _.ExpansionFeatures =
 					q(46242, {	-- The Dreadlord's Calling
 						["sourceQuests"] = { 46241 },	-- The Minions of Hel'nurath
 						["classes"] = { WARLOCK },
-						["maps"] = { 646 },	-- Broken Shore
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(40611, {	-- The Fate of Deadwind
 						["sourceQuests"] = { 40606 },	-- To Point the Way
@@ -502,9 +502,9 @@ _.ExpansionFeatures =
 					q(45028, {	-- The Fate of Kanrethad
 						["sourceQuests"] = { 45027 },	-- To the Broken Shore
 						["classes"] = { WARLOCK },
-						["coord"] = { 81.1, 49.6, 646 },
+						["coord"] = { 81.1, 49.6, BROKEN_SHORE },
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
-						["maps"] = { 646 },	-- Broken Shore
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(40731, {	-- The Heart of the Dreadscar
 						["sourceQuests"] = {

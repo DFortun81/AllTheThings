@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(630, {	-- Azsuna
+	m(BROKEN_ISLES, {
+		m(AZSUNA, {
 			n(-38, {	-- Profession
 				prof(ALCHEMY, {
 					q(39390, {	-- A Mysterious Text
@@ -257,7 +257,7 @@ _.Zones =
 						["g"] = {
 							faction(2097, {	-- Ilyssia of the Waters
 								["creatureID"] = 120266,
-								["coord"] = { 43.2, 40.6, 630 },	-- Azsuna
+								["coord"] = { 43.2, 40.6, AZSUNA },
 								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF43.2, 40.6|r north of Illidari Stand.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
 								["requireSkill"] = FISHING,
 								["g"] = {
@@ -430,7 +430,7 @@ _.Zones =
 				prof(JEWELCRAFTING, {
 				--	most of these quests need SQs added/to be verified.  data was taken from wowhead after they were reported as missing on discord.
 					q(40528, {	-- Finishing Touches (Azsunite Loop)
-						["coord"] = { 46.6, 41.4, 630 },
+						["coord"] = { 46.6, 41.4, AZSUNA },
 						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
 						["requireSkill"] = JEWELCRAFTING,
 						["sourceQuests"] = {
@@ -442,7 +442,7 @@ _.Zones =
 						},
 					}),
 					q(40526, {	-- Finishing Touches (Skystone Loop)
-						["coord"] = { 46.6, 41.4, 630 },
+						["coord"] = { 46.6, 41.4, AZSUNA },
 						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
 						["requireSkill"] = JEWELCRAFTING,
 						["sourceQuests"] = {
@@ -454,7 +454,7 @@ _.Zones =
 						},
 					}),
 					q(40527, {	-- Finishing Touches (Deep Amber Loop)
-						["coord"] = { 46.6, 41.4, 630 },
+						["coord"] = { 46.6, 41.4, AZSUNA },
 						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
 						["requireSkill"] = JEWELCRAFTING,
 						["sourceQuests"] = {
@@ -466,13 +466,13 @@ _.Zones =
 						},
 					}),
 					q(40525, {	-- Getting the Band Back Together
-						["coord"] = { 46.6, 41.4, 630 },
+						["coord"] = { 46.6, 41.4, AZSUNA },
 						["provider"] = { "n", 100538 },	-- Timothy Jones
 						["sourceQuest"] = 40524,	-- A Familiar Ring to It
 						["requireSkill"] = JEWELCRAFTING,
 					}),
 					q(42214, {	-- Knocked for a Loop
-						["coord"] = { 46.6, 41.4, 630 },
+						["coord"] = { 46.6, 41.4, AZSUNA },
 						["provider"] = { "n", 100538 },	-- Timothy Jones
 						["sourceQuest"] = 40524,	-- A Familiar Ring to It
 						["requireSkill"] = JEWELCRAFTING,
@@ -548,7 +548,7 @@ _.Zones =
 					q(40145, {	-- Under Down
 						["sourceQuests"] = { 40144 },	-- Glielle
 						["requireSkill"] = SKINNING,
-						["coord"] = { 47.0, 45.2, 630 },
+						["coord"] = { 47.0, 45.2, AZSUNA },
 						["provider"] = { "n", 98791 },	-- Glielle
 						["g"] = {
 							recipe(194165),	-- Skinning Technique: Stormscale (Rank 2)

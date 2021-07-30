@@ -4,18 +4,18 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(634, {	-- Stormheim
+	m(BROKEN_ISLES, {
+		m(STORMHEIM, {
 			n(QUESTS, {
 				q(40002, {	-- A Familiar Fate
 					["sourceQuests"] = { 40001 },	-- Knocking on Valor's Door
-					["coord"] = { 65.8, 59.4, 634 },
+					["coord"] = { 65.8, 59.4, STORMHEIM },
 					["provider"] = { "n", 91743 },	-- Circle of Binding
 				}),
 				q(39385, {	-- A Gift for Greymane
 					["sourceQuests"] = { 38872 },	-- The Dark Lady's Bidding
 					["races"] = HORDE_ONLY,
-					["coord"] = { 57.6, 71.9, 634 },
+					["coord"] = { 57.6, 71.9, STORMHEIM },
 					["g"] = {
 						i(129225),	-- Runespeaker's Bracers
 						i(129226),	-- Dreadsworn Armplates
@@ -30,13 +30,13 @@ _.Zones =
 				q(38312, {	-- A Grapple a Day (Alliance)
 					["sourceQuests"] = { 38473 },	-- Will of the Thorignir
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 37.4, 63.8, 634 },
+					["coord"] = { 37.4, 63.8, STORMHEIM },
 					["provider"] = { "n", 91222 },	-- Commander Lorna Crowley <Gilneas Brigade>
 				}),
 				q(38612, {	-- A Grapple a Day (Horde)
 					["sourceQuests"] = { 38611 },	-- Will of the Thorignir
 					["races"] = HORDE_ONLY,
-					["coord"] = { 44.8, 59.3, 634 },
+					["coord"] = { 44.8, 59.3, STORMHEIM },
 					["provider"] = { "n", 92561 },	-- Dread-Rider Cullen
 				}),
 				q(38362, {	-- A Grim Trophy
@@ -45,7 +45,7 @@ _.Zones =
 						38361,	-- Wrath of the Blightcaller
 					},
 					["races"] = HORDE_ONLY,
-					["coord"] = { 44.1, 18.1, 634 },
+					["coord"] = { 44.1, 18.1, STORMHEIM },
 					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
 					["g"] = {
 						i(121499),	-- Footwraps of the Blightcaller
@@ -60,20 +60,20 @@ _.Zones =
 				}),
 				q(40078, {	-- A Heavy Burden
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
-					["coord"] = { 60.0, 50.7, 634 },
+					["coord"] = { 60.0, 50.7, STORMHEIM },
 					["provider"] = { "n", 92539 },	-- Havi
 					["g"] = {
 						i(133813),	-- Recipe: Pickled Stormray (Rank 1)
 					},
 				}),
 				q(40120, {	-- A Murky Fate
-					["coord"] = { 78.2, 58.5, 634 },
+					["coord"] = { 78.2, 58.5, STORMHEIM },
 					["provider"] = { "n", 98587 },	-- Morheim Ancestor
 				}),
 				q(38882, {	-- A New Life for Undeath
 					["sourceQuests"] = { 39155 },	-- Becoming the Ascendant
 					["races"] = HORDE_ONLY,
-					["coord"] = { 62.5, 68.0, 634 },
+					["coord"] = { 62.5, 68.0, STORMHEIM },
 					["provider"] = { "n", 94228 },	-- Lady Sylvanas Windrunner
 					["g"] = {
 						i(121572),	-- Sylvanas' Barbed Arrow
@@ -90,7 +90,7 @@ _.Zones =
 						39793,	-- Only the Finest
 						39787,	-- Rigging the Wager
 					},
-					["coord"] = { 51.3, 57.2, 634 },
+					["coord"] = { 51.3, 57.2, STORMHEIM },
 					["provider"] = { "n", 107675 },		-- Rax Sixtrigger
 				}),
 				q(39786, {	-- A Stone Cold Gamble
@@ -98,47 +98,47 @@ _.Zones =
 						39793,	-- Only the Finest
 						39787,	-- Rigging the Wager
 					},
-					["coord"] = { 51.3, 56.9, 634 },
+					["coord"] = { 51.3, 56.9, STORMHEIM },
 					["provider"] = { "n", 107674 },		-- Snaggle Sixtrigger
 				}),
 				q(42639, {	-- A Stone of Blood
-					["coord"] = { 74.8, 55.5, 634 },
+					["coord"] = { 74.8, 55.5, STORMHEIM },
 					["provider"] = { "n", 108072 },	-- Sir Finley Mrrggglton
 				}),
 				q(44771, {	-- A Threat Rises
 					["provider"] = { "n", 92539 },	-- Havi
-					["coord"] = { 60.2, 50.8, 634 },
+					["coord"] = { 60.2, 50.8, STORMHEIM },
 					["sourceQuest"] = 44720,	-- A Call to Action
 				}),
 				q(39594, {	-- A Trial of Might
 					["provider"] = { "n", 96257 },	-- Yotnar
-					["coord"] = { 46.6, 44.4, 634 },
+					["coord"] = { 46.6, 44.4, STORMHEIM },
 					["sourceQuests"] = {
 						39593,	-- The Shattered Watcher
 						39592,	-- A Trial of Will
 					},
 				}),
 				q(39591, {	-- A Trial of Valor
-					["coord"] = { 46.6, 44.4, 634 },
+					["coord"] = { 46.6, 44.4, STORMHEIM },
 					["sourceQuests"] = { 39590 },	-- Ahead of the Game
 				}),
 				q(39592, {	-- A Trial of Will
-					["coord"] = { 46.6, 44.4, 634 },
+					["coord"] = { 46.6, 44.4, STORMHEIM },
 					["sourceQuests"] = { 39590 },	-- Ahead of the Game
 				}),
 				q(38442, {	-- A Worthy Challenger (Bonus Objective)
-					["coord"] = { 44.8, 45.6, 634 },
+					["coord"] = { 44.8, 45.6, STORMHEIM },
 				}),
 				q(38412, {	-- Above the Winter Moonlight (Alliance)
 					["sourceQuests"] = { 38342 },	-- Another Way
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 45.7, 72.9, 634 },
+					["coord"] = { 45.7, 72.9, STORMHEIM },
 					["provider"] = { "n", 91558 },	-- Commander Lorna Crowley <Gilneas Brigade>
 				}),
 				q(38618, {	-- Above the Winter Moonlight (Horde)
 					["provider"] = { "n", 92569 },	-- Dread-Rider Cullen
 					["races"] = HORDE_ONLY,
-					["coord"] = { 45.7, 72.9, 634 },
+					["coord"] = { 45.7, 72.9, STORMHEIM },
 					["sourceQuests"] = { 38617 },	-- Another Way
 					["altQuests"] = {
 						44922,	-- Inside the Winter Storm
@@ -147,25 +147,25 @@ _.Zones =
 				}),
 				q(39590, {	-- Ahead of the Game
 					["sourceQuests"] = { 38331 },	-- Havi's Test
-					["coord"] = { 41.8, 42.9, 634 },
+					["coord"] = { 41.8, 42.9, STORMHEIM },
 					["provider"] = { "n", 96254 },	-- Havi
 				}),
 				q(38342, {	-- Another Way (Alliance)
 					["sourceQuests"] = { 38410 },	-- Impalement Insurance
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 46.2, 70.3, 634 },
+					["coord"] = { 46.2, 70.3, STORMHEIM },
 					["provider"] = { "n", 91553 },	-- Commander Lorna Crowley <Gilneas Brigade>
 				}),
 				q(38617, {	-- Another Way (Horde)
 					["provider"] = { "n", 92573 },	-- Dread-Rider Cullen
 					["races"] = HORDE_ONLY,
-					["coord"] = { 47.0, 71.7, 634 },
+					["coord"] = { 47.0, 71.7, STORMHEIM },
 					["sourceQuests"] = { 38410 },	-- Impalement Insurance
 				}),
 				q(38053, {	-- Assault and Battery
 					["sourceQuests"] = { 39800 },	-- Greymane's Gambit
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 33.6, 50.8, 634 },
+					["coord"] = { 33.6, 50.8, STORMHEIM },
 					["provider"] = { "n", 90866 },	-- Tinkmaster Overspark
 					["g"] = {
 						i(134554),	-- Runespeaker's Gloves
@@ -179,21 +179,21 @@ _.Zones =
 					},
 				}),
 				q(39119, {	-- Assault on Skold-Ashil (Bonus Objective)
-					["coord"] = { 60.0, 63.8, 634 },
+					["coord"] = { 60.0, 63.8, STORMHEIM },
 				}),
 				q(38374, {	-- Assault the Drekirjar (Bonus Objective)
-					["coord"] = { 43.2, 69.4, 634 },
+					["coord"] = { 43.2, 69.4, STORMHEIM },
 				}),
 				q(39092, {	-- Becoming the Ascendant (Alliance)
 					["sourceQuests"] = { 39063 },	-- Shielded Secrets
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 60.5, 65.0, 634 },
+					["coord"] = { 60.5, 65.0, STORMHEIM },
 					["provider"] = { "n", 95921 },	-- Commander Lorna Crowley
 				}),
 				q(39155, {	-- Becoming the Ascendant (Horde)
 					["sourceQuests"] = { 38878 },	-- Shielded Secrets
 					["races"] = HORDE_ONLY,
-					["coord"] = { 60.9, 65.1, 634 },
+					["coord"] = { 60.9, 65.1, STORMHEIM },
 					["provider"] = { "n", 95611 },	-- Lady Sylvanas Windrunner
 				}),
 				q(38808, {	-- Bjornharta
@@ -201,7 +201,7 @@ _.Zones =
 						39788,	-- The Runewood's Revenge
 						38778,	-- Turn the Keys
 					},
-					["coord"] = { 68.4, 54.2, 634 },
+					["coord"] = { 68.4, 54.2, STORMHEIM },
 					["provider"] = { "n", 93231 },	-- Vydhar
 					["g"] = {
 						i(129335),	-- Runespeaker's Cuffs
@@ -229,13 +229,13 @@ _.Zones =
 				}),
 				q(38052, {	-- Boarded!
 					["provider"] = { "n", 90749 },	-- Sky Admiral Rogers
-					["coord"] = { 33.7, 50.9, 634 },
+					["coord"] = { 33.7, 50.9, STORMHEIM },
 					["sourceQuests"] = { 39800 },	-- Greymane's Gambit
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38816, {	-- Breaking the Bonespeakers
 					["provider"] = { "n", 93446 },	-- Shieldmaiden Iounn
-					["coord"] = { 68.0, 48.6, 634 },
+					["coord"] = { 68.0, 48.6, STORMHEIM },
 					["sourceQuests"] = {
 						38811,	-- Judgment Day
 						39791,	-- Lay Them to Rest
@@ -243,7 +243,7 @@ _.Zones =
 				}),
 				q(40004, {	-- Break the Spine
 					["sourceQuests"] = { 40002 },	-- A Familiar Fate
-					["coord"] = { 65.8, 59.4, 634 },
+					["coord"] = { 65.8, 59.4, STORMHEIM },
 					["provider"] = { "n", 97979 },	-- Vethir
 				}),
 				q(38337, {	-- Built to Scale (A)
@@ -282,31 +282,31 @@ _.Zones =
 				q(38873, {	-- Clear the Deck!
 					["sourceQuests"] = { 38872 },	-- The Dark Lady's Bidding
 					["races"] = HORDE_ONLY,
-					["coord"] = { 54.9, 72.5, 634 },
+					["coord"] = { 54.9, 72.5, STORMHEIM },
 					["provider"] = { "n", 93603 },	-- Nathanos Blightcaller
 				}),
 				q(39060, {	-- Combustible Contagion
 					["sourceQuests"] = { 39059 },	-- To Catch a Banshee
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 71.5, 59.9, 634 },
+					["coord"] = { 71.5, 59.9, STORMHEIM },
 					["provider"] = { "n", 94318 },	-- Genn Greymane
 				}),
 				q(54147, {	-- Confront the Val'kyr
 					["provider"] = { "n", 146877 },	-- Princess Talanji
 					["lvl"] = 120,
-					["coord"] = { 61.2, 68.1, 634 },
+					["coord"] = { 61.2, 68.1, STORMHEIM },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53781 },	-- Eyir
 				}),
 				q(38624, {	-- Cry Thunder!
 					["provider"] = { "n", 92218 },	-- Thymjaris
-					["coord"] = { 40.8, 80.8, 634 },
+					["coord"] = { 40.8, 80.8, STORMHEIM },
 					["sourceQuests"] = { 39652 },	-- Where Dragons Rule
 				}),
 				q(39472, {	-- Cut Out the Heart
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 72.3, 61.0, 634 },
+					["coord"] = { 72.3, 61.0, STORMHEIM },
 					["icon"] = "Interface\\Icons\\inv_misc_map_01",
 					["g"] = {
 						i(129252),	-- Lorna's Bracelet
@@ -324,7 +324,7 @@ _.Zones =
 						42445,	-- Nithogg's Tribute
 						42446,	-- Singed Feathers
 					},
-					["coord"] = { 49.8, 32.5, 634 },
+					["coord"] = { 49.8, 32.5, STORMHEIM },
 					["provider"] = { "n", 107498 },	-- Cukkaw
 					["g"] = {
 						i(129361),	-- Blackfeather Handwraps
@@ -340,20 +340,20 @@ _.Zones =
 				q(39153, {	-- Dreadwake's Dilemma
 					["sourceQuests"] = { 38872 },	-- The Dark Lady's Bidding
 					["races"] = HORDE_ONLY,
-					["coord"] = { 54.9, 72.5, 634 },
+					["coord"] = { 54.9, 72.5, STORMHEIM },
 					["provider"] = { "n", 93603 },	-- Nathanos Blightcaller
 				}),
 				q(39998, {	-- Drive Back the Tideskorn(Bonus Objective)
-					["coord"] = { 69.2, 68.0, 634 },
+					["coord"] = { 69.2, 68.0, STORMHEIM },
 				}),
 				q(39789, {	-- Eating Into Our Business
 					["provider"] = { "n", 97258 },	-- Ootasa Galehoof
-					["coord"] = { 51.4, 56.9, 634 },
+					["coord"] = { 51.4, 56.9, STORMHEIM },
 				}),
 				q(39122, {	-- Ending the New Beginning
 					["sourceQuests"] = { 39092 },	-- Becoming the Ascendant
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 62.2, 68.1, 634 },
+					["coord"] = { 62.2, 68.1, STORMHEIM },
 					["provider"] = { "n", 95804 },	-- Genn Greymane
 					["g"] = {
 						i(129258),	-- Sylvanas' Broken Arrow
@@ -369,7 +369,7 @@ _.Zones =
 					["lvl"] = 98,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 244453 },	-- Cullen's Scouting Report
-					["coord"] = { 36.7, 31.0, 634 },
+					["coord"] = { 36.7, 31.0, STORMHEIM },
 					["sourceQuests"] = { 38362 },	-- A Grim Trophy
 				}),
 				q(40568, {	-- Fury of the Storm
@@ -377,7 +377,7 @@ _.Zones =
 						{ "n", 91249 },	-- Vethir
 						{ "n", 96465 },	-- Vethir
 					},
-					["coord"] = { 44.7, 77.4, 634 },
+					["coord"] = { 44.7, 77.4, STORMHEIM },
 					["sourceQuests"] = {
 						38412,	-- Above the Winter Moonlight (Alliance)
 						38618,	-- Above the Winter Moonlight (Horde)
@@ -393,11 +393,11 @@ _.Zones =
 				q(40072, {	-- Halls of Valor: Securing the Aegis
 					["sourceQuests"] = { 40005 },	-- Stormheim's Salvation
 					["provider"] = { "n", 97988 },	-- Havi
-					["coord"] = { 70.2, 69.1, 634 },
+					["coord"] = { 70.2, 69.1, STORMHEIM },
 				}),
 				q(38974, {	-- Halls of Valor: The Right Question
 					["provider"] = { "n", 93977 },	-- Leyweaver Tellumi
-					["coord"] = { 65.6, 56.2, 634 },
+					["coord"] = { 65.6, 56.2, STORMHEIM },
 					["requireSkill"] = TAILORING,
 					["g"] = {
 						i(127024),	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
@@ -405,7 +405,7 @@ _.Zones =
 				}),
 				q(38331, {	-- Havi's Test
 					["provider"] = { "n", 96254 },	-- Havi
-					["coord"] = { 41.8, 42.9, 634 },
+					["coord"] = { 41.8, 42.9, STORMHEIM },
 					["sourceQuests"] = {
 						38210,	-- The Ancient Trials (Alliance)
 						38459,	-- The Ancient Trials (Horde)
@@ -416,7 +416,7 @@ _.Zones =
 						{ "n", 91249 },	-- Vethir
 						{ "n", 96465 },	-- Vethir
 					},
-					["coord"] = { 44.7, 77.4, 634 },
+					["coord"] = { 44.7, 77.4, STORMHEIM },
 					["sourceQuests"] = {
 						38412,	-- Above the Winter Moonlight (Alliance)
 						38618,	-- Above the Winter Moonlight (Horde)
@@ -424,7 +424,7 @@ _.Zones =
 				}),
 				q(44721, {	-- Helya's Conquest
 					["provider"] = { "n", 92539 },	-- Havi
-					["coord"] = { 60.2, 50.8, 634 },
+					["coord"] = { 60.2, 50.8, STORMHEIM },
 					["sourceQuest"] = 44771,	-- A Threat Rises
 				}),
 				q(38410, {	-- Impalement Insurance (Alliance)
@@ -433,13 +433,13 @@ _.Zones =
 						38405,	-- To Weather the Storm
 					},
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 43.8, 68.2, 634 },
+					["coord"] = { 43.8, 68.2, STORMHEIM },
 					["provider"] = { "n", 91519 },	-- Commander Lorna Crowley <Gilneas Brigade>
 				}),
 				q(38615, {	-- Impalement Insurance (Horde)
 					["provider"] = { "n", 92567 },	-- Dread-Rider Cullen
 					["races"] = HORDE_ONLY,
-					["coord"] = { 43.7, 67.8, 634 },
+					["coord"] = { 43.7, 67.8, STORMHEIM },
 					["sourceQuests"] = {
 						38613,	-- No Wings Required
 						38614,	-- To Weather the Storm
@@ -447,7 +447,7 @@ _.Zones =
 				}),
 				q(38811, {	-- Judgment Day
 					["provider"] = { "n", 93231 },	-- Vydhar
-					["coord"] = { 68.4, 54.2, 634 },
+					["coord"] = { 68.4, 54.2, STORMHEIM },
 					["sourceQuests"] = {
 						38808,	-- Bjornharta
 						38810,	-- The Dreaming Fungus
@@ -455,12 +455,12 @@ _.Zones =
 				}),
 				q(40001, {	-- Knocking on Valor's Door
 					["sourceQuests"] = { 40078 },	-- A Heavy Burden
-					["coord"] = { 60.0, 50.7, 634 },
+					["coord"] = { 60.0, 50.7, STORMHEIM },
 					["provider"] = { "n", 92539 },	-- Havi
 				}),
 				q(39791, {	-- Lay Them to Rest
 					["provider"] = { "n", 93231 },	-- Vydhar
-					["coord"] = { 68.4, 54.2, 634 },
+					["coord"] = { 68.4, 54.2, STORMHEIM },
 					["sourceQuests"] = {
 						38808,	-- Bjornharta
 						38810,	-- The Dreaming Fungus
@@ -474,7 +474,7 @@ _.Zones =
 						38036,	-- Supplies From the Skies
 					},
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 33.7, 50.8, 634 },
+					["coord"] = { 33.7, 50.8, STORMHEIM },
 					["provider"] = { "n", 90866 },	-- Tinkmaster Overspark
 				}),
 				q(38317, {	-- Masters of Disguise
@@ -482,7 +482,7 @@ _.Zones =
 					["provider"] = { "n", 113911 },	-- Spymaster Knockwhistle
 					["sourceQuests"] = { 38308 },	-- Eyes in the Overlook
 					["races"] = HORDE_ONLY,
-					["coord"] = { 33.3, 31.4, 634 },
+					["coord"] = { 33.3, 31.4, STORMHEIM },
 					["g"] = {
 						i(129093),	-- Ravenbear Disguise
 					},
@@ -494,8 +494,8 @@ _.Zones =
 						43595,	-- To Honor the Fallen
 					},
 					["coords"] = {	-- can be picked up at either location
-						{ 59.0, 42.9, 634 },
-						{ 60.2, 50.8, 634 },
+						{ 59.0, 42.9, STORMHEIM },
+						{ 60.2, 50.8, STORMHEIM },
 					},
 					["lvl"] = 110,
 					["providers"] = {
@@ -518,23 +518,23 @@ _.Zones =
 				}),
 				q(42445, {	-- Nithogg's Tribute
 					["sourceQuests"] = { 42444 },	-- Plight of the Blackfeather
-					["coord"] = { 49.8, 32.5, 634 },
+					["coord"] = { 49.8, 32.5, STORMHEIM },
 				}),
 				q(38318, {	-- No Wings Required (Alliance)
 					["sourceQuests"] = { 38312 },	-- A Grapple a Day
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 42.0, 64.4, 634 },
+					["coord"] = { 42.0, 64.4, STORMHEIM },
 					["provider"] = { "n", 91481 },	-- Commander Lorna Crowley <Gilneas Brigade>
 				}),
 				q(38613, {	-- No Wings Required (Horde)
 					["sourceQuests"] = { 38612 },	-- A Grapple a Day
 					["races"] = HORDE_ONLY,
-					["coord"] = { 46.5, 67.7, 634 },
+					["coord"] = { 46.5, 67.7, STORMHEIM },
 					["provider"] = { "n", 92566 },	-- Dread-Rider Cullen
 				}),
 				q(39793, {	-- Only the Finest
 					["sourceQuests"] = { 39789 },	-- Eating Into Our Business
-					["coord"] = { 51.4, 57.0, 634 },
+					["coord"] = { 51.4, 57.0, STORMHEIM },
 					["provider"] = { "n", 107675 },		-- Rax Sixtrigger
 				}),
 				q(38059, {	-- Pins and Needles
@@ -545,11 +545,11 @@ _.Zones =
 				}),
 				q(42444, {	-- Plight of the Blackfeather
 					["provider"] = { "n", 107499 },	-- Frightened Ravenbear
-					["coord"] = { 50.2, 34.1, 634 }
+					["coord"] = { 50.2, 34.1, STORMHEIM },
 				}),
 				q(38358, {	-- Pump it Up
 					["races"] = HORDE_ONLY,
-					["coord"] = { 36.1, 27.4, 634 },
+					["coord"] = { 36.1, 27.4, STORMHEIM },
 					["provider"] = { "n", 91590 },	-- Apothecary Withers
 					["g"] = {
 						i(134554),	-- Runespeaker's Gloves
@@ -577,7 +577,7 @@ _.Zones =
 						38811,	-- Judgment Day
 						39791,	-- Lay Them to Rest
 					},
-					["coord"] = { 68.0, 48.6, 634 },
+					["coord"] = { 68.0, 48.6, STORMHEIM },
 					["provider"] = { "n", 93446 },	-- Shieldmaiden Iounn
 					["g"] = {
 						i(129229),	-- Runespeaker's Sandals
@@ -591,30 +591,30 @@ _.Zones =
 					},
 				}),
 				q(39984, {	-- Remnants of the Past
-					["coord"] = { 62.9, 48.4, 634 },
+					["coord"] = { 62.9, 48.4, STORMHEIM },
 				}),
 				q(39787, {	-- Rigging the Wager
 					["sourceQuests"] = { 39793 },	-- Only the Finest
-					["coord"] = { 51.2, 57.1, 634 },
+					["coord"] = { 51.2, 57.1, STORMHEIM },
 					["provider"] = { "n", 107674 },		-- Snaggle Sixtrigger
 				}),
 				q(40111, {	-- Rout the Bilgefin Invaders (Bonus Objective)
-					["coord"] = { 81.0, 61.4, 634 },
+					["coord"] = { 81.0, 61.4, STORMHEIM },
 				}),
 				q(40046, {	-- Scavenging the Shallows
 					["sourceQuests"] = { 39984 },	-- Remnants of the Past
-					["coord"] = { 59.0, 42.9, 634 },
+					["coord"] = { 59.0, 42.9, STORMHEIM },
 					["provider"] = { "n", 97973 },	-- Havi
 				}),
 				q(38558, {	-- See Ya Later, Oscillator
 					["sourceQuests"] = { 39800 },	-- Greymane's Gambit
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 33.6, 50.8, 634 },
+					["coord"] = { 33.6, 50.8, STORMHEIM },
 					["provider"] = { "n", 90866 },	-- Tinkmaster Overspark
 				}),
 				q(40044, {	-- Shadows in the Mists
 					["sourceQuests"] = { 39984 },	-- Remnants of the Past
-					["coord"] = { 59.0, 42.9, 634 },
+					["coord"] = { 59.0, 42.9, STORMHEIM },
 					["provider"] = { "n", 97973 },	-- Havi
 					["g"] = {
 						i(129350),	-- Sigrid's Phantom Shroud
@@ -627,18 +627,18 @@ _.Zones =
 				q(39063, {	-- Shielded Secrets (Alliance)
 					["sourceQuests"] = { 39062 },	-- To Skold-Ashil
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 63.5, 61.8, 634 },
+					["coord"] = { 63.5, 61.8, STORMHEIM },
 					["provider"] = { "n", 93779 },	-- Commander Lorna Crowley
 				}),
 				q(38878, {	-- Shielded Secrets (Horde)
 					["sourceQuests"] = { 39154 },	-- To Skold-Ashil
 					["races"] = HORDE_ONLY,
-					["coord"] = { 56.8, 66.3, 634 },
+					["coord"] = { 56.8, 66.3, STORMHEIM },
 					["provider"] = { "n", 94227 },	-- Lady Sylvanas Windrunner
 				}),
 				q(38357, {	-- Side Effects May Include Mild Undeath
 					["races"] = HORDE_ONLY,
-					["coord"] = { 36.1, 27.4, 634 },
+					["coord"] = { 36.1, 27.4, STORMHEIM },
 					["provider"] = { "n", 91590 },	-- Apothecary Withers
 				}),
 				q(38060, {	-- Signal Boost
@@ -657,12 +657,12 @@ _.Zones =
 				}),
 				q(42446, {	-- Singed Feathers
 					["sourceQuests"] = { 42444 },	-- Plight of the Blackfeather
-					["coord"] = { 49.8, 32.5, 634 },
+					["coord"] = { 49.8, 32.5, STORMHEIM },
 					["provider"] = { "n", 107498 },	-- Cukkaw
 				}),
 				q(39804, {	-- Speaking of Bones
 					["provider"] = { "n", 92539 },	-- Havi
-					["coord"] = { 60.0, 50.8, 634 },
+					["coord"] = { 60.0, 50.8, STORMHEIM },
 					["sourceQuests"] = { 39803 },	-- The Trials Continue
 				}),
 				q(42645, {	-- Spilling Bad Blood
@@ -670,36 +670,36 @@ _.Zones =
 						42635,	-- The Mystery of Dreyrgrot
 						42639,	-- A Stone of Blood
 					},
-					["coord"] = { 74.8, 55.5, 634 },
+					["coord"] = { 74.8, 55.5, STORMHEIM },
 					["provider"] = { "n", 108072 },	-- Sir Finley Mrrggglton
 				}),
 				q(40003, {	-- Stem the Tide
 					["sourceQuests"] = { 40002 },	-- A Familiar Fate
-					["coord"] = { 65.8, 59.4, 634 },
+					["coord"] = { 65.8, 59.4, STORMHEIM },
 					["provider"] = { "n", 97979 },	-- Vethir
 				}),
 				q(39405, {	-- Stories of Battle
 					["sourceQuests"] = { 39154 },	-- To Skold-Ashil
-					["coord"] = { 58.5, 64.2, 634 },
+					["coord"] = { 58.5, 64.2, STORMHEIM },
 				}),
 				q(39775, {	-- Stormforged Grapple Launcher
 					["description"] = "This item can be safely deleted and you'll still be able to interact with the hooks.",
 					["provider"] = { "n", 107840 },	-- Stormforged Grapple Launcher
 					["itemID"] = 138111,	-- Stormforged Grapple Launcher
-					["coord"] = { 36.9, 31.8, 634 },
+					["coord"] = { 36.9, 31.8, STORMHEIM },
 				}),
 				q(44700, {	-- Stormheim (A)
 					["lvl"] = 98,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 107460 },	-- Archmage Landon
-					["coord"] = { 30.3, 40.6, 634 },
+					["coord"] = { 30.3, 40.6, STORMHEIM },
 					["altQuests"] = { 39735 },	-- Stormheim (A) from Scouting Map
 				}),
 				q(44701, {	-- Stormheim (H)
 					["lvl"] = 98,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 107460 },	-- Archmage Landon
-					["coord"] = { 30.3, 40.6, 634 },
+					["coord"] = { 30.3, 40.6, STORMHEIM },
 					["altQuests"] = { 39864 },	-- Stormheim (H) from Scouting Map
 				}),
 				q(40005, {	-- Stormheim's Salvation
@@ -707,7 +707,7 @@ _.Zones =
 						40004,	-- Break the Spine
 						40003,	-- Stem the Tide
 					},
-					["coord"] = { 70.2, 69.2, 634 },
+					["coord"] = { 70.2, 69.2, STORMHEIM },
 					["provider"] = { "n", 97986 },	-- Vethir
 					["g"] = {
 						i(132845),	-- Odyn's Veil
@@ -725,7 +725,7 @@ _.Zones =
 				q(38036, {	-- Supplies From the Skies
 					["sourceQuests"] = { 39800 },	-- Greymane's Gambit
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 33.6, 50.8, 634 },
+					["coord"] = { 33.6, 50.8, STORMHEIM },
 					["provider"] = { "n", 90783 },	-- Mishka
 				}),
 				q(43349, {	-- The Aegis of Aggramar
@@ -737,13 +737,13 @@ _.Zones =
 				q(38210, {	-- The Ancient Trials (Alliance)
 					["sourceQuests"] = { 38060 },	-- Signal Boost
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 33.7, 45.9, 634 },
+					["coord"] = { 33.7, 45.9, STORMHEIM },
 					["provider"] = { "n", 97306 },	-- Muninn
 				}),
 				q(38459, {	-- The Ancient Trials (Horde)
 					["sourceQuests"] = { 38362 },	-- A Grim Trophy
 					["races"] = HORDE_ONLY,
-					["coord"] = { 36.8, 30.9, 634 },
+					["coord"] = { 36.8, 30.9, STORMHEIM },
 					["provider"] = { "n", 97305 },	-- Huginn
 				}),
 				q(39597, {	-- The Blessing of the Watchers
@@ -773,12 +773,12 @@ _.Zones =
 					},
 				}),
 				q(42431, {	-- The Brood of Nithogg (Bonus Objective)
-					["coord"] = { 45.2, 36.8, 634 },
+					["coord"] = { 45.2, 36.8, STORMHEIM },
 				}),
 				q(38872, {	-- The Dark Lady's Bidding
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
 					["races"] = HORDE_ONLY,
-					["coord"] = { 59.9, 51.2, 634 },
+					["coord"] = { 59.9, 51.2, STORMHEIM },
 					["provider"] = { "n", 93624 },	-- Dread-Rider Cullen
 				}),
 				q(38810, {	-- The Dreaming Fungus
@@ -786,12 +786,12 @@ _.Zones =
 						39788,	-- The Runewood's Revenge
 						38778,	-- Turn the Keys
 					},
-					["coord"] = { 68.4, 54.2, 634 },
+					["coord"] = { 68.4, 54.2, STORMHEIM },
 					["provider"] = { "n", 93231 },	-- Vydhar
 				}),
 				q(38818, {	-- The Final Judgment
 					["sourceQuests"] = { 38815 },	-- Waking the Shieldmaiden
-					["coord"] = { 71.4, 42.5, 634 },
+					["coord"] = { 71.4, 42.5, STORMHEIM },
 					["provider"] = { "n", 93234 },	-- Ashildir
 				}),
 				q(45524, {	-- The Forgotten Heir
@@ -804,7 +804,7 @@ _.Zones =
 						WARLOCK,	-- Demonology
 					},
 					["provider"] = { "n", 116568 },	-- Sigryn
-					["coord"] = { 41.4, 71.7, 634 },
+					["coord"] = { 41.4, 71.7, STORMHEIM },
 				}),
 				q(46340, {	-- The Gates Are Closed
 					["sourceQuests"] = { 45525 },	-- Unanswered Questions
@@ -816,7 +816,7 @@ _.Zones =
 						WARLOCK,	-- Demonology
 					},
 					["provider"] = { "n", 93628 },	-- Eyir
-					["coord"] = { 71.9, 51.1, 634 },
+					["coord"] = { 71.9, 51.1, STORMHEIM },
 				}),
 				q(38057, {	-- The Lost Legion
 					["sourceQuests"] = {
@@ -826,11 +826,11 @@ _.Zones =
 						38036,	-- Supplies From the Skies
 					},
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 33.7, 50.8, 634 },
+					["coord"] = { 33.7, 50.8, STORMHEIM },
 					["provider"] = { "n", 90783 },	-- Mishka
 				}),
 				q(42635, {	-- The Mystery of Dreyrgrot
-					["coord"] = { 74.8, 55.5, 634 },
+					["coord"] = { 74.8, 55.5, STORMHEIM },
 					["provider"] = { "n", 108072 },	-- Sir Finley Mrrggglton
 				}),
 				q(38332, {	-- The Ranger Lord
@@ -838,24 +838,24 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 39801 },	-- The Splintered Fleet
 					["provider"] = { "n", 91473 },	-- Dread-Rider Cullen
-					["coord"] = { 36.1, 27.5, 634 },
+					["coord"] = { 36.1, 27.5, STORMHEIM },
 				}),
 				q(38823, {	-- The Runes that Bind
 					["sourceQuests"] = {
 						38811,	-- Judgment Day
 						39791,	-- Lay Them to Rest
 					},
-					["coord"] = { 69.8, 45.6, 634 },
+					["coord"] = { 69.8, 45.6, STORMHEIM },
 					["icon"] = "Interface\\Icons\\INV_Archaeology_Ogres_Pictogram_Tablet",
 				}),
 				q(39788, {	-- The Runewood's Revenge
 					["sourceQuests"] = { 39796 },	-- To Haustvald
-					["coord"] = { 68.4, 54.2, 634 },
+					["coord"] = { 68.4, 54.2, STORMHEIM },
 					["provider"] = { "n", 93231 },	-- Vydhar
 				}),
 				q(39593, {	-- The Shattered Watcher
 					["sourceQuests"] = { 39590 },	-- Ahead of the Game
-					["coord"] = { 46.6, 44.4, 634 },
+					["coord"] = { 46.6, 44.4, STORMHEIM },
 					["g"] = {
 						i(129316),	-- Watcher's Pendant of Courage
 						i(121560),	-- Signet of the Watcher's Guile
@@ -871,32 +871,32 @@ _.Zones =
 				}),
 				q(39803, {	-- The Trials Continue
 					["sourceQuests"] = { 38624 },	-- Cry Thunder!
-					["coord"] = { 47.9, 54.6, 634 },
+					["coord"] = { 47.9, 54.6, STORMHEIM },
 					["provider"] = { "n", 97074 },	-- Huginn
 				}),
 				q(42640, {	-- The Value of Knowledge
-					["coord"] = { 75.5, 50.8, 634 },
+					["coord"] = { 75.5, 50.8, STORMHEIM },
 				}),
 				q(38360, {	-- The Windrunner's Fate
 					["sourceQuests"] = { 38332 },	-- The Ranger Lord
 					["races"] = HORDE_ONLY,
-					["coord"] = { 37.8, 21.6, 634 },
+					["coord"] = { 37.8, 21.6, STORMHEIM },
 					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
 				}),
 				q(39059, {	-- To Catch a Banshee
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 60.0, 51.2, 634 },
+					["coord"] = { 60.0, 51.2, STORMHEIM },
 					["provider"] = { "n", 94346 },	-- Ensign Ward
 				}),
 				q(39796, {	-- To Haustvald
 					["sourceQuests"] = { 39804 },	-- Speaking of Bones
-					["coord"] = { 60.0, 50.8, 634 },
+					["coord"] = { 60.0, 50.8, STORMHEIM },
 					["provider"] = { "n", 92539 },	-- Havi
 				}),
 				q(43595, {	-- To Honor the Fallen
 					["sourceQuests"] = { 39984 },	-- Remnants of the Past
-					["coord"] = { 59.0, 42.9, 634 },
+					["coord"] = { 59.0, 42.9, STORMHEIM },
 					["provider"] = { "n", 97973 },	-- Havi
 				}),
 				q(45522, {	-- To Silence the Bonespeakers
@@ -909,7 +909,7 @@ _.Zones =
 						WARLOCK,	-- Demonology
 					},
 					["provider"] = { "n", 93628 },	-- Eyir
-					["coord"] = { 65.0, 68.0, 634 },
+					["coord"] = { 65.0, 68.0, STORMHEIM },
 				}),
 				q(39062, {	-- To Skold-Ashil (Alliance)
 					["sourceQuests"] = {
@@ -918,7 +918,7 @@ _.Zones =
 						39061,	-- Whispers From the Dark
 					},
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 71.5, 59.8, 634 },
+					["coord"] = { 71.5, 59.8, STORMHEIM },
 					["provider"] = { "n", 94318 },	-- Genn Greymane
 				}),
 				q(39154, {	-- To Skold-Ashil (Horde)
@@ -928,7 +928,7 @@ _.Zones =
 						39153,	-- Dreadwake's Dilemma
 					},
 					["races"] = HORDE_ONLY,
-					["coord"] = { 54.9, 72.5, 634 },
+					["coord"] = { 54.9, 72.5, STORMHEIM },
 					["provider"] = { "n", 93603 },	-- Nathanos Blightcaller
 				}),
 				q(45523, {	-- To Tame the Drekirjar
@@ -941,12 +941,12 @@ _.Zones =
 						WARLOCK,	-- Demonology
 					},
 					["provider"] = { "n", 116568 },	-- Sigryn
-					["coord"] = { 72.9, 40.4, 634 },
+					["coord"] = { 72.9, 40.4, STORMHEIM },
 				}),
 				q(38405, {	-- To Weather the Storm (Alliance)
 					["sourceQuests"] = { 38312 },	-- A Grapple a Day
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 42.0, 64.4, 634 },
+					["coord"] = { 42.0, 64.4, STORMHEIM },
 					["provider"] = { "n", 91481 },	-- Commander Lorna Crowley <Gilneas Brigade>
 					["g"] = {
 						i(121567),	-- Galeborn's Oiled Cloak
@@ -958,7 +958,7 @@ _.Zones =
 				q(38614, {	-- To Weather the Storm (Horde)
 					["sourceQuests"] = { 38612 },	-- A Grapple a Day
 					["races"] = HORDE_ONLY,
-					["coord"] = { 46.5, 67.7, 634 },
+					["coord"] = { 46.5, 67.7, STORMHEIM },
 					["provider"] = { "n", 92566 },	-- Dread-Rider Cullen
 					["g"] = {
 						i(121567),	-- Galeborn's Oiled Cloak
@@ -969,12 +969,12 @@ _.Zones =
 				}),
 				q(44729, {	-- Trial of Valor: Odyn's Favor
 					["provider"] = { "n", 92539 },	-- Havi
-					["coord"] = { 60.2, 50.8, 634 },
+					["coord"] = { 60.2, 50.8, STORMHEIM },
 					["sourceQuest"] = 44721,	-- Helya's Conquest
 				}),
 				q(38778, {	-- Turn the Keys
 					["sourceQuests"] = { 39796 },	-- To Haustvald
-					["coord"] = { 68.4, 54.2, 634 },
+					["coord"] = { 68.4, 54.2, STORMHEIM },
 					["provider"] = { "n", 93231 },	-- Vydhar
 				}),
 				q(45525, {	-- Unanswered Questions
@@ -987,7 +987,7 @@ _.Zones =
 						WARLOCK,	-- Demonology
 					},
 					["provider"] = { "n", 116568 },	-- Sigryn
-					["coord"] = { 74.2, 85.0, 634 },
+					["coord"] = { 74.2, 85.0, STORMHEIM },
 				}),
 				q(38815, {	-- Waking the Shieldmaiden
 					["sourceQuests"] = {
@@ -995,7 +995,7 @@ _.Zones =
 						38817,	-- Regal Remains
 						38823,	-- The Runes that Bind
 					},
-					["coord"] = { 69.8, 45.5, 634 },
+					["coord"] = { 69.8, 45.5, STORMHEIM },
 					["provider"] = { "n", 97270 },	-- Shieldmaiden Iounn
 				}),
 				q(42641, {	-- What the Bonespeakers Buried
@@ -1003,7 +1003,7 @@ _.Zones =
 						42635,	-- The Mystery of Dreyrgrot
 						42639,	-- A Stone of Blood
 					},
-					["coord"] = { 74.8, 55.5, 634 },
+					["coord"] = { 74.8, 55.5, STORMHEIM },
 					["provider"] = { "n", 108072 },	-- Sir Finley Mrrggglton
 					["g"] = {
 						i(129329),	-- The Blood-Thane's Amulet
@@ -1019,7 +1019,7 @@ _.Zones =
 						38414,	-- Heart of a Dragon
 						40568,	-- Fury of the Storm
 					},
-					["coord"] = { 42.8, 82.6, 634 },
+					["coord"] = { 42.8, 82.6, STORMHEIM },
 					["provider"] = { "n", 96465 },	-- Vethir
 					["g"] = {
 						i(132806),	-- Azariah's Last Moments
@@ -1043,7 +1043,7 @@ _.Zones =
 				q(39061, {	-- Whispers from the Dark
 					["sourceQuests"] = { 39059 },	-- To Catch a Banshee
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 71.5, 59.9, 634 },
+					["coord"] = { 71.5, 59.9, STORMHEIM },
 					["provider"] = { "n", 94318 },	-- Genn Greymane
 				}),
 				q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
@@ -1060,13 +1060,13 @@ _.Zones =
 				q(38473, {	-- Will of the Thorignir (Alliance)
 					["sourceQuests"] = { 39597 },	-- The Blessing of the Watchers
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 43.1, 49.1, 634 },
+					["coord"] = { 43.1, 49.1, STORMHEIM },
 					["provider"] = { "n", 96254 },	-- Havi
 				}),
 				q(38611, {	-- Will of the Thorignir (Horde)
 					["sourceQuests"] = { 39597 },	-- The Blessing of the Watchers
 					["races"] = HORDE_ONLY,
-					["coord"] = { 41.8, 43.0, 634 },
+					["coord"] = { 41.8, 43.0, STORMHEIM },
 					["provider"] = { "n", 96254 },	-- Havi
 				}),
 				q(38413, {	-- Wings of Liberty
@@ -1074,7 +1074,7 @@ _.Zones =
 						38412,	-- Above the Winter Moonlight (Alliance)
 						38618,	-- Above the Winter Moonlight (Horde)
 					},
-					["coord"] = { 44.7, 77.4, 634 },
+					["coord"] = { 44.7, 77.4, STORMHEIM },
 					["providers"] = {
 						{ "n", 91249 },	-- Vethir
 						{ "n", 96465 },	-- Vethir
@@ -1093,7 +1093,7 @@ _.Zones =
 				q(38361, {	-- Wrath of the Blightcaller
 					["sourceQuests"] = { 38332 },	-- The Ranger Lord
 					["races"] = HORDE_ONLY,
-					["coord"] = { 37.8, 21.6, 634 },
+					["coord"] = { 37.8, 21.6, STORMHEIM },
 					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
 				}),
 			--[[ TODO: These quests will be organized soon™

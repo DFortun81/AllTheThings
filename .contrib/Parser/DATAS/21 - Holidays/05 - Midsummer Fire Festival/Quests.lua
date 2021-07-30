@@ -553,10 +553,10 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44627, {	-- Desecrate this Fire! — Suramar
 			["isYearly"] = true,
 			["provider"] = { "o", 259926 },	-- Horde Bonfire
-			["coord"] = { 30.3, 45.4, 680 },
+			["coord"] = { 30.3, 45.4, SURAMAR },
 			["races"] = ALLIANCE_ONLY,
 			["icon"] = "Interface\\Icons\\spell_fire_fire",
-			["maps"] = { 680 },	-- Suramar
+			["maps"] = { SURAMAR },
 		}),
 		q(11781, {	-- Desecrate this Fire! — Swamp of Sorrows
 			["isYearly"] = true,
@@ -971,10 +971,10 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44624, {	-- Desecrate this Fire! — Suramar
 			["isYearly"] = true,
 			["provider"] = { "o", 259927 },	-- Alliance Bonfire
-			["coord"] = { 22.8, 58.2, 680 },
+			["coord"] = { 22.8, 58.2, SURAMAR },
 			["races"] = HORDE_ONLY,
 			["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-			["maps"] = { 680 },	-- Suramar
+			["maps"] = { SURAMAR },
 		}),
 		q(28916, {	-- Desecrate this Fire! — Swamp of Sorrows
 			["isYearly"] = true,
@@ -1454,9 +1454,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44613, {	-- Honor the Flame — Suramar
 			["provider"] = { "n", 114519 },	-- Suramar Flame Warden
 			["isYearly"] = true,
-			["coord"] = { 23.0, 58.4, 680 },
+			["coord"] = { 23.0, 58.4, SURAMAR },
 			["races"] = ALLIANCE_ONLY,
-			["maps"] = { 680 },	-- Suramar
+			["maps"] = { SURAMAR },
 		}),
 		q(28929, {	-- Honor the Flame — Swamp of Sorrows
 			["provider"] = { "n", 51602 },	-- Swamp of Sorrows Flame Warden
@@ -1841,9 +1841,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44614, {	-- Honor the Flame — Suramar
 			["provider"] = { "n", 114518 },	-- Suramar Flame Keeper
 			["isYearly"] = true,
-			["coord"] = { 30.4, 45.4, 680 },
+			["coord"] = { 30.4, 45.4, SURAMAR },
 			["races"] = HORDE_ONLY,
-			["maps"] = { 680 },	-- Suramar
+			["maps"] = { SURAMAR },
 		}),
 		q(11857, {	-- Honor the Flame — Swamp of Sorrows
 			["provider"] = { "n", 25941 },	-- Swamp of Sorrows Flame Keeper
@@ -1969,8 +1969,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44574, {	-- Honor the Flame — Azsuna
 			["provider"] = { "n", 114492 },	-- Azsuna Flame Guardian
 			["isYearly"] = true,
-			["coord"] = { 48.2, 29.6, 630 },
-			["maps"] = { 630 },	-- Azsuna
+			["coord"] = { 48.2, 29.6, AZSUNA },
+			["maps"] = { AZSUNA },
 		}),
 		q(32497, {	-- Honor the Flame — Dread Wastes
 			["provider"] = { "n", 69522 },	-- Dread Wastes Flame Guardian
@@ -1987,8 +1987,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44576, {	-- Honor the Flame — Highmountain
 			["provider"] = { "n", 114494 },	-- Highmountain Flame Guardian
 			["isYearly"] = true,
-			["coord"] = { 55.4, 84.4, 650 },
-			["maps"] = { 650 },	-- Highmountain
+			["coord"] = { 55.4, 84.4, HIGHMOUNTAIN },
+			["maps"] = { HIGHMOUNTAIN },
 		}),
 		q(32498, {	-- Honor the Flame — Jade Forest
 			["provider"] = { "n", 69529 },	-- Jade Forest Flame Guardian
@@ -2023,8 +2023,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44577, {	-- Honor the Flame — Stormheim
 			["provider"] = { "n", 114496 },	-- Stormheim Flame Guardian
 			["isYearly"] = true,
-			["coord"] = { 32.4, 42.2, 634 },
-			["maps"] = { 634 },	-- Stormheim
+			["coord"] = { 32.4, 42.2, STORMHEIM },
+			["maps"] = { STORMHEIM },
 		}),
 		q(44571, {	-- Honor the Flame — Talador
 			["provider"] = { "n", 114489 },	-- Talador Flame Guardian
@@ -2047,8 +2047,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44575, {	-- Honor the Flame — Val'sharah
 			["provider"] = { "n", 114493 },	-- Val'sharah Flame Guardian
 			["isYearly"] = true,
-			["coord"] = { 44.8, 58.0, 641 },
-			["maps"] = { 641 },	-- Val'sharah
+			["coord"] = { 44.8, 58.0, VALSHARAH },
+			["maps"] = { VALSHARAH },
 		}),
 	--	NEUTRAL "HONOR THE FLAME" QUESTS END HERE.
 		q(11964, {	-- Incense for the Summer Scorchlings (A)

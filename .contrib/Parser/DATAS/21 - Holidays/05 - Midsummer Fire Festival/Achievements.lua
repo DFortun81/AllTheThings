@@ -635,29 +635,29 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				crit(1, {	-- Azsuna
-					["coord"] = { 48.2, 29.6, 630 },
+					["coord"] = { 48.2, 29.6, AZSUNA },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 630 },	-- Azsuna
+					["maps"] = { AZSUNA },
 				}),
 				crit(2, {	-- Val'sharah
-					["coord"] = { 44.8, 58.0, 641 },
+					["coord"] = { 44.8, 58.0, VALSHARAH },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 641 },	-- Val'sharah
+					["maps"] = { VALSHARAH },
 				}),
 				crit(3, {	-- Highmountain
-					["coord"] = { 55.4, 84.4, 650 },
+					["coord"] = { 55.4, 84.4, HIGHMOUNTAIN },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 650 },	-- Highmountain
+					["maps"] = { HIGHMOUNTAIN },
 				}),
 				crit(4, {	-- Stormheim
-					["coord"] = { 32.4, 42.2, 634 },
+					["coord"] = { 32.4, 42.2, STORMHEIM },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 634 },	-- Stormheim
+					["maps"] = { STORMHEIM },
 				}),
 				crit(5, {	-- Suramar
-					["coord"] = { 23.0, 58.4, 680 },
+					["coord"] = { 23.0, 58.4, SURAMAR },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 680 },	-- Suramar
+					["maps"] = { SURAMAR },
 				}),
 			},
 		}),
@@ -692,9 +692,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 			["maps"] = { FROSTFIRE_RIDGE },
 		}),
 		ach(11278, {	-- Extinguishing the Broken Isles
-			["coord"] = { 30.3, 45.4, 680 },
+			["coord"] = { 30.3, 45.4, SURAMAR },
 			["races"] = ALLIANCE_ONLY,
-			["maps"] = { 680 },	-- Suramar
+			["maps"] = { SURAMAR },
 		}),
 		ach(13343, {	-- Extinguishing Zandalar
 			["races"] = ALLIANCE_ONLY,
@@ -1341,29 +1341,29 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				crit(1, {	-- Azsuna
-					["coord"] = { 48.2, 29.6, 630 },
+					["coord"] = { 48.2, 29.6, AZSUNA },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 630 },	-- Azsuna
+					["maps"] = { AZSUNA },
 				}),
 				crit(2, {	-- Val'sharah
-					["coord"] = { 44.8, 58.0, 641 },
+					["coord"] = { 44.8, 58.0, VALSHARAH },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 641 },	-- Val'sharah
+					["maps"] = { VALSHARAH },
 				}),
 				crit(3, {	-- Highmountain
-					["coord"] = { 55.4, 84.4, 650 },
+					["coord"] = { 55.4, 84.4, HIGHMOUNTAIN },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 650 },	-- Highmountain
+					["maps"] = { HIGHMOUNTAIN },
 				}),
 				crit(4, {	-- Stormheim
-					["coord"] = { 32.4, 42.2, 634 },
+					["coord"] = { 32.4, 42.2, STORMHEIM },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 634 },	-- Stormheim
+					["maps"] = { STORMHEIM },
 				}),
 				crit(5, {	-- Suramar
-					["coord"] = { 30.4, 45.4, 680 },
+					["coord"] = { 30.4, 45.4, SURAMAR },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 680 },	-- Suramar
+					["maps"] = { SURAMAR },
 				}),
 			},
 		}),
@@ -1398,9 +1398,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 			["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
 		}),
 		ach(11279, {	-- Extinguishing the Broken Isles
-			["coord"] = { 22.8, 58.2, 680 },
+			["coord"] = { 22.8, 58.2, SURAMAR },
 			["races"] = HORDE_ONLY,
-			["maps"] = { 680, },	-- Suramar
+			["maps"] = { SURAMAR },
 		}),
 		ach(13342, {	-- Extinguishing Kul Tiras
 			["races"] = HORDE_ONLY,

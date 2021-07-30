@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {-- The Broken Isles
-		m(646, {	-- Broken Shore
+	m(BROKEN_ISLES, {
+		m(BROKEN_SHORE, {
 			n(-10049, {	-- Command Center
 				["achievementID"] = 11736,	-- Assume Command
 				["g"] = {

@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(680, {	-- Suramar
+	m(BROKEN_ISLES, {
+		m(SURAMAR, {
 			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(42859, {	-- A Draught of Hope

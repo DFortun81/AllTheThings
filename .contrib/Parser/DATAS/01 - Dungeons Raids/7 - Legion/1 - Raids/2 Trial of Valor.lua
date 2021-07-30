@@ -5,7 +5,7 @@
 _.Instances = { tier(LEGION_TIER, {
 	inst(861, {	-- Trial of Valor
 		["isRaid"] = true,
-		["coord"] = { 70.4, 69.4, 634 },
+		["coord"] = { 70.4, 69.4, STORMHEIM },
 		["maps"] = { 806, 807, 808 },
 		["lvl"] = 110,
 		["g"] = {

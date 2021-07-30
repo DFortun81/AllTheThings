@@ -9,20 +9,20 @@ _.Secrets =
 		["modelScale"] = .8,
 		["modelID"] = 78092,
 		["maps"] = {
-			627, 628,												-- Broken Isles Dalaran
+			LEGION_DALARAN, 628,									-- Broken Isles Dalaran
 			DEADWIND_PASS, 41, 43, 44, 45, 46,						-- Deadwind Pass
 			207,													-- Deepholm
 			226, 227, 228, 229,										-- Gnomeregan
 			KUN_LAI_SUMMIT, 380, 381, 382, 383, 384, 385, 386, 387, 421, 434,	-- Kun-Lai Summit
 			319, 320, 321,											-- Temple of Ahn'Qiraj
 			148, 149, 150, 151, 152,								-- Ulduar
-			641, 642, 643, 644, 758, 868,							-- Val'sharah
+			VALSHARAH, 642, 643, 644, 758, 868,						-- Val'sharah
 		},
 		["g"] = {
 			o(270855, {	-- Step 1: Inconspicuous Note
 				["model"] = 1661948,
 				["questID"] = 47826,
-				["coord"] = { 50.6, 54.1, 627 },	-- Broken Isles Dalaran
+				["coord"] = { 50.6, 54.1, LEGION_DALARAN },
 				["description"] = "|cFFFFFFFFStep 1:|r Go to |cFFFFFFFF50.6, 54.1|r in Broken Isles Dalaran.  On the second floor of |cFFFFD700Curiosities & Moore|r you will see a table with three chairs.  An |cFFFFD700Inconspicuous Note|r will be on the table.  Click it.  The note reads...\n\n|cFFFFFFFFIt begins in the 2104059.|r\n|cFFFFFFFFWith a most pleasing sign.|r\n|cFFFFFFFF(These letters will not always rhyme.)|r\n",
 			}),
 			o(272039, {	-- Step 2: Inconspicuous Note
@@ -74,7 +74,7 @@ _.Secrets =
 			o(272181, {	-- Step 8: Inconspicuous Note
 				["model"] = 1661948,
 				["questID"] = 47863,
-				["coord"] = { 66.0, 36.5, 641 },	-- Val'sharah
+				["coord"] = { 66.0, 36.5, VALSHARAH },
 				["sourceQuest"] = 47852,	-- Step 7: Inconspicuous Note
 				["description"] = "|cFFFFFFFFStep 8:|r This step requires visiting |cFFFFD700Val'sharah|r.  Head to |cFFFFFFFF66.0, 36.5|r.  Inside the house next to |cff863325Wraithtalon|r is a |cFFFFD700Nightmare Tumor|r.  Click it to start the next puzzle.\n\n|cffcc33ffTips: Hit Alt+Z to hide your interface and then scroll into first-person view.  You can also use the right mouse button to turn your character around for easier viewing.|r\n\nThis puzzle is similar to |cFFFFD700Blingtron's Circuit Design Tutorial|r or the ley line puzzles in |cFFFFD700Nazjatar|r.\n\nThe object of the puzzle is to untangle all of the lines so that none cross each other and turn blue.  Once you complete it, another |cFFFFD700Inconspicuous Note|r will appear.  Click it.  The note reads...\r\r|cFFFFFFFFWhat you seek is buried within.|r\n",
 			}),

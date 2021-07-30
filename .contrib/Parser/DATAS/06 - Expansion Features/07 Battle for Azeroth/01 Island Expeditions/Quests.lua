@@ -174,7 +174,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163472, {	-- Bloodwake Drinking Horn
-					["coord"] = { 68.4, 54.2, 634 },
+					["coord"] = { 68.4, 54.2, STORMHEIM },
 					["g"] = {
 						q(53163, {	-- Bloodwake Drinking Horn
 							["provider"] = { "n", 93231 },	-- Vydhar
@@ -253,8 +253,8 @@ _.ExpansionFeatures =
 				}),
 				i(163480, {	-- Murloc Eye
 					["coords"] = {
-						{ 42.6, 10.8, 650 },
-						{ 49.6, 15.8, 650 },
+						{ 42.6, 10.8, HIGHMOUNTAIN },
+						{ 49.6, 15.8, HIGHMOUNTAIN },
 					},
 					["g"] = {
 						q(53174, {	-- Murloc Eye
@@ -288,7 +288,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163471, {	-- Ring of the Reefs
-					["coord"] = { 60.2, 51.2, 634 },
+					["coord"] = { 60.2, 51.2, STORMHEIM },
 					["g"] = {
 						q(53161, {	-- Ring of the Reefs
 							["provider"] = { "n", 106904 },	-- Valdemar Stormseeker <Valarjar Emissary>

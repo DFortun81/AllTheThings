@@ -4,12 +4,12 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(646, {	-- Broken Shore
+	m(BROKEN_ISLES, {
+		m(BROKEN_SHORE, {
 			n(VENDORS, {
 				n(118403, {	-- Syaith <Loaner Demon>
 					["description"] = "/kiss her during the Where There is a Whip... WQ.",
-					["coord"] = { 49.0, 55.8, 646 },
+					["coord"] = { 49.0, 55.8, BROKEN_SHORE },
 					["g"] = {
 						i(147120),	-- Technique: Glyph of the Shadow Succubus
 					},
@@ -74,7 +74,7 @@ _.Zones =
 				}),
 				n(120076, {	-- Treasure Master Iks'reeged
 					["sourceQuests"] = { 46666 },	-- The Motherlode!
-					["coord"] = { 47.8, 67.4, 646 },
+					["coord"] = { 47.8, 67.4, BROKEN_SHORE },
 					["g"] = {
 						i(142452, {	-- Lingering Wyrmtongue Essence (TOY!)
 							["cost"] = { { "c", 1226, 50000 }, },	-- 50,000x Nethershard

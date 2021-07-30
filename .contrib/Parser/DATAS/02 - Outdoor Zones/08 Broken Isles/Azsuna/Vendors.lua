@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(630, {	-- Azsuna
+	m(BROKEN_ISLES, {
+		m(AZSUNA, {
 			n(VENDORS, {
 				n(107139, {	-- Enchantress Ilyana
-					["coord"] = { 46.8, 40.8, 630 },
+					["coord"] = { 46.8, 40.8, AZSUNA },
 					["g"] = {
 						i(144317),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 1)
 						i(144308),	-- Formula: Enchant Neck - Mark of the Master (Rank 1)
@@ -17,7 +17,7 @@ _.Zones =
 					},
 				}),
 				n(102196, {	-- Fargo Flintlocke
-					["coord"] = { 43.0, 62.84, 630 },
+					["coord"] = { 43.0, 62.84, AZSUNA },
 					["g"] = {
 						i(136630),	-- "Twirling Bottom" Repeater
 						i(136632),	-- Chaos Blaster
@@ -30,7 +30,7 @@ _.Zones =
 					},
 				}),
 				n(107963, {	-- Kharmeera
-					["coord"] = { 47.2, 26.6, 630 },
+					["coord"] = { 47.2, 26.6, AZSUNA },
 					["g"] = {
 						i(128574, {	-- Formula: Enchant Cloak - Binding of Agility (Rank 1)
 							["cost"] = { { "i", 124442, 1 }, },	-- 1x Chaos Crystal
@@ -44,7 +44,7 @@ _.Zones =
 					},
 				}),
 				n(93973,  {	-- Leyweaver Phaxondus
-					["coord"] = { 29.0, 46.0, 630 },
+					["coord"] = { 29.0, 46.0, AZSUNA },
 					["g"] = {
 						i(127023, {	-- Pattern: Imbued Silkweave Epaulets (Rank 1)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
@@ -52,7 +52,7 @@ _.Zones =
 					},
 				}),
 				n(107379, {	-- Marin Bladewing <Wardens Emissary>
-					["coord"] = { 48.2, 73.9, 630 },
+					["coord"] = { 48.2, 73.9, AZSUNA },
 					["g"] = {
 						i(140219, {	-- Boon of the Bloodhunter
 							["cost"] = 2000000,	-- 200g
@@ -107,7 +107,7 @@ _.Zones =
 					},
 				}),
 				n(107376, {	-- Veridis Fallon <Court of Farondis Emissary>
-					["coord"] = { 46.9, 41.4, 630 },
+					["coord"] = { 46.9, 41.4, AZSUNA },
 					["g"] = {
 						i(129276, {	-- Beginner's Guide to Dimensional Rifting
 							["cost"] = 5000000,	-- 500g

@@ -6,7 +6,7 @@ _.Instances = { tier(LEGION_TIER, {
 	inst(767, {	-- Neltharion's Lair
 		["lvl"] = 98,
 		["mapID"] = 731,
-		["coord"] = { 49.5, 68.5, 650 },
+		["coord"] = { 49.5, 68.5, HIGHMOUNTAIN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(10996, {	-- Got to Ketchum All

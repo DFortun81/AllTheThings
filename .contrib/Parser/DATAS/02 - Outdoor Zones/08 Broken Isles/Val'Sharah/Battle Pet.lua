@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(641, {	-- Val'sharah
+	m(BROKEN_ISLES, {
+		m(VALSHARAH, {
 			filter(101,  {	-- Pet Battles
 				p(1738),	-- Auburn Ringtail
 				p(398),	-- Black Rat

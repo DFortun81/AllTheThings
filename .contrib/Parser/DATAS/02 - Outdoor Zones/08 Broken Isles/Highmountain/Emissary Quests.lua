@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(650, {	-- Highmountain
+	m(BROKEN_ISLES, {
+		m(HIGHMOUNTAIN, {
 			n(-169, {	-- Emissary Quests
 				q(42233, {	-- Highmountain Tribes
 					["repeatable"] = true,
@@ -16,7 +16,7 @@ _.Zones =
 								{"select", "itemID", 141592},	-- Technique: Codex of the Tranquil Mind (Rank 3)
 								{"postprocess"},	-- Merge the results into one group per unique key
 								{"finalize"},	-- Push the processed items on to the finalized stack and ignore further queries on them.
-								{"select", "mapID", 650},	-- Select Highmountain
+								{"select", "mapID", HIGHMOUNTAIN},
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 								{"where", "headerID", -34 },	-- Select the World Quest header.
 								{"pop"},	-- Push all of the groups contained to the processing layer.

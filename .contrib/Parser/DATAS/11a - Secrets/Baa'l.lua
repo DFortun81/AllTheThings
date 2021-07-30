@@ -10,7 +10,7 @@ _.Secrets =
 		["description"] = "***Quest tracking enabled is required to see all the steps.*** \n\n***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***\n\nOther things you may want to have on hand for this secret:\n-Goblin Gliders (if you don't have flying)\n-Invisibility potions\n-Underlight Angler or potions to increase your swim speed\n",
 		["maps"] = {
 			FROSTFIRE_RIDGE,
-			646,
+			BROKEN_SHORE,
 			862,
 			863,
 			864,
@@ -31,7 +31,7 @@ _.Secrets =
 				["model"] = 1068320,
 				["modelScale"] = .5,
 				["questID"] = 52809,
-				["coord"] = { 37.5, 71.6, 646 },
+				["coord"] = { 37.5, 71.6, BROKEN_SHORE },
 				["sourceQuest"] = 52819,	-- Step 1: Conspicuous Note
 				["description"] = "|cFFFFFFFFStep 2:|r Head to Broken Shore.  At the coordinates provided, there is a small stone table with various non-interactable objects — some candles, parchment, a quill, a purple crystal ball, and some scattered grey pebbles.  One of the pebbles is pale, almost the same color as the table, and it's the only thing on the table you can interact with.  You may need to zoom in to see it.\n\nThe text reads: \"<An ordinary pebble, unremarkable in every way.>\"\n",
 			}),

@@ -4,26 +4,26 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(634, {	-- Stormheim
-			m(649, {	-- Helheim
+	m(BROKEN_ISLES, {
+		m(STORMHEIM, {
+			m(HELHEIM, {
 				n(TREASURES, {
 					o(240649, {	-- Small Treasure Chest
 						["questID"] = 38383,
-						["coord"] = { 60.9, 53.3, 649 },
+						["coord"] = { 60.9, 53.3, HELHEIM },
 					}),
 					o(241267, {	-- Small Treasure Chest
 						["questID"] = 38510,
-						["coord"] = { 79.9, 24.7, 649 },
+						["coord"] = { 79.9, 24.7, HELHEIM },
 					}),
 					o(241216, {	-- Treasure Chest
 						["questID"] = 38503,
-						["coord"] = { 83.3, 24.6, 649 },
+						["coord"] = { 83.3, 24.6, HELHEIM },
 						["description"] = "Inside a sunken ship.",
 					}),
 					o(241272, {	-- Treasure Chest
 						["questID"] = 38516,
-						["coord"] = { 19.6, 47.0, 649 },
+						["coord"] = { 19.6, 47.0, HELHEIM },
 					}),
 				}),
 			}),

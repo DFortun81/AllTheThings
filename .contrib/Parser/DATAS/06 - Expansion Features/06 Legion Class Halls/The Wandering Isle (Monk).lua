@@ -71,14 +71,14 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
 						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["classes"] = { MONK },
-						["coord"] = { 53.6, 53.3, 646 },	-- Broken Shore
-						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 53.6, 53.3, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(41911, {	-- Amaranthine Hops
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
 						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
 						["classes"] = { MONK },
-						["maps"] = { 634 }	-- Stormheim
+						["maps"] = { STORMHEIM },
 					}),
 					q(43054, {	-- An Ample Stockpile
 						["sourceQuests"] = { 41907 },	-- Appropriations
@@ -96,13 +96,13 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
 						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["classes"] = { MONK },
-						["coord"] = { 53.6, 53.3, 646 },	-- Broken Shore
+						["coord"] = { 53.6, 53.3, BROKEN_SHORE },
 					}),
 					q(12103, {	-- Before the Storm
 						-- Note: Weird quest number for Legion, and wowhead says this is no longer available, but it gave me the quest in 8.3
 						["provider"] = { "n", 98519 },	-- Initiate Da-Nel
 						["classes"] = { MONK },
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(41854, {	-- Brick by Brick
 						["sourceQuests"] = {
@@ -112,7 +112,7 @@ _.ExpansionFeatures =
 						},
 						["provider"] = { "n", 105152 },	-- Hiro
 						["classes"] = { MONK },
-						["maps"] = { 634 },	-- Stormheim
+						["maps"] = { STORMHEIM },
 						["g"] = {
 							i(139738),	-- Grandmaster's Cuffs
 						},
@@ -223,14 +223,14 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
 						["provider"] = { "n", 117305 },	-- Brewmaster Almai
 						["classes"] = { MONK },
-						["coord"] = { 53.6, 53.3, 646 },	-- Broken Shore
-						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 53.6, 53.3, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(41910, {	-- Freya's Spring
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
 						["provider"] = { "n", 102843 },	-- Aegira (Broken Temple Brewmaster)
 						["classes"] = { MONK },
-						["maps"] = { 634 },	-- Stormheim
+						["maps"] = { STORMHEIM },
 					}),
 					q(46785, {	-- Further Advancement
 						["sourceQuests"] = { 45790 },	-- Champion: Almai
@@ -252,13 +252,13 @@ _.ExpansionFeatures =
 						["isBreadcrumb"] = true,
 						["provider"] = { "n", 112696 },	-- Initiate Da-Nel
 						["classes"] = { MONK },
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(41040, {	-- Halls of Valor: The Brewmaster
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
 						["provider"] = { "n", 102843 },	-- Aegira (Broken Temple Brewmaster)
 						["classes"] = { MONK },
-						["maps"] = { 634 },	-- Stormheim
+						["maps"] = { STORMHEIM },
 					}),
 					q(41059, {	-- Halls of Valor: Odyn's Cauldron
 						["sourceQuests"] = { 41040 },	-- Halls of Valor: The Brewmaster
@@ -284,8 +284,8 @@ _.ExpansionFeatures =
 						},
 						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["classes"] = { MONK },
-						["coord"] = { 53.6, 53.4, 646 },	-- Broken Shore
-						["maps"] = { 646 }	-- Broken Shore
+						["coord"] = { 53.6, 53.4, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(32442, {	-- Impending Danger
 						["sourceQuests"] = {
@@ -347,7 +347,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 109738 },	-- Fleuris Asterleaf
 						["classes"] = { MONK },
 						["cost"] = { { "i", 124113, 20 } },	-- 20x Stonehide Leather
-						["maps"] = { 641 },	-- Val'sharah
+						["maps"] = { VALSHARAH },
 					}),
 					q(46353, {	-- Master Who?
 						["sourceQuests"] = {
@@ -358,8 +358,8 @@ _.ExpansionFeatures =
 						},
 						["provider"] = { "n", 118214 },	-- Yiska
 						["classes"] = { MONK },
-						["coord"] = { 44.9, 62.0, 646 },	-- Broken Shore
-						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 44.9, 62.0, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(44238, {	-- Meditations on Fate
 						["provider"] = { "n", 110817 },	-- Yushi
@@ -369,8 +369,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41850 },	-- The Master of Swords
 						["provider"] = { "n", 105072 },	-- Angus Ironfist
 						["classes"] = { MONK },
-						["coord"] = { 64.2, 57.0, 634 },	-- Stormheim (approx location based on where previous quest is turned in)
-						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 64.2, 57.0, STORMHEIM },	--(approx location based on where previous quest is turned in)
+						["maps"] = { STORMHEIM },
 					}),
 					q(45442, {	-- Not Felling Well
 						["sourceQuests"] = { 46320 },	-- Hope For a Cure
@@ -405,8 +405,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41850 },	-- The Master of Swords
 						["provider"] = { "n", 105088 },	-- Sylara Steelsong
 						["classes"] = { MONK },
-						["coord"] = { 64.2, 57.0, 634 },	-- Stormheim (approx location based on where previous quest is turned in)
-						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 64.2, 57.0, STORMHEIM },	--(approx location based on where previous quest is turned in)
+						["maps"] = { STORMHEIM },
 					}),
 					q(41733, {	-- Rebuilding the Order
 					--	TODO: gives crit 3 of achievementID 10461, figure out best way to display this achievement.  some order halls have the crit as a reward but that's not how we would typically display achieve criteria granted by quests (would normally be in achievement header linked via SQs) - but since this is a shared achievement with different SQs for each class, maybe an exception to the rule is okay?  shrug emoji
@@ -476,8 +476,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41038 },	-- The Mead Master
 						["provider"] = { "n", 102843 },	-- Aegira
 						["classes"] = { MONK },
-						["coord"] = { 62.1, 20.2, 634 },	-- Stormheim
-						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 62.1, 20.2, STORMHEIM },
+						["maps"] = { STORMHEIM },
 					}),
 					q(41087, {	-- Storm Brew
 						["sourceQuests"] = { 32442 },	-- Impending Danger
@@ -573,8 +573,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41849 },	-- The Iron Fist
 						["provider"] = { "n", 105045 },	-- Angus Ironfist
 						["classes"] = { MONK },
-						["coord"] = { 62.9, 59.5, 634 },
-						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 62.9, 59.5, STORMHEIM },
+						["maps"] = { STORMHEIM },
 					}),
 					q(41038, {	-- The Mead Master
 						["sourceQuests"] = {
@@ -714,8 +714,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41850 },	-- The Master of Swords
 						["provider"] = { "n", 105072 },	-- Angus Ironfist
 						["classes"] = { MONK },
-						["coord"] = { 64.2, 57.0, 634 },	-- Stormheim (approx location based on where previous quest is turned in)
-						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 64.2, 57.0, STORMHEIM },	--(approx location based on where previous quest is turned in)
+						["maps"] = { STORMHEIM },
 					}),
 
 					--[[

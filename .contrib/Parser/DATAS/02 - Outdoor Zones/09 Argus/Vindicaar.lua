@@ -581,7 +581,7 @@ _.Zones =
 								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_FINGER"} },	-- Rings Only!
-									{"select", "mapID", 619},	-- The Broken Isles
+									{"select", "mapID", BROKEN_ISLES},
 									{"pop"},	-- Discard the Map Headers and acquire all of their children.
 									{"where", "headerID", -34},	-- Select only the World Quest Headers
 									{"pop"},	-- Discard the World Quest Headers and acquire all of their children.

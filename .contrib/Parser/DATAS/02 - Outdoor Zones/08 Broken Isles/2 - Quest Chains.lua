@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
+	m(BROKEN_ISLES, {
 		n(-171, {	-- Quest Chains
 			["g"] = {
 				n(ACHIEVEMENTS, {	-- Achievements
@@ -68,20 +68,20 @@ _.Zones =
 						q(40668, {	-- Eye of Azshara: The Heart of Zin-Azshari
 							["sourceQuests"] = { 43496, 43501, 43503, 43505 },	-- The Power Within (4 versions)
 							["provider"] = { "n", 100482 },	-- Senegos
-							["coord"] = { 48.0, 25.7, 630 },
-							["maps"] = { 630 },	-- Azsuna
+							["coord"] = { 48.0, 25.7, AZSUNA },
+							["maps"] = { AZSUNA },
 						}),
 						q(43514, {	-- A Vainglorious Past
 							["sourceQuests"] = { 40668 },	-- Eye of Azshara: The Heart of Zin-Azshari
 							["provider"] = { "n", 100482 },	-- Senegos
-							["coord"] = { 48.0, 25.7, 630 },
-							["maps"] = { 630 },	-- Azsuna
+							["coord"] = { 48.0, 25.7, AZSUNA },
+							["maps"] = { AZSUNA },
 						}),
 						q(43517, {	-- Darkheart Thicket: Fallen Power
 							["sourceQuests"] = { 40668 },	-- Eye of Azshara: The Heart of Zin-Azshari
 							["provider"] = { "n", 100482 },	-- Senegos
-							["coord"] = { 48.0, 25.7, 630 },
-							["maps"] = { 630 },	-- Azsuna
+							["coord"] = { 48.0, 25.7, AZSUNA },
+							["maps"] = { AZSUNA },
 						}),
 						q(43518),	-- Tempering Darkness
 						q(43519),	-- Lucid Strength
@@ -94,48 +94,48 @@ _.Zones =
 						q(43522, {	-- Essential Consumption
 							["sourceQuests"] = { 43520 },	-- The Emerald Nightmare: Essence of Power
 							["provider"] = { "n", 100482 },	-- Senegos
-							["coord"] = { 48.0, 25.7, 630 },
-							["maps"] = { 630 },	-- Azsuna
+							["coord"] = { 48.0, 25.7, AZSUNA },
+							["maps"] = { AZSUNA },
 						}),
 						q(43523, {	-- Repaid Debt
 							["description"] = "This quest is available if you *have* completed the Moonguard Stronghold quests in Suramar.",
 							["sourceQuests"] = { 43522 },	-- Essential Consumption
 							["provider"] = { "n", 110773 },	-- Archmage Kalec
-							["coord"] = { 48.1, 25.6, 630 },
-							["maps"] = { 630 },	-- Azsuna
+							["coord"] = { 48.1, 25.6, AZSUNA },
+							["maps"] = { AZSUNA },
 						}),
 						q(43527, {	-- Saving the Guard
 							["description"] = "This quest is available if you have *not* completed the Moonguard Stronghold quests in Suramar.",
 							["sourceQuests"] = { 43522 },	-- Essential Consumption
 							["provider"] = { "n", 110773 },	-- Archmage Kalec
-							["coord"] = { 48.1, 25.6, 630 },
-							["maps"] = { 630 },	-- Azsuna
+							["coord"] = { 48.1, 25.6, AZSUNA },
+							["maps"] = { AZSUNA },
 						}),
 						q(43937),	-- Seeking Refuge (Saving the Guard gives credit for this; not sure if it is obtainable on its own anymore)
 						q(43938),	-- Focusing Our Efforts (Saving the Guard gives credit for this; not sure if it is obtainable on its own anymore)
 						q(40673, {	-- Lost Knowledge
 							["sourceQuests"] = { 43527 },	-- Saving the Guard
 							["provider"] = { "n", 101083 },	-- Thalrenus Rivertree
-							["coord"] = { 37.8, 47.3, 680 },
-							["maps"] = { 680 },	-- Suramar
+							["coord"] = { 37.8, 47.3, SURAMAR },
+							["maps"] = { SURAMAR },
 						}),
 						q(43525, {	-- Vault of the Wardens: Borrowing Without Asking
 							["sourceQuests"] = { 40673 },	-- Lost Knowledge
 							["provider"] = { "n", 101083 },	-- Thalrenus Rivertree
-							["coord"] = { 37.8, 47.3, 680 },
-							["maps"] = { 680 },	-- Suramar
+							["coord"] = { 37.8, 47.3, SURAMAR },
+							["maps"] = { SURAMAR },
 						}),
 						q(40675, {	-- The Arcway: Rite of the Captain
 							["sourceQuests"] = { 40673 },	-- Lost Knowledge
 							["provider"] = { "n", 101080 },	-- Syrana Starweaver
-							["coord"] = { 37.9, 47.3, 680 },
-							["maps"] = { 680 },	-- Suramar
+							["coord"] = { 37.9, 47.3, SURAMAR },
+							["maps"] = { SURAMAR },
 						}),
 						q(43524, {	-- Court of Stars: Literary Perfection
 							["sourceQuests"] = { 40673 },	-- Lost Knowledge
 							["provider"] = { "n", 101082 },	-- Lothrius Mooncaller
-							["coord"] = { 37.9, 47.4, 680 },
-							["maps"] = { 680 },	-- Suramar
+							["coord"] = { 37.9, 47.4, SURAMAR },
+							["maps"] = { SURAMAR },
 						}),
 						q(40678, {	-- Twisted Power
 							["sourceQuests"] = {
@@ -144,44 +144,44 @@ _.Zones =
 								43525,	-- Vault of the Wardens: Borrowing Without Asking
 							},
 							["provider"] = { "n", 101080 },	-- Syrana Starweaver
-							["coord"] = { 37.9, 47.3, 680 },
-							["maps"] = { 680 },	-- Suramar
+							["coord"] = { 37.9, 47.3, SURAMAR },
+							["maps"] = { SURAMAR },
 						}),
 						q(43526, {	-- A True Test
 							["sourceQuests"] = { 40678 },	-- Twisted Power
 							["provider"] = { "n", 101080 },	-- Syrana Starweaver
-							["coord"] = { 37.9, 47.3, 680 },
-							["maps"] = { 680 },	-- Suramar
+							["coord"] = { 37.9, 47.3, SURAMAR },
+							["maps"] = { SURAMAR },
 						}),
 						q(40603, {	-- Seeking the Valkyra
 							["sourceQuests"] = { 43526 },	-- A True Test
 							["provider"] = { "n", 111826 },	-- Archmage Kalec
-							["coord"] = { 37.8, 47.4, 680 },
-							["maps"] = { 680 },	-- Suramar
+							["coord"] = { 37.8, 47.4, SURAMAR },
+							["maps"] = { SURAMAR },
 						}),
 						q(40608, {	-- The Mark
 							["sourceQuest"] = 40603,	-- Seeking the Valkyra
 							["provider"] = { "n", 100738 },	-- Ashildir
-							["coord"] = { 62.7, 68.1, 634 },
-							["maps"] = { 634 },	-- Stormheim
+							["coord"] = { 62.7, 68.1, STORMHEIM },
+							["maps"] = { STORMHEIM },
 						}),
 						q(40613, {	-- Maw of Souls: Retrieving the Svalnguard
 							["sourceQuest"] = 40608,	-- The Mark
 							["provider"] = { "n", 100738 },	-- Ashildir
-							["coord"] = { 62.7, 68.1, 634 },
-							["maps"] = { 634 },	-- Stormheim
+							["coord"] = { 62.7, 68.1, STORMHEIM },
+							["maps"] = { STORMHEIM },
 						}),
 						q(40614, {	-- A Feast Fit for Odyn
 							["sourceQuest"] = 40613,	-- Maw of Souls: Retrieving the Svalnguard
 							["provider"] = { "n", 100738 },	-- Ashildir
-							["coord"] = { 62.7, 68.1, 634 },
-							["maps"] = { 634 },	-- Stormheim
+							["coord"] = { 62.7, 68.1, STORMHEIM },
+							["maps"] = { STORMHEIM },
 						}),
 						q(40672, {	-- Neltharion's Lair: Presentation is Key
 							["sourceQuest"] = 40613,	-- Maw of Souls: Retrieving the Svalnguard
 							["provider"] = { "n", 100738 },	-- Ashildir
-							["coord"] = { 62.7, 68.1, 634 },
-							["maps"] = { 634 },	-- Stormheim
+							["coord"] = { 62.7, 68.1, STORMHEIM },
+							["maps"] = { STORMHEIM },
 						}),
 						q(40615, {	-- Halls of Valor: Odyn's Blessing
 							["sourceQuests"] = {
@@ -189,14 +189,14 @@ _.Zones =
 								40672,	-- Neltharion's Lair: Presentation is Key
 							},
 							["provider"] = { "n", 100738 },	-- Ashildir
-							["coord"] = { 62.7, 68.1, 634 },
-							["maps"] = { 634 },	-- Stormheim
+							["coord"] = { 62.7, 68.1, STORMHEIM },
+							["maps"] = { STORMHEIM },
 						}),
 						q(43898, {	-- Preparing to Move
 							["sourceQuest"] = 40615,	-- Halls of Valor: Odyn's Blessing
 							["provider"] = { "n", 111814 },	-- Archmage Kalec
-							["coord"] = { 62.5, 68.2, 634 },
-							["maps"] = { 634 },	-- Stormheim
+							["coord"] = { 62.5, 68.2, STORMHEIM },
+							["maps"] = { STORMHEIM },
 						}),
 						q(43528, {	-- Planning the Assault
 							-- NOTE: This quest was removed when The Nighthold opened
@@ -205,20 +205,20 @@ _.Zones =
 						q(43530, {	-- The Nighthold: Delusions of Grandeur
 							["sourceQuest"] = 43898,	-- Preparing to Move
 							["provider"] = { "n", 101083 },	-- Thalrenus Rivertree
-							["coord"] = { 37.8, 47.3, 680 },
-							["maps"] = { 680 },	-- Suramar
+							["coord"] = { 37.8, 47.3, SURAMAR },
+							["maps"] = { SURAMAR },
 						}),
 						q(43531, {	-- The Nighthold: Into the Nighthold
 							["sourceQuest"] = 43898,	-- Preparing to Move
 							["provider"] = { "n", 111826 },	-- Archmage Kalec
-							["coord"] = { 37.8, 47.4, 680 },
-							["maps"] = { 680 },	-- Suramar
+							["coord"] = { 37.8, 47.4, SURAMAR },
+							["maps"] = { SURAMAR },
 						}),
 						q(43532, {	-- The Nighthold: Darkness Calls
 							["sourceQuest"] = 43898,	-- Preparing to Move
 							["provider"] = { "n", 111826 },	-- Archmage Kalec
-							["coord"] = { 37.8, 47.4, 680 },
-							["maps"] = { 680 },	-- Suramar
+							["coord"] = { 37.8, 47.4, SURAMAR },
+							["maps"] = { SURAMAR },
 						}),
 						q(43533, {	-- Balance of Power
 							["sourceQuests"] = {
@@ -227,8 +227,8 @@ _.Zones =
 								43532,	-- The Nighthold: Darkness Calls
 							},
 							["provider"] = { "n", 111826 },	-- Archmage Kalec
-							["coord"] = { 37.8, 47.4, 680 },
-							["maps"] = { 680 },	-- Suramar
+							["coord"] = { 37.8, 47.4, SURAMAR },
+							["maps"] = { SURAMAR },
 							["g"] = {
 								cl(WARRIOR, {
 									["classes"] = { WARRIOR },
@@ -354,15 +354,15 @@ _.Zones =
 							["description"] = "The prerequisite for this quest is recruiting your class's first two champions, doing your first short mission, and recruiting your first troops.",	-- i also sent out my first 1-hour mission after the 2-minute one, not sure if that's required.  not sure whether paladin's requirements are different, so i didn't add the description to their version of the quest.
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
 							["classes"] = exclude(PALADIN, ALL_CLASSES),
-							["coord"] = { 28.9, 48.4, 627 },
-							["maps"] = { 627 },	-- Dalaran
+							["coord"] = { 28.9, 48.4, LEGION_DALARAN },
+							["maps"] = { LEGION_DALARAN },
 						}),
 						q(44257, {	-- A Falling Star (Paladin)
 							["sourceQuests"] = { 42866 }, -- A Sign From The Sky
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
 							["classes"] = { PALADIN },
-							["coord"] = { 28.9, 48.4, 627 },
-							["maps"] = { 627 },	-- Dalaran
+							["coord"] = { 28.9, 48.4, LEGION_DALARAN },
+							["maps"] = { LEGION_DALARAN },
 						}),
 						q(44004, {	-- Bringer of the Light
 							["sourceQuests"] = {
@@ -409,8 +409,8 @@ _.Zones =
 						q(44153, {	-- Light's Charge
 							["sourceQuest"] = 44004,	-- Bringer of the Light
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
-							["coord"] = { 28.7, 48.5, 627 },
-							["maps"] = { 627 },
+							["coord"] = { 28.7, 48.5, LEGION_DALARAN },
+							["maps"] = { LEGION_DALARAN },
 							["g"] = {
 								crit(2, {	-- Complete the quest, "Light's Charge."
 									["achievementID"] = 10461,	-- Fighting with Style: Classic
@@ -463,8 +463,8 @@ _.Zones =
 								44338,	-- Goddess Watch Over You (if you didn't complete Val'sharah)
 							},
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
-							["coord"] = { 28.9, 48.4, 627 },
-							["maps"] = { 627 },	-- Dalaran
+							["coord"] = { 28.9, 48.4, LEGION_DALARAN },
+							["maps"] = { LEGION_DALARAN },
 							["lvl"] = 110,
 						}),
 						q(44464, {	-- Awakenings
@@ -701,7 +701,7 @@ _.Zones =
 					},
 				}),
 				o(247797, {	-- Lost Mail
-					["maps"] = { 627, 628, 629 },	-- Dalaran maps
+					["maps"] = { LEGION_DALARAN, 628, 629 },	-- Dalaran maps
 					["g"] = {
 						q(41368, {	-- Lost Mail
 							["description"] = "To get this quest, you must find a small envelope near a mailbox in Broken Isles Dalaran.  It can spawn in multiple places and has a long respawn timer.  If you don't want to wait, you can try to find Lost Mail for sale on the Auction House.",
@@ -717,7 +717,7 @@ _.Zones =
 							["description"] = "After turning in the Lost Mail to Madam Goya in the Underbelly, you'll receive a letter from the Postmaster instructing you to report for duty!  Use the Mail Tube at the coordinates provided to head down to the mail room.",
 							["sourceQuests"] = { 41368, 41411 },	-- Lost Mail
 							["provider"] = { "n", 103976 },	-- The Postmaster
-							["coord"] = { 33.0, 31.7, 627 },
+							["coord"] = { 33.0, 31.7, LEGION_DALARAN },
 							["lvl"] = 98,
 						}),
 						q(41397, {	-- A Huge Package

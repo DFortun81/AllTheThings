@@ -4,7 +4,7 @@
 
 _.Instances = { tier(LEGION_TIER, {
 	inst(721, {	-- Halls of Valor
-		["coord"] = { 70.4, 69.4, 634 },
+		["coord"] = { 70.4, 69.4, STORMHEIM },
 		["maps"] = { 703, 704, 705 },
 		["lvl"] = 98,
 		["g"] = {

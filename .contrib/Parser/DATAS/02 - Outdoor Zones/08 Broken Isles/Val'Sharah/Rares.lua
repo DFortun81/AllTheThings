@@ -4,13 +4,13 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(641, {	-- Val'sharah
+	m(BROKEN_ISLES, {
+		m(VALSHARAH, {
 			n(RARES, {
 				n(93758,  {	-- Antydas Nightcaller
 					["description"] = "This part of the 'Adventurer of Val'sharah' achievement doesn't involve killing a rare, but stealing an NPC's treasure.  The treasure chest is on the second floor of the building and can be found directly across the room from Antydas, hidden next to the sink.  Enjoy your foray into larceny!",
 					["questID"] = 38903,	-- 7.0 Val'sharah - Bluffs - Vignette: Nightcaller - Interaction - TRACKING - twh
-					["coord"] = { 64.5, 85.3, 641 },
+					["coord"] = { 64.5, 85.3, VALSHARAH },
 					["g"] = {
 						crit(8, {	-- Antydas Nightcaller
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -19,7 +19,7 @@ _.Zones =
 				}),
 				n(110562, {	-- Bahagar
 					["questID"] = 43446,
-					["coord"] = { 45.2, 88.1, 641 },
+					["coord"] = { 45.2, 88.1, VALSHARAH },
 					["g"] = {
 						crit(18, {	-- Bahagar
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -29,7 +29,7 @@ _.Zones =
 				}),
 				n(92965,  {	-- Darkshade
 					["questID"] = 38767,
-					["coord"] = { 44.0, 52.5, 641 },
+					["coord"] = { 44.0, 52.5, VALSHARAH },
 					["g"] = {
 						crit(4, {	-- Darkshade, Saber Matriarch
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -39,7 +39,7 @@ _.Zones =
 				}),
 				n(97517,  {	-- Dreadbog
 					["questID"] = 39858,
-					["coord"] = { 60.4, 44.1, 641 },
+					["coord"] = { 60.4, 44.1, VALSHARAH },
 					["g"] = {
 						crit(15, {	-- Dreadbog
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -50,7 +50,7 @@ _.Zones =
 				n(92334,  {	-- Elindya Featherlight (Skul'vrax)
 					["description"] = "Revive Elindya Featherlight, follow her to Swiftflight and Skul'vrax will spawn.",
 					["questID"] = 38887,
-					["coord"] = { 60.4, 90.7, 641 },
+					["coord"] = { 60.4, 90.7, VALSHARAH },
 					["crs"] = { 93654 },	-- Skul'vrax
 					["g"] = {
 						crit(7, {	-- Elindya Featherlight
@@ -61,7 +61,7 @@ _.Zones =
 				}),
 				n(93679,  {	-- Gathenak the Subjugator
 					["questID"] = 44070,
-					["coord"] = { 49.1, 47.4, 641 },
+					["coord"] = { 49.1, 47.4, VALSHARAH },
 					["crs"] = { 112472 },	-- Tehd Shoemaker
 					["g"] = {
 						crit(20, {	-- Marius & Tehd versus a Satyr
@@ -72,7 +72,7 @@ _.Zones =
 				}),
 				n(92117,  {	-- Gorebeak
 					["questID"] = 38468,
-					["coord"] = { 59.7, 77.2, 641 },
+					["coord"] = { 59.7, 77.2, VALSHARAH },
 					["crs"] = { 92111 },	-- Lorel Sagefeather
 					["g"] = {
 						crit(1, {	-- Gorebeak
@@ -83,7 +83,7 @@ _.Zones =
 				}),
 				n(95123,  {	-- Grelda the Hag
 					["questID"] = 40126,
-					["coord"] = { 66.0, 52.5, 641 },
+					["coord"] = { 66.0, 52.5, VALSHARAH },
 					["g"] = {
 						crit(11, {	-- Grelda the Hag
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -93,7 +93,7 @@ _.Zones =
 				}),
 				n(93030,  {	-- Ironbranch
 					["questID"] = 40080,
-					["coord"] = { 58.8, 33.9, 641 },
+					["coord"] = { 58.8, 33.9, VALSHARAH },
 					["g"] = {
 						crit(5, {	-- Ironbranch
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -103,7 +103,7 @@ _.Zones =
 				}),
 				n(94414,  {	-- Kiranys Duskwhisper
 					["questID"] = 39121,
-					["coord"] = { 34.4, 58.3, 641 },
+					["coord"] = { 34.4, 58.3, VALSHARAH },
 					["g"] = {
 						crit(9, {	-- Haunted Manor
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -112,7 +112,7 @@ _.Zones =
 				}),
 				n(98241,  {	-- Lyrath Moonfeather
 					["questID"] = 40079,
-					["coord"] = { 61.9, 30.2, 641 },
+					["coord"] = { 61.9, 30.2, VALSHARAH },
 					["g"] = {
 						crit(16, {	-- Lyrath Moonfeather
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -122,7 +122,7 @@ _.Zones =
 				}),
 				n(95221,  {	-- Mad Henryk
 					["questID"] = 39357,
-					["coord"] = { 47.1, 57.8, 641 },
+					["coord"] = { 47.1, 57.8, VALSHARAH },
 					["g"] = {
 						crit(12, {	-- Old Bear Trap
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -132,7 +132,7 @@ _.Zones =
 				}),
 				n(95318,  {	-- Perrexx
 					["questID"] = 39596,
-					["coord"] = { 61.1, 69.9, 641 },
+					["coord"] = { 61.1, 69.9, VALSHARAH },
 					["g"] = {
 						crit(13, {	-- Perrexx the Corruptor
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -142,7 +142,7 @@ _.Zones =
 				}),
 				n(94485,  {	-- Pollous the Fetid
 					["questID"] = 39130,
-					["coord"] = { 67.0, 44.0, 641 },
+					["coord"] = { 67.0, 44.0, VALSHARAH },
 					["g"] = {
 						crit(10, {	-- Purging the River
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -152,7 +152,7 @@ _.Zones =
 				}),
 				n(92180,  {	-- Seersei
 					["questID"] = 38479,
-					["coord"] = { 41.8, 77.7, 641 },
+					["coord"] = { 41.8, 77.7, VALSHARAH },
 					["g"] = {
 						crit(2, {	-- Seersei
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -163,7 +163,7 @@ _.Zones =
 				n(92423,  {	-- Theryssia
 					["description"] = "Click on Theryssia's nameplate on the gravestone.",
 					["questID"] = 38772,
-					["coord"] = { 38.0, 52.8, 641 },
+					["coord"] = { 38.0, 52.8, VALSHARAH },
 					["g"] = {
 						crit(3, {	-- Theryssia
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -173,7 +173,7 @@ _.Zones =
 				}),
 				n(93205,  {	-- Thondrax
 					["questID"] = 38780,
-					["coord"] = { 62.6, 47.8, 641 },
+					["coord"] = { 62.6, 47.8, VALSHARAH },
 					["g"] = {
 						crit(6, {	-- Thondrax
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -183,7 +183,7 @@ _.Zones =
 				}),
 				n(109708, {	-- Undergrell Ringleader
 					["questID"] = 43176,
-					["coord"] = { 67.0, 69.5, 641 },
+					["coord"] = { 67.0, 69.5, VALSHARAH },
 					["crs"] = { 109225 },	-- Elandris Bladesong
 					["g"] = {
 						crit(17, {	-- Undergrell Attack
@@ -195,7 +195,7 @@ _.Zones =
 				{	-- Unguarded Thistleleaf Treasure
 					["objectID"] = 241128,	-- Unguarded Thistleleaf Treasure
 					["questID"] = 38466,	-- Grellkin Treasure
-					["coord"] = { 55.4, 77.6, 641 },
+					["coord"] = { 55.4, 77.6, VALSHARAH },
 					["g"] = {
 						crit(19, {	-- Unguarded Thistleleaf Treasure
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
@@ -205,7 +205,7 @@ _.Zones =
 				},
 				n(97504,  {	-- Wraithtalon
 					["questID"] = 39856,
-					["coord"] = { 66.6, 37.0, 641 },
+					["coord"] = { 66.6, 37.0, VALSHARAH },
 					["g"] = {
 						crit(14, {	-- Wraithtalon
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah

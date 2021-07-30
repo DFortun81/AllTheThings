@@ -20,7 +20,7 @@ _.Secrets =
 			205,
 			TOWNLONG_STEPPES,
 			594,
-			650,
+			HIGHMOUNTAIN,
 		},
 		["g"] = {
 			o(13000000, {	-- Step 1: Purchase Talisman of True Treasure Tracking
@@ -50,7 +50,7 @@ _.Secrets =
 							o(280836, {	-- Letter 2: Prepfoot Compound, Highmountain
 								["model"] = 1661948,
 								["questID"] = 40314,
-								["coord"] = { 57.4, 27.9, 650 },	-- Prepfoot Compound, Highmountain
+								["coord"] = { 57.4, 27.9, HIGHMOUNTAIN },	-- Prepfoot Compound
 								["sourceQuest"] = 40397,	-- Letter 1: Shattrath City
 								["description"] = "|cFFFFFFFFLetter 2:|r Go to |cFFFFFFFF57.4, 27.9|r in |cFFFFD700Highmountain|r. The |cFFFFD700Letter from Ms. Graham|r is located in one of the tents on the box next to the pumpkin. Click it. The letter reads...\n\n|cFFFFFFFFOf all of Gai's cures for Nature, the most liberating is Death.|r\n",
 							}),

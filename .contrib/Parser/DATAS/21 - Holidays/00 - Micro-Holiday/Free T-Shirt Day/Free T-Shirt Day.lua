@@ -83,8 +83,8 @@ _.Holidays =
 			}),
 			n(VENDORS, {
 				n(150948, {	-- Gild Crewneck
-					["coord"] = { 60.3, 52.5, 634 },
-					["maps"] = { 634 },	-- Stormheim
+					["coord"] = { 60.3, 52.5, STORMHEIM },
+					["maps"] = { STORMHEIM },
 					["groups"] = {
 						i(167226),	-- Gild's Crewneck
 					},

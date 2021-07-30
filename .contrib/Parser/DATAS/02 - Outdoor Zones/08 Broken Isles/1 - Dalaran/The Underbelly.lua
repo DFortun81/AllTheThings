@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(627, {	-- Dalaran
+	m(BROKEN_ISLES, {
+		m(LEGION_DALARAN, {
 			n(-213, {	-- The Underbelly
 				n(ACHIEVEMENTS, {
 					currency(1149, {	-- Sightless Eyes

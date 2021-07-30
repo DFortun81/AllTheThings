@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(680, {	-- Suramar
+	m(BROKEN_ISLES, {
+		m(SURAMAR, {
 			n(-38, {	-- Profession
 				prof(ARCHAEOLOGY, {
 					q(41173, {	-- A Beacon of Hope
@@ -219,7 +219,7 @@ _.Zones =
 						["g"] = {
 							faction(2101, {	-- Sha'leth
 								["creatureID"] = 120459,
-								["coord"] = { 50.6, 49.3, 680 },	-- Suramar
+								["coord"] = { 50.6, 49.3, SURAMAR },
 								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF50.6, 49.3|r in The Grand Promenade near the edge of Suramar City.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
 								["requireSkill"] = FISHING,
 								["g"] = {
@@ -283,11 +283,11 @@ _.Zones =
 						},
 					}),
 					q(40213),	-- Hounds Abound
-					
+
 					q(40212, {	-- Wrong End of the Knife
 						["requireSkill"] = LEATHERWORKING,
 						["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
-						["coord"] = { 26.6, 71.6, 680 },
+						["coord"] = { 26.6, 71.6, SURAMAR },
 						["sourceQuests"] = { 40211 },	-- Demon Flesh
 					}),
 				}),
@@ -333,7 +333,7 @@ _.Zones =
 				prof(TAILORING, {
 					q(38971, {	-- Exotic Textiles
 						["requireSkill"] = TAILORING,
-						["coord"] = { 26.6, 71.4,  680 },
+						["coord"] = { 26.6, 71.4, SURAMAR },
 						["provider"] = { "n", 93978 },	-- Leyweaver Athystro
 						["g"] = {
 							i(127026),	-- Pattern: Imbued Silkweave Gloves (Rank 1)
@@ -341,7 +341,7 @@ _.Zones =
 					}),
 					q(38975, {	-- Inspire Me!
 						["requireSkill"] = TAILORING,
-						["coord"] = { 40.2, 69.6, 680 },
+						["coord"] = { 40.2, 69.6, SURAMAR },
 						["provider"] = { "n", 93976 },	-- Leyweaver Mithrogane
 						["g"] = {
 							i(127028),	-- Pattern: Imbued Silkwave Robes (Rank 1)
@@ -351,7 +351,7 @@ _.Zones =
 					q(38968),	-- Proof of Loyalty
 					q(44741, {	-- Return to Karazhan: The Big Bag Theory
 						["requireSkill"] = TAILORING,
-						["coord"] = { 40.4, 69.4, 680 },
+						["coord"] = { 40.4, 69.4, SURAMAR },
 						["provider"] = { "n", 93969 },	-- Leyweaver Tytallo
 						["g"] = {
 							i(142076),	-- Pattern: Imbued Silkweave Bag (Rank 1)

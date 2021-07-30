@@ -53,7 +53,7 @@ _.Secrets =
 							n(98725, {	-- Lio the Lioness <Battle Pet Master>
 								["description"] = "Legion Dalaran or Garrison",
 								["coords"] = {
-									{ 59.2, 39.6, 627 },	-- Legion Dalaran
+									{ 59.2, 39.6, LEGION_DALARAN },
 									{ 29.2, 40.4, 582 },	-- Lunarfall
 								},
 								["races"] = ALLIANCE_ONLY,
@@ -66,7 +66,7 @@ _.Secrets =
 							n(115287, {	-- Serr'ah <Battle Pet Master>
 								["description"] = "Legion Dalaran or Garrison",
 								["coords"] = {
-									{ 58.6, 38.0, 627 },	-- Legion Dalaran
+									{ 58.6, 38.0, LEGION_DALARAN },
 									{ 32.6, 42.8, 590 },	-- Frostwall
 								},
 								["races"] = HORDE_ONLY,

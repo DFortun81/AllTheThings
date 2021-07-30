@@ -14,9 +14,9 @@ _.ExpansionFeatures =
 						i(141332, {	-- The Annals of Light and Shadow
 							["description"] = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\nStart with Volume VI and Archivist Inkforge in your Order Hall.",
 							["maps"] = {
-								630,		-- Azsuna
+								AZSUNA,
 								751,		-- Black Rook Hold
-								627,		-- Dalaran
+								LEGION_DALARAN,
 								628,		-- The Underbelly (Dalaran)
 								629,		-- Aegwynn's Gallery (Dalaran)
 								115,		-- New Hearthglen in Northrend
@@ -25,8 +25,8 @@ _.ExpansionFeatures =
 								477,		-- Scholomance
 								478,		-- Scholomance
 								479,		-- Scholomance
-								634,		-- Stormheim
-								680,		-- Suramar
+								STORMHEIM,
+								SURAMAR,
 								431, 432,	-- Scarlet Halls
 								KARAZHAN, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366,	-- Karazhan
 							},
@@ -41,7 +41,7 @@ _.ExpansionFeatures =
 									["name"] = "|cFFFFFFFFVolume I|r | The Violet Citadel in new Dalaran.",
 									["description"] = "Khadgar is located in the Violet Citadel in new Dalaran. On the left side, there is an NPC named Archivist Elysiana. Volume 1 is on the right-hand bookshelf behind her.\n\nWorld Spawn - might be on cooldown!",
 									["provider"] = { "n", 113873 },	-- Archivist Elysiana <Curator>
-									["coord"] = { 30.6, 50.8, 627 },
+									["coord"] = { 30.6, 50.8, LEGION_DALARAN },
 								}),
 								q(44340, {	-- Volume II
 									["name"] = "|cFFFFFFFFVolume II|r | Behind Juvess the Duskwhisperer in the Class Order Hall.",
@@ -86,13 +86,13 @@ _.ExpansionFeatures =
 									["name"] = "|cFFFFFFFFVolume VIII|r | A rare in the cave southwest of Halls of Valor in Stormheim (Inquisitor Ernstenbok).",
 									["description"] = "You must kill him after you have at least one of the books in your inventory and he will drop the book.\n\nIf several kill the mob, only one Priest is able to loot the book!",
 									["provider"] = { "n", 90139 },	-- Inquisitor Ernstenbok
-									["coord"] = { 63.6, 74.4, 634 },
+									["coord"] = { 63.6, 74.4, STORMHEIM },
 								}),
 								q(44347, {	-- Volume IX
 									["name"] = "|cFFFFFFFFVolume IX|r | Artificer Lothaire in Moon Guard Stronghold, Suramar.",
 									["description"] = "You must kill him after you have at least one of the books in your inventory and he will drop the book.\n\nIf several kill the mob, only one Priest is able to loot the book!",
 									["provider"] = { "n", 106351 },	-- Artificer Lothaire
-									["coord"] = { 33.8, 15.0, 680 },
+									["coord"] = { 33.8, 15.0, SURAMAR },
 								}),
 								q(44348, {	-- Volume X
 									["name"] = "|cFFFFFFFFVolume X|r | Black Rook Hold in corner of room with ghosts and bookshelves.",
@@ -100,7 +100,7 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 98542 },	-- Amalgam of Souls
 									["coords"] = {
 										{ 58.6, 75.8, 751 },	-- item in instance
-										{ 38.4, 50.8, 641 },	-- Black Rook Hold entrance
+										{ 38.4, 50.8, VALSHARAH },	-- Black Rook Hold entrance
 									},
 								}),
 								q(44349, {	-- Volume XI
@@ -116,7 +116,7 @@ _.ExpansionFeatures =
 									["name"] = "|cFFFFFFFFVolume XII|r | Chief Bitterbrine on the Queen's Reprisal in Azsuna.",
 									["description"] = "Fly to Shackle's Den and head east.\n\nIf several kill the mob, only one Priest is able to loot the book!",
 									["provider"] = { "n", 106990 },	-- Chief Bitterbrine
-									["coord"] = { 65.6, 56.8, 630 },
+									["coord"] = { 65.6, 56.8, AZSUNA },
 								}),
 								i(139567, {	-- Writings of the End
 									["description"] = "Once you have obtained all 12 volumes, return to Archivist Inkforge in the class order hall and give them to him and he will give you this item. Turn on \"Show Incomplete Quests\" to track your progress.",
@@ -143,7 +143,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41630 },	-- The Nexus Vault
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 105081 },	-- Archmage Kalec
-						["coord"] = { 28.6, 49.9, 627 },	-- Dalaran
+						["coord"] = { 28.6, 49.9, LEGION_DALARAN },
 					}),
 					q(43420, {	-- A Hero's Weapon
 						-- TBD: fill in other fields
@@ -158,9 +158,9 @@ _.ExpansionFeatures =
 					q(41626, {	-- A New Threat
 						["sourceQuests"] = { 41625 },	-- The Light's Wrath
 						["classes"] = { PRIEST },
-						["coord"] = { 28.7, 49.9, 627 },	-- Dalaran
+						["coord"] = { 28.7, 49.9, LEGION_DALARAN },
 						["provider"] = { "n", 105081 },	-- Archmage Kalec
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(43935, {	-- A Second Legend
 						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
@@ -194,8 +194,8 @@ _.ExpansionFeatures =
 					q(43375, {	-- An Ample Supply
 						["sourceQuests"] = { 43374 },	-- Murloc Mind Control (must pick up for this quest to be available)
 						["classes"] = { PRIEST },
-						["coord"] = { 58.5, 37.2, 630 },
-						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 58.5, 37.2, AZSUNA },
+						["maps"] = { AZSUNA },
 						["provider"] = { "n", 110686 },	-- Zabra Hexx
 					}),
 					n(46028, {	-- An Urgent Warning
@@ -291,8 +291,8 @@ _.ExpansionFeatures =
 					q(42137, {	-- Champion: Yalia Sagewhisper
 						["sourceQuests"] = { 43376 },	-- Problem Salver
 						["classes"] = { PRIEST },
-						["coord"] = { 47.1, 43.9, 630 },
-						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 47.1, 43.9, AZSUNA },
+						["maps"] = { AZSUNA },
 						["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
 						["g"] = {
 							follower(871),	-- Yalia Sagewhisper
@@ -301,8 +301,8 @@ _.ExpansionFeatures =
 					q(42138, {	-- Champion: Zabra Hexx
 						["sourceQuests"] = { 43376 },	-- Problem Salver
 						["classes"] = { PRIEST },
-						["coord"] = { 47.1, 43.9, 630 },
-						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 47.1, 43.9, AZSUNA },
+						["maps"] = { AZSUNA },
 						["provider"] = { "n", 110686 },	-- Zabra Hexx
 						["g"] = {
 							follower(870),	-- Zabra Hexx
@@ -346,8 +346,8 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
-						["coord"] = { 47.1, 43.9, 630 },
-						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 47.1, 43.9, AZSUNA },
+						["maps"] = { AZSUNA },
 					}),
 					q(41628, {	-- Eyes of the Dragon
 						["sourceQuests"] = { 41626 },	-- A Forgotten Enemy
@@ -394,7 +394,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 105602 },	-- Vindicator Boros
-						["coord"] = { 37.7, 36.7, 627 },	-- Dalaran
+						["coord"] = { 37.7, 36.7, LEGION_DALARAN },
 					}),
 					q(43385, {	-- Infiltrating Our Enemies
 						["sourceQuests"] = { 43380 },	-- Champion: Sol
@@ -435,8 +435,8 @@ _.ExpansionFeatures =
 					q(43374, {	-- Murloc Mind Control
 						["sourceQuests"] = { 43372 },	-- The Best and Brightest
 						["classes"] = { PRIEST },
-						["coord"] = { 58.5, 37.2, 630 },
-						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 58.5, 37.2, AZSUNA },
+						["maps"] = { AZSUNA },
 						["provider"] = { "n", 110686 },	-- Zabra Hexx
 					}),
 					q(43386, {	-- Onslaught Envoy
@@ -448,7 +448,7 @@ _.ExpansionFeatures =
 					q(41967, {	-- Out of the Darkness
 						["sourceQuests"] = { 41966 },	-- House Call
 						["classes"] = { PRIEST },
-						["coord"] = { 37.5, 35.5, 627 },	-- Dalaran
+						["coord"] = { 37.5, 35.5, LEGION_DALARAN },
 						["provider"] = { "n", 105603 },	-- Defender Barrem
 					}),
 					q(44251, {	-- Power Word: Armor
@@ -475,8 +475,8 @@ _.ExpansionFeatures =
 							43374,	-- Murloc Mind Control
 						},
 						["classes"] = { PRIEST },
-						["coord"] = { 58.5, 37.2, 630 },
-						["maps"] = { 630 },	-- Azsuna
+						["coord"] = { 58.5, 37.2, AZSUNA },
+						["maps"] = { AZSUNA },
 						["provider"] = { "n", 112487 },	-- Yalia Sagewhisper
 					}),
 					q(44100, {	-- Proper Introductions
@@ -505,7 +505,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41993 },	-- Salvation From On High
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 106011 },	-- Jace  Darkweaver
-						["coord"] = { 33.5, 33.1, 646 },	-- Broken Shore
+						["coord"] = { 33.5, 33.1, BROKEN_SHORE },
 					}),
 					q(43270, {	-- Rise, Champions
 						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
@@ -534,8 +534,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41967 },	-- Out of the Darkness
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 105684 },	-- Alora
-						["coord"] = { 34.0, 33.9, 646 },	-- Broken Shore
-						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 34.0, 33.9, BROKEN_SHORE },
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(45344, {	-- Sampling the Source
 						-- TBD: fill in other fields
@@ -595,7 +595,7 @@ _.ExpansionFeatures =
 					q(40938, {	-- The Light and the Void
 						["sourceQuests"] = { 40710 },	-- Blade in Twilight
 						["classes"] = { PRIEST },
-						["coord"] = { 46.6, 20.9, 627 },	-- Dalaran
+						["coord"] = { 46.6, 20.9, LEGION_DALARAN },
 						["provider"] = { "n", 101313 },	-- Prophet Velen
 					}),
 					q(41625, {	-- The Light's Wrath
@@ -620,7 +620,7 @@ _.ExpansionFeatures =
 					q(45788, {	-- The Speaker Awaits
 						["sourceQuests"] = { 46246 },	-- Strike Them Down
 						["classes"] = { PRIEST },
-						["maps"] = { 646 },	-- Broken Shore
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(45789, {	-- The Sunken Vault
 						["classes"] = { PRIEST },

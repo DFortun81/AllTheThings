@@ -468,7 +468,7 @@ _.Zones =
 					}),
 					q(55232, {	-- Mevris' Menace
 						["provider"] = { "n", 151285 },	-- Mevris Ghostdancer
-						["coord"] = { 53.6, 54.4, 641 },
+						["coord"] = { 53.6, 54.4, VALSHARAH },
 						["sourceQuest"] = 55231,	-- The Other Ghostdancer
 						["requireSkill"] = LEATHERWORKING,
 						["races"] = ALLIANCE_ONLY,
@@ -721,14 +721,14 @@ _.Zones =
 					}),
 					q(53866, {	-- If The Shoe Fits...
 						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-						["coord"] = { 63.8, 68.8, 680 },
+						["coord"] = { 63.8, 68.8, SURAMAR },
 						["sourceQuest"] = 53858,	-- Step Into Her Shoes
 						["requireSkill"] = TAILORING,
 						["lvl"] = 120,
 					}),
 					q(55214, {	-- Seam Stress
 						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-						["coord"] = { 64.2, 69.5, 680 },
+						["coord"] = { 64.2, 69.5, SURAMAR },
 						["sourceQuest"] = 53866,	-- If The Shoe Fits...
 						["requireSkill"] = TAILORING,
 						["lvl"] = 120,

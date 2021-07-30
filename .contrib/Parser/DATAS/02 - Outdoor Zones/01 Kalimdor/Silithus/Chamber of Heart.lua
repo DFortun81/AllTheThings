@@ -170,9 +170,9 @@ _.Zones =
 						}),
 						q(55400, {	-- Take My Hand
 							["provider"] = { "n", 151641 },	-- Spiritwalker Ebonhorn
-							["coord"] = { 49.4, 68.3, 650 },
+							["coord"] = { 49.4, 68.3, HIGHMOUNTAIN },
 							["sourceQuest"] = 55374,	-- A Disurbance Beneath the Earth
-							["maps"] = { 650 },	-- Highmountain
+							["maps"] = { HIGHMOUNTAIN },
 						}),
 						q(55407, {	-- Calming the Spine
 							["provider"] = { "n", 151695 },	-- Spiritwalker Ebonhorn
@@ -227,7 +227,7 @@ _.Zones =
 						}),
 						q(55392, {	-- Enter the Dreamway
 							["provider"] = { "n", 151682 },	-- Merithra of the Dream
-							["coord"] = { 51.6, 57.2, 641 },
+							["coord"] = { 51.6, 57.2, VALSHARAH },
 							["sourceQuest"] = 55390,	-- In Darkness, I Dream
 							["maps"] = { 1471 },	-- Emerald Dreamway
 						}),

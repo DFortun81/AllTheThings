@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(627, {	-- Dalaran
+	m(BROKEN_ISLES, {
+		m(LEGION_DALARAN, {
 			n(QUESTS, {
 				i(122293, {	-- Trans-Dimensional Bird Whistle
 					["description"] = "If you see this item listed and you know the toy, it is likely you need the Pepe appearance that spawns in this zone.",
@@ -81,8 +81,8 @@ _.Zones =
 				q(44720, {	-- A Call to Action
 					["lvl"] = 110,
 					["coords"] = {
-						{ 44.6, 64.1, 646 },	-- Broken Shore
-						{ 73.8, 41.6, 627 },	-- Dalaran
+						{ 44.6, 64.1, BROKEN_SHORE },
+						{ 73.8, 41.6, LEGION_DALARAN },
 					},
 					["providers"] = {
 						{ "n", 114946 },	-- Muninn
@@ -99,7 +99,7 @@ _.Zones =
 						WARRIOR,		-- Arms
 					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(45864, {	-- A Gift From the Six
 					["sourceQuests"] = { 46200 },	-- The Matter Resolved... For Now...
@@ -111,7 +111,7 @@ _.Zones =
 						DRUID
 					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(45862, {	-- A Gift From the Six
 					["sourceQuests"] = { 46340 },	-- The Gates Are Closed
@@ -123,7 +123,7 @@ _.Zones =
 						WARLOCK,	-- Demonology
 					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(45842, {	-- A Gift From the Six
 					["sourceQuests"] = { 45841 },	-- A Triumphant Report
@@ -134,7 +134,7 @@ _.Zones =
 						WARLOCK,	-- Destruction
 					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(45866, {	-- A Gift From the Six
 					["sourceQuests"] = { 45193 },	-- One Step Behind
@@ -146,7 +146,7 @@ _.Zones =
 						WARLOCK,	-- Affliction
 					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(45861, {	-- A Gift From the Six
 					["sourceQuests"] = { 45127 },	-- Fel-Crossed Lovers
@@ -160,7 +160,7 @@ _.Zones =
 					},
 					["sourceQuests"] = { 45843 },	-- Dark Omens
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(45863, {	-- A Gift From the Six
 					["sourceQuests"] = { 45843 },	-- Dark Omens
@@ -173,11 +173,11 @@ _.Zones =
 						WARRIOR,		-- Protection
 					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(38035, {	-- A Royal Summons
 					["provider"] = { "n", 96644 },	-- Sky Admiral Rogers
-					["coord"] = { 29.2, 47.2, 627 },
+					["coord"] = { 29.2, 47.2, LEGION_DALARAN },
 					["sourceQuests"] = {
 						39735,	-- Stormheim
 						44700,	-- Stormheim
@@ -186,7 +186,7 @@ _.Zones =
 				}),
 				q(50318, {	-- A Timely Summons from Northrend
 					["provider"] = { "n", 111246 },	-- Archmage Timear
-					["coord"] = { 63.8, 55.2, 627 },
+					["coord"] = { 63.8, 55.2, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(49472, {	-- A Titanic Effort
@@ -230,7 +230,7 @@ _.Zones =
 				q(46730, {	-- Armies of Legionfall
 					["sourceQuests"] = { 45727 },	-- Uniting the Isles
 					["provider"] = { "n", 120215 },	-- Archmage Khadgar
-					["coord"] = { 66.2, 42.6, 627 },
+					["coord"] = { 66.2, 42.6, LEGION_DALARAN },
 					["lvl"] = 110,
 				}),
 				q(44914, {	-- Arms: The Thieving Apprentice
@@ -243,7 +243,7 @@ _.Zones =
 						{ "n", 105081 },	-- Archmage Kalec
 						{ "n", 115467 },	-- Archmage Kalec
 					},
-					["coord"] = { 28.7, 49.9, 627 },
+					["coord"] = { 28.7, 49.9, LEGION_DALARAN },
 				}),
 				q(47051, {	-- Assassination: Fate of the Tideskorn
 					["sourceQuests"] = {
@@ -255,17 +255,17 @@ _.Zones =
 						{ "n", 90417 },	-- Archmage Khadgar
 						{ "n", 115464 },	-- Archmage Khadgar
 					},
-					["coord"] = { 28.5, 48.3, 627 },
+					["coord"] = { 28.5, 48.3, LEGION_DALARAN },
 				}),
 				q(46734, {	-- Assault on Broken Shore
 					["sourceQuests"] = { 46730 },	-- Armies of the Legionfall
 					["provider"] = { "n", 120215 },	-- Archmage Khadgar
-					["coord"] = { 69.4, 43.5, 627 },
+					["coord"] = { 69.4, 43.5, LEGION_DALARAN },
 					["maps"] = { 858 },	-- Assault on Broken Shore (scenario)
 					["lvl"] = 110,
 				}),
 				q(44400, {	-- Assault on Violet Hold: Purple Pain
-					["coord"] = { 66.3, 67.9, 627 },
+					["coord"] = { 66.3, 67.9, LEGION_DALARAN },
 					["provider"] = { "n", 113813 },	-- Lieutenant Sinclari
 					["g"] = {
 						i(141359),	-- Violet Guardian's Corona
@@ -277,7 +277,7 @@ _.Zones =
 				q(44782, {	-- Away From Prying Eyes
 					["sourceQuests"] = { 47000 },	-- The Council's Call
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-					["coord"] = { 28.8, 48.4, 627 },
+					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
 					["lvl"] = 110,
 				}),
 				q(47037, {	-- Balance: The Twisted Twin
@@ -310,7 +310,7 @@ _.Zones =
 						WARRIOR,		-- Fury
 					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(47018, {	-- Beast Mastery: Rumblings Near Feltotem
 					["sourceQuests"] = {
@@ -322,7 +322,7 @@ _.Zones =
 						{ "n", 90418 },		-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera (2 versions)
 					},
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(45415, {	-- Between Worlds
 					["sourceQuests"] = { 45414 },	-- Confirming Suspicions
@@ -335,7 +335,7 @@ _.Zones =
 						WARRIOR,		-- Protection
 					},
 					["provider"] = { "n", 117042 },	-- Prophet Velen
-					["coord"] = { 74.8, 45.6, 627 },
+					["coord"] = { 74.8, 45.6, LEGION_DALARAN },
 				}),
 				q(44760, {	-- Blood On Your Hands
 					["provider"] = { "n", 115264 },	-- Illnea Bloodthorn
@@ -351,7 +351,7 @@ _.Zones =
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["coord"] = { 28.5, 49.5, 627 },
+					["coord"] = { 28.5, 49.5, LEGION_DALARAN },
 				}),
 				q(47024, {	-- Brewmaster: Aid of the Illidari
 					["sourceQuests"] = {
@@ -363,7 +363,7 @@ _.Zones =
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["coord"] = { 28.5, 49.5, 627 },
+					["coord"] = { 28.5, 49.5, LEGION_DALARAN },
 				}),
 				q(48021, {	-- Chromie
 					["providers"] = {
@@ -382,7 +382,7 @@ _.Zones =
 						WARRIOR,		-- Protection
 					},
 					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
-					["coord"] = { 52.0, 19.6, 627 },
+					["coord"] = { 52.0, 19.6, LEGION_DALARAN },
 				}),
 				q(45239, {	-- Cubic Coalescing
 					["sourceQuests"] = { 45238 },	-- Return to Karazhan: Cubic Cynosure
@@ -416,7 +416,7 @@ _.Zones =
 					["qg"] = 116880,	-- Kor'vas Bloodthorn
 					["sourceQuest"] = 45415,	-- Between Worlds
 					["coords"] = {
-						{ 52.2, 19.6, 627 },
+						{ 52.2, 19.6, LEGION_DALARAN },
 						{ 85.2, 50.1, HELLFIRE_PENINSULA },
 					},
 					["maps"] = { HELLFIRE_PENINSULA },
@@ -439,7 +439,7 @@ _.Zones =
 						{ "n", 115464 },	-- Archmage Khadgar
 					},
 					["classes"] = { WARLOCK },
-					["coord"] = { 28.5, 48.4, 627 },
+					["coord"] = { 28.5, 48.4, LEGION_DALARAN },
 				}),
 				q(45560, {	-- Destruction: Rumblings Near Feltotem
 					["sourceQuests"] = {
@@ -448,7 +448,7 @@ _.Zones =
 					},
 					["classes"] = { WARLOCK },
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(47020, {	-- Discipline: Rumblings Near Feltotem
 					["sourceQuests"] = {
@@ -460,10 +460,10 @@ _.Zones =
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(41220, {	-- Down to Azsuna
-					["coord"] = { 72.0, 45.4, 627 },
+					["coord"] = { 72.0, 45.4, LEGION_DALARAN },
 					["provider"] = { "n", 86563 },	-- Archmage Khadgar
 					["sourceQuests"] = { 39718 },	-- Paradise Lost
 					["isBreadcrumb"] = true,
@@ -481,7 +481,7 @@ _.Zones =
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(47050, {	-- Enhancement: Fate of the Tideskorn
 					["sourceQuests"] = {
@@ -529,7 +529,7 @@ _.Zones =
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(47055, {	-- Fire: The Folly of Levia Laurence
 					["sourceQuests"] = {
@@ -545,7 +545,7 @@ _.Zones =
 				}),
 				q(41778, {	-- Firing Up the Forge
 					["provider"] = { "n", 90463 },	-- Archmage Karlain
-					["coord"] = { 42.7, 28.4, 627 },
+					["coord"] = { 42.7, 28.4, LEGION_DALARAN },
 					["lvl"] = 45,
 					["timeline"] = {
 						"removed 9.1",
@@ -600,7 +600,7 @@ _.Zones =
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(45413, {	-- Gathering Information
 					["sourceQuests"] = {
@@ -620,7 +620,7 @@ _.Zones =
 						WARRIOR,		-- Protection
 					},
 					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
-					["coord"] = { 52.0, 19.6, 627 },
+					["coord"] = { 52.0, 19.6, LEGION_DALARAN },
 				}),
 				q(46744, {	-- Greater Power for Greater Threats
 					["u"] = REMOVED_FROM_GAME,
@@ -664,7 +664,7 @@ _.Zones =
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(46078, {	-- Holy: The Bradensbrook Investigation
 					["sourceQuests"] = {
@@ -676,12 +676,12 @@ _.Zones =
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(44821, {	-- In Dire Need
 					["sourceQuests"] = { 44782 },	-- Away From Prying Eyes
 					["provider"] = { "n", 115465 },	-- Archmage Modera
-					["coord"] = { 22.5, 39.2, 627 },
+					["coord"] = { 22.5, 39.2, LEGION_DALARAN },
 				}),
 				q(44184, {	-- In the Blink of an Eye
 					["u"] = REMOVED_FROM_GAME,	-- Changed to make the Tranquil Mind item Bop to stop abusing of class trials
@@ -705,18 +705,18 @@ _.Zones =
 							SHAMAN,		-- Restoration
 						},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
 				}),
 				q(38907, {	-- Keepers of the Hammer
 					["sourceQuests"] = { 39733 },	-- The Lone Mountain
-					["coord"] = { 69.9, 43.8, 627 },
+					["coord"] = { 69.9, 43.8, LEGION_DALARAN },
 					["provider"] = { "n", 97666 },	-- Warbrave Oro
 				}),
 				q(39985, {	-- Khadgar's Discovery
 					["isBreadcrumb"] = true,	-- for "Magic Message"
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-					["coord"] = { 28.8, 48.4, 627 },
+					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
 					["lvl"] = 110,
 				}),
 				q(45905, {	-- Kruul's Gift
@@ -730,7 +730,7 @@ _.Zones =
 						WARRIOR,		-- Protection
 					},
 					["provider"] = { "n", 90431 },	-- Archmage Ansirem Runeweaver
-					["coord"] = { 28.5, 49.5, 627 },
+					["coord"] = { 28.5, 49.5, LEGION_DALARAN },
 					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
 				}),
 				q(39986, {	-- Magic Message
@@ -739,7 +739,7 @@ _.Zones =
 						44555,	-- Khadgar's Discovery
 					},
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-					["coord"] = { 28.8, 48.4, 627 },
+					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
 					["lvl"] = 110,
 				}),
 				q(47039, {	-- Marksmanship: The Twisted Twin
@@ -758,7 +758,7 @@ _.Zones =
 					["sourceQuests"] = { 41778 },	-- Firing Up the Forge
 					["repeatable"] = true,
 					["provider"] = { "n", 114719 },	-- Trader Caelen
-					["coord"] = { 42.3, 27.0, 627 },
+					["coord"] = { 42.3, 27.0, LEGION_DALARAN },
 					["lvl"] = 45,
 					["timeline"] = {
 						"removed 9.1",
@@ -792,7 +792,7 @@ _.Zones =
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(45909, {	-- Navarrogg's Gift
 					["sourceQuests"] = { 45627 },	-- Feltotem's Fall
@@ -803,7 +803,7 @@ _.Zones =
 						WARLOCK,	-- Destruction
 					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
 				}),
 				q(47058, {	-- Outlaw: The Folly of Levia Laurence
@@ -816,7 +816,7 @@ _.Zones =
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(44545, {	-- Pressing the Assault
 					["isBreadcrumb"] = true,
@@ -826,7 +826,7 @@ _.Zones =
 					["sourceQuests"] = { 41778 },	-- Firing Up the Forge
 					["repeatable"] = true,
 					["provider"] = { "n", 114719 },	-- Trader Caelen
-					["coord"] = { 42.3, 27.0, 627 },
+					["coord"] = { 42.3, 27.0, LEGION_DALARAN },
 					["lvl"] = 45,
 					["timeline"] = {
 						"removed 9.1",
@@ -842,7 +842,7 @@ _.Zones =
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["coord"] = { 28.5, 49.5, 627 },
+					["coord"] = { 28.5, 49.5, LEGION_DALARAN },
 				}),
 				q(45412, {	-- Protection: Aid of the Illidari (Warrior) -- this is still obtainable, confirmed in 8.3
 					["sourceQuests"] = {
@@ -854,7 +854,7 @@ _.Zones =
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["coord"] = { 28.5, 49.5, 627 },
+					["coord"] = { 28.5, 49.5, LEGION_DALARAN },
 				}),
 				q(45910, {	-- Raest's Gift
 					["sourceQuests"] = { 46127 },	-- Thwarting the Twins
@@ -872,7 +872,7 @@ _.Zones =
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(47003, {	-- Restoration: The Bradensbrook Investigation (Shaman version)
 					["sourceQuests"] = {
@@ -884,7 +884,7 @@ _.Zones =
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(47052, {	-- Retribution: Fate of the Tideskorn
 					["sourceQuests"] = {
@@ -904,47 +904,47 @@ _.Zones =
 				}),
 				q(47864, {	-- Sealing Fate: Additional Marks of Honor
 					["isWeekly"] = true,
-					["coord"] = { 57.2, 67.5, 627 },
+					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43894, {	-- Sealing Fate: Extraneous Order Resources
 					["isWeekly"] = true,
-					["coord"] = { 57.2, 67.5, 627 },
+					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43895, {	-- Sealing Fate: Gold
 					["isWeekly"] = true,
-					["coord"] = { 57.2, 67.5, 627 },
+					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43897, {	-- Sealing Fate: Immense Fortune of Gold
 					["isWeekly"] = true,
-					["coord"] = { 57.2, 67.5, 627 },
+					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(47851, {	-- Sealing Fate: Marks of Honor
 					["isWeekly"] = true,
-					["coord"] = { 57.2, 67.5, 627 },
+					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43892, {	-- Sealing Fate: Order Resources
 					["isWeekly"] = true,
-					["coord"] = { 57.2, 67.5, 627 },
+					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43896, {	-- Sealing Fate: Piles of Gold
 					["isWeekly"] = true,
-					["coord"] = { 57.2, 67.5, 627 },
+					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(47865, {	-- Sealing Fate: Piles of Marks of Honor
 					["isWeekly"] = true,
-					["coord"] = { 57.2, 67.5, 627 },
+					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43893, {	-- Sealing Fate: Stashed Order Resources
 					["isWeekly"] = true,
-					["coord"] = { 57.2, 67.5, 627 },
+					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(45187, {	-- Secrets in the Underbelly
@@ -984,7 +984,7 @@ _.Zones =
 						{ "n", 115467 },	-- Archmage Kalec
 						{ "n", 105081 },	-- Archmage Kalec
 					},
-					["coord"] = { 28.7, 49.9, 627 },
+					["coord"] = { 28.7, 49.9, LEGION_DALARAN },
 				}),
 				q(47047, {	-- Survival: The Thieving Apprentice
 					["sourceQuests"] = {
@@ -1035,13 +1035,13 @@ _.Zones =
 				q(48506, {	-- The Hand of Fate (A)
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-					["coord"] = { 28.8, 48.4, 627 },
+					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
 					["lvl"] = 110,
 				}),
 				q(48507, {	-- The Hand of Fate (H)
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-					["coord"] = { 28.8, 48.4, 627 },
+					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
 					["lvl"] = 110,
 				}),
 				q(47221, {	-- The Hand of Fate (A)
@@ -1061,7 +1061,7 @@ _.Zones =
 						WARRIOR,		-- Fury
 					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
 				}),
 				q(39733, {	-- The Lone Mountain -- granted by order hall scouting map
@@ -1081,7 +1081,7 @@ _.Zones =
 						44701,	-- Stormheim
 					},
 					["races"] = HORDE_ONLY,
-					["coord"] = { 29.4, 47.1, 627 },
+					["coord"] = { 29.4, 47.1, LEGION_DALARAN },
 					["provider"] = { "n", 96683 },	-- Nathanos Blightcaller
 				}),
 				q(45188, {	-- The Wisdom of the Council
@@ -1102,7 +1102,7 @@ _.Zones =
 				}),
 				q(43331, {	-- Time to Collect
 					["sourceQuests"] = { 42483 },	-- Put It All on Red
-					["coord"] = { 50.2, 23.0, 627 },
+					["coord"] = { 50.2, 23.0, LEGION_DALARAN },
 					["lvl"] = 110,
 					["provider"] = { "n", 110018 },	-- Gazrix Gearlock <Steamwheedle Cartel>
 					["g"] = {
@@ -1122,7 +1122,7 @@ _.Zones =
 				}),
 				q(50432, {	-- Titanic Innovation
 					["provider"] = { "n", 106655 },	-- Arcanomancer Vridiel
-					["coord"] = { 44.9, 28.8, 627 },
+					["coord"] = { 44.9, 28.8, LEGION_DALARAN },
 					["lvl"] = 110,
 				}),
 				q(46810, {	-- To the Forge It Goes...
@@ -1135,12 +1135,12 @@ _.Zones =
 				}),
 				q(39987, {	-- Trail of Echoes
 					["sourceQuests"] = { 39986 },	-- Magic Message
-					["coord"] = { 28.4, 48.3, 627 },
+					["coord"] = { 28.4, 48.3, LEGION_DALARAN },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 				}),
 				q(39861, {	-- Tying Up Loose Ends
 					["sourceQuests"] = { 39731 },	-- The Tranquil Forest
-					["coord"] = { 70.1, 43.7, 627 },
+					["coord"] = { 70.1, 43.7, LEGION_DALARAN },
 					["provider"] = { "n", 91172 },	-- Archmage Khadgar
 					["isBreadcrumb"] = true,
 				}),
@@ -1154,7 +1154,7 @@ _.Zones =
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(43341, {	-- Uniting the Isles
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
@@ -1165,7 +1165,7 @@ _.Zones =
 					},
 				}),
 				q(45727, {	-- Uniting the Isles
-					["coord"] = { 28.5, 48.3, 627 },
+					["coord"] = { 28.5, 48.3, LEGION_DALARAN },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["g"] = {
 						i(141605, {	-- Flight Master Whistle
@@ -1191,7 +1191,7 @@ _.Zones =
 						{ "n", 90431 },		-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["coord"] = { 28.5, 49.5, 627 },
+					["coord"] = { 28.5, 49.5, LEGION_DALARAN },
 					["classes"] = { DEMONHUNTER },
 					["lvl"] = 110,
 				}),
@@ -1210,7 +1210,7 @@ _.Zones =
 				q(47330, {	-- Whispers of a Frightened World
 				--	unsure if there are prerequisites for this quest.
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-					["coord"] = { 28.8, 48.4, 627 },
+					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
 					["lvl"] = 110,
 				}),
 				q(46206, {	-- Whispers of a Frightened World
@@ -1226,7 +1226,7 @@ _.Zones =
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-					["coord"] = { 28.5, 48.9, 627 },
+					["coord"] = { 28.5, 48.9, LEGION_DALARAN },
 				}),
 				q(45908, {	-- Xylem's Gift
 					["provider"] = { "n", 105081 },	-- Archmage Kalec

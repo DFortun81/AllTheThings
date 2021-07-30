@@ -78,15 +78,15 @@ _.ExpansionFeatures =
 					q(40643, {	-- A Summons From Moonglade
 						["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
 						["provider"] = { "n", 101061 },  -- Archdruid Hamuul Runetotem
-						["coord"] = { 57.8, 45.8, 627 },
+						["coord"] = { 57.8, 45.8, LEGION_DALARAN },
 						["classes"] = { DRUID },
 					}),
 					q(42439, {	-- Aid for the Ashen
 						["sourceQuests"] = { 42428 },	-- The Shrine of Ashamane
 						["provider"] = { "n", 107392 },	-- Delandros Shimmermoon
 						["classes"] = { DRUID },
-						["coord"] = { 70.4, 46.7, 641 },
-						["maps"] = { 641 },	-- Val'sharah
+						["coord"] = { 70.4, 46.7, VALSHARAH },
+						["maps"] = { VALSHARAH },
 					}),
 					q(46026, {	-- An Urgent Warning
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
@@ -382,9 +382,9 @@ _.ExpansionFeatures =
 						["classes"] = { DRUID },
 						["lvl"] = 103,
 						["provider"] = { "n", 105903 },	-- Broll Bearmantle
-						["coord"] = { 57.2, 71.3, 641 },
+						["coord"] = { 57.2, 71.3, VALSHARAH },
 						["sourceQuests"] = { 42033 },	-- Malorne's Refuge
-						["maps"] = { 641 },	-- Val'sharah
+						["maps"] = { VALSHARAH },
 					}),
 					q(45425, {	-- Grovebound
 						["classes"] = { DRUID },
@@ -393,7 +393,7 @@ _.ExpansionFeatures =
 							{ "n", 120084 },	-- Druid of the Talon
 						},
 						["sourceQuests"] = { 46677 },	-- Prick of a Thistle
-						["maps"] = { 646 },
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(42516, {	-- Growing Power
 						["sourceQuests"] = { 40653 },	-- Making Trails
@@ -417,9 +417,9 @@ _.ExpansionFeatures =
 						["classes"] = { DRUID },
 						["lvl"] = 103,
 						["provider"] = { "n", 106883 },	-- Sylendra Gladesong
-						["coord"] = { 59.8, 75.2, 641 },
+						["coord"] = { 59.8, 75.2, VALSHARAH },
 						["sourceQuests"] = { 42035 },	-- Tracking the Enemy
-						["maps"] = { 641 },	-- Val'sharah
+						["maps"] = { VALSHARAH },
 						["g"] = {
 							ach(10461, crit(3)),	-- Fighting with Style: Classic / Complete the first order campaign effort.
 						},
@@ -428,7 +428,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41449 },	-- Join the Dreamer
 						["provider"] = { "n", 104349 },	-- Naralex
 						["classes"] = { DRUID },
-						["coord"] = { 39.6, 18.2, 641 },	-- Val'sharah (technically Dreamgrove, but inside the barrow den the mapID changes)
+						["coord"] = { 39.6, 18.2, VALSHARAH },	-- technically Dreamgrove, but inside the barrow den the mapID changes
 						["g"] = {
 							i(135582),	-- Corrupted G'Hanir, the Mother Tree
 						},
@@ -523,9 +523,9 @@ _.ExpansionFeatures =
 							{ "n", 120070 },	-- Thisalee Crow
 							{ "n", 120084 },	-- Druid of the Talon
 						},
-						["coord"] = { 43.5, 58.3, 646 },
+						["coord"] = { 43.5, 58.3, BROKEN_SHORE },
 						["sourceQuests"] = { 46674 },	-- The Preservation of Nature
-						["maps"] = { 646 },
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(41422, {	-- Necessary Preparations
 						["sourceQuests"] = { 40649 },	-- Meet with Mylune
@@ -558,13 +558,13 @@ _.ExpansionFeatures =
 							46676,	-- Nature's Touch
 							46675,	-- To Track a Demon
 						},
-						["maps"] = { 646 },
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(41690, {	-- Reconvene
 						["sourceQuests"] = { 41436 },	-- In Deep Slumber
 						["provider"] = { "n", 104349 },	-- Naralex
 						["classes"] = { DRUID },
-						["coord"] = { 39.6, 18.2, 641 },	-- Val'sharah (technically Dreamgrove, but in the barrow den the mapID changes)
+						["coord"] = { 39.6, 18.2, VALSHARAH },	-- technically Dreamgrove, but in the barrow den the mapID changes
 						["cost"] = { { "i", 135582, 1 } },	-- Corrupted G'Hanir, the Mother Tree
 					}),
 					q(42585, {	-- Recruiting the Troops
@@ -589,8 +589,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42428 },	-- The Shrine of Ashamane
 						["provider"] = { "n", 107392 },	-- Delandros Shimmermoon
 						["classes"] = { DRUID },
-						["coord"] = { 70.4, 46.7, 641 },
-						["maps"] = { 641 },	-- Val'sharah
+						["coord"] = { 70.4, 46.7, VALSHARAH },
+						["maps"] = { VALSHARAH },
 					}),
 					q(42584, {	-- Sister Lilith
 						["sourceQuests"] = { 42583 },	-- Rise, Champions
@@ -694,8 +694,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42440 },	-- The Shrine in Peril
 						["provider"] = { "n", 107392 },	-- Delandros Shimmermoon
 						["classes"] = { DRUID },
-						["coord"] = { 73.8, 38.4, 641 },
-						["maps"] = { 641 },	-- Val'sharah
+						["coord"] = { 73.8, 38.4, VALSHARAH },
+						["maps"] = { VALSHARAH },
 						["g"] = {
 							i(128860, {	-- Fangs of Ashamane
 								artifact(426, {	-- Standard Troll
@@ -783,8 +783,8 @@ _.ExpansionFeatures =
 						},
 						["provider"] = { "n", 107392 },	-- Delandros Shimmermoon
 						["classes"] = { DRUID },
-						["coord"] = { 73.2, 42.6, 641 },
-						["maps"] = { 641 },	-- Val'sharah
+						["coord"] = { 73.2, 42.6, VALSHARAH },
+						["maps"] = { VALSHARAH },
 					}),
 					q(41792, {	-- The Third Trial of Ursol
 						["sourceQuests"] = { 41791 },	-- The Second Trial of Ursol
@@ -837,17 +837,17 @@ _.ExpansionFeatures =
 							{ "n", 120070 },	-- Thisalee Crow
 							{ "n", 120084 },	-- Druid of the Talon
 						},
-						["coord"] = { 43.5, 58.3, 646 },
+						["coord"] = { 43.5, 58.3, BROKEN_SHORE },
 						["sourceQuests"] = { 46674 },	-- The Preservation of Nature
-						["maps"] = { 646 },	-- Broken Shore
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(42035, {	-- Tracking the Enemy
 						["classes"] = { DRUID },
 						["lvl"] = 103,
 						["provider"] = { "n", 105948 },	-- Sylendra Gladesong
-						["coord"] = { 56.8, 71.5, 641 },
+						["coord"] = { 56.8, 71.5, VALSHARAH },
 						["sourceQuests"] = { 42034 },	-- Grip of Nightmare
-						["maps"] = { 641 },	-- Val'sharah
+						["maps"] = { VALSHARAH },
 					}),
 					q(46940, {	-- Using Lost Knowledge
 						["u"] = REMOVED_FROM_GAME,
@@ -900,9 +900,9 @@ _.ExpansionFeatures =
 						q(46317, {	-- Talon's Call
 							["classes"] = { DRUID },
 							["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
-							["coord"] = { 43.6, 63.6, 646 },
+							["coord"] = { 43.6, 63.6, BROKEN_SHORE },
 							["sourceQuests"] = { 46246 },	-- Strike Them Down
-							["maps"] = { 646 },	-- Broken Shore
+							["maps"] = { BROKEN_SHORE },
 						}),
 						q(46318, {	-- Defense of Aviana
 							["provider"] = { "n", 106299 },	-- Thisalee Crow

@@ -68,7 +68,7 @@ profession(MINING, {
 					},
 					["requireSkill"] = MINING,
 					["provider"] = { "i", 124499 },	-- Ore-Bound Eye
-					["maps"] = { 680 },	-- Suramar
+					["maps"] = { SURAMAR },
 					["g"] = {
 						recipe(184493),	-- Felslate Deposit [Rank 2]
 					},
@@ -77,7 +77,7 @@ profession(MINING, {
 					["requireSkill"] = MINING,
 					["sourceQuest"] = 38800,	-- Rin'thissa's Eye
 					["provider"] = { "n", 93893 },	-- Rin'thissa
-					["maps"] = { 680 },	-- Suramar
+					["maps"] = { SURAMAR },
 					["g"] = {
 						recipe(184494),	-- Felslate Deposit [Rank 3]
 					},
@@ -99,7 +99,7 @@ profession(MINING, {
 						38796,	-- Felslate Seam Sample
 					},
 					["requireSkill"] = MINING,
-					["maps"] = { 680 },	-- Suramar
+					["maps"] = { SURAMAR },
 					["g"] = {
 						recipe(184497),	-- Felslate Seam [Rank 2]
 					},
@@ -108,7 +108,7 @@ profession(MINING, {
 					["requireSkill"] = MINING,
 					["sourceQuest"] = 38801,	-- Lyrelle's Right Arm
 					["provider"] = { "n", 93776 },	-- Lyrelle
-					["maps"] = { 680 },	-- Suramar
+					["maps"] = { SURAMAR },
 					["g"] = {
 						recipe(184498),	-- Felslate Seam [Rank 3]
 					},
@@ -130,7 +130,7 @@ profession(MINING, {
 						38797,	-- Living Felslate Sample
 					},
 					["requireSkill"] = MINING,
-					["maps"] = { 680 },	-- Suramar
+					["maps"] = { SURAMAR },
 					["g"] = {
 						recipe(184501),	-- Living Felslate [Rank 2]
 					},
@@ -139,7 +139,7 @@ profession(MINING, {
 					["requireSkill"] = MINING,
 					["sourceQuest"] = 38802,	-- Ondri's Still-Beating Heart
 					["provider"] = { "n", 93777 },	-- Ondri
-					["maps"] = { 680 },	-- Suramar
+					["maps"] = { SURAMAR },
 					["g"] = {
 						recipe(184502),	-- Living Felslate [Rank 3]
 					},
@@ -237,27 +237,27 @@ profession(MINING, {
 			["requireSkill"] = MINING,
 			["sourceQuest"] = 38901,	-- The Felsmiths
 			["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa <Blacksmithing Trainer>
-			["maps"] = { 680 },	-- Suramar
+			["maps"] = { SURAMAR },
 		}),
 		q(38799, {	-- Darkheart Thicket: Nal'ryssa's Sisters
 			["requireSkill"] = MINING,
 			["sourceQuest"] = 38798,	-- A Shred of Your Humanity
 			["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa <Blacksmithing Trainer>
-			["maps"] = { 680 },	-- Suramar
+			["maps"] = { SURAMAR },
 			["g"] = {
 				i(126947),	-- Nal'ryssa's Spare Mining Supplies
 			},
 		}),
 		q(39763, {	-- For Whom the Fel Tolls
 			["sourceQuest"] = 39790,	-- Infernal Brimstone Theory
-			["maps"] = { 627 },	-- Dalaran
+			["maps"] = { LEGION_DALARAN },
 			["provider"] = { "n", 97360 },	-- Matthew Rabis <Feral Warlock>
 		}),
 		q(39830, {	-- Hellfire Citadel: Hellfire and Brimstone
 			["requireSkill"] = MINING,
 			["sourceQuest"] = 39817,	-- The Brimstone's Secret
 			["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
-			["maps"] = { 627 },	-- Dalaran
+			["maps"] = { LEGION_DALARAN },
 			["g"] = {
 				recipe(191970),	-- Infernal Brimstone [Rank 3]
 			},
@@ -266,7 +266,7 @@ profession(MINING, {
 			["requireSkill"] = MINING,
 			["sourceQuest"] = 38806,	-- Infernal Brimstone Sample
 			["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
-			["maps"] = { 627 },	-- Dalaran
+			["maps"] = { LEGION_DALARAN },
 			["g"] = {
 				recipe(184505),	-- Infernal Brimstone [Rank 2]
 			},
@@ -275,13 +275,13 @@ profession(MINING, {
 			["requireSkill"] = MINING,
 			["sourceQuest"] = 38807,	-- Infernal Brimstone Analysis
 			["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
-			["maps"] = { 627 },	-- Dalaran
+			["maps"] = { LEGION_DALARAN },
 		}),
 		q(39817, {	-- The Brimstone's Secret
 			["requireSkill"] = MINING,
 			["sourceQuest"] = 39763,	-- For Whom the Fel Tolls
 			["provider"] = { "n", 97360 },	-- Matthew Rabis <Feral Warlock>
-			["maps"] = { 627 },	-- Dalaran
+			["maps"] = { LEGION_DALARAN },
 		}),
 		q(38901, {	-- The Felsmiths
 			["sourceQuests"] = {
@@ -292,7 +292,7 @@ profession(MINING, {
 			["requireSkill"] = MINING,
 			["description"] = "You must complete all of the Rank 1 Felslate mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
 			["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
-			["maps"] = { 627 },	-- Dalaran
+			["maps"] = { LEGION_DALARAN },
 		}),
 		q(38888, {	-- The Highmountain Tauren
 			["sourceQuests"] = {
@@ -303,17 +303,17 @@ profession(MINING, {
 			["requireSkill"] = MINING,
 			["description"] = "You must complete all of the Rank 1 Leystone mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
 			["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
-			["maps"] = { 627 },	-- Dalaran
+			["maps"] = { LEGION_DALARAN },
 		}),
 		q(38787, {	-- The Legend of Rethu Ironhorn
 			["sourceQuest"] = 38786,	-- Where Respect is Due
 			["provider"] = { "n", 93691 },	-- Ronos Ironhorn <Mining Trainer>
-			["maps"] = { 650 },	-- Highmountain
+			["maps"] = { HIGHMOUNTAIN },
 		}),
 		q(38786, {	-- Where Respect is Due
 			["sourceQuest"] = 38888,	-- The Highmountain Tauren
 			["provider"] = { "n", 93691 },	-- Ronos Ironhorn <Mining Trainer>
-			["maps"] = { 650 },	-- Highmountain
+			["maps"] = { HIGHMOUNTAIN },
 		}),
 	}),
 	n(-34,  {	-- World Quests

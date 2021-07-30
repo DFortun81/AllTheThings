@@ -4,7 +4,7 @@
 
 _.Instances = { tier(LEGION_TIER, {
 	inst(800, {	-- Court of Stars
-		["coord"] = { 51.0, 65.6, 680 },
+		["coord"] = { 51.0, 65.6, SURAMAR },
 		["maps"] = { 761, 762, 763 },
 		["lvl"] = 110,
 		["g"] = {

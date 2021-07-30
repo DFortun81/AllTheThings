@@ -12,9 +12,9 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 43512,	-- Ana-Mouz (WQ)
 				["isRaid"] = true,
-				["coord"] = { 31.0, 65.5, 680 },
+				["coord"] = { 31.0, 65.5, SURAMAR },
 				["maps"] = {	-- all Suramar maps
-					680,	-- Suramar
+					SURAMAR,
 					681,	-- The Arcway Vaults #1
 					682,	-- Felsoul Hold
 					683,	-- The Arcway Vaults #2
@@ -49,8 +49,8 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 47061,	-- Apocron (WQ)
 				["isRaid"] = true,
-				["coord"] = { 59.2, 62.6, 646 },
-				["maps"] = { 646 },	-- The Broken Shore
+				["coord"] = { 59.2, 62.6, BROKEN_SHORE },
+				["maps"] = { BROKEN_SHORE },
 				["cr"] = 121124,	-- Apocron
 				["g"] = {
 					crit(4, {	-- Apocron
@@ -70,8 +70,8 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 46947,	-- Brutallus (WQ)
 				["isRaid"] = true,
-				["coord"] = { 59.2, 28.4, 646 },
-				["maps"] = { 646 },	-- The Broken Shore
+				["coord"] = { 59.2, 28.4, BROKEN_SHORE },
+				["maps"] = { BROKEN_SHORE },
 				["cr"] = 117239,	-- Brutallus
 				["g"] = {
 					crit(1, {	-- Brutallus
@@ -92,8 +92,8 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 43193,	-- Calamitous Intent (WQ)
 				["isRaid"] = true,
-				["coord"] = { 37.7, 83.6, 630 },
-				["maps"] = { 630 },	-- Azsuna
+				["coord"] = { 37.7, 83.6, AZSUNA },
+				["maps"] = { AZSUNA },
 				["cr"] = 109331,	-- Calamir
 				["g"] = {
 					crit(9, {	-- Calamir
@@ -113,9 +113,9 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 43448,	-- The Frozen King (WQ)
 				["isRaid"] = true,
-				["coord"] = { 58.4, 72.6, 650 },
+				["coord"] = { 58.4, 72.6, HIGHMOUNTAIN },
 				["maps"] = {	-- all Highmountain maps
-					650,	-- Highmountain
+					HIGHMOUNTAIN,
 					651,	-- Bitestone Enclave
 					652,	-- Thunder Totem
 					653,	-- Cave of the Blood Trial
@@ -150,9 +150,9 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 43985,	-- A Dark Tide (WQ)
 				["isRaid"] = true,
-				["coord"] = { 49.2, 7.60, 650 },
+				["coord"] = { 49.2, 7.60, HIGHMOUNTAIN },
 				["maps"] = {	-- all Highmountain maps
-					650,	-- Highmountain
+					HIGHMOUNTAIN,
 					651,	-- Bitestone Enclave
 					652,	-- Thunder Totem
 					653,	-- Cave of the Blood Trial
@@ -189,9 +189,9 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 42819,	-- Pocket Wizard (WQ)
 				["isRaid"] = true,
-				["coord"] = { 24.6, 69.6, 641 },
+				["coord"] = { 24.6, 69.6, VALSHARAH },
 				["maps"] = {	-- all Val'sharah maps
-					641,	-- Val'sharah
+					VALSHARAH,
 					642,	-- Darkpens
 					643,	-- Sleeper's Barrow
 					644,	-- Sleeper's Barrow #2
@@ -222,9 +222,9 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 43192,	-- Terror of the Deep (WQ)
 				["isRaid"] = true,
-				["coord"] = { 43.0, 67.6, 630 },
+				["coord"] = { 43.0, 67.6, AZSUNA },
 				["maps"] = {	-- all Azsuna maps
-					630,	-- Azsuna
+					AZSUNA,
 					631,	-- Nar'thalas Academy
 					632,	-- Oceanus Cove
 					633,	-- Temple of a Thousand Lights
@@ -252,8 +252,8 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 46948,	-- Malificus (WQ)
 				["isRaid"] = true,
-				["coord"] = { 59.8, 27.8, 646 },
-				["maps"] = { 646 },	-- The Broken Shore
+				["coord"] = { 59.8, 27.8, BROKEN_SHORE },
+				["maps"] = { BROKEN_SHORE },
 				["cr"] = 117303,	-- Malificus
 				["g"] = {
 					crit(2, {	-- Malificus
@@ -277,7 +277,7 @@ _.Instances = { tier(LEGION_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 36.0, 66.4, 685 },
 				["maps"] = {	-- all Suramar maps
-					680,	-- Suramar
+					SURAMAR,
 					681,	-- The Arcway Vaults #1
 					682,	-- Felsoul Hold
 					683,	-- The Arcway Vaults #2
@@ -312,9 +312,9 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 42270,	-- Scourge of the Skies (WQ)
 				["isRaid"] = true,
-				["coord"] = { 46.6, 30.0, 634 },
+				["coord"] = { 46.6, 30.0, STORMHEIM },
 				["maps"] = {	-- all Stormheim maps
-					634,	-- Stormheim
+					STORMHEIM,
 					635,	-- Shield's Rest
 					636,	-- Stormscale Cavern
 					637,	-- Thorignir Refuge
@@ -348,9 +348,9 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 42779,	-- The Sleeping Corruption (WQ)
 				["isRaid"] = true,
-				["coord"] = { 55.6, 43.2, 641 },
+				["coord"] = { 55.6, 43.2, VALSHARAH },
 				["maps"] = {	-- all Val'sharah maps
-					641,	-- Val'sharah
+					VALSHARAH,
 					642,	-- Darkpens
 					643,	-- Sleeper's Barrow
 					644,	-- Sleeper's Barrow #2
@@ -376,8 +376,8 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 46945,	-- Si'vash (WQ)
 				["isRaid"] = true,
-				["coord"] = { 89.6, 33.0, 646 },
-				["maps"] = { 646 },	-- The Broken Shore
+				["coord"] = { 89.6, 33.0, BROKEN_SHORE },
+				["maps"] = { BROKEN_SHORE },
 				["cr"] = 117470,	-- Si'vash
 				["g"] = {
 					crit(3, {	-- Si'vash
@@ -398,9 +398,9 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 42269,	-- The Soultakers (WQ)
 				["isRaid"] = true,
-				["coord"] = { 78.2, 8.60, 634 },
+				["coord"] = { 78.2, 8.60, STORMHEIM },
 				["maps"] = {	-- all Stormheim maps
-					634,	-- Stormheim
+					STORMHEIM,
 					635,	-- Shield's Rest
 					636,	-- Stormscale Cavern
 					637,	-- Thorignir Refuge
@@ -439,9 +439,9 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 44287,	-- DEADLY: Withered J'im (WQ)
 				["isRaid"] = true,
-				["coord"] = { 52.6, 80.8, 630 },
+				["coord"] = { 52.6, 80.8, AZSUNA },
 				["maps"] = {	-- all Azsuna maps
-					630,	-- Azsuna
+					AZSUNA,
 					631,	-- Nar'thalas Academy
 					632,	-- Oceanus Cove
 					633,	-- Temple of a Thousand Lights

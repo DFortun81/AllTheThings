@@ -18,11 +18,11 @@ _.ExpansionFeatures =
 					["classes"] = { MAGE },
 					["lvl"] = 110,
 					["maps"] = {
-						630,	-- Azsuna
-						650,	-- Highmountain
-						634,	-- Stormheim
-						680,	-- Suramar
-						641,	-- Val'Sharah
+						AZSUNA,
+						HIGHMOUNTAIN,
+						STORMHEIM,
+						SURAMAR,
+						VALSHARAH,
 						ELWYNN_FOREST,
 					},
 					["g"] = sharedData({
@@ -86,14 +86,14 @@ _.ExpansionFeatures =
 							["crs"] = { 111691 },	-- Extremely Volatile Stormheim Sheep
 							["sourceQuests"] = { 43799 },	-- Volatile Sheep
 							["coords"] = {
-								{ 60.0, 55.0, 634 },
-								{ 64.8, 44.8, 634 },
-								{ 70.8, 37.8, 634 },
-								{ 66.6, 53.8, 634 },
-								{ 72.2, 49.2, 634 },
-								{ 70.2, 56.8, 634 },
-								{ 76.8, 62.6, 634 },
-								{ 79.4, 67.8, 634 },
+								{ 60.0, 55.0, STORMHEIM },
+								{ 64.8, 44.8, STORMHEIM },
+								{ 70.8, 37.8, STORMHEIM },
+								{ 66.6, 53.8, STORMHEIM },
+								{ 72.2, 49.2, STORMHEIM },
+								{ 70.2, 56.8, STORMHEIM },
+								{ 76.8, 62.6, STORMHEIM },
+								{ 79.4, 67.8, STORMHEIM },
 							},
 						}),
 						q(43658, {	-- Hidden Appearance Unlocked
@@ -113,11 +113,11 @@ _.ExpansionFeatures =
 					["description"] = "A set of 5 portals is generated in the Class Hall; there is a small daily chance instead you will be phased to Frostfire Ridge where you can loot Everburning Crystal. You will be alerted to this chance by an emote when walking around on the stairs of your class hall.",
 					["classes"] = { MAGE },
 					["maps"] = {
-						630,	-- Azsuna
-						650,	-- Highmountain
-						634,	-- Stormheim
-						680,	-- Suramar
-						641,	-- Val'Sharah
+						AZSUNA,
+						HIGHMOUNTAIN,
+						STORMHEIM,
+						SURAMAR,
+						VALSHARAH,
 					},
 					["g"] = {
 						n(-159, {	-- Daily Event Roll
@@ -179,8 +179,8 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 41036,	-- The Dreadlord's Prize
 					}),
 					q(42006, {	-- A New Threat
-						["maps"] = { 627 },
-						["coord"] = { 28.6, 49.9, 627 },
+						["maps"] = { LEGION_DALARAN },
+						["coord"] = { 28.6, 49.9, LEGION_DALARAN },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 105081 },	-- Archmage Kalec
 						["sourceQuests"] = {
@@ -203,7 +203,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 42222,	-- Empyrean Society Report
 					}),
 					q(42520, {	-- A Terrible Loss
-						["maps"] = { 680 },
+						["maps"] = { SURAMAR },
 						["coord"] = { 41.7, 59.8, 683 },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 108085 },	-- Image of Kalec
@@ -269,8 +269,8 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 42703,	-- Technical Wizardry
 					}),
 					q(42423, {	-- Archmage Vargoth's Retreat
-						["maps"] = { 627 },
-						["coord"] = { 28.4, 49.4, 627 },
+						["maps"] = { LEGION_DALARAN },
+						["coord"] = { 28.4, 49.4, LEGION_DALARAN },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 90431 },	-- Archmage Ansirem Runeweaver
 						["sourceQuest"] = 42416,	-- The Council is in Session
@@ -285,8 +285,8 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(46000, {	-- Arming Dalaran
-						["maps"] = { 646 },	-- Broken Isles
-						["coord"] = { 49.2, 18.6, 646 },
+						["maps"] = { BROKEN_SHORE },
+						["coord"] = { 49.2, 18.6, BROKEN_SHORE },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 117331 },	-- Aethas Sunreaver
 						["sourceQuests"] = {
@@ -295,8 +295,8 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(45844, {	-- Avocation of Antonidas
-						["maps"] = { 646 },	-- Broken Shore
-						["coord"] = { 45.2, 61.8, 646 },
+						["maps"] = { BROKEN_SHORE },
+						["coord"] = { 45.2, 61.8, BROKEN_SHORE },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 117770 },	-- Invoker Threadgold
 						["description"] = "Must complete the |cFFFFD700Breaching the Tomb|r achievement on the Broken Shore.",
@@ -444,8 +444,8 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42222, {	-- Empyrean Society Report
-						["maps"] = { 630 },
-						["coord"] = { 66.0, 32.3, 630 },
+						["maps"] = { AZSUNA },
+						["coord"] = { 66.0, 32.3, AZSUNA },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 106530 },	-- Ravandwyr
 						["sourceQuest"] = 42171,	-- Final Exit
@@ -470,7 +470,7 @@ _.ExpansionFeatures =
 						["description"] = "Must research Arcane Divination for your order hall to see this quest.",
 					}),
 					q(41035, {	-- Felstorm's Plea
-						["maps"] = { 627 },
+						["maps"] = { LEGION_DALARAN },
 						["classes"] = { MAGE },
 					}),
 					q(45615, {	-- Finders Keepers
@@ -486,8 +486,8 @@ _.ExpansionFeatures =
 						["description"] = "Pursue your Frost artifact weapon.",
 					}),
 					q(42171, {	-- Final Exit
-						["maps"] = { 630 },
-						["coord"] = { 66.4, 33.5, 630 },
+						["maps"] = { AZSUNA },
+						["coord"] = { 66.4, 33.5, AZSUNA },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 106656 },	-- Esara Verrinde
 						["sourceQuests"] = {
@@ -496,8 +496,8 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42424, {	-- Following In His Footsteps
-						["maps"] = { 627 },
-						["coord"] = { 22.2, 55.1, 627 },
+						["maps"] = { LEGION_DALARAN },
+						["coord"] = { 22.2, 55.1, LEGION_DALARAN },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 107423 },	-- Archmage Kalec
 						["sourceQuest"] = 42423,	-- Archmage Vargoth's Retreat
@@ -517,7 +517,7 @@ _.ExpansionFeatures =
 					}),
 					q(42175, {	-- Growing Power
 						["lvl"] = 101,
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 112688 },	-- Meryl Felstorm
 						["isBreadcrumb"] = true,
@@ -533,15 +533,15 @@ _.ExpansionFeatures =
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(42493, {	-- Impending Dooooooom!
-						["maps"] = { 680 },
+						["maps"] = { SURAMAR },
 						["coord"] = { 64.2, 29.5, 683 },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 108085 },	-- Image of Kalec
 						["sourceQuest"] = 42521,	-- The Enemy of My Enemy...
 					}),
 					q(46345, {	-- Into the Hornet's Nest
-						["maps"] = { 680 },	-- Suramar
-						["coord"] = { 54.5, 39.1, 680 },
+						["maps"] = { SURAMAR },
+						["coord"] = { 54.5, 39.1, SURAMAR },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 121358 },	-- Arcanist Ryanna
 						["sourceQuests"] = {
@@ -589,8 +589,8 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(46339, {	-- Keymaster Orlis
-						["maps"] = { 680 },	-- Suramar
-						["coord"] = { 55.8, 41.9, 680 },
+						["maps"] = { SURAMAR },
+						["coord"] = { 55.8, 41.9, SURAMAR },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 121357 },	-- Arcanist Ryanna
 						["sourceQuest"] = 45207,	-- The Nightborne Apprentice
@@ -600,8 +600,8 @@ _.ExpansionFeatures =
 						["classes"] = { MAGE },
 					}),
 					q(45614, {	-- Lady Remor'za
-						["maps"] = { 646 },	-- Broken Isles
-						["coord"] = { 49.2, 18.6, 646 },
+						["maps"] = { BROKEN_SHORE },
+						["coord"] = { 49.2, 18.6, BROKEN_SHORE },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 117331 },	-- Aethas Sunreaver
 						["sourceQuest"] = 45251,	-- Redundancy
@@ -614,15 +614,15 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 41113,	-- The Only Way to Travel
 					}),
 					q(42494, {	-- More Than Just A Food Vendor
-						["maps"] = { 680 },
-						["coord"] = { 34.1, 83.4, 680 },
+						["maps"] = { SURAMAR },
+						["coord"] = { 34.1, 83.4, SURAMAR },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 111553 },	-- Kalecgos
 						["sourceQuest"] = 42508,	-- Not a Toothless Dragon
 					}),
 					q(42508, {	-- Not A Toothless Dragon
-						["maps"] = { 680 },
-						["coord"] = { 29.2, 87.6, 680 },
+						["maps"] = { SURAMAR },
+						["coord"] = { 29.2, 87.6, SURAMAR },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 42508 },	-- Kalecgos
 						["sourceQuest"] = 42451,	-- Kalec's Plan
@@ -657,8 +657,8 @@ _.ExpansionFeatures =
 						["description"] = "Must have chosen to research the Arcane Armaments.",
 					}),
 					q(42435, {	-- Prepare To Be Assimilated
-						["maps"] = { 630 },
-						["coord"] = { 64.8, 37.9, 630 },
+						["maps"] = { AZSUNA },
+						["coord"] = { 64.8, 37.9, AZSUNA },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 107532 },	-- Ravandwyr
 						["sourceQuest"] = 42434,	-- A Covert Operation
@@ -677,15 +677,15 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 46351,	-- Keep it Secret, Keep it Safe
 					}),
 					q(46705, {	-- Retaliation
-						["maps"] = { 680 },	-- Suramar
-						["coord"] = { 55.8, 41.9, 680 },
+						["maps"] = { SURAMAR },
+						["coord"] = { 55.8, 41.9, SURAMAR },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 121357 },	-- Arcanist Ryanna
 						["sourceQuest"] = 45207,	-- The Nightborne Apprentice
 					}),
 					q(46290, {	-- Return of the Archmage
-						["maps"] = { 627 },	-- Dalaran
-						["coord"] = { 27.3, 51.5, 627 },
+						["maps"] = { LEGION_DALARAN },
+						["coord"] = { 27.3, 51.5, LEGION_DALARAN },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 118242 },	-- Aethas Sunreaver
 						["sourceQuest"] = 46000,	-- Arming Dalaran
@@ -711,15 +711,15 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 45615,	-- Finders Keepers
 					}),
 					q(45586, {	-- Shield Amplification
-						["maps"] = { 646 },	-- Broken Isles
-						["coord"] = { 49.2, 18.6, 646 },
+						["maps"] = { BROKEN_SHORE },
+						["coord"] = { 49.2, 18.6, BROKEN_SHORE },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 117331 },	-- Aethas Sunreaver
 						["sourceQuest"] = 45251,	-- Redundancy
 					}),
 					q(42149, {	-- Some Knowledge Shouldn't Be Shared
-						["maps"] = { 630 },
-						["coord"] = { 66.4, 33.5, 630 },
+						["maps"] = { AZSUNA },
+						["coord"] = { 66.4, 33.5, AZSUNA },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 106656 },	-- Esara Verrinde
 						["sourceQuest"] = 42166,	-- What Is Going On Here?
@@ -740,8 +740,8 @@ _.ExpansionFeatures =
 					}),
 					q(41114, {	-- The Champion's Return
 						["lvl"] = 98,
-						["maps"] = { 627 },	-- Dalaran
-						["coord"] = { 28.6, 49.9, 627 },
+						["maps"] = { LEGION_DALARAN },
+						["coord"] = { 28.6, 49.9, LEGION_DALARAN },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 105081 },	-- Archmage Kalec
 						["isBreadcrumb"] = true,
@@ -759,7 +759,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 42452,	-- Finding Ebonchill
 					}),
 					q(41036, {	-- The Dreadlord's Prize
-						["maps"] = { 627 },
+						["maps"] = { LEGION_DALARAN },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 102700 },	-- Meryl Felstorm
 						["sourceQuest"] = 41035,	-- Felstorm's Plea
@@ -768,8 +768,8 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42521, {	-- The Enemy of My Enemy...
-						["maps"] = { 680 },
-						["coord"] = { 34.1, 83.4, 680 },
+						["maps"] = { SURAMAR },
+						["coord"] = { 34.1, 83.4, SURAMAR },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 111553 },	-- Kalecgos
 						["sourceQuest"] = 42508,	-- Not a Toothless Dragon
@@ -817,8 +817,8 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42206, {	-- The Next Level Has Arrived
-						["maps"] = { 630 },
-						["coord"] = { 66.4, 33.5, 630 },
+						["maps"] = { AZSUNA },
+						["coord"] = { 66.4, 33.5, AZSUNA },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 106656 },	-- Esara Verrinde
 						["sourceQuest"] = 42166,	-- What Is Going On Here?
@@ -840,8 +840,8 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 46338,	-- A Creative Solution
 					}),
 					q(41113, {	-- The Only Way to Travel
-						["maps"] = { 627 },
-						["coord"] = { 48.5, 63.4, 627 },
+						["maps"] = { LEGION_DALARAN },
+						["coord"] = { 48.5, 63.4, LEGION_DALARAN },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["sourceQuest"] = 41112,	-- The Great Akazamzarak
@@ -901,8 +901,8 @@ _.ExpansionFeatures =
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(42166, {	-- What Is Going On Here?
-						["maps"] = { 630 },
-						["coord"] = { 64.3, 31.3, 630 },
+						["maps"] = { AZSUNA },
+						["coord"] = { 64.3, 31.3, AZSUNA },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 106530 },	-- Ravandwyr
 						["sourceQuest"] = 42435,	-- Prepare To Be Assimilated

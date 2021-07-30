@@ -198,8 +198,8 @@ local THE_WISH_REMOVER = {
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(627, {	-- Dalaran
+	m(BROKEN_ISLES, {
+		m(LEGION_DALARAN, {
 			n(-38,  {	-- Profession
 				prof(ALCHEMY, {
 					q(39329, {	-- A Dormant Burner
@@ -326,67 +326,67 @@ _.Zones =
 				prof(ARCHAEOLOGY, {
 					q(41189, {	-- A New Lead
 						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, 627 },
+						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41183, {	-- Academic Exploration
 						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, 627 },
+						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(40857, {	-- Bits and Pieces
 						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, 627 },
+						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41167, {	-- Fel Fragments
 						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, 627 },
+						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41158, {	-- Fragments of the Fjords
 						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, 627 },
+						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41177, {	-- Goblin Archaeology
 						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, 627 },
+						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41186, {	-- History of Highmountain
 						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, 627 },
+						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41164, {	-- One Step Closer
 						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, 627 },
+						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41161, {	-- Out of the Frying Pan
 						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, 627 },
+						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41171, {	-- The Reliquary Calls
 						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, 627 },
+						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41192, {	-- The Right Path
 						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, 627 },
+						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41180, {	-- Unspeakable Power
 						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, 627 },
+						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41174, {	-- Worth Its Weight
 						["isWeekly"] = true,
-						["coord"] = { 40.4, 24.0, 627 },
+						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 				}),
@@ -523,7 +523,7 @@ _.Zones =
 							40988,	-- Too Many Cooks
 							40989,	-- The Prodigal Sous Chef
 						},
-						["coord"] = { 69.8, 38.8, 627 },
+						["coord"] = { 69.8, 38.8, LEGION_DALARAN },
 						["provider"] = { "n", 101846 },	-- Nomi
 					}),
 					q(40991, {	-- Opening the Test Kitchen
@@ -684,7 +684,7 @@ _.Zones =
 					}),
 					q(40855, {	-- Our Man in Azsuna
 						["sourceQuests"] = { 40854 },	-- Endless Possibilities
-						["coord"] = { 38.6, 25.0, 627 },
+						["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 						["provider"] = { "n", 93520 },	-- Didi the Wrench
 					}),
 					q(40860, {	-- Resupplying the Line
@@ -828,7 +828,7 @@ _.Zones =
 					}),
 					q(40014, {	-- Spayed by the Spade
 						["sourceQuests"] = { 40013 },	-- Aethril Sample
-						["coord"] = { 42.9, 33.8, 627 },
+						["coord"] = { 42.9, 33.8, LEGION_DALARAN },
 						["provider"] = { "n", 92464 },	-- Kuhuine Tenderstride
 						["g"] = {
 							recipe(193292),	-- Aethril (Rank 1)
@@ -989,7 +989,7 @@ _.Zones =
 					}),
 					q(39959, {	-- The Plot Thickens
 						["provider"] = { "n", 92195 },	-- Professor Pallin
-						["coord"] = { 41.4, 37.2, 627 },
+						["coord"] = { 41.4, 37.2, LEGION_DALARAN },
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 					}),
@@ -1024,7 +1024,7 @@ _.Zones =
 				}),
 				prof(JEWELCRAFTING, {
 					q(40524,  {	-- A Familiar Ring to It
-						["coord"] = { 40.0, 35.3, 627 },
+						["coord"] = { 40.0, 35.3, LEGION_DALARAN },
 						["provider"] = { "n", 93527 },	-- Timothy Jones
 						["sourceQuest"] = 40523,	-- Facet-nating Friends
 					}),
@@ -1032,7 +1032,7 @@ _.Zones =
 						["provider"] = { "n", 93543 },	-- Sminx Glasseye
 					}),
 					q(40530,  {	-- An Eye for Detail
-						["coord"] = { 40.2, 34.6, 627 },
+						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["sourceQuests"] = { 40529 },	-- Truly Outrageous
 					}),
@@ -1043,11 +1043,11 @@ _.Zones =
 						},
 					}),
 					q(40540,  {	-- Come at Me, Brul
-						["coord"] = { 40.2, 34.6, 627 },
+						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 					}),
 					q(40523,  {	-- Facet-nating Friends
-						["coord"] = { 40.3, 34.7, 627 },
+						["coord"] = { 40.3, 34.7, LEGION_DALARAN },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["g"] = {
 							recipe(264546),	-- Legion Jewelcrafting
@@ -1069,14 +1069,14 @@ _.Zones =
 						["provider"] = { "o", 246250 },	-- Letter From Jabrul
 					}),
 					q(40538,  {	-- Lapidary Lessons
-						["coord"] = { 40.2, 34.6, 627 },
+						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["g"] = {
 							recipe(195854),	-- Versatile Maelstrom Sapphire
 						},
 					}),
 					q(40532,  {	-- Making the Cut (Deadly Deep Amber)
-						["coord"] = { 40.2, 34.6, 627 },
+						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["sourceQuest"] = 40531,	-- Swift Justice
 						["g"] = {
@@ -1084,7 +1084,7 @@ _.Zones =
 						},
 					}),
 					q(40534,  {	-- Making the Cut (Masterful Queen's Opal)
-						["coord"] = { 40.2, 34.6, 627 },
+						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["sourceQuest"] = 40531,	-- Swift Justice
 						["g"] = {
@@ -1092,7 +1092,7 @@ _.Zones =
 						},
 					}),
 					q(40533,  {	-- Making the Cut (Quick Azsunite)
-						["coord"] = { 40.2, 34.6, 627 },
+						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["sourceQuest"] = 40531,	-- Swift Justice
 						["g"] = {
@@ -1106,7 +1106,7 @@ _.Zones =
 						},
 					}),
 					q(40535,  {	-- Raising the Drogbar
-						["coord"] = { 40.2, 34.6, 627 },
+						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["sourceQuests"] = {
 							40532,	-- Making the Cut (Deadly Deep Amber)
@@ -1121,12 +1121,12 @@ _.Zones =
 						},
 					}),
 					q(40531,  {	-- Swift Vengeance
-						["coord"] = { 40.2, 34.6, 627 },
+						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["sourceQuests"] = { 40530 },	-- An Eye for Detail
 					}),
 					q(40529,  {	-- Truly Outrageous
-						["coord"] = { 40.2, 34.6, 627 },
+						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["sourceQuests"] = { 40523 },	-- Facet-nating Friends
 						["g"] = {
@@ -1335,12 +1335,12 @@ _.Zones =
 					q(40144, {	-- Glielle
 						["sourceQuests"] = { 40143 },	-- Unfinished Treatise on the Properties of Stormscale
 						["requireSkill"] = SKINNING,
-						["coord"] = { 35.9, 28.5, 627 },
+						["coord"] = { 35.9, 28.5, LEGION_DALARAN },
 						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
 					}),
 					q(40132, {	-- In One Piece
 						["sourceQuests"] = { 40131 },	-- Stonehide Leather Sample
-						["coord"] = { 35.9, 28.6, 627 },
+						["coord"] = { 35.9, 28.6, LEGION_DALARAN },
 						["provider"] = { "n", 93541 },	-- Kondal Huntersworn
 						["g"] = {
 							recipe(194161),	-- Stonehide Leather (Rank 1)
@@ -1357,7 +1357,7 @@ _.Zones =
 					q(40146, {	-- Seymour and Agnes
 						["sourceQuests"] = { 40143 },	-- Unfinished Treatise on the Properties of Stormscale
 						["requireSkill"] = SKINNING,
-						["coord"] = { 35.9, 28.5, 627 },
+						["coord"] = { 35.9, 28.5, LEGION_DALARAN },
 						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
 					}),
 					q(40131, {	-- Stonehide Leather Sample

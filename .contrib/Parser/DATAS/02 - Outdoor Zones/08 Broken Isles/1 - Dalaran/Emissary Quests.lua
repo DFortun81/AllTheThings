@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(627, {	-- Dalaran
+	m(BROKEN_ISLES, {
+		m(LEGION_DALARAN, {
 			n(-169, {	-- Emissary Quests
 				q(43179, {	-- The Kirin Tor of Dalaran
 					["repeatable"] = true,

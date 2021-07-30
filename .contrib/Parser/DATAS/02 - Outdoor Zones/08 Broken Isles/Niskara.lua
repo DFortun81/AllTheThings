@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
+	m(BROKEN_ISLES, {
 		m(714, { -- Niskara
 			["maps"] = {
 				714,	-- Priest Holy artifact weapon scenario (maybe paladin too?)

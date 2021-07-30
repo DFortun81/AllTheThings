@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(650, {	-- Highmountain
+	m(BROKEN_ISLES, {
+		m(HIGHMOUNTAIN, {
 			n(-34,  {	-- World Quests
 				n(QUESTS, {
 					q(43985, {	-- A Dark Tide (Flotsam)

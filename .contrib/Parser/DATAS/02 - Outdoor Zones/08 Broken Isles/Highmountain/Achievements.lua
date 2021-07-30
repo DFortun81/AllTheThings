@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(650, {	-- Highmountain
+	m(BROKEN_ISLES, {
+		m(HIGHMOUNTAIN, {
 			n(ACHIEVEMENTS, {
 				ach(10059, {	-- Ain't No Mountain High Enough
 					crit(1, {	-- The Rivermane Tribe
@@ -43,11 +43,11 @@ _.Zones =
 							["groups"] = {
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
-									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									["coord"] = { 47.6, 69.0, HIGHMOUNTAIN },	-- mapID needs confirmation
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
-									["coord"] = { 41.8, 35.8, 650 },
+									["coord"] = { 41.8, 35.8, HIGHMOUNTAIN },
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
@@ -61,11 +61,11 @@ _.Zones =
 							["groups"] = {
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
-									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									["coord"] = { 47.6, 69.0, HIGHMOUNTAIN },	-- mapID needs confirmation
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
-									["coord"] = { 41.8, 35.8, 650 },
+									["coord"] = { 41.8, 35.8, HIGHMOUNTAIN },
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
@@ -79,11 +79,11 @@ _.Zones =
 							["groups"] = {
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
-									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									["coord"] = { 47.6, 69.0, HIGHMOUNTAIN },	-- mapID needs confirmation
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
-									["coord"] = { 41.8, 35.8, 650 },
+									["coord"] = { 41.8, 35.8, HIGHMOUNTAIN },
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
@@ -97,11 +97,11 @@ _.Zones =
 							["groups"] = {
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
-									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									["coord"] = { 47.6, 69.0, HIGHMOUNTAIN },	-- mapID needs confirmation
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
-									["coord"] = { 41.8, 35.8, 650 },
+									["coord"] = { 41.8, 35.8, HIGHMOUNTAIN },
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
@@ -115,11 +115,11 @@ _.Zones =
 							["groups"] = {
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
-									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									["coord"] = { 47.6, 69.0, HIGHMOUNTAIN },	-- mapID needs confirmation
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
-									["coord"] = { 41.8, 35.8, 650 },
+									["coord"] = { 41.8, 35.8, HIGHMOUNTAIN },
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
@@ -133,11 +133,11 @@ _.Zones =
 							["groups"] = {
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
-									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									["coord"] = { 47.6, 69.0, HIGHMOUNTAIN },	-- mapID needs confirmation
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
-									["coord"] = { 41.8, 35.8, 650 },
+									["coord"] = { 41.8, 35.8, HIGHMOUNTAIN },
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
@@ -151,11 +151,11 @@ _.Zones =
 							["groups"] = {
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
-									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									["coord"] = { 47.6, 69.0, HIGHMOUNTAIN },	-- mapID needs confirmation
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
-									["coord"] = { 41.8, 35.8, 650 },
+									["coord"] = { 41.8, 35.8, HIGHMOUNTAIN },
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
@@ -169,11 +169,11 @@ _.Zones =
 							["groups"] = {
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
-									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									["coord"] = { 47.6, 69.0, HIGHMOUNTAIN },	-- mapID needs confirmation
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
-									["coord"] = { 41.8, 35.8, 650 },
+									["coord"] = { 41.8, 35.8, HIGHMOUNTAIN },
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
@@ -187,11 +187,11 @@ _.Zones =
 							["groups"] = {
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
-									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									["coord"] = { 47.6, 69.0, HIGHMOUNTAIN },	-- mapID needs confirmation
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
-									["coord"] = { 41.8, 35.8, 650 },
+									["coord"] = { 41.8, 35.8, HIGHMOUNTAIN },
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>
@@ -205,11 +205,11 @@ _.Zones =
 							["groups"] = {
 								crit(6, {	-- Bredda Tenderhide <Grand Master Pet Tamer>
 									["creatureID"] = 99077,	-- Bredda Tenderhide <Grand Master Pet Tamer>
-									["coord"] = { 47.6, 69.0, 650 },	-- mapID needs confirmation
+									["coord"] = { 47.6, 69.0, HIGHMOUNTAIN },	-- mapID needs confirmation
 								}),
 								crit(7, {	-- Grixis Tinypop
 									["creatureID"] = 99150,	-- Grixis Tinypop <Grand Master Pet Tamer>
-									["coord"] = { 41.8, 35.8, 650 },
+									["coord"] = { 41.8, 35.8, HIGHMOUNTAIN },
 								}),
 								crit(8, {	-- Odrogg
 									["creatureID"] = 104553,	-- Odrogg <Snail Fighting Champion>

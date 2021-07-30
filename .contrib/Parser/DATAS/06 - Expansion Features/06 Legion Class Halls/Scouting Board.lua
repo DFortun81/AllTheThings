@@ -173,7 +173,7 @@ _.ExpansionFeatures =
 								103732,	-- Tylos Darksight <Illidari Helmsman>
 							},
 							["sourceQuest"] = 44057,	-- A "Noble" Event
-							["coord"] = { 17.4, 31.4, 680 },	-- Suramar
+							["coord"] = { 17.4, 31.4, SURAMAR },
 							["g"] = {
 								i(137573),	-- Reins of the Llothien Prowler
 							},

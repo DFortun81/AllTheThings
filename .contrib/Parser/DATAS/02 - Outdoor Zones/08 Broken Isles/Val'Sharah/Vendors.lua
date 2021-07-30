@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(641, {	-- Val'sharah
+	m(BROKEN_ISLES, {
+		m(VALSHARAH, {
 			n(VENDORS, {
 				n(93974, {	-- Leyweaver Erenyi
-					["coord"] = { 70.4, 46.6, 641 },
+					["coord"] = { 70.4, 46.6, VALSHARAH },
 					["g"] = {
 						i(127022, {	-- Pattern: Imbued Silkweave Cinch (Rank 1)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
@@ -16,7 +16,7 @@ _.Zones =
 					},
 				}),
 				n(106901, {	-- Sylvia Hartshorn <Dreamweaver Emissary>
-					["coord"] = { 54.6, 73.2, 641 },
+					["coord"] = { 54.6, 73.2, VALSHARAH },
 					["g"] = {
 						i(23712, {	-- Ash'ana (PET!)
 							["cost"] = 5000000,	-- 500g

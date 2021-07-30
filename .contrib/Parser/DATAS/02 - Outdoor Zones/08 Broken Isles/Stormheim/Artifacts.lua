@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(634, {	-- Stormheim
+	m(BROKEN_ISLES, {
+		m(STORMHEIM, {
 			n(-10067, {	-- Artifacts
 				q(43560, {	-- Audience with the Windlord
 					["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>

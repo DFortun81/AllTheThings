@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(650, {	-- Highmountain
+	m(BROKEN_ISLES, {
+		m(HIGHMOUNTAIN, {
 			filter(101, {	-- Battle Pet
 				{	-- Alpine Chipmonk
 					["speciesID"] = 487,	-- Alpine Chipmonk

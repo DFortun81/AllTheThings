@@ -4,7 +4,7 @@
 
 _.Instances = { tier(LEGION_TIER, {
 	inst(900, {	-- Cathedral of Eternal Night
-		["coord"] = { 64.7, 16.6, 646 },
+		["coord"] = { 64.7, 16.6, BROKEN_SHORE },
 		["maps"] = { 845, 846, 847, 848, 849 },
 		["g"] = {
 			n(-34,	{	-- World Quests

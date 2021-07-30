@@ -6,7 +6,7 @@ _.WorldEvents =
 {
 	n(-543, {	-- Broken Isles: Legion Invasions
 		["achievementID"] = 11544,	-- Defender of the Broken Isles
-		["maps"] = { 641, 650, 634, 630 },
+		["maps"] = { VALSHARAH, HIGHMOUNTAIN, STORMHEIM, AZSUNA },
 		["groups"] = {
 			v(47063, {	-- Tracking Quest
 				["description"] = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
@@ -19,7 +19,7 @@ _.WorldEvents =
 				["isWorldQuest"] = true,
 				["repeatable"] = true,
 				["maps"] = {
-					619,	-- Stormheim Invasion Scenario
+					BROKEN_ISLES,	-- Stormheim Invasion Scenario
 					865,	-- Stormheim Invasion Scenario: Upper Ship Floor
 					866,	-- Stormheim Invasion Scenario: Lower Ship Floor
 				},

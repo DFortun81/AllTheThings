@@ -73,7 +73,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
 						["classes"] = { SHAMAN },
 						["provider"] = { "n", 91731 },	-- Thrall
-						["maps"] = { 627 },	-- Dalaran
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(42995, {	-- A Taste For Blood
 						["sourceQuests"] = { 42989 },	-- Ma'haat the Indomitable
@@ -153,7 +153,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 						["provider"] = { "n", 117715 },	-- Therazane
 						["sourceQuests"] = { 45763 },	-- Demonic Disruption
-						["maps"] = { 646 },	-- Broken Shore
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(44544, {	-- Call of the Earthen Ring
 						["classes"] = { SHAMAN },
@@ -165,7 +165,7 @@ _.ExpansionFeatures =
 						["classes"] = { SHAMAN },
 						["provider"] = { "n", 117888 },	-- Orono
 						["sourceQuests"] = { 46246 },	-- Strike Them Down
-						["maps"] = { 646 },	-- Broken Shore
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(41747, {	-- Champion: Avalanchion
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
@@ -259,7 +259,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 						["provider"] = { "n", 115492 },	-- Firelord Smolderon
 						["sourceQuests"] = { 45883 },	-- The Firelord's Offense
-						["maps"] = { 646 },	-- Broken Shore
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(45763, {	-- Demonic Disruption
 						["classes"] = { SHAMAN },
@@ -278,7 +278,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 						["provider"] = { "n", 117715 },	-- Therazane
 						["sourceQuests"] = { 45763 },	-- Demonic Disruption
-						["maps"] = { 646 },	-- Broken Shore
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(42986, {	-- Enemies of Air
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
@@ -332,7 +332,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 						["provider"] = { "n", 117715 },	-- Therazane
 						["sourceQuests"] = { 45763 },	-- Demonic Disruption
-						["maps"] = { 646 },	-- Broken Shore
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(46147, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
@@ -548,7 +548,7 @@ _.ExpansionFeatures =
 							45767,	-- Elemental Cores
 							45971,	-- Infernal Phenomena
 						},
-						["maps"] = { 646 },	-- Broken Shore
+						["maps"] = { BROKEN_SHORE },
 					}),
 					q(41775, {	-- The Great Stonemother
 						["sourceQuests"] = {

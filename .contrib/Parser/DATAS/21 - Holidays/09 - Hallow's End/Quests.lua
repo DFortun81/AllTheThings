@@ -167,7 +167,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(43259, {	-- Beware of the Crooked Tree
 				["provider"] = { "n", 109854 },	-- Duroc Ironjaw
 				["maps"] = { 625 },	-- Dalaran : Broken Shores
-				["coord"] = { 47.4, 40.6, 627 },	-- Dalaran : Broken Shores
+				["coord"] = { 47.4, 40.6, LEGION_DALARAN },
 				["isYearly"] = true,
 			}),
 			q(11392, {	-- Call the Headless Horseman
@@ -446,7 +446,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(43055, {	-- Candy Bucket — Dalaran : Broken Shores, Legerdemain Lounge, neutral
 				["isYearly"] = true,
-				["coord"] = { 48.1, 41.3, 627 },
+				["coord"] = { 48.1, 41.3, LEGION_DALARAN },
 				["maps"] = { 625 },	-- Dalaran : Broken Shores
 				["g"] = {
 					i(37586),	-- Handful of Treats
@@ -454,7 +454,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(43056, {	-- Candy Bucket — Dalaran : Broken Shores, Silver Enclave, Alliance
 				["isYearly"] = true,
-				["coord"] = { 41.8, 64.1, 627 },
+				["coord"] = { 41.8, 64.1, LEGION_DALARAN },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 626 },	-- Dalaran : Broken Shores
 				["g"] = {
@@ -463,7 +463,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(43057, {	-- Candy Bucket — Dalaran : Broken Shores, Sunreaver's Sanctuary, Horde
 				["isYearly"] = true,
-				["coord"] = { 66.7, 30.1, 627 },
+				["coord"] = { 66.7, 30.1, LEGION_DALARAN },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 625 },	-- Dalaran : Broken Shores
 				["g"] = {
@@ -2505,8 +2505,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 43259 },	-- Beware of the Crooked Tree
 				["provider"] = { "n", 109734 },	-- Hag of the Crooked Tree
 				["isDaily"] = true,
-				["coord"] = { 34.9, 56.0, 641 },	-- Val'sharah
-				["maps"] = { 641 },	-- Val'sharah
+				["coord"] = { 34.9, 56.0, VALSHARAH },
+				["maps"] = { VALSHARAH },
 				["g"] = {
 					i(139137, {	-- Hag's Belongings
 						i(139133),	-- Hat of the First Sister

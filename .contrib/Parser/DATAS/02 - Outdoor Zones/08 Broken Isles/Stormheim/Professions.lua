@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(634, {	-- Stormheim
+	m(BROKEN_ISLES, {
+		m(STORMHEIM, {
 			n(-38, {	-- Profession
 				prof(ARCHAEOLOGY, {
 					q(41157, {	-- Corrupted Studies
@@ -147,7 +147,7 @@ _.Zones =
 						["g"] = {
 							faction(2100, {	-- Corbyn
 								["creatureID"] = 120458,
-								["coord"] = { 90.6, 10.6, 634 },	-- Stormheim
+								["coord"] = { 90.6, 10.6, STORMHEIM },
 								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF90.6, 10.6|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
 								["requireSkill"] = FISHING,
 								["groups"] = {
@@ -208,7 +208,7 @@ _.Zones =
 					q(40052, {	-- Ancient Vrykul Mastered
 						["sourceQuests"] = { 39947 },	-- Not So Complex?
 						["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
-						["coord"] = { 69.2, 40.6, 634 },
+						["coord"] = { 69.2, 40.6, STORMHEIM },
 						["g"] = {
 							i(137728),	-- Technique: Scroll of Forgotten Knowledge
 						},
@@ -217,19 +217,19 @@ _.Zones =
 						["sourceQuests"] = { 39946 },	-- Right Tool for the Job
 						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
-						["coord"] = { 69.2, 40.6, 634 },
+						["coord"] = { 69.2, 40.6, STORMHEIM },
 					}),
 					q(39946, {	-- Right Tool for the Job
 						["sourceQuests"] = { 39945 },	-- Runes Within the Ruins
 						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
-						["coord"] = { 69.2, 40.6, 634 },
+						["coord"] = { 69.2, 40.6, STORMHEIM },
 					}),
 					q(39945, {	-- Runes Within the Ruins
 						["sourceQuests"] = { 39944 },	-- Mysterious Messages
 						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
-						["coord"] = { 69.2, 40.6, 634 },
+						["coord"] = { 69.2, 40.6, STORMHEIM },
 					}),
 				}),
 				prof(SKINNING, {
@@ -239,7 +239,7 @@ _.Zones =
 							40148,	-- Red-Eyed Revenge
 						},
 						["requireSkill"] = SKINNING,
-						["coord"] = { 45.7, 25.6, 634 },
+						["coord"] = { 45.7, 25.6, STORMHEIM },
 						["provider"] = { "n", 98721 },	-- Seymour
 						["groups"] = {
 							i(130102),	-- Mother's Skinning Knife (TOY!)
@@ -248,13 +248,13 @@ _.Zones =
 					q(40147, {	-- Mother's Prized Knife
 						["sourceQuests"] = { 40146 },	-- Seymour and Agnes
 						["requireSkill"] = SKINNING,
-						["coord"] = { 45.7, 25.6, 634 },
+						["coord"] = { 45.7, 25.6, STORMHEIM },
 						["provider"] = { "n", 98721 },	-- Seymour
 					}),
 					q(40148, {	-- Red-Eyed Revenge
 						["sourceQuests"] = { 40146 },	-- Seymour and Agnes
 						["requireSkill"] = SKINNING,
-						["coord"] = { 45.7, 25.6, 634 },
+						["coord"] = { 45.7, 25.6, STORMHEIM },
 						["provider"] = { "n", 98721 },	-- Seymour
 					}),
 					i(139894, {	-- Skinning Technique: Unbroken Claw

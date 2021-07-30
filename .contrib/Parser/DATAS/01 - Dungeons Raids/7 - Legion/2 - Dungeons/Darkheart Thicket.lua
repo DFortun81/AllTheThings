@@ -5,7 +5,7 @@
 _.Instances = { tier(LEGION_TIER, {
 	inst(762, {	-- Darkheart Thicket
 		["mapID"] = 733,
-		["coord"] = { 59.0, 31.3, 641 },
+		["coord"] = { 59.0, 31.3, VALSHARAH },
 		["lvl"] = 98,
 		["g"] = {
 			n(WORLD_QUESTS, {

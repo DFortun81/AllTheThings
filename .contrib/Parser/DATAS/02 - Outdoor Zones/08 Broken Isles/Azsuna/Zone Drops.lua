@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(630, {	-- Azsuna
+	m(BROKEN_ISLES, {
+		m(AZSUNA, {
 			n(ZONEDROPS, {	-- (Note: have to list crs separately for every item because some items (recipes) don't drop from every single mob in the zone)
 				i(137924, {	-- Recipe: Gravenscale Armbands (Rank 3)
 					["description"] = "Drops from any giant in Azsuna.",

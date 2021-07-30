@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(634, {	-- Stormheim
+	m(BROKEN_ISLES, {
+		m(STORMHEIM, {
 			n(ZONEDROPS, {
 				["groups"] = {
 					i(144309),	-- Formula: Enchant Neck - Mark of the Master (Rank 2)

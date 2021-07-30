@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(650, {	-- Highmountain
+	m(BROKEN_ISLES, {
+		m(HIGHMOUNTAIN, {
 			n(VENDORS, {
 				n(93975,  {	-- Leyweaver Yaphisteia
-					["coord"] = { 29.4, 26.2, 650 },
+					["coord"] = { 29.4, 26.2, HIGHMOUNTAIN },
 					["g"] = {
 						i(127027, {	-- Pattern: Imbued Silkweave Slippers (Rank 1)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
@@ -16,7 +16,7 @@ _.Zones =
 					},
 				}),
 				n(94100,  {	-- Lucas Sigmund <Repairs>
-					["coord"] = { 39.9, 52.3, 650 },
+					["coord"] = { 39.9, 52.3, HIGHMOUNTAIN },
 					["g"] = {
 						i(141044),	-- Technique: Glyph of Nesingwary's Nemeses
 						i(141048, {	-- Technique: Glyph of the Headhunter
@@ -97,7 +97,7 @@ _.Zones =
 					},
 				}),
 				n(115887, {	-- Trinket
-					["coord"] = { 32.4, 66.8, 650 },
+					["coord"] = { 32.4, 66.8, HIGHMOUNTAIN },
 					["g"] = pvp({
 						i(142364),	-- Bag of Twigs
 						i(142368, {	-- Cracked Falcosaur Beak

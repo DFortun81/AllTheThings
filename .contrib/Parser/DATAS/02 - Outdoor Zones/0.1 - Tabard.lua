@@ -10,7 +10,7 @@ _.Zones =
 		["description"] = "Tabards are only obtainable by those who have earned them.",
 		["maps"] = {
 			125,	-- Dalaran: Northrend
-			627,	-- Dalaran: Broken Isles
+			LEGION_DALARAN,
 			ORGRIMMAR,
 			THE_EXODAR,
 			SILVERMOON_CITY,
@@ -23,7 +23,7 @@ _.Zones =
 		},
 		["coords"] = {
 			{ 51.07, 54.91, 125 },	-- Elizabeth Ross [Dalaran: Northrend]
-			{ 50.55, 55.14, 627 },	-- Elizabeth Ross [Dalaran: Broken Isles]
+			{ 50.55, 55.14, LEGION_DALARAN },	-- Elizabeth Ross
 			{ 47.62, 74.74, ORGRIMMAR },	-- Garyl
 			{ 53.71, 68.53, THE_EXODAR },	-- Issca
 			{ 78.64, 84.73, SILVERMOON_CITY },	-- Kredis

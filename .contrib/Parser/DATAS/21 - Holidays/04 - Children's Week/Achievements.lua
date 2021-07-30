@@ -41,11 +41,11 @@ _.Holidays =
 										},
 										["coords"] = {
 											{ 51.21, 29.05, 125 },	-- Aimee [Dalaran: Northrend]
-											{ 50.85, 29.09, 627 },	-- Aimee [Dalaran: Broken Isles]
+											{ 50.85, 29.09, LEGION_DALARAN },	-- Aimee
 										},
 										["maps"] = {
 											125,	-- Dalaran: Northrend
-											627,	-- Dalaran: Broken Isles
+											LEGION_DALARAN,
 										},
 									},
 									{	-- Dalaran Doughnut
@@ -58,11 +58,11 @@ _.Holidays =
 										},
 										["coords"] = {
 											{ 51.21, 29.05, 125 },	-- Aimee [Dalaran: Northrend]
-											{ 50.85, 29.09, 627 },	-- Aimee [Dalaran: Broken Isles]
+											{ 50.85, 29.09, LEGION_DALARAN },	-- Aimee
 										},
 										["maps"] = {
 											125,	-- Dalaran: Northrend
-											627,	-- Dalaran: Broken Isles
+											LEGION_DALARAN,
 										},
 									},
 									{	-- Delicious Chocolate Cake

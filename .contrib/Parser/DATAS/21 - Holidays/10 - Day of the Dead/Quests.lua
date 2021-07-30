@@ -21,7 +21,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 				["isYearly"] = true,
 				["coords"] = {
 					{ 34.4, 38.1, 125 },	-- Dalaran: Northrend
-					{ 33.8, 38.3, 627 },	-- Dalaran: Broken Isles
+					{ 33.8, 38.3, LEGION_DALARAN },
 				},
 				["maps"] = {
 					625,	-- Dalaran: Broken Isles

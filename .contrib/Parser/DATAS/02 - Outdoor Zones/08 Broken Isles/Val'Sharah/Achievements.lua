@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(641, {	-- Val'sharah
+	m(BROKEN_ISLES, {
+		m(VALSHARAH, {
 			n(ACHIEVEMENTS, {
 				ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
@@ -17,11 +17,11 @@ _.Zones =
 							["groups"] = {
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
-									["coord"] = { 47.0, 39.6, 641 },
+									["coord"] = { 47.0, 39.6, VALSHARAH },
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
-									["coord"] = { 63.6, 60.6, 641 },
+									["coord"] = { 63.6, 60.6, VALSHARAH },
 								}),
 							},
 						}),
@@ -31,11 +31,11 @@ _.Zones =
 							["groups"] = {
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
-									["coord"] = { 47.0, 39.6, 641 },
+									["coord"] = { 47.0, 39.6, VALSHARAH },
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
-									["coord"] = { 63.6, 60.6, 641 },
+									["coord"] = { 63.6, 60.6, VALSHARAH },
 								}),
 							},
 						}),
@@ -45,11 +45,11 @@ _.Zones =
 							["groups"] = {
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
-									["coord"] = { 47.0, 39.6, 641 },
+									["coord"] = { 47.0, 39.6, VALSHARAH },
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
-									["coord"] = { 63.6, 60.6, 641 },
+									["coord"] = { 63.6, 60.6, VALSHARAH },
 								}),
 							},
 						}),
@@ -59,11 +59,11 @@ _.Zones =
 							["groups"] = {
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
-									["coord"] = { 47.0, 39.6, 641 },
+									["coord"] = { 47.0, 39.6, VALSHARAH },
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
-									["coord"] = { 63.6, 60.6, 641 },
+									["coord"] = { 63.6, 60.6, VALSHARAH },
 								}),
 							},
 						}),
@@ -73,11 +73,11 @@ _.Zones =
 							["groups"] = {
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
-									["coord"] = { 47.0, 39.6, 641 },
+									["coord"] = { 47.0, 39.6, VALSHARAH },
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
-									["coord"] = { 63.6, 60.6, 641 },
+									["coord"] = { 63.6, 60.6, VALSHARAH },
 								}),
 							},
 						}),
@@ -87,11 +87,11 @@ _.Zones =
 							["groups"] = {
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
-									["coord"] = { 47.0, 39.6, 641 },
+									["coord"] = { 47.0, 39.6, VALSHARAH },
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
-									["coord"] = { 63.6, 60.6, 641 },
+									["coord"] = { 63.6, 60.6, VALSHARAH },
 								}),
 							},
 						}),
@@ -101,11 +101,11 @@ _.Zones =
 							["groups"] = {
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
-									["coord"] = { 47.0, 39.6, 641 },
+									["coord"] = { 47.0, 39.6, VALSHARAH },
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
-									["coord"] = { 63.6, 60.6, 641 },
+									["coord"] = { 63.6, 60.6, VALSHARAH },
 								}),
 							},
 						}),
@@ -115,11 +115,11 @@ _.Zones =
 							["groups"] = {
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
-									["coord"] = { 47.0, 39.6, 641 },
+									["coord"] = { 47.0, 39.6, VALSHARAH },
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
-									["coord"] = { 63.6, 60.6, 641 },
+									["coord"] = { 63.6, 60.6, VALSHARAH },
 								}),
 							},
 						}),
@@ -129,11 +129,11 @@ _.Zones =
 							["groups"] = {
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
-									["coord"] = { 47.0, 39.6, 641 },
+									["coord"] = { 47.0, 39.6, VALSHARAH },
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
-									["coord"] = { 63.6, 60.6, 641 },
+									["coord"] = { 63.6, 60.6, VALSHARAH },
 								}),
 							},
 						}),
@@ -143,11 +143,11 @@ _.Zones =
 							["groups"] = {
 								crit(14, {	-- Durian Strongfruit
 									["creatureID"] = 99035,	-- Durian Strongfruit <Grand Master Pet Tamer>
-									["coord"] = { 47.0, 39.6, 641 },
+									["coord"] = { 47.0, 39.6, VALSHARAH },
 								}),
 								crit(15, {	-- Xorvasc
 									["creatureID"] = 104970,	-- Xorvasc <Grand Master Pet Tamer>
-									["coord"] = { 63.6, 60.6, 641 },
+									["coord"] = { 63.6, 60.6, VALSHARAH },
 								}),
 							},
 						}),

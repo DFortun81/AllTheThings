@@ -12,7 +12,7 @@ _.Secrets =
 			o(148502, {	-- Step 1: Page 9
 				["model"] = 305393,
 				["questID"] = 45470,
-				["coord"] = { 48.8, 42.1, 627 },
+				["coord"] = { 48.8, 42.1, LEGION_DALARAN },
 				["description"] = "|cFFFFFFFFStep 1:|r We will begin in |cFFFFD700Dalaran|r.  Head to the |cFFFFD700Legerdemain Lounge|r at |cFFFFFFFF48.80, 42.10|r.  |cFFFFD700Page 9|r will be on the third shelf of the bookcase.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...of sea, spirit and self...|r",
 				["isWeekly"] = true,
 			}),

@@ -4,12 +4,12 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(650, {	-- Highmountain
+	m(BROKEN_ISLES, {
+		m(HIGHMOUNTAIN, {
 			n(RARES, {
 				v(40413,  {	-- "Sure-Shot" Arnie, Dargok Thunderuin & Ryael Dawndrifter (Amateur Hunters)
 					["description"] = "There are three hunters (Ryael Dawndrifter, \"Sure-Shot\" Arnie, and Dargok Thunderuin) who have surrounded Mara Swiftmane. Engage the amateur hunters in combat, and a Battered Chest will spawn near Mara Swiftmane. The hunters stun and trap themselves if the fight lasts long enough. Once the battle is over, Mara will thank you and leave you with the Battered Chest.",
-					["coord"] = { 43.1, 47.9, 650 },
+					["coord"] = { 43.1, 47.9, HIGHMOUNTAIN },
 					["crs"] = {
 						100232,	-- Ryael Dawndrifter <Amateur Hunter>
 						100230,	-- "Sure-Shot" Arnie <Amateur Hunter>
@@ -29,7 +29,7 @@ _.Zones =
 				}),
 				v(39784,  {	-- Beastmaster Pao'lek & Arru
 					["description"] = "Speak with Beastmastr Pao'lek then help him tame Arru. Loot Thunder Totem Stolen Goods afterward.",
-					["coord"] = { 48.6, 50.0, 650 },
+					["coord"] = { 48.6, 50.0, HIGHMOUNTAIN },
 					["crs"] = {
 						97215,	-- Beastmaster Pao'lek
 						97220,	-- Arru <The Terror>
@@ -45,7 +45,7 @@ _.Zones =
 				}),
 				n(98299,  {	-- Bodash the Hoarder
 					["questID"] = 40084,
-					["coord"] = { 36.6, 16.6, 650 },
+					["coord"] = { 36.6, 16.6, HIGHMOUNTAIN },
 					["g"] = {
 						i(131799),	-- Zugdug's Piece of Paradise
 						crit(14, {	-- Bodash the Hoarder
@@ -55,7 +55,7 @@ _.Zones =
 				}),
 				n(97449,  {	-- Bristlemaul
 					["questID"] = 40405,
-					["coord"] = { 37.7, 45.7, 650 },
+					["coord"] = { 37.7, 45.7, HIGHMOUNTAIN },
 					["g"] = {
 						i(131761),	-- Thick Bristly Hood
 						crit(12, {	-- Bristlemaul
@@ -65,7 +65,7 @@ _.Zones =
 				}),
 				n(94877,  {	-- Brogrul the Mighty
 					["questID"] = 39235,
-					["coord"] = { 56.2, 72.4, 650 },
+					["coord"] = { 56.2, 72.4, HIGHMOUNTAIN },
 					["g"] = {
 						i(138396),	-- Mighty Chain Footpads
 					},
@@ -73,8 +73,8 @@ _.Zones =
 				n(97933,  {	-- Crab Rider Grmlrml
 					["questID"] = 39994,
 					["coords"] = {
-						{ 43.0, 10.4, 650 },
-						{ 46.2, 12.0, 650 },
+						{ 43.0, 10.4, HIGHMOUNTAIN },
+						{ 46.2, 12.0, HIGHMOUNTAIN },
 					},
 					["g"] = {
 						i(131798),	-- Faded Swashbuckler's Jerkin
@@ -85,7 +85,7 @@ _.Zones =
 				}),
 				n(97345,  {	-- Crawshuk the Hungry
 					["questID"] = 39806,
-					["coord"] = { 48.3, 40.4, 650 },
+					["coord"] = { 48.3, 40.4, HIGHMOUNTAIN },
 					["g"] = {
 						i(131809, {	-- Gleaming Roc Feather
 							i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
@@ -98,8 +98,8 @@ _.Zones =
 				n(100495, {	-- Devouring Darkness
 					["description"] = "Click all candles to summon the mob.",
 					["coords"] = {
-						{ 54.5, 41.4, 650 },	-- actual rare
-						{ 55.1, 44.3, 650 },	-- cave entrance
+						{ 54.5, 41.4, HIGHMOUNTAIN },	-- actual rare
+						{ 55.1, 44.3, HIGHMOUNTAIN },	-- cave entrance
 					},
 					["questID"] = 40414,
 					["g"] = {
@@ -113,7 +113,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["description"] = "This rare is only available when its associated world quest is active.",
 					["questID"] = 41093,
-					["coord"] = { 43.8, 75.6, 650 },
+					["coord"] = { 43.8, 75.6, HIGHMOUNTAIN },
 					["g"] = {
 						i(131796),	-- Roggumsoggum's Boppers
 					},
@@ -121,14 +121,14 @@ _.Zones =
 				n(97793,  {	-- Flamescale
 					["description"] = "Click on the Abandoned Fishing Pole to summon Flamescale.",
 					["questID"] = 39963,
-					["coord"] = { 40.9, 57.7, 650 },
+					["coord"] = { 40.9, 57.7, HIGHMOUNTAIN },
 					["g"] = {
 						i(131773),	-- Flamescale Mail
 					},
 				}),
 				n(96590,  {	-- Gurbog da Basher
 					["questID"] = 40347,
-					["coord"] = { 56.5, 60.7, 650 },
+					["coord"] = { 56.5, 60.7, HIGHMOUNTAIN },
 					["g"] = {
 						i(131775),	-- Da Basher's Toy Armor
 						crit(5, {	-- Gurbog da Basher
@@ -138,7 +138,7 @@ _.Zones =
 				}),
 				n(97326,  {	-- Hartli the Snatcher
 					["questID"] = 39802,
-					["coord"] = { 51.0, 48.5, 650 },
+					["coord"] = { 51.0, 48.5, HIGHMOUNTAIN },
 					["g"] = {
 					--	i(129190),	-- Rope of Friendship
 						crit(6, {	-- Hartli the Snatcher
@@ -149,8 +149,8 @@ _.Zones =
 				n(98024,  {	-- Luggut the Eggeater
 					["questID"] = 40406,
 					["coords"] = {
-						{ 51.4, 37.3, 650 },	-- cave entrance
-						{ 50.8, 34.7, 650 },	-- actual rare
+						{ 51.4, 37.3, HIGHMOUNTAIN },	-- cave entrance
+						{ 50.8, 34.7, HIGHMOUNTAIN },	-- actual rare
 					},
 					["g"] = {
 						i(131776),	-- Scale Cord of the Eggeater
@@ -162,11 +162,11 @@ _.Zones =
 				n(96410,  {	-- Majestic Elderhorn
 					["questID"] = 39646,
 					["coords"] = {
-						{ 47.5, 32.9, 650 },	-- spawn point - other coords are its path
-						{ 49.2, 29.0, 650 },
-						{ 48.6, 25.2, 650 },
-						{ 45.2, 25.8, 650 },
-						{ 45.4, 30.4, 650 },
+						{ 47.5, 32.9, HIGHMOUNTAIN },	-- spawn point - other coords are its path
+						{ 49.2, 29.0, HIGHMOUNTAIN },
+						{ 48.6, 25.2, HIGHMOUNTAIN },
+						{ 45.2, 25.8, HIGHMOUNTAIN },
+						{ 45.4, 30.4, HIGHMOUNTAIN },
 					},
 					["g"] = {
 						i(131900),	-- Magestic Elderhorn Hoof (TOY!)
@@ -177,7 +177,7 @@ _.Zones =
 				}),
 				n(96621,  {	-- Mellok, Son of Torok
 					["questID"] = 40242,
-					["coord"] = { 48.9, 27.0, 650 },
+					["coord"] = { 48.9, 27.0, HIGHMOUNTAIN },
 					["g"] = {
 						crit(17, {	-- Mellok, Son of Torok
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -186,7 +186,7 @@ _.Zones =
 				}),
 				n(98311,  {	-- Mrrklr
 					["questID"] = 40096,
-					["coord"] = { 46.7, 7.30, 650 },
+					["coord"] = { 46.7, 7.30, HIGHMOUNTAIN },
 					["crs"] = { 98754 },	-- Sloppy "Sloppy Joe" Joe
 					["g"] = {
 						i(131797),	-- Swamprock Salvage Band
@@ -197,14 +197,14 @@ _.Zones =
 				}),
 				n(95204,  {	-- Oubdob da Smasher
 					["questID"] = 39435,
-					["coord"] = { 47.4, 73.8, 650 },
+					["coord"] = { 47.4, 73.8, HIGHMOUNTAIN },
 					["g"] = {
 						i(131793),	-- Oubdob's Smashin' Sweatband
 					},
 				}),
 				v(40423,  {	-- Puck (Unethical Adventurers)
 					["description"] = "Loot the treasure inside the cave and a party of enemies will appear.  Kill them and loot the treasure.",
-					["coord"] = { 52.3, 58.5, 650 },
+					["coord"] = { 52.3, 58.5, HIGHMOUNTAIN },
 					["crs"] = {
 						100302,	-- Puck <Unethical Adventurers>
 						109498,	-- Xaander <Unethical Adventurers>
@@ -226,7 +226,7 @@ _.Zones =
 				n(97102,  {	-- Ram'Pag <The Treasure Worm>
 					["description"] = "Click on the Totally Safe Treasure Chest to spawn Ram'Pag.",
 					["questID"] = 39766,
-					["coord"] = { 52.3, 51.4, 650 },
+					["coord"] = { 52.3, 51.4, HIGHMOUNTAIN },
 					["g"] = {
 						crit(15, {	-- Totally Safe Treasure Chest
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -236,7 +236,7 @@ _.Zones =
 				n(97579,  {	-- Scout Harefoot (Mynta Talonscreech)
 					["description"] = "Speak to Scout Harefoot and Mynta Talonscreech will spawn.",
 					["questID"] = 39866,
-					["coord"] = { 54.5, 40.5, 650 },
+					["coord"] = { 54.5, 40.5, HIGHMOUNTAIN },
 					["g"] = {
 						i(131792),	-- Harefoot Pinnacle Wrap
 						crit(13, {	-- Scout Harefoot
@@ -246,7 +246,7 @@ _.Zones =
 				}),
 				n(97093,  {	-- Shara Felbreath
 					["questID"] = 39762,
-					["coord"] = { 51.0, 25.8, 650 },
+					["coord"] = { 51.0, 25.8, HIGHMOUNTAIN },
 					["g"] = {
 						i(131791),	-- Felbreath Bloodsinger Robe
 						crit(20, {	-- Shara Felbreath
@@ -256,7 +256,7 @@ _.Zones =
 				}),
 				n(101077, {	-- Sekhan
 					["questID"] = 40681,
-					["coord"] = { 45.5, 55.2, 650 },
+					["coord"] = { 45.5, 55.2, HIGHMOUNTAIN },
 					["g"] = {
 						i(131730),	-- Darksaber Leather Belt
 						crit(1, {	-- Sekhan
@@ -266,7 +266,7 @@ _.Zones =
 				}),
 				n(95872,  {	-- Skullhat
 					["questID"] = 39465,
-					["coord"] = { 50.9, 32.0, 650 },
+					["coord"] = { 50.9, 32.0, HIGHMOUNTAIN },
 					["g"] = {
 						i(131769),	-- The Taskmaster's Wristwraps
 						crit(7, {	-- Skywhisker Taskmasker
@@ -276,7 +276,7 @@ _.Zones =
 				}),
 				n(98890,  {	-- Slumber
 					["questID"] = 40175,
-					["coord"] = { 41.4, 31.9, 650 },
+					["coord"] = { 41.4, 31.9, HIGHMOUNTAIN },
 					["g"] = {
 						i(131921),	-- Dreamflow Collar
 						crit(22, {	-- Slumbering Bear
@@ -286,7 +286,7 @@ _.Zones =
 				}),
 				n(97653,  {	-- Taurson
 					["questID"] = 39872,
-					["coord"] = { 54.1, 50.8, 650 },
+					["coord"] = { 54.1, 50.8, HIGHMOUNTAIN },
 					["g"] = {
 						o(244628, {	-- Taurson's Prize
 							["displayID"] = 65118,
@@ -301,7 +301,7 @@ _.Zones =
 				}),
 				n(97203,  {	-- Tenpak Flametotem
 					["questID"] = 39782,
-					["coord"] = { 41.9, 41.5, 650 },
+					["coord"] = { 41.9, 41.5, HIGHMOUNTAIN },
 					["g"] = {
 						i(129175),	-- Crispin (PET!)
 						crit(9, {	-- The Exiled Shaman

@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(641, {	-- Val'sharah
+	m(BROKEN_ISLES, {
+		m(VALSHARAH, {
 			n(-34,  {	-- World Quests
 				n(QUESTS, {
 					--[[	raw quest list to check against
@@ -538,7 +538,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["filterID"] = 101,	-- Battle Pet
 						["lvl"] = 110,
-						["coord"] = { 46.4, 36.9, 641 },
+						["coord"] = { 46.4, 36.9, VALSHARAH },
 						["description"] = "This World Quest only allows ONE completed pet battle per character per day, contrary to every other Legion Pet Battle World Quest.",
 					}),
 					q(41992, {	-- Twisted Ash

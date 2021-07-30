@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(634, {	-- Stormheim
+	m(BROKEN_ISLES, {
+		m(STORMHEIM, {
 			filter(101, {	-- Pet Battle
 				pet(1708, {	-- Albatross Chick
 					["crs"] = { 97018 },	-- Albatross Chick

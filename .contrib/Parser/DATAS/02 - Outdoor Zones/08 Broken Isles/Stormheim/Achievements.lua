@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(634, {	-- Stormheim
+	m(BROKEN_ISLES, {
+		m(STORMHEIM, {
 			n(ACHIEVEMENTS, {
 				ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
@@ -17,11 +17,11 @@ _.Zones =
 							["groups"] = {
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
-									["coord"] = { 78.4, 57.2, 634 },
+									["coord"] = { 78.4, 57.2, STORMHEIM },
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
-									["coord"] = { 56.8, 46.2, 634 },
+									["coord"] = { 56.8, 46.2, STORMHEIM },
 								}),
 							},
 						}),
@@ -31,11 +31,11 @@ _.Zones =
 							["groups"] = {
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
-									["coord"] = { 78.4, 57.2, 634 },
+									["coord"] = { 78.4, 57.2, STORMHEIM },
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
-									["coord"] = { 56.8, 46.2, 634 },
+									["coord"] = { 56.8, 46.2, STORMHEIM },
 								}),
 							},
 						}),
@@ -45,11 +45,11 @@ _.Zones =
 							["groups"] = {
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
-									["coord"] = { 78.4, 57.2, 634 },
+									["coord"] = { 78.4, 57.2, STORMHEIM },
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
-									["coord"] = { 56.8, 46.2, 634 },
+									["coord"] = { 56.8, 46.2, STORMHEIM },
 								}),
 							},
 						}),
@@ -59,11 +59,11 @@ _.Zones =
 							["groups"] = {
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
-									["coord"] = { 78.4, 57.2, 634 },
+									["coord"] = { 78.4, 57.2, STORMHEIM },
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
-									["coord"] = { 56.8, 46.2, 634 },
+									["coord"] = { 56.8, 46.2, STORMHEIM },
 								}),
 							},
 						}),
@@ -73,11 +73,11 @@ _.Zones =
 							["groups"] = {
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
-									["coord"] = { 78.4, 57.2, 634 },
+									["coord"] = { 78.4, 57.2, STORMHEIM },
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
-									["coord"] = { 56.8, 46.2, 634 },
+									["coord"] = { 56.8, 46.2, STORMHEIM },
 								}),
 							},
 						}),
@@ -87,11 +87,11 @@ _.Zones =
 							["groups"] = {
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
-									["coord"] = { 78.4, 57.2, 634 },
+									["coord"] = { 78.4, 57.2, STORMHEIM },
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
-									["coord"] = { 56.8, 46.2, 634 },
+									["coord"] = { 56.8, 46.2, STORMHEIM },
 								}),
 							},
 						}),
@@ -101,11 +101,11 @@ _.Zones =
 							["groups"] = {
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
-									["coord"] = { 78.4, 57.2, 634 },
+									["coord"] = { 78.4, 57.2, STORMHEIM },
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
-									["coord"] = { 56.8, 46.2, 634 },
+									["coord"] = { 56.8, 46.2, STORMHEIM },
 								}),
 							},
 						}),
@@ -115,11 +115,11 @@ _.Zones =
 							["groups"] = {
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
-									["coord"] = { 78.4, 57.2, 634 },
+									["coord"] = { 78.4, 57.2, STORMHEIM },
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
-									["coord"] = { 56.8, 46.2, 634 },
+									["coord"] = { 56.8, 46.2, STORMHEIM },
 								}),
 							},
 						}),
@@ -129,11 +129,11 @@ _.Zones =
 							["groups"] = {
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
-									["coord"] = { 78.4, 57.2, 634 },
+									["coord"] = { 78.4, 57.2, STORMHEIM },
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
-									["coord"] = { 56.8, 46.2, 634 },
+									["coord"] = { 56.8, 46.2, STORMHEIM },
 								}),
 							},
 						}),
@@ -143,11 +143,11 @@ _.Zones =
 							["groups"] = {
 								crit(9, {	-- Robert Craig
 									["creatureID"] = 98270,	-- Robert Craig <Grand Master Pet Tamer>
-									["coord"] = { 78.4, 57.2, 634 },
+									["coord"] = { 78.4, 57.2, STORMHEIM },
 								}),
 								crit(10, {	-- Trapper Jarrun
 									["creatureID"] = 105455,	-- Trapper Jarrun <Grand Master Pet Tamer>
-									["coord"] = { 56.8, 46.2, 634 },
+									["coord"] = { 56.8, 46.2, STORMHEIM },
 								}),
 							},
 						}),

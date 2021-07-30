@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(680, {	-- Suramar
+	m(BROKEN_ISLES, {
+		m(SURAMAR, {
 			filter(101, {	-- Pet Battle
 				p(425, {	-- Ash Viper
 					["crs"] = { 61385 },	-- Ash Viper

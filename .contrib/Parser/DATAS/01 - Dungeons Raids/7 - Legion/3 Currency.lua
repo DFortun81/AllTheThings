@@ -10,7 +10,7 @@ _.Instances = {
 			["g"] = {
 				currency(1273, {	-- Seal of Broken Fate
 					["description"] = "Up to 3 per week obtained via quests offered by Archmage Lan'dalock in Broken Isles Dalaran |cffffffff(57.2, 67.5)|r.  Costs for the week increase each time you purchase a seal with the same currency.\n\nGold: 1,000 > 2,000 > 4,000\n\nMarks of Honor: 5 > 10 > 20\n\nOrder Resources: 1,000 > 2,000 > 4,000\n",
-					["coord"] = { 57.2, 67.5, 627 },	-- Archmage Lan'dalock, Broken Isles Dalaran
+					["coord"] = { 57.2, 67.5, LEGION_DALARAN },	-- Archmage Lan'dalock
 				}),
 			},
 		}),

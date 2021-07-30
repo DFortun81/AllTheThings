@@ -7,8 +7,8 @@ _.Instances = { tier(LEGION_TIER, {
 	inst(786, {	-- The Nighthold
 		["isRaid"] = true,
 		["coords"] = {
-			{ 43.3, 62.3, 680 },	-- entrance that leads underground
-			{ 44.1, 59.7, 680 },	-- actual raid entrance
+			{ 43.3, 62.3, SURAMAR },	-- entrance that leads underground
+			{ 44.1, 59.7, SURAMAR },	-- actual raid entrance
 		},
 		["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
 		["lvl"] = 110,

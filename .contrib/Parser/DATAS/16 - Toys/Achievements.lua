@@ -46,13 +46,13 @@ _.Toys =
 			i(139632, {	-- A Tiny Pair of Goggles
 				["questID"] = 43695,	-- Pepe can be sometimes be summoned with this mask
 				["coords"] = {
-					{ 42.31, 57.51, 627 },	-- Near Fruit Vendor
-					{ 48.01, 58.01, 627 },	-- Stairs to Curiositiese & Moore
-					{ 47.71, 32.31, 627 },	-- Magus Commerce Exchange well
-					{ 47.31, 37.61, 627 },	-- Legerdemain Lounge
-					{ 40.01, 28.01, 627 },	-- Things of the Past
-					{ 42.01, 19.01, 627 },	-- Antonidas Memoria
-					{ 36.01, 37.01, 627 },	-- Angelique Butler (First Aid Shop)
+					{ 42.31, 57.51, LEGION_DALARAN },	-- Near Fruit Vendor
+					{ 48.01, 58.01, LEGION_DALARAN },	-- Stairs to Curiositiese & Moore
+					{ 47.71, 32.31, LEGION_DALARAN },	-- Magus Commerce Exchange well
+					{ 47.31, 37.61, LEGION_DALARAN },	-- Legerdemain Lounge
+					{ 40.01, 28.01, LEGION_DALARAN },	-- Things of the Past
+					{ 42.01, 19.01, LEGION_DALARAN },	-- Antonidas Memoria
+					{ 36.01, 37.01, LEGION_DALARAN },	-- Angelique Butler (First Aid Shop)
 				},
 			}),
 			i(127870, {	-- A Tiny Pirate Hat

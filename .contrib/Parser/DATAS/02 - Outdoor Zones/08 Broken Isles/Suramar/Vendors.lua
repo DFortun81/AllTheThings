@@ -4,17 +4,17 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(680, {	-- Suramar
+	m(BROKEN_ISLES, {
+		m(SURAMAR, {
 			n(VENDORS, {
 				n(115710, {	-- Chief Telemancer Oculeth
-					["coord"] = { 37.0, 46.6, 680 },
+					["coord"] = { 37.0, 46.6, SURAMAR },
 					["g"] = {
 						i(140324),	-- Mobile Telemancy Beacon (TOY!)
 					},
 				}),
 				n(112064, {	-- Dolse Shimmersong <Souvenirs>
-					["coord"] = { 51.2, 49.8, 680 },
+					["coord"] = { 51.2, 49.8, SURAMAR },
 					["g"] = {
 						--[[ No use yet, potential pets/toys?
 						i(140670),	-- Souvenir Elekk
@@ -27,7 +27,7 @@ _.Zones =
 					},
 				}),
 				n(115736, {	-- First Arcanist Thalyssra
-					["coord"] = { 36.4, 46.8, 680 },
+					["coord"] = { 36.4, 46.8, SURAMAR },
 					["g"] = {
 						i(139768, {	-- Amice of the Black Harvest
 							["cost"] = 5000000,	-- 500g
@@ -166,7 +166,7 @@ _.Zones =
 					},
 				}),
 				n(113843, {	-- Kieule <Souvenirs>
-					["coord"] = { 50.4, 53.0, 680 },
+					["coord"] = { 50.4, 53.0, SURAMAR },
 					["g"] = {
 						--[[ No use yet, potential pets/toys?
 						i(140670),	-- Souvenir Elekk
@@ -178,7 +178,7 @@ _.Zones =
 					},
 				}),
 				n(93971,  {	-- Leyweaver Inondra
-					["coord"] = { 40.2, 69.6, 680 },
+					["coord"] = { 40.2, 69.6, SURAMAR },
 					["g"] = {
 						i(127277, {	-- Imbued Silkweave Cover (Rank 1)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
@@ -195,7 +195,7 @@ _.Zones =
 					},
 				}),
 				n(93979,  {	-- Leyweaver Jorjana
-					["coord"] = { 49.4, 75.8, 680 },
+					["coord"] = { 49.4, 75.8, SURAMAR },
 					["g"] = {
 						i(127025, {	-- Imbued Silkweave Hood (Rank 1)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
@@ -203,13 +203,13 @@ _.Zones =
 					},
 				}),
 				n(112226, {	-- Markus Hjolbruk
-					["coord"] = { 71.6, 48.8, 680 },
+					["coord"] = { 71.6, 48.8, SURAMAR },
 					["g"] = {
 						i(133819),	-- Recipe: Koi-Scented Stormray (Rank 1)
 					},
 				}),
 				n(112059, {	-- Sasunne Dameuse <Souvenirs>
-					["coord"] = { 51.2, 50.0, 680 },
+					["coord"] = { 51.2, 50.0, SURAMAR },
 					["g"] = {
 						--[[ No use yet, potential pets/toys?
 						i(140670),	-- Souvenir Elekk
@@ -222,7 +222,7 @@ _.Zones =
 					},
 				}),
 				n(98969,  {	-- Stalriss Dawnrunner <Leatherworking Trainer>
-					["coord"] = { 26.6, 71.6, 680 },
+					["coord"] = { 26.6, 71.6, SURAMAR },
 					["g"] = {
 						i(140637, {	-- Recipe: Dreadleather Belt (Rank 1)
 							["cost"] = {
@@ -308,7 +308,7 @@ _.Zones =
 					},
 				}),
 				n(109562, {	-- Sundries Merchant
-					["coord"] = { 50.0, 77.3, 680 },
+					["coord"] = { 50.0, 77.3, SURAMAR },
 					["g"] = {
 						i(147768, {	-- Suramarian Sapphire
 							["classes"] = { PALADIN },
@@ -319,7 +319,7 @@ _.Zones =
 					},
 				}),
 				n(92265,  {	-- Urael <Nal'ryssa's Minion>
-					["coord"] = { 30.0, 53.2, 680 },
+					["coord"] = { 30.0, 53.2, SURAMAR },
 					["g"] = {
 						i(123920, {	-- Recipe: Demonsteel Armguards (Rank 1)
 							["cost"] = {

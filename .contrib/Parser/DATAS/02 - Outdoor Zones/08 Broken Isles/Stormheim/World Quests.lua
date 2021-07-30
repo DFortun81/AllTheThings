@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, {	-- The Broken Isles
-		m(634, {	-- Stormheim
+	m(BROKEN_ISLES, {
+		m(STORMHEIM, {
 			n(-34,    {	-- World Quests
 				n(QUESTS, {
 					q(43964, {	-- A Jarl's Feast
@@ -274,7 +274,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["filterID"] = 101,	-- Battle Pet
 						["lvl"] = 110,
-						["coord"] = { 56.8, 46.2, 634 },
+						["coord"] = { 56.8, 46.2, STORMHEIM },
 					}),
 					q(43769, {	-- Ley Race
 						["lvl"] = 110,

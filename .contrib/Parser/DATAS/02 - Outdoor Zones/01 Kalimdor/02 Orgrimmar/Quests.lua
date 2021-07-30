@@ -44,61 +44,61 @@ _.Zones =
 									q(41884, {	-- Dark Tales
 										["sourceQuests"] = { 48079 },	-- Return to Highmountain
 										["provider"] = { "n", 105085 },	-- Spiritwalker Graysky
-										["coord"] = { 70.2, 72.0, 650 },
+										["coord"] = { 70.2, 72.0, HIGHMOUNTAIN },
 										["races"] = HORDE_ONLY,
 									}),
 									q(41764, {	-- Walking in Their Footsteps
 										["sourceQuests"] = { 41884 },	-- Dark Tales
 										["provider"] = { "n", 125454 },	-- Spiritwalker Graysky
-										["coord"] = { 38.6, 69.0, 650 },
+										["coord"] = { 38.6, 69.0, HIGHMOUNTAIN },
 										["races"] = HORDE_ONLY,
 									}),
 									q(48185, {	-- Shadow of the Sepulcher
 										["sourceQuests"] = { 41764 },	-- Walking in Their Footsteps
 										["provider"] = { "n", 125454 },	-- Spiritwalker Graysky
-										["coord"] = { 38.6, 69.0, 650 },
+										["coord"] = { 38.6, 69.0, HIGHMOUNTAIN },
 										["races"] = HORDE_ONLY,
 									}),
 									q(41799, {	-- Minions of the Darkness
 										["sourceQuests"] = { 48185 },	-- Shadows of the Sepulcher
 										["provider"] = { "n", 125459 },	-- Spiritwalker Graysky
-										["coord"] = { 57.0, 46.2, 650 },
+										["coord"] = { 57.0, 46.2, HIGHMOUNTAIN },
 										["races"] = HORDE_ONLY,
 									}),
 									q(48190, {	-- Huln's Mountain
 										["sourceQuests"] = { 41799 },	-- Minions of the Darkness
 										["provider"] = { "n", 125459 },	-- Spiritwalker Graysky
-										["coord"] = { 57.0, 46.2, 650 },
+										["coord"] = { 57.0, 46.2, HIGHMOUNTAIN },
 										["races"] = HORDE_ONLY,
 									}),
 									q(41800, {	-- Servants of the Darkness
 										["sourceQuests"] = { 48190 },	-- Huln's Mountain
 										["provider"] = { "n", 125466 },	-- Spiritwalker Graysky
-										["coord"] = { 53.2, 64.0, 650 },
+										["coord"] = { 53.2, 64.0, HIGHMOUNTAIN },
 										["races"] = HORDE_ONLY,
 									}),
 									q(48434, {	-- How Fares Ebonhorn?
 										["sourceQuests"] = { 41800 },	-- Servants of the Darkness
 										["provider"] = { "n", 125466 },	-- Spiritwalker Graysky
-										["coord"] = { 53.2, 64.0, 650 },
+										["coord"] = { 53.2, 64.0, HIGHMOUNTAIN },
 										["races"] = HORDE_ONLY,
 									}),
 									q(41815, {	-- Curse of the Necrodark
 										["sourceQuests"] = { 48434 },	-- How Fares Ebonhorn?
 										["provider"] = { "n", 108434 },	-- Mayla Highmountain
-										["coord"] = { 69.0, 70.4, 650 },
+										["coord"] = { 69.0, 70.4, HIGHMOUNTAIN },
 										["races"] = HORDE_ONLY,
 									}),
 									q(41840, {	-- Ice and Shadow
 										["sourceQuests"] = { 41815 },	-- Curse of the Necrodark
 										["provider"] = { "n", 130423 },	-- Baine Bloodhoof <High Chieftain>
-										["coord"] = { 56.4, 89.2, 650 },
+										["coord"] = { 56.4, 89.2, HIGHMOUNTAIN },
 										["races"] = HORDE_ONLY,
 									}),
 									q(41882, {	-- Whispers of the Darnkess
 										["sourceQuests"] = { 41815 },	-- Curse of the Necrodark
 										["provider"] = { "n", 97662 },	-- Jale Rivermane
-										["coord"] = { 56.4, 89.2, 650 },
+										["coord"] = { 56.4, 89.2, HIGHMOUNTAIN },
 										["races"] = HORDE_ONLY,
 									}),
 									q(41841, {	-- The Final Ward
@@ -107,19 +107,19 @@ _.Zones =
 											41882,	-- Whispers of the Darkness
 										},
 										["provider"] = { "n", 105213 },	-- Spiritwalker Ebonhorn
-										["coord"] = { 56.8, 92.0, 650 },
+										["coord"] = { 56.8, 92.0, HIGHMOUNTAIN },
 										["races"] = HORDE_ONLY,
 									}),
 									q(48403, {	-- The Darkness
 										["sourceQuests"] = { 41841 },	-- The Final Ward
 										["provider"] = { "n", 105213 },	-- Spiritwalker Ebonhorn
-										["coord"] = { 56.8, 92.0, 650 },
+										["coord"] = { 56.8, 92.0, HIGHMOUNTAIN },
 										["races"] = HORDE_ONLY,
 									}),
 									q(48433, {	-- Together We Are the Horde!
 										["sourceQuests"] = { 48403 },	-- The Darkness
 										["provider"] = { "n", 126134 },	-- Baine Bloodhoof <High Chieftain>
-										["coord"] = { 56.6, 92.6, 650 },
+										["coord"] = { 56.6, 92.6, HIGHMOUNTAIN },
 										["races"] = HORDE_ONLY,
 										["g"] = {
 											ach(12245),	-- Allied Races: Highmountain Tauren
@@ -128,7 +128,7 @@ _.Zones =
 									-- Highmountain Tauren Starter Quest
 									q(49773, {	-- For the Horde
 										["provider"] = { "n", 143845 },	--  Mayla Highmountain
-										["coord"] = { 46.6, 61.0, 650 },
+										["coord"] = { 46.6, 61.0, HIGHMOUNTAIN },
 										["races"] = { HIGHMOUNTAIN },
 										["g"] = {
 											i(157757),	-- Highmountain Tabard
@@ -151,7 +151,7 @@ _.Zones =
 									q(49613, {	-- Silvermoon City
 										["sourceQuests"] = { 49973 },	-- Thalyssra's Estate
 										["provider"] = { "n", 131478 },	-- Lady Liadrin
-										["coord"] = { 65.8, 63.6, 680 },
+										["coord"] = { 65.8, 63.6, SURAMAR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(49354, {	-- Remember the Sunwell
@@ -172,7 +172,7 @@ _.Zones =
 									-- Nightborne Starter Quest
 									q(49933, {	-- For the Horde
 										["provider"] = { "n", 143845 },	--  First Arcanist Thalyssra
-										["coord"] = { 59.4, 85.4, 680 },
+										["coord"] = { 59.4, 85.4, SURAMAR },
 										["races"] = { NIGHTBORNE },
 										["g"] = {
 											i(157759),	-- Shal'dorei Tabard
@@ -531,37 +531,37 @@ _.Zones =
 									q(53904, {	-- The Vintner's Assistants
 										["sourceQuests"] = { 53903 },	-- Meet with Meerah
 										["provider"] = { "n", 146264 },	-- Meerah
-										["coord"] = { 58.9, 55.0, 680 },
+										["coord"] = { 58.9, 55.0, SURAMAR },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 680 },	-- Suramar
+										["maps"] = { SURAMAR },
 									}),
 									q(53905, {	-- Playing to Their Strengths
 										["sourceQuests"] = { 53904 },	-- The Vintner's Assistants
 										["provider"] = { "n", 146264 },	-- Meerah
-										["coord"] = { 58.9, 55.0, 680 },
+										["coord"] = { 58.9, 55.0, SURAMAR },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 680 },	-- Suramar
+										["maps"] = { SURAMAR },
 									}),
 									q(54036, {	-- A Particular Process
 										["sourceQuests"] = { 53905 },	-- Playing to Their Strengths
 										["provider"] = { "n", 157668 },	-- Meerah
-										["coord"] = { 58.7, 55.5, 680 },
+										["coord"] = { 58.7, 55.5, SURAMAR },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 680 },	-- Suramar
+										["maps"] = { SURAMAR },
 									}),
 									q(53906, {	-- Fermented for the Horde
 										["sourceQuests"] = { 54036 },	-- A Particular Process
 										["provider"] = { "n", 146301 },	-- Nomi
-										["coord"] = { 60.5, 56.2, 680 },
+										["coord"] = { 60.5, 56.2, SURAMAR },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 680 },	-- Suramar
+										["maps"] = { SURAMAR },
 									}),
 									q(53907, {	-- Sip and Savor
 										["sourceQuests"] = { 53906 },	-- Fermented for the Horde
 										["provider"] = { "n", 146301 },	-- Nomi
-										["coord"] = { 60.5, 56.2, 680 },
+										["coord"] = { 60.5, 56.2, SURAMAR },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 680 },	-- Suramar
+										["maps"] = { SURAMAR },
 										["g"] = {
 											i(173727),	-- Nomi's Vintage (TOY!)
 										},
@@ -569,9 +569,9 @@ _.Zones =
 									q(53908, {	-- Awaiting Our Arrival
 										["sourceQuests"] = { 53907 },	-- Sip and Savor
 										["provider"] = { "n", 157668 },	-- Meerah
-										["coord"] = { 58.7, 55.5, 680 },
+										["coord"] = { 58.7, 55.5, SURAMAR },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 680 },	-- Suramar
+										["maps"] = { SURAMAR },
 									}),
 									q(57448, {	-- New Allies Among Us
 										["sourceQuests"] = { 53908 },	-- Awaiting Our Arrival
