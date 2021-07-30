@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(1, {	-- Classic
+	tier(CLASSIC_TIER, {
 		f(200, {	-- Recipes
 			prof(ALCHEMY, {
 				-- #if AFTER 8.0.1.10000

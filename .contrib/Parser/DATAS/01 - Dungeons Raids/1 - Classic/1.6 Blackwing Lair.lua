@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(1, applyclassicphase(PHASE_THREE, {	-- Classic
+_.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 	inst(742, {	-- Blackwing Lair
 		["description"] = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
 		["coord"] = { 64.2, 71.0, BLACKROCK_MOUNTAIN },

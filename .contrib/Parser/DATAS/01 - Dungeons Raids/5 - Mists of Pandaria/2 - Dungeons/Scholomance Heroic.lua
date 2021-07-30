@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(5, {	-- Mists of Pandaria
+_.Instances = { tier(MOP_TIER, {
 	inst(246, {	-- Scholomance
 		["coord"] = { 69.07, 72.96, WESTERN_PLAGUELANDS },
 		["maps"] = { SCHOLOMANCE, 477, 478, 479 },

@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(2, {	-- Burning Crusade
+	tier(TBC_TIER, {
 		n(-1000, {	-- Sets
 			i(24575),	-- Outlander's Girdle
 			i(24582),	-- Outlander's Boots

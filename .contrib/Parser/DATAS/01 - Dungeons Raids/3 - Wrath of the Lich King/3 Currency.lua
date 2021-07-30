@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = {
-	tier(3, {	-- Wrath of the Lich King
+	tier(WOTLK_TIER, {
 		n(-10045, {	-- Currency
 			i(40752, {	-- Emblem of Heroism (CurrencyID:101)
 				["timeline"] = {

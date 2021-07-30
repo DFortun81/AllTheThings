@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(2,	applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
+_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(256, {	-- The Blood Furnace
 		["coord"] = { 46.06, 51.74, HELLFIRE_PENINSULA },	-- The Blood Furnace, Hellfire Peninsula
 		["mapID"] = HELLFIRE_CITADEL_BLOOD_FURNACE,

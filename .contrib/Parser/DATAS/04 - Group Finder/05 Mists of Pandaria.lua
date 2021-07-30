@@ -4,7 +4,7 @@
 
 _.GroupFinder =
 {
-	tier(5, {	-- Mists of Pandaria
+	tier(MOP_TIER, {
 		i(156698, {	-- Tranquil Satchel of Helpful Goods
 			["description"] = "Bag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			["g"] = {

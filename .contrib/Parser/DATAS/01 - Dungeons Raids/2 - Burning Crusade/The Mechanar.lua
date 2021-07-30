@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
+_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(258, {	-- The Mechanar
 		["coord"] = { 70.61, 69.75, NETHERSTORM },	-- The Mechanar, Netherstorm
 		["maps"] = {

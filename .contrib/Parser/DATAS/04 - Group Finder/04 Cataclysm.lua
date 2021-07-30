@@ -4,7 +4,7 @@
 
 _.GroupFinder =
 {
-	tier(4, {	-- Cataclysm
+	tier(CATA_TIER, {
 		i(156689, {	-- Scorched Satchel of Helpful Goods (30 - 50)
 			["description"] = "Bag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			["g"] = {

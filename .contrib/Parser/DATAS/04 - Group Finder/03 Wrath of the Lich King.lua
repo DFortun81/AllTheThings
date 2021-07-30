@@ -4,7 +4,7 @@
 
 _.GroupFinder =
 {
-	tier(3, {	-- Wrath of the Lich King
+	tier(WOTLK_TIER, {
 		i(156688, {	-- Icy Satchel of Helpful Goods
 			i(112348),	-- Snow-Coated Cloth Cap*
 			i(113758),	-- Snow-Coated Cloth Gloves*

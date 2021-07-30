@@ -5,7 +5,7 @@
 -- TODO: Add icons to each Item Set header
 _.ExpansionFeatures =
 {
-	tier(8, {	-- Battle for Azeroth
+	tier(BFA_TIER, {
 		n(-3338, {	-- Island Expeditions
 			n(-10067, {	-- Artifact
 				n(-227,	{	-- Victory

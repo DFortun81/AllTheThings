@@ -1,5 +1,5 @@
 profession(COOKING, {
-	tier(1, {	-- Classic
+	tier(CLASSIC_TIER, {
 		{
 			["name"] = "Everyday Cooking",
 			["categoryID"] = 63,
@@ -531,7 +531,7 @@ profession(COOKING, {
 			}
 		},
 	}),
-	applyclassicphase(TBC_PHASE_ONE, tier(2, {	-- Burning Crusade
+	applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		{
 			["name"] = "Blackened Basilisk",
 			["recipeID"] = 33286
@@ -634,7 +634,7 @@ profession(COOKING, {
 			["recipeID"] = 33288
 		}
 	})),
-	applyclassicphase(WRATH_PHASE_ONE, tier(3, {	-- Wrath of the Lich King
+	applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		{
 			["name"] = "Bad Clams",
 			["recipeID"] = 58523
@@ -820,7 +820,7 @@ profession(COOKING, {
 			["recipeID"] = 45551
 		}
 	})),
-	applyclassicphase(CATA_PHASE_ONE, tier(4, {	-- Cataclysm
+	applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, {
 		{
 			["name"] = "Baked Rockfish",
 			["recipeID"] = 88003
@@ -954,7 +954,7 @@ profession(COOKING, {
 			["recipeID"] = 88017
 		},
 	})),
-	applyclassicphase(MOP_PHASE_ONE, tier(5, {	-- Mists of Pandaria
+	applyclassicphase(MOP_PHASE_ONE, tier(MOP_TIER, {
 		{
 			["name"] = "Way of the Grill",
 			["categoryID"] = 64,
@@ -1266,7 +1266,7 @@ profession(COOKING, {
 			}
 		}
 	})),
-	applyclassicphase(WOD_PHASE_ONE, tier(6, {	-- Warlords of Draenor
+	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, {
 		{
 			["name"] = "Feasts",
 			["categoryID"] = 345,
@@ -1408,7 +1408,7 @@ profession(COOKING, {
 			}
 		}
 	})),
-	applyclassicphase(LEGION_PHASE_ONE, tier(7, {	-- Legion
+	applyclassicphase(LEGION_PHASE_ONE, tier(LEGION_TIER, {
 		{
 			["name"] = "Snacks",
 			["categoryID"] = 476,
@@ -1784,7 +1784,7 @@ profession(COOKING, {
 			}
 		}
 	})),
-	applyclassicphase(BFA_PHASE_ONE, tier(8, {	-- BFA
+	applyclassicphase(BFA_PHASE_ONE, tier(BFA_TIER, {
 		{
 			["name"] = "Delicacies",
 			["categoryID"] = 1449,
@@ -2204,7 +2204,7 @@ profession(COOKING, {
 			}
 		}
 	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(9, {	-- Shadowlands
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, {
 		{
 			["name"] = "Quest Recipes",
 			["categoryID"] = 1526,
@@ -3030,7 +3030,7 @@ profession(COOKING, {
 	-- #endif
 	-- #if NOT ANYCLASSIC
 	filter(200, {	-- Recipes
-		tier(1, {	-- Classic
+		tier(CLASSIC_TIER, {
 			un(REMOVED_FROM_GAME, i(16072, {	-- Expert Cookbook
 				["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
 			})),

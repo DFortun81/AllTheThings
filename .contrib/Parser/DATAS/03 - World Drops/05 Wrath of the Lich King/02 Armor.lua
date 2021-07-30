@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(3, {	-- Wrath of the Lich King
+	tier(WOTLK_TIER, {
 		n(-318, {	-- Armor
 			n(-320, {	-- Head
 				i(37787),	-- Greathelm of the Unyielding Bull

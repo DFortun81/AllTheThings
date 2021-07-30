@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(4, {	-- Cataclysm
+_.Instances = { tier(CATA_TIER, {
 	inst(78, {	-- Firelands
 		["isRaid"] = true,
 		["coord"] = { 47.3, 78.1, MOUNT_HYJAL },

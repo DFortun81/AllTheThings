@@ -8,7 +8,7 @@ _.WorldEvents =
 	d(24, {  -- Timewalking
 		["u"] = 42,	--  Timewalking
 		["g"] = {
-			tier(4, {	-- Catacylsm
+			tier(CATA_TIER, {
 				q(40786, {	-- The Smoldering Ember (A)
 					["provider"] = { "i", 133378 },	-- Smoldering Timewarped Ember
 					["isWeekly"] = true,

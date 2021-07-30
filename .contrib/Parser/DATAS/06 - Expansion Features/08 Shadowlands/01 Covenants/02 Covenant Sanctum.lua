@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		n(-900, {	-- Covenant Sanctum
 			["description"] = "These rewards are shared across Covenants.",
 			["g"] = {

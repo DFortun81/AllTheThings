@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(8, {	-- Battle for Azeroth
+	tier(BFA_TIER, {
 		m(1527, {	-- Uldum (under assault)
 			["icon"] = "Interface\\Icons\\INV_FACTION_83_ULDUMACCORD",
 			["lvl"] = 120,

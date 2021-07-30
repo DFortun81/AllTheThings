@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(7, {	-- Legion
+	tier(LEGION_TIER, {
 		f(200, {	-- Recipes
 			prof(ALCHEMY, {
 				i(142119),	-- Recipe: Potion of Prolonged Power (Rank 1)

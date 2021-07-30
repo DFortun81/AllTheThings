@@ -1,5 +1,5 @@
 profession(HERBALISM, {
-	tier(7, applyclassicphase(LEGION_PHASE_ONE, {	-- Legion
+	tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, {
 		{
 			["name"] = "Aethril",
 			["nextRecipeID"] = 193293,
@@ -113,7 +113,7 @@ profession(HERBALISM, {
 			["recipeID"] = 193306
 		}
 	})),
-	tier(8, applyclassicphase(BFA_PHASE_ONE, {	-- Battle for Azeroth
+	tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, {
 		{
 			["name"] = "Akunda's Bite",
 			["nextRecipeID"] = 252412,

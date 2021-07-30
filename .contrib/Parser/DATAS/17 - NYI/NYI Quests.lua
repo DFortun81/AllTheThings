@@ -10,7 +10,7 @@ p = function(...) return un(NEVER_IMPLEMENTED, oldP(...)); end
 _.NeverImplemented =
 {
 	n(QUESTS, {
-		tier(7, {	-- Legion -- These Quests might be ingame, very unlikely however.
+		tier(LEGION_TIER, {	-- These Quests might be ingame, very unlikely however.
 			q(43497),	-- Legion 110 A
 			q(43498),	-- Legion 110 A
 			q(41710),	-- Legion 110 A
@@ -71,7 +71,7 @@ _.NeverImplemented =
 			q(42559),	-- WOD 100 H		-- WoD quest with Legion ID smh
 			q(42560),	-- WOD 100 H		-- WoD quest with Legion ID smh
 		}),
-		tier(8, {	-- Battle for Azeroth -- These Quests might be ingame, very unlikely however.
+		tier(BFA_TIER, { -- These Quests might be ingame, very unlikely however.
 			q(53374),	-- BFA 111-119 E
 			q(53375),	-- BFA 111-119 E
 			q(53376),	-- BFA 111-119 E
@@ -137,7 +137,7 @@ _.NeverImplemented =
 			q(58089),	-- Test Quest
 			q(57112),	-- Test Shared Quest
 		}),
-		tier(9, {	-- Shadowlands -- These Quests might be ingame, very unlikely however.
+		tier(SL_TIER, { -- These Quests might be ingame, very unlikely however.
 			q(62300),	-- Classic 20-49
 			q(62301),	-- Classic 50
 			q(62302),	-- Classic 50

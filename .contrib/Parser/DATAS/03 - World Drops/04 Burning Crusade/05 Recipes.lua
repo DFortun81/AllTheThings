@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(2, {	-- Burning Crusade
+	tier(TBC_TIER, {
 		f(200, {	-- Recipes
 			prof(ALCHEMY, {
 				i(22914),	-- Recipe: Destruction Potion

@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(8, {	-- Battle for Azeroth
+	tier(BFA_TIER, {
 		n(-10057, {	-- War Effort
 			m(ARATHI_HIGHLANDS, {
 				n(WORLD_QUESTS, {

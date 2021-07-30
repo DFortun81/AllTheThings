@@ -6,7 +6,7 @@ _.WorldEvents =
 	n(-520, {	-- Expansion Prelaunch Events
 		["icon"] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",
 		["groups"] = {
-			tier(9, {	-- Shadowlands
+			tier(SL_TIER, {
 				n(ACHIEVEMENTS, {
 					ach(14750, {	-- Death Rising
 						["u"] = REMOVED_FROM_GAME,

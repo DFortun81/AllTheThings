@@ -7,7 +7,7 @@ recipe = function(recipeID)
 end
 
 profession(FIRST_AID, {
-	tier(1, {	-- Classic
+	tier(CLASSIC_TIER, {
 		recipe(3275),	-- Linen Bandage
 		recipe(3276),	-- Heavy Linen Bandage
 		recipe(7934),	-- Anti-Venom
@@ -22,31 +22,31 @@ profession(FIRST_AID, {
 		recipe(18630),	-- Heavy Runecloth Bandage
 		recipe(23787),	-- Powerful Anti-Venom
 	}),
-	applyclassicphase(TBC_PHASE_ONE, tier(2, {	-- Burning Crusade
+	applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		recipe(27032),	-- Nethercloth Bandage
 		recipe(27033),	-- Heavy Nethercloth Bandage
 	})),
-	applyclassicphase(WRATH_PHASE_ONE, tier(3, {	-- Wrath of the Lich King
+	applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		recipe(45545),	-- Frostweave Bandage
 		recipe(45546),	-- Heavy Frostweave Bandage
 	})),
-	applyclassicphase(CATA_PHASE_ONE, tier(4, {	-- Cataclysm
+	applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, {
 		recipe(74556),	-- Embersilk Bandage
 		recipe(74557),	-- Heavy Embersilk Bandage
 		recipe(74558),	-- Field Bandage: Dense Embersilk
 		recipe(88893),	-- Dense Embersilk Bandage
 	})),
-	applyclassicphase(MOP_PHASE_ONE, tier(5, {	-- Mists of Pandaria
+	applyclassicphase(MOP_PHASE_ONE, tier(MOP_TIER, {
 		recipe(102697),	-- Windwool Bandage
 		recipe(102698),	-- Heavy Windwool Bandage
 	})),
-	applyclassicphase(WOD_PHASE_ONE, tier(6, {	-- Warlords of Draenor
+	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, {
 		recipe(172539),	-- Antiseptic Bandage
 		recipe(172541),	-- Blackwater Anti-Venom
 		recipe(172542),	-- Fire Ammonite Oil
 		recipe(172540),	-- Healing Tonic
 	})),
-	applyclassicphase(LEGION_PHASE_ONE, tier(7, {	-- Legion
+	applyclassicphase(LEGION_PHASE_ONE, tier(LEGION_TIER, {
 		recipe(202853),	-- Silkweave Bandage
 		recipe(202854),	-- Silkweave Splint
 		recipe(230047),	-- Feathered Luffa

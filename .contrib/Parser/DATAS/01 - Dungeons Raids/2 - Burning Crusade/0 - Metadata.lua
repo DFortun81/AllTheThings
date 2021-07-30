@@ -4,7 +4,7 @@
 
 _.Instances =
 {
-	tier(2, {	-- Burning Crusade
+	tier(TBC_TIER, {
 		-- #if ANYCLASSIC
 		["u"] = TBC_PHASE_ONE,
 		-- #endif

@@ -9,7 +9,7 @@ _.HiddenQuestTriggers = {
 		q(13807),	-- FLAG: Tournament Invitation
 
 
-		tier(8, {	-- Battle for Azeroth
+		tier(BFA_TIER, {
 			["g"] = bubbleDown({["u"] = 1}, {
 				n(QUESTS, {
 					q(47860),	-- A Rude Awakening

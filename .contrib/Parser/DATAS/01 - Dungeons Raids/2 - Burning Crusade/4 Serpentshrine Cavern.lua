@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(2,	applyclassicphase(TBC_PHASE_TWO, { -- Burning Crusade
+_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 	inst(748, {	-- Serpentshrine Cavern
 		["mapID"] = SERPENTSHRINE_CAVERN,
 		["coords"] = {

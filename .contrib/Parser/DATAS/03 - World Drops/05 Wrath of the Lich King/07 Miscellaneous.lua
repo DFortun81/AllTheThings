@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(3, {	-- Wrath of the Lich King
+	tier(WOTLK_TIER, {
 		n(-383, {	-- Miscellaneous
 			i(43297, {	-- Damaged Necklace (Quest Version)
 				["repeatable"] = true,

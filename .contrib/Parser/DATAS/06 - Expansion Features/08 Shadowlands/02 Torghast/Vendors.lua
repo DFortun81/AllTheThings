@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		m(1627, {	-- Torghast
 			n(VENDORS, {
 				n(-979, {	-- Broker Ve'ken & Broker Ve'nott

@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(3, {	-- Wrath of the Lich King
+	tier(WOTLK_TIER, {
 		f(113, {	-- Bags
 			i(41597),	-- Abyssal Bag
 		}),

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(6, {	-- Warlords of Draenor
+_.Instances = { tier(WOD_TIER, {
 	inst(556, {	-- The Everbloom
 		["coord"] = { 59.55, 45.45, GORGROND },
 		["maps"] = { 620, 621 },

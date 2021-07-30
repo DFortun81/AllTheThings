@@ -4,7 +4,7 @@
 
 _.Instances =
 {
-	tier(6, {	-- Warlords of Draenor
+	tier(WOD_TIER, {
 		-- #if ANYCLASSIC
 		["u"] = WOD_PHASE_ONE,
 		-- #endif

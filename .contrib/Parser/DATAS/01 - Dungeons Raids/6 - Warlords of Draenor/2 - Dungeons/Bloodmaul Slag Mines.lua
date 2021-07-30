@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(6, {	-- Warlords of Draenor
+_.Instances = { tier(WOD_TIER, {
 	inst(385, {	-- Bloodmaul Slag Mines
 		["lvl"] = 90,
 		["mapID"] = 573,

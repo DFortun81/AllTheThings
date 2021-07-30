@@ -4,7 +4,7 @@
 
 _.Instances =
 {
-	tier(3, {	-- Wrath of the Lich King
+	tier(WOTLK_TIER, {
 		-- #if ANYCLASSIC
 		["u"] = WRATH_PHASE_ONE,
 		-- #endif

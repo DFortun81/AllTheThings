@@ -59,7 +59,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				i(49909),	-- Box of Chocolates
 				i(34258),	-- Love Rocket
 			}),
-			tier(3, {	-- Northrend
+			tier(WOTLK_TIER, {
 				inst(277, {	-- Halls of Stone
 					d(2, {	-- Heroic
 						n(27975, {	-- Maiden of Grief
@@ -75,7 +75,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 					}),
 				}),
 			}),
-			tier(4, {	-- Cataclysm
+			tier(CATA_TIER, {
 				inst(66, {	-- Blackrock Caverns
 					d(1, {	-- Normal
 						n(39679, {	-- Corla, Herald of Twilight
@@ -146,7 +146,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 					}),
 				}),
 			}),
-			tier(6, {	-- Warlords of Draenor
+			tier(WOD_TIER, {
 				inst(537, {	-- Shadowmoon Burial Grounds
 					d(1, {	-- Normal
 						cr(75509, e(1139, {	-- Sadana Bloodfury

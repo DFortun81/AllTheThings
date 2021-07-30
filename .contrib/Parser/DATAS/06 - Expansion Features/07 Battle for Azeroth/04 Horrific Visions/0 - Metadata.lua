@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(8, {	-- Battle for Azeroth
+	tier(BFA_TIER, {
 		n(-10080, {	-- Horrific Visions
 			["lvl"] = 120,
 			["maps"] = {

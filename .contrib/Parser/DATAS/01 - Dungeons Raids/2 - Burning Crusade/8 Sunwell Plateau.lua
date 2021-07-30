@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(2, applyclassicphase(TBC_PHASE_FIVE, {	-- Burning Crusade
+_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 	inst(752, {	-- Sunwell Plateau
 		["coord"] = { 44.28, 45.71, ISLE_OF_QUELDANAS },	-- Sunwell Plateau, Isle of Quel'Danas
 		["maps"] = {

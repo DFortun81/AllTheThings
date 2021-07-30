@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		n(-949, {	-- Covenant: Venthyr
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr
 			["maps"] = {

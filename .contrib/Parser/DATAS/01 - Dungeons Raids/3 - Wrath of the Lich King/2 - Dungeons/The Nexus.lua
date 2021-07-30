@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 -- TODO: reformat achievs here
-_.Instances = { tier(3, {	-- Wrath of the Lich King
+_.Instances = { tier(WOTLK_TIER, {
 	inst(281, {	-- The Nexus
 		["lvl"] = 59,
 		["mapID"] = 129,

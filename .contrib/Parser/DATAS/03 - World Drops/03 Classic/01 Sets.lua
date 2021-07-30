@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(1, {	-- Classic
+	tier(CLASSIC_TIER, {
 		n(-1000, {	-- Sets
 			i(9937),	-- Abjurer's Bands
 			i(9936),	-- Abjurer's Boots

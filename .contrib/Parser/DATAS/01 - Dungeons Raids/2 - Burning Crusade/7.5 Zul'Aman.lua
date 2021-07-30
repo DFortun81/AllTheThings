@@ -18,7 +18,7 @@ local FOREST_FROG = n(24396, {	-- Forest Frog
 		i(33932),	-- Amani Charm of the Witch Doctor
 	},
 });
-_.Instances = { tier(2, applylegacyclassicphase(TBC_PHASE_FOUR, {	-- Burning Crusade
+_.Instances = { tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 	inst(77, {	-- Zul'Aman
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["mapID"] = ZULAMAN,

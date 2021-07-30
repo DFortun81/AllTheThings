@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		prof(LEATHERWORKING, {
 			filter(32, {	-- Bows
 				i(172350),	-- Composite Bow

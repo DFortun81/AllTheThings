@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(8, {	-- Battle For Azeroth
+	tier(BFA_TIER, {
 		prof(ENGINEERING, {
 			filter(100, {	-- Mounts
 				i(161134),	-- Mecha-Mogul Mk2

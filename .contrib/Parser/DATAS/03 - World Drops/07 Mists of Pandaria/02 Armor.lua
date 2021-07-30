@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(5, {	-- Mists of Pandaria
+	tier(MOP_TIER, {
 		n(-318, {	-- Armor
 			n(-320, {	-- Head
 				i(87450),	-- Hood of Alchemical Vapors

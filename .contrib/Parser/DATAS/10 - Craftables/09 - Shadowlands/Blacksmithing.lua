@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		prof(BLACKSMITHING, {
 			filter(20, {	-- Daggers
 				i(171390),	-- Ceremonious Blade

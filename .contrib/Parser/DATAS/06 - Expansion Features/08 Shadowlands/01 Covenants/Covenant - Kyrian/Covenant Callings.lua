@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		n(-939, {	-- Covenant: Kyrian
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 			["maps"] = {

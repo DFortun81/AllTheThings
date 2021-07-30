@@ -6,7 +6,7 @@ _.WorldEvents =
 	n(-520, {	-- Expansion Prelaunch Events
 		["icon"] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",
 		["groups"] = {
-			tier(5, {	-- Mists of Pandaria
+			tier(MOP_TIER, {
 				["lvl"] = 85,
 				["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 					ach(7467, {	-- Theramore's Fall

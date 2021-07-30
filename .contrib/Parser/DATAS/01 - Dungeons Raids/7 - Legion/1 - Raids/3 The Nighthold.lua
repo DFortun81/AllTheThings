@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
-_.Instances = { tier(7, {	-- Legion
+_.Instances = { tier(LEGION_TIER, {
 	inst(786, {	-- The Nighthold
 		["isRaid"] = true,
 		["coords"] = {

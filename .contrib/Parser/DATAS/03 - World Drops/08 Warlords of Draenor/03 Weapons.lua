@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(6, {	-- Warlords of Draenor
+	tier(WOD_TIER, {
 		n(-319, {	-- Weapons
 			n(-334, {	-- 1H Axes
 				i(116457),	-- Frostbitten Axe

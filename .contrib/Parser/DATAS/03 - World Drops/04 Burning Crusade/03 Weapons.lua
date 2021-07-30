@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(2, {	-- Burning Crusade
+	tier(TBC_TIER, {
 		n(-319, {	-- Weapons
 			n(-334, {	-- 1H Axes
 				i(25198),	-- Karaborian Battle Axe

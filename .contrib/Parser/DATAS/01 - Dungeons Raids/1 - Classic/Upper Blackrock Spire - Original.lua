@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 
-_.Instances = { tier(1, {	-- Classic
+_.Instances = { tier(CLASSIC_TIER, {
 	inst(559, {	-- Upper Blackrock Spire
 		["u"] = REMOVED_FROM_GAME,
 		["lvl"] = 55,

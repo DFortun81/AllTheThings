@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(7, {	-- Legion
+	tier(LEGION_TIER, {
 		n(-319, {	-- Weapons
 			n(-337, {	-- 2H Maces
 				i(132921),	-- Athrog's Dethamma

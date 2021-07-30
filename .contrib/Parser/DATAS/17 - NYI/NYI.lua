@@ -31,7 +31,7 @@ _.NeverImplemented =
 	i(105642, {	-- Tusks of Mannoroth [Mythic Warforged]
 		["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 105642",
 	}),
-	tier(9,	{	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
+	tier(SL_TIER, {	-- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
 		-- Set added in 9.1.0
 		-- Night Fae -- of the Twilight Grove -- Korthia Dailies?
 		i(186500),	-- Ensemble: Garb of the Twilight Grove

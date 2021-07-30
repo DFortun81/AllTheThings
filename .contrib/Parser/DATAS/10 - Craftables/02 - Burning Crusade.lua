@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-_.Craftables = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
+_.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	prof(ALCHEMY, {
 		filter(53, {	-- Trinkets
 			i(13503),	-- Alchemist Stone

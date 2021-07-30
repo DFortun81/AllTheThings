@@ -7,7 +7,7 @@ _.WorldEvents =
 	d(24, {  -- Timewalking
 		["u"] = 42,	--  Timewalking
 		["g"] = {
-			tier(5, {	-- Mists of Pandaria
+			tier(MOP_TIER, {
 				q(45563, {	-- The Shrouded Coin
 					["provider"] = { "i", 143776 },	-- Shrouded Timewarped Coin
 					["isWeekly"] = true,

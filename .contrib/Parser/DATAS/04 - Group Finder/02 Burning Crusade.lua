@@ -4,7 +4,7 @@
 
 _.GroupFinder =
 {
-	tier(2, {	-- Burning Crusade
+	tier(TBC_TIER, {
 		i(156682, {	-- Otherworldy Satchel of Helpful Goods
 			i(51969),	-- Enumerated Shoulders*
 			i(51972),	-- Enumerated Bracers*

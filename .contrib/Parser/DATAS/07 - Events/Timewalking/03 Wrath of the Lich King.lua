@@ -7,7 +7,7 @@ _.WorldEvents =
 	d(24, {  -- Timewalking
 		["u"] = 42,	--  Timewalking
 		["g"] = {
-			tier(3, {	-- Wrath of the Lich King
+			tier(WOTLK_TIER, {
 				q(50316, {	-- Disturbance Detected: Ulduar
 					["provider"] = { "n", 130654 },	-- Vormu
 					["isWeekly"] = true,

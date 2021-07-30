@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(8, {	-- Battle for Azeroth
+	tier(BFA_TIER, {
 		n(-319, {	-- Weapons [Epic -- No adjustments]
 			i(163969),	-- Ameelton's Shot-Thrower
 			i(163957),	-- Carmodius Crystalline Stylus

@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-_.Craftables = { tier(1, {	-- Classic
+_.Craftables = { tier(CLASSIC_TIER, {
 	prof(ALCHEMY, {
 		category(644, {	-- Materials
 			i(9210),	-- Ghost Dye

@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(1, {	-- Classic
+	tier(CLASSIC_TIER, {
 		n(-318, {	-- Armor
 			n(-320, {	-- Head
 				i(13102),	-- Cassandra's Grace

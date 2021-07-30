@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		n(-364, bubbleDown({ ["timeline"] = { "added 9.0.1.36216", } }, {	-- Legendaries
 			i(183247),	-- Memory of a Stable Phantasma Lure
 			i(183249),	-- Memory of a Vital Sacrifice
@@ -57,37 +57,37 @@ _.ExpansionFeatures =
 				}),
 			})),
 			cl(DEMONHUNTER, {
-			
-			}),	
+
+			}),
 			cl(DRUID, {
-			
-			}),	
+
+			}),
 			cl(HUNTER, {
-			
+
 			}),
 			cl(MAGE, {
-			
+
 			}),
 			cl(MONK, {
-			
+
 			}),
 			cl(PALADIN, {
-			
+
 			}),
 			cl(PRIEST, {
-			
+
 			}),
 			cl(ROGUE, {
-			
+
 			}),
 			cl(SHAMAN, {
-			
+
 			}),
 			cl(WARLOCK, {
-			
+
 			}),
 			cl(WARRIOR, {
-			
+
 			}),
 		})),
 	}),

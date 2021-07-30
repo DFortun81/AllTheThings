@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
+_.Instances = { tier(WOTLK_TIER, {
 	inst(276, {	-- Halls of Reflection
 		["mapID"] = 185,
 		["coord"] = { 52.3, 89.3, 118 },

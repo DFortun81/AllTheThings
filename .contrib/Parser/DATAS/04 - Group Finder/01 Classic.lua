@@ -4,7 +4,7 @@
 
 _.GroupFinder =
 {
-	tier(1, {	-- Classic
+	tier(CLASSIC_TIER, {
 		i(156683, {	-- Satchel of Helpful Goods [Level 7-50]
 			i(51982),			-- Earthbound Boots*
 			un(REMOVED_FROM_GAME, i(51978)),	-- Earthbound Girdle [Probably unobtainable]

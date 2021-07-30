@@ -7,7 +7,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 	holiday(235485, {	-- Feast of Winter Veil
 		-- TODO: These are temporarily here.  They trigger Crieve to be in unsorted.  Will fix more when I revamp it - Luce.
 		n(-139, {	-- Bosses
-			tier(3, {	-- Northrend
+			tier(WOTLK_TIER, {
 				inst(282, {	-- The Oculus
 					n(27655, {	-- Mage-Lord Urom
 						un(HOLIDAY_FEAST_OF_WINTER_VEIL, ig(21525, {	-- Green Winter Hat
@@ -30,7 +30,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					}),
 				}),
 			}),
-			tier(4, {	-- Cataclysm
+			tier(CATA_TIER, {
 				inst(71, {	-- Grim Batol
 					n(40319, {	-- Drahga Shadowburner
 						un(HOLIDAY_FEAST_OF_WINTER_VEIL, ig(21525, {	-- Green Winter Hat
@@ -75,7 +75,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					}),
 				}),
 			}),
-			tier(5, {	-- Pandaria
+			tier(MOP_TIER, {
 				inst(369, {	-- Siege of Orgrimmar
 					["isRaid"] = true,
 					["groups"] = {
@@ -124,7 +124,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					},
 				}),
 			}),
-			tier(6, {	-- Draenor
+			tier(WOD_TIER, {
 				inst(457, {	-- Blackrock Foundry
 					["isRaid"] = true,
 					["groups"] = {
@@ -194,7 +194,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					}),
 				}),
 			}),
-			tier(7, {	-- Legion
+			tier(LEGION_TIER, {
 				inst(946, {	-- Antorus, the Burning Throne
 					["isRaid"] = true,
 					["groups"] = {
@@ -250,7 +250,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					}),
 				}),
 			}),
-			tier(8, {	-- Battle for Azeroth
+			tier(BFA_TIER, {
 				inst(1031, {	-- Uldir
 					["isRaid"] = true,
 					["groups"] = {

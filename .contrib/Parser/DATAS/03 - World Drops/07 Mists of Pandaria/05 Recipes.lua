@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(5, {	-- Mists of Pandaria
+	tier(MOP_TIER, {
 		f(200, {	-- Recipes
 			prof(BLACKSMITHING, {
 				i(100865, {	-- Plans: Balanced Trillium Ingot and Its Uses

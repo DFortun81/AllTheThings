@@ -7,7 +7,7 @@ _.GearSets =
 	n(-366, {	-- Weapon Sets
 		["g"] = {
 			n(-9, {	-- PvP
-				tier(2, {	-- Burning Crusade
+				tier(TBC_TIER, {
 					-- -- Never added, combined with Season 2
 					-- i(146651, {	-- Arsenal: Gladiator's Weapons
 					i(146650, {	-- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
@@ -56,7 +56,7 @@ _.GearSets =
 						 },
 					}),
 				}),
-				tier(3, {	-- Wrath of the Lich King
+				tier(WOTLK_TIER, {
 					i(146647, {	-- Arsenal: Savage Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
@@ -100,7 +100,7 @@ _.GearSets =
 						},
 					}),
 				}),
-				tier(4, {	-- Cataclysm
+				tier(CATA_TIER, {
 					i(146641, {	-- Arsenal: Vicious Gladiator's Weapons
 						["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -672, -661 }, },
 					}),
@@ -111,7 +111,7 @@ _.GearSets =
 						["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -674, -661 }, },
 					}),
 				}),
-				tier(5, {	-- Mists of Pandaria
+				tier(MOP_TIER, {
 					i(144243, {	-- Arsenal: Malevolent Gladiator's Weapons [ Horde / Alliance / Tested ]
 						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", -10041, -675, -661 },
@@ -187,7 +187,7 @@ _.GearSets =
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				tier(6, {	-- Warlords of Draenor
+				tier(WOD_TIER, {
 					i(138625, {	-- Arsenal: Primal Combatant's Weapons [ Alliance / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {

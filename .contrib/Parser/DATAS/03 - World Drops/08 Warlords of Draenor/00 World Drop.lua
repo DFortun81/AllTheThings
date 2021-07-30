@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(6, {	-- Warlords of Draenor
+	tier(WOD_TIER, {
 		i(116438),		-- Burned-Out Hand Cannon
 		i(114972),		-- Cryptic Tome of Tailoring
 		i(114877),		-- Dirty Note

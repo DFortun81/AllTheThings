@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(8, {	-- Battle for Azeroth
+_.Instances = { tier(BFA_TIER, {
 	inst(1179, {	-- The Eternal Palace
 		["isRaid"] = true,
 		["coord"] = { 50.5, 11.9, 1355 },

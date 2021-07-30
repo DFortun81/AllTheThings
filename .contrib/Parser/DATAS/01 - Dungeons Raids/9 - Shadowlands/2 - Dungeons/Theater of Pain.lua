@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(9, {	-- Shadowlands
+_.Instances = { tier(SL_TIER, {
 	inst(1187, {	-- Theater of Pain
 		["coord"] = { 53.1, 53.0, MALDRAXXUS },
 		["maps"] = {

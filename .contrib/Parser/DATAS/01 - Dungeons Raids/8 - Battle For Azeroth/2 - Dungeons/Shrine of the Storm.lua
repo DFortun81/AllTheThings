@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(8, {	-- Battle For Azeroth
+_.Instances = { tier(BFA_TIER, {
 	inst(1036, {	-- Shrine of the Storm
 		["coord"] = { 78.8, 26.5, 942 },
 		["maps"] = {

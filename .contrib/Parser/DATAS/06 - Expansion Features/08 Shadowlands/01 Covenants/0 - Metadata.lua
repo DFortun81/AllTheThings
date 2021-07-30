@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		n(-900, {	-- Covenant Sanctum
 			["icon"] = 3726261, -- Inv_misc_covenant_renown
 			["maps"] = {

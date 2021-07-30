@@ -4,7 +4,7 @@
 
 _.GroupFinder =
 {
-	tier(7, {	-- Legion
+	tier(LEGION_TIER, {
 		i(140591),	-- Shattered Satchel of Cooperation
 	}),
 };

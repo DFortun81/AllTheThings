@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(8, {	-- Battle for Azeroth
+	tier(BFA_TIER, {
 		n(-3338, {	-- Island Expeditions
 			n(-6015, {	-- Rewards
 				["icon"] = "Interface\\Icons\\INV_Misc_Bag_SatchelofCenarius",

@@ -4,45 +4,45 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		n(-981, {	-- Conduits
 			i(187507),	-- Adaptive Armor Fragment
 			i(187506),	-- Condensed Anima Sphere
 			cl(DEATHKNIGHT, {
-				
+
 			}),
 			cl(DEMONHUNTER, {
-			
-			}),	
+
+			}),
 			cl(DRUID, {
-			
-			}),	
+
+			}),
 			cl(HUNTER, {
-			
+
 			}),
 			cl(MAGE, {
-			
+
 			}),
 			cl(MONK, {
-			
+
 			}),
 			cl(PALADIN, {
-			
+
 			}),
 			cl(PRIEST, {
-			
+
 			}),
 			cl(ROGUE, {
-			
+
 			}),
 			cl(SHAMAN, {
-			
+
 			}),
 			cl(WARLOCK, {
-			
+
 			}),
 			cl(WARRIOR, {
-			
+
 			}),
 		}),
 	}),

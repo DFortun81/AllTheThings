@@ -4,7 +4,7 @@
 
 _.Instances =
 {
-	tier(8, {	-- BFA
+	tier(BFA_TIER, {
 		-- #if ANYCLASSIC
 		["u"] = BFA_PHASE_ONE,
 		-- #endif

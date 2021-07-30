@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		prof(ENCHANTING, {
 			filter(102, {	-- Toy
 				i(186973),	-- Anima-ted Leash

@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(7, {	-- Legion
+	tier(LEGION_TIER, {
 		n(-1000, {	-- Sets
 			["groups"] = bubbleDown({["bonusID"] = 1812}, {
 				i(121241),	-- Ambervale Hood

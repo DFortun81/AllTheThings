@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(6, {	-- Warlords of Draneor
+	tier(WOD_TIER, {
 		prof(ALCHEMY, {
 			filter(53, {	-- Trinkets
 				i(109262),	-- Draenic Philosopher's Stone

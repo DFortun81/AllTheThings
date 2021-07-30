@@ -3,7 +3,7 @@
 ---------------------------------------------
 _.Craftables =
 {
-	tier(7, {	-- Legion
+	tier(LEGION_TIER, {
 		prof(ALCHEMY, {
 			n(DISCOVERY, {
 				["requireSkill"] = ALCHEMY,

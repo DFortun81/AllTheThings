@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(8, {	-- Battle for Azeroth
+	tier(BFA_TIER, {
 		m(1530, {	-- Vale of Eternal Blossoms
 			["icon"] = "Interface\\Icons\\INV_FACTION_83_RAJANI",
 			["lvl"] = 120,

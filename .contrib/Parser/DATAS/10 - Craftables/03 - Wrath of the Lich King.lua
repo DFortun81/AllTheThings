@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(3, {	-- Wrath of the Lich King
+	tier(WOTLK_TIER, {
 		prof(ALCHEMY, {
 			filter(53, {	-- Trinkets
 				i(44323),	-- Indestructible Alchemist Stone

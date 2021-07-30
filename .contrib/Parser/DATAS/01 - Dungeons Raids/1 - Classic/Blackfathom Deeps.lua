@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(1, {	-- Classic
+_.Instances = { tier(CLASSIC_TIER, {
 	inst(227, {	-- Blackfathom Deeps
 		["lvl"] = 15,
 		["maps"] = { BLACKFATHOM_DEEPS, BLACKFATHOM_DEEPS_LEVEL2, BLACKFATHOM_DEEPS_LEVEL3 },

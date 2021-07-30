@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		n(-319, {	-- Weapons [Epic -- No adjustments]
 			i(184805),	-- Ballista of Buried Kings
 			i(184803),	-- Halberd of Agthia

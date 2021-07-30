@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(8, {	-- Battle for Azeroth
+	tier(BFA_TIER, {
 		n(-10057, {	-- War Effort
 			n(-237, {	-- Warfront: The Battle for Darkshore
 				["lvl"] = 120,

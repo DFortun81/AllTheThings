@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(5, {	-- Mists of Pandaria
+_.Instances = { tier(MOP_TIER, {
 	inst(321, {	-- Mogu'shan Palace
 		["coord"] = { 80.5, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
 		["maps"] = { 453, 454, 455 },

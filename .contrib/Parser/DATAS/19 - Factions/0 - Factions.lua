@@ -20,30 +20,30 @@ _.Factions =
 			faction(730),	-- Stormpike Guards
 			faction(509),	-- The League of Arathor
 		})),
-		tier(1, sharedData({["races"] = ALLIANCE_ONLY,}, {	-- Classic
+		tier(CLASSIC_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
 			faction(589),	-- Wintersaber Trainers
 		})),
-		tier(2, sharedData({["races"] = ALLIANCE_ONLY,}, {	-- The Burning Crusade
+		tier(TBC_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
 			faction(946),	-- Honor Hold
 			faction(978),	-- Kurenai
 		})),
-		tier(3, sharedData({["races"] = ALLIANCE_ONLY,}, {	-- Wrath of the Lich King
+		tier(WOTLK_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
 			faction(1037),	-- Alliance Vanguard
 			faction(1068),	-- Explorer's League
 			faction(1126),	-- The Frostborn
 			faction(1094),	-- The Silver Covenant
 			faction(1050),	-- Valiance Expedition
 		})),
-		tier(4, sharedData({["races"] = ALLIANCE_ONLY,}, {	-- Cataclysm
+		tier(CATA_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
 			faction(1177),	-- Baradin's Wardens
 			faction(1174),	-- Wildhammer Clan
 		})),
-		tier(5, sharedData({["races"] = ALLIANCE_ONLY,}, {	-- Mists of Pandaria
+		tier(MOP_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
 			faction(1387),	-- Kirin Tor Offensive
 			faction(1376),	-- Operation: Shieldwall
 			faction(1242),	-- Pearlfin Jinyu
 		})),
-		tier(6, sharedData({["races"] = ALLIANCE_ONLY,}, {	-- Warlords of Draenor
+		tier(WOD_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
 			faction(1731),	-- Councils of Exarchs
 			faction(1847),	-- Hand of The Prophet
 			faction(1710),	-- Sha'tari Defense
@@ -51,7 +51,7 @@ _.Factions =
 			faction(1738),	-- Defender Illona
 			faction(1733),	-- Delvar Ironfist
 		})),
-		tier(8, sharedData({["races"] = ALLIANCE_ONLY,}, {	-- The Battle for Azeroth
+		tier(BFA_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
 			faction(2159),	-- 7th Legion
 			faction(2161),	-- Order of Embers
 			faction(2160),	-- Proudmoore Admiralty
@@ -74,28 +74,28 @@ _.Factions =
 			faction(510),	-- The Defilers
 			faction(889),	-- Warsong Outriders
 		})),
-		tier(2, sharedData({["races"] = HORDE_ONLY,}, {	-- The Burning Crusade
+		tier(TBC_TIER, sharedData({["races"] = HORDE_ONLY,}, {
 			faction(941),	-- The Mag'har
 			faction(947),	-- Thrallmar
 			faction(922),	-- Tranquillen
 		})),
-		tier(3, sharedData({["races"] = HORDE_ONLY,}, {	-- Wrath of the Lich King
+		tier(WOTLK_TIER, sharedData({["races"] = HORDE_ONLY,}, {
 			faction(1052),	-- Horde Expedition
 			faction(1067),	-- The Hand of Vengeance
 			faction(1124),	-- The Sunreavers
 			faction(1064),	-- The Taunka
 			faction(1085),	-- Warsong Offensive
 		})),
-		tier(4, sharedData({["races"] = HORDE_ONLY,}, {	-- Cataclysm
+		tier(CATA_TIER, sharedData({["races"] = HORDE_ONLY,}, {
 			faction(1172),	-- Dragonmaw Clan
 			faction(1178),	-- Hellscream's Reach
 		})),
-		tier(5, sharedData({["races"] = HORDE_ONLY,}, {	-- Mists of Pandaria
+		tier(MOP_TIER, sharedData({["races"] = HORDE_ONLY,}, {
 			faction(1375),	-- Dominance Offensive
 			faction(1228),	-- Forest Hozen
 			faction(1388),	-- Sunreaver Onslaught
 		})),
-		tier(6, sharedData({["races"] = HORDE_ONLY,}, {	-- Warlords of Draenor
+		tier(WOD_TIER, sharedData({["races"] = HORDE_ONLY,}, {
 			faction(1445),	-- Frostwolf Orcs
 			faction(1708),	-- Laughing Skull Orcs
 			faction(1848),	-- Vol'jin's Headhunters
@@ -103,7 +103,7 @@ _.Factions =
 			faction(1740),	-- Aeda Brightdawn
 			faction(1739),	-- Vivianne
 		})),
-		tier(8, sharedData({["races"] = HORDE_ONLY,}, {	-- The Battle for Azeroth
+		tier(BFA_TIER, sharedData({["races"] = HORDE_ONLY,}, {
 			faction(2156),	-- Talanji's  Expedition
 			faction(2157),	-- The Honorbound
 			faction(2158),	-- Voldunai
@@ -111,7 +111,7 @@ _.Factions =
 			faction(2373),	-- The Unshackled
 		})),
 	}),
-	tier(1, {	-- Classic
+	tier(CLASSIC_TIER, {
 		faction(529),	-- Argent Dawn
 		faction(87),	-- Bloodsail Buccaneers
 		faction(910),	-- Brood of Nozdormu
@@ -136,7 +136,7 @@ _.Factions =
 		faction(576),	-- Timbermaw Hold
 		un(REMOVED_FROM_GAME, faction(270)),	-- Zandalar Tribe
 	}),
-	tier(2, {	-- The Burning Crusade
+	tier(TBC_TIER, {
 		faction(1012),	-- Ashtongue Deathsworn
 		faction(942),	-- Cenarion Expedition
 		faction(989),	-- Keepers of Time
@@ -157,7 +157,7 @@ _.Factions =
 		faction(935),	-- The Sha'tar
 		faction(967),	-- The Violet Eye
 	}),
-	tier(3, {	-- Wrath of the Lich King
+	tier(WOTLK_TIER, {
 		["description"] = "Wrath of the Lich King is the second expansion. The majority of the expansion content takes place in Northrend & centers around the plans of the Lich King. Content highlights include the increase of the level cap from 70 to 80, the introduction of the death knight Hero class, & new PvP/World PvP content.\n\n|CFFFF0000Need to finish off a WotLK rep?  Equip a tabard obtained from the faction quartermaster and clear Halls of Lightning on normal for around 2k rep per clear.|r",
 		["g"] = {
 			faction(1106),	-- Argent Crusade
@@ -175,7 +175,7 @@ _.Factions =
 			faction(1091),	-- The Wyrmrest Accord
 		},
 	}),
-	tier(4, {	-- Cataclysm
+	tier(CATA_TIER, {
 		["description"] = "Cataclysm is the third expansion. Set primarily in a dramatically reforged Kalimdor & Eastern Kingdoms on the world of Azeroth, the expansion follows the return of Deathwing, who causes a new Sundering as he makes his cataclysmic re-entrance into the world from Deepholm. Cataclysm returns players to the two continents of Azeroth for most of their campaigning, opening new zones such as Mount Hyjal, the sunken world of Vashj'ir, Deepholm, Uldum and the Twilight Highlands. It includes two new playable races, the worgen & the goblins. The expansion increases level cap to 85, adds the ability to fly in Kalimdor & Eastern Kingdoms, introduces Archaeology & reforging, & restructures the world itself.\n\n|CFFFF0000Need to finish off a Cataclysm rep?  Equip a tabard obtained from the faction quartermaster and clear Grim Batol on normal for around 2k rep per clear.|r",
 		["g"] = {
 			faction(1204),	-- Avengers of Hyjal
@@ -185,7 +185,7 @@ _.Factions =
 			faction(1171),	-- Therazane
 		},
 	}),
-	tier(5, {	-- Mists of Pandaria
+	tier(MOP_TIER, {
 		faction(1302),	-- The Anglers
 		faction(1341),	-- The August Celestials
 		faction(1359),	-- The Black Prince
@@ -198,7 +198,7 @@ _.Factions =
 		faction(1435),	-- Shado-Pan Assault
 		faction(1272),	-- The Tillers
 	}),
-	tier(6, {	-- Warlords of Draenor
+	tier(WOD_TIER, {
 		faction(1515),	-- Arakkoa Outcasts
 		faction(1849),	-- Order of the Awakened
 		faction(1850),	-- The Saberstalkers
@@ -208,7 +208,7 @@ _.Factions =
 		faction(1737),	-- Talonpriest Ishaal
 		faction(1736),	-- Tormmok
 	}),
-	tier(7, {	-- Legion
+	tier(LEGION_TIER, {
 		faction(1900),	-- Court of Farondis
 		faction(2170),	-- Argussian Reach
 		faction(2045),	-- Armies of Legionfall
@@ -220,14 +220,14 @@ _.Factions =
 		faction(1894),	-- The Wardens
 		faction(1948),	-- Valarjar
 	}),
-	tier(8, {	-- Battle For Azeroth
+	tier(BFA_TIER, {
 		faction(2164),	-- Champions of Azeroth
 		faction(2415),	-- Rajani
 		faction(2163),	-- Tortollan Seekers
 		faction(2391),	-- Rustbolt Resistance
 		faction(2417),	-- Uldum Accord
 	}),
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		faction(2413),	-- Court of Harvesters
 		faction(2464),	-- Court of Night
 		faction(2407),	-- The Ascended

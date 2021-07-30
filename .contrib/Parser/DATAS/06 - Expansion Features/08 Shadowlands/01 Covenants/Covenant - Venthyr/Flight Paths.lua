@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	-- Everything in this file must explicitly be obtainable/usable only by Venthyr characters due to bubbleDown
-	tier(9, bubbleDown({	-- Shadowlands
+	tier(SL_TIER, bubbleDown({
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr
 		},{
 		n(-949, {	-- Covenant: Venthyr

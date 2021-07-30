@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(3, {	-- Wrath of the Lich King
+	tier(WOTLK_TIER, {
 		f(200, {	-- Recipes
 			prof(ALCHEMY, {
 				un(NEVER_IMPLEMENTED, i(112022)),	-- Recipe: Mighty Shadow Protection Potion

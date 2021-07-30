@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(7, {	-- Legion
+_.Instances = { tier(LEGION_TIER, {
 	inst(800, {	-- Court of Stars
 		["coord"] = { 51.0, 65.6, 680 },
 		["maps"] = { 761, 762, 763 },

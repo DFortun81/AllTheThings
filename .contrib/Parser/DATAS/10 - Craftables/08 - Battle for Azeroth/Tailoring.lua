@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(8, {	-- Battle For Azeroth
+	tier(BFA_TIER, {
 		prof(TAILORING, {
 			filter(114, {	-- Mount Equipment
 				i(168427),	-- Saddlechute

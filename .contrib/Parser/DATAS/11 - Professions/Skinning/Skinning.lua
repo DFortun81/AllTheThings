@@ -204,7 +204,7 @@ profession(SKINNING, {
 	}),
 	--[==[--
 	filter(200, {	-- Recipes
-		tier(7, {	-- Legion
+		tier(LEGION_TIER, {
 			recipe(194167),	-- Felhide [Rank 1]
 			recipe(194168),	-- Felhide [Rank 2]
 			recipe(194169),	-- Felhide [Rank 3]
@@ -222,7 +222,7 @@ profession(SKINNING, {
 			recipe(194171),	-- Unbroken Claw
 			recipe(194170),	-- Unbroken Tooth
 		}),
-		tier(8, {	-- Battle For Azeroth
+		tier(BFA_TIER, {
 			recipe(257152),	-- Bone Gathering [Rank 1]
 			recipe(257153),	-- Bone Gathering [Rank 2]
 			recipe(257154),	-- Bone Gathering [Rank 3]

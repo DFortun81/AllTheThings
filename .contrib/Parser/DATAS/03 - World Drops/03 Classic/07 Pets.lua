@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(1, {	-- Classic
+	tier(CLASSIC_TIER, {
 		filter(101, {	-- Battle Pet
 			i(20768, {	--	Oozing Bag
 				i(20769)	-- Disgusting Oozeling

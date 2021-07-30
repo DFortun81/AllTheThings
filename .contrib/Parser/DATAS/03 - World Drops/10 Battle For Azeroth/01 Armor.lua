@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(8, {	-- Battle for Azeroth
+	tier(BFA_TIER, {
 		n(-318, {	-- Armor [Epic -- No adjustments]
 			i(163933),	-- Aguas' Band of Augury
 			i(163936),	-- 'Bygone Bee' Almanac

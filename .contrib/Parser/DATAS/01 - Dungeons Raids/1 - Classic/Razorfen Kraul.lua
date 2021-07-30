@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(1, {	-- Classic
+_.Instances = { tier(CLASSIC_TIER, {
 	inst(234, {	-- Razorfen Kraul
 		["coord"] = { 41.0, 94.6, SOUTHERN_BARRENS },
 		["mapID"] = 301,

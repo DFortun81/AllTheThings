@@ -4,7 +4,7 @@
 
 _.Instances =
 {
-	tier(4, {	-- Cataclysm
+	tier(CATA_TIER, {
 		-- #if ANYCLASSIC
 		["u"] = CATA_PHASE_ONE,
 		-- #endif

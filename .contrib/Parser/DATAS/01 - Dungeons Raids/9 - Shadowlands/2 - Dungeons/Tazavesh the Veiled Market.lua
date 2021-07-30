@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(9, {	-- Shadowlands
+_.Instances = { tier(SL_TIER, {
 	inst(1194, {	-- Tazavesh, the Veiled Market
 		["coord"] = { 88.9, 44.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
 		["maps"] = {

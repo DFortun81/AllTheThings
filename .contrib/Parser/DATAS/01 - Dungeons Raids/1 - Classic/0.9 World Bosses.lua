@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 local ESKHANDERS_LEFT_CLAW = i(18202);	-- Eskhandar's Left Claw [Note: For whatever reason, Blizzard moved this weapon to Magmadar after the boss was removed.]
-_.Instances = { tier(1, {	-- Classic
+_.Instances = { tier(CLASSIC_TIER, {
 	n(-7, {	-- World Bosses
 		["isRaid"] = true,
 		["lvl"] = 60,

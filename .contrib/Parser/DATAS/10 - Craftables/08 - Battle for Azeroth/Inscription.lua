@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(8, {	-- Battle For Azeroth
+	tier(BFA_TIER, {
 		prof(INSCRIPTION, {
 			filter(111, {	-- Glyphs
 				i(162022, {	-- Glyph of the Dolphin

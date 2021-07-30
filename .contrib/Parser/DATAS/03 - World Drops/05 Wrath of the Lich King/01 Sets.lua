@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(3, {	-- Wrath of the Lich King
+	tier(WOTLK_TIER, {
 		n(-1000, {	-- Sets
 			i(36019),	-- Aerie Belt
 			i(36020),	-- Aerie Boots

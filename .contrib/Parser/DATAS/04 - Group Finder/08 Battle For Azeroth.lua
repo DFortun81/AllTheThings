@@ -4,7 +4,7 @@
 
 _.GroupFinder =
 {
-	tier(8, {	-- Battle For Azeroth
+	tier(BFA_TIER, {
 		i(160054),	-- War-Torn Satchel of Cooperation
 	}),
 };

@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(4, {	-- Cataclysm
+	tier(CATA_TIER, {
 		prof(ALCHEMY, {
 			n(-160, {	-- Mounts
 				i(65891),	-- Vial of the Sands

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(5, {	-- Mists of Pandaria
+_.Instances = { tier(MOP_TIER, {
 	inst(311, {	-- Scarlet Halls
 		["coord"] = { 78.0, 56.8, SCARLET_MONASTERY_ENTRANCE },
 		["mapID"] = 431,

@@ -46,7 +46,7 @@ _.WorldEvents =
 				})),
 			}),
 			n(-544, {	-- WoW Collector's Edition
-				tier(1, {	-- Classic
+				tier(CLASSIC_TIER, {
 					q(8547, {	-- Welcome! (Blood Elf)
 						["provider"] = { "i", 20938 },	-- Falconwing Square Gift Voucher
 						["races"] = { BLOODELF },
@@ -102,7 +102,7 @@ _.WorldEvents =
 						un(REMOVED_FROM_GAME, i(13582)),	-- Zergling Leash (Zergling)
 					})),
 				}),
-				tier(2, {	-- Burning Crusade
+				tier(TBC_TIER, {
 					un(REMOVED_FROM_GAME, ach(665, {		-- Collector's Edition: Netherwhelp
 						un(REMOVED_FROM_GAME, i(25535)),	-- Netherwhelp's Collar (Netherwhelp)
 					})),
@@ -110,17 +110,17 @@ _.WorldEvents =
 						un(REMOVED_FROM_GAME, i(30360)),	-- Lurky's Egg (Lurky)
 					}),
 				}),
-				tier(3, {	-- Wrath of the Lich King
+				tier(WOTLK_TIER, {
 					un(REMOVED_FROM_GAME, ach(683, {		-- Collector's Edition: Frost Wyrm Whelp
 						un(REMOVED_FROM_GAME, i(39286)),	-- Frosty's Collar (Frosty)
 					})),
 				}),
-				tier(4, {	-- Cataclysm
+				tier(CATA_TIER, {
 					un(REMOVED_FROM_GAME, ach(5377, {		-- Collector's Edition: Lil' Deathwing
 						un(REMOVED_FROM_GAME, i(62540)),	-- Lil' Deathwing
 					})),
 				}),
-				tier(5, {	-- Mists of Pandaria
+				tier(MOP_TIER, {
 					un(BLIZZARD_BALANCE, ach(6849, {		-- Collector's Edition: Imperial Quilen
 						un(BLIZZARD_BALANCE, i(85870)),		-- Imperial Quilen
 					})),
@@ -128,7 +128,7 @@ _.WorldEvents =
 						un(BLIZZARD_BALANCE, i(85871)),		-- Lucky Quilen Cub
 					})),
 				}),
-				tier(6, {	-- Warlords of Draenor
+				tier(WOD_TIER, {
 					un(BLIZZARD_BALANCE, ach(8917, {		-- Collector's Edition: Dread Hatchling
 						un(BLIZZARD_BALANCE, i(109014)),	-- Dread Hatchling
 					})),
@@ -136,7 +136,7 @@ _.WorldEvents =
 						un(BLIZZARD_BALANCE, i(109013)),	-- Reins of the Dread Raven
 					})),
 				}),
-				tier(7, {	-- Legion
+				tier(LEGION_TIER, {
 					un(BLIZZARD_BALANCE, ach(10321, {		-- Collector's Edition: Nibbles
 						un(BLIZZARD_BALANCE, i(128426)),	-- Nibbles
 					})),
@@ -144,7 +144,7 @@ _.WorldEvents =
 						un(BLIZZARD_BALANCE, i(128425)),	-- Reins of the Illidari Felstalker
 					})),
 				}),
-				tier(8, {	-- Battle for Azeroth
+				tier(BFA_TIER, {
 					un(BLIZZARD_BALANCE, h(ach(12230, {		-- Collector's Edition: Gilded Ravasaur
 						i(153540),	-- Gilded Ravasaur
 					}))),
@@ -155,7 +155,7 @@ _.WorldEvents =
 						i(153541),	-- Tottle
 					})),
 				}),
-				tier(9, {	-- Shadowlands
+				tier(SL_TIER, {
 					un(BLIZZARD_BALANCE, mount(307932)),	-- Ensorcelled Everwyrm
 					un(BLIZZARD_BALANCE, p(2779)),			-- Anima Wyrmling
 					un(BLIZZARD_BALANCE, i(172179)),		-- Eternal Traveler's Hearthstone

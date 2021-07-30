@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		prof(JEWELCRAFTING, {
 			n(-320, {	-- Head
 				i(180760),	-- Crown of the Righteous

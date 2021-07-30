@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		n(-920, {	-- Covenant: Necrolord
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
 			["maps"] = { SEAT_OF_THE_PRIMUS },

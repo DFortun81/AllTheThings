@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(9, {	-- Shadowlands
+_.Instances = { tier(SL_TIER, {
 	inst(1193, {	-- Sanctum of Domination
 		["isRaid"] = true,
 		["coord"] = { 69.8, 31.8, THE_MAW },

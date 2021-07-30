@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		m(1627, {	-- Torghast
 			["coord"] = { 48.2, 39.4, THE_MAW },	-- Torghast Portal
 			["icon"] = 3642306,

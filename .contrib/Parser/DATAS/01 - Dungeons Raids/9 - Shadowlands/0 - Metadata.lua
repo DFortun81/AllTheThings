@@ -4,7 +4,7 @@
 
 _.Instances =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		-- #if ANYCLASSIC
 		["u"] = SHADOWLANDS_PHASE_ONE,
 		-- #endif

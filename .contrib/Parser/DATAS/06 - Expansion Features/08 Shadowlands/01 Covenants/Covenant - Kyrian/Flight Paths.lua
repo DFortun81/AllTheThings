@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	-- Everything in this file must explicitly be obtainable/usable only by Kyrian characters due to bubbleDown
-	tier(9, bubbleDown({	-- Shadowlands
+	tier(SL_TIER, bubbleDown({
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 		},{
 		n(-939, {	-- Covenant: Kyrian

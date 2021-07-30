@@ -4,7 +4,7 @@
 
 _.Instances =
 {
-	tier(5, {	-- Mists of Pandaria
+	tier(MOP_TIER, {
 		-- #if ANYCLASSIC
 		["u"] = MOP_PHASE_ONE,
 		-- #endif

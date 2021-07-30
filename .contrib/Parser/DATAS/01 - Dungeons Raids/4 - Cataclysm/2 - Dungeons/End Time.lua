@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(4, {	-- Cataclysm
+_.Instances = { tier(CATA_TIER, {
 	inst(184, {	-- End Time
 		["lvl"] = 85,
 		["maps"] = { 401, 402, 403, 404, 405, 406 },

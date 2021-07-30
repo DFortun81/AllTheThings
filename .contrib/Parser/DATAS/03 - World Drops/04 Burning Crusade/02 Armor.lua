@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(2, {	-- Burning Crusade
+	tier(TBC_TIER, {
 		n(-318, {	-- Armor
 			n(-320, {	-- Head
 				i(31145),	-- Headdress of the Sleeper

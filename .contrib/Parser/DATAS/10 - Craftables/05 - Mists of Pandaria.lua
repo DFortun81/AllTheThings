@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(5, {	-- Mists of Pandaria
+	tier(MOP_TIER, {
 		prof(ALCHEMY, {
 --[[	20.Nov.2018 - automation should handle discovery. Leaving this here in case we change our mind later
 			n(DISCOVERY, {

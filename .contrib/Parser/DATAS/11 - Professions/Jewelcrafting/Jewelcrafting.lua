@@ -1,5 +1,5 @@
 applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
-	tier(1, {	-- Classic
+	tier(CLASSIC_TIER, {
 		filter(52, {	-- Finger
 			{
 				["name"] = "Aquamarine Signet",
@@ -312,7 +312,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}
 		}),
 	}),
-	tier(2, {	-- Burning Crusade
+	tier(TBC_TIER, {
 		{
 			["name"] = "Reagents",
 			["categoryID"] = 868,
@@ -1001,7 +1001,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}
 		}
 	}),
-	applyclassicphase(WRATH_PHASE_ONE, tier(3, {	-- Wrath of the Lich King
+	applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		{
 			["name"] = "Blue Gems",
 			["categoryID"] = 846,
@@ -1929,7 +1929,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}
 		}
 	})),
-	applyclassicphase(CATA_PHASE_ONE, tier(4, {	-- Cataclysm
+	applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, {
 		{
 			["name"] = "Blue Gems",
 			["categoryID"] = 834,
@@ -2895,7 +2895,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}
 		}
 	})),
-	applyclassicphase(MOP_PHASE_ONE, tier(5, {	-- Mists of Pandaria
+	applyclassicphase(MOP_PHASE_ONE, tier(MOP_TIER, {
 		{
 			["name"] = "Research",
 			["categoryID"] = 831,
@@ -3757,7 +3757,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}
 		}
 	})),
-	applyclassicphase(WOD_PHASE_ONE, tier(6, {	-- Warlords of Draenor
+	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, {
 		{
 			["name"] = "Reagents and Research",
 			["categoryID"] = 374,
@@ -3956,7 +3956,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}
 		}
 	})),
-	applyclassicphase(LEGION_PHASE_ONE, tier(7, {	-- Legion
+	applyclassicphase(LEGION_PHASE_ONE, tier(LEGION_TIER, {
 		{
 			["name"] = "Training",
 			["categoryID"] = 536,
@@ -4576,7 +4576,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}),
 		}),
 	})),
-	applyclassicphase(BFA_PHASE_ONE, tier(8, {	-- BFA
+	applyclassicphase(BFA_PHASE_ONE, tier(BFA_TIER, {
 		{
 			["name"] = "Gems",
 			["categoryID"] = 817,
@@ -5004,7 +5004,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			},
 		}),
 	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(9, {	-- Shadowlands
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, {
 		{
 			["name"] = "Quest Recipes",
 			["categoryID"] = 1530,

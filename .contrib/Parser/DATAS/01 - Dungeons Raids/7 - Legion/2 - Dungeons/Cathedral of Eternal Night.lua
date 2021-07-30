@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(7, {	-- Legion
+_.Instances = { tier(LEGION_TIER, {
 	inst(900, {	-- Cathedral of Eternal Night
 		["coord"] = { 64.7, 16.6, 646 },
 		["maps"] = { 845, 846, 847, 848, 849 },

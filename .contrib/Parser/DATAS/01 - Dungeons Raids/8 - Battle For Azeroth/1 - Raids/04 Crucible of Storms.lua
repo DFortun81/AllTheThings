@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(8, {	-- Battle for Azeroth
+_.Instances = { tier(BFA_TIER, {
 	inst(1177, {	-- Crucible of Storms
 		["isRaid"] = true,
 		["coord"] = { 83.8, 47.0, 942 },

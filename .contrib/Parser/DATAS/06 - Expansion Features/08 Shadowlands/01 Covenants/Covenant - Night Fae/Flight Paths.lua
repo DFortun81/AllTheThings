@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	-- Everything in this file must explicitly be obtainable/usable only by Night Fae characters due to bubbleDown
-	tier(9, bubbleDown({	-- Shadowlands
+	tier(SL_TIER, bubbleDown({
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 		},{
 		n(-929, {	-- Covenant: Night Fae

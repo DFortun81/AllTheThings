@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(5, {	-- Mists of Pandaria
+	tier(MOP_TIER, {
 		n(-1000, {	-- Sets
 			i(94056),	-- Battered Saurscale Belt
 			i(94057),	-- Battered Saurscale Boots
