@@ -475,6 +475,7 @@ _.Zones =
 					},
 				}),
 				i(101917, {	-- Warmsun Cloak
+					-- Shaman/Enhance confirmed
 					["cost"] = {
 						{ "i", 103982, 1 },	-- Burden of Eternity
 						{ "i", 102318, 1 },	-- Timeless Cloak
@@ -548,4 +549,4 @@ _.Zones =
 		}),
 	}),
 };
-]]--
+--]]--

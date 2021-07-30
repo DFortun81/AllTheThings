@@ -10187,102 +10187,105 @@ end
 -- Causes a group to remain visible if it is replayable, regardless of collection status
 app.ShowIfReplayableQuest = function(data) data.visible = C_QuestLog_IsQuestReplayable(data.questID); return true; end
 
-local fields = {
-	["key"] = function(t)
-		return "objectiveID";
-	end,
-	["text"] = function(t)
-		return app.TryColorizeName(t, t.name);
-	end,
-	["name"] = function(t)
-		local objInfo = t.parent.objectiveInfo;
-		if objInfo then
-			local objective = objInfo[t.objectiveID];
-			if objective then return objective.text; end
-		end
-		return L["QUEST_OBJECTIVE_INVALID"];
-	end,
-	["icon"] = function(t)
-		if t.providers then
-			for k,v in ipairs(t.providers) do
-				if v[2] > 0 then
-					if v[1] == "o" then
-						return app.ObjectIcons[v[2]] or "Interface\\Worldmap\\Gear_64Grey";
-					elseif v[1] == "i" then
-						return select(5, GetItemInfoInstant(v[2])) or "Interface\\Worldmap\\Gear_64Grey";
-					end
-				end
-			end
-		end
-		return t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
-	end,
-	["model"] = function(t)
-		if t.providers then
-			for k,v in ipairs(t.providers) do
-				if v[2] > 0 then
-					if v[1] == "o" then
-						return app.ObjectModels[v[2]];
-					end
-				end
-			end
-		end
-	end,
-	["objectiveID"] = function(t)
-		return 1;
-	end,
-	["questID"] = function(t)
-		return t.parent.questID;
-	end,
-	["isDaily"] = function(t)
-		return t.parent.isDaily;
-	end,
-	["isWeekly"] = function(t)
-		return t.parent.isWeekly;
-	end,
-	["isMonthly"] = function(t)
-		return t.parent.isMonthly;
-	end,
-	["isYearly"] = function(t)
-		return t.parent.isYearly;
-	end,
-	["isWorldQuest"] = function(t)
-		return t.parent.isWorldQuest;
-	end,
-	["repeatable"] = function(t)
-		return t.parent.repeatable;
-	end,
-	["collectible"] = function(t)
-		return t.questID and C_QuestLog_IsOnQuest(t.questID);
-	end,
-	["trackable"] = app.ReturnTrue,
-	["collected"] = function(t)
-		-- If the parent is collected, return immediately.
-		local collected = t.parent.collected;
-		if collected then return collected; end
+-- Quest Objective Lib
+-- Not used in Retail anymore
+-- local fields = {
+-- 	["key"] = function(t)
+-- 		return "objectiveID";
+-- 	end,
+-- 	["text"] = function(t)
+-- 		return app.TryColorizeName(t, t.name);
+-- 	end,
+-- 	["name"] = function(t)
+-- 		local objInfo = t.parent.objectiveInfo;
+-- 		if objInfo then
+-- 			local objective = objInfo[t.objectiveID];
+-- 			if objective then return objective.text; end
+-- 		end
+-- 		return L["QUEST_OBJECTIVE_INVALID"];
+-- 	end,
+-- 	["icon"] = function(t)
+-- 		if t.providers then
+-- 			for k,v in ipairs(t.providers) do
+-- 				if v[2] > 0 then
+-- 					if v[1] == "o" then
+-- 						return app.ObjectIcons[v[2]] or "Interface\\Worldmap\\Gear_64Grey";
+-- 					elseif v[1] == "i" then
+-- 						return select(5, GetItemInfoInstant(v[2])) or "Interface\\Worldmap\\Gear_64Grey";
+-- 					end
+-- 				end
+-- 			end
+-- 		end
+-- 		return t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
+-- 	end,
+-- 	["model"] = function(t)
+-- 		if t.providers then
+-- 			for k,v in ipairs(t.providers) do
+-- 				if v[2] > 0 then
+-- 					if v[1] == "o" then
+-- 						return app.ObjectModels[v[2]];
+-- 					end
+-- 				end
+-- 			end
+-- 		end
+-- 	end,
+-- 	["objectiveID"] = function(t)
+-- 		return 1;
+-- 	end,
+-- 	["questID"] = function(t)
+-- 		return t.parent.questID;
+-- 	end,
+-- 	["isDaily"] = function(t)
+-- 		return t.parent.isDaily;
+-- 	end,
+-- 	["isWeekly"] = function(t)
+-- 		return t.parent.isWeekly;
+-- 	end,
+-- 	["isMonthly"] = function(t)
+-- 		return t.parent.isMonthly;
+-- 	end,
+-- 	["isYearly"] = function(t)
+-- 		return t.parent.isYearly;
+-- 	end,
+-- 	["isWorldQuest"] = function(t)
+-- 		return t.parent.isWorldQuest;
+-- 	end,
+-- 	["repeatable"] = function(t)
+-- 		return t.parent.repeatable;
+-- 	end,
+-- 	["collectible"] = function(t)
+-- 		return t.questID and C_QuestLog_IsOnQuest(t.questID);
+-- 	end,
+-- 	["trackable"] = app.ReturnTrue,
+-- 	["collected"] = function(t)
+-- 		-- If the parent is collected, return immediately.
+-- 		local collected = t.parent.collected;
+-- 		if collected then return collected; end
 
-		-- Check to see if the objective was completed.
-		local objInfo = t.parent.objectiveInfo;
-		if objInfo then
-			local objective = objInfo[t.objectiveID];
-			if objective then return objective.finished and 1; end
-		end
-	end,
-	["saved"] = function(t)
-		-- If the parent is saved, return immediately.
-		if t.parent.saved then return true; end
+-- 		-- Check to see if the objective was completed.
+-- 		local objInfo = t.parent.objectiveInfo;
+-- 		if objInfo then
+-- 			local objective = objInfo[t.objectiveID];
+-- 			if objective then return objective.finished and 1; end
+-- 		end
+-- 	end,
+-- 	["saved"] = function(t)
+-- 		-- If the parent is saved, return immediately.
+-- 		if t.parent.saved then return true; end
 
-		-- Check to see if the objective was completed.
-		local objInfo = t.parent.objectiveInfo;
-		if objInfo then
-			local objective = objInfo[t.objectiveID];
-			if objective then return objective.finished and 1; end
-		end
-	end,
-};
-app.BaseQuestObjective = app.BaseObjectFields(fields);
-app.CreateQuestObjective = function(id, t)
-	return setmetatable(constructor(id, t, "objectiveID"), app.BaseQuestObjective);
-end
+-- 		-- Check to see if the objective was completed.
+-- 		local objInfo = t.parent.objectiveInfo;
+-- 		if objInfo then
+-- 			local objective = objInfo[t.objectiveID];
+-- 			if objective then return objective.finished and 1; end
+-- 		end
+-- 	end,
+-- };
+-- app.BaseQuestObjective = app.BaseObjectFields(fields);
+-- app.CreateQuestObjective = function(id, t)
+-- 	return setmetatable(constructor(id, t, "objectiveID"), app.BaseQuestObjective);
+-- end
+--]]
 
 -- Vignette Lib
 (function()

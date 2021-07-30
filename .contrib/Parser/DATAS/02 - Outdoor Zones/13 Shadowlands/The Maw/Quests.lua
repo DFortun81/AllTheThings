@@ -170,7 +170,7 @@ _.Zones =
 								},
 							}),
 							n(178898, {	-- Golmak The Monstrosity
-								-- ["questID"] = ,	-- carb got 64114 from golmak, but i got 64697 and 64114 returns false (first tormentor of the day for both of us)
+								["questID"] = 64114,	-- carb got 64114 from golmak, but i got 64697 and 64114 returns false (first tormentor of the day for both of us)
 								["isDaily"] = true,
 								["g"] = {
 									i(186229),	-- Lavafused Breastplate

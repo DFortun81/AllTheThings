@@ -35,6 +35,7 @@ _.Zones =
 				i(175550),	-- Eventide Sabatons
 				i(175546),	-- Eventide Vest
 				i(175573),	-- Eventide Wristwraps
+				i(187429),	-- Petrified Sylvan Antlers
 				i(175568),	-- Shimmerbough Cord
 				i(175554),	-- Shimmerbough Gloves
 				i(175556),	-- Shimmerbough Hood
