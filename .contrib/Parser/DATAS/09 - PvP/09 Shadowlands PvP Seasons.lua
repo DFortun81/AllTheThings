@@ -777,7 +777,9 @@ _.PVP =
 					i(185201),	-- Unchained Gladiator's Lightbow
 					i(185316),	-- Unchained Gladiator's Ritual Dagger
 					i(185125),	-- Unchained Gladiator's Splitter
-					i(185300),	-- Unchained Gladiator's Vesper
+					i(185300, {	-- Unchained Gladiator's Vesper
+						["modID"] = 40,	-- this item does not use modID 14
+					}),
 					i(185312),	-- Unchained Gladiator's Warglaive
 					i(185315),	-- Unchained Gladiator's Xiphos
 				}),
