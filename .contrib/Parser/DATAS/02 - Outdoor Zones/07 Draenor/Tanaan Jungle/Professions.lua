@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(534, {	-- Tanaan Jungle
+		m(TANAAN_JUNGLE, {
 			n(-38, {	-- Profession
 				o(243334, {	-- Withered Herb
 					["requireSkill"] = HERBALISM,
@@ -18,7 +18,7 @@ _.Zones =
 				n(94605, {	-- Apexis Gemcutter
 					["requireSkill"] = JEWELCRAFTING,
 					["description"] = "In order to learn these recipes, you have to take the appropriate gemcutter module to this NPC and then right-click to learn how to craft it.",
-					["coord"] = { 25.8, 39.7, 534 },
+					["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 					["g"] = {
 						recipe(187634),	-- Immaculate Critical Strike Taladite
 						recipe(187635),	-- Immaculate Haste Taladite

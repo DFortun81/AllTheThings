@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(534, {	-- Tanaan Jungle
+		m(TANAAN_JUNGLE, {
 			n(ACHIEVEMENTS, {
 				ach(10072, {	-- Rumble in the Jungle (A)
 					["races"] = ALLIANCE_ONLY,
@@ -98,63 +98,63 @@ _.Zones =
 				}),
 				ach(10052, {	-- Tiny Terrors in Tanaan
 					crit(1,  {	-- Felsworn Sentry
-						["coord"] = { 26.0, 31.6, 534 },
+						["coord"] = { 26.0, 31.6, TANAAN_JUNGLE },
 						["crs"] = { 94601 },
 					}),
 					crit(2,  {	-- Corrupted Thundertail
-						["coord"] = { 53.0, 65.2, 534 },
+						["coord"] = { 53.0, 65.2, TANAAN_JUNGLE },
 						["crs"] = { 94637 },
 					}),
 					crit(3,  {	-- Chaos Pup
-						["coord"] = { 25.0, 76.2, 534 },
+						["coord"] = { 25.0, 76.2, TANAAN_JUNGLE },
 						["crs"] = { 94638 },
 					}),
 					crit(4,  {	-- Cursed Spirit
-						["coord"] = { 31.4, 38.0, 534 },
+						["coord"] = { 31.4, 38.0, TANAAN_JUNGLE },
 						["crs"] = { 94639 },
 					}),
 					crit(5,  {	-- Felfly
-						["coord"] = { 55.8, 80.8, 534 },
+						["coord"] = { 55.8, 80.8, TANAAN_JUNGLE },
 						["crs"] = { 94640 },
 					}),
 					crit(6,  {	-- Tainted Maulclaw
-						["coord"] = { 43.4, 84.6, 534 },
+						["coord"] = { 43.4, 84.6, TANAAN_JUNGLE },
 						["crs"] = { 94641 },
 					}),
 					crit(7,  {	-- Direflame
-						["coord"] = { 57.8, 37.2, 534 },
+						["coord"] = { 57.8, 37.2, TANAAN_JUNGLE },
 						["crs"] = { 94642 },
 					}),
 					crit(8,  {	-- Mirecroak
-						["coord"] = { 42.2, 71.6, 534 },
+						["coord"] = { 42.2, 71.6, TANAAN_JUNGLE },
 						["crs"] = { 94643 },
 					}),
 					crit(9,  {	-- Dark Gazer
-						["coord"] = { 54.0, 29.8, 534 },
+						["coord"] = { 54.0, 29.8, TANAAN_JUNGLE },
 						["crs"] = { 94644 },
 					}),
 					crit(10, {	-- Bleakclaw
-						["coord"] = { 15.8, 44.6, 534 },
+						["coord"] = { 15.8, 44.6, TANAAN_JUNGLE },
 						["crs"] = { 94645 },
 					}),
 					crit(11, {	-- Vile Blood of Draenor
-						["coord"] = { 44.0, 45.8, 534 },
+						["coord"] = { 44.0, 45.8, TANAAN_JUNGLE },
 						["crs"] = { 94646 },
 					}),
 					crit(12, {	-- Dreadwalker
-						["coord"] = { 47.2, 52.6, 534 },
+						["coord"] = { 47.2, 52.6, TANAAN_JUNGLE },
 						["crs"] = { 94647 },
 					}),
 					crit(13, {	-- Netherfist
-						["coord"] = { 48.4, 35.6, 534 },
+						["coord"] = { 48.4, 35.6, TANAAN_JUNGLE },
 						["crs"] = { 94648 },
 					}),
 					crit(14, {	-- Skrillix
-						["coord"] = { 48.4, 31.2, 534 },
+						["coord"] = { 48.4, 31.2, TANAAN_JUNGLE },
 						["crs"] = { 94649 },
 					}),
 					crit(15, {	-- Defiled Earth
-						["coord"] = { 75.4, 37.4, 534 },
+						["coord"] = { 75.4, 37.4, TANAAN_JUNGLE },
 						["crs"] = { 94650 },
 					}),
 				}),

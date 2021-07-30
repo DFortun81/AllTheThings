@@ -5,12 +5,12 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(534, {	-- Tanaan Jungle
+		m(TANAAN_JUNGLE, {
 			n(VENDORS, {
 				n(95424, {	-- Dawn-Seeker Krisek <Order of the Awakened>
 					["coords"] = {
-						{ 60.4, 46.6, 534 },	-- Horde accessible
-						{ 57.8, 59.4, 534 },	-- Alliance accessible
+						{ 60.4, 46.6, TANAAN_JUNGLE },	-- Horde accessible
+						{ 57.8, 59.4, TANAAN_JUNGLE },	-- Alliance accessible
 					},
 					["g"] = {
 						i(128478, {	-- Blazing Firehawk
@@ -51,8 +51,8 @@ _.Zones =
 				}),
 				n(96130, {	-- Ravenspeaker Thelnaas <Order of the Awakened>
 					["coords"] = {
-						{ 60.4, 46.6, 534 },	-- Horde accessible
-						{ 57.8, 59.4, 534 },	-- Alliance accessible
+						{ 60.4, 46.6, TANAAN_JUNGLE },	-- Horde accessible
+						{ 57.8, 59.4, TANAAN_JUNGLE },	-- Alliance accessible
 					},
 					["g"] = {
 						i(124562, {	-- Baleful Armament
@@ -100,7 +100,7 @@ _.Zones =
 					},
 				}),
 				n(96014, {	-- Shadow Hunter Denjai <Vol'jin's Headhunters>
-					["coord"] = { 61.6, 45.6, 534 },
+					["coord"] = { 61.6, 45.6, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(128490, {	-- Blueprint: Oil Rig
@@ -155,13 +155,13 @@ _.Zones =
 				}),
 				n(95650, {	-- Skoller
 					["description"] = "Talk to him and you will receive the toy.",
-					["coord"] = { 55.2, 75.0, 534 },
+					["coord"] = { 55.2, 75.0, TANAAN_JUNGLE },
 					["g"] = {
 						i(128328),	-- Skoller's Bag of Squirrel Treats (TOY!)
 					},
 				}),
 				n(90974, {	-- Vindicator Krethos <Hand of the Prophet>
-					["coord"] = { 58.4, 60.4, 534 },
+					["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(128444, {	-- Blueprint: Oil Rig
@@ -216,7 +216,7 @@ _.Zones =
 					},
 				}),
 				n(92805, {	-- Z'tenga the Walker <Saberstalker Quartermaster>
-					["coord"] = { 55.2, 74.8, 534 },
+					["coord"] = { 55.2, 74.8, TANAAN_JUNGLE },
 					["g"] = {
 						i(128481, {	-- Bristling Hellboar (MOUNT!)
 							["cost"] = { { "i", 124099, 5000 }, },	-- 5,000x Blackfang Claw

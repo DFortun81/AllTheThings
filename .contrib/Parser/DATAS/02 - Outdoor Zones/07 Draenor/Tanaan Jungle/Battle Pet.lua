@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(534, {	-- Tanaan Jungle
+		m(TANAAN_JUNGLE, {
 			filter(101, {	-- Battle Pets
 				i(127751, {	-- Fel-Touched Pet Supplies
 					["crs"] = {

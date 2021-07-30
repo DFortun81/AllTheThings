@@ -5,14 +5,14 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(534, {	-- Tanaan Jungle
+		m(TANAAN_JUNGLE, {
 			n(RARES, {
 				-- Coords have been confirmed on rares except for some noted rares on longer spawn timers.
 				n(92766, {	-- Akrrilo <Shadowhunter of the Blackfang>
 					["description"] = "\nPurchase a Minor Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r.  Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Akrrilo.\n\n",
 					["questID"] = 39399,
 					["isDaily"] = true,
-					["coord"] = { 54.2, 80.8, 534 },
+					["coord"] = { 54.2, 80.8, TANAAN_JUNGLE },
 					["g"] = {
 						crit(45, {	-- Akrrilo slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -22,7 +22,7 @@ _.Zones =
 				n(91871, {	-- Argosh the Destroyer
 					["questID"] = 38430,
 					["isDaily"] = true,
-					["coord"] = { 52.6, 40.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 52.6, 40.6, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(51, {	-- Argosh the Destroyer slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -33,7 +33,7 @@ _.Zones =
 				n(92552, {	-- Belgork
 					["questID"] = 38609,
 					["isDaily"] = true,
-					["coord"] = { 35.6, 46.8, 534 },
+					["coord"] = { 35.6, 46.8, TANAAN_JUNGLE },
 					["g"] = {
 						crit(35, {	-- Belgork slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -47,7 +47,7 @@ _.Zones =
 				n(90884, {	-- Bilkor the Thrower
 					["questID"] = 38262,
 					["isDaily"] = true,
-					["coord"] = { 23.6, 52.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 23.6, 52.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(23, {	-- Bilkor the Thrower slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -59,8 +59,8 @@ _.Zones =
 					["questID"] = 38696,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 50.8, 74.2, 534 },	-- Bleeding Hollow Horror
-						{ 44.6, 77.5, 534 },	-- Cave Entrance
+						{ 50.8, 74.2, TANAAN_JUNGLE },	-- Bleeding Hollow Horror
+						{ 44.6, 77.5, TANAAN_JUNGLE },	-- Cave Entrance
 					},
 					["g"] = {
 						crit(48, {	-- Bleeding Hollow Horror slain
@@ -73,8 +73,8 @@ _.Zones =
 					["questID"] = 38266,
 					["isDaily"] = true,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
-						{ 24.6, 50.0, 534 },
-						{ 21.0, 53.0, 534 },
+						{ 24.6, 50.0, TANAAN_JUNGLE },
+						{ 21.0, 53.0, TANAAN_JUNGLE },
 					},
 					["g"] = {
 						crit(27, {	-- Bloodhunter Zulk slain
@@ -87,8 +87,8 @@ _.Zones =
 					["questID"] = 38209,
 					["isDaily"] = true,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
-						{ 41.0, 68.6, 534 },
-						{ 39.2, 68.8, 534 },
+						{ 41.0, 68.6, TANAAN_JUNGLE },
+						{ 39.2, 68.8, TANAAN_JUNGLE },
 					},
 					["g"] = {
 						crit(2, {	-- Bramblefell slain
@@ -100,7 +100,7 @@ _.Zones =
 				n(92429, {	-- Broodlord Ixkor
 					["questID"] = 38589,
 					["isDaily"] = true,
-					["coord"] = { 57.6, 67.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 57.6, 67.2, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(29, {	-- Broodlord Ixkor slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -111,7 +111,7 @@ _.Zones =
 				n(93264, {	-- Captain Grok'mar
 					["questID"] = 38820,
 					["isDaily"] = true,
-					["coord"] = { 48.6, 57.4, 534 },
+					["coord"] = { 48.6, 57.4, TANAAN_JUNGLE },
 					["g"] = {
 						crit(59, {	-- Captain Grok'mar slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -122,7 +122,7 @@ _.Zones =
 				n(93076, {	-- Captain Ironbeard <The True Scourge of the Iron Seas>
 					["questID"] = 38756,
 					["isDaily"] = true,
-					["coord"] = { 36.6, 79.8, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 36.6, 79.8, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(42, {	-- (The Real) Captain Ironbeard slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -137,7 +137,7 @@ _.Zones =
 					["description"] = "Killing Ceraxas will summon the Abandoned Fel Pup, which offers the quest that rewards the pet.",
 					["questID"] = 38031,
 					["isDaily"] = true,
-					["coord"] = { 31.6, 68.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 31.6, 68.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(8, {	-- Ceraxas slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -150,7 +150,7 @@ _.Zones =
 				n(90519, {	-- Cindral the Wildfire
 					["questID"] = 37990,
 					["isDaily"] = true,
-					["coord"] = { 44.6, 37.6, 534 },
+					["coord"] = { 44.6, 37.6, TANAAN_JUNGLE },
 					["g"] = {
 						crit(10, {	-- Cindral the Wildfire slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -164,7 +164,7 @@ _.Zones =
 				n(91232, {	-- Commander Krag'goth
 					["questID"] = 38746,
 					["isDaily"] = true,
-					["coord"] = { 15.0, 53.9, 534 },
+					["coord"] = { 15.0, 53.9, TANAAN_JUNGLE },
 					["g"] = {
 						crit(18, {	-- Commander Krag'goth slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -176,8 +176,8 @@ _.Zones =
 					["questID"] = 38749,
 					["isDaily"] = true,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
-						{ 51.2, 46.6, 534 },
-						{ 48.0, 44.8, 534 },
+						{ 51.2, 46.6, TANAAN_JUNGLE },
+						{ 48.0, 44.8, TANAAN_JUNGLE },
 					},
 					["g"] = {
 						crit(60, {	-- Commander Org'mok
@@ -189,7 +189,7 @@ _.Zones =
 				n(95053, {	-- Deathtalon <Avatar of Iskar>
 					["questID"] = 39287,
 					["isDaily"] = true,
-					["coord"] = { 22.8, 40.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 22.8, 40.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(2, {	-- Deathtalon, Avatar of Iskar slain
 							["achievementID"] = 10061,	-- Hellbane
@@ -205,7 +205,7 @@ _.Zones =
 				n(95056, {	-- Doomroller <Mar'tak's Creation>
 					["questID"] = 39289,
 					["isDaily"] = true,
-					["coord"] = { 47.0, 52.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 47.0, 52.6, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(4, {	-- Doomroller, Mar'tak's Creation
 							["achievementID"] = 10061,	-- Hellbane
@@ -221,9 +221,9 @@ _.Zones =
 				n(90887, {	-- Dorg the Bloody
 					["questID"] = 38265,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
-						{ 24.8, 46.4, 534 },
-						{ 24.2, 46.4, 534 },
-						{ 22.8, 48.8, 534 },
+						{ 24.8, 46.4, TANAAN_JUNGLE },
+						{ 24.2, 46.4, TANAAN_JUNGLE },
+						{ 22.8, 48.8, TANAAN_JUNGLE },
 					},
 					["isDaily"] = true,
 					["g"] = {
@@ -236,7 +236,7 @@ _.Zones =
 				n(98283, {	-- Drakum
 					["questID"] = 40105,
 					["isDaily"] = true,
-					["coord"] = { 83.4, 43.6, 534 },
+					["coord"] = { 83.4, 43.6, TANAAN_JUNGLE },
 					["g"] = {
 						i(108631, {	-- Crashin' Thrashin' Roller Controller (TOY!)
 							crit(5, {	-- Crashin' Thrashin' Roller
@@ -248,7 +248,7 @@ _.Zones =
 				n(93028, {	-- Driss Vile
 					["questID"] = 38736,
 					["isDaily"] = true,
-					["coord"] = { 20.2, 53.4, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 20.2, 53.4, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(41, {	-- Driss Vile slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -259,7 +259,7 @@ _.Zones =
 				n(90888, {	-- Drivnul
 					["questID"] = 38264,
 					["isDaily"] = true,
-					["coord"] = { 25.7, 46.1, 534 },
+					["coord"] = { 25.7, 46.1, TANAAN_JUNGLE },
 					["g"] = {
 						crit(26, {	-- Drivnul slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -270,7 +270,7 @@ _.Zones =
 				n(91727, {	-- Executor Riloth
 					["questID"] = 38411,
 					["isDaily"] = true,
-					["coord"] = { 49.8, 36.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 49.8, 36.2, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(50, {	-- Executor Riloth slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -282,7 +282,7 @@ _.Zones =
 					["description"] = "\nPurchase a Prime Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r.  Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Eyepiercer.\n\n",
 					["questID"] = 39379,
 					["isDaily"] = true,
-					["coord"] = { 54.2, 80.8, 534 },
+					["coord"] = { 54.2, 80.8, TANAAN_JUNGLE },
 					["g"] = {
 						crit(47, {	-- Eyepiercer slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -292,7 +292,7 @@ _.Zones =
 				n(98408, {	-- Fel Overseer Mudlump
 					["questID"] = 40107,
 					["isDaily"] = true,
-					["coord"] = { 41.0, 56.3, 534 },
+					["coord"] = { 41.0, 56.3, TANAAN_JUNGLE },
 					["g"] = {
 						i(129295),	-- Spike-Toed Booterang
 					},
@@ -302,8 +302,8 @@ _.Zones =
 					["isDaily"] = true,
 					["description"] = "At the back of an underground cave.",
 					["coords"] = {
-						{ 31.1, 53.3, 534 },	-- cave entrance
-						{ 28.6, 50.8, 534 },	-- felbore
+						{ 31.1, 53.3, TANAAN_JUNGLE },	-- cave entrance
+						{ 28.6, 50.8, TANAAN_JUNGLE },	-- felbore
 					},
 					["g"] = {
 						crit(44, {	-- Felbore slain
@@ -315,7 +315,7 @@ _.Zones =
 				n(92647, {	-- Felsmith Damorka
 					["questID"] = 38634,
 					["isDaily"] = true,
-					["coord"] = { 45.8, 47.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 45.8, 47.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(55, {	-- Felsmith Damorka slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -330,9 +330,9 @@ _.Zones =
 					["questID"] = 38211,
 					["isDaily"] = true,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
-						{ 53.0, 25.6, 534 },
-						{ 53.0, 27.2, 534 },
-						{ 52.2, 27.4, 534 },
+						{ 53.0, 25.6, TANAAN_JUNGLE },
+						{ 53.0, 27.2, TANAAN_JUNGLE },
+						{ 52.2, 27.4, TANAAN_JUNGLE },
 					},
 					["g"] = {
 						crit(4, {	-- Felspark slain
@@ -344,7 +344,7 @@ _.Zones =
 				n(92508, {	-- Gloomtalon
 					["questID"] = 38604,
 					["isDaily"] = true,
-					["coord"] = { 63.6, 81.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 63.6, 81.2, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(31, {	-- Gloomtalon slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -355,7 +355,7 @@ _.Zones =
 				n(93125, {	-- Glub'glok
 					["questID"] = 38764,
 					["isDaily"] = true,
-					["coord"] = { 34.6, 78.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 34.6, 78.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(43, {	-- Glub'glok slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -366,7 +366,7 @@ _.Zones =
 				n(98284, {	-- Gondar
 					["questID"] = 40106,
 					["isDaily"] = true,
-					["coord"] = { 80.6, 56.4, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 80.6, 56.4, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						i(108633, {	-- Crashin' Thrashin' Cannon Controller (TOY!)
 							crit(4, {	-- Crashin' Thrashin' Cannon
@@ -378,7 +378,7 @@ _.Zones =
 				n(92941, {	-- Gorabosh
 					["questID"] = 38709,
 					["isDaily"] = true,
-					["coord"] = { 33.3, 35.8, 534 },
+					["coord"] = { 33.3, 35.8, TANAAN_JUNGLE },
 					["g"] = {
 						crit(40, {	-- Gorabosh slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -390,8 +390,8 @@ _.Zones =
 					["questID"] = 38400,
 					["isDaily"] = true,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
-						{ 47.4, 40.6, 534 },
-						{ 46.2, 42.8, 534 },
+						{ 47.4, 40.6, TANAAN_JUNGLE },
+						{ 46.2, 42.8, TANAAN_JUNGLE },
 					},
 					["g"] = {
 						crit(15, {	-- Grand Warlock Nethekurse slain
@@ -403,7 +403,7 @@ _.Zones =
 				n(93057, {	-- Grannok
 					["questID"] = 38750,
 					["isDaily"] = true,
-					["coord"] = { 16.0, 59.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 16.0, 59.2, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(20, {	-- Grannok slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -414,7 +414,7 @@ _.Zones =
 				n(90094, {	-- Harbormaster Korak
 					["questID"] = 39046,
 					["isDaily"] = true,
-					["coord"] = { 39.6, 32.6, 534 },
+					["coord"] = { 39.6, 32.6, TANAAN_JUNGLE },
 					["g"] = {
 						crit(53, {	-- Harbormaster Korak slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -426,8 +426,8 @@ _.Zones =
 					["questID"] = 38028,
 					["isDaily"] = true,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
-						{ 21.0, 37.4, 534 },
-						{ 20.4, 41.6, 534 },
+						{ 21.0, 37.4, TANAAN_JUNGLE },
+						{ 20.4, 41.6, TANAAN_JUNGLE },
 					},
 					["g"] = {
 						i(122117),	-- Cursed Feather of Ikzan (TOY!)
@@ -437,8 +437,8 @@ _.Zones =
 					["questID"] = 38026,
 					["isDaily"] = true,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
-						{ 31.6, 72.6, 534 },
-						{ 31.0, 71.4, 534 },
+						{ 31.6, 72.6, TANAAN_JUNGLE },
+						{ 31.0, 71.4, TANAAN_JUNGLE },
 					},
 					["g"] = {
 						crit(5, {	-- Imp-Master Valessa slain
@@ -450,7 +450,7 @@ _.Zones =
 				n(90437, {	-- Jax'zor
 					["questID"] = 38030,
 					["isDaily"] = true,
-					["coord"] = { 26.6, 75.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 26.6, 75.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(7, {	-- Jax'zor slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -461,12 +461,12 @@ _.Zones =
 				n(80398, {	-- Keravnos
 					["questID"] = 37407,
 					["isDaily"] = true,
-					["coord"] = { 39.8, 82.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 39.8, 82.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 				}),
 				n(92517, {	-- Krell the Serene
 					["questID"] = 38605,
 					["isDaily"] = true,
-					["coord"] = { 52.0, 83.9, 534 },
+					["coord"] = { 52.0, 83.9, TANAAN_JUNGLE },
 					["g"] = {
 						crit(32, {	-- Krell the Serene slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -478,8 +478,8 @@ _.Zones =
 					["questID"] = 38825,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 39.5, 68.1, 534 },	-- Kris'kar the Unredeemed
-						{ 42.4, 68.7, 534 },	-- Cave Entrance
+						{ 39.5, 68.1, TANAAN_JUNGLE },	-- Kris'kar the Unredeemed
+						{ 42.4, 68.7, TANAAN_JUNGLE },	-- Cave Entrance
 					},
 					["g"] = {
 						crit(49, {	-- Kris'kar the Unredeemed slain
@@ -491,7 +491,7 @@ _.Zones =
 				n(90438, {	-- Lady Oran
 					["questID"] = 38029,
 					["isDaily"] = true,
-					["coord"] = { 25.6, 76.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 25.6, 76.6, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(6, {	-- Lady Oran slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -500,7 +500,7 @@ _.Zones =
 					},
 				}),
 				n(96240, {	-- Lok'goron Hashslinger
-					["coord"] = { 40.4, 45.8, 534 },
+					["coord"] = { 40.4, 45.8, TANAAN_JUNGLE },
 					["g"] = {
 						i(128501),	-- Recipe: Fel Eggs and Ham
 					},
@@ -508,7 +508,7 @@ _.Zones =
 				n(93002, {	-- Magwia
 					["questID"] = 38726,
 					["isDaily"] = true,
-					["coord"] = { 52.1, 65.1, 534 },
+					["coord"] = { 52.1, 65.1, TANAAN_JUNGLE },
 					["g"] = {
 						crit(17, {	-- Magwia slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -519,7 +519,7 @@ _.Zones =
 				n(90442, {	-- Mistress Thavra
 					["questID"] = 38032,
 					["isDaily"] = true,
-					["coord"] = { 26.0, 79.4, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 26.0, 79.4, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(9, {	-- Mistress Thavra slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -530,7 +530,7 @@ _.Zones =
 				n(92411, {	-- Overlord Ma'gruth
 					["questID"] = 38580,
 					["isDaily"] = true,
-					["coord"] = { 53.0, 19.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 53.0, 19.6, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(58, {	-- Overlord Ma'gruth slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -541,7 +541,7 @@ _.Zones =
 				n(92274, {	-- Painmistress Selora
 					["questID"] = 38557,
 					["isDaily"] = true,
-					["coord"] = { 53.6, 21.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 53.6, 21.6, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(14, {	-- Painmistress Selora slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -553,8 +553,8 @@ _.Zones =
 					["questID"] = 38282,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 16.8, 48.4, 534 },
-						{ 16.8, 49.6, 534 },
+						{ 16.8, 48.4, TANAAN_JUNGLE },
+						{ 16.8, 49.6, TANAAN_JUNGLE },
 					},
 					["g"] = {
 						crit(1, {	-- Podlord Wakkawam slain
@@ -567,8 +567,8 @@ _.Zones =
 					["questID"] = 38457,
 					["isDaily"] = true,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
-						{ 57.0, 23.0, 534 },
-						{ 57.6, 23.2, 534 },
+						{ 57.0, 23.0, TANAAN_JUNGLE },
+						{ 57.6, 23.2, TANAAN_JUNGLE },
 					},
 					["g"] = {
 						crit(56, {	-- Putrethar slain
@@ -580,7 +580,7 @@ _.Zones =
 				n(90782, {	-- Rasthe
 					["questID"] = 38034,
 					["isDaily"] = true,
-					["coord"] = { 17.4, 42.7, 534 },
+					["coord"] = { 17.4, 42.7, TANAAN_JUNGLE },
 					["g"] = {
 						crit(13, {	-- Rasthe slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -591,7 +591,7 @@ _.Zones =
 				n(92197, {	-- Relgor
 					["questID"] = 38496,
 					["isDaily"] = true,
-					["coord"] = { 26.3, 54.3, 534 },
+					["coord"] = { 26.3, 54.3, TANAAN_JUNGLE },
 					["g"] = {
 						crit(28, {	-- Relgor slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -603,7 +603,7 @@ _.Zones =
 					["questID"] = 39159,
 					["isDaily"] = true,
 					["description"] = "Drain the Blood Moon to 0% health with Drained Blood Crystals to spawn Remnant of the Blood Moon.",
-					["coord"] = { 22.2, 50.6, 534 },
+					["coord"] = { 22.2, 50.6, TANAAN_JUNGLE },
 					["g"] = {
 						i(127666),	-- Vial of Red Goo (TOY!)
 					},
@@ -612,7 +612,7 @@ _.Zones =
 					["description"] = "\nPurchase a Major Blackfang Challenge Totem from Z'tenga the Walker at |cFFFFFFFF55.2, 74.8|r.  Use the totem in the arena at |cFFFFFFFF54.2, 80.8|r to summon Rendarr.\n\n",
 					["questID"] = 39400,
 					["isDaily"] = true,
-					["coord"] = { 54.2, 80.8, 534 },
+					["coord"] = { 54.2, 80.8, TANAAN_JUNGLE },
 					["g"] = {
 						crit(46, {	-- Rendarr slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -624,8 +624,8 @@ _.Zones =
 					["questID"] = 38631,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 37.2, 68.6, 534 },
-						{ 42.4, 77.6, 534 },
+						{ 37.2, 68.6, TANAAN_JUNGLE },
+						{ 42.4, 77.6, TANAAN_JUNGLE },
 					},
 					["g"] = {
 						crit(37, {	-- Rendrak slain
@@ -637,7 +637,7 @@ _.Zones =
 				n(90885, {	-- Rogond the Tracker
 					["questID"] = 38263,
 					["isDaily"] = true,
-					["coord"] = { 20.4, 49.5, 534 },
+					["coord"] = { 20.4, 49.5, TANAAN_JUNGLE },
 					["g"] = {
 						crit(24, {	-- Rogond the Tracker slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -648,7 +648,7 @@ _.Zones =
 				n(94472, {	-- Savage Whale Shark
 					["questID"] = 36153,
 					["isDaily"] = true,
-					["coord"] = { 38.0, 30.0, 534 },
+					["coord"] = { 38.0, 30.0, TANAAN_JUNGLE },
 					["g"] = {
 						i(128231, {	-- Equipment Blueprint: Trained Shark Tank
 							["questID"] = 39355,	-- Equipment Blueprint: Trained Shark Tank
@@ -659,8 +659,8 @@ _.Zones =
 					["questID"] = 37953,
 					["isDaily"] = true,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
-						{ 41.6, 37.6, 534 },
-						{ 42.8, 36.6, 534 },
+						{ 41.6, 37.6, TANAAN_JUNGLE },
+						{ 42.8, 36.6, TANAAN_JUNGLE },
 					},
 					["g"] = {
 						crit(11, {	-- Sergeant Mor'grak slain
@@ -672,7 +672,7 @@ _.Zones =
 				n(93236, {	-- Shadowthrash
 					["questID"] = 38812,
 					["isDaily"] = true,
-					["coord"] = { 49.8, 61.3, 534 },
+					["coord"] = { 49.8, 61.3, TANAAN_JUNGLE },
 					["g"] = {
 						crit(54, {	-- Shadowthrash slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -683,7 +683,7 @@ _.Zones =
 				n(98285, {	-- Smashum Grabb
 					["questID"] = 40104,
 					["isDaily"] = true,
-					["coord"] = { 88.2, 55.4, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 88.2, 55.4, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						i(108634, {	-- Crashin' Thrashin' Mortar Controller (TOY!)
 							crit(3, {	-- Crashin' Thrashin' Mortar
@@ -695,7 +695,7 @@ _.Zones =
 				n(92495, {	-- Soulslicer
 					["questID"] = 38600,
 					["isDaily"] = true,
-					["coord"] = { 62.6, 72.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 62.6, 72.2, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(30, {	-- Soulslicer slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -706,7 +706,7 @@ _.Zones =
 				n(92887, {	-- Steelsnout
 					["questID"] = 38700,
 					["isDaily"] = true,
-					["coord"] = { 65.6, 36.7, 534 },
+					["coord"] = { 65.6, 36.7, TANAAN_JUNGLE },
 					["g"] = {
 						crit(16, {	-- Steelsnout slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -717,7 +717,7 @@ _.Zones =
 				n(92606, {	-- Sylissa
 					["questID"] = 38628,
 					["isDaily"] = true,
-					["coord"] = { 41.0, 78.7, 534 },
+					["coord"] = { 41.0, 78.7, TANAAN_JUNGLE },
 					["g"] = {
 						crit(36, {	-- Sylissa slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -729,7 +729,7 @@ _.Zones =
 					["description"] = "Capture Strongpoint (East) to make him spawn.",
 					["questID"] = 38752,
 					["isDaily"] = true,
-					["coord"] = { 16.2, 56.3, 534 },
+					["coord"] = { 16.2, 56.3, TANAAN_JUNGLE },
 					["g"] = {
 						crit(21, {	-- Szirek the Twisted slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -741,8 +741,8 @@ _.Zones =
 					["questID"] = 39288,
 					["isDaily"] = true,
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
-						{ 13.8, 60.2, 534 },
-						{ 15.6, 63.4, 534 },
+						{ 13.8, 60.2, TANAAN_JUNGLE },
+						{ 15.6, 63.4, TANAAN_JUNGLE },
 					},
 					["g"] = {
 						crit(1, {	-- Terrorfist, Son of Kormrok slain
@@ -759,7 +759,7 @@ _.Zones =
 				n(92465, {	-- The Blackfang
 					["questID"] = 38597,
 					["isDaily"] = true,
-					["coord"] = { 49.6, 74.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 49.6, 74.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(33, {	-- The Blackfang slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -770,7 +770,7 @@ _.Zones =
 				n(92694, {	-- The Goreclaw
 					["questID"] = 38654,
 					["isDaily"] = true,
-					["coord"] = { 34.6, 72.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 34.6, 72.6, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(39, {	-- The Goreclaw slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -782,7 +782,7 @@ _.Zones =
 					["description"] = "Capture Strongpoint (West) to make him spawn.",
 					["questID"] = 38751,
 					["isDaily"] = true,
-					["coord"] = { 13.1, 57.0, 534 },
+					["coord"] = { 13.1, 57.0, TANAAN_JUNGLE },
 					["g"] = {
 						crit(22, {	-- The Iron Houndmaster slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -795,16 +795,16 @@ _.Zones =
 					["questID"] = 38632,
 					["isDaily"] = true,
 					["coords"] = {	-- **Some coords unconfirmed, probably more spawn points than listed as well**
-						{ 42.4, 77.5, 534 },	-- Confirmed
-						{ 40.5, 72.9, 534 },	-- Confirmed
-						{ 38.2, 72.1, 534 },	-- Confirmed
-						{ 37.5, 67.5, 534 },	-- Confirmed
-						{ 38.8, 75.1, 534 },	-- Confirmed
-						{ 42.8, 74.6, 534 },	-- Confirmed
-						{ 41.2, 68.9, 534 },	-- Confirmed
-						{ 44.0, 67.6, 534 },
-						{ 38.0, 79.0, 534 },
-						{ 44.0, 78.2, 534 },
+						{ 42.4, 77.5, TANAAN_JUNGLE },	-- Confirmed
+						{ 40.5, 72.9, TANAAN_JUNGLE },	-- Confirmed
+						{ 38.2, 72.1, TANAAN_JUNGLE },	-- Confirmed
+						{ 37.5, 67.5, TANAAN_JUNGLE },	-- Confirmed
+						{ 38.8, 75.1, TANAAN_JUNGLE },	-- Confirmed
+						{ 42.8, 74.6, TANAAN_JUNGLE },	-- Confirmed
+						{ 41.2, 68.9, TANAAN_JUNGLE },	-- Confirmed
+						{ 44.0, 67.6, TANAAN_JUNGLE },
+						{ 38.0, 79.0, TANAAN_JUNGLE },
+						{ 44.0, 78.2, TANAAN_JUNGLE },
 					},
 					["g"] = {
 						crit(38, {	-- The Night Haunter slain
@@ -816,7 +816,7 @@ _.Zones =
 				n(91243, {	-- Tho'gar Gorefist
 					["questID"] = 38747,
 					["isDaily"] = true,
-					["coord"] = { 13.6, 56.8, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 13.6, 56.8, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(19, {	-- Tho'gar Gorefist slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -827,7 +827,7 @@ _.Zones =
 				n(92574, {	-- Thromma the Gutslicer
 					["questID"] = 38620,
 					["isDaily"] = true,
-					["coord"] = { 34.0, 44.7, 534 },
+					["coord"] = { 34.0, 44.7, TANAAN_JUNGLE },
 					["g"] = {
 						crit(34, {	-- Thromma the Gutslicer slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -838,7 +838,7 @@ _.Zones =
 				n(92451, {	-- Varyx the Damned
 					["questID"] = 37937,
 					["isDaily"] = true,
-					["coord"] = { 27.6, 32.7, 534 },
+					["coord"] = { 27.6, 32.7, TANAAN_JUNGLE },
 					["g"] = {
 						crit(12, {	-- Varyx the Damned slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -849,7 +849,7 @@ _.Zones =
 				n(95054, {	-- Vengeance <Avatar of Velhari>
 					["questID"] = 39290,
 					["isDaily"] = true,
-					["coord"] = { 32.6, 74.0, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 32.6, 74.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(3, {	-- Vengeance, Avatar of Velhari slain
 							["achievementID"] = 10061,	-- Hellbane
@@ -865,7 +865,7 @@ _.Zones =
 				n(92408, {	-- Xanzith the Everlasting
 					["questID"] = 38579,
 					["isDaily"] = true,
-					["coord"] = { 60.2, 21.6, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 60.2, 21.6, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						crit(57, {	-- Xanzith the Everlasting slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -879,7 +879,7 @@ _.Zones =
 				n(96235, {	-- Xemirkol
 					["achievementID"] = 10334,
 					["description"] = "Attempt to teleport to him by using Master Hunter's Seeking Crystal. Do not get knocked off of his platform.",
-					["coord"] = { 69.6, 38.2, 534 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 69.6, 38.2, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
 						title(59),	-- Predator
 					},
@@ -887,7 +887,7 @@ _.Zones =
 				n(91087, {	-- Zeter'el
 					["questID"] = 38207,
 					["isDaily"] = true,
-					["coord"] = { 48.4, 28.6, 534 },
+					["coord"] = { 48.4, 28.6, TANAAN_JUNGLE },
 					["g"] = {
 						crit(3, {	-- Zeter'el slain
 							["achievementID"] = 10070,	-- Jungle Stalker
@@ -898,7 +898,7 @@ _.Zones =
 				n(90122, {	-- Zoug the Heavy
 					["questID"] = 39045,
 					["isDaily"] = true,
-					["coord"] = { 37.0, 32.84, 534 },
+					["coord"] = { 37.0, 32.84, TANAAN_JUNGLE },
 					["g"] = {
 						crit(52, {	-- Zoug the Heavy slain
 							["achievementID"] = 10070,	-- Jungle Stalker

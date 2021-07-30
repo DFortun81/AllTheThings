@@ -8,7 +8,7 @@ _.Instances = { tier(WOD_TIER, {
 		["lvl"] = 100,
 		["mapID"] = 661,
 		["maps"] = { 662, 663, 664, 665, 666, 667, 668, 669, 670 },
-		["coord"] = { 45.56, 53.61, 534 },	-- Tanaan Jungle, Draenor
+		["coord"] = { 45.56, 53.61, TANAAN_JUNGLE },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(10149, {	-- Glory of the Hellfire Raider
@@ -215,7 +215,7 @@ _.Instances = { tier(WOD_TIER, {
 								["requireSkill"] = JEWELCRAFTING,
 								["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 								["spellID"] = 187634,
-								["coord"] = { 25.8, 39.7, 534 },
+								["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 							}),
 							ig(127749),	-- Corrupted Nest Guardian
 							i(128096),	-- Demonspine Wand
@@ -583,7 +583,7 @@ _.Instances = { tier(WOD_TIER, {
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["spellID"] = 187634,
-						["coord"] = { 25.8, 39.7, 534 },
+						["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 					}),
 					ig(127749),	-- Corrupted Nest Guardian
 					i(124387),	-- Shadowrend Talonblade
@@ -1102,7 +1102,7 @@ _.Instances = { tier(WOD_TIER, {
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["spellID"] = 187634,
-						["coord"] = { 25.8, 39.7, 534 },
+						["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 					}),
 					ig(127749),	-- Corrupted Nest Guardian
 					i(124387),	-- Shadowrend Talonblade
@@ -1624,7 +1624,7 @@ _.Instances = { tier(WOD_TIER, {
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["spellID"] = 187634,
-						["coord"] = { 25.8, 39.7, 534 },
+						["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 					}),
 					ig(127749),	-- Corrupted Nest Guardian
 					i(124387),	-- Shadowrend Talonblade

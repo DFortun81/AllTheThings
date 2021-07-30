@@ -70,7 +70,7 @@ _.Instances = { tier(WOD_TIER, {
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["spellID"] = 187640,
-						["coord"] = { 25.8, 39.7, 534 },
+						["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 					}),
 					i(115434),	-- Down-Lined Leggings
 					i(115435),	-- Leggings of Flowing Feathers
@@ -91,10 +91,8 @@ _.Instances = { tier(WOD_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 39380,
 				["isRaid"] = true,
-				["coord"] = { 47.5, 22.1, 534 },
-				["maps"] = {	-- all Tanaan Jungle maps
-					534,	-- Tanaan Jungle
-				},
+				["coord"] = { 47.5, 22.1, TANAAN_JUNGLE },
+				["maps"] = { TANAAN_JUNGLE },
 				["cr"] = 94015,	-- Supreme Lord Kazzak
 				["g"] = {
 					ach(10071),	-- The Legion Will NOT Conquer All

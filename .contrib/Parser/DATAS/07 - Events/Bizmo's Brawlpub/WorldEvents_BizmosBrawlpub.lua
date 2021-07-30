@@ -212,7 +212,7 @@ _.WorldEvents =
 							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 							["requireSkill"] = JEWELCRAFTING,
 							["spellID"] = 187636,
-							["coord"] = { 25.8, 39.7, 534 },	-- Tanaan Jungle
+							["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 						}),
 						i(98080),	-- Gorgeous Blouse
 						i(98091),	-- Last Season's Shirt

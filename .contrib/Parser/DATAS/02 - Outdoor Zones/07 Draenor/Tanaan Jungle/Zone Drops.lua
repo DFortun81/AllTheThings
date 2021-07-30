@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(534, {	-- Tanaan Jungle
+		m(TANAAN_JUNGLE, {
 			n(ZONEDROPS, {
 				["g"] = {
 					i(126950, {	-- Equipment Blueprint: Bilge Pump

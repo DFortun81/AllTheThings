@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(534, {	-- Tanaan Jungle
+		m(TANAAN_JUNGLE, {
 			n(QUESTS, {
 --[[
 				q(40235),	-- Abrogator Arbitrator
@@ -49,22 +49,22 @@ _.Zones =
 --]]
 				q(39510, {	-- A Little Wetwork
 					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
-					["coord"] = { 61.6, 45.7, 534 },
+					["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39568, {	-- A Little Wetwork
 					["provider"] = { "n", 90974 },	-- Vindicator Krethos
-					["coord"] = { 58.4, 60.4, 534 },
+					["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(38578, {	-- A Message of Terrible Import -- aa
 					["provider"] = { "n", 90584 },	-- Goi'orsh
-					["coord"] = { 44.2, 41.5, 534 },
+					["coord"] = { 44.2, 41.5, TANAAN_JUNGLE },
 				}),
 				q(37940, {	-- Assault on Ironhold Harbor
-					["coord"] = { 61.5, 45.9, 534 },
+					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -74,7 +74,7 @@ _.Zones =
 					},
 				}),
 				q(37891, {	-- Assault on Ironhold Harbor
-					["coord"] = { 58.5, 60.4, 534 },
+					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -85,10 +85,10 @@ _.Zones =
 				}),
 				q(39451 , {	-- Assault on Ironhold Harbor [Bonus Objective]
 					["isDaily"] = true,
-					["coord"] = { 61.5, 45.9, 534 },
+					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
 				}),
 				q(38441, {	-- Assault on The Fel Forge
-					["coord"] = { 61.5, 45.9, 534 },
+					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -98,7 +98,7 @@ _.Zones =
 					},
 				}),
 				q(38440, {	-- Assault on The Fel Forge
-					["coord"] = { 58.5, 60.4, 534 },
+					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -109,11 +109,11 @@ _.Zones =
 				}),
 				q(38439, {	-- Assault on The Fel Forge [Bonus Objective]
 					["isDaily"] = true,
-					["coord"] = { 58.5, 60.4, 534 },
+					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38252, {	-- Assault on the Ruins of Kra'nak
-					["coord"] = { 61.5, 45.9, 534 },
+					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -123,7 +123,7 @@ _.Zones =
 					},
 				}),
 				q(38250, {	-- Assault on the Ruins of Kra'nak
-					["coord"] = { 58.5, 60.4, 534 },
+					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -134,11 +134,11 @@ _.Zones =
 				}),
 				q(39447 , {	-- Assault on the Ruins of Kra'nak [Bonus Objective]
 					["isDaily"] = true,
-					["coord"] = { 58.5, 60.4, 534 },
+					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38449, {	-- Assault on the Temple of Sha'naar
-					["coord"] = { 61.5, 45.9, 534 },
+					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -148,7 +148,7 @@ _.Zones =
 					},
 				}),
 				q(37968, {	-- Assault on the Temple of Sha'naar
-					["coord"] = { 58.5, 60.4, 534 },
+					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -159,11 +159,11 @@ _.Zones =
 				}),
 				q(39449, {	-- Assault on the Temple of Sha'naar [Bonus Objective]
 					["isDaily"] = true,
-					["coord"] = { 58.5, 60.4, 534 },
+					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38586, {	-- Assault on the Throne of Kil'jaeden
-					["coord"] = { 61.5, 45.9, 534 },
+					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -173,7 +173,7 @@ _.Zones =
 					},
 				}),
 				q(38585, {	-- Assault on the Throne of Kil'jaeden
-					["coord"] = { 58.5, 60.4, 534 },
+					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -183,11 +183,11 @@ _.Zones =
 					},
 				}),
 				q(38439 , {	-- Assault on the Throne of Kil'jaeden [Bonus Objective]
-					["coord"] = { 58.5, 60.4, 534 },
+					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38047, {	-- Battle At The Iron Front
-					["coord"] = { 61.5, 45.9, 534 },
+					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -198,7 +198,7 @@ _.Zones =
 				}),
 				q(38866, {	-- Battle At The Iron Front
 					["hordeQuestID"] = 38865,
-					["coord"] = { 58.5, 60.4, 534 },
+					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
 					["sourceQuests"] = {
 						38445,	-- The Assault Base (alliance)
 						37935,	-- The Assault Base (horde)
@@ -207,14 +207,14 @@ _.Zones =
 				q(39443, {	-- Battle At The Iron Front [Bonus Objective]
 					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 58.5, 60.4, 534 },
+					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
 					["sourceQuests"] = {
 						38445,	-- The Assault Base (alliance)
 						37935,	-- The Assault Base (horde)
 					},
 				}),
 				q(38046, {	-- Battle At The Iron Front
-					["coord"] = { 58.5, 60.4, 534 },
+					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -225,7 +225,7 @@ _.Zones =
 				}),
 				q(38044, {	-- Bleeding the Bleeding Hollow
 					["sourceQuest"] = 38453,
-					["coord"] = { 61.5, 45.9, 534 },
+					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -237,12 +237,12 @@ _.Zones =
 				q(39441, {	-- Bleeding the Bleeding Hollow [Bonus Objective]
 					["sourceQuests"] = { 38453 },	-- Garrison Campaign: The Bane of the Bleeding Hollow
 					["isDaily"] = true,
-					["coord"] = { 61.5, 45.9, 534 },
+					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38045, {	-- Bleeding the Bleeding Hollow
 					["sourceQuest"] = 38453,
-					["coord"] = { 58.5, 60.4, 534 },
+					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -253,25 +253,25 @@ _.Zones =
 				}),
 				q(39511, {	-- Blood of Fallen Brothers
 					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
-					["coord"] = { 61.6, 45.7, 534 },
+					["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39509, {	-- Bloodied Blades of Zeth'Gol
 					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
-					["coord"] = { 61.6, 45.7, 534 },
+					["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39567, {	-- Bloodied Blades of Zeth'Gol
 					["provider"] = { "n", 90974 },	-- Vindicator Krethos
-					["coord"] = { 58.4, 60.4, 534 },
+					["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39313, {	-- Bring the Reinforcements
 					["provider"] = { "n", 90963 },	-- Angar Steelbellow
-					["coord"] = { 58.1, 58.6, 534 },
+					["coord"] = { 58.1, 58.6, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38445,	-- The Assault Base
 				}),
@@ -281,25 +281,25 @@ _.Zones =
 				}),
 				q(39569, {	-- Breaking Their Fel Bonds
 					["provider"] = { "n", 90974 },	-- Vindicator Krethos
-					["coord"] = { 58.4, 60.4, 534 },
+					["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39532, {	-- Bringing Down the Iron Horde
 					["provider"] = { "n", 93396 },	-- Nimi Brightcastle
-					["coord"] = { 59.6, 45.9, 534 },
+					["coord"] = { 59.6, 45.9, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39586, {	-- Bringing Down the Iron Horde
 					["provider"] = { "n", 96147 },	-- Parvink
-					["coord"] = { 57.8, 59.8, 534 },
+					["coord"] = { 57.8, 59.8, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(38446, {	-- Commander in the Field!
 					["provider"] = { "n", 91935 },	-- Exarch Maladaar
-					["coord"] = { 9.8, 53.5, 534 },
+					["coord"] = { 9.8, 53.5, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38581,	-- The Battle for the West
 				}),
@@ -309,68 +309,68 @@ _.Zones =
 				}),
 				q(39519, {	-- Demonslayer of Tanaan
 					["provider"] = { "n", 93396 },	-- Nimi Brightcastle
-					["coord"] = { 59.6, 45.9, 534 },
+					["coord"] = { 59.6, 45.9, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39581, {	-- Demonslayer of Tanaan
 					["provider"] = { "n", 96147 },	-- Parvink
-					["coord"] = { 57.8, 59.8, 534 },
+					["coord"] = { 57.8, 59.8, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39513, {	-- Disarming Sha'naar
 					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
-					["coord"] = { 61.6, 45.7, 534 },
+					["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39571, {	-- Disarming Sha'naar
 					["provider"] = { "n", 90974 },	-- Vindicator Krethos
-					["coord"] = { 58.4, 60.4, 534 },
+					["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(38270, {	-- Finding the Killer
 					["sourceQuests"] = { 38453, 38560 },
 					["provider"] = { "n", 91299 },	-- Ariok
-					["coord"] = { 27, 44.4, 534 },
+					["coord"] = { 27.0, 44.4, TANAAN_JUNGLE },
 				}),
 				q(38271, {	-- Following the Bloody Path
 					["sourceQuest"] = 38270,
 					["provider"] = { "n", 91348 },	-- Ariok
-					["coord"] = { 27, 44.4, 534 },
+					["coord"] = { 27.0, 44.4, TANAAN_JUNGLE },
 				}),
 				q(38415, {	-- Garrison Campaign: Onslaught at Auchindoun
 					["provider"] = { "n", 90481 },	-- Draka
-					["coord"] = { 61.4, 45.7, 534 },
+					["coord"] = { 61.4, 45.7, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(38453, {	-- Garrison Campaign: The Bane of the Bleeding Hollow
 					["provider"] = { "n", 90481 },	-- Draka
-					["coord"] = { 61.4, 45.7, 534 },
+					["coord"] = { 61.4, 45.7, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(38560, {	-- Garrison Campaign: The Bane of the Bleeding Hollow
 					["provider"] = { "n", 90481 },	-- Exarch Yrel
-					["coord"] = { 58.4, 60.2, 534 },
+					["coord"] = { 58.4, 60.2, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(39514, {	-- Harnessing Their Power
 					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
-					["coord"] = { 61.6, 45.7, 534 },
+					["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39573, {	-- Harnessing Their Power
 					["provider"] = { "n", 90974 },	-- Vindicator Krethos
-					["coord"] = { 58.4, 60.4, 534 },
+					["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(38444, {	-- In, Through, and Beyond!
 					["provider"] = { "n", 91923 },	-- Exarch Naielle
-					["coord"] = { 69.4, 52.9, 534 },
+					["coord"] = { 69.4, 52.9, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38436,	-- Obstacle Course
 				}),
@@ -380,7 +380,7 @@ _.Zones =
 				}),
 				q(38599, {	-- Infrastructure Improvements
 					["provider"] = { "n", 90991 },	-- Lil' Trix
-					["coord"] = { 59.8, 47.5, 534 },
+					["coord"] = { 59.8, 47.5, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 				}),
 				o(240317, {	-- Iskar's Tome of Shadows
@@ -398,11 +398,11 @@ _.Zones =
 				q(39176, {	-- Mastery Of Taladite
 					["requireSkill"] = JEWELCRAFTING,
 					["provider"] = { "n", 94686 },	-- Sun-Sage Chakkis
-					["coord"] = { 25.8, 39.8, 534 },
+					["coord"] = { 25.8, 39.8, TANAAN_JUNGLE },
 				}),
 				q(38436, {	-- Obstacle Course
 					["provider"] = { "n", 91913 },	-- Exarch Yrel
-					["coord"] = { 73.4, 71.1, 534 },
+					["coord"] = { 73.4, 71.1, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38435,	-- The Invasion of Tanaan
 				}),
@@ -412,7 +412,7 @@ _.Zones =
 				}),
 				q(39395, {	-- Oronok's Offer
 					["provider"] = { "n", 92338 },	-- Oronok Torn-heart
-					["coord"] = { 62.8, 27.8, 534 },
+					["coord"] = { 62.8, 27.8, TANAAN_JUNGLE },
 					["sourceQuests"] = {
 						39394,	-- The Cipher of Damnation (A)
 						38463,	-- The Cipher of Damnation (H)
@@ -423,20 +423,20 @@ _.Zones =
 				}),
 				q(39526, {	-- Pressing the Attack
 					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
-					["coord"] = { 61.6, 45.7, 534 },
+					["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39574, {	-- Pressing the Attack
 					["provider"] = { "n", 90974 },	-- Vindicator Krethos
-					["coord"] = { 58.4, 60.4, 534 },
+					["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39177, {	-- Ruined Construct
 					["requireSkill"] = JEWELCRAFTING,
 					["provider"] = { "n", 94605 },	-- Apexis Gemcutter
-					["coord"] = { 17.5, 45.1, 534 },
+					["coord"] = { 17.5, 45.1, TANAAN_JUNGLE },
 					["sourceQuest"] = 39176,	-- Mastery of Taladite
 					["g"] = {
 						recipe(187639),	-- Immaculate Versatility Taladite
@@ -444,30 +444,30 @@ _.Zones =
 				}),
 				q(39565, {	-- Rumble in the Jungle
 					["provider"] = { "n", 92805 },	-- Z'tenga the Walker
-					["coord"] = { 55.2, 74.7, 534 },
+					["coord"] = { 55.2, 74.7, TANAAN_JUNGLE },
 					["isWeekly"] = true,
 				}),
 				q(39512, {	-- Secrets of the Shadow Council
 					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
-					["coord"] = { 61.6, 45.7, 534 },
+					["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39570, {	-- Secrets of the Shadow Council
 					["provider"] = { "n", 90974 },	-- Vindicator Krethos
-					["coord"] = { 58.4, 60.4, 534 },
+					["coord"] = { 58.4, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(38603, {	-- Setting the Signal
 					["provider"] = { "n", 92545 },	-- Norman Powerspark
-					["coord"] = { 58.1, 58.5, 534 },
+					["coord"] = { 58.1, 58.5, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38445,	-- The Assault Base
 				}),
 				q(39422, {	-- Shipyard Report
 					["provider"] = { "n", 90309 },	-- Exarch Yrel
-					["coord"] = { 58.4, 60.3, 534 },
+					["coord"] = { 58.4, 60.3, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38445,
 					["isBreadcrumb"] = true,	-- The Assault Base
@@ -479,7 +479,7 @@ _.Zones =
 				}),
 				q(38445, {	-- The Assault Base
 					["provider"] = { "n", 91923 },	-- Exarch Naielle
-					["coord"] = { 62.4, 54.2, 534 },
+					["coord"] = { 62.4, 54.2, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38444,	-- In, Through, and Beyond!
 				}),
@@ -489,7 +489,7 @@ _.Zones =
 				}),
 				q(38581, {	-- The Battle for the West
 					["provider"] = { "n", 90309 },	-- Exarch Yrel
-					["coord"] = { 58.4, 60.3, 534 },
+					["coord"] = { 58.4, 60.3, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38445,	-- The Assault Base
 				}),
@@ -500,7 +500,7 @@ _.Zones =
 				q(38272, {	-- The Bleeding Hollow
 					["sourceQuest"] = 38271,
 					["provider"] = { "n", 91421 },	-- Ariok
-					["coord"] = { 32.5, 37.5, 534 },
+					["coord"] = { 32.5, 37.5, TANAAN_JUNGLE },
 				}),
 				q(39394, {	-- The Cipher of Damnation
 					["provider"] = { "n", 92120 },	-- Oronok Torn-heart
@@ -541,20 +541,20 @@ _.Zones =
 				}),
 				q(39529, {	-- Tooth and Claw
 					["provider"] = { "n", 93396 },	-- Nimi Brightcastle
-					["coord"] = { 59.6, 45.9, 534 },
+					["coord"] = { 59.6, 45.9, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39582, {	-- Tooth and Claw
 					["provider"] = { "n", 96147 },	-- Parvink
-					["coord"] = { 57.8, 59.8, 534 },
+					["coord"] = { 57.8, 59.8, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(39432, {	-- Unknowable Power
 					["provider"] = { "n", 95424 },	-- Dawn-Seeker Krisek
 					["coords"] = {
-						{ 57.9, 59.3, 534 },	-- alliance
+						{ 57.9, 59.3, TANAAN_JUNGLE },	-- alliance
 					},
 					["sourceQuests"] = {
 						38445,	-- The Assault Base (alliance)
@@ -566,8 +566,8 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 39432,	-- Unknowable Power
 					["coords"] = {
-						{ 57.9, 59.3, 534 },	-- alliance
-						{ 60.4, 46.6, 534 },	-- horde
+						{ 57.9, 59.3, TANAAN_JUNGLE },	-- alliance
+						{ 60.4, 46.6, TANAAN_JUNGLE },	-- horde
 					},
 				}),
 			}),
