@@ -348,7 +348,7 @@ _.Zones =
 						i(31523),	-- Treebole's Hoop
 					},
 				}),
-				applyclassicphase(TBC_PHASE_THREE_SWIFTFLIGHTFORM, q(10986, {	-- Eyes in the Sky
+				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10986, {	-- Eyes in the Sky
 					["qg"] = 22924,	-- Arthorn Windsong
 					["sourceQuest"] = 10980,	-- The Book of the Raven
 					["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
@@ -812,7 +812,7 @@ _.Zones =
 						i(29750),	-- Ethereum Stasis Chamber Key
 					},
 				}),
-				applyclassicphase(TBC_PHASE_THREE_SWIFTFLIGHTFORM, q(10993, {	-- Return to Cenarion Refuge
+				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10993, {	-- Return to Cenarion Refuge
 					["qg"] = 22924,	-- Arthorn Windsong
 					["sourceQuest"] = 10992,	-- The Hawk's Essence
 					["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
@@ -1054,7 +1054,7 @@ _.Zones =
 						i(31478),	-- Rugged Mountain Bracers
 					},
 				}),
-				applyclassicphase(TBC_PHASE_THREE_SWIFTFLIGHTFORM, q(10980, {	-- The Book of the Raven
+				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10980, {	-- The Book of the Raven
 					["qg"] = 22924,	-- Arthorn Windsong
 					["sourceQuest"] = 10979,	-- To the Evergrove
 					["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
@@ -1102,7 +1102,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(65, 20, 65),
 				}),
-				applyclassicphase(TBC_PHASE_THREE_SWIFTFLIGHTFORM, q(10991, {	-- The Falcon's Essence
+				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10991, {	-- The Falcon's Essence
 					["qg"] = 22924,	-- Arthorn Windsong
 					["sourceQuest"] = 10990,	-- The Eagle's Essence
 					["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
@@ -1115,7 +1115,7 @@ _.Zones =
 					},
 					["lvl"] = 70,
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SWIFTFLIGHTFORM, q(10992,	-- The Hawk's Essence
+				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10992,	-- The Hawk's Essence
 					bubbleDown({ ["timeline"] = { "removed 4.0.1.13287" } }, {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10991,	-- The Falcon's Essence
