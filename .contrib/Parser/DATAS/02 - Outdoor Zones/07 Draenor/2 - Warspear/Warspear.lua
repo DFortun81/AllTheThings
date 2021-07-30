@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(624, {	-- Warspear
+		m(WARSPEAR, {
 			["achievementID"] = 9215,	-- Hero of Warspear
 			["isRaid"] = true,
 			["races"] = HORDE_ONLY,
@@ -14,22 +14,22 @@ _.Zones =
 				follower(467, {	-- Fen Tao
 					["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
 					["creatureID"] = 91483,	-- Fen Tao
-					["coord"] = { 46.9, 45.2, 624 },
+					["coord"] = { 46.9, 45.2, WARSPEAR },
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1408, {	-- Warspear, Ashran
-						["coord"] = { 44.2, 33.9, 624 },
+						["coord"] = { 44.2, 33.9, WARSPEAR },
 					}),
 				}),
 				n(QUESTS, {
 					q(36709, {	-- Burning Beauty
 						["provider"] = { "n", 86312 },	-- Lieutenant Kragil
-						["coord"] = { 44.1, 45.4, 624 },
+						["coord"] = { 44.1, 45.4, WARSPEAR },
 						["sourceQuest"] = 36708,	-- Inspiring Ashran
 					}),
 					q(36708, {	-- Inspiring Ashran
 						["provider"] = { "n", 86312 },	-- Lieutenant Kragil
-						["coord"] = { 44.1, 45.4, 624 },
+						["coord"] = { 44.1, 45.4, WARSPEAR },
 						["sourceQuest"] = 36707,	-- Warspear Welcome
 					}),
 					q(36055, {	-- Sealing Fate: Apexis Crystals
@@ -39,8 +39,8 @@ _.Zones =
 						},
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 51.6, 61.9, 622 },	-- Stormshield, Alliance
-							{ 64.6, 62.0, 624 },	-- Warspear, Horde
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 823, 500 }, },	-- 500x Apexis Crystal
 						["lvl"] = 100,
@@ -52,8 +52,8 @@ _.Zones =
 						},
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 51.6, 61.9, 622 },	-- Stormshield, Alliance
-							{ 64.6, 62.0, 624 },	-- Warspear, Horde
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 824, 1000 }, },	-- 1,000x Garrison Resources
 						["lvl"] = 100,
@@ -65,8 +65,8 @@ _.Zones =
 						},
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 51.6, 61.9, 622 },	-- Stormshield, Alliance
-							{ 64.6, 62.0, 624 },	-- Warspear, Horde
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = 5000000,	-- 500g
 						["lvl"] = 100,
@@ -79,8 +79,8 @@ _.Zones =
 						},
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 51.6, 61.9, 622 },	-- Stormshield, Alliance
-							{ 64.6, 62.0, 624 },	-- Warspear, Horde
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 823, 1000 }, },	-- 1,000x Apexis Crystal
 						["lvl"] = 100,
@@ -93,8 +93,8 @@ _.Zones =
 						},
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 51.6, 61.9, 622 },	-- Stormshield, Alliance
-							{ 64.6, 62.0, 624 },	-- Warspear, Horde
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = 20000000,	-- 2,000g
 						["lvl"] = 100,
@@ -107,8 +107,8 @@ _.Zones =
 						},
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 51.6, 61.9, 622 },	-- Stormshield, Alliance
-							{ 64.6, 62.0, 624 },	-- Warspear, Horde
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 823, 2000 }, },	-- 2,000x Apexis Crystal
 						["lvl"] = 100,
@@ -121,8 +121,8 @@ _.Zones =
 						},
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 51.6, 61.9, 622 },	-- Stormshield, Alliance
-							{ 64.6, 62.0, 624 },	-- Warspear, Horde
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = 10000000,	-- 1,000g
 						["lvl"] = 100,
@@ -135,8 +135,8 @@ _.Zones =
 						},
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 51.6, 61.9, 622 },	-- Stormshield, Alliance
-							{ 64.6, 62.0, 624 },	-- Warspear, Horde
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 824, 2000 }, },	-- 2,000x Garrison Resources
 						["lvl"] = 100,
@@ -149,15 +149,15 @@ _.Zones =
 						},
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 51.6, 61.9, 622 },	-- Stormshield, Alliance
-							{ 64.6, 62.0, 624 },	-- Warspear, Horde
+							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
+							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 824, 4000 }, },	-- 4,000x Garrison Resources
 						["lvl"] = 100,
 					}),
 					q(35243, {	-- The Dark Lady's Gift
 						["provider"] = { "n", 81765 },	-- Vivianne
-						["coord"] = { 62.1, 23.0, 624 },
+						["coord"] = { 62.1, 23.0, WARSPEAR },
 						["sourceQuest"] = 36709,	-- Burning Beauty
 						["g"] = {
 							follower(216),	-- Vivianne
@@ -165,7 +165,7 @@ _.Zones =
 					}),
 					q(36707, {	-- Warspear Welcome
 						["provider"] = { "n", 86315 },	-- Stomphoof
-						["coord"] = { 45.5, 34.6, 624 },
+						["coord"] = { 45.5, 34.6, WARSPEAR },
 						["sourceQuest"] = 36706,	-- Ashran Appearance
 					}),
 				}),
@@ -173,7 +173,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(86036, {	-- Beska Redtusk <Frostwolf Orcs Quartermaster>
-							["coord"] = { 53.9, 62.6, 624 },
+							["coord"] = { 53.9, 62.6, WARSPEAR },
 							["g"] = {
 								i(118662, {	-- Bladespire Relic
 									["cost"] = 25000000,	-- 2,500g
@@ -209,7 +209,7 @@ _.Zones =
 							},
 						}),
 						n(88569, {	-- Blood Guard Axelash <Primal Gladiator>
-							["coord"] = { 48.5, 57.6, 624 },
+							["coord"] = { 48.5, 57.6, WARSPEAR },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								n(-319, {	-- Weapons
@@ -879,7 +879,7 @@ _.Zones =
 						}),
 						n(88161, {	-- Challenger Sunforge
 							["description"] = "Can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",
-							["coord"] = { 65.3, 59.3, 624 },
+							["coord"] = { 65.3, 59.3, WARSPEAR },
 							["g"] = {
 								i(118401, {	-- Arcana Shard Spire
 									["cost"] = 10000000,	-- 1,000g
@@ -1092,7 +1092,7 @@ _.Zones =
 							},
 						}),
 						n(93909, {	-- Cladd Dawnstrider <Wild Gladiator>
-							["coord"] = { 49.3, 56.7, 624 },
+							["coord"] = { 49.3, 56.7, WARSPEAR },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								n(-319, {	-- Weapons
@@ -1774,7 +1774,7 @@ _.Zones =
 							},
 						}),
 						n(86382, {	-- Dawn-Seeker Alkset <Apexis Leggings Trader>
-							["coord"] = { 65.2, 64.2, 624 },
+							["coord"] = { 65.2, 64.2, WARSPEAR },
 							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									["cost"] = {
@@ -1842,7 +1842,7 @@ _.Zones =
 							},
 						}),
 						n(86378, {	-- Dawn-Seeker Jiklar <Apexis Cloak Trader>
-							["coord"] = { 66.6, 63.6, 624 },
+							["coord"] = { 66.6, 63.6, WARSPEAR },
 							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									["cost"] = {
@@ -1922,7 +1922,7 @@ _.Zones =
 							},
 						}),
 						n(91322, {	-- Dawn-Seeker Kayrek <Apexis Bracer Trader>
-							["coord"] = { 65.6, 64.7, 624 },
+							["coord"] = { 65.6, 64.7, WARSPEAR },
 							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									["cost"] = {
@@ -1990,7 +1990,7 @@ _.Zones =
 							},
 						}),
 						n(86376, {	-- Dawn-Seeker Kirrik <Apexis Helm Trader>
-							["coord"] = { 66.7, 64.3, 624 },
+							["coord"] = { 66.7, 64.3, WARSPEAR },
 							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									["cost"] = {
@@ -2058,7 +2058,7 @@ _.Zones =
 							},
 						}),
 						n(86379, {	-- Dawn-Seeker Rikks <Apexis Glove Trader>
-							["coord"] = { 66.0, 64.5, 624 },
+							["coord"] = { 66.0, 64.5, WARSPEAR },
 							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									["cost"] = {
@@ -2126,7 +2126,7 @@ _.Zones =
 							},
 						}),
 						n(92503, {	-- Dawn-Seeker Skariss <Apexis Belt Trader>
-							["coord"] = { 66.4, 62.3, 624 },
+							["coord"] = { 66.4, 62.3, WARSPEAR },
 							["g"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									["cost"] = {
@@ -2194,7 +2194,7 @@ _.Zones =
 							},
 						}),
 						n(128759, {	-- Dazzerian <Warspear Quartermaster>
-							["coord"] = { 49.2, 55.0, 624 },
+							["coord"] = { 49.2, 55.0, WARSPEAR },
 							["g"] = {
 								i(116775, {	-- Breezestrider Stallion
 									["cost"] = {
@@ -2207,7 +2207,7 @@ _.Zones =
 							},
 						}),
 						n(93908, {	-- Fobbly Kickfix <Wild Combatant>
-							["coord"] = { 49.1, 56.4, 624 },
+							["coord"] = { 49.1, 56.4, WARSPEAR },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								n(-319, {	-- Weapons
@@ -2786,7 +2786,7 @@ _.Zones =
 							},
 						}),
 						n(86045, {	-- Ged'kah <Enchanting Recipes>
-							["coord"] = { 78.0, 53.7, 624 },
+							["coord"] = { 78.0, 53.7, WARSPEAR },
 							["g"] = {
 								i(111922, {		-- Draenor Enchanting
 									["description"] = "This is a reward for completing the introductory Enchanting questline that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
@@ -2840,7 +2840,7 @@ _.Zones =
 							},
 						}),
 						n(87542, {	-- Joshua Alvarez <Alchemy Recipes>
-							["coord"] = { 61.0, 27.4, 624 },
+							["coord"] = { 61.0, 27.4, WARSPEAR },
 							["g"] = {
 								i(109558, {		-- A Treatise on the Alchemy of Draenor
 									["collectible"] = false,
@@ -2891,7 +2891,7 @@ _.Zones =
 							},
 						}),
 						n(87548, {	-- Kaevan Highwit <Jewelcrafting Designs>
-							["coord"] = { 60.4, 40.7, 624 },
+							["coord"] = { 60.4, 40.7, WARSPEAR },
 							["g"] = {
 								i(115359, {	-- Draenor Jewelcrafting
 									["collectible"] = false,
@@ -2939,7 +2939,7 @@ _.Zones =
 						n(93917, {	-- Malukah Lightsong <Warmongering Gladiator>
 							["races"] = HORDE_ONLY,	-- to hide it in Mark of Honor list
 							["itemID"] = 137642,	-- Mark of Honor
-							["coord"] = { 48.9, 57.3, 624 },
+							["coord"] = { 48.9, 57.3, WARSPEAR },
 							["g"] = {
 								n(-319, {	-- Weapons
 									i(138636, {	-- Arsenal: Warmongering Gladiator's Weapons (H)
@@ -3626,7 +3626,7 @@ _.Zones =
 							},
 						}),
 						n(87551, {	-- Maru'sa <Inscription Recipes>
-							["coord"] = { 75.3, 47.6, 624 },
+							["coord"] = { 75.3, 47.6, WARSPEAR },
 							["g"] = {
 								i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
 									["collectible"] = false,
@@ -3662,7 +3662,7 @@ _.Zones =
 							},
 						}),
 						n(88493, {	-- Mimi Wizzlebub <Steamwheedle Quartermaster>
-							["coord"] = { 54.2, 60.7, 624 },
+							["coord"] = { 54.2, 60.7, WARSPEAR },
 							["g"] = {
 								i(119149, {	-- Captured Forest Sproutling
 									["cost"] = {
@@ -3697,7 +3697,7 @@ _.Zones =
 							},
 						}),
 						n(87552, {	-- Nik Steelrings
-							["coord"] = { 70.5, 38.9, 624 },
+							["coord"] = { 70.5, 38.9, WARSPEAR },
 							["g"] = {
 								i(111921, {	-- Draenor Engineering
 									["collectible"] = false,
@@ -3738,7 +3738,7 @@ _.Zones =
 							},
 						}),
 						n(87550, {	-- Nonn Threeratchet <Blacksmithing Plans>
-							["coord"] = { 75.0, 37.9, 624 },
+							["coord"] = { 75.0, 37.9, WARSPEAR },
 							["g"] = {
 								i(115356, {	-- Draenor Blacksmithing
 									["collectible"] = false,
@@ -3788,7 +3788,7 @@ _.Zones =
 							},
 						}),
 						n(86037, {	-- Ravenspeaker Skeega <Arakkoa Outcasts Quartermaster>
-							["coord"] = { 53.4, 59.8, 624 },
+							["coord"] = { 53.4, 59.8, WARSPEAR },
 							["g"] = {
 								i(118666, {	-- Arakkoa Elixir
 									["cost"] = { { "c", 823, 1 }, },	-- 1x Apexis Crystal
@@ -3812,7 +3812,7 @@ _.Zones =
 							},
 						}),
 						n(88253, {	-- Srikka
-							["coord"] = { 74.4, 31.6, 624 },
+							["coord"] = { 74.4, 31.6, WARSPEAR },
 							["g"] = {
 								i(122606, {	-- Explorer's Notebook
 									["cost"] = { { "i", 87399, 5 } },	-- 5x  Restored Artifact
@@ -3846,7 +3846,7 @@ _.Zones =
 							},
 						}),
 						n(87774, {	-- Stone Guard Brokefist <Primal Combatant>
-							["coord"] = { 48.3, 57.5, 624 },
+							["coord"] = { 48.3, 57.5, WARSPEAR },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								n(-319, {	-- Weapons
@@ -4336,7 +4336,7 @@ _.Zones =
 							},
 						}),
 						n(93916, {	-- Tae'loxe Soulshrivel <Warmongering Combatant>
-							["coord"] = { 49.2, 57.1, 624 },
+							["coord"] = { 49.2, 57.1, WARSPEAR },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								n(-319, {	-- Weapons
@@ -4915,7 +4915,7 @@ _.Zones =
 							},
 						}),
 						n(85840, {	-- Torgg Flexington <Blueprints Trader>
-							["coord"] = { 42.6, 36.4, 624 },
+							["coord"] = { 42.6, 36.4, WARSPEAR },
 							["g"] = {
 								i(111929, {	-- Alchemy Lab, Level 2
 									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes

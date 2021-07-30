@@ -20,8 +20,8 @@ _.WorldEvents =
 				}),
 				n(151987, {	-- Kronnus <Timewalking Vendor> [Horde Side]
 					["races"] = HORDE_ONLY,
-					["coord"] = { 42.8, 54.5, 624 },	-- Warspear
-					["maps"] = { 624 },	-- Warspear
+					["coord"] = { 42.8, 54.5, WARSPEAR },
+					["maps"] = { WARSPEAR },
 					["g"] = {
 						i(167894),	-- Beastlord's Irontusk -
 						i(167895),	-- Beastlord's Warwolf
@@ -138,8 +138,8 @@ _.WorldEvents =
 				}),
 				n(151955, {	-- Tempra <Timewalking Vendor> [Alliance Side]
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 36.9, 72.5, 622 },	-- Stormshield
-					["maps"] = { 622 },	-- Stormshield
+					["coord"] = { 36.9, 72.5, STORMSHIELD },
+					["maps"] = { STORMSHIELD },
 					["g"] = {
 						i(167894),	-- Beastlord's Irontusk
 						i(167895),	-- Beastlord's Warwolf
