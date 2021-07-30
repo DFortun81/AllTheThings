@@ -63,76 +63,79 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
-						i(67414, {	-- Bag of Shiny Things
-							["description"] = "Fishing Daily Quest Reward",
-							["crs"] = { 4573 },	-- Armand Cromwell
-							["g"] = {
-								i(44983),	-- Strand Crawler
-								i(33820),	-- Weather-Beaten Fishing Hat
-								i(45991),	-- Bone Fishing Pole
-								i(45992),	-- Jeweled Fishing Pole
-							},
-						}),
-						q(29317, {	-- Fish Head
-							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, UNDERCITY },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(1, {	-- Fish Head
-									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
-								}),
-							},
-						}),
-						q(29320, {	-- Like Pike?
-							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, UNDERCITY },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(3, {	-- Like Pike?
-									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
-								}),
-							},
-						}),
-						q(29361, {	-- Moat Monster!
-							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, UNDERCITY },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(5, {	-- Moat Monster!
-									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
-								}),
-							},
-						}),
-						q(29319, {	-- Tadpole Terror
-							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, UNDERCITY },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(2, {	-- Tadpole Terror
-									["achievementID"] = 5850,-- Fish or Cut Bait: Undercity
-								}),
-							},
-						}),
-						q(29322, {	-- Time for Slime
-							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, UNDERCITY },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(4, {	-- Time for Slime
-									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
-								}),
-							},
-						}),
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(67414, {	-- Bag of Shiny Things
+								["description"] = "Fishing Daily Quest Reward",
+								["crs"] = { 4573 },	-- Armand Cromwell
+								["g"] = {
+									i(44983),	-- Strand Crawler
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								},
+							}),
+							q(29317, {	-- Fish Head
+								["provider"] = { "n", 4573 },	-- Armand Cromwell
+								["coord"] = { 80.7, 31.2, UNDERCITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(1, {	-- Fish Head
+										["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
+									}),
+								},
+							}),
+							q(29320, {	-- Like Pike?
+								["provider"] = { "n", 4573 },	-- Armand Cromwell
+								["coord"] = { 80.7, 31.2, UNDERCITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(3, {	-- Like Pike?
+										["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
+									}),
+								},
+							}),
+							q(29361, {	-- Moat Monster!
+								["provider"] = { "n", 4573 },	-- Armand Cromwell
+								["coord"] = { 80.7, 31.2, UNDERCITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(5, {	-- Moat Monster!
+										["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
+									}),
+								},
+							}),
+							q(29319, {	-- Tadpole Terror
+								["provider"] = { "n", 4573 },	-- Armand Cromwell
+								["coord"] = { 80.7, 31.2, UNDERCITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(2, {	-- Tadpole Terror
+										["achievementID"] = 5850,-- Fish or Cut Bait: Undercity
+									}),
+								},
+							}),
+							q(29322, {	-- Time for Slime
+								["provider"] = { "n", 4573 },	-- Armand Cromwell
+								["coord"] = { 80.7, 31.2, UNDERCITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(4, {	-- Time for Slime
+										["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
+									}),
+								},
+							}),
+						},
 					}),
 				}),
 				prof(COOKING, {

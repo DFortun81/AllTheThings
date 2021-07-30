@@ -164,76 +164,79 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
-						i(67414, {	-- Bag of Shiny Things
-							["description"] = "Fishing Daily Quest Reward",
-							["crs"] = { 5494 },	-- Catherine Leland
-							["g"] = {
-								i(44983),	-- Strand Crawler
-								i(33820),	-- Weather-Beaten Fishing Hat
-								i(45991),	-- Bone Fishing Pole
-								i(45992),	-- Jeweled Fishing Pole
-							},
-						}),
-						q(26488, {	-- Big Gulp
-							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, STORMWIND_CITY },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(4, {	-- Big Gulp
-									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
-								}),
-							},
-						}),
-						q(26420, {	-- Diggin' For Worms
-							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, STORMWIND_CITY },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(2, {	-- Diggin' For Worms
-									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
-								}),
-							},
-						}),
-						q(26414, {	-- Hitting a Walleye
-							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, STORMWIND_CITY },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(1, {	-- Hitting a Walleye
-									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
-								}),
-							},
-						}),
-						q(26442, {	-- Rock Lobster
-							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, STORMWIND_CITY },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(3, {	-- Rock Lobster
-									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
-								}),
-							},
-						}),
-						q(26536, {	-- Thunder Falls
-							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, STORMWIND_CITY },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(5, {	-- Thunder Falls
-									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
-								}),
-							},
-						}),
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(67414, {	-- Bag of Shiny Things
+								["description"] = "Fishing Daily Quest Reward",
+								["crs"] = { 5494 },	-- Catherine Leland
+								["g"] = {
+									i(44983),	-- Strand Crawler
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								},
+							}),
+							q(26488, {	-- Big Gulp
+								["provider"] = { "n", 5494 },	-- Catherine Leland
+								["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									crit(4, {	-- Big Gulp
+										["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+									}),
+								},
+							}),
+							q(26420, {	-- Diggin' For Worms
+								["provider"] = { "n", 5494 },	-- Catherine Leland
+								["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									crit(2, {	-- Diggin' For Worms
+										["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+									}),
+								},
+							}),
+							q(26414, {	-- Hitting a Walleye
+								["provider"] = { "n", 5494 },	-- Catherine Leland
+								["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									crit(1, {	-- Hitting a Walleye
+										["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+									}),
+								},
+							}),
+							q(26442, {	-- Rock Lobster
+								["provider"] = { "n", 5494 },	-- Catherine Leland
+								["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									crit(3, {	-- Rock Lobster
+										["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+									}),
+								},
+							}),
+							q(26536, {	-- Thunder Falls
+								["provider"] = { "n", 5494 },	-- Catherine Leland
+								["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									crit(5, {	-- Thunder Falls
+										["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+									}),
+								},
+							}),
+						},
 					}),
 				}),
 				prof(JEWELCRAFTING, {

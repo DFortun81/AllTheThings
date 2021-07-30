@@ -262,7 +262,7 @@ _.Zones =
 						i(186736),	-- Shardhide Leather Cowl
 						i(185864),	-- Shardhide Leather Hood
 						i(185876),	-- Vault Guardian's Helm
-					--	i(186748),	-- Vault Guardian's Visor
+						i(186748),	-- Vault Guardian's Visor
 					}),
 					i(187442),	-- Scholar's Ancient Pack
 					i(187008),	-- Recipe: Porous Rock Candy

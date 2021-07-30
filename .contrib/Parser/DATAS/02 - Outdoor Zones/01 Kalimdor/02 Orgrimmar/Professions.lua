@@ -228,92 +228,95 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
-						i(67414, {	-- Bag of Shiny Things
-							["description"] = "Fishing Daily Quest Reward",
-							["crs"] = { 43239 },	-- Razgar
-							["g"] = {
-								i(44983),	-- Strand Crawler
-								i(33820),	-- Weather-Beaten Fishing Hat
-								i(45991),	-- Bone Fishing Pole
-								i(45992),	-- Jeweled Fishing Pole
-							},
-						}),
-						q(26588, {	-- A Furious Catch
-							["provider"] = { "n", 43239 },	-- Razgar
-							["coord"] = { 65.7, 41.1, ORGRIMMAR },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(4, {	-- A Furious Catch
-									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
-								}),
-							},
-						}),
-						q(26572, {	-- A Golden Opportunity
-							["provider"] = { "n", 43239 },	-- Razgar
-							["coord"] = { 65.7, 41.1, ORGRIMMAR },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(5, {	-- A Golden Opportunity
-									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
-								}),
-							},
-						}),
-						q(26557, {	-- A Staggering Effort
-							["provider"] = { "n", 43239 },	-- Razgar
-							["coord"] = { 65.7, 41.1, ORGRIMMAR },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(3, {	-- A Staggering Effort
-									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
-								}),
-							},
-						}),
-						q(26543, {	-- Clammy Hands
-							["provider"] = { "n", 43239 },	-- Razgar
-							["coord"] = { 65.7, 41.1, ORGRIMMAR },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(1, {	-- Clammy Hands
-									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
-								}),
-							},
-						}),
-						q(8228, {	-- Could I get a Fishing Flier?
-							["provider"] = { "n", 15116 },	-- Grinkle
-							["coord"] = { 52.2, 77.0, ORGRIMMAR },
-							["requireSkill"] = FISHING,
-							["isBreadcrumb"] = true,
-							["repeatable"] = true,
-							["races"] = HORDE_ONLY,
-							["lvl"] = 35,
-						}),
-						q(26556, {	-- No Dumping Allowed
-							["provider"] = { "n", 43239 },	-- Razgar
-							["coord"] = { 65.7, 41.1, ORGRIMMAR },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(2, {	-- No Dumping Allowed
-									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
-								}),
-							},
-						}),
-						q(6608, {	-- You Too Good.
-							["provider"] = { "n", 3332 },	-- Lumak
-							["coord"] = { 66.6, 41.6, ORGRIMMAR },
-							["races"] = HORDE_ONLY,
-							["requireSkill"] = FISHING,
-							["isBreadcrumb"] = true,
-						}),
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(67414, {	-- Bag of Shiny Things
+								["description"] = "Fishing Daily Quest Reward",
+								["crs"] = { 43239 },	-- Razgar
+								["g"] = {
+									i(44983),	-- Strand Crawler
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								},
+							}),
+							q(26588, {	-- A Furious Catch
+								["provider"] = { "n", 43239 },	-- Razgar
+								["coord"] = { 65.7, 41.1, ORGRIMMAR },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(4, {	-- A Furious Catch
+										["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
+									}),
+								},
+							}),
+							q(26572, {	-- A Golden Opportunity
+								["provider"] = { "n", 43239 },	-- Razgar
+								["coord"] = { 65.7, 41.1, ORGRIMMAR },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(5, {	-- A Golden Opportunity
+										["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
+									}),
+								},
+							}),
+							q(26557, {	-- A Staggering Effort
+								["provider"] = { "n", 43239 },	-- Razgar
+								["coord"] = { 65.7, 41.1, ORGRIMMAR },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(3, {	-- A Staggering Effort
+										["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
+									}),
+								},
+							}),
+							q(26543, {	-- Clammy Hands
+								["provider"] = { "n", 43239 },	-- Razgar
+								["coord"] = { 65.7, 41.1, ORGRIMMAR },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(1, {	-- Clammy Hands
+										["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
+									}),
+								},
+							}),
+							q(8228, {	-- Could I get a Fishing Flier?
+								["provider"] = { "n", 15116 },	-- Grinkle
+								["coord"] = { 52.2, 77.0, ORGRIMMAR },
+								["requireSkill"] = FISHING,
+								["isBreadcrumb"] = true,
+								["repeatable"] = true,
+								["races"] = HORDE_ONLY,
+								["lvl"] = 35,
+							}),
+							q(26556, {	-- No Dumping Allowed
+								["provider"] = { "n", 43239 },	-- Razgar
+								["coord"] = { 65.7, 41.1, ORGRIMMAR },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(2, {	-- No Dumping Allowed
+										["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
+									}),
+								},
+							}),
+							q(6608, {	-- You Too Good.
+								["provider"] = { "n", 3332 },	-- Lumak
+								["coord"] = { 66.6, 41.6, ORGRIMMAR },
+								["races"] = HORDE_ONLY,
+								["requireSkill"] = FISHING,
+								["isBreadcrumb"] = true,
+							}),
+						},
 					}),
 					i(34486),	-- Old Crafty
 				}),
