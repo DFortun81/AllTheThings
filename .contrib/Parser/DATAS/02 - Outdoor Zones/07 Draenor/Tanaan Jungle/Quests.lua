@@ -84,6 +84,7 @@ _.Zones =
 					},
 				}),
 				q(39451 , {	-- Assault on Ironhold Harbor [Bonus Objective]
+					["isDaily"] = true,
 					["coord"] = { 61.5, 45.9, 534 },
 				}),
 				q(38441, {	-- Assault on The Fel Forge
@@ -107,6 +108,7 @@ _.Zones =
 					},
 				}),
 				q(38439, {	-- Assault on The Fel Forge [Bonus Objective]
+					["isDaily"] = true,
 					["coord"] = { 58.5, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -131,6 +133,7 @@ _.Zones =
 					},
 				}),
 				q(39447 , {	-- Assault on the Ruins of Kra'nak [Bonus Objective]
+					["isDaily"] = true,
 					["coord"] = { 58.5, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -155,6 +158,7 @@ _.Zones =
 					},
 				}),
 				q(39449, {	-- Assault on the Temple of Sha'naar [Bonus Objective]
+					["isDaily"] = true,
 					["coord"] = { 58.5, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -201,6 +205,7 @@ _.Zones =
 					},
 				}),
 				q(39443, {	-- Battle At The Iron Front [Bonus Objective]
+					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 58.5, 60.4, 534 },
 					["sourceQuests"] = {
@@ -230,7 +235,8 @@ _.Zones =
 					},
 				}),
 				q(39441, {	-- Bleeding the Bleeding Hollow [Bonus Objective]
-					["sourceQuest"] = 38453,
+					["sourceQuests"] = { 38453 },	-- Garrison Campaign: The Bane of the Bleeding Hollow
+					["isDaily"] = true,
 					["coord"] = { 61.5, 45.9, 534 },
 					["races"] = ALLIANCE_ONLY,
 				}),
