@@ -2010,7 +2010,7 @@ app.L = {
 		[-978] = select(1, GetSpellInfo(354778)),								-- The Rift
 		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
 		[-980] = "Shared Treasures",											-- Shared Treasures
-		[-981] = "Conduits",													-- Conduits
+		[-981] = GetSpellInfo(348869),											-- Conduits
 
 	-- SL Maldraxxus/Necrolord
 		[-920] = "Covenant: Necrolord",											-- Covenant: Necrolord
