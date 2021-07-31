@@ -10377,7 +10377,7 @@ end)();
 
 -- Will print a warning message and play a warning sound if the given QuestID begin completed will prevent being able to complete a breadcrumb
 -- (as far as ATT is capable of knowing)
-app.CheckForBreadcrumbPrevention = function(questID)
+app.CheckForBreadcrumbPrevention = function(title, questID)
 	local nextQuests = app.SearchForField("nextQuests", questID);
 	if nextQuests then
 		local warning;
@@ -20122,7 +20122,7 @@ app.events.QUEST_ACCEPTED = function(questID)
 		-- Check if this quest is a nextQuest of a non-collected breadcrumb if breadcrumbs are being tracked
 		if app.Settings:Get("Thing:QuestBreadcrumbs") then
 			-- Run this warning check after a small delay in case addons pick up quests before the turned in quest is registered as complete
-			DelayedCallback(app.CheckForBreadcrumbPrevention, 1, questID);
+			DelayedCallback(app.CheckForBreadcrumbPrevention, 1, title, questID);
 		end
 		-- Make sure windows update incase any show the picked up quest
 		app:UpdateWindows();
