@@ -10,11 +10,6 @@ _.Zones =
 				["description"] = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.\n\nThis phase can be accessed by using a |cFF1eff00Repaired Riftkey|r on a |cFFFFFFFFMaw Rift|r in Korthia or by using a |cFF0070ddCollapsing Riftstone|r.",
 				["g"] = {
 					n(ACHIEVEMENTS, {
-						ach(15043, {	-- Hoarder of Torghast
-						--	TODO: currently you can get this by destroying the phylacteries, but it has absolutely nothing to do with Fangcrack, who i've only seen during the Venthyr covenant assault.  unsure if this is intended
-							["coord"] = { 34.7, 41.9, THE_MAW },
-							["cr"] = 179882,	-- Ashen Phylacteries
-						}),
 					}),
 					n(QUESTS, {
 						q(64282, {	-- Full of Surprises

@@ -29,9 +29,7 @@ _.Zones =
 					ach(15036, {	-- Rooting Out The Evil
 						crit(5),	-- Just Don't Ask Me to Spell It
 					}),
-					ach(15033, {	-- Taking the Tremaculum
-						crit(4),	-- Fangcrack's Fan Club
-					}),
+					ach(15033),	-- Taking the Tremaculum
 					ach(15034, {	-- Wings Against the Flames
 						crit(9),	-- Kill The Flame
 					}),
@@ -767,6 +765,20 @@ _.Zones =
 									}),
 								},
 							}),
+							q(63836, {	-- Fangcrack's Fan Club
+								["provider"] = { "n", 178112 },	-- Rendle
+								["isWeekly"] = true,
+								["coord"] = { 31.2, 15.3, THE_MAW },
+								["g"] = {
+									crit(4, {	-- Fangcrack's Fan Club
+										["achievementID"] = 15033,	-- Taking the Tremaculum
+									}),
+									ach(15043, {	-- Hoarder of Torghast
+										["coord"] = { 31.1, 13.0, THE_MAW },
+										["cr"] = 178118,	-- Fangcrack
+									}),
+								},
+							}),
 							q(63839, {	-- If Even One is Worthy
 								["provider"] = { "n", 178063 },	-- The Accuser
 								["isWeekly"] = true,
@@ -852,6 +864,7 @@ _.Zones =
 								["questID"] = 64055,
 								["isWeekly"] = true,
 								["coords"] = {
+									{ 25.2, 12.5, THE_MAW },
 									{ 27.9, 19.4, THE_MAW },
 								},
 							}),
@@ -860,6 +873,7 @@ _.Zones =
 								["isWeekly"] = true,
 								["coords"] = {
 									{ 26.1, 19.6, THE_MAW },
+									{ 29.7, 11.6, THE_MAW },
 								},
 							}),
 						}),
