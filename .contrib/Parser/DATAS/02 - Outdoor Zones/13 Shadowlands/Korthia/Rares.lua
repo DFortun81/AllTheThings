@@ -269,6 +269,7 @@ _.Zones =
 					["coords"] = {
 						{ 32.5, 43.0, KORTHIA },
 						{ 43.3, 57.7, KORTHIA },	-- cave entrance
+						{ 43.5, 67.5, KORTHIA },
 						{ 49.0, 29.0, KORTHIA },
 						{ 61.4, 57.8, KORTHIA },
 					},

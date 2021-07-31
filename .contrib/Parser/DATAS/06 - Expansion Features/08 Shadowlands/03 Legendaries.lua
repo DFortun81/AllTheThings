@@ -56,39 +56,39 @@ _.ExpansionFeatures =
 					},
 				}),
 			})),
-			cl(DEMONHUNTER, {
+			cl(DEMONHUNTER, bubbleDown({ ["classes"] = { DEMONHUNTER, } }, {
 
-			}),
-			cl(DRUID, {
+			})),
+			cl(DRUID, bubbleDown({ ["classes"] = { DRUID, } }, {
 
-			}),
-			cl(HUNTER, {
+			})),
+			cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER, } }, {
 
-			}),
-			cl(MAGE, {
+			})),
+			cl(MAGE, bubbleDown({ ["classes"] = { MAGE, } }, {
 
-			}),
-			cl(MONK, {
+			})),
+			cl(MONK, bubbleDown({ ["classes"] = { MONK, } }, {
 
-			}),
-			cl(PALADIN, {
+			})),
+			cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN, } }, {
 
-			}),
-			cl(PRIEST, {
+			})),
+			cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST, } }, {
 
-			}),
-			cl(ROGUE, {
+			})),
+			cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE, } }, {
 
-			}),
-			cl(SHAMAN, {
+			})),
+			cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN, } }, {
+				i(183352),	-- Memory of the Demise of the Skybreaker
+			})),
+			cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK, } }, {
 
-			}),
-			cl(WARLOCK, {
+			})),
+			cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR, } }, {
 
-			}),
-			cl(WARRIOR, {
-
-			}),
+			})),
 		})),
 	}),
 };

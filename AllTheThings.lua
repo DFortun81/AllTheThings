@@ -1332,6 +1332,8 @@ CreateObject = function(t)
 		elseif t.itemID then
 			if t.isToy then
 				t = app.CreateToy(t.itemID, t);
+			elseif t.runeforgePowerID then
+				t = app.CreateRuneforgeLegendary(t.runeforgePowerID, t);
 			else
 				t = app.CreateItem(t.itemID, t);
 			end
@@ -1649,7 +1651,7 @@ local function GetItemIDAndModID(modItemID)
 end
 local function GroupMatchesParams(group, key, value, ignoreModID)
 	if not group then return false; end
-	if key == "itemID" then
+	if group.itemID then
 		if group.modItemID and group.modItemID == value then
 			return true;
 		elseif ignoreModID or not group.modItemID then
@@ -5926,13 +5928,16 @@ end)();
 
 -- Lib Helpers
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
-app.BaseObjectFields = function(fields)
+app.BaseObjectFields = function(fields, type)
 	return {
 	__index = function(t, key)
 		_cache = rawget(fields, key);
 		-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
-		if not _cache and key == "parent" then
-			return t.sourceParent;
+		if not _cache then
+			-- special re-direct keys possible for 'any' Type of object
+			if key == "parent" then return t.sourceParent;
+			-- elseif key == "__type" then return type;
+			end
 		end
 		return _cache and _cache(t);
 	end
@@ -8419,8 +8424,12 @@ local itemFields = {
 					end
 				end
 				return filteredCost;
+			-- for future reference, this can change the 'type' of a group which derives from the itemFields...
 			elseif t.metaAfterFailure then
 				setmetatable(t, t.metaAfterFailure);
+			-- TODO: test this
+			-- else
+			-- 	SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
 		else
 			for _,ref in pairs(t.costCollectibles) do
@@ -8626,48 +8635,29 @@ end
 
 -- Runeforge Legendary Lib
 (function()
-local fields = {
-	["key"] = function(t)
-		return "runeforgePowerID";
-	end,
-	["info"] = function(t)
-		-- print("RFL.info",t.runeforgePowerID)
-		-- app.PrintTable(C_LegendaryCrafting.GetRuneforgePowerInfo(t.runeforgePowerID))
-		-- print("---")
-		return C_LegendaryCrafting.GetRuneforgePowerInfo(t.runeforgePowerID);
-	end,
-	-- ["collectible"] = app.ReturnTrue,
-	["collectible"] = function(t)
-		return app.CollectibleRuneforgeLegendaries;
-	end,
-	["collected"] = function(t)
-		-- print("RFL.collected")
-		local info = t.info;
-		if (info and info.state == 0) then	-- state=0 means you have obtain it.
-			-- app.CurrentCharacter.RuneforgeLegendaries[t.runeforgePowerID] = info.state;
-			-- print("RFL.collected",t.runeforgePowerID)
-			return 1;
-		end
-	end,
-	-- ["text"] = function(t)
-	-- 	return t.info.description;
-	-- end,
-	["lvl"] = function(t)
-		return 60;
-	end,
-	-- ["icon"] = function(t)
-	-- 	return t.info.iconFileID;
-	-- end,
-	-- ["name"] = function(t)
-	-- 	return t.info.name;
-	-- end,
-	["trackable"] = app.ReturnTrue,
-	["saved"] = function(t)
-		-- print("RFL.saved",t.collected)
-		return t.collected;
-	end,
-};
-MergeProperties(fields, itemFields, true);
+-- copy base Item fields
+local fields = RawCloneData(itemFields);
+-- Runeforge Legendary differences
+fields.key = function(t) return "runeforgePowerID"; end;
+fields.collectible = function(t) return app.CollectibleRuneforgeLegendaries; end;
+fields.collectibleAsCost = app.ReturnFalse;
+fields.collected = function(t)
+	local rfID = t.runeforgePowerID;
+	-- character collected
+	if app.CurrentCharacter.RuneforgeLegendaries[rfID] then return 1; end
+	-- account-wide collected
+	if app.AccountWideRuneforgeLegendaries and ATTAccountWideData.RuneforgeLegendaries[rfID] then return 2; end
+	-- fresh collected
+	local state = (C_LegendaryCrafting.GetRuneforgePowerInfo(rfID) or app.EmptyTable).state;
+	if state == 0 then
+		app.CurrentCharacter.RuneforgeLegendaries[rfID] = 1;
+		ATTAccountWideData.RuneforgeLegendaries[rfID] = 1;
+		return 1;
+	end
+end;
+fields.lvl = function(t) return 60; end;
+fields.trackable = app.ReturnTrue;
+fields.saved = function(t) return app.CurrentCharacter.RuneforgeLegendaries[t.runeforgePowerID]; end;
 app.BaseRuneforgeLegendary = app.BaseObjectFields(fields);
 app.CreateRuneforgeLegendary = function(id, t)
 	return setmetatable(constructor(id, t, "runeforgePowerID"), app.BaseRuneforgeLegendary);
@@ -9143,6 +9133,7 @@ local RefreshMounts = function(newMountID)
 	end
 end
 app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
+	-- print("NEW_MOUNT_ADDED", newMountID, ...)
 	AfterCombatCallback(RefreshMounts, newMountID);
 end
 app:RegisterEvent("NEW_MOUNT_ADDED");
@@ -10185,7 +10176,10 @@ app.CreateQuest = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
 -- Causes a group to remain visible if it is replayable, regardless of collection status
-app.ShowIfReplayableQuest = function(data) data.visible = C_QuestLog_IsQuestReplayable(data.questID); return true; end
+app.ShowIfReplayableQuest = function(data)
+	data.visible = C_QuestLog_IsQuestReplayable(data.questID) or app.CollectedItemVisibilityFilter(data);
+	return true;
+end
 
 -- Quest Objective Lib
 -- Not used in Retail anymore
@@ -10289,86 +10283,83 @@ app.ShowIfReplayableQuest = function(data) data.visible = C_QuestLog_IsQuestRepl
 
 -- Vignette Lib
 (function()
-local fields = {
-	["text"] = function(t)
-		-- TODO: something about this is weird with it using from the quest fields... check questID 32961
-		if t.qgs then
-			local all = true;
-			for i,qg in ipairs(t.qgs) do
-				if not NPCNameFromID[qg] then
-					all = false;
-				end
-			end
-			if all then
-				t.name = nil;
-				local count = #t.qgs;
-				for i=1,count,1 do
-					local qg = t.qgs[i];
-					if t.name then
-						t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[qg];
-					else
-						t.name = NPCNameFromID[qg];
-					end
-					if not t.title then
-						t.title = NPCTitlesFromID[qg];
-					end
-				end
-				return t.name;
-			end
-		elseif t.crs then
-			local all = true;
-			for i,cr in ipairs(t.crs) do
-				if not NPCNameFromID[cr] then
-					all = false;
-				end
-			end
-			if all then
-				t.name = nil;
-				local count = #t.crs;
-				for i=1,count,1 do
-					local cr = t.crs[i];
-					if t.name then
-						t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[cr];
-					else
-						t.name = NPCNameFromID[cr];
-					end
-					if not t.title then
-						t.title = NPCTitlesFromID[cr];
-					end
-				end
-				return t.name;
-			end
-		elseif t.qg then
-			if NPCNameFromID[t.qg] then
-				t.name = NPCNameFromID[t.qg];
-				if not t.title then
-					t.title = NPCTitlesFromID[t.qg];
-				end
-				return t.name;
-			end
-		elseif t.creatureID then
-			if t.creatureID > 0 then
-				if NPCNameFromID[t.creatureID] then
-					t.name = NPCNameFromID[t.creatureID];
-					if not t.title then
-						t.title = NPCTitlesFromID[t.creatureID];
-					end
-					return t.name;
-				end
-			else
-				t.name = L["HEADER_NAMES"][t.creatureID];
-				return t.name;
+-- Vignettes copy Quest fields
+local fields = RawCloneData(questFields);
+-- Custom Vignette fields
+fields.text = function(t)
+	-- TODO: something about this is weird with it using from the quest fields... check questID 32961
+	if t.qgs then
+		local all = true;
+		for i,qg in ipairs(t.qgs) do
+			if not NPCNameFromID[qg] then
+				all = false;
 			end
 		end
-		return t.name;
-	end,
-	["icon"] = function(t)
-		return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
-	end,
-	["isVignette"] = app.ReturnTrue,
-};
--- copy most Quest fields as Vignette fields
-MergeProperties(fields, questFields, true);
+		if all then
+			t.name = nil;
+			local count = #t.qgs;
+			for i=1,count,1 do
+				local qg = t.qgs[i];
+				if t.name then
+					t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[qg];
+				else
+					t.name = NPCNameFromID[qg];
+				end
+				if not t.title then
+					t.title = NPCTitlesFromID[qg];
+				end
+			end
+			return t.name;
+		end
+	elseif t.crs then
+		local all = true;
+		for i,cr in ipairs(t.crs) do
+			if not NPCNameFromID[cr] then
+				all = false;
+			end
+		end
+		if all then
+			t.name = nil;
+			local count = #t.crs;
+			for i=1,count,1 do
+				local cr = t.crs[i];
+				if t.name then
+					t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[cr];
+				else
+					t.name = NPCNameFromID[cr];
+				end
+				if not t.title then
+					t.title = NPCTitlesFromID[cr];
+				end
+			end
+			return t.name;
+		end
+	elseif t.qg then
+		if NPCNameFromID[t.qg] then
+			t.name = NPCNameFromID[t.qg];
+			if not t.title then
+				t.title = NPCTitlesFromID[t.qg];
+			end
+			return t.name;
+		end
+	elseif t.creatureID then
+		if t.creatureID > 0 then
+			if NPCNameFromID[t.creatureID] then
+				t.name = NPCNameFromID[t.creatureID];
+				if not t.title then
+					t.title = NPCTitlesFromID[t.creatureID];
+				end
+				return t.name;
+			end
+		else
+			t.name = L["HEADER_NAMES"][t.creatureID];
+			return t.name;
+		end
+	end
+	return t.name;
+end;
+fields.icon = function(t) return "Interface\\Icons\\INV_Misc_Head_Dragon_Black"; end;
+fields.isVignette = app.ReturnTrue;
 app.BaseVignette = app.BaseObjectFields(fields);
 app.CreateVignette = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseVignette);
@@ -11627,7 +11618,7 @@ local function SetThingVisibility(parent, group)
 end
 local UpdateGroup, UpdateGroups;
 UpdateGroup = function(parent, group, window)
-	-- if group.key == "objectID" and group[group.key] == 369437 then app.DEBUG_PRINT = 369437; end
+	-- if group.key == "runeforgePowerID" and group[group.key] == 134 then app.DEBUG_PRINT = 134; end
 	-- if not app.DEBUG_PRINT and shouldLog then
 	-- 	app.DEBUG_PRINT = shouldLog;
 	-- end
@@ -11647,31 +11638,34 @@ UpdateGroup = function(parent, group, window)
 	-- end
 
 	group.visible = nil;
+	-- if app.DEBUG_PRINT then print("UpdateGroup",group.key,group.key and group[group.key],group.__type) end
 
 	-- Determine if this user can enter the instance or acquire the item.
 	if app.GroupRequirementsFilter(group) then
+		-- if app.DEBUG_PRINT then print("UpdateGroup.GroupRequirementsFilter",group.key,group.key and group[group.key],group.__type) end
 		-- If the 'can equip' filter says true
 		if app.GroupFilter(group) then
+			-- if app.DEBUG_PRINT then print("UpdateGroup.GroupFilter",group.key,group.key and group[group.key],group.__type) end
 			-- Set total/progress for this object using it's cost information if any
 			group.total = group.costTotal or 0;
 			group.progress = group.total > 0 and group.costProgress or 0
 
-			-- if app.DEBUG_PRINT then print("UpdateGroup.Initial",group.key,group.key and group[group.key],group.progress,group.total) end
+			-- if app.DEBUG_PRINT then print("UpdateGroup.Initial",group.key,group.key and group[group.key],group.progress,group.total,group.__type) end
 
 			-- If this item is collectible, then mark it as such.
 			if group.collectible then
 				-- An item is a special case where it may have both an appearance and a set of items
 				group.progress = group.progress + (group.collected and 1 or 0);
 				group.total = group.total + 1;
-				-- if app.DEBUG_PRINT then print("UpdateGroup.Collectible",group.progress,group.total) end
+				-- if app.DEBUG_PRINT then print("UpdateGroup.Collectible",group.progress,group.total,group.__type) end
 			end
 
 			-- Check if this is a group
 			if group.g then
-				-- if app.DEBUG_PRINT then print("UpdateGroup.g",group.progress,group.total) end
+				-- if app.DEBUG_PRINT then print("UpdateGroup.g",group.progress,group.total,group.__type) end
 				-- Update the subgroups recursively...
 				UpdateGroups(group, group.g, window);
-				-- if app.DEBUG_PRINT then print("UpdateGroup.g.Updated",group.progress,group.total) end
+				-- if app.DEBUG_PRINT then print("UpdateGroup.g.Updated",group.progress,group.total,group.__type) end
 				SetGroupVisibility(parent, group);
 			else
 				SetThingVisibility(parent, group);
@@ -11683,8 +11677,8 @@ UpdateGroup = function(parent, group, window)
 		end
 	end
 
-	-- if app.DEBUG_PRINT then print("UpdateGroup.Done",group.progress,group.total,group.visible) end
-	-- if app.DEBUG_PRINT == 369437 then app.DEBUG_PRINT = nil; end
+	-- if app.DEBUG_PRINT then print("UpdateGroup.Done",group.progress,group.total,group.visible,group.__type) end
+	-- if app.DEBUG_PRINT == 134 then app.DEBUG_PRINT = nil; end
 end
 UpdateGroups = function(parent, g, window)
 	if g then
@@ -19421,6 +19415,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
 	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
 	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
+	if not currentCharacter.RuneforgeLegendaries then currentCharacter.RuneforgeLegendaries = {}; end
 	currentCharacter.lastPlayed = time();
 	app.CurrentCharacter = currentCharacter;
 
@@ -19546,6 +19541,7 @@ app.events.VARIABLES_LOADED = function()
 	if not accountWideData.Titles then accountWideData.Titles = {}; end
 	if not accountWideData.Toys then accountWideData.Toys = {}; end
 	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
+	if not accountWideData.RuneforgeLegendaries then accountWideData.RuneforgeLegendaries = {}; end
 
 	-- Update the total account wide death counter.
 	local deaths = 0;

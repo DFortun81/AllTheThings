@@ -95,6 +95,7 @@ local GeneralSettingsBase = {
 		["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
 		["AccountWide:Reputations"] = true,
+		["AccountWide:RuneforgeLegendaries"] = true,
 		["AccountWide:Titles"] = true,
 		-- ["AccountWide:Toys"] = true,
 		-- ["AccountWide:Transmog"] = true,
@@ -112,6 +113,7 @@ local GeneralSettingsBase = {
 		["Thing:QuestBreadcrumbs"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
+		["Thing:RuneforgeLegendaries"] = true,
 		["Thing:Titles"] = true,
 		["Thing:Toys"] = true,
 		["Thing:Transmog"] = true,
@@ -660,6 +662,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.AccountWideQuests = true;
 		app.AccountWideRecipes = true;
 		app.AccountWideReputations = true;
+		app.AccountWideRuneforgeLegendaries = true;
 		app.AccountWideSelfieFilters = true;
 		app.AccountWideTitles = true;
 		app.AccountWideToys = true;
@@ -679,6 +682,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleBreadcrumbs = true;
 		app.CollectibleRecipes = true;
 		app.CollectibleReputations = true;
+		app.CollectibleRuneforgeLegendaries = true;
 		app.CollectibleTitles = true;
 		app.CollectibleToys = true;
 		app.CollectibleTransmog = true;
@@ -716,6 +720,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.AccountWideQuests = self:Get("AccountWide:Quests");
 		app.AccountWideRecipes = self:Get("AccountWide:Recipes");
 		app.AccountWideReputations = self:Get("AccountWide:Reputations");
+		app.AccountWideRuneforgeLegendaries = self:Get("AccountWide:RuneforgeLegendaries");
 		app.AccountWideTitles = self:Get("AccountWide:Titles");
 		app.AccountWideToys = self:Get("AccountWide:Toys");
 		app.AccountWideTransmog = self:Get("AccountWide:Transmog");
@@ -734,6 +739,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleBreadcrumbs = self:Get("Thing:QuestBreadcrumbs");
 		app.CollectibleRecipes = self:Get("Thing:Recipes");
 		app.CollectibleReputations = self:Get("Thing:Reputations");
+		app.CollectibleRuneforgeLegendaries = self:Get("Thing:RuneforgeLegendaries");
 		app.CollectibleTitles = self:Get("Thing:Titles");
 		app.CollectibleToys = self:Get("Thing:Toys");
 		app.CollectibleTransmog = self:Get("Thing:Transmog");
@@ -1543,6 +1549,42 @@ end);
 ReputationsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_REPUTATIONS_TOOLTIP"]);
 ReputationsAccountWideCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "TOPLEFT", 220, 0);
 
+local RuneforgeLegendariesCheckBox = settings:CreateCheckBox(L["RUNEFORGELEGENDARIES_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Thing:RuneforgeLegendaries"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:RuneforgeLegendaries", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+RuneforgeLegendariesCheckBox:SetATTTooltip(L["RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP"]);
+RuneforgeLegendariesCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local RuneforgeLegendariesAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
+function(self)
+	self:SetChecked(settings:Get("AccountWide:RuneforgeLegendaries"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:RuneforgeLegendaries") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:RuneforgeLegendaries", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+RuneforgeLegendariesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP"]);
+RuneforgeLegendariesAccountWideCheckBox:SetPoint("TOPLEFT", RuneforgeLegendariesCheckBox, "TOPLEFT", 220, 0);
+
 local TitlesCheckBox = settings:CreateCheckBox(L["TITLES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Titles"));
@@ -1559,7 +1601,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 TitlesCheckBox:SetATTTooltip(L["TITLES_CHECKBOX_TOOLTIP"]);
-TitlesCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
+TitlesCheckBox:SetPoint("TOPLEFT", RuneforgeLegendariesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local TitlesAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
