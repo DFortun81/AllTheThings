@@ -1,12 +1,17 @@
 _.ItemDB = {};
 local i = function(itemID
-				,runeforgePowerID)
+				,runeforgePowerID
+				,specSetID)
 	local item = { ["runeforgePowerID"] = runeforgePowerID, };
+	-- assign classes to the item based on its Spec-Set ID
+	if ClassInfoDB then
+		item.classes = ClassInfoDB.GetClassesBySet(specSetID);
+	end
 	_.ItemDB[itemID] = item;
 	return item;
 end
 
--- taken from https://wow.tools/dbc/?dbc=runeforgelegendaryability&hotfixes=true#page=1
+-- taken from https://wow.tools/dbc/?dbc=runeforgelegendaryability
 -- download as CSV
 -- use npp
 -- regex replace [a-zA-Z \-'"\:]+, with {
@@ -267,5 +272,5 @@ local runeforgeInfos = {
 };
 
 for _,runeforgeInfo in ipairs(runeforgeInfos) do
-	i(runeforgeInfo[8], runeforgeInfo[1]);
+	i(runeforgeInfo[8], runeforgeInfo[1], runeforgeInfo[2]);
 end
