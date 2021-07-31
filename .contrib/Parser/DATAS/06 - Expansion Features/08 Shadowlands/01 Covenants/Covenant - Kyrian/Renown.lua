@@ -64,7 +64,7 @@ _.HiddenQuestTriggers = {
 	q(64392),	-- hitting Renown 48 [Hunter] (received Memory of the Pact of the Soulstalkers)
 	-- q( ),	-- hitting Renown 48 [Mage] (received Memory of ??)
 	q(64413),	-- hitting Renown 48 [Monk] (received Memory of Call to Arms)
-	-- q( ),	-- hitting Renown 48 [Paladin] (received Memory of ??)
+	-- q(64417),	-- hitting Renown 48 [Paladin] (received Memory of ??)	-- need confirmation
 	q(64405),	-- hitting Renown 48 [Priest] (received Memory of Spheres' Harmony)
 	-- q( ),	-- hitting Renown 48 [Rogue] (received Memory of ??)
 	q(64409),	-- hitting Renown 48 [Shaman] (received Memory of the Raging Vesper Vortex)
