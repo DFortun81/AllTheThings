@@ -16237,23 +16237,24 @@ customWindowUpdates["Harvester"] = function(self)
 						-- only use the matching cached Item
 						if group.itemID == itemID and not harvested[group.modItemID or itemID] then
 							harvested[group.modItemID or itemID] = true;
+							-- print("sourceID harvest",group.modItemID)
 							if group.bonusID then
 								-- Harvest using a BonusID?
-								-- print("Check w/ Bonus",itemID,_)
+								-- print("Check w/ Bonus",itemID,group.bonusID)
 								if (not VerifySourceID(group)) then
-									-- print("Harvest w/ Bonus",itemID,_)
-									tinsert(db.g, app.CreateItem(tonumber(itemID), {visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), bonusID = group.bonusID}));
+									-- print("Harvest w/ Bonus",itemID,group.bonusID)
+									tinsert(db.g, app.CreateItem(tonumber(itemID), {visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = group.modID, bonusID = group.bonusID}));
 								end
 							elseif group.modID then
 								-- Harvest using a ModID?
-								-- print("Check w/ Mod",itemID,_)
+								-- print("Check w/ Mod",itemID,group.modID)
 								if (not VerifySourceID(group)) then
-									-- print("Harvest w/ Mod",itemID,_)
+									-- print("Harvest w/ Mod",itemID,group.modID)
 									tinsert(db.g, app.CreateItem(tonumber(itemID), {visible = true, reSource = true, s = group.s, itemID = tonumber(itemID), modID = group.modID}));
 								end
 							else
 								-- Harvest with no special ID?
-								-- print("Check",itemID)
+								-- print("Check Base",itemID)
 								if (not VerifySourceID(group)) then
 									-- print("Harvest",itemID)
 									tinsert(db.g, app.CreateItem(tonumber(itemID), {visible = true, reSource = true, s = group.s, itemID = tonumber(itemID)}));
