@@ -1,7 +1,7 @@
 profession(LEATHERWORKING, {
 	filter(200, {	-- Recipes
 		category(1334, {	-- Shadowlands Patterns
-			category(1526, bubbleDown({ ["u"] = 15 }, {	-- Quest Recipes
+			category(1531, bubbleDown({ ["u"] = 15 }, {	-- Quest Recipes
 				-- All Quest Recipes marked unobtainable (training) because they are only learned temporarily
 				-- for world quests then disappear from the spellbook after the quest is completed.
 				recipe(338260),	-- Bonestudded Fist
