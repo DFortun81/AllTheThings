@@ -49,7 +49,6 @@ _.Mounts =
 		i(87781),	-- Azure Riding Crane
 		i(166465, {	-- Azureshell Krolusk
 			["races"] = ALLIANCE_ONLY,
-			["cost"] = { { "c", 1717, 200 }, },	-- 200x 7th Legion Service Medal
 		}),
 		i(81354),	-- Azure Water Strider
 		i(186480, {	-- Battle-Hardened Aquilon
@@ -90,7 +89,6 @@ _.Mounts =
 		i(137570),	-- Bloodfang Widow
 		i(166469, {	-- Bloodthirsty Dreadwing
 			["races"] = HORDE_ONLY,
-			["cost"] = { { "c", 1716, 750 }, },	-- 750x Honorbound Service Medal
 		}),
 		i(91009, {	-- Blue Dragon Turtle [Panda Only]
 			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
@@ -155,9 +153,7 @@ _.Mounts =
 		i(161912, {	-- Dapple Gray
 			["races"] = ALLIANCE_ONLY,
 		}),
-		i(153485, {	-- Darkmoon Dirigible
-			["cost"] = { { "c", 515, 1000 }, },	-- 1000x Darkmoon Prize Ticket
-		}),
+		i(153485),	-- Darkmoon Dirigible
 		i(63125),	-- Dark Phoenix
 		i(28915),	-- Dark Riding Talbuk
 		i(29228),	-- Dark War Talbuk
@@ -343,11 +339,9 @@ _.Mounts =
 		i(2414),	-- Pinto
 		i(182076, {	-- Plaguerot Tauralus
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
-            ["cost"] = { { "c", 1813, 5000 } },
 		}),
 		i(166463, {	-- Priestess' Moonsaber
 			["races"] = ALLIANCE_ONLY,
-			["cost"] = { { "c", 1717, 750 }, },	-- 750x 7th Legion Service Medal
 		}),
 		i(161879, {	-- Proudmoore Sea Scout
 			["races"] = ALLIANCE_ONLY,
@@ -385,14 +379,11 @@ _.Mounts =
 		i(116667),	-- Rocktusk Battleboar
 		i(166464, {	-- Rubyshell Krolusk
 			["races"] = HORDE_ONLY,
-			["cost"] = { { "c", 1716, 200 }, },	-- 200x Honorbound Service Medal
 		}),
 		i(152793),	-- Russet Ruinstrider
 		i(168829),	-- Rustbolt Resistor
 		i(152791),	-- Sable Ruinstrider
-		i(166471, {	-- Saltwater Seahorse
-			["cost"] = { { "c", 1710, 500 }, },	-- 500x Seafarer's Dubloon
-		}),
+		i(166471),	-- Saltwater Seahorse
 		i(166436, {	-- Sandy Nightsaber (A)
 			["races"] = ALLIANCE_ONLY,
 		}),
@@ -411,9 +402,7 @@ _.Mounts =
 		i(116772),	-- Shadowmane Charger
 		i(180413),	-- Shadeleaf Runestag
 		i(180748),	-- Silky Shimmermoth
-		i(166745, {	-- Siltwing Albatross
-			["cost"] = { { "c", 1710, 1000 }, },	-- 1000x Seafarer's Dubloon
-		}),
+		i(166745),	-- Siltwing Albatross
 		i(181316),	-- Silvertip Dredwing
 		i(46813),	-- Silver Covenant Hippogryph
 		i(32318),	-- Silver Riding Nether Ray

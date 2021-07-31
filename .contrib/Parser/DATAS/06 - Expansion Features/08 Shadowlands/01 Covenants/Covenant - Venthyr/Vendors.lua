@@ -28,11 +28,12 @@ _.ExpansionFeatures =
 							--	appears on the vendor at Renown 14, not sure if this is the same or different for other covenants
 								["cost"] = { { "c", 1813, 250 } },	-- 250x Reservoir Anima
 							}),
-					--[[	TODO: this mount doesn't show up on the vendor for me at Renown 13.  does it show up when you reach the Renown required (39)?
 							i(182332, {	-- Gravestone Battle Armor (MOUNT!)
-								["cost"] = { { "c", 1813, 3000 } },
+								["cost"] = {
+									{ "c", 1813, 100 },	-- 100x Reservoir Anima
+									{ "c", 1885, 50 },	-- 50x Grateful Offering
+								},
 							}),
-					--]]
 							i(180461, {	-- Horrid Dredwing (MOUNT!)
 								["cost"] = {
 									{ "c", 1813, 5000 },	-- 5,000x Reservoir Anima
