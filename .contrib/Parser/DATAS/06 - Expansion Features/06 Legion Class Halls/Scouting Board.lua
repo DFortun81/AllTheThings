@@ -107,7 +107,10 @@ _.ExpansionFeatures =
 							un(REMOVED_FROM_GAME, i(141171)),	-- Cache of the Black Dragon (Heroic)
 						})),
 						un(REMOVED_FROM_GAME, q(44265, {	-- Neltharion's Lair: Into Neltharion's Lair (Mythic)
-							un(REMOVED_FROM_GAME, i(141181)),	-- Cache of the Black Dragon (Mythic)
+							["provider"] = { "i", 141192 },	-- Broken Dragon Scale
+							["g"] = {
+								un(REMOVED_FROM_GAME, i(141181)),	-- Cache of the Black Dragon (Mythic)
+							},
 						})),
 						un(REMOVED_FROM_GAME, q(43509, {	-- Odyn's Challenge (Normal)
 							un(REMOVED_FROM_GAME, i(141155)),	-- Challenger's Spoils (Normal)

@@ -22,6 +22,21 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161461 },	-- The Accuser
 						["coord"] = { 73.8, 57.4, REVENDRETH },
 					}),
+					q(62297, {	-- A Fatal Failure
+						["sourceQuests"] = { 61742 },	-- A Fitting Guise
+						["provider"] = { "n", 174020 },	-- Captain Prateq
+						["coord"] = { 70.4, 27.7, MALDRAXXUS },
+						["g"] = {
+							i(183394, {	-- Discarded Grimoire
+							--	["questID"] = 62266,
+								["g"] = {
+									crit(3, {	-- Discarded Grimoire
+										["achievementID"] = 14763,	-- Crypt Couture
+									}),
+								},
+							}),
+						},
+					}),
 					q(61742, {	-- A Fitting Guise
 						["sourceQuests"] = {
 							62414,	-- Burying Suspicion
@@ -384,6 +399,24 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 166535 },	-- Baroness Draka
 						["coord"] = { 50.4, 70.6, MALDRAXXUS },
 					}),
+					q(62308, {	-- Mantle of Mastery
+						["sourceQuests"] = {
+							61755,	-- Blinding the Brokers
+							61754,	-- No Crate Unturned
+						},
+						["provider"] = { "n", 172813 },	-- Ton'hamil
+						["coord"] = { 67.9, 30.6, MALDRAXXUS },
+						["g"] = {
+							i(183399, {	-- Ritualist's Mantle
+							--	["questID"] = 62311,
+								["g"] = {
+									crit(7, {	-- Ritualist's Mantle
+										["achievementID"] = 14763,	-- Crypt Couture
+									}),
+								},
+							}),
+						},
+					}),
 					q(61745, {	-- Mistress of Tomes
 						["sourceQuests"] = { 61744 },	-- The Baron's Plan
 						["provider"] = { "n", 172923 },	-- Kel'Thuzad
@@ -536,6 +569,21 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 61227 },	-- The Other Foot
 						["provider"] = { "n", 159814 },	-- Ansid the Mechanic
 						["coord"] = { 48.6, 18.5, MALDRAXXUS },
+					}),
+					q(62320, {	-- Regalia de Rigeuer
+						["sourceQuests"] = { 61749 },	-- Necessary Ingredients
+						["provider"] = { "n", 174120 },	-- Moret the Vogue
+						["coord"] = { 71.7, 32.9, MALDRAXXUS },
+						["g"] = {
+							i(183401, {	-- Amethystine Dye
+							--	["questID"] = 62319,
+								["g"] = {
+									crit(6, {	-- Amethystine Dye
+										["achievementID"] = 14763,	-- Crypt Couture
+									}),
+								},
+							}),
+						},
 					}),
 					q(61983, {	-- Replenish the Reservoir
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
@@ -799,55 +847,6 @@ _.ExpansionFeatures =
 						},
 					}),
 
-					-- Chapter 8 (The House of Rituals), requires Renown 20
-					q(62297, {	-- A Fatal Failure
-						["sourceQuests"] = { 61742 },	-- A Fitting Guise
-						["provider"] = { "n", 174020 },	-- Captain Prateq
-						["coord"] = { 70.4, 27.7, MALDRAXXUS },
-						["g"] = {
-							i(183394, {	-- Discarded Grimoire
-								["questID"] = 62266,
-								["g"] = {
-									crit(3, {	-- Discarded Grimoire
-										["achievementID"] = 14763,	-- Crypt Couture
-									}),
-								},
-							}),
-						},
-					}),
-					q(62320, {	-- Regalia de Rigeuer
-						["sourceQuests"] = { 61749 },	-- Necessary Ingredients
-						["provider"] = { "n", 174120 },	-- Moret the Vogue
-						["coord"] = { 71.7, 32.9, MALDRAXXUS },
-						["g"] = {
-							i(183401, {	-- Amethystine Dye
-								["questID"] = 62319,
-								["g"] = {
-									crit(6, {	-- Amethystine Dye
-										["achievementID"] = 14763,	-- Crypt Couture
-									}),
-								},
-							}),
-						},
-					}),
-					q(62308, {	-- Mantle of Mastery
-						["sourceQuests"] = {
-							61755,	-- Blinding the Brokers
-							61754,	-- No Crate Unturned
-						},
-						["provider"] = { "n", 172813 },	-- Ton'hamil
-						["coord"] = { 67.9, 30.6, MALDRAXXUS },
-						["g"] = {
-							i(183399, {	-- Ritualist's Mantle
-								["questID"] = 62311,
-								["g"] = {
-									crit(7, {	-- Ritualist's Mantle
-										["achievementID"] = 14763,	-- Crypt Couture
-									}),
-								},
-							}),
-						},
-					}),
 
 					-- Chapter 9 (Assault on the House of Rituals), requires Renown 22
 					q(62864, {	-- Return Lost Souls (10 soul version)
@@ -888,7 +887,11 @@ _.HiddenQuestTriggers = {
 	q(62983),	-- triggers when searching the alchemical laboratory on "Gharmal's Tower" (#57530)
 
 --	Crypt Couture
+	q(62319),	-- using "Amethystine Dye"
+	q(62266),	-- using "Discarded Grimoire"
+	q(62311),	-- using "Ritualist's Mantle"
 	q(62306),	-- using "Sorcerer's Blade"
+
 --	Unknown
 	q(60773),	-- Renown 30/Channeling anima
 
