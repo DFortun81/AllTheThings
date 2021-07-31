@@ -288,7 +288,7 @@ app.L = {
 	["ACHIEVEMENTS_CHECKBOX_TOOLTIP"] = "Enable this option to track achievements.";
 	["TMOG_CHECKBOX"] = "Appearances / Transmog";
 	["TMOG_CHECKBOX_TOOLTIP"] = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.\n\nTracked Account Wide by Default.";
-	["AZERITE_ESSENCES_CHECKBOX"] = "|T"..app.asset("Expansion_BFA")..":0|t Azerite Essences";
+	["AZERITE_ESSENCES_CHECKBOX"] = "|T"..app.asset("Expansion_BFA")..":0|t "..SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE;
 	["AZERITE_ESSENCES_CHECKBOX_TOOLTIP"] = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
 	["BATTLE_PETS_CHECKBOX"] = "Battle Pets / Companions";
 	["BATTLE_PETS_CHECKBOX_TOOLTIP"] = "Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.\n\nTracked Account Wide by Default.";
@@ -1991,7 +1991,7 @@ app.L = {
 	-- Shadowlands Header
 		[-900] = "Covenant Sanctum",											-- Covenant Sanctum
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
-		[-902] = C_CurrencyInfo.GetCurrencyInfo(1822).name,						-- Renown
+		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
 		[-903] = "Zone Rewards",												-- Zone Rewards
 		[-904] = "Wrath of the Jailer",											-- Wrath of the Jailer
 		[-905] = "Command Table",												-- Command Table
