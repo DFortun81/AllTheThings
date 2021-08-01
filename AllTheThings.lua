@@ -1963,7 +1963,18 @@ local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 end});
 
 -- Search Caching
-local searchCache, MergeObject, MergeObjects, RefreshAchievementCollection = {};
+local searchCache = {};
+-- Merges an Object into an existing set of Objects so as to not duplicate any incoming Objects
+local MergeObject,
+-- Nests an Object under another Object, only creating the 'g' group if necessary
+-- ex. NestObject(parent, new, newCreate, index)
+NestObject,
+-- Merges multiple Objects into an existing set of Objects so as to not duplicate any incoming Objects
+MergeObjects,
+-- Nests multiple Objects under another Object, only creating the 'g' group if necessary
+-- ex. NestObjects(parent, group, newCreate)
+NestObjects,
+RefreshAchievementCollection = {};
 app.searchCache = searchCache;
 (function()
 local keysByPriority = {	-- Sorted by frequency of use.
@@ -2061,41 +2072,37 @@ local function GetHash(t)
 	return t.hash or CreateHash(t);
 end
 app.GetHash = GetHash;
-MergeObject = function(g, t, index, cloneOnAdd)
+MergeObject = function(g, t, index, newCreate)
 	if g and t then
 		local hash = GetHash(t);
 		-- print("_",hash);
 		if hash then
 			for i,o in ipairs(g) do
 				if GetHash(o) == hash then
-					if t.g then
-						if o.g then
-							MergeObjects(o.g, t.g, cloneOnAdd);
-						elseif cloneOnAdd then
-							o.g = {};
-							for _,s in ipairs(t.g) do
-								tinsert(o.g, CloneData(s));
-							end
-						else
-							o.g = t.g;
-						end
-					end
 					MergeProperties(o, t);
+					NestObjects(o, t.g, newCreate);
 					return o;
 				end
 			end
 		end
-		if cloneOnAdd then
-			t = CloneData(t);
-		end
 		if index then
-			tinsert(g, index, t);
+			tinsert(g, index, newCreate and CreateObject(t) or t);
 		else
-			tinsert(g, t);
+			tinsert(g, newCreate and CreateObject(t) or t);
 		end
 	end
 end
-MergeObjects = function(g, g2, cloneOnAdd)
+NestObject = function(p, t, newCreate, index)
+	if not t then return; end
+	if p.g then
+		MergeObject(p.g, t, index, newCreate);
+	elseif newCreate then
+		p.g = { CreateObject(t) };
+	else
+		p.g = { t };
+	end
+end
+MergeObjects = function(g, g2, newCreate)
 	if g2 and #g2 > 25 then
 		local hashTable,t = {};
 		for i,o in ipairs(g) do
@@ -2105,30 +2112,22 @@ MergeObjects = function(g, g2, cloneOnAdd)
 			end
 		end
 		local hash;
-		if cloneOnAdd then
+		if newCreate then
 			for i,o in ipairs(g2) do
 				hash = GetHash(o);
 				-- print("_",hash);
 				if hash then
 					t = hashTable[hash];
 					if t then
-						if o.g then
-							if t.g then
-								MergeObjects(t.g, o.g, true);
-							else
-								t.g = {};
-								for _,s in ipairs(o.g) do
-									tinsert(t.g, CloneData(s));
-								end
-							end
-						end
 						MergeProperties(t, o);
+						NestObjects(t, o.g, newCreate);
 					else
-						hashTable[hash] = CloneData(o);
-						tinsert(g, hashTable[hash]);
+						t = CreateObject(o);
+						hashTable[hash] = t;
+						tinsert(g, t);
 					end
 				else
-					tinsert(g, CloneData(o));
+					tinsert(g, CreateObject(o));
 				end
 			end
 		else
@@ -2138,14 +2137,8 @@ MergeObjects = function(g, g2, cloneOnAdd)
 				if hash then
 					t = hashTable[hash];
 					if t then
-						if o.g then
-							if t.g then
-								MergeObjects(t.g, o.g);
-							else
-								t.g = o.g;
-							end
-						end
 						MergeProperties(t, o);
+						NestObjects(t, o.g);
 					else
 						hashTable[hash] = o;
 						tinsert(g, o);
@@ -2157,8 +2150,22 @@ MergeObjects = function(g, g2, cloneOnAdd)
 		end
 	else
 		for i,o in ipairs(g2) do
-			MergeObject(g, o, nil, cloneOnAdd);
+			MergeObject(g, o, nil, newCreate);
 		end
+	end
+end
+NestObjects = function(p, g, newCreate)
+	if not g or #g == 0 then return; end
+	if p.g then
+		MergeObjects(p.g, g, newCreate);
+	elseif newCreate then
+		local g_clone = {};
+		for _,o in ipairs(g) do
+			tinsert(g_clone, CreateObject(o));
+		end
+		p.g = g_clone;
+	else
+		p.g = g;
 	end
 end
 end)();
@@ -2963,12 +2970,7 @@ local function FillSymLinks(group, recursive)
 		end
 	end
 	if group.sym then
-		local groupLinks = ResolveSymbolicLink(group);
-		if groupLinks then
-			-- print("Filled Symlinks",group.key,group.key and group[group.key],#groupLinks)
-			if not group.g then group.g = groupLinks
-			else MergeObjects(group.g, groupLinks); end
-		end
+		NestObjects(group, ResolveSymbolicLink(group));
 	end
 	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
 	return group;
@@ -3634,7 +3636,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if app.RecursiveGroupRequirementsFilter(o) then
 					-- Merge the obj into the merged results
 					-- print("Merge object",o.key,o[o.key])
-					MergeObject(root.g, o);
+					NestObject(root, o);
 				-- otherwise
 				else
 					-- Add to the set of skipped objects
@@ -3649,7 +3651,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			for i,o in ipairs(skipped) do
 				-- Merge the obj into the merged results
 				-- print("Merge skip",o.key,o[o.key])
-				MergeObject(root.g, o);
+				NestObject(root, o);
 			end
 		end
 		-- Resolve symbolic links for the root
@@ -3698,11 +3700,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					for i,o in ipairs(costResults) do
 						-- Currencies need to meet the group requirements as well since the character itself needs to meet those requirements to buy it
 						if app.RecursiveGroupRequirementsFilter(o) then
+							-- TODO: Nest the Cost results if requiring more than 1 Cost
+							-- o = app.NestForOtherCost(o, "c", paramB);
 							tinsert(filteredObjects, o);
 						end
 					end
 					MergeObjects(usedToBuy.g, filteredObjects, true);
-					MergeObject(root.g, usedToBuy);
+					NestObject(root, usedToBuy);
 				end
 			elseif paramA == "itemID" or (paramA == "s" and group.itemID) then
 				local costResults = group.modItemID and app.SearchForField("itemIDAsCost", group.modItemID) or app.SearchForField("itemIDAsCost", group.itemID or paramB);
@@ -3711,8 +3715,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					local usedToBuy = app.CreateNPC(-2);
 					usedToBuy.text = L["CURRENCY_FOR"];
 					if not usedToBuy.g then usedToBuy.g = {}; end
+					-- local filteredObjects = {};
+					-- for i,o in ipairs(costResults) do
+					-- 	-- TODO: Nest the Cost results if requiring more than 1 Cost
+					-- 	o = app.NestForOtherCost(o, "i", paramB);
+					-- 	tinsert(filteredObjects, o);
+					-- end
 					MergeObjects(usedToBuy.g, costResults, true);
-					MergeObject(root.g, usedToBuy);
+					NestObject(root, usedToBuy);
 				end
 			end
 
@@ -3950,7 +3960,6 @@ app.BuildCrafted = function(item)
 		end
 		-- Now that all craftable items have been collected, pop their search results into the sub-group of the Item
 		-- This will include the craftable items of those items as well if any
-		if not item.g then item.g = {}; end
 		local search;
 		local basicItemIDs = {};
 		for craftedItemID,_ in pairs(craftableItemIDs) do
@@ -3970,7 +3979,7 @@ app.BuildCrafted = function(item)
 								end
 							end
 						end
-						MergeObject(item.g, search);
+						NestObject(item, search);
 					end
 				else
 					basicItemIDs[craftedItemID] = true;
@@ -3978,7 +3987,6 @@ app.BuildCrafted = function(item)
 			end
 		end
 		-- Now process the craftable reagents so we don't insert duplicate groups
-		-- if craftableReagentIDs then
 		for basicItemID,_ in pairs(basicItemIDs) do
 			-- Each item has potential to add a crafted item which is already listed in the set of craftable items, so have to check again
 			if not app.BuildCrafted_IncludedItems[basicItemID] then
@@ -3994,30 +4002,10 @@ app.BuildCrafted = function(item)
 							end
 						end
 					end
-					MergeObject(item.g, search);
+					NestObject(item, search);
 				end
 			end
-			-- for _,sub in pairs(nested.g) do
-			-- 	-- only add sub-crafted items which have not already been added
-			-- 	print("sub.itemID",sub.itemID)
-			-- 	if sub.itemID and not app.BuildCrafted_IncludedItems[sub.itemID] then
-			-- 		print("non-filtered",sub.itemID)
-			-- 		app.BuildCrafted_IncludedItems[sub.itemID] = true;
-			-- 		if not filteredSearch then filteredSearch = { sub }
-			-- 		else MergeObject(filteredSearch, sub); end
-			-- 	end
-			-- end
-			-- print("replace and merged filtered",filteredSearch and #filteredSearch)
-			-- -- replace the nested group with the filtered group (even if nothing left)
-			-- nested.g = filteredSearch;
-			-- -- push the nested craftable into the original item group
-			-- MergeObject(item.g, nested);
-			-- -- reset filtered group
-			-- filteredSearch = nil;
-			-- -- print("nested sub",nested.g and #nested.g)
 		end
-		-- end
-		-- print("BuildCrafted-Done")
 	end
 end
 app.ExpandSubGroups_IncludedItems = {};
@@ -4052,7 +4040,7 @@ app.ExpandSubGroups = function(item)
 					-- if MergeObject continues to require clearing the sub-g group, then just use tinsert i guess
 					-- print("Merge expanded",modItemID)
 					-- app.PrintGroup(clone);
-					MergeObject(item.g, clone);
+					NestObject(item, clone);
 				end
 			end
 		end
@@ -4091,11 +4079,10 @@ app.BuildCost = function(group)
 				-- 	end
 				-- end
 				costItem.OnUpdate = app.AlwaysShowUpdate;
-				MergeObject(costGroup.g, costItem);
+				NestObject(costGroup, costItem);
 			end
 		end
-		if not group.g then group.g = { costGroup };
-		else tinsert(group.g, 1, costGroup); end
+		NestObject(group, costGroup, nil, 1);
 	end
 end
 -- Builds a 'Source' group from the parent of the group (or other listings of this group) and lists it under the group itself for
@@ -4163,14 +4150,12 @@ app.BuildSourceParent = function(group)
 							clonedSource.g = nil;
 							clonedSource.collectible = false;
 							clonedSource.OnUpdate = app.AlwaysShowUpdate;
-							-- print("Merged Source",clonedSource.text)
-							MergeObject(sourceGroup.g, clonedSource);
+							NestObject(sourceGroup, clonedSource);
 						end
 					end
 				end
 			end
-			if group.g then tinsert(group.g, 1, sourceGroup);
-			else group.g = { sourceGroup }; end
+			NestObject(group, sourceGroup, nil, 1);
 		end
 	end
 end
@@ -4195,6 +4180,23 @@ app.BuildCurrencies = function(group)
 		end
 	end
 end
+-- app.NestForOtherCost = function(group, type, typeID)
+-- 	-- only need to nest other cost, not just 1 cost
+-- 	if not group or not group.cost or #group.cost < 2 then return group; end
+-- 	for _,costTable in ipairs(group.cost) do
+-- 		if #costTable > 1 and (costTable[1] ~= type or costTable[2] ~= typeID) then
+-- 			-- cost which isn't the existing type/typeID cost
+-- 			-- create a group as this cost
+-- 			if type == "i" then
+-- 				return app.CreateItem(costTable[2], { ["g"] = group });
+-- 			elseif type == "c" then
+-- 				return app.CreateCurrencyClass(costTable[2], { ["g"] = group });
+-- 			end
+-- 		end
+-- 	end
+-- 	-- not sure how this could happen, data error i suppose
+-- 	return group;
+-- end
 -- check if the group has a cost which includes the given parameters
 app.HasCost = function(group, idType, id)
 	if group.cost and type(group.cost) == "table" then
@@ -4872,19 +4874,17 @@ local function PopulateQuestObject(questObject)
 		for _,data in ipairs(_cache) do
 			-- only merge into the WQ quest object properties from an object in cache with this questID
 			if data.questID == questObject.questID then
-				MergeProperties(questObject, data);
+				MergeProperties(questObject, data, true);
 				if data.g then
 					for _,entry in ipairs(data.g) do
-						MergeObject(questObject.g, entry, nil, true);
+						NestObject(questObject, entry, true);
 					end
 				end
 			-- otherwise this is a non-quest object flagged with this questID so it should be added under the quest
 			else
-				MergeObject(questObject.g, data);
+				NestObject(questObject, data, true);
 			end
 		end
-	-- else
-	-- 	print("non-cached quest",questObject.questID);
 	end
 
 	-- Check for provider info
@@ -4897,7 +4897,7 @@ local function PopulateQuestObject(questObject)
 						MergeProperties(questObject, data);
 						if data.g then
 							for _,entry in ipairs(data.g) do
-								MergeObject(questObject.g, entry, nil, true);
+								NestObject(questObject, entry, true);
 							end
 						end
 					end
@@ -7950,9 +7950,7 @@ app.CacheHeirlooms = function()
 			token.modID = nil;
 			if not token.sym then
 				for _,heirloom in ipairs(item.g) do
-					-- merge the cloned heirloom with upgrade into the source token listing
-					if not token.g then token.g = { CloneData(heirloom) }
-					else MergeObject(token.g, heirloom, nil, true); end
+					NestObject(token, heirloom, true);
 				end
 				BuildGroups(token, token.g);
 			end
@@ -7965,9 +7963,7 @@ app.CacheHeirlooms = function()
 			token.modID = nil;
 			if not token.sym then
 				for _,heirloom in ipairs(item.g) do
-					-- merge the cloned heirloom with upgrade into the source token listing
-					if not token.g then token.g = { CloneData(heirloom) }
-					else MergeObject(token.g, heirloom, nil, true); end
+					NestObject(token, heirloom, true);
 				end
 				BuildGroups(token, token.g);
 			end
@@ -8992,13 +8988,13 @@ app.CreateMap = function(id, t)
 	return t;
 end
 app.CreateMapWithStyle = function(id)
-	local mapObject = app.CreateMap(id, { g = {}, progress = 0, total = 0 });
+	local mapObject = app.CreateMap(id, { progress = 0, total = 0 });
 	for _,data in ipairs(fieldCache["mapID"][id] or {}) do
 		if data.mapID and data.icon then
 			mapObject.text = data.text;
-			mapObject.icon = data.icon;
-			mapObject.lvl = data.lvl;
-			mapObject.description = data.description;
+            mapObject.icon = data.icon;
+            mapObject.lvl = data.lvl;
+            mapObject.description = data.description;
 			break;
 		end
 	end
@@ -10035,38 +10031,21 @@ app.TryPopulateQuestRewards = function(questObject)
 										-- create the object which will be in the actual list
 										-- if app.DEBUG_PRINT then print(modItemID," ? found cached") end
 										MergeProperties(item, data);
-										if data.g then
-											if not item.g then
-												item.g = {};
-												item.progress = 0;
-												item.total = 0;
-											end
-											MergeObjects(item.g, data.g);
-										end
+										NestObjects(item, data.g);	-- no clone since item is cloned later
 									else
 										tinsert(subItems, data);
 									end
 								end
 
 								-- then pull in any other sub-items which were not the item itself
-								for _,data in pairs(subItems) do
-									-- cache record is the item itself, including modID
-									if not item.g then
-										item.g = {};
-										item.progress = 0;
-										item.total = 0;
-									end
-									-- if app.DEBUG_PRINT then print(modItemID," ? added",data.key,data[data.key]) end
-									MergeObject(item.g, data);
-								end
+								NestObjects(item, subItems);	-- no clone since item is cloned later
 							end
 
 							-- at least one reward exists, so clear the missing data
 							questObject.missingItem = 0;
 							-- don't let cached groups pollute potentially inaccurate raw Data
 							item.link = nil;
-							if not questObject.g then questObject.g = {}; end
-							MergeObject(questObject.g, CreateObject(item));
+							NestObject(questObject, item, true);
 						end
 					end
 				else
@@ -10100,14 +10079,12 @@ app.TryPopulateQuestRewards = function(questObject)
 								MergeProperties(item, data);
 							-- cache record is associated with the item
 							else
-								if not item.g then item.g = { CloneData(data) };
-								else MergeObject(item.g, data, nil, true); end
+								NestObject(item, data);	-- no clone since item is cloned later
 							end
 						end
 					end
 					questObject.missingCurr = 0;
-					if not questObject.g then questObject.g = {}; end
-					MergeObject(questObject.g, CreateObject(item));
+					NestObject(questObject, item, true);
 				end
 			end
 		end
@@ -10121,11 +10098,7 @@ app.TryPopulateQuestRewards = function(questObject)
 
 		-- Finally ensure that any cached entries for the quest are copied into this version of the object
 		local cachedQuest = app.SearchForObject("questID", questObject.questID);
-		if cachedQuest and cachedQuest.g then
-			-- print("Cloning in cached quest rewards",#cachedQuest.g)
-			if not questObject.g then questObject.g = {}; end
-			MergeObjects(questObject.g, cachedQuest.g, true);
-		end
+		NestObjects(questObject, cachedQuest.g, true);
 
 		-- Resolve all symbolic links now that the quest contains items
 		FillSymLinks(questObject, true);
@@ -12497,11 +12470,7 @@ local function NestSourceQuests(root, addedQuests, depth)
 			if p[1] == "i" then
 				-- print("Root Provider",p[1], p[2]);
 				local pRef = app.SearchForObject("itemID", p[2]);
-				if pRef then
-					pRef = CloneData(pRef);
-					if not root.g then root.g = { pRef };
-					else MergeObject(root.g, pRef, 1); end
-				end
+				NestObject(root, pRef, true, 1);
 			end
 		end
 	end
@@ -14315,7 +14284,7 @@ local function UpdateWindow(self, force, got)
 						tinsert(self.rowData, self.data);
 					end
 					if self.missingData then
-						if got then app:PlayCompleteSound(); end
+						if got and self:IsVisible() then app:PlayCompleteSound(); end
 						self.missingData = nil;
 					end
 					-- only add this info row if there is actually nothing visible in the list
@@ -15566,7 +15535,7 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 						end
 
 						-- Merge it into the listing.
-						MergeObject(self.data.g, CreateObject(mapObject));
+						NestObject(self.data, mapObject, true);
 					end
 				end
 
@@ -17297,7 +17266,7 @@ customWindowUpdates["Random"] = function(self)
 						end
 						if not selected then selected = temp[#temp - 1]; end
 						if selected then
-							MergeObject(self.data.g, CreateObject(selected));
+							NestObject(self.data, selected, true);
 						else
 							app.print(L["NOTHING_TO_SELECT_FROM"]);
 						end
@@ -17778,19 +17747,11 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					},
 				},
 			};
-			local function UnsetNotCollectible(o)
-				if o.collectible == false then o.collectible = nil; end
-				if o.g then
-					for i,p in ipairs(o.g) do
-						UnsetNotCollectible(p);
-					end
-				end
-			end
 			self.Clear = function(self)
 				local temp = self.data.g[1];
 				wipe(self.data.g);
 				tinsert(self.data.g, temp);
-				self:Update();
+				self:Update(true);
 			end
 			-- World Quests (Tasks)
 			self.MergeTasks = function(self, mapObject, includeAll, includePermanent, includeQuests)
@@ -17814,7 +17775,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 								-- if mapID == 1355 then
 								-- 	print("WQ",questObject.questID,questObject.parent);
 								-- end
-								MergeObject(mapObject.g, questObject);
+								NestObject(mapObject, questObject);
 								-- see if need to retry based on missing data
 								-- if not self.retry and questObject.missingData then self.retry = true; end
 							end
@@ -17841,7 +17802,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 								questObject.repeatable or
 								-- or if it has time remaining
 								(questObject.timeRemaining or 0 > 0) then
-								MergeObject(mapObject.g, questObject);
+								NestObject(mapObject, questObject);
 								-- see if need to retry based on missing data
 								-- if not self.retry and questObject.missingData then self.retry = true; end
 							end
@@ -17880,7 +17841,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						-- Build children of this map as well
 						self:BuildMapAndChildren(subMapObject, includeAll, includePermanent, includeQuests);
 
-						MergeObject(mapObject.g, subMapObject);
+						NestObject(mapObject, subMapObject);
 					end
 				end
 			end
@@ -17922,8 +17883,6 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 									if not IsQuestFlaggedCompleted(questID) then
 										local timeLeft = C_AreaPoiInfo.GetAreaPOISecondsLeft(arr[2]);
 										if timeLeft and timeLeft > 0 then
-											local mapID = arr[1];
-											local subMapObject = app.CreateMapWithStyle(mapID);
 											local questObject = { questID = questID };
 											PopulateQuestObject(questObject);
 
@@ -17942,14 +17901,14 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 												end
 											end
 
-											MergeObject(subMapObject.g, questObject);
-											MergeObject(mapObject.g, subMapObject);
+											local subMapObject = app.CreateMapWithStyle(arr[1]);
+											NestObject(subMapObject, questObject);
+											NestObject(mapObject, subMapObject);
 										end
 									end
 								end
 							else
-								local subMapObject = app.CreateMapWithStyle(arr[1]);
-								MergeObject(mapObject.g, subMapObject);
+								NestObject(mapObject, app.CreateMapWithStyle(arr[1]));
 							end
 						end
 					end
@@ -17975,7 +17934,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						for i,bounty in ipairs(bounties) do
 							local questObject = { questID = bounty.questID };
 							PopulateQuestObject(questObject);
-							MergeObject(mapObject.g, questObject);
+							NestObject(mapObject, questObject);
 						end
 					end
 					insertionSort(mapObject.g, self.Sort);
@@ -17994,7 +17953,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					_cache = SearchForField("questID", app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901);
 					if _cache then
 						for _,data in ipairs(_cache) do
-							MergeObject(mapObject.g, data, nil, true);
+							NestObject(mapObject, data, true);
 						end
 					end
 					MergeObject(temp, mapObject);
@@ -18075,7 +18034,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 										item.s = ACKCHUALLY;
 									end
 								end
-								MergeObject(header.g, item);
+								NestObject(header, item);
 							elseif rewardType == "currency" then
 								if showCurrencies then
 									-- TODO: this is too laggy, but generates accurate & bloated results...
@@ -18093,8 +18052,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 											-- cache record is associated with the item
 											else
 												-- TODO: re-design this again eventually to reduce fake bloated numbers
-												if not item.g then item.g = {}; end
-												MergeObject(item.g, data, nil, true);
+												NestObject(item, data);	-- no newCreate since entire WQ group will be newCreated at the end
 											end
 										end
 									end--]]
@@ -18129,7 +18087,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 									-- 		end
 									-- 	end
 									-- end
-									MergeObject(header.g, item);
+									NestObject(header, item);
 								end
 							else
 								-- print("Unhandled reward type", itemName,icon,count,claimed,rewardType,itemID,quality);
@@ -18139,13 +18097,6 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					end
 					table.insert(temp, groupFinder);
 				end
-
-				-- if self.retry then
-					-- print("Missing API quest data on this World Quest refresh");
-					-- TODO: try turning this into a C_Timer callback to auto-refresh after a second?
-					-- self.retry = nil;
-					-- return true;
-				-- end
 
 				-- Put a 'Clear World Quests' click at the bottom
 				MergeObject(temp, {
@@ -18160,11 +18111,8 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					['OnUpdate'] = app.AlwaysShowUpdate,
 				});
 
-				for i,o in ipairs(temp) do
-					-- UnsetNotCollectible(o);
-					BuildGroups(o, o.g);
-					MergeObject(self.data.g, CreateObject(o));
-				end
+				-- put all the things into the window data, turning them into objects as well
+				NestObjects(self.data, temp, true);
 				-- Build the heirarchy
 				BuildGroups(self.data, self.data.g);
 				-- Fill Symlinks in the list

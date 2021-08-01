@@ -17,11 +17,13 @@ _.Zones =
 					["provider"] = { "n", 77210 },	-- Scout Ruk'Gan
 					["coord"] = { 82.6, 69.8, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
+					["altQuests"] = { 34067 },	-- A Collection of Coils
 				}),
 				q(34067, {	-- A Collection of Coils
 					["crs"] = { 77106 },	-- Thunderlord Wrangler
-					["provider"] = { "i", 109055 },	-- Coil of Sturdy Rope
+					["provider"] = { "i", 109121 },	-- Coil of Sturdy Rope
 					["races"] = HORDE_ONLY,
+					["altQuests"] = { 34264 },	-- A Collection of Coils
 				}),
 				q(34592, {	-- A Gronnling Problem
 					["coord"] = { 51.2, 39.6, 590 },
@@ -385,11 +387,13 @@ _.Zones =
 					["coord"] = { 84.1, 65.1, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 227504 },	-- Barbed Thunderlord Spear
+					["altQuests"] = { 34093 },	-- Getting the Points
 				}),
 				q(34093, {	-- Getting the Points
 					["coord"] = { 82.6, 69.8, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 77210 },	-- Scout Ruk'Gan
+					["altQuests"] = { 34069 },	-- Getting the Points
 				}),
 				q(33784, {	-- Gormaul Tower
 					["provider"] = { "n", 76557 },	-- Durotar
