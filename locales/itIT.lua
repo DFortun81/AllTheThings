@@ -2985,7 +2985,7 @@ for key,value in pairs({
 	[369227] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
 	[369232] = "Scatola delle Offerte",	-- Offering Box
 	[369235] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
-	--TODO: [369236] = "Stolen Anima Vessel",	-- Stolen Anima Vessel
+	[369236] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
 	[369245] = "Scatola di Reliquie di Korthia",	-- Korthian Relic Box
 	[369292] = "Cassa di Reliquie",	-- Relic Cache
 	[369296] = "Scorte dei Pellescheggia",	-- Shardhide Stash
