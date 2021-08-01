@@ -568,6 +568,24 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 171979 },	-- Nadjia the Mistblade
 						["coord"] = { 43.9, 17.9, SINFALL_REACHES },
 						["g"] = {	-- TODO: keep rewards here or put in Uncollectable?  unsure of how to get rewards for other classes (beyond playing through on each one)
+							i(183510, {	-- Count the Odds
+								["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+								["timeline"] = {
+									"added 9.0.1.35282",
+								},
+							}),
+							i(182331, {	-- Empowered Release
+								["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+								["timeline"] = {
+									"added 9.0.1.35256",
+								},
+							}),
+							i(183474, {	-- Endless Thirst
+								["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+								["timeline"] = {
+									"added 9.0.1.35522",
+								},
+							}),
 							i(182130),	-- Shattered Perceptions
 							i(181840),	-- Light's Inspiration
 							i(181962),	-- Mental Recovery

@@ -229,7 +229,30 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 172677 },	-- Niya
 						["coord"] = { 33.7, 45.0, THE_TRUNK },
 						["g"] = {
-							i(183473),	-- Conflux of Elements
+							i(183473, {	-- Conflux of Elements
+								["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+								["timeline"] = {
+									"added 9.0.1.35522",
+								},
+							}),
+							i(182651, {	-- Destructive Reverberations
+								["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+								["timeline"] = {
+									"added 9.0.1.35282",
+								},
+							}),
+							i(181539, {	-- Discipline of the Grove
+								["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+								["timeline"] = {
+									"added 9.0.1.35078",
+								},
+							}),
+							i(182347, {	-- Essential Extraction
+								["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+								["timeline"] = {
+									"added 9.0.1.35256",
+								},
+							}),
 							i(183466),	-- Innate Resolve
 							i(183467),	-- Tireless Pursuit
 							follower(1265),	-- Niya

@@ -60,6 +60,24 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
 						["coord"] = { 38.8, 32.4, SEAT_OF_THE_PRIMUS },
 						["g"] = {
+							i(181770, {	-- Bone Marrow Hops
+								["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+								["timeline"] = {
+									"added 9.0.1.35078",
+								},
+							}),
+							i(182292, {	-- Brutal Grasp
+								["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+								["timeline"] = {
+									"added 9.0.1.35282",
+								},
+							}),
+							i(183472, {	-- Evolved Swarm
+								["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+								["timeline"] = {
+									"added 9.0.1.35522",
+								},
+							}),
 							follower(1261),	-- Plague Deviser Marileth
 						},
 					}),

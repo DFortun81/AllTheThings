@@ -19,6 +19,56 @@ _.Instances = { tier(SL_TIER, {
 			n(QUESTS, {
 			--	keep quests section here for ["maps"] organization
 			}),
+			n(-981, {	-- Conduits
+				e(2397, {	-- An Affront of Challengers
+					["crs"] = {
+							164451,	-- Dessia the Decapitator
+							164463,	-- Paceran the Virulent
+							164461,	-- Sathel the Accursed
+						},
+					["g"] = {
+						i(181705),	-- Celestial Effervescence
+						i(183197),	-- Controlled Destruction
+						i(183503),	-- Poisoned Katar
+						i(183484),	-- Unchecked Aggression
+					},
+				}),
+				e(2401, {	-- Gorechop
+					["crs"] = { 162317 },	-- Gorechop
+					["g"] = {
+						i(183510),	-- Count the Odds
+						i(180932),	-- Fueled by Violence
+						i(181866),	-- Withering Plague
+					},
+				}),
+				e(2390, {	-- Xav the Unfallen
+					["crs"] = { 162329 },	-- Xav the Unfallen
+					["g"] = {
+						i(182383),	-- Dancing with Fate
+						i(182657),	-- Deadly Chain
+						i(182559),	-- Templar's Vindication
+					},
+				}),
+				e(2389, {	-- Kul'tharok
+					["crs"] = { 162309 },	-- Kul'tharok
+					["g"] = {
+						i(182128),	-- Call of Flame
+						i(182769),	-- Combusting Engine
+						i(181980),	-- Embrace Death
+						i(182456),	-- Wrench Evil
+					},
+				}),
+				e(2417, {	-- Mordretha, the Endless Empress
+					["crs"] = { 165946 },	-- Mordretha, the Endless Empress
+					["g"] = {
+						i(182743),	-- Focused Malignancy
+						i(182131),	-- Haunting Apparitions
+						i(181511),	-- Nether Precision
+						i(182648),	-- Sharpshooter's Focus
+						i(183476),	-- Stellar Inspiration
+					},
+				}),
+			}),
 			n(LEGENDARIES, {
 				e(2397, {	-- An Affront of Challengers
 					["crs"] = {
@@ -61,10 +111,6 @@ _.Instances = { tier(SL_TIER, {
 						164461,	-- Sathel the Accursed
 					},
 					["g"] = {
-						i(181705),	-- Celestial Effervescence
-						i(183197),	-- Controlled Destruction
-						i(183503),	-- Poisoned Katar
-						i(183484),	-- Unchecked Aggression
 						i(178866),	-- Dessia's Decimating Decapitator
 						i(178799),	-- Amphitheater Stalker's Hood
 						i(178803),	-- Plague-Licked Amice
@@ -77,9 +123,6 @@ _.Instances = { tier(SL_TIER, {
 				e(2401, {	-- Gorechop
 					["crs"] = { 162317 },	-- Gorechop
 					["g"] = {
-						i(183510),	-- Count the Odds
-						i(180932),	-- Fueled by Violence
-						i(181866),	-- Withering Plague
 						i(178793),	-- Abdominal Securing Chestguard
 						i(178806),	-- Contaminated Gauze Wristwraps
 						i(178798),	-- Grips of Overwhelming Beatings
@@ -90,9 +133,6 @@ _.Instances = { tier(SL_TIER, {
 				e(2390, {	-- Xav the Unfallen
 					["crs"] = { 162329 },	-- Xav the Unfallen
 					["g"] = {
-						i(182383),	-- Dancing with Fate
-						i(182657),	-- Deadly Chain
-						i(182559),	-- Templar's Vindication
 						i(178865),	-- Xav's Pike of Authority
 						i(178789),	-- Fleshcrafter's Knife
 						i(178864),	-- Gorebound Predator's Gavel
@@ -105,10 +145,6 @@ _.Instances = { tier(SL_TIER, {
 				e(2389, {	-- Kul'tharok
 					["crs"] = { 162309 },	-- Kul'tharok
 					["g"] = {
-						i(182128),	-- Call of Flame
-						i(182769),	-- Combusting Engine
-						i(181980),	-- Embrace Death
-						i(182456),	-- Wrench Evil
 						i(178792),	-- Soulsewn Vestments
 						i(178805),	-- Girdle of Shattered Dreams
 						i(178796),	-- Boots of Shuddering Matter
@@ -120,11 +156,6 @@ _.Instances = { tier(SL_TIER, {
 					["crs"] = { 165946 },	-- Mordretha, the Endless Empress
 					["g"] = {
 						ach(14372),	-- Theater of Pain
-						i(182743),	-- Focused Malignancy
-						i(182131),	-- Haunting Apparitions
-						i(181511),	-- Nether Precision
-						i(182648),	-- Sharpshooter's Focus
-						i(183476),	-- Stellar Inspiration
 						i(178867),	-- Barricade of the Endless Empire
 						i(178868),	-- Deathwalker's Promise
 						i(178802),	-- Unyielding Combatant's Pauldrons
@@ -145,10 +176,6 @@ _.Instances = { tier(SL_TIER, {
 							164461,	-- Sathel the Accursed
 						},
 						["g"] = {
-							i(181705),	-- Celestial Effervescence
-							i(183197),	-- Controlled Destruction
-							i(183503),	-- Poisoned Katar
-							i(183484),	-- Unchecked Aggression
 							i(178866),	-- Dessia's Decimating Decapitator
 							i(178799),	-- Amphitheater Stalker's Hood
 							i(178803),	-- Plague-Licked Amice
@@ -161,9 +188,6 @@ _.Instances = { tier(SL_TIER, {
 					e(2401, {	-- Gorechop
 						["crs"] = { 162317 },	-- Gorechop
 						["g"] = {
-							i(183510),	-- Count the Odds
-							i(180932),	-- Fueled by Violence
-							i(181866),	-- Withering Plague
 							i(178793),	-- Abdominal Securing Chestguard
 							i(178806),	-- Contaminated Gauze Wristwraps
 							i(178798),	-- Grips of Overwhelming Beatings
@@ -174,9 +198,6 @@ _.Instances = { tier(SL_TIER, {
 					e(2390, {	-- Xav the Unfallen
 						["crs"] = { 162329 },	-- Xav the Unfallen
 						["g"] = {
-							i(182383),	-- Dancing with Fate
-							i(182657),	-- Deadly Chain
-							i(182559),	-- Templar's Vindication
 							i(178865),	-- Xav's Pike of Authority
 							i(178789),	-- Fleshcrafter's Knife
 							i(178864),	-- Gorebound Predator's Gavel
@@ -189,10 +210,6 @@ _.Instances = { tier(SL_TIER, {
 					e(2389, {	-- Kul'tharok
 						["crs"] = { 162309 },	-- Kul'tharok
 						["g"] = {
-							i(182128),	-- Call of Flame
-							i(182769),	-- Combusting Engine
-							i(181980),	-- Embrace Death
-							i(182456),	-- Wrench Evil
 							i(178792),	-- Soulsewn Vestments
 							i(178805),	-- Girdle of Shattered Dreams
 							i(178796),	-- Boots of Shuddering Matter
@@ -204,11 +221,6 @@ _.Instances = { tier(SL_TIER, {
 						["crs"] = { 165946 },	-- Mordretha, the Endless Empress
 						["g"] = {
 							ach(14416),	-- Heroic: Theater of Pain
-							i(182743),	-- Focused Malignancy
-							i(182131),	-- Haunting Apparitions
-							i(181511),	-- Nether Precision
-							i(182648),	-- Sharpshooter's Focus
-							i(183476),	-- Stellar Inspiration
 							i(178867),	-- Barricade of the Endless Empire
 							i(178868),	-- Deathwalker's Promise
 							i(178802),	-- Unyielding Combatant's Pauldrons
@@ -236,10 +248,6 @@ _.Instances = { tier(SL_TIER, {
 								crit(2),	-- Sathel the Accursed
 								crit(3),	-- Dessia the Decapitator
 							}),
-							i(181705),	-- Celestial Effervescence
-							i(183197),	-- Controlled Destruction
-							i(183503),	-- Poisoned Katar
-							i(183484),	-- Unchecked Aggression
 							i(178866),	-- Dessia's Decimating Decapitator
 							i(178799),	-- Amphitheater Stalker's Hood
 							i(178803),	-- Plague-Licked Amice
@@ -253,9 +261,6 @@ _.Instances = { tier(SL_TIER, {
 						["crs"] = { 162317 },	-- Gorechop
 						["g"] = {
 							ach(14607),	-- Fresh Meat!
-							i(183510),	-- Count the Odds
-							i(180932),	-- Fueled by Violence
-							i(181866),	-- Withering Plague
 							i(178793),	-- Abdominal Securing Chestguard
 							i(178806),	-- Contaminated Gauze Wristwraps
 							i(178798),	-- Grips of Overwhelming Beatings
@@ -266,9 +271,6 @@ _.Instances = { tier(SL_TIER, {
 					e(2390, {	-- Xav the Unfallen
 						["crs"] = { 162329 },	-- Xav the Unfallen
 						["g"] = {
-							i(182383),	-- Dancing with Fate
-							i(182657),	-- Deadly Chain
-							i(182559),	-- Templar's Vindication
 							i(178865),	-- Xav's Pike of Authority
 							i(178789),	-- Fleshcrafter's Knife
 							i(178864),	-- Gorebound Predator's Gavel
@@ -281,10 +283,6 @@ _.Instances = { tier(SL_TIER, {
 					e(2389, {	-- Kul'tharok
 						["crs"] = { 162309 },	-- Kul'tharok
 						["g"] = {
-							i(182128),	-- Call of Flame
-							i(182769),	-- Combusting Engine
-							i(181980),	-- Embrace Death
-							i(182456),	-- Wrench Evil
 							i(178792),	-- Soulsewn Vestments
 							i(178805),	-- Girdle of Shattered Dreams
 							i(178796),	-- Boots of Shuddering Matter
@@ -297,11 +295,6 @@ _.Instances = { tier(SL_TIER, {
 						["g"] = {
 							ach(14417),	-- Mythic: Theater of Pain
 							ach(14533),	-- Royal Rumble
-							i(182743),	-- Focused Malignancy
-							i(182131),	-- Haunting Apparitions
-							i(181511),	-- Nether Precision
-							i(182648),	-- Sharpshooter's Focus
-							i(183476),	-- Stellar Inspiration
 							i(178867),	-- Barricade of the Endless Empire
 							i(178868),	-- Deathwalker's Promise
 							i(178802),	-- Unyielding Combatant's Pauldrons
