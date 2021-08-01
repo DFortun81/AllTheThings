@@ -2878,7 +2878,7 @@ for key,value in pairs({
 	[355886] = "Cofre bajapestado",	-- Plaguefallen Chest
 	[355947] = "Alijo de Glutharn",	-- Glutharn's Stash
 	[356555] = "Collar de Eurydea",	-- Eurydea's Necklace
-	--TODO: [356693] = "Baroness Vashj's Extravagant Tribute",	-- Baroness Vashj's Extravagant Tribute
+	[356693] = "Tributo exorbitante de la baronesa Vashj",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "Tributo exorbitante de Alexandros Mograine",	-- Alexandros Mograine's Extravagant Tribute
 	[356700] = "Tributo exorbitante del gran maestro Vole",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Tributo exorbitante del inventor de pestes Marileth",	-- Plague Deviser Marileth's Extravagant Tribute

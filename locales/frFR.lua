@@ -2691,7 +2691,7 @@ for key,value in pairs({
 	[327669] = "Elémenbière contenu",	-- Contained Alemental
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
 	[329641] = "Avis de recherche : Cachal et Troggeur",	-- Wanted: Junkbrat and Roadtrogg
-	--TODO: [329783] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
+	[329783] = "Malle arcanique luisante",	-- Glowing Arcane Trunk
 	[329805] = "Cristal étrange",	-- Strange Crystal
 	[329918] = "Trésors hurans",	-- Quilboar Treasure
 	[329919] = "Fournitures volées",	-- Stolen Supplies
@@ -2881,7 +2881,7 @@ for key,value in pairs({
 	[356697] = "Tribut extravagant d’Alexandros Mograine",	-- Alexandros Mograine's Extravagant Tribute
 	[356700] = "Tribut extravagant du grand maître Vole",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Tribut extravagant de Marileth, catalyseur de peste",	-- Plague Deviser Marileth's Extravagant Tribute
-	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
+	[356709] = "Tribut extravagant de dame Baie-de-Lune",	-- Lady Moonberry's Extravagant Tribute
 	[356712] = "Tribut extravagant du capitaine de l’Hallali Korayn",	-- Hunt-Captain Korayn's Extravagant Tribute
 	[356716] = "Tribut extravagant de la dromane Aliothe",	-- Droman Aliothe's Extravagant Tribute
 	[356720] = "Tribut extravagant de Choufa",	-- Choofa's Extravagant Tribute
