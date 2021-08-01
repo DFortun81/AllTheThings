@@ -4095,6 +4095,7 @@ app.BuildSourceParent = function(group)
 		or group.key == "flightPathID"
 		or group.key == "professionID"
 		or group.key == "categoryID"
+		or group.key == "mapID"
 		then return;
 	end
 
