@@ -35,7 +35,6 @@ _.Instances = { tier(SL_TIER, {
 			--n(WORLD_QUESTS, {
 			--}),
 			n(LEGENDARIES, {
-				--[[
 				e(2391, {	-- Amarth, The Harvester
 					["crs"] = { 163157 },	-- Amarth, The Harvester
 					["g"] = {
@@ -58,7 +57,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183278),	-- Memory of the Cold Front
 					},
 				}),
-				--]]
 			}),
 			d(1, {	-- Normal
 				e(2395, {	-- Blightbone

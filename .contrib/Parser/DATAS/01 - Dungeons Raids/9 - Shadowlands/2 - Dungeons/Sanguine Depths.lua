@@ -17,7 +17,6 @@ _.Instances = { tier(SL_TIER, {
 				}),
 			}),
 			n(LEGENDARIES, {
-				--[[
 				e(2388, {	-- Kryxis the Voracious
 					["crs"] = { 162100 },	-- Kryxis the Voracious
 					["g"] = {
@@ -42,7 +41,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183289),	-- Memory of Stormstout
 					},
 				}),
-				--]]
 			}),
 			d(1, {	-- Normal
 				e(2388, {	-- Kryxis the Voracious

@@ -30,7 +30,6 @@ _.Instances = { tier(SL_TIER, {
 			--n(WORLD_QUESTS, {
 			--}),
 			n(LEGENDARIES, {
-			--[[
 				e(2423, {	-- Domina Venomblade
 					["crs"] = { 164266 },	-- Domina Venomblade
 					["g"] = {
@@ -46,7 +45,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183319),	-- Memory of my Crystalline Reflection
 					},
 				}),
-			--]]
 			}),
 			d(1, {	-- Normal
 				e(2419, {	-- Globgrog

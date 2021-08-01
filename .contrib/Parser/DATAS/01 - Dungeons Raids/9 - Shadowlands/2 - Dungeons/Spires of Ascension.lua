@@ -37,7 +37,6 @@ _.Instances = { tier(SL_TIER, {
 				}),
 			}),
 			n(LEGENDARIES, {
-				--[[
 				e(2399, {	-- Kin-Tara
 					["crs"] = {
 						163077,	-- Azules
@@ -68,7 +67,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183257),	-- Memory of the Rylakstalker's Fangs
 					},
 				}),
-				--]]
 			}),
 			d(1, {	-- Normal
 				e(2399, {	-- Kin-Tara

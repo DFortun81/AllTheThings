@@ -14,7 +14,6 @@ _.Instances = { tier(SL_TIER, {
 				-- do not delete header!
 			}),
 			n(LEGENDARIES, {
-			--[[
 				e(2400, {	-- Ingra Maloch
 					["crs"] = {
 						164567,	-- Ingra Maloch
@@ -37,7 +36,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183229),	-- Memory of a Timeworn Dreambinder
 					},
 				}),
-			--]]
 			}),
 			d(1, {	-- Normal
 				e(2400, {	-- Ingra Maloch
