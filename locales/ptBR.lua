@@ -2921,7 +2921,7 @@ for key,value in pairs({
 	[357937] = "Tesouro Enterrado",	-- Burried Cache
 	[358298] = "Cofre da Câmara Proibida",	-- Forbidden Chamber Lockbox
 	[358315] = "Fragmentos de Mão Esquelética",	-- Skeletal Hand Fragments
-	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
+	[358318] = "Retrato do Dragador R. Suavão",	-- R. Suavel Dredger Portrait
 	[358319] = "Nota do Feiticeiro",	-- Sorceror's Note
 	[358382] = "Procura-se: Quelícera",	-- Wanted: Chelicera
 	[358533] = "Suprimentos Esquecidos",	-- Forgotten Supplies

@@ -2859,7 +2859,7 @@ for key,value in pairs({
 	[354652] = "Collezione dei Silfidi",	-- Faerie Trove
 	[354852] = "Crescita Germogliante",	-- Sprouting Growth
 	[354853] = "Crescita Germogliante",	-- Sprouting Growth
-	--TODO: [354856] = "Slime-Coated Crate",	-- Slime-Coated Crate
+	[354856] = "Cassa Coperta di Poltiglia",	-- Slime-Coated Crate
 	[354911] = "Seme dell'Animum Rigonfio",	-- Swollen Anima Seed
 	[355000] = "Scrigno della Notte",	-- Cache of the Night
 	[355035] = "Scrigno Runico Prescelto",	-- Treasure: House of the Chosen

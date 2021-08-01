@@ -2378,7 +2378,7 @@ for key, value in pairs({
 	[257393] = "宝箱",	-- Treasure Chest
 	[257545] = "宝箱",	-- Treasure Chest
 	[257546] = "宝箱",	-- Treasure Chest
-	--TODO: [257999] = "Technique: Tome of the Tranquil Mind",	-- Technique: Tome of the Tranquil Mind
+	[257999] = "工艺图：宁神书卷",	-- Technique: Tome of the Tranquil Mind
 	[258690] = "小宝箱",	-- Small Treasure Chest
 	[258978] = "浸水的书籍",	-- Waterlogged Tome
 	[258979] = "被邪能毁坏的书籍",	-- Fel-Ravaged Tome
