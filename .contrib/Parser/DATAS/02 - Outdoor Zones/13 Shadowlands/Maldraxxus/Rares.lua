@@ -182,6 +182,98 @@ _.Zones =
 						i(182205),	-- Scarab-Shell Faceguard
 					},
 				}),
+				n(157226, {	-- Pool of Mixed Monstrosities
+					["description"] = "This pool works similarly to the Laboratory of Mardivas in Nazjatar, but is a group activity rather than a solo one.  The rare that is summoned is determined by the combination of Miscible Ooze (yellow), Mephitic Goo (blue), and Viscous Oil (red) thrown into the pool.",
+					["coord"] = { 58.6, 74.2, MALDRAXXUS },
+					["g"] = {
+						n(157294, {	-- Pulsing Leech
+							["description"] = "Requires a majority of Red slime.",
+							["questID"] = 61718,
+							["isDaily"] = true,
+							["g"] = {
+								crit(1, {	-- Pulsing Leech
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(184279),	-- Siphoning Blood-Drinker
+							},
+						}),
+						n(157307, {	-- Gelloh
+							["description"] = "Requires a majority of Yellow slime.",
+							["questID"] = 61721,
+							["isDaily"] = true,
+							["g"] = {
+								crit(2, {	-- Gelloh
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(182287),	-- Eternally Preserved Scarab
+							},
+						}),
+						n(157312, {	-- Oily Invertebrate
+							["description"] = "Requires an equal portion of Red, Blue, & Yellow slime.",
+							["questID"] = 61724,
+							["isDaily"] = true,
+							["g"] = {
+								crit(3, {	-- Oily Invertebrate
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(184300),	-- Fused Spineguard
+								i(181270),	-- Invertebrate Oil (PET!)
+								i(184155, {	-- Recovered Containment Pack
+								--	TODO: figure out if this is the best way to display this.  i haven't done it myself so i'm not 100% sure how it works other than "loot item > do quest > get reward."
+									["questID"] = 62804,	-- Filling the Tanks
+									["g"] = {
+										i(184156),	-- Pristine Containment Pack
+									},
+								}),
+							},
+						}),
+						n(157310, {	-- Boneslurp
+							["description"] = "Requires an equal majority of Blue & Yellow slime.",
+							["questID"] = 61722,
+							["isDaily"] = true,
+							["g"] = {
+								crit(4, {	-- Boneslurp
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(184185),	-- Grunge-Caked Collarbone
+							}
+						}),
+						n(157309, {	-- Violet Mistake
+							["description"] = "Requires an equal majority of Red & Blue slime.",
+							["questID"] = 61720,
+							["isDaily"] = true,
+							["g"] = {
+								crit(5, {	-- Violet Mistake
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(182079),	-- Slime-Covered Reins of the Hulking Deathroc (MOUNT!)
+								i(184301),	-- Twenty-Loop Violet Girdle
+							},
+						}),
+						n(157311, {	-- Burnblister
+							["description"] = "Requires an equal majority of Red & Yellow slime.",
+							["questID"] = 61723,
+							["isDaily"] = true,
+							["g"] = {
+								crit(6, {	-- Burnblister
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(184175),	-- Bone-Blistering Wand
+							},
+						}),
+						n(157308, {	-- Corrupted Sediment
+							["description"] = "Requires a majority of Blue slime.",
+							["questID"] = 61719,
+							["isDaily"] = true,
+							["g"] = {
+								crit(7, {	-- Corrupted Sediment
+									["achievementID"] = 14721,	-- It's in the Mix
+								}),
+								i(184302),	-- Residue-Coated Muck Waders
+							},
+						}),
+					},
+				}),
 				n(159753, { -- Ravenomous
 					["description"] = "Crush Boneweave Spiderlings in the area for a chance to spawn the rare.  After flying around for a little while, it will land and be attackable.",
 					["questID"] = 58004,
