@@ -659,6 +659,7 @@ _.Zones =
 					["g"] = {
 						--	different characters can have different rewards for this quest on the same day.  checked all 3 back to back on 5/18, priest had Paint Brush Cup, shaman had Wheelbarrow, and mage had Chalice
 						i(186690),	-- Gold Filled Barrel
+						i(186680),	-- Gold Filled Boot
 						i(186705),	-- Gold Filled Chalice
 						i(186707),	-- Gold Filled Crate
 						i(186706),	-- Gold Filled Hat
