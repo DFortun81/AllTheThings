@@ -1165,7 +1165,9 @@ for key,value in pairs({
 	[6751] = "Planta Frutífera Estranha",	-- Strange Fruited Plant
 	[6752] = "Planta Frondosa Estranha",	-- Strange Fronded Plant
 	[7510] = "Fronde Desenvolvida",	-- Sprouted Frond
+	[19022] = "Baú Gasto",	-- Worn Chest
 	[19023] = "|cFFFFFFFFStep 7:|r Página 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
+	[19024] = "Santuário Escondido",	-- Hidden Shrine
 	[20805] = "Projeto Desprotegido do Rebu",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "Terra Solta",	-- Loose Dirt
 	[20992] = "Escudo Negro",	-- Black Shield
@@ -1224,6 +1226,8 @@ for key,value in pairs({
 	[177787] = "Diário de Rodovalho",	-- Rackmore's Log
 	[177904] = "Pôster de Procura-se: Besseleth",	-- Wanted Poster: Besseleth	--TODO: This was taken from classic Wowhead
 	[177964] = "Pedra das Profundezas",	-- Fathom Stone
+	[178144] = "Baú dos Trolls",	-- Troll Chest
+	[178227] = "Cesto do Totem de Murgut",	-- Murgut's Totem Basket
 	[179485] = "Armadilha Quebrada",	-- A Broken Trap
 	[179501] = "Tesouro do Fiapo Agulhacerta",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "Homenagem a Gordok",	-- Gordok Tribute Chest
@@ -1234,6 +1238,9 @@ for key,value in pairs({
 	[180366] = "Caixa de Ferramentas Desgastada",	-- Battered Tackle Box	--TODO: This was taken from classic Wowhead
 	[180368] = "Tabuleta da Loucura",	-- Tablet of Madness	--TODO: This was taken from classic Wowhead
 	[180448] = "Cartaz de Procura-se: Agarramata",	-- Wanted Poster: Deathclasp
+	[180456] = "Pedra Eólica Menor",	-- Lesser Wind Stone
+	[180461] = "Pedra Eólica",	-- Wind Stone
+	[180466] = "Pedra Eólica Maior",	-- Greater Wind Stone
 	[180503] = "Livro de Receitas da Sandy",	-- Sandy Cookbook
 	[180633] = "Lágrima Cristalina",	-- Crystalline Tear
 	[180642] = "Caixote Inconspícuo",	-- Inconspicuous Crate
@@ -1248,12 +1255,6 @@ for key,value in pairs({
 	[181147] = "Cartaz de Procura-se",	-- Wanted Poster
 	[181150] = "Diário Empoeirado",	-- Dusty Journal
 	[181153] = "Cartaz de Procura-se: Kel'gash, o Perverso",	-- Wanted Poster: Kel'gash the Wicked
-	[181332] = "Chama de Ventobravo",	-- Flame of Stormwind
-	[181333] = "Chama de Altaforja",	-- Flame of Ironforge
-	[181334] = "Chama de Darnassus",	-- Flame of Darnassus
-	[181335] = "Chama da Cidade Baixa",	-- Flame of the Undercity
-	[181336] = "Chama de Orgrimmar",	-- Flame of Orgrimmar
-	[181337] = "Chama do Penhasco do Trovão",	-- Flame of Thunder Bluff
 	[181638] = "Cartaz de Procura-se",	-- Wanted Poster
 	[181748] = "Cristal de Sangue",	-- Blood Crystal
 	[181756] = "Livro Antigo e Surrado",	-- Battered Ancient Book
@@ -1346,8 +1347,6 @@ for key,value in pairs({
 	[187972] = "Fogueira da Horda",	-- Horde Bonfire
 	[187975] = "Fogueira da Horda",	-- Horde Bonfire
 	[188085] = "Grão Pestilento",	-- Plagued Grain
-	[188128] = "Chama da Exodar",	-- Flame of the Exodar
-	[188129] = "Chama de Luaprata",	-- Flame of Silvermoon
 	[188261] = "Diário Surrado",	-- Battered Journal
 	[188364] = "Armadilha para Caranguejo Destruída",	-- Wrecked Crab Trap
 	[188365] = "Coração dos Antigos",	-- Heart of the Ancients
@@ -2955,6 +2954,14 @@ for key,value in pairs({
 	[368668] = "Tronco do Abominito",	-- Lil'Abom's Trunk
 	[368772] = "Pergaminho Signomarcado",	-- Sigilscored Scroll
 	[368876] = "Cabedal Górjuro",	-- Mawsworn Cache
+	[368935] = "Jaula de Guinchador de Pecádia",	-- Sinfall Screecher Cage
+	[368946] = "Recipiente de Ânima Roubada",	-- Stolen Anima Vessel
+	[368948] = "Recipiente de Ânima Roubada",	-- Stolen Anima Vessel
+	[368949] = "Recipiente de Ânima Roubada",	-- Stolen Anima Vessel
+	[368950] = "Recipiente de Ânima Roubada",	-- Stolen Anima Vessel
+	[368951] = "Recipiente de Ânima Roubada",	-- Stolen Anima Vessel
+	[368952] = "Recipiente de Ânima Roubada",	-- Stolen Anima Vessel
+	[368953] = "Recipiente de Ânima Roubada",	-- Stolen Anima Vessel
 	[369129] = "Elo de Ouro de Nilganihmaht",	-- Nilganihmaht's Gold Band
 	[369132] = "Baú da Dominação Lacrado",	-- Domination Sealed Chest
 	[369133] = "Selo da Dominação #1",	-- Domination Seal #1
@@ -2975,7 +2982,10 @@ for key,value in pairs({
 	[369216] = "Baú Avérjuro",	-- Helsworn Chest
 	[369224] = "Coração de Ezequiel Adornado",	-- Jeweled Heart of Ezekiel
 	[369225] = "Vestígio Infestado",	-- Infested Vestige
+	[369227] = "Recipiente de Ânima Roubada",	-- Stolen Anima Vessel
 	[369232] = "Caixa de Oferenda",	-- Offering Box
+	[369235] = "Recipiente de Ânima Roubada",	-- Stolen Anima Vessel
+	[369236] = "Recipiente de Ânima Roubada",	-- Stolen Anima Vessel
 	[369245] = "Caixa de Relíquias Korthianas",	-- Korthian Relic Box
 	[369292] = "Baú de Relíquias",	-- Relic Cache
 	[369296] = "Covil de Couraça-de-cristal",	-- Shardhide Stash

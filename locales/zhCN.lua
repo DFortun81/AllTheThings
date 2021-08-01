@@ -1217,7 +1217,9 @@ for key, value in pairs({
 	[6751] = "奇怪的果树",	-- Strange Fruited Plant	--TODO: This was taken from classic Wowhead
 	[6752] = "奇怪的树木",	-- Strange Fronded Plant	--TODO: This was taken from classic Wowhead
 	[7510] = "发芽的树叶",	-- Sprouted Frond	--TODO: This was taken from classic Wowhead
+	[19022] = "旧箱子",	-- Worn Chest
 	[19023] = "|cFFFFFFFF第7步:|r 第2351页",	-- |cFFFFFFFFStep 7:|r Page 2351
+	[19024] = "隐蔽的神龛",	-- Hidden Shrine
 	[20805] = "瑞兹尔的计划",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "松软的泥土",	-- Loose Dirt
 	[20992] = "黑色盾牌",	-- Black Shield
@@ -1276,6 +1278,8 @@ for key, value in pairs({
 	[177787] = "拉克摩尔的日志",	-- Rackmore's Log	--TODO: This was taken from classic Wowhead
 	[177904] = "通缉：贝瑟莱斯",	-- Wanted Poster: Besseleth	--TODO: This was taken from classic Wowhead
 	[177964] = "深渊之石",	-- Fathom Stone
+	[178144] = "巨魔的箱子",	-- Troll Chest
+	[178227] = "穆戈特的图腾篮",	-- Murgut's Totem Basket
 	[179485] = "损坏的陷阱",	-- A Broken Trap
 	[179501] = "诺特·希姆加克的储物箱",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "戈多克贡品",	-- Gordok Tribute Chest
@@ -1286,6 +1290,9 @@ for key, value in pairs({
 	[180366] = "破碎的工具箱",	-- Battered Tackle Box	--TODO: This was taken from classic Wowhead
 	[180368] = "疯狂石板",	-- Tablet of Madness	--TODO: This was taken from classic Wowhead
 	[180448] = "通缉布告：死亡弯钩",	-- Wanted Poster: Deathclasp
+	[180456] = "次级风石",	-- Lesser Wind Stone
+	[180461] = "风石",	-- Wind Stone
+	[180466] = "强力风石",	-- Greater Wind Stone
 	[180503] = "盖满沙子的烹饪书",	-- Sandy Cookbook
 	[180633] = "水晶之泪",	-- Crystalline Tear
 	--TODO: [180642] = "Inconspicuous Crate",	-- Inconspicuous Crate
@@ -1300,12 +1307,6 @@ for key, value in pairs({
 	[181147] = "通缉布告",	-- Wanted Poster
 	[181150] = "布满灰尘的日记",	-- Dusty Journal
 	[181153] = "通缉布告：邪恶的克尔加什",	-- Wanted Poster: Kel'gash the Wicked
-	[181332] = "暴风城烈焰",	-- Flame of Stormwind
-	--TODO: [181333] = "Flame of Ironforge",	-- Flame of Ironforge
-	--TODO: [181334] = "Flame of Darnassus",	-- Flame of Darnassus
-	--TODO: [181335] = "Flame of the Undercity",	-- Flame of the Undercity
-	--TODO: [181336] = "Flame of Orgrimmar",	-- Flame of Orgrimmar
-	[181337] = "雷霆崖烈焰",	-- Flame of Thunder Bluff
 	[181638] = "通缉布告",	-- Wanted Poster
 	--TODO: [181748] = "Blood Crystal",	-- Blood Crystal
 	--TODO: [181756] = "Battered Ancient Book",	-- Battered Ancient Book
@@ -1398,8 +1399,6 @@ for key, value in pairs({
 	[187972] = "部落篝火",	-- Horde Bonfire
 	[187975] = "部落篝火",	-- Horde Bonfire
 	[188085] = "天灾谷物",	-- Plagued Grain
-	--TODO: [188128] = "Flame of the Exodar",	-- Flame of the Exodar
-	--TODO: [188129] = "Flame of Silvermoon",	-- Flame of Silvermoon
 	[188261] = "破碎的日记",	-- Battered Journal
 	[188364] = "被破坏的螃蟹陷阱",	-- Wrecked Crab Trap
 	[188365] = "古树精华宝石",	-- Heart of the Ancients
@@ -3007,6 +3006,14 @@ for key, value in pairs({
 	[368668] = "憎憎的大腿",	-- Lil'Abom's Trunk
 	[368772] = "刻印卷轴",	-- Sigilscored Scroll
 	[368876] = "渊誓之箱",	-- Mawsworn Cache
+	--TODO: [368935] = "Sinfall Screecher Cage",	-- Sinfall Screecher Cage
+	[368946] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368948] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368949] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368950] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368951] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368952] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368953] = "失窃的心能容器",	-- Stolen Anima Vessel
 	[369129] = "耐迦尼赫玛特的纯金指环",	-- Nilganihmaht's Gold Band
 	[369132] = "统御封印之箱",	-- Domination Sealed Chest
 	[369133] = "统御封印 #1",	-- Domination Seal #1
@@ -3027,7 +3034,10 @@ for key, value in pairs({
 	[369216] = "冥誓宝箱",	-- Helsworn Chest
 	[369224] = "伊瑟基尔的宝石之心",	-- Jeweled Heart of Ezekiel
 	[369225] = "孳生残迹",	-- Infested Vestige
+	[369227] = "失窃的心能容器",	-- Stolen Anima Vessel
 	[369232] = "供品盒",	-- Offering Box
+	[369235] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[369236] = "失窃的心能容器",	-- Stolen Anima Vessel
 	[369245] = "刻希亚圣物箱",	-- Korthian Relic Box
 	[369292] = "圣物宝箱",	-- Relic Cache
 	[369296] = "碎皮贮藏",	-- Shardhide Stash

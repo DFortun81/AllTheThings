@@ -1152,7 +1152,9 @@ for key,value in pairs({
 	[6751] = "Чудоягодник",	-- Strange Fruited Plant
 	[6752] = "Растение со странными листьями",	-- Strange Fronded Plant
 	[7510] = "Росток папоротника",	-- Sprouted Frond
+	[19022] = "Подержанный сундук",	-- Worn Chest
 	[19023] = "|cFFFFFFFFШаг 7:|r Страница 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
+	[19024] = "Потаенное святилище",	-- Hidden Shrine
 	[20805] = "Неохраняемые чертежи Риззла",	-- Rizzle's Unguarded Plans
 	[20985] = "Рыхлая земля",	-- Loose Dirt
 	[20992] = "Черный щит",	-- Black Shield
@@ -1211,6 +1213,8 @@ for key,value in pairs({
 	[177787] = "Записи Ракмора",	-- Rackmore's Log
 	[177904] = "Плакат: \"Разыскивается\": Бесселет",	-- Wanted Poster: Besseleth
 	[177964] = "Глубинный Камень",	-- Fathom Stone
+	[178144] = "Тролльский сундук",	-- Troll Chest
+	[178227] = "Корзина тотема Мургута",	-- Murgut's Totem Basket
 	[179485] = "Сломанная ловушка",	-- A Broken Trap
 	[179501] = "Тайник Уззла Наперстяка",	-- Knot Thimblejack's Cache
 	[179564] = "Приношения Гордока",	-- Gordok Tribute Chest
@@ -1221,6 +1225,9 @@ for key,value in pairs({
 	[180366] = "Побитый ящик для рыболовных снастей",	-- Battered Tackle Box
 	[180368] = "Табличка Безумия",	-- Tablet of Madness
 	[180448] = "Плакат: \"Разыскивается\": Смертехват",	-- Wanted Poster: Deathclasp
+	[180456] = "Меньший камень Ветров",	-- Lesser Wind Stone
+	[180461] = "Камень Ветров",	-- Wind Stone
+	[180466] = "Больший Ветровой Камень",	-- Greater Wind Stone
 	[180503] = "Занесенная песком поваренная книга",	-- Sandy Cookbook
 	[180633] = "Хрустальная слеза",	-- Crystalline Tear
 	[180642] = "Не вызывающий подозрений сундук",	-- Inconspicuous Crate
@@ -1235,12 +1242,6 @@ for key,value in pairs({
 	[181147] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[181150] = "Пыльный дневник",	-- Dusty Journal
 	[181153] = "Плакат: \"Разыскивается\": Кел'гаш Коварный",	-- Wanted Poster: Kel'gash the Wicked
-	[181332] = "Пламя Штормграда",	-- Flame of Stormwind
-	[181333] = "Пламя Стальгорна",	-- Flame of Ironforge
-	[181334] = "Пламя Дарнаса",	-- Flame of Darnassus
-	[181335] = "Пламя Подгорода",	-- Flame of the Undercity
-	[181336] = "Пламя Оргриммара",	-- Flame of Orgrimmar
-	[181337] = "Пламя Громового Утеса",	-- Flame of Thunder Bluff
 	[181638] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[181748] = "Кровавый кристалл",	-- Blood Crystal
 	[181756] = "Потрепанная древняя книга",	-- Battered Ancient Book
@@ -1333,8 +1334,6 @@ for key,value in pairs({
 	[187972] = "Большой костер Орды",	-- Horde Bonfire
 	[187975] = "Большой костер Орды",	-- Horde Bonfire
 	[188085] = "Зараженное зерно",	-- Plagued Grain
-	[188128] = "Пламя Экзодара",	-- Flame of the Exodar
-	[188129] = "Пламя Луносвета",	-- Flame of Silvermoon
 	[188261] = "Потрепанный дневник",	-- Battered Journal
 	[188364] = "Разрушенная ловушка на крабов",	-- Wrecked Crab Trap
 	[188365] = "Сердце древних",	-- Heart of the Ancients
@@ -2942,6 +2941,14 @@ for key,value in pairs({
 	[368668] = "Пузо Кадаврика",	-- Lil'Abom's Trunk
 	[368772] = "Свиток с печатью",	-- Sigilscored Scroll
 	[368876] = "Тайник Верных Утробе",	-- Mawsworn Cache
+	[368935] = "Клетка грехопадского визгунчика",	-- Sinfall Screecher Cage
+	[368946] = "Сосуд с украденной анимой",	-- Stolen Anima Vessel
+	[368948] = "Сосуд с украденной анимой",	-- Stolen Anima Vessel
+	[368949] = "Сосуд с украденной анимой",	-- Stolen Anima Vessel
+	[368950] = "Сосуд с украденной анимой",	-- Stolen Anima Vessel
+	[368951] = "Сосуд с украденной анимой",	-- Stolen Anima Vessel
+	[368952] = "Сосуд с украденной анимой",	-- Stolen Anima Vessel
+	[368953] = "Сосуд с украденной анимой",	-- Stolen Anima Vessel
 	[369129] = "Золотое кольцо Нилганихмата",	-- Nilganihmaht's Gold Band
 	[369132] = "Запечатанный сундук Господства",	-- Domination Sealed Chest
 	[369133] = "Печать Господства #1",	-- Domination Seal #1
@@ -2962,7 +2969,10 @@ for key,value in pairs({
 	[369216] = "Сундук Верных Хелии",	-- Helsworn Chest
 	[369224] = "Украшенное каменьями сердце Изекииля",	-- Jeweled Heart of Ezekiel
 	[369225] = "Зараженная сумка",	-- Infested Vestige
+	[369227] = "Сосуд с украденной анимой",	-- Stolen Anima Vessel
 	[369232] = "Коробка для подношений",	-- Offering Box
+	[369235] = "Сосуд с украденной анимой",	-- Stolen Anima Vessel
+	[369236] = "Сосуд с украденной анимой",	-- Stolen Anima Vessel
 	[369245] = "Ларец с кортийскими реликвиями",	-- Korthian Relic Box
 	[369292] = "Тайник с реликвиями",	-- Relic Cache
 	[369296] = "Тайник сланцевика",	-- Shardhide Stash

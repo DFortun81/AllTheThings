@@ -1164,7 +1164,9 @@ for key,value in pairs({
 	[6751] = "Plante aux fruits étranges",	-- Strange Fruited Plant
 	[6752] = "Plantes aux feuilles étranges",	-- Strange Fronded Plant
 	[7510] = "Racine éclose",	-- Sprouted Frond
+	[19022] = "Coffre usé",	-- Worn Chest
 	[19023] = "|cFFFFFFFFStep 7:|r Page 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
+	[19024] = "Autel caché",	-- Hidden Shrine
 	[20805] = "Plans de Séhouf",	-- Rizzle's Unguarded Plans
 	[20985] = "Poussière flottante",	-- Loose Dirt
 	[20992] = "Bouclier noir",	-- Black Shield
@@ -1223,6 +1225,8 @@ for key,value in pairs({
 	[177787] = "Journal de Rackmore",	-- Rackmore's Log
 	[177904] = "Avis de recherche : Besseleth",	-- Wanted Poster: Besseleth
 	[177964] = "Pierre de la Brasse",	-- Fathom Stone
+	[178144] = "Coffre de Troll",	-- Troll Chest
+	[178227] = "Panier à Totems de Murgut",	-- Murgut's Totem Basket
 	[179485] = "Piège cassé",	-- A Broken Trap
 	[179501] = "Réserve de Noué Dédodevie",	-- Knot Thimblejack's Cache
 	[179564] = "Tribut des Gordok",	-- Gordok Tribute Chest
@@ -1233,6 +1237,9 @@ for key,value in pairs({
 	[180366] = "Boîte d'appâts abîmée",	-- Battered Tackle Box
 	[180368] = "Tablette de la folie",	-- Tablet of Madness
 	[180448] = "Avis de recherche : Poigne-de-mort",	-- Wanted Poster: Deathclasp
+	[180456] = "Pierre des vents inférieure",	-- Lesser Wind Stone
+	[180461] = "Pierre du vent",	-- Wind Stone
+	[180466] = "Pierre des vents supérieure",	-- Greater Wind Stone
 	[180503] = "Livre de cuisine sableux",	-- Sandy Cookbook
 	[180633] = "Larme cristalline",	-- Crystalline Tear
 	[180642] = "Caisse anodine",	-- Inconspicuous Crate
@@ -1247,12 +1254,6 @@ for key,value in pairs({
 	[181147] = "Avis de recherche",	-- Wanted Poster
 	[181150] = "Journal poussiéreux",	-- Dusty Journal
 	[181153] = "Avis de recherche : Kel'gash le Malfaisant",	-- Wanted Poster: Kel'gash the Wicked
-	[181332] = "Flamme de Hurlevent",	-- Flame of Stormwind
-	[181333] = "Flamme de Forgefer",	-- Flame of Ironforge
-	[181334] = "Flamme de Darnassus",	-- Flame of Darnassus
-	[181335] = "Flamme de Fossoyeuse",	-- Flame of the Undercity
-	[181336] = "Flamme d'Orgrimmar",	-- Flame of Orgrimmar
-	[181337] = "Flamme des Pitons-du-Tonnerre",	-- Flame of Thunder Bluff
 	[181638] = "Avis de recherche",	-- Wanted Poster
 	[181748] = "Cristal de sang",	-- Blood Crystal
 	[181756] = "Livre ancien endommagé",	-- Battered Ancient Book
@@ -1345,8 +1346,6 @@ for key,value in pairs({
 	[187972] = "Feu de joie de la Horde",	-- Horde Bonfire
 	[187975] = "Feu de joie de la Horde",	-- Horde Bonfire
 	[188085] = "Céréales pestiférées",	-- Plagued Grain
-	[188128] = "Flamme de l'Exodar",	-- Flame of the Exodar
-	[188129] = "Flamme de Lune-d’Argent",	-- Flame of Silvermoon
 	[188261] = "Journal endommagé",	-- Battered Journal
 	[188364] = "Piège à crabes détruit",	-- Wrecked Crab Trap
 	[188365] = "Cœur des anciens",	-- Heart of the Ancients
@@ -2954,6 +2953,14 @@ for key,value in pairs({
 	[368668] = "Tronc de Tit’Abom",	-- Lil'Abom's Trunk
 	[368772] = "Parchemin scellé",	-- Sigilscored Scroll
 	[368876] = "Cache antrelige",	-- Mawsworn Cache
+	[368935] = "Cage à hurleuse de Tombe-Vice",	-- Sinfall Screecher Cage
+	[368946] = "Réceptacle d’anima volé",	-- Stolen Anima Vessel
+	[368948] = "Réceptacle d’anima volé",	-- Stolen Anima Vessel
+	[368949] = "Réceptacle d’anima volé",	-- Stolen Anima Vessel
+	[368950] = "Réceptacle d’anima volé",	-- Stolen Anima Vessel
+	[368951] = "Réceptacle d’anima volé",	-- Stolen Anima Vessel
+	[368952] = "Réceptacle d’anima volé",	-- Stolen Anima Vessel
+	[368953] = "Réceptacle d’anima volé",	-- Stolen Anima Vessel
 	[369129] = "Bague en or de Nilganihmaht",	-- Nilganihmaht's Gold Band
 	[369132] = "Coffre scellé par la domination",	-- Domination Sealed Chest
 	[369133] = "Sceau de domination #1",	-- Domination Seal #1
@@ -2974,7 +2981,10 @@ for key,value in pairs({
 	[369216] = "Coffre ligenfer",	-- Helsworn Chest
 	[369224] = "Cœur minéral d’Ezekiel",	-- Jeweled Heart of Ezekiel
 	[369225] = "Vestiges contaminés",	-- Infested Vestige
+	[369227] = "Réceptacle d’anima volé",	-- Stolen Anima Vessel
 	[369232] = "Boîte d’offrandes",	-- Offering Box
+	[369235] = "Réceptacle d’anima volé",	-- Stolen Anima Vessel
+	[369236] = "Réceptacle d’anima volé",	-- Stolen Anima Vessel
 	[369245] = "Boîte à reliques korthienne",	-- Korthian Relic Box
 	[369292] = "Cache à relique",	-- Relic Cache
 	[369296] = "Cachette de cuirasaure",	-- Shardhide Stash
