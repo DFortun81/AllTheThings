@@ -38,6 +38,21 @@ _.Instances = { tier(SL_TIER, {
 					},
 				}),
 			}),
+			n(LEGENDARIES, {
+				e(2429, {	-- Huntsman Altimor
+					["crs"] = {
+						165066,	-- Huntsman Altimor
+						169457,	-- Bargast
+						169458,	-- Hecutis
+						165067,	-- Margore
+					},
+					["g"] = {
+						i(183258),	-- Memory of Eagletalon's True Focus
+						i(183235),	-- Memory of The Natural Order
+						i(183361),	-- Memory of Spiritwalker's Tidal Totem
+					},
+				}),
+			}),
 			n(ZONEDROPS, {
 				i(180453, {	-- She Had a Stone Heart
 					["sourceQuests"] = { 58062 },	-- A Very Special Guest
@@ -73,9 +88,6 @@ _.Instances = { tier(SL_TIER, {
 						i(180943),	-- Cacophonous Roar
 						i(182110),	-- Crippling Hex
 						i(181510),	-- Lingering Numbness
-						i(183258),	-- Memory of Eagletalon's True Focus
-						i(183235),	-- Memory of The Natural Order
-						i(183361),	-- Memory of Spiritwalker's Tidal Totem
 						i(183892),	-- Mystic Anima Spherule
 						i(183501),	-- Rushed Setup
 						i(182605),	-- Tactical Retreat
@@ -447,9 +459,6 @@ _.Instances = { tier(SL_TIER, {
 						i(180943),	-- Cacophonous Roar
 						i(182110),	-- Crippling Hex
 						i(181510),	-- Lingering Numbness
-						i(183258),	-- Memory of Eagletalon's True Focus
-						i(183235),	-- Memory of The Natural Order
-						i(183361),	-- Memory of Spiritwalker's Tidal Totem
 						i(183892),	-- Mystic Anima Spherule
 						i(183501),	-- Rushed Setup
 						i(182605),	-- Tactical Retreat
@@ -817,9 +826,6 @@ _.Instances = { tier(SL_TIER, {
 						i(180943),	-- Cacophonous Roar
 						i(182110),	-- Crippling Hex
 						i(181510),	-- Lingering Numbness
-						i(183258),	-- Memory of Eagletalon's True Focus
-						i(183235),	-- Memory of The Natural Order
-						i(183361),	-- Memory of Spiritwalker's Tidal Totem
 						i(183892),	-- Mystic Anima Spherule
 						i(183501),	-- Rushed Setup
 						i(182605),	-- Tactical Retreat
@@ -1213,9 +1219,6 @@ _.Instances = { tier(SL_TIER, {
 						i(180943),	-- Cacophonous Roar
 						i(182110),	-- Crippling Hex
 						i(181510),	-- Lingering Numbness
-						i(183258),	-- Memory of Eagletalon's True Focus
-						i(183235),	-- Memory of The Natural Order
-						i(183361),	-- Memory of Spiritwalker's Tidal Totem
 						i(183892),	-- Mystic Anima Spherule
 						i(183501),	-- Rushed Setup
 						i(182605),	-- Tactical Retreat

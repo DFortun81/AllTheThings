@@ -271,62 +271,60 @@ _.Zones =
 					}),
 				}),
 				n(ZONEDROPS, {
-					["g"] = {
-						i(112436, {	-- Mismatched Cloth Gloves
-							["cr"] = 78651,	-- Shattered Hand Bonechopper
-						}),
-						i(112438, {	-- Mismatched Leather Gloves
-							["cr"] = 78651,	-- Shattered Hand Bonechopper
-						}),
-						i(112435, {	-- Mismatched Mail Gloves
-							["cr"] = 78651,	-- Shattered Hand Bonechopper
-						}),
-						i(112437, {	-- Mismatched Plate Gauntlets
-							["crs"] = {
-								78651,	-- Shattered Hand Bonechopper
-								78650,	-- Shattered Hand Torturer
-							},
-						}),
-						i(112471, {	-- Jungle-Chopper Bracers
-							["crs"] = {
-								78507,	-- Bleeding Hollow Savage
-								78510,	-- Bleeding Hollow Hatchet
-							},
-						}),
-						i(112468, {	-- Jungle-Chopper Manacles
-							["crs"] = {
-								78507,	-- Bleeding Hollow Savage
-								78510,	-- Bleeding Hollow Hatchet
-							},
-						}),
-						i(112470, {	-- Jungle-Chopper Wristcovers
-							["crs"] = {
-								78507,	-- Bleeding Hollow Savage
-								78509,	-- Bleeding Hollow Berserker
-							},
-						}),
-						i(112469, {	-- Jungle-Chopper Wristplates
-							["crs"] = {
-								78507,	-- Bleeding Hollow Savage
-								78510,	-- Bleeding Hollow Hatchet
-							},
-						}),
-						i(112660, {	-- Blackrock Slippers
-							["cr"] = 81357,	-- Blackrock Slaghauler
-						}),
-						i(112662, {	-- Blackrock Moccasins
-							["cr"] = 81357,	-- Blackrock Slaghauler
-						}),
-						i(112661, {	-- Blackrock Chain Boots
-							["cr"] = 81357,	-- Blackrock Slaghauler
-						}),
-						i(112659, {	-- Blackrock Infantry Warboots
-							["crs"] = {
-								81357,	-- Blackrock Slaghauler
-								81367,	-- Blackrock Forgeworker
-							},
-						}),
-					},
+					i(112436, {	-- Mismatched Cloth Gloves
+						["cr"] = 78651,	-- Shattered Hand Bonechopper
+					}),
+					i(112438, {	-- Mismatched Leather Gloves
+						["cr"] = 78651,	-- Shattered Hand Bonechopper
+					}),
+					i(112435, {	-- Mismatched Mail Gloves
+						["cr"] = 78651,	-- Shattered Hand Bonechopper
+					}),
+					i(112437, {	-- Mismatched Plate Gauntlets
+						["crs"] = {
+							78651,	-- Shattered Hand Bonechopper
+							78650,	-- Shattered Hand Torturer
+						},
+					}),
+					i(112471, {	-- Jungle-Chopper Bracers
+						["crs"] = {
+							78507,	-- Bleeding Hollow Savage
+							78510,	-- Bleeding Hollow Hatchet
+						},
+					}),
+					i(112468, {	-- Jungle-Chopper Manacles
+						["crs"] = {
+							78507,	-- Bleeding Hollow Savage
+							78510,	-- Bleeding Hollow Hatchet
+						},
+					}),
+					i(112470, {	-- Jungle-Chopper Wristcovers
+						["crs"] = {
+							78507,	-- Bleeding Hollow Savage
+							78509,	-- Bleeding Hollow Berserker
+						},
+					}),
+					i(112469, {	-- Jungle-Chopper Wristplates
+						["crs"] = {
+							78507,	-- Bleeding Hollow Savage
+							78510,	-- Bleeding Hollow Hatchet
+						},
+					}),
+					i(112660, {	-- Blackrock Slippers
+						["cr"] = 81357,	-- Blackrock Slaghauler
+					}),
+					i(112662, {	-- Blackrock Moccasins
+						["cr"] = 81357,	-- Blackrock Slaghauler
+					}),
+					i(112661, {	-- Blackrock Chain Boots
+						["cr"] = 81357,	-- Blackrock Slaghauler
+					}),
+					i(112659, {	-- Blackrock Infantry Warboots
+						["crs"] = {
+							81357,	-- Blackrock Slaghauler
+							81367,	-- Blackrock Forgeworker
+						},
+					}),
 				}),
 			},
 		}),
