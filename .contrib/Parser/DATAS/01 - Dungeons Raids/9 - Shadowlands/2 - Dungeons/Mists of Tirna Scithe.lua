@@ -13,6 +13,32 @@ _.Instances = { tier(SL_TIER, {
 			n(QUESTS, {
 				-- do not delete header!
 			}),
+			n(LEGENDARIES, {
+			--[[
+				e(2400, {	-- Ingra Maloch
+					["crs"] = {
+						164567,	-- Ingra Maloch
+						164804,	-- Droman Oulfarran
+					},
+					["g"] = {
+						i(183253),	-- Memory of the Soulforge Embers
+					},
+				}),
+				e(2402, {	-- Mistcaller
+					["crs"] = { 164501 },	-- Mistcaller
+					["g"] = {
+						i(183266),	-- Memory of the Disciplinary Command
+						i(183336),	-- Memory of the Duskwalker's Patch
+					},
+				}),
+				e(2405, {	--	Tred'ova
+					["crs"] = { 164517 },	--	Tred'ova
+					["g"] = {
+						i(183229),	-- Memory of a Timeworn Dreambinder
+					},
+				}),
+			--]]
+			}),
 			d(1, {	-- Normal
 				e(2400, {	-- Ingra Maloch
 					["crs"] = {
@@ -21,7 +47,6 @@ _.Instances = { tier(SL_TIER, {
 					},
 					["g"] = {
 						i(182582),	-- Enkindled Spirit
-						i(183253),	-- Memory of the Soulforge Embers
 						i(181844),	-- Pain Transformation
 						i(182686),	-- Powerful Precision
 						i(183491),	-- Ready for Anything
@@ -44,8 +69,6 @@ _.Instances = { tier(SL_TIER, {
 						i(181462),	-- Coordinated Offensive
 						i(182754),	-- Duplicitous Havoc
 						i(181734),	-- Magi's Brand
-						i(183266),	-- Memory of the Disciplinary Command
-						i(183336),	-- Memory of the Duskwalker's Patch
 						i(183514),	-- Perforated Veins
 						i(178710),	-- Tanglewood Thorn
 						i(182305),	-- Crown of Autumnal Flora
@@ -66,7 +89,6 @@ _.Instances = { tier(SL_TIER, {
 						i(180935),	-- Crash the Ramparts
 						i(183132),	-- Echoing Call
 						i(182142),	-- Embrace of Earth
-						i(183229),	-- Memory of a Timeworn Dreambinder
 						i(183485),	-- Savage Combatant
 						i(182384),	-- Serrated Glaive
 						i(178714),	-- Lakali's Spire of Knowledge
@@ -90,7 +112,6 @@ _.Instances = { tier(SL_TIER, {
 						},
 						["g"] = {
 							i(182582),	-- Enkindled Spirit
-							i(183253),	-- Memory of the Soulforge Embers
 							i(181844),	-- Pain Transformation
 							i(182686),	-- Powerful Precision
 							i(183491),	-- Ready for Anything
@@ -113,8 +134,6 @@ _.Instances = { tier(SL_TIER, {
 							i(181462),	-- Coordinated Offensive
 							i(182754),	-- Duplicitous Havoc
 							i(181734),	-- Magi's Brand
-							i(183266),	-- Memory of the Disciplinary Command
-							i(183336),	-- Memory of the Duskwalker's Patch
 							i(183514),	-- Perforated Veins
 							i(178710),	-- Tanglewood Thorn
 							i(182305),	-- Crown of Autumnal Flora
@@ -135,7 +154,6 @@ _.Instances = { tier(SL_TIER, {
 							i(180935),	-- Crash the Ramparts
 							i(183132),	-- Echoing Call
 							i(182142),	-- Embrace of Earth
-							i(183229),	-- Memory of a Timeworn Dreambinder
 							i(183485),	-- Savage Combatant
 							i(182384),	-- Serrated Glaive
 							i(178714),	-- Lakali's Spire of Knowledge
@@ -172,7 +190,6 @@ _.Instances = { tier(SL_TIER, {
 						["g"] = {
 							ach(14503),	-- Hooked On Hydroponics
 							i(182582),	-- Enkindled Spirit
-							i(183253),	-- Memory of the Soulforge Embers
 							i(181844),	-- Pain Transformation
 							i(182686),	-- Powerful Precision
 							i(183491),	-- Ready for Anything
@@ -195,8 +212,6 @@ _.Instances = { tier(SL_TIER, {
 							i(181462),	-- Coordinated Offensive
 							i(182754),	-- Duplicitous Havoc
 							i(181734),	-- Magi's Brand
-							i(183266),	-- Memory of the Disciplinary Command
-							i(183336),	-- Memory of the Duskwalker's Patch
 							i(183514),	-- Perforated Veins
 							i(178710),	-- Tanglewood Thorn
 							i(182305),	-- Crown of Autumnal Flora
@@ -218,7 +233,6 @@ _.Instances = { tier(SL_TIER, {
 							i(180935),	-- Crash the Ramparts
 							i(183132),	-- Echoing Call
 							i(182142),	-- Embrace of Earth
-							i(183229),	-- Memory of a Timeworn Dreambinder
 							i(183485),	-- Savage Combatant
 							i(182384),	-- Serrated Glaive
 							i(183623),	-- Spinemaw Gormling (PET!)

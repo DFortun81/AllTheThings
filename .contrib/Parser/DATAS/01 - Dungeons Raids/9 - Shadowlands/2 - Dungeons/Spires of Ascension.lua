@@ -36,6 +36,40 @@ _.Instances = { tier(SL_TIER, {
 					},
 				}),
 			}),
+			n(LEGENDARIES, {
+				--[[
+				e(2399, {	-- Kin-Tara
+					["crs"] = {
+						163077,	-- Azules
+						162059,	-- Kin-Tara
+					},
+					["g"] = {
+						i(183231),	-- Memory of a Cat-eye Curio
+					},
+				}),
+				e(2416, {	-- Ventunax
+					["crs"] = { 162058 },	-- Ventunax
+					["g"] = {
+						i(183313),	-- Memory of the Lightbringer's Tempest
+						i(183392),	-- Memory of the Thunderlord
+					},
+				}),
+				e(2414, {	-- Oryphrion
+					["crs"] = { 162060 },	-- Oryphrion
+					["g"] = {
+						i(183313),	-- Memory of the Lightbringer's Tempest
+						i(183392),	-- Memory of the Thunderlord
+					},
+				}),
+				e(2412, {	--	Devos, Paragon of Doubt
+					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
+					["g"] = {
+						i(183354),	-- Memory of the Doom Winds
+						i(183257),	-- Memory of the Rylakstalker's Fangs
+					},
+				}),
+				--]]
+			}),
 			d(1, {	-- Normal
 				e(2399, {	-- Kin-Tara
 					["crs"] = {
@@ -45,7 +79,6 @@ _.Instances = { tier(SL_TIER, {
 					["g"] = {
 						i(183483),	-- Carnivorous Instinct
 						i(182610),	-- Ferocious Appetite
-						i(183231),	-- Memory of a Cat-eye Curio
 						i(182468),	-- Mortal Combo
 						i(182144),	-- Nature's Reach
 						i(183513),	-- Stiletto Staccato
@@ -64,8 +97,6 @@ _.Instances = { tier(SL_TIER, {
 						i(181435),	-- Calculated Strikes
 						i(182478),	-- Corrupting Leer
 						i(182462),	-- Expurgation
-						i(183338),	-- Memory of Celerity
-						i(183365),	-- Memory of the Consuming Wrath
 						i(181389),	-- Shivering Core
 						i(180095),	-- Penitent Edge
 						i(180104),	-- Distorted Construct's Gauntlets
@@ -79,8 +110,6 @@ _.Instances = { tier(SL_TIER, {
 					["crs"] = { 162060 },	-- Oryphrion
 					["g"] = {
 						i(182187),	-- Meat Shield
-						i(183313),	-- Memory of the Lightbringer's Tempest
-						i(183392),	-- Memory of the Thunderlord
 						i(180944),	-- Merciless Bonegrinder
 						i(182753),	-- Royal Decree
 						i(182471),	-- Soul Furnace
@@ -102,8 +131,6 @@ _.Instances = { tier(SL_TIER, {
 						i(182135),	-- Focused Lightning
 						i(182141),	-- Holy Oration
 						i(183290),	-- Ancient Teachings
-						i(183354),	-- Memory of the Doom Winds
-						i(183257),	-- Memory of the Rylakstalker's Fangs
 						i(183488),	-- Unstoppable Growth
 						i(181465),	-- Xuen's Bond
 						i(180096),	-- Devos' Cacophonous Poleaxe
@@ -127,7 +154,6 @@ _.Instances = { tier(SL_TIER, {
 						["g"] = {
 							i(183483),	-- Carnivorous Instinct
 							i(182610),	-- Ferocious Appetite
-							i(183231),	-- Memory of a Cat-eye Curio
 							i(182468),	-- Mortal Combo
 							i(182144),	-- Nature's Reach
 							i(183513),	-- Stiletto Staccato
@@ -146,8 +172,6 @@ _.Instances = { tier(SL_TIER, {
 							i(181435),	-- Calculated Strikes
 							i(182478),	-- Corrupting Leer
 							i(182462),	-- Expurgation
-							i(183338),	-- Memory of Celerity
-							i(183365),	-- Memory of the Consuming Wrath
 							i(181389),	-- Shivering Core
 							i(180095),	-- Penitent Edge
 							i(180104),	-- Distorted Construct's Gauntlets
@@ -161,8 +185,6 @@ _.Instances = { tier(SL_TIER, {
 						["crs"] = { 162060 },	-- Oryphrion
 						["g"] = {
 							i(182187),	-- Meat Shield
-							i(183313),	-- Memory of the Lightbringer's Tempest
-							i(183392),	-- Memory of the Thunderlord
 							i(180944),	-- Merciless Bonegrinder
 							i(182753),	-- Royal Decree
 							i(182471),	-- Soul Furnace
@@ -184,8 +206,6 @@ _.Instances = { tier(SL_TIER, {
 							i(182135),	-- Focused Lightning
 							i(182141),	-- Holy Oration
 							i(183290),	-- Ancient Teachings
-							i(183354),	-- Memory of the Doom Winds
-							i(183257),	-- Memory of the Rylakstalker's Fangs
 							i(183488),	-- Unstoppable Growth
 							i(181465),	-- Xuen's Bond
 							i(180096),	-- Devos' Cacophonous Poleaxe
@@ -214,7 +234,6 @@ _.Instances = { tier(SL_TIER, {
 						["g"] = {
 							i(183483),	-- Carnivorous Instinct
 							i(182610),	-- Ferocious Appetite
-							i(183231),	-- Memory of a Cat-eye Curio
 							i(182468),	-- Mortal Combo
 							i(182144),	-- Nature's Reach
 							i(183513),	-- Stiletto Staccato
@@ -233,8 +252,6 @@ _.Instances = { tier(SL_TIER, {
 							i(181435),	-- Calculated Strikes
 							i(182478),	-- Corrupting Leer
 							i(182462),	-- Expurgation
-							i(183338),	-- Memory of Celerity
-							i(183365),	-- Memory of the Consuming Wrath
 							i(181389),	-- Shivering Core
 							i(180095),	-- Penitent Edge
 							i(180104),	-- Distorted Construct's Gauntlets
@@ -249,8 +266,6 @@ _.Instances = { tier(SL_TIER, {
 						["g"] = {
 							ach(14331),	-- Goliath Offline
 							i(182187),	-- Meat Shield
-							i(183313),	-- Memory of the Lightbringer's Tempest
-							i(183392),	-- Memory of the Thunderlord
 							i(180944),	-- Merciless Bonegrinder
 							i(182753),	-- Royal Decree
 							i(182471),	-- Soul Furnace
@@ -273,8 +288,6 @@ _.Instances = { tier(SL_TIER, {
 							i(182135),	-- Focused Lightning
 							i(182141),	-- Holy Oration
 							i(183290),	-- Ancient Teachings
-							i(183354),	-- Memory of the Doom Winds
-							i(183257),	-- Memory of the Rylakstalker's Fangs
 							i(183488),	-- Unstoppable Growth
 							i(181465),	-- Xuen's Bond
 							i(180096),	-- Devos' Cacophonous Poleaxe

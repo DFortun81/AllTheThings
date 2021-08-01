@@ -29,6 +29,25 @@ _.Instances = { tier(SL_TIER, {
 			}),
 			--n(WORLD_QUESTS, {
 			--}),
+			n(LEGENDARIES, {
+			--[[
+				e(2423, {	-- Domina Venomblade
+					["crs"] = { 164266 },	-- Domina Venomblade
+					["g"] = {
+						i(183345),	-- Memory of the Rotten
+						i(183260),	-- Memory of the Serpentstalker's Trickery
+					},
+				}),
+				e(2404, {	-- Margrave Stradama
+					["crs"] = { 164267 },	-- Margrave Stradama
+					["g"] = {
+						i(183212),	-- Memory of a Darkglare Medallion
+						i(182637),	-- Memory of Death's Certainty
+						i(183319),	-- Memory of my Crystalline Reflection
+					},
+				}),
+			--]]
+			}),
 			d(1, {	-- Normal
 				e(2419, {	-- Globgrog
 					["crs"] = { 164255 },	-- Globgrog
@@ -66,8 +85,6 @@ _.Instances = { tier(SL_TIER, {
 					["crs"] = { 164266 },	-- Domina Venomblade
 					["g"] = {
 						i(182208),	-- Lingering Plague
-						i(183345),	-- Memory of the Rotten
-						i(183260),	-- Memory of the Serpentstalker's Trickery
 						i(182368),	-- Relentless Onslaught
 						i(183167),	-- Strength of the Pack
 						i(178929),	-- Halberd of the Aranakk
@@ -86,9 +103,6 @@ _.Instances = { tier(SL_TIER, {
 						i(182747),	-- Cold Embrace
 						i(183478),	-- Fury of the Skies
 						i(181504),	-- Infernal Cascade
-						i(183212),	-- Memory of a Darkglare Medallion
-						i(182637),	-- Memory of Death's Certainty
-						i(183319),	-- Memory of my Crystalline Reflection
 						i(182139),	-- Rabid Shadows
 						i(178754),	-- Poxstorm, Longsword of Pestilence
 						i(178764),	-- Plagueborne Shoulderguards
@@ -139,8 +153,6 @@ _.Instances = { tier(SL_TIER, {
 						["crs"] = { 164266 },	-- Domina Venomblade
 						["g"] = {
 							i(182208),	-- Lingering Plague
-							i(183345),	-- Memory of the Rotten
-							i(183260),	-- Memory of the Serpentstalker's Trickery
 							i(182368),	-- Relentless Onslaught
 							i(183167),	-- Strength of the Pack
 							i(178929),	-- Halberd of the Aranakk
@@ -159,9 +171,6 @@ _.Instances = { tier(SL_TIER, {
 							i(182747),	-- Cold Embrace
 							i(183478),	-- Fury of the Skies
 							i(181504),	-- Infernal Cascade
-							i(183212),	-- Memory of a Darkglare Medallion
-							i(182637),	-- Memory of Death's Certainty
-							i(183319),	-- Memory of my Crystalline Reflection
 							i(182139),	-- Rabid Shadows
 							i(178754),	-- Poxstorm, Longsword of Pestilence
 							i(178764),	-- Plagueborne Shoulderguards
@@ -224,8 +233,6 @@ _.Instances = { tier(SL_TIER, {
 						["crs"] = { 164266 },	-- Domina Venomblade
 						["g"] = {
 							i(182208),	-- Lingering Plague
-							i(183345),	-- Memory of the Rotten
-							i(183260),	-- Memory of the Serpentstalker's Trickery
 							i(182368),	-- Relentless Onslaught
 							i(183167),	-- Strength of the Pack
 							i(178929),	-- Halberd of the Aranakk
@@ -244,9 +251,6 @@ _.Instances = { tier(SL_TIER, {
 							i(182747),	-- Cold Embrace
 							i(183478),	-- Fury of the Skies
 							i(181504),	-- Infernal Cascade
-							i(183212),	-- Memory of a Darkglare Medallion
-							i(182637),	-- Memory of Death's Certainty
-							i(183319),	-- Memory of my Crystalline Reflection
 							i(182139),	-- Rabid Shadows
 							i(181271),	-- Sludge Feeler (PET!)
 							i(178754),	-- Poxstorm, Longsword of Pestilence

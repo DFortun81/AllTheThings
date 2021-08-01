@@ -16,14 +16,40 @@ _.Instances = { tier(SL_TIER, {
 					["provider"] = { "n", 166689 },	-- General Draven
 				}),
 			}),
+			n(LEGENDARIES, {
+				--[[
+				e(2388, {	-- Kryxis the Voracious
+					["crs"] = { 162100 },	-- Kryxis the Voracious
+					["g"] = {
+						i(183234),	-- Memory of a Luffa-Infused Embrace
+						i(183297),	-- Memory of Xuen
+					},
+				}),
+				e(2421, {	-- Grand Proctor Beryllia
+					["crs"] = { 162102 },	-- Grand Proctor Beryllia
+					["g"] = {
+						i(183323),	-- Memory of Flash Concentration
+						i(183303),	-- Memory of Maraad's Dying Breath
+					},
+				}),
+				e(2407, {	-- General Kaal
+					["crs"] = {
+						162133,	-- General Kaal (during gauntlet)
+						162099,	-- General Kaal
+					},
+					["g"] = {
+						i(183358),	-- Memory of an Earthen Harmony
+						i(183289),	-- Memory of Stormstout
+					},
+				}),
+				--]]
+			}),
 			d(1, {	-- Normal
 				e(2388, {	-- Kryxis the Voracious
 					["crs"] = { 162100 },	-- Kryxis the Voracious
 					["g"] = {
 						i(183202),	-- Deadly Tandem
 						i(181740),	-- Evasive Stride
-						i(183234),	-- Memory of a Luffa-Infused Embrace
-						i(183297),	-- Memory of Xuen
 						i(183480),	-- Taste for Blood
 						i(181776),	-- Vicious Contempt
 						i(178854),	-- Hungering Devourer's Twinblade
@@ -58,8 +84,6 @@ _.Instances = { tier(SL_TIER, {
 						i(181847),	-- Lasting Spirit
 						i(182137),	-- Magma Fist
 						i(181506),	-- Master Flame
-						i(183323),	-- Memory of Flash Concentration
-						i(183303),	-- Memory of Maraad's Dying Breath
 						i(182608),	-- Virtuous Command
 						i(178852),	-- Vessel of Shining Radiance
 						i(178847),	-- Radiant Light Binders
@@ -76,8 +100,6 @@ _.Instances = { tier(SL_TIER, {
 					},
 					["g"] = {
 						ach(14197),	-- Sanguine Depths
-						i(183358),	-- Memory of an Earthen Harmony
-						i(183289),	-- Memory of Stormstout
 						i(182677),	-- Punish the Guilty
 						i(182125),	-- Pyroclastic Shock
 						i(183507),	-- Triple Threat
@@ -101,8 +123,6 @@ _.Instances = { tier(SL_TIER, {
 						["g"] = {
 							i(183202),	-- Deadly Tandem
 							i(181740),	-- Evasive Stride
-							i(183234),	-- Memory of a Luffa-Infused Embrace
-							i(183297),	-- Memory of Xuen
 							i(183480),	-- Taste for Blood
 							i(181776),	-- Vicious Contempt
 							i(178854),	-- Hungering Devourer's Twinblade
@@ -137,8 +157,6 @@ _.Instances = { tier(SL_TIER, {
 							i(181847),	-- Lasting Spirit
 							i(182137),	-- Magma Fist
 							i(181506),	-- Master Flame
-							i(183323),	-- Memory of Flash Concentration
-							i(183303),	-- Memory of Maraad's Dying Breath
 							i(182608),	-- Virtuous Command
 							i(178852),	-- Vessel of Shining Radiance
 							i(178847),	-- Radiant Light Binders
@@ -155,8 +173,6 @@ _.Instances = { tier(SL_TIER, {
 						},
 						["g"] = {
 							ach(14198),	-- Heroic: Sanguine Depths
-							i(183358),	-- Memory of an Earthen Harmony
-							i(183289),	-- Memory of Stormstout
 							i(182677),	-- Punish the Guilty
 							i(182125),	-- Pyroclastic Shock
 							i(183507),	-- Triple Threat
@@ -185,8 +201,6 @@ _.Instances = { tier(SL_TIER, {
 						["g"] = {
 							i(183202),	-- Deadly Tandem
 							i(181740),	-- Evasive Stride
-							i(183234),	-- Memory of a Luffa-Infused Embrace
-							i(183297),	-- Memory of Xuen
 							i(183480),	-- Taste for Blood
 							i(181776),	-- Vicious Contempt
 							i(178854),	-- Hungering Devourer's Twinblade
@@ -222,8 +236,6 @@ _.Instances = { tier(SL_TIER, {
 							i(181847),	-- Lasting Spirit
 							i(182137),	-- Magma Fist
 							i(181506),	-- Master Flame
-							i(183323),	-- Memory of Flash Concentration
-							i(183303),	-- Memory of Maraad's Dying Breath
 							i(180591),	-- Vial of Roiling Emotions (PET!)
 							i(182608),	-- Virtuous Command
 							i(178852),	-- Vessel of Shining Radiance
@@ -242,8 +254,6 @@ _.Instances = { tier(SL_TIER, {
 						["g"] = {
 							ach(14199),	-- Mythic: Sanguine Depths
 							ach(14289),	-- Kaal-ed Shot
-							i(183358),	-- Memory of an Earthen Harmony
-							i(183289),	-- Memory of Stormstout
 							i(182677),	-- Punish the Guilty
 							i(182125),	-- Pyroclastic Shock
 							i(183507),	-- Triple Threat

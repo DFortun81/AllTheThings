@@ -34,6 +34,32 @@ _.Instances = { tier(SL_TIER, {
 			}),
 			--n(WORLD_QUESTS, {
 			--}),
+			n(LEGENDARIES, {
+				--[[
+				e(2391, {	-- Amarth, The Harvester
+					["crs"] = { 163157 },	-- Amarth, The Harvester
+					["g"] = {
+						i(183387),	-- Memory of the Deathmaker
+					},
+				}),
+				e(2392, {	-- Surgeon Stitchflesh
+					["crs"] = {
+						162689,	-- Surgeon Stitchflesh
+						164578,	-- Stitchflesh's Creation
+					},
+					["g"] = {
+						i(183373),	-- Memory of an Implosive Potential
+					},
+				}),
+				e(2396, {	-- Nalthor the Rimebinder
+					["crs"] = { 162693 },	-- Nalthor the Rimebinder
+					["g"] = {
+						i(182633),	-- Memory of the Biting Cold
+						i(183278),	-- Memory of the Cold Front
+					},
+				}),
+				--]]
+			}),
 			d(1, {	-- Normal
 				e(2395, {	-- Blightbone
 					["crs"] = { 162691 },	-- Blightbone
@@ -61,7 +87,6 @@ _.Instances = { tier(SL_TIER, {
 						i(181982),	-- Everfrost
 						i(183481),	-- Incessant Hunter
 						i(182772),	-- Infernal Brand
-						i(183387),	-- Memory of the Deathmaker
 						i(178737),	-- Amarth's Spellblade
 						i(178738),	-- Rattling Deadeye Hood
 						i(178740),	-- Reanimator's Mantle
@@ -79,7 +104,6 @@ _.Instances = { tier(SL_TIER, {
 						i(181738),	-- Artifice of the Archmage
 						i(182750),	-- Carnivorous Stalkers
 						i(182385),	-- Growing Inferno
-						i(183373),	-- Memory of an Implosive Potential
 						i(183512),	-- Planned Execution
 						i(181700),	-- Scalding Brew
 						i(178743),	-- Stitchflesh's Scalpel
@@ -97,8 +121,6 @@ _.Instances = { tier(SL_TIER, {
 					["g"] = {
 						ach(14366),	-- The Necrotic Wake
 						i(182136),	-- Chilled to the Core
-						i(182633),	-- Memory of the Biting Cold
-						i(183278),	-- Memory of the Cold Front
 						i(182622),	-- Resplendent Light
 						i(181843),	-- Shining Radiance
 						i(182201),	-- Unleashed Frenzy
@@ -142,7 +164,6 @@ _.Instances = { tier(SL_TIER, {
 							i(181982),	-- Everfrost
 							i(183481),	-- Incessant Hunter
 							i(182772),	-- Infernal Brand
-							i(183387),	-- Memory of the Deathmaker
 							i(178737),	-- Amarth's Spellblade
 							i(178738),	-- Rattling Deadeye Hood
 							i(178740),	-- Reanimator's Mantle
@@ -160,7 +181,6 @@ _.Instances = { tier(SL_TIER, {
 							i(181738),	-- Artifice of the Archmage
 							i(182750),	-- Carnivorous Stalkers
 							i(182385),	-- Growing Inferno
-							i(183373),	-- Memory of an Implosive Potential
 							i(183512),	-- Planned Execution
 							i(181700),	-- Scalding Brew
 							i(178743),	-- Stitchflesh's Scalpel
@@ -178,8 +198,6 @@ _.Instances = { tier(SL_TIER, {
 						["g"] = {
 							ach(14367),	-- Heroic: The Necrotic Wake
 							i(182136),	-- Chilled to the Core
-							i(182633),	-- Memory of the Biting Cold
-							i(183278),	-- Memory of the Cold Front
 							i(182622),	-- Resplendent Light
 							i(181843),	-- Shining Radiance
 							i(182201),	-- Unleashed Frenzy
@@ -226,7 +244,6 @@ _.Instances = { tier(SL_TIER, {
 							i(181982),	-- Everfrost
 							i(183481),	-- Incessant Hunter
 							i(182772),	-- Infernal Brand
-							i(183387),	-- Memory of the Deathmaker
 							i(178737),	-- Amarth's Spellblade
 							i(178738),	-- Rattling Deadeye Hood
 							i(178740),	-- Reanimator's Mantle
@@ -245,7 +262,6 @@ _.Instances = { tier(SL_TIER, {
 							i(181738),	-- Artifice of the Archmage
 							i(182750),	-- Carnivorous Stalkers
 							i(182385),	-- Growing Inferno
-							i(183373),	-- Memory of an Implosive Potential
 							i(183512),	-- Planned Execution
 							i(181700),	-- Scalding Brew
 							i(178743),	-- Stitchflesh's Scalpel
@@ -265,8 +281,6 @@ _.Instances = { tier(SL_TIER, {
 							ach(14285),	-- Ready for Raiding VII
 							i(182136),	-- Chilled to the Core
 							i(181819),	-- Marrowfang's Reins (MOUNT!)
-							i(182633),	-- Memory of the Biting Cold
-							i(183278),	-- Memory of the Cold Front
 							i(182622),	-- Resplendent Light
 							i(181843),	-- Shining Radiance
 							i(182201),	-- Unleashed Frenzy
