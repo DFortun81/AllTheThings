@@ -2089,12 +2089,12 @@ app.L = {
 		[-970] = "Set C",														-- Set C
 		[-971] = "Set D",														-- Set D
 	-- SL Torghast
-		[-982] = "Skoldus Hall",
-		[-983] = "Fracture Chambers",
-		[-984] = "The Soulforges",
-		[-985] = "Coldheart Interstitia",
-		[-986] = "Mort'regar",
-		[-987] = "The Upper Reaches",
+		[-982] = select(2, GetAchievementInfo(14463)),							-- Skoldus Hall
+		[-983] = select(2, GetAchievementInfo(14473)),							-- Fracture Chambers
+		[-984] = select(2, GetAchievementInfo(14478)),							-- The Soulforges
+		[-985] = select(2, GetAchievementInfo(14483)),							-- Coldheart Interstitia
+		[-986] = select(2, GetAchievementInfo(14488)),							-- Mort'regar
+		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 		
 		
 		[-976] = "Korthian Sets",												-- Korthian Sets
