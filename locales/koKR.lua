@@ -2125,9 +2125,9 @@ for key,value in pairs({
 	[245528] = "보물 상자",	-- Treasure Chest
 	[245529] = "작은 보물 상자",	-- Small Treasure Chest
 	[245530] = "반짝이는 보물 상자",	-- Glimmering Treasure Chest
-	--TODO: [245531] = "Treasure Chest",	-- Treasure Chest
+	[245531] = "보물 상자",	-- Treasure Chest
 	[245532] = "보물 상자",	-- Treasure Chest
-	--TODO: [245533] = "Treasure Chest",	-- Treasure Chest
+	[245533] = "보물 상자",	-- Treasure Chest
 	--TODO: [245534] = "Small Treasure Chest",	-- Small Treasure Chest
 	--TODO: [245535] = "Small Treasure Chest",	-- Small Treasure Chest
 	--TODO: [245536] = "Glimmering Treasure Chest",	-- Glimmering Treasure Chest
@@ -2215,7 +2215,7 @@ for key,value in pairs({
 	[251719] = "작은 보물 상자",	-- Small Treasure Chest
 	[251720] = "작은 보물 상자",	-- Small Treasure Chest
 	[251723] = "작은 보물 상자",	-- Small Treasure Chest
-	--TODO: [251737] = "Treasure Chest",	-- Treasure Chest
+	[251737] = "보물 상자",	-- Treasure Chest
 	[251738] = "보물 상자",	-- Treasure Chest
 	[251761] = "작은 보물 상자",	-- Small Treasure Chest
 	[251762] = "작은 보물 상자",	-- Small Treasure Chest
