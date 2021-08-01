@@ -45,6 +45,9 @@ _.ExpansionFeatures =
 									{ "c", 1885, 30 },
 								},
 							}),
+							i(183249, {	-- Memory of a Vital Sacrifice
+								["cost"] = { { "c", 1813, 250 } },	-- 250x Reservoir Anima
+							}),
 							i(186516, {	-- Ensemble: Devoted Aspirant's Regalia
 								["cost"] = { { "c", 1813, 10000 } },	-- 10,000 Reservoir Anima
 								["g"] = {

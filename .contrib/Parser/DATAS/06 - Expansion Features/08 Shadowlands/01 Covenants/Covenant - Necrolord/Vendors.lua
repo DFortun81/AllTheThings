@@ -974,6 +974,9 @@ _.ExpansionFeatures =
 							i(183462, {	-- Illusion: Unbreakable Resolve
 								["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
 							}),
+							i(183249, {	-- Memory of a Vital Sacrifice
+								["cost"] = { { "c", 1813, 250 } },	-- 250x Reservoir Anima
+							}),
 							i(183601, {	-- Jiggles (PET)
 								["cost"] = {
 									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima

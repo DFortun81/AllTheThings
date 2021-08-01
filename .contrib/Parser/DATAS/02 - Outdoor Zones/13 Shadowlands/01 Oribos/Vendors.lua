@@ -294,7 +294,7 @@ _.Zones =
 						})),
 					},
 				}),
-				pvp(n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
+				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, ORIBOS },
 					["g"] = {
 						i(183246, {	-- Memory of Sephuz
@@ -904,7 +904,7 @@ _.Zones =
 							["u"] = REMOVED_FROM_GAME,
 						}),
 					},
-				})),
+				}),
 				n(167881, {	-- Ta'lan the Antiquary <Cartel Ta>
 					["coord"] = { 51.3, 43.0, 1672 },
 					["g"] = {

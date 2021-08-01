@@ -45,6 +45,23 @@ _.ExpansionFeatures =
 							["description"] = "Requires 56 Renown.",
 							["questID"] = 64098,
 						}),
+						n(LEGENDARIES, {
+							["description"] = "Requires Renown 48.",
+							["g"] = {
+								i(186568),	-- Memory of an Abomination's Frenzy
+								i(187118),	-- Memory of the Demonic Oath
+								i(186577),	-- Memory of the Unbridled Swarm
+								i(187230),	-- Memory of the Bag of Munitions
+								i(186621),	-- Memory of Death's Fathom
+								i(187217),	-- Memory of the Bountiful Brew
+								i(187107),	-- Memory of the Duty-Bound Gavel
+								i(187160),	-- Memory of Pallid Command
+								i(186712),	-- Memory of the Deathspike
+								i(186689),	-- Memory of the Splintered Elements
+								i(187226),	-- Memory of the Shards of Annihilation
+								i(186570),	-- Memory of Glory
+							},
+						}),
 					}),
 				}),
 			},

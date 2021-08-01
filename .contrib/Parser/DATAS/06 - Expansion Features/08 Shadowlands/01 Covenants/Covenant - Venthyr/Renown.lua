@@ -47,6 +47,23 @@ _.ExpansionFeatures =
 							["description"] = "Requires Renown 56.",
 							["questID"] = 64132,
 						}),
+						n(LEGENDARIES, {
+							["description"] = "Requires Renown 48.",
+							["g"] = {
+								i(186567),	-- Memory of Insatiable Hunger
+								i(187105),	-- Memory of the Agonizing Gaze
+								i(186609),	-- Memory of Sinful Hysteria
+								i(187232),	-- Memory of the Pouch of Razor Fragments
+								i(186635),	-- Memory of Sinful Delight
+								i(187277),	-- Memory of Sinister Teachings
+								i(187127),	-- Memory of Radiant Embers
+								i(187162),	-- Memory of Shadow Word: Manipulation
+								i(186710),	-- Memory of the Obedient
+								i(187224),	-- Memory of the Elemental Conduit
+								i(187228),	-- Memory of the Contained Perpetual Explosion
+								i(186572),	-- Memory of the Sinful Surge
+							},
+						}),
 					}),
 				}),
 			},

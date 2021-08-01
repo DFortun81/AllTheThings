@@ -49,6 +49,23 @@ _.ExpansionFeatures =
 							["description"] = "Requires Renown 56.",
 							["questID"] = 64136,
 						}),
+						n(LEGENDARIES, {
+							["description"] = "Requires Renown 48.",
+							["g"] = {
+								i(186566),	-- Memory of the Final Sentence
+								i(187111),	-- Memory of Blind Faith
+								i(186673),	-- Memory of Kindred Affinity
+								i(187229),	-- Memory of the Pact of the Soulstalkers
+								i(186591),	-- Memory of the Harmonic Echo
+								i(187237),	-- Memory of a Call to Arms
+								i(187106),	-- Memory of Divine Resonance
+								i(187163),	-- Memory of the Spheres' Harmony
+								i(186775),	-- Memory of Resounding Clarity
+								i(187259),	-- Memory of the Raging Vesper Vortex
+								i(187225),	-- Memory of the Languishing Soul Detritus
+								i(187511),	-- Memory of Elysian Might
+							},
+						}),
 					}),
 				}),
 			},

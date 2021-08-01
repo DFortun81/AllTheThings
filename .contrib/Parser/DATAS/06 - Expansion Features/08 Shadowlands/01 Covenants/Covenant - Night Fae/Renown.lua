@@ -46,6 +46,23 @@ _.ExpansionFeatures =
 							["description"] = "Requires 56 Renown.",
 							["questID"] = 64078,
 						}),
+						n(LEGENDARIES, {
+							["description"] = "Requires Renown 48.",
+							["g"] = {
+								i(186565),	-- Memory of Rampant Transference
+								i(187109),	-- Memory of a Blazing Slaughter
+								i(186687),	-- Memory of Celestial Spirits
+								i(187231),	-- Memory of the Fragments of the Elder Antlers
+								i(187280),	-- Memory of the Fae Heart
+								i(187258),	-- Memory of the Faeline Harmony
+								i(187132),	-- Memory of the Seasons of Plenty
+								i(187161),	-- Memory of Bwonsamdi's Pact
+								i(186676),	-- Memory of the Toxic Onslaught
+								i(187223),	-- Memory of the Seeds of Rampant Growth
+								i(187227),	-- Memory of the Decaying Soul Satchel
+								i(186576),	-- Memory of Nature's Fury
+							},
+						}),
 					}),
 				}),
 			},
