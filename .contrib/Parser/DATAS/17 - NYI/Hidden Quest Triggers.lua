@@ -3779,8 +3779,6 @@ _.HiddenQuestTriggers = {
 
 		-- Ardenweald
 		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
-		q(61126),	-- Turning in the Twinklestar Gardening Tools during the Cache of the Moon sequence
-		q(61170),	-- triggered when unlocking the Harmonic Chest (looting it has a separate ID, in Achievements file)
 		q(62943),	-- Triggered when looting Crafter's Basket for the Enchanting: Boundless Basket WQ
 		q(62945),	-- Triggered when looting Crafter's Basket for the Inscription: Hymnal of Reprise WQ
 		q(61208),	-- triggered for no reason when i was traveling to the area where the "Swarm Defense" WQ takes place in Ardenweald.  i just went into the area between the main bit of Ardenweald + the Tirna Scythe area and it was like "what's up"
@@ -4347,14 +4345,6 @@ _.HiddenQuestTriggers = {
 		q(63601),	-- this was either learning Aspiring Aspirant's ensemble or pulling a legendary out of the mailbox that i hadn't had bagspace for earlier
 
 		-- Treasures of Korthia achievement
-		q(64244),	-- Korthia treasure - Anima Laden Egg
-		q(64241),	-- Korthia treasure - Dislodged Nest
-		q(64252),	-- Korthia treasure - Displaced Relic
-		q(64234),	-- Korthia treasure - Forgotten Feather
-		q(64222),	-- Korthia treasure - Glittering Nest Material
-		q(64264),	-- Korthia treasure - Infested Vestige
-		q(64238),	-- Korthia treasure - Lost Memento
-		q(64268),	-- Korthia treasure - Offering Box
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
 		q(64044),	-- The Maw repeatable treasure, Stolen Anima Vessel (34.2, 64.6) / (30.6, 58.4)
 	}),

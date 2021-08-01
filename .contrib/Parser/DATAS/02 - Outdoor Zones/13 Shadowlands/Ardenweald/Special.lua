@@ -7,6 +7,54 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
 			n(-77, {	-- Special
+				n(171206, {	-- Playful Vulpin
+					["description"] = "You need to find the Playful Vulpin five times and use the following emotes.\n\n 1. Playful Vulpin begins to dig curiously. |cFFFFFFFF/curious|r\n 2. Playful Vulpin wanders around unable to sit still. |cFFFFFFFF/sit|r\n 3. Playful Vulpin sings all alone. |cFFFFFFFF/sing|r\n 4. Playful Vulpin dances with joy. |cFFFFFFFF/dance|r\n 5. Playful Vulpin sits down lonely and sad. |cFFFFFFFF/pet|r\n\nIt only counts if the Playful Vulpin reacts to your emote and runs away.",
+				--	["questID"] = 61086,
+					["coords"] = {
+						{ 32.0, 43.2, ARDENWEALD },
+						{ 33.0, 43.9, ARDENWEALD },
+						{ 34.1, 44.9, ARDENWEALD },	-- confirmed
+						{ 36.1, 49.6, ARDENWEALD },
+						{ 40.7, 27.4, ARDENWEALD },	-- confirmed
+						{ 40.8, 51.4, ARDENWEALD },
+						{ 41.2, 49.7, ARDENWEALD },
+						{ 43.0, 64.9, ARDENWEALD },
+						{ 44.1, 66.6, ARDENWEALD },
+						{ 46.4, 66.5, ARDENWEALD },
+						{ 48.5, 59.1, ARDENWEALD },
+						{ 50.9, 54.6, ARDENWEALD },	-- confirmed
+						{ 63.2, 26.1, ARDENWEALD },
+						{ 64.3, 29.5, ARDENWEALD },
+						{ 64.9, 22.9, ARDENWEALD },
+						{ 66.4, 31.1, ARDENWEALD },
+						{ 67.1, 28.8, ARDENWEALD },	-- confirmed
+						{ 67.8, 32.0, ARDENWEALD },	-- confirmed
+						{ 69.1, 30.0, ARDENWEALD },
+						{ 70.4, 29.7, ARDENWEALD },
+						{ 72.3, 31.4, ARDENWEALD },
+					},
+					["g"] = {
+						crit(8, {	-- Playful Vulpin Befriended
+							["achievementID"] = 14313,	-- Treasures of Ardenweald
+						}),
+						q(61080, {	-- /curious
+							["name"] = "/curious",
+						}),
+						q(61081, {	-- /sit
+							["name"] = "/sit",
+						}),
+						q(61084, {	-- /sing
+							["name"] = "/sing",
+						}),
+						q(61085, {	-- /dance
+							["name"] = "/dance",
+						}),
+						q(61078, {	-- /pet
+							["name"] = "/pet",
+						}),
+						i(180645),	-- Dodger (PET!)
+					},
+				}),
 				n(-919, {	-- Night Mare
 					["description"] = "Enable Debug Mode to view all the steps.\n\nYou will need at least 2 |cFFFFFFFFGoblin Gliders|r and 10 |cff16bf0dLightless Silk|r.  (I encountered a bug where, until I had more than 10 cloth in my bags, I could not progress to the next step, so you may want to bring a few extra.)\n\nYou will also need to have completed the 'Trouble at the Gormling Corral' and 'Tricky Spriggans' criteria of the |cffffff00Sojourner of Ardenweald|r achievement.  You must also fight a 62 rare elite, so bringing a couple friends along is a good idea.",
 					["icon"] = 3155421,
@@ -30,7 +78,7 @@ _.Zones =
 						}),
 						n(168135, {	-- Night Mare
 							["description"] = "Take the |cff045ab3Dream Catcher|r behind Hibernal Hollow and use it at |cFFFFFFFF62.5, 51.6|r to phase to the Night Mare's realm.",
-							["questID"] = 60306,
+						--	["questID"] = 60306,
 							["isDaily"] = true,
 							["coord"] = { 62.5, 51.6, ARDENWEALD },
 							["g"] = {
@@ -42,25 +90,30 @@ _.Zones =
 						}),
 					},
 				}),
-				--[[
 				n(171699, {	-- Shimmermist Runner
 					["coords"] = {
-						{  31.04, 54.51, ARDENWEALD },	-- start
-						{  29.60, 55.76, ARDENWEALD },	-- 1
-						{  30.02, 57.49, ARDENWEALD },	-- 2
-						{  29.56, 57.91, ARDENWEALD },	-- 3
-						{  29.31, 59.10, ARDENWEALD },	-- 4
-						{  28.82, 58.71, ARDENWEALD },	-- 5
-						{  27.56, 57.85, ARDENWEALD },	-- 6
+						{  31.0, 54.5, ARDENWEALD },	-- start
+						{  29.6, 56.3, ARDENWEALD },	-- 1
+						{  29.8, 57.8, ARDENWEALD },	-- 2
+						{  29.2, 58.5, ARDENWEALD },	-- 3
+						{  28.9, 58.8, ARDENWEALD },	-- 4
+						{  28.1, 58.1, ARDENWEALD },	-- 5
+						{  27.5, 57.8, ARDENWEALD },	-- 6
 					},
-					["description"] = "Enter the Maze in Oaken Assembly on (31.04, 54.51).\n\n On the 1st intersection at (29.60, 55.76) go LEFT/SOUTH-EAST.\n\n On the 2nd intersection at (30.02, 57.49) go RIGHT/SOUTH-WEST.\n\n On the 3rd intersection at (29.56, 57.91) go LEFT/SOUTH.\n\n On the 4th intersection at (29.31, 59.10) go RIGHT/NORTH-WEST.\n\n On the 5th intersection at (28.82, 58.71) go FORWARD/NORTH-WEST.\n\n On the 6th and last intersection at (27.56, 57.85) go LEFT/WEST into the Area.\n\n You can now engage Shizgher.\n\n After defeating Shizgher you can click Shimmermist Runner and the mount Shimmermist Runner will be put in your bag.",
+					["description"] = "To complete the maze correctly, follow the blue lanterns at every step.\n\n1. Enter Mistveil Tangle through the Oaken Assembly at |cFFFFFFFF31.0, 54.5|r.  Two blue lanterns hang on either side of a vine arch.\n\n2. Head down the hill and turn left at |cFFFFFFFF29.6, 56.3|r.  Again, two blue lanterns hang on either side of a vine arch.\n\n3. Turn right at |cFFFFFFFF29.8, 57.8|r.  A single blue lamp hangs from the vine arch.\n\n4. Turn left at |cFFFFFFFF29.2, 58.5|r.  A single blue lamp is on the ground.\n\n5. Immediately turn right through the arch at |cFFFFFFFF28.9, 58.8|r.  A single blue lamp hangs on the left side.\n\n6. Go through the arch at |cFFFFFFFF28.1, 58.1|r.  A single blue lamp is on the ground on the right side of the arch.\n\n7. Go straight to the area on the map where the Tame Gladerunner treasure is displayed.  If you've done the maze correctly Shizgher will not fade out of view.  Defeat him, and then click on the Shimmermist Runner to collect it.",
+				--	["questID"] = 61192,
 					["crs"] = { 171767 },	-- Shizgher
-					["questID"] = 61192,
 					["g"] = {
-						i(180727),		-- Shimmermist Runner
+						i(180727),		-- Shimmermist Runner (MOUNT!)
 					},
-				}),--]]
+				}),
 			}),
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(61086),	-- Playful Vulpin Befriended
+	q(60306),	-- using the Dream Catcher for Night Mare
+	q(61192),	-- Shimmermist Runner tracking quest
 };

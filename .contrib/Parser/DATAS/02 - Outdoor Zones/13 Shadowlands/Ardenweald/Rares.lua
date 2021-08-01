@@ -128,18 +128,19 @@ _.Zones =
 						crit(10, {	-- Hunter Vivanna
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
-						i(183091),	-- Lifewoven Bracelet
-						i(179596),	-- Drust Mask of Dominance
-					--	TODO: the items below also drop from zone treasures, so i'm putting them in Zone Rewards as well.  this is the only rare currently showing as dropping them at all, so for now i'm leaving them on her loot table.  if they wind up being dropped by a kazillion rares in the future we could add that information to the ZR header and remove them from vivanna
+					--	Blue
+						i(179593),	-- Darkreach Mask
+						i(179594),	-- Witherscorn Guise
+					--	Green
 						i(180163),	-- Blackthorn Harvester
 						i(180143),	-- Darkreach Hacker
-						i(179593),	-- Darkreach Mask
 						i(180155),	-- Darkreach Splitter
 						i(180142),	-- Deadstone Hatchet
+						i(179596),	-- Drust Mask of Dominance
 						i(180153),	-- Drustwrought Executioner
 						i(180162),	-- Drustwrought Scythe
+						i(183091),	-- Lifewoven Bracelet
 						i(180156),	-- Witherscorn Greataxe
-						i(179594),	-- Witherscorn Guise
 						i(180145),	-- Witherscorn Handaxe
 						i(180165),	-- Witherscorn Reaper
 					},
@@ -210,23 +211,6 @@ _.Zones =
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
 						i(175729),	-- Rotbriar Sprout
-					},
-				}),
-				n(171699, {	-- Shimmermist Runner
-					["coords"] = {
-						{  31.0, 54.5, ARDENWEALD },	-- start
-						{  29.6, 56.3, ARDENWEALD },	-- 1
-						{  29.8, 57.8, ARDENWEALD },	-- 2
-						{  29.2, 58.5, ARDENWEALD },	-- 3
-						{  28.9, 58.8, ARDENWEALD },	-- 4
-						{  28.1, 58.1, ARDENWEALD },	-- 5
-						{  27.5, 57.8, ARDENWEALD },	-- 6
-					},
-					["description"] = "To complete the maze correctly, follow the blue lanterns at every step.\n\n1. Enter Mistveil Tangle through the Oaken Assembly at |cFFFFFFFF31.0, 54.5|r.  Two blue lanterns hang on either side of a vine arch.\n\n2. Head down the hill and turn left at |cFFFFFFFF29.6, 56.3|r.  Again, two blue lanterns hang on either side of a vine arch.\n\n3. Turn right at |cFFFFFFFF29.8, 57.8|r.  A single blue lamp hangs from the vine arch.\n\n4. Turn left at |cFFFFFFFF29.2, 58.5|r.  A single blue lamp is on the ground.\n\n5. Immediately turn right through the arch at |cFFFFFFFF28.9, 58.8|r.  A single blue lamp hangs on the left side.\n\n6. Go through the arch at |cFFFFFFFF28.1, 58.1|r.  A single blue lamp is on the ground on the right side of the arch.\n\n7. Go straight to the area on the map where the Tame Gladerunner treasure is displayed.  If you've done the maze correctly Shizgher will not fade out of view.  Defeat him, and then click on the Shimmermist Runner to collect it.",
-					["questID"] = 61192,
-					["crs"] = { 171767 },	-- Shizgher
-					["g"] = {
-						i(180727),		-- Shimmermist Runner (MOUNT!)
 					},
 				}),
 				n(164415, {	-- Skuld Vit

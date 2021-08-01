@@ -444,6 +444,16 @@ _.Zones =
 };
 
 _.HiddenQuestTriggers = {
+	-- Treasures of Korthia achievement
+	q(64244),	-- Anima Laden Egg
+	q(64241),	-- Dislodged Nest
+	q(64252),	-- Displaced Relic
+	q(64234),	-- Forgotten Feather
+	q(64222),	-- Glittering Nest Material
+	q(64264),	-- Infested Vestige
+	q(64238),	-- Lost Memento
+	q(64268),	-- Offering Box
+
 	q(64316),	-- 1st loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
 	q(64317),	-- 2nd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
 	q(64318),	-- 3rd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)

@@ -9,11 +9,6 @@ _.Zones =
 			n(-903, {	-- Zone Rewards
 				["description"] = "These items can drop from repeatable treasure chests, wish crickets, and are sometimes awarded from world quests or table missions.",
 				["g"] = {
-					i(180163),	-- Blackthorn Harvester
-					i(179593),	-- Darkreach Mask
-					i(180142),	-- Deadstone Hatchet
-					i(180153),	-- Drustwrought Executioner
-					i(180162),	-- Drustwrought Scythe
 					i(179562),	-- Duskwarder Branch
 					i(179517),	-- Duskwarder Censor
 					i(181433),	-- Duskwarder Gavel
@@ -43,7 +38,6 @@ _.Zones =
 					i(181410),	-- Gormhusk Strikers
 					i(181424),	-- Gormhusk Waistwrap
 					i(181428),	-- Gormhusk Wristguards
-					i(179549),	-- Nightwillow Cudgel
 					i(181458),	-- Queensguard's Vigil
 					i(181406),	-- Runetender Boots
 					i(181429),	-- Runetender Bracers
@@ -66,8 +60,6 @@ _.Zones =
 					i(175740),	-- Valeshroud Torque
 					i(181457),	-- Wakener's Frond
 					i(181459),	-- Withergrove Shardling
-					i(179594),	-- Witherscorn Guise
-					i(180145),	-- Witherscorn Handaxe
 				},
 			}),
 		}),
