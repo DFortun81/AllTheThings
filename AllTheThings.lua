@@ -12508,7 +12508,7 @@ function app:CreateMiniListForGroup(group)
 		end
 
 		-- clone/search initially so as to not let popout operations modify the source data
-		group = CloneData(group);
+		group = CreateObject(group);
 
 		-- being a search result means it has already received certain processing
 		if not group.isSearchResult then
@@ -14484,12 +14484,11 @@ function app:GetDataCache()
 
 		-- Achievements
 		if app.Categories.Achievements then
-			db = {};
+			db = app.CreateNPC(-4);
 			db.g = app.Categories.Achievements;
 			db.expanded = false;
 			db.text = TRACKER_HEADER_ACHIEVEMENTS;
 			db.icon = app.asset("Category_Achievements")
-			db.headerID = -4;
 			table.insert(g, db);
 		end
 
@@ -14514,12 +14513,11 @@ function app:GetDataCache()
 
 		-- Holidays
 		if app.Categories.Holidays then
-			db = {};
+			db = app.CreateNPC(-3);
 			db.g = app.Categories.Holidays;
 			db.icon = app.asset("Category_Holidays");
 			db.expanded = false;
 			db.text = GetItemSubClassInfo(15,3);
-			db.headerID = -3;
 			table.insert(g, db);
 		end
 
@@ -14629,9 +14627,8 @@ function app:GetDataCache()
 
 		-- Factions
 		if app.Categories.Factions then
-			db = {};
+			db = app.CreateNPC(-6013);
 			db.g = app.Categories.Factions;
-			db.headerID = -6013;
 			db.expanded = false;
 			db.text = L["FACTIONS"];
 			db.icon = app.asset("Category_Factions");
