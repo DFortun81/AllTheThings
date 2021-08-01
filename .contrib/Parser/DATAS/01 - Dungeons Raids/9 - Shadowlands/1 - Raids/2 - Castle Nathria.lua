@@ -52,6 +52,105 @@ _.Instances = { tier(SL_TIER, {
 						i(183361),	-- Memory of Spiritwalker's Tidal Totem
 					},
 				}),
+				e(2428, {	-- Hungering Destroyer
+					["crs"] = { 164261 },	-- Hungering Destroyer
+					["g"] = {
+						i(182630),	-- Memory of Gorefiend's Domination
+						i(183391),	-- Memory of The Wall
+					},
+				}),
+				e(2420, {	-- Lady Inerva Darkvein
+					["crs"] = { 165521 },	-- Lady Inerva Darkvein
+					["g"] = {
+						i(183218),	-- Memory of a Fortified Fel Flame
+						i(183240),	-- Memory of the Mother Tree
+					},
+				}),
+				e(2422, {	-- Sun King's Salvation
+					["crs"] = {
+						168973,	-- High Torturer Darithos
+						165759,	-- Kael'thas Sunstrider
+						165805,	-- Shade of Kael'thas
+					},
+					["g"] = {
+						i(183304),	-- Memory of the Shadowbreaker
+						i(183277),	-- Memory of the Sun King
+					},
+				}),
+				e(2418, {	-- Artificer Xy'mox
+					["crs"] = { 166644 },	-- Artificer Xy'mox
+					["g"] = {
+						i(183370),	-- Memory of the Core of the Balespider
+						i(183296),	-- Memory of the Last Emperor
+					},
+				}),
+				e(2426, {	-- The Council of Blood
+					["crs"] = {
+						166971,	-- Castellan Niklaus
+						166970,	-- Lord Stavros
+						166969,	-- Baroness Frieda
+					},
+					["g"] = {
+						i(183334),	-- Memory of the Dashing Scoundrel
+						i(183326),	-- Memory of the Void's Eternal Call
+					},
+				}),
+				e(2394, {	-- Sludgefist
+					["crs"] = { 164407 },	-- Sludgefist
+					["g"] = {
+						i(183318),	-- Memory of a Clear Mind
+						i(183272),	-- Memory of a Siphoning Storm
+						i(183374),	-- Memory of Azj'Aqir's Cinders
+						i(183340),	-- Memory of Greenskin
+						i(182635),	-- Memory of Koltira
+						i(183309),	-- Memory of the Ardent Protector
+						i(183389),	-- Memory of the Berserker's Will
+						i(183233),	-- Memory of the Frenzyband
+						i(183293),	-- Memory of the Morning's Tear
+						i(183356),	-- Memory of the Primal Lava Actuators
+						i(183264),	-- Memory of the Rylakstalker's Strikes
+					},
+				}),
+				e(2425, {	-- Stone Legion Generals
+					["crs"] = {
+						168112,	-- General Kaal
+						168113,	-- General Grashaal
+					},
+					["g"] = {
+						i(183346),	-- Memory of an Ancestral Reminder
+						i(183267),	-- Memory of an Expanded Potential
+						i(183330),	-- Memory of Bloodfang's Essence
+						i(183367),	-- Memory of Demonic Synergy
+						i(182627),	-- Memory of Superstrain
+						i(183213),	-- Memory of the Anguish of the Collective
+						i(183223),	-- Memory of the Circle of Life and Death
+						i(183283),	-- Memory of the Invoker
+						i(183299),	-- Memory of the Sun's Cycles
+						i(183381),	-- Memory of the Tormented Kings
+						i(183316),	-- Memory of the Twins of the Sun Priestess
+						i(183250),	-- Memory of the Wild Call
+					},
+				}),
+				e(2424, {	-- Sire Denathrius
+					["crs"] = {
+						167406,	-- Sire Denathrius
+						168156,	-- Remornia
+					},
+					["g"] = {
+						i(183288),	-- Memory of a Celestial Infusion
+						i(183324),	-- Memory of a Harmonious Apparatus
+						i(183362),	-- Memory of a Malefic Wrath
+						i(183344),	-- Memory of Finality
+						i(183227),	-- Memory of Oneth
+						i(183214),	-- Memory of the Chaos Theory
+						i(182636),	-- Memory of the Deadliest Coil
+						i(183352),	-- Memory of the Demise of Skybreaker
+						i(183256),	-- Memory of the Eredun War Order
+						i(183384),	-- Memory of the Exploiter
+						i(183279),	-- Memory of the Freezing Winds
+						i(183310),	-- Memory of the Vanguard's Momentum
+					},
+				}),
 			}),
 			n(ZONEDROPS, {
 				i(180453, {	-- She Had a Stone Heart
@@ -107,8 +206,6 @@ _.Instances = { tier(SL_TIER, {
 						}),
 						i(183498),	-- Cloaked in Shadows
 						i(181698),	-- Cryo-Freeze
-						i(182630),	-- Memory of Gorefiend's Domination
-						i(183391),	-- Memory of The Wall
 						i(181827),	-- Move with Grace
 						i(181836),	-- Spirit Drain
 						i(181640),	-- Tumbling Technique
@@ -133,8 +230,6 @@ _.Instances = { tier(SL_TIER, {
 						i(182336),	-- Golden Path
 						i(181466),	-- Grounding Breath
 						i(181498),	-- Grounding Surge
-						i(183218),	-- Memory of a Fortified Fel Flame
-						i(183240),	-- Memory of the Mother Tree
 						i(183502),	-- Prepared for All
 						i(181841),	-- Reinforced Shell
 						i(182469),	-- Rejuvenating Wind
@@ -168,8 +263,6 @@ _.Instances = { tier(SL_TIER, {
 						i(182584),	-- Cheetah's Vigor
 						i(182316),	-- Fel Defender
 						i(181975),	-- Hardened Bones
-						i(183304),	-- Memory of the Shadowbreaker
-						i(183277),	-- Memory of the Sun King
 						i(182307),	-- Shielding Words
 						i(182107),	-- Vital Accretion
 						i(183033),	-- Mantle of Manifest Sins
@@ -193,8 +286,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183468),	-- Born Anew
 						i(181837),	-- Clear Mind
 						i(182441),	-- Markman's Advantage
-						i(183370),	-- Memory of the Core of the Balespider
-						i(183296),	-- Memory of the Last Emperor
 						i(183960),	-- Portable Pocket Dimension (BAG!)
 						i(181769),	-- Tempest Barrier
 						i(182987),	-- Breastplate of Cautious Calculation
@@ -221,8 +312,6 @@ _.Instances = { tier(SL_TIER, {
 						i(182461),	-- Echoing Blessings
 						i(183466),	-- Innate Resolve
 						i(180847),	-- Inspiring Presence
-						i(183334),	-- Memory of the Dashing Scoundrel
-						i(183326),	-- Memory of the Void's Eternal Call
 						i(183496),	-- Nimble Fingers
 						i(181842),	-- Power Unto Others
 						i(182325),	-- Ravenous Consumption
@@ -269,17 +358,6 @@ _.Instances = { tier(SL_TIER, {
 						i(181707),	-- Diverted Energy
 						i(182340),	-- Fel Celerity
 						i(181373),	-- Harm Denial
-						i(183318),	-- Memory of a Clear Mind
-						i(183272),	-- Memory of a Siphoning Storm
-						i(183374),	-- Memory of Azj'Aqir's Cinders
-						i(183340),	-- Memory of Greenskin
-						i(182635),	-- Memory of Koltira
-						i(183309),	-- Memory of the Ardent Protector
-						i(183389),	-- Memory of the Berserker's Will
-						i(183233),	-- Memory of the Frenzyband
-						i(183293),	-- Memory of the Morning's Tear
-						i(183356),	-- Memory of the Primal Lava Actuators
-						i(183264),	-- Memory of the Rylakstalker's Strikes
 						i(183499),	-- Quick Decisions
 						i(183467),	-- Tireless Pursuit
 						i(182999),	-- Rampaging Giant's Chestplate
@@ -313,18 +391,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183469),	-- Front of the Pack
 						i(182464),	-- Harmony of the Tortollan
 						i(182133),	-- Insatiable Appetite
-						i(183346),	-- Memory of an Ancestral Reminder
-						i(183267),	-- Memory of an Expanded Potential
-						i(183330),	-- Memory of Bloodfang's Essence
-						i(183367),	-- Memory of Demonic Synergy
-						i(182627),	-- Memory of Superstrain
-						i(183213),	-- Memory of the Anguish of the Collective
-						i(183223),	-- Memory of the Circle of Life and Death
-						i(183283),	-- Memory of the Invoker
-						i(183299),	-- Memory of the Sun's Cycles
-						i(183381),	-- Memory of the Tormented Kings
-						i(183316),	-- Memory of the Twins of the Sun Priestess
-						i(183250),	-- Memory of the Wild Call
 						i(183497),	-- Recuperator
 						i(180842),	-- Stalwart Guardian
 						i(183894, {	-- Thaumaturgic Anima Bead
@@ -363,18 +429,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183044),	-- Kilrogg's Cunning
 						i(182448),	-- Light's Barding
 						i(181840),	-- Light's Inspiration
-						i(183288),	-- Memory of a Celestial Infusion
-						i(183324),	-- Memory of a Harmonious Apparatus
-						i(183362),	-- Memory of a Malefic Wrath
-						i(183344),	-- Memory of Finality
-						i(183227),	-- Memory of Oneth
-						i(183214),	-- Memory of the Chaos Theory
-						i(182636),	-- Memory of the Deadliest Coil
-						i(183352),	-- Memory of the Demise of Skybreaker
-						i(183256),	-- Memory of the Eredun War Order
-						i(183384),	-- Memory of the Exploiter
-						i(183279),	-- Memory of the Freezing Winds
-						i(183310),	-- Memory of the Vanguard's Momentum
 						i(183897, {	-- Mystic Anima Spherule
 							["modID"] = 83,
 						}),
@@ -486,8 +540,6 @@ _.Instances = { tier(SL_TIER, {
 						i(182584),	-- Cheetah's Vigor
 						i(182316),	-- Fel Defender
 						i(181975),	-- Hardened Bones
-						i(183304),	-- Memory of the Shadowbreaker
-						i(183277),	-- Memory of the Sun King
 						i(182307),	-- Shielding Words
 						i(182107),	-- Vital Accretion
 						i(183033),	-- Mantle of Manifest Sins
@@ -512,8 +564,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183468),	-- Born Anew
 						i(181837),	-- Clear Mind
 						i(182441),	-- Markman's Advantage
-						i(183370),	-- Memory of the Core of the Balespider
-						i(183296),	-- Memory of the Last Emperor
 						i(183960),	-- Portable Pocket Dimension (BAG!)
 						i(181769),	-- Tempest Barrier
 						i(182987),	-- Breastplate of Cautious Calculation
@@ -533,8 +583,6 @@ _.Instances = { tier(SL_TIER, {
 						ach(14376),	-- Feed the Beast
 						i(183498),	-- Cloaked in Shadows
 						i(181698),	-- Cryo-Freeze
-						i(182630),	-- Memory of Gorefiend's Domination
-						i(183391),	-- Memory of The Wall
 						i(181827),	-- Move with Grace
 						i(181836),	-- Spirit Drain
 						i(181640),	-- Tumbling Technique
@@ -560,8 +608,6 @@ _.Instances = { tier(SL_TIER, {
 						i(182336),	-- Golden Path
 						i(181466),	-- Grounding Breath
 						i(181498),	-- Grounding Surge
-						i(183218),	-- Memory of a Fortified Fel Flame
-						i(183240),	-- Memory of the Mother Tree
 						i(183502),	-- Prepared for All
 						i(181841),	-- Reinforced Shell
 						i(182469),	-- Rejuvenating Wind
@@ -597,8 +643,6 @@ _.Instances = { tier(SL_TIER, {
 						i(182461),	-- Echoing Blessings
 						i(183466),	-- Innate Resolve
 						i(180847),	-- Inspiring Presence
-						i(183334),	-- Memory of the Dashing Scoundrel
-						i(183326),	-- Memory of the Void's Eternal Call
 						i(183496),	-- Nimble Fingers
 						i(181842),	-- Power Unto Others
 						i(182325),	-- Ravenous Consumption
@@ -626,17 +670,6 @@ _.Instances = { tier(SL_TIER, {
 						i(181707),	-- Diverted Energy
 						i(182340),	-- Fel Celerity
 						i(181373),	-- Harm Denial
-						i(183318),	-- Memory of a Clear Mind
-						i(183272),	-- Memory of a Siphoning Storm
-						i(183374),	-- Memory of Azj'Aqir's Cinders
-						i(183340),	-- Memory of Greenskin
-						i(182635),	-- Memory of Koltira
-						i(183309),	-- Memory of the Ardent Protector
-						i(183389),	-- Memory of the Berserker's Will
-						i(183233),	-- Memory of the Frenzyband
-						i(183293),	-- Memory of the Morning's Tear
-						i(183356),	-- Memory of the Primal Lava Actuators
-						i(183264),	-- Memory of the Rylakstalker's Strikes
 						i(183499),	-- Quick Decisions
 						i(183467),	-- Tireless Pursuit
 						i(182999),	-- Rampaging Giant's Chestplate
@@ -671,18 +704,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183469),	-- Front of the Pack
 						i(182464),	-- Harmony of the Tortollan
 						i(182133),	-- Insatiable Appetite
-						i(183346),	-- Memory of an Ancestral Reminder
-						i(183267),	-- Memory of an Expanded Potential
-						i(183330),	-- Memory of Bloodfang's Essence
-						i(183367),	-- Memory of Demonic Synergy
-						i(182627),	-- Memory of Superstrain
-						i(183213),	-- Memory of the Anguish of the Collective
-						i(183223),	-- Memory of the Circle of Life and Death
-						i(183283),	-- Memory of the Invoker
-						i(183299),	-- Memory of the Sun's Cycles
-						i(183381),	-- Memory of the Tormented Kings
-						i(183316),	-- Memory of the Twins of the Sun Priestess
-						i(183250),	-- Memory of the Wild Call
 						i(183497),	-- Recuperator
 						i(180842),	-- Stalwart Guardian
 						i(183894, {	-- Thaumaturgic Anima Bead
@@ -722,18 +743,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183044),	-- Kilrogg's Cunning
 						i(182448),	-- Light's Barding
 						i(181840),	-- Light's Inspiration
-						i(183288),	-- Memory of a Celestial Infusion
-						i(183324),	-- Memory of a Harmonious Apparatus
-						i(183362),	-- Memory of a Malefic Wrath
-						i(183344),	-- Memory of Finality
-						i(183227),	-- Memory of Oneth
-						i(183214),	-- Memory of the Chaos Theory
-						i(182636),	-- Memory of the Deadliest Coil
-						i(183352),	-- Memory of the Demise of Skybreaker
-						i(183256),	-- Memory of the Eredun War Order
-						i(183384),	-- Memory of the Exploiter
-						i(183279),	-- Memory of the Freezing Winds
-						i(183310),	-- Memory of the Vanguard's Momentum
 						i(183897, {	-- Mystic Anima Spherule
 							["modID"] = 82,
 						}),
@@ -856,8 +865,6 @@ _.Instances = { tier(SL_TIER, {
 						i(182584),	-- Cheetah's Vigor
 						i(182316),	-- Fel Defender
 						i(181975),	-- Hardened Bones
-						i(183304),	-- Memory of the Shadowbreaker
-						i(183277),	-- Memory of the Sun King
 						i(182307),	-- Shielding Words
 						i(182107),	-- Vital Accretion
 						i(183033),	-- Mantle of Manifest Sins
@@ -885,8 +892,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183468),	-- Born Anew
 						i(181837),	-- Clear Mind
 						i(182441),	-- Markman's Advantage
-						i(183370),	-- Memory of the Core of the Balespider
-						i(183296),	-- Memory of the Last Emperor
 						i(183960),	-- Portable Pocket Dimension (BAG!)
 						i(181769),	-- Tempest Barrier
 						i(182987),	-- Breastplate of Cautious Calculation
@@ -909,8 +914,6 @@ _.Instances = { tier(SL_TIER, {
 						ach(14376),	-- Feed the Beast
 						i(183498),	-- Cloaked in Shadows
 						i(181698),	-- Cryo-Freeze
-						i(182630),	-- Memory of Gorefiend's Domination
-						i(183391),	-- Memory of The Wall
 						i(181827),	-- Move with Grace
 						i(181836),	-- Spirit Drain
 						i(181640),	-- Tumbling Technique
@@ -939,8 +942,6 @@ _.Instances = { tier(SL_TIER, {
 						i(182336),	-- Golden Path
 						i(181466),	-- Grounding Breath
 						i(181498),	-- Grounding Surge
-						i(183218),	-- Memory of a Fortified Fel Flame
-						i(183240),	-- Memory of the Mother Tree
 						i(183502),	-- Prepared for All
 						i(181841),	-- Reinforced Shell
 						i(182469),	-- Rejuvenating Wind
@@ -979,8 +980,6 @@ _.Instances = { tier(SL_TIER, {
 						i(182461),	-- Echoing Blessings
 						i(183466),	-- Innate Resolve
 						i(180847),	-- Inspiring Presence
-						i(183334),	-- Memory of the Dashing Scoundrel
-						i(183326),	-- Memory of the Void's Eternal Call
 						i(183496),	-- Nimble Fingers
 						i(181842),	-- Power Unto Others
 						i(182325),	-- Ravenous Consumption
@@ -1011,17 +1010,6 @@ _.Instances = { tier(SL_TIER, {
 						i(181707),	-- Diverted Energy
 						i(182340),	-- Fel Celerity
 						i(181373),	-- Harm Denial
-						i(183318),	-- Memory of a Clear Mind
-						i(183272),	-- Memory of a Siphoning Storm
-						i(183374),	-- Memory of Azj'Aqir's Cinders
-						i(183340),	-- Memory of Greenskin
-						i(182635),	-- Memory of Koltira
-						i(183309),	-- Memory of the Ardent Protector
-						i(183389),	-- Memory of the Berserker's Will
-						i(183233),	-- Memory of the Frenzyband
-						i(183293),	-- Memory of the Morning's Tear
-						i(183356),	-- Memory of the Primal Lava Actuators
-						i(183264),	-- Memory of the Rylakstalker's Strikes
 						i(183499),	-- Quick Decisions
 						i(183467),	-- Tireless Pursuit
 						i(182999),	-- Rampaging Giant's Chestplate
@@ -1059,18 +1047,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183469),	-- Front of the Pack
 						i(182464),	-- Harmony of the Tortollan
 						i(182133),	-- Insatiable Appetite
-						i(183346),	-- Memory of an Ancestral Reminder
-						i(183267),	-- Memory of an Expanded Potential
-						i(183330),	-- Memory of Bloodfang's Essence
-						i(183367),	-- Memory of Demonic Synergy
-						i(182627),	-- Memory of Superstrain
-						i(183213),	-- Memory of the Anguish of the Collective
-						i(183223),	-- Memory of the Circle of Life and Death
-						i(183283),	-- Memory of the Invoker
-						i(183299),	-- Memory of the Sun's Cycles
-						i(183381),	-- Memory of the Tormented Kings
-						i(183316),	-- Memory of the Twins of the Sun Priestess
-						i(183250),	-- Memory of the Wild Call
 						i(183497),	-- Recuperator
 						i(180842),	-- Stalwart Guardian
 						i(183894, {	-- Thaumaturgic Anima Bead
@@ -1117,18 +1093,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183044),	-- Kilrogg's Cunning
 						i(182448),	-- Light's Barding
 						i(181840),	-- Light's Inspiration
-						i(183288),	-- Memory of a Celestial Infusion
-						i(183324),	-- Memory of a Harmonious Apparatus
-						i(183362),	-- Memory of a Malefic Wrath
-						i(183344),	-- Memory of Finality
-						i(183227),	-- Memory of Oneth
-						i(183214),	-- Memory of the Chaos Theory
-						i(182636),	-- Memory of the Deadliest Coil
-						i(183352),	-- Memory of the Demise of Skybreaker
-						i(183256),	-- Memory of the Eredun War Order
-						i(183384),	-- Memory of the Exploiter
-						i(183279),	-- Memory of the Freezing Winds
-						i(183310),	-- Memory of the Vanguard's Momentum
 						i(183897, {	-- Mystic Anima Spherule
 							["modID"] = 84,
 						}),
@@ -1250,8 +1214,6 @@ _.Instances = { tier(SL_TIER, {
 						i(182584),	-- Cheetah's Vigor
 						i(182316),	-- Fel Defender
 						i(181975),	-- Hardened Bones
-						i(183304),	-- Memory of the Shadowbreaker
-						i(183277),	-- Memory of the Sun King
 						i(182307),	-- Shielding Words
 						i(182107),	-- Vital Accretion
 						i(183033),	-- Mantle of Manifest Sins
@@ -1280,8 +1242,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183468),	-- Born Anew
 						i(181837),	-- Clear Mind
 						i(182441),	-- Markman's Advantage
-						i(183370),	-- Memory of the Core of the Balespider
-						i(183296),	-- Memory of the Last Emperor
 						i(183960),	-- Portable Pocket Dimension (BAG!)
 						i(181769),	-- Tempest Barrier
 						i(182987),	-- Breastplate of Cautious Calculation
@@ -1305,8 +1265,6 @@ _.Instances = { tier(SL_TIER, {
 						ach(14376),	-- Feed the Beast
 						i(183498),	-- Cloaked in Shadows
 						i(181698),	-- Cryo-Freeze
-						i(182630),	-- Memory of Gorefiend's Domination
-						i(183391),	-- Memory of The Wall
 						i(181827),	-- Move with Grace
 						i(181836),	-- Spirit Drain
 						i(181640),	-- Tumbling Technique
@@ -1336,8 +1294,6 @@ _.Instances = { tier(SL_TIER, {
 						i(182336),	-- Golden Path
 						i(181466),	-- Grounding Breath
 						i(181498),	-- Grounding Surge
-						i(183218),	-- Memory of a Fortified Fel Flame
-						i(183240),	-- Memory of the Mother Tree
 						i(183502),	-- Prepared for All
 						i(181841),	-- Reinforced Shell
 						i(182469),	-- Rejuvenating Wind
@@ -1377,8 +1333,6 @@ _.Instances = { tier(SL_TIER, {
 						i(182461),	-- Echoing Blessings
 						i(183466),	-- Innate Resolve
 						i(180847),	-- Inspiring Presence
-						i(183334),	-- Memory of the Dashing Scoundrel
-						i(183326),	-- Memory of the Void's Eternal Call
 						i(183496),	-- Nimble Fingers
 						i(181842),	-- Power Unto Others
 						i(182325),	-- Ravenous Consumption
@@ -1410,17 +1364,6 @@ _.Instances = { tier(SL_TIER, {
 						i(181707),	-- Diverted Energy
 						i(182340),	-- Fel Celerity
 						i(181373),	-- Harm Denial
-						i(183318),	-- Memory of a Clear Mind
-						i(183272),	-- Memory of a Siphoning Storm
-						i(183374),	-- Memory of Azj'Aqir's Cinders
-						i(183340),	-- Memory of Greenskin
-						i(182635),	-- Memory of Koltira
-						i(183309),	-- Memory of the Ardent Protector
-						i(183389),	-- Memory of the Berserker's Will
-						i(183233),	-- Memory of the Frenzyband
-						i(183293),	-- Memory of the Morning's Tear
-						i(183356),	-- Memory of the Primal Lava Actuators
-						i(183264),	-- Memory of the Rylakstalker's Strikes
 						i(183499),	-- Quick Decisions
 						i(183467),	-- Tireless Pursuit
 						i(182999),	-- Rampaging Giant's Chestplate
@@ -1459,18 +1402,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183469),	-- Front of the Pack
 						i(182464),	-- Harmony of the Tortollan
 						i(182133),	-- Insatiable Appetite
-						i(183346),	-- Memory of an Ancestral Reminder
-						i(183267),	-- Memory of an Expanded Potential
-						i(183330),	-- Memory of Bloodfang's Essence
-						i(183367),	-- Memory of Demonic Synergy
-						i(182627),	-- Memory of Superstrain
-						i(183213),	-- Memory of the Anguish of the Collective
-						i(183223),	-- Memory of the Circle of Life and Death
-						i(183283),	-- Memory of the Invoker
-						i(183299),	-- Memory of the Sun's Cycles
-						i(183381),	-- Memory of the Tormented Kings
-						i(183316),	-- Memory of the Twins of the Sun Priestess
-						i(183250),	-- Memory of the Wild Call
 						i(183497),	-- Recuperator
 						i(180842),	-- Stalwart Guardian
 						i(183894, {	-- Thaumaturgic Anima Bead
@@ -1523,18 +1454,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183044),	-- Kilrogg's Cunning
 						i(182448),	-- Light's Barding
 						i(181840),	-- Light's Inspiration
-						i(183288),	-- Memory of a Celestial Infusion
-						i(183324),	-- Memory of a Harmonious Apparatus
-						i(183362),	-- Memory of a Malefic Wrath
-						i(183344),	-- Memory of Finality
-						i(183227),	-- Memory of Oneth
-						i(183214),	-- Memory of the Chaos Theory
-						i(182636),	-- Memory of the Deadliest Coil
-						i(183352),	-- Memory of the Demise of Skybreaker
-						i(183256),	-- Memory of the Eredun War Order
-						i(183384),	-- Memory of the Exploiter
-						i(183279),	-- Memory of the Freezing Winds
-						i(183310),	-- Memory of the Vanguard's Momentum
 						i(183897, {	-- Mystic Anima Spherule
 							["modID"] = 85,
 						}),
