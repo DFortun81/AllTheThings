@@ -371,8 +371,18 @@ _.Zones =
 					["provider"] = { "n", 173350 },	-- Ba'vol
 					["coord"] = { 64.4, 35.8, ORIBOS },
 					["g"] = {
+						i(183251),	-- Memory of a Craven Strategem
 						i(183224),	-- Memory of a Deep Focus Draught
+						i(183210),	-- Memory of a Fel Bombardment
+						i(183348),	-- Memory of Deeply Rooted Elements
+						i(183284),	-- Memory of Escaping from Reality
+						i(183315),	-- Memory of Measured Contemplation	
+						i(183366),	-- Memory of the Claw of Endereth
+						i(183298),	-- Memory of the Mad Paragon
+						i(183379),	-- Memory of the Misshapen Mirror
+						i(182626),	-- Memory of the Phearomones
 						i(183269),	-- Memory of the Triune Ward
+						i(183333),	-- Memory of Tiny Toxic Blade
 					},
 				}),
 				q(61558, {	-- The Highlord's Vision
