@@ -224,35 +224,6 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(185049),	-- Saurolisk Soul (AV)
-
-				-- TODO: are legendaries specific to Zone/Level/Floor? categorize?
-
-				-- Fracture Chambers 3
-				i(183291),	-- Memory of Yu'lon [Monk]
-				i(183327),	-- Memory of the Painbreaker Psalm [Priest]
-
-				-- Mortregar 3
-				i(183281),	-- Memory of Slick Ice [Mage]
-				i(183262),	-- Memory of the Butcher's Bone Fragments [Hunter]
-				i(183320),	-- Memory of the Kiss of Death [Priest]
-				i(183286),	-- Memory of Shadohao [Monk]
-				i(183357),	-- Memory of the Witch Doctor [Shaman]
-
-				-- Skodus Hall 3
-				i(183254),	-- Memory of a Dire Command [Hunter]
-				i(183359),	-- Memory of Jonat [Shaman]
-
-				-- Skodus Hall 6
-				i(183247),	-- Memory of a Stable Phantasma Lure [ALL]
-				i(183230, {	-- Memory of the Apex Predator [Druid]
-					["crs"] = {
-						171422,	-- Arch-Suppressor Laguas
-						155945,	-- Gherus the Chained
-						170418,	-- Goxul the Devourer
-						157122,	-- Patrician Cromwell
-						159190,	-- Synod
-					},
-				}),
 			}),
 		}),
 	}),

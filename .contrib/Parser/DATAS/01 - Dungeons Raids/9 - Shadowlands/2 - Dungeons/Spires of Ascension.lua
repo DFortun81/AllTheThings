@@ -49,8 +49,8 @@ _.Instances = { tier(SL_TIER, {
 				e(2416, {	-- Ventunax
 					["crs"] = { 162058 },	-- Ventunax
 					["g"] = {
-						i(183313),	-- Memory of the Lightbringer's Tempest
-						i(183392),	-- Memory of the Thunderlord
+						i(183338),	-- Memory of Celerity
+						i(183365),	-- Memory of the Consuming Wrath
 					},
 				}),
 				e(2414, {	-- Oryphrion
