@@ -20,6 +20,33 @@ _.Instances = { tier(SL_TIER, {
 					["_drop"] = { "g" },	-- ignore Anima item that insists on being part of this quest
 				}),
 			}),
+			n(LEGENDARIES, {
+				e(2409, {	-- The Manastorms
+					["crs"] = {
+						164556,	-- Millhouse Manastorm
+						164555,	-- Millificent Manastorm
+					},
+					["g"] = {
+						i(183216),	-- Memory of a Burning Wound
+						i(183271),	-- Memory of the Infinite Arcane
+						i(183369),	-- Memory of Wilfred's Sigil of Superior Summoning
+					},
+				}),
+				e(2398, {	-- Dealer Xy'exa
+					["crs"] = { 164450 },	-- Millificent Manastorm
+					["g"] = {
+						i(183265),	-- Memory of a Wildfire Cluster
+					},
+				}),
+				e(2410, {	--	Mueh'zala
+					["crs"] = { 166608 },	--	Mueh'zala
+					["g"] = {
+						i(183329),	-- Memory of a Prism of Shadow and Fire
+						i(183282),	-- Memory of the Fatal Touch
+						i(183350),	-- Memory of the Great Sundering
+					},
+				}),
+			}),
 			d(1, {	-- Normal
 				e(2408, {	-- Hakkar the Soulflayer
 					["crs"] = { 164558 },	-- Hakkar the Soulflayer
@@ -46,9 +73,6 @@ _.Instances = { tier(SL_TIER, {
 					["g"] = {
 						i(181509),	-- Arcane Prodigy
 						i(182748),	-- Borne of Blood
-						i(183216),	-- Memory of a Burning Wound
-						i(183271),	-- Memory of the Infinite Arcane
-						i(183369),	-- Memory of Wilfred's Sigil of Superior Summoning
 						i(179339),	-- Whizblast Walking Stick
 						i(179340),	-- Supercollider
 						i(179335),	-- Manastorm's Magnificent Threads
@@ -62,7 +86,6 @@ _.Instances = { tier(SL_TIER, {
 					["crs"] = { 164450 },	-- Millificent Manastorm
 					["g"] = {
 						i(183396),	-- Flame Infusion
-						i(183265),	-- Memory of a Wildfire Cluster
 						i(182624),	-- Show of Force
 						i(183509),	-- Sleight of Hand
 						i(179347),	-- Collector's Pulse Staff
@@ -84,9 +107,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183490),	-- Floral Recycling
 						i(182145),	-- Heavy Rainfall
 						i(181376),	-- Inner Fury
-						i(183329),	-- Memory of a Prism of Shadow and Fire
-						i(183282),	-- Memory of the Fatal Touch
-						i(183350),	-- Memory of the Great Sundering
 						i(182138),	-- Mind Devourer
 						i(182684),	-- Resolute Defender
 						i(182736),	-- Rolling Agony
@@ -127,9 +147,6 @@ _.Instances = { tier(SL_TIER, {
 						["g"] = {
 							i(181509),	-- Arcane Prodigy
 							i(182748),	-- Borne of Blood
-							i(183216),	-- Memory of a Burning Wound
-							i(183271),	-- Memory of the Infinite Arcane
-							i(183369),	-- Memory of Wilfred's Sigil of Superior Summoning
 							i(179339),	-- Whizblast Walking Stick
 							i(179340),	-- Supercollider
 							i(179335),	-- Manastorm's Magnificent Threads
@@ -143,7 +160,6 @@ _.Instances = { tier(SL_TIER, {
 						["crs"] = { 164450 },	-- Millificent Manastorm
 						["g"] = {
 							i(183396),	-- Flame Infusion
-							i(183265),	-- Memory of a Wildfire Cluster
 							i(182624),	-- Show of Force
 							i(183509),	-- Sleight of Hand
 							i(179347),	-- Collector's Pulse Staff
@@ -165,9 +181,6 @@ _.Instances = { tier(SL_TIER, {
 							i(183490),	-- Floral Recycling
 							i(182145),	-- Heavy Rainfall
 							i(181376),	-- Inner Fury
-							i(183329),	-- Memory of a Prism of Shadow and Fire
-							i(183282),	-- Memory of the Fatal Touch
-							i(183350),	-- Memory of the Great Sundering
 							i(182138),	-- Mind Devourer
 							i(182684),	-- Resolute Defender
 							i(182736),	-- Rolling Agony
@@ -214,9 +227,6 @@ _.Instances = { tier(SL_TIER, {
 							ach(14374),	-- Couple's Therapy
 							i(181509),	-- Arcane Prodigy
 							i(182748),	-- Borne of Blood
-							i(183216),	-- Memory of a Burning Wound
-							i(183271),	-- Memory of the Infinite Arcane
-							i(183369),	-- Memory of Wilfred's Sigil of Superior Summoning
 							i(179339),	-- Whizblast Walking Stick
 							i(179340),	-- Supercollider
 							i(179335),	-- Manastorm's Magnificent Threads
@@ -231,7 +241,6 @@ _.Instances = { tier(SL_TIER, {
 						["g"] = {
 							ach(14606),	-- Thinking with...
 							i(183396),	-- Flame Infusion
-							i(183265),	-- Memory of a Wildfire Cluster
 							i(182624),	-- Show of Force
 							i(183509),	-- Sleight of Hand
 							i(179347),	-- Collector's Pulse Staff
@@ -253,9 +262,6 @@ _.Instances = { tier(SL_TIER, {
 							i(183490),	-- Floral Recycling
 							i(182145),	-- Heavy Rainfall
 							i(181376),	-- Inner Fury
-							i(183329),	-- Memory of a Prism of Shadow and Fire
-							i(183282),	-- Memory of the Fatal Touch
-							i(183350),	-- Memory of the Great Sundering
 							i(186998),	-- Pattern: Pallid Oracle Bones
 							i(182138),	-- Mind Devourer
 							i(182684),	-- Resolute Defender
