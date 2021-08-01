@@ -1244,6 +1244,12 @@ app.L = {
 		[-978] = 651097,																	-- The Rift
 		[-980] = 133650,																	-- Shared Treasures
 		[-981] = 3601566,																	-- Conduits
+		[-982] = 2178518,																	-- Skoldus Hall
+		[-983] = 1392920,																	-- Fracture Chambers
+		[-984] = 1392929,																	-- The Soulforges
+		[-985] = 1392911,																	-- Coldheart Interstitia
+		[-986] = 2178500,																	-- Mort'regar
+		[-987] = 2178509,																	-- The Upper Reaches
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -2082,7 +2088,15 @@ app.L = {
 		[-969] = "Set B",														-- Set B
 		[-970] = "Set C",														-- Set C
 		[-971] = "Set D",														-- Set D
-
+	-- SL Torghast
+		[-982] = "Skoldus Hall",
+		[-983] = "Fracture Chambers",
+		[-984] = "The Soulforges",
+		[-985] = "Coldheart Interstitia",
+		[-986] = "Mort'regar",
+		[-987] = "The Upper Reaches",
+		
+		
 		[-976] = "Korthian Sets",												-- Korthian Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
