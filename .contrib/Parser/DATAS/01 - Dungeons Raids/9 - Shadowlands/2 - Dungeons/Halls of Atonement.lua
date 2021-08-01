@@ -13,7 +13,35 @@ _.Instances = { tier(SL_TIER, {
 		["lvl"] = { 50 },
 		["g"] = {
 			n(QUESTS, {
-				-- don't delete this section
+				-- don't delete this section	-- why?
+			}),
+			n(LEGENDARIES, {
+				e(2406, {	-- Halkias
+					["crs"] = { 165408 },	-- Halkias
+					["g"] = {
+						i(183380),	-- Memory of a Seismic Reverberation
+						i(182629),	-- Memory of the Crimson Runes
+					},
+				}),
+				e(2387, {	-- Echelon
+					["crs"] = { 164185 },	-- Echelon
+					["g"] = {
+						i(183349),	-- Memory of the Deeptremor Stone
+					},
+				}),
+				e(2411, {	-- High Adjudicator Aleez
+					["crs"] = { 165410 },	-- High Adjudicator Aleez
+					["g"] = {
+						i(183306),	-- Memory of the Righteous Bulwark
+					},
+				}),
+				e(2413, {	--	Lord Chamberlain
+					["crs"] = { 164218 },	--	Lord Chamberlain
+					["g"] = {
+						i(183241),	-- Memory of the Dark Titan
+						i(183275),	-- Memory of the Firestorm
+					},
+				}),
 			}),
 			d(1, {	-- Normal
 				e(2406, {	-- Halkias
@@ -22,8 +50,6 @@ _.Instances = { tier(SL_TIER, {
 						i(181848),	-- Accelerated Cold
 						i(181845),	-- Exaltation
 						i(181736),	-- Flame Accretion
-						i(183380),	-- Memory of a Seismic Reverberation
-						i(182629),	-- Memory of the Crimson Runes
 						i(182681),	-- Vengeful Shock
 						i(178817),	-- Hood of Refracted Shadows
 						i(178827),	-- Sin Stained Pendant
@@ -38,7 +64,6 @@ _.Instances = { tier(SL_TIER, {
 						i(183511),	-- Deeper Daggers
 						i(181735),	-- Hack and Slash
 						i(183487),	-- Layered Mane
-						i(183349),	-- Memory of the Deeptremor Stone
 						i(182127),	-- Shake the Foundations
 						i(183184),	-- Stinging Strike
 						i(178834),	-- Stoneguardian's Morningstar
@@ -53,7 +78,6 @@ _.Instances = { tier(SL_TIER, {
 					["crs"] = { 165410 },	-- High Adjudicator Aleez
 					["g"] = {
 						i(181963),	-- Blood Bond
-						i(183306),	-- Memory of the Righteous Bulwark
 						i(181505),	-- Resplendent Mist
 						i(181867),	-- Swift Penitence
 						i(182675),	-- Untempered Dedication
@@ -71,8 +95,6 @@ _.Instances = { tier(SL_TIER, {
 						ach(14370),	-- Halls of Atonement
 						i(182598),	-- Demon Muzzle
 						i(181461),	-- Ice Bite
-						i(183241),	-- Memory of the Dark Titan
-						i(183275),	-- Memory of the Firestorm
 						i(183477),	-- Precise Alignment
 						i(181944),	-- Resonant Words
 						i(182751),	-- Tyrant's Soul
@@ -94,8 +116,6 @@ _.Instances = { tier(SL_TIER, {
 							i(181848),	-- Accelerated Cold
 							i(181845),	-- Exaltation
 							i(181736),	-- Flame Accretion
-							i(183380),	-- Memory of a Seismic Reverberation
-							i(182629),	-- Memory of the Crimson Runes
 							i(182681),	-- Vengeful Shock
 							i(178817),	-- Hood of Refracted Shadows
 							i(178827),	-- Sin Stained Pendant
@@ -110,7 +130,6 @@ _.Instances = { tier(SL_TIER, {
 							i(183511),	-- Deeper Daggers
 							i(181735),	-- Hack and Slash
 							i(183487),	-- Layered Mane
-							i(183349),	-- Memory of the Deeptremor Stone
 							i(182127),	-- Shake the Foundations
 							i(183184),	-- Stinging Strike
 							i(178834),	-- Stoneguardian's Morningstar
@@ -125,7 +144,6 @@ _.Instances = { tier(SL_TIER, {
 						["crs"] = { 165410 },	-- High Adjudicator Aleez
 						["g"] = {
 							i(181963),	-- Blood Bond
-							i(183306),	-- Memory of the Righteous Bulwark
 							i(181505),	-- Resplendent Mist
 							i(181867),	-- Swift Penitence
 							i(182675),	-- Untempered Dedication
@@ -143,8 +161,6 @@ _.Instances = { tier(SL_TIER, {
 							ach(14410),	-- Heroic: Halls of Atonement
 							i(182598),	-- Demon Muzzle
 							i(181461),	-- Ice Bite
-							i(183241),	-- Memory of the Dark Titan
-							i(183275),	-- Memory of the Firestorm
 							i(183477),	-- Precise Alignment
 							i(181944),	-- Resonant Words
 							i(182751),	-- Tyrant's Soul
@@ -169,8 +185,6 @@ _.Instances = { tier(SL_TIER, {
 							i(181848),	-- Accelerated Cold
 							i(181845),	-- Exaltation
 							i(181736),	-- Flame Accretion
-							i(183380),	-- Memory of a Seismic Reverberation
-							i(182629),	-- Memory of the Crimson Runes
 							i(182681),	-- Vengeful Shock
 							i(178817),	-- Hood of Refracted Shadows
 							i(178827),	-- Sin Stained Pendant
@@ -186,7 +200,6 @@ _.Instances = { tier(SL_TIER, {
 							i(183511),	-- Deeper Daggers
 							i(181735),	-- Hack and Slash
 							i(183487),	-- Layered Mane
-							i(183349),	-- Memory of the Deeptremor Stone
 							i(182127),	-- Shake the Foundations
 							i(183184),	-- Stinging Strike
 							i(178834),	-- Stoneguardian's Morningstar
@@ -201,7 +214,6 @@ _.Instances = { tier(SL_TIER, {
 						["crs"] = { 165410 },	-- High Adjudicator Aleez
 						["g"] = {
 							i(181963),	-- Blood Bond
-							i(183306),	-- Memory of the Righteous Bulwark
 							i(181505),	-- Resplendent Mist
 							i(181867),	-- Swift Penitence
 							i(182675),	-- Untempered Dedication
@@ -220,8 +232,6 @@ _.Instances = { tier(SL_TIER, {
 							ach(14352),	-- Nobody Puts Denathrius in a Corner
 							i(182598),	-- Demon Muzzle
 							i(181461),	-- Ice Bite
-							i(183241),	-- Memory of the Dark Titan
-							i(183275),	-- Memory of the Firestorm
 							i(183477),	-- Precise Alignment
 							i(181944),	-- Resonant Words
 							i(182751),	-- Tyrant's Soul
