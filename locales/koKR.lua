@@ -1165,7 +1165,9 @@ for key,value in pairs({
 	[6751] = "이상한 열매의 식물",	-- Strange Fruited Plant
 	[6752] = "이상한 잎의 식물",	-- Strange Fronded Plant	--TODO: This was taken from classic Wowhead
 	[7510] = "싹튼 잎",	-- Sprouted Frond	--TODO: This was taken from classic Wowhead
+	[19022] = "낡은 궤짝",	-- Worn Chest
 	[19023] = "|cFFFFFFFFStep 7:|r 2351쪽",	-- |cFFFFFFFFStep 7:|r Page 2351
+	[19024] = "숨겨진 제단",	-- Hidden Shrine
 	[20805] = "아무도 지키지 않는 리즐의 설계도",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "푸석푸석한 흙더미",	-- Loose Dirt
 	[20992] = "검은 방패",	-- Black Shield
@@ -1224,6 +1226,8 @@ for key,value in pairs({
 	[177787] = "랙모어의 기록",	-- Rackmore's Log
 	[177904] = "현상 수배: 베스셀레스",	-- Wanted Poster: Besseleth
 	[177964] = "심연의 돌",	-- Fathom Stone
+	[178144] = "트롤 궤짝",	-- Troll Chest
+	[178227] = "머구트의 토템 광주리",	-- Murgut's Totem Basket
 	[179485] = "부서진 함정",	-- A Broken Trap
 	[179501] = "노트 팀블잭의 은닉품",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "고르독 공물",	-- Gordok Tribute Chest
@@ -1234,6 +1238,9 @@ for key,value in pairs({
 	[180366] = "찌그러진 낚시상자",	-- Battered Tackle Box	--TODO: This was taken from classic Wowhead
 	[180368] = "광기의 서판",	-- Tablet of Madness	--TODO: This was taken from classic Wowhead
 	[180448] = "현상 수배: 죽음의 갈고리",	-- Wanted Poster: Deathclasp
+	[180456] = "하급 바람의 돌",	-- Lesser Wind Stone
+	[180461] = "바람의 돌",	-- Wind Stone
+	[180466] = "상급 바람의 돌",	-- Greater Wind Stone
 	[180503] = "모래투성이 요리책",	-- Sandy Cookbook
 	[180633] = "눈물의 결정",	-- Crystalline Tear
 	[180642] = "눈에 띄지 않는 궤짝",	-- Inconspicuous Crate
@@ -1248,12 +1255,6 @@ for key,value in pairs({
 	[181147] = "현상 수배 전단",	-- Wanted Poster
 	[181150] = "먼지투성이 일지",	-- Dusty Journal
 	[181153] = "현상 수배 전단: 사악한 켈가쉬",	-- Wanted Poster: Kel'gash the Wicked
-	[181332] = "스톰윈드 불꽃",	-- Flame of Stormwind
-	[181333] = "아이언포지의 불꽃",	-- Flame of Ironforge	--TODO: This was taken from classic Wowhead
-	[181334] = "다르나서스 불꽃",	-- Flame of Darnassus
-	[181335] = "언더시티의 불꽃",	-- Flame of the Undercity	--TODO: This was taken from classic Wowhead
-	[181336] = "오그리마 불꽃",	-- Flame of Orgrimmar
-	[181337] = "썬더 블러프 불꽃",	-- Flame of Thunder Bluff
 	[181638] = "현상 수배 전단",	-- Wanted Poster
 	[181748] = "핏빛 수정",	-- Blood Crystal
 	[181756] = "닳아해진 고대 책",	-- Battered Ancient Book
@@ -1346,8 +1347,6 @@ for key,value in pairs({
 	[187972] = "호드 화톳불",	-- Horde Bonfire
 	[187975] = "호드 화톳불",	-- Horde Bonfire
 	[188085] = "역병에 오염된 곡식",	-- Plagued Grain
-	--TODO: [188128] = "Flame of the Exodar",	-- Flame of the Exodar
-	--TODO: [188129] = "Flame of Silvermoon",	-- Flame of Silvermoon
 	[188261] = "닳아해진 일지",	-- Battered Journal
 	[188364] = "부서진 게 덫",	-- Wrecked Crab Trap
 	[188365] = "선조의 심장",	-- Heart of the Ancients
@@ -2955,6 +2954,14 @@ for key,value in pairs({
 	[368668] = "꼬마 누더기의 하체",	-- Lil'Abom's Trunk
 	[368772] = "인장이 들어간 두루마리",	-- Sigilscored Scroll
 	[368876] = "나락살이 보관함",	-- Mawsworn Cache
+	[368935] = "죄악의 몰락지 비명박쥐 우리",	-- Sinfall Screecher Cage
+	[368946] = "도둑맞은 령 용기",	-- Stolen Anima Vessel
+	[368948] = "도둑맞은 령 용기",	-- Stolen Anima Vessel
+	[368949] = "도둑맞은 령 용기",	-- Stolen Anima Vessel
+	[368950] = "도둑맞은 령 용기",	-- Stolen Anima Vessel
+	[368951] = "도둑맞은 령 용기",	-- Stolen Anima Vessel
+	[368952] = "도둑맞은 령 용기",	-- Stolen Anima Vessel
+	[368953] = "도둑맞은 령 용기",	-- Stolen Anima Vessel
 	[369129] = "닐간니흐마트의 황금 고리",	-- Nilganihmaht's Gold Band
 	[369132] = "지배의 봉인 궤짝",	-- Domination Sealed Chest
 	[369133] = "지배의 봉인 #1",	-- Domination Seal #1
@@ -2975,7 +2982,10 @@ for key,value in pairs({
 	[369216] = "저승살이 궤짝",	-- Helsworn Chest
 	[369224] = "에제키엘의 보석 박힌 심장",	-- Jeweled Heart of Ezekiel
 	[369225] = "감염된 잔재",	-- Infested Vestige
+	[369227] = "도둑맞은 령 용기",	-- Stolen Anima Vessel
 	[369232] = "공물 상자",	-- Offering Box
+	[369235] = "도둑맞은 령 용기",	-- Stolen Anima Vessel
+	[369236] = "도둑맞은 령 용기",	-- Stolen Anima Vessel
 	[369245] = "코르시아 유물 상자",	-- Korthian Relic Box
 	[369292] = "유물 보관함",	-- Relic Cache
 	[369296] = "파편가죽 은닉처",	-- Shardhide Stash

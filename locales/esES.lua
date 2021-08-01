@@ -1165,7 +1165,9 @@ for key,value in pairs({
 	[6751] = "Planta con extraños frutos",	-- Strange Fruited Plant
 	[6752] = "Planta con extrañas hojas",	-- Strange Fronded Plant
 	[7510] = "Fronda crecida",	-- Sprouted Frond
+	[19022] = "Cofre desgastado",	-- Worn Chest
 	[19023] = "|cFFFFFFFFStep 7:|r Página 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
+	[19024] = "Santuario Oculto",	-- Hidden Shrine
 	[20805] = "Planes sin vigilancia de Rizzle",	-- Rizzle's Unguarded Plans
 	[20985] = "Tierra esparcida",	-- Loose Dirt
 	[20992] = "Escudo negro",	-- Black Shield
@@ -1224,6 +1226,8 @@ for key,value in pairs({
 	[177787] = "Cuaderno de bitácora de Masatormento",	-- Rackmore's Log
 	[177904] = "Cartel de Se busca: Besseleth",	-- Wanted Poster: Besseleth
 	[177964] = "Piedra de las profundidades",	-- Fathom Stone
+	[178144] = "Cofre trol",	-- Troll Chest
+	[178227] = "Cesta de tótems de Murgut",	-- Murgut's Totem Basket
 	[179485] = "Trampa rota",	-- A Broken Trap
 	[179501] = "Alijo de Knot Thimblejack",	-- Knot Thimblejack's Cache
 	[179564] = "Tributo a Gordok",	-- Gordok Tribute Chest
@@ -1234,6 +1238,9 @@ for key,value in pairs({
 	[180366] = "Caja de aparejos maltrecha",	-- Battered Tackle Box
 	[180368] = "Tablilla de Locura",	-- Tablet of Madness
 	[180448] = "Cartel de Se busca: Pinzamorten",	-- Wanted Poster: Deathclasp
+	[180456] = "Piedra de viento inferior",	-- Lesser Wind Stone
+	[180461] = "Piedra de viento",	-- Wind Stone
+	[180466] = "Piedra de viento superior",	-- Greater Wind Stone
 	[180503] = "Libro de cocina de Sandy",	-- Sandy Cookbook
 	[180633] = "Lágrima cristalina",	-- Crystalline Tear
 	[180642] = "Cajón inadvertido",	-- Inconspicuous Crate
@@ -1248,12 +1255,6 @@ for key,value in pairs({
 	[181147] = "Cartel de Se busca",	-- Wanted Poster
 	[181150] = "Diario polvoriento",	-- Dusty Journal
 	[181153] = "Cartel de Se busca: Kel'gash el Malvado",	-- Wanted Poster: Kel'gash the Wicked
-	[181332] = "Llama de Ventormenta",	-- Flame of Stormwind
-	[181333] = "Llama de Forjaz",	-- Flame of Ironforge
-	[181334] = "Llama de Darnassus",	-- Flame of Darnassus
-	[181335] = "Llama de Entrañas",	-- Flame of the Undercity
-	[181336] = "Llama de Orgrimmar",	-- Flame of Orgrimmar
-	[181337] = "Llama de Cima del Trueno",	-- Flame of Thunder Bluff
 	[181638] = "Cartel de Se busca",	-- Wanted Poster
 	[181748] = "Cristal de sangre",	-- Blood Crystal
 	[181756] = "Libro antiguo maltrecho",	-- Battered Ancient Book
@@ -1346,8 +1347,6 @@ for key,value in pairs({
 	[187972] = "Fogata de la Horda",	-- Horde Bonfire
 	[187975] = "Fogata de la Horda",	-- Horde Bonfire
 	[188085] = "Grano apestado",	-- Plagued Grain
-	[188128] = "Llama de El Exodar",	-- Flame of the Exodar
-	[188129] = "Llama de Lunargenta",	-- Flame of Silvermoon
 	[188261] = "Diario maltrecho",	-- Battered Journal
 	[188364] = "Trampa para cangrejos destrozada",	-- Wrecked Crab Trap
 	[188365] = "Corazón de los ancestros",	-- Heart of the Ancients
@@ -2955,6 +2954,14 @@ for key,value in pairs({
 	[368668] = "Tronco de la pequeña abominación",	-- Lil'Abom's Trunk
 	[368772] = "Pergamino con marca de sigilo",	-- Sigilscored Scroll
 	[368876] = "Alijo jurafauces",	-- Mawsworn Cache
+	[368935] = "Jaula de estridador del Salto del Pecado",	-- Sinfall Screecher Cage
+	[368946] = "Receptáculo de ánima robado",	-- Stolen Anima Vessel
+	[368948] = "Receptáculo de ánima robado",	-- Stolen Anima Vessel
+	[368949] = "Receptáculo de ánima robado",	-- Stolen Anima Vessel
+	[368950] = "Receptáculo de ánima robado",	-- Stolen Anima Vessel
+	[368951] = "Receptáculo de ánima robado",	-- Stolen Anima Vessel
+	[368952] = "Receptáculo de ánima robado",	-- Stolen Anima Vessel
+	[368953] = "Receptáculo de ánima robado",	-- Stolen Anima Vessel
 	[369129] = "Sortija de oro de Nilganihmaht",	-- Nilganihmaht's Gold Band
 	[369132] = "Cofre sellado de dominación",	-- Domination Sealed Chest
 	[369133] = "Sello de dominación #1",	-- Domination Seal #1
@@ -2975,7 +2982,10 @@ for key,value in pairs({
 	[369216] = "Cofre jurainfierno",	-- Helsworn Chest
 	[369224] = "Corazón enjoyado de Ezekiel",	-- Jeweled Heart of Ezekiel
 	[369225] = "Vestigio infectado",	-- Infested Vestige
+	[369227] = "Receptáculo de ánima robado",	-- Stolen Anima Vessel
 	[369232] = "Caja de ofrendas",	-- Offering Box
+	[369235] = "Receptáculo de ánima robado",	-- Stolen Anima Vessel
+	[369236] = "Receptáculo de ánima robado",	-- Stolen Anima Vessel
 	[369245] = "Caja de reliquias korthiana",	-- Korthian Relic Box
 	[369292] = "Alijo de reliquias",	-- Relic Cache
 	[369296] = "Alijo de pellejosquirla",	-- Shardhide Stash

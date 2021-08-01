@@ -1165,7 +1165,9 @@ for key,value in pairs({
 	[6751] = "Sonderbare fruchtbeladene Pflanze",	-- Strange Fruited Plant
 	[6752] = "Sonderbare wedelbestückte Pflanze",	-- Strange Fronded Plant
 	[7510] = "Sprießender Wedel",	-- Sprouted Frond
+	[19022] = "Abgenutzte Truhe",	-- Worn Chest
 	[19023] = "|cFFFFFFFFSchritt 7:|r Seite 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
+	[19024] = "Verborgener Schrein",	-- Hidden Shrine
 	[20805] = "Rizzels Pläne",	-- Rizzle's Unguarded Plans
 	[20985] = "Lockere Erde",	-- Loose Dirt
 	[20992] = "Schwarzer Schild",	-- Black Shield
@@ -1224,6 +1226,8 @@ for key,value in pairs({
 	[177787] = "Rackmores Logbuch",	-- Rackmore's Log
 	[177904] = "Steckbrief: Besseleth",	-- Wanted Poster: Besseleth
 	[177964] = "Tiefenstein",	-- Fathom Stone
+	[178144] = "Trolltruhe",	-- Troll Chest
+	[178227] = "Murguts Totemkorb",	-- Murgut's Totem Basket
 	[179485] = "Beschädigte Falle",	-- A Broken Trap
 	[179501] = "Knot Zwingschraubs Behälter",	-- Knot Thimblejack's Cache
 	[179564] = "Tribut der Gordok",	-- Gordok Tribute Chest
@@ -1234,6 +1238,9 @@ for key,value in pairs({
 	[180366] = "Ramponierter Ausrüstungskasten",	-- Battered Tackle Box
 	[180368] = "Schrifttafel des Wahnsinns",	-- Tablet of Madness
 	[180448] = "Steckbrief: Totenstachel",	-- Wanted Poster: Deathclasp
+	[180456] = "Geringer Windstein",	-- Lesser Wind Stone
+	[180461] = "Windstein",	-- Wind Stone
+	[180466] = "Großer Windstein",	-- Greater Wind Stone
 	[180503] = "Sandiges Kochbuch",	-- Sandy Cookbook
 	[180633] = "Kristallträne",	-- Crystalline Tear
 	[180642] = "Unscheinbare Kiste",	-- Inconspicuous Crate
@@ -1248,12 +1255,6 @@ for key,value in pairs({
 	[181147] = "Steckbrief",	-- Wanted Poster
 	[181150] = "Staubiges Tagebuch",	-- Dusty Journal
 	[181153] = "Gesucht: Kel'gash der Boshafte",	-- Wanted Poster: Kel'gash the Wicked
-	[181332] = "Flamme von Sturmwind",	-- Flame of Stormwind
-	[181333] = "Flamme von Eisenschmiede",	-- Flame of Ironforge
-	[181334] = "Flamme von Darnassus",	-- Flame of Darnassus
-	[181335] = "Flamme von Unterstadt",	-- Flame of the Undercity
-	[181336] = "Flamme von Orgrimmar",	-- Flame of Orgrimmar
-	[181337] = "Flamme von Donnerfels",	-- Flame of Thunder Bluff
 	[181638] = "Steckbrief",	-- Wanted Poster
 	[181748] = "Blutkristall",	-- Blood Crystal
 	[181756] = "Zerfleddertes altes Buch",	-- Battered Ancient Book
@@ -1346,8 +1347,6 @@ for key,value in pairs({
 	[187972] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187975] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[188085] = "Verseuchtes Korn",	-- Plagued Grain
-	[188128] = "Flamme der Exodar",	-- Flame of the Exodar
-	[188129] = "Flamme von Silbermond",	-- Flame of Silvermoon
 	[188261] = "Zerfleddertes Tagebuch",	-- Battered Journal
 	[188364] = "Defekte Krabbenfalle",	-- Wrecked Crab Trap
 	[188365] = "Herz der Uralten",	-- Heart of the Ancients
@@ -2955,6 +2954,14 @@ for key,value in pairs({
 	[368668] = "Minimons Unterkörper",	-- Lil'Abom's Trunk
 	[368772] = "Siegelgezeichnete Schriftrolle",	-- Sigilscored Scroll
 	[368876] = "Schlundgebundene Truhe",	-- Mawsworn Cache
+	[368935] = "Sündensturzkreischerkäfig",	-- Sinfall Screecher Cage
+	[368946] = "Gestohlenes Animagefäß",	-- Stolen Anima Vessel
+	[368948] = "Gestohlenes Animagefäß",	-- Stolen Anima Vessel
+	[368949] = "Gestohlenes Animagefäß",	-- Stolen Anima Vessel
+	[368950] = "Gestohlenes Animagefäß",	-- Stolen Anima Vessel
+	[368951] = "Gestohlenes Animagefäß",	-- Stolen Anima Vessel
+	[368952] = "Gestohlenes Animagefäß",	-- Stolen Anima Vessel
+	[368953] = "Gestohlenes Animagefäß",	-- Stolen Anima Vessel
 	[369129] = "Nilganihmahts Goldband",	-- Nilganihmaht's Gold Band
 	[369132] = "Versiegelte Herrschaftstruhe",	-- Domination Sealed Chest
 	[369133] = "Herrschaftssiegel #1",	-- Domination Seal #1
@@ -2975,7 +2982,10 @@ for key,value in pairs({
 	[369216] = "Helgebundene Truhe",	-- Helsworn Chest
 	[369224] = "Juwelenbesetztes Herz von Ezekiel",	-- Jeweled Heart of Ezekiel
 	[369225] = "Befallener Überrest",	-- Infested Vestige
+	[369227] = "Gestohlenes Animagefäß",	-- Stolen Anima Vessel
 	[369232] = "Opferkiste",	-- Offering Box
+	[369235] = "Gestohlenes Animagefäß",	-- Stolen Anima Vessel
+	[369236] = "Gestohlenes Animagefäß",	-- Stolen Anima Vessel
 	[369245] = "Korthianische Reliktschatulle",	-- Korthian Relic Box
 	[369292] = "Relikttruhe",	-- Relic Cache
 	[369296] = "Splitterfellvorrat",	-- Shardhide Stash

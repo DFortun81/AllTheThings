@@ -1165,7 +1165,9 @@ for key,value in pairs({
 	[6751] = "Strana Pianta da Frutto",	-- Strange Fruited Plant
 	[6752] = "Strana Pianta Frondosa",	-- Strange Fronded Plant
 	[7510] = "Pianta Rigogliosa",	-- Sprouted Frond
+	[19022] = "Forziere Consumato",	-- Worn Chest
 	[19023] = "|cFFFFFFFFStep 7:|r Pagina 2.351",	-- |cFFFFFFFFStep 7:|r Page 2351
+	[19024] = "Santuario Nascosto",	-- Hidden Shrine
 	[20805] = "Rizzle's Unguarded Plans",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "Terra Smossa",	-- Loose Dirt
 	[20992] = "Scudo Nero",	-- Black Shield
@@ -1224,6 +1226,8 @@ for key,value in pairs({
 	[177787] = "Diario di Rackmore",	-- Rackmore's Log
 	[177904] = "Wanted Poster: Besseleth",	-- Wanted Poster: Besseleth	--TODO: This was taken from classic Wowhead
 	[177964] = "Pietra Profonda",	-- Fathom Stone
+	[178144] = "Cassa dei Troll",	-- Troll Chest
+	[178227] = "Cesto del Totem di Murgut",	-- Murgut's Totem Basket
 	[179485] = "Trappola Rotta",	-- A Broken Trap
 	[179501] = "Knot Thimblejack's Cache",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "Tributo dei Gordok",	-- Gordok Tribute Chest
@@ -1234,6 +1238,9 @@ for key,value in pairs({
 	[180366] = "Battered Tackle Box",	-- Battered Tackle Box	--TODO: This was taken from classic Wowhead
 	[180368] = "Tablet of Madness",	-- Tablet of Madness	--TODO: This was taken from classic Wowhead
 	[180448] = "Manifesto dei Ricercati: Chelafunesta",	-- Wanted Poster: Deathclasp
+	[180456] = "Pietra del Vento Minore",	-- Lesser Wind Stone
+	[180461] = "Pietra del Vento",	-- Wind Stone
+	[180466] = "Pietra del Vento Maggiore",	-- Greater Wind Stone
 	[180503] = "Libro di Ricette Insabbiato",	-- Sandy Cookbook
 	[180633] = "Lacrima di Cristallo",	-- Crystalline Tear
 	[180642] = "Cassa Incospicua",	-- Inconspicuous Crate
@@ -1248,12 +1255,6 @@ for key,value in pairs({
 	[181147] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[181150] = "Diario Impolverato",	-- Dusty Journal
 	[181153] = "Manifesto dei Ricercati: Kel'gash il Perfido",	-- Wanted Poster: Kel'gash the Wicked
-	[181332] = "Falò di Roccavento",	-- Flame of Stormwind
-	[181333] = "Falò di Forgiardente",	-- Flame of Ironforge
-	[181334] = "Falò di Darnassus",	-- Flame of Darnassus
-	[181335] = "Falò di Sepulcra",	-- Flame of the Undercity
-	[181336] = "Falò di Orgrimmar",	-- Flame of Orgrimmar
-	[181337] = "Falò di Picco del Tuono",	-- Flame of Thunder Bluff
 	[181638] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[181748] = "Cristallo di Sangue",	-- Blood Crystal
 	[181756] = "Antico Libro Rovinato",	-- Battered Ancient Book
@@ -1346,8 +1347,6 @@ for key,value in pairs({
 	[187972] = "Falò dell'Orda",	-- Horde Bonfire
 	[187975] = "Falò dell'Orda",	-- Horde Bonfire
 	[188085] = "Grano Infetto",	-- Plagued Grain
-	[188128] = "Falò di Exodar",	-- Flame of the Exodar
-	[188129] = "Falò di Lunargenta",	-- Flame of Silvermoon
 	[188261] = "Diario Rovinato",	-- Battered Journal
 	[188364] = "Trappola per Granchi Distrutta",	-- Wrecked Crab Trap
 	[188365] = "Cuore degli Antichi",	-- Heart of the Ancients
@@ -2955,6 +2954,14 @@ for key,value in pairs({
 	[368668] = "Tronco di Abominietto",	-- Lil'Abom's Trunk
 	[368772] = "Pergamena con Sigillo",	-- Sigilscored Scroll
 	[368876] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
+	--TODO: [368935] = "Sinfall Screecher Cage",	-- Sinfall Screecher Cage
+	[368946] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
+	[368948] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
+	[368949] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
+	[368950] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
+	[368951] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
+	[368952] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
+	[368953] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
 	[369129] = "Vera d'Oro di Nilganihmaht",	-- Nilganihmaht's Gold Band
 	[369132] = "Cassa Sigillata del Dominio",	-- Domination Sealed Chest
 	[369133] = "Sigillo del Dominio #1",	-- Domination Seal #1
@@ -2975,7 +2982,10 @@ for key,value in pairs({
 	[369216] = "Cassa degli Helsvorn",	-- Helsworn Chest
 	[369224] = "Cuore di Ezekiel Ingioiellato",	-- Jeweled Heart of Ezekiel
 	[369225] = "Vestigia Infestate",	-- Infested Vestige
+	[369227] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
 	[369232] = "Scatola delle Offerte",	-- Offering Box
+	[369235] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
+	[369236] = "Ricettacolo d'Animum Rubato",	-- Stolen Anima Vessel
 	[369245] = "Scatola di Reliquie di Korthia",	-- Korthian Relic Box
 	[369292] = "Cassa di Reliquie",	-- Relic Cache
 	[369296] = "Scorte dei Pellescheggia",	-- Shardhide Stash
