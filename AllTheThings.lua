@@ -10099,7 +10099,9 @@ app.TryPopulateQuestRewards = function(questObject)
 
 		-- Finally ensure that any cached entries for the quest are copied into this version of the object
 		local cachedQuest = app.SearchForObject("questID", questObject.questID);
-		NestObjects(questObject, cachedQuest.g, true);
+		if cachedQuest then
+			NestObjects(questObject, cachedQuest.g, true);
+		end
 
 		-- Resolve all symbolic links now that the quest contains items
 		FillSymLinks(questObject, true);
