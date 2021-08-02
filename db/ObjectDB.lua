@@ -1912,7 +1912,6 @@ select(2, ...).ObjectNames = {
 	[9999921] = "Placement",
 	[9999938] = "Uuna's World Tour",
 	[9999946] = "Summon Baa'l",
-	[1278968750] = "Hanging Chain",
 	[1278968766] = "Rune",
 	[1278968767] = "Rune",
 	[1278968768] = "Rune",

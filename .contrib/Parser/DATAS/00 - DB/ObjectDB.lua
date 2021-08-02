@@ -2131,7 +2131,6 @@ _.ObjectNames = {
 	[13000030] = "Purchase Red Crystal Monocle",
 	[13000031] = "Red Crystal Monocle",
 	[13000032] = "|cFFFFFFFFStep 3:|r Pick a Monocle (Or Don't!)",
-	[1278968750] = "Hanging Chain",
 	[1278968766] = "Rune",
 	[1278968767] = "Rune",
 	[1278968768] = "Rune",

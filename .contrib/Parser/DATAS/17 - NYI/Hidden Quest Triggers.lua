@@ -3963,7 +3963,6 @@ _.HiddenQuestTriggers = {
 		q(61117),	-- interacting with runes to unlock a Runebound Coffer (61116)
 		q(61118),	-- interacting with runes to unlock a Runebound Coffer (61116)
 		q(61119),	-- interacting with runes to unlock a Runebound Coffer (61116)
-		q(60311),	-- triggered when opening Misplaced Supplies - i think i had already opened it?  so i'm not sure if it's somehow repeatable :\ but we have a different questID attached to the criteria
 		q(62248),	-- interacting with the Box of Torments
 		-- Maldraxxus WQs
 		q(62946),	-- "learning" the quest items while on #61612, "Jewelcrafting: Carved Crystal Ring"
