@@ -217,6 +217,11 @@ namespace ATT
         /// Represents the current parent group when processing the 'g' subgroup
         /// </summary>
         private static KeyValuePair<string, object>? CurrentParentGroup { get; set; }
+        /// <summary>
+        /// Represents that Item info will be merged into the base set of Item info.
+        /// This should only be performed on the first processing pass, allowing the second processing pass to sync all Item info in nested group references
+        /// </summary>
+        private static bool MergeItemData { get; set; } = true;
 
         /// <summary>
         /// Merge the data into the database.
@@ -476,8 +481,14 @@ namespace ATT
                         data["u"] = 1;
 #if RETAIL
                         // Merge all relevant Item Data into the data container.
-                        Items.Merge(data);
-                        Items.MergeInto(data);
+                        if (MergeItemData)
+                        {
+                            Items.Merge(data);
+                        }
+                        else
+                        {
+                            Items.MergeInto(data);
+                        }
                         Objects.AssignFactionID(data);
                         return false;
 #endif
@@ -501,8 +512,14 @@ namespace ATT
             }
 
             // Merge all relevant Item Data into the data container.
-            Items.Merge(data);
-            Items.MergeInto(data);
+            if (MergeItemData)
+            {
+                Items.Merge(data);
+            }
+            else
+            {
+                Items.MergeInto(data);
+            }
             Objects.AssignFactionID(data);
 
             // Cache the Filter ID.
@@ -1085,7 +1102,15 @@ namespace ATT
             }
 
             // Merge the Item Data into the Containers.
+            //Trace.WriteLine("Container Processing #1...");
             foreach (var container in Objects.AllContainers.Values) Process(container, 0, 1);
+            //Trace.WriteLine("Container Processing #1 Done.");
+
+            // Merge the Item Data into the Containers again, this time syncing Item data into nested Item groups
+            //Trace.WriteLine("Container Processing #2...");
+            MergeItemData = false;
+            foreach (var container in Objects.AllContainers.Values) Process(container, 0, 1);
+            //Trace.WriteLine("Container Processing #2 Done.");
 
             // Sort World Drops by Name
             var worldDrops = Objects.GetNull("WorldDrops");
@@ -1353,9 +1378,6 @@ namespace ATT
                     }
                 }
             }
-
-            // Merge the Item Data into the Containers again.
-            foreach (var container in Objects.AllContainers.Values) Process(container, 0, 1);
 
             // If NOT Classic
             if (Items.GetNull(30000) != null)

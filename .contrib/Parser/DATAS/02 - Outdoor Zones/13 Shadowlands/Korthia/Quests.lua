@@ -362,8 +362,15 @@ _.Zones =
 					["coord"] = { 62.7, 24.8, KORTHIA },
 					["g"] = {
 					--	TODO: figure out the contents of this chest and how/where to display it (if it comes from multiple things)
+					-- seems to share Item rewards with Korthian Armaments
 						i(186196, {	-- Death's Advance War Chest
-							i(187506),	-- Condensed Anima Sphere
+							["sym"] = {
+								{ "select", "itemID", 187187 },	-- select "Korthian Armaments"
+								{ "pop" },						-- pop the Item itself
+							},
+							["g"] = {
+								i(187506),	-- Condensed Anima Sphere
+							},
 						}),
 					},
 				}),

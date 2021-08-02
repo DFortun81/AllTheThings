@@ -2203,6 +2203,21 @@ local function HasExpandedSubgroup(group)
 end
 
 local ResolveSymbolicLink;
+-- Fills & returns a group with its symlink references, along with all sub-groups recursively if specified
+-- This should only be used on a cloned group so the source group is not contaminated
+local function FillSymLinks(group, recursive)
+	-- if group.key == "itemID" and group.itemID == 138536 then app.DEBUG_PRINT = group; end
+	if recursive and group.g then
+		for _,s in ipairs(group.g) do
+			FillSymLinks(s, recursive);
+		end
+	end
+	if group.sym then
+		NestObjects(group, ResolveSymbolicLink(group));
+	end
+	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
+	return group;
+end
 (function()
 local subroutines;
 subroutines = {
@@ -2594,6 +2609,20 @@ ResolveSymbolicLink = function(o)
 				else
 					print("Failed to select ", sym[2], sym[3]);
 				end
+			elseif cmd == "fill" then
+				-- Instruction to fill with identical content cached elsewhere for this group
+				if o.key and o[o.key] then
+					local cache = app.SearchForField(o.key, o[o.key]);
+					if cache then
+						for _,group in ipairs(cache) do
+							if group.g then
+								for _,s in ipairs(group.g) do
+									tinsert(searchResults, FillSymLinks(s));
+								end
+							end
+						end
+					end
+				end
 			elseif cmd == "pop" then
 				-- Instruction to "pop" all of the group values up one level.
 				local orig = searchResults;
@@ -2959,21 +2988,6 @@ local function BuildContainsInfo(item, entries, paramA, paramB, indent, layer)
 		end
 	end
 	app.ItemBindFilter = oldItemBindFilter;
-end
--- Fills & returns a group with its symlink references, along with all sub-groups recursively if specified
--- This should only be used on a cloned group so the source group is not contaminated
-local function FillSymLinks(group, recursive)
-	-- if group.key == "itemID" and group.itemID == 138536 then app.DEBUG_PRINT = group; end
-	if recursive and group.g then
-		for _,s in ipairs(group.g) do
-			FillSymLinks(s, recursive);
-		end
-	end
-	if group.sym then
-		NestObjects(group, ResolveSymbolicLink(group));
-	end
-	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
-	return group;
 end
 -- Fills & returns a group with its 'cost' references, along with all sub-groups recursively if specified
 -- This should only be used on a cloned group so the source group is not contaminated

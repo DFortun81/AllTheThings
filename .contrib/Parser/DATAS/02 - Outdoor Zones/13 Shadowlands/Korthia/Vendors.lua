@@ -144,6 +144,35 @@ _.Zones =
 							["description"] = "These items can also drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.\n\nKorthian Armaments also have a chance to drop from Korthia rares and treasures.",
 							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
 							["g"] = {	-- * are next to ones i have seen (there are a couple sets so not sure if both exist)
+								n(-319, {	-- Weapons
+									i(185889),	-- Gromit Tendon Longbow
+									i(186762),	-- Korthian Anima Slicer
+									i(186759),	-- Korthian Anima Vessel*
+									i(185899),	-- Korthian Archivist's Gavel
+									i(186761),	-- Korthian Attendant's Blade
+									i(186768),	-- Korthian Attendant's Cane*
+									i(186767),	-- Korthian Attendant's Scepter*
+									i(185890),	-- Korthian Caretaker's Kris*
+									i(185888),	-- Korthian Caretaker's Orb*
+									i(185900),	-- Korthian Caretaker's Rod
+									i(185900),	-- Korthian Caretaker's Stave*
+									i(186760),	-- Korthian Energy Bow
+									i(186758),	-- Korthian Keeper's Buckler*
+									i(185898),	-- Korthian Pathfinder's Spire
+									i(185893),	-- Korthian Protector's Greataxe
+									i(186764),	-- Korthian Protector's Warhammer*
+									i(185897),	-- Korthian Sentinel's Hammer
+									i(185901),	-- Korthian Twinblade
+									i(185891),	-- Razorwing's Claw
+									i(185944),	-- Vault Guardian's Cleaver*
+									i(185896),	-- Vault Guardian's Cudgel
+									i(186763),	-- Vault Guardian's Decapitator
+									i(185887),	-- Vault Guardian's Targe
+									i(186769),	-- Vault Guardian's Warglaive
+									i(186765),	-- Vault Patroller's Mace
+									i(186771),	-- Vault Patroller's Slicer*
+									i(186766),	-- Vault Patroller's Staff
+								}),
 								f(3,    {	-- Cloaks
 									i(186770),	-- Vault Attendant's Cape*
 									i(185905),	-- Vault Guardian's Drape*
@@ -219,34 +248,6 @@ _.Zones =
 									i(186750),	-- Vault Guardian's Stompers
 									i(185883),	-- Vault Guardian's Vambraces
 									i(186748),	-- Vault Guardian's Visor*
-								}),
-								n(-319, {	-- Weapons
-									i(185889),	-- Gromit Tendon Longbow
-									i(186762),	-- Korthian Anima Slicer
-									i(186759),	-- Korthian Anima Vessel*
-									i(185899),	-- Korthian Archivist's Gavel
-									i(186761),	-- Korthian Attendant's Blade
-									i(186768),	-- Korthian Attendant's Cane*
-									i(186767),	-- Korthian Attendant's Scepter*
-									i(185890),	-- Korthian Caretaker's Kris*
-									i(185888),	-- Korthian Caretaker's Orb*
-									i(185900),	-- Korthian Caretaker's Rod
-									i(185900),	-- Korthian Caretaker's Stave*
-									i(186760),	-- Korthian Energy Bow
-									i(186758),	-- Korthian Keeper's Buckler*
-									i(185898),	-- Korthian Pathfinder's Spire
-									i(185893),	-- Korthian Protector's Greataxe
-									i(186764),	-- Korthian Protector's Warhammer*
-									i(185897),	-- Korthian Sentinel's Hammer
-									i(185901),	-- Korthian Twinblade
-									i(185944),	-- Vault Guardian's Cleaver*
-									i(185896),	-- Vault Guardian's Cudgel
-									i(186763),	-- Vault Guardian's Decapitator
-									i(185887),	-- Vault Guardian's Targe
-									i(186769),	-- Vault Guardian's Warglaive
-									i(186765),	-- Vault Patroller's Mace
-									i(186771),	-- Vault Patroller's Slicer*
-									i(186766),	-- Vault Patroller's Staff
 								}),
 								f(52,   {	-- Finger
 									i(185894),	-- Attendant's Loop*
