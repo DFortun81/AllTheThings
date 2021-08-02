@@ -10251,78 +10251,33 @@ end
 (function()
 -- Vignettes copy Quest fields
 local fields = RawCloneData(questFields);
--- Custom Vignette fields
-fields.text = function(t)
-	-- TODO: something about this is weird with it using from the quest fields... check questID 32961
-	if t.qgs then
-		local all = true;
-		for i,qg in ipairs(t.qgs) do
-			if not NPCNameFromID[qg] then
-				all = false;
+local function BuildTextFromNPCIDs(t, npcIDs)
+	if not npcIDs or #npcIDs == 0 then app.report("Invalid Vignette! "..(app.GetHash(t) or "[NOHASH]")) end
+	local retry, name;
+	local textTbl = {};
+	for i,npcID in ipairs(npcIDs) do
+		name = NPCNameFromID[npcID];
+		retry = retry or not name or name == RETRIEVING_DATA;
+		if not retry then
+			textTbl[i * 2 - 1] = name;
+			if i > 1 then
+				textTbl[(i - 1) * 2] = ", ";
 			end
-		end
-		if all then
-			t.name = nil;
-			local count = #t.qgs;
-			for i=1,count,1 do
-				local qg = t.qgs[i];
-				if t.name then
-					t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[qg];
-				else
-					t.name = NPCNameFromID[qg];
-				end
-				if not t.title then
-					t.title = NPCTitlesFromID[qg];
-				end
-			end
-			return t.name;
-		end
-	elseif t.crs then
-		local all = true;
-		for i,cr in ipairs(t.crs) do
-			if not NPCNameFromID[cr] then
-				all = false;
-			end
-		end
-		if all then
-			t.name = nil;
-			local count = #t.crs;
-			for i=1,count,1 do
-				local cr = t.crs[i];
-				if t.name then
-					t.name = t.name .. (i < count and ", " or " & ") .. NPCNameFromID[cr];
-				else
-					t.name = NPCNameFromID[cr];
-				end
-				if not t.title then
-					t.title = NPCTitlesFromID[cr];
-				end
-			end
-			return t.name;
-		end
-	elseif t.qg then
-		if NPCNameFromID[t.qg] then
-			t.name = NPCNameFromID[t.qg];
-			if not t.title then
-				t.title = NPCTitlesFromID[t.qg];
-			end
-			return t.name;
-		end
-	elseif t.creatureID then
-		if t.creatureID > 0 then
-			if NPCNameFromID[t.creatureID] then
-				t.name = NPCNameFromID[t.creatureID];
-				if not t.title then
-					t.title = NPCTitlesFromID[t.creatureID];
-				end
-				return t.name;
-			end
-		else
-			t.name = L["HEADER_NAMES"][t.creatureID];
-			return t.name;
 		end
 	end
-	return t.name;
+	if retry then return RETRIEVING_DATA; end
+	name = table.concat(textTbl);
+	rawset(t, "text", name);
+	return name;
+end
+-- Custom Vignette fields
+fields.text = function(t)
+	if t.qgs or t.crs then
+		return BuildTextFromNPCIDs(t, t.qgs or t.crs);
+	elseif t.qg or t.creatureID then
+		return BuildTextFromNPCIDs(t, { t.qg or t.creatureID });
+	end
+	return BuildTextFromNPCIDs(t);
 end;
 fields.icon = function(t) return "Interface\\Icons\\INV_Misc_Head_Dragon_Black"; end;
 fields.isVignette = app.ReturnTrue;
