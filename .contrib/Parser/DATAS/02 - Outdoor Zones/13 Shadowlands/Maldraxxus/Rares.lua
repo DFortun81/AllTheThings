@@ -290,7 +290,7 @@ _.Zones =
 				n(158406, { -- Scunner
 					["questID"] = 58006,
 					["isDaily"] = true,
-					["coord"] = { 61.6, 76.4, MALDRAXXUS },
+					["coord"] = { 62.1, 75.8, MALDRAXXUS },
 					["g"] = {
 						crit(2, {	-- Scunner
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus

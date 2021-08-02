@@ -664,733 +664,735 @@ _.ExpansionFeatures =
 								},
 							}),
 							n(-961, {	-- Tier 1: A New Court
-							--	TODO: i tipped the scales toward "formal" as hard as i could in the initial scenario, and got quests for 'formal refreshments' and 'formal entertainment.'  if you tip them towards casual (or land in the middle) what happens?
-								q(59660, {	-- A New Court
-									["sourceQuests"] = { 63065 },	-- Sanctum Upgrade: The Ember Court
-									["provider"] = { "n", 161979 },	-- Theotar
-									["coord"] = { 49.9, 19.3, SINFALL_REACHES },
-								}),
-								q(61351, {	-- Ancient Sinstone (+Formal)
-									["provider"] = { "n", 164965 },	-- Prince Renathal
-									["isWeekly"] = true,	-- i guess?
-									["cost"] = { { "i", 181248, 1 } },	-- 1x Ancient Sinstone
-									["crs"] = { 171705 },	-- Court Crusher
-								}),
-								q(61899, {	-- Anima Tastings
-								--	TODO: might also be tied to purchase of Staff: Stage Crew, which i purchased right after scenario
-									["minReputation"] = { 2445, HONORED },
-									["provider"] = { "n", 165494 },	-- Hips
-									["coord"] = { 30.7, 41.8, REVENDRETH },
-									["g"] = {
-										i(181533, {	-- Stock: Anima Samples
-											crit(13, {	-- Stock: Anima Samples
-												["achievementID"] = 14679,	-- Party Palace
+								["g"] = sharedData({ ["customCollect"] = "SL_COV_VEN" }, {	-- Venthyr
+								--	TODO: i tipped the scales toward "formal" as hard as i could in the initial scenario, and got quests for 'formal refreshments' and 'formal entertainment.'  if you tip them towards casual (or land in the middle) what happens?
+									q(59660, {	-- A New Court
+										["sourceQuests"] = { 63065 },	-- Sanctum Upgrade: The Ember Court
+										["provider"] = { "n", 161979 },	-- Theotar
+										["coord"] = { 49.9, 19.3, SINFALL_REACHES },
+									}),
+									q(61351, {	-- Ancient Sinstone (+Formal)
+										["provider"] = { "n", 164965 },	-- Prince Renathal
+										["isWeekly"] = true,	-- i guess?
+										["cost"] = { { "i", 181248, 1 } },	-- 1x Ancient Sinstone
+										["crs"] = { 171705 },	-- Court Crusher
+									}),
+									q(61899, {	-- Anima Tastings
+									--	TODO: might also be tied to purchase of Staff: Stage Crew, which i purchased right after scenario
+										["minReputation"] = { 2445, HONORED },
+										["provider"] = { "n", 165494 },	-- Hips
+										["coord"] = { 30.7, 41.8, REVENDRETH },
+										["g"] = {
+											i(181533, {	-- Stock: Anima Samples
+												crit(13, {	-- Stock: Anima Samples
+													["achievementID"] = 14679,	-- Party Palace
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61900, {	-- Comfy Chairs
-									["minReputation"] = { 2445, REVERED },
-									["provider"] = { "n", 165493 },	-- Boot the Beaut
-									["coord"] = { 29.8, 45.4, REVENDRETH },
-									["g"] = {
-										i(181535, {	-- Stock: Comfy Chairs
-											crit(14, {	-- Stock: Comfy Chairs
-												["achievementID"] = 14679,	-- Party Palace
+										},
+									}),
+									q(61900, {	-- Comfy Chairs
+										["minReputation"] = { 2445, REVERED },
+										["provider"] = { "n", 165493 },	-- Boot the Beaut
+										["coord"] = { 29.8, 45.4, REVENDRETH },
+										["g"] = {
+											i(181535, {	-- Stock: Comfy Chairs
+												crit(14, {	-- Stock: Comfy Chairs
+													["achievementID"] = 14679,	-- Party Palace
+												}),
 											}),
-										}),
-									},
-								}),
-								q(63694, {	-- Choofa's Best Friend
-									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Choofa?
-									["provider"] = { "n", 160814 },	-- Choofa
-									["coord"] = { 63.7, 36.6, ARDENWEALD },
-								}),
-								q(63685, {	-- Cryptkeeper Kassir's Best Friend
-									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Cryptkeeper Kassir?
-									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
-									["coord"] = { 70.1, 56.1, REVENDRETH },
-								}),
-								q(63695, {	-- Droman Aliothe's Best Friend
-									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Droman Aliothe?
-									["provider"] = { "n", 160894 },	-- Droman Aliothe
-									["coord"] = { 60.0, 53.8, ARDENWEALD },
-								}),
-								q(61407, {	-- Ember Court: Atoning Rituals
-									["sourceQuests"] = {
-										61706,	-- Ember Court: Entertainment
-										57929,	-- Hunting an Inquisitor
-									},
-									["provider"] = { "n", 167332 },	-- Gresit
-									["coord"] = { 71.7, 40.3, REVENDRETH },
-									["g"] = {
-										i(176130, {	-- Contract: Atoning Rituals
-											crit(1, {	-- Atoning Rituals
-												["achievementID"] = 14680,	-- Something for Everyone
+										},
+									}),
+									q(63694, {	-- Choofa's Best Friend
+										-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Choofa?
+										["provider"] = { "n", 160814 },	-- Choofa
+										["coord"] = { 63.7, 36.6, ARDENWEALD },
+									}),
+									q(63685, {	-- Cryptkeeper Kassir's Best Friend
+										-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Cryptkeeper Kassir?
+										["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
+										["coord"] = { 70.1, 56.1, REVENDRETH },
+									}),
+									q(63695, {	-- Droman Aliothe's Best Friend
+										-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Droman Aliothe?
+										["provider"] = { "n", 160894 },	-- Droman Aliothe
+										["coord"] = { 60.0, 53.8, ARDENWEALD },
+									}),
+									q(61407, {	-- Ember Court: Atoning Rituals
+										["sourceQuests"] = {
+											61706,	-- Ember Court: Entertainment
+											57929,	-- Hunting an Inquisitor
+										},
+										["provider"] = { "n", 167332 },	-- Gresit
+										["coord"] = { 71.7, 40.3, REVENDRETH },
+										["g"] = {
+											i(176130, {	-- Contract: Atoning Rituals
+												crit(1, {	-- Atoning Rituals
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61405, {	-- Ember Court: Divine Desserts
-									["sourceQuests"] = { 61880 },	-- Honored Attendance
-									["isWorldQuest"] = true,	-- shows up in /attwq without this despite having no attached collectibles
-									["provider"] = { "n", 172448 },	-- Stewart
-									["coord"] = { 33.9, 66.5, BASTION },
-									["g"] = {
-										i(176135, {	-- Contract: Divine Desserts
-											crit(5, {	-- Divine Desserts
-												["achievementID"] = 14680,	-- Something for Everyone
+										},
+									}),
+									q(61405, {	-- Ember Court: Divine Desserts
+										["sourceQuests"] = { 61880 },	-- Honored Attendance
+										["isWorldQuest"] = true,	-- shows up in /attwq without this despite having no attached collectibles
+										["provider"] = { "n", 172448 },	-- Stewart
+										["coord"] = { 33.9, 66.5, BASTION },
+										["g"] = {
+											i(176135, {	-- Contract: Divine Desserts
+												crit(5, {	-- Divine Desserts
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61706, {	-- Ember Court: Entertainment
-									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
-									["provider"] = { "n", 164966 },	-- Temel
-									["coord"] = { 27.9, 43.1, REVENDRETH },
-								}),
-								q(61408, {	-- Ember Court: Glimpse of the Wilds
-									["sourceQuests"] = { 61880 },	-- Honored Attendance
-									["isWorldQuest"] = true,	-- shows up in /attwq without this despite having no attached collectibles
-									["provider"] = { "n", 172352 },	-- Niya
-									["coord"] = { 56.3, 55.6, ARDENWEALD },
-									["g"] = {
-										i(176131, {	-- Contract: Glimpse of the Wilds
-											crit(2, {	-- Glimpse of the Wilds
-												["achievementID"] = 14680,	-- Something for Everyone
+										},
+									}),
+									q(61706, {	-- Ember Court: Entertainment
+										["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
+										["provider"] = { "n", 164966 },	-- Temel
+										["coord"] = { 27.9, 43.1, REVENDRETH },
+									}),
+									q(61408, {	-- Ember Court: Glimpse of the Wilds
+										["sourceQuests"] = { 61880 },	-- Honored Attendance
+										["isWorldQuest"] = true,	-- shows up in /attwq without this despite having no attached collectibles
+										["provider"] = { "n", 172352 },	-- Niya
+										["coord"] = { 56.3, 55.6, ARDENWEALD },
+										["g"] = {
+											i(176131, {	-- Contract: Glimpse of the Wilds
+												crit(2, {	-- Glimpse of the Wilds
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61704, {	-- Ember Court: Guest RSVPs
-								--	also requires Absolution Crypt storyline, add that SQ upon completion
-									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
-									["provider"] = { "n", 164966 },	-- Temel
-									["coord"] = { 27.9, 43.1, REVENDRETH },
-								}),
-								q(61738, {	-- Ember Court: Lost Chalice Band
-								--	TODO: might just require 'honored' rep???
-									["description"] = "Available after purchasing Staff: Stage Crew.",
-									["provider"] = { "n", 173173 },	-- Caretaker Tedo
-									["coord"] = { 55.1, 43.7, REVENDRETH },
-									["g"] = {
-										i(176132, {	-- Contract: Lost Chalice Band
-											crit(3, {	-- Lost Chalice Band
-												["achievementID"] = 14680,	-- Something for Everyone
+										},
+									}),
+									q(61704, {	-- Ember Court: Guest RSVPs
+									--	also requires Absolution Crypt storyline, add that SQ upon completion
+										["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
+										["provider"] = { "n", 164966 },	-- Temel
+										["coord"] = { 27.9, 43.1, REVENDRETH },
+									}),
+									q(61738, {	-- Ember Court: Lost Chalice Band
+									--	TODO: might just require 'honored' rep???
+										["description"] = "Available after purchasing Staff: Stage Crew.",
+										["provider"] = { "n", 173173 },	-- Caretaker Tedo
+										["coord"] = { 55.1, 43.7, REVENDRETH },
+										["g"] = {
+											i(176132, {	-- Contract: Lost Chalice Band
+												crit(3, {	-- Lost Chalice Band
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61403, {	-- Ember Court: Maldraxxus Army
-									["minReputation"] = { 2445, REVERED },
-									["provider"] = { "n", 172964 },	-- Emeni
-									["coord"] = { 54.2, 69.3, MALDRAXXUS },
-									["g"] = {
-										i(176140, {	-- Contract: Maldraxxian Army
-											crit(12, {	-- Maldraxxian Army
-												["achievementID"] = 14680,	-- Something for Everyone
+										},
+									}),
+									q(61403, {	-- Ember Court: Maldraxxus Army
+										["minReputation"] = { 2445, REVERED },
+										["provider"] = { "n", 172964 },	-- Emeni
+										["coord"] = { 54.2, 69.3, MALDRAXXUS },
+										["g"] = {
+											i(176140, {	-- Contract: Maldraxxian Army
+												crit(12, {	-- Maldraxxian Army
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61399, {	-- Ember Court: Mortal Reminders
-									["minReputation"] = { 2445, FRIENDLY },
-									["provider"] = { "n", 156791 },	-- Keeper Ta'saran
-									["coord"] = { 59.2, 75.1, ORIBOS },
-									["g"] = {
-										i(176128, {	-- Contract: Mortal Reminders
-											crit(8, {	-- Mortal Reminders
-												["achievementID"] = 14680,	-- Something for Everyone
+										},
+									}),
+									q(61399, {	-- Ember Court: Mortal Reminders
+										["minReputation"] = { 2445, FRIENDLY },
+										["provider"] = { "n", 156791 },	-- Keeper Ta'saran
+										["coord"] = { 59.2, 75.1, ORIBOS },
+										["g"] = {
+											i(176128, {	-- Contract: Mortal Reminders
+												crit(8, {	-- Mortal Reminders
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61406, {	-- Ember Court: Mushroom Surprise
-									["description"] = "Available after purchasing Staff: Waiters.",
-									["provider"] = { "n", 168429 },	-- Melody Madcap
-									["coord"] = { 40.2, 41.2, MALDRAXXUS },
-									["g"] = {
-										i(176136, {	-- Contract: Mushroom Surprise!
-											crit(6, {	-- Mushroom Surprise
-												["achievementID"] = 14680,	-- Something for Everyone
+										},
+									}),
+									q(61406, {	-- Ember Court: Mushroom Surprise
+										["description"] = "Available after purchasing Staff: Waiters.",
+										["provider"] = { "n", 168429 },	-- Melody Madcap
+										["coord"] = { 40.2, 41.2, MALDRAXXUS },
+										["g"] = {
+											i(176136, {	-- Contract: Mushroom Surprise!
+												crit(6, {	-- Mushroom Surprise
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61400, {	-- Ember Court: Mystery Mirrors
-									["minReputation"] = { 2445, REVERED },
-									["provider"] = { "n", 172986 },	-- Simone
-									["coord"] = { 24.6, 50.2, REVENDRETH },
-									["g"] = {
-										i(176127, {	-- Contract: Mystery Mirrors
-											crit(9, {	-- Mystery Mirrors
-												["achievementID"] = 14680,	-- Something for Everyone
+										},
+									}),
+									q(61400, {	-- Ember Court: Mystery Mirrors
+										["minReputation"] = { 2445, REVERED },
+										["provider"] = { "n", 172986 },	-- Simone
+										["coord"] = { 24.6, 50.2, REVENDRETH },
+										["g"] = {
+											i(176127, {	-- Contract: Mystery Mirrors
+												crit(9, {	-- Mystery Mirrors
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61705, {	-- Ember Court: Refreshments
-									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
-									["provider"] = { "n", 164966 },	-- Temel
-									["coord"] = { 27.9, 43.1, REVENDRETH },
-								}),
-								q(61402, {	-- Ember Court: Stoneborn Reserves
-									["description"] = "Available after purchasing Building: Guardhouse.",
-									["provider"] = { "n", 172502 },	-- Chelra the Bladewall
-									["coord"] = { 26.5, 29.1, REVENDRETH },
-									["g"] = {
-										i(176139, {	-- Contract: Stoneborn Reserves
-											crit(11, {	-- Stoneborn Reserves
-												["achievementID"] = 14680,	-- Something for Everyone
+										},
+									}),
+									q(61705, {	-- Ember Court: Refreshments
+										["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
+										["provider"] = { "n", 164966 },	-- Temel
+										["coord"] = { 27.9, 43.1, REVENDRETH },
+									}),
+									q(61402, {	-- Ember Court: Stoneborn Reserves
+										["description"] = "Available after purchasing Building: Guardhouse.",
+										["provider"] = { "n", 172502 },	-- Chelra the Bladewall
+										["coord"] = { 26.5, 29.1, REVENDRETH },
+										["g"] = {
+											i(176139, {	-- Contract: Stoneborn Reserves
+												crit(11, {	-- Stoneborn Reserves
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61398, {	-- Ember Court: Traditional
-									["minReputation"] = { 2445, FRIENDLY },
-									["provider"] = { "n", 156822 },	-- Mistress Mihaela
-									["coord"] = { 61.3, 63.8, REVENDRETH },
-									["g"] = {
-										i(176126, {	-- Contract: Traditional Theme
-											crit(7, {	-- Traditional Decorations
-												["achievementID"] = 14680,	-- Something for Everyone
+										},
+									}),
+									q(61398, {	-- Ember Court: Traditional
+										["minReputation"] = { 2445, FRIENDLY },
+										["provider"] = { "n", 156822 },	-- Mistress Mihaela
+										["coord"] = { 61.3, 63.8, REVENDRETH },
+										["g"] = {
+											i(176126, {	-- Contract: Traditional Theme
+												crit(7, {	-- Traditional Decorations
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61404, {	-- Ember Court: Tubbins's Tea Party
-									["sourceQuests"] = { 61705 },	-- Ember Court: Refreshments
-									["provider"] = { "n", 167863 },	-- Tubbins
-									["coord"] = { 30.9, 57.6, REVENDRETH },
-									["g"] = {
-										i(176134, {	-- Contract: Tubbins's Tea Party
-											crit(4, {	-- Tubbins's Tea Party
-												["achievementID"] = 14680,	-- Something for Everyone
+										},
+									}),
+									q(61404, {	-- Ember Court: Tubbins's Tea Party
+										["sourceQuests"] = { 61705 },	-- Ember Court: Refreshments
+										["provider"] = { "n", 167863 },	-- Tubbins
+										["coord"] = { 30.9, 57.6, REVENDRETH },
+										["g"] = {
+											i(176134, {	-- Contract: Tubbins's Tea Party
+												crit(4, {	-- Tubbins's Tea Party
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61401, {	-- Ember Court: Venthyr Volunteers
-									["description"] = "Available after purchasing Building: Guardhouse.",
-									["provider"] = { "n", 172614 },	-- Nadija the Mistblade
-									["coord"] = { 60.9, 39.5, REVENDRETH },
-									["g"] = {
-										i(176138, {	-- Contract: Venthyr Volunteers
-											crit(10, {	-- Venthyr Volunteers
-												["achievementID"] = 14680,	-- Something for Everyone
+										},
+									}),
+									q(61401, {	-- Ember Court: Venthyr Volunteers
+										["description"] = "Available after purchasing Building: Guardhouse.",
+										["provider"] = { "n", 172614 },	-- Nadija the Mistblade
+										["coord"] = { 60.9, 39.5, REVENDRETH },
+										["g"] = {
+											i(176138, {	-- Contract: Venthyr Volunteers
+												crit(10, {	-- Venthyr Volunteers
+													["achievementID"] = 14680,	-- Something for Everyone
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61892, {	-- Ember Court Ambassador 1 - Revendreth
-									["minReputation"] = { 2445, FRIENDLY },
-									["provider"] = { "n", 165453 },	-- Lady Ilinca <Court Concierge>
-									["coord"] = { 28.5, 41.1, REVENDRETH },
-									["g"] = {
-										i(181521, {	-- Ember Court Ambassador
-											crit(7, {	-- Staff: Revendreth Ambassador
-												["achievementID"] = 14679,	-- Party Palace
+										},
+									}),
+									q(61892, {	-- Ember Court Ambassador 1 - Revendreth
+										["minReputation"] = { 2445, FRIENDLY },
+										["provider"] = { "n", 165453 },	-- Lady Ilinca <Court Concierge>
+										["coord"] = { 28.5, 41.1, REVENDRETH },
+										["g"] = {
+											i(181521, {	-- Ember Court Ambassador
+												crit(7, {	-- Staff: Revendreth Ambassador
+													["achievementID"] = 14679,	-- Party Palace
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61893, {	-- Ember Court Ambassador 2 - Ardenweald
-									["minReputation"] = { 2445, HONORED },
-									["sourceQuests"] = { 61892 },	-- Ember Court Ambassador 1 - Revendreth
-									["provider"] = { "n", 165453 },	-- Lady Ilinca
-									["coord"] = { 28.5, 41.1, REVENDRETH },
-									["g"] = {
-										i(181524, {	-- Staff: Ambassador
-											crit(8, {	-- Staff: Ardenweald Ambassador
-												["achievementID"] = 14679,	-- Party Palace
+										},
+									}),
+									q(61893, {	-- Ember Court Ambassador 2 - Ardenweald
+										["minReputation"] = { 2445, HONORED },
+										["sourceQuests"] = { 61892 },	-- Ember Court Ambassador 1 - Revendreth
+										["provider"] = { "n", 165453 },	-- Lady Ilinca
+										["coord"] = { 28.5, 41.1, REVENDRETH },
+										["g"] = {
+											i(181524, {	-- Staff: Ambassador
+												crit(8, {	-- Staff: Ardenweald Ambassador
+													["achievementID"] = 14679,	-- Party Palace
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61894, {	-- Ember Court Ambassador 3 - Maldraxxus
-									["minReputation"] = { 2445, REVERED },
-									["sourceQuests"] = { 61893 },	-- Ember Court Ambassador 2 - Ardenweald
-									["provider"] = { "n", 165453 },	-- Lady Ilinca
-									["coord"] = { 28.5, 41.1, REVENDRETH },
-									["g"] = {
-										i(182342, {	-- Staff: Maldraxxus Ambassador
-											crit(9, {	-- Staff: Maldraxxus Ambassador
-												["achievementID"] = 14679,	-- Party Palace
+										},
+									}),
+									q(61894, {	-- Ember Court Ambassador 3 - Maldraxxus
+										["minReputation"] = { 2445, REVERED },
+										["sourceQuests"] = { 61893 },	-- Ember Court Ambassador 2 - Ardenweald
+										["provider"] = { "n", 165453 },	-- Lady Ilinca
+										["coord"] = { 28.5, 41.1, REVENDRETH },
+										["g"] = {
+											i(182342, {	-- Staff: Maldraxxus Ambassador
+												crit(9, {	-- Staff: Maldraxxus Ambassador
+													["achievementID"] = 14679,	-- Party Palace
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61895, {	-- Ember Court Ambassador 4 - Bastion
-									["minReputation"] = { 2445, REVERED },
-									["sourceQuests"] = { 61894 },	-- Ember Court Ambassador 3 - Maldraxxus
-									["provider"] = { "n", 165453 },	-- Lady Ilinca
-									["coord"] = { 28.5, 41.1, REVENDRETH },
-									["g"] = {
-										i(182343, {	-- Staff: Bastion Ambassador
-											crit(10, {	-- Staff: Bastion Ambassador
-												["achievementID"] = 14679,	-- Party Palace
+										},
+									}),
+									q(61895, {	-- Ember Court Ambassador 4 - Bastion
+										["minReputation"] = { 2445, REVERED },
+										["sourceQuests"] = { 61894 },	-- Ember Court Ambassador 3 - Maldraxxus
+										["provider"] = { "n", 165453 },	-- Lady Ilinca
+										["coord"] = { 28.5, 41.1, REVENDRETH },
+										["g"] = {
+											i(182343, {	-- Staff: Bastion Ambassador
+												crit(10, {	-- Staff: Bastion Ambassador
+													["achievementID"] = 14679,	-- Party Palace
+												}),
 											}),
-										}),
-									},
-								}),
-								q(59661, {	-- Ember Court Rehearsal
-									["sourceQuests"] = { 59660 },	-- A New Court
-									["provider"] = { "n", 164966 },	-- Temel
-									["coord"] = { 27.9, 43.1, REVENDRETH },
-								}),
-								q(61882, {	-- Formal Entertainment
-									["sourceQuests"] = { 61407 },	-- Ember Court: Atoning Rituals
-									["provider"] = { "n", 167332 },	-- Gresit
-									["coord"] = { 71.7, 40.3, REVENDRETH },
-								}),
-								q(61884, {	-- Formal Refreshments
-									["sourceQuests"] = { 61404 },	-- Ember Court: Tubbins's Tea Party
-									["provider"] = { "n", 167863 },	-- Tubbins
-									["coord"] = { 30.9, 57.6, REVENDRETH },
-								}),
-								q(63696, {	-- Grandmaster Vole's Best Friend
-									-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Grandmaster Vole?
-									["provider"] = { "n", 163019 },	-- Grandmaster Vole
-									["coord"] = { 52.8, 49.2, MALDRAXXUS },
-								}),
-								q(61880, {	-- Honored Attendance
-									["sourceQuests"] = { 60236 },	-- RSVP: Cryptkeeper Kassir
-									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
-									["coord"] = { 70.0, 56.2, REVENDRETH },
-								}),
-								q(63697, {	-- Kleia and Pelagos's Best Friend
-									-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Kleia and Pelagos?
-									["provider"] = { "n", 174916 },	-- Kleia
-									["coord"] = { 55.8, 86.4, BASTION },
-								}),
-								q(62626, {	-- Mullby's Marker
-									["provider"] = { "i", 181765 },	-- Marcel Mullby's Marker
-									["repeatable"] = true,
-								}),
-								q(63213, {	-- Naladu the Elder
-									["provider"] = { "n", 176253 },	-- Elder Naladu
-									["coord"] = { 61.8, 59.8, 1644 },	-- Ember Court
-									["g"] = {
-										i(184627, {	-- Sacrificial Red Envelope
-											i(184628),	-- Elder's Sacrificial Moonstone
-										}),
-									},
-								}),
-								q(63698, {	-- Plague Deviser Marileth's Best Friend
-									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Plague Deviser Marileth?
-									["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
-									["coord"] = { 60.4, 71.6, MALDRAXXUS },
-								}),
-								q(62073, {	-- Restock: Band Shirts
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165494 },	-- Hips
-									["coord"] = { 30.7, 41.7, REVENDRETH },
-									["cost"] = {
-										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
-										{ "i", 172230, 5 },		-- 5x Soul Dust
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62064, {	-- Restock: Broken Mirrors
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165493 },	-- Boot the Beaut
-									["coord"] = { 29.8, 45.4, REVENDRETH },
-									["cost"] = {
-										{ "i", 173109, 5 },	-- 5x Angerseye
-										{ "c", 1820, 20 },	-- 20x Infused Ruby
-									},
-								}),
-								q(62066, {	-- Restock: Dredger Pool
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165493 },	-- Boot the Beaut
-									["coord"] = { 29.8, 45.4, REVENDRETH },
-									["cost"] = {
-										{ "i", 171263, 10 },	-- 10x Potion of Soul Purity
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62106, {	-- Restock: Enchantments
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
-									["coord"] = { 32.1, 41.6, REVENDRETH },
-									["cost"] = {
-										{ "i", 172416, 1 },	-- Enchant Bracers - Shaded Hearthing
-										{ "c", 1820, 20 },	-- 20x Infused Ruby
-									},
-								}),
-								q(62094, {	-- Restock: Exploratory Meals
-									["repeatable"] = true,
-									--["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165490 },	-- Picky Stefan
-									["coord"] = { 29.0, 44.3, REVENDRETH },
-									["cost"] = {
-										{ "i", 173060, 20 },	-- 20x Aerated Water
-										{ "i", 171274, 1 },		-- 1x Potion of Spectral Stamina
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62078, {	-- Restock: Fashion Accessories
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165494 },	-- Hips
-									["coord"] = { 30.7, 41.7, REVENDRETH },
-									["cost"] = {
-										{ "i", 173141, 1 },		-- 1x Masterful Laestrite Choker
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62084, {	-- Restock: Fine Cutlery
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165490 },	-- Picky Stefan
-									["coord"] = { 29.0, 44.3, REVENDRETH },
-									["cost"] = {
-										{ "i", 171828, 10 },	-- 10x Laestrite Ore
-										{ "c", 1820, 20 },	-- 20x Infused Ruby
-									},
-								}),
-								q(61916, {	-- Restock: Fire Damage
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165493 },	-- Boot the Beaut
-									["coord"] = { 29.8, 45.4, REVENDRETH },
-									["cost"] = {
-										{ "i", 173202, 10 },	-- 20x Shrouded Cloth
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62070, {	-- Restock: Fragrant Flowers
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165494 },	-- Hips
-									["coord"] = { 30.7, 41.7, REVENDRETH },
-									["cost"] = {
-										{ "i", 170554, 1 },		-- 1x Vigil's Torch
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62076, {	-- Restock: Free Press
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165494 },	-- Hips
-									["coord"] = { 30.7, 41.7, REVENDRETH },
-									["cost"] = {
-										{ "i", 173059, 1 },		-- 1x Luminous Ink
-										{ "i", 175886, 10 },	-- 10x Dark Parchment
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62080, {	-- Restock: Herbal Tea
-								--	showed up after Week 1 Ember Court
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165490 },	-- Picky Stefan
-									["coord"] = { 29.0, 44.2, REVENDRETH },
-									["cost"] = {
-										{ "i", 168583, 1 },	-- 1x Widowbloom
-										{ "i", 168589, 1 },	-- 1x Marrowroot
-										{ "c", 1820, 20 },	-- 20x Infused Ruby
-									},
-								}),
-								q(62087, {	-- Restock: Imported Dinnerware
-								--	showed up after Week 3 Ember Court
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165490 },	-- Picky Stefan
-									["coord"] = { 29.0, 44.3, REVENDRETH },
-									["cost"] = {
-										{ "i", 171831, 1 },	-- 1x Phaedrum Ore
-										{ "i", 177061, 5 },	-- 5x Twilight Bark
-										{ "c", 1820, 20 },	-- 20x Infused Ruby
-									},
-								}),
-								q(62095, {	-- Restock: Medic's Tent
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
-									["coord"] = { 32.1, 41.6, REVENDRETH },
-									["cost"] = {
-										{ "i", 173192, 10 },	-- 10x Shrouded Cloth Bandage
-										{ "i", 171267, 1 },		-- 1x Spiritual Healing Potion
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62083, {	-- Restock: Medical Supplies
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165490 },	-- Picky Stefan
-									["coord"] = { 29.0, 44.3, REVENDRETH },
-									["cost"] = {
-										{ "i", 171301, 10 },	-- 10x Spiritual Anti-Venom
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62065, {	-- Restock: My Favorite Table
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165493 },	-- Boot the Beaut
-									["coord"] = { 29.8, 45.4, REVENDRETH },
-									["cost"] = {
-										{ "i", 177061, 10 },	-- 10x Twilight Bark
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62082, {	-- Restock: Personal Stash
-								--	showed up after Week 4 Ember Court
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165490 },	-- Picky Stefan
-									["coord"] = { 29.0, 44.3, REVENDRETH },
-									["cost"] = {
-										{ "i", 172069, 1 },		-- 1x Banana Beef Pudding
-										{ "i", 172068, 1 },		-- 1x Pickled Meat Smoothie
-										{ "i", 172051, 1 },		-- 1x Steak a la Mode
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62069, {	-- Restock: Sinstones
-								--	showed up after Week 2 Ember Court
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165494 },	-- Hips
-									["coord"] = { 30.7, 41.7, REVENDRETH },
-									["cost"] = {
-										{ "c", 1820, 20 },	-- 20x Infused Ruby
-										{ "c", 1816, 50 },	-- 50x Sinstone Fragment
-									},
-								}),
-								q(62075, {	-- Restock: Soul Cages
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165494 },	-- Hips
-									["coord"] = { 30.7, 41.7, REVENDRETH },
-									["cost"] = {
-										{ "i", 172089, 20 },	-- 20x Desolate Leather
-										{ "i", 171832, 1 },		-- 1x Sinvyr Ore
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62067, {	-- Restock: Statues
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165493 },	-- Boot the Beaut
-									["coord"] = { 29.8, 45.4, REVENDRETH },
-									["cost"] = {
-										{ "i", 171840, 60 },	-- 60x Porous Stone
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62062, {	-- Restock: Stolen Rugs
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165493 },	-- Boot the Beaut
-									["coord"] = { 29.8, 45.4, REVENDRETH },
-									["cost"] = {
-										{ "i", 171840, 20 },	-- 20x Porous Stone
-										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62104, {	-- Restock: Stoneborn Reserves
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165496 },
-									["coord"] = { 32.1, 41.6, REVENDRETH },
-									["cost"] = {
-										{ "i", 171841, 10 },	-- 10x Shaded Stone
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62108, {	-- Restock: Strategic Codices
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
-									["coord"] = { 32.1, 41.6, REVENDRETH },
-									["cost"] = {
-										{ "i", 184090, 1 },		-- 1x Potion of the Psychopomp's Speed
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62109, {	-- Restock: Surveillance Equipment
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
-									["coord"] = { 32.1, 41.6, REVENDRETH },
-									["cost"] = {
-										{ "i", 171266, 5 },		-- 5x Potion of the Hidden Spirit
-										{ "i", 171264, 5 },		-- 5x Potion of Shaded Sight
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(62105, {	-- Restock: Unconventional Weapons
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
-									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
-									["coord"] = { 32.1, 41.6, REVENDRETH },
-									["cost"] = {
-										{ "i", 172903, 1 },		-- 1x Nutcracker Grenade
-										{ "i", 172904, 1 },		-- 1x Shadow Land Mine
-										{ "c", 1820, 20 },		-- 20x Infused Ruby
-									},
-								}),
-								q(60236, {	-- RSVP: Cryptkeeper Kassir
-									["sourceQuests"] = {
-										57928,	-- Atonement Crypt Key
-										61704,	-- Ember Court: Guest RSVPs
-									},
-									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
-									["isDaily"] = true,
-									["coord"] = { 70.2, 56.1, REVENDRETH },
-									["g"] = {
-										i(176120),	-- RSVP: Cryptkeeper Kassir
-									},
-								}),
-								q(61129, {	-- RSVP: Droman Aliothe
-									["description"] = "1. Purchase a |cFFFFFFFFNecklace of Dredbat Fangs|r from Ta'tru in Revendreth (|cFFFFFFFF51.1, 78.8|r).  The price of this item changes each week.\n\n2. Exchange the necklace for an |cFFFFFFFFAquamarine Cartel Chit|r from Ta'lan the Antiquary in the Broker's Den in Oribos (|cFFFFFFFF51.6, 44.6|r).\n\n3. Exchange the chit for a |cFFFFFFFFTeregeer Crystal|r from Acquirer Ta'gosh in the Ring of Fates in Oribos (|cFFFFFFFF61.7, 72.0|r).\n\n4. Return to Revendreth and exchange the crystal for the |cFFFFFFFFPreserved Berries|r from Ta'ruca (|cFFFFFFFF51.1, 78.5|r).",
-									["provider"] = { "n", 160894 },	-- Droman Aliothe
-									["isDaily"] = true,	-- according to the API!
-									["coord"] = { 60.1, 53.8, ARDENWEALD },
-									["cost"] = {
-										{ "i", 180973, 1 },	-- Necklace of Dredbat Fangs
-										{ "i", 180971, 1 },	-- Aquamarine Cartel Chit
-										{ "i", 180970, 1 },	-- Teregeer Crystal
-										{ "i", 180774, 1 },	-- Preserved Berries
-									},
-									["g"] = {
-										i(176121),	-- RSVP: Droman Aliothe
-									},
-								}),
-								q(61092, {	-- RSVP: Grandmaster Vole
-									["minReputation"] = { 2445, FRIENDLY },
-									["description"] = "|cFF1eff00Invitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
-									["provider"] = { "n", 163019 },	-- Grandmaster Vole
-									["isDaily"] = true,	-- according to the API!
-									["coord"] = { 52.8, 49.2, MALDRAXXUS },
-									["g"] = {
-										i(176122),	-- RSVP: Grandmaster Vole
-									},
-								}),
-								q(61256, {	-- RSVP: Kleia and Pelagos
-									["sourceQuests"] = { 61880 },	-- Honored Attendance
-									["provider"] = { "n", 174916 },	-- Kleia
-									["isDaily"] = true,	-- according to the API!
-									["coord"] = { 55.8, 86.4, BASTION },
-									["g"] = {
-										i(176123),	-- RSVP: Kleia and Pelagos
-									},
-								}),
-								q(61105, {	-- RSVP: Plague Deviser Marileth
-								--	showed up after Week 3 Ember Court
-									["sourceQuests"] = { 61880 },	-- Honored Attendance (i guess?  all the other quests between them are repeatable so wouldn't work as SQs)
-									["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
-									["isDaily"] = true,	-- according to the API!
-									["coord"] = { 60.4, 71.6, MALDRAXXUS },
-									["g"] = {
-										i(176124),	-- RSVP: Plague Deviser Marileth
-									},
-								}),
-								q(61130, {	-- RSVP: Sika
-								--	available for me after Week 5 Ember Court (1,708 Friendly, not sure if that matters)
-									["provider"] = { "n", 166577 },	-- Sika
-									["isDaily"] = true,	-- according to the API!
-									["coord"] = { 52.7, 82.6, BASTION },
-									["g"] = {
-										i(176125),	-- RSVP: Sika
-									},
-								}),
-								q(60916, {	-- RSVP: Stonehead
-								--	was available for me after doing Week 2 Ember Court
-									["provider"] = { "n", 157199 },	-- Stonehead
-									["isDaily"] = true,
-									["coord"] = { 38.9, 66.0, REVENDRETH },
-									["g"] = {
-										i(178686),	-- RSVP: Stonehead
-									},
-								}),
-								q(61139, {	-- RSVP: Choofa
-									["minReputation"] = { 2445, HONORED },	-- Ember Court - Honored
-									["provider"] = { "n", 160814 },	-- Choofa
-									["isDaily"] = true,
-									["coord"] = { 63.6, 36.6, ARDENWEALD },
-									["g"] = {
-										i(176119),	-- RSVP: Choofa
-									},
-								}),
-								q(63065, {	-- Sanctum Upgrade: The Ember Court
-									["provider"] = { "n", 172605 },	-- Foreman Flatfinger
-									["coord"] = { 55.5, 27.0, SINFALL_REACHES },
-								}),
-								q(63699, {	-- Sika's Best Friend
-									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Sika?
-									["provider"] = { "n", 166577 },	-- Sika
-									["coord"] = { 52.6, 82.5, BASTION },
-								}),
-								q(61898, {	-- Small Bites
-									["minReputation"] = { 2445, FRIENDLY },
-									["provider"] = { "n", 165490 },	-- Picky Stefan
-									["coord"] = { 28.9, 44.2, REVENDRETH },
-									["g"] = {
-										i(181532, {	-- Stock: Appetizers
-											crit(12, {	-- Stock: Appetizers
-												["achievementID"] = 14679,	-- Party Palace
+										},
+									}),
+									q(59661, {	-- Ember Court Rehearsal
+										["sourceQuests"] = { 59660 },	-- A New Court
+										["provider"] = { "n", 164966 },	-- Temel
+										["coord"] = { 27.9, 43.1, REVENDRETH },
+									}),
+									q(61882, {	-- Formal Entertainment
+										["sourceQuests"] = { 61407 },	-- Ember Court: Atoning Rituals
+										["provider"] = { "n", 167332 },	-- Gresit
+										["coord"] = { 71.7, 40.3, REVENDRETH },
+									}),
+									q(61884, {	-- Formal Refreshments
+										["sourceQuests"] = { 61404 },	-- Ember Court: Tubbins's Tea Party
+										["provider"] = { "n", 167863 },	-- Tubbins
+										["coord"] = { 30.9, 57.6, REVENDRETH },
+									}),
+									q(63696, {	-- Grandmaster Vole's Best Friend
+										-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Grandmaster Vole?
+										["provider"] = { "n", 163019 },	-- Grandmaster Vole
+										["coord"] = { 52.8, 49.2, MALDRAXXUS },
+									}),
+									q(61880, {	-- Honored Attendance
+										["sourceQuests"] = { 60236 },	-- RSVP: Cryptkeeper Kassir
+										["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
+										["coord"] = { 70.0, 56.2, REVENDRETH },
+									}),
+									q(63697, {	-- Kleia and Pelagos's Best Friend
+										-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Kleia and Pelagos?
+										["provider"] = { "n", 174916 },	-- Kleia
+										["coord"] = { 55.8, 86.4, BASTION },
+									}),
+									q(62626, {	-- Mullby's Marker
+										["provider"] = { "i", 181765 },	-- Marcel Mullby's Marker
+										["repeatable"] = true,
+									}),
+									q(63213, {	-- Naladu the Elder
+										["provider"] = { "n", 176253 },	-- Elder Naladu
+										["coord"] = { 61.8, 59.8, 1644 },	-- Ember Court
+										["g"] = {
+											i(184627, {	-- Sacrificial Red Envelope
+												i(184628),	-- Elder's Sacrificial Moonstone
 											}),
-										}),
-									},
-								}),
-								q(63700, {	-- Stonehead's Best Friend
-									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Stonehead?
-									["provider"] = { "n", 157199 },	-- Stonehead
-									["coord"] = { 39.0, 66.0, REVENDRETH },
-								}),
-								q(61616, {	-- The Ember Court (Week 1)
-								--	got this as my Week 1 quest.  after the weekly rollover, IsQuestFlaggedCompleted is still returning 'true' for this, so possible it changes every week?
-									["sourceQuests"] = {
-										61882,	-- Formal Entertainment
-										61884,	-- Formal Refreshments
-										61880,	-- Honored Attendance
-									},
-									["provider"] = { "n", 164966 },	-- Temel
-									["isDaily"] = true,	-- according to the API, but Ember Court is a weekly event and this quest returns 'true' after the weekly reset
-									["coord"] = { 28.0, 43.1, REVENDRETH },
-									["g"] = {
-										i(181536, {	-- Guest List Page (1st EC)
-											crit(15, {	-- Second Guest List Page
-												["achievementID"] = 14679,	-- Party Palace
+										},
+									}),
+									q(63698, {	-- Plague Deviser Marileth's Best Friend
+										-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Plague Deviser Marileth?
+										["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
+										["coord"] = { 60.4, 71.6, MALDRAXXUS },
+									}),
+									q(62073, {	-- Restock: Band Shirts
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165494 },	-- Hips
+										["coord"] = { 30.7, 41.7, REVENDRETH },
+										["cost"] = {
+											{ "i", 173202, 10 },	-- 10x Shrouded Cloth
+											{ "i", 172230, 5 },		-- 5x Soul Dust
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62064, {	-- Restock: Broken Mirrors
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165493 },	-- Boot the Beaut
+										["coord"] = { 29.8, 45.4, REVENDRETH },
+										["cost"] = {
+											{ "i", 173109, 5 },	-- 5x Angerseye
+											{ "c", 1820, 20 },	-- 20x Infused Ruby
+										},
+									}),
+									q(62066, {	-- Restock: Dredger Pool
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165493 },	-- Boot the Beaut
+										["coord"] = { 29.8, 45.4, REVENDRETH },
+										["cost"] = {
+											{ "i", 171263, 10 },	-- 10x Potion of Soul Purity
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62106, {	-- Restock: Enchantments
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+										["coord"] = { 32.1, 41.6, REVENDRETH },
+										["cost"] = {
+											{ "i", 172416, 1 },	-- Enchant Bracers - Shaded Hearthing
+											{ "c", 1820, 20 },	-- 20x Infused Ruby
+										},
+									}),
+									q(62094, {	-- Restock: Exploratory Meals
+										["repeatable"] = true,
+										--["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165490 },	-- Picky Stefan
+										["coord"] = { 29.0, 44.3, REVENDRETH },
+										["cost"] = {
+											{ "i", 173060, 20 },	-- 20x Aerated Water
+											{ "i", 171274, 1 },		-- 1x Potion of Spectral Stamina
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62078, {	-- Restock: Fashion Accessories
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165494 },	-- Hips
+										["coord"] = { 30.7, 41.7, REVENDRETH },
+										["cost"] = {
+											{ "i", 173141, 1 },		-- 1x Masterful Laestrite Choker
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62084, {	-- Restock: Fine Cutlery
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165490 },	-- Picky Stefan
+										["coord"] = { 29.0, 44.3, REVENDRETH },
+										["cost"] = {
+											{ "i", 171828, 10 },	-- 10x Laestrite Ore
+											{ "c", 1820, 20 },	-- 20x Infused Ruby
+										},
+									}),
+									q(61916, {	-- Restock: Fire Damage
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165493 },	-- Boot the Beaut
+										["coord"] = { 29.8, 45.4, REVENDRETH },
+										["cost"] = {
+											{ "i", 173202, 10 },	-- 20x Shrouded Cloth
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62070, {	-- Restock: Fragrant Flowers
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165494 },	-- Hips
+										["coord"] = { 30.7, 41.7, REVENDRETH },
+										["cost"] = {
+											{ "i", 170554, 1 },		-- 1x Vigil's Torch
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62076, {	-- Restock: Free Press
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165494 },	-- Hips
+										["coord"] = { 30.7, 41.7, REVENDRETH },
+										["cost"] = {
+											{ "i", 173059, 1 },		-- 1x Luminous Ink
+											{ "i", 175886, 10 },	-- 10x Dark Parchment
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62080, {	-- Restock: Herbal Tea
+									--	showed up after Week 1 Ember Court
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165490 },	-- Picky Stefan
+										["coord"] = { 29.0, 44.2, REVENDRETH },
+										["cost"] = {
+											{ "i", 168583, 1 },	-- 1x Widowbloom
+											{ "i", 168589, 1 },	-- 1x Marrowroot
+											{ "c", 1820, 20 },	-- 20x Infused Ruby
+										},
+									}),
+									q(62087, {	-- Restock: Imported Dinnerware
+									--	showed up after Week 3 Ember Court
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165490 },	-- Picky Stefan
+										["coord"] = { 29.0, 44.3, REVENDRETH },
+										["cost"] = {
+											{ "i", 171831, 1 },	-- 1x Phaedrum Ore
+											{ "i", 177061, 5 },	-- 5x Twilight Bark
+											{ "c", 1820, 20 },	-- 20x Infused Ruby
+										},
+									}),
+									q(62095, {	-- Restock: Medic's Tent
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+										["coord"] = { 32.1, 41.6, REVENDRETH },
+										["cost"] = {
+											{ "i", 173192, 10 },	-- 10x Shrouded Cloth Bandage
+											{ "i", 171267, 1 },		-- 1x Spiritual Healing Potion
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62083, {	-- Restock: Medical Supplies
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165490 },	-- Picky Stefan
+										["coord"] = { 29.0, 44.3, REVENDRETH },
+										["cost"] = {
+											{ "i", 171301, 10 },	-- 10x Spiritual Anti-Venom
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62065, {	-- Restock: My Favorite Table
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165493 },	-- Boot the Beaut
+										["coord"] = { 29.8, 45.4, REVENDRETH },
+										["cost"] = {
+											{ "i", 177061, 10 },	-- 10x Twilight Bark
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62082, {	-- Restock: Personal Stash
+									--	showed up after Week 4 Ember Court
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165490 },	-- Picky Stefan
+										["coord"] = { 29.0, 44.3, REVENDRETH },
+										["cost"] = {
+											{ "i", 172069, 1 },		-- 1x Banana Beef Pudding
+											{ "i", 172068, 1 },		-- 1x Pickled Meat Smoothie
+											{ "i", 172051, 1 },		-- 1x Steak a la Mode
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62069, {	-- Restock: Sinstones
+									--	showed up after Week 2 Ember Court
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165494 },	-- Hips
+										["coord"] = { 30.7, 41.7, REVENDRETH },
+										["cost"] = {
+											{ "c", 1820, 20 },	-- 20x Infused Ruby
+											{ "c", 1816, 50 },	-- 50x Sinstone Fragment
+										},
+									}),
+									q(62075, {	-- Restock: Soul Cages
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165494 },	-- Hips
+										["coord"] = { 30.7, 41.7, REVENDRETH },
+										["cost"] = {
+											{ "i", 172089, 20 },	-- 20x Desolate Leather
+											{ "i", 171832, 1 },		-- 1x Sinvyr Ore
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62067, {	-- Restock: Statues
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165493 },	-- Boot the Beaut
+										["coord"] = { 29.8, 45.4, REVENDRETH },
+										["cost"] = {
+											{ "i", 171840, 60 },	-- 60x Porous Stone
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62062, {	-- Restock: Stolen Rugs
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165493 },	-- Boot the Beaut
+										["coord"] = { 29.8, 45.4, REVENDRETH },
+										["cost"] = {
+											{ "i", 171840, 20 },	-- 20x Porous Stone
+											{ "i", 173202, 10 },	-- 10x Shrouded Cloth
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62104, {	-- Restock: Stoneborn Reserves
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165496 },
+										["coord"] = { 32.1, 41.6, REVENDRETH },
+										["cost"] = {
+											{ "i", 171841, 10 },	-- 10x Shaded Stone
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62108, {	-- Restock: Strategic Codices
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+										["coord"] = { 32.1, 41.6, REVENDRETH },
+										["cost"] = {
+											{ "i", 184090, 1 },		-- 1x Potion of the Psychopomp's Speed
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62109, {	-- Restock: Surveillance Equipment
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+										["coord"] = { 32.1, 41.6, REVENDRETH },
+										["cost"] = {
+											{ "i", 171266, 5 },		-- 5x Potion of the Hidden Spirit
+											{ "i", 171264, 5 },		-- 5x Potion of Shaded Sight
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(62105, {	-- Restock: Unconventional Weapons
+										["repeatable"] = true,
+										["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+										["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+										["coord"] = { 32.1, 41.6, REVENDRETH },
+										["cost"] = {
+											{ "i", 172903, 1 },		-- 1x Nutcracker Grenade
+											{ "i", 172904, 1 },		-- 1x Shadow Land Mine
+											{ "c", 1820, 20 },		-- 20x Infused Ruby
+										},
+									}),
+									q(60236, {	-- RSVP: Cryptkeeper Kassir
+										["sourceQuests"] = {
+											57928,	-- Atonement Crypt Key
+											61704,	-- Ember Court: Guest RSVPs
+										},
+										["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
+										["isDaily"] = true,
+										["coord"] = { 70.2, 56.1, REVENDRETH },
+										["g"] = {
+											i(176120),	-- RSVP: Cryptkeeper Kassir
+										},
+									}),
+									q(61129, {	-- RSVP: Droman Aliothe
+										["description"] = "1. Purchase a |cFFFFFFFFNecklace of Dredbat Fangs|r from Ta'tru in Revendreth (|cFFFFFFFF51.1, 78.8|r).  The price of this item changes each week.\n\n2. Exchange the necklace for an |cFFFFFFFFAquamarine Cartel Chit|r from Ta'lan the Antiquary in the Broker's Den in Oribos (|cFFFFFFFF51.6, 44.6|r).\n\n3. Exchange the chit for a |cFFFFFFFFTeregeer Crystal|r from Acquirer Ta'gosh in the Ring of Fates in Oribos (|cFFFFFFFF61.7, 72.0|r).\n\n4. Return to Revendreth and exchange the crystal for the |cFFFFFFFFPreserved Berries|r from Ta'ruca (|cFFFFFFFF51.1, 78.5|r).",
+										["provider"] = { "n", 160894 },	-- Droman Aliothe
+										["isDaily"] = true,	-- according to the API!
+										["coord"] = { 60.1, 53.8, ARDENWEALD },
+										["cost"] = {
+											{ "i", 180973, 1 },	-- Necklace of Dredbat Fangs
+											{ "i", 180971, 1 },	-- Aquamarine Cartel Chit
+											{ "i", 180970, 1 },	-- Teregeer Crystal
+											{ "i", 180774, 1 },	-- Preserved Berries
+										},
+										["g"] = {
+											i(176121),	-- RSVP: Droman Aliothe
+										},
+									}),
+									q(61092, {	-- RSVP: Grandmaster Vole
+										["minReputation"] = { 2445, FRIENDLY },
+										["description"] = "|cFF1eff00Invitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
+										["provider"] = { "n", 163019 },	-- Grandmaster Vole
+										["isDaily"] = true,	-- according to the API!
+										["coord"] = { 52.8, 49.2, MALDRAXXUS },
+										["g"] = {
+											i(176122),	-- RSVP: Grandmaster Vole
+										},
+									}),
+									q(61256, {	-- RSVP: Kleia and Pelagos
+										["sourceQuests"] = { 61880 },	-- Honored Attendance
+										["provider"] = { "n", 174916 },	-- Kleia
+										["isDaily"] = true,	-- according to the API!
+										["coord"] = { 55.8, 86.4, BASTION },
+										["g"] = {
+											i(176123),	-- RSVP: Kleia and Pelagos
+										},
+									}),
+									q(61105, {	-- RSVP: Plague Deviser Marileth
+									--	showed up after Week 3 Ember Court
+										["sourceQuests"] = { 61880 },	-- Honored Attendance (i guess?  all the other quests between them are repeatable so wouldn't work as SQs)
+										["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
+										["isDaily"] = true,	-- according to the API!
+										["coord"] = { 60.4, 71.6, MALDRAXXUS },
+										["g"] = {
+											i(176124),	-- RSVP: Plague Deviser Marileth
+										},
+									}),
+									q(61130, {	-- RSVP: Sika
+									--	available for me after Week 5 Ember Court (1,708 Friendly, not sure if that matters)
+										["provider"] = { "n", 166577 },	-- Sika
+										["isDaily"] = true,	-- according to the API!
+										["coord"] = { 52.7, 82.6, BASTION },
+										["g"] = {
+											i(176125),	-- RSVP: Sika
+										},
+									}),
+									q(60916, {	-- RSVP: Stonehead
+									--	was available for me after doing Week 2 Ember Court
+										["provider"] = { "n", 157199 },	-- Stonehead
+										["isDaily"] = true,
+										["coord"] = { 38.9, 66.0, REVENDRETH },
+										["g"] = {
+											i(178686),	-- RSVP: Stonehead
+										},
+									}),
+									q(61139, {	-- RSVP: Choofa
+										["minReputation"] = { 2445, HONORED },	-- Ember Court - Honored
+										["provider"] = { "n", 160814 },	-- Choofa
+										["isDaily"] = true,
+										["coord"] = { 63.6, 36.6, ARDENWEALD },
+										["g"] = {
+											i(176119),	-- RSVP: Choofa
+										},
+									}),
+									q(63065, {	-- Sanctum Upgrade: The Ember Court
+										["provider"] = { "n", 172605 },	-- Foreman Flatfinger
+										["coord"] = { 55.5, 27.0, SINFALL_REACHES },
+									}),
+									q(63699, {	-- Sika's Best Friend
+										-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Sika?
+										["provider"] = { "n", 166577 },	-- Sika
+										["coord"] = { 52.6, 82.5, BASTION },
+									}),
+									q(61898, {	-- Small Bites
+										["minReputation"] = { 2445, FRIENDLY },
+										["provider"] = { "n", 165490 },	-- Picky Stefan
+										["coord"] = { 28.9, 44.2, REVENDRETH },
+										["g"] = {
+											i(181532, {	-- Stock: Appetizers
+												crit(12, {	-- Stock: Appetizers
+													["achievementID"] = 14679,	-- Party Palace
+												}),
 											}),
-										}),
-									},
-								}),
-								q(61526, {	-- The Ember Court (Week 2 / 3)
-									["sourceQuests"] = { 61616 },	-- The Ember Court (Week 1)
-									["provider"] = { "n", 164966 },	-- Temel
-									["isDaily"] = true,	-- according to the API
-									["coord"] = { 28.0, 43.1, REVENDRETH },
-								}),
-								q(61525, {	-- The Ember Court (maybe this is the longer version that unlocks upon hitting Friendly?  maybe?)
-									["provider"] = { "n", 164966 },	-- Temel
-									["isDaily"] = true,	-- according to the API
-									["coord"] = { 28.0, 43.1, REVENDRETH },
-								}),
-								q(60339, {	-- The Ember Court (Honored)
-									["provider"] = { "n", 164966 },	-- Temel
-									["isDaily"] = true,	-- according to the API
-									["coord"] = { 28.0, 43.1, REVENDRETH },
-								}),
-								q(61896, {	-- Undercover Security
-									["minReputation"] = { 2445, REVERED },
-									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
-									["coord"] = { 32.0, 41.6, REVENDRETH },
-									["g"] = {
-										i(181530, {	-- Stock: Greeting Kits
-											crit(11, {	-- Stock: Greeting Kits
-												["achievementID"] = 14679,	-- Party Palace
+										},
+									}),
+									q(63700, {	-- Stonehead's Best Friend
+										-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Stonehead?
+										["provider"] = { "n", 157199 },	-- Stonehead
+										["coord"] = { 39.0, 66.0, REVENDRETH },
+									}),
+									q(61616, {	-- The Ember Court (Week 1)
+									--	got this as my Week 1 quest.  after the weekly rollover, IsQuestFlaggedCompleted is still returning 'true' for this, so possible it changes every week?
+										["sourceQuests"] = {
+											61882,	-- Formal Entertainment
+											61884,	-- Formal Refreshments
+											61880,	-- Honored Attendance
+										},
+										["provider"] = { "n", 164966 },	-- Temel
+										["isDaily"] = true,	-- according to the API, but Ember Court is a weekly event and this quest returns 'true' after the weekly reset
+										["coord"] = { 28.0, 43.1, REVENDRETH },
+										["g"] = {
+											i(181536, {	-- Guest List Page (1st EC)
+												crit(15, {	-- Second Guest List Page
+													["achievementID"] = 14679,	-- Party Palace
+												}),
 											}),
-										}),
-									},
+										},
+									}),
+									q(61526, {	-- The Ember Court (Week 2 / 3)
+										["sourceQuests"] = { 61616 },	-- The Ember Court (Week 1)
+										["provider"] = { "n", 164966 },	-- Temel
+										["isDaily"] = true,	-- according to the API
+										["coord"] = { 28.0, 43.1, REVENDRETH },
+									}),
+									q(61525, {	-- The Ember Court (maybe this is the longer version that unlocks upon hitting Friendly?  maybe?)
+										["provider"] = { "n", 164966 },	-- Temel
+										["isDaily"] = true,	-- according to the API
+										["coord"] = { 28.0, 43.1, REVENDRETH },
+									}),
+									q(60339, {	-- The Ember Court (Honored)
+										["provider"] = { "n", 164966 },	-- Temel
+										["isDaily"] = true,	-- according to the API
+										["coord"] = { 28.0, 43.1, REVENDRETH },
+									}),
+									q(61896, {	-- Undercover Security
+										["minReputation"] = { 2445, REVERED },
+										["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+										["coord"] = { 32.0, 41.6, REVENDRETH },
+										["g"] = {
+											i(181530, {	-- Stock: Greeting Kits
+												crit(11, {	-- Stock: Greeting Kits
+													["achievementID"] = 14679,	-- Party Palace
+												}),
+											}),
+										},
+									}),
 								}),
 							}),
 							n(-962, {	-- Tier 2: Homegrown Help
