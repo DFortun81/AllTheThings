@@ -3711,7 +3711,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					-- 	o = app.NestForOtherCost(o, "i", paramB);
 					-- 	tinsert(filteredObjects, o);
 					-- end
-					MergeObjects(usedToBuy.g, costResults, true);
+					NestObjects(usedToBuy, costResults, true);
 					NestObject(root, usedToBuy);
 				end
 			end
@@ -4718,9 +4718,10 @@ end
 -- Pulls the field search results for the rawID's and passes the results into UpdateSearchResults
 local function UpdateRawIDs(field, ids)
 	if ids and #ids > 0 then
-		local groups = {};
+		local groups, search = {};
 		for _,id in ipairs(ids) do
-			MergeObjects(groups, SearchForField(field, id));
+			search = SearchForField(field, id);
+			MergeObjects(groups, search);
 		end
 		UpdateSearchResults(groups);
 	end
@@ -10103,10 +10104,7 @@ app.TryPopulateQuestRewards = function(questObject)
 					for k,o in ipairs(item.g) do
 						if o.itemID == 140495 then	-- Torn Invitation
 							local searchResults = app.SearchForField("questID", 44058);	-- Volpin the Elusive
-							if searchResults and #searchResults > 0 then
-								if not o.g then o.g = {}; end
-								MergeObjects(o.g, searchResults, true);
-							end
+							NestObjects(o, searchResults, true);
 						end
 					end
 				end
@@ -12408,8 +12406,7 @@ local function NestSourceQuests(root, addedQuests, depth)
 		-- sort quests with less sub-quests to the top
 		if prereqs then
 			insertionSort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
-			if not root.g then root.g = prereqs;
-			else MergeObjects(root.g, prereqs); end
+			NestObjects(root, prereqs);
 		end
 	end
 	-- If the root quest is provided by an Item, then show that Item directly under the root Quest so it can easily show tooltip/Source information if desired
@@ -15681,7 +15678,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					for u,temp in pairs(unlinked) do
 						local h = holidays[u];
 						if h then
-							MergeObjects(h.g, temp);
+							NestObjects(h, temp);
 						else
 							-- Attempt to scan for the main holiday header.
 							local done = false;
@@ -17966,14 +17963,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 												-- 	end
 												-- end
 											end
-											if data.g and #data.g > 0 then
-												if not item.g then
-													item.g = {};
-													item.progress = 0;
-													item.total = 0;
-												end
-												MergeObjects(item.g, data.g);
-											end
+											NestObjects(item, data.g);	-- no need to clone, everything is re-created at the end
 										end
 									end
 									if ACKCHUALLY then
