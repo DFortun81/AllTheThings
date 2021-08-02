@@ -14,7 +14,6 @@ _.Zones =
 					}),
 				}),
 				prof(ARCHAEOLOGY, {
-					i(137867),	-- Design: Shadowruby Band (Rank 3)
 					q(41190, {	-- Crystal Eyes
 						["sourceQuests"] = { 41189 },	-- A New Lead
 						["requireSkill"] = ARCHAEOLOGY,
@@ -360,6 +359,11 @@ _.Zones =
 						["requireSkill"] = HERBALISM,
 						["sourceQuests"] = { 40024 },	-- Foxflower Sample
 						["provider"] = { "i", 129137 },	-- Nibbled Foxflower Stem
+					}),
+				}),
+				prof(JEWELCRAFTING, {	-- Technically Archaeology, but we only use 1 filter.
+					i(137867, {	-- Design: Shadowruby Band (Rank 3)
+						["description"] = "Can drop from digsites via Archaeology.",
 					}),
 				}),
 				prof(LEATHERWORKING, {
