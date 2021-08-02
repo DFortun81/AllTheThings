@@ -579,6 +579,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.2, KORTHIA },
 				}),
+				q(63779, {	-- A Semblance of Normalcy
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 179134 },	-- Pelagos
+					["isDaily"] = true,
+					["coord"] = { 61.7, 24.0, KORTHIA },
+				}),
 				q(63783, {	-- Anima Reclamation
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
@@ -749,6 +755,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.3, KORTHIA },
 				}),
+				q(64166, {	-- Random Memory Access
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 179134 },	-- Pelagos
+					["isDaily"] = true,
+					["coord"] = { 61.7, 24.0, KORTHIA },
+				}),
 				q(63950, {	-- Razorwing Talons
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178837 },	-- Lord Herne
@@ -829,12 +841,6 @@ _.Zones =
 				}),
 
 			--	ptr data
-				q(63779, {	-- A Semblance of Normal
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 179134 },	-- Pelagos
-					["isDaily"] = true,
-					["coord"] = { 61.7, 24.0, KORTHIA },
-				}),
 				q(63793, {	-- Broker's Bounty: Ensydius the Defiler
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
@@ -903,12 +909,6 @@ _.Zones =
 					["g"] = {
 						ach(15056),		-- Friend of Bloop
 					},
-				}),
-				q(64166, {	-- Random Memory Access
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 179134 },	-- Pelagos
-					["isDaily"] = true,
-					["coord"] = { 61.7, 24.0, KORTHIA },
 				}),
 				q(63954, {	-- Sealed Secrets
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance

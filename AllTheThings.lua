@@ -15988,6 +15988,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			LocationTrigger();
 		end);
 		self:RegisterEvent("NEW_WMO_CHUNK");
+		self:RegisterEvent("WAYPOINT_UPDATE");
 		self:RegisterEvent("SCENARIO_UPDATE");
 		self:RegisterEvent("ZONE_CHANGED_INDOORS");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");

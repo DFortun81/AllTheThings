@@ -240,7 +240,7 @@ _.Zones =
 						crit(3, {	-- Pus-In-Boots
 							["description"] = "Under the bridge.",
 							["coord"] = { 50.2, 60.2, MALDRAXXUS },
-							["crs"] = { 174223 },
+							["crs"] = { 174223 },	-- Pus-In-Boots
 						}),
 						crit(4, {	-- Envy
 							["coord"] = { 65.2, 50.6, MALDRAXXUS },
@@ -299,9 +299,15 @@ _.Zones =
 						}),
 					},
 				}),
-				pvp(ach(14513)),	-- Tour of Duty: Maldraxxus
+				ach(14513, {	-- Tour of Duty: Maldraxxus
+					["pvp"] = true,
+				}),
 				ach(14312, {	-- Treasures of Maldraxxus
+
+					--	["achievementID"] = 14312,	-- Treasures of Maldraxxus
+
 					crit(1, {	-- Ornate Bone Shield
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
 						["objectID"] = 347444,	-- Ornate Bone Shield
 						["questID"] = 59358,
 						["coord"] = { 47.2, 62.1, MALDRAXXUS },
@@ -310,8 +316,9 @@ _.Zones =
 						},
 					}),
 					crit(2, {	-- Kyrian Keepsake
-						["npcID"] = 169664,	-- Kyrian Corpse
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
 						["coord"] = { 32.7, 21.2, MALDRAXXUS },
+						["cr"] = 169664,	-- Kyrian Corpse
 						["g"] = {
 							i(180085, {	-- Kyrian Keepsake
 								["questID"] = 60587,	-- quest pops for opening the keepsake, not looting it
@@ -322,11 +329,13 @@ _.Zones =
 						},
 					}),
 					crit(3, {	-- Halis's Lunch Pail
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
 						["objectID"] = 353380,	-- Halis's Lunch Pail
 						["questID"] = 60730,
 						["coord"] = { 30.7, 28.7, MALDRAXXUS },
 					}),
 					crit(4, {	-- Vat of Conspicuous Slime
+						["achievementID"] = 14312,	-- Treasures of Maldraxxus
 						["description"] = "Pick up the |cFFFFFFFFEmpty Plague Bottle|r from the table next to the vat.",
 						["objectID"] = 355865,	-- Vat of Conspicuous Slime
 						["questID"] = 61444,

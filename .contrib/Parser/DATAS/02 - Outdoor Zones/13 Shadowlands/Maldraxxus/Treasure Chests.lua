@@ -20,19 +20,21 @@ _.Zones =
 					},
 				}),
 				o(352086, {	-- Blackhound Cache
-					-- ["customCollect"] = "SL_COV_NEC",
-					["description"] = "Requires |cFF40bf40Necrolord Covenant|r using Visectus to open. Interactible Toys, Soulshape, etc. no longer works as you get teleported out.\n\nIf the door is already open, a character from any Covenant may walk in and loot the treasure.",
+					["description"] = "Requires |cFF40bf40Necrolord Covenant|r using Visectus to open. Interactible Toys, Soulshape, etc. no longer work, as you get teleported out.\n\nIf the door is already open, a character from any covenant may walk in and loot the treasure.",
 					["questID"] = 60368,
 					["isDaily"] = true,
 					["coord"] = { 44.0, 39.8, MALDRAXXUS },
 					["g"] = {
-						i(184318),	-- Battlecry of Krexus
-						i(183827),	-- Blacksteel Backplate
-						i(183824, {	-- Cache of Spare Weapons
+					--	Epic
+						i(181800, {	-- Standard of the Blackhound Warband
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
 						}),
+					--	Blue
+						i(184318),	-- Battlecry of Krexus
 						i(183619),	-- Everlasting Boneforged Greataxe
-						i(181800, {	-- Standard of the Blackhound Warband
+					--	Green
+						i(183827),	-- Blacksteel Backplate
+						i(183824, {	-- Cache of Spare Weapons
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
 						}),
 					},
@@ -114,6 +116,16 @@ _.Zones =
 						157037,	-- Grabber Ga'shock <Supply Officer>
 						157036,	-- Pilfer Bur'tok <Supply Officer>
 						157028,	-- Thalrix the Slicer
+					},
+				}),
+				o(347444, {	-- Ornate Bone Shield
+				--	["questID"] = 59358,
+					["coord"] = { 47.2, 62.1, MALDRAXXUS },
+					["g"] = {
+						crit(1, {	-- Ornate Bone Shield
+							["achievementID"] = 14312,	-- Treasures of Maldraxxus
+						}),
+						i(180749),	-- Hauk's Battle-Scarred Bulwark
 					},
 				}),
 				o(345458, {	-- Prize Bag
@@ -224,4 +236,9 @@ _.Zones =
 			}),
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+--	Treasures of Maldraxxus achievement
+	q(59358),	-- Ornate Bone Shield
 };

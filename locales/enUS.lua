@@ -2020,6 +2020,7 @@ app.L = {
 		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
 		[-980] = "Shared Treasures",											-- Shared Treasures
 		[-981] = GetSpellInfo(348869),											-- Conduits
+		[-988] = select(1, GetSpellInfo(343124)),								-- Giant Cache of Epic Treasure
 
 	-- SL Maldraxxus/Necrolord
 		[-920] = "Covenant: Necrolord",											-- Covenant: Necrolord
