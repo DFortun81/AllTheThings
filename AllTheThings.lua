@@ -2994,6 +2994,8 @@ local function FillPurchases(group, depth)
 	-- default to 2 levels of filling, i.e. 0) Raid Essence -> 1) Tier Token -> 2) Item
 	depth = depth or 2;
 	if depth <= 0 then return; end
+	-- do not fill mark of honor Purchases
+	if group.itemID == 137642 then return; end
 
 	if group.costCollectibles or (group.collectibleAsCost and group.costCollectibles) then
 		-- Nest new copies of the cost collectible objects of this group under itself
