@@ -2996,6 +2996,8 @@ local function FillPurchases(group, depth)
 	if depth <= 0 then return; end
 	-- do not fill mark of honor Purchases
 	if group.itemID == 137642 then return; end
+	-- do not fill 'saved' groups, or groups under saved groups unless in Acct or Debug mode
+	if (group.saved or (group.parent and group.parent.saved)) and not app.MODE_DEBUG_OR_ACCOUNT then return; end
 
 	if group.costCollectibles or (group.collectibleAsCost and group.costCollectibles) then
 		-- Nest new copies of the cost collectible objects of this group under itself
