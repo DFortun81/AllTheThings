@@ -3996,6 +3996,7 @@ _.HiddenQuestTriggers = {
 		q(62470),	-- triggered after crafting Magician's Hat at Abominable Stitching Table
 		q(62577),	-- triggered after crafting Operational Instructions at Abominable Stitching Table
 		q(61561),	-- triggered after crafting Outlaw Flag at Abominable Stitching Table
+		q(62826),	-- triggered after crafting Pirate Hat at Abominable Stitching Table
 		q(62576),	-- triggered after crafting Plague Pack at Abominable Stitching Table
 		q(62476),	-- triggered after crafting Red Eye Lens at Abominable Stitching Table
 		q(62825),	-- triggered after crafting Shoulder Sprouts at Abominable Stitching Table
