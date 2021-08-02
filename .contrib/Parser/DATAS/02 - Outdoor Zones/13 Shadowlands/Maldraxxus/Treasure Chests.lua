@@ -119,10 +119,9 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-988,   {		-- Giant Cache of Epic Treasure
+				o(358531, {		-- Giant Cache of Epic Treasure
 					["questID"] = 62602,
 					["coord"] = { 41.4, 19.7, MALDRAXXUS },
-					["crs"] = { 174663 },	-- Spinebug
 					["g"] = {
 						p(3047),	-- Spinebug
 					},

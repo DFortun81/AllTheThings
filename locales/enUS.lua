@@ -2020,7 +2020,6 @@ app.L = {
 		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
 		[-980] = "Shared Treasures",											-- Shared Treasures
 		[-981] = GetSpellInfo(348869),											-- Conduits
-		[-988] = select(1, GetSpellInfo(343124)),								-- Giant Cache of Epic Treasure
 
 	-- SL Maldraxxus/Necrolord
 		[-920] = "Covenant: Necrolord",											-- Covenant: Necrolord
@@ -2096,8 +2095,8 @@ app.L = {
 		[-985] = select(2, GetAchievementInfo(14483)),							-- Coldheart Interstitia
 		[-986] = select(2, GetAchievementInfo(14488)),							-- Mort'regar
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
-		
-		
+
+
 		[-976] = "Korthian Sets",												-- Korthian Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",

@@ -1964,6 +1964,7 @@ _.ObjectNames = {
 	[358318] = "R. Suavel Dredger Portrait",
 	[358319] = "Sorceror's Note",
 	[358382] = "Wanted: Chelicera",
+	[358531] = "Giant Cache of Epic Treasure",
 	[358533] = "Forgotten Supplies",
 	[358855] = "Damaged Safe Fall Pack",
 	[360054] = "Slime Cat",
