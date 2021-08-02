@@ -833,9 +833,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24601,	-- The Nightmare Scar
 				}),
-				q(25198, {	-- Winnoa Pineforest
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(25082, {	-- Working the Bugs Out
 					["provider"] = { "n", 39085 },	-- Logan Talonstrike
 					["coord"] = { 49.1, 67.8, SOUTHERN_BARRENS },
@@ -859,3 +856,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(25198),	-- Winnoa Pineforest
+	}),
+});

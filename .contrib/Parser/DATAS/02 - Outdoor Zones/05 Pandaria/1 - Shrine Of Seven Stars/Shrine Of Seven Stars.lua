@@ -49,13 +49,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					]]--
-					q(31373, {	-- The Order of the Cloud Serpent
-					--	possibly removed, maybe gated behind completion of a specific quest/questline
-						["isBreadcrumb"] = true,
-						["coord"] = { 85.8, 62.2, 393 },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 64484 },	-- Instructor Windspear
-					}),
 					--[[
 					q(31386, {	-- The Shado-Pan Offensive
 						["races"] = ALLIANCE_ONLY,
@@ -1902,3 +1895,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(31373),	-- The Order of the Cloud Serpent
+	}),
+});

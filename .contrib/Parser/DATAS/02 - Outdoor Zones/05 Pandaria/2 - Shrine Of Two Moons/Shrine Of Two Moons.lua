@@ -74,13 +74,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 --]]
-					q(31375, {	-- The Order of the Cloud Serpent
-					--	possibly removed, maybe gated behind completion of a specific quest/questline
-						["isBreadcrumb"] = true,
-						["coord"] = { 60.6, 21.8, 391 },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 64533 },	-- Wei Lakebreeze
-					}),
 					--[[
 					q(31388, {	-- The Shado-Pan Offensive
 						["races"] = HORDE_ONLY,
@@ -1944,3 +1937,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(31375),	-- The Order of the Cloud Serpent
+	}),
+});
