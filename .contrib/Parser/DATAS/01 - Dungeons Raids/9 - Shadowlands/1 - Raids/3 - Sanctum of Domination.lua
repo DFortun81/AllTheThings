@@ -1608,6 +1608,7 @@ _.HiddenQuestTriggers = {
 	q(64479),	-- Remnant of Ner'zhul (Heroic) (Heroic-Week 2)
 	q(64632),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
 	q(64659),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
+	q(64480),	-- Remnant of Ner'zhul (Mythic)
 
 	q(64485),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
 	q(64486),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
