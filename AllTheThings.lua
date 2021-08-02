@@ -2158,14 +2158,12 @@ NestObjects = function(p, g, newCreate)
 	if not g or #g == 0 then return; end
 	if p.g then
 		MergeObjects(p.g, g, newCreate);
-	elseif newCreate then
+	else
 		local g_clone = {};
 		for _,o in ipairs(g) do
-			tinsert(g_clone, CreateObject(o));
+			MergeObject(g_clone, o, nil, newCreate);
 		end
 		p.g = g_clone;
-	else
-		p.g = g;
 	end
 end
 end)();
@@ -2991,54 +2989,30 @@ local function BuildContainsInfo(item, entries, paramA, paramB, indent, layer)
 end
 -- Fills & returns a group with its 'cost' references, along with all sub-groups recursively if specified
 -- This should only be used on a cloned group so the source group is not contaminated
--- The 'cost' tag will be removed afterward so as to not double the tooltip info for the item
--- app._PurchaseTracking = nil;
-local function FillPurchases(group)
-	-- While in theory this is neat, it turns out the logic needs to be more complicated due to places where Thing A is a cost to Quest A
-	-- which reward Thing B which is a cost to Quest B which rewards Thing A ... etc. like AQ ring quests etc.
+-- The 'cost' of the group will be removed afterward so as to not double the tooltip info for the item
+local function FillPurchases(group, depth)
+	-- default to 2 levels of filling, i.e. 0) Raid Essence -> 1) Tier Token -> 2) Item
+	depth = depth or 2;
+	if depth <= 0 then return; end
 
-	--[[]]
-	-- local cleanUp;
-	-- if not app._PurchaseTracking then
-	-- 	app._PurchaseTracking = {};
-	-- 	cleanUp = true;
-	-- end
-	-- local trackingKey = app.GetHash(group);
-	-- if group.key == "itemID" and group.itemID == 105867 then app.DEBUG_PRINT = group; end
-	-- group has cost collectibles or is collectible as cost (to thus generate cost collectibles)
-	-- if not app._PurchaseTracking[trackingKey] then
-	-- 	app._PurchaseTracking[trackingKey] = true;
-	-- Fill Purchases of sub-groups before adding purchases to sub-groups... please no infinite recursion
+	if group.costCollectibles or (group.collectibleAsCost and group.costCollectibles) then
+		-- Nest new copies of the cost collectible objects of this group under itself
+		-- print("Filled",#group.costCollectibles,"under",group.key,group.key and group[group.key])
+		NestObjects(group, group.costCollectibles, true);
+		-- reduce the depth by one since a cost has been filled
+		depth = depth - 1;
+		-- mark this group as no-longer collectible as a cost since its collectible contents have been filled under itself
+		group.collectibleAsCost = false;
+	end
+	-- Fill Purchases of sub-groups
 	if group.g then
 		for _,s in ipairs(group.g) do
-			FillPurchases(s);
+			FillPurchases(s, depth);
 		end
 	end
-	-- print("FillPurchases",app.GetHash(group))
-	if group.costCollectibles then
-		if not group.g then group.g = {}; end
-		MergeObjects(group.g, group.costCollectibles, true);
-	elseif group.collectibleAsCost and group.costCollectibles then
-		if not group.g then group.g = {}; end
-		MergeObjects(group.g, group.costCollectibles, true);
-	end
-	-- print("#group.g",group.g and #group.g)
-	-- do recursion after potentially creating new sub-groups
-	-- if recursive and group.g then
-	-- 	local level = (recursive == true and 3) or (recursive > 1 and recursive - 1) or nil;
-	-- 	print("Next level",level)
-	-- 	for _,s in ipairs(group.g) do
-	-- 		FillPurchases(s, level);
-	-- 	end
-	-- end
-	-- end
-	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
-	-- if cleanUp then
-	-- 	app._PurchaseTracking = nil;
-	-- end
 	return group;
-	--]]
 end
+app.FillPurchases = FillPurchases;
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if not search then return nil; end
 	local now = time();
@@ -12532,7 +12506,7 @@ function app:CreateMiniListForGroup(group)
 			-- Fill any purchasable things for the sub-groups
 			-- if group.g then
 			-- 	for _,sub in ipairs(group.g) do
-			-- 		FillPurchases(sub);
+			app.FillPurchases(group);
 			-- 	end
 			-- end
 			-- Merge any symbolic linked data into the sub-groups
@@ -15848,7 +15822,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				FillSymLinks(self.data, true);
 				-- Fill purchasable things under any currency from this zone
 				-- TODO: this is really weird in Dalaran with ICC tier pieces...
-				-- FillPurchases(self.data);
+				FillPurchases(self.data);
 
 				-- Check to see completion...
 				-- print("build groups");
