@@ -361,7 +361,7 @@ _.Zones =
 						["provider"] = { "i", 129137 },	-- Nibbled Foxflower Stem
 					}),
 				}),
-				prof(JEWELCRAFTING, {	-- Technically Archaeology, but we only use 1 filter.
+				prof(JEWELCRAFTING, {	-- Technically Archaeology, but we can only use 1 filter atm.
 					i(137867, {	-- Design: Shadowruby Band (Rank 3)
 						["description"] = "Can drop from digsites via Archaeology.",
 					}),
