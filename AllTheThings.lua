@@ -3628,7 +3628,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- Merge the g of the obj into the merged results
 				if o.g then
 					-- print("Merge root g",#o.g,o.key,o[o.key])
-					MergeObjects(root.g, o.g);
+					NestObjects(root, o.g);
 				end
 			-- otherwise
 			else
@@ -3705,7 +3705,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							tinsert(filteredObjects, o);
 						end
 					end
-					MergeObjects(usedToBuy.g, filteredObjects, true);
+					NestObjects(usedToBuy, filteredObjects, true);
 					NestObject(root, usedToBuy);
 				end
 			elseif paramA == "itemID" or (paramA == "s" and group.itemID) then

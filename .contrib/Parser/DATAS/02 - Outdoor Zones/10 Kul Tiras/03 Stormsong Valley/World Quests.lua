@@ -27,10 +27,6 @@ _.Zones =
 						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52199, {	-- Rum- Paaaage!
-						["isWorldQuest"] = true,
-						["lvl"] = { 50 },
-					}),
 					q(52345, {	-- Work Order: Ravenberry Tarts (this quest was added to Zuldazar WQ file but I'm not sure it can spawn there)
 						["isWorldQuest"] = true,
 						["lvl"] = { 50 },
@@ -541,6 +537,10 @@ _.Zones =
 					q(52979, {	-- Ritual Cleansing
 						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					}),
+					q(52199, {	-- Rum- Paaaage!
+						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
 					q(52164, {	-- Rum- Paaaage!
