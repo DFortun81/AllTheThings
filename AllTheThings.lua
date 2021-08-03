@@ -3002,7 +3002,7 @@ local function FillPurchases(group, depth)
 	depth = depth or 2;
 	if depth <= 0 then return; end
 	-- do not fill purchases on certain items
-	if app.SkipPurchases[group.itemID] then return; end
+	if app.SkipPurchases[group.itemID or 0] then return; end
 	-- do not fill 'saved' groups, or groups under saved groups unless in Acct or Debug mode
 	if (group.saved or (group.parent and group.parent.saved)) and not app.MODE_DEBUG_OR_ACCOUNT then return; end
 
