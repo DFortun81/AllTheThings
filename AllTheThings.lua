@@ -2987,6 +2987,11 @@ local function BuildContainsInfo(item, entries, paramA, paramB, indent, layer)
 	end
 	app.ItemBindFilter = oldItemBindFilter;
 end
+-- ItemID's which should be skipped when filling purchases
+app.SkipPurchases = {
+	[137642] = 1,	-- Mark of Honor
+	[23247] = 1,	-- Burning Blossom
+}
 -- Fills & returns a group with its 'cost' references, along with all sub-groups recursively if specified
 -- This should only be used on a cloned group so the source group is not contaminated
 -- The 'cost' of the group will be removed afterward so as to not double the tooltip info for the item
@@ -2994,8 +2999,8 @@ local function FillPurchases(group, depth)
 	-- default to 2 levels of filling, i.e. 0) Raid Essence -> 1) Tier Token -> 2) Item
 	depth = depth or 2;
 	if depth <= 0 then return; end
-	-- do not fill mark of honor Purchases
-	if group.itemID == 137642 then return; end
+	-- do not fill purchases on certain items
+	if app.SkipPurchases[group.itemID] then return; end
 	-- do not fill 'saved' groups, or groups under saved groups unless in Acct or Debug mode
 	if (group.saved or (group.parent and group.parent.saved)) and not app.MODE_DEBUG_OR_ACCOUNT then return; end
 
