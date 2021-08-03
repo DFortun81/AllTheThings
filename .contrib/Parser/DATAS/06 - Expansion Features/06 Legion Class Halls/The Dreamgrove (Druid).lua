@@ -704,7 +704,7 @@ _.ExpansionFeatures =
 								}),
 								artifact(427, {	-- Standard Tauren
 									["displayID"] = 66777,	-- Brown Druid Form
-									["races"] = { TAUREN, HIGHMOUNTAIN },
+									["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
 								}),
 								artifact(428, {	-- Standard Worgen / Kultiran
 									["displayID"] = 66778,	-- Light Brown Form
@@ -879,7 +879,7 @@ _.ExpansionFeatures =
 									["races"] = { TROLL, ZANDALARI },
 								}),
 								artifact(264, {	-- Standard Tauren
-									["races"] = { TAUREN, HIGHMOUNTAIN },
+									["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
 								}),
 								artifact(266, {	-- Standard Worgen / Kultiran
 									["races"] = { WORGEN, KULTIRAN },

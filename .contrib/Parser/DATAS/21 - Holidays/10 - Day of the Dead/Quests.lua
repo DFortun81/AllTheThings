@@ -152,7 +152,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 			q(14176, {	-- The Grateful Dead — Thunder Bluff, Tauren / Highmountain Tauren
 				["provider"] = { "n", 34480 },	-- Cheerful Tauren Spirit
 				["isYearly"] = true,
-				["races"] = { TAUREN, HIGHMOUNTAIN },
+				["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
 				["coord"] = { 56.8, 17.6, THUNDER_BLUFF },
 				["maps"] = { THUNDER_BLUFF },
 				["g"] = {

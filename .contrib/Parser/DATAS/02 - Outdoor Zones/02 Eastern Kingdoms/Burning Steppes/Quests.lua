@@ -149,7 +149,7 @@ _.Zones =
 				q(28429, {	-- A Perfect Costume (NEEDS CONFIRMATION ON HIGHMOUNTAIN TAUREN)
 					["provider"] = { "n", 48001 },	-- Thelaron Direneedle
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["races"] = { TAUREN, PANDAREN_HORDE, HIGHMOUNTAIN },	-- Highmountain Tauren is UNCONFIRMED
+					["races"] = { TAUREN, PANDAREN_HORDE, HIGHMOUNTAIN_TAUREN },	-- Highmountain Tauren is UNCONFIRMED
 					["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 				}),
 				q(28430, {	-- A Perfect Costume

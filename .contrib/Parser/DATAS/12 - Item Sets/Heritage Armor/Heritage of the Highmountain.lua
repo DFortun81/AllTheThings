@@ -6,7 +6,7 @@ _.GearSets =
 {
 	n(-254, {	-- Heritage Armor
 		gs(1522, {	-- Highmountain's Heritage
-			["races"] = { HIGHMOUNTAIN },
+			["races"] = { HIGHMOUNTAIN_TAUREN },
 			["g"] = {
 				q(49783, {	-- Heritage of Highmountain
 					i(156668),	-- Highmountain Headdress

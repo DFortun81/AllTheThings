@@ -129,7 +129,7 @@ _.Zones =
 									q(49773, {	-- For the Horde
 										["provider"] = { "n", 143845 },	--  Mayla Highmountain
 										["coord"] = { 46.6, 61.0, HIGHMOUNTAIN },
-										["races"] = { HIGHMOUNTAIN },
+										["races"] = { HIGHMOUNTAIN_TAUREN },
 										["g"] = {
 											i(157757),	-- Highmountain Tabard
 											i(157028),	-- Letter from Lady Sylvannas
@@ -139,7 +139,7 @@ _.Zones =
 										["sourceQuests"] = { 49773 },	-- For the Horde
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
 										["coord"] = { 39.4, 79.2, ORGRIMMAR },
-										["races"] = { HIGHMOUNTAIN },
+										["races"] = { HIGHMOUNTAIN_TAUREN },
 									}),
 								}),
 								n(-210, {	-- Nightborne

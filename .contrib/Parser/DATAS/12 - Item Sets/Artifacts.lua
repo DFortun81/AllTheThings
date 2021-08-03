@@ -1953,7 +1953,7 @@ _.GearSets =
 							["displayID"] = 66779,	-- Rainbow Druid Form
 						}),
 						artifact(427, {	-- Standard Tauren
-							["races"] = { TAUREN, HIGHMOUNTAIN },
+							["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
 							["displayID"] = 66777,	-- Brown Druid Form
 						}),
 						artifact(428, {	-- Standard Worgen / Kultiran
@@ -2012,7 +2012,7 @@ _.GearSets =
 							["displayID"] = 66779,	-- Rainbow Druid Form
 						}),
 						artifact(427, {	-- Standard Tauren
-							["races"] = { TAUREN, HIGHMOUNTAIN },
+							["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
 							["displayID"] = 66777,	-- Brown Druid Form
 						}),
 						artifact(428, {	-- Standard Worgen / Kultiran
@@ -2070,7 +2070,7 @@ _.GearSets =
 							["races"] = { TROLL, ZANDALARI },
 						}),
 						artifact(264, {	-- Standard Tauren
-							["races"] = { TAUREN, HIGHMOUNTAIN },
+							["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
 						}),
 						artifact(266, {	-- Standard Worgen / Kultiran
 							["races"] = { WORGEN, KULTIRAN },
@@ -2119,7 +2119,7 @@ _.GearSets =
 							["races"] = { TROLL, ZANDALARI },
 						}),
 						artifact(264, {	-- Standard Tauren
-							["races"] = { TAUREN, HIGHMOUNTAIN },
+							["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
 						}),
 						artifact(266, {	-- Standard Worgen / Kultiran
 							["races"] = { WORGEN, KULTIRAN },

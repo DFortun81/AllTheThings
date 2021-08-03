@@ -86,7 +86,7 @@ _.Achievements =
 				crit(2),		-- Exalted with Cenarion Expedition
 			}),
 			ach(12415, {	-- Heritage of Highmountain
-				["races"] = { HIGHMOUNTAIN },
+				["races"] = { HIGHMOUNTAIN_TAUREN },
 				["g"] = {
 					i(156668),	-- Highmountain Headdress
 					i(156669),	-- Highmountain Shoulderguards
