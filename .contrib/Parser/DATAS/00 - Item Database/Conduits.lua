@@ -1,8 +1,8 @@
---[[
+
 _.ItemDB = {};
 local i = function(itemID
 				,conduitID)
-	local item = { ["condutID"] = conduitID, };
+	local item = { ["conduitID"] = conduitID, };
 	_.ItemDB[itemID] = item;
 	return item;
 end
@@ -291,10 +291,11 @@ local conduitInfos = {
 {279,183514,248},
 {280,183463,281},
 {281,184587,282},
+{282,187506,283},
+{283,187507,284},
 
 };
 
 for _,conduitInfo in ipairs(conduitInfos) do
 	i(conduitInfo[2], conduitInfo[3]);
 end
---]]

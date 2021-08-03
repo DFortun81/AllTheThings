@@ -388,6 +388,7 @@ namespace ATT
                     case "spellID":
                     case "objectiveID":
                     case "runeforgePowerID":
+					case "conduitID":
                     case "f":
                     case "u":
                     case "b":
@@ -609,6 +610,11 @@ namespace ATT
                             data[field] = value;
                             break;
                         }
+					case "conduitID":
+						{
+							data[field] = value;
+							break;
+						}
                     case "races":
                     case "r":
                         {

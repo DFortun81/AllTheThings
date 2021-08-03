@@ -2040,6 +2040,7 @@ namespace ATT
                 case "r": // horde/alliance faction
                 case "races":
                 case "runeforgePowerID":
+				case "conduitID":
                 case "customCollect":
                 case "setHeaderID":
                 case "setSubHeaderID":
