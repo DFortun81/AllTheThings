@@ -24,19 +24,19 @@ def get_localized_obj_name(obj_id, lang_code="en", game_flavor="retail"):
         lang_code = ""
     if game_flavor == "retail":
         game_flavor = ""
-    URL = "https://"
+    url = "https://"
     if lang_code != "":
-        URL += f"{lang_code}."
+        url += f"{lang_code}."
     if game_flavor != "":
-        URL += f"{game_flavor}."
-    URL += f"wowhead.com/object={obj_id}"
+        url += f"{game_flavor}."
+    url += f"wowhead.com/object={obj_id}"
 
-    page = requests.get(URL)
+    page = requests.get(url)
     if "notFound" in page.url:
-        logging.warning(f"Can't find {obj_id} at {URL}!")
+        logging.warning(f"Can't find {obj_id} at {url}!")
         return ""
     if "ptr" in page.url:
-        logging.warning(f"{URL} redirects to {URL.replace(lang_code, 'ptr')}")
+        logging.warning(f"{url} redirects to {url.replace(lang_code, 'ptr')}")
         return ""
     soup = BeautifulSoup(page.content, "html.parser")
     heading = soup.find("h1", class_="heading-size-1")
