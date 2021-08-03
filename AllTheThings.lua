@@ -6262,96 +6262,6 @@ app.CreateArtifact = function(id, t)
 end
 end)();
 
--- Conduit Lib
---[[
-(function()
--- copy base Item fields
-local fields = RawCloneData(itemFields);
--- Conduit differences
-fields.key = function(t) return "conduitID"; end;
-fields.collectible = function(t) return app.CollectibleConduits; end;
-fields.collectibleAsCost = app.ReturnFalse;
-fields.collected = function(t)
-	local cID = t.conduitID;
-	-- character collected
-	if app.CurrentCharacter.Conduits[cID] then return 1; end
-	-- account-wide collected
-	if app.AccountWideConduits and ATTAccountWideData.Conduits[cID] then return 2; end
-	-- fresh collected
-	local state = (C_Soulbinds.GetConduitCollectionData(cID) or app.EmptyTable);
-	if state ~= nil then
-		app.CurrentCharacter.Conduits[cID] = 1;
-		ATTAccountWideData.Conduits[cID] = 1;
-		return 1;
-	end
-end;
-fields.lvl = function(t) return 60; end;
-fields.trackable = app.ReturnTrue;
-fields.saved = function(t) return app.CurrentCharacter.Conduits[t.conduitID]; end;
-app.BaseConduit = app.BaseObjectFields(fields);
-app.CreateConduit = function(id, t)
-	return setmetatable(constructor(id, t, "conduitID"), app.BaseConduit);
-end
-end)();
---]]
---[[
-(function()
-local fields = {
-	["key"] = function(t)
-		return "conduitID";
-	end,
-	["info"] = function(t)
-		return C_Soulbinds.GetConduitCollectionData(t.conduitID) or {};
-	end,
-	["collectible"] = function(t)
-		return app.CollectibleConduits;
-	end,
-	["collected"] = function(t)
-		if t.info != {} then	-- will show nil/empty resualt if not obtain
-			return 1;
-		end
-
-		if (app.CurrentCharacter.ConduitRanks[t.conduitID] or 0) >= t.rank then
-			return 1;
-		end
-		local accountRank = ATTAccountWideData.ConduitRanks[t.conduitID] or 0;
-		local info = t.info;
-		if (info and info != nil) then
-			if t.rank and info.rank then
-				if info.rank >= t.rank then
-					app.CurrentCharacter.ConduitRanks[t.conduitID] = info.rank;
-					if info.rank > accountRank then ATTAccountWideDataConduitRanks[t.conduitID] = info.rank; end
-					return 1;
-				end
-			else
-				return 1;
-			end
-		end
-
-		if app.AccountWideConduits and accountRank >= t.rank then
-			return 2;
-		end
-	end,
-	["text"] = function(t)
-		return t.link;
-	end,
-	["lvl"] = function(t)
-		return 60;
-	end,
-	["icon"] = function(t)
-		return GetItemIcon(t.conduitItemID);
-	end,
-	["name"] = function(t)
-		return C_Item.GetItemNameByID(t.conduitItemID);
-	end,
-	["link"] = function(t)
-		return C_Soulbinds.GetConduitHyperlink(t.condutID,t.info.rank);
-	end,
-	["rank"] = function(t)
-		return t.info.rank or 0;	-- Lowest rank is 1.
-	end,
-};
---]]
 -- Azerite Essence Lib
 (function()
 local fields = {
@@ -8684,6 +8594,38 @@ fields.saved = function(t) return app.CurrentCharacter.RuneforgeLegendaries[t.ru
 app.BaseRuneforgeLegendary = app.BaseObjectFields(fields);
 app.CreateRuneforgeLegendary = function(id, t)
 	return setmetatable(constructor(id, t, "runeforgePowerID"), app.BaseRuneforgeLegendary);
+end
+end)();
+
+-- Conduit Lib
+(function()
+local C_Soulbinds_GetConduitCollectionData = C_Soulbinds.GetConduitCollectionData;
+-- copy base Item fields
+local fields = RawCloneData(itemFields);
+-- Conduit differences
+fields.key = function(t) return "conduitID"; end;
+fields.collectible = function(t) return app.CollectibleConduits; end;
+fields.collectibleAsCost = app.ReturnFalse;
+fields.collected = function(t)
+	local cID = t.conduitID;
+	-- character collected
+	if app.CurrentCharacter.Conduits[cID] then return 1; end
+	-- account-wide collected
+	if app.AccountWideConduits and ATTAccountWideData.Conduits[cID] then return 2; end
+	-- fresh collected
+	local state = C_Soulbinds_GetConduitCollectionData(cID);
+	if state ~= nil then
+		app.CurrentCharacter.Conduits[cID] = 1;
+		ATTAccountWideData.Conduits[cID] = 1;
+		return 1;
+	end
+end;
+fields.lvl = function(t) return 60; end;
+fields.trackable = app.ReturnTrue;
+fields.saved = function(t) return app.CurrentCharacter.Conduits[t.conduitID]; end;
+app.BaseConduit = app.BaseObjectFields(fields);
+app.CreateConduit = function(id, t)
+	return setmetatable(constructor(id, t, "conduitID"), app.BaseConduit);
 end
 end)();
 

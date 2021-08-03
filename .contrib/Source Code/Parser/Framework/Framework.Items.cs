@@ -606,10 +606,6 @@ namespace ATT
                     case "isYearly":
                     case "isWorldQuest":
                     case "runeforgePowerID":
-                        {
-                            data[field] = value;
-                            break;
-                        }
                     case "conduitID":
                         {
                             data[field] = value;
