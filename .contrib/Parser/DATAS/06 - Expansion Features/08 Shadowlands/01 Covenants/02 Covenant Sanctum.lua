@@ -306,11 +306,11 @@ _.ExpansionFeatures =
 
 				--	PTR DATA
 					q(63592, {	-- A New Path
-					--	currently takes place on a 'nil' map, may need another mapID added via ["maps"] later
 					--	TODO: grants "a new path" criteria of "chains of domination" achievement, add to whichever zone these quests wind up being in
 						["sourceQuests"] = { 63584 },	-- A Triumphant Return
 						["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
 						["coord"] = { 64.0, 19.1, ARCHONS_RISE },
+						["maps"] = { 2018 },	-- Spires of Ascension
 					}),
 					q(63586, {	-- Compassion in Devotion
 						["sourceQuests"] = { 63585 },	-- Blind Loyalty
@@ -357,4 +357,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 });
 _.HiddenQuestTriggers = {
 	q(60635),	-- Night Fae Mission Table
+	q(63591),	-- when accepting 63592 'The New Path'
 };
