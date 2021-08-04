@@ -10243,11 +10243,11 @@ local function BuildTextFromNPCIDs(t, npcIDs)
 	end
 	if retry then return RETRIEVING_DATA; end
 	name = table.concat(textTbl);
-	rawset(t, "text", name);
+	rawset(t, "name", name);
 	return name;
 end
 -- Custom Vignette fields
-fields.text = function(t)
+fields.name = function(t)
 	if t.qgs or t.crs then
 		return BuildTextFromNPCIDs(t, t.qgs or t.crs);
 	elseif t.qg or t.creatureID then
@@ -17628,6 +17628,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				{
 					619, 	-- Broken Isles
 					{
+						{ 627 },	-- Dalaran (not a Zone, so doesn't list automatically)
 						{ 630, 5175, { 47063 }},	-- Azsuna
 						{ 650, 5177, { 47063 }},	-- Highmountain
 						{ 634, 5178, { 47063 }},	-- Stormheim
@@ -17746,7 +17747,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				self:MergeStorylines(mapObject, includeAll, includePermanent, includeQuests);
 
 				-- look for quests on map child maps as well
-				local mapChildInfos = C_Map.GetMapChildrenInfo(mapObject.mapID, 3, false);
+				local mapChildInfos = C_Map.GetMapChildrenInfo(mapObject.mapID, 3);
 				if mapChildInfos then
 					for i,mapInfo in ipairs(mapChildInfos) do
 						-- start fetching the data while other stuff is setup
@@ -17799,6 +17800,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					local mapIDPOIPairs = pair[2];
 					if mapIDPOIPairs then
 						for i,arr in ipairs(mapIDPOIPairs) do
+							-- Sub-Map with Quest information to track
 							if #arr >= 3 then
 								for j,questID in ipairs(arr[3]) do
 									if not IsQuestFlaggedCompleted(questID) then
@@ -17829,7 +17831,13 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 									end
 								end
 							else
-								NestObject(mapObject, app.CreateMapWithStyle(arr[1]));
+								-- Basic Sub-map
+								local subMap = app.CreateMapWithStyle(arr[1]);
+
+								-- Build top-level maps all the way down for the sub-map
+								self:BuildMapAndChildren(subMap, includeAll, includePermanent, includeQuests);
+
+								NestObject(mapObject, subMap);
 							end
 						end
 					end
@@ -18057,7 +18065,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					-- print("b-raid",b.text);
 					-- both Raid, compare on text
 					-- print("raid",a.text,b.text);
-					return string.lower(a.text or "") <= string.lower(b.text or "");
+					return string.lower(a.name or "") <= string.lower(b.name or "");
 				elseif b.isRaid then
 					-- print("b-raid",b.text);
 					return false;
@@ -18113,9 +18121,9 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					return false;
 				end
 				-- Anything else with text
-				if a.text and b.text then
+				if a.name and b.name then
 					-- print("text",a.text,b.text);
-					return string.lower(a.text or "") <= string.lower(b.text or "");
+					return string.lower(a.name or "") <= string.lower(b.name or "");
 				end
 				-- false here may cause 'invalid order function' error when no other conditions match
 				-- print("a-b",a.key,b.key);
