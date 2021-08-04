@@ -16,7 +16,7 @@ _.ExpansionFeatures =
 					"added 9.1.0.38872",
 				},
 			}),
-			cl(DEATHKNIGHT, bubbleDown({ ["classes"] = { DEATHKNIGHT, } }, {
+			cl(DEATHKNIGHT, {
 				i(181848, {	-- Accelerated Cold
 					["timeline"] = {
 						"added 9.0.1.35167",
@@ -28,7 +28,6 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(182292, {	-- Brutal Grasp
-					["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 					["timeline"] = {
 						"added 9.0.1.35282",
 					},
@@ -43,11 +42,11 @@ _.ExpansionFeatures =
 						"added 9.0.1.35167",
 					},
 				}),
-			})),
-			cl(DEMONHUNTER, bubbleDown({ ["classes"] = { DEMONHUNTER, } }, {
+			}),
+			cl(DEMONHUNTER, {
 
-			})),
-			cl(DRUID, bubbleDown({ ["classes"] = { DRUID, } }, {
+			}),
+			cl(DRUID, {
 				i(183468, {	-- Born Anew
 					["timeline"] = {
 						"added 9.0.1.35522",
@@ -64,25 +63,22 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(183473, {	-- Conflux of Elements
-					["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
 					["timeline"] = {
 						"added 9.0.1.35522",
 					},
 				}),
 				i(183474, {	-- Endless Thirst
-					["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
 					["timeline"] = {
 						"added 9.0.1.35522",
 					},
 				}),
 				i(183472, {	-- Evolved Swarm
-					["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 					["timeline"] = {
 						"added 9.0.1.35522",
 					},
 				}),
-			})),
-			cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER, } }, {
+			}),
+			cl(HUNTER, {
 				i(183402, {	-- Bloodletting
 					["timeline"] = {
 						"added 9.0.1.35432",
@@ -99,19 +95,17 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(182331, {	-- Empowered Release
-					["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
 					["timeline"] = {
 						"added 9.0.1.35256",
 					},
 				}),
 				i(182321, {	-- Enfeebled Mark
-					["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
 					["timeline"] = {
 						"added 9.0.1.35256",
 					},
 				}),
-			})),
-			cl(MAGE, bubbleDown({ ["classes"] = { MAGE, } }, {
+			}),
+			cl(MAGE, {
 				i(181509, {	-- Arcane Prodigy
 					["timeline"] = {
 						"added 9.0.1.35078",
@@ -133,7 +127,6 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(181539, {	-- Discipline of the Grove
-					["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
 					["timeline"] = {
 						"added 9.0.1.35078",
 					},
@@ -143,10 +136,9 @@ _.ExpansionFeatures =
 						"added 9.0.1.35078",
 					},
 				}),
-			})),
-			cl(MONK, bubbleDown({ ["classes"] = { MONK, } }, {
+			}),
+			cl(MONK, {
 				i(181770, {	-- Bone Marrow Hops
-					["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 					["timeline"] = {
 						"added 9.0.1.35078",
 					},
@@ -166,8 +158,8 @@ _.ExpansionFeatures =
 						"added 9.0.1.35078",
 					},
 				}),
-			})),
-			cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN, } }, {
+			}),
+			cl(PALADIN, {
 				i(181707, {	-- Diverted Energy
 					["timeline"] = {
 						"added 9.0.1.35256",
@@ -178,8 +170,8 @@ _.ExpansionFeatures =
 						"added 9.0.1.35256",
 					},
 				}),
-			})),
-			cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST, } }, {
+			}),
+			cl(PRIEST, {
 				i(181838, {	-- Charitable Soul
 					["timeline"] = {
 						"added 9.0.1.35167",
@@ -191,7 +183,6 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(181974, {	-- Courageous Ascension
-					["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
 					["timeline"] = {
 						"added 9.0.1.35167",
 					},
@@ -206,15 +197,14 @@ _.ExpansionFeatures =
 						"added 9.0.1.35167",
 					},
 				}),
-			})),
-			cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE, } }, {
+			}),
+			cl(ROGUE, {
 				i(183498, {	-- Cloaked in Shadows
 					["timeline"] = {
 						"added 9.0.1.35522",
 					},
 				}),
 				i(183510, {	-- Count the Odds
-					["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
 					["timeline"] = {
 						"added 9.0.1.35282",
 					},
@@ -224,27 +214,25 @@ _.ExpansionFeatures =
 						"added 9.0.1.35522",
 					},
 				}),
-			})),
-			cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN, } }, {
+			}),
+			cl(SHAMAN, {
 				i(182128, {	-- Call of Flame
 					["timeline"] = {
 						"added 9.0.1.35167",
 					},
 				}),
 				i(182345, {	-- Elysian Dirge
-					["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
 					["timeline"] = {
 						"added 9.0.1.35256",
 					},
 				}),
 				i(182347, {	-- Essential Extraction
-					["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
 					["timeline"] = {
 						"added 9.0.1.35256",
 					},
 				}),
-			})),
-			cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK, } }, {
+			}),
+			cl(WARLOCK, {
 				i(182755, {	-- Ashen Remains
 					["timeline"] = {
 						"added 9.0.1.35282",
@@ -270,8 +258,8 @@ _.ExpansionFeatures =
 						"added 9.0.1.35282",
 					},
 				}),
-			})),
-			cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR, } }, {
+			}),
+			cl(WARRIOR, {
 				i(180933, {	-- Ashen Juggernaut
 					["timeline"] = {
 						"added 9.0.1.34972",
@@ -293,12 +281,11 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(182651, {	-- Destructive Reverberations
-					["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
 					["timeline"] = {
 						"added 9.0.1.35282",
 					},
 				}),
-			})),
+			}),
 		}),
 	}),
 };
