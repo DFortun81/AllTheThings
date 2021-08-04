@@ -28,6 +28,9 @@ _.Zones =
 						crit(7, {	-- The Power of Night
 							["sourceQuests"] = { 64437 },	-- Inform the Primus
 						}),
+						crit(8, {	-- A New Path
+							["sourceQuests"] = { 63593 },	-- New Sigil of the Kyrian
+						}),
 					},
 				}),
 				ach(15107),	-- Conquering Korthia

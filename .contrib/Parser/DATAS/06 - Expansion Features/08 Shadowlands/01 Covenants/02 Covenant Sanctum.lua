@@ -274,6 +274,17 @@ _.ExpansionFeatures =
 				}),
 				n(QUESTS, {
 				--	LIVE DATA
+					q(63592, {	-- A New Path
+						["sourceQuests"] = { 63584 },	-- A Triumphant Return
+						["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
+						["coord"] = { 64.0, 19.1, ARCHONS_RISE },
+						["maps"] = { 2018 },	-- Spires of Ascension
+					}),
+					q(63586, {	-- Compassion in Devotion
+						["sourceQuests"] = { 63585 },	-- Blind Loyalty
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 66.5, 16.5, ARCHONS_RISE },
+					}),
 					q(63651, {	-- Cryptograms
 						["sourceQuests"] = { 63650 },	-- De-Infiltration
 						["provider"] = { "n", 178260 },	-- The Stonewright
@@ -290,6 +301,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 177434 },	-- Ysera
 						["coord"] = { 47.8, 53.6, THE_TRUNK },	-- Heart of the Forest
 					}),
+					q(63593, {	-- New Sigil of the Kyrian
+						["sourceQuests"] = { 63592 },	-- A New Path
+						["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+						["coord"] = { 46.0, 58.0, 2018 },	-- Spires of Ascension
+						["maps"] = { 2018 },	-- Spires of Ascension
+					}),
 					q(63652, {	-- The "Unwelcome" Guests
 						["sourceQuests"] = { 63650 },	-- De-Infiltration
 						["provider"] = { "n", 158653 },	-- Prince Renathal
@@ -302,25 +319,6 @@ _.ExpansionFeatures =
 						},
 						["provider"] = { "n", 158653 },	-- Prince Renathal
 						["coord"] = { 51.1, 38.0, SINFALL_REACHES },
-					}),
-
-				--	PTR DATA
-					q(63592, {	-- A New Path
-					--	TODO: grants "a new path" criteria of "chains of domination" achievement, add to whichever zone these quests wind up being in
-						["sourceQuests"] = { 63584 },	-- A Triumphant Return
-						["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
-						["coord"] = { 64.0, 19.1, ARCHONS_RISE },
-						["maps"] = { 2018 },	-- Spires of Ascension
-					}),
-					q(63586, {	-- Compassion in Devotion
-						["sourceQuests"] = { 63585 },	-- Blind Loyalty
-						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 66.5, 16.5, ARCHONS_RISE },
-					}),
-					q(63593, {	-- New Sigil of the Kyrian
-					--	currently picked up on the same 'nil' map from A New Path
-						["sourceQuests"] = { 63592 },	-- A New Path
-						["provider"] = { "n", 177116 },	-- Polemarch Adrestes
 					}),
 				}),
 			},
