@@ -8590,8 +8590,6 @@ fields.collected = function(t)
 	end
 end;
 fields.lvl = function(t) return 60; end;
-fields.trackable = app.ReturnTrue;
-fields.saved = function(t) return app.CurrentCharacter.RuneforgeLegendaries[t.runeforgePowerID]; end;
 app.BaseRuneforgeLegendary = app.BaseObjectFields(fields);
 app.CreateRuneforgeLegendary = function(id, t)
 	return setmetatable(constructor(id, t, "runeforgePowerID"), app.BaseRuneforgeLegendary);
@@ -8622,8 +8620,6 @@ fields.collected = function(t)
 	end
 end;
 fields.lvl = function(t) return 60; end;
-fields.trackable = app.ReturnTrue;
-fields.saved = function(t) return app.CurrentCharacter.Conduits[t.conduitID]; end;
 app.BaseConduit = app.BaseObjectFields(fields);
 app.CreateConduit = function(id, t)
 	return setmetatable(constructor(id, t, "conduitID"), app.BaseConduit);
