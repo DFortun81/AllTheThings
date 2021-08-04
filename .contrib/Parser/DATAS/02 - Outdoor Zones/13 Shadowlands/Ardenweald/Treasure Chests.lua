@@ -106,7 +106,7 @@ _.Zones =
 						{ 37.6, 61.5, ARDENWEALD },	-- Mushroom
 						{ 36.1, 65.2, ARDENWEALD },	-- Treasure
 					},
-					["questID"] = 61068,
+				--	["questID"] = 61068,
 					["g"] = {
 						crit(15, {	-- Darkreach Supplies
 							["achievementID"] = 14313,	-- Treasures of Ardenweald
