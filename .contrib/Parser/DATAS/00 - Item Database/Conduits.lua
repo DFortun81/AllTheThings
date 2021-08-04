@@ -585,5 +585,5 @@ local conduitsWithSpecs = {
 };
 
 for _,conduitInfo in ipairs(conduitsWithSpecs) do
-	i(conduitInfo[1], conduitInfo[2], conduitInfo[3]);
+	i(conduitInfo[2], conduitInfo[1], conduitInfo[3]);
 end
