@@ -275,9 +275,9 @@ _.ExpansionFeatures =
 				n(QUESTS, {
 				--	LIVE DATA
 					q(63592, {	-- A New Path
-						["sourceQuests"] = { 63584 },	-- A Triumphant Return
-						["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
-						["coord"] = { 64.0, 19.1, ARCHONS_RISE },
+						["sourceQuests"] = { 63591 },	-- The Grand Reception
+						["provider"] = { "n", 180189 },	-- Polemarch Kalisthene
+						["coord"] = { 55.8, 29.9, 2017 },
 						["maps"] = { SPIRES_OF_ASCENSION },
 					}),
 					q(63586, {	-- Compassion in Devotion
@@ -311,6 +311,12 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 63650 },	-- De-Infiltration
 						["provider"] = { "n", 158653 },	-- Prince Renathal
 						["coord"] = { 51.3, 38.1, SINFALL_REACHES },
+					}),
+					q(63591, {	-- The Grand Reception
+						["sourceQuests"] = { 63584 },	-- A Triumphant Return
+						["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
+						["coord"] = { 64.0, 19.1, ARCHONS_RISE },
+						["maps"] = { SPIRES_OF_ASCENSION },
 					}),
 					q(63653, {	-- The Power of a Crown
 						["sourceQuests"] = {
@@ -355,5 +361,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 });
 _.HiddenQuestTriggers = {
 	q(60635),	-- Night Fae Mission Table
-	q(63591),	-- when accepting 63592 'The New Path'
 };
