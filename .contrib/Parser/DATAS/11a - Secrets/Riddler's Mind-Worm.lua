@@ -5,7 +5,7 @@
 _.Secrets =
 {
 	n(-801, {	-- Riddler's Mind-Worm
-		["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nBelow is a detailed explanation on how to obtain the Riddler's Mind-Worm mount.\r\rNote: Progress on this will be reset each week, so do make sure to complete it in one reset.",
+		["description"] = "***'Show All Trackable Things' is required to see all the steps.***\n\nBelow is a detailed explanation on how to obtain the Riddler's Mind-Worm mount.\r\rNote: Progress on this will be reset each week, so do make sure to complete it in one reset.",
 		["modelScale"] = .7,
 		["modelID"] = 74314,
 		["g"] = {
@@ -14,7 +14,6 @@ _.Secrets =
 				["questID"] = 45470,
 				["coord"] = { 48.8, 42.1, LEGION_DALARAN },
 				["description"] = "|cFFFFFFFFStep 1:|r We will begin in |cFFFFD700Dalaran|r.  Head to the |cFFFFD700Legerdemain Lounge|r at |cFFFFFFFF48.80, 42.10|r.  |cFFFFD700Page 9|r will be on the third shelf of the bookcase.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...of sea, spirit and self...|r",
-				["isWeekly"] = true,
 			}),
 			o(209270, {	-- Step 2: Page 78
 				["model"] = 305393,
