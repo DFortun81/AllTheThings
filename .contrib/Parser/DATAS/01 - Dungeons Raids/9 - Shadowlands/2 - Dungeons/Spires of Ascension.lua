@@ -7,8 +7,8 @@ _.Instances = { tier(SL_TIER, {
 		["coord"] = { 58.5, 28.5, BASTION },
 		["maps"] = {
 			1692,	-- Honor's Ascent
-			1693,	-- Spires of Ascension
-			1694,	--
+			1693,	-- Gardens of Repose
+			1694,	-- Font of Fealty
 			1695,	-- Seat of the Archon
 		},
 		["lvl"] = { 50 },

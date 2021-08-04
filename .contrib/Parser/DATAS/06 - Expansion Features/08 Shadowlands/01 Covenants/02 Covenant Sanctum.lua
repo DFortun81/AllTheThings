@@ -278,7 +278,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 63584 },	-- A Triumphant Return
 						["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
 						["coord"] = { 64.0, 19.1, ARCHONS_RISE },
-						["maps"] = { 2018 },	-- Spires of Ascension
+						["maps"] = { SPIRES_OF_ASCENSION },
 					}),
 					q(63586, {	-- Compassion in Devotion
 						["sourceQuests"] = { 63585 },	-- Blind Loyalty
@@ -304,8 +304,8 @@ _.ExpansionFeatures =
 					q(63593, {	-- New Sigil of the Kyrian
 						["sourceQuests"] = { 63592 },	-- A New Path
 						["provider"] = { "n", 177116 },	-- Polemarch Adrestes
-						["coord"] = { 46.0, 58.0, 2018 },	-- Spires of Ascension
-						["maps"] = { 2018 },	-- Spires of Ascension
+						["coord"] = { 46.0, 58.0, SPIRES_OF_ASCENSION },
+						["maps"] = { SPIRES_OF_ASCENSION },
 					}),
 					q(63652, {	-- The "Unwelcome" Guests
 						["sourceQuests"] = { 63650 },	-- De-Infiltration
