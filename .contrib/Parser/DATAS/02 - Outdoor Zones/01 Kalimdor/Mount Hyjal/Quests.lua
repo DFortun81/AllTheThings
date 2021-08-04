@@ -735,6 +735,7 @@ _.Zones =
 					["sourceQuest"] = 25881,	-- Lost Wardens
 				}),
 				q(25317, {	-- Protect the World Tree
+					["description"] = "If the NPC is not visible and Magni is there instead, you will need to complete the quest 'Do It the Azerite Way' [55521] to restore the proper phasing to pick up this quest.",
 					["provider"] = { "n", 40289 },	-- Ysera
 					["coord"] = { 62.0, 24.8, MOUNT_HYJAL },
 					["sourceQuest"] = 25316,	-- As Hyjal Burns
@@ -871,7 +872,7 @@ _.Zones =
 					["coord"] = { 32.7, 70.7, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25761,	-- Disassembly
-						25746,	-- Egg Hunt
+						25764,	-- Egg Hunt
 					},
 				}),
 				q(25274, {	-- Signed in Blood
@@ -1023,6 +1024,7 @@ _.Zones =
 				q(25630, {	-- The Fires of Mount Hyjal
 					["provider"] = { "n", 39434 },	-- Rio Duran
 					["coord"] = { 28.1, 29.8, MOUNT_HYJAL },
+					["sourceQuest"] = 25612,	-- Return from the Firelands
 					["isBreadcrumb"] = true,
 					["description"] = "If you finish quest \"Aessina's Miracle\" before turning in this quest, NPC will phase out and you won't be able to complete it.",
 				}),
@@ -1080,7 +1082,7 @@ _.Zones =
 						25491,	-- Durable Seeds
 						29066,	-- Good News... and Bad News
 						25502,	-- Prepping the Soil
-						25832,	-- Return to Aviana
+						-- 25832,	-- Return to Aviana (picked this up at the same time as the above quest)
 					},
 				}),
 				q(25412, {	-- The Name Never Spoken
