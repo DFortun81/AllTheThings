@@ -963,9 +963,10 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(1173, {	-- Highmountain Tauren
-		prof(JEWELCRAFTING, {
-			i(137867),	-- Design: Shadowruby Band (Rank 3)
-		}),
+		-- TODO: Listing this item here makes it uncollectable, why?
+		-- prof(JEWELCRAFTING, {
+		-- 	i(137867),	-- Design: Shadowruby Band (Rank 3)
+		-- }),
 		f(50,     {	-- Miscellaneous
 			i(130914),	-- Drogbar Gem-Roller
 			i(130913),	-- Hand-Smoothed Pyrestone
