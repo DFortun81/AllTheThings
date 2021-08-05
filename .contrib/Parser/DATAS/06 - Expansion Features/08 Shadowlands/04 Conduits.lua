@@ -127,6 +127,7 @@ _.ExpansionFeatures =
 				i(181504),	-- Infernal Cascade
 				i(181734),	-- Magi's Brand
 				i(181506),	-- Master Flame
+				i(181511),	-- Nether Precision
 				i(181389),	-- Shivering Core
 				i(181769),	-- Tempest Barrier
 				i(181383),	-- Unrelenting Cold
