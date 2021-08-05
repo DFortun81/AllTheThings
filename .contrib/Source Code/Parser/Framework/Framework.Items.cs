@@ -607,10 +607,9 @@ namespace ATT
                     case "isWorldQuest":
                     case "runeforgePowerID":
                     case "conduitID":
-                        {
-                            data[field] = value;
-                            break;
-                        }
+                    case "customCollect":
+                        data[field] = value;
+                        break;
                     case "races":
                     case "r":
                         {
