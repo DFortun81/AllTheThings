@@ -1,6 +1,6 @@
 # AllTheThings
 
-## [SL-2.3.11](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.11) (2021-08-04)
+## [SL-2.3.11](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.11) (2021-08-05)
 [Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.3.10...SL-2.3.11) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 ### Highlight of this update
@@ -18,5 +18,6 @@
 - Fixed missing Highmountain
 - Moved 'Debug Mode' checkbox into the 'Features' tab with the rest of the 'Debugging' toggles
 - Slight adjustment to Quest Completion logic to not consider alt-collected Quests as completed for a character if in a Party Sync session & Account-Wide Quests disabled
+- Re-designed some of the logic for 'Nested Quest Chain Requirements' generation to better reflect the current character's requirements to reach the initial popout quest
 - More rare/Adventure drops, treasure/rare coordinates/descriptions, recipes, dailies, new Campaign chapters, etc
 - Various fixes
