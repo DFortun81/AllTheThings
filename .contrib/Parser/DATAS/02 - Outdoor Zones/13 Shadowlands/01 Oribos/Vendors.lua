@@ -1231,6 +1231,9 @@ _.Zones =
 							["classes"] = { MAGE },
 							["cost"] = { { "c", 1602, 200 } },
 						}),
+						i(187506, {
+							["cost"] = { { "c", 1602, 200 } },
+						}),
 						i(181462, {	-- Coordinated Offensive
 							["classes"] = { MONK },
 							["cost"] = { { "c", 1602, 200 } },
