@@ -1236,212 +1236,63 @@ _.Zones =
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),
 						}),
-						n(CONDUITS, {
-							i(181848, {	-- Accelerated Cold
-								["classes"] = { DEATHKNIGHT },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(183470, {	-- Born of the Wilds
-								["classes"] = { DRUID },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182748, {	-- Borne of Blood
-								["classes"] = { WARLOCK },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182128, {	-- Call of Flame
-								["classes"] = { SHAMAN },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(181837, {	-- Clear Mind
-								["classes"] = { PRIEST },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182769, {	-- Combusting Engine
-								["classes"] = { WARLOCK },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(183197, {	-- Controlled Destruction
-								["classes"] = { MAGE },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(187506, {
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(181462, {	-- Coordinated Offensive
-								["classes"] = { MONK },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(180935, {	-- Crash the Ramparts
-								["classes"] = { WARRIOR },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182598, {	-- Demon Muzzle
-								["classes"] = { DEMONHUNTER },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(181712, {	-- Depths of Insanity
-								["classes"] = { WARRIOR },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182140, {	-- Dissonant Echoes
-								["classes"] = { PRIEST },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182461, {	-- Echoing Blessings
-								["classes"] = { PALADIN },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(181980, {	-- Embrace Death
-								["classes"] = { WARLOCK },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182142, {	-- Embrace of Earth
-								["classes"] = { SHAMAN },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182667, {	-- Focused Light
-								["classes"] = { PALADIN },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182743, {	-- Focused Malignancy
-								["classes"] = { WARLOCK },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(183478, {	-- Fury of the Skies
-								["classes"] = { DRUID },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(181498, {	-- Grounding Surge
-								["classes"] = { MAGE },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(181373, {	-- Harm Denial
-								["classes"] = { MONK },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(181461, {	-- Ice Bite
-								["classes"] = { MAGE },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(183506, {	-- Lethal Poisons
-								["classes"] = { ROGUE },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182344, {	-- Lost in Darkness
-								["classes"] = { DEMONHUNTER },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182137, {	-- Magma Fist
-								["classes"] = { SHAMAN },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182187, {	-- Meat Shield
-								["classes"] = { DEATHKNIGHT },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(181511, {	-- Nether Precision
-								["classes"] = { MAGE },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(181737, {	-- Nourishing Chi
-								["classes"] = { MONK },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182621, {	-- One With the Beast
-								["classes"] = { HUNTER },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(181844, {	-- Pain Transformation
-								["classes"] = { PRIEST },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(183514, {	-- Perforated Veins
-								["classes"] = { ROGUE },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182686, {	-- Powerful Precision
-								["classes"] = { HUNTER },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182325, {	-- Ravenous Consumption
-								["classes"] = { DEMONHUNTER },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(183491, {	-- Ready for Anything
-								["classes"] = { DRUID },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182368, {	-- Relentless Onslaught
-								["classes"] = { DEMONHUNTER },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182449, {	-- Resolute Barrier
-								["classes"] = { WARLOCK },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(181944, {	-- Resonant Words
-								["classes"] = { PRIEST },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182480, {	-- Reversal of Fortune
-								["classes"] = { HUNTER },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(183501, {	-- Rushed Setup
-								["classes"] = { ROGUE },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(183485, {	-- Savage Combatant
-								["classes"] = { DRUID },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(181700, {	-- Scalding Brew
-								["classes"] = { MONK },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182624, {	-- Show of Force
-								["classes"] = { WARRIOR },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(181836, {	-- Spirit Drain
-								["classes"] = { DEATHKNIGHT },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(180842, {	-- Stalwart Guardian
-								["classes"] = { WARRIOR },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(183184, {	-- Stinging Strike
-								["classes"] = { HUNTER },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(183480, {	-- Taste for Blood
-								["classes"] = { DRUID },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182109, {	-- Totemic Surge
-								["classes"] = { SHAMAN },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(183507, {	-- Triple Threat
-								["classes"] = { ROGUE },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182465, {	-- Truth's Wake
-								["classes"] = { PALADIN },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(182681, {	-- Vengeful Shock
-								["classes"] = { PALADIN },
-								["cost"] = { { "c", 1602, 200 } },
-							}),
-							i(185834, {	-- Orboreal Distinguishment
-								["cost"] = { { "c", 1792, 2000 } },
-								["g"] = {
-									i(137642),	-- Mark of Honor
-								},
-							}),
+						n(CONDUITS, sharedData({["cost"] = { { "c", 1602, 200 } }}, {	-- 200x Conquest
+							i(181848),	-- Accelerated Cold
+							i(183470),	-- Born of the Wilds
+							i(182748),	-- Borne of Blood
+							i(182128),	-- Call of Flame
+							i(181837),	-- Clear Mind
+							i(182769),	-- Combusting Engine
+							i(183197),	-- Controlled Destruction
+							i(187506),	-- Condensed Anime Sphere
+							i(181462),	-- Coordinated Offensive
+							i(180935),	-- Crash the Ramparts
+							i(182598),	-- Demon Muzzle
+							i(181712),	-- Depths of Insanity
+							i(182140),	-- Dissonant Echoes
+							i(182461),	-- Echoing Blessings
+							i(181980),	-- Embrace Death
+							i(182142),	-- Embrace of Earth
+							i(182667),	-- Focused Light
+							i(182743),	-- Focused Malignancy
+							i(183478),	-- Fury of the Skies
+							i(181498),	-- Grounding Surge
+							i(181373),	-- Harm Denial
+							i(181461),	-- Ice Bite
+							i(183506),	-- Lethal Poisons
+							i(182344),	-- Lost in Darkness
+							i(182137),	-- Magma Fist
+							i(182187),	-- Meat Shield
+							i(181511),	-- Nether Precision
+							i(181737),	-- Nourishing Chi
+							i(182621),	-- One With the Beast
+							i(181844),	-- Pain Transformation
+							i(183514),	-- Perforated Veins
+							i(182686),	-- Powerful Precision
+							i(182325),	-- Ravenous Consumption
+							i(183491),	-- Ready for Anything
+							i(182368),	-- Relentless Onslaught
+							i(182449),	-- Resolute Barrier
+							i(181944),	-- Resonant Words
+							i(182480),	-- Reversal of Fortune
+							i(183501),	-- Rushed Setup
+							i(183485),	-- Savage Combatant
+							i(181700),	-- Scalding Brew
+							i(182624),	-- Show of Force
+							i(181836),	-- Spirit Drain
+							i(180842),	-- Stalwart Guardian
+							i(183184),	-- Stinging Strike
+							i(183480),	-- Taste for Blood
+							i(182109),	-- Totemic Surge
+							i(183507),	-- Triple Threat
+							i(182465),	-- Truth's Wake
+							i(182681),	-- Vengeful Shock
+						})),
+						i(185834, {	-- Orboreal Distinguishment
+							["cost"] = { { "c", 1792, 2000 } },
+							["g"] = {
+								i(137642),	-- Mark of Honor
+							},
 						}),
 					},
 				}),

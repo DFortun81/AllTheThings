@@ -115,7 +115,6 @@ _.ExpansionFeatures =
 			cl(MAGE, {
 				i(181509),	-- Arcane Prodigy
 				i(181738),	-- Artifice of the Archmage
-				i(182769),	-- Combusting Engine
 				i(183197),	-- Controlled Destruction
 				i(181698),	-- Cryo-Freeze
 				i(181707),	-- Diverted Energy
@@ -132,7 +131,7 @@ _.ExpansionFeatures =
 				i(181769),	-- Tempest Barrier
 				i(181383),	-- Unrelenting Cold
 				i(181464),	-- Winter's Protection
-				-- Cov 
+				-- Cov
 				i(181600),	-- Ire of the Ascended
 				i(181553),	-- Gift of the Lich
 				i(181539),	-- Discipline of the Grove
