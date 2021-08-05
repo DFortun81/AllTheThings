@@ -11,7 +11,7 @@ _.ExpansionFeatures =
 			i(183242),	-- Memory of Eonar
 			i(183248),	-- Memory of Jailer's Eye
 			i(183245),	-- Memory of Norgannon
-			pvp(i(183246)),	-- Memory of Sephuz
+			i(183246),	-- Memory of Sephuz
 			i(183243),	-- Memory of the Arbiter's Judgment
 			i(183244),	-- Memory of the Rattle of the Maw
 			cl(DEATHKNIGHT, bubbleDown({ ["classes"] = { DEATHKNIGHT, } }, {
@@ -19,7 +19,7 @@ _.ExpansionFeatures =
 				i(182634),	-- Memory of a Frozen Champion's Rage
 				i(182640),	-- Memory of a Reanimated Shambler
 				i(182631),	-- Memory of a Vampiric Aura
-				pvp(i(182625)),	-- Memory of an Everlasting Grip
+				i(182625),	-- Memory of an Everlasting Grip
 				i(182632),	-- Memory of Absolute Zero
 				i(182628),	-- Memory of Bryndaor
 				i(182637),	-- Memory of Death's Certainty
@@ -68,7 +68,7 @@ _.ExpansionFeatures =
 				i(183213),	-- Memory of the Anguish of the Collective
 				i(183214),	-- Memory of the Chaos Theory
 				i(183221),	-- Memory of the Dark Flame Spirit
-				pvp(i(183211)),	-- Memory of the Hour of Darkness
+				i(183211),	-- Memory of the Hour of Darkness
 				i(187111, {	-- Memory of Blind Faith
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
 					["timeline"] = {
@@ -108,7 +108,7 @@ _.ExpansionFeatures =
 				i(183226),	-- Memory of the Balance of All Things
 				i(183223),	-- Memory of the Circle of Life and Death
 				i(183241),	-- Memory of the Dark Titan
-				pvp(i(183222)),	-- Memory of the Elder Druid
+				i(183222),	-- Memory of the Elder Druid
 				i(183233),	-- Memory of the Frenzyband
 				i(183235),	-- Memory of the Natural Order
 				i(183240),	-- Memory of the Mother Tree
@@ -143,7 +143,7 @@ _.ExpansionFeatures =
 			cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER, } }, {
 				i(183251),	-- Memory of a Craven Strategem
 				i(183254),	-- Memory of a Dire Command
-				pvp(i(183252)),	-- Memory of a Trapping Apparatus
+				i(183252),	-- Memory of a Trapping Apparatus
 				i(183265),	-- Memory of a Wildfire Cluster
 				i(183258),	-- Memory of Eagletalon's True Focus
 				i(183263),	-- Memory of Poisonous Injectors
@@ -184,7 +184,7 @@ _.ExpansionFeatures =
 			})),
 			cl(MAGE, bubbleDown({ ["classes"] = { MAGE, } }, {
 				i(183274),	-- Memory of a Fevered Incantation
-				pvp(i(183268)),	-- Memory of a Grisly Icicle
+				i(183268),	-- Memory of a Grisly Icicle
 				i(183272),	-- Memory of a Siphoning Storm
 				i(183273),	-- Memory of a Temporal Warp
 				i(183270),	-- Memory of an Arcane Bombardment
@@ -238,7 +238,7 @@ _.ExpansionFeatures =
 				i(183294),	-- Memory of the Jade Ignition
 				i(183296),	-- Memory of the Last Emperor
 				i(183293),	-- Memory of the Morning's Tear
-				pvp(i(183285)),	-- Memory of the Swiftsure Wraps
+				i(183285),	-- Memory of the Swiftsure Wraps
 				i(183297),	-- Memory of Xuen
 				i(183291),	-- Memory of Yu'lon
 				i(187237, {	-- Memory of a Call to Arms
@@ -282,7 +282,7 @@ _.ExpansionFeatures =
 				i(183299),	-- Memory of the Sun's Cycles
 				i(183302),	-- Memory of the Sunwell's Bloom
 				i(183310),	-- Memory of the Vanguard's Momentum
-				pvp(i(183301)),	-- Memory of Uther
+				i(183301),	-- Memory of Uther
 				i(187106, {	-- Memory of Divine Resonance
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
 					["timeline"] = {
@@ -312,7 +312,7 @@ _.ExpansionFeatures =
 				i(183318),	-- Memory of a Clear Mind
 				i(183322),	-- Memory of a Divine Image
 				i(183324),	-- Memory of a Harmonious Apparatus
-				pvp(i(183317)),	-- Memory of a Heavenly Vault
+				i(183317),	-- Memory of a Heavenly Vault
 				i(183329),	-- Memory of a Prism of Shadow and Fire
 				i(183325),	-- Memory of Archbishop Benedictus
 				i(183314),	-- Memory of Cauterizing Shadows
@@ -358,7 +358,7 @@ _.ExpansionFeatures =
 				i(183338),	-- Memory of Celerity
 				i(183344),	-- Memory of Finality
 				i(183340),	-- Memory of Greenskin
-				pvp(i(183331)),	-- Memory of Invigorating Shadowdust
+				i(183331),	-- Memory of Invigorating Shadowdust
 				i(183334),	-- Memory of the Dashing Scoundrel
 				i(183343),	-- Memory of the Deathly Shadows
 				i(183335),	-- Memory of the Doomblade
@@ -397,7 +397,7 @@ _.ExpansionFeatures =
 				i(183358),	-- Memory of an Earthen Harmony
 				i(183351),	-- Memory of an Elemental Equilibrium
 				i(183348),	-- Memory of Deeply Rooted Elements
-				pvp(i(183347)),	-- Memory of Devastating Chains
+				i(183347),	-- Memory of Devastating Chains
 				i(183359),	-- Memory of Jonat
 				i(183349),	-- Memory of the Deeptremor Stone
 				i(183352),	-- Memory of the Demise of Skybreaker
@@ -445,7 +445,7 @@ _.ExpansionFeatures =
 				i(183366),	-- Memory of the Claw of Endereth
 				i(183365),	-- Memory of the Consuming Wrath
 				i(183370),	-- Memory of the Core of the Balespider
-				pvp(i(183368)),	-- Memory of the Dark Portal
+				i(183368),	-- Memory of the Dark Portal
 				i(183375),	-- Memory of the Diabolic Raiment
 				i(183372),	-- Memory of the Grim Inquisitor
 				i(183371),	-- Memory of the Horned Nightmare
@@ -487,7 +487,7 @@ _.ExpansionFeatures =
 				i(183389),	-- Memory of the Berserker's Will
 				i(183387),	-- Memory of the Deathmaker
 				i(183384),	-- Memory of the Exploiter
-				pvp(i(183378)),	-- Memory of the Leaper
+				i(183378),	-- Memory of the Leaper
 				i(183379),	-- Memory of the Misshapen Mirror
 				i(183392),	-- Memory of the Thunderlord
 				i(183381),	-- Memory of the Tormented Kings

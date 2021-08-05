@@ -19,7 +19,7 @@ _.Instances = { tier(SL_TIER, {
 			n(QUESTS, {
 			--	keep quests section here for ["maps"] organization
 			}),
-			n(-981, {	-- Conduits
+			n(CONDUITS, {
 				e(2397, {	-- An Affront of Challengers
 					["crs"] = {
 							164451,	-- Dessia the Decapitator

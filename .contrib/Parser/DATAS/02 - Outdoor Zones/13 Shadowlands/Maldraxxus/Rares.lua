@@ -105,7 +105,6 @@ _.Zones =
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
 						}),
 						i(184298),	-- Amalgamated Forsworn's Journal (has dropped twice from this rare)
-						i(181510),	-- Lingering Numbness [Monk] -- Maybe all Rares?
 						i(183754),	-- Stitchflesh's Design Notes
 					},
 				}),

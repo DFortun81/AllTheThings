@@ -37,6 +37,199 @@ _.Instances = { tier(SL_TIER, {
 						175731,	-- Guardian of the First Ones
 					},
 				}),
+				i(186599, {	-- Stygian Ember
+					["crs"] = {
+						175611,	-- The Tarragrue
+						175725,	-- Eye of the Jailer
+						176531,	-- Deathseeker Eye
+						177094,	-- Signe
+						177095,	-- Kyra
+						175726,	-- Skyja
+						177100,	-- Aradne
+						177099,	-- Daschla
+						177096,	-- Agatha
+						177101,	-- Bryjna
+						177097,	-- Annhylde
+						177098,	-- Arthura
+						175729,	-- Remnant of Ner'zhul
+						175727,	-- Soulrender Dormazain
+						175731,	-- Guardian of the First Ones
+					},
+				}),
+			}),
+			n(CONDUITS, {
+				e(2435, {	-- The Tarragrue
+					["crs"] = { 175611 },	-- The Tarragrue
+					["g"] = {
+						i(182750),	-- Carnivorous Stalkers
+						i(182610),	-- Ferocious Appetite
+						i(182113),	-- Fleeting Wind
+						i(180932),	-- Fueled by Violence
+						i(183481),	-- Incessant Hunter
+						i(181376),	-- Inner Fury
+						i(182344),	-- Lost in Darkness
+						i(182144),	-- Nature's Focus
+						i(182139),	-- Rabid Shadows
+						i(186599),	-- Stygian Ember
+						i(183504),	-- Well-Placed Steel
+						i(182456),	-- Wrench Evil
+					},
+				}),
+				e(2442, {	-- The Eye of the Jailer
+					["crs"] = {
+						175725,	-- Eye of the Jailer
+						176531,	-- Deathseeker Eye
+					},
+					["g"] = {
+						i(181738),	-- Artifice of the Archmage
+						i(181963),	-- Blood Bond
+						i(182478),	-- Corrupting Leer
+						i(182462),	-- Expurgation
+						i(183500),	-- Fade to Nothing
+						i(181840),	-- Light's Inspiration
+						i(182441),	-- Marksman's Advantage
+						i(180896),	-- Safeguard
+						i(181640),	-- Tumbling Technique
+						i(183486),	-- Well-Honed Instincts
+					},
+				}),
+				e(2439, {	-- The Nine
+					["crs"] = {
+						-- Main bosses
+						177094,	-- Signe
+						177095,	-- Kyra
+						175726,	-- Skyja
+						-- "adds"
+						177100,	-- Aradne
+						177099,	-- Daschla
+						177096,	-- Agatha
+						177101,	-- Bryjna
+						177097,	-- Annhylde
+						177098,	-- Arthura
+					},
+					["g"] = {
+						i(182657),	-- Deadly Chain
+						i(181845),	-- Exaltation
+						i(182340),	-- Fel Celerity
+						i(181736),	-- Flame Accretion
+						i(182135),	-- Focused Lightning
+						i(183477),	-- Precise Alignment
+						i(181641),	-- Rising Sun Revival
+						i(182753),	-- Royal Decree
+						i(182384),	-- Serrated Glaive
+						i(182201),	-- Unleashed Frenzy
+					},
+				}),
+				e(2444, {	-- Remnant of Ner'zhul
+					["crs"] = { 175729 },	-- Remnant of Ner'zhul
+					["g"] = {
+						i(183508),	-- Ambidexterity
+						i(181705),	-- Celestial Effervescence
+						i(182206),	-- Convocation of the Dead
+						i(182752),	-- Fel Commando
+						i(182464),	-- Harmony of the Tortollan
+						i(182468),	-- Mortal Combo
+						i(181842),	-- Power Unto Others
+						i(181389),	-- Shivering Core
+						i(182111),	-- Spiritual Resonance
+						i(183464),	-- Tough as Bark
+					},
+				}),
+				e(2445, {	-- Soulrender Dormazain
+					["crs"] = { 175727 },	-- Soulrender Dormazain 175728 Garrosh Hellscream
+					["g"] = {
+						i(180844),	-- Brutal Vitality
+						i(181834),	-- Chilled Resilience
+						i(183076),	-- Diabolic Bloodstone
+						i(183489),	-- Flash of Clarity
+						i(181467),	-- Flow of Time
+						i(181466),	-- Grounding Breath
+						i(181847),	-- Lasting Spirit
+						i(182448),	-- Light's Barding
+						i(182317),	-- Shattered Restoration
+						i(183513),	-- Stiletto Staccato
+						i(182107),	-- Vital Accretion
+					},
+				}),
+				e(2443, {	-- Painsmith Raznal
+					["crs"] = { 176523 },	-- Painsmith Raznal
+					["g"] = {
+						i(182203),	-- Debilitating Malady
+						i(182754),	-- Duplicitous Havoc
+						i(182582),	-- Enkindled Spirit
+						i(183396),	-- Flame Infusion
+						i(181506),	-- Master Flame
+						i(183496),	-- Nimble Fingers
+						i(182125),	-- Pyroclastic Shock
+						i(182604),	-- Roaring Fire
+						i(183476),	-- Stellar Inspiration
+						i(181709),	-- Unnerving Focus
+						i(181465),	-- Xuen's Bond
+					},
+				}),
+				e(2446, {	-- Guardian of the First Ones
+					["crs"] = { 175731 },	-- Guardian of the First Ones
+					["g"] = {
+						i(187507),	-- Adaptive Armor Fragment
+						i(183132),	-- Echoing Call
+						i(181735),	-- Hack and Slash
+						i(182145),	-- Heavy Rainfall
+						i(182133),	-- Insatiable Appetite
+						i(183487),	-- Layered Mane
+						i(181827),	-- Move with Grace
+						i(183503),	-- Poisoned Katar
+						i(181505),	-- Resplendent Mist
+						i(182307),	-- Shielding Words
+						i(181769),	-- Tempest Barrier
+					},
+				}),
+				e(2447, {	-- Fatescribe Roh-Kalo
+					["crs"] = { 175730 },	-- Fatescribe Roh-Kalo
+					["g"] = {
+						i(181509),	-- Arcane Prodigy
+						i(182649),	-- Brutal Projectiles
+						i(182470),	-- Demonic Momentum
+						i(182324),	-- Felfire Haste
+						i(183469),	-- Front of the Pack
+						i(182684),	-- Resolute Defender
+						i(183509),	-- Sleight of Hand
+						i(181867),	-- Swift Penitence
+						i(181624),	-- Swift Transference
+						i(182108),	-- Thunderous Paws
+					},
+				}),
+				e(2440, {	-- Kel'Thuzad
+					["crs"] = { 175559 },	-- Kel'Thuzad
+					["g"] = {
+						i(182136),	-- Chilled to the Core
+						i(181698),	-- Cryo-Freeze
+						i(183202),	-- Deadly Tandem
+						i(181943),	-- Eradicating Blow
+						i(183490),	-- Floral Recycling
+						i(182141),	-- Holy Oration
+						i(180847),	-- Inspiring Presence
+						i(183499),	-- Quick Decisions
+						i(182675),	-- Untempered Dedication
+						i(182747),	-- Withering Bolt
+					},
+				}),
+				e(2441, {	-- Sylvanas Windrunner
+					["crs"] = { 175732 },	-- Sylvanas Windrunner
+					["g"] = {
+						i(180933),	-- Ashen Juggernaut
+						i(183483),	-- Carnivorous Instinct
+						i(183511),	-- Deeper Daggers
+						i(181740),	-- Evasive Stride
+						i(182385),	-- Growing Inferno
+						i(182772),	-- Infernal Brand
+						i(182208),	-- Lingering Plague
+						i(182138),	-- Mind Devourer
+						i(182476),	-- Resilience of the Hunter
+						i(182127),	-- Shake the Foundations
+						i(182559),	-- Templar's Vindication
+						i(181383),	-- Unrelenting Cold
+					},
+				}),
 			}),
 			d(17, {	-- LFR
 				n(ZONEDROPS, {
@@ -58,18 +251,6 @@ _.Instances = { tier(SL_TIER, {
 								crit(1, {	-- The Tarragrue
 									["achievementID"] = 15126,	-- Sanctum of Domination
 								}),
-								i(182750),	-- Carnivorous Stalkers
-								i(182610),	-- Ferocious Appetite
-								i(182113),	-- Fleeting Wind
-								i(180932),	-- Fueled by Violence
-								i(183481),	-- Incessant Hunter
-								i(181376),	-- Inner Fury
-								i(182344),	-- Lost in Darkness
-								i(182144),	-- Nature's Focus
-								i(182139),	-- Rabid Shadows
-								i(186599),	-- Stygian Ember
-								i(183504),	-- Well-Placed Steel
-								i(182456),	-- Wrench Evil
 								i(186381),	-- Elethium-Bladed Glaive
 								i(186415),	-- Moriaz's Spare Targe
 								i(186291),	-- Periapt of Pristine Preservation
@@ -93,18 +274,7 @@ _.Instances = { tier(SL_TIER, {
 								crit(2, {	-- The Eye of the Jailer
 									["achievementID"] = 15126,	-- Sanctum of Domination
 								}),
-								i(181738),	-- Artifice of the Archmage
-								i(181963),	-- Blood Bond
-								i(182478),	-- Corrupting Leer
-								i(182462),	-- Expurgation
 								i(186554),	-- Eye of Allseeing (PET!)
-								i(183500),	-- Fade to Nothing
-								i(181840),	-- Light's Inspiration
-								i(182441),	-- Marksman's Advantage
-								i(180896),	-- Safeguard
-								i(186599),	-- Stygian Ember
-								i(181640),	-- Tumbling Technique
-								i(183486),	-- Well-Honed Instincts
 								i(186403),	-- Stygian Lance of Passage
 								i(186383),	-- Gazepiercer
 								i(186418),	-- Guarm's Lost Chew Toy
@@ -136,17 +306,6 @@ _.Instances = { tier(SL_TIER, {
 									["achievementID"] = 15126,	-- Sanctum of Domination
 								}),
 								i(186656),	-- Sanctum Gloomcharger (MOUNT!)
-								i(182657),	-- Deadly Chain
-								i(181845),	-- Exaltation
-								i(182340),	-- Fel Celerity
-								i(181736),	-- Flame Accretion
-								i(182135),	-- Focused Lightning
-								i(183477),	-- Precise Alignment
-								i(181641),	-- Rising Sun Revival
-								i(182753),	-- Royal Decree
-								i(182384),	-- Serrated Glaive
-								i(186599),	-- Stygian Ember
-								i(182201),	-- Unleashed Frenzy
 								i(186404),	-- Jotungeirr, Destiny's Call
 								i(186385),	-- Signe's Sonorous Scramaseax
 								i(186384),	-- Skyja's Revenant Fury
@@ -172,17 +331,6 @@ _.Instances = { tier(SL_TIER, {
 								crit(4, {	-- Remnant of Ner'zhul
 									["achievementID"] = 15126,	-- Sanctum of Domination
 								}),
-								i(183508),	-- Ambidexterity
-								i(181705),	-- Celestial Effervescence
-								i(182206),	-- Convocation of the Dead
-								i(182752),	-- Fel Commando
-								i(182464),	-- Harmony of the Tortollan
-								i(182468),	-- Mortal Combo
-								i(181842),	-- Power Unto Others
-								i(181389),	-- Shivering Core
-								i(182111),	-- Spiritual Resonance
-								i(186599),	-- Stygian Ember
-								i(183464),	-- Tough as Bark
 								i(186405),	-- Gnarled Staff of the Elder Shaman
 								i(186386),	-- Betrayer's Shadowspike
 								i(186292),	-- Cap of Writhing Malevolence
@@ -202,19 +350,7 @@ _.Instances = { tier(SL_TIER, {
 								crit(5, {	-- Soulrender Dormazain
 									["achievementID"] = 15126,	-- Sanctum of Domination
 								}),
-								i(180844),	-- Brutal Vitality
-								i(181834),	-- Chilled Resilience
-								i(183076),	-- Diabolic Bloodstone
-								i(183489),	-- Flash of Clarity
-								i(181467),	-- Flow of Time
-								i(181466),	-- Grounding Breath
 								i(186558),	-- Irongrasp (PET!)
-								i(181847),	-- Lasting Spirit
-								i(182448),	-- Light's Barding
-								i(182317),	-- Shattered Restoration
-								i(183513),	-- Stiletto Staccato
-								i(186599),	-- Stygian Ember
-								i(182107),	-- Vital Accretion
 								i(186407),	-- Hellscream's Requiem
 								i(186387),	-- Dormazain's Tenderizer
 								i(186411),	-- Soulrent Outrider's Recurve
@@ -235,18 +371,6 @@ _.Instances = { tier(SL_TIER, {
 								crit(6, {	-- Painsmith Raznal
 									["achievementID"] = 15126,	-- Sanctum of Domination
 								}),
-								i(182203),	-- Debilitating Malady
-								i(182754),	-- Duplicitous Havoc
-								i(182582),	-- Enkindled Spirit
-								i(183396),	-- Flame Infusion
-								i(181506),	-- Master Flame
-								i(183496),	-- Nimble Fingers
-								i(182125),	-- Pyroclastic Shock
-								i(182604),	-- Roaring Fire
-								i(183476),	-- Stellar Inspiration
-								i(186599),	-- Stygian Ember
-								i(181709),	-- Unnerving Focus
-								i(181465),	-- Xuen's Bond
 								i(186388),	-- Cruciform Veinripper
 								i(186392),	-- Exacting Mindslicer
 								i(186391),	-- Shadowsteel Demoralizer
@@ -272,18 +396,6 @@ _.Instances = { tier(SL_TIER, {
 								crit(7, {	-- Guardian of the First Ones
 									["achievementID"] = 15126,	-- Sanctum of Domination
 								}),
-								i(187507),	-- Adaptive Armor Fragment
-								i(183132),	-- Echoing Call
-								i(181735),	-- Hack and Slash
-								i(182145),	-- Heavy Rainfall
-								i(182133),	-- Insatiable Appetite
-								i(183487),	-- Layered Mane
-								i(181827),	-- Move with Grace
-								i(183503),	-- Poisoned Katar
-								i(181505),	-- Resplendent Mist
-								i(182307),	-- Shielding Words
-								i(186599),	-- Stygian Ember
-								i(181769),	-- Tempest Barrier
 								i(186409),	-- Pylon of the Great Purge
 								i(186393),	-- Torch of Eternal Knowledge
 								i(186413),	-- Directional Meltdown Projector
@@ -305,17 +417,6 @@ _.Instances = { tier(SL_TIER, {
 								crit(8, {	-- Fatescribe Roh-Kalo
 									["achievementID"] = 15126,	-- Sanctum of Domination
 								}),
-								i(181509),	-- Arcane Prodigy
-								i(182649),	-- Brutal Projectiles
-								i(182470),	-- Demonic Momentum
-								i(182324),	-- Felfire Haste
-								i(183469),	-- Front of the Pack
-								i(182684),	-- Resolute Defender
-								i(183509),	-- Sleight of Hand
-								i(186599),	-- Stygian Ember
-								i(181867),	-- Swift Penitence
-								i(181624),	-- Swift Transference
-								i(182108),	-- Thunderous Paws
 								i(186419),	-- Record of Collapsing Realities
 								i(186330),	-- Cowl of Haunting Precognition
 								i(186340),	-- Conjunction-Forged Chainmail
@@ -336,18 +437,7 @@ _.Instances = { tier(SL_TIER, {
 								crit(9, {	-- Kel'Thuzad
 									["achievementID"] = 15126,	-- Sanctum of Domination
 								}),
-								i(182136),	-- Chilled to the Core
-								i(181698),	-- Cryo-Freeze
-								i(183202),	-- Deadly Tandem
-								i(181943),	-- Eradicating Blow
-								i(183490),	-- Floral Recycling
-								i(182141),	-- Holy Oration
-								i(180847),	-- Inspiring Presence
 								i(186550),	-- Mawsworn Minion (PET!)
-								i(183499),	-- Quick Decisions
-								i(186599),	-- Stygian Ember
-								i(182675),	-- Untempered Dedication
-								i(182747),	-- Withering Bolt
 								i(187542),	-- Jaithys, the Prison Blade
 								i(186410, {	-- Jaithys, the Prison Blade
 									["description"] = "This version is only available as a 'Great Vault' reward.",
@@ -379,19 +469,6 @@ _.Instances = { tier(SL_TIER, {
 								crit(10, {	-- Sylvanas Windrunner
 									["achievementID"] = 15126,	-- Sanctum of Domination
 								}),
-								i(180933),	-- Ashen Juggernaut
-								i(183483),	-- Carnivorous Instinct
-								i(183511),	-- Deeper Daggers
-								i(181740),	-- Evasive Stride
-								i(182385),	-- Growing Inferno
-								i(182772),	-- Infernal Brand
-								i(182208),	-- Lingering Plague
-								i(182138),	-- Mind Devourer
-								i(182476),	-- Resilience of the Hunter
-								i(182127),	-- Shake the Foundations
-								i(186599),	-- Stygian Ember
-								i(182559),	-- Templar's Vindication
-								i(181383),	-- Unrelenting Cold
 								i(186398),	-- Edge of Night
 								i(186417),	-- Guard of the Sundered Defender
 								i(186325),	-- Veil of the Banshee Queen
@@ -435,18 +512,6 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15126,	-- Sanctum of Domination
 						}),
 						ach(14998),	-- Name A Better Duo, I'll Wait
-						i(182750),	-- Carnivorous Stalkers
-						i(182610),	-- Ferocious Appetite
-						i(182113),	-- Fleeting Wind
-						i(180932),	-- Fueled by Violence
-						i(183481),	-- Incessant Hunter
-						i(181376),	-- Inner Fury
-						i(182344),	-- Lost in Darkness
-						i(182144),	-- Nature's Focus
-						i(182139),	-- Rabid Shadows
-						i(186599),	-- Stygian Ember
-						i(183504),	-- Well-Placed Steel
-						i(182456),	-- Wrench Evil
 						i(186381),	-- Elethium-Bladed Glaive
 						i(186415),	-- Moriaz's Spare Targe
 						i(186291),	-- Periapt of Pristine Preservation
@@ -474,18 +539,7 @@ _.Instances = { tier(SL_TIER, {
 							crit(1),	-- All players have Photoflash!
 							crit(2),	-- Eye of the Jailer has Photoflash!
 						}),
-						i(181738),	-- Artifice of the Archmage
-						i(181963),	-- Blood Bond
-						i(182478),	-- Corrupting Leer
-						i(182462),	-- Expurgation
 						i(186554),	-- Eye of Allseeing (PET!)
-						i(183500),	-- Fade to Nothing
-						i(181840),	-- Light's Inspiration
-						i(182441),	-- Marksman's Advantage
-						i(180896),	-- Safeguard
-						i(186599),	-- Stygian Ember
-						i(181640),	-- Tumbling Technique
-						i(183486),	-- Well-Honed Instincts
 						i(186403),	-- Stygian Lance of Passage
 						i(186383),	-- Gazepiercer
 						i(186418),	-- Guarm's Lost Chew Toy
@@ -518,17 +572,6 @@ _.Instances = { tier(SL_TIER, {
 						}),
 						ach(15003),	-- To the Nines
 						i(186656),	-- Sanctum Gloomcharger (MOUNT!)
-						i(182657),	-- Deadly Chain
-						i(181845),	-- Exaltation
-						i(182340),	-- Fel Celerity
-						i(181736),	-- Flame Accretion
-						i(182135),	-- Focused Lightning
-						i(183477),	-- Precise Alignment
-						i(181641),	-- Rising Sun Revival
-						i(182753),	-- Royal Decree
-						i(182384),	-- Serrated Glaive
-						i(186599),	-- Stygian Ember
-						i(182201),	-- Unleashed Frenzy
 						i(186404),	-- Jotungeirr, Destiny's Call
 						i(186385),	-- Signe's Sonorous Scramaseax
 						i(186384),	-- Skyja's Revenant Fury
@@ -550,17 +593,6 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15126,	-- Sanctum of Domination
 						}),
 						ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
-						i(183508),	-- Ambidexterity
-						i(181705),	-- Celestial Effervescence
-						i(182206),	-- Convocation of the Dead
-						i(182752),	-- Fel Commando
-						i(182464),	-- Harmony of the Tortollan
-						i(182468),	-- Mortal Combo
-						i(181842),	-- Power Unto Others
-						i(181389),	-- Shivering Core
-						i(182111),	-- Spiritual Resonance
-						i(186599),	-- Stygian Ember
-						i(183464),	-- Tough as Bark
 						i(186405),	-- Gnarled Staff of the Elder Shaman
 						i(186386),	-- Betrayer's Shadowspike
 						i(186292),	-- Cap of Writhing Malevolence
@@ -581,19 +613,7 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15126,	-- Sanctum of Domination
 						}),
 						ach(15105),	-- Tormentor's Tango
-						i(180844),	-- Brutal Vitality
-						i(181834),	-- Chilled Resilience
-						i(183076),	-- Diabolic Bloodstone
-						i(183489),	-- Flash of Clarity
-						i(181467),	-- Flow of Time
-						i(181466),	-- Grounding Breath
 						i(186558),	-- Irongrasp (PET!)
-						i(181847),	-- Lasting Spirit
-						i(182448),	-- Light's Barding
-						i(182317),	-- Shattered Restoration
-						i(183513),	-- Stiletto Staccato
-						i(186599),	-- Stygian Ember
-						i(182107),	-- Vital Accretion
 						i(186407),	-- Hellscream's Requiem
 						i(186387),	-- Dormazain's Tenderizer
 						i(186411),	-- Soulrent Outrider's Recurve
@@ -615,18 +635,6 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15126,	-- Sanctum of Domination
 						}),
 						ach(15131),	-- Whack-A-Soul
-						i(182203),	-- Debilitating Malady
-						i(182754),	-- Duplicitous Havoc
-						i(182582),	-- Enkindled Spirit
-						i(183396),	-- Flame Infusion
-						i(181506),	-- Master Flame
-						i(183496),	-- Nimble Fingers
-						i(182125),	-- Pyroclastic Shock
-						i(182604),	-- Roaring Fire
-						i(183476),	-- Stellar Inspiration
-						i(186599),	-- Stygian Ember
-						i(181709),	-- Unnerving Focus
-						i(181465),	-- Xuen's Bond
 						i(186388),	-- Cruciform Veinripper
 						i(186392),	-- Exacting Mindslicer
 						i(186391),	-- Shadowsteel Demoralizer
@@ -648,18 +656,6 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15126,	-- Sanctum of Domination
 						}),
 						ach(15132),	-- Knowledge is Power
-						i(187507),	-- Adaptive Armor Fragment
-						i(183132),	-- Echoing Call
-						i(181735),	-- Hack and Slash
-						i(182145),	-- Heavy Rainfall
-						i(182133),	-- Insatiable Appetite
-						i(183487),	-- Layered Mane
-						i(181827),	-- Move with Grace
-						i(183503),	-- Poisoned Katar
-						i(181505),	-- Resplendent Mist
-						i(182307),	-- Shielding Words
-						i(186599),	-- Stygian Ember
-						i(181769),	-- Tempest Barrier
 						i(186409),	-- Pylon of the Great Purge
 						i(186393),	-- Torch of Eternal Knowledge
 						i(186413),	-- Directional Meltdown Projector
@@ -682,17 +678,6 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15126,	-- Sanctum of Domination
 						}),
 						ach(15040),	-- Flawless Fate
-						i(181509),	-- Arcane Prodigy
-						i(182649),	-- Brutal Projectiles
-						i(182470),	-- Demonic Momentum
-						i(182324),	-- Felfire Haste
-						i(183469),	-- Front of the Pack
-						i(182684),	-- Resolute Defender
-						i(183509),	-- Sleight of Hand
-						i(186599),	-- Stygian Ember
-						i(181867),	-- Swift Penitence
-						i(181624),	-- Swift Transference
-						i(182108),	-- Thunderous Paws
 						i(186419),	-- Record of Collapsing Realities
 						i(186330),	-- Cowl of Haunting Precognition
 						i(186340),	-- Conjunction-Forged Chainmail
@@ -714,18 +699,7 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15126,	-- Sanctum of Domination
 						}),
 						ach(15108),	-- Together Forever
-						i(182136),	-- Chilled to the Core
-						i(181698),	-- Cryo-Freeze
-						i(183202),	-- Deadly Tandem
-						i(181943),	-- Eradicating Blow
-						i(183490),	-- Floral Recycling
-						i(182141),	-- Holy Oration
-						i(180847),	-- Inspiring Presence
 						i(186550),	-- Mawsworn Minion (PET!)
-						i(183499),	-- Quick Decisions
-						i(186599),	-- Stygian Ember
-						i(182675),	-- Untempered Dedication
-						i(182747),	-- Withering Bolt
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410, {	-- Jaithys, the Prison Blade
 							["description"] = "This version is only available as a 'Great Vault' reward.",
@@ -753,19 +727,6 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15126,	-- Sanctum of Domination
 						}),
 						ach(15133),	-- This World is a Prism
-						i(180933),	-- Ashen Juggernaut
-						i(183483),	-- Carnivorous Instinct
-						i(183511),	-- Deeper Daggers
-						i(181740),	-- Evasive Stride
-						i(182385),	-- Growing Inferno
-						i(182772),	-- Infernal Brand
-						i(182208),	-- Lingering Plague
-						i(182138),	-- Mind Devourer
-						i(182476),	-- Resilience of the Hunter
-						i(182127),	-- Shake the Foundations
-						i(186599),	-- Stygian Ember
-						i(182559),	-- Templar's Vindication
-						i(181383),	-- Unrelenting Cold
 						i(186398),	-- Edge of Night
 						i(186414, {	-- Rae'shalare, Death's Whisper
 							ach(15191),	-- Rae'shalare, Death's Whisper
@@ -810,18 +771,6 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
 						}),
 						ach(14998),	-- Name A Better Duo, I'll Wait
-						i(182750),	-- Carnivorous Stalkers
-						i(182610),	-- Ferocious Appetite
-						i(182113),	-- Fleeting Wind
-						i(180932),	-- Fueled by Violence
-						i(183481),	-- Incessant Hunter
-						i(181376),	-- Inner Fury
-						i(182344),	-- Lost in Darkness
-						i(182144),	-- Nature's Focus
-						i(182139),	-- Rabid Shadows
-						i(186599),	-- Stygian Ember
-						i(183504),	-- Well-Placed Steel
-						i(182456),	-- Wrench Evil
 						i(186381),	-- Elethium-Bladed Glaive
 						i(186415),	-- Moriaz's Spare Targe
 						i(186291),	-- Periapt of Pristine Preservation
@@ -849,18 +798,7 @@ _.Instances = { tier(SL_TIER, {
 							crit(1),	-- All players have Photoflash!
 							crit(2),	-- Eye of the Jailer has Photoflash!
 						}),
-						i(181738),	-- Artifice of the Archmage
-						i(181963),	-- Blood Bond
-						i(182478),	-- Corrupting Leer
-						i(182462),	-- Expurgation
 						i(186554),	-- Eye of Allseeing (PET!)
-						i(183500),	-- Fade to Nothing
-						i(181840),	-- Light's Inspiration
-						i(182441),	-- Marksman's Advantage
-						i(180896),	-- Safeguard
-						i(186599),	-- Stygian Ember
-						i(181640),	-- Tumbling Technique
-						i(183486),	-- Well-Honed Instincts
 						i(186403),	-- Stygian Lance of Passage
 						i(186383),	-- Gazepiercer
 						i(186418),	-- Guarm's Lost Chew Toy
@@ -893,17 +831,6 @@ _.Instances = { tier(SL_TIER, {
 						}),
 						ach(15003),	-- To the Nines
 						i(186656),	-- Sanctum Gloomcharger (MOUNT!)
-						i(182657),	-- Deadly Chain
-						i(181845),	-- Exaltation
-						i(182340),	-- Fel Celerity
-						i(181736),	-- Flame Accretion
-						i(182135),	-- Focused Lightning
-						i(183477),	-- Precise Alignment
-						i(181641),	-- Rising Sun Revival
-						i(182753),	-- Royal Decree
-						i(182384),	-- Serrated Glaive
-						i(186599),	-- Stygian Ember
-						i(182201),	-- Unleashed Frenzy
 						i(186404),	-- Jotungeirr, Destiny's Call
 						i(186385),	-- Signe's Sonorous Scramaseax
 						i(186384),	-- Skyja's Revenant Fury
@@ -925,17 +852,6 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
 						}),
 						ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
-						i(183508),	-- Ambidexterity
-						i(181705),	-- Celestial Effervescence
-						i(182206),	-- Convocation of the Dead
-						i(182752),	-- Fel Commando
-						i(182464),	-- Harmony of the Tortollan
-						i(182468),	-- Mortal Combo
-						i(181842),	-- Power Unto Others
-						i(181389),	-- Shivering Core
-						i(182111),	-- Spiritual Resonance
-						i(186599),	-- Stygian Ember
-						i(183464),	-- Tough as Bark
 						i(186405),	-- Gnarled Staff of the Elder Shaman
 						i(186386),	-- Betrayer's Shadowspike
 						i(186292),	-- Cap of Writhing Malevolence
@@ -956,19 +872,7 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
 						}),
 						ach(15105),	-- Tormentor's Tango
-						i(180844),	-- Brutal Vitality
-						i(181834),	-- Chilled Resilience
-						i(183076),	-- Diabolic Bloodstone
-						i(183489),	-- Flash of Clarity
-						i(181467),	-- Flow of Time
-						i(181466),	-- Grounding Breath
 						i(186558),	-- Irongrasp (PET!)
-						i(181847),	-- Lasting Spirit
-						i(182448),	-- Light's Barding
-						i(182317),	-- Shattered Restoration
-						i(183513),	-- Stiletto Staccato
-						i(186599),	-- Stygian Ember
-						i(182107),	-- Vital Accretion
 						i(186407),	-- Hellscream's Requiem
 						i(186387),	-- Dormazain's Tenderizer
 						i(186411),	-- Soulrent Outrider's Recurve
@@ -990,18 +894,6 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
 						}),
 						ach(15131),	-- Whack-A-Soul
-						i(182203),	-- Debilitating Malady
-						i(182754),	-- Duplicitous Havoc
-						i(182582),	-- Enkindled Spirit
-						i(183396),	-- Flame Infusion
-						i(181506),	-- Master Flame
-						i(183496),	-- Nimble Fingers
-						i(182125),	-- Pyroclastic Shock
-						i(182604),	-- Roaring Fire
-						i(183476),	-- Stellar Inspiration
-						i(186599),	-- Stygian Ember
-						i(181709),	-- Unnerving Focus
-						i(181465),	-- Xuen's Bond
 						i(186388),	-- Cruciform Veinripper
 						i(186392),	-- Exacting Mindslicer
 						i(186391),	-- Shadowsteel Demoralizer
@@ -1023,18 +915,6 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
 						}),
 						ach(15132),	-- Knowledge is Power
-						i(187507),	-- Adaptive Armor Fragment
-						i(183132),	-- Echoing Call
-						i(181735),	-- Hack and Slash
-						i(182145),	-- Heavy Rainfall
-						i(182133),	-- Insatiable Appetite
-						i(183487),	-- Layered Mane
-						i(181827),	-- Move with Grace
-						i(183503),	-- Poisoned Katar
-						i(181505),	-- Resplendent Mist
-						i(182307),	-- Shielding Words
-						i(186599),	-- Stygian Ember
-						i(181769),	-- Tempest Barrier
 						i(186409),	-- Pylon of the Great Purge
 						i(186393),	-- Torch of Eternal Knowledge
 						i(186413),	-- Directional Meltdown Projector
@@ -1057,17 +937,6 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
 						}),
 						ach(15040),	-- Flawless Fate
-						i(181509),	-- Arcane Prodigy
-						i(182649),	-- Brutal Projectiles
-						i(182470),	-- Demonic Momentum
-						i(182324),	-- Felfire Haste
-						i(183469),	-- Front of the Pack
-						i(182684),	-- Resolute Defender
-						i(183509),	-- Sleight of Hand
-						i(186599),	-- Stygian Ember
-						i(181867),	-- Swift Penitence
-						i(181624),	-- Swift Transference
-						i(182108),	-- Thunderous Paws
 						i(186419),	-- Record of Collapsing Realities
 						i(186330),	-- Cowl of Haunting Precognition
 						i(186340),	-- Conjunction-Forged Chainmail
@@ -1089,18 +958,7 @@ _.Instances = { tier(SL_TIER, {
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
 						}),
 						ach(15108),	-- Together Forever
-						i(182136),	-- Chilled to the Core
-						i(181698),	-- Cryo-Freeze
-						i(183202),	-- Deadly Tandem
-						i(181943),	-- Eradicating Blow
-						i(183490),	-- Floral Recycling
-						i(182141),	-- Holy Oration
-						i(180847),	-- Inspiring Presence
 						i(186550),	-- Mawsworn Minion (PET!)
-						i(183499),	-- Quick Decisions
-						i(186599),	-- Stygian Ember
-						i(182675),	-- Untempered Dedication
-						i(182747),	-- Withering Bolt
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410, {	-- Jaithys, the Prison Blade
 							["description"] = "This version is only available as a 'Great Vault' reward.",
@@ -1129,19 +987,6 @@ _.Instances = { tier(SL_TIER, {
 						}),
 						ach(15134),	-- Ahead of the Curve: Sylvanas Windrunner
 						ach(15133),	-- This World is a Prism
-						i(180933),	-- Ashen Juggernaut
-						i(183483),	-- Carnivorous Instinct
-						i(183511),	-- Deeper Daggers
-						i(181740),	-- Evasive Stride
-						i(182385),	-- Growing Inferno
-						i(182772),	-- Infernal Brand
-						i(182208),	-- Lingering Plague
-						i(182138),	-- Mind Devourer
-						i(182476),	-- Resilience of the Hunter
-						i(182127),	-- Shake the Foundations
-						i(186599),	-- Stygian Ember
-						i(182559),	-- Templar's Vindication
-						i(181383),	-- Unrelenting Cold
 						i(186398),	-- Edge of Night
 						i(186414, {	-- Rae'shalare, Death's Whisper
 							ach(15191),	-- Rae'shalare, Death's Whisper
@@ -1184,18 +1029,6 @@ _.Instances = { tier(SL_TIER, {
 					["g"] = {
 						ach(15112),	-- Mythic: The Tarragrue
 						ach(14998),	-- Name A Better Duo, I'll Wait
-						i(182750),	-- Carnivorous Stalkers
-						i(182610),	-- Ferocious Appetite
-						i(182113),	-- Fleeting Wind
-						i(180932),	-- Fueled by Violence
-						i(183481),	-- Incessant Hunter
-						i(181376),	-- Inner Fury
-						i(182344),	-- Lost in Darkness
-						i(182144),	-- Nature's Focus
-						i(182139),	-- Rabid Shadows
-						i(186599),	-- Stygian Ember
-						i(183504),	-- Well-Placed Steel
-						i(182456),	-- Wrench Evil
 						i(186381),	-- Elethium-Bladed Glaive
 						i(186415),	-- Moriaz's Spare Targe
 						i(186291),	-- Periapt of Pristine Preservation
@@ -1221,19 +1054,8 @@ _.Instances = { tier(SL_TIER, {
 							crit(1),	-- All players have Photoflash!
 							crit(2),	-- Eye of the Jailer has Photoflash!
 						}),
-						i(181738),	-- Artifice of the Archmage
-						i(181963),	-- Blood Bond
-						i(182478),	-- Corrupting Leer
-						i(182462),	-- Expurgation
 						i(186554),	-- Eye of Allseeing (PET!)
 						i(186555),	-- Eye of Etermination (PET!)
-						i(183500),	-- Fade to Nothing
-						i(181840),	-- Light's Inspiration
-						i(182441),	-- Marksman's Advantage
-						i(180896),	-- Safeguard
-						i(186599),	-- Stygian Ember
-						i(181640),	-- Tumbling Technique
-						i(183486),	-- Well-Honed Instincts
 						i(186403),	-- Stygian Lance of Passage
 						i(186383),	-- Gazepiercer
 						i(186418),	-- Guarm's Lost Chew Toy
@@ -1264,17 +1086,6 @@ _.Instances = { tier(SL_TIER, {
 						ach(15114),	-- Mythic: The Nine
 						ach(15003),	-- To the Nines
 						i(186656),	-- Sanctum Gloomcharger (MOUNT!)
-						i(182657),	-- Deadly Chain
-						i(181845),	-- Exaltation
-						i(182340),	-- Fel Celerity
-						i(181736),	-- Flame Accretion
-						i(182135),	-- Focused Lightning
-						i(183477),	-- Precise Alignment
-						i(181641),	-- Rising Sun Revival
-						i(182753),	-- Royal Decree
-						i(182384),	-- Serrated Glaive
-						i(186599),	-- Stygian Ember
-						i(182201),	-- Unleashed Frenzy
 						i(186404),	-- Jotungeirr, Destiny's Call
 						i(186385),	-- Signe's Sonorous Scramaseax
 						i(186384),	-- Skyja's Revenant Fury
@@ -1294,17 +1105,6 @@ _.Instances = { tier(SL_TIER, {
 					["g"] = {
 						ach(15115),	-- Mythic: Remnant of Ner'zhul
 						ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
-						i(183508),	-- Ambidexterity
-						i(181705),	-- Celestial Effervescence
-						i(182206),	-- Convocation of the Dead
-						i(182752),	-- Fel Commando
-						i(182464),	-- Harmony of the Tortollan
-						i(182468),	-- Mortal Combo
-						i(181842),	-- Power Unto Others
-						i(181389),	-- Shivering Core
-						i(182111),	-- Spiritual Resonance
-						i(186599),	-- Stygian Ember
-						i(183464),	-- Tough as Bark
 						i(186405),	-- Gnarled Staff of the Elder Shaman
 						i(186386),	-- Betrayer's Shadowspike
 						i(186292),	-- Cap of Writhing Malevolence
@@ -1323,19 +1123,7 @@ _.Instances = { tier(SL_TIER, {
 					["g"] = {
 						ach(15116),	-- Mythic: Soulrender Dormazain
 						ach(15105),	-- Tormentor's Tango
-						i(180844),	-- Brutal Vitality
-						i(181834),	-- Chilled Resilience
-						i(183076),	-- Diabolic Bloodstone
-						i(183489),	-- Flash of Clarity
-						i(181467),	-- Flow of Time
-						i(181466),	-- Grounding Breath
 						i(186558),	-- Irongrasp (PET!)
-						i(181847),	-- Lasting Spirit
-						i(182448),	-- Light's Barding
-						i(182317),	-- Shattered Restoration
-						i(183513),	-- Stiletto Staccato
-						i(186599),	-- Stygian Ember
-						i(182107),	-- Vital Accretion
 						i(186407),	-- Hellscream's Requiem
 						i(186387),	-- Dormazain's Tenderizer
 						i(186411),	-- Soulrent Outrider's Recurve
@@ -1355,18 +1143,6 @@ _.Instances = { tier(SL_TIER, {
 					["g"] = {
 						ach(15117),	-- Mythic: Painsmith Raznal
 						ach(15131),	-- Whack-A-Soul
-						i(182203),	-- Debilitating Malady
-						i(182754),	-- Duplicitous Havoc
-						i(182582),	-- Enkindled Spirit
-						i(183396),	-- Flame Infusion
-						i(181506),	-- Master Flame
-						i(183496),	-- Nimble Fingers
-						i(182125),	-- Pyroclastic Shock
-						i(182604),	-- Roaring Fire
-						i(183476),	-- Stellar Inspiration
-						i(186599),	-- Stygian Ember
-						i(181709),	-- Unnerving Focus
-						i(181465),	-- Xuen's Bond
 						i(186388),	-- Cruciform Veinripper
 						i(186392),	-- Exacting Mindslicer
 						i(186391),	-- Shadowsteel Demoralizer
@@ -1386,18 +1162,6 @@ _.Instances = { tier(SL_TIER, {
 					["g"] = {
 						ach(15118),	-- Mythic: Guardian of the First Ones
 						ach(15132),	-- Knowledge is Power
-						i(187507),	-- Adaptive Armor Fragment
-						i(183132),	-- Echoing Call
-						i(181735),	-- Hack and Slash
-						i(182145),	-- Heavy Rainfall
-						i(182133),	-- Insatiable Appetite
-						i(183487),	-- Layered Mane
-						i(181827),	-- Move with Grace
-						i(183503),	-- Poisoned Katar
-						i(181505),	-- Resplendent Mist
-						i(182307),	-- Shielding Words
-						i(186599),	-- Stygian Ember
-						i(181769),	-- Tempest Barrier
 						i(186409),	-- Pylon of the Great Purge
 						i(186393),	-- Torch of Eternal Knowledge
 						i(186413),	-- Directional Meltdown Projector
@@ -1418,17 +1182,6 @@ _.Instances = { tier(SL_TIER, {
 					["g"] = {
 						ach(15119),	-- Mythic: Fatescribe Roh-Kalo
 						ach(15040),	-- Flawless Fate
-						i(181509),	-- Arcane Prodigy
-						i(182649),	-- Brutal Projectiles
-						i(182470),	-- Demonic Momentum
-						i(182324),	-- Felfire Haste
-						i(183469),	-- Front of the Pack
-						i(182684),	-- Resolute Defender
-						i(183509),	-- Sleight of Hand
-						i(186599),	-- Stygian Ember
-						i(181867),	-- Swift Penitence
-						i(181624),	-- Swift Transference
-						i(182108),	-- Thunderous Paws
 						i(186419),	-- Record of Collapsing Realities
 						i(186330),	-- Cowl of Haunting Precognition
 						i(186340),	-- Conjunction-Forged Chainmail
@@ -1448,18 +1201,7 @@ _.Instances = { tier(SL_TIER, {
 					["g"] = {
 						ach(15120),	-- Mythic: Kel'Thuzad
 						ach(15108),	-- Together Forever
-						i(182136),	-- Chilled to the Core
-						i(181698),	-- Cryo-Freeze
-						i(183202),	-- Deadly Tandem
-						i(181943),	-- Eradicating Blow
-						i(183490),	-- Floral Recycling
-						i(182141),	-- Holy Oration
-						i(180847),	-- Inspiring Presence
 						i(186550),	-- Mawsworn Minion (PET!)
-						i(183499),	-- Quick Decisions
-						i(186599),	-- Stygian Ember
-						i(182675),	-- Untempered Dedication
-						i(182747),	-- Withering Bolt
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410, {	-- Jaithys, the Prison Blade
 							["description"] = "This version is only available as a 'Great Vault' reward.",
@@ -1490,19 +1232,6 @@ _.Instances = { tier(SL_TIER, {
 						ach(15135),	-- Cutting Edge: Sylvanas Windrunner
 						ach(15133),	-- This World is a Prism
 						i(186642),	-- Vengeance (MOUNT!)
-						i(180933),	-- Ashen Juggernaut
-						i(183483),	-- Carnivorous Instinct
-						i(183511),	-- Deeper Daggers
-						i(181740),	-- Evasive Stride
-						i(182385),	-- Growing Inferno
-						i(182772),	-- Infernal Brand
-						i(182208),	-- Lingering Plague
-						i(182138),	-- Mind Devourer
-						i(182476),	-- Resilience of the Hunter
-						i(182127),	-- Shake the Foundations
-						i(186599),	-- Stygian Ember
-						i(182559),	-- Templar's Vindication
-						i(181383),	-- Unrelenting Cold
 						i(186398),	-- Edge of Night
 						i(186414, {	-- Rae'shalare, Death's Whisper
 							ach(15191),	-- Rae'shalare, Death's Whisper

@@ -658,25 +658,23 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
 						["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 						["g"] = {
-						--	TODO: keep conduits here or Uncollectable?
-							i(181974, {	-- Courageous Ascension
-								["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-								["timeline"] = {
-									"added 9.0.1.35167",
-								},
-							}),
-							i(182345, {	-- Elysian Dirge
-								["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-								["timeline"] = {
-									"added 9.0.1.35256",
-								},
-							}),
-							i(182321, {	-- Enfeebled Mark
-								["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
-								["timeline"] = {
-									"added 9.0.1.35256",
-								},
-							}),
+							i(181974),	-- Courageous Ascension
+							i(182321),	-- Enfeebled Mark
+							i(182345),	-- Elysian Dirge
+							i(181600),	-- Ire of the Ascended
+							i(182295),	-- Proliferation
+							i(183471),	-- Deep Allegiance
+							i(182440),	-- Piercing Verdict
+							i(182646),	-- Repeat Decree
+							i(183492),	-- Reverberation
+							i(182778),	-- Ringing Clarity
+							i(182960),	-- Soul Tithe
+							i(181759),	-- Strike with Clarity
+							-- TODO: Get Rest of class specific rewards
+							i(181840),	-- Light's Inspiration
+							i(181962),	-- Mental Recovery
+							i(183466),	-- Innate Resolve
+							i(183467),	-- Tireless Pursuit
 							i(182584),	-- Cheetah's Vigor
 							i(182106),	-- Refreshing Waters
 							i(182469),	-- Rejuvenating Wind

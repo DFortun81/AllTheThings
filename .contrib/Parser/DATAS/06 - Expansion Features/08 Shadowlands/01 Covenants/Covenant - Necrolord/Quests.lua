@@ -60,25 +60,29 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
 						["coord"] = { 38.8, 32.4, SEAT_OF_THE_PRIMUS },
 						["g"] = {
-							i(181770, {	-- Bone Marrow Hops
-								["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-								["timeline"] = {
-									"added 9.0.1.35078",
-								},
-							}),
-							i(182292, {	-- Brutal Grasp
-								["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-								["timeline"] = {
-									"added 9.0.1.35282",
-								},
-							}),
-							i(183472, {	-- Evolved Swarm
-								["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-								["timeline"] = {
-									"added 9.0.1.35522",
-								},
-							}),
-							follower(1261),	-- Plague Deviser Marileth
+							i(181770),	-- Bone Marrow Hops
+							i(182706),	-- Brooding Pool
+							i(182292),	-- Brutal Grasp
+							i(183472),	-- Evolved Swarm
+							i(182961),	-- Fatal Decimation
+							i(181981),	-- Festering Transfusion
+							i(181553),	-- Gift of the Lich
+							i(182339),	-- Necrotic Barrage
+							i(182770),	-- Righteous Might
+							i(183493),	-- Sudden Fractures
+							i(182346),	-- Tumbling Waves
+							i(182442),	-- Veteran's Repute
+							-- TODO: Get Rest of class specific rewards
+							i(181840),	-- Light's Inspiration
+							i(181962),	-- Mental Recovery
+							i(183466),	-- Innate Resolve
+							i(183467),	-- Tireless Pursuit
+							i(182584),	-- Cheetah's Vigor
+							i(182106),	-- Refreshing Waters
+							i(182469),	-- Rejuvenating Wind
+							i(182108),	-- Thunderous Paws
+							
+							
 						},
 					}),
 					q(58504, {	-- Accusatory Missive
@@ -235,6 +239,9 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 59596, 63003 },	-- Collective Soul
 						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
 						["coord"] = { 38.8, 32.4, SEAT_OF_THE_PRIMUS },
+						["g"] = {
+							follower(1261),	-- Plague Deviser Marileth
+						},
 					}),
 					q(62848, {	-- Conduits, What Are They For?
 						["sourceQuests"] = { 61388 },	-- A Journey Made Together

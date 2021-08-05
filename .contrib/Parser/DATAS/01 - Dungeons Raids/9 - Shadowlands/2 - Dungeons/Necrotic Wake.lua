@@ -34,6 +34,50 @@ _.Instances = { tier(SL_TIER, {
 			}),
 			--n(WORLD_QUESTS, {
 			--}),
+			n(CONDUITS, {
+				e(2395, {	-- Blightbone
+					["crs"] = { 162691 },	-- Blightbone
+					["g"] = {
+						i(183505),	-- Maim, Mangle
+						i(181641),	-- Rising Sun Revival
+						i(183482),	-- Sudden Ambush
+						i(181709),	-- Unnerving Focus
+					},
+				}),
+				e(2391, {	-- Amarth, The Harvester
+					["crs"] = { 163157 },	-- Amarth, The Harvester
+					["g"] = {
+						i(183402),	-- Bloodletting
+						i(181712),	-- Depths of Insanity
+						i(181982),	-- Everfrost
+						i(183481),	-- Incessant Hunter
+						i(182772),	-- Infernal Brand
+					},
+				}),
+				e(2392, {	-- Surgeon Stitchflesh
+					["crs"] = {
+						162689,	-- Surgeon Stitchflesh
+						164578,	-- Stitchflesh's Creation
+					},
+					["g"] = {
+						i(181738),	-- Artifice of the Archmage
+						i(182750),	-- Carnivorous Stalkers
+						i(182385),	-- Growing Inferno
+						i(183512),	-- Planned Execution
+						i(181700),	-- Scalding Brew
+					},
+				}),
+				e(2396, {	-- Nalthor the Rimebinder
+					["crs"] = { 162693 },	-- Nalthor the Rimebinder
+					["g"] = {
+						i(182136),	-- Chilled to the Core
+						i(182622),	-- Resplendent Light
+						i(181843),	-- Shining Radiance
+						i(182201),	-- Unleashed Frenzy
+						i(181383),	-- Unrelenting Cold
+					},
+				}),
+			}),
 			n(LEGENDARIES, {
 				e(2391, {	-- Amarth, The Harvester
 					["crs"] = { 163157 },	-- Amarth, The Harvester
@@ -62,10 +106,6 @@ _.Instances = { tier(SL_TIER, {
 				e(2395, {	-- Blightbone
 					["crs"] = { 162691 },	-- Blightbone
 					["g"] = {
-						i(183505),	-- Maim, Mangle
-						i(181641),	-- Rising Sun Revival
-						i(183482),	-- Sudden Ambush
-						i(181709),	-- Unnerving Focus
 						i(178730),	-- Engorged Worm Smasher
 						i(178735),	-- Blight Belcher
 						i(178732, {	-- Abominable Visage
@@ -80,11 +120,6 @@ _.Instances = { tier(SL_TIER, {
 				e(2391, {	-- Amarth, The Harvester
 					["crs"] = { 163157 },	-- Amarth, The Harvester
 					["g"] = {
-						i(183402),	-- Bloodletting
-						i(181712),	-- Depths of Insanity
-						i(181982),	-- Everfrost
-						i(183481),	-- Incessant Hunter
-						i(182772),	-- Infernal Brand
 						i(178737),	-- Amarth's Spellblade
 						i(178738),	-- Rattling Deadeye Hood
 						i(178740),	-- Reanimator's Mantle
@@ -99,11 +134,6 @@ _.Instances = { tier(SL_TIER, {
 						164578,	-- Stitchflesh's Creation
 					},
 					["g"] = {
-						i(181738),	-- Artifice of the Archmage
-						i(182750),	-- Carnivorous Stalkers
-						i(182385),	-- Growing Inferno
-						i(183512),	-- Planned Execution
-						i(181700),	-- Scalding Brew
 						i(178743),	-- Stitchflesh's Scalpel
 						i(178750),	-- Encrusted Canopic Lid
 						i(178749),	-- Vile Butcher's Pauldrons
@@ -118,11 +148,6 @@ _.Instances = { tier(SL_TIER, {
 					["crs"] = { 162693 },	-- Nalthor the Rimebinder
 					["g"] = {
 						ach(14366),	-- The Necrotic Wake
-						i(182136),	-- Chilled to the Core
-						i(182622),	-- Resplendent Light
-						i(181843),	-- Shining Radiance
-						i(182201),	-- Unleashed Frenzy
-						i(181383),	-- Unrelenting Cold
 						i(178780),	-- Rimebinder's Runeblade
 						i(178777),	-- Dark Frost Helmet
 						i(178779),	-- Undying Chill Shoulderpads
@@ -139,10 +164,6 @@ _.Instances = { tier(SL_TIER, {
 					e(2395, {	-- Blightbone
 						["crs"] = { 162691 },	-- Blightbone
 						["g"] = {
-							i(183505),	-- Maim, Mangle
-							i(181641),	-- Rising Sun Revival
-							i(183482),	-- Sudden Ambush
-							i(181709),	-- Unnerving Focus
 							i(178730),	-- Engorged Worm Smasher
 							i(178735),	-- Blight Belcher
 							i(178732, {	-- Abominable Visage
@@ -157,11 +178,6 @@ _.Instances = { tier(SL_TIER, {
 					e(2391, {	-- Amarth, The Harvester
 						["crs"] = { 166855 },	-- Amarth, The Harvester
 						["g"] = {
-							i(183402),	-- Bloodletting
-							i(181712),	-- Depths of Insanity
-							i(181982),	-- Everfrost
-							i(183481),	-- Incessant Hunter
-							i(182772),	-- Infernal Brand
 							i(178737),	-- Amarth's Spellblade
 							i(178738),	-- Rattling Deadeye Hood
 							i(178740),	-- Reanimator's Mantle
@@ -176,11 +192,6 @@ _.Instances = { tier(SL_TIER, {
 							164578,	-- Stitchflesh's Creation
 						},
 						["g"] = {
-							i(181738),	-- Artifice of the Archmage
-							i(182750),	-- Carnivorous Stalkers
-							i(182385),	-- Growing Inferno
-							i(183512),	-- Planned Execution
-							i(181700),	-- Scalding Brew
 							i(178743),	-- Stitchflesh's Scalpel
 							i(178750),	-- Encrusted Canopic Lid
 							i(178749),	-- Vile Butcher's Pauldrons
@@ -195,11 +206,6 @@ _.Instances = { tier(SL_TIER, {
 						["crs"] = { 162693 },	-- Nalthor the Rimebinder
 						["g"] = {
 							ach(14367),	-- Heroic: The Necrotic Wake
-							i(182136),	-- Chilled to the Core
-							i(182622),	-- Resplendent Light
-							i(181843),	-- Shining Radiance
-							i(182201),	-- Unleashed Frenzy
-							i(181383),	-- Unrelenting Cold
 							i(178780),	-- Rimebinder's Runeblade
 							i(178777),	-- Dark Frost Helmet
 							i(178779),	-- Undying Chill Shoulderpads
@@ -218,10 +224,6 @@ _.Instances = { tier(SL_TIER, {
 					e(2395, {	-- Blightbone
 						["crs"] = { 162691 },	-- Blightbone
 						["g"] = {
-							i(183505),	-- Maim, Mangle
-							i(181641),	-- Rising Sun Revival
-							i(183482),	-- Sudden Ambush
-							i(181709),	-- Unnerving Focus
 							i(178730),	-- Engorged Worm Smasher
 							i(178735),	-- Blight Belcher
 							i(178732, {	-- Abominable Visage
@@ -237,11 +239,6 @@ _.Instances = { tier(SL_TIER, {
 						["crs"] = { 166855 },	-- Amarth, The Harvester
 						["g"] = {
 							ach(14295),	-- Bountiful Harvest
-							i(183402),	-- Bloodletting
-							i(181712),	-- Depths of Insanity
-							i(181982),	-- Everfrost
-							i(183481),	-- Incessant Hunter
-							i(182772),	-- Infernal Brand
 							i(178737),	-- Amarth's Spellblade
 							i(178738),	-- Rattling Deadeye Hood
 							i(178740),	-- Reanimator's Mantle
@@ -257,11 +254,6 @@ _.Instances = { tier(SL_TIER, {
 						},
 						["g"] = {
 							ach(14320),	-- Surgeon's Supplies
-							i(181738),	-- Artifice of the Archmage
-							i(182750),	-- Carnivorous Stalkers
-							i(182385),	-- Growing Inferno
-							i(183512),	-- Planned Execution
-							i(181700),	-- Scalding Brew
 							i(178743),	-- Stitchflesh's Scalpel
 							i(178750),	-- Encrusted Canopic Lid
 							i(178749),	-- Vile Butcher's Pauldrons
@@ -277,12 +269,7 @@ _.Instances = { tier(SL_TIER, {
 						["g"] = {
 							ach(14368),	-- Mythic: The Necrotic Wake
 							ach(14285),	-- Ready for Raiding VII
-							i(182136),	-- Chilled to the Core
 							i(181819),	-- Marrowfang's Reins (MOUNT!)
-							i(182622),	-- Resplendent Light
-							i(181843),	-- Shining Radiance
-							i(182201),	-- Unleashed Frenzy
-							i(181383),	-- Unrelenting Cold
 							i(178780),	-- Rimebinder's Runeblade
 							i(178777),	-- Dark Frost Helmet
 							i(178779),	-- Undying Chill Shoulderpads

@@ -229,32 +229,27 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 172677 },	-- Niya
 						["coord"] = { 33.7, 45.0, THE_TRUNK },
 						["g"] = {
-							i(183473, {	-- Conflux of Elements
-								["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-								["timeline"] = {
-									"added 9.0.1.35522",
-								},
-							}),
-							i(182651, {	-- Destructive Reverberations
-								["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-								["timeline"] = {
-									"added 9.0.1.35282",
-								},
-							}),
-							i(181539, {	-- Discipline of the Grove
-								["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-								["timeline"] = {
-									"added 9.0.1.35078",
-								},
-							}),
-							i(182347, {	-- Essential Extraction
-								["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
-								["timeline"] = {
-									"added 9.0.1.35256",
-								},
-							}),
+							i(183473),	-- Conflux of Elements
+							i(182651),	-- Destructive Reverberations
+							i(181539),	-- Discipline of the Grove
+							i(182347),	-- Essential Extraction
+							i(182129),	-- Fae Fermata
+							i(183494),	-- Septic Shock
+							i(182335),	-- Spirit Attunement
+							i(182964),	-- Soul Eater
+							i(182767),	-- The Long Summer
+							i(183463),	-- Unnatural Malice
+							i(181775),	-- Way of the Fae
+							i(183199),	-- Withering Ground
+							-- TODO: Get Rest of class specific rewards
+							i(181840),	-- Light's Inspiration
+							i(181962),	-- Mental Recovery
 							i(183466),	-- Innate Resolve
 							i(183467),	-- Tireless Pursuit
+							i(182584),	-- Cheetah's Vigor
+							i(182106),	-- Refreshing Waters
+							i(182469),	-- Rejuvenating Wind
+							i(182108),	-- Thunderous Paws
 							follower(1265),	-- Niya
 						},
 					}),

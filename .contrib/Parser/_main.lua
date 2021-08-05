@@ -388,6 +388,7 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 -- Headers
 ACHIEVEMENTS = -4
 COMMON_BOSS_DROPS = -1;
+CONDUITS = -981;
 DISCOVERY = -37;
 EXPLORATION = -15;
 FACTIONS = -6013;

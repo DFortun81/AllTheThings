@@ -132,41 +132,6 @@ _.ExpansionFeatures =
 				}),
 				n(-901, {	-- Covenant Callings
 					["g"] = {
-						n(-11, {	-- Common Box Drops
-							-- TODO: Feels like this is pointless. Getting conduits from literally every source in the game via calling boxes...
-							["description"] = "Can be contained in any of the Calling rewards.",
-							["g"] = {
-								-- Gear
-								-- Conduits (maybe remove since it's basically just any Conduit in the game...)
-								i(182105),	-- Astral Protection [Shaman]
-								i(181770),	-- Bone Marrow Hops [Monk]
-								i(181435),	-- Calcualted Strikes [Monk-Windwalker]
-								i(181838),	-- Charitable Soul [Priest]
-								i(182136),	-- Chilled to the Core [Shaman-Enhance]
-								i(181837),	-- Clear Mind [Priest]
-								i(181462),	-- Coordinated Offensive [Monk]
-								i(181974),	-- Courageous Ascension [Priest]
-								i(182110),	-- Crippling Hex [Shaman]
-								i(181512),	-- Dizzying Tumble [Monk]
-								i(181740),	-- Evasive Stride [Monk]
-								i(181845),	-- Exaltation [Priest]
-								i(181942),	-- Focused Mending [Priest]
-								i(181508),	-- Fortifying Ingredients [Monk-Brewmaster]
-								i(181466),	-- Grounding Breath [Monk]
-								i(181373),	-- Harm Denial [Monk]
-								i(181495),	-- Jade Bond [Monk]
-								i(181840),	-- Light's Inspiration [Priest]
-								i(182138),	-- Mind Devourer [Priest-Shadow]
-								i(181842),	-- Power Unto Others
-								i(181505),	-- Resplendent Mist [Monk]
-								i(181700),	-- Scalding Brew [Monk]
-								i(181843),	-- Shining Radiance
-								i(182127),	-- Shake the Foundations [Shaman-Elemental]
-								i(181640),	-- Tumbling Technique [Monk]
-								i(182107),	-- Vital Accretion [Shaman]
-								i(181742),	-- Walk with the Ox [Monk-Brewmaster]
-							},
-						}),
 						n(175390, {	-- Dirty Glinting Object
 							["description"] = "Can appear when on certain Training callings.  Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
 							["crs"] = {

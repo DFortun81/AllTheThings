@@ -567,28 +567,28 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62918 },	-- Binding Power
 						["provider"] = { "n", 171979 },	-- Nadjia the Mistblade
 						["coord"] = { 43.9, 17.9, SINFALL_REACHES },
-						["g"] = {	-- TODO: keep rewards here or put in Uncollectable?  unsure of how to get rewards for other classes (beyond playing through on each one)
-							i(183510, {	-- Count the Odds
-								["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-								["timeline"] = {
-									"added 9.0.1.35282",
-								},
-							}),
-							i(182331, {	-- Empowered Release
-								["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-								["timeline"] = {
-									"added 9.0.1.35256",
-								},
-							}),
-							i(183474, {	-- Endless Thirst
-								["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-								["timeline"] = {
-									"added 9.0.1.35522",
-								},
-							}),
+						["g"] = {
+							i(182962),	-- Catastrophic Origin
+							i(182331),	-- Empowered Release
+							i(183474),	-- Endless Thirst
+							i(182777),	-- Hallowed Discernment
+							i(182463),	-- Harrowing Punishment
+							i(181774),	-- Imbued Reflections
+							i(182288),	-- Impenetrable Gloom
+							i(182685),	-- Increased Scrutiny
+							i(183495),	-- Lashing Scars
+							i(182348),	-- Lavish Harvest
 							i(182130),	-- Shattered Perceptions
+							i(181639),	-- Siphoned Malice
+							-- TODO: Get Rest of class specific rewards
 							i(181840),	-- Light's Inspiration
 							i(181962),	-- Mental Recovery
+							i(183466),	-- Innate Resolve
+							i(183467),	-- Tireless Pursuit
+							i(182584),	-- Cheetah's Vigor
+							i(182106),	-- Refreshing Waters
+							i(182469),	-- Rejuvenating Wind
+							i(182108),	-- Thunderous Paws
 						},
 					}),
 					q(57918, {	-- The Absolution of Souls
