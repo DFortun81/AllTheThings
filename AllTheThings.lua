@@ -4217,6 +4217,86 @@ app.HasCost = function(group, idType, id)
 	end
 	return false;
 end
+
+app.NestSourceQuests = function(root, addedQuests, depth)
+	-- root is already the cloned source of the new list, just add each sourceQuest cloned into sub-groups
+	-- setup tracking which quests have been added as a sub-group, so we can only add them once
+	if not addedQuests then addedQuests = {}; end
+	root.hideText = true;
+	root.depth = depth or 0;
+	if root.sourceQuests and #root.sourceQuests > 0 then
+		local qs;
+		-- we will ignore custom collect if the root quest is already out of scope
+		local checkCustomCollects = app.CheckCustomCollects(root);
+		local prereqs;
+		for _,sourceQuestID in ipairs(root.sourceQuests) do
+			if not addedQuests[sourceQuestID] then
+				addedQuests[sourceQuestID] = true;
+				qs = sourceQuestID < 1 and app.SearchForField("creatureID", math.abs(sourceQuestID)) or app.SearchForField("questID", sourceQuestID);
+				if qs and #qs > 0 then
+					local i, sq = #qs;
+					while not sq and i > 0 do
+						if qs[i].questID == sourceQuestID then sq = qs[i]; end
+						i = i - 1;
+					end
+					if sq and sq.questID then
+						if sq.parent and sq.parent.questID == sq.questID then
+							sq = sq.parent;
+						end
+						-- clone the object so as to not modify actual data
+						sq = CreateObject(sq);
+						sq.hideText = true;
+						-- clean anything out of it so that items don't show in the quest requirements
+						sq.g = nil;
+
+						-- force collectible for normally un-collectible things to make sure it shows in list if the quest needs to be completed to progess
+						if not sq.collectible and not sq.sourceQuestsCompleted then
+							sq.collectible = true;
+						end
+
+						-- If the user is in a Party Sync session, then force showing pre-req quests which are replayable if they are collected already
+						if app.IsInPartySync and sq.collected then
+							sq.OnUpdate = app.ShowIfReplayableQuest;
+						end
+
+						sq = (not checkCustomCollects or app.CheckCustomCollects(sq)) and app.RecursiveGroupRequirementsFilter(sq) and app.NestSourceQuests(sq, addedQuests, (depth or 0) + 1);
+					elseif sourceQuestID > 0 then
+						-- Create a Quest Object.
+						sq = app.CreateQuest(sourceQuestID, { ['hideText'] = true, });
+					else
+						-- Create a NPC Object.
+						sq = app.CreateNPC(math.abs(sourceQuestID), { ['hideText'] = true, });
+					end
+
+					if sq then
+						-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
+						root.depth = math.max((root.depth or 0),(sq.depth or 1));
+						if prereqs then tinsert(prereqs, sq);
+						else prereqs = { sq }; end
+					else
+						addedQuests[sourceQuestID] = nil;
+					end
+				end
+			end
+		end
+		-- sort quests with less sub-quests to the top
+		if prereqs then
+			insertionSort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
+			NestObjects(root, prereqs);
+		end
+	end
+	-- If the root quest is provided by an Item, then show that Item directly under the root Quest so it can easily show tooltip/Source information if desired
+	if root.providers then
+		for _,p in ipairs(root.providers) do
+			if p[1] == "i" then
+				-- print("Root Provider",p[1], p[2]);
+				local pRef = app.SearchForObject("itemID", p[2]);
+				NestObject(root, pRef, true, 1);
+			end
+		end
+	end
+	return root;
+end
 local function SendGroupMessage(msg)
 	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
 		C_ChatInfo.SendAddonMessage("ATT", msg, "INSTANCE_CHAT")
@@ -12288,113 +12368,6 @@ end
 local function Toggle(self, forceUpdate)
 	return SetVisible(self, not self:IsVisible(), forceUpdate);
 end
-local function NestSourceQuests(root, addedQuests, depth)
-	-- root is already the cloned source of the new list, just add each sourceQuest cloned into sub-groups
-	-- setup tracking which quests have been added as a sub-group, so we can only add them once
-	if not addedQuests then addedQuests = {}; end
-	root.visible = true;
-	root.hideText = true;
-	root.depth = depth or 0;
-	if root.sourceQuests and #root.sourceQuests > 0 then
-		-- any breadcrumb sourcequests should have their corresponding sourcequests pushed up into the parent as well, so that
-		-- quest chains only passing through a breadcrumb do not get stuck if not collecting breadcrumbs
-		local allsqs, qs, sq, i = {};
-		-- we will ignore custom collect if the root quest is already out of scope
-		local checkCustomCollects = app.CheckCustomCollects(root);
-		for _,sourceQuestID in ipairs(root.sourceQuests) do
-			qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
-			if qs and #qs > 0 then
-				i = #qs;
-				sq = nil;
-				while not sq and i > 0 do
-					if qs[i].questID == sourceQuestID then sq = qs[i]; end
-					i = i - 1;
-				end
-				if sq and sq.questID then
-					if sq.parent and sq.parent.questID == sq.questID then
-						sq = sq.parent;
-					end
-					-- if this is a breadcrumb and the user is not trying to collect breadcrumbs, push all of its sqs into allsqs
-					if sq.isBreadcrumb and sq.sourceQuests and not app.Settings:Get("Thing:QuestBreadcrumbs") then
-						for i,bcsq in ipairs(sq.sourceQuests) do
-							tinsert(allsqs, bcsq);
-						end
-					end
-				end
-			end
-			-- always add the actual sqID as well
-			tinsert(allsqs,sourceQuestID);
-		end
-		local prereqs;
-		for _,sourceQuestID in ipairs(allsqs) do
-			if not addedQuests[sourceQuestID] then
-				addedQuests[sourceQuestID] = true;
-				qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
-				if qs and #qs > 0 then
-					local i, sq = #qs;
-					while not sq and i > 0 do
-						if qs[i].questID == sourceQuestID then sq = qs[i]; end
-						i = i - 1;
-					end
-					if sq and sq.questID then
-						if sq.parent and sq.parent.questID == sq.questID then
-							sq = sq.parent;
-						end
-						-- clone the object so as to not modify actual data
-						sq = CloneData(sq);
-						sq.visible = true;
-						sq.hideText = true;
-						-- clean anything out of it so that items don't show in the quest requirements
-						sq.g = {};
-
-						-- force collectible to make sure it shows in list
-						if not (sq.isBreadcrumb or sq.repeatable) then
-							sq.collectible = true;
-						end
-
-						-- If the user is in a Party Sync session, then force showing pre-req quests which are replayable if they are collected already
-						if app.IsInPartySync and sq.collected then
-							sq.OnUpdate = app.ShowIfReplayableQuest;
-						end
-
-						sq = (not checkCustomCollects or app.CheckCustomCollects(sq)) and app.RecursiveGroupRequirementsFilter(sq) and NestSourceQuests(sq, addedQuests, (depth or 0) + 1);
-					elseif sourceQuestID > 0 then
-						-- Create a Quest Object.
-						sq = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true, });
-					else
-						-- Create a NPC Object.
-						sq = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true, });
-					end
-
-					if sq then
-						-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
-						root.depth = math.max((root.depth or 0),(sq.depth or 1));
-						if not prereqs then prereqs = { sq };
-						else tinsert(prereqs, sq); end
-					else
-						addedQuests[sourceQuestID] = nil;
-					end
-				end
-			end
-		end
-		-- sort quests with less sub-quests to the top
-		if prereqs then
-			insertionSort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
-			NestObjects(root, prereqs);
-		end
-	end
-	-- If the root quest is provided by an Item, then show that Item directly under the root Quest so it can easily show tooltip/Source information if desired
-	if root.providers then
-		for _,p in ipairs(root.providers) do
-			if p[1] == "i" then
-				-- print("Root Provider",p[1], p[2]);
-				local pRef = app.SearchForObject("itemID", p[2]);
-				NestObject(root, pRef, true, 1);
-			end
-		end
-	end
-	return root;
-end
 
 app.Windows = {};
 app._UpdateWindows = function(force, got)
@@ -12628,7 +12601,7 @@ function app:CreateMiniListForGroup(group)
 			if app.Settings:GetTooltipSetting("QuestChain:Nested") then
 				-- clean out the sub-groups of the root since it will be listed at the top of the popout
 				root.g = nil;
-				gTop = NestSourceQuests(root).g or {};
+				gTop = app.NestSourceQuests(root).g or {};
 			elseif root.sourceQuests then
 				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
 				local addedQuests = {};
@@ -12800,17 +12773,23 @@ function app:CreateMiniListForGroup(group)
 		if popout.isQuestChain then
 			local oldUpdate = popout.Update;
 			popout.Update = function(self, ...)
-				local oldQuestTracking = app.AccountWideQuests;
+				local oldQuestAccountWide = app.AccountWideQuests;
+				local oldQuestCollection = app.CollectibleQuests;
+				app.CollectibleQuests = true;
 				app.AccountWideQuests = false;
 				oldUpdate(self, ...);
-				app.AccountWideQuests = oldQuestTracking;
+				app.CollectibleQuests = oldQuestCollection;
+				app.AccountWideQuests = oldQuestAccountWide;
 			end;
 			local oldRefresh = popout.Refresh;
 			popout.Refresh = function(self, ...)
-				local oldQuestTracking = app.AccountWideQuests;
+				local oldQuestAccountWide = app.AccountWideQuests;
+				local oldQuestCollection = app.CollectibleQuests;
+				app.CollectibleQuests = true;
 				app.AccountWideQuests = false;
 				oldRefresh(self, ...);
-				app.AccountWideQuests = oldQuestTracking;
+				app.CollectibleQuests = oldQuestCollection;
+				app.AccountWideQuests = oldQuestAccountWide;
 			end;
 			popout:SetScript("OnEvent", function(self, e, ...)
 				-- print("EVENT", e, ...)
@@ -12819,23 +12798,12 @@ function app:CreateMiniListForGroup(group)
 					self:Update(true);
 				end
 			end);
+			-- Register Events which should cause an update to the Quest popout
+			self:RegisterEvent("QUEST_LOG_UPDATE");
+			self:RegisterEvent("QUEST_TURNED_IN");
+			self:RegisterEvent("QUEST_ACCEPTED");
+			self:RegisterEvent("QUEST_REMOVED");
 		end
-	end
-	-- showing the quest chain window, register any local event handlers
-	if showing and popout.isQuestChain then
-		-- register quest log update event to refresh/soft-update the window for indicators on quest chain windows
-		-- print("Registered Quest Window events")
-		self:RegisterEvent("QUEST_LOG_UPDATE");
-		self:RegisterEvent("QUEST_TURNED_IN");
-		self:RegisterEvent("QUEST_ACCEPTED");
-		self:RegisterEvent("QUEST_REMOVED");
-	elseif not showing then
-		-- print("Unregistered Quest Window events")
-		-- TODO: for some reason this also unregisters events for 'app' as well...
-		-- self:UnregisterEvent("QUEST_LOG_UPDATE");
-		-- self:UnregisterEvent("QUEST_TURNED_IN");
-		-- self:UnregisterEvent("QUEST_ACCEPTED");
-		-- self:UnregisterEvent("QUEST_REMOVED");
 	end
 	popout:Toggle(true);
 end

@@ -376,7 +376,7 @@ _.Zones =
 						i(183210),	-- Memory of a Fel Bombardment
 						i(183348),	-- Memory of Deeply Rooted Elements
 						i(183284),	-- Memory of Escaping from Reality
-						i(183315),	-- Memory of Measured Contemplation	
+						i(183315),	-- Memory of Measured Contemplation
 						i(183366),	-- Memory of the Claw of Endereth
 						i(183298),	-- Memory of the Mad Paragon
 						i(183379),	-- Memory of the Misshapen Mirror
@@ -698,6 +698,7 @@ _.Zones =
 						i(179604),	-- Duskwarder Shield
 						i(181432),	-- Duskwarder Spellthorn
 						i(179547),	-- Duskwarder Warclub
+						i(179508),	-- Duskwarder Warglaive
 						-- TODO: more rewards
 					},
 				}),
@@ -714,6 +715,7 @@ _.Zones =
 					},
 					["g"] = {
 						i(181637),	-- Lifepath Hammer
+						i(181628),	-- Memoria Glaive
 						i(181636),	-- Memoria Spellblade
 						i(181631),	-- Requiem Chime
 						i(181633),	-- Waylight Blade
@@ -743,6 +745,7 @@ _.Zones =
 						i(181688),	-- Gorewrought Stave
 						i(181686),	-- Gorewrought Tome
 						i(181692),	-- Gorewrought Warblade
+						i(181687),	-- Gorewrought Warglaive
 						-- TODO: more rewards
 					},
 				}),
@@ -770,6 +773,7 @@ _.Zones =
 						i(181222),	-- Darkwing Rebel's Halberd
 						i(181207),	-- Dominance Keep Barrier
 						i(181223),	-- Mace of Emberwrath
+						i(181244),	-- Rebel Darkwing's Edge
 						i(181213),	-- Shard-Dusted Shank
 						i(181212),	-- Soulcaster's Mace
 						i(181211),	-- Souldrinker's Kris

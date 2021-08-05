@@ -645,14 +645,6 @@ _.Zones =
 											{ 47.8, 86.5, THE_MAW },	-- Object
 										},
 									}),
-									o(369235, {	-- Stolen Anima Vessel
-										["questID"] = 64269,
-										["isWeekly"] = true,
-										["coords"] = {
-											{ 32.4, 43.1, THE_MAW },
-											{ 35.7, 46.4, THE_MAW },
-										},
-									}),
 									o(369236, {	-- Stolen Anima Vessel Loot trigger
 										["questID"] = 64270,
 										["isWeekly"] = true,

@@ -110,6 +110,15 @@ _.Zones =
 					}),
 					n(TREASURES, {
 						-- TODO: Stolen Anima Vessels are tied to their Covenant it seems?, move them to respective Covenants as checked
+						o(369235, {	-- Stolen Anima Vessel
+							-- Both Night Fae / Kyrian Assaults? Any?
+							["questID"] = 64269,
+							["isWeekly"] = true,
+							["coords"] = {
+								{ 32.4, 43.1, THE_MAW },
+								{ 35.7, 46.4, THE_MAW },
+							},
+						}),
 					}),
 				},
 			}),
