@@ -124,7 +124,6 @@ _.BattlePets =
 			p(2711),	-- Golden Snorf
 			p(2934),	-- Goldenpaw Kit
 			p(571),		-- Grove Viper
-			p(2918),	-- Grubby
 			p(1705),	-- Grumpy
 			p(2190),	-- Guardian Cobra Hatchling
 			p(234),		-- Gundrak Hatchling
