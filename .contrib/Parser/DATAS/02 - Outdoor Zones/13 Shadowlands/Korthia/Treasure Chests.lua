@@ -212,6 +212,7 @@ _.Zones =
 					i(187026),	-- Field Warden's Torture Kit
 					i(187240),	-- Field Warden's Watchful Eye
 					i(187013),	-- Interceptor's Pauldrons
+					i(187022),	-- Mawsworn Lieutenant's Shoulderguards
 					i(187020),	-- Necrobinder's Shoulderpads
 					i(187021),	-- Punisher's Spiked Mantle
 					i(187018),	-- Ritualist's Shoulder-Scythes

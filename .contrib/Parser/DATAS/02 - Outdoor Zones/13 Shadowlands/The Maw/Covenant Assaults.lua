@@ -424,6 +424,9 @@ _.Zones =
 									{ 32.0, 56.3, THE_MAW },
 									{ 33.8, 57.3, THE_MAW },
 								},
+								["g"] = {
+									i(187011),	-- Mawsworn Enforcer's Shoulder-Spires
+								},
 							}),
 							i(186603, {	-- Nilganihmaht's Stone Ring
 								["cost"] = {
