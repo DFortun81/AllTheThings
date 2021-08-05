@@ -349,299 +349,315 @@ _.Zones =
 							["classes"] = { DRUID },
 						}),
 					--	Shadowlands S2
-					--	Weapons
-						i(185295, {	-- Unchained Aspirant's Barrier
-							["cost"] = { { "c", 1792, 425 } },	-- 425x Honor
+						n(-319, {	-- Weapons
+							i(185295, {	-- Unchained Aspirant's Barrier
+								["cost"] = { { "c", 1792, 425 } },	-- 425x Honor
+							}),
+							i(185284, {	-- Unchained Aspirant's Battleaxe
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185307, {	-- Unchained Aspirant's Blackjack
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185299, {	-- Unchained Aspirant's Blade
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185308, {	-- Unchained Aspirant's Crescent
+								["cost"] = { { "c", 1792, 1325 } },	-- 1,325x Honor
+							}),
+							i(185285, {	-- Unchained Aspirant's Dagger
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185294, {	-- Unchained Aspirant's Gavel
+								["cost"] = { { "c", 1792, 1325 } },	-- 1,325x Honor
+							}),
+							i(185290, {	-- Unchained Aspirant's Greataxe
+								["cost"] = { { "c", 1792, 1750 } },	-- 1,750x Honor
+							}),
+							i(185291, {	-- Unchained Aspirant's Greatsword
+								["cost"] = { { "c", 1792, 1750 } },	-- 1,750x Honor
+							}),
+							i(185296, {	-- Unchained Aspirant's Hatchet
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185298, {	-- Unchained Aspirant's Longspear
+								["cost"] = { { "c", 1792, 1750 } },	-- 1,750x Honor
+							}),
+							i(185286, {	-- Unchained Aspirant's Mace
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185292, {	-- Unchained Aspirant's Orb
+								["cost"] = { { "c", 1792, 425 } },	-- 425x Honor
+							}),
+							i(185287, {	-- Unchained Aspirant's Polearm
+								["cost"] = { { "c", 1792, 1750 } },	-- 1,750x Honor
+							}),
+							i(185297, {	-- Unchained Aspirant's Recurve
+								["cost"] = { { "c", 1792, 1750 } },	-- 1,750x Honor
+							}),
+							i(185288, {	-- Unchained Aspirant's Staff
+								["cost"] = { { "c", 1792, 1750 } },	-- 1,750x Honor
+							}),
+							i(185289, {	-- Unchained Aspirant's Sword
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185293, {	-- Unchained Aspirant's Warglaive
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
 						}),
-						i(185284, {	-- Unchained Aspirant's Battleaxe
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+						n(-322, {	-- Cloak
+							i(185240, {	-- Unchained Aspirant's Cape
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+							i(185128, {	-- Unchained Aspirant's Cloak
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+							i(185205, {	-- Unchained Aspirant's Drape
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
 						}),
-						i(185307, {	-- Unchained Aspirant's Blackjack
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+						n(-43,  {	-- Cloth
+							i(185230, {	-- Unchained Aspirant's Silk Belt
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185234, {	-- Unchained Aspirant's Silk Bindings
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+							i(185153, {	-- Unchained Aspirant's Silk Cord
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185218, {	-- Unchained Aspirant's Silk Cover
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185211, {	-- Unchained Aspirant's Silk Footwraps
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185139, {	-- Unchained Aspirant's Silk Gloves
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185206, {	-- Unchained Aspirant's Silk Gown
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185216, {	-- Unchained Aspirant's Silk Handwraps
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185141, {	-- Unchained Aspirant's Silk Hood
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185145, {	-- Unchained Aspirant's Silk Leggings
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185222, {	-- Unchained Aspirant's Silk Legwraps
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185150, {	-- Unchained Aspirant's Silk Mantle
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185129, {	-- Unchained Aspirant's Silk Robe
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185227, {	-- Unchained Aspirant's Silk Shawl
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185134, {	-- Unchained Aspirant's Silk Treads
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185157, {	-- Unchained Aspirant's Silk Wristwraps
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
 						}),
-						i(185299, {	-- Unchained Aspirant's Blade
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185308, {	-- Unchained Aspirant's Crescent
-							["cost"] = { { "c", 1792, 1325 } },	-- 1,325x Honor
-						}),
-						i(185285, {	-- Unchained Aspirant's Dagger
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185294, {	-- Unchained Aspirant's Gavel
-							["cost"] = { { "c", 1792, 1325 } },	-- 1,325x Honor
-						}),
-						i(185290, {	-- Unchained Aspirant's Greataxe
-							["cost"] = { { "c", 1792, 1750 } },	-- 1,750x Honor
-						}),
-						i(185291, {	-- Unchained Aspirant's Greatsword
-							["cost"] = { { "c", 1792, 1750 } },	-- 1,750x Honor
-						}),
-						i(185296, {	-- Unchained Aspirant's Hatchet
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185298, {	-- Unchained Aspirant's Longspear
-							["cost"] = { { "c", 1792, 1750 } },	-- 1,750x Honor
-						}),
-						i(185286, {	-- Unchained Aspirant's Mace
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185292, {	-- Unchained Aspirant's Orb
-							["cost"] = { { "c", 1792, 425 } },	-- 425x Honor
-						}),
-						i(185287, {	-- Unchained Aspirant's Polearm
-							["cost"] = { { "c", 1792, 1750 } },	-- 1,750x Honor
-						}),
-						i(185297, {	-- Unchained Aspirant's Recurve
-							["cost"] = { { "c", 1792, 1750 } },	-- 1,750x Honor
-						}),
-						i(185288, {	-- Unchained Aspirant's Staff
-							["cost"] = { { "c", 1792, 1750 } },	-- 1,750x Honor
-						}),
-						i(185289, {	-- Unchained Aspirant's Sword
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185293, {	-- Unchained Aspirant's Warglaive
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-					--	Apparel
-						i(185240, {	-- Unchained Aspirant's Cape
+						n(-44,  {	-- Leather
+							i(185237, {	-- Unchained Aspirant's Leather Armguards
 							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+							i(185155, {	-- Unchained Aspirant's Leather Belt
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185136, {	-- Unchained Aspirant's Leather Boots
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185147, {	-- Unchained Aspirant's Leather Breeches
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185232, {	-- Unchained Aspirant's Leather Cord
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185213, {	-- Unchained Aspirant's Leather Footpads
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185137, {	-- Unchained Aspirant's Leather Gloves
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185214, {	-- Unchained Aspirant's Leather Grips
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185143, {	-- Unchained Aspirant's Leather Helm
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185224, {	-- Unchained Aspirant's Leather Leggings
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185225, {	-- Unchained Aspirant's Leather Mantle
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185220, {	-- Unchained Aspirant's Leather Mask
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185148, {	-- Unchained Aspirant's Leather Spaulders
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185209, {	-- Unchained Aspirant's Leather Tunic
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185132, {	-- Unchained Aspirant's Leather Vest
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185160, {	-- Unchained Aspirant's Leather Wristwraps
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
 						}),
-						i(185154, {	-- Unchained Aspirant's Chain Belt
+						n(-45,  {	-- Mail
+							i(185154, {	-- Unchained Aspirant's Chain Belt
 							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185236, {	-- Unchained Aspirant's Chain Bracer
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185231, {	-- Unchained Aspirant's Chain Clasp
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185140, {	-- Unchained Aspirant's Chain Gauntlets
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185217, {	-- Unchained Aspirant's Chain Handguards
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185219, {	-- Unchained Aspirant's Chain Headguard
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185142, {	-- Unchained Aspirant's Chain Helm
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185146, {	-- Unchained Aspirant's Chain Leggings
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185135, {	-- Unchained Aspirant's Chain Sabatons
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185228, {	-- Unchained Aspirant's Chain Shoulderguards
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185151, {	-- Unchained Aspirant's Chain Spaulders
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185212, {	-- Unchained Aspirant's Chain Stompers
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185208, {	-- Unchained Aspirant's Chain Tunic
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185131, {	-- Unchained Aspirant's Chain Vest
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185223, {	-- Unchained Aspirant's Chain Wargreaves
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185159, {	-- Unchained Aspirant's Chain Wristwraps
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185128, {	-- Unchained Aspirant's Cloak
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185205, {	-- Unchained Aspirant's Drape
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185237, {	-- Unchained Aspirant's Leather Armguards
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185155, {	-- Unchained Aspirant's Leather Belt
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185136, {	-- Unchained Aspirant's Leather Boots
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185147, {	-- Unchained Aspirant's Leather Breeches
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185232, {	-- Unchained Aspirant's Leather Cord
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185213, {	-- Unchained Aspirant's Leather Footpads
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185137, {	-- Unchained Aspirant's Leather Gloves
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185214, {	-- Unchained Aspirant's Leather Grips
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185143, {	-- Unchained Aspirant's Leather Helm
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185224, {	-- Unchained Aspirant's Leather Leggings
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185225, {	-- Unchained Aspirant's Leather Mantle
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185220, {	-- Unchained Aspirant's Leather Mask
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185148, {	-- Unchained Aspirant's Leather Spaulders
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185209, {	-- Unchained Aspirant's Leather Tunic
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185132, {	-- Unchained Aspirant's Leather Vest
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185160, {	-- Unchained Aspirant's Leather Wristwraps
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185235, {	-- Unchained Aspirant's Plate Armguards
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185207, {	-- Unchained Aspirant's Plate Armor
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185130, {	-- Unchained Aspirant's Plate Chestplate
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185158, {	-- Unchained Aspirant's Plate Cuffs
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185138, {	-- Unchained Aspirant's Plate Gauntlets
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185152, {	-- Unchained Aspirant's Plate Girdle
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185229, {	-- Unchained Aspirant's Plate Greatbelt
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185215, {	-- Unchained Aspirant's Plate Handguards
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185204, {	-- Unchained Aspirant's Plate Headguard
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185127, {	-- Unchained Aspirant's Plate Helm
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185144, {	-- Unchained Aspirant's Plate Legguards
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185226, {	-- Unchained Aspirant's Plate Pauldrons
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185149, {	-- Unchained Aspirant's Plate Shoulders
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185210, {	-- Unchained Aspirant's Plate Stompers
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185133, {	-- Unchained Aspirant's Plate Warboots
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185221, {	-- Unchained Aspirant's Plate Wargreaves
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185230, {	-- Unchained Aspirant's Silk Belt
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185234, {	-- Unchained Aspirant's Silk Bindings
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185153, {	-- Unchained Aspirant's Silk Cord
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185218, {	-- Unchained Aspirant's Silk Cover
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185211, {	-- Unchained Aspirant's Silk Footwraps
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185139, {	-- Unchained Aspirant's Silk Gloves
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185206, {	-- Unchained Aspirant's Silk Gown
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185216, {	-- Unchained Aspirant's Silk Handwraps
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185141, {	-- Unchained Aspirant's Silk Hood
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185145, {	-- Unchained Aspirant's Silk Leggings
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185222, {	-- Unchained Aspirant's Silk Legwraps
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185150, {	-- Unchained Aspirant's Silk Mantle
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185129, {	-- Unchained Aspirant's Silk Robe
-							["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
-						}),
-						i(185227, {	-- Unchained Aspirant's Silk Shawl
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185134, {	-- Unchained Aspirant's Silk Treads
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185157, {	-- Unchained Aspirant's Silk Wristwraps
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+							i(185236, {	-- Unchained Aspirant's Chain Bracer
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+							i(185231, {	-- Unchained Aspirant's Chain Clasp
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185140, {	-- Unchained Aspirant's Chain Gauntlets
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185217, {	-- Unchained Aspirant's Chain Handguards
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185219, {	-- Unchained Aspirant's Chain Headguard
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185142, {	-- Unchained Aspirant's Chain Helm
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185146, {	-- Unchained Aspirant's Chain Leggings
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185135, {	-- Unchained Aspirant's Chain Sabatons
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185228, {	-- Unchained Aspirant's Chain Shoulderguards
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185151, {	-- Unchained Aspirant's Chain Spaulders
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185212, {	-- Unchained Aspirant's Chain Stompers
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185208, {	-- Unchained Aspirant's Chain Tunic
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185131, {	-- Unchained Aspirant's Chain Vest
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185223, {	-- Unchained Aspirant's Chain Wargreaves
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185159, {	-- Unchained Aspirant's Chain Wristwraps
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+						}),
+						n(-46,  {	-- Plate
+							i(185235, {	-- Unchained Aspirant's Plate Armguards
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+							i(185207, {	-- Unchained Aspirant's Plate Armor
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185130, {	-- Unchained Aspirant's Plate Chestplate
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185158, {	-- Unchained Aspirant's Plate Cuffs
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+							i(185138, {	-- Unchained Aspirant's Plate Gauntlets
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185152, {	-- Unchained Aspirant's Plate Girdle
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185229, {	-- Unchained Aspirant's Plate Greatbelt
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185215, {	-- Unchained Aspirant's Plate Handguards
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185204, {	-- Unchained Aspirant's Plate Headguard
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185127, {	-- Unchained Aspirant's Plate Helm
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185144, {	-- Unchained Aspirant's Plate Legguards
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
+							i(185226, {	-- Unchained Aspirant's Plate Pauldrons
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185149, {	-- Unchained Aspirant's Plate Shoulders
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185210, {	-- Unchained Aspirant's Plate Stompers
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185133, {	-- Unchained Aspirant's Plate Warboots
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185221, {	-- Unchained Aspirant's Plate Wargreaves
+								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
+							}),
 						}),
 					--	Accessories
-						i(185239, {	-- Unchained Aspirant's Choker
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+						n(-384, {	-- Neck
+							i(185239, {	-- Unchained Aspirant's Choker
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+							i(185162, {	-- Unchained Aspirant's Necklace
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+							i(185243, {	-- Unchained Aspirant's Pendant
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
 						}),
-						i(185162, {	-- Unchained Aspirant's Necklace
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+						n(-385, {	-- Finger
+							i(185233, {	-- Unchained Aspirant's Band
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+							i(185156, {	-- Unchained Aspirant's Ring
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+							i(185241, {	-- Unchained Aspirant's Signet
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
 						}),
-						i(185243, {	-- Unchained Aspirant's Pendant
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185233, {	-- Unchained Aspirant's Band
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185156, {	-- Unchained Aspirant's Ring
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185241, {	-- Unchained Aspirant's Signet
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185161, {	-- Unchained Aspirant's Badge of Ferocity
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185242, {	-- Unchained Aspirant's Emblem
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185238, {	-- Unchained Aspirant's Insignia of Alacrity
-							["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
-						}),
-						i(185309, {	-- Unchained Aspirant's Medallion
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185310, {	-- Unchained Aspirant's Relentless Brooch
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
-						}),
-						i(185311, {	-- Unchained Aspirant's Sigil of Adaptation
-							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+						n(-386, {	-- Trinkets
+							i(185161, {	-- Unchained Aspirant's Badge of Ferocity
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185242, {	-- Unchained Aspirant's Emblem
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185238, {	-- Unchained Aspirant's Insignia of Alacrity
+								["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
+							}),
+							i(185309, {	-- Unchained Aspirant's Medallion
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+							i(185310, {	-- Unchained Aspirant's Relentless Brooch
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
+							i(185311, {	-- Unchained Aspirant's Sigil of Adaptation
+								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
+							}),
 						}),
 					--	Shadowlands S1 (removed)
 						i(175884, {	-- Sinful Aspirant's Badge of Ferocity
@@ -918,495 +934,514 @@ _.Zones =
 					["g"] = {
 					--	Shadowlands S2
 					--	Weapons (putting first for now in case they add covenant-locked stuff later)
-						i(185200, {	-- Unchained Gladiator's Ceremonial Sword
-							["cost"] = { { "c", 1602, 1350 } },	-- 1,350x Conquest
-						}),
-						i(185203, {	-- Unchained Gladiator's Chalice
-							["cost"] = { { "c", 1602, 450 } },	-- 450x Conquest
-						}),
-						i(185317, {	-- Unchained Gladiator's Dory
-							["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
-						}),
-						i(185199, {	-- Unchained Gladiator's Gladius
-							["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
-						}),
-						i(185301, {	-- Unchained Gladiator's Greataxe
-							["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
-						}),
-						i(185126, {	-- Unchained Gladiator's Guard
-							["cost"] = { { "c", 1602, 450 } },	-- 450x Conquest
-						}),
-						i(185314, {	-- Unchained Gladiator's Hacker
-							["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
-						}),
-						i(185202, {	-- Unchained Gladiator's Knife
-							["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
-						}),
-						i(185201, {	-- Unchained Gladiator's Lightbow
-							["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
-						}),
-						i(185316, {	-- Unchained Gladiator's Ritual Dagger
-							["cost"] = { { "c", 1602, 1350 } },	-- 1,350x Conquest
-						}),
-						i(185125, {	-- Unchained Gladiator's Splitter
-							["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
-						}),
-						i(185300, {	-- Unchained Gladiator's Vesper
-							["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
-						}),
-						i(185312, {	-- Unchained Gladiator's Warglaive
-							["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
-						}),
-						i(185315, {	-- Unchained Gladiator's Xiphos
-							["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
+						n(-319, {	-- Weapons
+							i(185200, {	-- Unchained Gladiator's Ceremonial Sword
+								["cost"] = { { "c", 1602, 1350 } },	-- 1,350x Conquest
+							}),
+							i(185203, {	-- Unchained Gladiator's Chalice
+								["cost"] = { { "c", 1602, 450 } },	-- 450x Conquest
+							}),
+							i(185317, {	-- Unchained Gladiator's Dory
+								["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
+							}),
+							i(185199, {	-- Unchained Gladiator's Gladius
+								["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
+							}),
+							i(185301, {	-- Unchained Gladiator's Greataxe
+								["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
+							}),
+							i(185126, {	-- Unchained Gladiator's Guard
+								["cost"] = { { "c", 1602, 450 } },	-- 450x Conquest
+							}),
+							i(185314, {	-- Unchained Gladiator's Hacker
+								["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
+							}),
+							i(185202, {	-- Unchained Gladiator's Knife
+								["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
+							}),
+							i(185201, {	-- Unchained Gladiator's Lightbow
+								["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
+							}),
+							i(185316, {	-- Unchained Gladiator's Ritual Dagger
+								["cost"] = { { "c", 1602, 1350 } },	-- 1,350x Conquest
+							}),
+							i(185125, {	-- Unchained Gladiator's Splitter
+								["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
+							}),
+							i(185300, {	-- Unchained Gladiator's Vesper
+								["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
+							}),
+							i(185312, {	-- Unchained Gladiator's Warglaive
+								["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
+							}),
+							i(185315, {	-- Unchained Gladiator's Xiphos
+								["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
+							}),
 						}),
 					--	Apparel
-						i(185190, {	-- Unchained Gladiator's Chain Belt
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185252, {	-- Unchained Gladiator's Chain Boots
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185276, {	-- Unchained Gladiator's Chain Bracers
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185263, {	-- Unchained Gladiator's Chain Breeches
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185259, {	-- Unchained Gladiator's Chain Faceguard
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185176, {	-- Unchained Gladiator's Chain Gauntlets
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185271, {	-- Unchained Gladiator's Chain Girdle
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185257, {	-- Unchained Gladiator's Chain Handguards
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185178, {	-- Unchained Gladiator's Chain Helm
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185182, {	-- Unchained Gladiator's Chain Leggings
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185187, {	-- Unchained Gladiator's Chain Monnion
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185171, {	-- Unchained Gladiator's Chain Sabatons
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185268, {	-- Unchained Gladiator's Chain Shoulderguard
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185248, {	-- Unchained Gladiator's Chain Tunic
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185167, {	-- Unchained Gladiator's Chain Vest
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185195, {	-- Unchained Gladiator's Chain Wristguards
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185164, {	-- Unchained Gladiator's Cloak
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185245, {	-- Unchained Gladiator's Drape
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185313, {	-- Unchained Gladiator's Greatcloak
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185191, {	-- Unchained Gladiator's Leather Belt
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185172, {	-- Unchained Gladiator's Leather Boots
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185183, {	-- Unchained Gladiator's Leather Breeches
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185173, {	-- Unchained Gladiator's Leather Gloves
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185254, {	-- Unchained Gladiator's Leather Grips
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185179, {	-- Unchained Gladiator's Leather Helm
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185249, {	-- Unchained Gladiator's Leather Jerkin
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185264, {	-- Unchained Gladiator's Leather Legwraps
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185260, {	-- Unchained Gladiator's Leather Mask
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185265, {	-- Unchained Gladiator's Leather Shoulderpads
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185184, {	-- Unchained Gladiator's Leather Spaulders
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185272, {	-- Unchained Gladiator's Leather Strap
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185253, {	-- Unchained Gladiator's Leather Treads
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185168, {	-- Unchained Gladiator's Leather Vest
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185277, {	-- Unchained Gladiator's Leather Wristguards
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185196, {	-- Unchained Gladiator's Leather Wristwraps
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185166, {	-- Unchained Gladiator's Plate Chestguard
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185247, {	-- Unchained Gladiator's Plate Chestplate
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185174, {	-- Unchained Gladiator's Plate Gauntlets
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185188, {	-- Unchained Gladiator's Plate Girdle
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185269, {	-- Unchained Gladiator's Plate Greatbelt
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185255, {	-- Unchained Gladiator's Plate Handguards
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185163, {	-- Unchained Gladiator's Plate Helm
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185244, {	-- Unchained Gladiator's Plate Helmet
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185180, {	-- Unchained Gladiator's Plate Legguards
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185266, {	-- Unchained Gladiator's Plate Pauldrons
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185185, {	-- Unchained Gladiator's Plate Shoulders
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185250, {	-- Unchained Gladiator's Plate Stompers
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185275, {	-- Unchained Gladiator's Plate Vambraces
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185169, {	-- Unchained Gladiator's Plate Warboots
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185261, {	-- Unchained Gladiator's Plate Wargreaves
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185194, {	-- Unchained Gladiator's Plate Wristguards
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185280, {	-- Unchained Gladiator's Shawl
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185267, {	-- Unchained Gladiator's Silk Amice
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185274, {	-- Unchained Gladiator's Silk Armbands
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185270, {	-- Unchained Gladiator's Silk Belt
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185189, {	-- Unchained Gladiator's Silk Cord
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185175, {	-- Unchained Gladiator's Silk Gloves
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185258, {	-- Unchained Gladiator's Silk Guise
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185256, {	-- Unchained Gladiator's Silk Handwraps
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185177, {	-- Unchained Gladiator's Silk Hood
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185181, {	-- Unchained Gladiator's Silk Leggings
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185186, {	-- Unchained Gladiator's Silk Mantle
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185165, {	-- Unchained Gladiator's Silk Robe
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185170, {	-- Unchained Gladiator's Silk Slippers
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185251, {	-- Unchained Gladiator's Silk Treads
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185262, {	-- Unchained Gladiator's Silk Trousers
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185246, {	-- Unchained Gladiator's Silk Vestments
-							["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
-						}),
-						i(185193, {	-- Unchained Gladiator's Silk Wristwraps
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+						n(-322, {	-- Cloak
+							i(185164, {	-- Unchained Gladiator's Cloak
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+							i(185245, {	-- Unchained Gladiator's Drape
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+							i(185313, {	-- Unchained Gladiator's Greatcloak
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+						}),
+						n(-43,  {	-- Cloth
+							i(185280, {	-- Unchained Gladiator's Shawl
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+							i(185267, {	-- Unchained Gladiator's Silk Amice
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185274, {	-- Unchained Gladiator's Silk Armbands
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+							i(185270, {	-- Unchained Gladiator's Silk Belt
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185189, {	-- Unchained Gladiator's Silk Cord
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185175, {	-- Unchained Gladiator's Silk Gloves
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185258, {	-- Unchained Gladiator's Silk Guise
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185256, {	-- Unchained Gladiator's Silk Handwraps
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185177, {	-- Unchained Gladiator's Silk Hood
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185181, {	-- Unchained Gladiator's Silk Leggings
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185186, {	-- Unchained Gladiator's Silk Mantle
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185165, {	-- Unchained Gladiator's Silk Robe
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185170, {	-- Unchained Gladiator's Silk Slippers
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185251, {	-- Unchained Gladiator's Silk Treads
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185262, {	-- Unchained Gladiator's Silk Trousers
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185246, {	-- Unchained Gladiator's Silk Vestments
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185193, {	-- Unchained Gladiator's Silk Wristwraps
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+						}),
+						n(-44,  {	-- Leather
+							i(185191, {	-- Unchained Gladiator's Leather Belt
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185172, {	-- Unchained Gladiator's Leather Boots
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185183, {	-- Unchained Gladiator's Leather Breeches
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185173, {	-- Unchained Gladiator's Leather Gloves
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185254, {	-- Unchained Gladiator's Leather Grips
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185179, {	-- Unchained Gladiator's Leather Helm
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185249, {	-- Unchained Gladiator's Leather Jerkin
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185264, {	-- Unchained Gladiator's Leather Legwraps
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185260, {	-- Unchained Gladiator's Leather Mask
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185265, {	-- Unchained Gladiator's Leather Shoulderpads
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185184, {	-- Unchained Gladiator's Leather Spaulders
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185272, {	-- Unchained Gladiator's Leather Strap
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185253, {	-- Unchained Gladiator's Leather Treads
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185168, {	-- Unchained Gladiator's Leather Vest
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185277, {	-- Unchained Gladiator's Leather Wristguards
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+							i(185196, {	-- Unchained Gladiator's Leather Wristwraps
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+						}),
+						n(-45,  {	-- Mail
+							i(185190, {	-- Unchained Gladiator's Chain Belt
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185252, {	-- Unchained Gladiator's Chain Boots
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185276, {	-- Unchained Gladiator's Chain Bracers
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+							i(185263, {	-- Unchained Gladiator's Chain Breeches
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185259, {	-- Unchained Gladiator's Chain Faceguard
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185176, {	-- Unchained Gladiator's Chain Gauntlets
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185271, {	-- Unchained Gladiator's Chain Girdle
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185257, {	-- Unchained Gladiator's Chain Handguards
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185178, {	-- Unchained Gladiator's Chain Helm
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185182, {	-- Unchained Gladiator's Chain Leggings
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185187, {	-- Unchained Gladiator's Chain Monnion
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185171, {	-- Unchained Gladiator's Chain Sabatons
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185268, {	-- Unchained Gladiator's Chain Shoulderguard
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185248, {	-- Unchained Gladiator's Chain Tunic
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185167, {	-- Unchained Gladiator's Chain Vest
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185195, {	-- Unchained Gladiator's Chain Wristguards
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+						}),
+						n(-46,  {	-- Plate
+							i(185166, {	-- Unchained Gladiator's Plate Chestguard
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185247, {	-- Unchained Gladiator's Plate Chestplate
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185174, {	-- Unchained Gladiator's Plate Gauntlets
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185188, {	-- Unchained Gladiator's Plate Girdle
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185269, {	-- Unchained Gladiator's Plate Greatbelt
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185255, {	-- Unchained Gladiator's Plate Handguards
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185163, {	-- Unchained Gladiator's Plate Helm
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185244, {	-- Unchained Gladiator's Plate Helmet
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185180, {	-- Unchained Gladiator's Plate Legguards
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185266, {	-- Unchained Gladiator's Plate Pauldrons
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185185, {	-- Unchained Gladiator's Plate Shoulders
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185250, {	-- Unchained Gladiator's Plate Stompers
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185275, {	-- Unchained Gladiator's Plate Vambraces
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+							i(185169, {	-- Unchained Gladiator's Plate Warboots
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185261, {	-- Unchained Gladiator's Plate Wargreaves
+								["cost"] = { { "c", 1602, 875 } },	-- 875x Conquest
+							}),
+							i(185194, {	-- Unchained Gladiator's Plate Wristguards
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
 						}),
 					--	Accessories
-						i(185283, {	-- Unchained Gladiator's Amulet
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+						n(-384, {	-- Neck
+							i(185283, {	-- Unchained Gladiator's Amulet
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+							i(185198, {	-- Unchained Gladiator's Necklace
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+							i(185279, {	-- Unchained Gladiator's Pendant
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
 						}),
-						i(185198, {	-- Unchained Gladiator's Necklace
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+						n(-385, {	-- Finger
+							i(185273, {	-- Unchained Gladiator's Band
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+							i(185192, {	-- Unchained Gladiator's Ring
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+							i(185281, {	-- Unchained Gladiator's Signet
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
 						}),
-						i(185279, {	-- Unchained Gladiator's Pendant
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+						n(-386, {	-- Trinkets
+							i(185197, {	-- Unchained Gladiator's Badge of Ferocity
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185282, {	-- Unchained Gladiator's Emblem
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185278, {	-- Unchained Gladiator's Insignia of Alacrity
+								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
+							}),
+							i(185304, {	-- Unchained Gladiator's Medallion
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+							i(185305, {	-- Unchained Gladiator's Relentless Brooch
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
+							i(185306, {	-- Unchained Gladiator's Sigil of Adaptation
+								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
+							}),
 						}),
-						i(185273, {	-- Unchained Gladiator's Band
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185192, {	-- Unchained Gladiator's Ring
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185281, {	-- Unchained Gladiator's Signet
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185197, {	-- Unchained Gladiator's Badge of Ferocity
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185282, {	-- Unchained Gladiator's Emblem
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185278, {	-- Unchained Gladiator's Insignia of Alacrity
-							["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
-						}),
-						i(185304, {	-- Unchained Gladiator's Medallion
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185305, {	-- Unchained Gladiator's Relentless Brooch
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-						i(185306, {	-- Unchained Gladiator's Sigil of Adaptation
-							["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
-						}),
-					--	Conduits
-						i(181848, {	-- Accelerated Cold
-							["classes"] = { DEATHKNIGHT },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(183470, {	-- Born of the Wilds
-							["classes"] = { DRUID },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182748, {	-- Borne of Blood
-							["classes"] = { WARLOCK },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182128, {	-- Call of Flame
-							["classes"] = { SHAMAN },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(181837, {	-- Clear Mind
-							["classes"] = { PRIEST },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182769, {	-- Combusting Engine
-							["classes"] = { WARLOCK },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(183197, {	-- Controlled Destruction
-							["classes"] = { MAGE },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(187506, {
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(181462, {	-- Coordinated Offensive
-							["classes"] = { MONK },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(180935, {	-- Crash the Ramparts
-							["classes"] = { WARRIOR },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182598, {	-- Demon Muzzle
-							["classes"] = { DEMONHUNTER },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(181712, {	-- Depths of Insanity
-							["classes"] = { WARRIOR },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182140, {	-- Dissonant Echoes
-							["classes"] = { PRIEST },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182461, {	-- Echoing Blessings
-							["classes"] = { PALADIN },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(181980, {	-- Embrace Death
-							["classes"] = { WARLOCK },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182142, {	-- Embrace of Earth
-							["classes"] = { SHAMAN },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182667, {	-- Focused Light
-							["classes"] = { PALADIN },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182743, {	-- Focused Malignancy
-							["classes"] = { WARLOCK },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(183478, {	-- Fury of the Skies
-							["classes"] = { DRUID },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(181498, {	-- Grounding Surge
-							["classes"] = { MAGE },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(181373, {	-- Harm Denial
-							["classes"] = { MONK },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(181461, {	-- Ice Bite
-							["classes"] = { MAGE },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(183506, {	-- Lethal Poisons
-							["classes"] = { ROGUE },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182344, {	-- Lost in Darkness
-							["classes"] = { DEMONHUNTER },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182137, {	-- Magma Fist
-							["classes"] = { SHAMAN },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182187, {	-- Meat Shield
-							["classes"] = { DEATHKNIGHT },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(181511, {	-- Nether Precision
-							["classes"] = { MAGE },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(181737, {	-- Nourishing Chi
-							["classes"] = { MONK },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182621, {	-- One With the Beast
-							["classes"] = { HUNTER },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(181844, {	-- Pain Transformation
-							["classes"] = { PRIEST },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(183514, {	-- Perforated Veins
-							["classes"] = { ROGUE },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182686, {	-- Powerful Precision
-							["classes"] = { HUNTER },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182325, {	-- Ravenous Consumption
-							["classes"] = { DEMONHUNTER },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(183491, {	-- Ready for Anything
-							["classes"] = { DRUID },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182368, {	-- Relentless Onslaught
-							["classes"] = { DEMONHUNTER },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182449, {	-- Resolute Barrier
-							["classes"] = { WARLOCK },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(181944, {	-- Resonant Words
-							["classes"] = { PRIEST },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182480, {	-- Reversal of Fortune
-							["classes"] = { HUNTER },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(183501, {	-- Rushed Setup
-							["classes"] = { ROGUE },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(183485, {	-- Savage Combatant
-							["classes"] = { DRUID },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(181700, {	-- Scalding Brew
-							["classes"] = { MONK },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182624, {	-- Show of Force
-							["classes"] = { WARRIOR },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(181836, {	-- Spirit Drain
-							["classes"] = { DEATHKNIGHT },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(180842, {	-- Stalwart Guardian
-							["classes"] = { WARRIOR },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(183184, {	-- Stinging Strike
-							["classes"] = { HUNTER },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(183480, {	-- Taste for Blood
-							["classes"] = { DRUID },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182109, {	-- Totemic Surge
-							["classes"] = { SHAMAN },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(183507, {	-- Triple Threat
-							["classes"] = { ROGUE },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182465, {	-- Truth's Wake
-							["classes"] = { PALADIN },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(182681, {	-- Vengeful Shock
-							["classes"] = { PALADIN },
-							["cost"] = { { "c", 1602, 200 } },
-						}),
-						i(185834, {	-- Orboreal Distinguishment
-							["cost"] = { { "c", 1792, 2000 } },
-							["g"] = {
-								i(137642),	-- Mark of Honor
-							},
+						n(CONDUITS, {
+							i(181848, {	-- Accelerated Cold
+								["classes"] = { DEATHKNIGHT },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(183470, {	-- Born of the Wilds
+								["classes"] = { DRUID },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182748, {	-- Borne of Blood
+								["classes"] = { WARLOCK },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182128, {	-- Call of Flame
+								["classes"] = { SHAMAN },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(181837, {	-- Clear Mind
+								["classes"] = { PRIEST },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182769, {	-- Combusting Engine
+								["classes"] = { WARLOCK },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(183197, {	-- Controlled Destruction
+								["classes"] = { MAGE },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(187506, {
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(181462, {	-- Coordinated Offensive
+								["classes"] = { MONK },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(180935, {	-- Crash the Ramparts
+								["classes"] = { WARRIOR },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182598, {	-- Demon Muzzle
+								["classes"] = { DEMONHUNTER },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(181712, {	-- Depths of Insanity
+								["classes"] = { WARRIOR },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182140, {	-- Dissonant Echoes
+								["classes"] = { PRIEST },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182461, {	-- Echoing Blessings
+								["classes"] = { PALADIN },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(181980, {	-- Embrace Death
+								["classes"] = { WARLOCK },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182142, {	-- Embrace of Earth
+								["classes"] = { SHAMAN },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182667, {	-- Focused Light
+								["classes"] = { PALADIN },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182743, {	-- Focused Malignancy
+								["classes"] = { WARLOCK },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(183478, {	-- Fury of the Skies
+								["classes"] = { DRUID },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(181498, {	-- Grounding Surge
+								["classes"] = { MAGE },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(181373, {	-- Harm Denial
+								["classes"] = { MONK },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(181461, {	-- Ice Bite
+								["classes"] = { MAGE },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(183506, {	-- Lethal Poisons
+								["classes"] = { ROGUE },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182344, {	-- Lost in Darkness
+								["classes"] = { DEMONHUNTER },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182137, {	-- Magma Fist
+								["classes"] = { SHAMAN },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182187, {	-- Meat Shield
+								["classes"] = { DEATHKNIGHT },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(181511, {	-- Nether Precision
+								["classes"] = { MAGE },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(181737, {	-- Nourishing Chi
+								["classes"] = { MONK },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182621, {	-- One With the Beast
+								["classes"] = { HUNTER },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(181844, {	-- Pain Transformation
+								["classes"] = { PRIEST },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(183514, {	-- Perforated Veins
+								["classes"] = { ROGUE },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182686, {	-- Powerful Precision
+								["classes"] = { HUNTER },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182325, {	-- Ravenous Consumption
+								["classes"] = { DEMONHUNTER },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(183491, {	-- Ready for Anything
+								["classes"] = { DRUID },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182368, {	-- Relentless Onslaught
+								["classes"] = { DEMONHUNTER },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182449, {	-- Resolute Barrier
+								["classes"] = { WARLOCK },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(181944, {	-- Resonant Words
+								["classes"] = { PRIEST },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182480, {	-- Reversal of Fortune
+								["classes"] = { HUNTER },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(183501, {	-- Rushed Setup
+								["classes"] = { ROGUE },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(183485, {	-- Savage Combatant
+								["classes"] = { DRUID },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(181700, {	-- Scalding Brew
+								["classes"] = { MONK },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182624, {	-- Show of Force
+								["classes"] = { WARRIOR },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(181836, {	-- Spirit Drain
+								["classes"] = { DEATHKNIGHT },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(180842, {	-- Stalwart Guardian
+								["classes"] = { WARRIOR },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(183184, {	-- Stinging Strike
+								["classes"] = { HUNTER },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(183480, {	-- Taste for Blood
+								["classes"] = { DRUID },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182109, {	-- Totemic Surge
+								["classes"] = { SHAMAN },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(183507, {	-- Triple Threat
+								["classes"] = { ROGUE },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182465, {	-- Truth's Wake
+								["classes"] = { PALADIN },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(182681, {	-- Vengeful Shock
+								["classes"] = { PALADIN },
+								["cost"] = { { "c", 1602, 200 } },
+							}),
+							i(185834, {	-- Orboreal Distinguishment
+								["cost"] = { { "c", 1792, 2000 } },
+								["g"] = {
+									i(137642),	-- Mark of Honor
+								},
+							}),
 						}),
 					},
 				}),
