@@ -2802,6 +2802,7 @@ for key,value in pairs({
 	[353683] = "Mondlichtkapsel",	-- Lunarlight Pod
 	[353684] = "Mondlichtkapsel",	-- Lunarlight Pod
 	[353685] = "Mondlichtkapsel",	-- Lunarlight Pod
+	[353686] = "Mondlichtkapsel",	-- Lunarlight Pod
 	[353687] = "Zerbrochene Glocke",	-- Broken Bell
 	[353688] = "Zerbrochene Glocke",	-- Broken Bell
 	[353691] = "Himmelsglocke",	-- Skyward Bell
@@ -2859,6 +2860,7 @@ for key,value in pairs({
 	[354650] = "Traumsangherz",	-- Dreamsong Heart
 	[354651] = "Verzauberter Traumfänger",	-- Enchanted Dreamcatcher
 	[354652] = "Feenschatz",	-- Faerie Trove
+	[354662] = "Schwer zu findende Feentruhe",	-- Elusive Faerie Cache
 	[354852] = "Sprießender Auswuchs",	-- Sprouting Growth
 	[354853] = "Sprießender Auswuchs",	-- Sprouting Growth
 	[354856] = "Schleimbedeckte Kiste",	-- Slime-Coated Crate
@@ -2926,6 +2928,7 @@ for key,value in pairs({
 	[358318] = "Gräberporträt von R. Suavel",	-- R. Suavel Dredger Portrait
 	[358319] = "Notiz des Zauberers",	-- Sorceror's Note
 	[358382] = "Gesucht: Chelicera",	-- Wanted: Chelicera
+	[358531] = "Epischer Riesenschatz",	-- Giant Cache of Epic Treasure
 	[358533] = "Vergessene Vorräte",	-- Forgotten Supplies
 	[358855] = "Beschädigter Rucksack des sicheren Fallens",	-- Damaged Safe Fall Pack
 	[360054] = "Klebrige Katze",	-- Slime Cat
@@ -3035,8 +3038,6 @@ for key,value in pairs({
 	--TODO: [9999921] = "Placement",	-- Placement
 	--TODO: [9999938] = "Uuna's World Tour",	-- Uuna's World Tour
 	--TODO: [9999946] = "Summon Baa'l",	-- Summon Baa'l
-	--TODO: [1278968750] = "Hanging Chain",	-- Hanging Chain
-	--TODO: [1278968751] = "Lunarlight Pod",	-- Lunarlight Pod
 	--TODO: [1278968766] = "Rune",	-- Rune
 	--TODO: [1278968767] = "Rune",	-- Rune
 	--TODO: [1278968768] = "Rune",	-- Rune

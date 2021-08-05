@@ -2789,6 +2789,7 @@ for key,value in pairs({
 	[353683] = "Стручок луноцвета",	-- Lunarlight Pod
 	[353684] = "Стручок луноцвета",	-- Lunarlight Pod
 	[353685] = "Стручок луноцвета",	-- Lunarlight Pod
+	[353686] = "Стручок луноцвета",	-- Lunarlight Pod
 	[353687] = "Сломанный колокол",	-- Broken Bell
 	[353688] = "Сломанный колокол",	-- Broken Bell
 	[353691] = "Небесный колокол",	-- Skyward Bell
@@ -2846,6 +2847,7 @@ for key,value in pairs({
 	[354650] = "Сердце Песни Сна",	-- Dreamsong Heart
 	[354651] = "Зачарованный ловец слов",	-- Enchanted Dreamcatcher
 	[354652] = "Тайник пикси",	-- Faerie Trove
+	[354662] = "Хитрый тайник пикси",	-- Elusive Faerie Cache
 	[354852] = "Тянущийся росток",	-- Sprouting Growth
 	[354853] = "Тянущийся росток",	-- Sprouting Growth
 	[354856] = "Покрытый слизью ящик",	-- Slime-Coated Crate
@@ -2913,6 +2915,7 @@ for key,value in pairs({
 	[358318] = "\"Портрет землероя\" Р. Лоска",	-- R. Suavel Dredger Portrait
 	[358319] = "Записка чародея",	-- Sorceror's Note
 	[358382] = "Разыскивается: Хелицера",	-- Wanted: Chelicera
+	[358531] = "Огромный тайник с эпическим сокровищем",	-- Giant Cache of Epic Treasure
 	[358533] = "Забытые припасы",	-- Forgotten Supplies
 	[358855] = "Поврежденный набор для безопасного падения",	-- Damaged Safe Fall Pack
 	[360054] = "Липкая кошка",	-- Slime Cat
@@ -3022,8 +3025,6 @@ for key,value in pairs({
 	[9999921] = "Расположение",	-- Placement
 	[9999938] = "Приключения с Ууной",	-- Uuna's World Tour
 	[9999946] = "Призовите Бее'ла",	-- Summon Baa'l
-	[1278968750] = "Висящая цепь",	-- Hanging Chain
-	[1278968751] = "Стручок луноцвета",	-- Lunarlight Pod
 	[1278968766] = "Руна",	-- Rune
 	[1278968767] = "Руна",	-- Rune
 	[1278968768] = "Руна",	-- Rune
