@@ -2802,6 +2802,7 @@ for key,value in pairs({
 	[353683] = "달빛 깍지",	-- Lunarlight Pod
 	[353684] = "달빛 깍지",	-- Lunarlight Pod
 	[353685] = "달빛 깍지",	-- Lunarlight Pod
+	[353686] = "달빛 깍지",	-- Lunarlight Pod
 	[353687] = "망가진 종",	-- Broken Bell
 	[353688] = "망가진 종",	-- Broken Bell
 	[353691] = "하늘맞이 종",	-- Skyward Bell
@@ -2859,6 +2860,7 @@ for key,value in pairs({
 	[354650] = "꿈결노래 심장",	-- Dreamsong Heart
 	[354651] = "마력 깃든 꿈잡이",	-- Enchanted Dreamcatcher
 	[354652] = "페어리의 보물",	-- Faerie Trove
+	[354662] = "교묘한 페어리 보관함",	-- Elusive Faerie Cache
 	[354852] = "싹트는 증식물",	-- Sprouting Growth
 	[354853] = "싹트는 증식물",	-- Sprouting Growth
 	[354856] = "점액으로 뒤덮인 상자",	-- Slime-Coated Crate
@@ -2926,6 +2928,7 @@ for key,value in pairs({
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
 	[358319] = "마술사의 기록",	-- Sorceror's Note
 	[358382] = "현상 수배: 칼리세라",	-- Wanted: Chelicera
+	[358531] = "영웅급 보물이 든 거대한 보관함",	-- Giant Cache of Epic Treasure
 	[358533] = "잊혀진 보급품",	-- Forgotten Supplies
 	[358855] = "손상된 안전 낙하 가방",	-- Damaged Safe Fall Pack
 	--TODO: [360054] = "Slime Cat",	-- Slime Cat
@@ -3035,8 +3038,6 @@ for key,value in pairs({
 	--TODO: [9999921] = "Placement",	-- Placement
 	--TODO: [9999938] = "Uuna's World Tour",	-- Uuna's World Tour
 	--TODO: [9999946] = "Summon Baa'l",	-- Summon Baa'l
-	--TODO: [1278968750] = "Hanging Chain",	-- Hanging Chain
-	--TODO: [1278968751] = "Lunarlight Pod",	-- Lunarlight Pod
 	--TODO: [1278968766] = "Rune",	-- Rune
 	--TODO: [1278968767] = "Rune",	-- Rune
 	--TODO: [1278968768] = "Rune",	-- Rune

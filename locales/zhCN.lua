@@ -2854,6 +2854,7 @@ for key, value in pairs({
 	[353683] = "月光之荚",	-- Lunarlight Pod
 	[353684] = "月光之荚",	-- Lunarlight Pod
 	[353685] = "月光之荚",	-- Lunarlight Pod
+	[353686] = "月光之荚",	-- Lunarlight Pod
 	[353687] = "破损之钟",	-- Broken Bell
 	[353688] = "破损之钟",	-- Broken Bell
 	[353691] = "天空之钟",	-- Skyward Bell
@@ -2911,6 +2912,7 @@ for key, value in pairs({
 	[354650] = "梦歌之心",	-- Dreamsong Heart
 	[354651] = "魔法捕梦网",	-- Enchanted Dreamcatcher
 	[354652] = "妖精宝藏",	-- Faerie Trove
+	[354662] = "隐蔽的妖精宝箱",	-- Elusive Faerie Cache
 	[354852] = "出芽增生",	-- Sprouting Growth
 	[354853] = "出芽增生",	-- Sprouting Growth
 	[354856] = "软泥覆盖的箱子",	-- Slime-Coated Crate
@@ -2978,6 +2980,7 @@ for key, value in pairs({
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
 	[358319] = "巫师的笔记",	-- Sorceror's Note
 	[358382] = "通缉：螫肢",	-- Wanted: Chelicera
+	[358531] = "巨大的史诗财宝箱",	-- Giant Cache of Epic Treasure
 	[358533] = "被遗忘的补给品",	-- Forgotten Supplies
 	[358855] = "损坏的安全降落包",	-- Damaged Safe Fall Pack
 	[360054] = "黏黏猫",	-- Slime Cat
@@ -3087,8 +3090,6 @@ for key, value in pairs({
 	--TODO: [9999921] = "Placement",	-- Placement
 	[9999938] = "尤娜的世界旅行",	-- Uuna's World Tour
 	[9999946] = "召唤巴尔",	-- Summon Baa'l
-	[1278968750] = "悬挂的锁链",	-- Hanging Chain
-	[1278968751] = "月光之荚",	-- Lunarlight Pod
 	[1278968766] = "符文",	-- Rune
 	[1278968767] = "符文",	-- Rune
 	[1278968768] = "符文",	-- Rune
