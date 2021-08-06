@@ -1516,27 +1516,31 @@ local function GetUnobtainableTexture(group)
 	end
 	return L["UNOBTAINABLE_ITEM_TEXTURES"][index or 0];
 end
-local function SetIndicatorIcon(self, data)
-	if data.saved then
-		if data.parent and data.parent.locks or data.repeatable then
-			self:SetTexture(app.asset("known"))
-			return true;
+-- Returns an applicable Indicator Icon Texture for the specific group if one can be determined
+app.GetIndicatorIcon = function(group)
+	if group.saved then
+		if group.parent and group.parent.locks or group.repeatable then
+			return app.asset("known");
 		else
-			self:SetTexture(app.asset("known_green"));
-			return true;
+			return app.asset("known_green");
 		end
 	else
-		local asset = app.GetIndicator(data);
+		local asset = app.GetQuestIndicator(group);
 		if asset then
-			self:SetTexture(app.asset(asset));
-			return true;
-		elseif data.u then
-			local unobTexture = GetUnobtainableTexture(data);
+			return app.asset(asset);
+		elseif group.u then
+			local unobTexture = GetUnobtainableTexture(group);
 			if unobTexture then
-				self:SetTexture(unobTexture);
-				return true;
+				return unobTexture;
 			end
 		end
+	end
+end
+local function SetIndicatorIcon(self, data)
+	local texture = app.GetIndicatorIcon(data);
+	if texture then
+		self:SetTexture(texture);
+		return true;
 	end
 end
 local function SetPortraitIcon(self, data)
@@ -2960,13 +2964,9 @@ local function BuildContainsInfo(item, entries, paramA, paramB, indent, layer)
 			-- If there's progress to display, then let's summarize a bit better.
 			if right then
 				-- Insert into the display.
-				local o = { prefix = indent, group = group, right = right };
-				-- i wanted an icon to show "have you done this non-collectible thing which may contain collectible things?" but it looks bad
-				-- if not group.collectible and group.trackable then o.right = GetCompletionIcon(group.saved) .. o.right; end
-				local unobTexture = GetUnobtainableTexture(group);
-				if unobTexture then
-					o.prefix = string.sub(o.prefix, 4) .. "|T" .. unobTexture .. ":0|t ";
-				end
+				local o = { group = group, right = right };
+				local indicator = app.GetIndicatorIcon(group);
+				o.prefix = indicator and (string.sub(indent, 4) .. "|T" .. indicator .. ":0|t ") or indent;
 				tinsert(entries, o);
 
 				-- Only go down one more level.
@@ -10171,8 +10171,8 @@ app.TryPopulateQuestRewards = function(questObject)
 
 	-- app.DEBUG_PRINT = nil;
 end
--- Given an Object, will return the indicator (asset name) if this Object should show one
-app.GetIndicator = function(t)
+-- Given an Object, will return the indicator (asset name) if this Object should show one based on it being tied to a QuestID
+app.GetQuestIndicator = function(t)
 	if t.questID then
 		if C_QuestLog_IsOnQuest(t.questID) then
 			return (C_QuestLog_ReadyForTurnIn(t.questID) and "Interface_Questin")
