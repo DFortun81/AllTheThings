@@ -1393,7 +1393,7 @@ _.ExpansionFeatures =
 									},
 								}),
 							})),
-							n(-962, {	-- Tier 2: Homegrown Help
+							n(-962, sharedData({ ["customCollect"] = "SL_COV_VEN" }, {	-- Tier 2: Homegrown Help
 								q(62177, {	-- A Memorable Look
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
@@ -1616,7 +1616,7 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
-							}),
+							})),
 							n(-963, {	-- Tier 3: Court Influencer
 								q(63690, {	-- Alexandros Mograine's Best Friend
 									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Alexandros Mograine?
