@@ -16,6 +16,7 @@ _.ExpansionFeatures =
 				i(187081, {	-- Blackflame Skull Crescent
 					["crs"] = {
 						179526,	-- Troz'igal the Oppressor
+						179433,	-- Vault Aegis
 					},
 				}),
 				i(187044, {	-- Deathbringer's Epaulettes

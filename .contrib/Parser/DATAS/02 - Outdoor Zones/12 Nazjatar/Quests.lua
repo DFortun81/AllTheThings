@@ -2585,4 +2585,5 @@ _.Zones =
 };
 _.HiddenQuestTriggers = {
 	q(57055),	-- Last Glowing Arcane Trunk or by using the rewarded item 'Mardivas's Universally Lauded Tote' (ID: 170477)
+	q(55200),	-- Killing Onus (Mardivas's lab).
 };

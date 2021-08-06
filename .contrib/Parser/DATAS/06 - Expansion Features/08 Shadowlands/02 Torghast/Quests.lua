@@ -331,6 +331,22 @@ _.ExpansionFeatures =
 						follower(1332),	-- Steadyhands
 					},
 				}),
+				q(64171, {	-- Champion: Kiaranyka [Kyrian]
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					["sourceQuests"] = { 64187 },	-- Kiaranyka's Search
+					--["provider"] = { "n",  },	-- Kiaranyka (Multiple Ids)
+					["g"] = {
+						follower(1329),	-- Kiaranyka
+					},
+				}),
+				q(64169, {	-- Champion: Ella [Night Fae]
+					["customCollect"] = "SL_COV_NFA",	-- Night Fae
+					["sourceQuests"] = { 64185 },	-- Assist Ella With ?
+					--["provider"] = { "n",  },	-- Ella (Multiple Ids) probably 179671
+					["g"] = {
+						follower(1327),	-- Ella
+					},
+				}),
 				-------- unverifed on live yet 9.1 Champions
 				--[[
 				q(64654, {	-- Champion: Ben Howell
@@ -342,14 +358,6 @@ _.ExpansionFeatures =
 					},
 				}),
 
-				q(64171, {	-- Champion: Kiaranyka
-					["customCollect"] = "",	--
-					["sourceQuests"] = {  },	--
-					["provider"] = { "n",  },	--
-					["g"] = {
-						follower(1329),	-- Kiaranyka
-					},
-				}),
 
 				q(64175, {	-- Champion: Lassik Spinebender
 					["customCollect"] = "",	--
@@ -587,6 +595,16 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 179762 },	-- Friend? [Might be Spore of Marasmius]
+				}),
+				q(64187, {	-- Kiaranyka's Search
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					--["provider"] = { "n", },	-- Kiaranyka (multiple npcid)
+				}),
+				q(64185, {	-- Assist Ella With ?
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 179671 },	-- Ella
 				}),
 				--------------
 				-- Lockouts --
@@ -946,6 +964,7 @@ _.HiddenQuestTriggers = {
 		q(64176),	-- New Night Fae Follower triggered when completing 64184, "Missing Friend".
 		q(64178),	-- New Kyrian Follower Triggered when completing 64186, "ELGU - 007's Missing Power Core"
 		q(64182),	-- triggered when completing #64174, "Champion: Steadyhands"
+		q(64179),	-- Triggered when completing 64187 Kiaranyka's Search / 64171 Champion: Kiaranyka
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

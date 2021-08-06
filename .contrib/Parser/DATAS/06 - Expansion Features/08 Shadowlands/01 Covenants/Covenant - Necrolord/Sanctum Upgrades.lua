@@ -863,6 +863,7 @@ _.HiddenQuestTriggers = {
 	q(60773),	-- Triggered shortly after completing 'Dude, Where's My Necropolis' (60184) after NPC RP
 	q(60780),	-- triggered the first time i channeled anima to the daily quest hub
 	q(63397),	-- Triggered when Completing weeklies with abominations/receiving Sitched set gear
+	q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

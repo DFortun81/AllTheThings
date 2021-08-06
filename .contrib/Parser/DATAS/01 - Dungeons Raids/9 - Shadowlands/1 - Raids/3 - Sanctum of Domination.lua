@@ -1298,11 +1298,12 @@ _.HiddenQuestTriggers = {
 	q(64624),	-- Borr-Gahn (Mythic)
 	q(64691),	-- Borr-Gahn (Mythic)
 
-	q(64605),	-- Stygian Ember from trash #4 (Normal / Heroic)
-	q(64619),	-- Stygian Ember from trash #4 (Normal / Heroic)
-	q(64686),	-- Stygian Ember from trash #4 (Normal)
-	q(64620),	-- Stygian Ember from trash #4 (Heroic)
-	q(64687),	-- Stygian Ember from trash #4 (Heroic)
+	q(64675),	-- Stygian Ember from Screamspike (LFR)
+	q(64605),	-- Stygian Ember from Screamspike (Normal / Heroic) 
+	q(64619),	-- Stygian Ember from Screamspike (Normal / Heroic)
+	q(64686),	-- Stygian Ember from Screamspike (Normal)
+	q(64620),	-- Stygian Ember from Screamspike (Heroic)
+	q(64687),	-- Stygian Ember from Screamspike (Heroic)
 
 	q(64326),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
 	q(64327),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
@@ -1341,6 +1342,7 @@ _.HiddenQuestTriggers = {
 	q(64659),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
 	q(64480),	-- Remnant of Ner'zhul (Mythic)
 
+	q(64672),	-- Painsmith Raznal (LFR)/LFR Wing 2 Completed
 	q(64485),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
 	q(64486),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
 	q(64487),	-- Painsmith Raznal (Heroic) (Heroic-Week 2)
