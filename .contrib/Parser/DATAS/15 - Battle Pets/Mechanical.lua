@@ -88,6 +88,7 @@ _.BattlePets =
 			p(1467),	-- Sky-Bo
 			p(1183),	-- Son of Animus
 			p(2753),	-- Spraybot 0D
+			p(3092),	-- Squibbles
 			p(1515),	-- Stonegrinder
 			p(1632),	-- Sunblade Micro-Defender
 			p(1178),	-- Sunreaver Micro-Sentry
