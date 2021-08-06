@@ -619,7 +619,10 @@ _.Zones =
 					},
 				}),
 				q(59879, {	-- This Thing Of Ours
-					["sourceQuests"] = { 58090 },	-- Side Effects
+					["sourceQuests"] = {
+						58947,	-- Test Your Mettle
+						58090,	-- Side Effects
+					},
 					["provider"] = { "n", 161559 },	-- Louison
 					["coord"] = { 54.4, 48.6, MALDRAXXUS },
 				}),
@@ -722,7 +725,10 @@ _.Zones =
 					["sourceQuests"] = { 59203 },	-- Leave Me a Loan
 					["provider"] = { "n", 159830 },	-- Au'narim
 					["coord"] = { 53.6, 47.5, MALDRAXXUS },
-					["maps"] = { 1691 },	-- Shattered Grove
+					["maps"] = {
+						1691,	-- Shattered Grove
+						1715,	-- Vestibule Of Eternity (procs when entering the portal but not actual destination)
+					},
 				}),
 				q(63677, {	-- You Can Only Die
 					["sourceQuests"] = { 63674 },	-- By Your Leave
