@@ -2585,5 +2585,40 @@ _.Zones =
 };
 _.HiddenQuestTriggers = {
 	q(57055),	-- Last Glowing Arcane Trunk or by using the rewarded item 'Mardivas's Universally Lauded Tote' (ID: 170477)
-	q(55200),	-- Killing Onus (Mardivas's lab).
+	-- The Laboratory of Mardivas
+		q(56708),	-- Lesser Lithic Arcanocrystal Selection	-- Needs confirmation
+		q(55202),	-- Elemental Essence Amalgamator Selection	-- Needs confirmation
+		q(56428),	-- Summoned Arcane Amalgamation
+		q(55144),	-- Summoned Dusty Amalgamation
+		q(55205),	-- Summoned Moghiea
+		q(55206),	-- Summoned Ungormath
+		q(55203),	-- Summoned Salgos, the Eternal
+		q(55201),	-- Summoned Spawn of Salgos
+		q(55204),	-- Summoned Xue
+		q(55199),	-- Summoned Zomera
+		q(55200),	-- Summoned Omus
+		q(56476),	-- Killed Arcane Amalgamation
+		q(56892),	-- Killed Arcane Amalgamation, Burning Amalgamation, Herald of Salgos, Moghiea, Salgos the Eternal, Spawn of Salgos, Xue, and Zomera
+		q(56724),	-- Triggered when killing Arcane Amalgamation in mardivas' lab. Probably used to disable something else in the room
+		q(55145),	-- Killed Burning Amalgamation
+		q(56481),	-- Killed Burning Amalgamation
+		q(56725),	-- Killed Burning Amalgamation
+		q(56891),	-- Killed Burning Amalgamation, Moghiea, Salgos the Eternal, Spawn of Salgos, and Xue
+		q(56485),	-- Killed Dusty Amalgamation
+		q(56730),	-- First kill of Dusty Amalgamation
+		q(56488),	-- Killed Herald of Salgos
+		q(56733),	-- First kill of Herald of Salgos
+		q(56484),	-- Killed Moghiea
+		q(56728),	-- killed Moghiea (first time)
+		q(56479),	-- Killed Omus
+		q(56722),	-- Killed Omus
+		q(56483),	-- Killed Ungormath
+		q(56487),	-- Killed Salgos, the Eternal
+		q(56732),	-- Killed Salgos, the Eternal
+		q(56486),	-- Killed Spawn of Salgos
+		q(56731),	-- Killed Spawn of Salgos
+		q(56482),	-- Killed Xue
+		q(56726),	-- Killed Xue
+		q(56480),	-- Killed Zomera
+		q(56723),	-- Killed Zomera
 };
