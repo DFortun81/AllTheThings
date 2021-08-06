@@ -17,6 +17,8 @@ _.Secrets =
 				["description"] = "|cFFFFFFFFStep 2:|r Go inside the house at |cFFFFFFFF44.2, 53.0|r in Elwynn Forest to find the |cFFFFD700Empty Dish|r.\n",
 				["altQuests"] = { 58099 },	-- Amara's Wish (interacting with Empty Dish is optional)
 				["questID"] = 58098,	-- Step 2: Find the empty dish bowl
+				["isBreadcrumb"] = true,
+				["sourceQuest"] = 58076,	-- Step 1: Speak to Amara
 				["coord"] = { 44.2, 53.0, ELWYNN_FOREST },
 			}),
 			q(58099, {	-- Amara's Wish
@@ -28,6 +30,7 @@ _.Secrets =
 					{ "n", 160373 },	-- Meaty Morsel
 					{ "n", 160372 },	-- Slathered Rib
 				},
+				["sourceQuest"] = 58098,	-- Step 2: Empty Dish
 				["coord"] = { 46.7, 70.1, DEADWIND_PASS },	-- Return to Karazhan entrance
 				["name"] = "|cFFFFFFFFStep 3:|r Amara's Wish",
 				["g"] = {
