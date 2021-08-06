@@ -342,7 +342,7 @@ _.ExpansionFeatures =
 				q(64169, {	-- Champion: Ella [Night Fae]
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["sourceQuests"] = { 64185 },	-- Assist Ella With ?
-					--["provider"] = { "n",  },	-- Ella (Multiple Ids) probably 179671
+					--["provider"] = { "n",  },	-- Ella (Multiple Ids) probably 179672
 					["g"] = {
 						follower(1327),	-- Ella
 					},
@@ -965,6 +965,7 @@ _.HiddenQuestTriggers = {
 		q(64178),	-- New Kyrian Follower Triggered when completing 64186, "ELGU - 007's Missing Power Core"
 		q(64182),	-- triggered when completing #64174, "Champion: Steadyhands"
 		q(64179),	-- Triggered when completing 64187 Kiaranyka's Search / 64171 Champion: Kiaranyka
+		q(64177),	--  Triggered when completing 64185 Assist Ella With ?/64169 Champion: Ella
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
