@@ -289,6 +289,7 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
+					["races"] = HORDE_ONLY,	-- not tagged as such in API, but the quest text mentions needing "help with the Alliance that are threatening Zoram'gar Outpost."  looks like there are 2 quests per faction
 				}),
 				q(26894, {	-- Blackfathom Deeps
 					["provider"] = { "n", 34122 },	-- Commander Grimfang
