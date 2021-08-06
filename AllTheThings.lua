@@ -2910,7 +2910,7 @@ local function BuildContainsInfo(item, entries, paramA, paramB, indent, layer)
 
 	-- skip Character filtering for sub-groups if this Item meets the BoE filter logic, since it can be moved to the designated character
 	local oldItemBindFilter = app.ItemBindFilter;
-	if app.ItemBindFilter(item) then
+	if app.ItemBindFilter ~= app.NoFilter and app.ItemBindFilter(item) then
 		app.ItemBindFilter = app.NoFilter;
 	end
 	-- using pairs since some index values may get set to nil prior to this
@@ -3741,18 +3741,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- Only need to build/update groups from the top level
 		if topLevelSearch then
 
-			-- skip Character filtering for sub-groups if this Item meets the Ignore BoE filter logic, since it can be moved to the designated character
-			local oldItemBindFilter = app.ItemBindFilter;
-			if app.ItemBindFilter(group) then
-				app.ItemBindFilter = app.NoFilter;
-			end
-
-			group.total = 0;
-			group.progress = 0;
 			BuildGroups(group, group.g);
-			app.TopLevelUpdateGroup(group);
-			-- reapply the previous BoE filter
-			app.ItemBindFilter = oldItemBindFilter;
+			-- skip Character filtering for sub-groups if this Item meets the Ignore BoE filter logic, since it can be moved to the designated character
+			if app.ItemBindFilter ~= app.NoFilter and app.ItemBindFilter(group) then
+				local oldItemBindFilter = app.ItemBindFilter;
+				app.ItemBindFilter = app.NoFilter;
+				app.TopLevelUpdateGroup(group);
+				-- reapply the previous BoE filter
+				app.ItemBindFilter = oldItemBindFilter;
+			else
+				app.TopLevelUpdateGroup(group);
+			end
 		end
 	end
 
@@ -11636,8 +11635,20 @@ UpdateGroup = function(parent, group, window)
 			-- Check if this is a group
 			if group.g then
 				-- if app.DEBUG_PRINT then print("UpdateGroup.g",group.progress,group.total,group.__type) end
-				-- Update the subgroups recursively...
-				UpdateGroups(group, group.g, window);
+
+				-- skip Character filtering for sub-groups if this Item meets the Ignore BoE filter logic, since it can be moved to the designated character
+				if app.ItemBindFilter ~= app.NoFilter and app.ItemBindFilter(group) then
+					local oldItemBindFilter = app.ItemBindFilter;
+					app.ItemBindFilter = app.NoFilter;
+					-- Update the subgroups recursively...
+					UpdateGroups(group, group.g, window);
+					-- reapply the previous BoE filter
+					app.ItemBindFilter = oldItemBindFilter;
+				else
+					-- Update the subgroups recursively...
+					UpdateGroups(group, group.g, window);
+				end
+
 				-- if app.DEBUG_PRINT then print("UpdateGroup.g.Updated",group.progress,group.total,group.__type) end
 				SetGroupVisibility(parent, group);
 			else
