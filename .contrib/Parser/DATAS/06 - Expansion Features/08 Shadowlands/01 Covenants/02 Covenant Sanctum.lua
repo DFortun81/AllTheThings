@@ -127,7 +127,6 @@ _.ExpansionFeatures =
 						i(181468),	-- Veiled Augment Rune
 						-- Gear
 						i(185942),	-- Sinheart Choker
-						i(185854),	-- Stone-Etched Shawl
 					},
 				}),
 				n(-901, {	-- Covenant Callings

@@ -153,6 +153,9 @@ _.Zones =
 					i(181183),	-- Soulstalker Grips
 					i(181184),	-- Soulstalker Helm
 					i(181186),	-- Stalker Wight's Sash
+					i(185854, {	-- Stone-Etched Shawl
+						["timeline"] = { "added 9.1" },
+					}),
 					i(181198),	-- Stone-Infused Sabatons
 					i(181201),	-- Stonewing Mantle
 					i(181219),	-- Stonewing Rioter's Cudgel
