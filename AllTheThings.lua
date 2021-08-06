@@ -308,13 +308,15 @@ local defaultComparison = function(a,b)
 	return a > b;
 end
 local insertionSort = function(t, compare)
-	if not compare then compare = defaultComparison; end
-	local j;
-	for i=2,#t,1 do
-		j = i;
-		while j > 1 and compare(t[j], t[j - 1]) do
-			t[j],t[j - 1] = t[j - 1],t[j];
-			j = j - 1;
+	if t then
+		if not compare then compare = defaultComparison; end
+		local j;
+		for i=2,#t,1 do
+			j = i;
+			while j > 1 and compare(t[j], t[j - 1]) do
+				t[j],t[j - 1] = t[j - 1],t[j];
+				j = j - 1;
+			end
 		end
 	end
 end
@@ -17819,10 +17821,12 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 
 					-- Merge everything for this map into the list
 					insertionSort(mapObject.g, self.Sort);
-					-- Sort the sub-groups as well
-					for i,mapGrp in ipairs(mapObject.g) do
-						if mapGrp.mapID and mapGrp.g then
-							insertionSort(mapGrp.g, self.Sort);
+					if mapObject.g then
+						-- Sort the sub-groups as well
+						for i,mapGrp in ipairs(mapObject.g) do
+							if mapGrp.mapID then
+								insertionSort(mapGrp.g, self.Sort);
+							end
 						end
 					end
 					MergeObject(temp, mapObject);
@@ -17842,10 +17846,12 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						end
 					end
 					insertionSort(mapObject.g, self.Sort);
-					-- Sort the map groups as well
-					for i,mapGrp in ipairs(mapObject.g) do
-						if mapGrp.mapID and mapGrp.g then
-							insertionSort(mapGrp.g, self.Sort);
+					if mapObject.g then
+						-- Sort the sub-groups as well
+						for i,mapGrp in ipairs(mapObject.g) do
+							if mapGrp.mapID then
+								insertionSort(mapGrp.g, self.Sort);
+							end
 						end
 					end
 					MergeObject(temp, mapObject);
