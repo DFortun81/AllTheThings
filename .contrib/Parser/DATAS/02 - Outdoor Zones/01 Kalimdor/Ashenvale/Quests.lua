@@ -790,6 +790,10 @@ _.Zones =
 					["coord"] = { 85.3, 44.7, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
 					["groups"] = {
 						objective(1, {	-- 0/1 Bottle of Disease
 							["provider"] = { "i", 5440 },	-- Bottle of Disease
@@ -2185,6 +2189,7 @@ _.Zones =
 					["lvl"] = 25,
 					["timeline"] = {
 						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
 					},
 					["groups"] = {
 						objective(1, {	-- View the Tome of Mel'Thandris

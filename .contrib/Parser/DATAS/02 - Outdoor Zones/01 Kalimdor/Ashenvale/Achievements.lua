@@ -6,12 +6,9 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(ASHENVALE, {
-			n(ACHIEVEMENTS, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 4.0.3.10000", } },{
 				ach(4925, {	-- Ashenvale Quests
 					["races"] = ALLIANCE_ONLY,
-					["timeline"] = {
-						"added 4.0.3.10000",
-					},
 					["g"] = {
 						crit(1, {	-- Maestra's Post
 							["sourceQuest"] = 13626,	-- Respect for the Fallen
@@ -49,9 +46,6 @@ _.Zones =
 				}),
 				ach(4976, {	-- Ashenvale Quests
 					["races"] = HORDE_ONLY,
-					["timeline"] = {
-						"added 4.0.3.10000",
-					},
 					["g"] = {
 						crit(1, {	-- The Corrupted Heart of the Forest
 							["sourceQuests"] = {
@@ -89,7 +83,7 @@ _.Zones =
 						}),
 					},
 				}),
-			}),
+			})),
 		}),
 	}),
 };
