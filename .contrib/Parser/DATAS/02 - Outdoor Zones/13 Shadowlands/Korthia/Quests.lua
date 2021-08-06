@@ -96,6 +96,17 @@ _.Zones =
 					["provider"] = { "n", 177155 },	-- Pathscribe Roh-Vess
 					["coord"] = { 65.1, 23.1, KORTHIA },
 				}),
+				q(63579, {	-- A Paladin's Soul
+					["sourceQuests"] = { 63683 },	-- Winter's Sigil
+					["description"] = "Requires Renown 56.",
+					["provider"] = { "n", 179356 },	-- Thenios
+					["coord"] = { 62.9, 25.3, KORTHIA },
+					["maps"] = {	-- TODO: not sure if these are strictly scenario maps or if they are additions to Torghast overall.  adding them in the order i went through the floors for the quest
+						1968,	-- TG107_Floor
+						1967,	-- TG106_Floor
+						1969,	-- TG108_Floor
+					},
+				}),
 				q(63848, {	-- A Show of Gratitude
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 177927 },	-- Tal-Galan
@@ -470,16 +481,6 @@ _.Zones =
 				}),
 
 			--	ptr data
-				q(63579, {	-- A Paladin's Soul
-					["sourceQuests"] = { 63683 },	-- Winter's Sigil
-					["provider"] = { "n", 179356 },	-- Thenios
-					["coord"] = { 62.9, 25.3, KORTHIA },
-					["maps"] = {	-- TODO: not sure if these are strictly scenario maps or if they are additions to Torghast overall.  adding them in the order i went through the floors for the quest
-						1968,	-- TG107_Floor
-						1967,	-- TG106_Floor
-						1969,	-- TG108_Floor
-					},
-				}),
 				q(63899, {	-- Book of Binding: The Mad Witch
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
 					["description"] = "At the end of the top level of the cave.",

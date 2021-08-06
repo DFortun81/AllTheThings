@@ -118,7 +118,7 @@ _.Zones =
 									["cr"] = 178882,	-- Kazj The Sentinel <Tormentor of Torghast>
 								}),
 								crit(12, {	-- Intercessor Razzram slain
-									["cr"] = 178004,	-- Intercessor Razzram <Tormentor of Torghast>
+									["cr"] = 178004,	-- Intercessor Razzra <Tormentor of Torghast>
 								}),
 								crit(13, {	-- Malleus Grakizz slain
 									["cr"] = 177972,	-- Malleus Grakizz <Tormentor of Torghast>
@@ -136,7 +136,7 @@ _.Zones =
 									178898,	-- Golmak The Monstrosity <Tormentor of Torghast>
 									177979,	-- Gralebboih <Tormentor of Torghast>
 									177980,	-- Gruukuuek the Elder <Tormentor of Torghast>
-									178004,	-- Intercessor Razzram <Tormentor of Torghast>
+									178004,	-- Intercessor Razzra <Tormentor of Torghast>
 									178882,	-- Kazj The Sentinel <Tormentor of Torghast>
 									177972,	-- Malleus Grakizz <Tormentor of Torghast>
 									178899,	-- Manifestation of Pain <Tormentor of Torghast>
@@ -193,8 +193,8 @@ _.Zones =
 									i(186009),	-- Corrupted Elder Branch
 								},
 							}),
-							n(178004, {	-- Intercessor Razzram
-								-- ["questID"] = ,
+							n(178004, {	-- Intercessor Razzra
+								["questID"] = 64111,
 								["isDaily"] = true,
 								["g"] = {
 									i(186231),	-- Gloves of Fervent Intercession
