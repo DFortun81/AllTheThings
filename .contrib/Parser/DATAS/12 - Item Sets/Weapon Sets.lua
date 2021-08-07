@@ -146,43 +146,43 @@ _.GearSets =
 					}),
 					i(144245, {	-- Arsenal: Tyrannical Gladiator's Weapons [ Horde / Tested ]
 						["sym"] = {
-							{"sub", "pvp_weapons_faction_ensemble", -10041, -676, -9914, -661 }, -- Alliance
-							{"sub", "pvp_weapons_faction_ensemble", -10041, -676, -9913, -661 }, -- Horde
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661 }, -- Alliance
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -676, FACTION_HEADER_HORDE, -661 }, -- Horde
 						},
 						["races"] = HORDE_ONLY,
 					}),
 					i(144246, {	-- Arsenal: Tyrannical Gladiator's Weapons [ Alliance ]
 						["sym"] = {
-							{"sub", "pvp_weapons_faction_ensemble", -10041, -676, -9914, -661 }, -- Alliance
-							{"sub", "pvp_weapons_faction_ensemble", -10041, -676, -9913, -661 }, -- Horde
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661 }, -- Alliance
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -676, FACTION_HEADER_HORDE, -661 }, -- Horde
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(144251, {	-- Arsenal: Grievous Gladiator's Weapons [ Horde / Tested ]
 						["sym"] = {
-							{"sub", "pvp_weapons_faction_ensemble", -10041, -677, -9914, -661 }, -- Alliance
-							{"sub", "pvp_weapons_faction_ensemble", -10041, -677, -9913, -661 }, -- Horde
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, -661 }, -- Alliance
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -677, FACTION_HEADER_HORDE, -661 }, -- Horde
 						},
 						["races"] = HORDE_ONLY,
 					}),
 					i(144252, {	-- Arsenal: Grievous Gladiator's Weapons [ Alliance ]
 						["sym"] = {
-							{"sub", "pvp_weapons_faction_ensemble", -10041, -677, -9914, -661 }, -- Alliance
-							{"sub", "pvp_weapons_faction_ensemble", -10041, -677, -9913, -661 }, -- Horde
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, -661 }, -- Alliance
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -677, FACTION_HEADER_HORDE, -661 }, -- Horde
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(144248, {	-- Arsenal: Prideful Gladiator's Weapons [ Alliance ]
 						["sym"] = {
-							{"sub", "pvp_weapons_faction_ensemble", -10041, -678, -9914, -661 }, -- Alliance
-							{"sub", "pvp_weapons_faction_ensemble", -10041, -678, -9913, -661 }, -- Horde
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, -661 }, -- Alliance
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -678, FACTION_HEADER_HORDE, -661 }, -- Horde
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(144250, {	-- Arsenal: Prideful Gladiator's Weapons [ Horde / Tested ]
 						["sym"] = {
-							{"sub", "pvp_weapons_faction_ensemble", -10041, -678, -9914, -661 }, -- Alliance
-							{"sub", "pvp_weapons_faction_ensemble", -10041, -678, -9913, -661 }, -- Horde
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, -661 }, -- Alliance
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -678, FACTION_HEADER_HORDE, -661 }, -- Horde
 						},
 						["races"] = HORDE_ONLY,
 					}),
@@ -191,69 +191,69 @@ _.GearSets =
 					i(138625, {	-- Arsenal: Primal Combatant's Weapons [ Alliance / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9914, -660 },
+							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -660 },
 							{"exclude", "itemID", 138625 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(138626, {	-- Arsenal: Primal Combatant's Weapons [ Horde ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9913, -660 },
+							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -660 },
 							{"exclude", "itemID", 138626 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(138631, {	-- Arsenal: Primal Gladiator's Weapons [ Alliance ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9914, -661 },
+							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -661 },
 							{"exclude", "itemID", 138631 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(138632, {	-- Arsenal: Primal Gladiator's Weapons [ Horde / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9913, -661 },
+							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -661 },
 							{"exclude", "itemID", 138632 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(138629, {	-- Arsenal: Wild Combatant's Weapons [ Horde / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9913, -660 }, },
+						["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -660 }, },
 					}),
 					i(138630, {	-- Arsenal: Wild Combatant's Weapons [ Alliance ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9914, -660 },
+							{"sub", "pvp_weapons_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -660 },
 							{"exclude", "itemID", 138631 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(138633, {	-- Arsenal: Wild Gladiator's Weapons [ Alliance / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9914, -661 },
+							{"sub", "pvp_weapons_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -661 },
 							{"exclude", "itemID", 138633 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(138634, {	-- Arsenal: Wild Gladiator's Weapons [ Horde ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9913, -661 }, },
+						["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -661 }, },
 					}),
 					-- Done
 					i(138627, {	-- Arsenal: Warmongering Combatant's Weapons (H)
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9913, -660 }, },
+						["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -660 }, },
 					}),
 					i(138628, {	-- Arsenal: Warmongering Combatant's Weapons(A)
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9914, -660 }, },
+						["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -660 }, },
 					}),
 					i(138635, {	-- Arsenal: Warmongering Gladiator's Weapons (A)
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9914, -661 }, },
+						["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -661 }, },
 					}),
 					i(138636, {	-- Arsenal: Warmongering Gladiator's Weapons (H)
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9913, -661 }, },
+						["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -661 }, },
 					}),
 				}),
 			}),

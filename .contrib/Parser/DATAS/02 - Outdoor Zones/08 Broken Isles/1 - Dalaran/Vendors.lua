@@ -39,8 +39,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 3 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 6 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 6 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -660, 6 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -660, 6 },	-- Season 2
 										{"exclude", "itemID", 146165 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -61,8 +61,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 12 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 12 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -660, 12 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -660, 12 },	-- Season 2
 										{"exclude", "itemID", 146265 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -83,8 +83,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 11 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 11 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -660, 11 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -660, 11 },	-- Season 2
 										{"exclude", "itemID", 146169 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -105,8 +105,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 3 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 3 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -660, 3 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -660, 3 },	-- Season 2
 										{"exclude", "itemID", 146155 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -127,8 +127,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 8 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 8 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -660, 8 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -660, 8 },	-- Season 2
 										{"exclude", "itemID", 146157 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -149,8 +149,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 10 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 10 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -660, 10 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -660, 10 },	-- Season 2
 										{"exclude", "itemID", 146171 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -171,8 +171,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 2 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 2 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -660, 2 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -660, 2 },	-- Season 2
 										{"exclude", "itemID", 146167 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -193,8 +193,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 5 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 5 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -660, 5 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -660, 5 },	-- Season 2
 										{"exclude", "itemID", 146159 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -215,8 +215,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 4 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 4 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -660, 4 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -660, 4 },	-- Season 2
 										{"exclude", "itemID", 146173 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -237,8 +237,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 7 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 7 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -660, 7 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -660, 7 },	-- Season 2
 										{"exclude", "itemID", 146153 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -259,8 +259,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 9 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 9 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -660, 9 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -660, 9 },	-- Season 2
 										{"exclude", "itemID", 146161 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -281,8 +281,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -660, 1 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -660, 1 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -660, 1 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -660, 1 },	-- Season 2
 										{"exclude", "itemID", 146163 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -305,8 +305,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 6 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 6 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -660, 6 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -660, 6 },	-- Season 4
 										{"exclude", "itemID", 147678 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -327,8 +327,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 12 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 12 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -660, 12 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -660, 12 },	-- Season 4
 										{"exclude", "itemID", 147679 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -349,8 +349,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 11 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 11 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -660, 11 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -660, 11 },	-- Season 4
 										{"exclude", "itemID", 147676 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -371,8 +371,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 3 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 3 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -660, 3 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -660, 3 },	-- Season 4
 										{"exclude", "itemID", 147690 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -393,8 +393,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 8 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 8 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -660, 8 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -660, 8 },	-- Season 4
 										{"exclude", "itemID", 147695 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -415,8 +415,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 10 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 10 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -660, 10 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -660, 10 },	-- Season 4
 										{"exclude", "itemID", 147683 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -437,8 +437,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 2 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 2 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -660, 2 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -660, 2 },	-- Season 4
 										{"exclude", "itemID", 147694 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -459,8 +459,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 5 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 5 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -660, 5 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -660, 5 },	-- Season 4
 										{"exclude", "itemID", 147687 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -481,8 +481,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 4 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 4 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -660, 4 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -660, 4 },	-- Season 4
 										{"exclude", "itemID", 147686 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -503,8 +503,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 7 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 7 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -660, 7 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -660, 7 },	-- Season 4
 										{"exclude", "itemID", 147673 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -525,8 +525,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 9 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 9 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -660, 9 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -660, 9 },	-- Season 4
 										{"exclude", "itemID", 147681 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -547,8 +547,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 1 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -660, 1 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -660, 1 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -660, 1 },	-- Season 4
 										{"exclude", "itemID", 147691 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -571,9 +571,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 6 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 6 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 6 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -660, 6 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -660, 6 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -660, 6 },	-- Season 7
 										{"exclude", "itemID", 150253 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -594,9 +594,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 12 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 12 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 12 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -660, 12 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -660, 12 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -660, 12 },	-- Season 7
 										{"exclude", "itemID", 150254 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -617,9 +617,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 11 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 11 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 11 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -660, 11 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -660, 11 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -660, 11 },	-- Season 7
 										{"exclude", "itemID", 150251 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -640,9 +640,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 3 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 3 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 3 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -660, 3 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -660, 3 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -660, 3 },	-- Season 7
 										{"exclude", "itemID", 150265 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -663,9 +663,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 8 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 8 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 8 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -660, 8 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -660, 8 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -660, 8 },	-- Season 7
 										{"exclude", "itemID", 150270 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -686,9 +686,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 10 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 10 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 10 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -660, 10 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -660, 10 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -660, 10 },	-- Season 7
 										{"exclude", "itemID", 150258 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -709,9 +709,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 2 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 2 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 2 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -660, 2 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -660, 2 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -660, 2 },	-- Season 7
 										{"exclude", "itemID", 150269 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -732,9 +732,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 5 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 5 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 5 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -660, 5 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -660, 5 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -660, 5 },	-- Season 7
 										{"exclude", "itemID", 150262 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -755,9 +755,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 4 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 4 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 4 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -660, 4 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -660, 4 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -660, 4 },	-- Season 7
 										{"exclude", "itemID", 150261 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -778,9 +778,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 7 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 7 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 7 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -660, 7 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -660, 7 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -660, 7 },	-- Season 7
 										{"exclude", "itemID", 150248 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -801,9 +801,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 9 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 9 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 9 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -660, 9 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -660, 9 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -660, 9 },	-- Season 7
 										{"exclude", "itemID", 150256 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -824,9 +824,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -660, 1 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -660, 1 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -660, 1 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -660, 1 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -660, 1 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -660, 1 },	-- Season 7
 										{"exclude", "itemID", 150266 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -849,8 +849,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 6 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 6 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -661, 6 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -661, 6 },	-- Season 2
 										{"exclude", "itemID", 146133 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -871,8 +871,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 12 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 12 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -661, 12 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -661, 12 },	-- Season 2
 										{"exclude", "itemID", 146263 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -893,8 +893,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 11 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 11 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -661, 11 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -661, 11 },	-- Season 2
 										{"exclude", "itemID", 146141 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -915,8 +915,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 3 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 3 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -661, 3 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -661, 3 },	-- Season 2
 										{"exclude", "itemID", 146139 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -937,8 +937,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 8 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 8 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -661, 8 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -661, 8 },	-- Season 2
 										{"exclude", "itemID", 146147 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -959,8 +959,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 10 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 10 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -661, 10 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -661, 10 },	-- Season 2
 										{"exclude", "itemID", 146143 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -981,8 +981,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 2 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 2 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -661, 2 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -661, 2 },	-- Season 2
 										{"exclude", "itemID", 146135 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1003,8 +1003,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 5 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 5 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -661, 5 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -661, 5 },	-- Season 2
 										{"exclude", "itemID", 146149 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1025,8 +1025,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 4 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 4 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -661, 4 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -661, 4 },	-- Season 2
 										{"exclude", "itemID", 146145 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1047,8 +1047,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 7 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 7 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -661, 7 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -661, 7 },	-- Season 2
 										{"exclude", "itemID", 146137 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1069,8 +1069,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 9 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 9 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -661, 9 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -661, 9 },	-- Season 2
 										{"exclude", "itemID", 146151 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1091,8 +1091,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -661, 1 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -661, 1 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -661, 1 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -661, 1 },	-- Season 2
 										{"exclude", "itemID", 146131 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1115,8 +1115,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 6 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 6 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -661, 6 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -661, 6 },	-- Season 4
 										{"exclude", "itemID", 147649 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1137,8 +1137,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 12 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 12 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -661, 12 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -661, 12 },	-- Season 4
 										{"exclude", "itemID", 147652 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1159,8 +1159,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 11 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 11 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -661, 11 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -661, 11 },	-- Season 4
 										{"exclude", "itemID", 147648 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1181,8 +1181,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 3 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 3 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -661, 3 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -661, 3 },	-- Season 4
 										{"exclude", "itemID", 147645 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1203,8 +1203,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 8 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 8 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -661, 8 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -661, 8 },	-- Season 4
 										{"exclude", "itemID", 147667 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1225,8 +1225,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 10 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 10 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -661, 10 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -661, 10 },	-- Season 4
 										{"exclude", "itemID", 147655 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1247,8 +1247,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 2 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 2 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -661, 2 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -661, 2 },	-- Season 4
 										{"exclude", "itemID", 147666 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1269,8 +1269,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 5 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 5 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -661, 5 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -661, 5 },	-- Season 4
 										{"exclude", "itemID", 147664 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1291,8 +1291,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 4 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 4 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -661, 4 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -661, 4 },	-- Season 4
 										{"exclude", "itemID", 147658 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1313,8 +1313,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 7 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 7 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -661, 7 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -661, 7 },	-- Season 4
 										{"exclude", "itemID", 147662 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1335,8 +1335,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 9 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 9 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -661, 9 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -661, 9 },	-- Season 4
 										{"exclude", "itemID", 147654 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1357,8 +1357,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 1 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 1 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -661, 1 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -661, 1 },	-- Season 4
 										{"exclude", "itemID", 147659 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1381,9 +1381,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 6 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 6 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 6 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -661, 6 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -661, 6 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -661, 6 },	-- Season 7
 										{"exclude", "itemID", 149482 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1404,9 +1404,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 12 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 12 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 12 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -661, 12 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -661, 12 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -661, 12 },	-- Season 7
 										{"exclude", "itemID", 149485 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1427,9 +1427,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 11 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 11 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 11 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -661, 11 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -661, 11 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -661, 11 },	-- Season 7
 										{"exclude", "itemID", 149481 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1450,9 +1450,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 3 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 3 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 3 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -661, 3 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -661, 3 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -661, 3 },	-- Season 7
 										{"exclude", "itemID", 149478 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1473,9 +1473,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 8 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 8 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 8 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -661, 8 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -661, 8 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -661, 8 },	-- Season 7
 										{"exclude", "itemID", 149500 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1496,9 +1496,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 10 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 10 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 10 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -661, 10 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -661, 10 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -661, 10 },	-- Season 7
 										{"exclude", "itemID", 149488 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1519,9 +1519,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 2 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 2 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 2 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -661, 2 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -661, 2 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -661, 2 },	-- Season 7
 										{"exclude", "itemID", 149499 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1542,9 +1542,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 5 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 5 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 5 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -661, 5 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -661, 5 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -661, 5 },	-- Season 7
 										{"exclude", "itemID", 149497 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1565,9 +1565,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 4 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 4 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 4 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -661, 4 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -661, 4 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -661, 4 },	-- Season 7
 										{"exclude", "itemID", 149491 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1588,9 +1588,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 3 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 3 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 3 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -661, 3 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -661, 3 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -661, 3 },	-- Season 7
 										{"exclude", "itemID", 149495 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1611,9 +1611,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 9 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 9 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 9 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -661, 9 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -661, 9 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -661, 9 },	-- Season 7
 										{"exclude", "itemID", 149487 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -1634,9 +1634,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 1 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 1 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 1 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -661, 1 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -661, 1 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -661, 1 },	-- Season 7
 										{"exclude", "itemID", 149492 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2021,8 +2021,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 6 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 6 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -662, 6 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -662, 6 },	-- Season 2
 										{"exclude", "itemID", 146220 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2043,8 +2043,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 12 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 12 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -662, 12 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -662, 12 },	-- Season 2
 										{"exclude", "itemID", 146270 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2065,8 +2065,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 11 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 11 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -662, 11 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -662, 11 },	-- Season 2
 										{"exclude", "itemID", 146228 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2087,8 +2087,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 3 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 3 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -662, 3 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -662, 3 },	-- Season 2
 										{"exclude", "itemID", 146226 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2109,8 +2109,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 8 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 8 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -662, 8 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -662, 8 },	-- Season 2
 										{"exclude", "itemID", 146234 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2131,8 +2131,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 10 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 10 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -662, 10 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -662, 10 },	-- Season 2
 										{"exclude", "itemID", 146230 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2153,8 +2153,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 2 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 2 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -662, 2 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -662, 2 },	-- Season 2
 										{"exclude", "itemID", 146222 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2175,8 +2175,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 5 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 5 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -662, 5 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -662, 5 },	-- Season 2
 										{"exclude", "itemID", 146236 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2197,8 +2197,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 4 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 4 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -662, 4 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -662, 4 },	-- Season 2
 										{"exclude", "itemID", 146232 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2219,8 +2219,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 7 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 7 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -662, 7 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -662, 7 },	-- Season 2
 										{"exclude", "itemID", 146224 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2241,8 +2241,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 9 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 9 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -662, 9 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -662, 9 },	-- Season 2
 										{"exclude", "itemID", 146238 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2263,8 +2263,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -662, 1 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -662, 1 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -662, 1 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -662, 1 },	-- Season 2
 										{"exclude", "itemID", 146218 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2287,8 +2287,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 6 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 6 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -662, 6 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -662, 6 },	-- Season 4
 										{"exclude", "itemID", 147625 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2309,8 +2309,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 12 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 12 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -662, 12 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -662, 12 },	-- Season 4
 										{"exclude", "itemID", 147627 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2331,8 +2331,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 11 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 11 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -662, 11 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -662, 11 },	-- Season 4
 										{"exclude", "itemID", 147623 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2353,8 +2353,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 3 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 3 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -662, 3 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -662, 3 },	-- Season 4
 										{"exclude", "itemID", 147621 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2375,8 +2375,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 8 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 8 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -662, 8 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -662, 8 },	-- Season 4
 										{"exclude", "itemID", 147644 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2397,8 +2397,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 10 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 10 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -662, 10 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -662, 10 },	-- Season 4
 										{"exclude", "itemID", 147632 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2419,8 +2419,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 2 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 2 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -662, 2 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -662, 2 },	-- Season 4
 										{"exclude", "itemID", 147642 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2441,8 +2441,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 5 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 5 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -662, 5 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -662, 5 },	-- Season 4
 										{"exclude", "itemID", 147640 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2463,8 +2463,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 4 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 4 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -662, 4 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -662, 4 },	-- Season 4
 										{"exclude", "itemID", 147634 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2485,8 +2485,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 7 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 7 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -662, 7 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -662, 7 },	-- Season 4
 										{"exclude", "itemID", 147637 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2507,8 +2507,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 9 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 9 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -662, 9 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -662, 9 },	-- Season 4
 										{"exclude", "itemID", 147629 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2529,8 +2529,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -662, 1 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -662, 1 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -662, 1 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -662, 1 },	-- Season 4
 										{"exclude", "itemID", 147636 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2553,9 +2553,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 6 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 6	},	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -662, 6	},	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -662, 6 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -662, 6	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -662, 6	},	-- Season 7
 										{"exclude", "itemID", 149458 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2576,9 +2576,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 12 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 12 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -662, 12 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -662, 12 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -662, 12 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -662, 12 },	-- Season 7
 										{"exclude", "itemID", 149460 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2599,9 +2599,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 11 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 11 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -662, 11 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -662, 11 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -662, 11 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -662, 11 },	-- Season 7
 										{"exclude", "itemID", 149456 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2622,9 +2622,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 3 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 3 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -662, 3 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -662, 3 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -662, 3 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -662, 3 },	-- Season 7
 										{"exclude", "itemID", 149454 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2645,9 +2645,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 8 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 8	},	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -662, 8	},	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -662, 8 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -662, 8	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -662, 8	},	-- Season 7
 										{"exclude", "itemID", 149477 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2668,9 +2668,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 10 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 10 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -662, 10 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -662, 10 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -662, 10 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -662, 10 },	-- Season 7
 										{"exclude", "itemID", 149465 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2691,9 +2691,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 2 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 2	},	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -662, 2	},	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -662, 2 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -662, 2	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -662, 2	},	-- Season 7
 										{"exclude", "itemID", 149475 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2714,9 +2714,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 5 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 5	},	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -662, 5	},	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -662, 5 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -662, 5	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -662, 5	},	-- Season 7
 										{"exclude", "itemID", 149473 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2737,9 +2737,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 4 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 4	},	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -662, 4	},	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -662, 4 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -662, 4	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -662, 4	},	-- Season 7
 										{"exclude", "itemID", 149467 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2760,9 +2760,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 7 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 7 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -662, 7 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -662, 7 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -662, 7 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -662, 7 },	-- Season 7
 										{"exclude", "itemID", 149470 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2783,9 +2783,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 9 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 9	},	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -662, 9	},	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -662, 9 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -662, 9	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -662, 9	},	-- Season 7
 										{"exclude", "itemID", 149462 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -2806,9 +2806,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 1 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 1	},	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -662, 1	},	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -662, 1 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -662, 1	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -662, 1	},	-- Season 7
 										{"exclude", "itemID", 149469 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3173,8 +3173,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 6 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 6 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -660, 6 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -660, 6 },	-- Season 2
 										{"exclude", "itemID", 146164 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3195,8 +3195,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 12 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 12 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -660, 12 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -660, 12 },	-- Season 2
 										{"exclude", "itemID", 146264 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3217,8 +3217,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 11 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 11 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -660, 11 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -660, 11 },	-- Season 2
 										{"exclude", "itemID", 146168 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3239,8 +3239,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 3 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 3 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -660, 3 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -660, 3 },	-- Season 2
 										{"exclude", "itemID", 146154 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3261,8 +3261,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 8 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 8 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -660, 8 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -660, 8 },	-- Season 2
 										{"exclude", "itemID", 146156 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3283,8 +3283,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 10 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 10 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -660, 10 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -660, 10 },	-- Season 2
 										{"exclude", "itemID", 146170 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3305,8 +3305,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 2 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 2 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -660, 2 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -660, 2 },	-- Season 2
 										{"exclude", "itemID", 146166 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3327,8 +3327,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 5 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 5 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -660, 5 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -660, 5 },	-- Season 2
 										{"exclude", "itemID", 146158 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3349,8 +3349,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 4 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 4 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -660, 4 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -660, 4 },	-- Season 2
 										{"exclude", "itemID", 146172 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3371,8 +3371,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 7 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 7 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -660, 7 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -660, 7 },	-- Season 2
 										{"exclude", "itemID", 146152 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3393,8 +3393,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 9 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 9 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -660, 9 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -660, 9 },	-- Season 2
 										{"exclude", "itemID", 146160 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3415,8 +3415,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 1 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 1 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -660, 1 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -660, 1 },	-- Season 2
 										{"exclude", "itemID", 146162 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3439,8 +3439,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 6 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 6 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -660, 6 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -660, 6 },	-- Season 4
 										{"exclude", "itemID", 147677 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3461,8 +3461,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 12 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 12 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -660, 12 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -660, 12 },	-- Season 4
 										{"exclude", "itemID", 147680 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3483,8 +3483,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 11 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 11 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -660, 11 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -660, 11 },	-- Season 4
 										{"exclude", "itemID", 147675 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3505,8 +3505,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 3 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 3 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -660, 3 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -660, 3 },	-- Season 4
 										{"exclude", "itemID", 147689 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3527,8 +3527,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 8 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 8 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -660, 8 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -660, 8 },	-- Season 4
 										{"exclude", "itemID", 147696 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3549,8 +3549,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 10 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 10 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -660, 10 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -660, 10 },	-- Season 4
 										{"exclude", "itemID", 147684 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3571,8 +3571,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 2 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 2 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -660, 2 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -660, 2 },	-- Season 4
 										{"exclude", "itemID", 147693 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3593,8 +3593,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 5 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 5 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -660, 5 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -660, 5 },	-- Season 4
 										{"exclude", "itemID", 147688 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3615,8 +3615,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 4 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 4 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -660, 4 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -660, 4 },	-- Season 4
 										{"exclude", "itemID", 147685 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3637,8 +3637,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 7 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 7 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -660, 7 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -660, 7 },	-- Season 4
 										{"exclude", "itemID", 147674 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3659,8 +3659,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 9 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 9 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -660, 9 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -660, 9 },	-- Season 4
 										{"exclude", "itemID", 147682 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3681,8 +3681,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 1 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 1 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -660, 1 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -660, 1 },	-- Season 4
 										{"exclude", "itemID", 147692 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3705,9 +3705,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 6 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 6 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 6 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -660, 6 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -660, 6 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -660, 6 },	-- Season 7
 										{"exclude", "itemID", 150252 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3728,9 +3728,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 12 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 12 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 12 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -660, 12 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -660, 12 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -660, 12 },	-- Season 7
 										{"exclude", "itemID", 150255 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3751,9 +3751,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 11 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 11 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 11 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -660, 11 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -660, 11 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -660, 11 },	-- Season 7
 										{"exclude", "itemID", 150250 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3774,9 +3774,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 3 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 3 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 3 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -660, 3 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -660, 3 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -660, 3 },	-- Season 7
 										{"exclude", "itemID", 150264 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3797,9 +3797,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 8 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 8 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 8 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -660, 8 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -660, 8 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -660, 8 },	-- Season 7
 										{"exclude", "itemID", 150271 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3820,9 +3820,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 10 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 10 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 10 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -660, 10 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -660, 10 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -660, 10 },	-- Season 7
 										{"exclude", "itemID", 150259 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3843,9 +3843,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 2 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 2 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 2 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -660, 2 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -660, 2 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -660, 2 },	-- Season 7
 										{"exclude", "itemID", 150268 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3866,9 +3866,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 5 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 5 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 5 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -660, 5 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -660, 5 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -660, 5 },	-- Season 7
 										{"exclude", "itemID", 150263 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3889,9 +3889,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 4 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 4 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 4 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -660, 4 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -660, 4 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -660, 4 },	-- Season 7
 										{"exclude", "itemID", 150260 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3912,9 +3912,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 7 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 7 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 7 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -660, 7 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -660, 7 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -660, 7 },	-- Season 7
 										{"exclude", "itemID", 150249 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3935,9 +3935,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 9 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 9 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 9 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -660, 9 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -660, 9 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -660, 9 },	-- Season 7
 										{"exclude", "itemID", 150257 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3958,9 +3958,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 1 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 1 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 1 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -660, 1 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -660, 1 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -660, 1 },	-- Season 7
 										{"exclude", "itemID", 150267 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -3983,8 +3983,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 6 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 6 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -661, 6 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -661, 6 },	-- Season 2
 										{"exclude", "itemID", 146132 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4005,8 +4005,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 12 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 12 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -661, 12 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -661, 12 },	-- Season 2
 										{"exclude", "itemID", 146262 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4027,8 +4027,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 11 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 11 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -661, 11 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -661, 11 },	-- Season 2
 										{"exclude", "itemID", 146140 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4049,8 +4049,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 3 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 3 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -661, 3 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -661, 3 },	-- Season 2
 										{"exclude", "itemID", 146138 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4071,8 +4071,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 8 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 8 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -661, 8 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -661, 8 },	-- Season 2
 										{"exclude", "itemID", 146146 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4093,8 +4093,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 10 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 10 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -661, 10 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -661, 10 },	-- Season 2
 										{"exclude", "itemID", 146142 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4115,8 +4115,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 2 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 2 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -661, 2 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -661, 2 },	-- Season 2
 										{"exclude", "itemID", 146134 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4137,8 +4137,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 5 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 5 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -661, 5 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -661, 5 },	-- Season 2
 										{"exclude", "itemID", 146148 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4159,8 +4159,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 4 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 4 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -661, 4 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -661, 4 },	-- Season 2
 										{"exclude", "itemID", 146144 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4181,8 +4181,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 7 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 7 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -661, 7 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -661, 7 },	-- Season 2
 										{"exclude", "itemID", 146136 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4203,8 +4203,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 9 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 9 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -661, 9 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -661, 9 },	-- Season 2
 										{"exclude", "itemID", 146150 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4225,8 +4225,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 1 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 1 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_ALLIANCE, -661, 1 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_ALLIANCE, -661, 1 },	-- Season 2
 										{"exclude", "itemID", 146130 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4249,8 +4249,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 6 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 6 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -661, 6 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -661, 6 },	-- Season 4
 										{"exclude", "itemID", 147650 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4271,8 +4271,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 12 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 12 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -661, 12 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -661, 12 },	-- Season 4
 										{"exclude", "itemID", 147651 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4293,8 +4293,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 11 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 11 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -661, 11 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -661, 11 },	-- Season 4
 										{"exclude", "itemID", 147647 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4315,8 +4315,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 3 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 3 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -661, 3 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -661, 3 },	-- Season 4
 										{"exclude", "itemID", 147646}, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4337,8 +4337,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 8 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 8 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -661, 8 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -661, 8 },	-- Season 4
 										{"exclude", "itemID", 147668 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4359,8 +4359,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 10 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 10 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -661, 10 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -661, 10 },	-- Season 4
 										{"exclude", "itemID", 147656 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4381,8 +4381,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 2 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 2 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -661, 2 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -661, 2 },	-- Season 4
 										{"exclude", "itemID", 147665 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4403,8 +4403,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 5 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 5 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -661, 5 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -661, 5 },	-- Season 4
 										{"exclude", "itemID", 147663 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4425,8 +4425,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 4 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 4 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -661, 4 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -661, 4 },	-- Season 4
 										{"exclude", "itemID", 147657 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4447,8 +4447,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 7 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 7 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -661, 7 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -661, 7 },	-- Season 4
 										{"exclude", "itemID", 147661 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4469,8 +4469,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 9 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 9 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -661, 9 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -661, 9 },	-- Season 4
 										{"exclude", "itemID", 147653 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4491,8 +4491,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 1 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 1 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_ALLIANCE, -661, 1 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_ALLIANCE, -661, 1 },	-- Season 4
 										{"exclude", "itemID", 147660 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4515,9 +4515,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 6 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 6 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 6 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -661, 6 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -661, 6 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -661, 6 },	-- Season 7
 										{"exclude", "itemID", 149483 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4538,9 +4538,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 12 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 12 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 12 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -661, 12 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -661, 12 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -661, 12 },	-- Season 7
 										{"exclude", "itemID", 149484 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4561,9 +4561,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 11 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 11 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 11 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -661, 11 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -661, 11 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -661, 11 },	-- Season 7
 										{"exclude", "itemID", 149480 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4584,9 +4584,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 3 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 3 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 3 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -661, 3 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -661, 3 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -661, 3 },	-- Season 7
 										{"exclude", "itemID", 149479 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4607,9 +4607,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 8 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 8 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 8 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -661, 8 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -661, 8 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -661, 8 },	-- Season 7
 										{"exclude", "itemID", 149501 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4630,9 +4630,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 10 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 10 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 10 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -661, 10 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -661, 10 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -661, 10 },	-- Season 7
 										{"exclude", "itemID", 149489 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4653,9 +4653,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 2 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 2 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 2 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -661, 2 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -661, 2 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -661, 2 },	-- Season 7
 										{"exclude", "itemID", 149498 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4676,9 +4676,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 5 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 5 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 5 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -661, 5 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -661, 5 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -661, 5 },	-- Season 7
 										{"exclude", "itemID", 149496 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4699,9 +4699,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 4 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 4 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 4 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -661, 4 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -661, 4 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -661, 4 },	-- Season 7
 										{"exclude", "itemID", 149490 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4722,9 +4722,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 7 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 7 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 7 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -661, 7 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -661, 7 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -661, 7 },	-- Season 7
 										{"exclude", "itemID", 149494 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4745,9 +4745,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 9 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 9 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 9 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -661, 9 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -661, 9 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -661, 9 },	-- Season 7
 										{"exclude", "itemID", 149486 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4768,9 +4768,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 1 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 1 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 1 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_ALLIANCE, -661, 1 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_ALLIANCE, -661, 1 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_ALLIANCE, -661, 1 },	-- Season 7
 										{"exclude", "itemID", 149493 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -4799,7 +4799,7 @@ _.Zones =
 								i(149424, {	-- Helm of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -4808,7 +4808,7 @@ _.Zones =
 								i(149427, {	-- Pauldrons of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -4817,7 +4817,7 @@ _.Zones =
 								i(149432, {	-- Cloak of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -4826,7 +4826,7 @@ _.Zones =
 								i(149425, {	-- Chest of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -4835,7 +4835,7 @@ _.Zones =
 								i(149431, {	-- Bracers of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WRIST" },
@@ -4844,7 +4844,7 @@ _.Zones =
 								i(149428, {	-- Gloves of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -4853,7 +4853,7 @@ _.Zones =
 								i(149429, {	-- Cinch of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -4862,7 +4862,7 @@ _.Zones =
 								i(149426, {	-- Leggings of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -4871,7 +4871,7 @@ _.Zones =
 								i(149430, {	-- Treads of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },
@@ -4880,7 +4880,7 @@ _.Zones =
 								i(149406, {	-- Helm of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -4889,7 +4889,7 @@ _.Zones =
 								i(149409, {	-- Pauldrons of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -4898,7 +4898,7 @@ _.Zones =
 								i(149414, {	-- Cloak of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -4907,7 +4907,7 @@ _.Zones =
 								i(149407, {	-- Chest of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -4916,7 +4916,7 @@ _.Zones =
 								i(149413, {	-- Bracers of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WRIST" },
@@ -4925,7 +4925,7 @@ _.Zones =
 								i(149410, {	-- Gloves of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -4934,7 +4934,7 @@ _.Zones =
 								i(149411, {	-- Cinch of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -4943,7 +4943,7 @@ _.Zones =
 								i(149408, {	-- Leggings of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -4952,7 +4952,7 @@ _.Zones =
 								i(149412, {	-- Treads of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },
@@ -4961,7 +4961,7 @@ _.Zones =
 								i(149388, {	-- Helm of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -4970,7 +4970,7 @@ _.Zones =
 								i(149391, {	-- Pauldrons of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -4979,7 +4979,7 @@ _.Zones =
 								i(149396, {	-- Cloak of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -4988,7 +4988,7 @@ _.Zones =
 								i(149389, {	-- Chest of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -4997,7 +4997,7 @@ _.Zones =
 								i(149395, {	-- Bracers of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WRIST" },
@@ -5006,7 +5006,7 @@ _.Zones =
 								i(149392, {	-- Gloves of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -5015,7 +5015,7 @@ _.Zones =
 								i(149393, {	-- Cinch of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -5024,7 +5024,7 @@ _.Zones =
 								i(149390, {	-- Leggings of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -5033,7 +5033,7 @@ _.Zones =
 								i(149394, {	-- Treads of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },
@@ -5047,7 +5047,7 @@ _.Zones =
 								i(149433, {	-- Helm of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -5056,7 +5056,7 @@ _.Zones =
 								i(149436, {	-- Pauldrons of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -5065,7 +5065,7 @@ _.Zones =
 								i(149441, {	-- Cloak of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -5074,7 +5074,7 @@ _.Zones =
 								i(149434, {	-- Chest of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -5083,7 +5083,7 @@ _.Zones =
 								i(149440, {	-- Bracers of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WRIST" },
@@ -5092,7 +5092,7 @@ _.Zones =
 								i(149437, {	-- Gloves of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -5101,7 +5101,7 @@ _.Zones =
 								i(149438, {	-- Cinch of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -5110,7 +5110,7 @@ _.Zones =
 								i(149435, {	-- Leggings of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -5119,7 +5119,7 @@ _.Zones =
 								i(149439, {	-- Treads of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },
@@ -5128,7 +5128,7 @@ _.Zones =
 								i(149415, {	-- Helm of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -5137,7 +5137,7 @@ _.Zones =
 								i(149418, {	-- Pauldrons of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -5146,7 +5146,7 @@ _.Zones =
 								i(149423, {	-- Cloak of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -5155,7 +5155,7 @@ _.Zones =
 								i(149416, {	-- Chest of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -5164,7 +5164,7 @@ _.Zones =
 								i(149422, {	-- Bracers of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WRIST" },
@@ -5173,7 +5173,7 @@ _.Zones =
 								i(149419, {	-- Gloves of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -5182,7 +5182,7 @@ _.Zones =
 								i(149420, {	-- Cinch of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -5191,7 +5191,7 @@ _.Zones =
 								i(149417, {	-- Leggings of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -5200,7 +5200,7 @@ _.Zones =
 								i(149421, {	-- Treads of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },
@@ -5209,7 +5209,7 @@ _.Zones =
 								i(149397, {	-- Helm of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -5218,7 +5218,7 @@ _.Zones =
 								i(149400, {	-- Pauldrons of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -5227,7 +5227,7 @@ _.Zones =
 								i(149405, {	-- Cloak of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -5236,7 +5236,7 @@ _.Zones =
 								i(149398, {	-- Chest of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -5245,7 +5245,7 @@ _.Zones =
 								i(149404, {	-- Bracers of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WRIST" },
@@ -5254,7 +5254,7 @@ _.Zones =
 								i(149401, {	-- Gloves of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -5263,7 +5263,7 @@ _.Zones =
 								i(149402, {	-- Cinch of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -5272,7 +5272,7 @@ _.Zones =
 								i(149399, {	-- Leggings of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -5281,7 +5281,7 @@ _.Zones =
 								i(149403, {	-- Treads of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9914, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_ALLIANCE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },
@@ -5431,8 +5431,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 8 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 8 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -662, 8 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -662, 8 },	-- Season 2
 										{"exclude", "itemID", 146221 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5453,8 +5453,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 12 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 12 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -662, 12 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -662, 12 },	-- Season 2
 										{"exclude", "itemID", 146271 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5475,8 +5475,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 11 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 11 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -662, 11 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -662, 11 },	-- Season 2
 										{"exclude", "itemID", 146229 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5497,8 +5497,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 3 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 3 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -662, 3 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -662, 3 },	-- Season 2
 										{"exclude", "itemID", 146227 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5519,8 +5519,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 8 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 8 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -662, 8 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -662, 8 },	-- Season 2
 										{"exclude", "itemID", 146235 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5541,8 +5541,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 10 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 10 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -662, 10 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -662, 10 },	-- Season 2
 										{"exclude", "itemID", 146231 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5563,8 +5563,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 2 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 2 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -662, 2 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -662, 2 },	-- Season 2
 										{"exclude", "itemID", 146223 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5585,8 +5585,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 5 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 5 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -662, 5 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -662, 5 },	-- Season 2
 										{"exclude", "itemID", 146237 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5607,8 +5607,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 11 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 11 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -662, 11 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -662, 11 },	-- Season 2
 										{"exclude", "itemID", 146233 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5629,8 +5629,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 7 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 7 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -662, 7 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -662, 7 },	-- Season 2
 										{"exclude", "itemID", 146225 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5651,8 +5651,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 9 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 9 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -662, 9 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -662, 9 },	-- Season 2
 										{"exclude", "itemID", 146239 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5673,8 +5673,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9913, -662, 1 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9913, -662, 1 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, FACTION_HEADER_HORDE, -662, 1 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, FACTION_HEADER_HORDE, -662, 1 },	-- Season 2
 										{"exclude", "itemID", 146219 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5697,8 +5697,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 6 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 6	},	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -662, 6 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -662, 6	},	-- Season 4
 										{"exclude", "itemID", 147626 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5719,8 +5719,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 12 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 12 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -662, 12 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -662, 12 },	-- Season 4
 										{"exclude", "itemID", 147628 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5741,8 +5741,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 11 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 11 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -662, 11 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -662, 11 },	-- Season 4
 										{"exclude", "itemID", 147624 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5763,8 +5763,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 3 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 3 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -662, 3 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -662, 3 },	-- Season 4
 										{"exclude", "itemID", 147622 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5785,8 +5785,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 8 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 8	},	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -662, 8 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -662, 8	},	-- Season 4
 										{"exclude", "itemID", 147643 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5807,8 +5807,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 10 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 10 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -662, 10 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -662, 10 },	-- Season 4
 										{"exclude", "itemID", 147631 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5829,8 +5829,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 2 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 2	},	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -662, 2 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -662, 2	},	-- Season 4
 										{"exclude", "itemID", 147641 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5851,8 +5851,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 5 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 5	},	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -662, 5 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -662, 5	},	-- Season 4
 										{"exclude", "itemID", 147639 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5873,8 +5873,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 4 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 4	},	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -662, 4 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -662, 4	},	-- Season 4
 										{"exclude", "itemID", 147633 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5895,8 +5895,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 7 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 7 },	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -662, 7 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -662, 7 },	-- Season 4
 										{"exclude", "itemID", 147638 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5917,8 +5917,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 9 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 9	},	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -662, 9 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -662, 9	},	-- Season 4
 										{"exclude", "itemID", 147630 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5939,8 +5939,8 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 1 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 1	},	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -684, FACTION_HEADER_HORDE, -662, 1 },	-- Season 3
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, FACTION_HEADER_HORDE, -662, 1	},	-- Season 4
 										{"exclude", "itemID", 147635 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5963,9 +5963,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 6 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 6 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 6 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -662, 6 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -662, 6 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -662, 6 },	-- Season 7
 										{"exclude", "itemID", 149459 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5986,9 +5986,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 12 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 12 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 12 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -662, 12 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -662, 12 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -662, 12 },	-- Season 7
 										{"exclude", "itemID", 149461 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -6009,9 +6009,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 11 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 11 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 11 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -662, 11 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -662, 11 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -662, 11 },	-- Season 7
 										{"exclude", "itemID", 149457 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -6032,9 +6032,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 3 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 3 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 3 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -662, 3 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -662, 3 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -662, 3 },	-- Season 7
 										{"exclude", "itemID", 149455 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -6055,9 +6055,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 8 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 8	},	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 8	},	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -662, 8 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -662, 8	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -662, 8	},	-- Season 7
 										{"exclude", "itemID", 149476 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -6078,9 +6078,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 10 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 10 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 10 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -662, 10 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -662, 10 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -662, 10 },	-- Season 7
 										{"exclude", "itemID", 149464 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -6101,9 +6101,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 2 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 2 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 2 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -662, 2 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -662, 2 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -662, 2 },	-- Season 7
 										{"exclude", "itemID", 149474 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -6124,9 +6124,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 5 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 5	},	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 5	},	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -662, 5 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -662, 5	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -662, 5	},	-- Season 7
 										{"exclude", "itemID", 149472 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -6147,9 +6147,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 4 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 4	},	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 4 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -662, 4 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -662, 4	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -662, 4 },	-- Season 7
 										{"exclude", "itemID", 149466 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -6170,9 +6170,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 7 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 7 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 7 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -662, 7 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -662, 7 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -662, 7 },	-- Season 7
 										{"exclude", "itemID", 149471 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -6193,9 +6193,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 9 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 9	},	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 9	},	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -662, 9 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -662, 9	},	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -662, 9	},	-- Season 7
 										{"exclude", "itemID", 149463 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -6216,9 +6216,9 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -662, 1 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -662, 1 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -662, 1 },	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, FACTION_HEADER_HORDE, -662, 1 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, FACTION_HEADER_HORDE, -662, 1 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, FACTION_HEADER_HORDE, -662, 1 },	-- Season 7
 										{"exclude", "itemID", 149468 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -6333,7 +6333,7 @@ _.Zones =
 								i(149424, {	-- Helm of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -6342,7 +6342,7 @@ _.Zones =
 								i(149427, {	-- Pauldrons of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -6351,7 +6351,7 @@ _.Zones =
 								i(149432, {	-- Cloak of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -6360,7 +6360,7 @@ _.Zones =
 								i(149425, {	-- Chest of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -6369,7 +6369,7 @@ _.Zones =
 								i(149431, {	-- Bracers of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WRIST" },
@@ -6378,7 +6378,7 @@ _.Zones =
 								i(149428, {	-- Gloves of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -6387,7 +6387,7 @@ _.Zones =
 								i(149429, {	-- Cinch of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -6396,7 +6396,7 @@ _.Zones =
 								i(149426, {	-- Leggings of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -6405,7 +6405,7 @@ _.Zones =
 								i(149430, {	-- Treads of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },
@@ -6414,7 +6414,7 @@ _.Zones =
 								i(149406, {	-- Helm of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -6423,7 +6423,7 @@ _.Zones =
 								i(149409, {	-- Pauldrons of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -6432,7 +6432,7 @@ _.Zones =
 								i(149414, {	-- Cloak of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -6441,7 +6441,7 @@ _.Zones =
 								i(149407, {	-- Chest of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -6450,7 +6450,7 @@ _.Zones =
 								i(149413, {	-- Bracers of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WRIST" },
@@ -6459,7 +6459,7 @@ _.Zones =
 								i(149410, {	-- Gloves of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -6468,7 +6468,7 @@ _.Zones =
 								i(149411, {	-- Cinch of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -6477,7 +6477,7 @@ _.Zones =
 								i(149408, {	-- Leggings of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -6486,7 +6486,7 @@ _.Zones =
 								i(149412, {	-- Treads of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },
@@ -6495,7 +6495,7 @@ _.Zones =
 								i(149388, {	-- Helm of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -6504,7 +6504,7 @@ _.Zones =
 								i(149391, {	-- Pauldrons of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -6513,7 +6513,7 @@ _.Zones =
 								i(149396, {	-- Cloak of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -6522,7 +6522,7 @@ _.Zones =
 								i(149389, {	-- Chest of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -6531,7 +6531,7 @@ _.Zones =
 								i(149395, {	-- Bracers of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WRIST" },
@@ -6540,7 +6540,7 @@ _.Zones =
 								i(149392, {	-- Gloves of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -6549,7 +6549,7 @@ _.Zones =
 								i(149393, {	-- Cinch of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -6558,7 +6558,7 @@ _.Zones =
 								i(149390, {	-- Leggings of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -6567,7 +6567,7 @@ _.Zones =
 								i(149394, {	-- Treads of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -661 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -661 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },
@@ -6581,7 +6581,7 @@ _.Zones =
 								i(149433, {	-- Helm of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -6590,7 +6590,7 @@ _.Zones =
 								i(149436, {	-- Pauldrons of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -6599,7 +6599,7 @@ _.Zones =
 								i(149441, {	-- Cloak of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -6608,7 +6608,7 @@ _.Zones =
 								i(149434, {	-- Chest of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -6617,7 +6617,7 @@ _.Zones =
 								i(149440, {	-- Bracers of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -6626,7 +6626,7 @@ _.Zones =
 								i(149437, {	-- Gloves of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -6635,7 +6635,7 @@ _.Zones =
 								i(149438, {	-- Cinch of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -6644,7 +6644,7 @@ _.Zones =
 								i(149435, {	-- Leggings of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -6653,7 +6653,7 @@ _.Zones =
 								i(149439, {	-- Treads of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -688, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -688, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },
@@ -6662,7 +6662,7 @@ _.Zones =
 								i(149415, {	-- Helm of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -6671,7 +6671,7 @@ _.Zones =
 								i(149418, {	-- Pauldrons of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -6680,7 +6680,7 @@ _.Zones =
 								i(149423, {	-- Cloak of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -6689,7 +6689,7 @@ _.Zones =
 								i(149416, {	-- Chest of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -6698,7 +6698,7 @@ _.Zones =
 								i(149422, {	-- Bracers of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WRIST" },
@@ -6707,7 +6707,7 @@ _.Zones =
 								i(149419, {	-- Gloves of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -6716,7 +6716,7 @@ _.Zones =
 								i(149420, {	-- Cinch of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -6725,7 +6725,7 @@ _.Zones =
 								i(149417, {	-- Leggings of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -6734,7 +6734,7 @@ _.Zones =
 								i(149421, {	-- Treads of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -687, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -687, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },
@@ -6743,7 +6743,7 @@ _.Zones =
 								i(149397, {	-- Helm of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -6752,7 +6752,7 @@ _.Zones =
 								i(149400, {	-- Pauldrons of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -6761,7 +6761,7 @@ _.Zones =
 								i(149405, {	-- Cloak of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -6770,7 +6770,7 @@ _.Zones =
 								i(149398, {	-- Chest of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -6779,7 +6779,7 @@ _.Zones =
 								i(149404, {	-- Bracers of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WRIST" },
@@ -6788,7 +6788,7 @@ _.Zones =
 								i(149401, {	-- Gloves of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -6797,7 +6797,7 @@ _.Zones =
 								i(149402, {	-- Cinch of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -6806,7 +6806,7 @@ _.Zones =
 								i(149399, {	-- Leggings of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -6815,7 +6815,7 @@ _.Zones =
 								i(149403, {	-- Treads of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", -9982, -686, -9913, -662 },
+										{"sub", "pvp_gear_faction_base", -9982, -686, FACTION_HEADER_HORDE, -662 },
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },

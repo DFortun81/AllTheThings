@@ -460,7 +460,7 @@ _.PVP =
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, FACTION_HEADER_ALLIANCE, -660 }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -476,7 +476,7 @@ _.PVP =
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, FACTION_HEADER_HORDE, -660 }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -492,7 +492,7 @@ _.PVP =
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, FACTION_HEADER_HORDE, -660 }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -509,7 +509,7 @@ _.PVP =
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, FACTION_HEADER_ALLIANCE, -660 }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -526,7 +526,7 @@ _.PVP =
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, FACTION_HEADER_ALLIANCE, -660 }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -542,7 +542,7 @@ _.PVP =
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, FACTION_HEADER_HORDE, -660 }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -559,7 +559,7 @@ _.PVP =
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, FACTION_HEADER_ALLIANCE, -660 }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -580,12 +580,12 @@ _.PVP =
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, FACTION_HEADER_ALLIANCE, -660 }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, FACTION_HEADER_HORDE, -660 }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -601,7 +601,7 @@ _.PVP =
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, FACTION_HEADER_HORDE, -660 }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -618,7 +618,7 @@ _.PVP =
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, FACTION_HEADER_ALLIANCE, -660 }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -635,7 +635,7 @@ _.PVP =
 							i(170073),	-- Dented Ashmaul Strongbox
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, FACTION_HEADER_ALLIANCE, -660 }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -651,7 +651,7 @@ _.PVP =
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, FACTION_HEADER_HORDE, -660 }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
@@ -667,7 +667,7 @@ _.PVP =
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
-								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
+								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, FACTION_HEADER_HORDE, -660 }, },
 								["u"] = REMOVED_FROM_GAME,
 							}),
 						},

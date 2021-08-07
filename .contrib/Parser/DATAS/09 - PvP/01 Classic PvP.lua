@@ -390,7 +390,7 @@ _.PVP =
 		n(-663, {	-- Classic Alliance Honor System
 			["description"] = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.|r",
 			["g"] = {
-				n(-9914, {	-- Alliance
+				n(FACTION_HEADER_ALLIANCE, {
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						-- Alliance Cloth & Leather
@@ -573,7 +573,7 @@ _.PVP =
 						}),
 					},
 				}),
-				n(-9913, {	-- Horde
+				n(FACTION_HEADER_HORDE, {
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						-- Horde cloth + leather

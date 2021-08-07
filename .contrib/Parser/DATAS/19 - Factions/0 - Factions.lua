@@ -5,7 +5,7 @@
 _.Factions =
 {
 	faction(1168),	-- Guild
-	n(-9914, {	-- Alliance
+	n(FACTION_HEADER_ALLIANCE, {
 		n(-6014, sharedData({["races"] = ALLIANCE_ONLY,}, {	-- Cities
 			faction(69),	-- Darnassus
 			faction(930),	-- Exodar
@@ -59,7 +59,7 @@ _.Factions =
 			faction(2400),	-- Waveblade Ankoan
 		})),
 	}),
-	n(-9913, {	-- Horde
+	n(FACTION_HEADER_HORDE, {
 		n(-6014, sharedData({["races"] = HORDE_ONLY,}, {	-- Cities
 			faction(1133),	-- Bilgewater Cartel
 			faction(530),	-- Darkspear Trolls
