@@ -11680,6 +11680,8 @@ UpdateGroups = function(parent, g, window)
 				-- some objects are able to populate themselves via OnUpdate and track if needing to do another update via 'doUpdate'
 				if window and group.doUpdate then window.doUpdate = true; end
 			else
+				group.total = 0;
+				group.progress = 0;
 				UpdateGroup(parent, group, window);
 			end
 		end
