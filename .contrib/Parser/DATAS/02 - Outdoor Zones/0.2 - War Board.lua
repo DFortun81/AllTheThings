@@ -4,9 +4,8 @@
 
 _.Zones =
 {
-	i(155915, {	-- Special Duty Assignments
-		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",
-		["collectible"] = false,
+	o(206109, {	-- Warchief's Command Board
+		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
 		["races"] = HORDE_ONLY,
 		["g"] = {
 			--[[
@@ -273,9 +272,8 @@ _.Zones =
 			}),
 		},
 	}),
-	i(156474, {	-- Special Duty Assignments
-		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",
-		["collectible"] = false,
+	o(206111, {	-- Hero's Call Board
+		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
 		["races"] = ALLIANCE_ONLY,
 		["g"] = {
 			--[[
