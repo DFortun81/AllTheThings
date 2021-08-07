@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(21, {	-- Silverpine Forest
+		m(SILVERPINE_FOREST, {
 			n(ACHIEVEMENTS, {
 				ach(4894, {	-- Silverpine Forest Quests
 					["races"] = HORDE_ONLY,

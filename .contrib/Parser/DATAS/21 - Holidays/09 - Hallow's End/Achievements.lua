@@ -479,12 +479,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { SILVERMOON_CITY },
 										}),
 										crit(19, {	-- Silverpine Forest, Forsaken Rear Guard
-											["coord"] = { 44.3, 20.4, 21 },
-											["maps"] = { 21 },	-- Silverpine Forest
+											["coord"] = { 44.3, 20.4, SILVERPINE_FOREST },
+											["maps"] = { SILVERPINE_FOREST },
 										}),
 										crit(20, {	-- Silverpine Forest, The Sepulcher
-											["coord"] = { 46.4, 42.8, 21 },
-											["maps"] = { 21 },	-- Silverpine Forest
+											["coord"] = { 46.4, 42.8, SILVERPINE_FOREST },
+											["maps"] = { SILVERPINE_FOREST },
 										}),
 										crit(21, {	-- Swamp of Sorrows, Bogpaddle
 											["coord"] = { 71.7, 14.0, SWAMP_OF_SORROWS },

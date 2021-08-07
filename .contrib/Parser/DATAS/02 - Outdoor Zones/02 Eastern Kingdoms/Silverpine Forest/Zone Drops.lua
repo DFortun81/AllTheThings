@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(21, {	-- Silverpine Forest
+		m(SILVERPINE_FOREST, {
 			n(ZONEDROPS, {
 				n(3578, {	-- Ambermill Miner
 					["races"] = HORDE_ONLY,

@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(21, {	-- Silverpine Forest
+		m(SILVERPINE_FOREST, {
 			n(QUESTS, {
 				q(27577, {	-- 7th Legion Battle Plans
 					["provider"] = { "n", 45879 },	-- Lord Walden
-					["coord"] = { 51.8, 65.0, 21 },
+					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27548,	-- Lessons in Fear
@@ -47,7 +47,7 @@ _.Zones =
 				}),
 				q(27510, {	-- A Wolf in Bear's Clothing
 					["provider"] = { "n", 45631 },	-- High Warlord Cromush
-					["coord"] = { 52.2, 66.3, 21 },
+					["coord"] = { 52.2, 66.3, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27484 },	-- Only One May Enter
 					["g"] = {
@@ -59,7 +59,7 @@ _.Zones =
 				}),
 				q(26992, {	-- Agony Abounds
 					["provider"] = { "n", 44778 },	-- Apothecary Witherbloom
-					["coord"] = { 56.7, 9.1, 21 },
+					["coord"] = { 56.7, 9.1, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26965 },	-- The Warchief Cometh
 				}),
@@ -108,7 +108,7 @@ _.Zones =
 				}),
 				q(27056, {	-- Belmont's Report
 					["provider"] = { "n", 44789 },	-- Deathstalker Commander Belmont
-					["coord"] = { 58.0, 8.9, 21 },
+					["coord"] = { 58.0, 8.9, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27045 },	-- Waiting to Exsanguinate
 				}),
@@ -126,13 +126,13 @@ _.Zones =
 				}),
 				q(27474, {	-- Breaking the Barrier
 					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.8, 65.0, 21 },
+					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27472 },	-- Rise, Godfrey
 				}),
 				q(27601, {	-- Cities in Dust
 					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.8, 65.0, 21 },
+					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27594 },	-- On Her Majesty's Secret Service
 					["g"] = {
@@ -144,13 +144,13 @@ _.Zones =
 				}),
 				q(27194, {	-- Cornered and Crushed!
 					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 44.8, 41.6, 21 },
+					["coord"] = { 44.8, 41.6, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27193 },	-- Seek and Destroy
 				}),
 				q(27476, {	-- Dalar Dawnweaver
 					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.8, 65.0, 21 },
+					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27474,	-- Breaking the Barrier
@@ -175,12 +175,12 @@ _.Zones =
 						26989,	-- The Gilneas Liberation Front
 					},
 					["provider"] = { "n", 44789 },	-- Deathstalker Commander Belmont
-					["coord"] = { 58.0, 8.9, 21 },
+					["coord"] = { 58.0, 8.9, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27094, {	-- Deeper into Darkness
 					["provider"] = { "n", 44917 },	-- Warlord Torok
-					["coord"] = { 44.0, 21.3, 21 },
+					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27095 },	-- Skitterweb Menace
 					["g"] = {
@@ -192,7 +192,7 @@ _.Zones =
 				}),
 				q(27746, {	-- Empire of Dirt
 					["provider"] = { "n", 46124 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 45.3, 84.4, 21 },
+					["coord"] = { 45.3, 84.4, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27601 },	-- Cities in Dust
 				}),
@@ -203,7 +203,7 @@ _.Zones =
 				}),
 				q(27181, {	-- Excising the Taint
 					["provider"] = { "n", 45195 },	-- Bloodfang Stalker
-					["coord"] = { 46.1, 50.2, 21 },
+					["coord"] = { 46.1, 50.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["description"] = "Available during or after |cFFFFD700Honor the Dead|r.",
 					["sourceQuests"] = { 27180 },	-- Honor the Dead
@@ -223,19 +223,19 @@ _.Zones =
 				}),
 				q(27073, {	-- Give 'em Hell!
 					["provider"] = { "n", 44917 },	-- Warlord Torok
-					["coord"] = { 43.9, 21.2, 21 },
+					["coord"] = { 43.9, 21.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27065 },	-- The Warchief's Fleet
 				}),
 				q(26995, {	-- Guts and Gore
 					["provider"] = { "n", 44784 },	-- High Apothecary Shana T'veen
-					["coord"] = { 56.2, 8.3, 21 },
+					["coord"] = { 56.2, 8.3, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26965 },	-- The Warchief Cometh
 				}),
 				q(27226, {	-- Hair of the Dog
 					["provider"] = { "n", 44917 },	-- Warlord Torok
-					["coord"] = { 45.7, 41.9, 21 },
+					["coord"] = { 45.7, 41.9, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27098 },	-- Lordaeron
 					["g"] = {
@@ -247,7 +247,7 @@ _.Zones =
 				}),
 				q(27180, {	-- Honor the Dead
 					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 44.9, 41.6, 21 },
+					["coord"] = { 44.9, 41.6, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27098 },	-- Lordaeron
 				}),
@@ -260,7 +260,7 @@ _.Zones =
 				}),
 				q(26998, {	-- Iterating Upon Success
 					["provider"] = { "n", 44784 },	-- High Apothecary Shana T'veen
-					["coord"] = { 56.2, 8.4, 21 },
+					["coord"] = { 56.2, 8.4, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26992,	-- Agony Abounds
@@ -275,7 +275,7 @@ _.Zones =
 				}),
 				q(27088, {	-- It's Only Poisonous if You Ingest It
 					["provider"] = { "n", 44912 },	-- Apothecary Wormcrud
-					["coord"] = { 44.7, 20.9, 21 },
+					["coord"] = { 44.7, 20.9, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27082 },	-- Playing Dirty
 					["g"] = {
@@ -297,13 +297,13 @@ _.Zones =
 				}),
 				q(27548, {	-- Lessons in Fear
 					["provider"] = { "n", 45879 },	-- Lord Walden
-					["coord"] = { 51.8, 65.0, 21 },
+					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27542 },	-- Taking the Battlefront
 				}),
 				q(27098, {	-- Lordaeron
 					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.3, 10.1, 21 },
+					["coord"] = { 57.3, 10.1, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27099 },	-- No Escape
 				}),
@@ -314,7 +314,7 @@ _.Zones =
 				}),
 				q(27093, {	-- Lost in the Darkness
 					["provider"] = { "n", 44916 },	-- Admiral Hatchet
-					["coord"] = { 44.0, 21.3, 21 },
+					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27073,	-- Give 'em Hell!
@@ -329,7 +329,7 @@ _.Zones =
 				}),
 				q(27099, {	-- No Escape
 					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 65.7, 26.4, 21 },
+					["coord"] = { 65.7, 26.4, SILVERPINE_FOREST },
 					["sourceQuests"] = { 27097 },	-- Rise, Forsaken
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -340,7 +340,7 @@ _.Zones =
 				}),
 				q(27195, {	-- Nowhere to Run
 					["provider"] = { "n", 45228 },	-- Master Forteski
-					["coord"] = { 55.8, 46.3, 21 },
+					["coord"] = { 55.8, 46.3, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27194 },	-- Cornered and Crushed
 					["g"] = {
@@ -352,13 +352,13 @@ _.Zones =
 				}),
 				q(27547, {	-- Of No Consequence
 					["provider"] = { "n", 45880 },	-- Baron Ashbury
-					["coord"] = { 51.8, 65.0, 21 },
+					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27542 },	-- Taking the Battlefront
 				}),
 				q(27594, {	-- On Her Majesty's Secret Service
 					["provider"] = { "n", 45878 },	-- Lord Godfrey
-					["coord"] = { 51.8, 65.0, 21 },
+					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27577,	-- 7th Legion Battle Plans
@@ -370,7 +370,7 @@ _.Zones =
 				}),
 				q(27484, {	-- Only One May Enter
 					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
-					["coord"] = { 47.0, 43.2, 21 },
+					["coord"] = { 47.0, 43.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27483,	-- Practical Vengeance
@@ -379,7 +379,7 @@ _.Zones =
 				}),
 				q(27096, {	-- Orcs are in Order
 					["provider"] = { "n", 44916 },	-- Admiral Hatchet
-					["coord"] = { 44.0, 21.3, 21 },
+					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27094,	-- Deeper into Darkness
@@ -389,13 +389,13 @@ _.Zones =
 				}),
 				q(27082, {	-- Playing Dirty
 					["provider"] = { "n", 44912 },	-- Apothecary Wormcrud
-					["coord"] = { 44.7, 20.9, 21 },
+					["coord"] = { 44.7, 20.9, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27065 },	-- The Warchief's Fleet
 				}),
 				q(27483, {	-- Practical Vengeance
 					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
-					["coord"] = { 47.0, 43.2, 21 },
+					["coord"] = { 47.0, 43.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27476 },	-- Dalar Dawnweaver
 					["g"] = {
@@ -421,19 +421,19 @@ _.Zones =
 				}),
 				q(27550, {	-- Pyrewood's Fall
 					["provider"] = { "n", 45878 },	-- Lord Godfrey
-					["coord"] = { 51.8, 65.0, 21 },
+					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27542 },	-- Taking the Battlefront
 				}),
 				q(27231, {	-- Reinforcements from Fenris
 					["provider"] = { "n", 44916 },	-- Admiral Hatchet
-					["coord"] = { 45.8, 41.9, 21 },
+					["coord"] = { 45.8, 41.9, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27098 },	-- Lordaeron
 				}),
 				q(27478, {	-- Relios the Relic Keeper
 					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
-					["coord"] = { 47.0, 43.2, 21 },
+					["coord"] = { 47.0, 43.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27476 },	-- Dalar Dawnweaver
 					["g"] = {
@@ -469,13 +469,13 @@ _.Zones =
 				}),
 				q(27097, {	-- Rise, Forsaken
 					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.3, 10.1, 21 },
+					["coord"] = { 57.3, 10.1, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27096 },	-- Orcs are in Order
 				}),
 				q(27472, {	-- Rise, Godfrey
 					["provider"] = { "n", 45525 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.7, 66.0, 21 },
+					["coord"] = { 51.7, 66.0, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27438 },	-- The Great Escape
 				}),
@@ -499,13 +499,13 @@ _.Zones =
 				}),
 				q(27193, {	-- Seek and Destroy
 					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 44.8, 41.6, 21 },
+					["coord"] = { 44.8, 41.6, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27181 },	-- Excising the Taint
 				}),
 				q(27095, {	-- Skitterweb Menace
 					["provider"] = { "n", 44917 },	-- Warlord Torok
-					["coord"] = { 43.9, 21.2, 21 },
+					["coord"] = { 43.9, 21.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27073,	-- Give 'em Hell!
@@ -514,7 +514,7 @@ _.Zones =
 				}),
 				q(27580, {	-- Sowing Discord
 					["provider"] = { "n", 45878 },	-- Lord Godfrey
-					["coord"] = { 51.8, 65.0, 21 },
+					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27548,	-- Lessons in Fear
@@ -530,7 +530,7 @@ _.Zones =
 				}),
 				q(27069, {	-- Steel Thunder
 					["provider"] = { "n", 44916 },	-- Admiral Hatcher
-					["coord"] = { 44.0, 21.3, 21 },
+					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27065 },	-- The Warchief's Fleet
 					["g"] = {
@@ -542,7 +542,7 @@ _.Zones =
 				}),
 				q(27542, {	-- Taking the Battlefront
 					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.8, 65.0, 21 },
+					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27518 },	-- Transdimensional Warfare: Chapter III
 				}),
@@ -570,7 +570,7 @@ _.Zones =
 				}),
 				q(26989, {	-- The Gilneas Liberation Front
 					["provider"] = { "n", 44615 },	-- Grand Executor Mortuus
-					["coord"] = { 57.4, 10.1, 21 },
+					["coord"] = { 57.4, 10.1, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26965 },	-- The Warchief Cometh
 					["g"] = {
@@ -587,18 +587,18 @@ _.Zones =
 				}),
 				q(26965, {	-- The Warchief Cometh
 					["provider"] = { "n", 44615 },	-- Grand Executor Mortuus
-					["coord"] = { 57.4, 10.1, 21 },
+					["coord"] = { 57.4, 10.1, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26964 },	-- Warchief's Command: Silverpine Forest!
 				}),
 				q(27065, {	-- The Warchief's Fleet
 					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.3, 10.1, 21 },
+					["coord"] = { 57.3, 10.1, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27056 },	-- Belmont's Report
 				}),
 				q(27232, {	-- The Waters Run Red...
-					["coord"] = { 59.1, 34.2, 21 },
+					["coord"] = { 59.1, 34.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 205350 },	-- Horde Communication Panel
 					["sourceQuests"] = { 27231 },	-- Reinforcements from Fenris
@@ -618,7 +618,7 @@ _.Zones =
 				}),
 				q(27290, {	-- To Forsaken Forward Command
 					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 44.8, 41.6, 21 },
+					["coord"] = { 44.8, 41.6, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27226,	-- Hair of the Dog
@@ -635,19 +635,19 @@ _.Zones =
 				}),
 				q(27512, {	-- Transdimensional Warfare: Chapter I
 					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.8, 65.0, 21 },
+					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27484 },	-- Only One May Enter
 				}),
 				q(27513, {	-- Transdimensional Warfare: Chapter II
 					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.8, 65.0, 21 },
+					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27512 },	-- Transdimensional Warfare: Chapter I
 				}),
 				q(27518, {	-- Transdimensional Warfare: Chapter III
 					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 51.8, 65.0, 21 },
+					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27513 },	-- Transdimensional Warfare: Chapter II
 					["g"] = {
@@ -661,12 +661,12 @@ _.Zones =
 						{ "n", 45610 },	-- Daschla
 						{ "n", 45626 },	-- Daschla
 					},
-					["coord"] = { 51.8, 64.7, 21 },
+					["coord"] = { 51.8, 64.7, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27472 },	-- Rise, Godfrey
 				}),
 				q(27045, {	-- Waiting to Exsanguinate
-					["coord"] = { 53.8, 12.9, 21 },
+					["coord"] = { 53.8, 12.9, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 205143 },	-- Abandoned Outhouse
 					["sourceQuests"] = { 27039 },	-- Dangerous Intentions
@@ -692,10 +692,10 @@ _.Zones =
 					["altQuests"] = { 27746 },	-- Empire of Dirt
 					["isBreadcrumb"] = true,
 					["coords"] = {
-						{ 57.3, 10.1, 21 },	-- Forsaken High Command
-						{ 44.8, 40.7, 21 },	-- The Sepulcher
-						{ 52.2, 66.3, 21 },	-- The Forsaken Front
-						{ 45.3, 84.3, 21 },	-- The Battlefront
+						{ 57.3, 10.1, SILVERPINE_FOREST },	-- Forsaken High Command
+						{ 44.8, 40.7, SILVERPINE_FOREST },	-- The Sepulcher
+						{ 52.2, 66.3, SILVERPINE_FOREST },	-- The Forsaken Front
+						{ 45.3, 84.3, SILVERPINE_FOREST },	-- The Battlefront
 					},
 				}),
 				q(429,   {	-- Wild Hearts

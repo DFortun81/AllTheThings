@@ -301,13 +301,13 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(44560, {	-- Follow the Recipe (A)
 				["provider"] = { "o", 259806 },	-- Love Potion Recipe
 				["isDaily"] = true,
-				["coord"] = { 45.2, 73.8, 21 },	-- Silverpine Forest
+				["coord"] = { 45.2, 73.8, SILVERPINE_FOREST },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(44559, {	-- Follow the Recipe (H)
 				["provider"] = { "o", 259806 },	-- Love Potion Recipe
 				["isDaily"] = true,
-				["coord"] = { 45.2, 73.8, 21 },	-- Silverpine Forest
+				["coord"] = { 45.2, 73.8, SILVERPINE_FOREST },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24849, {	-- Hot On The Trail (A)

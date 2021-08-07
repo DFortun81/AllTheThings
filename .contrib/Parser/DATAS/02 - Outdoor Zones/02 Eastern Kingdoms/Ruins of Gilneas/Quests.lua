@@ -31,7 +31,7 @@ _.Zones =
 				}),
 				q(27405, {	-- Fall Back!
 					["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
-					["coord"] = { 57.5, 18.2, 21 },
+					["coord"] = { 57.5, 18.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27401 },	-- What Tomorrow Brings
 					["g"] = {
@@ -117,7 +117,7 @@ _.Zones =
 				}),
 				q(27401, {	-- What Tomorrow Brings
 					["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
-					["coord"] = { 57.5, 18.2, 21 },
+					["coord"] = { 57.5, 18.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27364,	-- On Whose Orders?

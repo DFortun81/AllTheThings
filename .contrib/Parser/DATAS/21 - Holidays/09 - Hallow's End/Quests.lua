@@ -1404,18 +1404,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28966, {	-- Candy Bucket — Silverpine Forest, Forsaken Rear Guard, Horde
 				["isYearly"] = true,
-				["coord"] = { 44.3, 20.4, 21 },
+				["coord"] = { 44.3, 20.4, SILVERPINE_FOREST },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 21 },	-- Silverpine Forest
+				["maps"] = { SILVERPINE_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12371, {	-- Candy Bucket — Silverpine Forest, The Sepulcher, Horde
 				["isYearly"] = true,
-				["coord"] = { 46.4, 42.8, 21 },
+				["coord"] = { 46.4, 42.8, SILVERPINE_FOREST },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 21 },	-- Silverpine Forest
+				["maps"] = { SILVERPINE_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

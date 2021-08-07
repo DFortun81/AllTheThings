@@ -341,9 +341,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 									["maps"] = { NORTHERN_STRANGLETHORN },
 								}),
 								crit(9,  {	-- Silverpine Forest
-									["coord"] = { 49.6, 38.7, 21 },
+									["coord"] = { 49.6, 38.7, SILVERPINE_FOREST },
 									["races"] = ALLIANCE_ONLY,
-									["maps"] = { 21 },	-- Silverpine Forest
+									["maps"] = { SILVERPINE_FOREST },
 								}),
 								crit(10, {	-- Swamp of Sorrows
 									["coord"] = { 76.7, 14.4, SWAMP_OF_SORROWS },
@@ -767,9 +767,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 									["maps"] = { NORTHERN_STRANGLETHORN },
 								}),
 								crit(9,  {	-- Silverpine Forest
-									["coord"] = { 49.6, 38.2, 21 },
+									["coord"] = { 49.6, 38.2, SILVERPINE_FOREST },
 									["races"] = HORDE_ONLY,
-									["maps"] = { 21 },	-- Silverpine Forest
+									["maps"] = { SILVERPINE_FOREST },
 								}),
 								crit(10, {	-- Swamp of Sorrows
 									["coord"] = { 76.3, 13.8, SWAMP_OF_SORROWS },

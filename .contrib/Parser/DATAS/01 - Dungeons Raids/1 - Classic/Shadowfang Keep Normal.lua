@@ -4,7 +4,7 @@
 
 _.Instances = { tier(CLASSIC_TIER, {
 	inst(64, {	-- Shadowfang Keep
-		["coord"] = { 44.79, 67.82, 21 },	-- Shadowfang Keep, Silverpine Forest
+		["coord"] = { 44.79, 67.82, SILVERPINE_FOREST },
 		["maps"] = {
 			SHADOWFANG_KEEP,
 			SHADOWFANG_KEEP_LEVEL2,

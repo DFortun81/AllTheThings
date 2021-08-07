@@ -372,8 +372,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8645,  {	-- Obsidian the Elder
 				["provider"] = { "n", 15561 },	-- Elder Obsidian
 				["isYearly"] = true,
-				["coord"] = { 45.0, 41.1, 21 },
-				["maps"] = { 21 },	-- Silverpine Forest
+				["coord"] = { 45.0, 41.1, SILVERPINE_FOREST },
+				["maps"] = { SILVERPINE_FOREST },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(14, {	-- Elder Obsidian in The Sepulcher

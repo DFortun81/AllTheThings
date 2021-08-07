@@ -7,10 +7,12 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 			-- #if AFTER WRATH
 			["description"] = "You can loot one satchel per character per day by queueing for 'The Frost Lord Ahune' via the Dungeon Finder.",
 			-- #else
+			["questID"] = 11691,	-- Summon Ahune (Daily) [TODO: Check if this is the same quest ID for the dungeon finder too]
 			["description"] = "Ahune is a frost elemental in Neptulon's service. The Twilight's Hammer planned to have him battle Ragnaros to start an elemental war on Azeroth.",
 			-- #endif
 			["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS },
 			["timeline"] = { "added 2.4.0.7994" },
+			["isDaily"] = true,
 			["groups"] = {
 				ach(263),	-- Ice the Frost Lord
 				i(149753, {	-- Knapsack of Chilled Goods [Uncommon Quality]
