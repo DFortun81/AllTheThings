@@ -270,12 +270,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 158653 },	-- Prince Renathal
 						["coord"] = { 51.3, 38.1, SINFALL_REACHES },
 					}),
-					q(63591, {	-- The Grand Reception
-						["sourceQuests"] = { 63584 },	-- A Triumphant Return
-						["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
-						["coord"] = { 64.0, 19.1, ARCHONS_RISE },
-						["maps"] = { 2017 },	-- Spires of Ascension (scenario)
-					}),
 					q(63592, {	-- The New Path
 						["sourceQuests"] = { 63591 },	-- The Grand Reception
 						["provider"] = { "n", 180189 },	-- Polemarch Kalisthene

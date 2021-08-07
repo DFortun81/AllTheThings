@@ -12,11 +12,13 @@ _.ExpansionFeatures =
 				-- Tracking which mapID is which Zone name might not be necessary for Layer/Floor since they seem to be repeated within the Named 'Tower'
 				1969,	-- Adamant Vaults - Floor 6
 				1962,	-- Adamant Vaults
+				1974,	-- Adamant Vaults - Floor 6 (Lower)
+				1979,	-- Adamant Vaults - Floor 6 (Lower)
+				1977,	-- Adamant Vaults - Floor 6 (Lower)
+				1975,	-- Adamant Vaults - Floor 6 (Upper)
+				1976,	-- Adamant Vaults - Floor 6 (Upper)
 				1966,	-- Adamant Vaults - Floor 7 (Lower)
 				1965,	-- Adamant Vaults - Floor 7 (Upper)
-				1974,	-- Adamant Vaults - Floor 6 (Lower)
-				1975,	-- Adamant Vaults - Floor 6 (Upper)
-				1979,	-- Adamant Vaults - Floor 6 (Lower)
 				--
 				1769,	-- Arkoban Hall - Floor 6 / Skoldus Hall - Layer 1, Floor 6 / Layer 2, Floor 6 / Layer 3, Floor 6
 				--
