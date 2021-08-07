@@ -5371,8 +5371,8 @@ local function SortGroup(group, sortType, row, recur)
 		if sortType == "name" then
 			local txtA, txtB;
 			insertionSort(group.g, function(a, b)
-				txtA = a and tostring(a.name or a.text) or "";
-				txtB = b and tostring(b.name or b.text) or "";
+				txtA = a and string.lower(tostring(a.name or a.text)) or "";
+				txtB = b and string.lower(tostring(b.name or b.text)) or "";
 				if txtA then
 					if txtB then return txtA < txtB; end
 					return true;
