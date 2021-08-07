@@ -1632,29 +1632,33 @@ local function GetRelativeValue(group, field)
 		return group[field] or GetRelativeValue(group.sourceParent or group.parent, field);
 	end
 end
--- Returns the ItemID of the group (if existing) with a decimal portion containing the modID/100
--- or converts a raw ItemID/ModID into the combined modItemID value
+-- Returns the ItemID of the group (if existing) with a decimal portion containing the modID/100 and bonusID/1000000
+-- or converts a raw ItemID/ModID/BonusID into the combined modItemID value
 -- Ex. 12345 (ModID 5) => 12345.05
 -- Ex. 87654 (ModID 23)=> 87654.23
-local function GetGroupItemIDWithModID(group, rawItemID, rawModID)
-	if group and group.itemID then
-		if group.modID and group.modID > 0 then
-			return group.itemID + (group.modID / 100);
-		else
-			return group.itemID;
-		end
+-- Ex. 102938 (ModID 1) (BonusID 4746) => 102938.014746
+local function GetGroupItemIDWithModID(t, rawItemID, rawModID, rawBonusID)
+	if t and t.itemID then
+		return t.itemID + ((t.modID or 0) / 100) + ((t.bonusID or 0) / 1000000);
 	elseif tonumber(rawItemID) then
-		-- print("modItemID-raw",rawItemID,rawModID,(tonumber(rawItemID) or 0) + ((tonumber(rawModID) or 0) / 100))
-		return (tonumber(rawItemID) or 0) + ((tonumber(rawModID) or 0) / 100);
+		-- print("modItemID-raw",rawItemID,rawModID,rawBonusID,tonumber(rawItemID) or 0 + ((tonumber(rawModID) or 0) / 100) + ((tonumber(rawBonusID) or 0) / 10000))
+		return tonumber(rawItemID) or 0 + ((tonumber(rawModID) or 0) / 100) + ((tonumber(rawBonusID) or 0) / 1000000);
 	end
 end
--- Returns the ItemID, ModID of the provided ModItemID
+-- Returns the ItemID, ModID, BonusID of the provided ModItemID
 -- Ex. 12345.05		=> 12345, 5
 -- Ex. 87654.23		=> 87654, 23
+-- Ex. 102938.014746=> 102938, 1, 4746
 local function GetItemIDAndModID(modItemID)
 	if modItemID and tonumber(modItemID) then
+		-- print("GetItemIDAndModID",modItemID)
 		local itemID = math.floor(modItemID);
-		return itemID, 100 * (modItemID - itemID);
+		modItemID = (modItemID - itemID) * 100;
+		local modID = math.floor(modItemID);
+		modItemID = (modItemID - modID) * 1000000;
+		local bonusID = math.floor(modItemID);
+		-- print(itemID,modID,bonusID)
+		return itemID, modID, bonusID;
 	end
 end
 local function GroupMatchesParams(group, key, value, ignoreModID)
@@ -4421,8 +4425,8 @@ fieldConverters = {
 		if group.filterID == 102 or group.isToy then CacheField(group, "toyID", value); end
 		if not raw then
 			-- only cache the modItemID if it is not the same as the itemID
-			if (group.modItemID or GetGroupItemIDWithModID(group) or value) ~= value then
-				CacheField(group, "itemID", group.modItemID or GetGroupItemIDWithModID(group) or value);
+			if (group.modItemID or value) ~= value then
+				CacheField(group, "itemID", group.modItemID);
 			end
 		end
 		-- always cache the plain ItemID as a fallback for items which generate in-game with unaccounted-for modIDs (M+, etc.)
@@ -7665,11 +7669,10 @@ local fields = {
 	["modItemID"] = function(t)
 		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
 		-- Crieve question: What is this and why does it exist?
-		local modItemID = GetGroupItemIDWithModID(t);
-		if modItemID then
-			rawset(t, "modItemID", modItemID);
-			return modItemID;
-		end
+		-- Run answer: Because items with different ModID's are actually treated as different items.
+		--   Eventually maybe we can have a better key to distinguish
+		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or t.itemID);
+		return rawget(t, "modItemID");
 	end,
 	["specs"] = function(t)
 		return t.itemID and GetFixedItemSpecInfo(t.itemID);
@@ -8136,9 +8139,8 @@ local fields = {
 		end
 	end,
 	["modItemID"] = function(t)
-		local modItemID = GetGroupItemIDWithModID(t);
-		rawset(t, "modItemID", modItemID);
-		return modItemID;
+		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or t.itemID);
+		return rawget(t, "modItemID");
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleIllusions;
@@ -8384,12 +8386,7 @@ local itemFields = {
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
 	end,
 	["modItemID"] = function(t)
-		-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID if no ModID is present
-		if t.modID and t.modID > 0 then
-			rawset(t, "modItemID", t.itemID + (t.modID / 100));
-		else
-			rawset(t, "modItemID", t.itemID);
-		end
+		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or t.itemID);
 		return rawget(t, "modItemID");
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
@@ -9218,7 +9215,8 @@ local fields = {
 		return 108;
 	end,
 	["modItemID"] = function(t)
-		return t.itemID;
+		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or t.itemID);
+		return rawget(t, "modItemID");
 	end,
 	["lvl"] = function(t)
 		return 40;
@@ -10488,7 +10486,7 @@ local fields = {
 	end,
 	-- Represents the ModID-included ItemID value for this Item group, will be equal to ItemID or 0 if no ModID is present
 	["modItemID"] = function(t)
-		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or 0);
+		rawset(t, "modItemID", GetGroupItemIDWithModID(t) or t.itemID);
 		return rawget(t, "modItemID");
 	end,
 };
