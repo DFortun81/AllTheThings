@@ -2861,22 +2861,35 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				["groups"] = bubbleDown({ ["isYearly"] = true, ["races"] = ALLIANCE_ONLY }, {
 					q(11764, {	-- Desecrate this Fire! — Arathi Highlands
 						["provider"] = { "o", 187947 },	-- Horde Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 69.0, 43.1, ARATHI_HIGHLANDS },
+						-- #else
+						["coord"] = { 74.0, 41.7, ARATHI_HIGHLANDS },
+						-- #endif
 						["maps"] = { ARATHI_HIGHLANDS },
 					}),
 					q(11765, {	-- Desecrate this Fire! — Ashenvale
 						["provider"] = { "o", 187948 },	-- Horde Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 51.6, 66.8, ASHENVALE },
+						-- #else
+						["coord"] = { 70.0, 69.2, ASHENVALE },
+						-- #endif
 						["maps"] = { ASHENVALE },
 					}),
 					q(28919, {	-- Desecrate this Fire! — Azshara
 						["provider"] = { "o", 207991 },	-- Horde Bonfire
 						["coord"] = { 60.4, 53.5, AZSHARA },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { AZSHARA },
 					}),
 					q(11766, {	-- Desecrate this Fire! — Badlands
 						["provider"] = { "o", 187954 },	-- Horde Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 24.1, 37.3, BADLANDS },
+						-- #else
+						["coord"] = { 4.9, 49.1, BADLANDS },
+						-- #endif
 						["maps"] = { BADLANDS },
 					}),
 					q(11767, {	-- Desecrate this Fire! — Blade's Edge Mountains
@@ -2887,21 +2900,28 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(28917, {	-- Desecrate this Fire! — Blasted Lands
 						["provider"] = { "o", 207989 },	-- Horde Bonfire
 						["coord"] = { 46.3, 14.4, BLASTED_LANDS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { BLASTED_LANDS },
 					}),
 					q(13441, {	-- Desecrate this Fire! — Borean Tundra
 						["provider"] = { "o", 194033 },	-- Horde Bonfire
 						["coord"] = { 51.1, 11.9, 114 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 114 },	-- Borean Tundra
 					}),
 					q(11768, {	-- Desecrate this Fire! — Burning Steppes
 						["provider"] = { "o", 187956 },	-- Horde Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 51.5, 29.3, BURNING_STEPPES },
+						-- #else
+						["coord"] = { 62.1, 29.0, BURNING_STEPPES },
+						-- #endif
 						["maps"] = { BURNING_STEPPES },
 					}),
 					q(13457, {	-- Desecrate this Fire! — Crystalsong Forest
 						["provider"] = { "o", 194046 },	-- Horde Bonfire
 						["coord"] = { 80.5, 53.0, 127 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 127 },	-- Crystalsong Forest
 					}),
 					q(11769, {	-- Desecrate this Fire! — Desolace
@@ -2912,6 +2932,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(13451, {	-- Desecrate this Fire! — Dragonblight
 						["provider"] = { "o", 194037 },	-- Horde Bonfire
 						["coord"] = { 38.5, 48.4, 115 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 115 },	-- Dragonblight
 					}),
 					q(11770, {	-- Desecrate this Fire! — Durotar
@@ -2937,6 +2958,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(44583, {	-- Desecrate this Fire! — Frostfire Ridge
 						["provider"] = { "o", 259870 },	-- Horde Bonfire
 						["coord"] = { 72.8, 65.2, FROSTFIRE_RIDGE },
+						["timeline"] = { "added 6.0.1" },
 						["maps"] = { FROSTFIRE_RIDGE },
 					}),
 					q(11774, {	-- Desecrate this Fire! — Ghostlands
@@ -2947,6 +2969,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(13454, {	-- Desecrate this Fire! — Grizzly Hills
 						["provider"] = { "o", 194042 },	-- Horde Bonfire
 						["coord"] = { 19.1, 61.3, 116 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 116 },	-- Grizzly Hills
 					}),
 					q(11775, {	-- Desecrate this Fire! — Hellfire Peninsula
@@ -2956,12 +2979,17 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(11776, {	-- Desecrate this Fire! — Hillsbrad Foothills
 						["provider"] = { "o", 187964 },	-- Horde Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 54.5, 50.1, HILLSBRAD_FOOTHILLS },
+						-- #else
+						["coord"] = { 58.4, 25.1, HILLSBRAD_FOOTHILLS },
+						-- #endif
 						["maps"] = { HILLSBRAD_FOOTHILLS },
 					}),
 					q(13453, {	-- Desecrate this Fire! — Howling Fjord
 						["provider"] = { "o", 194039 },	-- Horde Bonfire
 						["coord"] = { 48.4, 13.5, 117 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 117 },	-- Howling Fjord
 					}),
 					q(11777, {	-- Desecrate this Fire! — Mulgore
@@ -2977,6 +3005,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(54746, {	-- Desecrate this Fire! — Nazmir
 						["provider"] = { "o", 316796 },	-- Horde Bonfire
 						["coord"] = { 40.0, 74.0, 863 },
+						["timeline"] = { "added 8.0.1" },
 						["maps"] = { 863 },	-- Nazmir
 					}),
 					q(11799, {	-- Desecrate this Fire! — Netherstorm
@@ -2986,12 +3015,18 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(11783, {	-- Desecrate this Fire! — Northern Barrens / The Barrens
 						["provider"] = { "o", 187971 },	-- Horde Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 49.9, 54.2, NORTHERN_BARRENS },
 						["maps"] = { NORTHERN_BARRENS },
+						-- #else
+						["coord"] = { 52.2, 27.9, THE_BARRENS },
+						["maps"] = { THE_BARRENS },
+						-- #endif
 					}),
 					q(28911, {	-- Desecrate this Fire! — Northern Stranglethorn
 						["provider"] = { "o", 207983 },	-- Horde Bonfire
 						["coord"] = { 40.7, 52.0, NORTHERN_STRANGLETHORN },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { NORTHERN_STRANGLETHORN },
 					}),
 					q(11779, {	-- Desecrate this Fire! — Shadowmoon Valley (Outland)
@@ -3002,11 +3037,16 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(13450, {	-- Desecrate this Fire! — Sholazar Basin
 						["provider"] = { "o", 194034 },	-- Horde Bonfire
 						["coord"] = { 47.3, 61.7, 119 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 119 },	-- Sholazar Basin
 					}),
 					q(11800, {	-- Desecrate this Fire! — Silithus
 						["provider"] = { "o", 187950 },	-- Horde Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 50.8, 41.8, SILITHUS },
+						-- #else
+						["coord"] = { 46.5, 44.9, SILITHUS },
+						-- #endif
 						["maps"] = { SILITHUS },
 					}),
 					q(11580, {	-- Desecrate this Fire! — Silverpine Forest
@@ -3017,31 +3057,46 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(28914, {	-- Desecrate this Fire! — Southern Barrens
 						["provider"] = { "o", 207986 },	-- Horde Bonfire
 						["coord"] = { 40.7, 67.2, SOUTHERN_BARRENS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { SOUTHERN_BARRENS },
 					}),
 					q(11780, {	-- Desecrate this Fire! — Stonetalon Mountains
 						["provider"] = { "o", 187968 },	-- Horde Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 53.0, 62.4, STONETALON_MOUNTAINS },
+						-- #else
+						["coord"] = { 50.6, 60.3, STONETALON_MOUNTAINS },
+						-- #endif
 						["maps"] = { STONETALON_MOUNTAINS },
 					}),
 					q(13455, {	-- Desecrate this Fire! — Storm Peaks
 						["provider"] = { "o", 194043 },	-- Horde Bonfire
 						["coord"] = { 40.3, 85.6, 120 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 120 },	-- Storm Peaks
 					}),
 					q(44627, {	-- Desecrate this Fire! — Suramar
 						["provider"] = { "o", 259926 },	-- Horde Bonfire
 						["coord"] = { 30.3, 45.4, SURAMAR },
+						["timeline"] = { "added 7.0.1" },
 						["maps"] = { SURAMAR },
 					}),
 					q(11781, {	-- Desecrate this Fire! — Swamp of Sorrows
 						["provider"] = { "o", 187969 },	-- Horde Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 76.7, 14.4, SWAMP_OF_SORROWS },
+						-- #else
+						["coord"] = { 46.9, 46.5, SWAMP_OF_SORROWS },
+						-- #endif
 						["maps"] = { SWAMP_OF_SORROWS },
 					}),
 					q(11802, {	-- Desecrate this Fire! — Tanaris
 						["provider"] = { "o", 187952 },	-- Horde Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 49.8, 28.2, TANARIS },
+						-- #else
+						["coord"] = { 49.8, 27.1, TANARIS },
+						-- #endif
 						["maps"] = { TANARIS },
 					}),
 					q(11782, {	-- Desecrate this Fire! — Terokkar Forest
@@ -3051,8 +3106,13 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(11801, {	-- Desecrate this Fire! — The Cape of Stranglethorn / Stranglethorn Vale
 						["provider"] = { "o", 187951 },	-- Horde Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 50.6, 70.8, 210 },
 						["maps"] = { 210 },	-- The Cape of Stranglethorn
+						-- #else
+						["coord"] = { 33.0, 75.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						-- #endif
 					}),
 					q(11784, {	-- Desecrate this Fire! — The Hinterlands
 						["provider"] = { "o", 187972 },	-- Horde Bonfire
@@ -3073,36 +3133,46 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(28944, {	-- Desecrate this Fire! — Twilight Highlands
 						["provider"] = { "o", 208090 },	-- Horde Bonfire
 						["coord"] = { 53.3, 46.5, TWILIGHT_HIGHLANDS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { TWILIGHT_HIGHLANDS },
 					}),
 					q(28948, {	-- Desecrate this Fire! — Uldum
 						["provider"] = { "o", 208094 },	-- Horde Bonfire
 						["coord"] = { 53.0, 34.4, 249 },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { 249 },	-- Uldum
 					}),
 					q(28920, {	-- Desecrate this Fire! — Un'Goro Crater
 						["provider"] = { "o", 207992 },	-- Horde Bonfire
 						["coord"] = { 56.3, 65.8, UNGORO_CRATER },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { UNGORO_CRATER },
 					}),
 					q(32496, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
 						["provider"] = { "o", 217852 },	-- Horde Bonfire
 						["coord"] = { 77.9, 33.9, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { "added 5.0.1" },
 						["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 					}),
 					q(54749, {	-- Desecrate this Fire! — Vol'dun
 						["provider"] = { "o", 316801 },	-- Horde Bonfire
 						["coord"] = { 55.9, 47.4, 864 },
+						["timeline"] = { "added 8.0.1" },
 						["maps"] = { 864 },	-- Vol'dun
 					}),
 					q(28918, {	-- Desecrate this Fire! — Western Plaguelands
 						["provider"] = { "o", 207990 },	-- Horde Bonfire
 						["coord"] = { 28.9, 56.8, WESTERN_PLAGUELANDS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { WESTERN_PLAGUELANDS },
 					}),
 					q(11803, {	-- Desecrate this Fire! — Winterspring
 						["provider"] = { "o", 187953 },	-- Horde Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 58.2, 47.3, WINTERSPRING },
+						-- #else
+						["coord"] = { 59.8, 35.4, WINTERSPRING },
+						-- #endif
 						["maps"] = { WINTERSPRING },
 					}),
 					q(11787, {	-- Desecrate this Fire! — Zangarmarsh
@@ -3113,291 +3183,402 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(54744, {	-- Desecrate this Fire! — Zuldazar
 						["provider"] = { "o", 316795 },	-- Horde Bonfire
 						["coord"] = { 53.3, 48.1, 862 },
+						["timeline"] = { "added 8.0.1" },
 						["maps"] = { 862 },	-- Zuldazar
 					}),
 					q(13458, {	-- Desecrate this Fire! — Zul'Drak
 						["provider"] = { "o", 194048 },	-- Horde Bonfire
 						["coord"] = { 43.2, 71.4, 121 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 121 },	-- Zul'Drak
 					}),
 					q(11804, {	-- Honor the Flame — Arathi Highlands
-						["provider"] = { "n", 25887 },	-- Arathi Flame Warden
+						["qg"] = 25887,	-- Arathi Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 44.3, 45.8, ARATHI_HIGHLANDS },
+						-- #else
+						["coord"] = { 50.0, 44.8, ARATHI_HIGHLANDS },
+						-- #endif
 						["maps"] = { ARATHI_HIGHLANDS },
 					}),
 					q(11805, {	-- Honor the Flame — Ashenvale
-						["provider"] = { "n", 25883 },	-- Ashenvale Flame Warden
+						["qg"] = 25883,	-- Ashenvale Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 87.0, 42.0, ASHENVALE },
+						-- #else
+						["coord"] = { 37.8, 54.7, ASHENVALE },
+						-- #endif
 						["maps"] = { ASHENVALE },
 					}),
 					q(11806, {	-- Honor the Flame — Azuremyst Isle
-						["provider"] = { "n", 25888 },	-- Azuremyst Isle Flame Warden
+						["qg"] = 25888,	-- Azuremyst Isle Flame Warden
 						["coord"] = { 44.0, 53.0, AZUREMYST_ISLE },
 						["maps"] = { AZUREMYST_ISLE },
 					}),
 					q(28925, {	-- Honor the Flame — Badlands
-						["provider"] = { "n", 51585 },	-- Badlands Flame Warden
+						["qg"] = 51585,	-- Badlands Flame Warden
 						["coord"] = { 18.9, 56.1, BADLANDS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { BADLANDS },
 					}),
 					q(11807, {	-- Honor the Flame — Blade's Edge Mountains
-						["provider"] = { "n", 25889 },	-- Blade's Edge Flame Warden
+						["qg"] = 25889,	-- Blade's Edge Flame Warden
 						["coord"] = { 42.0, 66.0, BLADES_EDGE_MOUNTAINS },
 						["maps"] = { BLADES_EDGE_MOUNTAINS },
 					}),
 					q(11808, {	-- Honor the Flame — Blasted Lands
-						["provider"] = { "n", 25890 },	-- Blasted Lands Flame Warden
+						["qg"] = 25890,	-- Blasted Lands Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 55.5, 15.0, BLASTED_LANDS },
+						-- #else
+						["coord"] = { 59.3, 17.0, BLASTED_LANDS },
+						-- #endif
 						["maps"] = { BLASTED_LANDS },
 					}),
 					q(11809, {	-- Honor the Flame — Bloodmyst Isle
-						["provider"] = { "n", 25891 },	-- Bloodmyst Isle Flame Warden
+						["qg"] = 25891,	-- Bloodmyst Isle Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 55.0, 69.0, BLOODMYST_ISLE },
+						-- #else
+						["coord"] = { 55.8, 67.9, BLOODMYST_ISLE },
+						-- #endif
 						["maps"] = { BLOODMYST_ISLE },
 					}),
 					q(13485, {	-- Honor the Flame — Borean Tundra
-						["provider"] = { "n", 32801 },	-- Borean Tundra Flame Warden
+						["qg"] = 32801,	-- Borean Tundra Flame Warden
 						["coord"] = { 55.0, 20.0, 114 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 114 },	-- Borean Tundra
 					}),
 					q(11810, {	-- Honor the Flame — Burning Steppes
-						["provider"] = { "n", 25892 },	-- Burning Steppes Flame Warden
+						["qg"] = 25892,	-- Burning Steppes Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 68.2, 60.6, BURNING_STEPPES },
+						-- #else
+						["coord"] = { 80.3, 62.9, BURNING_STEPPES },
+						-- #endif
 						["maps"] = { BURNING_STEPPES },
 					}),
 					q(13491, {	-- Honor the Flame — Crystalsong Forest
-						["provider"] = { "n", 32807 },	-- Crystalsong Forest Flame Warden
+						["qg"] = 32807,	-- Crystalsong Forest Flame Warden
 						["coord"] = { 78.0, 75.0, 127 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 127 },	-- Crystalsong Forest
 					}),
 					q(11811, {	-- Honor the Flame — Darkshore
-						["provider"] = { "n", 25893 },	-- Darkshore Flame Warden
+						["qg"] = 25893,	-- Darkshore Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 49.0, 23.0, DARKSHORE },
+						-- #else
+						["coord"] = { 37.0, 46.2, DARKSHORE },
+						-- #endif
 						["maps"] = { DARKSHORE },
 					}),
 					q(29036, {	-- Honor the Flame — Deepholm
-						["provider"] = { "n", 51698 },	-- Deepholm Flame Guardian
+						["qg"] = 51698,	-- Deepholm Flame Guardian
 						["coord"] = { 49.4, 51.4, 207 },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { 207 },	-- Deepholm
 					}),
 					q(11812, {	-- Honor the Flame — Desolace
-						["provider"] = { "n", 25894 },	-- Desolace Flame Warden
+						["qg"] = 25894,	-- Desolace Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 65.0, 17.0, DESOLACE },
+						-- #else
+						["coord"] = { 66.1, 17.1, DESOLACE },
+						-- #endif
 						["maps"] = { DESOLACE },
 					}),
 					q(13487, {	-- Honor the Flame — Dragonblight
-						["provider"] = { "n", 32803 },	-- Dragonblight Flame Warden
+						["qg"] = 32803,	-- Dragonblight Flame Warden
 						["coord"] = { 75.0, 44.0, 115 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 115 },	-- Dragonblight
 					}),
 					q(54743, {	-- Honor the Flame — Drustvar
-						["provider"] = { "n", 148934 },	-- Drustvar Flame Warden
+						["qg"] = 148934,	-- Drustvar Flame Warden
 						["coord"] = { 40.2, 47.7, 896 },
+						["timeline"] = { "added 8.0.1" },
 						["maps"] = { 896 },	-- Drustvar
 					}),
 					q(11813, {	-- Honor the Flame — Dun Morogh
-						["provider"] = { "n", 25895 },	-- Dun Morogh Flame Warden
+						["qg"] = 25895,	-- Dun Morogh Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 53.8, 45.2, DUN_MOROGH },
+						-- #else
+						["coord"] = { 46.7, 46.9, DUN_MOROGH },
+						-- #endif
 						["maps"] = { DUN_MOROGH },
 					}),
 					q(11814, {	-- Honor the Flame — Duskwood
-						["provider"] = { "n", 25896 },	-- Duskwood Flame Warden
+						["qg"] = 25896,	-- Duskwood Flame Warden
 						["coord"] = { 73.8, 54.7, DUSKWOOD },
 						["maps"] = { DUSKWOOD },
 					}),
 					q(11815, {	-- Honor the Flame — Dustwallow Marsh
-						["provider"] = { "n", 25897 },	-- Dustwallow Marsh Flame Warden
+						["qg"] = 25897,	-- Dustwallow Marsh Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 62.0, 40.0, DUSTWALLOW_MARSH },
+						-- #else
+						["coord"] = { 61.8, 40.5, DUSTWALLOW_MARSH },
+						-- #endif
 						["maps"] = { DUSTWALLOW_MARSH },
 					}),
 					q(11816, {	-- Honor the Flame — Elwynn Forest
-						["provider"] = { "n", 25898 },	-- Elwynn Forest Flame Warden
+						["qg"] = 25898,	-- Elwynn Forest Flame Warden
 						["coord"] = { 43.5, 62.7, ELWYNN_FOREST },
 						["maps"] = { ELWYNN_FOREST },
 					}),
 					q(11817, {	-- Honor the Flame — Feralas
-						["provider"] = { "n", 25899 },	-- Feralas Flame Warden
+						["qg"] = 25899,	-- Feralas Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 47.0, 44.0, FERALAS },
+						-- #else
+						["coord"] = { 28.3, 43.9, FERALAS },
+						-- #endif
 						["maps"] = { FERALAS },
 					}),
 					q(13489, {	-- Honor the Flame — Grizzly Hills
-						["provider"] = { "n", 32805 },	-- Grizzly Hills Flame Warden
+						["qg"] = 32805,	-- Grizzly Hills Flame Warden
 						["coord"] = { 34.0, 61.0, 116 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 116 },	-- Grizzly Hills
 					}),
 					q(11818, {	-- Honor the Flame — Hellfire Peninsula
-						["provider"] = { "n", 25900 },	-- Hellfire Peninsula Flame Warden
+						["qg"] = 25900,	-- Hellfire Peninsula Flame Warden
 						["coord"] = { 62.0, 58.0, HELLFIRE_PENINSULA },
 						["maps"] = { HELLFIRE_PENINSULA },
 					}),
+					q(11819, {	-- Honor the Flame — Hillsbrad Foothills
+						["qg"] = 25901,	-- Hillsbrad Flame Warden
+						["coord"] = { 50.4, 47.6, HILLSBRAD_FOOTHILLS },
+						["timeline"] = { "removed 4.0.1" },	-- Southshore got destroyed with Cataclysm
+						["maps"] = { HILLSBRAD_FOOTHILLS },
+					}),
 					q(13488, {	-- Honor the Flame — Howling Fjord
-						["provider"] = { "n", 32804 },	-- Howling Fjord Flame Warden
+						["qg"] = 32804,	-- Howling Fjord Flame Warden
 						["coord"] = { 58.0, 16.0, 117 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 117 },	-- Howling Fjord
 					}),
 					q(29030, {	-- Honor the Flame — Hyjal
-						["provider"] = { "n", 51682 },	-- Hyjal Flame Guardian
+						["qg"] = 51682,	-- Hyjal Flame Guardian
 						["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { MOUNT_HYJAL },
 					}),
 					q(11820, {	-- Honor the Flame — Loch Modan
-						["provider"] = { "n", 25902 },	-- Loch Modan Flame Warden
+						["qg"] = 25902,	-- Loch Modan Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 32.3, 41.0, LOCH_MODAN },
+						-- #else
+						["coord"] = { 32.6, 41.0, LOCH_MODAN },
+						-- #endif
 						["maps"] = { LOCH_MODAN },
 					}),
 					q(11821, {	-- Honor the Flame — Nagrand (Outland)
-						["provider"] = { "n", 25903 },	-- Nagrand Flame Warden
-						["coord"] = { 51.0, 34.0, NAGRAND },
+						["qg"] = 25903,	-- Nagrand Flame Warden
+						["coord"] = { 49.6, 69.5, NAGRAND },
 						["maps"] = { NAGRAND },
 					}),
 					q(11830, {	-- Honor the Flame — Netherstorm
-						["provider"] = { "n", 25913 },	-- Netherstorm Flame Warden
+						["qg"] = 25913,	-- Netherstorm Flame Warden
 						["coord"] = { 31.0, 63.0, NETHERSTORM },
 						["maps"] = { NETHERSTORM },
 					}),
 					q(28922, {	-- Honor the Flame — Northern Stranglethorn
-						["provider"] = { "n", 51574 },	-- Northern Stranglethorn Flame Warden
+						["qg"] = 51574,	-- Northern Stranglethorn Flame Warden
 						["coord"] = { 52.0, 63.6, NORTHERN_STRANGLETHORN },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { NORTHERN_STRANGLETHORN },
 					}),
 					q(11822, {	-- Honor the Flame — Redridge Mountains
-						["provider"] = { "n", 25904 },	-- Redridge Flame Warden
+						["qg"] = 25904,	-- Redridge Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 25.0, 53.5, REDRIDGE_MOUNTAINS },
+						-- #else
+						["coord"] = { 25.2, 59.0, REDRIDGE_MOUNTAINS },
+						-- #endif
 						["maps"] = { REDRIDGE_MOUNTAINS },
 					}),
 					q(11823, {	-- Honor the Flame — Shadowmoon Valley (Outland)
-						["provider"] = { "n", 25905 },	-- Shadowmoon Valley Flame Warden
+						["qg"] = 25905,	-- Shadowmoon Valley Flame Warden
 						["coord"] = { 40.0, 55.0, SHADOWMOON_VALLEY },
 						["maps"] = { SHADOWMOON_VALLEY },
 					}),
 					q(44579, {	-- Honor the Flame — Shadowmoon Valley (WoD)
-						["provider"] = { "n", 114500 },	-- Shadowmoon Valley Flame Warden
+						["qg"] = 114500,	-- Shadowmoon Valley Flame Warden
 						["coord"] = { 42.6, 36.0, DRAENOR_SHADOWMOON_VALLEY },
+						["timeline"] = { "added 6.0.1" },
 						["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
 					}),
 					q(13486, {	-- Honor the Flame — Sholazar Basin
-						["provider"] = { "n", 32802 },	-- Sholazar Basin Flame Warden
+						["qg"] = 32802,	-- Sholazar Basin Flame Warden
 						["coord"] = { 47.0, 66.0, 119 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 119 },	-- Sholazar Basin
 					}),
 					q(11831, {	-- Honor the Flame — Silithus
-						["provider"] = { "n", 25914 },	-- Silithus Flame Warden
+						["qg"] = 25914,	-- Silithus Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 60.0, 33.0, SILITHUS },
+						-- #else
+						["coord"] = { 57.5, 35.2, SILITHUS },
+						-- #endif
 						["maps"] = { SILITHUS },
 					}),
 					q(28926, {	-- Honor the Flame — Southern Barrens
-						["provider"] = { "n", 51586 },	-- Southern Barrens Flame Warden
+						["qg"] = 51586,	-- Southern Barrens Flame Warden
 						["coord"] = { 48.0, 72.0, SOUTHERN_BARRENS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { SOUTHERN_BARRENS },
 					}),
 					q(28928, {	-- Honor the Flame — Stonetalon Mountains
-						["provider"] = { "n", 51588 },	-- Stonetalon Mountains Flame Warden
+						["qg"] = 51588,	-- Stonetalon Mountains Flame Warden
 						["coord"] = { 49.0, 51.0, STONETALON_MOUNTAINS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { STONETALON_MOUNTAINS },
 					}),
 					q(13490, {	-- Honor the Flame — Storm Peaks
-						["provider"] = { "n", 32806 },	-- Storm Peaks Flame Warden
+						["qg"] = 32806,	-- Storm Peaks Flame Warden
 						["coord"] = { 42.0, 87.0, 120 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 120 },	-- Storm Peaks
 					}),
 					q(54741, {	-- Honor the Flame — Stormsong Valley
-						["provider"] = { "n", 148932 },	-- Stormsong Valley Flame Warden
+						["qg"] = 148932,	-- Stormsong Valley Flame Warden
 						["coord"] = { 35.8, 51.2, 942 },
+						["timeline"] = { "added 8.0.1" },
 						["maps"] = { 942 },	-- Stormsong Valley
 					}),
 					q(44613, {	-- Honor the Flame — Suramar
-						["provider"] = { "n", 114519 },	-- Suramar Flame Warden
+						["qg"] = 114519,	-- Suramar Flame Warden
 						["coord"] = { 23.0, 58.4, SURAMAR },
+						["timeline"] = { "added 7.0.1" },
 						["maps"] = { SURAMAR },
 					}),
 					q(28929, {	-- Honor the Flame — Swamp of Sorrows
-						["provider"] = { "n", 51602 },	-- Swamp of Sorrows Flame Warden
+						["qg"] = 51602,	-- Swamp of Sorrows Flame Warden
 						["coord"] = { 70.1, 15.4, SWAMP_OF_SORROWS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { SWAMP_OF_SORROWS },
 					}),
 					q(11833, {	-- Honor the Flame — Tanaris
-						["provider"] = { "n", 25916 },	-- Tanaris Flame Warden
+						["qg"] = 25916,	-- Tanaris Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 52.0, 29.0, TANARIS },
+						-- #else
+						["coord"] = { 52.8, 29.4, TANARIS },
+						-- #endif
 						["maps"] = { TANARIS },
 					}),
 					q(11824, {	-- Honor the Flame — Teldrassil
-						["provider"] = { "n", 25906 },	-- The Teldrassil Flame Warden
+						["qg"] = 25906,	-- The Teldrassil Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 54.8, 52.9, TELDRASSIL },
+						-- #else
+						["coord"] = { 55.1, 60.4, TELDRASSIL },
+						-- #endif
 						["maps"] = { TELDRASSIL },
 					}),
 					q(11825, {	-- Honor the Flame — Terokkar Forest
-						["provider"] = { "n", 25907 },	-- Terokkar Forest Flame Warden
+						["qg"] = 25907,	-- Terokkar Forest Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 55.0, 55.0, TEROKKAR_FOREST },
+						-- #else
+						["coord"] = { 54.1, 55.5, TEROKKAR_FOREST },
+						-- #endif
 						["maps"] = { TEROKKAR_FOREST },
 					}),
-					q(11832, {	-- Honor the Flame — The Cape of Stranglethorn
-						["provider"] = { "n", 25915 },	-- Cape of Stranglethorn Flame Warden
+					q(11832, {	-- Honor the Flame — The Cape of Stranglethorn / Stranglethorn Vale
+						-- #if AFTER CATA
+						["qg"] = 25915,	-- Cape of Stranglethorn Flame Warden
 						["coord"] = { 51.9, 67.8, 210 },
 						["maps"] = { 210 },	-- The Cape of Stranglethorn
+						-- #else
+						["qg"] = 25915,	-- Stranglethorn Vale Flame Warden
+						["coord"] = { 33.9, 73.5, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						-- #endif
 					}),
 					q(11826, {	-- Honor the Flame — The Hinterlands
-						["provider"] = { "n", 25908 },	-- The Hinterlands Flame Warden
+						["qg"] = 25908,	-- The Hinterlands Flame Warden
 						["coord"] = { 14.4, 50.2, THE_HINTERLANDS },
 						["maps"] = { THE_HINTERLANDS },
 					}),
 					q(54737, {	-- Honor the Flame — Tiragarde Sound
-						["provider"] = { "n", 148917 },	-- Tiragarde Sound Flame Warden
+						["qg"] = 148917,	-- Tiragarde Sound Flame Warden
 						["coord"] = { 76.3, 49.9, 895 },
+						["timeline"] = { "added 8.0.1" },
 						["maps"] = { 895 },	-- Tiragarde Sound
 					}),
 					q(28945, {	-- Honor the Flame — Twilight Highlands
-						["provider"] = { "n", 51650 },	-- Twilight Highlands Flame Warden
+						["qg"] = 51650,	-- Twilight Highlands Flame Warden
 						["coord"] = { 47.0, 28.0, TWILIGHT_HIGHLANDS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { TWILIGHT_HIGHLANDS },
 					}),
 					q(28950, {	-- Honor the Flame — Uldum
-						["provider"] = { "n", 51653 },	-- Uldum Flame Warden
+						["qg"] = 51653,	-- Uldum Flame Warden
 						["coord"] = { 53.0, 32.0, 249 },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { 249 },	-- Uldum
 					}),
 					q(28932, {	-- Honor the Flame — Un'goro Crater
-						["provider"] = { "n", 51606 },	-- Un'Goro Crater Flame Warden
+						["qg"] = 51606,	-- Un'Goro Crater Flame Warden
 						["coord"] = { 60.0, 63.0, UNGORO_CRATER },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { UNGORO_CRATER },
 					}),
 					q(32510, {	-- Honor the Flame — Vale of Eternal Blossoms
-						["provider"] = { "n", 69572 },	-- Vale of Eternal Blossoms Flame Warden
+						["qg"] = 69572,	-- Vale of Eternal Blossoms Flame Warden
 						["coord"] = { 79.6, 37.2, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { "added 5.0.1" },
 						["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 					}),
 					q(29031, {	-- Honor the Flame — Vashj'ir
-						["provider"] = { "n", 51697 },	-- Vashj'ir Flame Guardian
+						["qg"] = 51697,	-- Vashj'ir Flame Guardian
 						["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { 203, 205 },	-- Vashj'ir + Shimmering Expanse
 					}),
 					q(11827, {	-- Honor the Flame — Western Plaguelands
-						["provider"] = { "n", 25909 },	-- Western Plaguelands Flame Warden
+						["qg"] = 25909,	-- Western Plaguelands Flame Warden
 						["coord"] = { 43.5, 82.2, WESTERN_PLAGUELANDS },
 						["maps"] = { WESTERN_PLAGUELANDS },
 					}),
 					q(11583, {	-- Honor the Flame — Westfall
-						["provider"] = { "n", 25910 },	-- Westfall Flame Warden
+						["qg"] = 25910,	-- Westfall Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 44.6, 62.1, WESTFALL },
+						-- #else
+						["coord"] = { 55.9, 53.5, WESTFALL },
+						-- #endif
 						["maps"] = { WESTFALL },
 					}),
 					q(11828, {	-- Honor the Flame — Wetlands
-						["provider"] = { "n", 25911 },	-- Wetlands Flame Warden
+						["qg"] = 25911,	-- Wetlands Flame Warden
 						["coord"] = { 13.5, 47.1, WETLANDS },
 						["maps"] = { WETLANDS },
 					}),
 					q(11834, {	-- Honor the Flame — Winterspring
-						["provider"] = { "n", 25917 },	-- Winterspring Flame Warden
+						["qg"] = 25917,	-- Winterspring Flame Warden
+						-- #if AFTER CATA
 						["coord"] = { 62.0, 35.0, WINTERSPRING },
+						-- #else
+						["coord"] = { 62.6, 35.4, WINTERSPRING },
+						-- #endif
 						["maps"] = { WINTERSPRING },
 					}),
 					q(11829, {	-- Honor the Flame — Zangarmarsh
-						["provider"] = { "n", 25912 },	-- Zangarmarsh Flame Warden
+						["qg"] = 25912,	-- Zangarmarsh Flame Warden
 						["coord"] = { 69.0, 52.0, ZANGARMARSH },
 						["maps"] = { ZANGARMARSH },
 					}),
 					q(13492, {	-- Honor the Flame — Zul'Drak
-						["provider"] = { "n", 32808 },	-- Zul'Drak Flame Warden
+						["qg"] = 32808,	-- Zul'Drak Flame Warden
 						["coord"] = { 41.0, 61.0, 121 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 121 },	-- Zul'Drak
 					}),
 				}),
@@ -3408,12 +3589,20 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				["groups"] = bubbleDown({ ["isYearly"] = true, ["races"] = HORDE_ONLY }, {
 					q(11732, {	-- Desecrate this Fire! — Arathi Highlands
 						["provider"] = { "o", 187914 },	-- Alliance Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 44.8, 46.1, ARATHI_HIGHLANDS },
+						-- #else
+						["coord"] = { 50.3, 44.9, ARATHI_HIGHLANDS },
+						-- #endif
 						["maps"] = { ARATHI_HIGHLANDS },
 					}),
 					q(11734, {	-- Desecrate this Fire! — Ashenvale
 						["provider"] = { "o", 187916 },	-- Alliance Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 86.7, 41.4, ASHENVALE },
+						-- #else
+						["coord"] = { 37.8, 55.0, ASHENVALE },
+						-- #endif
 						["maps"] = { ASHENVALE },
 					}),
 					q(11735, {	-- Desecrate this Fire! — Azuremyst Isle
@@ -3424,6 +3613,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(28912, {	-- Desecrate this Fire! — Badlands
 						["provider"] = { "o", 207984 },	-- Alliance Bonfire
 						["coord"] = { 18.5, 56.1, BADLANDS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { BADLANDS },
 					}),
 					q(11736, {	-- Desecrate this Fire! — Blade's Edge Mountains
@@ -3433,7 +3623,11 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(11737, {	-- Desecrate this Fire! — Blasted Lands
 						["provider"] = { "o", 187920 },	-- Alliance Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 55.2, 15.3, BLASTED_LANDS },
+						-- #else
+						["coord"] = { 59.0, 17.2, BLASTED_LANDS },
+						-- #endif
 						["maps"] = { BLASTED_LANDS },
 					}),
 					q(11738, {	-- Desecrate this Fire! — Bloodmyst Isle
@@ -3444,21 +3638,31 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(13440, {	-- Desecrate this Fire! — Borean Tundra
 						["provider"] = { "o", 194032 },	-- Alliance Bonfire
 						["coord"] = { 55.1, 20.2, 114 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 114 },	-- Borean Tundra
 					}),
 					q(11739, {	-- Desecrate this Fire! — Burning Steppes
 						["provider"] = { "o", 187922 },	-- Alliance Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 68.6, 59.9, BURNING_STEPPES },
+						-- #else
+						["coord"] = { 80.5, 62.4, BURNING_STEPPES },
+						-- #endif
 						["maps"] = { BURNING_STEPPES },
 					}),
 					q(13447, {	-- Desecrate this Fire! — Crystalsong Forest
 						["provider"] = { "o", 194045 },	-- Alliance Bonfire
 						["coord"] = { 77.7, 74.9, 127 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 127 },	-- Crystalsong Forest
 					}),
 					q(11740, {	-- Desecrate this Fire! — Darkshore
 						["provider"] = { "o", 187923 },	-- Alliance Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 49.0, 22.5, DARKSHORE },
+						-- #else
+						["coord"] = { 37.1, 45.9, DARKSHORE },
+						-- #endif
 						["maps"] = { DARKSHORE },
 					}),
 					q(11741, {	-- Desecrate this Fire! — Desolace
@@ -3469,16 +3673,22 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(13443, {	-- Desecrate this Fire! — Dragonblight
 						["provider"] = { "o", 194036 },	-- Alliance Bonfire
 						["coord"] = { 75.1, 43.7, 115 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 115 },	-- Dragonblight
 					}),
 					q(54742, {	-- Desecrate this Fire! — Drustvar
 						["provider"] = { "o", 316793 },	-- Alliance Bonfire
 						["coord"] = { 40.2, 47.3, 896 },
+						["timeline"] = { "added 8.0.1" },
 						["maps"] = { 896 },	-- Drustvar
 					}),
 					q(11742, {	-- Desecrate this Fire! — Dun Morogh
 						["provider"] = { "o", 187925 },	-- Alliance Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 53.8, 44.7, DUN_MOROGH },
+						-- #else
+						["coord"] = { 46.6, 46.5, DUN_MOROGH },
+						-- #endif
 						["maps"] = { DUN_MOROGH },
 					}),
 					q(11743, {	-- Desecrate this Fire! — Duskwood
@@ -3492,8 +3702,12 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["maps"] = { DUSTWALLOW_MARSH },
 					}),
 					q(11745, {	-- Desecrate this Fire! — Elwynn Forest
-						["provider"] = { "o", 187564 },	-- Alliance Bonfire
+						["provider"] = { "o", 187928 },	-- Alliance Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 43.2, 63.0, ELWYNN_FOREST },
+						-- #else
+						["coord"] = { 43.2, 62.8, ELWYNN_FOREST },
+						-- #endif
 						["maps"] = { ELWYNN_FOREST },
 					}),
 					q(11746, {	-- Desecrate this Fire! — Feralas
@@ -3504,6 +3718,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(13445, {	-- Desecrate this Fire! — Grizzly Hills
 						["provider"] = { "o", 194040 },	-- Alliance Bonfire
 						["coord"] = { 34.1, 60.7, 116 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 116 },	-- Grizzly Hills
 					}),
 					q(11747, {	-- Desecrate this Fire! — Hellfire Peninsula
@@ -3511,14 +3726,25 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 61.9, 58.5, HELLFIRE_PENINSULA },
 						["maps"] = { HELLFIRE_PENINSULA },
 					}),
+					q(11748, {	-- Desecrate this Fire! — Hillsbrad Foothills
+						["provider"] = { "o", 187931 },	-- Alliance Bonfire
+						["coord"] = { 50.4, 47.1, HILLSBRAD_FOOTHILLS },
+						["timeline"] = { "removed 4.0.1" },	-- Southshore got destroyed with Cataclysm
+						["maps"] = { HILLSBRAD_FOOTHILLS },
+					}),
 					q(13444, {	-- Desecrate this Fire! — Howling Fjord
 						["provider"] = { "o", 194038 },	-- Alliance Bonfire
 						["coord"] = { 57.7, 15.7, 117 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 117 },	-- Howling Fjord
 					}),
 					q(11749, {	-- Desecrate this Fire! — Loch Modan
-						["provider"] = { "o", 187564 },	-- Alliance Bonfire
+						["provider"] = { "o", 187932 },	-- Alliance Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 32.3, 40.4, LOCH_MODAN },
+						-- #else
+						["coord"] = { 32.6, 40.5, LOCH_MODAN },
+						-- #endif
 						["maps"] = { LOCH_MODAN },
 					}),
 					q(11750, {	-- Desecrate this Fire! — Nagrand (Outland)
@@ -3534,11 +3760,16 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(28910, {	-- Desecrate this Fire! — Northern Stranglethorn
 						["provider"] = { "o", 207982 },	-- Alliance Bonfire
 						["coord"] = { 51.6, 63.3, NORTHERN_STRANGLETHORN },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { NORTHERN_STRANGLETHORN },
 					}),
 					q(11751, {	-- Desecrate this Fire! — Redridge Mountains
 						["provider"] = { "o", 187934 },	-- Alliance Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 24.4, 53.9, REDRIDGE_MOUNTAINS },
+						-- #else
+						["coord"] = { 24.9, 59.3, REDRIDGE_MOUNTAINS },
+						-- #endif
 						["maps"] = { REDRIDGE_MOUNTAINS },
 					}),
 					q(11752, {	-- Desecrate this Fire! — Shadowmoon Valley (Outland)
@@ -3549,46 +3780,64 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(44582, {	-- Desecrate this Fire! — Shadowmoon Valley (WoD)
 						["provider"] = { "o", 259871 },	-- Alliance Bonfire
 						["coord"] = { 42.8, 35.9, DRAENOR_SHADOWMOON_VALLEY },
+						["timeline"] = { "added 6.0.1" },
 						["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
 					}),
 					q(13442, {	-- Desecrate this Fire! — Sholazar Basin
 						["provider"] = { "o", 194035 },	-- Alliance Bonfire
 						["coord"] = { 47.9, 66.0, 119 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 119 },	-- Sholazar Basin
 					}),
 					q(11760, {	-- Desecrate this Fire! — Silithus
 						["provider"] = { "o", 187943 },	-- Alliance Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 60.5, 33.4, SILITHUS },
+						-- #else
+						["coord"] = { 57.7, 34.9, SILITHUS },
+						-- #endif
 						["maps"] = { SILITHUS },
 					}),
 					q(28913, {	-- Desecrate this Fire! — Southern Barrens
 						["provider"] = { "o", 207985 },	-- Alliance Bonfire
 						["coord"] = { 48.2, 72.4, SOUTHERN_BARRENS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { SOUTHERN_BARRENS },
 					}),
 					q(28915, {	-- Desecrate this Fire! — Stonetalon Mountains
 						["provider"] = { "o", 207987 },	-- Alliance Bonfire
 						["coord"] = { 49.6, 51.1, STONETALON_MOUNTAINS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { STONETALON_MOUNTAINS },
 					}),
 					q(13446, {	-- Desecrate this Fire! — Storm Peaks
 						["provider"] = { "o", 194044 },	-- Alliance Bonfire
 						["coord"] = { 41.4, 87.0, 120 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 120 },	-- Storm Peaks
 					}),
 					q(54739, {	-- Desecrate this Fire! — Stormsong Valley
 						["provider"] = { "o", 316791 },	-- Alliance Bonfire
 						["coord"] = { 36.0, 51.5, 942 },
+						["timeline"] = { "added 8.0.1" },
 						["maps"] = { 942 },	-- Stormsong Valley
+					}),
+					q(11761, {	-- Desecrate this Fire! — Stranglethorn Vale
+						["provider"] = { "o", 187944 },	-- Alliance Bonfire
+						["coord"] = { 33.8, 73.3, STRANGLETHORN_VALE },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { STRANGLETHORN_VALE },
 					}),
 					q(44624, {	-- Desecrate this Fire! — Suramar
 						["provider"] = { "o", 259927 },	-- Alliance Bonfire
 						["coord"] = { 22.8, 58.2, SURAMAR },
+						["timeline"] = { "added 7.0.1" },
 						["maps"] = { SURAMAR },
 					}),
 					q(28916, {	-- Desecrate this Fire! — Swamp of Sorrows
 						["provider"] = { "o", 207988 },	-- Alliance Bonfire
 						["coord"] = { 70.1, 14.8, SWAMP_OF_SORROWS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { SWAMP_OF_SORROWS },
 					}),
 					q(11762, {	-- Desecrate this Fire! — Tanaris
@@ -3598,7 +3847,11 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(11753, {	-- Desecrate this Fire! — Teldrassil
 						["provider"] = { "o", 187936 },	-- Alliance Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 54.7, 52.7, TELDRASSIL },
+						-- #else
+						["coord"] = { 54.9, 60.5, TELDRASSIL },
+						-- #endif
 						["maps"] = { TELDRASSIL },
 					}),
 					q(11754, {	-- Desecrate this Fire! — Terokkar Forest
@@ -3606,10 +3859,15 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 54.2, 55.4, TEROKKAR_FOREST },
 						["maps"] = { TEROKKAR_FOREST },
 					}),
-					q(11761, {	-- Desecrate this Fire! — The Cape of Stranglethorn
+					q(11761, {	-- Desecrate this Fire! — The Cape of Stranglethorn / Stranglethorn Vale
 						["provider"] = { "o", 187944 },	-- Alliance Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 51.7, 67.3, 210 },
 						["maps"] = { 210 },	-- The Cape of Stranglethorn
+						-- #else
+						["coord"] = { 33.8, 73.3, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						-- #endif
 					}),
 					q(11755, {	-- Desecrate this Fire! — The Hinterlands
 						["provider"] = { "o", 187938 },	-- Alliance Bonfire
@@ -3619,26 +3877,31 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(54736, {	-- Desecrate this Fire! — Tiragarde Sound
 						["provider"] = { "o", 316788 },	-- Alliance Bonfire
 						["coord"] = { 76.3, 49.7, 895 },
+						["timeline"] = { "added 8.0.1" },
 						["maps"] = { 895 },	-- Tiragarde Sound
 					}),
 					q(28943, {	-- Desecrate this Fire! — Twilight Highlands
 						["provider"] = { "o", 208089 },	-- Alliance Bonfire
 						["coord"] = { 47.0, 28.3, TWILIGHT_HIGHLANDS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { TWILIGHT_HIGHLANDS },
 					}),
 					q(28947, {	-- Desecrate this Fire! — Uldum
 						["provider"] = { "o", 208093 },	-- Alliance Bonfire
 						["coord"] = { 53.4, 32.0, 249 },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { 249 },	-- Uldum
 					}),
 					q(28921, {	-- Desecrate this Fire! — Un'Goro Crater
 						["provider"] = { "o", 207993 },	-- Alliance Bonfire
 						["coord"] = { 60.0, 62.9, UNGORO_CRATER },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { UNGORO_CRATER },
 					}),
 					q(32503, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
 						["provider"] = { "o", 217851 },	-- Alliance Bonfire
 						["coord"] = { 79.8, 37.0, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { "added 5.0.1" },
 						["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 					}),
 					q(11756, {	-- Desecrate this Fire! — Western Plaguelands
@@ -3648,7 +3911,11 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(11581, {	-- Desecrate this Fire! — Westfall
 						["provider"] = { "o", 187564 },	-- Alliance Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 45.2, 62.3, WESTFALL },
+						-- #else
+						["coord"] = { 56.1, 53.9, WESTFALL },
+						-- #endif
 						["maps"] = { WESTFALL },
 					}),
 					q(11757, {	-- Desecrate this Fire! — Wetlands
@@ -3658,7 +3925,11 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(11763, {	-- Desecrate this Fire! — Winterspring
 						["provider"] = { "o", 187946 },	-- Alliance Bonfire
+						-- #if AFTER CATA
 						["coord"] = { 61.3, 47.1, WINTERSPRING },
+						-- #else
+						["coord"] = { 62.7, 35.4, WINTERSPRING },
+						-- #endif
 						["maps"] = { WINTERSPRING },
 					}),
 					q(11758, {	-- Desecrate this Fire! — Zangarmarsh
@@ -3669,276 +3940,372 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(13449, {	-- Desecrate this Fire! — Zul'Drak
 						["provider"] = { "o", 194049 },	-- Alliance Bonfire
 						["coord"] = { 40.4, 61.0, 121 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 121 },	-- Zul'Drak
 					}),
 					q(11840, {	-- Honor the Flame — Arathi Highlands
-						["provider"] = { "n", 25923 },	-- Arathi Flame Keeper
+						["qg"] = 25923,	-- Arathi Flame Keeper
+						-- #if AFTER CATA
 						["coord"] = { 69.4, 42.6, ARATHI_HIGHLANDS },
+						-- #else
+						["coord"] = { 74.2, 41.5, ARATHI_HIGHLANDS },
+						-- #endif
 						["maps"] = { ARATHI_HIGHLANDS },
 					}),
 					q(11841, {	-- Honor the Flame — Ashenvale
-						["provider"] = { "n", 25884 },	-- Ashenvale Flame Keeper
+						["qg"] = 25884,	-- Ashenvale Flame Keeper
+						-- #if AFTER CATA
 						["coord"] = { 51.4, 66.1, ASHENVALE },
+						-- #else
+						["coord"] = { 70.1, 69.3, ASHENVALE },
+						-- #endif
 						["maps"] = { ASHENVALE },
 					}),
 					q(28923, {	-- Honor the Flame — Azshara
-						["provider"] = { "n", 51575 },	-- Azshara Flame Keeper
+						["qg"] = 51575,	-- Azshara Flame Keeper
 						["coord"] = { 60.8, 53.5, AZSHARA },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { AZSHARA },
 					}),
 					q(11842, {	-- Honor the Flame — Badlands
-						["provider"] = { "n", 25925 },	-- Badlands Flame Keeper
+						["qg"] = 25925,	-- Badlands Flame Keeper
+						-- #if AFTER CATA
 						["coord"] = { 23.1, 37.4, BADLANDS },
+						-- #else
+						["coord"] = { 4.7, 48.6, BADLANDS },
+						-- #endif
 						["maps"] = { BADLANDS },
 					}),
 					q(11843, {	-- Honor the Flame — Blade's Edge Mountains
-						["provider"] = { "n", 25926 },	-- Blade's Edge Flame Keeper
+						["qg"] = 25926,	-- Blade's Edge Flame Keeper
 						["coord"] = { 50.0, 59.0, BLADES_EDGE_MOUNTAINS },
 						["maps"] = { BLADES_EDGE_MOUNTAINS },
 					}),
 					q(28930, {	-- Honor the Flame — Blasted Lands
-						["provider"] = { "n", 51603 },	-- Blasted Lands Flame Keeper
+						["qg"] = 51603,	-- Blasted Lands Flame Keeper
 						["coord"] = { 46.2, 13.8, BLASTED_LANDS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { BLASTED_LANDS },
 					}),
 					q(13493, {	-- Honor the Flame — Borean Tundra
-						["provider"] = { "n", 32809 },	-- Borean Tundra Flame Keeper
+						["qg"] = 32809,	-- Borean Tundra Flame Keeper
 						["coord"] = { 51.0, 12.0, 114 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 114 },	-- Borean Tundra
 					}),
 					q(11844, {	-- Honor the Flame — Burning Steppes
-						["provider"] = { "n", 25927 },	-- Burning Steppes Flame Keeper
+						["qg"] = 25927,	-- Burning Steppes Flame Keeper
+						-- #if AFTER CATA
 						["coord"] = { 51.1, 29.2, BURNING_STEPPES },
+						-- #else
+						["coord"] = { 61.8, 29.1, BURNING_STEPPES },
+						-- #endif
 						["maps"] = { BURNING_STEPPES },
 					}),
 					q(13499, {	-- Honor the Flame — Crystalsong Forest
-						["provider"] = { "n", 32815 },	-- Crystalsong Forest Flame Keeper
+						["qg"] = 32815,	-- Crystalsong Forest Flame Keeper
 						["coord"] = { 80.0, 53.0, 127 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 127 },	-- Crystalsong Forest
 					}),
 					q(29036, {	-- Honor the Flame — Deepholm
-						["provider"] = { "n", 51698 },	-- Deepholm Flame Guardian
+						["qg"] = 51698,	-- Deepholm Flame Guardian
 						["coord"] = { 49.4, 51.4, 207 },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { 207 },	-- Deepholm
 					}),
 					q(11845, {	-- Honor the Flame — Desolace
-						["provider"] = { "n", 25928 },	-- Desolace Flame Keeper
+						["qg"] = 25928,	-- Desolace Flame Keeper
 						["coord"] = { 26.1, 76.9, DESOLACE },
 						["maps"] = { DESOLACE },
 					}),
 					q(13495, {	-- Honor the Flame — Dragonblight
-						["provider"] = { "n", 32811 },	-- Dragonblight Flame Keeper
+						["qg"] = 32811,	-- Dragonblight Flame Keeper
 						["coord"] = { 39.0, 48.0, 115 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 115 },	-- Dragonblight
 					}),
 					q(11846, {	-- Honor the Flame — Durotar
-						["provider"] = { "n", 25929 },	-- Durotar Flame Keeper
+						["qg"] = 25929,	-- Durotar Flame Keeper
+						-- #if AFTER CATA
+						["coord"] = { 52.2, 47.3, DUROTAR },
+						-- #else
 						["coord"] = { 52.0, 47.0, DUROTAR },
+						-- #endif
 						["maps"] = { DUROTAR },
 					}),
 					q(11847, {	-- Honor the Flame — Dustwallow Marsh
-						["provider"] = { "n", 25930 },	-- Dustwallow Marsh Flame Keeper
+						["qg"] = 25930,	-- Dustwallow Marsh Flame Keeper
+						-- #if AFTER CATA
 						["coord"] = { 33.0, 30.0, DUSTWALLOW_MARSH },
+						-- #else
+						["coord"] = { 33.4, 30.9, DUSTWALLOW_MARSH },
+						-- #endif
 						["maps"] = { DUSTWALLOW_MARSH },
 					}),
 					q(11848, {	-- Honor the Flame — Eversong Woods
-						["provider"] = { "n", 25931 },	-- Eversong Woods Flame Keeper
+						["qg"] = 25931,	-- Eversong Woods Flame Keeper
 						["coord"] = { 46.4, 50.6, EVERSONG_WOODS },
 						["maps"] = { EVERSONG_WOODS },
 					}),
 					q(11849, {	-- Honor the Flame — Feralas
-						["provider"] = { "n", 25932 },	-- Feralas Flame Keeper
+						["qg"] = 25932,	-- Feralas Flame Keeper
 						["coord"] = { 72.4, 47.8, FERALAS },
 						["maps"] = { FERALAS },
 					}),
 					q(44580, {	-- Honor the Flame — Frostfire Ridge
-						["provider"] = { "n", 114499 },	-- Frostfire Ridge Flame Keeper
+						["qg"] = 114499,	-- Frostfire Ridge Flame Keeper
 						["coord"] = { 72.6, 65.0, FROSTFIRE_RIDGE },
+						["timeline"] = { "added 6.0.1" },
 						["maps"] = { FROSTFIRE_RIDGE },
 					}),
 					q(11850, {	-- Honor the Flame — Ghostlands
-						["provider"] = { "n", 25933 },	-- Ghostlands Flame Keeper
+						["qg"] = 25933,	-- Ghostlands Flame Keeper
 						["coord"] = { 46.9, 26.3, GHOSTLANDS },
 						["maps"] = { GHOSTLANDS },
 					}),
 					q(13497, {	-- Honor the Flame — Grizzly Hills
-						["provider"] = { "n", 32813 },	-- Grizzly Hills Flame Keeper
+						["qg"] = 32813,	-- Grizzly Hills Flame Keeper
 						["coord"] = { 19.0, 61.0, 116 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 116 },	-- Grizzly Hills
 					}),
 					q(11851, {	-- Honor the Flame — Hellfire Peninsula
-						["provider"] = { "n", 25934 },	-- Hellfire Peninsula Flame Keeper
+						["qg"] = 25934,	-- Hellfire Peninsula Flame Keeper
+						-- #if AFTER CATA
 						["coord"] = { 55.0, 40.0, HELLFIRE_PENINSULA },
+						-- #else
+						["coord"] = { 57.1, 42.0, HELLFIRE_PENINSULA },
+						-- #endif
 						["maps"] = { HELLFIRE_PENINSULA },
 					}),
 					q(11853, {	-- Honor the Flame — Hillsbrad Foothills
-						["provider"] = { "n", 25935 },	-- Hillsbrad Flame Keeper
+						["qg"] = 25935,	-- Hillsbrad Flame Keeper
+						-- #if AFTER CATA
 						["coord"] = { 54.7, 50.1, HILLSBRAD_FOOTHILLS },
+						-- #else
+						["coord"] = { 58.6, 25.4, HILLSBRAD_FOOTHILLS },
+						-- #endif
 						["maps"] = { HILLSBRAD_FOOTHILLS },
 					}),
 					q(13496, {	-- Honor the Flame — Howling Fjord
-						["provider"] = { "n", 32812 },	-- Howling Fjord Flame Keeper
+						["qg"] = 32812,	-- Howling Fjord Flame Keeper
 						["coord"] = { 48.0, 13.0, 117 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 117 },	-- Howling Fjord
 					}),
 					q(29030, {	-- Honor the Flame — Hyjal
-						["provider"] = { "n", 51682 },	-- Hyjal Flame Guardian
+						["qg"] = 51682,	-- Hyjal Flame Guardian
 						["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { MOUNT_HYJAL },
 					}),
 					q(11852, {	-- Honor the Flame — Mulgore
-						["provider"] = { "n", 25936 },	-- Mulgore Flame Keeper
+						["qg"] = 25936,	-- Mulgore Flame Keeper
 						["coord"] = { 51.8, 59.3, MULGORE },
 						["maps"] = { MULGORE },
 					}),
 					q(11854, {	-- Honor the Flame — Nagrand (Outland)
-						["provider"] = { "n", 25937 },	-- Nagrand Flame Keeper
+						["qg"] = 25937,	-- Nagrand Flame Keeper
 						["coord"] = { 51.0, 34.0, NAGRAND },
 						["maps"] = { NAGRAND },
 					}),
 					q(54747, {	-- Honor the Flame — Nazmir
-						["provider"] = { "n", 148950 },    -- Nazmir Flame Keeper
+						["qg"] = 148950,    -- Nazmir Flame Keeper
 						["coord"] = { 40.0, 74.3, 863 },
+						["timeline"] = { "added 8.0.1" },
 						["maps"] = { 863 },	-- Nazmir
 					}),
 					q(11835, {	-- Honor the Flame — Netherstorm
-						["provider"] = { "n", 25918 },	-- Netherstorm Flame Keeper
+						["qg"] = 25918,	-- Netherstorm Flame Keeper
 						["coord"] = { 32.0, 68.0, NETHERSTORM },
 						["maps"] = { NETHERSTORM },
 					}),
-					q(11859, {	-- Honor the Flame — Northern Barrens
-						["provider"] = { "n", 25943 },	-- The Northern Barrens Flame Keeper
+					q(11859, {	-- Honor the Flame — Northern Barrens / The Barrens
+						-- #if AFTER CATA
+						["qg"] = 25943,	-- The Northern Barrens Flame Keeper
 						["coord"] = { 50.0, 55.0, NORTHERN_BARRENS },
 						["maps"] = { NORTHERN_BARRENS },
+						-- #else
+						["qg"] = 25943,	-- The Barrens Flame Keeper
+						["coord"] = { 52.2, 28.0, THE_BARRENS },
+						["maps"] = { THE_BARRENS },
+						-- #endif
 					}),
 					q(28924, {	-- Honor the Flame — Northern Stranglethorn
-						["provider"] = { "n", 51582 },	-- Northern Stranglethorn Vale Flame Keeper
+						["qg"] = 51582,	-- Northern Stranglethorn Vale Flame Keeper
 						["coord"] = { 40.6, 50.9, NORTHERN_STRANGLETHORN },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { NORTHERN_STRANGLETHORN },
 					}),
 					q(11855, {	-- Honor the Flame — Shadowmoon Valley (Outland)
-						["provider"] = { "n", 25938 },	-- Shadowmoon Valley Flame Keeper
-						["coord"] = { 33.0, 30.0, SHADOWMOON_VALLEY },
+						["qg"] = 25938,	-- Shadowmoon Valley Flame Keeper
+						["coord"] = { 33.4, 30.5, SHADOWMOON_VALLEY },
 						["maps"] = { SHADOWMOON_VALLEY },
 					}),
 					q(13494, {	-- Honor the Flame — Sholazar Basin
-						["provider"] = { "n", 32810 },	-- Sholazar Basin Flame Keeper
+						["qg"] = 32810,	-- Sholazar Basin Flame Keeper
 						["coord"] = { 47.0, 62.0, 119 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 119 },	-- Sholazar Basin
 					}),
 					q(11836, {	-- Honor the Flame — Silithus
-						["provider"] = { "n", 25919 },	-- Silithus Flame Keeper
+						["qg"] = 25919,	-- Silithus Flame Keeper
+						-- #if AFTER CATA
 						["coord"] = { 50.9, 41.3, SILITHUS },
+						-- #else
+						["coord"] = { 46.5, 44.4, SILITHUS },
+						-- #endif
 						["maps"] = { SILITHUS },
 					}),
 					q(11584, {	-- Honor the Flame — Silverpine Forest
-						["provider"] = { "n", 25939 },	-- Silverpine Forest Flame Keeper
-						["coord"] = { 49.6, 38.2, 21 },
-						["maps"] = { 21 },	-- Silverpine Forest
+						["qg"] = 25939,	-- Silverpine Forest Flame Keeper
+						["coord"] = { 49.6, 38.2, SILVERPINE_FOREST },
+						["maps"] = { SILVERPINE_FOREST },	-- Silverpine Forest
 					}),
 					q(28927, {	-- Honor the Flame — Southern Barrens
-						["provider"] = { "n", 51587 },	-- The Southern Barrens Flame Keeper
+						["qg"] = 51587,	-- The Southern Barrens Flame Keeper
 						["coord"] = { 41.0, 68.0, SOUTHERN_BARRENS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { SOUTHERN_BARRENS },
 					}),
 					q(11856, {	-- Honor the Flame — Stonetalon Mountains
-						["provider"] = { "n", 25940 },	-- Stonetalon Flame Keeper
+						["qg"] = 25940,	-- Stonetalon Flame Keeper
+						-- #if AFTER CATA
 						["coord"] = { 52.9, 62.5, STONETALON_MOUNTAINS },
+						-- #else
+						["coord"] = { 50.5, 60.5, STONETALON_MOUNTAINS },
+						-- #endif
 						["maps"] = { STONETALON_MOUNTAINS },
 					}),
 					q(13498, {	-- Honor the Flame — Storm Peaks
-						["provider"] = { "n", 32814 },	-- Storm Peaks Flame Keeper
+						["qg"] = 32814,	-- Storm Peaks Flame Keeper
 						["coord"] = { 40.0, 86.0, 120 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 120 },	-- Storm Peaks
 					}),
 					q(44614, {	-- Honor the Flame — Suramar
-						["provider"] = { "n", 114518 },	-- Suramar Flame Keeper
+						["qg"] = 114518,	-- Suramar Flame Keeper
 						["coord"] = { 30.4, 45.4, SURAMAR },
+						["timeline"] = { "added 7.0.1" },
 						["maps"] = { SURAMAR },
 					}),
 					q(11857, {	-- Honor the Flame — Swamp of Sorrows
-						["provider"] = { "n", 25941 },	-- Swamp of Sorrows Flame Keeper
+						["qg"] = 25941,	-- Swamp of Sorrows Flame Keeper
+						-- #if AFTER CATA
 						["coord"] = { 76.3, 13.8, SWAMP_OF_SORROWS },
+						-- #else
+						["coord"] = { 46.7, 47.0, SWAMP_OF_SORROWS },
+						-- #endif
 						["maps"] = { SWAMP_OF_SORROWS },
 					}),
 					q(11838, {	-- Honor the Flame — Tanaris
-						["provider"] = { "n", 25921 },	-- Tanaris Flame Keeper
+						["qg"] = 25921,	-- Tanaris Flame Keeper
+						-- #if AFTER CATA
 						["coord"] = { 49.8, 27.9, TANARIS },
+						-- #else
+						["coord"] = { 49.8, 26.9, TANARIS },
+						-- #endif
 						["maps"] = { TANARIS },
 					}),
 					q(11858, {	-- Honor the Flame — Terokkar Forest
-						["provider"] = { "n", 25942 },	-- Terokkar Forest Flame Keeper
+						["qg"] = 25942,	-- Terokkar Forest Flame Keeper
 						["coord"] = { 52.0, 43.0, TEROKKAR_FOREST },
 						["maps"] = { TEROKKAR_FOREST },
 					}),
-					q(11837, {	-- Honor the Flame — The Cape of Stranglethorn
-						["provider"] = { "n", 25920 },	-- Cape of Stranglethorn Flame Keeper
+					q(11837, {	-- Honor the Flame — The Cape of Stranglethorn / Stranglethorn Vale
+						-- #if AFTER CATA
+						["qg"] = 25920,	-- Cape of Stranglethorn Flame Keeper
 						["coord"] = { 50.4, 70.4, 210 },
 						["maps"] = { 210 },	-- The Cape of Stranglethorn
+						-- #else
+						["qg"] = 25920,	-- Stranglethorn Vale Flame Keeper
+						["coord"] = { 32.9, 75.2, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						-- #endif
 					}),
 					q(11860, {	-- Honor the Flame — The Hinterlands
-						["provider"] = { "n", 25944 },	-- The Hinterlands Flame Keeper
+						["qg"] = 25944,	-- The Hinterlands Flame Keeper
 						["coord"] = { 76.6, 75.0, THE_HINTERLANDS },
 						["maps"] = { THE_HINTERLANDS },
 					}),
+					q(11861, {	-- Honor the Flame — Thousand Needles
+						["qg"] = 25945,	-- Thousand Needles Flame Warden
+						["coord"] = { 42.3, 52.9, THOUSAND_NEEDLES },
+						["timeline"] = { "removed 4.0.1" },	-- Freewind Post got destroyed with Cataclysm
+						["maps"] = { THOUSAND_NEEDLES },
+					}),
 					q(11862, {	-- Honor the Flame — Tirisfal Glades
-						["provider"] = { "n", 25946 },	-- Tirisfal Glades Flame Keeper
+						["qg"] = 25946,	-- Tirisfal Glades Flame Keeper
 						["coord"] = { 57.2, 51.8, TIRISFAL_GLADES },
 						["maps"] = { TIRISFAL_GLADES },
 					}),
 					q(28946, {	-- Honor the Flame — Twilight Highlands
-						["provider"] = { "n", 51651 },	-- Twilight Highlands Flame Keeper
+						["qg"] = 51651,	-- Twilight Highlands Flame Keeper
 						["coord"] = { 53.1, 46.2, TWILIGHT_HIGHLANDS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { TWILIGHT_HIGHLANDS },
 					}),
 					q(28949, {	-- Honor the Flame — Uldum
-						["provider"] = { "n", 51652 },	-- Uldum Flame Keeper
+						["qg"] = 51652,	-- Uldum Flame Keeper
 						["coord"] = { 53.2, 34.5, 249 },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { 249 },	-- Uldum
 					}),
 					q(28933, {	-- Honor the Flame — Un'goro Crater
-						["provider"] = { "n", 51607 },	-- Un'Goro Flame Keeper
+						["qg"] = 51607,	-- Un'Goro Flame Keeper
 						["coord"] = { 56.0, 66.0, UNGORO_CRATER },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { UNGORO_CRATER },
 					}),
 					q(32509, {	-- Honor the Flame — Vale of Eternal Blossoms
-						["provider"] = { "n", 69551 },	-- Vale of Eternal Blossoms Flame Keeper
+						["qg"] = 69551,	-- Vale of Eternal Blossoms Flame Keeper
 						["coord"] = { 77.8, 33.1, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { "added 5.0.1" },
 						["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 					}),
 					q(29031, {	-- Honor the Flame — Vashj'ir
-						["provider"] = { "n", 51697 },	-- Vashj'ir Flame Guardian
+						["qg"] = 51697,	-- Vashj'ir Flame Guardian
 						["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { 203, 205 },	-- Vashj'ir + Shimmering Expanse
 					}),
 					q(54750, {	-- Honor the Flame — Vol'dun
-						["provider"] = { "n", 148986 },    -- Vol'dun Flame Keeper
+						["qg"] = 148986,    -- Vol'dun Flame Keeper
 						["coord"] = { 56.0, 47.8, 864 },
+						["timeline"] = { "added 8.0.1" },
 						["maps"] = { 864 },	-- Vol'dun
 					}),
 					q(28931, {	-- Honor the Flame — Western Plaguelands
-						["provider"] = { "n", 51604 },	-- Western Plaguelands Flame Keeper
+						["qg"] = 51604,	-- Western Plaguelands Flame Keeper
 						["coord"] = { 29.2, 57.3, WESTERN_PLAGUELANDS },
+						["timeline"] = { "added 4.0.1" },
 						["maps"] = { WESTERN_PLAGUELANDS },
 					}),
 					q(11839, {	-- Honor the Flame — Winterspring
-						["provider"] = { "n", 25922 },	-- Winterspring Flame Keeper
+						["qg"] = 25922,	-- Winterspring Flame Keeper
+						-- #if AFTER CATA
 						["coord"] = { 58.1, 47.5, WINTERSPRING },
+						-- #else
+						["coord"] = { 59.9, 35.6, WINTERSPRING },
+						-- #endif
 						["maps"] = { WINTERSPRING },
 					}),
 					q(11863, {	-- Honor the Flame — Zangarmarsh
-						["provider"] = { "n", 25947 },	-- Zangarmarsh Flame Keeper
+						["qg"] = 25947,	-- Zangarmarsh Flame Keeper
 						["coord"] = { 35.3, 51.6, ZANGARMARSH },
 						["maps"] = { ZANGARMARSH },
 					}),
 					q(54745, {	-- Honor the Flame — Zuldazar
-						["provider"] = { "n", 148944 },	-- Zuldazar Flame Keeper
+						["qg"] = 148944,	-- Zuldazar Flame Keeper
 						["coord"] = { 53.3, 48.1, 862 },
+						["timeline"] = { "added 8.0.1" },
 						["maps"] = { 862 },	-- Zuldazar
 					}),
 					q(13500, {	-- Honor the Flame — Zul'Drak
-						["provider"] = { "n", 32816 },	-- Zul'Drak Flame Keeper
+						["qg"] = 32816,	-- Zul'Drak Flame Keeper
 						["coord"] = { 43.0, 71.0, 121 },
+						["timeline"] = { "added 3.0.1" },
 						["maps"] = { 121 },	-- Zul'Drak
 					}),
 				}),
