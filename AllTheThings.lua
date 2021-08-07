@@ -14159,8 +14159,7 @@ local function ProcessGroup(data, object)
 	end
 end
 local function UpdateWindow(self, force, got)
-	if not app.IsReady then return; end
-	if self.data then
+	if self.data and app.IsReady then
 		-- print("Update:",self.Suffix or self.suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
 		if force or self:IsVisible() then
 			if not self.rowData then self.rowData = {};
