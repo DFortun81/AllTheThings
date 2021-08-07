@@ -99,6 +99,7 @@ _.ExpansionFeatures =
 						151331,	-- Cellblock Sentinel
 						157122,	-- Patrician Cromwell
 						159190,	-- Synod
+						159755,	-- The Grand Malleare
 					},
 				}),
 				i(187027, {	-- Skoldus' Shoulder Skewers
