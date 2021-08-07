@@ -97,70 +97,6 @@ local FESTIVAL_TALESPINNER_MAPS = {
 	-- #endif
 };
 
-local FIRE_EATER_ALLIANCE_ID = 25962;	-- Fire Eater (A)
-local FIRE_EATER_ALLIANCE_MAPS = {
-	ARATHI_HIGHLANDS,
-	BADLANDS,
-	BLASTED_LANDS,
-	WESTERN_PLAGUELANDS,
-	THE_HINTERLANDS,
-	DUN_MOROGH,
-	BURNING_STEPPES,
-	ELWYNN_FOREST,
-	DUSKWOOD,
-	LOCH_MODAN,
-	REDRIDGE_MOUNTAINS,
-	NORTHERN_STRANGLETHORN,
-	SWAMP_OF_SORROWS,
-	WESTFALL,
-	WETLANDS,
-	TELDRASSIL,
-	DARKSHORE,
-	ASHENVALE,
-	STONETALON_MOUNTAINS,
-	DESOLACE,
-	DUSTWALLOW_MARSH,
-	TANARIS,
-	WINTERSPRING,
-	AZUREMYST_ISLE,
-	HELLFIRE_PENINSULA,
-	ZANGARMARSH,
-	TEROKKAR_FOREST,
-	NETHERSTORM,
-	SHATTRATH_CITY,
-	114,	-- Borean Tundra
-	115,	-- Dragonblight
-	116,	-- Grizzly Hills
-	117,	-- Howling Fjord
-	119,	-- Sholazar Basin
-	120,	-- The Storm Peaks
-	121,	-- Zul'Drak
-	127,	-- Crystalsong Forest
-	SOUTHERN_BARRENS,
-	210,	-- The Cape of Stranglethorn
-	TWILIGHT_HIGHLANDS,
-	249,	-- Uldum
-};
-
-local FIRE_EATER_HORDE_ID = 25994;	-- Fire Eater (H)
-local FIRE_EATER_HORDE_MAPS = {
-	DUROTAR,
-	MULGORE,
-	NORTHERN_BARRENS,
-	TIRISFAL_GLADES,
-	ASHENVALE,
-	TANARIS,
-	AZSHARA,
-	UNGORO_CRATER,
-	WINTERSPRING,
-	EVERSONG_WOODS,
-	HELLFIRE_PENINSULA,
-	ZANGARMARSH,
-	117,	-- Howling Fjord
-	119,	-- Sholazar Basin
-	249,	-- Uldum
-};
-
 -- #if AFTER WRATH
 local FLAME_STEAL_LEVEL_REQUIREMENT = 1;	-- Level requirement reduced to 1 after Wrath. (haha have fun with that!)
 -- #else
@@ -2165,14 +2101,12 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 			},
 		}),
 		q(11882, {	-- Playing with Fire (A)
-			["qg"] = FIRE_EATER_ALLIANCE_ID,
-			["maps"] = FIRE_EATER_HALLIANCE_MAPS,
+			["qg"] = 25962,	-- Fire Eater (A)
 			["timeline"] = { "added 2.4.0.7994" },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(11915, {	-- Playing with Fire (H)
-			["qg"] = FIRE_EATER_HORDE_ID,
-			["maps"] = FIRE_EATER_HORDE_MAPS,
+			["qg"] = 25994,	-- Fire Eater (H)
 			["timeline"] = { "added 2.4.0.7994" },
 			["races"] = HORDE_ONLY,
 		}),
