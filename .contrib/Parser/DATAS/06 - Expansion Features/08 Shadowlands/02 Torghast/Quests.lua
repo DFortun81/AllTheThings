@@ -32,9 +32,6 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
-				q(63987, {	-- Ve'lor's Lost Parcel
-					["provider"] = { "n", 178932 },	-- Ve'lor the Messenger
-				}),
 				q(64210, {	-- The Box of Many Things
 				--	i think it actually might be available earlier?  the quest showed up before i turned in 'in darkness,' picked up while i was in the 'a paladin's soul' scenario.
 				--	'in darkness' doesn't LOOK like a breadcrumb quest (because it doesn't hide 'the box of many things' until after it's turned in, but if 'the box' IS available earlier then your character may get locked out of picking up 'in darkness' if they overlooked it... so it may be a breadcrumb.  i do not knoooooow
@@ -578,6 +575,10 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					-- ["provider"] = { "n", ??? },	-- TODO: ???
+				}),
+				q(63987, {	-- Ve'lor's Lost Parcel
+					["repeatable"] = true,
+					["provider"] = { "n", 178932 },	-- Ve'lor the Messenger
 				}),
 				q(62231, {	-- Velkein's Blade
 					["sourceQuests"] = { 60136 },	-- Into Torghast

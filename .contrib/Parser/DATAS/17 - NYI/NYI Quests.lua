@@ -13,8 +13,12 @@ _.NeverImplemented =
 		tier(LEGION_TIER, {	-- These Quests might be ingame, very unlikely however.
 			q(43497),	-- Legion 110 A
 			q(43498),	-- Legion 110 A
-			q(41710),	-- Legion 110 A
-			q(41712),	-- Legion 110 A
+			q(41710, {	-- Legion 110 A
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
+			q(41712, {	-- Legion 110 A
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(41714),	-- Legion 110 A
 			q(41716),	-- Legion 110 A
 			q(41718),	-- Legion 110 A
@@ -24,15 +28,23 @@ _.NeverImplemented =
 			q(42458),	-- Legion 110 A
 			q(42462),	-- Legion 110 A
 			q(42464),	-- Legion 110 A
-			q(42466),	-- Legion 110 A
-			q(42467),	-- Legion 110 A
+			q(42466, {	-- Legion 110 A
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
+			q(42467, {	-- Legion 110 A
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(42468),	-- Legion 110 A
 			q(42469),	-- Legion 110 A
 			q(42470),	-- Legion 110 A
 			q(43499),	-- Legion 110 H
 			q(43500),	-- Legion 110 H
-			q(41711),	-- Legion 110 H
-			q(41713),	-- Legion 110 H
+			q(41711, {	-- Legion 110 H
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
+			q(41713, {	-- Legion 110 H
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(41715),	-- Legion 110 H
 			q(41717),	-- Legion 110 H
 			q(41719),	-- Legion 110 H
@@ -42,8 +54,12 @@ _.NeverImplemented =
 			q(42460),	-- Legion 110 H
 			q(42463),	-- Legion 110 H
 			q(42465),	-- Legion 110 H
-			q(42471),	-- Legion 110 H
-			q(42472),	-- Legion 110 H
+			q(42471, {	-- Legion 110 H
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
+			q(42472, {	-- Legion 110 H
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(42473),	-- Legion 110 H
 			q(42474),	-- Legion 110 H
 			q(42475),	-- Legion 110 H
@@ -85,27 +101,39 @@ _.NeverImplemented =
 			q(53561),	-- BFA 111-119 E
 			q(53562),	-- BFA 111-119 E
 			q(53563),	-- BFA 111-119 E
-			q(53379),	-- BFA 120 E
+			q(53379, {	-- BFA 120 E
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(53380),	-- BFA 120 E
 			q(53381),	-- BFA 120 E
-			q(53382),	-- BFA 120 E
+			q(53382, {	-- BFA 120 E
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(53383),	-- BFA 120 E
 			q(53391),	-- BFA 120 E
 			q(53392),	-- BFA 120 E
 			q(53393),	-- BFA 120 E
-			q(53394),	-- BFA 120 E
+			q(53394, {	-- BFA 120 E
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(53395),	-- BFA 120 E
 			q(53396),	-- BFA 120 E
 			q(53397),	-- BFA 120 E
-			q(53398),	-- BFA 120 E
+			q(53398, {	-- BFA 120 E
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(53399),	-- BFA 120 E
 			q(53400),	-- BFA 120 E
 			q(53401),	-- BFA 120 E
 			q(53402),	-- BFA 120 E
 			q(53403),	-- BFA 120 E
 			q(53404),	-- BFA 120 E
-			q(53554),	-- BFA 120 E
-			q(53555),	-- BFA 120 E
+			q(53554, {	-- BFA 120 E
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
+			q(53555, {	-- BFA 120 E
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(53556),	-- BFA 120 E
 			q(53557),	-- BFA 120 E
 			q(53558),	-- BFA 120 E
@@ -115,12 +143,22 @@ _.NeverImplemented =
 			q(57974),	-- Heroic: Battle for Darkshore
 			q(56129),	-- Heroic: Battle for Stromgarde
 			q(56206),	-- Heroic: Battle for Stromgarde
-			q(53727),	-- Legion 110 H		-- Legion quest with BFA ID smh
-			q(53728),	-- Legion 110 H		-- Legion quest with BFA ID smh
-			q(53729),	-- Legion 110 H		-- Legion quest with BFA ID smh
+			q(53727, {	-- Legion 110 H		-- Legion quest with BFA ID smh
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
+			q(53728, {	-- Legion 110 H		-- Legion quest with BFA ID smh
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
+			q(53729, {	-- Legion 110 H		-- Legion quest with BFA ID smh
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(53730),	-- Legion 110 H		-- Legion quest with BFA ID smh
-			q(53731),	-- Legion 110 A		-- Legion quest with BFA ID smh
-			q(53732),	-- Legion 110 A		-- Legion quest with BFA ID smh
+			q(53731, {	-- Legion 110 A		-- Legion quest with BFA ID smh
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
+			q(53732, {	-- Legion 110 A		-- Legion quest with BFA ID smh
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(53733),	-- Legion 110 A		-- Legion quest with BFA ID smh
 			q(53339),	-- LFG - BFA - Island Expedition - Heroic Win - Nth
 			q(53340),	-- LFG - BFA - Island Expedition - Mythic Win - Nth
@@ -164,27 +202,39 @@ _.NeverImplemented =
 			q(60023),	-- Shadowlands (60) E
 			q(60024),	-- Shadowlands (60) E
 			q(60025),	-- Shadowlands (60) E
-			q(60031),	-- Shadowlands (60) E
+			q(60031, {	-- Shadowlands (60) E
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(60032),	-- Shadowlands (60) E
 			q(60033),	-- Shadowlands (60) E
 			q(60034),	-- Shadowlands (60) E
-			q(60035),	-- Shadowlands (60) E
-			q(60036),	-- Shadowlands (60) E
+			q(60035, {	-- Shadowlands (60) E
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
+			q(60036, {	-- Shadowlands (60) E
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(60037),	-- Shadowlands (60) E
 			q(60038),	-- Shadowlands (60) E
 			q(60039),	-- Shadowlands (60) E
-			q(60040),	-- Shadowlands (60) E
+			q(60040, {	-- Shadowlands (60) E
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(60014),	-- Shadowlands 60 E
 			q(60015),	-- Shadowlands 60 E
 			q(60016),	-- Shadowlands 60 E
 			q(60017),	-- Shadowlands 60 E
 			q(60018),	-- Shadowlands 60 E
 			q(60019),	-- Shadowlands 60 E
-			q(60026),	-- Shadowlands 60 E
+			q(60026, {	-- Shadowlands 60 E
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(60027),	-- Shadowlands 60 E
 			q(60028),	-- Shadowlands 60 E
 			q(60029),	-- Shadowlands 60 E
-			q(60030),	-- Shadowlands 60 E
+			q(60030, {	-- Shadowlands 60 E
+				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+			}),
 			q(60474),	-- Spawn Tracking Unit-Specified World Effect in a WMO Bug
 			q(55660),	-- Time Trials (Tournament Realm Quest)
 			q(62402),	-- Timewalking Campaigns

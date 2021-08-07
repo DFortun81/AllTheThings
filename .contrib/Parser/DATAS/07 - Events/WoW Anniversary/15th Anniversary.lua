@@ -1290,6 +1290,7 @@ _.WorldEvents =
 					["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
 					["u"] = 31,	-- WoW Anniversary
 					["isWeekly"] = true,
+					["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
 				}),
 				q(43323, {	-- A Time to Reflect (A)
 					["provider"] = { "n", 110034 },		-- Historian Llore

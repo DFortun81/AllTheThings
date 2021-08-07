@@ -40,6 +40,7 @@ _.Zones =
 						{ "n", 144383 },	-- Chronicler Toopa
 					},
 					["isWeekly"] = true,
+					["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
 				}),
 				q(53033, {	-- A Frozen Path Through Time (WotLK Timewalking)
 					["providers"] = {

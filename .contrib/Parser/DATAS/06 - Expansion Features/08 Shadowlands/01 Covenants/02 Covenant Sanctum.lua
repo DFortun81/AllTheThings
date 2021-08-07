@@ -238,16 +238,10 @@ _.ExpansionFeatures =
 				}),
 				n(QUESTS, {
 				--	LIVE DATA
-					q(63592, {	-- A New Path
-						["sourceQuests"] = { 63591 },	-- The Grand Reception
-						["provider"] = { "n", 180189 },	-- Polemarch Kalisthene
-						["coord"] = { 55.8, 29.9, 2017 },
-						["maps"] = { SPIRES_OF_ASCENSION },
-					}),
 					q(63586, {	-- Compassion in Devotion
 						["sourceQuests"] = { 63585 },	-- Blind Loyalty
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 66.5, 16.5, ARCHONS_RISE },
+						["coord"] = { 55.4, 42.4, ARCHONS_RISE },
 					}),
 					q(63651, {	-- Cryptograms
 						["sourceQuests"] = { 63650 },	-- De-Infiltration
@@ -267,9 +261,9 @@ _.ExpansionFeatures =
 					}),
 					q(63593, {	-- New Sigil of the Kyrian
 						["sourceQuests"] = { 63592 },	-- A New Path
-						["provider"] = { "n", 177116 },	-- Polemarch Adrestes
-						["coord"] = { 46.0, 58.0, SPIRES_OF_ASCENSION },
-						["maps"] = { SPIRES_OF_ASCENSION },
+						["provider"] = { "n", 179379 },	-- Polemarch Adrestes
+						["coord"] = { 46.0, 58.0, 2018 },	-- Spires of Ascension (scenario)
+						["maps"] = { 2018 },	-- Spires of Ascension (scenario)
 					}),
 					q(63652, {	-- The "Unwelcome" Guests
 						["sourceQuests"] = { 63650 },	-- De-Infiltration
@@ -280,7 +274,14 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 63584 },	-- A Triumphant Return
 						["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
 						["coord"] = { 64.0, 19.1, ARCHONS_RISE },
-						["maps"] = { SPIRES_OF_ASCENSION },
+						["maps"] = { 2017 },	-- Spires of Ascension (scenario)
+					}),
+					q(63592, {	-- The New Path
+						["sourceQuests"] = { 63591 },	-- The Grand Reception
+						["provider"] = { "n", 180189 },	-- Polemarch Kalisthene
+						["coord"] = { 55.8, 29.9, 2017 },
+						["_drop"] = { "g" },	-- drop anima trash
+						["maps"] = { 2017, 2018 },	-- Spires of Ascension (scenario)
 					}),
 					q(63653, {	-- The Power of a Crown
 						["sourceQuests"] = {

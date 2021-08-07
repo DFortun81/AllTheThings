@@ -68,7 +68,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(57850),	-- Storied Partnerships
 		q(57852),	-- Dungeon Adventure
-		-- this quest rewards Mark of Honor according to API, and it breaks MoH popout, ["_drop"] = { "g" } didn't work
-		--q(57853),	-- Battleforged Team
+		q(57853, {	-- Battleforged Team
+			["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+		}),
 	}),
 });
