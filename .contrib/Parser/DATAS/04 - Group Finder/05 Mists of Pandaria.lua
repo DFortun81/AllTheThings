@@ -79,6 +79,7 @@ _.GroupFinder =
 			["u"] = REMOVED_FROM_GAME,
 			["description"] = "Rewarded for completing a random Mists of Pandaria dungeon in the level 88-89 range.",	-- Again, saying 89 because at level 90 you can no longer queue for this.
 			["g"] = {
+				i(113757),	-- Band of Directed Fury
 				i(113766),	-- Blossoming Gloves
 				i(113767),	-- Blossoming Mantle
 				i(113765),	-- Blossoming Robe
