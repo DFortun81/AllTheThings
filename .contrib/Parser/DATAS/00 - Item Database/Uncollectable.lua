@@ -126,9 +126,11 @@ i(23123);	-- Blessed Wizard Oil
 i(18595);	-- Blood Opal ("Retrieving Data" in-game)
 i(180690);	-- Bottled Ash Cloud
 i(180715);	-- Bottled Wrath
+i(186189);	-- Cache of Armaments
 i(168124);	-- Cash of War Resources
 i(44626);	-- Cask of Aged Dalaran Red
 i(13509);	-- Clutch of Foresight
+i(187220);	-- Coalesced Power
 i(178040);	-- Condensed Stygia
 i(23122);	-- Consecrated Sharpening Stone
 i(143542);	-- Crown Co. "Kure-Everything" Tonic

@@ -129,6 +129,7 @@ _.ExpansionFeatures =
 				}),
 				i(187031, {	-- Towering Mantle of the Maw
 					["crs"] = {
+						153165,	-- Custodian Thonar
 						169859,	-- Observer Zelgar <The Third Eye>
 					},
 				}),

@@ -94,7 +94,7 @@ _.ExpansionFeatures =
 					["coord"] = { 50.3, 60.4, 1912 },	-- The Runecarver's Oubliette
 				}),
 
-				-- Champion Unlocks
+			--	Champion Unlocks
 				q(61957, {	-- Champion: Ashraka [Necrolord]
 					["customCollect"] = "SL_COV_NEC",	-- Necrolord
 					["sourceQuests"] = { 62229 },	-- Ashraka's Intelligence
@@ -151,6 +151,22 @@ _.ExpansionFeatures =
 						follower(1278)	-- Duskleaf
 					},
 				}),
+				q(64170, {	-- Champion: ELGU - 007 [Kyrian]
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					["sourceQuests"] = { 64186 },	-- ELGU - 007's Missing Power Core
+					["provider"] = { "n", 179666 },	-- ELGU - 007
+					["g"] = {
+						follower(1328),	-- ELGU - 007
+					},
+				}),
+				q(64169, {	-- Champion: Ella [Night Fae]
+					["customCollect"] = "SL_COV_NFA",	-- Night Fae
+					["sourceQuests"] = { 64185 },	-- Assist Ella With ?
+					--["provider"] = { "n",  },	-- Ella (Multiple Ids) probably 179672
+					["g"] = {
+						follower(1327),	-- Ella
+					},
+				}),
 				q(61958, {	-- Champion: Gorgelimb [Necrolord]
 					["customCollect"] = "SL_COV_NEC",	-- Necrolord
 					-- ["sourceQuests"] = { },	-- TODO
@@ -192,12 +208,28 @@ _.ExpansionFeatures =
 						follower(1279),	-- Karynmwylyann
 					},
 				}),
+				q(64171, {	-- Champion: Kiaranyka [Kyrian]
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					["sourceQuests"] = { 64187 },	-- Kiaranyka's Search
+					--["provider"] = { "n",  },	-- Kiaranyka (Multiple Ids)
+					["g"] = {
+						follower(1329),	-- Kiaranyka
+					},
+				}),
 				q(61313, {	-- Champion: Kythekios [Kyrian]
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian
 					["sourceQuests"] = { 61322 },	-- Kythekios' Memory Stone
 					["provider"] = { "n", 171995 },	-- Kythekios
 					["g"] = {
 						follower(1222),	-- Kythekios
+					},
+				}),
+				q(64175, {	-- Champion: Lassik Spinebender [Venthyr]
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["sourceQuests"] = { 64191 },	-- Lassik's Gear
+					["provider"] = { "n", 179682 },	-- Lassik Spinebender
+					["g"] = {
+						follower(1333),	-- Lassik Spinebender
 					},
 				}),
 				q(61425, {	-- Champion: Lloth'wellyn [Night Fae]
@@ -237,6 +269,22 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 173398 },	-- Rattlebag
 					["g"] = {
 						follower(1310),	-- Rattlebag
+					},
+				}),
+				q(64168, {	-- Champion: Spore of Marasmius [Night Fae]
+					["customCollect"] = "SL_COV_NFA",	-- Night Fae
+					["sourceQuests"] = { 64184 },	-- Missing Friend
+					["provider"] = { "n", 179670 },	-- Spore of Marasmius
+					["g"] = {
+						follower(1326),	-- Spore of Marasmius
+					},
+				}),
+				q(64174, {	-- Champion: Steadyhands [Venthyr]
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["sourceQuests"] = { 64190 },	-- Steadyhands' Platter
+					["provider"] = { "n", 179680 },	-- Steadyhands
+					["g"] = {
+						follower(1332),	-- Steadyhands
 					},
 				}),
 				q(61221, {	-- Champion: Stonehuck [Venthyr]
@@ -303,48 +351,8 @@ _.ExpansionFeatures =
 						follower(1282)	-- Yira'lya
 					},
 				}),
-				-- 9.1
-				q(64170, {	-- Champion: ELGU - 007 [Kyrian]
-					["customCollect"] = "SL_COV_KYR",	-- Kyrian
-					["sourceQuests"] = { 64186 },	-- ELGU - 007's Missing Power Core
-					["provider"] = { "n", 179666 },	-- ELGU - 007
-					["g"] = {
-						follower(1328),	-- ELGU - 007
-					},
-				}),
-				q(64168, {	-- Champion: Spore of Marasmius [Night Fae]
-					["customCollect"] = "SL_COV_NFA",	-- Night Fae
-					["sourceQuests"] = { 64184 },	-- Missing Friend
-					["provider"] = { "n", 179670 },	-- Spore of Marasmius
-					["g"] = {
-						follower(1326),	-- Spore of Marasmius
-					},
-				}),
-				q(64174, {	-- Champion: Steadyhands [Venthyr]
-					["customCollect"] = "SL_COV_VEN",	-- Venthyr
-					["sourceQuests"] = { 64190 },	-- Steadyhands' Platter
-					["provider"] = { "n", 179680 },	-- Steadyhands
-					["g"] = {
-						follower(1332),	-- Steadyhands
-					},
-				}),
-				q(64171, {	-- Champion: Kiaranyka [Kyrian]
-					["customCollect"] = "SL_COV_KYR",	-- Kyrian
-					["sourceQuests"] = { 64187 },	-- Kiaranyka's Search
-					--["provider"] = { "n",  },	-- Kiaranyka (Multiple Ids)
-					["g"] = {
-						follower(1329),	-- Kiaranyka
-					},
-				}),
-				q(64169, {	-- Champion: Ella [Night Fae]
-					["customCollect"] = "SL_COV_NFA",	-- Night Fae
-					["sourceQuests"] = { 64185 },	-- Assist Ella With ?
-					--["provider"] = { "n",  },	-- Ella (Multiple Ids) probably 179672
-					["g"] = {
-						follower(1327),	-- Ella
-					},
-				}),
-				-------- unverifed on live yet 9.1 Champions
+
+			--	unverifed on live yet 9.1 Champions
 				--[[
 				q(64654, {	-- Champion: Ben Howell
 					["customCollect"] = "",	--
@@ -354,17 +362,6 @@ _.ExpansionFeatures =
 						follower(1344),	-- Ben Howell
 					},
 				}),
-
-
-				q(64175, {	-- Champion: Lassik Spinebender
-					["customCollect"] = "",	--
-					["sourceQuests"] = {  },	--
-					["provider"] = { "n",  },	--
-					["g"] = {
-						follower(1333),	-- Lassik Spinebender
-					},
-				}),
-
 				q(64172, {	-- Champion: Ryuja Shockfist
 					["customCollect"] = "",	--
 					["sourceQuests"] = {  },	--
@@ -383,7 +380,7 @@ _.ExpansionFeatures =
 				}),
 				--]]
 
-				-------- unverifed on live yet; adding to alphabetized list above as they are verified in game
+			--	unverifed on live yet; adding to alphabetized list above as they are verified in game
 				--[[
 				q(60137, {	-- The Fracture Chambers
 					["sourceQuests"] = { 61099 },	-- Skoldus Hall
@@ -409,16 +406,16 @@ _.ExpansionFeatures =
 				}),
 				]]--
 
-
-
-
-
-
-				-- Bonus Quests
+			--	Bonus Quests
 				q(62229, {	-- Ashraka's Intelligence
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					-- ["provider"] = { "n", ??? },	-- TODO: ???
+				}),
+				q(64185, {	-- Assist Ella With ?
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 179671 },	-- Ella
 				}),
 				q(61259, {	-- Ayeleth's Hunger
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -444,6 +441,11 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 172259 },	-- Duskleaf
+				}),
+				q(64186, {	-- ELGU - 007's Missing Power Core [Double check]
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 179665 },	-- ELGU - 007
 				}),
 				q(59340, {	-- Gallath's Bell
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -491,10 +493,20 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 172260 },	-- Karynmwylyann
 					-- Fracture Chambers 4 / 2
 				}),
+				q(64187, {	-- Kiaranyka's Search
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					--["provider"] = { "n", },	-- Kiaranyka (multiple npcid)
+				}),
 				q(61322, {	-- Kythekios' Memory Stone
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 171996 },	-- Kythekios
+				}),
+				q(64191, {	-- Lassik's Gear
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 179681 },	-- Lassik Spinebender
 				}),
 				q(61431, {	-- Lloth'wellyn's Breakthrough
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -505,6 +517,11 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 168979 },	-- Meatball
+				}),
+				q(64184, {	-- Missing Friend [Double check]
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 179762 },	-- Friend? [Might be Spore of Marasmius]
 				}),
 				q(61347, {	-- Molako's Freedom
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -586,32 +603,11 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 173753 },	-- Velkein
 					-- Coldheart 8 / 5
 				}),
-				-- 9.1
-				q(64186, {	-- ELGU - 007's Missing Power Core [Double check]
-					["sourceQuests"] = { 60136 },	-- Into Torghast
-					["repeatable"] = true,
-					["provider"] = { "n", 179665 },	-- ELGU - 007
-				}),
-				q(64184, {	-- Missing Friend [Double check]
-					["sourceQuests"] = { 60136 },	-- Into Torghast
-					["repeatable"] = true,
-					["provider"] = { "n", 179762 },	-- Friend? [Might be Spore of Marasmius]
-				}),
-				q(64187, {	-- Kiaranyka's Search
-					["sourceQuests"] = { 60136 },	-- Into Torghast
-					["repeatable"] = true,
-					--["provider"] = { "n", },	-- Kiaranyka (multiple npcid)
-				}),
-				q(64185, {	-- Assist Ella With ?
-					["sourceQuests"] = { 60136 },	-- Into Torghast
-					["repeatable"] = true,
-					["provider"] = { "n", 179671 },	-- Ella
-				}),
+
 				--------------
 				-- Lockouts --
 				--------------
-
-				-- Coldheart
+			--	Coldheart
 				q(58198, {	-- Coldheart Interstitia, Layer 1
 					["isWeekly"] = true,
 					["name"] = "Coldheart Interstitia, Layer 1",
@@ -661,7 +657,7 @@ _.ExpansionFeatures =
 					["name"] = "Coldheart Interstitia, Layer 12",
 				}),
 
-				-- Fracture Chambers
+			--	Fracture Chambers
 				q(58186, {	-- Fracture Chambers, Layer 1
 					["isWeekly"] = true,
 					["name"] = "Fracture Chambers, Layer 1",
@@ -711,7 +707,7 @@ _.ExpansionFeatures =
 					["name"] = "Fracture Chambers, Layer 12",
 				}),
 
-				-- Mort'regar
+			--	Mort'regar
 				q(58204, {	-- Mort'regar, Layer 1
 					["isWeekly"] = true,
 					["name"] = "Mort'regar, Layer 1",
@@ -761,7 +757,7 @@ _.ExpansionFeatures =
 					["name"] = "Mort'regar, Layer 12",
 				}),
 
-				-- Skoldus Hall
+			--	Skoldus Hall
 				q(59328, {	-- Skoldus Hall, Layer 1
 					["isWeekly"] = true,
 					["name"] = "Skoldus Hall, Layer 1",
@@ -811,7 +807,7 @@ _.ExpansionFeatures =
 					["name"] = "Skoldus Hall, Layer 12",
 				}),
 
-				-- Soulforges
+			--	Soulforges
 				q(58192, {	-- Soulforges, Layer 1
 					["isWeekly"] = true,
 					["name"] = "Soulforges, Layer 1",
@@ -861,7 +857,7 @@ _.ExpansionFeatures =
 					["name"] = "Soulforges, Layer 12",
 				}),
 
-				-- Upper Reaches
+			--	Upper Reaches
 				q(59337, {	-- Upper Reaches, Layer 1
 					["isWeekly"] = true,
 					["name"] = "Upper Reaches, Layer 1",
@@ -952,6 +948,7 @@ _.HiddenQuestTriggers = {
 		q(61308),	-- Unlocking access to pickup follower 'Hala' by completing #61348 "Hala's Sword"
 		q(61310),	-- Unlocking access to pickup follower 'Ispiron' by completing #61395, "Spare Parts"
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
+		q(64183),	-- triggered when completing #64191, "Lassik's Gear"
 		q(61309),	-- triggered when completing #61347, "Molako's Freedom"
 		q(61213),	-- triggered when completing #61262, "Nerith's Vengeance"
 		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
