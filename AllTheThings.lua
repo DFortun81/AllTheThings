@@ -11708,6 +11708,8 @@ app.UpdateGroups = UpdateGroups;
 app.UpdateParentProgress = UpdateParentProgress;
 -- For directly applying the full Update operation for the top-level data group within a window
 local function TopLevelUpdateGroup(group, window)
+	group.total = 0;
+	group.progress = 0;
 	UpdateGroups(group, group.g, window);
 	if group.collectible then
 		group.total = group.total + 1;
