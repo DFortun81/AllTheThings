@@ -3195,11 +3195,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				sourceID = GetSourceID(paramA);
 				-- print("ParamA SourceID",sourceID,paramA)
 				if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
-				local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, numBonusIds = strsplit(":", itemString);
+				local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, numBonusIds, bonusID1 = strsplit(":", itemString);
 				if itemID2 then
 					itemID = tonumber(itemID2);
 					paramA = "itemID";
-					paramB = GetGroupItemIDWithModID(nil, itemID, modID) or itemID;
+					paramB = GetGroupItemIDWithModID(nil, itemID, modID, bonusID1) or itemID;
 				end
 				if #group > 0 then
 					for i,j in ipairs(group) do
@@ -10066,7 +10066,7 @@ app.TryPopulateQuestRewards = function(questObject)
 							local item = { ["itemID"] = itemID, ["s"] = GetSourceID(link), ["expanded"] = false, ["rawlink"] = link, ["modID"] = modID and tonumber(modID), ["bonusID"] = bonusID1 and tonumber(bonusID1) };
 							if search then
 								-- find the specific item which the link represents
-								local modItemID, count, data = GetGroupItemIDWithModID(nil, itemID, modID), #search;
+								local modItemID, count, data = GetGroupItemIDWithModID(nil, itemID, modID, bonusID1), #search;
 								-- if app.DEBUG_PRINT then print("Search for",modItemID,#search) end
 								for i=1,count,1 do
 									data = search[i];
