@@ -671,14 +671,36 @@ _.ExpansionFeatures =
 							i(182960),	-- Soul Tithe
 							i(181759),	-- Strike with Clarity
 							-- TODO: Get Rest of class specific rewards
-							i(181840),	-- Light's Inspiration
-							i(181962),	-- Mental Recovery
+							-- DK
+							-- DH
+							i(182317),	-- Shattered Restoration
+							i(182324),	-- Felfire Haste
+							-- Druid
 							i(183466),	-- Innate Resolve
 							i(183467),	-- Tireless Pursuit
+							-- Hunter
 							i(182584),	-- Cheetah's Vigor
-							i(182106),	-- Refreshing Waters
 							i(182469),	-- Rejuvenating Wind
+							-- Mage
+							i(181707),	-- Diverted Energy
+							i(181467),	-- Flow of Time
+							-- Monk
+							-- Paladin
+							-- Priest
+							i(181840),	-- Light's Inspiration
+							i(181962),	-- Mental Recovery
+							-- Rogue
+							i(183500),	-- Fade to Nothing
+							i(183496),	-- Nimble Fingers
+							-- Shaman
+							i(182106),	-- Refreshing Waters
 							i(182108),	-- Thunderous Paws
+							-- Warlock
+							i(182460),	-- Accrued Vitality
+							i(182466),	-- Shade of Terror
+							-- Warrior
+							i(181469),	-- Indelible Victory
+							i(180847),	-- Inspiring Presence
 						},
 					}),
 					q(61768, {	-- Stronger Together
