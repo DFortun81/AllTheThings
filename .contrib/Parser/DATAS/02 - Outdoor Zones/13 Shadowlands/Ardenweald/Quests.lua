@@ -532,7 +532,10 @@ _.Zones =
 					["coord"] = { 46.9, 27.6, ARDENWEALD },
 				}),
 				q(57655, {	-- Supplies Needed: More Husks!
-				--	TODO: figure out SQs.  saw after finish regular zone quest meta, while working on sojourner achievement, during 'unsafe workplace.'  but it may unlock sooner
+					["sourceQuests"] = {
+						59621,	-- Breaking a Few Eggs
+						59622,	-- Tending to the Tenders
+					},
 					["provider"] = { "o", 336415 },	-- Discarded Scroll
 					["coord"] = { 47.5, 26.2, ARDENWEALD },
 				}),
