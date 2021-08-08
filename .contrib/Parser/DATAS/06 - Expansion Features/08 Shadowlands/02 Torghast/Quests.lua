@@ -162,7 +162,7 @@ _.ExpansionFeatures =
 				q(64169, {	-- Champion: Ella [Night Fae]
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["sourceQuests"] = { 64185 },	-- Assist Ella With ?
-					--["provider"] = { "n",  },	-- Ella (Multiple Ids) probably 179672
+					["provider"] = { "n", 179672 },	-- Ella
 					["g"] = {
 						follower(1327),	-- Ella
 					},
@@ -214,6 +214,14 @@ _.ExpansionFeatures =
 					--["provider"] = { "n",  },	-- Kiaranyka (Multiple Ids)
 					["g"] = {
 						follower(1329),	-- Kiaranyka
+					},
+				}),
+				q(64173, {	-- Champion: Kinessa the Absorbent
+					["customCollect"] = "SL_COV_NEC",	-- Necrolord
+					["sourceQuests"] = { 64189 },	-- Kinessa's Support
+					["provider"] = { "n", 179678 },	-- Kinessa the Absorbent
+					["g"] = {
+						follower(1331),	-- Kinessa the Absorbent
 					},
 				}),
 				q(61313, {	-- Champion: Kythekios [Kyrian]
@@ -269,6 +277,14 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 173398 },	-- Rattlebag
 					["g"] = {
 						follower(1310),	-- Rattlebag
+					},
+				}),
+				q(64172, {	-- Champion: Ryuja Shockfist
+					["customCollect"] = "SL_COV_NEC",	-- Necrolord
+					["sourceQuests"] = { 64188 },	-- Ryuja's Supplies
+					["provider"] = { "n", 179676 },	-- Ryuja Shockfist
+					["g"] = {
+						follower(1330),	-- Ryuja Shockfist
 					},
 				}),
 				q(64168, {	-- Champion: Spore of Marasmius [Night Fae]
@@ -360,22 +376,6 @@ _.ExpansionFeatures =
 					["provider"] = { "n",  },	--
 					["g"] = {
 						follower(1344),	-- Ben Howell
-					},
-				}),
-				q(64172, {	-- Champion: Ryuja Shockfist
-					["customCollect"] = "",	--
-					["sourceQuests"] = {  },	--
-					["provider"] = { "n",  },	--
-					["g"] = {
-						follower(1330),	-- Ryuja Shockfist
-					},
-				}),
-				q(64173, {	-- Champion: Kinessa the Absorbent
-					["customCollect"] = "",	--
-					["sourceQuests"] = {  },	--
-					["provider"] = { "n",  },	--
-					["g"] = {
-						follower(1331),	-- Kinessa the Absorbent
 					},
 				}),
 				--]]
@@ -498,6 +498,11 @@ _.ExpansionFeatures =
 					["repeatable"] = true,
 					--["provider"] = { "n", },	-- Kiaranyka (multiple npcid)
 				}),
+				q(64189, {	-- Kinessa's Support
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 179677 },	-- Kinessa the Absorbent
+				}),
 				q(61322, {	-- Kythekios' Memory Stone
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
@@ -562,6 +567,11 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 157406 },	-- Renavyth
+				}),
+				q(64188, {	-- Ryuja's Supplies
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 179673 },	-- Ryuja Shockfist
 				}),
 				q(61395, {	-- Spare Parts
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -961,9 +971,11 @@ _.HiddenQuestTriggers = {
 		q(61954),	-- triggered when completing #62227, "Xertora's Construct"
 		q(64176),	-- New Night Fae Follower triggered when completing 64184, "Missing Friend".
 		q(64178),	-- New Kyrian Follower Triggered when completing 64186, "ELGU - 007's Missing Power Core"
+		q(64180),	-- triggered when completing #64188, "Ryuja's Supplies"
+		q(64181),	-- triggered when completing #64189, "Kinessa's Support"
 		q(64182),	-- triggered when completing #64174, "Champion: Steadyhands"
 		q(64179),	-- Triggered when completing 64187 Kiaranyka's Search / 64171 Champion: Kiaranyka
-		q(64177),	--  Triggered when completing 64185 Assist Ella With ?/64169 Champion: Ella
+		q(64177),	-- Triggered when completing 64185 Assist Ella With ?/64169 Champion: Ella
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
