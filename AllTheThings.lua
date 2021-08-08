@@ -17893,11 +17893,14 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						for rewardIndex=1,numRewards,1 do
 							local itemName, icon, count, claimed, rewardType, itemID, quality = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
 							if rewardType == "item" then
-								local item = app.CreateItem(itemID, { ["expanded"] = false });
+								local item = { ["itemID"] = itemID };
 								_cache = SearchForField("itemID", itemID);
 								if _cache then
-									local ACKCHUALLY;
 									for _,data in ipairs(_cache) do
+										-- copy any soruced data for the dungeon reward into the list
+										if GroupMatchesParams(data, "itemID", itemID, true) then
+											MergeProperties(item, data);
+										end
 										local lvl;
 										if isTimeWalker then
 											lvl = (data.lvl and type(data.lvl) == "table" and data.lvl[1]) or
@@ -17907,92 +17910,65 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 										else
 											lvl = 0;
 										end
+										-- Should the rewards be listed in the window based on the level of the rewards
 										if lvl <= minRecLevel then
-											if data.f then
-												item.f = data.f;
-											end
-											if data.s then
-												item.s = data.s;
-												-- TODO: bad globals...
-												-- print("Bad globals");
-												-- if data.modID == modID then
-												-- 	ACKCHUALLY = data.s;
-												-- 	item.modID = modID;
-												-- 	if tagID == 137 then
-												-- 		local parent = data.parent;
-												-- 		while parent do
-												-- 			if parent.instanceID then
-												-- 				-- this referenced questObject.icon, but that variable isn't part of the group finder section, so using header instead...
-												-- 				header.icon = parent.icon;
-												-- 				break;
-												-- 			end
-												-- 			parent = parent.parent;
-												-- 		end
-												-- 	end
-												-- end
-											end
 											NestObjects(item, data.g);	-- no need to clone, everything is re-created at the end
 										end
 									end
-									if ACKCHUALLY then
-										item.s = ACKCHUALLY;
-									end
 								end
 								NestObject(header, item);
-							elseif rewardType == "currency" then
-								if showCurrencies then
-									-- TODO: this is too laggy, but generates accurate & bloated results...
-									-- local item = GetCachedSearchResults("currencyID:" .. itemID, SearchForField, "currencyID", itemID);
-									--[[]]
-									local item = app.CreateCurrencyClass(itemID);
-									_cache = SearchForField("currencyID", itemID);
-									if _cache then
-										for _,data in ipairs(_cache) do
-											-- print("_cached",data.key,data[data.key])
-											-- cache record is the item itself
-											if data.key == "currencyID" and data[data.key] == itemID then
-												-- print("Merge cached item")
-												MergeProperties(item, data);
-											-- cache record is associated with the item
-											else
-												-- TODO: re-design this again eventually to reduce fake bloated numbers
-												NestObject(item, data);	-- no newCreate since entire WQ group will be newCreated at the end
-											end
+							elseif showCurrencies and rewardType == "currency" then
+								-- TODO: this is too laggy, but generates accurate & bloated results...
+								-- local item = GetCachedSearchResults("currencyID:" .. itemID, SearchForField, "currencyID", itemID);
+								--[[]]
+								local item = app.CreateCurrencyClass(itemID);
+								_cache = SearchForField("currencyID", itemID);
+								if _cache then
+									for _,data in ipairs(_cache) do
+										-- print("_cached",data.key,data[data.key])
+										-- cache record is the item itself
+										if data.key == "currencyID" and data[data.key] == itemID then
+											-- print("Merge cached item")
+											MergeProperties(item, data);
+										-- cache record is associated with the item
+										else
+											-- TODO: re-design this again eventually to reduce fake bloated numbers
+											NestObject(item, data);	-- no newCreate since entire WQ group will be newCreated at the end
 										end
-									end--]]
-									-- local item = app.CreateCurrencyClass(itemID, { ["expanded"] = false, });
-									-- local item = { ["currencyID"] = itemID, ["expanded"] = false};
-									-- TODO: this is just a huge temporary duplication in the world quest list usually, plus it is not filtered properly
-									-- _cache = SearchForField("currencyID", itemID);
-									-- if _cache then
-									-- 	for _,data in ipairs(_cache) do
-									-- 		local lvl;
-									-- 		if isTimeWalker then
-									-- 			lvl = (data.lvl and type(data.lvl) == "table" and data.lvl[1]) or
-									-- 					data.lvl or
-									-- 					(data.parent and data.parent.lvl and type(data.parent.lvl) == "table" and data.parent.lvl[1]) or
-									-- 					data.parent.lvl or 0;
-									-- 		else
-									-- 			lvl = 0;
-									-- 		end
-									-- 		if lvl <= minRecLevel then
-									-- 			if data.f then
-									-- 				print("Changed filter of currency class",item.f,data.f)
-									-- 				item.f = data.f;
-									-- 			end
-									-- 			if data.g and #data.g > 0 then
-									-- 				if not item.g then
-									-- 					item.g = {};
-									-- 					item.progress = 0;
-									-- 					item.total = 0;
-									-- 				end
-									-- 				MergeObject(item.g, data);
-									-- 			end
-									-- 		end
-									-- 	end
-									-- end
-									NestObject(header, item);
-								end
+									end
+								end--]]
+								-- local item = app.CreateCurrencyClass(itemID, { ["expanded"] = false, });
+								-- local item = { ["currencyID"] = itemID, ["expanded"] = false};
+								-- TODO: this is just a huge temporary duplication in the world quest list usually, plus it is not filtered properly
+								-- _cache = SearchForField("currencyID", itemID);
+								-- if _cache then
+								-- 	for _,data in ipairs(_cache) do
+								-- 		local lvl;
+								-- 		if isTimeWalker then
+								-- 			lvl = (data.lvl and type(data.lvl) == "table" and data.lvl[1]) or
+								-- 					data.lvl or
+								-- 					(data.parent and data.parent.lvl and type(data.parent.lvl) == "table" and data.parent.lvl[1]) or
+								-- 					data.parent.lvl or 0;
+								-- 		else
+								-- 			lvl = 0;
+								-- 		end
+								-- 		if lvl <= minRecLevel then
+								-- 			if data.f then
+								-- 				print("Changed filter of currency class",item.f,data.f)
+								-- 				item.f = data.f;
+								-- 			end
+								-- 			if data.g and #data.g > 0 then
+								-- 				if not item.g then
+								-- 					item.g = {};
+								-- 					item.progress = 0;
+								-- 					item.total = 0;
+								-- 				end
+								-- 				MergeObject(item.g, data);
+								-- 			end
+								-- 		end
+								-- 	end
+								-- end
+								NestObject(header, item);
 							else
 								-- print("Unhandled reward type", itemName,icon,count,claimed,rewardType,itemID,quality);
 							end
