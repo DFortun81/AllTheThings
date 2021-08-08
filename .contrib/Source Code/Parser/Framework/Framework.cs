@@ -322,6 +322,10 @@ namespace ATT
             // Check to make sure the data is valid.
             if (data == null) return false;
 
+            // Merge all relevant Item Data into the data container.
+            if (!MergeItemData)
+                Items.MergeInto(data);
+
 #if RETAIL
             // Retail has no reason to include Objective groups since the in-game Quest system does not warrant ATT including all this extra information
             if (data.ContainsKey("objectiveID")) return false;
@@ -482,13 +486,7 @@ namespace ATT
 #if RETAIL
                         // Merge all relevant Item Data into the data container.
                         if (MergeItemData)
-                        {
                             Items.Merge(data);
-                        }
-                        else
-                        {
-                            Items.MergeInto(data);
-                        }
                         Objects.AssignFactionID(data);
                         return false;
 #endif
@@ -513,13 +511,7 @@ namespace ATT
 
             // Merge all relevant Item Data into the data container.
             if (MergeItemData)
-            {
                 Items.Merge(data);
-            }
-            else
-            {
-                Items.MergeInto(data);
-            }
             Objects.AssignFactionID(data);
 
             // Cache the Filter ID.
@@ -712,7 +704,7 @@ namespace ATT
                     Objects.AddRecipe(requiredSkill, recipeName, recipeID);
                 }
                 // otherwise see if we can associate a recipeID
-                else
+                else if (!MergeItemData)
                 {
                     // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
                     // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...

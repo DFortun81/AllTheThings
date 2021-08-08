@@ -46,15 +46,15 @@ namespace ATT
             ObjectData.Create("mapID",              "m",            "_.CreateMap", "f");
             ObjectData.Create("illusionID",         "ill",          "_.CreateIllusion", "f", "spellID");
             ObjectData.Create("recipeID",           "r",            "_.CreateRecipe", "f", "spellID", "modID");
+            ObjectData.Create("azeriteEssenceID",   "aze",          "_.CreateAzeriteEssence", "f");
+            ObjectData.Create("runeforgePowerID",   "rfl",          "_.CreateRuneforgeLegendary", "f");
+            ObjectData.Create("conduitID",          "cd",           "_.CreateConduit", "f");
             ObjectData.Create<SpellData>("spellID", "sp",           "_.CreateSpell");
             ObjectData.Create("setID",              "gs",           "_.CreateGearSet", "f");
             ObjectData.Create("setHeaderID",        "gsh",          "_.CreateGearSetHeader", "f");
             ObjectData.Create("setSubHeaderID",     "gssh",         "_.CreateGearSetSubHeader", "f");
             ObjectData.Create("titleID",            "title",        "_.CreateTitle", "f");
             ObjectData.Create("currencyID",         "cu",           "_.CreateCurrencyClass", "f");
-            ObjectData.Create("azeriteEssenceID",   "aze",          "_.CreateAzeriteEssence", "f");
-            ObjectData.Create("runeforgePowerID",   "rfl",          "_.CreateRuneforgeLegendary", "f");
-            ObjectData.Create("conduitID",          "cd",           "_.CreateConduit", "f");
             ObjectData.Create<ItemData>("itemID",   "i",            "_.CreateItem");
             ObjectData.Create("factionID",          "faction",      "_.CreateFaction", "f");
             ObjectData.Create<QuestData>("questID", "q",            "_.CreateQuest", "f");
