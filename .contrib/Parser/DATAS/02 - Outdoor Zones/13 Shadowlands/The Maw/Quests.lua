@@ -1027,6 +1027,7 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(64126),	-- triggered when killing Dathlane the Herald, WotJ boss - TODO - move questIDs to individual bosses if they've been separated since they have new drops
+	q(64125),	-- triggered when killing Lumisende, wotj boss
 	q(64124),	-- triggered when killing Naelcrotix, WotJ boss - weirdly this triggered for me but not carb, first WotJ for both of us for the week
 	q(64123),	-- triggered when killing Zograthos, WotJ boss
 	q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
