@@ -201,7 +201,6 @@ _.WorldDrops =
 			}),
 			prof(TAILORING, {
 				i(7085),	-- Pattern: Azure Shoulders
-				i(5775),	-- Pattern: Black Silk Pack
 				i(4352),	-- Pattern: Boots of the Enchanter
 				i(14510),	-- Pattern: Bottomless Bag
 				i(14494),	-- Pattern: Brightcloth Pants

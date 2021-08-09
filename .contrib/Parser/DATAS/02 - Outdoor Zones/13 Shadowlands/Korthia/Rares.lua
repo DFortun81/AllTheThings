@@ -215,6 +215,7 @@ _.Zones =
 						}),
 						i(187381),	-- Rift-Touched Bindings
 						i(187383),	-- Silent Soulstalker Sabatons
+						i(187174),	-- Shaded Judgment Stone
 					},
 				}),
 				n(179985, {	-- Stygian Stonecrusher

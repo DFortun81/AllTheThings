@@ -156,11 +156,7 @@ _.Toys =
 		i(153253),		-- S.F.E. Interceptor
 		i(86583),		-- Salyin Battle Banner
 		i(127655),		-- Sassy Imp
-		i(187174, { 	-- Shaded Judgment Stone
-			["timeline"] = {
-				"created 9.1.0.39185",
-			},
-		}),
+		i(187174),	 	-- Shaded Judgment Stone
 		i(170187),		-- Shadescale
 		i(86573),		-- Shard of Archstone
 		i(170196),		-- Shirakess Warning Sign

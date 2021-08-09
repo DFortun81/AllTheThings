@@ -54,13 +54,15 @@ _.Zones =
 				n(2372, {	-- Mudsnout Gnoll
 					un(REMOVED_FROM_GAME, i(3204)),	-- Deepwood Bracers
 				}),
-				i(5775,  {	-- Pattern: Black Silk Pack
-					["crs"] = { 2242 },	-- Syndicate Spy
-				}),
 				n(2246, {	-- Syndicate Assassin
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1280)),	-- Cloaked Hood
+					},
+				}),
+				n(2242, {	-- Syndicate Spy
+					["g"] = {
+						un(REMOVED_FROM_GAME, i(5775)),	-- Pattern: Black Silk Pack
 					},
 				}),
 			}),
