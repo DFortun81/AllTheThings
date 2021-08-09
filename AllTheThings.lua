@@ -10022,115 +10022,102 @@ end
 -- Will attempt to populate the rewards of the quest object into itself (will become the object's OnUpdate until populated or 30 rendered frames)
 app.TryPopulateQuestRewards = function(questObject)
 	if not questObject or not questObject.questID then return; end
-
 	if not questObject.OnUpdate then questObject.OnUpdate = app.TryPopulateQuestRewards; end
-	local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
 
 	-- track how many attempts for retrieving reward data for both types (30 frames)
 	questObject.missingItem = questObject.missingItem and (questObject.missingItem - 1) or 30;
 	questObject.missingCurr = questObject.missingCurr and (questObject.missingCurr - 1) or 30;
 
-	-- Get reward info
-	local numQuestRewards = GetNumQuestLogRewards(questObject.questID);
-	-- numQuestRewards will often be 0 for fresh questID API calls...
-	-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
-	GetQuestLogRewardInfo(1, questObject.questID);
-	-- app.DEBUG_PRINT = questObject.questID == 47063 and 47063;
+	-- app.DEBUG_PRINT = questObject.questID == 44815 and 44815;
 	-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards",questObject.questID) end
 	if questObject.missingItem > 0 then
+		-- Get reward info
+		local numQuestRewards = GetNumQuestLogRewards(questObject.questID);
+		-- numQuestRewards will often be 0 for fresh questID API calls...
+		-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
+		GetQuestLogRewardInfo(1, questObject.questID);
 		-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards:numQuestRewards",questObject.questID,numQuestRewards,questObject.missingItem) end
 		for j=1,numQuestRewards,1 do
 			local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo(j, questObject.questID);
 			if itemID then
 				-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards:found",questObject.questID,itemID) end
 
-				if showCurrencies or (
-					itemID ~= 116415 and	-- Shiny Pet Charm
-					itemID ~= 163036 and	-- Polished Pet Charm
-					itemID ~= 137642		-- Mark of Honor
-					) then
-					QuestHarvester.AllTheThingsProcessing = true;
-					QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
-					QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
-					local link = select(2, QuestHarvester:GetItem());
-					QuestHarvester.AllTheThingsProcessing = false;
-					QuestHarvester:Hide();
-					if link then
-						-- if app.DEBUG_PRINT then print("Parse Link", link) end
-						local _, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", link);
-						if linkItemID then
-							-- if app.DEBUG_PRINT then print(_, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1); end
-							itemID = tonumber(itemID);
-							local search, subItems = SearchForLink(link), {};
-							-- put all the item information into a basic table
-							local item = { ["itemID"] = itemID, ["s"] = GetSourceID(link), ["expanded"] = false, ["rawlink"] = link, ["modID"] = modID and tonumber(modID), ["bonusID"] = bonusID1 and tonumber(bonusID1) };
-							if search then
-								-- find the specific item which the link represents
-								local modItemID, count, data = GetGroupItemIDWithModID(nil, itemID, modID, bonusID1), #search;
-								-- if app.DEBUG_PRINT then print("Search for",modItemID,#search) end
-								for i=1,count,1 do
-									data = search[i];
-									-- if app.DEBUG_PRINT then print("cached",data.key,data[data.key]) end
-									-- cache record is the exact item from the WQ reward
-									if GroupMatchesParams(data, "itemID", modItemID, true) then
-										-- create the object which will be in the actual list
-										-- if app.DEBUG_PRINT then print(modItemID," ? found cached") end
-										MergeProperties(item, data);
-										NestObjects(item, data.g);	-- no clone since item is cloned later
-									else
-										tinsert(subItems, data);
-									end
+				QuestHarvester.AllTheThingsProcessing = true;
+				QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
+				QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
+				local link = select(2, QuestHarvester:GetItem());
+				QuestHarvester.AllTheThingsProcessing = false;
+				QuestHarvester:Hide();
+				if link then
+					-- if app.DEBUG_PRINT then print("Parse Link", link) end
+					local _, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", link);
+					if linkItemID then
+						-- if app.DEBUG_PRINT then print(_, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1); end
+						itemID = tonumber(itemID);
+						local search, subItems = SearchForLink(link), {};
+						-- put all the item information into a basic table
+						local item = { ["itemID"] = itemID, ["s"] = GetSourceID(link), ["rawlink"] = link, ["modID"] = modID and tonumber(modID), ["bonusID"] = bonusID1 and tonumber(bonusID1) };
+						if search then
+							-- find the specific item which the link represents
+							local modItemID, count, data = GetGroupItemIDWithModID(nil, itemID, modID, bonusID1), #search;
+							-- if app.DEBUG_PRINT then print("Search for",modItemID,#search) end
+							for i=1,count,1 do
+								data = search[i];
+								-- if app.DEBUG_PRINT then print("cached",data.key,data[data.key]) end
+								-- cache record is the exact item from the WQ reward
+								if GroupMatchesParams(data, "itemID", modItemID, true) then
+									-- create the object which will be in the actual list
+									-- if app.DEBUG_PRINT then print(modItemID," ? found cached") end
+									MergeProperties(item, data);
+									NestObjects(item, data.g);	-- no clone since item is cloned later
+								else
+									tinsert(subItems, data);
 								end
-
-								-- then pull in any other sub-items which were not the item itself
-								NestObjects(item, subItems);	-- no clone since item is cloned later
 							end
 
-							-- at least one reward exists, so clear the missing data
-							questObject.missingItem = 0;
-							-- don't let cached groups pollute potentially inaccurate raw Data
-							item.link = nil;
-							NestObject(questObject, item, true);
+							-- then pull in any other sub-items which were not the item itself
+							NestObjects(item, subItems);	-- no clone since item is cloned later
 						end
+
+						-- at least one reward exists, so clear the missing data
+						questObject.missingItem = 0;
+						-- don't let cached groups pollute potentially inaccurate raw Data
+						item.link = nil;
+						NestObject(questObject, item, true);
 					end
-				else
-					-- item that we don't want to show in the list, so say that we're done
-					questObject.missingItem = 0;
 				end
 			end
 		end
 	end
 
 	-- Add info for currency rewards as containers for their respective collectibles
-	if showCurrencies then
+	if questObject.missingCurr > 0 then
 		local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
 		-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
 		GetQuestLogRewardCurrencyInfo(1, questObject.questID);
 		-- numCurrencies will often be 0 for fresh questID API calls...
-		if questObject.missingCurr > 0 then
-			local currencyID;
-			for j=1,numCurrencies,1 do
-				currencyID = select(4, GetQuestLogRewardCurrencyInfo(j, questObject.questID));
-				if currencyID then
-					-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards_currencies:found",questObject.questID,currencyID,questObject.missingCurr) end
+		local currencyID;
+		for j=1,numCurrencies,1 do
+			currencyID = select(4, GetQuestLogRewardCurrencyInfo(j, questObject.questID));
+			if currencyID then
+				-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards_currencies:found",questObject.questID,currencyID,questObject.missingCurr) end
 
-					currencyID = tonumber(currencyID);
-					local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
-					_cache = SearchForField("currencyID", currencyID);
-					if _cache then
-						for _,data in ipairs(_cache) do
-							-- cache record is the item itself
-							if GroupMatchesParams(data, "currencyID", currencyID) then
-								MergeProperties(item, data);
-							-- cache record is associated with the item
-							else
-								NestObject(item, data);	-- no clone since item is cloned later
-							end
+				currencyID = tonumber(currencyID);
+				local item = { ["currencyID"] = currencyID };
+				_cache = SearchForField("currencyID", currencyID);
+				if _cache then
+					for _,data in ipairs(_cache) do
+						-- cache record is the item itself
+						if GroupMatchesParams(data, "currencyID", currencyID) then
+							MergeProperties(item, data);
+						-- cache record is associated with the item
+						else
+							NestObject(item, data);	-- no clone since item is cloned later
 						end
 					end
-					questObject.missingCurr = 0;
-					NestObject(questObject, item, true);
 				end
+				questObject.missingCurr = 0;
+				NestObject(questObject, item, true);
 			end
 		end
 	end
@@ -10146,6 +10133,11 @@ app.TryPopulateQuestRewards = function(questObject)
 		if cachedQuest then
 			NestObjects(questObject, cachedQuest.g, true);
 		end
+
+		-- Build out purchases if specified
+		-- if app.Settings:GetTooltipSetting("WorldQuestsList:Currencies") then
+		-- 	FillPurchases(questObject);
+		-- end
 
 		-- Resolve all symbolic links now that the quest contains items
 		FillSymLinks(questObject, true);
@@ -10168,7 +10160,7 @@ app.TryPopulateQuestRewards = function(questObject)
 		questObject.doUpdate = questObject.OnUpdate;
 	end
 
-	-- app.DEBUG_PRINT = nil;
+	app.DEBUG_PRINT = nil;
 end
 -- Given an Object, will return the indicator (asset name) if this Object should show one based on it being tied to a QuestID
 app.GetQuestIndicator = function(t)
@@ -17892,88 +17884,34 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						end
 						for rewardIndex=1,numRewards,1 do
 							local itemName, icon, count, claimed, rewardType, itemID, quality = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
-							if rewardType == "item" then
-								local item = { ["itemID"] = itemID };
-								_cache = SearchForField("itemID", itemID);
-								if _cache then
-									for _,data in ipairs(_cache) do
-										-- copy any soruced data for the dungeon reward into the list
-										if GroupMatchesParams(data, "itemID", itemID, true) then
-											MergeProperties(item, data);
-										end
-										local lvl;
-										if isTimeWalker then
-											lvl = (data.lvl and type(data.lvl) == "table" and data.lvl[1]) or
-													data.lvl or
-													(data.parent and data.parent.lvl and type(data.parent.lvl) == "table" and data.parent.lvl[1]) or
-													data.parent.lvl or 0;
-										else
-											lvl = 0;
-										end
-										-- Should the rewards be listed in the window based on the level of the rewards
-										if lvl <= minRecLevel then
-											NestObjects(item, data.g);	-- no need to clone, everything is re-created at the end
-										end
+							-- common logic
+							local idType = (rewardType or "item").."ID";
+							local thing = { [idType] = itemID };
+							_cache = SearchForField(idType, itemID);
+							if _cache then
+								for _,data in ipairs(_cache) do
+									-- copy any soruced data for the dungeon reward into the list
+									if GroupMatchesParams(data, idType, itemID, true) then
+										MergeProperties(thing, data);
+									end
+									local lvl;
+									if isTimeWalker then
+										lvl = (data.lvl and type(data.lvl) == "table" and data.lvl[1]) or
+												data.lvl or
+												(data.parent and data.parent.lvl and type(data.parent.lvl) == "table" and data.parent.lvl[1]) or
+												data.parent.lvl or 0;
+									else
+										lvl = 0;
+									end
+									-- Should the rewards be listed in the window based on the level of the rewards
+									if lvl <= minRecLevel then
+										NestObjects(thing, data.g);	-- no need to clone, everything is re-created at the end
 									end
 								end
-								NestObject(header, item);
-							elseif showCurrencies and rewardType == "currency" then
-								-- TODO: this is too laggy, but generates accurate & bloated results...
-								-- local item = GetCachedSearchResults("currencyID:" .. itemID, SearchForField, "currencyID", itemID);
-								--[[]]
-								local item = app.CreateCurrencyClass(itemID);
-								_cache = SearchForField("currencyID", itemID);
-								if _cache then
-									for _,data in ipairs(_cache) do
-										-- print("_cached",data.key,data[data.key])
-										-- cache record is the item itself
-										if data.key == "currencyID" and data[data.key] == itemID then
-											-- print("Merge cached item")
-											MergeProperties(item, data);
-										-- cache record is associated with the item
-										else
-											-- TODO: re-design this again eventually to reduce fake bloated numbers
-											NestObject(item, data);	-- no newCreate since entire WQ group will be newCreated at the end
-										end
-									end
-								end--]]
-								-- local item = app.CreateCurrencyClass(itemID, { ["expanded"] = false, });
-								-- local item = { ["currencyID"] = itemID, ["expanded"] = false};
-								-- TODO: this is just a huge temporary duplication in the world quest list usually, plus it is not filtered properly
-								-- _cache = SearchForField("currencyID", itemID);
-								-- if _cache then
-								-- 	for _,data in ipairs(_cache) do
-								-- 		local lvl;
-								-- 		if isTimeWalker then
-								-- 			lvl = (data.lvl and type(data.lvl) == "table" and data.lvl[1]) or
-								-- 					data.lvl or
-								-- 					(data.parent and data.parent.lvl and type(data.parent.lvl) == "table" and data.parent.lvl[1]) or
-								-- 					data.parent.lvl or 0;
-								-- 		else
-								-- 			lvl = 0;
-								-- 		end
-								-- 		if lvl <= minRecLevel then
-								-- 			if data.f then
-								-- 				print("Changed filter of currency class",item.f,data.f)
-								-- 				item.f = data.f;
-								-- 			end
-								-- 			if data.g and #data.g > 0 then
-								-- 				if not item.g then
-								-- 					item.g = {};
-								-- 					item.progress = 0;
-								-- 					item.total = 0;
-								-- 				end
-								-- 				MergeObject(item.g, data);
-								-- 			end
-								-- 		end
-								-- 	end
-								-- end
-								NestObject(header, item);
-							else
-								-- print("Unhandled reward type", itemName,icon,count,claimed,rewardType,itemID,quality);
 							end
+							NestObject(header, thing);
 						end
-						table.insert(groupFinder.g, header);
+						NestObject(groupFinder, header);
 					end
 					table.insert(temp, groupFinder);
 				end
@@ -17995,6 +17933,10 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				NestObjects(self.data, temp, true);
 				-- Build the heirarchy
 				BuildGroups(self.data, self.data.g);
+				-- Nest purchases if treating currencies as containers
+				-- if showCurrencies then
+				-- 	FillPurchases(self.data);
+				-- end
 				-- Fill Symlinks in the list
 				FillSymLinks(self.data, true);
 				-- Force Update Callback
