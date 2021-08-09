@@ -77,8 +77,13 @@ _.Instances = { tier(SL_TIER, {
 				q(64607, {	-- Tazavesh: A Hard Bargain
 					["description"] = "Requires the 'On Use' effect of the neck to be able to accept the quest.",
 					["sourceQuests"] = { 63985 },	-- The Veiled Market
-					["provider"] = { "n", 180750 },	-- ??
+					["provider"] = { "n", 180750 },	-- Au'manal <Master Forger>
 					["cost"] = { { "i", 185954, 1 } },	-- Passably-Forged Credentials
+				}),
+				q(64571, {	-- Tazavesh: Seek and Do Not Destroyer
+					["timeline"] = {
+						"created 9.1.0.39226",
+					},
 				}),
 			}),
 			n(VENDORS, {
@@ -106,6 +111,9 @@ _.Instances = { tier(SL_TIER, {
 							}),
 					--	},
 				--	}),
+					n(180754, {	-- Questionable Trader <Cartel Ta>
+						i(185953),	-- Fraudulent Credentials
+					}),
 					n(180129, {	-- Toy Vendor
 						i(104324),	-- Foot Ball (TOY!)
 						i(187178),	-- Sc'ootie's Favorite Plushie

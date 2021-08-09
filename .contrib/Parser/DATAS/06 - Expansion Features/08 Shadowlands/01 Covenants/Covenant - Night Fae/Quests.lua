@@ -243,6 +243,8 @@ _.ExpansionFeatures =
 							i(183199),	-- Withering Ground
 							-- TODO: Get Rest of class specific rewards
 							-- DK
+							i(182113),	-- Fleeting Wind
+							i(182133),	-- Insatiable Appetite
 							-- DH
 							i(182317),	-- Shattered Restoration
 							i(182324),	-- Felfire Haste
@@ -256,6 +258,8 @@ _.ExpansionFeatures =
 							i(181707),	-- Diverted Energy
 							i(181467),	-- Flow of Time
 							-- Monk
+							i(181512),	-- Dizzying Tumble
+							i(181373),	-- Harm Denial
 							-- Paladin
 							-- Priest
 							i(181840),	-- Light's Inspiration
