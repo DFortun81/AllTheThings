@@ -3809,6 +3809,7 @@ _.HiddenQuestTriggers = {
 		q(62806),	-- HQT for Arsenal: Winterborn Weapons
 		q(61169),	-- Night Fae buff from Claw's Edge anima conductor
 		q(61158),	-- Night Fae buff from Claw's Edge anima conductor (Ka'rolei)
+		q(64350),	-- Bit of RP inside of the Night Fae Covenant hall after The Power of Night campaign quest
 
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
