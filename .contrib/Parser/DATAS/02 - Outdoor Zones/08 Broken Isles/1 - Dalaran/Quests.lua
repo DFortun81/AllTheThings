@@ -71,11 +71,6 @@ _.Zones =
 								i(153501),	-- Cache of Antoran Treasures [Heroic]
 							},
 						}),
-						--[[
-						q(47663, {	-- A Timely Summons from Shattrath
-							["provider"] = { "n", 111246 },	-- Archmage Timear
-						}),
-						]]--
 					},
 				}),
 				q(44720, {	-- A Call to Action
@@ -187,7 +182,12 @@ _.Zones =
 				q(50318, {	-- A Timely Summons from Northrend
 					["provider"] = { "n", 111246 },	-- Archmage Timear
 					["coord"] = { 63.8, 55.2, LEGION_DALARAN },
-					["isWeekly"] = true,
+					["isBreadcrumb"] = true,
+				}),
+				q(47663, {	-- A Timely Summons from Shattrath
+					["provider"] = { "n", 111246 },	-- Archmage Timear
+					["coord"] = { 63.8, 55.2, LEGION_DALARAN },
+					["isBreadcrumb"] = true,
 				}),
 				q(49472, {	-- A Titanic Effort
 					["u"] = REMOVED_FROM_GAME,
