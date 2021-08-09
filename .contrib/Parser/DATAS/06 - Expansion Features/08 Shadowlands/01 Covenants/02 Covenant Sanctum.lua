@@ -320,4 +320,58 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 });
 _.HiddenQuestTriggers = {
 	q(60635),	-- Night Fae Mission Table
+	
+	-- HUMILITY DIFFICULTY 
+	q(63102),	-- Kelisthene | Humility | Pelagos
+	q(63103),	-- Kelisthene | Humility | Kleia
+	q(63104),	-- Kelisthene | Humility | Mikanikos
+	q(63105),	-- Echthra | Humility | Pelagos
+	q(63106),	-- Echthra | Humility | Kleia
+	q(63107),	-- Echthra | Humility | Mikanikos
+	q(63108),	-- Alderyn and Myn'ir| Humility | Pelagos
+	q(63109),	-- Alderyn and Myn'ir| Humility | Kleia
+	q(63110),	-- Alderyn and Myn'ir| Humility | Mikanikos
+	q(63111),	-- Nuuminuuru | Humility | Pelagos
+	q(63112),	-- Nuuminuuru | Humility | Kleia
+	q(63113),	-- Nuuminuuru | Humility | Mikanikos
+	q(63114),	-- Craven Corinth  Humility | Pelagos
+	q(63115),	-- Craven Corinth | Humility | Kleia
+	q(63116),	-- Craven Corinth | Humility | Mikanikos
+	q(63117),	-- Splinterbark | Humility | Pelagos
+	q(63118),	-- Splinterbark | Humility | Kleia
+	q(63119),	-- Splinterbark | Humility | Mikanikos
+	q(63120),	-- Thran'tiok | Humility | Pelagos
+	q(63121),	-- Thran'tiok | Humility | Kleia
+	q(63122),	-- Thran'tiok | Humility | Mikanikos
+	q(63123),	-- Mad Mortimer | Humility | Pelagos
+	q(63124),	-- Mad Mortimer | Humility | Kleia
+	q(63125),	-- Mad Mortimer | Humility | Mikanikos
+	q(63126),	-- Athanos | Humility | Pelagos
+	q(63127),	-- Athanos | Humility | Kleia
+	q(63128),	-- Athanos | Humility | Mikanikos
+	q(63129),	-- Azaruux | Humility | Pelagos
+	q(63130),	-- Azaruux | Humility | Kleia
+	q(63131),	-- Azaruux | Humility | Mikanikos
+	
+	-- KNOWN HQTs in Path of Ascension but unknown exact triggers
+	--q(61034),	-- ?
+	--q(61035),	-- ?
+	--q(61036),	-- ?
+	--q(61037),	-- ?
+	--q(61038),	-- ?
+	--q(61039),	-- ?
+	--q(61040),	-- ?
+	--q(61042),	-- ?
+	--q(63085),	-- ?
+	--q(63086),	-- ?
+	--q(63088),	-- ?
+	--q(63139),	-- ?
+	--q(63143),	-- ?
+	--q(63144),	-- ?
+	--q(63146),	-- ?
+	--q(63147),	-- ?
+	--q(63148),	-- ?
+	--q(63149),	-- ?
+	--q(63150),	-- ?
+	--q(63151),	-- ?
 };

@@ -857,8 +857,3 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
-_.HiddenQuestTriggers = {
-	q(63115),	-- Triggerd when completing Kleia Humility
-	q(63110),	-- Triggerd when completing Alderyn and Myn'ir Humility
-	q(63109),	-- Triggerd when completing Kleia Humility
-};
