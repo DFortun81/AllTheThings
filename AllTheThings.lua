@@ -6007,6 +6007,47 @@ app.BaseObjectFields = function(fields, type)
 	end
 };
 end
+-- Create a local cache table which can be used by a Type class of a Thing to easily store information based on a unique key field for any Thing object of that Type
+app.CreateCache = function(idField)
+	local cache = {};
+	cache.GetCached = function(t)
+		local id = t[idField];
+		if id then
+			if not rawget(cache, id) then rawset(cache, id, {}); end
+			return rawget(cache, id), id;
+		end
+	end;
+	cache.GetCachedField = function(t, field, default_function)
+		--[[ -- Debug Prints
+		local _t, id = GetCached(t);
+		if _t[field] then
+			print("GetCachedField",id,field,_t[field]);
+		end
+		--]]
+		local _t = cache.GetCached(t);
+		if _t then
+			-- set a default provided cache value if any default function was provided and evalutes to a value
+			if not rawget(_t, field) and default_function then
+				local defVal = default_function(t);
+				if defVal then rawset(_t, field, defVal); end
+			end
+			return rawget(_t, field);
+		end
+	end;
+	cache.SetCachedField = function(t, field, value)
+		--[[ Debug Prints
+		local _t, id = GetCached(t);
+		if _t[field] then
+			print("SetCachedField",id,field,"Old",t[field],"New",value);
+		else
+			print("SetCachedField",id,field,"New",value);
+		end
+		--]]
+		t = cache.GetCached(t);
+		rawset(t, field, value);
+	end;
+	return cache;
+end
 
 -- Achievement Lib
 (function()
@@ -6540,43 +6581,7 @@ end)();
 (function()
 local C_CurrencyInfo_GetCurrencyInfo = C_CurrencyInfo.GetCurrencyInfo;
 local C_CurrencyInfo_GetCurrencyLink = C_CurrencyInfo.GetCurrencyLink;
-local cache = {};
-local function GetCached(t)
-	local id = t.currencyID;
-	if id then
-		if not rawget(cache, id) then rawset(cache, id, {}); end
-		return rawget(cache, id), id;
-	end
-end
-local function GetCachedField(t, field, default_function)
-	--[[ -- Debug Prints
-	local _t, id = GetCached(t);
-	if _t[field] then
-		print("GetCachedField",id,field,_t[field]);
-	end
-	--]]
-	local _t = GetCached(t);
-	if _t then
-		-- set a default provided cache value if any default function was provided and evalutes to a value
-		if not rawget(_t, field) and default_function then
-			local defVal = default_function(t);
-			if defVal then rawset(_t, field, defVal); end
-		end
-		return rawget(_t, field);
-	end
-end
-local function SetCachedField(t, field, value)
-	--[[ Debug Prints
-	local _t, id = GetCached(t);
-	if _t[field] then
-		print("SetCachedField",id,field,"Old",t[field],"New",value);
-	else
-		print("SetCachedField",id,field,"New",value);
-	end
-	--]]
-	t = GetCached(t);
-	rawset(t, field, value);
-end
+local cache = app.CreateCache("currencyID");
 local function default_text(t)
 	return t.link or t.name;
 end
@@ -6591,18 +6596,13 @@ local fields = {
 		return "currencyID";
 	end,
 	["text"] = function(t)
-		return GetCachedField(t, "text", default_text);
-		-- return t.link or t.name;
+		return cache.GetCachedField(t, "text", default_text);
 	end,
 	["info"] = function(t)
-		return GetCachedField(t, "info", default_info);
-		-- rawset(t, "info", C_CurrencyInfo_GetCurrencyInfo(t.currencyID));
-		-- return rawget(t, "info");
+		return cache.GetCachedField(t, "info", default_info);
 	end,
 	["link"] = function(t)
-		return GetCachedField(t, "link", default_link);
-		-- rawset(t, "link", C_CurrencyInfo_GetCurrencyLink(t.currencyID, 1));
-		-- return rawget(t, "link");
+		return cache.GetCachedField(t, "link", default_link);
 	end,
 	["icon"] = function(t)
 		local info = t.info;
@@ -6613,7 +6613,7 @@ local fields = {
 		return info and info.name or ("Currency #" .. t.currencyID);
 	end,
 	["costCollectibles"] = function(t)
-		return GetCachedField(t, "costCollectibles");
+		return cache.GetCachedField(t, "costCollectibles");
 	end,
 	["collectibleAsCost"] = function(t)
 		-- Quick escape if current-character only and comes from something saved
@@ -6626,7 +6626,7 @@ local fields = {
 			end
 			if results and #results > 0 then
 				local costCollectibles, filteredCost = {};
-				SetCachedField(t, "costCollectibles", costCollectibles);
+				cache.SetCachedField(t, "costCollectibles", costCollectibles);
 				for _,ref in pairs(results) do
 					-- different currencyID
 					if ref.currencyID ~= t.currencyID and
@@ -6874,25 +6874,42 @@ end)();
 
 -- Encounter Lib
 (function()
-local cache = {};
-local function GetCached(t, field)
-	if not t[t["key"]] then return nil; end
-	local id, _ = t[t["key"]];
-	local idcache = rawget(cache, id);
-	if not idcache then
-		idcache = {};
-		rawset(cache, id, idcache);
-		-- Set necessary fields from the result
-		idcache["name"],
-		idcache["description"],
-		_,
-		_,
-		idcache["link"]
-			= EJ_GetEncounterInfo(id);
-		-- print("Set New CacheID",id)
-		-- app.PrintTable(idcache);
+local cache = app.CreateCache("encounterID");
+local function CacheEncounterInfo(t)
+	local t, id = cache.GetCached(t);
+	local name, description, _, _, link = EJ_GetEncounterInfo(id);
+	t.name = name;
+	t.description = description;
+	t.link = link;
+	t.displayID = select(4, EJ_GetCreatureInfo(1, id));
+end
+local function default_name(t)
+	CacheEncounterInfo(t);
+	return cache.GetCachedField(t, "name");
+end
+local function default_description(t)
+	CacheEncounterInfo(t);
+	return cache.GetCachedField(t, "description");
+end
+local function default_link(t)
+	CacheEncounterInfo(t);
+	return cache.GetCachedField(t, "link");
+end
+local function default_displayID(t)
+	CacheEncounterInfo(t);
+	return cache.GetCachedField(t, "displayID");
+end
+local function default_displayInfo(t)
+	local displayInfos, id, displayInfo = {}, t.encounterID;
+	for i=1,MAX_CREATURES_PER_ENCOUNTER do
+		displayInfo = select(4, EJ_GetCreatureInfo(i, id));
+		if displayInfo then
+			tinsert(displayInfos, displayInfo);
+		else
+			break;
+		end
 	end
-	return rawget(idcache, field);
+	return displayInfos;
 end
 local fields = {
 	["key"] = function(t)
@@ -6902,32 +6919,19 @@ local fields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return GetCached(t, "name") or RETRIEVING_DATA;
-		-- return select(1, EJ_GetEncounterInfo(t.encounterID)) or RETRIEVING_DATA;
+		return cache.GetCachedField(t, "name", default_name);
 	end,
 	["description"] = function(t)
-		return GetCached(t, "description");
-		-- return select(2, EJ_GetEncounterInfo(t.encounterID));
+		return cache.GetCachedField(t, "description", default_description);
 	end,
 	["link"] = function(t)
-		return GetCached(t, "link");
-		-- return select(5, EJ_GetEncounterInfo(t.encounterID));
+		return cache.GetCachedField(t, "link", default_link);
 	end,
 	["displayID"] = function(t)
-		-- local id, name, description, displayInfo, iconImage = EJ_GetCreatureInfo(1, t.encounterID);
-		return select(4, EJ_GetCreatureInfo(t.index, t.encounterID));
+		return cache.GetCachedField(t, "displayID", default_displayID);
 	end,
 	["displayInfo"] = function(t)
-		local displayInfos, displayInfo = {};
-		for i=1,MAX_CREATURES_PER_ENCOUNTER do
-			displayInfo = select(4, EJ_GetCreatureInfo(i, t.encounterID));
-			if displayInfo then
-				tinsert(displayInfos, displayInfo);
-			else
-				break;
-			end
-		end
-		return displayInfos;
+		return cache.GetCachedField(t, "displayInfo", default_displayInfo);
 	end,
 	["icon"] = function(t)
 		return app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
@@ -7069,22 +7073,26 @@ end
 app.IsFactionExclusive = function(factionID)
 	return factionID == 934 or factionID == 932;
 end
-local cache = {};
-local function GetCached(t, field)
-	if not t[t["key"]] then return nil; end
-	local id, _ = t[t["key"]];
-	local idcache = rawget(cache, id);
-	if not idcache then
-		idcache = {};
-		rawset(cache, id, idcache);
-		-- Set necessary fields from the result
-		idcache["name"],
-		idcache["description"]
-			= GetFactionInfoByID(id);
-		-- print("Set New CacheID",id)
-		-- app.PrintTable(idcache);
+local cache = app.CreateCache("factionID");
+local function CacheFactionInfo(t)
+	local _t, id = cache.GetCached(t);
+	local name, description = GetFactionInfoByID(id);
+	_t.name = name or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. id);
+	_t.description = description or L["FACTION_SPECIFIC_REP"];
+	if t.isFriend then
+		local friendship = select(5, GetFriendshipReputation(id));
+		if friendship then
+		 	_t.description = _t.description.."\n\n"..friendship;
+		 end
 	end
-	return rawget(idcache, field);
+end
+local function default_name(t)
+	CacheFactionInfo(t);
+	return cache.GetCachedField(t, "name");
+end
+local function default_description(t)
+	CacheFactionInfo(t);
+	return cache.GetCachedField(t, "description");
 end
 local fields = {
 	["key"] = function(t)
@@ -7094,8 +7102,10 @@ local fields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return GetCached(t, "name") or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
-		-- return select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
+		return cache.GetCachedField(t, "name", default_name);
+	end,
+	["description"] = function(t)
+		return cache.GetCachedField(t, "description", default_description);
 	end,
 	["icon"] = function(t)
 		return t.achievementID and select(10, GetAchievementInfo(t.achievementID))
@@ -7219,16 +7229,6 @@ local fields = {
 			return app.GetFactionStanding(t.minReputation[2]);
 		end
 		return 8;
-	end,
-	["description"] = function(t)
-		if t.isFriend then
-			return (GetCached(t, "description") or L["FACTION_SPECIFIC_REP"])
-				.. "\n\n" .. select(5, GetFriendshipReputation(t.factionID));
-			-- return (select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"])
-			-- 	.. "\n\n" .. select(5, GetFriendshipReputation(t.factionID));
-		end
-		return GetCached(t, "description") or L["FACTION_SPECIFIC_REP"];
-		-- return select(2, GetFactionInfoByID(t.factionID)) or L["FACTION_SPECIFIC_REP"];
 	end,
 };
 app.BaseFaction = app.BaseObjectFields(fields);
@@ -8310,46 +8310,10 @@ end)();
 -- Item Lib
 (function()
 -- TODO: Once Item information is stored in a single source table, this mechanism can reference that instead of using a cache table here
-local cache = {};
-local function GetCached(t)
-	local id = t.modItemID;
-	if id then
-		if not rawget(cache, id) then rawset(cache, id, {}); end
-		return rawget(cache, id), id;
-	end
-end
-local function GetCachedField(t, field, default_function)
-	--[[ -- Debug Prints
-	local _t, id = GetCached(t);
-	if _t[field] then
-		print("GetCachedField",id,field,_t[field]);
-	end
-	--]]
-	local _t = GetCached(t);
-	if _t then
-		-- set a default provided cache value if any default function was provided and evalutes to a value
-		if not rawget(_t, field) and default_function then
-			local defVal = default_function(t);
-			if defVal then rawset(_t, field, defVal); end
-		end
-		return rawget(_t, field);
-	end
-end
-local function SetCachedField(t, field, value)
-	--[[ Debug Prints
-	local _t, id = GetCached(t);
-	if _t[field] then
-		print("SetCachedField",id,field,"Old",t[field],"New",value);
-	else
-		print("SetCachedField",id,field,"New",value);
-	end
-	--]]
-	t = GetCached(t);
-	rawset(t, field, value);
-end
+local cache = app.CreateCache("modItemID");
 -- Consolidated function to handle how many retries for information an Item may have
 local function HandleItemRetries(t)
-	local t, id = GetCached(t);
+	local t, id = cache.GetCached(t);
 	if rawget(t, "retries") then
 		rawset(t, "retries", rawget(t, "retries") + 1);
 		if rawget(t, "retries") > app.MaximumItemInfoRetries then
@@ -8373,7 +8337,7 @@ local function RawSetItemInfoFromLink(t, link)
 		-- local _t, id = GetCached(t);
 		-- print("rawset item",id)
 		--]]
-		t = GetCached(t);
+		t = cache.GetCached(t);
 		rawset(t, "retries", nil);
 		rawset(t, "name", name);
 		rawset(t, "link", link);
@@ -8432,25 +8396,25 @@ local itemFields = {
 		return t.link;
 	end,
 	["icon"] = function(t)
-		return GetCachedField(t, "icon", default_icon);
+		return cache.GetCachedField(t, "icon", default_icon);
 	end,
 	["link"] = function(t)
-		return GetCachedField(t, "link", default_link);
+		return cache.GetCachedField(t, "link", default_link);
 	end,
 	["name"] = function(t)
 		return t.link;
 	end,
 	["specs"] = function(t)
-		return GetCachedField(t, "specs", default_specs);
+		return cache.GetCachedField(t, "specs", default_specs);
 	end,
 	["retries"] = function(t)
-		return GetCachedField(t, "retries");
+		return cache.GetCachedField(t, "retries");
 	end,
 	["q"] = function(t)
-		return GetCachedField(t, "q");
+		return cache.GetCachedField(t, "q");
 	end,
 	["b"] = function(t)
-		return GetCachedField(t, "b") or 2;
+		return cache.GetCachedField(t, "b") or 2;
 	end,
 	["f"] = function(t)
 		-- Unknown item type after Parser, so make sure we save the filter for later references
@@ -8482,7 +8446,7 @@ local itemFields = {
 		return app.CollectibleAchievements;
 	end,
 	["costCollectibles"] = function(t)
-		return GetCachedField(t, "costCollectibles");
+		return cache.GetCachedField(t, "costCollectibles");
 	end,
 	["collectibleAsCost"] = function(t)
 		-- Quick escape if current-character only and comes from something saved
@@ -8501,7 +8465,7 @@ local itemFields = {
 			end
 			if results and #results > 0 then
 				local costCollectibles, filteredCost = {};
-				SetCachedField(t, "costCollectibles", costCollectibles);
+				cache.SetCachedField(t, "costCollectibles", costCollectibles);
 				for _,ref in pairs(results) do
 					-- different itemID, OR same itemID with different modID is allowed
 					if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and
