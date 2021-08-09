@@ -936,6 +936,7 @@ _.HiddenQuestTriggers = {
 --	Crypt Couture
 	q(62319),	-- using "Amethystine Dye"
 	q(62266),	-- using "Discarded Grimoire"
+	q(62409),	-- using "Plague Doctor's Mask"
 	q(62311),	-- using "Ritualist's Mantle"
 	q(62306),	-- using "Sorcerer's Blade"
 
@@ -944,6 +945,7 @@ _.HiddenQuestTriggers = {
 
 --	Unity Transmog
 	q(63407),	-- Leather Chest
+	q(63403),	-- Plate Helm
 	q(60782),	-- Renown 41
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
