@@ -223,7 +223,7 @@ _.Zones =
 					}),
 				}),
 				ach(14339, {	-- Shard Labor
-					["description"] = "Quest tracking must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide.  There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.",
+					["description"] = "'Collect all trackable things' must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide.  There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.",
 					["collectible"] = false,
 					["lvl"] = { 60 },
 					["g"] = {
