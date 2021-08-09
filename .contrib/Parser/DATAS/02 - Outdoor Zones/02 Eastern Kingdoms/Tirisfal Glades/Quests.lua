@@ -381,6 +381,7 @@ _.Zones =
 					["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
+					["sourceQuests"] = { 26930 },	-- After the Crusade
 				}),
 				q(32672, {	-- Learn to Ride
 					["isBreadcrumb"] = true,
