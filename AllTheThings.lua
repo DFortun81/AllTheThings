@@ -3016,7 +3016,18 @@ local function FillPurchases(group, depth)
 	if group.costCollectibles or (group.collectibleAsCost and group.costCollectibles) then
 		-- Nest new copies of the cost collectible objects of this group under itself
 		-- print("Filled",#group.costCollectibles,"under",group.key,group.key and group[group.key])
-		NestObjects(group, group.costCollectibles, true);
+		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
+		-- If this is under a currency, then whatever it purchases must be available to the current character to buy
+		if group.currencyID then
+			for _,purchase in ipairs(group.costCollectibles) do
+				if app.RecursiveGroupRequirementsFilter(purchase) then
+					NestObject(usedToBuy, purchase, true);
+				end
+			end
+		else
+			NestObjects(usedToBuy, group.costCollectibles, true);
+		end
+		NestObject(group, usedToBuy);
 		-- reduce the depth by one since a cost has been filled
 		depth = depth - 1;
 		-- mark this group as no-longer collectible as a cost since its collectible contents have been filled under itself
@@ -3695,42 +3706,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Resolve Cost, but not if the search itself was skipped (Mark of Honor)
 		if method ~= app.EmptyFunction then
-			if paramA == "currencyID" then
-				local costResults = app.SearchForField("currencyIDAsCost", paramB);
-				if costResults and #costResults > 0 then
-					if not root.g then root.g = {} end
-					local usedToBuy = app.CreateNPC(-2);
-					usedToBuy.text = L["CURRENCY_FOR"];
-					if not usedToBuy.g then usedToBuy.g = {}; end
-					local filteredObjects = {};
-					for i,o in ipairs(costResults) do
-						-- Currencies need to meet the group requirements as well since the character itself needs to meet those requirements to buy it
-						if app.RecursiveGroupRequirementsFilter(o) then
-							-- TODO: Nest the Cost results if requiring more than 1 Cost
-							-- o = app.NestForOtherCost(o, "c", paramB);
-							tinsert(filteredObjects, o);
-						end
-					end
-					NestObjects(usedToBuy, filteredObjects, true);
-					NestObject(root, usedToBuy);
-				end
-			elseif paramA == "itemID" or (paramA == "s" and group.itemID) then
-				local costResults = group.modItemID and app.SearchForField("itemIDAsCost", group.modItemID) or app.SearchForField("itemIDAsCost", group.itemID or paramB);
-				if costResults and #costResults > 0 then
-					if not root.g then root.g = {} end
-					local usedToBuy = app.CreateNPC(-2);
-					usedToBuy.text = L["CURRENCY_FOR"];
-					if not usedToBuy.g then usedToBuy.g = {}; end
-					-- local filteredObjects = {};
-					-- for i,o in ipairs(costResults) do
-					-- 	-- TODO: Nest the Cost results if requiring more than 1 Cost
-					-- 	o = app.NestForOtherCost(o, "i", paramB);
-					-- 	tinsert(filteredObjects, o);
-					-- end
-					NestObjects(usedToBuy, costResults, true);
-					NestObject(root, usedToBuy);
-				end
-			end
+			-- Fill Purchases of this Thing
+			FillPurchases(group);
 
 			-- Append any crafted things using this group
 			app.BuildCrafted(group);
@@ -6563,67 +6540,164 @@ end)();
 (function()
 local C_CurrencyInfo_GetCurrencyInfo = C_CurrencyInfo.GetCurrencyInfo;
 local C_CurrencyInfo_GetCurrencyLink = C_CurrencyInfo.GetCurrencyLink;
+local cache = {};
+local function GetCached(t)
+	local id = t.currencyID;
+	if id then
+		if not rawget(cache, id) then rawset(cache, id, {}); end
+		return rawget(cache, id), id;
+	end
+end
+local function GetCachedField(t, field, default_function)
+	--[[ -- Debug Prints
+	local _t, id = GetCached(t);
+	if _t[field] then
+		print("GetCachedField",id,field,_t[field]);
+	end
+	--]]
+	local _t = GetCached(t);
+	if _t then
+		-- set a default provided cache value if any default function was provided and evalutes to a value
+		if not rawget(_t, field) and default_function then
+			local defVal = default_function(t);
+			if defVal then rawset(_t, field, defVal); end
+		end
+		return rawget(_t, field);
+	end
+end
+local function SetCachedField(t, field, value)
+	--[[ Debug Prints
+	local _t, id = GetCached(t);
+	if _t[field] then
+		print("SetCachedField",id,field,"Old",t[field],"New",value);
+	else
+		print("SetCachedField",id,field,"New",value);
+	end
+	--]]
+	t = GetCached(t);
+	rawset(t, field, value);
+end
+local function default_text(t)
+	return t.link or t.name;
+end
+local function default_info(t)
+	return C_CurrencyInfo_GetCurrencyInfo(t.currencyID);
+end
+local function default_link(t)
+	return C_CurrencyInfo_GetCurrencyLink(t.currencyID, 1);
+end
 local fields = {
 	["key"] = function(t)
 		return "currencyID";
 	end,
 	["text"] = function(t)
-		return t.link or t.name;
+		return GetCachedField(t, "text", default_text);
+		-- return t.link or t.name;
+	end,
+	["info"] = function(t)
+		return GetCachedField(t, "info", default_info);
+		-- rawset(t, "info", C_CurrencyInfo_GetCurrencyInfo(t.currencyID));
+		-- return rawget(t, "info");
+	end,
+	["link"] = function(t)
+		return GetCachedField(t, "link", default_link);
+		-- rawset(t, "link", C_CurrencyInfo_GetCurrencyLink(t.currencyID, 1));
+		-- return rawget(t, "link");
 	end,
 	["icon"] = function(t)
 		local info = t.info;
 		return info and info.iconFileID;
 	end,
-	["info"] = function(t)
-		rawset(t, "info", C_CurrencyInfo_GetCurrencyInfo(t.currencyID));
-		return rawget(t, "info");
-	end,
-	["link"] = function(t)
-		rawset(t, "link", C_CurrencyInfo_GetCurrencyLink(t.currencyID, 1));
-		return rawget(t, "link");
-	end,
 	["name"] = function(t)
 		local info = t.info;
 		return info and info.name or ("Currency #" .. t.currencyID);
 	end,
-	["collectedAsCost"] = function(t)
-		local results = app.SearchForField("currencyIDAsCost", t.currencyID);
-		if results and #results > 0 then
-			for _,ref in pairs(results) do
-				if ref.currencyID ~= t.currencyID and app.RecursiveGroupRequirementsFilter(ref) then
-					if (ref.collectible and not ref.collected) or (ref.total and ref.total > 0 and ref.progress < ref.total) then
-						return false;
-					end
-				end
-			end
-			return true;
-		elseif t.metaAfterFailure then
-			setmetatable(t, t.metaAfterFailure);
-			return false;
-		end
+	["costCollectibles"] = function(t)
+		return GetCachedField(t, "costCollectibles");
 	end,
 	["collectibleAsCost"] = function(t)
 		-- Quick escape if current-character only and comes from something saved
 		if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
-		-- TODO: utilize shared cache table of cost collectibles eventually
-		local results = app.SearchForField("currencyIDAsCost", t.currencyID);
-		if results and #results > 0 then
-			for _,ref in pairs(results) do
-				if ref.currencyID ~= t.currencyID and app.RecursiveGroupRequirementsFilter(ref) then
-					if ref.collectible or (ref.total and ref.total > 0) then
+		if not t.costCollectibles then
+			local results, id;
+			if t.currencyID then
+				id = t.currencyID;
+				results = app.SearchForField("currencyIDAsCost", id);
+			end
+			if results and #results > 0 then
+				local costCollectibles, filteredCost = {};
+				SetCachedField(t, "costCollectibles", costCollectibles);
+				for _,ref in pairs(results) do
+					-- different currencyID
+					if ref.currencyID ~= t.currencyID and
+						-- is not a parent of the cost group itself
+						not GetRelativeField(t, "parent", ref) then
+						-- track this item as a cost collectible
+						tinsert(costCollectibles, ref);
+						-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
+						if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
+							-- don't include groups which do not meet the current filter requirements
+							and app.RecursiveGroupRequirementsFilter(ref) then
+							-- Used as a cost for something which is collectible itself
+							if ref.collectible then
+								filteredCost = true;
+							-- Used as a cost for something which has a total
+							elseif ref.total and ref.total > 0 then
+								filteredCost = true;
+							end
+						end
+					end
+				end
+				return filteredCost;
+			elseif t.metaAfterFailure then
+				setmetatable(t, t.metaAfterFailure);
+			-- TODO: test this
+			-- else
+			-- 	SetCachedField(t, "costCollectibles", app.EmptyTable);
+			end
+		else
+			for _,ref in pairs(t.costCollectibles) do
+				-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
+				if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
+					-- don't include groups which do not meet the current filter requirements
+					and app.RecursiveGroupRequirementsFilter(ref) then
+					-- Used as a cost for something which is collectible itself
+					if ref.collectible then
+						return true;
+					-- Used as a cost for something which has a total
+					elseif ref.total and ref.total > 0 then
 						return true;
 					end
 				end
 			end
-			return false;
-		elseif t.metaAfterFailure then
-			setmetatable(t, t.metaAfterFailure);
-			return false;
 		end
+		return false;
 	end,
 	["collectibleAsCostAfterFailure"] = app.ReturnFalse,
 	["collectedAsCostAfterFailure"] = function(t)
 
+	end,
+	["collectedAsCost"] = function(t)
+		if not t.costCollectibles then return; end
+		-- local LOG = t.s;
+		for _,ref in pairs(t.costCollectibles) do
+			-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
+			if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
+				-- don't include groups which do not meet the current filter requirements
+				and app.RecursiveGroupRequirementsFilter(ref) then
+				-- Used as a cost for something which is collectible itself and not collected
+				-- if LOG then print("check collectible/collected",LOG,ref.key,ref[ref.key]) end
+				if ref.collectible and not ref.collected then
+					-- if LOG then print("Cost Required via Collectible") end
+					return false;
+				-- Used as a cost for something which has an incomplete progress
+				elseif ref.total and ref.total > 0 and ref.progress < ref.total then
+					-- if LOG then print("Cost Required via Total/Prog") end
+					return false;
+				end
+			end
+		end
+		return true;
 	end,
 	["costTotal"] = function(t)
 		return t.collectibleAsCost and 1 or 0;
@@ -8239,19 +8313,27 @@ end)();
 local cache = {};
 local function GetCached(t)
 	local id = t.modItemID;
-	if not id then return nil; end
-	if not rawget(cache, id) then rawset(cache, id, {}); end
-	return rawget(cache, id), id;
+	if id then
+		if not rawget(cache, id) then rawset(cache, id, {}); end
+		return rawget(cache, id), id;
+	end
 end
-local function GetCachedField(t, field)
+local function GetCachedField(t, field, default_function)
 	--[[ -- Debug Prints
 	local _t, id = GetCached(t);
 	if _t[field] then
 		print("GetCachedField",id,field,_t[field]);
 	end
 	--]]
-	t = GetCached(t);
-	return t and t[field];
+	local _t = GetCached(t);
+	if _t then
+		-- set a default provided cache value if any default function was provided and evalutes to a value
+		if not rawget(_t, field) and default_function then
+			local defVal = default_function(t);
+			if defVal then rawset(_t, field, defVal); end
+		end
+		return rawget(_t, field);
+	end
 end
 local function SetCachedField(t, field, value)
 	--[[ Debug Prints
@@ -8308,52 +8390,58 @@ local function RawSetItemInfoFromLink(t, link)
 		HandleItemRetries(t);
 	end
 end
+local function default_link(t)
+	-- item already has a pre-determined itemLink so use that
+	if t.rawlink then return RawSetItemInfoFromLink(t, t.rawlink); end
+	-- need to 'create' a valid accurate link for this item
+	local itemLink = t.itemID;
+	if itemLink then
+		local bonusID = t.bonusID;
+		local modID = t.modID;
+		if not bonusID or bonusID < 1 then
+			bonusID = nil;
+		end
+		if not modID or modID < 1 then
+			modID = nil;
+		end
+		if bonusID and modID then
+			itemLink = string.format("item:%d:::::::::::%d:1:%d", itemLink, modID, bonusID);
+		elseif bonusID then
+			itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
+		elseif modID then
+			itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, modID);
+		else
+			itemLink = string.format("item:%d:::::::::::::", itemLink);
+		end
+		-- save this link so it doesn't need to be built again
+		rawset(t, "rawlink", itemLink);
+		return RawSetItemInfoFromLink(t, itemLink);
+	end
+end
+local function default_icon(t)
+	return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
+end
+local function default_specs(t)
+	return GetFixedItemSpecInfo(t.itemID);
+end
 local itemFields = {
 	["key"] = function(t)
 		return "itemID";
 	end,
 	["text"] = function(t)
-		return GetCachedField(t, "text") or t.link;
+		return t.link;
 	end,
 	["icon"] = function(t)
-		return GetCachedField(t, "icon") or (t.itemID and select(5, GetItemInfoInstant(t.itemID))) or "Interface\\Icons\\INV_Misc_QuestionMark";
+		return GetCachedField(t, "icon", default_icon);
 	end,
 	["link"] = function(t)
-		local cachedLink = GetCachedField(t, "link");
-		if cachedLink then return cachedLink; end
-
-		-- item already has a pre-determined itemLink so use that
-		if t.rawlink then return RawSetItemInfoFromLink(t, t.rawlink); end
-		-- need to 'create' a valid accurate link for this item
-		local itemLink = t.itemID;
-		if itemLink then
-			local bonusID = t.bonusID;
-			local modID = t.modID;
-			if not bonusID or bonusID < 1 then
-				bonusID = nil;
-			end
-			if not modID or modID < 1 then
-				modID = nil;
-			end
-			if bonusID and modID then
-				itemLink = string.format("item:%d:::::::::::%d:1:%d", itemLink, modID, bonusID);
-			elseif bonusID then
-				itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
-			elseif modID then
-				itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, modID);
-			else
-				itemLink = string.format("item:%d:::::::::::::", itemLink);
-			end
-			-- save this link so it doesn't need to be built again
-			rawset(t, "rawlink", itemLink);
-			return RawSetItemInfoFromLink(t, itemLink);
-		end
+		return GetCachedField(t, "link", default_link);
 	end,
 	["name"] = function(t)
-		return GetCachedField(t, "name") or RETRIEVING_DATA;
+		return t.link;
 	end,
 	["specs"] = function(t)
-		return GetFixedItemSpecInfo(t.itemID);
+		return GetCachedField(t, "specs", default_specs);
 	end,
 	["retries"] = function(t)
 		return GetCachedField(t, "retries");
