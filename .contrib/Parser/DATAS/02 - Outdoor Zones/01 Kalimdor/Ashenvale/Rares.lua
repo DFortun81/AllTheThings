@@ -115,17 +115,16 @@ _.Zones =
 					["timeline"] = {
 						"added 1.11.1.7318"
 					},
-					["g"] = {
-						i(5753),	-- Ruffled Chaplet
-						i(5754, {	-- Wolfpack Medallion
+					["g"] = sharedData({
 							["timeline"] = {
 								"added 1.11.1.5462",
 								"removed 4.0.3.10000",
 								"added 6.0.2.10000", -- Salvaged Yard
 								"removed 7.0.3.10000",
-							},
-						}),
-					},
+							},},{
+						i(5753),	-- Ruffled Chaplet
+						i(5754),	-- Wolfpack Medallion
+					}),
 				}),
 				n(12037,  {	-- Ursol'lok
 					["coords"] = {
