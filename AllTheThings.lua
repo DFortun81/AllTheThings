@@ -10019,14 +10019,14 @@ app.CollectibleAsQuest = function(t)
 		);
 end
 
--- Will attempt to populate the rewards of the quest object into itself (will become the object's OnUpdate until populated or 30 rendered frames)
+-- Will attempt to populate the rewards of the quest object into itself (will become the object's OnUpdate until populated or 15 rendered frames)
 app.TryPopulateQuestRewards = function(questObject)
 	if not questObject or not questObject.questID then return; end
 	if not questObject.OnUpdate then questObject.OnUpdate = app.TryPopulateQuestRewards; end
 
-	-- track how many attempts for retrieving reward data for both types (30 frames)
-	questObject.missingItem = questObject.missingItem and (questObject.missingItem - 1) or 30;
-	questObject.missingCurr = questObject.missingCurr and (questObject.missingCurr - 1) or 30;
+	-- track how many attempts for retrieving reward data for both types (15 frames)
+	questObject.missingItem = questObject.missingItem and (questObject.missingItem - 1) or 15;
+	questObject.missingCurr = questObject.missingCurr and (questObject.missingCurr - 1) or 15;
 
 	-- app.DEBUG_PRINT = questObject.questID == 44815 and 44815;
 	-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards",questObject.questID) end
