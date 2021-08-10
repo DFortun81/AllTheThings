@@ -2172,11 +2172,8 @@ NestObjects = function(p, g, newCreate)
 	if p.g then
 		MergeObjects(p.g, g, newCreate);
 	else
-		local g_clone = {};
-		for _,o in ipairs(g) do
-			MergeObject(g_clone, o, nil, newCreate);
-		end
-		p.g = g_clone;
+		p.g = {};
+		MergeObjects(p.g, g, newCreate);
 	end
 end
 end)();
@@ -3002,6 +2999,11 @@ app.SkipPurchases = {
 	[21100] = 1,	-- Coin of Ancestry
 	[23247] = 1,	-- Burning Blossom
 }
+-- Allows for toggling whether the SkipPurchases should be used or not
+app.SetSkipPurchases = function(bypass)
+	app.SkipPurchases[-1] = bypass;
+	-- print("SkipPurchases exclusion",bypass)
+end
 -- Fills & returns a group with its 'cost' references, along with all sub-groups recursively if specified
 -- This should only be used on a cloned group so the source group is not contaminated
 -- The 'cost' of the group will be removed afterward so as to not double the tooltip info for the item
@@ -3009,23 +3011,24 @@ local function FillPurchases(group, depth)
 	-- default to 2 levels of filling, i.e. 0) Raid Essence -> 1) Tier Token -> 2) Item
 	depth = depth or 2;
 	if depth <= 0 then return; end
-	-- do not fill purchases on certain items
-	if app.SkipPurchases[group.itemID or 0] then return; end
+	-- do not fill purchases on certain items, set -1 to bypass the skip (for popouts)
+	if not app.SkipPurchases[-1] and app.SkipPurchases[group.itemID or 0] then return; end
 	-- do not fill 'saved' groups, or groups under saved groups unless in Acct or Debug mode
 	if (group.saved or (group.parent and group.parent.saved)) and not app.MODE_DEBUG_OR_ACCOUNT then return; end
 
 	if group.costCollectibles or (group.collectibleAsCost and group.costCollectibles) then
 		-- Nest new copies of the cost collectible objects of this group under itself
-		-- print("Filled",#group.costCollectibles,"under",group.key,group.key and group[group.key])
 		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
 		-- If this is under a currency, then whatever it purchases must be available to the current character to buy
 		if group.currencyID then
 			for _,purchase in ipairs(group.costCollectibles) do
 				if app.RecursiveGroupRequirementsFilter(purchase) then
+					-- print("Nested",purchase.key,purchase.key and purchase[purchase.key],"under",group.key,group.key and group[group.key])
 					NestObject(usedToBuy, purchase, true);
 				end
 			end
 		else
+			-- print("Filled",#group.costCollectibles,"under",group.key,group.key and group[group.key])
 			NestObjects(usedToBuy, group.costCollectibles, true);
 		end
 		NestObject(group, usedToBuy);
@@ -12456,7 +12459,9 @@ function app:CreateMiniListForGroup(group)
 		-- make a search for this group if it is an item/currency and not already a container for things
 		if not group.g and (group.itemID or group.currencyID) then
 			local cmd = group.link or group.key .. ":" .. group[group.key];
+			app.SetSkipPurchases(true);
 			group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+			app.SetSkipPurchases(false);
 		end
 
 		-- clone/search initially so as to not let popout operations modify the source data
@@ -18952,7 +18957,9 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		end
 
 		-- Search for the Link in the database
+		app.SetSkipPurchases(true);
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+		app.SetSkipPurchases(false);
 		-- make sure it's 'something' returned from the search before throwing it into a window
 		if group and (group.link or group.name or group.text or group.key) then
 			app:CreateMiniListForGroup(group);
@@ -19035,7 +19042,9 @@ end
 			-- print(type,paramA,paramB)
 			if type == "search" then
 				local cmd = paramA .. ":" .. paramB;
+				app.SetSkipPurchases(true);
 				local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+				app.SetSkipPurchases(false);
 				app:CreateMiniListForGroup(group);
 				return true;
 			elseif type == "dialog" then
