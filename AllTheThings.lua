@@ -4971,8 +4971,6 @@ local function PopulateQuestObject(questObject)
 		end
 	end
 
-	app.TryPopulateQuestRewards(questObject);
-
 	-- Get time remaining info (only works for World Quests)
 	local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questObject.questID);
 	if timeRemaining and timeRemaining > 0 then
@@ -4995,6 +4993,8 @@ local function PopulateQuestObject(questObject)
 		(questObject.isDaily or questObject.isWeekly or questObject.isMonthly or questObject.isYearly) then
 			questObject.repeatable = true;
 	end
+
+	app.TryPopulateQuestRewards(questObject);
 end
 -- Returns a Quest or Vignette Object containing a lot of Quest information for displaying in a row
 local function GetPopulatedQuestObject(questID)
@@ -10091,7 +10091,7 @@ app.TryPopulateQuestRewards = function(questObject)
 		GetQuestLogRewardInfo(1, questObject.questID);
 		-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards:numQuestRewards",questObject.questID,numQuestRewards,questObject.missingItem) end
 		for j=1,numQuestRewards,1 do
-			local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo(j, questObject.questID);
+			local _, _, _, _, _, itemID = GetQuestLogRewardInfo(j, questObject.questID);
 			if itemID then
 				-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards:found",questObject.questID,itemID) end
 

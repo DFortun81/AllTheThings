@@ -2634,6 +2634,7 @@ _.HiddenQuestTriggers = {
 		-- Misc.
 			q(61919),	-- unflagged when completing Restock: Exploratory Meals (62094)
 			q(62524),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)
+			q(62525),	-- completed 'Relaxing' criteria for It's Certainly Never Boring
 			q(62526),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
