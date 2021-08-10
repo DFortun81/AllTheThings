@@ -1677,8 +1677,8 @@ end
 -- Filters a specs table to only those which the current Character class can choose
 local function FilterSpecs(specs)
 	if specs and #specs > 0 then
-		local specCount, name, class, _ = #specs;
-		for i=specCount,1,-1 do
+		local name, class, _;
+		for i=#specs,1,-1 do
 			_, name, _, _, _, class = GetSpecializationInfoByID(specs[i]);
 			if class ~= app.Class or not name or name == "" then
 				table.remove(specs, i);
@@ -1689,7 +1689,7 @@ local function FilterSpecs(specs)
 end
 -- Returns a string containing the spec icons, followed by their respective names if desired
 local function GetSpecsString(specs, includeNames, trim)
-	local specCount, icons, name, icon, _ = #specs, {};
+	local icons, name, icon, _ = {};
 	if includeNames then
 		for i=#specs,1,-1 do
 			_, name, _, icon, _, _ = GetSpecializationInfoByID(specs[i]);
@@ -1713,32 +1713,33 @@ local function GetSpecsString(specs, includeNames, trim)
 end
 -- Returns proper, class-filtered specs for a given itemID
 local function GetFixedItemSpecInfo(itemID)
-	if not itemID then return {}; end
-	local specs = GetItemSpecInfo(itemID);
-	if not specs then
-		specs = {}
-	end
-	if #specs < 1 then
-		-- Starting with Legion items, the API seems to return no spec information when the item is in fact lootable by ANY spec
-		local _, _, _, _, _, _, _, _, itemEquipLoc, _, _, itemClassID, itemSubClassID, _, expacID, _, _ = GetItemInfo(itemID);
-		-- only Armor items
-		if itemClassID and itemClassID == 4 then
-			-- unable to distinguish between Trinkets usable by all specs (Font of Power) and Role-Specific trinkets which do not apply to any Role of the current Character
-			if (expacID == 6 or expacID == 7) and (itemEquipLoc == "INVTYPE_NECK" or itemEquipLoc == "INVTYPE_FINGER") then
-				local numSpecializations = GetNumSpecializations();
-				if numSpecializations and numSpecializations > 0 then
-					for i=1,numSpecializations,1 do
-						local specID = select(1, GetSpecializationInfo(i));
-						tinsert(specs, specID);
+	if itemID then
+		local specs = GetItemSpecInfo(itemID);
+		if not specs or #specs < 1 then
+			specs = {};
+			-- Starting with Legion items, the API seems to return no spec information when the item is in fact lootable by ANY spec
+			local _, _, _, _, _, _, _, _, itemEquipLoc, _, _, itemClassID, itemSubClassID, _, expacID, _, _ = GetItemInfo(itemID);
+			-- only Armor items
+			if itemClassID and itemClassID == 4 then
+				-- unable to distinguish between Trinkets usable by all specs (Font of Power) and Role-Specific trinkets which do not apply to any Role of the current Character
+				if (expacID == 6 or expacID == 7) and (itemEquipLoc == "INVTYPE_NECK" or itemEquipLoc == "INVTYPE_FINGER") then
+					local numSpecializations = GetNumSpecializations();
+					if numSpecializations and numSpecializations > 0 then
+						for i=1,numSpecializations,1 do
+							local specID = select(1, GetSpecializationInfo(i));
+							tinsert(specs, specID);
+						end
 					end
 				end
 			end
+			insertionSort(specs);
+		else
+			FilterSpecs(specs);
 		end
-		insertionSort(specs);
-	else
-		FilterSpecs(specs);
+		if #specs > 0 then
+			return specs;
+		end
 	end
-	return specs;
 end
 
 -- Quest Completion Lib
@@ -3467,7 +3468,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if app.Settings:GetTooltipSetting("SpecializationRequirements") then
 				local specs = GetFixedItemSpecInfo(itemID);
 				-- specs is already filtered/sorted to only current class
-				if #specs > 0 then
+				if specs and #specs > 0 then
 					tinsert(info, { right = GetSpecsString(specs, true, true) });
 				elseif sourceID then
 					tinsert(info, { right = L["NOT_AVAILABLE_IN_PL"] });
