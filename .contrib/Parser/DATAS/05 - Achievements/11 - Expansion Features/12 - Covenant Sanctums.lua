@@ -55,7 +55,10 @@ _.Achievements =
 			n(-939, bubbleDown({["customCollect"] = { "SL_COV_KYR" }},{	-- Covenant: Kyrian
 				ach(14853),	-- All The Colors of the Painbow
 				ach(14860),	-- Bare Necessities
-				ach(14851),	-- Bastion of Protection
+				ach(14851, {	-- Bastion of Protection
+					crit(1),	-- Defeat Kalisthene with Spiritforged Aegis
+					crit(2),	-- Defeat Craven Corinth with Spiritforged Aegis
+				}),	
 				ach(14856),	-- Charmed, I'm Sure
 				ach(14858),	-- Curse of Thirst
 				ach(14863),	-- Death Foursworn
@@ -100,7 +103,14 @@ _.Achievements =
 					crit(5),	-- Ring of Warding
 					crit(6),	-- Spiritforged Aegis
 				}),
-				ach(14854),	-- It's Not What You Wear
+				ach(14854, {	-- It's Not What You Wear
+					crit(1),	-- Herald's Footpads
+					crit(2),	-- Deep Echo Trident
+					crit(3),	-- Vial of Lichfrost
+					crit(4),	-- Phial of Serenity
+					crit(5),	-- Ring of Warding
+					crit(6),	-- Spiritforged Aegis
+				}),
 				ach(14857),	-- Itsy Bitsy Fighters
 				ach(14861, {	-- Learning from the Masters
 					crit(1),	-- Defeat Kalisthene as Pelagos
@@ -124,8 +134,11 @@ _.Achievements =
 				}),
 				ach(14864),	-- Personal Nightmare
 				ach(14502),	-- Pursuing Loyalty
-				ach(14852),	-- The Hoot of the Issue
-				ach(14351, {	-- The Path Towards Ascension 39 (TODO: do these actually exist? not on in-game achieves list)
+				ach(14852, {	-- The Hoot of the Issue
+					crit(1),	-- Defeat Alderyn and Myn'ir in a Trial of Loyalty as Mikanikos
+					crit(2),	-- Defeat Splinterbark Nightmare in a Trial of Loyalty as Mikanikos
+				}),
+				un(NEVER_IMPLEMENTED, ach(14351, sharedData({["u"] = NEVER_IMPLEMENTED}, {	-- The Path Towards Ascension 39
 					ach(14340),	-- The Path Towards Ascension 1
 					ach(14342),	-- The Path Towards Ascension 3
 					ach(14343),	-- The Path Towards Ascension 5
@@ -134,7 +147,7 @@ _.Achievements =
 					ach(14346),	-- The Path Towards Ascension 16
 					ach(14348),	-- The Path Towards Ascension 20
 					ach(14349),	-- The Path Towards Ascension 24
-				}),
+				}))),
 				ach(14887, {	-- To the Moon
 					["description"] = "Requires the Path of Ascension building. Some people needed 50+ tries for this achievement, others needed 500+. There is no guaranteed way known. You need to /wave at Athanos while he knocks you off with any ability.",
 				}),
@@ -407,7 +420,18 @@ _.Achievements =
 						crit(5),	-- Sinrunner Riding
 						crit(6),	-- Dredbat Riding
 					}),
-					ach(14683),	-- Dredger Style
+					ach(14683, {	-- Dredger Style
+						crit(1),	-- Black Muck Armor Dye
+						crit(2),	-- Blue Muck Armor Dye
+						crit(3),	-- Green Muck Armor Dye
+						crit(4),	-- Bubbling Muck Armor Dye
+						crit(5),	-- Thin Hair Cut
+						crit(6),	-- Spikey Hair Cut
+						crit(7),	-- Full Flowing Hair Cut
+						crit(8),	-- Dredger Lether Coif
+						crit(9),	-- Short Sleeved Doublet
+						crit(10),	-- Long Sleeved Doublet
+					}),
 				}),
 			})),
 		}),

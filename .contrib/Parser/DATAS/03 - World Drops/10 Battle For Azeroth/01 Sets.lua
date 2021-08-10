@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(BFA_TIER, {
-		n(-1000, {	-- Sets [Epic -- No adjustments]
+		n(-1000, {	-- Sets
 			["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 				i(154833),	-- Bloodhex Hood
 				i(154838),	-- Bloodhex Mantle

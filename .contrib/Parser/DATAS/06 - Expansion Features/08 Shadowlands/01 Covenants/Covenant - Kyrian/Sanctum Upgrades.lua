@@ -218,20 +218,7 @@ _.ExpansionFeatures =
 								ach(14851),	-- Bastion of Protection
 								ach(14856),	-- Charmed, I'm Sure
 								ach(14863),	-- Death Foursworn
-								ach(14865, {	-- Disciple of Humility
-									crit(19),	-- Defeat Thran'tiok as Pelagos
-									crit(20),	-- Defeat Thran'tiok as Kleia
-									crit(21),	-- Defeat Thran'tiok as Mikanikos
-									crit(22),	-- Defeat Mad Mortimer as Pelagos
-									crit(23),	-- Defeat Mad Mortimer as Kleia
-									crit(24),	-- Defeat Mad Mortimer as Mikanikos
-									crit(25),	-- Defeat Athanos as Pelagos
-									crit(26),	-- Defeat Athanos as Kleia
-									crit(27),	-- Defeat Athanos as Mikanikos
-									crit(28),	-- Defeat Azaruux as Pelagos
-									crit(29),	-- Defeat Azaruux as Kleia
-									crit(30),	-- Defeat Azaruux as Mikanikos
-								}),
+								ach(14865),	-- Disciple of Humility
 								ach(14859),	-- Inside the Park Home Run
 								ach(14862, {	-- It's How You Wear It
 									crit(1),	-- Herald's Footpads
@@ -249,11 +236,7 @@ _.ExpansionFeatures =
 									crit(5),	-- Ring of Warding
 									crit(6),	-- Spiritforged Aegis
 								}),
-								ach(14861, {	-- Learning from the Masters
-									crit(4),	-- Defeat Athanos as Pelagos
-									crit(5),	-- Defeat Athanos as Kleia
-									crit(6),	-- Defeat Athanos as Mikanikos
-								}),
+								ach(14861),	-- Learning from the Masters
 								ach(14866, {	-- Master of the Path
 									crit(1),	-- Kalisthene
 									crit(2),	-- Echthra
@@ -268,8 +251,7 @@ _.ExpansionFeatures =
 								}),
 								ach(14864),	-- Personal Nightmare
 								ach(14852),	-- The Hoot of the Issue
-								--[[ weird hidden tracking achievement that exists in the background but is not visible in the achievement window
-								ach(14351, {	-- The Path Towards Ascension 39
+								un(NEVER_IMPLEMENTED, ach(14351, sharedData({["u"] = NEVER_IMPLEMENTED}, {	-- The Path Towards Ascension 39
 									ach(14340),	-- The Path Towards Ascension 1
 									ach(14342),	-- The Path Towards Ascension 3
 									ach(14343),	-- The Path Towards Ascension 5
@@ -278,8 +260,7 @@ _.ExpansionFeatures =
 									ach(14346),	-- The Path Towards Ascension 16
 									ach(14348),	-- The Path Towards Ascension 20
 									ach(14349),	-- The Path Towards Ascension 24
-								}),
-								--]]
+								}))),
 							}),
 							n(-908, {	-- Rewards
 								n(172408, {	-- Alderyn [& Myn'ir]
@@ -335,8 +316,26 @@ _.ExpansionFeatures =
 										}),
 									}),
 									n(-974, {	-- Wisdom
+										crit(4, {	-- Defeat Athanos as Pelagos
+											["achievementID"] = 14861,	-- Learning from the Masters
+										}),
+										crit(5, {	-- Defeat Athanos as Kleia
+											["achievementID"] = 14861,	-- Learning from the Masters
+										}),
+										crit(6, {	-- Defeat Athanos as Mikanikos
+											["achievementID"] = 14861,	-- Learning from the Masters
+										}),
 									}),
 									n(-975, {	-- Humility
+										crit(25, {	-- Defeat Athanos as Pelagos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(26, {	-- Defeat Athanos as Kleia
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(27, {	-- Defeat Athanos as Mikanikos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
 										i(184456),	-- Reverent Chestpiece
 									}),
 								}),
@@ -354,6 +353,15 @@ _.ExpansionFeatures =
 									n(-974, {	-- Wisdom
 									}),
 									n(-975, {	-- Humility
+										crit(28, {	-- Defeat Azaruux as Pelagos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(29, {	-- Defeat Azaruux as Kleia
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(30, {	-- Defeat Azaruux as Mikanikos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
 									}),
 								}),
 								n(172412, {	-- Craven Corinth
@@ -506,6 +514,15 @@ _.ExpansionFeatures =
 										n(-974, {	-- Wisdom
 										}),
 										n(-975, {	-- Humility
+											crit(22, {	-- Defeat Thran'tiok as Pelagos
+											["achievementID"] = 14865,	-- Disciple of Humility
+											}),
+											crit(23, {	-- Defeat Thran'tiok as Kleia
+											["achievementID"] = 14865,	-- Disciple of Humility
+											}),
+											crit(24, {	-- Defeat Thran'tiok as Mikanikos
+											["achievementID"] = 14865,	-- Disciple of Humility
+											}),
 											i(184460),	-- Reverent Bracer
 										}),
 									},
@@ -595,6 +612,15 @@ _.ExpansionFeatures =
 									n(-974, {	-- Wisdom
 									}),
 									n(-975, {	-- Humility
+										crit(19, {	-- Defeat Thran'tiok as Pelagos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(20, {	-- Defeat Thran'tiok as Kleia
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(21, {	-- Defeat Thran'tiok as Mikanikos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
 										i(184453),	-- Reverent Cloak
 									}),
 								}),
@@ -1050,12 +1076,8 @@ _.ExpansionFeatures =
 										},
 									}),
 								}),
-								n(-908, {	-- Rewards
-								}),
 							}),
 							n(-946, {	-- Tier 4: Teachings of Wisdom
-								n(-908, {	-- Rewards
-								}),
 							}),
 							n(-947, {	-- Tier 5: Trials of Humility
 								n(-908, {	-- Rewards
