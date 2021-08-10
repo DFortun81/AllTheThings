@@ -114,6 +114,21 @@ _.Zones =
 							}),
 						}),
 					}),
+					n(ZONEDROPS, {
+						i(187174, {	-- Shaded Judgment Stone
+							["description"] = "This has a chance to drop from creatures in The Rift, or from the specific Rares which are pulled out of The Rift.",
+							["crs"] = {
+								-- Korthia Rares
+								179913,	-- Deadsoul Hatcher
+								179608,	-- Screaming Shade
+								179911,	-- Silent Soulstalker
+								-- The Maw Rares
+								179853,	-- Blinding Shadow
+								179851,	-- Guard Orguluus
+								179735,	-- Torglluun
+							}
+						}),
+					}),
 				},
 			}),
 		}),
