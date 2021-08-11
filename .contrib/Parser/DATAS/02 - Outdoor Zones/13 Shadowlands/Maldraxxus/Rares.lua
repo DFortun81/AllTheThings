@@ -468,6 +468,7 @@ _.Zones =
 					["questID"] = 59290,
 					["isDaily"] = true,
 					["coord"] = { 29.0, 51.6, MALDRAXXUS },
+					["cr"] = 157124,	-- Bone Mass
 					["g"] = {
 						crit(3, {	-- Zargox the Reborn
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
