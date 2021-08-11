@@ -1002,6 +1002,9 @@ _.HiddenQuestTriggers = {
 	q(64507),	-- triggered after picking up #64211, "Doorway in the Dark"
 	q(64533),	-- triggered after listening to the entirety of the Primus's RP after turning in "Covenants Renewed"
 	q(64377),	-- triggered after watching Thrall/Draka RP about Garrosh
+	q(64335),	-- triggered after watching Alexandros/Darion Mograine RP about Tirion
+	q(64429),	-- triggered after watching Jaina/Uther RP about Arthas
+	q(64577),	-- triggered after watching Tal-Galan/Ve'nari RP about Zereth Mortis
 };
 
 _NeverImplemented = {
