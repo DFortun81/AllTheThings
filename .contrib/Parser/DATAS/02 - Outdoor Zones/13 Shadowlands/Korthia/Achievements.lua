@@ -31,6 +31,9 @@ _.Zones =
 						crit(8, {	-- A New Path
 							["sourceQuests"] = { 63593 },	-- New Sigil of the Kyrian
 						}),
+						crit(9,	{	-- What Lies Ahead
+							["sourceQuests"] = { 64314 },	-- Covenants Renewed
+						}),
 					},
 				}),
 				ach(15107),	-- Conquering Korthia
