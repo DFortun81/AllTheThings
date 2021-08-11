@@ -15,7 +15,6 @@ _.Instances = { tier(SL_TIER, {
 			TAZAVESH_BORALUS_HARBOR,
 			TAZAVESH_AGGRAMARS_VAULT,
 			TAZAVESH_THE_VEILED_MARKET_WORLD,
-			--,	-- The Upper City
 		},
 		["lvl"] = { 60 },
 		["g"] = {
@@ -75,22 +74,31 @@ _.Instances = { tier(SL_TIER, {
 					["coord"] = { 86.7, 48.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
 				}),
 				q(64607, {	-- Tazavesh: A Hard Bargain
-					["description"] = "Requires the 'On Use' effect of the neck to be able to accept the quest.",
+					["description"] = "Requires |cFFFFFFFFPassably-Forged Credentials|r to be equipped to be able to accept the quest.",
 					["sourceQuests"] = { 63985 },	-- The Veiled Market
 					["provider"] = { "n", 180750 },	-- Au'manal <Master Forger>
 					["cost"] = { { "i", 185954, 1 } },	-- Passably-Forged Credentials
 				}),
 				q(64571, {	-- Tazavesh: Seek and Do Not Destroyer
+					["_drop"] = { "g" },
 					["timeline"] = {
 						"created 9.1.0.39226",
 					},
 				}),
 			}),
 			n(VENDORS, {
-				["description"] = "All these vendors can be found just inside the entrance to the dungeon.",	-- TODO: not sure if this is accurate re: Shopkeeper, edit desc if not
+				["description"] = "All the vendors with the name Vendor in them can be found just inside the entrance to the dungeon.",
 				["g"] = {
 					n(180130, {	-- Antique Vendor
 						i(187179),	-- Glow Sticks
+					}),
+					n(180750, { -- Au'manal <Master Forger>
+						["description"] = "Requires |cFFFFFFFFFraudulent Credentials|r to be equipped to be able to trade for the new neck.",
+						["g"] = {
+							i(185954, {	-- Passably-Forged Credentials
+								["cost"] = { { "i", 185953, 1 } },	-- Fraudulent Credentials
+							}),
+						},
 					}),
 					n(180114, {	-- Fruit Vendor
 						i(187171),	-- Organic Melon
@@ -98,9 +106,9 @@ _.Instances = { tier(SL_TIER, {
 					n(180117, {	-- Meat Vendor
 						i(187173),	-- Wriggling Tentacle
 					}),
-				--	n(, {	-- Shopkeeper TODO: there are 2 NPCs with this name, both added in the same build, not sure which one it is - either 179945 or 180161
-					--	["description"] = "When the NPC whispers you, |cFFFFFFFF/nod|r at them.",
-					--	["g"] = {
+					n(180161, {	-- Shopkeeper
+						["description"] = "When the NPC whispers you, |cFFFFFFFF/nod|r at them.",
+						["g"] = {
 							i(186540, {	-- Rarity (PET!)
 								["cost"] = {
 									{ "g", 21430000 },	-- 2,143g
@@ -109,8 +117,8 @@ _.Instances = { tier(SL_TIER, {
 									{ "i", 180533, 1 },	-- 1x Solenium Lockbox
 								},
 							}),
-					--	},
-				--	}),
+						},
+					}),
 					n(180754, {	-- Questionable Trader <Cartel Ta>
 						i(185953),	-- Fraudulent Credentials
 					}),
@@ -252,7 +260,7 @@ _.Instances = { tier(SL_TIER, {
 						},
 					}),
 					e(2449, {	-- Timecap'n Hooktail
-					--	["crs"] = {  },	--
+						["crs"] = { 175546 },	-- Timecap'n Hooktail
 						["g"] = {
 							i(181498),	-- Grounding Surge
 							i(181975),	-- Hardened Bones
@@ -270,7 +278,7 @@ _.Instances = { tier(SL_TIER, {
 						},
 					}),
 					e(2455, {	-- So'leah
-					--	["crs"] = {  },	--
+						["crs"] = { 177269 },	-- So'leah
 						["g"] = {
 							ach(15178, {	-- Fake It 'Til You Make It
 								i(186637),	-- Tazavesh Gearglider (MOUNT!)
