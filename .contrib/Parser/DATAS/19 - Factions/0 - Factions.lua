@@ -159,30 +159,26 @@ _.Factions =
 		faction(967),	-- The Violet Eye
 	}),
 	tier(WOTLK_TIER, {
-		["g"] = {
-			faction(1106),	-- Argent Crusade
-			faction(1104, {	-- Frenzyheart Tribe
-				["altAchievements"] = { 952 },	-- Mercenary of Sholazar
-			}),
-			faction(1090),	-- Kirin Tor
-			faction(1098),	-- Knights of the Ebon Blade
-			faction(1156),	-- The Ashen Verdict
-			faction(1073),	-- The Kalu'ak
-			faction(1105, {	-- The Oracles
-				["altAchievements"] = { 952 },	-- Mercenary of Sholazar
-			}),
-			faction(1119),	-- The Sons of Hodir
-			faction(1091),	-- The Wyrmrest Accord
-		},
+		faction(1106),	-- Argent Crusade
+		faction(1104, {	-- Frenzyheart Tribe
+			["altAchievements"] = { 952 },	-- Mercenary of Sholazar
+		}),
+		faction(1090),	-- Kirin Tor
+		faction(1098),	-- Knights of the Ebon Blade
+		faction(1156),	-- The Ashen Verdict
+		faction(1073),	-- The Kalu'ak
+		faction(1105, {	-- The Oracles
+			["altAchievements"] = { 952 },	-- Mercenary of Sholazar
+		}),
+		faction(1119),	-- The Sons of Hodir
+		faction(1091),	-- The Wyrmrest Accord
 	}),
 	tier(CATA_TIER, {
-		["g"] = {
-			faction(1204),	-- Avengers of Hyjal
-			faction(1158),	-- Guardians of Hyjal
-			faction(1173),	-- Ramkahen
-			faction(1135),	-- The Earthen Ring
-			faction(1171),	-- Therazane
-		},
+		faction(1204),	-- Avengers of Hyjal
+		faction(1158),	-- Guardians of Hyjal
+		faction(1173),	-- Ramkahen
+		faction(1135),	-- The Earthen Ring
+		faction(1171),	-- Therazane
 	}),
 	tier(MOP_TIER, {
 		faction(1492),	-- Emperor Shaohao
