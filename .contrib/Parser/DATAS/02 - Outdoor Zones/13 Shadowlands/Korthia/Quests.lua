@@ -112,6 +112,18 @@ _.Zones =
 					["provider"] = { "n", 177927 },	-- Tal-Galan
 					["coord"] = { 62.7, 24.8, KORTHIA },
 				}),
+				q(64213, {	-- A Symbol of Hope (A?)
+					["sourceQuests"] = { 64211 },	-- Doorway in the Dark (A)
+					["provider"] = { "n", 180074 },	-- Lady Jaina Proudmoore
+					["coord"] = { 62.9, 25.7, KORTHIA },
+					["races"] = ALLIANCE_ONLY,	-- TODO: probably?
+				}),
+				q(64214, {	-- A Symbol of Hope (H?)
+					["sourceQuests"] = { 64212 },	-- Doorway in the Dark (H)
+					["provider"] = { "n", 180073 },	-- Thrall
+					["coord"] = { 62.9, 25.7, KORTHIA },
+					["races"] = HORDE_ONLY,	-- TODO: probably?
+				}),
 				q(64106, {	-- A Unified Effort
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
@@ -171,10 +183,29 @@ _.Zones =
 					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
 					["coord"] = { 39.4, 51.3, KORTHIA },
 				}),
+				q(64314, {	-- Covenants Renewed
+					["sourceQuests"] = { 64213, 64214 },	-- A Symbol of Hope (A/H)
+					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 63.1, 24.5, KORTHIA },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
 				q(63717, {	-- Defending the Vault
 					["sourceQuests"] = { 63714 },	-- To the Vault
 					["provider"] = { "n", 177459 },	-- Protector Kah-Rev
 					["coord"] = { 49.5, 65.0, KORTHIA },
+				}),
+				q(64211, {	-- Doorway in the Dark (A?)
+				--	TODO: is this quest available to people who have completed Sanctum of Domination?  it's basically "talk to jaina and watch the SoD sylvanas cutscene"
+					["sourceQuests"] = { 63593 },	-- New Sigil of the Kyrian
+					["provider"] = { "n", 177194 },	-- The Primus
+					["coord"] = { 62.8, 26.2, KORTHIA },
+					["races"] = ALLIANCE_ONLY,	-- TODO: probably?  this version is "speak to jaina," 64212 is "speak to thrall"
+				}),
+				q(64212, {	-- Doorway in the Dark (H?)
+					["sourceQuests"] = { 63593 },	-- New Sigil of the Kyrian
+					["provider"] = { "n", 177194 },	-- The Primus
+					["coord"] = { 62.8, 26.2, KORTHIA },
+					["races"] = HORDE_ONLY,	-- TODO: probably?  this version is "speak to thrall," 64211 is "speak to jaina"
 				}),
 				q(63644, {	-- Dread Tidings
 					["sourceQuests"] = { 63659 },	-- Dreadlords!
@@ -605,6 +636,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.4, 22.4, KORTHIA },
 				}),
+				q(63793, {	-- Broker's Bounty: Ensydius the Defiler
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
+					["isDaily"] = true,
+					["coord"] = { 64.7, 25.6, KORTHIA },
+				}),
 				q(63964, {	-- Broker's Bounty: Grimtalon
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
@@ -849,12 +886,6 @@ _.Zones =
 				}),
 
 			--	ptr data
-				q(63793, {	-- Broker's Bounty: Ensydius the Defiler
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
-					["isDaily"] = true,
-					["coord"] = { 64.7, 25.6, KORTHIA },
-				}),
 				q(63792, {	-- Broker's Bounty: Nocturnus the Unraveler
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
@@ -962,6 +993,8 @@ _.Zones =
 _.HiddenQuestTriggers = {
 	q(64563),	-- triggered when turning in #64556, "In Need of Assistance"
 	q(64737),	-- triggered when turning in #64271, "A More Civilized Way" - received i(185115), Redeemed Inquisitor's Drape - perhaps a universal 'received covenant transmog' tracking quest?  got it the next day on my Kyrian shaman, who received i(184989), Foresworn Aspirant's Wraps.  was the first covenant mog for both characters ever but perhaps could be a weekly lockout or something? (See Errors for other ways to get this)
+	q(64507),	-- triggered after picking up #64211, "Doorway in the Dark"
+	q(64533),	-- triggered after listening to the entirety of the Primus's RP after turning in "Covenants Renewed"
 };
 
 _NeverImplemented = {
