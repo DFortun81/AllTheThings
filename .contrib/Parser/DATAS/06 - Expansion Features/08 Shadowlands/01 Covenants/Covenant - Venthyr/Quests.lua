@@ -512,6 +512,10 @@ _.ExpansionFeatures =
 						["description"] = "Requires Renown 22.",
 						["provider"] = { "n", 175772 },	-- Rahel
 						["coord"] = { 54.0, 27.2, SINFALL_REACHES },
+						["timeline"] = {
+							"added 9.0.2.36734",
+							"removed 9.1.0.39226",
+						},
 					}),
 					q(64083, {	-- Sinfall Tactician #2
 						["description"] = "Requires Renown 59.",
@@ -523,6 +527,10 @@ _.ExpansionFeatures =
 						["description"] = "Requires Renown 7.",
 						["provider"] = { "n", 175772 },	-- Rahel
 						["coord"] = { 54.1, 26.8, SINFALL_REACHES },
+						["timeline"] = {
+							"added 9.0.2.36734",
+							"removed 9.1.0.39226",
+						},
 					}),
 					q(64325, {	-- Sinfall Veteran #2
 						["description"] = "Requires Renown 43.",

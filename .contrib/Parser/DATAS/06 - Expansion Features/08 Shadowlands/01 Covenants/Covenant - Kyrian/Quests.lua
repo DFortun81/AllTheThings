@@ -397,6 +397,10 @@ _.ExpansionFeatures =
 						["description"] = "Requires Renown 22.",
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
 						["coord"] = { 42.7, 70.3, ARCHONS_RISE },
+						["timeline"] = {
+							"added 9.0.2.36734",
+							"removed 9.1.0.39226",
+						},
 					}),
 					q(64086, {	-- Kyrian Tactician #2
 						["description"] = "Requires Renown 59.",
@@ -407,6 +411,10 @@ _.ExpansionFeatures =
 						["description"] = "Requires Renown 7.",
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
 						["coord"] = { 42.7, 70.3, ARCHONS_RISE },
+						["timeline"] = {
+							"added 9.0.2.36734",
+							"removed 9.1.0.39226",
+						},
 					}),
 					q(64323, {	-- Kyrian Veteran #2
 						["description"] = "Requires Renown 43.",

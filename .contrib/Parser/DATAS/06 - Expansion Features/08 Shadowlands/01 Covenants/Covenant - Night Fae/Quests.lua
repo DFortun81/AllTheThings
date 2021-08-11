@@ -54,6 +54,10 @@ _.ExpansionFeatures =
 						["description"] = "Requires Renown 22.",
 						["provider"] = { "n", 176096 },	-- Laurel
 						["coord"] = { 34.0, 37.0, THE_TRUNK },
+						["timeline"] = {
+							"added 9.0.2.36734",
+							"removed 9.1.0.39226",
+						},
 					}),
 					q(64085, {	-- Night Fae Tactician #2
 						["description"] = "Requires Renown 59.",
@@ -65,6 +69,10 @@ _.ExpansionFeatures =
 						["description"] = "Requires Renown 7.",
 						["provider"] = { "n", 176096 },	-- Laurel
 						["coord"] = { 34.0, 37.0, THE_TRUNK },
+						["timeline"] = {
+							"added 9.0.2.36734",
+							"removed 9.1.0.39226",
+						},
 					}),
 					q(64322, {	-- Night Fae Veteran #2
 						["description"] = "Requires Renown 43.",

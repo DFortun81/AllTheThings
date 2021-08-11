@@ -487,6 +487,10 @@ _.ExpansionFeatures =
 						["description"] = "Requires Renown 22.",
 						["provider"] = { "n", 175998 },    -- Elspeth Larink
 						["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
+						["timeline"] = {
+							"added 9.0.2.36734",
+							"removed 9.1.0.39226",
+						},
 					}),
 					q(64084, {	-- Necrolord Tactician
 						["description"] = "Requires Renown 59.",
@@ -497,6 +501,10 @@ _.ExpansionFeatures =
 						["description"] = "Requires Renown 7.",
 						["provider"] = { "n", 175998 },    -- Elspeth Larink
 						["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
+						["timeline"] = {
+							"added 9.0.2.36734",
+							"removed 9.1.0.39226",
+						},
 					}),
 					q(64324, {	-- Necrolord Veteran #2
 						["description"] = "Requires Renown 43.",
