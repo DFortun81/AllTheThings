@@ -40,7 +40,7 @@ _.ExpansionFeatures =
 								i(184996),	-- Aspiring Aspirant's Sash
 								i(184992),	-- Aspiring Aspirant's Slippers
 								i(184991, {	-- Aspiring Aspirant's Vestments
-									["u"] = NEVER_IMPLEMENTED,	-- not included in the ensemble as of June 17th on PTR
+									["description"] = "If this piece shows as uncollected after learning the ensemble, relog and then SHIFT+CLICK anywhere in an ATT list to refresh your collection.",	-- if anyone reports this as missing, remind them that RELOGGING IS NECESSARY.  refreshing alone did not work for me, nor did relogging alone - it required the one-two punch combo
 								}),
 								i(184997),	-- Aspiring Aspirant's Wraps
 							},
