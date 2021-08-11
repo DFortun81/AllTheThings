@@ -91,6 +91,12 @@ _.Zones =
 					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
 					["coord"] = { 63.4, 24.6, KORTHIA },
 				}),
+				q(64441, {	-- A Loose Thread
+				--	TODO: add provider, unavailable on wowhead atm.  despite the object name, this quest is NOT venthyr-only; i did it on a venthyr and a kyrian
+					["sourceQuests"] = { 64314 },	-- Covenants Renewed
+				--	["provider"] = { "o",  },	-- Misplaced Venthyr Tome
+					["coord"] = { 61.0, 25.5, KORTHIA },
+				}),
 				q(63755, {	-- A Matter of Urgency
 					["sourceQuests"] = { 64106 },	-- A Unified Effort
 					["provider"] = { "n", 177155 },	-- Pathscribe Roh-Vess
