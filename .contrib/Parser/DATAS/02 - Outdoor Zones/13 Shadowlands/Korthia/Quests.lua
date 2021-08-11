@@ -66,7 +66,7 @@ _.Zones =
 								i(185075),	-- Radiant Court Sash
 								i(185079),	-- Radiant Court Slippers
 								i(185080),	-- Radiant Court Vestments
-								i(185074),	-- Radiant Court Wraps								
+								i(185074),	-- Radiant Court Wraps
 								-- Venthyr -- Redeemed Inquisitor's  -- Korthia Dailies?
 								i(185115),	-- Redeemed Inquisitor's Drape
 								i(185109),	-- Redeemed Inquisitor's Handwraps
@@ -92,9 +92,8 @@ _.Zones =
 					["coord"] = { 63.4, 24.6, KORTHIA },
 				}),
 				q(64441, {	-- A Loose Thread
-				--	TODO: add provider, unavailable on wowhead atm.  despite the object name, this quest is NOT venthyr-only; i did it on a venthyr and a kyrian
 					["sourceQuests"] = { 64314 },	-- Covenants Renewed
-				--	["provider"] = { "o",  },	-- Misplaced Venthyr Tome
+					["provider"] = { "o", 369432 },	-- Misplaced Venthyr Tome
 					["coord"] = { 61.0, 25.5, KORTHIA },
 				}),
 				q(63755, {	-- A Matter of Urgency

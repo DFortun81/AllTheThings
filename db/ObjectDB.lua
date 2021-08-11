@@ -1892,6 +1892,7 @@ select(2, ...).ObjectNames = {
 	[369339] = "Mawsworn Cache",
 	[369340] = "Korthian Relic Box",
 	[369341] = "Mawsworn Cache",
+	[369432] = "Misplaced Venthyr Tome",
 	[369437] = "Riftbound Cache",
 	[369438] = "Riftbound Cache",
 	[369439] = "Riftbound Cache",
