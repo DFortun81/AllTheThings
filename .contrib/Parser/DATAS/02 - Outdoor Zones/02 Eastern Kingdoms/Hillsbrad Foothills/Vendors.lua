@@ -41,6 +41,7 @@ _.Zones =
 					},
 				}),
 				n(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>
+					["coord"] = { 44.6, 46.4, HILLSBRAD_FOOTHILLS },
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
