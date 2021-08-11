@@ -1001,6 +1001,7 @@ _.HiddenQuestTriggers = {
 	q(64737),	-- triggered when turning in #64271, "A More Civilized Way" - received i(185115), Redeemed Inquisitor's Drape - perhaps a universal 'received covenant transmog' tracking quest?  got it the next day on my Kyrian shaman, who received i(184989), Foresworn Aspirant's Wraps.  was the first covenant mog for both characters ever but perhaps could be a weekly lockout or something? (See Errors for other ways to get this)
 	q(64507),	-- triggered after picking up #64211, "Doorway in the Dark"
 	q(64533),	-- triggered after listening to the entirety of the Primus's RP after turning in "Covenants Renewed"
+	q(64377),	-- triggered after watching Thrall/Draka RP about Garrosh
 };
 
 _NeverImplemented = {
