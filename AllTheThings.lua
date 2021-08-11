@@ -2995,14 +2995,15 @@ local function BuildContainsInfo(item, entries, paramA, paramB, indent, layer)
 end
 -- ItemID's which should be skipped when filling purchases
 app.SkipPurchases = {
+	[-1] = 1,	-- Whether to skip certain cost items
 	[137642] = 1,	-- Mark of Honor
 	[21100] = 1,	-- Coin of Ancestry
 	[23247] = 1,	-- Burning Blossom
 }
 -- Allows for toggling whether the SkipPurchases should be used or not
 app.SetSkipPurchases = function(bypass)
-	app.SkipPurchases[-1] = bypass;
 	-- print("SkipPurchases exclusion",bypass)
+	app.SkipPurchases[-1] = bypass;
 end
 -- Fills & returns a group with its 'cost' references, along with all sub-groups recursively if specified
 -- This should only be used on a cloned group so the source group is not contaminated
@@ -3010,26 +3011,28 @@ end
 local function FillPurchases(group, depth)
 	-- default to 2 levels of filling, i.e. 0) Raid Essence -> 1) Tier Token -> 2) Item
 	depth = depth or 2;
+	-- print("FillPurchases",group.itemID,depth)
 	if depth <= 0 then return; end
-	-- do not fill purchases on certain items, set -1 to bypass the skip (for popouts)
-	if not app.SkipPurchases[-1] and app.SkipPurchases[group.itemID or 0] then return; end
+	-- do not fill purchases on certain items, can skip the skip though
+	if app.SkipPurchases[-1] and app.SkipPurchases[group.itemID or 0] then return; end
 	-- do not fill 'saved' groups, or groups under saved groups unless in Acct or Debug mode
 	if (group.saved or (group.parent and group.parent.saved)) and not app.MODE_DEBUG_OR_ACCOUNT then return; end
 
-	if group.costCollectibles or (group.collectibleAsCost and group.costCollectibles) then
+	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles);
+	if collectibles then
 		-- Nest new copies of the cost collectible objects of this group under itself
 		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
 		-- If this is under a currency, then whatever it purchases must be available to the current character to buy
 		if group.currencyID then
-			for _,purchase in ipairs(group.costCollectibles) do
+			for _,purchase in ipairs(collectibles) do
 				if app.RecursiveGroupRequirementsFilter(purchase) then
 					-- print("Nested",purchase.key,purchase.key and purchase[purchase.key],"under",group.key,group.key and group[group.key])
 					NestObject(usedToBuy, purchase, true);
 				end
 			end
 		else
-			-- print("Filled",#group.costCollectibles,"under",group.key,group.key and group[group.key])
-			NestObjects(usedToBuy, group.costCollectibles, true);
+			-- print("Filled",#collectibles,"under",group.key,group.key and group[group.key])
+			NestObjects(usedToBuy, collectibles, true);
 		end
 		NestObject(group, usedToBuy);
 		-- reduce the depth by one since a cost has been filled
@@ -4538,9 +4541,7 @@ fieldConverters = {
 		else
 			for k,v in pairs(value) do
 				if v[1] == "i" and v[2] > 0 then
-					-- if v[2] ~= 137642 then	-- NO MARKS OF HONOR!
-						CacheField(group, "itemIDAsCost", v[2]);
-					-- end
+					CacheField(group, "itemIDAsCost", v[2]);
 				elseif v[1] == "c" and v[2] > 0 then
 					CacheField(group, "currencyIDAsCost", v[2]);
 				end
@@ -12459,9 +12460,9 @@ function app:CreateMiniListForGroup(group)
 		-- make a search for this group if it is an item/currency and not already a container for things
 		if not group.g and (group.itemID or group.currencyID) then
 			local cmd = group.link or group.key .. ":" .. group[group.key];
-			app.SetSkipPurchases(true);
+			app.SetSkipPurchases(nil);
 			group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-			app.SetSkipPurchases(false);
+			app.SetSkipPurchases(1);
 		end
 
 		-- clone/search initially so as to not let popout operations modify the source data
@@ -18957,9 +18958,9 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		end
 
 		-- Search for the Link in the database
-		app.SetSkipPurchases(true);
+		app.SetSkipPurchases(nil);
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-		app.SetSkipPurchases(false);
+		app.SetSkipPurchases(1);
 		-- make sure it's 'something' returned from the search before throwing it into a window
 		if group and (group.link or group.name or group.text or group.key) then
 			app:CreateMiniListForGroup(group);
@@ -19042,9 +19043,9 @@ end
 			-- print(type,paramA,paramB)
 			if type == "search" then
 				local cmd = paramA .. ":" .. paramB;
-				app.SetSkipPurchases(true);
+				app.SetSkipPurchases(nil);
 				local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-				app.SetSkipPurchases(false);
+				app.SetSkipPurchases(1);
 				app:CreateMiniListForGroup(group);
 				return true;
 			elseif type == "dialog" then
