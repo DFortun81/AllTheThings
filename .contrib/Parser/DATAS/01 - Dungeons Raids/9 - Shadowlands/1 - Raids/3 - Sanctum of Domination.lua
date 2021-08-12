@@ -1299,7 +1299,7 @@ _.HiddenQuestTriggers = {
 	q(64691),	-- Borr-Gahn (Mythic)
 
 	q(64675),	-- Stygian Ember from Screamspike (LFR)
-	q(64605),	-- Stygian Ember from Screamspike (Normal / Heroic) 
+	q(64605),	-- Stygian Ember from Screamspike (Normal / Heroic)
 	q(64619),	-- Stygian Ember from Screamspike (Normal / Heroic)
 	q(64686),	-- Stygian Ember from Screamspike (Normal)
 	q(64620),	-- Stygian Ember from Screamspike (Heroic)
@@ -1308,9 +1308,9 @@ _.HiddenQuestTriggers = {
 	q(64326),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
 	q(64327),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
 	q(64328),	-- The Tarragrue (Heroic) (Heroic-Week 2)
-	q(64329),	-- The Tarragrue (Normal / Heroic) (Mythic-Week2)
 	q(64629),	-- The Tarragrue (Heroic-Week 2)
 	q(64653),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
+	q(64329),	-- The Tarragrue (Mythic)
 
 	q(64330),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
 	q(64331),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
@@ -1332,6 +1332,7 @@ _.HiddenQuestTriggers = {
 	q(64483), 	-- Soulrender Dormazain (Heroic) (Heroic-Week 2)
 	q(64633),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
 	q(64660),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
+	q(64484),	-- Soulrender Dormazain (Mythic)
 
 	q(64608),	-- Garrosh cinematic (Normal / Heroic)
 
