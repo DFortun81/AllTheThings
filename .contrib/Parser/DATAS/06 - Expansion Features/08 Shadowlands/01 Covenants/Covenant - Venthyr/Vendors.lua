@@ -1444,6 +1444,10 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(63633),	-- learning Ensemble: Sinful Venthyr Attire
+	q(63634),	-- learning Ensemble: Court Inquisitor's Vestments
+};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10100, {	-- Shadowlands
 		n(-949, {	-- Covenant: Venthyr

@@ -1532,6 +1532,9 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(63602),	-- learning Ensemble: Devoted Aspirant's Regalia
+};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10100, {	-- Shadowlands
 		n(-939, {	-- Covenant: Kyrian

@@ -33,15 +33,15 @@ _.NeverImplemented =
 	}),
 	tier(SL_TIER, {	-- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
 		-- Set added in 9.1.0
-		-- Night Fae -- of the Twilight Grove -- Korthia Dailies?
+		-- Night Fae -- of the Twilight Grove -- Korthia Dailies? tracking quest should be 63596
 		i(186500),	-- Ensemble: Garb of the Twilight Grove
-		-- Kyrian -- Foresworn Aspirant's -- Korthia Dailies?
+		-- Kyrian -- Foresworn Aspirant's -- Korthia Dailies? tracking quest should be 63600
 		i(186518),	-- Ensemble: Foresworn Aspirant's Regalia
-		-- Necrolord -- Rogue Necromancer's -- Korthia Dailies?
+		-- Necrolord -- Rogue Necromancer's -- Korthia Dailies? tracking quest should be 63629
 		i(186505),	-- Ensemble: Rogue Necromancer's Vestments
-		-- Venthyr -- Radiant Court -- Korthia Dailies?
+		-- Venthyr -- Radiant Court -- Korthia Dailies? tracking quest should be 63632
 		i(186513),	-- Ensemble: Radiant Court Attire
-		-- Venthyr -- Redeemed Inquisitor's  -- Korthia Dailies?
+		-- Venthyr -- Redeemed Inquisitor's  -- Korthia Dailies? tracking quest should be 63636
 		i(186514),	-- Ensemble: Redeemed Inquisitor's Vestments
 		-- Possibly WoW's 17th Anniversary
 		i(186459),	-- Archaic Charm of Presence

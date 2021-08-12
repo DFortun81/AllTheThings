@@ -1659,6 +1659,7 @@ _.HiddenQuestTriggers = {
 	q(61909),	-- Ensemble: Conservator's Guise
 	q(61910),	-- Ensemble: Conservator's Raiment
 	q(61911),	-- Ensemble: Conservator's Regalia
+	q(63595),	-- Ensemble: Garb of the Azure Dusk
 	q(61912),	-- Ensemble: Winterborn Warbark
 	q(61913),	-- Ensemble: Winterborn Guise
 	q(61914),	-- Ensemble: Winterborn Raiment
