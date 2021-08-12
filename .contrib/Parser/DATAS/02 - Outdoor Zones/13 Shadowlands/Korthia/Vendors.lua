@@ -384,7 +384,7 @@ _.HiddenQuestTriggers = {
 --	q(),	-- learning Ensemble: Battlefield Messenger's Regalia
 --	q(),	-- learning Ensemble: Frontline Necromancer's Vestments
 --	q(),	-- learning Ensemble: Garb of Fall's Promise
---	q(),	-- learning Ensemble: Renathal's Battlefield Attire
+	q(63631),	-- learning Ensemble: Renathal's Battlefield Attire
 	q(63635),	-- learning Ensemble: Renathal's Field Inquisitor's Vestments
 };
 
