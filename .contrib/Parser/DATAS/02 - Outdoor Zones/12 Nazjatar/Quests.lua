@@ -2584,41 +2584,45 @@ _.Zones =
 	}),
 };
 _.HiddenQuestTriggers = {
-	q(57055),	-- Last Glowing Arcane Trunk or by using the rewarded item 'Mardivas's Universally Lauded Tote' (ID: 170477)
-	-- The Laboratory of Mardivas
-		q(56708),	-- Lesser Lithic Arcanocrystal Selection	-- Needs confirmation
-		q(55202),	-- Elemental Essence Amalgamator Selection	-- Needs confirmation
-		q(56428),	-- Summoned Arcane Amalgamation
-		q(55144),	-- Summoned Dusty Amalgamation
-		q(55205),	-- Summoned Moghiea
-		q(55206),	-- Summoned Ungormath
-		q(55203),	-- Summoned Salgos, the Eternal
-		q(55201),	-- Summoned Spawn of Salgos
-		q(55204),	-- Summoned Xue
-		q(55199),	-- Summoned Zomera
-		q(55200),	-- Summoned Omus
-		q(56476),	-- Killed Arcane Amalgamation
-		q(56892),	-- Killed Arcane Amalgamation, Burning Amalgamation, Herald of Salgos, Moghiea, Salgos the Eternal, Spawn of Salgos, Xue, and Zomera
-		q(56724),	-- Triggered when killing Arcane Amalgamation in mardivas' lab. Probably used to disable something else in the room
-		q(55145),	-- Killed Burning Amalgamation
-		q(56481),	-- Killed Burning Amalgamation
-		q(56725),	-- Killed Burning Amalgamation
-		q(56891),	-- Killed Burning Amalgamation, Moghiea, Salgos the Eternal, Spawn of Salgos, and Xue
-		q(56485),	-- Killed Dusty Amalgamation
-		q(56730),	-- First kill of Dusty Amalgamation
-		q(56488),	-- Killed Herald of Salgos
-		q(56733),	-- First kill of Herald of Salgos
-		q(56484),	-- Killed Moghiea
-		q(56728),	-- killed Moghiea (first time)
-		q(56479),	-- Killed Omus
-		q(56722),	-- Killed Omus
-		q(56483),	-- Killed Ungormath
-		q(56487),	-- Killed Salgos, the Eternal
-		q(56732),	-- Killed Salgos, the Eternal
-		q(56486),	-- Killed Spawn of Salgos
-		q(56731),	-- Killed Spawn of Salgos
-		q(56482),	-- Killed Xue
-		q(56726),	-- Killed Xue
-		q(56480),	-- Killed Zomera
-		q(56723),	-- Killed Zomera
+--	HORRIBLE NAZJATAR BODYGUARD DIALOGUE QUESTS (usually trigger in areas where you're doing the daily quests for the bodyguard)
+--	unknown/probable bodyguard dialogue quests
+	q(56659),	-- not sure precisely what triggered this -- selected Neri as my daily follower, refreshed, walked outside, picked up "Down into Nazjatar," and this popped (probably dialogue quest)
+	q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires (haven't reproduced w/poen, so probably another horde bodyguard)
+	q(56675),	-- Triggered shortly after summoning Neri from the conch
+	q(56663),	-- Unknown trigger. Occured when walking into Shirakess Repository, but need to confirm potential pre-reqs
+	q(56673),	-- Triggered after going into Deepcoil Hatchery for the first time. Needs confirmation
+	q(56543),	-- Triggered when walking into Kelfin Pocket for the first time. Follower dialog goes off (horde)
+	q(56507),	-- Triggered randomly while in nazjatar
+	q(56658),	-- Triggered randomly while in Nazjatar
+	q(56670),	-- Triggered randomly while in Nazjatar
+--	Akana
+--	Inowari
+--	Neri
+	q(56664),	-- "We need to be careful down here.  The locals are definitely not friendly."
+	q(56668),	-- "Kelp grass is one of our most useful resources here in Nazjatar."
+	q(56669),	-- "The tamed snapdragons aren't producing venom anymore. Our only way to harvest it is from the wild packs roaming here."
+	q(56679),	-- "One day, there will be no more shackles."
+	q(56680),	-- "It's hard to imagine what we'll do once we don't have to fight to survive.  I look forward to figuring that out."
+--	Ori
+	q(57041),	-- "Change is inevitable.  Though she wielded powerful magic, Azshara could not hold back the tide.  Such will be her fate once more."
+--	Poen
+	q(56544),	-- "This is one of my favorite spots!  I always keep snacks in my pocket!  It works out great for everyone!"
+	q(56671),	-- "I helped a little elf girl find her doll here, once.  It made her so happy, even though there was so little of it left.  I hugged Mak so hard when I got back to Newhome."
+	q(56682),	-- "I always dreamt of fighting back against the naga.  Neri gave me that chance."
+	q(56683),	-- "I was born in the slave pens.  My family was broken by the naga... I never had a chance to heal them."  yikes, dude
+	q(56685),	-- "If you really listen, sometimes you can hear the voice of the ocean.  She brings me peace."
+	q(56686),	-- "The ocean taught me how to help and heal my friends.  I'm glad when I can be useful."
+	q(56687),	-- "This one time, I got caught in some seaweed while fleeling from the naga.  But Mak showed up and saved me!  We've been best friends ever since!"
+	q(56688),	-- "The world's a lot less interesting when you can only move on the ground.  Now I see why the sea cucumbers are always complaining."
+	q(56689),	-- "When the ocean returns, the tears of all who have suffered will be washed away."
+	q(56690),	-- "It sounds like this Horde you come from has survived some awful things.  Just like us!  Seeing you stick together brings me hope."
+	q(56692),	-- "Mmm, I love eel!"
+	q(56693),	-- "These are lovely.  Sometimes, doing something nice for a friend is what it's all about."
+	q(56695),	-- "Dani is great!  She wrangles all of our snapdragons, even the most difficult and ornery ones."
+	q(56696),	-- "Have you ever swooped on a ray?  It's out-ray-geous!"
+	q(56697),	-- "We have so many free people in Newhome that we need to gather more food!  This is great!"
+--	Vim
+	q(56701),	-- "Without Neri, we would have scattered with the current.  She brought us together."
+	q(56705),	-- "Azshara and her 'loyal subjects' are the worst kind of monsters.  We have to stop them here and now."
+	q(56711),	-- "I won't always be around to protect Newhome.  If these scales can help keep our people safe, then they're worth the effort."
 };
