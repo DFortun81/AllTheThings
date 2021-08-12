@@ -6337,7 +6337,7 @@ _.PVP =
 							i(100375),	-- Grievous Gladiator's Clasp of Meditation
 							i(100207),	-- Grievous Gladiator's Cord of Accuracy
 							i(100205),	-- Grievous Gladiator's Cord of Cruelty
-							i(100209),	-- Grievous Gladiator's Cord of Meditation	-- Priest Only
+							i(100209),	-- Grievous Gladiator's Cord of Meditation
 							i(100393),	-- Grievous Gladiator's Girdle of Accuracy
 							i(100395),	-- Grievous Gladiator's Girdle of Prowess
 							i(100310),	-- Grievous Gladiator's Links of Accuracy
@@ -6862,7 +6862,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 							i(103156, {	-- Grievous Gladiator's Cord of Meditation
-								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble",
 							}),
 							i(103258, {	-- Grievous Gladiator's Girdle of Accuracy
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -8346,7 +8346,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 							i(102906, {	-- Grievous Gladiator's Cord of Meditation
-								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble",
 							}),
 							i(102837, {	-- Grievous Gladiator's Girdle of Accuracy
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
