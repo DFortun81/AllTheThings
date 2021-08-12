@@ -4320,7 +4320,6 @@ _.HiddenQuestTriggers = {
 		q(64376),	-- tracking quest that automatically accepted when i flew in to Korthia on 5/11/21 - supposedly related to the Darkmaul mount
 		q(64262),	-- triggered when turning in #64007, "Charge of the Covenants"
 		q(64536),	-- looting Maldraxxus Larva Shell (300 Catalogued Research)
-		q(63601),	-- Aspiring Aspirant's ensemble
 
 		-- Treasures of Korthia achievement
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
