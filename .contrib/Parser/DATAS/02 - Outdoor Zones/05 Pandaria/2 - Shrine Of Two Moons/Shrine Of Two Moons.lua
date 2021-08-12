@@ -17,33 +17,66 @@ _.Zones =
 					ach(7285),	-- Every Day I'm Pand-a-ren
 				}),
 				n(QUESTS, {
---[[
+					--[[
 					q(31511, {	-- A Witness to History
 						["races"] = HORDE_ONLY,
 					}),
+					--]]
 					q(31528, {	-- A Worthy Challenge: Darkmaster Gandling
-						["u"] = REMOVED_FROM_GAME,
+						["isDaily"] = true,
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(98134),	-- Heroic Cache of Treasures
-						},
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(31526, {	-- A Worthy Challenge: Durand
-						["u"] = REMOVED_FROM_GAME,
+						["isDaily"] = true,
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(98134),	-- Heroic Cache of Treasures
-						},
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(31527, {	-- A Worthy Challenge: Flameweaver Koegler
-						["u"] = REMOVED_FROM_GAME,
+						["isDaily"] = true,
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(98134),	-- Heroic Cache of Treasures
-						},
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
 					}),
-					q(31279),	-- Everything I Know About Cooking
-					--]]
+					q(31524, {	-- A Worthy Challenge: Raigonn
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(31520, {	-- A Worthy Challenge: Sha of Doubt
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(31522, {	-- A Worthy Challenge: Sha of Hatred
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(31525, {	-- A Worthy Challenge: Wing Leader Ner'onok
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(31523, {	-- A Worthy Challenge: Xin the Weaponmaster
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(31519, {	-- A Worthy Challenge: Yan-zhu the Uncasked
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+				--	q(31279),	-- Everything I Know About Cooking
 					q(32901, {	-- Heroic Deeds
 						["coord"] = { 46.6, 56.5, 392 },
 						["races"] = HORDE_ONLY,

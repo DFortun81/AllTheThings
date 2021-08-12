@@ -20,6 +20,60 @@ _.Zones =
 					ach(7285),	-- Every Day I'm Pand-a-ren
 				}),
 				n(QUESTS, {
+					q(32007, {	-- A Worthy Challenge: Darkmaster Gandling
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(32005, {	-- A Worthy Challenge: Durand
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(32006, {	-- A Worthy Challenge: Flameweaver Koegler
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(32003, {	-- A Worthy Challenge: Raigonn
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(31998, {	-- A Worthy Challenge: Sha of Doubt
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(32001, {	-- A Worthy Challenge: Sha of Hatred
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(32004, {	-- A Worthy Challenge: Wing Leader Ner'onok
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(32002, {	-- A Worthy Challenge: Xin the Weaponmaster
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(32000, {	-- A Worthy Challenge: Yan-zhu the Uncasked
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(32900, {	-- Heroic Deeds
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class- and spec-specific. Not all items are available to all classes able to equip them.|r",
 						["coord"] = { 47.23, 49.71, 393 },

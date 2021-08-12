@@ -1272,8 +1272,18 @@ _.HiddenQuestTriggers = {
 		q(33093),	-- FLAG - Proving Grounds - Tank Silver
 		q(32112),	-- FLAG - Been to Fight Club. Completing first fight
 		q(32899),	-- Daily Scenario Random (Nth)(Mists)
-		q(32873),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st
-		q(32874),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth
+		q(32873, {	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st
+			["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+		}),
+		q(32874, {	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth
+			["_drop"] = { "g" },	-- drop Greater Cache of Treasures
+		}),
+		q(31616, {	-- LFGDungeons - Mists - Scenario - Normal Random - 1st
+			["_drop"] = { "g" },	-- drop Greater Cache of Treasures
+		}),
+		q(31617, {	-- LFGDungeons - Mists - Scenario - Normal Random - Nth
+			["_drop"] = { "g" },	-- drop Greater Cache of Treasures
+		}),
 		q(32893),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st Bonus
 		q(32894),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth Bonus
 		q(32873),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth
