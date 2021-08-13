@@ -608,12 +608,6 @@ _.Zones =
 					["minReputation"] = { 2472, 25000 },	-- Tier 5
 					["coord"] = { 62.7, 22.5, KORTHIA },
 				}),
-				q(64305, {	-- The Tormentors of Torghast
-				--	TODO: not 100% on this SQ - i did the chain through "Good News, Everyone!" and picked up all the one-time quests that were up, then logged out.  when i logged back in later that day, this quest was up.  i'm PRETTY SURE i had picked up all the yellow quests in the area already but i guess maybe i missed one (even though it was literally right next to me lol)?  anyway, could use verification
-					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
-					["provider"] = { "n", 179321 },	-- Duchess Mynx
-					["coord"] = { 63.4, 23.3, KORTHIA },
-				}),
 
 			--	Korthia Daily
 			--	confirmed on live
@@ -1013,5 +1007,11 @@ _NeverImplemented = {
 		["coord"] = { 62.7, 22.5, KORTHIA },
 		["_drop"] = { "g" },	-- drop original quest reward, which now comes from another source
 		["u"] = NEVER_IMPLEMENTED,
+	}),
+	q(64305, {	-- The Tormentors of Torghast
+		["sourceQuests"] = { 63902 },	-- Good News, Everyone!
+		["provider"] = { "n", 179321 },	-- Duchess Mynx
+		["coord"] = { 63.4, 23.3, KORTHIA },
+		["u"] = NEVER_IMPLEMENTED,	-- didn't make it off PTR
 	}),
 };
