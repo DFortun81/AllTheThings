@@ -6335,11 +6335,15 @@ _.PVP =
 							i(100263),	-- Grievous Gladiator's Belt of Meditation
 							i(100373),	-- Grievous Gladiator's Clasp of Cruelty
 							i(100375),	-- Grievous Gladiator's Clasp of Meditation
-							i(100207),	-- Grievous Gladiator's Cord of Accuracy
+							i(100207, {	-- Grievous Gladiator's Cord of Accuracy
+								["description"] = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
+							}),
 							i(100205, {	-- Grievous Gladiator's Cord of Cruelty
 								["description"] = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
 							}),
-							i(100209),	-- Grievous Gladiator's Cord of Meditation
+							i(100209, {	-- Grievous Gladiator's Cord of Meditation
+								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+							}),
 							i(100393),	-- Grievous Gladiator's Girdle of Accuracy
 							i(100395),	-- Grievous Gladiator's Girdle of Prowess
 							i(100310),	-- Grievous Gladiator's Links of Accuracy
@@ -6360,11 +6364,15 @@ _.PVP =
 							i(100379),	-- Grievous Gladiator's Greaves of Meditation
 							i(100314),	-- Grievous Gladiator's Sabatons of Alacrity
 							i(100312),	-- Grievous Gladiator's Sabatons of Cruelty
-							i(100213),	-- Grievous Gladiator's Treads of Alacrity
+							i(100213, {	-- Grievous Gladiator's Treads of Alacrity
+								["description"] = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
+							}),
 							i(100211, {	-- Grievous Gladiator's Treads of Cruelty
 								["description"] = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
 							}),
-							i(100215),	-- Grievous Gladiator's Treads of Meditation
+							i(100215, {	-- Grievous Gladiator's Treads of Meditation
+								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+							}),
 							i(100399),	-- Grievous Gladiator's Warboots of Alacrity
 							i(100397),	-- Grievous Gladiator's Warboots of Cruelty
 						}),
@@ -6866,7 +6874,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 							i(103156, {	-- Grievous Gladiator's Cord of Meditation
-								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 							i(103258, {	-- Grievous Gladiator's Girdle of Accuracy
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -7823,11 +7831,15 @@ _.PVP =
 							i(100721),	-- Grievous Gladiator's Belt of Meditation
 							i(100710),	-- Grievous Gladiator's Clasp of Cruelty
 							i(100694),	-- Grievous Gladiator's Clasp of Meditation
-							i(100606),	-- Grievous Gladiator's Cord of Accuracy
+							i(100606, {	-- Grievous Gladiator's Cord of Accuracy
+								["description"] = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
+							}),
 							i(100630, {	-- Grievous Gladiator's Cord of Cruelty
 								["description"] = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
 							}),
-							i(100655),	-- Grievous Gladiator's Cord of Meditation
+							i(100655, {	-- Grievous Gladiator's Cord of Meditation
+								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+							}),
 							i(100583),	-- Grievous Gladiator's Girdle of Accuracy
 							i(100670),	-- Grievous Gladiator's Girdle of Prowess
 							i(100588),	-- Grievous Gladiator's Links of Accuracy
@@ -7848,11 +7860,15 @@ _.PVP =
 							i(100582),	-- Grievous Gladiator's Greaves of Meditation
 							i(100589),	-- Grievous Gladiator's Sabatons of Alacrity
 							i(100675),	-- Grievous Gladiator's Sabatons of Cruelty
-							i(100563),	-- Grievous Gladiator's Treads of Alacrity
+							i(100563, {	-- Grievous Gladiator's Treads of Alacrity
+								["description"] = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
+							}),
 							i(100632, {	-- Grievous Gladiator's Treads of Cruelty
 								["description"] = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
 							}),
-							i(100698),	-- Grievous Gladiator's Treads of Meditation
+							i(100698, {	-- Grievous Gladiator's Treads of Meditation
+								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+							}),
 							i(100691),	-- Grievous Gladiator's Warboots of Alacrity
 							i(100644),	-- Grievous Gladiator's Warboots of Cruelty
 						}),
@@ -8354,7 +8370,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 							i(102906, {	-- Grievous Gladiator's Cord of Meditation
-								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 							i(102837, {	-- Grievous Gladiator's Girdle of Accuracy
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
