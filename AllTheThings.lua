@@ -14126,8 +14126,6 @@ local function UpdateWindow(self, force, got)
 			self.data.expanded = true;
 			if not self.doesOwnUpdate and
 				(force or (self.shouldFullRefresh and self:IsVisible())) then
-				self.data.progress = 0;
-				self.data.total = 0;
 				-- print("UpdateGroups",self.suffix or self.Suffix)
 				TopLevelUpdateGroup(self.data, self);
 				-- print("Done")

@@ -117,17 +117,17 @@ _.Zones =
 					["provider"] = { "n", 177927 },	-- Tal-Galan
 					["coord"] = { 62.7, 24.8, KORTHIA },
 				}),
-				q(64213, {	-- A Symbol of Hope (A?)
+				q(64213, {	-- A Symbol of Hope (A)
 					["sourceQuests"] = { 64211 },	-- Doorway in the Dark (A)
 					["provider"] = { "n", 180074 },	-- Lady Jaina Proudmoore
 					["coord"] = { 62.9, 25.7, KORTHIA },
-					["races"] = ALLIANCE_ONLY,	-- TODO: probably?
+					["races"] = ALLIANCE_ONLY,
 				}),
-				q(64214, {	-- A Symbol of Hope (H?)
+				q(64214, {	-- A Symbol of Hope (H)
 					["sourceQuests"] = { 64212 },	-- Doorway in the Dark (H)
 					["provider"] = { "n", 180073 },	-- Thrall
 					["coord"] = { 62.9, 25.7, KORTHIA },
-					["races"] = HORDE_ONLY,	-- TODO: probably?
+					["races"] = HORDE_ONLY,
 				}),
 				q(64106, {	-- A Unified Effort
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
@@ -199,18 +199,17 @@ _.Zones =
 					["provider"] = { "n", 177459 },	-- Protector Kah-Rev
 					["coord"] = { 49.5, 65.0, KORTHIA },
 				}),
-				q(64211, {	-- Doorway in the Dark (A?)
-				--	TODO: is this quest available to people who have completed Sanctum of Domination?  it's basically "talk to jaina and watch the SoD sylvanas cutscene"
+				q(64211, {	-- Doorway in the Dark (A)
 					["sourceQuests"] = { 63593 },	-- New Sigil of the Kyrian
 					["provider"] = { "n", 177194 },	-- The Primus
 					["coord"] = { 62.8, 26.2, KORTHIA },
-					["races"] = ALLIANCE_ONLY,	-- TODO: probably?  this version is "speak to jaina," 64212 is "speak to thrall"
+					["races"] = ALLIANCE_ONLY,
 				}),
-				q(64212, {	-- Doorway in the Dark (H?)
+				q(64212, {	-- Doorway in the Dark (H)
 					["sourceQuests"] = { 63593 },	-- New Sigil of the Kyrian
 					["provider"] = { "n", 177194 },	-- The Primus
 					["coord"] = { 62.8, 26.2, KORTHIA },
-					["races"] = HORDE_ONLY,	-- TODO: probably?  this version is "speak to thrall," 64211 is "speak to jaina"
+					["races"] = HORDE_ONLY,
 				}),
 				q(63644, {	-- Dread Tidings
 					["sourceQuests"] = { 63659 },	-- Dreadlords!

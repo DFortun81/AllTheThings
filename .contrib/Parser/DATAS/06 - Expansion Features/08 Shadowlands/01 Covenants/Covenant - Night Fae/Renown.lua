@@ -78,7 +78,7 @@ _.HiddenQuestTriggers = {
 	q(64388),	-- hitting Renown 48 [Hunter] (received Memory of the Fragments of the Elder Antlers)
 	q(64403),	-- hitting Renown 48 [Mage] (received Memory of the Fae Heart)
 	-- q( ),	-- hitting Renown 48 [Monk] (received Memory of ??)
-	-- q( ),	-- hitting Renown 48 [Paladin] (received Memory of ??)
+	q(64382),	-- hitting Renown 48 [Paladin] (received Memory of ??)
 	q(64408),	-- hitting Renown 48 [Priest] (received Memory of Bwonsamdi's Pact)
 	q(64401),	-- hitting Renown 48 [Rogue] (received Memory of Toxic Onslaught)
 	-- q( ),	-- hitting Renown 48 [Shaman] (received Memory of ??)
