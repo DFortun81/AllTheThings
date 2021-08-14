@@ -207,11 +207,7 @@ _.ExpansionFeatures =
 								ach(14682, {	-- The Party Herald
 									title(433),	-- The Party Herald
 									ach(14723),		-- Be Our Guest
-									ach(14678, {	-- Court Favors
-									--	TODO: add remaining crit to the places From Whence They Come
-										crit(13, {	-- Kyrian Arsenal
-										}),
-									}),
+									ach(14678),		-- Court Favors
 									ach(14681),		-- Dredger Academy
 									ach(14683),		-- Dredger Style
 									ach(14726, {	-- It's Certainly Never Boring
@@ -1648,6 +1644,18 @@ _.ExpansionFeatures =
 									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Hunt-Captain Korayn?
 									["provider"] = { "n", 171319 },	-- Hunt-Captain Korayn
 									["coord"] = { 50.8, 70.4, ARDENWEALD },
+								}),
+								q(62613, {	-- Kyrian Arsenal
+									["sourceQuests"] = { 62598 },	-- Forgelite Sophone
+									["provider"] = { "n", 158807 },	-- Forgelite Sophone
+									["coord"] = { 52.9, 83.5, BASTION },
+									["g"] = {
+										i(177243, {	-- Kyrian Arsenal
+											crit(13, {	-- Kyrian Arsenal
+												["achievementID"] = 14678,	-- Court Favors
+											}),
+										}),
+									},
 								}),
 								q(62609, {	-- Necrolord Arsenal
 									["sourceQuests"] = { 62597 },	-- Bonesmith Heirmir
