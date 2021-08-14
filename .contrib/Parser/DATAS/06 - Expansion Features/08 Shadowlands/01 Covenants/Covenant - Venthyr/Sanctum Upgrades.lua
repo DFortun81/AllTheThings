@@ -2634,6 +2634,7 @@ _.HiddenQuestTriggers = {
 			q(61500),	-- using Stock: Comfy Chairs
 			q(61497),	-- using Stock: Greeting Kits
 			q(59690),	-- triggered when using "Racing Permit," reward from "It's Race Day in the Ramparts!" WQ
+			q(59693),	-- triggered when using "Kyrian Arsenal"
 			q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 
 		-- Misson Table
