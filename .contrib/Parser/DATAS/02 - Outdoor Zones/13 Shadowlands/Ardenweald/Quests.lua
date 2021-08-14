@@ -378,7 +378,6 @@ _.Zones =
 				}),
 				q(58025, {	-- Queen of the Underground
 					["sourceQuests"] = {
-						58022,	-- Finish What He Started
 						58023,	-- One Big Problem
 					},
 					["provider"] = { "n", 160155 },	-- Guardian Kota
