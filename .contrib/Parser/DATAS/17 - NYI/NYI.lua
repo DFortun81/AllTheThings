@@ -1793,6 +1793,7 @@ _.NeverImplemented =
 			i(2556),	-- Recipe: Elixir of Tongues
 			i(5641),	-- Recipe: Cowardly Flight Potion
 			i(34481),	-- Recipe: Mad Alchemist's Potion (Recipe was added to trainers instead of a usable item)
+			i(13500),	-- Recipe: Greater Holy Protection Potion
 			i(71955),	-- Recipe: Transmute Deepholm Iolite
 			i(71956),	-- Recipe: Transmute Elven Peridot
 			i(71957),	-- Recipe: Transmute Lightstone
@@ -2168,6 +2169,7 @@ _.NeverImplemented =
 
 
 			-- Warlords of Draenor
+			i(116746),	-- Recipe: Greater Steelforged Essence
 			{	-- Draenic Steel Dagger
 				["itemID"] = 108054,	-- Draenic Steel Dagger
 				["u"] = NEVER_IMPLEMENTED,	-- Never made it out of Beta
@@ -2592,6 +2594,7 @@ _.NeverImplemented =
 			i(86552),	-- Artisan Cookbook
 			i(86553),	-- Master Cookbook
 			i(86554),	-- Grand Master Cookbook
+			i(169457),	-- Recipe: Mecha-Bytes
 		}),
 		prof(ENGINEERING, {
 			{	-- Blingtron's Circuit Design Tutorial
@@ -2685,6 +2688,7 @@ _.NeverImplemented =
 			i(37589),	-- Hyper-Powered Mote Extractor (Retrieving)
 		}),
 		prof(ENCHANTING, {
+			i(22564),	-- Formula: Arcane Dust
 			i(84582),	-- Formula: Enchant Weapon - Windsong (never added version)
 			i(168450),	-- Formula: Enchant Ring - Accord of Critical Strike (not used, vendors sell 169530 and 169604)
 			i(168451),	-- Formula: Enchant Ring - Accord of Haste (not used, vendors sell 169531 and 169605)
@@ -2743,6 +2747,11 @@ _.NeverImplemented =
 			i(141061),	-- Technique: Glyph of the Abyssal (Item never made it into the game)
 			i(141065),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
 			i(169550),	-- "REUSE ME [MTMM]"
+		}),
+		prof(JEWELCRAFTING, {
+			i(21958),	-- Design: Arcanite Sword Pendant
+			i(24195),	-- Design: Brilliant Living Ruby
+			i(116080),	-- Recipe: Greater Taladite Amplifier
 		}),
 		prof(LEATHERWORKING, {
 			{	-- Pattern: Cloak of Beasts
@@ -2808,6 +2817,11 @@ _.NeverImplemented =
 			{	-- Pattern: Heavy Savage Leather
 				["itemID"] = 67036,	-- Pattern: Heavy Savage Leather
 				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["u"] = NEVER_IMPLEMENTED,
+			},
+			{	-- Pattern: Nightscape Cloak
+				["itemID"] = 8388,	-- Pattern: Nightscape Cloak
+				["spellID"] = 10550,	-- Nightscape Cloak
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			i(15780),	-- Pattern: Onyxia Scale Breastplate [never made it out of Beta]
@@ -2918,6 +2932,35 @@ _.NeverImplemented =
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			i(118097),	-- Recipe: Small Football
+		}),
+		prof(MINING, {
+			i(124463),	-- Mining Technique: Leystone Deposit
+			i(124464),	-- Mining Technique: Leystone Deposit
+			i(124465),	-- Mining Technique: Leystone Deposit
+			i(124467),	-- Mining Technique: Leystone Seam
+			i(124468),	-- Mining Technique: Leystone Seam
+			i(124469),	-- Mining Technique: Leystone Seam
+			i(124471),	-- Mining Technique: Living Leystone
+			i(124472),	-- Mining Technique: Living Leystone
+			i(124473),	-- Mining Technique: Living Leystone
+			i(124475),	-- Mining Technique: Felslate Deposit
+			i(124476),	-- Mining Technique: Felslate Deposit
+			i(124477),	-- Mining Technique: Felslate Deposit
+			i(124479),	-- Mining Technique: Felslate Seam
+			i(124480),	-- Mining Technique: Felslate Seam
+			i(124481),	-- Mining Technique: Felslate Seam
+			i(124483),	-- Mining Technique: Living Seam
+			i(124484),	-- Mining Technique: Living Seam
+			i(124485),	-- Mining Technique: Living Seam
+			i(124487),	-- Mining Technique: Infernal Brimstone
+			i(124488),	-- Mining Technique: Infernal Brimstone
+		}),
+		prof(TAILORING, {
+			{	-- Pattern: Heavy Netherweave Net
+				["itemID"] = 24315,	-- Pattern: Heavy Netherweave Net
+				["spellID"] = 31461,	-- Heavy Netherweave Net
+				["u"] = NEVER_IMPLEMENTED,
+			},
 		}),
 		i(5657),	-- Recipe: Instant Toxin
 	}),

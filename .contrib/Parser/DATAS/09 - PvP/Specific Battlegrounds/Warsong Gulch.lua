@@ -22,23 +22,18 @@ _.PVP =
 					["g"] = {
 						q(7865,  {	-- Sentinel Advanced Care Package
 							["provider"] = { "n", 14753 },	-- Illiyana Moonblaze
-							["lvl"] = 45,
 							["coord"] = { 61.5, 83.9, ASHENVALE },
 							["races"] = ALLIANCE_ONLY,
 							["minReputation"] = { 890, FRIENDLY },
 						}),
 						q(7863,  {	-- Sentinel Basic Care Package
-							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 14753 },	-- Illiyana Moonblaze
-							["lvl"] = 25,
 							["coord"] = { 61.5, 83.9, ASHENVALE },
 							["races"] = ALLIANCE_ONLY,
 							["minReputation"] = { 890, FRIENDLY },
 						}),
 						q(7864,  {	-- Sentinel Standard Care Package
-							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 14753 },	-- Illiyana Moonblaze
-							["lvl"] = 35,
 							["coord"] = { 61.5, 83.9, ASHENVALE },
 							["races"] = ALLIANCE_ONLY,
 							["minReputation"] = { 890, FRIENDLY },
