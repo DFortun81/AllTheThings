@@ -85,16 +85,6 @@ _.Zones =
 					["coord"] = { 13.3, 34.3, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
-				q(8115,  {	-- Control Five Bases (pvp)
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 14983 },	-- Field Marshal Oslight
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(8114,  {	-- Control Four Bases (pvp)
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 14983 },	-- Field Marshal Oslight
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(26429, {	-- Crush the Witherbark
 					["provider"] = { "n", 2771 },	-- Drum Fel
 					["coord"] = { 69.0, 34.8, ARATHI_HIGHLANDS },
@@ -461,29 +451,6 @@ _.Zones =
 						i(131474),	-- Chain Weighted Shoes
 						i(156948),	-- Waterlogged Elven Spear
 					},
-				}),
-				q(8122,  {	-- Take Five Bases (pvp)
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15021 },	-- Deathmaster Dwire
-					["coord"] = { 68.4, 30.4, ARATHI_HIGHLANDS },
-					["races"] = HORDE_ONLY,
-				}),
-				q(8121,  {	-- Take Four Bases (pvp)
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15021 },	-- Deathmaster Dwire
-					["coord"] = { 68.4, 30.4, ARATHI_HIGHLANDS },
-					["races"] = HORDE_ONLY,
-				}),
-				q(8105,  {	-- The Battle for Arathi Basin! (pvp)
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 14983 },	-- Field Marshal Oslight
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(8120,  {	-- The Battle for Arathi Basin! (pvp)
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15021 },	-- Deathmaster Dwire
-					["coord"] = { 68.4, 30.4, ARATHI_HIGHLANDS },
-					["races"] = HORDE_ONLY,
 				}),
 				q(640,   {	-- The Broken Sigil
 					["u"] = REMOVED_FROM_GAME,

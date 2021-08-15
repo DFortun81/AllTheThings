@@ -26,23 +26,38 @@ _.PVP =
 							q(8265, {	-- Defiler's Advanced Care Package
 								["provider"] = { "n", 15126 },	-- Rutherford Twing
 								["coord"] = { 68.5, 30.4, ARATHI_HIGHLANDS },
-								["lvl"] = 45,
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 510, FRIENDLY },
 							}),
 							q(8263, {	-- Defiler's Basic Care Package
 								["provider"] = { "n", 15126 },	-- Rutherford Twing
 								["coord"] = { 68.5, 30.4, ARATHI_HIGHLANDS },
-								["lvl"] = 25,
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 510, FRIENDLY },
 							}),
 							q(8264, {	-- Defiler's Standard Care Package
 								["provider"] = { "n", 15126 },	-- Rutherford Twing
 								["coord"] = { 68.5, 30.4, ARATHI_HIGHLANDS },
-								["lvl"] = 35,
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 510, FRIENDLY },
+							}),
+							q(8122,  {	-- Take Five Bases
+								["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+								["coord"] = { 68.4, 30.4, ARATHI_HIGHLANDS },
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(8121,  {	-- Take Four Bases
+								["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+								["coord"] = { 68.4, 30.4, ARATHI_HIGHLANDS },
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(8120,  {	-- The Battle for Arathi Basin!
+								["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+								["coord"] = { 68.4, 30.4, ARATHI_HIGHLANDS },
+								["races"] = HORDE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(8169, {	-- The Battle for Arathi Basin!
 								["provider"] = { "n", 15021 },	-- Deathmaster Dwire
@@ -75,34 +90,55 @@ _.PVP =
 						n(QUESTS, {
 							q(8262, {	-- Arathor Advanced Care Package
 								["provider"] = { "n", 15127 },	-- Samuel Hawke
-								["lvl"] = 45,
+								["coord"] = { 40.2, 46.4, ARATHI_HIGHLANDS },
 								["races"] = ALLIANCE_ONLY,
 								["minReputation"] = { 509, FRIENDLY },
 							}),
 							q(8260, {	-- Arathor Basic Care Package
 								["provider"] = { "n", 15127 },	-- Samuel Hawke
-								["lvl"] = 25,
+								["coord"] = { 40.2, 46.4, ARATHI_HIGHLANDS },
 								["races"] = ALLIANCE_ONLY,
 								["minReputation"] = { 509, FRIENDLY },
 							}),
 							q(8261, {	-- Arathor Standard Care Package
 								["provider"] = { "n", 15127 },	-- Samuel Hawke
-								["lvl"] = 35,
+								["coord"] = { 40.2, 46.4, ARATHI_HIGHLANDS },
 								["races"] = ALLIANCE_ONLY,
 								["minReputation"] = { 509, FRIENDLY },
 							}),
+							q(8115,  {	-- Control Five Bases
+								["provider"] = { "n", 14983 },	-- Field Marshal Oslight
+								["coord"] = { 40.0, 46.7, ARATHI_HIGHLANDS },
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(8114,  {	-- Control Four Bases
+								["provider"] = { "n", 14983 },	-- Field Marshal Oslight
+								["coord"] = { 40.0, 46.7, ARATHI_HIGHLANDS },
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(8105,  {	-- The Battle for Arathi Basin!
+								["provider"] = { "n", 14983 },	-- Field Marshal Oslight
+								["coord"] = { 40.0, 46.7, ARATHI_HIGHLANDS },
+								["races"] = ALLIANCE_ONLY,
+								["u"] = REMOVED_FROM_GAME,
+							}),
 							q(8166, {	-- The Battle for Arathi Basin!
 								["provider"] = { "n", 14983 },	-- Field Marshal Oslight
+								["coord"] = { 40.0, 46.7, ARATHI_HIGHLANDS },
 								["races"] = ALLIANCE_ONLY,
 								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(8167, {	-- The Battle for Arathi Basin!
 								["provider"] = { "n", 14983 },	-- Field Marshal Oslight
+								["coord"] = { 40.0, 46.7, ARATHI_HIGHLANDS },
 								["races"] = ALLIANCE_ONLY,
 								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(8168, {	-- The Battle for Arathi Basin!
 								["provider"] = { "n", 14983 },	-- Field Marshal Oslight
+								["coord"] = { 40.0, 46.7, ARATHI_HIGHLANDS },
 								["races"] = ALLIANCE_ONLY,
 								["u"] = REMOVED_FROM_GAME,
 							}),
