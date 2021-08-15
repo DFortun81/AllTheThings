@@ -465,11 +465,13 @@ _.Zones =
 				q(8122,  {	-- Take Five Bases (pvp)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+					["coord"] = { 68.4, 30.4, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(8121,  {	-- Take Four Bases (pvp)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+					["coord"] = { 68.4, 30.4, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(8105,  {	-- The Battle for Arathi Basin! (pvp)
@@ -480,6 +482,7 @@ _.Zones =
 				q(8120,  {	-- The Battle for Arathi Basin! (pvp)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+					["coord"] = { 68.4, 30.4, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(640,   {	-- The Broken Sigil

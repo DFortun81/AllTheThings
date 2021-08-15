@@ -25,34 +25,40 @@ _.PVP =
 						n(QUESTS, {
 							q(8265, {	-- Defiler's Advanced Care Package
 								["provider"] = { "n", 15126 },	-- Rutherford Twing
+								["coord"] = { 68.5, 30.4, ARATHI_HIGHLANDS },
 								["lvl"] = 45,
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 510, FRIENDLY },
 							}),
 							q(8263, {	-- Defiler's Basic Care Package
 								["provider"] = { "n", 15126 },	-- Rutherford Twing
+								["coord"] = { 68.5, 30.4, ARATHI_HIGHLANDS },
 								["lvl"] = 25,
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 510, FRIENDLY },
 							}),
 							q(8264, {	-- Defiler's Standard Care Package
 								["provider"] = { "n", 15126 },	-- Rutherford Twing
+								["coord"] = { 68.5, 30.4, ARATHI_HIGHLANDS },
 								["lvl"] = 35,
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 510, FRIENDLY },
 							}),
 							q(8169, {	-- The Battle for Arathi Basin!
 								["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+								["coord"] = { 68.4, 30.4, ARATHI_HIGHLANDS },
 								["races"] = HORDE_ONLY,
 								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(8170, {	-- The Battle for Arathi Basin!
 								["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+								["coord"] = { 68.4, 30.4, ARATHI_HIGHLANDS },
 								["races"] = HORDE_ONLY,
 								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(8171, {	-- The Battle for Arathi Basin!
 								["provider"] = { "n", 15021 },	-- Deathmaster Dwire
+								["coord"] = { 68.4, 30.4, ARATHI_HIGHLANDS },
 								["races"] = HORDE_ONLY,
 								["u"] = REMOVED_FROM_GAME,
 							}),
