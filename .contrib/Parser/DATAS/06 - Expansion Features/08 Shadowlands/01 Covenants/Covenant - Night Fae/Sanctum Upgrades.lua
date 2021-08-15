@@ -690,6 +690,16 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 166982 },	-- Marasmius
 							["coord"] = { 29.5, 34.6, ARDENWEALD },
 						}),
+						n(174609, {	-- Zaki
+							i(184346),	-- Damp Portalbello
+							i(184345),	-- Glowing Portalbello
+							i(184343),	-- Healthy Portalbello
+							i(184342),	-- Large Portalbello
+							i(184341),	-- Nibbled Portalbello
+							i(184340),	-- Root Cellar VIP Pass
+							i(184347),	-- Slender Portalbello
+							i(184344),	-- Withered Portalbello
+						}),
 					}),
 				}),
 			},

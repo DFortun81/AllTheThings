@@ -3252,6 +3252,7 @@ _.Zones =
 						i(77609),	-- Replica Lieutenant Commander's Chain Helmet
 						i(77606),	-- Replica Knight-Lieutenant's Chain Boots
 						i(77660, {	-- Replica Sergeant Major's Plate Wristguards
+							["races"] = ALLIANCE_ONLY,
 							["description"] = "This item has to be purchased on Alliance as there is no matching Horde Version.",
 						}),
 					}),

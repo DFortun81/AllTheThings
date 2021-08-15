@@ -20,7 +20,7 @@ _.Zones =
 					},
 				}),
 				n(-940,   {	-- Ascended Council
-					["description"] = "You have to ring all 5 vespers within 5 minutes to summon the Ascended Council at |cFFFFFFFF53.5, 88.3|r.  The vespers are spread out all over the map, so this will require at least a couple people.",
+					["description"] = "You have to ring all 5 vespers within 5 minutes to summon the Ascended Council at |cFFFFFFFF53.5, 88.3|r.  The vespers are spread out all over the map, so this might require at least a couple people.",
 					["questID"] = 60933,
 					["isDaily"] = true,
 					["coords"] = {
