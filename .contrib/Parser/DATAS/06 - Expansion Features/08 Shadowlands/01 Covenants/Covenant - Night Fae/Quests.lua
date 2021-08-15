@@ -864,3 +864,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	--q(62961),	-- Completed after doing Go Beyond! by Marasmius
+};

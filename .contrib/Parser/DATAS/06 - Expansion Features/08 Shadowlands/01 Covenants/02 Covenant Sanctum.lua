@@ -334,7 +334,7 @@ _.HiddenQuestTriggers = {
 	q(63111),	-- Nuuminuuru | Humility | Pelagos
 	q(63112),	-- Nuuminuuru | Humility | Kleia
 	q(63113),	-- Nuuminuuru | Humility | Mikanikos
-	q(63114),	-- Craven Corinth  Humility | Pelagos
+	q(63114),	-- Craven Corinth | Humility | Pelagos
 	q(63115),	-- Craven Corinth | Humility | Kleia
 	q(63116),	-- Craven Corinth | Humility | Mikanikos
 	q(63117),	-- Splinterbark | Humility | Pelagos
@@ -352,6 +352,26 @@ _.HiddenQuestTriggers = {
 	q(63129),	-- Azaruux | Humility | Pelagos
 	q(63130),	-- Azaruux | Humility | Kleia
 	q(63131),	-- Azaruux | Humility | Mikanikos
+	
+	-- HQTS PATH
+	q(61029),	-- Craven Corinth | Wisdom | Pelagos -- no charms, herald's footpads /Curse of Thirst
+	q(61026),	-- Mad Mortimer | Wisdom | Pelagos -- Vial of Serenity and no charms
+	q(61096),	-- Athanos | Wisdom | Kleia -- Vial of Serenity and no charms*
+	q(61025),	-- Halo of the Reverent?* May change with each other
+	q(63098),	-- Athanos | Wisdom | Mikanikos -- Vial of Serenity and no charms /Learning from the masters
+	q(61024),	-- Azaruux | Wisdom | Pelagos -- Vial of Serenity and no charms/Personal Nightmare
+	q(63087),	-- Kelisthene | Humility | Kleia -- the Vial of Serenity, no charms, no braziers
+	q(63138),	-- Kelisthene | Humility | Kleia -- the Vial of Serenity, no charms, no braziers
+	q(61043),	-- Looting Kelisthene Chest
+	q(63084),	-- Kelisthene | Humility | Pelagos -- the Footpads, 5 charms, both braziers
+	q(61028),	-- Splinterbark | Wisdom | Pelagos -- herald's footpads and no charms
+	q(61027),	-- Thran'tiok | Wisdom | Pelagos -- no charms and the Trident/ Death Foursworn!
+	
+	-- Unflagged
+	--q(62771)
+	--q(62770)
+	
+	q(62989),	-- Arsenal: Doubt's Weapon Cache
 	
 	-- KNOWN HQTs in Path of Ascension but unknown exact triggers
 	--q(61034),	-- ?

@@ -2544,6 +2544,8 @@ _.HiddenQuestTriggers = {
 			q(61556),	-- 'Party Crashers'
 			q(61725),	-- turning in Stolen Mementos to Keeper Ta'saran in Ember Court
 			q(62135),	-- picked up when entering the Ember Court for the week — for "Fungi Experiments"
+			q(62122),	-- Mystery Mirror 
+			q(62123),	-- Prison Break
 
 		-- RSVPs
 			q(59382),	-- when using "RSVP: Baroness Vashj" — every time
@@ -2645,6 +2647,7 @@ _.HiddenQuestTriggers = {
 			q(62524),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)
 			q(62525),	-- completed 'Relaxing' criteria for It's Certainly Never Boring
 			q(62526),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)
+			-- q(59689),	-- Completed at the end, was unlocking Generous Gift and Protective Braziers for the Court Favors achievement.
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

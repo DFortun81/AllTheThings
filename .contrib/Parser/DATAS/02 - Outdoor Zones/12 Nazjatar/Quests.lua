@@ -2625,4 +2625,6 @@ _.HiddenQuestTriggers = {
 	q(56701),	-- "Without Neri, we would have scattered with the current.  She brought us together."
 	q(56705),	-- "Azshara and her 'loyal subjects' are the worst kind of monsters.  We have to stop them here and now."
 	q(56711),	-- "I won't always be around to protect Newhome.  If these scales can help keep our people safe, then they're worth the effort."
+	--
+	q(56676),	-- Killing Lady Narjiss (and completing, but not handing in, the Wanted quest).
 };
