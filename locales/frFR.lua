@@ -2307,7 +2307,7 @@ for key,value in pairs({
 	[252839] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[252840] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[252841] = "Petit coffre au trésor",	-- Small Treasure Chest
-	[252842] = "Coffre au trésor",	-- Small Treasure Chest
+	[252842] = "Coffre au trésor",	-- Treasure Chest
 	[252844] = "Coffre au trésor",	-- Treasure Chest
 	[252850] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[252860] = "Petit coffre au trésor",	-- Small Treasure Chest
@@ -2938,7 +2938,7 @@ for key,value in pairs({
 	[358531] = "Cache géante de trésors épiques",	-- Giant Cache of Epic Treasure
 	[358533] = "Fournitures oubliées",	-- Forgotten Supplies
 	[358855] = "Sac à dos de chute amortie endommagé",	-- Damaged Safe Fall Pack
-	[360054] = "Chat collant",	-- Slime Cat
+	[360054] = "Chat collant",	-- Sticky Cat
 	[362489] = "Décret élyséen",	-- Elysian Decree
 	[364483] = "Fût de pousse-café vide",	-- Empty Nightcap Cask
 	[364899] = "Stygies cristallisées",	-- Crystallized Stygia

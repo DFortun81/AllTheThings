@@ -2308,7 +2308,7 @@ for key,value in pairs({
 	[252839] = "Arqueta pequeña",	-- Small Treasure Chest
 	[252840] = "Arqueta pequeña",	-- Small Treasure Chest
 	[252841] = "Arqueta pequeña",	-- Small Treasure Chest
-	[252842] = "Arqueta",	-- Small Treasure Chest
+	[252842] = "Arqueta",	-- Treasure Chest
 	[252844] = "Arqueta",	-- Treasure Chest
 	[252850] = "Arqueta pequeña",	-- Small Treasure Chest
 	[252860] = "Arqueta pequeña",	-- Small Treasure Chest
@@ -2894,7 +2894,7 @@ for key,value in pairs({
 	[356697] = "Tributo exorbitante de Alexandros Mograine",	-- Alexandros Mograine's Extravagant Tribute
 	[356700] = "Tributo exorbitante del gran maestro Vole",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Tributo exorbitante del inventor de pestes Marileth",	-- Plague Deviser Marileth's Extravagant Tribute
-	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
+	[356709] = "Tributo exorbitante de lady Bayalunar",	-- Lady Moonberry's Extravagant Tribute
 	[356712] = "Tributo exorbitante de la capitana de caza Korayn",	-- Hunt-Captain Korayn's Extravagant Tribute
 	[356716] = "Tributo exorbitante de la droman Aliothe",	-- Droman Aliothe's Extravagant Tribute
 	[356720] = "Tributo exorbitante de Choofa",	-- Choofa's Extravagant Tribute
@@ -2939,7 +2939,7 @@ for key,value in pairs({
 	[358531] = "Alijo gigantesco de tesoro épico",	-- Giant Cache of Epic Treasure
 	[358533] = "Suministros olvidados",	-- Forgotten Supplies
 	[358855] = "Mochila de Caída segura dañada",	-- Damaged Safe Fall Pack
-	[360054] = "Gato pegajoso",	-- Slime Cat
+	[360054] = "Gato pegajoso",	-- Sticky Cat
 	[362489] = "Decreto elisio",	-- Elysian Decree
 	[364483] = "Tonel de trago vacío",	-- Empty Nightcap Cask
 	[364899] = "Estigia cristalizada",	-- Crystallized Stygia

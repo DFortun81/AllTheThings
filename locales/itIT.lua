@@ -2308,7 +2308,7 @@ for key,value in pairs({
 	[252839] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[252840] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[252841] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
-	[252842] = "Cassa del Tesoro",	-- Small Treasure Chest
+	[252842] = "Cassa del Tesoro",	-- Treasure Chest
 	[252844] = "Cassa del Tesoro",	-- Treasure Chest
 	[252850] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[252860] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
@@ -2939,7 +2939,7 @@ for key,value in pairs({
 	[358531] = "Cassa Gigante di Tesori Epici",	-- Giant Cache of Epic Treasure
 	[358533] = "Rifornimenti Dimenticati",	-- Forgotten Supplies
 	[358855] = "Zaino della Caduta Sicura Danneggiato",	-- Damaged Safe Fall Pack
-	--TODO: [360054] = "Slime Cat",	-- Slime Cat
+	[360054] = "Gatto Appiccicoso",	-- Sticky Cat
 	[362489] = "Decreto Elisio",	-- Elysian Decree
 	[364483] = "Barile di Cicchetti Vuoto",	-- Empty Nightcap Cask
 	[364899] = "Stigia Cristallizzata",	-- Crystallized Stygia

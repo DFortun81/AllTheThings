@@ -2259,7 +2259,7 @@ for key, value in pairs({
 	[250107] = "闪闪发光的宝箱",	-- Glimmering Treasure Chest
 	[250108] = "小宝箱",	-- Small Treasure Chest
 	[250109] = "宝箱",	-- Treasure Chest
-	--TODO: [250383] = "Moonshade Relic",	-- Moonshade Relic
+	[250383] = "月影圣物",	-- Moonshade Relic
 	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "小宝箱",	-- Small Treasure Chest
 	[250985] = "宝箱",	-- Treasure Chest
@@ -2318,7 +2318,7 @@ for key, value in pairs({
 	[252446] = "发光的远古魔力晶簇",	-- Shimmering Ancient Mana Cluster
 	[252447] = "发光的远古魔力晶簇",	-- Shimmering Ancient Mana Cluster
 	[252448] = "发光的远古魔力晶簇",	-- Shimmering Ancient Mana Cluster
-	--TODO: [252449] = "Shimmering Ancient Mana Cluster",	-- Shimmering Ancient Mana Cluster
+	[252449] = "发光的远古魔力晶簇",	-- Shimmering Ancient Mana Cluster
 	[252450] = "发光的远古魔力晶簇",	-- Shimmering Ancient Mana Cluster
 	[252557] = "|cFFFFFFFF第3步:|r 饥渴宝珠 I",	-- |cFFFFFFFFStep 3:|r Hungering Orb I
 	[252558] = "|cFFFFFFFF第4步:|r 饥渴宝珠 II",	-- |cFFFFFFFFStep 4:|r Hungering Orb II
@@ -2360,7 +2360,7 @@ for key, value in pairs({
 	[252839] = "小宝箱",	-- Small Treasure Chest
 	[252840] = "小宝箱",	-- Small Treasure Chest
 	[252841] = "小宝箱",	-- Small Treasure Chest
-	[252842] = "宝箱",	-- Small Treasure Chest
+	[252842] = "宝箱",	-- Treasure Chest
 	[252844] = "宝箱",	-- Treasure Chest
 	[252850] = "小宝箱",	-- Small Treasure Chest
 	[252860] = "小宝箱",	-- Small Treasure Chest
@@ -2943,7 +2943,7 @@ for key, value in pairs({
 	[355947] = "格拉萨恩的宝箱",	-- Glutharn's Stash
 	[356555] = "欧律迪亚的项链",	-- Eurydea's Necklace
 	--TODO: [356693] = "Baroness Vashj's Extravagant Tribute",	-- Baroness Vashj's Extravagant Tribute
-	--TODO: [356697] = "Alexandros Mograine's Extravagant Tribute",	-- Alexandros Mograine's Extravagant Tribute
+	[356697] = "亚历山德罗斯·莫格莱尼的奢华礼品",	-- Alexandros Mograine's Extravagant Tribute
 	--TODO: [356700] = "Grandmaster Vole's Extravagant Tribute",	-- Grandmaster Vole's Extravagant Tribute
 	--TODO: [356705] = "Plague Deviser Marileth's Extravagant Tribute",	-- Plague Deviser Marileth's Extravagant Tribute
 	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
@@ -2951,13 +2951,13 @@ for key, value in pairs({
 	[356716] = "宗主艾莉奥瑟的奢华供品",	-- Droman Aliothe's Extravagant Tribute
 	--TODO: [356720] = "Choofa's Extravagant Tribute",	-- Choofa's Extravagant Tribute
 	[356725] = "文官阿得赖斯提斯的奢华供品",	-- Polemarch Adrestes' Extravagant Tribute
-	--TODO: [356728] = "Mikanikos' Extravagant Tribute",	-- Mikanikos' Extravagant Tribute
+	[356728] = "米卡尼科斯的奢华礼品",	-- Mikanikos' Extravagant Tribute
 	[356733] = "克雷雅和裴拉戈斯的奢华供品",	-- Kleia and Pelagos' Extravagant Tribute
 	[356737] = "西卡的奢华供品",	-- Sika's Extravagant Tribute
 	--TODO: [356741] = "The Countess' Extravagant Tribute",	-- The Countess' Extravagant Tribute
 	--TODO: [356744] = "Rendle and Cudgelface's Extravagant Tribute",	-- Rendle and Cudgelface's Extravagant Tribute
 	[356748] = "石首的奢华供品",	-- Stonehead's Extravagant Tribute
-	--TODO: [356752] = "Cryptkeeper Kassir's Extravagant Tribute",	-- Cryptkeeper Kassir's Extravagant Tribute
+	[356752] = "地穴看守者卡希尔的奢华礼品",	-- Cryptkeeper Kassir's Extravagant Tribute
 	[356757] = "贪婪之欲",	-- Greed's Desire
 	[356818] = "纯洁赎罪",	-- Penitence of Purity
 	[356820] = "大型月光之荚",	-- Large Lunarlight Pod
@@ -2991,7 +2991,7 @@ for key, value in pairs({
 	[358531] = "巨大的史诗财宝箱",	-- Giant Cache of Epic Treasure
 	[358533] = "被遗忘的补给品",	-- Forgotten Supplies
 	[358855] = "损坏的安全降落包",	-- Damaged Safe Fall Pack
-	[360054] = "黏黏猫",	-- Slime Cat
+	[360054] = "黏黏猫",	-- Sticky Cat
 	[362489] = "极乐敕令",	-- Elysian Decree
 	[364483] = "空空的睡帽酒酒桶",	-- Empty Nightcap Cask
 	[364899] = "晶体冥殇",	-- Crystallized Stygia
