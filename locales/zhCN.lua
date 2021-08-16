@@ -1358,11 +1358,11 @@ for key, value in pairs({
 	[187925] = "联盟篝火",	-- Alliance Bonfire
 	[187926] = "联盟篝火",	-- Alliance Bonfire
 	[187927] = "联盟篝火",	-- Alliance Bonfire
-	[187928] = "联盟篝火",	-- Alliance Bonfire	--TODO: This was taken from tbc Wowhead
+	[187928] = "联盟篝火",	-- Alliance Bonfire
 	[187929] = "联盟篝火",	-- Alliance Bonfire
 	[187930] = "联盟篝火",	-- Alliance Bonfire
-	--TODO: [187931] = "Alliance Bonfire",	-- Alliance Bonfire
-	--TODO: [187932] = "Alliance Bonfire",	-- Alliance Bonfire
+	[187931] = "联盟篝火",	-- Alliance Bonfire
+	[187932] = "联盟篝火",	-- Alliance Bonfire
 	[187933] = "联盟篝火",	-- Alliance Bonfire
 	[187934] = "联盟篝火",	-- Alliance Bonfire
 	[187935] = "联盟篝火",	-- Alliance Bonfire
@@ -1384,7 +1384,7 @@ for key, value in pairs({
 	[187951] = "部落篝火",	-- Horde Bonfire
 	[187952] = "部落篝火",	-- Horde Bonfire
 	[187953] = "部落篝火",	-- Horde Bonfire
-	--TODO: [187954] = "Horde Bonfire",	-- Horde Bonfire
+	[187954] = "部落篝火",	-- Horde Bonfire
 	[187955] = "部落篝火",	-- Horde Bonfire
 	[187956] = "部落篝火",	-- Horde Bonfire
 	[187957] = "部落篝火",	-- Horde Bonfire
@@ -1403,8 +1403,8 @@ for key, value in pairs({
 	[187970] = "部落篝火",	-- Horde Bonfire
 	[187971] = "部落篝火",	-- Horde Bonfire
 	[187972] = "部落篝火",	-- Horde Bonfire
-	--TODO: [187973] = "Horde Bonfire",	-- Horde Bonfire
-	--TODO: [187974] = "Horde Bonfire",	-- Horde Bonfire
+	[187973] = "部落篝火",	-- Horde Bonfire
+	[187974] = "部落篝火",	-- Horde Bonfire
 	[187975] = "部落篝火",	-- Horde Bonfire
 	[188085] = "天灾谷物",	-- Plagued Grain
 	[188261] = "破碎的日记",	-- Battered Journal

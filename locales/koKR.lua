@@ -1306,11 +1306,11 @@ for key,value in pairs({
 	[187925] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187926] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187927] = "얼라이언스 화톳불",	-- Alliance Bonfire
-	[187928] = "얼라이언스 화톳불",	-- Alliance Bonfire	--TODO: This was taken from tbc Wowhead
+	[187928] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187929] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187930] = "얼라이언스 화톳불",	-- Alliance Bonfire
-	[187931] = "얼라이언스 화톳불",	-- Alliance Bonfire	--TODO: This was taken from tbc Wowhead
-	--TODO: [187932] = "Alliance Bonfire",	-- Alliance Bonfire
+	[187931] = "얼라이언스 화톳불",	-- Alliance Bonfire
+	[187932] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187933] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187934] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187935] = "얼라이언스 화톳불",	-- Alliance Bonfire
@@ -1332,7 +1332,7 @@ for key,value in pairs({
 	[187951] = "호드 화톳불",	-- Horde Bonfire
 	[187952] = "호드 화톳불",	-- Horde Bonfire
 	[187953] = "호드 화톳불",	-- Horde Bonfire
-	--TODO: [187954] = "Horde Bonfire",	-- Horde Bonfire
+	[187954] = "호드 화톳불",	-- Horde Bonfire
 	[187955] = "호드 화톳불",	-- Horde Bonfire
 	[187956] = "호드 화톳불",	-- Horde Bonfire
 	[187957] = "호드 화톳불",	-- Horde Bonfire
@@ -1351,8 +1351,8 @@ for key,value in pairs({
 	[187970] = "호드 화톳불",	-- Horde Bonfire
 	[187971] = "호드 화톳불",	-- Horde Bonfire
 	[187972] = "호드 화톳불",	-- Horde Bonfire
-	--TODO: [187973] = "Horde Bonfire",	-- Horde Bonfire
-	--TODO: [187974] = "Horde Bonfire",	-- Horde Bonfire
+	[187973] = "호드 화톳불",	-- Horde Bonfire
+	[187974] = "호드 화톳불",	-- Horde Bonfire
 	[187975] = "호드 화톳불",	-- Horde Bonfire
 	[188085] = "역병에 오염된 곡식",	-- Plagued Grain
 	[188261] = "닳아해진 일지",	-- Battered Journal

@@ -1309,7 +1309,7 @@ for key,value in pairs({
 	[187928] = "Falò dell'Alleanza",	-- Alliance Bonfire
 	[187929] = "Falò dell'Alleanza",	-- Alliance Bonfire
 	[187930] = "Falò dell'Alleanza",	-- Alliance Bonfire
-	[187931] = "Alliance Bonfire",	-- Alliance Bonfire	--TODO: This was taken from tbc Wowhead
+	[187931] = "Falò dell'Alleanza",	-- Alliance Bonfire
 	[187932] = "Falò dell'Alleanza",	-- Alliance Bonfire
 	[187933] = "Falò dell'Alleanza",	-- Alliance Bonfire
 	[187934] = "Falò dell'Alleanza",	-- Alliance Bonfire
@@ -1351,7 +1351,7 @@ for key,value in pairs({
 	[187970] = "Falò dell'Orda",	-- Horde Bonfire
 	[187971] = "Falò dell'Orda",	-- Horde Bonfire
 	[187972] = "Falò dell'Orda",	-- Horde Bonfire
-	[187973] = "Horde Bonfire",	-- Horde Bonfire	--TODO: This was taken from tbc Wowhead
+	[187973] = "Falò dell'Orda",	-- Horde Bonfire
 	[187974] = "Falò dell'Orda",	-- Horde Bonfire
 	[187975] = "Falò dell'Orda",	-- Horde Bonfire
 	[188085] = "Grano Infetto",	-- Plagued Grain

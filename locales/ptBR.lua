@@ -1309,7 +1309,7 @@ for key,value in pairs({
 	[187928] = "Fogueira da Aliança",	-- Alliance Bonfire
 	[187929] = "Fogueira da Aliança",	-- Alliance Bonfire
 	[187930] = "Fogueira da Aliança",	-- Alliance Bonfire
-	[187931] = "Fogueira da Aliança",	-- Alliance Bonfire	--TODO: This was taken from tbc Wowhead
+	[187931] = "Fogueira da Aliança",	-- Alliance Bonfire
 	[187932] = "Fogueira da Aliança",	-- Alliance Bonfire
 	[187933] = "Fogueira da Aliança",	-- Alliance Bonfire
 	[187934] = "Fogueira da Aliança",	-- Alliance Bonfire
@@ -1351,7 +1351,7 @@ for key,value in pairs({
 	[187970] = "Fogueira da Horda",	-- Horde Bonfire
 	[187971] = "Fogueira da Horda",	-- Horde Bonfire
 	[187972] = "Fogueira da Horda",	-- Horde Bonfire
-	[187973] = "Fogueira da Horda",	-- Horde Bonfire	--TODO: This was taken from tbc Wowhead
+	[187973] = "Fogueira da Horda",	-- Horde Bonfire
 	[187974] = "Fogueira da Horda",	-- Horde Bonfire
 	[187975] = "Fogueira da Horda",	-- Horde Bonfire
 	[188085] = "Grão Pestilento",	-- Plagued Grain

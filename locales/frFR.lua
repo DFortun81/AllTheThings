@@ -1308,7 +1308,7 @@ for key,value in pairs({
 	[187928] = "Feu de joie de l'Alliance",	-- Alliance Bonfire
 	[187929] = "Feu de joie de l'Alliance",	-- Alliance Bonfire
 	[187930] = "Feu de joie de l'Alliance",	-- Alliance Bonfire
-	[187931] = "Feu de joie de l'Alliance",	-- Alliance Bonfire	--TODO: This was taken from tbc Wowhead
+	[187931] = "Feu de joie de l'Alliance",	-- Alliance Bonfire
 	[187932] = "Feu de joie de l'Alliance",	-- Alliance Bonfire
 	[187933] = "Feu de joie de l'Alliance",	-- Alliance Bonfire
 	[187934] = "Feu de joie de l'Alliance",	-- Alliance Bonfire
@@ -1350,7 +1350,7 @@ for key,value in pairs({
 	[187970] = "Feu de joie de la Horde",	-- Horde Bonfire
 	[187971] = "Feu de joie de la Horde",	-- Horde Bonfire
 	[187972] = "Feu de joie de la Horde",	-- Horde Bonfire
-	[187973] = "Feu de joie de la Horde",	-- Horde Bonfire	--TODO: This was taken from tbc Wowhead
+	[187973] = "Feu de joie de la Horde",	-- Horde Bonfire
 	[187974] = "Feu de joie de la Horde",	-- Horde Bonfire
 	[187975] = "Feu de joie de la Horde",	-- Horde Bonfire
 	[188085] = "Céréales pestiférées",	-- Plagued Grain

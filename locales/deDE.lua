@@ -1309,7 +1309,7 @@ for key,value in pairs({
 	[187928] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
 	[187929] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
 	[187930] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
-	[187931] = "Freudenfeuer der Allianz",	-- Alliance Bonfire	--TODO: This was taken from tbc Wowhead
+	[187931] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
 	[187932] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
 	[187933] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
 	[187934] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
@@ -1351,7 +1351,7 @@ for key,value in pairs({
 	[187970] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187971] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187972] = "Freudenfeuer der Horde",	-- Horde Bonfire
-	[187973] = "Freudenfeuer der Horde",	-- Horde Bonfire	--TODO: This was taken from tbc Wowhead
+	[187973] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187974] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187975] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[188085] = "Verseuchtes Korn",	-- Plagued Grain
