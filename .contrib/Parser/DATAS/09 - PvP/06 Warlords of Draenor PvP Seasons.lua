@@ -6621,6 +6621,11 @@ _.PVP =
 									i(126031, {	-- Warmongering Combatant's Dreadplate Shoulders (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(126112),	-- Warmongering Combatant's Legplates (A)
+									i(126110),	-- Warmongering Combatant's Plate Gloves (A)
+									i(126109),	-- Warmongering Combatant's Plate Breastplate (A)
+									i(126113),	-- Warmongering Combatant's Shoulderplates (A)
+									i(126111),	-- Warmongering Combatant's Plate Helmet (A)
 								},
 							}),
 						}),
@@ -6650,6 +6655,11 @@ _.PVP =
 									i(126035, {	-- Warmongering Combatant's Dragonhide Tunic (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(126074),	-- Warmongering Combatant's Helm (A)
+									i(126076),	-- Warmongering Combatant's Spaulders (A)
+									i(126072),	-- Warmongering Combatant's Tunic (A)
+									i(126073),	-- Warmongering Combatant's Gloves (A)
+									i(126075),	-- Warmongering Combatant's Legguards (A)
 								},
 							}),
 						}),
@@ -6679,6 +6689,11 @@ _.PVP =
 									i(126041, {	-- Warmongering Combatant's Chain Spaulders (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(126091),	-- Warmongering Combatant's Leggings (A)
+									i(126089),	-- Warmongering Combatant's Gauntlets (A)
+									i(126088),	-- Warmongering Combatant's Armor (A)
+									i(126092),	-- Warmongering Combatant's Spaulders (A)
+									i(126090),	-- Warmongering Combatant's Helm (A)
 								},
 							}),
 						}),
@@ -6708,6 +6723,11 @@ _.PVP =
 									i(126079, {	-- Warmongering Combatant's Silk Trousers (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(126023),	-- Warmongering Combatant's Hood of Prowess (A)
+									i(126026),	-- Warmongering Combatant's Amice of Prowess (A)
+									i(126025),	-- Warmongering Combatant's Robes of Prowess (A)
+									i(126022),	-- Warmongering Combatant's Gloves of Prowess (A)
+									i(126024),	-- Warmongering Combatant's Leggings of Prowess (A)
 								},
 							}),
 						}),
@@ -6737,6 +6757,11 @@ _.PVP =
 									i(126097, {	-- Warmongering Combatant's Ironskin Tunic (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(126074),	-- Warmongering Combatant's Helm (A)
+									i(126076),	-- Warmongering Combatant's Spaulders (A)
+									i(126072),	-- Warmongering Combatant's Tunic (A)
+									i(126073),	-- Warmongering Combatant's Gloves (A)
+									i(126075),	-- Warmongering Combatant's Legguards (A)
 								},
 							}),
 						}),
@@ -6766,6 +6791,11 @@ _.PVP =
 									i(126102, {	-- Warmongering Combatant's Scaled Shoulders (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(126112),	-- Warmongering Combatant's Legplates (A)
+									i(126110),	-- Warmongering Combatant's Plate Gloves (A)
+									i(126109),	-- Warmongering Combatant's Plate Breastplate (A)
+									i(126113),	-- Warmongering Combatant's Shoulderplates (A)
+									i(126111),	-- Warmongering Combatant's Plate Helmet (A)
 								},
 							}),
 						}),
@@ -6795,6 +6825,11 @@ _.PVP =
 									i(126117, {	-- Warmongering Combatant's Satin Robe (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(126023),	-- Warmongering Combatant's Hood of Prowess (A)
+									i(126026),	-- Warmongering Combatant's Amice of Prowess (A)
+									i(126025),	-- Warmongering Combatant's Robes of Prowess (A)
+									i(126022),	-- Warmongering Combatant's Gloves of Prowess (A)
+									i(126024),	-- Warmongering Combatant's Leggings of Prowess (A)
 								},
 							}),
 						}),
@@ -6824,6 +6859,11 @@ _.PVP =
 									i(126119, {	-- Warmongering Combatant's Leather Tunic (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(126074),	-- Warmongering Combatant's Helm (A)
+									i(126076),	-- Warmongering Combatant's Spaulders (A)
+									i(126072),	-- Warmongering Combatant's Tunic (A)
+									i(126073),	-- Warmongering Combatant's Gloves (A)
+									i(126075),	-- Warmongering Combatant's Legguards (A)
 								},
 							}),
 						}),
@@ -6853,6 +6893,11 @@ _.PVP =
 									i(126125, {	-- Warmongering Combatant's Ringmail Gauntlets (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(126091),	-- Warmongering Combatant's Leggings (A)
+									i(126089),	-- Warmongering Combatant's Gauntlets (A)
+									i(126088),	-- Warmongering Combatant's Armor (A)
+									i(126092),	-- Warmongering Combatant's Spaulders (A)
+									i(126090),	-- Warmongering Combatant's Helm (A)
 								},
 							}),
 						}),
@@ -6882,6 +6927,11 @@ _.PVP =
 									i(126169, {	-- Warmongering Combatant's Felweave Trousers (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(126023),	-- Warmongering Combatant's Hood of Prowess (A)
+									i(126026),	-- Warmongering Combatant's Amice of Prowess (A)
+									i(126025),	-- Warmongering Combatant's Robes of Prowess (A)
+									i(126022),	-- Warmongering Combatant's Gloves of Prowess (A)
+									i(126024),	-- Warmongering Combatant's Leggings of Prowess (A)
 								},
 							}),
 						}),
@@ -6911,35 +6961,12 @@ _.PVP =
 									i(126176, {	-- Warmongering Combatant's Plate Shoulders (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(126112),	-- Warmongering Combatant's Legplates (A)
+									i(126110),	-- Warmongering Combatant's Plate Gloves (A)
+									i(126109),	-- Warmongering Combatant's Plate Breastplate (A)
+									i(126113),	-- Warmongering Combatant's Shoulderplates (A)
+									i(126111),	-- Warmongering Combatant's Plate Helmet (A)
 								},
-							}),
-						}),
-						n(-320, {	-- Head
-							i(126023, {	-- Warmongering Combatant's Hood of Prowess (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126074, {	-- Warmongering Combatant's Helm (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126090, {	-- Warmongering Combatant's Helm (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126111, {	-- Warmongering Combatant's Plate Helmet (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-						}),
-						n(-321, {	-- Shoulders
-							i(126026, {	-- Warmongering Combatant's Amice of Prowess (A)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(126076, {	-- Warmongering Combatant's Spaulders (A)
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(126092, {	-- Warmongering Combatant's Spaulders (A)
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(126113, {	-- Warmongering Combatant's Shoulderplates (A)
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
 						n(-322, {	-- Back
@@ -6971,20 +6998,6 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 5x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
-							i(126025, {	-- Warmongering Combatant's Robes of Prowess (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126072, {	-- Warmongering Combatant's Tunic (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126088, {	-- Warmongering Combatant's Armor (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126109, {	-- Warmongering Combatant's Plate Breastplate (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-						}),
 						n(-326, {	-- Wrists
 							i(126021, {	-- Warmongering Combatant's Cuffs of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -7011,20 +7024,6 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
-							i(126022, {	-- Warmongering Combatant's Gloves of Prowess (A)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(126073, {	-- Warmongering Combatant's Gloves (A)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(126089, {	-- Warmongering Combatant's Gauntlets (A)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(126110, {	-- Warmongering Combatant's Plate Gloves (A)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-						}),
 						n(-328, {	-- Waist
 							i(126016, {	-- Warmongering Combatant's Cord of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -7049,20 +7048,6 @@ _.PVP =
 							}),
 							i(126104, {	-- Warmongering Combatant's Girdle of Prowess (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							}),
-						}),
-						n(-329, {	-- Legs
-							i(126024, {	-- Warmongering Combatant's Leggings of Prowess (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126075, {	-- Warmongering Combatant's Legguards (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126091, {	-- Warmongering Combatant's Leggings (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126112, {	-- Warmongering Combatant's Legplates (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
 						n(-330, {	-- Feet
@@ -8148,6 +8133,11 @@ _.PVP =
 									i(126508, {	-- Warmongering Combatant's Dreadplate Shoulders (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(126589),	--  Warmongering Combatant's Legplates (H)
+									i(126587),	--  Warmongering Combatant's Plate Gloves (H)
+									i(126586),	--  Warmongering Combatant's Plate Breastplate (H)
+									i(126590),	--  Warmongering Combatant's Shoulderplates (H)
+									i(126588),	--  Warmongering Combatant's Plate Helmet (H)
 								},
 							}),
 						}),
@@ -8177,6 +8167,11 @@ _.PVP =
 									i(126512, {	-- Warmongering Combatant's Dragonhide Tunic (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(126551),	--  Warmongering Combatant's Helm (H)
+									i(126553),	--  Warmongering Combatant's Spaulders (H)
+									i(126549),	--  Warmongering Combatant's Tunic (H)
+									i(126550),	--  Warmongering Combatant's Gloves (H)
+									i(126552),	--  Warmongering Combatant's Legguards (H)
 								},
 							}),
 						}),
@@ -8206,6 +8201,11 @@ _.PVP =
 									i(126518, {	-- Warmongering Combatant's Chain Spaulders (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(126568),	--  Warmongering Combatant's Leggings (H)
+									i(126566),	--  Warmongering Combatant's Gauntlets (H)
+									i(126565),	--  Warmongering Combatant's Armor (H)
+									i(126569),	--  Warmongering Combatant's Spaulders (H)
+									i(126567),	--  Warmongering Combatant's Helm (H)
 								},
 							}),
 						}),
@@ -8235,6 +8235,11 @@ _.PVP =
 									i(126556, {	-- Warmongering Combatant's Silk Trousers (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(126500),	--  Warmongering Combatant's Hood of Prowess (H)
+									i(126503),	--  Warmongering Combatant's Amice of Prowess (H)
+									i(126502),	--  Warmongering Combatant's Robes of Prowess (H)
+									i(126499),	--  Warmongering Combatant's Gloves of Prowess (H)
+									i(126501),	--  Warmongering Combatant's Leggings of Prowess (H)
 								},
 							}),
 						}),
@@ -8264,6 +8269,11 @@ _.PVP =
 									i(126574, {	-- Warmongering Combatant's Ironskin Tunic (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(126551),	--  Warmongering Combatant's Helm (H)
+									i(126553),	--  Warmongering Combatant's Spaulders (H)
+									i(126549),	--  Warmongering Combatant's Tunic (H)
+									i(126550),	--  Warmongering Combatant's Gloves (H)
+									i(126552),	--  Warmongering Combatant's Legguards (H)
 								},
 							}),
 						}),
@@ -8293,6 +8303,11 @@ _.PVP =
 									i(126579, {	-- Warmongering Combatant's Scaled Shoulders (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(126589),	--  Warmongering Combatant's Legplates (H)
+									i(126587),	--  Warmongering Combatant's Plate Gloves (H)
+									i(126586),	--  Warmongering Combatant's Plate Breastplate (H)
+									i(126590),	--  Warmongering Combatant's Shoulderplates (H)
+									i(126588),	--  Warmongering Combatant's Plate Helmet (H)
 								},
 							}),
 						}),
@@ -8322,6 +8337,11 @@ _.PVP =
 									i(126594, {	-- Warmongering Combatant's Satin Robe (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(126500),	--  Warmongering Combatant's Hood of Prowess (H)
+									i(126503),	--  Warmongering Combatant's Amice of Prowess (H)
+									i(126502),	--  Warmongering Combatant's Robes of Prowess (H)
+									i(126499),	--  Warmongering Combatant's Gloves of Prowess (H)
+									i(126501),	--  Warmongering Combatant's Leggings of Prowess (H)
 								},
 							}),
 						}),
@@ -8351,6 +8371,11 @@ _.PVP =
 									i(126596, {	-- Warmongering Combatant's Leather Tunic (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(126551),	--  Warmongering Combatant's Helm (H)
+									i(126553),	--  Warmongering Combatant's Spaulders (H)
+									i(126549),	--  Warmongering Combatant's Tunic (H)
+									i(126550),	--  Warmongering Combatant's Gloves (H)
+									i(126552),	--  Warmongering Combatant's Legguards (H)
 								},
 							}),
 						}),
@@ -8380,6 +8405,11 @@ _.PVP =
 									i(126605, {	-- Warmongering Combatant's Ringmail Spaulders (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(126568),	--  Warmongering Combatant's Leggings (H)
+									i(126566),	--  Warmongering Combatant's Gauntlets (H)
+									i(126565),	--  Warmongering Combatant's Armor (H)
+									i(126569),	--  Warmongering Combatant's Spaulders (H)
+									i(126567),	--  Warmongering Combatant's Helm (H)
 								},
 							}),
 						}),
@@ -8409,6 +8439,11 @@ _.PVP =
 									i(126646, {	-- Warmongering Combatant's Felweave Trousers (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(126500),	--  Warmongering Combatant's Hood of Prowess (H)
+									i(126503),	--  Warmongering Combatant's Amice of Prowess (H)
+									i(126502),	--  Warmongering Combatant's Robes of Prowess (H)
+									i(126499),	--  Warmongering Combatant's Gloves of Prowess (H)
+									i(126501),	--  Warmongering Combatant's Leggings of Prowess (H)
 								},
 							}),
 						}),
@@ -8438,35 +8473,12 @@ _.PVP =
 									i(126653, {	-- Warmongering Combatant's Plate Shoulders (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(126589),	--  Warmongering Combatant's Legplates (H)
+									i(126587),	--  Warmongering Combatant's Plate Gloves (H)
+									i(126586),	--  Warmongering Combatant's Plate Breastplate (H)
+									i(126590),	--  Warmongering Combatant's Shoulderplates (H)
+									i(126588),	--  Warmongering Combatant's Plate Helmet (H)
 								},
-							}),
-						}),
-						n(-320, {	-- Head
-							i(126500, {	-- Warmongering Combatant's Hood of Prowess (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126551, {	-- Warmongering Combatant's Helm (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126567, {	-- Warmongering Combatant's Helm (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126588, {	-- Warmongering Combatant's Plate Helmet (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-						}),
-						n(-321, {	-- Shoulders
-							i(126503, {	-- Warmongering Combatant's Amice of Prowess (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(126553, {	-- Warmongering Combatant's Spaulders (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(126569, {	-- Warmongering Combatant's Spaulders (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(126590, {	-- Warmongering Combatant's Shoulderplates (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
 						n(-322, {	-- Back
@@ -8498,20 +8510,6 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
-							i(126502, {	-- Warmongering Combatant's Robes of Prowess (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126549, {	-- Warmongering Combatant's Tunic (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126565, {	-- Warmongering Combatant's Armor (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126586, {	-- Warmongering Combatant's Plate Breastplate (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-						}),
 						n(-326, {	-- Wrists
 							i(126498, {	-- Warmongering Combatant's Cuffs of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -8538,20 +8536,6 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
-							i(126499, {	-- Warmongering Combatant's Gloves of Prowess (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(126550, {	-- Warmongering Combatant's Gloves (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(126566, {	-- Warmongering Combatant's Gauntlets (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(126587, {	-- Warmongering Combatant's Plate Gloves (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-						}),
 						n(-328, {	-- Waist
 							i(126493, {	-- Warmongering Combatant's Cord of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -8576,20 +8560,6 @@ _.PVP =
 							}),
 							i(126581, {	-- Warmongering Combatant's Girdle of Prowess (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							}),
-						}),
-						n(-329, {	-- Legs
-							i(126501, {	-- Warmongering Combatant's Leggings of Prowess (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126552, {	-- Warmongering Combatant's Legguards (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126568, {	-- Warmongering Combatant's Leggings (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(126589, {	-- Warmongering Combatant's Legplates (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
 						n(-330, {	-- Feet
