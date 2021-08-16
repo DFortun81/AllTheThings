@@ -202,6 +202,15 @@ _.WorldDrops =
 			prof(TAILORING, {
 				i(7085),	-- Pattern: Azure Shoulders
 				i(4352),	-- Pattern: Boots of the Enchanter
+				i(14484, {	-- Pettern: Brightcloth Cloak
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+				}),
+				i(14479, {	-- Pettern: Brightcloth Gloves
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+				}),
+				i(14478, {	-- Pettern: Brightcloth Robe
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+				}),
 				i(14510),	-- Pattern: Bottomless Bag
 				i(14494),	-- Pattern: Brightcloth Pants
 				i(10316),	-- Pattern: Colorful Kilt
@@ -253,6 +262,15 @@ _.WorldDrops =
 				i(4345),	-- Pattern: Red Woolen Boots
 				i(4347),	-- Pattern: Reinforced Woolen Shoulders
 				i(4354),	-- Pattern: Rich Purple Silk Shirt
+				i(14498, {	-- Pattern: Runecloth Headband
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+				}),
+				i(14491, {	-- Pattern: Runecloth Pants
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+				}),
+				i(14504, {	-- Pattern: Runecloth Shoulders
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+				}),
 				i(14470, {	-- Pattern: Runecloth Tunic
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
 				}),

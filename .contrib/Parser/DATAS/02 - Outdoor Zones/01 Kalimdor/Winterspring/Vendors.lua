@@ -50,6 +50,10 @@ _.Zones =
 						i(14468, {	-- Pattern: Runecloth Bag
 							["isLimited"] = true,
 						}),
+						i(14481, {	-- Pattern: Runecloth Gloves
+							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(10618, {	-- Rivern Frostwind <Wintersaber Trainer>

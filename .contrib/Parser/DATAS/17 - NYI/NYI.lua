@@ -2961,6 +2961,9 @@ _.NeverImplemented =
 				["spellID"] = 31461,	-- Heavy Netherweave Net
 				["u"] = NEVER_IMPLEMENTED,
 			},
+			i(114867),	-- Miniature Flying Carpet - NYI
+			i(114872),	-- Greater Hexweave Essence
+			i(118098),	-- Pettern: Murloc Chew Toy
 		}),
 		i(5657),	-- Recipe: Instant Toxin
 	}),

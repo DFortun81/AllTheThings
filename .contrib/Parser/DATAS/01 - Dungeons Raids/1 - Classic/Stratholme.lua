@@ -65,6 +65,12 @@ _.Instances = { tier(CLASSIC_TIER, {
 								10423,	-- Risen Priest
 							},
 						}),
+						i(14495,  { -- Pattern: Ghostweave Pants
+							["crs"] = {
+								10384,  -- Spectral Citizen
+							},
+							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
+						}),
 						i(18736),	-- Plaguehound Leggings
 						i(142337, {	-- Plans: Blight
 							["crs"] = {

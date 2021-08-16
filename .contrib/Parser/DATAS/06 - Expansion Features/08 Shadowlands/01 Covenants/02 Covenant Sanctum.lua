@@ -82,6 +82,7 @@ _.ExpansionFeatures =
 						i(182671),	-- Runelight Leaper
 						i(180872),	-- Spirited Skyfoal
 						-- Misc.
+						i(184650),	-- Adventure Campaign Progress
 						i(184631),	-- Adventurer's Enchanting Cache
 						-- i(  )	-- Adventurer's Fish Cache (doesn't exist)
 						i(184634),	-- Adventurer's Herbalism Cache

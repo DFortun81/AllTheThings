@@ -30,11 +30,11 @@ _.ExpansionFeatures =
 										["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
 										["collectible"] = false,
 										["g"] = {
-											recipe(168835),	-- Hexweave Cloth
-											recipe(176058),	-- Secrets of Draenor Tailoring
-											recipe(168852),	-- Sumptuous Cowl
-											recipe(168854),	-- Sumptuous Leggings
-											recipe(168853),	-- Sumptuous Robes
+											i(114851),	-- Hexweave Cloth
+											i(120128),	-- Secrets of Draenor Tailoring
+											i(114868),	-- Sumptuous Cowl
+											i(114870),	-- Sumptuous Leggings
+											i(114869),	-- Sumptuous Robes
 										},
 									}),
 									i(114863, {	-- Pattern: Brilliant Hexweave Cloak

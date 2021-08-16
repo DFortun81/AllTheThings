@@ -15,6 +15,16 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 6146 },	-- Cliff Breaker
 				}),
+				i(14473, {	-- Pettern: Ghostweave Belt
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
+					["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
+					["crs"] = { 7864 },	-- Lingering Highborne
+				}),
+				i(14477, {	-- Pattern: Ghostweave Gloves
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
+					["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
+					["crs"] = { 7864 },	-- Lingering Highborne
+				}),
 				i(15753, {	-- Pattern: Stormshroud Armor
 					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 6138 },	-- Arkkoran Oracle

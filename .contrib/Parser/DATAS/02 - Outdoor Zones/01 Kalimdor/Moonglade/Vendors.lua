@@ -11,6 +11,15 @@ _.Zones =
 					["g"] = {
 						i(14488, {	-- Pattern: Runecloth Boots
 							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+							["isLimited"] = true,
+						}),
+						i(14472, {	-- Pattern: Runecloth Cloak
+							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+							["isLimited"] = true,
+						}),
+						i(14469, {	-- Pattern: Runecloth Robe
+							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+							["isLimited"] = true,
 						}),
 					},
 				}),

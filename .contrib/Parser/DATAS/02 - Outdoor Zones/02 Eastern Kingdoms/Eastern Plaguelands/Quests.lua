@@ -779,6 +779,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(22688)),	-- Verimonde's Last Resort
 						un(REMOVED_FROM_GAME, i(22690)),	-- Leggings of the Plague Hunter
 						un(REMOVED_FROM_GAME, i(22689)),	-- Sanctified Leather Helm
+						un(REMOVED_FROM_GAME, i(22679)),	-- Supply Bag
 					},
 				}),
 				q(9223,  {	-- Superior Armaments of Battle - Honored Amongst the Dawn
@@ -790,6 +791,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(22688)),	-- Verimonde's Last Resort
 						un(REMOVED_FROM_GAME, i(22690)),	-- Leggings of the Plague Hunter
 						un(REMOVED_FROM_GAME, i(22689)),	-- Sanctified Leather Helm
+						un(REMOVED_FROM_GAME, i(22679)),	-- Supply Bag
 					},
 				}),
 				q(9226,  {	-- Superior Armaments of Battle - Revered Amongst the Dawn
@@ -801,6 +803,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(22688)),	-- Verimonde's Last Resort
 						un(REMOVED_FROM_GAME, i(22690)),	-- Leggings of the Plague Hunter
 						un(REMOVED_FROM_GAME, i(22689)),	-- Sanctified Leather Helm
+						un(REMOVED_FROM_GAME, i(22679)),	-- Supply Bag
 					},
 				}),
 				q(9227,  {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
@@ -812,6 +815,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(22688)),	-- Verimonde's Last Resort
 						un(REMOVED_FROM_GAME, i(22690)),	-- Leggings of the Plague Hunter
 						un(REMOVED_FROM_GAME, i(22689)),	-- Sanctified Leather Helm
+						un(REMOVED_FROM_GAME, i(22679)),	-- Supply Bag
 					},
 				}),
 				q(27370, {	-- Tarenar Sunstrike

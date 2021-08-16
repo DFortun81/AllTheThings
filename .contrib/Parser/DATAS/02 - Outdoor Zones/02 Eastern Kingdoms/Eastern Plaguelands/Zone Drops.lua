@@ -31,6 +31,11 @@ _.Zones =
 					},
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				i(14477, {	-- Pattern: Ghostweave Gloves
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
+					["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
+					["crs"] = { 8538 },	-- Unseen Servant
+				}),
 				i(14485, {	-- Pattern: Wizardweave Leggings
 					["crs"] = { 8551 },	-- Dark Summoner
 					["u"] = REMOVED_FROM_GAME,
