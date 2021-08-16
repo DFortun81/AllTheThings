@@ -7,8 +7,8 @@ _.Zones =
 	m(OUTLAND, {
 		m(BLADES_EDGE_MOUNTAINS, {
 			filter(101, {	-- Pet Battle
-				p(449, {    -- Brown Marmot
-				  ["crs"] = { 61752 },    -- Brown Marmot
+				p(449, {	-- Brown Marmot
+					["crs"] = { 61752 },	-- Brown Marmot
 				}),
 				p(1164, {	-- Cogblade Raptor
 					["crs"] = { 68841 },	-- Cogblade Raptor
