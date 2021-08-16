@@ -3420,6 +3420,11 @@ _.PVP =
 									i(124917, {	-- Wild Combatant's Dreadplate Shoulders (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(124997), -- Wild Combatant's Plate Helmet (A)
+									i(124999), -- Wild Combatant's Shoulderplates (A)
+									i(124995), -- Wild Combatant's Plate Breastplate (A)
+									i(124996), -- Wild Combatant's Plate Gloves (A)
+									i(124998), -- Wild Combatant's Legplates (A)
 								},
 							}),
 						}),
@@ -3449,6 +3454,11 @@ _.PVP =
 									i(124922, {	-- Wild Combatant's Dragonhide Spaulders (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(124961), -- Wild Combatant's Legguards (A)
+									i(124959), -- Wild Combatant's Gloves (A)
+									i(124958), -- Wild Combatant's Armor (A)
+									i(124962), -- Wild Combatant's Spaulders (A)
+									i(124960), -- Wild Combatant's Helm (A)
 								},
 							}),
 						}),
@@ -3478,6 +3488,11 @@ _.PVP =
 									i(124927, {	-- Wild Combatant's Chain Spaulders (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(124977), -- Wild Combatant's Leggings (A)
+									i(124975), -- Wild Combatant's Gauntlets (A)
+									i(124974), -- Wild Combatant's Tunic (A)
+									i(124978), -- Wild Combatant's Spaulders (A)
+									i(124976), -- Wild Combatant's Helm (A)
 								},
 							}),
 						}),
@@ -3507,6 +3522,11 @@ _.PVP =
 									i(124965, {	-- Wild Combatant's Silk Trousers (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(124909), 	-- Wild Combatant's Hood of Prowess (A)
+									i(124912), 	-- Wild Combatant's Amice of Prowess (A)
+									i(124911),	-- Wild Combatant's Robes of Prowess (A)
+									i(124908),	-- Wild Combatant's Gloves of Prowess (A)
+									i(124910),	-- Wild Combatant's Leggings of Prowess (A)
 								},
 							}),
 						}),
@@ -3536,6 +3556,11 @@ _.PVP =
 									i(124983, {	-- Wild Combatant's Ironskin Tunic (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(124961), -- Wild Combatant's Legguards (A)
+									i(124959), -- Wild Combatant's Gloves (A)
+									i(124958), -- Wild Combatant's Armor (A)
+									i(124962), -- Wild Combatant's Spaulders (A)
+									i(124960), -- Wild Combatant's Helm (A)
 								},
 							}),
 						}),
@@ -3565,6 +3590,11 @@ _.PVP =
 									i(124988, {	-- Wild Combatant's Scaled Shoulders (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(124997), -- Wild Combatant's Plate Helmet (A)
+									i(124999), -- Wild Combatant's Shoulderplates (A)
+									i(124995), -- Wild Combatant's Plate Breastplate (A)
+									i(124996), -- Wild Combatant's Plate Gloves (A)
+									i(124998), -- Wild Combatant's Legplates (A)
 								},
 							}),
 						}),
@@ -3594,6 +3624,11 @@ _.PVP =
 									i(125004, {	-- Wild Combatant's Satin Robe (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(124909), 	-- Wild Combatant's Hood of Prowess (A)
+									i(124912), 	-- Wild Combatant's Amice of Prowess (A)
+									i(124911),  -- Wild Combatant's Robes of Prowess (A)
+									i(124908),	-- Wild Combatant's Gloves of Prowess (A)
+									i(124910),	-- Wild Combatant's Leggings of Prowess (A)
 								},
 							}),
 						}),
@@ -3623,6 +3658,11 @@ _.PVP =
 									i(125005, {	-- Wild Combatant's Leather Tunic (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(124961), -- Wild Combatant's Legguards (A)
+									i(124959), -- Wild Combatant's Gloves (A)
+									i(124958), -- Wild Combatant's Armor (A)
+									i(124962), -- Wild Combatant's Spaulders (A)
+									i(124960), -- Wild Combatant's Helm (A)
 								},
 							}),
 						}),
@@ -3652,6 +3692,11 @@ _.PVP =
 									i(125014, {	-- Wild Combatant's Ringmail Spaulders (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(124977), -- Wild Combatant's Leggings (A)
+									i(124975), -- Wild Combatant's Gauntlets (A)
+									i(124974), -- Wild Combatant's Tunic (A)
+									i(124978), -- Wild Combatant's Spaulders (A)
+									i(124976), -- Wild Combatant's Helm (A)
 								},
 							}),
 						}),
@@ -3681,6 +3726,11 @@ _.PVP =
 									i(125055, {	-- Wild Combatant's Felweave Trousers (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(124909), 	-- Wild Combatant's Hood of Prowess (A)
+									i(124912), 	-- Wild Combatant's Amice of Prowess (A)
+									i(124911),	-- Wild Combatant's Robes of Prowess (A)
+									i(124908),	-- Wild Combatant's Gloves of Prowess (A)
+									i(124910),	-- Wild Combatant's Leggings of Prowess (A)
 								},
 							}),
 						}),
@@ -3710,35 +3760,12 @@ _.PVP =
 									i(125062, {	-- Wild Combatant's Plate Shoulders (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(124997), -- Wild Combatant's Plate Helmet (A)
+									i(124999), -- Wild Combatant's Shoulderplates (A)
+									i(124995), -- Wild Combatant's Plate Breastplate (A)
+									i(124996), -- Wild Combatant's Plate Gloves (A)
+									i(124998), -- Wild Combatant's Legplates (A)
 								},
-							}),
-						}),
-						n(-320, {	-- Head
-							i(124909, {	-- Wild Combatant's Hood of Prowess (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(124960, {	-- Wild Combatant's Helm (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(124976, {	-- Wild Combatant's Helm (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(124997, {	-- Wild Combatant's Plate Helmet (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-						}),
-						n(-321, {	-- Shoulders
-							i(124912, {	-- Wild Combatant's Amice of Prowess (A)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(124962, {	-- Wild Combatant's Spaulders (A)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(124978, {	-- Wild Combatant's Spaulders (A)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(124999, {	-- Wild Combatant's Shoulderplates (A)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
 						n(-322, {	-- Back
@@ -3770,20 +3797,6 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
-							i(124911, {	-- Wild Combatant's Robes of Prowess (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(124974, {	-- Wild Combatant's Tunic (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(124958, {	-- Wild Combatant's Armor (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(124995, {	-- Wild Combatant's Plate Breastplate (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-						}),
 						n(-326, {	-- Wrists
 							i(124907, {	-- Wild Combatant's Cuffs of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -3810,20 +3823,6 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
-							i(124908, {	-- Wild Combatant's Gloves of Prowess (A)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(124959, {	-- Wild Combatant's Gloves (A)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(124975, {	-- Wild Combatant's Gauntlets (A)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(124996, {	-- Wild Combatant's Plate Gloves (A)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-						}),
 						n(-328, {	-- Waist
 							i(124902, {	-- Wild Combatant's Cord of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -3848,20 +3847,6 @@ _.PVP =
 							}),
 							i(124990, {	-- Wild Combatant's Girdle of Prowess (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							}),
-						}),
-						n(-329, {	-- Legs
-							i(124910, {	-- Wild Combatant's Leggings of Prowess (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(124961, {	-- Wild Combatant's Legguards (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(124977, {	-- Wild Combatant's Leggings (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(124998, {	-- Wild Combatant's Legplates (A)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
 						n(-330, {	-- Feet
@@ -4940,6 +4925,11 @@ _.PVP =
 									i(125394, {	-- Wild Combatant's Dreadplate Shoulders (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(125474),	-- Wild Combatant's Plate Helmet (H)
+									i(125439),	-- Wild Combatant's Shoulderplates (H)
+									i(125472),	-- Wild Combatant's Plate Breastplate (H)
+									i(125473),	-- Wild Combatant's Plate Gloves (H)
+									i(125475),	-- Wild Combatant's Legplates (H)
 								},
 							}),
 						}),
@@ -4969,6 +4959,11 @@ _.PVP =
 									i(125399, {	-- Wild Combatant's Dragonhide Spaulders (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(125437),	-- Wild Combatant's Helm (H)
+									i(125476),	-- Wild Combatant's Spaulders (H)
+									i(125435),	-- Wild Combatant's Tunic (H)
+									i(125436),	-- Wild Combatant's Gloves (H)
+									i(125438),	-- Wild Combatant's Legguards (H)
 								},
 							}),
 						}),
@@ -4998,6 +4993,11 @@ _.PVP =
 									i(125404, {	-- Wild Combatant's Chain Spaulders (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(125453),	-- Wild Combatant's Helm (H)
+									i(125455),	-- Wild Combatant's Spaulders (H)
+									i(125451),	-- Wild Combatant's Armor (H)
+									i(125452),	-- Wild Combatant's Gauntlets (H)
+									i(125454),	-- Wild Combatant's Leggings (H)
 								},
 							}),
 						}),
@@ -5027,6 +5027,11 @@ _.PVP =
 									i(125442, {	-- Wild Combatant's Silk Trousers (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(125386),	-- Wild Combatant's Hood of Prowess (H)
+									i(125389),	-- Wild Combatant's Amice of Prowess (H)
+									i(125388),	-- Wild Combatant's Robes of Prowess (H)
+									i(125385),	-- Wild Combatant's Gloves of Prowess (H)
+									i(125387),	-- Wild Combatant's Leggings of Prowess (H)
 								},
 							}),
 						}),
@@ -5056,6 +5061,11 @@ _.PVP =
 									i(125460, {	-- Wild Combatant's Ironskin Tunic (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(125437),	-- Wild Combatant's Helm (H)
+									i(125476),	-- Wild Combatant's Spaulders (H)
+									i(125435),	-- Wild Combatant's Tunic (H)
+									i(125436),	-- Wild Combatant's Gloves (H)
+									i(125438),	-- Wild Combatant's Legguards (H)
 								},
 							}),
 						}),
@@ -5085,6 +5095,11 @@ _.PVP =
 									i(125465, {	-- Wild Combatant's Scaled Shoulders (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(125474),	-- Wild Combatant's Plate Helmet (H)
+									i(125439),	-- Wild Combatant's Shoulderplates (H)
+									i(125472),	-- Wild Combatant's Plate Breastplate (H)
+									i(125473),	-- Wild Combatant's Plate Gloves (H)
+									i(125475),	-- Wild Combatant's Legplates (H)
 								},
 							}),
 						}),
@@ -5114,6 +5129,11 @@ _.PVP =
 									i(125480, {	-- Wild Combatant's Satin Robe (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(125386),	-- Wild Combatant's Hood of Prowess (H)
+									i(125389),	-- Wild Combatant's Amice of Prowess (H)
+									i(125388),	-- Wild Combatant's Robes of Prowess (H)
+									i(125385),	-- Wild Combatant's Gloves of Prowess (H)
+									i(125387),	-- Wild Combatant's Leggings of Prowess (H)
 								},
 							}),
 						}),
@@ -5143,6 +5163,11 @@ _.PVP =
 									i(125482, {	-- Wild Combatant's Leather Tunic (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(125437),	-- Wild Combatant's Helm (H)
+									i(125476),	-- Wild Combatant's Spaulders (H)
+									i(125435),	-- Wild Combatant's Tunic (H)
+									i(125436),	-- Wild Combatant's Gloves (H)
+									i(125438),	-- Wild Combatant's Legguards (H)
 								},
 							}),
 						}),
@@ -5172,6 +5197,11 @@ _.PVP =
 									i(125491, {	-- Wild Combatant's Ringmail Spaulders (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(125453),	-- Wild Combatant's Helm (H)
+									i(125455),	-- Wild Combatant's Spaulders (H)
+									i(125451),	-- Wild Combatant's Armor (H)
+									i(125452),	-- Wild Combatant's Gauntlets (H)
+									i(125454),	-- Wild Combatant's Leggings (H)
 								},
 							}),
 						}),
@@ -5201,6 +5231,11 @@ _.PVP =
 									i(125532, {	-- Wild Combatant's Felweave Trousers (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(125386),	-- Wild Combatant's Hood of Prowess (H)
+									i(125389),	-- Wild Combatant's Amice of Prowess (H)
+									i(125388),	-- Wild Combatant's Robes of Prowess (H)
+									i(125385),	-- Wild Combatant's Gloves of Prowess (H)
+									i(125387),	-- Wild Combatant's Leggings of Prowess (H)
 								},
 							}),
 						}),
@@ -5230,35 +5265,12 @@ _.PVP =
 									i(125539, {	-- Wild Combatant's Plate Shoulders (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(125474),	-- Wild Combatant's Plate Helmet (H)
+									i(125439),	-- Wild Combatant's Shoulderplates (H)
+									i(125472),	-- Wild Combatant's Plate Breastplate (H)
+									i(125473),	-- Wild Combatant's Plate Gloves (H)
+									i(125475),	-- Wild Combatant's Legplates (H)
 								},
-							}),
-						}),
-						n(-320, {	-- Head
-							i(125386, {	-- Wild Combatant's Hood of Prowess (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(125453, {	-- Wild Combatant's Helm (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(125437, {	-- Wild Combatant's Helm (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(125474, {	-- Wild Combatant's Plate Helmet (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-						}),
-						n(-321, {	-- Shoulders
-							i(125389, {	-- Wild Combatant's Amice of Prowess (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(125455, {	-- Wild Combatant's Spaulders (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(125476, {	-- Wild Combatant's Spaulders (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(125439, {	-- Wild Combatant's Shoulderplates (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
 						n(-322, {	-- Back
@@ -5290,20 +5302,6 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
-							i(125388, {	-- Wild Combatant's Robes of Prowess (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(125435, {	-- Wild Combatant's Tunic (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(125451, {	-- Wild Combatant's Armor (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(125472, {	-- Wild Combatant's Plate Breastplate (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-						}),
 						n(-326, {	-- Wrists
 							i(125384, {	-- Wild Combatant's Cuffs of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -5330,20 +5328,6 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
-							i(125385, {	-- Wild Combatant's Gloves of Prowess (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(125436, {	-- Wild Combatant's Gloves (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(125452, {	-- Wild Combatant's Gauntlets (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-							i(125473, {	-- Wild Combatant's Plate Gloves (H)
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							}),
-						}),
 						n(-328, {	-- Waist
 							i(125379, {	-- Wild Combatant's Cord of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -5368,20 +5352,6 @@ _.PVP =
 							}),
 							i(125467, {	-- Wild Combatant's Girdle of Prowess (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							}),
-						}),
-						n(-329, {	-- Legs
-							i(125387, {	-- Wild Combatant's Leggings of Prowess (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(125438, {	-- Wild Combatant's Legguards (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(125454, {	-- Wild Combatant's Leggings (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(125475, {	-- Wild Combatant's Legplates (H)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
 						n(-330, {	-- Feet
