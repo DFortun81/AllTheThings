@@ -1293,8 +1293,11 @@ for key,value in pairs({
 	[187925] = "Большой костер Альянса",	-- Alliance Bonfire
 	[187926] = "Большой костер Альянса",	-- Alliance Bonfire
 	[187927] = "Большой костер Альянса",	-- Alliance Bonfire
+	[187928] = "Большой костер Альянса",	-- Alliance Bonfire
 	[187929] = "Большой костер Альянса",	-- Alliance Bonfire
 	[187930] = "Большой костер Альянса",	-- Alliance Bonfire
+	[187931] = "Большой костер Альянса",	-- Alliance Bonfire
+	[187932] = "Большой костер Альянса",	-- Alliance Bonfire
 	[187933] = "Большой костер Альянса",	-- Alliance Bonfire
 	[187934] = "Большой костер Альянса",	-- Alliance Bonfire
 	[187935] = "Большой костер Альянса",	-- Alliance Bonfire
@@ -1316,6 +1319,7 @@ for key,value in pairs({
 	[187951] = "Большой костер Орды",	-- Horde Bonfire
 	[187952] = "Большой костер Орды",	-- Horde Bonfire
 	[187953] = "Большой костер Орды",	-- Horde Bonfire
+	[187954] = "Большой костер Орды",	-- Horde Bonfire
 	[187955] = "Большой костер Орды",	-- Horde Bonfire
 	[187956] = "Большой костер Орды",	-- Horde Bonfire
 	[187957] = "Большой костер Орды",	-- Horde Bonfire
@@ -1334,6 +1338,8 @@ for key,value in pairs({
 	[187970] = "Большой костер Орды",	-- Horde Bonfire
 	[187971] = "Большой костер Орды",	-- Horde Bonfire
 	[187972] = "Большой костер Орды",	-- Horde Bonfire
+	[187973] = "Большой костер Орды",	-- Horde Bonfire
+	[187974] = "Большой костер Орды",	-- Horde Bonfire
 	[187975] = "Большой костер Орды",	-- Horde Bonfire
 	[188085] = "Зараженное зерно",	-- Plagued Grain
 	[188261] = "Потрепанный дневник",	-- Battered Journal
@@ -1455,6 +1461,8 @@ for key,value in pairs({
 	[205540] = "Дряхлый скелет",	-- Decrepit Skeleton
 	[205874] = "Покрытые песком иероглифы",	-- Sand-Covered Hieroglyphs
 	[205875] = "Сигнальная ракета рыцаря",	-- Crusader's Flare
+	[206109] = "Доска приказов вождя",	-- Warchief's Command Board
+	[206111] = "Доска объявлений для героев",	-- Hero's Call Board
 	[206293] = "Терминал АИДА",	-- A.I.D.A. Terminal
 	[206335] = "Кусок камня",	-- Stone Slab
 	[206336] = "Кусок мрамора",	-- Marble Slab
@@ -2996,6 +3004,7 @@ for key,value in pairs({
 	[369339] = "Тайник Верных Утробе",	-- Mawsworn Cache
 	[369340] = "Ларец с кортийскими реликвиями",	-- Korthian Relic Box
 	[369341] = "Тайник Верных Утробе",	-- Mawsworn Cache
+	--TODO: [369432] = "Misplaced Venthyr Tome",	-- Misplaced Venthyr Tome
 	[369437] = "Тайник Разлома",	-- Riftbound Cache
 	[369438] = "Тайник Разлома",	-- Riftbound Cache
 	[369439] = "Тайник Разлома",	-- Riftbound Cache

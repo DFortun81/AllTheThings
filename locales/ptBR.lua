@@ -1306,8 +1306,11 @@ for key,value in pairs({
 	[187925] = "Fogueira da Aliança",	-- Alliance Bonfire
 	[187926] = "Fogueira da Aliança",	-- Alliance Bonfire
 	[187927] = "Fogueira da Aliança",	-- Alliance Bonfire
+	[187928] = "Fogueira da Aliança",	-- Alliance Bonfire
 	[187929] = "Fogueira da Aliança",	-- Alliance Bonfire
 	[187930] = "Fogueira da Aliança",	-- Alliance Bonfire
+	[187931] = "Fogueira da Aliança",	-- Alliance Bonfire
+	[187932] = "Fogueira da Aliança",	-- Alliance Bonfire
 	[187933] = "Fogueira da Aliança",	-- Alliance Bonfire
 	[187934] = "Fogueira da Aliança",	-- Alliance Bonfire
 	[187935] = "Fogueira da Aliança",	-- Alliance Bonfire
@@ -1329,6 +1332,7 @@ for key,value in pairs({
 	[187951] = "Fogueira da Horda",	-- Horde Bonfire
 	[187952] = "Fogueira da Horda",	-- Horde Bonfire
 	[187953] = "Fogueira da Horda",	-- Horde Bonfire
+	[187954] = "Fogueira da Horda",	-- Horde Bonfire
 	[187955] = "Fogueira da Horda",	-- Horde Bonfire
 	[187956] = "Fogueira da Horda",	-- Horde Bonfire
 	[187957] = "Fogueira da Horda",	-- Horde Bonfire
@@ -1347,6 +1351,8 @@ for key,value in pairs({
 	[187970] = "Fogueira da Horda",	-- Horde Bonfire
 	[187971] = "Fogueira da Horda",	-- Horde Bonfire
 	[187972] = "Fogueira da Horda",	-- Horde Bonfire
+	[187973] = "Fogueira da Horda",	-- Horde Bonfire
+	[187974] = "Fogueira da Horda",	-- Horde Bonfire
 	[187975] = "Fogueira da Horda",	-- Horde Bonfire
 	[188085] = "Grão Pestilento",	-- Plagued Grain
 	[188261] = "Diário Surrado",	-- Battered Journal
@@ -1468,6 +1474,8 @@ for key,value in pairs({
 	[205540] = "Esqueleto Decrépito",	-- Decrepit Skeleton
 	[205874] = "Hieróglifos Cobertos de Areia",	-- Sand-Covered Hieroglyphs
 	[205875] = "Clarão do Cruzado",	-- Crusader's Flare
+	[206109] = "Mural de Ordens do Chefe Guerreiro",	-- Warchief's Command Board
+	[206111] = "Mural do Chamado ao Heroísmo",	-- Hero's Call Board
 	[206293] = "Terminal A.I.D.A.",	-- A.I.D.A. Terminal
 	[206335] = "Pedaço de Pedra",	-- Stone Slab
 	[206336] = "Pedaço de Mármore",	-- Marble Slab
@@ -3009,6 +3017,7 @@ for key,value in pairs({
 	[369339] = "Cabedal Górjuro",	-- Mawsworn Cache
 	[369340] = "Caixa de Relíquias Korthianas",	-- Korthian Relic Box
 	[369341] = "Cabedal Górjuro",	-- Mawsworn Cache
+	[369432] = "Tomo Venthyr Perdido",	-- Misplaced Venthyr Tome
 	[369437] = "Cabedal Fendífero",	-- Riftbound Cache
 	[369438] = "Cabedal Fendífero",	-- Riftbound Cache
 	[369439] = "Cabedal Fendífero",	-- Riftbound Cache

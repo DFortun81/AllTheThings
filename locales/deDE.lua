@@ -1306,8 +1306,11 @@ for key,value in pairs({
 	[187925] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
 	[187926] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
 	[187927] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
+	[187928] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
 	[187929] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
 	[187930] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
+	[187931] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
+	[187932] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
 	[187933] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
 	[187934] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
 	[187935] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
@@ -1329,6 +1332,7 @@ for key,value in pairs({
 	[187951] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187952] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187953] = "Freudenfeuer der Horde",	-- Horde Bonfire
+	[187954] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187955] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187956] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187957] = "Freudenfeuer der Horde",	-- Horde Bonfire
@@ -1347,6 +1351,8 @@ for key,value in pairs({
 	[187970] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187971] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187972] = "Freudenfeuer der Horde",	-- Horde Bonfire
+	[187973] = "Freudenfeuer der Horde",	-- Horde Bonfire
+	[187974] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187975] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[188085] = "Verseuchtes Korn",	-- Plagued Grain
 	[188261] = "Zerfleddertes Tagebuch",	-- Battered Journal
@@ -1468,6 +1474,8 @@ for key,value in pairs({
 	[205540] = "Verfallenes Skelett",	-- Decrepit Skeleton
 	[205874] = "Sandbedeckte Hieroglyphen",	-- Sand-Covered Hieroglyphs
 	[205875] = "Leuchtsignal des Kreuzzüglers",	-- Crusader's Flare
+	[206109] = "Auf Befehl des Kriegshäuptlings",	-- Warchief's Command Board
+	[206111] = "Heldenaufruf",	-- Hero's Call Board
 	[206293] = "A.I.D.A.-Terminal",	-- A.I.D.A. Terminal
 	[206335] = "Steinplatte",	-- Stone Slab
 	[206336] = "Marmorplatte",	-- Marble Slab
@@ -3009,6 +3017,7 @@ for key,value in pairs({
 	[369339] = "Schlundgebundene Truhe",	-- Mawsworn Cache
 	[369340] = "Korthianische Reliktschatulle",	-- Korthian Relic Box
 	[369341] = "Schlundgebundene Truhe",	-- Mawsworn Cache
+	--TODO: [369432] = "Misplaced Venthyr Tome",	-- Misplaced Venthyr Tome
 	[369437] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369438] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369439] = "Rissgebundene Truhe",	-- Riftbound Cache

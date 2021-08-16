@@ -1306,8 +1306,11 @@ for key,value in pairs({
 	[187925] = "Fogata de la Alianza",	-- Alliance Bonfire
 	[187926] = "Fogata de la Alianza",	-- Alliance Bonfire
 	[187927] = "Fogata de la Alianza",	-- Alliance Bonfire
+	[187928] = "Fogata de la Alianza",	-- Alliance Bonfire
 	[187929] = "Fogata de la Alianza",	-- Alliance Bonfire
 	[187930] = "Fogata de la Alianza",	-- Alliance Bonfire
+	[187931] = "Fogata de la Alianza",	-- Alliance Bonfire
+	[187932] = "Fogata de la Alianza",	-- Alliance Bonfire
 	[187933] = "Fogata de la Alianza",	-- Alliance Bonfire
 	[187934] = "Fogata de la Alianza",	-- Alliance Bonfire
 	[187935] = "Fogata de la Alianza",	-- Alliance Bonfire
@@ -1329,6 +1332,7 @@ for key,value in pairs({
 	[187951] = "Fogata de la Horda",	-- Horde Bonfire
 	[187952] = "Fogata de la Horda",	-- Horde Bonfire
 	[187953] = "Fogata de la Horda",	-- Horde Bonfire
+	[187954] = "Fogata de la Horda",	-- Horde Bonfire
 	[187955] = "Fogata de la Horda",	-- Horde Bonfire
 	[187956] = "Fogata de la Horda",	-- Horde Bonfire
 	[187957] = "Fogata de la Horda",	-- Horde Bonfire
@@ -1347,6 +1351,8 @@ for key,value in pairs({
 	[187970] = "Fogata de la Horda",	-- Horde Bonfire
 	[187971] = "Fogata de la Horda",	-- Horde Bonfire
 	[187972] = "Fogata de la Horda",	-- Horde Bonfire
+	[187973] = "Fogata de la Horda",	-- Horde Bonfire
+	[187974] = "Fogata de la Horda",	-- Horde Bonfire
 	[187975] = "Fogata de la Horda",	-- Horde Bonfire
 	[188085] = "Grano apestado",	-- Plagued Grain
 	[188261] = "Diario maltrecho",	-- Battered Journal
@@ -1468,6 +1474,8 @@ for key,value in pairs({
 	[205540] = "Esqueleto decrépito",	-- Decrepit Skeleton
 	[205874] = "Jeroglíficos cubiertos de arena",	-- Sand-Covered Hieroglyphs
 	[205875] = "Bengala de cruzado",	-- Crusader's Flare
+	[206109] = "Tablón de mando del Jefe de Guerra",	-- Warchief's Command Board
+	[206111] = "Tablero de ¡Se busca héroe!",	-- Hero's Call Board
 	[206293] = "Terminal A.I.D.A.",	-- A.I.D.A. Terminal
 	[206335] = "Losa de piedra",	-- Stone Slab
 	[206336] = "Losa de mármol",	-- Marble Slab
@@ -3009,6 +3017,7 @@ for key,value in pairs({
 	[369339] = "Alijo jurafauces",	-- Mawsworn Cache
 	[369340] = "Caja de reliquias korthiana",	-- Korthian Relic Box
 	[369341] = "Alijo jurafauces",	-- Mawsworn Cache
+	--TODO: [369432] = "Misplaced Venthyr Tome",	-- Misplaced Venthyr Tome
 	[369437] = "Alijo vinculafalla",	-- Riftbound Cache
 	[369438] = "Alijo vinculafalla",	-- Riftbound Cache
 	[369439] = "Alijo vinculafalla",	-- Riftbound Cache

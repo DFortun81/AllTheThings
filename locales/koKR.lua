@@ -1306,8 +1306,11 @@ for key,value in pairs({
 	[187925] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187926] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187927] = "얼라이언스 화톳불",	-- Alliance Bonfire
+	[187928] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187929] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187930] = "얼라이언스 화톳불",	-- Alliance Bonfire
+	[187931] = "얼라이언스 화톳불",	-- Alliance Bonfire
+	[187932] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187933] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187934] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187935] = "얼라이언스 화톳불",	-- Alliance Bonfire
@@ -1329,6 +1332,7 @@ for key,value in pairs({
 	[187951] = "호드 화톳불",	-- Horde Bonfire
 	[187952] = "호드 화톳불",	-- Horde Bonfire
 	[187953] = "호드 화톳불",	-- Horde Bonfire
+	[187954] = "호드 화톳불",	-- Horde Bonfire
 	[187955] = "호드 화톳불",	-- Horde Bonfire
 	[187956] = "호드 화톳불",	-- Horde Bonfire
 	[187957] = "호드 화톳불",	-- Horde Bonfire
@@ -1347,6 +1351,8 @@ for key,value in pairs({
 	[187970] = "호드 화톳불",	-- Horde Bonfire
 	[187971] = "호드 화톳불",	-- Horde Bonfire
 	[187972] = "호드 화톳불",	-- Horde Bonfire
+	[187973] = "호드 화톳불",	-- Horde Bonfire
+	[187974] = "호드 화톳불",	-- Horde Bonfire
 	[187975] = "호드 화톳불",	-- Horde Bonfire
 	[188085] = "역병에 오염된 곡식",	-- Plagued Grain
 	[188261] = "닳아해진 일지",	-- Battered Journal
@@ -1468,6 +1474,8 @@ for key,value in pairs({
 	[205540] = "오래된 해골",	-- Decrepit Skeleton
 	[205874] = "모래투성이 성각문양",	-- Sand-Covered Hieroglyphs
 	[205875] = "성전사의 신호탄",	-- Crusader's Flare
+	[206109] = "대족장의 명령 게시판",	-- Warchief's Command Board
+	[206111] = "영웅의 부름 게시판",	-- Hero's Call Board
 	[206293] = "인공지능 단말기",	-- A.I.D.A. Terminal
 	[206335] = "석판",	-- Stone Slab
 	[206336] = "대리석 석판",	-- Marble Slab
@@ -3009,6 +3017,7 @@ for key,value in pairs({
 	[369339] = "나락살이 보관함",	-- Mawsworn Cache
 	[369340] = "코르시아 유물 상자",	-- Korthian Relic Box
 	[369341] = "나락살이 보관함",	-- Mawsworn Cache
+	--TODO: [369432] = "Misplaced Venthyr Tome",	-- Misplaced Venthyr Tome
 	[369437] = "균열결속 보관함",	-- Riftbound Cache
 	[369438] = "균열결속 보관함",	-- Riftbound Cache
 	[369439] = "균열결속 보관함",	-- Riftbound Cache

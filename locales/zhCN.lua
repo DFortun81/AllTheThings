@@ -1358,8 +1358,11 @@ for key, value in pairs({
 	[187925] = "联盟篝火",	-- Alliance Bonfire
 	[187926] = "联盟篝火",	-- Alliance Bonfire
 	[187927] = "联盟篝火",	-- Alliance Bonfire
+	[187928] = "联盟篝火",	-- Alliance Bonfire
 	[187929] = "联盟篝火",	-- Alliance Bonfire
 	[187930] = "联盟篝火",	-- Alliance Bonfire
+	[187931] = "联盟篝火",	-- Alliance Bonfire
+	[187932] = "联盟篝火",	-- Alliance Bonfire
 	[187933] = "联盟篝火",	-- Alliance Bonfire
 	[187934] = "联盟篝火",	-- Alliance Bonfire
 	[187935] = "联盟篝火",	-- Alliance Bonfire
@@ -1381,6 +1384,7 @@ for key, value in pairs({
 	[187951] = "部落篝火",	-- Horde Bonfire
 	[187952] = "部落篝火",	-- Horde Bonfire
 	[187953] = "部落篝火",	-- Horde Bonfire
+	[187954] = "部落篝火",	-- Horde Bonfire
 	[187955] = "部落篝火",	-- Horde Bonfire
 	[187956] = "部落篝火",	-- Horde Bonfire
 	[187957] = "部落篝火",	-- Horde Bonfire
@@ -1399,6 +1403,8 @@ for key, value in pairs({
 	[187970] = "部落篝火",	-- Horde Bonfire
 	[187971] = "部落篝火",	-- Horde Bonfire
 	[187972] = "部落篝火",	-- Horde Bonfire
+	[187973] = "部落篝火",	-- Horde Bonfire
+	[187974] = "部落篝火",	-- Horde Bonfire
 	[187975] = "部落篝火",	-- Horde Bonfire
 	[188085] = "天灾谷物",	-- Plagued Grain
 	[188261] = "破碎的日记",	-- Battered Journal
@@ -1520,6 +1526,8 @@ for key, value in pairs({
 	[205540] = "破损的骨骼",	-- Decrepit Skeleton
 	[205874] = "沙土覆盖的符文",	-- Sand-Covered Hieroglyphs
 	--TODO: [205875] = "Crusader's Flare",	-- Crusader's Flare
+	[206109] = "酋长的命令布告板",	-- Warchief's Command Board
+	[206111] = "英雄的召唤布告牌",	-- Hero's Call Board
 	--TODO: [206293] = "A.I.D.A. Terminal",	-- A.I.D.A. Terminal
 	[206335] = "石板",	-- Stone Slab
 	[206336] = "大理石板",	-- Marble Slab
@@ -3061,6 +3069,7 @@ for key, value in pairs({
 	[369339] = "渊誓之箱",	-- Mawsworn Cache
 	[369340] = "刻希亚圣物箱",	-- Korthian Relic Box
 	[369341] = "渊誓之箱",	-- Mawsworn Cache
+	--TODO: [369432] = "Misplaced Venthyr Tome",	-- Misplaced Venthyr Tome
 	[369437] = "隙缚宝箱",	-- Riftbound Cache
 	[369438] = "隙缚宝箱",	-- Riftbound Cache
 	[369439] = "隙缚宝箱",	-- Riftbound Cache
