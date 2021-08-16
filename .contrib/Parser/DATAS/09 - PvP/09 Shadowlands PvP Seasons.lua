@@ -159,7 +159,6 @@ _.PVP =
 				}),
 				n(-384, {	-- Neck
 					i(178448),	-- Sinful Gladiator's Amulet
-					i(181333),	-- Sinful Gladiator's Medallion
 					i(175922),	-- Sinful Gladiator's Necklace
 					i(178387),	-- Sinful Gladiator's Pendant
 				}),
@@ -185,6 +184,7 @@ _.PVP =
 					i(175921),	-- Sinful Gladiator's Badge of Ferocity
 					i(178447),	-- Sinful Gladiator's Emblem
 					i(178386),	-- Sinful Gladiator's Insignia of Alacrity
+					i(181333),	-- Sinful Gladiator's Medallion
 					i(181335),	-- Sinful Gladiator's Relentless Brooch
 					i(181816),	-- Sinful Gladiator's Sigil of Adaptation
 				}),
@@ -385,7 +385,6 @@ _.PVP =
 				}),
 				n(-384, {	-- Neck
 					i(178448),	-- Sinful Gladiator's Amulet
-					i(181333),	-- Sinful Gladiator's Medallion
 					i(175922),	-- Sinful Gladiator's Necklace
 					i(178387),	-- Sinful Gladiator's Pendant
 				}),
@@ -411,6 +410,7 @@ _.PVP =
 					i(175921),	-- Sinful Gladiator's Badge of Ferocity
 					i(178447),	-- Sinful Gladiator's Emblem
 					i(178386),	-- Sinful Gladiator's Insignia of Alacrity
+					i(181333),	-- Sinful Gladiator's Medallion
 					i(181335),	-- Sinful Gladiator's Relentless Brooch
 					i(181816),	-- Sinful Gladiator's Sigil of Adaptation
 				}),
