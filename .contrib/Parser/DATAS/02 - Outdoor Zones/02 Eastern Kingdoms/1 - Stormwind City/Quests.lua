@@ -1613,11 +1613,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(65616),	-- Crown of the Hallowed
-						-- You get these when completing the quest
-						i(141979),	-- Crown of the Hallowed
-						i(141980),	-- Crown of the Hallowed
-						i(141981),	-- Crown of the Hallowed
-						i(141982),	-- Crown of the Hallowed
+						-- you are supposed to get these when doing the quest, but i completed it on 2 characters and haven't received them :) possible unknown race requirement?
+					--	i(141979),	-- Crown of the Hallowed
+					--	i(141980),	-- Crown of the Hallowed
+					--	i(141981),	-- Crown of the Hallowed
+					--	i(141982),	-- Crown of the Hallowed
 					},
 				}),
 				q(28238, {	-- Twilight Shores
