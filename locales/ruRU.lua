@@ -2295,7 +2295,7 @@ for key,value in pairs({
 	[252839] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[252840] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[252841] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
-	[252842] = "Сундук с сокровищами",	-- Small Treasure Chest
+	[252842] = "Сундук с сокровищами",	-- Treasure Chest
 	[252844] = "Сундук с сокровищами",	-- Treasure Chest
 	[252850] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[252860] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
@@ -2926,7 +2926,7 @@ for key,value in pairs({
 	[358531] = "Огромный тайник с эпическим сокровищем",	-- Giant Cache of Epic Treasure
 	[358533] = "Забытые припасы",	-- Forgotten Supplies
 	[358855] = "Поврежденный набор для безопасного падения",	-- Damaged Safe Fall Pack
-	[360054] = "Липкая кошка",	-- Slime Cat
+	[360054] = "Липкая кошка",	-- Sticky Cat
 	[362489] = "Элизийский декрет",	-- Elysian Decree
 	[364483] = "Пустой бочонок для вечернего вина",	-- Empty Nightcap Cask
 	[364899] = "Кристаллизованная стигия",	-- Crystallized Stygia

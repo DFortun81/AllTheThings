@@ -2308,7 +2308,7 @@ for key,value in pairs({
 	[252839] = "Arqueta pequeña",	-- Small Treasure Chest
 	[252840] = "Arqueta pequeña",	-- Small Treasure Chest
 	[252841] = "Arqueta pequeña",	-- Small Treasure Chest
-	[252842] = "Arqueta",	-- Small Treasure Chest
+	[252842] = "Arqueta",	-- Treasure Chest
 	[252844] = "Arqueta",	-- Treasure Chest
 	[252850] = "Arqueta pequeña",	-- Small Treasure Chest
 	[252860] = "Arqueta pequeña",	-- Small Treasure Chest
@@ -2939,7 +2939,7 @@ for key,value in pairs({
 	[358531] = "Alijo gigantesco de tesoro épico",	-- Giant Cache of Epic Treasure
 	[358533] = "Suministros olvidados",	-- Forgotten Supplies
 	[358855] = "Mochila de Caída segura dañada",	-- Damaged Safe Fall Pack
-	[360054] = "Gato pegajoso",	-- Slime Cat
+	[360054] = "Gato pegajoso",	-- Sticky Cat
 	[362489] = "Decreto elisio",	-- Elysian Decree
 	[364483] = "Tonel de trago vacío",	-- Empty Nightcap Cask
 	[364899] = "Estigia cristalizada",	-- Crystallized Stygia

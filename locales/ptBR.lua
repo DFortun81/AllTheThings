@@ -2308,7 +2308,7 @@ for key,value in pairs({
 	[252839] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[252840] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[252841] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
-	[252842] = "Baú do Tesouro",	-- Small Treasure Chest
+	[252842] = "Baú do Tesouro",	-- Treasure Chest
 	[252844] = "Baú do Tesouro",	-- Treasure Chest
 	[252850] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[252860] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
@@ -2939,7 +2939,7 @@ for key,value in pairs({
 	[358531] = "Baú Gigante de Tesouro Épico",	-- Giant Cache of Epic Treasure
 	[358533] = "Suprimentos Esquecidos",	-- Forgotten Supplies
 	[358855] = "Mochila de Queda Segura Danificada",	-- Damaged Safe Fall Pack
-	[360054] = "Gato Grudento",	-- Slime Cat
+	[360054] = "Gato Grudento",	-- Sticky Cat
 	[362489] = "Decreto Elísio",	-- Elysian Decree
 	[364483] = "Barril da Saideira Esvaziado",	-- Empty Nightcap Cask
 	[364899] = "Estígia Cristalizada",	-- Crystallized Stygia

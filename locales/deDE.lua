@@ -2308,7 +2308,7 @@ for key,value in pairs({
 	[252839] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[252840] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[252841] = "Kleine Schatztruhe",	-- Small Treasure Chest
-	[252842] = "Schatztruhe",	-- Small Treasure Chest
+	[252842] = "Schatztruhe",	-- Treasure Chest
 	[252844] = "Schatztruhe",	-- Treasure Chest
 	[252850] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[252860] = "Kleine Schatztruhe",	-- Small Treasure Chest
@@ -2939,7 +2939,7 @@ for key,value in pairs({
 	[358531] = "Epischer Riesenschatz",	-- Giant Cache of Epic Treasure
 	[358533] = "Vergessene Vorräte",	-- Forgotten Supplies
 	[358855] = "Beschädigter Rucksack des sicheren Fallens",	-- Damaged Safe Fall Pack
-	[360054] = "Klebrige Katze",	-- Slime Cat
+	[360054] = "Klebrige Katze",	-- Sticky Cat
 	[362489] = "Elysischer Erlass",	-- Elysian Decree
 	[364483] = "Leeres Schlummertrunkfass",	-- Empty Nightcap Cask
 	[364899] = "Kristallisierte Stygia",	-- Crystallized Stygia

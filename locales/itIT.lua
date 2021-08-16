@@ -2308,7 +2308,7 @@ for key,value in pairs({
 	[252839] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[252840] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[252841] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
-	[252842] = "Cassa del Tesoro",	-- Small Treasure Chest
+	[252842] = "Cassa del Tesoro",	-- Treasure Chest
 	[252844] = "Cassa del Tesoro",	-- Treasure Chest
 	[252850] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[252860] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest

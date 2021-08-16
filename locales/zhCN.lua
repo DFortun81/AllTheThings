@@ -2360,7 +2360,7 @@ for key, value in pairs({
 	[252839] = "小宝箱",	-- Small Treasure Chest
 	[252840] = "小宝箱",	-- Small Treasure Chest
 	[252841] = "小宝箱",	-- Small Treasure Chest
-	[252842] = "宝箱",	-- Small Treasure Chest
+	[252842] = "宝箱",	-- Treasure Chest
 	[252844] = "宝箱",	-- Treasure Chest
 	[252850] = "小宝箱",	-- Small Treasure Chest
 	[252860] = "小宝箱",	-- Small Treasure Chest
@@ -2991,7 +2991,7 @@ for key, value in pairs({
 	[358531] = "巨大的史诗财宝箱",	-- Giant Cache of Epic Treasure
 	[358533] = "被遗忘的补给品",	-- Forgotten Supplies
 	[358855] = "损坏的安全降落包",	-- Damaged Safe Fall Pack
-	[360054] = "黏黏猫",	-- Slime Cat
+	[360054] = "黏黏猫",	-- Sticky Cat
 	[362489] = "极乐敕令",	-- Elysian Decree
 	[364483] = "空空的睡帽酒酒桶",	-- Empty Nightcap Cask
 	[364899] = "晶体冥殇",	-- Crystallized Stygia
