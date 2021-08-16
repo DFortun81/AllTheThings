@@ -2096,7 +2096,7 @@ for key,value in pairs({
 	--TODO: [243899] = "Broken Ley Flame Burner",	-- Broken Ley Flame Burner
 	[243911] = "눈더미",	-- Snow Mound
 	[244453] = "쿨렌의 정찰 보고서",	-- Cullen's Scouting Report
-	--TODO: [244473] = "Thunder Totem Stolen Goods",	-- Thunder Totem Stolen Goods
+	[244473] = "천둥 토템 도난당한 물품",	-- Thunder Totem Stolen Goods
 	[244494] = "보물 상자",	-- Treasure Chest
 	[244519] = "보물 상자",	-- Treasure Chest
 	--TODO: [244628] = "Taurson's Prize",	-- Taurson's Prize
@@ -2127,7 +2127,7 @@ for key,value in pairs({
 	[245216] = "|cFFFFFFFFStep 3:|r 161쪽",	-- |cFFFFFFFFStep 3:|r Page 161
 	[245286] = "수정 호랑이 조각상",	-- Crystalline Cat Figurine
 	[245316] = "작은 보물 상자",	-- Small Treasure Chest
-	--TODO: [245328] = "Enchanted Scroll",	-- Enchanted Scroll
+	[245328] = "마력 깃든 두루마리",	-- Enchanted Scroll
 	[245345] = "작은 보물 상자",	-- Small Treasure Chest
 	--TODO: [245479] = "Battered Chest",	-- Battered Chest
 	[245524] = "보물 상자",	-- Treasure Chest
@@ -2138,15 +2138,15 @@ for key,value in pairs({
 	[245531] = "보물 상자",	-- Treasure Chest
 	[245532] = "보물 상자",	-- Treasure Chest
 	[245533] = "보물 상자",	-- Treasure Chest
-	--TODO: [245534] = "Small Treasure Chest",	-- Small Treasure Chest
+	[245534] = "작은 보물 상자",	-- Small Treasure Chest
 	--TODO: [245535] = "Small Treasure Chest",	-- Small Treasure Chest
-	--TODO: [245536] = "Glimmering Treasure Chest",	-- Glimmering Treasure Chest
+	[245536] = "반짝이는 보물 상자",	-- Glimmering Treasure Chest
 	[245537] = "반짝이는 보물 상자",	-- Glimmering Treasure Chest
 	[245541] = "작은 보물 상자",	-- Small Treasure Chest
 	[245542] = "보물 상자",	-- Treasure Chest
 	[245543] = "보물 상자",	-- Treasure Chest
 	[245545] = "작은 보물 상자",	-- Small Treasure Chest
-	--TODO: [245547] = "Small Treasure Chest",	-- Small Treasure Chest
+	[245547] = "작은 보물 상자",	-- Small Treasure Chest
 	[245548] = "보물 상자",	-- Treasure Chest
 	[245550] = "보물 상자",	-- Treasure Chest
 	[245551] = "작은 보물 상자",	-- Small Treasure Chest
@@ -2331,7 +2331,7 @@ for key,value in pairs({
 	[254128] = "보물 상자",	-- Treasure Chest
 	[254141] = "작은 보물 상자",	-- Small Treasure Chest
 	[255344] = "지옥판암 융기",	-- Felslate Seam
-	--TODO: [255828] = "Small Treasure Chest",	-- Small Treasure Chest
+	[255828] = "작은 보물 상자",	-- Small Treasure Chest
 	--TODO: [255829] = "Small Treasure Chest",	-- Small Treasure Chest
 	[257393] = "보물 상자",	-- Treasure Chest
 	[257545] = "보물 상자",	-- Treasure Chest
@@ -2787,10 +2787,10 @@ for key,value in pairs({
 	[353306] = "부패한 껍데기",	-- Decayed Husk
 	[353314] = "은 금고",	-- Silver Strongbox
 	[353323] = "부패한 껍데기",	-- Decayed Husk
-	--TODO: [353324] = "Decayed Husk",	-- Decayed Husk
+	[353324] = "부패한 껍데기",	-- Decayed Husk
 	[353325] = "은 금고",	-- Silver Strongbox
 	[353326] = "부패한 껍데기",	-- Decayed Husk
-	--TODO: [353327] = "Decayed Husk",	-- Decayed Husk
+	[353327] = "부패한 껍데기",	-- Decayed Husk
 	[353329] = "페어리 보관함",	-- Faerie Stash
 	[353330] = "페어리 보관함",	-- Faerie Stash
 	[353331] = "페어리 보관함",	-- Faerie Stash
@@ -2839,7 +2839,7 @@ for key,value in pairs({
 	[354111] = "돌숨결 주머니",	-- Stoneborn Satchel
 	[354112] = "돌숨결 주머니",	-- Stoneborn Satchel
 	[354113] = "돌숨결 주머니",	-- Stoneborn Satchel
-	--TODO: [354114] = "Stoneborn Satchel",	-- Stoneborn Satchel
+	[354114] = "돌숨결 주머니",	-- Stoneborn Satchel
 	--TODO: [354115] = "Pugilist's Prize",	-- Pugilist's Prize
 	[354116] = "싸움꾼의 전리품",	-- Pugilist's Prize
 	[354121] = "싸움꾼의 전리품",	-- Pugilist's Prize
