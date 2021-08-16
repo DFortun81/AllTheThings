@@ -3975,8 +3975,6 @@ _.HiddenQuestTriggers = {
 		q(62404),	-- using Ashen Ink (Crypt Couture)
 		q(62408),	-- using Jagged Bonesaw (Crypt Couture)
 		q(62405),	-- using Mucosal Pigment (Crypt Couture)
-		q(63394),	-- When completing 60237 (Old Stomping Grounds) and receiving Stitched Wraith's Armguards (182497)
-		q(63395),	-- When completing 61996 (Say The Magic Owrds) and receiving Stitched Wraith's Breeches (182494)
 		q(59266),	-- triggered when i picked up the last eye for "Prying Eyes"
 		q(60166),	-- Triggered after raising portcullis to access Miru Soulblossom in Etheric Vault
 		q(63428),	-- After Necro intro skip (A Hero of Great Renown)

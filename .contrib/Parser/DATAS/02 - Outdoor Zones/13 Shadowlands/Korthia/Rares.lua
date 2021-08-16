@@ -108,8 +108,10 @@ _.Zones =
 						i(187181, {	-- Small Corpsefly Egg
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord
 							["g"] = {
-								i(186489, {	-- Lord of the Corpseflies (MOUNT!)
-									["customCollect"] = "SL_COV_NEC",	-- Necrolord
+								i(187181, {	-- Hatching Corpsefly Egg
+									i(186489, {	-- Lord of the Corpseflies (MOUNT!)
+										["customCollect"] = "SL_COV_NEC",	-- Necrolord
+									}),
 								}),
 							},
 						}),

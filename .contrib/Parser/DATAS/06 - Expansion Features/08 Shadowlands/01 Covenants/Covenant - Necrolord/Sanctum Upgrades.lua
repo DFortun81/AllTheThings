@@ -864,7 +864,13 @@ _.HiddenQuestTriggers = {
 	q(60780),	-- triggered the first time i channeled anima to the daily quest hub
 	q(63397),	-- Triggered when Completing weeklies with abominations/receiving Sitched set gear
 	q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
+
+-- Stitched Wraith Abom Set
+	q(63392),	-- Stranglers (182493)
+	q(63394),	-- Armguards (182497)
+	q(63395),	-- Breeches (182494)
 };
+
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(58377),	-- Abomination Part: Magnificent Skin
