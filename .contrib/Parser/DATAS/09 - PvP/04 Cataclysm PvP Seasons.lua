@@ -2322,9 +2322,15 @@ _.PVP =
 					i(70526),	-- Vicious Gladiator's Bindings of Prowess
 					i(70529),	-- Vicious Gladiator's Bracers of Meditation
 					i(70530),	-- Vicious Gladiator's Bracers of Prowess
-					i(70547),	-- Vicious Gladiator's Cuffs of Accuracy
-					i(70548),	-- Vicious Gladiator's Cuffs of Meditation
-					i(70549),	-- Vicious Gladiator's Cuffs of Prowess
+					i(70547, {	-- Vicious Gladiator's Cuffs of Accuracy
+						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Mage Ensemble.",
+					}),
+					i(70548, {	-- Vicious Gladiator's Cuffs of Meditation
+						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Priest Ensemble.",
+					}),
+					i(70549, {	-- Vicious Gladiator's Cuffs of Prowess
+						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Warlock Ensemble.",
+					}),
 					i(70669),	-- Vicious Gladiator's Wristguards of Accuracy
 					i(70670),	-- Vicious Gladiator's Wristguards of Alacrity
 				}),
@@ -2333,9 +2339,15 @@ _.PVP =
 					i(70524),	-- Vicious Gladiator's Belt of Meditation
 					i(70540),	-- Vicious Gladiator's Clasp of Cruelty
 					i(70541),	-- Vicious Gladiator's Clasp of Meditation
-					i(70544),	-- Vicious Gladiator's Cord of Accuracy
-					i(70545),	-- Vicious Gladiator's Cord of Cruelty
-					i(70546),	-- Vicious Gladiator's Cord of Meditation
+					i(70544, {	-- Vicious Gladiator's Cord of Accuracy
+						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Warlock Ensemble.",
+					}),
+					i(70545, {	-- Vicious Gladiator's Cord of Cruelty
+						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Mage Ensemble.",
+					}),
+					i(70546, {	-- Vicious Gladiator's Cord of Meditation
+						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Priest Ensemble.",
+					}),
 					i(70573),	-- Vicious Gladiator's Girdle of Cruelty
 					i(70574),	-- Vicious Gladiator's Girdle of Prowess
 					i(70595),	-- Vicious Gladiator's Links of Accuracy
@@ -2356,9 +2368,15 @@ _.PVP =
 					i(70640),	-- Vicious Gladiator's Sabatons of Alacrity
 					i(70641),	-- Vicious Gladiator's Sabatons of Cruelty
 					i(70642),	-- Vicious Gladiator's Sabatons of Meditation
-					i(70660),	-- Vicious Gladiator's Treads of Alacrity
-					i(70661),	-- Vicious Gladiator's Treads of Cruelty
-					i(70662),	-- Vicious Gladiator's Treads of Meditation
+					i(70660, {	-- Vicious Gladiator's Treads of Alacrity
+						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Warlock Ensemble.",
+					}),
+					i(70661, {	-- Vicious Gladiator's Treads of Cruelty
+						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Mage Ensemble.",
+					}),
+					i(70662, {	-- Vicious Gladiator's Treads of Meditation
+						["description"] = "This item is only obtainable via the Bloodthirsty Gladiator Priest Ensemble.",
+					}),
 					i(70667),	-- Vicious Gladiator's Warboots of Alacrity
 					i(70668),	-- Vicious Gladiator's Warboots of Cruelty
 				}),
