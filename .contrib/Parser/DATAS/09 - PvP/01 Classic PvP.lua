@@ -387,371 +387,1061 @@ _.PVP =
 				}),
 			},
 		}),
-		n(-663, {	-- Classic Alliance Honor System
-			["description"] = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.|r",
+		n(-663, {	-- Classic Honor System
+			["description"] = "These items require the Legionnaire/Knight-Captain rank from Classic or higher to collect.|r",
 			["g"] = {
 				n(FACTION_HEADER_ALLIANCE, {
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						-- Alliance Cloth & Leather
-						i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
-						i(77692),	-- Replica Field Marshal's Satin Mantle
-						i(77710),	-- Replica Field Marshal's Coronal
-						i(77709),	-- Replica Field Marshal's Dreadweave Shoulders
-						i(77701),	-- Replica Field Marshal's Leather Chestpiece
-						i(77700),	-- Replica Field Marshal's Leather Mask
-						i(77697),	-- Replica Field Marshal's Leather Epaulets
-						i(77695),	-- Replica Field Marshal's Headdress
-						i(77694),	-- Replica Field Marshal's Satin Vestments
-						i(77712),	-- Replica Field Marshal's Dreadweave Robe
-						i(77682),	-- Replica Field Marshal's Coronet
-						i(77679),	-- Replica Field Marshal's Silk Spaulders
-						i(77678),	-- Replica Field Marshal's Silk Vestments
-						i(77671),	-- Replica Field Marshal's Dragonhide Helmet
-						i(77667),	-- Replica Field Marshal's Dragonhide Spaulders
-						i(77683),	-- Replica Marshal's Silk Footwraps
-						i(77711),	-- Replica Marshal's Dreadweave Leggings
-						i(77708),	-- Replica Marshal's Dreadweave Boots
-						i(77742),	-- Replica Lieutenant Commander's Dragonhide Headguard
-						i(77713),	-- Replica Marshal's Dreadweave Gloves
-						i(77666),	-- Replica Marshal's Dragonhide Gauntlets
-						i(77784),	-- Replica Lieutenant Commander's Silk Cowl
-						i(77668),	-- Replica Marshal's Dragonhide Legguards
-						i(77669),	-- Replica Marshal's Dragonhide Boots
-						i(77850),	-- Replica Lieutenant Commander's Dreadweave Spaulders
-						i(77844),	-- Replica Lieutenant Commander's Dreadweave Cowl
-						i(77820),	-- Replica Lieutenant Commander's Leather Helm
-						i(77699),	-- Replica Marshal's Leather Footguards
-						i(77680),	-- Replica Marshal's Silk Leggings
-						i(77681),	-- Replica Marshal's Silk Gloves
-						i(77800),	-- Replica Lieutenant Commander's Satin Hood
-						i(77748),	-- Replica Lieutenant Commander's Dragonhide Shoulders
-						i(77690),	-- Replica Marshal's Satin Sandals
-						i(77691),	-- Replica Marshal's Satin Pants
-						i(77801),	-- Replica Lieutenant Commander's Satin Mantle
-						i(77693),	-- Replica Marshal's Satin Gloves
-						i(77698),	-- Replica Marshal's Leather Handgrips
-						i(77813),	-- Replica Lieutenant Commander's Leather Shoulders
-						i(77696),	-- Replica Marshal's Leather Leggings
-						i(77812),	-- Replica Knight-Captain's Leather Legguards
-						i(77811),	-- Replica Knight-Captain's Leather Chestpiece
-						i(77799),	-- Replica Knight-Captain's Satin Tunic
-						i(77797),	-- Replica Knight-Captain's Satin Legguards
-						i(77785),	-- Replica Knight-Captain's Silk Tunic
-						i(77745),	-- Replica Knight-Captain's Dragonhide Leggings
-						i(77847),	-- Replica Knight-Captain's Dreadweave Legguards
-						i(77848),	-- Replica Knight-Captain's Dreadweave Tunic
-						i(77777),	-- Replica Knight-Captain's Silk Legguards
-						i(77720),	-- Replica Knight-Lieutenant's Dragonhide Grips
-						i(120993),	-- Replica Knight-Lieutenant's Leather Clasp
-						i(120992),	-- Replica Knight-Lieutenant's Dragonhide Belt
-						i(120996),	-- Replica Knight-Lieutenant's Dreadweave Wrap
-						i(120995),	-- Replica Knight-Lieutenant's Satin Belt
-						i(120994),	-- Replica Knight-Lieutenant's Silk Cinch
-						i(77733),	-- Replica Knight-Lieutenant's Dreadweave Handwraps
-						i(77732),	-- Replica Knight-Lieutenant's Dreadweave Walkers
-						i(77731),	-- Replica Knight-Lieutenant's Leather Grips
-						i(77730),	-- Replica Knight-Lieutenant's Leather Walkers
-						i(77729),	-- Replica Knight-Lieutenant's Satin Walkers
-						i(77728),	-- Replica Knight-Lieutenant's Satin Handwraps
-						i(77725),	-- Replica Knight-Lieutenant's Silk Handwraps
-						i(77724),	-- Replica Knight-Lieutenant's Silk Walkers
-						i(77721),	-- Replica Knight-Lieutenant's Dragonhide Treads
-						i(77599),	-- Replica Knight-Lieutenant's Dragonhide Footwraps
-						i(77598),	-- Replica Lieutenant Commander's Dragonhide Epaulets
-						i(77651),	-- Replica Knight-Lieutenant's Dreadweave Boots
-						i(77650),	-- Replica Knight-Lieutenant's Dreadweave Gloves
-						i(77649),	-- Replica Knight-Captain's Dreadweave Leggings
-						i(77648),	-- Replica Knight-Captain's Dreadweave Robe
-						i(77647),	-- Replica Lieutenant Commander's Dreadweave Mantle
-						i(77600),	-- Replica Lieutenant Commander's Dragonhide Shroud
-						i(77639),	-- Replica Sergeant Major's Leather Armsplints
-						i(77638),	-- Replica Knight-Captain's Leather Legguards
-						i(77637),	-- Replica Knight-Lieutenant's Leather Boots
-						i(77636),	-- Replica Lieutenant Commander's Leather Spaulders
-						i(77635),	-- Replica Lieutenant Commander's Leather Veil
-						i(77634),	-- Replica Knight-Lieutenant's Leather Gauntlets
-						i(77633),	-- Replica Knight-Captain's Leather Armor
-						i(77632),	-- Replica Knight-Lieutenant's Satin Boots
-						i(77631),	-- Replica Lieutenant Commander's Satin Amice
-						i(77630),	-- Replica Knight-Captain's Satin Robes
-						i(77652),	-- Replica Lieutenant Commander's Headguard
-						i(77629),	-- Replica Lieutenant Commander's Diadem
-						i(77628),	-- Replica Knight-Captain's Satin Leggings
-						i(77627),	-- Replica Knight-Lieutenant's Satin Gloves
-						i(77620),	-- Replica Sergeant Major's Silk Cuffs
-						i(77619),	-- Replica Lieutenant Commander's Crown
-						i(77618),	-- Replica Knight-Captain's Silk Leggings
-						i(77617),	-- Replica Knight-Lieutenant's Silk Gloves
-						i(77616),	-- Replica Knight-Lieutenant's Silk Boots
-						i(77615),	-- Replica Lieutenant Commander's Silk Spaulders
-						i(77614),	-- Replica Knight-Captain's Silk Raiment
-						i(77601),	-- Replica Knight-Captain's Dragonhide Leggings
-						i(77604),	-- Replica Sergeant Major's Dragonhide Armsplints
-						i(77603),	-- Replica Knight-Lieutenant's Dragonhide Gloves
-						i(77602),	-- Replica Knight-Captain's Dragonhide Tunic
-						i(77605),	-- Replica Sergeant Major's Dragonhide Armsplints
-						i(77640),	-- Replica Sergeant Major's Leather Armsplints
-						i(77787),	-- Replica Sergeant Major's Silk Cuffs
-
-						-- Alliance Mail & Plate
-						i(77718),	-- Replica Field Marshal's Plate Shoulderguards
-						i(77673),	-- Replica Field Marshal's Chain Spaulders
-						i(77714),	-- Replica Field Marshal's Plate Armor
-						i(77707),	-- Replica Field Marshal's Mail Armor
-						i(77705),	-- Replica Field Marshal's Mail Spaulders
-						i(77704),	-- Replica Field Marshal's Mail Helm
-						i(77715),	-- Replica Field Marshal's Plate Helm
-						i(77674),	-- Replica Field Marshal's Chain Breastplate
-						i(77676),	-- Replica Field Marshal's Chain Helm
-						i(77687),	-- Replica Field Marshal's Lamellar Chestplate
-						i(77688),	-- Replica Field Marshal's Lamellar Faceguard
-						i(77689),	-- Replica Field Marshal's Lamellar Pauldrons
-						i(77645),	-- Replica Lieutenant Commander's Mail Pauldrons
-						i(77719),	-- Replica Marshal's Plate Boots
-						i(77763),	-- Replica Lieutenant Commander's Chain Helm
-						i(77703),	-- Replica Marshal's Mail Gauntlets
-						i(77702),	-- Replica Marshal's Mail Boots
-						i(77664),	-- Replica Lieutenant Commander's Lamellar Headguard
-						i(77665),	-- Replica Lieutenant Commander's Lamellar Shoulders
-						i(77672),	-- Replica Marshal's Chain Boots
-						i(77867),	-- Replica Lieutenant Commander's Plate Helmet
-						i(77762),	-- Replica Lieutenant Commander's Chain Shoulders
-						i(77675),	-- Replica Marshal's Chain Legguards
-						i(77706),	-- Replica Marshal's Mail Leggings
-						i(77717),	-- Replica Marshal's Plate Legguards
-						i(77684),	-- Replica Marshal's Lamellar Boots
-						i(77685),	-- Replica Marshal's Lamellar Gloves
-						i(77686),	-- Replica Marshal's Lamellar Legplates
-						i(77677),	-- Replica Marshal's Chain Grips
-						i(77642),	-- Replica Lieutenant Commander's Mail Headguard
-						i(77859),	-- Replica Lieutenant Commander's Plate Shoulders
-						i(77716),	-- Replica Marshal's Plate Gauntlets
-						i(77662),	-- Replica Knight-Captain's Lamellar Breastplate
-						i(77661),	-- Replica Knight-Captain's Lamellar Leggings
-						i(77643),	-- Replica Knight-Captain's Mail Legguards
-						i(77641),	-- Replica Knight-Captain's Mail Hauberk
-						i(77761),	-- Replica Knight-Captain's Chain Hauberk
-						i(77769),	-- Replica Knight-Captain's Chain Legguards
-						i(77858),	-- Replica Knight-Captain's Plate Hauberk
-						i(77864),	-- Replica Knight-Captain's Plate Leggings
-						i(77644),	-- Replica Knight-Lieutenant's Mail Greaves
-						i(120977),	-- Replica Knight-Lieutenant's Plate Waistguard
-						i(77646),	-- Replica Knight-Lieutenant's Mail Vices
-						i(77735),	-- Replica Knight-Lieutenant's Plate Greaves
-						i(77734),	-- Replica Knight-Lieutenant's Plate Gauntlets
-						i(77727),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
-						i(77726),	-- Replica Knight-Lieutenant's Lamellar Sabatons
-						i(77723),	-- Replica Knight-Lieutenant's Chain Greaves
-						i(77722),	-- Replica Knight-Lieutenant's Chain Vices
-						i(120983),	-- Replica Knight-Lieutenant's Chain Belt
-						i(120982),	-- Replica Knight-Lieutenant's Mail Links
-						i(120981),	-- Replica Knight-Lieutenant's Lamellar Girdle
-						i(77625),	-- Replica Knight-Lieutenant's Lamellar Sabatons
-						i(77607),	-- Replica Lieutenant Commander's Chain Pauldrons
-						i(77659),	-- Replica Sergeant Major's Plate Wristguards
-						i(77658),	-- Replica Knight-Lieutenant's Plate Boots
-						i(77657),	-- Replica Lieutenant Commander's Plate Pauldrons
-						i(77656),	-- Replica Lieutenant Commander's Plate Helm
-						i(77655),	-- Replica Knight-Captain's Plate Leggings
-						i(77654),	-- Replica Knight-Captain's Plate Chestguard
-						i(77653),	-- Replica Knight-Lieutenant's Plate Gauntlets
-						i(77626),	-- Replica Knight-Captain's Lamellar Breastplate
-						i(77608),	-- Replica Knight-Captain's Chain Hauberk
-						i(77624),	-- Replica Lieutenant Commander's Lamellar Headguard
-						i(77623),	-- Replica Knight-Captain's Lamellar Leggings
-						i(77622),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
-						i(77621),	-- Replica Lieutenant Commander's Lamellar Shoulders
-						i(77612),	-- Replica Sergeant Major's Chain Armguards
-						i(77613),	-- Replica Sergeant Major's Chain Armguards
-						i(77611),	-- Replica Knight-Captain's Chain Leggings
-						i(77610),	-- Replica Knight-Lieutenant's Chain Gauntlets
-						i(77609),	-- Replica Lieutenant Commander's Chain Helmet
-						i(77606),	-- Replica Knight-Lieutenant's Chain Boots
-						i(77660, {	-- Replica Sergeant Major's Plate Wristguards
-							["description"] = "This item has to be purchased on Alliance as there is no matching Horde Version.",
+						-- Original Classic Gear, only collectable with the original title.
+						n(-319, {	-- Weapons
+							i(18825, {	-- Grand Marshal's Aegis
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18867, {	-- Grand Marshal's Battle Hammer
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18833, {	-- Grand Marshal's Bullseye
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18876, {	-- Grand Marshal's Claymore
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(23455, {	-- Grand Marshal's Demolisher
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18838, {	-- Grand Marshal's Dirk
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18869, {	-- Grand Marshal's Glaive
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18855, {	-- Grand Marshal's Hand Cannon
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18827, {	-- Grand Marshal's Handaxe
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(12584, {	-- Grand Marshal's Longsword
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(23451, {	-- Grand Marshal's Mageblade
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18865, {	-- Grand Marshal's Punisher
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18847, {	-- Grand Marshal's Razor Hand Blade
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18836, {	-- Grand Marshal's Repeater
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18843, {	-- Grand Marshal's Right Hand Blade
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18873, {	-- Grand Marshal's Stave
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18830, {	-- Grand Marshal's Sunderer
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(23456, {	-- Grand Marshal's Swiftblade
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(23452, {	-- Grand Marshal's Tome of Power
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+								["u"] = 14,
+							}),
+							i(23453, {	-- Grand Marshal's Tome of Restoration
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+								["u"] = 14,
+							}),
+							i(23454, {	-- Grand Marshal's Warhammer
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+						}),
+						i(16465, {	-- Field Marshal's Chain Helm
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(17578, {	-- Field Marshal's Coronal
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16441, {	-- Field Marshal's Coronet
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16451, {	-- Field Marshal's Dragonhide Helmet
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(17602, {	-- Field Marshal's Headdress
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16474, {	-- Field Marshal's Lamellar Faceguard
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16455, {	-- Field Marshal's Leather Mask
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(29610, {	-- Field Marshal's Mail Helm
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16478, {	-- Field Marshal's Plate Helm
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23306, {	-- Lieutenant Commander's Chain Helm
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23308, {	-- Lieutenant Commander's Dragonhide Headguard
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23310, {	-- Lieutenant Commander's Dreadweave Cowl
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23276, {	-- Lieutenant Commander's Lamellar Headguard
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23312, {	-- Lieutenant Commander's Leather Helm
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(29598, {	-- Lieutenant Commander's Mail Headguard
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23314, {	-- Lieutenant Commander's Plate Helmet
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23316, {	-- Lieutenant Commander's Satin Hood
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23318, {	-- Lieutenant Commander's Silk Cowl
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						-- Shoulders
+						i(16468, {	-- Field Marshal's Chain Spaulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16449, {	-- Field Marshal's Dragonhide Spaulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(17580, {	-- Field Marshal's Dreadweave Shoulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16476, {	-- Field Marshal's Lamellar Pauldrons
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16457, {	-- Field Marshal's Leather Epaulets
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(29611, {	-- Field Marshal's Mail Spaulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16480, {	-- Field Marshal's Plate Shoulderguards
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(17604, {	-- Field Marshal's Satin Mantle
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16444, {	-- Field Marshal's Silk Spaulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23307, {	-- Lieutenant Commander's Chain Shoulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23309, {	-- Lieutenant Commander's Dragonhide Shoulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23311, {	-- Lieutenant Commander's Dreadweave Spaulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23277, {	-- Lieutenant Commander's Lamellar Shoulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23313, {	-- Lieutenant Commander's Leather Shoulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(29599, {	-- Lieutenant Commander's Mail Pauldrons
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23315, {	-- Lieutenant Commander's Plate Shoulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23317, {	-- Lieutenant Commander's Satin Mantle
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23319, {	-- Lieutenant Commander's Silk Mantle
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						-- Back
+						i(16342, {	-- Sergeant's Cape
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						i(18440, {	-- Sergeant's Cape
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						i(18441, {	-- Sergeant's Cape
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						i(28379, {	-- Sergeant's Heavy Cape
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						i(28380, {	-- Sergeant's Heavy Cloak
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						-- Chest
+						i(16466, {	-- Field Marshal's Chain Breastplate
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16452, {	-- Field Marshal's Dragonhide Breastplate
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(17581, {	-- Field Marshal's Dreadweave Robe
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16473, {	-- Field Marshal's Lamellar Chestplate
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16453, {	-- Field Marshal's Leather Chestpiece
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(29609, {	-- Field Marshal's Mail Armor
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16477, {	-- Field Marshal's Plate Armor
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16443, {	-- Field Marshal's Silk Vestments
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(17605, {	-- Field Marshal's Satin Vestments
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23292, {	-- Knight-Captain's Chain Hauberk
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23294, {	-- Knight-Captain's Dragonhide Chestpiece
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23297, {	-- Knight-Captain's Dreadweave Tunic
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23272, {	-- Knight-Captain's Lamellar Breastplate
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23298, {	-- Knight-Captain's Leather Chestpiece
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(29596, {	-- Knight-Captain's Mail Hauberk
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23300, {	-- Knight-Captain's Plate Hauberk
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23303, {	-- Knight-Captain's Satin Tunic
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23305, {	-- Knight-Captain's Silk Tunic
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						-- Wrist
+						i(18448, {	-- Sergeant Major's Chain Armguards
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						i(18449, {	-- Sergeant Major's Chain Armguards
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						i(18454, {	-- Sergeant Major's Dragonhide Armsplints
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						i(18455, {	-- Sergeant Major's Dragonhide Armsplints
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						i(18452, {	-- Sergeant Major's Leather Armsplints
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						i(18453, {	-- Sergeant Major's Leather Armsplints
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						i(18445, {	-- Sergeant Major's Plate Wristguards
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						i(18447, {	-- Sergeant Major's Plate Wristguards
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						i(18456, {	-- Sergeant Major's Silk Cuffs
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						i(18457, {	-- Sergeant Major's Silk Cuffs
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+							["u"] = 14,
+						}),
+						-- Hands
+						i(23279, {	-- Knight-Lieutenant's Chain Vices
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23280, {	-- Knight-Lieutenant's Dragonhide Grips
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23282, {	-- Knight-Lieutenant's Dreadweave Handwraps
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23274, {	-- Knight-Lieutenant's Lamellar Gauntlets
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23284, {	-- Knight-Lieutenant's Leather Grips
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(29595, {	-- Knight-Lieutenant's Mail Vices
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23286, {	-- Knight-Lieutenant's Plate Gauntlets
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23288, {	-- Knight-Lieutenant's Satin Handwraps
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23290, {	-- Knight-Lieutenant's Silk Handwraps
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16463, {	-- Marshal's Chain Grips
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16448, {	-- Marshal's Dragonhide Gauntlets
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(17584, {	-- Marshal's Dreadweave Gloves
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16471, {	-- Marshal's Lamellar Gloves
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16454, {	-- Marshal's Leather Handgrips
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(29607, {	-- Marshal's Mail Gauntlets
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16484, {	-- Marshal's Plate Gauntlets
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(17608, {	-- Marshal's Satin Gloves
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16440, {	-- Marshal's Silk Gloves
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						-- Legs
+						i(23293, {	-- Knight-Captain's Chain Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23295, {	-- Knight-Captain's Dragonhide Leggings
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23296, {	-- Knight-Captain's Dreadweave Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23273, {	-- Knight-Captain's Lamellar Leggings
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23299, {	-- Knight-Captain's Leather Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(29597, {	-- Knight-Captain's Mail Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23301, {	-- Knight-Captain's Plate Leggings
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23302, {	-- Knight-Captain's Satin Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23304, {	-- Knight-Captain's Silk Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16467, {	-- Marshal's Chain Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16450, {	-- Marshal's Dragonhide Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(17579, {	-- Marshal's Dreadweave Leggings
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16475, {	-- Marshal's Lamellar Legplates
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16456, {	-- Marshal's Leather Leggings
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(29608, {	-- Marshal's Mail Leggings
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16479, {	-- Marshal's Plate Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(17603, {	-- Marshal's Satin Pants
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16442, {	-- Marshal's Silk Leggings
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+							["u"] = 14,
+						}),
+						-- Feet
+						i(23278, {	-- Knight-Lieutenant's Chain Greaves
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23281, {	-- Knight-Lieutenant's Dragonhide Treads
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23283, {	-- Knight-Lieutenant's Dreadweave Walkers
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23275, {	-- Knight-Lieutenant's Lamellar Sabatons
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23285, {	-- Knight-Lieutenant's Leather Walkers
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(29594, {	-- Knight-Lieutenant's Mail Greaves
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23287, {	-- Knight-Lieutenant's Plate Greaves
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23289, {	-- Knight-Lieutenant's Satin Walkers
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(23291, {	-- Knight-Lieutenant's Silk Walkers
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16462, {	-- Marshal's Chain Boots
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16459, {	-- Marshal's Dragonhide Boots
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(17583, {	-- Marshal's Dreadweave Boots
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16472, {	-- Marshal's Lamellar Boots
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16446, {	-- Marshal's Leather Footguards
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(29606, {	-- Marshal's Mail Boots
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16483, {	-- Marshal's Plate Boots
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(17607, {	-- Marshal's Satin Sandals
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
+						}),
+						i(16437, {	-- Marshal's Silk Footwraps
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["u"] = 14,
 						}),
 					},
 				}),
 				n(FACTION_HEADER_HORDE, {
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						-- Horde cloth + leather
-						i(77900),	-- Replica Warlord's Satin Cowl
-						i(77874),	-- Replica Warlord's Dragonhide Helmet
-						i(77919),	-- Replica Warlord's Dreadweave Robe
-						i(77917),	-- Replica Warlord's Dreadweave Hood
-						i(77909),	-- Replica Warlord's Leather Helm
-						i(77908),	-- Replica Warlord's Leather Breastplate
-						i(77907),	-- Replica Warlord's Leather Spaulders
-						i(77901),	-- Replica Warlord's Satin Robes
-						i(77920),	-- Replica Warlord's Dreadweave Mantle
-						i(77899),	-- Replica Warlord's Satin Mantle
-						i(77890),	-- Replica Warlord's Silk Amice
-						i(77889),	-- Replica Warlord's Silk Raiment
-						i(77886),	-- Replica Warlord's Silk Cowl
-						i(77878),	-- Replica Warlord's Dragonhide Epaulets
-						i(77876),	-- Replica Warlord's Dragonhide Hauberk
-						i(77921),	-- Replica General's Dreadweave Pants
-						i(77903),	-- Replica General's Satin Boots
-						i(77902),	-- Replica General's Satin Leggings
-						i(77916),	-- Replica General's Dreadweave Gloves
-						i(77752),	-- Replica Champion's Dragonhide Headguard
-						i(77746),	-- Replica Champion's Dragonhide Shoulders
-						i(77796),	-- Replica Champion's Satin Mantle
-						i(77918),	-- Replica General's Dreadweave Boots
-						i(77898),	-- Replica General's Satin Gloves
-						i(77891),	-- Replica General's Silk Trousers
-						i(77778),	-- Replica Champion's Silk Cowl
-						i(77779),	-- Replica Champion's Silk Mantle
-						i(77888),	-- Replica General's Silk Boots
-						i(77887),	-- Replica General's Silk Handguards
-						i(77815),	-- Replica Champion's Leather Helm
-						i(77795),	-- Replica Champion's Satin Hood
-						i(77819),	-- Replica Champion's Leather Shoulders
-						i(77879),	-- Replica General's Dragonhide Gloves
-						i(77906),	-- Replica General's Leather Legguards
-						i(77877),	-- Replica General's Dragonhide Leggings
-						i(77905),	-- Replica General's Leather Mitts
-						i(77875),	-- Replica General's Dragonhide Boots
-						i(77904),	-- Replica General's Leather Treads
-						i(77845),	-- Replica Champion's Dreadweave Cowl
-						i(77846),	-- Replica Champion's Dreadweave Spaulders
-						i(77781),	-- Replica Legionnaire's Silk Tunic
-						i(77782),	-- Replica Legionnaire's Silk Legguards
-						i(77798),	-- Replica Legionnaire's Satin Legguards
-						i(77802),	-- Replica Legionnaire's Satin Tunic
-						i(77818),	-- Replica Legionnaire's Leather Legguards
-						i(77749),	-- Replica Legionnaire's Dragonhide Chestpiece
-						i(77852),	-- Replica Legionnaire's Dreadweave Legguards
-						i(77744),	-- Replica Legionnaire's Dragonhide Leggings
-						i(77821),	-- Replica Legionnaire's Leather Chestpiece
-						i(77851),	-- Replica Legionnaire's Dreadweave Tunic
-						i(77750),	-- Replica Blood Guard's Dragonhide Grips
-						i(77803),	-- Replica Blood Guard's Satin Handwraps
-						i(77804),	-- Replica Blood Guard's Satin Walkers
-						i(120984),	-- Replica Blood Guard's Dragonhide Belt
-						i(120988),	-- Replica Blood Guard's Satin Waistwrap
-						i(120987),	-- Replica Blood Guard's Silk Cinch
-						i(120986),	-- Replica Blood Guard's Dreadweave Wrap
-						i(77747),	-- Replica Blood Guard's Dragonhide Treads
-						i(77783),	-- Replica Blood Guard's Silk Handwraps
-						i(77773),	-- Replica Blood Guard's Silk Walkers
-						i(77843),	-- Replica Blood Guard's Dreadweave Walkers
-						i(120985),	-- Replica Blood Guard's Leather Clasp
-						i(77816),	-- Replica Blood Guard's Leather Walkers
-						i(77849),	-- Replica Blood Guard's Dreadweave Handwraps
-						i(77817),	-- Replica Blood Guard's Leather Grips
-						i(77791),	-- Replica Blood Guard's Satin Gloves
-						i(77842),	-- Replica Champion's Dreadweave Shoulders
-						i(77840),	-- Replica Blood Guard's Dreadweave Gloves
-						i(77839),	-- Replica Blood Guard's Dreadweave Boots
-						i(77838),	-- Replica Legionnaire's Dreadweave Leggings
-						i(77837),	-- Replica Champion's Dreadweave Hood
-						i(77738),	-- Replica Legionnaire's Dragonhide Breastplate
-						i(77737),	-- Replica Champion's Dragonhide Spaulders
-						i(77814),	-- Replica First Sergeant's Leather Armguards
-						i(77810),	-- Replica Blood Guard's Leather Vices
-						i(77809),	-- Replica Blood Guard's Leather Treads
-						i(77808),	-- Replica Legionnaire's Leather Hauberk
-						i(77807),	-- Replica Legionnaire's Leather Leggings
-						i(77806),	-- Replica Champion's Leather Mantle
-						i(77805),	-- Replica Champion's Leather Headguard
-						i(77794),	-- Replica Legionnaire's Satin Trousers
-						i(77793),	-- Replica Legionnaire's Satin Vestments
-						i(77792),	-- Replica Champion's Satin Cowl
-						i(77841),	-- Replica Legionnaire's Dreadweave Robe
-						i(77790),	-- Replica Blood Guard's Satin Boots
-						i(77789),	-- Replica Champion's Satin Shoulderpads
-						i(77739),	-- Replica Champion's Dragonhide Helm
-						i(77786),	-- Replica First Sergeant's Silk Cuffs
-						i(77776),	-- Replica Champion's Silk Hood
-						i(77775),	-- Replica Blood Guard's Silk Gloves
-						i(77774),	-- Replica Legionnaire's Silk Pants
-						i(77772),	-- Replica Champion's Silk Shoulderpads
-						i(77771),	-- Replica Blood Guard's Silk Footwraps
-						i(77770),	-- Replica Legionnaire's Silk Robes
-						i(77740),	-- Replica Legionnaire's Dragonhide Trousers
-						i(77743),	-- Replica First Sergeant's Dragonhide Armguards
-						i(77741),	-- Replica Blood Guard's Dragonhide Gauntlets
-						i(77736),	-- Replica Blood Guard's Dragonhide Boots
-						i(77753),	-- Replica First Sergeant's Dragonhide Armguards
-						i(77788),	-- Replica First Sergeant's Silk Cuffs
-						i(77822),	-- Replica First Sergeant's Leather Armguards
-
-						-- Horde mail + plate
-						i(77897),	-- Replica Warlord's Lamellar Pauldrons
-						i(77880),	-- Replica Warlord's Chain Shoulders
-						i(77923),	-- Replica Warlord's Plate Shoulders
-						i(77914),	-- Replica Warlord's Mail Armor
-						i(77913),	-- Replica Warlord's Mail Helm
-						i(77910),	-- Replica Warlord's Mail Spaulders
-						i(77924),	-- Replica Warlord's Plate Armor
-						i(77927),	-- Replica Warlord's Plate Headpiece
-						i(77894),	-- Replica Warlord's Lamellar Faceguard
-						i(77892),	-- Replica Warlord's Lamellar Chestplate
-						i(77883),	-- Replica Warlord's Chain Helmet
-						i(77882),	-- Replica Warlord's Chain Chestpiece
-						i(77896),	-- Replica General's Lamellar Legplates
-						i(77911),	-- Replica General's Mail Boots
-						i(77926),	-- Replica General's Plate Leggings
-						i(77922),	-- Replica General's Plate Boots
-						i(77765),	-- Replica Champion's Chain Helm
-						i(77831),	-- Replica Champion's Mail Pauldrons
-						i(77832),	-- Replica Champion's Mail Headguard
-						i(77895),	-- Replica General's Lamellar Gloves
-						i(77766),	-- Replica Champion's Chain Shoulders
-						i(77893),	-- Replica General's Lamellar Boots
-						i(77915),	-- Replica General's Mail Leggings
-						i(77885),	-- Replica General's Chain Gloves
-						i(77884),	-- Replica General's Chain Boots
-						i(77925),	-- Replica General's Plate Gauntlets
-						i(77871),	-- Replica Champion's Lamellar Headguard
-						i(77881),	-- Replica General's Chain Legguards
-						i(77912),	-- Replica General's Mail Gauntlets
-						i(77872),	-- Replica Champion's Lamellar Shoulders
-						i(77868),	-- Replica Champion's Plate Shoulders
-						i(77869),	-- Replica Champion's Plate Helm
-						i(77866),	-- Replica Legionnaire's Plate Leggings
-						i(77829),	-- Replica Legionnaire's Mail Legguards
-						i(77873),	-- Replica Legionnaire's Lamellar Breastplate
-						i(77865),	-- Replica Legionnaire's Plate Hauberk
-						i(77834),	-- Replica Legionnaire's Mail Hauberk
-						i(77663),	-- Replica Legionnaire's Lamellar Leggings
-						i(77760),	-- Replica Legionnaire's Chain Legguards
-						i(77768),	-- Replica Legionnaire's Chain Hauberk
-						i(77764),	-- Replica Blood Guard's Chain Vices
-						i(120991),	-- Replica Blood Guard's Chain Belt
-						i(77833),	-- Replica Blood Guard's Mail Vices
-						i(77830),	-- Replica Blood Guard's Mail Greaves
-						i(77863),	-- Replica Blood Guard's Plate Gauntlets
-						i(77767),	-- Replica Blood Guard's Chain Greaves
-						i(77862),	-- Replica Blood Guard's Plate Greaves
-						i(77928),	-- Replica Blood Guard's Lamellar Sabatons
-						i(77929),	-- Replica Blood Guard's Lamellar Gauntlets
-						i(120976),	-- Replica Blood Guard's Plate Waistguard
-						i(120980),	-- Replica Blood Guard's Lamellar Girdle
-						i(120990),	-- Replica Blood Guard's Mail Links
-						i(77861),	-- Replica First Sergeant's Plate Bracers
-						i(77828),	-- Replica Blood Guard's Mail Walkers
-						i(77827),	-- Replica Champion's Mail Helm
-						i(77826),	-- Replica Champion's Mail Shoulders
-						i(77860),	-- Replica Blood Guard's Plate Gloves
-						i(77824),	-- Replica Legionnaire's Mail Chestpiece
-						i(77823),	-- Replica Blood Guard's Mail Grips
-						i(77857),	-- Replica Legionnaire's Plate Legguards
-						i(77856),	-- Replica Champion's Plate Pauldrons
-						i(77759),	-- Replica Champion's Chain Headguard
-						i(77758),	-- Replica Legionnaire's Chain Leggings
-						i(77757),	-- Replica Legionnaire's Chain Breastplate
-						i(77756),	-- Replica Blood Guard's Chain Gauntlets
-						i(77755),	-- Replica Blood Guard's Chain Boots
-						i(77855),	-- Replica Champion's Plate Headguard
-						i(77854),	-- Replica Legionnaire's Plate Armor
-						i(77853),	-- Replica Blood Guard's Plate Boots
-						i(77835),	-- Replica First Sergeant's Mail Wristguards
-						i(77754),	-- Replica Champion's Chain Pauldrons
-						i(77825),	-- Replica Legionnaire's Mail Leggings
+						n(-319, {	-- Weapons
+							i(18831, {	-- High Warlord's Battle Axe
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(23464, {	-- High Warlord's Battle Mace
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(16345, {	-- High Warlord's Blade
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18866, {	-- High Warlord's Bludgeon
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18828, {	-- High Warlord's Cleaver
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18837, {	-- High Warlord's Crossbow
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(23465, {	-- High Warlord's Destroyer
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18877, {	-- High Warlord's Greatsword
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18871, {	-- High Warlord's Pig Sticker
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18868, {	-- High Warlord's Pulverizer
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(23467, {	-- High Warlord's Quickblade
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18835, {	-- High Warlord's Recurve
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18840, {	-- High Warlord's Razor
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18848, {	-- High Warlord's Razor Claw
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18844, {	-- High Warlord's Right Claw
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18826, {	-- High Warlord's Shield Wall
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+								["u"] = 14,
+							}),
+							i(23466, {	-- High Warlord's Spellblade
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18860, {	-- High Warlord's Street Sweeper
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+							i(23468, {	-- High Warlord's Tome of Destruction
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+								["u"] = 14,
+							}),
+							i(23469, {	-- High Warlord's Tome of Mending
+								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+								["u"] = 14,
+							}),
+							i(18874, {	-- High Warlord's War Staff
+								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
+								["u"] = 14,
+							}),
+						}),
+						i(28377, {	-- Sergeant's Heavy Cloak
+							["u"] = 14,
+						}),
+						i(28378, {	-- Sergeant's Heavy Cape
+							["u"] = 14,
+						}),
+						i(16486, {	-- First Sergeant's Silk Cuffs
+							["u"] = 14,
+						}),
+						i(16497, {	-- First Sergeant's Leather Armguards
+							["u"] = 14,
+						}),
+						i(16532, {	-- First Sergeant's Mail Wristguards
+							["u"] = 14,
+						}),
+						i(16533, {	-- Warlord's Silk Cowl
+							["u"] = 14,
+						}),
+						i(16534, {	-- General's Silk Trousers
+							["u"] = 14,
+						}),
+						i(16535, {	-- Warlord's Silk Raiment
+							["u"] = 14,
+						}),
+						i(16536, {	-- Warlord's Silk Amice
+							["u"] = 14,
+						}),
+						i(16539, {	-- General's Silk Boots
+							["u"] = 14,
+						}),
+						i(16540, {	-- General's Silk Handguards
+							["u"] = 14,
+						}),
+						i(16541, {	-- Warlord's Plate Armor
+							["u"] = 14,
+						}),
+						i(16542, {	-- Warlord's Plate Headpiece
+							["u"] = 14,
+						}),
+						i(16543, {	-- General's Plate Leggings
+							["u"] = 14,
+						}),
+						i(16544, {	-- Warlord's Plate Shoulders
+							["u"] = 14,
+						}),
+						i(16545, {	-- General's Plate Boots
+							["u"] = 14,
+						}),
+						i(16548, {	-- General's Plate Gauntlets
+							["u"] = 14,
+						}),
+						i(16549, {	-- Warlord's Dragonhide Hauberk
+							["u"] = 14,
+						}),
+						i(16550, {	-- Warlord's Dragonhide Helmet
+							["u"] = 14,
+						}),
+						i(16551, {	-- Warlord's Dragonhide Epaulets
+							["u"] = 14,
+						}),
+						i(16552, {	-- General's Dragonhide Leggings
+							["u"] = 14,
+						}),
+						i(16554, {	-- General's Dragonhide Boots
+							["u"] = 14,
+						}),
+						i(16555, {	-- General's Dragonhide Gloves
+							["u"] = 14,
+						}),
+						i(16558, {	-- General's Leather Treads
+							["u"] = 14,
+						}),
+						i(16560, {	-- General's Leather Mitts
+							["u"] = 14,
+						}),
+						i(16561, {	-- Warlord's Leather Helm
+							["u"] = 14,
+						}),
+						i(16562, {	-- Warlord's Leather Spaulders
+							["u"] = 14,
+						}),
+						i(16563, {	-- Warlord's Leather Breastplate
+							["u"] = 14,
+						}),
+						i(16564, {	-- General's Leather Legguards
+							["u"] = 14,
+						}),
+						i(16565, {	-- Warlord's Chain Chestpiece
+							["u"] = 14,
+						}),
+						i(16566, {	-- Warlord's Chain Helmet
+							["u"] = 14,
+						}),
+						i(16567, {	-- General's Chain Legguards
+							["u"] = 14,
+						}),
+						i(16568, {	-- Warlord's Chain Shoulders
+							["u"] = 14,
+						}),
+						i(16569, {	-- General's Chain Boots
+							["u"] = 14,
+						}),
+						i(16571, {	-- General's Chain Gloves
+							["u"] = 14,
+						}),
+						i(16573, {	-- General's Mail Boots
+							["u"] = 14,
+						}),
+						i(16574, {	-- General's Mail Gauntlets
+							["u"] = 14,
+						}),
+						i(16577, {	-- Warlord's Mail Armor
+							["u"] = 14,
+						}),
+						i(16578, {	-- Warlord's Mail Helm
+							["u"] = 14,
+						}),
+						i(16579, {	-- General's Mail Leggings
+							["u"] = 14,
+						}),
+						i(16580, {	-- Warlord's Mail Spaulders
+							["u"] = 14,
+						}),
+						i(17586, {	-- General's Dreadweave Boots
+							["u"] = 14,
+						}),
+						i(17588, {	-- General's Dreadweave Gloves
+							["u"] = 14,
+						}),
+						i(17590, {	-- Warlord's Dreadweave Mantle
+							["u"] = 14,
+						}),
+						i(17591, {	-- Warlord's Dreadweave Hood
+							["u"] = 14,
+						}),
+						i(17592, {	-- Warlord's Dreadweave Robe
+							["u"] = 14,
+						}),
+						i(17593, {	-- General's Dreadweave Pants
+							["u"] = 14,
+						}),
+						i(17618, {	-- General's Satin Boots
+							["u"] = 14,
+						}),
+						i(17620, {	-- General's Satin Gloves
+							["u"] = 14,
+						}),
+						i(17622, {	-- Warlord's Satin Mantle
+							["u"] = 14,
+						}),
+						i(17623, {	-- Warlord's Satin Cowl
+							["u"] = 14,
+						}),
+						i(17624, {	-- Warlord's Satin Robes
+							["u"] = 14,
+						}),
+						i(17625, {	-- General's Satin Leggings
+							["u"] = 14,
+						}),
+						i(18429, {	-- First Sergeant's Plate Bracers
+							["u"] = 14,
+						}),
+						i(18434, {	-- First Sergeant's Dragonhide Armguards
+							["u"] = 14,
+						}),
+						i(18461, {	-- Sergeant's Cloak
+							["u"] = 14,
+						}),
+						i(22843, {	-- Blood Guard's Chain Greaves
+							["u"] = 14,
+						}),
+						i(22852, {	-- Blood Guard's Dragonhide Treads
+							["u"] = 14,
+						}),
+						i(22855, {	-- Blood Guard's Dreadweave Walkers
+							["u"] = 14,
+						}),
+						i(22856, {	-- Blood Guard's Leather Walkers
+							["u"] = 14,
+						}),
+						i(22857, {	-- Blood Guard's Mail Greaves
+							["u"] = 14,
+						}),
+						i(22858, {	-- Blood Guard's Plate Greaves
+							["u"] = 14,
+						}),
+						i(22859, {	-- Blood Guard's Satin Walkers
+							["u"] = 14,
+						}),
+						i(22860, {	-- Blood Guard's Silk Walkers
+							["u"] = 14,
+						}),
+						i(22862, {	-- Blood Guard's Chain Vices
+							["u"] = 14,
+						}),
+						i(22863, {	-- Blood Guard's Dragonhide Grips
+							["u"] = 14,
+						}),
+						i(22864, {	-- Blood Guard's Leather Grips
+							["u"] = 14,
+						}),
+						i(22852, {	-- Blood Guard's Leather Treads
+							["u"] = 14,
+						}),
+						i(22865, {	-- Blood Guard's Dreadweave Handwraps
+							["u"] = 14,
+						}),
+						i(22867, {	-- Blood Guard's Mail Vices
+							["u"] = 14,
+						}),
+						i(22868, {	-- Blood Guard's Plate Gauntlets
+							["u"] = 14,
+						}),
+						i(22869, {	-- Blood Guard's Satin Handwraps
+							["u"] = 14,
+						}),
+						i(22870, {	-- Blood Guard's Silk Handwraps
+							["u"] = 14,
+						}),
+						i(22872, {	-- Legionnaire's Plate Hauberk
+							["u"] = 14,
+						}),
+						i(22873, {	-- Legionnaire's Plate Leggings
+							["u"] = 14,
+						}),
+						i(22874, {	-- Legionnaire's Chain Hauberk
+							["u"] = 14,
+						}),
+						i(22875, {	-- Legionnaire's Chain Legguards
+							["u"] = 14,
+						}),
+						i(22876, {	-- Legionnaire's Mail Hauberk
+							["u"] = 14,
+						}),
+						i(22877, {	-- Legionnaire's Dragonhide Chestpiece
+							["u"] = 14,
+						}),
+						i(22878, {	-- Legionnaire's Dragonhide Leggings
+							["u"] = 14,
+						}),
+						i(22879, {	-- Legionnaire's Leather Chestpiece
+							["u"] = 14,
+						}),
+						i(22880, {	-- Legionnaire's Leather Legguards
+							["u"] = 14,
+						}),
+						i(22881, {	-- Legionnaire's Dreadweave Legguards
+							["u"] = 14,
+						}),
+						i(22882, {	-- Legionnaire's Satin Legguards
+							["u"] = 14,
+						}),
+						i(22883, {	-- Legionnaire's Silk Legguards
+							["u"] = 14,
+						}),
+						i(22884, {	-- Legionnaire's Dreadweave Tunic
+							["u"] = 14,
+						}),
+						i(22885, {	-- Legionnaire's Satin Tunic
+							["u"] = 14,
+						}),
+						i(22886, {	-- Legionnaire's Silk Tunic
+							["u"] = 14,
+						}),
+						i(22887, {	-- Legionnaire's Mail Legguards
+							["u"] = 14,
+						}),
+						i(23243, {	-- Champion's Plate Shoulders
+							["u"] = 14,
+						}),
+						i(23244, {	-- Champion's Plate Helm
+							["u"] = 14,
+						}),
+						i(23251, {	-- Champion's Chain Helm
+							["u"] = 14,
+						}),
+						i(23252, {	-- Champion's Chain Shoulders
+							["u"] = 14,
+						}),
+						i(23253, {	-- Champion's Dragonhide Headguard
+							["u"] = 14,
+						}),
+						i(23254, {	-- Champion's Dragonhide Shoulders
+							["u"] = 14,
+						}),
+						i(23255, {	-- Champion's Dreadweave Cowl
+							["u"] = 14,
+						}),
+						i(23256, {	-- Champion's Dreadweave Spaulders
+							["u"] = 14,
+						}),
+						i(23257, {	-- Champion's Leather Helm
+							["u"] = 14,
+						}),
+						i(23258, {	-- Champion's Leather Shoulders
+							["u"] = 14,
+						}),
+						i(23259, {	-- Champion's Mail Headguard
+							["u"] = 14,
+						}),
+						i(23260, {	-- Champion's Mail Pauldrons
+							["u"] = 14,
+						}),
+						i(23261, {	-- Champion's Satin Hood
+							["u"] = 14,
+						}),
+						i(23262, {	-- Champion's Satin Mantle
+							["u"] = 14,
+						}),
+						i(23263, {	-- Champion's Silk Cowl
+							["u"] = 14,
+						}),
+						i(23264, {	-- Champion's Silk Mantle
+							["u"] = 14,
+						}),
+						i(29600, {	-- Blood Guard's Lamellar Gauntlets
+							["u"] = 14,
+						}),
+						i(29601, {	-- Blood Guard's Lamellar Sabatons
+							["u"] = 14,
+						}),
+						i(29602, {	-- Legionnaire's Lamellar Breastplate
+							["u"] = 14,
+						}),
+						i(29603, {	-- Legionnaire's Lamellar Leggings
+							["u"] = 14,
+						}),
+						i(29604, {	-- Champion's Lamellar Headguard
+							["u"] = 14,
+						}),
+						i(29605, {	-- Champion's Lamellar Shoulders
+							["u"] = 14,
+						}),
+						i(29612, {	-- General's Lamellar Boots
+							["u"] = 14,
+						}),
+						i(29613, {	-- General's Lamellar Gloves
+							["u"] = 14,
+						}),
+						i(29614, {	-- General's Lamellar Legplates
+							["u"] = 14,
+						}),
+						i(29615, {	-- Warlord's Lamellar Chestplate
+							["u"] = 14,
+						}),
+						i(29616, {	-- Warlord's Lamellar Faceguard
+							["u"] = 14,
+						}),
+						i(29617, {	-- Warlord's Lamellar Pauldrons
+							["u"] = 14,
+						}),
+						i(16341, {	-- Sergeant's Cloak
+							["u"] = 14,
+						}),
+						i(18430, {	-- First Sergeant's Plate Bracers
+							["u"] = 14,
+						}),
+						i(18432, {	-- First Sergeant's Mail Wristguards
+							["u"] = 14,
+						}),
+						i(18435, {	-- First Sergeant's Leather Armguards
+							["u"] = 14,
+						}),
+						i(18436, {	-- First Sergeant's Dragonhide Armguards
+							["u"] = 14,
+						}),
+						i(18437, {	-- First Sergeant's Silk Cuffs
+							["u"] = 14,
+						}),
+						i(18427, {	-- Sergeant's Cloak
+							["u"] = 14,
+						}),
 					},
 				}),
 			},

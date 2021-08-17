@@ -1886,10 +1886,11 @@ app.L = {
 		[-595] = GetSpellInfo(228357).." 3",									-- Kill Credit 3
 		-- Need these spells here because if we use them in the file it won't allow the quest to mark as complete due to it not being designed that way.
 		-- This is the workaround.
-		[-650] = "Quest Items",													-- Quest Items
+		[-600] = "Quest Items",													-- Quest Items
 
 -- PvP Header
 	-- Special Season Tags
+		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons
 		--[-651] = "Honor Gear Prideful Season",								-- Listed under MoP PvP Seasons
 		--[-652] = "Honor Gear Grievous Season",								-- Listed under MoP PvP Seasons
 		--[-653] = "Honor Gear Tyrannical Season",								-- Listed under MoP PvP Seasons
@@ -1922,6 +1923,7 @@ app.L = {
 		[-671] = select(2, GetAchievementInfo(4599))..": Season 8",				-- Wrathful Gladiator: Season 8
 
 	-- Cataclysm PvP Seasons
+		[-650] = "Rated Battleground",											-- Rated Battleground
 		[-672] = select(2, GetAchievementInfo(6002))..": Season 9",				-- Vicious Gladiator: Season 9
 		[-656] = "Honor Gear Ruthless Season",									-- Honor Gear Ruthless (S10)
 		[-673] = select(2, GetAchievementInfo(6124))..": Season 10",			-- Ruthless Gladiator: Season 10
@@ -2528,7 +2530,7 @@ app.L = {
 		[10] = {3, "|CFFFF0000Originally obtained via a TCG card that is no longer in print, but may still be available via the Black Market, In-Game, or Real Life Auction House.|r", "Trading Card Game [TCG]"},
 		[11] = {3, "|CFFFF0000This is no longer available unless you know someone that has access to the items used to summon the boss.|r", "Requires Summoning Items"},
 		[13] = {1, "|CFFFF0000Your followers are too high and the mission for the cache will no longer spawn.|r", "Legacy Cache"},
-		[14] = {3, "|CFFFF0000This can no longer be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator"},
+		[14] = {3, "|CFFFF0000This can no longer be purchased or learned unless you have the required PvP Title, required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator"},
 		[15] = {1, "|CFFFF0000This cannot be permanently learned or used for transmog.|r", "Unlearnable"},
 		[35] = {3, "|CFFFF0000This is locked behind a paywall, such as the In-Game Shop, another Blizzard Product, or the Recruit-A-Friend Service.|r", "Blizzard Balance"},
 		[36] = {1, "|CFFFF0000This was only obtainable during the WoW Anniversary when it was active and is no longer available.|r", "WoW Anniversary [Removed]"},	-- TODO: Remove.
