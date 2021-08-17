@@ -23,12 +23,12 @@ namespace ATT
             /// <summary>
             /// All of the items that have been parsed sorted by Item ID.
             /// </summary>
-            private static IDictionary<long, Dictionary<string, object>> ITEMS = new ConcurrentDictionary<long, Dictionary<string, object>>();
+            private static IDictionary<decimal, Dictionary<string, object>> ITEMS = new ConcurrentDictionary<decimal, Dictionary<string, object>>();
 
             /// <summary>
             /// All of the item IDs that have been referenced somewhere in the database.
             /// </summary>
-            private static IDictionary<long, bool> ITEMS_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
+            private static IDictionary<decimal, bool> ITEMS_WITH_REFERENCES = new ConcurrentDictionary<decimal, bool>();
 
             /// <summary>
             /// A list of fields that have already warned the programmer.
@@ -38,7 +38,7 @@ namespace ATT
             /// <summary>
             /// All of the item IDs that are in the database.
             /// </summary>
-            public static ICollection<long> AllIDs
+            public static ICollection<decimal> AllIDs
             {
                 get
                 {
@@ -64,8 +64,8 @@ namespace ATT
             {
                 get
                 {
-                    var keys = new List<long>();
-                    foreach (var itemID in ITEMS.Keys)
+                    var keys = new List<decimal>();
+                    foreach (var itemID in AllIDs)
                     {
                         if (ITEMS_WITH_REFERENCES.ContainsKey(itemID)) continue;
                         keys.Add(itemID);
@@ -84,13 +84,16 @@ namespace ATT
             /// </summary>
             public static int Count { get; private set; }
 
+            private static Dictionary<string, object> _Garbage = new Dictionary<string, object>();
+
             /// <summary>
             /// Get an item by its Item ID.
             /// If an item does not exist, one will be created.
             /// </summary>
             /// <param name="itemID">The Item ID.</param>
             /// <returns>A dictionary representing the item.</returns>
-            public static Dictionary<string, object> Get(long itemID)
+            [Obsolete("Use Get(data) instead to ensure accurate Item is retrieved.")]
+            public static Dictionary<string, object> Get(decimal itemID)
             {
                 // Attempt to get an existing item dictionary.
                 if (ITEMS.TryGetValue(itemID, out Dictionary<string, object> obj))
@@ -107,13 +110,54 @@ namespace ATT
             }
 
             /// <summary>
+            /// Get the Item which matches the data
+            /// If a matching Item does not exist and the data contains an 'itemID', one will be created.
+            /// </summary>
+            /// <param name="itemID">The Item ID.</param>
+            /// <returns>A dictionary representing the item.</returns>
+            public static Dictionary<string, object> Get(IDictionary<string, object> data)
+            {
+                decimal itemID = GetSpecificItemID(data);
+
+                // Attempt to get an existing item dictionary.
+                if (ITEMS.TryGetValue(itemID, out Dictionary<string, object> obj))
+                {
+                    return obj;
+                }
+
+                if (itemID == 0)
+                    return _Garbage;
+
+                // Create a new item dictionary.
+                ++Count;
+                return ITEMS[itemID] = new Dictionary<string, object>
+                {
+                    { "itemID", itemID }
+                };
+            }
+
+            /// <summary>
             /// Get an item by its Item ID.
             /// If an item does not exist, one will NOT be created.
             /// </summary>
             /// <param name="itemID">The Item ID.</param>
             /// <returns>A dictionary representing the item.</returns>
-            public static Dictionary<string, object> GetNull(long itemID)
+            public static Dictionary<string, object> GetNull(decimal itemID)
             {
+                // Attempt to get an existing item dictionary.
+                return ITEMS.TryGetValue(itemID, out Dictionary<string, object> obj) ? obj : null;
+            }
+
+            /// <summary>
+            /// Get an item by corresponding data.
+            /// If an item does not exist, one will NOT be created.
+            /// </summary>
+            /// <param name="itemID"></param>
+            /// <returns></returns>
+            public static Dictionary<string, object> GetNull(IDictionary<string, object> data)
+            {
+                decimal itemID = GetSpecificItemID(data);
+
                 // Attempt to get an existing item dictionary.
                 return ITEMS.TryGetValue(itemID, out Dictionary<string, object> obj) ? obj : null;
             }
@@ -129,11 +173,7 @@ namespace ATT
                 data.TryGetValue("name", out name);
 
                 if (name == null)
-                {
-                    data.TryGetValue("itemID", out long itemID);
-                    if (itemID > 0)
-                        Get(itemID).TryGetValue("name", out name);
-                }
+                    Get(data).TryGetValue("name", out name);
 
                 return name != null;
             }
@@ -542,13 +582,13 @@ namespace ATT
                 if (data.ContainsKey("artifactID")) return;
 
                 // Attempt to extract the itemID from the data table.
-                if (data.TryGetValue("itemID", out object itemIDRef) ||
-                    data.TryGetValue("itemId", out itemIDRef) ||
-                    data.TryGetValue("toyID", out itemIDRef))
+                if (data.ContainsKey("itemID") ||
+                    data.ContainsKey("itemId") ||
+                    data.ContainsKey("toyID"))
                 {
-                    long itemID = Convert.ToInt64(itemIDRef);
-                    if (itemID < 1) return;
-                    var item = Get(itemID);
+                    //long itemID = Convert.ToInt64(itemIDRef);
+                    //if (itemID < 1) return;
+                    var item = Get(data);
                     //if (itemID == 183273) { Trace.WriteLine("Before:" + MiniJSON.Json.Serialize(item)); Trace.WriteLine("Merge:" + MiniJSON.Json.Serialize(data)); }
                     foreach (var pair in data) Merge(item, pair.Key, pair.Value);
                     //if (itemID == 183273) Trace.WriteLine("After:" + MiniJSON.Json.Serialize(item));
@@ -564,7 +604,7 @@ namespace ATT
             /// <param name="data">The data dictionary to merge into.</param>
             /// <param name="field">The name of the field being merged.</param>
             /// <param name="value">The value of the merged field.</param>
-            public static void MergeInto(long itemID, Dictionary<string, object> data, string field, object value)
+            private static void MergeInto(long itemID, Dictionary<string, object> data, string field, object value)
             {
                 switch (field)
                 {
@@ -690,26 +730,49 @@ namespace ATT
             /// </summary>
             /// <param name="itemID">The item ID to merge with.</param>
             /// <param name="data">The data dictionary to receive the merged data.</param>
-            public static void MergeInto(long itemID, Dictionary<string, object> data)
+            public static void MergeInto(Dictionary<string, object> data)
             {
-                // Get the item dictionary, if it exists.
-                var item = GetNull(itemID);
+                // Get the itemID, if it exists.
+                decimal itemID = GetSpecificItemID(data);
+                if (itemID == 0)
+                    return;
+
+                // merge general item info into the data
+                MergeInto((long)itemID, data);
+
+                // then merge specific info into the data
+                MergeInto(itemID, data);
+            }
+
+            /// <summary>
+            /// Merge Item information from the specific ItemID into the data
+            /// </summary>
+            /// <param name="specificItemID"></param>
+            /// <param name="data"></param>
+            private static void MergeInto(decimal specificItemID, Dictionary<string, object> data)
+            {
+                // First merge generic Item info into the data
+                var item = GetNull(specificItemID);
                 if (item == null)
                 {
-                    // Report that the item is missing.
-                    Trace.Write("Could not find item #");
-                    Trace.Write(itemID);
-                    Trace.WriteLine(" in the database.");
-                    Trace.WriteLine(ToJSON(data));
+                    // only report if this is a specific ItemID...
+                    if (decimal.Truncate(specificItemID) != specificItemID)
+                    {
+                        // Report that the specific item is missing.
+                        Trace.Write("Could not find item #");
+                        Trace.Write(specificItemID);
+                        Trace.WriteLine(" in the database.");
+                        Trace.WriteLine(ToJSON(data));
+                    }
                     return;
                 }
 
                 // Mark this item as having a reference.
-                ITEMS_WITH_REFERENCES[itemID] = true;
+                ITEMS_WITH_REFERENCES[specificItemID] = true;
 
                 //if (itemID == 183273) { Trace.WriteLine("Before:" + MiniJSON.Json.Serialize(item)); Trace.WriteLine("Pull:" + MiniJSON.Json.Serialize(data)); }
-                // Merge the item with the data dictionary.
-                MergeInto(itemID, item, data);
+                // Merge the specific item with the data dictionary.
+                MergeInto((long)specificItemID, item, data);
                 //if (itemID == 183273) { Trace.WriteLine("Data:" + MiniJSON.Json.Serialize(data)); }
             }
 
@@ -718,18 +781,18 @@ namespace ATT
             /// If the source dictionary does not contain an itemID or toyID, this method does nothing.
             /// </summary>
             /// <param name="data">The data dictionary to receive the merged data.</param>
-            public static void MergeInto(Dictionary<string, object> data)
-            {
-                // Attempt to extra the itemID from the data table.
-                if (data.TryGetValue("itemID", out long itemID))
-                {
-                    MergeInto(itemID, data);
-                }
-                else if (data.TryGetValue("toyID", out itemID))
-                {
-                    MergeInto(itemID, data);
-                }
-            }
+            //public static void MergeInto(Dictionary<string, object> data)
+            //{
+            //    // Attempt to extra the itemID from the data table.
+            //    if (data.TryGetValue("itemID", out long itemID))
+            //    {
+            //        MergeInto(data);
+            //    }
+            //    else if (data.TryGetValue("toyID", out itemID))
+            //    {
+            //        MergeInto(data);
+            //    }
+            //}
 
             /// <summary>
             /// Merge information about the item matching the data's itemID into the dictionary.
@@ -737,24 +800,55 @@ namespace ATT
             /// </summary>
             /// <param name="data">The data dictionary to receive the merged data.</param>
             /// <param name="itemID">The item ID or -1 if the item is not valid.</param>
-            public static void MergeInto(Dictionary<string, object> data, out long itemID)
-            {
-                // Attempt to extra the itemID from the data table.
-                if (data.TryGetValue("itemID", out itemID))
-                {
-                    MergeInto(itemID, data);
-                }
-                else if (data.TryGetValue("toyID", out itemID))
-                {
-                    MergeInto(itemID, data);
-                }
-                else itemID = -1;
-            }
+            //public static void MergeInto(Dictionary<string, object> data, out long itemID)
+            //{
+            //    // Attempt to extra the itemID from the data table.
+            //    if (data.TryGetValue("itemID", out itemID))
+            //    {
+            //        MergeInto(itemID, data);
+            //    }
+            //    else if (data.TryGetValue("toyID", out itemID))
+            //    {
+            //        MergeInto(itemID, data);
+            //    }
+            //    else itemID = -1;
+            //}
             #endregion
             #region Utility
             public static void MarkItemAsReferenced(long itemID)
             {
                 ITEMS_WITH_REFERENCES[itemID] = true;
+            }
+
+            /// <summary>
+            /// Returns a specific ItemID value corresponding to how ItemID's are treated in-game since the
+            /// modID/bonusID literally changes the functionality/uniqueness of an Item
+            /// </summary>
+            /// <param name="itemID"></param>
+            /// <param name="modID"></param>
+            /// <param name="bonusID"></param>
+            /// <returns></returns>
+            public static decimal GetSpecificItemID(long itemID, long modID, long bonusID)
+            {
+                return itemID + (decimal)modID / 100 + (decimal)bonusID / 1000000;
+            }
+
+            /// <summary>
+            /// Returns a specific ItemID value corresponding to how ItemID's are treated in-game since the
+            /// modID/bonusID literally changes the functionality/uniqueness of an Item
+            /// </summary>
+            /// <param name="data"></param>
+            /// <returns></returns>
+            public static decimal GetSpecificItemID(IDictionary<string, object> data)
+            {
+                data.TryGetValue("itemID", out long itemID);
+                data.TryGetValue("modID", out long modID);
+                data.TryGetValue("bonusID", out long bonusID);
+
+                if (itemID == 0)
+                    return 0;
+
+                return GetSpecificItemID(itemID, modID, bonusID);
             }
             #endregion
         }

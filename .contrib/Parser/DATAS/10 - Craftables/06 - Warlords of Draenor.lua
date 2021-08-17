@@ -64,6 +64,9 @@ _.Craftables =
 				i(112059),	-- Wormhole Centrifuge*
 			}),
 			n(-319, {	-- Weapons
+				i(109168, {	-- Shrediron's Shredder
+					-- ["description"] = "",	-- TODO how to obtain this base version?!
+				}),
 				WOD_CRAFTED_ITEM(109168, 128017),	-- Shrediron's Shredder* + True Iron Trigger*
 			}),
 			n(-318, {	-- Armour
@@ -99,13 +102,25 @@ _.Craftables =
 				i(118603),	-- Savage Tarot
 			}),
 			filter(1, {	-- Off-hand
+				i(113270, {	-- Shadowtome
+					-- ["description"] = "",	-- TODO how to obtain this base version?!
+				}),
 				WOD_CRAFTED_ITEM(113270),	-- Shadowtome
 			}),
 			filter(28, {	-- Staves
+				i(113134, {	-- Crystalfire Spellstaff
+					-- ["description"] = "",	-- TODO how to obtain this base version?!
+				}),
 				WOD_CRAFTED_ITEM(113134),	-- Crystalfire Spellstaff
+				i(111526, {	-- Etched-Blade Warstaff
+					-- ["description"] = "",	-- TODO how to obtain this base version?!
+				}),
 				WOD_CRAFTED_ITEM(111526),	-- Etched-Blade Warstaff
 			}),
 			filter(27, {	-- Wands
+				i(113131, {	-- Warmaster's Firestick
+					-- ["description"] = "",	-- TODO how to obtain this base version?!
+				}),
 				WOD_CRAFTED_ITEM(113131),	-- Warmaster's Firestick
 			}),
 		}),

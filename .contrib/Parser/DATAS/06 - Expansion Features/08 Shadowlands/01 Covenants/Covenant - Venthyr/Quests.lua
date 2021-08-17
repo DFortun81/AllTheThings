@@ -116,6 +116,7 @@ _.ExpansionFeatures =
 						["coord"] = { 45.3, 30.3, SINFALL_DEPTHS },
 					}),
 					q(62902, {	-- Anima is Power
+						["sourceQuests"] = { 62691 },	-- A Calling in Revendreth
 						["description"] = "Becomes available after you complete your first Calling quest.",
 						["provider"] = { "n", 165302 },	-- Rendle
 						["coord"] = { 61.6, 75.7, SINFALL_DEPTHS },

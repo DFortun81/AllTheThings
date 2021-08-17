@@ -826,9 +826,9 @@ namespace ATT
                 {
                     if (entry is Dictionary<string, object> o)
                     {
-                        if (o.TryGetValue("itemID", out long itemID))
+                        if (o.ContainsKey("itemID"))
                         {
-                            var itemData = Items.GetNull(itemID);
+                            var itemData = Items.GetNull(o);
                             if (itemData != null && itemData.TryGetValue("name", out object nameRef)) o["name"] = nameRef;
                             result.Add(o);
                         }
