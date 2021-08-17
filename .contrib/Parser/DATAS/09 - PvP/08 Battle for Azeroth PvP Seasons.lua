@@ -344,16 +344,16 @@ _.PVP =
 			un(REMOVED_FROM_GAME, i(164586)),	-- Warlord's Trophy Dread Duelist
 			un(REMOVED_FROM_GAME, i(164583)),	-- Battleborn Sigil Dread Elite
 			un(REMOVED_FROM_GAME, i(164587)),	-- Warlord's Trophy Dread Elite
+			--[[
 			filter(100, {	-- Mounts
 				i(163123, {	-- Vicious War Riverbeast (A)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(163124, {	-- Vicious War Clefthoof (H)
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
+			--]]
 		}),
 		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
 			n(-659, {	-- Aspirant PvP Gear
@@ -723,16 +723,16 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(164954)),	-- Battleborn Sigil Sinister Duelist
 				un(REMOVED_FROM_GAME, i(164955)),	-- Battleborn Sigil Sinister Elite
 			})),
+			--[[
 			filter(100, {	-- Mounts
 				i(165019, {	-- Vicious Black Warsaber (A)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(165020, {	-- Vicious Black Bonesteed (H)
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
+			--]]
 		}),
 		n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
 			n(-659, {	-- Aspirant PvP Gear
@@ -1140,6 +1140,7 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(171098)),	-- Warlord's Trophy Notorious Duelist
 				un(REMOVED_FROM_GAME, i(171099)),	-- Warlord's Trophy Notorious Elite
 			})),
+			--[[
 			filter(100, {	-- Mounts
 				i(163122, {	-- Vicious War Basilisk (A)
 					["races"] = ALLIANCE_ONLY,
@@ -1150,6 +1151,7 @@ _.PVP =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
+			--]]
 		}),
 		n(-692, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
 			n(-659, {	-- Aspirant PvP Gear
@@ -1546,6 +1548,7 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(172898)),	-- Warlord's Trophy Corrupted Duelist
 				un(REMOVED_FROM_GAME, i(172899)),	-- Warlord's Trophy Corrupted Elite
 			})),
+			--[[
 			filter(100, {	-- Mounts
 				i(173714, {	-- Vicious White Warsaber (A)
 					["races"] = ALLIANCE_ONLY,
@@ -1556,6 +1559,7 @@ _.PVP =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
+			--]]
 		}),
 	})),
 };
