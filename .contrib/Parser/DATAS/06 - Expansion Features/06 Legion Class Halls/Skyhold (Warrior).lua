@@ -323,10 +323,14 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 44889,	-- Resource Management
 					}),
 					q(39191, {	-- Legacy of the Icebreaker
-						["coord"] = { 58.3, 84.6, 695 },
-						["classes"] = { WARRIOR },
-						["provider"] = { "n", 96469 },	-- Odyn
 						["description"] = "Pursue your artifact weapon for Protection.",
+						["provider"] = { "n", 96469 },	-- Odyn
+						["classes"] = { WARRIOR },
+						["coord"] = { 58.3, 84.6, 695 },
+						["g"] = {
+							i(128288),	-- Scaleshard
+							i(128289),	-- Scale of the Earth-Warder
+						},
 					}),
 					q(43586, {	-- Maw of Souls: Message to Helya
 						["lvl"] = 110,
@@ -570,10 +574,13 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 43750,	-- The Call of Battle
 					}),
 					q(40043, {	-- The Hunter of Heroes
-						["coord"] = { 58.3, 84.6, 695 },
-						["classes"] = { WARRIOR },
-						["provider"] = { "n", 96469 },	-- Odyn
 						["description"] = "Pursue your artifact weapon for Fury.",
+						["provider"] = { "n", 96469 },	-- Odyn
+						["classes"] = { WARRIOR },
+						["coord"] = { 58.3, 84.6, 695 },
+						["g"] = {
+							i(128910),	-- Strom'kar, the Warbreaker
+						},
 					}),
 					q(44222, {	-- The Might of the Val'kyr
 						["u"] = REMOVED_FROM_GAME,

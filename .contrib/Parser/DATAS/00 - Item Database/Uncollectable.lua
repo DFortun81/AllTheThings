@@ -552,4 +552,5 @@ i(150750);	-- Moonkissed Antidote
 -- Miscellaneous
 i(89427);	-- Ancient Mogu Treasure
 i(85224);	-- Basic Seed Pack
+i(140360);	-- Rockwurm Barb
 i(153119);	-- Wyrmtongue Cache of Finery
