@@ -116,14 +116,30 @@ _.PVP =
 					i(162937),	-- Dread Aspirant's Plate Warboots (H)
 				}),
 				n(-322, {	-- Back
-					i(163724),	-- Dread Aspirant's Cape (A, plate)
-					i(163721),	-- Dread Aspirant's Cloak (A, cloth)
-					i(163723),	-- Dread Aspirant's Drape (A, mail)
-					i(163722),	-- Dread Aspirant's Greatcloak (A, leather)
-					i(162968),	-- Dread Aspirant's Cape (H, plate)
-					i(162864),	-- Dread Aspirant's Cloak (H, cloth)
-					i(162967),	-- Dread Aspirant's Drape (H, mail)
-					i(162895),	-- Dread Aspirant's Greatcloak (H, leather)
+					i(163724, {	-- Dread Aspirant's Cape (A, plate)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Plate Ensemble.",
+					}),
+					i(163721, {	-- Dread Aspirant's Cloak (A, cloth)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Cloth Ensemble.",
+					}),
+					i(163723, {	-- Dread Aspirant's Drape (A, mail)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Mail Ensemble.",
+					}),
+					i(163722, {	-- Dread Aspirant's Greatcloak (A, leather)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Leather Ensemble.",
+					}),
+					i(162968, {	-- Dread Aspirant's Cape (H, plate)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Plate Ensemble.",
+					}),
+					i(162864, {	-- Dread Aspirant's Cloak (H, cloth)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Cloth Ensemble.",
+					}),
+					i(162967, {	-- Dread Aspirant's Drape (H, mail)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Mail Ensemble.",
+					}),
+					i(162895, {	-- Dread Aspirant's Greatcloak (H, leather)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Leather Ensemble.",
+					}),
 				}),
 				n(-385, {	-- Finger
 					un(REMOVED_FROM_GAME, i(162896)),	-- Dread Aspirant's Band
@@ -178,19 +194,19 @@ _.PVP =
 				n(-43, {	-- Cloth
 					i(161731),	-- Dread Gladiator's Silk Amice (A)
 					i(161737),	-- Dread Gladiator's Silk Bracers (A)
-					un(REMOVED_FROM_GAME, i(161625)),	-- Dread Gladiator's Silk Cord (A)
+					i(161625),	-- Dread Gladiator's Silk Cord (A)
 					i(161722),	-- Dread Gladiator's Silk Cowl (A)
-					un(REMOVED_FROM_GAME, i(161628)),	-- Dread Gladiator's Silk Cuffs (A)
-					un(REMOVED_FROM_GAME, i(161611)),	-- Dread Gladiator's Silk Gloves (A)
+					i(161628),	-- Dread Gladiator's Silk Cuffs (A)
+					i(161611),	-- Dread Gladiator's Silk Gloves (A)
 					i(161720),	-- Dread Gladiator's Silk Handguards (A)
-					un(REMOVED_FROM_GAME, i(161613)),	-- Dread Gladiator's Silk Hood (A)
-					un(REMOVED_FROM_GAME, i(161617)),	-- Dread Gladiator's Silk Leggings (A)
-					un(REMOVED_FROM_GAME, i(161622)),	-- Dread Gladiator's Silk Mantle (A)
+					i(161613),	-- Dread Gladiator's Silk Hood (A)
+					i(161617),	-- Dread Gladiator's Silk Leggings (A)
+					i(161622),	-- Dread Gladiator's Silk Mantle (A)
 					i(161710),	-- Dread Gladiator's Silk Raiment (A)
-					un(REMOVED_FROM_GAME, i(161601)),	-- Dread Gladiator's Silk Robe (A)
+					i(161601),	-- Dread Gladiator's Silk Robe (A)
 					i(161657),	-- Dread Gladiator's Silk Sash (A)
 					i(161715),	-- Dread Gladiator's Silk Slippers (A)
-					un(REMOVED_FROM_GAME, i(161606)),	-- Dread Gladiator's Silk Treads (A)
+					i(161606),	-- Dread Gladiator's Silk Treads (A)
 					i(161726),	-- Dread Gladiator's Silk Trousers (A)
 					i(161763),	-- Dread Gladiator's Silk Amice (H)
 					i(161769),	-- Dread Gladiator's Silk Bracers (H)
@@ -312,14 +328,30 @@ _.PVP =
 					i(161637),	-- Dread Gladiator's Plate Warboots (H)
 				}),
 				n(-322, {	-- Back
-					i(163732),	-- Dread Gladiator's Cape (A)
-					i(163731),	-- Dread Gladiator's Drape (A)
-					i(163730),	-- Dread Gladiator's Greatcloak (A)
-					i(163729),	-- Dread Gladiator's Shawl (A)
-					i(161907),	-- Dread Gladiator's Cape (H)
-					i(161906),	-- Dread Gladiator's Drape (H)
-					i(161669),	-- Dread Gladiator's Greatcloak (H)
-					i(161668),	-- Dread Gladiator's Shawl (H)
+					i(163732, {	-- Dread Gladiator's Cape (A)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Plate Ensemble.",
+					}),
+					i(163731, {	-- Dread Gladiator's Drape (A)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Mail Ensemble.",
+					}),
+					i(163730, {	-- Dread Gladiator's Greatcloak (A)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Leather Ensemble.",
+					}),
+					i(163729, {	-- Dread Gladiator's Shawl (A)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Cloth Ensemble.",
+					}),
+					i(161907, {	-- Dread Gladiator's Cape (H)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Plate Ensemble.",
+					}),
+					i(161906, {	-- Dread Gladiator's Drape (H)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Mail Ensemble.",
+					}),
+					i(161669, {	-- Dread Gladiator's Greatcloak (H)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Leather Ensemble.",
+					}),
+					i(161668, {	-- Dread Gladiator's Shawl (H)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Cloth Ensemble.",
+					}),
 				}),
 				n(-385, {	-- Finger
 					un(REMOVED_FROM_GAME, i(161672)),	-- Dread Gladiator's Band
@@ -334,17 +366,18 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(161674)),	-- Dread Gladiator's Medallion
 				}),
 			}),
-			un(REMOVED_FROM_GAME, i(159570)),	-- Battleborn Sigil Dread Combatant
-			un(REMOVED_FROM_GAME, i(155622)),	-- Warlord's Trophy Dread Combatant
-			un(REMOVED_FROM_GAME, i(164580)),	-- Battleborn Sigil Dread Challenger
-			un(REMOVED_FROM_GAME, i(164584)),	-- Warlord's Trophy Dread Challenger
-			un(REMOVED_FROM_GAME, i(164581)),	-- Battleborn Sigil Dread Rival
-			un(REMOVED_FROM_GAME, i(164585)),	-- Warlord's Trophy Dread Rival
-			un(REMOVED_FROM_GAME, i(164582)),	-- Battleborn Sigil Dread Duelist
-			un(REMOVED_FROM_GAME, i(164586)),	-- Warlord's Trophy Dread Duelist
-			un(REMOVED_FROM_GAME, i(164583)),	-- Battleborn Sigil Dread Elite
-			un(REMOVED_FROM_GAME, i(164587)),	-- Warlord's Trophy Dread Elite
-			--[[
+			un(REMOVED_FROM_GAME, i(163827, {	-- Quartermaster's Coin
+				un(REMOVED_FROM_GAME, i(159570)),	-- Battleborn Sigil Dread Combatant
+				un(REMOVED_FROM_GAME, i(164580)),	-- Battleborn Sigil Dread Challenger
+				un(REMOVED_FROM_GAME, i(164581)),	-- Battleborn Sigil Dread Rival
+				un(REMOVED_FROM_GAME, i(164582)),	-- Battleborn Sigil Dread Duelist
+				un(REMOVED_FROM_GAME, i(164583)),	-- Battleborn Sigil Dread Elite
+				un(REMOVED_FROM_GAME, i(155622)),	-- Warlord's Trophy Dread Combatant
+				un(REMOVED_FROM_GAME, i(164584)),	-- Warlord's Trophy Dread Challenger
+				un(REMOVED_FROM_GAME, i(164585)),	-- Warlord's Trophy Dread Rival
+				un(REMOVED_FROM_GAME, i(164586)),	-- Warlord's Trophy Dread Duelist
+				un(REMOVED_FROM_GAME, i(164587)),	-- Warlord's Trophy Dread Elite
+			})),
 			filter(100, {	-- Mounts
 				i(163123, {	-- Vicious War Riverbeast (A)
 					["races"] = ALLIANCE_ONLY,
@@ -353,7 +386,6 @@ _.PVP =
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			--]]
 		}),
 		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
 			n(-659, {	-- Aspirant PvP Gear
@@ -456,14 +488,30 @@ _.PVP =
 					i(165087),	-- Sinister Aspirant's Plate Warboots (H)
 				}),
 				n(-322, {	-- Back
-					i(165216),	-- Sinister Aspirant's Cape (A)
-					i(165215),	-- Sinister Aspirant's Drape (A)
-					i(165214),	-- Sinister Aspirant's Greatcloak (A)
-					i(165213),	-- Sinister Aspirant's Shawl (A)
-					i(165212),	-- Sinister Aspirant's Cape (H)
-					i(165211),	-- Sinister Aspirant's Drape (H)
-					i(165210),	-- Sinister Aspirant's Greatcloak (H)
-					i(165209),	-- Sinister Aspirant's Shawl (H)
+					i(165216, {	-- Sinister Aspirant's Cape (A)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Plate Ensemble.",
+					}),
+					i(165215, {	-- Sinister Aspirant's Drape (A)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Mail Ensemble.",
+					}),
+					i(165214, {	-- Sinister Aspirant's Greatcloak (A)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Leather Ensemble.",
+					}),
+					i(165213, {	-- Sinister Aspirant's Shawl (A)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Cloth Ensemble.",
+					}),
+					i(165212, {	-- Sinister Aspirant's Cape (H)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Plate Ensemble.",
+					}),
+					i(165211, {	-- Sinister Aspirant's Drape (H)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Mail Ensemble.",
+					}),
+					i(165210, {	-- Sinister Aspirant's Greatcloak (H)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Leather Ensemble.",
+					}),
+					i(165209, {	-- Sinister Aspirant's Shawl (H)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Cloth Ensemble.",
+					}),
 				}),
 				n(-385, {	-- Finger
 					un(REMOVED_FROM_GAME, i(165219)),	-- Sinister Aspirant's Band
@@ -688,14 +736,30 @@ _.PVP =
 					i(166593),	-- Sinister Gladiator's Plate Warhelm (H)
 				}),
 				n(-322, {	-- Back
-					i(165051),	-- Sinister Gladiator's Cape (A)
-					i(165050),	-- Sinister Gladiator's Drape (A)
-					i(165049),	-- Sinister Gladiator's Greatcloak (A)
-					i(165048),	-- Sinister Gladiator's Shawl (A)
-					i(165047),	-- Sinister Gladiator's Cape (H)
-					i(165046),	-- Sinister Gladiator's Drape (H)
-					i(165045),	-- Sinister Gladiator's Greatcloak (H)
-					i(165044),	-- Sinister Gladiator's Shawl (H)
+					i(165051, {	-- Sinister Gladiator's Cape (A)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's Plate Ensemble.",
+					}),
+					i(165050, {	-- Sinister Gladiator's Drape (A)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's Mail Ensemble.",
+					}),
+					i(165049, {	-- Sinister Gladiator's Greatcloak (A)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's Leather Ensemble.",
+					}),
+					i(165048, {	-- Sinister Gladiator's Shawl (A)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's Cloth Ensemble.",
+					}),
+					i(165047, {	-- Sinister Gladiator's Cape (H)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's Plate Ensemble.",
+					}),
+					i(165046, {	-- Sinister Gladiator's Drape (H)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's  Mail Ensemble.",
+					}),
+					i(165045, {	-- Sinister Gladiator's Greatcloak (H)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's Leather Ensemble.",
+					}),
+					i(165044, {	-- Sinister Gladiator's Shawl (H)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's Cloth Ensemble.",
+					}),
 				}),
 				n(-385, {	-- Finger
 					un(REMOVED_FROM_GAME, i(165053)),	-- Sinister Gladiator's Band
@@ -712,18 +776,17 @@ _.PVP =
 				}),
 			}),
 			un(REMOVED_FROM_GAME, i(163827, {	-- Quartermaster's Coin
-				un(REMOVED_FROM_GAME, i(164950)),	-- Warlord's Trophy Sinister Combatant
-				un(REMOVED_FROM_GAME, i(164956)),	-- Warlord's Trophy Sinister Challenger
-				un(REMOVED_FROM_GAME, i(164957)),	-- Warlord's Trophy Sinister Rival
-				un(REMOVED_FROM_GAME, i(164958)),	-- Warlord's Trophy Sinister Duelist
-				un(REMOVED_FROM_GAME, i(164959)),	-- Warlord's Trophy Sinister Elite
 				un(REMOVED_FROM_GAME, i(164951)),	-- Battleborn Sigil Sinister Combatant
 				un(REMOVED_FROM_GAME, i(164952)),	-- Battleborn Sigil Sinister Challenger
 				un(REMOVED_FROM_GAME, i(164953)),	-- Battleborn Sigil Sinister Rival
 				un(REMOVED_FROM_GAME, i(164954)),	-- Battleborn Sigil Sinister Duelist
 				un(REMOVED_FROM_GAME, i(164955)),	-- Battleborn Sigil Sinister Elite
+				un(REMOVED_FROM_GAME, i(164950)),	-- Warlord's Trophy Sinister Combatant
+				un(REMOVED_FROM_GAME, i(164956)),	-- Warlord's Trophy Sinister Challenger
+				un(REMOVED_FROM_GAME, i(164957)),	-- Warlord's Trophy Sinister Rival
+				un(REMOVED_FROM_GAME, i(164958)),	-- Warlord's Trophy Sinister Duelist
+				un(REMOVED_FROM_GAME, i(164959)),	-- Warlord's Trophy Sinister Elite
 			})),
-			--[[
 			filter(100, {	-- Mounts
 				i(165019, {	-- Vicious Black Warsaber (A)
 					["races"] = ALLIANCE_ONLY,
@@ -732,7 +795,6 @@ _.PVP =
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			--]]
 		}),
 		n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
 			n(-659, {	-- Aspirant PvP Gear
@@ -841,14 +903,30 @@ _.PVP =
 					i(167483),	-- Notorious Aspirant's Plate Warboots (H)
 				}),
 				n(-322, {	-- Back
-					i(167536),	-- Notorious Aspirant's Cape (A)
-					i(167535),	-- Notorious Aspirant's Drape (A)
-					i(167534),	-- Notorious Aspirant's Greatcloak (A)
-					i(167533),	-- Notorious Aspirant's Shawl (A)
-					i(167532),	-- Notorious Aspirant's Cape (H)
-					i(167531),	-- Notorious Aspirant's Drape (H)
-					i(167530),	-- Notorious Aspirant's Greatcloak (H)
-					i(167529),	-- Notorious Aspirant's Shawl (H)
+					i(167536, {	-- Notorious Aspirant's Cape (A)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Plate Ensemble.",
+					}),
+					i(167535, {	-- Notorious Aspirant's Drape (A)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Mail Ensemble.",
+					}),
+					i(167534, {	-- Notorious Aspirant's Greatcloak (A)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Leather Ensemble.",
+					}),
+					i(167533, {	-- Notorious Aspirant's Shawl (A)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Cloth Ensemble.",
+					}),
+					i(167532, {	-- Notorious Aspirant's Cape (H)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Plate Ensemble.",
+					}),
+					i(167531, {	-- Notorious Aspirant's Drape (H)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Mail Ensemble.",
+					}),
+					i(167530, {	-- Notorious Aspirant's Greatcloak (H)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Leather Ensemble.",
+					}),
+					i(167529, {	-- Notorious Aspirant's Shawl (H)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Cloth Ensemble.",
+					}),
 				}),
 				n(-385, {	-- Finger
 					un(REMOVED_FROM_GAME, i(167523)),	-- Notorious Aspirant's Ring
@@ -904,6 +982,7 @@ _.PVP =
 					i(167358),	-- Notorious Gladiator's Silk Bracers (A)
 					i(167406),	-- Notorious Gladiator's Silk Cap (A)
 					i(167421),	-- Notorious Gladiator's Silk Chestwrap (A)
+					i(167291),	-- Notorious Gladiator's Silk Cord (A)
 					i(167398),	-- Notorious Gladiator's Silk Cover (A)
 					i(167343),	-- Notorious Gladiator's Silk Cowl (A)
 					i(167294),	-- Notorious Gladiator's Silk Cuffs (A)
@@ -928,6 +1007,7 @@ _.PVP =
 					i(167304),	-- Notorious Gladiator's Silk Bracers (H)
 					i(167401),	-- Notorious Gladiator's Silk Cap (H)
 					i(167417),	-- Notorious Gladiator's Silk Chestwrap (H)
+					i(167241),	-- Notorious Gladiator's Silk Cord (H)
 					i(167393),	-- Notorious Gladiator's Silk Cover (H)
 					i(167301),	-- Notorious Gladiator's Silk Cowl (H)
 					i(167240),	-- Notorious Gladiator's Silk Cuffs (H)
@@ -1105,14 +1185,30 @@ _.PVP =
 					i(167452),	-- Notorious Gladiator's Shoulderplates (H)
 				}),
 				n(-322, {	-- Back
-					i(167373),	-- Notorious Gladiator's Cape (A)
-					i(167372),	-- Notorious Gladiator's Drape (A)
-					i(167370),	-- Notorious Gladiator's Shawl (A)
-					i(167371),	-- Notorious Gladiator's Greatcloak (A)
-					i(167369),	-- Notorious Gladiator's Cape (H)
-					i(167368),	-- Notorious Gladiator's Drape (H)
-					i(167366),	-- Notorious Gladiator's Shawl (H)
-					i(167367),	-- Notorious Gladiator's Greatcloak (H)
+					i(167373, {	-- Notorious Gladiator's Cape (A)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Plate Ensemble.",
+					}),
+					i(167372, {	-- Notorious Gladiator's Drape (A)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Mail Ensemble.",
+					}),
+					i(167370, {	-- Notorious Gladiator's Shawl (A)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Cloth Ensemble.",
+					}),
+					i(167371, {	-- Notorious Gladiator's Greatcloak (A)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Leather Ensemble.",
+					}),
+					i(167369, {	-- Notorious Gladiator's Cape (H)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Plate Ensemble.",
+					}),
+					i(167368, {	-- Notorious Gladiator's Drape (H)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Mail Ensemble.",
+					}),
+					i(167366, {	-- Notorious Gladiator's Shawl (H)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Cloth Ensemble.",
+					}),
+					i(167367, {	-- Notorious Gladiator's Greatcloak (H)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Leather Ensemble.",
+					}),
 				}),
 				n(-385, {	-- Finger
 					un(REMOVED_FROM_GAME, i(167375)),	-- Notorious Gladiator's Band
@@ -1140,18 +1236,14 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(171098)),	-- Warlord's Trophy Notorious Duelist
 				un(REMOVED_FROM_GAME, i(171099)),	-- Warlord's Trophy Notorious Elite
 			})),
-			--[[
 			filter(100, {	-- Mounts
 				i(163122, {	-- Vicious War Basilisk (A)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(163121, {	-- Vicious War Basilisk (H)
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
-			--]]
 		}),
 		n(-692, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
 			n(-659, {	-- Aspirant PvP Gear
@@ -1548,18 +1640,14 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(172898)),	-- Warlord's Trophy Corrupted Duelist
 				un(REMOVED_FROM_GAME, i(172899)),	-- Warlord's Trophy Corrupted Elite
 			})),
-			--[[
 			filter(100, {	-- Mounts
 				i(173714, {	-- Vicious White Warsaber (A)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(173713, {	-- Vicious White Bonesteed (H)
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
-			--]]
 		}),
 	})),
 };
@@ -1699,12 +1787,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(167521),	-- Notorious Aspirant's Shield Wall (H)
 				i(169725),	-- Notorious Gladiator's Bonegrinder (A)
 				i(169724),	-- Notorious Gladiator's Bonegrinder
-			}),
-			n(-163, {	-- Armor
-				n(-43, {	-- Cloth
-					i(167291),	-- Notorious Gladiator's Silk Cord (A)
-					i(167241),	-- Notorious Gladiator's Silk Cord (H)
-				}),
 			}),
 		}),
 		n(-692, {	-- Corrupted Gladiator: Battle for Azeroth Season 4

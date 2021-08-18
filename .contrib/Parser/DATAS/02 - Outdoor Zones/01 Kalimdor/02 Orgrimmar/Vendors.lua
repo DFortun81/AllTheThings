@@ -340,21 +340,15 @@ _.Zones =
 						}),
 						i(165020, {	-- Vicious Bonestead (A)
 							["cost"] = { { "i", 103533, 1 }, },
-							-- Remove [u] with 9.1
-							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(163121, {	-- Vicious War Basilisk (A)
 							["cost"] = { { "i", 103533, 1 }, },
-							-- Remove [u] with 9.1
-							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(142235, {	-- Vicious War Bear
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
 						i(163124, {	-- Vicious War Clefthoof (A)
 							["cost"] = { { "i", 103533, 1 }, },
-							-- Remove [u] with 9.1
-							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(152869, {	-- Vicious War Fox
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
@@ -379,8 +373,6 @@ _.Zones =
 						}),
 						i(173713, {	-- Vicious White Bonesteed (A)
 							["cost"] = { { "i", 103533, 1 }, },
-							-- Remove [u] with 9.1
-							["u"] = REMOVED_FROM_GAME,
 						}),
 					}),
 				}),
