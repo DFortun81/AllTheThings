@@ -113,8 +113,8 @@ _.Zones =
 				}),
 				n(180246, {	-- Carriage Crusher
 					["description"] = "The Assault Supply Carriage starts in Korthia, moves to the northeastern bridge out of the Beastwarrens, and then finishes its supply run to the current covenant assault.\n\nWhen the carriage makes it to the bridge, the Carriage Crusher spawns.  You can hop into the carriage to heal it and yourself.",
-				--	["questID"] = 64258 and 64439, both of which also triggered on my first Traitor Balthier kill.  so currently they share a lockout and i'm not sure which quest to put where
-					["isWeekly"] = true,
+					["questID"] = 64258, -- and 64439, both of which also triggered on my first Traitor Balthier kill.  so currently they share a lockout and i'm not sure which quest to put where
+					["isDaily"] = true,
 					["coord"] = { 45.5, 54.8, THE_MAW },
 					["cr"] = 180182,	-- Assault Supply Carriage
 					["g"] = {
@@ -667,7 +667,7 @@ _.Zones =
 					},
 				}),
 				n(179805, {	-- Traitor Balthier
-				--	["questID"] = 64258 and 64439, both of which also triggered on my first completion of the Assault Supply Carriage event. so currently they share a lockout and i'm not sure which quest to put where
+					["questID"] = 64439, -- and 64258, both of which also triggered on my first completion of the Assault Supply Carriage event. so currently they share a lockout and i'm not sure which quest to put where
 					["isDaily"] = true,
 					["coords"] = {	-- TODO: the first few times i saw it, it was up on a ledge, but then it was down on the lowest level, so i'm not sure if it can spawn on multiple levels/needs additional coords or if these coords need to be changed
 						{ 67.5, 48.3, THE_MAW },
@@ -780,8 +780,8 @@ _.HiddenQuestTriggers = {
 	q(62539),	-- Stygian Incinerator bonus objective
 	q(61728),	-- Valis bonus objective
 
-	q(64258),	-- Carriage Crusher / Traitor Balthier
-	q(64439),	-- Carriage Crusher / Traitor Balthier
+	-- q(64258),	-- Carriage Crusher / Traitor Balthier
+	-- q(64439),	-- Carriage Crusher / Traitor Balthier
 	q(64701),	-- Stolen Anima Supplies 2nd trigger ?
 };
 
