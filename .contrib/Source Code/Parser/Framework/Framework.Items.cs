@@ -581,17 +581,24 @@ namespace ATT
                 // Ignore this for Artifacts.
                 if (data.ContainsKey("artifactID")) return;
 
+                // Fix the itemId field if it exists because it makes things break
+                if (data.ContainsKey("itemId"))
+                {
+                    data[ConvertFieldName("itemId")] = data["itemId"];
+                    data.Remove("itemId");
+                }
+
                 // Attempt to extract the itemID from the data table.
                 if (data.ContainsKey("itemID") ||
-                    data.ContainsKey("itemId") ||
                     data.ContainsKey("toyID"))
                 {
                     //long itemID = Convert.ToInt64(itemIDRef);
                     //if (itemID < 1) return;
                     var item = Get(data);
-                    //if (itemID == 183273) { Trace.WriteLine("Before:" + MiniJSON.Json.Serialize(item)); Trace.WriteLine("Merge:" + MiniJSON.Json.Serialize(data)); }
+                    //decimal specificItemID = decimal.Truncate(GetSpecificItemID(data));
+                    //if (specificItemID == 143643) { Trace.WriteLine("Before:" + MiniJSON.Json.Serialize(item)); Trace.WriteLine("Merge:" + MiniJSON.Json.Serialize(data)); }
                     foreach (var pair in data) Merge(item, pair.Key, pair.Value);
-                    //if (itemID == 183273) Trace.WriteLine("After:" + MiniJSON.Json.Serialize(item));
+                    //if (specificItemID == 143643) Trace.WriteLine("After:" + MiniJSON.Json.Serialize(item));
                 }
             }
             #endregion
@@ -721,7 +728,9 @@ namespace ATT
             /// <param name="data">The data dictionary to receive the merged data.</param>
             public static void MergeInto(long itemID, Dictionary<string, object> item, Dictionary<string, object> data)
             {
+                //if (itemID == 143643) { Trace.WriteLine("Before:" + MiniJSON.Json.Serialize(item)); Trace.WriteLine("Pull:" + MiniJSON.Json.Serialize(data)); }
                 foreach (var pair in item) MergeInto(itemID, data, pair.Key, pair.Value);
+                //if (itemID == 143643) { Trace.WriteLine("Data:" + MiniJSON.Json.Serialize(data)); }
             }
 
             /// <summary>
@@ -770,10 +779,8 @@ namespace ATT
                 // Mark this item as having a reference.
                 ITEMS_WITH_REFERENCES[specificItemID] = true;
 
-                //if (itemID == 183273) { Trace.WriteLine("Before:" + MiniJSON.Json.Serialize(item)); Trace.WriteLine("Pull:" + MiniJSON.Json.Serialize(data)); }
                 // Merge the specific item with the data dictionary.
                 MergeInto((long)specificItemID, item, data);
-                //if (itemID == 183273) { Trace.WriteLine("Data:" + MiniJSON.Json.Serialize(data)); }
             }
 
             /// <summary>
