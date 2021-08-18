@@ -1886,7 +1886,7 @@ app.L = {
 		[-595] = GetSpellInfo(228357).." 3",									-- Kill Credit 3
 		-- Need these spells here because if we use them in the file it won't allow the quest to mark as complete due to it not being designed that way.
 		-- This is the workaround.
-		[-600] = "Quest Items",													-- Quest Items
+		[-600] = AUCTION_CATEGORY_QUEST_ITEMS,									-- Quest Items
 
 -- PvP Header
 	-- Special Season Tags
@@ -1923,7 +1923,7 @@ app.L = {
 		[-671] = select(2, GetAchievementInfo(4599))..": Season 8",				-- Wrathful Gladiator: Season 8
 
 	-- Cataclysm PvP Seasons
-		[-650] = "Rated Battleground",											-- Rated Battleground
+		[-650] = PVP_RATED_BATTLEGROUND,										-- Rated Battleground
 		[-672] = select(2, GetAchievementInfo(6002))..": Season 9",				-- Vicious Gladiator: Season 9
 		[-656] = "Honor Gear Ruthless Season",									-- Honor Gear Ruthless (S10)
 		[-673] = select(2, GetAchievementInfo(6124))..": Season 10",			-- Ruthless Gladiator: Season 10

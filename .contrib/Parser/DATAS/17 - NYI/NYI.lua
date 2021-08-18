@@ -1333,7 +1333,7 @@ _.NeverImplemented =
 			i(44874),	-- Greater Inscription of the Storm
 			i(45705),	-- Argent Tournament Invitation
 		}),
-		n(-600, {	-- Quest Item
+		n(-600, {	-- Quest Items
 			i(157772),	-- A Royal Concern
 			i(157775),	-- A Royal Concern
 			i(142362),	-- zzz old fel-etched bone
