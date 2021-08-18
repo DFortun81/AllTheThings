@@ -6313,22 +6313,21 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(100221)),	-- Grievous Gladiator's Drape of Prowess
 						}),
 						n(-326, {	-- Wrists
-							-- From BMAH
-							un(9, i(100447)),	-- Grievous Gladiator's Armbands of Meditation
-							un(9, i(100446)),	-- Grievous Gladiator's Armbands of Prowess
-							un(9, i(100402)),	-- Grievous Gladiator's Armplates of Alacrity
-							un(9, i(100401)),	-- Grievous Gladiator's Armplates of Proficiency
-							un(9, i(100342)),	-- Grievous Gladiator's Armwraps of Accuracy
-							un(9, i(100429)),	-- Grievous Gladiator's Armwraps of Alacrity
-							un(9, i(100267)),	-- Grievous Gladiator's Bindings of Meditation
-							un(9, i(100284)),	-- Grievous Gladiator's Bindings of Prowess
-							un(9, i(100382)),	-- Grievous Gladiator's Bracers of Meditation
-							un(9, i(100381)),	-- Grievous Gladiator's Bracers of Prowess
-							un(9, i(100217)),	-- Grievous Gladiator's Cuffs of Accuracy
-							un(9, i(100219)),	-- Grievous Gladiator's Cuffs of Meditation
-							un(9, i(100218)),	-- Grievous Gladiator's Cuffs of Prowess
-							un(9, i(100317)),	-- Grievous Gladiator's Wristguards of Accuracy
-							un(9, i(100316)),	-- Grievous Gladiator's Wristguards of Alacrity
+							i(100447),	-- Grievous Gladiator's Armbands of Meditation
+							i(100446),	-- Grievous Gladiator's Armbands of Prowess
+							i(100402),	-- Grievous Gladiator's Armplates of Alacrity
+							i(100401),	-- Grievous Gladiator's Armplates of Proficiency
+							i(100342),	-- Grievous Gladiator's Armwraps of Accuracy
+							i(100429),	-- Grievous Gladiator's Armwraps of Alacrity
+							i(100267),	-- Grievous Gladiator's Bindings of Meditation
+							i(100284),	-- Grievous Gladiator's Bindings of Prowess
+							i(100382),	-- Grievous Gladiator's Bracers of Meditation
+							i(100381),	-- Grievous Gladiator's Bracers of Prowess
+							i(100217),	-- Grievous Gladiator's Cuffs of Accuracy
+							i(100219),	-- Grievous Gladiator's Cuffs of Meditation
+							i(100218),	-- Grievous Gladiator's Cuffs of Prowess
+							i(100317),	-- Grievous Gladiator's Wristguards of Accuracy
+							i(100316),	-- Grievous Gladiator's Wristguards of Alacrity
 						}),
 						n(-328, {	-- Waist
 							i(100280),	-- Grievous Gladiator's Belt of Cruelty
@@ -7809,22 +7808,21 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(100718)),	-- Grievous Gladiator's Drape of Prowess
 						}),
 						n(-326, {	-- Wrists
-							-- From BMAH
-							un(9, i(100567)),	-- Grievous Gladiator's Armbands of Meditation
-							un(9, i(100609)),	-- Grievous Gladiator's Armbands of Prowess
-							un(9, i(100717)),	-- Grievous Gladiator's Armplates of Alacrity
-							un(9, i(100648)),	-- Grievous Gladiator's Armplates of Proficiency
-							un(9, i(100657)),	-- Grievous Gladiator's Armwraps of Accuracy
-							un(9, i(100700)),	-- Grievous Gladiator's Armwraps of Alacrity
-							un(9, i(100637)),	-- Grievous Gladiator's Bindings of Meditation
-							un(9, i(100669)),	-- Grievous Gladiator's Bindings of Prowess
-							un(9, i(100711)),	-- Grievous Gladiator's Bracers of Meditation
-							un(9, i(100641)),	-- Grievous Gladiator's Bracers of Prowess
-							un(9, i(100633)),	-- Grievous Gladiator's Cuffs of Accuracy
-							un(9, i(100610)),	-- Grievous Gladiator's Cuffs of Meditation
-							un(9, i(100679)),	-- Grievous Gladiator's Cuffs of Prowess
-							un(9, i(100699)),	-- Grievous Gladiator's Wristguards of Accuracy
-							un(9, i(100634)),	-- Grievous Gladiator's Wristguards of Alacrity
+							i(100567),	-- Grievous Gladiator's Armbands of Meditation
+							i(100609),	-- Grievous Gladiator's Armbands of Prowess
+							i(100717),	-- Grievous Gladiator's Armplates of Alacrity
+							i(100648),	-- Grievous Gladiator's Armplates of Proficiency
+							i(100657),	-- Grievous Gladiator's Armwraps of Accuracy
+							i(100700),	-- Grievous Gladiator's Armwraps of Alacrity
+							i(100637),	-- Grievous Gladiator's Bindings of Meditation
+							i(100669),	-- Grievous Gladiator's Bindings of Prowess
+							i(100711),	-- Grievous Gladiator's Bracers of Meditation
+							i(100641),	-- Grievous Gladiator's Bracers of Prowess
+							i(100633),	-- Grievous Gladiator's Cuffs of Accuracy
+							i(100610),	-- Grievous Gladiator's Cuffs of Meditation
+							i(100679),	-- Grievous Gladiator's Cuffs of Prowess
+							i(100699),	-- Grievous Gladiator's Wristguards of Accuracy
+							i(100634),	-- Grievous Gladiator's Wristguards of Alacrity
 						}),
 						n(-328, {	-- Waist
 							i(100640),	-- Grievous Gladiator's Belt of Cruelty
