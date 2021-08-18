@@ -7227,10 +7227,10 @@ _.PVP =
 							i(138493, {	-- Ensemble: Warmongering Gladiator's Dreadplate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -661, 6 },
-									{"select", "itemID", 125923 },	-- Wild Gladiator's Armplates of Cruelty (A)
-									{"select", "itemID", 125917 },	-- Wild Gladiator's Girdle of Cruelty (A)
-									{"select", "itemID", 125922 },	-- Wild Gladiator's Warboots of Victory (A)
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -661, 6 },
+									{"select", "itemID", 125923 },	-- Warmongering Gladiator's Armplates of Cruelty (A)
+									{"select", "itemID", 125917 },	-- Warmongering Gladiator's Girdle of Cruelty (A)
+									{"select", "itemID", 125922 },	-- Warmongering Gladiator's Warboots of Victory (A)
 									{"exclude", "itemID", 138493 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -8739,10 +8739,10 @@ _.PVP =
 							i(138494, {	-- Ensemble: Warmongering Gladiator's Dreadplate Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -661, 6 },
-									{"select", "itemID", 126402 },	-- Wild Gladiator's Armplates of Cruelty (H)
-									{"select", "itemID", 126396 },	-- Wild Gladiator's Girdle of Cruelty (H)
-									{"select", "itemID", 126401 },	-- Wild Gladiator's Warboots of Victory (H)
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -661, 6 },
+									{"select", "itemID", 126402 },	-- Warmongering Gladiator's Armplates of Cruelty (H)
+									{"select", "itemID", 126396 },	-- Warmongering Gladiator's Girdle of Cruelty (H)
+									{"select", "itemID", 126401 },	-- Warmongering Gladiator's Warboots of Victory (H)
 									{"exclude", "itemID", 138494 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
