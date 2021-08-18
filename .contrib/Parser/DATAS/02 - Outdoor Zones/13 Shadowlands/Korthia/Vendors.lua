@@ -13,6 +13,9 @@ _.Zones =
 						i(186648, {	-- Soaring Razorwing (MOUNT!)
 							["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Stygia
 						}),
+						i(184665, {	-- Chronicle of Lost Memories
+							["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
+						}),
 					--	Epics
 						i(187134, {	-- Alloy-Warping Facetor
 							["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Catalogued Research
