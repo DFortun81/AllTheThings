@@ -1043,6 +1043,7 @@ _.HiddenQuestTriggers = {
 	-- q(64121),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
 	q(64151),	-- Completed at the same time as 63669 (Somebody Feed Kevin)
 	q(64315),	-- Ve'nari paragon chest
+	-- q(64627),	-- popped after turning in 'Setting the Ground Rules' (62882) on a fresh alt
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

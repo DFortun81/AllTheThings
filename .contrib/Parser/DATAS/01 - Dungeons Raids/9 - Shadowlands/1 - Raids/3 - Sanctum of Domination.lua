@@ -1304,6 +1304,8 @@ _.HiddenQuestTriggers = {
 	q(64686),	-- Stygian Ember from Screamspike (Normal)
 	q(64620),	-- Stygian Ember from Screamspike (Heroic)
 	q(64687),	-- Stygian Ember from Screamspike (Heroic)
+	q(64621),	-- Screamspike (Mythic)
+	q(64688),	-- Screamspike (Mythic)
 
 	q(64326),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
 	q(64327),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
@@ -1349,30 +1351,35 @@ _.HiddenQuestTriggers = {
 	q(64487),	-- Painsmith Raznal (Heroic) (Heroic-Week 2)
 	q(64634),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
 	q(64661),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
+	-- q( ),	-- Painsmith Raznal (Mythic)
 
 	q(64489),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
 	q(64490),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
 	q(64491),	-- Guardian of the First Ones (Heroic) (Heroic-Week 2)
 	q(64635),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
 	q(64662),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
+	-- q( ),	-- Guardian of the First Ones (Mythic)
 
 	q(64493),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
 	q(64494),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
 	q(64495),	-- Fatescribe Roh-Kalo (Heroic) / (Heroic-Week 2)
 	q(64636),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
 	q(64663),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
+	-- q( ),	-- Fatescribe Roh-Kalo (Mythic)
 
 	q(64497),	-- Kel'Thuzad (Normal)?
 	q(64498),	-- Kel'Thuzad (Normal)?
 	q(64499),	-- Kel'Thuzad (Heroic)
 	q(64637),	-- Kel'Thuzad (Normal)?
 	q(64664),	-- Kel'Thuzad (Normal)?
+	-- q( ),	-- Kel'Thuzad (Mythic)
 
 	q(64501),	-- Sylvanas Windrunner (Normal)?
 	q(64502),	-- Sylvanas Windrunner (Normal)?
 	q(64638),	-- Sylvanas Windrunner (Normal)?
 	q(64665),	-- Sylvanas Windrunner (Normal)?
 	q(64503),	-- Sylvanas Windrunner (Heroic)
+	-- q( ),	-- Sylvanas Windrunner (Mythic)
 
 	q(64707),	-- Sylvanas Windrunner Cinematic?
 };

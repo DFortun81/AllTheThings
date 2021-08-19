@@ -806,12 +806,11 @@ _.WorldEvents =
 			q(12517, {	-- Rogues Deck
 				["repeatable"] = true,
 				["provider"] = { "i", 37163 },	-- Rogues Deck
-				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					i(38318),	-- Darkmoon Robe
-					i(39509),	-- Darkmoon Vest
 					i(39507),	-- Darkmoon Breastplate
 					i(131276),	-- Darkmoon Chainmail
+					i(38318),	-- Darkmoon Robe
+					i(39509),	-- Darkmoon Vest
 				},
 			}),
 			q(38934, {	-- Sila's Secret Stash

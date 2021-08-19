@@ -946,21 +946,16 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				}),
 			}),
 			i(37168, {	-- Mysterious Tarot
-				i(37163, {	-- Rogues Deck
-					i(39507),		-- Darkmoon Breastplate
-					i(131276),	-- Darkmoon Chainmail
-					i(38318),		-- Darkmoon Robe
-					i(39509),		-- Darkmoon Vest
-				}),
-				i(37140, {	-- Ace of Rogues
-					["sym"] = {{"select", "itemID", 37163}, {"pop"}},	-- Rogues Deck
-				}),
-				i(37143, {	-- Two of Rogues
-					["sym"] = {{"select", "itemID", 37163}, {"pop"}},	-- Rogues Deck
-				}),
-				i(37156, {	-- Three of Rogues
-					["sym"] = {{"select", "itemID", 37163}, {"pop"}},	-- Rogues Deck
-				}),
+				i(37140),	-- Ace of Rogues
+				i(37143),	-- Two of Rogues
+				i(37156),	-- Three of Rogues
+			}),
+			i(37163, {	-- Rogues Deck
+				["cost"] = {
+					{ "i", 37140, 1 },	-- Ace of Rogues
+					{ "i", 37143, 1 },	-- Two of Rogues
+					{ "i", 37156, 1 },	-- Three of Rogues
+				},
 			}),
 			i(44163, {	-- Shadowy Tarot
 				i(44158, {	-- Demons Deck

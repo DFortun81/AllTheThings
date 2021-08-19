@@ -117,6 +117,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 45.5, 54.8, THE_MAW },
 					["cr"] = 180182,	-- Assault Supply Carriage
+					["maps"] = { KORTHIA, },	-- show in Korthia as well since it spawns there
 					["g"] = {
 						crit(2, {	-- Carriage Crusher
 							["achievementID"] = 15107,	-- Conquering Korthia

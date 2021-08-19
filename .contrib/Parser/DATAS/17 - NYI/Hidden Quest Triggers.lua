@@ -882,6 +882,7 @@ _.HiddenQuestTriggers = {
 		q(57668),	-- Triggering when using a portal to Orgrimmar as Horde/to Ironforge as Alliance after Dec 25th during the Feast of Winter Veil 2019
 		--- (seems to trigger only the first time you go there that day). Possibly used to determine loot eligibility?
 		q(31990),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
+		q(39695),	-- triggers randomly after random boss encounters are killed/wiped (Mythic Sire Denathrius, Mythic Soulrender Dormazain)
 
 		-- Events/Holidays
 		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
