@@ -135,18 +135,24 @@ _.Achievements =
 					ach(11162),		-- Keystone Master
 					ach(11163),		-- Glory of the Legion Hero
 				}),
-				a(ach(10749, {	-- Fighting with Style: War-torn [A]
-					crit(1),		-- The Prestige
-					crit(2),		-- Crest of Heroism
-					crit(3),		-- Crest of Carnage
-					crit(4),		-- Crest of Devastation
-				})),
-				h(ach(11173, {	-- Fighting with Style: War-torn [H]
-					crit(1),		-- The Prestige
-					crit(2),		-- Crest of Heroism
-					crit(3),		-- Crest of Carnage
-					crit(4),		-- Crest of Devastation
-				})),
+				ach(10749, {	-- Fighting with Style: War-torn (A)
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(1),		-- Honor Level 10
+						crit(2),		-- Honor Level 30
+						crit(3),		-- Honor Level 50
+						crit(4),		-- Honor Level 80
+					},
+				}),
+				ach(11173, {	-- Fighting with Style: War-torn (H)
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1),		-- Honor Level 10
+						crit(2),		-- Honor Level 30
+						crit(3),		-- Honor Level 50
+						crit(4),		-- Honor Level 80
+					},
+				}),
 				ach(10460),			-- Hidden Potential
 				ach(11213, {		-- Lead a Legion (100)
 					ach(11212),		-- Raise an Army (20)
@@ -160,8 +166,14 @@ _.Achievements =
 					ach(11214),		-- Many Missions (10)
 				}),
 				ach(11219),			-- Need Backup
-				a(ach(10743)),	-- The Prestige [A] — Still in WoW UI as of 8.2
-				h(ach(10745)),	-- The Prestige [H] — Still in WoW UI as of 8.2
+				ach(10743, {	-- The Prestige (A)
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(10745, {	-- The Prestige (H)
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 			},
 		}),
 	}),
