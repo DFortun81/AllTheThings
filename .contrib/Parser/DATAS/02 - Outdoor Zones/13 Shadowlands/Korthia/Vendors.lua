@@ -43,6 +43,7 @@ _.Zones =
 							["cost"] = { { "c", 1931, 2500 } },	-- 2,500x Catalogued Research
 						}),
 						i(186717, {	-- Research Report: Adaptive Alloys
+							["questID"] = 64300,
 							["cost"] = { { "c", 1931, 4000 } },	-- 4,000x Catalogued Research
 						}),
 						i(186714, {	-- Research Report: All-Seeing Crystal
