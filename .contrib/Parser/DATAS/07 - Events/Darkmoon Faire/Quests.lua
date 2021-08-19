@@ -36,7 +36,7 @@ _.WorldEvents =
 					}),
 					q(7907,  {	-- Darkmoon Beast Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
+						["provider"] = { "i", 19228 },	-- Beasts Deck
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 60,
 						["g"] = {
@@ -83,7 +83,7 @@ _.WorldEvents =
 					}),
 					q(7929,  {	-- Darkmoon Elementals Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
+						["provider"] = { "i", 19267 },	-- Elementals Deck
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 60,
 						["g"] = {
@@ -145,7 +145,7 @@ _.WorldEvents =
 					}),
 					q(7927,  {	-- Darkmoon Portals Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
+						["provider"] = { "i", 19277 },	-- Portals Deck
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 60,
 						["g"] = {
@@ -220,7 +220,7 @@ _.WorldEvents =
 					}),
 					q(7928,  {	-- Darkmoon Warlords Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
+						["provider"] = { "i", 19257 },	-- Warlords Deck
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 60,
 						["g"] = {

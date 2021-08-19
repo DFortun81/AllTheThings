@@ -835,120 +835,80 @@ _.Craftables = { tier(CLASSIC_TIER, {
 					["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
 				}),
 			}),
+			i(19228, {	-- Beasts Deck
+				["cost"] = {
+					{ "i", 19227, 1 },	-- Ace of Beasts
+					{ "i", 19230, 1 },	-- Two of Beasts
+					{ "i", 19231, 1 },	-- Three of Beasts
+					{ "i", 19232, 1 },	-- Four of Beasts
+					{ "i", 19233, 1 },	-- Five of Beasts
+					{ "i", 19234, 1 },	-- Six of Beasts
+					{ "i", 19235, 1 },	-- Seven of Beasts
+					{ "i", 19236, 1 },	-- Eight of Beasts
+				},
+			}),
 			i(44316, {	-- Darkmoon Card
-				i(19228, {	-- Beasts Deck
-					i(19288),	-- Darkmoon Card: Blue Dragon
-				}),
-				i(19267, {	-- Elementals Deck
-					i(19289),	-- Darkmoon Card: Maelstrom
-				}),
-				i(19277, {	-- Portals Deck
-					i(19290),	-- Darkmoon Card: Twisting Nether
-				}),
-				i(19257, {	-- Warlords Deck
-					i(19287),	-- Darkmoon Card: Heroism
-				}),
-				i(19227, {	-- Ace of Beasts
-					["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-				}),
-				i(19230, {	-- Two of Beasts
-					["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-				}),
-				i(19231, {	-- Three of Beasts
-					["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-				}),
-				i(19232, {	-- Four of Beasts
-					["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-				}),
-				i(19233, {	-- Five of Beasts
-					["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-				}),
-				i(19234, {	-- Six of Beasts
-					["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-				}),
-				i(19235, {	-- Seven of Beasts
-					["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-				}),
-				i(19236, {	-- Eight of Beasts
-					["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-				}),
-				i(19268, {	-- Ace of Elementals
-					["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-				}),
-				i(19269, {	-- Two of Elementals
-					["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-				}),
-				i(19270, {	-- Three of Elementals
-					["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-				}),
-				i(19271, {	-- Four of Elementals
-					["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-				}),
-				i(19272, {	-- Five of Elementals
-					["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-				}),
-				i(19273, {	-- Six of Elementals
-					["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-				}),
-				i(19274, {	-- Seven of Elementals
-					["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-				}),
-				i(19275, {	-- Eight of Elementals
-					["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-				}),
-				i(19276, {	-- Ace of Portals
-					["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-				}),
-				i(19278, {	-- Two of Portals
-					["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-				}),
-				i(19279, {	-- Three of Portals
-					["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-				}),
-				i(19280, {	-- Four of Portals
-					["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-				}),
-				i(19281, {	-- Five of Portals
-					["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-				}),
-				i(19282, {	-- Six of Portals
-					["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-				}),
-				i(19283, {	-- Seven of Portals
-					["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-				}),
-				i(19284, {	-- Eight of Portals
-					["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-				}),
-				i(19258, {	-- Ace of Warlords
-					["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-				}),
-				i(19259, {	-- Two of Warlords
-					["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-				}),
-				i(19260, {	-- Three of Warlords
-					["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-				}),
-				i(19261, {	-- Four of Warlords
-					["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-				}),
-				i(19262, {	-- Five of Warlords
-					["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-				}),
-				i(19263, {	-- Six of Warlords
-					["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-				}),
-				i(19264, {	-- Seven of Warlords
-					["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-				}),
-				i(19265, {	-- Eight of Warlords
-					["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-				}),
+				i(19227),	-- Ace of Beasts
+				i(19230),	-- Two of Beasts
+				i(19231),	-- Three of Beasts
+				i(19232),	-- Four of Beasts
+				i(19233),	-- Five of Beasts
+				i(19234),	-- Six of Beasts
+				i(19235),	-- Seven of Beasts
+				i(19236),	-- Eight of Beasts
+				i(19268),	-- Ace of Elementals
+				i(19269),	-- Two of Elementals
+				i(19270),	-- Three of Elementals
+				i(19271),	-- Four of Elementals
+				i(19272),	-- Five of Elementals
+				i(19273),	-- Six of Elementals
+				i(19274),	-- Seven of Elementals
+				i(19275),	-- Eight of Elementals
+				i(19276),	-- Ace of Portals
+				i(19278),	-- Two of Portals
+				i(19279),	-- Three of Portals
+				i(19280),	-- Four of Portals
+				i(19281),	-- Five of Portals
+				i(19282),	-- Six of Portals
+				i(19283),	-- Seven of Portals
+				i(19284),	-- Eight of Portals
+				i(19258),	-- Ace of Warlords
+				i(19259),	-- Two of Warlords
+				i(19260),	-- Three of Warlords
+				i(19261),	-- Four of Warlords
+				i(19262),	-- Five of Warlords
+				i(19263),	-- Six of Warlords
+				i(19264),	-- Seven of Warlords
+				i(19265),	-- Eight of Warlords
+			}),
+			i(19267, {	-- Elementals Deck
+				["cost"] = {
+					{ "i", 19268, 1 },	-- Ace of Elementals
+					{ "i", 19269, 1 },	-- Two of Elementals
+					{ "i", 19270, 1 },	-- Three of Elementals
+					{ "i", 19271, 1 },	-- Four of Elementals
+					{ "i", 19272, 1 },	-- Five of Elementals
+					{ "i", 19273, 1 },	-- Six of Elementals
+					{ "i", 19274, 1 },	-- Seven of Elementals
+					{ "i", 19275, 1 },	-- Eight of Elementals
+				},
 			}),
 			i(37168, {	-- Mysterious Tarot
 				i(37140),	-- Ace of Rogues
 				i(37143),	-- Two of Rogues
 				i(37156),	-- Three of Rogues
+			}),
+			i(19277, {	-- Portals Deck
+				["cost"] = {
+					{ "i", 19276, 1 },	-- Ace of Portals
+					{ "i", 19278, 1 },	-- Two of Portals
+					{ "i", 19279, 1 },	-- Three of Portals
+					{ "i", 19280, 1 },	-- Four of Portals
+					{ "i", 19281, 1 },	-- Five of Portals
+					{ "i", 19282, 1 },	-- Six of Portals
+					{ "i", 19283, 1 },	-- Seven of Portals
+					{ "i", 19284, 1 },	-- Eight of Portals
+				},
 			}),
 			i(37163, {	-- Rogues Deck
 				["cost"] = {
@@ -998,6 +958,18 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(37160, {	-- Four of Swords
 					["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
 				}),
+			}),
+			i(19257, {	-- Warlords Deck
+				["cost"] = {
+					{ "i", 19258, 1 },	-- Ace of Warlords
+					{ "i", 19259, 1 },	-- Two of Warlords
+					{ "i", 19260, 1 },	-- Three of Warlords
+					{ "i", 19261, 1 },	-- Four of Warlords
+					{ "i", 19262, 1 },	-- Five of Warlords
+					{ "i", 19263, 1 },	-- Six of Warlords
+					{ "i", 19264, 1 },	-- Seven of Warlords
+					{ "i", 19265, 1 },	-- Eight of Warlords
+				},
 			}),
 		}),
 		filter(1, {	-- Off-hand
