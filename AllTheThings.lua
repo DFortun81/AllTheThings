@@ -1500,23 +1500,30 @@ app.IsComplete = function(o)
 end
 app.GetSourceID = GetSourceID;
 app.MaximumItemInfoRetries = 400;
-local function GetUnobtainableTexture(group)
-	if not group.u then return; end
+local function GetUnobtainableTexture(groupORu)
 	-- old reasons are set to 0, so use 1 instead
 	-- if unobtainable stuff changes again, this logic may need to adjust
-	local obtainType = group.u;
-	local index = L["UNOBTAINABLE_ITEM_REASONS"][obtainType][1];
-	if group.itemID or group.spellID then
-		-- not NYI
-		if obtainType > 1 and
-			-- is BoE
-			not app.IsBoP(group)
-			then
+	local u = type(groupORu) == "table" and groupORu.u or groupORu;
+	-- non-unobtainable group
+	if not u then return; end
+	local record;
+	if type(groupORu) == "table" and (groupORu.itemID or groupORu.spellID) then
+		-- not NYI & BoE
+		if u > 1 and not app.IsBoP(groupORu) then
 			-- green dot for 'possible'
-			index = 3;
+			record = 3;
 		end
 	end
-	return L["UNOBTAINABLE_ITEM_TEXTURES"][index or 0];
+	record = record or L["UNOBTAINABLE_ITEM_REASONS"][u];
+	-- found an unobtainable record, so grab the texture index [1]
+	if record then
+		record = record[1];
+	else
+		-- otherwise it's an invalid unobtainable filter
+		app.print("Invalid Unobtainable Filter:",u);
+		return;
+	end
+	return L["UNOBTAINABLE_ITEM_TEXTURES"][record or 0];
 end
 -- Returns an applicable Indicator Icon Texture for the specific group if one can be determined
 app.GetIndicatorIcon = function(group)
@@ -3527,38 +3534,40 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- Create a list of sources
 	if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
-		local temp = {};
-		local unfiltered = {};
+		local temp, text = {};
+		local unfiltered, uTexture = {};
 		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
 		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
 		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
 		local abbrevs = L["ABBREVIATIONS"];
 		for i,j in ipairs(group.g or group) do
 			if j.parent and not j.parent.hideText and j.parent.parent and (showCompleted or not app.IsComplete(j)) and not app.HasCost(j, paramA, paramB) then
-				local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
+				text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
 				if showUnsorted or (not string.match(text, L["UNSORTED_1"]) and not string.match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
 					for source,replacement in pairs(abbrevs) do
 						text = string.gsub(text, source, replacement);
 					end
-					if j.u then
-						local unobTexture = GetUnobtainableTexture(j);
-						if unobTexture then
-							tinsert(unfiltered, text .. " |T" .. unobTexture .. ":0|t");
-						else
-							tinsert(unfiltered, text);
-						end
-					elseif not app.RecursiveClassAndRaceFilter(j.parent) then
-						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
-					elseif not app.RecursiveUnobtainableFilter(j.parent) then
+					-- doesn't meet current unobtainable filters
+					if not app.RecursiveUnobtainableFilter(j) then
 						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
+					-- from obtainable, different character source
+					elseif not app.RecursiveClassAndRaceFilter(j) then
+						tinsert(temp, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
 					else
+						-- check if this needs an unobtainable icon even though it's being shown
+						uTexture = GetUnobtainableTexture(j.u or app.RecursiveFirstParentWithField(j.parent, "u"));
+						-- add the texture to the source line
+						if uTexture then
+							text = text .. " |T" .. uTexture .. ":0|t";
+						end
 						tinsert(temp, text);
 					end
 				end
 			end
 		end
-		if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or app.MODE_DEBUG then
-			for i,j in ipairs(unfiltered) do
+		-- if in Debug or no sources visible, add any unfiltered sources
+		if app.MODE_DEBUG or (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) then
+			for _,j in ipairs(unfiltered) do
 				tinsert(temp, j);
 			end
 		end
