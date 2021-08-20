@@ -85,7 +85,7 @@ _.HiddenQuestTriggers = {
 	q(64405),	-- hitting Renown 48 [Priest] (received Memory of Spheres' Harmony)
 	-- q( ),	-- hitting Renown 48 [Rogue] (received Memory of ??)
 	q(64409),	-- hitting Renown 48 [Shaman] (received Memory of the Raging Vesper Vortex)
-	-- q( ),	-- hitting Renown 48 [Warlock] (received Memory of ??)
+	q(64412),	-- hitting Renown 48 [Warlock] (received Memory of the Languishing Soul Detritus)
 	-- q( ),	-- hitting Renown 48 [Warrior] (received Memory of ??)
 	q(64145),	-- hitting Renown 50
 	q(64443),	-- hitting Renown 52
