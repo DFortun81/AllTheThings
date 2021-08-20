@@ -815,25 +815,11 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		}),
 		n(-491, {	-- Tarot Cards
 			i(44161, {	-- Arcane Tarot
-				i(44148, {	-- Mages Deck
-					i(44215),	-- Darkmoon Necklace
-					i(44213),	-- Darkmoon Pendant
-				}),
-				i(44165, {	-- Ace of Mages
-					["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
-				}),
-				i(44144, {	-- Two of Mages
-					["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
-				}),
-				i(44145, {	-- Three of Mages
-					["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
-				}),
-				i(44146, {	-- Four of Mages
-					["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
-				}),
-				i(44147, {	-- Five of Mages
-					["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
-				}),
+				i(44165),	-- Ace of Mages
+				i(44144),	-- Two of Mages
+				i(44145),	-- Three of Mages
+				i(44146),	-- Four of Mages
+				i(44147),	-- Five of Mages
 			}),
 			i(19228, {	-- Beasts Deck
 				["cost"] = {
@@ -881,6 +867,15 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(19264),	-- Seven of Warlords
 				i(19265),	-- Eight of Warlords
 			}),
+			i(44158, {	-- Demons Deck
+				["cost"] = {
+					{ "i", 44143, 1 },	-- Ace of Demons
+					{ "i", 44154, 1 },	-- Two of Demons
+					{ "i", 44155, 1 },	-- Three of Demons
+					{ "i", 44156, 1 },	-- Four of Demons
+					{ "i", 44157, 1 },	-- Five of Demons
+				},
+			}),
 			i(19267, {	-- Elementals Deck
 				["cost"] = {
 					{ "i", 19268, 1 },	-- Ace of Elementals
@@ -891,6 +886,15 @@ _.Craftables = { tier(CLASSIC_TIER, {
 					{ "i", 19273, 1 },	-- Six of Elementals
 					{ "i", 19274, 1 },	-- Seven of Elementals
 					{ "i", 19275, 1 },	-- Eight of Elementals
+				},
+			}),
+			i(44148, {	-- Mages Deck
+				["cost"] = {
+					{ "i", 44165, 1 },	-- Ace of Mages
+					{ "i", 44144, 1 },	-- Two of Mages
+					{ "i", 44145, 1 },	-- Three of Mages
+					{ "i", 44146, 1 },	-- Four of Mages
+					{ "i", 44147, 1 },	-- Five of Mages
 				},
 			}),
 			i(37168, {	-- Mysterious Tarot
@@ -918,46 +922,25 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				},
 			}),
 			i(44163, {	-- Shadowy Tarot
-				i(44158, {	-- Demons Deck
-					i(44217),	-- Darkmoon Dirk
-					i(44218),	-- Darkmoon Executioner
-					i(44219),	-- Darkmoon Magestaff
-				}),
-				i(44143, {	-- Ace of Demons
-					["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
-				}),
-				i(44154, {	-- Two of Demons
-					["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
-				}),
-				i(44155, {	-- Three of Demons
-					["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
-				}),
-				i(44156, {	-- Four of Demons
-					["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
-				}),
-				i(44157, {	-- Five of Demons
-					["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
-				}),
+				i(44143),	-- Ace of Demons
+				i(44154),	-- Two of Demons
+				i(44155),	-- Three of Demons
+				i(44156),	-- Four of Demons
+				i(44157),	-- Five of Demons
 			}),
 			i(44142, {	-- Strange Tarot
-				i(37164, {	-- Swords Deck
-					i(39897),	-- Azure Shoulderguards
-					i(39895),	-- Cloaked Shoulderpads
-					i(39894),	-- Darkcloth Shoulders
-					i(131277),	-- Veiled Pauldrons
-				}),
-				i(37145, {	-- Ace of Swords
-					["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
-				}),
-				i(37147, {	-- Two of Swords
-					["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
-				}),
-				i(37159, {	-- Three of Swords
-					["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
-				}),
-				i(37160, {	-- Four of Swords
-					["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
-				}),
+				i(37145),	-- Ace of Swords
+				i(37147),	-- Two of Swords
+				i(37159),	-- Three of Swords
+				i(37160),	-- Four of Swords
+			}),
+			i(37164, {	-- Swords Deck
+				["cost"] = {
+					{ "i", 37145, 1 },	-- Ace of Swords
+					{ "i", 37147, 1 },	-- Two of Swords
+					{ "i", 37159, 1 },	-- Three of Swords
+					{ "i", 37160, 1 },	-- Four of Swords
+				},
 			}),
 			i(19257, {	-- Warlords Deck
 				["cost"] = {

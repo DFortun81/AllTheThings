@@ -510,6 +510,15 @@ _.WorldEvents =
 					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
 				},
 			}),
+			q(13311, {	-- Demons Deck
+				["provider"] = { "i", 44158 },	-- Demons Deck
+				["repeatable"] = true,
+				["g"] = {
+					i(44217),	-- Darkmoon Dirk
+					i(44218),	-- Darkmoon Executioner
+					i(44219),	-- Darkmoon Magestaff
+				},
+			}),
 			q(33354, {	-- Den Mother's Demise
 				["creatureID"] = 71992,	-- Moonfang
 				["isMonthly"] = true,
@@ -673,7 +682,6 @@ _.WorldEvents =
 			}),
 			q(12518, {	-- Mages Deck
 				["provider"] = { "i", 44148 },	-- Mages Deck
-				["requireSkill"] = INSCRIPTION,
 				["repeatable"] = true,
 				["g"] = {
 					i(44215),	-- Darkmoon Necklace
@@ -866,7 +874,6 @@ _.WorldEvents =
 			q(12798, {	-- Swords Deck
 				["repeatable"] = true,
 				["provider"] = { "i", 37164 },	-- Swords Deck
-				["requireSkill"] = INSCRIPTION,
 				["g"] = {
 					i(39897),	-- Azure Shoulderguards
 					i(39895),	-- Cloaked Shoulderpads
