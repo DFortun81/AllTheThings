@@ -1503,27 +1503,25 @@ app.MaximumItemInfoRetries = 400;
 local function GetUnobtainableTexture(groupORu)
 	-- old reasons are set to 0, so use 1 instead
 	-- if unobtainable stuff changes again, this logic may need to adjust
-	local u = type(groupORu) == "table" and groupORu.u or groupORu;
+	local isTable = type(groupORu) == "table";
+	local u = isTable and groupORu.u or groupORu;
 	-- non-unobtainable group
 	if not u then return; end
-	local record;
-	if type(groupORu) == "table" and (groupORu.itemID or groupORu.spellID) then
-		-- not NYI & BoE
-		if u > 1 and not app.IsBoP(groupORu) then
-			-- green dot for 'possible'
-			record = 3;
+	-- non-NYI item or spell which is BoE, use green dot
+	if isTable and (groupORu.itemID or groupORu.spellID) and u > 1 and not app.IsBoP(groupORu) then
+		u = 3;
+	else
+		local record = L["UNOBTAINABLE_ITEM_REASONS"][u];
+		if record then
+			u = record[1];
+		else
+			-- otherwise it's an invalid unobtainable filter
+			app.print("Invalid Unobtainable Filter:",u);
+			return;
 		end
 	end
-	record = record or L["UNOBTAINABLE_ITEM_REASONS"][u];
 	-- found an unobtainable record, so grab the texture index [1]
-	if record then
-		record = record[1];
-	else
-		-- otherwise it's an invalid unobtainable filter
-		app.print("Invalid Unobtainable Filter:",u);
-		return;
-	end
-	return L["UNOBTAINABLE_ITEM_TEXTURES"][record or 0];
+	return L["UNOBTAINABLE_ITEM_TEXTURES"][u or 0];
 end
 -- Returns an applicable Indicator Icon Texture for the specific group if one can be determined
 app.GetIndicatorIcon = function(group)
