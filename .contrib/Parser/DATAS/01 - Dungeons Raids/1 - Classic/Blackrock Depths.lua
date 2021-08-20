@@ -891,6 +891,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 						i(10602),   -- Schematic: Deadly Scope
 				}),
 				n(12944, {			-- Lokhtos Darkbargainer <The Thorium Brotherhood>
+					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
 					["g"] = {
 						i(18628, {	-- Thorium Brotherhood Contract
 							q(7604, {	-- A Binding Contract
@@ -927,7 +928,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 						i(19212),	-- Plans: Nightfall
 						i(20761),	-- Recipe: Transmute Elemental Fire
 					},
-					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
 				}),
 				cr(9156, e(384, {	-- Ambassador Flamelash
 					i(11809),	-- Flame Wrath
@@ -937,26 +937,30 @@ _.Instances = { tier(CLASSIC_TIER, {
 					i(11832),	-- Burst of Knowledge
 				})),
 				n(8923, {			-- Panzor the Invincible
+					["description"] = "This is a rare that is not always present.",
 					["g"] = {
 						i(22245),	-- Soot Encrusted Footwear
 						i(11787),	-- Shalehusk Boots
 						i(11786),	-- Stone of the Earth
 						i(11785),	-- Rock Golem Bulwark
 					},
-					["description"] = "This is a rare that is not always present.",
 				}),
 				n(9037, {			-- Gloom'rel
-					["description"] = "If you are a miner, speak with Gloom'rel to have him summon the Spectral Chalice so you can learn to smelt Dark Iron Ore.\nThe quest requires 2x Star Ruby, 20x Gold Bar, and 10x Truesilver Bar to complete.",
 					["requireSkill"] = MINING,
+					["description"] = "If you are a miner, speak with Gloom'rel to have him summon the Spectral Chalice.\n\nAfter you deposit the required items, speak to Gloom'rel again to learn how to smelt Dark Iron Ore.",
 					["g"] = {
-						{
-							--["objectID"] = 164869,	-- The Spectral Chalice (Object)
-							["questID"] = 4083,		-- The Spectral Chalice (Quest)
+						q(4083, {	-- The Spectral Chalice
+							["provider"] = { "o", 164869 },	-- The Spectral Chalice
 							["icon"] = "Interface\\Icons\\INV_Misc_Bowl_01",
-							["g"] = {
-								recipe(14891),		-- Smelt Dark Iron (Recipe)
+							["cost"] = {
+								{ "i", 3577, 20 },	-- 20x Gold Bar
+								{ "i", 7910, 2 },	-- 2x Star Ruby
+								{ "i", 6037, 10 },	-- 10x Truesilver Bar
 							},
-						},
+							["g"] = {
+								recipe(14891),	-- Smelt Dark Iron
+							},
+						}),
 					},
 				}),
 				cr(9039, e(385, {	-- The Seven
