@@ -624,15 +624,6 @@ _.PVP =
 							}),
 						}),
 						n(VENDORS, {
-							n(154478, {	-- Prospector Stonehewer
-							--	["coord"] = { , 91 },
-								["races"] = ALLIANCE_ONLY,
-								["g"] = {
-									i(169297, {	-- Stormpike Insignia
-										["sourceQuests"] = { 56256 },	-- The Battle for Alterac (A)
-									}),
-								},
-							}),
 							n(13216, {	-- Gaelden Hammersmith <Stormpike Supply Officer>
 								["itemID"] = 137642,	-- Mark of Honor
 								["races"] = ALLIANCE_ONLY,
@@ -711,6 +702,17 @@ _.PVP =
 									}),
 									i(21563, {	-- Don Rodrigo's Band
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									un(REMOVED_FROM_GAME, i(19320)),	-- Gnoll Skin Bandolier
+									un(REMOVED_FROM_GAME, i(19319)),	-- Harpy Hide Quiver
+								},
+							}),
+							n(154478, {	-- Prospector Stonehewer
+							--	["coord"] = { , 91 },
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									i(169297, {	-- Stormpike Insignia
+										["sourceQuests"] = { 56256 },	-- The Battle for Alterac (A)
 									}),
 								},
 							}),
