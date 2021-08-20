@@ -544,13 +544,10 @@ _.PVP =
 					}),
 				}),
 				cl(PRIEST, {
-					i(146615, {	-- Ensemble: Gladiator's Satin Armor
+					i(146615, {	-- Ensemble: Gladiator's Satin Armor -- Confirmed August 2021 here+Outdoor BC
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", -10003, -664, -661, 5 },
-							{"select", "itemID", 147613 },	-- General's Satin Cord
-							{"select", "itemID", 147614 },	-- General's Satin Slippers
-							{"select", "itemID", 147771 },  -- General's Satin Cuffs
 							{"exclude", "itemID", 146615 },	-- Exclude itself to stop duplicating
 						},
 						["g"] = {
@@ -584,6 +581,9 @@ _.PVP =
 							i(27711, {	-- Gladiator's Satin Robe
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
+							i(147613),	-- General's Satin Cord
+							i(147614),	-- General's Satin Slippers
+							i(47771),  -- General's Satin Cuffs
 						},
 					}),
 				}),
@@ -686,7 +686,7 @@ _.PVP =
 					}),
 				}),
 				cl(WARLOCK, {
-					i(146611, {	-- Ensemble: Gladiator's Felweave Armor
+					i(146611, {	-- Ensemble: Gladiator's Felweave Armor -- Confirmed August 2021 here+Outdoor BC
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", -10003, -664, -661, 9 },
@@ -699,14 +699,8 @@ _.PVP =
 							i(24556, {	-- Gladiator's Dreadweave Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
-							i(24553, {	-- Gladiator's Dreadweave Hood
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
 							i(24555, {	-- Gladiator's Dreadweave Leggings
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(24554, {	-- Gladiator's Dreadweave Mantle
-								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 							i(24552, {	-- Gladiator's Dreadweave Robe
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1127,7 +1121,7 @@ _.PVP =
 						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", -10003, -665, -661 },
 							{"exclude", "itemID", 146650 },	-- Exclude itself to stop duplicating
-							},
+						},
 						["g"] = {
 							i(28302),	--  Gladiator's Bonecracker
 							i(28299),	--  Gladiator's Bonegrinder
@@ -1423,13 +1417,10 @@ _.PVP =
 					}),
 				}),
 				cl(PRIEST, {
-					i(146625, {	-- Ensemble: Merciless Gladiator's Satin Armor
+					i(146625, {	-- Ensemble: Merciless Gladiator's Satin Armor -- Confirmed August 2021 here+Outdoor BC
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", -10003, -665, -661, 5 },
-							{"select", "itemID", 32980 },	-- Veteran's Mooncloth Cuffs
-							{"select", "itemID", 32979 },	-- Veteran's Mooncloth Belt
-							{"select", "itemID", 147609 },	-- Veteran's Satin Slippers
 							{"exclude", "itemID", 146625 },	-- Exclude itself to stop duplicating
 						},
 						["g"] = {
@@ -1463,6 +1454,9 @@ _.PVP =
 							i(32038, {	-- Merciless Gladiator's Satin Robe
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
+							i(32980),	-- Veteran's Mooncloth Cuffs
+							i(32979),	-- Veteran's Mooncloth Belt
+							i(147609),	-- Veteran's Satin Slippers
 						},
 					}),
 				}),
@@ -1564,7 +1558,7 @@ _.PVP =
 					}),
 				}),
 				cl(WARLOCK, {
-					i(146621, {	-- Ensemble: Merciless Gladiator's Felweave Armor
+					i(146621, {	-- Ensemble: Merciless Gladiator's Felweave Armor -- Confirmed August 2021 here+Outdoor BC
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", -10003, -665, -661, 9 },
