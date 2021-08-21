@@ -186,12 +186,14 @@ _.Zones =
 				}),
 				q(26826, {	-- Dask "The Flask" Gobfizzle
 					["sourceQuests"] = { 28702 },	-- Hero's Call: The Cape of Stranglethorn
+					["coord"] = { 55.2, 42.3, 210 },
 					["description"] = "This quest is only available if you DID NOT complete |cFFFFD700The Source of the Corruption|r and |cFFFFD700The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44082 },	-- Bronwyn Hewstrike
 				}),
 				q(26825, {	-- Dask "The Flask" Gobfizzle
 					["sourceQuests"] = { 28702 },	-- Hero's Call: The Cape of Stranglethorn
+					["coord"] = { 55.2, 42.3, 210 },
 					["description"] = "This quest is only available if you DID complete |cFFFFD700The Source of the Corruption|r and |cFFFFD700The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44082 },	-- Bronwyn Hewstrike
