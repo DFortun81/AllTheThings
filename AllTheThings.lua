@@ -3724,6 +3724,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- Resolve Cost, but not if the search itself was skipped (Mark of Honor)
 		if method ~= app.EmptyFunction then
 			-- Fill Purchases of this Thing
+			-- print("FillPurchases",group.key,group.key and group[group.key])
 			FillPurchases(group);
 
 			-- Append any crafted things using this group
@@ -8464,8 +8465,6 @@ local itemFields = {
 		return cache.GetCachedField(t, "costCollectibles");
 	end,
 	["collectibleAsCost"] = function(t)
-		-- Quick escape if current-character only and comes from something saved
-		if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
 		if not t.costCollectibles then
 			local results, id;
 			-- Search by modItemID if possible for accuracy
@@ -8502,6 +8501,8 @@ local itemFields = {
 						end
 					end
 				end
+				-- Not true if current-character only and comes from something saved
+				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
 				return filteredCost;
 			-- for future reference, this can change the 'type' of a group which derives from the itemFields...
 			elseif t.metaAfterFailure then
@@ -8511,6 +8512,8 @@ local itemFields = {
 			-- 	SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
 		else
+			-- Quick escape if current-character only and comes from something saved
+			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
 			for _,ref in pairs(t.costCollectibles) do
 				-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
 				if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
