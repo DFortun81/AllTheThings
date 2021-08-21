@@ -2588,7 +2588,6 @@ _.HiddenQuestTriggers = {
 --	unknown/probable bodyguard dialogue quests
 	q(56659),	-- not sure precisely what triggered this -- selected Neri as my daily follower, refreshed, walked outside, picked up "Down into Nazjatar," and this popped (probably dialogue quest)
 	q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires (haven't reproduced w/poen, so probably another horde bodyguard)
-	q(56675),	-- Triggered shortly after summoning Neri from the conch
 	q(56663),	-- Unknown trigger. Occured when walking into Shirakess Repository, but need to confirm potential pre-reqs
 	q(56673),	-- Triggered after going into Deepcoil Hatchery for the first time. Needs confirmation
 	q(56543),	-- Triggered when walking into Kelfin Pocket for the first time. Follower dialog goes off (horde)
@@ -2601,6 +2600,7 @@ _.HiddenQuestTriggers = {
 	q(56664),	-- "We need to be careful down here.  The locals are definitely not friendly."
 	q(56668),	-- "Kelp grass is one of our most useful resources here in Nazjatar."
 	q(56669),	-- "The tamed snapdragons aren't producing venom anymore. Our only way to harvest it is from the wild packs roaming here."
+	q(56675),	-- "Have you seen the ankoan?  Impressive fighters, but a bit standoffish.  Too bad.  We'd be stronger together!"
 	q(56679),	-- "One day, there will be no more shackles."
 	q(56680),	-- "It's hard to imagine what we'll do once we don't have to fight to survive.  I look forward to figuring that out."
 --	Ori

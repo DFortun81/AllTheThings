@@ -61,7 +61,7 @@ _.Zones =
 					["coord"] = { 64.9, 32.7, ORIBOS },
 					["g"] = {
 					--	TODO: ugh symlink raid stuff i GUESS
-						i(184868),	-- Cache of Nathrian Treasures
+						i(186533),	-- Cache of Sanctum Treasures (Heroic)
 					},
 				}),
 				q(62640, {	-- The Arena Calls

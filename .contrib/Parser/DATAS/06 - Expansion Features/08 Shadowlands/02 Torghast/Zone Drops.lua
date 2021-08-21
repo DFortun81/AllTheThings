@@ -46,6 +46,7 @@ _.ExpansionFeatures =
 				i(187091, {	-- Gilded Twin-Scythe Shoulders
 					["crs"] = {
 						179526,	-- Troz'igal the Oppressor
+						179433,	-- Vault Aegis
 						176578,	-- Vault Sentinel
 					},
 				}),
@@ -62,6 +63,7 @@ _.ExpansionFeatures =
 				}),
 				i(187039, {	-- Malleare's Stygian Pauldrons
 					["crs"] = {
+						171422,	-- Arch-Suppressor Laguas
 						151331,	-- Cellblock Sentinel
 						153165,	-- Custodian Thonar
 						170418,	-- Goxul the Devourer
@@ -124,6 +126,7 @@ _.ExpansionFeatures =
 						153165,	-- Custodian Thonar
 						170418,	-- Goxul the Devourer
 						159190,	-- Synod
+						159755,	-- The Grand Malleare
 						151329,	-- Warden Skoldus
 					},
 				}),
