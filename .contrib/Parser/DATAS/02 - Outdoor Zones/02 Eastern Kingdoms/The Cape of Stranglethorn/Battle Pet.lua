@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(210, {	-- The Cape of Stranglethorn
+		m(THE_CAPE_OF_STRANGLETHORN, {
 			filter(101, {	-- Pet Battle
 				p(411, {	-- Baby Ape
 					["crs"] = { 61324 },
@@ -40,13 +40,13 @@ _.Zones =
 				}),
 				q(31917, {	-- A Tamer's Homecoming
 					["provider"] = { "n", 65656 },	-- Bill Buckler
-					["coord"] = { 51.4, 73.2, 210 },
+					["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31728,	-- Bill Buckler
 				}),
 				q(31851, {	-- Bill Buckler
 					["provider"] = { "n", 65656 },	-- Bill Buckler
-					["coord"] = { 51.4, 73.2, 210 },
+					["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),

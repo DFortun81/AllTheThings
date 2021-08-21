@@ -318,8 +318,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { BLASTED_LANDS },
 										}),
 										crit(6,  {	-- The Cape of Stranglethorn, Booty Bay
-											["coord"] = { 40.9, 73.8, 210 },
-											["maps"] = { 210 },	-- The Cape of Stranglethorn
+											["coord"] = { 40.9, 73.8, THE_CAPE_OF_STRANGLETHORN },
+											["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 										}),
 										crit(7,  {	-- Dun Morogh, Kharanos
 											["coord"] = { 54.5, 50.7, DUN_MOROGH },
@@ -423,12 +423,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { BLASTED_LANDS },
 										}),
 										crit(5,  {	-- The Cape of Stranglethorn, Booty Bay
-											["coord"] = { 40.9, 73.8, 210 },
-											["maps"] = { 210 },	-- The Cape of Stranglethorn
+											["coord"] = { 40.9, 73.8, THE_CAPE_OF_STRANGLETHORN },
+											["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 										}),
 										crit(6,  {	-- The Cape of Stranglethorn, Hardwrench Hideaway
-											["coord"] = { 35.1, 27.2, 210 },
-											["maps"] = { 210 },	-- The Cape of Stranglethorn
+											["coord"] = { 35.1, 27.2, THE_CAPE_OF_STRANGLETHORN },
+											["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 										}),
 										crit(7,  {	-- Eastern Plaguelands, Light's Hope Chapel
 											["coord"] = { 75.6, 52.4, EASTERN_PLAGUELANDS },

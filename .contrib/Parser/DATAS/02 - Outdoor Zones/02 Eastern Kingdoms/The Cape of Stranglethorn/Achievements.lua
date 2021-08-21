@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(210, {	-- The Cape of Stranglethorn
+		m(THE_CAPE_OF_STRANGLETHORN, {
 			n(ACHIEVEMENTS, {
 				ach(4905, {	-- Cape of Stranglethorn Quests
 					crit(1, {	-- The Trolls of Zul'gurub

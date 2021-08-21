@@ -89,7 +89,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					NETHERSTORM,
 					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
-					210,	-- The Cape of Stranglethorn
+					THE_CAPE_OF_STRANGLETHORN,
 					125,	-- Dalaran: Northrend
 				},
 				["isBreadcrumb"] = true,
@@ -115,7 +115,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					NETHERSTORM,
 					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
-					210,	-- The Cape of Stranglethorn
+					THE_CAPE_OF_STRANGLETHORN,
 					125,	-- Dalaran: Northrend
 				},
 				["isBreadcrumb"] = true,
@@ -429,17 +429,17 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12397, {	-- Candy Bucket — Cape of Stranglethorn, Booty Bay, neutral
 				["isYearly"] = true,
-				["coord"] = { 40.9, 73.8, 210 },
-				["maps"] = { 210 },	-- The Cape of Stranglethorn
+				["coord"] = { 40.9, 73.8, THE_CAPE_OF_STRANGLETHORN },
+				["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28969, {	-- Candy Bucket — Cape of Stranglethorn, Hardwrench Hideaway, Horde
 				["isYearly"] = true,
-				["coord"] = { 35.1, 27.2, 210 },
+				["coord"] = { 35.1, 27.2, THE_CAPE_OF_STRANGLETHORN },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 210 },	-- The Cape of Stranglethorn
+				["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2091,7 +2091,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					NETHERSTORM,
 					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
-					210,	-- The Cape of Stranglethorn
+					THE_CAPE_OF_STRANGLETHORN,
 					125,	-- Dalaran: Northrend
 				},
 				["isBreadcrumb"] = true
@@ -2282,7 +2282,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					NETHERSTORM,
 					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
-					210,	-- The Cape of Stranglethorn
+					THE_CAPE_OF_STRANGLETHORN,
 					125,	-- Dalaran: Northrend
 				},
 				["isBreadcrumb"] = true

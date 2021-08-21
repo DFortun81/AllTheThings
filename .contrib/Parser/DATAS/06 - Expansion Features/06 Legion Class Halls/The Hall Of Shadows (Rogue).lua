@@ -702,8 +702,8 @@ _.ExpansionFeatures =
 					}),
 					q(40849, {	-- The Dreadblades
 						["lvl"] = 98,
-						["maps"] = { 210 },	-- The Cape of Stranglethorn
-						["coord"] = { 40.6, 69.2, 210 },
+						["maps"] = { THE_CAPE_OF_STRANGLETHORN },
+						["coord"] = { 40.6, 69.2, THE_CAPE_OF_STRANGLETHORN },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 102120 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 40847,	-- A Friendly Accord

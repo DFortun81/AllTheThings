@@ -186,7 +186,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163482, {	-- Broken Compass
-					["coord"] = { 42.0, 74.6, 210 },
+					["coord"] = { 42.0, 74.6, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						q(53177, {	-- Broken Compass
 							["provider"] = { "n", 908 },	-- Flora Silverwind <Herbalism Trainer>
@@ -241,7 +241,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163475, {	-- Magical Spyglass
-					["coord"] = { 41.0, 73.0, 210 },
+					["coord"] = { 41.0, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						q(53168, {	-- Magical Spyglass
 							["provider"] = { "n", 2496 },	-- Baron Revilgaz

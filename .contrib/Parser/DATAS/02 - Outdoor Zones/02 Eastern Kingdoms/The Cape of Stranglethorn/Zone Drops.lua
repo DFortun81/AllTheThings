@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(210, {	-- The Cape of Stranglethorn
+		m(THE_CAPE_OF_STRANGLETHORN, {
 			n(ZONEDROPS, {
 				i(5079, {	-- Cold Basilisk Eye
 					["crs"] = { 690 },	-- Cold Eye Basilisk

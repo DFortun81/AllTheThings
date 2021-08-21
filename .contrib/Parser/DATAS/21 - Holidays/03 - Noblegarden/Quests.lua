@@ -84,9 +84,9 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 51.51, 26.68, TANARIS },	-- Goblin
 					{ 51.99, 29.36, TANARIS },	-- Goblin
 					{ 52.24, 28.56, TANARIS },	-- Goblin
-					{ 40.53, 73.11, 210 },	-- The Cape of Stranglethorn [Goblin]
-					{ 40.54, 68.28, 210 },	-- The Cape of Stranglethorn [Goblin]
-					{ 41.68, 74.18, 210 },	-- The Cape of Stranglethorn [Goblin]
+					{ 40.53, 73.11, THE_CAPE_OF_STRANGLETHORN },	-- Goblin
+					{ 40.54, 68.28, THE_CAPE_OF_STRANGLETHORN },	-- Goblin
+					{ 41.68, 74.18, THE_CAPE_OF_STRANGLETHORN },	-- Goblin
 					{ 51.87, 42.59, THE_EXODAR },	-- Draenei
 					{ 40.77, 84.45, 120 },	-- The Storm Peaks [Goblin]
 					{ 58.75, 48.42, WINTERSPRING },	-- Goblin
@@ -103,7 +103,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					NORTHERN_BARRENS,
 					SHATTRATH_CITY,
 					TANARIS,
-					210,	-- The Cape of Stranglethorn
+					THE_CAPE_OF_STRANGLETHORN,
 					THE_EXODAR,
 					120,	-- The Storm Peaks
 					WINTERSPRING,
@@ -152,9 +152,9 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 51.51, 26.68, TANARIS },	-- Goblin
 					{ 51.99, 29.36, TANARIS },	-- Goblin
 					{ 52.24, 28.56, TANARIS },	-- Goblin
-					{ 40.53, 73.11, 210 },	-- The Cape of Stranglethorn [Goblin]
-					{ 40.54, 68.28, 210 },	-- The Cape of Stranglethorn [Goblin]
-					{ 41.68, 74.18, 210 },	-- The Cape of Stranglethorn [Goblin]
+					{ 40.53, 73.11, THE_CAPE_OF_STRANGLETHORN },	-- Goblin
+					{ 40.54, 68.28, THE_CAPE_OF_STRANGLETHORN },	-- Goblin
+					{ 41.68, 74.18, THE_CAPE_OF_STRANGLETHORN },	-- Goblin
 					{ 40.77, 84.45, 120 },	-- The Storm Peaks [Goblin]
 					{ 40.82, 56.05, THUNDER_BLUFF },	-- Tauren
 					{ 63.22, 47.55, UNDERCITY },	-- Forsaken
@@ -174,7 +174,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					SHATTRATH_CITY,
 					SILVERMOON_CITY,
 					TANARIS,
-					210,	-- The Cape of Stranglethorn
+					THE_CAPE_OF_STRANGLETHORN,
 					120,	-- The Storm Peaks
 					THUNDER_BLUFF,
 					UNDERCITY,

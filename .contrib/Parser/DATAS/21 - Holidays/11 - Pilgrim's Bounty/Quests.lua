@@ -28,7 +28,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 					NETHERSTORM,
 					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
-					210,	-- The Cape of Stranglethorn
+					THE_CAPE_OF_STRANGLETHORN,
 					ISLE_OF_THUNDER,
 				},
 				["races"] = ALLIANCE_ONLY,
@@ -197,7 +197,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
 					125,	-- Dalaran (Northrend)
-					210,	-- The Cape of Stranglethorn
+					THE_CAPE_OF_STRANGLETHORN,
 				},
 			}),
 			q(14065, {	-- Sharing a Bountiful Feast (Horde)

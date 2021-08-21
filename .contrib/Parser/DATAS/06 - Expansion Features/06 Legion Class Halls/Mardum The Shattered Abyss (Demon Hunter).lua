@@ -920,14 +920,14 @@ _.ExpansionFeatures =
 					}),
 					q(41863, {	-- Vengeance Will Be Ours (Altruis)
 						["maps"] = { LEGION_DALARAN },
-						["coord"] = { 74.9, 49.0, 210 },
+						["coord"] = { 74.9, 49.0, LEGION_DALARAN },
 						["classes"] = { DEMONHUNTER },
 						["provider"] = { "n", 99254 },	-- Altruis the Sufferer
 						["sourceQuests"] = { 41807 },	-- Establishing a Connection
 					}),
 					q(40249, {	-- Vengeance Will Be Ours (Kayn)
 						["maps"] = { LEGION_DALARAN },
-						["coord"] = { 74.9, 49.0, 210 },
+						["coord"] = { 74.9, 49.0, LEGION_DALARAN },
 						["classes"] = { DEMONHUNTER },
 						["provider"] = { "n", 99247 },	-- Kayn Sunfury
 						["sourceQuests"] = { 41807 },	-- Establishing a Connection

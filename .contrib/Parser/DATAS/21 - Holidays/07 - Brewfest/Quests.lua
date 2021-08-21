@@ -225,7 +225,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						SHATTRATH_CITY,
 						120,	-- The Storm Peaks
 						125,	-- Dalaran (Northrend)
-						210,	-- The Cape of Stranglethorn
+						THE_CAPE_OF_STRANGLETHORN,
 					},
 					["isYearly"] = true,
 				}),

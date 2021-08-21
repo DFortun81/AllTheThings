@@ -468,8 +468,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8674,  {	-- Winterhoof the Elder
 				["provider"] = { "n", 15576 },	-- Elder Winterhoof
 				["isYearly"] = true,
-				["coord"] = { 40.0, 72.4, 210 },
-				["maps"] = { 210 },	-- Cape of Stranglethorn
+				["coord"] = { 40.0, 72.4, THE_CAPE_OF_STRANGLETHORN },
+				["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(6, {	-- Elder Winterhoof in Booty Bay

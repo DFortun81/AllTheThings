@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(210, {	-- The Cape of Stranglethorn
+		m(THE_CAPE_OF_STRANGLETHORN, {
 			n(QUESTS, {
 				q(26602, {	-- A Dish Best Served Huge
 					["sourceQuests"] = { 26600 },	-- A Giant's Feast
-					["coord"] = { 40.4, 67.8, 210 },
+					["coord"] = { 40.4, 67.8, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2500 },	-- Captain Hecklebury Smotts
 					["g"] = {
 						i(4130),	-- Smott's Compass
@@ -17,12 +17,12 @@ _.Zones =
 				}),
 				q(26600, {	-- A Giant's Feast
 					["sourceQuests"] = { 26599 },	-- The Captain's Chest
-					["coord"] = { 40.4, 67.8, 210 },
+					["coord"] = { 40.4, 67.8, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2500 },	-- Captain Hecklebury Smotts
 				}),
 				q(26821, {	-- Airwyn Bantamflax
 					["sourceQuests"] = { 26824 },	-- Results: Inconclusive
-					["coord"] = { 55.2, 42.3, 210 },
+					["coord"] = { 55.2, 42.3, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44082 },	-- Bronwyn Hewstrike
 				}),
@@ -34,25 +34,25 @@ _.Zones =
 				}),
 				q(26819, {	-- Akiris by the Bundle (A)
 					["sourceQuests"] = { 26823 },	-- Too Big For His Britches
-					["coord"] = { 55.3, 42.1, 210 },
+					["coord"] = { 55.3, 42.1, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44083 },	-- Linzi Hewstrike
 				}),
 				q(26487, {	-- Akiris by the Bundle (H) -- aa
 					["provider"] = { "n", 43095 },	-- Sassy Hardwrench
-					["coord"] = { 34.6, 29.5, 210 },
+					["coord"] = { 34.6, 29.5, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26489,	-- It's You!!
 				}),
 				q(26617, {	-- An Old Sea Dog
 					["crs"] = { 43454 },	-- "Good-Boy" Bruce
-					["coord"] = { 41.2, 61.3, 210 },
+					["coord"] = { 41.2, 61.3, THE_CAPE_OF_STRANGLETHORN },
 					["icon"] = "Interface\\Icons\\inv_misc_coin_16",
 					["provider"] = { "i", 59143 },	-- Weather-Beaten Coin
 				}),
 				q(3721,  {	-- An OOX of Your Own
 					["provider"] = { "n", 7406 },	-- Oglethorpe Obnoticus
-					["coord"] = { 43.0, 72.0, 210 },
+					["coord"] = { 43.0, 72.0, THE_CAPE_OF_STRANGLETHORN },
 					["sourceQuests"] = {
 						648,	-- Rescue OOX-17/TN! (Tanaris)
 						836,	-- Rescue OOX-09/HL! (Hinterlands)
@@ -65,7 +65,7 @@ _.Zones =
 				q(7838,  {	-- Arena Grandmaster
 					["provider"] = { "n", 14508 },	-- Short John Mithril
 					["sourceQuest"] = 7810,	-- Arena Master
-					["coord"] = { 45.0, 25.4, 210 },
+					["coord"] = { 45.0, 25.4, THE_CAPE_OF_STRANGLETHORN },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 18706, 12 },	-- Arena Master
@@ -81,12 +81,12 @@ _.Zones =
 						26633,	-- Swabbing Duty
 						26634,	-- The Bane of Many a Pirate
 					},
-					["coord"] = { 44.3, 91.6, 210 },
+					["coord"] = { 44.3, 91.6, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2548 },	-- Captain Keelhaul
 				}),
 				q(26809, {	-- Backdoor Dealings (A)
 					["sourceQuests"] = { 26808 },	-- Maywiki
-					["coord"] = { 55.6, 42.2, 210 },
+					["coord"] = { 55.6, 42.2, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44084 },	-- Maywiki
 					["g"] = {
@@ -98,7 +98,7 @@ _.Zones =
 				}),
 				q(26550, {	-- Backdoor Dealings (H)
 					["provider"] = { "n", 43098 },	-- Chabal
-					["coord"] = { 34.5, 27.9, 210 },
+					["coord"] = { 34.5, 27.9, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26495,	-- Chabal
 					["g"] = {
@@ -111,14 +111,14 @@ _.Zones =
 				q(29151, {	-- Bad Supplies (A)
 					["lvl"] = 85,
 					["provider"] = { "n", 52234 },	-- Bwemba
-					["coord"] = { 55.1, 42.2, 210 },
+					["coord"] = { 55.1, 42.2, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 29150 },	-- Voodoo Zombies
 				}),
 				q(29238, {	-- Bad Supplies (H)
 					["provider"] = { "n", 52234 },	-- Bwemba
 					["lvl"] = 85,
-					["coord"] = { 34.7, 29.4, 210 },
+					["coord"] = { 34.7, 29.4, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29237,	-- Voodoo Zombies
 				}),
@@ -128,7 +128,7 @@ _.Zones =
 						26697,	-- The Final Voyage of the Brashtide
 						26699,	-- Turning the Brashtide
 					},
-					["coord"] = { 41.1, 73.1, 210 },
+					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 					["g"] = {
 						i(61626),	-- Booty Bay Pendant
@@ -141,16 +141,16 @@ _.Zones =
 				q(26610, {	-- Bloodsail Treachery
 					["sourceQuests"] = { 26609 },	-- The Bloodsail Buccaneers
 					["provider"] = { "o", 2083 },	-- Bloodsail Correspondence
-					["coord"] = { 41.2, 61.3, 210 },
+					["coord"] = { 41.2, 61.3, THE_CAPE_OF_STRANGLETHORN },
 				}),
 				q(29153, {	-- Booty Bay's Interests (A)
 					["provider"] = { "n", 2496 },	-- Baron Revilgaz
-					["coord"] = { 41.1, 73.0, 210 },
+					["coord"] = { 41.1, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29251, {	-- Booty Bay's Interests (H)
 					["provider"] = { "n", 2496 },	-- Baron Revilgaz
-					["coord"] = { 41.1, 73.0, 210 },
+					["coord"] = { 41.1, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26718, {	-- Breadcrumb to Badlands
@@ -158,7 +158,7 @@ _.Zones =
 				}),
 				q(26665, {	-- Call of Booty
 					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
-					["coord"] = { 50.3, 91.5, 210 },
+					["coord"] = { 50.3, 91.5, THE_CAPE_OF_STRANGLETHORN },
 					["sourceQuests"] = {
 						26650,	-- The Damsel's Luck
 						26664,	-- Making Mutiny
@@ -168,12 +168,12 @@ _.Zones =
 				}),
 				q(26635, {	-- Cannonball Swim
 					["sourceQuests"] = { 26631 },	-- Your First Day as a Pirate
-					["coord"] = { 44.5, 92.8, 210 },
+					["coord"] = { 44.5, 92.8, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2545 },	-- "Pretty Boy" Duncan
 				}),
 				q(26495, {	-- Chabal
 					["provider"] = { "n", 43095 },	-- Sassy Hardwrench
-					["coord"] = { 34.6, 29.5, 210 },
+					["coord"] = { 34.6, 29.5, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26493,	-- There's Somebody Out There Who Wants It
 				}),
@@ -186,21 +186,21 @@ _.Zones =
 				}),
 				q(26826, {	-- Dask "The Flask" Gobfizzle
 					["sourceQuests"] = { 28702 },	-- Hero's Call: The Cape of Stranglethorn
-					["coord"] = { 55.2, 42.3, 210 },
+					["coord"] = { 55.2, 42.3, THE_CAPE_OF_STRANGLETHORN },
 					["description"] = "This quest is only available if you DID NOT complete |cFFFFD700The Source of the Corruption|r and |cFFFFD700The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44082 },	-- Bronwyn Hewstrike
 				}),
 				q(26825, {	-- Dask "The Flask" Gobfizzle
 					["sourceQuests"] = { 28702 },	-- Hero's Call: The Cape of Stranglethorn
-					["coord"] = { 55.2, 42.3, 210 },
+					["coord"] = { 55.2, 42.3, THE_CAPE_OF_STRANGLETHORN },
 					["description"] = "This quest is only available if you DID complete |cFFFFD700The Source of the Corruption|r and |cFFFFD700The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44082 },	-- Bronwyn Hewstrike
 				}),
 				q(26612, {	-- Details of the Attack
 					["sourceQuests"] = { 26611 },	-- The Baron Must Be Told
-					["coord"] = { 41.1, 73.1, 210 },
+					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 					["g"] = {
 						i(61570),	-- Informant's Gloves
@@ -212,18 +212,18 @@ _.Zones =
 				}),
 				q(26592, {	-- Diffractory Chromascope
 					["provider"] = { "n", 43096 },	-- Flem Gizzix
-					["coord"] = { 33.6, 29.1, 210 },
+					["coord"] = { 33.6, 29.1, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26433,	-- The Holy Water of Clarity
 				}),
 				q(26678, {	-- Doublerum
 					["sourceQuests"] = { 26665 },	-- Call of Booty
-					["coord"] = { 41.1, 73.1, 210 },
+					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 				}),
 				q(26649, {	-- Drive-By Piracy
 					["sourceQuests"] = { 26647 },	-- Ol' Blasty
-					["coord"] = { 46.6, 94.9, 210 },
+					["coord"] = { 46.6, 94.9, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2547 },	-- Ironpatch
 					["g"] = {
 						i(61592),	-- Black Gold Buckler
@@ -235,13 +235,13 @@ _.Zones =
 				}),
 				q(26810, {	-- Eliminate the Outcast (A)
 					["sourceQuests"] = { 26809 },	-- Backdoor Dealings
-					["coord"] = { 55.7, 42.2, 210 },
+					["coord"] = { 55.7, 42.2, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44084 },
 				}),
 				q(26551, {	-- Eliminate the Outcast (H)
 					["provider"] = { "n", 43098 },	-- Chabal
-					["coord"] = { 34.5, 27.9, 210 },
+					["coord"] = { 34.5, 27.9, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26550,	-- Backdoor Dealings
 				}),
@@ -268,7 +268,7 @@ _.Zones =
 				}),
 				q(38399, {	-- Fencing the Rose
 					["provider"] = { "n", 2542 },	-- Catelyn the Blade
-					["coord"] = { 41.3, 74.1, 210 },
+					["coord"] = { 41.3, 74.1, THE_CAPE_OF_STRANGLETHORN },
 					["isDaily"] = true,
 					["requireSkill"] = ENGINEERING,
 				}),
@@ -277,11 +277,11 @@ _.Zones =
 				}),
 				q(26624, {	-- Getting In With the Bloodsail
 					["sourceQuests"] = { 26612 },	-- Details of the Attack
-					["coord"] = { 41.1, 73.1, 210 },
+					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 				}),
 				q(26822, {	-- Good-Fer-Nothin' Slither-Dogs
-					["coord"] = { 55.0, 41.8, 210 },
+					["coord"] = { 55.0, 41.8, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44100 },	-- Goris
 					["g"] = {
@@ -293,18 +293,18 @@ _.Zones =
 				}),
 				q(26605, {	-- Grubby Little Paws
 					["sourceQuests"] = { 26604 },	-- Protecting Her Royal Highness Poobah
-					["coord"] = { 59.4, 79.0, 210 },
+					["coord"] = { 59.4, 79.0, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2634 },	-- Princess Poobah
 				}),
 				q(26452, {	-- Gurubashi Challenge
 					["provider"] = { "n", 43099 },	-- Stone Guard Towhide
-					["coord"] = { 46.2, 28.1, 210 },
+					["coord"] = { 46.2, 28.1, THE_CAPE_OF_STRANGLETHORN },
 					["isDaily"] = true,
 					["sourceQuest"] = 26451,	-- Gurubashi Challenge: Free-For-All Arena Combat
 				}),
 				q(26451, {	-- Gurubashi Challenge: Free-For-All Arena Combat -- aa
 					["provider"] = { "n", 43099 },	-- Stone Guard Towhide
-					["coord"] = { 46.2, 28.1, 210 },
+					["coord"] = { 46.2, 28.1, THE_CAPE_OF_STRANGLETHORN },
 				}),
 				q(213,   {	-- Hostile Takeover
 					["u"] = REMOVED_FROM_GAME,
@@ -314,7 +314,7 @@ _.Zones =
 				}),
 				q(26435, {	-- I'm A Huge Liar and a Fraud -- TODO:: part of loremaster?
 					["provider"] = { "n", 43096 },	-- Flem Gizzix
-					["coord"] = { 33.6, 29.1, 210 },
+					["coord"] = { 33.6, 29.1, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26592,	-- Diffractory Chromascope
@@ -323,7 +323,7 @@ _.Zones =
 				}),
 				q(26820, {	-- If They're Just Going to Leave Them Lying Around... (A)
 					["sourceQuests"] = { 26823 },	-- Too Big For His Britches
-					["coord"] = { 55.3, 42.1, 210 },
+					["coord"] = { 55.3, 42.1, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44083 },	-- Linzi Hewstrike
 					["g"] = {
@@ -333,7 +333,7 @@ _.Zones =
 				}),
 				q(26450, {	-- If They're Just Going to Leave Them Lying Around... (H)
 					["provider"] = { "n", 43095 },	-- Sassy Hardwrench
-					["coord"] = { 34.6, 29.5, 210 },
+					["coord"] = { 34.6, 29.5, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26404,	-- Above My Pay Grade
 					["g"] = {
@@ -347,7 +347,7 @@ _.Zones =
 				}),
 				q(26489, {	-- It's You!!
 					["provider"] = { "n", 43095 },	-- Sassy Hardwrench
-					["coord"] = { 34.8, 29.4, 210 },
+					["coord"] = { 34.8, 29.4, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
 				}),
@@ -360,7 +360,7 @@ _.Zones =
 				}),
 				q(26614, {	-- Keep An Eye Out
 					["sourceQuests"] = { 26611 },	-- The Baron Must Be Told
-					["coord"] = { 43.3, 71.3, 210 },
+					["coord"] = { 43.3, 71.3, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2493 },	-- Dizzy One-Eye
 					["g"] = {
 						i(4114),	-- Darktide Cape
@@ -369,7 +369,7 @@ _.Zones =
 				q(26595, {	-- Kill-Collect
 					["sourceQuests"] = { 26594 },	-- Return to MacKinley
 					["provider"] = { "n", 2501 },	-- "Sea Wolf" MacKinley
-					["coord"] = { 42.0, 73.4, 210 },
+					["coord"] = { 42.0, 73.4, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(61538),	-- Nice Shorts
 						i(61540),	-- Phase Three Bracers
@@ -380,33 +380,33 @@ _.Zones =
 				}),
 				q(26534, {	-- Let's See What You've Got, Zanzil
 					["provider"] = { "n", 43097 },	-- Mixmaster Jasper
-					["coord"] = { 35.1, 27.4, 210 },
+					["coord"] = { 35.1, 27.4, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26533,	-- Zanzil's Secret
 				}),
 				q(26630, {	-- Looks Like a Tauren Pirate to Me
 					["description"] = "This is a sub-quest of Seeing Where Your Loyalties Lie.",
 					["collectible"] = false,	-- this quest doesn't permanently collect for god knows what stupid blizzard reason
-					["coord"] = { 41.0, 73.2, 210 },
+					["coord"] = { 41.0, 73.2, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2487 },	-- Fleet Master Seahorn
 				}),
 				q(29152, {	-- Making Contact (A)
 					["lvl"] = 85,
 					["provider"] = { "n", 52646 },	-- Colin Swifthammer
-					["coord"] = { 55.3, 41.9, 210 },
+					["coord"] = { 55.3, 41.9, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 29151 },	-- Bad Supplies
 				}),
 				q(29250, {	-- Making Contact (H)
 					["provider"] = { "n", 53078 },	-- Zombie Survivor
-					["coord"] = { 33.5, 30.3, 210 },
+					["coord"] = { 33.5, 30.3, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29238,	-- Bad Supplies
 				}),
 				q(26664, {	-- Making Mutiny
 					["sourceQuests"] = { 26650 },	-- The Damsel's Luck
 					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
-					["coord"] = { 50.3, 91.5, 210 },
+					["coord"] = { 50.3, 91.5, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(61614),	-- Supposed Mace
 						i(61616),	-- Accusing Finger
@@ -415,7 +415,7 @@ _.Zones =
 				}),
 				q(26808, {	-- Maywiki
 					["sourceQuests"] = { 26819 },	-- Akiris by the Bundle
-					["coord"] = { 55.3, 42.1, 210 },
+					["coord"] = { 55.3, 42.1, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44083 },	-- Linzi Hewstrike
 				}),
@@ -428,20 +428,20 @@ _.Zones =
 				q(26603, {	-- Message in a Bottle -- aa
 					["provider"] = { "o", 204406 },	-- Half-Buried Bottle
 					["coords"] = {
-						{ 50.2, 76.0, 210 },
-						{ 62.4, 46.7, 210 },
-						{ 57.0, 54.5, 210 },
+						{ 50.2, 76.0, THE_CAPE_OF_STRANGLETHORN },
+						{ 62.4, 46.7, THE_CAPE_OF_STRANGLETHORN },
+						{ 57.0, 54.5, THE_CAPE_OF_STRANGLETHORN },
 					},
 				}),
 				q(26494, {	-- Mixmaster Jasper
 					["provider"] = { "n", 43095 },	-- Sassy Hardwrench
-					["coord"] = { 34.6, 29.5, 210 },
+					["coord"] = { 34.6, 29.5, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26493,	-- There's Somebody Out There Who Wants It
 				}),
 				q(26601, {	-- Mok'rash the Cleaver
 					["sourceQuests"] = { 26602 },	-- A Dish Best Served Huge
-					["coord"] = { 40.4, 67.8, 210 },
+					["coord"] = { 40.4, 67.8, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2500 },	-- Captain Hecklebury Smotts
 					["g"] = {
 						i(61562),	-- Smott's SIgnet
@@ -460,7 +460,7 @@ _.Zones =
 				}),
 				q(26606, {	-- Mukla's Demise
 					["sourceQuests"] = { 26605 },	-- Grubby Little Paws
-					["coord"] = { 59.4, 79.0, 210 },
+					["coord"] = { 59.4, 79.0, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2634 },	-- Princess Poobah
 					["g"] = {
 						i(61586),	-- Princess Poobah's Dress
@@ -471,12 +471,12 @@ _.Zones =
 				}),
 				q(26647, {	-- Ol' Blasty
 					["sourceQuests"] = { 26644 },	-- Attracting Attention
-					["coord"] = { 46.6, 94.9, 210 },
+					["coord"] = { 46.6, 94.9, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2547 },	-- Ironpatch
 				}),
 				q(26648, {	-- Our Mortal Enemies
 					["sourceQuests"] = { 26644 },	-- Attracting Attention
-					["coord"] = { 46.5, 93.2, 210 },
+					["coord"] = { 46.5, 93.2, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 43556 },	-- "Dead-Eye" Drederick McGumm
 					["g"] = {
 						i(61600),	-- Mortal Naginata
@@ -488,13 +488,13 @@ _.Zones =
 				}),
 				q(26817, {	-- Perfectly Pure
 					["sourceQuests"] = { 26823 },	-- Too Big For His Britches
-					["coord"] = { 55.2, 42.0, 210 },
+					["coord"] = { 55.2, 42.0, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44099 },	-- Dask "The Flask" Gobfizzle
 				}),
 				q(26818, {	-- Plush Pelts
 					["sourceQuests"] = { 26823 },	-- Too Big For His Britches
-					["coord"] = { 55.3, 42.1, 210 },
+					["coord"] = { 55.3, 42.1, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44083 },	-- Linzi Hewstrike
 					["g"] = {
@@ -509,12 +509,12 @@ _.Zones =
 				}),
 				q(26695, {	-- Prepare for Takeoff
 					["sourceQuests"] = { 26679 },	-- Return to Revilgaz
-					["coord"] = { 41.1, 73.1, 210 },
+					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 				}),
 				q(26434, {	-- Primal Reagents of Power
 					["provider"] = { "n", 43096 },	-- Flem Gizzix
-					["coord"] = { 33.6, 29.1, 210 },
+					["coord"] = { 33.6, 29.1, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26433,	-- The Holy Water of Clarity
 					["g"] = {
@@ -526,12 +526,12 @@ _.Zones =
 				}),
 				q(26604, {	-- Protecting Her Royal Highness Poobah
 					["sourceQuests"] = { 26603 },	-- Message in a Bottle
-					["coord"] = { 59.4, 79.0, 210 },
+					["coord"] = { 59.4, 79.0, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2634 },	-- Princess Poobah
 				}),
 				q(26816, {	-- Recipe for Disaster (A)
 					["sourceQuests"] = { 26815 },	-- Zanzil's Secret
-					["coord"] = { 55.2, 42.0, 210 },
+					["coord"] = { 55.2, 42.0, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44099 },	-- Dask "The Flask" Gobfizzle
 					["g"] = {
@@ -543,7 +543,7 @@ _.Zones =
 				}),
 				q(26535, {	-- Recipe for Disaster (H) (probably used as a sourcequest with High Priest Venoxiss)
 					["provider"] = { "n", 43097 },	-- Mixmaster Jasper
-					["coord"] = { 35.1, 27.4, 210 },
+					["coord"] = { 35.1, 27.4, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26534,	-- Let's See What You've Got, Zanzil
 					["g"] = {
@@ -555,37 +555,37 @@ _.Zones =
 				}),
 				q(26824, {	-- Results: Inconclusive
 					["sourceQuests"] = { 26815 },	-- Zanzil's Secret
-					["coord"] = { 55.2, 42.0, 210 },
+					["coord"] = { 55.2, 42.0, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44099 },	-- Dask "The Flask" Gobfizzle
 				}),
 				q(26594, {	-- Return to MacKinley
 					["sourceQuests"] = { 26593 },	-- Scaring Shaky
-					["coord"] = { 40.5, 67.8, 210 },
+					["coord"] = { 40.5, 67.8, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2502 },	-- "Shaky" Phillipe
 				}),
 				q(26679, {	-- Return to Revilgaz
 					["sourceQuests"] = { 26678 },	-- Doublerum
 					["provider"] = { "o", 204578 },	-- Barrel of Doublerum
-					["coord"] = { 40.6, 73.2, 210 },
+					["coord"] = { 40.6, 73.2, THE_CAPE_OF_STRANGLETHORN },
 				}),
 				q(26593, {	-- Scaring Shaky -- aa
 					["provider"] = { "n", 2501 },	-- "Sea Wolf" MacKinley
-					["coord"] = { 42.0, 73.3, 210 },
+					["coord"] = { 42.0, 73.3, THE_CAPE_OF_STRANGLETHORN },
 				}),
 				q(26629, {	-- Seeing Where Your Loyalties Lie
 					["sourceQuests"] = { 26624 },	-- Getting in With the Bloodsail
-					["coord"] = { 43.8, 56.4, 210 },
+					["coord"] = { 43.8, 56.4, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 43504 },	-- Yancey Grillsen
 				}),
 				q(26698, {	-- Seeking Seahorn
 					["sourceQuests"] = { 26679 },	-- Return to Revilgaz
-					["coord"] = { 41.1, 73.1, 210 },
+					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 				}),
 				q(26663, {	-- Sinking From Within
 					["sourceQuests"] = { 26650 },	-- The Damsel's Luck
-					["coord"] = { 50.3, 91.5, 210 },
+					["coord"] = { 50.3, 91.5, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
 				}),
 				q(348,   {	-- Stranglethorn Fever
@@ -596,7 +596,7 @@ _.Zones =
 				}),
 				q(26597, {	-- Stranglethorn Fever -- aa
 					["provider"] = { "n", 2486 },	-- Fin Fizracket
-					["coord"] = { 41.7, 72.8, 210 },
+					["coord"] = { 41.7, 72.8, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(61556),	-- Feverish Bracers
 						i(61558),	-- Savage Handwraps
@@ -606,7 +606,7 @@ _.Zones =
 				}),
 				q(26633, {	-- Swabbing Duty
 					["sourceQuests"] = { 26631 },	-- Your First Day as a Pirate
-					["coord"] = { 44.4, 91.6, 210 },
+					["coord"] = { 44.4, 91.6, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2548 },	-- Captain Keelhaul
 					["g"] = {
 						i(61578),	-- Cleaning Britches
@@ -619,23 +619,23 @@ _.Zones =
 				}),
 				q(26634, {	-- The Bane of Many A Pirate
 					["sourceQuests"] = { 26633 },	-- Swabbing Duty
-					["coord"] = { 44.4, 92.0, 210 },
+					["coord"] = { 44.4, 92.0, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2549 },	-- Garr Salthoof
 				}),
 				q(26611, {	-- The Baron Must Be Told
 					["sourceQuests"] = { 26610 },	-- Bloodsail Treachery
-					["coord"] = { 42.4, 72.0, 210 },
+					["coord"] = { 42.4, 72.0, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2490 },	-- First Mate Crazz
 				}),
 				q(28749, {	-- The Battle for Andorhal (A)
 					["isBreadcrumb"] = true,
-					["coord"] = { 41.5, 74.2, 210 },
+					["coord"] = { 41.5, 74.2, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 49635 },	-- War-Mage Erallier
 				}),
 				q(28750, {	-- The Battle for Andorhal (H)
 					["provider"] = { "n", 49636 },	-- Arcanist Arman
-					["coord"] = { 41.7, 74.1, 210 },
+					["coord"] = { 41.7, 74.1, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -652,24 +652,24 @@ _.Zones =
 						26606,	-- Mukla's Demise
 					},
 					["description"] = "You need to complete at least one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to pick up this quest.",
-					["coord"] = { 42.6, 71.8, 210 },
+					["coord"] = { 42.6, 71.8, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2490 },	-- First Mate Crazz
 				}),
 				q(26662, {	-- The Brashtide Crew
 					["sourceQuests"] = { 26650 },	-- The Damsel's Luck
-					["coord"] = { 50.3, 91.5, 210 },
+					["coord"] = { 50.3, 91.5, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
 				}),
 				q(26596, {	-- The Call of Kalimdor (A)
 					["isBreadcrumb"] = true,	-- leads to Dustwallow Marsh
-					["coord"] = { 40.4, 68.1, 210 },
+					["coord"] = { 40.4, 68.1, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 48808 },	-- Corporal Jeyne
 					["lvl"] = 35,
 				}),
 				q(26696, {	-- The Call of Kalimdor (H)
 					["provider"] = { "n", 48797 },	-- Gim'hila
-					["coord"] = { 39.6, 68.5, 210 },
+					["coord"] = { 39.6, 68.5, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["description"] = "Swims in a circle near the dock.",
 					["isBreadcrumb"] = true,
@@ -691,7 +691,7 @@ _.Zones =
 				}),
 				q(26599, {	-- The Captain's Chest -- aa
 					["provider"] = { "n", 2500 },	-- Captain Hecklebury Smotts
-					["coord"] = { 40.3, 67.7, 210 },
+					["coord"] = { 40.3, 67.7, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(11469),	-- Bloodband Bracers
 					},
@@ -701,7 +701,7 @@ _.Zones =
 				}),
 				q(1041,  {	-- The Caravan Road
 					["provider"] = { "n", 3945 },	-- Caravaneer Ruzzgot
-					["coord"] = { 27.4, 74.2, 210 },
+					["coord"] = { 27.4, 74.2, THE_CAPE_OF_STRANGLETHORN },
 					["sourceQuests"] = { 1040 },	-- The Passage to Booty Bay
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -716,7 +716,7 @@ _.Zones =
 				}),
 				q(26700, {	-- The Damsel's (Bad) Luck
 					["sourceQuests"] = { 26698 },	-- Seeking Seahorn
-					["coord"] = { 41.5, 73.0, 210 },
+					["coord"] = { 41.5, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2487 },	-- Fleet Master Seahorn
 				}),
 				q(26650, {	-- The Damsel's Luck
@@ -724,7 +724,7 @@ _.Zones =
 						26649,	-- Drive-By Piracy
 						26648,	-- Our Mortal Enemies
 					},
-					["coord"] = { 46.7, 95.2, 210 },
+					["coord"] = { 46.7, 95.2, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2546 }, -- Fleet Master Firallon
 				}),
 				q(26837, {	-- The Explorers' League Digsite
@@ -732,7 +732,7 @@ _.Zones =
 				}),
 				q(26697, {	-- The Final Voyage of the Brashtide
 					["sourceQuests"] = { 26695 },	-- Prepare for Takeoff
-					["coord"] = { 41.1, 73.1, 210 },
+					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2496 },	-- Baron Revilgaz
 					["g"] = {
 						i(61608),	-- Mongrel Shooter
@@ -743,7 +743,7 @@ _.Zones =
 				}),
 				q(26433, {	-- The Holy Water of Clarity
 					["provider"] = { "n", 43096 },	-- Flem Gizzix
-					["coord"] = { 33.6, 29.1, 210 },
+					["coord"] = { 33.6, 29.1, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26487,	-- Akiris by the Bundle
@@ -753,19 +753,19 @@ _.Zones =
 				q(26590, {	-- The Holy Water of Clarity
 					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 43096 },	-- Flem Gizzix
-					["coord"] = { 33.6, 29.1, 210 },
+					["coord"] = { 33.6, 29.1, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26598, {	-- The Heart of Mokk
 					["description"] = "This quest is only available while you are on the [Stranglethorn Fever] quest.",
 					["repeatable"] = true,
-					["coord"] = { 54.1, 46.5, 210 },
+					["coord"] = { 54.1, 46.5, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 1449 },	-- Witch Doctor Unbagwa
 				}),
 				q(2760,  {	-- The Mithril Order
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7794 },	-- McGavan
-					["coord"] = { 43.8, 70.7, 210 },
+					["coord"] = { 43.8, 70.7, THE_CAPE_OF_STRANGLETHORN },
 					["requireSkill"] = BLACKSMITHING,
 					["sourceQuests"] = {
 						2757,	-- Booty Bay or Bust!
@@ -777,7 +777,7 @@ _.Zones =
 				}),
 				q(26493, {	-- There's Somebody Out There Who Wants It
 					["provider"] = { "n", 43095 },	-- Sassy Hardwrench
-					["coord"] = { 34.6, 29.5, 210 },
+					["coord"] = { 34.6, 29.5, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26487,	-- Akiris by the Bundle
@@ -790,30 +790,30 @@ _.Zones =
 				}),
 				q(26811, {	-- Through the Troll Hole (A)
 					["sourceQuests"] = { 26810 },	-- Eliminate the Outcast
-					["coord"] = { 61.2, 44.3, 210 },
+					["coord"] = { 61.2, 44.3, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26552, {	-- Through the Troll Hole (H)
-					["coord"] = { 61.1, 44.2, 210 },
+					["coord"] = { 61.1, 44.2, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["description"] = "If you abandon this quest, talk to |cFFFFD700Chabal|r in |cFFFFD700Hardwrench Hideaway|r.",
 					["sourceQuest"] = 26551,	-- Eliminate the Outcast
 				}),
 				q(26823, {	-- Too Big For His Britches
 					["sourceQuests"] = { 26825, 26826 },	-- Dask "The Flask" Gobfizzle (two different versions)
-					["coord"] = { 55.2, 42.0, 210 },
+					["coord"] = { 55.2, 42.0, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44099 },	-- Dask "The Flask" Gobfizzle
 				}),
 				q(9259,  {	-- Traitor to the Bloodsail
 					["provider"] = { "n", 16399 },	-- Bloodsail Traitor
-					["coord"] = { 48.4, 63.2, 210 },
+					["coord"] = { 48.4, 63.2, THE_CAPE_OF_STRANGLETHORN },
 					["repeatable"] = true,
 					["maxReputation"] = { 21, NEUTRAL },
 				}),
 				q(26699, {	-- Turning the Brashtide
 					["sourceQuests"] = { 26698 },	-- Seeking Seahorn
-					["coord"] = { 41.5, 73.0, 210 },
+					["coord"] = { 41.5, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2487 },	-- Fleet Master Seahorn
 					["g"] = {
 						i(61620),	-- Revilgaz's Cutlass
@@ -824,7 +824,7 @@ _.Zones =
 				}),
 				q(26613, {	-- Up to Snuff
 					["sourceQuests"] = { 26611 },	-- The Baron Must Be Told
-					["coord"] = { 40.7, 73.8, 210 },
+					["coord"] = { 40.7, 73.8, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2488 },	-- Deeg
 				}),
 				q(600,   {	-- Venture Company Mining
@@ -837,14 +837,14 @@ _.Zones =
 				q(29150, {	-- Voodoo Zombies (A)
 					["lvl"] = 85,
 					["provider"] = { "n", 52234 },	-- Bwemba
-					["coord"] = { 55.1, 42.2, 210 },
+					["coord"] = { 55.1, 42.2, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 29133 },	-- To the Digsite
 				}),
 				q(29237, {	-- Voodoo Zombies (H)
 					["provider"] = { "n", 52234 },	-- Bwemba
 					["lvl"] = 85,
-					["coord"] = { 34.7, 29.4, 210 },
+					["coord"] = { 34.7, 29.4, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 29236,	-- To Hardwrench Hideaway
 				}),
@@ -853,7 +853,7 @@ _.Zones =
 						26630,	-- Looks Like a Tauren Pirate to Me
 						26629,	-- Seeing Where Your Loyalties Lie
 					},
-					["coord"] = { 43.8, 56.4, 210 },
+					["coord"] = { 43.8, 56.4, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 43504 },	-- Yancey Grillsen
 				}),
 				q(621,   {	-- Zanzil's Secret
@@ -865,13 +865,13 @@ _.Zones =
 				}),
 				q(26815, {	-- Zanzil's Secret (A)
 					["sourceQuests"] = { 26817 },	-- Perfectly Pure
-					["coord"] = { 55.2, 41.9, 210 },
+					["coord"] = { 55.2, 41.9, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44099 },	-- Dask "The Flask" Gobfizzle
 				}),
 				q(26533, {	-- Zanzil's Secret (H)
 					["provider"] = { "n", 43097 },	-- Mixmaster Jasper
-					["coord"] = { 35.1, 27.4, 210 },
+					["coord"] = { 35.1, 27.4, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26494,	-- Mixmaster Jasper
 				}),

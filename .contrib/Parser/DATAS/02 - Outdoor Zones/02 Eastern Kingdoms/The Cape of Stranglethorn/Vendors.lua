@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(210, {	-- The Cape of Stranglethorn
+		m(THE_CAPE_OF_STRANGLETHORN, {
 			n(VENDORS, {
 				n(2846,   {	-- Blixrez Goodstitch <Leatherworking Supplies>
-					["coord"] = { 42.8, 74.1, 210 },
+					["coord"] = { 42.8, 74.1, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(5789, {	-- Pattern: Murloc Scale Bracers
 							["isLimited"] = true,
@@ -19,7 +19,7 @@ _.Zones =
 					},
 				}),
 				n(2672,   {	-- Cowardly Crosby <Tailoring Supplies>
-					["coord"] = { 40.8, 82.1, 210 },
+					["coord"] = { 40.8, 82.1, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(10318, {	-- Pattern: Admiral's Hat
 							["isLimited"] = true,
@@ -27,7 +27,7 @@ _.Zones =
 					},
 				}),
 				n(2838,   {	-- Crazk Sparks <Fireworks Merchant>
-					["coord"] = { 43.0, 72.7, 210 },
+					["coord"] = { 43.0, 72.7, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(18648, {	-- Schematic: Green Firework
 							["isLimited"] = true,
@@ -35,7 +35,7 @@ _.Zones =
 					},
 				}),
 				n(2845,   {	-- Fargon Mortalak <Superior Armorer>
-					["coord"] = { 44.1, 70.0, 210 },
+					["coord"] = { 44.1, 70.0, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(12257, {	-- Heavy Notched Belt
 							["isLimited"] = true,
@@ -43,7 +43,7 @@ _.Zones =
 					},
 				}),
 				n(2848,   {	-- Glyx Brewright <Alchemy Supplies>
-					["coord"] = { 42.7, 75.1, 210 },
+					["coord"] = { 42.7, 75.1, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(6056, {	-- Recipe: Frost Protection Potion
 							["isLimited"] = true,
@@ -54,7 +54,7 @@ _.Zones =
 					},
 				}),
 				n(2839,   {	-- Haren Kanmae <Superior Bowyer>
-					["coord"] = { 42.9, 69.3, 210 },
+					["coord"] = { 42.9, 69.3, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(11305, {	-- Dense Shortbow
 							["isLimited"] = true,
@@ -70,7 +70,7 @@ _.Zones =
 					},
 				}),
 				n(2843,   {	-- Jutak <Blade Trader>
-					["coord"] = { 41.6, 74.1, 210 },
+					["coord"] = { 41.6, 74.1, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(12248, {	-- Daring Dirk
 							["isLimited"] = true,
@@ -81,7 +81,7 @@ _.Zones =
 					},
 				}),
 				n(2664,   {	-- Kelsey Yance <Cook>
-					["coord"] = { 42.8, 69.0, 210 },
+					["coord"] = { 42.8, 69.0, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(13940),	-- Recipe: Cooked Glossy Mightfish
 						i(13941),	-- Recipe: Filet of Redgill
@@ -95,7 +95,7 @@ _.Zones =
 					},
 				}),
 				n(2840,   {	-- Kizz Bluntstrike <Macecrafter>
-					["coord"] = { 42.9, 70.4, 210 },
+					["coord"] = { 42.9, 70.4, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(4778, {	-- Heavy Spiked Mace
 							["isLimited"] = true,
@@ -106,14 +106,14 @@ _.Zones =
 					},
 				}),
 				n(17249,  {	-- Landro Longshot <The Black Flame>
-					["coord"] = { 42.6, 71.5, 210 },
+					["coord"] = { 42.6, 71.5, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(23716)),	-- Carved Ogre Idol (before they changed it to not be a trinket)
 						un(REMOVED_FROM_GAME, i(23714)),	-- Perpetual Purple Fireworks (before they changed it to not be a trinket)
 					},
 				}),
 				n(2685,   {	-- Mazk Snipeshot <Engineering Supplies>
-					["coord"] = { 43.2, 70.2, 210 },
+					["coord"] = { 43.2, 70.2, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(13310, {	-- Schematic: Accurate Scope
 							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
@@ -124,7 +124,7 @@ _.Zones =
 					},
 				}),
 				n(54232,  {	-- Mrs. Gant <Cooking Trainer & Supplies>
-					["coord"] = { 42.7, 72.7, 210 },
+					["coord"] = { 42.7, 72.7, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
@@ -134,7 +134,7 @@ _.Zones =
 					},
 				}),
 				n(2663,   {	-- Narkk <Pirate Supplies>
-					["coord"] = { 42.6, 69.1, 210 },
+					["coord"] = { 42.6, 69.1, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(8496),	-- Parrot Cage (Cockatiel) (PET!)
 						i(8495),	-- Parrot Cage (Senegal) (PET!)
@@ -144,7 +144,7 @@ _.Zones =
 					},
 				}),
 				n(2699,   {	-- Rikqiz <Leatherworking Supplies>
-					["coord"] = { 43.2, 71.7, 210 },
+					["coord"] = { 43.2, 71.7, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(14635, {	-- Pattern: Gem-Studded Leather Belt
 							["isLimited"] = true,
@@ -155,7 +155,7 @@ _.Zones =
 					},
 				}),
 				n(151042, {	-- Skin-Me-Own-Coat Dibblefur <T-Shirt Scalper>
-					["coord"] = { 42.1, 73.8, 210 },
+					["coord"] = { 42.1, 73.8, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(167227),	-- Gild's Crewneck
 						i(167208),	-- Jade's Lovely Shirt
@@ -182,7 +182,7 @@ _.Zones =
 					},
 				}),
 				n(2670,   {	-- Xizk Goodstitch <Tailoring Supplies>
-					["coord"] = { 43.6, 73.1, 210 },
+					["coord"] = { 43.6, 73.1, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(7087, {	-- Pattern: Crimson Silk Cloak
 							["isLimited"] = true,
@@ -193,7 +193,7 @@ _.Zones =
 					},
 				}),
 				n(2482,   {	-- Zarena Cromwind <Superior Weaponsmith>
-					["coord"] = { 43.0, 70.8, 210 },
+					["coord"] = { 43.0, 70.8, THE_CAPE_OF_STRANGLETHORN },
 					["g"] = {
 						i(12251, {	-- Big Stick
 							["isLimited"] = true,

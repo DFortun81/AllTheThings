@@ -270,7 +270,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					["timeline"] = { "added 7.0.3.22248" },
 				}),
 				applyclassicphase(TBC_PHASE_THREE, i(35498)),	-- Formula: Enchant Weapon - Deathfrost
-				
+
 				-- #if BEFORE 4.2.0
 				-- This item was apparently a drop from Ahune originally, but was removed and added to the Molten Front with 4.2.0.
 				-- Between Patch 3.3.3 and 4.2.0 it had no available source.
@@ -278,7 +278,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					["timeline"] = { "removed 3.3.3", "added 4.2.0" },
 				}),
 				-- #endif
-				
+
 				-- WoD+ Rewards (Scalable)
 				i(117372, {	-- Cloak of the Frigid Winds
 					["timeline"] = { "added 6.0.1.18594" },
@@ -295,7 +295,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(117377, {	-- The Frost Lord's War Cloak
 					["timeline"] = { "added 6.0.1.18594" },
 				}),
-				
+
 				-- Pandaria Rewards
 				i(95425, {	-- Cloak of the Frigid Winds [Level 90]
 					["timeline"] = { "added 5.0.1", "removed 6.0.1" },
@@ -312,7 +312,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(95430, {	-- The Frost Lord's War Cloak [Level 90]
 					["timeline"] = { "added 5.0.1", "removed 6.0.1" },
 				}),
-				
+
 				-- Cataclysm Rewards
 				i(69769, {	-- Cloak of the Frigid Winds [Level 85]
 					["timeline"] = { "added 4.0.1", "removed 5.0.1" },
@@ -329,7 +329,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(69766, {	-- The Frost Lord's War Cloak [Level 85]
 					["timeline"] = { "added 4.0.1", "removed 5.0.1" },
 				}),
-				
+
 				i(54805, {	-- Cloak of the Frigid Winds [Level 80]
 					["timeline"] = { "added 3.3.3.11723", "removed 4.0.1" },
 				}),
@@ -345,7 +345,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(54802, {	-- The Frost Lord's War Cloak [Level 80]
 					["timeline"] = { "added 3.3.3.11723", "removed 4.0.1" },
 				}),
-				
+
 				-- Original Rewards
 				i(35514, {	-- Frostscythe of Lord Ahune [Level 70]
 					["timeline"] = { "removed 3.3.3.11723" },
@@ -444,9 +444,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 										["maps"] = { SWAMP_OF_SORROWS },
 									}),
 									crit(12, {	-- The Cape of Stranglethorn
-										["coord"] = { 51.9, 67.8, 210 },
+										["coord"] = { 51.9, 67.8, THE_CAPE_OF_STRANGLETHORN },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 210 },	-- The Cape of Stranglethorn
+										["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 									}),
 									crit(13, {	-- The Hinterlands
 										["coord"] = { 14.4, 50.2, THE_HINTERLANDS },
@@ -719,9 +719,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 										["maps"] = { SWAMP_OF_SORROWS },
 									}),
 									crit(11, {	-- The Cape of Stranglethorn
-										["coord"] = { 50.6, 70.8, 210 },
+										["coord"] = { 50.6, 70.8, THE_CAPE_OF_STRANGLETHORN },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 210 },	-- The Cape of Stranglethorn
+										["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 									}),
 									crit(12, {	-- The Hinterlands
 										["coord"] = { 76.4, 74.5, THE_HINTERLANDS },
@@ -1145,9 +1145,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 										["maps"] = { SWAMP_OF_SORROWS },
 									}),
 									crit(11, {	-- The Cape of Stranglethorn
-										["coord"] = { 50.4, 70.4, 210 },
+										["coord"] = { 50.4, 70.4, THE_CAPE_OF_STRANGLETHORN },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 210 },	-- The Cape of Stranglethorn
+										["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 									}),
 									crit(12, {	-- The Hinterlands
 										["coord"] = { 76.6, 75.0, THE_HINTERLANDS },
@@ -1420,9 +1420,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 										["maps"] = { SWAMP_OF_SORROWS },
 									}),
 									crit(12, {	-- The Cape of Stranglethorn
-										["coord"] = { 51.7, 67.3, 210 },
+										["coord"] = { 51.7, 67.3, THE_CAPE_OF_STRANGLETHORN },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 210 },	-- The Cape of Stranglethorn
+										["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 									}),
 									crit(13, {	-- The Hinterlands
 										["coord"] = { 14.5, 50.0, THE_HINTERLANDS },
@@ -2600,7 +2600,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					STRANGLETHORN_VALE,
 					-- #else
 					NORTHERN_BARRENS,
-					210,	-- The Cape of Stranglethorn
+					THE_CAPE_OF_STRANGLETHORN,
 					-- #endif
 					-- #if AFTER WRATH
 					120,	-- The Storm Peaks
@@ -2641,7 +2641,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					STRANGLETHORN_VALE,
 					-- #else
 					NORTHERN_BARRENS,
-					210,	-- The Cape of Stranglethorn
+					THE_CAPE_OF_STRANGLETHORN,
 					-- #endif
 					-- #if AFTER WRATH
 					120,	-- The Storm Peaks
@@ -2853,7 +2853,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				},
 				-- #endif
 			}),
-			
+
 			-- Bonfire Quests
 			n(FACTION_HEADER_ALLIANCE, {
 				["timeline"] = { "added 2.4.0.7994" },
@@ -3107,8 +3107,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(11801, {	-- Desecrate this Fire! — The Cape of Stranglethorn / Stranglethorn Vale
 						["provider"] = { "o", 187951 },	-- Horde Bonfire
 						-- #if AFTER CATA
-						["coord"] = { 50.6, 70.8, 210 },
-						["maps"] = { 210 },	-- The Cape of Stranglethorn
+						["coord"] = { 50.6, 70.8, THE_CAPE_OF_STRANGLETHORN },
+						["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 						-- #else
 						["coord"] = { 33.0, 75.4, STRANGLETHORN_VALE },
 						["maps"] = { STRANGLETHORN_VALE },
@@ -3493,8 +3493,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(11832, {	-- Honor the Flame — The Cape of Stranglethorn / Stranglethorn Vale
 						-- #if AFTER CATA
 						["qg"] = 25915,	-- Cape of Stranglethorn Flame Warden
-						["coord"] = { 51.9, 67.8, 210 },
-						["maps"] = { 210 },	-- The Cape of Stranglethorn
+						["coord"] = { 51.9, 67.8, THE_CAPE_OF_STRANGLETHORN },
+						["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 						-- #else
 						["qg"] = 25915,	-- Stranglethorn Vale Flame Warden
 						["coord"] = { 33.9, 73.5, STRANGLETHORN_VALE },
@@ -3862,8 +3862,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(11761, {	-- Desecrate this Fire! — The Cape of Stranglethorn / Stranglethorn Vale
 						["provider"] = { "o", 187944 },	-- Alliance Bonfire
 						-- #if AFTER CATA
-						["coord"] = { 51.7, 67.3, 210 },
-						["maps"] = { 210 },	-- The Cape of Stranglethorn
+						["coord"] = { 51.7, 67.3, THE_CAPE_OF_STRANGLETHORN },
+						["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 						-- #else
 						["coord"] = { 33.8, 73.3, STRANGLETHORN_VALE },
 						["maps"] = { STRANGLETHORN_VALE },
@@ -4216,8 +4216,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					q(11837, {	-- Honor the Flame — The Cape of Stranglethorn / Stranglethorn Vale
 						-- #if AFTER CATA
 						["qg"] = 25920,	-- Cape of Stranglethorn Flame Keeper
-						["coord"] = { 50.4, 70.4, 210 },
-						["maps"] = { 210 },	-- The Cape of Stranglethorn
+						["coord"] = { 50.4, 70.4, THE_CAPE_OF_STRANGLETHORN },
+						["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 						-- #else
 						["qg"] = 25920,	-- Stranglethorn Vale Flame Keeper
 						["coord"] = { 32.9, 75.2, STRANGLETHORN_VALE },

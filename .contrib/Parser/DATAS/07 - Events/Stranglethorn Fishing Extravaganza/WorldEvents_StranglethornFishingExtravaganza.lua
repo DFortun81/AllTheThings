@@ -7,13 +7,13 @@ _.WorldEvents =
 	n(-62, {	-- Stranglethorn Fishing Extravaganza
 		["description"] = "Winners all get Master Angler of Azeroth which is needed for the meta-achievement Accomplished Angler.\n\nAll winners can choose between any of the prizes. The fishing rod and toy no longer seem to be limited to the First Place winner in Patch 7.1.5.",
 		["achievementID"] = 306,	-- Master Angler of Azeroth
-		["coord"] = { 41.4, 73.0, 210 },
-		["maps"] = { 210 },	-- The Cape of Stranglethorn
+		["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
+		["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 		["u"] = 30,
 		["g"] = {
 			q(44765, {	-- Stranglethorn Fishing Extravaganza
 				["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
-				["coord"] = { 41.4, 73.0, 210 },
+				["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 				["isWorldQuest"] = true,
 				["g"] = {
 					i(19807, {	-- Speckled Tastyfish
@@ -21,7 +21,7 @@ _.WorldEvents =
 						["g"] = {
 							q(8193, {	-- Grand Prize
 								["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
-								["coord"] = { 41.4, 73.0, 210 },
+								["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 								["repeatable"] = true,
 								["u"] = 30,
 								["g"] = {
@@ -34,14 +34,14 @@ _.WorldEvents =
 							}),
 							q(8194, {	-- Apprentice Angler
 								["provider"] = { "n", 15078 },	-- Jang
-								["coord"] = { 41.4, 73.0, 210 },
+								["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 								["repeatable"] = true,
 								["u"] = 30,
 							}),
 							q(32435, {	-- Second Prize
 								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
-								["coord"] = { 41.4, 73.0, 210 },
+								["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 								["repeatable"] = true,
 								["g"] = {
 									un(30, i(50287)),	-- Boots of the Bay
@@ -52,7 +52,7 @@ _.WorldEvents =
 							q(32436, {	-- Third Prize
 								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
-								["coord"] = { 41.4, 73.0, 210 },
+								["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 								["repeatable"] = true,
 								["g"] = {
 									un(30, i(19971)),	-- High Test Eternium Fishing Line
@@ -65,7 +65,7 @@ _.WorldEvents =
 			q(8225, {	-- Rare Fish -- Brownell's Blue Striped Racer
 				["itemID"] = 19803,	-- Brownell's Blue Striped Racer
 				["provider"] = { "n", 15079 },	-- Fishbot 5000
-				["coord"] = { 41.4, 73.0, 210 },
+				["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 				["repeatable"] = true,
 				["g"] = {
 					un(30, i(19969)),	-- Nat Pagle's Extreme Anglin' Boots
@@ -74,7 +74,7 @@ _.WorldEvents =
 			q(8224, {	-- Rare Fish - Dezian Queenfish
 				["itemID"] = 19806,	-- Dezian Queenfish
 				["provider"] = { "n", 15079 },	-- Fishbot 5000
-				["coord"] = { 41.4, 73.0, 210 },
+				["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 				["repeatable"] = true,
 				["g"] = {
 					un(30, i(19971)),	-- High Test Eternium Fishing Line
@@ -83,7 +83,7 @@ _.WorldEvents =
 			q(8221, {	-- Rare Fish - Keefer's Angelfish
 				["itemID"] = 19805,	-- Keefer's Angelfish
 				["provider"] = { "n", 15079 },	-- Fishbot 5000
-				["coord"] = { 41.4, 73.0, 210 },
+				["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 				["repeatable"] = true,
 				["g"] = {
 					un(30, i(19972)),	-- Lucky Fishing Hat
