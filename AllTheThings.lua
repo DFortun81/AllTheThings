@@ -1251,6 +1251,7 @@ local MergeProperties = function(g, t, noReplace)
 					end
 				elseif k ~= "expanded" and
 					k ~= "indent" and
+					k ~= "modItemID" and
 					k ~= "g" then
 					if not rawget(g, k) then
 						rawset(g, k, v);
@@ -1264,6 +1265,7 @@ local MergeProperties = function(g, t, noReplace)
 					rawset(g, "sourceParent", v);
 				elseif k ~= "expanded" and
 					k ~= "indent" and
+					k ~= "modItemID" and
 					k ~= "g" then
 					rawset(g, k, v);
 				end
