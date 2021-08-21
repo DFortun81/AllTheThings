@@ -2551,13 +2551,12 @@ subroutines = {
 	end,
 	["bfa_azerite_armor_chest"] = function()
 		return {
-			{ "subif", "bfa_azerite_armor_chest_dungeons", function(o) return (not o.modID) or o.modID == 1 or o.modID == 2; end },
+			{ "subif", "bfa_azerite_armor_chest_dungeons", function(o) return o.modID == 1 or o.modID == 2; end },
 			{ "finalize" },
-			{ "subif", "bfa_azerite_armor_chest_warfront", function(o) return (not o.modID) or o.modID == 1 or o.modID == 5; end },
+			{ "subif", "bfa_azerite_armor_chest_warfront", function(o) return o.modID == 5; end },
 			{ "finalize" },
-			{ "subif", "bfa_azerite_armor_chest_zonedrops", function(o) return (not o.modID) or (o.modID ~= 2 and o.modID ~= 5); end },
+			{ "subif", "bfa_azerite_armor_chest_zonedrops", function(o) return not o.modID or (o.modID ~= 1 and o.modID ~= 2 and o.modID ~= 5); end },
 			{ "merge" },
-			{ "postprocess" },
 		};
 	end,
 	-- Common Northrend/Cataclysm Recipes Vendor
@@ -2865,7 +2864,8 @@ ResolveSymbolicLink = function(o)
 				local subroutine = subroutines[sym[2]];
 				if subroutine then
 					-- If the subroutine's conditional was successful.
-					if sym[3] and (sym[3])(o) then
+					local conditionFunction = sym[3];
+					if conditionFunction and conditionFunction(o) then
 						local args = {unpack(sym)};
 						table.remove(args, 1);
 						table.remove(args, 1);
@@ -2906,7 +2906,7 @@ ResolveSymbolicLink = function(o)
 		if #finalized > 0 then
 			local cloned = {};
 			MergeObjects(cloned, finalized, true);
-			-- if app.DEBUG_PRINT then print("Symbolic Link for", o.key,o.key and o[o.key], "contains", #uniques, "values after filtering.") end
+			-- if app.DEBUG_PRINT then print("Symbolic Link for", o.key,o.key and o[o.key], "contains", #cloned, "values after filtering.") end
 			return cloned;
 		else
 			-- if app.DEBUG_PRINT then print("Symbolic Link for ", o.key, " ",o.key and o[o.key], " contained no values after filtering.") end
@@ -10092,7 +10092,7 @@ app.TryPopulateQuestRewards = function(questObject)
 	questObject.missingItem = questObject.missingItem and (questObject.missingItem - 1) or 15;
 	questObject.missingCurr = questObject.missingCurr and (questObject.missingCurr - 1) or 15;
 
-	-- app.DEBUG_PRINT = questObject.questID == 44815 and 44815;
+	-- app.DEBUG_PRINT = questObject.questID == 51064 and 51064;
 	-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards",questObject.questID) end
 	if questObject.missingItem > 0 then
 		-- Get reward info
@@ -10121,6 +10121,7 @@ app.TryPopulateQuestRewards = function(questObject)
 						local search, subItems = SearchForLink(link), {};
 						-- put all the item information into a basic table
 						local item = { ["itemID"] = itemID, ["s"] = GetSourceID(link), ["rawlink"] = link, ["modID"] = modID and tonumber(modID), ["bonusID"] = bonusID1 and tonumber(bonusID1) };
+						-- if app.DEBUG_PRINT then app.PrintTable(item) end
 						if search then
 							-- find the specific item which the link represents
 							local modItemID, count, data = GetGroupItemIDWithModID(nil, itemID, modID, bonusID1), #search;
@@ -10132,7 +10133,7 @@ app.TryPopulateQuestRewards = function(questObject)
 								if GroupMatchesParams(data, "itemID", modItemID, true) then
 									-- create the object which will be in the actual list
 									-- if app.DEBUG_PRINT then print(modItemID," ? found cached") end
-									MergeProperties(item, data);
+									MergeProperties(item, data, true);
 									NestObjects(item, data.g);	-- no clone since item is cloned later
 								else
 									tinsert(subItems, data);
@@ -10224,7 +10225,7 @@ app.TryPopulateQuestRewards = function(questObject)
 		questObject.doUpdate = questObject.OnUpdate;
 	end
 
-	app.DEBUG_PRINT = nil;
+	-- app.DEBUG_PRINT = nil;
 end
 -- Given an Object, will return the indicator (asset name) if this Object should show one based on it being tied to a QuestID
 app.GetQuestIndicator = function(t)

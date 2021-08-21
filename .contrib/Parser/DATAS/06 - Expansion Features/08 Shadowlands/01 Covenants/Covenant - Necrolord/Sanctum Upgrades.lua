@@ -869,6 +869,9 @@ _.HiddenQuestTriggers = {
 	q(63392),	-- Stranglers (182493)
 	q(63394),	-- Armguards (182497)
 	q(63395),	-- Breeches (182494)
+
+-- Anima Conductor
+	q(60774),	-- Theater of Pain (lvl 3)
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
