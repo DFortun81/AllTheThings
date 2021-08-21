@@ -3022,8 +3022,12 @@ local function FillPurchases(group, depth)
 	if depth <= 0 then return; end
 	-- do not fill purchases on certain items, can skip the skip though
 	if app.SkipPurchases[-1] and app.SkipPurchases[group.itemID or 0] then return; end
-	-- do not fill 'saved' groups, or groups under saved groups unless in Acct or Debug mode
-	if (group.saved or (group.parent and group.parent.saved)) and not app.MODE_DEBUG_OR_ACCOUNT then return; end
+	-- do not fill 'saved' groups, or groups directly under saved groups unless in Acct or Debug mode
+	if not app.MODE_DEBUG_OR_ACCOUNT then
+		if group.saved then return; end
+		local sourceParent = rawget(group, "parent");
+		if sourceParent and sourceParent.saved then return; end
+	end
 
 	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles);
 	if collectibles then
@@ -3659,10 +3663,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- print("Merge root",o.key,o[o.key],o.modItemID,paramB);
 				MergeProperties(root, o);
 				-- Merge the g of the obj into the merged results
-				if o.g then
-					-- print("Merge root g",#o.g,o.key,o[o.key])
-					NestObjects(root, o.g);
-				end
+				NestObjects(root, o.g);
 			-- otherwise
 			else
 				-- If the obj meets the recursive group filter
