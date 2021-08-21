@@ -6632,8 +6632,6 @@ local fields = {
 		return cache.GetCachedField(t, "costCollectibles");
 	end,
 	["collectibleAsCost"] = function(t)
-		-- Quick escape if current-character only and comes from something saved
-		if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
 		if not t.costCollectibles then
 			local results, id;
 			if t.currencyID then
@@ -6664,6 +6662,8 @@ local fields = {
 						end
 					end
 				end
+				-- Quick escape if current-character only and comes from something saved
+				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
 				return filteredCost;
 			elseif t.metaAfterFailure then
 				setmetatable(t, t.metaAfterFailure);
@@ -6672,6 +6672,8 @@ local fields = {
 			-- 	SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
 		else
+			-- Quick escape if current-character only and comes from something saved
+			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
 			for _,ref in pairs(t.costCollectibles) do
 				-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
 				if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
