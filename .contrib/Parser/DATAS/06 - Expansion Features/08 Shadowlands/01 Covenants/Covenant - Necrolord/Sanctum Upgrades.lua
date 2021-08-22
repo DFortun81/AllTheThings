@@ -861,10 +861,11 @@ _.ExpansionFeatures =
 
 _.HiddenQuestTriggers = {
 	q(60773),	-- Triggered shortly after completing 'Dude, Where's My Necropolis' (60184) after NPC RP
-	q(60780),	-- triggered the first time i channeled anima to the daily quest hub
 	q(63397),	-- Triggered when Completing weeklies with abominations/receiving Sitched set gear
 	q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
 
+-- Stitched Conjurer Abom Set
+	q(63392),	-- Gloves (182502)
 -- Stitched Wraith Abom Set
 	q(63392),	-- Stranglers (182493)
 	q(63394),	-- Armguards (182497)
@@ -872,6 +873,7 @@ _.HiddenQuestTriggers = {
 
 -- Anima Conductor
 	q(60774),	-- Theater of Pain (lvl 3)
+	q(60780),	-- triggered the first time i channeled anima to the daily quest hub
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
