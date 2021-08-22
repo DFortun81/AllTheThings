@@ -11,7 +11,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 43395 },	-- Windspeaker Lorvarius
 					["coord"] = { 71.8, 47.6, 207 },
-					["sourceQuests"] = {26580},	-- Familiar Intruders
+					["sourceQuests"] = { 26580 },	-- Familiar Intruders
 				}),
 				q(26871, {	-- A Rock Amongst Many
 					["lvl"] = 82,
@@ -131,11 +131,11 @@ _.Zones =
 				}),
 				q(27935, {	-- Bring Down the Avalanche (completing gives credit for both 27935 and 27936)
 					["lvl"] = 82,
-					["sourceQuests"] = {27934},	--  One With the Ground
+					["sourceQuests"] = { 27934 },	--  One With the Ground
 				}),
 				q(27936, {	-- Bring Down the Avalanche
 					["lvl"] = 82,
-					["sourceQuests"] = {27934},	--  One With the Ground
+					["sourceQuests"] = { 27934 },	--  One With the Ground
 				}),
 				q(26246, {	-- Captain's Log
 					["lvl"] = 82,
@@ -162,7 +162,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 45043 },	-- Peak Grindstone
 					["coord"] = { 20.7, 61.6, 207 },
-					["sourceQuests"] = {27126},	-- Rush Delivery
+					["sourceQuests"] = { 27126 },	-- Rush Delivery
 					["g"] = {
 						i(61456),	-- Broken Emergency Brake
 						i(61454),	-- Catapult Loader's Gloves
@@ -280,7 +280,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 47195 },	-- Slate Quicksand
 					["coord"] = { 30.6, 77.8, 207 },
-					["sourceQuests"] = {27931},	--  The Quaking Fields
+					["sourceQuests"] = { 27931 },	--  The Quaking Fields
 				}),
 				q(26436, {	-- Entrenched
 					["lvl"] = 82,
@@ -292,7 +292,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 42574 },	-- Initiate Goldmine
 					["coord"] = { 46.5, 57.3, 207 },
-					["sourceQuests"] = {26409},	--  Where's Goldmine?
+					["sourceQuests"] = { 26409 },	--  Where's Goldmine?
 				}),
 				q(26580, {	-- Familiar Intruders
 					["lvl"] = 82,
@@ -340,7 +340,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 43169 },	-- Clay Mudaxle
 					["coord"] = { 24.7, 62.2, 207 },
-					["sourceQuests"] = {26502},	--  Thunder Stones
+					["sourceQuests"] = { 26502 },	--  Thunder Stones
 					["g"] = {
 						i(61460),	-- Catapult Loading Scoop
 						i(61462),	-- Gear Detector
@@ -362,30 +362,37 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 42466 },	-- Terrath the Steady
 					["coord"] = { 39.9, 19.4, 207 },
-					["sourceQuests"] = {26656},	-- Don't. Stop. Moving.
+					["sourceQuests"] = { 26656 },	-- Don't. Stop. Moving.
 				}),
 				q(27050, {	-- Fungal Fury
 					["lvl"] = 82,
+					["isDaily"] = true,
 					["provider"] = { "n", 43804 },	-- Gorsik the Tumultuous
 					["coord"] = { 57.8, 13.0, 207 },
 					["sourceQuests"] = { 26709 },	-- The Stone Throne
-					["isDaily"] = true,
+					["g"] = {
+						ach(5450),	-- Fungal Frenzy
+					},
 				}),
 				q(26792, {	-- Fungal Monstrosities
 					["lvl"] = 82,
 					["provider"] = { "n", 44143 },	-- Slate Quicksand
 					["coord"] = { 27.6, 44.8, 207 },
-					["sourceQuests"] = {26834},	-- Down Into the Chasm
+					["sourceQuests"] = { 26834 },	-- Down Into the Chasm
 				}),
 				q(28390, {	-- Glop, Son of Glop
 					["lvl"] = 82,
+					["isDaily"] = true,
 					["provider"] = { "n", 44973 },	-- Ruberick
 					["coord"] = { 59.4, 14.0, 207 },
 					["sourceQuests"] = {
 						26709,	-- The Stone Throne
 						26583,	-- Wrath of the Fungalmancer
 					},
-					["isDaily"] = true,
+					["g"] = {
+						ach(5445),	-- Fungalophobia
+						ach(5446),	-- The Glop Family Line
+					},
 				}),
 				q(26579, {	-- Gone Soft
 					["lvl"] = 82,
@@ -408,7 +415,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 42466 },	-- Terrath the Steady
 					["coord"] = { 39.9, 19.4, 207 },
-					["sourceQuests"] = {26656},	-- Don't. Stop. Moving.
+					["sourceQuests"] = { 26656 },	-- Don't. Stop. Moving.
 				}),
 				q(26376, {	-- Hatred Runs Deep
 					["lvl"] = 82,
@@ -457,7 +464,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 43897 },	-- Pyrium Lodestone
 					["coord"] = { 22.7, 52.0, 207 },
-					["sourceQuests"] = {26632},	--  Close Escort
+					["sourceQuests"] = { 26632 },	--  Close Escort
 				}),
 				q(26375, {	-- Loose Stones
 					["lvl"] = 82,
@@ -467,10 +474,15 @@ _.Zones =
 				}),
 				q(26710, {	-- Lost In The Deeps
 					["lvl"] = 82,
+					["isDaily"] = true,
 					["provider"] = { "n", 44945 },	-- Pyrite Stonetender
 					["coord"] = { 55.4, 14.0, 207 },
 					["sourceQuests"] = { 26709 },	-- The Stone Throne
-					["isDaily"] = true,
+					["g"] = {
+						ach(5449, {	-- Rock Lover
+							i(60869),	-- Pebble (PET!)
+						}),
+					},
 				}),
 				q(26437, {	-- Making Things Crystal Clear
 					["lvl"] = 82,
@@ -504,7 +516,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 43898 },	-- Flint Oremantle
 					["coord"] = { 22.8, 52.1, 207 },
-					["sourceQuests"] = {26755},	--  Keep Them off the Front
+					["sourceQuests"] = { 26755 },	--  Keep Them off the Front
 					["g"] = {
 						i(61453),	-- Gloves of Troggslaying
 						i(61451),	-- Troggbane Chestguard
@@ -594,7 +606,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 43897 },	-- Pyrium Lodestone
 					["coord"] = { 22.7, 52.0, 207 },
-					["sourceQuests"] = {26835},	-- A Slight Problem
+					["sourceQuests"] = { 26835 },	-- A Slight Problem
 					["g"] = {
 						i(61449),	-- Liberator's Girdle
 						i(61448),	-- Oremantle's Favor
@@ -624,7 +636,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 42469 },	-- Kor the Immovable
 					["coord"] = { 34.4, 34.4, 207 },
-					["sourceQuests"] = {26441},	-- So Big, So Round...
+					["sourceQuests"] = { 26441 },	-- So Big, So Round...
 					["g"] = {
 						i(61422),	-- Basilisk Eye Wand
 						i(61423),	-- Brightpolish Shield
@@ -650,13 +662,13 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 43169 },	-- Clay Mudaxle
 					["coord"] = { 24.7, 62.2, 207 },
-					["sourceQuests"] = {26625},	--  Troggzor the Earthinator
+					["sourceQuests"] = { 26625 },	--  Troggzor the Earthinator
 				}),
 				q(26501, {	-- Sealing the Way
 					["lvl"] = 82,
 					["provider"] = { "n", 43071 },	-- Crag Rockcrusher
 					["coord"] = { 27.9, 68.8, 207 },
-					["sourceQuests"] = {26499},	--  Stonefather's Boon
+					["sourceQuests"] = { 26499 },	--  Stonefather's Boon
 					["g"] = {
 						i(61463),	-- Earthswell Belt
 						i(61465),	-- Geomancer's Mace
@@ -677,7 +689,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 43168 },	-- Gravel Longslab
 					["coord"] = { 24.5, 62.4, 207 },
-					["sourceQuests"] = {26501},	--  Sealing the Way
+					["sourceQuests"] = { 26501 },	--  Sealing the Way
 				}),
 				q(27007, {	-- Silvermarsh Rendezvous
 					["lvl"] = 82,
@@ -714,13 +726,13 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 42574 },	-- Initiate Goldmine
 					["coord"] = { 46.5, 57.3, 207 },
-					["sourceQuests"] = {26409},	--  Where's Goldmine?
+					["sourceQuests"] = { 26409 },	--  Where's Goldmine?
 				}),
 				q(26791, {	-- Sprout No More
 					["lvl"] = 82,
 					["provider"] = { "n", 44143 },	-- Slate Quicksand
 					["coord"] = { 27.6, 44.8, 207 },
-					["sourceQuests"] = {26834},	-- Down Into the Chasm
+					["sourceQuests"] = { 26834 },	-- Down Into the Chasm
 				}),
 				q(26576, {	-- Steady Hand
 					["lvl"] = 82,
@@ -735,13 +747,16 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 43071 },	-- Crag Rockcrusher
 					["coord"] = { 27.9, 68.8, 207 },
-					["sourceQuests"] = {27935,27936},	--  Bring Down the Avalanche
+					["sourceQuests"] = {
+						27935,	--  Bring Down the Avalanche
+						27936,	--  Bring Down the Avalanche
+					},
 				}),
 				q(26413, {	-- Take Him to the Earthcaller
 					["lvl"] = 82,
 					["provider"] = { "n", 42574 },	-- Initiate Goldmine
 					["coord"] = { 46.5, 57.3, 207 },
-					["sourceQuests"] = {26411},	--  Apply and Flash Dry
+					["sourceQuests"] = { 26411 },	--  Apply and Flash Dry
 					["g"] = {
 						i(61466),	-- Bell-Ringer's Skullcap
 						i(61467),	-- Flayer-Crush Boots
@@ -751,7 +766,7 @@ _.Zones =
 				q(26251, {	-- Take No Prisoners
 					["lvl"] = 82,
 					["provider"] = { "n", 42684 },	-- Stormcaller Mylra
-					["sourceQuests"] = {26248},	-- All Our Friends Are Dead
+					["sourceQuests"] = { 26248 },	-- All Our Friends Are Dead
 				}),
 				q(26771, {	-- Testing the Trap
 					["lvl"] = 82,
@@ -792,7 +807,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 47195 },	-- Slate Quicksand
 					["coord"] = { 30.6, 77.8, 207 },
-					["sourceQuests"] = {27931},	--  The Quaking Fields
+					["sourceQuests"] = { 27931 },	--  The Quaking Fields
 					["g"] = {
 						i(61400),	-- Size-Cutting Bracers
 					},
@@ -834,7 +849,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 43897 },	-- Pyrium Lodestone
 					["coord"] = { 22.7, 52.0, 207 },
-					["sourceQuests"] = {26836},	--  Rescue the Stonefather... and Flint
+					["sourceQuests"] = { 26836 },	--  Rescue the Stonefather... and Flint
 					["g"] = {
 						i(61398),	-- Axe of Earthly Sundering
 					},
@@ -873,7 +888,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 43071 },	-- Crag Rockcrusher
 					["coord"] = { 27.9, 68.8, 207 },
-					["sourceQuests"] = {26484},	--  To Stonehearth's Aid
+					["sourceQuests"] = { 26484 },	--  To Stonehearth's Aid
 				}),
 				q(27953, {	-- The Reliquary [Horde]
 					["lvl"] = 82,
@@ -885,10 +900,13 @@ _.Zones =
 				}),
 				q(28391, {	-- The Restless Brood
 					["lvl"] = 82,
+					["isDaily"] = true,
 					["provider"] = { "n", 43806 },	-- Terrath the Steady
 					["coord"] = { 56.6, 14.0, 207 },
 					["sourceQuests"] = { 26709 },	-- The Stone Throne
-					["isDaily"] = true,
+					["g"] = {
+						ach(5447),	-- My Very Own Broodmother
+					},
 				}),
 				q(26829, {	-- The Stone March
 					["lvl"] = 82,
@@ -951,7 +969,7 @@ _.Zones =
 				q(27058, {	-- The Wrong Sequence [Alliance]
 					["lvl"] = 82,
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {27040},	--  Fight Fire and Water and Air with...
+					["sourceQuests"] = { 27040 },	--  Fight Fire and Water and Air with...
 					["g"] = {
 						i(61439),	-- Gateshattering Hauberk
 						i(61441),	-- Starscraper Signet
@@ -960,7 +978,7 @@ _.Zones =
 				q(27059, {	-- The Wrong Sequence [Horde]
 					["lvl"] = 82,
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {27041},	--  Fight Fire and Water and Air with...
+					["sourceQuests"] = { 27041 },	--  Fight Fire and Water and Air with...
 					["g"] = {
 						i(61436),	-- Gateshattering Hauberk
 						i(61438),	-- Starscraper Signet
@@ -988,7 +1006,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 43160 },	-- Earthbreaker Dolomite
 					["coord"] = { 28.2, 69.7, 207 },
-					["sourceQuests"] = {26500},	--  We're Surrounded
+					["sourceQuests"] = { 26500 },	--  We're Surrounded
 				}),
 				q(26768, {	-- To Catch a Dragon
 					["lvl"] = 82,
@@ -1000,7 +1018,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 42573 },	-- Earthcaller Yevaa
 					["coord"] = { 49.5, 53.3, 207 },
-					["sourceQuests"] = {26413},	--  Take Him to the Earthcaller
+					["sourceQuests"] = { 26413 },	--  Take Him to the Earthcaller
 				}),
 				q(26625, {	-- Troggzor the Earthinator
 					["lvl"] = 82,
@@ -1039,7 +1057,7 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 43395 },	-- Windspeaker Lorvarius
 					["coord"] = { 71.8, 47.6, 207 },
-					["sourceQuests"] = {26581},	-- A Head Full of Wind
+					["sourceQuests"] = { 26581 },	-- A Head Full of Wind
 				}),
 				q(26377, {	-- Unsolid Ground
 					["lvl"] = 82,
@@ -1061,13 +1079,16 @@ _.Zones =
 					["lvl"] = 82,
 					["provider"] = { "n", 42465 },	-- Therazane
 					["coord"] = { 56.3, 12.2, 207 },
-					["sourceQuests"] = {26871},	-- A Rock Amongst Many
+					["sourceQuests"] = { 26871 },	-- A Rock Amongst Many
 				}),
 				q(26500, {	-- We're Surrounded
 					["lvl"] = 82,
 					["provider"] = { "n", 43160 },	-- Earthbreaker Dolomite
 					["coord"] = { 28.2, 69.7, 207 },
-					["sourceQuests"] = {27935,27936},	--  Bring Down the Avalanche
+					["sourceQuests"] = {
+						27935,	--  Bring Down the Avalanche
+						27936,	--  Bring Down the Avalanche
+					},
 				}),
 				q(26409, {	-- Where's Goldmine?
 					["lvl"] = 82,
