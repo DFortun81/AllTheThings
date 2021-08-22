@@ -24,7 +24,6 @@ _.Zones =
 					},
 				}),
 				n(-977, {	-- Maelie the Wanderer
-				--	["description"] = "",
 					["questID"] = 64298,	-- daily Maelie find
 					["isDaily"] = true,	-- seems this may have been changed to weekly on live... found Maelie on tuesday and the quest has not reset for me yet
 					["coords"] = {
@@ -41,7 +40,7 @@ _.Zones =
 						{ 59.8, 15.1, KORTHIA },
 						{ 61.3, 40.3, KORTHIA },
 						{ 62.4, 49.7, KORTHIA },
-						{ 67, 29, KORTHIA },
+						{ 67.0, 29.0, KORTHIA },
 					},
 					["icon"] = 3155422,
 					["cr"] = 179912,	-- Maelie the Wanderer
@@ -72,12 +71,6 @@ _.Zones =
 								i(186643),	-- Reins of the Wanderer (MOUNT!)
 							},
 						}),
-						--[[
-						q(, {	--
-							["name"] = "",
-						}),
-						--]]
-
 					},
 				}),
 			}),

@@ -1,23 +1,19 @@
 # AllTheThings
 
-## [SL-2.3.11](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.11) (2021-08-05)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.3.10...SL-2.3.11) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.4.1](https://github.com/DFortun81/AllTheThings/tree/SL-2.4.1) (2021-08-22)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.4.0...SL-2.4.1) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
-### Highlight of this update
-
-- We finally have Soulbind Conduits tracking! Just the base rank is enough to mark it collected.
+Nothing groundbreaking this time, mostly just fixes and cleanup of old error reports.
 
 ### Notable changes:
 
-- Map popouts won't have `Source(s)` header anymore
-- Fixed bug with `/attwq` where the window would break
-- Added Dalaran to show in `/attwq` properly
-- Fixed Benthic tokens to act as Bind-on-Account
-- Re-re-added the auto-filling of recursive Purchases under 'cost' Things when visible in a minilist (Minilist or popout) up to 2 levels deep
-- Fixed Vignette group text (maybe for the last time, maybe not, idk)
-- Fixed missing Highmountain
-- Moved 'Debug Mode' checkbox into the 'Features' tab with the rest of the 'Debugging' toggles
-- Slight adjustment to Quest Completion logic to not consider alt-collected Quests as completed for a character if in a Party Sync session & Account-Wide Quests disabled
-- Re-designed some of the logic for 'Nested Quest Chain Requirements' generation to better reflect the current character's requirements to reach the initial popout quest
-- More rare/Adventure drops, treasure/rare coordinates/descriptions, recipes, dailies, new Campaign chapters, etc
+- Fixes WoD craftables, where the base version is obtainable, but upgraded versions are unobtainable. **Please post in #errors if anything unusual has happened due to this change since it is quite drastic (i.e. unobtainable versions of Items showing up again as available, etc.)**
+- Fixes some Covenant quests
+- Fixed some PvP ensembles/items
+- Fixes to Arathi Basin quests
+- Moved Classic PvP into appropriate PvP->Battlegrounds section
+- Classic PvP & Cataclysm replica Rated Battleground titles are now split
+- Fixed BfA PvP mounts
+- Modified 'Source Locations' logic to always include any obtainable sources, but properly mark them if from a source which does not meet the user's current filters. Additionally, the proper unobtainable icon will always display on unobtainable Sources, even when they meet the user's filters or when in Debug mode
+- Fixed (probably) Azerite Armor caches again ??
 - Various fixes
