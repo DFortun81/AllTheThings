@@ -1201,6 +1201,7 @@ for key,value in pairs({
 	[164820] = "Placa de Guarda oscuro",	-- Dark Keeper Nameplate
 	[164867] = "SE BUSCA",	-- WANTED
 	[164868] = "MATAR INMEDIATAMENTE",	-- KILL ON SIGHT
+	[164869] = "Cáliz espectral",	-- The Spectral Chalice
 	[164887] = "Flor del viento corrupta",	-- Corrupted Windblossom
 	[164888] = "Blancoria corrupta",	-- Corrupted Whipper Root
 	[164955] = "Torre de cristal del Norte",	-- Northern Crystal Pylon

@@ -1253,6 +1253,7 @@ for key, value in pairs({
 	[164820] = "黑暗守护者的标示牌",	-- Dark Keeper Nameplate
 	[164867] = "通缉",	-- WANTED
 	[164868] = "格杀勿论",	-- KILL ON SIGHT
+	[164869] = "鬼魂之杯",	-- The Spectral Chalice	--TODO: This was taken from classic Wowhead
 	[164887] = "被腐化的迎风花",	-- Corrupted Windblossom	--TODO: This was taken from classic Wowhead
 	[164888] = "被腐化的鞭根草",	-- Corrupted Whipper Root	--TODO: This was taken from classic Wowhead
 	[164955] = "北部水晶塔",	-- Northern Crystal Pylon

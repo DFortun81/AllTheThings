@@ -1188,6 +1188,7 @@ for key,value in pairs({
 	[164820] = "Табличка с именем темного хранителя",	-- Dark Keeper Nameplate
 	[164867] = "РАЗЫСКИВАЕТСЯ",	-- WANTED
 	[164868] = "УБИТЬ НА МЕСТЕ",	-- KILL ON SIGHT
+	[164869] = "Призрачный кубок",	-- The Spectral Chalice
 	[164887] = "Оскверненный ветроцвет",	-- Corrupted Windblossom
 	[164888] = "Гнилой кнутокорень",	-- Corrupted Whipper Root
 	[164955] = "Северный хрустальный пилон",	-- Northern Crystal Pylon
