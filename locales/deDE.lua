@@ -1201,6 +1201,7 @@ for key,value in pairs({
 	[164820] = "Namensschild des Dunkelbewahrers",	-- Dark Keeper Nameplate
 	[164867] = "GESUCHT",	-- WANTED
 	[164868] = "SOFORT TÖTEN",	-- KILL ON SIGHT
+	[164869] = "Spektraler Kelch",	-- The Spectral Chalice
 	[164887] = "Verderbte Windblüte",	-- Corrupted Windblossom
 	[164888] = "Verderbte Peitscherwurzel",	-- Corrupted Whipper Root
 	[164955] = "Nördlicher Kristallpylon",	-- Northern Crystal Pylon

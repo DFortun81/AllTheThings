@@ -1200,6 +1200,7 @@ for key,value in pairs({
 	[164820] = "Nom du Gardien noir",	-- Dark Keeper Nameplate
 	[164867] = "AVIS DE RECHERCHE",	-- WANTED
 	[164868] = "TUER À VUE",	-- KILL ON SIGHT
+	[164869] = "Calice spectral",	-- The Spectral Chalice
 	[164887] = "Fleur-de-vent corrompue",	-- Corrupted Windblossom
 	[164888] = "Navetille corrompue",	-- Corrupted Whipper Root
 	[164955] = "Pylône de cristal nord",	-- Northern Crystal Pylon

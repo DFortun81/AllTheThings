@@ -1201,6 +1201,7 @@ for key,value in pairs({
 	[164820] = "암흑의 문지기 명판",	-- Dark Keeper Nameplate
 	[164867] = "현상 수배!",	-- WANTED
 	[164868] = "사살 지령",	-- KILL ON SIGHT
+	[164869] = "유령의 성배",	-- The Spectral Chalice	--TODO: This was taken from classic Wowhead
 	[164887] = "오염된 바람꽃",	-- Corrupted Windblossom	--TODO: This was taken from classic Wowhead
 	[164888] = "오염된 채찍뿌리",	-- Corrupted Whipper Root	--TODO: This was taken from classic Wowhead
 	[164955] = "북쪽 수정탑",	-- Northern Crystal Pylon
