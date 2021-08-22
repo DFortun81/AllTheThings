@@ -714,10 +714,15 @@ _.Zones =
 						63034,	-- The Elysian Fields [Kyrian]
 					},
 					["g"] = {
+						i(181635),	-- Honortoll Gavel
+						i(181630),	-- Honortoll Spear
+						i(181627),	-- Lifepath Crossbow
 						i(181637),	-- Lifepath Hammer
 						i(181628),	-- Memoria Glaive
+						i(181634),	-- Memoria Greatblade
 						i(181636),	-- Memoria Spellblade
 						i(181631),	-- Requiem Chime
+						i(181630),	-- Requiem Handscythes
 						i(181633),	-- Waylight Blade
 						i(181629),	-- Waylight Defender
 						-- TODO: more rewards
@@ -744,6 +749,7 @@ _.Zones =
 						i(181695),	-- Gorewrought Shortsword
 						i(181688),	-- Gorewrought Stave
 						i(181686),	-- Gorewrought Tome
+						i(181684),	-- Gorewrought Wand
 						i(181692),	-- Gorewrought Warblade
 						i(181687),	-- Gorewrought Warglaive
 						-- TODO: more rewards
@@ -769,9 +775,14 @@ _.Zones =
 					["g"] = {
 						i(181208),	-- Anima-Infused Muck
 						i(181224),	-- Avowed Arcanist's Staff
+						i(181221),	-- Balanced Darkwing Stave
 						i(181216),	-- Cinderwall Great Mace
+						i(181215),	-- Darkwing Assassin's Blade
 						i(181222),	-- Darkwing Rebel's Halberd
+						i(181209),	-- Devourer's Bite
 						i(181207),	-- Dominance Keep Barrier
+						i(181210),	-- Dredhollow Boomstick
+						i(181220),	-- Fiend Collector's Cudgel
 						i(181223),	-- Mace of Emberwrath
 						i(181244),	-- Rebel Darkwing's Edge
 						i(181213),	-- Shard-Dusted Shank

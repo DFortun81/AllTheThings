@@ -2122,3 +2122,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	--q(37673),	-- Short-Supply Reward, Triggered when killing Tarlna the Ageless (side note: accompanied by Pepe
+};

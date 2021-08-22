@@ -63,6 +63,10 @@ _.Zones =
 					["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(36348, {	-- Assault on Socrethar's Rise [Bonus Objective]
+					["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(35014, {	-- Blademoon Bloom
 					["sourceQuests"] = { 33788 },	-- Cooking With Unstable Herbs
 					["coord"] = { 53.7, 57.2, DRAENOR_SHADOWMOON_VALLEY },

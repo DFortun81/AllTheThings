@@ -159,6 +159,7 @@ _.Zones =
 					q(54577, {	-- Shadowed Halls and Dusty Cogs
 						["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
 						["coord"] = { 41.8, 31.7, 469 },
+						["maps"] = { 1380 },	-- GnomereganC
 						["races"] = { GNOME },
 						["sourceQuest"] = 54576, -- Gnomeregan's Finest
 						["minReputation"] = { 54, EXALTED }, -- Gnomeregan
