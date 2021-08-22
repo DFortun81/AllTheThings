@@ -23,7 +23,7 @@ _.Zones =
 						i(18712),		-- Arena Vambraces
 						i(18709),		-- Arena Wristguards
 						i(126948, {		-- Defending Champion
-							["description"] = "You must gather 12x Arena Master trinkets on ONE character. Once you have the achievement, the next time you open the chest on any character you can get the Defending Champion in addition to the other spoils.",
+							["description"] = "You must gather 12x Arena Master trinkets on ONE character. Once you have the achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
 							["cost"] = {
 								{ "i", 19024, 1 },	-- Arena Grand Master
 							},
