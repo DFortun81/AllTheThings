@@ -562,6 +562,13 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(7511)),	-- Astral Knot Robe
 					},
 				}),
+				q(1639, {	-- Bartleby the Drunk
+					["provider"] = { "n", 6089 },	-- Harry Burlguard
+					["classes"] = { WARRIOR },
+					["coord"] = { 76.8, 53.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(58983, {	-- Battle for Azeroth: Tides of War (Shadowlands version)
 					["sourceQuests"] = { 58912 },	-- An Urgent Meeting
 					["altQuests"] = { 46727 },	-- Tides of War
