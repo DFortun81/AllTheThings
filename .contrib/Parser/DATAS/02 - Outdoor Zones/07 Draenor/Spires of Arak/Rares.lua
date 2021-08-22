@@ -93,6 +93,11 @@ _.Zones =
 						i(119404),	-- Glowing Morel
 					},
 				}),
+				n(84951, {	-- Gobblefin
+					["questID"] = 36305,
+					["coord"] = { 33.6, 58.8, SPIRES_OF_ARAK },
+					["lvl"] = lvlsquish(100, 40, 100),
+				}),
 				n(86724, {	-- Hermit Palefur
 					["questID"] = 36887,
 					["coord"] = { 59.2, 14.8, SPIRES_OF_ARAK },

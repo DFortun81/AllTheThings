@@ -853,3 +853,6 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(54953),	-- Killing Adhara White
+};

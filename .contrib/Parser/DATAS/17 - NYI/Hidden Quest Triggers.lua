@@ -2511,7 +2511,6 @@ _.HiddenQuestTriggers = {
 		q(54635),	-- additional version of Mekkatorque's Battle Plans, presumably if you don't pick it up from a mob during "Killing on the Side," but idk how that could happen
 		q(58417),	-- triggered when starting the mission "Casting the Bait" while on "Under False Colors" during the Horde War Campaign
 		q(55135),	-- triggered after finishing the mission "Casting the Bait" during the Horde War Campaign
-		q(54854),	-- naming the ship "Tiffin's Melody" during Blessing of the Tides quest to recruit Kul Tirans
 		q(53964),	-- triggered when turning in #51445, "Thros, the Blighted Lands"
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
@@ -3721,7 +3720,6 @@ _.HiddenQuestTriggers = {
 		q(63452),	-- Triggered when exceeding the rep needed for a Wild Hunt paragon box, but before turning in the quest for the paragon box
 					-- Also when reaching Renown 23, rep only at Honored with Wild Hunt
 		q(62941),	-- When opening the box containing Blacksmithing WQ supplies for 61435
-		q(59729),	-- During Getting Backstage
 		-- Ardenweald Rares
 		q(62267),	-- Gormbore secondary quest
 		q(62269),	-- Macabre secondary quest
@@ -3867,8 +3865,6 @@ _.HiddenQuestTriggers = {
 		q(63083),	-- defeating Craven Corinth on Loyalty w/Kleia, pre-looting (also used Spiritforged Aegis for 'Bastion of Protection' achievement criteria)
 		q(63097),	-- Completing first 9 Path of Ascension 'Courage' challenges?
 		q(63451),	-- triggered when turning in #61332, "Return Lost Souls"
-		q(59727),	-- Triggered when adding purple petals to Moonberry's soap during quest 58816 'Getting Backstage'
-		q(59728),	-- Triggered during quest 58816 'Getting Backstage'
 		q(62756),	-- Reaching Renown 19 Kyrian / unlocking Deepening Bond 4% stam increase
 		q(62757),	-- Reaching Renown 35 Kyrian / unlocking Deepening Bond 6% stam increase
 		q(62927),	-- Reaching Renown 39 Kyrian / unlocking Eternal Phalynx of Purity

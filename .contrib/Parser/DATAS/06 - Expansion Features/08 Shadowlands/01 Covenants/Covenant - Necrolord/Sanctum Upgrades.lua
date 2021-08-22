@@ -863,6 +863,8 @@ _.HiddenQuestTriggers = {
 	q(60773),	-- Triggered shortly after completing 'Dude, Where's My Necropolis' (60184) after NPC RP
 	q(63397),	-- Triggered when Completing weeklies with abominations/receiving Sitched set gear
 	q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
+	--q(62572),	-- Created "Marz" as the 2nd construct, to finish "build one more" / Faction flag kit
+	--q(61512),	-- 
 
 -- Stitched Conjurer Abom Set
 	q(63392),	-- Gloves (182502)

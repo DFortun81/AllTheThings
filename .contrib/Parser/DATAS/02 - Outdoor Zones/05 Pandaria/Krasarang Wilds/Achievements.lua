@@ -59,7 +59,7 @@ _.Zones =
 						}),
 						o(213653, {		-- Pandaren Fishing Spear
 							["questID"] = 31409,
-							["coord"] = { 52.0, 46.0, KRASARANG_WILDS },
+							["coord"] = { 50.8, 49.3, KRASARANG_WILDS },
 							["g"] = {
 								i(86124),	-- Pandaren Fishing Spear
 							},

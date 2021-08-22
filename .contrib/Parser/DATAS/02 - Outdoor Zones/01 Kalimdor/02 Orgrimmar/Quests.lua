@@ -2382,6 +2382,7 @@ _.Zones =
 					["provider"] = { "n", 52382 },	-- Ziradormi
 					["coord"] = { 48.8, 70.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(28805, {	-- The Eye of the Storm
 					["sourceQuests"] = { 28790 },	-- A Personal Summons

@@ -869,3 +869,8 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(59727),	-- Triggered when adding purple petals to Moonberry's soap during quest 58816 'Getting Backstage'
+	q(59728),	-- Triggered when adding red petals to Moonberry's soap during quest 58816 'Getting Backstage'
+	q(59729),	-- Triggered when adding green petals to Moonberry's soap during quest 58816 'Getting Backstage'
+};

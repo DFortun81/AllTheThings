@@ -780,6 +780,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 59.9, 51.2, STORMHEIM },
 					["provider"] = { "n", 93624 },	-- Dread-Rider Cullen
+					["isBreadcrumb"] = true,
 				}),
 				q(38810, {	-- The Dreaming Fungus
 					["sourceQuests"] = {

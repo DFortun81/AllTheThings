@@ -316,6 +316,7 @@ _.Zones =
 					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 					["coord"] = { 79.8, 1.57, KRASARANG_WILDS },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 
 
@@ -324,6 +325,7 @@ _.Zones =
 					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 					["coord"] = { 79.8, 1.57, KRASARANG_WILDS },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 
 
@@ -332,6 +334,7 @@ _.Zones =
 					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 					["coord"] = { 79.8, 1.57, KRASARANG_WILDS },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 
 
@@ -340,6 +343,7 @@ _.Zones =
 					["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 					["coord"] = { 79.8, 1.57, KRASARANG_WILDS },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 
 
