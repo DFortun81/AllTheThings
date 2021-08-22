@@ -94,6 +94,7 @@ _.ExpansionFeatures =
 				i(187041, {	-- Shoulders of Unbreakable Demise
 					["crs"] = {
 						155250,	-- Decayspeaker
+						159190,	-- Synod
 					},
 				}),
 				i(187038, {	-- Shoulders of Vehement Slicing
