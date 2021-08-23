@@ -2597,6 +2597,7 @@ _.HiddenQuestTriggers = {
 --	Akana
 --	Inowari
 --	Neri
+	q(56521),	-- "If I'd been put on one of these work crews, I might have never broken free.  The people here haven't been broken yet.  There's still a chance..."
 	q(56664),	-- "We need to be careful down here.  The locals are definitely not friendly."
 	q(56668),	-- "Kelp grass is one of our most useful resources here in Nazjatar."
 	q(56669),	-- "The tamed snapdragons aren't producing venom anymore. Our only way to harvest it is from the wild packs roaming here."
