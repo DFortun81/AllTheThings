@@ -1925,38 +1925,47 @@ local IsQuestFlaggedCompletedForObject = function(t)
 	end
 end
 
--- Quest Name Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
+-- Quest Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
 local questRetries = {};
 local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
 local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
-	if not id then return nil; end
-	QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
-	QuestHarvester:SetHyperlink("quest:"..id);
-	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetTitleForQuestID(id);
-	-- QuestHarvester:SetHyperlink("\124cffaaaaaa\124Hquest:".. id.."\124h[QUEST:".. id .. "]\124h\124r");
---	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetQuestInfo(id);
-	QuestHarvester:Hide()
-	if title and title ~= RETRIEVING_DATA then
-		-- working Quest Link Example from Wowhead
-		-- /script DEFAULT_CHAT_FRAME:AddMessage("\124cffffff00\124Hquest:48615:110\124h[War Never Changes]\124h\124r");
-		-- /script DEFAULT_CHAT_FRAME:AddMessage("\124cffff0000\124Hquest:48615\124h[VisibleText]\124h\124r");
-		-- QuestHarvester:SetHyperlink("\124cffffff00\124Hquest:".. id .."\124h[".. title .. "]\124h\124r");
-		rawset(questRetries, id, nil);
-		rawset(t, id, title);
-		return title
-	else
-		local retries = rawget(questRetries, id);
-		if retries and retries > 120 then
-			title = "Quest #" .. id .. "*";
+	if id then
+		local title = QuestUtils_GetQuestName(id);
+		if title and title ~= "" then
+			-- print("QuestUtils_GetQuestName",id,title)
 			rawset(questRetries, id, nil);
 			rawset(t, id, title);
-			return title;
+			return title
+		end
+
+		QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
+		QuestHarvester:SetHyperlink("quest:"..id);
+		title = AllTheThingsQuestHarvesterTextLeft1:GetText();
+		-- QuestHarvester:SetHyperlink("\124cffaaaaaa\124Hquest:".. id.."\124h[QUEST:".. id .. "]\124h\124r");
+		--	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetQuestInfo(id);
+		QuestHarvester:Hide()
+		if title and title ~= RETRIEVING_DATA then
+			-- working Quest Link Example from Wowhead
+			-- /script DEFAULT_CHAT_FRAME:AddMessage("\124cffffff00\124Hquest:48615:110\124h[War Never Changes]\124h\124r");
+			-- /script DEFAULT_CHAT_FRAME:AddMessage("\124cffff0000\124Hquest:48615\124h[VisibleText]\124h\124r");
+			-- QuestHarvester:SetHyperlink("\124cffffff00\124Hquest:".. id .."\124h[".. title .. "]\124h\124r");
+			rawset(questRetries, id, nil);
+			rawset(t, id, title);
+			return title
 		else
-			rawset(questRetries, id, (retries or 0) + 1);
+			local retries = rawget(questRetries, id);
+			if retries and retries > 120 then
+				title = "Quest #" .. id .. "*";
+				rawset(questRetries, id, nil);
+				rawset(t, id, title);
+				return title;
+			else
+				rawset(questRetries, id, (retries or 0) + 1);
+			end
+			return RETRIEVING_DATA;
+		end
 	end
-		return RETRIEVING_DATA;
-	end
-end })
+end});
 
 -- NPC & Title Name Harvesting Lib (https://us.battle.net/forums/en/wow/topic/20758497390?page=1#post-4, Thanks Gello!)
 local NPCTitlesFromID = {};
@@ -4952,14 +4961,10 @@ local function PopulateQuestObject(questObject)
 	_cache = SearchForField("questID",questObject.questID);
 	if _cache then
 		for _,data in ipairs(_cache) do
-			-- only merge into the WQ quest object properties from an object in cache with this questID
+			-- only merge into the quest object properties from an object in cache with this questID
 			if data.questID == questObject.questID then
 				MergeProperties(questObject, data, true);
-				if data.g then
-					for _,entry in ipairs(data.g) do
-						NestObject(questObject, entry, true);
-					end
-				end
+				NestObjects(questObject, data.g, true);
 			-- otherwise this is a non-quest object flagged with this questID so it should be added under the quest
 			else
 				NestObject(questObject, data, true);
@@ -4975,11 +4980,7 @@ local function PopulateQuestObject(questObject)
 				for _,data in ipairs(_cache) do
 					if GetRelativeField(data, "headerID", -16) then	-- Rares only!
 						MergeProperties(questObject, data);
-						if data.g then
-							for _,entry in ipairs(data.g) do
-								NestObject(questObject, entry, true);
-							end
-						end
+						NestObjects(questObject, data.g, true);
 					end
 				end
 			end
@@ -5019,7 +5020,7 @@ local function GetPopulatedQuestObject(questID)
 	else
 		createQuest = app.CreateQuest;
 	end
-	local questObject =  createQuest(questID, { g = {}, progress = 0, total = 0});
+	local questObject =  createQuest(questID, {});
 	PopulateQuestObject(questObject);
 	return questObject;
 end
@@ -10102,6 +10103,7 @@ app.TryPopulateQuestRewards = function(questObject)
 
 	-- app.DEBUG_PRINT = questObject.questID == 51064 and 51064;
 	-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards",questObject.questID) end
+	-- print("TryPopulateQuestRewards",questObject.questID,questObject.missingItem,questObject.missingCurr)
 	if questObject.missingItem > 0 then
 		-- Get reward info
 		local numQuestRewards = GetNumQuestLogRewards(questObject.questID);
@@ -12998,6 +13000,7 @@ local function Refresh(self)
 		-- Ensure that the first row doesn't move out of position.
 		local row = rawget(container.rows, 1) or CreateRow(container);
 		SetRowData(self, row, rawget(rowData, 1));
+		local containerHeight = container:GetHeight();
 		totalHeight = totalHeight + row:GetHeight();
 		current = current + 1;
 		rowCount = rowCount + 1;
@@ -13011,7 +13014,7 @@ local function Refresh(self)
 				-- print("new minIndent",minIndent)
 			end
 			totalHeight = totalHeight + row:GetHeight();
-			if totalHeight > container:GetHeight() then
+			if totalHeight > containerHeight then
 				break;
 			else
 				current = current + 1;
@@ -13060,16 +13063,16 @@ local function Refresh(self)
 
 		-- If this window has an UpdateDone method which should process after the Refresh is complete
 		if self.UpdateDone then
-			-- print("Refresh-UpdateDone")
+			-- print("Refresh-UpdateDone",self.Suffix or self.suffix)
 			Callback(self.UpdateDone, self);
 		-- If the rows need to be processed again, do so next update.
 		elseif self.processingLinks then
-			-- print("Refresh-processingLinks")
+			-- print("Refresh-processingLinks",self.Suffix or self.suffix)
 			Callback(self.Refresh, self);
 			self.processingLinks = nil;
 		-- If the data itself needs another update pass due to new rows being added dynamically
 		elseif self.doUpdate then
-			-- print("Refresh-doUpdate")
+			-- print("Refresh-doUpdate",self.Suffix or self.suffix)
 			Callback(self.Update, self, true);
 			self.doUpdate = nil;
 		end
@@ -15156,7 +15159,7 @@ customWindowUpdates["AuctionData"] = function(self)
 							C_AuctionHouse_ReplicateItems();
 						else
 							app.print(": Throttled scan! Please wait " .. RoundNumber(cooldown - now, 0) .. " before running another. Loading last save instead...");
-							StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
+							StartCoroutine("ProcessAuctionData", app.ProcessAuctionData, 1);
 						end
 					end,
 					['OnUpdate'] = app.AlwaysShowUpdate,
@@ -18450,7 +18453,7 @@ hooksecurefunc("EmbeddedItemTooltip_SetItemByQuestReward", function(self, ...)
 end);
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
-local ProcessAuctionData = function()
+app.ProcessAuctionData = function()
 	-- If we have no auction data, then simply return now.
 	if not AllTheThingsAuctionData then return end;
 	local count = 0;
@@ -18725,7 +18728,7 @@ app.OpenAuctionModule = function(self)
 					items = {};
 				end
 				print(L["TITLE"] .. L["AH_SCAN_SUCCESSFUL_1"] .. auctionItems .. L["AH_SCAN_SUCCESSFUL_2"]);
-				StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
+				StartCoroutine("ProcessAuctionData", app.ProcessAuctionData, 1);
 			end
 		end);
 		window:SetPoint("TOPLEFT", AuctionHouseFrame, "TOPRIGHT", 0, -10);
