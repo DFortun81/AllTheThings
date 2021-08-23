@@ -117,7 +117,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 				["description"] = "This is a rare that is not always present.",
 				["g"] = {
 					i(12471, {	-- Desertwalker Cane
-						["description"] = "This item is available only in person loot.",
+						["description"] = "This item is available only in personal loot.",
 					}),
 				},
 			}),
