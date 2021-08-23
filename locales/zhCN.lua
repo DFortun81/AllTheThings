@@ -190,6 +190,7 @@ local L = app.L;
 	L.CACHED_RECIPES_2 = " 已知配方!";
 	L.WORLD_QUESTS = "世界任务";
 	L.WORLD_QUESTS_DESC = "这些都是世界任务和其他有时间限制的事物, 目前可以在某个地方获得. 去得到他们!";
+	--TODO: L.QUESTS_DESC = "Shows all possible QuestID's in the game in ascending numeric order.";
 	L.UPDATE_WORLD_QUESTS = "立即更新世界任务";
 	L.UPDATE_WORLD_QUESTS_DESC = "有时世界任务API很慢或无法返回新数据. 如果希望在不更改区域的情况下强制刷新数据，请立即单击此按钮!\n\nAlt+单击以包括当前可用的事物, 可能不受时间限制";
 	L.CLEAR_WORLD_QUESTS = "清除世界任务";

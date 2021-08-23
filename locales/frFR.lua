@@ -187,6 +187,7 @@ local L = app.L;
 	--TODO: L.CACHED_RECIPES_2 = " known recipes!";
 	--TODO: L.WORLD_QUESTS = "World Quests";
 	--TODO: L.WORLD_QUESTS_DESC = "These are World Quests and other time-limited Things that are currently available somewhere. Go get 'em!";
+	--TODO: L.QUESTS_DESC = "Shows all possible QuestID's in the game in ascending numeric order.";
 	--TODO: L.UPDATE_WORLD_QUESTS = "Update World Quests Now";
 	--TODO: L.UPDATE_WORLD_QUESTS_DESC = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!\n\nAlt + Click to include currently-available Things which may not be time-limited";
 	--TODO: L.CLEAR_WORLD_QUESTS = "Clear World Quests";
