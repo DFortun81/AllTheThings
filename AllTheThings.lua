@@ -409,6 +409,31 @@ end
 local function ReturnFalse()
 	return false;
 end
+-- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
+-- i.e. Create a data group which contains no information but will attempt to populate itself when the 'text' field is referenced
+app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
+	local dlo, o;
+	local params = {...};
+	local loader = {
+		__index = function(t, key)
+			-- override for the object
+			if overrides and (overrides[key] ~= nil) then
+				return overrides[key];
+			-- existing object, then reference the respective key
+			elseif o then
+				return o[key];
+			end
+
+			if key == loadField then
+				o = objFunc(unpack(params));
+				return o[key];
+			end
+		end,
+	};
+	-- data is just an empty table with a loader metatable
+	dlo = setmetatable({}, loader);
+	return dlo;
+end
 app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
 app.SetDataSubMember = SetDataSubMember;
@@ -5012,15 +5037,12 @@ local function PopulateQuestObject(questObject)
 
 	app.TryPopulateQuestRewards(questObject);
 end
--- Returns a Quest or Vignette Object containing a lot of Quest information for displaying in a row
+-- Returns an Object based on a QuestID a lot of Quest information for displaying in a row
 local function GetPopulatedQuestObject(questID)
-	local cachedVersion, createQuest = app.SearchForObject("questID", questID);
-	if cachedVersion and cachedVersion.isVignette then
-		createQuest = app.CreateVignette;
-	else
-		createQuest = app.CreateQuest;
-	end
-	local questObject =  createQuest(questID, {});
+	local cachedVersion = app.SearchForObject("questID", questID);
+	-- either want to duplicate the existing data for this quest, or create new data for a missing quest
+	local data = cachedVersion or { questID = questID, _missing = true };
+	local questObject = CreateObject(data);
 	PopulateQuestObject(questObject);
 	return questObject;
 end
@@ -9909,6 +9931,8 @@ local questFields = {
 			return "Interface\\AddOns\\AllTheThings\\assets\\Interface_Questind";
 		elseif t.repeatable then
 			return "Interface\\AddOns\\AllTheThings\\assets\\Interface_Questd";
+		elseif t._missing then
+			return "Interface\\Icons\\INV_Misc_QuestionMark";
 		else
 			return "Interface\\AddOns\\AllTheThings\\assets\\Interface_Quest";
 		end
@@ -17173,6 +17197,36 @@ customWindowUpdates["Random"] = function(self)
 		self:BaseUpdate(true);
 	end
 end;
+customWindowUpdates["Quests"] = function(self, force, got)
+	if not self.initialized then
+		self.initialized = true;
+		self.Limit = 70000;
+		force = true;
+
+		-- info about the Window
+		self.data = {
+			['text'] = L["QUESTS_CHECKBOX"],
+			['icon'] = app.asset("Interface_Quest_header"),
+			["description"] = L["QUESTS_DESC"].."\n\n1 - "..self.Limit,
+			['visible'] = true,
+			['expanded'] = true,
+			["indent"] = 0,
+			['back'] = 1,
+		};
+
+		-- add a bunch of raw, delay-loaded quests in order into the window
+		local g, overrides = {}, {visible=true};
+		local dlo = app.DelayLoadedObject;
+		for i=1,self.Limit,1 do
+			tinsert(g, dlo(GetPopulatedQuestObject, "text", overrides, i));
+		end
+		self.data.g = g;
+	end
+	if self:IsVisible() then
+		BuildGroups(self.data, self.data.g);
+		self:BaseUpdate(force);
+	end
+end
 customWindowUpdates["Tradeskills"] = function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
@@ -18778,6 +18832,9 @@ SlashCmdList["AllTheThings"] = function(cmd)
 			return true;
 		elseif cmd == "ran" or cmd == "rand" or cmd == "random" then
 			app:GetWindow("Random"):Toggle();
+			return true;
+		elseif cmd == "quests" then
+			app:GetWindow("Quests"):Toggle();
 			return true;
 		elseif cmd == "wq" then
 			app:GetWindow("WorldQuests"):Toggle();

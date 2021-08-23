@@ -200,6 +200,7 @@ app.L = {
 	["CACHED_RECIPES_2"] = " known recipes!";
 	["WORLD_QUESTS"] = "World Quests";
 	["WORLD_QUESTS_DESC"] = "These are World Quests and other time-limited Things that are currently available somewhere. Go get 'em!";
+	["QUESTS_DESC"] = "Shows all possible QuestID's in the game in ascending numeric order.";
 	["UPDATE_WORLD_QUESTS"] = "Update World Quests Now";
 	["UPDATE_WORLD_QUESTS_DESC"] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!\n\nAlt + Click to include currently-available Things which may not be time-limited";
 	["CLEAR_WORLD_QUESTS"] = "Clear World Quests";
