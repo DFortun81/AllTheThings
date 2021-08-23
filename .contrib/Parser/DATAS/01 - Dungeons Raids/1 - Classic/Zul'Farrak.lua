@@ -116,7 +116,9 @@ _.Instances = { tier(CLASSIC_TIER, {
 			n(10081, {			-- Dustwraith
 				["description"] = "This is a rare that is not always present.",
 				["g"] = {
-					i(12471),	-- Desertwalker Cane
+					i(12471, {	-- Desertwalker Cane
+						["description"] = "This item is available only in person loot.",
+					}),
 				},
 			}),
 			cr(7275, e(487, {	-- Nekrum & Sezzi'ziz
