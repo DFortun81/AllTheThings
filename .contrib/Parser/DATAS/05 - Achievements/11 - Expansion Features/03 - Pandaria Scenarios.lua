@@ -93,7 +93,7 @@ _.Achievements =
 					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
 				},
 			}),
-			ach(8010, {	-- Domination Point
+			ach(8013, {	-- Domination Point
 				["races"] = HORDE_ONLY,
 				["maps"] = { 498 },	-- Domination Point
 				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
@@ -214,7 +214,7 @@ _.Achievements =
 				["maps"] = { 483 },	-- Dustwallow Marsh (Theramore's Fall)
 				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			}),
-			ach(8013, {	-- Lion's Landing
+			ach(8010, {	-- Lion's Landing
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 486 },	-- Lion's Landing
 				["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
