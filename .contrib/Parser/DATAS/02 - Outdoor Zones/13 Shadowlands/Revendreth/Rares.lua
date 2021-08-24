@@ -143,7 +143,7 @@ _.Zones =
 					["g"] = {
 						q(59607, {	-- Takin' Down the Beast
 							["description"] = "If this quest is offered, it must be completed to spawn the rare.",
-							["isDaily"] = true,
+							["repeatable"] = true,
 							["crs"] = { 165327 },	-- Wingsmash
 							["coord"] = { 46.30, 77.86, REVENDRETH },
 							["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
