@@ -129,9 +129,9 @@ namespace ATT
                             //builder.Append('"').Append(Convert.ToString(data[field]).Replace("\"", "\\\"")).Append('"');
                             ExportRawLua(builder, data[field]);
                         }
-                        else if (field == "OnUpdate")
+                        else if (field == "OnUpdate" || field == "OnTooltip")
                         {
-                            var functionBody = Convert.ToString(data[field]).Replace("\n", "").Replace("\r", "").Replace("\t\t", "\t");
+                            var functionBody = Convert.ToString(data[field]).Replace("\n", "\t").Replace("\r", "\t").Replace("\t\t", "\t").Replace("\t\t", "\t");
                             if ((functionBody.StartsWith("\"") && functionBody.EndsWith("\""))
                                 || (functionBody.StartsWith("'") && functionBody.EndsWith("'")))
                             {
@@ -171,9 +171,9 @@ namespace ATT
                             //builder.Append('"').Append(Convert.ToString(data[field]).Replace("\"", "\\\"")).Append('"');
                             ExportRawLua(builder, data[field]);
                         }
-                        else if (field == "OnUpdate")
+                        else if (field == "OnUpdate" || field == "OnTooltip")
                         {
-                            var functionBody = Convert.ToString(data[field]).Replace("\n", "").Replace("\r", "").Replace("\t\t", "\t");
+                            var functionBody = Convert.ToString(data[field]).Replace("\n", "\t").Replace("\r", "\t").Replace("\t\t", "\t").Replace("\t\t", "\t");
                             if ((functionBody.StartsWith("\"") && functionBody.EndsWith("\""))
                                 || (functionBody.StartsWith("'") && functionBody.EndsWith("'")))
                             {

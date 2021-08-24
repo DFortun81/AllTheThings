@@ -43,7 +43,11 @@ namespace ATT
                     // Load all of the RAW JSON Data into the database.
                     var files = Directory.EnumerateFiles(databaseRootFolder, "*.json", SearchOption.AllDirectories).ToList();
                     Trace.WriteLine("Parsing JSON files...");
+#if ANYCLASSIC
+                    foreach (var f in files) ParseJSONFile(f);
+#else
                     files.AsParallel().ForAll(f => ParseJSONFile(f));
+#endif
                     Trace.WriteLine("Done parsing JSON files.");
 
                     if (Errored)
