@@ -202,7 +202,7 @@ _.Zones =
 				q(27467, {	-- Buried Blades
 					["sourceQuests"] = { 27464 },	-- Argent Call: The Trial of the Crypt
 					["provider"] = { "n", 16365 },	-- Master Craftsman Omarion
-					["coord"] = { 41.5, 88.0, EASTERN_PLAGUELANDS },
+					["coord"] = { 75.6, 52.0, EASTERN_PLAGUELANDS },
 					["g"] = {
 						i(62984),	-- Omarion's Gift
 						i(62983),	-- Cowl of the Noxious Glade
