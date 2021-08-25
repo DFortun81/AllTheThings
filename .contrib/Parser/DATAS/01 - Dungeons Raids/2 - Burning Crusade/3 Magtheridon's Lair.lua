@@ -30,15 +30,15 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(28791),	-- Ring of the Recalcitrant
 					},
 				}),
-				q(13430, {	-- Trial of the Naaru: Magtheridon
+				q(10888, {	-- Trial of the Naaru: Magtheridon
 					["qg"] = 18481,	-- A'dal
 					["sourceQuests"] = {
 						10884,	-- Trial of the Naaru: Mercy
-						10885,	-- Trial of the Naaru: Strength
+						10885, 	-- Trial of the Naaru: Strength
 						10886,	-- Trial of the Naaru: Tenacity
 					},
-					["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)
 					["coord"] = { 54.2, 44.4, SHATTRATH_CITY },
+					["timeline"] = { "removed 3.0.2" },
 					["maps"] = { SHATTRATH_CITY },
 					["groups"] = {
 						i(31746),	-- Phoenix-Fire Band
@@ -47,6 +47,24 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 2.3.0.10000" },
 							-- #endif
 						}),
+						title(36, {	-- Champion of the Naaru
+							["timeline"] = { "removed 3.0.2" },
+						}),
+					},
+				}),
+				q(13430, {	-- Trial of the Naaru: Magtheridon
+					["qg"] = 18481,	-- A'dal
+					["sourceQuests"] = {
+						10884,	-- Trial of the Naaru: Mercy
+						10885, 	-- Trial of the Naaru: Strength
+						10886,	-- Trial of the Naaru: Tenacity
+					},
+					["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)
+					["coord"] = { 54.2, 44.4, SHATTRATH_CITY },
+					["timeline"] = { "added 3.0.2" },
+					["maps"] = { SHATTRATH_CITY },
+					["groups"] = {
+						i(31746),	-- Phoenix-Fire Band
 					},
 				}),
 			}),
@@ -85,7 +103,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(34846, {	-- Black Sack of Gems
 						-- #if ANYCLASSIC
 						-- #if BEFORE WRATH
-						["description"] = "Might not be available until Black Temple is released.",
+						["description"] = "The epic gems may not be available until Black Temple is released, however, some users have reported getting one out of this bag already.",
 						-- #endif
 						["timeline"] = { "added 2.4.0.7923" },
 						-- #endif
