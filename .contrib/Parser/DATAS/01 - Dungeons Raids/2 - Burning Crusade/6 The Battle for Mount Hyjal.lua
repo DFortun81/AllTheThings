@@ -98,7 +98,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						{ "n", 19935 },	-- Soridormi
 						{ "n", 19936 },	-- Arazmodu
 					},
+					-- #if AFTER 3.0.2
 					["sourceQuest"] = 13432,	-- The Vials of Eternity
+					-- #else
+					["sourceQuest"] = 10445,	-- The Vials of Eternity
+					-- #endif
 					["minReputation"] = { 990, FRIENDLY },	-- The Scale of the Sands, Friendly.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
@@ -200,7 +204,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						{ "n", 19935 },	-- Soridormi
 						{ "n", 19936 },	-- Arazmodu
 					},
+					-- #if AFTER 3.0.2
 					["sourceQuest"] = 13432,	-- The Vials of Eternity
+					-- #else
+					["sourceQuest"] = 10445,	-- The Vials of Eternity
+					-- #endif
 					["minReputation"] = { 990, FRIENDLY },	-- The Scale of the Sands, Friendly.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
@@ -302,7 +310,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						{ "n", 19935 },	-- Soridormi
 						{ "n", 19936 },	-- Arazmodu
 					},
+					-- #if AFTER 3.0.2
 					["sourceQuest"] = 13432,	-- The Vials of Eternity
+					-- #else
+					["sourceQuest"] = 10445,	-- The Vials of Eternity
+					-- #endif
 					["minReputation"] = { 990, FRIENDLY },	-- The Scale of the Sands, Friendly.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
@@ -404,7 +416,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						{ "n", 19935 },	-- Soridormi
 						{ "n", 19936 },	-- Arazmodu
 					},
+					-- #if AFTER 3.0.2
 					["sourceQuest"] = 13432,	-- The Vials of Eternity
+					-- #else
+					["sourceQuest"] = 10445,	-- The Vials of Eternity
+					-- #endif
 					["minReputation"] = { 990, FRIENDLY },	-- The Scale of the Sands, Friendly.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
@@ -856,7 +872,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					i(32298),	-- Design: Shifting Shadowsong Amethyst
 					i(32297),	-- Design: Sovereign Shadowsong Amethyst
 					i(32289),	-- Design: Stormy Empyrean Sapphire
-					i(32307),	-- Design: Veiled Shadowsong Amethyst
+					i(32307),	-- Design: Veiled Pyrestone [TBC] / Design: Veiled Shadowsong Amethyst [CATA+]
 				},
 			}),
 			n(ZONEDROPS, {
@@ -931,7 +947,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 				["creatureID"] = 17808,
 				["groups"] = {
 					i(122111, {	-- Smelly Gravestone (PET!)
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = {
+							"created 6.1.0.19445",
+							"added 6.1.0.19445"
+						},
 					}),
 					i(30881),	-- Blade of Infamy
 					i(30883),	-- Pillar of Ferocity
@@ -968,7 +987,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 				["creatureID"] = 17842,
 				["groups"] = {
 					i(122105, {	-- Grotesque Statue (PET!)
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = {
+							"created 6.1.0.19445",
+							"added 6.1.0.19445"
+						},
 					}),
 					i(31092, {	-- Gloves of the Forgotten Conqueror
 						["classes"] = { PALADIN, PRIEST, WARLOCK },
@@ -992,7 +1014,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 				["groups"] = {
 					ach(695),	-- The Battle for Mount Hyjal
 					i(122112, {	-- Hyjal Wisp (PET!)
-						["timeline"] = { "added 6.1.0.19445" },
+						["timeline"] = {
+							"created 6.1.0.19445",
+							"added 6.1.0.19445"
+						},
 					}),
 					i(31097, {	-- Helm of the Forgotten Conqueror
 						["classes"] = { PALADIN, PRIEST, WARLOCK },

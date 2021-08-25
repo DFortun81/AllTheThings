@@ -87,8 +87,13 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				["cr"] = 24664,	-- Kael'thas Sunstrider
 				["description"] = "Kael'thas drops Bind on Pickup versions of various World Drop Recipes that are only visible to players of that profession.\n\nA lot of discussion has gone on about these, some are saying that they only drop on Heroic Mode, others Normal Mode. Evidence shows that it can drop from any mode, so until someone proves otherwise, they'll be in the Recipes section and linked to Kael'thas.",
 				["groups"] = {
-					i(35305),	-- Design: Brilliant Living Ruby
-					i(35307),	-- Design: Rigid Star of Elune
+					-- #if AFTER CATA
+					i(35305),	-- Design: Brilliant Living Ruby / [CATA+] / Design: Runed Living Ruby [TBC]
+					-- #endif
+					i(35307),	-- Design: Rigid Dawnstone [TBC] / Design: Rigid Star of Elune [CATA+]
+					-- #if BEFORE CATA
+					i(35305),	-- Design: Runed Living Ruby [TBC] / Design: Brilliant Living Ruby / [CATA+]
+					-- #endif
 					i(35304),	-- Design: Solid Star of Elune
 					i(35297),	-- Formula: Enchant Boots - Boar's Speed
 					i(35299),	-- Formula: Enchant Boots - Cat's Swiftness

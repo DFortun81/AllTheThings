@@ -36,7 +36,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["sourceQuest"] = 10957,	-- Redemption of the Ashtongue
 					["coord"] = { 62.0, 50.2, THE_BLACK_TEMPLE },
 					["groups"] = {
-						i(32757),	--	Blessed Medallion of Karabor
+						i(32757),	-- Blessed Medallion of Karabor
 					},
 				}),
 			}),
@@ -187,7 +187,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						["creatureID"] = 22887,
 						["groups"] = {
 							i(122104, {	-- Leviathan Egg (PET!)
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = {
+									"created 6.1.0.19445",
+									"added 6.1.0.19445"
+								},
 							}),
 							i(32248),	-- Halberd of Desolation
 							i(32236),	-- Rising Tide
@@ -209,7 +212,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						["creatureID"] = 22898,
 						["groups"] = {
 							i(122106, {	-- Shard of Supremus (PET!)
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = {
+									"created 6.1.0.19445",
+									"added 6.1.0.19445"
+								},
 							}),
 							i(32262),	-- Syphon of the Nathrezim
 							i(32254),	-- The Brutalizer
@@ -296,13 +302,22 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						["creatureID"] = 23418,
 						["groups"] = {
 							i(122107, {	-- Fragment of Anger (PET!)
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = {
+									"created 6.1.0.19445",
+									"added 6.1.0.19445"
+								},
 							}),
 							i(122109, {	-- Fragment of Desire (PET!)
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = {
+									"created 6.1.0.19445",
+									"added 6.1.0.19445"
+								},
 							}),
 							i(122108, {	-- Fragment of Suffering (PET!)
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = {
+									"created 6.1.0.19445",
+									"added 6.1.0.19445"
+								},
 							}),
 							i(32332),	-- Torch of the Damned
 							i(32363),	-- Naaru-Blessed Life Rod
@@ -323,7 +338,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						["creatureID"] = 22947,
 						["groups"] = {
 							i(122110, {	-- Sultry Grimoire (PET!)
-								["timeline"] = { "added 6.1.0.19445" },
+								["timeline"] = {
+									"created 6.1.0.19445",
+									"added 6.1.0.19445"
+								},
 							}),
 							i(31101),	-- Pauldrons of the Forgotten Conqueror
 							i(31103),	-- Pauldrons of the Forgotten Protector
@@ -373,7 +391,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 								},
 							}),
 							i(122196, {	-- Music Roll: The Burning Legion
-								["timeline"] = { "added 6.1.0.19480" },
+								["timeline"] = {
+									"created 6.1.0.19480",
+									"added 6.1.0.19480"
+								},
 							}),
 							i(32837),	-- Warglaive of Azzinoth (LEGENDARY! MH)
 							i(32838),	-- Warglaive of Azzinoth (LEGENDARY! OH)
@@ -405,7 +426,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 				["groups"] = {
 					cr(22887, e(1582, {	-- High Warlord Naj'entus
 						i(122104, {	-- Leviathan Egg (PET!)
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = {
+								"created 6.1.0.19445",
+								"added 6.1.0.19445"
+							},
 						}),
 						i(150447),	-- Halberd of Desolation
 						i(150437),	-- Rising Tide
@@ -424,7 +448,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					})),
 					cr(22898, e(1583, {	-- Supremus
 						i(122106, {	-- Shard of Supremus (PET!)
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = {
+								"created 6.1.0.19445",
+								"added 6.1.0.19445"
+							},
 						}),
 						i(150460),	-- Syphon of the Nathrezim
 						i(150451),	-- Legionkiller
@@ -474,13 +501,22 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					})),
 					cr(23418, e(1587, {	-- Reliquary of Souls
 						i(122107, {	-- Fragment of Anger (PET!)
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = {
+								"created 6.1.0.19445",
+								"added 6.1.0.19445"
+							},
 						}),
 						i(122109, {	-- Fragment of Desire (PET!)
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = {
+								"created 6.1.0.19445",
+								"added 6.1.0.19445"
+							},
 						}),
 						i(122108, {	-- Fragment of Suffering (PET!)
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = {
+								"created 6.1.0.19445",
+								"added 6.1.0.19445"
+							},
 						}),
 						i(150484),	-- Torch of the Damned
 						i(150509),	-- Naaru-Blessed Life Rod
@@ -497,7 +533,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					})),
 					cr(22947, e(1588, {	-- Mother Shahraz
 						i(122110, {	-- Sultry Grimoire (PET!)
-							["timeline"] = { "added 6.1.0.19445" },
+							["timeline"] = {
+								"created 6.1.0.19445",
+								"added 6.1.0.19445"
+							},
 						}),
 						i(150514),	-- Blade of Savagery
 						i(150519),	-- Forest Prowler's Helm
@@ -549,7 +588,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 							},
 						}),
 						i(122196, {	-- Music Roll: The Burning Legion
-							["timeline"] = { "added 6.1.0.19480" },
+							["timeline"] = {
+								"created 6.1.0.19480",
+								"added 6.1.0.19480"
+							},
 						}),
 						i(150517),	-- Zhar'doom, Greatstaff of the Devourer
 						i(150525),	-- Crystal Spire of Karabor

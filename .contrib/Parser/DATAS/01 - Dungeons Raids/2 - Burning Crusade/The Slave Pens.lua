@@ -76,21 +76,46 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				q(13431, {	-- The Cudgel of Kar'desh
-					-- This quest started showing up again after SL level squish
+				q(10901, {	-- The Cudgel of Kar'desh
 					["qg"] = 22421,	-- Skar'this the Heretic
 					["sourceQuest"] = 10900,	-- The Mark of Vashj
-					["altQuests"] = { 10901 },	-- The Cudgel of Kar'desh (original version)
+					["timeline"] = { "removed 3.0.2" },
 					["maps"] = {
 						KARAZHAN,
 						GRUULS_LAIR,
 					},
-					["cost"] = {
-						{ "i", 31751, 1 },	-- Blazing Signet
-						{ "i", 31750, 1 },	-- Earthen Signet
+					["lvl"] = lvlsquish(70, 30, 70),
+					["groups"] = {
+						objective(1, {	-- 0/1 Earthen Signet
+							["provider"] = { "i", 31750 },	-- Earthen Signet
+						}),
+						objective(2, {	-- 0/1 Blazing Signet
+							["provider"] = { "i", 31751 },	-- Blazing Signet
+						}),
+					},
+				}),
+				-- #if AFTER WRATH
+				q(13431, {	-- The Cudgel of Kar'desh
+					-- This quest started showing up again after SL level squish
+					["qg"] = 22421,	-- Skar'this the Heretic
+					["sourceQuest"] = 10900,	-- The Mark of Vashj
+					["altQuests"] = { 10901 },	-- The Cudgel of Kar'desh
+					["timeline"] = { "added 3.0.2" },
+					["maps"] = {
+						KARAZHAN,
+						GRUULS_LAIR,
 					},
 					["lvl"] = lvlsquish(70, 30, 70),
+					["groups"] = {
+						objective(1, {	-- 0/1 Earthen Signet
+							["provider"] = { "i", 31750 },	-- Earthen Signet
+						}),
+						objective(2, {	-- 0/1 Blazing Signet
+							["provider"] = { "i", 31751 },	-- Blazing Signet
+						}),
+					},
 				}),
+				-- #endif
 				q(29565, {	-- The Heart of the Matter
 					["qg"] = 54667,	-- Watcher Jhang
 					["timeline"] = { "added 4.3.0.14732" },

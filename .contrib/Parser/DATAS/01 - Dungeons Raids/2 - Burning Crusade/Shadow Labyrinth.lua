@@ -6,6 +6,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		["description"] = "Auchindoun is a former draenei holy site and Horde fortress in the middle of the Bone Wastes in Outland's Terokkar Forest. It was a hallowed ground until the Shadow Council took over, summoned an extremely powerful demon as old as time itself, and destroyed half of Terokkar Forest in the process. Different factions now vie for power in this magical spot: Ethereals suck the arcane energy from the Mana-Tombs, the Burning Legion harvests souls inside the Auchenai Crypts, arakkoa zealots work dark magic in the Sethekk Halls, and the Shadow Council plots its domination of Outland from within the Shadow Labyrinth.",
 		["coord"] = { 39.63, 73.55, TEROKKAR_FOREST },	-- Shadow Labyrinth, Terokkar Forest
 		["mapID"] = AUCHINDOUN_SHADOW_LABYRINTH,	-- Shadow Labyrinth
+		-- #if BEFORE CATA
+		["cost"] = {
+			{ "i", 27991, 1 },	-- Shadow Labyrinth Key
+		},
+		-- #endif
 		["lvl"] = lvlsquish(65, 20, 65),
 		["groups"] = {
 			n(QUESTS, {
@@ -170,6 +175,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27889),	-- Jaedenfire Gloves of Annihilation
 						i(27908),	-- Leggings of Assassination
 						i(27884),	-- Ornate Boots of the Sanctified
+						-- #if BEFORE MOP
+						i(27886, {	-- Idol of the Emerald Queen
+							["timeline"] = { "removed 5.0.4.10000" },
+						}),
+						-- #endif
 					},
 				}),
 				e(545, {	-- Blackheart the Inciter
@@ -256,7 +266,12 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27888),	-- Dream-Wing Helm
 							i(27889),	-- Jaedenfire Gloves of Annihilation
 							i(27908),	-- Leggings of Assassination
-							i(27884)	-- Ornate Boots of the Sanctified
+							i(27884),	-- Ornate Boots of the Sanctified
+							-- #if BEFORE MOP
+							i(27886, {	-- Idol of the Emerald Queen
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							-- #endif
 						},
 					}),
 					e(545, {	-- Blackheart the Inciter

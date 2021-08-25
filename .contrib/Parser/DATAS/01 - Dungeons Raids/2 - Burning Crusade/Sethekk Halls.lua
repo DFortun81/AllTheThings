@@ -82,6 +82,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["description"] = "Found on the floor in the center of the room before Talon King Ikiss.",
 							["timeline"] = { "removed 4.3.0.14942" },
 						}),
+						-- #if BEFORE 4.3.0
+						i(29330),	-- The Saga of Terokk
+						i(29332),	-- Terokk's Mask
+						i(29329),	-- Terokk's Quill
+						-- #endif
 					},
 				}),
 				q(29606, {	-- Terokk's Legacy
@@ -98,10 +103,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(29329),	-- Terokk's Quill
 					},
 				}),
-				q(11001, {	-- Vanquish the Raven God
+				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(11001, {	-- Vanquish the Raven God
 					["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					["sourceQuest"] = 10994,	-- Chasing the Moonstone
-					["description"] = "This quest chain may not be available until a later phase.",
 					["coord"] = { 80.2, 65.2, ZANGARMARSH },
 					["timeline"] = { "removed 4.0.1" },
 					["maps"] = { ZANGARMARSH },
@@ -117,7 +121,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 						i(32387),	-- Idol of the Raven Goddess
 					},
-				}),
+				})),
 			}),
 			n(COMMON_BOSS_DROPS, {
 				-- #if AFTER 8.0.1.27326
@@ -244,7 +248,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27633),	-- Terokk's Mask
 						},
 					}),
-					e(542, {	-- Anzu
+					applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, e(542, {	-- Anzu
 						-- #if BEFORE 4.0.1
 						["description"] = "This special encounter can be started by a Druid that has completed the 'Vanquish the Raven God' quest chain. It's the same quest chain that grants them Swift Flight Form, so if you see a speedy flappy boi out in the world and they join your dungeon group, you're pretty much guaranteed to have a shot at this... unless they forget the quest item (in the keyring) used to summon him. :)\n\nDruids: You can right click this boss to see the quest chain you need to finish.",
 						["sourceQuest"] = 11001,	-- Vanquish the Raven God
@@ -266,7 +270,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(32778),	-- Boots of Righteous Fortitude
 							i(32779),	-- Band of Frigid Elements
 						},
-					}),
+					})),
 					e(543, {	-- Talon King Ikiss
 						["creatureID"] = 18473,
 						["groups"] = {

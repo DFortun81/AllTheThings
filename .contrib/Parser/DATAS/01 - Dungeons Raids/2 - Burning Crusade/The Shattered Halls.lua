@@ -5,6 +5,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(259, {	-- The Shattered Halls
 		["coord"] = { 47.66, 51.98, HELLFIRE_PENINSULA },	-- The Shattered Halls, Hellfire Peninsula
 		["mapID"] = HELLFIRE_CITADEL_SHATTERED_HALLS,
+		-- #if BEFORE CATA
+		["cost"] = {
+			{ "i", 28395, 1 },	-- Shattered Halls Key
+		},
+		-- #endif
 		["lvl"] = lvlsquish(65, 20, 65),
 		["groups"] = {
 			n(QUESTS, {
@@ -124,9 +129,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					-- ["cost"] = {
-					--	{ "i", 31245, 1 },	-- Primed Key Mold
-					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
 					["groups"] = {
@@ -146,9 +148,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10763,	-- Dumphry's Request
 					["coord"] = { 51.1, 60.3, HELLFIRE_PENINSULA },
 					["maps"] = { HELLFIRE_PENINSULA },
-					-- ["cost"] = {
-					--	{ "i", 31252, 1 },	-- Charred Key Mold
-					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
 					["groups"] = {
@@ -164,9 +163,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10757,	-- Rohok's Request
 					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
 					["maps"] = { HELLFIRE_PENINSULA },
-					-- ["cost"] = {
-					--	{ "i", 31252, 1 },	-- Charred Key Mold
-					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
 					["groups"] = {
@@ -180,9 +176,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29649, {	-- How to Save a Life
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
-					-- ["cost"] = {
-					--	{ "i", 23726, 1 },	-- Fel Ember
-					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
 					["groups"] = {
@@ -199,9 +192,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29656, {	-- O'mrogg's Warcloth
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
-					-- ["cost"] = {
-					--	{ "i", 72597, 1 },	-- O'mrogg's Warcloth
-					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
 					["groups"] = {
@@ -238,11 +228,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					-- ["cost"] = {
-					--	{ "i", 23445, 4 },	-- Fel Iron Bar
-					--	{ "i", 22445, 2 },	-- Arcane Dust
-					--	{ "i", 22574, 4 },	-- Mote of Fire
-					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
 					["groups"] = {
@@ -265,9 +250,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["maps"] = { TEROKKAR_FOREST },
-					-- ["cost"] = {
-					--	{ "i", 30829, 1 },	-- Tear of the Earthmother
-					-- },
 					["lvl"] = lvlsquish(67, 25, 67),
 					["groups"] = {
 						objective(1, {	-- Tear of the Earthmother
@@ -280,9 +262,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					-- ["cost"] = {
-					--	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
-					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(67, 20, 67),
 					-- #if BEFORE 4.3.0.14732
@@ -300,9 +279,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29653, {	-- The Will of the Warchief
 					["qg"] = 54931,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
-					-- ["cost"] = {
-					--	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
-					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
 					["groups"] = {
@@ -320,9 +296,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10883,	-- The Tempest Key
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
 					["maps"] = { SHATTRATH_CITY },
-					-- ["cost"] = {
-					--	{ "i", 31716, 1 },	-- Unused Axe of the Executioner
-					-- },
 					["lvl"] = lvlsquish(70, 20, 70),
 					["groups"] = {
 						objective(1, {	-- Unused Axe of the Executioner
@@ -335,9 +308,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 56.6, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					-- ["cost"] = {
-					--	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
-					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(67, 20, 67),
 					-- #if BEFORE 4.3.0.14732
@@ -355,9 +325,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29654, {	-- Turning the Tide
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
-					-- ["cost"] = {
-					--	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
-					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
 					["groups"] = {

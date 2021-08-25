@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local COILFANG_ARMAMENTS = i(24368);	-- Coilfang Armaments
 _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 	inst(748, {	-- Serpentshrine Cavern
 		["mapID"] = SERPENTSHRINE_CAVERN,
@@ -24,7 +25,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				}),
 			}),
 			n(ZONEDROPS, {
-				i(24368),	-- Coilfang Armaments
+				COILFANG_ARMAMENTS,
 				i(30280),	-- Pattern: Belt of Blasting
 				i(30302, {	-- Pattern: Belt of Deep Shadow
 					["spellID"] = 36351,	-- Belt of Deep Shadow
@@ -95,10 +96,16 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				["groups"] = {
 					i(138834, {	-- Illusion: Frostbrand
 						["classes"] = { SHAMAN },
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = {
+							"created 7.0.3.22248",
+							"added 7.0.3.22248"
+						},
 					}),
 					i(97553, {	-- Tainted Core (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = {
+							"created 5.3.0.16758",
+							"added 5.3.0.16758"
+						},
 					}),
 					i(30049),	-- Fathomstone
 					i(30048),	-- Brighthelm of Justice
@@ -127,7 +134,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					ach(144),	-- The Lurker Above
 					i(138834, {	-- Illusion: Frostbrand
 						["classes"] = { SHAMAN },
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = {
+							"created 7.0.3.22248",
+							"added 7.0.3.22248"
+						},
 					}),
 					i(30058),	-- Mallet of the Tides
 					i(30059),	-- Choker of Animalistic Fury
@@ -195,7 +205,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				["creatureID"] = 21213,
 				["groups"] = {
 					i(97552, {	-- Shell of Tide-Calling (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = {
+							"created 5.3.0.16758",
+							"added 5.3.0.16758"
+						},
 					}),
 					i(30082),	-- Talon of Azshara
 					i(30080),	-- Luminescent Rod of the Naaru
@@ -219,7 +232,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				["groups"] = {
 					ach(694),	-- Serpentshrine Cavern
 					i(97554, {	-- Dripping Strider Egg (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = {
+							"created 5.3.0.16758",
+							"added 5.3.0.16758"
+						},
 					}),
 					i(30242, {	-- Helm of the Vanquished Champion
 						["classes"] = { PALADIN, ROGUE, SHAMAN },
@@ -254,3 +270,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 		},
 	}),
 }))};
+
+-- Remove the Phase from Coilfang Armaments
+COILFANG_ARMAMENTS.u = TBC_PHASE_ONE;

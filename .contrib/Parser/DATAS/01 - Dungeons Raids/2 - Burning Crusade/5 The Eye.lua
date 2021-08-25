@@ -1,38 +1,36 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
--- #if ANYCLASSIC
 local legendary = function(itemID, creatureID)
 	if creatureID then
+		-- #if ANYCLASSIC
 		return i(itemID, {
 			["cr"] = creatureID,
 		});
+		-- #else
+		return i(itemID, {
+			["collectible"] = false,
+			["cr"] = creatureID,
+			["u"] = 15,
+		});
+		-- #endif
 	else
+		-- #if ANYCLASSIC
 		return i(itemID);
-	end
-end;
--- #else
-local legendary = function(itemID, creatureID)
-	if creatureID then
-		return i(itemID, {
-			["collectible"] = false,
-			["cr"] = creatureID,
-			["u"] = 15,
-		});
-	else
+		-- #else
 		return i(itemID, {
 			["collectible"] = false,
 			["u"] = 15,
 		});
+		-- #endif
 	end
 end;
--- #endif
 _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 	inst(749, {	-- The Eye
 		["coord"] = { 73.73, 63.71, NETHERSTORM },	-- The Eye, Netherstorm
 		["mapID"] = TEMPEST_KEEP_THE_EYE,
 		-- #if BEFORE WRATH
-		["sourceQuest"] = 13430,	-- Trial of the Naaru: Magtheridon
+		["sourceQuest"] = 10888,	-- Trial of the Naaru: Magtheridon
 		-- #endif
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
@@ -138,7 +136,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				["creatureID"] = 19514,
 				["groups"] = {
 					i(97557, {	-- Brilliant Phoenix Hawk Feather (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = {
+							"created 5.3.0.16758",
+							"added 5.3.0.16758"
+						},
 					}),
 					i(29949),	-- Arcanite Steam-Pistol
 					i(29948),	-- Claw of the Phoenix
@@ -163,7 +164,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				["creatureID"] = 19516,
 				["groups"] = {
 					i(97555, {	-- Tiny Fel Engine Key (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = {
+							"created 5.3.0.16758",
+							"added 5.3.0.16758"
+						},
 					}),
 					i(30248, {	-- Pauldrons of the Vanquished Champion
 						["classes"] = { PALADIN, ROGUE, SHAMAN },
@@ -189,7 +193,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				["creatureID"] = 18805,
 				["groups"] = {
 					i(97556, {	-- Crystal of the Void (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = {
+							"created 5.3.0.16758",
+							"added 5.3.0.16758"
+						},
 					}),
 					i(29981),	-- Ethereum Life-Staff
 					i(29962),	-- Heartrazor

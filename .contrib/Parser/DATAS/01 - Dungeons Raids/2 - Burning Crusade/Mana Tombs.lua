@@ -94,9 +94,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["minReputation"] = { 933, EXALTED },	-- The Consortium, Exalted.
 					["maps"] = { BLADES_EDGE_MOUNTAINS },
-					["cost"] = {
-						{ "i", 31941, 1 },	-- Mark of the Nexus-King
-					},
 					["lvl"] = lvlsquish(70, 25, 70),
 					["groups"] = {
 						i(32092),	-- The Eye of Haramad

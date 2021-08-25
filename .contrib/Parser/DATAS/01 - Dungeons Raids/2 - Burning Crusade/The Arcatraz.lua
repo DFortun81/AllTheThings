@@ -9,6 +9,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			270,	-- Stasis Block: Maximus
 			271,	-- Containment Core
 		},
+		-- #if BEFORE CATA
+		["cost"] = {
+			{ "i", 31084, 1 },	-- Key to the Arcatraz
+		},
+		-- #endif
 		["lvl"] = lvlsquish(65, 25, 65),
 		["groups"] = {
 			n(QUESTS, {
@@ -82,6 +87,13 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
 					["maps"] = { SHADOWMOON_VALLEY },
 					["lvl"] = lvlsquish(68, 25, 68),
+				}),
+				q(10886, {	-- Trial of the Naaru: Tenacity
+					["qg"] = 18481,	-- A'dal
+					["sourceQuest"] = 10883,	-- The Tempest Key
+					["coord"] = { 53.7, 44.6, SHATTRATH_CITY },
+					["maps"] = { SHATTRATH_CITY },
+					["lvl"] = lvlsquish(70, 25, 70),
 				}),
 				q(29674, {	-- Unbound Darkness
 					["qg"] = 18481,	-- A'dal
@@ -297,6 +309,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["creatureID"] = 20912,
 						["groups"] = {
 							ach(681),	-- Heroic: The Arcatraz
+							objective(1, {	-- Millhouse Manastorm Rescued
+								["provider"] = { "n", 20977 },	-- Millhouse Manastorm
+								["questID"] = 10886,	-- Trial of the Naaru: Tenacity
+							}),
 							-- #if BEFORE 7.3.5
 							i(28416),	-- Hungering Spineripper (7.3.5 - Moved to Dalliah)
 							-- #endif
