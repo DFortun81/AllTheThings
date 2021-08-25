@@ -1,8 +1,8 @@
-_.ItemDB = {};
+_.ItemSpeciesDB = {};
 local pet = function(itemID, speciesID, altSpeciesID)
 	local item = { ["speciesID"] = speciesID, ["ignoreBonus"] = true };
 	if altSpeciesID then item.altSpeciesID = altSpeciesID; end
-	_.ItemDB[itemID] = item;
+	_.ItemSpeciesDB[itemID] = item;
 	return item;
 end
 

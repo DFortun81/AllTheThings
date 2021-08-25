@@ -1085,6 +1085,13 @@ namespace ATT
         /// </summary>
         public static void Process()
         {
+            // Go through and merge all of the item species data into the item containers.
+            foreach(var pair in Items.AllItemsWithSpecies)
+            {
+                var item = Items.GetNull(pair.Key);
+                if (item != null) Items.MergeInto(pair.Key, pair.Value, item);
+            }
+
             // Go through all of the items in the database and calculate the Filter ID
             // if the Filter ID is not already assigned. (manual assignment should always override this)
             foreach (var data in Items.AllItems)
@@ -2185,6 +2192,34 @@ namespace ATT
                             else
                             {
                                 Console.WriteLine("ItemDB not in the correct format!");
+                                Console.ReadLine();
+                            }
+                            break;
+                        }
+                    case "ItemSpeciesDB":
+                        {
+                            // The format of the Item DB is a dictionary of item ID -> Values.
+                            // This is slightly more annoying to parse, but it works okay.
+                            if (pair.Value is Dictionary<long, object> itemDB)
+                            {
+                                foreach (var itemValuePair in itemDB)
+                                {
+                                    if (itemValuePair.Value is Dictionary<string, object> item)
+                                    {
+                                        var itemSpecies = Items.GetWithSpecies(itemValuePair.Key);
+                                        foreach (var p in item) Items.Merge(itemSpecies, p.Key, p.Value);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("ItemSpeciesDB not in the correct format!");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(itemValuePair.Value));
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("ItemSpeciesDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             break;

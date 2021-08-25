@@ -31,6 +31,11 @@ namespace ATT
             private static IDictionary<decimal, bool> ITEMS_WITH_REFERENCES = new ConcurrentDictionary<decimal, bool>();
 
             /// <summary>
+            /// All of the items with species data that have been parsed sorted by Item ID.
+            /// </summary>
+            private static IDictionary<long, Dictionary<string, object>> ITEMS_WITH_SPECIES = new ConcurrentDictionary<long, Dictionary<string, object>>();
+
+            /// <summary>
             /// A list of fields that have already warned the programmer.
             /// </summary>
             private static IDictionary<string, bool> WARNED_FIELDS = new ConcurrentDictionary<string, bool>();
@@ -76,6 +81,19 @@ namespace ATT
                         yield return ITEMS[itemID];
                     }
                     yield break;
+                }
+            }
+
+
+
+            /// <summary>
+            /// All of the items that are in the database.
+            /// </summary>
+            public static IDictionary<long, Dictionary<string, object>> AllItemsWithSpecies
+            {
+                get
+                {
+                    return ITEMS_WITH_SPECIES;
                 }
             }
 
@@ -160,6 +178,23 @@ namespace ATT
 
                 // Attempt to get an existing item dictionary.
                 return ITEMS.TryGetValue(itemID, out Dictionary<string, object> obj) ? obj : null;
+            }
+
+            /// <summary>
+            /// Get the Item Species container which matches the data
+            /// </summary>
+            /// <param name="itemID">The Item ID.</param>
+            /// <returns>A dictionary representing the item.</returns>
+            public static Dictionary<string, object> GetWithSpecies(long itemID)
+            {
+                // Attempt to get an existing item dictionary.
+                if (ITEMS_WITH_SPECIES.TryGetValue(itemID, out Dictionary<string, object> obj))
+                {
+                    return obj;
+                }
+
+                // Create a new item dictionary.
+                return ITEMS_WITH_SPECIES[itemID] = new Dictionary<string, object>();
             }
 
             /// <summary>

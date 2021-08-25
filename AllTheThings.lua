@@ -6495,7 +6495,7 @@ local fields = {
 		end
 	end,
 	["text"] = function(t)
-		return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
+		return "|cff0070dd" .. (t.name or RETRIEVING_DATA) .. "|r";
 	end,
 	["icon"] = function(t)
 		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
@@ -6505,6 +6505,9 @@ local fields = {
 	end,
 	["displayID"] = function(t)
 		return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["petTypeID"] = function(t)
+		return select(3, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
 	end,
 	["name"] = function(t)
 		return select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
