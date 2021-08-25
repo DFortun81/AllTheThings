@@ -716,8 +716,8 @@ app.L = {
 		[60] = GetSpellInfo(181765),							-- S.E.L.F.I.E. Camera (For various filters)
 
 		-- "Non-Equipment Types"
-		[100] = GetItemSubClassInfo(15,5),						-- Mounts
-		[101] = TOOLTIP_BATTLE_PET,								-- Battle Pet
+		[100] = MOUNTS,											-- Mounts
+		[101] = AUCTION_CATEGORY_BATTLE_PETS,					-- Battle Pets
 		[102] = TOY,											-- Toy
 		[103] = "Illusions",									-- Illusions
 		[104] = ITEM_BIND_QUEST,								-- Quest Items
