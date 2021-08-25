@@ -1113,6 +1113,14 @@ namespace ATT
             foreach (var container in Objects.AllContainers.Values) Process(container, 0, 1);
             //Trace.WriteLine("Container Processing #1 Done.");
 
+            // Remove the removed from game flag from the Tome of Polymorph: Turtle
+            var tomeOfPolymorph = Items.GetNull(22739);
+            if (tomeOfPolymorph != null)
+            {
+                tomeOfPolymorph.Remove("timeline");
+                if (tomeOfPolymorph.TryGetValue("u", out long u) && u != 14) tomeOfPolymorph.Remove("u");
+            }
+
             // Merge the Item Data into the Containers again, this time syncing Item data into nested Item groups
             //Trace.WriteLine("Container Processing #2...");
             MergeItemData = false;

@@ -1,1032 +1,1048 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(CLASSIC_TIER, {
-	inst(76, {	-- Zul'Gurub
+_.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
+	map(ZULGURUB, {
 		["description"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
-		["u"] = REMOVED_FROM_GAME,
+		["timeline"] = { "removed 4.0.3" },
 		["isRaid"] = true,
-		["sharedLockout"] = 1,
 		["lvl"] = 58,
-		["g"] = {
-			faction(270, {	-- Zandalar Tribe
-				["icon"] = "Interface\\Icons\\RACIAL_TROLL_BERSERK",
-				["maps"] = { STRANGLETHORN_VALE },
-				["g"] = {
-					n(QUESTS, {
-						cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
-							q(8192, {	-- Animist's Caress [Druid]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 15042,		-- Zanza the Restless
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 22637, 1 },	-- Primal Hakkari Idol
-									{ "i", 19821, 1 },	-- Punctured Voodoo Doll [Druid]
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19790)),	-- Animist's Caress [Druid]
-								},
-							}),
-							q(8065, {	-- Paragons of Power: The Haruspex's Tunic [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14904,		-- Maywiki of Zuldazar
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19722, 1 },	-- Primal Hakkari Tabard
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19838)),	-- Zandalar Haruspex's Tunic
-								},
-							}),
-							q(8057, {	-- Paragons of Power: The Haruspex's Bracers [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14904,		-- Maywiki of Zuldazar
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19840)),	-- Zandalar Haruspex's Bracers
-								},
-							}),
-							q(8064, {	-- Paragons of Power: The Haruspex's Belt [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14904,		-- Maywiki of Zuldazar
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19720, 1 },	-- Primal Hakkari Sash
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19839)),	-- Zandalar Haruspex's Belt
-								},
-							}),
-							q(8110, {	-- Enchanted South Seas Kelp [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14904,		-- Maywiki of Zuldazar
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19610)),	-- Enchanted South Seas Kelp
-								},
-							}),
-							q(8111, {	-- Enchanted South Seas Kelp [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14904,		-- Maywiki of Zuldazar
-								["sourceQuest"] = 8110,	-- Enchanted South Seas Kelp [Friendly]
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19611)),	-- Enchanted South Seas Kelp
-								},
-							}),
-							q(8112, {	-- Enchanted South Seas Kelp [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14904,		-- Maywiki of Zuldazar
-								["sourceQuest"] = 8111,	-- Enchanted South Seas Kelp [Honored]
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19612)),	-- Enchanted South Seas Kelp
-								},
-							}),
-							q(8113, {	-- Pristine Enchanted South Seas Kelp
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14904,		-- Maywiki of Zuldazar
-								["sourceQuest"] = 8112,	-- Enchanted South Seas Kelp [Revered]
-								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
-								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19613)),	-- Pristine Enchanted South Seas Kelp
-								},
-							}),
-						})),
-						cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
-							q(8187, {	-- Falcon's Call [Hunter]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 15042,		-- Zanza the Restless
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 22637, 1 },	-- Primal Hakkari Idol
-									{ "i", 19816, 1 },	-- Punctured Voodoo Doll [Hunter]
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19785)),	-- Falcon's Call [Hunter]
-								},
-							}),
-							q(8067, {	-- Paragons of Power: The Predator's Mantle [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14905,		-- Falthir the Sightless
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19724, 1 },	-- Primal Hakkari Aegis
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19831)),	-- Zandalar Predator's Mantle
-								},
-							}),
-							q(8062, {	-- Paragons of Power: The Predator's Bracers [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14905,		-- Falthir the Sightless
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19716, 1 },	-- Primal Hakkari Bindings
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19833)),	-- Zandalar Predator's Bracers
-								},
-							}),
-							q(8066, {	-- Paragons of Power: The Predator's Belt [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14905,		-- Falthir the Sightless
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19721, 1 },	-- Primal Hakkari Shawl
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19832)),	-- Zandalar Predator's Belt
-								},
-							}),
-							q(8145, {	-- The Maelstrom's Tendril [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14905,		-- Falthir the Sightless
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19618)),	-- Maelstrom's Tendril
-								},
-							}),
-							q(8146, {	-- The Maelstrom's Tendril [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14905,		-- Falthir the Sightless
-								["sourceQuest"] = 8145,	-- The Maelstrom's Tendril [Friendly]
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19619)),	-- Maelstrom's Tendril
-								},
-							}),
-							q(8147, {	-- The Maelstrom's Tendril [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14905,		-- Falthir the Sightless
-								["sourceQuest"] = 8146,	-- The Maelstrom's Tendril [Honored]
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19620)),	-- Maelstrom's Tendril
-								},
-							}),
-							q(8148, {	-- The Maelstrom's Wrath
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14905,		-- Falthir the Sightless
-								["sourceQuest"] = 8147,	-- The Maelstrom's Tendril [Revered]
-								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
-								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19621)),	-- Maelstrom's Wrath
-								},
-							}),
-						})),
-						cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
-							q(8189, {	-- Presence of Sight [Mage]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 15042,		-- Zanza the Restless
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 22637, 1 },	-- Primal Hakkari Idol
-									{ "i", 19818, 1 },	-- Punctured Voodoo Doll [Mage]
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19787)),	-- Presence of Sight [Mage]
-								},
-							}),
-							q(8068, {	-- Paragons of Power: The Illusionist's Mantle [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19721, 1 },	-- Primal Hakkari Shawl
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19845)),	-- Zandalar Illusionist's Mantle
-								},
-							}),
-							q(8069, {	-- Paragons of Power: The Illusionist's Robes [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19723, 1 },	-- Primal Hakkari Kossack
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(20034)),	-- Zandalar Illusionist's Robe
-								},
-							}),
-							q(8060, {	-- Paragons of Power: The Illusionist's Wraps [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19716, 1 },	-- Primal Hakkari Bindings
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19846)),	-- Zandalar Illusionist's Wraps
-								},
-							}),
-							q(8101, {	-- The Pebble of Kajaro [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19598)),	-- Pebble of Kajaro
-								},
-							}),
-							q(8102, {	-- The Pebble of Kajaro [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["sourceQuest"] = 8101,	-- The Pebble of Kajaro [Friendly]
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19599)),	-- Pebble of Kajaro
-								},
-							}),
-							q(8103, {	-- The Pebble of Kajaro [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["sourceQuest"] = 8102,	-- The Pebble of Kajaro [Honored]
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19600)),	-- Pebble of Kajaro
-								},
-							}),
-							q(8104, {	-- The Jewel of Kajaro
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["sourceQuest"] = 8103,	-- The Pebble of Kajaro [Revered]
-								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19601)),	-- Jewel of Kajaro
-								},
-							}),
-						})),
-						cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
-							q(8185, {	-- Syncretist's Sigil [Paladin]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 15042,		-- Zanza the Restless
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 22637, 1 },	-- Primal Hakkari Idol
-									{ "i", 19815, 1 },	-- Punctured Voodoo Doll [Paladin]
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19783)),	-- Syncretist's Sigil [Paladin]
-								},
-							}),
-							q(8055, {	-- Paragons of Power: The Freethinker's Breastplate [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14902,		-- Jin'rokh the Breaker
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19722, 1 },	-- Primal Hakkari Tabard
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19825)),	-- Zandalar Freethinker's Breastplate
-								},
-							}),
-							q(8053, {	-- Paragons of Power: The Freethinker's Armguards [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14902,		-- Jin'rokh the Breaker
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19716, 1 },	-- Primal Hakkari Bindings
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19827)),	-- Zandalar Freethinker's Armguards
-								},
-							}),
-							q(8054, {	-- Paragons of Power: The Freethinker's Belt [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14902,		-- Jin'rokh the Breaker
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19721, 1 },	-- Primal Hakkari Shawl
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19826)),	-- Zandalar Freethinker's Belt
-								},
-							}),
-							q(8045, {	-- The Heathen's Brand [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14902,		-- Jin'rokh the Breaker
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19579)),	-- Heathen's Brand
-								},
-							}),
-							q(8046, {	-- The Heathen's Brand [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14902,		-- Jin'rokh the Breaker
-								["sourceQuest"] = 8045,	-- The Heathen's Brand [Friendly]
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19585)),	-- Heathen's Brand
-								},
-							}),
-							q(8047, {	-- The Heathen's Brand [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14902,		-- Jin'rokh the Breaker
-								["sourceQuest"] = 8046,	-- The Heathen's Brand [Honored]
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19586)),	-- Heathen's Brand
-								},
-							}),
-							q(8048, {	-- The Hero's Brand
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14902,		-- Jin'rokh the Breaker
-								["sourceQuest"] = 8047,	-- The Heathen's Brand [Revered]
-								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
-								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19588)),	-- Hero's Brand
-								},
-							}),
-						})),
-						cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
-							q(8191, {	-- Prophetic Aura [Priest]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 15042,		-- Zanza the Restless
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 22637, 1 },	-- Primal Hakkari Idol
-									{ "i", 19820, 1 },	-- Punctured Voodoo Doll [Priest]
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19789)),	-- Prophetic Aura [Priest]
-								},
-							}),
-							q(8071, {	-- Paragons of Power: The Confessor's Mantle [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19724, 1 },	-- Primal Hakkari Aegis
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19841)),	-- Zandalar Confessor's Mantle
-								},
-							}),
-							q(8061, {	-- Paragons of Power: The Confessor's Wraps [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19843)),	-- Zandalar Confessor's Wraps
-								},
-							}),
-							q(8070, {	-- Paragons of Power: The Confessor's Bindings [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19720, 1 },	-- Primal Hakkari Sash
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19842)),	-- Zandalar Confessor's Bindings
-								},
-							}),
-							q(8049, {	-- The Eye of Zuldazar [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19591)),	-- The Eye of Zuldazar
-								},
-							}),
-							q(8050, {	-- The Eye of Zuldazar [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["sourceQuest"] = 8049,	-- The Eye of Zuldazar [Friendly]
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19592)),	-- The Eye of Zuldazar
-								},
-							}),
-							q(8051, {	-- The Eye of Zuldazar [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["sourceQuest"] = 8050,	-- The Eye of Zuldazar [Honored]
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19593)),	-- The Eye of Zuldazar
-								},
-							}),
-							q(8052, {	-- The All-Seeing Eye of Zuldazar
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["sourceQuest"] = 8051,	-- The Eye of Zuldazar [Revered]
-								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19594)),	-- The All-Seeing Eye of Zuldazar
-								},
-							}),
-						})),
-						cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
-							q(8186, {	-- Death's Embrace [Rogue]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 15042,		-- Zanza the Restless
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 22637, 1 },	-- Primal Hakkari Idol
-									{ "i", 19814, 1 },	-- Punctured Voodoo Doll [Rogue]
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19784)),	-- Death's Embrace [Rogue]
-								},
-							}),
-							q(8072, {	-- Paragons of Power: The Madcap's Mantle [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14905,		-- Falthir the Sightless
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19719, 1 },	-- Primal Hakkari Girdle
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19835)),	-- Zandalar Madcap's Mantle
-								},
-							}),
-							q(8073, {	-- Paragons of Power: The Madcap's Tunic [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14905,		-- Falthir the Sightless
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19724, 1 },	-- Primal Hakkari Aegis
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19834)),	-- Zandalar Madcap's Tunic
-								},
-							}),
-							q(8063, {	-- Paragons of Power: The Madcap's Bracers [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14905,		-- Falthir the Sightless
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19836)),	-- Zandalar Madcap's Bracers
-								},
-							}),
-							q(8141, {	-- Zandalrian Shadow Talisman [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14905,		-- Falthir the Sightless
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19614)),	-- Zandalrian Shadow Talisman
-								},
-							}),
-							q(8142, {	-- Zandalrian Shadow Talisman [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14905,		-- Falthir the Sightless
-								["sourceQuest"] = 8141,	-- Zandalrian Shadow Talisman [Friendly]
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19615)),	-- Zandalrian Shadow Talisman
-								},
-							}),
-							q(8143, {	-- Zandalrian Shadow Talisman [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14905,		-- Falthir the Sightless
-								["sourceQuest"] = 8142,	-- Zandalrian Shadow Talisman [Honored]
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19616)),	-- Zandalrian Shadow Talisman
-								},
-							}),
-							q(8144, {	-- Zandalrian Shadow Mastery Talisman
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14905,		-- Falthir the Sightless
-								["sourceQuest"] = 8143,	-- Zandalrian Shadow Talisman [Revered]
-								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
-								["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19617)),	-- Zandalrian Shadow Mastery Talisman
-								},
-							}),
-						})),
-						cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
-							q(8188, {	-- Vodouisant's Vigilant Embrace [Shaman]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 15042,		-- Zanza the Restless
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 22637, 1 },	-- Primal Hakkari Idol
-									{ "i", 19817, 1 },	-- Punctured Voodoo Doll [Shaman]
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19786)),	-- Vodouisant's Vigilant Embrace [Shaman]
-								},
-							}),
-							q(8075, {	-- Paragons of Power: The Augur's Hauberk [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14904,		-- Maywiki of Zuldazar
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19722, 1 },	-- Primal Hakkari Tabard
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19828)),	-- Zandalar Augur's Hauberk
-								},
-							}),
-							q(8056, {	-- Paragons of Power: The Augur's Bracers [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14904,		-- Maywiki of Zuldazar
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19830)),	-- Zandalar Augur's Bracers
-								},
-							}),
-							q(8074, {	-- Paragons of Power: The Augur's Belt [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14904,		-- Maywiki of Zuldazar
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19719, 1 },	-- Primal Hakkari Girdle
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19829)),	-- Zandalar Augur's Belt
-								},
-							}),
-							q(8116, {	-- Vision of Voodress [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14904,		-- Maywiki of Zuldazar
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19606)),	-- Vision of Voodress
-								},
-							}),
-							q(8117, {	-- Vision of Voodress [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14904,		-- Maywiki of Zuldazar
-								["sourceQuest"] = 8116,	-- Vision of Voodress [Friendly]
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19607)),	-- Vision of Voodress
-								},
-							}),
-							q(8118, {	-- Vision of Voodress [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14904,		-- Maywiki of Zuldazar
-								["sourceQuest"] = 8117,	-- Vision of Voodress [Honored]
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19608)),	-- Vision of Voodress
-								},
-							}),
-							q(8119, {	-- The Unmarred Vision of Voodress
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14904,		-- Maywiki of Zuldazar
-								["sourceQuest"] = 8118,	-- Vision of Voodress [Revered]
-								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
-								["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19609)),	-- Unmarred Vision of Voodress
-								},
-							}),
-						})),
-						cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
-							q(8190, {	-- Hoodoo Hex [Warlock]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 15042,		-- Zanza the Restless
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 22637, 1 },	-- Primal Hakkari Idol
-									{ "i", 19819, 1 },	-- Punctured Voodoo Doll [Warlock]
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19788)),	-- Hoodoo Hex [Warlock]
-								},
-							}),
-							q(8076, {	-- Paragons of Power: The Demoniac's Mantle [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19720, 1 },	-- Primal Hakkari Sash
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19849)),	-- Zandalar Demoniac's Mantle
-								},
-							}),
-							q(8077, {	-- Paragons of Power: The Demoniac's Robes [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19723, 1 },	-- Primal Hakkari Kossack
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(20033)),	-- Zandalar Demoniac's Robe
-								},
-							}),
-							q(8059, {	-- Paragons of Power: The Demoniac's Wraps [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19848)),	-- Zandalar Demoniac's Wraps
-								},
-							}),
-							q(8106, {	-- Kezan's Taint [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19602)),	-- Kezan's Taint
-								},
-							}),
-							q(8107, {	-- Kezan's Taint [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["sourceQuest"] = 8106,	-- Kezan's Taint [Friendly]
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19603)),	-- Kezan's Taint
-								},
-							}),
-							q(8108, {	-- Kezan's Taint [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["sourceQuest"] = 8107,	-- Kezan's Taint [Honored]
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19604)),	-- Kezan's Taint
-								},
-							}),
-							q(8109, {	-- Kezan's Unstoppable Taint
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14903,		-- Al'tabim the All-Seeing
-								["sourceQuest"] = 8108,	-- Kezan's Taint [Revered]
-								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
-								["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19605)),	-- Kezan's Unstoppable Taint
-								},
-							}),
-						})),
-						cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
-							q(8184, {	-- Presence of Might [Warrior]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 15042,		-- Zanza the Restless
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 22637, 1 },	-- Primal Hakkari Idol
-									{ "i", 19813, 1 },	-- Punctured Voodoo Doll [Warrior]
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19782)),	-- Presence of Might [Warrior]
-								},
-							}),
-							q(8079, {	-- Paragons of Power: The Vindicator's Breastplate [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14902,		-- Jin'rokh the Breaker
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19723, 1 },	-- Primal Hakkari Kossack
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19822)),	-- Zandalar Vindicator's Breastplate
-								},
-							}),
-							q(8058, {	-- Paragons of Power: The Vindicator's Armguards [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14902,		-- Jin'rokh the Breaker
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19824)),	-- Zandalar Vindicator's Armguards
-								},
-							}),
-							q(8078, {	-- Paragons of Power: The Vindicator's Belt [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14902,		-- Jin'rokh the Breaker
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["cost"] = {
-									{ "i", 19719, 1 },	-- Primal Hakkari Girdle
-								},
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19823)),	-- Zandalar Vindicator's Belt
-								},
-							}),
-							q(8041, {	-- Strength of Mount Mugamba [Friendly]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14902,		-- Jin'rokh the Breaker
-								["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
-								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19574)),	-- Strength of Mugamba
-								},
-							}),
-							q(8042, {	-- Strength of Mount Mugamba [Honored]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14902,		-- Jin'rokh the Breaker
-								["sourceQuest"] = 8041,	-- Strength of Mount Mugamba [Friendly]
-								["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19575)),	-- Strength of Mugamba
-								},
-							}),
-							q(8043, {	-- Strength of Mount Mugamba [Revered]
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14902,		-- Jin'rokh the Breaker
-								["sourceQuest"] = 8042,	-- Strength of Mount Mugamba [Honored]
-								["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19576)),	-- Strength of Mugamba
-								},
-							}),
-							q(8044, {	-- The Rage of Mount Mugamba
-								["u"] = REMOVED_FROM_GAME,
-								["qg"] = 14902,		-- Jin'rokh the Breaker
-								["sourceQuest"] = 8043,	-- Strength of Mount Mugamba [Revered]
-								["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
-								["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-								["g"] = {
-									un(REMOVED_FROM_GAME, i(19577)),	-- Rage of Mugamba
-								},
-							}),
-						})),
-						q(8240, {	-- A Bijou for Zanza
-							["u"] = REMOVED_FROM_GAME,
-							["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
-							["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
-							["description"] = "Costs 1 bijou of any color per turn in. There are 9 colors and 8 (+1 for Shaman/Paladin) classes in the game, as such, some guilds assign specific classes specific color bijous and treat one as a wild card.",
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 19708, 1 },	-- Blue Hakkari Bijou
-								{ "i", 19713, 1 },	-- Bronze Hakkari Bijou
-								{ "i", 19715, 1 },	-- Gold Hakkari Bijou
-								{ "i", 19711, 1 },	-- Green Hakkari Bijou
-								{ "i", 19710, 1 },	-- Orange Hakkari Bijou
-								{ "i", 19712, 1 },	-- Purple Hakkari Bijou
-								{ "i", 19707, 1 },	-- Red Hakkari Bijou
-								{ "i", 19714, 1 },	-- Silver Hakkari Bijou
-								{ "i", 19709, 1 },	-- Yellow Hakkari Bijou
-							},
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(19858)),	-- Zandalar Honor Token
-							}
-						}),
-						q(8201, {	-- A Collection of Heads
-							["u"] = REMOVED_FROM_GAME,
-							["qg"] = 14910,	-- Exzhal <Servitor of Rastakhan>
-							["coord"] = { 15.3, 15.5, STRANGLETHORN_VALE },
-							["cost"] = {
-								{ "i", 19880, 1 },	-- Gurubashi Head Collection
-							},
-							["lvl"] = 58,
-							["g"] = {
-								i(19883, {	-- Sacred Cord
-									["u"] = REMOVED_FROM_GAME,
-									["cost"] = { { "i", 19881, 5 } },	-- Channeler's Head
-									["g"] = {
-										i(19880, {	-- Gurubashi Head Collection
-											["u"] = REMOVED_FROM_GAME,
-											["questID"] = 8201,	-- A Collection of Heads
-										}),
-									},
-								}),
-								un(REMOVED_FROM_GAME, i(20216)),	-- Belt of Preserved Heads
-								un(REMOVED_FROM_GAME, i(20215)),	-- Belt of Shriveled Heads
-								un(REMOVED_FROM_GAME, i(20213)),	-- Belt of Shrunken Heads
-								un(REMOVED_FROM_GAME, i(20217)),	-- Belt of Tiny Heads
-							},
-						}),
-						q(8196, {	-- Essence Mangoes
-							["u"] = REMOVED_FROM_GAME,
-							["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
-							["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
-							["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
-							["description"] = "No. Stop. WHAT ARE YOU DOING! Do not waste your token on this FOR THE LOVE OF GOD!\n - Crieve",
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 19858, 1 },	-- Zandalar Honor Token
-							},
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(20031)),	-- Essence Mango
-							},
-						}),
-						q(8238, {	-- Gurubashi, Vilebranch, and Witherbark Coins
-							["u"] = REMOVED_FROM_GAME,
-							["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
-							["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 19701, 1 },	-- Gurubashi Coin
-								{ "i", 19702, 1 },	-- Vilebranch Coin
-								{ "i", 19703, 1 },	-- Witherbark Coin
-							},
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(19858)),	-- Zandalar Honor Token
-							}
-						}),
-						q(8239, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
-							["u"] = REMOVED_FROM_GAME,
-							["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
-							["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 19704, 1 },	-- Sandfury Coin
-								{ "i", 19705, 1 },	-- Skullsplitter Coin
-								{ "i", 19706, 1 },	-- Bloodscalp Coin
-							},
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(19858)),	-- Zandalar Honor Token
-							}
-						}),
-						q(8246, {	-- Signets of the Zandalar
-							["u"] = REMOVED_FROM_GAME,
-							["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
-							["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe
-							["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 19858, 15 },	-- Zandalar Honor Token
-							},
-							["lvl"] = 58,
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(20077)),	-- Zandalar Signet of Might
-								un(REMOVED_FROM_GAME, i(20076)),	-- Zandalar Signet of Mojo
-								un(REMOVED_FROM_GAME, i(20078)),	-- Zandalar Signet of Serenity
-							},
-						}),
-						q(8183, {	-- The Heart of Hakkar
-							["u"] = REMOVED_FROM_GAME,
-							["provider"] = { "i", 19802 },	-- The Heart of Hakkar
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(19948)),	-- Zandalarian Hero Badge
-								un(REMOVED_FROM_GAME, i(19950)),	-- Zandalarian Hero Charm
-								un(REMOVED_FROM_GAME, i(19949)),	-- Zandalarian Hero Medallion
-							},
-						}),
-						q(9210, {	-- The Savage Guard - Arcanum of Focus
-							["u"] = REMOVED_FROM_GAME,
-							["qg"] = 15042,		-- Zanza the Restless
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 18330, 1 },	-- Arcanum of Focus
-							},
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(22635)),	-- Savage Guard
-							},
-						}),
-						q(9208, {	-- The Savage Guard - Arcanum of Protection
-							["u"] = REMOVED_FROM_GAME,
-							["qg"] = 15042,		-- Zanza the Restless
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 18331, 1 },	-- Arcanum of Protection
-							},
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(22635)),	-- Savage Guard
-							},
-						}),
-						q(9209, {	-- The Savage Guard - Arcanum of Rapidity
-							["u"] = REMOVED_FROM_GAME,
-							["qg"] = 15042,	-- Zanza the Restless
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 18329, 1 },	-- Arcanum of Rapidity
-							},
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(22635)),	-- Savage Guard
-							},
-						}),
-						q(8243, {	-- Zanza's Potent Potables
-							["u"] = REMOVED_FROM_GAME,
-							["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
-							["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
-							["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 19858, 1 },	-- Zandalar Honor Token
-							},
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(20080)),	-- Sheen of Zanza
-								un(REMOVED_FROM_GAME, i(20079)),	-- Spirit of Zanza
-								un(REMOVED_FROM_GAME, i(20081)),	-- Swiftness of Zanza
-							},
-						}),
-						q(8195, {	-- Zulian, Razzashi, and Hakkari Coins
-							["u"] = REMOVED_FROM_GAME,
-							["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
-							["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 19698, 1 },	-- Zulian Coin
-								{ "i", 19699, 1 },	-- Razzashi Coin
-								{ "i", 19700, 1 },	-- Hakkari Coin
-							},
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(19858)),	-- Zandalar Honor Token
-							}
-						}),
+		["groups"] = {
+			n(FACTIONS, {
+				faction(270, {	-- Zandalar Tribe
+					["icon"] = "Interface\\Icons\\RACIAL_TROLL_BERSERK",
+					["maps"] = { STRANGLETHORN_VALE },
+				}),
+			}),
+			n(QUESTS, {
+				cl(DRUID, bubbleDown({ ["classes"] = { DRUID }, ["lvl"] = 58 }, {
+					q(8192, {	-- Animist's Caress [Druid]
+						["qg"] = 15042,		-- Zanza the Restless
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22637, 1 },	-- Primal Hakkari Idol
+							{ "i", 19821, 1 },	-- Punctured Voodoo Doll [Druid]
+						},
+						["groups"] = {
+							i(19790),	-- Animist's Caress [Druid]
+						},
 					}),
-					n(VENDORS, {
-						n(14921, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
-							["u"] = REMOVED_FROM_GAME,
-							["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(20757)),	-- Formula: Brilliant Mana Oil
-								un(REMOVED_FROM_GAME, i(20756)),	-- Formula: Brilliant Wizard Oil
-								un(REMOVED_FROM_GAME, i(19772)),	-- Pattern: Blood Tiger Breastplate
-								un(REMOVED_FROM_GAME, i(19773)),	-- Pattern: Blood Tiger Shoulders
-								un(REMOVED_FROM_GAME, i(19766)),	-- Pattern: Bloodvine Boots
-								un(REMOVED_FROM_GAME, i(19765)),	-- Pattern: Bloodvine Leggings
-								un(REMOVED_FROM_GAME, i(19764)),	-- Pattern: Bloodvine Vest
-								un(REMOVED_FROM_GAME, i(19771)),	-- Pattern: Primal Batskin Bracers
-								un(REMOVED_FROM_GAME, i(19770)),	-- Pattern: Primal Batskin Gloves
-								un(REMOVED_FROM_GAME, i(19769)),	-- Pattern: Primal Batskin Jerkin
-								un(REMOVED_FROM_GAME, i(19776)),	-- Plans: Bloodsoul Breastplate
-								un(REMOVED_FROM_GAME, i(19778)),	-- Plans: Bloodsoul Gauntlets
-								un(REMOVED_FROM_GAME, i(19777)),	-- Plans: Bloodsoul Shoulders
-								un(REMOVED_FROM_GAME, i(19779)),	-- Plans: Darksoul Breastplate
-								un(REMOVED_FROM_GAME, i(19780)),	-- Plans: Darksoul Leggings
-								un(REMOVED_FROM_GAME, i(19781)),	-- Plans: Darksoul Shoulders
-								un(REMOVED_FROM_GAME, i(20012)),	-- Recipe: Greater Dreamless Sleep Potion
-								i(20013),	-- Recipe: Living Action Potion (this is obtainable in retail from Winterspring vendor)
-								un(REMOVED_FROM_GAME, i(20011)),	-- Recipe: Mageblood Potion
-								un(REMOVED_FROM_GAME, i(20014)),	-- Recipe: Mighty Troll's Blood Potion
-								un(REMOVED_FROM_GAME, i(20000)),	-- Schematic: Bloodvine Goggles
-								un(REMOVED_FROM_GAME, i(20001)),	-- Schematic: Bloodvine Lens
+					q(8065, {	-- Paragons of Power: The Haruspex's Tunic [Revered]
+						["qg"] = 14904,		-- Maywiki of Zuldazar
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19722, 1 },	-- Primal Hakkari Tabard
+						},
+						["groups"] = {
+							i(19838),	-- Zandalar Haruspex's Tunic
+						},
+					}),
+					q(8057, {	-- Paragons of Power: The Haruspex's Bracers [Friendly]
+						["qg"] = 14904,		-- Maywiki of Zuldazar
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
+						},
+						["groups"] = {
+							i(19840),	-- Zandalar Haruspex's Bracers
+						},
+					}),
+					q(8064, {	-- Paragons of Power: The Haruspex's Belt [Honored]
+						["qg"] = 14904,		-- Maywiki of Zuldazar
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19720, 1 },	-- Primal Hakkari Sash
+						},
+						["groups"] = {
+							i(19839),	-- Zandalar Haruspex's Belt
+						},
+					}),
+					q(8110, {	-- Enchanted South Seas Kelp [Friendly]
+						["qg"] = 14904,		-- Maywiki of Zuldazar
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19610),	-- Enchanted South Seas Kelp
+						},
+					}),
+					q(8111, {	-- Enchanted South Seas Kelp [Honored]
+						["qg"] = 14904,		-- Maywiki of Zuldazar
+						["sourceQuest"] = 8110,	-- Enchanted South Seas Kelp [Friendly]
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19611),	-- Enchanted South Seas Kelp
+						},
+					}),
+					q(8112, {	-- Enchanted South Seas Kelp [Revered]
+						["qg"] = 14904,		-- Maywiki of Zuldazar
+						["sourceQuest"] = 8111,	-- Enchanted South Seas Kelp [Honored]
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19612),	-- Enchanted South Seas Kelp
+						},
+					}),
+					q(8113, {	-- Pristine Enchanted South Seas Kelp
+						["qg"] = 14904,		-- Maywiki of Zuldazar
+						["sourceQuest"] = 8112,	-- Enchanted South Seas Kelp [Revered]
+						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
+						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19613),	-- Pristine Enchanted South Seas Kelp
+						},
+					}),
+				})),
+				cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER }, ["lvl"] = 58 }, {
+					q(8187, {	-- Falcon's Call [Hunter]
+						["qg"] = 15042,		-- Zanza the Restless
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22637, 1 },	-- Primal Hakkari Idol
+							{ "i", 19816, 1 },	-- Punctured Voodoo Doll [Hunter]
+						},
+						["groups"] = {
+							i(19785),	-- Falcon's Call [Hunter]
+						},
+					}),
+					q(8067, {	-- Paragons of Power: The Predator's Mantle [Revered]
+						["qg"] = 14905,		-- Falthir the Sightless
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19724, 1 },	-- Primal Hakkari Aegis
+						},
+						["groups"] = {
+							i(19831),	-- Zandalar Predator's Mantle
+						},
+					}),
+					q(8062, {	-- Paragons of Power: The Predator's Bracers [Friendly]
+						["qg"] = 14905,		-- Falthir the Sightless
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19716, 1 },	-- Primal Hakkari Bindings
+						},
+						["groups"] = {
+							i(19833),	-- Zandalar Predator's Bracers
+						},
+					}),
+					q(8066, {	-- Paragons of Power: The Predator's Belt [Honored]
+						["qg"] = 14905,		-- Falthir the Sightless
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19721, 1 },	-- Primal Hakkari Shawl
+						},
+						["groups"] = {
+							i(19832),	-- Zandalar Predator's Belt
+						},
+					}),
+					q(8145, {	-- The Maelstrom's Tendril [Friendly]
+						["qg"] = 14905,		-- Falthir the Sightless
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19618),	-- Maelstrom's Tendril
+						},
+					}),
+					q(8146, {	-- The Maelstrom's Tendril [Honored]
+						["qg"] = 14905,		-- Falthir the Sightless
+						["sourceQuest"] = 8145,	-- The Maelstrom's Tendril [Friendly]
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19619),	-- Maelstrom's Tendril
+						},
+					}),
+					q(8147, {	-- The Maelstrom's Tendril [Revered]
+						["qg"] = 14905,		-- Falthir the Sightless
+						["sourceQuest"] = 8146,	-- The Maelstrom's Tendril [Honored]
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19620),	-- Maelstrom's Tendril
+						},
+					}),
+					q(8148, {	-- The Maelstrom's Wrath
+						["qg"] = 14905,		-- Falthir the Sightless
+						["sourceQuest"] = 8147,	-- The Maelstrom's Tendril [Revered]
+						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
+						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19621),	-- Maelstrom's Wrath
+						},
+					}),
+				})),
+				cl(MAGE, bubbleDown({ ["classes"] = { MAGE }, ["lvl"] = 58 }, {
+					q(8189, {	-- Presence of Sight [Mage]
+						["qg"] = 15042,		-- Zanza the Restless
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22637, 1 },	-- Primal Hakkari Idol
+							{ "i", 19818, 1 },	-- Punctured Voodoo Doll [Mage]
+						},
+						["groups"] = {
+							i(19787),	-- Presence of Sight [Mage]
+						},
+					}),
+					q(8068, {	-- Paragons of Power: The Illusionist's Mantle [Honored]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19721, 1 },	-- Primal Hakkari Shawl
+						},
+						["groups"] = {
+							i(19845),	-- Zandalar Illusionist's Mantle
+						},
+					}),
+					q(8069, {	-- Paragons of Power: The Illusionist's Robes [Revered]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19723, 1 },	-- Primal Hakkari Kossack
+						},
+						["groups"] = {
+							i(20034),	-- Zandalar Illusionist's Robe
+						},
+					}),
+					q(8060, {	-- Paragons of Power: The Illusionist's Wraps [Friendly]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19716, 1 },	-- Primal Hakkari Bindings
+						},
+						["groups"] = {
+							i(19846),	-- Zandalar Illusionist's Wraps
+						},
+					}),
+					q(8101, {	-- The Pebble of Kajaro [Friendly]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19598),	-- Pebble of Kajaro
+						},
+					}),
+					q(8102, {	-- The Pebble of Kajaro [Honored]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["sourceQuest"] = 8101,	-- The Pebble of Kajaro [Friendly]
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19599),	-- Pebble of Kajaro
+						},
+					}),
+					q(8103, {	-- The Pebble of Kajaro [Revered]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["sourceQuest"] = 8102,	-- The Pebble of Kajaro [Honored]
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19600),	-- Pebble of Kajaro
+						},
+					}),
+					q(8104, {	-- The Jewel of Kajaro
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["sourceQuest"] = 8103,	-- The Pebble of Kajaro [Revered]
+						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19601),	-- Jewel of Kajaro
+						},
+					}),
+				})),
+				cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN }, ["lvl"] = 58 }, {
+					q(8185, {	-- Syncretist's Sigil [Paladin]
+						["qg"] = 15042,		-- Zanza the Restless
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22637, 1 },	-- Primal Hakkari Idol
+							{ "i", 19815, 1 },	-- Punctured Voodoo Doll [Paladin]
+						},
+						["groups"] = {
+							i(19783),	-- Syncretist's Sigil [Paladin]
+						},
+					}),
+					q(8055, {	-- Paragons of Power: The Freethinker's Breastplate [Revered]
+						["qg"] = 14902,		-- Jin'rokh the Breaker
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19722, 1 },	-- Primal Hakkari Tabard
+						},
+						["groups"] = {
+							i(19825),	-- Zandalar Freethinker's Breastplate
+						},
+					}),
+					q(8053, {	-- Paragons of Power: The Freethinker's Armguards [Friendly]
+						["qg"] = 14902,		-- Jin'rokh the Breaker
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19716, 1 },	-- Primal Hakkari Bindings
+						},
+						["groups"] = {
+							i(19827),	-- Zandalar Freethinker's Armguards
+						},
+					}),
+					q(8054, {	-- Paragons of Power: The Freethinker's Belt [Honored]
+						["qg"] = 14902,		-- Jin'rokh the Breaker
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19721, 1 },	-- Primal Hakkari Shawl
+						},
+						["groups"] = {
+							i(19826),	-- Zandalar Freethinker's Belt
+						},
+					}),
+					q(8045, {	-- The Heathen's Brand [Friendly]
+						["qg"] = 14902,		-- Jin'rokh the Breaker
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19579),	-- Heathen's Brand
+						},
+					}),
+					q(8046, {	-- The Heathen's Brand [Honored]
+						["qg"] = 14902,		-- Jin'rokh the Breaker
+						["sourceQuest"] = 8045,	-- The Heathen's Brand [Friendly]
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19585),	-- Heathen's Brand
+						},
+					}),
+					q(8047, {	-- The Heathen's Brand [Revered]
+						["qg"] = 14902,		-- Jin'rokh the Breaker
+						["sourceQuest"] = 8046,	-- The Heathen's Brand [Honored]
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19586),	-- Heathen's Brand
+						},
+					}),
+					q(8048, {	-- The Hero's Brand
+						["qg"] = 14902,		-- Jin'rokh the Breaker
+						["sourceQuest"] = 8047,	-- The Heathen's Brand [Revered]
+						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
+						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19588),	-- Hero's Brand
+						},
+					}),
+				})),
+				cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST }, ["lvl"] = 58 }, {
+					q(8191, {	-- Prophetic Aura [Priest]
+						["qg"] = 15042,		-- Zanza the Restless
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22637, 1 },	-- Primal Hakkari Idol
+							{ "i", 19820, 1 },	-- Punctured Voodoo Doll [Priest]
+						},
+						["groups"] = {
+							i(19789),	-- Prophetic Aura [Priest]
+						},
+					}),
+					q(8071, {	-- Paragons of Power: The Confessor's Mantle [Revered]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19724, 1 },	-- Primal Hakkari Aegis
+						},
+						["groups"] = {
+							i(19841),	-- Zandalar Confessor's Mantle
+						},
+					}),
+					q(8061, {	-- Paragons of Power: The Confessor's Wraps [Friendly]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
+						},
+						["groups"] = {
+							i(19843),	-- Zandalar Confessor's Wraps
+						},
+					}),
+					q(8070, {	-- Paragons of Power: The Confessor's Bindings [Honored]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19720, 1 },	-- Primal Hakkari Sash
+						},
+						["groups"] = {
+							i(19842),	-- Zandalar Confessor's Bindings
+						},
+					}),
+					q(8049, {	-- The Eye of Zuldazar [Friendly]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19591),	-- The Eye of Zuldazar
+						},
+					}),
+					q(8050, {	-- The Eye of Zuldazar [Honored]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["sourceQuest"] = 8049,	-- The Eye of Zuldazar [Friendly]
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19592),	-- The Eye of Zuldazar
+						},
+					}),
+					q(8051, {	-- The Eye of Zuldazar [Revered]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["sourceQuest"] = 8050,	-- The Eye of Zuldazar [Honored]
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19593),	-- The Eye of Zuldazar
+						},
+					}),
+					q(8052, {	-- The All-Seeing Eye of Zuldazar
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["sourceQuest"] = 8051,	-- The Eye of Zuldazar [Revered]
+						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19594),	-- The All-Seeing Eye of Zuldazar
+						},
+					}),
+				})),
+				cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE }, ["lvl"] = 58 }, {
+					q(8186, {	-- Death's Embrace [Rogue]
+						["qg"] = 15042,		-- Zanza the Restless
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22637, 1 },	-- Primal Hakkari Idol
+							{ "i", 19814, 1 },	-- Punctured Voodoo Doll [Rogue]
+						},
+						["groups"] = {
+							i(19784),	-- Death's Embrace [Rogue]
+						},
+					}),
+					q(8072, {	-- Paragons of Power: The Madcap's Mantle [Honored]
+						["qg"] = 14905,		-- Falthir the Sightless
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19719, 1 },	-- Primal Hakkari Girdle
+						},
+						["groups"] = {
+							i(19835),	-- Zandalar Madcap's Mantle
+						},
+					}),
+					q(8073, {	-- Paragons of Power: The Madcap's Tunic [Revered]
+						["qg"] = 14905,		-- Falthir the Sightless
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19724, 1 },	-- Primal Hakkari Aegis
+						},
+						["groups"] = {
+							i(19834),	-- Zandalar Madcap's Tunic
+						},
+					}),
+					q(8063, {	-- Paragons of Power: The Madcap's Bracers [Friendly]
+						["qg"] = 14905,		-- Falthir the Sightless
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
+						},
+						["groups"] = {
+							i(19836),	-- Zandalar Madcap's Bracers
+						},
+					}),
+					q(8141, {	-- Zandalrian Shadow Talisman [Friendly]
+						["qg"] = 14905,		-- Falthir the Sightless
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19614),	-- Zandalrian Shadow Talisman
+						},
+					}),
+					q(8142, {	-- Zandalrian Shadow Talisman [Honored]
+						["qg"] = 14905,		-- Falthir the Sightless
+						["sourceQuest"] = 8141,	-- Zandalrian Shadow Talisman [Friendly]
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19615),	-- Zandalrian Shadow Talisman
+						},
+					}),
+					q(8143, {	-- Zandalrian Shadow Talisman [Revered]
+						["qg"] = 14905,		-- Falthir the Sightless
+						["sourceQuest"] = 8142,	-- Zandalrian Shadow Talisman [Honored]
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19616),	-- Zandalrian Shadow Talisman
+						},
+					}),
+					q(8144, {	-- Zandalrian Shadow Mastery Talisman
+						["qg"] = 14905,		-- Falthir the Sightless
+						["sourceQuest"] = 8143,	-- Zandalrian Shadow Talisman [Revered]
+						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
+						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19617),	-- Zandalrian Shadow Mastery Talisman
+						},
+					}),
+				})),
+				cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN }, ["lvl"] = 58 }, {
+					q(8188, {	-- Vodouisant's Vigilant Embrace [Shaman]
+						["qg"] = 15042,		-- Zanza the Restless
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22637, 1 },	-- Primal Hakkari Idol
+							{ "i", 19817, 1 },	-- Punctured Voodoo Doll [Shaman]
+						},
+						["groups"] = {
+							i(19786),	-- Vodouisant's Vigilant Embrace [Shaman]
+						},
+					}),
+					q(8075, {	-- Paragons of Power: The Augur's Hauberk [Revered]
+						["qg"] = 14904,		-- Maywiki of Zuldazar
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19722, 1 },	-- Primal Hakkari Tabard
+						},
+						["groups"] = {
+							i(19828),	-- Zandalar Augur's Hauberk
+						},
+					}),
+					q(8056, {	-- Paragons of Power: The Augur's Bracers [Friendly]
+						["qg"] = 14904,		-- Maywiki of Zuldazar
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
+						},
+						["groups"] = {
+							i(19830),	-- Zandalar Augur's Bracers
+						},
+					}),
+					q(8074, {	-- Paragons of Power: The Augur's Belt [Honored]
+						["qg"] = 14904,		-- Maywiki of Zuldazar
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19719, 1 },	-- Primal Hakkari Girdle
+						},
+						["groups"] = {
+							i(19829),	-- Zandalar Augur's Belt
+						},
+					}),
+					q(8116, {	-- Vision of Voodress [Friendly]
+						["qg"] = 14904,		-- Maywiki of Zuldazar
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19606),	-- Vision of Voodress
+						},
+					}),
+					q(8117, {	-- Vision of Voodress [Honored]
+						["qg"] = 14904,		-- Maywiki of Zuldazar
+						["sourceQuest"] = 8116,	-- Vision of Voodress [Friendly]
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19607),	-- Vision of Voodress
+						},
+					}),
+					q(8118, {	-- Vision of Voodress [Revered]
+						["qg"] = 14904,		-- Maywiki of Zuldazar
+						["sourceQuest"] = 8117,	-- Vision of Voodress [Honored]
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19608),	-- Vision of Voodress
+						},
+					}),
+					q(8119, {	-- The Unmarred Vision of Voodress
+						["qg"] = 14904,		-- Maywiki of Zuldazar
+						["sourceQuest"] = 8118,	-- Vision of Voodress [Revered]
+						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
+						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19609),	-- Unmarred Vision of Voodress
+						},
+					}),
+				})),
+				cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK }, ["lvl"] = 58 }, {
+					q(8190, {	-- Hoodoo Hex [Warlock]
+						["qg"] = 15042,		-- Zanza the Restless
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22637, 1 },	-- Primal Hakkari Idol
+							{ "i", 19819, 1 },	-- Punctured Voodoo Doll [Warlock]
+						},
+						["groups"] = {
+							i(19788),	-- Hoodoo Hex [Warlock]
+						},
+					}),
+					q(8076, {	-- Paragons of Power: The Demoniac's Mantle [Honored]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19720, 1 },	-- Primal Hakkari Sash
+						},
+						["groups"] = {
+							i(19849),	-- Zandalar Demoniac's Mantle
+						},
+					}),
+					q(8077, {	-- Paragons of Power: The Demoniac's Robes [Revered]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19723, 1 },	-- Primal Hakkari Kossack
+						},
+						["groups"] = {
+							i(20033),	-- Zandalar Demoniac's Robe
+						},
+					}),
+					q(8059, {	-- Paragons of Power: The Demoniac's Wraps [Friendly]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
+						},
+						["groups"] = {
+							i(19848),	-- Zandalar Demoniac's Wraps
+						},
+					}),
+					q(8106, {	-- Kezan's Taint [Friendly]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19602),	-- Kezan's Taint
+						},
+					}),
+					q(8107, {	-- Kezan's Taint [Honored]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["sourceQuest"] = 8106,	-- Kezan's Taint [Friendly]
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19603),	-- Kezan's Taint
+						},
+					}),
+					q(8108, {	-- Kezan's Taint [Revered]
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["sourceQuest"] = 8107,	-- Kezan's Taint [Honored]
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19604),	-- Kezan's Taint
+						},
+					}),
+					q(8109, {	-- Kezan's Unstoppable Taint
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
+						["sourceQuest"] = 8108,	-- Kezan's Taint [Revered]
+						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
+						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19605),	-- Kezan's Unstoppable Taint
+						},
+					}),
+				})),
+				cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR }, ["lvl"] = 58 }, {
+					q(8184, {	-- Presence of Might [Warrior]
+						["qg"] = 15042,		-- Zanza the Restless
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22637, 1 },	-- Primal Hakkari Idol
+							{ "i", 19813, 1 },	-- Punctured Voodoo Doll [Warrior]
+						},
+						["groups"] = {
+							i(19782),	-- Presence of Might [Warrior]
+						},
+					}),
+					q(8079, {	-- Paragons of Power: The Vindicator's Breastplate [Revered]
+						["qg"] = 14902,		-- Jin'rokh the Breaker
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19723, 1 },	-- Primal Hakkari Kossack
+						},
+						["groups"] = {
+							i(19822),	-- Zandalar Vindicator's Breastplate
+						},
+					}),
+					q(8058, {	-- Paragons of Power: The Vindicator's Armguards [Friendly]
+						["qg"] = 14902,		-- Jin'rokh the Breaker
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
+						},
+						["groups"] = {
+							i(19824),	-- Zandalar Vindicator's Armguards
+						},
+					}),
+					q(8078, {	-- Paragons of Power: The Vindicator's Belt [Honored]
+						["qg"] = 14902,		-- Jin'rokh the Breaker
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["cost"] = {
+							{ "i", 19719, 1 },	-- Primal Hakkari Girdle
+						},
+						["groups"] = {
+							i(19823),	-- Zandalar Vindicator's Belt
+						},
+					}),
+					q(8041, {	-- Strength of Mount Mugamba [Friendly]
+						["qg"] = 14902,		-- Jin'rokh the Breaker
+						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
+						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19574),	-- Strength of Mugamba
+						},
+					}),
+					q(8042, {	-- Strength of Mount Mugamba [Honored]
+						["qg"] = 14902,		-- Jin'rokh the Breaker
+						["sourceQuest"] = 8041,	-- Strength of Mount Mugamba [Friendly]
+						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19575),	-- Strength of Mugamba
+						},
+					}),
+					q(8043, {	-- Strength of Mount Mugamba [Revered]
+						["qg"] = 14902,		-- Jin'rokh the Breaker
+						["sourceQuest"] = 8042,	-- Strength of Mount Mugamba [Honored]
+						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19576),	-- Strength of Mugamba
+						},
+					}),
+					q(8044, {	-- The Rage of Mount Mugamba
+						["qg"] = 14902,		-- Jin'rokh the Breaker
+						["sourceQuest"] = 8043,	-- Strength of Mount Mugamba [Revered]
+						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
+						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["maps"] = { STRANGLETHORN_VALE },
+						["groups"] = {
+							i(19577),	-- Rage of Mugamba
+						},
+					}),
+				})),
+				q(8240, {	-- A Bijou for Zanza
+					["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
+					["description"] = "Costs 1 bijou of any color per turn in. There are 9 colors and 8 (+1 for Shaman/Paladin) classes in the game, as such, some guilds assign specific classes specific color bijous and treat one as a wild card.",
+					["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19708, 1 },	-- Blue Hakkari Bijou
+						{ "i", 19713, 1 },	-- Bronze Hakkari Bijou
+						{ "i", 19715, 1 },	-- Gold Hakkari Bijou
+						{ "i", 19711, 1 },	-- Green Hakkari Bijou
+						{ "i", 19710, 1 },	-- Orange Hakkari Bijou
+						{ "i", 19712, 1 },	-- Purple Hakkari Bijou
+						{ "i", 19707, 1 },	-- Red Hakkari Bijou
+						{ "i", 19714, 1 },	-- Silver Hakkari Bijou
+						{ "i", 19709, 1 },	-- Yellow Hakkari Bijou
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(19858),	-- Zandalar Honor Token
+					}
+				}),
+				q(8201, {	-- A Collection of Heads
+					["qg"] = 14910,	-- Exzhal <Servitor of Rastakhan>
+					["coord"] = { 15.3, 15.5, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
+					["lvl"] = 58,
+					["groups"] = {
+						objective(1, {	-- 0/1 Gurubashi Head Collection
+							["provider"] = { "i", 19880 },	-- Gurubashi Head Collection
+							["cost"] = {
+								{ "i", 19883, 1 },	-- Sacred Cord
+								{ "i", 19881, 5 },	-- Channeler's Head
 							},
 						}),
-					}),
-				},
+						i(20216),	-- Belt of Preserved Heads
+						i(20215),	-- Belt of Shriveled Heads
+						i(20213),	-- Belt of Shrunken Heads
+						i(20217),	-- Belt of Tiny Heads
+					},
+				}),
+				q(8196, {	-- Essence Mangoes
+					["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
+					["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
+					["description"] = "No. Stop. WHAT ARE YOU DOING! Do not waste your token on this FOR THE LOVE OF GOD!\n - Crieve",
+					["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19858, 1 },	-- Zandalar Honor Token
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(20031),	-- Essence Mango
+					},
+				}),
+				q(8238, {	-- Gurubashi, Vilebranch, and Witherbark Coins
+					["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
+					["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19701, 1 },	-- Gurubashi Coin
+						{ "i", 19702, 1 },	-- Vilebranch Coin
+						{ "i", 19703, 1 },	-- Witherbark Coin
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(19858),	-- Zandalar Honor Token
+					}
+				}),
+				q(8239, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
+					["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
+					["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19704, 1 },	-- Sandfury Coin
+						{ "i", 19705, 1 },	-- Skullsplitter Coin
+						{ "i", 19706, 1 },	-- Bloodscalp Coin
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(19858),	-- Zandalar Honor Token
+					}
+				}),
+				q(8246, {	-- Signets of the Zandalar
+					["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
+					["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe
+					["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19858, 15 },	-- Zandalar Honor Token
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(20077),	-- Zandalar Signet of Might
+						i(20076),	-- Zandalar Signet of Mojo
+						i(20078),	-- Zandalar Signet of Serenity
+					},
+				}),
+				q(8183, {	-- The Heart of Hakkar
+					["provider"] = { "i", 19802 },	-- The Heart of Hakkar
+					["description"] = "Turning this head in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",
+					["maps"] = { STRANGLETHORN_VALE },
+					["lvl"] = 58,
+					["groups"] = {
+						i(19948),	-- Zandalarian Hero Badge
+						i(19950),	-- Zandalarian Hero Charm
+						i(19949),	-- Zandalarian Hero Medallion
+					},
+				}),
+				applyclassicphase(PHASE_SIX, q(9210, {	-- The Savage Guard - Arcanum of Focus
+					["qg"] = 15042,		-- Zanza the Restless
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 18330, 1 },	-- Arcanum of Focus
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22635),	-- Savage Guard
+					},
+				})),
+				applyclassicphase(PHASE_SIX, q(9208, {	-- The Savage Guard - Arcanum of Protection
+					["qg"] = 15042,		-- Zanza the Restless
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 18331, 1 },	-- Arcanum of Protection
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22635),	-- Savage Guard
+					},
+				})),
+				applyclassicphase(PHASE_SIX, q(9209, {	-- The Savage Guard - Arcanum of Rapidity
+					["qg"] = 15042,	-- Zanza the Restless
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 18329, 1 },	-- Arcanum of Rapidity
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22635),	-- Savage Guard
+					},
+				})),
+				q(8243, {	-- Zanza's Potent Potables
+					["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
+					["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
+					["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19858, 1 },	-- Zandalar Honor Token
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(20080),	-- Sheen of Zanza
+						i(20079),	-- Spirit of Zanza
+						i(20081),	-- Swiftness of Zanza
+					},
+				}),
+				q(8195, {	-- Zulian, Razzashi, and Hakkari Coins
+					["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
+					["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19698, 1 },	-- Zulian Coin
+						{ "i", 19699, 1 },	-- Razzashi Coin
+						{ "i", 19700, 1 },	-- Hakkari Coin
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(19858),	-- Zandalar Honor Token
+					}
+				}),
+			}),
+			n(VENDORS, {
+				n(14921, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
+					["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
+					["groups"] = {
+						applyclassicphase(PHASE_FIVE, i(20757)),	-- Formula: Brilliant Mana Oil
+						applyclassicphase(PHASE_FIVE, i(20756)),	-- Formula: Brilliant Wizard Oil
+						i(19772),	-- Pattern: Blood Tiger Breastplate
+						i(19773),	-- Pattern: Blood Tiger Shoulders
+						i(19766),	-- Pattern: Bloodvine Boots
+						i(19765),	-- Pattern: Bloodvine Leggings
+						i(19764),	-- Pattern: Bloodvine Vest
+						i(19771),	-- Pattern: Primal Batskin Bracers
+						i(19770),	-- Pattern: Primal Batskin Gloves
+						i(19769),	-- Pattern: Primal Batskin Jerkin
+						i(19776),	-- Plans: Bloodsoul Breastplate
+						i(19778),	-- Plans: Bloodsoul Gauntlets
+						i(19777),	-- Plans: Bloodsoul Shoulders
+						i(19779),	-- Plans: Darksoul Breastplate
+						i(19780),	-- Plans: Darksoul Leggings
+						i(19781),	-- Plans: Darksoul Shoulders
+						i(20012),	-- Recipe: Greater Dreamless Sleep Potion
+						i(20013),	-- Recipe: Living Action Potion
+						i(20011),	-- Recipe: Mageblood Potion
+						i(20014),	-- Recipe: Major Troll's Blood Potion
+						i(20000),	-- Schematic: Bloodvine Goggles
+						i(20001),	-- Schematic: Bloodvine Lens
+					},
+				}),
+			}),
+			n(ZONEDROPS, {
+				i(20263),	-- Gurubashi Helm
+				i(19908),	-- Sceptre of Smiting
+				i(20261),	-- Shadow Panther Hide Belt
+				i(20259),	-- Shadow Panther Hide Gloves
+				i(20258),	-- Zulian Ceremonial Staff
+				i(19921),	-- Zulian Hacker
+				i(19708),	-- Blue Hakkari Bijou
+				i(19713),	-- Bronze Hakkari Bijou
+				i(19715),	-- Gold Hakkari Bijou
+				i(19711),	-- Green Hakkari Bijou
+				i(19710),	-- Orange Hakkari Bijou
+				i(19712),	-- Purple Hakkari Bijou
+				i(19707),	-- Red Hakkari Bijou
+				i(19714),	-- Silver Hakkari Bijou
+				i(19709),	-- Yellow Hakkari Bijou
+				i(19706),	-- Bloodscalp Coin
+				i(19701),	-- Gurubashi Coin
+				i(19700),	-- Hakkari Coin
+				i(19699),	-- Razzashi Coin
+				i(19704),	-- Sandfury Coin
+				i(19705),	-- Skullsplitter Coin
+				i(19702),	-- Vilebranch Coin
+				i(19703),	-- Witherbark Coin
+				i(19698),	-- Zulian Coin
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(22721, {	-- Band of Servitude
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1036,7 +1052,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(22716, {	-- Belt of Untapped Power
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1046,7 +1061,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(22718, {	-- Blooddrenched Mask
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1056,8 +1070,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(19881, {	-- Channeler's Head
-					["u"] = REMOVED_FROM_GAME,
-					["questID"] = 8201,	-- A Collection of Heads
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1067,7 +1079,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(22711, {	-- Cloak of the Hakkari Worshipers
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1077,7 +1088,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(22715, {	-- Gloves of the Tormented
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1087,7 +1097,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(19943, {	-- Massive Mojo
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14834,	-- Hakkar
 						11382,	-- Bloodlord Mandokir
@@ -1100,7 +1109,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(22712, {	-- Might of the Tribe
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1110,7 +1118,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(19724, {	-- Primal Hakkari Aegis
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1122,7 +1129,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(19717, {	-- Primal Hakkari Armsplint
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1134,7 +1140,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(19716, {	-- Primal Hakkari Bindings
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1146,7 +1151,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(19719, {	-- Primal Hakkari Girdle
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1158,7 +1162,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(19723, {	-- Primal Hakkari Kossack
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1170,7 +1173,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(19720, {	-- Primal Hakkari Sash
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1182,7 +1184,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(19721, {	-- Primal Hakkari Shawl
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1194,7 +1195,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(19718, {	-- Primal Hakkari Stanchion
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1206,7 +1206,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(19722, {	-- Primal Hakkari Tabard
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11382,	-- Bloodlord Mandokir
 						14509,	-- High Priest Thekal
@@ -1218,7 +1217,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(22714, {	-- Sacrificial Gauntlets
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1228,7 +1226,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(22722, {	-- Seal of the Gurubashi Berserker
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1238,7 +1235,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(22720, {	-- Zulian Headdress
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1248,7 +1244,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(22713, {	-- Zulian Scepter of Rites
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1258,168 +1253,19 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
-				un(REMOVED_FROM_GAME, i(19727)),	-- Blood Scythe
-				un(REMOVED_FROM_GAME, i(20263)),	-- Gurubashi Helm
-				un(REMOVED_FROM_GAME, i(19908)),	-- Sceptre of Smiting
-				un(REMOVED_FROM_GAME, i(20261)),	-- Shadow Panther Hide Belt
-				un(REMOVED_FROM_GAME, i(20259)),	-- Shadow Panther Hide Gloves
-				un(REMOVED_FROM_GAME, i(20258)),	-- Zulian Ceremonial Staff
-				un(REMOVED_FROM_GAME, i(19921)),	-- Zulian Hacker
-				un(REMOVED_FROM_GAME, i(19708)),	-- Blue Hakkari Bijou
-				un(REMOVED_FROM_GAME, i(19713)),	-- Bronze Hakkari Bijou
-				un(REMOVED_FROM_GAME, i(19715)),	-- Gold Hakkari Bijou
-				un(REMOVED_FROM_GAME, i(19711)),	-- Green Hakkari Bijou
-				un(REMOVED_FROM_GAME, i(19710)),	-- Orange Hakkari Bijou
-				un(REMOVED_FROM_GAME, i(19712)),	-- Purple Hakkari Bijou
-				un(REMOVED_FROM_GAME, i(19707)),	-- Red Hakkari Bijou
-				un(REMOVED_FROM_GAME, i(19714)),	-- Silver Hakkari Bijou
-				un(REMOVED_FROM_GAME, i(19709)),	-- Yellow Hakkari Bijou
-				un(REMOVED_FROM_GAME, i(19706)),	-- Bloodscalp Coin
-				un(REMOVED_FROM_GAME, i(19701)),	-- Gurubashi Coin
-				un(REMOVED_FROM_GAME, i(19700)),	-- Hakkari Coin
-				un(REMOVED_FROM_GAME, i(19699)),	-- Razzashi Coin
-				un(REMOVED_FROM_GAME, i(19704)),	-- Sandfury Coin
-				un(REMOVED_FROM_GAME, i(19705)),	-- Skullsplitter Coin
-				un(REMOVED_FROM_GAME, i(19702)),	-- Vilebranch Coin
-				un(REMOVED_FROM_GAME, i(19703)),	-- Witherbark Coin
-				un(REMOVED_FROM_GAME, i(19698)),	-- Zulian Coin
-				{
-					["itemID"] = 19821,	-- Punctured Voodoo Doll [Druid]
-					["u"] = REMOVED_FROM_GAME,
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(19955)),	-- Wushoolay's Charm of Nature [Druid]
-					},
-				},
-				{
-					["itemID"] = 19814,	-- Punctured Voodoo Doll [Rogue]
-					["u"] = REMOVED_FROM_GAME,
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(19954)),	-- Renataki's Charm of Trickery [Rogue]
-					},
-				},
-				{
-					["itemID"] = 19816,	-- Punctured Voodoo Doll [Hunter]
-					["u"] = REMOVED_FROM_GAME,
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(19953)),	-- Renataki's Charm of Beasts [Hunter]
-					},
-				},
-				{
-					["itemID"] = 19819,	-- Punctured Voodoo Doll [Warlock]
-					["u"] = REMOVED_FROM_GAME,
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(19957)),	-- Hazza'rah's Charm of Destruction [Warlock]
-					},
-				},
-				{
-					["itemID"] = 19813,	-- Punctured Voodoo Doll [Warrior]
-					["u"] = REMOVED_FROM_GAME,
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(19951)),	-- Gri'lek's Charm of Might [Warrior]
-					},
-				},
-				{
-					["itemID"] = 19818,	-- Punctured Voodoo Doll [Mage]
-					["u"] = REMOVED_FROM_GAME,
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(19959)),	-- Hazza'rah's Charm of Magic [Mage]
-					},
-				},
-				{
-					["itemID"] = 19820,	-- Punctured Voodoo Doll [Priest]
-					["u"] = REMOVED_FROM_GAME,
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(19958)),	-- Hazza'rah's Charm of Healing [Priest]
-					},
-				},
-				{
-					["itemID"] = 19815,	-- Punctured Voodoo Doll [Paladin]
-					["u"] = REMOVED_FROM_GAME,
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(19952)),	-- Gri'lek's Charm of Valor [Paladin]
-					},
-				},
-				{
-					["itemID"] = 19817,	-- Punctured Voodoo Doll [Shaman]
-					["u"] = REMOVED_FROM_GAME,
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(19956)),	-- Wushoolay's Charm of Spirits [Shaman]
-					},
-				},
-			}),
 			prof(HERBALISM, {
 				["cost"] = {
 					{ "i", 19727, 1 },	-- Blood Scythe
 				},
-				["g"] = {
-					i(19726, {	-- Bloodvine
-						["u"] = REMOVED_FROM_GAME,
-					}),
+				["groups"] = {
+					i(19726),	-- Bloodvine
 				},
 			}),
 			prof(MINING, {
-				i(19774, {	-- Souldarite
-					["u"] = REMOVED_FROM_GAME,
-				}),
+				i(19774),	-- Souldarite
 			}),
 			prof(SKINNING, {
 				i(19768, {	-- Primal Tiger Leather
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11361,	-- Zulian Tiger
 						15067,	-- Zulian Stalker
@@ -1427,62 +1273,172 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				i(19767, {	-- Primal Bat Leather
-					["u"] = REMOVED_FROM_GAME,
 					["cr"] = 11368,	-- Bloodseeker Bat
 				}),
 			}),
-			un(REMOVED_FROM_GAME, n(14517, {	-- High Priestess Jeklik
-				un(REMOVED_FROM_GAME, i(19928)),	-- Animist's Spaulders
-				un(REMOVED_FROM_GAME, i(19918)),	-- Jeklik's Crusher
-				un(REMOVED_FROM_GAME, i(19923)),	-- Jeklik's Opaline Talisman
-				un(REMOVED_FROM_GAME, i(20265)),	-- Peacekeeper Boots
-				un(REMOVED_FROM_GAME, i(19920)),	-- Primalist's Band
-				un(REMOVED_FROM_GAME, i(20262)),	-- Seafury Boots
-				un(REMOVED_FROM_GAME, i(19915)),	-- Zulian Defender
-				un(REMOVED_FROM_GAME, i(19767)),	-- Primal Bat Leather
-			})),
-			un(REMOVED_FROM_GAME, n(14507, {	-- High Priest Venoxis
-				{
-					["itemID"] = 22216,	-- Venoxis's Venom Sac
-					["questID"] = 9023,	-- The Perfect Poison
-					["u"] = REMOVED_FROM_GAME,
+			o(180229, {	-- Jinxed Hoodoo Pile
+				["description"] = "These can randomly mind control a nearby player. Be careful.\n\nAlso don't kill them! (Looking at you, Diz!)",
+				["groups"] = {
+					i(19727, {	-- Blood Scythe
+						["requireSkill"] = SKINNING,
+					}),
+					{
+						["itemID"] = 19821,	-- Punctured Voodoo Doll [Druid]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19955),	-- Wushoolay's Charm of Nature [Druid]
+						},
+					},
+					{
+						["itemID"] = 19814,	-- Punctured Voodoo Doll [Rogue]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19954),	-- Renataki's Charm of Trickery [Rogue]
+						},
+					},
+					{
+						["itemID"] = 19816,	-- Punctured Voodoo Doll [Hunter]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19953),	-- Renataki's Charm of Beasts [Hunter]
+						},
+					},
+					{
+						["itemID"] = 19819,	-- Punctured Voodoo Doll [Warlock]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19957),	-- Hazza'rah's Charm of Destruction [Warlock]
+						},
+					},
+					{
+						["itemID"] = 19813,	-- Punctured Voodoo Doll [Warrior]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19951),	-- Gri'lek's Charm of Might [Warrior]
+						},
+					},
+					{
+						["itemID"] = 19818,	-- Punctured Voodoo Doll [Mage]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19959),	-- Hazza'rah's Charm of Magic [Mage]
+						},
+					},
+					{
+						["itemID"] = 19820,	-- Punctured Voodoo Doll [Priest]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19958),	-- Hazza'rah's Charm of Healing [Priest]
+						},
+					},
+					{
+						["itemID"] = 19815,	-- Punctured Voodoo Doll [Paladin]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19952),	-- Gri'lek's Charm of Valor [Paladin]
+						},
+					},
+					{
+						["itemID"] = 19817,	-- Punctured Voodoo Doll [Shaman]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19956),	-- Wushoolay's Charm of Spirits [Shaman]
+						},
+					},
 				},
-				un(REMOVED_FROM_GAME, i(19906)),	-- Blooddrenched Footpads
-				un(REMOVED_FROM_GAME, i(19903)),	-- Fang of Venoxis
-				un(REMOVED_FROM_GAME, i(19904)),	-- Runed Bloodstained Hauberk
-				un(REMOVED_FROM_GAME, i(19905)),	-- Zanzil's Band
-				un(REMOVED_FROM_GAME, i(19900)),	-- Zulian Stone Axe
-				un(REMOVED_FROM_GAME, i(19907)),	-- Zulian Tigerhide Cloak
-			})),
-			un(REMOVED_FROM_GAME, n(14510, {	-- High Priestess Mar'li
-				un(REMOVED_FROM_GAME, i(19925)),	-- Band of Jin
-				un(REMOVED_FROM_GAME, i(19919)),	-- Bloodstained Greaves
-				un(REMOVED_FROM_GAME, i(20032)),	-- Flowing Ritual Robes
-				un(REMOVED_FROM_GAME, i(19930)),	-- Mar'li's Eye
-				un(REMOVED_FROM_GAME, i(19927)),	-- Mar'li's Touch
-				un(REMOVED_FROM_GAME, i(19871)),	-- Talisman of Protection
-			})),
-			un(REMOVED_FROM_GAME, n(11382, {	-- Bloodlord Mandokir
-				un(9, i(19872)),	-- Swift Razzashi Raptor
-				un(REMOVED_FROM_GAME, i(19877)),	-- Animist's Leggings
-				un(REMOVED_FROM_GAME, i(19869)),	-- Blooddrenched Grips
-				un(REMOVED_FROM_GAME, i(19867)),	-- Bloodlord's Defender
-				un(REMOVED_FROM_GAME, i(19878)),	-- Bloodsoaked Pauldrons
-				un(REMOVED_FROM_GAME, i(19895)),	-- Bloodtinged Kilt
-				un(REMOVED_FROM_GAME, i(19870)),	-- Hakkari Loa Cloak
-				un(REMOVED_FROM_GAME, i(19874)),	-- Halberd of Smiting
-				un(REMOVED_FROM_GAME, i(20038)),	-- Mandokir's Sting
-				un(REMOVED_FROM_GAME, i(19873)),	-- Overlord's Crimson Band
-				un(REMOVED_FROM_GAME, i(19863)),	-- Primalist's Seal
-				un(REMOVED_FROM_GAME, i(19866)),	-- Warblade of the Hakkari [Offhand]
-				un(REMOVED_FROM_GAME, i(19893)),	-- Zanzil's Seal
-				un(REMOVED_FROM_GAME, i(22637)),	-- Primal Hakkari Idol
-			})),
+			}),
+			n(14517, {	-- High Priestess Jeklik
+				i(19918),	-- Jeklik's Crusher
+				i(19915),	-- Zulian Defender
+				i(19923),	-- Jeklik's Opaline Talisman
+				i(19928),	-- Animist's Spaulders
+				i(20265),	-- Peacekeeper Boots
+				i(20262),	-- Seafury Boots
+				i(19920),	-- Primalist's Band
+			}),
+			n(14507, {	-- High Priest Venoxis
+				applyclassicphase(PHASE_FIVE, i(22216)),	-- Venoxis's Venom Sac
+				i(19903),	-- Fang of Venoxis
+				i(19900),	-- Zulian Stone Axe
+				i(19907),	-- Zulian Tigerhide Cloak
+				i(19904),	-- Runed Bloodstained Hauberk
+				i(19906),	-- Blooddrenched Footpads
+				i(19905),	-- Zanzil's Band
+			}),
+			n(14510, {	-- High Priestess Mar'li
+				i(19927),	-- Mar'li's Touch
+				i(20032),	-- Flowing Ritual Robes
+				i(19919),	-- Bloodstained Greaves
+				i(19925),	-- Band of Jin
+				i(19930),	-- Mar'li's Eye
+				i(19871),	-- Talisman of Protection
+			}),
+			n(11382, {	-- Bloodlord Mandokir
+				i(19872),	-- Swift Razzashi Raptor
+				i(19867),	-- Bloodlord's Defender
+				i(19874),	-- Halberd of Smiting
+				i(20038),	-- Mandokir's Sting
+				i(19866),	-- Warblade of the Hakkari [Offhand]
+				i(19870),	-- Hakkari Loa Cloak
+				i(19878),	-- Bloodsoaked Pauldrons
+				i(19869),	-- Blooddrenched Grips
+				i(19877),	-- Animist's Leggings
+				i(19895),	-- Bloodtinged Kilt
+				i(19873),	-- Overlord's Crimson Band
+				i(19863),	-- Primalist's Seal
+				i(19893),	-- Zanzil's Seal
+				i(22637),	-- Primal Hakkari Idol
+			}),
 			o(180368, {	-- Tablet of Madness
 				["description"] = "Alchemists with 300 skill can interact with the Tablet of Madness to learn the recipe.",
 				["requireSkill"] = ALCHEMY,
-				["g"] = {
-					un(REMOVED_FROM_GAME, recipe(24266)),	-- Gurubashi Mojo Madness
+				["groups"] = {
+					recipe(24266),	-- Gurubashi Mojo Madness
 				},
 			}),
 			o(180327, {	-- Brazier of Madness
@@ -1490,116 +1446,105 @@ _.Instances = { tier(CLASSIC_TIER, {
 				["cost"] = {
 					{ "i", 19931, 1 },	-- Gurubashi Mojo Madness
 				},
-				["g"] = {
-					un(REMOVED_FROM_GAME, n(15082, {	-- Gri'lek
-						un(REMOVED_FROM_GAME, i(19939)),	-- Gri'lek's Blood
-						un(REMOVED_FROM_GAME, i(19961)),	-- Gri'lek's Grinder
-						un(REMOVED_FROM_GAME, i(19962)),	-- Gri'lek Carver
-					})),
-					un(REMOVED_FROM_GAME, n(15083, {	-- Hazza'rah
-						un(REMOVED_FROM_GAME, i(19942)),	-- Hazza'rah's Dream Thread
-						un(REMOVED_FROM_GAME, i(19967)),	-- Thoughtblighter
-						un(REMOVED_FROM_GAME, i(19968)),	-- Fiery Retributer
-					})),
-					un(REMOVED_FROM_GAME, n(15084, {	-- Renataki
-						un(REMOVED_FROM_GAME, i(19940)),	-- Renataki's Tooth
-						un(REMOVED_FROM_GAME, i(19963)),	-- Pitchfork of Madness
-						un(REMOVED_FROM_GAME, i(19964)),	-- Renataki's Soul Conduit
-					})),
-					un(REMOVED_FROM_GAME, n(15085, {	-- Wushoolay
-						un(REMOVED_FROM_GAME, i(19941)),	-- Wushoolay's Mane
-						un(REMOVED_FROM_GAME, i(19965)),	-- Wushoolay's Poker
-						un(REMOVED_FROM_GAME, i(19993)),	-- Hoodoo Hunting Bow
-					})),
+				["groups"] = {
+					n(15082, {	-- Gri'lek
+						i(19939),	-- Gri'lek's Blood
+						i(19961),	-- Gri'lek's Grinder
+						i(19962),	-- Gri'lek Carver
+					}),
+					n(15083, {	-- Hazza'rah
+						i(19942),	-- Hazza'rah's Dream Thread
+						i(19967),	-- Thoughtblighter
+						i(19968),	-- Fiery Retributer
+					}),
+					n(15084, {	-- Renataki
+						i(19940),	-- Renataki's Tooth
+						i(19963),	-- Pitchfork of Madness
+						i(19964),	-- Renataki's Soul Conduit
+					}),
+					n(15085, {	-- Wushoolay
+						i(19941),	-- Wushoolay's Mane
+						i(19965),	-- Wushoolay's Poker
+						i(19993),	-- Hoodoo Hunting Bow
+					}),
 				},
 			}),
-			un(REMOVED_FROM_GAME, n(14509, {	-- High Priest Thekal
-				un(9, i(19902)),	-- Swift Zulian Tiger
-				un(REMOVED_FROM_GAME, i(19897)),	-- Betrayer's Boots
-				un(REMOVED_FROM_GAME, i(20266)),	-- Peacekeeper Leggings
-				un(REMOVED_FROM_GAME, i(19899)),	-- Ritualistic Legguards
-				un(REMOVED_FROM_GAME, i(20260)),	-- Seafury Leggings
-				un(REMOVED_FROM_GAME, i(19898)),	-- Seal of Jin
-				un(REMOVED_FROM_GAME, i(19896)),	-- Thekal's Grasp
-				un(REMOVED_FROM_GAME, i(19901)),	-- Zulian Slicer
-				un(REMOVED_FROM_GAME, i(19768)),	-- Primal Tiger Leather
-			})),
+			n(14509, {	-- High Priest Thekal
+				i(19902),	-- Swift Zulian Tiger
+				i(19896),	-- Thekal's Grasp
+				i(19901),	-- Zulian Slicer
+				i(20266),	-- Peacekeeper Leggings
+				i(19899),	-- Ritualistic Legguards
+				i(20260),	-- Seafury Leggings
+				i(19897),	-- Betrayer's Boots
+				i(19898),	-- Seal of Jin
+			}),
 			o(180366, {	-- Battered Tackle Box
 				["description"] = "Fishermen with 300 skill can interact with this to receive the quest item.",
 				["requireSkill"] = FISHING,
-				["g"] = {
+				["groups"] = {
 					q(8227, {	-- Nat's Measuring Tape
-						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "i", 19973 },	-- Nat's Measuring Tape
 						["requireSkill"] = FISHING,
 						["lvl"] = 58,
 					}),
 				},
 			}),
-			un(REMOVED_FROM_GAME, n(15114, {	-- Gahz'ranka
+			n(15114, {	-- Gahz'ranka
 				["sourceQuest"] = 8227,	-- Nat's Measuring Tape
 				["description"] = "You can fish up Zulian Mudskunk from the Muddy Churning Waters in the instance and the lures can be purchased from Nat Pagle once you have turned in Nat's Measuring Tape.",
 				["cost"] = {
 					{ "i", 19974, 1 },	-- Mudskunk Lure
 					{ "i", 19975, 5 },	-- Zulian Mudskunk
 				},
-				["g"] = {
-					un(REMOVED_FROM_GAME, i(19945)),	-- Lizardscale Eyepatch
-					un(REMOVED_FROM_GAME, i(19947)),	-- Nat Pagle's Broken Reel
-					un(REMOVED_FROM_GAME, i(19944)),	-- Nat Pagle's Fish Terminator
-					un(REMOVED_FROM_GAME, i(19946)),	-- Tigule's Harpoon
-					{
-						-- This is obtainable in retail (fishing in cataclysm pools)
-						["itemID"] = 22739,	-- Tome of Polymorph: Turtle
-						["recipeID"] = 28271,	-- Polymorph (Turtle)
-						["classes"] = { MAGE },
-					}
+				["groups"] = {
+					i(19944),	-- Nat Pagle's Fish Terminator
+					i(19946),	-- Tigule's Harpoon
+					i(19945),	-- Foror's Eyepatch
+					i(19947),	-- Nat Pagle's Broken Reel
+					i(22739),	-- Tome of Polymorph: Turtle
 				},
-			})),
-			un(REMOVED_FROM_GAME, n(14515, {	-- High Priestess Arlokk
-				un(REMOVED_FROM_GAME, i(19910)),	-- Arlokk's Grasp
-				un(REMOVED_FROM_GAME, i(19922)),	-- Arlokk's Hoodoo Stick
-				un(REMOVED_FROM_GAME, i(19913)),	-- Bloodsoaked Greaves
-				un(REMOVED_FROM_GAME, i(19912)),	-- Overlord's Onyx Band
-				un(REMOVED_FROM_GAME, i(19909)),	-- Will of Arlokk
-				un(REMOVED_FROM_GAME, i(19914)),	-- Panther Hide Sack
-			})),
-			un(REMOVED_FROM_GAME, n(11380, {	-- Jin'do the Hexxer
-				un(REMOVED_FROM_GAME, i(19892)),	-- Animist's Boots
-				un(REMOVED_FROM_GAME, i(19889)),	-- Blooddrenched Leggings
-				un(REMOVED_FROM_GAME, i(19894)),	-- Bloodsoaked Gauntlets
-				un(REMOVED_FROM_GAME, i(19875)),	-- Bloodstained Coif
-				un(REMOVED_FROM_GAME, i(19887)),	-- Bloodstained Legplates
-				un(REMOVED_FROM_GAME, i(19929)),	-- Bloodtinged Gloves
-				un(REMOVED_FROM_GAME, i(19891)),	-- Jin'do's Bag of Whammies
-				un(REMOVED_FROM_GAME, i(19885)),	-- Jin'do's Evil Eye
-				un(REMOVED_FROM_GAME, i(19890)),	-- Jin'do's Hexxer
-				un(REMOVED_FROM_GAME, i(19884)),	-- Jin'do's Judgement
-				un(REMOVED_FROM_GAME, i(19888)),	-- Overlord's Embrace
-				un(REMOVED_FROM_GAME, i(19886)),	-- The Hexxer's Cover
-				un(REMOVED_FROM_GAME, i(22637)),	-- Primal Hakkari Idol
-			})),
-			un(REMOVED_FROM_GAME, n(14834, {	-- Hakkar the Soulflayer
-				{
-					["itemID"] = 19802,	-- Heart of Hakkar
-					["u"] = REMOVED_FROM_GAME,
-					["questID"] = 8183,	-- The Heart of Hakkar
-				},
-				un(REMOVED_FROM_GAME, i(19862)),	-- Aegis of the Blood God
-				un(REMOVED_FROM_GAME, i(19852)),	-- Ancient Hakkari Manslayer
-				un(REMOVED_FROM_GAME, i(19864)),	-- Bloodcaller
-				un(REMOVED_FROM_GAME, i(19859)),	-- Fang of the Faceless
-				un(REMOVED_FROM_GAME, i(19853)),	-- Gurubashi Dwarf Destroyer
-				un(REMOVED_FROM_GAME, i(19861)),	-- Touch of Chaos
-				un(REMOVED_FROM_GAME, i(19865)),	-- Warblade of the Hakkari [Main Hand]
-				un(REMOVED_FROM_GAME, i(19854)),	-- Zin'rokh, Destroyer of Worlds
-				un(REMOVED_FROM_GAME, i(19876)),	-- Soul Corrupter's Necklace
-				un(REMOVED_FROM_GAME, i(19856)),	-- The Eye of Hakkar
-				un(REMOVED_FROM_GAME, i(19857)),	-- Cloak of Consumption
-				un(REMOVED_FROM_GAME, i(20264)),	-- Peacekeeper Gauntlets
-				un(REMOVED_FROM_GAME, i(20257)),	-- Seafury Gauntlets
-				un(REMOVED_FROM_GAME, i(19855)),	-- Bloodsoaked Legplates
-			})),
+			}),
+			n(14515, {	-- High Priestess Arlokk
+				i(19914),	-- Panther Hide Sack
+				i(19910),	-- Arlokk's Grasp
+				i(19909),	-- Will of Arlokk
+				i(19922),	-- Arlokk's Hoodoo Stick
+				i(19913),	-- Bloodsoaked Greaves
+				i(19912),	-- Overlord's Onyx Band
+			}),
+			n(11380, {	-- Jin'do the Hexxer
+				i(19891),	-- Jin'do's Bag of Whammies
+				i(19890),	-- Jin'do's Hexxer
+				i(19884),	-- Jin'do's Judgement
+				i(19886),	-- The Hexxer's Cover
+				i(19885),	-- Jin'do's Evil Eye
+				i(19888),	-- Overlord's Embrace
+				i(19889),	-- Blooddrenched Leggings
+				i(19875),	-- Bloodstained Coif
+				i(19894),	-- Bloodsoaked Gauntlets
+				i(19929),	-- Bloodtinged Gloves
+				i(19887),	-- Bloodstained Legplates
+				i(19892),	-- Animist's Boots
+				i(22637),	-- Primal Hakkari Idol
+			}),
+			n(14834, {	-- Hakkar the Soulflayer
+				i(19802),	-- Heart of Hakkar
+				i(19862),	-- Aegis of the Blood God
+				i(19852),	-- Ancient Hakkari Manslayer
+				i(19864),	-- Bloodcaller
+				i(19859),	-- Fang of the Faceless
+				i(19853),	-- Gurubashi Dwarf Destroyer
+				i(19861),	-- Touch of Chaos
+				i(19865),	-- Warblade of the Hakkari [Main Hand]
+				i(19854),	-- Zin'rokh, Destroyer of Worlds
+				i(19876),	-- Soul Corrupter's Necklace
+				i(19856),	-- The Eye of Hakkar
+				i(19857),	-- Cloak of Consumption
+				i(20264),	-- Peacekeeper Gauntlets
+				i(20257),	-- Seafury Gauntlets
+				i(19855),	-- Bloodsoaked Legplates
+			}),
 		},
 	}),
-})};
+}))};

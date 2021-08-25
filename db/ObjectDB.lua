@@ -106,6 +106,7 @@ select(2, ...).ObjectNames = {
 	[179697] = "Arena Treasure Chest",
 	[179827] = "Wanted/Missing/Lost & Found",
 	[179832] = "Pillaclencher's Ornate Pillow",
+	[180229] = "Jinxed Hoodoo Pile",
 	[180327] = "Brazier of Madness",
 	[180366] = "Battered Tackle Box",
 	[180368] = "Tablet of Madness",
