@@ -720,7 +720,7 @@ _.ExpansionFeatures =
 					}),
 					q(59824, {	-- Loa Rescue
 						["sourceQuests"] = { 59822 },	-- Tracking a Wild God
-						["provider"] = { "n", 171828 },	-- Spirit of Vol'jin
+						["provider"] = { "n", 171806 },	-- Spirit of Vol'jin
 						["coord"] = { 41.0, 64.2, THE_MAW },
 					}),
 					q(59856, {	-- Rezan, Loa of Kings
