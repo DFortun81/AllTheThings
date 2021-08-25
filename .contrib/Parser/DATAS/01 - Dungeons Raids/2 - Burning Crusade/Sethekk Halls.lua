@@ -44,18 +44,19 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(65, 15, 65),
 				}),
-				q(11011, {	-- Eternal Vigilance
+				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(11011, {	-- Eternal Vigilance
 					["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					["sourceQuest"] = 11001,	-- Vanquish the Raven God
 					["coord"] = { 80.2, 65.2, ZANGARMARSH },
 					["timeline"] = { "removed 4.0.1" },
 					["maps"] = { ZANGARMARSH },
 					["classes"] = { DRUID },
+					["repeatable"] = true,
 					["lvl"] = lvlsquish(70, 30, 70),
 					["groups"] = {
 						i(32449),	-- Essence-Infused Moonstone
 					},
-				}),
+				})),
 				q(29607, {	-- Eyes of Desire
 					["qg"] = 54847,	-- Dealer Vijaad
 					["description"] = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
