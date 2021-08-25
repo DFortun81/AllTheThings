@@ -459,6 +459,9 @@ namespace ATT
                     case "isOffHand":
                     case "factionID":
                     case "mountID":
+#if ANYCLASSIC
+                    case "petTypeID":
+#endif
                     case "speciesID":
                     case "spellID":
                     case "objectiveID":
@@ -661,6 +664,9 @@ namespace ATT
                     case "musicRollID":
                     case "illusionID":
                     case "recipeID":
+#if ANYCLASSIC
+                    case "petTypeID":
+#endif
                     case "speciesID":
                     case "spellID":
                     case "factionID":
