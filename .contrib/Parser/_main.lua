@@ -988,18 +988,23 @@ azeriteEssence = az;									-- Create a AZERITE ESSENCE Object. (alternative sh
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
 	return struct("speciesID", id, t);
 end
+pet = battlepet;										-- Create a BATTLE PET Object (alternative shortcut)
+p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)
+battlepetability = function(id, t)						-- Create a BATTLE PET ABILITY Object
+	return struct("petAbilityID", id, t);
+end
+bpa = battlepetability;									-- Create a BATTLE PET ABILITY Object (alternative shortcut)
+pa = battlepetability;									-- Create a BATTLE PET ABILITY Object (alternative shortcut)
+battlepettype = function(id, t)							-- Create a BATTLE PET TYPE Object
+	return struct("petTypeID", id, t);
+end
+bpt = battlepettype;									-- Create a BATTLE PET TYPE Object (alternative shortcut)
 cat = function(id, t)									-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
 category = function(id, t)								-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
-p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)
-pet = p;												-- Create a BATTLE PET Object (alternative shortcut)
-battlepetability = function(id, t)						-- Create a BATTLE PET ABILITY Object
-	return struct("petAbilityID", id, t);
-end
-pa = battlepetability;									-- Create a BATTLE PET ABILITY Object (alternative shortcut)
 cl = function(id, t)									-- Create a CHARACTER CLASS Object
 	return struct("classID", id, t);
 end
