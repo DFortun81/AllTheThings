@@ -6465,6 +6465,140 @@ app.CreateAzeriteEssence = function(id, t)
 end
 end)();
 
+-- Battle Pet Lib
+(function()
+local CollectedSpeciesHelper = setmetatable({}, {
+	__index = function(t, key)
+		if C_PetJournal.GetNumCollectedInfo(key) > 0 then
+			rawset(t, key, 1);
+			return 1;
+		end
+	end
+});
+local fields = {
+	["key"] = function(t)
+		return "speciesID";
+	end,
+	["filterID"] = function(t)
+		return 101;
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleBattlePets;
+	end,
+	["collected"] = function(t)
+		if CollectedSpeciesHelper[t.speciesID] then
+			return 1;
+		end
+		local altSpeciesID = t.altSpeciesID;
+		if altSpeciesID and CollectedSpeciesHelper[altSpeciesID]then
+			return 2;
+		end
+	end,
+	["text"] = function(t)
+		return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
+	end,
+	["icon"] = function(t)
+		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["description"] = function(t)
+		return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["displayID"] = function(t)
+		return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["name"] = function(t)
+		return select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
+	end,
+	["link"] = function(t)
+		if t.itemID then
+			local link = select(2, GetItemInfo(t.itemID));
+			if link then
+				t.link = link;
+				return link;
+			end
+		end
+	end,
+	["tsm"] = function(t)
+		return string.format("p:%d:1:3", t.speciesID);
+	end,
+};
+app.BaseSpecies = app.BaseObjectFields(fields);
+app.CreateSpecies = function(id, t)
+	return setmetatable(constructor(id, t, "speciesID"), app.BaseSpecies);
+end
+
+app.events.NEW_PET_ADDED = function(petID)
+	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
+	-- print("NEW_PET_ADDED", petID, speciesID);
+	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) > 0 and not rawget(CollectedSpeciesHelper, speciesID) then
+		-- print("not already learned pet")
+		rawset(CollectedSpeciesHelper, speciesID, 1);
+		UpdateSearchResults(SearchForField("speciesID", speciesID));
+		app:PlayFanfare();
+		app:TakeScreenShot();
+		wipe(searchCache);
+	end
+end
+app.events.PET_JOURNAL_PET_DELETED = function(petID)
+	-- /dump C_PetJournal.GetPetInfoByPetID("BattlePet-0-00001006503D")
+	-- local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
+	-- NOTE: Above APIs do not work in the DELETED API, THANKS BLIZZARD
+	-- print("PET_JOURNAL_PET_DELETED", petID,C_PetJournal.GetPetInfoByPetID(petID));
+
+	-- Check against all of the collected species for a species that is no longer 1/X
+	local atLeastOne = false;
+	for speciesID,collected in pairs(CollectedSpeciesHelper) do
+		if C_PetJournal.GetNumCollectedInfo(speciesID) < 1 then
+			rawset(CollectedSpeciesHelper, speciesID, nil);
+			atLeastOne = true;
+		end
+	end
+	if atLeastOne then
+		app:PlayRemoveSound();
+		app:RefreshData(false, true);
+		-- wipe(searchCache); -- handled by refresh data
+	end
+end
+
+local fields = {
+	["key"] = function(t)
+		return "petAbilityID";
+	end,
+	["text"] = function(t)
+		return select(2, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
+	end,
+	["icon"] = function(t)
+		return select(3, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
+	end,
+	["description"] = function(t)
+		return select(5, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
+	end,
+};
+app.BasePetAbility = app.BaseObjectFields(fields);
+app.CreatePetAbility = function(id, t)
+	return setmetatable(constructor(id, t, "petAbilityID"), app.BasePetAbility);
+end
+
+local fields = {
+	["key"] = function(t)
+		return "petTypeID";
+	end,
+	["text"] = function(t)
+		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
+	end,
+	["icon"] = function(t)
+		return "Interface\\Icons\\Icon_PetFamily_"..PET_TYPE_SUFFIX[t.petTypeID];
+	end,
+	["filterID"] = function(t)
+		return 101;
+	end,
+};
+app.BasePetType = app.BaseObjectFields(fields);
+app.CreatePetType = function(id, t)
+	return setmetatable(constructor(id, t, "petTypeID"), app.BasePetType);
+end
+end)();
+
 -- Category Lib
 (function()
 local fields = {
@@ -9698,47 +9832,6 @@ app.CreateObject = function(id, t)
 end
 end)();
 
--- Pet Lib
-(function()
-local fields = {
-	["key"] = function(t)
-		return "petAbilityID";
-	end,
-	["text"] = function(t)
-		return select(2, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
-	end,
-	["icon"] = function(t)
-		return select(3, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
-	end,
-	["description"] = function(t)
-		return select(5, C_PetBattles.GetAbilityInfoByID(t.petAbilityID));
-	end,
-};
-app.BasePetAbility = app.BaseObjectFields(fields);
-app.CreatePetAbility = function(id, t)
-	return setmetatable(constructor(id, t, "petAbilityID"), app.BasePetAbility);
-end
-
-local fields = {
-	["key"] = function(t)
-		return "petTypeID";
-	end,
-	["text"] = function(t)
-		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
-	end,
-	["icon"] = function(t)
-		return "Interface\\Icons\\Icon_PetFamily_"..PET_TYPE_SUFFIX[t.petTypeID];
-	end,
-	["filterID"] = function(t)
-		return 101;
-	end,
-};
-app.BasePetType = app.BaseObjectFields(fields);
-app.CreatePetType = function(id, t)
-	return setmetatable(constructor(id, t, "petTypeID"), app.BasePetType);
-end
-end)();
-
 -- Profession Lib
 (function()
 app.SkillIDToSpellID = setmetatable({
@@ -10693,105 +10786,6 @@ local fields = {
 app.BaseSpell = app.BaseObjectFields(fields);
 app.CreateSpell = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
-end
-end)();
-
--- Species Lib
-(function()
-local meta = {
-	__index = function(t, key)
---		if C_PetJournal.GetNumCollectedInfo(key) == nil then
---			print("C_PetJournal.GetNumCollectedInfo returns nil on speciesID:", key);
-		if C_PetJournal.GetNumCollectedInfo(key) > 0 then
-			rawset(t, key, 1);
-			return 1;
-		end
-	end
-};
-local collectedSpecies = setmetatable({}, meta);
-local fields = {
-	["key"] = function(t)
-		return "speciesID";
-	end,
-	["filterID"] = function(t)
-		return 101;
-	end,
-	["collectible"] = function(t)
-		return app.CollectibleBattlePets;
-	end,
-	["collected"] = function(t)
-		if collectedSpecies[t.speciesID] then
-			return 1;
-		end
-		local altSpeciesID = t.altSpeciesID;
-		if altSpeciesID and collectedSpecies[altSpeciesID]then
-			return 2;
-		end
-	end,
-	["text"] = function(t)
-		return "|cff0070dd" .. (select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID)) or "???") .. "|r";
-	end,
-	["icon"] = function(t)
-		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-	end,
-	["description"] = function(t)
-		return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-	end,
-	["displayID"] = function(t)
-		return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-	end,
-	["name"] = function(t)
-		return select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
-	end,
-	["link"] = function(t)
-		if t.itemID then
-			local link = select(2, GetItemInfo(t.itemID));
-			if link then
-				t.link = link;
-				return link;
-			end
-		end
-	end,
-	["tsm"] = function(t)
-		return string.format("p:%d:1:3", t.speciesID);
-	end,
-};
-app.BaseSpecies = app.BaseObjectFields(fields);
-app.CreateSpecies = function(id, t)
-	return setmetatable(constructor(id, t, "speciesID"), app.BaseSpecies);
-end
-
-app.events.NEW_PET_ADDED = function(petID)
-	local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
-	-- print("NEW_PET_ADDED", petID, speciesID);
-	if speciesID and C_PetJournal.GetNumCollectedInfo(speciesID) > 0 and not rawget(collectedSpecies, speciesID) then
-		-- print("not already learned pet")
-		rawset(collectedSpecies, speciesID, 1);
-		UpdateSearchResults(SearchForField("speciesID", speciesID));
-		app:PlayFanfare();
-		app:TakeScreenShot();
-		wipe(searchCache);
-	end
-end
-app.events.PET_JOURNAL_PET_DELETED = function(petID)
-	-- /dump C_PetJournal.GetPetInfoByPetID("BattlePet-0-00001006503D")
-	-- local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
-	-- NOTE: Above APIs do not work in the DELETED API, THANKS BLIZZARD
-	-- print("PET_JOURNAL_PET_DELETED", petID,C_PetJournal.GetPetInfoByPetID(petID));
-
-	-- Check against all of the collected species for a species that is no longer 1/X
-	local atLeastOne = false;
-	for speciesID,collected in pairs(collectedSpecies) do
-		if C_PetJournal.GetNumCollectedInfo(speciesID) < 1 then
-			rawset(collectedSpecies, speciesID, nil);
-			atLeastOne = true;
-		end
-	end
-	if atLeastOne then
-		app:PlayRemoveSound();
-		app:RefreshData(false, true);
-		-- wipe(searchCache); -- handled by refresh data
-	end
 end
 end)();
 
