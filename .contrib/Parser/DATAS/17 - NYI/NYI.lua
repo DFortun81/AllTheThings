@@ -2998,30 +2998,18 @@ _.NeverImplemented =
 		i(122235),	-- Unknown
 		i(108640),	-- Unknown
 		i(166782),	-- Unknown
-		{
-			["itemID"] = 119179,	-- Iron Star Roller
-			["timeline"] = {
-				"created 6.0.1.18738",	-- Never Implemented
-			},
-		},
-		{
-			["itemID"] = 164371,	-- Yaungol Oil Stove
-			["timeline"] = {
-				"created 8.0.1.26871",	-- Never Implemented
-			},
-		},
-		{
-			["itemID"] = 164372,	-- Jinyu Light Globe
-			["timeline"] = {
-				"created 8.0.1.26871",	-- Never Implemented
-			},
-		},
-		{
-			["itemID"] = 164377,	-- Regenerating Banana Bunch
-			["timeline"] = {
-				"created 8.0.1.26871",	-- Never Implemented
-			},
-		},
+		i(119179, {	-- Iron Star Roller
+			["timeline"] = { "created 6.0.1.18738" },
+		}),
+		i(164371, {	-- Yaungol Oil Stove
+			["timeline"] = { "created 8.0.1.26871" },
+		}),
+		i(164372, {	-- Jinyu Light Globe
+			["timeline"] = { "created 8.0.1.26871" },
+		}),
+		i(164377, {	-- Regenerating Banana Bunch
+			["timeline"] = { "created 8.0.1.26871" },
+		}),
 	}),
 	n(-173, {	-- Timewalking
 		-- Possible TW Gear (not in journal)

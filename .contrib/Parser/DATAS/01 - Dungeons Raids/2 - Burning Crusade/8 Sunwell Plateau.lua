@@ -141,10 +141,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				["creatureID"] = 24882,
 				["groups"] = {
 					i(122113, {	-- Sunblade Rune of Activation (PET!)
-						["timeline"] = {
-							"created 6.1.0.19445",
-							"added 6.1.0.19445"
-						},
+						["timeline"] = { "added 6.1.0.19445" },
 					}),
 					i(34853, {	-- Belt of the Forgotten Conqueror
 						["classes"] = { PALADIN, PRIEST, WARLOCK },
@@ -190,10 +187,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				},
 				["groups"] = {
 					i(122115, {	-- Servant's Bell (PET!)
-						["timeline"] = {
-							"created 6.1.0.19445",
-							"added 6.1.0.19445"
-						},
+						["timeline"] = { "added 6.1.0.19445" },
 					}),
 					i(34853, {	-- Belt of the Forgotten Conqueror
 						["classes"] = { PALADIN, PRIEST, WARLOCK },
@@ -254,16 +248,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					i(175160, {	-- Holy Relic (Bag of Tricks addition)
 						["races"] = { VULPERA },
 						["questID"] = 59036,
-						["timeline"] = {
-							"created 8.3.0.33115",
-							"added 8.3.0.33115"
-						},
+						["timeline"] = { "added 8.3.0.33115" },
 					}),
 					i(122114, {	-- Void Collar (PET!)
-						["timeline"] = {
-							"created 6.1.0.19445",
-							"added 6.1.0.19445"
-						},
+						["timeline"] = { "added 6.1.0.19445" },
 					}),
 					i(34214),	-- Muramasa
 					i(34231),	-- Aegis of Angelic Fortune (MISSING IN ADVENTURE GUIDE)

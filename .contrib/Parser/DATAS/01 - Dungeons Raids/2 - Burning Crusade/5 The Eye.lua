@@ -136,10 +136,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				["creatureID"] = 19514,
 				["groups"] = {
 					i(97557, {	-- Brilliant Phoenix Hawk Feather (PET!)
-						["timeline"] = {
-							"created 5.3.0.16758",
-							"added 5.3.0.16758"
-						},
+						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(29949),	-- Arcanite Steam-Pistol
 					i(29948),	-- Claw of the Phoenix
@@ -164,10 +161,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				["creatureID"] = 19516,
 				["groups"] = {
 					i(97555, {	-- Tiny Fel Engine Key (PET!)
-						["timeline"] = {
-							"created 5.3.0.16758",
-							"added 5.3.0.16758"
-						},
+						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(30248, {	-- Pauldrons of the Vanquished Champion
 						["classes"] = { PALADIN, ROGUE, SHAMAN },
@@ -193,10 +187,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				["creatureID"] = 18805,
 				["groups"] = {
 					i(97556, {	-- Crystal of the Void (PET!)
-						["timeline"] = {
-							"created 5.3.0.16758",
-							"added 5.3.0.16758"
-						},
+						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(29981),	-- Ethereum Life-Staff
 					i(29962),	-- Heartrazor
