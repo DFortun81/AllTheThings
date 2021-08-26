@@ -1119,7 +1119,8 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Four Senses Brew",
-					["recipeID"] = 126654
+					["recipeID"] = 126654,
+					["itemID"] = 86393,	--	Tablet of Ren Yun
 				},
 				{
 					["name"] = "Ginseng Tea",

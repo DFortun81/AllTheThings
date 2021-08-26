@@ -16,9 +16,9 @@ _.ExpansionFeatures =
 						ach(9108),		-- Where You Go, They Will Follow (10)
 						ach(9107),		-- Follow the Leader (5)
 					}),
-					ach(9248,  {	-- Defender of Draenor (H)
+					pvp(ach(9248,  {	-- Defender of Draenor (H)
 						["races"] = HORDE_ONLY,
-					}),
+					})),
 					ach(9901,  {	-- Don't Call Me Junior (H)
 						["races"] = HORDE_ONLY,
 						["g"] = {

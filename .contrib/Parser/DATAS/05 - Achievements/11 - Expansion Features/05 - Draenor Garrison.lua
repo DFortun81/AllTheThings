@@ -98,12 +98,12 @@ _.Achievements =
 				ach(9108),	-- Where You Go, They Will Follow (10)
 				ach(9107),	-- Follow the Leader (5)
 			}),
-			ach(9630,  {	-- Defender of Draenor (A)
+			pvp(ach(9630,  {	-- Defender of Draenor (A)
 				["races"] = ALLIANCE_ONLY,
-			}),
-			ach(9248,  {	-- Defender of Draenor (H)
+			})),
+			pvp(ach(9248,  {	-- Defender of Draenor (H)
 				["races"] = HORDE_ONLY,
-			}),
+			})),
 			ach(9928,  {	-- Don't Call Me Junior (A)
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {

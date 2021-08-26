@@ -59,6 +59,7 @@ _.Zones =
 					["coord"] = { 70.4, 51.4, KUN_LAI_SUMMIT },
 					["g"] = {
 						i(184866, {	-- Grummlepouch
+							i(89587),	-- Porcupette
 							i(184867),	-- Squibbles (PET!)
 						}),
 					},

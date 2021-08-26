@@ -267,6 +267,7 @@ _.Instances = { tier(WOD_TIER, {
 							i(116251),	-- Ironshatter Legplates
 							i(116042),	-- Ram-Carrier's Treads
 							i(116317),	-- Storage House Key
+							i(122200),	-- Music Roll: A Siege of Worlds
 							un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
 						})),
 					},
