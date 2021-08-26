@@ -384,6 +384,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(1678, {	-- Vejrek
+					["provider"] = { "n", 6114 },	-- Muren Stormpike
+					["classes"] = { WARRIOR },
+					["coord"] = { 70.6, 90.4, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 			}),
 		}),
 	}),
