@@ -1287,7 +1287,9 @@ local MergeProperties = function(g, t, noReplace)
 			for k,v in pairs(t) do
 				-- certain keys should never transfer to the merge group directly
 				if k == "parent" then
-					rawset(g, "sourceParent", v);
+					if not rawget(g, "sourceParent") then
+						rawset(g, "sourceParent", v);
+					end
 				elseif k ~= "expanded" and
 					k ~= "indent" and
 					k ~= "modItemID" and
@@ -11107,17 +11109,10 @@ function app.FilterItemClass_RequireRacesCurrentFaction(item)
 	end
 end
 function app.FilterItemClass_SeasonalItem(item)
-   if item.u then
-	  if L["UNOBTAINABLE_ITEM_REASONS"][item.u] then
-			if L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] == 4 then
-				return GetDataSubMember("SeasonalFilters", item.u);
-			end
-		else
-			print("Invalid Unobtainable", item.key, item[item.key], item.text, item.u);
-		end
-   else
-	  return true
-   end
+	if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u] and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] == 4 then
+		return GetDataSubMember("SeasonalFilters", item.u);
+	end
+	return true;
 end
 function app.FilterItemClass_UnobtainableItem(item)
 	if item.u then
@@ -11126,7 +11121,7 @@ function app.FilterItemClass_UnobtainableItem(item)
 				return GetDataSubMember("UnobtainableItemFilters", item.u);
 			end
 		else
-			print("Invalid Unobtainable", item.u);
+			print("Invalid Unobtainable", item.key, item[item.key], item.text, item.u);
 		end
 	end
 	return true;
@@ -11697,54 +11692,59 @@ UpdateGroup = function(parent, group, window)
 
 	group.visible = nil;
 	-- if app.DEBUG_PRINT then print("UpdateGroup",group.key,group.key and group[group.key],group.__type) end
+	-- Determine if this user can enter the instance or acquire the item and item is equippable/usable
+	local valid;
+	-- A group with a source parent means it has a different 'real' heirarchy than in the current window
+	-- so need to verify filtering based on that instead of only itself
+	if group.sourceParent then
+		valid = app.RecursiveGroupRequirementsFilter(group);
+	else
+		valid = app.GroupRequirementsFilter(group) and app.GroupFilter(group);
+	end
 
-	-- Determine if this user can enter the instance or acquire the item.
-	if app.GroupRequirementsFilter(group) then
+	if valid then
 		-- if app.DEBUG_PRINT then print("UpdateGroup.GroupRequirementsFilter",group.key,group.key and group[group.key],group.__type) end
-		-- If the 'can equip' filter says true
-		if app.GroupFilter(group) then
-			-- if app.DEBUG_PRINT then print("UpdateGroup.GroupFilter",group.key,group.key and group[group.key],group.__type) end
-			-- Set total/progress for this object using it's cost information if any
-			group.total = group.costTotal or 0;
-			group.progress = group.total > 0 and group.costProgress or 0
+		-- if app.DEBUG_PRINT then print("UpdateGroup.GroupFilter",group.key,group.key and group[group.key],group.__type) end
+		-- Set total/progress for this object using it's cost information if any
+		group.total = group.costTotal or 0;
+		group.progress = group.total > 0 and group.costProgress or 0
 
-			-- if app.DEBUG_PRINT then print("UpdateGroup.Initial",group.key,group.key and group[group.key],group.progress,group.total,group.__type) end
+		-- if app.DEBUG_PRINT then print("UpdateGroup.Initial",group.key,group.key and group[group.key],group.progress,group.total,group.__type) end
 
-			-- If this item is collectible, then mark it as such.
-			if group.collectible then
-				-- An item is a special case where it may have both an appearance and a set of items
-				group.progress = group.progress + (group.collected and 1 or 0);
-				group.total = group.total + 1;
-				-- if app.DEBUG_PRINT then print("UpdateGroup.Collectible",group.progress,group.total,group.__type) end
-			end
-
-			-- Check if this is a group
-			if group.g then
-				-- if app.DEBUG_PRINT then print("UpdateGroup.g",group.progress,group.total,group.__type) end
-
-				-- skip Character filtering for sub-groups if this Item meets the Ignore BoE filter logic, since it can be moved to the designated character
-				if app.ItemBindFilter ~= app.NoFilter and app.ItemBindFilter(group) then
-					local oldItemBindFilter = app.ItemBindFilter;
-					app.ItemBindFilter = app.NoFilter;
-					-- Update the subgroups recursively...
-					UpdateGroups(group, group.g, window);
-					-- reapply the previous BoE filter
-					app.ItemBindFilter = oldItemBindFilter;
-				else
-					-- Update the subgroups recursively...
-					UpdateGroups(group, group.g, window);
-				end
-
-				-- if app.DEBUG_PRINT then print("UpdateGroup.g.Updated",group.progress,group.total,group.__type) end
-				SetGroupVisibility(parent, group);
-			else
-				SetThingVisibility(parent, group);
-			end
-
-			-- Increment the parent group's totals
-			parent.total = (parent.total or 0) + group.total;
-			parent.progress = (parent.progress or 0) + group.progress;
+		-- If this item is collectible, then mark it as such.
+		if group.collectible then
+			-- An item is a special case where it may have both an appearance and a set of items
+			group.progress = group.progress + (group.collected and 1 or 0);
+			group.total = group.total + 1;
+			-- if app.DEBUG_PRINT then print("UpdateGroup.Collectible",group.progress,group.total,group.__type) end
 		end
+
+		-- Check if this is a group
+		if group.g then
+			-- if app.DEBUG_PRINT then print("UpdateGroup.g",group.progress,group.total,group.__type) end
+
+			-- skip Character filtering for sub-groups if this Item meets the Ignore BoE filter logic, since it can be moved to the designated character
+			if app.ItemBindFilter ~= app.NoFilter and app.ItemBindFilter(group) then
+				local oldItemBindFilter = app.ItemBindFilter;
+				app.ItemBindFilter = app.NoFilter;
+				-- Update the subgroups recursively...
+				UpdateGroups(group, group.g, window);
+				-- reapply the previous BoE filter
+				app.ItemBindFilter = oldItemBindFilter;
+			else
+				-- Update the subgroups recursively...
+				UpdateGroups(group, group.g, window);
+			end
+
+			-- if app.DEBUG_PRINT then print("UpdateGroup.g.Updated",group.progress,group.total,group.__type) end
+			SetGroupVisibility(parent, group);
+		else
+			SetThingVisibility(parent, group);
+		end
+
+		-- Increment the parent group's totals
+		parent.total = (parent.total or 0) + group.total;
+		parent.progress = (parent.progress or 0) + group.progress;
 	end
 
 	-- if app.DEBUG_PRINT then print("UpdateGroup.Done",group.progress,group.total,group.visible,group.__type) end
