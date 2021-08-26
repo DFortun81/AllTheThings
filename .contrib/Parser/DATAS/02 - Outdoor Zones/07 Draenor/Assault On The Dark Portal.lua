@@ -22,11 +22,23 @@ _.Zones =
 					}),
 				}),
 				n(QUESTS, {
-					q(34478, {	-- A Potential Ally
-						["hordeQuestID"] = 34427,
+					q(34478, {	-- A Potential Ally (A)
 						["provider"] = { "n", 78560 },	-- Archmage Khadgar
 						["coord"] = { 73.0, 38.1, 577 },
 						["sourceQuest"] = 34425,	-- The Kargathar Proving Grounds
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(112440),	-- Slavebreaker Robes
+							i(112441),	-- Slavebreaker Tunic
+							i(112442),	-- Slavebreaker Chainmail
+							i(112443),	-- Slavebreaker Chestguard
+						},
+					}),
+					q(34427, {	-- A Potential Ally (H)
+						["provider"] = { "n", 78560 },	-- Archmage Khadgar
+						["coord"] = { 73.0, 38.1, 577 },
+						["sourceQuest"] = 34425,	-- The Kargathar Proving Grounds
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(112440),	-- Slavebreaker Robes
 							i(112441),	-- Slavebreaker Tunic

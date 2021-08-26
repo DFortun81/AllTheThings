@@ -230,6 +230,8 @@ _.Zones =
 _.HiddenQuestTriggers = {
 	q(56708),	-- Lesser Lithic Arcanocrystal Selection	-- Needs confirmation
 	q(55202),	-- Elemental Essence Amalgamator Selection	-- Needs confirmation
+	q(55198),	-- Small Water
+	q(56721),	-- Large Water
 	q(56428),	-- Summoned Arcane Amalgamation
 	q(55144),	-- Summoned Dusty Amalgamation
 	q(55205),	-- Summoned Moghiea
@@ -263,4 +265,5 @@ _.HiddenQuestTriggers = {
 	q(56726),	-- Killed Xue
 	q(56480),	-- Killed Zomera
 	q(56723),	-- Killed Zomera
+	q(56721),	-- Killed Osgen
 };

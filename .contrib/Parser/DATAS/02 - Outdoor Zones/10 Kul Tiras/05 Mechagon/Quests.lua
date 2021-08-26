@@ -1650,4 +1650,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 _.HiddenQuestTriggers = {
 	q(55480),	-- After charging very first Energy Cell during quest Your First Charge is Free!(56320)
 	q(56427),	-- Popped up when looting and accepting Cracked Numeric Cylinder for the Discs of Norgannon summoning function
+	q(56662),	-- Triggered when completed "Real Ultimate Power"
 };

@@ -6297,3 +6297,7 @@ neverimplemented(i(52165));	-- Perfect Mystic Alicite
 
 -- Apply the Never Implemented flag to the Never Implemented things.
 bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, _.NeverImplemented);
+
+_.HiddenQuestTriggers = {
+	q(55631),	-- Jewelcrafting Diode shrine. harvesting gems from them triggered this quest. Nazmir location
+};

@@ -131,6 +131,11 @@ _.Zones =
 					["coord"] = { 62.8, 27.9, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
 				}),
+				q(31288, {	-- Research Project: The Mogu Dynasties
+					["provider"] = { "n", 63984 },	-- Master Liu
+					["coord"] = { 83.6, 31.0, VALE_OF_ETERNAL_BLOSSOMS },
+					["isDaily"] = true,
+				}),
 				q(30261, {	-- Roll Club: Serpent's Spine
 					["coord"] = { 18.1, 63.5, VALE_OF_ETERNAL_BLOSSOMS },
 					["isDaily"] = true,

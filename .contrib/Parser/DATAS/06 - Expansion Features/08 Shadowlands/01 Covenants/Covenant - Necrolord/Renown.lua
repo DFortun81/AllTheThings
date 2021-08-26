@@ -84,7 +84,7 @@ _.HiddenQuestTriggers = {
 	q(64414),	-- hitting Renown 48 [Priest] (received Memory of Pallid Command)
 	-- q( ),	-- hitting Renown 48 [Rogue] (received Memory of ??)
 	q(64384),	-- hitting Renown 48 [Shaman] (received Memory of the Splintered Elementals)
-	-- q( ),	-- hitting Renown 48 [Warlock] (received Memory of ??)
+	q(64420),	-- hitting Renown 48 [Warlock] (received Memory of Shards of Annihilation)
 	-- q( ),	-- hitting Renown 48 [Warrior] (received Memory of ??)
 	q(64100),	-- hitting Renown 50
 	q(64446),	-- hitting Renown 52
