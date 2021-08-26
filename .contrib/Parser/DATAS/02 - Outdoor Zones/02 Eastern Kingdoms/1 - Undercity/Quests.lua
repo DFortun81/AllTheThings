@@ -518,6 +518,7 @@ _.Zones =
 					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.8, 91.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["timeline"] = { "removed 8.0.1.10000" },
 				}),
 				q(446,   {	-- Thule Ravenclaw
 					["provider"] = { "n", 1498 },	-- Bethor Iceshard

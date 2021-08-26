@@ -2648,6 +2648,8 @@ _.HiddenQuestTriggers = {
 			q(62525),	-- completed 'Relaxing' criteria for It's Certainly Never Boring
 			q(62526),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)
 			-- q(59689),	-- Completed at the end, was unlocking Generous Gift and Protective Braziers for the Court Favors achievement.
+			
+			--q(61918),	-- unflagged when doing restock quest (62078)
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

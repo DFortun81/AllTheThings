@@ -387,9 +387,11 @@ _.Zones =
 						9329,	-- The Forsaken (all others)
 					},
 					["coord"] = { 45.4, 32.4, GHOSTLANDS },
+					-- #if BEFORE BFA
 					["minReputation"] = { 922, FRIENDLY },	-- Tranquillien, Friendly.
-					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					-- #endif
+					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 1, 9),
 				}),
 				q(9328, {	-- Hero of the Sin'dorei [Blood Elf Only]
@@ -635,7 +637,9 @@ _.Zones =
 				q(9282, {	-- The Farstrider Enclave
 					["qg"] = 16239,	-- Magister Kaendris
 					["sourceQuest"] = 9151,	-- The Sanctum of the Sun
+					-- #if BEFORE BFA
 					["isBreadcrumb"] = true,
+					-- #endif
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 1, 15),

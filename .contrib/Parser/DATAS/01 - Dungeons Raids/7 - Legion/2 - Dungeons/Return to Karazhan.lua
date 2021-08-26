@@ -453,3 +453,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(45395),	-- Shade of Medivh Kill
+	q(45393),	-- Moroes cutscene
+	q(45394),	-- Maiden of Virtue Kill
+	q(45396),	-- Mana Devourer Kill
+};

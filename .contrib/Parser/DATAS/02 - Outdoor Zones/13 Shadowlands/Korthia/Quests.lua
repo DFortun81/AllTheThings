@@ -23,6 +23,7 @@ _.Zones =
 								i(184949),	-- Slippers of the Twilight Grove
 								i(184948),	-- Vestments of the Twilight Grove
 								i(184955),	-- Wraps of the Twilight Grove
+								i(182180),	-- Stag Soul (Night Fae) [unsure if from specific Quest (63935) or others as well]
 							},
 						}),
 						n(-939, {	-- Covenant: Kyrian
@@ -81,7 +82,6 @@ _.Zones =
 						}),
 						i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
 						i(186548),	-- Chompy (PET!)
-						i(182180),	-- Stag Soul (Night Fae) [unsure if from specific Quest (63935) or others as well]
 						i(187184),	-- Vesper of Clarity (TOY!)
 					},
 				}),

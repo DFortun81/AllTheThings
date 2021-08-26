@@ -355,7 +355,6 @@ _.HiddenQuestTriggers = {
 	q(63131),	-- Azaruux | Humility | Mikanikos
 	
 	-- HQTS PATH
-	q(61029),	-- Craven Corinth | Wisdom | Pelagos -- no charms, herald's footpads /Curse of Thirst
 	q(61026),	-- Mad Mortimer | Wisdom | Pelagos -- Vial of Serenity and no charms
 	q(61096),	-- Athanos | Wisdom | Kleia -- Vial of Serenity and no charms*
 	q(61025),	-- Halo of the Reverent?* May change with each other
@@ -367,6 +366,40 @@ _.HiddenQuestTriggers = {
 	q(63084),	-- Kelisthene | Humility | Pelagos -- the Footpads, 5 charms, both braziers
 	q(61028),	-- Splinterbark | Wisdom | Pelagos -- herald's footpads and no charms
 	q(61027),	-- Thran'tiok | Wisdom | Pelagos -- no charms and the Trident/ Death Foursworn!
+	
+	-- More HQTS Regarding PATH
+	q(61041),	-- Alderyn and Myn'ir| Humility | Kleia -- First Time no braziers, no charms,
+	q(64144),	-- Nuuminuuru | Humility | Pelagos -- First time  no braziers, no charms, on Humility, during the enrage
+	q(61040),	-- Looting chest after the encounter above (Reverent Bearer's Warboots)
+	q(61039),	-- Craven Corinth | Humility | -- First Time, without a soulbind (seesaw cheese), no braziers, no charms,
+	q(63146),	-- Looting chest after the encounter above (Reverent Bearer's gauntlets)
+	q(63139),	-- Echthra | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms
+	q(61042),	-- Looting chest after the encounter above (Reverent Bearer's Girdle)
+	q(63147),	-- Splinterbark | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms
+	q(61038),	-- Looting chest after the encounter above
+	q(63148),	-- Thran'tiok | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms
+	q(61037),	-- Looting chest after the encounter above
+	q(63149),	-- Mad Mortimer | Humility |  -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms
+	q(61036),	-- Looting chest after the encounter above
+	q(63150),	-- Athanos | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms
+	q(61035),	-- Looting chest after the encounter above
+	q(63151),	-- Azaruux | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms
+	q(61034),	-- Looting chest after the encounter above (Reverent Wings of the Ascension)
+	q(63086),	-- Alderyn and Myn'ir| Humility | Mikanikos
+	q(63089),	-- Echthra | Humility | Mikanikos
+	q(63088),	-- Nuuminuuru | Humility | Mikanikos
+	q(61032),	-- Echthra | Wisdom | Pelagos
+	q(61031),	-- Alderyn and Myn'ir| Wisdom | Pelagos
+	q(61030),	-- Nuuminuuru | Wisdom | Kleia
+	q(61029),	-- Craven Corinth | Wisdom | Pelagos
+	q(61015),	-- Athanos | Loyalty | Kleia
+	q(61014),	-- Azaruux | Loyalty | Pelagos
+	q(63074),	-- Kelisthene | Loyalty | Kleia
+	q(63096),	-- Athanos | Courage | Kleia
+	q(63082),	-- Thran'tiok | Loyalty | Pelagos
+	
+	q(61033),	-- Looted the chest after defeating Kalisthene on wisdom
+	q(63093),	-- Looted the chest after defeating Kalisthene on wisdom
 	
 	-- Unflagged
 	--q(62771)

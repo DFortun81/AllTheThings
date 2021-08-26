@@ -61,7 +61,7 @@ _.Zones =
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 						i(19312, {	-- Lei of the Lifegiver
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 						i(19104, {	-- Stormstrike Hammer
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
