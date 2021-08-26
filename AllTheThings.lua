@@ -4999,14 +4999,12 @@ local function PopulateQuestObject(questObject)
 
 	-- Check for provider info
 	if questObject.qgs and #questObject.qgs == 1 then
-		for j,qg in ipairs(questObject.qgs) do
-			_cache = SearchForField("creatureID", qg);
-			if _cache then
-				for _,data in ipairs(_cache) do
-					if GetRelativeField(data, "headerID", -16) then	-- Rares only!
-						MergeProperties(questObject, data);
-						NestObjects(questObject, data.g, true);
-					end
+		_cache = SearchForField("creatureID", questObject.qgs[1]);
+		if _cache then
+			for _,data in ipairs(_cache) do
+				if GetRelativeField(data, "headerID", -16) then	-- Rares only!
+					MergeProperties(questObject, data, true);
+					NestObjects(questObject, data.g, true);
 				end
 			end
 		end
@@ -5022,10 +5020,10 @@ local function PopulateQuestObject(questObject)
 		elseif timeRemaining < 60 then
 			description = "|cFFFFFF00" .. description .. "|r";
 		end
-		if not questObject.description then
-			questObject.description = description;
-		else
+		if questObject.description then
 			questObject.description = questObject.description .. "\n\n" .. description;
+		else
+			questObject.description = description;
 		end
 	end
 
