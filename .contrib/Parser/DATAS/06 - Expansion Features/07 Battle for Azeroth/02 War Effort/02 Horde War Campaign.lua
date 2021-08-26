@@ -1090,11 +1090,13 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["maps"] = { 895 },	-- Tiragarde Sound
 						}),
-						q(54179, {	-- Through the Front Door				-- Need to check for Leather and Plate rewards
+						q(54179, {	-- Through the Front Door
+							-- Need to check for Leather rewards
 							["sourceQuests"] = { 54178 },	-- Catching a Ride
 							["provider"] = { "n", 147135 },	-- Nathanos Blightcaller
 							["coord"] = { 88.2, 50.8, 895 },
 							["races"] = HORDE_ONLY,
+							["modID"] = 5,
 							["maps"] = {
 								895,	-- Tiragarde Sound
 								1349,	-- Tol Dagor (Scenario)
@@ -1102,12 +1104,16 @@ _.ExpansionFeatures =
 								1351,	-- Tol Dagor (Scenario)
 							},
 							["g"] = {
-								i(163426),	-- Honorbound Artificer's Guise
-								i(163424),	-- Honorbound Artificer's Amice
-								i(163280),	-- Honorbound Artificer's Robes
-								i(163446),	-- Honorbound Vanguard's Skullguard
-								i(163441),	-- Honorbound Vanguard's Shoulderguards
-								i(163282),	-- Honorbound Vanguard's Chainmail
+								i(163426),	-- Honorbound Artificer's Guise (Cloth)
+								i(163424),	-- Honorbound Artificer's Amice (Cloth)
+								i(163280),	-- Honorbound Artificer's Robes (Cloth)
+								-- Missing Leather
+								i(163446),	-- Honorbound Vanguard's Skullguard (Mail)
+								i(163441),	-- Honorbound Vanguard's Shoulderguards (Mail)
+								i(163282),	-- Honorbound Vanguard's Chainmail (Mail)
+								i(163456),	-- Honorbound Centurion's Greathelm (Plate)
+								i(163453),	-- Honorbound Centurion's Shoulderplates (Plate)
+								i(163459),	-- Honorbound Centurion's Breastplate (Plate)
 							},
 						}),
 						q(54139, {	-- War Is Here
@@ -1620,24 +1626,71 @@ _.ExpansionFeatures =
 					--	all needs to be altQuested to the 'choice' quest since only one version of the campaign questline can be completed per character.  not sure if 'queen's favor' is the best quest to set as altQuests or if it should be an earlier one (i haven't done the campaign in a while)
 						q(56495, {	-- They Move Against Us
 							["altQuests"] = { 54109 },	-- Queen's Favor
+							["sourceQuests"] = { 55782 },	-- Stay of Execution
+							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.7, 862 },
+							["races"] = HORDE_ONLY,
+							["maps"] = { 862 },
 						}),
 						q(56833, {	-- Leaders of the Horde
 							["altQuests"] = { 54109 },	-- Queen's Favor
+							["sourceQuests"] = { 56495 },	-- They Move Against Us
+							["provider"] = { "n", 156423 },	-- Lady Sylvanas Windrunner
+							["coord"] = { 48.5, 70.8, 1534 },
+							["races"] = HORDE_ONLY,
+							["maps"] = { 1534 },
 						}),
 						q(57130, {	-- Traitors in Our Midst
 							["altQuests"] = { 54109 },	-- Queen's Favor
+							["sourceQuests"] = { 56833 },	-- Leaders of the Horde
+							["provider"] = { "n", 156124 },	-- Eitrigg
+							["coord"] = { 74.1, 46.1, 1534 },
+							["races"] = HORDE_ONLY,
+							["maps"] = { 1534 },
 						}),
 						q(57148, {	-- Siegebreakers
 							["altQuests"] = { 54109 },	-- Queen's Favor
+							["sourceQuests"] = { 57130 },	-- Traitors in Our Midst
+							["provider"] = { "n", 156440 },	-- Nathanos Blightcaller
+							["coord"] = { 50.4, 76.1, 1534 },
+							["races"] = HORDE_ONLY,
+							["maps"] = { 1534 },
 						}),
 						q(57149, {	-- Propaganda Takedown
 							["altQuests"] = { 54109 },	-- Queen's Favor
+							["sourceQuests"] = { 57130 },	-- Traitors in Our Midst
+							["provider"] = { "n", 156440 },	-- Nathanos Blightcaller
+							["coord"] = { 50.4, 76.1, 1534 },
+							["races"] = HORDE_ONLY,
+							["maps"] = { 1534 },
 						}),
 						q(57150, {	-- Militia
 							["altQuests"] = { 54109 },	-- Queen's Favor
+							["sourceQuests"] = { 57130 },	-- Traitors in Our Midst
+							["provider"] = { "n", 156440 },	-- Nathanos Blightcaller
+							["coord"] = { 50.4, 76.1, 1534 },
+							["races"] = HORDE_ONLY,
+							["maps"] = { 1534 },
 						}),
 						q(57151, {	-- A Line in the Sand
 							["altQuests"] = { 54109 },	-- Queen's Favor
+							["sourceQuests"] = { 
+								57148,	-- Siegebreakers
+								57149,	-- Propaganda Takedown
+								57150,	-- Militia
+							},
+							["provider"] = { "n", 156440 },	-- Nathanos Blightcaller
+							["coord"] = { 50.1, 91.3, 1534 },
+							["races"] = HORDE_ONLY,
+							["maps"] = { 1534 },
+						}),
+						q(57152, {	-- Most Loyal
+							["altQuests"] = { 54109 },	-- Queen's Favor
+							["sourceQuests"] = { 57151 },	-- A Line in the Sand
+							["provider"] = { "n", 156425 },	-- Dark Ranger Lenara
+							["coord"] = { 50, 91.3, 1534 },
+							["races"] = HORDE_ONLY,
+							["maps"] = { 1534 },
 						}),
 					}),
 				},

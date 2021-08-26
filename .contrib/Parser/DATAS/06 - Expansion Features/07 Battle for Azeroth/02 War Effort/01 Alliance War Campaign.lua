@@ -9,7 +9,6 @@ _.ExpansionFeatures =
 			n(-236, {	-- Alliance War Campaign
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-				--	!! NEED PLATE REWARDS FOR "MISCHIEF MANAGED" QUEST.
 					ach(12510, {	-- Ready for War
 						["collectible"] = false,
 						["races"] = ALLIANCE_ONLY,
@@ -1227,7 +1226,6 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54206 },	-- The Sleeper Agent
 						}),
-					--	MISCHIEF MANAGED STARTS HERE	TODO: NEED TO DO ON CLOTH/LEATHER/PLATE
 						q(54169, {	-- The Treasury Heist
 							["sourceQuests"] = { 54171 },	-- The Abyssal Scepter
 							["provider"] = { "n", 146982 },	-- Lady Jaina Proudmoore
@@ -1240,17 +1238,20 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 146982 },	-- Lady Jaina Proudmoore
 							["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
 							["races"] = ALLIANCE_ONLY,
+							["modID"] = 5,
 							["g"] = {
-								i(163339),	-- 7th Legionnaire's Hood
-								i(163337),	-- 7th Legionnaire's Amice
-								i(163248),	-- 7th Legionnaire's Robes
-								i(163380),	-- 7th Legionnaire's Visage
-								i(163377),	-- 7th Legionnaire's Mantle
-								i(163251),	-- 7th Legionnaire's Vest
-								i(163394),	-- 7th Legionnaire's Helm
-								i(163389),	-- 7th Legionnaire's Monnion
-								i(163398),	-- 7th Legionnaire's Chainmail
-								-- TODO: Need to do this criteria on plate to get other rewards
+								i(163339),	-- 7th Legionnaire's Hood (Cloth)
+								i(163337),	-- 7th Legionnaire's Amice (Cloth)
+								i(163248),	-- 7th Legionnaire's Robes (Cloth)
+								i(163380),	-- 7th Legionnaire's Visage (Leather)
+								i(163377),	-- 7th Legionnaire's Mantle (Leather)
+								i(163251),	-- 7th Legionnaire's Vest (Leather)
+								i(163394),	-- 7th Legionnaire's Helm (Mail)
+								i(163389),	-- 7th Legionnaire's Monnion (Mail)
+								i(163398),	-- 7th Legionnaire's Chainmail (Mail)
+								i(163405),	-- 7th Legionnaire's Shoulderplates (Plate)
+								i(163410),	-- 7th Legionnaire's Headpiece (Plate)
+								i(163418),	-- 7th Legionnaire's Chestguard (Plate)
 							},
 						}),
 					--	BETWEEN MISCHIEF MANAGED AND HE WHO WALKS IN THE LIGHT
