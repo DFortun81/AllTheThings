@@ -746,7 +746,8 @@ for key,value in pairs({
 		--TODO: [-533] = "Hearthstone Promotion",
 		--TODO: [-534] = "Collector's Edition",
 
-		--TODO: [-538] = "Diablo 20th Anniversary Promotion",
+		--TODO: [-537] = "Diablo 20th Anniversary Promotion",
+		--TODO: [-538] = "The Ahn'Qiraj War Effort",
 		--TODO: [-539] = "The Scepter of the Shifting Sands",
 		--TODO: [-540] = "The Scourge Invasion",
 		--TODO: [-543] = "Legion Invasions",

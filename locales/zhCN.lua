@@ -785,13 +785,13 @@ for key,value in pairs({
 		[-533] = "炉石传说推广活动",									-- Hearthstone Promotion
 		[-534] = "典藏版",											-- Collector's Edition
 
-		[-538] = "暗黑破坏神20周年庆",								-- Diablo 20th Anniversary Promotion
+		[-537] = "暗黑破坏神20周年庆",								-- Diablo 20th Anniversary Promotion
+		--TODO: [-538] = "The Ahn'Qiraj War Effort",
 		[-539] = "流沙节杖",											-- The Scepter of the Shifting Sands
 		[-540] = "天灾入侵",											-- The Scourge Invasion
 		[-543] = "军团入侵",											-- Legion Invasions
 		[-544] = "魔兽世界典藏版",									-- WoW Collector's Edition
 		[-545] = "暴雪嘉年华",										-- Blizzcon
-		--TODO: [-546] = REFER_A_FRIEND,							-- Recruit A Friend 招募战友
 		[-547] = "欧洲限定",											-- EU Only
 		[-548] = "中国限定",											-- China Only
 		[-549] = "韩国限定",											-- Korea Only
