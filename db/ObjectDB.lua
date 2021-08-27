@@ -117,6 +117,7 @@ select(2, ...).ObjectNames = {
 	[180503] = "Sandy Cookbook",
 	[180633] = "Crystalline Tear",
 	[180642] = "Inconspicuous Crate",
+	[180652] = "Freshly Dug Dirt",
 	[180690] = "Large Scarab Coffer",
 	[180691] = "Scarab Coffer",
 	[180717] = "The Scarab Gong",

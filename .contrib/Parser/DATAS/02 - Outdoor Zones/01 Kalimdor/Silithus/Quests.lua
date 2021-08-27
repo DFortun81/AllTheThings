@@ -33,10 +33,6 @@ _.Zones =
 						})),
 					},
 				}),
-				q(8303,  {	-- Anachronos
-					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(8316,  {	-- Armaments of War (Warrior)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
@@ -242,10 +238,6 @@ _.Zones =
 					["coord"] = { 55.2, 36.1, SILITHUS },
 					["sourceQuest"] = 8278,	-- Noggle's Last Hope
 				}),
-				q(8288,  {	-- Only One May Rise
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
-				}),
 				q(9416,  {	-- Report to General Kirika
 					["provider"] = { "n", 17081 },	-- Scout Bloodfist
 					["coord"] = { 53.0, 34.6, SILITHUS },
@@ -433,21 +425,6 @@ _.Zones =
 					["coord"] = { 53.6, 35.3, SILITHUS },
 					["sourceQuest"] = 8284,	-- The Twilight Mystery
 				}),
-				q(8302,  {	-- The Hand of the Righteous (until Neutral)
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
-					["repeatable"] = true,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(20403)),	--	Proxy of Nozdormu
-					},
-				}),
-				q(8301,  {	-- The Path of the Righteous
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(20402)),	--	Agent of Nozdormu
-					},
-				}),
 				q(9023,  {	-- The Perfect Poison
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16091 },	-- Dirk Thunderwood
@@ -531,11 +508,6 @@ _.Zones =
 						i(20646),	-- Sandstrider's Mark
 						i(20647),	-- Black Crystal Dagger
 					},
-				}),
-				q(8286,  {	-- What Tomorrow Brings
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 				}),
 			}),
 		}),

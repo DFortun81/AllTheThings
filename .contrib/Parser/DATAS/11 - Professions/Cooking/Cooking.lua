@@ -3048,7 +3048,6 @@ profession(COOKING, {
 			un(REMOVED_FROM_GAME, i(35566)),	-- Recipe: Juicy Bear Burger
 			un(REMOVED_FROM_GAME, i(13945)),	-- Recipe: Nightfin Soup
 			un(REMOVED_FROM_GAME, i(13946)),	-- Recipe: Poached Sunscale Salmon
-			un(REMOVED_FROM_GAME, i(21025)),	-- Recipe: Dirge's Kickin' Chimaerok Chops
 		}),
 	}),
 	-- #endif
