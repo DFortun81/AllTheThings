@@ -2319,10 +2319,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 73362
 				},
 				{
-					["name"] = "Resolute Hessonite",
-					["recipeID"] = 73259
-				},
-				{
 					["name"] = "Resolute Lava Coral",
 					["recipeID"] = 101766
 				},
@@ -2619,10 +2615,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				{
 					["name"] = "Fractured Lightstone",
 					["recipeID"] = 101803
-				},
-				{
-					["name"] = "Mystic Alicite",
-					["recipeID"] = 73233
 				},
 				{
 					["name"] = "Mystic Amberjewel",
