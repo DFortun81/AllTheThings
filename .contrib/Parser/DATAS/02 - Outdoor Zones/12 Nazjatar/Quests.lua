@@ -2584,12 +2584,12 @@ _.Zones =
 	}),
 };
 _.HiddenQuestTriggers = {
+	q(57041),	-- recruiting Farseer Ori / Neri Sharpfin for the day
 --	HORRIBLE NAZJATAR BODYGUARD DIALOGUE QUESTS (usually trigger in areas where you're doing the daily quests for the bodyguard)
 --	unknown/probable bodyguard dialogue quests
 	q(56659),	-- not sure precisely what triggered this -- selected Neri as my daily follower, refreshed, walked outside, picked up "Down into Nazjatar," and this popped (probably dialogue quest)
 	q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires (haven't reproduced w/poen, so probably another horde bodyguard)
 	q(56663),	-- Unknown trigger. Occured when walking into Shirakess Repository, but need to confirm potential pre-reqs
-	q(56673),	-- Triggered after going into Deepcoil Hatchery for the first time. Needs confirmation
 	q(56543),	-- Triggered when walking into Kelfin Pocket for the first time. Follower dialog goes off (horde)
 	q(56507),	-- Triggered randomly while in nazjatar
 	q(56658),	-- Triggered randomly while in Nazjatar
@@ -2601,16 +2601,19 @@ _.HiddenQuestTriggers = {
 	q(56664),	-- "We need to be careful down here.  The locals are definitely not friendly."
 	q(56668),	-- "Kelp grass is one of our most useful resources here in Nazjatar."
 	q(56669),	-- "The tamed snapdragons aren't producing venom anymore. Our only way to harvest it is from the wild packs roaming here."
+	q(56673),	-- "How can a place so horrible still be this beautiful?  One day soon, this chamber will be empty."
 	q(56675),	-- "Have you seen the ankoan?  Impressive fighters, but a bit standoffish.  Too bad.  We'd be stronger together!"
+	q(56676),	-- "When it looked like we were done for, Gral found us.  He was angry at the naga, just like we were.  He's a good friend."
 	q(56679),	-- "One day, there will be no more shackles."
 	q(56680),	-- "It's hard to imagine what we'll do once we don't have to fight to survive.  I look forward to figuring that out."
+	q(56681),	-- "The ocean provides for us.  We take what we find and put it to use.  Might not always be pretty, but it gets the job done."
 --	Ori
-	q(57041),	-- "Change is inevitable.  Though she wielded powerful magic, Azshara could not hold back the tide.  Such will be her fate once more."
 --	Poen
 	q(56544),	-- "This is one of my favorite spots!  I always keep snacks in my pocket!  It works out great for everyone!"
 	q(56671),	-- "I helped a little elf girl find her doll here, once.  It made her so happy, even though there was so little of it left.  I hugged Mak so hard when I got back to Newhome."
 	q(56682),	-- "I always dreamt of fighting back against the naga.  Neri gave me that chance."
 	q(56683),	-- "I was born in the slave pens.  My family was broken by the naga... I never had a chance to heal them."  yikes, dude
+	q(56684),	-- "I talked to an ankoan, once.  They've lost so many of their friends.  It's sad to think about."
 	q(56685),	-- "If you really listen, sometimes you can hear the voice of the ocean.  She brings me peace."
 	q(56686),	-- "The ocean taught me how to help and heal my friends.  I'm glad when I can be useful."
 	q(56687),	-- "This one time, I got caught in some seaweed while fleeling from the naga.  But Mak showed up and saved me!  We've been best friends ever since!"
@@ -2626,6 +2629,4 @@ _.HiddenQuestTriggers = {
 	q(56701),	-- "Without Neri, we would have scattered with the current.  She brought us together."
 	q(56705),	-- "Azshara and her 'loyal subjects' are the worst kind of monsters.  We have to stop them here and now."
 	q(56711),	-- "I won't always be around to protect Newhome.  If these scales can help keep our people safe, then they're worth the effort."
-	--
-	q(56676),	-- Killing Lady Narjiss (and completing, but not handing in, the Wanted quest).
 };
