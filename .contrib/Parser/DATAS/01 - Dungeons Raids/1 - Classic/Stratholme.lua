@@ -202,14 +202,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					})),
 					n(-40, {	-- Legacy
 						n(ZONEDROPS, {
-							un(REMOVED_FROM_GAME, n(14684, {	-- Balzaphon
-								["description"] = "This boss was only available during the Scourge Invasions.",
-								["groups"] = {
-									un(REMOVED_FROM_GAME, i(23125)),	-- Chains of the Lich
-									un(REMOVED_FROM_GAME, i(23124)),	-- Staff of Balzaphon
-									un(REMOVED_FROM_GAME, i(23126)),	-- Waistband of Balzaphon
-								},
-							})),
 							un(REMOVED_FROM_GAME, n(16102, {	-- Sothos
 								["description"] = "Sothos and Jarien are a pair of elite ghosts summoned in the Scarlet Bastion by using Brazier of Beckoning.",
 								["groups"] = {

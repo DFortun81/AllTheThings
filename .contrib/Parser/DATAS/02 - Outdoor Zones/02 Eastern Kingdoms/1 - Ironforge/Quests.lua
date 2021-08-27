@@ -147,10 +147,6 @@ _.Zones =
 					["coord"] = { 51.0, 26.2, IRONFORGE },
 					["races"] = { DWARF, GNOME },
 				}),
-				q(9261,  {	-- Investigate the Scourge of Ironforge
-					["provider"] = { "n", 16484 },	-- Lieutenant Nevell <The Argent Dawn>
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(1708,  {	-- Iron Coral
 					["sourceQuests"] = { 1704 },	-- Klockmort Spannerspan
 					["provider"] = { "n", 6169 },	-- Klockmort Spannerspan
@@ -169,14 +165,6 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6974)),	-- Fire Hardened Gauntlets
 					},
-				}),
-				q(9154,  {	-- Light's Hope Chapel
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 16241 },	-- Argent Recruiter (A)
-						{ "n", 16255 },	-- Argent Scout (H)
-					},
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1880,  {	-- Mage-tastic Gizmonitor
 					["provider"] = { "n", 5144 },	-- Bink

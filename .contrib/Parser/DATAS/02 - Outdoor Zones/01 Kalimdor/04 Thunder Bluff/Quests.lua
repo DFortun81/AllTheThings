@@ -177,14 +177,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6504)),	-- Wingblade
 					},
 				}),
-				q(9154,  {	-- Light's Hope Chapel
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 16241 },	-- Argent Recruiter (A)
-						{ "n", 16255 },	-- Argent Scout (H)
-					},
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(3562,  {	-- Magatha's Payment to Jediga
 					["sourceQuests"] = { 3518 },	-- Delivery to Magatha
 					["provider"] = { "n", 4046 },	-- Magatha Grimtotem

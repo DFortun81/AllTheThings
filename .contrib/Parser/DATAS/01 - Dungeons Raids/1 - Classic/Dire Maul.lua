@@ -716,15 +716,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 							},
 						}),
 					})),
-					n(14690, {	-- Revanchion
-						["u"] = REMOVED_FROM_GAME,
-						["description"] = "This NPC was only available during the pre-WotLK Scourge Invasion.",
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(23129)),	-- Bracers of Mending
-							un(REMOVED_FROM_GAME, i(23127)),	-- Cloak of Revanchion
-							un(REMOVED_FROM_GAME, i(23128)),	-- The Shadow's Grasp
-						},
-					}),
 				},
 			}),
 		},

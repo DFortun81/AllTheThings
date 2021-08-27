@@ -54,10 +54,6 @@ _.Zones =
 						i(65483),	-- Moon Staff of Elune
 					},
 				}),
-				q(9262,  {	-- Investigate the Scourge of Darnassus
-					["provider"] = { "n", 16495 },	-- Lieutenant Beitha <The Argent Dawn>
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(32664, {	-- Learn to Ride
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,

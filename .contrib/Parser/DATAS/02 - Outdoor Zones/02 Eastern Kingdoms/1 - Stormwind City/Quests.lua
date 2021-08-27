@@ -661,11 +661,6 @@ _.Zones =
 					["coord"] = { 85.7, 32.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(9292,  {	-- Cracked Necrotic Crystal
-					["provider"] = { "n", 16531 },	-- Faint Necrotic Crystal
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(32469, {	-- Crystal Clarity
 					["provider"] = { "n", 16908 },	-- Arielle Snapflash
 					["sourceQuests"] = { 32470 },	-- Light Camera Action
@@ -883,10 +878,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = NEVER_IMPLEMENTED,
 				}),
-				q(9260,  {	-- Investigate the Scourge of Stormwind
-					["provider"] = { "n", 16478 },	-- Lieutenant Orrin <The Argent Dawn>
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(30987, {	-- Joining the Alliance
 					["provider"] = { "n", 60566 },	-- Aysa Cloudsinger
 					["coord"] = { 74.2, 92.4, STORMWIND_CITY },
@@ -935,14 +926,6 @@ _.Zones =
 					["g"] = {
 						i(122637),	-- S.E.L.F.I.E. Camera
 					},
-				}),
-				q(9154,  {	-- Light's Hope Chapel
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 16241 },	-- Argent Recruiter (A)
-						{ "n", 16255 },	-- Argent Scout (H)
-					},
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(38206, {	-- Making the Rounds
 					["sourceQuests"] = { 38035 },	-- A Royal Summons

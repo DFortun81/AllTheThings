@@ -267,10 +267,6 @@ _.Zones =
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(9304,  {	-- Document from the Front
-					["provider"] = { "i", 22948 },	-- A Smudged Document
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(6135,  {	-- Duskwing, Oh How I Hate Thee...
 					["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["races"] = HORDE_ONLY,
@@ -289,10 +285,6 @@ _.Zones =
 						i(62999),	-- Corpseburner's Mantle
 						i(62990),	-- Bat Claw Legguards
 					},
-				}),
-				q(9301,  {	-- Envelope from the Front
-					["provider"] = { "i", 22930 },	-- A Bloodstained Envelope
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9222,  {	-- Epic Armaments of Battle - Friend of the Dawn
 					["repeatable"] = true,
@@ -626,18 +618,10 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
 					},
 				}),
-				q(9302,  {	-- Missive from the Front
-					["provider"] = { "i", 22944 },	-- A Crumpled Missive
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(27489, {	-- Nobody to Blame but Myself
 					["sourceQuests"] = { 27488 },	-- Impatience
 					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
 					["coord"] = { 61.5, 43.2, EASTERN_PLAGUELANDS },
-				}),
-				q(9299,  {	-- Note from the Front
-					["provider"] = { "i", 22945 },	-- A Careworn Note
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(5781,  {	-- Of Forgotten Memories
 					["provider"] = { "n", 1855 },	-- Tirion Fordring
@@ -666,10 +650,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 45574 },	-- Vex'tul
 					["coord"] = { 60.6, 43.4, EASTERN_PLAGUELANDS },
-				}),
-				q(9300,  {	-- Page from the Front
-					["provider"] = { "i", 22946 },	-- A Ragged Page
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(5149,  {	-- Pamela's Doll
 					["sourceQuests"] = {
@@ -756,10 +736,6 @@ _.Zones =
 				q(27528, {	-- Scourged Mass
 					["provider"] = { "n", 45831 },	-- Crusader Kevin Frost
 					["coord"] = { 27.6, 20.8, EASTERN_PLAGUELANDS },
-				}),
-				q(9085,  {	-- Shadows of Doom
-					["provider"] = { "n", 16361 },	-- Commander Thomas Helleran <The Argent Dawn>
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27458, {	-- Smokey and the Bandage
 					["provider"] = { "n", 11033 },	-- Smokey LaRue
@@ -998,10 +974,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(22636)),	-- Ice Guard
 					},
 				}),
-				q(9247,  {	-- The Keeper's Call
-					["provider"] = { "i", 22723 },	-- A Letter from the Keeper of the Rolls
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(5466,  {	-- The Lich, Ras Frostwhisper
 					["sourceQuests"] = { 5465 },	-- Soulbound Keepsake
 					["provider"] = { "n", 11286 },	-- Magistrate Marduke
@@ -1100,10 +1072,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 10926 },	-- Pamela Redpath
 					["coord"] = { 32.4, 83.6, EASTERN_PLAGUELANDS },
-				}),
-				q(9153,  {	-- Under the Shadow
-					["provider"] = { "n", 16361 },	-- Commander Thomas Helleran <The Argent Dawn>
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(6042,  {	-- Un-Life's Little Annoyances
 					["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>

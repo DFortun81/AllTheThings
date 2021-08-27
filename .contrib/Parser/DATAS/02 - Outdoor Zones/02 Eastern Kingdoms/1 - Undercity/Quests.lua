@@ -253,14 +253,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(9154,  {	-- Light's Hope Chapel
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 16241 },	-- Argent Recruiter (A)
-						{ "n", 16255 },	-- Argent Scout (H)
-					},
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(2995,  {	-- Lines of Communication
 					["provider"] = { "n", 7825 },	-- Oran Snakewrithe
 					["races"] = HORDE_ONLY,

@@ -236,14 +236,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 							un(REMOVED_FROM_GAME, i(7684)),	-- Bloodmage Mantle
 							un(REMOVED_FROM_GAME, i(7685)),	-- Orb of the Forgotten Seer
 						})),
-						un(REMOVED_FROM_GAME, n(14693, {	-- Scorn
-							["description"] = "This encounter was only available during the Scourge Invasion.",
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(23168)),	-- Scorn's Focal Dagger
-								un(REMOVED_FROM_GAME, i(23169)),	-- Scorn's Icy Choker
-								un(REMOVED_FROM_GAME, i(23170)),	-- The Frozen Clutch
-							},
-						})),
 					}),
 					n(-86, {	-- Library
 						n(QUESTS, {

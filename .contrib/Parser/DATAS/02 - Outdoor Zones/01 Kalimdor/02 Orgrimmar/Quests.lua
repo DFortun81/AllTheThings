@@ -1570,14 +1570,6 @@ _.Zones =
 						i(122637),	-- S.E.L.F.I.E. Camera
 					},
 				}),
-				q(9154,  {	-- Light's Hope Chapel
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 16241 },	-- Argent Recruiter (A)
-						{ "n", 16255 },	-- Argent Scout (H)
-					},
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(26293, {	-- Machines of War
 					["sourceQuests"] = { 28717 },	-- Warchief's Command: Twilight Highlands!
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang

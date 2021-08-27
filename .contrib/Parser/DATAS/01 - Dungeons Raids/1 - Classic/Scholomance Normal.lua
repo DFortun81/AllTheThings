@@ -214,11 +214,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 						un(REMOVED_FROM_GAME, i(13955)),	-- Stoneform Shoulders
 						un(REMOVED_FROM_GAME, i(13967)),	-- Windreaver Greaves
 					}),
-					n(14695, {	-- Lord Blackwood
-						un(REMOVED_FROM_GAME, i(23156)),	-- Blackwood's Thigh
-						un(REMOVED_FROM_GAME, i(23132)),	-- Lord Blackwood's Blade
-						un(REMOVED_FROM_GAME, i(23139)),	-- Lord Blackwood's Buckler
-					}),
 					n(10503, {	-- Jandice Barov
 						un(REMOVED_FROM_GAME, o(180794, {	-- Journal of Jandice Barov
 							["description"] = "Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",

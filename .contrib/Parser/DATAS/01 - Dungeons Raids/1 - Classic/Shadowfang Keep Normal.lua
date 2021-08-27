@@ -344,10 +344,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 						i(1292),	-- Butcher's Cleaver	NOTE: Drops from Lord Walden now and is still obtainable
 						un(REMOVED_FROM_GAME, i(6633)),	-- Butcher's Slicer
 					})),
-					un(REMOVED_FROM_GAME, n(14682, {	-- Sever
-						un(REMOVED_FROM_GAME, i(23173)),	-- Abomination Skin Leggings
-						un(REMOVED_FROM_GAME, i(23171)),	-- The Axe of Severing
-					})),
 					un(REMOVED_FROM_GAME, n(4274, {	-- Fenrus the Devourer
 						i(3230),	-- Black Wolf Bracers	NOTE: Drops from Lord Walden now and is still obtainable
 						un(REMOVED_FROM_GAME, i(6340)),	-- Fenrus' Hide

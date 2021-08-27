@@ -250,13 +250,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					})),
 				},
 			}),
-			n(14686, {	-- Lady Falther'ess
-				["u"] = REMOVED_FROM_GAME,
-				["g"] = {
-					un(REMOVED_FROM_GAME, i(23177)),	-- Lady Falther'ess' Finger
-					un(REMOVED_FROM_GAME, i(23178)),	-- Mantle of Lady Falther'ess
-				},
-			}),
 		},
 	}),
 })};
