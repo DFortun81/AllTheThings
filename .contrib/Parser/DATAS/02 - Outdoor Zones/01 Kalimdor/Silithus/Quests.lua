@@ -423,66 +423,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 				}),
-				q(8509,  {	-- The Alliance Needs Arthas' Tears!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8492,  {	-- The Alliance Needs Copper Bars!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8494,  {	-- The Alliance Needs Iron Bars!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8511,  {	-- The Alliance Needs Light Leather!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8517,  {	-- The Alliance Needs Linen Bandages!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8513,  {	-- The Alliance Needs Medium Leather!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8505,  {	-- The Alliance Needs Purple Lotus!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8524,  {	-- The Alliance Needs Rainbow Fin Albacore!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8526,  {	-- The Alliance Needs Roast Raptor!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8522,  {	-- The Alliance Needs Runecloth Bandages!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8520,  {	-- The Alliance Needs Silk Bandages!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8528,  {	-- The Alliance Needs Spotted Yellowtail!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8503,  {	-- The Alliance Needs Stranglekelp!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8515,  {	-- The Alliance Needs Thick Leather!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8499,  {	-- The Alliance Needs Thorium Bars!
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(8315,  {	-- The Calling
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane

@@ -2400,18 +2400,6 @@ _.Zones =
 						i(65628),	-- Helm of the Great Hunter
 					},
 				}),
-				q(8532,  {	-- The Horde Needs Copper Bars!
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8549,  {	-- The Horde Needs Peacebloom!
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8542,  {	-- The Horde Needs Tin Bars!
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(31013, {	-- The Horde Way
 					["provider"] = { "n", 39605 },	-- Garrosh Hellscream
 					["coord"] = { 48.2, 70.6, ORGRIMMAR },
