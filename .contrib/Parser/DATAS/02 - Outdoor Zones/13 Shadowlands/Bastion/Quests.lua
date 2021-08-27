@@ -1085,28 +1085,18 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 		n(-319, {	-- Weapons
-			i(184468),	-- Doubt Tinged Quickblade
 			i(184471),	-- Guidenote Dagger
-			i(184473),	-- Doubt Tinged Spellblade
 			i(184529),	-- Elysian Ceremonial Dagger
 			i(184532),	-- Silver-Edged Elysian Dirk
-			i(184467),	-- Doubt Tinged Grip
 			i(184528),	-- Elysian Guillotine Claws
-			i(184470),	-- Doubt Tinged Mallet
-			i(184472),	-- Doubt Tinged Gavel
 			i(184531),	-- Elysian Battle Hammer
 			i(184533),	-- Elysian Forgelite's Hammer
-			i(184466),	-- Doubt Tinged Bell
 			i(184527),	-- Elysian Watcher's Bell
-			i(184464),	-- Doubt Tinged Warglaive
 			i(184524),	-- Elysian Twinbladed Glaive
 			i(184525),	-- Elysian Pointed Hoplon
-			i(184465),	-- Doubt Tinged Longspear
 			i(184526),	-- Elysian Phalanx Dory
 			i(179735),	-- 9.0 Monster - Bastion - Weapon - Polearm AGI (But is a sword)
-			i(184469),	-- Doubt Tinged Greatsword
 			i(184530),	-- Greatsword of the Elysian Guard
-			i(184463),	-- Doubt Tinged Crossbow
 			i(184523),	-- Elysian Ironbolt Gastraphetes
 			i(179007),	-- 9.0 Monster - Bastion - Weapon - Dark
 		}),

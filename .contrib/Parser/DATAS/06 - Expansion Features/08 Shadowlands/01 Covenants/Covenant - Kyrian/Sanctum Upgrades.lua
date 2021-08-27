@@ -514,13 +514,13 @@ _.ExpansionFeatures =
 										n(-974, {	-- Wisdom
 										}),
 										n(-975, {	-- Humility
-											crit(22, {	-- Defeat Thran'tiok as Pelagos
+											crit(22, {	-- Defeat Mad Mortimer as Pelagos
 											["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(23, {	-- Defeat Thran'tiok as Kleia
+											crit(23, {	-- Defeat Mad Mortimer as Kleia
 											["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(24, {	-- Defeat Thran'tiok as Mikanikos
+											crit(24, {	-- Defeat Mad Mortimer as Mikanikos
 											["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(184460),	-- Reverent Bracer
@@ -610,6 +610,20 @@ _.ExpansionFeatures =
 										}),
 									}),
 									n(-974, {	-- Wisdom
+										i(184462, {	-- Arsenal: Doubt's Weapon Cache
+											["g"] = {
+												i(184466),	-- Doubt Tinged Bell
+												i(184463),	-- Doubt Tinged Crossbow
+												i(184472),	-- Doubt Tinged Gavel
+												i(184467),	-- Doubt Tinged Grip
+												i(184469),	-- Doubt Tinged Greatsword
+												i(184465),	-- Doubt Tinged Longspear
+												i(184470),	-- Doubt Tinged Mallet
+												i(184468),	-- Doubt Tinged Quickblade
+												i(184473),	-- Doubt Tinged Spellblade
+												i(184464),	-- Doubt Tinged Warglaive
+											},
+										}),
 									}),
 									n(-975, {	-- Humility
 										crit(19, {	-- Defeat Thran'tiok as Pelagos
