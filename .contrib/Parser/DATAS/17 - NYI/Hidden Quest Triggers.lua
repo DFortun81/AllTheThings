@@ -3923,6 +3923,8 @@ _.HiddenQuestTriggers = {
 		q(62764),	-- triggered after crafting Egg Hat at Abominable Stitching Table
 		q(62469),	-- triggered after crafting Engineering Pack at Abominable Stitching Table
 		q(62471),	-- triggered after crafting Flower Crown at Abominable Stitching Table
+		q(62472),	-- triggered after crafting Halo of Purity at Abominable Stitching Table
+		q(62479),	-- triggered after crafting Happiness Bird at Abominable Stitching Table
 		q(62583),	-- triggered after crafting Hitchhiker at Abominable Stitching Table
 		q(61712),	-- triggered after crafting Holiday Hat at Abominable Stitching Table
 		q(62759),	-- triggered after crafting Lovely Candle Display at Abominable Stitching Table
