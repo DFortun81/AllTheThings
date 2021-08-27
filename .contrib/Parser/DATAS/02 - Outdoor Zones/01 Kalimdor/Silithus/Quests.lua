@@ -238,17 +238,6 @@ _.Zones =
 					["coord"] = { 55.2, 36.1, SILITHUS },
 					["sourceQuest"] = 8278,	-- Noggle's Last Hope
 				}),
-				q(9416,  {	-- Report to General Kirika
-					["provider"] = { "n", 17081 },	-- Scout Bloodfist
-					["coord"] = { 53.0, 34.6, SILITHUS },
-					["races"] = HORDE_ONLY,
-				}),
-				q(9415,  {	-- Report to Marshal Bluewall
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 17082 },	-- Rifleman Torrig
-					["coord"] = { 54.5, 32.9, SILITHUS },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(8352,  {	-- Scepter of the Council
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
@@ -259,11 +248,6 @@ _.Zones =
 							un(REMOVED_FROM_GAME, i(20720)),	-- Dark Whisper Blade
 						})),
 					},
-				}),
-				q(9422,  {	-- Scouring the Desert
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 17079 },	-- General Kirika
 				}),
 				q(8318,  {	-- Secret Communication
 					["provider"] = { "n", 15306 },		-- Bor Wildmane
