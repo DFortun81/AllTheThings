@@ -311,6 +311,7 @@ _.Zones =
 					["coord"] = { 50.0, 77.3, SURAMAR },
 					["g"] = {
 						i(147768, {	-- Suramarian Sapphire
+							["b"] = 1,	-- Force BoP since this is only available as a quest item
 							["classes"] = { PALADIN },
 							["cost"] = {
 								{ "c", 1155, 500 },	-- 500x Ancient Mana

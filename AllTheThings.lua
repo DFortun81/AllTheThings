@@ -3159,16 +3159,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					for i,j in ipairs(group) do
 						if j.description and j[paramA] and j[paramA] == paramB then
 							-- Only add unique descriptions to the final info
-							if not descriptions[j.description] then
-								descriptions[j.description] = true;
-							end
+							descriptions[j.description] = true;
 						end
 					end
 					for description,_ in pairs(descriptions) do
 						tinsert(info, 1, { left = description, wrap = true, color = "ff66ccff" });
 					end
 				end
-				-- local subgroup = {};
 				insertionSort(group, function(a, b)
 					return not (a.headerID and a.headerID == -1) and b.headerID and b.headerID == -1;
 				end);
@@ -3637,18 +3634,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- Create an unlinked version of the object.
 	if not group.g then
-		local skipped = {};
 		-- Clone all the groups so that things don't get modified in the Source
 		local cloned = {};
-		local uniques = {};
-		for i,o in ipairs(group) do
-			-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
-			if not uniques[o] then
-				uniques[o] = true;
-				tinsert(cloned, CloneData(o));
-			end
-		end
-		wipe(uniques);
+		MergeObjects(cloned, group, true);
 		-- replace the Source references with the cloned references
 		group = cloned;
 		-- Find or Create the root group for the search results
@@ -3665,14 +3653,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						local otherRoot = root;
 						-- print("Replace root",otherRoot.key,otherRoot[otherRoot.key]);
 						root = o;
-						MergeProperties(root, otherRoot);
+						MergeProperties(root, otherRoot, true);
 					else
 						root = o;
 					end
 				else
 					-- print("Create Unfiltered root",o.key,o[o.key],o.modItemID,paramB);
-					if not root then root = o
-					else MergeProperties(root, o); end
+					if root then MergeProperties(root, o, true);
+					else root = o; end
 				end
 			end
 		end
@@ -3692,12 +3680,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if not root.g then root.g = {}; end
 		-- Loop through all obj found for this search
 		-- print(#group,"Search total");
+		local skipped;
 		for i,o in ipairs(group) do
 			-- If the obj "is" the root obj via bi-directional key
 			-- print("Check Merge",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
 			if (root.hash and root.hash == o.hash) or root[o.key] == o[o.key] or root[root.key] == o[root.key] then
 				-- print("Merge root",o.key,o[o.key],o.modItemID,paramB);
-				MergeProperties(root, o);
+				MergeProperties(root, o, true);
 				-- Merge the g of the obj into the merged results
 				NestObjects(root, o.g);
 			-- otherwise
@@ -3711,13 +3700,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				else
 					-- Add to the set of skipped objects
 					-- print("Skip",o.key,o[o.key])
-					tinsert(skipped, o);
+					if skipped then tinsert(skipped, o);
+					else skipped = { o }; end
 				end
 			end
 			-- print(#root.g,"Merge total");
 		end
 		-- Loop through all skipped objects if the root group is something which can bypass group filters
-		if paramA ~= "currencyID" then
+		if skipped and paramA ~= "currencyID" then
 			for i,o in ipairs(skipped) do
 				-- Merge the obj into the merged results
 				-- print("Merge skip",o.key,o[o.key])
@@ -6158,12 +6148,20 @@ app.CreateAchievement = function(id, t)
 end
 
 -- Achievement Criteria Lib
+local function GetParentAchievementInfo(t, key)
+	local sourceAch = t.sourceParent or t.parent;
+	if sourceAch.achievementID == t.achievementID then
+		rawset(t, key, sourceAch[key]);
+		return rawget(t, key);
+	end
+end
 local criteriaFields = {
 	["key"] = function(t)
 		return "criteriaID";
 	end,
 	["achievementID"] = function(t)
-		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID or (t.parent and (t.parent.achievementID or (t.parent.parent and t.parent.parent.achievementID)));
+		local sourceAch = t.sourceParent or t.parent;
+		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID or (sourceAch and (sourceAch.achievementID or (sourceAch.parent and sourceAch.parent.achievementID)));
 		if achievementID then
 			rawset(t, "achievementID", achievementID);
 			return achievementID;
@@ -6241,6 +6239,19 @@ local criteriaFields = {
 	end,
 	["index"] = function(t)
 		return 1;
+	end,
+	-- Use parent achievement if info not listed directly in the criteria
+	["c"] = function(t)
+		return GetParentAchievementInfo(t, "c");
+	end,
+	["classID"] = function(t)
+		return GetParentAchievementInfo(t, "classID");
+	end,
+	["races"] = function(t)
+		return GetParentAchievementInfo(t, "races");
+	end,
+	["r"] = function(t)
+		return GetParentAchievementInfo(t, "r");
 	end,
 };
 criteriaFields.collectible = fields.collectible;
