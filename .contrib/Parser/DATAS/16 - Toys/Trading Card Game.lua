@@ -4,7 +4,7 @@
 
 _.Toys =
 {
-	n(-32, {	-- Trading Card Game
+	n(-535, {	-- Trading Card Game
 		un(10, i(49704)),	-- Carved Ogre Idol
 		un(10, i(93672, {	-- Dark Portal
 			["model"] = 803615,

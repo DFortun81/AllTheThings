@@ -5725,7 +5725,7 @@ local function AttachTooltip(self)
 						gf = app:GetWindow("Prime").data.g[4];
 					elseif owner.tooltipText == BLIZZARD_STORE then
 						-- Shop
-						gf = app:GetWindow("Prime").data.g[17];
+						gf = app:GetWindow("Prime").data.g[16];
 					elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
 						-- Achievements
 						gf = app:GetWindow("Prime").data.g[5];
@@ -14416,14 +14416,6 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 
-		-- Events
-		if app.Categories.WorldEvents then
-			db = app.CreateDifficulty(18, app.Categories.WorldEvents);
-			db.icon = app.asset("Category_Event");
-			db.expanded = false;
-			table.insert(g, db);
-		end
-
 		-- Holidays
 		if app.Categories.Holidays then
 			db = app.CreateNPC(-3);
@@ -14431,6 +14423,28 @@ function app:GetDataCache()
 			db.icon = app.asset("Category_Holidays");
 			db.expanded = false;
 			db.text = GetItemSubClassInfo(15,3);
+			table.insert(g, db);
+		end
+
+		-- Events
+		if app.Categories.WorldEvents then
+			db = {};
+			db.text = BATTLE_PET_SOURCE_7;
+			db.description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.";
+			db.icon = app.asset("Category_Event");
+			db.g = app.Categories.WorldEvents;
+			db.expanded = false;
+			table.insert(g, db);
+		end
+		
+		-- Promotions
+		if app.Categories.Promotions then
+			db = {};
+			db.text = BATTLE_PET_SOURCE_8;
+			db.description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.";
+			db.icon = app.asset("Category_InGameShop");
+			db.g = app.Categories.Promotions;
+			db.expanded = false;
 			table.insert(g, db);
 		end
 

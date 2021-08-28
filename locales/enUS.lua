@@ -853,7 +853,6 @@ app.L = {
 		[-26] = "Interface\\Icons\\INV_Misc_Bag_07_Green",									-- Drop
 		[-29] = "Interface\\Icons\\Inv_misc_bag_17",										-- Raid Finder Bag
 		[-31] = "Interface\\Icons\\INV_Pet_BabyMurlocs_Blue",								-- Promotion
-		[-32] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_LADYLUCK",							-- Trading Card Game
 		[-33] = "Interface\\Icons\\trade_fishing",											-- Fishing
 		[-34] = app.asset("Interface_WorldQuest"),							            	-- World Quests
 		[-36] = app.asset("Category_InGameShop"),											-- In-Game Shop
@@ -1062,8 +1061,8 @@ app.L = {
 		[-531] = "Interface\\Icons\\achievement_general",									-- 2008 Spirit of Competition Event
 		[-532] = "Interface\\Icons\\Inv_gravegolempet",										-- Heroes of the Storm Promotion
 		[-533] = "Interface\\Icons\\Inv_misc_rune_01",										-- Hearthstone Promotion
-		[-534] = "Interface\\Icons\\Achievement_ChallengeMode_Gold",						-- Collector's Edition
-		[-535] = "Interface\\Icons\\inv_misc_blizzcon09_poster",							-- Blizzcon Event
+		[-534] = "Interface\\Icons\\inv_misc_gift_01",										-- Collector's Edition
+		[-535] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_LADYLUCK",						-- Trading Card Game
 		[-537] = "Interface\\Icons\\diabloanniversary_achievement",							-- Diablo 20th Anniversary Promotion
 		[-538] = "Interface\\Icons\\inv_box_01",											-- The Ahn'Qiraj War Effort
 		[-539] = "Interface\\Icons\\Inv_hammer_25",											-- The Scepter of the Shifting Sands
@@ -1098,6 +1097,8 @@ app.L = {
 		[-575] = "Interface\\Icons\\DiabloAnniversary_HoradricCube",						-- Diablo III: Reaper of Souls
 		[-576] = "Interface\\Icons\\inv_archonpet",											-- StarCraft II: Legacy of the Void
 		[-577] = "Interface\\Icons\\INV_MISC_FILM_01",										-- World of Warcraft Movie
+		[-578] = app.asset("Expansion_CLASSIC"),											-- World of Warcraft 15th Anniversary
+		[-579] = app.asset("Expansion_TBC"),												-- Dark Portal Pass
 		[-593] = "Interface\\Icons\\70_inscription_deck_Hellfire",							-- Kill Credit 1
 		[-594] = "Interface\\Icons\\70_inscription_deck_Hellfire_2",						-- Kill Credit 2
 		[-595] = "Interface\\Icons\\70_inscription_deck_Hellfire_3",						-- Kill Credit 3
@@ -1592,7 +1593,6 @@ app.L = {
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
 
 		[-31] = BATTLE_PET_SOURCE_8,											-- Promotion
-		[-32] = BATTLE_PET_SOURCE_9,											-- Trading Card Game
 
 		[-34] = TRACKER_HEADER_WORLD_QUESTS,									-- World Quests
 
@@ -1838,6 +1838,7 @@ app.L = {
 		[-532] = "Heroes of the Storm Promotion",
 		[-533] = "Hearthstone Promotion",
 		[-534] = "Collector's Edition",
+		[-535] = BATTLE_PET_SOURCE_9,											-- Trading Card Game
 
 		[-537] = "Diablo 20th Anniversary Promotion",
 		[-538] = "The Ahn'Qiraj War Effort",
@@ -1876,6 +1877,8 @@ app.L = {
 		[-575] = "Diablo III: Reaper of Souls",
 		[-576] = "StarCraft II: Legacy of the Void",
 		[-577] = "World of Warcraft Movie",
+		[-578] = "World of Warcraft 15th Anniversary",
+		[-579] = "Dark Portal Pass",
 
 -- Raid Buff Stack Size
 		[-583] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 1),				-- Power Increased to Level 1
