@@ -89,7 +89,7 @@ app.report = function(...)
 	app.print(app.Version .. L["PLEASE_REPORT_MESSAGE"]);
 end
 app.PrintGroup = function(group,depth)
-	if not depth then depth = 0; end
+	depth = depth or 0;
 	if group then
 		local p = "";
 		for i=0,depth,1 do
@@ -103,11 +103,12 @@ app.PrintGroup = function(group,depth)
 			end
 		end
 	end
+	print("---")
 end
 app.PrintTable = function(t,depth)
 	if not t then print("nil"); return; end
 	if type(t) ~= "table" then print(type(t),t); return; end
-	if not depth then depth = 0; end
+	depth = depth or 0;
 	local p = "";
 	for i=0,depth,1 do
 		p = p .. "-";
@@ -120,6 +121,7 @@ app.PrintTable = function(t,depth)
 	if getmetatable(t) then
 		app.PrintTable(getmetatable(t).__index, depth + 1);
 	end
+	print("---")
 end
 --[[
 app.PrintMemoryUsage = function(...)
@@ -1151,6 +1153,8 @@ local function GetProgressTextForRow(data)
 		return GetCollectionIcon(data.collected);
 	elseif data.trackable then
 		return GetCompletionIcon(data.saved);
+	elseif data.visible then
+		return data.count and (data.count .. "x") or "---";
 	end
 end
 local function GetProgressTextForTooltip(data)
@@ -2149,13 +2153,14 @@ MergeObject = function(g, t, index, newCreate)
 	end
 end
 NestObject = function(p, t, newCreate, index)
-	if not t then return; end
-	if p.g then
-		MergeObject(p.g, t, index, newCreate);
-	elseif newCreate then
-		p.g = { CreateObject(t) };
-	else
-		p.g = { t };
+	if p and t then
+		if p.g then
+			MergeObject(p.g, t, index, newCreate);
+		elseif newCreate then
+			p.g = { CreateObject(t) };
+		else
+			p.g = { t };
+		end
 	end
 end
 MergeObjects = function(g, g2, newCreate)
@@ -2952,66 +2957,14 @@ ResolveSymbolicLink = function(o)
 	end
 end
 end)();
-local function BuildContainsInfo(item, entries, paramA, paramB, indent, layer)
-	if not item or not item.g then return; end
-
-	-- skip Character filtering for sub-groups if this Item meets the BoE filter logic, since it can be moved to the designated character
-	local oldItemBindFilter = app.ItemBindFilter;
-	if app.ItemBindFilter ~= app.NoFilter and app.ItemBindFilter(item) then
-		app.ItemBindFilter = app.NoFilter;
-	end
-	-- using pairs since some index values may get set to nil prior to this
-	for i,group in pairs(item.g) do
-		-- print(group.hash,group.key,group[group.key],group.modItemID,group.collectible,group.collected,group.trackable,group.saved,group.visible);
-		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
-		if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
-			-- print("display")
-			local right;
-			if group.total and (group.total > 1 or (not group.collectible and group.total > 0)) then
-				if app.GroupVisibilityFilter(group) then
-					right = true;
-				-- the group itself may be a trackable thing
-				elseif group.trackable then
-					if group.saved then
-						if app.CollectedItemVisibilityFilter(group) then
-							right = true;
-						end
-					elseif app.ShowTrackableThings(group) then
-						right = true;
-					end
-				elseif group.visible then
-					right = group.count and (group.count .. "x") or "---";
-				end
-			else
-				if group.collectible then
-					if group.collected then
-						if app.CollectedItemVisibilityFilter(group) then
-							right = true;
-						end
-					else
-						right = true;
-					end
-				elseif group.trackable then
-					if group.saved then
-						if app.CollectedItemVisibilityFilter(group) then
-							right = true;
-						end
-					elseif app.ShowTrackableThings(group) then
-						right = true;
-					end
-				elseif group.visible then
-					right = group.count and (group.count .. "x") or "---";
-				end
-			end
-
-			if right == true then
-				right = GetProgressTextForRow(group);
-			end
-
+local function BuildContainsInfo(item, entries, indent, layer)
+	if item and item.g then
+		for i,group in ipairs(item.g) do
 			-- If there's progress to display, then let's summarize a bit better.
-			if right then
+			if group.visible then
 				-- Insert into the display.
-				local o = { group = group, right = right };
+				-- if app.DEBUG_PRINT then print("INCLUDE",app.DEBUG_PRINT,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key]) end
+				local o = { group = group, right = GetProgressTextForRow(group) };
 				local indicator = app.GetIndicatorIcon(group);
 				o.prefix = indicator and (string.sub(indent, 4) .. "|T" .. indicator .. ":0|t ") or indent;
 				tinsert(entries, o);
@@ -3023,18 +2976,13 @@ local function BuildContainsInfo(item, entries, paramA, paramB, indent, layer)
 					-- not for things with a parent unless the parent has no difficultyID
 					and (not group.parent or not group.parent.difficultyID)
 					then
-					BuildContainsInfo(group, entries, paramA, paramB, indent .. "  ", layer + 1);
-				-- else
-				-- 	print("skipped sub-contains");
-				-- 	for k,o in pairs(group) do
-				-- 		print(k,o)
-				-- 	end
-				-- 	print("--");
+					BuildContainsInfo(group, entries, indent .. "  ", layer + 1);
 				end
+			-- else
+			-- 	if app.DEBUG_PRINT then print("EXCLUDE",app.DEBUG_PRINT,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key]) end
 			end
 		end
 	end
-	app.ItemBindFilter = oldItemBindFilter;
 end
 -- ItemID's which should be skipped when filling purchases
 app.SkipPurchases = {
@@ -3054,7 +3002,6 @@ end
 local function FillPurchases(group, depth)
 	-- default to 2 levels of filling, i.e. 0) Raid Essence -> 1) Tier Token -> 2) Item
 	depth = depth or 2;
-	-- print("FillPurchases",group.itemID,depth)
 	if depth <= 0 then return; end
 	-- do not fill purchases on certain items, can skip the skip though
 	if app.SkipPurchases[-1] and app.SkipPurchases[group.itemID or 0] then return; end
@@ -3064,24 +3011,30 @@ local function FillPurchases(group, depth)
 		local sourceParent = rawget(group, "parent");
 		if sourceParent and sourceParent.saved then return; end
 	end
+	-- print("FillPurchases",group.itemID,group.currencyID,depth)
 
-	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles);
+	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles or group.costCollectibles);
 	if collectibles then
 		-- Nest new copies of the cost collectible objects of this group under itself
 		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
-		-- If this is under a currency, then whatever it purchases must be available to the current character to buy
-		if group.currencyID then
-			for _,purchase in ipairs(collectibles) do
-				if app.RecursiveGroupRequirementsFilter(purchase) then
-					-- print("Nested",purchase.key,purchase.key and purchase[purchase.key],"under",group.key,group.key and group[group.key])
-					NestObject(usedToBuy, purchase, true);
-				end
-			end
-		else
-			-- print("Filled",#collectibles,"under",group.key,group.key and group[group.key])
-			NestObjects(usedToBuy, collectibles, true);
-		end
 		NestObject(group, usedToBuy);
+		local filtered;
+		-- add unfiltered purchases first
+		for _,purchase in ipairs(collectibles) do
+			if app.RecursiveGroupRequirementsFilter(purchase) then
+				NestObject(usedToBuy, purchase, true);
+			else
+				if filtered then tinsert(filtered, purchase)
+				else filtered = { purchase }; end
+			end
+		end
+		-- then add filtered purchases after
+		if filtered then
+			for _,purchase in ipairs(filtered) do
+				NestObject(usedToBuy, purchase, true);
+			end
+		end
+		-- print("Filled",#collectibles,"under",group.key,group.key and group[group.key],"as",#usedToBuy.g,"unique groups")
 		-- reduce the depth by one since a cost has been filled
 		depth = depth - 1;
 		-- mark this group as no-longer collectible as a cost since its collectible contents have been filled under itself
@@ -3095,7 +3048,6 @@ local function FillPurchases(group, depth)
 	end
 	return group;
 end
-app.FillPurchases = FillPurchases;
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if not search then return nil; end
 	local now = time();
@@ -3714,9 +3666,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				NestObject(root, o);
 			end
 		end
-		-- Resolve symbolic links for the root
-		-- print("Resolve Root",root.key,root[root.key])
-		FillSymLinks(root, true);
 		-- Single group which matches the root, then collapse it
 		if #root.g == 1 then
 			local o = root.g[1];
@@ -3730,8 +3679,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Replace as the group
 		group = root;
+		-- Ensure no weird parent references attached to the base search result
+		group.parent = nil;
+		group.sourceParent = nil;
+
 		-- print(group.g and #group.g,"Merge total");
-		-- print("Final Group",group.key,group[group.key],group.collectible,group.collected);
+		-- print("Final Group",group.key,group[group.key],group.collectible,group.collected,group.parent,group.sourceParent,rawget(group, "parent"),rawget(group, "sourceParent"));
+		-- print("Group Type",group.__type)
 
 		-- Special cases
 		-- Don't show nested criteria of achievements
@@ -3749,9 +3703,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Resolve Cost, but not if the search itself was skipped (Mark of Honor)
 		if method ~= app.EmptyFunction then
+			-- app.DEBUG_PRINT = group.key .. ":" .. group[group.key];
 			-- Fill Purchases of this Thing
-			-- print("FillPurchases",group.key,group.key and group[group.key])
+			-- print("Fill Purchases")
 			FillPurchases(group);
+			-- app.PrintGroup(group)
 
 			-- Append any crafted things using this group
 			app.BuildCrafted(group);
@@ -3763,6 +3719,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 			-- Append currency info to any orphan currency groups
 			app.BuildCurrencies(group);
+
+			-- print("Resolve Root",group.key,group[group.key])
+			-- Resolve symbolic links for the group
+			FillSymLinks(group, true);
+			-- app.DEBUG_PRINT = nil;
 		end
 
 		-- Only need to build/update groups from the top level
@@ -3801,7 +3762,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if app.Settings:GetTooltipSetting("SummarizeThings") then
 			local entries, left, right = {};
 			-- app.DEBUG_PRINT = "CONTAINS-" .. group.key .. group[group.key];
-			BuildContainsInfo(group, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+			BuildContainsInfo(group, entries, "  ", app.noDepth and 99 or 1);
 			-- app.DEBUG_PRINT = nil;
 			if #entries > 0 then
 				-- print("#entries",#entries);
@@ -3922,9 +3883,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- Check if finally leaving the top-level search
 	if topLevelSearch then
-		-- if not working then
-		-- 	print("TopLevelSearch-Done",search,group.text or (group.key and group.key .. group[group.key]),group)
-		-- end
+		--[[
+		if not working then
+			print("TopLevelSearch-Done",search,group.text or (group.key and group.key .. group[group.key]),group)
+		end--]]
 		group.isBaseSearchResult = true;
 		app.InitialCachedSearch = nil;
 	end
@@ -6895,7 +6857,7 @@ local fields = {
 		return t.collectedAsCost and 1 or 0;
 	end,
 };
-app.BaseCurrencyClass = app.BaseObjectFields(fields);
+app.BaseCurrencyClass = app.BaseObjectFields(fields, "BaseCurrencyClass");
 (function()
 local fieldsAfterFailure = RawCloneData(fields);
 fieldsAfterFailure.collectibleAsCost = fields.collectibleAsCostAfterFailure;
@@ -8788,7 +8750,7 @@ local itemFields = {
 		return t.collectedAsCost and 1 or 0;
 	end,
 };
-app.BaseItem = app.BaseObjectFields(itemFields);
+app.BaseItem = app.BaseObjectFields(itemFields, "BaseItem");
 (function()
 local fieldsAfterFailure = RawCloneData(itemFields);
 fieldsAfterFailure.collectibleAsCost = itemFields.collectibleAsCostAfterFailure;
@@ -12435,7 +12397,9 @@ function app:CreateMiniListForGroup(group)
 			-- Fill any purchasable things for the sub-groups
 			-- if group.g then
 			-- 	for _,sub in ipairs(group.g) do
-			app.FillPurchases(group);
+			app.SetSkipPurchases(nil);
+			FillPurchases(group);
+			app.SetSkipPurchases(1);
 			-- 	end
 			-- end
 			-- Merge any symbolic linked data into the sub-groups
@@ -14190,7 +14154,16 @@ local function UpdateWindow(self, force, got)
 			if not self.doesOwnUpdate and
 				(force or (self.shouldFullRefresh and self:IsVisible())) then
 				-- print("UpdateGroups",self.suffix or self.Suffix)
-				TopLevelUpdateGroup(self.data, self);
+				-- skip Character filtering for sub-groups if this Root Window Item meets the Ignore BoE filter logic, since it can be moved to the designated character
+				if app.ItemBindFilter ~= app.NoFilter and app.ItemBindFilter(self.data) then
+					local oldItemBindFilter = app.ItemBindFilter;
+					app.ItemBindFilter = app.NoFilter;
+					TopLevelUpdateGroup(self.data, self);
+					-- reapply the previous BoE filter
+					app.ItemBindFilter = oldItemBindFilter;
+				else
+					TopLevelUpdateGroup(self.data, self);
+				end
 				self.HasPendingUpdate = nil;
 				-- print("Done")
 			end
@@ -14443,7 +14416,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			table.insert(g, db);
 		end
-		
+
 		-- Promotions
 		if app.Categories.Promotions then
 			db = {};
