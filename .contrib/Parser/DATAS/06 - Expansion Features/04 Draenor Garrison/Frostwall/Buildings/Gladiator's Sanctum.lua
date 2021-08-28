@@ -94,6 +94,7 @@ _.ExpansionFeatures =
 							q(36889, {	-- Nemesis: Hunter - Hunted
 								["provider"] = { "n", 86629 },	-- Raza'kul
 								["races"] = HORDE_ONLY,
+								["isRepeatable"] = true,
 							}),
 							q(36921, {	-- Nemesis: Manslayer
 								["provider"] = { "n", 86629 },	-- Raza'kul

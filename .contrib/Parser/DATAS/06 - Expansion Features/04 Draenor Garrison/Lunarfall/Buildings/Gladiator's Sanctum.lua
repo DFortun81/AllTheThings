@@ -89,6 +89,7 @@ _.ExpansionFeatures =
 							q(36955, {	-- Nemesis: Hunter - Hunted
 								["provider"] = { "n", 86677 },	-- Kuros
 								["races"] = ALLIANCE_ONLY,
+								["isRepeatable"] = true,
 							}),
 							q(36968, {	-- Nemesis: Huojin's Fall
 								["provider"] = { "n", 86677 },	-- Kuros
