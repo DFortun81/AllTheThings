@@ -637,6 +637,9 @@ _.ExpansionFeatures =
 								q(62407, {	-- Herbicidal Tendencies
 									["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag
 									["provider"] = { "n", 159240 },	-- Gas Bag
+									["crs"] = {
+										167763,	-- Gas Bag (Ghost)
+									},
 									["coord"] = { 54.2, 68.0, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
@@ -659,6 +662,9 @@ _.ExpansionFeatures =
 								q(59293, {	-- Special Formula
 									["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag
 									["provider"] = { "n", 159240 },	-- Gas Bag
+									["crs"] = {
+										167763,	-- Gas Bag (Ghost)
+									},
 									["coord"] = { 54.2, 68.0, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
