@@ -7,9 +7,6 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
 			n(ZONEDROPS, {
-				i(177698),	-- Untamed Spirit Ardenweald (Uncommon)
-				i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)
-				i(177700),	-- Greater Untamed Spirit Ardenweald (Epic)
 				i(180522),	-- Phaedrum Lockbox
 				i(175545),	-- Blackthorn Chestplate
 				i(175553),	-- Blackthorn Gauntlets

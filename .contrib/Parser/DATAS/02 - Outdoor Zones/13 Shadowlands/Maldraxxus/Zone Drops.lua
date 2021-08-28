@@ -21,7 +21,6 @@ _.Zones =
 						i(181818),	-- Chewed Reins of the Callowed Flayedwing
 					},
 				}),
-				i(178877),	-- Divine Martial Spirit (Rare)
 				i(177236, {	-- Dog Bone's Bone
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["crs"] = {
@@ -37,8 +36,6 @@ _.Zones =
 						}),
 					},
 				}),
-				i(178874),	-- Martial Spirit Maldraxxus (Uncommon)
-				i(178878),	-- Greater Martial Spirit (Epic)
 				i(180781, {	-- Pattern: Pink Party Hat
 					["crs"] = {
 						172389,	-- Acrid Runoff

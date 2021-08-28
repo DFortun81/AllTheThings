@@ -103,91 +103,101 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-905, {	-- Command Table
-						q(64459, {	-- Adventurer: Elwyn
-							["description"] = "Requires Renown 62.",
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["g"] = {
-								follower(1338),	-- Elwyn
-							},
-						}),
-						q(61857, {	-- Adventurer: Groonoomcrooek
-							["description"] = "Requires Renown 38.",
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["g"] = {
-								follower(1288),	-- Groonoomcrooek
-							},
-						}),
-						q(61854, {	-- Adventurer: Master Sha'lor
-							["description"] = "Requires Renown 17.",
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["g"] = {
-								follower(1284),	-- Master Sha'lor
-							},
-						}),
-						q(61852, {	-- Adventurer: Guardian Kota
-							["description"] = "Requires Renown 4.",
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["g"] = {
-								follower(1283),	-- Guardian Kota
-							},
-						}),
-						q(61855, {	-- Adventurer: Qadarin
-							["description"] = "Requires Renown 27.",
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["g"] = {
-								follower(1286),	-- Qadarin
-							},
-						}),
-						q(64458, {	-- Adventurer: Sulanoom
-							["description"] = "Requires Renown 44.",
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["g"] = {
-								follower(1337),	-- Sulanoom
-							},
-						}),
-						q(61853, {	-- Adventurer: Te'zan
-							["description"] = "Requires Renown 12.",
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["g"] = {
-								follower(1285),	-- Te'zan
-							},
-						}),
-						q(61856, {	-- Adventurer: Watcher Vesperbloom
-							["description"] = "Requires Renown 33.",
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["g"] = {
-								follower(1287),	-- Watcher Vesperbloom
-							},
-						}),
-						q(64460, {	-- Adventurer: Yanlar
-							["description"] = "Requires Renown 71.",
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["g"] = {
-								follower(1339),	-- Yanlar
-							},
-						}),
-						q(61553, {	-- Know Where to Strike
-							["sourceQuests"] = { 61552 },	-- The Hunt Watches
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.6, 56.2, ARDENWEALD },
-						}),
-						q(61552, {	-- The Hunt Watches
-							["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-							["coord"] = { 39.7, 55.7, THE_TRUNK },
-						}),
-						-- think these headers are unneccessary, unless we find quests later that require tier 2/3
-						-- n(-906, {	-- Tier 1: Tactical Insight
-						-- Tier 2: Grovetender's Gift
-						-- Tier 3: Hidden Pathways
+						["g"] = {	
+							i(177698),	-- Untamed Spirit Ardenweald (Uncommon)
+							i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)
+						--	i(177700),	-- Greater Untamed Spirit Ardenweald (Epic)
+						--	i(178879),	-- Greater Dutiful Spirit (Epic)
+							i(178880),	-- Divine Dutiful Spirit (Rare)
+							i(178881),	-- Dutiful Spirit Bastion (Uncommon)
+							i(178877),	-- Divine Martial Spirit (Rare)
+							i(178874),	-- Martial Spirit Maldraxxus (Uncommon)
+						--	i(178878),	-- Greater Martial Spirit (Epic)
+						--	i(178884),	-- Greater Prideful Spirit (Epic)
+							i(178883),	-- Divine Prideful Spirit (Rare)
+							i(178882),	-- Prideful Spirit Revendreth(Uncommon)
+							q(64459, {	-- Adventurer: Elwyn
+								["description"] = "Requires Renown 62.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1338),	-- Elwyn
+								},
+							}),
+							q(61857, {	-- Adventurer: Groonoomcrooek
+								["description"] = "Requires Renown 38.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1288),	-- Groonoomcrooek
+								},
+							}),
+							q(61854, {	-- Adventurer: Master Sha'lor
+								["description"] = "Requires Renown 17.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1284),	-- Master Sha'lor
+								},
+							}),
+							q(61852, {	-- Adventurer: Guardian Kota
+								["description"] = "Requires Renown 4.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1283),	-- Guardian Kota
+								},
+							}),
+							q(61855, {	-- Adventurer: Qadarin
+								["description"] = "Requires Renown 27.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1286),	-- Qadarin
+								},
+							}),
+							q(64458, {	-- Adventurer: Sulanoom
+								["description"] = "Requires Renown 44.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1337),	-- Sulanoom
+								},
+							}),
+							q(61853, {	-- Adventurer: Te'zan
+								["description"] = "Requires Renown 12.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1285),	-- Te'zan
+								},
+							}),
+							q(61856, {	-- Adventurer: Watcher Vesperbloom
+								["description"] = "Requires Renown 33.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1287),	-- Watcher Vesperbloom
+								},
+							}),
+							q(64460, {	-- Adventurer: Yanlar
+								["description"] = "Requires Renown 71.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1339),	-- Yanlar
+								},
+							}),
+							q(61553, {	-- Know Where to Strike
+								["sourceQuests"] = { 61552 },	-- The Hunt Watches
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.6, 56.2, ARDENWEALD },
+							}),
+							q(61552, {	-- The Hunt Watches
+								["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+								["coord"] = { 39.7, 55.7, THE_TRUNK },
+							}),
+						},
 					}),
 					n(-930, {	-- Queen's Conservatory
 						["maps"] = { 1662 },	-- Queen's Conservatory

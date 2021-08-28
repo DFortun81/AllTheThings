@@ -16,9 +16,6 @@ _.Zones =
 						156560,	-- Misguided Postulant
 					},
 				}),
-				i(178879),	-- Greater Dutiful Spirit (Epic)
-				i(178880),	-- Divine Dutiful Spirit (Rare)
-				i(178881),	-- Dutiful Spirit Bastion (Uncommon)
 				i(180533),	-- Solenium Lockbox
 				i(176788),	-- Darkfeather Belt
 				i(176792),	-- Darkfeather Bindings

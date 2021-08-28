@@ -11,9 +11,6 @@ _.Zones =
 				--	TODO: this currently has one pure non-pickpocketing drop listed on wowhead.  it's 1/4484, which is quite low, so it could be a fluke.  check back and see if this could be moved to overall zone drop section rather than a specific pickpocketing subsection.
 					i(180870),	-- Shadow's Bite
 				}),
-				i(178884),	-- Greater Prideful Spirit (Epic)
-				i(178883),	-- Divine Prideful Spirit (Rare)
-				i(178882),	-- Prideful Spirit Revendreth(Uncommon)
 				i(179311),	-- Oxxein Lockbox
 				i(172957, {	-- Atonement Crypt Key
 					["description"] = "Used to open the crypts around |cFFFFFFFF70.1, 55.2|r.",

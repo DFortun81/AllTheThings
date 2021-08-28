@@ -13,6 +13,7 @@ _.Zones =
 					crit(3),	-- Kill players in Nazjatar
 					crit(4),	-- Loot 5 War Supply Chests in Nazjatar
 				},
+				["pvp"] = true,
 			}),
 			ach(13715, {	-- From the Belly of the Jelly
 				["filterID"] = 101,	-- Battle Pet

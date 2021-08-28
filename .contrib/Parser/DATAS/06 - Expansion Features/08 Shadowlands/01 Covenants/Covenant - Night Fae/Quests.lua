@@ -117,10 +117,24 @@ _.ExpansionFeatures =
 					}),
 					q(62860, {	-- Return Lost Souls (20 soul version)
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
-						["description"] = "Requires Renown 32.",
+						["description"] = "Requires Renown 32. Depending on the level of your Queen's Conservatory this will reward higher quality spirits. Rank 5 will grant you an Epic Spirit.",
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["coord"] = { 33.9, 43.5, ARDENWEALD },
 						["isWeekly"] = true,
+						["g"] = {	
+							i(177698),	-- Untamed Spirit Ardenweald (Uncommon)
+							i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)
+							i(177700),	-- Greater Untamed Spirit Ardenweald (Epic)
+							i(178879),	-- Greater Dutiful Spirit (Epic)
+							i(178880),	-- Divine Dutiful Spirit (Rare)
+							i(178881),	-- Dutiful Spirit Bastion (Uncommon)
+							i(178877),	-- Divine Martial Spirit (Rare)
+							i(178874),	-- Martial Spirit Maldraxxus (Uncommon)
+							i(178878),	-- Greater Martial Spirit (Epic)
+							i(178884),	-- Greater Prideful Spirit (Epic)
+							i(178883),	-- Divine Prideful Spirit (Rare)
+							i(178882),	-- Prideful Spirit Revendreth(Uncommon)
+						},
 					}),
 					q(62536, {	-- The Lost of Teldrassil
 						-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday.
