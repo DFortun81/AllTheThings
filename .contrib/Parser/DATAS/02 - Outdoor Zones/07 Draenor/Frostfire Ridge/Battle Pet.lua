@@ -33,7 +33,7 @@ _.Zones =
 					["coord"] = { 68.5, 64.7, FROSTFIRE_RIDGE },
 					["provider"] = { "n", 87122 },	-- Gargra
 					["g"] = {
-						currency(116415),	-- Shiny Pet Charm x2
+						i(116415),	-- Shiny Pet Charm x2
 					},
 				}),
 			}),

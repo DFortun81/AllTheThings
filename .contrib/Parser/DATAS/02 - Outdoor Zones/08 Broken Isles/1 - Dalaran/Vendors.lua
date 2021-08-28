@@ -1672,7 +1672,6 @@ _.Zones =
 						}),
 						i(147294, {	-- Bone-Wrought Coffer of the Damned [Death Knight]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
-							["b"] = 2,	-- BoA Token
 							["_drop"] = { "spellID" },
 							["g"] = {
 								i(132459),	-- Perseverance of the Ebon Martyr
@@ -1703,7 +1702,6 @@ _.Zones =
 						}),
 						i(147301, {	-- Coffer of Twin Faiths [Priest]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
-							["b"] = 2,	-- BoA Token
 							["_drop"] = { "spellID" },
 							["g"] = {
 								i(144244),	-- Kam Xi'raff
@@ -1737,7 +1735,6 @@ _.Zones =
 						}),
 						i(147297, {	-- Deepwood Ranger's Quiver [Hunter]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
-							["b"] = 2,	-- BoA Token
 							["_drop"] = { "spellID" },
 							["g"] = {
 								i(137064),	-- The Shadow Hunter's Voodoo Mask
@@ -1767,7 +1764,6 @@ _.Zones =
 						}),
 						i(147295, {	-- Demonslayer's Soul-Sealed Satchel [Demon Hunter]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
-							["b"] = 2,	-- BoA Token
 							["_drop"] = { "spellID" },
 							["g"] = {
 								i(137061),	-- Raddon's Cascading Eyes
@@ -1794,7 +1790,6 @@ _.Zones =
 						}),
 						i(147303, {	-- Giant Elemental's Close Stone Fist [Shaman]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
-							["b"] = 2,	-- BoA Token
 							["_drop"] = { "spellID" },
 							["g"] = {
 								i(143732),	-- Uncertain Reminder
@@ -1824,7 +1819,6 @@ _.Zones =
 						}),
 						i(147299, {	-- Hand-Carved Jade Puzzle Box [Monk]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
-							["b"] = 2,	-- BoA Token
 							["_drop"] = { "spellID" },
 							["g"] = {
 								i(137063),	-- Fundamental Observation
@@ -1860,7 +1854,6 @@ _.Zones =
 						}),
 						i(147302, {	-- Hollow Skeleton Key [Rogue]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
-							["b"] = 2,	-- BoA Token
 							["_drop"] = { "spellID" },
 							["g"] = {
 								i(151815),	-- The Empty Crown
@@ -1886,7 +1879,6 @@ _.Zones =
 						}),
 						i(147300, {	-- Light-Bound Relinquary [Paladin]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
-							["b"] = 2,	-- BoA Token
 							["_drop"] = { "spellID" },
 							["g"] = {
 								i(137065),	-- Justice Gaze
@@ -1918,7 +1910,6 @@ _.Zones =
 						}),
 						i(147296, {	-- Living Root-Bound Cache [Druid]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
-							["b"] = 2,	-- BoA Token
 							["_drop"] = { "spellID" },
 							["g"] = {
 								i(151801),	-- Behemoth Headdress
@@ -1957,7 +1948,6 @@ _.Zones =
 						}),
 						i(147304, {	-- Pocket Keystone to Abandoned World [Warlock]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
-							["b"] = 2,	-- BoA Token
 							["_drop"] = { "spellID" },
 							["g"] = {
 								i(132394),	-- Hood of Eternal Disdain
@@ -1986,7 +1976,6 @@ _.Zones =
 						}),
 						i(147298, {	-- Spell-Secured Pocket of Infinite Depths [Mage]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
-							["b"] = 2,	-- BoA Token
 							["_drop"] = { "spellID" },
 							["g"] = {
 								i(132863),	-- Darckli's Dragonfire Diadem
@@ -2015,7 +2004,6 @@ _.Zones =
 						}),
 						i(147305, {	-- Stalwart Champion's War Chest [Warrior]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
-							["b"] = 2,	-- BoA Token
 							["_drop"] = { "spellID" },
 							["g"] = {
 								i(137088),	-- Ceann-Ar Charger

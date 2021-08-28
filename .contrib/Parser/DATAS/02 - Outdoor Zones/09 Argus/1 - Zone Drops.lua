@@ -14,7 +14,7 @@ _.Zones =
 					882,	-- Mac'Aree
 					833,	-- Nath'raxas Spire
 				},
-				["g"] = sharedData({["b"] = 2}, {
+				["g"] = {
 					i(152740, {	-- Unsullied Cloak
 						i(152778),	-- Conservatory Ward's Drape
 					}),
@@ -138,7 +138,7 @@ _.Zones =
 						i(151004),	-- Voidbent Isolon Effigy
 						i(150999),	-- Wakener's Demonic Focus
 					}),
-				}),
+				},
 			}),
 		},
 	}),
