@@ -3730,16 +3730,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if topLevelSearch then
 
 			BuildGroups(group, group.g);
-			-- skip Character filtering for sub-groups if this Item meets the Ignore BoE filter logic, since it can be moved to the designated character
-			if app.ItemBindFilter ~= app.NoFilter and app.ItemBindFilter(group) then
-				local oldItemBindFilter = app.ItemBindFilter;
-				app.ItemBindFilter = app.NoFilter;
-				app.TopLevelUpdateGroup(group);
-				-- reapply the previous BoE filter
-				app.ItemBindFilter = oldItemBindFilter;
-			else
-				app.TopLevelUpdateGroup(group);
-			end
+			app.TopLevelUpdateGroup(group);
 		end
 	end
 
@@ -11775,7 +11766,15 @@ app.UpdateParentProgress = UpdateParentProgress;
 local function TopLevelUpdateGroup(group, window)
 	group.total = 0;
 	group.progress = 0;
-	UpdateGroups(group, group.g, window);
+	if app.ItemBindFilter ~= app.NoFilter and app.ItemBindFilter(group) then
+		local oldItemBindFilter = app.ItemBindFilter;
+		app.ItemBindFilter = app.NoFilter;
+		UpdateGroups(group, group.g, window);
+		-- reapply the previous BoE filter
+		app.ItemBindFilter = oldItemBindFilter;
+	else
+		UpdateGroups(group, group.g, window);
+	end
 	if group.collectible then
 		group.total = group.total + 1;
 		if group.collected then
@@ -14154,16 +14153,7 @@ local function UpdateWindow(self, force, got)
 			if not self.doesOwnUpdate and
 				(force or (self.shouldFullRefresh and self:IsVisible())) then
 				-- print("UpdateGroups",self.suffix or self.Suffix)
-				-- skip Character filtering for sub-groups if this Root Window Item meets the Ignore BoE filter logic, since it can be moved to the designated character
-				if app.ItemBindFilter ~= app.NoFilter and app.ItemBindFilter(self.data) then
-					local oldItemBindFilter = app.ItemBindFilter;
-					app.ItemBindFilter = app.NoFilter;
-					TopLevelUpdateGroup(self.data, self);
-					-- reapply the previous BoE filter
-					app.ItemBindFilter = oldItemBindFilter;
-				else
-					TopLevelUpdateGroup(self.data, self);
-				end
+				TopLevelUpdateGroup(self.data, self);
 				self.HasPendingUpdate = nil;
 				-- print("Done")
 			end
