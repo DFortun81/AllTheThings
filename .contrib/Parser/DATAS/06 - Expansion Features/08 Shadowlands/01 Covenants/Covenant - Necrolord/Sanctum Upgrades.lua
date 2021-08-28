@@ -102,6 +102,8 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(182489),	-- Stitched Harbinger's Greatcloak
 										i(182498),	-- Stitched Wraith's Cloak
+										i(182507),	-- Stitched Conjurer's Cape
+										i(182516),	-- Stitched Tactician's Drape
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -140,6 +142,8 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(182482),	-- Stitched Harbinger's Chestguard
 										i(182500),	-- Stitched Conjurer's Tunic
+										i(182491),	-- Stitched Wraith's Jerkin
+										i(182509),	-- Stitched Tactician's Hauberk
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -179,8 +183,10 @@ _.ExpansionFeatures =
 									["coord"] = { 54.3, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
-										i(182492),	-- Stitched Wraith's Boots
+										i(182501),	-- Stitched Conjurer's Slippers
 										i(182483),	-- Stitched Harbinger's Stompers
+										i(182510),	-- Stitched Tactician's Sabatons
+										i(182492),	-- Stitched Wraith's Boots
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -192,6 +198,8 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(182501),	-- Stitched Conjurer's Slippers
 										i(182483),	-- Stitched Harbinger's Stompers
+										i(182510),	-- Stitched Tactician's Sabatons
+										i(182492),	-- Stitched Wraith's Boots
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -203,6 +211,8 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(182501),	-- Stitched Conjurer's Slippers
 										i(182483),	-- Stitched Harbinger's Stompers
+										i(182510),	-- Stitched Tactician's Sabatons
+										i(182492),	-- Stitched Wraith's Boots
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -214,6 +224,8 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(182496),	-- Stitched Wraith's Belt
 										i(182487),	-- Stitched Harbinger's Warbelt
+										i(182505),	-- Stitched Conjurer's Cinch
+										i(182514),	-- Stitched Tactician's Girdle
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -223,8 +235,10 @@ _.ExpansionFeatures =
 									["coord"] = { 54.2, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
-										i(182500),	-- Stitched Conjurer's Tunic
 										i(182482),	-- Stitched Harbinger's Chestguard
+										i(182500),	-- Stitched Conjurer's Tunic
+										i(182491),	-- Stitched Wraith's Jerkin
+										i(182509),	-- Stitched Tactician's Hauberk
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -241,6 +255,8 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(182496),	-- Stitched Wraith's Belt
 										i(182487),	-- Stitched Harbinger's Warbelt
+										i(182505),	-- Stitched Conjurer's Cinch
+										i(182514),	-- Stitched Tactician's Girdle
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -266,7 +282,9 @@ _.ExpansionFeatures =
 									["isWeekly"] = true,
 									["g"] = {
 										i(182489),	-- Stitched Harbinger's Greatcloak
+										i(182498),	-- Stitched Wraith's Cloak
 										i(182507),	-- Stitched Conjurer's Cape
+										i(182516),	-- Stitched Tactician's Drape
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -281,8 +299,10 @@ _.ExpansionFeatures =
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
+										i(182489),	-- Stitched Harbinger's Greatcloak
 										i(182498),	-- Stitched Wraith's Cloak
 										i(182507),	-- Stitched Conjurer's Cape
+										i(182516),	-- Stitched Tactician's Drape
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -314,8 +334,10 @@ _.ExpansionFeatures =
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
+										i(182489),	-- Stitched Harbinger's Greatcloak
 										i(182498),	-- Stitched Wraith's Cloak
-										i(182507),	-- Stitched Conjurer's Cape	
+										i(182507),	-- Stitched Conjurer's Cape
+										i(182516),	-- Stitched Tactician's Drape
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -325,8 +347,10 @@ _.ExpansionFeatures =
 									["coord"] = { 54.2, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
-										i(182500),	-- Stitched Conjurer's Tunic
 										i(182482),	-- Stitched Harbinger's Chestguard
+										i(182500),	-- Stitched Conjurer's Tunic
+										i(182491),	-- Stitched Wraith's Jerkin
+										i(182509),	-- Stitched Tactician's Hauberk
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -340,6 +364,7 @@ _.ExpansionFeatures =
 								}),
 							}),
 							n(-908, {	-- Rewards
+								["description"] = "The cosmetic items under this header are occasionally random rewards from the Weekly Quests from your Constructs.",
 								["g"] = {
 									i(184843, {	-- Salvaged Supplies
 										["description"] = "Rewarded by the Weekly Quests from your Constructs.",
@@ -347,23 +372,6 @@ _.ExpansionFeatures =
 									i(183744, {	-- Superior Parts
 										["description"] = "Rewarded by the Weekly Quests from your Constructs.",
 									}),
-									i(182505),	-- Stitched Conjurer's Cinch
-									i(182499),	-- Stitched Conjurer's Cowl
-									i(182502),	-- Stitched Conjurer's Gloves
-									i(182506),	-- Stitched Conjurer's Wristwraps
-									i(182489),	-- Stitched Harbinger's Greatcloak
-									i(182481),	-- Stitched Harbinger's Greathelm
-									i(182515),	-- Stitched Tactician's Bracers
-									i(182512),	-- Stitched Tactician's Chausses
-									i(182516),	-- Stitched Tactician's Drape
-									i(182508),	-- Stitched Tactician's Faceguard
-									i(182511),	-- Stitched Tactician's Gauntlets
-									i(182514),	-- Stitched Tactician's Girdle
-									i(182509),	-- Stitched Tactician's Hauberk
-									i(182510),	-- Stitched Tactician's Sabatons
-									i(182513),	-- Stitched Tactician's Spaulders
-									i(182491),	-- Stitched Wraith's Jerkin
-									i(182495),	-- Stitched Wraith's Shoulders
 								},
 							}),
 							n(161270, {	-- Chordy
@@ -385,6 +393,8 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(182488),	-- Stitched Harbinger's Vambraces
 										i(182497),	-- Stitched Wraith's Armguards
+										i(182506),	-- Stitched Conjurer's Wristwraps
+										i(182515),	-- Stitched Tactician's Bracers
 										o(357937, {	-- Burried Cache (Revendreth version)
 											["g"] = {
 												i(183826),	-- Big Floppy Hat
@@ -410,6 +420,8 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(182485),	-- Stitched Harbinger's Greaves
 										i(182494),	-- Stitched Wraith's Breeches
+										i(182512),	-- Stitched Tactician's Chausses
+										i(182503),	-- Stitched Conjurer's Leggings
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -426,6 +438,8 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(182488),	-- Stitched Harbinger's Vambraces
 										i(182497),	-- Stitched Wraith's Armguards
+										i(182506),	-- Stitched Conjurer's Wristwraps
+										i(182515),	-- Stitched Tactician's Bracers
 										o(357771, {	-- Burried Cache (Ardenweald version)
 											["g"] = {
 												i(183755),	-- Ardenweald Wreath
@@ -444,8 +458,10 @@ _.ExpansionFeatures =
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
-										i(182486),	-- Stitched Harbinger's Pauldrons
+										i(182513),	-- Stitched Tactician's Spaulders
 										i(182504),	-- Stitched Conjurer's Mantle
+										i(182495),	-- Stitched Wraith's Shoulders
+										i(182486),	-- Stitched Harbinger's Pauldrons
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -456,6 +472,8 @@ _.ExpansionFeatures =
 									["isWeekly"] = true,
 									["g"] = {
 										i(182485),	-- Stitched Harbinger's Greaves
+										i(182494),	-- Stitched Wraith's Breeches
+										i(182512),	-- Stitched Tactician's Chausses
 										i(182503),	-- Stitched Conjurer's Leggings
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
@@ -468,6 +486,8 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(182513),	-- Stitched Tactician's Spaulders
 										i(182504),	-- Stitched Conjurer's Mantle
+										i(182495),	-- Stitched Wraith's Shoulders
+										i(182486),	-- Stitched Harbinger's Pauldrons
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -483,6 +503,9 @@ _.ExpansionFeatures =
 									["isWeekly"] = true,
 									["g"] = {
 										i(182485),	-- Stitched Harbinger's Greaves
+										i(182494),	-- Stitched Wraith's Breeches
+										i(182512),	-- Stitched Tactician's Chausses
+										i(182503),	-- Stitched Conjurer's Leggings
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -492,8 +515,10 @@ _.ExpansionFeatures =
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
-										i(182486),	-- Stitched Harbinger's Pauldrons
+										i(182513),	-- Stitched Tactician's Spaulders
 										i(182504),	-- Stitched Conjurer's Mantle
+										i(182495),	-- Stitched Wraith's Shoulders
+										i(182486),	-- Stitched Harbinger's Pauldrons
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -510,7 +535,6 @@ _.ExpansionFeatures =
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
-									--	i(181809),	-- Tomalins Seasoing Crystal
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -522,6 +546,8 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(182493),	-- Stitched Wraith's Stranglers
 										i(182484),	-- Stitched Harbinger's Crushers
+										i(182502),	-- Stitched Conjurer's Gloves
+										i(182511),	-- Stitched Tactician's Gauntlets
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -531,7 +557,6 @@ _.ExpansionFeatures =
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
-									--	i(181809),	-- Tomalins Seasoing Crystal
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -543,6 +568,8 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(182493),	-- Stitched Wraith's Stranglers
 										i(182484),	-- Stitched Harbinger's Crushers
+										i(182502),	-- Stitched Conjurer's Gloves
+										i(182511),	-- Stitched Tactician's Gauntlets
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -554,6 +581,8 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(182493),	-- Stitched Wraith's Stranglers
 										i(182484),	-- Stitched Harbinger's Crushers
+										i(182502),	-- Stitched Conjurer's Gloves
+										i(182511),	-- Stitched Tactician's Gauntlets
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -563,8 +592,10 @@ _.ExpansionFeatures =
 									["coord"] = { 54.2, 68.0, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
+										i(182499),	-- Stitched Conjurer's Cowl
 										i(182490),	-- Stitched Wraith's Visage
 										i(182481),	-- Stitched Harbinger's Greathelm
+										i(182508),	-- Stitched Tactician's Faceguard
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -574,7 +605,6 @@ _.ExpansionFeatures =
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
-									--	i(181809),	-- Tomalins Seasoing Crystal
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -584,8 +614,10 @@ _.ExpansionFeatures =
 									["coord"] = { 54.2, 68.0, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
+										i(182499),	-- Stitched Conjurer's Cowl
 										i(182490),	-- Stitched Wraith's Visage
 										i(182481),	-- Stitched Harbinger's Greathelm
+										i(182508),	-- Stitched Tactician's Faceguard
 									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
@@ -641,6 +673,16 @@ _.ExpansionFeatures =
 						}),
 						n(-938, {	-- Tier 5: Best Fiends Forever
 							n(QUESTS, {
+								q(59043, {	-- Baker's Dozen
+									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
+									["provider"] = { "n", 161678 },	-- Mama Tomalin
+									["coord"] = { 55.3, 68.6, MALDRAXXUS },
+									["isWeekly"] = true,
+									["g"] = {
+										i(181809),	-- Tomalins Seasoning Crystal
+									},
+									["_drop"] = { "g" },	-- Superior Parts is included from API
+								}),
 								q(57634, {	-- Bring Your Own
 									["sourceQuests"] = { 58411 },	-- Construct Body: Iron Phillip
 									["provider"] = { "n", 159199 },    -- Iron Phillip
@@ -663,15 +705,24 @@ _.ExpansionFeatures =
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
+								q(56470, {	-- Give A Dog A Bone
+									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
+									["provider"] = { "n", 161678 },	-- Mama Tomalin
+									["coord"] = { 55.3, 68.6, MALDRAXXUS },
+									["isWeekly"] = true,
+									["g"] = {
+										i(181809),	-- Tomalins Seasoning Crystal
+									},
+									["_drop"] = { "g" },	-- Superior Parts is included from API
+								}),
 								q(58992, {	-- Pie Not?
 									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
-									-- Tier 5 is required to have the item sometimes show up.
-									["g"] = {
-										i(181809),	-- Tomalin's Seasoning Crystal
-									},
 									["isWeekly"] = true,
+									["g"] = {
+										i(181809),	-- Tomalins Seasoning Crystal
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61637, {	-- Unity
