@@ -3018,21 +3018,24 @@ local function FillPurchases(group, depth)
 		-- Nest new copies of the cost collectible objects of this group under itself
 		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
 		NestObject(group, usedToBuy);
-		local filtered;
-		-- add unfiltered purchases first
-		for _,purchase in ipairs(collectibles) do
-			if app.RecursiveGroupRequirementsFilter(purchase) then
-				NestObject(usedToBuy, purchase, true);
-			else
-				if filtered then tinsert(filtered, purchase)
-				else filtered = { purchase }; end
+
+		if app.ItemBindFilter ~= app.NoFilter and app.ItemBindFilter(group) then
+			-- if this group meets the BoE filter, then throw it all in
+			NestObjects(usedToBuy, collectibles, true);
+		else
+			-- otherwise have to make sure the unfiltered groups are added first, then filtered groups are added after
+			local unfiltered,filtered = {}, {};
+			for _,purchase in ipairs(collectibles) do
+				if app.RecursiveGroupRequirementsFilter(purchase) then
+					tinsert(unfiltered, purchase);
+				else
+					tinsert(filtered, purchase);
+				end
 			end
-		end
-		-- then add filtered purchases after
-		if filtered then
-			for _,purchase in ipairs(filtered) do
-				NestObject(usedToBuy, purchase, true);
-			end
+			-- add unfiltered purchases first
+			NestObjects(usedToBuy, unfiltered, true);
+			-- then add filtered purchases after
+			NestObjects(usedToBuy, filtered, true);
 		end
 		-- print("Filled",#collectibles,"under",group.key,group.key and group[group.key],"as",#usedToBuy.g,"unique groups")
 		-- reduce the depth by one since a cost has been filled
