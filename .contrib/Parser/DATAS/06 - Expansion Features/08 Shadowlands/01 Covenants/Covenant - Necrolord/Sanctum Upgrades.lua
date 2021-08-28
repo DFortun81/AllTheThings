@@ -480,7 +480,7 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 									["provider"] = { "n", 159198 },    -- The Professor
 									["crs"] = {
-										173028,	-- The Professor (Ghost)
+										167762,	-- The Professor (Ghost)
 									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
@@ -512,7 +512,7 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 									["provider"] = { "n", 159198 },    -- The Professor
 									["crs"] = {
-										173028,	-- The Professor (Ghost)
+										167762,	-- The Professor (Ghost)
 									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
@@ -549,7 +549,7 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 									["provider"] = { "n", 159198 },    -- The Professor
 									["crs"] = {
-										173028,	-- The Professor (Ghost)
+										167762,	-- The Professor (Ghost)
 									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
