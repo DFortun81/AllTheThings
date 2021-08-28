@@ -138,6 +138,9 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 									["provider"] = { "n", 158301 },    -- Marz
 									["coord"] = { 54.2, 68.6, MALDRAXXUS },
+									["crs"] = {
+										167162,	-- Marz (Ghost)
+									},
 									["isWeekly"] = true,
 									["g"] = {
 										i(182482),	-- Stitched Harbinger's Chestguard
@@ -219,6 +222,9 @@ _.ExpansionFeatures =
 								q(60765, {    -- Cure For All Ills
 									["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
 									["provider"] = { "n", 159241 },    -- Roseboil
+									["crs"] = {
+										167159,	-- Roseboil (Ghost)
+									},
 									["coord"] = { 55.1, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
@@ -232,6 +238,9 @@ _.ExpansionFeatures =
 								q(62217, {	-- Field Training
 									["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 									["provider"] = { "n", 158301 },    -- Marz
+									["crs"] = {
+										167162,	-- Marz (Ghost)
+									},
 									["coord"] = { 54.2, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
@@ -250,6 +259,9 @@ _.ExpansionFeatures =
 								q(62041, {	-- In A Bad Light
 									["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
 									["provider"] = { "n", 159241 },    -- Roseboil
+									["crs"] = {
+										167159,	-- Roseboil (Ghost)
+									},
 									["coord"] = { 55.1, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
@@ -344,6 +356,9 @@ _.ExpansionFeatures =
 								q(62216, {	-- Training Program
 									["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 									["provider"] = { "n", 158301 },    -- Marz
+									["crs"] = {
+										167162,	-- Marz (Ghost)
+									},
 									["coord"] = { 54.2, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
@@ -387,6 +402,9 @@ _.ExpansionFeatures =
 								q(62244, {	-- Digging Around
 									["sourceQuests"] = { 58414 },	-- Construct Body: Toothpick
 									["provider"] = { "n", 159212 },    -- Toothpick
+									["crs"] = {
+										167764,	-- Toothpick (Ghost)
+									},
 									["coord"] = { 54.9, 67.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
@@ -415,6 +433,9 @@ _.ExpansionFeatures =
 								q(62194, {	-- Fighting Words
 									["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
 									["provider"] = { "n", 159226 },    -- Sabrina
+									["crs"] = {
+										173028,	-- Sabrina (Ghost)
+									},
 									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
@@ -432,6 +453,9 @@ _.ExpansionFeatures =
 								q(60237, {	-- Old Stomping Grounds
 									["sourceQuests"] = { 58414 },	-- Construct Body: Toothpick
 									["provider"] = { "n", 159212 },    -- Toothpick
+									["crs"] = {
+										167764,	-- Toothpick (Ghost)
+									},
 									["coord"] = { 54.9, 67.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
@@ -455,6 +479,9 @@ _.ExpansionFeatures =
 								q(62294, {	-- One Lich's Trash...
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 									["provider"] = { "n", 159198 },    -- The Professor
+									["crs"] = {
+										173028,	-- The Professor (Ghost)
+									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
@@ -468,6 +495,9 @@ _.ExpansionFeatures =
 								q(61996, {	-- Say The Magic Words
 									["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
 									["provider"] = { "n", 159226 },    -- Sabrina
+									["crs"] = {
+										173028,	-- Sabrina (Ghost)
+									},
 									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
@@ -481,6 +511,9 @@ _.ExpansionFeatures =
 								q(58515, {	-- Scrounging for Scrolls
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 									["provider"] = { "n", 159198 },    -- The Professor
+									["crs"] = {
+										173028,	-- The Professor (Ghost)
+									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
@@ -499,6 +532,9 @@ _.ExpansionFeatures =
 								q(62195, {	-- The Last Word
 									["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
 									["provider"] = { "n", 159226 },    -- Sabrina
+									["crs"] = {
+										173028,	-- Sabrina (Ghost)
+									},
 									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
@@ -512,6 +548,9 @@ _.ExpansionFeatures =
 								q(58525, {	-- The Two Sides of History
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 									["provider"] = { "n", 159198 },    -- The Professor
+									["crs"] = {
+										173028,	-- The Professor (Ghost)
+									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
@@ -541,6 +580,9 @@ _.ExpansionFeatures =
 								q(60342, {	-- Cut 'Em Down to Size
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
 									["provider"] = { "n", 159214 },	-- Guillotine
+									["crs"] = {
+										173030,	-- Guillotine (Ghost)
+									},
 									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
@@ -563,6 +605,9 @@ _.ExpansionFeatures =
 								q(62261, {	-- Grinder
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
 									["provider"] = { "n", 159214 },	-- Guillotine
+									["crs"] = {
+										173030,	-- Guillotine (Ghost)
+									},
 									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
@@ -576,6 +621,9 @@ _.ExpansionFeatures =
 								q(60340, {	-- Hands on Approach
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
 									["provider"] = { "n", 159214 },	-- Guillotine
+									["crs"] = {
+										173030,	-- Guillotine (Ghost)
+									},
 									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
 									["g"] = {
