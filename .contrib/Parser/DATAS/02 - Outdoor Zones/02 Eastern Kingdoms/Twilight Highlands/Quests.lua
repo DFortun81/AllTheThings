@@ -1724,6 +1724,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(27583, {	-- The Northern Flank
+					["sourceQuests"] = { 26840 },	-- Return to the Highlands
 					["provider"] = { "n", 44169 },	-- Zaela
 					["coord"] = { 75.3, 54.8, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
@@ -1747,6 +1748,7 @@ _.Zones =
 					["provider"] = { "n", 46812 },	-- Edana Mullan
 				}),
 				q(27607, {	-- The Southern Flank
+					["sourceQuests"] = { 26840 },	-- Return to the Highlands
 					["provider"] = { "n", 44169 },	-- Zaela
 					["coord"] = { 75.3, 54.8, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
@@ -1964,6 +1966,7 @@ _.Zones =
 					["provider"] = { "n", 48366 },	-- Russell Brower
 				}),
 				q(26619, {	-- You Say You Want a Revolution
+					["sourceQuests"] = { 26540 },	-- Dangerous Compassion
 					["provider"] = { "n", 43193 },	-- Warlord Krogg
 					["coord"] = { 82.4, 49.8, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
