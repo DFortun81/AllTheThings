@@ -9671,6 +9671,13 @@ local fields = RawCloneData(headerFields);
 fields.saved = headerFields.savedAsQuest;
 fields.trackable = headerFields.trackableAsQuest;
 app.BaseHeaderWithQuest = app.BaseObjectFields(fields);
+local fields = RawCloneData(headerFields);
+fields.name = headerFields.nameAsAchievement;
+fields.icon = headerFields.iconAsAchievement;
+--fields.link = headerFields.linkAsAchievement;
+fields.saved = headerFields.savedAsQuest;
+fields.trackable = headerFields.trackableAsQuest;
+app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields);
 app.CreateNPC = function(id, t)
 	if t then
 		-- TEMP: clean MoH tagging from random Vendors
@@ -9682,9 +9689,10 @@ app.CreateNPC = function(id, t)
 			if rawget(t, "achID") then
 				rawset(t, "achievementID", app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID"));
 				if rawget(t, "questID") then
-					print("Uh, someone is using a questID on a Header Object.. Don't do that!", id, t.questID);
+					return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithAchievementAndQuest);
+				else
+					return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithAchievement);
 				end
-				return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithAchievement);
 			else
 				if rawget(t, "questID") then
 					return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithQuest);
