@@ -471,6 +471,8 @@ app.L = {
 	-- Features tab
 	["FEATURES_TAB"] = "Features";
 	["MODULES_LABEL"] = "Modules & Mini Lists";
+	["ADHOC_UPDATES_CHECKBOX"] = "Use Ad-Hoc Window Updates";
+	["ADHOC_UPDATES_CHECKBOX_TOOLTIP"] = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
 	["SKIP_CUTSCENES_CHECKBOX"] = "Automatically Skip Cutscenes";
 	["SKIP_CUTSCENES_CHECKBOX_TOOLTIP"] = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.";
 	["AUTO_BOUNTY_CHECKBOX"] = "Automatically Open the Bounty List";

@@ -3286,6 +3286,16 @@ local ChangeSkipCutsceneState = function(self, checked)
 		self:UnregisterEvent("CINEMATIC_START");
 	end
 end
+local DoAdHocUpdatesCheckbox = settings:CreateCheckBox(L["ADHOC_UPDATES_CHECKBOX"] .. L["_BETA_LABEL"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Updates:AdHoc"));
+end,
+function(self)
+	settings:SetTooltipSetting("Updates:AdHoc", self:GetChecked());
+end);
+DoAdHocUpdatesCheckbox:SetATTTooltip(L["ADHOC_UPDATES_CHECKBOX_TOOLTIP"]);
+DoAdHocUpdatesCheckbox:SetPoint("TOPLEFT", ModulesLabel, "BOTTOMLEFT", 4, 0);
+
 local AutomaticallySkipCutscenesCheckBox = settings:CreateCheckBox(L["SKIP_CUTSCENES_CHECKBOX"],
 function(self)
 	local checked = settings:GetTooltipSetting("Skip:Cutscenes");
@@ -3301,7 +3311,7 @@ function(self)
 	settings:SetTooltipSetting("Skip:Cutscenes", self:GetChecked());
 end);
 AutomaticallySkipCutscenesCheckBox:SetATTTooltip(L["SKIP_CUTSCENES_CHECKBOX_TOOLTIP"]);
-AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", ModulesLabel, "BOTTOMLEFT", 4, 0);
+AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", DoAdHocUpdatesCheckbox, "BOTTOMLEFT", 0, 4);
 
 local OpenBountyListAutomatically = settings:CreateCheckBox(L["AUTO_BOUNTY_CHECKBOX"],
 function(self)
@@ -3406,7 +3416,7 @@ end);
 SortByCompletionInstead:SetATTTooltip(L["SORT_BY_PROGRESS_CHECKBOX_TOOLTIP"]);
 SortByCompletionInstead:SetPoint("TOPLEFT", ShowAuctionHouseModuleTab, "BOTTOMLEFT", 0, 4);
 
-local QuestChainRequirementsNested = settings:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"] .. L["_BETA_LABEL"],
+local QuestChainRequirementsNested = settings:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("QuestChain:Nested"));
 end,

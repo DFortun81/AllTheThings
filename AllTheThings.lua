@@ -14176,15 +14176,22 @@ local function ProcessGroup(data, object)
 end
 local function UpdateWindow(self, force, got)
 	if self.data and app.IsReady then
+		if app.Settings:GetTooltipSetting("Updates:AdHoc") then
+			if force then
+				self.HasPendingUpdate = true;
+			end
+			force = (force or self.HasPendingUpdate) and self:IsVisible();
+		end
 		-- print("Update:",self.Suffix or self.suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
 		if force or self:IsVisible() then
-			if not self.rowData then self.rowData = {};
-			else wipe(self.rowData); end
+			if self.rowData then wipe(self.rowData);
+			else self.rowData = {}; end
 			self.data.expanded = true;
 			if not self.doesOwnUpdate and
 				(force or (self.shouldFullRefresh and self:IsVisible())) then
 				-- print("UpdateGroups",self.suffix or self.Suffix)
 				TopLevelUpdateGroup(self.data, self);
+				self.HasPendingUpdate = nil;
 				-- print("Done")
 			end
 			ProcessGroup(self.rowData, self.data);
