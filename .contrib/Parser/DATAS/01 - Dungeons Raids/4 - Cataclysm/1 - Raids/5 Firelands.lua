@@ -58,6 +58,9 @@ _.Instances = { tier(CATA_TIER, {
 					q(29135, {	-- All-Seeing Eye
 						["provider"] = { "n", 15192 },	-- Anachronos
 						["sourceQuests"] = { 29134 },	-- A Wrinkle in Time
+						["cost"] = {
+							{ "i", 65893, 3, },	-- Sands of Time
+						},
 						["groups"] = {
 							objective(1, {
 								i(71141, {	-- Eternal Ember
@@ -72,13 +75,12 @@ _.Instances = { tier(CATA_TIER, {
 									},
 								}),
 							}),
-							objective(2, {
-								i(65893, {	-- Sands of Time
-									["crs"] = {
-										61650,	-- Big Keech <Rare Antiquities>
-										49406,	-- Yasmin <Innkeeper>
-									},
-								}),
+							i(65893, {	-- Sands of Time
+								["crs"] = {
+									61650,	-- Big Keech <Rare Antiquities>
+									49406,	-- Yasmin <Innkeeper>
+									163252,	-- Yasmin (BFA version)
+								},
 							}),
 						},
 					}),
@@ -103,6 +105,7 @@ _.Instances = { tier(CATA_TIER, {
 								["description"] = "While fighting Lord Rhyolith you loot the Rhyolite Fragments which randomly spawn around the edge of the area (note: possible link to the volcano spawns, but those are random as well). Gather three of these and create a Dull Rhyolite Focus, which is then used just before he uses Concussive Stomp. (STOMP NOW!) He has to stand on it almost directly so make sure you're pretty close before using it. Loot the Charged Rhyolite Focus afterwards.",
 								["crs"] = { 52558 },	-- Lord Rhyolith
 								["questID"] = 29432,	-- Delegation Tracker
+								["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
 								["g"] = {
 									i(70997),	-- Rhyolite Fragment
 									i(70996),	-- Dull Rhyolite Focus
@@ -112,6 +115,7 @@ _.Instances = { tier(CATA_TIER, {
 								["description"] = "While fighting Beth'tilac you loot the Obsidian-Flecked Chitin Fragments, three of which spawn when a Cinderweb Drone is killed. Gather them and create a Dull Chitinous Focus, which is then used on top of the web just before she uses Smoldering Devastation at 0 Energy.\n\nThis may take a while, just keep an eye on her energy bar and don't fall through the holes created by the meteors.",
 								["crs"] = { 52498 },	-- Beth'tilac <The Red Widow>
 								["questID"] = 29432,	-- Delegation Tracker
+								["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
 								["g"] = {
 									i(70999),	-- Obsidian-Flecked Chitin Fragment
 									i(70998),	-- Dull Chitinous Focus
@@ -121,6 +125,7 @@ _.Instances = { tier(CATA_TIER, {
 								["description"] = "While fighting Shannox you loot the Emberstone Fragments, one of which spawns when a Crystal Prison Trap is destroyed. Gather three of them and create a Dull Emberstone Focus, which is then used just before he uses Hurl Spear. The spear has to hit the focus so make sure you're close. Once the fire has died down loot the Charged Emberstone Focus.\n\nNOTE: This requires at least two targets:\nA mage can use the Frost Elemental.\nA shaman can summon the Earth Elemental.\nA Warlock can use its pet.\nA Priest or Druid needs a friend. :(",
 								["crs"] = { 53691 },	-- Shannox
 								["questID"] = 29432,	-- Delegation Tracker
+								["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
 								["g"] = {
 									i(71000),	-- Emberstone Fragment
 									i(71001),	-- Dull Emberstone Focus
@@ -130,6 +135,7 @@ _.Instances = { tier(CATA_TIER, {
 								["description"] = "While fighting Alysrazor you loot the Pyreshell Fragments, one of which spawns when a Molten Egg hatches. Gather three and create a Dull Pyreshell Focus, which is then used just after she starts the Firestorm.\n\nIf she stays grounded and you need more fragments or need to charge your focus, you can fly out of the instance to reset, no more Eggs will spawn at this time.",
 								["crs"] = { 52530 },	-- Alysrazor
 								["questID"] = 29432,	-- Delegation Tracker
+								["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
 								["g"] = {
 									i(70994),	-- Pyreshell Fragment
 									i(70995),	-- Dull Pyreshell Focus
@@ -137,7 +143,6 @@ _.Instances = { tier(CATA_TIER, {
 							}),
 							i(69646, {	-- Branch of Nordrassil
 								["crs"] = { 53833 },	-- Volcanus <Firelord>
-								["questID"] = 29234,	-- Delegation
 							}),
 							un(REMOVED_FROM_GAME, title(146, {	-- <Name>, Blessed Defender of Nordrassil
 								["collectible"] = false,
@@ -167,7 +172,6 @@ _.Instances = { tier(CATA_TIER, {
 						["g"] = {
 							i(69815, {	-- Seething Cinder
 								["description"] = "Need 1000 of these for the Time Grows Short quest.",
-								["questID"] = 29270,
 								["crs"] = {
 									53691,	-- Shannox
 									52498,	-- Beth'tilac <The Red Widow>

@@ -5,9 +5,9 @@
 _.Instances = { tier(CLASSIC_TIER, {
 	inst(316, {	-- Scarlet Monastery
 		["lvl"] = 23,
-		["mapID"] = 435,
+		["mapID"] = SCARLET_MONASTERY,
 		["maps"] = {
-			-- 435,	-- Scarlet Monastery: Forlorn Cloister (First Boss)
+			-- SCARLET_MONASTERY,	-- Scarlet Monastery: Forlorn Cloister (First Boss)
 			436,	-- Scarlet Monasatery: Crusaader's Chapel (Last two bosses)
 			804,	-- Scarlet Monastery: Death Knight Campaign
 		},

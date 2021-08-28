@@ -4,9 +4,9 @@
 
 _.Instances = { tier(MOP_TIER, {
 	inst(316, {	-- Scarlet Monastery
-		["mapID"] = 435,
+		["mapID"] = SCARLET_MONASTERY,
 		["maps"] = {
-			--435,	-- Scarlet Monastery: Forlorn Cloister (First Boss)
+			--SCARLET_MONASTERY,	-- Scarlet Monastery: Forlorn Cloister (First Boss)
 			436,	-- Scarlet Monasatery: Crusaader's Chapel (Last two bosses)
 		},
 		["coord"] = { 69.2, 24.9, SCARLET_MONASTERY_ENTRANCE },
