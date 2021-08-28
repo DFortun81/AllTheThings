@@ -6,22 +6,23 @@ _.WorldEvents =
 {
 	n(-543, {	-- Broken Isles: Legion Invasions
 		["achievementID"] = 11544,	-- Defender of the Broken Isles
+		["description"] = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
 		["maps"] = { VALSHARAH, HIGHMOUNTAIN, STORMHEIM, AZSUNA },
+		["questID"] = 47063,	-- Tracking Quest
+		["isWorldQuest"] = true,
+		["repeatable"] = true,
+		["maps"] = {
+			BROKEN_ISLES,	-- Stormheim Invasion Scenario
+			865,	-- Stormheim Invasion Scenario: Upper Ship Floor
+			866,	-- Stormheim Invasion Scenario: Lower Ship Floor
+		},
 		["groups"] = {
-			v(47063, {	-- Tracking Quest
-				["description"] = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
+			n(REWARDS, {
 				["crs"] = {
 					118180,	-- Dread Vizier Gra'tork <Legion Commander>
 					119579,	-- Fel Commander Erixtol
 					118840,	-- Lord Commander Alexius
 					118975,	-- Xeritas
-				},
-				["isWorldQuest"] = true,
-				["repeatable"] = true,
-				["maps"] = {
-					BROKEN_ISLES,	-- Stormheim Invasion Scenario
-					865,	-- Stormheim Invasion Scenario: Upper Ship Floor
-					866,	-- Stormheim Invasion Scenario: Lower Ship Floor
 				},
 				["sym"] = {
 					{"select", "headerID", -543},	-- Select Legion Invasions
