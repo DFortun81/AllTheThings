@@ -54,11 +54,11 @@ _.Promotions =
 		}),
 		i(34518, {	-- Golden Pig Coin
 			["description"] = "Chinese & Taiwan Only",
-			["timeline"] = { "added 3.3.0.11159" },
+			["timeline"] = { "added 2.3.0" },
 		}),
 		i(34519, {	-- Silver Pig Coin
 			["description"] = "Chinese & Taiwan Only",
-			["timeline"] = { "added 3.3.0.11159" },
+			["timeline"] = { "added 2.3.0" },
 		}),
 	})),
 	n(-546, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Recruit A Friend (Current Rewards)

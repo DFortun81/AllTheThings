@@ -674,7 +674,6 @@ for key,value in pairs({
 		[-59] = "亡灵节",											-- Day of the Dead
 		[-61] = "冬幕节",											-- The Feast of Winter Veil
 		[-62] = "荆棘谷钓鱼大赛",									-- Stranglethorn Fishing Extravaganza
-		[-65] = "暴雪推广活动",										-- Blizzard Promotions
 		[-70] = DUNGEON_FLOOR_DESOLACE22,							-- Foulspore Cavern [Orange]
 		[-71] = DUNGEON_FLOOR_DESOLACE21,							-- The Wicked Grotto [Purple]
 		[-72] = "萨格雷战争议会",									-- Sargerei War Council
@@ -781,34 +780,28 @@ for key,value in pairs({
 		[-527] = "争霸艾泽拉斯：荆棘之战",							-- Battle for Azeroth: War of the Thorns
 		[-528] = "破碎群岛",											-- Broken Isles [Mole Machine]
 		[-531] = "2008年竞争之魂活动",
-		[-532] = "风暴英雄推广活动",									-- Heroes of the Storm Promotion
-		[-533] = "炉石传说推广活动",									-- Hearthstone Promotion
+		[-532] = "风暴英雄推广活动",									-- Heroes of the Storm
+		[-533] = "炉石传说推广活动",									-- Hearthstone
 		[-534] = "典藏版",											-- Collector's Edition
 
-		[-537] = "暗黑破坏神20周年庆",								-- Diablo 20th Anniversary Promotion
+		[-537] = "暗黑破坏神20周年庆",								-- Diablo 20th Anniversary
 		--TODO: [-538] = "The Ahn'Qiraj War Effort",
 		[-539] = "流沙节杖",											-- The Scepter of the Shifting Sands
 		[-540] = "天灾入侵",											-- The Scourge Invasion
 		[-543] = "军团入侵",											-- Legion Invasions
 		[-544] = "魔兽世界典藏版",									-- WoW Collector's Edition
 		[-545] = "暴雪嘉年华",										-- Blizzcon
-		[-547] = "欧洲限定",											-- EU Only
-		[-548] = "中国限定",											-- China Only
-		[-549] = "韩国限定",											-- Korea Only
 		[-550] = "星际争霸典藏版",									-- Starcraft Collector's Edition
 		[-551] = "暗黑破坏神典藏版",									-- Diablo Collector's Edition
 		[-558] = "上海2012年战网世界锦标赛",							-- Battle.net World Championship Shanghai 2012
 
-		[-561] = "2007世界邀请赛",									-- 2007 Worldwide Invitational
-		[-562] = "2008世界邀请赛",									-- 2008 Worldwide Invitational
-		--TODO: [-563] = "Azeroth's Choppers",
 		[-564] = "星际争霸2：自由之翼",								-- Starcraft II: Wings of Liberty
 		[-565] = "星际争霸2：虫群之心",								-- Starcraft II: Heart of the Swarm
 		[-566] = "暗黑破坏神3",										-- Diablo III
 
 		[-575] = "暗黑破坏神3：夺魂之镰",								-- Diablo III: Reaper of Souls
 		[-576] = "星际争霸2：虚空之遗",								-- StarCraft II: Legacy of the Void
-		[-577] = "魔兽世界电影",										-- World of Warcraft Movie
+		[-577] = "魔兽电影",											-- Warcraft Movie
 
 	-- PvP Header
 		-- Special Season Tags
