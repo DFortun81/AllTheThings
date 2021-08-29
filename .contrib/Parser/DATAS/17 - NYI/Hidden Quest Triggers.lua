@@ -1758,7 +1758,9 @@ _.HiddenQuestTriggers = {
 		q(54705),	-- Level 17 human monk looting mailbox in garrisson
 
 		-- ASSAULTS
-		q(36808),	-- Missive completion: Assault on Shattrath Harbour
+		q(36808),	-- Missive completion: Assault on Shattrath Harbour (Alliance)
+		q(36338),	-- Missive completion: Assault on Shattrath Harbour (Horde)
+		q(37635),	-- Missive completion: Assault on Shattrath Harbour (Alliance - Removed)
 		q(36809),	-- Missive completion: Assault on the Heart of Shattrath
 		q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
