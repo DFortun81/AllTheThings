@@ -1548,6 +1548,7 @@ _.HiddenQuestTriggers = {
 		q(33167),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 3
 		q(33166),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 4
 		q(34896),	-- Shadowmoon Valley - Tracking Quest: Stealthed Rangari - triggers when approaching Rangari Navra (43.7, 51.7)
+		q(49544),	-- Shadowmoon Valley - After handing in Hero's Call: Shadowmoon Valley! (Draenor)
 		q(35874),	-- Spires of Arak - Apparatus - triggers after finishing "The Ebon Hunter" quest
 		q(36859),	-- Spires of Arak - Deprecated version of "The Howling Crag" bonus objective
 		q(35201),	-- Spires of Arak - Krixel

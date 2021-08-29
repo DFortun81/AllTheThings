@@ -901,4 +901,7 @@ _.HiddenQuestTriggers = {
 	q(63941),	-- triggered when returning Creep to Reldorn on "They Grow Up So Quickly"
 	q(63942),	-- triggered when returning Bubbles to Reldorn on "They Grow Up So Quickly"
 	-- TODO: q( ),	-- triggered when returning Stinky to Reldorn on "They Grow Up So Quickly"
+
+	-- Stolen Anima Vessels
+	q(64575), 	-- After anima vessel, in Maw (rifted)
 };
