@@ -51,7 +51,7 @@ _.Promotions =
 			}),
 			i(20651, {	-- Orange Murloc Egg (Murki)
 				["description"] = "Reward from a Korean Promotional Event (Korea Only)",
-				["timeline"] = { "added 4.0.1.12941" },
+				["timeline"] = { "added 2.1.0.6678" },
 			}),
 			i(22114, {	-- Pink Murloc Egg (Gurky)
 				["description"] = "Offered as a fan website gift around Christmas 2006, in Europe. (EU Only)",
