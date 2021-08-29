@@ -270,7 +270,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					["timeline"] = { "added 7.0.3.22248" },
 				}),
 				applyclassicphase(TBC_PHASE_THREE, i(35498)),	-- Formula: Enchant Weapon - Deathfrost
-
+				
 				-- #if BEFORE 4.2.0
 				-- This item was apparently a drop from Ahune originally, but was removed and added to the Molten Front with 4.2.0.
 				-- Between Patch 3.3.3 and 4.2.0 it had no available source.
@@ -278,7 +278,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					["timeline"] = { "removed 3.3.3", "added 4.2.0" },
 				}),
 				-- #endif
-
+				
 				-- WoD+ Rewards (Scalable)
 				i(117372, {	-- Cloak of the Frigid Winds
 					["timeline"] = { "added 6.0.1.18594" },
@@ -295,7 +295,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(117377, {	-- The Frost Lord's War Cloak
 					["timeline"] = { "added 6.0.1.18594" },
 				}),
-
+				
 				-- Pandaria Rewards
 				i(95425, {	-- Cloak of the Frigid Winds [Level 90]
 					["timeline"] = { "added 5.0.1", "removed 6.0.1" },
@@ -312,7 +312,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(95430, {	-- The Frost Lord's War Cloak [Level 90]
 					["timeline"] = { "added 5.0.1", "removed 6.0.1" },
 				}),
-
+				
 				-- Cataclysm Rewards
 				i(69769, {	-- Cloak of the Frigid Winds [Level 85]
 					["timeline"] = { "added 4.0.1", "removed 5.0.1" },
@@ -329,7 +329,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(69766, {	-- The Frost Lord's War Cloak [Level 85]
 					["timeline"] = { "added 4.0.1", "removed 5.0.1" },
 				}),
-
+				
 				i(54805, {	-- Cloak of the Frigid Winds [Level 80]
 					["timeline"] = { "added 3.3.3.11723", "removed 4.0.1" },
 				}),
@@ -345,7 +345,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(54802, {	-- The Frost Lord's War Cloak [Level 80]
 					["timeline"] = { "added 3.3.3.11723", "removed 4.0.1" },
 				}),
-
+				
 				-- Original Rewards
 				i(35514, {	-- Frostscythe of Lord Ahune [Level 70]
 					["timeline"] = { "removed 3.3.3.11723" },
@@ -1883,13 +1883,28 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					i(23323),	-- Crown of the Fire Festival
 				},
 			}),
-			-- q(11696),	-- Ahune is Here!
-			-- q(11955),	-- Ahune, the Frost Lord
+			q(11696, {	-- Ahune is Here!
+				["qg"] = 25710,	-- Numa Cloudsister
+				["sourceQuest"] = 11955,	-- Ahune, the Frost Lord
+				["timeline"] = { "added 2.4.0.7994" },
+				["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS },
+				["lvl"] = lvlsquish(65, 15, 15),
+			}),
+			q(11955, {	-- Ahune, the Frost Lord
+				["qg"] = EARTHEN_RING_ELDER_ID,
+				["sourceQuest"] = 11891,	-- An Innocent Disguise
+				["coords"] = EARTHEN_RING_ELDER_COORDS,
+				["timeline"] = { "added 2.4.0.7994" },
+				["maps"] = EARTHEN_RING_ELDER_MAPS,
+				["isBreadcrumb"] = true,
+				["lvl"] = lvlsquish(65, 15, 15),
+			}),
 			q(11891, {	-- An Innocent Disguise
 				["qg"] = 25324,		 -- Earthen Ring Guide
 				["sourceQuest"] = 11886,	-- Unusual Activity
 				["description"] = "Use your Totemic Beacon to summon the quest giver.",
 				["coord"] = { 10.2, 15.3, ASHENVALE },
+				["timeline"] = { "added 2.4.0.7994" },
 				["maps"] = { ASHENVALE },
 				["cost"] = {
 					{ "i", 35828, 1 },	-- Totemic Beacon
@@ -2853,7 +2868,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				},
 				-- #endif
 			}),
-
+			
 			-- Bonfire Quests
 			n(FACTION_HEADER_ALLIANCE, {
 				["timeline"] = { "added 2.4.0.7994" },
