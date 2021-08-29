@@ -3139,7 +3139,6 @@ _.HiddenQuestTriggers = {
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
 		q(56881),	-- Triggered upon first entry into Nazjatar
 		q(57040),	-- Triggers when you select Vim Brineheart as your friend for the day
-		q(57042),	-- Triggers when you select Poen Gillbrack as your friend for the day
 		q(56677),	-- Triggered sometime after turning in "Needs of the People", after picking up the dailies, but before leaving Newhome. TODO:: research more (possibly bodyguard dialogue quest?)
 		q(56212),	-- Triggered when opening the first glimmering chest during "Scrying Stones"
 		q(56220),	-- Triggered when opening the second glimmering chest during "Scrying Stones"

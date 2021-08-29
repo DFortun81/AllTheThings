@@ -156,6 +156,13 @@ _.ExpansionFeatures =
 						176578,	-- Vault Sentinel
 					},
 				}),
+				i(183193, {	-- Ashen Chomper (PET!)
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						153165,	-- Custodian Thonar
+						151329,	-- Warden Skoldus
+					},
+				}),
 				i(187075, {	-- Box of Rattling Chains (TOY!)
 					["crs"] = {
 						151331,	-- Cellblock Sentinel
@@ -172,20 +179,16 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(186549, {	-- Gilded Darknight (PET!)
-					["cr"] = 176578 -- Vault Sentinel { TODO: drops in adamant vaults but no specific crs data yet
+					["crs"] = {
+						179526,	-- Troz'igal the Oppressor
+						176578, -- Vault Sentinel
+					},
 				}),
 				i(183116, {	-- Hissing Deathroach
 					["crs"] = {
 						156239,	-- Dark Ascended Corrus
 						155250,	-- Decayspeaker
 						155251,	-- Elder Longbranch
-					},
-				}),
-				i(183193, {	-- Jar of Ashes
-					["crs"] = {
-						151331,	-- Cellblock Sentinel
-						153165,	-- Custodian Thonar
-						151329,	-- Warden Skoldus
 					},
 				}),
 				i(183191, {	-- Maw Crawler

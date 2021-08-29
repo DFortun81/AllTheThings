@@ -2584,7 +2584,13 @@ _.Zones =
 	}),
 };
 _.HiddenQuestTriggers = {
+--	LOOT QUESTS
+	q(57143),	-- looting an Eel Filet
+
+--	RECRUITMENT QUESTS
 	q(57041),	-- recruiting Farseer Ori / Neri Sharpfin for the day
+	q(57042),	-- recruiting Bladesman Inowari / Poen Gillbrack for the day
+
 --	HORRIBLE NAZJATAR BODYGUARD DIALOGUE QUESTS (usually trigger in areas where you're doing the daily quests for the bodyguard)
 --	unknown/probable bodyguard dialogue quests
 	q(56659),	-- not sure precisely what triggered this -- selected Neri as my daily follower, refreshed, walked outside, picked up "Down into Nazjatar," and this popped (probably dialogue quest)

@@ -731,6 +731,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		filter(23, {	-- 1H Maces
 			i(19808, {	-- Rockhide Strongfish
 				["description"] = "Can be caught in schools in The Cape of Stranglethorn or Northern Stranglethorn during the Stranglethorn Fishing Extravaganza.",
+				["u"] = 30,	-- Stranglethorn Fishing Extravaganza
 			}),
 			i(6360, {	-- Steelscale Crushfish
 				["description"] = "Can be caught in Darkmoon Island, Northern Stranglethorn, and Wetlands in open water.",
