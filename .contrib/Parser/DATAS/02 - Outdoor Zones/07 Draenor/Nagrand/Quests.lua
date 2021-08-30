@@ -1488,3 +1488,6 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(36906),	-- Ogre Waygate
+};

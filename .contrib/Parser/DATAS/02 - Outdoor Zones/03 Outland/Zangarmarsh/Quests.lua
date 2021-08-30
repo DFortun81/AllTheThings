@@ -432,6 +432,7 @@ _.Zones =
 					["lvl"] = lvlsquish(61, 10, 61),
 				}),
 				q(10105, {	-- News for Rakoria
+					["description"] = "Only one of News from Zangarmarsh(9796) and News for Rakoria(10105) can be picked up",
 					["qg"] = 18013,	-- Shadow Hunter Denjai
 					["coord"] = { 30.6, 50.8, ZANGARMARSH },
 					["races"] = HORDE_ONLY,
@@ -439,6 +440,7 @@ _.Zones =
 					["lvl"] = lvlsquish(62, 10, 62),
 				}),
 				q(9796,  {	-- News from Zangarmarsh
+					["description"] = "Only one of News from Zangarmarsh(9796) and News for Rakoria(10105) can be picked up",
 					["qg"] = 18011,	-- Zurai
 					["coord"] = { 85.3, 54.8, ZANGARMARSH },
 					["races"] = HORDE_ONLY,

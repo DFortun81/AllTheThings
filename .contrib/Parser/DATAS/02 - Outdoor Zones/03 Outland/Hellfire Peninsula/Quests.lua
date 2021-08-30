@@ -1217,6 +1217,7 @@ _.Zones =
 					["qg"] = 16819,	-- Force Commander Danath Trollbane
 					["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(58, 10, 58),
 				}),
 				q(10078, {	-- Laying Waste to the Unwanted

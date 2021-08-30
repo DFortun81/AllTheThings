@@ -1142,6 +1142,10 @@ _.Zones =
 						i(118266),	-- Golden Kaliri Egg
 					},
 				}),
+				o(233715, {	-- Goldtoe's Plunder
+					["questID"] = 36109,
+					["coord"] = { 38.3, 58.8, DRAENOR_NAGRAND },
+				}),
 				o(233626, {	-- Grizzlemaw's Bonepile
 					["questID"] = 36051,
 					["coord"] = { 87.1, 72.9, DRAENOR_NAGRAND },
@@ -1327,6 +1331,13 @@ _.Zones =
 							i(106697),	-- Sabermaw Boots
 							i(106726),	-- Stonecrag Sabatons
 						}),
+					},
+				}),
+				o(236610, {	-- Spirit's Gift
+					["questID"] = 36846,
+					["coord"] = { 35.5, 57.3, DRAENOR_NAGRAND },
+					["g"] = {
+						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(232985, {	-- Steamwheedle Supplies

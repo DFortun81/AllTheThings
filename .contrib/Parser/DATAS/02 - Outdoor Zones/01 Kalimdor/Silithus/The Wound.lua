@@ -43,6 +43,7 @@ _.Zones =
 						}),
 						q(50358, {	-- Desert Research
 							["sourceQuest"] = 50053,	-- Lazy Prospectors
+							["coord"] = { 65.9, 54.7, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132147 },	-- Grol Warblade
 						}),
@@ -58,6 +59,7 @@ _.Zones =
 						}),
 						q(50360, {	-- Khadgar's Request
 							["sourceQuest"] = 50232,	-- The Twilight Survivor
+							["coord"] = { 65.9, 54.7, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132147 },	-- Grol Warblade
 						}),
@@ -68,16 +70,19 @@ _.Zones =
 						}),
 						q(50231, {	-- Larvae By The Dozen
 							["sourceQuest"] = 50358,	-- Desert Research
+							["coord"] = { 66.9, 56.5, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132040 },	-- Pixni Rustbomb
 						}),
 						q(50053, {	-- Lazy Prospectors
 							["sourceQuest"] = 49982,	-- Witness to the Wound
+							["coord"] = { 65.9, 54.7, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132147 },	-- Grol Warblade
 						}),
 						q(50052, {	-- No Spies Allowed
 							["sourceQuest"] = 49982,	-- Witness to the Wound
+							["coord"] = { 66.9, 56.5, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132045 },	-- Gizmax Greasebolt
 						}),
@@ -88,6 +93,7 @@ _.Zones =
 						}),
 						q(50364, {	-- The Blood of Azeroth
 							["sourceQuest"] = 50055,	-- The Speaker's Perspective
+							["coord"] = { 42.5, 44.2, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 130216 },	-- Magni Bronzebear
 						}),
@@ -137,6 +143,7 @@ _.Zones =
 						}),
 						q(50230, {	-- The Source of Power
 							["sourceQuest"] = 50358,	-- Desert Research
+							["coord"] = { 66.9, 56.5, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132040 },	-- Pixni Rustbomb
 						}),
@@ -159,6 +166,7 @@ _.Zones =
 						}),
 						q(50055, {	-- The Speaker's Perspective
 							["sourceQuest"] = 50360,	-- Khadgar's Request
+							["coord"] = { 66.4, 56.8, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 130033 },	-- Archmage Khadgar
 						}),
@@ -172,6 +180,7 @@ _.Zones =
 						}),
 						q(50232, {	-- The Twilight Survivor
 							["sourceQuest"] = 50053,	-- Lazy Prospectors
+							["coord"] = { 65.9, 54.7, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132147 },	-- Grol Warblade
 						}),

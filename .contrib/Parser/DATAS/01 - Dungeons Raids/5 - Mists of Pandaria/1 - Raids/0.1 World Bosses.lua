@@ -431,7 +431,7 @@ _.Instances = { tier(MOP_TIER, {
 						["g"] = {
 						--	NOTE FOR CONTRIBS: Only add items you receive to this. The old listings on WoWHead may be inaccurate or out of date.
 						--	it's likely that the commented items drop also.  if they get confirmed, uncomment them and adjust the unobtainable filter here + in Siege of Orgrimmar
-						--	un(REMOVED_FROM_GAME, i(105838)),	-- Aeth's Swiftcinder Cloak Normal
+							un(38, i(105838)),	-- Aeth's Swiftcinder Cloak Normal
 							un(38, i(105830)),	-- Brave Niunai's Cloak Normal (confirmed to drop from Ordos cache on July 23, 2020)
 							un(38, i(105826)),	-- Cape of the Alpha Normal (confirmed to drop from Ordos cache on July 23, 2020)
 							un(38, i(105832)),	-- Crimson Gauntlets of Death Normal (confirmed to drop from Ordos cache on July 23, 2020)

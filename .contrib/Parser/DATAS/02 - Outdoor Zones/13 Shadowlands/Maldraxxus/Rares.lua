@@ -205,6 +205,7 @@ _.Zones =
 									["achievementID"] = 14721,	-- It's in the Mix
 								}),
 								i(182287),	-- Eternally Preserved Scarab
+								i(183516),	-- Stained Bloodfused Mantle
 							},
 						}),
 						n(157312, {	-- Oily Invertebrate

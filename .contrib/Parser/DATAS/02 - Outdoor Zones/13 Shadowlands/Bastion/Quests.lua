@@ -989,10 +989,12 @@ _.Zones =
 				}),
 				q(62735, {	-- Hostile Recollection (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["coord"] = { 56.9, 59.9, BASTION },
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				}),
 				q(62732, {	-- Locus Focus (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
+					["coord"] = { 54.7, 64.1, BASTION },
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 					["g"] = {
 						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items

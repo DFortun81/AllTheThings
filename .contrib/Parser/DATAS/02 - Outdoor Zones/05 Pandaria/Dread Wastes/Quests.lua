@@ -907,6 +907,7 @@ _.Zones =
 					["sourceQuests"] = {
 						31073,	-- Bound With Wood
 						31078,	-- Han Stormstout
+						31074,	-- Wood and Shade
 					},
 				}),
 				q(31606, {	-- The Dissector Wakens

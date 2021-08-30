@@ -488,6 +488,7 @@ _.Zones =
 					["coord"] = { 65.3, 66.2, REVENDRETH },
 				}),
 				q(58093, {	-- Our Forgotten Purpose
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 				--	["sourceQuests"] = {  },	-- TODO: unknown.  possibly just requires 60
 					["isBreadcrumb"] = true,
 					["altQuests"] = { 57918 },	-- The Absolution of Souls

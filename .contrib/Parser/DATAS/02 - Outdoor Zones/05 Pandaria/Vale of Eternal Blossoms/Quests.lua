@@ -75,6 +75,10 @@ _.Zones =
 						}),
 					},
 				}),
+				q(31055, {	-- Between a Saurok and a Hard Place
+					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01Between a Saurok and a Hard Place|r achievement.",
+					["provider"] = { "i", 83769 },	-- Between a Saurok and a Hard Place
+				}),
 				q(30266, {	-- Bloodied Skies
 					["coord"] = { 21.3, 71.4, VALE_OF_ETERNAL_BLOSSOMS },
 					["isDaily"] = true,
@@ -108,6 +112,10 @@ _.Zones =
 				q(31097, {	-- Heart of the Mantid Swarm
 					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01Heart of the Mantid Swarm|r achievement.",
 					["provider"] = { "i", 83773 },	-- Heart of the Mantid Swarm
+				}),
+				q(31093, {	-- Hozen in the Mist
+					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01Hozen in the Mist|r achievement.",
+					["provider"] = { "i", 83770 },	-- Hozen in the Mist
 				}),
 				q(33231, {	-- Journey to the Timeless Isle
 					["hordeQuestID"] = 33232,	-- Journey to the Timeless Isle
@@ -231,6 +239,10 @@ _.Zones =
 					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
 				}),
+				q(31102, {	-- The Seven Burdens of Shaohao
+					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01The Seven Burdens of Shaohao|r achievement.",
+					["provider"] = { "i", 83779 },	-- The Seven Burdens of Shaohao
+				}),
 				q(31386, {    -- The Shado-Pan Offensive (A)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -242,6 +254,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 64002 },    -- Sang-Bo
 					["coord"] = { 63.0, 21.2, VALE_OF_ETERNAL_BLOSSOMS },
+				}),
+				q(31100, {	-- The Song of the Yaungol
+					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01The Song of the Yaungol|r achievement.",
+					["provider"] = { "i", 83777 },	-- The Song of the Yaungol
 				}),
 				q(30280, {	-- The Thunder Below
 					["coord"] = { 21.4, 71.5, VALE_OF_ETERNAL_BLOSSOMS },
@@ -294,6 +310,10 @@ _.Zones =
 					["provider"] = { "n", 63996 },	-- Elder Liao
 					["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
+				}),
+				q(31096, {	-- What is Worth Fighting For
+					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01What is Worth Fighting For|r achievement.",
+					["provider"] = { "i", 83774 },	-- What is Worth Fighting For
 				}),
 				q(31015, {	-- Your Private Collection
 					["providers"] = {

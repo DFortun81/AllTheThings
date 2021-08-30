@@ -31,6 +31,11 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 85048 },	-- Farmer Lok'lub
 								["races"] = HORDE_ONLY,
 							}),
+							q(36345, {	-- Breaking into the Trap Game
+								["provider"] = { "n", 85048 },	-- Farmer Lok'lub
+								["coord"] = { 59.0, 26.0, 582 },
+								["races"] = HORDE_ONLY,
+							}),
 						}),
 						n(RARES, {
 							o(239143, {		-- Glass of Warm Milk

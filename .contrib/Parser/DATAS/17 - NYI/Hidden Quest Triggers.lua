@@ -62,6 +62,11 @@ _.HiddenQuestTriggers = {
 		q(54781),	-- UNUSED
 		q(37812),	-- UNUSED: Test Race: 1 Marker
 		q(38845),	-- Unused
+		--q(59038),	-- Got suddenly appeared. Same time as I was chatting. We finished Temple of Jade Serpent, lvl 16, 22, 46 (I'm the 46). Goblin in group with Vulpera Party Sync enabled
+		--q(63389),	-- Person in Errors doesnt really remember
+		--q(63390), -- Person in Errors doesnt really remember
+		--q(63391), -- Person in Errors doesnt really remember
+		--q(53468),	-- As a hightauren mountain just arriving on ogrimmar after being transferred from alliance to horde
 
 		-- Old adventure boards? Can't find any information to suggest that these were ever made available
 		q(28011),	-- Adventurers Wanted: Blackfathom Deeps
@@ -954,6 +959,8 @@ _.HiddenQuestTriggers = {
 		q(57837),	-- Totems lvl 3
 		q(57838),	-- Totems lvl 4
 		q(57839),	-- Totems lvl 5
+		
+		q(58572),	-- playing console game, remembthon something
 
 		-------------------
 		---   CLASSIC   ---
@@ -3294,6 +3301,7 @@ _.HiddenQuestTriggers = {
 		q(56965),	-- Queen's Court Aqueous Reliquary LFR? LootID
 		q(56966),	-- Queen's Court Aqueous Reliquary NHC? LootID
 		q(56968),	-- Queen's Court Aqueous Reliquary HC? LootID
+		q(56963),	-- Radiance of Azshara Aqueous Reliquary Mythic? LootID
 
 		-- Azerite essences assembled with Aqueous Reliquary
 		q(56946),	-- Vitality Redistribution Lattice (Rank 1)
@@ -4207,9 +4215,10 @@ _.HiddenQuestTriggers = {
 		q(59687),	-- using "Dog Bone's Bone"
 		q(59681),	-- using "Anima-Infused Water"
 		q(61455),	-- using "Protective Braziers"
-		q(63001),	-- triggers when choosing to skip the Venthyr sanctum intro quests
-		q(63023),	-- triggers when choosing to skip the Venthyr sanctum intro quests
-		q(63425),	-- triggers when choosing to skip the Venthyr sanctum intro quests
+		q(63001),	-- triggers when choosing to skip the Covenant sanctum intro quests
+		q(63023),	-- triggers when choosing to skip the Covenant sanctum intro quests
+		q(63425),	-- triggers when choosing to skip the Covenant sanctum intro quests
+		q(62426),	-- triggers when choosing to skip the Kyrian sanctum intro quests
 		q(63429),	-- triggers when choosing to skip the Venthyr sanctum intro quests
 
 		-- The Maw

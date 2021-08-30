@@ -27,6 +27,11 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 84524 },	-- Homer Stonefield
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(36271, {	-- Breaking into the Trap Game
+								["provider"] = { "n", 84524 },	-- Homer Stonefield
+								["coord"] = { 51.0, 42.0, 582 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 						}),
 						n(RARES, {
 							o(239171, {	-- Glass of Warm Milk

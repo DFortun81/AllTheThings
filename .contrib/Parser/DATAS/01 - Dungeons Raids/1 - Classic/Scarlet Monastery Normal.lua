@@ -145,7 +145,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 							58590,	-- Scarlet Zealot
 						},
 					}),
-					un(REMOVED_FROM_GAME, i(7760)),	-- Warchief Kilt
+					i(7760),	-- Warchief Kilt
 					i(7727, {	-- Watchman Pauldrons
 						["crs"] = {
 							59746,	-- Scarlet Centurion
