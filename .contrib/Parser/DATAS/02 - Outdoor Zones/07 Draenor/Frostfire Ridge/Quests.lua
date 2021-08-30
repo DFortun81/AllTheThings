@@ -87,7 +87,7 @@ _.Zones =
 					["coord"] = { 43.5, 15.5, FROSTFIRE_RIDGE },
 				}),
 				q(35641, {	-- Assault on Stonefury Cliffs
-					["provider"] = { "o", 122405 },	-- Scouting Missive: Stonefury Cliffs
+					["provider"] = { "i", 122405 },	-- Scouting Missive: Stonefury Cliffs
 					["coord"] = { 44.0, 20.0, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,

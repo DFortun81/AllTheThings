@@ -973,6 +973,7 @@ _.ObjectNames = {
 	[239194] = "Norana's Cache",
 	[239198] = "Isaari's Cache",
 	[239328] = "Captain's Foot Locker",
+	[239791] = "Relic Hunting Notes",
 	[239803] = "Treasure Chest",
 	[239828] = "Edge of Reality",
 	[239901] = "Voidtalon Egg",
