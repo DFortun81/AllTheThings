@@ -709,8 +709,9 @@ _.Zones =
 						}),
 					},
 				}),
-				q(9151, {	-- The Sanctum of the Sun [TODO: could have a sourceQuest]
+				q(9151, {	-- The Sanctum of the Sun
 					["qg"] = 16199,	-- Magister Darenis
+					["sourceQuest"] = 9169,	-- Deactivate An'owyn
 					["coord"] = { 46.0, 31.9, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(17, 1, 17),
