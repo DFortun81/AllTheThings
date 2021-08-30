@@ -69,7 +69,6 @@ _.Zones =
 						i(184740),	-- Fortified Jawcrackers
 						i(184744),	-- Gnarled Boneloop
 						i(183189, {	-- Illusion: Undying Spirit
-							["questID"] = 62964,
 							["cost"] = 12500000, -- 1,250g
 						}),
 						i(183244, {	-- Memory of the Rattle of the Maw

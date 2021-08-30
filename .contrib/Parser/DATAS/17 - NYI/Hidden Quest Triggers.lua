@@ -959,7 +959,7 @@ _.HiddenQuestTriggers = {
 		q(57837),	-- Totems lvl 3
 		q(57838),	-- Totems lvl 4
 		q(57839),	-- Totems lvl 5
-		
+
 		q(58572),	-- playing console game, remembthon something
 
 		-------------------
@@ -3574,11 +3574,6 @@ _.HiddenQuestTriggers = {
 		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate
 		q(60826),	-- first use per day of Unbound Changeling trinket
 
-		-- Illusions
-		q(63004),	-- triggered when learning Illusion: Devoted Spirit
-		q(62964),	-- triggered when learning Illusion: Undying Spirit
-		q(61727),	-- triggered when learning Illusion: Sinsedge
-
 		-- Adventures
 		-- Completing mi(2174), "Tutorial: Dispose of the Detritus"
 		q(63070),	-- Shared
@@ -4209,7 +4204,6 @@ _.HiddenQuestTriggers = {
 		q(61210),	-- "Thirst for Anima" buff from Anima Conductor
 		q(59685),	-- when using Rally Bell
 		q(61577),	-- triggered when turning in #62174, "A Proper Cover"
-		q(62398),	-- learning Sinwrath illusion
 		q(62532),	-- think this was from doing the Sootible Hat: Pink Party Hat quest
 		q(63355),	-- think this was from doing the Sootible Hat: Fae Revel Mask quest (these 2 may be swapped/opposite, they both popped at once)
 		q(59687),	-- using "Dog Bone's Bone"
