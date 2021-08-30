@@ -1257,6 +1257,38 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 79252 },	-- Cordana Felsong
 						["sourceQuest"] = 34378,	-- Establish Your Garrison
 					}),
+					q(37914, {	-- Treasure Contract: The Thunderlord Sage
+						["providers"] = {
+							{ "n", 89793 },	-- Harrison Jones
+							{ "n", 92223 },	-- Surveyor Daltry
+						},
+						["coord"] = { 40.2, 56.0, 590 },
+						["isDaily"] = true,
+					}),
+					q(37916, {	-- Gronnsbane: The Broken Spear
+						["sourceQuest"] = 37914, -- Treasure Contract: The Thunderlord Sage
+						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+						["coord"] = { 40.2, 56.0, 590 },
+						["isDaily"] = true,
+					}),
+					q(37917, {	-- Gronnsbane: The Blessing of Fire
+						["sourceQuest"] = 37916, -- Gronnsbane: The Broken Spear
+						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+						["coord"] = { 40.2, 56.0, 590 },
+						["isDaily"] = true,
+					}),
+					q(37918, {	-- Gronnsbane: The Blessing of Fire
+						["sourceQuest"] = 37917, -- Gronnsbane: The Broken Spear
+						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+						["coord"] = { 40.2, 56.0, 590 },
+						["isDaily"] = true,
+					}),
+					q(37919, {	-- Gronnsbane: The Blessing of Beasts
+						["sourceQuest"] = 37918, -- Gronnsbane: The Blessing of Fire
+						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+						["coord"] = { 40.2, 56.0, 590 },
+						["isDaily"] = true,
+					}),
 				},
 			}),
 		}),

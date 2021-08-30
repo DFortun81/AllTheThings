@@ -1229,11 +1229,45 @@ _.ExpansionFeatures =
 						["coord"] = { 29.6, 34.4, 582 },
 						["races"] = ALLIANCE_ONLY,
 					}),
+					-- Treasure Hunt Dailies: Gronnsbane
+					q(37914, {	-- Treasure Contract: The Thunderlord Sage
+						["providers"] = {
+							{ "n", 89793 },	-- Harrison Jones
+							{ "n", 92223 },	-- Surveyor Daltry
+						},
+						["coord"] = { 34.6, 33.2, 582 },
+						["isDaily"] = true,
+					}),
+					q(37916, {	-- Gronnsbane: The Broken Spear
+						["sourceQuest"] = 37914, -- Treasure Contract: The Thunderlord Sage
+						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+						["coord"] = { 34.6, 32.7, 582 },
+						["isDaily"] = true,
+					}),
+					q(37917, {	-- Gronnsbane: The Blessing of Fire
+						["sourceQuest"] = 37916, -- Gronnsbane: The Broken Spear
+						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+						["coord"] = { 34.6, 32.7, 582 },
+						["isDaily"] = true,
+					}),
+					q(37918, {	-- Gronnsbane: The Blessing of Fire
+						["sourceQuest"] = 37917, -- Gronnsbane: The Broken Spear
+						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+						["coord"] = { 34.6, 32.7, 582 },
+						["isDaily"] = true,
+					}),
+					q(37919, {	-- Gronnsbane: The Blessing of Beasts
+						["sourceQuest"] = 37918, -- Gronnsbane: The Blessing of Fire
+						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
+						["coord"] = { 34.6, 32.7, 582 },
+						["isDaily"] = true,
+					}),
 				},
 			}),
 		}),
 	}),
 };
 _.HiddenQuestTriggers = {
-	q(39829),	-- Sleigh and Guards Shared Criteria (Winter veil)
+	q(39829),	-- Sleigh and Guards Shared Criteria (Winter Veil)
+	q(39610),	-- Winter Veil Active (Winter Veil)
 };
