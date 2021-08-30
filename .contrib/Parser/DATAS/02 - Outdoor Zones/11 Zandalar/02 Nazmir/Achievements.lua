@@ -424,9 +424,11 @@ _.Zones =
 					["g"] = {
 						crit(9,  {	-- Nazmani Weevil
 							["crs"] = { 130217 },	-- Nazmani Weevil
+							["coord"] = { 48.01, 69.10, 863 }
 						}),
 						crit(10, {	-- Bloodfever Tarantula
 							["crs"] = { 131017 },	-- Bloodfever Tarantula
+							["coord"] = { 30.30, 66.91, 863 }
 						}),
 					},
 				}),

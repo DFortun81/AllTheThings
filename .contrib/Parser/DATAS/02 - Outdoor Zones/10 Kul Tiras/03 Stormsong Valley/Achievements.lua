@@ -261,9 +261,11 @@ _.Zones =
 					["g"] = {
 						crit(1, {	-- Honey Bee
 							["crs"] = { 131376 },	-- Honey Bee
+							["coord"] = { 45.87, 62.73, 942 }
 						}),
 						crit(2, {	-- Olivewing
 							["crs"] = { 143220 },	-- Olivewing
+							["coord"] = { 25.83, 70.26, 942 }
 						}),
 					},
 				}),

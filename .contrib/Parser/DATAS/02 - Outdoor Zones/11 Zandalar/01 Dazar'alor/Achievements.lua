@@ -108,6 +108,7 @@ _.Zones =
 					["g"] = {
 						crit(11, {	-- Temple Beetle
 							["crs"] = { 130441 },	-- Temple Beetle
+							["coord"] = { 43.53, 36.77, DAZARALOR }
 						}),
 					},
 				}),

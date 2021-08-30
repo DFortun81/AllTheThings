@@ -251,9 +251,11 @@ _.Zones =
 					["g"] = {
 						crit(3, {	-- Fluttering Softwing
 							["crs"] = { 126546 },	-- Fluttering Softwing
+							["coord"] = { 84.76, 77.74, 895 }
 						}),
 						crit(5, {	-- Tiragarde Gull
 							["crs"] = { 126519 },	-- Tiragarde Gull
+							["coord"] = { 77.72, 47.90, 895 }
 						}),
 					},
 				}),

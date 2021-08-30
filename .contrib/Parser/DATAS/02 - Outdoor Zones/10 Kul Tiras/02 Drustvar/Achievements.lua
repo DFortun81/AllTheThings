@@ -473,9 +473,11 @@ _.Zones =
 					["g"] = {
 						crit(4, {	-- Drustbat
 							["crs"] = { 129791 },	-- Drustbat
+							["coord"] = { 53.09, 30.50, 896 }
 						}),
 						crit(6, {	-- Bramble Hare
 							["crs"] = { 128798 },	-- Bramble Hare
+							["coord"] = { 59.81, 21.85, 896 }
 						}),
 					},
 				}),

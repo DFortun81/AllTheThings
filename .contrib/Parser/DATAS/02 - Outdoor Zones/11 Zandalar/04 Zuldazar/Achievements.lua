@@ -426,9 +426,11 @@ _.Zones =
 					["g"] = {
 						crit(7, {	-- Jungle Gulper
 							["crs"] = { 130445 },	-- Jungle Gulper
+							["coord"] = { 62.72, 16.52, 862 }
 						}),
 						crit(8, {	-- Crested Gekkota
 							["crs"] = { 130716, 130748, 130749 },	-- Crested Gekkota
+							["coord"] = { 67.11, 41.89, 862 }
 						}),
 					},
 				}),

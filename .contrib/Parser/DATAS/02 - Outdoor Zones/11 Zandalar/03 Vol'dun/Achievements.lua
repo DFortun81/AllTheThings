@@ -392,6 +392,7 @@ _.Zones =
 					["g"] = {
 						crit(12, {	-- Vale Flutterby
 							["crs"] = { 134700 },	-- Vale Flutterby
+							["coord"] = { 52.75, 83.73, 864 }
 						}),
 					},
 				}),
