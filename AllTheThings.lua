@@ -12622,14 +12622,11 @@ function app:CreateMiniListForGroup(group)
 									found = sq;
 								end
 								if found
-									-- default logic ignores needing to progress through breadcrumbs
-									and not found.isBreadcrumb
 									-- ensure the character meets the custom collect for the quest
 									and app.CheckCustomCollects(found)
 									-- ensure the current settings do not filter the quest
 									and app.RecursiveGroupRequirementsFilter(found) then
 									sourceQuest = CloneData(found);
-									sourceQuest.collectible = true;
 									sourceQuest.visible = true;
 									sourceQuest.hideText = true;
 									if found.sourceQuests and #found.sourceQuests > 0 and
