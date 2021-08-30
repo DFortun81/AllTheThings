@@ -259,3 +259,6 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(49204),	-- Arriving in Mac'Aree
+};
