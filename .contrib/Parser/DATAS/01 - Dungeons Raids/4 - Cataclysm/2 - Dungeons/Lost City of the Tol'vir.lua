@@ -306,3 +306,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(35413),	-- Lost City of the Tol'vir Reward Quest
+};
