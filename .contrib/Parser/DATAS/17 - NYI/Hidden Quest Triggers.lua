@@ -1756,7 +1756,7 @@ _.HiddenQuestTriggers = {
 		q(36901),	-- Tracking Quest: Vivianne — assigned Vivianne as bodyguard
 		q(36902),	-- Tracking Quest: Aeda Brightdawn — assigned Aeda Brightdawn as bodyguard
 		q(46952),	-- Flag Garrison Dog Quest
-		q(54705),	-- Level 17 human monk looting mailbox in garrisson
+		q(54705),	-- Level 17 human monk looting mailbox in garrisson <-- Hmm. Errors report also says using 7th legion scouting map.
 
 		-- ASSAULTS
 		q(36808),	-- Missive completion: Assault on Shattrath Harbour (Alliance)
