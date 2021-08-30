@@ -101,6 +101,10 @@ _.Zones =
 					["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY
 				}),
+				q(31094, {	-- Fish Tales
+					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01Fish Tales|r achievement.",
+					["provider"] = { "i", 83771 },	-- Fish Tales
+				}),
 				q(31097, {	-- Heart of the Mantid Swarm
 					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01Heart of the Mantid Swarm|r achievement.",
 					["provider"] = { "i", 83773 },	-- Heart of the Mantid Swarm
