@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(582, {	-- Lunarfall
+		m(LUNARFALL, {
 			n(-99, {	-- Buildings
 				garrisonBuilding(164,  {	-- Gnomish Gearworks (rank 1: 162, rank 2: 163, rank 3: 164)
 					["races"] = ALLIANCE_ONLY,

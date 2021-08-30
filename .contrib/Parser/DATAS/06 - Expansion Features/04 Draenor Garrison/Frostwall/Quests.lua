@@ -1119,7 +1119,7 @@ _.ExpansionFeatures =
 					q(34733, {    -- Services of Dagg
 						--["sourceQuests"] = { ??? },	-- You need to open 2 cages in Frostfire Ridge at 39.52, 28.06 and 65.85, 60.84., probably 2 HQT there.
 						["coord"] = { 48.6, 17.2, FROSTWALL },
-						--["coord"] = { 61.6, 74.8, 582 },	-- Lunarfall
+						--["coord"] = { 61.6, 74.8, LUNARFALL },
 						["g"] = {
 							follower(32),    -- Follower: Dagg
 						},

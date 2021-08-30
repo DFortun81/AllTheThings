@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(582, {	-- Lunarfall
+		m(LUNARFALL, {
 			n(-99, {	-- Buildings
 				garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
 					["requireSkill"] = FISHING,
@@ -37,7 +37,7 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["isDaily"] = true,
 								["provider"] = { "n", 77733 },	-- Ron Ashton
-								["coord"] = { 54.4, 13.9, 582 },
+								["coord"] = { 54.4, 13.9, LUNARFALL },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(36802, {	-- Abyssal Gulper Lunker
@@ -59,7 +59,7 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["isDaily"] = true,
 								["provider"] = { "n", 77733 },	-- Ron Ashton
-								["coord"] = { 54.4, 13.9, 582 },
+								["coord"] = { 54.4, 13.9, LUNARFALL },
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(112623),	-- Pack of Fishing Supplies
@@ -82,7 +82,7 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["isDaily"] = true,
 								["provider"] = { "n", 77733 },	-- Ron Ashton
-								["coord"] = { 54.4, 13.9, 582 },
+								["coord"] = { 54.4, 13.9, LUNARFALL },
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(112623),	-- Pack of Fishing Supplies
@@ -93,7 +93,7 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["isDaily"] = true,
 								["provider"] = { "n", 77733 },	-- Ron Ashton
-								["coord"] = { 54.4, 13.9, 582 },
+								["coord"] = { 54.4, 13.9, LUNARFALL },
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(112623),	-- Pack of Fishing Supplies
@@ -123,7 +123,7 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["isDaily"] = true,
 								["provider"] = { "n", 77733 },	-- Ron Ashton
-								["coord"] = { 54.4, 13.9, 582 },
+								["coord"] = { 54.4, 13.9, LUNARFALL },
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(112623),	-- Pack of Fishing Supplies
@@ -140,7 +140,7 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["isDaily"] = true,
 								["provider"] = { "n", 77733 },	-- Ron Ashton
-								["coord"] = { 54.4, 13.9, 582 },
+								["coord"] = { 54.4, 13.9, LUNARFALL },
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(112623),	-- Pack of Fishing Supplies

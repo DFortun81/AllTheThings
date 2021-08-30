@@ -11,11 +11,11 @@ _.Holidays = bubbleDown({["u"] = 26},
 			["isDaily"] = true,
 			["coords"] = {
 				{ 56.5, 87.9, FROSTWALL },
-				{ 74.5, 33.9, 582 },	-- Lunarfall
+				{ 74.5, 33.9, LUNARFALL },
 			},
 			["maps"] = {
 				FROSTWALL,
-				582,	-- Lunarfall
+				LUNARFALL,
 			},
 			["g"] = {
 				i(128794),	-- Sack of Spectral Spiders (PET!)

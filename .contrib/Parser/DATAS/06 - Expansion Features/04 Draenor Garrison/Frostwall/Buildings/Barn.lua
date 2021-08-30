@@ -33,7 +33,7 @@ _.ExpansionFeatures =
 							}),
 							q(36345, {	-- Breaking into the Trap Game
 								["provider"] = { "n", 85048 },	-- Farmer Lok'lub
-								["coord"] = { 59.0, 26.0, 582 },
+								["coord"] = { 59.0, 26.0, LUNARFALL },
 								["races"] = HORDE_ONLY,
 							}),
 						}),

@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(582, {	-- Lunarfall
+		m(LUNARFALL, {
 			n(QUESTS, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -16,7 +16,7 @@ _.ExpansionFeatures =
 							q(35185, {	-- Garrison Campaign: The Sargerei
 								["races"] = ALLIANCE_ONLY,
 								["provider"] = { "n", 83858 },	-- Khadgar's Servant
-								["coord"] = { 42.6, 46.8, 582 },	-- Lunarfall
+								["coord"] = { 42.6, 46.8, LUNARFALL },
 							}),
 							-- 2nd quest of Garrison Campaign: The Sargerei (N) questchain
 							q(35187, {	-- Infiltrating the Sargerei
@@ -90,15 +90,15 @@ _.ExpansionFeatures =
 							}),
 							q(36160, {	-- Garrison Campaign: Every Rose Has Its Thorn
 								["provider"] = { "n", 77209 },	-- Baros Alexston
-								["coord"] = { 29.2, 33.1, 582 },	-- garrison lvl 3
+								["coord"] = { 29.2, 33.1, LUNARFALL },	-- garrison lvl 3
 							}),
 							q(34026, {	-- Garrison Campaign: Seismic Matters
 								["provider"] = { "n", 77209 },	-- Baros Alexston
-								["coord"] = { 29.2, 33.1, 582 },	-- garrison lvl 3
+								["coord"] = { 29.2, 33.1, LUNARFALL },	-- garrison lvl 3
 							}),
 							q(34284, {	-- Garrison Campaign: The Search for Owynn Graddock
 								["provider"] = { "n", 81492 },	-- Bodrick Grey <SI:7>
-								["coord"] = { 38.0, 37.6, 582 },	-- garrison lvl 3
+								["coord"] = { 38.0, 37.6, LUNARFALL },	-- garrison lvl 3
 							}),
 							q(35985, {	-- Garrison Campaign: The Broken Precipice
 								["provider"] = { "n", 88892 },	-- Nixxie
@@ -122,13 +122,13 @@ _.ExpansionFeatures =
 							}),
 							q(34027, {	-- Groundbreaking Data
 								["provider"] = { "n", 77217 },	-- Jr. Surveyor Dorn
-								["coord"] = { 64.5, 69.8, 582 },
+								["coord"] = { 64.5, 69.8, LUNARFALL },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 34026,	-- Garrison Campaign: Seismic Matters
 							}),
 							q(34028, {	-- These Look Familiar....
 								["provider"] = { "n", 77217 },	-- Jr. Surveyor Dorn
-								["coord"] = { 64.5, 69.8, 582 },
+								["coord"] = { 64.5, 69.8, LUNARFALL },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 34027,	-- Groundbreaking Data
 							}),
@@ -136,7 +136,7 @@ _.ExpansionFeatures =
 					}),
 					n(89763, {	-- Muradin Bronzebeard
 						["creatureID"] = 91196,	-- Muradin Bronzebeard
-						["coord"] = { 34.1, 32.6, 582 },
+						["coord"] = { 34.1, 32.6, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
 						["g"] = {
@@ -490,8 +490,8 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 80568 },	-- Yrel
 						["races"] = ALLIANCE_ONLY,
 						["coords"] = {
-							{ 46.9, 50.8, 582 },	-- lvl 1 garrison
-							{ 47.0, 51.0, 582 },	-- lvl 2/3 garrison
+							{ 46.9, 50.8, LUNARFALL },	-- lvl 1 garrison
+							{ 47.0, 51.0, LUNARFALL },	-- lvl 2/3 garrison
 						},
 					}),
 					q(36408, {	-- A Power Lost
@@ -501,7 +501,7 @@ _.ExpansionFeatures =
 					}),
 					q(38259, {	-- All Hands on Deck
 						["provider"] = { "n", 92219 },	-- King Varian Wrynn
-						["coord"] = { 32.0, 31.9, 582 },
+						["coord"] = { 32.0, 31.9, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 38258,	-- Nothing Remains
 						["g"] = {
@@ -512,12 +512,12 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 36161 },    -- Where There Is Smoke... (A)
 						["provider"] = { "n", 84511 },    -- Lieutenant Thorn
-						["coord"] = { 31.6, 33.6, 582 },    -- Lunarfall
+						["coord"] = { 31.6, 33.6, LUNARFALL },
 					}),
 					q(34653, {	-- Arakkoa Exodus
 						["sourceQuests"] = { 35554 },	-- News from Spires of Arak
 						["isBreadcrumb"] = true,
-						["coord"] = { 37.8, 36.8, 582 },
+						["coord"] = { 37.8, 36.8, LUNARFALL },
 						["provider"] = { "n", 81492 },	-- Bodrick Grey
 					}),
 					q(36624, {	-- Ashran Appearance
@@ -525,8 +525,8 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34692,	-- Delegating on Draenor
 						["coords"] = {
-							{ 40.7, 53.6, 582 },	-- lvl 1 garrison
-							{ 31.1, 32.8, 582 },	-- lvl 2 garrison
+							{ 40.7, 53.6, LUNARFALL },	-- lvl 1 garrison
+							{ 31.1, 32.8, LUNARFALL },	-- lvl 2 garrison
 						},
 					}),
 					q(36679, {	-- Assault on Darktide Roost
@@ -534,8 +534,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(9, {
@@ -549,8 +549,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							currency(823),	-- Apexis Crystal x800
@@ -561,8 +561,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(3, {
@@ -576,8 +576,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(7, {
@@ -591,8 +591,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(11, {
@@ -606,8 +606,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(12, {
@@ -621,8 +621,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(10, {
@@ -636,8 +636,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(8, {
@@ -651,8 +651,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(2, {
@@ -666,8 +666,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(6, {
@@ -681,8 +681,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(5, {
@@ -696,8 +696,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							currency(823),	-- Apexis Crystal x800
@@ -708,8 +708,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(1, {
@@ -723,8 +723,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(4, {
@@ -738,8 +738,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							currency(823),	-- Apexis Crystal x1000
@@ -750,14 +750,14 @@ _.ExpansionFeatures =
 							34692,	-- Delegating on Draenor
 							33814,	-- Fast Expansion
 						},
-						["coord"] = { 41.2, 49.3, 582 },
+						["coord"] = { 41.2, 49.3, LUNARFALL },
 						["provider"] = { "n", 77209 },	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(38356, {	-- Bringing the Bass
 						["sourceQuests"] = { 36615 },	-- My Very Own Castle
 						["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
-						["coord"] = { 33.8, 36.4, 582 },
+						["coord"] = { 33.8, 36.4, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							spell(181715),	-- Unlock Garrison Jukebox
@@ -781,8 +781,8 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34586,	-- Establish Your Garrison
 						["coords"] = {
-							{ 41.3, 49.4, 582 },	-- lvl 1 garrison
-							{ 29.2, 33.1, 582 },	-- lvl 2/3 garrison
+							{ 41.3, 49.4, LUNARFALL },	-- lvl 1 garrison
+							{ 29.2, 33.1, LUNARFALL },	-- lvl 2/3 garrison
 						},
 					}),
 					q(34587, {	-- Build Your Barracks
@@ -791,7 +791,7 @@ _.ExpansionFeatures =
 							35174,	-- Pale Moonlight
 							35166,	-- Ship Salvage
 						},
-						["coord"] = { 41.1, 49.4, 582 },
+						["coord"] = { 41.1, 49.4, LUNARFALL },
 						["provider"] = { "n", 77209 },	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -804,8 +804,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236165 },	-- War Planning Map
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							currency(823),	-- Apexis Crystal x1000
@@ -813,7 +813,7 @@ _.ExpansionFeatures =
 					}),
 					q(36404, {	-- Clearing the Garden
 						["sourceQuest"] = 36592,	-- Bigger is Better
-						["coord"] = { 58.9, 53.4, 582 },
+						["coord"] = { 58.9, 53.4, LUNARFALL },
 						["provider"] = { "n", 85344 },	-- Naron Bloomthistle
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -857,13 +857,13 @@ _.ExpansionFeatures =
 					}),
 					q(34692, {	-- Delegating on Draenor
 						["sourceQuests"] = { 34646 },	-- Qiana Moonshadow
-						["coord"] = { 40.2, 43.6, 582 },
+						["coord"] = { 40.2, 43.6, LUNARFALL },
 						["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34586, {	-- Establish Your Garrison
 						["sourceQuests"] = { 34585 },	-- Quakefist
-						["coord"] = { 32.7, 34.0, 582 },
+						["coord"] = { 32.7, 34.0, LUNARFALL },
 						["provider"] = { "n", 79243 },	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -873,7 +873,7 @@ _.ExpansionFeatures =
 					}),
 					q(34583, {	-- For the Alliance
 						["sourceQuests"] = { 34582 },	-- Finding a Foothold
-						["coord"] = { 30.0, 34.3, 582 },
+						["coord"] = { 30.0, 34.3, LUNARFALL },
 						["provider"] = { "n", 79470 },	-- Vindicator Maraad
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -914,7 +914,7 @@ _.ExpansionFeatures =
 						},
 						["races"] = ALLIANCE_ONLY,
 						["coords"] = {
-							{ 30.2, 18.1, 582 },	-- level 2 garrison
+							{ 30.2, 18.1, LUNARFALL },	-- level 2 garrison
 							{ 39.8, 29.4, DRAENOR_SHADOWMOON_VALLEY },	-- Lost Packmule
 						},
 						["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
@@ -936,7 +936,7 @@ _.ExpansionFeatures =
 					}),
 					q(35176, {	-- Keeping it Together
 						["sourceQuests"] = { 34586 },	-- Establish Your Garrison
-						["coord"] = { 41.1, 49.4, 582 },
+						["coord"] = { 41.1, 49.4, LUNARFALL },
 						["provider"] = { "n", 77209 },	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -944,12 +944,12 @@ _.ExpansionFeatures =
 						["requireSkill"] = FISHING,
 						["sourceQuest"] = 36592,	-- Bigger is Better
 						["provider"] = { "n", 77733 },	-- Ron Ashton
-						["coord"] = { 53.9, 13.4, 582 },	-- lvl 2 garrison
+						["coord"] = { 53.9, 13.4, LUNARFALL },	-- lvl 2 garrison
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34584, {	-- Looking for Lumber
 						["sourceQuests"] = { 34583 },	-- For the Alliance!
-						["coord"] = { 32.5, 34.2, 582 },
+						["coord"] = { 32.5, 34.2, LUNARFALL },
 						["provider"] = { "n", 79243 },	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -959,8 +959,8 @@ _.ExpansionFeatures =
 							33059,	-- The Fate of Karabor
 						},
 						["coords"] = {
-							{ 29.6, 19.3, 582 },	-- level 2 garrison
-							{ 40.3, 54.4, 582 },	-- lvl 3 garrison
+							{ 29.6, 19.3, LUNARFALL },	-- level 2 garrison
+							{ 40.3, 54.4, LUNARFALL },	-- lvl 3 garrison
 						},
 						["provider"] = { "n", 80163 },	-- Ken Loggin
 						["races"] = ALLIANCE_ONLY,
@@ -971,8 +971,8 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["coords"] = {
-							{ 43.8, 44.4, 582 },	-- lvl 1 garrison
-							{ 43.1, 44.7, 582 },	-- lvl 2/3 garrison
+							{ 43.8, 44.4, LUNARFALL },	-- lvl 1 garrison
+							{ 43.1, 44.7, LUNARFALL },	-- lvl 2/3 garrison
 						},
 					}),
 					q(34778, {	-- Migrant Workers
@@ -980,32 +980,32 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 79457 },	-- Vindicator Maraad
 						["races"] = ALLIANCE_ONLY,
 						["coords"] = {
-							{ 44.1, 53.2, 582 },	-- lvl 1 garrison
-							{ 41.5, 44.9, 582 },	-- lvl 2/3 garrison
+							{ 44.1, 53.2, LUNARFALL },	-- lvl 1 garrison
+							{ 41.5, 44.9, LUNARFALL },	-- lvl 2/3 garrison
 						},
 					}),
 					q(38344, {	-- Mystery Notebook
 						["sourceQuest"] = 36615,	-- My Very Own Castle
 						["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
-						["coord"] = { 33.8, 36.4, 582 },
+						["coord"] = { 33.8, 36.4, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36615, {	-- My Very Own Castle
 						["provider"] = { "n", 77209 },	-- Baros Alexston
-						["coord"] = { 31.8, 31.0, 582 },
+						["coord"] = { 31.8, 31.0, LUNARFALL },
 						["sourceQuest"] = 36592,	-- Bigger is Better
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(38408, {	-- New Goods
 						["sourceQuests"] = { 36615 },	-- My Very Own Castle
-						["coord"] = { 28.7, 35.0, 582 },
+						["coord"] = { 28.7, 35.0, LUNARFALL },
 						["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(35174, {	-- Pale Moonlight
 						["provider"] = { "n", 79457 },	-- Vindicator Maraad
 						["races"] = ALLIANCE_ONLY,
-						["coord"] = { 44.0, 53.3, 582 },
+						["coord"] = { 44.0, 53.3, LUNARFALL },
 						["sourceQuests"] = { 34586 },	-- Establish Your Garrison
 					}),
 					q(36861, {	-- Pinchwhistle Gearworks (Alliance)
@@ -1014,12 +1014,12 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["coords"] = {
-							{ 45.8, 46.0, 582 },	-- lvl 1 garrison
-							{ 46.1, 45.7, 582 },	-- lvl 2/3 garrison
+							{ 45.8, 46.0, LUNARFALL },	-- lvl 1 garrison
+							{ 46.1, 45.7, LUNARFALL },	-- lvl 2/3 garrison
 						},
 					}),
 					q(37433, {	-- Proving Grounds
-						["coord"] = { 29.1, 34.6, 582 },
+						["coord"] = { 29.1, 34.6, LUNARFALL },
 						["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 34586 },	-- Establish Your Garrison
@@ -1039,13 +1039,13 @@ _.ExpansionFeatures =
 							34584,	-- Looking for Lumber
 							34616,	-- Ravenous Ravens
 						},
-						["coord"] = { 31.4, 35.8, 582 },
+						["coord"] = { 31.4, 35.8, LUNARFALL },
 						["provider"] = { "n", 79567 },	-- Yrel
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34646, {	-- Qiana Moonshadow
 						["sourceQuests"] = { 34587 },	-- Build Your Barracks
-						["coord"] = { 44.1, 53.3, 582 },
+						["coord"] = { 44.1, 53.3, LUNARFALL },
 						["provider"] = { "n", 79457 },	-- Vindicator Maraad
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -1054,7 +1054,7 @@ _.ExpansionFeatures =
 					}),
 					q(34616, {	-- Ravenous Ravens
 						["sourceQuests"] = { 34583 },	-- For the Alliance!
-						["coord"] = { 32.5, 34.2, 582 },
+						["coord"] = { 32.5, 34.2, LUNARFALL },
 						["provider"] = { "n", 79243 },	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1072,14 +1072,14 @@ _.ExpansionFeatures =
 					--	i had also just received my first outpost notes before finding this quest
 					--	gorgrond is a level 92 zone, so that's possible
 					--	["sourceQuests"] = {  },	--
-						["coord"] = { 29.5, 33.3, 582 },
+						["coord"] = { 29.5, 33.3, LUNARFALL },
 						["provider"] = { "n", 77209 },	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34733, {    -- Services of Dagg
 						--["sourceQuests"] = { ??? },	-- You need to open 2 cages in Frostfire Ridge at 39.52, 28.06 and 65.85, 60.84., probably 2 HQT there.
 						--["coord"] = { 48.6, 17.2, FROSTWALL },
-						["coord"] = { 61.6, 74.8, 582 },	-- Lunarfall
+						["coord"] = { 61.6, 74.8, LUNARFALL },
 						["g"] = {
 							follower(32),    -- Follower: Dagg
 						},
@@ -1090,13 +1090,13 @@ _.ExpansionFeatures =
 							33081,	-- Escape from Shaz'gul
 							33059,	-- The Fate of Karabor
 						},
-						["coord"] = { 29.5, 16.4, 582 },	-- level 2 garrison
+						["coord"] = { 29.5, 16.4, LUNARFALL },	-- level 2 garrison
 						["provider"] = { "n", 88223 },	-- Sergeant Crowler
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(35166, {	-- Ship Salvage
 						["sourceQuests"] = { 34586 },	-- Establish Your Garrison
-						["coord"] = { 41.1, 49.4, 582 },
+						["coord"] = { 41.1, 49.4, LUNARFALL },
 						["provider"] = { "n", 77209 },	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1116,14 +1116,14 @@ _.ExpansionFeatures =
 						["cost"] = { { "i", 111557, 50 } },	-- 50x Sumptuous Fur
 					}),
 					q(34674, {	-- Taking the Fight to Nagrand
-						["coord"] = { 42.8, 45.2, 582 },
+						["coord"] = { 42.8, 45.2, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						--["objectID"] = 232397,	-- Bulletin Board
 					}),
 					q(37184, {	-- Taking the Fight to Nagrand
 						["provider"] = { "n", 81492 },	-- Bodrick Grey
-						["coord"] = { 38.2, 37.0, 582 },	-- garrison lvl 3
+						["coord"] = { 38.2, 37.0, LUNARFALL },	-- garrison lvl 3
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = {
@@ -1132,14 +1132,14 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(34676, {	-- The Critical Path
-						["coord"] = { 42.8, 45.2, 582 },
+						["coord"] = { 42.8, 45.2, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						--["objectID"] = 232397,	-- Bulletin Board
 					}),
 					q(37183, {	-- The Critical Path
 						["provider"] = { "n", 81492 },	-- Bodrick Grey
-						["coord"] = { 38.2, 37.0, 582 },	-- garrison lvl 3
+						["coord"] = { 38.2, 37.0, LUNARFALL },	-- garrison lvl 3
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
@@ -1153,19 +1153,19 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 81492 },	-- Bodrick Grey
 						["races"] = ALLIANCE_ONLY,
 						["coords"] = {
-							{ 31.4, 33.5, 582 },	-- level 1 garrison
-							{ 38.3, 36.7, 582 },	-- level 2/3 garrison
+							{ 31.4, 33.5, LUNARFALL },	-- level 1 garrison
+							{ 38.3, 36.7, LUNARFALL },	-- level 2/3 garrison
 						},
 					}),
 					q(35459, {	-- The Southern Wilds
 						["sourceQuests"] = { 34019 },	-- Shadows Awaken
-						["coord"] = { 42.8, 45.2, 582 },
+						["coord"] = { 42.8, 45.2, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["provider"] = { "o", 232397 },	-- Bulletin Board
 					}),
 					q(35343, {	-- The Young Alchemist
-						["coord"] = { 47.2, 45.8, 582 },
+						["coord"] = { 47.2, 45.8, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 82466 },	-- Aenir
 						["sourceQuest"] = 35342,	-- The Mysterious Flask
@@ -1174,7 +1174,7 @@ _.ExpansionFeatures =
 					q(34192, {	-- Things Are Not Goren Our Way
 						["sourceQuests"] = { 36592 },	-- Bigger is Better
 						["provider"] = { "n", 77730 },	-- Timothy Leens
-						["coord"] = { 65.2, 41.8, 582 },
+						["coord"] = { 65.2, 41.8, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							garrisonBuilding(61),	-- Frostwall Mines
@@ -1210,8 +1210,8 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 36592,	-- Bigger is Better
 						["races"] = ALLIANCE_ONLY,
 						["coords"] = {
-							{ 30.7, 31.8, 582 },	-- lvl 2 garrison
-							{ 31.4, 31.0, 582 },	-- lvl 3 garrison
+							{ 30.7, 31.8, LUNARFALL },	-- lvl 2 garrison
+							{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 						},
 					}),
 					q(38257, {	-- We Need a Shipwright
@@ -1220,13 +1220,13 @@ _.ExpansionFeatures =
 							40418,	-- To Tanaan!
 						},
 						["provider"] = { "n", 92219 },	-- King Varian Wrynn
-						["coord"] = { 32.0, 31.9, 582 },
+						["coord"] = { 32.0, 31.9, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36161, {	-- Where There Is Smoke...
 						["sourceQuest"] = 36160,	-- Garrison Campaign: Every Rose Has Its Thorn
 						["provider"] = { "n", 84684 },	-- Lieutenant Thorn <Mission Specialist>
-						["coord"] = { 29.6, 34.4, 582 },
+						["coord"] = { 29.6, 34.4, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					-- Treasure Hunt Dailies: Gronnsbane
@@ -1235,31 +1235,31 @@ _.ExpansionFeatures =
 							{ "n", 89793 },	-- Harrison Jones
 							{ "n", 92223 },	-- Surveyor Daltry
 						},
-						["coord"] = { 34.6, 33.2, 582 },
+						["coord"] = { 34.6, 33.2, LUNARFALL },
 						["isDaily"] = true,
 					}),
 					q(37916, {	-- Gronnsbane: The Broken Spear
 						["sourceQuest"] = 37914, -- Treasure Contract: The Thunderlord Sage
 						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
-						["coord"] = { 34.6, 32.7, 582 },
+						["coord"] = { 34.6, 32.7, LUNARFALL },
 						["isDaily"] = true,
 					}),
 					q(37917, {	-- Gronnsbane: The Blessing of Fire
 						["sourceQuest"] = 37916, -- Gronnsbane: The Broken Spear
 						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
-						["coord"] = { 34.6, 32.7, 582 },
+						["coord"] = { 34.6, 32.7, LUNARFALL },
 						["isDaily"] = true,
 					}),
 					q(37918, {	-- Gronnsbane: The Blessing of Fire
 						["sourceQuest"] = 37917, -- Gronnsbane: The Broken Spear
 						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
-						["coord"] = { 34.6, 32.7, 582 },
+						["coord"] = { 34.6, 32.7, LUNARFALL },
 						["isDaily"] = true,
 					}),
 					q(37919, {	-- Gronnsbane: The Blessing of Beasts
 						["sourceQuest"] = 37918, -- Gronnsbane: The Blessing of Fire
 						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
-						["coord"] = { 34.6, 32.7, 582 },
+						["coord"] = { 34.6, 32.7, LUNARFALL },
 						["isDaily"] = true,
 					}),
 				},

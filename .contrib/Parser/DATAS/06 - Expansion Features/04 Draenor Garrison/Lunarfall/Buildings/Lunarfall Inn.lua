@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(582, {	-- Lunarfall
+		m(LUNARFALL, {
 			n(-99, {	-- Buildings
 				garrisonBuilding(36, {	-- Lunarfall Inn (rank 1: 34, rank 2: 35, rank 3: 36)
 					["races"] = ALLIANCE_ONLY,
@@ -926,7 +926,7 @@ _.ExpansionFeatures =
 							}),
 							q(33814, {	-- Fast Expansion
 								["provider"] = { "n", 81152 },	-- Scout Valdez
-								["coord"] = { 31.0, 31.1, 582 },	-- Garrison lvl 3
+								["coord"] = { 31.0, 31.1, LUNARFALL },	-- Garrison lvl 3
 								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,
 							}),

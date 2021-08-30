@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(582, {	-- Lunarfall
+		m(LUNARFALL, {
 			n(ACHIEVEMENTS, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {

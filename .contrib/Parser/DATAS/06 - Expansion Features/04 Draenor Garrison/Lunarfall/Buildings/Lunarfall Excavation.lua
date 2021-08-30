@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(582, {	-- Lunarfall
+		m(LUNARFALL, {
 			n(-99, {	-- Buildings
 				garrisonBuilding(63,  {	-- Lunarfall Excavation (rank 1: 61, rank 2: 62, rank 3: 63)
 					["races"] = ALLIANCE_ONLY,

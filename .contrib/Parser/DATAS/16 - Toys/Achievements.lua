@@ -67,7 +67,7 @@ _.Toys =
 				["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
 				["coords"] = {
 					{ 70.71, 90.21, FROSTWALL },	-- Pepe Location [Horde]
-					{ 40.12, 70.06, 582 },	-- Pepe Location [Alliance]
+					{ 40.12, 70.06, LUNARFALL },	-- Pepe Location [Alliance]
 				},
 				["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
 			}),

@@ -39,7 +39,7 @@ profession(ENCHANTING, {
 		}),
 	}),
 	gb(126, {	-- Enchanter's Study (Level 3)  --- Leaving here for now, but should really be moved to the garrison vendor files
-		["maps"] = { 582, FROSTWALL },	-- Both Garrisons
+		["maps"] = { LUNARFALL, FROSTWALL },	-- Both Garrisons
 		["g"] = {
 			n(77354, {	-- Ayada the White [Alliance]
 				["races"] = ALLIANCE_ONLY,

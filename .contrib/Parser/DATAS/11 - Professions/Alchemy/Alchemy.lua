@@ -1,7 +1,7 @@
 -- Alchemy - Skill ID 171 / Spell ID 2259
 profession(ALCHEMY, {
 	gb(120, {	-- Alchemy Lab (Level 3)
-		["maps"] = { 582, FROSTWALL },	-- Both Garrisons
+		["maps"] = { LUNARFALL, FROSTWALL },	-- Both Garrisons
 		["g"] = {
 			n(79813, {	-- Albert de Hyde <Alchemist>
 				["races"] = HORDE_ONLY,

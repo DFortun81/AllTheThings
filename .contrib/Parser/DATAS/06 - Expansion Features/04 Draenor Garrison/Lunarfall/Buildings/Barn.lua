@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(582, {	-- Lunarfall
+		m(LUNARFALL, {
 			n(-99, {	-- Buildings
 				garrisonBuilding(133, {	-- Barn (rank 1: 24, rank 2: 25, rank 3: 133)
 					["races"] = ALLIANCE_ONLY,
@@ -29,7 +29,7 @@ _.ExpansionFeatures =
 							}),
 							q(36271, {	-- Breaking into the Trap Game
 								["provider"] = { "n", 84524 },	-- Homer Stonefield
-								["coord"] = { 51.0, 42.0, 582 },
+								["coord"] = { 51.0, 42.0, LUNARFALL },
 								["races"] = ALLIANCE_ONLY,
 							}),
 						}),

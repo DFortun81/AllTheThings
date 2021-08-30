@@ -54,7 +54,7 @@ _.Secrets =
 								["description"] = "Legion Dalaran or Garrison",
 								["coords"] = {
 									{ 59.2, 39.6, LEGION_DALARAN },
-									{ 29.2, 40.4, 582 },	-- Lunarfall
+									{ 29.2, 40.4, LUNARFALL },
 								},
 								["races"] = ALLIANCE_ONLY,
 							}),

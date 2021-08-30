@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(582, {	-- Lunarfall
+		m(LUNARFALL, {
 			filter(101, {	-- Pet Battle
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -16,20 +16,20 @@ _.ExpansionFeatures =
 					q(36483, {	-- Battle Pet Roundup
 						["isDaily"] = true,
 						["provider"] = { "n", 85418 },	-- Lio the Lioness
-						["coord"] = { 28.3, 38.8, 582 },
+						["coord"] = { 28.3, 38.8, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 36423,	-- Pets Versus Pests
 					}),
 					q(40329,  {	-- Battle Pet Tamers: Warlords
 						["sourceQuests"] = { 36592 },	-- Bigger is Better
 						["isWeekly"] = true,
-						["coord"] = { 28.3, 38.8, 582 },	-- lvl 2/3 garrison
+						["coord"] = { 28.3, 38.8, LUNARFALL },	-- lvl 2/3 garrison
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 85418 },	-- Lio the Lioness
 					}),
 					q(38299,  {	-- Critters of Draenor
 						["isDaily"] = true,
-						["coord"] = { 28.8, 39.2, 582 },
+						["coord"] = { 28.8, 39.2, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["providers"] = {
 							{ "n", 90675 },	-- Erris the Collector
@@ -48,7 +48,7 @@ _.ExpansionFeatures =
 					}),
 					q(37644,  {	-- Mastering the Menagerie
 						["isDaily"] = true,
-						["coord"] = { 29.0, 40.4, 582 },
+						["coord"] = { 29.0, 40.4, LUNARFALL },
 						["provider"] = { "n", 85418 },	-- Lio the Lioness
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -67,7 +67,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 38241 },	-- Unearthed Magic
 						["lvl"] = 100,	-- wowhead says 98, but its prereq requires a level 3 garrison, which requires level 100.
 						["provider"] = { "n", 85418 },	-- Lio the Lioness
-						["coord"] = { 28.2, 38.8, 582 },
+						["coord"] = { 28.2, 38.8, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							garrisonBuilding(42),	-- Menagerie
@@ -77,7 +77,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 36615 },	-- My Very Own Castle
 						["lvl"] = 100,	-- wowhead says 98, but it requires a level 3 garrison, which requires level 100.
 						["provider"] = { "n", 85418 },	-- Lio the Lioness
-						["coord"] = { 28.2, 38.8, 582 },
+						["coord"] = { 28.2, 38.8, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(122457),	-- Ultimate Battle-Training Stone

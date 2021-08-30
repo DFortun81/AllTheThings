@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrions
-		m(582, {	-- Lunarfall
+		m(LUNARFALL, {
 			["lvl"] = 90,
 			["maps"] = {
 				579,	-- Lunarfall Excavation [Unclaimed / Level 1]

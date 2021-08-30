@@ -573,7 +573,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isYearly"] = true,
 				["maps"] = {
 					FROSTWALL,
-					582,	-- Lunarfall
+					LUNARFALL,
 				},
 				["g"] = {
 					i(37586),	-- Handful of Treats
@@ -2101,7 +2101,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["maps"] = {
 					FROSTWALL,
-					582,	-- Lunarfall
+					LUNARFALL,
 				},
 				["lvl"] = 100,
 				["g"] = {
@@ -2213,7 +2213,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["maps"] = {
 					FROSTWALL,
-					582,	-- Lunarfall
+					LUNARFALL,
 				},
 				["lvl"] = 100,
 				["u"] = 26,
@@ -2304,7 +2304,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["maps"] = {
 					FROSTWALL,
-					582,	-- Lunarfall
+					LUNARFALL,
 				},
 				["lvl"] = 100,
 				["u"] = 26,
@@ -2329,7 +2329,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["maps"] = {
 					FROSTWALL,
-					582,	-- Lunarfall
+					LUNARFALL,
 				},
 				["lvl"] = 100,
 				["u"] = 26,

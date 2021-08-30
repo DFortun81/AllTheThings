@@ -895,11 +895,11 @@ _.Holidays = bubbleDown({["u"] = 26},
 				ach(10365, {	-- A Frightening Friend
 					["description"] = "Halloween Decorations must be up in a Tier 3 garrison.",
 					["coords"] = {
-						{ 40.1, 70.0, 582 },	-- Pepe Location (Alliance)
+						{ 40.1, 70.0, LUNARFALL },	-- Pepe Location (Alliance)
 						{ 70.7, 90.2, FROSTWALL },	-- Pepe Location (Horde)
 					},
 					["maps"] = {
-						582,	-- Lunarfall
+						LUNARFALL,
 						FROSTWALL,
 					},
 				}),

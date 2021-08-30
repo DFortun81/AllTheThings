@@ -16,7 +16,7 @@ _.WorldEvents =
 			--625,	-- Dalaran: Broken Isles -- Option to interact with this Version removed in 9.0.2
 			--628,	-- Dalaran: The Underbelly -- Option to interact with this Version removed in 9.0.2
 			--FROSTWALL,
-			--582,	-- Lunarfall
+			--LUNARFALL,
 		},
 		["crs"] = {
 			142062,	-- Madam Gosu [Boralus - Alliance]

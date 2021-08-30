@@ -5,13 +5,13 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(582, {	-- Lunarfall
+		m(LUNARFALL, {
 			n(TREASURES, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					o(232507, {	-- Lunarfall Egg
 						["questID"] = 35530,
-						["coord"] = { 49.8, 43.6, 582 },
+						["coord"] = { 49.8, 43.6, LUNARFALL },
 						["g"] = {
 							currency(824),	-- Garrison Resources
 						},
