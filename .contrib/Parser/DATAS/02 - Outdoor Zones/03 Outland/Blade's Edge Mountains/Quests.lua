@@ -956,7 +956,12 @@ _.Zones =
 					["qg"] = 23053,	-- Bladespire Supplicant
 					["sourceQuest"] = 11000,	-- Into the Soulgrinder
 					["coord"] = { 56.2, 48.0, BLADES_EDGE_MOUNTAINS },
-					["races"] = { NIGHTELF },
+					["races"] = {
+						NIGHTELF,
+					-- #if AFTER BFA
+						HUMAN,
+					-- #endif
+					},
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(70, 20, 70),
 				}),
