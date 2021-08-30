@@ -798,7 +798,10 @@ _.Zones =
 				q(13005, {	-- The Earthen Oath
 					["provider"] = { "n", 30295 },	-- Thorim
 					["coord"] = { 56.2, 51.3, 120 },
-					["sourceQuests"] = { 13057 },	-- The Terrace of the Makers
+					["sourceQuests"] = {
+						12872,	-- Norgannon's Shell (A)
+						12928,	-- Norgannon's Shell (H)
+					},
 					["g"] = {
 						i(42847),	-- Terrace Gazer's Gloves
 						i(42871),	-- Bracer of Tarbash
