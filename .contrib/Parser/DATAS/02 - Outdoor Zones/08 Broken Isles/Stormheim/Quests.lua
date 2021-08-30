@@ -1183,6 +1183,7 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(43350),	-- triggered when turning in #40072, "Halls of Valor: Securing the Aegis"
+	q(42574),	-- Shaman Shrine - Stormheim Earth 02, coords 65,40
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9982, {	-- Legion
