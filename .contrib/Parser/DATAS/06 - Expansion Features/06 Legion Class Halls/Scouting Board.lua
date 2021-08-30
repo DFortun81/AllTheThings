@@ -343,3 +343,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(49620),	-- completed some missions on the Legion Mission Board
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(48310),	-- Tracking Quest for Druids?
+};
