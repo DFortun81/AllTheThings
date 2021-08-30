@@ -1367,3 +1367,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(54773),	-- Warmode version of March on the Marsh
+};
