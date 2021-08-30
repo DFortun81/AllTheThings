@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
-		m(896, {	-- Drustvar
+		m(DRUSTVAR, {
 			n(VENDORS, {
 				n(142197, {	-- Nigel Rifthold <Adventurer's Society>
 					["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at his coords and click on the chest twice.",
-					["coord"] = { 52.2, 31.6, 896 },
+					["coord"] = { 52.2, 31.6, DRUSTVAR },
 					["g"] = {
 						i(163493, {	-- Bloody Rabbit Fang
 							["description"] = "Defeat Cottontail Matron (located at 52.2, 46.8) for this item to appear on the vendor.",
@@ -32,7 +32,7 @@ _.Zones =
 					},
 				}),
 				n(135815, {	-- Quartermaster Alcorn <Order of Embers Emissary>
-					["coord"] = { 37.8, 49.0, 896 },
+					["coord"] = { 37.8, 49.0, DRUSTVAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(161596, {	-- Coven Buster's Waistguard
@@ -131,7 +131,7 @@ _.Zones =
 					},
 				}),
 				n(138021, {	-- Sally Boltwrench <Repairs>
-					["coord"] = { 37.6, 25.8, 896 },
+					["coord"] = { 37.6, 25.8, DRUSTVAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(23596, {	-- Plans: Adamantite Breastplate

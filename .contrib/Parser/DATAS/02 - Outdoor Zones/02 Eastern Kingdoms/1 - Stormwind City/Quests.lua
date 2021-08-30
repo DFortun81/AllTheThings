@@ -136,13 +136,13 @@ _.Zones =
 									q(54730, {	-- Gorak Tul's Influence
 										["sourceQuests"] = { 54728 },	-- This Lumber is Haunted
 										["provider"] = { "n", 139926 },	-- Thornspeaker Birchgrove
-										["coord"] = { 61.9, 59.4, 896 },	-- Drustvar
+										["coord"] = { 61.9, 59.4, DRUSTVAR },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(54731, {	-- Balance in All Things
 										["sourceQuests"] = { 54730 },	-- Gorak Tul's Influence
 										["provider"] = { "n", 139926 },	-- Thornspeaker Birchgrove
-										["coord"] = { 61.9, 59.4, 896 },	-- Drustvar
+										["coord"] = { 61.9, 59.4, DRUSTVAR },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(54729, {	-- The Bleak Hills
@@ -154,19 +154,19 @@ _.Zones =
 									q(54732, {	-- Drop It!
 										["sourceQuests"] = { 54729 },	-- The Bleak Hills
 										["provider"] = { "n", 150884 },	-- Chelsea Wright
-										["coord"] = { 33.1, 30.4, 896 },	-- Drustvar
+										["coord"] = { 33.1, 30.4, DRUSTVAR },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(55136, {	-- Her Dog Days Are Over
 										["sourceQuests"] = { 54732 },	-- Drop It!
 										["provider"] = { "n", 150885 },	-- Wicker Beast
-										["coord"] = { 36.5, 28.9, 896 },	-- Drustvar
+										["coord"] = { 36.5, 28.9, DRUSTVAR },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(54733, {	-- Make it Wright
 										["sourceQuests"] = { 55136 },	-- Her Dog Days Are Over
 										["provider"] = { "n", 150884 },	-- Chelsea Wright
-										["coord"] = { 33.1, 30.4, 896 },	-- Drustvar
+										["coord"] = { 33.1, 30.4, DRUSTVAR },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(54734, {	-- Summons from Dorian
@@ -177,8 +177,8 @@ _.Zones =
 										["description"] = "The questgiver will appear close to where you turn in |cFFFFD700Balance in All Things|r OR |cFFFFD700Make it Wright|r, depending on which set of quests you do second.",
 										["provider"] = { "n", 149252 },	-- Bound Sky
 										["coords"] = {
-											{ 45.4, 45.6, 896 },	-- Drustvar
-											{ 33.0, 30.4, 896 },	-- Drustvar
+											{ 45.4, 45.6, DRUSTVAR },
+											{ 33.0, 30.4, DRUSTVAR },
 										},
 										["races"] = ALLIANCE_ONLY,
 									}),

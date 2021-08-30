@@ -270,7 +270,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					["timeline"] = { "added 7.0.3.22248" },
 				}),
 				applyclassicphase(TBC_PHASE_THREE, i(35498)),	-- Formula: Enchant Weapon - Deathfrost
-				
+
 				-- #if BEFORE 4.2.0
 				-- This item was apparently a drop from Ahune originally, but was removed and added to the Molten Front with 4.2.0.
 				-- Between Patch 3.3.3 and 4.2.0 it had no available source.
@@ -278,7 +278,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					["timeline"] = { "removed 3.3.3", "added 4.2.0" },
 				}),
 				-- #endif
-				
+
 				-- WoD+ Rewards (Scalable)
 				i(117372, {	-- Cloak of the Frigid Winds
 					["timeline"] = { "added 6.0.1.18594" },
@@ -295,7 +295,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(117377, {	-- The Frost Lord's War Cloak
 					["timeline"] = { "added 6.0.1.18594" },
 				}),
-				
+
 				-- Pandaria Rewards
 				i(95425, {	-- Cloak of the Frigid Winds [Level 90]
 					["timeline"] = { "added 5.0.1", "removed 6.0.1" },
@@ -312,7 +312,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(95430, {	-- The Frost Lord's War Cloak [Level 90]
 					["timeline"] = { "added 5.0.1", "removed 6.0.1" },
 				}),
-				
+
 				-- Cataclysm Rewards
 				i(69769, {	-- Cloak of the Frigid Winds [Level 85]
 					["timeline"] = { "added 4.0.1", "removed 5.0.1" },
@@ -329,7 +329,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(69766, {	-- The Frost Lord's War Cloak [Level 85]
 					["timeline"] = { "added 4.0.1", "removed 5.0.1" },
 				}),
-				
+
 				i(54805, {	-- Cloak of the Frigid Winds [Level 80]
 					["timeline"] = { "added 3.3.3.11723", "removed 4.0.1" },
 				}),
@@ -345,7 +345,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(54802, {	-- The Frost Lord's War Cloak [Level 80]
 					["timeline"] = { "added 3.3.3.11723", "removed 4.0.1" },
 				}),
-				
+
 				-- Original Rewards
 				i(35514, {	-- Frostscythe of Lord Ahune [Level 70]
 					["timeline"] = { "removed 3.3.3.11723" },
@@ -1043,9 +1043,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["maps"] = { 942 },	-- Stormsong Valley
 					}),
 					crit(3, {	-- Drustvar
-						["coord"] = { 40.2, 47.7, 896 },
+						["coord"] = { 40.2, 47.7, DRUSTVAR },
 						["races"] = ALLIANCE_ONLY,
-						["maps"] = { 896 },	-- Drustvar
+						["maps"] = { DRUSTVAR },
 					}),
 				},
 			}),
@@ -1784,9 +1784,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["maps"] = { 942 },	-- Stormsong Valley
 					}),
 					crit(3, {	-- Drustvar
-						["coord"] = { 40.2, 47.3, 896 },
+						["coord"] = { 40.2, 47.3, DRUSTVAR },
 						["races"] = HORDE_ONLY,
-						["maps"] = { 896 },	-- Drustvar
+						["maps"] = { DRUSTVAR },
 					}),
 				},
 			}),
@@ -2868,7 +2868,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				},
 				-- #endif
 			}),
-			
+
 			-- Bonfire Quests
 			n(FACTION_HEADER_ALLIANCE, {
 				["timeline"] = { "added 2.4.0.7994" },
@@ -3312,9 +3312,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(54743, {	-- Honor the Flame — Drustvar
 						["qg"] = 148934,	-- Drustvar Flame Warden
-						["coord"] = { 40.2, 47.7, 896 },
+						["coord"] = { 40.2, 47.7, DRUSTVAR },
 						["timeline"] = { "added 8.0.1" },
-						["maps"] = { 896 },	-- Drustvar
+						["maps"] = { DRUSTVAR },
 					}),
 					q(11813, {	-- Honor the Flame — Dun Morogh
 						["qg"] = 25895,	-- Dun Morogh Flame Warden
@@ -3693,9 +3693,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(54742, {	-- Desecrate this Fire! — Drustvar
 						["provider"] = { "o", 316793 },	-- Alliance Bonfire
-						["coord"] = { 40.2, 47.3, 896 },
+						["coord"] = { 40.2, 47.3, DRUSTVAR },
 						["timeline"] = { "added 8.0.1" },
-						["maps"] = { 896 },	-- Drustvar
+						["maps"] = { DRUSTVAR },
 					}),
 					q(11742, {	-- Desecrate this Fire! — Dun Morogh
 						["provider"] = { "o", 187925 },	-- Alliance Bonfire

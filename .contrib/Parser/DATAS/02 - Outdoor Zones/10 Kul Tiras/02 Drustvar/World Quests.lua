@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
-		m(896, {	-- Drustvar
+		m(DRUSTVAR, {
 			n(WORLD_QUESTS, {
 				n(QUESTS, {
 --[[	raw quest list to check against
@@ -813,7 +813,7 @@ _.Zones =
 						{"select", "itemID", 166671},	-- Waycrest Guard's Cloak
 						{"finalize"},	-- Push the items to the finalized list.
 
-						{"select", "mapID", 896},	-- Drustvar
+						{"select", "mapID", DRUSTVAR},
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "headerID", -34 },	-- Select the World Quests Header.
 						{"pop"},	-- Discard the World Quests Header and acquire the children.

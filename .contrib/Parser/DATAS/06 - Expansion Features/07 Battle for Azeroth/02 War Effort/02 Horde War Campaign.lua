@@ -200,37 +200,37 @@ _.ExpansionFeatures =
 						q(51224, {	-- Profit and Reconnaissance
 							["sourceQuests"] = { 51340 },	-- Drustvar Ho!
 							["provider"] = { "n", 136725 },	-- Eitrigg
-							["coord"] = { 20.8, 43.8, 896 },
+							["coord"] = { 20.8, 43.8, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 						}),
 						q(51231, {	-- Wiccaphobia
 							["sourceQuests"] = { 51224 },	-- Profit and Reconnaissance
 							["provider"] = { "n", 136725 },	-- Eitrigg
-							["coord"] = { 32.3, 54.6, 896 },
+							["coord"] = { 32.3, 54.6, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 						}),
 						q(51233, {	-- I Hope There's No Witches in the Mountains
 							["sourceQuests"] = { 51231 },	-- Wiccaphobia
 							["provider"] = { "n", 136683 },	-- Trade Prince Gallywix
-							["coord"] = { 32.4, 54.6, 896 },
+							["coord"] = { 32.4, 54.6, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 						}),
 						q(51234, {	-- Krazzlefrazz Outpost
 							["sourceQuests"] = { 51233 },	-- I Hope There's No Witches in the Mountains
 							["provider"] = { "n", 137613 },	-- Hobart Grapplehammer
-							["coord"] = { 36.9, 27.1, 896 },
+							["coord"] = { 36.9, 27.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 						}),
 						q(51987, {	-- Champion: Hobart Grapplehammer
 							["sourceQuests"] = { 51234 },	-- Krazzlefrazz Outpost
 							["provider"] = { "n", 137613 },	-- Hobart Grapplehammer
-							["coord"] = { 33.6, 37.8, 896 },
+							["coord"] = { 33.6, 37.8, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 							["g"] = {
 								follower(1068),	-- Hobart Grapplehammer
 							},
@@ -238,9 +238,9 @@ _.ExpansionFeatures =
 						q(51985, {	-- Return to Zuldazar (Drustvar Foothold)
 							["sourceQuests"] = { 51987 },	-- Champion: Hobart Grapplehammer
 							["provider"] = { "n", 136683 },	-- Trade Prince Gallywix
-							["coord"] = { 37.2, 27.0, 896 },
+							["coord"] = { 37.2, 27.0, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 						}),
 						-- Stormsong Valley Foothold
 						q(51802, {	-- Foothold: Stormsong Valley
@@ -576,28 +576,28 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, 862 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 						}),
 						q(51785, {	-- Examining the Epitaphs
 							["sourceQuests"] = { 51784 },	-- A Stroll Through a Cemetery
 							["provider"] = { "n", 139061 },	-- Nathanos Blightcaller
-							["coord"] = { 61.4, 51.1, 896 },
+							["coord"] = { 61.4, 51.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 						}),
 						q(51786, {	-- State of Unrest
 							["sourceQuests"] = { 51784 },	-- A Stroll Through a Cemetery
 							["provider"] = { "n", 139061 },	-- Nathanos Blightcaller
-							["coord"] = { 61.4, 51.1, 896 },
+							["coord"] = { 61.4, 51.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 						}),
 						q(51787, {	-- Our Lot in Life
 							["sourceQuests"] = { 51784 },	-- A Stroll Through a Cemetery
 							["provider"] = { "n", 139062 },	-- Lilian Voss
-							["coord"] = { 61.3, 51.1, 896 },
+							["coord"] = { 61.3, 51.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 						}),
 						q(51788, {	-- The Crypt Keeper
 							["sourceQuests"] = {
@@ -606,16 +606,16 @@ _.ExpansionFeatures =
 								51787,	-- Our Lot in Life
 							},
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 61.4, 51.1, 896 },
+							["coord"] = { 61.4, 51.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 						}),
 						q(51789, {	-- What Remains of Marshal M. Valentine
 							["sourceQuests"] = { 51788 },	-- The Crypt Keeper
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 61.4, 51.1, 896 },
+							["coord"] = { 61.4, 51.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 						}),
 						-- Death of a Tidesage
 						q(53066, {	-- Operation: Water Wise
@@ -990,21 +990,21 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 145751 },	-- Trade Prince Gallywix
 							["coord"] = { 36.2, 72.0, 862 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 						}),
 						q(54128, {	-- Necessary Precautions
 							["sourceQuests"] = { 53942 },	-- The Right Mech for the Job
 							["provider"] = { "n", 145816 },	-- G.M.O.D.
-							["coord"] = { 37.3, 26.0, 896 },
+							["coord"] = { 37.3, 26.0, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 						}),
 						q(54004, {	-- Test Case #1; Mech vs. Mekkatorque
 							["sourceQuests"] = { 54128 },	-- Necessary Precautions
 							["provider"] = { "n", 145816 },	-- G.M.O.D.
-							["coord"] = { 37.3, 26.0, 896 },
+							["coord"] = { 37.3, 26.0, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 896 },	-- Drustvar
+							["maps"] = { DRUSTVAR },
 						}),
 						q(54007, {	-- Insurance Policy
 							["sourceQuests"] = { 54004 },	-- Test Case #1; Mech vs. Mekkatorque
@@ -1674,7 +1674,7 @@ _.ExpansionFeatures =
 						}),
 						q(57151, {	-- A Line in the Sand
 							["altQuests"] = { 54109 },	-- Queen's Favor
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								57148,	-- Siegebreakers
 								57149,	-- Propaganda Takedown
 								57150,	-- Militia

@@ -606,10 +606,10 @@ _.Holidays =
 							53861,	-- Yo Ho, Yo Ho!
 						},
 						["coords"] = {
-							{ 36.25, 51.08, 896 },	-- Birdfeather's Statue
+							{ 36.25, 51.08, DRUSTVAR },	-- Birdfeather's Statue
 						},
 						["maps"] = {
-							896,	-- Drustvar
+							DRUSTVAR,
 							1161,	-- Boralus
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -1234,12 +1234,12 @@ _.Holidays =
 							53861,	-- Yo Ho, Yo Ho!
 						},
 						["coords"] = {
-							{ 45.94, 39.06, 896 },	-- Path to Ulfar's Den Starts
-							{ 46.32, 43.86, 896 },	-- Continue the path to Ulfar's Den
-							{ 46.32, 44.53, 896 },	-- Ulfar's Den
+							{ 45.94, 39.06, DRUSTVAR },	-- Path to Ulfar's Den Starts
+							{ 46.32, 43.86, DRUSTVAR },	-- Continue the path to Ulfar's Den
+							{ 46.32, 44.53, DRUSTVAR },	-- Ulfar's Den
 						},
 						["maps"] = {
-							896,	-- Drustvar
+							DRUSTVAR,
 							1161,	-- Boralus
 						},
 						["races"] = ALLIANCE_ONLY,

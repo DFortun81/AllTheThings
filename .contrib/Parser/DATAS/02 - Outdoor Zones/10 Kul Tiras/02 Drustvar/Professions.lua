@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
-		m(896, {	-- Drustvar
+		m(DRUSTVAR, {
 			n(-38, {	-- Professions
 				prof(ALCHEMY, {
 					-- Tools of Trade Questline
 					q(50127, {	-- A Stone's Throw (A)
 						["provider"] = { "n", 132347 },	-- Quintin Whalgrene
-						["coord"] = { 30.6, 49.6, 896 },
+						["coord"] = { 30.6, 49.6, DRUSTVAR },
 						["sourceQuest"] = 50125,	-- A Possible Solution (A)
 						["requireSkill"] = ALCHEMY,
 						["races"] = ALLIANCE_ONLY,
@@ -19,7 +19,7 @@ _.Zones =
 					}),
 					q(50126, {	-- A Deathly Draught (A)
 						["provider"] = { "n", 132347 },	-- Quintin Whalgrene
-						["coord"] = { 30.6, 49.6, 896 },
+						["coord"] = { 30.6, 49.6, DRUSTVAR },
 						["sourceQuest"] = 50125,	-- A Possible Solution (A)
 						["requireSkill"] = ALCHEMY,
 						["races"] = ALLIANCE_ONLY,
@@ -27,7 +27,7 @@ _.Zones =
 					}),
 					q(50128, {	-- Chemically Compounded (A)
 						["provider"] = { "n", 132347 },	-- Quintin Whalgrene
-						["coord"] = { 30.6, 49.6, 896 },
+						["coord"] = { 30.6, 49.6, DRUSTVAR },
 						["sourceQuests"] = {
 							50126,	-- A Stone's Throw (A)
 							50127,	-- A Deathly Draught (A)
@@ -38,7 +38,7 @@ _.Zones =
 					}),
 					q(50129, {	-- A Recipe for Success (A)
 						["provider"] = { "o", 280755 },	-- Quintin's Satchel
-						["coord"] = { 62.9, 28.9, 896 },
+						["coord"] = { 62.9, 28.9, DRUSTVAR },
 						["sourceQuest"] = 50128,	-- Chemically Compounded (A)
 						["requireSkill"] = ALCHEMY,
 						["races"] = ALLIANCE_ONLY,
@@ -51,7 +51,7 @@ _.Zones =
 				prof(ENCHANTING, {
 					q(53996, {	-- Pick Up Sticks
 						["provider"] = { "n", 146053 },	-- Sef Iwen
-						["coord"] = { 53.4, 40.1, 896 },
+						["coord"] = { 53.4, 40.1, DRUSTVAR },
 						["sourceQuests"] = {
 							53993,	-- A Voice on the Wind (A)
 							55635,	-- A Voice on the Wind (H)
@@ -61,28 +61,28 @@ _.Zones =
 					}),
 					q(53997, {	-- The Sixth Sense
 						["provider"] = { "n", 146053 },	-- Sef Iwen
-						["coord"] = { 53.4, 40.1, 896 },
+						["coord"] = { 53.4, 40.1, DRUSTVAR },
 						["sourceQuest"] = 53996,	-- Pick Up Sticks
 						["requireSkill"] = ENCHANTING,
 						["lvl"] = 120,
 					}),
 					q(53998, {	-- Exhumed
 						["provider"] = { "n", 146091 },	-- Sef Iwen
-						["coord"] = { 55.3, 46.1, 896 },
+						["coord"] = { 55.3, 46.1, DRUSTVAR },
 						["sourceQuest"] = 53997,	-- The Sixth Sense
 						["requireSkill"] = ENCHANTING,
 						["lvl"] = 120,
 					}),
 					q(53999, {	-- The Threads That Bind
 						["provider"] = { "n", 146091 },	-- Sef Iwen
-						["coord"] = { 55.3, 46.1, 896 },
+						["coord"] = { 55.3, 46.1, DRUSTVAR },
 						["sourceQuest"] = 53998,	-- Exhumed
 						["requireSkill"] = ENCHANTING,
 						["lvl"] = 120,
 					}),
 					q(54000, {	-- The Beat Goes On
 						["provider"] = { "n", 146093 },	-- Sef Iwen
-						["coord"] = { 63.0, 59.4, 896 },
+						["coord"] = { 63.0, 59.4, DRUSTVAR },
 						["sourceQuest"] = 53999,	-- Exhumed
 						["requireSkill"] = ENCHANTING,
 						["lvl"] = 120,
@@ -92,14 +92,14 @@ _.Zones =
 					}),
 					q(54001, {	-- We're Going In
 						["provider"] = { "n", 146094 },	-- Sef Iwen
-						["coord"] = { 58.9, 62.9, 896 },
+						["coord"] = { 58.9, 62.9, DRUSTVAR },
 						["sourceQuest"] = 54000,	-- The Beat Goes On
 						["requireSkill"] = ENCHANTING,
 						["lvl"] = 120,
 					}),
 					q(54002, {	-- Putting it All Togethereeee
 						["provider"] = { "n", 152255 },	-- Sef Iwen
-						["coord"] = { 57.8, 80.8, 896 },
+						["coord"] = { 57.8, 80.8, DRUSTVAR },
 						["sourceQuest"] = 54001,	-- We're Going In
 						["requireSkill"] = ENCHANTING,
 						["lvl"] = 120,
@@ -140,7 +140,7 @@ _.Zones =
 					-- Winter's Kiss
 					q(51376, {	-- Can't Teach on an Empty Stomach
 						["provider"] = { "n", 136141 },	-- Xun Xun Sweetflower
-						["coord"] = { 20.61, 45.61, 896 },
+						["coord"] = { 20.61, 45.61, DRUSTVAR },
 						["sourceQuests"] = {
 							48762,	-- Meet Sweetflower (A)
 							51446,	-- Meet Sweetflower (H)
@@ -178,7 +178,7 @@ _.Zones =
 				prof(JEWELCRAFTING, {
 					q(55580, {	-- High Prospects (H)
 						["provider"] = { "n", 150896 },	-- Shrine of the Eventide
-						["coord"] = { 34.1, 35.5, 896 },
+						["coord"] = { 34.1, 35.5, DRUSTVAR },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49599,	-- The Missing Chapter (H)
 						["requireSkill"] = JEWELCRAFTING,
@@ -243,7 +243,7 @@ _.Zones =
 					}),
 					q(52050, {	-- A More Challenging Career
 						["provider"] = { "n", 139746 },		-- First Mate Cinderfuse
-						["coord"] = { 19.76, 44.54, 896 },
+						["coord"] = { 19.76, 44.54, DRUSTVAR },
 						["sourceQuest"] = 52049,	-- X Marks the Plat!
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = MINING,

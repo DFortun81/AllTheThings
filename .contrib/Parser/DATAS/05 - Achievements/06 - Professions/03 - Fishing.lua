@@ -444,7 +444,7 @@ _.Achievements =
 					crit(21, {	-- Tortollan Tank Dweller
 						["itemID"] = 167724,	-- Tortollan Tank Dweller
 						["description"] = "Found in Anyport, Drustvar, inside the Tortollan inn named 'The Drunk Tank.'",
-						["coord"] = { 19.6, 42.8, 896 },
+						["coord"] = { 19.6, 42.8, DRUSTVAR },
 					}),
 					crit(22, {	-- Travelling Goby
 						["itemID"] = 167714,	-- Travelling Goby

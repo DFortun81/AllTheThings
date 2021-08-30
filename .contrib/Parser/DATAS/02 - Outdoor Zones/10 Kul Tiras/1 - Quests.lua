@@ -76,7 +76,7 @@ _.Zones =
 				q(53761, {	-- The Pirate's Treasure
 					["sourceQuests"] = { 53760 },	-- Unintended Consequences
 					["provider"] = { "n", 144773 },	-- Xal'atath
-					["coord"] = { 20.0, 35.8, 896 },
+					["coord"] = { 20.0, 35.8, DRUSTVAR },
 				}),
 				q(53762, {	-- The Tempest Crown
 					["sourceQuests"] = { 53761 },	-- The Pirate's Treasure

@@ -121,7 +121,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["coord"] = { 33.9, 43.5, ARDENWEALD },
 						["isWeekly"] = true,
-						["g"] = {	
+						["g"] = {
 							i(177698),	-- Untamed Spirit Ardenweald (Uncommon)
 							i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)
 							i(177700),	-- Greater Untamed Spirit Ardenweald (Epic)
@@ -546,12 +546,12 @@ _.ExpansionFeatures =
 					q(61076, {	-- Into the Flame
 						["sourceQuests"] = { 61061 },	-- Ulfar's Guidance
 						["provider"] = { "n", 141159 },	-- Ulfar
-						["coord"] = { 45.2, 45.8, 896 },	-- Drustvar
+						["coord"] = { 45.2, 45.8, DRUSTVAR },
 					}),
 					q(61102, {	-- Kivarr the Thornspeaker
 						["sourceQuests"] = { 61076 },	-- Into the Flame
 						["provider"] = { "n", 141159 },	-- Ulfar
-						["coord"] = { 45.2, 45.8, 896 },	-- Drustvar
+						["coord"] = { 45.2, 45.8, DRUSTVAR },
 					}),
 					q(61113, {	-- Kivarr's Den
 						["sourceQuests"] = { 61102 },	-- Kivarr the Thornspeaker

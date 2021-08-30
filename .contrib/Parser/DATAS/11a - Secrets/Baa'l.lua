@@ -16,7 +16,7 @@ _.Secrets =
 			864,
 			875,
 			895,
-			896,
+			DRUSTVAR,
 			942,
 			1161,
 		},
@@ -55,7 +55,7 @@ _.Secrets =
 				["model"] = 1068320,
 				["modelScale"] = .5,
 				["questID"] = 52817,
-				["coord"] = { 35.0, 54.9, 896 },	-- Cave Entrance
+				["coord"] = { 35.0, 54.9, DRUSTVAR },	-- Cave Entrance
 				["sourceQuest"] = 52818,	-- Step 4: Third Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 5:|r Head to Drustvar.  At the coordinates provided, there is a cave entrance hidden behind a narrow waterfall.  If you don't have flying, you'll have to fall or glide down to it from the cliffs above.\n\nHead all the way to the back of the cave.  The pebble is hidden inside the skull on the effigy, behind the left eye socket (the right-hand side when you're facing the effigy).\n\nShift+click to refresh your collection.\n",
 			}),
@@ -98,7 +98,7 @@ _.Secrets =
 				["model"] = 1068320,
 				["modelScale"] = .5,
 				["questID"] = 52812,
-				["coord"] = { 18.3, 7.4, 896 },	-- Path Start
+				["coord"] = { 18.3, 7.4, DRUSTVAR },	-- Path Start
 				["sourceQuest"] = 52813,	-- Step 9: Eighth Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 10:|r Head to Drustvar.  At the coordinates provided is a cave on the side of a small island (if you don't have flying, you'll have to fall/glide from up above).  Don't go into the cave, but hop up on the large rock at the entrance.\n\nThe pebble is on top of the rock, partially obscured by vines.  It's hard to see, so you'll probably have to zoom in a bit and jiggle your camera around a little to find it.\n\nShift+click to refresh your collection.\n",
 			}),

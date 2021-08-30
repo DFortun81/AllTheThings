@@ -399,7 +399,7 @@ _.Zones =
 								}),
 								i(163614, {	-- Exotic Spices
 									["description"] = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
-									["coord"] = { 20.6, 45.6, 896 },
+									["coord"] = { 20.6, 45.6, DRUSTVAR },
 									["g"] = {
 										q(53120, {	-- Exotic Spices
 											["repeatable"] = true,

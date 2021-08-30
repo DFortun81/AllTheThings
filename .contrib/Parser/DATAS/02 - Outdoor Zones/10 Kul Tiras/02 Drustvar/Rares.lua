@@ -5,12 +5,12 @@
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
-		m(896, {	-- Drustvar
+		m(DRUSTVAR, {
 			n(RARES, {
 				o(277333, {	-- Ancient Sarcophagus
 					["modelScale"] = 2,
 					["questID"] = 49137,
-					["coord"] = { 43.3, 36.3, 896 },	-- cave entrance
+					["coord"] = { 43.3, 36.3, DRUSTVAR },	-- cave entrance
 					["model"] = 446679,
 					["icon"] = "Interface\\Icons\\inv_misc_treasurechest01c",
 					["crs"] = { 128181 },	-- Vengeful Dead
@@ -23,7 +23,7 @@ _.Zones =
 				}),
 				n(137824, {	-- Arclight
 					["questID"] = 51470,
-					["coord"] = { 29.2, 68.8, 896 },
+					["coord"] = { 29.2, 68.8, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(26, {	-- Arclight
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -33,7 +33,7 @@ _.Zones =
 				}),
 				n(137529, {	-- Arvon the Betrayed
 					["questID"] = 51383,
-					["coord"] = { 35.0, 69.0, 896 },
+					["coord"] = { 35.0, 69.0, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(25, {	-- Arvon the Betrayed
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -44,10 +44,10 @@ _.Zones =
 				n(137825, {	-- Avalanche
 					["questID"] = 51471,
 					["coords"] = {
-						{ 43.81, 88.61, 896 },
-						{ 44.01, 85.41, 896 },
-						{ 44.21, 87.41, 896 },
-						{ 44.41, 85.61, 896 },
+						{ 43.81, 88.61, DRUSTVAR },
+						{ 44.01, 85.41, DRUSTVAR },
+						{ 44.21, 87.41, DRUSTVAR },
+						{ 44.41, 85.61, DRUSTVAR },
 					},
 					["g"] = {
 						crit(27, {	-- Avalanche
@@ -63,8 +63,8 @@ _.Zones =
 				n(130143, {	-- Balethorn
 					["questID"] = 49602,
 					["coords"] = {
-						{ 55.8, 29.2, 896 },
-						{ 59.4, 28.2, 896 },
+						{ 55.8, 29.2, DRUSTVAR },
+						{ 59.4, 28.2, DRUSTVAR },
 					},
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(19, {	-- Balethorn
@@ -75,7 +75,7 @@ _.Zones =
 				}),
 				n(127333, {	-- Barbthorn Queen
 					["questID"] = 48842,
-					["coord"] = { 59.0, 16.8, 896 },
+					["coord"] = { 59.0, 16.8, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(3, {	-- Barbthorn Queen
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -86,7 +86,7 @@ _.Zones =
 				n(129805, {	-- Beshol
 					["description"] = "Interact with \"Obviously Safe Chest\" to spawn this mob.",
 					["questID"] = 49481,
-					["coord"] = { 50.61, 30.01, 896 },
+					["coord"] = { 50.61, 30.01, DRUSTVAR },
 					["g"] = {
 						crit(15, {	-- Beshol
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -100,7 +100,7 @@ _.Zones =
 				}),
 				n(124548, {	-- Betsy
 					["questID"] = 47884,
-					["coord"] = { 58.4, 33.2, 896 },
+					["coord"] = { 58.4, 33.2, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(1, {	-- Betsy
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -110,7 +110,7 @@ _.Zones =
 				}),
 				n(132319, {	-- Bilefang Mother
 					["questID"] = 50163,
-					["coord"] = { 35.6, 32.6, 896 },
+					["coord"] = { 35.6, 32.6, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(20, {	-- Bilefang Mother
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -121,14 +121,14 @@ _.Zones =
 				n(138667, {	-- Blighted Monstrosity
 					["isDaily"] = true,
 					["questID"] = 52001,	-- 51699 for WQ
-					["coord"] = { 35.8, 11.6, 896 },
+					["coord"] = { 35.8, 11.6, DRUSTVAR },
 					["g"] = {
 						i(163680),	-- Blightbitten Steps
 					},
 				}),
 				n(126621, {	-- Bonesquall
 					["questID"] = 48978,
-					["coord"] = { 66.5, 51.0, 896 },
+					["coord"] = { 66.5, 51.0, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(5, {	-- Bonesquall
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -138,7 +138,7 @@ _.Zones =
 				}),
 				n(139321, {	-- Braedan Whitewall
 					["questID"] = 51922,
-					["coord"] = { 27.6, 59.6, 896 },
+					["coord"] = { 27.6, 59.6, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(32, {	-- Braedan Whitewall
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -149,8 +149,8 @@ _.Zones =
 				n(135796, {	-- Captain Leadfist
 					["questID"] = 50939,
 					["coords"] = {
-						{ 26.6, 14.6, 896 },
-						{ 28.0, 14.2, 896 },
+						{ 26.6, 14.6, DRUSTVAR },
+						{ 28.0, 14.2, DRUSTVAR },
 					},
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(24, {	-- Captain Leadfist
@@ -161,7 +161,7 @@ _.Zones =
 				}),
 				n(129904, {	-- Cottontail Matron
 					["questID"] = 49216,
-					["coord"] = { 52.1, 46.9, 896 },
+					["coord"] = { 52.1, 46.9, DRUSTVAR },
 					["g"] = {
 						crit(9, {	-- Beastly Ritual Skull
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -171,7 +171,7 @@ _.Zones =
 				}),
 				n(134706, {	-- Deathcap
 					["questID"] = 50669,
-					["coord"] = { 18.6, 61.0, 896 },
+					["coord"] = { 18.6, 61.0, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(22, {	-- Deathcap
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -181,7 +181,7 @@ _.Zones =
 				}),
 				n(129995, {	-- Emily Mayville
 					["questID"] = 49530,
-					["coord"] = { 63.4, 40.2, 896 },
+					["coord"] = { 63.4, 40.2, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(17, {	-- Emily Mayville
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -191,7 +191,7 @@ _.Zones =
 				}),
 				n(138871, {	-- Ernie (Fungi Trio)
 					["questID"] = 51749,
-					["coord"] = { 24.1, 21.8, 896 },
+					["coord"] = { 24.1, 21.8, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(31, {	-- Fungi Trio
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -206,7 +206,7 @@ _.Zones =
 				}),
 				n(134213, {	-- Executioner Blackwell
 					["questID"] = 50546,
-					["coord"] = { 30.8, 18.6, 896 },
+					["coord"] = { 30.8, 18.6, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(21, {	-- Executioner Blackwell
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -216,7 +216,7 @@ _.Zones =
 				}),
 				n(127844, {	-- Gluttonous Yeti
 					["questID"] = 48979,
-					["coord"] = { 63.0, 69.6, 896 },
+					["coord"] = { 63.0, 69.6, DRUSTVAR },
 					["crs"] = { 127979 },	-- Lost Goat
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(6, {	-- Gluttonous Yeti
@@ -227,7 +227,7 @@ _.Zones =
 				}),
 				n(129835, {	-- Gorehorn
 					["questID"] = 49480,
-					["coord"] = { 57.0, 44.2, 896 },
+					["coord"] = { 57.0, 44.2, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(14, {	-- Gorehorn
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -238,9 +238,9 @@ _.Zones =
 				n(138675, {	-- Gorged Boar
 					["questID"] = 51700,
 					["coords"] = {
-						{ 27.81, 25.41, 896 },
-						{ 28.01, 26.01, 896 },
-						{ 28.61, 25.61, 896 },
+						{ 27.81, 25.41, DRUSTVAR },
+						{ 28.01, 26.01, DRUSTVAR },
+						{ 28.61, 25.61, DRUSTVAR },
 					},
 					["g"] = {
 						crit(29, {	-- Gorged Boar
@@ -255,7 +255,7 @@ _.Zones =
 				}),
 				n(127129, {	-- Grozgore
 					["questID"] = 49388,
-					["coord"] = { 50.3, 20.7, 896 },
+					["coord"] = { 50.3, 20.7, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(13, {	-- Grozgore
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -265,7 +265,7 @@ _.Zones =
 				}),
 				n(138618, {	-- Haywire Golem
 					["questID"] = 51698,
-					["coord"] = { 23.8, 29.4, 896 },
+					["coord"] = { 23.8, 29.4, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(28, {	-- Haywire Golem
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -275,7 +275,7 @@ _.Zones =
 				}),
 				n(134754, {	-- Hyo'gi
 					["questID"] = 50688,
-					["coord"] = { 23.0, 49.2, 896 },
+					["coord"] = { 23.0, 49.2, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(23, {	-- Hyo'gi
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -285,7 +285,7 @@ _.Zones =
 				}),
 				n(127877, {	-- Longfang
 					["questID"] = 48981,
-					["coord"] = { 59.3, 55.2, 896 },
+					["coord"] = { 59.3, 55.2, DRUSTVAR },
 					["g"] = {
 						crit(7, {	-- Longfang
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -301,7 +301,7 @@ _.Zones =
 				}),
 				n(130138, {	-- Nevermore
 					["questID"] = 49601,
-					["coord"] = { 59.9, 45.5, 896 },
+					["coord"] = { 59.9, 45.5, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(18, {	-- Nevermore
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -311,7 +311,7 @@ _.Zones =
 				}),
 				n(125453, {	-- Quillrat Matriarch
 					["questID"] = 48178,
-					["coord"] = { 66.6, 42.6, 896 },
+					["coord"] = { 66.6, 42.6, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(2, {	-- Quillrat Matriarch
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -321,7 +321,7 @@ _.Zones =
 				}),
 				n(128707, {	-- Rimestone
 					["questID"] = 49269,
-					["coord"] = { 59.7, 70.0, 896 },	-- cave entrance
+					["coord"] = { 59.7, 70.0, DRUSTVAR },	-- cave entrance
 					["g"] = {
 						crit(10, {	-- Rimestone
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -337,7 +337,7 @@ _.Zones =
 					["modelScale"] = 2,
 					["questID"] = 49341,
 					["model"] = 1721089,
-					["coord"] = { 68.6, 64.3, 896 },
+					["coord"] = { 68.6, 64.3, DRUSTVAR },
 					["icon"] = "Interface\\Icons\\INV_Eng_Crate",
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(12, {	-- Seething Cache
@@ -348,7 +348,7 @@ _.Zones =
 				}),
 				n(138863, {	-- Sister Martha
 					["questID"] = 51748,
-					["coord"] = { 33.0, 57.0, 896 },
+					["coord"] = { 33.0, 57.0, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(30, {	-- Sister Martha
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -359,8 +359,8 @@ _.Zones =
 				n(129950, {	-- Talon
 					["questID"] = 49528,
 					["coords"] = {
-						{ 31.96, 40.67, 896 },
-						{ 32.21, 40.01, 896 },
+						{ 31.96, 40.67, DRUSTVAR },
+						{ 32.21, 40.01, DRUSTVAR },
 					},
 					["g"] = {
 						crit(16, {	-- Talon
@@ -375,14 +375,14 @@ _.Zones =
 				}),
 				n(139358, {	-- The Caterer
 					["questID"] = 51949,
-					["coord"] = { 25.1, 16.1, 896 },
+					["coord"] = { 25.1, 16.1, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(155560),	-- Lazy-Baker's Ring
 					}),
 				}),
 				n(127651, {	-- Vicemaul
 					["questID"] = 48928,
-					["coord"] = { 72.8, 60.5, 896 },
+					["coord"] = { 72.8, 60.5, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(4, {	-- Vicemaul
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -392,7 +392,7 @@ _.Zones =
 				}),
 				n(128973, {	-- Whargarble the Ill-Tempered
 					["questID"] = 49311,
-					["coord"] = { 64.9, 21.5, 896 },
+					["coord"] = { 64.9, 21.5, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(11, {	-- Whargarble the Ill-Tempered
 							["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -402,7 +402,7 @@ _.Zones =
 				}),
 				n(139322, {	-- Whitney "Steelclaw" Ramsay
 					["questID"] = 51923,
-					["coord"] = { 29.6, 64.0, 896 },
+					["coord"] = { 29.6, 64.0, DRUSTVAR },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						crit(33, {	-- Hexed Hunter
 							["achievementID"] = 12941,	-- Adventurer of Drustvar

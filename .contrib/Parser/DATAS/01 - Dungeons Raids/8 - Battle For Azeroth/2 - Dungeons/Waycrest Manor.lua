@@ -4,7 +4,7 @@
 
 _.Instances = { tier(BFA_TIER, {
 	inst(1021, {	-- Waycrest Manor
-		["coord"] = { 33.6, 12.6, 896 },
+		["coord"] = { 33.6, 12.6, DRUSTVAR },
 		["maps"] = {
 			1015,	-- The Grand Foyer
 			1016,	-- The Cellar

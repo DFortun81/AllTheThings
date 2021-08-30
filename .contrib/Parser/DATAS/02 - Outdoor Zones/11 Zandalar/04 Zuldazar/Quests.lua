@@ -1449,7 +1449,7 @@ _.Zones =
 						895,	-- Tiragarde Sound
 						942,	-- Stormsong Valley
 						862,	-- Zuldazar
-						896,	-- Drustvar
+						DRUSTVAR,
 					},
 				}),
 				q(50297, {	-- The Head of Her Enemy

@@ -8,7 +8,7 @@ _.Zones =
 		m(864, {	-- Vol'dun
 			n(-226,    {	-- World Drops
 				["maps"] = {
-					896,	-- Drustvar
+					DRUSTVAR,
 				},
 				["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 					-- Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate

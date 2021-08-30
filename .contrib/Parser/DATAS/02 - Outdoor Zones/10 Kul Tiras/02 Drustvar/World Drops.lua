@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
-		m(896, {	-- Drustvar
+		m(DRUSTVAR, {
 			n(-226, {	-- World Drops
 				["maps"] = { 864 },	-- Voldun [During Assaults]
 				["g"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {

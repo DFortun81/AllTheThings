@@ -110,11 +110,11 @@ _.Instances = { tier(BFA_TIER, {
 				["questID"] = 52157,	-- A Chilling Encounter (WQ)
 				["isRaid"] = true,
 				["coords"] = {
-					{ 62.4, 69.1, 896 },	-- east road
-					{ 31.8, 66.9, 896 },	-- west road
-					{ 49.2, 74.6, 896 },	-- actual boss
+					{ 62.4, 69.1, DRUSTVAR },	-- east road
+					{ 31.8, 66.9, DRUSTVAR },	-- west road
+					{ 49.2, 74.6, DRUSTVAR },	-- actual boss
 				},
-				["maps"] = { 896 },	-- Drustvar
+				["maps"] = { DRUSTVAR },
 				["cr"] = 140252,	-- Hailstone Construct
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(2, {	-- Hailstone

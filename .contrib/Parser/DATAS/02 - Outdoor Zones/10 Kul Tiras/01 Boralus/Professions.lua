@@ -387,7 +387,7 @@ _.Zones =
 					}),
 					q(49576, {	-- High Prospects
 						["provider"] = { "n", 150896 },	-- Shrine of the Eventide
-						["coord"] = { 34.1, 35.5, 896 },
+						["coord"] = { 34.1, 35.5, DRUSTVAR },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49573,	-- The Shrine of the Eventide
 						["requireSkill"] = JEWELCRAFTING,
@@ -396,7 +396,7 @@ _.Zones =
 					}),
 					q(55586, {	-- Polished Up (A)
 						["provider"] = { "n", 152497 },	-- Shrine of the Eventide
-						["coord"] = { 34.1, 35.5, 896 },
+						["coord"] = { 34.1, 35.5, DRUSTVAR },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49576,	-- High Prospects
 						["requireSkill"] = JEWELCRAFTING,
