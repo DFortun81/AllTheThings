@@ -1234,3 +1234,6 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(39829),	-- Sleigh and Guards Shared Criteria (Winter veil)
+};
