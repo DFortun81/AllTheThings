@@ -14,6 +14,7 @@ _.Zones =
 				1651,	-- The Molten Forge
 				1652,	-- Vault of Souls
 				1717,	-- Chill's Reach (scenario)
+				1715,	-- Vestibule of Eternity
 			},
 		}),
 	}),
