@@ -1735,4 +1735,6 @@ _.HiddenQuestTriggers = {
 	q(54853),	-- naming the ship "Dawnsailor" during Blessing of the Tides quest to recruit Kul Tirans
 	q(54854),	-- naming the ship "Tiffin's Melody" during Blessing of the Tides quest to recruit Kul Tirans
 	q(54855),	-- naming the ship "The Lionheart" during Blessing of the Tides quest to recruit Kul Tirans
+	q(54775),	-- Warmode Storm's Rage
+	q(54716),	-- Secret Chest during Stormsong Valley Incursion in Warmode
 };
