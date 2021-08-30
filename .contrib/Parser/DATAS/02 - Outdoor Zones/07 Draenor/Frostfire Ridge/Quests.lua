@@ -86,6 +86,16 @@ _.Zones =
 					["provider"] = { "n", 77998 },	-- Molthron
 					["coord"] = { 43.5, 15.5, FROSTFIRE_RIDGE },
 				}),
+				q(35641, {	-- Assault on Stonefury Cliffs
+					["provider"] = { "o", 122405 },	-- Scouting Missive: Stonefury Cliffs
+					["coord"] = { 44.0, 20.0, FROSTFIRE_RIDGE },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(35641, {	-- Assault on Stonefury Cliffs
+					["coord"] = { 44.0, 20.0, FROSTFIRE_RIDGE },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(34070, {	-- At the End of Your Rope
 					["provider"] = { "n", 77210 },	-- Scout Ruk'Gan
 					["coord"] = { 82.6, 69.8, FROSTFIRE_RIDGE },
