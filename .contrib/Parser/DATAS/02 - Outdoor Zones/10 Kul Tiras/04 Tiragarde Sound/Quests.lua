@@ -1547,3 +1547,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	--q(53635),	-- Triggered when killing Broodmother or "The Goat" rares.
+};
