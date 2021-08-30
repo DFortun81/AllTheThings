@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(942, {	-- Stormsong Valley
 			filter(101,  {	-- Pet Battle
 				p(2374, {	-- Freshwater Crawler

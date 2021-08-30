@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(895, {	-- Tiragarde Sound
 			n(FLIGHT_PATHS, {
 				fp(2052, {	-- Anglepoint Wharf, Tiragarde Sound (Ferry) [Alliance]

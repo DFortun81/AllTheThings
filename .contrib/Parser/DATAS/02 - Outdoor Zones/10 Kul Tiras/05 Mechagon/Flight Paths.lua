@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(MECHAGON, {
 			n(FLIGHT_PATHS, {
 				fp(2442, {	-- Overspark Expedition Camp

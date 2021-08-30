@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(1161, {	-- Boralus
 			n(-10057, {	-- War Effort
 				["lvl"] = 120,

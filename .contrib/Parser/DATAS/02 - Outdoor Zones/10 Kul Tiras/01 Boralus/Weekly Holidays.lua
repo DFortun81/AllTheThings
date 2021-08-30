@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(1161, {	-- Boralus
 			n(-176, sharedData({	-- Weekly Holidays
 				["u"] = REMOVED_FROM_GAME,

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		n(-10069, {	-- Scenarios
 			["icon"] = "Interface\\Icons\\ability_demonhunter_imprison",
 			["g"] = {

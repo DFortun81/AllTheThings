@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(DRUSTVAR, {
 			n(ACHIEVEMENTS, {
 				ach(12941),		-- Adventurer of Drustvar

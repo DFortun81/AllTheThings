@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(MECHAGON, {
 			n(-161, {	-- Toys
 				i(122293, {	-- Trans-Dimensional Bird Whistle

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(MECHAGON, {
 			["achievementID"] = 13776,
 			["icon"] = "Interface\\Icons\\inv_misc_map08",

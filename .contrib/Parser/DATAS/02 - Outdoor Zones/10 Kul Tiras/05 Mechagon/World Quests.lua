@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(MECHAGON, {
 			n(-34,  {	-- World Quests
 				q(56396, {	-- Creakclank

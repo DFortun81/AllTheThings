@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(DRUSTVAR, {
 			filter(101, {	-- Pet Battle
 				p(2386, {	-- Coastal Scuttler

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(MECHAGON, {
 			n(-169, {	-- Emissary Quests
 				q(55348, {	-- Supplies from the Rustbolt Resistance

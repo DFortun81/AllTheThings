@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(MECHAGON, {
 			filter(101, {	-- Pet Battle
 				p(2662, {	-- Duskytooth Snooter

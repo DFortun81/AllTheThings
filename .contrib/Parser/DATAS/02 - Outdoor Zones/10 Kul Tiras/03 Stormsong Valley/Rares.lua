@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(942, {	-- Stormsong Valley
 			n(RARES, {
 				n(137025, {	-- Broodmother

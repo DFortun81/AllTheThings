@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(942, {	-- Stormsong Valley
 			n(FLIGHT_PATHS, {
 				fp(2086, {	-- Brennadam, Stormsong Valley [Alliance]

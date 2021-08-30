@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(MECHAGON, {
 			n(RARES, {
 				-- TODO:: See Hidden Quest Triggers.lua for remaining first kill id's needed

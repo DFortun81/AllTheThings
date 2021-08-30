@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(895, {	-- Tiragarde Sound
 			n(ACHIEVEMENTS, {
 				ach(12473, {	-- A Sound Plan

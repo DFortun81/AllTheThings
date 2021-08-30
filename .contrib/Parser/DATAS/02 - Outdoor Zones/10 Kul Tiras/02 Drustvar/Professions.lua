@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(DRUSTVAR, {
 			n(-38, {	-- Professions
 				prof(ALCHEMY, {

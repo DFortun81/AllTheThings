@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(DRUSTVAR, {
 			n(-169, {	-- Emissary Quests
 				q(50600, {	-- Order of Embers

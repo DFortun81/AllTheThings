@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(DRUSTVAR, {
 			n(-226, {	-- World Drops
 				["maps"] = { 864 },	-- Voldun [During Assaults]

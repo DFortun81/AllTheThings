@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		n(QUESTS, {
 			o(311218, {	-- Xal'atath, Blade of the Black Empire
 				q(54438, {	-- Crucible of Storms: Relics of Shadow

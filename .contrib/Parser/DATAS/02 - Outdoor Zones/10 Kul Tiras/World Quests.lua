@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {		-- Kul'Tiras
+	m(KULTIRAS, {
 		n(-34,  {	-- World Quests
 			i(163857, {	-- Azerite Armor Cache
 				["sym"] = {

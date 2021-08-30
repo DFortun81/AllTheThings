@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		m(895, {	-- Tiragarde Sound
 			n(-226, {	-- World Drops
 				["maps"] = {
