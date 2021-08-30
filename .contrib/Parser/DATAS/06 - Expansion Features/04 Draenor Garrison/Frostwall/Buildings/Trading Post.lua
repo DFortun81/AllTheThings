@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(590, {	-- Frostwall
+		m(FROSTWALL, {
 			n(-99, {	-- Buildings
 				garrisonBuilding(145, {	-- Trading Post (rank 1: 111, rank 2: 144, rank 3: 145)
 					["races"] = HORDE_ONLY,

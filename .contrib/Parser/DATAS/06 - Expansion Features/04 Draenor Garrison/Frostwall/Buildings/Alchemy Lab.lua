@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(590, {	-- Frostwall
+		m(FROSTWALL, {
 			n(-99, {	-- Buildings
 				garrisonBuilding(120,  {	-- Alchemy Lab (rank 1: 76, rank 2: 119, rank 3: 120)
 					["races"] = HORDE_ONLY,

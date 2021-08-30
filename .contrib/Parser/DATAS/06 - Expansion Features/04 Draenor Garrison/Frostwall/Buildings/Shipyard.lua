@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(590, {	-- Frostwall
+		m(FROSTWALL, {
 			n(-99, {	-- Buildings
 				garrisonBuilding(207, {	-- Frostwall Shipyard (rank 1: 205, rank 2: 206, rank 3: 207)
 					["maps"] = { FROSTFIRE_RIDGE },

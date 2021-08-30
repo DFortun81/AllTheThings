@@ -572,7 +572,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(39657, {	-- Candy Bucket — Draenor Garrison (Frostwall or Lunarfall), neutral
 				["isYearly"] = true,
 				["maps"] = {
-					590,	-- Frostwall
+					FROSTWALL,
 					582,	-- Lunarfall
 				},
 				["g"] = {
@@ -2100,7 +2100,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 96705 },	-- Orukan
 				["isDaily"] = true,
 				["maps"] = {
-					590,	-- Frostwall
+					FROSTWALL,
 					582,	-- Lunarfall
 				},
 				["lvl"] = 100,
@@ -2212,7 +2212,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 96705 },	-- Orukan
 				["isDaily"] = true,
 				["maps"] = {
-					590,	-- Frostwall
+					FROSTWALL,
 					582,	-- Lunarfall
 				},
 				["lvl"] = 100,
@@ -2303,7 +2303,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 96705 },	-- Orukan
 				["isDaily"] = true,
 				["maps"] = {
-					590,	-- Frostwall
+					FROSTWALL,
 					582,	-- Lunarfall
 				},
 				["lvl"] = 100,
@@ -2328,7 +2328,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 96705 },	-- Orukan
 				["isDaily"] = true,
 				["maps"] = {
-					590,	-- Frostwall
+					FROSTWALL,
 					582,	-- Lunarfall
 				},
 				["lvl"] = 100,

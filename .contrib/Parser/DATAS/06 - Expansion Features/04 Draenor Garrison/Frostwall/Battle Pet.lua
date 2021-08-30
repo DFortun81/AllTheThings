@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(590, {	-- Frostwall
+		m(FROSTWALL, {
 			filter(101, {	-- Battle Pet
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -13,12 +13,12 @@ _.ExpansionFeatures =
 					ach(9264),	-- Draenor Pet Brawler
 					q(40329, {	-- Battle Pet Tamers: Warlords
 						["provider"] = { "n", 79858 },	-- Serr'ah
-						["coord"] = { 32.6, 39.8, 590 },
+						["coord"] = { 32.6, 39.8, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["isWeekly"] = true,
 					}),
 					q(38300, {	-- Critters of Draenor
-						["coord"] = { 32.6, 39.8, 590 },
+						["coord"] = { 32.6, 39.8, FROSTWALL },
 						["providers"] = {
 							{ "n", 91026 },	-- Kura Thunderhoof (Spores, Dusty and Salad)
 							{ "n", 91361 },	-- Kura Thunderhoof (Moon, Mouthy and Carl)
@@ -37,7 +37,7 @@ _.ExpansionFeatures =
 					}),
 					q(37645, {	-- Mastering the Menagerie
 						["provider"] = { "n", 79858 },	-- Serr'ah
-						["coord"] = { 32.6, 39.8, 590 },
+						["coord"] = { 32.6, 39.8, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["g"] = {
@@ -54,7 +54,7 @@ _.ExpansionFeatures =
 					}),
 					q(36469, {	-- Pets Versus Pests
 						["provider"] = { "n", 79858 },	-- Serr'ah
-						["coord"] = { 32.6, 39.8, 590 },
+						["coord"] = { 32.6, 39.8, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 38242,	-- Unearthed Magic
 						["g"] = {
@@ -63,14 +63,14 @@ _.ExpansionFeatures =
 					}),
 					q(36662, {	-- Scrappin'
 						["provider"] = { "n", 79858 },	-- Serr'ah
-						["coord"] = { 32.6, 39.8, 590 },
+						["coord"] = { 32.6, 39.8, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["sourceQuest"] = 36469,	-- Pets Versus Pests
 					}),
 					q(38242, {	-- Unearthed Magic
 						["provider"] = { "n", 79858 },	-- Serr'ah
-						["coord"] = { 32.6, 39.8, 590 },
+						["coord"] = { 32.6, 39.8, FROSTWALL },
 						["races"] = HORDE_ONLY,
 					}),
 				},

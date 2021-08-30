@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(590, {	-- Frostwall
+		m(FROSTWALL, {
 			n(ACHIEVEMENTS, {
 				["races"] = HORDE_ONLY,
 				["g"] = {

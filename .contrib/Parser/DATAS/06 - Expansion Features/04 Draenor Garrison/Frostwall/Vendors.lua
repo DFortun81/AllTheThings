@@ -7,7 +7,7 @@ WOD_REMOVED_RECIPE_STR = "In 9.0.1, Blizzard made this recipe unlearnable but th
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(590, {	-- Frostwall
+		m(FROSTWALL, {
 			n(VENDORS, {
 				n(88779, {	-- Benjamin Brode <Traveling Merchant>
 					["races"] = HORDE_ONLY,

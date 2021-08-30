@@ -5,10 +5,10 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(590, {	-- Frostwall
+		m(FROSTWALL, {
 			n(FLIGHT_PATHS, {
 				fp(1432, {	-- Frostwall Garrison, Frostfire Ridge
-					["coord"] = { 45.8, 50.2, 590 },
+					["coord"] = { 45.8, 50.2, FROSTWALL },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

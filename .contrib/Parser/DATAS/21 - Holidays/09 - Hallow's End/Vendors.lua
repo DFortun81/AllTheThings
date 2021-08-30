@@ -562,11 +562,11 @@ _.Holidays =
 				}),
 				n(96362,  {	-- Izzy Hollyfizzle <Events Coordinator>
 					["coords"] = {
-						{ 47.3, 38.4, 590 },	-- Frostwall
+						{ 47.3, 38.4, FROSTWALL },
 						{ 44.2, 51.0, 582 },	-- Lunarfall
 					},
 					["maps"] = {
-						590,	-- Frostwall
+						FROSTWALL,
 						582,	-- Lunarfall
 					},
 					["g"] = bubbleDown({["u"] = 26}, {

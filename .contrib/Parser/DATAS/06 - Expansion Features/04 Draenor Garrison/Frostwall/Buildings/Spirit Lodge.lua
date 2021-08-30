@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(590, {	-- Frostwall
+		m(FROSTWALL, {
 			n(-99, {	-- Buildings
 				garrisonBuilding(39,  {	-- Spirit Lodge (rank 1: 37, rank 2: 38, rank 3: 39)
 					["races"] = HORDE_ONLY,

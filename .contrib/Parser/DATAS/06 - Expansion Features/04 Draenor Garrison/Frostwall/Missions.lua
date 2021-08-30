@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(590, {	-- Frostwall
+		m(FROSTWALL, {
 			n(-299, {	-- Missions
 				["races"] = HORDE_ONLY,
 				["description"] = "Various missions at your garrison, shipyard, or class hall offer these rewards.",

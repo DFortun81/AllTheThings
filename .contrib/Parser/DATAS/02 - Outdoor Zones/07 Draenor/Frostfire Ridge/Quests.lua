@@ -26,7 +26,7 @@ _.Zones =
 					["altQuests"] = { 34264 },	-- A Collection of Coils
 				}),
 				q(34592, {	-- A Gronnling Problem
-					["coord"] = { 51.2, 39.6, 590 },
+					["coord"] = { 51.2, 39.6, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78466 },	-- Gazlowe
 					["sourceQuest"] = 34364,	-- For the Horde!
@@ -141,7 +141,7 @@ _.Zones =
 					["sourceQuest"] = 33470,	-- Pool of Visions
 				}),
 				q(34375, {	-- Back to Work
-					["coord"] = { 51.2, 39.6, 590 },
+					["coord"] = { 51.2, 39.6, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78466 },	-- Gazlowe
 					["sourceQuest"] = 34364,	-- For the Horde!
@@ -156,8 +156,8 @@ _.Zones =
 					},
 				}),
 				q(34461, {	-- Build Your Barracks
-					["maps"] = { 590 },	-- Garrison
-					["coord"] = { 52.4, 53.3, 590 },
+					["maps"] = { FROSTWALL },
+					["coord"] = { 52.4, 53.3, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78466 },	-- Gazlowe
 					["sourceQuests"] = {
@@ -289,7 +289,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(34378, {	-- Establish Your Garrison
-					["coord"] = { 51.2, 39.6, 590 },
+					["coord"] = { 51.2, 39.6, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78466 },	-- Gazlowe
 					["sourceQuest"] = 34765,	-- The Den of Skog
@@ -313,7 +313,7 @@ _.Zones =
 					["sourceQuest"] = 34321,	-- Ashes of the Past
 				}),
 				q(34364, {	-- For the Horde!
-					["coord"] = { 51.2, 43.2, 590 },
+					["coord"] = { 51.2, 43.2, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 70859 },	-- Thrall
 					["sourceQuest"] = 34402,	-- of Wolves and  Warriors
@@ -535,8 +535,8 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(34775, {	-- Mission Probable
-					["maps"] = { 590 },	-- Garrison
-					["coord"] = { 53.9, 54.9, 590 },
+					["maps"] = { FROSTWALL },
+					["coord"] = { 53.9, 54.9, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 79740 },	-- Warmaster Zog
 					["sourceQuest"] = 34462,	-- Winds of Change
@@ -895,7 +895,7 @@ _.Zones =
 					["sourceQuest"] = 33412,	-- Mopping Up
 				}),
 				q(34765, {	-- The Den of Skog
-					["coord"] = { 51.2, 39.6, 590 },
+					["coord"] = { 51.2, 39.6, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78466 },	-- Gazlowe
 					["sourceQuests"] = {
@@ -970,8 +970,8 @@ _.Zones =
 					["sourceQuest"] = 34446,	-- The Home Stretch
 				}),
 				q(33010, {	-- The Iron Wolf
-					["maps"] = { 590 },	-- Garrison
-					["coord"] = { 50.1, 37.9, 590 },
+					["maps"] = { FROSTWALL },
+					["coord"] = { 50.1, 37.9, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 74163 },	-- Durotar
 					["sourceQuest"] = 37291,	-- Thunderlord Invasion
@@ -1014,8 +1014,8 @@ _.Zones =
 					},
 				}),
 				q(34823, {	-- The Ogron Live?
-					["maps"] = { 590 },	-- Garrison
-					["coord"] = { 51.2, 51.4, 590 },
+					["maps"] = { FROSTWALL },
+					["coord"] = { 51.2, 51.4, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78487 },	-- Rokhan
 					["sourceQuest"] = 34378,	-- Establish Your Garrison
@@ -1117,7 +1117,7 @@ _.Zones =
 				q(37291, {	-- Thunderlord Invasion
 					["description"] = "This cannot be acquired with a Level 3 Garrison.",
 					["isBreadcrumb"] = true,
-					["maps"] = { 590 },	-- Garrison
+					["maps"] = { FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36567,	-- Bigger is Better
 					["providers"] = {
@@ -1125,8 +1125,8 @@ _.Zones =
 						{ "n", 88228 },	-- Sergeant Grimjaw
 					},
 					["coords"] = {
-						{ 50.1, 37.9, 590 },	-- lvl 2 garrison, Durotan
-						{ 43.6, 47.8, 590 },	-- lvl 2 garrison, Sergeant Grimjaw
+						{ 50.1, 37.9, FROSTWALL },	-- lvl 2 garrison, Durotan
+						{ 43.6, 47.8, FROSTWALL },	-- lvl 2 garrison, Sergeant Grimjaw
 					},
 				}),
 				q(34295, {	-- To Capture Gul'dan
@@ -1195,8 +1195,8 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(34861, {	-- We Need An Army
-					["maps"] = { 590 },	-- Garrison
-					["coord"] = { 57.4, 48.3, 590 },
+					["maps"] = { FROSTWALL },
+					["coord"] = { 57.4, 48.3, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78466 },	-- Gazlowe
 					["sourceQuest"] = 34461,	-- Build Your Barracks
@@ -1208,15 +1208,15 @@ _.Zones =
 					["sourceQuest"] = 34216,	-- Safe Passage
 				}),
 				q(34824, {	-- What We Got
-					["maps"] = { 590 },	-- Garrison
-					["coord"] = { 52.4, 53.3, 590 },
+					["maps"] = { FROSTWALL },
+					["coord"] = { 52.4, 53.3, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78466 },	-- Gazlowe
 					["sourceQuest"] = 34378,	-- Establish Your Garrison
 				}),
 				q(34822, {	-- What We Need
-					["maps"] = { 590 },	-- Garrison
-					["coord"] = { 52.4, 53.3, 590 },
+					["maps"] = { FROSTWALL },
+					["coord"] = { 52.4, 53.3, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78466 },	-- Gazlowe
 					["sourceQuest"] = 34378,	-- Establish Your Garrison
@@ -1228,8 +1228,8 @@ _.Zones =
 					["sourceQuest"] = 32993,	-- The Strength of Our Bonds
 				}),
 				q(34462, {	-- Winds of Change
-					["maps"] = { 590 },	-- Garrison
-					["coord"] = { 53.9, 54.9, 590 },
+					["maps"] = { FROSTWALL },
+					["coord"] = { 53.9, 54.9, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 79740 },	-- Warmaster Zog
 					["sourceQuest"] = 34461,	-- Build Your Barracks

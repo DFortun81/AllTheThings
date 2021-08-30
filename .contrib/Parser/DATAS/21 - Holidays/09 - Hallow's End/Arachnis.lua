@@ -10,11 +10,11 @@ _.Holidays = bubbleDown({["u"] = 26},
 			["questID"] = 39617,
 			["isDaily"] = true,
 			["coords"] = {
-				{ 56.5, 87.9, 590 },	-- Frostwall
+				{ 56.5, 87.9, FROSTWALL },
 				{ 74.5, 33.9, 582 },	-- Lunarfall
 			},
 			["maps"] = {
-				590,	-- Frostwall
+				FROSTWALL,
 				582,	-- Lunarfall
 			},
 			["g"] = {

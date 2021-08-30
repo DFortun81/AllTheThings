@@ -172,11 +172,11 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 			}),
 			n(96362, {	-- Izzy Hollyfizzle
 				["coords"] = {
-					{ 47.33, 38.47, 590 },	-- Horde Garrison
+					{ 47.33, 38.47, FROSTWALL },
 					{ 44.29, 51.05, 582 },	-- Alliance Garrison
 				},
 				["maps"] = {
-					590,	-- Frostwall
+					FROSTWALL,
 					582,	-- Lunarfall
 				},
 				["g"] = {

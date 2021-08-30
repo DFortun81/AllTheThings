@@ -67,7 +67,7 @@ _.Secrets =
 								["description"] = "Legion Dalaran or Garrison",
 								["coords"] = {
 									{ 58.6, 38.0, LEGION_DALARAN },
-									{ 32.6, 42.8, 590 },	-- Frostwall
+									{ 32.6, 42.8, FROSTWALL },
 								},
 								["races"] = HORDE_ONLY,
 							}),

@@ -15,7 +15,7 @@ _.WorldEvents =
 			REVENDRETH,
 			--625,	-- Dalaran: Broken Isles -- Option to interact with this Version removed in 9.0.2
 			--628,	-- Dalaran: The Underbelly -- Option to interact with this Version removed in 9.0.2
-			--590,	-- Frostwall
+			--FROSTWALL,
 			--582,	-- Lunarfall
 		},
 		["crs"] = {
@@ -32,7 +32,7 @@ _.WorldEvents =
 			{ 63.54, 62.68, 862 },	-- Madam Goya, Dazar'alor
 			{ 52.40, 83.80, REVENDRETH },	-- Ta'xera <Matron of the Market>
 			--{ 71.37, 17.93, 628 },	-- Madam Goya, Dalaran: The Underbelly -- Option to interact with this Version removed in 9.0.2
-			--{ 44.96, 50.07, 590 },	-- Zhang Yeoh, Frostwall
+			--{ 44.96, 50.07, FROSTWALL },	-- Zhang Yeoh
 		},
 		["g"] = {
 			filter(103, {	-- Illusions

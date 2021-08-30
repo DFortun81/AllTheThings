@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(590, {	-- Frostwall
+		m(FROSTWALL, {
 			n(-99, {	-- Buildings
 				garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
 					["requireSkill"] = FISHING,
@@ -34,7 +34,7 @@ _.ExpansionFeatures =
 							}),
 							q(35075, {	-- Abyssal Gulper Eel
 								["provider"] = { "n", 79892 },	-- Mak'jin
-								["coord"] = { 38.0, 72.2, 590 },
+								["coord"] = { 38.0, 72.2, FROSTWALL },
 								["isDaily"] = true,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["requireSkill"] = FISHING,
@@ -55,7 +55,7 @@ _.ExpansionFeatures =
 							}),
 							q(35074, {	-- Blackwater Whiptail
 								["provider"] = { "n", 79892 },	-- Mak'jin
-								["coord"] = { 38.0, 72.2, 590 },
+								["coord"] = { 38.0, 72.2, FROSTWALL },
 								["isDaily"] = true,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["requireSkill"] = FISHING,
@@ -77,7 +77,7 @@ _.ExpansionFeatures =
 							}),
 							q(35073, {	-- Blind Lake Sturgeon
 								["provider"] = { "n", 79892 },	-- Mak'jin
-								["coord"] = { 38.0, 72.2, 590 },
+								["coord"] = { 38.0, 72.2, FROSTWALL },
 								["isDaily"] = true,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["requireSkill"] = FISHING,
@@ -87,7 +87,7 @@ _.ExpansionFeatures =
 							}),
 							q(35072, {	-- Fat Sleeper
 								["provider"] = { "n", 79892 },	-- Mak'jin
-								["coord"] = { 38.0, 72.2, 590 },
+								["coord"] = { 38.0, 72.2, FROSTWALL },
 								["isDaily"] = true,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["requireSkill"] = FISHING,
@@ -116,7 +116,7 @@ _.ExpansionFeatures =
 							}),
 							q(35066, {	-- Fire Ammonite
 								["provider"] = { "n", 79892 },	-- Mak'jin
-								["coord"] = { 38.0, 72.2, 590 },
+								["coord"] = { 38.0, 72.2, FROSTWALL },
 								["isDaily"] = true,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["requireSkill"] = FISHING,
@@ -132,7 +132,7 @@ _.ExpansionFeatures =
 							}),
 							q(35071, {	-- Jawless Skulker
 								["provider"] = { "n", 79892 },	-- Mak'jin
-								["coord"] = { 38.0, 72.2, 590 },
+								["coord"] = { 38.0, 72.2, FROSTWALL },
 								["isDaily"] = true,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["requireSkill"] = FISHING,
@@ -148,7 +148,7 @@ _.ExpansionFeatures =
 							}),
 							q(34758, {	-- Looking For Help
 								["provider"] = { "n", 79892 },	-- Mak'jin
-								["coord"] = { 38.1, 72.2, 590 },
+								["coord"] = { 38.1, 72.2, FROSTWALL },
 								["races"] = HORDE_ONLY,
 								["requireSkill"] = FISHING,
 							}),

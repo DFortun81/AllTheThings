@@ -185,7 +185,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 			}),
 			q(39651, {	-- Grumpus
 				["provider"] = { "n", 96735 },	-- Pizzle
-				["maps"] = { 590 },	-- Frostwall
+				["maps"] = { FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["g"] = {
@@ -194,7 +194,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 			}),
 			q(39649, {	-- Menacing Grumplings
 				["provider"] = { "n", 96735 },	-- Pizzle
-				["maps"] = { 590 },	-- Frostwall
+				["maps"] = { FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["g"] = {
@@ -293,7 +293,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 			}),
 			q(39668, {	-- What Horrible Presents
 				["provider"] = { "n", 96735 },	-- Pizzle
-				["maps"] = { 590 },	-- Frostwall
+				["maps"] = { FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["g"] = {
@@ -302,7 +302,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 			}),
 			q(39648, {	-- Where Are the Children?
 				["provider"] = { "n", 96735 },	-- Pizzle
-				["maps"] = { 590 },	-- Frostwall
+				["maps"] = { FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["g"] = {

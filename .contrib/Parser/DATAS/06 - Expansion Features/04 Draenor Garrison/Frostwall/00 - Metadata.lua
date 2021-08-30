@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrions
-		m(590, {	-- Frostwall
+		m(FROSTWALL, {
 			["lvl"] = 90,
 			["maps"] = {
 				585,	-- Frostwall Mine [Unclaimed / Level 1]

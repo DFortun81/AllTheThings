@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(590, {	-- Frostwall
+		m(FROSTWALL, {
 			n(-99, {	-- Buildings
 				garrisonBuilding(168, {	-- Menagerie (rank 1: 42, rank 2: 167, rank 3: 168)
 					["races"] = HORDE_ONLY,

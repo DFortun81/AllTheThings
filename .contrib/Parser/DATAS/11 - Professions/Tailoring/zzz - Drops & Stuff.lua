@@ -39,7 +39,7 @@ profession(TAILORING, {
 		}),
 	}),
 	gb(128, {	-- Tailoring Emporium (Level 3)
-		["maps"] = {582, 590},	-- Both Garrisons
+		["maps"] = { 582, FROSTWALL },	-- Both Garrisons
 		["g"] = {
 			n(77382, {	-- Christopher Macdonald <Tailor>
 				["races"] = ALLIANCE_ONLY,

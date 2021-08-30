@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		m(590, {	-- Frostwall
+		m(FROSTWALL, {
 			n(QUESTS, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -15,7 +15,7 @@ _.ExpansionFeatures =
 							-- 1st Quest of Garrison Campaign
 							q(32979, {	-- Garrison Campaign: Farseer's Rock
 								["provider"] = { "n", 74808 },	-- Thrall
-								["coord"] = { 51.0, 37.4, 590 },	-- Frostwall
+								["coord"] = { 51.0, 37.4, FROSTWALL },
 								["races"] = HORDE_ONLY,
 							}),
 							-- 2nd quest of Garrison Campaign: Farseer's Rock questchain
@@ -70,7 +70,7 @@ _.ExpansionFeatures =
 							q(34034, {	-- Garrison Campaign: Grinding Gears
 								["races"] = HORDE_ONLY,
 								["provider"] = { "n", 78487 },	-- Rokhan
-								["coord"] = { 51.6, 51.6, 590 },	-- Frostwall
+								["coord"] = { 51.6, 51.6, FROSTWALL },
 							}),
 							-- 2nd quest of Garrison Campaign: Grinding Gears questchain
 							q(34035, {	-- I Know The Drill!
@@ -121,7 +121,7 @@ _.ExpansionFeatures =
 							q(34309, {	-- Garrison Campaign: The Search for Shadow Hunter Bwu'ja
 								["races"] = HORDE_ONLY,
 								["provider"] = { "n", 78487 },	-- Rokhan
-								["coord"] = { 51.6, 51.6, 590 },	-- Frostwall
+								["coord"] = { 51.6, 51.6, FROSTWALL },
 							}),
 							-- 2nd quest of Garrison Campaign: The Search for Shadow Hunter Bwu'ja questchain
 							q(34314, {	-- Out of the Chains
@@ -182,7 +182,7 @@ _.ExpansionFeatures =
 							q(35186, {	-- Garrison Campaign: The Sargerei
 								["races"] = HORDE_ONLY,
 								["provider"] = { "n", 83858 },	-- Khadgar's Servant
-								["coord"] = { 52.0, 39.8, 590 },	-- Frostwall
+								["coord"] = { 52.0, 39.8, FROSTWALL },
 							}),
 							-- 2nd quest of Garrison Campaign: The Sargerei (N) questchain
 							q(35187, {	-- Infiltrating the Sargerei
@@ -250,7 +250,7 @@ _.ExpansionFeatures =
 							q(36261, {	-- Garrison Campaign: Missing Grunt (H)
 								["races"] = HORDE_ONLY,
 								["provider"] = { "n", 79740 },	-- Warmaster Zog
-								["coord"] = { 53.8, 54.6, 590 },	-- Frostwall
+								["coord"] = { 53.8, 54.6, FROSTWALL },
 							}),
 							-- 2nd quest of Garrison Campaign: Missing Grunt (H) questchain
 							q(36242, {	-- Where There Is Smoke... (H)
@@ -258,15 +258,15 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 36261 },	-- Garrison Campaign: Missing Grunt (H)
 								["provider"] = { "n", 79740 },	-- Warmaster Zog
 								["provider"] = { "o", 233956 },	-- Bloody Blade
-								["coord"] = { 53.8, 54.6, 590 },	-- Frostwall -- Warmaster Zog
-								["coord"] = { 63.8, 44.9, 590 },	-- Frostwall -- Bloody Blade
+								["coord"] = { 53.8, 54.6, FROSTWALL },	-- Warmaster Zog
+								["coord"] = { 63.8, 44.9, FROSTWALL },	-- Bloody Blade
 							}),
 							-- 3rd (last) quest of Garrison Campaign: Missing Grunt (H) questchain
 							q(36248, {	-- A Stolen Heart
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 36242 },	-- Where There Is Smoke... (H)
 								["provider"] = { "n", 79740 },	-- Warmaster Zog
-								["coord"] = { 53.8, 54.6, 590 },	-- Frostwall
+								["coord"] = { 53.8, 54.6, FROSTWALL },
 							}),
 							q(34335, {	-- Garrison Campaign: Crows In The Field
 								["races"] = HORDE_ONLY,
@@ -309,7 +309,7 @@ _.ExpansionFeatures =
 					}),
 					n(89753, {	-- High Overlord Saurfang
 						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
-						["coord"] = { 40.2, 56.7, 590 },
+						["coord"] = { 40.2, 56.7, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(123975, {	-- Greater Bounty Spoils
@@ -665,12 +665,12 @@ _.ExpansionFeatures =
 					q(34653, {	-- Arakkoa Exodus
 						["sourceQuests"] = { 35537 },	-- News from Spires of Arak
 						["isBreadcrumb"] = true,
-						["coord"] = { 45.6, 43.2, 590 },
+						["coord"] = { 45.6, 43.2, FROSTWALL },
 						["provider"] = { "n", 78487 },	-- Rokhan
 					}),
 					q(36706, {	-- Ashran Appearance
 						["provider"] = { "n", 78466 },	-- Gazlowe
-						["coord"] = { 52.4, 53.3, 590 },
+						["coord"] = { 52.4, 53.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34775,	-- Mission Probable
 					}),
@@ -679,8 +679,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(10, {
@@ -694,8 +694,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							currency(823),	-- Apexis Crystal x800
@@ -706,8 +706,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(3, {
@@ -721,8 +721,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(8, {
@@ -736,8 +736,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(11, {
@@ -751,8 +751,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(7, {
@@ -766,8 +766,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(12, {
@@ -781,8 +781,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(9, {
@@ -796,8 +796,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(2, {
@@ -811,8 +811,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(6, {
@@ -826,8 +826,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(5, {
@@ -841,8 +841,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							currency(823),	-- Apexis Crystal x800
@@ -853,8 +853,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(1, {
@@ -868,8 +868,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							crit(4, {
@@ -883,15 +883,15 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							currency(823),	-- Apexis Crystal x1000
 						},
 					}),
 					q(36627, {	-- Big Frostfire Gun
-						["coord"] = { 62.2, 73.4, 590 },
+						["coord"] = { 62.2, 73.4, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 85882 },	-- Blixthraz Blastcharge
 						["sourceQuest"] = 36594,	-- "Spare" Parts
@@ -904,15 +904,15 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(36567, {	-- Bigger is Better
-						["maps"] = { 590 },	-- Garrison
-						["coord"] = { 52.4, 53.3, 590 },	-- lvl 1
+						["maps"] = { FROSTWALL },
+						["coord"] = { 52.4, 53.3, FROSTWALL },	-- lvl 1
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 78466 },	-- Gazlowe
 						["sourceQuest"] = 34775,	-- Mission Probable
 					}),
 					q(37961, {	-- Bringing the Bass
 						["provider"] = { "n", 91072 },	-- Drix Bassbolter
-						["coord"] = { 40.9, 47.8, 590 },
+						["coord"] = { 40.9, 47.8, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							spell(181715),	-- Unlock Garrison Jukebox
@@ -934,9 +934,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 78466 },	-- Gazlowe
 						["description"] = "Becomes available after completing any seconday profession intro quest.",
 						["coords"] = {
-							{ 52.4, 53.3, 590 },	-- lvl 1
-							{ 42.2, 55.6, 590 },	-- lvl 2
-							{ 37.6, 50.3, 590 },	-- lvl 3
+							{ 52.4, 53.3, FROSTWALL },	-- lvl 1
+							{ 42.2, 55.6, FROSTWALL },	-- lvl 2
+							{ 37.6, 50.3, FROSTWALL },	-- lvl 3
 						},
 					}),
 					q(35988, {	-- Call of the Archmage
@@ -948,8 +948,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "o", 236206 },	-- War Planning Map
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 						["g"] = {
 							currency(823),	-- Apexis Crystal x1000
@@ -957,7 +957,7 @@ _.ExpansionFeatures =
 					}),
 					q(34193, {	-- Clearing the Garden
 						["provider"] = { "n", 81981 },	-- Tarnon
-						["coord"] = { 43.4, 83.2, 590 },
+						["coord"] = { 43.4, 83.2, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 36567,	-- Bigger is Better
 						["g"] = {
@@ -965,50 +965,50 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(37813, {	-- Death to Amethon!
-						["coord"] = { 40.2, 56.7, 590 },
+						["coord"] = { 40.2, 56.7, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
 					}),
 					q(37814, {	-- Death to Gor'thul!
-						["coord"] = { 40.2, 56.7, 590 },
+						["coord"] = { 40.2, 56.7, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
 					}),
 					q(37818, {	-- Death to Hivelord Ik'rix!
-						["coord"] = { 40.2, 56.7, 590 },
+						["coord"] = { 40.2, 56.7, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
 					}),
 					q(37815, {	-- Death to Nullifier Darkoor!
-						["coord"] = { 40.2, 56.7, 590 },
+						["coord"] = { 40.2, 56.7, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
 					}),
 					q(37949, {	-- Death to Nullifier Darkoor!
-						["coord"] = { 40.2, 56.7, 590 },
+						["coord"] = { 40.2, 56.7, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
 					}),
 					q(37817, {	-- Death to Tremor!
-						["coord"] = { 40.2, 56.7, 590 },
+						["coord"] = { 40.2, 56.7, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
 					}),
 					q(37816, {	-- Death to Undertow!
-						["coord"] = { 40.2, 56.7, 590 },
+						["coord"] = { 40.2, 56.7, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
 					}),
 					q(34379, {	-- Den of Wolves
 						["provider"] = { "n", 76411 },	-- Farseer Drek'Thar
-						["coord"] = { 49.7, 49.5, 590 },
+						["coord"] = { 49.7, 49.5, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34775,	-- Mission Probable
 					}),
@@ -1051,32 +1051,32 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(34681, {	-- It's a Matter of Strategy
-						["coord"] = { 45.9, 42.7, 590 },
+						["coord"] = { 45.9, 42.7, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 78487 },	-- Rokhan
 						["sourceQuest"] = 36494,	-- News from Talador
 					}),
 					q(36352, {	-- Locating the Lapidarist
-						["coord"] = { 60.9, 40.0, 590 },
+						["coord"] = { 60.9, 40.0, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 84967 },	-- "Appraiser" Sazsel Stickyfingers
 						["sourceQuest"] = 36314,	-- The Intricate Pendant
 						["requireSkill"] = JEWELCRAFTING,
 					}),
 					q(36614, {	-- My Very Own Fortress
-						["coord"] = { 42.1, 55.5, 590 },	-- Rank 2
+						["coord"] = { 42.1, 55.5, FROSTWALL },	-- Rank 2
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 78466 },	-- Gazlowe
 						["sourceQuest"] = 36567,	-- Bigger is Better
 					}),
 					q(38306, {	-- Mystery Notebook
-						["coord"] = { 40.9, 47.8, 590 },
+						["coord"] = { 40.9, 47.8, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 91072 },	-- Drix Bassbolter
 						["description"] = "Requires Garrison Rank 3.",
 					}),
 					q(38427, {	-- New Goods
-						["coord"] = { 39.2, 55.3, 590 },
+						["coord"] = { 39.2, 55.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 79740 },	-- Warmaster Zog
 						["description"] = "Requires Garrison Rank 3.",
@@ -1086,16 +1086,16 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 86614 },	-- Pinchwhistle Gearworks
 						["sourceQuest"] = 34378,	-- Establish Your Garrison
 						["coords"] = {
-							{ 50.8, 50.7, 590 },	-- lvl 1 garrison
-							{ 46.8, 45.8, 590 },	-- lvl 2 garrison
+							{ 50.8, 50.7, FROSTWALL },	-- lvl 1 garrison
+							{ 46.8, 45.8, FROSTWALL },	-- lvl 2 garrison
 						},
 					}),
 					q(37434, {	-- Proving Grounds
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 79740 },	-- Warmaster Zog
 						["coords"] = {
-							{ 53.8, 54.9, 590 },	-- lvl 1 garrison
-							{ 40.5, 54.8, 590 },	-- lvl 2 garrison
+							{ 53.8, 54.9, FROSTWALL },	-- lvl 1 garrison
+							{ 40.5, 54.8, FROSTWALL },	-- lvl 2 garrison
 						},
 						["g"] = {
 							i(119463),	-- Staff of Trials
@@ -1117,9 +1117,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "i", 110609, 50 } },	-- 50x Raw Beast Hide
 					}),
 					q(34733, {    -- Services of Dagg
-						--["sourceQuests"] = { ??? },    -- You need to open 2 cages in Frostfire Ridge at 39.52, 28.06 and 65.85, 60.84., probably 2 HQT there.
-						["coord"] = { 48.6, 17.2, 590 },    -- Frostwall
-						--["coord"] = { 61.6, 74.8, 582 },    -- Lunarfall
+						--["sourceQuests"] = { ??? },	-- You need to open 2 cages in Frostfire Ridge at 39.52, 28.06 and 65.85, 60.84., probably 2 HQT there.
+						["coord"] = { 48.6, 17.2, FROSTWALL },
+						--["coord"] = { 61.6, 74.8, 582 },	-- Lunarfall
 						["g"] = {
 							follower(32),    -- Follower: Dagg
 						},
@@ -1128,9 +1128,9 @@ _.ExpansionFeatures =
 						["questID"] = 33977,	-- Blessing of the Wolf
 						["races"] = HORDE_ONLY,
 						["coords"] = {
-							{ 48.91, 52.21, 590 },	-- Tier 1 Garrison
-							{ 48.47, 52.12, 590 },	-- Tier 2 Garrison
-							{ 48.67, 52.21, 590 },	-- Tier 3 Garrison
+							{ 48.91, 52.21, FROSTWALL },	-- Tier 1 Garrison
+							{ 48.47, 52.12, FROSTWALL },	-- Tier 2 Garrison
+							{ 48.67, 52.21, FROSTWALL },	-- Tier 3 Garrison
 						},
 					}),
 					q(36522, {	-- Solidarity in Death
@@ -1141,7 +1141,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(36594, {	-- "Spare" Parts
-						["coord"] = { 62.2, 73.4, 590 },
+						["coord"] = { 62.2, 73.4, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 85882 },	-- Blixthraz Blastcharge
 						["sourceQuest"] = 36589,	-- Heavy Arms
@@ -1173,7 +1173,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 35058 },	-- The Mysterious Flask
 						["requireSkill"] = ALCHEMY,
 						["provider"] = { "n", 81166 },	-- Refugee Lo'nash
-						["coord"] = { 45.4, 50.4, 590 },
+						["coord"] = { 45.4, 50.4, FROSTWALL },
 						["races"] = HORDE_ONLY,
 					}),
 					q(35058, {	-- The Mysterious Flask
@@ -1196,7 +1196,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(35154, {	-- Things Are Not Goren Our Way
-						["coord"] = { 62.0, 73.9, 590 },	-- lvl 2 garrison
+						["coord"] = { 62.0, 73.9, FROSTWALL },	-- lvl 2 garrison
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 81688 },	-- Gorsol
 						["sourceQuest"] = 36567,	-- Bigger is Better
@@ -1226,19 +1226,19 @@ _.ExpansionFeatures =
 					q(37290, {	-- Upgrades in Ashran
 						["description"] = "You need to have Comprehensive Construction Outpost Guide (item 116395) in your inventory",
 						["provider"] = { "n", 78466 },	-- Gazlowe
-						["coord"] = { 37.5, 50.3, 590 },	-- lvl 3
+						["coord"] = { 37.5, 50.3, FROSTWALL },	-- lvl 3
 						["races"] = HORDE_ONLY,
 					}),
 					o(236206, {	-- War Planning Map
 						["sourceQuest"] = 36567,	-- Bigger is Better
 						["races"] = HORDE_ONLY,
 						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+							{ 41.8, 50.7, FROSTWALL },	-- lvl 2 garrison
+							{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 						},
 					}),
 					q(34736, {	-- We Be Needin' Supplies
-						["coord"] = { 51.2, 51.3, 590 },	-- lvl 1
+						["coord"] = { 51.2, 51.3, FROSTWALL },	-- lvl 1
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 78487 },	-- Rokhan
 						["isBreadcrumb"] = true,
@@ -1252,7 +1252,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(34209, {	-- Vouchsafe Our Arrival
-						["coord"] = { 49.4, 36.5, 590 },
+						["coord"] = { 49.4, 36.5, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 79252 },	-- Cordana Felsong
 						["sourceQuest"] = 34378,	-- Establish Your Garrison
@@ -1262,31 +1262,31 @@ _.ExpansionFeatures =
 							{ "n", 89793 },	-- Harrison Jones
 							{ "n", 92223 },	-- Surveyor Daltry
 						},
-						["coord"] = { 40.2, 56.0, 590 },
+						["coord"] = { 40.2, 56.0, FROSTWALL },
 						["isDaily"] = true,
 					}),
 					q(37916, {	-- Gronnsbane: The Broken Spear
 						["sourceQuest"] = 37914, -- Treasure Contract: The Thunderlord Sage
 						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
-						["coord"] = { 40.2, 56.0, 590 },
+						["coord"] = { 40.2, 56.0, FROSTWALL },
 						["isDaily"] = true,
 					}),
 					q(37917, {	-- Gronnsbane: The Blessing of Fire
 						["sourceQuest"] = 37916, -- Gronnsbane: The Broken Spear
 						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
-						["coord"] = { 40.2, 56.0, 590 },
+						["coord"] = { 40.2, 56.0, FROSTWALL },
 						["isDaily"] = true,
 					}),
 					q(37918, {	-- Gronnsbane: The Blessing of Fire
 						["sourceQuest"] = 37917, -- Gronnsbane: The Broken Spear
 						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
-						["coord"] = { 40.2, 56.0, 590 },
+						["coord"] = { 40.2, 56.0, FROSTWALL },
 						["isDaily"] = true,
 					}),
 					q(37919, {	-- Gronnsbane: The Blessing of Beasts
 						["sourceQuest"] = 37918, -- Gronnsbane: The Blessing of Fire
 						["provider"] = { "o", 239791 },	-- Relic Hunting Notes
-						["coord"] = { 40.2, 56.0, 590 },
+						["coord"] = { 40.2, 56.0, FROSTWALL },
 						["isDaily"] = true,
 					}),
 				},
