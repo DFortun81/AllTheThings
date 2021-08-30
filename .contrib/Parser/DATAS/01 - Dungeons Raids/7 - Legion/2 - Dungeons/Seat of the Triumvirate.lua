@@ -281,4 +281,5 @@ _.Instances = { tier(LEGION_TIER, {
 
 _.HiddenQuestTriggers = {
 	q(48566),	-- learning Ensemble: Venerated Triumvirate Battleplate
+	q(48567),	-- learning Ensemble: Sterling Triumvirate Chainmail
 };
