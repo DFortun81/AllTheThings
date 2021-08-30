@@ -758,7 +758,7 @@ for key,value in pairs({
 		--TODO: [-550] = "Starcraft Collector's Edition",
 		--TODO: [-551] = "Diablo Collector's Edition",
 		--TODO: [-556] = "Arena Tournament",
-		-[-579] = "Passe do Portal Negro",
+		[-579] = "Passe do Portal Negro",
 
 	-- PvP Header
 		-- Special Season Tags
