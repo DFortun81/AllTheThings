@@ -457,6 +457,8 @@ local L = app.L;
 	-- Features tab
 		L.FEATURES_TAB = "功能";
 		L.MODULES_LABEL = "模块和迷你列表";
+		--TODO: L.ADHOC_UPDATES_CHECKBOX = "Use Ad-Hoc Window Updates";
+		--TODO: L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
 		L.SKIP_CUTSCENES_CHECKBOX = "自动跳过场景动画";
 		L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "如果想让ATT代表你自动跳过所有场景动画请启用此选项.";
 		--TODO: L.AUTO_BOUNTY_CHECKBOX = "Automatically Open the Bounty List";
@@ -788,6 +790,8 @@ for key,value in pairs({
 		--TODO: [-538] = "The Ahn'Qiraj War Effort",
 		[-539] = "流沙节杖",											-- The Scepter of the Shifting Sands
 		[-540] = "天灾入侵",											-- The Scourge Invasion
+		--TODO: [-541] = "The Silithyst Must Flow",
+		[-542] = "开启黑暗之门",									-- The Opening of the Dark Portal
 		[-543] = "军团入侵",											-- Legion Invasions
 		[-544] = "魔兽世界典藏版",									-- WoW Collector's Edition
 		[-545] = "暴雪嘉年华",										-- Blizzcon
@@ -802,6 +806,8 @@ for key,value in pairs({
 		[-575] = "暗黑破坏神3：夺魂之镰",								-- Diablo III: Reaper of Souls
 		[-576] = "星际争霸2：虚空之遗",								-- StarCraft II: Legacy of the Void
 		[-577] = "魔兽电影",											-- Warcraft Movie
+		--TODO: [-578] = "World of Warcraft 15th Anniversary Collector’s Edition",
+		--TODO: [-579] = "Dark Portal Pass",
 
 	-- PvP Header
 		-- Special Season Tags

@@ -1867,7 +1867,7 @@ app.L = {
 		[-575] = "Diablo III: Reaper of Souls",
 		[-576] = "StarCraft II: Legacy of the Void",
 		[-577] = "Warcraft Movie",
-		[-578] = "World of Warcraft 15th Anniversary",
+		[-578] = "World of Warcraft 15th Anniversary Collector’s Edition",
 		[-579] = "Dark Portal Pass",
 
 -- Raid Buff Stack Size

@@ -455,6 +455,8 @@ local L = app.L;
 	-- Features tab
 		--TODO: L.FEATURES_TAB = "Features";
 		--TODO: L.MODULES_LABEL = "Modules & Mini Lists";
+		--TODO: L.ADHOC_UPDATES_CHECKBOX = "Use Ad-Hoc Window Updates";
+		--TODO: L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
 		--TODO: L.SKIP_CUTSCENES_CHECKBOX = "Automatically Skip Cutscenes";
 		--TODO: L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.";
 		--TODO: L.AUTO_BOUNTY_CHECKBOX = "Automatically Open the Bounty List";
@@ -749,11 +751,14 @@ for key,value in pairs({
 		--TODO: [-538] = "The Ahn'Qiraj War Effort",
 		--TODO: [-539] = "The Scepter of the Shifting Sands",
 		--TODO: [-540] = "The Scourge Invasion",
+		--TODO: [-541] = "The Silithyst Must Flow",
+		[-542] = "어둠의 문 열기",
 		--TODO: [-543] = "Legion Invasions",
 		--TODO: [-544] = "WoW Collector's Edition",
 		--TODO: [-550] = "Starcraft Collector's Edition",
 		--TODO: [-551] = "Diablo Collector's Edition",
-
+		--TODO: [-578] = "World of Warcraft 15th Anniversary Collector’s Edition",	-- 월드 오브 워크래프트 15주년 기념 소장판을 소개합니다!
+		[-579] = "다크 포털 패스",
 
 	-- PvP Header
 		-- Special Season Tags
