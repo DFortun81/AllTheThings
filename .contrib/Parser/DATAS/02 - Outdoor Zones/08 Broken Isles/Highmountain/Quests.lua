@@ -1075,3 +1075,7 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	--q(40473),	-- Tracking Quest - Highmountain Treasure Chest
+	--q(44352),	-- Tracking Quest - Highmountain Treasure Chest (UNderwater Cave) (All Chests seems to have a QuestID attached already...)
+};
