@@ -1142,7 +1142,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["coord"] = { 69.6, 53.8, SWAMP_OF_SORROWS },	-- Start of path leading down to Sunken Temple
 				["maps"] = {
 					SWAMP_OF_SORROWS,
-					220,	-- Sunken Temple
+					SUNKEN_TEMPLE,
 				},
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {

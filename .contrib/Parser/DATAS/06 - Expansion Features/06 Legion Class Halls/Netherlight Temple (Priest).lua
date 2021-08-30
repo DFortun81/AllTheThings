@@ -20,7 +20,7 @@ _.ExpansionFeatures =
 								628,		-- The Underbelly (Dalaran)
 								629,		-- Aegwynn's Gallery (Dalaran)
 								115,		-- New Hearthglen in Northrend
-								435,		-- Scarlet Halls
+								SCARLET_MONASTERY,	-- Scarlet Halls
 								SCHOLOMANCE,
 								477,		-- Scholomance
 								478,		-- Scholomance
