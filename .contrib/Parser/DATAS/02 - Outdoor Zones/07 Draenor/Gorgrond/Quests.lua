@@ -1459,13 +1459,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36434,	-- Penny From Heaven
 				}),
-				q(35511, {	-- Kaz the Shrieker
-					["provider"] = { "n", 82338 },	-- Kaz the Shrieker
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						follower(159),	-- Kaz the Shrieker
-					},
-				}),
 				q(36443, {	-- Laying Dionor to Rest (A)
 					["provider"] = { "n", 82302 },	-- Birchus
 					["coord"] = { 50.2, 47.5, GORGROND },
