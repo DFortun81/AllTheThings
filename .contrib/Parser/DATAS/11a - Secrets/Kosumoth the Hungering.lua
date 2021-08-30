@@ -67,7 +67,7 @@ _.Secrets =
 				["model"] = 249664,
 				["modelScale"] = 2,
 				["questID"] = 43735,
-				["coord"] = { 67.3, 14.8, STORMHEIM },
+				["coord"] = { 67.2, 15.8, STORMHEIM },
 				["sourceQuest"] = 43734,	-- Step 7: Hungering Orb
 				["description"] = "|cFFFFFFFFStep 8:|r This step will send you to |cFFFFD700The Great Sea|r near |cFFFFD700Stormheim|r.  Head to the |cFFFFD700Shield's Rest|r flight point.  Fly northwest until you see a broken statue with a large axe in the water named |cFFFFD700Sotnar's Rest|r.  Swim down where the hand comes out of the water between the 2 jutting  stones and you should see a |cFFFFD700Toothless Great White|r.  Swim down beneath the shark and turn into the opening then swim up into the cave.  Avoid the steam explosions and click on the |cFFFFD700Hungering Orb|r.",
 			}),
