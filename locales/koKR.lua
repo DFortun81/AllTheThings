@@ -757,7 +757,6 @@ for key,value in pairs({
 		--TODO: [-544] = "WoW Collector's Edition",
 		--TODO: [-550] = "Starcraft Collector's Edition",
 		--TODO: [-551] = "Diablo Collector's Edition",
-		--TODO: [-578] = "World of Warcraft 15th Anniversary Collector’s Edition",	-- 월드 오브 워크래프트 15주년 기념 소장판을 소개합니다!
 		[-579] = "다크 포털 패스",
 
 	-- PvP Header

@@ -758,7 +758,6 @@ for key,value in pairs({
 		--TODO: [-550] = "Starcraft Collector's Edition",
 		--TODO: [-551] = "Diablo Collector's Edition",
 		--TODO: [-556] = "Arena Tournament",
-		[-578] = "15th Anniversary Collector's Edition di World of Warcraft",
 
 	-- PvP Header
 		-- Special Season Tags

@@ -757,7 +757,6 @@ for key,value in pairs({
 		--TODO: [-550] = "Starcraft Collector's Edition",
 		--TODO: [-551] = "Diablo Collector's Edition",
 		--TODO: [-556] = "Arena Tournament",
-		[-578] = "La World of Warcraft 15th Anniversary Collector’s Edition",
 		[-579] = "Passe Porte des ténèbres",
 
 	-- PvP Header

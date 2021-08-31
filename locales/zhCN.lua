@@ -806,7 +806,6 @@ for key,value in pairs({
 		[-575] = "暗黑破坏神3：夺魂之镰",								-- Diablo III: Reaper of Souls
 		[-576] = "星际争霸2：虚空之遗",								-- StarCraft II: Legacy of the Void
 		[-577] = "魔兽电影",											-- Warcraft Movie
-		--TODO: [-578] = "World of Warcraft 15th Anniversary Collector’s Edition",
 		--TODO: [-579] = "Dark Portal Pass",
 
 	-- PvP Header
