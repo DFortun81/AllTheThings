@@ -8566,7 +8566,7 @@ local itemFields = {
 	end,
 	["f"] = function(t)
 		-- Unknown item type after Parser, so make sure we save the filter for later references
-		rawset(t, "f", 50);
+		rawset(t, "f", -1);
 		return rawget(t, "f");
 	end,
 	["tsm"] = function(t)
