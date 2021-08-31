@@ -746,6 +746,7 @@ for key,value in pairs({
 		--TODO: [-532] = "Heroes of the Storm",
 		--TODO: [-533] = "Hearthstone",
 		--TODO: [-534] = "Collector's Edition",
+		--TODO: [-536] = "Hearthstone Mercenaries",
 
 		--TODO: [-537] = "Diablo 20th Anniversary",
 		--TODO: [-538] = "The Ahn'Qiraj War Effort",

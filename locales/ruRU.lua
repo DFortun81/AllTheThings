@@ -729,6 +729,7 @@ for key,value in pairs({
 		[-532] = "Heroes of the Storm",
 		[-533] = "Hearthstone",
 		[-534] = "Коллекционное издание",
+		[-536] = "Hearthstone Наемники",
 
 		[-537] = "20-ая годовщина Diablo",
 		[-538] = "Война в Ан'Кираже",

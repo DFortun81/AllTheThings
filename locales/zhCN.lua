@@ -785,6 +785,7 @@ for key,value in pairs({
 		[-532] = "风暴英雄推广活动",									-- Heroes of the Storm
 		[-533] = "炉石传说推广活动",									-- Hearthstone
 		[-534] = "典藏版",											-- Collector's Edition
+		--TODO: [-536] = "Hearthstone Mercenaries",					-- Hearthstone Mercenaries
 
 		[-537] = "暗黑破坏神20周年庆",								-- Diablo 20th Anniversary
 		--TODO: [-538] = "The Ahn'Qiraj War Effort",
