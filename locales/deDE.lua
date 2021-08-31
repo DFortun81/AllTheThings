@@ -2709,7 +2709,7 @@ for key,value in pairs({
 	[329641] = "Gesucht: Zankfett und Rohtrogg",	-- Wanted: Junkbrat and Roadtrogg
 	[329783] = "Leuchtende arkane Truhe",	-- Glowing Arcane Trunk
 	[329805] = "Merkwürdiger Kristall",	-- Strange Crystal
-	[329918] = "Schätze der Stacheleber",	-- Quilboar Treasure
+	[329918] = "Schätze der Stacheleber",	-- Quilboar Treasures
 	[329919] = "Gestohlene Vorräte",	-- Stolen Supplies
 	[330627] = "Gefahrenzeichen",	-- Danger Sign
 	[332220] = "Leuchtende arkane Truhe",	-- Glowing Arcane Trunk

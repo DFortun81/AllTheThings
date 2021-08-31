@@ -2709,7 +2709,7 @@ for key,value in pairs({
 	[329641] = "Procura-se: Junkbrat e Roadtrogg",	-- Wanted: Junkbrat and Roadtrogg
 	--TODO: [329783] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
 	[329805] = "Cristal Estranho",	-- Strange Crystal
-	[329918] = "Tesouros Javatuscos",	-- Quilboar Treasure
+	[329918] = "Tesouros Javatuscos",	-- Quilboar Treasures
 	[329919] = "Suprimentos Roubados",	-- Stolen Supplies
 	[330627] = "Placa de Perigo",	-- Danger Sign
 	--TODO: [332220] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
