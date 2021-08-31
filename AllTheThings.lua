@@ -4754,9 +4754,9 @@ local function UpdateSearchResults(searchResults)
 		if not app.Settings:GetTooltipSetting("Updates:AdHoc") then
 			-- Mark all results as marked. This prevents a double +1 on parents.
 			for i,result in ipairs(searchResults) do
-				print("result",result.text,result.visible,result.parent and result.parent.total)
+				-- print("result",result.text,result.visible,result.parent and result.parent.total)
 				if result.visible and result.parent and result.parent.total then
-					print(".marked",result.text)
+					-- print(".marked",result.text)
 					result.marked = true;
 				end
 			end
