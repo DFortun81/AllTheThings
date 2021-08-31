@@ -5,12 +5,12 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(942, {	-- Stormsong Valley
+		m(STORMSONG_VALLEY, {
 			n(-169, {	-- Emissary Quests
 				q(54451, {	-- Baubles from the Seekers
 					["provider"] = { "n", 135793 },	-- Collector Kojo
 					["lvl"] = 120,
-					["coord"] = { 40.54, 36.41, 942 },
+					["coord"] = { 40.54, 36.41, STORMSONG_VALLEY },
 					["repeatable"] = true,
 					["g"] = {
 						i(166245, {	-- Tortollan Seekers Supplies
@@ -24,7 +24,7 @@ _.Zones =
 				q(50601, {	-- Storm's Wake
 					["provider"] = { "n", 135800 },	-- Sister Lilyana
 					["lvl"] = 120,
-					["coord"] = { 59.29, 69.33, 942 },
+					["coord"] = { 59.29, 69.33, STORMSONG_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
@@ -32,7 +32,7 @@ _.Zones =
 					["provider"] = { "n", 135800 },	-- Sister Lilyana
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 59.29, 69.33, 942 },
+					["coord"] = { 59.29, 69.33, STORMSONG_VALLEY },
 					["isDaily"] = true,
 					["g"] = {
 						i(166294, {	-- Storm's Wake Supplies
@@ -44,7 +44,7 @@ _.Zones =
 				q(50604, {	-- Tortollan Seekers
 					["provider"] = { "n", 135793 },	-- Collector Kojo
 					["lvl"] = 120,
-					["coord"] = { 40.54, 36.41, 942 },
+					["coord"] = { 40.54, 36.41, STORMSONG_VALLEY },
 					["isDaily"] = true,
 					["g"] = {
 						i(165785, {	-- Tortollan Trader's Stock

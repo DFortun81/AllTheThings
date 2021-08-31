@@ -16,7 +16,7 @@ _.Zones =
 				q(54113, {	-- Every Little Death Helps
 					["sourceQuests"] = { 54144 },	-- Orders from Azshara
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
-					["coord"] = { 34.2, 31.8, 942 },
+					["coord"] = { 34.2, 31.8, STORMSONG_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54114, {	-- Every Little Death Helps
@@ -27,7 +27,7 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["coords"] = {
 						{ 78.0, 36.7, 862 },
-						{ 34.2, 31.8, 942 },
+						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
 				q(53765, {	-- His Eye Upon You
@@ -44,7 +44,7 @@ _.Zones =
 					["sourceQuests"] = { 54141 },	-- The Azsharan Medallion
 					["provider"] = { "n", 135793 },	-- Collector Kojo
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
-					["coord"] = { 40.4, 36.4, 942 },
+					["coord"] = { 40.4, 36.4, STORMSONG_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54265, {	-- Orders from Azshara
@@ -94,7 +94,7 @@ _.Zones =
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
 					["coords"] = {
 						{ 78.0, 36.7, 862 },
-						{ 34.2, 31.8, 942 },
+						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
 				q(54058, {	-- Unintended Consequences
@@ -102,7 +102,7 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["coords"] = {
 						{ 78.0, 36.7, 862 },
-						{ 34.2, 31.8, 942 },
+						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
 			}),

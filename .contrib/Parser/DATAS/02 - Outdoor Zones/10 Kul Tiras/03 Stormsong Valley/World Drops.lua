@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(942, {	-- Stormsong Valley
+		m(STORMSONG_VALLEY, {
 			n(-226, {	-- World Drops
 				["maps"] = { 863 },	-- Nazmir [During Assualts]
 				["g"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {

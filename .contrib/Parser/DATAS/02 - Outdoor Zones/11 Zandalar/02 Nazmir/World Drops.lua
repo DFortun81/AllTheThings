@@ -8,7 +8,7 @@ _.Zones =
 		m(863, {	-- Nazmir
 			n(-226,    {	-- World Drops
 				["maps"] = {
-					942,	-- Stormsong Valley [During Assualts]
+					STORMSONG_VALLEY,	-- During Assaults
 				},
 				["g"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 					-- Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate

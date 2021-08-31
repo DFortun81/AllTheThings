@@ -718,7 +718,7 @@ _.Zones =
 					}),
 					q(53868, {	-- Saving Nine
 						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-						["coord"] = { 7.2, 24.5, 942 },
+						["coord"] = { 7.2, 24.5, STORMSONG_VALLEY },
 						["sourceQuest"] = 55214,	-- Seam Stress
 						["requireSkill"] = TAILORING,
 						["lvl"] = 120,

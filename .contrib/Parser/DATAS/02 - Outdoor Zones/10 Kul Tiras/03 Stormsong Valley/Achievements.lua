@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(942, {	-- Stormsong Valley
+		m(STORMSONG_VALLEY, {
 			n(ACHIEVEMENTS,   {
 				ach(12940),		-- Adventurer of Stormsong Valley
 				ach(13047),		-- Clever Use of Mechanical Explosives
@@ -22,15 +22,15 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["coord"] = { 36.5, 33.7, 942 },
+									["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 								}),
 								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["coord"] = { 65.0, 50.8, 942 },
+									["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 								}),
 								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["coord"] = { 77.2, 29.0, 942 },
+									["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 								}),
 							},
 						}),
@@ -39,15 +39,15 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["coord"] = { 36.5, 33.7, 942 },
+									["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 								}),
 								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["coord"] = { 65.0, 50.8, 942 },
+									["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 								}),
 								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["coord"] = { 77.2, 29.0, 942 },
+									["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 								}),
 							},
 						}),
@@ -56,15 +56,15 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["coord"] = { 36.5, 33.7, 942 },
+									["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 								}),
 								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["coord"] = { 65.0, 50.8, 942 },
+									["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 								}),
 								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["coord"] = { 77.2, 29.0, 942 },
+									["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 								}),
 							},
 						}),
@@ -73,15 +73,15 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["coord"] = { 36.5, 33.7, 942 },
+									["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 								}),
 								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["coord"] = { 65.0, 50.8, 942 },
+									["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 								}),
 								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["coord"] = { 77.2, 29.0, 942 },
+									["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 								}),
 							},
 						}),
@@ -90,15 +90,15 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["coord"] = { 36.5, 33.7, 942 },
+									["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 								}),
 								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["coord"] = { 65.0, 50.8, 942 },
+									["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 								}),
 								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["coord"] = { 77.2, 29.0, 942 },
+									["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 								}),
 							},
 						}),
@@ -107,15 +107,15 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["coord"] = { 36.5, 33.7, 942 },
+									["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 								}),
 								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["coord"] = { 65.0, 50.8, 942 },
+									["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 								}),
 								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["coord"] = { 77.2, 29.0, 942 },
+									["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 								}),
 							},
 						}),
@@ -124,15 +124,15 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["coord"] = { 36.5, 33.7, 942 },
+									["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 								}),
 								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["coord"] = { 65.0, 50.8, 942 },
+									["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 								}),
 								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["coord"] = { 77.2, 29.0, 942 },
+									["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 								}),
 							},
 						}),
@@ -141,15 +141,15 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["coord"] = { 36.5, 33.7, 942 },
+									["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 								}),
 								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["coord"] = { 65.0, 50.8, 942 },
+									["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 								}),
 								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["coord"] = { 77.2, 29.0, 942 },
+									["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 								}),
 							},
 						}),
@@ -158,15 +158,15 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["coord"] = { 36.5, 33.7, 942 },
+									["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 								}),
 								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["coord"] = { 65.0, 50.8, 942 },
+									["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 								}),
 								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["coord"] = { 77.2, 29.0, 942 },
+									["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 								}),
 							},
 						}),
@@ -175,15 +175,15 @@ _.Zones =
 							["g"] = {
 								crit(2, {	-- Eddie Fixit
 									["creatureID"] = 140315,	-- Eddie Fixit
-									["coord"] = { 36.5, 33.7, 942 },
+									["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 								}),
 								crit(6, {	-- Ellie Vern
 									["creatureID"] = 141002,	-- Ellie Vern
-									["coord"] = { 65.0, 50.8, 942 },
+									["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 								}),
 								crit(7, {	-- Leana Darkwind
 									["creatureID"] = 141046,	-- Leana Darkwind
-									["coord"] = { 77.2, 29.0, 942 },
+									["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 								}),
 							},
 						}),
@@ -191,28 +191,28 @@ _.Zones =
 				}),
 				ach(13051, {	-- Legends of the Tidesages
 					crit(1, {	-- Legends of the Tidesages - Part 1
-						["coord"] = { 49.51, 80.90, 942 },
+						["coord"] = { 49.51, 80.90, STORMSONG_VALLEY },
 					}),
 					crit(2, {	-- Legends of the Tidesages - Part 2
-						["coord"] = { 59.02, 59.54, 942 },
+						["coord"] = { 59.02, 59.54, STORMSONG_VALLEY },
 					}),
 					crit(3, {	-- Legends of the Tidesages - Part 3
-						["coord"] = { 31.95, 72.91, 942 },
+						["coord"] = { 31.95, 72.91, STORMSONG_VALLEY },
 					}),
 					crit(4, {	-- Legends of the Tidesages - Part 4
-						["coord"] = { 33.81, 33.23, 942 },
+						["coord"] = { 33.81, 33.23, STORMSONG_VALLEY },
 					}),
 					crit(5, {	-- Legends of the Tidesages - Part 5
-						["coord"] = { 56.02, 38.53, 942 },
+						["coord"] = { 56.02, 38.53, STORMSONG_VALLEY },
 					}),
 					crit(6, {	-- Legends of the Tidesages - Part 6
-						["coord"] = { 44.18, 36.60, 942 },
+						["coord"] = { 44.18, 36.60, STORMSONG_VALLEY },
 					}),
 					crit(7, {	-- Legends of the Tidesages - Part 7
-						["coord"] = { 62.08, 30.22, 942 },
+						["coord"] = { 62.08, 30.22, STORMSONG_VALLEY },
 					}),
 					crit(8, {	-- Legends of the Tidesages - Part 8
-						["coord"] = { 75.07, 31.13, 942 },
+						["coord"] = { 75.07, 31.13, STORMSONG_VALLEY },
 					}),
 				}),
 				ach(13054, {	-- Sabertron Assemble
@@ -261,11 +261,11 @@ _.Zones =
 					["g"] = {
 						crit(1, {	-- Honey Bee
 							["crs"] = { 131376 },	-- Honey Bee
-							["coord"] = { 45.87, 62.73, 942 }
+							["coord"] = { 45.87, 62.73, STORMSONG_VALLEY },
 						}),
 						crit(2, {	-- Olivewing
 							["crs"] = { 143220 },	-- Olivewing
-							["coord"] = { 25.83, 70.26, 942 }
+							["coord"] = { 25.83, 70.26, STORMSONG_VALLEY },
 						}),
 					},
 				}),
@@ -274,7 +274,7 @@ _.Zones =
 					o(293350, {	-- Carved Wooden Chest
 						["questID"] = 52429,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 44.44, 73.53, 942 },
+						["coord"] = { 44.44, 73.53, STORMSONG_VALLEY },
 						["g"] = {
 							i(162000),	-- Pig Nose
 						},
@@ -282,7 +282,7 @@ _.Zones =
 					o(293349, {	-- Discarded Lunchbox
 						["questID"] = 52326,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 58.2, 63.7, 942 },
+						["coord"] = { 58.2, 63.7, STORMSONG_VALLEY },
 						["g"] = {
 							i(160485),	-- An Unforgettable Luncheon
 						},
@@ -290,42 +290,42 @@ _.Zones =
 					o(294174, {	-- Forgotten Chest
 						["questID"] = 52980,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 46.00, 30.69, 942 },
+						["coord"] = { 46.00, 30.69, STORMSONG_VALLEY },
 					}),
 					o(281494, {	-- Frosty Treasure Chest
 						["questID"] = 50526,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 48.96, 84.07, 942 },
+						["coord"] = { 48.96, 84.07, STORMSONG_VALLEY },
 					}),
 					o(284448, {	-- Hidden Scholar's Chest
 						["questID"] = 50937,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 59.9, 39.1, 942 },
+						["coord"] = { 59.9, 39.1, STORMSONG_VALLEY },
 					}),
 					o(280619, {	-- Old Ironbound Chest
 						["questID"] = 50089,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 42.8, 47.2, 942 },
+						["coord"] = { 42.8, 47.2, STORMSONG_VALLEY },
 					}),
 					o(279042, {	-- Smuggler's Stash
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 58.6, 83.8, 942 },
+						["coord"] = { 58.6, 83.8, STORMSONG_VALLEY },
 						["questID"] = 49811,
 					}),
 					o(282153, {	-- Sunken Strongbox
 						["questID"] = 50734,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 67.22, 43.2, 942 },
+						["coord"] = { 67.22, 43.2, STORMSONG_VALLEY },
 					}),
 					o(294173, {	-- Venture Co. Supply Chest
 						["questID"] = 52976,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 36.69, 23.23, 942 },
+						["coord"] = { 36.69, 23.23, STORMSONG_VALLEY },
 					}),
 					o(289647, {	-- Weathered Treasure Chest
 						["questID"] = 51449,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 66.92, 12.03, 942 },
+						["coord"] = { 66.92, 12.03, STORMSONG_VALLEY },
 					}),
 				}),
 			}),

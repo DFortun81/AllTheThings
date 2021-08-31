@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(942, {	-- Stormsong Valley
+		m(STORMSONG_VALLEY, {
 			n(VENDORS, {
 				n(135793, {	-- Collector Kojo <Tortollan Seekers Emissary>
-					["coord"] = { 40.4, 36.4, 942 },
+					["coord"] = { 40.4, 36.4, STORMSONG_VALLEY },
 					["g"] = {
 						i(161514, {	-- Antiquity Handler's Gloves
 							["cost"] = 14000000,	-- 1,400g
@@ -109,7 +109,7 @@ _.Zones =
 					},
 				}),
 				n(130786, {	-- Hobbs
-					["coord"] = { 58.3, 70.3, 942 },
+					["coord"] = { 58.3, 70.3, STORMSONG_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(162000, {	-- Pig Nose
@@ -130,7 +130,7 @@ _.Zones =
 					},
 				}),
 				n(136674, {	-- Madeline Netley <Stable Master>
-					["coord"] = { 31.6, 67.2, 942 },
+					["coord"] = { 31.6, 67.2, STORMSONG_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(163489, {	-- Abyssal Eel (PET!)
@@ -172,7 +172,7 @@ _.Zones =
 				}),
 				n(138096, {	-- Sanya Wraithschilde <Innkeeper>
 					["races"] = HORDE_ONLY,
-					["coord"] = { 50.8, 33.6, 942 },
+					["coord"] = { 50.8, 33.6, STORMSONG_VALLEY },
 					["g"] = {
 						i(162000, {	-- Pig Nose
 							["cost"] = { { "i", 155838, 25 }, },	-- 25x Briarback Quill
@@ -180,7 +180,7 @@ _.Zones =
 					},
 				}),
 				n(135800, {	-- Sister Lilyana <Storm's Wake Emissary>
-					["coord"] = { 59.2, 69.3, 942 },
+					["coord"] = { 59.2, 69.3, STORMSONG_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(161579, {	-- Bindings of the Seacallers

@@ -17,7 +17,7 @@ _.Secrets =
 			875,
 			TIRAGARDE_SOUND,
 			DRUSTVAR,
-			942,
+			STORMSONG_VALLEY,
 			1161,
 		},
 		["g"] = {
@@ -71,7 +71,7 @@ _.Secrets =
 				["model"] = 1068320,
 				["modelScale"] = .5,
 				["questID"] = 52815,
-				["coord"] = { 68.3, 10.5, 942 },	-- Cave Entrance
+				["coord"] = { 68.3, 10.5, STORMSONG_VALLEY },	-- Cave Entrance
 				["sourceQuest"] = 52816,	-- Step 6: Fifth Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 7:|r Head to Stormsong Valley.  At the coordinates provided, there is a cave entrance obscured by some trees.  There are some pirates inside, so fight your way to the middle of the cave and you'll find a wheelbarrow housing the next pebble around |cFFFFFFFF67.9, 12.9|r.\n\nShift+click to refresh your collection.\n",
 			}),

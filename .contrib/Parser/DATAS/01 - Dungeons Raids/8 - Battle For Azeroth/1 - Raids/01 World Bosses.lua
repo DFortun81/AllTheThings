@@ -313,10 +313,10 @@ _.Instances = { tier(BFA_TIER, {
 				["isWorldQuest"] = true,
 				["questID"] = 52166,	-- The Faceless Herald (WQ)
 				["isRaid"] = true,
-				["coord"] = { 83.2, 49.6, 942 },
+				["coord"] = { 83.2, 49.6, STORMSONG_VALLEY },
 				["lvl"] = { 50 },
 				["maps"] = {	-- all Stormsong Valley maps
-					942,	-- Stormsong Valley
+					STORMSONG_VALLEY,
 					1179,	-- Abyssal Melody
 					1182,	-- Saltstone Mine
 					1183,	-- Thornheart

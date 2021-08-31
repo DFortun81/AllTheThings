@@ -995,16 +995,16 @@ _.Achievements =
 					},
 					["maps"] = {
 						1161,	-- Boralus
-						942,	-- Stormsong Valley
+						STORMSONG_VALLEY,
 						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 58.58, 70.31, 942 },	-- "Nasty" Buck
+						{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
 						{ 74.25, 17.76, 1161 },	-- Allison Weber
 						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 						{ 75.37, 14.48, 1161 },	-- Harold Atkey
 						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-						{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
+						{ 50.82, 33.46, STORMSONG_VALLEY },	-- Rusty Blade Waitress
 					},
 				}),
 				i(163103, {	-- Admiralty-Issued Grog
@@ -1114,17 +1114,17 @@ _.Achievements =
 					},
 					["maps"] = {
 						1161,	-- Boralus
-						942,	-- Stormsong Valley
+						STORMSONG_VALLEY,
 						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 58.58, 70.31, 942 },	-- "Nasty" Buck
+						{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
 						{ 74.25, 17.76, 1161 },	-- Allison Weber
 						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 						{ 75.37, 14.48, 1161 },	-- Harold Atkey
 						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-						{ 41.22, 50.21, 942 },	-- Rebecca Barnes
-						{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
+						{ 41.22, 50.21, STORMSONG_VALLEY },	-- Rebecca Barnes
+						{ 50.82, 33.46, STORMSONG_VALLEY },	-- Rusty Blade Waitress
 						{ 53.31, 28.29, TIRAGARDE_SOUND },	-- Terry Rigglesmith
 						{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
 					},
@@ -1150,13 +1150,13 @@ _.Achievements =
 					["maps"] = {
 						1161,	-- Boralus
 						DAZARALOR,
-						942,	-- Stormsong Valley
+						STORMSONG_VALLEY,
 					},
 					["coords"] = {
 						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
 						{ 47.04, 91.55, DAZARALOR },	-- Lenne
-						{ 41.22, 50.21, 942 },	-- Rebecca Barnes
-						{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
+						{ 41.22, 50.21, STORMSONG_VALLEY },	-- Rebecca Barnes
+						{ 50.82, 33.46, STORMSONG_VALLEY },	-- Rusty Blade Waitress
 					},
 				}),
 				i(163019, {	-- Drop Anchor Dunkel
@@ -1205,10 +1205,10 @@ _.Achievements =
 						135600,	-- Emma Haribull
 					},
 					["maps"] = {
-						942,	-- Stormsong Valley
+						STORMSONG_VALLEY,
 					},
 					["coords"] = {
-						{ 44.47, 54.21, 942 },	-- Emma Haribull
+						{ 44.47, 54.21, STORMSONG_VALLEY },	-- Emma Haribull
 					},
 				}),
 				i(162026, {	-- Hook Point Porter
@@ -1315,12 +1315,12 @@ _.Achievements =
 						137040,	-- Linda Deepwater
 					},
 					["maps"] = {
-						942,	-- Stormsong Valley
+						STORMSONG_VALLEY,
 						DRUSTVAR,
 					},
 					["coords"] = {
 						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
-						{ 49.07, 57.22, 942 },	-- Long Forgotten Rum
+						{ 49.07, 57.22, STORMSONG_VALLEY },	-- Long Forgotten Rum
 					},
 				}),
 				i(159847, {	-- Mildenhall Mead
@@ -1343,15 +1343,15 @@ _.Achievements =
 					["maps"] = {
 						1161,	-- Boralus
 						DRUSTVAR,
-						942,	-- Stormsong Valley
+						STORMSONG_VALLEY,
 						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 58.58, 70.31, 942 },	-- "Nasty" Buck
+						{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
 						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 						{ 66.27, 24.29, TIRAGARDE_SOUND },	-- Dandy Jones
 						{ 42.06, 22.85, TIRAGARDE_SOUND },	-- Egert Tominson
-						{ 44.59, 55.49, 942 },	-- Felicity Noel
+						{ 44.59, 55.49, STORMSONG_VALLEY },	-- Felicity Noel
 						{ 75.37, 14.48, 1161 },	-- Harold Atkey
 						{ 72.61, 68.41, 1161 },	-- Jaela Billman
 						{ 77.38, 83.97, TIRAGARDE_SOUND },	-- Jill McHoonigan
@@ -1359,7 +1359,7 @@ _.Achievements =
 						{ 75.88, 50.64, TIRAGARDE_SOUND },	-- Lidia Plank
 						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
 						{ 31.19, 29.78, DRUSTVAR },	-- Quartermaster Rickard
-						{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
+						{ 50.82, 33.46, STORMSONG_VALLEY },	-- Rusty Blade Waitress
 						{ 35.33, 24.22, TIRAGARDE_SOUND },	-- Tom Fishbury
 					},
 				}),
@@ -1536,16 +1536,16 @@ _.Achievements =
 					["maps"] = {
 						1161,	-- Boralus
 						DRUSTVAR,
-						942,	-- Stormsong Valley
+						STORMSONG_VALLEY,
 						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 58.58, 70.31, 942 },	-- "Nasty" Buck
+						{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
 						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 						{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
 						{ 54.99, 43.63, 1161 },	-- Crimper Mirjam
 						{ 66.28, 61.58, 1161 },	-- Diana Seafinch
-						{ 44.59, 55.49, 942 },	-- Felicity Noel
+						{ 44.59, 55.49, STORMSONG_VALLEY },	-- Felicity Noel
 						{ 21.51, 43.71, DRUSTVAR },	-- Fixi Slyshiv
 						{ 75.37, 14.48, 1161 },	-- Harold Atkey
 						{ 72.60, 82.60, 1161 },	-- Jaela Billa

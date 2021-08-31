@@ -4,7 +4,7 @@
 
 _.Instances = { tier(BFA_TIER, {
 	inst(1036, {	-- Shrine of the Storm
-		["coord"] = { 78.8, 26.5, 942 },
+		["coord"] = { 78.8, 26.5, STORMSONG_VALLEY },
 		["maps"] = {
 			1039,	-- Shrine of the Storm
 			1040,	-- Storm's End

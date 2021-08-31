@@ -1038,9 +1038,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["maps"] = { TIRAGARDE_SOUND },
 					}),
 					crit(2, {	-- Stormsong Valley
-						["coord"] = { 35.8, 51.2, 942 },
+						["coord"] = { 35.8, 51.2, STORMSONG_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["maps"] = { 942 },	-- Stormsong Valley
+						["maps"] = { STORMSONG_VALLEY },
 					}),
 					crit(3, {	-- Drustvar
 						["coord"] = { 40.2, 47.7, DRUSTVAR },
@@ -1779,9 +1779,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["maps"] = { TIRAGARDE_SOUND },
 					}),
 					crit(2, {	-- Stormsong Valley
-						["coord"] = { 36.0, 51.5, 942 },
+						["coord"] = { 36.0, 51.5, STORMSONG_VALLEY },
 						["races"] = HORDE_ONLY,
-						["maps"] = { 942 },	-- Stormsong Valley
+						["maps"] = { STORMSONG_VALLEY },
 					}),
 					crit(3, {	-- Drustvar
 						["coord"] = { 40.2, 47.3, DRUSTVAR },
@@ -3462,9 +3462,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(54741, {	-- Honor the Flame — Stormsong Valley
 						["qg"] = 148932,	-- Stormsong Valley Flame Warden
-						["coord"] = { 35.8, 51.2, 942 },
+						["coord"] = { 35.8, 51.2, STORMSONG_VALLEY },
 						["timeline"] = { "added 8.0.1" },
-						["maps"] = { 942 },	-- Stormsong Valley
+						["maps"] = { STORMSONG_VALLEY },
 					}),
 					q(44613, {	-- Honor the Flame — Suramar
 						["qg"] = 114519,	-- Suramar Flame Warden
@@ -3833,9 +3833,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(54739, {	-- Desecrate this Fire! — Stormsong Valley
 						["provider"] = { "o", 316791 },	-- Alliance Bonfire
-						["coord"] = { 36.0, 51.5, 942 },
+						["coord"] = { 36.0, 51.5, STORMSONG_VALLEY },
 						["timeline"] = { "added 8.0.1" },
-						["maps"] = { 942 },	-- Stormsong Valley
+						["maps"] = { STORMSONG_VALLEY },
 					}),
 					q(11761, {	-- Desecrate this Fire! — Stranglethorn Vale
 						["provider"] = { "o", 187944 },	-- Alliance Bonfire

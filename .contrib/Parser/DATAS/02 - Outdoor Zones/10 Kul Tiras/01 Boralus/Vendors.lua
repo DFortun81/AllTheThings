@@ -417,7 +417,7 @@ _.Zones =
 								i(173736),	-- Layered Information Kernel of E-steam (looted on Alliance -- is there one for each faction, or just two of the same rep token?)
 								i(163615, {	-- Lost Sea Scroll
 									["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
-									["coord"] = { 59.2, 68.6, 942 },
+									["coord"] = { 59.2, 68.6, STORMSONG_VALLEY },
 									["g"] = {
 										q(53119, {	-- Lost Sea Scroll
 											["repeatable"] = true,

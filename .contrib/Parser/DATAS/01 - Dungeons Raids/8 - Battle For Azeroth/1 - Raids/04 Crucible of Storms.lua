@@ -5,7 +5,7 @@
 _.Instances = { tier(BFA_TIER, {
 	inst(1177, {	-- Crucible of Storms
 		["isRaid"] = true,
-		["coord"] = { 83.8, 47.0, 942 },
+		["coord"] = { 83.8, 47.0, STORMSONG_VALLEY },
 		["maps"] = {
 			1345,	-- Shrine of Shadows
 			1346,	-- Tendril of Corruption

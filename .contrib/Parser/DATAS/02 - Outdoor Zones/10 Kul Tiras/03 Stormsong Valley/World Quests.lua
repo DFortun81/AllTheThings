@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(942, {	-- Stormsong Valley
+		m(STORMSONG_VALLEY, {
 			n(-34,  {	-- World Quests
 				n(QUESTS, {
 					--[[	raw quest list to check against
@@ -78,7 +78,7 @@ _.Zones =
 					q(52165, {	-- Automated Chaos
 						["provider"] = { "n", 140315 },	-- Eddie Fixit
 						["lvl"] = { 50 },
-						["coord"] = { 36.61, 33.61, 942 },
+						["coord"] = { 36.61, 33.61, STORMSONG_VALLEY },
 						["isWorldQuest"] = true,
 					}),
 					q(52986, {	-- A Wicked Vessel
@@ -315,7 +315,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51779, {	-- Grimscowl the Harebrained
-						["coord"] = { 62.0, 73.9, 942 },
+						["coord"] = { 62.0, 73.9, STORMSONG_VALLEY },
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
@@ -740,7 +740,7 @@ _.Zones =
 					q(52126, {	-- This Little Piggy Has Sharp Tusks
 						["provider"] = { "n", 139987 },	-- Bristlespine
 						["lvl"] = { 50 },
-						["coord"] = { 42.41, 76.61, 942 },
+						["coord"] = { 42.41, 76.61, STORMSONG_VALLEY },
 						["isWorldQuest"] = true,
 						["filter"] = 101,	-- Pet Battles
 					}),
@@ -812,7 +812,7 @@ _.Zones =
 						["g"] = {
 							n(129803, {	-- Whiplash
 								["description"] = "This rare only spawns during its associated world quest.",
-								["coord"] = { 47.32, 65.81, 942 },
+								["coord"] = { 47.32, 65.81, STORMSONG_VALLEY },
 								["g"] = {
 									crit(27, {	-- Whiplash
 										["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
@@ -979,7 +979,7 @@ _.Zones =
 						{"select", "itemID", 166668},	-- Battalion Veteran's Greatcloak
 						{"finalize"},	-- Push the items to the finalized list.
 
-						{"select", "mapID", 942},	-- Stormsong Valley
+						{"select", "mapID", STORMSONG_VALLEY},
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "headerID", -34 },	-- Select the World Quests Header.
 						{"pop"},	-- Discard the World Quests Header and acquire the children.

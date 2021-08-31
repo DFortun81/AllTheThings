@@ -33,7 +33,7 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["coords"] = {
 						{ 78.0, 36.7, 862 },
-						{ 34.2, 31.8, 942 },
+						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
 				q(53766, {	-- His Eye Upon You
@@ -106,7 +106,7 @@ _.Zones =
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
 					["coords"] = {
 						{ 78.0, 36.7, 862 },
-						{ 34.2, 31.8, 942 },
+						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
 				q(54058, {	-- Unintended Consequences
@@ -114,7 +114,7 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["coords"] = {
 						{ 78.0, 36.7, 862 },
-						{ 34.2, 31.8, 942 },
+						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
 			}),

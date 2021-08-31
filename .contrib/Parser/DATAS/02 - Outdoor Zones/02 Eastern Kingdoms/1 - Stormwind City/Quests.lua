@@ -85,31 +85,31 @@ _.Zones =
 									q(55043, {	-- Fish Tales and Distant Sails
 										["sourceQuests"] = { 55039 },	-- The Master Shipwright
 										["provider"] = { "n", 150515 },	-- Cyrus Crestfall
-										["coord"] = { 59.3, 70.2, 942 },	-- Stormsong Valley
+										["coord"] = { 59.3, 70.2, STORMSONG_VALLEY },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(54708, {	-- Home, Home on the Range
 										["sourceQuests"] = { 55043 },	-- Fish Tales and Distant Sails
 										["provider"] = { "n", 150515 },	-- Cyrus Crestfall
-										["coord"] = { 58.6, 70.4, 942 },	-- Stormsong Valley
+										["coord"] = { 58.6, 70.4, STORMSONG_VALLEY },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(54721, {	-- I'm Too Old for This Ship
 										["sourceQuests"] = { 54708 },	-- Home, Home on the Range
 										["provider"] = { "n", 148870 },	-- Dorian Atwater
-										["coord"] = { 50.1, 49.8, 942 },	-- Stormsong Valley
+										["coord"] = { 50.1, 49.8, STORMSONG_VALLEY },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(54723, {	-- Covering Our Masts
 										["sourceQuests"] = { 54721 },	-- I'm Too Old for This Ship
 										["provider"] = { "n", 148870 },	-- Dorian Atwater
-										["coord"] = { 66.0, 47.4, 942 },	-- Stormsong Valley
+										["coord"] = { 66.0, 47.4, STORMSONG_VALLEY },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(54725, {	-- The Deep Ones
 										["sourceQuests"] = { 54721 },	-- I'm Too Old for This Ship
 										["provider"] = { "n", 148870 },	-- Dorian Atwater
-										["coord"] = { 66.0, 47.4, 942 },	-- Stormsong Valley
+										["coord"] = { 66.0, 47.4, STORMSONG_VALLEY },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(54726, {	-- Frame Work
@@ -118,7 +118,7 @@ _.Zones =
 											54725,	-- The Deep Ones
 										},
 										["provider"] = { "n", 148870 },	-- Dorian Atwater
-										["coord"] = { 66.0, 47.4, 942 },	-- Stormsong Valley
+										["coord"] = { 66.0, 47.4, STORMSONG_VALLEY },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(54727, {	-- Team Carry
@@ -185,19 +185,19 @@ _.Zones =
 									q(54735, {	-- A Worthy Crew
 										["sourceQuests"] = { 54734 },	-- Summons from Dorian
 										["provider"] = { "n", 148798 },	-- Lady Jaina Proudmoore
-										["coord"] = { 66.5, 44.3, 942 },	-- Stormsong Valley
+										["coord"] = { 66.5, 44.3, STORMSONG_VALLEY },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(54851, {	-- Blessing of the Tides
 										["sourceQuests"] = { 54735 },	-- A Worthy Crew
 										["provider"] = { "n", 148798 },	-- Lady Jaina Proudmoore
-										["coord"] = { 67.5, 44.7, 942 },	-- Stormsong Valley
+										["coord"] = { 67.5, 44.7, STORMSONG_VALLEY },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(53720, {	-- Allegiance of Kul Tiras
 										["sourceQuests"] = { 54851 },	-- Blessing of the Tides
 										["provider"] = { "n", 148798 },	-- Lady Jaina Proudmoore
-										["coord"] = { 71.1, 43.9, 942 },	-- Stormsong Valley
+										["coord"] = { 71.1, 43.9, STORMSONG_VALLEY },
 										["races"] = ALLIANCE_ONLY,
 										["g"] = {
 											ach(13163),	-- Allied Races: Kul Tiran

@@ -1447,7 +1447,7 @@ _.Zones =
 						863,	-- Nazmir
 						864,	-- Vol'dun
 						TIRAGARDE_SOUND,
-						942,	-- Stormsong Valley
+						STORMSONG_VALLEY,
 						862,	-- Zuldazar
 						DRUSTVAR,
 					},

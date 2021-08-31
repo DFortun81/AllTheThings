@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(942, {	-- Stormsong Valley
+		m(STORMSONG_VALLEY, {
 			filter(101,  {	-- Pet Battle
 				p(2374, {	-- Freshwater Crawler
 					["crs"] = { 143033 },	-- Freshwater Crawler

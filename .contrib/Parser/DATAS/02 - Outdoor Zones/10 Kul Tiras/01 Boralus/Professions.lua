@@ -335,7 +335,7 @@ _.Zones =
 					}),
 					q(49577, {	-- Cracking the Surface (A)
 						["provider"] = { "n", 150898 },	-- Shrine of Storms
-						["coord"] = { 60.7, 58.5, 942 },
+						["coord"] = { 60.7, 58.5, STORMSONG_VALLEY },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49574,	-- The Shrine of Storms
 						["requireSkill"] = JEWELCRAFTING,
@@ -344,7 +344,7 @@ _.Zones =
 					}),
 					q(55585, {	-- A Promising Beginning (A)
 						["provider"] = { "n", 152489 },	-- Shrine of Storms
-						["coord"] = { 60.7, 58.5, 942 },
+						["coord"] = { 60.7, 58.5, STORMSONG_VALLEY },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49577,	-- Cracking the Surface (A)
 						["requireSkill"] = JEWELCRAFTING,
@@ -735,7 +735,7 @@ _.Zones =
 					}),
 					q(53868, {	-- Saving Nine
 						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-						["coord"] = { 7.2, 24.5, 942 },
+						["coord"] = { 7.2, 24.5, STORMSONG_VALLEY },
 						["sourceQuest"] = 55214,	-- Seam Stress
 						["requireSkill"] = TAILORING,
 						["lvl"] = 120,

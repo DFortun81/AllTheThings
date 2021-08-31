@@ -391,7 +391,7 @@ _.Achievements =
 					crit(8, {	-- Drowned Goldfish
 						["itemID"] = 167709,	-- Drowned Goldfish
 						["description"] = "Found at around |cffffffff46, 50|r, at the Drowned Lands in Stormsong Valley.",
-						["coord"] = { 46.0, 50.0, 942 },
+						["coord"] = { 46.0, 50.0, STORMSONG_VALLEY },
 					}),
 					crit(9, {	-- Elusive Moonfish
 						["itemID"] = 167715,	-- Elusive Moonfish

@@ -257,51 +257,51 @@ _.ExpansionFeatures =
 						q(51532, {	-- Storming In
 							["sourceQuests"] = { 51526 },	-- The Warlord's Call
 							["provider"] = { "n", 138365 },	-- High Warlord Cromush
-							["coord"] = { 51.1, 21.1, 942 },
+							["coord"] = { 51.1, 21.1, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51643, {	-- A Wall of Iron
 							["sourceQuests"] = { 51532 },	-- Storming In
 							["provider"] = { "n", 138365 },	-- High Warlord Cromush
-							["coord"] = { 51.1, 21.1, 942 },
+							["coord"] = { 51.1, 21.1, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51536, {	-- On the Hunt
 							["sourceQuests"] = { 51643 },	-- A Wall of Iron
 							["provider"] = { "n", 138365 },	-- High Warlord Cromush
-							["coord"] = { 51.1, 21.1, 942 },
+							["coord"] = { 51.1, 21.1, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51587, {	-- Onward!
 							["sourceQuests"] = { 51536 },	-- On the Hunt
 							["provider"] = { "n", 138131 },	-- Rexxar
-							["coord"] = { 50.4, 26.2, 942 },
+							["coord"] = { 50.4, 26.2, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51674, {	-- Douse the Flames
 							["sourceQuests"] = { 51587 },	-- Onward!
 							["provider"] = { "n", 138677 },	-- Rexxar
-							["coord"] = { 51.7, 29.9, 942 },
+							["coord"] = { 51.7, 29.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51675, {	-- Hunt Them Down
 							["sourceQuests"] = { 51587 },	-- Onward!
 							["provider"] = { "n", 138688 },	-- Centurion Kaga Warmstone
-							["coord"] = { 51.7, 29.8, 942 },
+							["coord"] = { 51.7, 29.8, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51691, {	-- Almost Worth Saving
 							["sourceQuests"] = { 51587 },	-- Onward!
 							["provider"] = { "n", 138365 },	-- Centurion Kaga Warmstone
-							["coord"] = { 51.7, 29.8, 942 },
+							["coord"] = { 51.7, 29.8, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51696, {	-- Reclaiming What's Ours
 							["sourceQuests"] = {
@@ -310,16 +310,16 @@ _.ExpansionFeatures =
 								51691,	-- Almost Worth Saving
 							},
 							["provider"] = { "n", 138867 },	-- Rexxar
-							["coord"] = { 49.3, 34.3, 942 },
+							["coord"] = { 49.3, 34.3, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51753, {	-- Champion: Rexxar
 							["sourceQuests"] = { 51696 },	-- Reclaiming What's Ours
 							["provider"] = { "n", 138876 },	-- Rexxar
-							["coord"] = { 52.1, 33.7, 942 },
+							["coord"] = { 52.1, 33.7, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 							["g"] = {
 								follower(1069),	-- Rexxar
 							},
@@ -327,9 +327,9 @@ _.ExpansionFeatures =
 						q(51986, {	-- Return to Zuldazar (Stormsong Valley Foothold)
 							["sourceQuests"] = { 51753 },	-- Champion: Rexxar
 							["provider"] = { "n", 138876 },	-- Rexxar
-							["coord"] = { 52.1, 33.7, 942 },
+							["coord"] = { 52.1, 33.7, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						-- Tiragarde Sound Foothold
 						q(51800, {	-- Foothold: Tiragarde Sound
@@ -636,30 +636,30 @@ _.ExpansionFeatures =
 						q(51798, {	-- No Price Too High
 							["sourceQuests"] = { 51797 },	-- Tracking Tidesages
 							["provider"] = { "n", 138876 },	-- Rexxar
-							["coord"] = { 52.1, 33.7, 942 },
+							["coord"] = { 52.1, 33.7, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51805, {	-- They Will Know Fear
 							["sourceQuests"] = { 51798 },	-- No Price Too High
 							["provider"] = { "n", 139101 },	-- Lilian Voss
-							["coord"] = { 62.6, 31.9, 942 },
+							["coord"] = { 62.6, 31.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51818, {	-- Commander and Captain
 							["sourceQuests"] = { 51798 },	-- No Price Too High
 							["provider"] = { "n", 139098 },	-- Thomas Zelling
-							["coord"] = { 62.6, 31.9, 942 },
+							["coord"] = { 62.6, 31.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51819, {	-- Scattering Our Enemies
 							["sourceQuests"] = { 51798 },	-- No Price Too High
 							["provider"] = { "n", 139102 },	-- Rexxar
-							["coord"] = { 62.7, 31.8, 942 },
+							["coord"] = { 62.7, 31.8, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51830, {	-- Zelling's Potential
 							["sourceQuests"] = {
@@ -668,23 +668,23 @@ _.ExpansionFeatures =
 								51819,	-- Scattering Our Enemies
 							},
 							["provider"] = { "n", 139098 },	-- Thomas Zelling
-							["coord"] = { 62.6, 31.9, 942 },
+							["coord"] = { 62.6, 31.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51837, {	-- Whatever Will Be
 							["sourceQuests"] = { 51830 },	-- Zelling's Potential
 							["provider"] = { "n", 139101 },	-- Lilian Voss
-							["coord"] = { 62.6, 31.9, 942 },
+							["coord"] = { 62.6, 31.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(52122, {	-- To Be Forsaken
 							["sourceQuests"] = { 51837 },	-- Whatever Will Be
 							["provider"] = { "n", 139101 },	-- Lilian Voss
-							["coord"] = { 62.6, 31.9, 942 },
+							["coord"] = { 62.6, 31.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						-- At the Bottom of the Sea
 						q(53067, {	-- Operation: Bottom Feeder
@@ -1355,9 +1355,9 @@ _.ExpansionFeatures =
 								55052,	-- Securing Warfang Hold (Sylvanas Version)
 							},
 							["provider"] = { "n", 150690 },	-- Boss Mida
-							["coord"] = { 51.0, 32.9, 942 },
+							["coord"] = { 51.0, 32.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(55049, {	-- Communication Breakdown
 							["sourceQuests"] = {
@@ -1365,9 +1365,9 @@ _.ExpansionFeatures =
 								55052,	-- Securing Warfang Hold (Sylvanas Version)
 							},
 							["provider"] = { "n", 150690 },	-- Boss Mida
-							["coord"] = { 51.0, 32.9, 942 },
+							["coord"] = { 51.0, 32.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(55050, {	-- Tickets, Please?
 							["sourceQuests"] = {
@@ -1375,9 +1375,9 @@ _.ExpansionFeatures =
 								55052,	-- Securing Warfang Hold (Sylvanas Version)
 							},
 							["provider"] = { "n", 150691 },	-- Kazit
-							["coord"] = { 51.0, 32.8, 942 },
+							["coord"] = { 51.0, 32.8, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(55051, {	-- A Display of Power
 							["sourceQuests"] = {
@@ -1386,9 +1386,9 @@ _.ExpansionFeatures =
 								55050,	-- Tickets, Please?
 							},
 							["provider"] = { "n", 150690 },	-- Boss Mida
-							["coord"] = { 51.0, 32.9, 942 },
+							["coord"] = { 51.0, 32.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 942 },	-- Stormsong Valley
+							["maps"] = { STORMSONG_VALLEY },
 						}),
 						-- Baine's Rescue
 						q(55778, {	-- Visions of Danger

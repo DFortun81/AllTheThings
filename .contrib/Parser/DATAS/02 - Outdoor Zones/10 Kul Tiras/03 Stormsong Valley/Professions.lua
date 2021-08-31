@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(942, {	-- Stormsong Valley
+		m(STORMSONG_VALLEY, {
 			n(-38, {	-- Professions
 				prof(HERBALISM, {
 					-- Siren's Pollen
@@ -55,7 +55,7 @@ _.Zones =
 				prof(JEWELCRAFTING, {
 					q(55579, {	-- Cracking the Surface (H)
 						["provider"] = { "n", 150898 },	-- Shrine of Storms
-						["coord"] = { 60.7, 58.5, 942 },
+						["coord"] = { 60.7, 58.5, STORMSONG_VALLEY },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49599,	-- The Missing Chapter (H)
 						["requireSkill"] = JEWELCRAFTING,

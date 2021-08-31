@@ -1421,13 +1421,13 @@ _.ExpansionFeatures =
 						q(55088, {	-- Lost in the Field
 							["sourceQuests"] = { 55179 },	-- Retaliation Coordination
 							["provider"] = { "n", 150637 },	-- Kelsey Steelspark
-							["coord"] = { 48.2, 41.4, 942 },	-- Stormsong Valley
+							["coord"] = { 48.2, 41.4, STORMSONG_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55182, {	-- Reassembly Required
 							["sourceQuests"] = { 55179 },	-- Retaliation Coordination
 							["provider"] = { "n", 150637 },	-- Kelsey Steelspark
-							["coord"] = { 48.2, 41.4, 942 },	-- Stormsong Valley
+							["coord"] = { 48.2, 41.4, STORMSONG_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55183, {	-- Seeking Higher Ground
@@ -1436,25 +1436,25 @@ _.ExpansionFeatures =
 								55182,	-- Reassembly Required
 							},
 							["provider"] = { "n", 150637 },	-- Kelsey Steelspark
-							["coord"] = { 48.2, 41.4, 942 },	-- Stormsong Valley
+							["coord"] = { 48.2, 41.4, STORMSONG_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55185, {	-- Listen Up!
 							["sourceQuests"] = { 55183 },	-- Seeking Higher Ground
 							["provider"] = { "n", 150637 },	-- Kelsey Steelspark
-							["coord"] = { 52.1, 39.2, 942 },	-- Stormsong Valley
+							["coord"] = { 52.1, 39.2, STORMSONG_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55089, {	-- Shaw's Shank Redemption
 							["sourceQuests"] = { 55185 },	-- Listen Up!
 							["provider"] = { "n", 150637 },	-- Kelsey Steelspark
-							["coord"] = { 52.1, 39.2, 942 },	-- Stormsong Valley
+							["coord"] = { 52.1, 39.2, STORMSONG_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55090, {	-- A Gathering of Foes
 							["sourceQuests"] = { 55089 },	-- Shaw's Shank Redemption
 							["provider"] = { "n", 150640 },	-- Master Mathias Shaw
-							["coord"] = { 48.8, 32.8, 942 },	-- Stormsong Valley
+							["coord"] = { 48.8, 32.8, STORMSONG_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						-- Night Warrior appearance unlock

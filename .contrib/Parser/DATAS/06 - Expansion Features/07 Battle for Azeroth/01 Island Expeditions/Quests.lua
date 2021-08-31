@@ -454,7 +454,7 @@ _.ExpansionFeatures =
 				}),
 				i(163615, {	-- Lost Sea Scroll [Alliance]
 					["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
-					["coord"] = { 59.2, 68.6, 942 },
+					["coord"] = { 59.2, 68.6, STORMSONG_VALLEY },
 					["g"] = {
 						q(53119, {	-- Lost Sea Scroll
 							["repeatable"] = true,

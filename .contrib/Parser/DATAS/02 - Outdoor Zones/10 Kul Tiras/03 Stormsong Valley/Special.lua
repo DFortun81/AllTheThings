@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(942, {	-- Stormsong Valley
+		m(STORMSONG_VALLEY, {
 			n(-77, {	-- Special
 				i(163699, {	-- Annealed Honey Amulet
 					["description"] = "Obtain an |cFFFfffffAnnealed Honey Amulet|r from mobs in the Mildenhall Meadery area in Stormsong Valley (|cFFFfffff69.2, 68.8|r).  It has a low droprate, so be patient!\n\nTrack down Rosaline Mildenhall in Boralus, listen to her story, give her the amulet, and accept the letter she gives you.\n\nRosaline can be found in one of the following locations: (|cFFFfffff51.5, 48.0|r), (|cFFFfffff55.5, 62.5|r), (|cFFFfffff58.1, 66.3|r), or (|cFFFfffff72.4, 73.3|r).  If you can't enter the building to speak to her, you can use /tar and set an 'interact with target' keybind.\n",
@@ -27,7 +27,7 @@ _.Zones =
 				}),
 				q(53347, {	-- Bumbles the Bee
 					["provider"] = { "n", 131793 },	-- Ancel Mildenhall
-					["coord"] = { 68.8, 65.2, 942 },
+					["coord"] = { 68.8, 65.2, STORMSONG_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53371, {	-- Let's Bee Friends
@@ -35,7 +35,7 @@ _.Zones =
 					["description"] = "Complete this daily quest 7 times to receive the Bumbles pet in your mailbox.",
 					["provider"] = { "n", 132647 },	-- Ancel Mildenhall
 					["isDaily"] = true,
-					["coord"] = { 71.0, 69.2, 942 },
+					["coord"] = { 71.0, 69.2, STORMSONG_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						ach(13062, {	-- Let's Bee Friends

@@ -1542,11 +1542,11 @@ _.Holidays =
 							53811,	-- Children's Week
 						},
 						["coords"] = {
-							{ 72.57, 49.94, 942 },	-- Shrine of the Storm View
+							{ 72.57, 49.94, STORMSONG_VALLEY },	-- Shrine of the Storm View
 						},
 						["maps"] = {
 							1161,	-- Boralus
-							942,	-- Stormsong Valley
+							STORMSONG_VALLEY,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
