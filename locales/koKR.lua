@@ -1541,7 +1541,7 @@ for key,value in pairs({
 	[213748] = "판다렌 의식용 돌",	-- Pandaren Ritual Stone
 	[213749] = "은둔 고수의 봉",	-- Staff of the Hidden Master
 	[213750] = "사우록 돌 서판",	-- Saurok Stone Tablet
-	--TODO: [213751] = "Sprite's Cloth Chest",	-- Sprite's Cloth Chest
+	[213751] = "요마의 헝겊 궤짝",	-- Sprite's Cloth Chest
 	[213765] = "런 윈의 서판",	-- Tablet of Ren Yun
 	[213767] = "숨겨진 보물",	-- Hidden Treasure
 	--TODO: [213768] = "Hozen Warrior Spear",	-- Hozen Warrior Spear
@@ -1561,7 +1561,7 @@ for key,value in pairs({
 	[213962] = "속전속결의 칼날바람 단검",	-- Wind-Reaver's Dagger of Quick Strikes
 	[213964] = "말릭의 튼튼한 창",	-- Malik's Stalwart Spear
 	[213966] = "호박석 속의 목걸이",	-- Amber Encased Necklace
-	--TODO: [213967] = "Blade of the Prime",	-- Blade of the Prime
+	[213967] = "시초자의 검",	-- Blade of the Prime
 	[213968] = "카로즈의 들끓는 칼",	-- Swarming Cleaver of Ka'roz
 	[213969] = "변환의 해부자 지팡이",	-- Dissector's Staff of Mutation
 	[213970] = "피에 젖은 껍질 조각",	-- Bloodsoaked Chitin Fragment
@@ -1748,7 +1748,7 @@ for key,value in pairs({
 	[231103] = "약탈당한 전리품",	-- Raided Loot
 	[231644] = "뿔 달린 해골",	-- Horned Skull
 	[231903] = "곱슬수염의 보고서",	-- Razzlebeard's Report
-	--TODO: [231918] = "Laanda's Scroll",	-- Laanda's Scroll
+	[231918] = "랜다의 두루마리",	-- Laanda's Scroll
 	[232066] = "가라앉은 보물",	-- Sunken Treasure
 	[232067] = "도둑맞은 보물",	-- Stolen Treasure
 	[232090] = "스파크의 도난당한 보급품",	-- Spark's Stolen Supplies
@@ -1828,7 +1828,7 @@ for key,value in pairs({
 	[233526] = "고대 티탄 궤짝",	-- Ancient Titan Chest
 	[233532] = "뼈를 깎아 만든 단검",	-- Bone-Carved Dagger
 	[233539] = "제네다르 파편",	-- Genedar Debris
-	--TODO: [233549] = "Genedar Debris",	-- Genedar Debris
+	[233549] = "제네다르 파편",	-- Genedar Debris
 	[233550] = "알려지지 않은 석화된 알",	-- Unknown Petrified Egg
 	[233551] = "제네다르 파편",	-- Genedar Debris
 	[233552] = "오래된 돌 단지",	-- Aged Stone Container
@@ -1846,7 +1846,7 @@ for key,value in pairs({
 	--TODO: [233623] = "Adventurer's Pouch",	-- Adventurer's Pouch
 	[233626] = "회색구렁일족 뼈무덤",	-- Grizzlemaw's Bonepile
 	[233633] = "사용하지 않은 목재 더미",	-- Unused Wood Pile
-	--TODO: [233645] = "Warsong Helm",	-- Warsong Helm
+	[233645] = "전쟁노래 투구",	-- Warsong Helm
 	[233650] = "모험가 철퇴",	-- Adventurer's Mace
 	[233651] = "잃어버린 펜던트",	-- Lost Pendant
 	--TODO: [233658] = "Adventurer's Pouch",	-- Adventurer's Pouch
@@ -1928,7 +1928,7 @@ for key,value in pairs({
 	[236279] = "오래된 돌 단지",	-- Aged Stone Container
 	[236280] = "고대 티탄 궤짝",	-- Ancient Titan Chest
 	[236282] = "흑요석 수정 결정체",	-- Obsidian Crystal Formation
-	--TODO: [236284] = "Ancient Ogre Cache",	-- Ancient Ogre Cache
+	[236284] = "고대 오우거 보관함",	-- Ancient Ogre Cache
 	[236285] = "오래된 돌 단지",	-- Aged Stone Container
 	[236288] = "고대 티탄 궤짝",	-- Ancient Titan Chest
 	[236289] = "오래된 돌 단지",	-- Aged Stone Container
@@ -2343,7 +2343,7 @@ for key,value in pairs({
 	[257999] = "각인 기법: 고요한 정신의 고서",	-- Technique: Tome of the Tranquil Mind
 	[258690] = "작은 보물 상자",	-- Small Treasure Chest
 	[258978] = "물에 젖은 고서",	-- Waterlogged Tome
-	--TODO: [258979] = "Fel-Ravaged Tome",	-- Fel-Ravaged Tome
+	[258979] = "지옥 마력에 훼손된 고서",	-- Fel-Ravaged Tome
 	[258980] = "저주받은 고서",	-- Cursed Tome
 	[259806] = "사랑의 묘약 조제법",	-- Love Potion Recipe
 	[259870] = "호드 화톳불",	-- Horde Bonfire
@@ -2353,7 +2353,7 @@ for key,value in pairs({
 	[265532] = "이동술 신호 장치",	-- Telemancy Beacon
 	--TODO: [266289] = "Time Lost Chest",	-- Time Lost Chest
 	[266851] = "모조 생명체의 마법봉",	-- Wand of Simulated Life
-	--TODO: [268478] = "Battered Trinket",	-- Battered Trinket
+	[268478] = "문드러진 장신구",	-- Battered Trinket
 	[268551] = "수상한 고룡혓바닥 보관함",	-- Curious Wyrmtongue Cache
 	[268753] = "작은 보물 상자",	-- Small Treasure Chest
 	[269064] = "작은 보물 상자",	-- Small Treasure Chest
@@ -2364,15 +2364,15 @@ for key,value in pairs({
 	[271706] = "사냥꾼의 판",	-- Hunters' Board
 	[271849] = "에레다르 전쟁 물자",	-- Eredar War Supplies
 	--TODO: [271850] = "Eredar War Supplies",	-- Eredar War Supplies
-	--TODO: [272039] = "|cFFFFFFFFStep 2:|r Inconspicuous Note",	-- |cFFFFFFFFStep 2:|r Inconspicuous Note
+	[272039] = "|cFFFFFFFFStep 2:|r 눈에 띄지 않는 쪽지",	-- |cFFFFFFFFStep 2:|r Inconspicuous Note
 	--TODO: [272046] = "|cFFFFFFFFStep 3:|r Mind Larva",	-- |cFFFFFFFFStep 3:|r Mind Larva
-	--TODO: [272061] = "|cFFFFFFFFStep 4:|r Inconspicuous Note",	-- |cFFFFFFFFStep 4:|r Inconspicuous Note
+	[272061] = "|cFFFFFFFFStep 4:|r 눈에 띄지 않는 쪽지",	-- |cFFFFFFFFStep 4:|r Inconspicuous Note
 	--TODO: [272163] = "|cFFFFFFFFStep 5:|r Strange Skull",	-- |cFFFFFFFFStep 5:|r Strange Skull
-	--TODO: [272165] = "|cFFFFFFFFStep 6:|r Inconspicuous Note",	-- |cFFFFFFFFStep 6:|r Inconspicuous Note
-	--TODO: [272172] = "|cFFFFFFFFStep 7:|r Inconspicuous Note",	-- |cFFFFFFFFStep 7:|r Inconspicuous Note
+	[272165] = "|cFFFFFFFFStep 6:|r 눈에 띄지 않는 쪽지",	-- |cFFFFFFFFStep 6:|r Inconspicuous Note
+	[272172] = "|cFFFFFFFFStep 7:|r 눈에 띄지 않는 쪽지",	-- |cFFFFFFFFStep 7:|r Inconspicuous Note
 	[272179] = "시장의 게시판",	-- Mayor's Bulletin
-	--TODO: [272181] = "|cFFFFFFFFStep 8:|r Inconspicuous Note",	-- |cFFFFFFFFStep 8:|r Inconspicuous Note
-	--TODO: [272220] = "|cFFFFFFFFStep 9:|r Inconspicuous Note",	-- |cFFFFFFFFStep 9:|r Inconspicuous Note
+	[272181] = "|cFFFFFFFFStep 8:|r 눈에 띄지 않는 쪽지",	-- |cFFFFFFFFStep 8:|r Inconspicuous Note
+	[272220] = "|cFFFFFFFFStep 9:|r 눈에 띄지 않는 쪽지",	-- |cFFFFFFFFStep 9:|r Inconspicuous Note
 	--TODO: [272270] = "|cFFFFFFFFStep 10:|r Puzzler's Desire",	-- |cFFFFFFFFStep 10:|r Puzzler's Desire
 	[272422] = "젠틀의 마법책",	-- Gentle's Spellbook
 	--TODO: [272455] = "Eredar War Supplies",	-- Eredar War Supplies
@@ -2395,7 +2395,7 @@ for key,value in pairs({
 	[273524] = "군단 전쟁 물자",	-- Legion War Supplies
 	[273527] = "군단 전쟁 물자",	-- Legion War Supplies
 	[273528] = "군단 전쟁 물자",	-- Legion War Supplies
-	--TODO: [273533] = "Legion War Supplies",	-- Legion War Supplies
+	[273533] = "군단 전쟁 물자",	-- Legion War Supplies
 	[273535] = "군단 전쟁 물자",	-- Legion War Supplies
 	[273538] = "군단 전쟁 물자",	-- Legion War Supplies
 	[273814] = "칼날 달린 부적",	-- Bladed Charm
@@ -2421,7 +2421,7 @@ for key,value in pairs({
 	[277199] = "풍파에 시달린 일자리 목록",	-- Weathered Job List
 	[277204] = "잊혀진 군단 보급품",	-- Forgotten Legion Supplies
 	[277205] = "고대 군단 전쟁 보관함",	-- Ancient Legion War Cache
-	--TODO: [277206] = "Fel-Bound Chest",	-- Fel-Bound Chest
+	[277206] = "지옥결속 상자",	-- Fel-Bound Chest
 	--TODO: [277207] = "Legion Treasure Hoard",	-- Legion Treasure Hoard
 	--TODO: [277208] = "Timeworn Fel Chest",	-- Timeworn Fel Chest
 	--TODO: [277327] = "Augari-Runed Chest",	-- Augari-Runed Chest
@@ -2673,8 +2673,8 @@ for key,value in pairs({
 	[326396] = "빛나는 비전 상자",	-- Glowing Arcane Trunk
 	[326397] = "빛나는 비전 상자",	-- Glowing Arcane Trunk
 	[326398] = "빛나는 비전 상자",	-- Glowing Arcane Trunk
-	--TODO: [326399] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
-	--TODO: [326400] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
+	[326399] = "빛나는 비전 상자",	-- Glowing Arcane Trunk
+	[326400] = "빛나는 비전 상자",	-- Glowing Arcane Trunk
 	[326401] = "비전 상자",	-- Arcane Chest
 	[326402] = "비전 상자",	-- Arcane Chest
 	[326403] = "비전 상자",	-- Arcane Chest
@@ -2694,7 +2694,7 @@ for key,value in pairs({
 	[326417] = "비전 상자",	-- Arcane Chest
 	[326418] = "비전 상자",	-- Arcane Chest
 	[326419] = "비전 상자",	-- Arcane Chest
-	--TODO: [326588] = "Azerite Weapons Cache",	-- Azerite Weapons Cache
+	[326588] = "아제라이트 무기 보관함",	-- Azerite Weapons Cache
 	[327170] = "무기 선반",	-- Weapon Rack
 	[327230] = "젤리 광맥",	-- Jelly Deposit
 	[327407] = "귀한 오우거 보관함",	-- Precious Ogre Stash
@@ -2706,12 +2706,12 @@ for key,value in pairs({
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
 	[329641] = "현상 수배: 정크브랫과 로트로그",	-- Wanted: Junkbrat and Roadtrogg
-	--TODO: [329783] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
+	[329783] = "빛나는 비전 상자",	-- Glowing Arcane Trunk
 	[329805] = "이상한 수정",	-- Strange Crystal
-	[329918] = "가시멧돼지 보물",	-- Quilboar Treasure
+	[329918] = "가시멧돼지 보물",	-- Quilboar Treasures
 	[329919] = "도둑맞은 보급품",	-- Stolen Supplies
 	[330627] = "위험 표지판",	-- Danger Sign
-	--TODO: [332220] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
+	[332220] = "빛나는 비전 상자",	-- Glowing Arcane Trunk
 	[332568] = "수정 호랑이 조각상",	-- Crystalline Cat Figurine
 	[332569] = "수정 호랑이 조각상",	-- Crystalline Cat Figurine
 	[332570] = "수정 호랑이 조각상",	-- Crystalline Cat Figurine
@@ -2781,7 +2781,7 @@ for key,value in pairs({
 	[352596] = "싹트는 증식물",	-- Sprouting Growth
 	[352703] = "수확물",	-- The Harvest
 	[352754] = "은 금고",	-- Silver Strongbox
-	--TODO: [353019] = "Silver Strongbox",	-- Silver Strongbox
+	[353019] = "은 금고",	-- Silver Strongbox
 	[353205] = "은 금고",	-- Silver Strongbox
 	[353231] = "뼈결속 상자",	-- Bonebound Chest
 	[353232] = "귀신나무 상자",	-- Bleakwood Chest
@@ -2802,8 +2802,8 @@ for key,value in pairs({
 	[353333] = "페어리 보관함",	-- Faerie Stash
 	[353380] = "할리스의 도시락",	-- Halis's Lunch Pail
 	[353472] = "찬란한 검",	-- Radiant Sword
-	--TODO: [353500] = "Silver Strongbox",	-- Silver Strongbox
-	--TODO: [353503] = "Silver Strongbox",	-- Silver Strongbox
+	[353500] = "은 금고",	-- Silver Strongbox
+	[353503] = "은 금고",	-- Silver Strongbox
 	[353516] = "은 금고",	-- Silver Strongbox
 	[353626] = "잠긴 공구상자",	-- Locked Toolbox
 	[353627] = "최전선 전투식량",	-- Battlefront Rations

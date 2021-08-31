@@ -2708,7 +2708,7 @@ for key,value in pairs({
 	[329641] = "Avis de recherche : Cachal et Troggeur",	-- Wanted: Junkbrat and Roadtrogg
 	[329783] = "Malle arcanique luisante",	-- Glowing Arcane Trunk
 	[329805] = "Cristal étrange",	-- Strange Crystal
-	[329918] = "Trésors hurans",	-- Quilboar Treasure
+	[329918] = "Trésors hurans",	-- Quilboar Treasures
 	[329919] = "Fournitures volées",	-- Stolen Supplies
 	[330627] = "Panneau d’avertissement",	-- Danger Sign
 	[332220] = "Malle arcanique luisante",	-- Glowing Arcane Trunk

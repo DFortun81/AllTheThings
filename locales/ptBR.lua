@@ -2709,7 +2709,7 @@ for key,value in pairs({
 	[329641] = "Procura-se: Junkbrat e Roadtrogg",	-- Wanted: Junkbrat and Roadtrogg
 	--TODO: [329783] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
 	[329805] = "Cristal Estranho",	-- Strange Crystal
-	[329918] = "Tesouros Javatuscos",	-- Quilboar Treasure
+	[329918] = "Tesouros Javatuscos",	-- Quilboar Treasures
 	[329919] = "Suprimentos Roubados",	-- Stolen Supplies
 	[330627] = "Placa de Perigo",	-- Danger Sign
 	--TODO: [332220] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
@@ -2896,7 +2896,7 @@ for key,value in pairs({
 	[355947] = "Esconderijo de Glutharn",	-- Glutharn's Stash
 	[356555] = "Colar de Eurídea",	-- Eurydea's Necklace
 	--TODO: [356693] = "Baroness Vashj's Extravagant Tribute",	-- Baroness Vashj's Extravagant Tribute
-	--TODO: [356697] = "Alexandros Mograine's Extravagant Tribute",	-- Alexandros Mograine's Extravagant Tribute
+	[356697] = "Tributo Extravagante de Alexandros Mograine",	-- Alexandros Mograine's Extravagant Tribute
 	[356700] = "Tributo Extravagante do Grão-mestre Vole",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Tributo Extravagante do Arquiteto da Peste Marileth",	-- Plague Deviser Marileth's Extravagant Tribute
 	[356709] = "Tributo Extravagante da Lady Lunamora",	-- Lady Moonberry's Extravagant Tribute

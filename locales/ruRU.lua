@@ -2696,7 +2696,7 @@ for key,value in pairs({
 	[329641] = "Разыскиваются: Крысанчик и Турботрогг",	-- Wanted: Junkbrat and Roadtrogg
 	[329783] = "Светящийся чародейский сундук",	-- Glowing Arcane Trunk
 	[329805] = "Странный кристалл",	-- Strange Crystal
-	[329918] = "Сокровища свинобразов",	-- Quilboar Treasure
+	[329918] = "Сокровища свинобразов",	-- Quilboar Treasures
 	[329919] = "Украденные припасы",	-- Stolen Supplies
 	[330627] = "Знак \"Опасность!\"",	-- Danger Sign
 	[332220] = "Светящийся чародейский сундук",	-- Glowing Arcane Trunk
