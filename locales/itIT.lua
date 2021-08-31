@@ -2780,7 +2780,7 @@ for key,value in pairs({
 	[352520] = "Medaglione dell'Orgoglio",	-- Medallion of Pride
 	[352596] = "Crescita Germogliante",	-- Sprouting Growth
 	[352703] = "La Mietitura",	-- The Harvest
-	--TODO: [352754] = "Silver Strongbox",	-- Silver Strongbox
+	[352754] = "Forziere d'Argento",	-- Silver Strongbox
 	[353019] = "Forziere d'Argento",	-- Silver Strongbox
 	[353205] = "Forziere d'Argento",	-- Silver Strongbox
 	[353231] = "Cassa Legaossa",	-- Bonebound Chest
@@ -2807,7 +2807,7 @@ for key,value in pairs({
 	[353516] = "Forziere d'Argento",	-- Silver Strongbox
 	[353626] = "Cassetta degli Attrezzi Chiusa",	-- Locked Toolbox
 	[353627] = "Razioni del Fronte di Battaglia",	-- Battlefront Rations
-	--TODO: [353643] = "Silver Strongbox",	-- Silver Strongbox
+	[353643] = "Forziere d'Argento",	-- Silver Strongbox
 	[353645] = "Diario di Marileth",	-- Marileth's Journal
 	[353650] = "Forziere Dorato del Factotum",	-- Steward's Golden Chest
 	[353681] = "Baccello della Luce Lunare",	-- Lunarlight Pod
