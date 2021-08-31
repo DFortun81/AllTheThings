@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(ZANDALAR, {
-		m(864, {	-- Vol'dun
+		m(VOLDUN, {
 			n(-226,    {	-- World Drops
 				["maps"] = {
 					DRUSTVAR,

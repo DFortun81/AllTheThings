@@ -7,7 +7,7 @@ _.Zones =
 	m(KULTIRAS, {
 		m(DRUSTVAR, {
 			n(-226, {	-- World Drops
-				["maps"] = { 864 },	-- Voldun [During Assaults]
+				["maps"] = { VOLDUN },	-- During Assaults
 				["g"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 					--Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate
 					--Note: Commented out items are because they were in at one point, but then removed later on.  Might be patched in on release date

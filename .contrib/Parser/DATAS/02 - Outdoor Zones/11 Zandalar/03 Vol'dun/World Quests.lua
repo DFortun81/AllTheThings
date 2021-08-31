@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(ZANDALAR, {
-		m(864, {	-- Vol'dun
+		m(VOLDUN, {
 			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(52798, {	-- A Few More Charges
@@ -139,7 +139,7 @@ _.Zones =
 								["description"] = "This rare is only up when its associated world quest is active.",
 								["repeatable"] = true,
 								["questID"] = 50663,
-								["coord"] = { 29.78, 46.47, 864 },
+								["coord"] = { 29.78, 46.47, VOLDUN },
 								["g"] = {
 									i(161044),	-- Tideflat Brute's Greatbelt
 								},
@@ -240,7 +240,7 @@ _.Zones =
 								["description"] = "This rare is only up when its associated world quest is active.",
 								["repeatable"] = true,
 								["questID"] = 51065,
-								["coord"] = { 53.60, 35.01, 864 },
+								["coord"] = { 53.60, 35.01, VOLDUN },
 								["g"] = {
 									i(162612),	-- Cobra Priest's Headdress
 								},
@@ -287,8 +287,8 @@ _.Zones =
 								["description"] = "This rare is only up when its associated world quest is active.",
 								["questID"] = 50362,
 								["coords"] = {
-									{ 57.6, 6.40, 864 },
-									{ 59.6, 8.80, 864 },
+									{ 57.6, 6.40, VOLDUN },
+									{ 59.6, 8.80, VOLDUN },
 								},
 								["g"] = {
 									i(160972),	-- Herculean Golden Sword
@@ -401,7 +401,7 @@ _.Zones =
 								["description"] = "This rare is only up when its associated world quest is active.",
 								["repeatable"] = true,
 								["questID"] = 50666,
-								["coord"] = { 37.41, 88.71, 864 },
+								["coord"] = { 37.41, 88.71, VOLDUN },
 								["g"] = {
 									i(162616),	-- Master Dinomancer's Tunic
 								},
@@ -787,7 +787,7 @@ _.Zones =
 						{"select", "itemID", 166673},	-- Devoted Lookout's Windcloak
 						{"finalize"},	-- Push the items to the finalized list.
 
-						{"select", "mapID", 864},	-- Vol'dun
+						{"select", "mapID", VOLDUN},
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "headerID", -34 },	-- Select the World Quests Header.
 						{"pop"},	-- Discard the World Quests Header and acquire the children.

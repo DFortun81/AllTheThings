@@ -379,7 +379,7 @@ _.Zones =
 					}),
 					q(49581, {	-- Sun-Speckled Dunes
 						["provider"] = { "n", 150895 },	-- Shrine of the Sands
-						["coord"] = { 44.2, 38.0, 864 },
+						["coord"] = { 44.2, 38.0, VOLDUN },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49588,	-- The Shrine of the Sands
 						["requireSkill"] = JEWELCRAFTING,
@@ -388,7 +388,7 @@ _.Zones =
 					}),
 					q(55594, {	-- Polished Up (H)
 						["provider"] = { "n", 152493 },	-- Shrine of the Sands
-						["coord"] = { 44.2, 38.0, 864 },
+						["coord"] = { 44.2, 38.0, VOLDUN },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49581,	-- Sun-Speckled Dunes
 						["requireSkill"] = JEWELCRAFTING,

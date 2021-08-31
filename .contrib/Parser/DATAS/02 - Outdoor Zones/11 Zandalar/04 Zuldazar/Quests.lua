@@ -1445,7 +1445,7 @@ _.Zones =
 					},
 					["maps"] = {
 						NAZMIR,
-						864,	-- Vol'dun
+						VOLDUN,
 						TIRAGARDE_SOUND,
 						STORMSONG_VALLEY,
 						ZULDAZAR,

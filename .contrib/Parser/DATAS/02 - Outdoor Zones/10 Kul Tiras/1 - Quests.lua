@@ -86,7 +86,7 @@ _.Zones =
 				q(54126, {	-- Twist the Knife
 					["sourceQuests"] = { 53762 },	-- The Tempest Crown
 					["provider"] = { "n", 146384 },	-- Xal'atath
-					["coord"] = { 53.0, 13.6, 864 },
+					["coord"] = { 53.0, 13.6, VOLDUN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53760, {	-- Unintended Consequences

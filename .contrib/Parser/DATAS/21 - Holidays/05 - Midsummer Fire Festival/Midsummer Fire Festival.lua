@@ -1078,9 +1078,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["maps"] = { NAZMIR },
 					}),
 					crit(3, {	-- Vol'dun
-						["coord"] = { 55.9, 47.4, 864 },
+						["coord"] = { 55.9, 47.4, VOLDUN },
 						["races"] = ALLIANCE_ONLY,
-						["maps"] = { 864 },	-- Vol'dun
+						["maps"] = { VOLDUN },
 					}),
 				},
 			}),
@@ -1749,9 +1749,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["maps"] = { NAZMIR },
 					}),
 					crit(3, {	-- Vol'dun
-						["coord"] = { 56.0, 47.8, 864 },
+						["coord"] = { 56.0, 47.8, VOLDUN },
 						["races"] = HORDE_ONLY,
-						["maps"] = { 864 },	-- Vol'dun
+						["maps"] = { VOLDUN },
 					}),
 				},
 			}),
@@ -3171,9 +3171,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(54749, {	-- Desecrate this Fire! — Vol'dun
 						["provider"] = { "o", 316801 },	-- Horde Bonfire
-						["coord"] = { 55.9, 47.4, 864 },
+						["coord"] = { 55.9, 47.4, VOLDUN },
 						["timeline"] = { "added 8.0.1" },
-						["maps"] = { 864 },	-- Vol'dun
+						["maps"] = { VOLDUN },
 					}),
 					q(28918, {	-- Desecrate this Fire! — Western Plaguelands
 						["provider"] = { "o", 207990 },	-- Horde Bonfire
@@ -4287,9 +4287,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(54750, {	-- Honor the Flame — Vol'dun
 						["qg"] = 148986,    -- Vol'dun Flame Keeper
-						["coord"] = { 56.0, 47.8, 864 },
+						["coord"] = { 56.0, 47.8, VOLDUN },
 						["timeline"] = { "added 8.0.1" },
-						["maps"] = { 864 },	-- Vol'dun
+						["maps"] = { VOLDUN },
 					}),
 					q(28931, {	-- Honor the Flame — Western Plaguelands
 						["qg"] = 51604,	-- Western Plaguelands Flame Keeper

@@ -67,10 +67,10 @@ _.Instances = { tier(BFA_TIER, {
 				["isWorldQuest"] = true,
 				["questID"] = 52196,	-- Sandswept Bones (WQ)
 				["isRaid"] = true,
-				["coord"] = { 44.3, 55.5, 864 },
+				["coord"] = { 44.3, 55.5, VOLDUN },
 				["lvl"] = { 50 },
 				["maps"] = {	-- all Vol'dun maps
-					864,	-- Vol'dun
+					VOLDUN,
 					1009,	-- Atul'Aman: The Blood Font
 				},
 				["cr"] = 138794,	-- Dunegorger Kraulok

@@ -4743,11 +4743,11 @@ profession(TAILORING, {
 								{ 63.0, 35.0, DRUSTVAR },
 								{ 46.0, 38.0, DRUSTVAR },	-- Highroad Pass, SE of Aroms Stand
 								-- Voldun
-								{ 54.0, 41.0, 864 },	-- Behind a rock E of Darkwood Shoal
-								{ 50.0, 64.0, 864 },	-- East side of Atul'aman
-								{ 49.0, 84.0, 864 },	-- Redrock Lowlands
-								{ 41.0, 64.0, 864 },	-- West of Goldtusk Inn
-								{ 37.0, 87.0, 864 },	-- On the ledge, N of island off south coast
+								{ 54.0, 41.0, VOLDUN },	-- Behind a rock E of Darkwood Shoal
+								{ 50.0, 64.0, VOLDUN },	-- East side of Atul'aman
+								{ 49.0, 84.0, VOLDUN },	-- Redrock Lowlands
+								{ 41.0, 64.0, VOLDUN },	-- West of Goldtusk Inn
+								{ 37.0, 87.0, VOLDUN },	-- On the ledge, N of island off south coast
 								-- Tiragarde Sound
 								{ 85.0, 77.0, TIRAGARDE_SOUND },	-- Dock north of Freehold dungeon
 								{ 40.0, 24.0, TIRAGARDE_SOUND },

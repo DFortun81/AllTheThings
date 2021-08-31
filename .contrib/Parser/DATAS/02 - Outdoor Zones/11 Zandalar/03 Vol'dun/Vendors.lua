@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(ZANDALAR, {
-		m(864, {	-- Vol'dun
+		m(VOLDUN, {
 			n(VENDORS, {
 				n(135804, {	-- Hoarder Jena <Voldunai Emissary>
-					["coord"] = { 56.7, 49.7, 864 },
+					["coord"] = { 56.7, 49.7, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(163211, {	-- Akunda's Firesticks (TOY!)
@@ -138,7 +138,7 @@ _.Zones =
 				}),
 				n(135400, {	-- Jenoh
 					["sourceQuests"] = { 50818 },	-- A Lost Flute
-					["coord"] = { 29.5, 59.4, 864 },
+					["coord"] = { 29.5, 59.4, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(163511, {	-- Barnacled Hermit Crab
@@ -162,7 +162,7 @@ _.Zones =
 					},
 				}),
 				n(129354, {	-- Rhan'ka
-					["coord"] = { 43.5, 60.2, 864 },
+					["coord"] = { 43.5, 60.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(164983, {	-- Rhan'ka's Escape Plan (TOY!)

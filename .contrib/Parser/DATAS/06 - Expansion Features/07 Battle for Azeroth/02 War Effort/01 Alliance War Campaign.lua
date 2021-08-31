@@ -339,37 +339,37 @@ _.ExpansionFeatures =
 					--	VOL'DUN FOOTHOLD STARTS HERE
 						q(51170, {	-- Ooh Rah!
 							["provider"] = { "n", 137867 },	-- Halford Wyrmbane
-							["coord"] = { 32.8, 34.8, 864 },	-- Vol'dun
+							["coord"] = { 32.8, 34.8, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51283 },	-- Voyage to the West
 						}),
 						q(51229, {	-- Establish a Beachhead
 							["provider"] = { "n", 137008 },	-- Sergeant Ermey
-							["coord"] = { 39.6, 35.7, 864 },	-- Vol'dun
+							["coord"] = { 39.6, 35.7, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51170 },	-- Ooh Rah!
 						}),
 						q(51349, {	-- Honor Bound
 							["provider"] = { "n", 137213 },	-- Halford Wyrmbane
-							["coord"] = { 37.7, 35.7, 864 },	-- Vol'dun
+							["coord"] = { 37.7, 35.7, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51229 },	-- Establish a Beachhead
 						}),
 						q(51350, {	-- Unexpected Aid
 							["provider"] = { "n", 137337 },	-- Sergeant Ermey
-							["coord"] = { 39.0, 42.9, 864 },	-- Vol'dun
+							["coord"] = { 39.0, 42.9, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51349 },	-- Honor Bound
 						}),
 						q(51351, {	-- Poisoned Barbs
 							["provider"] = { "n", 137337 },	-- Sergeant Ermey
-							["coord"] = { 39.0, 42.9, 864 },	-- Vol'dun
+							["coord"] = { 39.0, 42.9, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51349 },	-- Honor Bound
 						}),
 						q(51366, {	-- Antidote Application
 							["provider"] = { "n", 137337 },	-- Sergeant Ermey
-							["coord"] = { 39.0, 42.9, 864 },	-- Vol'dun
+							["coord"] = { 39.0, 42.9, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								51351,	-- Poisoned Barbs
@@ -378,31 +378,31 @@ _.ExpansionFeatures =
 						}),
 						q(51369, {	-- Friends in Strange Places
 							["provider"] = { "n", 137434 },	-- Vorrik
-							["coord"] = { 38.9, 42.9, 864 },	-- Vol'dun
+							["coord"] = { 38.9, 42.9, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51366 },	-- Antidote Application
 						}),
 						q(51391, {	-- Defang the Faithless
 							["provider"] = { "n", 137537 },	-- Vorrik
-							["coord"] = { 27.2, 53.9, 864 },	-- Vol'dun
+							["coord"] = { 27.2, 53.9, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51369 },	-- Friends in Strange Places
 						}),
 						q(51394, {	-- Break the Siege
 							["provider"] = { "n", 137537 },	-- Vorrik
-							["coord"] = { 27.2, 53.9, 864 },	-- Vol'dun
+							["coord"] = { 27.2, 53.9, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51369 },	-- Friends in Strange Places
 						}),
 						q(51389, {	-- Breaking Free
 							["provider"] = { "n", 137543 },	-- Sergeant Ermey
-							["coord"] = { 27.2, 53.9, 864 },	-- Vol'dun
+							["coord"] = { 27.2, 53.9, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51369 },	-- Friends in Strange Places
 						}),
 						q(51395, {	-- The Keepers' Keys
 							["provider"] = { "n", 129519 },	-- Vorrik
-							["coord"] = { 27.5, 52.5, 864 },	-- Vol'dun
+							["coord"] = { 27.5, 52.5, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								51389,	-- Breaking Free
@@ -412,13 +412,13 @@ _.ExpansionFeatures =
 						}),
 						q(51402, {	-- Reporting In
 							["provider"] = { "n", 137543 },	-- Sergeant Ermey
-							["coord"] = { 27.0, 52.5, 864 },	-- Vol'dun
+							["coord"] = { 27.0, 52.5, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51395 },	-- The Keepers' Keys
 						}),
 						q(52008, {	-- Champion: Magister Umbric
 							["provider"] = { "n", 139568 },	-- Magister Umbric
-							["coord"] = { 37.5, 35.8, 864 },	-- Vol'dun
+							["coord"] = { 37.5, 35.8, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51402 },	-- Reporting In
 							["g"] = {
@@ -427,7 +427,7 @@ _.ExpansionFeatures =
 						}),
 						q(51969, {	-- Return to Boralus (Vol'dun)
 							["provider"] = { "n", 137213 },	-- Halford Wyrmbane
-							["coord"] = { 37.7, 35.7, 864 },	-- Vol'dun
+							["coord"] = { 37.7, 35.7, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52008 },	-- Champion: Magister Umbric
 							-- I did this foothold second and received a Glowing Azerite Crystal (250 Azerite) as my reward.
@@ -564,61 +564,61 @@ _.ExpansionFeatures =
 						}),
 						q(52027, {	-- The Vol'dun Plan
 							["provider"] = { "n", 139705 },	-- Halford Wyrmbane
-							["coord"] = { 37.7, 35.8, 864 },	-- Vol'dun
+							["coord"] = { 37.7, 35.8, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52026 },	-- Overseas Assassination
 						}),
 						q(52028, {	-- Comb the Desert
 							["provider"] = { "n", 139705 },	-- Halford Wyrmbane
-							["coord"] = { 37.7, 35.8, 864 },	-- Vol'dun
+							["coord"] = { 37.7, 35.8, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52027 },	-- The Vol'dun Plan
 						}),
 						q(52029, {	-- Dirty Work
 							["provider"] = { "n", 139719 },	-- Shandris Feathermoon
-							["coord"] = { 40.7, 47.8, 864 },	-- Vol'dun
+							["coord"] = { 40.7, 47.8, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52028 },	-- Comb the Desert
 						}),
 						q(52030, {	-- Keep Combing
 							["provider"] = { "n", 139705 },	-- Halford Wyrmbane
-							["coord"] = { 40.7, 47.8, 864 },	-- Vol'dun
+							["coord"] = { 40.7, 47.8, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52029 },	-- Dirty Work
 						}),
 						q(52031, {	-- Classic Reliquary
 							["provider"] = { "n", 139719 },	-- Shandris Feathermoon
-							["coord"] = { 44.9, 58.7, 864 },	-- Vol'dun
+							["coord"] = { 44.9, 58.7, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52030 },	-- Keep Combing
 						}),
 						q(52032, {	-- Never Stop Combing
 							["provider"] = { "n", 139705 },	-- Halford Wyrmbane
-							["coord"] = { 44.9, 58.7, 864 },	-- Vol'dun
+							["coord"] = { 44.9, 58.7, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52031 },	-- Classic Reliquary
 						}),
 						q(52035, {	-- Improvised Survival
 							["provider"] = { "n", 139705 },	-- Halford Wyrmbane
-							["coord"] = { 41.0, 72.5, 864 },	-- Vol'dun
+							["coord"] = { 41.0, 72.5, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52032 },	-- Never Stop Combing
 						}),
 						q(52034, {	-- A Message to the Zandalari
 							["provider"] = { "n", 139719 },	-- Shandris Feathermoon
-							["coord"] = { 41.0, 72.5, 864 },	-- Vol'dun
+							["coord"] = { 41.0, 72.5, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52032 },	-- Never Stop Combing
 						}),
 						q(52036, {	-- They Have Alpacas Here
 							["provider"] = { "n", 139722 },	-- Explosioneer Zoidfuse
-							["coord"] = { 41.0, 72.5, 864 },	-- Vol'dun
+							["coord"] = { 41.0, 72.5, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52032 },	-- Never Stop Combing
 						}),
 						q(52038, {	-- Splitting Up
 							["provider"] = { "n", 139705 },	-- Halford Wyrmbane
-							["coord"] = { 41.0, 72.5, 864 },	-- Vol'dun
+							["coord"] = { 41.0, 72.5, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52034,	-- A Message to the Zandalari
@@ -628,19 +628,19 @@ _.ExpansionFeatures =
 						}),
 						q(52040, {	-- Full of Arrows
 							["provider"] = { "n", 139719 },	-- Shandris Feathermoon
-							["coord"] = { 29.9, 78.5, 864 },	-- Vol'dun
+							["coord"] = { 29.9, 78.5, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52038 },	-- Splitting Up
 						}),
 						q(52039, {	-- Delayed Deathification
 							["provider"] = { "n", 139719 },	-- Shandris Feathermoon
-							["coord"] = { 29.9, 78.5, 864 },	-- Vol'dun
+							["coord"] = { 29.9, 78.5, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52038 },	-- Splitting Up
 						}),
 						q(52041, {	-- Report to Wyrmbane
 							["provider"] = { "n", 139719 },	-- Shandris Feathermoon
-							["coord"] = { 29.9, 78.5, 864 },	-- Vol'dun
+							["coord"] = { 29.9, 78.5, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52039,	-- Delayed Deathification
@@ -649,13 +649,13 @@ _.ExpansionFeatures =
 						}),
 						q(52042, {	-- The Big Boom
 							["provider"] = { "n", 139705 },	-- Halford Wyrmbane
-							["coord"] = { 39.6, 83.9, 864 },	-- Vol'dun
+							["coord"] = { 39.6, 83.9, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52041 },	-- Report to Wyrmbane
 						}),
 						q(52146, {	-- Blood on the Sand
 							["provider"] = { "n", 139705 },	-- Halford Wyrmbane
-							["coord"] = { 39.6, 83.9, 864 },	-- Vol'dun
+							["coord"] = { 39.6, 83.9, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52042 },	-- The Big Boom
 						}),

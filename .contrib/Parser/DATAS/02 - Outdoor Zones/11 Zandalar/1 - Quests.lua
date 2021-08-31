@@ -97,7 +97,7 @@ _.Zones =
 				}),
 				q(53763, {	-- Twist the Knife
 					["provider"] = { "n", 146384 },	-- Xal'atath
-					["coord"] = { 53.0, 13.6, 864 },
+					["coord"] = { 53.0, 13.6, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53762 },	-- The Tempest Crown
 				}),

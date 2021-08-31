@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(ZANDALAR, {
-		m(864, {	-- Vol'dun
+		m(VOLDUN, {
 			n(-38, {	-- Professions
 				prof(ENGINEERING, {
 					-- Tools of Trade Questline
 					q(53802, {	-- Sethrak Persuasion
 						["provider"] = { "n", 145131 },	-- Dataguru Gryzix
-						["coord"] = { 26.3, 47.3, 864 },
+						["coord"] = { 26.3, 47.3, VOLDUN },
 						["sourceQuests"] = {
 							53947,	-- In the Dunes (A)
 							53783,	-- In the Dunes (H)
@@ -21,7 +21,7 @@ _.Zones =
 					}),
 					q(53806, {	-- Heavy is the Head
 						["provider"] = { "n", 145131 },	-- Dataguru Gryzix
-						["coord"] = { 26.3, 47.3, 864 },
+						["coord"] = { 26.3, 47.3, VOLDUN },
 						["sourceQuests"] = {
 							53947,	-- In the Dunes (A)
 							53783,	-- In the Dunes (H)
@@ -31,7 +31,7 @@ _.Zones =
 					}),
 					q(54930, {	-- Mechanical Liberation
 						["provider"] = { "n", 145131 },	-- Dataguru Gryzix
-						["coord"] = { 26.3, 47.3, 864 },
+						["coord"] = { 26.3, 47.3, VOLDUN },
 						["sourceQuests"] = {
 							53947,	-- In the Dunes (A)
 							53783,	-- In the Dunes (H)
@@ -41,7 +41,7 @@ _.Zones =
 					}),
 					q(53848, {	-- Tooling Around Vol'dun
 						["provider"] = { "n", 145131 },	-- Dataguru Gryzix
-						["coord"] = { 26.3, 47.3, 864 },
+						["coord"] = { 26.3, 47.3, VOLDUN },
 						["sourceQuests"] = {
 							53802,	-- Sethrak Persuasion
 							53806,	-- Heavy is the Head
@@ -52,7 +52,7 @@ _.Zones =
 					}),
 					q(53948, {	-- Vengeful Venture (A)
 						["provider"] = { "o", 307748 },	-- Venture Co. Letter
-						["coord"] = { 26.3, 47.3, 864 },
+						["coord"] = { 26.3, 47.3, VOLDUN },
 						["sourceQuest"] = 53848,	-- Tooling Around Vol'dun
 						["requireSkill"] = ENGINEERING,
 						["races"] = ALLIANCE_ONLY,
@@ -60,7 +60,7 @@ _.Zones =
 					}),
 					q(53833, {	-- Vengeful Venture (H)
 						["provider"] = { "o", 307748 },	-- Venture Co. Letter
-						["coord"] = { 26.3, 47.3, 864 },
+						["coord"] = { 26.3, 47.3, VOLDUN },
 						["sourceQuest"] = 53848,	-- Tooling Around Vol'dun
 						["requireSkill"] = ENGINEERING,
 						["races"] = HORDE_ONLY,
@@ -71,7 +71,7 @@ _.Zones =
 					-- Akunda's Bite
 					q(51399, {	-- Foul Harvest
 						["provider"] = { "n", 137572 },	-- Patu
-						["coord"] = { 62.21, 25.81, 864 },
+						["coord"] = { 62.21, 25.81, VOLDUN },
 						["sourceQuests"] = {
 							51398,	-- An Unusual Mentor (A)
 							51432,	-- An Unusual Mentor (H)
@@ -80,7 +80,7 @@ _.Zones =
 					}),
 					q(51408, {	-- Giving Back to Nature
 						["provider"] = { "n", 137572 },	-- Patu
-						["coord"] = { 62.21, 25.81, 864 },
+						["coord"] = { 62.21, 25.81, VOLDUN },
 						["sourceQuest"] = 51399,	-- Foul Harvest
 						["requireSkill"] = HERBALISM,
 						["g"] = {
@@ -115,7 +115,7 @@ _.Zones =
 				prof(JEWELCRAFTING, {
 					q(55581, {	-- Sun-Speckled Dunes (A)
 						["provider"] = { "n", 150895 },	-- Shrine of the Sands
-						["coord"] = { 44.2, 38.0, 864 },
+						["coord"] = { 44.2, 38.0, VOLDUN },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49584,	-- The Missing Chapter (A)
 						["requireSkill"] = JEWELCRAFTING,
@@ -180,7 +180,7 @@ _.Zones =
 					}),
 					q(52055, {	-- An Ore for an Eye
 						["provider"] = { "n", 139792 },	-- Ta'mil Nadu
-						["coord"] = { 27.6, 69.8, 864 },
+						["coord"] = { 27.6, 69.8, VOLDUN },
 						["sourceQuest"] = 52053,	-- The Platinum Map
 						["requireSkill"] = MINING,
 						["races"] = HORDE_ONLY,

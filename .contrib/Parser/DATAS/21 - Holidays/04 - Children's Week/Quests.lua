@@ -782,13 +782,13 @@ _.Holidays =
 							53968,	-- The Shifting Pack
 						},
 						["maps"] = {
-							864,	-- Vol'dun
+							VOLDUN,
 							THE_GREAT_SEAL,	-- Dazar'alor
 							HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 							DAZARALOR,
 						},
 						["coords"] = {
-							{ 28.91, 88.76, 864 },	-- The Golden Isle
+							{ 28.91, 88.76, VOLDUN },	-- The Golden Isle
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
@@ -1499,15 +1499,15 @@ _.Holidays =
 							53968,	-- The Shifting Pack
 						},
 						["maps"] = {
-							864,	-- Vol'dun
+							VOLDUN,
 							THE_GREAT_SEAL,	-- Dazar'alor
 							HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 							DAZARALOR,
 						},
 						["coords"] = {
-							{ 27.01, 53.15, 864 },	-- Path to Sanctuary of the Devoted
-							{ 27.02, 51.98, 864 },	-- Path to Sanctuary of the Devoted
-							{ 26.77, 52.57, 864 },	-- Sanctuary of the Devoted
+							{ 27.01, 53.15, VOLDUN },	-- Path to Sanctuary of the Devoted
+							{ 27.02, 51.98, VOLDUN },	-- Path to Sanctuary of the Devoted
+							{ 26.77, 52.57, VOLDUN },	-- Sanctuary of the Devoted
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,

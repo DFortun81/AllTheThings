@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(ZANDALAR, {
-		m(864, {	-- Vol'dun
+		m(VOLDUN, {
 			n(QUESTS, {
 				-- TODO
 				--	while on "armed and ready," i chose the staff and it triggered quest #49684.  do the other 2 weapon choices have different quests?
@@ -19,13 +19,13 @@ _.Zones =
 						51574,	-- Freshly Squeezed
 					},
 					["provider"] = { "n", 123586 },	-- Kiro
-					["coord"] = { 56.7, 50.5, 864 },	-- Vulpera Hideaway (Vol'dun)
+					["coord"] = { 56.7, 50.5, VOLDUN },	-- Vulpera Hideaway
 					["races"] = HORDE_ONLY,
 				}),
 				q(50817, {	-- A Charming Tail
 					["sourceQuests"] = { 50818 },	-- A Lost Flute
 					["provider"] = { "n", 135400 },	-- Jenoh
-					["coord"] = { 29.5, 59.3, 864 },
+					["coord"] = { 29.5, 59.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48322, {	-- A Goldtusk Greeting
@@ -35,23 +35,23 @@ _.Zones =
 						48320,	-- The Best Kill is Overkill
 					},
 					["provider"] = { "n", 122723 },	-- Rhan'ka
-					["coord"] = { 43.4, 60.2, 864 },
+					["coord"] = { 43.4, 60.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50818, {	-- A Lost Flute
 					["provider"] = { "o", 282498 },	-- Desert Flute
-					["coord"] = { 28.9, 54.6, 864 },
+					["coord"] = { 28.9, 54.6, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50755, {	-- A Meal for Birds
 					["provider"] = { "n", 137629 },	-- Mekaru
-					["coord"] = { 54.8, 42.4, 864 },	-- The Brine Basin (Vol'dun)
+					["coord"] = { 54.8, 42.4, VOLDUN },	-- The Brine Basin
 					["races"] = HORDE_ONLY,
 				}),
 				q(49334, {	-- A Powerful Prisoner
 					["sourceQuests"] = { 47324 },	-- Unlikely Allies
 					["provider"] = { "n", 128687 },	-- Serrik
-					["coord"] = { 27.2, 53.8, 864 },	-- Terrace of the Devoted (Vol'dun)
+					["coord"] = { 27.2, 53.8, VOLDUN },	-- Terrace of the Devoted
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155457),	-- Devoted Defender's Cloak
@@ -62,13 +62,13 @@ _.Zones =
 					["sourceQuests"] = { 51062 },	-- Escaping Zem'lan
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 125904 },	-- Norah
-					["coord"] = { 38.8, 77.4, 864 },
+					["coord"] = { 38.8, 77.4, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47574, {	-- All Webbed Up
 					["sourceQuests"] = { 47965 },	-- The Ruined Temple
 					["provider"] = { "n", 134134 },	-- Tulu
-					["coord"] = { 58.5, 11.8, 864 },
+					["coord"] = { 58.5, 11.8, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49139, {	-- An Army's Arsenal
@@ -78,12 +78,12 @@ _.Zones =
 						48334,	-- They've Got Golems
 					},
 					["provider"] = { "n", 129451 },	-- Omi
-					["coord"] = { 45.3, 46.2, 864 },
+					["coord"] = { 45.3, 46.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47322, {	-- Aided Escape
 					["provider"] = { "n", 137631 },	-- Neri
-					["coord"] = { 54.6, 42.4, 864 },	-- The Brine Basin (Vol'dun)
+					["coord"] = { 54.6, 42.4, VOLDUN },	-- The Brine Basin
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155388),	-- Exiled Veteran's Treads
@@ -99,31 +99,31 @@ _.Zones =
 				q(48715, {	-- Akunda Awaits
 					["sourceQuests"] = { 48894 },	-- Trial of Truth
 					["provider"] = { "n", 127570 },	-- Bladeguard Kaja
-					["coord"] = { 53.2, 90.2, 864 },	-- Temple of Akunda (Vol'dun)
+					["coord"] = { 53.2, 90.2, VOLDUN },	-- Temple of Akunda
 					["races"] = HORDE_ONLY,
 				}),
 				q(50913, {	-- Akunda's Blessing
 					["sourceQuests"] = { 48996 },	-- Ending the Madness
 					["provider"] = { "n", 128152 },	-- Akunda
-					["coord"] = { 53.2, 91.6, 864 },	-- Temple of Akunda (Vol'dun)
+					["coord"] = { 53.2, 91.6, VOLDUN },	-- Temple of Akunda
 					["races"] = HORDE_ONLY,
 				}),
 				q(49664, {	-- Allies in Anarchy
 					["sourceQuests"] = { 50745 },	-- Infiltrating the Empire
 					["provider"] = { "n", 135172 },	-- Vorrik
-					["coord"] = { 47.9, 36.4, 864 },	-- Vorrik's Sanctum
+					["coord"] = { 47.9, 36.4, VOLDUN },	-- Vorrik's Sanctum
 					["races"] = HORDE_ONLY,
 				}),
 				q(48532, {	-- Alpacas Gone Wild
 					["sourceQuests"] = { 48530 },	-- I Heard You Lost the Herd
 					["provider"] = { "n", 126085 },	-- Mugjabu
-					["coord"] = { 42.1, 76.2, 864 },
+					["coord"] = { 42.1, 76.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51364, {	-- An Explosive Exit
 					["sourceQuests"] = { 49677 },	-- Plans for Attack
 					["provider"] = { "n", 130474 },	-- Reckless Vulpera (Nisha)
-					["coord"] = { 60.9, 32.6, 864 },
+					["coord"] = { 60.9, 32.6, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(161188),	-- Fangcaller's Staff
@@ -140,13 +140,13 @@ _.Zones =
 				q(47327, {	-- Answering Their Attacks
 					["sourceQuests"] = { 51357 },	-- Armed and Ready
 					["provider"] = { "n", 130455 },	-- Nisha
-					["coord"] = { 65.9, 36.6, 864 },	-- Shrouded Hollow (Vol'dun)
+					["coord"] = { 65.9, 36.6, VOLDUN },	-- Shrouded Hollow
 					["races"] = HORDE_ONLY,
 				}),
 				q(51357, {	-- Armed and Ready
 					["sourceQuests"] = { 47315 },	-- Into the Dunes
 					["provider"] = { "n", 130455 },	-- Nisha
-					["coord"] = { 65.9, 36.6, 864 },	-- Shrouded Hollow (Vol'dun)
+					["coord"] = { 65.9, 36.6, VOLDUN },	-- Shrouded Hollow
 					["races"] = HORDE_ONLY,
 				}),
 				q(48847, {	-- Arming the Tribe
@@ -156,18 +156,18 @@ _.Zones =
 						48850,	-- Tongo
 					},
 					["provider"] = { "n", 126576 },	-- Razgaji
-					["coord"] = { 43.3, 75.4, 864 },
+					["coord"] = { 43.3, 75.4, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50617, {	-- Atul'Aman
 					["sourceQuests"] = { 50751 },	-- Sanctuary Under Siege
 					["provider"] = { "n", 129588 },		-- Vorrik
-					["coord"] = { 27.09, 52.56, 864 },	-- Sanctuary of the Devoted
+					["coord"] = { 27.09, 52.56, VOLDUN },	-- Sanctuary of the Devoted
 					["races"] = HORDE_ONLY,
 				}),
 				q(50812, {	-- Awakened Elements
 					["provider"] = { "n", 135180 },	-- Nerin Solvis
-					["coord"] = { 26.1, 73.6, 864 },
+					["coord"] = { 26.1, 73.6, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						51991,	-- Charging the Batteries
@@ -177,20 +177,20 @@ _.Zones =
 				q(51602, {	-- Bandit Blades
 					["sourceQuests"] = { 48846 },	-- Liquid Motivation
 					["provider"] = { "n", 126576 },	-- Razgaji
-					["coord"] = { 43.3, 75.4, 864 },
+					["coord"] = { 43.3, 75.4, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48329, {	-- Beaten But Not Broken
 					["sourceQuests"] = { 50746 },	-- Crater Conquered
 					["provider"] = { "i", 158909 },	-- Beastbreaker Cage Key
-					["coord"] = { 49.1, 38.3, 864 },	-- Vol'dun
+					["coord"] = { 49.1, 38.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["cr"] = 130603,	-- Beastbreaker Hakid
 				}),
 				q(47581, {	-- Blessing of Kimbul
 					["sourceQuests"] = { 47965 },	-- The Ruined Temple
 					["provider"] = { "n", 134133 },	-- Teekcha
-					["coord"] = { 58.5, 11.8, 864 },
+					["coord"] = { 58.5, 11.8, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155450),	-- Ring of Tides
@@ -199,25 +199,25 @@ _.Zones =
 				q(50641, {	-- Break Their Ranks
 					["sourceQuests"] = { 47324 },	-- Unlikely Allies
 					["provider"] = { "n", 128696 },	-- Zissiah
-					["coord"] = { 27.2, 53.8, 864 },	-- Terrace of the Devoted (Vol'dun)
+					["coord"] = { 27.2, 53.8, VOLDUN },	-- Terrace of the Devoted
 					["races"] = HORDE_ONLY,
 				}),
 				q(49333, {	-- Building Our Arsenal
 					["provider"] = { "n", 128691 },	-- Izarn
-					["coord"] = { 32.3, 48.3, 864 },
+					["coord"] = { 32.3, 48.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50771, {	-- Calldown: Cleaner
 					["sourceQuests"] = { 50834 },	-- Keep It Down! (breadcrumb)
 					["provider"] = { "n", 135179 },	-- Merd Archfeld
-					["coord"] = { 26.2, 73.6, 864 },
+					["coord"] = { 26.2, 73.6, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51775, {	-- Camp Lastwind
 					["sourceQuests"] = { 51668 },	-- Mojambo
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 126085 },	-- Mugjabu
-					["coord"] = { 42.1, 76.2, 864 },
+					["coord"] = { 42.1, 76.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49138, {	-- Captain Gulnaku's Treasure
@@ -226,7 +226,7 @@ _.Zones =
 						51055,	-- The Yard Arm of the Law
 					},
 					["provider"] = { "o", 289728 },	-- Captain Gulnaku's Treasure Map
-					["coord"] = { 35.0, 80.4, 864 },
+					["coord"] = { 35.0, 80.4, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(163633, {	-- Captain Gulnaku's Treasure
@@ -240,12 +240,12 @@ _.Zones =
 						47871,	-- Seafaring Necessities
 					},
 					["provider"] = { "n", 139069 },	-- First Mate Redmond
-					["coord"] = { 44.6, 86.9, 864 },
+					["coord"] = { 44.6, 86.9, VOLDUN },
 				}),
 				q(51991, {	-- Charging the Batteries
 					["sourceQuests"] = { 52129 },	-- Power Problems
 					["provider"] = { "n", 140046 },	-- Rozzy
-					["coord"] = { 28.5, 68.5, 864 },
+					["coord"] = { 28.5, 68.5, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48887, {	-- Cleanse the Mind
@@ -255,25 +255,25 @@ _.Zones =
 						48991,	-- Vile Infestation
 					},
 					["provider"] = { "n", 127992 },	-- Akunda the Exalted
-					["coord"] = { 53.2, 90.2, 864 },	-- Temple of Akunda (Vol'dun)
+					["coord"] = { 53.2, 90.2, VOLDUN },	-- Temple of Akunda
 					["races"] = HORDE_ONLY,
 				}),
 				q(47874, {	-- Clearing the Fog
 					["sourceQuests"] = { 50913 },	-- Akunda's Blessing
 					["provider"] = { "n", 130660 },	-- Warguard Rakera
-					["coord"] = { 53.6, 91.6, 864 },	-- Temple of Akunda (Vol'dun)
+					["coord"] = { 53.6, 91.6, VOLDUN },	-- Temple of Akunda
 					["races"] = HORDE_ONLY,
 				}),
 				q(47943, {	-- Crab Trapping
 					["sourceQuests"] = { 51772 },	-- The Tortaka Tribe
 					["provider"] = { "n", 134128 },	-- Churka
-					["coord"] = { 61.9, 22.1, 864 },
+					["coord"] = { 61.9, 22.1, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49261, {	-- Crabby Crew Stew
 					["description"] = "Must be wearing Ashvane Garb to pick up and turn in the quest.",
 					["provider"] = { "n", 128618 },	-- Dockmaster Herrington
-					["coord"] = { 44.6, 88.2, 864 },
+					["coord"] = { 44.6, 88.2, VOLDUN },
 					-- ["races"] = HORDE_ONLY,	-- via #errors 20201105-14:19
 				}),
 				q(50746, {	-- Crater Conquered
@@ -282,13 +282,13 @@ _.Zones =
 						49665,	-- Ready to Riot
 					},
 					["provider"] = { "n", 135090 },	-- Nisha
-					["coord"] = { 46.1, 33.2, 864 },	-- Crater of Conquerors (Vol'dun)
+					["coord"] = { 46.1, 33.2, VOLDUN },	-- Crater of Conquerors
 					["races"] = HORDE_ONLY,
 				}),
 				q(48321, {	-- Creative Marketing
 					["sourceQuests"] = { 47638 },	-- Powerful Spirits
 					["provider"] = { "n", 123730 },	-- Man'zul
-					["coord"] = { 43.5, 59.8, 864 },
+					["coord"] = { 43.5, 59.8, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(160021),	-- Exiled Veteran's Waistplate
@@ -304,19 +304,19 @@ _.Zones =
 				q(48314, {	-- Creeping Death
 					["sourceQuests"] = { 47716 },	-- Searching the Ruins
 					["provider"] = { "n", 135154 },	-- Kiro
-					["coord"] = { 47.0, 75.5, 864 },	-- Zul'Ahjin (Vol'dun)
+					["coord"] = { 47.0, 75.5, VOLDUN },	-- Zul'Ahjin
 					["races"] = HORDE_ONLY,
 				}),
 				q(51145, {	-- Curse of Jani
 					["sourceQuests"] = { 51142 },	-- Pests
 					["provider"] = { "n", 136559 },	-- Jani
-					["coord"] = { 36.2, 36.8, 864 },
+					["coord"] = { 36.2, 36.8, VOLDUN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47870, {	-- Dead Men Tell No Tales
 					["sourceQuests"] = { 51773 },	-- The Ashvane Threat
 					["provider"] = { "n", 124468 },	-- Randall Redmond
-					["coord"] = { 45.6, 82.3, 864 },
+					["coord"] = { 45.6, 82.3, VOLDUN },
 					["g"] = {	-- quest is neutral, but rewards are horde-only
 						i(161168, {	-- Scorching Sands Grasps
 							["races"] = HORDE_ONLY,
@@ -376,25 +376,25 @@ _.Zones =
 				q(49141, {	-- Diplomacy and Dominance
 					["sourceQuests"] = { 50746 },	-- Crater Conquered
 					["provider"] = { "n", 135172 },	-- Vorrik
-					["coord"] = { 48.0, 36.3, 864 },	-- Vorrik's Sanctum (Vol'dun)
+					["coord"] = { 48.0, 36.3, VOLDUN },	-- Vorrik's Sanctum
 					["races"] = HORDE_ONLY,
 				}),
 				q(47501, {	-- Dirty Work for Dirty Drinks
 					["sourceQuests"] = { 47497 },	-- Meet the Goldtusk Gang
 					["provider"] = { "n", 122723 },	-- Rhan'ka
-					["coord"] = { 43.5, 60.2, 864 },
+					["coord"] = { 43.5, 60.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50748, {	-- Don't Drop It... Yet
 					["sourceQuests"] = { 50746 },	-- Crater Conquered
 					["provider"] = { "n", 135172 },	-- Vorrik
-					["coord"] = { 48.0, 36.3, 864 },	-- Vorrik's Sanctum (Vol'dun)
+					["coord"] = { 48.0, 36.3, VOLDUN },	-- Vorrik's Sanctum
 					["races"] = HORDE_ONLY,
 				}),
 				q(49676, {	-- Dressed for Battle
 					["sourceQuests"] = { 51357 },	-- Armed and Ready
 					["provider"] = { "n", 130455 },	-- Nisha
-					["coord"] = { 65.9, 36.6, 864 },	-- Shrouded Hollow (Vol'dun)
+					["coord"] = { 65.9, 36.6, VOLDUN },	-- Shrouded Hollow
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155413),	-- Lastwind Bands
@@ -414,13 +414,13 @@ _.Zones =
 						48313,	-- Nature's Remedy
 					},
 					["provider"] = { "n", 135154 },	-- Kiro
-					["coord"] = { 47.0, 75.5, 864 },	-- Zul'Ahjin (Vol'dun)
+					["coord"] = { 47.0, 75.5, VOLDUN },	-- Zul'Ahjin
 					["races"] = HORDE_ONLY,
 				}),
 				q(48996, {	-- Ending the Madness
 					["sourceQuests"] = { 48889 },	-- Repairing the Past
 					["provider"] = { "n", 138382 },	-- Akunda
-					["coord"] = { 52.2, 79.8, 864 },	-- Valley of Sorrows (Vol'dun)
+					["coord"] = { 52.2, 79.8, VOLDUN },	-- Valley of Sorrows
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(-862, {	-- Hearth of Azeroth
@@ -449,13 +449,13 @@ _.Zones =
 				q(51062, {	-- Escaping Zem'lan
 					["sourceQuests"] = { 48326 },	-- This Be Mutiny
 					["provider"] = { "n", 136779 },	-- First Mate Jamboya
-					["coord"] = { 30.2, 86.4, 864 },
+					["coord"] = { 30.2, 86.4, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48872, {	-- Expedite the Excavation
 					["sourceQuests"] = { 50536 },	-- Magic Decoder Device
 					["provider"] = { "n", 134148 },	-- Maaz
-					["coord"] = { 47.4, 72.8, 864 },	-- Zul'Ahjin (Vol'dun)
+					["coord"] = { 47.4, 72.8, VOLDUN },	-- Zul'Ahjin
 					["races"] = HORDE_ONLY,
 				}),
 				q(50596, {	-- Exterminate the Vermin
@@ -463,8 +463,8 @@ _.Zones =
 					["description"] = "Use the Scepter of Prescience in the building at 47.73 to get the snake disguise to pick up this quest.",
 					["provider"] = { "n", 134408 },	-- Foreman Jethek
 					["coords"] = {
-						{ 49.8, 74.6, 864 },	-- Zul'Ahjin (Vol'dun)
-						{ 49.8, 76.6, 864 },
+						{ 49.8, 74.6, VOLDUN },	-- Zul'Ahjin
+						{ 49.8, 76.6, VOLDUN },
 					},
 					["races"] = HORDE_ONLY,
 				}),
@@ -472,21 +472,21 @@ _.Zones =
 					["sourceQuests"] = { 48895 },	-- The Perfect Offering
 					["description"] = "This version is available before completing Ending the Madness.",
 					["provider"] = { "n", 127691 },	-- Jorak
-					["coord"] = { 52.8, 89.2, 864 },
+					["coord"] = { 52.8, 89.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49731, {	-- Fond Farewells
 					["sourceQuests"] = { 48996 },	-- Ending the Madness
 					["description"] = "This version is available after completing Ending the Madness.",
 					["provider"] = { "n", 128339 },	-- Jorak
-					["coord"] = { 52.9, 89.1, 864 },
+					["coord"] = { 52.9, 89.1, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49002, {	-- Forced Grounding
 					--	SQ needs verification.
 					["sourceQuests"] = { 50746 },	-- Crater Conquered
 					["provider"] = { "o", 278447 },	-- Faithless Trapper's Spear
-					["coord"] = { 47.1, 38.8, 864 },	-- Rakjan's Peak (Vol'dun)
+					["coord"] = { 47.1, 38.8, VOLDUN },	-- Rakjan's Peak
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(161166),	-- Faithless Skyrider's Focus
@@ -499,25 +499,25 @@ _.Zones =
 						50757,	-- Untame Slaughter
 					},
 					["provider"] = { "n", 135099 },	-- Kiro
-					["coord"] = { 55.4, 35, 864 },	-- Slithering Gulch (Vol'dun)
+					["coord"] = { 55.4, 35.0, VOLDUN },	-- Slithering Gulch
 					["races"] = HORDE_ONLY,
 				}),
 				q(51574, {	-- Freshly Squeezed
 					["sourceQuests"] = { 51364 },	-- An Explosive Exit
 					["provider"] = { "n", 122583 },	-- Meerah
-					["coord"] = { 56.7, 50.5, 864 },	-- Vulpera Hideaway (Vol'dun)
+					["coord"] = { 56.7, 50.5, VOLDUN },	-- Vulpera Hideaway
 					["races"] = HORDE_ONLY,
 				}),
 				q(49262, {	-- Gang Bustin'
 					["description"] = "Must be wearing Ashvane Garb to pick up and turn in the quest.",
 					["provider"] = { "n", 128618 },	-- Dockmaster Herrington
-					["coord"] = { 44.6, 88.2, 864 },
+					["coord"] = { 44.6, 88.2, VOLDUN },
 					-- ["races"] = HORDE_ONLY,	-- via #errors 20201105-14:19
 				}),
 				q(50775, {	-- Get Us Some Beach
 					["sourceQuests"] = { 50834 },	-- Keep It Down! (breadcrumb)
 					["provider"] = { "n", 135179 },	-- Merd Archfeld
-					["coord"] = { 26.2, 73.6, 864 },
+					["coord"] = { 26.2, 73.6, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47503, {	-- Gozda'kun the Slaver
@@ -526,44 +526,44 @@ _.Zones =
 						47498,	-- Rhan'ka's Lost Friend
 					},
 					["provider"] = { "n", 138749 },	-- Rhan'ka
-					["coord"] = { 37.4, 51.1, 864 },
+					["coord"] = { 37.4, 51.1, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48549, {	-- Grozztok the Blackheart
 					["sourceQuests"] = { 47959 },	-- The Warguard's Trail
 					["provider"] = { "n", 126696 },	-- Jorak
-					["coord"] = { 53.2, 66.2, 864 },	-- Withering Gulch (Vol'dun)
+					["coord"] = { 53.2, 66.2, VOLDUN },	-- Withering Gulch
 					["races"] = HORDE_ONLY,
 				}),
 				q(51718, {	-- Harvesting "Honey"
 					["sourceQuests"] = { 51717 },	-- The Best Honey in Vol'dun
 					["provider"] = { "n", 133833 },	-- Rikati
-					["coord"] = { 40.4, 55.3, 864 },
+					["coord"] = { 40.4, 55.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47570, {	-- Hidden Motives
 					["sourceQuests"] = { 51772 },	-- The Tortaka Tribe
 					["provider"] = { "n", 134098 },	-- Torka
-					["coord"] = { 61.9, 22.3, 864 },
+					["coord"] = { 61.9, 22.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48315, {	-- Hollow, Empty Eyes
 					["sourceQuests"] = { 50539 },	-- The Secrets of Zul'Ahjin
 					["provider"] = { "o", 281639 },	-- Crumbling Statue
-					["coord"] = { 48.8, 74.4, 864 },	-- Zul'Ahjin (Vol'dun)
+					["coord"] = { 48.8, 74.4, VOLDUN },	-- Zul'Ahjin
 					["races"] = HORDE_ONLY,
 				}),
 				q(48529, {	-- Hungry Mouths To Feed
 					["sourceQuests"] = { 51573 },	-- I've Got Your Back
 					["provider"] = { "n", 126576 },	-- Razgaji
-					["coord"] = { 43.3, 75.3, 864 },
+					["coord"] = { 43.3, 75.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(56250, {	-- I Am the Trashmaster
 					--["sourceQuests"] = { },
 					["description"] = "You need to get Trashmaster's Mantle from K.U.-J.0. boss in Mechagon for this quest.",
 					["provider"] = { "n", 136559 },	-- Jani <Loa of Scavengers>
-					["coord"] = { 36.2, 36.8, 864 },
+					["coord"] = { 36.2, 36.8, VOLDUN },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = { { "i", 168970, 1 } },	-- Trashmaster's Mantle
 					["g"] = {
@@ -574,56 +574,56 @@ _.Zones =
 				q(48530, {	-- I Heard You Lost the Herd
 					["sourceQuests"] = { 51573 },	-- I've Got Your Back
 					["provider"] = { "n", 126576 },	-- Razgaji
-					["coord"] = { 43.3, 75.3, 864 },
+					["coord"] = { 43.3, 75.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51573, {	-- I've Got Your Back
 					["sourceQuests"] = { 50794 },	-- Seeking Shelter
 					["provider"] = { "n", 126576 },	-- Razgaji
-					["coord"] = { 43.3, 75.3, 864 },
+					["coord"] = { 43.3, 75.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47939, {	-- If the Key Fits...
 					["provider"] = { "n", 128422 },	-- Keerin
-					["coord"] = { 47.5, 86.0, 864 },
+					["coord"] = { 47.5, 86.0, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49001, {	-- Inconvenient Spirits
 					["sourceQuests"] = { 48840 },	-- Ruins-Level Marketing
 					["provider"] = { "n", 129453 },	-- Kenzou
-					["coord"] = { 45.3, 46.2, 864 },
+					["coord"] = { 45.3, 46.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50745, {	-- Infiltrating the Empire
 					["sourceQuests"] = { 49662 },	-- The Missing Key
 					["provider"] = { "n", 137970 },	-- Vorrik
-					["coord"] = { 42.9, 35.7, 864 },	-- Bwoljin's Fall (Vol'dun)
+					["coord"] = { 42.9, 35.7, VOLDUN },	-- Bwoljin's Fall
 					["races"] = HORDE_ONLY,
 				}),
 				q(50703, {	-- Informing the Horde
 					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
 					["provider"] = { "n", 135133 },	-- Warguard Rakera
 					["races"] = HORDE_ONLY,
-					["coord"] = { 27, 52.6, 864 },	-- Sanctuary of the Devoted (Vol'dun)
+					["coord"] = { 27.0, 52.6, VOLDUN },	-- Sanctuary of the Devoted
 				}),
 				q(52023, {	-- Informing the Horde
 					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
 					["provider"] = { "n", 135133 },	-- Warguard Rakera
-					["coord"] = { 27.0, 52.5, 864 },
+					["coord"] = { 27.0, 52.5, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(52024, {	-- Informing the Horde
 					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
 					["provider"] = { "n", 135133 },	-- Warguard Rakera
-					["coord"] = { 27.0, 52.5, 864 },
+					["coord"] = { 27.0, 52.5, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(50750, {	-- Infuriating the Emperor
 					["sourceQuests"] = { 49003 },	-- Vengeance From Above
 					["provider"] = { "n", 135111 },	-- Vorrik
-					["coord"] = { 51.9, 28.7, 864 },	-- Skycallers' Spire (Vol'dun)
+					["coord"] = { 51.9, 28.7, VOLDUN },	-- Skycallers' Spire
 					["races"] = HORDE_ONLY,
 				}),
 				q(48888, {	-- It Springs Eternal
@@ -633,44 +633,44 @@ _.Zones =
 						48991,	-- Vile Infestation
 					},
 					["provider"] = { "n", 127992 },	-- Akunda the Exalted
-					["coord"] = { 53.2, 90.2, 864 },	-- Temple of Akunda (Vol'dun)
+					["coord"] = { 53.2, 90.2, VOLDUN },	-- Temple of Akunda
 					["races"] = HORDE_ONLY,
 				}),
 				q(47573, {	-- Jungleweb Infestation
 					["sourceQuests"] = { 47965 },	-- The Ruined Temple
 					["provider"] = { "n", 134134 },	-- Tulu
-					["coord"] = { 58.5, 11.8, 864 },
+					["coord"] = { 58.5, 11.8, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50979, {	-- Just a Nip
 					["sourceQuests"] = { 50818 },	-- A Lost Flute
 					["provider"] = { "n", 135400 },	-- Jenoh
-					["coord"] = { 29.5, 59.3, 864 },
+					["coord"] = { 29.5, 59.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50834, {	-- Keep It Down!
 					["sourceQuests"] = { 50980 },	-- My Hungry Neighbor
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 135400 },	-- Jenoh
-					["coord"] = { 29.5, 59.3, 864 },
+					["coord"] = { 29.5, 59.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47321, {	-- Knickknack Takeback
 					["sourceQuests"] = { 47320 },	-- A Balm to Calm
 					["provider"] = { "n", 123586 },	-- Kiro
-					["coord"] = { 56.7, 50.5, 864 },	-- Vulpera Hideaway (Vol'dun)
+					["coord"] = { 56.7, 50.5, VOLDUN },	-- Vulpera Hideaway
 					["races"] = HORDE_ONLY,
 				}),
 				q(48896, {	-- Knowledge of the Past
 					["sourceQuests"] = { 47874 },	-- Clearing the Fog
 					["provider"] = { "n", 130667 },	-- Warguard Rakera
-					["coord"] = { 52.8, 89.2, 864 },	-- Temple of Akunda (Vol'dun)
+					["coord"] = { 52.8, 89.2, VOLDUN },	-- Temple of Akunda
 					["races"] = HORDE_ONLY,
 				}),
 				q(48553, {	-- Let it Flow
 					["sourceQuests"] = { 51829 },	-- Ranah's Wrench
 					["provider"] = { "n", 126814 },	-- Ranah
-					["coord"] = { 53.8, 69.4, 864 },	-- Withering Gulch (Vol'dun)
+					["coord"] = { 53.8, 69.4, VOLDUN },	-- Withering Gulch
 					["races"] = HORDE_ONLY,
 				}),
 				q(49668, {	-- Light Up the Gulch
@@ -679,7 +679,7 @@ _.Zones =
 						49665,	-- Ready to Riot
 					},
 					["provider"] = { "n", 137981 },	-- Kiro
-					["coord"] = { 46, 33.2, 864 },	-- Crater of Conquerors (Vol'dun)
+					["coord"] = { 46.0, 33.2, VOLDUN },	-- Crater of Conquerors
 					["races"] = HORDE_ONLY,
 				}),
 				q(48846, {	-- Liquid Motivation
@@ -689,31 +689,31 @@ _.Zones =
 						48534,	-- Snarltooth's Last Laugh
 					},
 					["provider"] = { "n", 125862 },	-- Zauljin
-					["coord"] = { 43.2, 76.9, 864 },
+					["coord"] = { 43.2, 76.9, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48324, {	-- Lost in Zem'lan
 					["sourceQuests"] = { 51775 },	-- Camp Lastwind (breadcrumb)
 					["provider"] = { "n", 125904 },	-- Norah
-					["coord"] = { 38.8, 77.2, 864 },
+					["coord"] = { 38.8, 77.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50536, {	-- Magic Decoder Device
 					["sourceQuests"] = { 50770 },	-- Effective Antivenom
 					["provider"] = { "n", 134148 },	-- Maaz
-					["coord"] = { 47.2, 72.8, 864 },	-- Zul'Ahjin (Vol'dun)
+					["coord"] = { 47.2, 72.8, VOLDUN },	-- Zul'Ahjin
 					["races"] = HORDE_ONLY,
 				}),
 				q(49666, {	-- Make Them Fear Us
 					["sourceQuests"] = { 49664 },	-- Allies in Anarchy
 					["provider"] = { "n", 135090 },	-- Nisha
-					["coord"] = { 46.1, 33.2, 864 },	-- Crater of Conquerors (Vol'dun)
+					["coord"] = { 46.1, 33.2, VOLDUN },	-- Crater of Conquerors
 					["races"] = HORDE_ONLY,
 				}),
 				q(47578, {	-- Mark of the Loa
 					["sourceQuests"] = { 47576 },	-- Wrath of the Tiger
 					["provider"] = { "n", 123052 },	-- Kimbul
-					["coord"] = { 56.6, 10.3, 864 },
+					["coord"] = { 56.6, 10.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51057, {	-- Maroon 'em with Fire
@@ -722,26 +722,26 @@ _.Zones =
 						51055,	-- The Yard Arm of the Law
 					},
 					["provider"] = { "n", 136309 },	-- First Mate Jamboya
-					["coord"] = { 35.3, 83.1, 864 },
+					["coord"] = { 35.3, 83.1, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47497, {	-- Meet the Goldtusk Gang
 					["sourceQuests"] = { 48327 },	-- A Strange Delivery (breadcrumb)
 					["provider"] = { "n", 122723 },	-- Rhan'ka
-					["coord"] = { 43.5, 60.1, 864 },
+					["coord"] = { 43.5, 60.1, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48988, {	-- Memory Breach
 					["sourceQuests"] = { 48987 },	-- Valley of Sorrows
 					["provider"] = { "n", 127989 },	-- Meijani
 					["races"] = HORDE_ONLY,
-					["coord"] = { 53.0, 78.8, 864 },	-- Valley of Sorrows (Vol'dun)
+					["coord"] = { 53.0, 78.8, VOLDUN },	-- Valley of Sorrows
 				}),
 				q(50739, {	-- Missing Business
 					--	SQ needs confirmation.  was not available with 0 prereqs, picked it up after "an explosive exit" while on "restorative venom" and "freshly squeezed"
 					["sourceQuests"] = { 51364 },	-- An Explosive Exit
 					["provider"] = { "n", 135012 },	-- Vivi
-					["coord"] = { 55.2, 48.4, 864 },	-- The Prickly Grove (Vol'dun)
+					["coord"] = { 55.2, 48.4, VOLDUN },	-- The Prickly Grove
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(158464),	-- Poda (PET!)
@@ -750,7 +750,7 @@ _.Zones =
 				q(51668, {	-- Mojambo
 					["sourceQuests"] = { 48847 },	-- Arming the Tribe
 					["provider"] = { "n", 126576 },	-- Razgaji
-					["coord"] = { 43.4, 75.3, 864 },
+					["coord"] = { 43.4, 75.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155424),	-- Mozesha's Hexblade
@@ -771,7 +771,7 @@ _.Zones =
 						50979,	-- Just a Nip
 					},
 					["provider"] = { "n", 135400 },	-- Jenoh
-					["coord"] = { 29.5, 59.3, 864 },
+					["coord"] = { 29.5, 59.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(160847),	-- Snake Charmer's Flute (PET!)
@@ -785,19 +785,19 @@ _.Zones =
 				q(51056, {	-- My Last Day Alive
 					["sourceQuests"] = { 51054 },	-- Overdue Mutiny
 					["provider"] = { "n", 136309 },	-- First Mate Jamboya
-					["coord"] = { 35.3, 83.1, 864 },
+					["coord"] = { 35.3, 83.1, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48531, {	-- Mystery Meat
 					["sourceQuests"] = { 48529 },	-- Hungry Mouths to Feed
 					["provider"] = { "n", 48531 },	-- Sezahjin
-					["coord"] = { 43.6, 76.7, 864 },
+					["coord"] = { 43.6, 76.7, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48313, {	-- Nature's Remedy
 					["sourceQuests"] = { 47716 },	-- Searching the Ruins
 					["provider"] = { "n", 135154 },	-- Kiro
-					["coord"] = { 47.0, 75.5, 864 },	-- Zul'Ahjin (Vol'dun)
+					["coord"] = { 47.0, 75.5, VOLDUN },	-- Zul'Ahjin
 					["races"] = HORDE_ONLY,
 				}),
 				q(47928, {	-- Offering for the Loa
@@ -807,7 +807,7 @@ _.Zones =
 						47573,	-- Jungleweb Infestation
 					},
 					["provider"] = { "n", 134133 },	-- Teekcha
-					["coord"] = { 58.5, 11.8, 864 },
+					["coord"] = { 58.5, 11.8, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48684, {	-- On the Move
@@ -816,24 +816,24 @@ _.Zones =
 						48549,	-- Grozztok the Blackheart
 					},
 					["provider"] = { "n", 122289 },	-- Bladeguard Kaja
-					["coord"] = { 53.2, 66.0, 864 },	-- Withering Gulch (Vol'dun)
+					["coord"] = { 53.2, 66.0, VOLDUN },	-- Withering Gulch
 					["races"] = HORDE_ONLY,
 				}),
 				q(51060, {	-- Our Share of the Plunder
 					["sourceQuests"] = { 51059 },	-- The Golden Isle
 					["provider"] = { "n", 136779 },	-- First Mate Jamboya
-					["coord"] = { 30.2, 86.4, 864 },
+					["coord"] = { 30.2, 86.4, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51054, {	-- Overdue Mutiny
 					["sourceQuests"] = { 51053 },	-- The Day the Port Fell
 					["provider"] = { "n", 128261 },	-- First Mate Jamboya
-					["coord"] = { 35.4, 83.7, 864 },
+					["coord"] = { 35.4, 83.7, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51142, {	-- Pests
 					["provider"] = { "n", 136562 },	-- Quartermaster Alfin
-					["coord"] = { 36.6, 32.4, 864 },
+					["coord"] = { 36.6, 32.4, VOLDUN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49677, {	-- Plans for Attack
@@ -851,19 +851,19 @@ _.Zones =
 						48871,	-- Rescue the Relics
 					},
 					["provider"] = { "n", 134148 },	-- Maaz
-					["coord"] = { 47.2, 72.8, 864 },	-- Zul'Ahjin (Vol'dun)
+					["coord"] = { 47.2, 72.8, VOLDUN },	-- Zul'Ahjin
 					["races"] = HORDE_ONLY,
 				}),
 				q(52129, {	-- Power Problems
 					["sourceQuests"] = { 50834 },	-- Keep It Down! (breadcrumb)
 					["provider"] = { "n", 135179 },	-- Merd Archfeld
-					["coord"] = { 26.2, 73.6, 864 },
+					["coord"] = { 26.2, 73.6, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48993, {	-- Powerful Conductors
 					["sourceQuests"] = { 48895 },	-- The Perfect Offering
 					["provider"] = { "n", 127992 },	-- Akunda the Exalted
-					["coord"] = { 53.2, 90.2, 864 },	-- Temple of Akunda (Vol'dun)
+					["coord"] = { 53.2, 90.2, VOLDUN },	-- Temple of Akunda
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159979),	-- Rorgog's Antenna
@@ -877,36 +877,36 @@ _.Zones =
 						50328,	-- Unconventional Aromatics
 					},
 					["provider"] = { "n", 122723 },	-- Rhan'ka
-					["coord"] = { 43.5, 60.3, 864 },
+					["coord"] = { 43.5, 60.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49327, {	-- Push Them Back!
 					["sourceQuests"] = { 47324 },	-- Unlikely Allies
 					["provider"] = { "n", 128696 },	-- Zissiah
-					["coord"] = { 27.2, 53.8, 864 },	-- Terrace of the Devoted (Vol'dun)
+					["coord"] = { 27.2, 53.8, VOLDUN },	-- Terrace of the Devoted
 					["races"] = HORDE_ONLY,
 				}),
 				q(51829, {	-- Ranah's Wrench
 					["isBreadcrumb"] = true,
 					["provider"] = { "o", 291143 },	-- Ranah's Wrench
-					["coord"] = { 50.7, 64.7, 864 },	-- Atul'aman (Vol'dun)
+					["coord"] = { 50.7, 64.7, VOLDUN },	-- Atul'aman
 					["races"] = HORDE_ONLY,
 				}),
 				q(48332, {	-- Ranishu Are Resources
 					["provider"] = { "n", 129451 },	-- Omi
-					["coord"] = { 45.3, 46.2, 864 },
+					["coord"] = { 45.3, 46.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49665, {	-- Ready to Riot
 					["sourceQuests"] = { 49664 },	-- Allies in Anarchy
 					["provider"] = { "n", 135090 },	-- Nisha
-					["coord"] = { 46.1, 33.2, 864 },	-- Crater of Conquerors (Vol'dun)
+					["coord"] = { 46.1, 33.2, VOLDUN },	-- Crater of Conquerors
 					["races"] = HORDE_ONLY,
 				}),
 				q(50752, {	-- Relics of Sethraliss
 					["sourceQuests"] = { 49003 },	-- Vengeance From Above
 					["provider"] = { "n", 135111 },	-- Vorrik
-					["coord"] = { 51.9, 28.7, 864 },	-- Skycallers' Spire (Vol'dun)
+					["coord"] = { 51.9, 28.7, VOLDUN },	-- Skycallers' Spire
 					["races"] = HORDE_ONLY,
 				}),
 				q(48889, {	-- Repairing the Past
@@ -915,56 +915,56 @@ _.Zones =
 						49005,	-- Shattered and Broken
 					},
 					["provider"] = { "n", 127989 },	-- Meijani
-					["coord"] = { 53.0, 78.8, 864 },	-- Valley of Sorrows (Vol'dun)
+					["coord"] = { 53.0, 78.8, VOLDUN },	-- Valley of Sorrows
 					["races"] = HORDE_ONLY,
 				}),
 				q(48871, {	-- Rescue the Relics
 					["sourceQuests"] = { 50536 },	-- Magic Decoder Device
 					["provider"] = { "n", 134148 },	-- Maaz
-					["coord"] = { 47.2, 72.8, 864 },	-- Zul'Ahjin (Vol'dun)
+					["coord"] = { 47.2, 72.8, VOLDUN },	-- Zul'Ahjin
 					["races"] = HORDE_ONLY,
 				}),
 				q(47564, {	-- Restocking the Buffet
 					["sourceQuests"] = { 47638 },	-- Powerful Spirits
 					["provider"] = { "n", 122725 },	-- Zulsan
-					["coord"] = { 43.7, 60.2, 864 },
+					["coord"] = { 43.7, 60.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47319, {	-- Restorative Venom
 					["sourceQuests"] = { 51364 },	-- An Explosive Exit
 					["provider"] = { "n", 123586 },	-- Kiro
-					["coord"] = { 56.7, 50.5, 864 },	-- Vulpera Hideaway (Vol'dun)
+					["coord"] = { 56.7, 50.5, VOLDUN },	-- Vulpera Hideaway
 					["races"] = HORDE_ONLY,
 				}),
 				q(47498, {	-- Rhan'ka's Lost Friend
 					["sourceQuests"] = { 47497 },	-- Meet the Goldtusk Gang
 					["provider"] = { "n", 122723 },	-- Rhan'ka
-					["coord"] = { 43.5, 60.2, 864 },
+					["coord"] = { 43.5, 60.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50656, {	-- Risky Rescue
 					["provider"] = { "n", 134611 },	-- Seriah
-					["coord"] = { 32.6, 48.4, 864 },
+					["coord"] = { 32.6, 48.4, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48840, {	-- Ruins-Level Marketing
 					["sourceQuests"] = { 48322 },	-- A Goldtusk Greeting
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 122723 },	-- Rhan'ka
-					["coord"] = { 43.4, 60.2, 864 },
+					["coord"] = { 43.4, 60.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48992, {	-- Sacred Remains
 					["sourceQuests"] = { 48895 },	-- The Perfect Offering
 					["provider"] = { "n", 127992 },	-- Akunda the Exalted
 					["races"] = HORDE_ONLY,
-					["coord"] = { 53.2, 90.2, 864 },	-- Temple of Akunda (Vol'dun)
+					["coord"] = { 53.2, 90.2, VOLDUN },	-- Temple of Akunda
 				}),
 				q(50751, {	-- Sanctuary Under Siege
 					["sourceQuests"] = { 50550 },	-- The Fall of Emperor Korthek
 					["provider"] = { "n", 138519 },		-- Vorrik
 					["races"] = HORDE_ONLY,
-					["coord"] = { 51.98, 27.71, 864 },	-- Skycallers' Spire (Vol'dun)
+					["coord"] = { 51.98, 27.71, VOLDUN },	-- Skycallers' Spire
 				}),
 				q(50901, {	-- Saurid Surprise
 					["sourceQuests"] = {
@@ -972,48 +972,48 @@ _.Zones =
 						47442,	-- Curse of Jani [Horde]
 					},
 					["provider"] = { "n", 133859 },	-- Jani
-					["coord"] = { 42.1, 72.1, 864 },
+					["coord"] = { 42.1, 72.1, VOLDUN },
 				}),
 				q(48656, {	-- Savage Saurolisks
 					["sourceQuests"] = { 48655 },	-- The Chef's Apprentice
 					["provider"] = { "o", 276187 },	-- Junji
-					["coord"] = { 43.3, 78.6, 864 },
+					["coord"] = { 43.3, 78.6, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47871, {	-- Seafaring Necessities
 					["sourceQuests"] = { 51773 },	-- The Ashvane Threat
 					["provider"] = { "n", 124468 },	-- Randall Redmond
-					["coord"] = { 45.6, 82.3, 864 },
+					["coord"] = { 45.6, 82.3, VOLDUN },
 				}),
 				q(47317, {	-- Searching for Survivors
 					["sourceQuests"] = { 47320 },	-- A Balm to Calm
 					["provider"] = { "n", 130341 },	-- Bladeguard Kaja
-					["coord"] = { 56.8, 50.5, 864 },	-- Vulpera Hideaway (Vol'dun)
+					["coord"] = { 56.8, 50.5, VOLDUN },	-- Vulpera Hideaway
 					["races"] = HORDE_ONLY,
 				}),
 				q(47716, {	-- Searching the Ruins
 					["sourceQuests"] = { 48896 },	-- Knowledge of the Past
 					["provider"] = { "n", 129514 },	-- Zandalari Warguard
-					["coord"] = { 47.8, 82.3, 864 },	-- Redrock Lowlands (Vol'dun)
+					["coord"] = { 47.8, 82.3, VOLDUN },	-- Redrock Lowlands
 					["races"] = HORDE_ONLY,
 				}),
 				q(47316, {	-- Secrets in the Sand
 					["sourceQuests"] = { 47320 },	-- A Balm to Calm
 					["provider"] = { "n", 122583 },	-- Meerah
-					["coord"] = { 56.7, 50.5, 864 },	-- Vulpera Hideaway (Vol'dun)
+					["coord"] = { 56.7, 50.5, VOLDUN },	-- Vulpera Hideaway
 					["races"] = HORDE_ONLY,
 				}),
 				q(50794, {	-- Seeking Shelter
 					["sourceQuests"] = { 50561 },	-- Sulthis' Stone
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 134162 },	-- Julwaba
-					["coord"] = { 47.0, 75.6, 864 },
+					["coord"] = { 47.0, 75.6, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49005, {	-- Shattered and Broken
 					["sourceQuests"] = { 48987 },	-- Valley of Sorrows
 					["provider"] = { "n", 127989 },	-- Meijani
-					["coord"] = { 53.0, 78.8, 864 },	-- Valley of Sorrows (Vol'dun)
+					["coord"] = { 53.0, 78.8, VOLDUN },	-- Valley of Sorrows
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155455),	-- Ring of Akunda's Chosen
@@ -1026,7 +1026,7 @@ _.Zones =
 				q(53113, {	-- Shimmering Shell
 					["repeatable"] = true,
 					["provider"] = { "n", 135804 },	-- Hoarder Jena
-					["coord"] = { 56.6, 49.7, 864 },
+					["coord"] = { 56.6, 49.7, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48331, {	-- Siphoning Souls
@@ -1036,12 +1036,12 @@ _.Zones =
 						48334,	-- They've Got Golems
 					},
 					["provider"] = { "n", 129450 },	-- Tacha
-					["coord"] = { 45.3, 46.2, 864 },
+					["coord"] = { 45.3, 46.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49335, {	-- Skycaller Slaughter
 					["provider"] = { "n", 134611 },	-- Seriah
-					["coord"] = { 32.6, 48.4, 864 },
+					["coord"] = { 32.6, 48.4, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48534, {	-- Snarltooth's Last Laugh
@@ -1051,19 +1051,19 @@ _.Zones =
 						48533,	-- Vol'duni Fried Chicken
 					},
 					["provider"] = { "n", 126085 },	-- Mugjabu
-					["coord"] = { 42.1, 76.2, 864 },
+					["coord"] = { 42.1, 76.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48790, {	-- Stolen Goods
 					["sourceQuests"] = { 48846 },	-- Liquid Motivation
 					["provider"] = { "n", 126576 },	-- Razgaji
-					["coord"] = { 43.3, 75.4, 864 },
+					["coord"] = { 43.3, 75.4, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48550, {	-- Stolen Satchels
 					["sourceQuests"] = { 47959 },	-- The Warguard's Trail
 					["provider"] = { "n", 126696 },	-- Jorak
-					["coord"] = { 53.2, 66.2, 864 },	-- Withering Gulch (Vol'dun)
+					["coord"] = { 53.2, 66.2, VOLDUN },	-- Withering Gulch
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155400),	-- Exiled Veteran's Wargreaves
@@ -1080,7 +1080,7 @@ _.Zones =
 				q(50561, {	-- Sulthis' Stone
 					["sourceQuests"] = { 48315 },	-- Hollow, Empty Eyes
 					["provider"] = { "o", 281583 },	-- Ancient Reliquary
-					["coord"] = { 48.8, 74.2, 864 },	-- Zul'Ahjin (Vol'dun)
+					["coord"] = { 48.8, 74.2, VOLDUN },	-- Zul'Ahjin
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159984),	-- Exiled Veteran's Girdle
@@ -1096,26 +1096,26 @@ _.Zones =
 				q(49437, {	-- Tattered Note
 					["sourceQuests"] = { 49668 },	-- Light Up the Gulch
 					["provider"] = { "o", 278368 },	-- Tattered Note
-					["coord"] = { 54.5, 34.2, 864 },	-- Slithering Gulch (Vol'dun)
+					["coord"] = { 54.5, 34.2, VOLDUN },	-- Slithering Gulch
 					["races"] = HORDE_ONLY,
 				}),
 				q(50551, {	-- Temple of Sethraliss: Avatar of the Loa
 					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
 					["provider"] = { "n", 129588 },	-- Vorrik
 					["races"] = HORDE_ONLY,
-					["coord"] = { 27.0, 52.6, 864 },	-- Sanctuary of the Devoted (Vol'dun)
+					["coord"] = { 27.0, 52.6, VOLDUN },	-- Sanctuary of the Devoted
 				}),
 				q(50904, {	-- The Abandoned Passage
 					["sourceQuests"] = { 50617 },	-- Atul'Aman
 					["provider"] = { "n", 135625 },	-- Vorrik
 					["races"] = HORDE_ONLY,
-					["coord"] = { 43.0, 68.2, 864 },	-- Abandoned Passage (Vol'dun)
+					["coord"] = { 43.0, 68.2, VOLDUN },	-- Abandoned Passage
 				}),
 				q(51773, {	-- The Ashvane Threat
 					["sourceQuests"] = { 51668 },	-- Mojambo
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 126576 },	-- Razgaji
-					["coord"] = { 43.4, 75.3, 864 },
+					["coord"] = { 43.4, 75.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51717, {	-- The Best Honey In Vol'dun
@@ -1124,19 +1124,19 @@ _.Zones =
 						47498,	-- Rhan'ka's Lost Friend
 					},
 					["provider"] = { "n", 138749 },	-- Rhan'ka
-					["coord"] = { 37.4, 51.1, 864 },
+					["coord"] = { 37.4, 51.1, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48320, {	-- The Best Kill is Overkill
 					["sourceQuests"] = { 47638 },	-- Powerful Spirits
 					["provider"] = { "n", 123729 },	-- Volni
-					["coord"] = { 42.7, 61.0, 864 },
+					["coord"] = { 42.7, 61.0, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47873, {	-- The Captain's Cache
 					["sourceQuests"] = { 51810 },	-- Captain Hartford
 					["provider"] = { "n", 139070 },	-- Captain Redmond
-					["coord"] = { 43.2, 90.8, 864 },
+					["coord"] = { 43.2, 90.8, VOLDUN },
 				}),
 				q(48655, {	-- The Chef's Apprentice
 					["sourceQuests"] = {
@@ -1144,19 +1144,19 @@ _.Zones =
 						48533,	-- Vol'duni Fried Chicken
 					},
 					["provider"] = { "n", 126108 },	-- Sezahjin
-					["coord"] = { 43.6, 76.7, 864 },
+					["coord"] = { 43.6, 76.7, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47580, {	-- The Curse of Mepjila
 					["sourceQuests"] = { 47928 },	-- Offering for the Loa
 					["provider"] = { "n", 123052 },	-- Kimbul
-					["coord"] = { 56.6, 10.3, 864 },
+					["coord"] = { 56.6, 10.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51053, {	-- The Day the Port Fell
 					["sourceQuests"] = { 48324 },	-- Lost in Zem'lan
 					["provider"] = { "n", 128261 },	-- First Mate Jamboya
-					["coord"] = { 35.4, 83.7, 864 },
+					["coord"] = { 35.4, 83.7, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47571, {	-- The Elder's Wisdom
@@ -1166,7 +1166,7 @@ _.Zones =
 						47577,	-- They Came From The Sea
 					},
 					["provider"] = { "n", 134098 },	-- Torka
-					["coord"] = { 61.9, 22.3, 864 },
+					["coord"] = { 61.9, 22.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50550, {	-- The Fall of Emperor Korthek
@@ -1175,7 +1175,7 @@ _.Zones =
 						50752,	-- Relics of Sethraliss
 					},
 					["provider"] = { "n", 138411 },	-- Vorrik
-					["coord"] = { 51.9, 28.7, 864 },	-- Skycallers' Spire (Vol'dun)
+					["coord"] = { 51.9, 28.7, VOLDUN },	-- Skycallers' Spire
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155440),	-- Korthek's Greatstaff
@@ -1192,7 +1192,7 @@ _.Zones =
 				q(51061, {	-- The First Time I Died
 					["sourceQuests"] = { 51059 },	-- The Golden Isle
 					["provider"] = { "n", 136779 },	-- First Mate Jamboya
-					["coord"] = { 30.2, 86.4, 864 },
+					["coord"] = { 30.2, 86.4, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51059, {	-- The Golden Isle
@@ -1201,7 +1201,7 @@ _.Zones =
 						47499,	-- The Grinning Idols
 					},
 					["provider"] = { "n", 136310 },	-- First Mate Jamboya
-					["coord"] = { 33.2, 81.7, 864 },
+					["coord"] = { 33.2, 81.7, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47502, {	-- The Great Cranium Caper
@@ -1210,7 +1210,7 @@ _.Zones =
 						47498,	-- Rhan'ka's Lost Friend
 					},
 					["provider"] = { "n", 138749 },	-- Rhan'ka
-					["coord"] = { 37.4, 51.1, 864 },
+					["coord"] = { 37.4, 51.1, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(161176),	-- Sunbeaten Oasis Band
@@ -1226,7 +1226,7 @@ _.Zones =
 						51055,	-- The Yard Arm of the Law
 					},
 					["provider"] = { "n", 136309 },	-- First Mate Jamboya
-					["coord"] = { 35.3, 83.1, 864 },
+					["coord"] = { 35.3, 83.1, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155456),	-- Zem'lan Crewman's Cloak
@@ -1240,13 +1240,13 @@ _.Zones =
 						49327,	-- Push Them Back!
 					},
 					["provider"] = { "n", 129519 },	-- Vorrik
-					["coord"] = { 27.5, 52.5, 864 },	-- Sanctuary of the Devoted
+					["coord"] = { 27.5, 52.5, VOLDUN },	-- Sanctuary of the Devoted
 					["races"] = HORDE_ONLY,
 				}),
 				q(49667, {	-- The Little Ones
 					["sourceQuests"] = { 50745 },	-- Infiltrating the Empire
 					["provider"] = { "n", 135355 },	-- Meerah
-					["coord"] = { 47.9, 36.4, 864 },	-- Vorrik's Sanctum (Vol'dun)
+					["coord"] = { 47.9, 36.4, VOLDUN },	-- Vorrik's Sanctum
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(160017),	-- Resilient Outcast's Handguards
@@ -1263,31 +1263,31 @@ _.Zones =
 				q(49227, {	-- The Master Key
 					["sourceQuests"] = { 47939 },	-- If the Key Fits...
 					["provider"] = { "n", 128422 },	-- Keerin
-					["coord"] = { 47.5, 86.1, 864 },
+					["coord"] = { 47.5, 86.1, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49662, {	-- The Missing Key
 					["sourceQuests"] = { 49340 },	-- The Keepers' Key
 					["provider"] = { "n", 128694 },	-- Vorrik
-					["coord"] = { 27.1, 52.5, 864 },	-- Sanctuary of the Devoted (Vol'dun)
+					["coord"] = { 27.1, 52.5, VOLDUN },	-- Sanctuary of the Devoted
 					["races"] = HORDE_ONLY,
 				}),
 				q(48895, {	-- The Perfect Offering
 					["sourceQuests"] = { 48684 },	-- On the Move
 					["provider"] = { "n", 127691 },	-- Jorak
-					["coord"] = { 52.8, 89.2, 864 },	-- Temple of Akunda (Vol'dun)
+					["coord"] = { 52.8, 89.2, VOLDUN },	-- Temple of Akunda
 					["races"] = HORDE_ONLY,
 				}),
 				q(47965, {	-- The Ruined Temple
 					["sourceQuests"] = { 47571 },	-- The Elder's Wisdom
 					["provider"] = { "n", 123063 },	-- Elder Kuppaka
-					["coord"] = { 61.6, 20.5, 864 },
+					["coord"] = { 61.6, 20.5, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50539, {	-- The Secrets of Zul'Ahjin
 					["sourceQuests"] = { 50770 },	-- Effective Antivenom
 					["provider"] = { "n", 134533 },	-- Serrik
-					["coord"] = { 47.0, 75.6, 864 },	-- Zul'Ahjin (Vol'dun)
+					["coord"] = { 47.0, 75.6, VOLDUN },	-- Zul'Ahjin
 					["races"] = HORDE_ONLY,
 				}),
 				q(48554, {	-- The Source of the Problem
@@ -1297,7 +1297,7 @@ _.Zones =
 						48551,	-- Wither Without Water
 					},
 					["provider"] = { "n", 126814 },	-- Ranah
-					["coord"] = { 53.8, 69.4, 864 },	-- Withering Gulch (Vol'dun)
+					["coord"] = { 53.8, 69.4, VOLDUN },	-- Withering Gulch
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155392),	-- Scorching Sands Grips
@@ -1315,14 +1315,14 @@ _.Zones =
 						48334,	-- They've Got Golems
 					},
 					["provider"] = { "n", 129453 },	-- Kenzou
-					["coord"] = { 45.3, 46.2, 864 },
+					["coord"] = { 45.3, 46.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51772, {	-- The Tortaka Tribe
 					["sourceQuests"] = { 51668 },	-- Mojambo
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 126108 },	-- Sezahjin
-					["coord"] = { 43.6, 76.7, 864 },
+					["coord"] = { 43.6, 76.7, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47959, {	-- The Warguard's Trail
@@ -1332,25 +1332,25 @@ _.Zones =
 						47316,	-- Secrets in the Sand
 					},
 					["provider"] = { "n", 130341 },	-- Bladeguard Kaja
-					["coord"] = { 56.8, 50.4, 864 },	-- Vulpera Hideaway (Vol'dun)
+					["coord"] = { 56.8, 50.4, VOLDUN },	-- Vulpera Hideaway
 					["races"] = HORDE_ONLY,
 				}),
 				q(51055, {	-- The Yard Arm of the Law
 					["sourceQuests"] = { 51054 },	-- Overdue Mutiny
 					["provider"] = { "n", 136309 },	-- First Mate Jamboya
-					["coord"] = { 35.3, 83.1, 864 },
+					["coord"] = { 35.3, 83.1, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47577, {	-- They Came From The Sea
 					["sourceQuests"] = { 51772 },	-- The Tortaka Tribe
 					["provider"] = { "n", 134098 },	-- Torka
-					["coord"] = { 61.9, 22.3, 864 },
+					["coord"] = { 61.9, 22.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48657, {	-- They Might Be Delicious
 					["sourceQuests"] = { 48655 },	-- The Chef's Apprentice
 					["provider"] = { "o", 276187 },	-- Junji
-					["coord"] = { 43.3, 78.6, 864 },
+					["coord"] = { 43.3, 78.6, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159978),	-- Junji's Egg Timer
@@ -1362,7 +1362,7 @@ _.Zones =
 				}),
 				q(48334, {	-- They've Got Golems
 					["provider"] = { "n", 129450 },	-- Tacha
-					["coord"] = { 45.3, 46.2, 864 },
+					["coord"] = { 45.3, 46.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(161181),	-- Golem Socket Band
@@ -1375,7 +1375,7 @@ _.Zones =
 						51061,	-- The First Time I Died
 					},
 					["provider"] = { "n", 136317 },	-- Cursed Skeleton
-					["coord"] = { 29.0, 88.3, 864 },
+					["coord"] = { 29.0, 88.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(161172),	-- Scorching Sands Footgear
@@ -1391,7 +1391,7 @@ _.Zones =
 				q(48850, {	-- Tongo
 					["sourceQuests"] = { 48846 },	-- Liquid Motivation
 					["provider"] = { "n", 126576 },	-- Razgaji
-					["coord"] = { 43.3, 75.4, 864 },
+					["coord"] = { 43.3, 75.4, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48894, {	-- Trial of Truth
@@ -1400,25 +1400,25 @@ _.Zones =
 						48888,	-- It Springs Eternal
 					},
 					["provider"] = { "n", 127992 },	-- Akunda the Exalted
-					["coord"] = { 53.2, 90.2, 864 },	-- Temple of Akunda (Vol'dun)
+					["coord"] = { 53.2, 90.2, VOLDUN },	-- Temple of Akunda
 					["races"] = HORDE_ONLY,
 				}),
 				q(50328, {	-- Unconventional Aromatics
 					["sourceQuests"] = { 51718 },	-- Harvesting "Honey"
 					["provider"] = { "n", 133833 },	-- Rikati
-					["coord"] = { 40.4, 55.3, 864 },
+					["coord"] = { 40.4, 55.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47324, {	-- Unlikely Allies
 					["sourceQuests"] = { 50561 },	-- Sulthis' Stone
 					["provider"] = { "n", 134533 },	-- Serrik
-					["coord"] = { 47.0, 75.7, 864 },	-- Zul'Ahjin (Vol'dun)
+					["coord"] = { 47.0, 75.7, VOLDUN },	-- Zul'Ahjin
 					["races"] = HORDE_ONLY,
 				}),
 				q(49669, {	-- Unleash the Beasts
 					["sourceQuests"] = { 49668 },	-- Light Up the Gulch
 					["provider"] = { "n", 135099 },	-- Kiro
-					["coord"] = { 55.4, 35, 864 },	-- Slithering Gulch (Vol'dun)
+					["coord"] = { 55.4, 35.0, VOLDUN },	-- Slithering Gulch
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(161182),	-- Cracked Crawg Shackles
@@ -1427,13 +1427,13 @@ _.Zones =
 				q(50757, {	-- Untame Slaughter
 					["sourceQuests"] = { 49668 },	-- Light Up the Gulch
 					["provider"] = { "n", 135099 },	-- Kiro
-					["coord"] = { 55.4, 35, 864 },	-- Slithering Gulch (Vol'dun)
+					["coord"] = { 55.4, 35.0, VOLDUN },	-- Slithering Gulch
 					["races"] = HORDE_ONLY,
 				}),
 				q(48987, {	-- Valley of Sorrows
 					["sourceQuests"] = { 48715 },	-- Akunda Awaits
 					["provider"] = { "n", 127980 },	-- Akunda the Sensible
-					["coord"] = { 53.6, 91.4, 864 },	-- Temple of Akunda (Vol'dun)
+					["coord"] = { 53.6, 91.4, VOLDUN },	-- Temple of Akunda
 					["races"] = HORDE_ONLY,
 				}),
 				q(49003, {	-- Vengeance From Above
@@ -1443,64 +1443,64 @@ _.Zones =
 						49002,	-- Forced Grounding
 					},
 					["provider"] = { "n", 135110 },	-- Vorrik
-					["coord"] = { 47.1, 39.1, 864 },	-- Rakjan's Peak (Vol'dun)
+					["coord"] = { 47.1, 39.1, VOLDUN },	-- Rakjan's Peak
 					["races"] = HORDE_ONLY,
 				}),
 				q(48991, {	-- Vile Infestation
 					["sourceQuests"] = { 48895 },	-- The Perfect Offering
 					["provider"] = { "n", 127992 },	-- Akunda the Exalted
-					["coord"] = { 53.2, 90.2, 864 },	-- Temple of Akunda (Vol'dun)
+					["coord"] = { 53.2, 90.2, VOLDUN },	-- Temple of Akunda
 					["races"] = HORDE_ONLY,
 				}),
 				q(48533, {	-- Vol'duni Fried Chicken
 					["sourceQuests"] = { 48529 },	-- Hungry Mouths to Feed
 					["provider"] = { "n", 48531 },	-- Sezahjin
-					["coord"] = { 43.6, 76.7, 864 },
+					["coord"] = { 43.6, 76.7, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51164, {	-- WANTED: Cobra Excursion Participants
 					["provider"] = { "o", 287442 },	-- Wanted: Cobra Excursion Participants
-					["coord"] = { 43.6, 59.9, 864 },
+					["coord"] = { 43.6, 59.9, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51165, {	-- WANTED: Sandscout Vesarik
 					["provider"] = { "o", 287441 },	-- Wanted: Sandscout Vesarik
-					["coord"] = { 26.9, 52.7, 864 },	-- Terrace of the Devoted
+					["coord"] = { 26.9, 52.7, VOLDUN },	-- Terrace of the Devoted
 				}),
 				q(51162, {	-- WANTED: Taz'raka the Traitor
 					["provider"] = { "o", 287440 },	-- Wanted: Taz'raka
-					["coord"] = { 38.8, 77.0, 864 },
+					["coord"] = { 38.8, 77.0, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51161, {	-- WANTED: Za'roco
 					["sourceQuests"] = { 51668 },	-- Mojambo
 					["provider"] = { "o", 287398 },	-- Wanted: Za'roco
-					["coord"] = { 43.1, 76.5, 864 },
+					["coord"] = { 43.1, 76.5, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48585, {	-- Wasteland Survivor
 					--	SQ needs verification.  i saw it before turning in "i heard you lost the herd," not sure if it pops up any earlier than this.
 					["sourceQuests"] = { 50794 },	-- I've Got Your Back
 					["provider"] = { "o", 273854 },	-- Backpack
-					["coord"] = { 40.4, 73.6, 864 },
+					["coord"] = { 40.4, 73.6, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48555, {	-- We Can Salvage the Seeds
 					["sourceQuests"] = { 51829 },	-- Ranah's Wrench
 					["provider"] = { "n", 126814 },	-- Ranah
-					["coord"] = { 53.8, 69.4, 864 },	-- Withering Gulch (Vol'dun)
+					["coord"] = { 53.8, 69.4, VOLDUN },	-- Withering Gulch
 					["races"] = HORDE_ONLY,
 				}),
 				q(48551, {	-- Wither Without Water
 					["sourceQuests"] = { 51829 },	-- Ranah's Wrench
 					["provider"] = { "n", 126814 },	-- Ranah
-					["coord"] = { 53.8, 69.4, 864 },	-- Withering Gulch (Vol'dun)
+					["coord"] = { 53.8, 69.4, VOLDUN },	-- Withering Gulch
 					["races"] = HORDE_ONLY,
 				}),
 				q(47576, {	-- Wrath of the Tiger
 					["sourceQuests"] = { 47580 },	-- The Curse of Mepjila
 					["provider"] = { "n", 123052 },	-- Kimbul
-					["coord"] = { 56.6, 10.3, 864 },
+					["coord"] = { 56.6, 10.3, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(161183),	-- Honorable Tiger's Cloak
@@ -1517,7 +1517,7 @@ _.Zones =
 						48335,	-- The Strongest Rope in Vol'dun
 					},
 					["provider"] = { "n", 129451 },	-- Omi
-					["coord"] = { 45.3, 46.2, 864 },
+					["coord"] = { 45.3, 46.2, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155445),	-- Mugabu's Soulwand

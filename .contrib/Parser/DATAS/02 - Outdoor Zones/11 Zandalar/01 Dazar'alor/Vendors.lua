@@ -211,7 +211,7 @@ _.Zones =
 								}),
 								i(163618, {	-- Shimmering Shell
 									["description"] = "|CFFFF0000Turn in to Hoarder Jena in Vol'dun for Voldunai rep.|r",
-									["coord"] = { 56.7, 49.8, 864 },
+									["coord"] = { 56.7, 49.8, VOLDUN },
 									["g"] = {
 										q(53113, {	-- Shimmering Shell
 											["repeatable"] = true,

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(ZANDALAR, {
-		m(864, {	-- Vol'dun
+		m(VOLDUN, {
 			n(ZONEDROPS, {
 				i(163576, {	-- Captured Dune Scavenger
 					["crs"] = {

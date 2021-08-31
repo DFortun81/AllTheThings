@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(ZANDALAR, {
-		m(864, {	-- Vol'dun
+		m(VOLDUN, {
 			n(ACHIEVEMENTS, {
 				ach(12943),		-- Adventurer of Vol'dun
 				ach(13036, {	-- A Loa of a Tale
@@ -13,15 +13,15 @@ _.Zones =
 					["g"] = {
 						crit(1, {	-- Tales of de Loa: Akunda
 							["itemID"] = 162628,	-- Tales of de Loa: Akunda
-							["coord"] = { 42.2, 62.1, 864 },
+							["coord"] = { 42.2, 62.1, VOLDUN },
 						}),
 						crit(7, {	-- Tales of de Loa: Kimbul
 							["itemID"] = 163198,	-- Tales of de Loa: Kimbul
-							["coord"] = { 27.7, 62.1, 864 },
+							["coord"] = { 27.7, 62.1, VOLDUN },
 						}),
 						crit(11, {	-- Tales of de Loa: Sethraliss
 							["itemID"] = 163333,	-- Tales of de Loa: Sethraliss
-							["coord"] = { 49.5, 24.4, 864 },
+							["coord"] = { 49.5, 24.4, VOLDUN },
 						}),
 					},
 				}),
@@ -30,26 +30,26 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(3, {	-- Akunda respected
-							["coord"] = { 53.1, 91.5, 864 },
+							["coord"] = { 53.1, 91.5, VOLDUN },
 							["cr"] = 128152,	-- Akunda
 						}),
 						crit(5, {	-- Kimbul respected
-							["coord"] = { 57.0, 10.8, 864 },
+							["coord"] = { 57.0, 10.8, VOLDUN },
 							["cr"] = 123052,	-- Kimbul
 						}),
 						crit(9, {	-- Avatar of Sethraliss respected
-							["coord"] = { 27.0, 52.5, 864 },
+							["coord"] = { 27.0, 52.5, VOLDUN },
 							["cr"] = 135210,	-- Avatar of Sethraliss
 						}),
 					},
 				}),
 				ach(13018, {	-- Dune Rider
 					["coords"] = {
-						{ 47.9, 62.5, 864 },
-						{ 45.8, 63.6, 864 },
-						{ 38.1, 71.0, 864 },
-						{ 32.2, 69.0, 864 },
-						{ 54.9, 21.4, 864 },
+						{ 47.9, 62.5, VOLDUN },
+						{ 45.8, 63.6, VOLDUN },
+						{ 38.1, 71.0, VOLDUN },
+						{ 32.2, 69.0, VOLDUN },
+						{ 54.9, 21.4, VOLDUN },
 					},
 					--[[ Each plank has a unique "kill credit" NPC id but no quest tracking ID. These are the IDs I found: [Pr3vention]
 					["npcID"] = 143668
@@ -65,8 +65,8 @@ _.Zones =
 						crit(2, {	-- Brutosaur of Vol'dun Fed
 							["description"] = "Buy Snake on a Stick from Rikati at 40.4, 55.4 and feed it to Ol' Stompy.",
 							["coords"] = {
-								{ 62.0, 9.20, 864 },	-- Ol' Stompy
-								{ 40.4, 55.4, 864 },	-- Rikati
+								{ 62.0, 9.20, VOLDUN },	-- Ol' Stompy
+								{ 40.4, 55.4, VOLDUN },	-- Rikati
 							},
 							["crs"] = {
 								143332,	-- Ol' Stompy
@@ -82,15 +82,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(14, {	-- Keeyo
-									["coord"] = { 57.0, 49.0, 864 },
+									["coord"] = { 57.0, 49.0, VOLDUN },
 									["creatureID"] = 141879,	-- Keeyo
 								}),
 								crit(15, {	-- Sizzik
-									["coord"] = { 26.6, 54.8, 864 },
+									["coord"] = { 26.6, 54.8, VOLDUN },
 									["creatureID"] = 141945,	-- Sizzik
 								}),
 								crit(16, {	-- Kusa
-									["coord"] = { 45.0, 46.4, 864 },
+									["coord"] = { 45.0, 46.4, VOLDUN },
 									["creatureID"] = 142054,	-- Kusa
 								}),
 							},
@@ -99,15 +99,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(14, {	-- Keeyo
-									["coord"] = { 57.0, 49.0, 864 },
+									["coord"] = { 57.0, 49.0, VOLDUN },
 									["creatureID"] = 141879,	-- Keeyo
 								}),
 								crit(15, {	-- Sizzik
-									["coord"] = { 26.6, 54.8, 864 },
+									["coord"] = { 26.6, 54.8, VOLDUN },
 									["creatureID"] = 141945,	-- Sizzik
 								}),
 								crit(16, {	-- Kusa
-									["coord"] = { 45.0, 46.4, 864 },
+									["coord"] = { 45.0, 46.4, VOLDUN },
 									["creatureID"] = 142054,	-- Kusa
 								}),
 							},
@@ -116,15 +116,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(14, {	-- Keeyo
-									["coord"] = { 57.0, 49.0, 864 },
+									["coord"] = { 57.0, 49.0, VOLDUN },
 									["creatureID"] = 141879,	-- Keeyo
 								}),
 								crit(15, {	-- Sizzik
-									["coord"] = { 26.6, 54.8, 864 },
+									["coord"] = { 26.6, 54.8, VOLDUN },
 									["creatureID"] = 141945,	-- Sizzik
 								}),
 								crit(16, {	-- Kusa
-									["coord"] = { 45.0, 46.4, 864 },
+									["coord"] = { 45.0, 46.4, VOLDUN },
 									["creatureID"] = 142054,	-- Kusa
 								}),
 							},
@@ -133,15 +133,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(14, {	-- Keeyo
-									["coord"] = { 57.0, 49.0, 864 },
+									["coord"] = { 57.0, 49.0, VOLDUN },
 									["creatureID"] = 141879,	-- Keeyo
 								}),
 								crit(15, {	-- Sizzik
-									["coord"] = { 26.6, 54.8, 864 },
+									["coord"] = { 26.6, 54.8, VOLDUN },
 									["creatureID"] = 141945,	-- Sizzik
 								}),
 								crit(16, {	-- Kusa
-									["coord"] = { 45.0, 46.4, 864 },
+									["coord"] = { 45.0, 46.4, VOLDUN },
 									["creatureID"] = 142054,	-- Kusa
 								}),
 							},
@@ -150,15 +150,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(14, {	-- Keeyo
-									["coord"] = { 57.0, 49.0, 864 },
+									["coord"] = { 57.0, 49.0, VOLDUN },
 									["creatureID"] = 141879,	-- Keeyo
 								}),
 								crit(15, {	-- Sizzik
-									["coord"] = { 26.6, 54.8, 864 },
+									["coord"] = { 26.6, 54.8, VOLDUN },
 									["creatureID"] = 141945,	-- Sizzik
 								}),
 								crit(16, {	-- Kusa
-									["coord"] = { 45.0, 46.4, 864 },
+									["coord"] = { 45.0, 46.4, VOLDUN },
 									["creatureID"] = 142054,	-- Kusa
 								}),
 							},
@@ -167,15 +167,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(14, {	-- Keeyo
-									["coord"] = { 57.0, 49.0, 864 },
+									["coord"] = { 57.0, 49.0, VOLDUN },
 									["creatureID"] = 141879,	-- Keeyo
 								}),
 								crit(15, {	-- Sizzik
-									["coord"] = { 26.6, 54.8, 864 },
+									["coord"] = { 26.6, 54.8, VOLDUN },
 									["creatureID"] = 141945,	-- Sizzik
 								}),
 								crit(16, {	-- Kusa
-									["coord"] = { 45.0, 46.4, 864 },
+									["coord"] = { 45.0, 46.4, VOLDUN },
 									["creatureID"] = 142054,	-- Kusa
 								}),
 							},
@@ -184,15 +184,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(14, {	-- Keeyo
-									["coord"] = { 57.0, 49.0, 864 },
+									["coord"] = { 57.0, 49.0, VOLDUN },
 									["creatureID"] = 141879,	-- Keeyo
 								}),
 								crit(15, {	-- Sizzik
-									["coord"] = { 26.6, 54.8, 864 },
+									["coord"] = { 26.6, 54.8, VOLDUN },
 									["creatureID"] = 141945,	-- Sizzik
 								}),
 								crit(16, {	-- Kusa
-									["coord"] = { 45.0, 46.4, 864 },
+									["coord"] = { 45.0, 46.4, VOLDUN },
 									["creatureID"] = 142054,	-- Kusa
 								}),
 							},
@@ -201,15 +201,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(14, {	-- Keeyo
-									["coord"] = { 57.0, 49.0, 864 },
+									["coord"] = { 57.0, 49.0, VOLDUN },
 									["creatureID"] = 141879,	-- Keeyo
 								}),
 								crit(15, {	-- Sizzik
-									["coord"] = { 26.6, 54.8, 864 },
+									["coord"] = { 26.6, 54.8, VOLDUN },
 									["creatureID"] = 141945,	-- Sizzik
 								}),
 								crit(16, {	-- Kusa
-									["coord"] = { 45.0, 46.4, 864 },
+									["coord"] = { 45.0, 46.4, VOLDUN },
 									["creatureID"] = 142054,	-- Kusa
 								}),
 							},
@@ -218,15 +218,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(14, {	-- Keeyo
-									["coord"] = { 57.0, 49.0, 864 },
+									["coord"] = { 57.0, 49.0, VOLDUN },
 									["creatureID"] = 141879,	-- Keeyo
 								}),
 								crit(15, {	-- Sizzik
-									["coord"] = { 26.6, 54.8, 864 },
+									["coord"] = { 26.6, 54.8, VOLDUN },
 									["creatureID"] = 141945,	-- Sizzik
 								}),
 								crit(16, {	-- Kusa
-									["coord"] = { 45.0, 46.4, 864 },
+									["coord"] = { 45.0, 46.4, VOLDUN },
 									["creatureID"] = 142054,	-- Kusa
 								}),
 							},
@@ -235,15 +235,15 @@ _.Zones =
 							["collectible"] = false,
 							["g"] = {
 								crit(14, {	-- Keeyo
-									["coord"] = { 57.0, 49.0, 864 },
+									["coord"] = { 57.0, 49.0, VOLDUN },
 									["creatureID"] = 141879,	-- Keeyo
 								}),
 								crit(15, {	-- Sizzik
-									["coord"] = { 26.6, 54.8, 864 },
+									["coord"] = { 26.6, 54.8, VOLDUN },
 									["creatureID"] = 141945,	-- Sizzik
 								}),
 								crit(16, {	-- Kusa
-									["coord"] = { 45.0, 46.4, 864 },
+									["coord"] = { 45.0, 46.4, VOLDUN },
 									["creatureID"] = 142054,	-- Kusa
 								}),
 							},
@@ -256,7 +256,7 @@ _.Zones =
 						crit(3,  {	-- Charged Ranishu Antennae
 							["questID"] = 50883,
 							["itemID"] = 158910,	-- Charged Ranishu Antennae
-							["coord"] = { 47.0, 46.6, 864 },	-- Court of Zak'rajan
+							["coord"] = { 47.0, 46.6, VOLDUN },	-- Court of Zak'rajan
 							["crs"] = {
 								129464,	-- Ranishu Nibbler
 								129473,	-- Ranishu Nibbler
@@ -267,7 +267,7 @@ _.Zones =
 						crit(6,  {	-- Polished Ringhorn Hoof
 							["questID"] = 50890,
 							["itemID"] = 158915,	-- Polished Ringhorn Hoof
-							["coord"] = { 56.2, 15.3, 864 },
+							["coord"] = { 56.2, 15.3, VOLDUN },
 							["crs"] = {
 								130317,	-- Ringhorn Fawn
 								130321,	-- Ringhorn Stag
@@ -277,7 +277,7 @@ _.Zones =
 						crit(9,  {	-- Sturdy Redrock Jaw
 							["questID"] = 50892,
 							["itemID"] = 158916,	-- Sturdy Redrock Jaw
-							["coord"] = { 49.3, 84.3, 864 },	-- The Eternal Spring
+							["coord"] = { 49.3, 84.3, VOLDUN },	-- The Eternal Spring
 							["crs"] = {
 								134744,	-- Redrock Howler
 								134718,	-- Redrock Scavenger
@@ -285,7 +285,7 @@ _.Zones =
 						}),
 						crit(12, {	-- Saurid Surprise
 							["sourceQuests"] = { 50901 },	-- Saurid Surprise
-							["coord"] = { 42.1, 72.1, 864 },
+							["coord"] = { 42.1, 72.1, VOLDUN },
 						}),
 					},
 				}),
@@ -293,7 +293,7 @@ _.Zones =
 					["collectible"] = false,
 					["g"] = {
 						crit(3, {	-- Portakillo
-							["coord"] = { 61.2, 18.0, 864 },
+							["coord"] = { 61.2, 18.0, VOLDUN },
 							["cr"] = 143313,	-- Portakillo
 						}),
 					},
@@ -301,60 +301,60 @@ _.Zones =
 				ach(13016, {	-- Scavenger of the Sands
 					crit(1,  {	-- Jason's Rusty Blade
 						["questID"] = 53132,
-						["coord"] = { 56.3, 70.1, 864 },
+						["coord"] = { 56.3, 70.1, VOLDUN },
 					}),
 					crit(2,  {	-- Ian's Empty Bottle
 						["questID"] = 53133,
-						["coord"] = { 36.21, 78.37, 864 },
+						["coord"] = { 36.21, 78.37, VOLDUN },
 					}),
 					crit(3,  {	-- Julie's Cracked Dish
 						["questID"] = 53134,
-						["coord"] = { 53.6, 89.7, 864 },
+						["coord"] = { 53.6, 89.7, VOLDUN },
 					}),
 					crit(4,  {	-- Brian's Broken Compass
 						["questID"] = 53135,
-						["coord"] = { 37.8, 30.4, 864 },
+						["coord"] = { 37.8, 30.4, VOLDUN },
 					}),
 					crit(5,  {	-- Ofer's Bound Journal
 						["questID"] = 53136,
-						["coord"] = { 26.8, 52.9, 864 },
+						["coord"] = { 26.8, 52.9, VOLDUN },
 					}),
 					crit(6,  {	-- Skye's Pet Rock
 						["questID"] = 53137,
-						["coord"] = { 29.5, 59.5, 864 },
+						["coord"] = { 29.5, 59.5, VOLDUN },
 					}),
 					crit(7,  {	-- Julien's Left Boot
 						["questID"] = 53138,
-						["coord"] = { 52.5, 14.5, 864 },
+						["coord"] = { 52.5, 14.5, VOLDUN },
 					}),
 					crit(8,  {	-- Navarro's Flask
 						["questID"] = 53139,
-						["coord"] = { 43.2, 77.0, 864 },
+						["coord"] = { 43.2, 77.0, VOLDUN },
 					}),
 					crit(9,  {	-- Zach's Canteen
 						["questID"] = 53140,
-						["coord"] = { 47.0, 75.8, 864 },
+						["coord"] = { 47.0, 75.8, VOLDUN },
 					}),
 					crit(10, {	-- Damarcus' Backpack
 						["questID"] = 53141,
-						["coord"] = { 45.9, 30.8, 864 },
+						["coord"] = { 45.9, 30.8, VOLDUN },
 					}),
 					crit(11, {	-- Rachel's Flute
 						["description"] = "Enter the cave at 64.9, 36.3.",
 						["questID"] = 53142,
-						["coord"] = { 66.4, 36.0, 864 },
+						["coord"] = { 66.4, 36.0, VOLDUN },
 					}),
 					crit(12, {	-- Josh's Fang Necklace
 						["questID"] = 53143,
-						["coord"] = { 47.92, 36.73, 864 },
+						["coord"] = { 47.92, 36.73, VOLDUN },
 					}),
 					crit(13, {	-- Portrait of Commander Martens
 						["questID"] = 53144,
-						["coord"] = { 45.2, 91.1, 864 },
+						["coord"] = { 45.2, 91.1, VOLDUN },
 					}),
 					crit(14, {	-- Kurt's Ornate Key
 						["questID"] = 53145,
-						["coord"] = { 62.9, 22.7, 864 },
+						["coord"] = { 62.9, 22.7, VOLDUN },
 					}),
 				}),
 				ach(13011),		-- Scourge of Zem'lan
@@ -392,7 +392,7 @@ _.Zones =
 					["g"] = {
 						crit(12, {	-- Vale Flutterby
 							["crs"] = { 134700 },	-- Vale Flutterby
-							["coord"] = { 52.75, 83.73, 864 }
+							["coord"] = { 52.75, 83.73, VOLDUN },
 						}),
 					},
 				}),
@@ -402,56 +402,56 @@ _.Zones =
 						["description"] = "Hop into the mine cart to pick up the chest at the end of the tracks.",
 						["objectID"] = 280951,	-- Ashvane Spoils
 						["questID"] = 50237,
-						["coord"] = { 46.6, 88.0, 864 },
+						["coord"] = { 46.6, 88.0, VOLDUN },
 						["cr"] = 132662,	-- Mine Cart
 					}),
 					crit(2,  {	-- Grayal's Last Offering
 						["sourceQuests"] = { 50617 },	-- Atul'Aman
 						["objectID"] = 287239,	-- Grayal's Last Offering
 						["questID"] = 51093,
-						["coord"] = { 48.2, 64.7, 864 },
+						["coord"] = { 48.2, 64.7, VOLDUN },
 					}),
 					crit(3,  {	-- Lost Explorer's Bounty
 						["objectID"] = 287304,	-- Lost Explorer's Bounty
 						["questID"] = 51132,
-						["coord"] = { 49.7, 79.3, 864 },
+						["coord"] = { 49.7, 79.3, VOLDUN },
 					}),
 					crit(4,  {	-- Sandfury Reserve
 						["objectID"] = 287318,	-- Sandfury Reserve
 						["questID"] = 51133,
-						["coord"] = { 47.2, 58.5, 864 },
+						["coord"] = { 47.2, 58.5, VOLDUN },
 					}),
 					crit(5,  {	-- Stranded Cache
 						["objectID"] = 287320,	-- Stranded Cache
 						["questID"] = 51135,
-						["coord"] = { 44.5, 26.2, 864 },
+						["coord"] = { 44.5, 26.2, VOLDUN },
 					}),
 					crit(6,  {	-- Excavator's Greed
 						["objectID"] = 287324,	-- Excavator's Greed
 						["questID"] = 51136,
-						["coord"] = { 57.6, 64.6, 864 },
+						["coord"] = { 57.6, 64.6, VOLDUN },
 					}),
 					crit(7,  {	-- Zem'lan's Buried Treasure
 						["description"] = "Click on the Disturbed Sand to spawn the chest.",
 						["objectID"] = 287326,	-- Zem'lan's Buried Treasure
 						["questID"] = 51137,
-						["coord"] = { 29.3, 87.4, 864 },
+						["coord"] = { 29.3, 87.4, VOLDUN },
 					}),
 					crit(8,  {	-- Lost Offerings of Kimbul
 						["objectID"] = 294316,	-- Lost Offerings of Kimbul
 						["questID"] = 52992,
-						["coord"] = { 57.0, 11.1, 864 },
+						["coord"] = { 57.0, 11.1, VOLDUN },
 					}),
 					crit(9,  {	-- Deadwood Chest
 						["objectID"] = 294317,	-- Deadwood Chest
 						["questID"] = 52994,
-						["coord"] = { 40.5, 85.7, 864 },
+						["coord"] = { 40.5, 85.7, VOLDUN },
 					}),
 					crit(10, {	-- Sandsunken Treasure
 						["description"] = "Click the Abandoned Bobber to spawn the chest.",
 						["objectID"] = 294319,	-- Sandsunken Treasure
 						["questID"] = 53004,
-						["coord"] = { 26.5, 45.4, 864 },
+						["coord"] = { 26.5, 45.4, VOLDUN },
 					}),
 				}),
 				ach(13014, {	-- Vorrik's Champion

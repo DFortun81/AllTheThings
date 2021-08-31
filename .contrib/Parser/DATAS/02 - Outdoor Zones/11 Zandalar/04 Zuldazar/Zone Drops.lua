@@ -9,7 +9,7 @@ _.Zones =
 			n(ZONEDROPS, {
 				["maps"] = {	-- Note!! We can list this in these two zones due to them dropping here.  If we add more to Zuldazar then we'll look into adjusting this.
 					NAZMIR,
-					864,	-- Vol'dun
+					VOLDUN,
 				},
 				["g"] = {
 					i(157782, {	-- Pterrordax Egg
