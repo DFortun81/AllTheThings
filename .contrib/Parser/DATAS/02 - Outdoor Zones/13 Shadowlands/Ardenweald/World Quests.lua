@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
-			n(-34,  {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(60872, {	-- A Dangerous Harvest
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

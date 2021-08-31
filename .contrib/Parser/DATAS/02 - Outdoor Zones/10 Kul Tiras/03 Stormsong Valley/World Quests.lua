@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(STORMSONG_VALLEY, {
-			n(-34,  {	-- World Quests
+			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					--[[	raw quest list to check against
 					q(53283, {	-- Flourishing Sea Stalks
@@ -981,7 +981,7 @@ _.Zones =
 
 						{"select", "mapID", STORMSONG_VALLEY},
 						{"pop"},	-- Discard the Map Header and acquire the children.
-						{"where", "headerID", -34 },	-- Select the World Quests Header.
+						{"where", "headerID", WORLD_QUESTS },
 						{"pop"},	-- Discard the World Quests Header and acquire the children.
 						{"is", "headerID" },	-- Select the Item Set Headers.
 						{"pop"},	-- Discard the Item Set Header and acquire the children.

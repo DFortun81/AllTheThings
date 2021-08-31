@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
-			n(-34,  {	-- World Quests
+			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(43985, {	-- A Dark Tide (Flotsam)
 						["lvl"] = 110,

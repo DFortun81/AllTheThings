@@ -316,7 +316,7 @@ profession(MINING, {
 			["maps"] = { HIGHMOUNTAIN },
 		}),
 	}),
-	n(-34,  {	-- World Quests
+	n(WORLD_QUESTS, {
 		["g"] = {
 			n(93237, {	-- Brimstone Destroyer
 				["description"] = "These mobs are only available during a World Quest. They can only be mined one time, similar to the Slice of Bacon cooking quests.",

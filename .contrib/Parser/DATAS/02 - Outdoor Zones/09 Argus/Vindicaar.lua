@@ -583,7 +583,7 @@ _.Zones =
 									{"sub", "legion_relinquished", {"INVTYPE_FINGER"} },	-- Rings Only!
 									{"select", "mapID", BROKEN_ISLES},
 									{"pop"},	-- Discard the Map Headers and acquire all of their children.
-									{"where", "headerID", -34},	-- Select only the World Quest Headers
+									{"where", "headerID", WORLD_QUESTS },
 									{"pop"},	-- Discard the World Quest Headers and acquire all of their children.
 									{"where", "headerID", -385},	-- Select only the Finger Header
 									{"pop"},	-- Discard the item set Headers and acquire all of their children.

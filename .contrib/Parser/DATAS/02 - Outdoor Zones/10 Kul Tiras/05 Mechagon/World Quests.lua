@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(MECHAGON, {
-			n(-34,  {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(56396, {	-- Creakclank
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet

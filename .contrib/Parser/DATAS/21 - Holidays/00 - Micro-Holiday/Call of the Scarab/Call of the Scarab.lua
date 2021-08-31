@@ -320,7 +320,7 @@ _.Holidays = { applyholiday(MICRO_HOLIDAY, holiday(1574965, {	-- Call of the Sca
 				},
 			}),
 		}),
-		n(-34, {	-- World Quests
+		n(WORLD_QUESTS, {
 			q(45737, {	-- Ahn'Qiraj: C'thun [A]
 				["coord"] = { 46.76, 7.53, AHNQIRAJ_THE_FALLEN_KINGDOM },	-- Temple of Ahn'Qiraj
 				["maps"] = {	-- AQ40 Maps

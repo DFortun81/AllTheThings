@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 	tier(BFA_TIER, {
 		n(-10057, {	-- War Effort
 			m(DARKSHORE, {
-				n(-34,  {	-- World Quests
+				n(WORLD_QUESTS, {
 					q(54669, {	-- A Dangerous Combination(A)
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(REVENDRETH, {
-			n(-34,  {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(59902, {	-- A Curious Cache
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },

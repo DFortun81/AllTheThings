@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(ZULDAZAR, {
-			n(-34,  {	-- World Quests
+			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(52923, {	-- Add More to the Collection
 						["provider"] = { "n", 142114 },	-- Talia Sparkbrow
@@ -665,7 +665,7 @@ _.Zones =
 					["sym"] = {
 						{"select", "mapID", ZULDAZAR},
 						{"pop"},	-- Discard the Map Header and acquire the children.
-						{"where", "headerID", -34 },	-- Select the World Quests Header.
+						{"where", "headerID", WORLD_QUESTS },
 						{"pop"},	-- Discard the World Quests Header and acquire the children.
 						{"is", "itemID" },	-- Select the Items.
 						{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
@@ -680,7 +680,7 @@ _.Zones =
 
 						{"select", "mapID", ZULDAZAR},
 						{"pop"},	-- Discard the Map Header and acquire the children.
-						{"where", "headerID", -34 },	-- Select the World Quests Header.
+						{"where", "headerID", WORLD_QUESTS },
 						{"pop"},	-- Discard the World Quests Header and acquire the children.
 						{"is", "headerID" },	-- Select the Item Set Headers.
 						{"pop"},	-- Discard the Item Set Header and acquire the children.

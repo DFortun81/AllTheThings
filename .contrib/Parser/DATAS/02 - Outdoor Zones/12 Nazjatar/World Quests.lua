@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-34,  {	-- World Quests
+		n(WORLD_QUESTS, {
 			n(QUESTS, {
 				un(NEVER_IMPLEMENTED, q(58703)),	-- Unknown quest populating /attwq
 				q(55664, {	-- A Blow to Morale

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(THE_MAW, {
-			n(-34,  {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(64273, {	-- Containing the Helsworn
 					["sourceQuest"] = 63622,	-- Victory in Our Name
 					["isWorldQuest"] = true,

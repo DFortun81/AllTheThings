@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
-			n(-34,    {	-- World Quests
+			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(43964, {	-- A Jarl's Feast
 						["lvl"] = 110,

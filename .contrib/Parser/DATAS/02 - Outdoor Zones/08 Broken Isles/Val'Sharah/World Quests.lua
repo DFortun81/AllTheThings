@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
-			n(-34,  {	-- World Quests
+			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					--[[	raw quest list to check against
 					-- Unknown

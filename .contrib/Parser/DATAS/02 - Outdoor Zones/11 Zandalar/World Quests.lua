@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(ZANDALAR, {
-		n(-34, {	-- World Quests
+		n(WORLD_QUESTS, {
 			i(158151),	-- Zandalari Band
 			i(163857, {	-- Azerite Armor Cache
 				["sym"] = {

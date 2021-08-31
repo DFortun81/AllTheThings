@@ -320,7 +320,7 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 						}),
 					}),
-					n(-34,	{	-- World Quests
+					n(WORLD_QUESTS, {
 						q(55670, {	-- Amathet Raiding Fleet
 							["lvl"] = 120,
 							["coord"] = { 84.2, 55.6, 1527 },
@@ -707,7 +707,7 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					n(-34,	{	-- World Quests
+					n(WORLD_QUESTS, {
 						q(56308, {	-- Assault: Aqir Unearthed
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
@@ -2026,7 +2026,7 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
-					n(-34,	{	-- World Quests
+					n(WORLD_QUESTS, {
 						q(58743, {	-- Dune Buggy
 							-- pet battle
 							["lvl"] = 120,

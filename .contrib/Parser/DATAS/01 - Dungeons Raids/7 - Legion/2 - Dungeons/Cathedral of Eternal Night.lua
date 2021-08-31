@@ -7,7 +7,7 @@ _.Instances = { tier(LEGION_TIER, {
 		["coord"] = { 64.7, 16.6, BROKEN_SHORE },
 		["maps"] = { 845, 846, 847, 848, 849 },
 		["g"] = {
-			n(-34,	{	-- World Quests
+			n(WORLD_QUESTS, {
 				q(46867, {	-- Cathedral of Eternal Night: Fel Beast
 					["sourceQuests"] = { 46773 },	-- The Command Center
 					["isWorldQuest"] = true,

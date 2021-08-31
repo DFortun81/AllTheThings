@@ -345,7 +345,7 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 						}),
 					}),
-					n(-34,	{	-- World Quests
+					n(WORLD_QUESTS, {
 						q(56076, {	-- Abyssal Ritual
 							["lvl"] = 120,
 							["coord"] = { 74.2, 40.0, 1530 },
@@ -716,7 +716,7 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					n(-34,  {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(57008, {	-- Assault: The Warring Clans
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
@@ -1045,7 +1045,7 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					n(-34,  {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(57728, {	-- Assault: The Endless Swarm
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
@@ -1427,7 +1427,7 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					n(-34,  {	-- World Quests
+					n(WORLD_QUESTS, {
 						q(58747, {	-- Brain Tickling
 							["f"] = 101,	-- Battle Pet
 							["lvl"] = 120,

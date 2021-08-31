@@ -11,7 +11,7 @@ _.Instances = { tier(BFA_TIER, {
 		},
 		["lvl"] = 110,
 		["g"] = {
-			n(-34,  {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(51453, {	-- Shrine of the Storm: Behold, Pure Water
 					["isWorldQuest"] = true,
 					["lvl"] = 120,

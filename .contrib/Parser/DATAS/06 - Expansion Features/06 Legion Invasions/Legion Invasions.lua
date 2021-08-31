@@ -27,7 +27,7 @@ _.ExpansionFeatures =
 				["sym"] = {
 					{"select", "headerID", -543},	-- Select Legion Invasions
 					{"pop"},	-- Push all of the groups contained to the processing layer.
-					{"where", "headerID", -34 },	-- Select the World Quest header.
+					{"where", "headerID", WORLD_QUESTS },
 					{"pop"},	-- Push all of the groups contained to the processing layer.
 					{"select", "itemID", 147216},	-- Dauntless Hood
 					{"select", "itemID", 147221},	-- Dauntless Choker

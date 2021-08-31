@@ -8,7 +8,7 @@ _.Holidays =
 	holiday(1572478, {	-- Thousand Boat Bash
 		["u"] = MICRO_HOLIDAY,
 		["groups"] = bubbleDown({ ["u"] = MICRO_HOLIDAY }, {
-			n(-34, bubbleDown({	-- World Quests
+			n(WORLD_QUESTS, bubbleDown({
 				["description"] = "Thousand Boat Bash must be available for this World Quest to display.",
 				["isWorldQuest"] = true,
 				["maps"] = { THOUSAND_NEEDLES },
