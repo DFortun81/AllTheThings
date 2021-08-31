@@ -10,7 +10,6 @@ _.ExpansionFeatures =
 		["maps"] = { VALSHARAH, HIGHMOUNTAIN, STORMHEIM, AZSUNA },
 		["questID"] = 47063,	-- Tracking Quest
 		["isWorldQuest"] = true,
-		["repeatable"] = true,
 		["maps"] = {
 			BROKEN_ISLES,	-- Stormheim Invasion Scenario
 			865,	-- Stormheim Invasion Scenario: Upper Ship Floor
