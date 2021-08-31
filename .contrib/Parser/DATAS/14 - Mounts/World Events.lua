@@ -12,7 +12,7 @@ _.Mounts =
 		un(31, i(172023, {	-- Frostwolf Snarler
 			["races"] = HORDE_ONLY,
 		})),
-		un(24, i(37828)),	-- Great Brewfest Kodo
+		un(BREWFEST, i(37828)),	-- Great Brewfest Kodo
 		un(26, i(37012)),	-- Headless Horseman's Mount
 		i(133543),			-- Infinite Timereaver
 		i(129922),			-- Ironbound Wraithcharger
@@ -21,7 +21,7 @@ _.Mounts =
 		un(31, i(172022, {	-- Stormpike Battle Ram
 			["races"] = ALLIANCE_ONLY,
 		})),
-		un(24, i(33977)),	-- Swift Brewfest Ram
+		un(BREWFEST, i(33977)),	-- Swift Brewfest Ram
 		i(72140),			-- Swift Forest Strider
 		un(HOLIDAY_LOVEINTHEAIR, i(72146)),	-- Swift Lovebird
 		un(HOLIDAY_NOBLEGARDEN, i(72145)),	-- Swift Springstrider

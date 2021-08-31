@@ -14,7 +14,7 @@ _.Achievements =
 {
 	n(-9962, {	-- World Events
 		n(-9955, {	-- General
-			un(24, ach(1683, {		-- Brewmaster (Brewfest)
+			un(BREWFEST, ach(1683, {	-- Brewmaster
 				title(101),				-- Brewmaster
 				crit(1),				-- The Brewfest Diet
 				crit(2),				-- Brew of the Month

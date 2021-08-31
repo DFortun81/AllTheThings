@@ -6,7 +6,7 @@ _.Achievements =
 {
 	n(-9969, {	-- Feats of Strength
 		n(-10031, {	-- Mounts
-			un(24, ach(3496)),	-- A Brew-FAST Mount
+			un(BREWFEST, ach(3496)),	-- A Brew-FAST Mount
 			un(REMOVED_FROM_GAME, ach(430)),	-- Amani War Bear
 			ach(4626),			-- And I'll Form the Head!
 			ach(885),			-- Ashes of Al'ar

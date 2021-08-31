@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = 24},
+_.Holidays = bubbleDown({["u"] = BREWFEST},
 {
 	holiday(235442, {	-- Brewfest
 		n(ACHIEVEMENTS, {

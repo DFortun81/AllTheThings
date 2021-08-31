@@ -255,7 +255,7 @@ TAZAVESH_THE_VEILED_MARKET_WORLD = 2016;
 -- TODO: Match Classic. (Left = Original, Right = Classic)
 -- That means find all the numerical values and update them to use constants and then sync them.
 BREWFEST = 24;--1000;
-CHILDRENS_WEEK = 30;--1001;		
+CHILDRENS_WEEK = 30;--1001;
 DARKMOON_FAIRE = 1012;
 DAY_OF_THE_DEAD = 27;--1002;
 FEAST_OF_WINTER_VEIL = 29;--1003;

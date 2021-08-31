@@ -5,6 +5,6 @@
 _.Holidays =
 {
 	holiday(235442, {	-- Brewfest
-		["u"] = 24,	-- Brewfest
+		["u"] = BREWFEST,
 	}),
 };

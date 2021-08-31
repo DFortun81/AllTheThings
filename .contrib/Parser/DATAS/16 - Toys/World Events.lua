@@ -91,8 +91,8 @@ _.Toys =
 			i(138202),	-- Sparklepony XL
 		}),
 		holiday(235442, {	-- Brewfest
-			["u"] = 24,
-			["g"] = sharedData({["u"] = 24,}, {
+			["u"] = BREWFEST,
+			["g"] = sharedData({["u"] = BREWFEST,}, {
 				i(116758),	-- Brewfest Banner
 				i(169865),	-- Brewfest Chowdown Trophy
 				i(71137),	-- Brewfest Keg Pony
