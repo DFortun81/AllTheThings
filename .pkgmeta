@@ -18,6 +18,6 @@ license-output: LICENSE.txt
 tools-used:
     - data-tools
 
-#manual-changelog:
-#  filename: CHANGELOG.md
-#  markup-type: markdown
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
