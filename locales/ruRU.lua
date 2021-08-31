@@ -892,7 +892,7 @@ for key,value in pairs({
 			[-970] = "Набор C",										-- Set C
 			[-971] = "Набор D",										-- Set D
 
-			--TODO: [-976] = "Korthian Sets",						-- Korthian Sets
+			[-976] = "Комплекты Кортии",								-- Korthian Sets
 			[-1001] = "Черный ящик",
 
 	-- Warrior order hall lore items TODO: localize
@@ -1512,7 +1512,7 @@ for key,value in pairs({
 	[209845] = "Соблазнительный напиток",	-- Mouthwatering Brew
 	[211424] = "Алхимический свиток",	-- Alchemy Scroll
 	[211754] = "Любопытный текст",	-- Curious Text
-	--TODO: [211807] = "Mogu Chest",	-- Mogu Chest
+	[211807] = "Добыча могу",	-- Mogu Chest	--TODO: This was manually translated
 	[212181] = "Древняя статуя",	-- Ancient Statute
 	[212389] = "Свиток с предсказанием",	-- Scroll of Auspice
 	[213362] = "Корабельный сейф",	-- Ship's Locker
@@ -1526,7 +1526,7 @@ for key,value in pairs({
 	[213653] = "Пандаренская острога",	-- Pandaren Fishing Spear
 	[213741] = "Древний посох цзинь-юй",	-- Ancient Jinyu Staff
 	[213742] = "Молот Десяти Громов",	-- Hammer of Ten Thunders
-	--TODO: [213743] = "Jade Infused Blade",	-- Jade Infused Blade
+	[213743] = "Заряженный нефритом клинок",	-- Jade Infused Blade	--TODO: This was manually translated
 	[213748] = "Пандаренский ритуальный камень",	-- Pandaren Ritual Stone
 	[213749] = "Посох тайного мастера",	-- Staff of the Hidden Master
 	[213750] = "Каменная скрижаль сауроков",	-- Saurok Stone Tablet
@@ -2693,7 +2693,7 @@ for key,value in pairs({
 	[327592] = "Зачарованный замок",	-- Enchanted Lock
 	[327596] = "Расколотый глубинный кристалл",	-- Broken Abyssal Focus
 	[327669] = "Заключенный хмелементаль",	-- Contained Alemental
-	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
+	[328413] = "Тотем хозенов",	-- Hozen Totem	--TODO: This was manually translated
 	[329641] = "Разыскиваются: Крысанчик и Турботрогг",	-- Wanted: Junkbrat and Roadtrogg
 	[329783] = "Светящийся чародейский сундук",	-- Glowing Arcane Trunk
 	[329805] = "Странный кристалл",	-- Strange Crystal
@@ -3010,7 +3010,7 @@ for key,value in pairs({
 	[369339] = "Тайник Верных Утробе",	-- Mawsworn Cache
 	[369340] = "Ларец с кортийскими реликвиями",	-- Korthian Relic Box
 	[369341] = "Тайник Верных Утробе",	-- Mawsworn Cache
-	--TODO: [369432] = "Misplaced Venthyr Tome",	-- Misplaced Venthyr Tome
+	[369432] = "Потерянная вентирская книга",	-- Misplaced Venthyr Tome
 	[369437] = "Тайник Разлома",	-- Riftbound Cache
 	[369438] = "Тайник Разлома",	-- Riftbound Cache
 	[369439] = "Тайник Разлома",	-- Riftbound Cache
@@ -3102,7 +3102,7 @@ for key,value in pairs({
 	-- Seasonal Filters
 		[1000] = {4, "|CFF00FFDEДля этого требуется Хмельной фестиваль.|r", "Хмельной фестиваль"},
 		[1001] = {4, "|CFF00FFDEДля этого требуется Детская неделя.|r", "Детская неделя"},
-		[1012] = {4, "|CFF00FFDEДля этого требуется Праздник ярмарки Новолуния.|r", "Ярмарка Новолуния" },
+		[1012] = {4, "|CFF00FFDEДля этого требуется Ярмарка Новолуния.|r", "Ярмарка Новолуния" },
 		[1002] = {4, "|CFF00FFDEДля этого требуется День мертвых.|r", "День мертвых"},
 		[1003] = {4, "|CFF00FFDEДля этого требуется Зимний Покров.|r", "Зимний Покров"},
 		[1009] = {4, "|CFF00FFDEДля этого требуется Празднество фейерверков.|r", "Празднество фейерверков" },
