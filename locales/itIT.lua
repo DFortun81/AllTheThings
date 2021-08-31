@@ -1235,6 +1235,7 @@ for key,value in pairs({
 	[179697] = "Cassa del Tesoro dell'Arena",	-- Arena Treasure Chest
 	[179827] = "Wanted/Missing/Lost & Found",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	[179832] = "Cuscino Decorato di Pillaclencher",	-- Pillaclencher's Ornate Pillow
+	[180229] = "Jinxed Hoodoo Pile",	-- Jinxed Hoodoo Pile	--TODO: This was taken from classic Wowhead
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "Battered Tackle Box",	-- Battered Tackle Box	--TODO: This was taken from classic Wowhead
 	[180368] = "Tablet of Madness",	-- Tablet of Madness	--TODO: This was taken from classic Wowhead
@@ -1245,6 +1246,7 @@ for key,value in pairs({
 	[180503] = "Libro di Ricette Insabbiato",	-- Sandy Cookbook
 	[180633] = "Lacrima di Cristallo",	-- Crystalline Tear
 	[180642] = "Cassa Incospicua",	-- Inconspicuous Crate
+	[180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt	--TODO: This was taken from classic Wowhead
 	[180690] = "Grande Forziere dello Scarabeo",	-- Large Scarab Coffer
 	[180691] = "Forziere dello Scarabeo",	-- Scarab Coffer
 	[180717] = "The Scarab Gong",	-- The Scarab Gong	--TODO: This was taken from classic Wowhead
@@ -1850,6 +1852,7 @@ for key,value in pairs({
 	[233658] = "Borsa dell'Avventuriero",	-- Adventurer's Pouch
 	[233696] = "Importanti Rifornimenti per Esplorazioni",	-- Important Exploration Supplies
 	[233697] = "Cassa dei Saberon",	-- Saberon Stash
+	[233715] = "Bottino di Ditodorato",	-- Goldtoe's Plunder
 	[233773] = "Sacca di Erbe",	-- Bag of Herbs
 	[233792] = "Mucchio di Macerie",	-- Pile of Rubble
 	[233917] = "Femore dell'Improbabilità",	-- Femur of Improbability
@@ -1940,6 +1943,7 @@ for key,value in pairs({
 	[236406] = "Antica Cassa degli Ogre",	-- Ancient Ogre Cache
 	[236407] = "Antica Cassa degli Ogre",	-- Ancient Ogre Cache
 	[236483] = "Dono degli Antichi",	-- Gift of the Ancients
+	[236610] = "Dono dello Spirito",	-- Spirit's Gift
 	[236693] = "Munizioni dell'Orda di Ferro",	-- Iron Horde Munitions
 	[236715] = "Teschio Strano",	-- Odd Skull
 	[236755] = "Scrigno Impolverato",	-- Dusty Lockbox
@@ -1953,6 +1957,7 @@ for key,value in pairs({
 	[239194] = "Cassa di Norana",	-- Norana's Cache
 	[239198] = "Cassa di Isaari",	-- Isaari's Cache
 	[239328] = "Scrigno del Capitano",	-- Captain's Foot Locker
+	[239791] = "Appunti sulla Caccia alle Reliquie",	-- Relic Hunting Notes
 	[239803] = "Cassa del Tesoro",	-- Treasure Chest
 	[239828] = "Confini della Realtà",	-- Edge of Reality
 	--TODO: [239901] = "Voidtalon Egg",	-- Voidtalon Egg

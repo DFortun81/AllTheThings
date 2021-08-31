@@ -1235,6 +1235,7 @@ for key,value in pairs({
 	[179697] = "투기장 보물상자",	-- Arena Treasure Chest
 	[179827] = "구인광고/분실물센터/지명수배",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	[179832] = "하녀 필라클렌처의 화려한 베개",	-- Pillaclencher's Ornate Pillow
+	[180229] = "불길한 흑마술 더미",	-- Jinxed Hoodoo Pile	--TODO: This was taken from classic Wowhead
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "찌그러진 낚시상자",	-- Battered Tackle Box	--TODO: This was taken from classic Wowhead
 	[180368] = "광기의 서판",	-- Tablet of Madness	--TODO: This was taken from classic Wowhead
@@ -1245,6 +1246,7 @@ for key,value in pairs({
 	[180503] = "모래투성이 요리책",	-- Sandy Cookbook
 	[180633] = "눈물의 결정",	-- Crystalline Tear
 	[180642] = "눈에 띄지 않는 궤짝",	-- Inconspicuous Crate
+	--TODO: [180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt
 	[180690] = "큰 스카라베 상자",	-- Large Scarab Coffer
 	[180691] = "스카라베 상자",	-- Scarab Coffer
 	[180717] = "스카라베 징",	-- The Scarab Gong	--TODO: This was taken from classic Wowhead
@@ -1850,6 +1852,7 @@ for key,value in pairs({
 	--TODO: [233658] = "Adventurer's Pouch",	-- Adventurer's Pouch
 	[233696] = "탐사용 주요 보급품",	-- Important Exploration Supplies
 	[233697] = "서슬니 보관함",	-- Saberon Stash
+	--TODO: [233715] = "Goldtoe's Plunder",	-- Goldtoe's Plunder
 	--TODO: [233773] = "Bag of Herbs",	-- Bag of Herbs
 	[233792] = "돌 무더기",	-- Pile of Rubble
 	[233917] = "비현실성의 다리뼈",	-- Femur of Improbability
@@ -1940,6 +1943,7 @@ for key,value in pairs({
 	[236406] = "고대 오우거 보관함",	-- Ancient Ogre Cache
 	[236407] = "고대 오우거 보관함",	-- Ancient Ogre Cache
 	--TODO: [236483] = "Gift of the Ancients",	-- Gift of the Ancients
+	--TODO: [236610] = "Spirit's Gift",	-- Spirit's Gift
 	[236693] = "강철 호드 탄약",	-- Iron Horde Munitions
 	[236715] = "이상한 해골",	-- Odd Skull
 	[236755] = "먼지투성이 금고",	-- Dusty Lockbox
@@ -1953,6 +1957,7 @@ for key,value in pairs({
 	[239194] = "노라나의 보관함",	-- Norana's Cache
 	[239198] = "이사리의 보관함",	-- Isaari's Cache
 	[239328] = "선장의 사물함",	-- Captain's Foot Locker
+	[239791] = "유물 사냥 기록",	-- Relic Hunting Notes
 	[239803] = "보물 상자",	-- Treasure Chest
 	[239828] = "현실의 경계선",	-- Edge of Reality
 	[239901] = "공허발톱 알",	-- Voidtalon Egg

@@ -1236,6 +1236,7 @@ for key,value in pairs({
 	[179697] = "Baú do Tesouro da Arena",	-- Arena Treasure Chest
 	[179827] = "Procurados/Desaparecidos/Achados e Perdidos",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	[179832] = "Travesseiro Ornado da Alma Fada",	-- Pillaclencher's Ornate Pillow
+	[180229] = "Amontoado de Mandingas Azarentas",	-- Jinxed Hoodoo Pile	--TODO: This was taken from classic Wowhead
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "Caixa de Ferramentas Desgastada",	-- Battered Tackle Box	--TODO: This was taken from classic Wowhead
 	[180368] = "Tabuleta da Loucura",	-- Tablet of Madness	--TODO: This was taken from classic Wowhead
@@ -1246,6 +1247,7 @@ for key,value in pairs({
 	[180503] = "Livro de Receitas da Sandy",	-- Sandy Cookbook
 	[180633] = "Lágrima Cristalina",	-- Crystalline Tear
 	[180642] = "Caixote Inconspícuo",	-- Inconspicuous Crate
+	--TODO: [180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt
 	[180690] = "Grande Arca do Escaravelho",	-- Large Scarab Coffer
 	[180691] = "Arca do Escaravelho",	-- Scarab Coffer
 	--TODO: [180717] = "The Scarab Gong",	-- The Scarab Gong
@@ -1851,6 +1853,7 @@ for key,value in pairs({
 	[233658] = "Bolsa do Aventureiro",	-- Adventurer's Pouch
 	[233696] = "Suprimentos de Exploração Importantes",	-- Important Exploration Supplies
 	[233697] = "Esconderijo Saberon",	-- Saberon Stash
+	[233715] = "Saque de Dedouro.",	-- Goldtoe's Plunder
 	[233773] = "Saco de Ervas",	-- Bag of Herbs
 	[233792] = "Pilha de Destroços",	-- Pile of Rubble
 	[233917] = "Fêmur da Improbabilidade",	-- Femur of Improbability
@@ -1941,6 +1944,7 @@ for key,value in pairs({
 	[236406] = "Tesouro Ôgrico Ancestral",	-- Ancient Ogre Cache
 	[236407] = "Tesouro Ôgrico Ancestral",	-- Ancient Ogre Cache
 	[236483] = "Dádiva dos Ancestrais",	-- Gift of the Ancients
+	[236610] = "Dádiva do Espírito",	-- Spirit's Gift
 	[236693] = "Munições da Horda de Ferro",	-- Iron Horde Munitions
 	[236715] = "Caveira Estranha",	-- Odd Skull
 	[236755] = "Cofre Empoeirado",	-- Dusty Lockbox
@@ -1954,6 +1958,7 @@ for key,value in pairs({
 	[239194] = "Baú de Norana",	-- Norana's Cache
 	[239198] = "Baú de Isaari",	-- Isaari's Cache
 	[239328] = "Baú do Capitão",	-- Captain's Foot Locker
+	[239791] = "Notas da Caça à Relíquia",	-- Relic Hunting Notes
 	[239803] = "Baú do Tesouro",	-- Treasure Chest
 	[239828] = "Gume da Realidade",	-- Edge of Reality
 	[239901] = "Ovo de Rasga-caos",	-- Voidtalon Egg
