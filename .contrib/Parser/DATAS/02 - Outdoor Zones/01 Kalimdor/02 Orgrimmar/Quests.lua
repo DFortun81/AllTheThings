@@ -487,23 +487,23 @@ _.Zones =
 									q(58087, {	-- Destroying the Source
 										["sourceQuests"] = { 53899 },	-- On the Outskirts
 										["provider"] = { "n", 145980 },	-- Nisha
-										["coord"] = { 74.8, 63.0, 862 },
+										["coord"] = { 74.8, 63.0, ZULDAZAR },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 862 },	-- Zuldazar
+										["maps"] = { ZULDAZAR },
 									}),
 									q(53901, {	-- Explosions Always Work
 										["sourceQuests"] = { 53899 },	-- On the Outskirts
 										["provider"] = { "n", 145980 },	-- Nisha
-										["coord"] = { 74.8, 63.0, 862 },
+										["coord"] = { 74.8, 63.0, ZULDAZAR },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 862 },	-- Zuldazar
+										["maps"] = { ZULDAZAR },
 									}),
 									q(53900, {	-- We'll Use Their Weapons
 										["sourceQuests"] = { 53899 },	-- On the Outskirts
 										["provider"] = { "n", 145980 },	-- Nisha
-										["coord"] = { 74.8, 63.0, 862 },
+										["coord"] = { 74.8, 63.0, ZULDAZAR },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 862 },	-- Zuldazar
+										["maps"] = { ZULDAZAR },
 									}),
 									q(53902, {	-- Taking Out the Tidecaller
 										["sourceQuests"] = {
@@ -512,16 +512,16 @@ _.Zones =
 											53900,	-- We'll Use Their Weapons
 										},
 										["provider"] = { "n", 145980 },	-- Nisha
-										["coord"] = { 74.8, 63.0, 862 },
+										["coord"] = { 74.8, 63.0, ZULDAZAR },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 862 },	-- Zuldazar
+										["maps"] = { ZULDAZAR },
 									}),
 									q(54027, {	-- Threat Contained
 										["sourceQuests"] = { 53902 },	-- Taking Out the Tidecaller
 										["provider"] = { "n", 145980},	-- Nisha
-										["coord"] = { 74.8, 63.0, 862 },
+										["coord"] = { 74.8, 63.0, ZULDAZAR },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 862 },	-- Zuldazar
+										["maps"] = { ZULDAZAR },
 									}),
 									q(53903, {	-- Meet with Meerah
 										["sourceQuests"] = { 54027 },	-- Threat Contained

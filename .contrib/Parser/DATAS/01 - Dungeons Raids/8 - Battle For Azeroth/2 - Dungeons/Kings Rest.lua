@@ -4,7 +4,7 @@
 
 _.Instances = { tier(BFA_TIER, {
 	inst(1041, {	-- Kings' Rest
-		["coord"] = { 37.6, 39.4, 862 },
+		["coord"] = { 37.6, 39.4, ZULDAZAR },
 		["maps"] = {
 			1004,	-- Kings' Rest
 		},

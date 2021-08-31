@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(862, {	-- Zuldazar
+		m(ZULDAZAR, {
 			n(VENDORS, {
 				n(140137, {	-- Bugcatacher Cal'yoon
-					["coord"] = { 77.0, 15.8, 862 },
+					["coord"] = { 77.0, 15.8, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29901),	-- Blue Moth Egg
@@ -18,7 +18,7 @@ _.Zones =
 					},
 				}),
 				n(134345, {	-- Collector Kojo <Tortollan Seekers Emissary>
-					["coord"] = { 71.5, 30.3, 862 },
+					["coord"] = { 71.5, 30.3, ZULDAZAR },
 					["g"] = {
 						i(161514, {	-- Antiquity Handler's Gloves
 							["cost"] = 14000000,	-- 1,400g
@@ -119,7 +119,7 @@ _.Zones =
 					},
 				}),
 				n(161590, {	-- Jinxy Blastwheel <Profession Liason>
-					["coord"] = { 52.7, 58.2, 862 },
+					["coord"] = { 52.7, 58.2, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = pvp({
 						i(171153, {	-- Formula: Uncanny Combatant's Sorcerous Scepter (Rank 2)
@@ -323,7 +323,7 @@ _.Zones =
 					}),
 				}),
 				n(136219, {	-- Mona <Butterflies>
-					["coord"] = { 71.6, 29.4, 862 },
+					["coord"] = { 71.6, 29.4, ZULDAZAR },
 					["g"] = {
 						i(163508, {	-- Butterfly in a Jar
 							["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
@@ -331,7 +331,7 @@ _.Zones =
 					},
 				}),
 				n(135249, {	-- Meatminder Teki
-					["coord"] = { 66.8, 41.6, 862 },
+					["coord"] = { 66.8, 41.6, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(157781),	-- Extra-Chunky Dino Food
@@ -341,14 +341,14 @@ _.Zones =
 				}),
 				n(142839, {	-- Old Jen'tay
 					["description"] = "When you have 150 BfA Inscription, speak to the NPC and he will teach you the technique.",
-					["coord"] = { 76.2, 39.8, 862 },
+					["coord"] = { 76.2, 39.8, ZULDAZAR },
 					["g"] = {
 						i(162030),	-- Technique: Glyph of the Humble Flyer
 					},
 				}),
 				n(142552, {	-- Ozgrom Ragefang <Profession Liason>
 					["races"] = HORDE_ONLY,
-					["coord"] = { 52.6, 58.2, 862 },
+					["coord"] = { 52.6, 58.2, ZULDAZAR },
 					["g"] = pvp({
 						i(162439, {	-- Pattern: Honorable Combatant's Satin Belt (Rank 2)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
@@ -755,7 +755,7 @@ _.Zones =
 					}),
 				}),
 				n(143555, {	-- Xander Silberman
-					["coord"] = { 51.6, 58.2, 862 },
+					["coord"] = { 51.6, 58.2, ZULDAZAR },
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
 					["g"] = {

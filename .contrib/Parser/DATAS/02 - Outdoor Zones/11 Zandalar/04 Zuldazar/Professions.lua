@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(862, {	-- Zuldazar
+		m(ZULDAZAR, {
 			n(-38, {	-- Professions
 				prof(HERBALISM, {
 					-- Siren's Pollen
@@ -55,7 +55,7 @@ _.Zones =
 				prof(JEWELCRAFTING, {
 					q(55582, {	-- Atal'Dazar: Not All That Glitters... (A)
 						["provider"] = { "n", 150894 },	-- Shrine of Nature
-						["coord"] = { 43.2, 64.3, 862 },
+						["coord"] = { 43.2, 64.3, ZULDAZAR },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49584,	-- The Missing Chapter (A)
 						["requireSkill"] = JEWELCRAFTING,

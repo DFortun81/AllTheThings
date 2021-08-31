@@ -197,30 +197,30 @@ _.Achievements =
 			})),
 			ach(13048, {	-- Life Finds a Way... To Die!
 				crit(1, {		-- Thuderfoot the Brutosaur slain
-					["coord"] = { 67.7, 29.0, 862 },	-- Zuldazar
+					["coord"] = { 67.7, 29.0, ZULDAZAR },
 					["description"] = "This rare shares respawn with Azuresail (67.10 26.57) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
 				}),
 				crit(2, {		-- Azuresail the Diemetrodon slain
-					["coord"] = { 67.1, 26.5, 862 },	-- Zuldazar
+					["coord"] = { 67.1, 26.5, ZULDAZAR },
 					["description"] = "This rare shares respawn with Thuderfoot (67.73 29.03) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
 				}),
 				crit(3, {		-- Queenfeather the Ravasaur slain
-					["coord"] = { 71.1, 40.3, 862 },	-- Zuldazar
+					["coord"] = { 71.1, 40.3, ZULDAZAR },
 				}),
 				crit(4, {		-- Makatau the Pterrordax slain
 					["coord"] = { 26.3, 73.3, 863 },	-- Nazmir
 				}),
 				crit(5, {		-- The Sabertusk Empress slain
-					["coord"] = { 52.3, 47.7, 862 },	-- Zuldazar
+					["coord"] = { 52.3, 47.7, ZULDAZAR },
 				}),
 				crit(6, {		-- Sludgecrusher the Anklyodon slain
-					["coord"] = { 66.0, 22.3, 862 },	-- Zuldazar
+					["coord"] = { 66.0, 22.3, ZULDAZAR },
 				}),
 				crit(7, {		-- Nol'ixwan the Direhorn slain
-					["coord"] = { 61.6, 25.3, 862 },	-- Zuldazar
+					["coord"] = { 61.6, 25.3, ZULDAZAR },
 				}),
 				crit(8, {		-- King K'tal the Devilsaur slain
-					["coord"] = { 71.2, 21.8, 862 },	-- Zuldazar
+					["coord"] = { 71.2, 21.8, ZULDAZAR },
 				}),
 			}),
 			h(ach(12614, {	-- Loa Expectations

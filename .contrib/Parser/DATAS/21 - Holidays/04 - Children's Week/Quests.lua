@@ -888,7 +888,7 @@ _.Holidays =
 							131346,	-- Children's Week
 						},
 						["maps"] = {
-							862,	-- Zuldazar
+							ZULDAZAR,
 							THE_GREAT_SEAL,	-- Dazar'alor
 							HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 							DAZARALOR,
@@ -1521,14 +1521,14 @@ _.Holidays =
 							131346,	-- Children's Week
 						},
 						["maps"] = {
-							862,	-- Zuldazar
+							ZULDAZAR,
 							THE_GREAT_SEAL,	-- Dazar'alor
 							HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 							DAZARALOR,
 						},
 						["coords"] = {
-							{ 49.39, 31.22, 862 },	-- Path Starts
-							{ 48.69, 31.76, 862 },	-- Lair of Gonk
+							{ 49.39, 31.22, ZULDAZAR },	-- Path Starts
+							{ 48.69, 31.76, ZULDAZAR },	-- Lair of Gonk
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,

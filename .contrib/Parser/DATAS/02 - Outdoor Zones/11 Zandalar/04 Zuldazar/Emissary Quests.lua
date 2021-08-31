@@ -5,12 +5,12 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(862, {	-- Zuldazar
+		m(ZULDAZAR, {
 			n(-169, {	-- Emissary Quests
 				q(54451, {	-- Baubles from the Seekers
 					["provider"] = { "n", 134345 },	-- Collector Kojo
 					["lvl"] = 120,
-					["coord"] = { 71.51, 30.35, 862 },
+					["coord"] = { 71.51, 30.35, ZULDAZAR },
 					["repeatable"] = true,
 					["g"] = {
 						i(166245, {	-- Tortollan Seekers Supplies
@@ -24,7 +24,7 @@ _.Zones =
 				q(50604, {	-- Tortollan Seekers
 					["provider"] = { "n", 134345 },	-- Collector Kojo
 					["lvl"] = 120,
-					["coord"] = { 71.51, 30.35, 862 },
+					["coord"] = { 71.51, 30.35, ZULDAZAR },
 					["isDaily"] = true,
 					["g"] = {
 						i(165785, {	-- Tortollan Trader's Stock

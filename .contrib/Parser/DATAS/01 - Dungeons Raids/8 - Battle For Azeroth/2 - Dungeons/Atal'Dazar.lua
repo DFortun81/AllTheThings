@@ -4,7 +4,7 @@
 
 _.Instances = { tier(BFA_TIER, {
 	inst(968, {	-- Atal'Dazar
-		["coord"] = { 43.5, 39.4, 862 },
+		["coord"] = { 43.5, 39.4, ZULDAZAR },
 		["maps"] = {
 			934,	-- Atal'Dazar
 			935,	-- Sacrificial Pits

@@ -197,7 +197,7 @@ _.Zones =
 								i(173736),	-- Layered Information Kernel of E-steam (looted on Alliance -- is there one for each faction, or just two of the same rep token?)
 								i(163621, {	-- Rusted Horde Insignia
 									["description"] = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
-									["coord"] = { 58, 62.6, 862 },
+									["coord"] = { 58.0, 62.6, ZULDAZAR },
 									["g"] = {
 										q(53116, {	-- Rusted Horde Insignia
 											["repeatable"] = true,
@@ -1335,7 +1335,7 @@ _.Zones =
 					},
 				}),
 				n(135447, {	-- Ransa Greyfeather <The Honorbound Emissary>
-					["coord"] = { 58.0, 62.6, 862 },
+					["coord"] = { 58.0, 62.6, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(161532, {	-- Bindings of the Elemental Allies
@@ -1595,7 +1595,7 @@ _.Zones =
 					},
 				}),
 				n(145837, {	-- Violet Shadowmend
-					["coord"] = { 51.6, 57.8, 862 },
+					["coord"] = { 51.6, 57.8, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 					--	i(163974),	-- Bucketshell	-- Listed under PvP w/ CRS

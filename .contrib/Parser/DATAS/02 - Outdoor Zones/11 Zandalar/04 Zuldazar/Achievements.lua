@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(862, {	-- Zuldazar
+		m(ZULDAZAR, {
 			n(ACHIEVEMENTS, {
 				ach(13020, {	-- Bow to Your Masters
 					["collectible"] = false,
@@ -42,31 +42,31 @@ _.Zones =
 					["g"] = {
 						crit(3,  {	-- Tales of de Loa: Gonk
 							["itemID"] = 162657,	-- Tales of de Loa: Gonk
-							["coord"] = { 51.7, 28.3, 862 },
+							["coord"] = { 51.7, 28.3, ZULDAZAR },
 						}),
 						crit(4,  {	-- Tales of de Loa: Gral
 							["itemID"] = 163170,	-- Tales of de Loa: Gral
-							["coord"] = { 75.5, 67.6, 862 },
+							["coord"] = { 75.5, 67.6, ZULDAZAR },
 						}),
 						crit(6,  {	-- Tales of de Loa: Jani
 							["itemID"] = 162656,	-- Tales of de Loa: Jani
-							["coord"] = { 48.5, 54.6, 862 },
+							["coord"] = { 48.5, 54.6, ZULDAZAR },
 						}),
 						crit(9,  {	-- Tales of de Loa: Pa'ku
 							["itemID"] = 162658,	-- Tales of de Loa: Pa'ku
-							["coord"] = { 49.0, 41.3, 862 },
+							["coord"] = { 49.0, 41.3, ZULDAZAR },
 						}),
 						crit(10, {	-- Tales of de Loa: Rezan
 							["itemID"] = 163332,	-- Tales of de Loa: Rezan
-							["coord"] = { 43.8, 76.7, 862 },
+							["coord"] = { 43.8, 76.7, ZULDAZAR },
 						}),
 						crit(12, {	-- Tales of de Loa: Shadra
 							["itemID"] = 163221,	-- Tales of de Loa: Shadra
-							["coord"] = { 47.7, 28.9, 862 },
+							["coord"] = { 47.7, 28.9, ZULDAZAR },
 						}),
 						crit(13, {	-- Tales of de Loa: Torcali
 							["itemID"] = 163739,	-- Tales of de Loa: Torcali
-							["coord"] = { 67.3, 17.6, 862 },
+							["coord"] = { 67.3, 17.6, ZULDAZAR },
 						}),
 					},
 				}),
@@ -77,8 +77,8 @@ _.Zones =
 						crit(3, {	-- Brutosaur of Zuldazar Fed
 							["description"] = "Buy Extra-Dry Fruitcake from Golkada at 71.2, 29.6 and feed it to Irritable Maka'fon.",
 							["coords"] = {
-								{ 71.2, 29.6, 862 },	-- Golkada
-								{ 64.0, 39.2, 862 },	-- Irritable Maka'fon
+								{ 71.2, 29.6, ZULDAZAR },	-- Golkada
+								{ 64.0, 39.2, ZULDAZAR },	-- Irritable Maka'fon
 							},
 							["crs"] = {
 								124034,	-- Golkada <Tasty Morsels>
@@ -95,15 +95,15 @@ _.Zones =
 							["g"] = {
 								crit(17, {	-- Karaga
 									["creatureID"] = 142096,	-- Karaga
-									["coord"] = { 70.6, 29.6, 862 },
+									["coord"] = { 70.6, 29.6, ZULDAZAR },
 								}),
 								crit(18, {	-- Talia Sparkbrow
 									["creatureID"] = 142114,	-- Talia Sparkbrow
-									["coord"] = { 48.4, 35.0, 862 },
+									["coord"] = { 48.4, 35.0, ZULDAZAR },
 								}),
 								crit(19, {	-- Zujai
 									["creatureID"] = 142234,	-- Zujai
-									["coord"] = { 50.6, 24.0, 862 },
+									["coord"] = { 50.6, 24.0, ZULDAZAR },
 								}),
 							},
 						}),
@@ -112,15 +112,15 @@ _.Zones =
 							["g"] = {
 								crit(17, {	-- Karaga
 									["creatureID"] = 142096,	-- Karaga
-									["coord"] = { 70.6, 29.6, 862 },
+									["coord"] = { 70.6, 29.6, ZULDAZAR },
 								}),
 								crit(18, {	-- Talia Sparkbrow
 									["creatureID"] = 142114,	-- Talia Sparkbrow
-									["coord"] = { 48.4, 35.0, 862 },
+									["coord"] = { 48.4, 35.0, ZULDAZAR },
 								}),
 								crit(19, {	-- Zujai
 									["creatureID"] = 142234,	-- Zujai
-									["coord"] = { 50.6, 24.0, 862 },
+									["coord"] = { 50.6, 24.0, ZULDAZAR },
 								}),
 							},
 						}),
@@ -129,15 +129,15 @@ _.Zones =
 							["g"] = {
 								crit(17, {	-- Karaga
 									["creatureID"] = 142096,	-- Karaga
-									["coord"] = { 70.6, 29.6, 862 },
+									["coord"] = { 70.6, 29.6, ZULDAZAR },
 								}),
 								crit(18, {	-- Talia Sparkbrow
 									["creatureID"] = 142114,	-- Talia Sparkbrow
-									["coord"] = { 48.4, 35.0, 862 },
+									["coord"] = { 48.4, 35.0, ZULDAZAR },
 								}),
 								crit(19, {	-- Zujai
 									["creatureID"] = 142234,	-- Zujai
-									["coord"] = { 50.6, 24.0, 862 },
+									["coord"] = { 50.6, 24.0, ZULDAZAR },
 								}),
 							},
 						}),
@@ -146,15 +146,15 @@ _.Zones =
 							["g"] = {
 								crit(17, {	-- Karaga
 									["creatureID"] = 142096,	-- Karaga
-									["coord"] = { 70.6, 29.6, 862 },
+									["coord"] = { 70.6, 29.6, ZULDAZAR },
 								}),
 								crit(18, {	-- Talia Sparkbrow
 									["creatureID"] = 142114,	-- Talia Sparkbrow
-									["coord"] = { 48.4, 35.0, 862 },
+									["coord"] = { 48.4, 35.0, ZULDAZAR },
 								}),
 								crit(19, {	-- Zujai
 									["creatureID"] = 142234,	-- Zujai
-									["coord"] = { 50.6, 24.0, 862 },
+									["coord"] = { 50.6, 24.0, ZULDAZAR },
 								}),
 							},
 						}),
@@ -163,15 +163,15 @@ _.Zones =
 							["g"] = {
 								crit(17, {	-- Karaga
 									["creatureID"] = 142096,	-- Karaga
-									["coord"] = { 70.6, 29.6, 862 },
+									["coord"] = { 70.6, 29.6, ZULDAZAR },
 								}),
 								crit(18, {	-- Talia Sparkbrow
 									["creatureID"] = 142114,	-- Talia Sparkbrow
-									["coord"] = { 48.4, 35.0, 862 },
+									["coord"] = { 48.4, 35.0, ZULDAZAR },
 								}),
 								crit(19, {	-- Zujai
 									["creatureID"] = 142234,	-- Zujai
-									["coord"] = { 50.6, 24.0, 862 },
+									["coord"] = { 50.6, 24.0, ZULDAZAR },
 								}),
 							},
 						}),
@@ -180,15 +180,15 @@ _.Zones =
 							["g"] = {
 								crit(17, {	-- Karaga
 									["creatureID"] = 142096,	-- Karaga
-									["coord"] = { 70.6, 29.6, 862 },
+									["coord"] = { 70.6, 29.6, ZULDAZAR },
 								}),
 								crit(18, {	-- Talia Sparkbrow
 									["creatureID"] = 142114,	-- Talia Sparkbrow
-									["coord"] = { 48.4, 35.0, 862 },
+									["coord"] = { 48.4, 35.0, ZULDAZAR },
 								}),
 								crit(19, {	-- Zujai
 									["creatureID"] = 142234,	-- Zujai
-									["coord"] = { 50.6, 24.0, 862 },
+									["coord"] = { 50.6, 24.0, ZULDAZAR },
 								}),
 							},
 						}),
@@ -197,15 +197,15 @@ _.Zones =
 							["g"] = {
 								crit(17, {	-- Karaga
 									["creatureID"] = 142096,	-- Karaga
-									["coord"] = { 70.6, 29.6, 862 },
+									["coord"] = { 70.6, 29.6, ZULDAZAR },
 								}),
 								crit(18, {	-- Talia Sparkbrow
 									["creatureID"] = 142114,	-- Talia Sparkbrow
-									["coord"] = { 48.4, 35.0, 862 },
+									["coord"] = { 48.4, 35.0, ZULDAZAR },
 								}),
 								crit(19, {	-- Zujai
 									["creatureID"] = 142234,	-- Zujai
-									["coord"] = { 50.6, 24.0, 862 },
+									["coord"] = { 50.6, 24.0, ZULDAZAR },
 								}),
 							},
 						}),
@@ -214,15 +214,15 @@ _.Zones =
 							["g"] = {
 								crit(17, {	-- Karaga
 									["creatureID"] = 142096,	-- Karaga
-									["coord"] = { 70.6, 29.6, 862 },
+									["coord"] = { 70.6, 29.6, ZULDAZAR },
 								}),
 								crit(18, {	-- Talia Sparkbrow
 									["creatureID"] = 142114,	-- Talia Sparkbrow
-									["coord"] = { 48.4, 35.0, 862 },
+									["coord"] = { 48.4, 35.0, ZULDAZAR },
 								}),
 								crit(19, {	-- Zujai
 									["creatureID"] = 142234,	-- Zujai
-									["coord"] = { 50.6, 24.0, 862 },
+									["coord"] = { 50.6, 24.0, ZULDAZAR },
 								}),
 							},
 						}),
@@ -231,15 +231,15 @@ _.Zones =
 							["g"] = {
 								crit(17, {	-- Karaga
 									["creatureID"] = 142096,	-- Karaga
-									["coord"] = { 70.6, 29.6, 862 },
+									["coord"] = { 70.6, 29.6, ZULDAZAR },
 								}),
 								crit(18, {	-- Talia Sparkbrow
 									["creatureID"] = 142114,	-- Talia Sparkbrow
-									["coord"] = { 48.4, 35.0, 862 },
+									["coord"] = { 48.4, 35.0, ZULDAZAR },
 								}),
 								crit(19, {	-- Zujai
 									["creatureID"] = 142234,	-- Zujai
-									["coord"] = { 50.6, 24.0, 862 },
+									["coord"] = { 50.6, 24.0, ZULDAZAR },
 								}),
 							},
 						}),
@@ -248,15 +248,15 @@ _.Zones =
 							["g"] = {
 								crit(17, {	-- Karaga
 									["creatureID"] = 142096,	-- Karaga
-									["coord"] = { 70.6, 29.6, 862 },
+									["coord"] = { 70.6, 29.6, ZULDAZAR },
 								}),
 								crit(18, {	-- Talia Sparkbrow
 									["creatureID"] = 142114,	-- Talia Sparkbrow
-									["coord"] = { 48.4, 35.0, 862 },
+									["coord"] = { 48.4, 35.0, ZULDAZAR },
 								}),
 								crit(19, {	-- Zujai
 									["creatureID"] = 142234,	-- Zujai
-									["coord"] = { 50.6, 24.0, 862 },
+									["coord"] = { 50.6, 24.0, ZULDAZAR },
 								}),
 							},
 						}),
@@ -273,7 +273,7 @@ _.Zones =
 							},
 							["questID"] = 50308,
 							["itemID"] = 156963,	-- Golden Ravasaur Egg
-							["coord"] = { 71.6, 41.2, 862 },	-- Trashpile turn-in
+							["coord"] = { 71.6, 41.2, ZULDAZAR },	-- Trashpile turn-in
 							["crs"] = {
 								131560,	-- Feral Ravasaur
 								122504,	-- Savagemane Ravasaur
@@ -281,11 +281,11 @@ _.Zones =
 						}),
 						crit(4,  {	-- Big Hunter Mon
 							["sourceQuests"] = { 50332 },	-- Big Hunter Mon
-							["coord"] = { 66.2, 16.6, 862 },	-- Trashpile pick-up
+							["coord"] = { 66.2, 16.6, ZULDAZAR },	-- Trashpile pick-up
 						}),
 						crit(7,  {	-- The Great Hat Robbery
 							["sourceQuests"] = { 50381 },	-- The Great Hat Robbery
-							["coord"] = { 61.9, 46.9, 862 },
+							["coord"] = { 61.9, 46.9, ZULDAZAR },
 						}),
 						crit(10, {	-- Feathered Viper Scale
 							["sourceQuests"] = {
@@ -294,7 +294,7 @@ _.Zones =
 							},
 							["questID"] = 50431,
 							["itemID"] = 157794,	-- Feathered Viper Scale
-							["coord"] = { 62.7, 20.5, 862 },	-- Trashpile turn-in
+							["coord"] = { 62.7, 20.5, ZULDAZAR },	-- Trashpile turn-in
 							["crs"] = {
 								132410,	-- Feathered Viper
 								132409,	-- Feathered Viper
@@ -350,27 +350,27 @@ _.Zones =
 				}),
 				ach(13048, {	-- Life Finds a Way... To Die!
 					crit(1, {		-- Thuderfoot the Brutosaur slain
-						["coord"] = { 67.73, 29.03, 862 },
+						["coord"] = { 67.73, 29.03, ZULDAZAR },
 						["description"] = "This rare shares respawn with Azuresail (67.10 26.57) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
 					}),
 					crit(2, {		-- Azuresail the Diemetrodon slain
-						["coord"] = { 67.10, 26.57, 862 },
+						["coord"] = { 67.10, 26.57, ZULDAZAR },
 						["description"] = "This rare shares respawn with Thuderfoot (67.73 29.03) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
 					}),
 					crit(3, {		-- Queenfeather the Ravasaur slain
-						["coord"] = { 71.13, 40.34, 862 },
+						["coord"] = { 71.13, 40.34, ZULDAZAR },
 					}),
 					crit(5, {		-- The Sabertusk Empress slain
-						["coord"] = { 52.39, 47.71, 862 },
+						["coord"] = { 52.39, 47.71, ZULDAZAR },
 					}),
 					crit(6, {		-- Sludgecrusher the Anklyodon slain
-						["coord"] = { 66.08, 22.38, 862 },
+						["coord"] = { 66.08, 22.38, ZULDAZAR },
 					}),
 					crit(7, {		-- Nol'ixwan the Direhorn slain
-						["coord"] = { 61.62, 25.37, 862 },
+						["coord"] = { 61.62, 25.37, ZULDAZAR },
 					}),
 					crit(8, {		-- King K'tal the Devilsaur slain
-						["coord"] = { 71.24, 21.84, 862 },
+						["coord"] = { 71.24, 21.84, ZULDAZAR },
 					}),
 				}),
 				ach(12861, {	-- Master of Duels
@@ -389,7 +389,7 @@ _.Zones =
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {
 						n(143314, {	-- Bane of the Woods
-							["coord"] = { 45.6, 79.0, 862 },
+							["coord"] = { 45.6, 79.0, ZULDAZAR },
 							["g"] = {
 								crit(2),	-- Bane of the Woods
 							},
@@ -426,11 +426,11 @@ _.Zones =
 					["g"] = {
 						crit(7, {	-- Jungle Gulper
 							["crs"] = { 130445 },	-- Jungle Gulper
-							["coord"] = { 62.72, 16.52, 862 }
+							["coord"] = { 62.72, 16.52, ZULDAZAR },
 						}),
 						crit(8, {	-- Crested Gekkota
 							["crs"] = { 130716, 130748, 130749 },	-- Crested Gekkota
-							["coord"] = { 67.11, 41.89, 862 }
+							["coord"] = { 67.11, 41.89, ZULDAZAR },
 						}),
 					},
 				}),
@@ -441,7 +441,7 @@ _.Zones =
 						o(281092, {	-- Witch Doctor's Hoard
 							["criteriaID"] = 2,
 							["questID"] = 50259,
-							["coord"] = { 64.7, 21.7, 862 },
+							["coord"] = { 64.7, 21.7, ZULDAZAR },
 							["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						}),
 						o(279609, {	-- Spoils of Pandaria
@@ -453,31 +453,31 @@ _.Zones =
 						o(281655, {	-- Gift of the Brokenhearted
 							["criteriaID"] = 4,
 							["questID"] = 50582,	-- 50950 for using the Incense prior to opening the chest itself.
-							["coord"] = { 51.5, 26.7, 862 },
+							["coord"] = { 51.5, 26.7, ZULDAZAR },
 							["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						}),
 						o(277561, {	-- Warlord's Cache
 							["criteriaID"] = 5,
 							["questID"] = 49257,
-							["coord"] = { 49.5, 65.3, 862 },
+							["coord"] = { 49.5, 65.3, ZULDAZAR },
 							["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						}),
 						o(281898, {	-- Dazar's Forgotten Chest
 							["criteriaID"] = 6,
 							["questID"] = 50707,
-							["coord"] = { 38.8, 34.4, 862 },
+							["coord"] = { 38.8, 34.4, ZULDAZAR },
 							["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						}),
 						o(284455, {	-- The Exile's Lament
 							["criteriaID"] = 8,
 							["questID"] = 50949,
-							["coord"] = { 71.8, 16.7, 862 },
+							["coord"] = { 71.8, 16.7, ZULDAZAR },
 							["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						}),
 						o(290725, {	-- Riches of Tor'nowa
 							["criteriaID"] = 10,
 							["questID"] = 51624,
-							["coord"] = { 52.9, 47.2, 862 },
+							["coord"] = { 52.9, 47.2, ZULDAZAR },
 							["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						}),
 					},

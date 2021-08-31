@@ -26,7 +26,7 @@ _.Zones =
 					},
 					["classes"] = { PRIEST },
 					["coords"] = {
-						{ 78.0, 36.7, 862 },
+						{ 78.0, 36.7, ZULDAZAR },
 						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
@@ -51,7 +51,7 @@ _.Zones =
 					["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
 					["provider"] = { "n", 134345 },	-- Collector Kojo
 					["classes"] = { PRIEST },
-					["coord"] = { 71.4, 30.2, 862 },
+					["coord"] = { 71.4, 30.2, ZULDAZAR },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54141, {	-- The Azsharan Medallion
@@ -93,7 +93,7 @@ _.Zones =
 					["sourceQuests"] = { 54117 },	-- Every Little Death Helps
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
 					["coords"] = {
-						{ 78.0, 36.7, 862 },
+						{ 78.0, 36.7, ZULDAZAR },
 						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
@@ -101,7 +101,7 @@ _.Zones =
 					["sourceQuests"] = { 54118 },	-- Every Little Death Helps
 					["classes"] = { PRIEST },
 					["coords"] = {
-						{ 78.0, 36.7, 862 },
+						{ 78.0, 36.7, ZULDAZAR },
 						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),

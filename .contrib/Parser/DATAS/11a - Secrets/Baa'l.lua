@@ -11,7 +11,7 @@ _.Secrets =
 		["maps"] = {
 			FROSTFIRE_RIDGE,
 			BROKEN_SHORE,
-			862,
+			ZULDAZAR,
 			863,
 			864,
 			875,
@@ -47,7 +47,7 @@ _.Secrets =
 				["model"] = 1068320,
 				["modelScale"] = .5,
 				["questID"] = 52818,
-				["coord"] = { 31.5, 36.0, 862 },	-- Cave Entrance
+				["coord"] = { 31.5, 36.0, ZULDAZAR },	-- Cave Entrance
 				["sourceQuest"] = 52810,	-- Step 3: Second Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 4:|r Head to Zuldazar.  The next pebble is hidden in a cave behind Atal'dazar (not inside the instance itself).  You can get there without flying, but it's tricky and will probably require a Goblin Glider — if you haven't unlocked flying, you can find video guides online showing you how to navigate to the correct area.  If you do have flying, simply fly to the coordinates provided, and once you get there you'll see the tops of a couple trees on the side of the mountain.  Underneath the trees you'll find a cave entrance.\n\nRun into the cave, and on the left-hand side you'll see a root growing up against the cave wall.  The pebble is right next to it, around |cFFFFFFFF31.9, 35.3.|r\n\nAgain, there's no text when you click on it, so shift+click anywhere in an ATT list to refresh your collection.\n",
 			}),

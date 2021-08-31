@@ -353,7 +353,7 @@ _.Zones =
 					}),
 					q(49582, {	-- Atal'Dazar: Not All That Glitters...
 						["provider"] = { "n", 150894 },	-- Shrine of Nature
-						["coord"] = { 43.2, 64.3, 862 },
+						["coord"] = { 43.2, 64.3, ZULDAZAR },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49587,	-- The Shrine of Nature
 						["requireSkill"] = JEWELCRAFTING,
@@ -362,7 +362,7 @@ _.Zones =
 					}),
 					q(55596, {	-- Setting Things Right (H)
 						["provider"] = { "n", 152496 },	-- Shrine of Nature
-						["coord"] = { 43.2, 64.3, 862 },
+						["coord"] = { 43.2, 64.3, ZULDAZAR },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49582,	-- Atal'Dazar: Not All That Glitters...
 						["requireSkill"] = JEWELCRAFTING,

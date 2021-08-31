@@ -1068,9 +1068,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {	-- Extinguishing Zandalar
 					crit(1, {	-- Zuldazar
-						["coord"] = { 53.3, 48.1, 862 },
+						["coord"] = { 53.3, 48.1, ZULDAZAR },
 						["races"] = ALLIANCE_ONLY,
-						["maps"] = { 862 },	-- Zuldazar
+						["maps"] = { ZULDAZAR },
 					}),
 					crit(2, {	-- Nazmir
 						["coord"] = { 40.0, 74.0, 863 },
@@ -1739,9 +1739,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					crit(1, {	-- Zuldazar
-						["coord"] = { 53.3, 48.1, 862 },
+						["coord"] = { 53.3, 48.1, ZULDAZAR },
 						["races"] = HORDE_ONLY,
-						["maps"] = { 862 },	-- Zuldazar
+						["maps"] = { ZULDAZAR },
 					}),
 					crit(2, {	-- Nazmir
 						["coord"] = { 40.0, 74.3, 863 },
@@ -3197,9 +3197,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(54744, {	-- Desecrate this Fire! — Zuldazar
 						["provider"] = { "o", 316795 },	-- Horde Bonfire
-						["coord"] = { 53.3, 48.1, 862 },
+						["coord"] = { 53.3, 48.1, ZULDAZAR },
 						["timeline"] = { "added 8.0.1" },
-						["maps"] = { 862 },	-- Zuldazar
+						["maps"] = { ZULDAZAR },
 					}),
 					q(13458, {	-- Desecrate this Fire! — Zul'Drak
 						["provider"] = { "o", 194048 },	-- Horde Bonfire
@@ -4313,9 +4313,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(54745, {	-- Honor the Flame — Zuldazar
 						["qg"] = 148944,	-- Zuldazar Flame Keeper
-						["coord"] = { 53.3, 48.1, 862 },
+						["coord"] = { 53.3, 48.1, ZULDAZAR },
 						["timeline"] = { "added 8.0.1" },
-						["maps"] = { 862 },	-- Zuldazar
+						["maps"] = { ZULDAZAR },
 					}),
 					q(13500, {	-- Honor the Flame — Zul'Drak
 						["qg"] = 32816,	-- Zul'Drak Flame Keeper

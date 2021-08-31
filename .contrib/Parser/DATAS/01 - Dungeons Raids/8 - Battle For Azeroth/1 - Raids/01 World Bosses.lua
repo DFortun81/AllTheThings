@@ -186,10 +186,10 @@ _.Instances = { tier(BFA_TIER, {
 				["isWorldQuest"] = true,
 				["questID"] = 52169,	-- The Matriarch (WQ)
 				["isRaid"] = true,
-				["coord"] = { 69.0, 31.0, 862 },
+				["coord"] = { 69.0, 31.0, ZULDAZAR },
 				["lvl"] = { 50 },
 				["maps"] = {	-- all Zuldazar maps
-					862,	-- Zuldazar
+					ZULDAZAR,
 					1166,	-- Zanchul
 					1167,	-- Zanchul 2
 					1176,	-- Breath of Pa'ku, middle level

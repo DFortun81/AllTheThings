@@ -5,7 +5,7 @@
 _.Instances = { tier(BFA_TIER, {
 	inst(1012, {	-- The MOTHERLODE!!
 		["coords"] = {
-			{ 39.2, 71.5, 862 },	-- Alliance, Zuldazar
+			{ 39.2, 71.5, ZULDAZAR },	-- Alliance
 			{ 44.3, 92.6, DAZARALOR },	-- Horde
 		},
 		["maps"] = { 1010 },	-- The Motherlode

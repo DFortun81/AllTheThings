@@ -4723,11 +4723,11 @@ profession(TAILORING, {
 							["description"] = "This vendor spawns randomly when you close a time rift.",
 							["coords"] = {
 								-- Zuldazar
-								{ 45.0, 39.0, 862 },	-- Ledge right before entrance to Atal'Dazar
-								{ 54.0, 61.0, 862 },	-- On the beach below Mugambala
-								{ 59.0, 75.0, 862 },	-- NW corner of Tuck Isle
-								{ 73.0, 67.0, 862 },	-- East of Seeker's Outpost
-								{ 71.0, 35.0, 862 },	-- Behind Savagelands Devilsaur
+								{ 45.0, 39.0, ZULDAZAR },	-- Ledge right before entrance to Atal'Dazar
+								{ 54.0, 61.0, ZULDAZAR },	-- On the beach below Mugambala
+								{ 59.0, 75.0, ZULDAZAR },	-- NW corner of Tuck Isle
+								{ 73.0, 67.0, ZULDAZAR },	-- East of Seeker's Outpost
+								{ 71.0, 35.0, ZULDAZAR },	-- Behind Savagelands Devilsaur
 								-- Nazmir
 								{ 38.0, 58.0, 863 },	-- Under arch east side of Terrace of Sorrows
 								{ 55.0, 21.0, 863 },

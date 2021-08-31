@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(862, {	-- Zuldazar
+		m(ZULDAZAR, {
 			filter(101, {	-- Pet Battle
 				p(2537, {	-- Baby Zandalari Raptor
 					["crs"] = { 148517 },	-- Baby Zandalari Raptor

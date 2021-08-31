@@ -435,43 +435,43 @@ _.ExpansionFeatures =
 					--	ZULDAZAR FOOTHOLD STARS HERE
 						q(51201, {	-- The Troll's Tale
 							["provider"] = { "n", 136197 },	-- Brigadier Thom
-							["coord"] = { 77.5, 54.6, 862 },	-- Zuldazar
+							["coord"] = { 77.5, 54.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51308 },	-- Zuldazar Foothold
 						}),
 						q(51190, {	-- Granting a Reprieve
 							["provider"] = { "n", 136197 },	-- Brigadier Thom
-							["coord"] = { 77.5, 54.6, 862 },	-- Zuldazar
+							["coord"] = { 77.5, 54.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51201 },	-- The Troll's Tale
 						}),
 						q(51544, {	-- Disarming the Cannons
 							["provider"] = { "n", 136197 },	-- Brigadier Thom
-							["coord"] = { 77.5, 54.6, 862 },	-- Zuldazar
+							["coord"] = { 77.5, 54.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51201 },	-- The Troll's Tale
 						}),
 						q(51192, {	-- A Lack of Surplus
 							["provider"] = { "n", 136192 },	-- Degdod
-							["coord"] = { 77.1, 55.5, 862 },	-- Zuldazar
+							["coord"] = { 77.1, 55.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51201 },	-- The Troll's Tale
 						}),
 						q(51193, {	-- That One's Mine
 							["provider"] = { "n", 136192 },	-- Degdod
-							["coord"] = { 77.1, 55.5, 862 },	-- Zuldazar
+							["coord"] = { 77.1, 55.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51201 },	-- The Troll's Tale
 						}),
 						q(51191, {	-- Save Them All
 							["provider"] = { "n", 136195 },	-- Medic Feorea
-							["coord"] = { 77.1, 55.5, 862 },	-- Zuldazar
+							["coord"] = { 77.1, 55.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51201 },	-- The Troll's Tale
 						}),
 						q(51418, {	-- Xibala
 							["provider"] = { "n", 135620 },	-- Kelsey Steelspark
-							["coord"] = { 77.4, 55.2, 862 },	-- Zuldazar
+							["coord"] = { 77.4, 55.2, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								51192,	-- A Lack of Surplus
@@ -485,18 +485,18 @@ _.ExpansionFeatures =
 						q(51331, {	-- Mole Machinations
 							["sourceQuests"] = { 51418 },	-- Xibala
 							["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
-							["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
+							["coord"] = { 40.7, 70.8, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(51309, {	-- Rocks of Ragnaros
 							["sourceQuests"] = { 51418 },	-- Xibala
 							["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
-							["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
+							["coord"] = { 40.7, 70.8, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(51359, {	-- Fragment of the Firelands
 							["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
-							["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
+							["coord"] = { 40.7, 70.8, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								51331,	-- Mole Machinations
@@ -505,7 +505,7 @@ _.ExpansionFeatures =
 						}),
 						q(52003, {	-- Champion: Kelsey Steelspark
 							["provider"] = { "n", 135620 },	-- Kelsey Steelspark
-							["coord"] = { 40.7, 70.6, 862 },	-- Zuldazar
+							["coord"] = { 40.7, 70.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51359 },	-- Fragment of the Firelands
 							["g"] = {
@@ -514,7 +514,7 @@ _.ExpansionFeatures =
 						}),
 						q(51968, {	-- Return to Boralus (Zuldazar)
 							["provider"] = { "n", 135620 },	-- Kelsey Steelspark
-							["coord"] = { 40.7, 70.6, 862 },	-- Zuldazar
+							["coord"] = { 40.7, 70.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52003 },	-- Champion: Kelsey Steelspark
 							-- I did this foothold third and received a Glowing Azerite Crystal (250 Azerite) as my reward.
@@ -760,25 +760,25 @@ _.ExpansionFeatures =
 					--	A GOLDEN OPPORTUNITY STARTS HERE
 						q(52205, {	-- Bilgewater Bonanza Go Boom
 							["provider"] = { "n", 140477 },	-- Magister Umbric
-							["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
+							["coord"] = { 40.6, 70.7, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52173 },	-- The Void Elves Stand Ready
 						}),
 						q(52204, {	-- The Void Solution
 							["provider"] = { "n", 140477 },	-- Magister Umbric
-							["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
+							["coord"] = { 40.6, 70.7, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52173 },	-- The Void Elves Stand Ready
 						}),
 						q(52203, {	-- Find the Paper Trail
 							["provider"] = { "n", 140477 },	-- Magister Umbric
-							["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
+							["coord"] = { 40.6, 70.7, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52173 },	-- The Void Elves Stand Ready
 						}),
 						q(52241, {	-- A Greedy Goblin's Paradise
 							["provider"] = { "n", 140477 },	-- Magister Umbric
-							["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
+							["coord"] = { 40.6, 70.7, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52205,	-- Bilgewater Bonanza Go Boom
@@ -788,7 +788,7 @@ _.ExpansionFeatures =
 						}),
 						q(52247, {	-- Chasing Gallywix
 							["provider"] = { "n", 140712 },	-- Magister Umbric
-							["coord"] = { 40.3, 39.7, 862 },	-- Zuldazar
+							["coord"] = { 40.3, 39.7, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52241 },	-- A Greedy Goblin's Paradise
 						}),
@@ -905,31 +905,31 @@ _.ExpansionFeatures =
 					--	THE STRIKE ON ZULDAZAR STARTS HERE
 						q(52282, {	-- How to Sink a Zandalari Battleship
 							["provider"] = { "n", 140257 },	-- Halford Wyrmbane
-							["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
+							["coord"] = { 40.7, 70.8, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52473 },	-- Bringing Down the Fleet
 						}),
 						q(52281, {	-- Under the Cover of Swiftwing
 							["provider"] = { "n", 141287 },	-- Falstad Wildhammer
-							["coord"] = { 40.7, 70.8, 862 },	-- Zuldazar
+							["coord"] = { 40.7, 70.8, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52282 },	-- How to Sink a Zandalari Battleship
 						}),
 						q(52284, {	-- Ship Logs
 							["provider"] = { "n", 141290 },	-- Kelsey Steelspark
-							["coord"] = { 57.6, 87.5, 862 },	-- Zuldazar
+							["coord"] = { 57.6, 87.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52281 },	-- Under the Cover of Swiftwing
 						}),
 						q(52283, {	-- Sabotaging the Pa'ku
 							["provider"] = { "n", 141289 },	-- John J. Keeshan
-							["coord"] = { 57.6, 87.5, 862 },	-- Zuldazar
+							["coord"] = { 57.6, 87.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52281 },	-- Under the Cover of Swiftwing
 						}),
 						q(52285, {	-- The Enlarged Miniaturized Submarine
 							["provider"] = { "n", 141290 },	-- Kelsey Steelspark
-							["coord"] = { 57.6, 87.5, 862 },	-- Zuldazar
+							["coord"] = { 57.6, 87.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52283,	-- Sabotaging the Pa'ku
@@ -938,31 +938,31 @@ _.ExpansionFeatures =
 						}),
 						q(52290, {	-- My Enemy's Enemy is My Disguise
 							["provider"] = { "n", 141291 },	-- Shandris Feathermoon
-							["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
+							["coord"] = { 48.8, 68.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52285 },	-- The Enlarged Miniaturized Submarine
 						}),
 						q(52286, {	-- Right Beneath Their Nose
 							["provider"] = { "n", 141291 },	-- Shandris Feathermoon
-							["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
+							["coord"] = { 48.8, 68.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52290 },	-- My Enemy's Enemy is My Disguise
 						}),
 						q(52287, {	-- Intelligence Denial
 							["provider"] = { "n", 141291 },	-- Shandris Feathermoon
-							["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
+							["coord"] = { 48.8, 68.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52290 },	-- My Enemy's Enemy is My Disguise
 						}),
 						q(52288, {	-- Void Vacation
 							["provider"] = { "n", 141288 },	-- Magister Umbric
-							["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
+							["coord"] = { 48.8, 68.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52290 },	-- My Enemy's Enemy is My Disguise
 						}),
 						q(52289, {	-- Victory is Assured
 							["provider"] = { "n", 141291 },	-- Shandris Feathermoon
-							["coord"] = { 48.8, 68.5, 862 },	-- Zuldazar
+							["coord"] = { 48.8, 68.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52287,	-- Intelligence Denial
@@ -972,13 +972,13 @@ _.ExpansionFeatures =
 						}),
 						q(52291, {	-- Victory Was Assured
 							["provider"] = { "n", 140257 },	-- Halford Wyrmbane
-							["coord"] = { 40.4, 71.5, 862 },	-- Zuldazar
+							["coord"] = { 40.4, 71.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52289 },	-- Victory is Assured
 						}),
 						q(52788, {	-- Leave None Alive
 							["provider"] = { "n", 141719 },	-- Halford Wyrmbane
-							["coord"] = { 35.1, 77.2, 862 },	-- Zuldazar
+							["coord"] = { 35.1, 77.2, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52291 },	-- Victory Was Assured
 						}),
@@ -1132,31 +1132,31 @@ _.ExpansionFeatures =
 					--	THE SLEEPER AGENT STARTS HERE
 						q(54193, {	-- This is Huge!
 							["provider"] = { "n", 147151 },	-- Kelsey Steelspark
-							["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+							["coord"] = { 41.1, 70.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54192 },	-- Sensitive Intel
 						}),
 						q(54194, {	-- Real Big Power
 							["provider"] = { "n", 147148 },	-- Megs
-							["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+							["coord"] = { 41.1, 70.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54193 },	-- This is Huge
 						}),
 						q(54195, {	-- A Beast with Brains
 							["provider"] = { "n", 147148 },	-- Megs
-							["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+							["coord"] = { 41.1, 70.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54194 },	-- Real Big Power
 						}),
 						q(54196, {	-- Out of Options
 							["provider"] = { "n", 147228 },	-- Grong
-							["coord"] = { 48.2, 55.6, 862 },	-- Zuldazar
+							["coord"] = { 48.2, 55.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54195 },	-- A Beast with Brains
 						}),
 						q(54197, {	-- Freedom for the Da'kani
 							["provider"] = { "n", 147228 },	-- Grong
-							["coord"] = { 48.2, 55.6, 862 },	-- Zuldazar
+							["coord"] = { 48.2, 55.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54195 },	-- A Beast with Brains
 						}),
@@ -1170,31 +1170,31 @@ _.ExpansionFeatures =
 						}),
 						q(54199, {	-- The Needs of the Many
 							["provider"] = { "n", 147228 },	-- Grong
-							["coord"] = { 46.8, 50.5, 862 },	-- Zuldazar
+							["coord"] = { 46.8, 50.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54198 },	-- Bittersweet Goodbyes
 						}),
 						q(54200, {	-- Bring the Base
 							["provider"] = { "n", 147149 },	-- Morton Cogswald
-							["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+							["coord"] = { 41.1, 70.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54199 },	-- The Needs of the Many
 						}),
 						q(54201, {	-- Fit for Grong
 							["provider"] = { "n", 147311 },	-- Morton Cogswald
-							["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+							["coord"] = { 41.1, 70.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54200 },	-- Bring the Base
 						}),
 						q(54202, {	-- Calibrate the Core
 							["provider"] = { "n", 147148 },	-- Megs
-							["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+							["coord"] = { 41.1, 70.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54200 },	-- Bring the Base
 						}),
 						q(54203, {	-- The Embiggining
 							["provider"] = { "n", 147148 },	-- Megs
-							["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+							["coord"] = { 41.1, 70.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								54202,	-- Calibrate the Core
@@ -1203,19 +1203,19 @@ _.ExpansionFeatures =
 						}),
 						q(54204, {	-- Total Temple Destruction
 							["provider"] = { "n", 147148 },	-- Megs
-							["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+							["coord"] = { 41.1, 70.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54203 },	-- The Embiggining
 						}),
 						q(54205, {	-- A Nice Nap
 							["provider"] = { "n", 147519 },	-- Kelsey Steelspark
-							["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+							["coord"] = { 41.1, 70.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54204 },	-- Total Temple Destruction
 						}),
 						q(54206, {	-- The Sleeper Agent
 							["provider"] = { "n", 147519 },	-- Kelsey Steelspark
-							["coord"] = { 41.1, 70.6, 862 },	-- Zuldazar
+							["coord"] = { 41.1, 70.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54205 },	-- A Nice Nap
 						}),
@@ -1229,14 +1229,14 @@ _.ExpansionFeatures =
 						q(54169, {	-- The Treasury Heist
 							["sourceQuests"] = { 54171 },	-- The Abyssal Scepter
 							["provider"] = { "n", 146982 },	-- Lady Jaina Proudmoore
-							["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
+							["coord"] = { 40.6, 70.7, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["maps"] = { 1348 },	-- Zandalari Treasury
 						}),
 						q(54510, {	-- Mischief Managed
 							["sourceQuests"] = { 54169 },	-- The Treasury Heist
 							["provider"] = { "n", 146982 },	-- Lady Jaina Proudmoore
-							["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
+							["coord"] = { 40.6, 70.7, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["modID"] = 5,
 							["g"] = {

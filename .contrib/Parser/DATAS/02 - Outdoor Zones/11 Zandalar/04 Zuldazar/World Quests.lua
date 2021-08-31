@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(862, {	-- Zuldazar
+		m(ZULDAZAR, {
 			n(-34,  {	-- World Quests
 				n(QUESTS, {
 					q(52923, {	-- Add More to the Collection
@@ -510,7 +510,7 @@ _.Zones =
 								["description"] = "This rare is only up when its associated world quest is active.",
 								["questID"] = 50673,
 								["isDaily"] = true,	-- this questID seems to reset / trigger again when you complete the WQ
-								["coord"] = { 49.0, 29.2, 862 },
+								["coord"] = { 49.0, 29.2, ZULDAZAR },
 								["g"] = {
 									i(162617),	-- Shadraspawn Shoulderpads
 								},
@@ -663,7 +663,7 @@ _.Zones =
 				}),
 				i(165863, {	-- Zandalari Weapons Cache
 					["sym"] = {
-						{"select", "mapID", 862},	-- Zuldazar
+						{"select", "mapID", ZULDAZAR},
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "headerID", -34 },	-- Select the World Quests Header.
 						{"pop"},	-- Discard the World Quests Header and acquire the children.
@@ -678,7 +678,7 @@ _.Zones =
 						{"select", "itemID", 158150},	-- Loa-Pledged Drape
 						{"finalize"},	-- Push the items to the finalized list.
 
-						{"select", "mapID", 862},	-- Zuldazar
+						{"select", "mapID", ZULDAZAR},
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "headerID", -34 },	-- Select the World Quests Header.
 						{"pop"},	-- Discard the World Quests Header and acquire the children.

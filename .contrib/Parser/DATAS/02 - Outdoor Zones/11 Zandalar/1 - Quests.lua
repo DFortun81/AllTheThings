@@ -20,7 +20,7 @@ _.Zones =
 					},
 				}),
 				q(54117, {	-- Every Little Death Helps
-					["coord"] = { 78.0, 36.7, 862 },
+					["coord"] = { 78.0, 36.7, ZULDAZAR },
 					["sourceQuest"] = 54174,	-- Orders from Azshara
 					["races"] = HORDE_ONLY,
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
@@ -32,7 +32,7 @@ _.Zones =
 					},
 					["classes"] = { PRIEST },
 					["coords"] = {
-						{ 78.0, 36.7, 862 },
+						{ 78.0, 36.7, ZULDAZAR },
 						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
@@ -55,7 +55,7 @@ _.Zones =
 				q(54174, {	-- Orders from Azshara
 					["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
 					["races"] = HORDE_ONLY,
-					["coord"] = { 71.4, 30.2, 862 },
+					["coord"] = { 71.4, 30.2, ZULDAZAR },
 					["provider"] = { "n", 134345 },	-- Collector Kojo
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
 				}),
@@ -63,7 +63,7 @@ _.Zones =
 					["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
 					["classes"] = { PRIEST },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 71.4, 30.2, 862 },
+					["coord"] = { 71.4, 30.2, ZULDAZAR },
 					["provider"] = { "n", 134345 },	-- Collector Kojo
 				}),
 				q(54172, {	-- The Azsharan Medallion
@@ -105,7 +105,7 @@ _.Zones =
 					["sourceQuests"] = { 54117 },	-- Every Little Death Helps
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
 					["coords"] = {
-						{ 78.0, 36.7, 862 },
+						{ 78.0, 36.7, ZULDAZAR },
 						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
@@ -113,7 +113,7 @@ _.Zones =
 					["sourceQuests"] = { 54118 },	-- Every Little Death Helps
 					["classes"] = { PRIEST },
 					["coords"] = {
-						{ 78.0, 36.7, 862 },
+						{ 78.0, 36.7, ZULDAZAR },
 						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),

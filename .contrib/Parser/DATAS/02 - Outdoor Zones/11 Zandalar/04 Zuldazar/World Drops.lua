@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(862, {	-- Zuldazar
+		m(ZULDAZAR, {
 			n(-226, {	-- World Drops
 				["maps"] = {
 					TIRAGARDE_SOUND,	-- During Assualts

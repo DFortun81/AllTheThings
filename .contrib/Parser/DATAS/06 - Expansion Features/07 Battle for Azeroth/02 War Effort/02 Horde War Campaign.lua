@@ -120,19 +120,19 @@ _.ExpansionFeatures =
 						q(52746, {	-- The War Cache
 							["sourceQuests"] = { 52749 },	-- The War Campaign
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 51.2, 100.8, 862 },	-- Zuldazar
+							["coord"] = { 51.2, 100.8, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(53333, {	-- Time for War
 							["sourceQuests"] = { 52746 },	-- The War Cache
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(51770, {	-- Mission from the Warchief
 							["sourceQuests"] = { 53333 },	-- Time for War
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								follower(1065),	-- Arcanist Valtrois
@@ -141,19 +141,19 @@ _.ExpansionFeatures =
 						q(51771, {	-- War of Shadows
 							["sourceQuests"] = { 51770 },	-- Mission from the Warchief
 							["provider"] = { "n", 138708 },	-- Garona Halforcen
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(53079, {	-- Reinforcements
 							["sourceQuests"] = { 51771 },	-- War of Shadows
 							["provider"] = { "n", 138708 },	-- Garona Halforceen
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(51803, {	-- The Kul Tiras Campaign
 						--	["sourceQuests"] = { 51770 },	-- Mission from the Warchief -- NOTE: this SQ is not needed as of 31.December.2019
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(53050, {	-- Deeper Into Kul Tiras
@@ -164,7 +164,7 @@ _.ExpansionFeatures =
 						q(51979, {	-- The Ongoing Campaign
 							["sourceQuests"] = { 51771 },	-- War of Shadows
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(53056, {	-- Pushing Our Influence
@@ -176,25 +176,25 @@ _.ExpansionFeatures =
 						q(52444, {	-- The Final Foothold
 							["sourceQuests"] = { 53056 },	-- Pushing Our Influence
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						-- Drustvar Foothold
 						q(51801, {	-- Foothold: Drustvar
 							["provider"] = { "n", 144630 },	-- Kul Tiras Campaign (Table)
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(51332, {	-- A Trip Across the Ocean
 							["sourceQuests"] = { 51801 },	-- Foothold: Drustvar
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(51340, {	-- Drustvar Ho!
 							["sourceQuests"] = { 51332 },	-- A Trip Across the Ocean
 							["provider"] = { "n", 136683 },	-- Trade Prince Gallywix
-							["coord"] = { 58.5, 62.6, 862 },
+							["coord"] = { 58.5, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(51224, {	-- Profit and Reconnaissance
@@ -245,13 +245,13 @@ _.ExpansionFeatures =
 						-- Stormsong Valley Foothold
 						q(51802, {	-- Foothold: Stormsong Valley
 							["provider"] = { "n", 144630 },	-- Kul Tiras Campaign (Table)
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(51526, {	-- The Warlord's Call
 							["sourceQuests"] = { 51802 },	-- Foothold: Stormsong Valley
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(51532, {	-- Storming In
@@ -334,13 +334,13 @@ _.ExpansionFeatures =
 						-- Tiragarde Sound Foothold
 						q(51800, {	-- Foothold: Tiragarde Sound
 							["provider"] = { "n", 144630 },	-- Kul Tiras Campaign (Table)
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(51421, {	-- Shiver Me Timbers
 							["sourceQuests"] = { 51800 },	-- Foothold: Tiragarde Sound
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 							["maps"] = { TIRAGARDE_SOUND },
 						}),
@@ -474,7 +474,7 @@ _.ExpansionFeatures =
 								51984,	-- Return to Zuldazar (Tiragarde Foothold)
 							},
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(51590, {	-- Into the Heart of Tiragarde
@@ -574,7 +574,7 @@ _.ExpansionFeatures =
 								51601,	-- The Bridgeport Ride
 							},
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 							["maps"] = { DRUSTVAR },
 						}),
@@ -630,7 +630,7 @@ _.ExpansionFeatures =
 								51789,	-- What Remains of Marshal M. Valentine
 							},
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(51798, {	-- No Price Too High
@@ -699,7 +699,7 @@ _.ExpansionFeatures =
 								52122,	-- To Be Forsaken
 							},
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 							["maps"] = { 1157 },	-- The Great Sea
 						}),
@@ -790,7 +790,7 @@ _.ExpansionFeatures =
 								52978,	-- With Prince in Tow
 							},
 							["provider"] = { "n", 141644 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(52186, {	-- The Bulk of the Guard
@@ -872,7 +872,7 @@ _.ExpansionFeatures =
 						q(52861, {	-- Champion: Lilian Voss
 							["sourceQuests"] = { 52192 },	-- The Aid of the Tides
 							["provider"] = { "n", 141961 },	-- Lilian Voss
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								follower(1062),	-- Lilian Voss
@@ -881,7 +881,7 @@ _.ExpansionFeatures =
 						q(53003, {	-- A Cycle of Hatred
 							["sourceQuests"] = { 52192 },	-- The Aid of the Tides
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						-- Tides of Vengeance
@@ -895,7 +895,7 @@ _.ExpansionFeatures =
 						q(53851, {	-- Our War Continues
 							["sourceQuests"] = { 53003 },	-- A Cycle of Hatred
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(53852, {	-- Azerite Denied
@@ -904,7 +904,7 @@ _.ExpansionFeatures =
 								53851,	-- Our War Continues
 							},
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 							["maps"] = { TIRAGARDE_SOUND },
 						}),
@@ -967,19 +967,19 @@ _.ExpansionFeatures =
 						q(53941, {	-- A Mech for a Goblin
 							["sourceQuests"] = { 53981 },	-- The Day is Won
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54123, {	-- It Belongs in My Mech!
 							["sourceQuests"] = { 53941 },	-- A Mech for a Goblin
 							["provider"] = { "n", 145751 },	-- Trade Prince Gallywix
-							["coord"] = { 36.2, 72.0, 862 },
+							["coord"] = { 36.2, 72.0, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54124, {	-- Avoiding Lawsuits 101
 							["sourceQuests"] = { 53941 },	-- A Mech for a Goblin
 							["provider"] = { "n", 148339 },	-- Patch
-							["coord"] = { 36.3, 72.0, 862 },
+							["coord"] = { 36.3, 72.0, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(53942, {	-- The Right Mech for the Job
@@ -988,7 +988,7 @@ _.ExpansionFeatures =
 								54124,	-- Avoiding Lawsuits 101
 							},
 							["provider"] = { "n", 145751 },	-- Trade Prince Gallywix
-							["coord"] = { 36.2, 72.0, 862 },
+							["coord"] = { 36.2, 72.0, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 							["maps"] = { DRUSTVAR },
 						}),
@@ -1054,7 +1054,7 @@ _.ExpansionFeatures =
 						q(54121, {	-- Breaking Out Ashvane
 							["sourceQuests"] = { 54094 },	-- A Goblin's Definition of Success
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 							["maps"] = { TIRAGARDE_SOUND },
 						}),
@@ -1119,7 +1119,7 @@ _.ExpansionFeatures =
 						q(54139, {	-- War Is Here
 							["sourceQuests"] = { 54179 },	-- Through the Front Door
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54140, {	-- Ride of the Zandalari
@@ -1131,13 +1131,13 @@ _.ExpansionFeatures =
 						q(54156, {	-- A Path of Blood
 							["sourceQuests"] = { 54140 },	-- Ride of the Zandalari
 							["provider"] = { "n", 147075 },	-- General Rakera
-							["coord"] = { 58.0, 21.3, 862 },
+							["coord"] = { 58.0, 21.3, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54157, {	-- No One Left Behind
 							["sourceQuests"] = { 54140 },	-- Ride of the Zandalari
 							["provider"] = { "n", 146921 },	-- Princess Talanji
-							["coord"] = { 58.0, 21.3, 862 },
+							["coord"] = { 58.0, 21.3, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54207, {	-- Retaking the Outpost
@@ -1146,7 +1146,7 @@ _.ExpansionFeatures =
 								54157,	-- No One Left Behind
 							},
 							["provider"] = { "n", 147075 },	-- General Rakera
-							["coord"] = { 58.0, 21.3, 862 },
+							["coord"] = { 58.0, 21.3, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54208, {	-- Minesweeper
@@ -1243,13 +1243,13 @@ _.ExpansionFeatures =
 						q(54282, {	-- Battle of Dazar'alor
 							["sourceQuests"] = { 54280 },	-- Fly Out to Meet Them
 							["provider"] = { "n", 146921 },	-- Princess Talanji
-							["coord"] = { 37.0, 5.2, 862 },
+							["coord"] = { 37.0, 5.2, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54164, {	-- The King's Death
 							["sourceQuests"] = { 54282 },	-- Battle of Dazar'alor
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 862 },
+							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54165, {	-- The Return of Derek Proudmoore
@@ -1339,14 +1339,14 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 54999 },	-- Under False Colors
 							["altQuests"] = { 55052 },	-- Securing Warfang Hold
 							["provider"] = { "n", 146013 },	-- Dark Ranger Alina
-							["coord"] = { 58.4, 62.7, 862 },
+							["coord"] = { 58.4, 62.7, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(55052, {	-- Securing Warfang Hold (Sylvanas Version)
 							["sourceQuests"] = { 55034 },	-- Under False Colors (Sylvanas Version)
 							["altQuests"] = { 55047 },	-- Securing Warfang Hold
 							["provider"] = { "n", 146013 },	-- Dark Ranger Alina
-							["coord"] = { 58.4, 62.7, 862 },
+							["coord"] = { 58.4, 62.7, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(55048, {	-- Spy Games
@@ -1528,7 +1528,7 @@ _.ExpansionFeatures =
 						q(54097, {	-- The Dark Lady Calls
 						--	["sourceQuests"] = { 53981 },	-- The Day is Won		-- TODO: need to be confirmed
 							["provider"] = { "n", 146013 },	-- Dark Ranger Alina
-							["coord"] = { 58.4, 62.7, 862 },
+							["coord"] = { 58.4, 62.7, ZULDAZAR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54099, {	-- The High Overlord
@@ -1628,9 +1628,9 @@ _.ExpansionFeatures =
 							["altQuests"] = { 54109 },	-- Queen's Favor
 							["sourceQuests"] = { 55782 },	-- Stay of Execution
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.7, 862 },
+							["coord"] = { 58.4, 62.7, ZULDAZAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 862 },
+							["maps"] = { ZULDAZAR },
 						}),
 						q(56833, {	-- Leaders of the Horde
 							["altQuests"] = { 54109 },	-- Queen's Favor

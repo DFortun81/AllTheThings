@@ -34,7 +34,7 @@ _.Zones =
 									["sourceQuests"] = { 54225 },	-- Mission Report: The Great Seal
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.4, 62.6, 862 },
+									["coord"] = { 58.4, 62.6, ZULDAZAR },
 								}),
 							},
 						}),
@@ -57,7 +57,7 @@ _.Zones =
 									["sourceQuests"] = { 54258 },	-- Mission Report: Vulpera Hideaway
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.4, 62.6, 862 },
+									["coord"] = { 58.4, 62.6, ZULDAZAR },
 								}),
 							},
 						}),
@@ -80,7 +80,7 @@ _.Zones =
 									["sourceQuests"] = { 54239 },	-- Mission Report: Zul'jan Ruins
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.4, 62.6, 862 },
+									["coord"] = { 58.4, 62.6, ZULDAZAR },
 								}),
 							},
 						}),
@@ -102,7 +102,7 @@ _.Zones =
 								q(52479, {	-- Hillcrest Pasture
 									["sourceQuests"] = { 52478 },	-- Mission Report: Hillcrest Pasture
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-									["coord"] = { 58.4, 62.6, 862 },
+									["coord"] = { 58.4, 62.6, ZULDAZAR },
 									["races"] = HORDE_ONLY,
 								}),
 							},
@@ -125,7 +125,7 @@ _.Zones =
 								q(52314, {	-- Mudfisher Cove
 									["sourceQuests"] = { 52313 },	-- Mission Report: Mudfisher Cove
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-									["coord"] = { 58.4, 62.6, 862 },
+									["coord"] = { 58.4, 62.6, ZULDAZAR },
 									["races"] = HORDE_ONLY,
 								}),
 								mi(2095, {	-- Wicker Defense
@@ -142,7 +142,7 @@ _.Zones =
 								q(53126, {	-- The Wicker Totem (Per Character)
 									["sourceQuests"] = { 53125 },	-- Mission Report: Into The Wicker
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-									["coord"] = { 58.4, 62.6, 862 },
+									["coord"] = { 58.4, 62.6, ZULDAZAR },
 									["races"] = HORDE_ONLY,
 								}),
 							},
@@ -165,7 +165,7 @@ _.Zones =
 								q(52222, {	-- Stonefist Watch
 									["sourceQuests"] = { 52221 },	-- Mission Report: Stonefist Watch
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-									["coord"] = { 58.4, 62.6, 862 },
+									["coord"] = { 58.4, 62.6, ZULDAZAR },
 									["races"] = HORDE_ONLY,
 								}),
 								mi(2092, {	-- Spare Parts
@@ -182,7 +182,7 @@ _.Zones =
 								q(53082, {	-- Spare Parts (Per Character)
 									["sourceQuests"] = { 53081 },	-- Mission Report: Spare Parts
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-									["coord"] = { 58.4, 62.6, 862 },
+									["coord"] = { 58.4, 62.6, ZULDAZAR },
 									["races"] = HORDE_ONLY,
 								}),
 							},
@@ -205,7 +205,7 @@ _.Zones =
 								q(52777, {	-- Stonetusk Watch
 									["sourceQuests"] = { 52776 },	-- Mission Report: Stonetusk Watch
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-									["coord"] = { 58.4, 62.6, 862 },
+									["coord"] = { 58.4, 62.6, ZULDAZAR },
 									["races"] = HORDE_ONLY,
 								}),
 								mi(2093, {	-- Giant Slaying
@@ -222,7 +222,7 @@ _.Zones =
 								q(53101, {	-- Nettin' Ettin (Per Character)
 									["sourceQuests"] = { 53100 },		-- Mission Report: Giant Slaying
 									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
-									["coord"] = { 58.4, 62.6, 862 },
+									["coord"] = { 58.4, 62.6, ZULDAZAR },
 									["races"] = HORDE_ONLY,
 								}),
 							},
@@ -246,7 +246,7 @@ _.Zones =
 									["sourceQuests"] = { 52275 },	-- Mission Report: Swiftwind Post
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.44, 62.67, 862 },
+									["coord"] = { 58.44, 62.67, ZULDAZAR },
 								}),
 								mi(2094, {	-- Nature Calls
 									["sourceQuests"] = { 52276 },	-- Swiftwind Post
@@ -263,7 +263,7 @@ _.Zones =
 									["sourceQuests"] = { 53102 },	-- Mission Report: Nature Calls
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.44, 62.67, 862 },
+									["coord"] = { 58.44, 62.67, ZULDAZAR },
 								}),
 							},
 						}),
@@ -286,7 +286,7 @@ _.Zones =
 									["sourceQuests"] = { 52319 },	-- Mission Report: Windfall Cavern
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.4, 62.6, 862 },
+									["coord"] = { 58.4, 62.6, ZULDAZAR },
 								}),
 							},
 						}),
@@ -309,7 +309,7 @@ _.Zones =
 								q(52127, {	-- Wolf's Den
 									["sourceQuests"] = { 52005 },	-- Mission Report: Wolf's Den
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-									["coord"] = { 58.4, 62.6, 862 },
+									["coord"] = { 58.4, 62.6, ZULDAZAR },
 									["races"] = HORDE_ONLY,
 								}),
 								mi(1957, {	-- Wolves For The Den
@@ -327,7 +327,7 @@ _.Zones =
 								q(53152, {	-- Wolves For The Den
 									["sourceQuests"] = { 53151 },	-- Mission Report: Wolves For The Den
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-									["coord"] = { 58.4, 62.6, 862 },
+									["coord"] = { 58.4, 62.6, ZULDAZAR },
 									["races"] = HORDE_ONLY,
 								}),
 							},
@@ -426,7 +426,7 @@ _.Zones =
 					},
 					["isBreadcrumb"] = true,	-- can't pick up/complete if you independently pursued upgrades
 					["provider"] = { "n", 135447 },	-- Ransa Greyfeather
-					["coord"] = { 58.0, 62.6, 862 },	-- technically Zuldazar, but on the Dazar'alor docks, so it makes more sense to be here
+					["coord"] = { 58.0, 62.6, ZULDAZAR },	-- technically Zuldazar, but on the Dazar'alor docks, so it makes more sense to be here
 					["races"] = HORDE_ONLY,
 				}),
 				q(47423, {	-- Forbidden Practices
@@ -854,10 +854,10 @@ _.Zones =
 				}),
 				q(46957, {	-- Welcome to Zuldazar
 					["provider"] = { "n", 132332 },	-- Princess Talanji
-					["coord"] = { 57.9, 62.4, 862 },
+					["coord"] = { 57.9, 62.4, ZULDAZAR },
 					["sourceQuest"] = 50769,  -- The Stormwind Extraction
 					["races"] = HORDE_ONLY,
-					["maps"] = { 862 },	-- Zuldazar
+					["maps"] = { ZULDAZAR },
 				}),
 				q(52131, {	-- We Need Each Other
 				--	TODO: was doing this questline on April 11, 2021 and this quest didn't pop up after i turned in Speaker of the Horde.  i went straight from 'speaker of the horde' to choosing to quest in zandalar on the map table inside the great seal.  is this a breadcrumb/was it removed/does it require having HoA?  upon solving this mystery anything that has it attached as a SQ may need to be changed as well
@@ -961,7 +961,7 @@ _.Zones =
 				}),
 				q(56379, {	-- The Missing Crew
 					["provider"] = { "n", 135690 },	-- Dread-Admiral Tattersail
-					["coord"] = { 58.4, 62.9, 862 },
+					["coord"] = { 58.4, 62.9, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						follower(1182),	-- Dread-Admiral Tattersail

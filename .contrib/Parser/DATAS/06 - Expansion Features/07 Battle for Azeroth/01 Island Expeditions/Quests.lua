@@ -482,7 +482,7 @@ _.ExpansionFeatures =
 				}),
 				i(163621, {	-- Rusted Horde Insignia
 					["description"] = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
-					["coord"] = { 58.0, 62.6, 862 },
+					["coord"] = { 58.0, 62.6, ZULDAZAR },
 					["g"] = {
 						q(53116, {	-- Rusted Horde Insignia
 							["repeatable"] = true,

@@ -8,7 +8,7 @@ _.Zones =
 		m(TIRAGARDE_SOUND, {
 			n(-226, {	-- World Drops
 				["maps"] = {
-					862,	-- Zuldazar  [During Assualts]
+					ZULDAZAR,	-- During Assaults
 				},
 				["g"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 					-- Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate

@@ -79,7 +79,7 @@ _.Zones =
 						{ 59.1, 10.6, DAZARALOR },
 						{ 41.3, 39.0, DAZARALOR },
 						{ 40.6, 84.3, DAZARALOR },
-						{ 65.3, 33.9, 862 },
+						{ 65.3, 33.9, ZULDAZAR },
 					},
 					["races"] = HORDE_ONLY,
 				}),

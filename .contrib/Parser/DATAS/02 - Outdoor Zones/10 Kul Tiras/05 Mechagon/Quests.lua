@@ -15,7 +15,7 @@ _.Zones =
 				]]--
 				q(56493, {	-- A Direct Approach
 					["provider"] = { "n", 155188 },	-- Scrollsage Nola
-					["coord"] = { 72.2, 37.2, 862 },
+					["coord"] = { 72.2, 37.2, ZULDAZAR },
 					["isDaily"] = true,
 					["g"] = {
 						crit(31, {	-- A Direct Approach
@@ -244,7 +244,7 @@ _.Zones =
 					["sourceQuests"] = { 55717 },	-- Time for Heroics
 					["provider"] = { "n", 153538 },	-- Adalin Halfheight
 					["isDaily"] = true,
-					["coord"] = { 75.2, 69.8, 862 },
+					["coord"] = { 75.2, 69.8, ZULDAZAR },
 					["g"] = {
 						crit(8, {	-- Deck 'Em
 							["achievementID"] = 13556,	-- Outside Influences
@@ -1201,7 +1201,7 @@ _.Zones =
 				}),
 				q(56762, {	-- Rustbolt Requisitions: Great Sea Catfish (H)
 					["provider"] = { "n", 150563 },	-- Skaggit
-					["coord"] = { 73.8, 26.0, 862 },
+					["coord"] = { 73.8, 26.0, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
@@ -1521,7 +1521,7 @@ _.Zones =
 				}),
 				q(56471, {	-- Unprofitable Ventures
 					["provider"] = { "n", 155187 },	-- Maokka
-					["coord"] = { 72.1, 37.1, 862 },
+					["coord"] = { 72.1, 37.1, ZULDAZAR },
 					["isDaily"] = true,
 					["g"] = {
 						crit(30, {	-- Unprofitable Ventures
@@ -1538,7 +1538,7 @@ _.Zones =
 				}),
 				i(169682, {	-- Venture Co. Rocket Box
 					["questID"] = 56501,	-- Taking The Air Out -- only available during "Unprofitable Ventures"? Is this also considered a daily, then?
-					["coord"] = { 42.8, 41.9, 862 },
+					["coord"] = { 42.8, 41.9, ZULDAZAR },
 					["crs"] = {
 						155259,	-- Lifting Specialist Gogo
 					},
