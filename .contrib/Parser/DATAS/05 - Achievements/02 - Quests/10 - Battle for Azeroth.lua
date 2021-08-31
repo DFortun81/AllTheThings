@@ -474,15 +474,15 @@ _.Achievements =
 				i(166247),		-- Citizens Brigade Whistle (toy)
 				crit(1, {		-- Russel the Bard recruited
 					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
-					["coord"] = { 72.4, 68.9, 1161 },	-- Boralus
+					["coord"] = { 72.4, 68.9, BORALUS },
 				}),
 				crit(2, {		-- Flynn Fairwind recruited
 					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
-					["coord"] = { 72.0, 61.6, 1161 },	-- Boralus
+					["coord"] = { 72.0, 61.6, BORALUS },
 				}),
 				crit(3, {		-- Leeroy Jenkins recruited
 					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
-					["coord"] = { 66.8, 64.0, 1161 },	-- Boralus
+					["coord"] = { 66.8, 64.0, BORALUS },
 				}),
 			})),
 			h(ach(13014, {	-- Vorrik's Champion

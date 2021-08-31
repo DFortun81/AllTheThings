@@ -762,11 +762,11 @@ _.ExpansionFeatures =
 					-- Hunter Hati Reborn Questline (BfA)
 					q(55516, {	-- Spark of Genius (A)
 						["provider"] = { "n", 152002 },	-- Image of Mimiron
-						["coord"] = { 72.8, 14.0, 1161 },
+						["coord"] = { 72.8, 14.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { HUNTER },
 						["lvl"] = 120,
-						["maps"] = { 1161 },	-- Boralus
+						["maps"] = { BORALUS },
 					}),
 					q(54913, {	-- Spark of Genius (H)
 						["provider"] = { "n", 152002 },	-- Image of Mimiron

@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 					ach(12510, {	-- Ready for War
 						["collectible"] = false,
 						["races"] = ALLIANCE_ONLY,
-						["maps"] = { 1161 },	-- Boralus
+						["maps"] = { BORALUS },
 						["lvl"] = 110,
 						["g"] = {
 							crit(1, {	-- Nazmir Foothold
@@ -112,37 +112,37 @@ _.ExpansionFeatures =
 							["isBreadcrumb"] = true,
 						}),
 						q(47099, {	-- Get Your Bearings
-							["coord"] = { 75.7, 23.5, 1161 },
+							["coord"] = { 75.7, 23.5, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 121235 },	-- Taelia
 						}),
 						q(46729, {	-- The Old Knight
 							["sourceQuests"] = { 47099 },	-- Get Your Bearings
-							["coord"] = { 67.1, 15.3, 1161 },
+							["coord"] = { 67.1, 15.3, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 124630 },	-- Taelia
 						}),
 						q(47186, {	-- Sanctum of Sages
 							["sourceQuests"] = { 46729 },	-- The Old Knight
-							["coord"] = { 68.1, 21.9, 1161 },
+							["coord"] = { 68.1, 21.9, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 121235 },	-- Taelia
 						}),
 						q(47189, {	-- A Nation Divided
 							["sourceQuests"] = { 47186 },	-- Sanctum of Sages
-							["coord"] = { 68.1, 21.9, 1161 },
+							["coord"] = { 68.1, 21.9, BORALUS },
 							["provider"] = { "n", 121235 },	-- Taelia
 						}),
 						q(52654, {	-- The War Campaign
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
 							["provider"] = { "n", 120788 },	-- Genn Greymane
-							["coord"] = { 68.0, 22.3, 1161 },	-- Boralus
+							["coord"] = { 68.0, 22.3, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(52544, {	-- The War Cache
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52654 },	-- The War Campaign
 						}),
@@ -152,7 +152,7 @@ _.ExpansionFeatures =
 						}),
 						q(51714, {	-- Mission from the King
 							["provider"] = { "n", 135618 },	-- Falstad Wildhammer
-							["coord"] = { 69.7, 27.6, 1161 },	-- Boralus
+							["coord"] = { 69.7, 27.6, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 53332 },	-- Time for War
 							["g"] = {
@@ -162,26 +162,26 @@ _.ExpansionFeatures =
 						q(51715, {	-- War of Shadows
 							["provider"] = { "n", 135614 },	-- Master Mathias Shaw
 							["cost"] = { { "i", 160982, 1, } },	-- Recruitment Orders
-							["coord"] = { 70.4, 27.1, 1161 },	-- Boralus
+							["coord"] = { 70.4, 27.1, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51714 },	-- Mission from the King
 						}),
 						q(53074, {	-- Reinforcements
 							["provider"] = { "n", 135614 },	-- Master Mathias Shaw
-							["coord"] = { 70.4, 27.1, 1161 },	-- Boralus
+							["coord"] = { 70.4, 27.1, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51715 },	-- War of Shadows
 						}),
 						q(51569, {	-- The Zandalar Campaign
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 							["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51714 },	-- Mission from the King
 						}),
 						q(51571, {	-- Foothold: Nazmir
 							["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118
-							["coord"] = { 69.4, 26.9, 1161 },	-- Boralus
+							["coord"] = { 69.4, 26.9, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51569 },	-- The Zandalar Campaign
 							-- SQ could also be The Ongoing Campaign or The Final Foothold depending upon the order you do the zones in.
@@ -189,13 +189,13 @@ _.ExpansionFeatures =
 						}),
 						q(51088, {	-- Heart of Darkness
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51571 },	-- Foothold: Nazmir
 						}),
 						q(51572, {	-- Foothold: Vol'dun
 							["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118
-							["coord"] = { 69.4, 26.9, 1161 },	-- Boralus
+							["coord"] = { 69.4, 26.9, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51569 },	-- The Zandalar Campaign
 							-- SQ could also be The Ongoing Campaign or The Final Foothold depending upon the order you do the zones in.
@@ -203,13 +203,13 @@ _.ExpansionFeatures =
 						}),
 						q(51283, {	-- Voyage to the West
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51572 },	-- Foothold: Vol'dun
 						}),
 						q(51570, {	-- Foothold: Zuldazar
 							["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118
-							["coord"] = { 69.4, 26.9, 1161 },	-- Boralus
+							["coord"] = { 69.4, 26.9, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51569 },	-- The Zandalar Campaign
 							-- SQ could also be The Ongoing Campaign or The Final Foothold depending upon the order you do the zones in.
@@ -218,20 +218,20 @@ _.ExpansionFeatures =
 						q(51308, {	-- Zuldazar Foothold
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 							["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51570 },	-- Foothold: Zuldazar
 						}),
 						q(53583, {	-- Adapting Our Tactics
 							["provider"] = { "n", 143846 },	-- Alleria Windrunner
-							["coord"] = { 70.5, 27.3, 1161 },	-- Boralus
+							["coord"] = { 70.5, 27.3, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "To get this quest and continue the campaign, you must complete one foothold of your choice.",
 							-- Turning in this quest also grants credit for the Horde equivalent, 53602
 						}),
 						q(51961, {	-- The Ongoing Campaign
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "To get this quest and continue the campaign, you must complete one foothold of your choice.",
 							["sourceQuests"] = {
@@ -249,7 +249,7 @@ _.ExpansionFeatures =
 						}),
 						q(52443, {	-- The Final Foothold
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "To get this quest and continue the campaign, you must complete two footholds of your choice.",
 							["sourceQuests"] = { 51961 },	-- The Ongoing Campaign
@@ -535,7 +535,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 52654 },	-- The War Campaign
 							["altQuests"] = { 52450 },	-- Uniting Kul Tiras
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								spell(273746),	-- World Quests
@@ -547,7 +547,7 @@ _.ExpansionFeatures =
 						q(52450, {	-- Uniting Kul Tiras - version that alts unlock at 50 - requires HoA and, afaik, nothing else
 							["sourceQuests"] = { 52428 },	-- Infusing the Heart
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								spell(273746),	-- World Quests
@@ -558,7 +558,7 @@ _.ExpansionFeatures =
 						}),
 					--	BLOOD ON THE SAND STARTS HERE
 						q(52026, {	-- Overseas Assassination
-							["coord"] = { 69.2, 26.9, 1161 },
+							["coord"] = { 69.2, 26.9, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						}),
@@ -667,7 +667,7 @@ _.ExpansionFeatures =
 						}),
 						q(52147, {	-- Crippling the Horde
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52146,	-- Blood on the Sand
@@ -744,7 +744,7 @@ _.ExpansionFeatures =
 						}),
 						q(52154, {	-- Our Next Target
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								53070,	-- Operation: Cutpurse
@@ -753,7 +753,7 @@ _.ExpansionFeatures =
 						}),
 						q(52173, {	-- The Void Elves Stand Ready
 							["provider"] = { "n", 140348 },	-- Magister Umbric
-							["coord"] = { 69.4, 26.7, 1161 },	-- Boralus
+							["coord"] = { 69.4, 26.7, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52154 },	-- Our Next Target
 						}),
@@ -816,7 +816,7 @@ _.ExpansionFeatures =
 						}),
 						q(52308, {	-- Intercepted Orders
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52261,	-- Gallywix Got Away
@@ -826,7 +826,7 @@ _.ExpansionFeatures =
 						q(52489, {	-- Hunting Blood Prince Dreven
 							["sourceQuests"] = { 52308 },	-- Intercepted Orders
 							["provider"] = { "n", 141356 },	-- Shandris Feathermoon
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["maps"] = { 1156 },	-- The Great Sea (scenario map)
 						}),
@@ -895,7 +895,7 @@ _.ExpansionFeatures =
 						}),
 						q(52473, {	-- Bringing Down the Fleet
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52496,	-- A Clean Escape
@@ -1007,7 +1007,7 @@ _.ExpansionFeatures =
 					--	BETWEEN READY FOR WAR AND TIDES OF VENGEANCE START
 						q(53986, {	-- The Calm Before
 							["provider"] = { "n", 135614 },	-- Master Mathias Shaw
-							["coord"] = { 70.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 70.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 53098 },	-- Champion: Shandris Feathermoon
 						}),
@@ -1125,7 +1125,7 @@ _.ExpansionFeatures =
 						}),
 						q(54192, {	-- Sensitive Intel
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54191 },	-- Changing Course
 						}),
@@ -1222,7 +1222,7 @@ _.ExpansionFeatures =
 					--	BETWEEN THE SLEEPER AGENT AND MISCHIEF MANAGED
 						q(54171, {	-- The Abyssal Scepter
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54206 },	-- The Sleeper Agent
 						}),
@@ -1257,14 +1257,14 @@ _.ExpansionFeatures =
 					--	BETWEEN MISCHIEF MANAGED AND HE WHO WALKS IN THE LIGHT
 						q(54302, {	-- The Fall of Zuldazar
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54510 },	-- Mischief Managed
 							-- Technically available before turning in this quest, but is the next part of the campaign.
 						}),
 						q(54303, {	-- The March to Nazmir
 							["provider"] = { "n", 147819 },	-- Blademaster Telaamon
-							["coord"] = { 39.1, 77.1, 1161 },	-- Boralus
+							["coord"] = { 39.1, 77.1, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54302 },	-- The Fall of Zuldazar
 						}),
@@ -1340,25 +1340,25 @@ _.ExpansionFeatures =
 						q(54485, {	-- Battle of Dazar'alor
 							["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(54163, {	-- As the Dust Settles
 							["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(54183, {	-- Dead Reckoning
 							["sourceQuests"] = { 54163 },	-- As the Dust Settles
 							["provider"] = { "n", 147885 },	-- Anduin Wrynn
-							["coord"] = { 49.2, 85.4, 1161 },	-- Boralus
+							["coord"] = { 49.2, 85.4, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55118, {	-- Loose Ends
 							["sourceQuests"] = { 54459 },	-- He Who Walks in the Light
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.5, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.5, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55033, {	-- Ashes to Ashvane
@@ -1391,31 +1391,31 @@ _.ExpansionFeatures =
 						q(55044, {	-- Don't Shoot the Messenger
 							["sourceQuests"] = { 55119 },	-- Reporting In!
 							["provider"] = { "n", 135614 },	-- Master Mathias Shaw
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55045, {	-- My Brother's Keeper
 							["sourceQuests"] = { 55044 },	-- Don't Shoot the Messenger
 							["provider"] = { "n", 150574 },	-- Lady Jaina Proudmoore
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55171, {	-- Spy Versus Spy
 							["sourceQuests"] = { 55045 },	-- My Brother's Keeper
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55087, {	-- The Gathering Storm
 							["sourceQuests"] = { 55171 },	-- Spy Versus Spy
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55179, {	-- Retaliation Coordination
 							["sourceQuests"] = { 55087 },	-- The Gathering Storm
 							["provider"] = { "n", 150633 },	-- Lady Jaina Proudmoore
-							["coord"] = { 45.3, 62.6, 1161 },	-- Boralus
+							["coord"] = { 45.3, 62.6, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55088, {	-- Lost in the Field
@@ -1494,7 +1494,7 @@ _.ExpansionFeatures =
 						q(54871, {	-- We Are Coming
 							["sourceQuests"] = { 53990 },	-- In Darkest Night
 							["provider"] = { "n", 149612 },	-- Shandris Feathermoon
-							["coord"] = { 69.5, 26.8, 1161 },
+							["coord"] = { 69.5, 26.8, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 						}),
 					--	RISE OF AZSHARA (8.2)
@@ -1524,9 +1524,9 @@ _.ExpansionFeatures =
 						q(56494, {	-- The Eye of Battle
 							["sourceQuests"] = { 55783 },	-- Stay of Execution
 							["provider"] = { "n", 135614 },	-- Master Mathias Shaw
-							["coord"] = { 70.5, 27.0, 1161 },	-- Boralus
+							["coord"] = { 70.5, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1161 },	-- Boralus
+							["maps"] = { BORALUS },
 							["lvl"] = 120,
 						}),
 						q(56719, {	-- This Ain't Mine

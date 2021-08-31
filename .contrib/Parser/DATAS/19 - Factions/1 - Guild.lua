@@ -12,7 +12,7 @@ _.Factions =
 			{ 78.3, 85.2, SILVERMOON_CITY },	-- Larissia
 			{ 52.5, 54.9, 125 },	-- Mirla Silverblaze [Dalaran: Northrend]
 			{ 53.6, 69.6, THE_EXODAR },	-- Nuri
-			{ 70.2, 14.7, 1161 },	-- Perry Charlton [Boralus]
+			{ 70.2, 14.7, BORALUS },	-- Perry Charlton
 			{ 37.1, 63.3, THUNDER_BLUFF },		-- Randah Songhorn
 			{ 58.7, 46.4, SHATTRATH_CITY },	-- Riha
 			{ 64.1, 77.0, STORMWIND_CITY },	-- Shay Pressler

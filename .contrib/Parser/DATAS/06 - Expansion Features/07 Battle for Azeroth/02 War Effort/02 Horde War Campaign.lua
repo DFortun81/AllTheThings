@@ -820,23 +820,23 @@ _.ExpansionFeatures =
 						q(52184, {	-- Relics of Ritual
 							["sourceQuests"] = { 52185 },	-- A Well Placed Portal
 							["provider"] = { "n", 140487 },	-- Thomas Zelling
-							["coord"] = { 71.0, 84.8, 1161 },
+							["coord"] = { 71.0, 84.8, BORALUS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1161 },	-- Boralus
+							["maps"] = { BORALUS },
 						}),
 						q(52188, {	-- Tidesage Teachings
 							["sourceQuests"] = { 52185 },	-- A Well Placed Portal
 							["provider"] = { "n", 140487 },	-- Thomas Zelling
-							["coord"] = { 71.0, 84.8, 1161 },
+							["coord"] = { 71.0, 84.8, BORALUS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1161 },	-- Boralus
+							["maps"] = { BORALUS },
 						}),
 						q(52189, {	-- Forfeit Souls
 							["sourceQuests"] = { 52185 },	-- A Well Placed Portal
 							["provider"] = { "n", 140487 },	-- Thomas Zelling
-							["coord"] = { 71.0, 84.8, 1161 },
+							["coord"] = { 71.0, 84.8, BORALUS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1161 },	-- Boralus
+							["maps"] = { BORALUS },
 						}),
 						q(52190, {	-- Gaining the Upper Hand
 							["sourceQuests"] = {
@@ -845,22 +845,22 @@ _.ExpansionFeatures =
 								52189,	-- Forfeit Souls
 							},
 							["provider"] = { "n", 140487 },	-- Thomas Zelling
-							["coord"] = { 71.0, 84.8, 1161 },
+							["coord"] = { 71.0, 84.8, BORALUS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1161 },	-- Boralus
+							["maps"] = { BORALUS },
 						}),
 						q(52990, {	-- Return to the Harbor
 							["sourceQuests"] = { 52190 },	-- Gaining the Upper Hand
 							["provider"] = { "n", 141602 },	-- Thomas Zelling
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1161 },	-- Boralus
+							["maps"] = { BORALUS },
 						}),
 						q(52191, {	-- Life Held Hostage
 							["sourceQuests"] = { 52990 },	-- Return to the Harbor
 							["provider"] = { "n", 140485 },	-- Nathanos Blightcaller
 							["coord"] = { 86.9, 53.1, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1161 },	-- Boralus
+							["maps"] = { BORALUS },
 						}),
 						q(52192, {	-- The Aid of the Tides
 							["sourceQuests"] = { 52191 },	-- Life Held Hostage

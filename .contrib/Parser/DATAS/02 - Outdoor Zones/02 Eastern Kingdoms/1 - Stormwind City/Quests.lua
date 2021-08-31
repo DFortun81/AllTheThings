@@ -79,7 +79,7 @@ _.Zones =
 									q(55039, {	-- The Master Shipwright
 										["sourceQuests"] = { 54706 },	-- Made in Kul Tiras
 										["provider"] = { "n", 122370 },	-- Cyrus Crestfall
-										["coord"] = { 67.9, 22.1, 1161 },	-- Boralus
+										["coord"] = { 67.9, 22.1, BORALUS },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(55043, {	-- Fish Tales and Distant Sails
@@ -250,16 +250,16 @@ _.Zones =
 									}),
 									q(57486, {	-- Waning Energy
 										["provider"] = { "n", 160101 },	-- Kelsey Steelspark
-										["coord"] = { 73.1, 16.9, 1161 },
+										["coord"] = { 73.1, 16.9, BORALUS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 1161 },	-- Boralus
+										["maps"] = { BORALUS },
 									}),
 									q(57487, {	-- Someone Who Can Help
 										["sourceQuests"] = { 57486 },	-- Waning Energy
 										["provider"] = { "n", 157997 },	-- Kelsey Steelspark
-										["coord"] = { 36.8, 62.5, 1161 },
+										["coord"] = { 36.8, 62.5, BORALUS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 1161 },	-- Boralus
+										["maps"] = { BORALUS },
 									}),
 									q(57488, {	-- The Current Schematic
 										["sourceQuests"] = { 57487 },	-- Someone Who Can Help

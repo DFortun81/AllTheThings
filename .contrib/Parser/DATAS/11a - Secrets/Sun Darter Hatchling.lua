@@ -47,7 +47,7 @@ _.Secrets =
 						["g"] = {
 							n(142065, {	-- Dana Pull
 								["description"] = "Boralus",
-								["coord"] = { 50.8, 46.0, 1161 },
+								["coord"] = { 50.8, 46.0, BORALUS },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							n(98725, {	-- Lio the Lioness <Battle Pet Master>

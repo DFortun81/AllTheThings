@@ -57,9 +57,9 @@ _.ExpansionFeatures =
 				q(53436, {	-- Azerite for the Alliance
 					["isWeekly"] = true,
 					["provider"] = { "n", 131290 },	-- Flynn
-					["coord"] = { 66.6, 35.5, 1161 },
+					["coord"] = { 66.6, 35.5, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 1161 },	-- Boralus
+					["maps"] = { BORALUS },
 					["g"] = {
 						i(168615, {	-- Volatile Worldvein (Rank 1)
 							az(4, 1),	-- Worldvein Resonance (Rank 1)
@@ -397,7 +397,7 @@ _.ExpansionFeatures =
 				}),
 				i(163616, {	-- Dented Coin [Alliance]
 					["description"] = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
-					["coord"] = { 68.0, 22.0, 1161 },
+					["coord"] = { 68.0, 22.0, BORALUS },
 					["g"] = {
 						q(53118, {	-- Dented Coin
 							["repeatable"] = true,
@@ -468,7 +468,7 @@ _.ExpansionFeatures =
 				}),
 				i(163617, {	-- Rusted Alliance Insignia
 					["description"] = "|CFFFF0000Turn in to Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
-					["coord"] = { 69.2, 25.0, 1161 },
+					["coord"] = { 69.2, 25.0, BORALUS },
 					["g"] = {
 						q(53117, {	-- Rusted Alliance Insignia [Alliance]
 							["repeatable"] = true,

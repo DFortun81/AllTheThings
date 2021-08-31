@@ -6,7 +6,7 @@ _.Instances = { tier(BFA_TIER, {
 	inst(1176, {	-- Battle of Dazar'alor
 		["isRaid"] = true,
 		["coords"] = {
-			{ 70.5, 35.3, 1161 },	-- Alliance, Boralus
+			{ 70.5, 35.3, BORALUS },	-- Alliance
 			{ 38.8, 2.40, DAZARALOR },	-- Horde
 		},
 		["maps"] = {

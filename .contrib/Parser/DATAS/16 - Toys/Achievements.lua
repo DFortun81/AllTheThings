@@ -36,7 +36,7 @@ _.Toys =
 			}),
 			i(161451, {	-- A Tiny Diving Helmet
 				["questID"] = 52277,	-- Pepe can be sometimes be summoned with this mask
-				["coord"] = { 54.01, 71.01, 1161 },
+				["coord"] = { 54.01, 71.01, BORALUS },
 				["description"] = "Located inside the fish tank of |cFFFFD700Catherine Morgan's|r cat house.",
 			}),
 			i(127867, {	-- A Tiny Ninja Shroud

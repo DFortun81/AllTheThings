@@ -5,26 +5,26 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(1161, {	-- Boralus
+		m(BORALUS, {
 			n(-169, {	-- Emissary Quests
 				q(50605, {	-- Alliance War Effort [7th Legion]
 					["provider"] = { "n", 135446 },	-- Vindicator Jaelaana
 					["lvl"] = 120,
-					["coord"] = { 69.32, 24.94, 1161 },
+					["coord"] = { 69.32, 24.94, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(50599, {	-- Proudmoore Admiralty
 					["provider"] = { "n", 135808 },	-- Provisioner Fray
 					["lvl"] = 120,
-					["coord"] = { 67.52, 21.56, 1161 },
+					["coord"] = { 67.52, 21.56, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(54454, {	-- Supplies from the 7th Legion
 					["provider"] = { "n", 135446 },	-- Vindicator Jaelaana
 					["lvl"] = 120,
-					["coord"] = { 69.32, 24.94, 1161 },
+					["coord"] = { 69.32, 24.94, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -37,7 +37,7 @@ _.Zones =
 				q(54458, {	-- Supplies from Proudmoore Admiralty
 					["provider"] = { "n", 135808 },	-- Provisioner Fray
 					["lvl"] = 120,
-					["coord"] = { 67.52, 21.56, 1161 },
+					["coord"] = { 67.52, 21.56, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["g"] = {

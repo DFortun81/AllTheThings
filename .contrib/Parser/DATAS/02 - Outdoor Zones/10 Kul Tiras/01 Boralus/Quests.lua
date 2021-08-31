@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(1161, {	-- Boralus
+		m(BORALUS, {
 			n(QUESTS, {
 				n(-9, {	-- PvP
 					n(-852, {	-- Azerite Essences
@@ -40,7 +40,7 @@ _.Zones =
 					q(54978, {	-- Against Overwhelming Odds
 						["provider"] = { "n", 135614 },	-- Master Mathias Shaw
 						["isWeekly"] = true,
-						["coord"] = { 70.4, 27.0, 1161 },
+						["coord"] = { 70.4, 27.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(167100, {	-- Alliance Champion's Cache
@@ -61,7 +61,7 @@ _.Zones =
 					q(52944, {	-- Call to Arms: Drustvar
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
-						["coord"] = { 56.4, 26.0, 1161 },
+						["coord"] = { 56.4, 26.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(167744, {	-- Aspirant's Equipment Cache
@@ -78,7 +78,7 @@ _.Zones =
 					q(56649, {	-- Call to Arms: Mechagon
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
-						["coord"] = { 56.4, 26.0, 1161 },
+						["coord"] = { 56.4, 26.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(167744, {	-- Aspirant's Equipment Cache
@@ -96,7 +96,7 @@ _.Zones =
 						["sourceQuests"] = { 56156 },	-- A Tempered Blade
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
-						["coord"] = { 56.4, 26.0, 1161 },
+						["coord"] = { 56.4, 26.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(167744, {	-- Aspirant's Equipment Cache
@@ -113,7 +113,7 @@ _.Zones =
 					q(52949, {	-- Call to Arms: Nazmir
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
-						["coord"] = { 56.4, 26.0, 1161 },
+						["coord"] = { 56.4, 26.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(167744, {	-- Aspirant's Equipment Cache
@@ -130,7 +130,7 @@ _.Zones =
 					q(52782, {	-- Call to Arms: Stormsong Valley
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
-						["coord"] = { 56.4, 26.0, 1161 },
+						["coord"] = { 56.4, 26.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(167744, {	-- Aspirant's Equipment Cache
@@ -147,7 +147,7 @@ _.Zones =
 					q(52948, {	-- Call to Arms: Tiragarde Sound
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
-						["coord"] = { 56.2, 26.0, 1161 },
+						["coord"] = { 56.2, 26.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(167744, {	-- Aspirant's Equipment Cache
@@ -164,7 +164,7 @@ _.Zones =
 					q(59019, {	-- Call to Arms: Uldum
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
-						["coord"] = { 56.4, 26.0, 1161 },
+						["coord"] = { 56.4, 26.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(167744, {	-- Aspirant's Equipment Cache
@@ -181,7 +181,7 @@ _.Zones =
 					q(59018, {	-- Call to Arms: Vale of Eternal Blossoms
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
-						["coord"] = { 56.4, 26.0, 1161 },
+						["coord"] = { 56.4, 26.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(167744, {	-- Aspirant's Equipment Cache
@@ -198,7 +198,7 @@ _.Zones =
 					q(52950, {	-- Call to Arms: Vol'dun
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
-						["coord"] = { 56.4, 26.0, 1161 },
+						["coord"] = { 56.4, 26.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(167744, {	-- Aspirant's Equipment Cache
@@ -215,7 +215,7 @@ _.Zones =
 					q(52951, {	-- Call to Arms: Zuldazar
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
-						["coord"] = { 56.4, 26.0, 1161 },
+						["coord"] = { 56.4, 26.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(167744, {	-- Aspirant's Equipment Cache
@@ -233,7 +233,7 @@ _.Zones =
 						["provider"] = { "n", 141698 },	--  Kort Ceefer
 						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["coord"] = { 56.4, 25.8, 1161 },
+						["coord"] = { 56.4, 25.8, BORALUS },
 						["g"] = {
 							i(163604, {	-- Net-O-Matic 5000
 								["f"] = 55,	-- Consumable
@@ -243,18 +243,18 @@ _.Zones =
 					q(53075, {	-- Dueler's Guild
 						["sourceQuests"] = { 53073 },	-- Hook Point Investigation
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
-						["coord"] = { 56.3, 26.0, 1161 },
+						["coord"] = { 56.3, 26.0, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(53073, {	-- Hook Point Investigation
 						["provider"] = { "n", 135614 },	-- Master Mathias Shaw
-						["coord"] = { 70.4, 26.9, 1161 },
+						["coord"] = { 70.4, 26.9, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(57274, {	-- Quartermaster's Bounty
 						["provider"] = { "n", 143560 },	-- Marshal Gabriel
 						["isWeekly"] = true,
-						["coord"] = { 56.4, 25.8, 1161 },
+						["coord"] = { 56.4, 25.8, BORALUS },
 						["u"] = REMOVED_FROM_GAME,	-- Replaced with a new quest in Season 4
 						["g"] = {
 							i(171095),			-- Warlord's Trophy
@@ -263,7 +263,7 @@ _.Zones =
 					q(58279, {	-- Quartermaster's Bounty
 						["provider"] = { "n", 143560 },	-- Marshal Gabriel
 						["isWeekly"] = true,
-						["coord"] = { 56.4, 25.8, 1161 },
+						["coord"] = { 56.4, 25.8, BORALUS },
 						["g"] = {
 							i(171095),			-- Warlord's Trophy
 						},
@@ -271,7 +271,7 @@ _.Zones =
 					q(56499, {	-- Storming the Battlefields!
 						["provider"] = { "n", 143560 },	-- Marshal Gabriel
 						["races"] = ALLIANCE_ONLY,
-						["coord"] = { 56.4, 25.8, 1161 },
+						["coord"] = { 56.4, 25.8, BORALUS },
 						["g"] = {
 							i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
 								["classes"] = HEALERS,
@@ -305,7 +305,7 @@ _.Zones =
 										q(54306, {	-- Mission Report: Arom's Stand
 											["provider"] = { "n", 138704 },		-- Mission Command Table
 											["races"] = ALLIANCE_ONLY,
-											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["coord"] = { 70.5, 27.2, BORALUS },
 										}),
 									},
 								}),
@@ -313,7 +313,7 @@ _.Zones =
 									["sourceQuests"] = { 54306 },		-- Mission Report: Arom's Stand
 									["provider"] = { "n", 135612 },		-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["coord"] = { 69.4, 27.0, BORALUS },
 								}),
 							},
 						}),
@@ -328,7 +328,7 @@ _.Zones =
 										q(54262, {	-- Mission Report: Brennadam
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = ALLIANCE_ONLY,
-											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["coord"] = { 70.5, 27.2, BORALUS },
 										}),
 									},
 								}),
@@ -336,7 +336,7 @@ _.Zones =
 									["sourceQuests"] = { 54262 },	-- Mission Report: Brennadam
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["coord"] = { 69.4, 27.0, BORALUS },
 								}),
 							},
 						}),
@@ -351,7 +351,7 @@ _.Zones =
 										q(54284, {	-- Mission Report: Castaway Point
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = ALLIANCE_ONLY,
-											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["coord"] = { 70.5, 27.2, BORALUS },
 										}),
 									},
 								}),
@@ -359,7 +359,7 @@ _.Zones =
 									["sourceQuests"] = { 54284 },	-- Mission Report: Castaway Point
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["coord"] = { 69.4, 27.0, BORALUS },
 								}),
 							},
 						}),
@@ -373,7 +373,7 @@ _.Zones =
 									["g"] = {
 										q(53006, {	-- Mission Report: Grimwatt's Crash
 											["provider"] = { "n", 138704 },	-- Mission Command Table
-											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["coord"] = { 70.5, 27.2, BORALUS },
 											["races"] = ALLIANCE_ONLY,
 										}),
 									},
@@ -381,7 +381,7 @@ _.Zones =
 								q(53007, {	-- Grimwatt's Crash
 									["sourceQuests"] = { 53006 },	-- Mission Report: Grimwatt's Crash
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["coord"] = { 69.4, 27.0, BORALUS },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								mi(2096, {	-- Ambush at Grimwatt's Crash
@@ -390,7 +390,7 @@ _.Zones =
 										q(53186, {	-- Mission Report: Ambush at Grimwatt's Crash
 											["sourceQuests"] = { 53006 },	-- Mission Report: Grimwatt's Crash
 											["provider"] = { "n", 138704 },	-- Mission Command Table
-											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["coord"] = { 70.5, 27.2, BORALUS },
 											["races"] = ALLIANCE_ONLY,
 										}),
 									},
@@ -398,7 +398,7 @@ _.Zones =
 								q(53187, {	-- An Unexpected Guest
 									["sourceQuests"] = { 53186 },	-- Mission Report: Ambush at Grimwatt's Crash
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
-									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["coord"] = { 69.4, 27.0, BORALUS },
 									["races"] = ALLIANCE_ONLY,
 								}),
 							},
@@ -414,7 +414,7 @@ _.Zones =
 										q(52962, {	-- Mission Report: Mistvine Ledge
 											["provider"] = { "n", 138704 },		-- Mission Command Table
 											["races"] = ALLIANCE_ONLY,
-											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["coord"] = { 70.5, 27.2, BORALUS },
 										}),
 									},
 								}),
@@ -422,7 +422,7 @@ _.Zones =
 									["sourceQuests"] = { 52962 },	-- Mission Report: Mistvine Ledge
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["coord"] = { 69.4, 27.0, BORALUS },
 								}),
 								mi(2100, {	-- Jungle Escort
 									["sourceQuests"] = { 52963 },	-- Mistvine Ledge
@@ -430,7 +430,7 @@ _.Zones =
 									["g"] = {
 										q(53306, {	-- Mission Report: Jungle Escort
 											["provider"] = { "n", 138704 },		-- Mission Command Table
-											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["coord"] = { 70.5, 27.2, BORALUS },
 											["races"] = ALLIANCE_ONLY,
 										}),
 									},
@@ -439,7 +439,7 @@ _.Zones =
 									["sourceQuests"] = { 53306 },	-- Mission Report: Jungle Escort
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["coord"] = { 69.4, 27.0, BORALUS },
 								}),
 							},
 						}),
@@ -454,7 +454,7 @@ _.Zones =
 										q(52851, {	-- Mission Report: Mugamba Overlook
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = ALLIANCE_ONLY,
-											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["coord"] = { 70.5, 27.2, BORALUS },
 										}),
 									},
 								}),
@@ -462,7 +462,7 @@ _.Zones =
 									["sourceQuests"] = { 52851 },	-- Mission Report: Mugamba Overlook
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["coord"] = { 69.4, 27.0, BORALUS },
 								}),
 								mi(2099, {	-- Spare Parts
 									["sourceQuests"] = { 52852 },	-- Mugamba Overlook
@@ -471,7 +471,7 @@ _.Zones =
 										q(53275, {	-- Mission Report: Spare Parts
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = ALLIANCE_ONLY,
-											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["coord"] = { 70.5, 27.2, BORALUS },
 										}),
 									},
 								}),
@@ -479,7 +479,7 @@ _.Zones =
 									["sourceQuests"] = { 53275 },	-- Mission Report: Spare Parts
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["coord"] = { 69.4, 27.0, BORALUS },
 								}),
 							},
 						}),
@@ -494,7 +494,7 @@ _.Zones =
 										q(52801, {	-- Mission Report: Veiled Grotto
 											["provider"] = { "n", 138704 },		-- Mission Command Table
 											["races"] = ALLIANCE_ONLY,
-											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["coord"] = { 70.5, 27.2, BORALUS },
 										}),
 									},
 								}),
@@ -502,7 +502,7 @@ _.Zones =
 									["sourceQuests"] = { 52801 },		-- Mission Report: Veiled Grotto
 									["provider"] = { "n", 135612 },		-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["coord"] = { 69.4, 27.0, BORALUS },
 								}),
 							},
 						}),
@@ -517,7 +517,7 @@ _.Zones =
 										q(52886, {	-- Mission Report: Verdant Hollow
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = ALLIANCE_ONLY,
-											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["coord"] = { 70.5, 27.2, BORALUS },
 										}),
 									},
 								}),
@@ -525,7 +525,7 @@ _.Zones =
 									["sourceQuests"] = { 52886 },	-- Mission Report: Verdant Hollow
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["coord"] = { 69.4, 27.0, BORALUS },
 								}),
 								mi(2098, {	-- Dino Research
 									["sourceQuests"] = { 52888 },	-- Verdant Hollow
@@ -534,7 +534,7 @@ _.Zones =
 										q(53267, {	-- Mission Report: Dino Research
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = ALLIANCE_ONLY,
-											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["coord"] = { 70.5, 27.2, BORALUS },
 										}),
 									},
 								}),
@@ -542,7 +542,7 @@ _.Zones =
 									["sourceQuests"] = { 53267 },	-- Mission Report: Dino Research
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["coord"] = { 69.4, 27.0, BORALUS },
 								}),
 							},
 						}),
@@ -557,7 +557,7 @@ _.Zones =
 										q(53043, {	-- Mission Report: Vulture's Nest
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = ALLIANCE_ONLY,
-											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["coord"] = { 70.5, 27.2, BORALUS },
 										}),
 									},
 								}),
@@ -565,7 +565,7 @@ _.Zones =
 									["sourceQuests"] = { 53043 },	-- Mission Report: Vulture's Nest
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["coord"] = { 69.4, 27.0, BORALUS },
 								}),
 								mi(2097, {	-- Missing Supplies
 									["sourceQuests"] = { 53044 },	-- Vulture's Nest
@@ -573,7 +573,7 @@ _.Zones =
 									["g"] = {
 										q(53221, {	-- Mission Report: Missing Supplies
 											["provider"] = { "n", 138704 },	-- Mission Command Table
-											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["coord"] = { 70.5, 27.2, BORALUS },
 											["races"] = ALLIANCE_ONLY,
 										}),
 									},
@@ -582,7 +582,7 @@ _.Zones =
 									["sourceQuests"] = { 53221 },	-- Mission Report: Missing Supplies
 									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["coord"] = { 69.4, 27.0, BORALUS },
 								}),
 							},
 						}),
@@ -591,31 +591,31 @@ _.Zones =
 				q(57126, {	-- ...And Following Seas
 					["sourceQuests"] = { 57002 },	-- Old Soldier
 					["provider"] = { "n", 150633 },	-- Lady Jaina Proudmoore
-					["coord"] = { 69.5, 27.1, 1161 },
+					["coord"] = { 69.5, 27.1, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51144, {	-- A Bundle of Furs
 					["sourceQuests"] = { 47189 },	-- A Nation Divided
 					["provider"] = { "n", 124289 },	-- "Risky" Liz Seminario <Fur Trader>
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 72.2, 16.2, 1161 },
+					["coord"] = { 72.2, 16.2, BORALUS },
 				}),
 				q(52453, {	-- A Forlorn Hope
 					["sourceQuests"] = { 52449 },	-- The Mysterious Island
 					["provider"] = { "n", 140495 },
-					["coord"] = { 36.4, 62.8, 1161 },
+					["coord"] = { 36.4, 62.8, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(58674, {	-- A Gathering of Champions
 					["sourceQuests"] = { 58632 },	-- Ny'alotha, the Waking City: The Corruptor's End
 					["provider"] = { "n", 135614 },	-- Master Mathias Shaw
-					["coord"] = { 70.4, 27.0, 1161 },
+					["coord"] = { 70.4, 27.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52462, {	-- A Load of Scrap
 					["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
 					["provider"] = { "n", 141274 },	-- Crenzo Sparkshatter
-					["coord"] = { 77.1, 16.4, 1161 },
+					["coord"] = { 77.1, 16.4, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						ach(12741),	-- Giving a Scrap
@@ -630,19 +630,19 @@ _.Zones =
 				q(52151, {	-- A Nation United
 					["sourceQuests"] = { 52153 },	-- Siege of Boralus: Lady Ashvane's Return
 					["provider"] = { "n", 120788 },	-- Genn Greymane
-					["coord"] = { 67.9, 22.2, 1161 },
+					["coord"] = { 67.9, 22.2, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54947, {	-- A Small Team
 					["sourceQuests"] = { 54946 },	-- Report to Gila
 					["provider"] = { "n", 151100 },	-- Gila Crosswires
-					["coord"] = { 67.3, 15.7, 1161 },
+					["coord"] = { 67.3, 15.7, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52252, {	-- An Explosive Entrance
 					["sourceQuests"] = { 52762 },	-- A Local Guide
 					["provider"] = { "n", 140732 },	-- Flynn Fairwind
-					["coord"] = { 67.7, 22.1, 1161 },
+					["coord"] = { 67.7, 22.1, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51488, {	-- Archived Knowledge
@@ -654,13 +654,13 @@ _.Zones =
 				q(50789, {	-- Clear the Air
 					["sourceQuests"] = { 50787 },	-- Make Our Case
 					["provider"] = { "n", 135259 },	-- Taelia
-					["coord"] = { 49.9, 87.3, 1161 },
+					["coord"] = { 49.9, 87.3, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51341, {	-- Daughter of the Sea
 					["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
 					["provider"] = { "n", 120922 },	-- Lady Jaina Proudmoore
-					["coord"] = { 65.7, 50.6, 1161 },
+					["coord"] = { 65.7, 50.6, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47961, {	-- Drustvar
@@ -672,23 +672,23 @@ _.Zones =
 				q(50788, {	-- Enemies Within
 					["sourceQuests"] = { 50787 },	-- Make Our Case
 					["provider"] = { "n", 135259 },	-- Taelia
-					["coord"] = { 49.9, 87.3, 1161 },
+					["coord"] = { 49.9, 87.3, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54495, {	-- Expanding Our Influence
 					["provider"] = { "n", 135446 },	-- Vindicator Jaelaana
-					["coord"] = { 69.0, 24.7, 1161 },
+					["coord"] = { 69.0, 24.7, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52128, {	-- Ferry Pass
 					["sourceQuests"] = { 47186 },	-- Sanctum of Sages
 					["provider"] = { "n", 122370 },	-- Cyrus Crestfall
-					["coord"] = { 68.0, 21.9, 1161 },
+					["coord"] = { 68.0, 21.9, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(55142, {	-- For the Alliance
 					["provider"] = { "n", 150941 },	-- Katherine Proudmoore
-					["coord"] = { 67.8, 21.8, 1161 },
+					["coord"] = { 67.8, 21.8, BORALUS },
 					["races"] = { KULTIRAN },
 					["lvl"] = 20,
 					["g"] = {
@@ -717,12 +717,12 @@ _.Zones =
 				q(52481, {	-- Of Myth and Fable
 					["sourceQuests"] = { 52513 },	-- Lost in Darkness
 					["provider"] = { "n", 140495 },	-- Katherine Proudmoore
-					["coord"] = { 36.4, 62.8, 1161 },
+					["coord"] = { 36.4, 62.8, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53847, {	-- On Whispered Winds
 					["provider"] = { "n", 152000 },	-- Dori'thur
-					["coord"] = { 70.7, 26.8, 1161 },
+					["coord"] = { 70.7, 26.8, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						spell(290834),	-- Blessing of the Night Warrior
@@ -731,13 +731,13 @@ _.Zones =
 				q(50795, {	-- Prepare for Trouble
 					["sourceQuests"] = { 50110 },	-- Bearers of Bad News
 					["provider"] = { "n", 135259 },	-- Taelia
-					["coord"] = { 48.9, 75.5, 1161 },
+					["coord"] = { 48.9, 75.5, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50972, {	-- Proudmoore's Parley
 					["sourceQuests"] = { 50790 },	-- Hot Pursuit
 					["provider"] = { "n", 121144 },	-- Katherine Proudmoore <Lord Admiral of Kul Tiras>
-					["coord"] = { 48.2, 80.7, 1161 },
+					["coord"] = { 48.2, 80.7, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(-862, {	-- Hearth of Azeroth
@@ -766,25 +766,25 @@ _.Zones =
 				q(57324, {	-- Sail With the Tide
 					--["sourceQuests"] = { 57126 },	-- ...And Following Seas -- maybe this one? but it was back in 8.2.5
 					["provider"] = { "n", 150633 },	-- Lady Jaina Proudmoore
-					["coord"] = { 69.34, 27.15, 1161 },
+					["coord"] = { 69.34, 27.15, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51487, {	-- Searching for Answers
 					["sourceQuests"] = { 47952 },	-- The Missing Fleet
 					["provider"] = { "n", 137866 },	-- Taelia
-					["coord"] = { 65.2, 68.7, 1161 },
+					["coord"] = { 65.2, 68.7, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56043, {	-- Send the Fleet -- also triggered 56881
 					["sourceQuests"] = { 56031 },	-- The Wolf's Offensive
 					["provider"] = { "n", 153932 },	-- Genn Greymane
-					["coord"] = { 70.6, 27.2, 1161 },
+					["coord"] = { 70.6, 27.2, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52153, {	-- Siege of Boralus: Lady Ashvane's Return
 					["sourceQuests"] = { 51445 },	-- Thros, the Blighted Lands
 					["provider"] = { "n", 141785 },	-- Katherine Proudmoore
-					["coord"] = { 44.7, 62.7, 1161 },
+					["coord"] = { 44.7, 62.7, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47962, {	-- Stormsong Valley
@@ -796,7 +796,7 @@ _.Zones =
 				q(47485, {	-- The Ashvane Trading Company
 					["sourceQuests"] = { 47181 },	-- The Smoking Gun
 					["provider"] = { "n", 122370 },	-- Cyrus Crestfall
-					["coord"] = { 67.9, 22.0, 1161 },
+					["coord"] = { 67.9, 22.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54088, {	-- The Legend of Mechagon
@@ -805,7 +805,7 @@ _.Zones =
 						58708,	-- Fame Waits for Gnome One (Stormwind)
 					},
 					["provider"] = { "n", 150208 },	-- Tinkmaster Overspark
-					["coord"] = { 67.2, 15.6, 1161 },
+					["coord"] = { 67.2, 15.6, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52449, {	-- The Mysterious Island
@@ -827,13 +827,13 @@ _.Zones =
 					--	49178,	-- My Favorite Things
 					},
 					["provider"] = { "n", 140732 },	-- Flynn Fairwind
-					["coord"] = { 68.0, 22.6, 1161 },
+					["coord"] = { 68.0, 22.6, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56378, {	-- The Missing Crew
 				--	["sourceQuests"] = {  },	-- UNKNOWN
 					["provider"] = { "n", 135681 },	-- Grand Admiral Jes-Tereth
-					["coord"] = { 67.9, 26.4, 1161 },
+					["coord"] = { 67.9, 26.4, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						follower(1182),	-- Grand Admiral Jes-Tereth
@@ -847,20 +847,20 @@ _.Zones =
 				q(47181, {	-- The Smoking Gun
 					["sourceQuests"] = { 47960 },	-- Tiragarde Sound
 					["provider"] = { "n", 121239 },	-- Flynn Fairwind
-					["coord"] = { 67.7, 22.0, 1161 },
+					["coord"] = { 67.7, 22.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54992, {	-- The Start of Something Bigger
 					["sourceQuests"] = { 54947 },	-- A Small Team
 					["provider"] = { "n", 150145 },	-- Gila Crosswires
-					["coord"] = { 43.3, 32.0, 1161 },
+					["coord"] = { 43.3, 32.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(48622, {	-- The Vanishing Lord
 					["sourceQuests"] = { 47961 },	-- Drustvar
 					["altQuests"] = { 53434 },	-- The Vanishing Lord
 					["provider"] = { "n", 121235 },	-- Taelia
-					["coord"] = { 68.0, 22.0, 1161 },
+					["coord"] = { 68.0, 22.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56031, {	-- The Wolf's Offensive
@@ -876,13 +876,13 @@ _.Zones =
 				q(47960, {	-- Tiragarde Sound
 					["sourceQuests"] = { 47189 },	-- A Nation Divided
 					["provider"] = { "n", 139522 },	-- Scouting Map
-					["coord"] = { 68.3, 22.1, 1161 },
+					["coord"] = { 68.3, 22.1, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52800, {	-- Tol Dagor: The Ashvane Overseer
 					["sourceQuests"] = { 50972 },	-- Proudmoore's Parley
 					["provider"] = { "n", 122370 },	-- Cyrus Crestfall
-					["coord"] = { 67.9, 22.0, 1161 },
+					["coord"] = { 67.9, 22.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 115,	-- wowhead says 110.  it's wrong.  tol dagor doesn't unlock until 115, and that's the other requirement to make this quest available.
 				}),
@@ -891,17 +891,17 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 130377 },	-- Courier Gerald
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 69.2, 11.6, 1161 },
+					["coord"] = { 69.2, 11.6, BORALUS },
 				}),
 				q(52194, {	-- What You May Regret
 					["provider"] = { "n", 122370 },	-- Cyrus Crestfall
-					["coord"] = { 67.9, 22.0, 1161 },
+					["coord"] = { 67.9, 22.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53815, {	-- Whatever Happened to Saffy Flivvers?
 					["sourceQuests"] = { 55119 },	-- Reporting In!
 					["provider"] = { "n", 143851 },	-- Kelsey Steelspark
-					["coord"] = { 67.8, 26.2, 1161 },	-- Boralus
+					["coord"] = { 67.8, 26.2, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),

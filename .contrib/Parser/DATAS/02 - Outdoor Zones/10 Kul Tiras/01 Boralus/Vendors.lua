@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(1161, {	-- Boralus
+		m(BORALUS, {
 			n(VENDORS, {
 				n(161565, {	-- Bragni <Profession Liason>
-					["coord"] = { 56.3, 27.2, 1161 },
+					["coord"] = { 56.3, 27.2, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
 						i(171153, {	-- Formula: Uncanny Combatant's Sorcerous Scepter (Rank 2)
@@ -212,7 +212,7 @@ _.Zones =
 					}),
 				}),
 				n(148922, {	-- Captain Klarisa
-					["coord"] = { 66.0, 32.2, 1161 },
+					["coord"] = { 66.0, 32.2, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(166491, {	-- Albino Duskwatcher (PET!)
@@ -337,7 +337,7 @@ _.Zones =
 				}),
 				n(161091, {	-- Captain Nightrunner
 					["description"] = "We've compiled these lists from Wowhead, personal experience, and reports from ATT users, but they are incomplete (there isn't much to go on, and we can only collect so many Seafarer's Dubloons ourselves).\n\nIf you get an item from a box it's not listed under, please report it to the ATT Discord in the #errors or #bounty channel.  Thanks!\n",
-					["coord"] = { 66.2, 32.1, 1161 },
+					["coord"] = { 66.2, 32.1, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = bubbleDown({["modID"] = 0}, {
 						n(-11, {	-- Common Box Drops
@@ -385,7 +385,7 @@ _.Zones =
 								}),
 								i(163616, {	-- Dented Coin
 									["description"] = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
-									["coord"] = { 68.0, 22.0, 1161 },
+									["coord"] = { 68.0, 22.0, BORALUS },
 									["g"] = {
 										q(53118, {	-- Dented Coin
 											["repeatable"] = true,
@@ -431,7 +431,7 @@ _.Zones =
 								}),
 								i(163617, {	-- Rusted Alliance Insignia
 									["description"] = "|CFFFF0000Turn in to Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
-									["coord"] = { 69.2, 25.0, 1161 },
+									["coord"] = { 69.2, 25.0, BORALUS },
 									["g"] = {
 										q(53117, {	-- Rusted Alliance Insignia
 											["repeatable"] = true,
@@ -1237,7 +1237,7 @@ _.Zones =
 					}),
 				}),
 				n(136063, {	-- Cassandra Brennor <Leatherworking Trainer>
-					["coord"] = { 75.5, 12.6, 1161 },
+					["coord"] = { 75.5, 12.6, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168028, {	-- Recipe: Mallet of Thunderous Skins
@@ -1246,14 +1246,14 @@ _.Zones =
 					},
 				}),
 				n(141009, {	-- Col. Tenders <Chicken Vendor>
-					["coord"] = { 59.8, 22.2, 1161 },
+					["coord"] = { 59.8, 22.2, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11023),	-- Ancona Chicken
 					},
 				}),
 				n(142065, {	-- Dana Pull
-					["coord"] = { 50.8, 46.0, 1161 },
+					["coord"] = { 50.8, 46.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(163495, {	-- Greatwing Macaw Feather (PET!)
@@ -1267,7 +1267,7 @@ _.Zones =
 					},
 				}),
 				n(136071, {	-- Daniel Brineweaver <Tailoring Trainer>
-					["coord"] = { 76.8, 11.2, 1161 },
+					["coord"] = { 76.8, 11.2, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168029, {	-- Recipe: Synchronous Thread
@@ -1282,7 +1282,7 @@ _.Zones =
 				}),
 				n(148024, {	-- Dodger <Pet Smuggler>
 					["description"] = "To unlock this vendor, win PvP pet battles until the mission \"A Shady Message\" spawns.  Complete the mission, and you'll be able to purchase items from the vendor.  It could take 1, 10, 100 or 1,000 PvP pet battles before it spawns.",
-					["coord"] = { 68.9, 17.0, 1161 },
+					["coord"] = { 68.9, 17.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(163506, {	-- Accursed Hexxer
@@ -1309,7 +1309,7 @@ _.Zones =
 					},
 				}),
 				n(136041, {	-- Emily Fairweather <Enchanting Trainer>
-					["coord"] = { 74.1, 11.4, 1161 },
+					["coord"] = { 74.1, 11.4, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168024, {	-- Recipe: Iwen's Enchanting Rod
@@ -1318,7 +1318,7 @@ _.Zones =
 					},
 				}),
 				n(132228, {	-- Elric Whalgrene <Alchemy Trainer>
-					["coord"] = { 74.1, 6.75, 1161 },
+					["coord"] = { 74.1, 6.75, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(166422, {	-- Recipe: Silas' Sphere of Transmutation
@@ -1327,7 +1327,7 @@ _.Zones =
 					},
 				}),
 				n(133536, {	-- Grix "Ironfists" Barlow <Blacksmithing Trainer>
-					["coord"] = { 73.5, 8.57, 1161 },
+					["coord"] = { 73.5, 8.57, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168022, {	-- Recipe: Khaz'gorian Smithing Hammer
@@ -1336,7 +1336,7 @@ _.Zones =
 					},
 				}),
 				n(136059, {	-- Layla Evenkeel
-					["coord"] = { 77.6, 14.3, 1161 },
+					["coord"] = { 77.6, 14.3, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168025, {	-- Book of Schematics: Ub3r-Spanner
@@ -1346,7 +1346,7 @@ _.Zones =
 					},
 				}),
 				n(142564, {	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
-					["coord"] = { 56.0, 26.8, 1161 },
+					["coord"] = { 56.0, 26.8, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
 						i(162439, {	-- Pattern: Honorable Combatant's Satin Belt (Rank 2)
@@ -1754,7 +1754,7 @@ _.Zones =
 					}),
 				}),
 				n(145838, {	-- Marshal Frazer
-					["coord"] = { 56.4, 26.9, 1161 },
+					["coord"] = { 56.4, 26.9, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 					--	i(139775),	-- Alliance Enthusiast
@@ -1762,7 +1762,7 @@ _.Zones =
 					},
 				}),
 				n(143560, {	-- Marshal Gabriel
-					["coord"] = { 56.2, 25.7, 1161 },
+					["coord"] = { 56.2, 25.7, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
@@ -2642,7 +2642,7 @@ _.Zones =
 					},
 				}),
 				n(148228, {	-- Marvin Sipsquall <Shirt Vendor>
-					["coord"] = { 76.8, 11.6, 1161 },
+					["coord"] = { 76.8, 11.6, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(42365),	-- Amber Filigreed Doublet
@@ -2664,7 +2664,7 @@ _.Zones =
 					},
 				}),
 				n(135808, {	-- Provisioner Fray <Proudmoore Admiralty Emissary>
-					["coord"] = { 67.5, 21.5, 1161 },
+					["coord"] = { 67.5, 21.5, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(161976, {	-- Admiralty Marine's Duffel
@@ -2757,7 +2757,7 @@ _.Zones =
 					},
 				}),
 				n(148927, {	-- Provisioner Stoutforge
-					["coord"] = { 66.8, 25.7, 1161 },
+					["coord"] = { 66.8, 25.7, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(166465, {	-- Azureshell Krolusk (MOUNT!)
@@ -2805,7 +2805,7 @@ _.Zones =
 					},
 				}),
 				n(130368, {	-- Samuel D. Colton III <Jewelcrafting Trainer>
-					["coord"] = { 75.0, 10.0, 1161 },
+					["coord"] = { 75.0, 10.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168027, {	-- Recipe: Jewelhammer's Focus
@@ -2814,7 +2814,7 @@ _.Zones =
 					},
 				}),
 				n(149045, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
-					["coord"] = { 71.7, 13.7, 1161 },
+					["coord"] = { 71.7, 13.7, BORALUS },
 					["g"] = {
 						i(168623, {	-- Biconcavic Lens of the Focusing Iris (Rank 4)
 							["u"] = REMOVED_FROM_GAME,
@@ -2845,7 +2845,7 @@ _.Zones =
 					},
 				}),
 				n(142691, {	-- Tricky Nick <Shady Vendor>
-					["coord"] = { 56.7, 47.0, 1161 },
+					["coord"] = { 56.7, 47.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(163568, {	-- Lost Platysaur (PET!)
@@ -2857,7 +2857,7 @@ _.Zones =
 					},
 				}),
 				n(135446, {	-- Vindicator Jaelaana <7th Legion Emissary>
-					["coord"] = { 69.3, 24.9, 1161 },
+					["coord"] = { 69.3, 24.9, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(166445, {	-- 7th Legion Scouting Map

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(1161, {	-- Boralus
+		m(BORALUS, {
 			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(52047, {	-- Against the Storm
@@ -75,21 +75,21 @@ _.Zones =
 					q(51024, {	-- Supplies Needed: Akunda's Bite
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51028, {	-- Supplies Needed: Blood-Stained Bone
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51029, {	-- Supplies Needed: Calcified Bone
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -101,119 +101,119 @@ _.Zones =
 					q(51035, {	-- Supplies Needed: Deep Sea Satin
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52375, {	-- Supplies Neeeded: Great Sea Catfish
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51033, {	-- Supplies Neeeded: Mistscale
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51017, {	-- Supplies Needed: Monelite Ore
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52379, {	-- Supplies Needed: Redtail Loach
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51022, {	-- Supplies Needed: Riverbud
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52376, {	-- Supplies Needed: Sand Shifter
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51027, {	-- Supplis Needed: Sea Stalk
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51032, {	-- Supplies Needed: Shimmerscale
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51026, {	-- Supplies Needed: Siren's Pollen
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52378, {	-- Supplies Needed: Slimy Mackerel
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51023, {	-- Supplies Needed: Star Moss
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51021, {	-- Supplies Needed: Storm Silver Ore
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51031, {	-- Supplies Needed: Tempest Hide
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51034, {	-- Supplies Needed: Tidespray Linen
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(52377, {	-- Supplies Needed: Tiragarde Perch
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51025, {	-- Supplies Needed: Winter's Kiss
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
-						["coord"] = { 73.21, 11.01, 1161 },
+						["coord"] = { 73.21, 11.01, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -245,7 +245,7 @@ _.Zones =
 					q(50992, {	-- Work Order: Calcified Bone
 						["provider"] = { "n", 135808 },	-- Provisioner Fray
 						["lvl"] = 120,
-						["coord"] = { 67.61, 21.81, 1161 },
+						["coord"] = { 67.61, 21.81, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = SKINNING,
@@ -301,7 +301,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = JEWELCRAFTING,
-						["coord"] = { 67.61, 21.81, 1161 },
+						["coord"] = { 67.61, 21.81, BORALUS },
 					}),
 					q(52340, {	-- Work Order: Monel-Hardened Hoofplates
 						["lvl"] = 120,
@@ -324,7 +324,7 @@ _.Zones =
 					q(52417, {	-- Work Order: Shimmerscale Diving Helmet
 						["provider"] = { "n", 135808 },	-- Provisioner Fray
 						["lvl"] = 120,
-						["coord"] = { 67.61, 21.81, 1161 },
+						["coord"] = { 67.61, 21.81, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = LEATHERWORKING,
@@ -332,7 +332,7 @@ _.Zones =
 					q(52416, {	-- Work Order: Shimmerscale Diving Suit
 						["provider"] = { "n", 135808 },	-- Provisioner Fray
 						["lvl"] = 120,
-						["coord"] = { 67.61, 21.81, 1161 },
+						["coord"] = { 67.61, 21.81, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = LEATHERWORKING,

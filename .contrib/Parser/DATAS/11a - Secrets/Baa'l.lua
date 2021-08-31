@@ -18,7 +18,7 @@ _.Secrets =
 			TIRAGARDE_SOUND,
 			DRUSTVAR,
 			STORMSONG_VALLEY,
-			1161,
+			BORALUS,
 		},
 		["g"] = {
 			o(293849, {	-- Step 1: Conspicuous Note
@@ -39,7 +39,7 @@ _.Secrets =
 				["model"] = 1068320,
 				["modelScale"] = .5,
 				["questID"] = 52810,
-				["coord"] = { 49.7, 40.0, 1161 },	-- Nets/Entrance
+				["coord"] = { 49.7, 40.0, BORALUS },	-- Nets/Entrance
 				["sourceQuest"] = 52809,	-- Step 3: Second Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 3:|r Head to Boralus.  At the coordinates provided, there is a raised piece of dock with a horse, an NPC named Chance Cogswaddle, and a mechanical contraption called a Homing Copter.  Hop down from the dock and go underneath it — there's a net that looks like it will block your path, but you can walk through it.\n\nWalk forward once you're underneath the dock and you'll pass through a sheet of seaweed and descend into a cave.  The pebble you're looking for is tiny and pale and located close to the middle of the cave, around |cFFFFFFFF44.7, 38.5|r.\n\nThere's no text when you click on this one, but if you shift+click anywhere in the ATT mini or main list this step should get checked off your to-do list.\n",
 			}),
@@ -90,7 +90,7 @@ _.Secrets =
 				["model"] = 1068320,
 				["modelScale"] = .5,
 				["questID"] = 52813,
-				["coord"] = { 37.5, 80.3, 1161 },	-- Cellar Entrance
+				["coord"] = { 37.5, 80.3, BORALUS },	-- Cellar Entrance
 				["sourceQuest"] = 52814,	-- Step 8: Seventh Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 9:|r Head to Boralus.  At the coordinates provided, there is a large tree in the hedge maze.  Behind it is the entrance to a cellar.\n\nOn the left side of the cellar, you'll see two crates stacked up with two barrels stacked to their left and a small chest on their right.  The pebble is hidden behind the barrel, around |cFFFFFFFF37.3, 79.7|r.\n\nShift+click to refresh your collection.\n",
 			}),
@@ -122,7 +122,7 @@ _.Secrets =
 				["model"] = 1068320,
 				["modelScale"] = .5,
 				["questID"] = 53634,
-				["coord"] = { 10.0, 82.7, 1161 },	-- Cave Entrance
+				["coord"] = { 10.0, 82.7, BORALUS },	-- Cave Entrance
 				["sourceQuest"] = 53633,	-- Step 12: Eleventh Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 13:|r Head to Boralus.  At the coordinates provided, there is a well hidden underwater cave.  Its entrance is covered in a layer of seaweed that you can swim through.  Head to the little island inside the cave, and on the right you'll see stalagmites on either side of some red kelp./n/nThe pebble is hidden underneath the kelp around |cFFFFFFFF59.6, 41.8|r, and it's another one where you have to really play with your camera angle to find it.\n\nShift+click to refresh your collection.\n",
 			}),

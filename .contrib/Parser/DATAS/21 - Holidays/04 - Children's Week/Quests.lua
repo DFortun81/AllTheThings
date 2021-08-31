@@ -610,7 +610,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							DRUSTVAR,
-							1161,	-- Boralus
+							BORALUS,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -664,11 +664,11 @@ _.Holidays =
 						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 145291 },		-- Oprhan Matron Westerson
 						["maps"] = {
-							1161,	-- Boralus
+							BORALUS,
 						},
 						["coords"] = {
-							{ 47.77, 39.37, 1161 },	-- Path to Oprhan Matron Westerson
-							{ 48.01, 40.28, 1161 },	-- Orphan Matron Westerson
+							{ 47.77, 39.37, BORALUS },	-- Path to Oprhan Matron Westerson
+							{ 48.01, 40.28, BORALUS },	-- Orphan Matron Westerson
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -1134,11 +1134,11 @@ _.Holidays =
 							53864,	-- Shapeshifters
 						},
 						["coords"] = {
-							{ 47.77, 39.37, 1161 },	-- Path to Oprhan Matron Westerson
-							{ 48.01, 40.28, 1161 },	-- Orphan Matron Westerson
+							{ 47.77, 39.37, BORALUS },	-- Path to Oprhan Matron Westerson
+							{ 48.01, 40.28, BORALUS },	-- Orphan Matron Westerson
 						},
 						["maps"] = {
-							1161,	-- Boralus
+							BORALUS,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -1240,7 +1240,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							DRUSTVAR,
-							1161,	-- Boralus
+							BORALUS,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -1461,7 +1461,7 @@ _.Holidays =
 							{ 42.47, 22.71, TIRAGARDE_SOUND },	-- Mountain Folk
 						},
 						["maps"] = {
-							1161,	-- Boralus
+							BORALUS,
 							TIRAGARDE_SOUND,
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -1545,7 +1545,7 @@ _.Holidays =
 							{ 72.57, 49.94, STORMSONG_VALLEY },	-- Shrine of the Storm View
 						},
 						["maps"] = {
-							1161,	-- Boralus
+							BORALUS,
 							STORMSONG_VALLEY,
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -1623,7 +1623,7 @@ _.Holidays =
 							{ 79.83, 82.51, TIRAGARDE_SOUND },	-- Meet with Pirates
 						},
 						["maps"] = {
-							1161,	-- Boralus
+							BORALUS,
 							TIRAGARDE_SOUND,
 						},
 						["races"] = ALLIANCE_ONLY,

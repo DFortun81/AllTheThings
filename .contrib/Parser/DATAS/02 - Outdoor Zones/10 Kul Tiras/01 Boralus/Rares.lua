@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(1161, {	-- Boralus
+		m(BORALUS, {
 			n(RARES, {
 				n(139287, {	-- Sawtooth
 					["questID"] = 51877,
 					["coords"] = {
-						{ 76.8, 37.2, 1161 },
-						{ 81.6, 50.4, 1161 },
+						{ 76.8, 37.2, BORALUS },
+						{ 81.6, 50.4, BORALUS },
 					},
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(155273),	-- Shartook Hatchet

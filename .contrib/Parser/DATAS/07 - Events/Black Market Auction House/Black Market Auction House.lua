@@ -9,7 +9,7 @@ _.WorldEvents =
 		["u"] = 9,
 		["description"] = "This list is close to what you can expect to find on the Black Market Auction House, but keep in mind other items could pop up.",
 		["maps"] = {
-			1161,	-- Boralus
+			BORALUS,
 			626,	-- Dalaran: Rogue Class Hall	-- Still works in 9.0.2
 			862,	-- Dazar'alor
 			REVENDRETH,
@@ -27,7 +27,7 @@ _.WorldEvents =
 			--100986,	-- Madam Goya [Underbelly] -- Option to interact with this Version removed in 9.0.2
 		},
 		["coords"] = {
-			{ 56.71, 46.32, 1161 },	-- Madam Gosu, Boralus
+			{ 56.71, 46.32, BORALUS },	-- Madam Gosu
 			{ 57.91, 46.28, 626 },	-- Madam Gosu, Dalaran: Rogue Class Hall
 			{ 63.54, 62.68, 862 },	-- Madam Goya, Dazar'alor
 			{ 52.40, 83.80, REVENDRETH },	-- Ta'xera <Matron of the Market>

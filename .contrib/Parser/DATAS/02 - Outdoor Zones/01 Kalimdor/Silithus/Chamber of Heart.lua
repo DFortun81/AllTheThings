@@ -114,7 +114,7 @@ _.Zones =
 								{ "n", 154465 },	-- Earthen Guardian (Horde)
 							},
 							["coords"] = {	-- i found it at the first one for Horde; apparently it can show up in both, but i'm not sure what governs which location it's available at
-								{ 75.0, 15.0, 1161 },	-- Boralus, Alliance
+								{ 75.0, 15.0, BORALUS },	-- Alliance
 								{ 50.3, 41.7, DAZARALOR },	-- Horde
 								{ 51.0, 88.8, DAZARALOR },	-- Horde
 							},
@@ -176,11 +176,11 @@ _.Zones =
 						}),
 						q(56262, {	-- Back to the Chamber (A)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
-							["coord"] = { 74.8, 15.2, 1161 },
+							["coord"] = { 74.8, 15.2, BORALUS },
 							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1161 },	-- Boralus
+							["maps"] = { BORALUS },
 						}),
 						q(55739, {	-- Back to the Chamber (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian
@@ -536,11 +536,11 @@ _.Zones =
 						}),
 						q(56261, {	-- Return to the Heart (A)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian <Messenger of the Speaker>
-							["coord"] = { 74.8, 15.2, 1161 },
+							["coord"] = { 74.8, 15.2, BORALUS },
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1161 },	-- Boralus
+							["maps"] = { BORALUS },
 						}),
 						q(55522, {	-- Return to the Heart (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian <Messenger of the Speaker>
@@ -658,11 +658,11 @@ _.Zones =
 						}),
 						q(56263, {	-- Unlocking the Power (A)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
-							["coord"] = { 74.8, 15.2, 1161 },
+							["coord"] = { 74.8, 15.2, BORALUS },
 							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1161 },	-- Boralus
+							["maps"] = { BORALUS },
 						}),
 						q(56260, {	-- Unlocking the Power (H)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
@@ -721,11 +721,11 @@ _.Zones =
 						}),
 						q(56185, {	-- Whispers of N'zoth (A)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
-							["coord"] = { 74.9, 15.1, 1161 },
+							["coord"] = { 74.9, 15.1, BORALUS },
 							["sourceQuest"] = 57002,	-- Old Soldier
 							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1161 },	-- Boralus
+							["maps"] = { BORALUS },
 							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
 						}),
 						q(56267, {	-- Whispers of N'zoth (H)

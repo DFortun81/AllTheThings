@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(1161, {	-- Boralus
+		m(BORALUS, {
 			["lvl"] = 110,
 			["isRaid"] = true,
 			["achievementID"] = 12847,	-- Siege of Boralus

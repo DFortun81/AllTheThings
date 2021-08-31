@@ -80,11 +80,11 @@ _.BattlePets =
 				q(58455, {	-- Shadowy Showdown (A)
 					["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
 					-- ["sourceQuests"] = {  },	-- TODO, this has a source quest... unknown, maybe other pet battle dungeon completion?
-					["coord"] = { 50.3, 46.9, 1161 },
+					["coord"] = { 50.3, 46.9, BORALUS },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
-					["maps"] = { 1161 },	-- Boralus
+					["maps"] = { BORALUS },
 				}),
 				q(58456, {	-- Shadowy Showdown (H)
 					["provider"] = { "n", 147641 },	-- Radek Fuselock
@@ -199,11 +199,11 @@ _.BattlePets =
 				}),
 				q(54184, {	-- Trouble in Gnomeregan (A)
 					["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
-					["coord"] = { 50.3, 46.9, 1161 },	-- Boralus
+					["coord"] = { 50.3, 46.9, BORALUS },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
-					["maps"] = { 1161 },	-- Boralus
+					["maps"] = { BORALUS },
 				}),
 				q(54276, {	-- Trouble in Gnomeregan (H)
 					["provider"] = { "n", 147641 },	-- Radek Fuselock
@@ -279,10 +279,10 @@ _.BattlePets =
 				}),
 				q(56489, {	-- Restless Dead (A)
 					["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
-					["coord"] = { 50.3, 46.9, 1161 },
+					["coord"] = { 50.3, 46.9, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
-					["maps"] = { 1161 },	-- Boralus
+					["maps"] = { BORALUS },
 				}),
 				q(56490, {	-- Restless Dead (H)
 					["provider"] = { "n", 147641 },	-- Radek Fuselock

@@ -1686,9 +1686,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(54710, {	-- Candy Bucket — Tiragarde Sound, Boralus, Alliance
 				["isYearly"] = true,
-				["coord"] = { 73.7, 12.4, 1161 },
+				["coord"] = { 73.7, 12.4, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 1161 },	-- Boralus
+				["maps"] = { BORALUS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

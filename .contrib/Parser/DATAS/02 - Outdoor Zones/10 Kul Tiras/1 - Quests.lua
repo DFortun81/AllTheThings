@@ -10,7 +10,7 @@ _.Zones =
 				q(54438, {	-- Crucible of Storms: Relics of Shadow
 					["sourceQuests"] = { 54126 },	-- Twist the Knife
 					["provider"] = { "n", 146902 },	-- Brother Pike
-					["coord"] = { 67.4, 21.0, 1161 },
+					["coord"] = { 67.4, 21.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54113, {	-- Every Little Death Helps
@@ -34,7 +34,7 @@ _.Zones =
 					["sourceQuests"] = { 54126 },	-- Twist the Knife [Alliance]
 					["description"]	= "You only get the toy if you choose to cleanse the gift.",
 					["provider"] = { "n", 146902 },	-- Brother Pike
-					["coord"] = { 67.4, 21.0, 1161 },
+					["coord"] = { 67.4, 21.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168123),	-- Twitching Eyeball (TOY!)

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(1161, {	-- Boralus
+		m(BORALUS, {
 			n(138704, {	-- Mission Command Table
 				["modelScale"] = 2,
 				["races"] = ALLIANCE_ONLY,
