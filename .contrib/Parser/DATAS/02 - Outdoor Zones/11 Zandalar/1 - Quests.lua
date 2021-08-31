@@ -93,7 +93,7 @@ _.Zones =
 				q(53762, {	-- The Tempest Crown
 					["sourceQuests"] = { 53761 },	-- The Pirate's Treasure
 					["provider"] = { "n", 145396 },	-- Xal'atath
-					["coord"] = { 75.0, 77.7, 895 },
+					["coord"] = { 75.0, 77.7, TIRAGARDE_SOUND },
 				}),
 				q(53763, {	-- Twist the Knife
 					["provider"] = { "n", 146384 },	-- Xal'atath

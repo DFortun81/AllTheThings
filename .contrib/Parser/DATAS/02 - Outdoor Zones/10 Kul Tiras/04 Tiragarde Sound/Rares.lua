@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(895, {	-- Tiragarde Sound
+		m(TIRAGARDE_SOUND, {
 			n(RARES, {
 				n(132182, {	-- Auditor Dolp
 					["questID"] = 50156,
-					["coord"] = { 75.2, 78.4, 895 },
+					["coord"] = { 75.2, 78.4, TIRAGARDE_SOUND },
 					["g"] = {
 						crit(1, {	-- Auditor Dolp
 							["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
@@ -18,7 +18,7 @@ _.Zones =
 				}),
 				n(129181, {	-- Barman Bill
 					["questID"] = 50233,
-					["coord"] = { 76.6, 83.2, 895 },
+					["coord"] = { 76.6, 83.2, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(160451),	-- Barman Skewer
 						crit(2, {	-- Barman Bill
@@ -32,7 +32,7 @@ _.Zones =
 				}),
 				n(132068, {	-- Bashmu
 					["questID"] = 50094,
-					["coord"] = { 34.6, 30.2, 895 },
+					["coord"] = { 34.6, 30.2, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(160467),	-- Hydra-Hunter Legguards
 						crit(3, {	-- Bashmu
@@ -42,7 +42,7 @@ _.Zones =
 				}),
 				n(132086, {	-- Black-Eyed Bart
 					["questID"] = 50096,
-					["coord"] = { 56.3, 70.0, 895 },
+					["coord"] = { 56.3, 70.0, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(158650),	-- Sea-Scourge Greatblade
 						crit(4, {	-- Black-Eyed Bart
@@ -56,7 +56,7 @@ _.Zones =
 				}),
 				n(139145, {	-- Blackthorne
 					["questID"] = 51808,
-					["coord"] = { 85.2, 73.6, 895 },
+					["coord"] = { 85.2, 73.6, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(154411),	-- Vlaros Corps Rifle
 						crit(5, {	-- Blackthorne
@@ -66,7 +66,7 @@ _.Zones =
 				}),
 				n(130508, {	-- Broodmother Razora
 					["questID"] = 49999,
-					["coord"] = { 83.6, 44.8, 895 },
+					["coord"] = { 83.6, 44.8, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(160460),	-- Thick Sauroskin Gloves
 						crit(6, {	-- Broodmother Razora
@@ -77,7 +77,7 @@ _.Zones =
 				n(132088, {	-- Captain Wintersail
 					-- have to interact with object 280649 Smuggler's Cache to spawn
 					["questID"] = 50097,
-					["coord"] = { 38.6, 21.0, 895 },
+					["coord"] = { 38.6, 21.0, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(155422, {	-- Pirate Chief's Speargun
 							["crs"] = {
@@ -93,7 +93,7 @@ _.Zones =
 				}),
 				n(139152, {	-- Carla Smirk
 					["questID"] = 51809,
-					["coord"] = { 72.6, 81.2, 895 },
+					["coord"] = { 72.6, 81.2, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(155271),	-- Monkey's Paw Chopper
 						crit(8, {	-- Carla Smirk
@@ -103,7 +103,7 @@ _.Zones =
 				}),
 				n(132211, {	-- Fowlmouth
 					["questID"] = 50155,
-					["coord"] = { 89.8, 78.1, 895 },
+					["coord"] = { 89.8, 78.1, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(154467),	-- Parrot-Trainer Mantle
 						crit(9, {	-- Fowlmouth
@@ -113,7 +113,7 @@ _.Zones =
 				}),
 				n(132127, {	-- Foxhollow Skyterror
 					["questID"] = 50137,
-					["coord"] = { 60.1, 22.3, 895 },
+					["coord"] = { 60.1, 22.3, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(160454),	-- Foxhollow Falconer's Bracers
 						crit(10, {	-- Foxhollow Skyterror
@@ -124,7 +124,7 @@ _.Zones =
 				n(130350, {	-- Guardian of the Spring
 					["description"] = "Mount the horse located at 62.1, 51.8 and ride it to Roan Berthold at 67.3, 51.6.",
 					["questID"] = 49983,	-- Ride Horse Back
-					["coord"] = { 62.1, 51.8, 895 },	--  Guardian of the Spring
+					["coord"] = { 62.1, 51.8, TIRAGARDE_SOUND },	--  Guardian of the Spring
 					["g"] = {
 						o(279750, {	-- Hay Covered Chest
 							["questID"] = 49963,	-- Loot Chest
@@ -140,7 +140,7 @@ _.Zones =
 				}),
 				n(139233, {	-- Gulliver
 					["questID"] = 53373,
-					["coord"] = { 57.7, 56.0, 895 },
+					["coord"] = { 57.7, 56.0, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(158338),	-- Swift-Travel Gloves
 						crit(11, {	-- Gulliver
@@ -150,7 +150,7 @@ _.Zones =
 				}),
 				n(131520, {	-- Kulett the Ornery
 					["questID"] = 49984,
-					["coord"] = { 48.2, 22.6, 895 },
+					["coord"] = { 48.2, 22.6, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(158597),	-- Silvershell Defender
 						crit(12, {	-- Kulett the Ornery
@@ -160,7 +160,7 @@ _.Zones =
 				}),
 				n(134106, {	-- Lumbergrasp Sentinel
 					["questID"] = 50525,
-					["coord"] = { 68.6, 20.2, 895 },
+					["coord"] = { 68.6, 20.2, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(155524),	-- Cursetouched Lumberjack's Axe
 						crit(13, {	-- Lumbergrasp Sentinel
@@ -170,7 +170,7 @@ _.Zones =
 				}),
 				n(139290, {	-- Maison the Portable
 					["questID"] = 51880,
-					["coord"] = { 58.3, 49.3, 895 },
+					["coord"] = { 58.3, 49.3, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(154458),	-- Shellbreaker Warhelm
 						crit(14, {	-- Maison the Portable
@@ -181,7 +181,7 @@ _.Zones =
 				}),
 				n(131252, {	-- Merianae
 					["questID"]	= 49921,
-					["coord"] = { 43.5, 17.2, 895 },	-- cave entrance
+					["coord"] = { 43.5, 17.2, TIRAGARDE_SOUND },	-- cave entrance
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(160461),	-- Thick Sauroskin Pants
 						crit(16, {	-- Merianae
@@ -191,7 +191,7 @@ _.Zones =
 				}),
 				n(139205, {	-- P4-N73R4
 					["questID"] = 51833,
-					["coord"] = { 65.2, 64.5, 895 },
+					["coord"] = { 65.2, 64.5, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(161599),	-- Mechano-Cat Claw
 						crit(17, {	-- P4-N73R4
@@ -201,7 +201,7 @@ _.Zones =
 				}),
 				n(131262, {	-- Pack Leader Asenya
 					["questID"] = 49923,
-					["coord"] = { 39.0, 15.2, 895 },
+					["coord"] = { 39.0, 15.2, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(160263),	-- Snowpelt Mangler
 						crit(18, {	-- Pack Leader Asenya
@@ -211,7 +211,7 @@ _.Zones =
 				}),
 				n(132179, {	-- Raging Swell
 					["questID"] = 50148,
-					["coord"] = { 64.7, 58.6, 895 },
+					["coord"] = { 64.7, 58.6, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(161446),	-- Blistering Seawater Seal
 						crit(19, {	-- Raging Swell
@@ -221,7 +221,7 @@ _.Zones =
 				}),
 				n(139278, {	-- Ranja
 					["questID"] = 51872,
-					["coord"] = { 68.3, 63.56, 895 },
+					["coord"] = { 68.3, 63.56, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(154478),	-- Ranja-Hide Bracers
 						crit(20, {	-- Ranja
@@ -231,7 +231,7 @@ _.Zones =
 				}),
 				n(127289, {	-- Saurolisk Tamer Mugg
 					["questID"] = 48806,
-					["coord"] = { 58.47, 14.82, 895 },
+					["coord"] = { 58.47, 14.82, TIRAGARDE_SOUND },
 					["g"] = {
 						i(154416, {	-- Trogg Saurolisk-Breaker
 							["crs"] = { 127290 },	-- Mugg
@@ -244,7 +244,7 @@ _.Zones =
 				}),
 				n(139285, {	-- Shiverscale the Toxic
 					["questID"] = 51876,
-					["coord"] = { 55.0, 32.6, 895 },
+					["coord"] = { 55.0, 32.6, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(155278),	-- Shiverscale Spellknife
 						crit(23, {	-- Shiverscale the Toxic
@@ -254,7 +254,7 @@ _.Zones =
 				}),
 				n(132280, {	-- Squacks
 					["questID"] = 50160,
-					["coord"] = { 80.8, 82.6, 895 },
+					["coord"] = { 80.8, 82.6, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(160455),	-- Parrot-Trainer Sash
 						crit(24, {	-- Squacks
@@ -264,7 +264,7 @@ _.Zones =
 				}),
 				n(139135, {	-- Squirgle of the Depths
 					["questID"] = 51807,
-					["coord"] = { 48.9, 36.9, 895 },
+					["coord"] = { 48.9, 36.9, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(155551),	-- Squirgle's Deepstone Wand
 						crit(25, {	-- Squirgle of the Depths
@@ -274,7 +274,7 @@ _.Zones =
 				}),
 				n(139280, {	-- Sythian the Swift
 					["questID"] = 51873,
-					["coord"] = { 66.8, 13.8, 895 },
+					["coord"] = { 66.8, 13.8, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(154474),	-- Sythian Swiftbelt
 						crit(26, {	-- Sythian the Swift
@@ -284,7 +284,7 @@ _.Zones =
 				}),
 				n(133356, {	-- Tempestria
 					["questID"] = 50301,
-					["coord"] = { 60.7, 17.4, 895 },
+					["coord"] = { 60.7, 17.4, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(160466),	-- Saurolisk Broodmother Boots
 						crit(27, {	-- Tempestria
@@ -294,7 +294,7 @@ _.Zones =
 				}),
 				n(139289, {	-- Tentulos the Drifter
 					["questID"] = 51879,
-					["coord"] = { 55.2, 51.5, 895 },
+					["coord"] = { 55.2, 51.5, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(154448),	-- Medusa-Drifter's Chainmail
 						crit(28, {	-- Tentulos the Drifter
@@ -304,7 +304,7 @@ _.Zones =
 				}),
 				n(131389, {	-- Teres
 					["questID"] = 49942,
-					["coord"] = { 63.6, 50.3, 895 },
+					["coord"] = { 63.6, 50.3, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(158556),	-- Siren's Tongue
 						crit(29, {	-- Teres
@@ -314,7 +314,7 @@ _.Zones =
 				}),
 				n(139235, {	-- Tort Jaw
 					["questID"] = 51835,
-					["coord"] = { 70.4, 55.7, 895 },
+					["coord"] = { 70.4, 55.7, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159349),	-- Dragon Turtle Handlers
 						crit(30, {	-- Tort Jaw
@@ -324,7 +324,7 @@ _.Zones =
 				}),
 				n(132076, {	-- Totes
 					["questID"] = 50095,
-					["coord"] = { 46.8, 20.6, 895 },
+					["coord"] = { 46.8, 20.6, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(160452),	-- Goat's Tote
 						crit(31, {	-- Totes
@@ -334,7 +334,7 @@ _.Zones =
 				}),
 				n(131984, {	-- Twin-hearted Construct
 					["questID"] = 50073,
-					["coord"] = { 70.4, 12.4, 895 },
+					["coord"] = { 70.4, 12.4, TIRAGARDE_SOUND },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(160473),	-- Wickerthorn Stompers
 						crit(32, {	-- Twin-hearted Construct
@@ -351,7 +351,7 @@ _.Zones =
 				}),
 				n(137176, {	-- Walter Ferrell
 					["questID"] = 51321,
-					["coord"] = { 64.2, 19.2, 895 },
+					["coord"] = { 64.2, 19.2, TIRAGARDE_SOUND },
 					["crs"] = {
 						137181,	-- Mead-Craving Cranee
 						137182,	-- Honey-Crazed Gull

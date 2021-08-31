@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(895, {	-- Tiragarde Sound
+		m(TIRAGARDE_SOUND, {
 			n(-38, {	-- Professions
 				prof(HERBALISM, {
 					-- Siren's Pollen
@@ -55,7 +55,7 @@ _.Zones =
 				prof(JEWELCRAFTING, {
 					q(55578, {	-- Tol Dagor: Jewel of the Tides (H)
 						["provider"] = { "n", 150893 },	-- Shrine of the Sea
-						["coord"] = { 46.4, 23.5, 895 },
+						["coord"] = { 46.4, 23.5, TIRAGARDE_SOUND },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49599,	-- The Missing Chapter (H)
 						["requireSkill"] = JEWELCRAFTING,

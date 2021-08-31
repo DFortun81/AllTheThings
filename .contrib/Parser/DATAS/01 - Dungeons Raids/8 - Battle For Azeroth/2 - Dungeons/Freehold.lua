@@ -4,7 +4,7 @@
 
 _.Instances = { tier(BFA_TIER, {
 	inst(1001, {	-- Freehold
-		["coord"] = { 84.6, 78.7, 895 },
+		["coord"] = { 84.6, 78.7, TIRAGARDE_SOUND },
 		["maps"] = {
 			936,	-- Freehold
 		},

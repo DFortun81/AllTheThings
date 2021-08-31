@@ -361,7 +361,7 @@ _.Zones =
 					}),
 					q(49575, {	-- Tol Dagor: Jewel of the Tides
 						["provider"] = { "n", 150893 },	-- Shrine of the Sea
-						["coord"] = { 46.4, 23.5, 895 },
+						["coord"] = { 46.4, 23.5, TIRAGARDE_SOUND },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49572,	-- The Shrine of the Sea
 						["requireSkill"] = JEWELCRAFTING,
@@ -370,7 +370,7 @@ _.Zones =
 					}),
 					q(55590, {	-- Setting Things Right (A)
 						["provider"] = { "n", 152495 },	-- Shrine of the Sea
-						["coord"] = { 46.4, 23.5, 895 },
+						["coord"] = { 46.4, 23.5, TIRAGARDE_SOUND },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49575,	-- Tol Dagor: Jewel of the Tides
 						["requireSkill"] = JEWELCRAFTING,

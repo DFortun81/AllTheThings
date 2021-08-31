@@ -1458,11 +1458,11 @@ _.Holidays =
 							53811,	-- Children's Week
 						},
 						["coords"] = {
-							{ 42.47, 22.71, 895 },	-- Mountain Folk
+							{ 42.47, 22.71, TIRAGARDE_SOUND },	-- Mountain Folk
 						},
 						["maps"] = {
 							1161,	-- Boralus
-							895,	-- Tiragarde Sound
+							TIRAGARDE_SOUND,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -1620,11 +1620,11 @@ _.Holidays =
 							53811,	-- Children's Week
 						},
 						["coords"] = {
-							{ 79.83, 82.51, 895 },	-- Meet with Pirates
+							{ 79.83, 82.51, TIRAGARDE_SOUND },	-- Meet with Pirates
 						},
 						["maps"] = {
 							1161,	-- Boralus
-							895,	-- Tiragarde Sound
+							TIRAGARDE_SOUND,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,

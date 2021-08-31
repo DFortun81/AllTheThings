@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(895, {	-- Tiragarde Sound
+		m(TIRAGARDE_SOUND, {
 			n(QUESTS, {
 				q(49523, {	-- A Bad Deal
 					["sourceQuests"] = { 49522 },	-- Carentan's Payment
-					["coord"] = { 76.8, 85.9, 895 },
+					["coord"] = { 76.8, 85.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50249, {	-- A Boralus Triple Threat
@@ -17,13 +17,13 @@ _.Zones =
 						51226,	-- Death From Two Sides
 						49733,	-- Patching Up the Rear
 					},
-					["coord"] = { 81.0, 42.4, 895 },
+					["coord"] = { 81.0, 42.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 133035 },	-- Officer Jovan
 				}),
 				q(48352, {	-- A Cure from the Sea
 					["sourceQuests"] = { 48540 },	-- Aiding the Wharf
-					["coord"] = { 42.2, 29.3, 895 },
+					["coord"] = { 42.2, 29.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125922 },	-- Brother Therold
 					["g"] = {
@@ -42,19 +42,19 @@ _.Zones =
 				}),
 				q(49869, {	-- A Desperate Defense
 					["sourceQuests"] = { 52431 },	-- No-Landing Zone
-					["coord"] = { 60.9, 59.1, 895 },
+					["coord"] = { 60.9, 59.1, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 141078 },	-- Vigil Hill Refugee
 				}),
 				q(48873, {	-- A Grizzly End
 					["sourceQuests"] = { 50544 },	-- The Hunters of Kennings Lodge
-					["coord"] = { 75.8, 65.7, 895 },
+					["coord"] = { 75.8, 65.7, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127646 },	-- Lord Kennings
 				}),
 				q(48879, {	-- A Hunt for Hawk Eggs
 					["sourceQuests"] = { 50544 },	-- The Hunters of Kennings Lodge
-					["coord"] = { 75.8, 65.7, 895 },
+					["coord"] = { 75.8, 65.7, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127646 },	-- Lord Kennings
 				}),
@@ -63,19 +63,19 @@ _.Zones =
 						51226,	-- Death From Two Sides
 						49733,	-- Patching Up the Rear
 					},
-					["coord"] = { 81.0, 42.4, 895 },
+					["coord"] = { 81.0, 42.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 130375 },	-- Tallis Skyheart
 				}),
 				q(51151, {	-- A Letter to the League
 					["isBreadcrumb"] = true,
-					["coord"] = { 65.8, 50.1, 895 },
+					["coord"] = { 65.8, 50.1, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129956 },	-- Dockmaster Tyndall
 				}),
 				q(49234, {	-- A Marine Out of Water
 					["sourceQuests"] = { 50700 },	-- Drust in Time
-					["coord"] = { 62.9, 29.8, 895 },
+					["coord"] = { 62.9, 29.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 130101 },	-- Recruit Brutis
 					["g"] = {
@@ -92,17 +92,17 @@ _.Zones =
 				q(55647, {	-- A Quick Ear Hustle
 					["sourceQuests"] = { 55646 },	-- The Legend of Mechagon
 					["provider"] = { "n", 152578 },	-- Gazlowe
-					["coord"] = { 65.6, 64.6, 895 },
+					["coord"] = { 65.6, 64.6, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49028, {	-- A Sweater for Rupert
 					["provider"] = { "o", 277199 },	-- Weathered Job List
-					["coord"] = { 76.1, 65.4, 895 },
+					["coord"] = { 76.1, 65.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50002, {	-- A Very Precious Cargo
 					["sourceQuests"] = { 50026 },	-- Save Our Shipmates
-					["coord"] = { 50.2, 37.1, 895 },
+					["coord"] = { 50.2, 37.1, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 123415 },	-- Henry Hardwick
 				}),
@@ -111,19 +111,19 @@ _.Zones =
 						48773,	-- Papers, Please
 						48558,	-- The Irontide Crew
 					},
-					["coord"] = { 79.7, 81.8, 895 },
+					["coord"] = { 79.7, 81.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128702 },	-- Roko <Wandering Merchant>
 				}),
 				q(48540, {	-- Aiding the Wharf
 					["sourceQuests"] = { 48347 },	-- Anglepoint Wharf
-					["coord"] = { 42.3, 29.3, 895 },
+					["coord"] = { 42.3, 29.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125922 },	-- Brother Therold
 				}),
 				q(49737, {	-- Air Raid
 					["sourceQuests"] = { 49869 },	-- A Desperate Defense
-					["coord"] = { 56.7, 61.1, 895 },
+					["coord"] = { 56.7, 61.1, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 131048 },	-- Lieutenant Tarenfold
 				}),
@@ -133,38 +133,38 @@ _.Zones =
 						49268,	-- Sharks in the Water
 						48348,	-- Stinging Barbs
 					},
-					["coord"] = { 42.2, 29.3, 895 },
+					["coord"] = { 42.2, 29.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125922 },	-- Brother Therold
 				}),
 				q(48080, {	-- An Element of Danger
 					["sourceQuests"] = { 48070 },	-- The Norwington Festival
-					["coord"] = { 55.4, 24.6, 895 },
+					["coord"] = { 55.4, 24.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125398 },	-- Harold Beckett
 				}),
 				q(50542, {	-- An Explosive Opportunity
 					["isBreadcrumb"] = true,
-					["coord"] = { 66.6, 49.9, 895 },
+					["coord"] = { 66.6, 49.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129858 },	-- Wulfred Fizzbracket
 				}),
 				q(49710, {	-- An Offering of Eggs
 					["sourceQuests"] = { 49394 },	-- Hold Still
-					["coord"] = { 42.4, 22.6, 895 },
+					["coord"] = { 42.4, 22.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129170 },	-- Rulf
 				}),
 				q(50349, {	-- An Overrun Mine
 					["isBreadcrumb"] = true,
-					["coord"] = { 75.6, 50.6, 895 },
+					["coord"] = { 75.6, 50.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 133550 },	-- Junior Miner Joe
 				}),
 				q(48347, {	-- Anglepoint Wharf
 					["isBreadcrumb"] = true,
 					["provider"] = { "o", 281718 },	-- HELP WANTED
-					["coord"] = { 53.0, 28.3, 895 },
+					["coord"] = { 53.0, 28.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49260, {	-- Backup While I Pack Up
@@ -179,19 +179,19 @@ _.Zones =
 						49740,	-- Cease Fire!
 						49741,	-- Righteous Retribution
 					},
-					["coord"] = { 56.5, 61.3, 895 },
+					["coord"] = { 56.5, 61.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 142393 },	-- Taelia
 				}),
 				q(48004, {	-- Beginner Equitation
 					["sourceQuests"] = { 48005 },	-- Be Our Guest
-					["coord"] = { 51.6, 27.3, 895 },
+					["coord"] = { 51.6, 27.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 124802 },	-- Lord Aldruis Norwington
 				}),
 				q(48005, {	-- Be Our Guest
 					["sourceQuests"] = { 48003 },	-- The Lord's Behest
-					["coord"] = { 51.6, 27.3, 895 },
+					["coord"] = { 51.6, 27.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 124802 },	-- Lord Aldruis Norwington
 				}),
@@ -200,7 +200,7 @@ _.Zones =
 						48089,	-- Mountain Sounds
 						48088,	-- No Party Like a Trogg Party
 					},
-					["coord"] = { 51.6, 27.2, 895 },
+					["coord"] = { 51.6, 27.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 124802 },	-- Lord Aldrius Norwington
 					["g"] = {
@@ -212,13 +212,13 @@ _.Zones =
 						48355,	-- Evacuate the Premises
 						48354,	-- Tainted Shipments
 					},
-					["coord"] = { 39.5, 26.6, 895 },
+					["coord"] = { 39.5, 26.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126308 },	-- Keegan Alby
 				}),
 				q(49418, {	-- Big Boss
 					["sourceQuests"] = { 49417 },	-- Roughneck Riders
-					["coord"] = { 42.4, 22.3, 895 },
+					["coord"] = { 42.4, 22.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129003 },	-- Tagart
 				}),
@@ -226,8 +226,8 @@ _.Zones =
 					["sourceQuests"] = { 47489 },	-- Stow and Go
 					["provider"] = { "n", 125342 },	-- Captain Keelson
 					["coords"] = {
-						{ 85.6, 76.6, 895 },
-						{ 86.3, 79.7, 895 },	-- not sure what causes this NPC to show up in this location instead of the other coord, but this is where it was for me
+						{ 85.6, 76.6, TIRAGARDE_SOUND },
+						{ 86.3, 79.7, TIRAGARDE_SOUND },	-- not sure what causes this NPC to show up in this location instead of the other coord, but this is where it was for me
 					},
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -239,7 +239,7 @@ _.Zones =
 					},
 				}),
 				q(53439, {	-- Blood in the Tides (H)
-					["coord"] = { 85.21, 80.61, 895 },
+					["coord"] = { 85.21, 80.61, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 143777 },	-- Tall Hasani
 					["g"] = {
@@ -252,37 +252,37 @@ _.Zones =
 				}),
 				q(48616, {	-- Bolas and Birds
 					["sourceQuests"] = { 48070 },	-- The Norwington Festival
-					["coord"] = { 55.4, 24.6, 895 },
+					["coord"] = { 55.4, 24.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125398 },	-- Harold Beckett
 				}),
 				q(49439, {	-- Boss' Revenge
 					["sourceQuests"] = { 49435 },	-- Where'd They Go?
-					["coord"] = { 39.7, 13.4, 895 },
+					["coord"] = { 39.7, 13.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129655 },	-- Boss Tak
 				}),
 				q(50059, {	-- Can't Hear a Thing
 					["sourceQuests"] = { 50026 },	-- Save Our Shipmates
-					["coord"] = { 51.1, 35.8, 895 },
+					["coord"] = { 51.1, 35.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 131775 },	-- Earless Joe
 				}),
 				q(47755, {	-- Captured and Enraptured
 					["sourceQuests"] = { 50026 },	-- Save Our Shipmates
-					["coord"] = { 50.2, 37.1, 895 },
+					["coord"] = { 50.2, 37.1, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 123415 },	-- Henry Hardwick
 				}),
 				q(49522, {	-- Carentan's Payment
 					["sourceQuests"] = { 49407 },	-- Trixie Business
-					["coord"] = { 76.9, 86.0, 895 },
+					["coord"] = { 76.9, 86.0, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128903 },	-- Carentan
 				}),
 				q(49757, {	-- Cat on a Hot Copper Roof
 					["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
-					["coord"] = { 58.5, 61.5, 895 },
+					["coord"] = { 58.5, 61.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 131654 },	-- Meredith
 					["g"] = {
@@ -291,7 +291,7 @@ _.Zones =
 				}),
 				q(49740, {	-- Cease Fire!
 					["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
-					["coord"] = { 56.6, 61.1, 895 },
+					["coord"] = { 56.6, 61.1, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 131048 },	-- Lieutenant Tarenfold
 				}),
@@ -300,36 +300,36 @@ _.Zones =
 						51151,	-- A Letter to the League
 						50700,	-- Drust in Time
 					},
-					["coord"] = { 62.7, 29.8, 895 },
+					["coord"] = { 62.7, 29.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128381 },	-- Drogrin Alewhisker
 				}),
 				q(48008, {	-- Dangerous Cargo
-					["coord"] = { 37.6, 29.5, 895 },
+					["coord"] = { 37.6, 29.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125962 },	-- Manager Yerold
 				}),
 				q(51226, {	-- Death from Two Sides
 					["sourceQuests"] = { 49715 },	-- Trouble at Greystone Keep
-					["coord"] = { 80.5, 42.0, 895 },
+					["coord"] = { 80.5, 42.0, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 132720 },	-- Hawkmaster Lloyd
 				}),
 				q(48370, {	-- Death in the Depths
 					["sourceQuests"] = { 48366 },	-- Paddle to Safety
-					["coord"] = { 35.2, 24.2, 895 },
+					["coord"] = { 35.2, 24.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126308 },	-- Keegan Alby
 				}),
 				q(48368, {	-- Deep Sea Defilement
 					["sourceQuests"] = { 48366 },	-- Paddle to Safety
-					["coord"] = { 35.2, 24.2, 895 },
+					["coord"] = { 35.2, 24.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125922 },	-- Brother Therold
 				}),
 				q(49405, {	-- Defenders of Daelin's Gate
 					["sourceQuests"] = { 49404 },	-- Fairwind's "Friends"
-					["coord"] = { 77.1, 82.9, 895 },
+					["coord"] = { 77.1, 82.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128927 },	-- Taelia
 				}),
@@ -338,19 +338,19 @@ _.Zones =
 						48773,	-- Papers, Please
 						48558,	-- The Irontide Crew
 					},
-					["coord"] = { 80.3, 81.4, 895 },
+					["coord"] = { 80.3, 81.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126158 },	-- Flynn Fairwind
 				}),
 				q(50700, {	-- Drust in Time
 					["isBreadcrumb"] = true,
-					["coord"] = { 66.3, 24.7, 895 },
+					["coord"] = { 66.3, 24.7, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 139089 },	-- Hatherford Guard
 				}),
 				q(48372, {	-- Eldritch Invocations
 					["sourceQuests"] = { 48366 },	-- Paddle to Safety
-					["coord"] = { 35.2, 24.2, 895 },
+					["coord"] = { 35.2, 24.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126298 },	-- Brannon Stormsong
 				}),
@@ -360,13 +360,13 @@ _.Zones =
 						49451,	-- Maximizing Resources
 						49465,	-- Time Off Requests
 					},
-					["coord"] = { 68.9, 20.5, 895 },
+					["coord"] = { 68.9, 20.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129613 },	-- Maynard Algerson
 				}),
 				q(49066, {	-- Encase of Emergency
 					["sourceQuests"] = { 49039 },	-- The Start of a Monster Hunt
-					["coord"] = { 70.8, 61.9, 895 },
+					["coord"] = { 70.8, 61.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 127481 },	-- Lord Kennings
@@ -374,7 +374,7 @@ _.Zones =
 					},
 				}),
 				q(49299, {	-- Enemy Within
-					["coord"] = { 37.6, 29.5, 895 },
+					["coord"] = { 37.6, 29.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125962 },	-- Manager Yerold
 					["g"] = {
@@ -390,7 +390,7 @@ _.Zones =
 				}),
 				q(48087, {	-- Equine Retrieval
 					["sourceQuests"] = { 48939 },	-- Show Me What You've Got
-					["coord"] = { 51.6, 27.3, 895 },
+					["coord"] = { 51.6, 27.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 124802 },	-- Lord Aldruis Norwington
 				}),
@@ -399,13 +399,13 @@ _.Zones =
 						49292,	-- Algae Shakes
 						48353,	-- Pulse of the Wharf
 					},
-					["coord"] = { 41.2, 27.0, 895 },
+					["coord"] = { 41.2, 27.0, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125922 },	-- Brother Therold
 				}),
 				q(49404, {	-- Fairwind's "Friends"
 					["sourceQuests"] = { 49399 },	-- The Big Job
-					["coord"] = { 77.3, 83.9, 895 },
+					["coord"] = { 77.3, 83.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128927 },	-- Venrik
 					["g"] = {
@@ -434,7 +434,7 @@ _.Zones =
 				}),
 				q(52750, {	-- Farmers Who Fight
 					["sourceQuests"] = { 49869 },	-- A Desperate Defense
-					["coord"] = { 56.7, 61.1, 895 },
+					["coord"] = { 56.7, 61.1, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 131048 },	-- Lieutenant Tarenfold
 				}),
@@ -443,19 +443,19 @@ _.Zones =
 						49398,	-- Raise a Glass!
 						49401,	-- Rodrigo's Roost
 					},
-					["coord"] = { 77.0, 82.9, 895 },
+					["coord"] = { 77.0, 82.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129098 },	-- Rodrigo <Flight Master>
 				}),
 				q(48196, {	-- Following Eddie's Trail
 					["sourceQuests"] = { 48670 },	-- Runaway Rider
-					["coord"] = { 54.4, 19.4, 895 },
+					["coord"] = { 54.4, 19.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127144 },	-- Melissa Kenny
 				}),
 				q(49736, {	-- For Kul Tiras!
 					["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
-					["coord"] = { 56.6, 61.1, 895 },
+					["coord"] = { 56.6, 61.1, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 131048 },	-- Lieutenant Tarenfold
 					["g"] = {
@@ -471,19 +471,19 @@ _.Zones =
 						51226,	-- Death From Two Sides
 						49733,	-- Patching Up the Rear
 					},
-					["coord"] = { 80.6, 42.0, 895 },
+					["coord"] = { 80.6, 42.0, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 132720 },	-- Hawkmaster Lloyd
 				}),
 				q(48539, {	-- Freehold
 					["sourceQuests"] = { 48505 },	-- Lovesick and Lost
-					["coord"] = { 80.2, 75.2, 895 },
+					["coord"] = { 80.2, 75.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126158 },	-- Flynn Fairwind
 				}),
 				q(52148, {	-- Freehold: A Pirate's End
 					["sourceQuests"] = { 49741 },	-- Righteous Retribution (must have completed objectives)
-					["coord"] = { 56.4, 61.6, 895 },
+					["coord"] = { 56.4, 61.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 121239 },	-- Flynn Fairwind
 				}),
@@ -492,7 +492,7 @@ _.Zones =
 						49418,	-- Big Boss
 						49412,	-- Helping Henry
 					},
-					["coord"] = { 43.6, 15.2, 895 },
+					["coord"] = { 43.6, 15.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 130424 },	-- "Helpless" Henry
 				}),
@@ -506,20 +506,20 @@ _.Zones =
 				}),
 				q(49453, {	-- Give a Dam
 					["sourceQuests"] = { 50699 },	-- Worker's Rights
-					["coord"] = { 66.6, 17.2, 895 },
+					["coord"] = { 66.6, 17.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129670 },	-- Lyssa Treewarden
 				}),
 				q(49181, {	-- Glimmering Locket (A)
 					["sourceQuests"] = { 49178 },	-- My Favorite Things (must be in log)
 					["provider"] = { "o", 277373 },	-- Glimmering Seaweed
-					["coord"] = { 88.0, 74.9, 895 },
+					["coord"] = { 88.0, 74.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53444, {	-- Glimmering Locket (H)
 					["sourceQuests"] = { 53443 },	-- My Favorite Things (must be in log)
 					["provider"] = { "o", 277373 },	-- Glimmering Seaweed
-					["coord"] = { 85.48, 80.78, 895 },
+					["coord"] = { 85.48, 80.78, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49738, {	-- Hands Off My Booty!
@@ -527,7 +527,7 @@ _.Zones =
 						49737,	-- Air Raid
 						52750,	-- Farmers Who Fight
 					},
-					["coord"] = { 56.6, 61.1, 895 },
+					["coord"] = { 56.6, 61.1, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 131048 },	-- Lieutenant Tarenfold
 					["g"] = {
@@ -540,13 +540,13 @@ _.Zones =
 				}),
 				q(49412, {	-- Helping Henry
 					["sourceQuests"] = { 49393 },	-- The Roughnecks
-					["coord"] = { 47.7, 17.6, 895 },
+					["coord"] = { 47.7, 17.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129392 },	-- "Helpless" Henry
 				}),
 				q(50005, {	-- Hold My Hand
 					["sourceQuests"] = { 50002 },	-- A Very Precious Cargo
-					["coord"] = { 55.4, 35.8, 895 },
+					["coord"] = { 55.4, 35.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 131684 },	-- Penny "Precious" Hardwick
 					["g"] = {
@@ -559,7 +559,7 @@ _.Zones =
 				}),
 				q(49394, {	-- Hold Still
 					["sourceQuests"] = { 49393 },	-- The Roughnecks
-					["coord"] = { 42.4, 22.2, 895 },
+					["coord"] = { 42.4, 22.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129003 },	-- Tagart
 				}),
@@ -570,30 +570,30 @@ _.Zones =
 				}),
 				q(49450, {	-- Incident Reports
 					["sourceQuests"] = { 48369 },	-- Emergent Strategy
-					["coord"] = { 70.0, 18.5, 895 },
+					["coord"] = { 70.0, 18.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129669 },	-- Benjamin Algerson
 				}),
 				q(51426, {	-- Inspection Gadget
-					["coord"] = { 65.0, 60.6, 895 },
+					["coord"] = { 65.0, 60.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 137694 },	-- Parin Tinklocket
 				}),
 				q(49452, {	-- Inventory Deficit
 					["sourceQuests"] = { 50699 },	-- Worker's Rights
-					["coord"] = { 68.9, 20.5, 895 },
+					["coord"] = { 68.9, 20.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129613 },	-- Maynard Algerson
 				}),
 				q(47487, {	-- Labor Dispute
 					["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
-					["coord"] = { 76.7, 43.4, 895 },
+					["coord"] = { 76.7, 43.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 122671 },	-- Cagney
 				}),
 				q(51149, {	-- Left at the Port
 					["isBreadcrumb"] = true,
-					["coord"] = { 75.0, 49.7, 895 },
+					["coord"] = { 75.0, 49.7, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 136576 },	-- Dockmaster Leighton
 				}),
@@ -601,75 +601,75 @@ _.Zones =
 					["sourceQuests"] = { 55040 },	-- Looking Inside
 					["provider"] = { "n", 149877 },	-- Tinkmaster Overspark
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 65.8, 66.3, 895 },
+					["coord"] = { 65.8, 66.3, TIRAGARDE_SOUND },
 				}),
 				q(55630, {	-- Let's Get It Started (H)
 					["sourceQuests"] = { 55648 },	-- This is Our Vault Now
 					["provider"] = { "n", 149809 },	-- Gazlowe
-					["coord"] = { 65.8, 66.3, 895 },
+					["coord"] = { 65.8, 66.3, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48606, {	-- Loaded for Bear
 					["sourceQuests"] = { 48539 },	-- Freehold
 					["provider"] = { "o", 276488 },	-- Azerite Cannonball
-					["coord"] = { 78.6, 77.8, 895 },
+					["coord"] = { 78.6, 77.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49230, {	-- Local Flavor (A)
 					["sourceQuests"] = { 49218 },	-- The Castaways
-					["coord"] = { 85.4, 80.7, 895 },
+					["coord"] = { 85.4, 80.7, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128228 },	-- Hungry Sam
 				}),
 				q(53446, {	-- Local Flavor (H)
 					["sourceQuests"] = { 53442 },	-- The Castaways
-					["coord"] = { 85.4, 80.7, 895 },
+					["coord"] = { 85.4, 80.7, TIRAGARDE_SOUND },
 					["provider"] = { "n", 128228 },	-- Hungry Sam
 				}),
 				q(55040, {	-- Looking Inside
 					["sourceQuests"] = { 54088 },	-- The Legend of Mechagon
 					["provider"] = { "n", 149864 },	-- Tinkmaster Overspark
-					["coord"] = { 65.5, 65.0, 895 },
+					["coord"] = { 65.5, 65.0, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(48505, {	-- Lovesick and Lost
 					["sourceQuests"] = { 48419 },	-- Lured and Allured
-					["coord"] = { 84.8, 76.0, 895 },
+					["coord"] = { 84.8, 76.0, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126158 },	-- Flynn Fairwind
 				}),
 				q(48898, {	-- Lucky Charm
-					["coord"] = { 51.2, 25.9, 895 },
+					["coord"] = { 51.2, 25.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127586 },	-- Joma
 				}),
 				q(48419, {	-- Lured and Allured
 					["sourceQuests"] = { 47489 },	-- Stow and Go
-					["coord"] = { 85.7, 83.4, 895 },
+					["coord"] = { 85.7, 83.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128377 },	-- Beachcomber Bob
 				}),
 				q(55649, {	-- Machinations for Mechagon
 					["sourceQuests"] = { 55632 },	-- You Must be This Height
 					["provider"] = { "n", 152652 },	-- Gazlowe
-					["coord"] = { 65.9, 66.4, 895 },
+					["coord"] = { 65.9, 66.4, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49897, {	-- Making Mysteries
-					["coord"] = { 67.5, 55.7, 895 },
+					["coord"] = { 67.5, 55.7, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129858 },	-- Wulferd Fizzbracket
 				}),
 				q(49465, {	-- Maximizing Resources
 					["sourceQuests"] = { 50699 },	-- Worker's Rights
-					["coord"] = { 68.9, 20.5, 895 },
+					["coord"] = { 68.9, 20.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129613 },	-- Maynard Algerson
 				}),
 				q(50573, {	-- Message from the Management
 					["provider"] = { "o", 281647 },	-- Posted Notice
 					["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
-					["coord"] = { 78.9, 45.7, 895 },
+					["coord"] = { 78.9, 45.7, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(155029),	-- Navigator's Gloves
@@ -684,7 +684,7 @@ _.Zones =
 				}),
 				q(50351, {	-- Miner Operation
 					["sourceQuests"] = { 50349 },	-- An Overrun Mine
-					["coord"] = { 78.1, 55.9, 895 },
+					["coord"] = { 78.1, 55.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 133551 },	-- Chief Miner Theock
 				}),
@@ -694,7 +694,7 @@ _.Zones =
 						49401,	-- Rodrigo's Roost
 					},
 					["provider"] = { "o", 278313 },	-- Sternly Worded Letter
-					["coord"] = { 77.2, 84.7, 895 },
+					["coord"] = { 77.2, 84.7, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(161083, {	-- Satchel of Plundered Jewels
@@ -706,31 +706,31 @@ _.Zones =
 					},
 				}),
 				q(48902, {	-- Monstrous Energy
-					["coord"] = { 51.2, 25.9, 895 },
+					["coord"] = { 51.2, 25.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127586 },	-- Joma
 				}),
 				q(48089, {	-- Mountain Sounds
 					["sourceQuests"] = { 48087 },	-- Equine Retrieval
-					["coord"] = { 52.5, 28.5, 895 },
+					["coord"] = { 52.5, 28.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125042 },	-- Gora Layton
 				}),
 				q(49178, {	-- My Favorite Things (A)
 					["sourceQuests"] = { 49218 },	-- The Castaways
-					["coord"] = { 85.4, 80.8, 895 },
+					["coord"] = { 85.4, 80.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128229 },	-- Stabby Jane
 				}),
 				q(53443, {	-- My Favorite Things (H)
 					["sourceQuests"] = { 53442 },	-- The Castaways
-					["coord"] = { 85.4, 80.8, 895 },
+					["coord"] = { 85.4, 80.8, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 128229 },	-- Stabby Jane
 				}),
 				q(48909, {	-- Noble Responsibilities
 					["sourceQuests"] = { 49039 },	-- The Start of a Monster Hunt
-					["coord"] = { 70.8, 61.9, 895 },
+					["coord"] = { 70.8, 61.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 127481 },	-- Lord Kennings
@@ -746,13 +746,13 @@ _.Zones =
 				}),
 				q(52431, {	-- No-Landing Zone
 					["sourceQuests"] = { 49405 },	-- Defenders of Daelin's Gate
-					["coord"] = { 60.9, 59.1, 895 },
+					["coord"] = { 60.9, 59.1, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 141078 },	-- Vigil Hill Refugee
 				}),
 				q(48088, {	-- No Party Like a Trogg Party
 					["sourceQuests"] = { 48087 },	-- Equine Retrieval
-					["coord"] = { 52.5, 28.5, 895 },
+					["coord"] = { 52.5, 28.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127559 },	-- Lord Aldrius Norwington
 					["g"] = {
@@ -769,7 +769,7 @@ _.Zones =
 				}),
 				q(52787, {	-- Numbing the Pain
 					["sourceQuests"] = { 49869 },	-- A Desperate Defense
-					["coord"] = { 56.4, 61.6, 895 },
+					["coord"] = { 56.4, 61.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 142393 },	-- Taelia
 				}),
@@ -779,37 +779,37 @@ _.Zones =
 						48356,	-- Possessive Headgear
 						48365,	-- The Young Lord Stormsong
 					},
-					["coord"] = { 39.5, 26.6, 895 },
+					["coord"] = { 39.5, 26.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126298 },	-- Brannon Stormsong
 				}),
 				q(48773, {	-- Papers, Please
 					["sourceQuests"] = { 48539 },	-- Freehold
-					["coord"] = { 80.2, 75.2, 895 },
+					["coord"] = { 80.2, 75.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126158 },	-- Flynn Fairwind
 				}),
 				q(48874, {	-- Pardon Our Rust
 					["sourceQuests"] = { 50544 },	-- The Hunters of Kennings Lodge
-					["coord"] = { 75.8, 65.7, 895 },
+					["coord"] = { 75.8, 65.7, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127161 },	-- Alanna Holton
 				}),
 				q(49733, {	-- Patching Up the Rear
 					["sourceQuests"] = { 49715 },	-- Trouble at Greystone Keep
-					["coord"] = { 81.0, 42.4, 895 },
+					["coord"] = { 81.0, 42.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 133035 },	-- Officer Jovan
 				}),
 				q(49454, {	-- Pest Prevention
 					["sourceQuests"] = { 48369 },	-- Emergent Strategy
-					["coord"] = { 70.0, 18.5, 895 },
+					["coord"] = { 70.0, 18.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129669 },	-- Benjamin Algerson
 				}),
 				q(50352, {	-- Pinch of Azerite
 					["sourceQuests"] = { 50349 },	-- An Overrun Mine
-					["coord"] = { 78.1, 55.9, 895 },
+					["coord"] = { 78.1, 55.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 133552 },	-- Head Chemist Walters
 				}),
@@ -818,13 +818,13 @@ _.Zones =
 						48355,	-- Evacuate the Premises
 						48354,	-- Tainted Shipments
 					},
-					["coord"] = { 39.5, 26.6, 895 },
+					["coord"] = { 39.5, 26.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125922 },	-- Brother Therold
 				}),
 				q(49735, {	-- Protect the Nest
 					["sourceQuests"] = { 49394 },	-- Hold Still
-					["coord"] = { 42.4, 22.6, 895 },
+					["coord"] = { 42.4, 22.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129170 },	-- Rulf
 				}),
@@ -834,13 +834,13 @@ _.Zones =
 						49268,	-- Sharks in the Water
 						48348,	-- Stinging Barbs
 					},
-					["coord"] = { 42.2, 29.3, 895 },
+					["coord"] = { 42.2, 29.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125922 },	-- Brother Therold
 				}),
 				q(49398, {	-- Raise a Glass!
 					["sourceQuests"] = { 49239 },	-- Dress to Impress
-					["coord"] = { 77.3, 83.9, 895 },
+					["coord"] = { 77.3, 83.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128927 },	-- Venrik
 				}),
@@ -849,7 +849,7 @@ _.Zones =
 						49398,	-- Raise a Glass!
 						49401,	-- Rodrigo's Roost
 					},
-					["coord"] = { 77.3, 83.9, 895 },
+					["coord"] = { 77.3, 83.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128927 },	-- Venrik
 						["g"] = {
@@ -864,17 +864,17 @@ _.Zones =
 				q(54946, {	-- Report to Gila
 					["sourceQuests"] = { 54087 },	-- You Must be This Height
 					["provider"] = { "n", 152864 },	-- Tinkmaster Overspark
-					["coord"] = { 65.8, 66.3, 895 },
+					["coord"] = { 65.8, 66.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49468, {	-- Required Webinar
 					["sourceQuests"] = { 48369 },	-- Emergent Strategy
-					["coord"] = { 70.0, 18.5, 895 },
+					["coord"] = { 70.0, 18.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129669 },	-- Benjamin Algerson
 				}),
 				q(51430, {	-- Reverse Tinkering
-					["coord"] = { 65.0, 60.6, 895 },
+					["coord"] = { 65.0, 60.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 137694 },	-- Parin Tinklocket
 				}),
@@ -883,13 +883,13 @@ _.Zones =
 						49738,	-- Hands Off My Booty!
 						52787,	-- Numbing the Pain
 					},
-					["coord"] = { 56.4, 61.6, 895 },
+					["coord"] = { 56.4, 61.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 142393 },	-- Taelia
 				}),
 				q(48776, {	-- Rig Robbing
 					["sourceQuests"] = { 48539 },	-- Freehold
-					["coord"] = { 79.2, 76.3, 895 },
+					["coord"] = { 79.2, 76.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127537 },	-- Geraldine
 				}),
@@ -898,13 +898,13 @@ _.Zones =
 						50351,	-- Miner Operation
 						50352,	-- Pinch of Azerite
 					},
-					["coord"] = { 75.5, 59.3, 895 },
+					["coord"] = { 75.5, 59.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 134628 },	-- Civil Technician Alena
 				}),
 				q(49403, {	-- Rodrigo's Revenge
 					["sourceQuests"] = { 49402 },	-- Flew the Coop
-					["coord"] = { 77.0, 82.9, 895 },
+					["coord"] = { 77.0, 82.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129098 },	-- Rodrigo <Flight Master>
 					["g"] = {
@@ -913,7 +913,7 @@ _.Zones =
 				}),
 				q(49401, {	-- Rodrigo's Roost
 					["sourceQuests"] = { 49239 },	-- Dress to Impress
-					["coord"] = { 77.3, 83.9, 895 },
+					["coord"] = { 77.3, 83.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126158 },	-- Flynn Fairwind
 				}),
@@ -922,7 +922,7 @@ _.Zones =
 						49710,	-- An Offering of Eggs
 						49735,	-- Protect the Nest
 					},
-					["coord"] = { 47.8, 16.4, 895 },
+					["coord"] = { 47.8, 16.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129578 },	-- Shawn McClinter
 					["g"] = {
@@ -939,12 +939,12 @@ _.Zones =
 						48616,	-- Bolas and Birds
 						48077,	-- The Stoat Hunt
 					},
-					["coord"] = { 55.5, 24.6, 895 },
+					["coord"] = { 55.5, 24.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127006 },	-- Melissa Kenny
 				}),
 				q(48899, {	-- Safety First
-					["coord"] = { 51.2, 25.9, 895 },
+					["coord"] = { 51.2, 25.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127492 },	-- Majo
 				}),
@@ -955,87 +955,87 @@ _.Zones =
 				}),
 				q(53041, {	-- Sampling the Goods
 					["sourceQuests"] = { 50531 },	-- Under Their Noses
-					["coord"] = { 75.85, 49.08, 895 },
+					["coord"] = { 75.85, 49.08, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 121239 },	-- Flynn Fairwind
 				}),
 				q(48597, {	-- Saurolisk Escape
 					["sourceQuests"] = { 48670 },	-- Runaway Rider
-					["coord"] = { 55.9, 17.5, 895 },
+					["coord"] = { 55.9, 17.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126804 },	-- Trapped Saurolisk
 				}),
 				q(50026, {	-- Save Our Shipmates
-					["coord"] = { 49.4, 31.2, 895 },
+					["coord"] = { 49.4, 31.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 131627 },	-- Thomas Pinker
 				}),
 				q(48965, {	-- Settle the Score
-					["coord"] = { 58.2, 25.4, 895 },
+					["coord"] = { 58.2, 25.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127803 },	-- Caleb Batharen
 				}),
 				q(49268, {	-- Sharks in the Water
 					["sourceQuests"] = { 48540 },	-- Aiding the Wharf
-					["coord"] = { 42.2, 29.3, 895 },
+					["coord"] = { 42.2, 29.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125922 },	-- Brother Therold
 				}),
 				q(52258, {	-- She Sells Seashells
-					["coord"] = { 60.9, 30.8, 895 },
+					["coord"] = { 60.9, 30.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 140752 },	-- Jenny Swiftbrook
 				}),
 				q(48939, {	-- Show Me What You've Got
 					["sourceQuests"] = { 48004 },	-- Beginner Equitation
-					["coord"] = { 51.6, 27.3, 895 },
+					["coord"] = { 51.6, 27.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 124802 },	-- Lord Aldruis Norwington
 				}),
 				q(49226, {	-- Silencing the Sisters (A)
 					["sourceQuests"] = { 49218 },	-- The Castaways
-					["coord"] = { 85.4, 80.8, 895 },
+					["coord"] = { 85.4, 80.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128229 },	-- Stabby Jane
 				}),
 				q(53445, {	-- Silencing the Sisters (H)
 					["sourceQuests"] = { 53442 },	-- The Castaways
-					["coord"] = { 85.4, 80.8, 895 },
+					["coord"] = { 85.4, 80.8, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 128229 },	-- Stabby Jane
 				}),
 				q(47488, {	-- Small Haulers
 					["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
-					["coord"] = { 76.7, 43.4, 895 },
+					["coord"] = { 76.7, 43.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 122672 },	-- Olive
 				}),
 				q(48557, {	-- Sowing Saplings
 					["sourceQuests"] = { 50699 },	-- Worker's Rights
-					["coord"] = { 66.6, 17.2, 895 },
+					["coord"] = { 66.6, 17.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129670 },	-- Lyssa Treewarden
 				}),
 				q(48348, {	-- Stinging Barbs
 					["sourceQuests"] = { 48540 },	-- Aiding the Wharf
-					["coord"] = { 42.2, 29.3, 895 },
+					["coord"] = { 42.2, 29.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128680 },	-- Okri Putterwrench
 				}),
 				q(48778, {	-- Stone Soup
 					["provider"] = { "o", 276837 },	-- Recipe Rock
-					["coord"] = { 56.1, 17.9, 895 },
+					["coord"] = { 56.1, 17.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47489, {	-- Stow and Go
 					["sourceQuests"] = { 53041 },	-- Sampling the Goods
-					["coord"] = { 75.8, 49.0, 895 },
+					["coord"] = { 75.8, 49.0, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 121239 },	-- Flynn Fairwind
 				}),
 				q(47486, {	-- Suspicious Shipments
 					["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
-					["coord"] = { 76.7, 43.4, 895 },
+					["coord"] = { 76.7, 43.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 122671 },	-- Cagney
 				}),
@@ -1050,7 +1050,7 @@ _.Zones =
 						49292,	-- Algae Shakes
 						48353,	-- Pulse of the Wharf
 					},
-					["coord"] = { 41.2, 27.0, 895 },
+					["coord"] = { 41.2, 27.0, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125922 },	-- Brother Therold
 				}),
@@ -1059,7 +1059,7 @@ _.Zones =
 						51226,	-- Death From Two Sides
 						49733,	-- Patching Up the Rear
 					},
-					["coord"] = { 81.0, 42.4, 895 },
+					["coord"] = { 81.0, 42.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 130375 },	-- Tallis Skyheart
 					["g"] = {
@@ -1070,19 +1070,19 @@ _.Zones =
 				}),
 				q(49395, {	-- The Bears and the Bees
 					["sourceQuests"] = { 49393 },	-- The Roughnecks
-					["coord"] = { 42.4, 22.2, 895 },
+					["coord"] = { 42.4, 22.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129003 },	-- Tagart
 				}),
 				q(48774, {	-- The Beatings Will Continue
 					["sourceQuests"] = { 48539 },	-- Freehold
-					["coord"] = { 79.2, 76.3, 895 },
+					["coord"] = { 79.2, 76.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127537 },	-- Geraldine
 				}),
 				q(49531, {	-- The Beauty of Marketing
 					["sourceQuests"] = { 50542 },	-- An Explosive Opportunity
-					["coord"] = { 67.5, 55.7, 895 },
+					["coord"] = { 67.5, 55.7, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129858 },	-- Wulfred Fizzbracket
 					["g"] = {
@@ -1094,19 +1094,19 @@ _.Zones =
 						49398,	-- Raise a Glass!
 						49401,	-- Rodrigo's Roost
 					},
-					["coord"] = { 77.3, 83.9, 895 },
+					["coord"] = { 77.3, 83.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126158 },	-- Flynn Fairwind
 				}),
 				q(49218, {	-- The Castaways (A)
 					["isBreadcrumb"] = true,
-					["coord"] = { 85.5, 83.5, 895 },
+					["coord"] = { 85.5, 83.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128377 },	-- Beachcomber Bob
 				}),
 				q(53442, {	-- The Castaways (H)
 					["isBreadcrumb"] = true,
-					["coord"] = { 85.5, 83.5, 895 },
+					["coord"] = { 85.5, 83.5, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 128377 },	-- Beachcomber Bob
 				}),
@@ -1117,7 +1117,7 @@ _.Zones =
 						48372,	-- Eldritch Invocations
 						48367,	-- Those Aren't Fish Eggs
 					},
-					["coord"] = { 35.0, 24.2, 895 },
+					["coord"] = { 35.0, 24.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(155053),	-- Scaleterror Slicer
@@ -1133,7 +1133,7 @@ _.Zones =
 				}),
 				q(51199, {	-- The Glory of the Hunt
 					["isBreadcrumb"] = true,	-- you get credit for this when turning in The Norwington Festival
-					["coord"] = { 51.6, 27.2, 895 },
+					["coord"] = { 51.6, 27.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125042 },	-- Gora Layton
 				}),
@@ -1141,12 +1141,12 @@ _.Zones =
 					["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
 					["isBreadcrumb"] = true,
 					["provider"] = { "o", 281551 },	-- Help Wanted Poster
-					["coord"] = { 75.5, 49.8, 895 },
+					["coord"] = { 75.5, 49.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(48558, {	-- The Irontide Crew
 					["sourceQuests"] = { 48539 },	-- Freehold
-					["coord"] = { 80.2, 75.2, 895 },
+					["coord"] = { 80.2, 75.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126158 },	-- Flynn Fairwind
 						["g"] = {
@@ -1163,13 +1163,13 @@ _.Zones =
 				q(52253, {	-- The Keys to Success in Freehold
 					["sourceQuests"] = { 52252 },	-- An Explosive Entrance
 					["provider"] = { "n", 140732 },	-- Flynn Fairwind
-					["coord"] = { 76.9, 82.8, 895 },
+					["coord"] = { 76.9, 82.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49223, {	-- The Long Con
 					["sourceQuests"] = { 49523 },	-- A Bad Deal
 					["provider"] = { "n", 128702 },	-- Roko <Wandering Merchant>
-					["coord"] = { 79.7, 81.8, 895 },
+					["coord"] = { 79.7, 81.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(48003, {	-- The Lord's Behest
@@ -1178,14 +1178,14 @@ _.Zones =
 						48597,	-- Saurolisk Escape
 						48195,	-- Troublesome Troglodytes
 					},
-					["coord"] = { 54.5, 19.4, 895 },
+					["coord"] = { 54.5, 19.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127144 },	-- Melissa Kenny
 				}),
 				q(48070, {	-- The Norwington Festival
 					["isBreadcrumb"] = true,
 					["provider"] = { "o", 281230 },	-- Formal Invitation
-					["coord"] = { 67.1, 24.8, 895 },
+					["coord"] = { 67.1, 24.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(48903, {	-- The Perfect Horse, of Course
@@ -1194,7 +1194,7 @@ _.Zones =
 						48902,	-- Monstrous Energy
 						48899,	-- Safety First
 					},
-					["coord"] = { 51.2, 25.9, 895 },
+					["coord"] = { 51.2, 25.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127492 },	-- Majo
 					["g"] = {
@@ -1205,24 +1205,24 @@ _.Zones =
 				}),
 				q(49393, {	-- The Roughnecks
 					["provider"] = { "o", 278252 },	-- Job Flyer
-					["coord"] = { 42.4, 27.2, 895 },
+					["coord"] = { 42.4, 27.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49229, {	-- The Ruins Fought Back
 					["sourceQuests"] = { 50700 },	-- Drust in Time
-					["coord"] = { 62.7, 29.8, 895 },
+					["coord"] = { 62.7, 29.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128381 },	-- Drogrin Alewhisker
 				}),
 				q(49039, {	-- The Start of a Monster Hunt
 					["sourceQuests"] = { 49072 },	-- Westward Noble
-					["coord"] = { 70.8, 61.9, 895 },
+					["coord"] = { 70.8, 61.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127481 },	-- Lord Kennings
 				}),
 				q(48077, {	-- The Stoat Hunt
 					["sourceQuests"] = { 48070 },	-- The Norwington Festival
-					["coord"] = { 55.4, 24.6, 895 },
+					["coord"] = { 55.4, 24.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125309 },	-- Abbey Watkins
 					["g"] = {
@@ -1241,7 +1241,7 @@ _.Zones =
 				}),
 				q(50058, {	-- The Witch's Pet
 					["sourceQuests"] = { 48369 },	-- Emergent Strategy
-					["coord"] = { 72.9, 17.5, 895 },
+					["coord"] = { 72.9, 17.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 134325 },	-- Terrence Foster
 				}),
@@ -1250,48 +1250,48 @@ _.Zones =
 						48355,	-- Evacuate the Premises
 						48354,	-- Tainted Shipments
 					},
-					["coord"] = { 39.5, 26.6, 895 },
+					["coord"] = { 39.5, 26.6, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126308 },	-- Keegan Alby
 				}),
 				q(55648, {	-- This is Our Vault Now
 					["sourceQuests"] = { 55647 },	-- A Quick Ear Hustle
 					["provider"] = { "n", 152578 },	-- Gazlowe
-					["coord"] = { 65.6, 64.6, 895 },
+					["coord"] = { 65.6, 64.6, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48367, {	-- Those Aren't Fish Eggs
 					["sourceQuests"] = { 48366 },	-- Paddle to Safety
-					["coord"] = { 35.0, 24.2, 895 },
+					["coord"] = { 35.0, 24.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128679 },	-- Rosaline Madison
 				}),
 				q(49451, {	-- Time Off Requests
 					["sourceQuests"] = { 50699 },	-- Worker's Rights
-					["coord"] = { 68.8, 19.9, 895 },
+					["coord"] = { 68.8, 19.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129669 },	-- Benjamin Algerson
 				}),
 				q(52445, {	-- Tol Dagor: The Fourth Key
 					["sourceQuests"] = { 52311 },	-- Sweete's Strongbox
 					["provider"] = { "n", 140732 },	-- Flynn Fairwind
-					["coord"] = { 75.3, 48.8, 895 },
+					["coord"] = { 75.3, 48.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(48516, {	-- Toxic Community
-					["coord"] = { 82.7, 72.8, 895 },
+					["coord"] = { 82.7, 72.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126511 },	-- Skinner MacGuff
 				}),
 				q(49407, {	-- Trixie Business
 					["sourceQuests"] = { 49290 },	-- Aged to Perfection
-					["coord"] = { 76.9, 86.0, 895 },
+					["coord"] = { 76.9, 86.0, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128903 },	-- Carentan
 				}),
 				q(48195, {	-- Troublesome Troglodytes
 					["sourceQuests"] = { 48670 },	-- Runaway Rider
-					["coord"] = { 54.4, 19.4, 895 },
+					["coord"] = { 54.4, 19.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127144 },	-- Melissa Kenny
 				}),
@@ -1302,18 +1302,18 @@ _.Zones =
 						47488,	-- Small Haulers
 						47486,	-- Suspicious Shipments
 					},
-					["coord"] = { 78.0, 47.9, 895 },
+					["coord"] = { 78.0, 47.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 121239 },	-- Flynn Fairwind
 				}),
 				q(51358, {	-- WANTED: Gryphon 'Nappers
 					["objectID"] = 288641,	-- WANTED: Gryphon 'Nappers
-					["coord"] = { 66.8, 24.3, 895 },
+					["coord"] = { 66.8, 24.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49069, {	-- WANTED: Ol' Frostclaw
 					["provider"] = { "o", 277199 },	-- Weathered Job List
-					["coord"] = { 76.1, 65.4, 895 },
+					["coord"] = { 76.1, 65.4, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(158243),	-- Navigator's Legwraps
@@ -1328,44 +1328,44 @@ _.Zones =
 				}),
 				q(51384, {	-- WANTED: Quartermaster Ssylis (A)
 					["provider"] = { "o", 289361 },	-- WANTED: Quartermaster Ssylis
-					["coord"] = { 42.2, 27.2, 895 },
+					["coord"] = { 42.2, 27.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53454, {	-- WANTED: Quartermaster Ssylis (H)
 					["provider"] = { "o", 298849 },	-- Wanted Poster
-					["coord"] = { 39.7, 17.8, 895 },
+					["coord"] = { 39.7, 17.8, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51367, {	-- WANTED: Raging Earthguard (A)
 					["provider"] = { "o", 289310 },	-- WANTED: Raging Earthguard
-					["coord"] = { 53.0, 28.3, 895 },
+					["coord"] = { 53.0, 28.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53451, {	-- WANTED: Raging Earthguard (H)
 					["provider"] = { "o", 298849 },	-- Wanted Poster
-					["coord"] = { 39.7, 17.8, 895 },
+					["coord"] = { 39.7, 17.8, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51368, {	-- WANTED: The Hornet (A)
 					["provider"] = { "o", 289313 },	-- WANTED: The Hornet
-					["coord"] = { 42.2, 22.9, 895 },
+					["coord"] = { 42.2, 22.9, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53440, {	-- WANTED: The Hornet (H)
 					["sourceQuests"] = { 52127 },	-- The Wolf's Den
 					["provider"] = { "o", 298778 },	-- Wanted Poster
-					["coord"] = { 62.8, 14.0, 895 },
+					["coord"] = { 62.8, 14.0, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(53438, {	-- WANTED: Wyvern Poachers
 					["sourceQuests"] = { 52127 },	-- The Wolf's Den
 					["provider"] = { "o", 298778 },	-- Wanted Poster
-					["coord"] = { 62.8, 14.0, 895 },
+					["coord"] = { 62.8, 14.0, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49431, {	-- Warm and Cozy
 					["sourceQuests"] = { 49418 },	-- Big Boss
-					["coord"] = { 44.8, 15.5, 895 },
+					["coord"] = { 44.8, 15.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 130478 },	-- Griddon
 					["g"] = {
@@ -1378,7 +1378,7 @@ _.Zones =
 				}),
 				q(49433, {	-- Wendies
 					["sourceQuests"] = { 49418 },	-- Big Boss
-					["coord"] = { 42.0, 16.7, 895 },
+					["coord"] = { 42.0, 16.7, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129291 },	-- Boss Tak
 				}),
@@ -1388,13 +1388,13 @@ _.Zones =
 						48879,	-- A Hunt for Hawk Eggs
 						48874,	-- Pardon Our Rust
 					},
-					["coord"] = { 75.8, 65.8, 895 },
+					["coord"] = { 75.8, 65.8, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127161 },	-- Alanna Holton
 				}),
 				q(49435, {	-- Where'd They Go?
 					["sourceQuests"] = { 49418 },	-- Big Boss
-					["coord"] = { 42.0, 16.7, 895 },
+					["coord"] = { 42.0, 16.7, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129291 },	-- Boss Tak
 				}),
@@ -1405,7 +1405,7 @@ _.Zones =
 						49468,	-- Required Webinar
 						50058,	-- The Witch's Pet
 					},
-					["coord"] = { 70.0, 18.5, 895 },
+					["coord"] = { 70.0, 18.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129669 },	-- Benjamin Algerson
 					["g"] = {
@@ -1414,20 +1414,20 @@ _.Zones =
 				}),
 				q(50699, {	-- Worker's Rights
 					["isBreadcrumb"] = true,
-					["coord"] = { 67.4, 24.0, 895 },
+					["coord"] = { 67.4, 24.0, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 134776 },	-- Davey Brindle
 				}),
 				q(54087, {	-- You Must be This Height (A)
 					["sourceQuests"] = { 54945 },	-- Let's Get It Started
 					["provider"] = { "n", 149877 },	-- Tinkmaster Overspark
-					["coord"] = { 65.8, 66.3, 895 },
+					["coord"] = { 65.8, 66.3, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(55632, {	-- You Must Be This Height (H)
 					["sourceQuests"] = { 55630 },	-- Let's Get It Started
 					["provider"] = { "n", 149809 },	-- Gazlowe
-					["coord"] = { 65.8, 66.3, 895 },
+					["coord"] = { 65.8, 66.3, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 				}),
 				-- Want to see q49310 The Prophet's Ploy? Its under Boralus>Quests

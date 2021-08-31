@@ -15,7 +15,7 @@ _.Secrets =
 			863,
 			864,
 			875,
-			895,
+			TIRAGARDE_SOUND,
 			DRUSTVAR,
 			942,
 			1161,
@@ -106,7 +106,7 @@ _.Secrets =
 				["model"] = 1068320,
 				["modelScale"] = .5,
 				["questID"] = 53632,
-				["coord"] = { 75.4, 70.7, 895 },	-- Cave Entrance
+				["coord"] = { 75.4, 70.7, TIRAGARDE_SOUND },	-- Cave Entrance
 				["sourceQuest"] = 52812,	-- Step 10: Ningth Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 11:|r Head to Tiragarde Sound.  At the coordinates provided, there's a well-hidden cave entrance in the ground.  The cave is full of |ccccc3333Clatterbacks|r, but this time they're hidden underground and will jump out at you — if you don't have invisibility potions, be prepared to die.\n\nAgain, the pebble here is very hard to see.  It's hidden between a rock and a pile of gore around |cFFFFFFFF74.3, 70.9|r, and it's covered in blood so it doesn't look as pale and bright as the previous pebbles.\n\nShift+click to refresh your collection.\n",
 			}),
@@ -114,7 +114,7 @@ _.Secrets =
 				["model"] = 1068320,
 				["modelScale"] = .5,
 				["questID"] = 53633,
-				["coord"] = { 80.2, 19.2, 895 },	-- Cave Entrance
+				["coord"] = { 80.2, 19.2, TIRAGARDE_SOUND },	-- Cave Entrance
 				["sourceQuest"] = 53632,	-- Step 11: Tenth Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 12:|r The next pebble is also in Tiragarde Sound.  At the coordinates provided, there is a cave hidden behind a waterfall.  At the back right-hand side of the cave, there is a pillar with a couple of scrolls pinned to it.\n\nThe pebble is very well hidden, underneath the scroll that is unfurled over the ground.  It's around |cFFFFFFFF79.6, 18.0|r, and you have to be standing practically on top of it with your camera tilted very far back in order to see it.\n\nShift+click to refresh your collection.\n",
 			}),

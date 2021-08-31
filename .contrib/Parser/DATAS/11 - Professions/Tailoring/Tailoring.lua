@@ -4749,8 +4749,8 @@ profession(TAILORING, {
 								{ 41.0, 64.0, 864 },	-- West of Goldtusk Inn
 								{ 37.0, 87.0, 864 },	-- On the ledge, N of island off south coast
 								-- Tiragarde Sound
-								{ 85.0, 77.0, 895 },	-- Dock north of Freehold dungeon
-								{ 40.0, 24.0, 895 },
+								{ 85.0, 77.0, TIRAGARDE_SOUND },	-- Dock north of Freehold dungeon
+								{ 40.0, 24.0, TIRAGARDE_SOUND },
 							},
 							["groups"] = TIME_LOST_TRADER_GROUPS,
 						},

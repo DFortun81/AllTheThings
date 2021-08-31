@@ -1033,9 +1033,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					crit(1, {	-- Tiragarde Sound
-						["coord"] = { 76.3, 49.9, 895 },
+						["coord"] = { 76.3, 49.9, TIRAGARDE_SOUND },
 						["races"] = ALLIANCE_ONLY,
-						["maps"] = { 895 },	-- Tiragarde Sound
+						["maps"] = { TIRAGARDE_SOUND },
 					}),
 					crit(2, {	-- Stormsong Valley
 						["coord"] = { 35.8, 51.2, 942 },
@@ -1774,9 +1774,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					crit(1, {	-- Tiragarde Sound
-						["coord"] = { 76.3, 49.7, 895 },
+						["coord"] = { 76.3, 49.7, TIRAGARDE_SOUND },
 						["races"] = HORDE_ONLY,
-						["maps"] = { 895 },	-- Tiragarde Sound
+						["maps"] = { TIRAGARDE_SOUND },
 					}),
 					crit(2, {	-- Stormsong Valley
 						["coord"] = { 36.0, 51.5, 942 },
@@ -3523,9 +3523,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(54737, {	-- Honor the Flame — Tiragarde Sound
 						["qg"] = 148917,	-- Tiragarde Sound Flame Warden
-						["coord"] = { 76.3, 49.9, 895 },
+						["coord"] = { 76.3, 49.9, TIRAGARDE_SOUND },
 						["timeline"] = { "added 8.0.1" },
-						["maps"] = { 895 },	-- Tiragarde Sound
+						["maps"] = { TIRAGARDE_SOUND },
 					}),
 					q(28945, {	-- Honor the Flame — Twilight Highlands
 						["qg"] = 51650,	-- Twilight Highlands Flame Warden
@@ -3891,9 +3891,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(54736, {	-- Desecrate this Fire! — Tiragarde Sound
 						["provider"] = { "o", 316788 },	-- Alliance Bonfire
-						["coord"] = { 76.3, 49.7, 895 },
+						["coord"] = { 76.3, 49.7, TIRAGARDE_SOUND },
 						["timeline"] = { "added 8.0.1" },
-						["maps"] = { 895 },	-- Tiragarde Sound
+						["maps"] = { TIRAGARDE_SOUND },
 					}),
 					q(28943, {	-- Desecrate this Fire! — Twilight Highlands
 						["provider"] = { "o", 208089 },	-- Alliance Bonfire

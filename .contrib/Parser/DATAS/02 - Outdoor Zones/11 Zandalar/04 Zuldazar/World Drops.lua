@@ -8,7 +8,7 @@ _.Zones =
 		m(862, {	-- Zuldazar
 			n(-226, {	-- World Drops
 				["maps"] = {
-					895,	-- Tiragarde Sound [During Assualts]
+					TIRAGARDE_SOUND,	-- During Assualts
 					DAZARALOR,
 				},
 				["g"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {

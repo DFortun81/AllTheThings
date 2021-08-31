@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(895, {	-- Tiragarde Sound
+		m(TIRAGARDE_SOUND, {
 			n(-226, {	-- World Drops
 				["maps"] = {
 					862,	-- Zuldazar  [During Assualts]

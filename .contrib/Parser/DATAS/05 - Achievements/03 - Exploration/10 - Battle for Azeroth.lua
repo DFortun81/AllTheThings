@@ -996,12 +996,12 @@ _.Achievements =
 					["maps"] = {
 						1161,	-- Boralus
 						942,	-- Stormsong Valley
-						895,	-- Tiragarde Sound
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 58.58, 70.31, 942 },	-- "Nasty" Buck
 						{ 74.25, 17.76, 1161 },	-- Allison Weber
-						{ 49.73, 25.22, 895 },	-- Arthur Seville
+						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 						{ 75.37, 14.48, 1161 },	-- Harold Atkey
 						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
 						{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
@@ -1019,14 +1019,14 @@ _.Achievements =
 					["maps"] = {
 						1161,	-- Boralus
 						DRUSTVAR,
-						895,	-- Tiragarde Sound
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 54.99, 43.63, 1161 },	-- Crimper Mirjam
 						{ 75.44, 18.61, 1161 },	-- Garrett Elmendorf
 						{ 75.37, 14.48, 1161 },	-- Harold Atkey
 						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
-						{ 77.21, 84.25, 895 },	-- Martha Mae
+						{ 77.21, 84.25, TIRAGARDE_SOUND },	-- Martha Mae
 						{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
 					},
 				}),
@@ -1056,17 +1056,17 @@ _.Achievements =
 					["maps"] = {
 						1161,	-- Boralus
 						DRUSTVAR,
-						895,	-- Tiragarde Sound
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 74.25, 17.76, 1161 },	-- Allison Weber
-						{ 49.73, 25.22, 895 },	-- Arthur Seville
+						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 						{ 66.28, 61.58, 1161 },	-- Diana Seafinch
 						{ 21.51, 43.71, DRUSTVAR },	-- Fixi Slyshiv
 						{ 75.37, 14.48, 1161 },	-- Harold Atkey
 						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
 						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
-						{ 77.21, 84.25, 895 },	-- Martha Mae
+						{ 77.21, 84.25, TIRAGARDE_SOUND },	-- Martha Mae
 						{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
 					},
 				}),
@@ -1086,18 +1086,18 @@ _.Achievements =
 						1161,	-- Boralus
 						1164,	-- Dazar'alor
 						DRUSTVAR,
-						895,	-- Tiragarde Sound
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 74.25, 17.76, 1161 },	-- Allison Weber
-						{ 49.73, 25.22, 895 },	-- Arthur Seville
+						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 						{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
 						{ 75.44, 18.61, 1161 },	-- Garrett Elmendorf
 						{ 75.37, 14.48, 1161 },	-- Harold Atkey
 						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
 						{ 26.45, 50.7, 1164 },	-- Lily Whistlebrew
 						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
-						{ 77.21, 84.25, 895 },	-- Martha Mae
+						{ 77.21, 84.25, TIRAGARDE_SOUND },	-- Martha Mae
 					},
 				}),
 				i(159845, {	-- Brennadam Apple Brandy
@@ -1115,17 +1115,17 @@ _.Achievements =
 					["maps"] = {
 						1161,	-- Boralus
 						942,	-- Stormsong Valley
-						895,	-- Tiragarde Sound
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 58.58, 70.31, 942 },	-- "Nasty" Buck
 						{ 74.25, 17.76, 1161 },	-- Allison Weber
-						{ 49.73, 25.22, 895 },	-- Arthur Seville
+						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 						{ 75.37, 14.48, 1161 },	-- Harold Atkey
 						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
 						{ 41.22, 50.21, 942 },	-- Rebecca Barnes
 						{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
-						{ 53.31, 28.29, 895 },	-- Terry Rigglesmith
+						{ 53.31, 28.29, TIRAGARDE_SOUND },	-- Terry Rigglesmith
 						{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
 					},
 				}),
@@ -1180,7 +1180,7 @@ _.Achievements =
 					["maps"] = {
 						1161,	-- Boralus
 						DAZARALOR,
-						895,	-- Tiragarde Sound
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 53.09, 16.67, 1161 },	-- "Fairplay" JJ
@@ -1194,7 +1194,7 @@ _.Achievements =
 						{ 53.18, 16.48, 1161 },	-- Kevin Tack
 						{ 52.78, 17.27, 1161 },	-- Monica Winters
 						{ 65.45, 39.29, 1161 },	-- Ron Mahogany
-						{ 49.77, 25.13, 895 },	-- Sarella Griffin
+						{ 49.77, 25.13, TIRAGARDE_SOUND },	-- Sarella Griffin
 						{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
 						{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
 						{ 35.42, 16.66, DAZARALOR },	-- Zuaba Sonja
@@ -1233,7 +1233,7 @@ _.Achievements =
 					},
 					["maps"] = {
 						1161,	-- Boralus
-						895,	-- Tiragarde Sound
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 53.09, 16.67, 1161 },	-- "Fairplay" JJ
@@ -1250,7 +1250,7 @@ _.Achievements =
 						{ 53.18, 16.48, 1161 },	-- Kevin Tack
 						{ 52.78, 17.27, 1161 },	-- Monica Winters
 						{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
-						{ 49.77, 25.13, 895 },	-- Sarella Griffin
+						{ 49.77, 25.13, TIRAGARDE_SOUND },	-- Sarella Griffin
 						{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
 						{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
 					},
@@ -1271,17 +1271,17 @@ _.Achievements =
 					["maps"] = {
 						1161,	-- Boralus
 						DRUSTVAR,
-						895,	-- Tiragarde Sound
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 74.25, 17.76, 1161 },	-- Allison Weber
-						{ 49.73, 25.22, 895 },	-- Arthur Seville
+						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 						{ 53.99, 75.22, 1161 },	-- Bored Barkeep
 						{ 75.37, 14.48, 1161 },	-- Harold Atkey
 						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
 						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
-						{ 49.77, 25.13, 895 },	-- Sarella Griffin
-						{ 53.31, 28.29, 895 },	-- Terry Rigglesmith
+						{ 49.77, 25.13, TIRAGARDE_SOUND },	-- Sarella Griffin
+						{ 53.31, 28.29, TIRAGARDE_SOUND },	-- Terry Rigglesmith
 						{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
 						{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
 					},
@@ -1298,14 +1298,14 @@ _.Achievements =
 					["maps"] = {
 						1161,	-- Boralus
 						DRUSTVAR,
-						895,	-- Tiragarde Sound
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
 						{ 53.99, 75.22, 1161 },	-- Bored Barkeep
 						{ 75.37, 14.48, 1161 },	-- Harold Atkey
 						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
-						{ 49.77, 25.13, 895 },	-- Sarella Griffin
+						{ 49.77, 25.13, TIRAGARDE_SOUND },	-- Sarella Griffin
 						{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
 					},
 				}),
@@ -1344,23 +1344,23 @@ _.Achievements =
 						1161,	-- Boralus
 						DRUSTVAR,
 						942,	-- Stormsong Valley
-						895,	-- Tiragarde Sound
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 58.58, 70.31, 942 },	-- "Nasty" Buck
-						{ 49.73, 25.22, 895 },	-- Arthur Seville
-						{ 66.27, 24.29, 895 },	-- Dandy Jones
-						{ 42.06, 22.85, 895 },	-- Egert Tominson
+						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
+						{ 66.27, 24.29, TIRAGARDE_SOUND },	-- Dandy Jones
+						{ 42.06, 22.85, TIRAGARDE_SOUND },	-- Egert Tominson
 						{ 44.59, 55.49, 942 },	-- Felicity Noel
 						{ 75.37, 14.48, 1161 },	-- Harold Atkey
 						{ 72.61, 68.41, 1161 },	-- Jaela Billman
-						{ 77.38, 83.97, 895 },	-- Jill McHoonigan
+						{ 77.38, 83.97, TIRAGARDE_SOUND },	-- Jill McHoonigan
 						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-						{ 75.88, 50.64, 895 },	-- Lidia Plank
+						{ 75.88, 50.64, TIRAGARDE_SOUND },	-- Lidia Plank
 						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
 						{ 31.19, 29.78, DRUSTVAR },	-- Quartermaster Rickard
 						{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
-						{ 35.33, 24.22, 895 },	-- Tom Fishbury
+						{ 35.33, 24.22, TIRAGARDE_SOUND },	-- Tom Fishbury
 					},
 				}),
 				i(162560, {	-- Patina Pale Ale
@@ -1408,7 +1408,7 @@ _.Achievements =
 					["maps"] = {
 						1161,	-- Boralus
 						DAZARALOR,
-						895,	-- Tiragarde Sound
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 53.09, 16.67, 1161 },	-- "Fairplay" JJ
@@ -1420,7 +1420,7 @@ _.Achievements =
 						{ 75.37, 14.48, 1161 },	-- Harold Atkey
 						{ 53.18, 16.48, 1161 },	-- Kevin Tack
 						{ 52.78, 17.27, 1161 },	-- Monica Winters
-						{ 49.77, 25.13, 895 },	-- Sarella Griffin
+						{ 49.77, 25.13, TIRAGARDE_SOUND },	-- Sarella Griffin
 						{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
 						{ 35.42, 16.66, DAZARALOR },	-- Zuaba Sonja
 					},
@@ -1499,7 +1499,7 @@ _.Achievements =
 					["maps"] = {
 						1161,	-- Boralus
 						DRUSTVAR,
-						895,	-- Tiragarde Sound
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 53.09, 16.67, 1161 },	-- "Fairplay" JJ
@@ -1512,7 +1512,7 @@ _.Achievements =
 						{ 53.18, 16.48, 1161 },	-- Kevin Tack
 						{ 52.78, 17.27, 1161 },	-- Monica Winters
 						{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
-						{ 49.77, 25.13, 895 },	-- Sarella Griffin
+						{ 49.77, 25.13, TIRAGARDE_SOUND },	-- Sarella Griffin
 						{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
 					},
 				}),
@@ -1537,11 +1537,11 @@ _.Achievements =
 						1161,	-- Boralus
 						DRUSTVAR,
 						942,	-- Stormsong Valley
-						895,	-- Tiragarde Sound
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 58.58, 70.31, 942 },	-- "Nasty" Buck
-						{ 49.73, 25.22, 895 },	-- Arthur Seville
+						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 						{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
 						{ 54.99, 43.63, 1161 },	-- Crimper Mirjam
 						{ 66.28, 61.58, 1161 },	-- Diana Seafinch
@@ -1549,7 +1549,7 @@ _.Achievements =
 						{ 21.51, 43.71, DRUSTVAR },	-- Fixi Slyshiv
 						{ 75.37, 14.48, 1161 },	-- Harold Atkey
 						{ 72.60, 82.60, 1161 },	-- Jaela Billa
-						{ 77.38, 83.97, 895 },	-- Jill McHoonigan
+						{ 77.38, 83.97, TIRAGARDE_SOUND },	-- Jill McHoonigan
 						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
 						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
 						{ 69.26, 29.82, 1161 },	-- Ruddy the Rat

@@ -54,28 +54,28 @@ _.Achievements =
 			}),
 			ach(13050, {	-- Bless the Rains Down in Freehold
 				crit(1, {		-- Banana Hoard
-					["coord"] = { 76.1, 84.6, 895 },
+					["coord"] = { 76.1, 84.6, TIRAGARDE_SOUND },
 					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
 					},
 				}),
 				crit(2, {		-- Sweete's Feast
-					["coord"] = { 73.3, 83.9, 895 },
+					["coord"] = { 73.3, 83.9, TIRAGARDE_SOUND },
 					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
 					},
 				}),
 				crit(3, {		-- Cart o' Cutlasses
-					["coord"] = { 75.0, 82.9, 895 },
+					["coord"] = { 75.0, 82.9, TIRAGARDE_SOUND },
 					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
 					},
 				}),
 				crit(4, {		-- Blacktooth Brew
-					["coord"] = { 76.6, 81.8, 895 },
+					["coord"] = { 76.6, 81.8, TIRAGARDE_SOUND },
 					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]

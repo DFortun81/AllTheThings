@@ -624,7 +624,7 @@ _.Zones =
 				q(52762, {	-- A Local Guide
 					["sourceQuests"] = { 52246 },	-- Lost Shipment
 					["provider"] = { "n", 140649 },	-- Genn Greymane
-					["coord"] = { 67.0, 36.2, 895 },
+					["coord"] = { 67.0, 36.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52151, {	-- A Nation United
@@ -706,7 +706,7 @@ _.Zones =
 				q(52246, {	-- Lost Shipment
 					["sourceQuests"] = { 52194 },	-- Lost Shipment
 					["provider"] = { "n", 140495 },	-- Katherine Proudmoore
-					["coord"] = { 67.0, 36.2, 895 },
+					["coord"] = { 67.0, 36.2, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50787, {	-- Make Our Case
@@ -870,7 +870,7 @@ _.Zones =
 				q(51489, {	-- Time to Leave
 					["sourceQuests"] = { 51488 },	-- Archived Knowledge
 					["provider"] = { "n", 137871 },	-- Taelia
-					["coord"] = { 73.6, 39.5, 895 },
+					["coord"] = { 73.6, 39.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47960, {	-- Tiragarde Sound

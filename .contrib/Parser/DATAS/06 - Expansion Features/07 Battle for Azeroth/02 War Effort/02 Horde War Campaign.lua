@@ -342,35 +342,35 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, 862 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51435, {	-- Swashbuckling in Style
 							["sourceQuests"] = { 51421 },	-- Shiver Me Timbers
 							["provider"] = { "n", 137675 },	-- Shadow Hunter Ty'jin
-							["coord"] = { 89.3, 53.4, 895 },
+							["coord"] = { 89.3, 53.4, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51436, {	-- Parleyin' Wit Pirates
 							["sourceQuests"] = { 51435 },	-- Swashbuckling in Style
 							["provider"] = { "n", 137675 },	-- Shadow Hunter Ty'jin
-							["coord"] = { 89.3, 53.4, 895 },
+							["coord"] = { 89.3, 53.4, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51437, {	-- Spike the Punch
 							["sourceQuests"] = { 51436 },	-- Parleyin' Wit Pirates
 							["provider"] = { "n", 137727 },	-- First Mate Owings
-							["coord"] = { 87.3, 50.0, 895 },
+							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51439, {	-- Cannonball Collection
 							["sourceQuests"] = { 51436 },	-- Parleyin' Wit Pirates
 							["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
-							["coord"] = { 87.3, 50.0, 895 },
+							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51440, {	-- A Change in Direction
 							["sourceQuests"] = {
@@ -378,9 +378,9 @@ _.ExpansionFeatures =
 								51439,	-- Cannonball Collection
 							},
 							["provider"] = { "n", 137727 },	-- First Mate Owings
-							["coord"] = { 87.3, 50.0, 895 },
+							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51441, {	-- Thar She Blows!
 							["sourceQuests"] = {
@@ -388,9 +388,9 @@ _.ExpansionFeatures =
 								51439,	-- Cannonball Collection
 							},
 							["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
-							["coord"] = { 87.3, 50.0, 895 },
+							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51442, {	-- I'm the Captain Now
 							["sourceQuests"] = {
@@ -398,23 +398,23 @@ _.ExpansionFeatures =
 								51441,	-- Thar She Blows!
 							},
 							["provider"] = { "n", 137727 },	-- First Mate Owings
-							["coord"] = { 87.3, 50.0, 895 },
+							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51438, {	-- Marking Our Territory
 							["sourceQuests"] = { 51442 },	-- I'm the Captain Now
 							["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
-							["coord"] = { 87.3, 50.0, 895 },
+							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51975, {	-- Champion: Shadow Hunter Ty'jin
 							["sourceQuests"] = { 51438 },	-- Marking Our Territory
 							["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
-							["coord"] = { 87.3, 50.0, 895 },
+							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 							["g"] = {
 								follower(1072),	-- Shadow Hunter Ty'jin
 							},
@@ -422,9 +422,9 @@ _.ExpansionFeatures =
 						q(51984, {	-- Return to Zuldazar (Tiragarde Foothold)
 							["sourceQuests"] = { 51975 },	-- Champion: Shadow Hunter Ty'jin
 							["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
-							["coord"] = { 87.3, 50.0, 895 },
+							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						-- Unlocking the Worldquests
 						q(53064, {	-- A Mission of Unity
@@ -480,30 +480,30 @@ _.ExpansionFeatures =
 						q(51590, {	-- Into the Heart of Tiragarde
 							["sourceQuests"] = { 51589 },	-- Breaking Kul Tiran Will
 							["provider"] = { "n", 138285 },	-- Nathanos Blightcaller
-							["coord"] = { 87.0, 50.5, 895 },
+							["coord"] = { 87.0, 50.5, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51591, {	-- Our Mountain Now
 							["sourceQuests"] = { 51590 },	-- Into the Heart of Tiragarde
 							["provider"] = { "n", 138285 },	-- Nathanos Blightcaller
-							["coord"] = { 72.0, 51.8, 895 },
+							["coord"] = { 72.0, 51.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51592, {	-- Making Ourselves at Home
 							["sourceQuests"] = { 51591 },	-- Our Mountain Now
 							["provider"] = { "n", 138285 },	-- Nathanos Blightcaller
-							["coord"] = { 72.0, 51.8, 895 },
+							["coord"] = { 72.0, 51.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51593, {	-- Bridgeport Investigation
 							["sourceQuests"] = { 51591 },	-- Our Mountain Now
 							["provider"] = { "n", 138287 },	-- Lilian Voss
-							["coord"] = { 72.0, 51.8, 895 },
+							["coord"] = { 72.0, 51.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51594, {	-- Explosives in the Foundry
 							["sourceQuests"] = {
@@ -511,37 +511,37 @@ _.ExpansionFeatures =
 								51593,	-- Bridgeport Investigation
 							},
 							["provider"] = { "n", 138287 },	-- Lilian Voss
-							["coord"] = { 72.0, 51.8, 895 },
+							["coord"] = { 72.0, 51.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51595, {	-- Explosivity
 							["sourceQuests"] = { 51594 },	-- Explosives in the Foundry
 							["provider"] = { "n", 138287 },	-- Lilian Voss
-							["coord"] = { 77.5, 49.9, 895 },
+							["coord"] = { 77.5, 49.9, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51596, {	-- Ammunition Acquisition
 							["sourceQuests"] = { 51595 },	-- Explosivity
 							["provider"] = { "n", 138287 },	-- Lilian Voss
-							["coord"] = { 77.5, 49.9, 895 },
+							["coord"] = { 77.5, 49.9, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51597, {	-- Gunpowder Research
 							["sourceQuests"] = { 51595 },	-- Explosivity
 							["provider"] = { "n", 138287 },	-- Lilian Voss
-							["coord"] = { 77.5, 49.9, 895 },
+							["coord"] = { 77.5, 49.9, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51598, {	-- A Bit of Chaos
 							["sourceQuests"] = { 51595 },	-- Explosivity
 							["provider"] = { "n", 138287 },	-- Lilian Voss
-							["coord"] = { 77.5, 49.9, 895 },
+							["coord"] = { 77.5, 49.9, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51599, {	-- Death Trap
 							["sourceQuests"] = {
@@ -550,16 +550,16 @@ _.ExpansionFeatures =
 								51598,	-- A Bit of Chaos
 							},
 							["provider"] = { "n", 138287 },	-- Lilian Voss
-							["coord"] = { 77.5, 49.9, 895 },
+							["coord"] = { 77.5, 49.9, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51601, {	-- The Bridgeport Ride
 							["sourceQuests"] = { 51599 },	-- Death Trap
 							["provider"] = { "n", 138287 },	-- Lilian Voss
-							["coord"] = { 77.0, 49.2, 895 },
+							["coord"] = { 77.0, 49.2, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						-- The Marshal's Grave
 						q(53065, {	-- Operation: Grave Digger
@@ -796,16 +796,16 @@ _.ExpansionFeatures =
 						q(52186, {	-- The Bulk of the Guard
 							["sourceQuests"] = { 52183 },	-- When a Plan Comes Together
 							["provider"] = { "n", 140485 },	-- Nathanos Blightcaller
-							["coord"] = { 86.9, 53.1, 895 },
+							["coord"] = { 86.9, 53.1, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(52187, {	-- Old Colleagues
 							["sourceQuests"] = { 52183 },	-- When a Plan Comes Together
 							["provider"] = { "n", 140484 },	-- Captain Amalia Stone
-							["coord"] = { 87.0, 53.1, 895 },
+							["coord"] = { 87.0, 53.1, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(52185, {	-- A Well Placed Portal
 							["sourceQuests"] = {
@@ -813,9 +813,9 @@ _.ExpansionFeatures =
 								52186,	-- The Bulk of the Guard
 							},
 							["provider"] = { "n", 140485 },	-- Nathanos Blightcaller
-							["coord"] = { 86.9, 53.1, 895 },
+							["coord"] = { 86.9, 53.1, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(52184, {	-- Relics of Ritual
 							["sourceQuests"] = { 52185 },	-- A Well Placed Portal
@@ -858,16 +858,16 @@ _.ExpansionFeatures =
 						q(52191, {	-- Life Held Hostage
 							["sourceQuests"] = { 52990 },	-- Return to the Harbor
 							["provider"] = { "n", 140485 },	-- Nathanos Blightcaller
-							["coord"] = { 86.9, 53.1, 895 },
+							["coord"] = { 86.9, 53.1, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
 							["maps"] = { 1161 },	-- Boralus
 						}),
 						q(52192, {	-- The Aid of the Tides
 							["sourceQuests"] = { 52191 },	-- Life Held Hostage
 							["provider"] = { "n", 140485 },	-- Nathanos Blightcaller
-							["coord"] = { 86.9, 53.1, 895 },
+							["coord"] = { 86.9, 53.1, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(52861, {	-- Champion: Lilian Voss
 							["sourceQuests"] = { 52192 },	-- The Aid of the Tides
@@ -906,14 +906,14 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, 862 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(53856, {	-- The Fury of the Horde
 							["sourceQuests"] = { 53852 },	-- Azerite Denied
 							["provider"] = { "n", 145422 },	-- Rexxar
-							["coord"] = { 47.5, 21.8, 895 },
+							["coord"] = { 47.5, 21.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(53879, {	-- Cleaning Out the Estate
 							["sourceQuests"] = { 53856 },	-- The Fury of the Horde
@@ -921,9 +921,9 @@ _.ExpansionFeatures =
 								{ "n", 145422 },	-- Rexxar
 								{ "n", 146462 },	-- Rexxar
 							},
-							["coord"] = { 48.9, 25.0, 895 },
+							["coord"] = { 48.9, 25.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(53880, {	-- Machines of War and Azerite
 							["sourceQuests"] = { 53856 },	-- The Fury of the Horde
@@ -931,9 +931,9 @@ _.ExpansionFeatures =
 								{ "n", 145423 },	-- Thomas Zelling
 								{ "n", 146466 },	-- Thomas Zelling
 							},
-							["coord"] = { 48.9, 25.0, 895 },
+							["coord"] = { 48.9, 25.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(53913, {	-- With Honor
 							["sourceQuests"] = {
@@ -942,27 +942,27 @@ _.ExpansionFeatures =
 							},
 							["provider"] = { "n", 146462 },	-- Rexxar
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(53912, {	-- The Hunt Never Ends
 							["sourceQuests"] = { 53913 },	-- With Honor
 							["provider"] = { "n", 146462 },	-- Rexxar
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(53973, {	-- Ride Out to Meet Them
 							["sourceQuests"] = { 53912 },	-- The Hunt Never Ends
 							["provider"] = { "n", 145422 },	-- Rexxar
-							["coord"] = { 53.0, 30.5, 895 },
+							["coord"] = { 53.0, 30.5, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(53981, {	-- The Day is Won
 							["sourceQuests"] = { 53973 },	-- Ride Out to Meet Them
 							["provider"] = { "n", 145422 },	-- Rexxar
-							["coord"] = { 47.4, 21.8, 895 },
+							["coord"] = { 47.4, 21.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(53941, {	-- A Mech for a Goblin
 							["sourceQuests"] = { 53981 },	-- The Day is Won
@@ -1009,29 +1009,29 @@ _.ExpansionFeatures =
 						q(54007, {	-- Insurance Policy
 							["sourceQuests"] = { 54004 },	-- Test Case #1; Mech vs. Mekkatorque
 							["provider"] = { "n", 146073 },	-- Trade Prince Gallywix
-							["coord"] = { 54.6, 64.6, 895 },
+							["coord"] = { 54.6, 64.6, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54008, {	-- Insurance Renewal
 							["sourceQuests"] = { 54007 },	-- Insurance Policy
 							["provider"] = { "n", 146073 },	-- Trade Prince Gallywix
-							["coord"] = { 54.6, 64.6, 895 },
+							["coord"] = { 54.6, 64.6, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54009, {	-- Killing on the Side
 							["sourceQuests"] = { 54007 },	-- Insurance Policy
 							["provider"] = { "n", 146073 },	-- Trade Prince Gallywix
-							["coord"] = { 54.6, 64.6, 895 },
+							["coord"] = { 54.6, 64.6, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54022, {	-- Mekkatorque's Battle Plans
 							["sourceQuests"] = { 54007 },	-- Insurance Policy
 							["provider"] = { "i", 164987 },	-- Alliance Battle Plans
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54028, {	-- Mech versus Airship
 							["sourceQuests"] = {
@@ -1040,44 +1040,44 @@ _.ExpansionFeatures =
 								54022,	-- Mekkatorque's Battle Plans
 							},
 							["provider"] = { "n", 146073 },	-- Trade Prince Gallywix
-							["coord"] = { 54.6, 64.6, 895 },
+							["coord"] = { 54.6, 64.6, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54094, {	-- A Goblin's Definition of Success
 							["sourceQuests"] = { 54028 },	-- Mech versus Airship
 							["provider"] = { "n", 146623 },	-- G.M.O.D.
-							["coord"] = { 87.6, 53.5, 895 },
+							["coord"] = { 87.6, 53.5, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54121, {	-- Breaking Out Ashvane
 							["sourceQuests"] = { 54094 },	-- A Goblin's Definition of Success
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, 862 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54175, {	-- Face Your Enemy
 							["sourceQuests"] = { 54121 },	-- Breaking Out Ashvane
 							["provider"] = { "n", 147088 },	-- Arcanist Valtrois
-							["coord"] = { 82.9, 49.5, 895 },
+							["coord"] = { 82.9, 49.5, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54176, {	-- Be More Uniform
 							["sourceQuests"] = { 54121 },	-- Breaking Out Ashvane
 							["provider"] = { "n", 147088 },	-- Arcanist Valtrois
-							["coord"] = { 82.9, 49.5, 895 },
+							["coord"] = { 82.9, 49.5, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54177, {	-- A Brilliant Distraction
 							["sourceQuests"] = { 54121 },	-- Breaking Out Ashvane
 							["provider"] = { "n", 146931 },	-- Rexxar
-							["coord"] = { 83.0, 49.6, 895 },
+							["coord"] = { 83.0, 49.6, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54178, {	-- Catching a Ride
 							["sourceQuests"] = {
@@ -1086,19 +1086,19 @@ _.ExpansionFeatures =
 								54177,	-- A Brilliant Distraction
 							},
 							["provider"] = { "n", 147088 },	-- Arcanist Valtrois
-							["coord"] = { 82.9, 49.5, 895 },
+							["coord"] = { 82.9, 49.5, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54179, {	-- Through the Front Door
 							-- Need to check for Leather rewards
 							["sourceQuests"] = { 54178 },	-- Catching a Ride
 							["provider"] = { "n", 147135 },	-- Nathanos Blightcaller
-							["coord"] = { 88.2, 50.8, 895 },
+							["coord"] = { 88.2, 50.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
 							["modID"] = 5,
 							["maps"] = {
-								895,	-- Tiragarde Sound
+								TIRAGARDE_SOUND,
 								1349,	-- Tol Dagor (Scenario)
 								1350,	-- Tol Dagor (Scenario)
 								1351,	-- Tol Dagor (Scenario)
@@ -1287,23 +1287,23 @@ _.ExpansionFeatures =
 								54961,	-- Righting Wrongs (Sylvanas Version)
 							},
 							["provider"] = { "n", 150309 },	-- Baine Bloodhoof
-							["coord"] = { 87.3, 49.6, 895 },
+							["coord"] = { 87.3, 49.6, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54959, {	-- Under Lock and Keys
 							["sourceQuests"] = { 54958 },	-- Ships in the Night
 							["provider"] = { "n", 149842 },	-- Baine Bloodhoof
-							["coord"] = { 85.8, 45.8, 895 },
+							["coord"] = { 85.8, 45.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54997, {	-- Dead in the Water
 							["sourceQuests"] = { 54958 },	-- Ships in the Night
 							["provider"] = { "n", 149842 },	-- Baine Bloodhoof
-							["coord"] = { 85.8, 45.8, 895 },
+							["coord"] = { 85.8, 45.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54960, {	-- A Bitter Reunion
 							["sourceQuests"] = {
@@ -1311,9 +1311,9 @@ _.ExpansionFeatures =
 								54997,	-- Dead in the Water
 							},
 							["provider"] = { "n", 149842 },	-- Baine Bloodhoof
-							["coord"] = { 85.8, 45.8, 895 },
+							["coord"] = { 85.8, 45.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 895 },	-- Tiragarde Sound
+							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54999, {	-- Under False Colors
 							["sourceQuests"] = { 54960 },	-- A Bitter Reunion

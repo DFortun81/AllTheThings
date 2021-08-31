@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(895, {	-- Tiragarde Sound
+		m(TIRAGARDE_SOUND, {
 			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					--[[	raw quest list to check against
@@ -366,7 +366,7 @@ _.Zones =
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 						["description"] = "This WQ doesn't show up on the map when active, plot waypoint to find the location!",
-						["coord"] = { 77.10, 76.25, 895 }
+						["coord"] = { 77.10, 76.25, TIRAGARDE_SOUND },
 					}),
 					q(51245, {	-- I'm a Lumberjack and I'm Okay
 						["lvl"] = { 50 },
@@ -745,7 +745,7 @@ _.Zones =
 				}),
 				i(165867, {	-- Kul Tiran Weapons Cache
 					["sym"] = {
-						{"select", "mapID", 895},	-- Tiragarde Sound
+						{"select", "mapID", TIRAGARDE_SOUND},
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "headerID", -34 },	-- Select the World Quests Header.
 						{"pop"},	-- Discard the World Quests Header and acquire the children.
@@ -761,7 +761,7 @@ _.Zones =
 						{"select", "itemID", 157996},	-- Harbormaster Pauldrons
 						{"finalize"},	-- Push the items to the finalized list.
 
-						{"select", "mapID", 895},	-- Tiragarde Sound
+						{"select", "mapID", TIRAGARDE_SOUND},
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "headerID", -34 },	-- Select the World Quests Header.
 						{"pop"},	-- Discard the World Quests Header and acquire the children.

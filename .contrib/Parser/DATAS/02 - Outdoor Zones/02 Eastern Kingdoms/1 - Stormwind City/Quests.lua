@@ -124,13 +124,13 @@ _.Zones =
 									q(54727, {	-- Team Carry
 										["sourceQuests"] = { 54726 },	-- Frame Work
 										["provider"] = { "n", 148870 },	-- Dorian Atwater
-										["coord"] = { 68.9, 20.5, 895 },	-- Tiragarde Sound
+										["coord"] = { 68.9, 20.5, TIRAGARDE_SOUND },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(54728, {	-- This Lumber is Haunted
 										["sourceQuests"] = { 54727 },	-- Team Carry
 										["provider"] = { "n", 148870 },	-- Dorian Atwater
-										["coord"] = { 67.1, 12.3, 895 },	-- Tiragarde Sound
+										["coord"] = { 67.1, 12.3, TIRAGARDE_SOUND },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(54730, {	-- Gorak Tul's Influence
@@ -148,7 +148,7 @@ _.Zones =
 									q(54729, {	-- The Bleak Hills
 										["sourceQuests"] = { 54727 },	-- Team Carry
 										["provider"] = { "n", 148870 },	-- Dorian Atwater
-										["coord"] = { 67.1, 12.3, 895 },	-- Tiragarde Sound
+										["coord"] = { 67.1, 12.3, TIRAGARDE_SOUND },
 										["races"] = ALLIANCE_ONLY,
 									}),
 									q(54732, {	-- Drop It!

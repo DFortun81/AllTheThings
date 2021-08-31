@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(895, {	-- Tiragarde Sound
+		m(TIRAGARDE_SOUND, {
 			n(ACHIEVEMENTS, {
 				ach(12473, {	-- A Sound Plan
 					["races"] = ALLIANCE_ONLY,
@@ -54,15 +54,15 @@ _.Zones =
 							["g"] = {
 								crit(8, {	-- Kwint
 									["creatureID"] = 141077,	-- Kwint
-									["coord"] = { 86.2, 38.6, 895 },
+									["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 								}),
 								crit(9, {	-- Delia Hanako
 									["creatureID"] = 141292,	-- Delia Hanako
-									["coord"] = { 59.6, 33.2, 895 },
+									["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 								}),
 								crit(10, {	-- Burly
 									["creatureID"] = 141479,	-- Burly
-									["coord"] = { 67.6, 12.8, 895 },
+									["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 								}),
 							},
 						}),
@@ -71,15 +71,15 @@ _.Zones =
 							["g"] = {
 								crit(8, {	-- Kwint
 									["creatureID"] = 141077,	-- Kwint
-									["coord"] = { 86.2, 38.6, 895 },
+									["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 								}),
 								crit(9, {	-- Delia Hanako
 									["creatureID"] = 141292,	-- Delia Hanako
-									["coord"] = { 59.6, 33.2, 895 },
+									["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 								}),
 								crit(10, {	-- Burly
 									["creatureID"] = 141479,	-- Burly
-									["coord"] = { 67.6, 12.8, 895 },
+									["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 								}),
 							},
 						}),
@@ -88,15 +88,15 @@ _.Zones =
 							["g"] = {
 								crit(8, {	-- Kwint
 									["creatureID"] = 141077,	-- Kwint
-									["coord"] = { 86.2, 38.6, 895 },
+									["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 								}),
 								crit(9, {	-- Delia Hanako
 									["creatureID"] = 141292,	-- Delia Hanako
-									["coord"] = { 59.6, 33.2, 895 },
+									["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 								}),
 								crit(10, {	-- Burly
 									["creatureID"] = 141479,	-- Burly
-									["coord"] = { 67.6, 12.8, 895 },
+									["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 								}),
 							},
 						}),
@@ -105,15 +105,15 @@ _.Zones =
 							["g"] = {
 								crit(8, {	-- Kwint
 									["creatureID"] = 141077,	-- Kwint
-									["coord"] = { 86.2, 38.6, 895 },
+									["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 								}),
 								crit(9, {	-- Delia Hanako
 									["creatureID"] = 141292,	-- Delia Hanako
-									["coord"] = { 59.6, 33.2, 895 },
+									["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 								}),
 								crit(10, {	-- Burly
 									["creatureID"] = 141479,	-- Burly
-									["coord"] = { 67.6, 12.8, 895 },
+									["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 								}),
 							},
 						}),
@@ -122,15 +122,15 @@ _.Zones =
 							["g"] = {
 								crit(8, {	-- Kwint
 									["creatureID"] = 141077,	-- Kwint
-									["coord"] = { 86.2, 38.6, 895 },
+									["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 								}),
 								crit(9, {	-- Delia Hanako
 									["creatureID"] = 141292,	-- Delia Hanako
-									["coord"] = { 59.6, 33.2, 895 },
+									["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 								}),
 								crit(10, {	-- Burly
 									["creatureID"] = 141479,	-- Burly
-									["coord"] = { 67.6, 12.8, 895 },
+									["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 								}),
 							},
 						}),
@@ -139,15 +139,15 @@ _.Zones =
 							["g"] = {
 								crit(8, {	-- Kwint
 									["creatureID"] = 141077,	-- Kwint
-									["coord"] = { 86.2, 38.6, 895 },
+									["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 								}),
 								crit(9, {	-- Delia Hanako
 									["creatureID"] = 141292,	-- Delia Hanako
-									["coord"] = { 59.6, 33.2, 895 },
+									["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 								}),
 								crit(10, {	-- Burly
 									["creatureID"] = 141479,	-- Burly
-									["coord"] = { 67.6, 12.8, 895 },
+									["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 								}),
 							},
 						}),
@@ -156,15 +156,15 @@ _.Zones =
 							["g"] = {
 								crit(8, {	-- Kwint
 									["creatureID"] = 141077,	-- Kwint
-									["coord"] = { 86.2, 38.6, 895 },
+									["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 								}),
 								crit(9, {	-- Delia Hanako
 									["creatureID"] = 141292,	-- Delia Hanako
-									["coord"] = { 59.6, 33.2, 895 },
+									["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 								}),
 								crit(10, {	-- Burly
 									["creatureID"] = 141479,	-- Burly
-									["coord"] = { 67.6, 12.8, 895 },
+									["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 								}),
 							},
 						}),
@@ -173,15 +173,15 @@ _.Zones =
 							["g"] = {
 								crit(8, {	-- Kwint
 									["creatureID"] = 141077,	-- Kwint
-									["coord"] = { 86.2, 38.6, 895 },
+									["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 								}),
 								crit(9, {	-- Delia Hanako
 									["creatureID"] = 141292,	-- Delia Hanako
-									["coord"] = { 59.6, 33.2, 895 },
+									["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 								}),
 								crit(10, {	-- Burly
 									["creatureID"] = 141479,	-- Burly
-									["coord"] = { 67.6, 12.8, 895 },
+									["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 								}),
 							},
 						}),
@@ -190,15 +190,15 @@ _.Zones =
 							["g"] = {
 								crit(8, {	-- Kwint
 									["creatureID"] = 141077,	-- Kwint
-									["coord"] = { 86.2, 38.6, 895 },
+									["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 								}),
 								crit(9, {	-- Delia Hanako
 									["creatureID"] = 141292,	-- Delia Hanako
-									["coord"] = { 59.6, 33.2, 895 },
+									["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 								}),
 								crit(10, {	-- Burly
 									["creatureID"] = 141479,	-- Burly
-									["coord"] = { 67.6, 12.8, 895 },
+									["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 								}),
 							},
 						}),
@@ -207,36 +207,36 @@ _.Zones =
 							["g"] = {
 								crit(8, {	-- Kwint
 									["creatureID"] = 141077,	-- Kwint
-									["coord"] = { 86.2, 38.6, 895 },
+									["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 								}),
 								crit(9, {	-- Delia Hanako
 									["creatureID"] = 141292,	-- Delia Hanako
-									["coord"] = { 59.6, 33.2, 895 },
+									["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 								}),
 								crit(10, {	-- Burly
 									["creatureID"] = 141479,	-- Burly
-									["coord"] = { 67.6, 12.8, 895 },
+									["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 								}),
 							},
 						}),
 					},
 				}),
 				ach(13058, {	-- Kul Tiran Up the Dance Floor
-					["coord"] = { 50.27, 25.11, 895 },
+					["coord"] = { 50.27, 25.11, TIRAGARDE_SOUND },
 				}),
 				ach(13057, {	-- Shanty Raid
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {
 						o(297933, {	-- Dusty Songbook
 							["questID"] = 53410,	-- Shanty of Fruit Counting [Criteria]
-							["coord"] = { 43.50, 25.59, 895 },
+							["coord"] = { 43.50, 25.59, TIRAGARDE_SOUND },
 							["g"] = {
 								i(163715),	-- Forbidden Sea Shanty of Fruit Counting
 							},
 						}),
 						o(297934, {	-- Scoundrel's Songbook
 							["questID"] = 53411,	-- Shanty of the Horse [Criteria]
-							["coord"] = { 73.20, 84.13, 895 },
+							["coord"] = { 73.20, 84.13, TIRAGARDE_SOUND },
 							["g"] = {
 								i(163719),	-- Forbidden Sea Shanty of the Horse
 							},
@@ -251,11 +251,11 @@ _.Zones =
 					["g"] = {
 						crit(3, {	-- Fluttering Softwing
 							["crs"] = { 126546 },	-- Fluttering Softwing
-							["coord"] = { 84.76, 77.74, 895 }
+							["coord"] = { 84.76, 77.74, TIRAGARDE_SOUND },
 						}),
 						crit(5, {	-- Tiragarde Gull
 							["crs"] = { 126519 },	-- Tiragarde Gull
-							["coord"] = { 77.72, 47.90, 895 }
+							["coord"] = { 77.72, 47.90, TIRAGARDE_SOUND },
 						}),
 					},
 				}),
@@ -263,7 +263,7 @@ _.Zones =
 				ach(12852, {	-- Treasures of Tiragarde Sound
 					o(279750, {	-- Hay Covered Chest [Localized]
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 67.4, 51.7, 895 },
+						["coord"] = { 67.4, 51.7, TIRAGARDE_SOUND },
 						["questID"] = 49963,
 						["g"] = {
 							crit(1, {	-- Hay Covered Chest
@@ -273,7 +273,7 @@ _.Zones =
 					}),
 					o(281397, {	-- Cutwater Treasure Chest [Localized]
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 72.5, 58.1, 895 },
+						["coord"] = { 72.5, 58.1, TIRAGARDE_SOUND },
 						["questID"] = 50442,
 						["g"] = {
 							crit(2, {	-- Cutwater Treasure Chest
@@ -284,7 +284,7 @@ _.Zones =
 					}),
 					o(293962, {	-- Precarious Noble Cache [Localized]
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 56.0, 33.1, 895 },
+						["coord"] = { 56.0, 33.1, TIRAGARDE_SOUND },
 						["questID"] = 52866,
 						["g"] = {
 							crit(3, {	-- Precarious Noble Cache
@@ -294,7 +294,7 @@ _.Zones =
 					}),
 					o(293964, {	-- Forgotten Smuggler's Stash [Localized]
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 61.7, 62.7, 895 },
+						["coord"] = { 61.7, 62.7, TIRAGARDE_SOUND },
 						["questID"] = 52867,
 						["g"] = {
 							crit(4, {	-- Forgotten Smuggler's Stash
@@ -304,7 +304,7 @@ _.Zones =
 					}),
 					o(293965, {	-- Scrimshaw Cache [Localized]
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 72.6, 21.5, 895 },
+						["coord"] = { 72.6, 21.5, TIRAGARDE_SOUND },
 						["questID"] = 52870,
 						["g"] = {
 							crit(5, {	-- Scrimshaw Cache
@@ -317,7 +317,7 @@ _.Zones =
 						["g"] = {
 							o(293852, {	-- Buried Treasure Chest
 								["questID"] = 52807,
-								["coord"] = { 55.01, 46.01, 895 },
+								["coord"] = { 55.01, 46.01, TIRAGARDE_SOUND },
 								["description"] = "At the bottom of the ocean.",
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["g"] = {
@@ -333,7 +333,7 @@ _.Zones =
 						["g"] = {
 							o(293880, {	-- Buried Treasure Chest
 								["questID"] = 52833,
-								["coord"] = { 29.26, 25.35, 895 },
+								["coord"] = { 29.26, 25.35, TIRAGARDE_SOUND },
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["g"] = {
 									crit(8, {	-- Faded Treasure Map
@@ -348,7 +348,7 @@ _.Zones =
 						["g"] = {
 							o(293881, {	-- Buried Treasure Chest
 								["questID"] = 52836,
-								["coord"] = { 90.49, 75.53, 895 },
+								["coord"] = { 90.49, 75.53, TIRAGARDE_SOUND },
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["g"] = {
 									crit(9, {	-- Yellowed Treasure Map
@@ -363,7 +363,7 @@ _.Zones =
 						["g"] = {
 							o(293884, {	-- Buried Treasure Chest
 								["questID"] = 52845,
-								["coord"] = { 48.96, 37.75, 895 },
+								["coord"] = { 48.96, 37.75, TIRAGARDE_SOUND },
 								["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								["g"] = {
 									crit(10, {	-- Singed Treasure Map
@@ -375,7 +375,7 @@ _.Zones =
 					}),
 					crit(6, {	-- Secrets of the Deep
 						["description"] = "This can be found in Boralus and requires that you find a number of scrolls before finishing the criteria.",
-						["coord"] = { 61.94, 84.5, 895 }
+						["coord"] = { 61.94, 84.5, TIRAGARDE_SOUND },
 					}),
 				}),
 			}),

@@ -5,18 +5,18 @@
 _.Zones =
 {
 	m(KULTIRAS, {
-		m(895, {	-- Tiragarde Sound
+		m(TIRAGARDE_SOUND, {
 			n(VENDORS, {
 				n(142838, {	-- Grumpy Grimble
 					["description"] = "When you have 150 BfA Inscription, speak to the NPC and he will teach you the technique.",
-					["coord"] = { 49.8, 36.8, 895 },
+					["coord"] = { 49.8, 36.8, TIRAGARDE_SOUND },
 					["g"] = {
 						i(162030),	-- Technique: Glyph of the Humble Flyer
 					},
 				}),
 				n(128702, {	-- Roko <Wandering Merchant>
 					--	this vendor has a quest unlock requirement; need to figure out precisely which one and attach it.  wowhead comments just say "unlock freehold," which isn't very specific.
-					["coord"] = { 79.6, 81.8, 895 },
+					["coord"] = { 79.6, 81.8, TIRAGARDE_SOUND },
 					["g"] = {
 						i(141042),	-- Technique: Glyph of Autumnal Bloom
 						i(141030),	-- Technique: Glyph of Cracked Ice

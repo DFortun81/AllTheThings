@@ -1432,7 +1432,7 @@ _.Zones =
 					["maps"] = {
 						863,	-- Nazmir
 						864,	-- Vol'dun
-						895,	-- Tiragarde Sound
+						TIRAGARDE_SOUND,
 						--942,	-- Stormsong Valley
 						862,	-- Zuldazar
 						DRUSTVAR,

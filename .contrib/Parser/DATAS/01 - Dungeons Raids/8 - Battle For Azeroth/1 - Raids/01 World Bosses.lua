@@ -12,9 +12,9 @@ _.Instances = { tier(BFA_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 52163,	-- The Matriarch (WQ)
 				["isRaid"] = true,
-				["coord"] = { 62.0, 24.0, 895 },	-- Tiragarde Sound
+				["coord"] = { 62.0, 24.0, TIRAGARDE_SOUND },
 				["maps"] = {	-- all Tiragarde Sound maps
-					895,	-- Tiragarde Sound
+					TIRAGARDE_SOUND,
 					1171,	-- Gol Thovas (lower)
 					1172,	-- Gol Thovas (upper)
 					1184,	-- Winterchill Mine (lower)

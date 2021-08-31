@@ -1014,50 +1014,50 @@ _.ExpansionFeatures =
 					--	WAR MARCHES ON STARTS HERE
 						q(53888, {	-- To Anglepoint
 							["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
-							["coord"] = { 67.0, 36.2, 895 },	-- Boralus/Tiragarde Sound (technically in Boralus but shows up in TS)
+							["coord"] = { 67.0, 36.2, TIRAGARDE_SOUND },	-- technically in Boralus but shows up in TS
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 53986 },	-- The Calm Before
 						}),
 						q(53896, {	-- Stand Fast
 							["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
-							["coord"] = { 42.1, 29.9, 895 },	-- Tiragarde Sound
+							["coord"] = { 42.1, 29.9, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 53888 },	-- To Anglepoint
 						}),
 						q(53910, {	-- Repel the Horde
 							["sourceQuests"] = { 53896 },	-- Stand Fast
 							["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
-							["coord"] = { 42.1, 29.9, 895 },	-- Tiragarde Sound
+							["coord"] = { 42.1, 29.9, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(54519, {	-- Squad Goals
 							["provider"] = { "n", 148015 },	-- Taelia Fordragon
-							["coord"] = { 42.1, 29.9, 895 },	-- Tiragarde Sound
+							["coord"] = { 42.1, 29.9, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 53896 },	-- Stand Fast
 						}),
 						q(54518, {	-- Zero Zeppelins
 							["provider"] = { "n", 145632 },	-- Okri Putterwrench
-							["coord"] = { 42.1, 29.8, 895 },	-- Tiragarde Sound
+							["coord"] = { 42.1, 29.8, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54519 },	-- Squad Goals (not required to complete first, but must fully pick up the quest before Zero Zeppelins appears)
 						}),
 						q(53909, {	-- Besieged Allies
 							["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
-							["coord"] = { 42.1, 29.9, 895 },	-- Tiragarde Sound
+							["coord"] = { 42.1, 29.9, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 53896 },	-- Stand Fast
 						}),
 						q(53916, {	-- Outrigger Outfitters
 							["provider"] = { "n", 145593 },	-- Rosaline Madison
-							["coord"] = { 41.5, 27.1, 895 },	-- Tiragarde Sound
+							["coord"] = { 41.5, 27.1, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 53909 },	-- Besieged Allies
 							-- This quest was available before I turned in Squad Goals, Repel the Horde, or Zero Zeppelins.  Not sure if those 3 are optional or required further down the chain.  Assuming they are required for the next part, so listing them.
 						}),
 						q(53978, {	-- Gunpowder Plots
 							["provider"] = { "n", 145593 },	-- Rosaline Madison
-							["coord"] = { 41.5, 27.1, 895 },	-- Tiragarde Sound
+							["coord"] = { 41.5, 27.1, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								53916,	-- Outrigger Outfitters (definitely required)
@@ -1068,7 +1068,7 @@ _.ExpansionFeatures =
 						}),
 						q(54787, {	-- Masking for a Friend
 							["provider"] = { "n", 145593 },	-- Rosaline Madison
-							["coord"] = { 41.5, 27.1, 895 },	-- Tiragarde Sound
+							["coord"] = { 41.5, 27.1, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								53916,	-- Outrigger Outfitters (definitely required)
@@ -1079,7 +1079,7 @@ _.ExpansionFeatures =
 						}),
 						q(54559, {	-- Free Plumeria
 							["provider"] = { "n", 145632 },	-- Okri Putterwrench
-							["coord"] = { 41.5, 27.1, 895 },	-- Tiragarde Sound
+							["coord"] = { 41.5, 27.1, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								53916,	-- Outrigger Outfitters (definitely required)
@@ -1096,24 +1096,24 @@ _.ExpansionFeatures =
 								53910,	-- Repel the Horde
 							},
 							["provider"] = { "n", 145593 },	-- Rosaline Madison
-							["coord"] = { 37.5, 24.9, 895 },	-- Tiragarde Sound
+							["coord"] = { 37.5, 24.9, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(53936, {	-- Stopping the Sappers
 							["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
-							["coord"] = { 37.4, 24.9, 895 },	-- Tiragarde Sound
+							["coord"] = { 37.4, 24.9, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 53919 },	-- Shots Fired
 						}),
 						q(54703, {	-- Express Delivery
 							["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
-							["coord"] = { 36.2, 29.8, 895 },	-- Tiragarde Sound
+							["coord"] = { 36.2, 29.8, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 53936 },	-- Stopping the Sappers
 						}),
 						q(53887, {	-- War Marches On
 							["provider"] = { "n", 145580 },	-- Lady Jaina Proudmoore
-							["coord"] = { 36.4, 30.7, 895 },	-- Tiragarde Sound
+							["coord"] = { 36.4, 30.7, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54703 },	-- Express Delivery
 						}),
@@ -1364,13 +1364,13 @@ _.ExpansionFeatures =
 						q(55033, {	-- Ashes to Ashvane
 							["sourceQuests"] = { 55118 },	-- Loose Ends
 							["provider"] = { "n", 150796 },	-- Kelsey Steelspark
-							["coord"] = { 80.1, 75.0, 895 },	-- Tiragarde Sound
+							["coord"] = { 80.1, 75.0, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55117, {	-- Correspondence Conundrum
 							["sourceQuests"] = { 55118 },	-- Loose Ends
 							["provider"] = { "n", 150796 },	-- Kelsey Steelspark
-							["coord"] = { 80.1, 75.0, 895 },	-- Tiragarde Sound
+							["coord"] = { 80.1, 75.0, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55116, {	-- Getting a Clue
@@ -1379,13 +1379,13 @@ _.ExpansionFeatures =
 								55117,	-- Correspondence Conundrum
 							},
 							["provider"] = { "n", 150796 },	-- Kelsey Steelspark
-							["coord"] = { 80.1, 75.0, 895 },	-- Tiragarde Sound
+							["coord"] = { 80.1, 75.0, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55119, {	-- Reporting In!
 							["sourceQuests"] = { 55116 },	-- Getting A Clue
 							["provider"] = { "n", 150796 },	-- Kelsey Steelspark
-							["coord"] = { 80.1, 75.0, 895 },	-- Tiragarde Sound
+							["coord"] = { 80.1, 75.0, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(55044, {	-- Don't Shoot the Messenger
