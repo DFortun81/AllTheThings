@@ -153,6 +153,7 @@ _.ExpansionFeatures =
 			--	Blues
 				i(187417, {	-- Adamant Vaults Cell
 					["crs"] = {
+						179433,	-- Vault Aegis
 						176578,	-- Vault Sentinel
 					},
 				}),

@@ -4750,33 +4750,36 @@ local function SearchForMissingItemNames(group)
 end
 local function UpdateSearchResults(searchResults)
 	if searchResults and #searchResults > 0 then
-		-- Mark all results as marked. This prevents a double +1 on parents.
-		for i,result in ipairs(searchResults) do
-			-- print("result",result.text,result.visible,result.parent and result.parent.total)
-			if result.visible and result.parent and result.parent.total then
-				-- print(".marked",result.text)
-				result.marked = true;
+		-- Ad-hoc update system doesn't actually need to pass along updates to the results, it only needs to refresh windows
+		if not app.Settings:GetTooltipSetting("Updates:AdHoc") then
+			-- Mark all results as marked. This prevents a double +1 on parents.
+			for i,result in ipairs(searchResults) do
+				print("result",result.text,result.visible,result.parent and result.parent.total)
+				if result.visible and result.parent and result.parent.total then
+					print(".marked",result.text)
+					result.marked = true;
+				end
 			end
-		end
 
-		-- Only unmark and +1 marked search results.
-		for i,result in ipairs(searchResults) do
-			if result.marked then
-				result.marked = nil;
-				if result.total then
-					-- This is an item that has a relative set of groups
-					app.UpdateParentProgress(result);
+			-- Only unmark and +1 marked search results.
+			for i,result in ipairs(searchResults) do
+				if result.marked then
+					result.marked = nil;
+					if result.total then
+						-- This is an item that has a relative set of groups
+						app.UpdateParentProgress(result);
 
-					-- If this is NOT a group...
-					if not result.g then
+						-- If this is NOT a group...
+						if not result.g then
+							-- If we've collected the item, use the "Show Collected Items" filter.
+							result.visible = app.CollectedItemVisibilityFilter(result);
+						end
+					else
+						app.UpdateParentProgress(result.parent);
+
 						-- If we've collected the item, use the "Show Collected Items" filter.
 						result.visible = app.CollectedItemVisibilityFilter(result);
 					end
-				else
-					app.UpdateParentProgress(result.parent);
-
-					-- If we've collected the item, use the "Show Collected Items" filter.
-					result.visible = app.CollectedItemVisibilityFilter(result);
 				end
 			end
 		end
