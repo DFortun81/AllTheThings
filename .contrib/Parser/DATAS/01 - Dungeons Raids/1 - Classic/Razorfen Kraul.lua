@@ -172,6 +172,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 				}),
 				i(776,  {	-- Vendetta
 					["crs"] = {
+						75466,	-- Vile Bat
 						75467,	-- Cave Bat
 						74545,	-- Razorfen Geomagus
 						74552,	-- Razorfen Huntmaster
