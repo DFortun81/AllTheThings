@@ -1236,6 +1236,7 @@ for key,value in pairs({
 	[179697] = "Arqueta de la arena",	-- Arena Treasure Chest
 	[179827] = "Se busca/Desaparecido/Objetos perdidos",	-- Wanted/Missing/Lost & Found
 	[179832] = "Almohada ornamentada de Pilaprieta",	-- Pillaclencher's Ornate Pillow
+	[180229] = "Montón hudú maldito",	-- Jinxed Hoodoo Pile
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "Caja de aparejos maltrecha",	-- Battered Tackle Box
 	[180368] = "Tablilla de Locura",	-- Tablet of Madness
@@ -1246,6 +1247,7 @@ for key,value in pairs({
 	[180503] = "Libro de cocina de Sandy",	-- Sandy Cookbook
 	[180633] = "Lágrima cristalina",	-- Crystalline Tear
 	[180642] = "Cajón inadvertido",	-- Inconspicuous Crate
+	[180652] = "Tierra removida",	-- Freshly Dug Dirt
 	[180690] = "Arca del escarabajo grande",	-- Large Scarab Coffer
 	[180691] = "Arca del escarabajo",	-- Scarab Coffer
 	--TODO: [180717] = "The Scarab Gong",	-- The Scarab Gong
@@ -1851,6 +1853,7 @@ for key,value in pairs({
 	[233658] = "Faltriquera de aventurero",	-- Adventurer's Pouch
 	[233696] = "Suministros de exploración importantes",	-- Important Exploration Supplies
 	[233697] = "Alijo de sablerón",	-- Saberon Stash
+	[233715] = "Botín de Dedo Dorado",	-- Goldtoe's Plunder
 	[233773] = "Bolsa de hierbas",	-- Bag of Herbs
 	[233792] = "Montón de escombros",	-- Pile of Rubble
 	[233917] = "Fémur de improbabilidad",	-- Femur of Improbability
@@ -1941,6 +1944,7 @@ for key,value in pairs({
 	[236406] = "Alijo de ogro antiguo",	-- Ancient Ogre Cache
 	[236407] = "Alijo de ogro antiguo",	-- Ancient Ogre Cache
 	[236483] = "Obsequio de los ancestros",	-- Gift of the Ancients
+	[236610] = "Regalo de Espíritu",	-- Spirit's Gift
 	[236693] = "Munición de la Horda de Hierro",	-- Iron Horde Munitions
 	[236715] = "Calavera extraña",	-- Odd Skull
 	[236755] = "Arcón polvoriento",	-- Dusty Lockbox
@@ -1954,6 +1958,7 @@ for key,value in pairs({
 	[239194] = "Alijo de Norana",	-- Norana's Cache
 	[239198] = "Alijo de Isaari",	-- Isaari's Cache
 	[239328] = "Baúl del capitán",	-- Captain's Foot Locker
+	[239791] = "Notas sobre la búsqueda de reliquias",	-- Relic Hunting Notes
 	[239803] = "Arqueta",	-- Treasure Chest
 	[239828] = "Filo de la Realidad",	-- Edge of Reality
 	--TODO: [239901] = "Voidtalon Egg",	-- Voidtalon Egg

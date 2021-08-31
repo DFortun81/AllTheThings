@@ -1223,6 +1223,7 @@ for key,value in pairs({
 	[179697] = "Сундук с сокровищами арены",	-- Arena Treasure Chest
 	[179827] = "Розыск/Пропал без вести/Найден",	-- Wanted/Missing/Lost & Found
 	[179832] = "Вышитая подушка Крепких Тисков",	-- Pillaclencher's Ornate Pillow
+	[180229] = "Груда зачарованных худу",	-- Jinxed Hoodoo Pile
 	[180327] = "Жаровня Безумия",	-- Brazier of Madness
 	[180366] = "Побитый ящик для рыболовных снастей",	-- Battered Tackle Box
 	[180368] = "Табличка Безумия",	-- Tablet of Madness
@@ -1233,6 +1234,7 @@ for key,value in pairs({
 	[180503] = "Занесенная песком поваренная книга",	-- Sandy Cookbook
 	[180633] = "Хрустальная слеза",	-- Crystalline Tear
 	[180642] = "Не вызывающий подозрений сундук",	-- Inconspicuous Crate
+	[180652] = "Только что выброшенная земля",	-- Freshly Dug Dirt
 	[180690] = "Большой сундук Скарабея",	-- Large Scarab Coffer
 	[180691] = "Сундук Скарабея",	-- Scarab Coffer
 	[180717] = "Гонг Скарабея",	-- The Scarab Gong
@@ -1838,6 +1840,7 @@ for key,value in pairs({
 	[233658] = "Кисет искателя приключений",	-- Adventurer's Pouch
 	[233696] = "Важные припасы исследователя",	-- Important Exploration Supplies
 	[233697] = "Клад саблерона",	-- Saberon Stash
+	[233715] = "Трофеи Золотопалого",	-- Goldtoe's Plunder
 	[233773] = "Мешок трав",	-- Bag of Herbs
 	[233792] = "Груда обломков",	-- Pile of Rubble
 	[233917] = "Странная бедренная кость",	-- Femur of Improbability
@@ -1928,6 +1931,7 @@ for key,value in pairs({
 	[236406] = "Древний огрский тайник",	-- Ancient Ogre Cache
 	[236407] = "Древний огрский тайник",	-- Ancient Ogre Cache
 	[236483] = "Дар древних",	-- Gift of the Ancients
+	[236610] = "Дар духа",	-- Spirit's Gift
 	[236693] = "Боеприпасы Железной Орды",	-- Iron Horde Munitions
 	[236715] = "Странный череп",	-- Odd Skull
 	[236755] = "Пыльный сейф",	-- Dusty Lockbox
@@ -1941,6 +1945,7 @@ for key,value in pairs({
 	[239194] = "Сундук Нораны",	-- Norana's Cache
 	[239198] = "Сундук Исаари",	-- Isaari's Cache
 	[239328] = "Капитанский сейф",	-- Captain's Foot Locker
+	[239791] = "Записки о найденных реликвиях",	-- Relic Hunting Notes
 	[239803] = "Сундук с сокровищами",	-- Treasure Chest
 	[239828] = "Грань Реальности",	-- Edge of Reality
 	[239901] = "Яйцо Когтя Бездны",	-- Voidtalon Egg

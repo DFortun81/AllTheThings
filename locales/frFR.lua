@@ -1235,6 +1235,7 @@ for key,value in pairs({
 	[179697] = "Coffre au trésor de l'arène",	-- Arena Treasure Chest
 	[179827] = "Avis de recherche / Disparu / Trouvé & Perdu",	-- Wanted/Missing/Lost & Found
 	[179832] = "Oreiller brodé de Pincetaie",	-- Pillaclencher's Ornate Pillow
+	[180229] = "Pile de déchets",	-- Jinxed Hoodoo Pile
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "Boîte d'appâts abîmée",	-- Battered Tackle Box
 	[180368] = "Tablette de la folie",	-- Tablet of Madness
@@ -1245,6 +1246,7 @@ for key,value in pairs({
 	[180503] = "Livre de cuisine sableux",	-- Sandy Cookbook
 	[180633] = "Larme cristalline",	-- Crystalline Tear
 	[180642] = "Caisse anodine",	-- Inconspicuous Crate
+	[180652] = "Terre fraîchement remuée",	-- Freshly Dug Dirt
 	[180690] = "Grand coffre de scarabées",	-- Large Scarab Coffer
 	[180691] = "Coffre de scarabées",	-- Scarab Coffer
 	[180717] = "Le gong du Scarabée",	-- The Scarab Gong	--TODO: This was taken from classic Wowhead
@@ -1850,6 +1852,7 @@ for key,value in pairs({
 	[233658] = "Bourse de l’aventurier",	-- Adventurer's Pouch
 	[233696] = "Fournitures d’exploration importantes",	-- Important Exploration Supplies
 	[233697] = "Planque de sabron",	-- Saberon Stash
+	[233715] = "Butin d’Orpion",	-- Goldtoe's Plunder
 	[233773] = "Sac d’herbes",	-- Bag of Herbs
 	[233792] = "Pile de débris",	-- Pile of Rubble
 	[233917] = "Fémur d’improbabilité",	-- Femur of Improbability
@@ -1940,6 +1943,7 @@ for key,value in pairs({
 	[236406] = "Ancienne cache ogre",	-- Ancient Ogre Cache
 	[236407] = "Ancienne cache ogre",	-- Ancient Ogre Cache
 	[236483] = "Présent des anciens",	-- Gift of the Ancients
+	[236610] = "Présent de l’esprit",	-- Spirit's Gift
 	[236693] = "Munitions de la Horde de Fer",	-- Iron Horde Munitions
 	[236715] = "Crâne étrange",	-- Odd Skull
 	[236755] = "Coffret poussiéreux",	-- Dusty Lockbox
@@ -1953,6 +1957,7 @@ for key,value in pairs({
 	[239194] = "Cache de Norana",	-- Norana's Cache
 	[239198] = "Cache d’Isaari",	-- Isaari's Cache
 	[239328] = "Coffre du capitaine",	-- Captain's Foot Locker
+	[239791] = "Notes de chasse aux reliques",	-- Relic Hunting Notes
 	[239803] = "Coffre au trésor",	-- Treasure Chest
 	[239828] = "Frontière du réel",	-- Edge of Reality
 	[239901] = "Œuf de serre du Vide",	-- Voidtalon Egg

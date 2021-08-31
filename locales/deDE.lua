@@ -1236,6 +1236,7 @@ for key,value in pairs({
 	[179697] = "Arenaschatztruhe",	-- Arena Treasure Chest
 	[179827] = "Gesucht/Vermisst/Verloren & Gefunden",	-- Wanted/Missing/Lost & Found
 	[179832] = "Verziertes Kissen von Kissenquetscher",	-- Pillaclencher's Ornate Pillow
+	[180229] = "Verwunschener Hoodoohaufen",	-- Jinxed Hoodoo Pile
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "Ramponierter Ausrüstungskasten",	-- Battered Tackle Box
 	[180368] = "Schrifttafel des Wahnsinns",	-- Tablet of Madness
@@ -1246,6 +1247,7 @@ for key,value in pairs({
 	[180503] = "Sandiges Kochbuch",	-- Sandy Cookbook
 	[180633] = "Kristallträne",	-- Crystalline Tear
 	[180642] = "Unscheinbare Kiste",	-- Inconspicuous Crate
+	[180652] = "Frisch aufgewühlter Dreck",	-- Freshly Dug Dirt
 	[180690] = "Großer Skarabäuskasten",	-- Large Scarab Coffer
 	[180691] = "Skarabäuskasten",	-- Scarab Coffer
 	[180717] = "Der Skarabäusgong",	-- The Scarab Gong	--TODO: This was taken from classic Wowhead
@@ -1851,6 +1853,7 @@ for key,value in pairs({
 	[233658] = "Beutel eines Abenteurers",	-- Adventurer's Pouch
 	[233696] = "Wichtige Expeditionsvorräte",	-- Important Exploration Supplies
 	[233697] = "Saberonvorrat",	-- Saberon Stash
+	[233715] = "Goldzehs Plündergut",	-- Goldtoe's Plunder
 	[233773] = "Beutel voller Kräuter",	-- Bag of Herbs
 	[233792] = "Trümmerhaufen",	-- Pile of Rubble
 	[233917] = "Femur der Unwahrscheinlichkeit",	-- Femur of Improbability
@@ -1941,6 +1944,7 @@ for key,value in pairs({
 	[236406] = "Uraltes Ogerversteck",	-- Ancient Ogre Cache
 	[236407] = "Uraltes Ogerversteck",	-- Ancient Ogre Cache
 	[236483] = "Gabe der Urtume",	-- Gift of the Ancients
+	[236610] = "Geistergabe",	-- Spirit's Gift
 	[236693] = "Munition der Eisernen Horde",	-- Iron Horde Munitions
 	[236715] = "Seltsamer Schädel",	-- Odd Skull
 	[236755] = "Staubige Truhe",	-- Dusty Lockbox
@@ -1954,6 +1958,7 @@ for key,value in pairs({
 	[239194] = "Noranas Vorräte",	-- Norana's Cache
 	[239198] = "Isaaris Vorräte",	-- Isaari's Cache
 	[239328] = "Schließkiste des Kapitäns",	-- Captain's Foot Locker
+	[239791] = "Aufzeichnungen eines Reliktjägers",	-- Relic Hunting Notes
 	[239803] = "Schatztruhe",	-- Treasure Chest
 	[239828] = "Rand der Realität",	-- Edge of Reality
 	[239901] = "Leerenkrallenei",	-- Voidtalon Egg
