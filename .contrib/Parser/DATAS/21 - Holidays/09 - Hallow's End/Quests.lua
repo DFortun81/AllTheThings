@@ -2008,11 +2008,11 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(54709, {	-- Candy Bucket — Zuldazar, Dazar'alor, Horde
 				["isYearly"] = true,
-				["coord"] = { 49.6, 82.3, 1163 },
+				["coord"] = { 49.6, 82.3, THE_GREAT_SEAL },
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					1163,	-- Dazar'alor
-					1164,	-- Dazar'alor
+					THE_GREAT_SEAL,
+					HALL_OF_CHRONICLERS,
 					DAZARALOR,
 				},
 				["g"] = {

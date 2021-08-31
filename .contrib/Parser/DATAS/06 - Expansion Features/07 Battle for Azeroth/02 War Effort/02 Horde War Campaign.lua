@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 					n(ACHIEVEMENTS, {
 						ach(12509, {	-- Ready for War
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1163, 1164, DAZARALOR },	-- Dazar'alor
+							["maps"] = { THE_GREAT_SEAL, HALL_OF_CHRONICLERS, DAZARALOR },	-- Dazar'alor
 							["g"] = {
 								crit(1, {	-- Drustvar Foothold
 									["sourceQuests"] = { 51985 },	-- Return to Zuldazar (Drustvar Foothold)
@@ -107,15 +107,15 @@ _.ExpansionFeatures =
 						q(53602, {	-- Adapting Our Tactics
 							["description"] = "Must unlock at least one foothold on Kul Tiras to get this quest.",
 							["provider"] = { "n", 143913 },	-- Eitrigg
-							["coord"] = { 58.5, 62.7, 1164 },
+							["coord"] = { 58.5, 62.7, HALL_OF_CHRONICLERS },
 							["races"] = HORDE_ONLY,
 						}),
 						q(52749, {	-- The War Campaign
 							["isBreadcrumb"] = true,
 							["provider"] = { "n", 120170 },	-- Nathanos Blightcaller
-							["coord"] = { 40.1, 69.4, 1164 },	-- Dazar'alor
+							["coord"] = { 40.1, 69.4, HALL_OF_CHRONICLERS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1164 },	-- The Great Seal
+							["maps"] = { HALL_OF_CHRONICLERS },
 						}),
 						q(52746, {	-- The War Cache
 							["sourceQuests"] = { 52749 },	-- The War Campaign
@@ -447,7 +447,7 @@ _.ExpansionFeatures =
 								53064,	-- A Mission of Unity
 							},
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 1163 },
+							["coord"] = { 58.4, 62.6, THE_GREAT_SEAL },
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(141605, {	-- Flight Master Whistle
@@ -458,7 +458,7 @@ _.ExpansionFeatures =
 						q(52451, {	-- Uniting Zandalar		(Also grants credit for the two Alliance Quests "Uniting Kul Tiras" (ID 51918 & ID 52450))
 							["description"] = "This version of the quest is offered to alts that share an account with a character that already completed the original 'Uniting Zandalar.' All characters get credit for both quests.",
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-							["coord"] = { 58.4, 62.6, 1163 },
+							["coord"] = { 58.4, 62.6, THE_GREAT_SEAL },
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(141605, {	-- Flight Master Whistle

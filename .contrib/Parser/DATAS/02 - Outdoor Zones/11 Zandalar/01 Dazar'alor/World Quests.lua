@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(1163, {	-- Dazar'alor
+		m(THE_GREAT_SEAL, {	-- Dazar'alor
 			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(52251, {	-- Compromised Reconnaissance
@@ -58,21 +58,21 @@ _.Zones =
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51044, {	-- Supplies Needed: Blood-Stained Bone
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51045, {	-- Supplies Needed: Calcified Bone
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51046, {	-- Supplies Needed: Coarse Leather
@@ -85,126 +85,126 @@ _.Zones =
 						["provider"] = { "n", 142095 },	-- Henrick Wyther
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						-- ["coord"] = { 44.01, 32.21, 1163 },
+						-- ["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51051, {	-- Supplies Needed: Deep Sea Satin
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(52387, {	-- Supplies Needed: Frenzied Fangtooth
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(52382, {	-- Supplies Neeeded: Great Sea Catfish
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(52388, {	-- Supplies Needed: Lane Snapper
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51049, {	-- Supplies Neeeded: Mistscale
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51042, {	-- Supplies Needed: Monelite Ore
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51036, {	-- Supplies Needed: Riverbud
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(52383, {	-- Supplies Needed: Sand Shifter
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51041, {	-- Supplies Needed: Sea Stalk
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51048, {	-- Supplies Needed: Shimmerscale
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51040, {	-- Supplies Needed: Siren's Pollen
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51037, {	-- Supplies Needed: Star Moss
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51043, {	-- Supplies Needed: Storm Silver Ore
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51047, {	-- Supplies Needed: Tempest Hide
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51050, {	-- Supplies Needed: Tidespray Line
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(52384, {	-- Supplies Needed: Tiragarde Perch
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(51039, {	-- Supplies Needed: Winter's Kiss
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 44.01, 32.21, 1163 },
+						["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
 						["isWorldQuest"] = true,
 					}),
 					q(49444, {	-- Underfoot
@@ -220,7 +220,7 @@ _.Zones =
 					q(52425, {	-- Work Order: Battle Flag: Spirit of Freedom
 						["provider"] = { "n", 131287 },	-- Natal'hakata
 						["lvl"] = 120,
-						["coord"] = { 65.61, 72.01, 1163 },
+						["coord"] = { 65.61, 72.01, THE_GREAT_SEAL },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = TAILORING,

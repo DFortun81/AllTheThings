@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(1163, {	-- Dazar'alor
+		m(THE_GREAT_SEAL, {	-- Dazar'alor
 			n(-169, {	-- Emissary Quests
 				q(50606, {	-- Horde War Effort [The Honorbound] [Tier 2]
 					["provider"] = { "n", 135447 },	-- Ransa Greyfeather
@@ -30,7 +30,7 @@ _.Zones =
 				q(54462, {	-- Supplies from the Zandalari Empire
 					["provider"] = { "n", 131287 },	-- Natal'hakata
 					["lvl"] = 120,
-					["coord"] = { 67.07, 71.44, 1164 },
+					["coord"] = { 67.07, 71.44, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -43,7 +43,7 @@ _.Zones =
 					["provider"] = { "n", 131287 },	-- Natal'hakata
 					["lvl"] = 120,
 					["isDaily"] = true,
-					["coord"] = { 67.07, 71.44, 1164 },
+					["coord"] = { 67.07, 71.44, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

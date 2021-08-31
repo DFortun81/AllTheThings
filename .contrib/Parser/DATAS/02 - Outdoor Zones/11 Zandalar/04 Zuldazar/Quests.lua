@@ -1820,9 +1820,9 @@ _.Zones =
 					["sourceQuests"] = { 47741 },	-- To Sacrifice a Loa -- TODO: verify this. Earliest point where this was available but may have additional requirements
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
-					["coord"] = { 41.4, 72.2, 1164 },
+					["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1164 },	-- Dazar'alor
+					["maps"] = { HALL_OF_CHRONICLERS },
 				}),
 				q(49059, {	-- The Bones of Xibala (A)
 				--	["coord"] = { 40.0, 76.5, 862 },

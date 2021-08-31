@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(1163, {	-- Dazar'alor
+		m(THE_GREAT_SEAL, {	-- Dazar'alor
 			n(138706, {	-- Mission Command Table
 				["modelScale"] = 3,
 				["crs"] = { 147244 },	-- Dazar'alor: The Great Seal Location
 				["coords"] = {
 					{ 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location [Original]
-					{ 58.42, 70.63, 1164 },	-- Dazar'alor: The Great Seal Location
+					{ 58.42, 70.63, HALL_OF_CHRONICLERS },
 				},
 				["races"] = HORDE_ONLY,
 				["g"] = {

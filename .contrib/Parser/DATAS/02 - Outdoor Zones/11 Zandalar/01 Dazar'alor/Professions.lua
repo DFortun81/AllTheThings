@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(1163, {	-- Dazar'alor
+		m(THE_GREAT_SEAL, {	-- Dazar'alor
 			n(-38, {	-- Professions
 				prof(ALCHEMY, {
 					q(54464, {	-- Alchemical Equations
@@ -82,7 +82,7 @@ _.Zones =
 					q(54470, {	-- Fresh Dishes (H)
 						["requireSkill"] = COOKING,
 						["provider"] = { "n", 141549 },	-- T'sarah the Royal Chef <Cooking Trainer>
-						["coord"] = { 28.5, 50.0, 1164 },
+						["coord"] = { 28.5, 50.0, HALL_OF_CHRONICLERS },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
 						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable

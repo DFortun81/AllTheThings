@@ -106,8 +106,8 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["provider"] = { "n", 123000 },	-- Captain Rez'okun
 					["races"] = HORDE_ONLY,
-					["coord"] = { 44.60, 95.40, 1163 },
-					["maps"] = { 1163 },	-- Dazar'alor
+					["coord"] = { 44.60, 95.40, THE_GREAT_SEAL },
+					["maps"] = { THE_GREAT_SEAL },
 					["g"] = {
 						i(168615, {	-- Volatile Worldvein (Rank 1)
 							az(4, 1),	-- Worldvein Resonance (Rank 1)
@@ -439,7 +439,7 @@ _.ExpansionFeatures =
 				}),
 				i(163620, {	-- Island Flotsam [Horde]
 					["description"] = "|CFFFF0000Turn in to Jani in Dazar'alor for Zandalari Empire rep.|r",
-					["coord"] = { 35.4, 7.8, 1163 },
+					["coord"] = { 35.4, 7.8, THE_GREAT_SEAL },
 					["g"] = {
 						q(53115, {	-- Island Flotsam
 							["description"] = "Must have unlocked Jani by doing the quest \"Pests\".",

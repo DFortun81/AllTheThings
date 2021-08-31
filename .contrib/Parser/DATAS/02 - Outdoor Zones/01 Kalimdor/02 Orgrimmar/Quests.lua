@@ -278,7 +278,7 @@ _.Zones =
 									q(53823, {	-- A Queen's Entourage
 										["sourceQuests"] = { 53831 },	-- A Royal Occasion
 										["provider"] = { "n", 145414 },	-- Natal'hakata
-										["coord"] = { 48.6, 22.0, 1163 },
+										["coord"] = { 48.6, 22.0, THE_GREAT_SEAL },
 										["races"] = HORDE_ONLY,
 									}),
 									q(53824, {	-- The Rite of Kings and Queens

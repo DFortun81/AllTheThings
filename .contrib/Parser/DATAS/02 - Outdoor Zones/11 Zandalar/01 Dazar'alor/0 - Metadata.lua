@@ -5,13 +5,12 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(1163, {	-- Dazar'alor
+		m(THE_GREAT_SEAL, {	-- Dazar'alor
 			["isRaid"] = true,
 			["achievementID"] = 12559,	-- Explore Zuldazar
 			["lvl"] = 110,
 			["maps"] = {
-				--1163,	-- Dazar'alor
-				1164,	-- Dazar'alor
+				HALL_OF_CHRONICLERS,
 				DAZARALOR,
 				1166,	-- Zanchul
 				1167,	-- Zanchul 2

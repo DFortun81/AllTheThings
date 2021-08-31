@@ -16,7 +16,7 @@ _.Zones =
 					},
 					["coords"] = {
 						{ 49.9, 46.6, DAZARALOR },
-						{ 41.7, 66.7, 1163 },
+						{ 41.7, 66.7, THE_GREAT_SEAL },
 					},
 				}),
 				q(54117, {	-- Every Little Death Helps
@@ -46,7 +46,7 @@ _.Zones =
 					},
 					["coords"] = {
 						{ 49.9, 46.6, DAZARALOR },
-						{ 41.7, 66.7, 1163 },
+						{ 41.7, 66.7, THE_GREAT_SEAL },
 					},
 					["g"] = {
 						i(168123),	-- Twitching Eyeball

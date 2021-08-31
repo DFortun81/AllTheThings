@@ -1084,7 +1084,7 @@ _.Achievements =
 					},
 					["maps"] = {
 						BORALUS,
-						1164,	-- Dazar'alor
+						HALL_OF_CHRONICLERS,
 						DRUSTVAR,
 						TIRAGARDE_SOUND,
 					},
@@ -1095,7 +1095,7 @@ _.Achievements =
 						{ 75.44, 18.61, BORALUS },	-- Garrett Elmendorf
 						{ 75.37, 14.48, BORALUS },	-- Harold Atkey
 						{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
-						{ 26.45, 50.7, 1164 },	-- Lily Whistlebrew
+						{ 26.45, 50.7, HALL_OF_CHRONICLERS },	-- Lily Whistlebrew
 						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
 						{ 77.21, 84.25, TIRAGARDE_SOUND },	-- Martha Mae
 					},

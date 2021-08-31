@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(1163, {	-- Dazar'alor
+		m(THE_GREAT_SEAL, {	-- Dazar'alor
 			n(-161, {	-- Toys
 				i(122293, {	-- Trans-Dimensional Bird Whistle
 					["collectible"] = false,

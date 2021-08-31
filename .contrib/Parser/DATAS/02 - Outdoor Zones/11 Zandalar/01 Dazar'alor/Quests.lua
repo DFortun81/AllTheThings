@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(1163, {	-- Dazar'alor
+		m(THE_GREAT_SEAL, {	-- Dazar'alor
 			n(QUESTS, {
 			-- TODO: TO SOLVE:
 				-- when does "who seeks the seekers?" become available?  seen as early as "the prophet's ploy," but may be available sooner.
@@ -335,7 +335,7 @@ _.Zones =
 					},
 				}),
 				q(58672, {	-- A Gathering of Champions
-					["coord"] = { 55.9, 30.3, 1163 },
+					["coord"] = { 55.9, 30.3, THE_GREAT_SEAL },
 					["provider"] = { "n", 161458 },	-- Valeera Sanguinar
 					["sourceQuests"] = { 58632 },	-- Ny'alotha, the Waking City: The Corruptor's End
 					["races"] = HORDE_ONLY,
@@ -408,7 +408,7 @@ _.Zones =
 				}),
 				q(47313, {	-- Discreet Discussions
 					["sourceQuests"] = { 47513 },	-- Vol'dun
-					["coord"] = { 41.1, 66.7, 1164 },
+					["coord"] = { 41.1, 66.7, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 133050 },	-- Princess Talanji
 				}),
@@ -449,7 +449,7 @@ _.Zones =
 					},
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
-					["coord"] = { 41.4, 72.2, 1164 },
+					["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(56249, {	-- I Am the Trashmaster
@@ -474,7 +474,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
 					["provider"] = { "n", 130932 },	-- Nok'tal
-					["coord"] = { 65.4, 82.6, 1164 },
+					["coord"] = { 65.4, 82.6, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51555, {	-- Keep Them On Task
@@ -485,7 +485,7 @@ _.Zones =
 						51111,	-- King or Prey
 					},
 					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
-					["coord"] = { 41.4, 72.2, 1164 },
+					["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(52472, {	-- Make Loh Go
@@ -631,7 +631,7 @@ _.Zones =
 					["sourceQuests"] = { 49426 },	-- The King's Gambit
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 131287 },	-- Natal'hakata
-					["coord"] = { 67.3, 71.6, 1164 },
+					["coord"] = { 67.3, 71.6, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(52834, {	-- Seal of Wartorn Fate: Gold
@@ -715,7 +715,7 @@ _.Zones =
 				q(47509, {	-- Terrace of the Chosen
 					["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
 					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
-					["coord"] = { 41.4, 72.2, 1164 },
+					["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47432, {	-- The Bargain is Struck (Paku)
@@ -735,14 +735,14 @@ _.Zones =
 					["sourceQuests"] = { 51244 },	-- What Rots Beneath
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
-					["coord"] = { 40.1, 70.7, 1164 },
+					["coord"] = { 40.1, 70.7, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47257, {	-- The Bones of Xibala (H)
 					["sourceQuests"] = { 49426 },	-- The King's Gambit
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 120168 },	-- Chronicler To'kini
-					["coord"] = { 69.5, 47.5, 1164 },
+					["coord"] = { 69.5, 47.5, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(57376, {	-- The Hidden Need
@@ -805,7 +805,7 @@ _.Zones =
 				q(51101, {	-- The Wounded King
 					["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
 					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
-					["coord"] = { 41.4, 72.2, 1164 },
+					["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47445, {	-- The Zanchuli Council
@@ -818,7 +818,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["sourceQuests"] = { 46931 },	-- Speaker of the Horde
 					["isBreadcrumb"] = true,	-- for "We Need Each Other"
-					["coord"] = { 34.5, 41.5, 1163 },
+					["coord"] = { 34.5, 41.5, THE_GREAT_SEAL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 120168 },	-- Chronicler To'kini
 				}),
@@ -829,12 +829,12 @@ _.Zones =
 				}),
 				q(49615, {	-- Trust of a King
 					["sourceQuests"] = { 47514 },	-- Zuldazar
-					["coord"] = { 40.1, 69.4, 1164 },
+					["coord"] = { 40.1, 69.4, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 133050 },	-- Princes Talanji
 				}),
 				q(47513, {	-- Vol'dun
-					["coord"] = { 41.8, 69.4, 1164 },
+					["coord"] = { 41.8, 69.4, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 135775 },	-- Scouting Map
 					["sourceQuest"] = 52131,	-- We Need Each Other
@@ -850,7 +850,7 @@ _.Zones =
 					},
 					["coord"] = { 39.4, 13.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1164 },	-- Dazar'alor
+					["maps"] = { HALL_OF_CHRONICLERS },
 				}),
 				q(46957, {	-- Welcome to Zuldazar
 					["provider"] = { "n", 132332 },	-- Princess Talanji
@@ -865,12 +865,12 @@ _.Zones =
 						52139,	-- To Matters at Hand (legacy)
 						46931,	-- Speaker of the Horde
 					},
-					["coord"] = { 41.1, 64.4, 1164 },
+					["coord"] = { 41.1, 64.4, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 133050 },	-- Princess Talanji
 				}),
 				q(58583, {	-- Where the Heart Is
-					["coord"] = { 55.9, 30.3, 1163 },
+					["coord"] = { 55.9, 30.3, THE_GREAT_SEAL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 161458 },	-- Valeera Sanguinar
 					["sourceQuest"] = 58582,	-- Return of the Black Prince
@@ -901,11 +901,11 @@ _.Zones =
 				--	["sourceQuests"] = { 52131 },	-- We Need Each Other
 					["sourceQuests"] = { 46931 },	-- Speaker of the Horde
 					["provider"] = { "n", 135775 },	-- Scouting Map
-					["coord"] = { 40.1, 69.1, 1164 },
+					["coord"] = { 40.1, 69.1, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47103, {	-- Journey to Nazmir
-					["coord"] = { 41.1, 66.8, 1164 },
+					["coord"] = { 41.1, 66.8, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 133050 },
 					["sourceQuests"] = { 47512 },	-- Nazmir
@@ -914,7 +914,7 @@ _.Zones =
 				--	TODO: not a SQ during my April 2021 playthrough, unsure of requirements
 				--	["sourceQuests"] = { 52131 },	-- We Need Each Other
 					["provider"] = { "n", 135775 },	-- Scouting Map
-					["coord"] = { 41.8, 69.4, 1164 },
+					["coord"] = { 41.8, 69.4, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48535, {	-- Nazmir, the Forbidden Swamp
@@ -971,7 +971,7 @@ _.Zones =
 					["sourceQuests"] = { 50881 },	-- Royal Report
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 131287 },	-- Natal'hakata
-					["coord"] = { 68.7, 71.8, 1164 },
+					["coord"] = { 68.7, 71.8, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(55651, {	-- To Mechagon!
@@ -981,7 +981,7 @@ _.Zones =
 					["sourceQuest"] = 55650,	-- Only the Best Will Do
 				}),
 				q(53817, {	-- Whatever Happened to Grizzek Fizzwrench?
-					["coord"] = { 58.5, 62.6, 1163 },
+					["coord"] = { 58.5, 62.6, THE_GREAT_SEAL },
 					["provider"] = { "n", 136683 },	-- Trade Prince Gallywix
 					["races"] = HORDE_ONLY,
 				}),

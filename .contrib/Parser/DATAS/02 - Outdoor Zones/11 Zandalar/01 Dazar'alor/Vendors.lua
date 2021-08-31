@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(1163, {	-- Dazar'alor
+		m(THE_GREAT_SEAL, {	-- Dazar'alor
 			n(VENDORS, {
 				n(132153, {	-- "Black Eye" Zenru
 					["coord"] = { 53.7, 85.9, DAZARALOR },
@@ -181,7 +181,7 @@ _.Zones =
 								}),
 								i(163620, {	-- Island Flotsam
 									["description"] = "|CFFFF0000Turn in to Jani in Dazar'alor for Zandalari Empire rep.|r",
-									["coord"] = { 35.4, 7.8, 1163 },
+									["coord"] = { 35.4, 7.8, THE_GREAT_SEAL },
 									["g"] = {
 										q(53115, {	-- Island Flotsam
 											["description"] = "Must have unlocked Jani by doing the quest \"Pests\".",
@@ -1122,7 +1122,7 @@ _.Zones =
 					},
 				}),
 				n(131287, {	-- Natal'hakata <Zandalari Empire Emissary>
-					["coord"] = { 67.2, 71.7, 1164 },
+					["coord"] = { 67.2, 71.7, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(161516, {	-- Bindings of the Disparate Tribes

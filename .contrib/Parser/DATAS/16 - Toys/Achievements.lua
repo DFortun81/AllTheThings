@@ -77,7 +77,7 @@ _.Toys =
 			}),
 			i(161443, {	-- A Tiny Voodoo Mask
 				["questID"] = 52269,	-- Pepe can be sometimes be summoned with this mask
-				["coord"] = { 38.98, 15.80, 1163 },
+				["coord"] = { 38.98, 15.80, THE_GREAT_SEAL },
 				["description"] = "Located inside the |cFFFFD700Hot House|r.",
 			}),
 		}),

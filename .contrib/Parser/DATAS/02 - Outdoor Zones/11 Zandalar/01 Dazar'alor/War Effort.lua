@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(1163, {	-- Dazar'alor
+		m(THE_GREAT_SEAL, {	-- Dazar'alor
 			n(-10057, {	-- War Effort
 				["lvl"] = 120,
 				["races"] = HORDE_ONLY,

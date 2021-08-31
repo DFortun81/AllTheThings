@@ -703,8 +703,8 @@ _.Holidays =
 						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 131346 },		-- Caretaker Padae
 						["maps"] = {
-							1163,	-- The Great Seal [Dazar'alor]
-							1164,	-- Hall of Chroniclers [Dazar'alor]
+							THE_GREAT_SEAL,	-- Dazar'alor
+							HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 							DAZARALOR,
 						},
 						["coords"] = {
@@ -783,8 +783,8 @@ _.Holidays =
 						},
 						["maps"] = {
 							864,	-- Vol'dun
-							1163,	-- The Great Seal [Dazar'alor]
-							1164,	-- Hall of Chroniclers [Dazar'alor]
+							THE_GREAT_SEAL,	-- Dazar'alor
+							HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 							DAZARALOR,
 						},
 						["coords"] = {
@@ -889,8 +889,8 @@ _.Holidays =
 						},
 						["maps"] = {
 							862,	-- Zuldazar
-							1163,	-- The Great Seal [Dazar'alor]
-							1164,	-- Hall of Chroniclers [Dazar'alor]
+							THE_GREAT_SEAL,	-- Dazar'alor
+							HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 							DAZARALOR,
 						},
 						["coords"] = {
@@ -1047,8 +1047,8 @@ _.Holidays =
 							53970,	-- The Sethrak Queen
 						},
 						["maps"] = {
-							1163,	-- The Great Seal [Dazar'alor]
-							1164,	-- Hall of Chroniclers [Dazar'alor]
+							THE_GREAT_SEAL,	-- Dazar'alor
+							HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 							DAZARALOR,
 						},
 						["coords"] = {
@@ -1419,8 +1419,8 @@ _.Holidays =
 						},
 						["maps"] = {
 							863,	-- Nazmir
-							1163,	-- The Great Seal [Dazar'alor]
-							1164,	-- Hall of Chroniclers [Dazar'alor]
+							THE_GREAT_SEAL,	-- Dazar'alor
+							HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 							DAZARALOR,
 						},
 						["coords"] = {
@@ -1500,8 +1500,8 @@ _.Holidays =
 						},
 						["maps"] = {
 							864,	-- Vol'dun
-							1163,	-- The Great Seal [Dazar'alor]
-							1164,	-- Hall of Chroniclers [Dazar'alor]
+							THE_GREAT_SEAL,	-- Dazar'alor
+							HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 							DAZARALOR,
 						},
 						["coords"] = {
@@ -1522,8 +1522,8 @@ _.Holidays =
 						},
 						["maps"] = {
 							862,	-- Zuldazar
-							1163,	-- The Great Seal [Dazar'alor]
-							1164,	-- Hall of Chroniclers [Dazar'alor]
+							THE_GREAT_SEAL,	-- Dazar'alor
+							HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 							DAZARALOR,
 						},
 						["coords"] = {
