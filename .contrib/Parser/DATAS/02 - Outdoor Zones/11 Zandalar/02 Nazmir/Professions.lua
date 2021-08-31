@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(863, {	-- Nazmir
+		m(NAZMIR, {
 			n(-38, {	-- Professions
 				prof(ALCHEMY, {
 					-- Tools of Trade Questline
@@ -22,7 +22,7 @@ _.Zones =
 					}),
 					q(50117, {	-- A Deathly Draught (H)
 						["provider"] = { "n", 132680 },	-- Zukashi
-						["coord"] = { 65.2, 36.9, 863 },
+						["coord"] = { 65.2, 36.9, NAZMIR },
 						["sourceQuest"] = 50116,	-- A Possible Solution (H)
 						["requireSkill"] = ALCHEMY,
 						["races"] = HORDE_ONLY,
@@ -30,7 +30,7 @@ _.Zones =
 					}),
 					q(50118, {	-- A Stone's Throw (H)
 						["provider"] = { "n", 132680 },	-- Zukashi
-						["coord"] = { 65.2, 36.9, 863 },
+						["coord"] = { 65.2, 36.9, NAZMIR },
 						["sourceQuest"] = 50116,	-- A Possible Solution (H)
 						["requireSkill"] = ALCHEMY,
 						["races"] = HORDE_ONLY,
@@ -38,7 +38,7 @@ _.Zones =
 					}),
 					q(50119, {	-- Chemically Compounded (H)
 						["provider"] = { "n", 132680 },	-- Zukashi
-						["coord"] = { 65.2, 36.9, 863 },
+						["coord"] = { 65.2, 36.9, NAZMIR },
 						["sourceQuests"] = {
 							50117,	-- A Deathly Draught (H)
 							50118,	-- A Stone's Throw (H)
@@ -49,7 +49,7 @@ _.Zones =
 					}),
 					q(50120, {	-- A Recipe for Success (H)
 						["provider"] = { "o", 280957 },	-- Zukashi's Satchel
-						["coord"] = { 62.9, 28.9, 863 },
+						["coord"] = { 62.9, 28.9, NAZMIR },
 						["sourceQuest"] = 50119,	-- Chemically Compounded (H)
 						["requireSkill"] = ALCHEMY,
 						["races"] = HORDE_ONLY,
@@ -107,7 +107,7 @@ _.Zones =
 				prof(JEWELCRAFTING, {
 					q(55583, {	-- Out With the Old (A)
 						["provider"] = { "n", 150897 },	-- Shrine of the Dawning
-						["coord"] = { 61.4, 37.2, 863 },
+						["coord"] = { 61.4, 37.2, NAZMIR },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49584,	-- The Missing Chapter (A)
 						["requireSkill"] = JEWELCRAFTING,

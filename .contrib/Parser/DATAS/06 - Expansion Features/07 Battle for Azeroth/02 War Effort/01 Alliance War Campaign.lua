@@ -258,25 +258,25 @@ _.ExpansionFeatures =
 					--	NAZMIR FOOTHOLD STARTS HERE
 						q(51129, {	-- Dubious Offering
 							["provider"] = { "n", 136432 },	-- Brann Bronzebeard
-							["coord"] = { 62.0, 41.5, 863 },	-- Nazmir
+							["coord"] = { 62.0, 41.5, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51088 },	-- Heart of Darkness
 						}),
 						q(51167, {	-- Blood of Hir'eek
 							["provider"] = { "n", 136641 },	-- Brann Bronzebeard
-							["coord"] = { 31.2, 46.7, 863 },	-- Nazmir
+							["coord"] = { 31.2, 46.7, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51129 },	-- Dubious Offering
 						}),
 						q(51150, {	-- Honoring the Fallen
 							["provider"] = { "n", 136641 },	-- Brann Bronzebeard
-							["coord"] = { 31.2, 46.7, 863 },	-- Nazmir
+							["coord"] = { 31.2, 46.7, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51129 },	-- Dubious Offering
 						}),
 						q(51168, {	-- Zealots of Zalamar
 							["provider"] = { "n", 136641 },	-- Brann Bronzebeard
-							["coord"] = { 31.2, 46.7, 863 },	-- Nazmir
+							["coord"] = { 31.2, 46.7, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								51167,	-- Blood of Hir'eek
@@ -290,25 +290,25 @@ _.ExpansionFeatures =
 						}),
 						q(51281, {	-- Zul'Nazman
 							["provider"] = { "n", 136432 },	-- Brann Bronzebeard
-							["coord"] = { 62.0, 41.5, 863 },	-- Nazmir
+							["coord"] = { 62.0, 41.5, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51169 },	-- Flight from the Fall
 						}),
 						q(51279, {	-- Nazmani Cultists
 							["provider"] = { "n", 136675 },	-- Brann Bronzebeard
-							["coord"] = { 49.9, 50.8, 863 },	-- Nazmir
+							["coord"] = { 49.9, 50.8, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51281 },	-- Zul'Nazman
 						}),
 						q(51280, {	-- Offerings to G'huun
 							["provider"] = { "n", 136675 },	-- Brann Bronzebeard
-							["coord"] = { 49.9, 50.8, 863 },	-- Nazmir
+							["coord"] = { 49.9, 50.8, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51281 },	-- Zul'Nazman
 						}),
 						q(51282, {	-- Captain Conrad
 							["provider"] = { "n", 136675 },	-- Brann Bronzebeard
-							["coord"] = { 45.7, 57.4, 863 },	-- Nazmir
+							["coord"] = { 45.7, 57.4, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								51279,	-- Nazmani Cultists
@@ -317,13 +317,13 @@ _.ExpansionFeatures =
 						}),
 						q(51177, {	-- Lessons of the Damned
 							["provider"] = { "n", 136568 },	-- Captain Conrad
-							["coord"] = { 45.0, 57.2, 863 },	-- Nazmir
+							["coord"] = { 45.0, 57.2, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51282 },	-- Captain Conrad
 						}),
 						q(52013, {	-- Champion: John J. Keeshan
 							["provider"] = { "n", 139609 },	-- John J. Keeshan
-							["coord"] = { 61.8, 41.3, 863 },	-- Nazmir
+							["coord"] = { 61.8, 41.3, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51177 },	-- Lessons of the Damned
 							["g"] = {
@@ -332,7 +332,7 @@ _.ExpansionFeatures =
 						}),
 						q(51967, {	-- Return to Boralus (Nazmir)
 							["sourceQuests"] = { 52013 },	-- Champion: John J. Keeshan
-							["coord"] = { 62.0, 41.5, 863 },	-- Nazmir
+							["coord"] = { 62.0, 41.5, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 136432 },	-- Brann Bronzebeard
 						}),
@@ -678,19 +678,19 @@ _.ExpansionFeatures =
 						q(52150, {	-- How to Kill a Dark Ranger
 							["sourceQuests"] = { 52147 },	-- Crippling the Horde
 							["provider"] = { "n", 140258 },	-- Shandris Feathermoon
-							["coord"] = { 61.9, 41.1, 863 },	-- Nazmir
+							["coord"] = { 61.9, 41.1, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(52156, {	-- Tortollans in Distress
 							["sourceQuests"] = { 52150 },	-- How to Kill a Dark Ranger
 							["provider"] = { "n", 140258 },	-- Shandris Feathermoon
-							["coord"] = { 61.9, 41.2, 863 },	-- Nazmir
+							["coord"] = { 61.9, 41.2, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(52158, {	-- The Savage Hunt
 							["sourceQuests"] = { 52150 },	-- How to Kill a Dark Ranger
 							["provider"] = { "n", 139609 },	-- John J. Keeshan
-							["coord"] = { 61.8, 41.3, 863 },	-- Nazmir
+							["coord"] = { 61.8, 41.3, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(52170, {	-- Ending Areiel
@@ -699,12 +699,12 @@ _.ExpansionFeatures =
 								52156,	-- Tortollans in Distress
 							},
 							["provider"] = { "n", 140258 },	-- Shandris Feathermoon
-							["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
+							["coord"] = { 51.2, 21.8, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(52171, {	-- One Option: Fire
 							["provider"] = { "n", 139609 },	-- John J. Keeshan
-							["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
+							["coord"] = { 51.2, 21.8, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52158,	-- The Savage Hunt
@@ -713,7 +713,7 @@ _.ExpansionFeatures =
 						}),
 						q(52172, {	-- They Can't Stay Here
 							["provider"] = { "n", 139609 },	-- John J. Keeshan
-							["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
+							["coord"] = { 51.2, 21.8, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52158,	-- The Savage Hunt
@@ -722,7 +722,7 @@ _.ExpansionFeatures =
 						}),
 						q(52208, {	-- Meeting of the Minds
 							["provider"] = { "n", 140258 },	-- Shandris Feathermoon
-							["coord"] = { 51.2, 21.8, 863 },	-- Nazmir
+							["coord"] = { 51.2, 21.8, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								52170,	-- Ending Areiel
@@ -732,7 +732,7 @@ _.ExpansionFeatures =
 						}),
 						q(52219, {	-- Target: Blood Prince Dreven
 							["provider"] = { "n", 140519 },	-- Shandris Feathermoon
-							["coord"] = { 42.1, 39.7, 863 },	-- Nazmir
+							["coord"] = { 42.1, 39.7, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52208 },	-- Meeting of the Minds
 						}),
@@ -1271,19 +1271,19 @@ _.ExpansionFeatures =
 					--	HE WHO WALKS IN THE LIGHT STARTS HERE
 						q(54310, {	-- Repurposing Their Village
 							["provider"] = { "n", 147842 },	-- Lady Jaina Proudmoore
-							["coord"] = { 30.9, 29.5, 863 },	-- Nazmir
+							["coord"] = { 30.9, 29.5, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54303 },	-- The March to Nazmir
 						}),
 						q(54404, {	-- Dark Iron Machinations
 							["provider"] = { "n", 147843 },	-- Master Mathias Shaw
-							["coord"] = { 30.9, 29.5, 863 },	-- Nazmir
+							["coord"] = { 30.9, 29.5, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54303 },	-- The March to Nazmir
 						}),
 						q(54312, {	-- Fog of War
 							["provider"] = { "n", 147844 },	-- Blademaster Telaamon
-							["coord"] = { 33.3, 45.9, 863 },	-- Nazmir
+							["coord"] = { 33.3, 45.9, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								54404,	-- Dark Iron Machinations
@@ -1292,37 +1292,37 @@ _.ExpansionFeatures =
 						}),
 						q(54407, {	-- Lurking in the Swamp
 							["provider"] = { "n", 147842 },	-- Lady Jaina Proudmoore
-							["coord"] = { 33.6, 47.7, 863 },	-- Nazmir
+							["coord"] = { 33.6, 47.7, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54312 },	-- Fog of War
 						}),
 						q(54412, {	-- Zul'jan Deluge
 							["provider"] = { "n", 147842 },	-- Lady Jaina Proudmoore
-							["coord"] = { 35.7, 68.1, 863 },	-- Nazmir
+							["coord"] = { 35.7, 68.1, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54407 },	-- Lurking in the Swamp
 						}),
 						q(54417, {	-- Showing Our Might
 							["provider"] = { "n", 147842 },	-- Lady Jaina Proudmoore
-							["coord"] = { 44.2, 78.8, 863 },	-- Nazmir
+							["coord"] = { 44.2, 78.8, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54412 },	-- Zul'jan Deluge
 						}),
 						q(54421, {	-- Taming their Beasts
 							["provider"] = { "n", 147843 },	-- Master Mathias Shaw
-							["coord"] = { 44.2, 78.6, 863 },	-- Nazmir
+							["coord"] = { 44.2, 78.6, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54412 },	-- Zul'jan Deluge
 						}),
 						q(54418, {	-- The Mech of Death
 							["provider"] = { "n", 147844 },	-- Blademaster Telaamon
-							["coord"] = { 44.2, 78.6, 863 },	-- Nazmir
+							["coord"] = { 44.2, 78.6, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54412 },	-- Zul'jan Deluge
 						}),
 						q(54441, {	-- Taking the Blood Gate
 							["provider"] = { "n", 147842 },	-- Lady Jaina Proudmoore
-							["coord"] = { 50.4, 84.1, 863 },	-- Nazmir
+							["coord"] = { 50.4, 84.1, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								54417,	-- Showing Our Might
@@ -1332,7 +1332,7 @@ _.ExpansionFeatures =
 						}),
 						q(54459, {	-- He Who Walks in the Light
 							["provider"] = { "n", 147842 },	-- Lady Jaina Proudmoore
-							["coord"] = { 50.4, 84.1, 863 },	-- Nazmir
+							["coord"] = { 50.4, 84.1, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54441 },	-- Taking the Blood Gate
 						}),

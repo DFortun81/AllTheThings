@@ -425,7 +425,7 @@ _.ExpansionFeatures =
 				}),
 				i(163619, {	-- Golden Beetle [Horde]
 					["description"] = "|CFFFF0000Turn in to Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
-					["coord"] = { 75.6, 56.6, 863 },
+					["coord"] = { 75.6, 56.6, NAZMIR },
 					["g"] = {
 						q(53114, {	-- Golden Beetle
 							["repeatable"] = true,

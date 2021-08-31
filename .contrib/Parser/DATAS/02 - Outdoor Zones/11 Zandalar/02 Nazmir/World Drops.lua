@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(863, {	-- Nazmir
+		m(NAZMIR, {
 			n(-226,    {	-- World Drops
 				["maps"] = {
 					STORMSONG_VALLEY,	-- During Assaults

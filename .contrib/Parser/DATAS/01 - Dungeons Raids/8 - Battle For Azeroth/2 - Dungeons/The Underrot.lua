@@ -4,7 +4,7 @@
 
 _.Instances = { tier(BFA_TIER, {
 	inst(1022, {	-- The Underrot
-		["coord"] = { 51.6, 65.3, 863 },
+		["coord"] = { 51.6, 65.3, NAZMIR },
 		["maps"] = {
 			1041,	-- The Underot
 			1042,	-- Ruin's Descent

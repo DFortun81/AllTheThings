@@ -12,7 +12,7 @@ _.Secrets =
 			FROSTFIRE_RIDGE,
 			BROKEN_SHORE,
 			ZULDAZAR,
-			863,
+			NAZMIR,
 			864,
 			875,
 			TIRAGARDE_SOUND,
@@ -24,7 +24,7 @@ _.Secrets =
 			o(293849, {	-- Step 1: Conspicuous Note
 				["model"] = 1661948,
 				["questID"] = 52819,
-				["coord"] = { 51.8, 59.0, 863 },	-- Conspicuous Note
+				["coord"] = { 51.8, 59.0, NAZMIR },	-- Conspicuous Note
 				["description"] = "|cFFFFFFFFStep 1:|r Head to Nazmir.  The note is high up on the side of the temple in the middle of the zone.  If you don't have flying, you can access the top of the temple via a bridge that starts at |cFFFFFFFF46.3, 53.9|r.\n\nThe note reads: \"Begin at the beginning\"\n",
 			}),
 			o(293837, {	-- Step 2: First Ordinary Pebble
@@ -80,7 +80,7 @@ _.Secrets =
 				["modelScale"] = .5,
 				["questID"] = 52814,
 				["coords"] = {
-					{ 39.8, 4.0, 863 },	-- Starting location
+					{ 39.8, 4.0, NAZMIR },	-- Starting location
 					{ 54.5, 7.3, 875 },	-- Ordinary Pebble
 				},
 				["sourceQuest"] = 52815,	-- Step 7: Sixth Ordinary Pebble

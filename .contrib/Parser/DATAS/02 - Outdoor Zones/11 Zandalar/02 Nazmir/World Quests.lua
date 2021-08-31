@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(863, {	-- Nazmir
+		m(NAZMIR, {
 			n(-34,  {	-- World Quests
 				n(QUESTS, {
 					q(51131, {	-- Absolutely Barbaric (A)
@@ -445,7 +445,7 @@ _.Zones =
 							n(128610, {	-- Maw of Shul-Nagruth
 								["description"] = "This rare is only up when its associated world quest is active.",
 								["questID"] = 50467,
-								["coord"] = { 49.8, 67.0, 863 },
+								["coord"] = { 49.8, 67.0, NAZMIR },
 								["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(160973),	-- Accursed Tuskwand
 								}),
@@ -698,7 +698,7 @@ _.Zones =
 						{"select", "itemID", 166672},	-- Bloodhunter's Drape
 						{"finalize"},	-- Push the items to the finalized list.
 
-						{"select", "mapID", 863},	-- Tiragarde Sound
+						{"select", "mapID", NAZMIR},
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "headerID", -34 },	-- Select the World Quests Header.
 						{"pop"},	-- Discard the World Quests Header and acquire the children.

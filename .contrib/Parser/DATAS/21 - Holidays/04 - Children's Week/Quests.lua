@@ -1418,14 +1418,14 @@ _.Holidays =
 							131346,	-- Children's Week
 						},
 						["maps"] = {
-							863,	-- Nazmir
+							NAZMIR,
 							THE_GREAT_SEAL,	-- Dazar'alor
 							HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 							DAZARALOR,
 						},
 						["coords"] = {
-							{ 71.18, 49.19, 863 },	-- Path Starts
-							{ 73.26, 53.42, 863 },	-- The Frogmarsh
+							{ 71.18, 49.19, NAZMIR },	-- Path Starts
+							{ 73.26, 53.42, NAZMIR },	-- The Frogmarsh
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,

@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(863, {	-- Nazmir
+		m(NAZMIR, {
 			n(VENDORS, {
 				n(126833, {	-- Blind Wunja <Medicine Woman>
-					["coord"] = { 35.4, 55.2, 863 },
+					["coord"] = { 35.4, 55.2, NAZMIR },
 					["g"] = {
 						i(163506, {	-- Accursed Hexxer (PET!)
 							["sourceQuests"] = { 50976 },	-- An Ancient Curse
@@ -23,7 +23,7 @@ _.Zones =
 					},
 				}),
 				n(148810, {	-- Gottum <Da Frogman>
-					["coord"] = { 71.2, 55.5, 863 },
+					["coord"] = { 71.2, 55.5, NAZMIR },
 					["g"] = {
 						i(166442, {	-- Blue Marsh Hopper
 							["cost"] = 3333330000,	-- 333,333g
@@ -38,7 +38,7 @@ _.Zones =
 				}),
 				n(135459, {	-- Provisioner Lija <Talanji's Expedition Emissary>
 					["races"] = HORDE_ONLY,
-					["coord"] = { 39.1, 79.4, 863 },
+					["coord"] = { 39.1, 79.4, NAZMIR },
 					["g"] = {
 						i(165242, {	-- Bracers of the Swamp Hunter
 							["cost"] = 14000000,	-- 1,400g
@@ -150,7 +150,7 @@ _.Zones =
 						47998,	-- Killing Cannibals
 						47925,	-- Shoak's on the Menu
 					},
-					["coord"] = { 66.9, 42.0, 863 },
+					["coord"] = { 66.9, 42.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(163506, {	-- Accursed Hexxer

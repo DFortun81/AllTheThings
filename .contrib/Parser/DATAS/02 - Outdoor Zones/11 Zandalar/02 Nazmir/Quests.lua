@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(863, {	-- Nazmir
+		m(NAZMIR, {
 			n(QUESTS, {
 				-- TODO: shit that needs solving:
 				-- *someting* unlocks "into the darkness" other than the pre-nazmir questline that starts from the dazar'alor scouting map.  it was already available with no prereqs when i was in the middle of questing through zuldazar.  figure out what quest triggers its availability, and figure out if it makes the scouting map questline invalid/if those should all be marked as breadcrumbs or with altQuests.
@@ -20,19 +20,19 @@ _.Zones =
 					["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 131993 },	-- Yash
-					["coord"] = { 66.9, 41.9, 863 },
+					["coord"] = { 66.9, 41.9, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47244, {	-- A Culling of Souls
 					["sourceQuests"] = { 47241 },	-- The Shadow of Death
 					["provider"] = { "n", 122102 },	-- Hanzabu
-					["coord"] = { 36.6, 54.0, 863 },
+					["coord"] = { 36.6, 54.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49348, {	-- A Desecrated Temple
 					["sourceQuests"] = { 47880 },	-- A Tribute for Death
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
-					["coord"] = { 39.5, 24.7, 863 },
+					["coord"] = { 39.5, 24.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47493, {	-- A Lonely Spirit
@@ -43,13 +43,13 @@ _.Zones =
 						47491,	-- Remnants of the Damned
 					},
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
-					["coord"] = { 39.5, 24.7, 863 },
+					["coord"] = { 39.5, 24.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47622, {	-- A Magical Glow
 					["sourceQuests"] = { 47623 },	-- The Last Witch Doctor of Krag'wa
 					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
-					["coord"] = { 75.3, 56.4, 863 },
+					["coord"] = { 75.3, 56.4, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(158972),	-- Alluring Glowfly Lantern
@@ -59,7 +59,7 @@ _.Zones =
 				q(50085, {	-- A Message of Blood and Fire
 					["sourceQuests"] = { 50083 },	-- The Crawg Ma'da
 					["provider"] = { "n", 133338 },	-- Rokhan
-					["coord"] = { 48.3, 53.4, 863 },
+					["coord"] = { 48.3, 53.4, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(54964, {	-- A One-Way Ticket to the Heart
@@ -72,31 +72,31 @@ _.Zones =
 					--	SQ needs confirmation.  i didn't see it until after i finished "staying hidden" and picked up the next 2 quests for the area, but maybe it opens sooner.  was NOT available with 0 prereqs prior to starting dazar'alor.
 					["sourceQuests"] = { 47525 },	-- Staying Hidden
 					["provider"] = { "n", 126039 },	-- Mag'ash the Poisonous
-					["coord"] = { 69.1, 50.4, 863 },
+					["coord"] = { 69.1, 50.4, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47263, {	-- A Time of Revelation
 					["sourceQuests"] = { 47262 },	-- Ending the Blood Trolls
 					["provider"] = { "n", 130844 },	-- Princess Talanji
-					["coord"] = { 45.2, 71.1, 863 },
+					["coord"] = { 45.2, 71.1, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47880, {	-- A Tribute for Death
 					["sourceQuests"] = { 47868 },	-- The Necropolis
 					["provider"] = { "n", 124513 },	-- Hanzabu
-					["coord"] = { 39.5, 32.6, 863 },
+					["coord"] = { 39.5, 32.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47621, {	-- A True Loa Feast
 					["sourceQuests"] = { 47623 },	-- The Last Witch Doctor of Krag'wa
 					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
-					["coord"] = { 75.3, 56.4, 863 },
+					["coord"] = { 75.3, 56.4, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49366, {	-- Aid the Wounded
 					["sourceQuests"] = { 50934 },	-- A Chance Sighting
 					["provider"] = { "o", 278197 },	-- Vial of Antidote
-					["coord"] = { 64.0, 50.3, 863 },
+					["coord"] = { 64.0, 50.3, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48857, {	-- All Hope is Lost
@@ -105,22 +105,22 @@ _.Zones =
 						48823,	-- Projection Destruction
 					},
 					["provider"] = { "n", 127212 },	-- Ka'dran
-					["coord"] = { 30.9, 52.0, 863 },
+					["coord"] = { 30.9, 52.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50976, {	-- An Ancient Curse
 					["provider"] = { "o", 287081 },	-- Ancient Tablet
-					["coord"] = { 52.9, 75.9, 863 },
+					["coord"] = { 52.9, 75.9, NAZMIR },
 				}),
 				q(50933, {	-- An Unfortunate Event
 					["provider"] = { "n", 135784 },	-- Imperial Guard
-					["coord"] = { 29.2, 52.0, 863 },
+					["coord"] = { 29.2, 52.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50087, {	-- Ateena's Fall
 					["sourceQuests"] = { 52073 },	-- Petitioning Krag'wa
 					["provider"] = { "n", 133476 },	-- Princess Talanji
-					["coord"] = { 49.3, 57.1, 863 },
+					["coord"] = { 49.3, 57.1, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(-862, {	-- Hearth of Azeroth
@@ -149,19 +149,19 @@ _.Zones =
 				q(49380, {	-- Bad Juju
 					["sourceQuests"] = { 49366 },	-- Aid the Wounded
 					["provider"] = { "n", 129165 },	-- Guard Satao
-					["coord"] = { 63.1, 52.6, 863 },
+					["coord"] = { 63.1, 52.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49779, {	-- Bad to the Bone
 					["sourceQuests"] = { 49778 },	-- Don't Go into the Light
 					["provider"] = { "n", 130930 },	-- Zaluto
-					["coord"] = { 24.1, 53.2, 863 },
+					["coord"] = { 24.1, 53.2, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49067, {	-- Beseeching Bwonsamdi
 					["sourceQuests"] = { 49064 },	-- Torga, the Turtle Loa
 					["provider"] = { "n", 127961 },	-- Princess Talanji
-					["coord"] = { 56.5, 26.7, 863 },
+					["coord"] = { 56.5, 26.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49950, {	-- Blood Purification
@@ -171,13 +171,13 @@ _.Zones =
 						49937,	-- Recovering Remnants
 					},
 					["provider"] = { "n", 133941 },	-- Minor Corruption
-					["coord"] = { 69.2, 33.7, 863 },
+					["coord"] = { 69.2, 33.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49440, {	-- Blood Troll on the Outside
 					["sourceQuests"] = { 49278 },	-- Spiritual Restoration
 					["provider"] = { "n", 122795 },	-- Witch Doctor Kejabu
-					["coord"] = { 39.5, 43.9, 863 },
+					["coord"] = { 39.5, 43.9, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49941, {	-- Bone Procession
@@ -187,7 +187,7 @@ _.Zones =
 						49937,	-- Recovering Remnants
 					},
 					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 68.6, 35.0, 863 },
+					["coord"] = { 68.6, 35.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159078),	-- Potency Manipulator
@@ -199,7 +199,7 @@ _.Zones =
 						48473,	-- Respecting the Rites
 					},
 					["provider"] = { "n", 126079 },	-- Koj'jun Deathwalker
-					["coord"] = { 38.9, 59.9, 863 },
+					["coord"] = { 38.9, 59.9, NAZMIR },
 				}),
 				q(50079, {	-- Boom goes the Bomb
 					["sourceQuests"] = {
@@ -207,12 +207,12 @@ _.Zones =
 						50078,	-- Undying Totems
 					},
 					["provider"] = { "n", 132988 },	-- Patch
-					["coord"] = { 44.9, 68.3, 863 },
+					["coord"] = { 44.9, 68.3, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48468, {	-- Bwonsamdi's Deliverance
 					["provider"] = { "n", 130481 },	-- Shinga Deathwalker
-					["coord"] = { 39.0, 59.9, 863 },
+					["coord"] = { 39.0, 59.9, NAZMIR },
 				}),
 				q(49781, {	-- Catch Me if you Can
 					["sourceQuests"] = {
@@ -220,7 +220,7 @@ _.Zones =
 						49780,	-- Recovering Ancient Fire
 					},
 					["provider"] = { "n", 130930 },	-- Zaluto
-					["coord"] = { 24.1, 53.2, 863 },
+					["coord"] = { 24.1, 53.2, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155556),	-- Jin'Tiki's Signet
@@ -236,13 +236,13 @@ _.Zones =
 						47250,	-- We'll Meet Again
 					},
 					["provider"] = { "n", 127961 },	-- Princess Talanji
-					["coord"] = { 39.4, 44.0, 863 },
+					["coord"] = { 39.4, 44.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49080, {	-- Cease all Summoning
 					["sourceQuests"] = { 49067 },	-- Beseeching Bwonsamdi
 					["provider"] = { "n", 127961 },	-- Princess Talanji
-					["coord"] = { 56.5, 26.7, 863 },
+					["coord"] = { 56.5, 26.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(158981),	-- Death-Pledged Footguards
@@ -258,7 +258,7 @@ _.Zones =
 						48823,	-- Projection Destruction
 					},
 					["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
-					["coord"] = { 31.0, 52.0, 863 },
+					["coord"] = { 31.0, 52.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49980, {	-- Containment Procedure
@@ -268,7 +268,7 @@ _.Zones =
 						49956,	-- Void is Prohibited
 					},
 					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 72.5, 29.4, 863 },
+					["coord"] = { 72.5, 29.4, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159088),	-- Nazmani Hexblade
@@ -284,25 +284,25 @@ _.Zones =
 				q(49938, {	-- Corrupted Earth
 					["sourceQuests"] = { 49932 },	-- Slumber No More
 					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 66.9, 38.8, 863 },
+					["coord"] = { 66.9, 38.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49379, {	-- Crawg Free Zone
 					["sourceQuests"] = { 49370 },	-- Rescue the Chronicler
 					["provider"] = { "n", 129164 },	-- Chronicler Jabari
-					["coord"] = { 62.7, 53.5, 863 },
+					["coord"] = { 62.7, 53.5, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48573, {	-- Crocolisk Life
 					["sourceQuests"] = { 48669 },	-- Urok, Terror of the Wetlands
 					["provider"] = { "n", 126713 },	-- Sur'jan
-					["coord"] = { 38.8, 77.7, 863 },
+					["coord"] = { 38.8, 77.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49132, {	-- Crushing the Skullcrushers
 					["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
 					["provider"] = { "n", 127960 },	-- Lashk
-					["coord"] = { 58.5, 13.8, 863 },
+					["coord"] = { 58.5, 13.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49479, {	-- Didn't Stop to Think if They Should
@@ -312,7 +312,7 @@ _.Zones =
 						48497,	-- Show of Force
 					},
 					["provider"] = { "n", 126346 },	-- Chadwick Paxton
-					["coord"] = { 25.9, 36.1, 863 },
+					["coord"] = { 25.9, 36.1, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49778, {	-- Don't Go into the Light
@@ -322,7 +322,7 @@ _.Zones =
 						49774,	-- Won't Leaf Him to Die
 					},
 					["provider"] = { "n", 131231 },	-- Jin'Tiki
-					["coord"] = { 24.1, 53.1, 863 },
+					["coord"] = { 24.1, 53.1, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49569, {	-- Down by the Riverside
@@ -331,19 +331,19 @@ _.Zones =
 						49985,	-- Return to Gloom Hollow
 					},
 					["provider"] = { "n", 126213 },	-- Princess Talanji
-					["coord"] = { 67.4, 42.2, 863 },
+					["coord"] = { 67.4, 42.2, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49071, {	-- Dreadtick Combustion
 					["sourceQuests"] = { 49067 },	-- Beseeching Bwonsamdi
 					["provider"] = { "n", 127960 },	-- Lashk
-					["coord"] = { 56.5, 26.7, 863 },
+					["coord"] = { 56.5, 26.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49378, {	-- Earn Their Trust
 					["sourceQuests"] = { 49370 },	-- Rescue the Chronicler
 					["provider"] = { "n", 129164 },	-- Chronicler Jabari
-					["coord"] = { 62.7, 53.5, 863 },
+					["coord"] = { 62.7, 53.5, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47262, {	-- Ending the Blood Trolls
@@ -352,13 +352,13 @@ _.Zones =
 						47130,	-- Improper Burial
 					},
 					["provider"] = { "n", 121241 },	-- Princess Talanji
-					["coord"] = { 45.6, 74.8, 863 },
+					["coord"] = { 45.6, 74.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47660, {	-- Fallen Idols
 					["sourceQuests"] = { 47525 },	-- Staying Hidden
 					["provider"] = { "n", 124376 },	-- Witch Doctor Zentimo
-					["coord"] = { 68.6, 46.6, 863 },
+					["coord"] = { 68.6, 46.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47601, {	-- Field Evaluation
@@ -380,7 +380,7 @@ _.Zones =
 				q(49126, {	-- Forcing Fate's Hand
 					["sourceQuests"] = { 49125 },	-- Negative Blood
 					["provider"] = { "n", 127958 },	-- Kisha
-					["coord"] = { 65.6, 17.9, 863 },
+					["coord"] = { 65.6, 17.9, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(158973),	-- Band of Destiny
@@ -389,20 +389,20 @@ _.Zones =
 				q(48492, {	-- Getting a Leg Up
 					["sourceQuests"] = { 49477 },	-- Surprise Backup
 					["provider"] = { "n", 126289 },	-- Chadwick Paxton (with no legs)
-					["coord"] = { 28.6, 43.8, 863 },
+					["coord"] = { 28.6, 43.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47245, {	-- Getting the Message
 					["sourceQuests"] = { 49902 },	-- To Gloom Hollow
 					["provider"] = { "n", 131213 },	-- Rokhan
-					["coord"] = { 67.3, 42.3, 863 },
+					["coord"] = { 67.3, 42.3, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50808, {	-- Halting the Empire's Fall
 					--	is this a breadcrumb?
 					["sourceQuests"] = { 51244 },	-- What Rots Beneath
 					["provider"] = { "n", 137113 },	-- Rokhan
-					["coord"] = { 51.8, 65.5, 863 },
+					["coord"] = { 51.8, 65.5, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47711, {	-- Head of the Viper
@@ -411,7 +411,7 @@ _.Zones =
 						47597,	-- No Goblin Left Behind
 					},
 					["provider"] = { "n", 123544 },	-- Patch
-					["coord"] = { 82.3, 27.2, 863 },
+					["coord"] = { 82.3, 27.2, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49079, {	-- Hir'eek, the Bat Loa
@@ -420,19 +420,19 @@ _.Zones =
 						48800,	-- Mark of the Bat
 					},
 					["provider"] = { "n", 129378 },	-- Jo'chunga
-					["coord"] = { 33.3, 45.8, 863 },
+					["coord"] = { 33.3, 45.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48890, {	-- How to Be a Blood Troll
 					["sourceQuests"] = { 48699 },	-- Sneaking into Zalamar
 					["provider"] = { "n", 127391 },	-- Bloodseeker Jo'chunga
-					["coord"] = { 33.3, 45.8, 863 },
+					["coord"] = { 33.3, 45.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49935, {	-- How to Repair a Titan Keeper
 					["sourceQuests"] = { 49932 },	-- Slumber No More
 					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 66.9, 38.8, 863 },
+					["coord"] = { 66.9, 38.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48855, {	-- Humbling the Terrors
@@ -441,7 +441,7 @@ _.Zones =
 						48823,	-- Projection Destruction
 					},
 					["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
-					["coord"] = { 31.0, 52.0, 863 },
+					["coord"] = { 31.0, 52.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47659, {	-- Hunt the Hunter
@@ -461,13 +461,13 @@ _.Zones =
 					["sourceQuests"] = { 47250 },	-- We'll Meet Again
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 122795 },	-- Witch Doctor Kejabu
-					["coord"] = { 39.5, 43.8, 863 },
+					["coord"] = { 39.5, 43.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47130, {	-- Improper Burial
 					["sourceQuests"] = { 47105 },	-- Into The Darkness
 					["provider"] = { "n", 121241 },	-- Princess Talanji
-					["coord"] = { 47.2, 79.8, 863 },
+					["coord"] = { 47.2, 79.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155322),	-- Death-Pledged Gauntlets
@@ -484,7 +484,7 @@ _.Zones =
 				q(47105, {	-- Into The Darkness
 					["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
 					["provider"] = { "n", 120904 },	-- Princess Talanji
-					["coord"] = { 43.0, 86.0, 863 },
+					["coord"] = { 43.0, 86.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 
@@ -492,7 +492,7 @@ _.Zones =
 				q(48801, {	-- Isolating Zalamar
 					["sourceQuests"] = { 48699 },	-- Sneaking into Zalamar
 					["provider"] = { "n", 127391 },	-- Bloodseeker Jo'chunga
-					["coord"] = { 33.3, 45.8, 863 },
+					["coord"] = { 33.3, 45.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49382, {	-- It Seems You've Made a Friend
@@ -504,7 +504,7 @@ _.Zones =
 						49377,	-- Off With Her Head
 					},
 					["provider"] = { "n", 129164 },	-- Chronicler Jabari
-					["coord"] = { 63.1, 52.7, 863 },
+					["coord"] = { 63.1, 52.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(156566),	-- Dart (PET!)
@@ -517,13 +517,13 @@ _.Zones =
 						49130,	-- Loa-Free Diet
 					},
 					["provider"] = { "n", 127961 },	-- Princess Talanji
-					["coord"] = { 56.5, 26.7, 863 },
+					["coord"] = { 56.5, 26.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47919, {	-- Just Say No to Cannibalism
 					["sourceQuests"] = { 47924 },	-- Profanity Filter
 					["provider"] = { "n", 125024 },	-- Kajosh
-					["coord"] = { 51.7, 33.2, 863 },
+					["coord"] = { 51.7, 33.2, NAZMIR },
 				}),
 				q(48478, {	-- Kel'vax's Home
 					["sourceQuests"] = {
@@ -531,7 +531,7 @@ _.Zones =
 						48473,	-- Respecting the Rites
 					},
 					["provider"] = { "n", 126080 },	-- Shinga Deathwalker
-					["coord"] = { 39.0, 59.9, 863 },
+					["coord"] = { 39.0, 59.9, NAZMIR },
 					["g"] = {	-- quest is neutral, but rewards are Horde-only
 						i(158943, {	-- Nazmani Warplate Treads
 							["races"] = HORDE_ONLY,
@@ -562,23 +562,23 @@ _.Zones =
 				q(47998, {	-- Killing Cannibals
 					["sourceQuests"] = { 47924 },	-- Profanity Filter
 					["provider"] = { "n", 124933 },	-- Kajosh
-					["coord"] = { 51.7, 33.2, 863 },
+					["coord"] = { 51.7, 33.2, NAZMIR },
 				}),
 				q(47697, {	-- Krag'wa's Aid
 					["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
 					["provider"] = { "n", 124641 },	-- Shadow Hunter Mutumba
-					["coord"] = { 75.1, 56.5, 863 },
+					["coord"] = { 75.1, 56.5, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48090, {	-- Krag'wa's Chosen
 					["provider"] = { "n", 125317 },	-- Shadow Hunter Narez
-					["coord"] = { 77.7, 53.2, 863 },
+					["coord"] = { 77.7, 53.2, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47696, {	-- Krag'wa the Terrible
 					["sourceQuests"] = { 47540 },	-- Totemic Restoration
 					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
-					["coord"] = { 75.3, 56.4, 863 },
+					["coord"] = { 75.3, 56.4, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159015),	-- Death-Pledged Boots
@@ -595,13 +595,13 @@ _.Zones =
 				q(47264, {	-- Leave None Standing
 					["sourceQuests"] = { 47105 },	-- Into The Darkness
 					["provider"] = { "n", 130844 },	-- Princess Talanji
-					["coord"] = { 47.2, 79.8, 863 },
+					["coord"] = { 47.2, 79.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49130, {	-- Loa-Free Diet
 					["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
 					["provider"] = { "n", 127958 },	-- Kisha
-					["coord"] = { 58.5, 13.8, 863 },
+					["coord"] = { 58.5, 13.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48800, {	-- Mark of the Bat
@@ -610,7 +610,7 @@ _.Zones =
 						48801,	-- Isolating Zalamar
 					},
 					["provider"] = { "n", 127391 },	-- Bloodseeker Jo'chunga
-					["coord"] = { 33.3, 45.8, 863 },
+					["coord"] = { 33.3, 45.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159075),	-- Bloodhex Talisman
@@ -627,7 +627,7 @@ _.Zones =
 						48578,	-- There's No Eye in Skyterror
 					},
 					["provider"] = { "n", 126713 },
-					["coord"] = { 34.0, 78.6, 863 },
+					["coord"] = { 34.0, 78.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(54940, {	-- Necessity is the MOTHER
@@ -639,25 +639,25 @@ _.Zones =
 				q(49125, {	-- Negative Blood
 					["sourceQuests"] = { 49120 },	-- Speaking with the Dead
 					["provider"] = { "n", 127958 },	-- Kisha
-					["coord"] = { 56.5, 26.7, 863 },
+					["coord"] = { 56.5, 26.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47597, {	-- No Goblin Left Behind
 					["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
 					["provider"] = { "n", 123178 },	-- Patch
-					["coord"] = { 74.5, 38.9, 863 },
+					["coord"] = { 74.5, 38.9, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48498, {	-- No Mercy for Sithis
 					["sourceQuests"] = { 48496 },	-- Reuniting the Company
 					["provider"] = { "n", 126377 },	-- Ingrid Bellix
-					["coord"] = { 26.6, 37.9, 863 },
+					["coord"] = { 26.6, 37.9, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49776, {	-- No Problem Tar Can't Solve
 					["sourceQuests"] = { 50933 },	-- An Unfortunate Event
 					["provider"] = { "n", 131231 },	-- Jin'Tiki
-					["coord"] = { 24.1, 53.1, 863 },
+					["coord"] = { 24.1, 53.1, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49955, {	-- Not Fit for This Plane
@@ -667,13 +667,13 @@ _.Zones =
 						49949,	-- Unwelcome Undead
 					},
 					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 68.6, 35.0, 863 },
+					["coord"] = { 68.6, 35.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49377, {	-- Off With Her Head
 					["sourceQuests"] = { 49366 },	-- Aid the Wounded
 					["provider"] = { "n", 129165 },	-- Guard Satao
-					["coord"] = { 63.1, 52.6, 863 },
+					["coord"] = { 63.1, 52.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159092),	-- Grim Ritual Mace
@@ -689,13 +689,13 @@ _.Zones =
 				q(48854, {	-- Offer of Power
 					["sourceQuests"] = { 49314 },	-- Hunting Zardrax
 					["provider"] = { "n", 127216 },	-- Zardrax the Empowerer
-					["coord"] = { 30.9, 52.0, 863 },
+					["coord"] = { 30.9, 52.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49777, {	-- On the Run
 					["sourceQuests"] = { 50933 },	-- An Unfortunate Event
 					["provider"] = { "n", 130930 },	-- Zaluto
-					["coord"] = { 24.1, 53.1, 863 },
+					["coord"] = { 24.1, 53.1, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48869, {	-- Payback's a Lich
@@ -705,7 +705,7 @@ _.Zones =
 						48855,	-- Humbling the Terrors
 					},
 					["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
-					["coord"] = { 30.9, 52.1, 863 },
+					["coord"] = { 30.9, 52.1, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155378),	-- Zardax's Tattered Drape
@@ -716,7 +716,7 @@ _.Zones =
 				q(52073, {	-- Petitioning Krag'wa
 					["sourceQuests"] = { 50082 },	-- Target of Opportunity
 					["provider"] = { "n", 133125 },	-- Princess Talanji
-					["coord"] = { 45.2, 60.5, 863 },
+					["coord"] = { 45.2, 60.5, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47598, {	-- Pilfering and Fencing
@@ -725,7 +725,7 @@ _.Zones =
 						47597,	-- No Goblin Left Behind
 					},
 					["provider"] = { "n", 123545 },	-- Newt
-					["coord"] = { 82.2, 27.3, 863 },
+					["coord"] = { 82.2, 27.3, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49078, {	-- Poisoning the Brood
@@ -734,18 +734,18 @@ _.Zones =
 						48801,	-- Isolating Zalamar
 					},
 					["provider"] = { "n", 127391 },	-- Bloodseeker Jo'chunga
-					["coord"] = { 33.3, 45.8, 863 },
+					["coord"] = { 33.3, 45.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48825, {	-- Power Denied
 					["sourceQuests"] = { 48854 },	-- Offer of Power
 					["provider"] = { "n", 127212 },	-- Kal'dran
-					["coord"] = { 30.9, 52.0, 863 },
+					["coord"] = { 30.9, 52.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47924, {	-- Profanity Filter
 					["provider"] = { "n", 124666 },	-- Kajosh
-					["coord"] = { 55.1, 36.7, 863 },
+					["coord"] = { 55.1, 36.7, NAZMIR },
 				}),
 				q(49957, {	-- Protocol Recovery
 					["sourceQuests"] = {
@@ -754,77 +754,77 @@ _.Zones =
 						49949,	-- Unwelcome Undead
 					},
 					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 68.6, 35.0, 863 },
+					["coord"] = { 68.6, 35.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48574, {	-- Pulling Fangs
 					["sourceQuests"] = { 48669 },	-- Urok, Terror of the Wetlands
 					["provider"] = { "n", 126713 },	-- Sur'jan
-					["coord"] = { 38.8, 77.7, 863 },
+					["coord"] = { 38.8, 77.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50076, {	-- Rally the Warriors
 					["sourceQuests"] = { 49569 },	-- Down by the Riverside
 					["provider"] = { "n", 121288 },	-- Princess Talanji
-					["coord"] = { 39.3, 78.1, 863 },
+					["coord"] = { 39.3, 78.1, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47602, {	-- Ready For Action
 					["sourceQuests"] = { 47601 },	-- Field Evaluation
 					["provider"] = { "n", 123878 },	-- Patch
-					["coord"] = { 81.4, 26.2, 863 },
+					["coord"] = { 81.4, 26.2, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49780, {	-- Recovering Ancient Fire
 					["sourceQuests"] = { 49778 },	-- Don't Go into the Light
 					["provider"] = { "n", 131231 },	-- Jin'Tiki
-					["coord"] = { 24.1, 53.1, 863 },
+					["coord"] = { 24.1, 53.1, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49937, {	-- Recovering Remnants
 					["sourceQuests"] = { 49932 },	-- Slumber No More
 					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 66.9, 38.8, 863 },
+					["coord"] = { 66.9, 38.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47491, {	-- Remnants of the Damned
 					["sourceQuests"] = { 47880 },	-- A Tribute for Death
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
-					["coord"] = { 39.5, 24.7, 863 },
+					["coord"] = { 39.5, 24.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47631, {	-- Rendezvous with the Libation
 					["sourceQuests"] = { 47245 },	-- Getting the Message
 					["provider"] = { "n", 131213 },	-- Rokhan
-					["coord"] = { 67.4, 42.4, 863 },
+					["coord"] = { 67.4, 42.4, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49370, {	-- Rescue the Chronicler
 					["sourceQuests"] = { 49366 },	-- Aid the Wounded
 					["provider"] = { "n", 129165 },	-- Guard Satao
-					["coord"] = { 63.1, 52.6, 863 },
+					["coord"] = { 63.1, 52.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48473, {	-- Respecting the Rites
 					["provider"] = { "n", 130481 },	-- Shinga Deathwalker
-					["coord"] = { 39.0, 59.9, 863 },
+					["coord"] = { 39.0, 59.9, NAZMIR },
 				}),
 				q(48499, {	-- Return to Dust
 					["sourceQuests"] = { 49479 },	-- Didn't Stop to Think if They Should
 					["provider"] = { "n", 126346 },	-- Chadwick Paxton
-					["coord"] = { 25.9, 36.1, 863 },
+					["coord"] = { 25.9, 36.1, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49985, {	-- Return to Gloom Hollow
 					["sourceQuests"] = { 49980 },	-- Containment Procedure
 					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 72.4, 29.3, 863 },
+					["coord"] = { 72.4, 29.3, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48496, {	-- Reuniting the Company
 					["sourceQuests"] = { 48492 },	-- Getting a Leg Up
 					["provider"] = { "n", 126346 },	-- Chadwick Paxton
-					["coord"] = { 28.6, 43.8, 863 },
+					["coord"] = { 28.6, 43.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(158950),	-- Death-Pledged Grips
@@ -840,7 +840,7 @@ _.Zones =
 				q(47599, {	-- Revenge: Served Hot
 					["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
 					["provider"] = { "n", 123436 },	-- Ticker
-					["coord"] = { 74.7, 39.0, 863 },
+					["coord"] = { 74.7, 39.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159002),	-- Death-Pledged Girdle
@@ -856,20 +856,20 @@ _.Zones =
 						48574,	-- Pulling Fangs
 					},
 					["provider"] = { "n", 126713 },	-- Sur'jan
-					["coord"] = { 34.0, 78.7, 863 },
+					["coord"] = { 34.0, 78.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49131, {	-- Sanctifying Ground
 					["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
 					["provider"] = { "n", 127961 },	-- Princess Talanji
-					["coord"] = { 58.5, 13.8, 863 },
+					["coord"] = { 58.5, 13.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47925, {	-- Shoak's on the Menu
 					["sourceQuests"] = { 47924 },	-- Profanity Filter
 					["description"] = "You must complete this storyline for Shoak to appear in Gloom Hollow.",
 					["provider"] = { "n", 125024 },	-- Kajosh
-					["coord"] = { 51.7, 33.2, 863 },
+					["coord"] = { 51.7, 33.2, NAZMIR },
 					["g"] = {
 						-- Quest can be completed by both factions but rewards are Horde only
 						i(158957, {	-- Death-Pledged Greaves
@@ -901,7 +901,7 @@ _.Zones =
 				q(48497, {	-- Show of Force
 					["sourceQuests"] = { 48492 },	-- Getting a Leg Up
 					["provider"] = { "n", 126346 },	-- Chadwick Paxton
-					["coord"] = { 28.6, 43.8, 863 },
+					["coord"] = { 28.6, 43.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49932, {	-- Slumber No More
@@ -910,13 +910,13 @@ _.Zones =
 						47602,	-- Ready For Action
 					},
 					["provider"] = { "n", 131978 },	-- Lashk
-					["coord"] = { 67.4, 41.9, 863 },
+					["coord"] = { 67.4, 41.9, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48699, {	-- Sneaking into Zalamar
 					["sourceQuests"] = { 49440 },	-- Blood Troll on the Outside
 					["provider"] = { "n", 122795 },	-- Witch Doctor Kejabu
-					["coord"] = { 39.6, 43.9, 863 },
+					["coord"] = { 39.6, 43.9, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47249, {	-- Soulbound
@@ -928,7 +928,7 @@ _.Zones =
 						--	47247,	-- That Which Haunts the Dead
 					},
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
-					["coord"] = { 39.5, 24.7, 863 },
+					["coord"] = { 39.5, 24.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155347),	-- Bloodrite Headchopper
@@ -944,7 +944,7 @@ _.Zones =
 				q(49070, {	-- Souls for the Death Loa
 					["sourceQuests"] = { 49067 },	-- Beseeching Bwonsamdi
 					["provider"] = { "n", 128096 },	-- Bwonsamdi
-					["coord"] = { 56.5, 26.7, 863 },
+					["coord"] = { 56.5, 26.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49120, {	-- Speaking with the Dead
@@ -954,13 +954,13 @@ _.Zones =
 						49070,	-- Souls for the Death Loa
 					},
 					["provider"] = { "n", 128096 },	-- Bwonsamdi
-					["coord"] = { 56.5, 26.7, 863 },
+					["coord"] = { 56.5, 26.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49278, {	-- Spiritual Restoration
 					["sourceQuests"] = { 47244 },	-- A Culling of Souls
 					["provider"] = { "n", 124428 },	-- Hanzabu
-					["coord"] = { 39.5, 43.9, 863 },
+					["coord"] = { 39.5, 43.9, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(153514),	-- Hanzabu's Charm
@@ -969,19 +969,19 @@ _.Zones =
 				q(47525, {	-- Staying Hidden
 					["sourceQuests"] = { 49902 },	-- To Gloom Hollow
 					["provider"] = { "n", 122991 },	-- Shadow Hunter Mutumba
-					["coord"] = { 67.3, 42.1, 863 },
+					["coord"] = { 67.3, 42.1, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(54939, {	-- Stubborn as a Bronzebeard
 					["sourceQuests"] = { 54938 },	-- A Brother's Help
 					["provider"] = { "n", 149867 },	-- Magni Bronzebeard
-					["coord"] = { 57.8, 50.4, 863 },
+					["coord"] = { 57.8, 50.4, NAZMIR },
 					["u"] = REMOVED_FROM_GAME, -- Retired with the implementation of 8.2
 				}),
 				q(49477, {	-- Surprise Backup
 					["isBreadcrumb"] = true,
 					["provider"] = { "o", 278577 },	-- Torn Horde Missive
-					["coord"] = { 34.0, 39.6, 863 },
+					["coord"] = { 34.0, 39.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50444, {	-- Taking the Loa Road
@@ -990,7 +990,7 @@ _.Zones =
 						47442,	-- Curse of Jani [Horde]
 					},
 					["provider"] = { "n", 136608 },	-- Jani
-					["coord"] = { 53.9, 74.1, 863 },
+					["coord"] = { 53.9, 74.1, NAZMIR },
 				}),
 				q(50082, {	-- Target of Opportunity
 					["sourceQuests"] = {
@@ -998,7 +998,7 @@ _.Zones =
 						50081,	-- The Road of Pain
 					},
 					["provider"] = { "n", 133125 },	-- Princess Talanji
-					["coord"] = { 44.1, 62.8, 863 },
+					["coord"] = { 44.1, 62.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(159025),	-- Nazmani Warplate Legplates
@@ -1018,13 +1018,13 @@ _.Zones =
 						48574,	-- Pulling Fangs
 					},
 					["provider"] = { "n", 126713 },	-- Sur'jan
-					["coord"] = { 34.0, 78.7, 863 },
+					["coord"] = { 34.0, 78.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47247, {	-- That Which Haunts the Dead
 					["sourceQuests"] = { 47880 },	-- A Tribute for Death
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
-					["coord"] = { 39.5, 24.7, 863 },
+					["coord"] = { 39.5, 24.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155338),	-- Death-Pledged Belt
@@ -1040,13 +1040,13 @@ _.Zones =
 				q(47188, {	-- The Aid of the Loa
 					["sourceQuests"] = { 47263 },	-- A Time of Revelation
 					["provider"] = { "n", 121288 },	-- Princess Talanji
-					["coord"] = { 39.2, 79.0, 863 },
+					["coord"] = { 39.2, 79.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50138, {	-- The Battle of Bloodfire Ravine
 					["sourceQuests"] = { 50076 },	-- Rally the Warriors
 					["provider"] = { "n", 121288 },	-- Princess Talanji
-					["coord"] = { 39.3, 77.6, 863 },
+					["coord"] = { 39.3, 77.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48584, {	-- The Blood of My Enemies
@@ -1056,13 +1056,13 @@ _.Zones =
 						48578,	-- There's No Eye in Skyterror
 					},
 					["provider"] = { "n", 126713 },
-					["coord"] = { 34.0, 78.6, 863 },
+					["coord"] = { 34.0, 78.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50083, {	-- The Crawg Ma'da
 					["sourceQuests"] = { 50082 },	-- Target of Opportunity
 					["provider"] = { "n", 133471 },	-- Rokhan
-					["coord"] = { 45.4, 58.6, 863 },
+					["coord"] = { 45.4, 58.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48480, {	-- The Fall of Kel'vax
@@ -1071,7 +1071,7 @@ _.Zones =
 						48478,	-- Kel'vax's Home
 					},
 					["provider"] = { "n", 126080 },	-- Shinga Deathwalker
-					["coord"] = { 39.0, 59.9, 863 },
+					["coord"] = { 39.0, 59.9, NAZMIR },
 				}),
 				q(49432, {	-- The Forlorn Soul
 					--	SQ needs verification.
@@ -1080,7 +1080,7 @@ _.Zones =
 						47493,	-- A Lonely Spirit (breadcrumb)
 					},
 					["provider"] = { "n", 126588 },	-- Keula
-					["coord"] = { 42.5, 31.3, 863 },
+					["coord"] = { 42.5, 31.3, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47623, {	-- The Last Witch Doctor of Krag'wa
@@ -1089,13 +1089,13 @@ _.Zones =
 						47660,	-- Fallen Idols
 					},
 					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
-					["coord"] = { 75.3, 56.3, 863 },
+					["coord"] = { 75.3, 56.3, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47868, {	-- The Necropolis
 					["sourceQuests"] = { 49278 },	-- Spiritual Restoration
 					["provider"] = { "n", 124428 },	-- Hanzabu
-					["coord"] = { 39.5, 43.9, 863 },
+					["coord"] = { 39.5, 43.9, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50081, {	-- The Road of Pain
@@ -1104,19 +1104,19 @@ _.Zones =
 						50078,	-- Undying Totems
 					},
 					["provider"] = { "n", 132333 },	-- Princess Talanji
-					["coord"] = { 44.9, 68.6, 863 },
+					["coord"] = { 44.9, 68.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47241, {	-- The Shadow of Death
 					["sourceQuests"] = { 47188 },	-- The Aid of the Loa
 					["provider"] = { "n", 121288 },	-- Princess Talanji
-					["coord"] = { 39.2, 79.0, 863 },
+					["coord"] = { 39.2, 79.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51302, {	-- The Underrot: Sealing G'huun's Corruption
 					["sourceQuests"] = { 51244 },	-- What Rots Beneath
 					["provider"] = { "n", 137112 },	-- Titan Keeper Hezrel
-					["coord"] = { 51.7, 65.7, 863 },
+					["coord"] = { 51.7, 65.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47596, {	-- There Is No Plan "B"
@@ -1125,7 +1125,7 @@ _.Zones =
 						47597,	-- No Goblin Left Behind
 					},
 					["provider"] = { "n", 123548 },	-- Ticker
-					["coord"] = { 82.3, 27.2, 863 },
+					["coord"] = { 82.3, 27.2, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48578, {	-- There's No Eye in Skyterror
@@ -1134,7 +1134,7 @@ _.Zones =
 						48574,	-- Pulling Fangs
 					},
 					["provider"] = { "n", 126713 },	-- Sur'jan
-					["coord"] = { 34.0, 78.7, 863 },
+					["coord"] = { 34.0, 78.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(155377),	-- Drained Bone Band
@@ -1145,19 +1145,19 @@ _.Zones =
 					--	SQ needs verification.
 					["sourceQuests"] = { 47880 },	-- A Tribute for Death
 					["provider"] = { "n", 122706 },	-- Theurgist Salazae
-					["coord"] = { 36.7, 27.4, 863 },
+					["coord"] = { 36.7, 27.4, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49902, {	-- To Gloom Hollow
 					["sourceQuests"] = { 49160 },	-- Torga's Eternal Return
 					["provider"] = { "n", 127958 },	-- Kisha
-					["coord"] = { 56.5, 26.7, 863 },
+					["coord"] = { 56.5, 26.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49081, {	-- To Kill a Loa
 					["sourceQuests"] = { 49079 },	-- Hir'eek, the Bat Loa
 					["provider"] = { "n", 128276 },	-- Jo'chunga
-					["coord"] = { 31.3, 46.8, 863 },
+					["coord"] = { 31.3, 46.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(-862, {	-- Hearth of Azeroth
@@ -1187,19 +1187,19 @@ _.Zones =
 					["sourceQuests"] = { 47697 },	-- Krag'wa's Aid
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
-					["coord"] = { 75.4, 56.6, 863 },
+					["coord"] = { 75.4, 56.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49064, {	-- Torga, the Turtle Loa
 					["sourceQuests"] = { 49185 },	-- Catching Up
 					["provider"] = { "n", 127960 },	-- Lashk
-					["coord"] = { 39.4, 44.0, 863 },
+					["coord"] = { 39.4, 44.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49160, {	-- Torga's Eternal Return
 					["sourceQuests"] = { 49136 },	-- Jungo, Herald of G'huun
 					["provider"] = { "n", 127960 },	-- Lashk
-					["coord"] = { 56.5, 26.7, 863 },
+					["coord"] = { 56.5, 26.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47540, {	-- Totemic Restoration
@@ -1208,13 +1208,13 @@ _.Zones =
 						47621,	-- A True Loa Feast
 					},
 					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
-					["coord"] = { 75.3, 56.4, 863 },
+					["coord"] = { 75.3, 56.4, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50078, {	-- Undying Totems
 					["sourceQuests"] = { 50076 },	-- Rally the Warriors
 					["provider"] = { "n", 132624 },	-- Zandalari War Priest
-					["coord"] = { 42.3, 72.5, 863 },
+					["coord"] = { 42.3, 72.5, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49949, {	-- Unwelcome Undead
@@ -1224,19 +1224,19 @@ _.Zones =
 						49937,	-- Recovering Remnants
 					},
 					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 68.6, 35.0, 863 },
+					["coord"] = { 68.6, 35.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49082, {	-- Upward and Onward
 					["sourceQuests"] = { 49081 },	-- To Kill a Loa
 					["provider"] = { "n", 128276 },	-- Jo'chunga
-					["coord"] = { 31.2, 46.7, 863 },
+					["coord"] = { 31.2, 46.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48669, {	-- Urok, Terror of the Wetlands
 					["sourceQuests"] = { 47188 },	-- The Aid of the Loa
 					["provider"] = { "n", 126713 },	-- Sur'jan
-					["coord"] = { 38.8, 77.7, 863 },
+					["coord"] = { 38.8, 77.7, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48591, {	-- Urok's True Death
@@ -1245,12 +1245,12 @@ _.Zones =
 						48584,	-- The Blood of My Enemies
 					},
 					["provider"] = { "n", 131872 },	-- Sur'jan
-					["coord"] = { 28.8, 72.5, 863 },
+					["coord"] = { 28.8, 72.5, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48092, {	-- Vengeance of the Frogs
 					["provider"] = { "n", 125317 },	-- Shadow Hunter Narez
-					["coord"] = { 77.7, 53.2, 863 },
+					["coord"] = { 77.7, 53.2, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49956, {	-- Void is Prohibited
@@ -1260,66 +1260,66 @@ _.Zones =
 						49949,	-- Unwelcome Undead
 					},
 					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 68.6, 35.0, 863 },
+					["coord"] = { 68.6, 35.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(52480, {	-- WANTED: Ayame (A)
 					["provider"] = { "o", 293568 },	-- Wanted Poster
-					["coord"] = { 62.3, 41.3, 863 },
+					["coord"] = { 62.3, 41.3, NAZMIR },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52477, {	-- WANTED: Ayame (H)
 					["provider"] = { "n", 131987 },	-- Crez
-					["coord"] = { 67.2, 40.8, 863 },
+					["coord"] = { 67.2, 40.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51139, {	-- WANTED: Tojek (A)
 					["provider"] = { "o", 287327 },	-- Scouting Report
-					["coord"] = { 62.1, 41.0, 863 },
+					["coord"] = { 62.1, 41.0, NAZMIR },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51089, {	-- WANTED: Tojek (H)
 					["provider"] = { "o", 287232 },	-- Scouting Report
-					["coord"] = { 39.5, 79.9, 863 },
+					["coord"] = { 39.5, 79.9, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47250, {	-- We'll Meet Again
 					["sourceQuests"] = { 47249 },	-- Soulbound
 					["provider"] = { "n", 122766 },	-- Bwonsamdi
-					["coord"] = { 39.5, 30.0, 863 },
+					["coord"] = { 39.5, 30.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51244, {	-- What Rots Beneath
 					--	is this a breadcrumb?
 					["sourceQuests"] = { 50087 },	-- Ateena's Fall
 					["provider"] = { "n", 140656 },	-- Rokhan
-					["coord"] = { 50.5, 58.3, 863 },
+					["coord"] = { 50.5, 58.3, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49774, {	-- Won't Leaf Him to Die
 					["sourceQuests"] = { 50933 },	-- An Unfortunate Event
 					["provider"] = { "n", 131231 },	-- Jin'Tiki
-					["coord"] = { 24.1, 53.1, 863 },
+					["coord"] = { 24.1, 53.1, NAZMIR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(53781, {	-- Eyir
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
 					["lvl"] = 120,
-					["coord"] = { 39.5, 24.6, 863 },
+					["coord"] = { 39.5, 24.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 54145 },	-- The Loa of Death
 				}),
 				q(53780, {	-- Jailor of the Damned
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
 					["lvl"] = 120,
-					["coord"] = { 39.5, 24.6, 863 },
+					["coord"] = { 39.5, 24.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 54145 },	-- The Loa of Death
 				}),
 				q(53782, {	-- Mysteries of Death
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
 					["lvl"] = 120,
-					["coord"] = { 39.5, 24.6, 863 },
+					["coord"] = { 39.5, 24.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						54147,	-- Confront The Val'kyr
@@ -1328,14 +1328,14 @@ _.Zones =
 				}),
 				q(48823, {	-- Projection Destruction
 					["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
-					["coord"] = { 31.0, 52.0, 863 },
+					["coord"] = { 31.0, 52.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 48854 },	-- Offer of Power
 				}),
 				q(54145, {	-- The Loa of Death
 					["provider"] = { "n", 146824 },	-- Princess Talanji
 					["lvl"] = 120,
-					["coord"] = { 39.5, 27.0, 863 },
+					["coord"] = { 39.5, 27.0, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53779 },	-- The Lies of a Loa
 				}),

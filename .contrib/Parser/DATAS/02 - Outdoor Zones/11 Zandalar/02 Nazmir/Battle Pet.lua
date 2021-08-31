@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(863, {	-- Nazmir
+		m(NAZMIR, {
 			filter(101, {	-- Pet Battle
 				p(2388, {	-- Bloodfeaver Tarantula
 					["crs"] = { 143047 },	-- Bloodfeaver Tarantula

@@ -5,12 +5,12 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(863, {	-- Nazmir
+		m(NAZMIR, {
 			n(-169, {	-- Emissary Quests
 				q(54460, {	-- Supplies from Talanji's Expedition
 					["provider"] = { "n", 135459 },	-- Provisioner Lija
 					["lvl"] = 120,
-					["coord"] = { 39.11, 79.47, 863 },
+					["coord"] = { 39.11, 79.47, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -23,7 +23,7 @@ _.Zones =
 				q(50602, {	-- Talanji's Expedition
 					["provider"] = { "n", 135459 },	-- Provisioner Lija
 					["lvl"] = 120,
-					["coord"] = { 39.11, 79.47, 863 },
+					["coord"] = { 39.11, 79.47, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),

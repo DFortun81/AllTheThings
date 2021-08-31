@@ -216,9 +216,9 @@ _.Instances = { tier(BFA_TIER, {
 				["isWorldQuest"] = true,
 				["questID"] = 52181,	-- Smoke and Shadow (WQ)
 				["isRaid"] = true,
-				["coord"] = { 35.6, 33.6, 863 },
+				["coord"] = { 35.6, 33.6, NAZMIR },
 				["lvl"] = { 50 },
-				["maps"] = { 863 },	-- Nazmir
+				["maps"] = { NAZMIR },
 				["cr"] = 132701,	-- T'zane <Tehe Soul Terror>
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(3, {	-- T'zane

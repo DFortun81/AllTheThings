@@ -1430,7 +1430,7 @@ _.Zones =
 						i(180030),	-- Bartered Vrykul Warhelm
 					},
 					["maps"] = {
-						863,	-- Nazmir
+						NAZMIR,
 						864,	-- Vol'dun
 						TIRAGARDE_SOUND,
 						--STORMSONG_VALLEY,

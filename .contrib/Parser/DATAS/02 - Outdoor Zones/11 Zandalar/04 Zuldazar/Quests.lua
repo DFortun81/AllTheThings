@@ -1405,7 +1405,7 @@ _.Zones =
 				q(55797, {	-- The Direhorn Mother's Fury
 					["sourceQuests"] = { 55796 },	-- Heresy at the Crossroad
 					["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
-					["coord"] = { 28.6, 89.6, 863 },	-- Nazmir
+					["coord"] = { 28.6, 89.6, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
@@ -1444,7 +1444,7 @@ _.Zones =
 						i(180030),	-- Bartered Vrykul Warhelm
 					},
 					["maps"] = {
-						863,	-- Nazmir
+						NAZMIR,
 						864,	-- Vol'dun
 						TIRAGARDE_SOUND,
 						STORMSONG_VALLEY,
@@ -1649,7 +1649,7 @@ _.Zones =
 				q(55798, {	-- Wander Not Alone
 					["sourceQuests"] = { 55797 },	-- The Direhorn Mother's Fury
 					["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
-					["coord"] = { 23.3, 73.8, 863 },	-- Nazmir
+					["coord"] = { 23.3, 73.8, NAZMIR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 					["g"] = {

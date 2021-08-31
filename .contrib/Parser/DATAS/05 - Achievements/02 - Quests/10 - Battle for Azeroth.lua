@@ -208,7 +208,7 @@ _.Achievements =
 					["coord"] = { 71.1, 40.3, ZULDAZAR },
 				}),
 				crit(4, {		-- Makatau the Pterrordax slain
-					["coord"] = { 26.3, 73.3, 863 },	-- Nazmir
+					["coord"] = { 26.3, 73.3, NAZMIR },
 				}),
 				crit(5, {		-- The Sabertusk Empress slain
 					["coord"] = { 52.3, 47.7, ZULDAZAR },

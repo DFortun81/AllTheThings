@@ -1073,9 +1073,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["maps"] = { ZULDAZAR },
 					}),
 					crit(2, {	-- Nazmir
-						["coord"] = { 40.0, 74.0, 863 },
+						["coord"] = { 40.0, 74.0, NAZMIR },
 						["races"] = ALLIANCE_ONLY,
-						["maps"] = { 863 },	-- Nazmir
+						["maps"] = { NAZMIR },
 					}),
 					crit(3, {	-- Vol'dun
 						["coord"] = { 55.9, 47.4, 864 },
@@ -1744,9 +1744,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["maps"] = { ZULDAZAR },
 					}),
 					crit(2, {	-- Nazmir
-						["coord"] = { 40.0, 74.3, 863 },
+						["coord"] = { 40.0, 74.3, NAZMIR },
 						["races"] = HORDE_ONLY,
-						["maps"] = { 863 },	-- Nazmir
+						["maps"] = { NAZMIR },
 					}),
 					crit(3, {	-- Vol'dun
 						["coord"] = { 56.0, 47.8, 864 },
@@ -3019,9 +3019,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(54746, {	-- Desecrate this Fire! — Nazmir
 						["provider"] = { "o", 316796 },	-- Horde Bonfire
-						["coord"] = { 40.0, 74.0, 863 },
+						["coord"] = { 40.0, 74.0, NAZMIR },
 						["timeline"] = { "added 8.0.1" },
-						["maps"] = { 863 },	-- Nazmir
+						["maps"] = { NAZMIR },
 					}),
 					q(11799, {	-- Desecrate this Fire! — Netherstorm
 						["provider"] = { "o", 187949 },	-- Horde Bonfire
@@ -4127,9 +4127,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(54747, {	-- Honor the Flame — Nazmir
 						["qg"] = 148950,    -- Nazmir Flame Keeper
-						["coord"] = { 40.0, 74.3, 863 },
+						["coord"] = { 40.0, 74.3, NAZMIR },
 						["timeline"] = { "added 8.0.1" },
-						["maps"] = { 863 },	-- Nazmir
+						["maps"] = { NAZMIR },
 					}),
 					q(11835, {	-- Honor the Flame — Netherstorm
 						["qg"] = 25918,	-- Netherstorm Flame Keeper

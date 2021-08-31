@@ -327,7 +327,7 @@ _.Zones =
 					}),
 					q(49583, {	-- Out With the Old (H)
 						["provider"] = { "n", 150897 },	-- Shrine of the Dawning
-						["coord"] = { 61.4, 37.2, 863 },
+						["coord"] = { 61.4, 37.2, NAZMIR },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49589,	-- The Shrine of the Dawning
 						["requireSkill"] = JEWELCRAFTING,
@@ -336,7 +336,7 @@ _.Zones =
 					}),
 					q(55592, {	-- A Promising Beginning (H)
 						["provider"] = { "n", 152490 },	-- Shrine of the Dawning
-						["coord"] = { 61.4, 37.2, 863 },
+						["coord"] = { 61.4, 37.2, NAZMIR },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49583,	-- Out With the Old (H)
 						["requireSkill"] = JEWELCRAFTING,

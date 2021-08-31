@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(875, {	-- Zandalar
-		m(863, {	-- Nazmir
+		m(NAZMIR, {
 			n(ZONEDROPS, {
 				-- Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate
 				i(163575, {	-- Reins of a Tamed Bloodfeaster

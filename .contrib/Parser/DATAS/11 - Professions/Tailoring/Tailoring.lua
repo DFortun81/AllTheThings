@@ -4729,13 +4729,13 @@ profession(TAILORING, {
 								{ 73.0, 67.0, ZULDAZAR },	-- East of Seeker's Outpost
 								{ 71.0, 35.0, ZULDAZAR },	-- Behind Savagelands Devilsaur
 								-- Nazmir
-								{ 38.0, 58.0, 863 },	-- Under arch east side of Terrace of Sorrows
-								{ 55.0, 21.0, 863 },
-								{ 53.0, 56.0, 863 },	-- NE corner of Heart of Darkness
-								{ 43.0, 29.0, 863 },	-- SE corner of Necropolis
-								{ 38.0, 89.0, 863 },	-- The Shattered River, in front of broken totem
-								{ 29.0, 56.0, 863 },
-								{ 26.0, 78.0, 863 },	-- In front of waterfall
+								{ 38.0, 58.0, NAZMIR },	-- Under arch east side of Terrace of Sorrows
+								{ 55.0, 21.0, NAZMIR },
+								{ 53.0, 56.0, NAZMIR },	-- NE corner of Heart of Darkness
+								{ 43.0, 29.0, NAZMIR },	-- SE corner of Necropolis
+								{ 38.0, 89.0, NAZMIR },	-- The Shattered River, in front of broken totem
+								{ 29.0, 56.0, NAZMIR },
+								{ 26.0, 78.0, NAZMIR },	-- In front of waterfall
 								-- Drustvar
 								{ 23.0, 43.0, DRUSTVAR },	-- Just above Anyport
 								{ 36.0, 72.0, DRUSTVAR },

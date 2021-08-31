@@ -8,7 +8,7 @@ _.Zones =
 		m(ZULDAZAR, {
 			n(ZONEDROPS, {
 				["maps"] = {	-- Note!! We can list this in these two zones due to them dropping here.  If we add more to Zuldazar then we'll look into adjusting this.
-					863,	-- Nazmir
+					NAZMIR,
 					864,	-- Vol'dun
 				},
 				["g"] = {

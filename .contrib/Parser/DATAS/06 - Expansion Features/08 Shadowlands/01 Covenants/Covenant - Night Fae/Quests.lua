@@ -695,17 +695,17 @@ _.ExpansionFeatures =
 					q(59739, {	-- The Problem with Containing a Death Loa
 						["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
 						["provider"] = { "n", 122688 },	-- Bwonsamdi
-						["coord"] = { 39.6, 24.7, 863 },	-- Nazmir
+						["coord"] = { 39.6, 24.7, NAZMIR },
 					}),
 					q(59741, {	-- Dark Mojo for a Dark Loa
 						["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
 						["provider"] = { "n", 165968 },	-- Hanzabu
-						["coord"] = { 39.5, 24.7, 863 },	-- Nazmir
+						["coord"] = { 39.5, 24.7, NAZMIR },
 					}),
 					q(59742, {	-- Delaying the Other Side
 						["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
 						["provider"] = { "n", 165968 },	-- Hanzabu
-						["coord"] = { 39.5, 24.7, 863 },	-- Nazmir
+						["coord"] = { 39.5, 24.7, NAZMIR },
 					}),
 					q(59749, {	-- One Little Whisper
 						["sourceQuests"] = {
@@ -714,7 +714,7 @@ _.ExpansionFeatures =
 							59739,	-- The Problem with Containing a Death Loa
 						},
 						["provider"] = { "n", 122688 },	-- Bwonsamdi
-						["coord"] = { 39.6, 24.7, 863 },	-- Nazmir
+						["coord"] = { 39.6, 24.7, NAZMIR },
 						["g"] = {
 							i(179623),	-- Faewoven Drape
 							i(179773),	-- Oakheart Cape
@@ -725,7 +725,7 @@ _.ExpansionFeatures =
 					q(59805, {	-- Maw Manifested
 						["sourceQuests"] = { 59749 },	-- One Little Whisper
 						["provider"] = { "n", 122688 },	-- Bwonsamdi
-						["coord"] = { 39.6, 24.7, 863 },	-- Nazmir
+						["coord"] = { 39.6, 24.7, NAZMIR },
 					}),
 					q(59822, {	-- Tracking a Wild God
 						["sourceQuests"] = { 59805 },	-- Maw Manifested

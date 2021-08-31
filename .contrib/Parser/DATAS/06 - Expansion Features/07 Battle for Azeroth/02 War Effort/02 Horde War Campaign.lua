@@ -1153,22 +1153,22 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 54207 },	-- Retaking the Outpost
 							["provider"] = { "n", 147145 },	-- Nathanos Blightcaller
 							["classes"] = { ROGUE },
-							["coord"] = { 50.2, 78.4, 863 },	-- Nazmir
+							["coord"] = { 50.2, 78.4, NAZMIR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54211, {	-- Putting the Gob in Gob Squad
 							["sourceQuests"] = { 54207 },	-- Retaking the Outpost
 							["provider"] = { "n", 147155 },	-- Patch
-							["coord"] = { 50.3, 78.4, 863 },
+							["coord"] = { 50.3, 78.4, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 863 },	-- Nazmir
+							["maps"] = { NAZMIR },
 						}),
 						q(54212, {	-- Re-rebuilding the A.F.M.O.D.
 							["sourceQuests"] = { 54207 },	-- Retaking the Outpost
 							["provider"] = { "n", 147155 },	-- Patch
-							["coord"] = { 50.3, 78.4, 863 },
+							["coord"] = { 50.3, 78.4, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 863 },	-- Nazmir
+							["maps"] = { NAZMIR },
 						}),
 						q(54213, {	-- It's Alive!
 							["sourceQuests"] = {
@@ -1176,44 +1176,44 @@ _.ExpansionFeatures =
 								54212,	-- Re-rebuilding the A.F.M.O.D.
 							},
 							["provider"] = { "n", 147155 },	-- Patch
-							["coord"] = { 50.3, 78.4, 863 },
+							["coord"] = { 50.3, 78.4, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 863 },	-- Nazmir
+							["maps"] = { NAZMIR },
 						}),
 						q(54224, {	-- The Battle of Zul'jan Ruins
 							["sourceQuests"] = { 54213 },	-- It's Alive!
 							["provider"] = { "n", 146921 },	-- Princess Talanji
-							["coord"] = { 50.4, 78.5, 863 },
+							["coord"] = { 50.4, 78.5, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 863 },	-- Nazmir
+							["maps"] = { NAZMIR },
 						}),
 						q(54244, {	-- We Have Them Cornered
 							["sourceQuests"] = { 54224 },	-- The Battle of Zul'jan Ruins
 							["provider"] = { "n", 146921 },	-- Princess Talanji
-							["coord"] = { 39.3, 78.2, 863 },
+							["coord"] = { 39.3, 78.2, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 863 },	-- Nazmir
+							["maps"] = { NAZMIR },
 						}),
 						q(54249, {	-- Zandalari Justice
 							["sourceQuests"] = { 54244 },	-- We Have Them Cornered
 							["provider"] = { "n", 146921 },	-- Princess Talanji
-							["coord"] = { 30.9, 51.9, 863 },
+							["coord"] = { 30.9, 51.9, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 863 },	-- Nazmir
+							["maps"] = { NAZMIR },
 						}),
 						q(54269, {	-- None Shall Escape
 							["sourceQuests"] = { 54244 },	-- We Have Them Cornered
 							["provider"] = { "n", 147075 },	-- General Rakera
-							["coord"] = { 30.8, 51.8, 863 },
+							["coord"] = { 30.8, 51.8, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 863 },	-- Nazmir
+							["maps"] = { NAZMIR },
 						}),
 						q(54270, {	-- Breaking Mirrors
 							["sourceQuests"] = { 54244 },	-- We Have Them Cornered
 							["provider"] = { "n", 147075 },	-- General Rakera
-							["coord"] = { 30.8, 51.8, 863 },
+							["coord"] = { 30.8, 51.8, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 863 },	-- Nazmir
+							["maps"] = { NAZMIR },
 						}),
 						q(54271, {	-- Telaamon's Purge
 							["sourceQuests"] = {
@@ -1222,23 +1222,23 @@ _.ExpansionFeatures =
 								54270,	-- Breaking Mirrors
 							},
 							["provider"] = { "n", 147233 },	-- Rokhan
-							["coord"] = { 31.2, 46.8, 863 },
+							["coord"] = { 31.2, 46.8, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 863 },	-- Nazmir
+							["maps"] = { NAZMIR },
 						}),
 						q(54275, {	-- Parting Mists
 							["sourceQuests"] = { 54271 },	-- Telaamon's Purge
 							["provider"] = { "n", 147233 },	-- Rokhan
-							["coord"] = { 31.2, 46.8, 863 },
+							["coord"] = { 31.2, 46.8, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 863 },	-- Nazmir
+							["maps"] = { NAZMIR },
 						}),
 						q(54280, {	-- Fly Out to Meet Them
 							["sourceQuests"] = { 54271 },	-- Telaamon's Purge
 							["provider"] = { "n", 147075 },	-- General Rakera
-							["coord"] = { 31.4, 32.0, 863 },
+							["coord"] = { 31.4, 32.0, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 863 },	-- Nazmir
+							["maps"] = { NAZMIR },
 						}),
 						q(54282, {	-- Battle of Dazar'alor
 							["sourceQuests"] = { 54280 },	-- Fly Out to Meet Them
