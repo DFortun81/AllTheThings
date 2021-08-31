@@ -11,4 +11,11 @@ _.Promotions =
 			i(98618), -- Hearthsteed
 		},
 	}),
+	n(-536, { 	-- Hearthstone Mercenaries Promotion
+		["description"] = "Complete a bounty in Hearthstone's new Mercenaries Mode in order to receive this new mount.",
+		["timeline"] = { "added 9.1.0" },
+		["groups"] = {
+			--i(),	-- Sarge
+		},
+	}),
 };

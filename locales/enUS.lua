@@ -1065,6 +1065,7 @@ app.L = {
 		[-533] = "Interface\\Icons\\Inv_misc_rune_01",										-- Hearthstone
 		[-534] = "Interface\\Icons\\inv_misc_gift_01",										-- Collector's Edition
 		[-535] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_LADYLUCK",						-- Trading Card Game
+		[-536] = "Interface\\Icons\\Inv_misc_rune_01",										-- Hearthstone Mercenaries
 		[-537] = "Interface\\Icons\\diabloanniversary_achievement",							-- Diablo 20th Anniversary
 		[-538] = "Interface\\Icons\\inv_box_01",											-- The Ahn'Qiraj War Effort
 		[-539] = "Interface\\Icons\\Inv_hammer_25",											-- The Scepter of the Shifting Sands
@@ -1835,7 +1836,7 @@ app.L = {
 		[-533] = "Hearthstone",
 		[-534] = "Collector's Edition",
 		[-535] = BATTLE_PET_SOURCE_9,											-- Trading Card Game
-
+		[-536] = "Hearthstone Mercenaries",
 		[-537] = "Diablo 20th Anniversary",
 		[-538] = "The Ahn'Qiraj War Effort",
 		[-539] = "The Scepter of the Shifting Sands",
