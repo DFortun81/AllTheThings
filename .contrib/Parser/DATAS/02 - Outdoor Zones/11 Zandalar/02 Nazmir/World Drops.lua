@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		m(NAZMIR, {
 			n(-226,    {	-- World Drops
 				["maps"] = {

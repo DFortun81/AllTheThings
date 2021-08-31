@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		n(QUESTS, {
 			o(311218, {	-- Xal'atath, Blade of the Black Empire
 				q(54439, {	-- Crucible of Storms: Relics of Shadow

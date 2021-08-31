@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		m(THE_GREAT_SEAL, {	-- Dazar'alor
 			n(VENDORS, {
 				n(132153, {	-- "Black Eye" Zenru

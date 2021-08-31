@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		m(864, {	-- Vol'dun
 			n(ACHIEVEMENTS, {
 				ach(12943),		-- Adventurer of Vol'dun

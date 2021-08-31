@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		m(NAZMIR, {
 			n(VENDORS, {
 				n(126833, {	-- Blind Wunja <Medicine Woman>

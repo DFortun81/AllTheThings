@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		m(NAZMIR, {
 			n(ACHIEVEMENTS, {
 				ach(12942),		-- Adventurer of Nazmir

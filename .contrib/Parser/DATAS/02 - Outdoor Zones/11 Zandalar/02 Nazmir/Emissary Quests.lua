@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		m(NAZMIR, {
 			n(-169, {	-- Emissary Quests
 				q(54460, {	-- Supplies from Talanji's Expedition

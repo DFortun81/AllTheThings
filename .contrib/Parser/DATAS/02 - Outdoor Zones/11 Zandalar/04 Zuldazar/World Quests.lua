@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		m(ZULDAZAR, {
 			n(-34,  {	-- World Quests
 				n(QUESTS, {

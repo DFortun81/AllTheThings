@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		m(ZULDAZAR, {
 			n(FLIGHT_PATHS, {
 				fp(2046, {	-- Atal'dazar, Zuldazar [Horde]

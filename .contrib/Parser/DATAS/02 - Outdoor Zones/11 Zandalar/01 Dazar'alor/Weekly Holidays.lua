@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		m(THE_GREAT_SEAL, {	-- Dazar'alor
 			n(-176, sharedData({	-- Weekly Holidays
 				["u"] = REMOVED_FROM_GAME,

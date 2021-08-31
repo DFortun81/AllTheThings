@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		m(ZULDAZAR, {
 			n(VENDORS, {
 				n(140137, {	-- Bugcatacher Cal'yoon

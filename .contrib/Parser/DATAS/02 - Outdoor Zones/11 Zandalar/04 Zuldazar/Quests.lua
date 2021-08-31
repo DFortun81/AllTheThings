@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		m(ZULDAZAR, {
 			n(QUESTS, {
 				-- TODO: shit that needs solving:
@@ -254,19 +254,19 @@ _.Zones =
 							["u"] = REMOVED_FROM_GAME,	-- Replaced with a new quest in Season 4
 							["provider"] = { "n", 143555 },	-- Xander Silberman
 							["isWeekly"] = true,
-							["coord"] = { 51.6, 58.2, 875 },
+							["coord"] = { 51.6, 58.2, ZANDALAR },
 							["g"] = { i(171095) },			-- Warlord's Trophy
 						}),
 						q(58279, {	-- Quartermaster's Bounty
 							["provider"] = { "n", 143555 },	-- Xander Silberman
 							["isWeekly"] = true,
-							["coord"] = { 51.6, 58.2, 875 },
+							["coord"] = { 51.6, 58.2, ZANDALAR },
 							["g"] = { i(171095) },			-- Warlord's Trophy
 						}),
 						q(56500, {	-- Storming the Battlefields!
 							["provider"] = { "n", 143555 },	-- Xander Silberman
 							["races"] = HORDE_ONLY,
-							["coord"] = { 51.6, 58.2, 875 },
+							["coord"] = { 51.6, 58.2, ZANDALAR },
 							["g"] = {
 								i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
 									["classes"] = HEALERS,

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		m(864, {	-- Vol'dun
 			n(-169, {	-- Emissary Quests
 				q(54461, {	-- Supplies from the Voldunai

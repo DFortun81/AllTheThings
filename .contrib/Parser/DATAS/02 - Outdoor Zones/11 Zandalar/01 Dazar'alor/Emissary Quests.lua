@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		m(THE_GREAT_SEAL, {	-- Dazar'alor
 			n(-169, {	-- Emissary Quests
 				q(50606, {	-- Horde War Effort [The Honorbound] [Tier 2]

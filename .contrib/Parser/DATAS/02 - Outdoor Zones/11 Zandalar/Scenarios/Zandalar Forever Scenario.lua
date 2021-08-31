@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		n(-10069, {	-- Scenarios
 			["icon"] = "Interface\\Icons\\inv_zuldazar",
 			["g"] = {

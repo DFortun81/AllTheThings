@@ -14,7 +14,7 @@ _.Secrets =
 			ZULDAZAR,
 			NAZMIR,
 			864,
-			875,
+			ZANDALAR,
 			TIRAGARDE_SOUND,
 			DRUSTVAR,
 			STORMSONG_VALLEY,
@@ -81,7 +81,7 @@ _.Secrets =
 				["questID"] = 52814,
 				["coords"] = {
 					{ 39.8, 4.0, NAZMIR },	-- Starting location
-					{ 54.5, 7.3, 875 },	-- Ordinary Pebble
+					{ 54.5, 7.3, ZANDALAR },	-- Ordinary Pebble
 				},
 				["sourceQuest"] = 52815,	-- Step 7: Sixth Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 8:|r Head to Nazmir.  There are two coordinates provided, although you may only be able to see one on your map when you start.  Head to the southern coordinate and then fly north, into fatigue waters, to the northern coordinate.\n\nUse Underlight Angler or a potion to increase your swim speed, and swim down until you get to a shipwreck.  The back of the ship is made of stained glass.  In the middle of the glass is a skull with a semicircle of pebbles underneath it.  The one you can interact with is the second from the left.\n\n  Shift-click to refresh your collection.",
@@ -131,9 +131,9 @@ _.Secrets =
 				["modelScale"] = .5,
 				["questID"] = 52827,
 				["coords"] = {
-					{ 45.9, 3.7, 875 },		-- Starting Point
-					{ 47.7, -3.0, 875 },	-- Fatigue Reset Zone
-					{ 55.7, -10.2, 875 },	-- Underwater Cave
+					{ 45.9, 3.7, ZANDALAR },	-- Starting Point
+					{ 47.7, -3.0, ZANDALAR },	-- Fatigue Reset Zone
+					{ 55.7, -10.2, ZANDALAR },	-- Underwater Cave
 				},
 				["sourceQuest"] = 53634,	-- Step 13: Twelfth Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 14:|r Head to the very northernmost point in Vol'dun.  There will be three waypoints on your map, which you may have to zoom out to the continent map to see — south, central, and north.\n\nStart from the southern waypoint, fly to the central waypoint to reset your fatigue, and then head to the final waypoint to find an underwater cave.  Again, Underlight Angler or other swim speed increases are probably necessary.\n\nYou can swim into the cave to reset your fatigue again, but the pebble is right inside the entrance.  Swim down to the bottom and it's next to a rock and what looks like a small shard of rock, around |cFFFFFFFF55.8, -10.0|r.\n\nThe stone reads:\n\"<Something is carved into the stone.>\n\nHeckler of the Murkiest Thugs, sheathe \nyour\nBat and remove the Keg Cork, Wot?\"\n",
