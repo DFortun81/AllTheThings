@@ -152,6 +152,7 @@ local TooltipSettingsBase = {
 		["Models"] = true,
 		["LiveScan"] = false,
 		["Locations"] = 5,
+		["Lore"] = true,
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,
 		["Precision"] = 2,
@@ -2797,9 +2798,9 @@ end);
 ShowDescriptionsCheckBox:SetATTTooltip(L["DESCRIPTIONS_CHECKBOX_TOOLTIP"]);
 ShowDescriptionsCheckBox:SetPoint("TOPLEFT", ShowCoordinatesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowKnownByCheckBox = settings:CreateCheckBox(L["KNOWN_BY_CHECKBOX"],
+local ShowLoreCheckBox = settings:CreateCheckBox(L["LORE_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:GetTooltipSetting("KnownBy"));
+	self:SetChecked(settings:GetTooltipSetting("Lore"));
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -2809,10 +2810,10 @@ function(self)
 	end
 end,
 function(self)
-	settings:SetTooltipSetting("KnownBy", self:GetChecked());
+	settings:SetTooltipSetting("Lore", self:GetChecked());
 end);
-ShowKnownByCheckBox:SetATTTooltip(L["KNOWN_BY_CHECKBOX_TOOLTIP"]);
-ShowKnownByCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -8, 4);
+ShowLoreCheckBox:SetATTTooltip(L["LORE_CHECKBOX_TOOLTIP"]);
+ShowLoreCheckBox:SetPoint("TOPLEFT", ShowDescriptionsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowModelsCheckBox = settings:CreateCheckBox(L["SHOW_MODELS_CHECKBOX"],
 function(self)
@@ -2829,7 +2830,24 @@ function(self)
 	settings:SetTooltipSetting("Models", self:GetChecked());
 end);
 ShowModelsCheckBox:SetATTTooltip(L["SHOW_MODELS_CHECKBOX_TOOLTIP"]);
-ShowModelsCheckBox:SetPoint("TOPLEFT", ShowDescriptionsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowModelsCheckBox:SetPoint("TOPLEFT", ShowLoreCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ShowKnownByCheckBox = settings:CreateCheckBox(L["KNOWN_BY_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("KnownBy"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("KnownBy", self:GetChecked());
+end);
+ShowKnownByCheckBox:SetATTTooltip(L["KNOWN_BY_CHECKBOX_TOOLTIP"]);
+ShowKnownByCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -8, 4);
 
 local ShowSharedAppearancesCheckBox = settings:CreateCheckBox(L["SHARED_APPEARANCES_CHECKBOX"],
 function(self)
@@ -2953,7 +2971,7 @@ SummarizeThingsCheckBox:SetPoint("TOPLEFT", ShowSpecializationRequirementsCheckB
 
 -- This creates the "Contains Count" slider.
 local ContainsSlider = CreateFrame("Slider", "ATTSummarizeThingsSlider", settings, "OptionsSliderTemplate");
-ContainsSlider:SetPoint("TOP", SummarizeThingsCheckBox, "TOP", 0, 0);
+ContainsSlider:SetPoint("TOP", OnlyShowRelevantSharedAppearancesCheckBox, "BOTTOM", 0, 0);
 ContainsSlider:SetPoint("LEFT", DisplayInCombatCheckBox, "LEFT", 0, 0);
 table.insert(settings.MostRecentTab.objects, ContainsSlider);
 settings.ContainsSlider = ContainsSlider;
@@ -3007,7 +3025,7 @@ ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", SummarizeThingsCheckBox, "BOTTOM
 
 -- This creates the "Locations" slider.
 local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
-LocationsSlider:SetPoint("TOP", ShowSourceLocationsCheckBox, "TOP", 0, 0);
+LocationsSlider:SetPoint("TOP", ContainsSlider, "BOTTOM", 0, -8);
 LocationsSlider:SetPoint("LEFT", ContainsSlider, "LEFT", 0, 0);
 table.insert(settings.MostRecentTab.objects, LocationsSlider);
 settings.LocationsSlider = LocationsSlider;
@@ -3074,7 +3092,7 @@ function(self)
 	settings:SetTooltipSetting("DropChances", self:GetChecked());
 end);
 ShowDropChancesCheckbox:SetATTTooltip(L["DROP_CHANCES_CHECKBOX_TOOLTIP"]);
-ShowDropChancesCheckbox:SetPoint("TOP", ShowCompletedSourceLocationsForCheckBox, "TOP", 0, 0);
+ShowDropChancesCheckbox:SetPoint("TOP", LocationsSlider, "BOTTOM", 0, -8);
 ShowDropChancesCheckbox:SetPoint("LEFT", ShowModelsCheckBox, "LEFT", 0, 0);
 
 local ShowSourceLocationsForCreaturesCheckBox = settings:CreateCheckBox(L["FOR_CREATURES_CHECKBOX"],

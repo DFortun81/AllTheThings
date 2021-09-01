@@ -3134,9 +3134,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" and paramA ~= "currencyID" then
 					local descriptions = {};
 					for i,j in ipairs(group) do
-						if j.description and j[paramA] and j[paramA] == paramB then
+						if (j.lore or j.description) and j[paramA] and j[paramA] == paramB then
 							-- Only add unique descriptions to the final info
-							descriptions[j.description] = true;
+							if j.lore then descriptions[j.lore] = true; end
+							if j.description then descriptions[j.description] = true; end
 						end
 					end
 					for description,_ in pairs(descriptions) do
@@ -3307,6 +3308,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Show the unobtainable source text, if necessary.
 			if sourceGroup then
 				-- Description for Items
+				if sourceGroup.lore and app.Settings:GetTooltipSetting("Lore") then
+					tinsert(info, 1, { left = sourceGroup.lore, wrap = true, color = "ff66ccff" });
+				end
 				if sourceGroup.description and app.Settings:GetTooltipSetting("Descriptions") then
 					tinsert(info, 1, { left = sourceGroup.description, wrap = true, color = "ff66ccff" });
 				end
@@ -7053,7 +7057,7 @@ local function CacheEncounterInfo(t)
 	local t, id = cache.GetCached(t);
 	local name, description, _, _, link = EJ_GetEncounterInfo(id);
 	t.name = name;
-	t.description = description;
+	t.lore = description;
 	t.link = link;
 	t.displayID = select(4, EJ_GetCreatureInfo(1, id));
 end
@@ -8422,7 +8426,7 @@ local function GetCached(t, field)
 		rawset(cache, id, idcache);
 		-- Set necessary fields from the result
 		idcache["name"],
-		idcache["description"],
+		idcache["lore"],
 		_,
 		_,
 		_,
@@ -8450,8 +8454,8 @@ local fields = {
 		return GetCached(t, "name");
 		-- return select(1, EJ_GetInstanceInfo(t.instanceID));
 	end,
-	["description"] = function(t)
-		return GetCached(t, "description");
+	["lore"] = function(t)
+		return GetCached(t, "lore");
 		-- return select(2, EJ_GetInstanceInfo(t.instanceID));
 	end,
 	["link"] = function(t)
@@ -9266,6 +9270,7 @@ app.CreateMapWithStyle = function(id)
 			mapObject.text = data.text;
             mapObject.icon = data.icon;
             mapObject.lvl = data.lvl;
+            mapObject.lore = data.lore;
             mapObject.description = data.description;
 			break;
 		end
@@ -10801,46 +10806,46 @@ end)();
 local tiers = {
 	{	-- Classic
 		["icon"] = app.asset("Expansion_CLASSIC"),
-		["description"] = L["CLASSIC_TIER_DESC"],
+		["lore"] = L["CLASSIC_TIER_DESC"],
 	},
 	{	-- Burning Crusade
 		["icon"] = app.asset("Expansion_TBC"),
-		["description"] = L["TBC_TIER_DESC"],
+		["lore"] = L["TBC_TIER_DESC"],
 		["lvl"] = 10,
 	},
 	{	-- Wrath of the Lich King
 		["icon"] = app.asset("Expansion_WOTLK"),
-		["description"] = L["WOTLK_TIER_DESC"],
+		["lore"] = L["WOTLK_TIER_DESC"],
 		["lvl"] = 10,
 	},
 	{	-- Cataclysm
 		["icon"] = app.asset("Expansion_CATA"),
-		["description"] = L["CATA_TIER_DESC"],
+		["lore"] = L["CATA_TIER_DESC"],
 		["lvl"] = 10,
 	},
 	{	-- Mists of Pandaria
 		["icon"] = app.asset("Expansion_MOP"),
-		["description"] = L["MOP_TIER_DESC"],
+		["lore"] = L["MOP_TIER_DESC"],
 		["lvl"] = 10,
 	},
 	{	-- Warlords of Draenor
 		["icon"] = app.asset("Expansion_WOD"),
-		["description"] = L["WOD_TIER_DESC"],
+		["lore"] = L["WOD_TIER_DESC"],
 		["lvl"] = 10,
 	},
 	{	-- Legion
 		["icon"] = app.asset("Expansion_LEGION"),
-		["description"] = L["LEGION_TIER_DESC"],
+		["lore"] = L["LEGION_TIER_DESC"],
 		["lvl"] = 10,
 	},
 	{	-- Battle for Azeroth
 		["icon"] = app.asset("Expansion_BFA"),
-		["description"] = L["BFA_TIER_DESC"],
+		["lore"] = L["BFA_TIER_DESC"],
 		["lvl"] = 10,
 	},
 	{	-- Shadowlands
 		["icon"] = app.asset("Expansion_SL"),
-		["description"] = L["SL_TIER_DESC"],
+		["lore"] = L["SL_TIER_DESC"],
 		["lvl"] = 50,
 	},
 };
@@ -10860,8 +10865,8 @@ local fields = {
 	["icon"] = function(t)
 		return GetTierInfo(t.tierID, "icon");
 	end,
-	["description"] = function(t)
-		return GetTierInfo(t.tierID, "description");
+	["lore"] = function(t)
+		return GetTierInfo(t.tierID, "lore");
 	end,
 	["lvl"] = function(t)
 		return GetTierInfo(t.tierID, "lvl");
@@ -13602,6 +13607,18 @@ RowOnEnter = function (self)
 		end
 		if reference.bonusID and app.Settings:GetTooltipSetting("bonusID") then GameTooltip:AddDoubleLine("Bonus ID", tostring(reference.bonusID)); end
 		if reference.modID and app.Settings:GetTooltipSetting("modID") then GameTooltip:AddDoubleLine("Mod ID", tostring(reference.modID)); end
+		if app.Settings:GetTooltipSetting("Lore") then
+			if reference.lore then
+				local found = false;
+				for i=1,GameTooltip:NumLines() do
+					if _G["GameTooltipTextLeft"..i]:GetText() == reference.lore then
+						found = true;
+						break;
+					end
+				end
+				if not found then GameTooltip:AddLine(reference.lore, 0.4, 0.8, 1, 1); end
+			end
+		end
 		if app.Settings:GetTooltipSetting("Descriptions") then
 			-- non-localized description on the specified Thing (will be converted into localized text at some point)
 			if reference.description then
