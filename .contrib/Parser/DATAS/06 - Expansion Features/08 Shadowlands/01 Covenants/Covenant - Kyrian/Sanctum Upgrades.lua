@@ -99,6 +99,8 @@ _.ExpansionFeatures =
 					}),
 					n(-905, {	-- Command Table
 						n(-906, {	-- Tier 1: Tactical Insight
+							currency(1819, {	-- Medallion of Service
+							}),
 							q(57900, {	-- Across the Shadowlands
 								["sourceQuests"] = { 57899 },	-- More Work?
 								["provider"] = { "n", 160389 },	-- Koros

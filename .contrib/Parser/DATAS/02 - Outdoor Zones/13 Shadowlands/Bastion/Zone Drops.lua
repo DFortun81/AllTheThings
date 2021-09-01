@@ -7,6 +7,10 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(BASTION, {
 			n(ZONEDROPS, {
+				currency(1819, {	-- Medallion of Service
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					["description"] = "Can drop from any Forsworn enemy.",
+				}),
 				i(184397, {	-- Lost Featherling (PET!)
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian
 					["crs"] = {

@@ -17,6 +17,9 @@ _.Zones =
 							i(184399),	-- Larion Cub
 							i(184396),	-- Malfunctioning Goliath Gauntlet
 							i(184435),	-- Mark of Purity
+							currency(1819, {	-- Medallion of Service
+								["customCollect"] = "SL_COV_KYR",	-- Kyrian
+							}),
 						}),
 					},
 				}),

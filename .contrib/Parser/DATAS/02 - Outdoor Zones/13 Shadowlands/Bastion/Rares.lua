@@ -7,6 +7,9 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(BASTION, {
 			n(RARES, {
+				currency(1819, {	-- Medallion of Service
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
+				}),
 				n(161528, { -- Aethon
 					["questID"] = 58526,
 					["isDaily"] = true,
