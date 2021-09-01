@@ -35,6 +35,9 @@ _.WorldEvents =
 			--{ 44.96, 50.07, FROSTWALL },	-- Zhang Yeoh
 		},
 		["g"] = {
+			f(113, {	-- Bags
+				i(183634),	-- Papa's Mint Condition Bag (9.1)
+			}),
 			filter(103, {	-- Illusions
 				un(21, i(138838)),	-- Illusion: Deathfrost
 				un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(118572)),	-- Illusion: Flame of Ragnaros
