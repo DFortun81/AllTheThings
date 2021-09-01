@@ -4160,19 +4160,27 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					i(37586),	-- Handful of Treats
 				},
 			}),
-			q(8353,  {	-- Chicken Clucking for a Mint (Alliance)
-				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Jesper!|r for this quest to become available.",
-				["repeatable"] = true,
-				["provider"] = { "n", 6740 },	-- Innkeeper Allison
+			q(8353, {	-- Chicken Clucking for a Mint (Alliance)
+				["qg"] = 5111,	-- Innkeeper Firebrew <Innkeeper>
+				["coord"] = { 18.6, 51.4, IRONFORGE },
+				["maps"] = { IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { STORMWIND_CITY },
-			}),
-			q(8354,  {	-- Chicken Clucking for a Mint (Horde)
-				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",
 				["repeatable"] = true,
-				["provider"] = { "n", 6741 },	-- Innkeeper Norman
-				["races"] = HORDE_ONLY,
+				["lvl"] = lvlsquish(10, 1, 10),
+				["groups"] = {
+					i(20490),	-- Ironforge Mint
+				},
+			}),
+			q(8354, {	-- Chicken Clucking for a Mint (Horde)
+				["qg"] = 6741,	-- Innkeeper Norman <Innkeeper>
+				["coord"] = { 67.8, 38.6, UNDERCITY },
 				["maps"] = { UNDERCITY },
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+				["lvl"] = lvlsquish(10, 1, 10),
+				["groups"] = {
+					i(20491),	-- Undercity Mint
+				},
 			}),
 			q(29144, {	-- Clean Up in Stormwind
 				["provider"] = { "n", 51934 },	-- Gretchen Fenlow
@@ -4221,6 +4229,22 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				},
 				["isBreadcrumb"] = true
 			}),
+			q(1658, {	-- Crashing the Wickerman Festival
+				["qg"] = 15199,	-- Sergeant Hartman
+				["coord"] = { 50, 57.2, HILLSBRAD_FOOTHILLS },
+				["maps"] = { HILLSBRAD_FOOTHILLS, SILVERPINE_FOREST, TIRISFAL_GLADES },
+				["timeline"] = { "removed 4.0.3" },
+				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
+				["lvl"] = 25,
+				["groups"] = {
+					objective(1, {	-- Scout out the Forsaken's Wickerman Festival.
+						["provider"] = { "o", 181672 },	-- Wickerman Effigy
+						["coord"] = { 56, 69, TIRISFAL_GLADES },
+					}),
+					i(20557),	-- Hallow's End Pumpkin Treat
+				},
+			}),
 			q(39721, {	-- Culling the Crew
 				["provider"] = { "n", 96705 },	-- Orukan
 				["isDaily"] = true,
@@ -4233,19 +4257,31 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					i(128658),	-- Spooky Supplies
 				},
 			}),
-			q(8357,  {	-- Dancing for Marzipan (Alliance)
-				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Jesper!|r for this quest to become available.",
-				["repeatable"] = true,
-				["provider"] = { "n", 6735 },	-- Innkeeper Saelienne
-				["races"] = ALLIANCE_ONLY,
+			q(8357, {	-- Dancing for Marzipan (Alliance)
+				["qg"] = 6735,	-- Innkeeper Saelienne <Innkeeper>
+				-- #if AFTER CATA
+				["coord"] = { 62.4, 32.8, DARNASSUS },
+				-- #else
+				["coord"] = { 67.2, 15.8, DARNASSUS },
+				-- #endif
 				["maps"] = { DARNASSUS },
-			}),
-			q(8360,  {	-- Dancing for Marzipan (Horde)
-				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",
+				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
-				["provider"] = { "n", 6746 },	-- Innkeeper Pala
-				["races"] = HORDE_ONLY,
+				["lvl"] = lvlsquish(10, 1, 10),
+				["groups"] = {
+					i(20496),	-- Darnassus Marzipan
+				},
+			}),
+			q(8360, {	-- Dancing for Marzipan (Horde)
+				["qg"] = 6746,	-- Innkeeper Pala <Innkeeper>
+				["coord"] = { 45.8, 64.4, THUNDER_BLUFF },
 				["maps"] = { THUNDER_BLUFF },
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+				["lvl"] = lvlsquish(10, 1, 10),
+				["groups"] = {
+					i(20497),	-- Thunder Bluff Marzipan
+				},
 			}),
 			q(29398, {	-- Fencing the Goods (Alliance)
 				["sourceQuests"] = { 29392 },	-- Missing Heirlooms (Alliance)
@@ -4319,19 +4355,37 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					i(33226),	-- Tricky Treat
 				},
 			}),
-			q(8356,  {	-- Flexing for Nougat (Alliance)
-				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Jesper!|r for this quest to become available.",
-				["repeatable"] = true,
-				["provider"] = { "n", 6740 },	-- Innkeeper Allison
-				["races"] = ALLIANCE_ONLY,
+			q(8356, {	-- Flexing for Nougat (Alliance)
+				["qg"] = 6740,	-- Innkeeper Allison <Innkeeper>
+				-- #if AFTER WRATH
+				["coord"] = { 60.4, 75.3, STORMWIND_CITY },
+				-- #else
+				["coord"] = { 52.6, 65.6, STORMWIND_CITY },
+				-- #endif
 				["maps"] = { STORMWIND_CITY },
-			}),
-			q(8359,  {	-- Flexing for Nougat (Horde)
-				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",
+				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
-				["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
-				["races"] = HORDE_ONLY,
+				["lvl"] = lvlsquish(10, 1, 10),
+				["groups"] = {
+					i(20492),	-- Stormwind Nougat
+				},
+			}),
+			q(8359, {	-- Flexing for Nougat (Horde)
+				["qg"] = 6929,	-- Innkeeper Gryshka <Innkeeper>
+				-- #if AFTER LEGION
+				["coord"] = { 53.6, 78.8, ORGRIMMAR },
+				-- #elseif AFTER CATA
+				["coord"] = { 54.2, 68.4, ORGRIMMAR },
+				-- #else
+				["coord"] = { 54.2, 68.4, ORGRIMMAR },
+				-- #endif
 				["maps"] = { ORGRIMMAR },
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+				["lvl"] = lvlsquish(10, 1, 10),
+				["groups"] = {
+					i(20493),	-- Orgrimmar Nougat
+				},
 			}),
 			q(39720, {	-- Foul Fertilizer
 				["provider"] = { "n", 96705 },	-- Orukan
@@ -4356,44 +4410,114 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 23904 },	-- Sir Thomas
 			}),
-			q(8311,  {	-- Hallow's End Treats for Jesper!
-				["provider"] = { "n", 15310 },	-- Jesper
-				["isYearly"] = true,
-				["races"] = ALLIANCE_ONLY,
+			q(8311, {	-- Hallow's End Treats for Jesper!
+				["qg"] = 15310,	-- Jesper
+				-- #if AFTER CATA
+				["coord"] = { 32, 50.4, ELWYNN_FOREST },
 				["maps"] = { ELWYNN_FOREST },
-			}),
-			q(8312,  {	-- Hallow's End Treats for Spoops!
+				-- #elseif AFTER WRATH
+				["coord"] = { 56.6, 51.8, STORMWIND_CITY },
+				["maps"] = { STORMWIND_CITY },
+				-- #else
+				["coord"] = { 47.6, 35.4, STORMWIND_CITY },
+				["maps"] = { STORMWIND_CITY },
+				-- #endif
+				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
-				["provider"] = { "n", 15309 },	-- Spoops
-				["coord"] = { 62.1, 66.4, TIRISFAL_GLADES },
-				["races"] = HORDE_ONLY,
-				["maps"] = { TIRISFAL_GLADES },
+				["lvl"] = lvlsquish(10, 1, 10),
 				["groups"] = {
+					objective(1, {	-- 0/1 Stormwind Nougat
+						["provider"] = { "i", 20492 },	-- Stormwind Nougat
+					}),
+					objective(2, {	-- 0/1 Gnomeregan Gumdrop
+						["provider"] = { "i", 20494 },	-- Gnomeregan Gumdrop
+					}),
+					objective(3, {	-- 0/1 Ironforge Mint
+						["provider"] = { "i", 20490 },	-- Ironforge Mint
+					}),
+					objective(4, {	-- 0/1 Darnassus Marzipan
+						["provider"] = { "i", 20496 },	-- Darnassus Marzipan
+					}),
+					-- #if AFTER CATA
 					i(33226),	-- Tricky Treat
+					-- #else
+					i(20557),	-- Hallow's End Pumpkin Treat
+					-- #endif
 				},
 			}),
-			q(8355,  {	-- Incoming Gumdrop (Alliance)
-				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Jesper!|r for this quest to become available.",
-				["repeatable"] = true,
-				["provider"] = { "n", 5111 },	-- Innkeeper Firebrew
-				["races"] = ALLIANCE_ONLY,
-				["maps"] = { IRONFORGE },
-			}),
-			q(8358,  {	-- Incoming Gumdrop (Horde)
-				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",
-				["repeatable"] = true,
-				["provider"] = { "n", 11814 },	-- Kali Remik
-				["races"] = HORDE_ONLY,
+			q(8312, {	-- Hallow's End Treats for Spoops!
+				["qg"] = 15309,	-- Spoops
+				-- #if AFTER CATA
+				["coord"] = { 67.4, 7, UNDERCITY },
+				["maps"] = { UNDERCITY },
+				-- #elseif AFTER CATA
+				["coord"] = { 62.1, 66.4, TIRISFAL_GLADES },
+				["maps"] = { TIRISFAL_GLADES },
+				-- #else
+				["coord"] = { 71.2, 22.8, ORGRIMMAR },
 				["maps"] = { ORGRIMMAR },
+				-- #endif
+				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
+				["lvl"] = lvlsquish(10, 1, 10),
+				["groups"] = {
+					objective(1, {	-- 0/1 Orgrimmar Nougat
+						["provider"] = { "i", 20493 },	-- Orgrimmar Nougat
+					}),
+					objective(2, {	-- 0/1 Darkspear Gumdrop
+						["provider"] = { "i", 20495 },	-- Darkspear Gumdrop
+					}),
+					objective(3, {	-- 0/1 Undercity Mint
+						["provider"] = { "i", 20491 },	-- Undercity Mint
+					}),
+					objective(4, {	-- 0/1 Thunder Bluff Marzipan
+						["provider"] = { "i", 20497 },	-- Thunder Bluff Marzipan
+					}),
+					-- #if AFTER CATA
+					i(33226),	-- Tricky Treat
+					-- #else
+					i(20557),	-- Hallow's End Pumpkin Treat
+					-- #endif
+				},
+			}),
+			q(8355, {	-- Incoming Gumdrop (Alliance)
+				["qg"] = 6826,	-- Talvash del Kissel
+				["coord"] = { 36, 4, IRONFORGE },
+				["maps"] = { IRONFORGE },
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+				["lvl"] = lvlsquish(10, 1, 10),
+				["groups"] = {
+					i(20494),	-- Gnomeregan Gumdrop
+				},
+			}),
+			q(8358, {	-- Incoming Gumdrop (Horde)
+				["qg"] = 11814,	-- Kali Remik
+				-- #if AFTER LEGION
+				["coord"] = { 32.6, 65, ORGRIMMAR },
+				["maps"] = { ORGRIMMAR },
+				-- #elseif AFTER CATA
+				["coord"] = { 33.5, 64.9, ORGRIMMAR },
+				["maps"] = { ORGRIMMAR },
+				-- #else
+				["coord"] = { 56.2, 74.2, DUROTAR },
+				["maps"] = { DUROTAR },
+				-- #endif
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+				["lvl"] = lvlsquish(10, 1, 10),
+				["groups"] = {
+					i(20495),	-- Darkspear Gumdrop
+				},
 			}),
 			q(11357, {	-- Masked Orphan Matron
-				["providers"] = {
-					{ "n", 19169 },	-- Blood Elf Commoner
-					{ "n", 19175 },	-- Orc Commoner
-					{ "n", 19176 },	-- Tauren Commoner
-					{ "n", 19177 },	-- Troll Commoner
-					{ "n", 19178 },	-- Forsaken Commoner
-					{ "n", 20102 },	-- Goblin Commoner
+				["qgs"] = {
+					19169,	-- Blood Elf Commoner
+					19175,	-- Orc Commoner
+					19176,	-- Tauren Commoner
+					19177,	-- Troll Commoner
+					19178,	-- Forsaken Commoner
+					20102,	-- Goblin Commoner
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
@@ -4437,6 +4561,37 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					i(128658),	-- Spooky Supplies
 				},
 			}),
+			q(8322, {	-- Rotten Eggs
+				["qg"] = 15197,	-- Darkcaller Yanka
+				["coords"] = {
+					{ 55.6, 69.9, TIRISFAL_GLADES },
+					{ 51.4, 59.0, HILLSBRAD_FOOTHILLS },
+				},
+				["maps"] = {
+					TIRISFAL_GLADES,
+					HILLSBRAD_FOOTHILLS,
+				},
+				["timeline"] = { "removed 4.0.3" },
+				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
+				["cost"] = {
+					{ "i", 20605, 1 },	-- Rotten Eggs
+				},
+				["lvl"] = 30,
+			}),
+			q(8409, {	-- Ruined Kegs
+				["provider"] = { "o", 180570 },	-- Keg
+				["sourceQuest"] = 8322,	-- Rotten Eggs
+				["coord"] = { 51.4, 59.0, HILLSBRAD_FOOTHILLS },
+				["maps"] = { HILLSBRAD_FOOTHILLS },
+				["timeline"] = { "removed 4.0.3" },
+				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
+				["lvl"] = 30,
+				["groups"] = {
+					i(20557),	-- Hallow's End Pumpkin Treat
+				},
+			}),
 			q(29399, {	-- Shopping Around (Alliance)
 				["sourceQuests"] = { 29398 },	-- Fencing the Goods (Alliance)
 				["provider"] = { "n", 8719 },	-- Auctioneer Fitch
@@ -4448,6 +4603,25 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				["provider"] = { "n", 44866 },	-- Auctioneer Drezmit
 				["races"] = HORDE_ONLY,
 				["maps"] = { ORGRIMMAR },
+			}),
+			q(1657, {	-- Stinking Up Southshore
+				["qg"] = 15197,	-- Darkcaller Yanka
+				["coord"] = { 55.6, 69.9, TIRISFAL_GLADES },
+				["maps"] = {
+					TIRISFAL_GLADES,
+					HILLSBRAD_FOOTHILLS,
+				},
+				["timeline"] = { "removed 4.0.3" },
+				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
+				["lvl"] = 25,
+				["groups"] = {
+					objective(1, {	-- Toss Stink Bomb into Southshore
+						["provider"] = { "i", 20387 },	-- Forsaken Stink Bomb Cluster
+						["coord"] = { 49.8, 57.9, HILLSBRAD_FOOTHILLS },
+					}),
+					i(20557),	-- Hallow's End Pumpkin Treat
+				},
 			}),
 			q(39716, {	-- Smashing Squashlings
 				["provider"] = { "n", 96705 },	-- Orukan
@@ -4626,63 +4800,45 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					TIRISFAL_GLADES,
 				},
 			}),
+			q(8373, {	-- The Power of Pine
+				["qg"] = 15199,	-- Sergeant Hartman
+				["coord"] = { 50, 57.2, HILLSBRAD_FOOTHILLS },
+				["maps"] = { HILLSBRAD_FOOTHILLS },
+				["timeline"] = { "removed 4.0.3" },
+				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
+				["lvl"] = 25,
+				["groups"] = {
+					objective(1, {	-- Clean up a stink bomb that's been dropped on Southshore!
+						["provider"] = { "i", 20604 },	-- Stink Bomb Cleaner
+					}),
+					i(20557),	-- Hallow's End Pumpkin Treat
+				},
+			}),
 			q(43162, {	-- Under the Crooked Tree
-				["sourceQuests"] = { 43259 },	-- Beware of the Crooked Tree
-				["provider"] = { "n", 109734 },	-- Hag of the Crooked Tree
-				["isDaily"] = true,
+				["qg"] = 109734,	-- Hag of the Crooked Tree
+				["sourceQuest"] = 43259,	-- Beware of the Crooked Tree
 				["coord"] = { 34.9, 56.0, VALSHARAH },
 				["maps"] = { VALSHARAH },
+				["isDaily"] = true,
 				["groups"] = {
+					i(139133),	-- Hat of the First Sister
+					i(139134),	-- Hat of the Second Sister
+					i(139135),	-- Hat of the Third Sister
+					i(139136),	-- Hat of the Youngest Sister
 					i(139137, {	-- Hag's Belongings
-						i(139133),	-- Hat of the First Sister
-						i(139134),	-- Hat of the Second Sister
-						i(139135),	-- Hat of the Third Sister
-						i(139136),	-- Hat of the Youngest Sister
-						i(116851),	-- Hallowed Wand - Abomination
-						i(139004),	-- Hallowed Wand - Banshee
-						i(20410,  {	-- Hallowed Wand - Bat
-							crit(1, {	-- Transformed by Hallowed Wand - Bat
-								["achievementID"] = 283,	-- The Masquerade
-							}),
-						}),
-						i(128645),	-- Hallowed Wand - Gargoyle
-						i(116853),	-- Hallowed Wand - Geist
-						i(20409,  {	-- Hallowed Wand - Ghost
-							crit(2, {	-- Transformed by Hallowed Wand - Ghost
-								["achievementID"] = 283,	-- The Masquerade
-							}),
-						}),
-						i(116850),	-- Hallowed Wand - Ghoul
-						i(20399,  {	-- Hallowed Wand - Leper Gnome
-							crit(3, {	-- Transformed by Hallowed Wand - Leper Gnome
-								["achievementID"] = 283,	-- The Masquerade
-							}),
-						}),
-						i(128646),	-- Hallowed Wand - Nerubian
-						i(20398,  {	-- Hallowed Wand - Ninja
-							crit(4, {	-- Transformed by Hallowed Wand - Ninja
-								["achievementID"] = 283,	-- The Masquerade
-							}),
-						}),
-						i(20397,  {	-- Hallowed Wand - Pirate
-							crit(5, {	-- Transformed by Hallowed Wand - Pirate
-								["achievementID"] = 283,	-- The Masquerade
-							}),
-						}),
-						i(20411,  {	-- Hallowed Wand - Skeleton
-							crit(6, {	-- Transformed by Hallowed Wand - Skeleton
-								["achievementID"] = 283,	-- The Masquerade
-							}),
-						}),
-						i(116848),	-- Hallowed Wand - Slime
-						i(116854),	-- Hallowed Wand - Spider
-						i(128644),	-- Hallowed Wand - Wight
-						i(20414,  {	-- Hallowed Wand - Wisp
-							crit(7, {	-- Transformed by Hallowed Wand - Wisp
-								["achievementID"] = 283,	-- The Masquerade
-							}),
-						}),
-						i(33226),	-- Tricky Treat
+						["sym"] = {
+							{ "select", "creatureID", 53756 },	-- Darla <Wand Vendor>
+							{ "select", "creatureID", 53702 },	-- Stymie <Wand Vendor>
+							{ "pop" },	-- Get the Wands.
+							{ "postprocess" },	-- Post Process the search results to ensure no duplicate keys exist.
+							{ "exclude", "itemID", 20413 },	-- Exclude Hallowed Wand - Random
+							{ "select", "itemID", 139133 },	-- Hat of the First Sister
+							{ "select", "itemID", 139134 },	-- Hat of the Second Sister
+							{ "select", "itemID", 139135 },	-- Hat of the Third Sister
+							{ "select", "itemID", 139136 },	-- Hat of the Youngest Sister
+							{ "select", "itemID", 33226 },	-- Tricky Treat
+						},
 					}),
 				},
 			}),
@@ -4842,7 +4998,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				["coord"] = { 62.2, 66.4, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
 				["maps"] = { TIRISFAL_GLADES },
-				["groups"] = bubbleDown({["u"] = 26}, {
+				["groups"] = {
 					i(116851, {	-- Hallowed Wand - Abomination
 						["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 					}),
@@ -4929,7 +5085,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 							}),
 						},
 					}),
-				}),
+				},
 			}),
 			n(53728,  {	-- Dorothy <Candy & Toy Vendor>
 				["races"] = ALLIANCE_ONLY,
@@ -5053,7 +5209,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				["races"] = HORDE_ONLY,
 				["coord"] = { 62.3, 66.4, TIRISFAL_GLADES },
 				["maps"] = { TIRISFAL_GLADES },
-				["groups"] = bubbleDown({["u"] = 26}, {
+				["groups"] = {
 					i(34000,  {	-- Blood Elf Female Mask
 						["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 						["groups"] = {
@@ -5270,7 +5426,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 							}),
 						},
 					}),
-				}),
+				},
 			}),
 			n(96362,  {	-- Izzy Hollyfizzle <Events Coordinator>
 				["coords"] = {
@@ -5281,7 +5437,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					FROSTWALL,
 					LUNARFALL,
 				},
-				["groups"] = bubbleDown({["u"] = 26}, {
+				["groups"] = {
 					i(128664, {	-- Creepy Crawlers
 						["questID"] = 39759,
 						["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
@@ -5305,13 +5461,13 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["questID"] = 39611,
 						["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
 					}),
-				}),
+				},
 			}),
 			n(109685, {	-- Pippi <Pet Vendor>
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 31.9, 50.2, ELWYNN_FOREST },
 				["maps"] = { ELWYNN_FOREST },
-				["groups"] = bubbleDown({["u"] = 26}, {
+				["groups"] = {
 					i(116811, {	-- "Lil' Starlet" Costume
 						["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
 					}),
@@ -5344,13 +5500,13 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					i(116804, {	-- Widget the Departed (PET!)
 						["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 					}),
-				}),
+				},
 			}),
 			n(52497,  {	-- Spanky <Mask Vendor>
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 31.8, 50.0, ELWYNN_FOREST },
 				["maps"] = { ELWYNN_FOREST },
-				["groups"] = bubbleDown({["u"] = 26}, {
+				["groups"] = {
 					i(34000,  {	-- Blood Elf Female Mask
 						["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 						["groups"] = {
@@ -5567,13 +5723,13 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 							}),
 						},
 					}),
-				}),
+				},
 			}),
 			n(53702,  {	-- Stymie <Wand Vendor>
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 31.9, 50.1, ELWYNN_FOREST },
 				["maps"] = { ELWYNN_FOREST },
-				["groups"] = bubbleDown({["u"] = 26}, {
+				["groups"] = {
 					i(116851, {	-- Hallowed Wand - Abomination
 						["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 					}),
@@ -5660,13 +5816,13 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 							}),
 						},
 					}),
-				}),
+				},
 			}),
 			n(109688, {	-- Woim <Pet Vendor>
 				["races"] = HORDE_ONLY,
 				["coord"] = { 62.3, 66.4, TIRISFAL_GLADES },
 				["maps"] = { TIRISFAL_GLADES },	-- Note!! While technically under UC this is where the map swaps.
-				["groups"] = bubbleDown({["u"] = 26}, {
+				["groups"] = {
 					i(116811, {	-- "Lil' Starlet" Costume
 						["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
 					}),
@@ -5699,12 +5855,13 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					i(116804, {	-- Widget the Departed (PET!)
 						["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 					}),
-				}),
+				},
 			}),
 		}),
 		n(ZONEDROPS, {
 			i(128807, {	-- Coin of Many Faces (TOY!)
 				["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
+				["timeline"] = { "added 6.2.2" },
 				["crs"] = {
 					96637,	-- Boneship Reveler
 					96538,	-- Brackish Cultivator
@@ -5713,7 +5870,9 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					96536,	-- Salty Dreg
 				},
 			}),
-			i(33117),	-- Jack-o'-Lantern
+			i(33117, {	-- Jack-o'-Lantern
+				["timeline"] = { "added 2.2.3" },
+			}),
 			i(20400),	-- Pumpkin Bag
 		}),
 	},
