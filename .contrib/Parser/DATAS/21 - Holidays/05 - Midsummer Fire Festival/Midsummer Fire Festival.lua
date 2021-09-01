@@ -1886,7 +1886,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 			q(11696, {	-- Ahune is Here!
 				["qg"] = 25710,	-- Numa Cloudsister
 				["sourceQuest"] = 11955,	-- Ahune, the Frost Lord
-				["timeline"] = { "added 2.4.0.7994" },
+				["timeline"] = { "added 2.4.0.7994", "removed 4.0.1" },
 				["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS },
 				["lvl"] = lvlsquish(65, 15, 15),
 			}),
@@ -1894,7 +1894,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				["qg"] = EARTHEN_RING_ELDER_ID,
 				["sourceQuest"] = 11891,	-- An Innocent Disguise
 				["coords"] = EARTHEN_RING_ELDER_COORDS,
-				["timeline"] = { "added 2.4.0.7994" },
+				["timeline"] = { "added 2.4.0.7994", "removed 4.0.1" },
 				["maps"] = EARTHEN_RING_ELDER_MAPS,
 				["isBreadcrumb"] = true,
 				["lvl"] = lvlsquish(65, 15, 15),
