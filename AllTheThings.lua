@@ -2638,6 +2638,20 @@ subroutines = {
 		}
 	end,
 };
+local function Resolve_Extract(results, group, field)
+	if group.g then
+		for _,o in ipairs(group.g) do
+			if o[field] then
+				tinsert(results, o);
+			else
+				Resolve_Extract(results, o);
+			end
+		end
+	elseif group[field] then
+		tinsert(results, group);
+	end
+	return results;
+end
 ResolveSymbolicLink = function(o)
 	if o and o.sym then
 		local searchResults, finalized = {}, {};
@@ -2698,6 +2712,14 @@ ResolveSymbolicLink = function(o)
 						table.remove(searchResults, k);
 					end
 				end
+			elseif cmd == "extract" then
+				-- Instruction to extract all nested results which contain a given field
+				local field = sym[2];
+				local results = {};
+				for _,o in ipairs(searchResults) do
+					Resolve_Extract(results, o, field);
+				end
+				searchResults = results;
 			elseif cmd == "index" then
 				-- Instruction to include the search result with a given index within each of the selection's groups.
 				local index = sym[2];
@@ -4347,6 +4369,7 @@ fieldCache["questID"] = {};
 fieldCache["s"] = {};
 fieldCache["speciesID"] = {};
 fieldCache["spellID"] = {};
+fieldCache["tierID"] = {};
 fieldCache["titleID"] = {};
 fieldCache["toyID"] = {};
 fieldConverters = {
@@ -4443,6 +4466,9 @@ fieldConverters = {
 	end,
 	["spellID"] = function(group, value)
 		CacheField(group, "spellID", value);
+	end,
+	["tierID"] = function(group, value)
+		CacheField(group, "tierID", value);
 	end,
 	["titleID"] = function(group, value)
 		CacheField(group, "titleID", value);
