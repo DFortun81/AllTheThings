@@ -359,7 +359,7 @@ _.Zones =
 						i(180583, {	-- Impressionable Gorger Spawn
 							["description"] = "To have a chance for this item to drop, you may need to complete the The Endmire Quest (/ATT quest:60480). Better save than sorry, the Quest only takes 1 minute to do.",
 							["g"] = {
-								i(182589), -- Loyal Gorger
+							--	i(182589), -- Loyal Gorger
 							},
 						}),
 					},

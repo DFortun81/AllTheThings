@@ -9,7 +9,7 @@ _.Zones =
 			n(ZONEDROPS, {
 				currency(1819, {	-- Medallion of Service
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian
-					["description"] = "Can drop from any Forsworn enemy.",
+					["description"] = "One of the best spots to farm those is in n the northwest of Bastion around the World Boss. In the area there are 4 repeatable treasure chests, all of which each contain 1 Medallion & can be looted without any daily CD. \n\nCan also drop from any Forsworn enemy.",
 				}),
 				i(184397, {	-- Lost Featherling (PET!)
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian
