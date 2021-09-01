@@ -401,24 +401,6 @@ _.ExpansionFeatures =
 						i(164374),	-- Magic Monkey Banana
 						i(163795),	-- Oomgut Ritual Drum
 						i(163924),	-- Whiskerwax Candle
-						--Note!! The two below items are unconfirmed to drop.
-						--Source: https://twitter.com/WarcraftDevs/status/1065080683058487297
-						--As of Patch 8.1 now returns "Retrieving Information" meaning they were pulled for some reason.
-						--The next three items will be marked as NYI in the event that they are hotfixed or added in the future
-						--and people can report that they are dropping.
-						i(164372, {	-- Jinyu Light Globe
-							["u"] = NEVER_IMPLEMENTED,
-							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
-						}),
-						i(164377, {	-- Regenerating Banana Bunch
-							["u"] = NEVER_IMPLEMENTED,
-							["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
-						}),
-						--Note!! The below item doesn't show up in the files at all.  It returns "Retrieving Information".
-						i(164371, {	-- Yaungol Oil Stove
-							["u"] = NEVER_IMPLEMENTED,
-							["description"] = "This item was removed from the game database in 8.0.\nIf you get this as a drop please report to the ATT Discord!.",
-						}),
 					}),
 					n(-319, {	-- Weapons
 						i(168644),	-- Converted Carrot Carbine
@@ -525,8 +507,13 @@ _.ExpansionFeatures =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10052, {	-- Battle for Azeroth
 		n(-3338, {	-- Island Expeditions
-			i(163922),	-- Used for a toy, you never can get the actual item
-			i(163923),	-- Used for a toy, you never can get the actual item
+			n(-161, {	-- Toys
+				i(163922),	-- Used for a toy, you never can get the actual item
+				i(163923),	-- Used for a toy, you never can get the actual item
+				i(164372),	-- Jinyu Light Globe
+				i(164377),	-- Regenerating Banana Bunch
+				i(164371),	-- Yaungol Oil Stove
+			}),
 		}),
 	}),
 });
