@@ -1084,6 +1084,7 @@ namespace ATT
                     switch (pair.Key)
                     {
                         case "description":
+                        case "lore":
                         //case "lvl":
                         case "races":
                         case "classes":
@@ -1224,6 +1225,7 @@ namespace ATT
                         case "collectible":
                         case "hideText":
                         case "description":
+                        case "lore":
                             //case "lvl":
                             // Ignore these!
                             break;
@@ -1464,6 +1466,7 @@ namespace ATT
                             item[field] = ATT.Export.ToString(value).Replace("\\\\", "\\").Replace("\\\\", "\\").Replace("\\", "\\\\");
                             break;
                         }
+                    case "lore":
                     case "name":
                     case "description":
                     case "title":

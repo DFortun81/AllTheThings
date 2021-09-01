@@ -2030,6 +2030,7 @@ namespace ATT
                 case "isRaid":
                 case "isToy":
                 case "isWorldQuest":
+                case "lore":
                 case "mapID":
                 case "maps":
                 case "missionID":

@@ -436,6 +436,7 @@ namespace ATT
                         }
 
                     // String Data Type Fields
+                    case "lore":
                     case "name":
                     case "description":
                         {
