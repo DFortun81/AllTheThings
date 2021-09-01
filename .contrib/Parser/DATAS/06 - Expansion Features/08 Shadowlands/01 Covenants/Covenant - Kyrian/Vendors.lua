@@ -21,6 +21,11 @@ _.ExpansionFeatures =
 							i(186485, {	-- Ascendant's Aquilon (MOUNT!)
 								["cost"] = { { "c", 1813, 7500 } },	-- 7,500 Reservoir Anima
 							}),
+							i(184665, {	-- Chronicle of Lost Memories
+								["cost"] = {
+									{ "c", 1885, 35 },
+								},
+							}),
 							i(180762, {	-- Phalynx of Humility (MOUNT!)
 								["cost"] = {
 									{ "c", 1813, 5000 },
