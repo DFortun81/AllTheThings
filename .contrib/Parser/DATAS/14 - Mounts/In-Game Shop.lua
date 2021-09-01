@@ -11,10 +11,10 @@ _.Mounts =
 		un(BLIZZARD_BALANCE, mount(302362, {	-- Alabaster Thunderwing	-- No in game item
 			["races"] = HORDE_ONLY,
 		})),
-		un(BLIZZARD_BALANCE, i(95341)),			-- Armored Bloodwing
+		un(REMOVED_FROM_GAME, i(95341)),			-- Armored Bloodwing
 		un(BLIZZARD_BALANCE, i(54811)),			-- Celestial Steed
 		un(BLIZZARD_BALANCE, i(97989)),			-- Enchanted Fey Dragon
-		un(BLIZZARD_BALANCE, i(112327)),		-- Grinning Reaver
+		un(REMOVED_FROM_GAME, i(112327)),			-- Grinning Reaver
 		un(BLIZZARD_BALANCE, i(78924)),			-- Heart of the Aspects
 		un(BLIZZARD_BALANCE, i(166774)),		-- Hogrus, Swine of Good Fortune
 		un(BLIZZARD_BALANCE, mount(124659)),	-- Imperial Quilen
@@ -25,7 +25,7 @@ _.Mounts =
 		un(BLIZZARD_BALANCE, i(156564)),		-- Shu-zen, the Divine Sentinel
 		un(BLIZZARD_BALANCE, mount(308078)),	-- Squeakers, the Trickster
 		un(BLIZZARD_BALANCE, mount(326390)),	-- Steamscale Incinerator
-		un(BLIZZARD_BALANCE, i(92724)),			-- Swift Windsteed
+		un(REMOVED_FROM_GAME, i(92724)),			-- Swift Windsteed
 		un(BLIZZARD_BALANCE, i(166776)),		-- Sylverian Dreamer
 		un(BLIZZARD_BALANCE, i(160589)),		-- The Dreadwake
 		un(BLIZZARD_BALANCE, mount(346136)),	-- Viridian Phase-Hunter
