@@ -10261,6 +10261,10 @@ app.TryPopulateQuestRewards = function(questObject)
 						-- put all the item information into a basic table
 						local item = { ["itemID"] = itemID, ["s"] = GetSourceID(link), ["rawlink"] = link, ["modID"] = modID and tonumber(modID), ["bonusID"] = bonusID1 and tonumber(bonusID1) };
 						-- if app.DEBUG_PRINT then app.PrintTable(item) end
+						-- block the group from being collectible as a cost if the option is not enabled
+						if not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies") then
+							item.collectibleAsCost = false;
+						end
 						if search then
 							-- find the specific item which the link represents
 							local modItemID, count, data = GetGroupItemIDWithModID(nil, itemID, modID, bonusID1), #search;
@@ -10308,6 +10312,10 @@ app.TryPopulateQuestRewards = function(questObject)
 
 				currencyID = tonumber(currencyID);
 				local item = { ["currencyID"] = currencyID };
+				-- block the group from being collectible as a cost if the option is not enabled
+				if not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies") then
+					item.collectibleAsCost = false;
+				end
 				_cache = SearchForField("currencyID", currencyID);
 				if _cache then
 					for _,data in ipairs(_cache) do
