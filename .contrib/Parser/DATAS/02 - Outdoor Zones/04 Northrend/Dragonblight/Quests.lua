@@ -1554,7 +1554,7 @@ _.Zones =
 					["sourceQuest"] = 12305,	-- Parting Thoughts
 				}),
 				q(12271, {	-- The Rod of Compulsion
-					["crs"] = { 27209 },	-- Torturer LeCraft
+					["crs"] = { 27209 },	-- Torturer Alphonse
 					["coord"] = { 69.7, 71.9, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 37432 },	-- Torturer's Rod
