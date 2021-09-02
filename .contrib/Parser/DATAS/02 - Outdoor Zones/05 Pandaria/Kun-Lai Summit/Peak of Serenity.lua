@@ -33,11 +33,6 @@ _.Zones =
 							i(89567),
 							i(89569),
 						}),
-						q(31833, {	-- Continue Your Training: Master Woo
-							i(89556),
-							i(89558),
-							i(89555),
-						}),
 						q(31836, {	-- Continue Your Training: Master Yoon
 							i(89548),
 							i(89549),
@@ -70,6 +65,12 @@ _.Zones =
 						q(31843, {	-- Practice Makes Perfect: Master Yoon/lvl 50
 							["isDaily"] = true,
 						}),
+						q(31833, {	-- Continue Your Training: Master Woo/removed in 8.0.1
+						i(89556),
+						i(89558),
+						i(89555),
+						["u"] = REMOVED_FROM_GAME
+					}),
 						q(31856),	-- The Peak of Serenity - Begin Your Training
 						q(31989),	-- The Peak of Serenity - Complete Your Training/lvl 90
 						q(31859),	-- The Peak of Serenity - Continue Your Training/lvl 60
@@ -85,7 +86,7 @@ _.Zones =
 						n(66354, {	-- Master Cannon <Tanner>
 							["description"] = "All items on this vendor are quest rewards. You must have completed the quest to purchase the reward.|r",
 							["g"] = {
-								-- biting/formidable/serene yellow belt currently bugged. Temporarily marking them unavailable until blizzard fixes it
+								-- biting/formidable/serene yellow belt currently bugged. Removed in 8.0.1
 								un(REMOVED_FROM_GAME, i(89555)),	-- Biting Yellow Belt
 								un(REMOVED_FROM_GAME, i(89556)),	-- Formidable Yellow Belt
 								un(REMOVED_FROM_GAME, i(89558)),	-- Serene Yellow Belt
@@ -102,6 +103,7 @@ _.Zones =
 						}),
 						n(66356, {	-- Master Hwang <Staff Vendor>
 							["description"] = "The blue-quality staves on this vendor are quest rewards. You must have completed the quest to purchase the reward.|r",
+							["coord"] = { 50.44, 42.61, KUN_LAI_SUMMIT },
 							["g"] = {
 								i(89553),	-- Aspirant's Staff of Grace
 								i(89551),	-- Aspirant's Staff of Harmony
@@ -125,6 +127,7 @@ _.Zones =
 						}),
 						n(66359, {	-- Master Tan <Fist Weapon Vendor>
 							["description"] = "The blue-quality fist weapons on this vendor require that you have completed the level 30 Monk quest 'Continue Your Training: Master Hsu'|r",
+							["coord"] = { 50.02, 38.53, KUN_LAI_SUMMIT },
 							["g"] = {
 								i(89579),	-- Tiger Lord's Bladed Claws
 								i(89578),	-- Tiger Lord's Razor Claws
