@@ -493,7 +493,7 @@ _.NeverImplemented =
 			i(54652),	-- Righteous Armor
 			i(54655),	-- Stormshroud Armor (Leather) (prof
 			i(54658),	-- Lionfur Armor
-			i(54665),	-- Jessera's Fungus Lined Vest
+			i(54665),	-- Maatparm's Fungus Lined Vest
 			i(54666),	-- Ceremonial Leather Harness
 			i(54667),	-- Vest of the Dragon Slayer
 			i(54668),	-- Murloc Scale Breastplate

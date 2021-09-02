@@ -249,7 +249,6 @@ ARCHONS_RISE = 1707;
 SANCTUM_OF_BINDING = 1708;
 KORTHIA = 1961;
 TAZAVESH_THE_VEILED_MARKET_WORLD = 2016;
--- SPIRES_OF_ASCENSION = 2018;	-- 2017/2018 are one-time scenario maps and not related to the dungeon
 
 -- Holiday Filters
 -- TODO: Match Classic. (Left = Original, Right = Classic)

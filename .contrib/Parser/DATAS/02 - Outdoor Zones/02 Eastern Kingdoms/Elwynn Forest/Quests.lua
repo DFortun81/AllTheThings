@@ -179,13 +179,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(147,   {	-- Manhunt
-					["provider"] = { "n", 42256 },	-- Marshal McCree
+					["provider"] = { "n", 42256 },	-- Marshal Patterson
 					["coord"] = { 81.8, 66.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 123,	-- The Collector
 					["g"] = {
 						i(1183),	-- Elastic Wristguards
-						i(57522),	-- McCree's Sparring Gloves
+						i(57522),	-- Patterson's Sparring Gloves
 						i(1360),	-- Stormwind Plate Gloves
 						i(131198),	-- Wrangling Grips
 						i(57251),	-- "Collecting" Bag

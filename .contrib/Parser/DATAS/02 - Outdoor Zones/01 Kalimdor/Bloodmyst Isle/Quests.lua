@@ -448,7 +448,7 @@ _.Zones =
 					["lvl"] = lvlsquish(16, 1, 16),
 				}),
 				q(9648, {	-- Mac'Aree Mushroom Menagerie
-					["qg"] = 17663,	-- Jessera of Mac'Aree
+					["qg"] = 17663,	-- Maatparm of Mac'Aree
 					["coord"] = { 56.4, 56.8, BLOODMYST_ISLE },
 					["cost"] = {
 						{ "i", 24041, 1 },	-- Aquatic Stinkhorn
@@ -459,12 +459,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 1, 10),
 					["groups"] = {
-						i(26028),	-- Jessera's Fungus Lined Bands
+						i(26028),	-- Maatparm's Fungus Lined Bands
 						-- #if AFTER LEGION
-						i(131267),	-- Jessera's Fungus Lined Bindings
+						i(131267),	-- Maatparm's Fungus Lined Bindings
 						-- #endif
-						i(26040),	-- Jessera's Fungus Lined Bracers
-						i(26014),	-- Jessera's Fungus Lined Cuffs
+						i(26040),	-- Maatparm's Fungus Lined Bracers
+						i(26014),	-- Maatparm's Fungus Lined Cuffs
 					},
 				}),
 				q(9711, {	-- Matis the Cruel
@@ -951,7 +951,7 @@ _.Zones =
 					["lvl"] = lvlsquish(18, 1, 18),
 				}),
 				q(9649, {	-- Ysera's Tears
-					["qg"] = 17663,	-- Jessera of Mac'Aree
+					["qg"] = 17663,	-- Maatparm of Mac'Aree
 					["sourceQuest"] = 9648,	-- Mac'Aree Mushroom Menagerie
 					["coord"] = { 56.4, 56.8, BLOODMYST_ISLE },
 					["cost"] = {
@@ -961,11 +961,11 @@ _.Zones =
 					["lvl"] = lvlsquish(15, 1, 15),
 					["groups"] = {
 						-- #if AFTER LEGION
-						i(131268),	-- Jessera's Fungus Lined Chainmail
+						i(131268),	-- Maatparm's Fungus Lined Chainmail
 						-- #endif
-						i(26030),	-- Jessera's Fungus Lined Hauberk
-						i(26005),	-- Jessera's Fungus Lined Tunic
-						i(26019),	-- Jessera's Fungus Lined Vest
+						i(26030),	-- Maatparm's Fungus Lined Hauberk
+						i(26005),	-- Maatparm's Fungus Lined Tunic
+						i(26019),	-- Maatparm's Fungus Lined Vest
 					},
 				}),
 			}),
