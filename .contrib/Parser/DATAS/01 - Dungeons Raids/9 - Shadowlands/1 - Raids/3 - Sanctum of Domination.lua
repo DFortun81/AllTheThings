@@ -1351,14 +1351,14 @@ _.HiddenQuestTriggers = {
 	q(64487),	-- Painsmith Raznal (Heroic) (Heroic-Week 2)
 	q(64634),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
 	q(64661),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
-	-- q( ),	-- Painsmith Raznal (Mythic)
+	q(64488),	-- Painsmith Raznal (Mythic)
 
 	q(64489),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
 	q(64490),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
 	q(64491),	-- Guardian of the First Ones (Heroic) (Heroic-Week 2)
 	q(64635),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
 	q(64662),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
-	-- q( ),	-- Guardian of the First Ones (Mythic)
+	q(64492),	-- Guardian of the First Ones (Mythic)
 
 	q(64493),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
 	q(64494),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
