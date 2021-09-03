@@ -10,18 +10,17 @@ _.Mounts =
 		un(REMOVED_FROM_GAME, i(109013)),	-- Dread Raven
 		un(REMOVED_FROM_GAME, i(106246)),	-- Emerald Hippogryph
 		un(BLIZZARD_BALANCE, mount(307932)),	-- Ensorcelled Everwyrm
-		un(REMOVED_FROM_GAME, i(173297)),	-- Explorer's Dunetrekker
-		un(REMOVED_FROM_GAME, i(173299)),	-- Explorer's Jungle Hopper
-		un(REMOVED_FROM_GAME, i(153540)),	-- Gilded Ravasaur
+		un(BLIZZARD_BALANCE, i(173297)),	-- Explorer's Dunetrekker
+		un(BLIZZARD_BALANCE, i(173299)),	-- Explorer's Jungle Hopper
+		un(BLIZZARD_BALANCE, i(153540)),	-- Gilded Ravasaur
 		i(98618),			-- Hearthsteed
 		un(REMOVED_FROM_GAME, i(83086)),	-- Heart of the Nightwing
-		un(REMOVED_FROM_GAME, i(128425)),	-- Illidari Felstalker
-		un(REMOVED_FROM_GAME, i(85870)),	-- Imperial Quilen
-		un(REMOVED_FROM_GAME, i(164571)),	-- Meat Wagon
-		un(REMOVED_FROM_GAME, i(83086)),	-- Obsidian Nightwing
+		un(BLIZZARD_BALANCE, i(128425)),	-- Illidari Felstalker
+		un(BLIZZARD_BALANCE, i(85870)),		-- Imperial Quilen
+		un(BLIZZARD_BALANCE, i(164571)),	-- Meat Wagon
 		un(REMOVED_FROM_GAME, i(151617)),	-- Orgrimmar Interceptor Mount
 		un(REMOVED_FROM_GAME, i(143631)),	-- Primal Flamesaber
-		un(REMOVED_FROM_GAME, i(153539)),	-- Seabraid Stallion
+		un(BLIZZARD_BALANCE, i(153539)),	-- Seabraid Stallion
 		un(BLIZZARD_BALANCE, mount(341821)),	-- Snowstorm
 		un(REMOVED_FROM_GAME, i(76889)),	-- Spectral Gryphon
 		un(REMOVED_FROM_GAME, i(76902)),	-- Spectral Wind Rider
