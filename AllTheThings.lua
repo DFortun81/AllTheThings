@@ -2142,7 +2142,7 @@ MergeObject = function(g, t, index, newCreate)
 		if hash then
 			for i,o in ipairs(g) do
 				if GetHash(o) == hash then
-					MergeProperties(o, t);
+					MergeProperties(o, t, true);
 					NestObjects(o, t.g, newCreate);
 					return o;
 				end
@@ -2183,7 +2183,7 @@ MergeObjects = function(g, g2, newCreate)
 				if hash then
 					t = hashTable[hash];
 					if t then
-						MergeProperties(t, o);
+						MergeProperties(t, o, true);
 						NestObjects(t, o.g, newCreate);
 					else
 						t = CreateObject(o);
@@ -2201,7 +2201,7 @@ MergeObjects = function(g, g2, newCreate)
 				if hash then
 					t = hashTable[hash];
 					if t then
-						MergeProperties(t, o);
+						MergeProperties(t, o, true);
 						NestObjects(t, o.g);
 					else
 						hashTable[hash] = o;
