@@ -3850,7 +3850,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if group.itemID and paramA ~= "npcID" and paramA ~= "encounterID" then
 						-- Add the Zone name
 						local field, id;
-						for _,v in ipairs({"mapID","maps","instanceID","npcID","professionID","questID"}) do
+						for _,v in ipairs({"professionID","mapID","maps","instanceID","npcID","questID"}) do
 							if not field then
 								id = app.RecursiveFirstParentWithField(group, v);
 								-- print("check",v,id)
@@ -3865,17 +3865,26 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 						local locationGroup = app.SearchForObject(field, id) or (id and field == "mapID" and C_Map_GetMapInfo(id));
 						local locationName = locationGroup and (locationGroup.name or locationGroup.text);
-						-- print("contains info",group.itemID,field,id,nestedMapGroup,nestedMapName)
+						-- print("contains info",group.itemID,field,id,locationGroup,locationName)
 						if locationName then
 							-- Add the immediate parent group Vendor name
-							local parent = group.parent;
-							if parent and paramB ~= parent[parent.key] and parent.name then
-								right = locationName .. " > " .. parent.name .. " " .. right;
+							local rawParent, sParent = rawget(group, "parent"), group.sourceParent;
+							-- the source group is different from the raw parent and the search context, then show the source parent text for reference
+							if not GroupMatchesParams(rawParent, sParent.key, sParent[sParent.key]) and not GroupMatchesParams(sParent, paramA, paramB) and sParent.text then
+								right = locationName .. " > " .. sParent.text .. " " .. right;
 							else
 								right = locationName .. " " .. right;
 							end
 						-- else
 							-- print("No Location name for item",group.itemID,id,field)
+						end
+					end
+					-- If this group is an Achievement Criteria (whose raw parent is not the Achievement) then show the Achievement
+					if group.criteriaID and group.achievementID then
+						local rawParent = rawget(group, "parent");
+						if not rawParent or rawParent.achievementID ~= group.achievementID then
+							local critAch = app.SearchForObject("achievementID", group.achievementID);
+							left = left .. " > " .. critAch.text;
 						end
 					end
 					tinsert(info, { left = item.prefix .. left, right = right });
