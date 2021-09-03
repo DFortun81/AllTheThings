@@ -1154,7 +1154,13 @@ local function GetProgressTextForRow(data)
 	elseif data.trackable then
 		return GetCompletionIcon(data.saved);
 	elseif data.visible then
-		return data.count and (data.count .. "x") or "---";
+		if data.count then
+			return (data.count .. "x");
+		end
+		if data.g and not data.expanded and #data.g > 0 then
+			return "+++";
+		end
+		return "---";
 	end
 end
 local function GetProgressTextForTooltip(data)
@@ -12998,17 +13004,7 @@ local function SetRowData(self, row, data)
 			x = rowPad / 2;
 		end
 		local summary = GetProgressTextForRow(data);
-		local iconAdjust;
-		if not summary then
-			if data.g and not data.expanded and #data.g > 0 then
-				summary = "+++";
-			else
-				summary = "---";
-			end
-			iconAdjust = 0;
-		else
-			iconAdjust = string.find(summary, "|T") and -1 or 0;
-		end
+		local iconAdjust = summary and string.find(summary, "|T") and -1 or 0;
 		local specs = data.specs;
 		if specs and #specs > 0 then
 			summary = GetSpecsString(specs, false, false) .. summary;
