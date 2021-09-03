@@ -1358,8 +1358,9 @@ app.L = {
 
 		[-7776] = "Interface\\Icons\\INV_Helm_Cloth_Holiday_Christmas_A_03",				-- Winter Revelers (for Winter Veil)
 
-		[-9914] = "Interface\\FriendsFrame\\PlusManz-Alliance",						-- Alliance
+		[-9912] = "Interface\\FriendsFrame\\PlusManz-PlusManz",						-- Neutral
 		[-9913] = "Interface\\FriendsFrame\\PlusManz-Horde",						-- Horde
+		[-9914] = "Interface\\FriendsFrame\\PlusManz-Alliance",						-- Alliance
 		[-9915] = "Interface\\Icons\\spell_holy_wordfortitude",						-- Discipline Priest Spec
 		[-9917] = "Interface\\Icons\\spell_shadow_shadowwordpain",					-- Shadow Priest Spec
 		[-9924] = "Interface\\Icons\\TalentSpec_Druid_Feral_Bear",					-- Guardian Druid Spec
@@ -2259,6 +2260,7 @@ app.L = {
 		[-7776] = "Winter Revelers",											-- Winter Revelers (for Winter Veil)
 
 	-- Factions
+		[-9912] = COMBATLOG_FILTER_STRING_NEUTRAL_UNITS,						-- Neutral
 		[-9913] = FACTION_HORDE, 												-- Horde
 		[-9914] = FACTION_ALLIANCE, 											-- Alliance
 

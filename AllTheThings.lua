@@ -2732,6 +2732,24 @@ ResolveSymbolicLink = function(o)
 				else
 					print("Failed to select ", sym[2], sym[3]);
 				end
+			elseif cmd == "selectparent" then
+				-- Instruction to select the parent object of the parent that owns the symbolic link.
+				local cache = sym[2];
+				if cache and cache > 0 then
+					local parent = o.parent;
+					while cache > 1 do
+						parent = parent.parent;
+						cache = cache - 1;
+					end
+					if parent then
+						table.insert(searchResults, parent);
+					else
+						print("Failed to select parent " .. sym[2] .. " levels up.");
+					end
+				else
+					-- Select the direct parent object.
+					table.insert(searchResults, o.parent);
+				end
 			elseif cmd == "fill" then
 				-- Instruction to fill with identical content cached elsewhere for this group
 				if o.key and o[o.key] then
