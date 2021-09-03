@@ -260,15 +260,6 @@ _.NeverImplemented =
 		q(39991, {	-- Blessing of Cenarius
 			["u"] = NEVER_IMPLEMENTED,	-- didn't make it to live, triggers when turning in #39988
 		}),
-		q(12338, {	-- Candy Bucket
-			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
-			["isYearly"] = true,
-			["races"] = ALLIANCE_ONLY,
-			["u"] = NEVER_IMPLEMENTED,
-			["g"] = {
-				--i(37586), -- Handful of Treats
-			},
-		}),
 		q(38294, {	-- Sumptuous Fur
 		--	added in 9.0.1 but has WoD title/rewards, is "engineering" category but tailoring rewards?????  move if this quest is ever found
 			["description"] = "Category: |cFFf09f26Engineering|r",
@@ -276,40 +267,6 @@ _.NeverImplemented =
 			["_drop"] = { "g" },	-- drop Hexweave Cloth / Primal Spirit
 			["lvl"] = 10,
 			["u"] = NEVER_IMPLEMENTED,
-		}),
-		q(12375, {	-- Candy Bucket
-			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
-			["isYearly"] = true,
-			["races"] = HORDE_ONLY,
-			["u"] = NEVER_IMPLEMENTED,
-			["g"] = {
-				--i(37586), -- Handful of Treats
-			},
-		}),
-		q(12405, {	-- Candy Bucket
-			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
-			["isYearly"] = true,
-			["u"] = NEVER_IMPLEMENTED,
-			["g"] = {
-				--i(37586), -- Handful of Treats
-			},
-		}),
-		q(12410, {	-- Candy Bucket
-			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
-			["isYearly"] = true,
-			["u"] = NEVER_IMPLEMENTED,
-			["g"] = {
-				--i(37586), -- Handful of Treats
-			},
-		}),
-		q(28975, {	-- Candy Bucket
-			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
-			["isYearly"] = true,
-			["races"] = HORDE_ONLY,
-			["u"] = NEVER_IMPLEMENTED,
-			["g"] = {
-				--i(37586), -- Handful of Treats
-			},
 		}),
 		q(45816),	-- Choose Order Hall to Support
 		q(31806, {	-- Test Quest
