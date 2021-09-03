@@ -155,7 +155,7 @@ _.Promotions =
 			},
 		})),
 		tier(SL_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-			["description"] = "These rewards are available to anyone that purchase Shadowlands Heroic Edition.",
+			["description"] = "These rewards are available to anyone that purchases Shadowlands Heroic Edition.",
 			["timeline"] = { "added 9.0.1" },
 			["groups"] = {
 				mount(307932),	-- Ensorcelled Everwyrm
