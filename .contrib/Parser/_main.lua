@@ -927,7 +927,12 @@ merge = function(...)
 	end
 	return t;
 end
-
+unpack = function(t, i)
+  i = i or 1
+  if t[i] ~= nil then
+	return t[i], unpack(t, i + 1)
+  end
+end
 
 -- Asset Path Helper Functions
 asset = function(path)
