@@ -3645,13 +3645,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- Create an unlinked version of the object.
 	if not group.g then
+
 		-- Clone all the groups so that things don't get modified in the Source
 		local cloned = {};
-		MergeObjects(cloned, group, true);
+		for _,o in ipairs(group) do
+			tinsert(cloned, CreateObject(o));
+		end
 		-- replace the Source references with the cloned references
 		group = cloned;
-		-- Find or Create the root group for the search results
+		-- Find or Create the root group for the search results, and capture the results which need to be nested instead
 		local root;
+		local nested = {};
 		-- print("Find Root for",paramA,paramB);
 		for i,o in ipairs(group) do
 			-- If the obj "is" the root obj
@@ -3664,7 +3668,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						local otherRoot = root;
 						-- print("Replace root",otherRoot.key,otherRoot[otherRoot.key]);
 						root = o;
-						MergeProperties(root, otherRoot, true);
+						MergeProperties(root, otherRoot);
 					else
 						root = o;
 					end
@@ -3673,6 +3677,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if root then MergeProperties(root, o, true);
 					else root = o; end
 				end
+			else
+				-- Not the root, so it will be nested
+				tinsert(nested, o);
 			end
 		end
 		if not root then
@@ -3688,44 +3695,27 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- print("Root",root.key,root[root.key],root.modItemID);
 		-- print("Root Collect",root.collectible,root.collected);
 		-- print("params",paramA,paramB);
-		if not root.g then root.g = {}; end
-		-- Loop through all obj found for this search
-		-- print(#group,"Search total");
-		local skipped;
-		for i,o in ipairs(group) do
-			-- If the obj "is" the root obj via bi-directional key
-			-- print("Check Merge",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
-			if (root.hash and root.hash == o.hash) or root[o.key] == o[o.key] or root[root.key] == o[root.key] then
-				-- print("Merge root",o.key,o[o.key],o.modItemID,paramB);
-				MergeProperties(root, o, true);
-				-- Merge the g of the obj into the merged results
-				NestObjects(root, o.g);
-			-- otherwise
-			else
+		-- print(#nested,"Nested total");
+		-- Nest the objects by matching filter priority if it's not a currency
+		if paramA ~= "currencyID" then
+			PriorityNestObjects(root, nested, nil, app.RecursiveGroupRequirementsFilter);
+		else
+			-- do roughly the same logic for currency, but will not add the skipped objects afterwards
+			local added = {};
+			for i,o in ipairs(nested) do
 				-- If the obj meets the recursive group filter
 				if app.RecursiveGroupRequirementsFilter(o) then
 					-- Merge the obj into the merged results
 					-- print("Merge object",o.key,o[o.key])
-					NestObject(root, o);
-				-- otherwise
-				else
-					-- Add to the set of skipped objects
-					-- print("Skip",o.key,o[o.key])
-					if skipped then tinsert(skipped, o);
-					else skipped = { o }; end
+					tinsert(added, o);
 				end
 			end
-			-- print(#root.g,"Merge total");
+			-- Nest the added objects
+			NestObjects(root, added);
 		end
-		-- Loop through all skipped objects if the root group is something which can bypass group filters
-		if skipped and paramA ~= "currencyID" then
-			for i,o in ipairs(skipped) do
-				-- Merge the obj into the merged results
-				-- print("Merge skip",o.key,o[o.key])
-				NestObject(root, o);
-			end
-		end
+		if not root.g then root.g = {}; end
 		-- Single group which matches the root, then collapse it
+		-- This could only happen if a Thing is literally listed underneath itself...
 		if #root.g == 1 then
 			local o = root.g[1];
 			-- print("Check Single",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
