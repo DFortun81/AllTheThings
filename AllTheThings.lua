@@ -3826,7 +3826,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					-- If this group has a specific Class requirement, tack that on as well
 					if group.c and #group.c == 1 then
 						local class = GetClassInfo(group.c[1]);
-						left = left .. " " .. app.TryColorizeName(group, class);
+						left = left .. " [" .. app.TryColorizeName(group, class) .. "]";
 					end
 					if group.icon then item.prefix = item.prefix .. "|T" .. group.icon .. ":0|t "; end
 
