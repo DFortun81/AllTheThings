@@ -2034,6 +2034,9 @@ MergeObjects,
 -- Nests multiple Objects under another Object, only creating the 'g' group if necessary
 -- ex. NestObjects(parent, group, newCreate)
 NestObjects,
+-- Nests multiple Objects under another Object using an optional set of functions to determine priority on the adding of objects, only creating the 'g' group if necessary
+-- ex. PriorityNestObjects(parent, groups, newCreate, function1, function2, ...)
+PriorityNestObjects,
 RefreshAchievementCollection = {};
 app.searchCache = searchCache;
 (function()
@@ -2222,6 +2225,49 @@ NestObjects = function(p, g, newCreate)
 	else
 		p.g = {};
 		MergeObjects(p.g, g, newCreate);
+	end
+end
+PriorityNestObjects = function(p, g, newCreate, ...)
+	if not g or #g == 0 then return; end
+	local pFuncs = {...};
+	if pFuncs[1] then
+		-- print("PriorityNestObjects",#pFuncs,"Priorities",#g,"Objects")
+		-- setup containers for the priority buckets
+		local pBuckets, pBucket, skipped = {};
+		for i,_ in ipairs(pFuncs) do
+			pBuckets[i] = {};
+		end
+		-- check each object
+		for i,o in ipairs(g) do
+			-- check each priority function
+			for i,pFunc in ipairs(pFuncs) do
+				-- if the function matches, put the object in the bucket
+				if pFunc(o) then
+					-- print("Matched Priority Function",i,o.key,o.key and o[o.key])
+					pBucket = pBuckets[i];
+					tinsert(pBucket, o);
+					break;
+				end
+			end
+			-- no bucket was found, put in skipped
+			if not pBucket then
+				-- print("No Priority",o.key,o.key and o[o.key])
+				if skipped then tinsert(skipped, o);
+				else skipped = { o }; end
+			end
+			-- reset bucket
+			pBucket = nil;
+		end
+		-- then nest each bucket in order of priority
+		for i,pBucket in ipairs(pBuckets) do
+			-- print("Nesting Priority Bucket",i,#pBucket)
+			NestObjects(p, pBucket, newCreate);
+		end
+		-- and nest anything skipped
+		-- print("Nesting Skipped",skipped and #skipped)
+		NestObjects(p, skipped, newCreate);
+	else
+		NestObjects(p, g, newCreate);
 	end
 end
 end)();
@@ -3040,25 +3086,7 @@ local function FillPurchases(group, depth)
 		-- Nest new copies of the cost collectible objects of this group under itself
 		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
 		NestObject(group, usedToBuy);
-
-		if app.ItemBindFilter ~= app.NoFilter and app.ItemBindFilter(group) then
-			-- if this group meets the BoE filter, then throw it all in
-			NestObjects(usedToBuy, collectibles, true);
-		else
-			-- otherwise have to make sure the unfiltered groups are added first, then filtered groups are added after
-			local unfiltered,filtered = {}, {};
-			for _,purchase in ipairs(collectibles) do
-				if app.RecursiveGroupRequirementsFilter(purchase) then
-					tinsert(unfiltered, purchase);
-				else
-					tinsert(filtered, purchase);
-				end
-			end
-			-- add unfiltered purchases first
-			NestObjects(usedToBuy, unfiltered, true);
-			-- then add filtered purchases after
-			NestObjects(usedToBuy, filtered, true);
-		end
+		PriorityNestObjects(usedToBuy, collectibles, true, app.RecursiveGroupRequirementsFilter);
 		-- print("Filled",#collectibles,"under",group.key,group.key and group[group.key],"as",#usedToBuy.g,"unique groups")
 		-- reduce the depth by one since a cost has been filled
 		depth = depth - 1;
