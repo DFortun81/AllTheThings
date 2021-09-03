@@ -4650,20 +4650,18 @@ app.SearchForObject = function(field, id)
 	local fcache = SearchForField(field, id);
 	if fcache and #fcache > 0 then
 		-- find a filter-match object first
-		local fcacheObj;
+		local fcacheObj, firstMatch;
 		for i=1,#fcache,1 do
 			fcacheObj = fcache[i];
-			if fcacheObj[field] == id and app.RecursiveGroupRequirementsFilter(fcacheObj) then
-				return fcacheObj;
+			if fcacheObj.key == field and fcacheObj[field] == id then
+				firstMatch = firstMatch or fcacheObj;
+				if app.RecursiveGroupRequirementsFilter(fcacheObj) then
+					return fcacheObj;
+				end
 			end
 		end
 		-- otherwise just find the first matching object
-		for i=1,#fcache,1 do
-			fcacheObj = fcache[i];
-			if fcacheObj[field] == id then
-				return fcacheObj;
-			end
-		end
+		return firstMatch;
 	end
 end
 
