@@ -10,6 +10,50 @@ p = function(...) return un(NEVER_IMPLEMENTED, oldP(...)); end
 _.NeverImplemented =
 {
 	n(QUESTS, {
+		tier(CATA_TIER, { -- These Quests might be ingame, very unlikely however.
+			q(28011),	-- Adventurers Wanted: Blackfathom Deeps
+			q(28010),	-- Adventurers Wanted: Blackfathom Deeps
+			q(28071),	-- Adventurers Wanted: Blackrock Spire
+			q(28070),	-- Adventurers Wanted: Blackrock Spire
+			q(28075),	-- Adventurers Wanted: Dire Maul Capital Gardens
+			q(28074),	-- Adventurers Wanted: Dire Maul Capital Gardens
+			q(28073),	-- Adventurers Wanted: Dire Maul Warpwood Quarter
+			q(28072),	-- Adventurers Wanted: Dire Maul Warpwood Quarter
+			q(28013),	-- Adventurers Wanted: Gnomeregan
+			q(28040),	-- Adventurers Wanted: Maraudon
+			q(28039),	-- Adventurers Wanted: Maraudon
+			q(28077),	-- Adventurers Wanted: Northern Dire Maul
+			q(28076),	-- Adventurers Wanted: Northern Dire Maul
+			q(31033),	-- Adventurers Wanted: Ragefire Chasm - triggered when turning in "Enemies Below"
+			q(28003),	-- Adventurers Wanted: Ragefire Chasm
+			q(28025),	-- Adventurers Wanted: Razorfen Downs
+			q(28024),	-- Adventurers Wanted: Razorfen Downs
+			q(28015),	-- Adventurers Wanted: Razorfen Krawl
+			q(28014),	-- Adventurers Wanted: Razorfen Krawl
+			q(28017),	-- Adventurers Wanted: Scarlet Halls
+			q(28021),	-- Adventurers Wanted: Scarlet Halls
+			q(28023),	-- Adventurers Wanted: Scarlet Monastery
+			q(28019),	-- Adventurers Wanted: Scarlet Monastery
+			q(28083),	-- Adventurers Wanted: Scholomance
+			q(28082),	-- Adventurers Wanted: Scholomance
+			q(28009),	-- Adventurers Wanted: Shadowfang Keep
+			q(28008),	-- Adventurers Wanted: Shadowfang Keep
+			q(28012),	-- Adventurers Wanted: Stormwind Stockade
+			q(28079),	-- Adventurers Wanted: Stratholme Main Gate
+			q(28078),	-- Adventurers Wanted: Stratholme Main Gate
+			q(28081),	-- Adventurers Wanted: Stratholme Service Gate
+			q(28080),	-- Adventurers Wanted: Stratholme Service Gate
+			q(28005),	-- Adventurers Wanted: The Deadmines
+			q(28004),	-- Adventurers Wanted: The Deadmines
+			q(28067),	-- Adventurers Wanted: The Sunken Temple
+			q(28066),	-- Adventurers Wanted: The Sunken Temple
+			q(28027),	-- Adventurers Wanted: Uldaman
+			q(28026),	-- Adventurers Wanted: Uldaman
+			q(28007),	-- Adventurers Wanted: Wailing Caverns
+			q(28006),	-- Adventurers Wanted: Wailing Caverns
+			q(28037),	-- Adventurers Wanted: Zul'farrak
+			q(28036),	-- Adventurers Wanted: Zul'farrak
+		}),
 		tier(LEGION_TIER, {	-- These Quests might be ingame, very unlikely however.
 			q(43497),	-- Legion 110 A
 			q(43498),	-- Legion 110 A
