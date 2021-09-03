@@ -4131,46 +4131,49 @@ app.BuildCost = function(group)
 		NestObject(group, costGroup, nil, 1);
 	end
 end
+(function()
+-- Keys for groups which are in-game 'Things'
+local ThingKeys = {
+	-- ["headerID"] = true,
+	-- ["filterID"] = true,
+	-- ["flightPathID"] = true,
+	-- ["professionID"] = true,
+	-- ["categoryID"] = true,
+	-- ["mapID"] = true,
+	["npcID"] = true,
+	["creatureID"] = true,
+	["itemID"] = true,
+	["s"] = true,
+	["speciesID"] = true,
+	["recipeID"] = true,
+	["questID"] = true,
+	["objectID"] = true,
+	["encounterID"] = true,
+	["achievementID"] = true,
+};
 -- Builds a 'Source' group from the parent of the group (or other listings of this group) and lists it under the group itself for
--- visibility in popouts
 app.BuildSourceParent = function(group)
 	-- only show sources for Things and not 'headers'
-	if not group or not group.key
-		or group.key == "headerID"
-		or group.key == "filterID"
-		or group.key == "flightPathID"
-		or group.key == "professionID"
-		or group.key == "categoryID"
-		or group.key == "mapID"
-		then return;
-	end
+	if not group or not group.key or not ThingKeys[group.key] then return; end
 
 	-- pull all listings of this 'Thing'
 	local things = app.SearchForLink(group.key .. ":" .. group[group.key]);
 	if things then
 		-- print("Found things",#things)
-		local parents;
+		local parents, parentKey;
 		-- collect all possible parent groups for all instances of this Thing
 		for _,thing in pairs(things) do
-			local parent = thing.parent;
+			local parent = thing.sourceParent or thing.parent;
 			if parent then
 				-- print("parent",parent.text,parent.key)
 				-- only show certain types of parents as sources.. typically 'Game World Things'
-				local parentKey = parent.key;
-				if parentKey
-					and (parentKey == "npcID"
-						or parentKey == "creatureID"
-						or parentKey == "itemID"
-						or parentKey == "s"
-						or (parentKey == "questID" and group.key ~= "questID")	-- don't show a quest as a source for a quest...
-						or parentKey == "objectID"
-						or parentKey == "encounterID"
-						or parentKey == "achID"
-						or parentKey == "achievementID")
-						-- TODO: maybe handle mapID in a different way as a fallback for things nested under headers within a zone....?
-					and parent[parentKey] then
-					if parents then tinsert(parents, parent);
-					else parents = { parent }; end
+				parentKey = parent.key;
+				if parentKey and parent[parentKey] then
+					if ThingKeys[parentKey] then
+						if parents then tinsert(parents, parent);
+						else parents = { parent }; end
+					end
+					-- TODO: maybe handle mapID/instanceID in a different way as a fallback for things nested under headers within a zone....?
 				end
 			end
 		end
@@ -4184,28 +4187,21 @@ app.BuildSourceParent = function(group)
 				["OnUpdate"] = app.AlwaysShowUpdate,
 				["g"] = {},
 			};
-			local parentKey;
+			local clonedParent;
+			local clones = {};
 			for _,parent in ipairs(parents) do
-				parentKey = parent.key;
-				local sources = app.SearchForLink(parentKey .. ":" .. parent[parentKey]);
-				if sources then
-					local clonedSource;
-					for _,source in pairs(sources) do
-						-- make sure the group being included is of the same type as the direct parent of the group
-						if source.key == parentKey then
-							clonedSource = CloneData(source);
-							clonedSource.g = nil;
-							clonedSource.collectible = false;
-							clonedSource.OnUpdate = app.AlwaysShowUpdate;
-							NestObject(sourceGroup, clonedSource);
-						end
-					end
-				end
+				clonedParent = CreateObject(parent);
+				clonedParent.g = nil;
+				clonedParent.collectible = false;
+				clonedParent.OnUpdate = app.AlwaysShowUpdate;	-- TODO: filter actual unobtainable sources...
+				tinsert(clones, clonedParent);
 			end
+			PriorityNestObjects(sourceGroup, clones, nil, app.RecursiveGroupRequirementsFilter);
 			NestObject(group, sourceGroup, nil, 1);
 		end
 	end
 end
+end)();
 -- check for orphaned currency groups and fill them with things purchased by that currency
 app.BuildCurrencies = function(group)
 	-- print("BuildCurrencies",group.key,group[group.key])
