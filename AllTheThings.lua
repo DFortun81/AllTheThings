@@ -1701,7 +1701,7 @@ local function GetItemIDAndModID(modItemID)
 end
 local function GroupMatchesParams(group, key, value, ignoreModID)
 	if not group then return false; end
-	if group.itemID then
+	if group.itemID and key == "itemID" then
 		if group.modItemID and group.modItemID == value then
 			return true;
 		elseif ignoreModID or not group.modItemID then
@@ -3030,8 +3030,8 @@ local function FillPurchases(group, depth)
 	-- do not fill 'saved' groups, or groups directly under saved groups unless in Acct or Debug mode
 	if not app.MODE_DEBUG_OR_ACCOUNT then
 		if group.saved then return; end
-		local sourceParent = rawget(group, "parent");
-		if sourceParent and sourceParent.saved then return; end
+		local rawParent = rawget(group, "parent");
+		if rawParent and rawParent.saved then return; end
 	end
 	-- print("FillPurchases",group.itemID,group.currencyID,depth)
 
@@ -3710,7 +3710,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		group = root;
 		-- Ensure no weird parent references attached to the base search result
 		group.parent = nil;
-		group.sourceParent = nil;
 
 		-- print(group.g and #group.g,"Merge total");
 		-- print("Final Group",group.key,group[group.key],group.collectible,group.collected,group.parent,group.sourceParent,rawget(group, "parent"),rawget(group, "sourceParent"));
@@ -11591,7 +11590,7 @@ app.RecursiveGroupRequirementsFilter = function(group)
 	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 		if group.sourceParent or group.parent then
 			return app.RecursiveGroupRequirementsFilter(group.sourceParent or group.parent)
-		end;
+		end
 		return true;
 	-- elseif app.DEBUG_PRINT then
 	-- 	print("FILTERED FROM", app.DEBUG_PRINT)
