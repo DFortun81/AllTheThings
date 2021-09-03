@@ -2091,6 +2091,8 @@ local function CreateHash(t)
 	if key then
 		local hash = key .. (rawget(t, key) or t[key] or "NOKEY");
 		if key == "criteriaID" and t.achievementID then hash = hash .. ":" .. t.achievementID;
+		elseif key == "itemID" and t.modItemID and t.modItemID ~= t.itemID then
+			hash = key .. t.modItemID;
 		elseif key == "creatureID" then
 			if t.encounterID then hash = hash .. ":" .. t.encounterID; end
 			if t.difficultyID then hash = hash .. "-" .. t.difficultyID; end
