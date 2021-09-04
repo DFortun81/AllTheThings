@@ -1213,6 +1213,9 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(7282),	-- Light Leather Pants
 				i(4242),	-- Embossed Leather Pants
 				i(7280),	-- Rugged Leather Pants
+				i(29970, {	-- Wildfeather Leggings
+					["timeline"] = { "added 2.0.1.6180" },
+				}),
 			}),
 			n(-330, {	-- Feet
 				i(22760),	-- Bramblewood Boots
