@@ -3,9 +3,10 @@
 -----------------------------------------------------
 _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(261, {	-- The Steamvault
+		["lore"] = "The Steamvault serves as the mechanical heart of the Naga's draining operations in Zangarmarsh. The mechanisms on display within the massive cavern supply the power for the actual act of removing the marsh's water.",
 		["coord"] = { 50.35, 33.39, ZANGARMARSH },	-- The Steamvault, Zangarmarsh
 		["maps"] = {
-			COILFANG_RESERVOIR_STEAMVAULT,	-- The Steamvault
+			COILFANG_RESERVOIR_STEAMVAULT,
 			264,	-- The Cooling Pools
 		},
 		["lvl"] = lvlsquish(65, 20, 65),

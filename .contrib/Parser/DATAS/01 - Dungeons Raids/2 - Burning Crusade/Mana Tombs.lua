@@ -3,6 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(250, {	-- Mana Tombs
+		["lore"] = "Its inhabitants are mostly ethereals opposing the Consortium. The ethereals of the Consortium cannot enter due to the anti-ethereal wards set by Nexus-Prince Shaffar; they have attempted to breach the gates with little success, but have still tested whether or not their efforts worked - often resulting in the spotaneous combustion (for lack of a better term) of the ethereal tester sent through the gate. According to the Consortium, the ethereals in the Mana-Tombs are robbing it blind and if you wish to do business with them, you'll have to aid in taking out the competition.",
 		["coord"] = { 39.63, 57.67, TEROKKAR_FOREST },	-- Mana-Tombs, Terokkar Forest
 		["mapID"] = AUCHINDOUN_MANA_TOMBS,
 		["lvl"] = lvlsquish(61, 15, 61),

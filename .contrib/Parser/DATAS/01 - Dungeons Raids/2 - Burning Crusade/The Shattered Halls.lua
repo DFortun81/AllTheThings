@@ -3,6 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(259, {	-- The Shattered Halls
+		["lore"] = "For years, this gargantuan fortress was thought to be abandoned, but it's now inhabited by marauding bands of red, furious fel orcs. The presence of this new, savage breed presents something of a mystery, though what is far more disconcerting is that the numbers of these fel orcs seem to be... growing.",
 		["coord"] = { 47.66, 51.98, HELLFIRE_PENINSULA },	-- The Shattered Halls, Hellfire Peninsula
 		["mapID"] = HELLFIRE_CITADEL_SHATTERED_HALLS,
 		-- #if BEFORE CATA

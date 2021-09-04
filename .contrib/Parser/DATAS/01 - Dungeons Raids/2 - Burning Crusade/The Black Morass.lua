@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(255, {	-- The Black Morass
-		["description"] = "The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",
+		["lore"] = "The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",
 		["coord"] = { 37.2, 83.3, CAVERNS_OF_TIME },
 		["mapID"] = CAVERNS_OF_TIME_BLACK_MORASS,
 		["lvl"] = lvlsquish(65, 25, 65),
