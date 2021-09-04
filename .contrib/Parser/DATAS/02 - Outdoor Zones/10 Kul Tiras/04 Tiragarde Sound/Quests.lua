@@ -1548,5 +1548,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 });
 _.HiddenQuestTriggers = {
-	--q(53635),	-- Triggered when killing Broodmother or "The Goat" rares.
+	--q(53635),	-- Triggered when killing Broodmother or "The Goat" rares. Another report Opened Curious Grain Sack,  (inside bldg) Stormsong Valley, Kul Tiras - #942 @ 32.1, 66.2
 };

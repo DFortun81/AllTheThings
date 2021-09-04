@@ -64,7 +64,7 @@ _.ExpansionFeatures =
 							i(184303, {	-- Arsenal: Stitchmasters' Weapons
 								["cost"] = {
 									{ "i", 184304, 750 },
-									{ "c", 1813, 1000 },
+									{ "c", 1813, 30000 },
 								},
 								["g"] = {
 									i(184079),	-- Abominable Bulwark of Marz

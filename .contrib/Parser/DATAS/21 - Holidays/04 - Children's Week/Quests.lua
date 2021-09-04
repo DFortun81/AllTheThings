@@ -699,7 +699,7 @@ _.Holidays =
 						["isYearly"] = true,
 					},
 					{	-- Children's Week [Horde - Zandalari - START]
-						["questID"] = 131346,	-- Children's Week
+						["questID"] = 53965,	-- Children's Week
 						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 131346 },		-- Caretaker Padae
 						["maps"] = {

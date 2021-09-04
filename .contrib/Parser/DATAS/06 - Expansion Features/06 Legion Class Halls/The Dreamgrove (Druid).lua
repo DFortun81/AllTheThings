@@ -1177,6 +1177,7 @@ _.HiddenQuestTriggers = {
 	q(44446),	-- Druid Order Hall - Guardian Chosen (Forth)
 	q(44447),	-- Druid Order Hall - Resto Chosen (fourth)
 	q(44642),	-- Druid Order Hall - Tracking Quest: 7.0 Class Hall - Druid - Pacing Mission 1A. Triggers when completing mission table quest (Sampling the Nightmare) for Sampling the Nightmare (42032)
+	q(43653),	-- Hidden Appearance Unlocked, Ursoc
 };
 
 -- These quests never made it in.

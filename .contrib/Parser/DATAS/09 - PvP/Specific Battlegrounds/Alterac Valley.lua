@@ -472,8 +472,8 @@ _.PVP =
 								["lvl"] = 51,
 							}),
 							q(7301,  {	-- Fallen Sky Lords
+								["provider"] = { "n", 13319 },	-- Commander Duffy (Might have changed)
 								["races"] = ALLIANCE_ONLY,
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(7364,  {	-- Gnomeregan Bounty
 								["races"] = ALLIANCE_ONLY,

@@ -35,6 +35,10 @@ _.Zones =
 					["coord"] = { 55.5, 90.8, SPIRES_OF_ARAK },
 					["description"] = "On a shelf above the doorway.",
 				}),
+				o(235299, {	-- Coinbender's Payment
+					["questID"] = 36453,
+					["coord"] = { 68.4, 89.0, SPIRES_OF_ARAK },
+				}),
 				o(234704, {	-- Elixir of Shadow Sight
 					["collectible"] = false,	-- these reset.  i've collected every item you can get with the elixirs, so have nothing to use them on, but they still show up in ATT and even on the in-game treasure map.  if i re-collect them and delete them from my bags, they show up as a thing i need to collect again.  annoying!
 					["questID"] = 36397,
@@ -95,6 +99,13 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\inv_potion_122",
 					["g"] = {
 						i(116914),	-- Ephial's Grimoire
+					},
+				}),
+				o(234157, {	-- Fractured Sunstone
+					["questID"] = 36246,
+					["coord"] = { 50.5, 22.1, SPIRES_OF_ARAK },
+					["g"] = {
+						i(116919),	-- Fractured Sunstone
 					},
 				}),
 				o(235289, {	-- Garrison Workman's Hammer
@@ -160,6 +171,17 @@ _.Zones =
 						i(118239),	-- Anzu's Stoicism
 					},
 				}),
+				o(235141, {	-- Iron Horde Explosives
+					["questID"] = 36444,
+					["coord"] = { 50.4, 25.8, SPIRES_OF_ARAK },
+					["g"] = {
+						i(118691),	-- Iron Horde Explosives
+					},
+				}),
+				o(234159, {	-- Lost Herb Satchel
+					["questID"] = 36247,
+					["coord"] = { 50.7, 28.7, SPIRES_OF_ARAK },
+				}),
 				o(235091, {	-- Lost Ring
 					["questID"] = 36411,
 					["coord"] = { 47.8, 36.1, SPIRES_OF_ARAK },
@@ -175,12 +197,55 @@ _.Zones =
 						i(109585),	-- Arakkoa Cipher
 					},
 				}),
+				o(235300, {	-- Mysterious Mushrooms
+					["questID"] = 36454,
+					["coord"] = { 63.6, 67.4, SPIRES_OF_ARAK },
+				}),
+				o(234744, {	-- Offering to the Raven Mother
+					["questID"] = 36403,
+					["coord"] = { 53.5, 55.6, SPIRES_OF_ARAK },
+					["g"] = {
+						i(118267),	-- Ravenmother Offering
+					},
+				}),
+				o(234746, {	-- Offering to the Raven Mother
+					["questID"] = 36405,
+					["coord"] = { 48.3, 52.6, SPIRES_OF_ARAK },
+					["g"] = {
+						i(118267),	-- Ravenmother Offering
+					},
+				}),
+				o(234748, {	-- Offering to the Raven Mother
+					["questID"] = 36406,
+					["coord"] = { 48.9, 54.7, SPIRES_OF_ARAK },
+					["g"] = {
+						i(118267),	-- Ravenmother Offering
+					},
+				}),
+				o(235073, {	-- Offering to the Raven Mother
+					["questID"] = 36407,
+					["coord"] = { 51.9, 64.6, SPIRES_OF_ARAK },
+					["g"] = {
+						i(118267),	-- Ravenmother Offering
+					},
+				}),
+				o(235090, {	-- Offering to the Raven Mother
+					["questID"] = 36410,
+					["coord"] = { 61.0, 63.8, SPIRES_OF_ARAK },
+					["g"] = {
+						i(118267),	-- Ravenmother Offering
+					},
+				}),
 				o(234740, {	-- Orcish Signaling Horn
 					["questID"] = 36402,
 					["coord"] = { 36.3, 39.5, SPIRES_OF_ARAK },
 					["g"] = {
 						i(120337),	-- Novice Rylak Hunter's Horn
 					},
+				}),
+				o(234432, {	-- Ogron Plunder
+					["questID"] = 36340,
+					["coord"] = { 58.7, 60.3, SPIRES_OF_ARAK },
 				}),
 				o(234147, {	-- Outcast's Belongings
 					["questID"] = 36243,
@@ -609,6 +674,14 @@ _.Zones =
 					["g"] = {
 						i(116887),	-- Rooby Roo's Ruby Rollar
 					},
+				}),
+				o(234472, {	-- Sailor Zazzuk's 180-Proof Rum
+					["questID"] = 36366,
+					["coord"] = { 55.5, 90.8, SPIRES_OF_ARAK },
+				}),
+				o(235282, {	-- Sethekk Ritual Brew
+					["questID"] = 36450,
+					["coord"] = { 71.6, 48.6, SPIRES_OF_ARAK },
 				}),
 				o(234456, {	-- Shattered Hand Lockbox
 					["questID"] = 36361,

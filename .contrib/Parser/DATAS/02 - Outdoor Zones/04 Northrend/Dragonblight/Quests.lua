@@ -533,6 +533,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26881 },	-- Palena Silvercloud
 					["sourceQuest"] = 12171,	-- Of Traitors and Treason
+					["isBreadcrumb"] = true,
 				}),
 				q(12189, {	-- Imbeciles Abound!
 					["coord"] = { 36.0, 48.8, 115 },

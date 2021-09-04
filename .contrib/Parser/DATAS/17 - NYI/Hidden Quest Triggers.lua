@@ -67,6 +67,7 @@ _.HiddenQuestTriggers = {
 		--q(63390), -- Person in Errors doesnt really remember
 		--q(63391), -- Person in Errors doesnt really remember
 		--q(53468),	-- As a hightauren mountain just arriving on ogrimmar after being transferred from alliance to horde
+		--q(62688),	-- Popped taking portal to Oribos
 
 		-------------------
 		--    VARIOUS    --
@@ -2405,6 +2406,7 @@ _.HiddenQuestTriggers = {
 		q(48431),	-- Argus
 		q(49184),	-- Argus (triggered at the same time as above)
 		q(49361),	-- Argus (triggered at the same time as above)
+		q(49363),	-- Argus (Heroic)
 		q(49475),	-- Argus (triggered at the same time as above)
 		q(49364),	-- Argus (triggered first time this character killed Argus on mythic)
 		q(49717),	-- Argus (triggered first time this character killed Argus on mythic)
@@ -4167,9 +4169,12 @@ _.HiddenQuestTriggers = {
 		q(59681),	-- using "Anima-Infused Water"
 		q(61455),	-- using "Protective Braziers"
 		q(63001),	-- triggers when choosing to skip the Covenant sanctum intro quests
+		--q(63007),	-- triggers when choosing to skip the Night Fae sanctum intro quests
 		q(63023),	-- triggers when choosing to skip the Covenant sanctum intro quests
 		q(63425),	-- triggers when choosing to skip the Covenant sanctum intro quests
 		q(62426),	-- triggers when choosing to skip the Kyrian sanctum intro quests
+		q(63427),	-- triggers when choosing to skip the Night Fae sanctum intro quests
+		q(63428),	-- triggers when choosing to skip the Necrolord sanctum intro quests
 		q(63429),	-- triggers when choosing to skip the Venthyr sanctum intro quests
 
 		-- The Maw
