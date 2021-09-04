@@ -443,6 +443,7 @@ select(2, ...).ObjectNames = {
 	[213972] = "Blade of the Poisoned Mind",
 	[213973] = "Klaxxi Sonic Relay",
 	[214062] = "Glowing Amber",
+	[214175] = "Bag of Wu Kao Supplies",
 	[214325] = "Forgotten Lockbox",
 	[214337] = "Stash of Gems",
 	[214338] = "Offering of Remembrance",

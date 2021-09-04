@@ -969,6 +969,11 @@ _.Zones =
 						{ "n", 62378 },	-- Omnia Priest
 					},
 				}),
+				o(214175, {	-- Bag of Wu Kao Supplies
+					["questID"] = 31466,
+					["coord"] = { 49.0, 71.2, TOWNLONG_STEPPES },
+					["isDaily"] = true,
+				}),
 			}),
 		}),
 	}),

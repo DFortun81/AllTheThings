@@ -918,11 +918,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56110 },	-- Xiao
+					["isBreadcrumb"] = true,
 				}),
 				q(29875, {	-- Kang Bramblestaff (H)
 					["races"] = HORDE_ONLY,
 					["coord"] = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56110 },	-- Xiao
+					["isBreadcrumb"] = true,
 				}),
 				q(29873, {	-- Ken-Ken
 					["isBreadcrumb"] = true,

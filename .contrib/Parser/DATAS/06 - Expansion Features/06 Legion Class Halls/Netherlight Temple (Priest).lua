@@ -222,7 +222,7 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 51.5, 47.6, 702 },
 					}),
-					q(44306, {	-- The Fates Bless Us
+					q(44306, {	-- Blessings of the Order
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 111773 },	-- Sister Oriel
 						["coord"] = { 61.6, 45.6, 702 },
@@ -482,6 +482,7 @@ _.ExpansionFeatures =
 					q(44100, {	-- Proper Introductions
 						["classes"] = { PRIEST },	-- Priest
 						["provider"] = { "n", 112695 },	-- Hooded Priest
+						["isBreadcrumb"] = true,
 					}),
 					q(43851, {	-- Recruiting More Troops
 						["sourceQuests"] = { 43379 },	-- Velen's Vision

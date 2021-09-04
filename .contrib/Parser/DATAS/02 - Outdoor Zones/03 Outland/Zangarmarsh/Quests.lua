@@ -12,7 +12,7 @@ _.Zones =
 					["coord"] = { 19.7, 52.1, ZANGARMARSH },
 					["timeline"] = { "added 7.3.5.25600" },
 					["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
-					["maxReputation"] = { 970, HONORED },	-- Sporeggar, Honored.
+					["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(62, 10, 62),
 				}),
@@ -24,8 +24,8 @@ _.Zones =
 					},
 					["coord"] = { 19.0, 63.4, ZANGARMARSH },
 					["timeline"] = { "added 7.3.5.25600" },
-					["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
-					["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
+					["minReputation"] = { 970, UNFRIEDNLY },	-- Sporeggar, Unfriendly.
+					["maxReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(62, 10, 62),
 				}),

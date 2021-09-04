@@ -582,11 +582,13 @@ _.Zones =
 					},
 				}),
 				q(9871,  {	-- Murkblood Invaders! (A)
+					["description"] = "Likely only obtainable in Chromie Time",
 					["crs"] = { 18238 },	-- Murkblood Invader
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 24559 },	-- Murkblood Invasion Plans (Alliance Version)
 				}),
 				q(9872,  {	-- Murkblood Invaders (H)
+					["description"] = "Likely only obtainable in Chromie Time",
 					["crs"] = { 18238 },	-- Murkblood Invader
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 24558 },	-- Murkblood Invasion Plans (Horde Version)

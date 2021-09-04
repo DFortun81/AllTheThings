@@ -722,7 +722,7 @@ _.Zones =
 						i(181634),	-- Memoria Greatblade
 						i(181636),	-- Memoria Spellblade
 						i(181631),	-- Requiem Chime
-						i(181630),	-- Requiem Handscythes
+						i(181632),	-- Requiem Handscythes
 						i(181633),	-- Waylight Blade
 						i(181629),	-- Waylight Defender
 						-- TODO: more rewards
@@ -935,7 +935,9 @@ _.HiddenQuestTriggers = {
 	q(64514),	-- triggered while doing The Battle of Ardenweald scenario
 	q(64515),	-- triggered while doing The Battle of Ardenweald scenario
 	q(63416),	-- triggers when accepting the first of your 'Zone Meta Quests' on a Skip Character
-	q(64782),	-- Unknown (Hearthstone to Oribos)
+	--q(64782),	-- Unknown (Hearthstone to Oribos)
+	--q(62370),	-- Swapping Cov to NF with NF already R40
+	--q(62384),	-- Swapping Cov to NF with NF already R40
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

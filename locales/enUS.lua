@@ -940,6 +940,7 @@ app.L = {
 		[-171] = "Interface\\Icons\\Achievement_Quests_Completed_07",						-- Quest Chains
 		[-173] = "Interface\\Icons\\spell_holy_borrowedtime",								-- Timewalking
 		[-174] = "Interface\\Icons\\INV_DARKMOON_EYE",										-- Darkmoon Faire
+		[-176] = 3753381,																	-- Weekly Holidays
 		[-178] = "Interface\\Icons\\Creatureportrait_Goblin_Rocket",						-- Goblin Engineering
 		[-179] = "Interface\\Icons\\INV_Gnomish_XRAY_Specs",								-- Gnomish Engineering
 		[-195] = "Interface\\Icons\\ClassIcon_Priest",										-- Priest
