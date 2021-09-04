@@ -94,3 +94,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(29053),	-- 'Borrowing' From the Winterfall (Gets auto-completed with the implemented equivalent)
+	}),
+});
