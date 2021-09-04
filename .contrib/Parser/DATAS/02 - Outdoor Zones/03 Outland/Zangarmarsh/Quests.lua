@@ -24,7 +24,7 @@ _.Zones =
 					},
 					["coord"] = { 19.0, 63.4, ZANGARMARSH },
 					["timeline"] = { "added 7.3.5.25600" },
-					["minReputation"] = { 970, UNFRIEDNLY },	-- Sporeggar, Unfriendly.
+					["minReputation"] = { 970, UNFRIENDLY },	-- Sporeggar, Unfriendly.
 					["maxReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(62, 10, 62),
