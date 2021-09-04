@@ -11,6 +11,11 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["timeline"] = { "added 6.0.1.18594" },
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
 	}),
+	i(122338, {	-- Ancient Heirloom Armor Casing
+		["timeline"] = { "added 6.1.0.19445" },
+		["cost"] = { { "i", 33226, 250 } },	-- 250x Tricky Treat
+		["sym"] = { { "fill" } },	-- simply fill this item
+	}),
 	i(37585, {	-- Chewy Fel Taffy
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
@@ -41,6 +46,11 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(37584, {	-- Soothing Spearmint Candy
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
+	i(122340, {	-- Timeworn Heirloom Armor Casing
+		["timeline"] = { "added 6.1.0.19445" },
+		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
+		["sym"] = { { "select", "itemID", 122340 } },	-- Fake select for whatever is cached for itself
+	}),
 	i(37604, {	-- Tooth Pick
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
@@ -50,9 +60,14 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	}),
 	-- #else
 	i(122338, {	-- Ancient Heirloom Armor Casing
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { "added 6.1.0.19445" },
 		["cost"] = { { "i", 33226, 250 } },	-- 250x Tricky Treat
-		["sym"] = { { "select", "itemID", 122338 } },	-- Fake select for whatever is cached for itself
+		["sym"] = { { "fill" } },	-- simply fill this item
+	}),
+	i(167731, {	-- Battle-Hardened Heirloom Armor Casing
+		["timeline"] = { "added 8.1.5.29701" },
+		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
+		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
 	i(37585, {	-- Chewy Fel Taffy
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -107,7 +122,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(122340, {	-- Timeworn Heirloom Armor Casing
 		["timeline"] = { "added 6.1.0.19445" },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "select", "itemID", 122340 } },	-- Fake select for whatever is cached for itself
+		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
 	i(37604, {	-- Tooth Pick
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -115,7 +130,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(151614, {	-- Weathered Heirloom Armor Casing
 		["timeline"] = { "added 7.2.5.24076" },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "select", "itemID", 151614 } },	-- Fake select for whatever is cached for itself
+		["sym"] = { { "fill" } },	-- simply fill this item
 	}),
 	-- #endif
 };
