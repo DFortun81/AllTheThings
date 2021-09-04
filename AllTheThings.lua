@@ -3078,17 +3078,18 @@ local function BuildContainsInfo(item, entries, indent, layer)
 		end
 	end
 end
--- ItemID's which should be skipped when filling purchases
+-- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
 app.SkipPurchases = {
-	[-1] = 1,	-- Whether to skip certain cost items
-	[137642] = 1,	-- Mark of Honor
+	[-1] = 0,	-- Whether to skip certain cost items
+	[137642] = 2,	-- Mark of Honor
 	[21100] = 1,	-- Coin of Ancestry
 	[23247] = 1,	-- Burning Blossom
+	[49927] = 1,	-- Love Token
 }
 -- Allows for toggling whether the SkipPurchases should be used or not
-app.SetSkipPurchases = function(bypass)
-	-- print("SkipPurchases exclusion",bypass)
-	app.SkipPurchases[-1] = bypass;
+app.SetSkipPurchases = function(level)
+	-- print("SkipPurchases exclusion",level)
+	app.SkipPurchases[-1] = level;
 end
 -- Fills & returns a group with its 'cost' references, along with all sub-groups recursively if specified
 -- This should only be used on a cloned group so the source group is not contaminated
@@ -3097,8 +3098,8 @@ local function FillPurchases(group, depth)
 	-- default to 2 levels of filling, i.e. 0) Raid Essence -> 1) Tier Token -> 2) Item
 	depth = depth or 2;
 	if depth <= 0 then return; end
-	-- do not fill purchases on certain items, can skip the skip though
-	if app.SkipPurchases[-1] and app.SkipPurchases[group.itemID or 0] then return; end
+	-- do not fill purchases on certain items, can skip the skip though based on a level
+	if (app.SkipPurchases[-1] or 0) < (app.SkipPurchases[group.itemID or -1] or 0) then return; end
 	-- do not fill 'saved' groups, or groups directly under saved groups unless in Acct or Debug mode
 	if not app.MODE_DEBUG_OR_ACCOUNT then
 		if group.saved then return; end
@@ -5568,7 +5569,10 @@ local function AttachTooltipRawSearchResults(self, group)
 	end
 end
 local function AttachTooltipSearchResults(self, search, method, paramA, paramB, ...)
+	-- tooltips can skip to level 1
+	app.SetSkipPurchases(1);
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
+	app.SetSkipPurchases(0);
 end
 
 local npcQuestsCache = {}
@@ -12504,9 +12508,9 @@ function app:CreateMiniListForGroup(group)
 		-- make a search for this group if it is an item/currency and not already a container for things
 		if not group.g and (group.itemID or group.currencyID) then
 			local cmd = group.link or group.key .. ":" .. group[group.key];
-			app.SetSkipPurchases(nil);
+			app.SetSkipPurchases(2);
 			group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-			app.SetSkipPurchases(1);
+			app.SetSkipPurchases(0);
 		end
 
 		-- clone/search initially so as to not let popout operations modify the source data
@@ -12517,9 +12521,9 @@ function app:CreateMiniListForGroup(group)
 			-- Fill any purchasable things for the sub-groups
 			-- if group.g then
 			-- 	for _,sub in ipairs(group.g) do
-			app.SetSkipPurchases(nil);
+			app.SetSkipPurchases(2);
 			FillPurchases(group);
-			app.SetSkipPurchases(1);
+			app.SetSkipPurchases(0);
 			-- 	end
 			-- end
 			-- Merge any symbolic linked data into the sub-groups
@@ -19055,9 +19059,9 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		end
 
 		-- Search for the Link in the database
-		app.SetSkipPurchases(nil);
+		app.SetSkipPurchases(2);
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-		app.SetSkipPurchases(1);
+		app.SetSkipPurchases(0);
 		-- make sure it's 'something' returned from the search before throwing it into a window
 		if group and (group.link or group.name or group.text or group.key) then
 			app:CreateMiniListForGroup(group);
@@ -19140,9 +19144,9 @@ end
 			-- print(type,paramA,paramB)
 			if type == "search" then
 				local cmd = paramA .. ":" .. paramB;
-				app.SetSkipPurchases(nil);
+				app.SetSkipPurchases(2);
 				local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-				app.SetSkipPurchases(1);
+				app.SetSkipPurchases(0);
 				app:CreateMiniListForGroup(group);
 				return true;
 			elseif type == "dialog" then
