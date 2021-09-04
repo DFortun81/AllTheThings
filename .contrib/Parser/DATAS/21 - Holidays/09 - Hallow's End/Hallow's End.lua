@@ -395,7 +395,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 			}),
 			ach(255),	-- Bring Me The Head of... Oh Wait
 			ach(289),	-- The Savior of Hallow's End
-			ach(981),	-- That Sparkling Smile
+			ach(981, {	-- That Sparkling Smile
+				["cost"] = {
+					{ "i", 37604, 1	},	-- Tooth Pick
+				},
+			}),
 			ach(1040, {	-- Rotten Hallow (A)
 				["races"] = ALLIANCE_ONLY,
 				-- Note!! The individual criteria for this will be attached to the actual quest rather than here.  By linking it to the quest we give a better represention of the criteria and avoid duplicity.
