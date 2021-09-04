@@ -3481,8 +3481,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
 									end
 								else
-									local otherATTSource = app.SearchForObject("s", otherSourceID);
+									local otherATTSource = app.SearchForField("s", otherSourceID);
 									if otherATTSource then
+										otherATTSource = otherATTSource[1];
+
 										-- Show information about the appearance:
 										local failText = "";
 										local link = otherATTSource.link or otherATTSource.silentLink;
