@@ -8196,6 +8196,9 @@ local fields = {
 		rawset(t, "isWeapon", false);
 		return false;
 	end,
+	["modItemID"] = function(t)
+		return t.itemID;
+	end,
 	["g"] = function(t)
 		-- unlocking the heirloom is the only thing contained in the heirloom
 		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
@@ -8786,6 +8789,46 @@ local itemFields = {
 				elseif ref.total and ref.total > 0 and ref.progress < ref.total then
 					-- if LOG then print("Cost Required via Total/Prog") end
 					return false;
+				-- Something that hasn't been calculated yet which could contain collectibles
+				elseif not ref.total and (ref.sym or ref.g) then
+					-- If this is something with ONLY direct subgroups, just build it out in the source
+					if ref.g and not ref.sym then
+						-- Build the ref groups
+						BuildGroups(ref, ref.g);
+						-- do an Update pass for the ref
+						app.TopLevelUpdateGroup(ref);
+						-- print("Populated collectedAsCost for (raw groups)",t.modItemID)
+						-- app.PrintTable(ref)
+						-- check if this ref has been completed
+						if ref.total and ref.total > 0 and ref.progress < ref.total then
+							return false;
+						end
+					else
+						-- Already have a cached version of this reference with populated content
+						local expItem = cache.GetCachedField(ref, "_populated");
+						if expItem and expItem.total and expItem.total > 0 and expItem.progress < expItem.total then
+							return false;
+						end
+						-- print("Un-populated collectedAsCost",t.modItemID)
+						-- app.PrintTable(ref)
+						if expItem then break; end
+						-- create a cached copy of this ref if it is an Item
+						expItem = CreateObject(ref);
+						-- fill the copied Item's symlink if any
+						FillSymLinks(expItem);
+						-- Build the Item's groups if any
+						BuildGroups(expItem, expItem.g);
+						-- do an Update pass for the copied Item
+						app.TopLevelUpdateGroup(expItem);
+						-- print("Populated collectedAsCost (symlink)",t.modItemID)
+						-- app.PrintTable(expItem)
+						-- save it in the Item cache in case something else is able to purchase this reference
+						cache.SetCachedField(ref, "_populated", expItem);
+						-- check if this expItem has been completed
+						if expItem.total and expItem.total > 0 and expItem.progress < expItem.total then
+							return false;
+						end
+					end
 				end
 			end
 		end
