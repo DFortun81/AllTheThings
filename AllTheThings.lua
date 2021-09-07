@@ -3895,7 +3895,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							-- Add the immediate parent group Vendor name
 							local rawParent, sParent = rawget(group, "parent"), group.sourceParent;
 							-- the source group is different from the raw parent and the search context, then show the source parent text for reference
-							if not GroupMatchesParams(rawParent, sParent.key, sParent[sParent.key]) and not GroupMatchesParams(sParent, paramA, paramB) and sParent.text then
+							if sParent and sParent.text and not GroupMatchesParams(rawParent, sParent.key, sParent[sParent.key]) and not GroupMatchesParams(sParent, paramA, paramB) then
 								right = locationName .. " > " .. sParent.text .. " " .. right;
 							else
 								right = locationName .. " " .. right;
