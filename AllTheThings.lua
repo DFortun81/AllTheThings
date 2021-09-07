@@ -18949,6 +18949,9 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		elseif cmd == "bounty" then
 			app:GetWindow("Bounty"):Toggle();
 			return true;
+		elseif cmd == "filters" then
+			app:GetWindow("ItemFilter"):Toggle();
+			return true;
 		elseif cmd == "ra" then
 			app:GetWindow("RaidAssistant"):Toggle();
 			return true;
