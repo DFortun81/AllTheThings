@@ -28,6 +28,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					i(44803),	-- Spring Circlet
 					i(45073, {	-- Spring Flowers
 						["description"] = "This item is required for the achievement \"Shake Your Bunny-Maker\".",
+						["f"] = -1,	-- Remove the filterID from being attached to this Item
 					}),
 					i(44794),	-- Spring Rabbit's Foot
 					i(44800),	-- Spring Robes
