@@ -5027,7 +5027,7 @@ local function PopulateQuestObject(questObject)
 			-- only merge into the quest object properties from an object in cache with this questID
 			if data.questID == questObject.questID then
 				MergeProperties(questObject, data, true);
-				NestObjects(questObject, data.g, true);
+				-- NestObjects(questObject, data.g, true);
 			-- otherwise this is a non-quest object flagged with this questID so it should be added under the quest
 			else
 				NestObject(questObject, data, true);
@@ -10465,8 +10465,15 @@ app.TryPopulateQuestRewards = function(questObject)
 
 		-- Finally ensure that any cached entries for the quest are copied into this version of the object
 		local cachedQuest = app.SearchForObject("questID", questObject.questID);
-		if cachedQuest then
-			NestObjects(questObject, cachedQuest.g, true);
+		if cachedQuest and cachedQuest.g then
+			-- only copy in Things which are not Items since those will be populated from the server as requested
+			local nonItemNested = {};
+			for _,thing in ipairs(cachedQuest.g) do
+				if not thing.itemID then
+					tinsert(nonItemNested, thing);
+				end
+			end
+			NestObjects(questObject, nonItemNested, true);
 		end
 
 		-- Build out purchases if specified
