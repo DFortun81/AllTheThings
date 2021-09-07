@@ -238,7 +238,6 @@ _.Zones =
 						69664,	-- Mumta
 						69997,	-- Progenitus
 					},
-					["f"] = 999,	-- Event Item (so it doesn't filter out with Miscellaneous)
 					["g"] = {
 						n(69767, {	-- Ancient Mogu Guardian
 							["coord"] = { 53.13, 47.07, ISLE_OF_THUNDER },
