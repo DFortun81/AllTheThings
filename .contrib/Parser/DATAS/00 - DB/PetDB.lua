@@ -690,6 +690,7 @@ pet(163858, 2475);	-- Slippy
 pet(122534, 1655);	-- Slithershock Elver
 pet(122111, 1629);	-- Smelly Gravestone (Stinkrot)
 pet(67418, 294);	-- Smoldering Murloc Egg (Deathy)
+pet(12529, 90);		-- Smolderweb Carrier (Smolderweb Hatchling)
 pet(68673, 90);		-- Smolderweb Egg (Smolderweb Hatchling)
 pet(160708, 2189);	-- Smoochums
 pet(66073, 289);	-- Snail Shell (Scooter the Snail)
