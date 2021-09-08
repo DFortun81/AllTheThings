@@ -2288,12 +2288,12 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 				(not group.itemID and
 				-- incomplete things actually exist below itself
 				((group.total or 0) > (group.progress or 0)) and
-				-- account mode is active or it is not a 'saved' thing for this character
-				(app.MODE_ACCOUNT or not group.saved))
+				-- account/debug mode is active or it is not a 'saved' thing for this character
+				(app.MODE_DEBUG_OR_ACCOUNT or not group.saved))
 			) then
 			-- print("expanded",group.key,group[group.key]);
 			group.expanded = expanded;
-			for i, subgroup in ipairs(group.g) do
+			for _,subgroup in ipairs(group.g) do
 				ExpandGroupsRecursively(subgroup, expanded, manual);
 			end
 		end
@@ -2302,7 +2302,7 @@ end
 -- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
 local function HasExpandedSubgroup(group)
 	if group and group.g then
-		for i, subgroup in ipairs(group.g) do
+		for _,subgroup in ipairs(group.g) do
 			-- dont need recursion since a group has to be expanded for a subgroup to be visible within it
 			if subgroup.expanded then
 				return true;
@@ -14331,6 +14331,14 @@ local function UpdateWindow(self, force, got)
 				self.HasPendingUpdate = nil;
 				-- print("Done")
 			end
+
+			-- Should the groups in this window be expanded prior to processing the rows for display
+			if self.ExpandInfo then
+				-- print("ExpandInfo",self.Suffix,self.ExpandInfo.Expand,self.ExpandInfo.Manual)
+				ExpandGroupsRecursively(self.data, self.ExpandInfo.Expand, self.ExpandInfo.Manual);
+				self.ExpandInfo = nil;
+			end
+
 			ProcessGroup(self.rowData, self.data);
 
 			-- Does this user have everything?
@@ -15912,7 +15920,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- dont re-expand if the user has previously full-collapsed the minilist
 				-- need to force expand if so since the groups haven't been updated yet
 				if not self.fullCollapsed then
-					ExpandGroupsRecursively(self.data, true, true);
+					self.ExpandInfo = { Expand = true };
 				end
 
 				-- if enabled, minimize rows based on difficulty
@@ -16108,10 +16116,6 @@ customWindowUpdates["ItemFilter"] = function(self)
 						data.indent = 0;
 						data.visible = true;
 						BuildGroups(data, data.g);
-						if not data.expanded then
-							data.expanded = true;
-							ExpandGroupsRecursively(data, true);
-						end
 					end
 
 					-- Update the groups without forcing Debug Mode.
@@ -16119,6 +16123,7 @@ customWindowUpdates["ItemFilter"] = function(self)
 					app.VisibilityFilter = app.ObjectVisibilityFilter;
 					data.progress = 0;
 					data.total = 0;
+					self.ExpandInfo = { Expand = true };
 					BuildGroups(data, data.g);
 					self:BaseUpdate(true);
 					app.VisibilityFilter = visibilityFilter;
@@ -17735,10 +17740,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			self.data.indent = 0;
 			self.data.visible = true;
 			BuildGroups(self.data, self.data.g);
-			if not self.data.expanded then
-				self.data.expanded = true;
-				ExpandGroupsRecursively(self.data, true);
-			end
+			self.ExpandInfo = { Expand = true };
 		end
 		self:BaseUpdate(force or got, got);
 	end

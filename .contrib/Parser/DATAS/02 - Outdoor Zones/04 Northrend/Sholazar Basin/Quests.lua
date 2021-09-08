@@ -271,7 +271,10 @@ _.Zones =
 					["coord"] = { 27.0, 58.6, 119 },
 					["provider"] = { "n", 27986 },	-- Hemet Nesingwary
 					["isBreadcrumb"] = true,
-					["sourceQuest"] = 12543,	-- An Offering for Soo-rahm
+					["sourceQuests"] = {
+						12543,	-- An Offering for Soo-rahm
+						12560,	-- Crocolisk Mastery: The Plan
+					},
 				}),
 				q(12579, {	-- Lifeblood of the Mosswalker Shrine
 					["coord"] = { 74.1, 50.7, 119 },
