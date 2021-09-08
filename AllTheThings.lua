@@ -14203,6 +14203,13 @@ RowOnEnter = function (self)
 		-- GameTooltip:AddDoubleLine("Completed AltQuest ID",tostring(reference.altcompleted));
 		-- GameTooltip:AddDoubleLine("Breadcrumb Locking QuestID",tostring(reference.breadcrumbLockedBy));
 		-- GameTooltip:AddDoubleLine("Completed All SourceQuests",tostring(reference.sourceQuestsCompleted));
+		-- GameTooltip:AddDoubleLine(".collectible",tostring(reference.collectible));
+		-- GameTooltip:AddDoubleLine(".collected",tostring(reference.collected));
+		-- GameTooltip:AddDoubleLine(".collectibleAsCost",tostring(reference.collectibleAsCost));
+		-- GameTooltip:AddDoubleLine(".collectedAsCost",tostring(reference.collectedAsCost));
+		-- GameTooltip:AddDoubleLine(".costTotal",tostring(reference.costTotal));
+		-- GameTooltip:AddDoubleLine(".costProgress",tostring(reference.costProgress));
+		-- GameTooltip:AddDoubleLine("#.costCollectibles",tostring(reference.costCollectibles and #reference.costCollectibles));
 
 		-- print("OnRowEnter-Show");
 		GameTooltip.MiscFieldsComplete = true;
