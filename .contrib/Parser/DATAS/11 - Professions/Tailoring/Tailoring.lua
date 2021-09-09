@@ -5252,7 +5252,9 @@ profession(TAILORING, {
 			["requireSkill"] = TAILORING,
 			["lvl"] = 40,
 			["groups"] = {
-				i(10463),	-- Pattern: Shadoweave Mask
+				i(10463, {	-- Pattern: Shadoweave Mask
+					["timeline"] = { "removed 4.0.3.10000", "added 7.3" },
+				}),
 			},
 		}),
 	})),
