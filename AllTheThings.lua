@@ -17385,26 +17385,43 @@ customWindowUpdates["Random"] = function(self)
 end;
 customWindowUpdates["Quests"] = function(self, force, got)
 	if not self.initialized then
+		-- temporarily prevent a force refresh from exploding the game if this window is open
+		self.doesOwnUpdate = true;
 		self.initialized = true;
+		self.PartitionSize = 1000;
 		self.Limit = 70000;
 		force = true;
 
 		-- info about the Window
 		self.data = {
-			['text'] = L["QUESTS_CHECKBOX"],
-			['icon'] = app.asset("Interface_Quest_header"),
+			["text"] = L["QUESTS_CHECKBOX"],
+			["icon"] = app.asset("Interface_Quest_header"),
 			["description"] = L["QUESTS_DESC"].."\n\n1 - "..self.Limit,
-			['visible'] = true,
-			['expanded'] = true,
+			["visible"] = true,
+			["expanded"] = true,
 			["indent"] = 0,
-			['back'] = 1,
+			["back"] = 1,
 		};
 
 		-- add a bunch of raw, delay-loaded quests in order into the window
+		local groupCount = self.Limit / self.PartitionSize - 1;
 		local g, overrides = {}, {visible=true};
+		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
-		for i=1,self.Limit,1 do
-			tinsert(g, dlo(GetPopulatedQuestObject, "text", overrides, i));
+		for j=0,groupCount,1 do
+			partitionStart = j * self.PartitionSize;
+			partitionGroups = {};
+			-- define a sub-group for a range of quests
+			partition = {
+				["text"] = tostring(partitionStart + 1).."+",
+				["icon"] = app.asset("Interface_Quest_header"),
+				["visible"] = true,
+				["g"] = partitionGroups,
+			};
+			for i=1,self.PartitionSize,1 do
+				tinsert(partitionGroups, dlo(GetPopulatedQuestObject, "text", overrides, partitionStart + i));
+			end
+			tinsert(g, partition);
 		end
 		self.data.g = g;
 	end
