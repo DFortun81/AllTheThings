@@ -2076,14 +2076,14 @@ _.Zones =
 				},
 			}),
 			q(56166, {	-- The Needs of the People
-				["u"] = REMOVED_FROM_GAME,
+				["u"] = NEVER_IMPLEMENTED,
 				["provider"] = { "n", 151763 },	-- Isla
 				["coord"] = { 37.7, 55.3, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56164,	-- Desperate Need
 			}),
 			q(56179, {	-- The Needs of the People
-				["u"] = REMOVED_FROM_GAME,
+				["u"] = NEVER_IMPLEMENTED,
 				["provider"] = { "n", 154208 },	-- Jonah Lowtide
 				["coord"] = { 50.5, 66.2, 1355 },
 				["races"] = HORDE_ONLY,
