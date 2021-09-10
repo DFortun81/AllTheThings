@@ -144,6 +144,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { SHATTRATH_CITY },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(68, 20, 68),
+					["altQuests"] = {
+						10094,	-- The Codex of Blood (pre 4.0.3)
+					},
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
