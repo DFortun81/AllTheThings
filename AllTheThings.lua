@@ -15270,21 +15270,6 @@ function app:ApplyLockedWindows()
 		end
 	end
 end
--- Given a group listing, returns a cloned group from the highest level which matches a generic header
-function app:BuildRecursiveLocation(group)
-	local parentCopy, parent = {}, group.parent;
-	while parent do
-		-- set the same metatable
-		setmetatable(parentCopy, getmetatable(parent));
-		-- copy direct group values only
-		MergeProperties(parentCopy, parent);
-		parentCopy.g = { CloneData(group) };
-		if not t then t = { groupCopy };
-		else tinsert(t, groupCopy); end
-		parent = group.parent;
-	end
-	return group;
-end
 function app:BuildSearchResponse(groups, field, value)
 	if groups then
 		local t, response, v;
@@ -15292,8 +15277,11 @@ function app:BuildSearchResponse(groups, field, value)
 			v = group[field];
 			response = nil;
 			if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
-				if not t then t = { CloneData(group) };
-				else tinsert(t, CloneData(group)); end
+				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
+				if not app.BuildSearchResponse_IgnoreUnavailableRecipes or not group.spellID or not group.nmr then
+					if t then tinsert(t, CreateObject(group));
+					else t = { CreateObject(group) }; end
+				end
 			elseif group.g then
 				response = app:BuildSearchResponse(group.g, field, value);
 				if response then
@@ -15303,8 +15291,8 @@ function app:BuildSearchResponse(groups, field, value)
 					-- copy direct group values only
 					MergeProperties(groupCopy, group);
 					groupCopy.g = response;
-					if not t then t = { groupCopy };
-					else tinsert(t, groupCopy); end
+					if t then tinsert(t, groupCopy);
+					else t = { groupCopy }; end
 				end
 			end
 		end
@@ -16112,20 +16100,12 @@ customWindowUpdates["ItemFilter"] = function(self)
 
 					local g = {};
 					table.insert(g, 1, data.setItemFilter);
-					if #data.results > 0 then
+					if data.results and #data.results > 0 then
 						for i,result in ipairs(data.results) do
 							table.insert(g, result);
 						end
 					end
 					data.g = g;
-					if #g > 0 then
-						for i,entry in ipairs(g) do
-							entry.indent = nil;
-						end
-						data.indent = 0;
-						data.visible = true;
-						BuildGroups(data, data.g);
-					end
 
 					-- Update the groups without forcing Debug Mode.
 					local visibilityFilter = app.VisibilityFilter;
@@ -17543,6 +17523,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				-- Open the Tradeskill list for this Profession
 				if self.tradeSkillID ~= tradeSkillID then
 					self.tradeSkillID = tradeSkillID;
+					app.BuildSearchResponse_IgnoreUnavailableRecipes = true;
 					for i,group in ipairs(app.Categories.Professions) do
 						if group.requireSkill == tradeSkillID then
 							self.data = CloneData(group);
@@ -17563,6 +17544,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 							if response then tinsert(self.data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
 						end
 					end
+					app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
 				end
 				-- If something new was "learned", then refresh the data.
 				UpdateRawIDs("spellID", learned);
