@@ -296,9 +296,6 @@ profession(COOKING, {
 					["name"] = "Roasted Moongraze Tenderloin",
 					["timeline"] = { "added 2.0.1.6180" },
 					["recipeID"] = 33277,
-					-- #if AFTER 7.0.3
-					["races"] = ALLIANCE_ONLY,
-					-- #endif
 				}),
 				{
 					["name"] = "Rockscale Cod",

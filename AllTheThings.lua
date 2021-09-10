@@ -4171,6 +4171,7 @@ local ThingKeys = {
 	["s"] = true,
 	["speciesID"] = true,
 	["recipeID"] = true,
+	["spellID"] = true,
 	["questID"] = true,
 	["objectID"] = true,
 	["encounterID"] = true,
@@ -11220,6 +11221,22 @@ function app.FilterItemClass(item)
 			and app.RequireCustomCollectFilter(item);
 	end
 end
+-- Represents filters which should be applied during Updates to groups, but skips the BoE filter
+function app.FilterItemClass_IgnoreBoEFilter(item)
+	-- check Account trait filters
+	if app.UnobtainableItemFilter(item)
+		and app.SeasonalItemFilter(item)
+		and app.PvPFilter(item)
+		and app.RequireFactionFilter(item) then
+		-- check Character trait filters
+		return app.ItemTypeFilter(item)
+			and app.RequireBindingFilter(item)
+			and app.RequiredSkillFilter(item)
+			and app.ClassRequirementFilter(item)
+			and app.RaceRequirementFilter(item)
+			and app.RequireCustomCollectFilter(item);
+	end
+end
 function app.FilterItemClass_RequireClasses(item)
 	return not item.nmc;
 end
@@ -15278,7 +15295,7 @@ function app:BuildSearchResponse(groups, field, value)
 			response = nil;
 			if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
 				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
-				if not app.BuildSearchResponse_IgnoreUnavailableRecipes or not group.spellID or not group.nmr then
+				if not app.BuildSearchResponse_IgnoreUnavailableRecipes or not group.spellID or app.FilterItemClass_IgnoreBoEFilter(group) then
 					if t then tinsert(t, CreateObject(group));
 					else t = { CreateObject(group) }; end
 				end
