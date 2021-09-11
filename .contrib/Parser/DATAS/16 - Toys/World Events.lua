@@ -170,8 +170,8 @@ _.Toys =
 			}),
 		}),
 		holiday(235462, {	-- Hallow's End
-			["u"] = 26,
-			["g"] = sharedData({["u"] = 26,}, {
+			["u"] = HALLOWS_END,
+			["g"] = sharedData({["u"] = HALLOWS_END,}, {
 				i(128807),	-- Coin of Many Faces
 				i(163045),	-- Headless Horseman's Hearthstone
 				i(151271),	-- Horse Head Costume

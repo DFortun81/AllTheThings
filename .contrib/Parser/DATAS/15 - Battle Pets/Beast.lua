@@ -135,7 +135,7 @@ _.BattlePets =
 			p(2852),	-- Jade Defender
 			p(2795),	-- Jenafur
 			p(2622, {	-- Jingles
-				["u"] = 29,	-- Feast of Winter Veil
+				["u"] = FEAST_OF_WINTER_VEIL,
 			}),
 			p(699),		-- Jumping Spider
 			p(678),		-- Jungle Grub

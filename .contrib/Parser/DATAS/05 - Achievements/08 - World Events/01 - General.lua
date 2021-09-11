@@ -53,7 +53,7 @@ _.Achievements =
 				crit(5),				-- School of Hard Knocks
 				crit(6),				-- Hail To The King, Baby
 			})),
-			un(26, ach(1656, {		-- Hallowed Be Thy Name
+			un(HALLOWS_END, ach(1656, {		-- Hallowed Be Thy Name
 				title(92),				-- the Hallowed
 				crit(1),				-- Trick or Treat!
 				crit(2),				-- Out With It

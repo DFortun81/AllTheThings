@@ -13,7 +13,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		})),
 		un(BREWFEST, i(37828)),	-- Great Brewfest Kodo
-		un(26, i(37012)),	-- Headless Horseman's Mount
+		un(HALLOWS_END, i(37012)),	-- Headless Horseman's Mount
 		i(133543),			-- Infinite Timereaver
 		i(129922),			-- Ironbound Wraithcharger
 		un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(128671)),	-- Minion of Grumpus
