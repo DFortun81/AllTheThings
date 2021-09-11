@@ -238,10 +238,10 @@ _.Zones =
 						i(44606),	-- Toy Train Set Toy
 						i(45057),	-- Wind-Up Train Wrecker Toy
 						i(69896, {	-- Yellow Balloon Toy
-							["u"] = 20,	-- Children's Week
+							["u"] = CHILDRENS_WEEK,
 						}),
 						i(69895, {	-- Green Balloon Toy
-							["u"] = 20,	-- Children's Week
+							["u"] = CHILDRENS_WEEK,
 						}),
 					},
 				}),

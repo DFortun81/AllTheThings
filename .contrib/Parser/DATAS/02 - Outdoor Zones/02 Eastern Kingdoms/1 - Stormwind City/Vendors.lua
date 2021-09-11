@@ -433,7 +433,7 @@ _.Zones =
 						i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
 						i(104324),	-- Foot Ball (TOY!)
 						i(69895, {	-- Green Balloon (TOY!)
-							["u"] = 20, -- Children's Week
+							["u"] = CHILDRENS_WEEK,
 						}),
 						i(137663),	-- Soft Foam Sword (TOY!)
 						i(104323),	-- The Swineskin (TOY!)
@@ -443,7 +443,7 @@ _.Zones =
 						i(95621),	-- Warbot Ignition Key (PET!)
 						i(45057),	-- Wind-Up Train Wrecker (TOY!)
 						i(69896, {	-- Yellow Balloon (TOY!)
-							["u"] = 20, -- Children's Week
+							["u"] = CHILDRENS_WEEK,
 						}),
 					},
 				}),

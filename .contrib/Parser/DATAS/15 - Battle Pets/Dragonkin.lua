@@ -60,7 +60,7 @@ _.BattlePets =
 			p(143),		-- Red Dragonhawk Hatchling
 			p(2421),	-- Saurolisk Hatchling
 			p(2578, {	-- Scaley
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(144),		-- Silver Dragonhawk Hatchling
 			un(BLIZZARD_BALANCE, p(347)),	-- Soul of the Aspects

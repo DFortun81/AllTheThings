@@ -82,7 +82,7 @@ _.BattlePets =
 			p(3043),	-- Jiggles
 			p(1635),	-- K'ute
 			p(308, {	-- Legs
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(1234),	-- Lesser Voidcaller
 			p(1395),	-- Lil' Leftovers
@@ -146,7 +146,7 @@ _.BattlePets =
 			p(2130),	-- Void Shardling
 			p(2434),	-- Voidwiggle
 			p(157, {	-- Willy
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(2535),	-- Wicker Wraith
 			p(3036),	-- Will of Remornia

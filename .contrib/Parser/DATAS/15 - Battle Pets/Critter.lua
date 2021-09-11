@@ -56,7 +56,7 @@ _.BattlePets =
 			p(467),		-- Dung Beetle
 			p(1778),	-- Dust Bunny
 			p(158, {	-- Egbert
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(479),		-- Elfin Rabbit
 			p(209),		-- Elwynn Lamb
@@ -122,7 +122,7 @@ _.BattlePets =
 			p(633),		-- Mountain Skunk
 			p(385),		-- Mouse
 			p(126, {	-- Mr. Wiggles
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(2660),	-- Muck Slug
 			p(1776),	-- Mudshell Conch
@@ -137,7 +137,7 @@ _.BattlePets =
 			p(1729),	-- Olivetail Hare
 			p(2116),	-- Orphaned Marsuul
 			p(159, {	-- Peanut
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(250),		-- Perky Pug
 			p(166),		-- Pint-Sized Pink Pachyderm
@@ -169,7 +169,7 @@ _.BattlePets =
 			p(512),		-- Scarab Hatchling
 			p(3112),	-- Scavenging Skrat
 			p(289, {	-- Scooter the Snail
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(3118),	-- Scurrying Mawrat
 			p(3022),	-- Shimmerbough Hoarder
@@ -214,7 +214,7 @@ _.BattlePets =
 			p(2841),	-- Void-Scarred Rat
 			p(410),		-- Wharf Rat
 			p(127, {	-- Whiskers the Rat
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(118),		-- Winter Reindeer
 			p(153),		-- Wolpertinger

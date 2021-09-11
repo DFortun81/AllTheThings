@@ -12,7 +12,7 @@ _.BattlePets =
 			p(2425),	-- Barnacled Hermit Crab
 			p(2385),	-- Barrier Hermit
 			p(2576, {	-- Beakbert
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(1934),	-- Benax
 			p(649),		-- Biletoad
@@ -52,7 +52,7 @@ _.BattlePets =
 			p(2423),	-- Freshwater Pincher
 			p(495),		-- Frog
 			p(2577, {	-- Froglet
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(1578),	-- Frostshell Pincher
 			p(1237),	-- Gahz'rooki
@@ -99,7 +99,7 @@ _.BattlePets =
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			p(2575, {	-- Mr. Crabs
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(164),		-- Muckbreath
 			p(1441),	-- Mud Jumper
@@ -151,7 +151,7 @@ _.BattlePets =
 			p(2528),	-- Spawn of Krag'wa
 			p(2693),	-- Spawn of Nalaada
 			p(125, {	-- Speedy
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(1337),	-- Spineclaw Crab
 			p(723),		-- Spiny Terrapin

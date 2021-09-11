@@ -104,8 +104,8 @@ _.Toys =
 			}),
 		}),
 		holiday(235445, {	-- Children's Week
-			["u"] = 20,
-			["g"] = sharedData({["u"] = 20,}, {
+			["u"] = CHILDRENS_WEEK,
+			["g"] = sharedData({["u"] = CHILDRENS_WEEK,}, {
 				i(69895),	-- Green Balloon
 				i(69896),	-- Yellow Balloon
 			}),
