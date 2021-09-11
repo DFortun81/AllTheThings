@@ -17,27 +17,30 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10664,	-- Additional Materials
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["maps"] = { TEROKKAR_FOREST },
-					["cost"] = {
-						{ "i", 30824, 1 },	-- Overcharged Manacell
-					},
 					["lvl"] = lvlsquish(67, 25, 67),
+					["g"] = {
+						objective(1, {
+							["provider"] = { "i", 30824, 1 },	-- Overcharged Manacell
+						}),
+					},
 				}),
 				q(29659, {	-- Lost Treasure
-					["qg"] = 18481,	-- Adal, auto-granted
+					["description"] = "Automatically provided after killing either Gatewatcher.",
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 72663, 1 },	-- Blinding Fury
-					},
 					["lvl"] = lvlsquish(67, 20, 67),
+					["g"] = {
+						objective(1, {
+							["provider"] = { "i", 72663, 1 },	-- Blinding Fury
+						}),
+					},
 				}),
 				q(29658, {	-- The Calculator
-					["qg"] = 18481,	-- Adal, auto-granted
 					["sourceQuest"] = 29657,	-- With Great Power, Comes Great Responsibility
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
 				}),
 				q(29657, {	-- With Great Power, Comes Great Responsibility
-					["qg"] = 18481,	-- Adal, auto-granted
+					["description"] = "Automatically provided upon starting the instance.",
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
 				}),

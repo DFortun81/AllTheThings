@@ -51,16 +51,18 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10280,	-- Special Delivery to Shattrath City
 					["coord"] = { 53.7, 44.6, SHATTRATH_CITY },
 					["maps"] = { SHATTRATH_CITY, TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
-					["cost"] = {
-						{ "i", 31085, 1 },	-- Top Shard of the Arcatraz Key
-						{ "i", 31086, 1 },	-- Bottom Shard of the Arcatraz Key
-					},
 					-- #if AFTER WRATH
 					["lvl"] = lvlsquish(67, 25, 67),
 					-- #else
 					["lvl"] = lvlsquish(70, 25, 70),
 					-- #endif
 					["groups"] = {
+						objective(1, {
+							["provider"] = { "i", 31085, 1 },	-- Top Shard of the Arcatraz Key
+						}),
+						objective(2, {
+							["provider"] = { "i", 31086, 1 },	-- Bottom Shard of the Arcatraz Key
+						}),
 						i(31084, {	-- Key to the Arcatraz
 							["timeline"] = { "removed 4.0.3.14732" },
 						}),
