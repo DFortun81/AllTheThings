@@ -105,7 +105,7 @@ _.Achievements =
 				crit(8),				-- The Turkinator
 				crit(9),				-- Turkey Lurkey
 			})),
-			un(23, ach(3457)),		-- The Captain's Booty (Pirates' Day)
+			un(PIRATES_DAY, ach(3457)),		-- The Captain's Booty
 			un(MIDSUMMER_FIRE_FESTIVAL, a(ach(1038, {	-- The Flame Warden (Alliance)
 				title(44),				-- Flame Warden
 				crit(1),				-- The Fires of Azeroth

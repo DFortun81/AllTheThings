@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = 23},
+_.Holidays = bubbleDown({["u"] = PIRATES_DAY},
 {
 	holiday(235481, {	-- Pirates' Day
 		["maps"] = { THE_CAPE_OF_STRANGLETHORN },

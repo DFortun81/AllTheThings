@@ -229,8 +229,8 @@ _.Toys =
 			}),
 		}),
 		holiday(235481, {	-- Pirates' Day
-			["u"] = 23,
-			["g"] = sharedData({["u"] = 23,}, {
+			["u"] = PIRATES_DAY,
+			["g"] = sharedData({["u"] = PIRATES_DAY,}, {
 				i(150547),	-- Jolly Roger
 				i(138415),	-- Slightly-Chewed Insult Book
 			}),
