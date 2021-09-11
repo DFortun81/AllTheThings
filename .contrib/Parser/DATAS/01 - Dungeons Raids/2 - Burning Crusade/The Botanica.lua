@@ -10,7 +10,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		["groups"] = {
 			n(QUESTS, {
 				q(29669, {	-- A Most Somber Task
-					["qg"] = 18481,	-- Adal, auto-granted
+					-- ["qg"] = 18481,	-- Adal, auto-granted
 					["sourceQuest"] = 29667,	-- Culling the Herd
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
@@ -20,22 +20,27 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10256,	-- Finding the Keymaster
 					["coord"] = { 58.3, 86.4, NETHERSTORM },
 					["maps"] = { NETHERSTORM },
-					["cost"] = {
-						{ "i", 28769, 1 },	-- The Keystone
-					},
 					["lvl"] = lvlsquish(67, 25, 67),
+					["g"] = {
+						objective(1, {
+							["provider"] = { "i", 28769, 1 },	-- The Keystone
+						}),
+					},
 				}),
 				q(29667, {	-- Culling the Herd
-					["qg"] = 18481,	-- Adal, auto-granted
+					-- ["qg"] = 18481,	-- Adal, auto-granted
 					["sourceQuest"] = 29660,	-- Saving the Botanica
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 72706, 1 },	-- Rapidly Evolving Frond
-					},
 					["lvl"] = lvlsquish(67, 20, 67),
+					["g"] = {
+						objective(1, {
+							["provider"] = { "i", 72706, 1 },	-- Rapidly Evolving Frond
+						}),
+					},
 				}),
 				q(29660, {	-- Saving the Botanica
-					["qg"] = 18481,	-- Adal, auto-granted
+					-- ["qg"] = 18481,	-- Adal, auto-granted
+					["description"] = "Automatically provided upon starting the instance.",
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
 				}),
