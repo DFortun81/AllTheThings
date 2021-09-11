@@ -106,7 +106,7 @@ _.Achievements =
 				crit(9),				-- Turkey Lurkey
 			})),
 			un(23, ach(3457)),		-- The Captain's Booty (Pirates' Day)
-			un(21, a(ach(1038, {	-- The Flame Warden (Alliance) (Midsummer)
+			un(MIDSUMMER_FIRE_FESTIVAL, a(ach(1038, {	-- The Flame Warden (Alliance)
 				title(44),				-- Flame Warden
 				crit(1),				-- The Fires of Azeroth
 				crit(2),				-- Desecration of the Horde/Alliance
@@ -115,7 +115,7 @@ _.Achievements =
 				crit(5),				-- King of the Fire Festival
 				crit(6),				-- Torch Juggler
 			}))),
-			un(21, h(ach(1039, {	-- The Flame Keeper (Horde) (Midsummer)
+			un(MIDSUMMER_FIRE_FESTIVAL, h(ach(1039, {	-- The Flame Keeper (Horde)
 				title(45),				-- Flame Keeper
 				crit(1),				-- The Fires of Azeroth
 				crit(2),				-- Desecration of the Horde/Alliance
