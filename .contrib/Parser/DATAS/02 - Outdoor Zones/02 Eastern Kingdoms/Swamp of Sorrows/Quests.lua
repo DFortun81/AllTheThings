@@ -293,7 +293,7 @@ _.Zones =
 					["provider"] = { "n", 17127 },	-- Anchorite Avuun
 					["coord"] = { 26.9, 33.6, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 24913,	-- Remember the Light
+					--["sourceQuest"] = 24913,	-- Remember the Light
 					["isBreadcrumb"] = true,
 				}),
 				q(27821, {	-- Orcs and Humans

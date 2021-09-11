@@ -475,6 +475,7 @@ _.Zones =
 					["provider"] = { "n", 264 },	-- Commander Althea Ebonlocke
 					["coord"] = { 73.5, 46.9, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26618,	-- Wolves at Our Heels
 					["isBreadcrumb"] = true,
 				}),
 				q(26684, {	-- The Insane Ghoul

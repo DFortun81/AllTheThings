@@ -271,6 +271,7 @@ _.Zones =
 					}),
 					o(244701, {	-- Small Treasure Chest
 						["questID"] = 39977,
+						["description"] = "Cave entrance is located at 71.0 54.2.",
 						["coord"] = { 74.3, 54.5, 672 },
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",
 					}),

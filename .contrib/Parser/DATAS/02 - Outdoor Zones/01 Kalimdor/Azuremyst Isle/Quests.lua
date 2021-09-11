@@ -89,6 +89,8 @@ _.Zones =
 					["qg"] = 17442,	-- Moordo
 					-- #if BEFORE MOP
 					["sourceQuest"] = 9544,	-- The Prophecy of Akida
+					-- #elseif AFTER 9.0.2
+					["sourceQuest"] = 9544,	-- The Prophecy of Akida
 					-- #else
 					-- This needs to be checked for accuracy each expansion.
 					["sourceQuest"] = 9559,	-- Stillpine Hold

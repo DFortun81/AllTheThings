@@ -71,6 +71,7 @@ _.HiddenQuestTriggers = {
 		--q(55628),	-- Killing Paol Pondwader(Second ID?) / 'A Sound Defense' Quest / after killing (Rare) Beehemoth in Stormsong Valley / triggering this, am doing WQ "Too Much To Bear" / Trig Sound and doing Azerite Mining WQ
 		--q(54324),	-- Triggered in BfA
 		--q(54317),	-- BfA Alliance Stormsong "Invasion"
+		--q(62521),	-- unknown tracking
 
 		-------------------
 		--    VARIOUS    --
@@ -1755,6 +1756,7 @@ _.HiddenQuestTriggers = {
 		q(36554),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
 		q(37634),	-- Assault on Darktide Roost (Removed from game, Horde)
 		q(36821),	-- Assault on the Gorian Proving Grounds (Removed from game, Horde)
+		q(37646),	-- See New Brightstone, See Wolfed Out Thorn (Garrison Attack?)
 
 		-- GARRISON COMMAND TABLE
 		q(39413),
@@ -1813,6 +1815,7 @@ _.HiddenQuestTriggers = {
 		q(34024),	-- Tracking Quest. This completes when you kill the Windfang Matriarch after helping Romuul.
 		q(33786),	-- ??????. This was completed around Fiona's caravan in Shadowmoon Valley - Draenor (not entirely sure what triggered it.)
 		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
+		--q(39709),	-- Unknown tracking quest
 
 		-------------------
 		--    Legion     --
@@ -2505,6 +2508,7 @@ _.HiddenQuestTriggers = {
 		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
 		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
 		q(55628),	-- Tracking Quest killed Mala'kili/Rohn'kor
+		--q(55464),	-- Triggered with Tandred Proudmoore conversation?
 
 		--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley
@@ -3038,6 +3042,7 @@ _.HiddenQuestTriggers = {
 		q(47443),	-- switched loa alignment in Zuldazar to Gonk by speaking to Chronicler Ash'tari
 		q(53567),	-- Sky Queen, rare with no associated loot
 		q(50844),	-- triggered when turning in #50900, "Maybe When You're Older," part of Kua'fon questline
+		q(50828),	-- triggered when turning in #50412, Back to the Nest, part of Kua'fon questline.
 		q(51992),	-- triggered when turning in "Of Dark Deeds and Dark Days"
 		q(51993),	-- triggered when turning in "Of Dark Deeds and Dark Days"
 		q(55257),	-- triggered after turning in "Held for Observation" in the "How to Train Your Direhorn" questline
