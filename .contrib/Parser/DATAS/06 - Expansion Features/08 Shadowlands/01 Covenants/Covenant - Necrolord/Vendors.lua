@@ -84,27 +84,69 @@ _.ExpansionFeatures =
 							i(184047, {	-- Ascended Chest of Arms
 								["cost"] = { { "c", 1813, 1000 } },
 								["g"] = {
-									-- TODO: Add items when we find out what is in this box.
+									i(181225),		-- Crossbow of Contemplative Calm
+									i(181226),		-- Bronze Dual-Bladed Glaive
+									i(181232),		-- Cupbearer's Claymore
+									i(181234),		-- Dutybound Spellblade
+									i(181228),		-- Temple Guard's Partisan
+									i(181229),		-- Tranquil's Censer
+									i(181230),		-- Pugilist's Chakram
+									i(181233),		-- Bellringer's Hammer
+									i(181227),		-- Bronze Ceremonial Targe
+									i(181231),		-- Broadbladed Severer
+									i(181235),		-- Final Arbiter's Gavel
 								},
 							}),
 							i(184045, {	-- Martial Tithe of the Court of Harvesters
 								["cost"] = { { "c", 1813, 1000 } },
 								["g"] = {
-									-- TODO: Add items when we find out what is in this box.
+									i(180955),		-- Stonewing Halberd
+									i(180956),		-- Axeblade Blunderbuss
+									i(180957),		-- Batwing Glaive
+									i(180963),		-- Crypt Keeper's Vessel
+									i(180954),		-- Crypt Watcher's Spire
+									i(180959),		-- Dredger Anklebiter
+									i(180960),		-- Shiny-Metal Topped Basher
+									i(180954),		-- Ember Court Barrier
+									i(180958),		-- Redelev House Foil
+									i(180961),		-- Silver-Bladed Ritual Dagger
+									i(180962),		-- Sterling-Silver Cudgel
 								},
 							}),
 							i(184046, {	-- Undying Army Weapon Cache
 								["cost"] = { { "c", 1813, 1000 } },
 								["g"] = {
-									-- TODO: Add items when we find out what is in this box.
+									i(181329),		-- Marrowfused Claymore
+									i(181321),		-- Gem-Crowned Wand
+									i(181327),		-- Spineforged Tenderizer
+									i(181330),		-- Marrowfused Warglaive
+									i(181325),		-- Marrowfused Dagger
+									i(181328),		-- Marrowfused Sword
+									i(181331),		-- Marrowfused Shield
+									i(181326),		-- Bloodstained Hacksaw
+									i(181323),		-- Blightclutched Greatstaff
+									i(181320),		-- Bonejowl Ballista
+									i(181322),		-- Bonebound Tome
 								},
 							}),
 							i(184048, {	-- Weapon Satchel of the Wild Hunt
 								["cost"] = { { "c", 1813, 1000 } },
 								["g"] = {
-									-- TODO: Add items when we find out what is in this box.
+									i(179548),		-- Elderwood Gavel
+									i(179563),		-- Heartwood Stem
+									i(179499),		-- Nightwillow Barb
+									i(179538),		-- Grove Warden's Maul
+									i(179605),		-- Elderwood Barrier
+									i(179514),		-- Ripvine Saber
+									i(179585),		-- Nightwillow Shortbow
+									i(179509),		-- Grove Warden's Edge
+									i(179516),		-- Songwood Staff
+									i(179533),		-- Grove Warden's Harvester
 								},
 							}),
+							i(184050),	-- Malleable Mesh
+							i(184049),	-- Counterfeit Luckydo
+							i(184051),	-- Stitched Lich Effigy
 						},
 					}),
 					n(175310, {	-- Mellisa Fate <Raid Finder Nathrian Warsmith>
