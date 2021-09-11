@@ -405,14 +405,14 @@ profession(TAILORING, {
 					["name"] = "Festival Dress",
 					["recipeID"] = 26403,
 					-- #if NOT ANYCLASSIC
-					["u"] = 17,
+					["u"] = LUNAR_FESTIVAL,
 					-- #endif
 				},
 				{
 					["name"] = "Festival Suit",
 					["recipeID"] = 26407,
 					-- #if NOT ANYCLASSIC
-					["u"] = 17,
+					["u"] = LUNAR_FESTIVAL,
 					-- #endif
 				},
 				{

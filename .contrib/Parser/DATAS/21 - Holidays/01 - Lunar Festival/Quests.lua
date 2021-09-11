@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = 17},
+_.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 {
 	holiday(235471, {	-- Lunar Festival
 		n(QUESTS, {
@@ -11,9 +11,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Courage|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
 				["coord"] = { 53.1, 36.0, MOONGLADE },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
-					un(17, i(170205)),	-- Crown of Boundless Courage
+					i(170205),	-- Crown of Boundless Courage
 				},
 			}),
 			q(56905, {	-- Crown of Dark Blossoms
@@ -21,9 +20,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Dark Blossoms|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
 				["coord"] = { 53.1, 36.0, MOONGLADE },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
-					un(17, i(170207)),	-- Crown of Eternal Memorial
+					i(170207),	-- Crown of Eternal Memorial
 				},
 			}),
 			q(56906, {	-- Crown of Good Fortune
@@ -31,9 +29,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Good Fortune|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
 				["coord"] = { 53.1, 36.0, MOONGLADE },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
-					un(17, i(169208)),	-- Crown of Everlasting Fortune
+					i(169208),	-- Crown of Everlasting Fortune
 				},
 			}),
 			q(56904, {	-- Crown of Prosperity
@@ -41,9 +38,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Prosperity|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
 				["coord"] = { 53.1, 36.0, MOONGLADE },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
-					un(17, i(170206)),	-- Crown of Infinite Prosperity
+					i(170206),	-- Crown of Infinite Prosperity
 				},
 			}),
 			q(8868,  {	-- Elune's Blessing
@@ -51,10 +47,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15864 },	-- Valadar Starsong <Coin of Ancestry Collector>
 				["isYearly"] = true,
 				["coord"] = { 53.6, 35.4, MOONGLADE },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
-					un(17, i(21540)),	-- Elune's Lantern
-					un(17, i(21640)),	-- Lunar Festival Fireworks Pack
+					i(21540),	-- Elune's Lantern
+					i(21640),	-- Lunar Festival Fireworks Pack
 				},
 			}),
 			q(8862,  {	-- Elune's Candle
@@ -84,9 +79,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 					125,	-- Dalaran: Northrend
 					VALE_OF_ETERNAL_BLOSSOMS,
 				},
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
-					un(17, i(21711)),	-- Lunar Festival Invitation
+					i(21711),	-- Lunar Festival Invitation
 				},
 			}),
 			q(56842, {	-- Lunar Preservation
@@ -99,7 +93,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { IRONFORGE },
-				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8871,  {	-- The Lunar Festival (A)
 				["isBreadcrumb"] = true,
@@ -107,7 +100,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { ELWYNN_FOREST },
-				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8872,  {	-- The Lunar Festival (A)
 				["isBreadcrumb"] = true,
@@ -115,7 +107,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { DARNASSUS },
-				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8873,  {	-- The Lunar Festival (H)
 				["isBreadcrumb"] = true,
@@ -123,7 +114,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
 				["maps"] = { ORGRIMMAR },
-				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8874,  {	-- The Lunar Festival (H)
 				["isBreadcrumb"] = true,
@@ -131,7 +121,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
 				["maps"] = { UNDERCITY },
-				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8875,  {	-- The Lunar Festival (H)
 				["isBreadcrumb"] = true,
@@ -139,7 +128,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
 				["maps"] = { THUNDER_BLUFF },
-				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8883,  {	-- Valadar Starsong
 				["sourceQuests"] = { 8867 },	-- Lunar Fireworks
@@ -159,7 +147,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 					125,	-- Dalaran: Northrend
 					VALE_OF_ETERNAL_BLOSSOMS,
 				},
-				["u"] = 17,	-- Lunar Festival
 			}),
 		--	Elders of Cataclysm
 			q(29736, {	-- Darkfeather the Elder
@@ -167,7 +154,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 51.8, 33.0, TWILIGHT_HIGHLANDS },
 				["maps"] = { TWILIGHT_HIGHLANDS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(5, {	-- Elder Darkfeather in Twilight Highlands
 						["achievementID"] = 6006,	-- Elders of Cataclysm
@@ -179,7 +165,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 27.7, 69.1, 207 },
 				["maps"] = { 207 },	-- Deepholm
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(9, {	-- Elder Deepforge in Deepholm
 						["achievementID"] = 6006,	-- Elders of Cataclysm
@@ -191,7 +176,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 62.5, 22.8, MOUNT_HYJAL },
 				["maps"] = { MOUNT_HYJAL },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(7, {	-- Elder Evershade in Nordrassil
 						["achievementID"] = 6006,	-- Elders of Cataclysm
@@ -203,7 +187,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 50.9, 70.4, TWILIGHT_HIGHLANDS },
 				["maps"] = { TWILIGHT_HIGHLANDS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(4, {	-- Elder Firebeard in Twilight Highlands
 						["achievementID"] = 6006,	-- Elders of Cataclysm
@@ -215,7 +198,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 65.5, 18.7, 249 },
 				["maps"] = { 249 },	-- Uldum
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(2, {	-- Elder Menkhaf in Uldum
 						["achievementID"] = 6006,	-- Elders of Cataclysm
@@ -227,7 +209,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 57.2, 86.1, 205 },
 				["maps"] = { 205 },	-- Shimmering Expanse
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(8, {	-- Elder Moonlance in Vashj'ir
 						["achievementID"] = 6006,	-- Elders of Cataclysm
@@ -239,7 +220,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 31.5, 63.0, 249 },
 				["maps"] = { 249 },	-- Uldum
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(3, {	-- Elder Sekhemi in Uldum
 						["achievementID"] = 6006,	-- Elders of Cataclysm
@@ -251,7 +231,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 49.7, 54.8, 207 },
 				["maps"] = { 207 },	-- Deepholm
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Stonebrand in the Temple of the Earth
 						["achievementID"] = 6006,	-- Elders of Cataclysm
@@ -263,7 +242,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 26.7, 62.0, MOUNT_HYJAL },
 				["maps"] = { MOUNT_HYJAL },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(6, {	-- Elder Windsong in Hyjal
 						["achievementID"] = 6006,	-- Elders of Cataclysm
@@ -277,7 +255,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 54.2, 49.4, BLASTED_LANDS },
 				["maps"] = { BLASTED_LANDS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(2, {	-- Elder Bellowrage
 						["achievementID"] = 912,	-- Eldersof Eastern Kingdoms
@@ -289,7 +266,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 52.3, 23.9, BURNING_STEPPES },
 				["maps"] = { BURNING_STEPPES },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(10, {	-- Elder Dawnstrider in Flame Crest
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -301,7 +277,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 53.8, 49.9, DUN_MOROGH },
 				["maps"] = { DUN_MOROGH },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Goldwell in Kharanos
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -314,7 +289,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 61.8, 53.9, TIRISFAL_GLADES },
 				["maps"] = { TIRISFAL_GLADES },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(13, {	-- Elder Graveborn in Brill
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -326,7 +300,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 49.9, 47.9, THE_HINTERLANDS },
 				["maps"] = { THE_HINTERLANDS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(11, {	-- Elder Highpeak in The Hinterlands
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -338,7 +311,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 21.3, 79.0, SEARING_GORGE },
 				["maps"] = { SEARING_GORGE },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(12, {	-- Elder Ironband in Searing Gorge
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -350,7 +322,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 63.5, 36.2, WESTERN_PLAGUELANDS },
 				["maps"] = { WESTERN_PLAGUELANDS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(4, {	-- Elder Meadowrun in Western Plaguelands
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -362,7 +333,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 69.1, 73.3, WESTERN_PLAGUELANDS },
 				["maps"] = { WESTERN_PLAGUELANDS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(17, {	-- Elder Moonstrike in Scholomance
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -374,7 +344,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 45.0, 41.1, SILVERPINE_FOREST },
 				["maps"] = { SILVERPINE_FOREST },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(14, {	-- Elder Obsidian in The Sepulcher
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -386,7 +355,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 70.1, 45.4, BURNING_STEPPES },
 				["maps"] = { BURNING_STEPPES },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(9, {	-- Elder Rumblerock in Burning Steppes
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -398,7 +366,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 33.3, 46.5, LOCH_MODAN },
 				["maps"] = { LOCH_MODAN },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(7, {	-- Elder Silvervein in Thelsamar
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -410,7 +377,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 56.7, 47.1, WESTFALL },
 				["maps"] = { WESTFALL },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(8, {	-- Elder Skychaser in Sentinel Hill
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -422,7 +388,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 75.7, 54.4, EASTERN_PLAGUELANDS },
 				["maps"] = { EASTERN_PLAGUELANDS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(16, {	-- Elder Snowcrown in Light's Hope Chapel
 						["achievementID"] = 912,	-- Elders of Eastern Kingdom
@@ -434,7 +399,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 71.0, 34.2, NORTHERN_STRANGLETHORN },
 				["maps"] = { NORTHERN_STRANGLETHORN },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(5, {	-- Elder Starglade in Zul'Gurub
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -446,7 +410,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 39.8, 63.8, ELWYNN_FOREST },
 				["maps"] = { ELWYNN_FOREST },	-- Goldshire
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(3, {	-- Elder Stormbrow in Goldshire
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -458,7 +421,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 35.5, 68.8, EASTERN_PLAGUELANDS },
 				["maps"] = { EASTERN_PLAGUELANDS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(15, {	-- Elder Windrun in Eastern Plaguelands
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -470,7 +432,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 40.0, 72.4, THE_CAPE_OF_STRANGLETHORN },
 				["maps"] = { THE_CAPE_OF_STRANGLETHORN },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(6, {	-- Elder Winterhoof in Booty Bay
 						["achievementID"] = 912,	-- Elders of Eastern Kingdoms
@@ -484,7 +445,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 56.8, 53.1, TELDRASSIL },
 				["maps"] = { TELDRASSIL },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(6, {	-- Elder Bladeleaf in Dolanaar
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -497,7 +457,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 53.0, 35.4, SILITHUS },
 				["maps"] = { SILITHUS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(21, {	-- Elder Bladesing in Cenarion Hold
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -509,7 +468,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 48.4, 53.2, MULGORE },
 				["maps"] = { MULGORE },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(8, {	-- Elder Bloodhoof in Bloodhoof Village
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -521,7 +479,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 53.2, 56.7, WINTERSPRING },
 				["maps"] = { WINTERSPRING },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(18, {	-- Elder Brightspear in Winterspring
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -533,7 +490,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 51.3, 28.8, TANARIS },
 				["maps"] = { TANARIS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(16, {	-- Elder Dreamseer in Gadgetzan
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -545,7 +501,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 76.7, 37.8, FERALAS },
 				["maps"] = { FERALAS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(10, {	-- Elder Grimtotem in Feralas
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -557,7 +512,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 41.6, 47.4, SOUTHERN_BARRENS },
 				["maps"] = { SOUTHERN_BARRENS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(4, {	-- Elder High Mountain in Vendetta Point
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -569,7 +523,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 62.5, 30.9, FERALAS },
 				["maps"] = { FERALAS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(11, {	-- Elder Mistwalker in Dire Maul
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -581,7 +534,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 48.5, 59.2, NORTHERN_BARRENS },
 				["maps"] = { NORTHERN_BARRENS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(3, {	-- Elder Moonwarden in The Crossroads
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -593,7 +545,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 77.1, 75.6, THOUSAND_NEEDLES },
 				["maps"] = { THOUSAND_NEEDLES },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(14, {	-- Elder Morningdew in Fizzle and Pozzik's Speedbarge
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -605,7 +556,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 38.4, 52.8, FELWOOD },
 				["maps"] = { FELWOOD },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(12, {	-- Elder Nightwind in Felwood
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -618,7 +568,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 30.8, 13.3, SILITHUS },
 				["maps"] = { SILITHUS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(20, {	-- Elder Primestone in Silithus
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -630,7 +579,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 37.2, 79.0, TANARIS },
 				["maps"] = { TANARIS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(15, {	-- Elder Ragetotem in Tanaris
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -642,7 +590,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 35.5, 48.9, ASHENVALE },
 				["maps"] = { ASHENVALE },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(9, {	-- Elder Riversong in Astranaar
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -654,7 +601,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 53.1, 43.6, DUROTAR },
 				["maps"] = { DUROTAR },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Runetotem in Razor Hill
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -666,7 +612,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 64.7, 79.3, AZSHARA },
 				["maps"] = { AZSHARA },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(2, {	-- Elder Skygleam in Azshara
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -678,7 +623,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 46.3, 50.9, THOUSAND_NEEDLES },
 				["maps"] = { THOUSAND_NEEDLES },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(13, {	-- Elder Skyseer in Freewind Post
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -691,7 +635,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 49.5, 18.9, DARKSHORE },
 				["maps"] = { DARKSHORE },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(7, {	-- Elder Starweave in Lor'danel
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -703,7 +646,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 59.9, 49.9, WINTERSPRING },
 				["maps"] = { WINTERSPRING },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(19, {	-- Elder Stonespire in Everlook
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -715,7 +657,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 50.3, 76.2, UNGORO_CRATER },
 				["maps"] = { UNGORO_CRATER },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(17, {	-- Elder Thunderhorn in Un'goro
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -727,7 +668,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 68.4, 69.9, NORTHERN_BARRENS },
 				["maps"] = { NORTHERN_BARRENS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(5, {	-- Elder Windtotem in Ratchet
 						["achievementID"] = 911,	-- Elders of Kalimdor
@@ -740,7 +680,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 57.3, 43.7, 114 },
 				["maps"] = { 114 },	-- Borean Tundra
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(5, {	-- Elder Arp in D.E.H.T.A
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -752,7 +691,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 60.5, 27.7, 116 },
 				["maps"] = { 116 },	-- Grizzly Hills
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(2, {	-- Elder Beldak
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -764,7 +702,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 49.0, 14.0, 123 },
 				["maps"] = { 123 },	-- Wintergrasp
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(10, {	-- Elder Bluewolf in Wintergrasp
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -776,7 +713,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 28.9, 73.7, 120 },
 				["maps"] = { 120 },	-- The Storm Peaks
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(4, {	-- Elder Fargal in Frosthold
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -788,7 +724,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 41.1, 84.7, 120 },
 				["maps"] = { 120 },	-- The Storm Peaks
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(13, {	-- Elder Graymane in K3
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -800,7 +735,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 80.4, 37.1, 116 },
 				["maps"] = { 116 },	-- Grizzly Hills
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(9, {	-- Elder Lunaro in Ruins of Tethys
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -812,7 +746,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 29.7, 55.9, 115 },
 				["maps"] = { 115 },	-- Dragonblight
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(3, {	-- Elder Morthie in Star's Rest
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -824,7 +757,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 64.6, 51.3, 120 },
 				["maps"] = { 120 },	-- The Storm Peaks
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(18, {	-- Elder Muraco in Camp Tunka'lo
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -836,7 +768,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 33.7, 34.3, 114 },
 				["maps"] = { 114 },	-- Borean Tundra
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(6, {	-- Elder Northal in Transitus Shield
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -848,7 +779,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 42.9, 49.5, 114 },
 				["maps"] = { 114 },	-- Borean Tundra
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(15, {	-- Elder Pamuya in Warsong Hold
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -860,7 +790,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 49.7, 63.5, 119 },
 				["maps"] = { 119 },	-- Sholazar Basin
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(7, {	-- Elder Sandrene in Lakeside Landing
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -872,7 +801,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 59.0, 65.5, 114 },
 				["maps"] = { 114 },	-- Borean Tundra
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Sardis in Valiance Keep
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -884,7 +812,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 35.1, 48.3, 115 },
 				["maps"] = { 115 },	-- Dragonblight
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(17, {	-- Elder Skywarden in Agmar's Hammer
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -896,7 +823,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 31.2, 37.6, 120 },
 				["maps"] = { 120 },	-- The Storm Peaks
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(14, {	-- Elder Stonebeard in Bouldercrag's Refuge
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -908,7 +834,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 58.9, 56.0, 121 },
 				["maps"] = { 121 },	-- Zul'Drak
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(11, {	-- Elder Tauros in Zim'Torga
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -920,7 +845,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 48.7, 78.1, 115 },
 				["maps"] = { 115 },	-- Dragonblight
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(12, {	-- Elder Thoim in Moa'ki Harbor
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -932,7 +856,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 63.8, 49.0, 119 },
 				["maps"] = { 119 },	-- Sholazar Basin
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(8, {	-- Elder Wanikaya in Rainspeaker Rapids
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -944,7 +867,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 64.2, 47.0, 116 },
 				["maps"] = { 116 },	-- Grizzly Hills
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(16, {	-- Elder Whurain in Camp Oneqwah
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -958,7 +880,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 39.3, 31.8, DARNASSUS },
 				["maps"] = { DARNASSUS },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Bladeswift in Darnassus
 						["achievementID"] = 915,	-- Elders of the Alliance
@@ -971,7 +892,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 29.4, 17.1, IRONFORGE },
 				["maps"] = { IRONFORGE },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(2, {	-- Elder Bronzebeard in Ironforge
 						["achievementID"] = 915,	-- Elders of the Alliance
@@ -983,7 +903,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 34.5, 50.3, ELWYNN_FOREST },
 				["maps"] = { ELWYNN_FOREST },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(3, {	-- Elder Hammershout in Stormwind
 						["achievementID"] = 915,	-- Elders of the Alliance
@@ -1000,7 +919,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 					117,	-- Howling Fjord
 					136,	-- Utgarde Pinnacle
 				},
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(13, {	-- Elder Chogan'gada in Utgarde Pinnacle
 						["achievementID"] = 910,	-- Elders of the Dungeons
@@ -1016,7 +934,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 					EASTERN_PLAGUELANDS,
 					STRATHOLME,
 				},
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(6, {	-- Elder Farwhisper in Stratholme
 						["achievementID"] = 910,	-- Elders of the Dungeons
@@ -1032,7 +949,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 					114,	-- Borean Tundra
 					129,	-- The Nexus
 				},
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(8, {	-- Elder Igasho in The Nexus
 						["achievementID"] = 910,	-- Elders of the Dungeons
@@ -1048,7 +964,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 					117,	-- Howling Fjord
 					133,	-- Utgarde Keep
 				},
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(7, {	-- Elder Jarten in Utgarde Keep
 						["achievementID"] = 910,	-- Elders of the Dungeons
@@ -1064,7 +979,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 					121,	-- Zul'Drak
 					160,	-- Drak'Tharon Keep
 				},
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(10, {	-- Elder Kilias in Drak'Tharon Keep
 						["achievementID"] = 910,	-- Elders of the Dungeons
@@ -1080,7 +994,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 					BURNING_STEPPES,
 					BLACKROCK_DEPTHS,
 				},
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(5, {	-- Elder Morndeep in Blackrock Depths
 						["achievementID"] = 910,	-- Elders of the Dungeons
@@ -1096,7 +1009,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 					115,	-- Dragonblight
 					157,	-- Azjol-Nerub
 				},
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(9, {	-- Elder Nurgen in Azjol-Nerub
 						["achievementID"] = 910,	-- Elders of the Dungeons
@@ -1112,7 +1024,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 					121,	-- Zul'Drak
 					153,	-- Gundrak
 				},
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(11, {	-- Elder Ohanzee in Gundrak
 						["achievementID"] = 910,	-- Elders of the Dungeons
@@ -1128,7 +1039,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 					DESOLACE,
 					MARAUDON,
 				},
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(3, {	-- Elder Splitrock in Maraudon
 						["achievementID"] = 910,	-- Elders of the Dungeons
@@ -1144,7 +1054,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 					SWAMP_OF_SORROWS,
 					SUNKEN_TEMPLE,
 				},
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(2, {	-- Elder Starsong in Sunken Temple
 						["achievementID"] = 910,	-- Elders of the Dungeons
@@ -1160,7 +1069,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 					BURNING_STEPPES,
 					LBRS_HORDEMAR_CITY,
 				},
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(4, {	-- Elder Stonefort in Blackrock Spire
 						["achievementID"] = 910,	-- Elders of the Dungeons
@@ -1176,7 +1084,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 					TANARIS,
 					219,	-- Zul'Farrak
 				},
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Wildmane in Zul'Farrak
 						["achievementID"] = 910,	-- Elders of the Dungeons
@@ -1192,7 +1099,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 					120,	-- The Storm Peaks
 					140,	-- Halls of Stone
 				},
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(12, {	-- Elder Yurauk in the Halls of Stone
 						["achievementID"] = 910,	-- Elders of the Dungeons
@@ -1206,7 +1112,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 66.5, 38.0, UNDERCITY },
 				["maps"] = { UNDERCITY },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(3, {	-- Elder Darkcore in Undercity
 						["achievementID"] = 914,	-- Elders of the Horde
@@ -1219,7 +1124,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 52.1, 59.8, ORGRIMMAR },
 				["maps"] = { ORGRIMMAR },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Darkhorn in Orgrimmar
 						["achievementID"] = 914,	-- Elders of the Horde
@@ -1232,7 +1136,6 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["coord"] = { 72.8, 22.8, THUNDER_BLUFF },
 				["maps"] = { THUNDER_BLUFF },
-				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(2, {	-- Elder Wheathoof in Thunder Bluff
 						["achievementID"] = 914,	-- Elders of the Horde

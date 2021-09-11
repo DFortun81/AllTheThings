@@ -124,7 +124,7 @@ _.Achievements =
 				crit(5),				-- King of the Fire Festival
 				crit(6),				-- Torch Juggler
 			}))),
-			un(17, ach(913, {		-- To Honor One's Elders (Lunar Festival)
+			un(LUNAR_FESTIVAL, ach(913, {		-- To Honor One's Elders
 				title(43),				-- Elder
 				crit(1),				-- Elders of Cataclysm
 				crit(2),				-- Elders of Eastern Kingdoms

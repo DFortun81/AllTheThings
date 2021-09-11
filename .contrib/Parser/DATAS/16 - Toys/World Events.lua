@@ -192,8 +192,8 @@ _.Toys =
 			}),
 		}),
 		holiday(235471, {	-- Lunar Festival
-			["u"] = 17,
-			["g"] = sharedData({["u"] = 17,}, {
+			["u"] = LUNAR_FESTIVAL,
+			["g"] = sharedData({["u"] = LUNAR_FESTIVAL,}, {
 				i(165672),	-- Blue Dragon Body Costume
 				i(165671),	-- Blue Dragon Head Costume
 				i(165673),	-- Blue Dragon Tail Costume
