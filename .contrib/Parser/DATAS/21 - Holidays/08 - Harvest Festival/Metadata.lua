@@ -5,7 +5,7 @@
 _.Holidays =
 {
 	holiday(235465, {	-- Harvest Festival
-		["u"] = 25,	-- Harvest Festival
+		["u"] = HARVEST_FESTIVAL,
 		["maps"] = {
 			--	Dun Morogh maps
 			28,		-- Coldridge Pass
