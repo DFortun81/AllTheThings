@@ -39,3 +39,4 @@ __pycache__
 .contrib/Parser/localizedObjects.txt
 .contrib/.tools/log.txt
 /.vscode/settings.json
+.venv
