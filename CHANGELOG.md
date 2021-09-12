@@ -1,24 +1,30 @@
 # AllTheThings
 
-## [SL-2.4.2](https://github.com/DFortun81/AllTheThings/tree/SL-2.4.2) (2021-08-31)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.4.1...SL-2.4.2) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.4.3](https://github.com/DFortun81/AllTheThings/tree/SL-2.4.3) (2021-09-12)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.4.2...SL-2.4.3) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
-### Highlight of this update
+### Highlight of this update 🐰
 
-Added a new Settings option (Features > Modules & Lists) to enable using ad-hoc window updates. This is still experimental feature but feel free to try it and report any bugs on our Discord!
+Pet Battlers, rejoice! ATT will now automatically hide all visible windows when starting a Pet Battle. The closed windows will reopen when leaving the Pet Battle. (If someone has a serious need to keep windows open during a Pet Battle... maybe you can talk us into spending time making it a new Setting).
 
 ### Notable changes:
 
-- Changing ATT Modes will properly change visibility of the purchases in a list/tooltip even if they didn't meet the filters when originally created (currencies/cost items). If there are any issues with tooltips regarding these changes please post in #errors
-- Fixed popouts of a cost item created via right-clicking to properly populate all of their purchases even when the Item is normally ignored to prevent Minilist spam (Burning Blossoms, etc.) or when it is a BoE item used to make purchases only another character would be able to make based on the user's Ignore BoE filter setting.
-- Added initial implementation of an 'all quests window' for those who are curious. Can be opened using '/att quests'. Do not Force-Refresh while the window is open!
-- Hopefully a slight improvement to Quest name retrieval performance...
-- Fixed function used by the AH Module (haven't tested if that fixes it at all...)
-- Added logic to properly handle recursive filtering for auto-filled purchases in popout windows/tooltips
-- Achievement Criteria groups will now properly use their source Achievement's restrictive information (class/race) when they are pulled into search results separate from the achievement (i.e. in tooltips on creatures). Explanation: you won't see Horde only achievement criteria in tooltips while on your Alliance character (with Account Mode disabled).
-- Fixed showing drop source creatures in the Model frame for Items
-- Added the Promotions section and moved a bunch of old "World Event" stuff that wasn't really a world event into it.
-- Moved Legion Invasions under Expansion Features.
-- Optimized logic for filling purchases so that Marks of Honor don't destroy your game, and everything else gets to be un-noticeably quicker
-- Default Quest Chain Requirement logic will now include Breadcrumbs for visibility since they will now respect their collectibility via Settings
-- Various fixes
+- Queen's Conservatory rewards will show up in tooltips of the Wildseed catalyst and seeds.
+- Holiday names in settings should be localized in all languages now. If you are willing to help with further localization efforts, reach out on Discord.
+- We now have separate "Lore" setting (Interface tab), disable if you don't want to see flavor descriptions on zones/bosses.
+- New setting "Allow Collectible Cost Groups" (Features tab). Enable this option if you want to allow Items/Currencies which are used to purchase collectible Things to be considered collectible and show under dynamically-populated Quests.
+- Fixed crafted material sources showing properly.
+- Contains info concerning a 'class' specific Thing will now put the class in square brackets for clarity (i.e. when a Thing is being colored to match the class color already, it was weird to see the class name appended directly).
+- Criteria for Achievements contained in a Contains tooltip will now show their associated Achievement name for clarity.
+- Revamped the logic for the 'Sources' header of a popout list to improve performance (popout list is when you Right click a thing in ATT lists).
+- Fixed tooltips for BFA Azerite caches and similar objects.
+- Fixed some shared appearances showing as "Not in ATT" when they are in ATT.
+- More fixes for "Ad-hoc window updates", check thjis setting out (Features tab).
+- `/attwq` should have more accurate quest rewards now (what server returns, not what we put there as some quests rotate rewards).
+- The automatic current Difficulty expansion in the minilist should be fixed now.
+- Modified `/att quests` to group quests by 1000's and to temporarily prevent a full update on the window so your game doesn't explode if you try it.
+- Fixed showing faction-locked recipes in the tradeskill window (i.e. Trial of Crusader patterns).
+- 'Spells' (i.e. raw recipes) properly show their Source(s) in a popout window.
+- Some fixes for `/att filters`.
+- More performance improvements.
+- Various fixes.
