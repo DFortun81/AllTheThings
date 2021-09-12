@@ -28,7 +28,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				n(-368, {	-- The Arachnid Quarter
 					ach(562),	-- The Arachnid Quarter (10 player)
 					cr(15956, e(1601, {	-- Anub'Rehkan
-						["description"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
+						["lore"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
 						["groups"] = {
 							{
 								["achievementID"] = 562,	-- The Arachnid Quarter (10 player)
@@ -51,7 +51,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(15953, e(1602, {	-- Grand Widow Faerlina
-						["description"] = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
+						["lore"] = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
 						["groups"] = {
 							ach(1997),	-- Momma Said Knock You Out (10 player)
 							{
@@ -75,7 +75,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(15952, e(1603, {	-- Maexxna
-						["description"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
+						["lore"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
 						["groups"] = {
 							ach(1858),	-- Arachnophobia (10 player)
 							{
@@ -103,7 +103,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				n(-370, {	-- The Plague Quarter
 					ach(566),	-- The Plague Quarter (10 player)
 					cr(15954, e(1604, {	-- Noth the Plaguebringer
-						["description"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
+						["lore"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
 						["groups"] = {
 							{
 								["achievementID"] = 566,	-- The Plague Quarter (10 player)
@@ -126,7 +126,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(15936, e(1605, {	-- Heigan the Unclean
-						["description"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
+						["lore"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
 						["groups"] = {
 							ach(1996),	-- The Safety Dance (10 player)
 							{
@@ -150,7 +150,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(16011, e(1606, {	-- Loatheb
-						["description"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
+						["lore"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
 						["groups"] = {
 							ach(2182),	-- Spore Loser (10 player)
 							{
@@ -176,7 +176,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				n(-369, {	-- The Military Quarter
 					ach(568),	-- The Military Quarter (10 player)
 					cr(16061, e(1607, {	-- Instructor Razuvious
-						["description"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
+						["lore"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
 						["groups"] = {
 							{
 								["achievementID"] = 568,	-- The Military Quarter (10 player)
@@ -199,7 +199,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(16060, e(1608, {	-- Gothik the Harvester
-						["description"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
+						["lore"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
 						["groups"] = {
 							{
 								["achievementID"] = 568,	-- The Military Quarter (10 player)
@@ -222,7 +222,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(30549, e(1609, {	-- The Four Horsemen
-						["description"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
+						["lore"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
 						["groups"] = {
 							ach(2176),	-- And They Would All Go Down Together (10 player)
 							{
@@ -243,7 +243,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				n(-367, {	-- The Construct Quarter
 					ach(564),	-- The Construct Quarter (10 player)
 					cr(16028, e(1610, {	-- Patchwerk
-						["description"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
+						["lore"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
 						["groups"] = {
 							ach(1856),	-- Make Quick Werk of Him (10 player)
 							{
@@ -267,7 +267,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(15931, e(1611, {	-- Grobbulus
-						["description"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
+						["lore"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
 						["groups"] = {
 							{
 								["achievementID"] = 564,	-- The Construct Quarter (10 player)
@@ -290,7 +290,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(15932, e(1612, {	-- Gluth
-						["description"] = "The foul plague-dog of Naxxramas, was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
+						["lore"] = "The foul plague-dog of Naxxramas, was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
 						["groups"] = {
 							{
 								["achievementID"] = 564,	-- The Construct Quarter (10 player)
@@ -418,7 +418,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(15928, e(1613, {	-- Thaddius
-						["description"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
+						["lore"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
 						["groups"] = {
 							ach(2178),	-- Shocking! (10 player)
 							ach(2180),	-- Subtraction (10 player)
@@ -443,7 +443,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				n(-371, {	-- The Upper Necropolis
 					cr(15989, e(1614, {	-- Sapphiron
-						["description"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
+						["lore"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
 						["groups"] = {
 							ach(572),	-- Sapphiron's Demise (10 player)
 							ach(2146),	-- The Hundred Club (10 player)
@@ -468,7 +468,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(15990, e(1615, {	-- Kel'Thuzad
-						["description"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
+						["lore"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
 						["groups"] = {
 							ach(574),	-- Kel'Thuzad's Defeat (10 player)
 							{
@@ -527,7 +527,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				n(-368, {	-- The Arachnid Quarter
 					ach(563),	-- The Arachnid Quarter (25 player)
 					cr(15956, e(1601, {	-- Anub'Rekhan
-						["description"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
+						["lore"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
 						["groups"] = {
 							{
 								["achievementID"] = 563,	-- The Arachnid Quarter (25 player)
@@ -563,7 +563,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(15953, e(1602, {	-- Grand Widow Faerlina
-						["description"] = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
+						["lore"] = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
 						["groups"] = {
 							ach(2140),	-- Momma Said Knock You Out (25 player)
 							{
@@ -599,7 +599,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(15952, e(1603, {	-- Maexxna
-						["description"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
+						["lore"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
 						["groups"] = {
 							ach(1859),	-- Arachnophobia (25 player)
 							{
@@ -641,7 +641,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				n(-370, {	-- The Plague Quarter
 					ach(567),	-- The Plague Quarter (25 player)
 					cr(15954, e(1604, {	-- Noth the Plaguebringer
-						["description"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
+						["lore"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
 						["groups"] = {
 							{
 								["achievementID"] = 567,	-- The Plague Quarter (25 player)
@@ -676,7 +676,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(15936, e(1605, {	-- Heigan the Unclean
-						["description"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
+						["lore"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
 						["groups"] = {
 							ach(2139),	-- The Safety Dance (25 player)
 							{
@@ -713,7 +713,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(16011, e(1606, {	-- Loatheb
-						["description"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
+						["lore"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
 						["groups"] = {
 							ach(2183),	-- Spore Loser (25 player)
 							{
@@ -744,7 +744,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				n(-369, {	-- The Military Quarter
 					ach(569),	-- The Military Quarter (25 player)
 					cr(16061, e(1607, {	-- Instructor Razuvious
-						["description"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
+						["lore"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
 						["groups"] = {
 							{
 								["achievementID"] = 569,	-- The Military Quarter (25 player)
@@ -779,7 +779,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(16060, e(1608, {	-- Gothik the Harvester
-						["description"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
+						["lore"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
 						["groups"] = {
 							{
 								["achievementID"] = 569,	-- The Military Quarter (25 player)
@@ -814,7 +814,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(30549, e(1609, {	-- The Four Horsemen
-						["description"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
+						["lore"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
 						["groups"] = {
 							ach(2177),	-- And They Would All Go Down Together (25 player)
 							{
@@ -843,7 +843,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				n(-367, {	-- The Construct Quarter
 					ach(565),	-- The Construct Quarter (25 player)
 					cr(16028, e(1610, {	-- Patchwerk
-						["description"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
+						["lore"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
 						["groups"] = {
 							ach(1857),	-- Make Quick Werk of Him (25 player)
 							{
@@ -879,7 +879,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(15931, e(1611, {	-- Grobbulus
-						["description"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
+						["lore"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
 						["groups"] = {
 							{
 								["achievementID"] = 565,	-- The Construct Quarter (25 player)
@@ -916,7 +916,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(15932, e(1612, {	-- Gluth
-						["description"] = "The foul plague-dog of Naxxramas was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
+						["lore"] = "The foul plague-dog of Naxxramas was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
 						["groups"] = {
 							{
 								["achievementID"] = 565,	-- The Construct Quarter (25 player)
@@ -1088,7 +1088,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(15928, e(1613, {	-- Thaddius
-						["description"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
+						["lore"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
 						["groups"] = {
 							ach(2179),	-- Shocking! (25 player)
 							ach(2181),	-- Subtraction (25 player)
@@ -1118,7 +1118,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				n(-371, {	-- The Upper Necropolis
 					cr(15989, e(1614, {	-- Sapphiron
-						["description"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
+						["lore"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
 						["groups"] = {
 							ach(573),	-- Sapphiron's Demise (25 player)
 							ach(2147),	-- The Hundred Club (25 player)
@@ -1153,7 +1153,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					})),
 					cr(15990, e(1615, {	-- Kel'Thuzad
-						["description"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
+						["lore"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
 						["groups"] = {
 							{
 								["achievementID"] = 1402,	-- Realm First! Conqueror of Naxxramas

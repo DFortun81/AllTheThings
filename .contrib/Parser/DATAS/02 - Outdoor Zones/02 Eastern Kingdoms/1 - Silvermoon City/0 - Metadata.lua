@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		m(SILVERMOON_CITY, {
-			["description"] = "Silvermoon City is the capital city of the blood elves. It is located in Eversong Woods, next to the tainted Dead Scar.",
+			["lore"] = "Silvermoon City is the capital city of the blood elves. It is located in Eversong Woods, next to the tainted Dead Scar.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_bloodelf",
 			-- #endif

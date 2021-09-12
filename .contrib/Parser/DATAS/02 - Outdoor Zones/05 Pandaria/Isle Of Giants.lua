@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(ISLE_OF_GIANTS, {
-			["description"] = "The Isle of Giants is an island that has been lost in time, home to primal devilsaurs, direhorns, and skyscreamers raised by the Zandalar tribe on the isle since the loss of Zandalar.",
+			["lore"] = "The Isle of Giants is an island that has been lost in time, home to primal devilsaurs, direhorns, and skyscreamers raised by the Zandalar tribe on the isle since the loss of Zandalar.",
 			["icon"] = "Interface\\Icons\\ability_hunter_pet_devilsaur",
 			["g"] = {
 				n(FLIGHT_PATHS, {

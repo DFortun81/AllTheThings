@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		n(-10057, {	-- War Effort
 			n(-237, {	-- Warfront: The Battle for Darkshore
 				["lvl"] = 120,
-				["description"] = "The Battle for Darkshore is the second warfront in Battle for Azeroth where the Forsaken and the Night Elves struggle for control of a staging area near the former Night Elven capital region of Teldrassil.",
+				["lore"] = "The Battle for Darkshore is the second warfront in Battle for Azeroth where the Forsaken and the Night Elves struggle for control of a staging area near the former Night Elven capital region of Teldrassil.",
 				["maps"] = {
 					1203,	-- ???
 					-- 1309,	-- 8.2+ Darkshore ?

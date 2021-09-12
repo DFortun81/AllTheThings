@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(393, {	-- Shrine of Seven Stars
-			["description"] = "The Shrine of Seven Stars is an ancient mogu structure located south of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. It has been claimed by the Alliance and serves as the main hub of the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.",
+			["lore"] = "The Shrine of Seven Stars is an ancient mogu structure located south of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. It has been claimed by the Alliance and serves as the main hub of the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.",
 			["isRaid"] = true,
 			["races"] = ALLIANCE_ONLY,
 			["icon"] = "Interface\\Icons\\achievement_doublejeopardyally",

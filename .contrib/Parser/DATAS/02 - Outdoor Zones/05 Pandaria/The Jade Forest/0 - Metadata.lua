@@ -7,7 +7,7 @@ _.Zones =
 	m(PANDARIA, {
 		m(THE_JADE_FOREST, {
 			["achievementID"] = 6351,
-			["description"] = "The Jade Forest is a zone located in eastern Pandaria, bordering the Valley of the Four Winds at the southwest and Kun-Lai Summit at the northwest. The heart of the Pandaren Empire, it is a lush rainforest with statuesque stone spires, prominent with the pandaren architecture.",
+			["lore"] = "The Jade Forest is a zone located in eastern Pandaria, bordering the Valley of the Four Winds at the southwest and Kun-Lai Summit at the northwest. The heart of the Pandaren Empire, it is a lush rainforest with statuesque stone spires, prominent with the pandaren architecture.",
 			["maps"] = {
 				372,	-- Greenstone Quarry
 				373,	-- Greenstone Quarry #2

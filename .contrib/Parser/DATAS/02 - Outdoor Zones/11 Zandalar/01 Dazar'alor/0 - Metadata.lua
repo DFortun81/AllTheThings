@@ -15,7 +15,7 @@ _.Zones =
 				1166,	-- Zanchul
 				1167,	-- Zanchul 2
 			},
-			["description"] = "Dazar'alor is King Rastakhan's palace in Zuldazar. The Great Seal, in its interior chamber, serves as the Horde's embassy on Zandalar and includes some portals to each major city and expansions, profession trainers, bank and guild banks, transmogifier and a mission table.",
+			["lore"] = "Dazar'alor is King Rastakhan's palace in Zuldazar. The Great Seal, in its interior chamber, serves as the Horde's embassy on Zandalar and includes some portals to each major city and expansions, profession trainers, bank and guild banks, transmogifier and a mission table.",
 		}),
 	}),
 };

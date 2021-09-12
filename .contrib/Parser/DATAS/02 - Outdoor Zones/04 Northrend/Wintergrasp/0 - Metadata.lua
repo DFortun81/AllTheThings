@@ -7,7 +7,7 @@ _.Zones =
 	m(113, {	-- Northrend
 		m(123, {	-- Wintergrasp
 			["achievementID"] = 1752,	--  Master of Wintergrasp
-			["description"] = "Wintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns.",
+			["lore"] = "Wintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns.",
 		}),
 	}),
 };

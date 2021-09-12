@@ -35,7 +35,7 @@ _.Zones =
 							["coord"] = { 72.0, 57.0, 119 },
 							["isDaily"] = true,
 							["provider"] = { "n", 28668 },	-- Zepik the Gorloc Hunter
-							["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
+							["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenzyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
 						}),
 						q(12703, {	-- Kartak's Rampage
 							["coord"] = { 55.5, 68.6, 119 },
@@ -158,7 +158,7 @@ _.Zones =
 							["coord"] = { 72.5, 57.5, 119 },
 							["isDaily"] = true,
 							["provider"] = { "n", 28667 },		-- Jaloot
-							["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
+							["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenzyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
 						}),
 						q(12761, {	-- Mastery of the Crystals
 							["coord"] = { 54.2, 53.8, 119 },
