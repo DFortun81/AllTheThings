@@ -7,6 +7,10 @@
 
 Pet Battlers, rejoice! ATT will now automatically hide all visible windows when starting a Pet Battle. The closed windows will reopen when leaving the Pet Battle. (If someone has a serious need to keep windows open during a Pet Battle... maybe you can talk us into spending time making it a new Setting).
 
+### Darkmoon Faire 🔮
+
+No, Darkmoon Faire is not broken, you have to enable tracking for it in the Unobtainables tab, top of the page, among other holidays. It's just it was broken before and always showed up.
+
 ### Notable changes:
 
 - Queen's Conservatory rewards will show up in tooltips of the Wildseed catalyst and seeds.
