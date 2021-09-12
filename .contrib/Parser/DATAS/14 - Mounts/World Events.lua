@@ -9,7 +9,7 @@ _.Mounts =
 		i(73766),			-- Darkmoon Dancing Bear
 		i(142398),			-- Darkwater Skate
 		i(129923),			-- Eclipse Dragonhawk
-		un(31, i(172023, {	-- Frostwolf Snarler
+		un(WOW_ANNIVERSARY, i(172023, {	-- Frostwolf Snarler
 			["races"] = HORDE_ONLY,
 		})),
 		un(BREWFEST, i(37828)),	-- Great Brewfest Kodo
@@ -17,8 +17,8 @@ _.Mounts =
 		i(133543),			-- Infinite Timereaver
 		i(129922),			-- Ironbound Wraithcharger
 		un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(128671)),	-- Minion of Grumpus
-		un(31, i(172012)),	-- Obsidian Worldbreaker
-		un(31, i(172022, {	-- Stormpike Battle Ram
+		un(WOW_ANNIVERSARY, i(172012)),	-- Obsidian Worldbreaker
+		un(WOW_ANNIVERSARY, i(172022, {	-- Stormpike Battle Ram
 			["races"] = ALLIANCE_ONLY,
 		})),
 		un(BREWFEST, i(33977)),	-- Swift Brewfest Ram

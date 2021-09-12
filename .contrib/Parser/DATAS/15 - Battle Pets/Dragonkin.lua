@@ -40,7 +40,7 @@ _.BattlePets =
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			p(2621, {	-- Lil' Nefarian
-				["u"] = 31,	-- WoW Anniversary
+				["u"] = WOW_ANNIVERSARY,
 			}),
 			p(320),		-- Lil' Tarecgosa
 			p(3053, {	-- Moon-Touched Netherwhelp
