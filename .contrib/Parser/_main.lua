@@ -451,6 +451,7 @@ REMOVED_FROM_GAME = 2;
 BLIZZARD_BALANCE = 35;
 
 -- Classic Phases
+-- #if ANYCLASSIC
 PHASE_ONE = 11;
 PHASE_ONE_DIREMAUL = 1101;
 PHASE_TWO = 12;
@@ -505,6 +506,9 @@ BFA_PHASE_ONE = 80;
 
 -- Shadowlands Phases
 SHADOWLANDS_PHASE_ONE = 90;
+
+-- Done defining Phases for Classic
+-- #endif
 
 ItemClassInfo = {
 	{
