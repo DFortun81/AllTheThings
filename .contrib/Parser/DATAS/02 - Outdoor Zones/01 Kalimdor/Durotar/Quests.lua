@@ -1013,7 +1013,7 @@ _.Zones =
 					["qg"] = 39379,	-- Gor the Enforcer
 					["coord"] = { 44.9, 14.7, DUROTAR },
 					["sourceQuest"] = 25260,	-- Fizzled
-					["races"] = { ORC, TROLL, MAGHAR },
+					["races"] = { ORC, TROLL, MAGHAR, HIGHMOUNTAIN_TAUREN },
 					["timeline"] = {
 						"added 4.0.3.13277"
 					},

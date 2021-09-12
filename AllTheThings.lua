@@ -4559,12 +4559,12 @@ fieldConverters = {
 			_cache(group, questGiverID);
 		end
 	end,
-	["altQuests"] = function(group, value)
-		_cache = rawget(fieldConverters, "questID");
-		for i,questID in ipairs(value) do
-			_cache(group, questID);
-		end
-	end,
+	-- ["altQuests"] = function(group, value)
+	-- 	_cache = rawget(fieldConverters, "questID");
+	-- 	for i,questID in ipairs(value) do
+	-- 		_cache(group, questID);
+	-- 	end
+	-- end,
 	["providers"] = function(group, value)
 		for k,v in pairs(value) do
 			if v[2] > 0 then
@@ -4836,16 +4836,20 @@ local function SearchForMissingItemNames(group)
 	end
 	return arr;
 end
-local function UpdateSearchResults(searchResults)
+-- Dynamically increments the progress for the parent heirarchy of each collectible search result
+local function UpdateSearchResults(searchResults, verifyCollectible)
 	if searchResults and #searchResults > 0 then
-		-- Ad-hoc update system doesn't actually need to pass along updates to the results, it only needs to refresh windows
-		if not app.Settings:GetTooltipSetting("Updates:AdHoc") then
+		-- Ad-hoc update system only needs to pass along updates to the results if the Main list is open
+		-- otherwise it only needs to refresh windows
+		if not app.Settings:GetTooltipSetting("Updates:AdHoc") or app:GetWindow("Prime"):IsVisible() then
 			-- Mark all results as marked. This prevents a double +1 on parents.
 			for i,result in ipairs(searchResults) do
 				-- print("result",result.text,result.visible,result.parent and result.parent.total)
 				if result.visible and result.parent and result.parent.total then
-					-- print(".marked",result.text)
-					result.marked = true;
+					if not verifyCollectible or result.collectible then
+						-- print(".marked",result.text,verifyCollectible)
+						result.marked = true;
+					end
 				end
 			end
 
@@ -4853,20 +4857,14 @@ local function UpdateSearchResults(searchResults)
 			for i,result in ipairs(searchResults) do
 				if result.marked then
 					result.marked = nil;
-					if result.total then
-						-- This is an item that has a relative set of groups
-						app.UpdateParentProgress(result);
-
-						-- If this is NOT a group...
-						if not result.g then
-							-- If we've collected the item, use the "Show Collected Items" filter.
-							result.visible = app.CollectedItemVisibilityFilter(result);
-						end
+					-- Every result has a total/progress now
+					-- print("Update self+parent",result.text,"=>",result.parent.text)
+					app.UpdateParentProgress(result);
+					-- This is an item that has a relative set of groups
+					if result.g then
+						app.SetGroupVisibility(result.parent, result);
 					else
-						app.UpdateParentProgress(result.parent);
-
-						-- If we've collected the item, use the "Show Collected Items" filter.
-						result.visible = app.CollectedItemVisibilityFilter(result);
+						app.SetThingVisibility(result.parent, result);
 					end
 				end
 			end
@@ -4882,7 +4880,11 @@ local function UpdateRawIDs(field, ids)
 		local groups, search = {};
 		for _,id in ipairs(ids) do
 			search = SearchForField(field, id);
-			MergeObjects(groups, search);
+			if search then
+				for _,thing in ipairs(search) do
+					tinsert(groups, thing);
+				end
+			end
 		end
 		UpdateSearchResults(groups);
 	end
@@ -11939,21 +11941,21 @@ local function UpdateParentProgress(group)
 	group.progress = group.progress + 1;
 	-- print("new progress",group.progress,group.total,group.text)
 
-	-- Continue on to this object's parent.
-	if group.parent then
-		if group.visible then
-			-- print("visible",group.text)
-			-- If this is a collected collectible, update the parent.
-			UpdateParentProgress(group.parent);
-			-- Set visibility for this group as well
-			SetGroupVisibility(group.parent, group);
-			-- print("visible?",group.visible,group.text)
-		end
+	-- Continue on to this object's parent
+	if group.parent and group.visible then
+		-- print("visible",group.text)
+		-- If this is a collected collectible, update the parent.
+		UpdateParentProgress(group.parent);
+		-- Set visibility for this group as well
+		SetGroupVisibility(group.parent, group);
+		-- print("visible?",group.visible,group.text)
 	end
 end
 app.UpdateGroup = UpdateGroup;
 app.UpdateGroups = UpdateGroups;
 app.UpdateParentProgress = UpdateParentProgress;
+app.SetThingVisibility = SetThingVisibility;
+app.SetGroupVisibility = SetGroupVisibility;
 -- For directly applying the full Update operation for the top-level data group within a window
 local function TopLevelUpdateGroup(group, window)
 	group.total = 0;
@@ -12232,39 +12234,7 @@ function app.QuestCompletionHelper(questID)
 	if app.CollectibleQuests then
 		-- Search ATT for the related quests.
 		local searchResults = SearchForField("questID", questID);
-		if searchResults and #searchResults > 0 then
-			-- Attempt to cleanly refresh the data.
-			for i,result in ipairs(searchResults) do
-				if result.visible and result.parent and result.parent.total then
-					result.marked = true;
-				end
-			end
-			for i,result in ipairs(searchResults) do
-				if result.marked then
-					result.marked = nil;
-					if result.total then
-						-- This is an item that has a relative set of groups
-						if result.collectible then UpdateParentProgress(result) end;
-
-						-- If this is NOT a group...
-						if not result.g and result.collectible then
-							-- If we've collected the item, use the "Show Collected Items" filter.
-							result.visible = app.CollectedItemVisibilityFilter(result);
-						end
-					else
-						UpdateParentProgress(result.parent);
-
-						if result.collectible then
-							-- If we've collected the item, use the "Show Collected Items" filter.
-							result.visible = app.CollectedItemVisibilityFilter(result);
-						end
-					end
-				end
-			end
-
-			-- Don't force a full refresh.
-			app:RefreshData(true, true);
-		end
+		UpdateSearchResults(searchResults, true);
 	end
 end
 -- receives a key and a function which returns the value to be set for

@@ -18,7 +18,9 @@ _.Zones =
 						164587,	-- Satiated Sawtooth
 					},
 					["g"] = {
-						i(181818),	-- Chewed Reins of the Callowed Flayedwing
+						i(184103, {	-- Cracked Blight-Touched Egg
+							i(181818),	-- Chewed Reins of the Callowed Flayedwing
+						}),
 					},
 				}),
 				i(177236, {	-- Dog Bone's Bone

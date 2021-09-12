@@ -1962,7 +1962,7 @@ _.Zones =
 				q(25,    {	-- Stonetalon Standstill [Vanilla] / Simmer Down Now [CATA]
 					-- #if BEFORE CATA
 					["qg"] = 12737,	-- Mastok Wrilehiss
-					["coord"] = { 73.66, 60.01, ASHENVALE }
+					["coord"] = { 73.66, 60.01, ASHENVALE },
 					-- #else
 					["provider"] = { "n", 34559 },	-- Captain Tarkan
 					["coord"] = { 50.1, 67.5, ASHENVALE },
