@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
+_.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 	holiday(235477, {	-- Noblegarden
 		n(QUESTS, {
 			q(13502, {	-- A Tisket, a Tasket, a Noblegarden Basket [Alliance]

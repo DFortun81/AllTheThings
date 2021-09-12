@@ -7,20 +7,20 @@ _.Holidays =
 	holiday(235466, {	-- Pilgrim's Bounty
 		n(ACHIEVEMENTS, {
 			ach(3478, {	-- Pilgrim
-				["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+				["u"] = PILGRIMS_BOUNTY,
 				["g"] = {
 					title(133, {	-- <Name> the Pilgrim
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 					}),
 					i(44810, {	-- Turkey Cage (PET!)
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 					}),
 					ach(3579, {	-- "FOOD FIGHT!"
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 					}),
 					ach(3576, {	-- Now We're Cookin' (A)
 						["races"] = ALLIANCE_ONLY,
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 						["g"] = {
 							crit(1),	-- Candied Sweet Potato
 							crit(2),	-- Cranberry Chutney
@@ -31,7 +31,7 @@ _.Holidays =
 					}),
 					ach(3577, {	-- Now We're Cookin' (H)
 						["races"] = HORDE_ONLY,
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 						["g"] = {
 							crit(1),	-- Candied Sweet Potato
 							crit(2),	-- Cranberry Chutney
@@ -42,7 +42,7 @@ _.Holidays =
 					}),
 					ach(3556, {	-- Pilgrim's Paunch (A)
 						["races"] = ALLIANCE_ONLY,
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 						["g"] = {
 							crit(1),	-- Darnassus
 							crit(2),	-- The Exodar
@@ -52,7 +52,7 @@ _.Holidays =
 					}),
 					ach(3557, {	-- Pilgrim's Paunch (H)
 						["races"] = HORDE_ONLY,
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 						["g"] = {
 							crit(1),	-- Orgrimmar
 							crit(2),	-- Silvermoon City
@@ -62,7 +62,7 @@ _.Holidays =
 					}),
 					ach(3580, {	-- Pilgrim's Peril (A)
 						["races"] = ALLIANCE_ONLY,
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 						["g"] = {
 							crit(1),	-- Orgrimmar
 							crit(2),	-- Silvermoon City
@@ -72,7 +72,7 @@ _.Holidays =
 					}),
 					ach(3581, {	-- Pilgrim's Peril (H)
 						["races"] = HORDE_ONLY,
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 						["g"] = {
 							crit(1),	-- Darnassus
 							crit(2),	-- The Exodar
@@ -82,7 +82,7 @@ _.Holidays =
 					}),
 					ach(3596, {	-- Pilgrim's Progress (A)
 						["races"] = ALLIANCE_ONLY,
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 						["g"] = {
 							crit(1),	-- Can't Get Enough Turkey
 							crit(2),	-- Don't Forget the Stuffing!
@@ -93,7 +93,7 @@ _.Holidays =
 					}),
 					ach(3597, {	-- Pilgrim's Progress (H)
 						["races"] = HORDE_ONLY,
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 						["g"] = {
 							crit(1),	-- Can't Get Enough Turkey
 							crit(2),	-- Don't Forget the Stuffing!
@@ -103,7 +103,7 @@ _.Holidays =
 						},
 					}),
 					ach(3558, {	-- Sharing is Caring
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 						["g"] = {
 							crit(1),	-- Candied Sweet Potatoes
 							crit(2),	-- Cranberry Chutney
@@ -113,13 +113,13 @@ _.Holidays =
 						},
 					}),
 					ach(3582, {	-- Terokkar Turkey Time
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 					}),
 					ach(3578, {	-- The Turkinator
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 					}),
 					ach(3559, {	-- Turkey Lurkey
-						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
+						["u"] = PILGRIMS_BOUNTY,
 						["g"] = {
 							crit(1),	-- Blood Elf Rogue
 							crit(2),	-- Dwarf Rogue

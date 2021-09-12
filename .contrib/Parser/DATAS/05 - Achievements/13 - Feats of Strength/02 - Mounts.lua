@@ -10,7 +10,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(430)),	-- Amani War Bear
 			ach(4626),			-- And I'll Form the Head!
 			ach(885),			-- Ashes of Al'ar
-			un(HOLIDAY_LOVEINTHEAIR, ach(4627)),	-- Big Love Rocket
+			un(LOVE_IS_IN_THE_AIR, ach(4627)),	-- Big Love Rocket
 			un(REMOVED_FROM_GAME, ach(2316, {	-- Brutal Nether Drake
 				un(REMOVED_FROM_GAME, i(43516)),	-- Brutal Nether Drake
 			})),

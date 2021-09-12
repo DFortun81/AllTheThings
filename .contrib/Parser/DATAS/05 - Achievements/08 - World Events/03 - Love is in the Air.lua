@@ -3,7 +3,7 @@
 --------------------------------------------------
 
 _.Achievements = {
-	n(-9962, bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {	-- Holiday / Love is in the Air
+	n(-9962, bubbleDown({["u"] = LOVE_IS_IN_THE_AIR}, {
 		holiday(235468, {	-- Love is in the Air
 			ach(1701, {	-- Be Mine!
 				crit(1),	-- Be Mine!

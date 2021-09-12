@@ -34,7 +34,7 @@ _.WorldEvents =
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(118572, {	-- Illusion: Flames of Ragnaros
-						["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
+						["u"] = FEAST_OF_WINTER_VEIL,
 						-- Note!! We are using Winter Veil because you can get it each year from the gifts.
 						-- It's also available from the BMAH, but less likely to see it there.
 					}),

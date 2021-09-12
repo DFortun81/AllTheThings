@@ -22,9 +22,9 @@ _.Achievements =
 				crit(4),				-- Have Keg, Will Travel
 				crit(5),				-- Does Your Wolpertinger Linger?
 			})),
-			un(HOLIDAY_DAY_OF_THE_DEAD, ach(9428)),	-- Calavera
-			un(HOLIDAY_DAY_OF_THE_DEAD, ach(3456)),	-- Dead Man's Party
-			un(HOLIDAY_LOVEINTHEAIR, ach(1693, {		-- Fool For Love
+			un(DAY_OF_THE_DEAD, ach(9428)),	-- Calavera
+			un(DAY_OF_THE_DEAD, ach(3456)),	-- Dead Man's Party
+			un(LOVE_IS_IN_THE_AIR, ach(1693, {		-- Fool For Love
 				title(103),				-- the Love Fool
 				crit(1),				-- Charming
 				crit(2),				-- Shafted!
@@ -67,7 +67,7 @@ _.Achievements =
 				crit(10),				-- Sinister Calling
 				crit(11),				-- Tricks and Treats of Azeroth
 			})),
-			un(HOLIDAY_FEAST_OF_WINTER_VEIL, ach(1691, {	-- Merrymaker
+			un(FEAST_OF_WINTER_VEIL, ach(1691, {	-- Merrymaker
 				title(102),				-- Merrymaker
 				crit(1),				-- On Metzen!
 				crit(2),				-- With a Little Helper from My Friends
@@ -81,7 +81,7 @@ _.Achievements =
 				crit(10),				-- He Knows If You've Been Naughty
 				crit(11),				-- A Frosty Shake
 			})),
-			un(HOLIDAY_NOBLEGARDEN, ach(2798, {		-- Noble Gardener
+			un(NOBLEGARDEN, ach(2798, {		-- Noble Gardener
 				title(122),				-- the Noble
 				crit(1),				-- I Found One!
 				crit(2),				-- Chocoholic
@@ -92,7 +92,7 @@ _.Achievements =
 				crit(7),				-- Noble Garden
 				crit(8),				-- Shake Your Bunny-Maker
 			})),
-			un(HOLIDAY_PILGRIMS_BOUNTY, ach(3478, {		-- Pilgrim
+			un(PILGRIMS_BOUNTY, ach(3478, {		-- Pilgrim
 				title(133),				-- the Pilgrim
 				i(44810),				-- Turkey Cage
 				crit(1),				-- "FOOD FIGHT!"
@@ -139,8 +139,8 @@ _.Achievements =
 				crit(11),				-- Frenzied Firecracker
 				crit(12),				-- Elune's Blessing
 			})),
-			un(HOLIDAY_DAY_OF_THE_DEAD, ach(9426)),	-- To The Afterlife
-			un(HOLIDAY_DAY_OF_THE_DEAD, ach(9427)),	-- Vientos!
+			un(DAY_OF_THE_DEAD, ach(9426)),	-- To The Afterlife
+			un(DAY_OF_THE_DEAD, ach(9427)),	-- Vientos!
 			ach(2144, {				-- What a Long, Strange Trip It's Been
 				i(44177),				-- Reins of the Violet Proto-Drake
 				crit(1),				-- To Honor One's Elders

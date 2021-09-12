@@ -179,7 +179,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Gloves of the Greatfather
 							["recipeID"] = 21943,
-							["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
+							["u"] = FEAST_OF_WINTER_VEIL,
 						},
 						{	-- Heavy Scorpid Gauntlets
 							["recipeID"] = 19064,
@@ -263,7 +263,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Winter Boots
 							["recipeID"] = 44953,
-							["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
+							["u"] = FEAST_OF_WINTER_VEIL,
 						},
 					}
 				},

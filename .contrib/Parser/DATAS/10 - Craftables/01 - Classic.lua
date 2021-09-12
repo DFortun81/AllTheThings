@@ -1156,7 +1156,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				un(REMOVED_FROM_GAME, i(15074)),	-- Chimeric Gloves
 				i(8346),	-- Gauntlets of the Sea
 				i(18238),	-- Shadowskin Gloves
-				un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(17721)),	-- Gloves of the Greatfather
+				un(FEAST_OF_WINTER_VEIL, i(17721)),	-- Gloves of the Greatfather
 				i(5966),	-- Guardian Gloves
 				i(4247),	-- Hillman's Leather Gloves
 				i(7359),	-- Heavy Earthen Gloves

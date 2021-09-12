@@ -111,8 +111,8 @@ _.Toys =
 			}),
 		}),
 		holiday(307365, {	-- Day of the Dead
-			["u"] = HOLIDAY_DAY_OF_THE_DEAD,
-			["g"] = sharedData({["u"] = HOLIDAY_DAY_OF_THE_DEAD,}, {
+			["u"] = DAY_OF_THE_DEAD,
+			["g"] = sharedData({["u"] = DAY_OF_THE_DEAD,}, {
 				i(116856),	-- "Blooming Rose" Contender's Costume
 				i(116888),	-- "Night Demon" Contender's Costume
 				i(116889),	-- "Purple Phantom" Contender's Costume
@@ -121,8 +121,8 @@ _.Toys =
 			}),
 		}),
 		holiday(235485, {	-- Feast of Winter Veil
-			["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
-			["g"] = sharedData({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,}, {
+			["u"] = FEAST_OF_WINTER_VEIL,
+			["g"] = sharedData({["u"] = FEAST_OF_WINTER_VEIL,}, {
 				i(54343),	-- Blue Crashin' Thrashin' Racer Controller
 				i(172223),	-- Crashin' Thrashin' Battleship [A]
 				i(108632, {	-- Crashin' Thrashin' Flamer Controller
@@ -181,8 +181,8 @@ _.Toys =
 			}),
 		}),
 		holiday(235468, {	-- Love is in the Air
-			["u"] = HOLIDAY_LOVEINTHEAIR,
-			["g"] = sharedData({["u"] = HOLIDAY_LOVEINTHEAIR,}, {
+			["u"] = LOVE_IS_IN_THE_AIR,
+			["g"] = sharedData({["u"] = LOVE_IS_IN_THE_AIR,}, {
 				i(142341),	-- Love Boat
 				i(165670),	-- Peddlefeet's Lovely Hearthstone
 				i(34480),	-- Romantic Picnic Basket
@@ -217,14 +217,14 @@ _.Toys =
 			i(141649),	-- Set of Matches
 		})),
 		holiday(235477, {	-- Noblegarden
-			["u"] = HOLIDAY_NOBLEGARDEN,
-			["g"] = sharedData({["u"] = HOLIDAY_NOBLEGARDEN,}, {
+			["u"] = NOBLEGARDEN,
+			["g"] = sharedData({["u"] = NOBLEGARDEN,}, {
 				i(165802),	-- Noble Gardener's Hearthstone
 			}),
 		}),
 		holiday(235466, {	-- Pilgrim's Bounty
-			["u"] = HOLIDAY_PILGRIMS_BOUNTY,
-			["g"] = sharedData({["u"] = HOLIDAY_PILGRIMS_BOUNTY,}, {
+			["u"] = PILGRIMS_BOUNTY,
+			["g"] = sharedData({["u"] = PILGRIMS_BOUNTY,}, {
 				i(116400),	-- Silver-Plated Turkey Shooter
 			}),
 		}),
