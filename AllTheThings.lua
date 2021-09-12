@@ -2719,14 +2719,7 @@ ResolveSymbolicLink = function(o)
 					for k,s in ipairs(cache) do
 						-- if finding itself in the cache, don't try to resolve itself
 						if s ~= o and (s.key ~= o.key or s[s.key] ~= o[o.key]) then
-							local ref = ResolveSymbolicLink(s);
-							if ref then
-								for i,m in ipairs(ref) do
-									table.insert(searchResults, m);
-								end
-							else
-								table.insert(searchResults, s);
-							end
+							tinsert(searchResults, FillSymLinks(s));
 						end
 					end
 				else
