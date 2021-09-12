@@ -12,12 +12,12 @@ _.WorldEvents =
 		},
 		["g"] = {
 			ach(14271, {	-- 16th Anniversary
-				["u"] = 36,	-- WoW Anniversary [Removed]
+				["u"] = REMOVED_FROM_GAME,
 			}),
-			n(-297, bubbleDown({ ["u"] = 31, }, {	-- Mailbox
+			n(-297, bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {	-- Mailbox
 				i(178513),	-- Anniversary Gift
 			})),
-			n(VENDORS, bubbleDown({ ["u"] = 31, }, {
+			n(VENDORS, bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {
 				n(158061, {	-- Historian Ma'di
 					["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
 					["g"] = {

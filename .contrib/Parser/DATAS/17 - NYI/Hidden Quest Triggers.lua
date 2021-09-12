@@ -67,50 +67,11 @@ _.HiddenQuestTriggers = {
 		--q(63390), -- Person in Errors doesnt really remember
 		--q(63391), -- Person in Errors doesnt really remember
 		--q(53468),	-- As a hightauren mountain just arriving on ogrimmar after being transferred from alliance to horde
-
-		-- Old adventure boards? Can't find any information to suggest that these were ever made available
-		q(28011),	-- Adventurers Wanted: Blackfathom Deeps
-		q(28010),	-- Adventurers Wanted: Blackfathom Deeps
-		q(28071),	-- Adventurers Wanted: Blackrock Spire
-		q(28070),	-- Adventurers Wanted: Blackrock Spire
-		q(28075),	-- Adventurers Wanted: Dire Maul Capital Gardens
-		q(28074),	-- Adventurers Wanted: Dire Maul Capital Gardens
-		q(28073),	-- Adventurers Wanted: Dire Maul Warpwood Quarter
-		q(28072),	-- Adventurers Wanted: Dire Maul Warpwood Quarter
-		q(28013),	-- Adventurers Wanted: Gnomeregan
-		q(28040),	-- Adventurers Wanted: Maraudon
-		q(28039),	-- Adventurers Wanted: Maraudon
-		q(28077),	-- Adventurers Wanted: Northern Dire Maul
-		q(28076),	-- Adventurers Wanted: Northern Dire Maul
-		q(31033),	-- Adventurers Wanted: Ragefire Chasm - triggered when turning in "Enemies Below"
-		q(28003),	-- Adventurers Wanted: Ragefire Chasm
-		q(28025),	-- Adventurers Wanted: Razorfen Downs
-		q(28024),	-- Adventurers Wanted: Razorfen Downs
-		q(28015),	-- Adventurers Wanted: Razorfen Krawl
-		q(28014),	-- Adventurers Wanted: Razorfen Krawl
-		q(28017),	-- Adventurers Wanted: Scarlet Halls
-		q(28021),	-- Adventurers Wanted: Scarlet Halls
-		q(28023),	-- Adventurers Wanted: Scarlet Monastery
-		q(28019),	-- Adventurers Wanted: Scarlet Monastery
-		q(28083),	-- Adventurers Wanted: Scholomance
-		q(28082),	-- Adventurers Wanted: Scholomance
-		q(28009),	-- Adventurers Wanted: Shadowfang Keep
-		q(28008),	-- Adventurers Wanted: Shadowfang Keep
-		q(28012),	-- Adventurers Wanted: Stormwind Stockade
-		q(28079),	-- Adventurers Wanted: Stratholme Main Gate
-		q(28078),	-- Adventurers Wanted: Stratholme Main Gate
-		q(28081),	-- Adventurers Wanted: Stratholme Service Gate
-		q(28080),	-- Adventurers Wanted: Stratholme Service Gate
-		q(28005),	-- Adventurers Wanted: The Deadmines
-		q(28004),	-- Adventurers Wanted: The Deadmines
-		q(28067),	-- Adventurers Wanted: The Sunken Temple
-		q(28066),	-- Adventurers Wanted: The Sunken Temple
-		q(28027),	-- Adventurers Wanted: Uldaman
-		q(28026),	-- Adventurers Wanted: Uldaman
-		q(28007),	-- Adventurers Wanted: Wailing Caverns
-		q(28006),	-- Adventurers Wanted: Wailing Caverns
-		q(28037),	-- Adventurers Wanted: Zul'farrak
-		q(28036),	-- Adventurers Wanted: Zul'farrak
+		--q(62688),	-- Popped taking portal to Oribos
+		--q(55628),	-- Killing Paol Pondwader(Second ID?) / 'A Sound Defense' Quest / after killing (Rare) Beehemoth in Stormsong Valley / triggering this, am doing WQ "Too Much To Bear" / Trig Sound and doing Azerite Mining WQ
+		--q(54324),	-- Triggered in BfA
+		--q(54317),	-- BfA Alliance Stormsong "Invasion"
+		--q(62521),	-- unknown tracking
 
 		-------------------
 		--    VARIOUS    --
@@ -1795,6 +1756,7 @@ _.HiddenQuestTriggers = {
 		q(36554),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
 		q(37634),	-- Assault on Darktide Roost (Removed from game, Horde)
 		q(36821),	-- Assault on the Gorian Proving Grounds (Removed from game, Horde)
+		q(37646),	-- See New Brightstone, See Wolfed Out Thorn (Garrison Attack?)
 
 		-- GARRISON COMMAND TABLE
 		q(39413),
@@ -1853,6 +1815,7 @@ _.HiddenQuestTriggers = {
 		q(34024),	-- Tracking Quest. This completes when you kill the Windfang Matriarch after helping Romuul.
 		q(33786),	-- ??????. This was completed around Fiona's caravan in Shadowmoon Valley - Draenor (not entirely sure what triggered it.)
 		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
+		--q(39709),	-- Unknown tracking quest
 
 		-------------------
 		--    Legion     --
@@ -2449,6 +2412,7 @@ _.HiddenQuestTriggers = {
 		q(48431),	-- Argus
 		q(49184),	-- Argus (triggered at the same time as above)
 		q(49361),	-- Argus (triggered at the same time as above)
+		q(49363),	-- Argus (Heroic)
 		q(49475),	-- Argus (triggered at the same time as above)
 		q(49364),	-- Argus (triggered first time this character killed Argus on mythic)
 		q(49717),	-- Argus (triggered first time this character killed Argus on mythic)
@@ -2544,6 +2508,7 @@ _.HiddenQuestTriggers = {
 		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
 		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
 		q(55628),	-- Tracking Quest killed Mala'kili/Rohn'kor
+		--q(55464),	-- Triggered with Tandred Proudmoore conversation?
 
 		--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley
@@ -3077,6 +3042,7 @@ _.HiddenQuestTriggers = {
 		q(47443),	-- switched loa alignment in Zuldazar to Gonk by speaking to Chronicler Ash'tari
 		q(53567),	-- Sky Queen, rare with no associated loot
 		q(50844),	-- triggered when turning in #50900, "Maybe When You're Older," part of Kua'fon questline
+		q(50828),	-- triggered when turning in #50412, Back to the Nest, part of Kua'fon questline.
 		q(51992),	-- triggered when turning in "Of Dark Deeds and Dark Days"
 		q(51993),	-- triggered when turning in "Of Dark Deeds and Dark Days"
 		q(55257),	-- triggered after turning in "Held for Observation" in the "How to Train Your Direhorn" questline
@@ -3921,6 +3887,7 @@ _.HiddenQuestTriggers = {
 		q(62575),	-- triggered after crafting Armor Plating at Abominable Stitching Table
 		q(62824),	-- triggered after crafting Back Mushrooms at Abominable Stitching Table
 		q(62580),	-- triggered after crafting Barrel O'Fish at Abominable Stitching Table
+		q(62574),	-- triggered after crafting Butterflies at Abominable Stitching Table
 		q(62762),	-- triggered after crafting Chef Hat at Abominable Stitching Table
 		q(62570),	-- triggered after crafting Collector Kash's Pack at Abominable Stitching Table
 		q(61560),	-- triggered after crafting Dapper Top Hat at Abominable Stitching Table
@@ -4210,9 +4177,12 @@ _.HiddenQuestTriggers = {
 		q(59681),	-- using "Anima-Infused Water"
 		q(61455),	-- using "Protective Braziers"
 		q(63001),	-- triggers when choosing to skip the Covenant sanctum intro quests
+		--q(63007),	-- triggers when choosing to skip the Night Fae sanctum intro quests
 		q(63023),	-- triggers when choosing to skip the Covenant sanctum intro quests
 		q(63425),	-- triggers when choosing to skip the Covenant sanctum intro quests
 		q(62426),	-- triggers when choosing to skip the Kyrian sanctum intro quests
+		q(63427),	-- triggers when choosing to skip the Night Fae sanctum intro quests
+		q(63428),	-- triggers when choosing to skip the Necrolord sanctum intro quests
 		q(63429),	-- triggers when choosing to skip the Venthyr sanctum intro quests
 
 		-- The Maw

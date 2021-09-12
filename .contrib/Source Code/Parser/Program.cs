@@ -199,8 +199,8 @@ namespace ATT
         /// <returns>The processed content of the file.</returns>
         static string ProcessContent(string content)
         {
-            // If it doesn't contain an IF statement, just skip processing it.
-            if (content.Contains("-- #if"))
+            // If it doesn't contain a command statement, just skip processing it.
+            if (content.Contains("-- #"))
             {
                 int startIndex = 0;
                 var builder = new StringBuilder();
@@ -228,14 +228,18 @@ namespace ATT
         /// <param name="length">The total length of the string content.</param>
         static void ProcessContent(StringBuilder builder, string content, ref int index, int previousIndex, int length)
         {
-            while (previousIndex < length && (index = content.IndexOf("-- #", previousIndex)) > -1)
+            while (previousIndex < length && previousIndex > -1 && (index = content.IndexOf("-- #", previousIndex)) > -1)
             {
                 builder.Append(content.Substring(previousIndex, index - previousIndex).TrimEnd());
                 ProcessInitialCommandBlock(builder, content, ref index, length);
                 previousIndex = index;
             }
-            if (previousIndex < index) builder.Append(content.Substring(previousIndex, index - previousIndex));
-            else if (previousIndex < length) builder.Append(content.Substring(previousIndex, length - previousIndex));
+            if (previousIndex > -1)
+            {
+                if (previousIndex < index) builder.Append(content.Substring(previousIndex, index - previousIndex));
+                else if (previousIndex < length) builder.Append(content.Substring(previousIndex, length - previousIndex));
+            }
+            else if (index > -1 && index < length) builder.Append(content.Substring(index, length - index));
         }
 
         static void ProcessInitialCommandBlock(StringBuilder builder, string content, ref int index, int length)
@@ -247,8 +251,12 @@ namespace ATT
             switch (command[0])
             {
                 case "IF":
-                    // This is an IF. It is the start of a new internal command block.
+                    // This is an IF command. It is the start of a new internal command block.
                     ProcessInternalCommandBlock(command, builder, content, ref index, length);
+                    break;
+                case "IMPORT:":
+                    // This is an IMPORT command. It indicates that a Live DB file should be loaded.
+                    ProcessImportCommand(command, builder, content, ref index, length);
                     break;
                 default:
                     throw new Exception($"Malformed #{command[0]} statement: Expected #IF statement first... '{string.Join(" ", command)}'");
@@ -362,6 +370,24 @@ namespace ATT
                 }
             }
             else throw new Exception($"Malformed #IF statement. '{string.Join(" ", command)}'");
+        }
+
+        static void ProcessImportCommand(string[] command, StringBuilder builder, string content, ref int index, int length)
+        {
+            string filename = "..\\..\\..\\..\\..\\..\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\" + string.Join(" ", command.Skip(1));
+            if (File.Exists(filename))
+            {
+                if (index > 0) builder.Append("\n");
+                builder.Append("(function() ").Append(ProcessContent(File.ReadAllText(filename))).Append(" end)();");
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("File doesn't exist:");
+                Console.WriteLine(Path.GetFullPath(filename));
+                Console.Write("You will need to clone the Retail version of AllTheThings in order to develop for this version of the addon.");
+                Console.ReadLine();
+            }
         }
 
         static bool ProcessInternalCommandBlock(string[] command, StringBuilder builder, string content, ref int index, int length)

@@ -13,29 +13,29 @@ _.WorldEvents =
 		},
 		["g"] = {
 			ach(10058, {	-- 11th Anniversary
-				["u"] = 36,	-- WoW Anniversary [Removed]
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			n(-297, {	-- Mailbox
 				i(128513, {	-- Anniversary Gift
-					["u"] = 36,				-- WoW Anniversary [Removed]
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(127987, {	-- Celebration Package
-							["u"] = 36,	-- WoW Anniversary [Removed]
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(128506, {	-- Celebration Wand - Gnoll
-							["u"] = 31,	-- WoW Anniversary Filter
+							["u"] = WOW_ANNIVERSARY,
 						}),
 						i(128505, {	-- Celebration Wand - Murloc
-							["u"] = 31,	-- WoW Anniversary Filter
+							["u"] = WOW_ANNIVERSARY,
 						}),
 						i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"
-							["u"] = 31,	-- WoW Anniversary Filter
+							["u"] = WOW_ANNIVERSARY,
 						}),
 						i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-							["u"] = 31,	-- WoW Anniversary Filter
+							["u"] = WOW_ANNIVERSARY,
 							["g"] = {
 								ach(10335, {	-- Did Someone Say...?
-									["u"] = 31,	-- WoW Anniversary Filter
+									["u"] = WOW_ANNIVERSARY,
 								}),
 							},
 						}),

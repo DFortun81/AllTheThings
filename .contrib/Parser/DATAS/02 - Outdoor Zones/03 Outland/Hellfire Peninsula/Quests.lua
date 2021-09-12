@@ -704,7 +704,7 @@ _.Zones =
 					["lvl"] = lvlsquish(58, 10, 58),
 				}),
 				q(9498, {	-- Falcon Watch [Non-Blood Elf]
-					["qg"] = 21256,	-- Vurtok Axebreaker
+					["qg"] = 16577,	-- Martik Tor'seldori
 					["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
 					["coord"] = { 55.1, 39.1, HELLFIRE_PENINSULA },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),

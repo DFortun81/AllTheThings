@@ -602,4 +602,7 @@ _.Instances = { tier(LEGION_TIER, {
 _.HiddenQuestTriggers = {
 	q(45235),	-- learning Ensemble: Funerary Plate of the Chosen Dead (143519)
 	q(45234),	-- learning Ensemble: Funerary Plate of the Chosen Dead (normal)
+	
+	q(45230),	-- Chains of the Chosen Dead (Normal)
+	q(45231),	-- Chains of the Chosen Dead (Heroic)
 };

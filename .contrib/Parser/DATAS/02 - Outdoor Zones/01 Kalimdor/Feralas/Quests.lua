@@ -235,8 +235,9 @@ _.Zones =
 					["provider"] = { "n", 40032 },	-- Telaron Windflight
 					["coord"] = { 50.7, 17.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,	-- If you picked up or done any quest at Feathermoon Stronghold, this quest stops being available
+					["isBreadcrumb"] = true,
 					["sourceQuest"] = 25398,	-- Sealing the Dream
+					["description"] = "If you picked up or done any quest at Feathermoon Stronghold, this quest stops being available",
 				}),
 				q(25458, {	-- General Skessesh
 					["provider"] = { "n", 39723 },	-- Tambre

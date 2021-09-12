@@ -10,6 +10,50 @@ p = function(...) return un(NEVER_IMPLEMENTED, oldP(...)); end
 _.NeverImplemented =
 {
 	n(QUESTS, {
+		tier(CATA_TIER, { -- These Quests might be ingame, very unlikely however.
+			q(28011),	-- Adventurers Wanted: Blackfathom Deeps
+			q(28010),	-- Adventurers Wanted: Blackfathom Deeps
+			q(28071),	-- Adventurers Wanted: Blackrock Spire
+			q(28070),	-- Adventurers Wanted: Blackrock Spire
+			q(28075),	-- Adventurers Wanted: Dire Maul Capital Gardens
+			q(28074),	-- Adventurers Wanted: Dire Maul Capital Gardens
+			q(28073),	-- Adventurers Wanted: Dire Maul Warpwood Quarter
+			q(28072),	-- Adventurers Wanted: Dire Maul Warpwood Quarter
+			q(28013),	-- Adventurers Wanted: Gnomeregan
+			q(28040),	-- Adventurers Wanted: Maraudon
+			q(28039),	-- Adventurers Wanted: Maraudon
+			q(28077),	-- Adventurers Wanted: Northern Dire Maul
+			q(28076),	-- Adventurers Wanted: Northern Dire Maul
+			q(31033),	-- Adventurers Wanted: Ragefire Chasm - triggered when turning in "Enemies Below"
+			q(28003),	-- Adventurers Wanted: Ragefire Chasm
+			q(28025),	-- Adventurers Wanted: Razorfen Downs
+			q(28024),	-- Adventurers Wanted: Razorfen Downs
+			q(28015),	-- Adventurers Wanted: Razorfen Krawl
+			q(28014),	-- Adventurers Wanted: Razorfen Krawl
+			q(28017),	-- Adventurers Wanted: Scarlet Halls
+			q(28021),	-- Adventurers Wanted: Scarlet Halls
+			q(28023),	-- Adventurers Wanted: Scarlet Monastery
+			q(28019),	-- Adventurers Wanted: Scarlet Monastery
+			q(28083),	-- Adventurers Wanted: Scholomance
+			q(28082),	-- Adventurers Wanted: Scholomance
+			q(28009),	-- Adventurers Wanted: Shadowfang Keep
+			q(28008),	-- Adventurers Wanted: Shadowfang Keep
+			q(28012),	-- Adventurers Wanted: Stormwind Stockade
+			q(28079),	-- Adventurers Wanted: Stratholme Main Gate
+			q(28078),	-- Adventurers Wanted: Stratholme Main Gate
+			q(28081),	-- Adventurers Wanted: Stratholme Service Gate
+			q(28080),	-- Adventurers Wanted: Stratholme Service Gate
+			q(28005),	-- Adventurers Wanted: The Deadmines
+			q(28004),	-- Adventurers Wanted: The Deadmines
+			q(28067),	-- Adventurers Wanted: The Sunken Temple
+			q(28066),	-- Adventurers Wanted: The Sunken Temple
+			q(28027),	-- Adventurers Wanted: Uldaman
+			q(28026),	-- Adventurers Wanted: Uldaman
+			q(28007),	-- Adventurers Wanted: Wailing Caverns
+			q(28006),	-- Adventurers Wanted: Wailing Caverns
+			q(28037),	-- Adventurers Wanted: Zul'farrak
+			q(28036),	-- Adventurers Wanted: Zul'farrak
+		}),
 		tier(LEGION_TIER, {	-- These Quests might be ingame, very unlikely however.
 			q(43497),	-- Legion 110 A
 			q(43498),	-- Legion 110 A
@@ -260,15 +304,6 @@ _.NeverImplemented =
 		q(39991, {	-- Blessing of Cenarius
 			["u"] = NEVER_IMPLEMENTED,	-- didn't make it to live, triggers when turning in #39988
 		}),
-		q(12338, {	-- Candy Bucket
-			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
-			["isYearly"] = true,
-			["races"] = ALLIANCE_ONLY,
-			["u"] = NEVER_IMPLEMENTED,
-			["g"] = {
-				--i(37586), -- Handful of Treats
-			},
-		}),
 		q(38294, {	-- Sumptuous Fur
 		--	added in 9.0.1 but has WoD title/rewards, is "engineering" category but tailoring rewards?????  move if this quest is ever found
 			["description"] = "Category: |cFFf09f26Engineering|r",
@@ -276,40 +311,6 @@ _.NeverImplemented =
 			["_drop"] = { "g" },	-- drop Hexweave Cloth / Primal Spirit
 			["lvl"] = 10,
 			["u"] = NEVER_IMPLEMENTED,
-		}),
-		q(12375, {	-- Candy Bucket
-			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
-			["isYearly"] = true,
-			["races"] = HORDE_ONLY,
-			["u"] = NEVER_IMPLEMENTED,
-			["g"] = {
-				--i(37586), -- Handful of Treats
-			},
-		}),
-		q(12405, {	-- Candy Bucket
-			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
-			["isYearly"] = true,
-			["u"] = NEVER_IMPLEMENTED,
-			["g"] = {
-				--i(37586), -- Handful of Treats
-			},
-		}),
-		q(12410, {	-- Candy Bucket
-			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
-			["isYearly"] = true,
-			["u"] = NEVER_IMPLEMENTED,
-			["g"] = {
-				--i(37586), -- Handful of Treats
-			},
-		}),
-		q(28975, {	-- Candy Bucket
-			["description"] = "Name: |cFFf09f26Candy Bucket|r\nCategory: |cFFf09f26Hallow's End|r",
-			["isYearly"] = true,
-			["races"] = HORDE_ONLY,
-			["u"] = NEVER_IMPLEMENTED,
-			["g"] = {
-				--i(37586), -- Handful of Treats
-			},
 		}),
 		q(45816),	-- Choose Order Hall to Support
 		q(31806, {	-- Test Quest

@@ -12,6 +12,7 @@ _.Zones =
 						["provider"] = { "n", 2079 },	-- Ilthalaine
 						["coord"] = { 46.3, 73.5, 460 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 28714,	-- Fel Moss Corruption
 						["isBreadcrumb"] = true,
 					}),
 					q(31168, {	-- Calligraphed Sigil

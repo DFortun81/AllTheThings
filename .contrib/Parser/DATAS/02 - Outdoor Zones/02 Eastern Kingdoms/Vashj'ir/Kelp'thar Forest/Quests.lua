@@ -302,8 +302,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = {
-							25942,	-- Buy Us Some Time
-							25943,	-- Traveling on Our Stomachs
+							25944,	-- Girding Our Loins
 						},
 					}),
 					q(25281, {	-- Pay It Forward (A)

@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
+_.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 	holiday(235477, {	-- Noblegarden
 		n(ZONEDROPS, {
 			i(45072, {	-- Brightly Colored Egg
@@ -28,6 +28,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					i(44803),	-- Spring Circlet
 					i(45073, {	-- Spring Flowers
 						["description"] = "This item is required for the achievement \"Shake Your Bunny-Maker\".",
+						["f"] = -1,	-- Remove the filterID from being attached to this Item
 					}),
 					i(44794),	-- Spring Rabbit's Foot
 					i(44800),	-- Spring Robes

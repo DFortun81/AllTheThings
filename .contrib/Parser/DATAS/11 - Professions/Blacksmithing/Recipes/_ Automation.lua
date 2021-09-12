@@ -2562,11 +2562,6 @@ profession(164, {	-- Blacksmithing
 					["hash"] = "categoryID393",
 					["g"] = {
 						{
-							["name"] = "Peerless Draenic Steel Bulwark",
-							["hash"] = "recipeID153668",
-							["recipeID"] = 153668
-						},
-						{
 							["name"] = "Steelforged Aegis",
 							["hash"] = "recipeID178245",
 							["recipeID"] = 178245
@@ -5806,11 +5801,6 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 24913
 						},
 						{
-							["name"] = "Draenic Steel Helm",
-							["hash"] = "recipeID153608",
-							["recipeID"] = 153608
-						},
-						{
 							["name"] = "Enchanted Thorium Helm",
 							["hash"] = "recipeID16742",
 							["recipeID"] = 16742
@@ -5824,11 +5814,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Green Iron Helm",
 							["hash"] = "recipeID3502",
 							["recipeID"] = 3502
-						},
-						{
-							["name"] = "Hardened Draenic Steel Helm",
-							["hash"] = "recipeID153646",
-							["recipeID"] = 153646
 						},
 						{
 							["name"] = "Heavy Mithril Helm",
@@ -5859,11 +5844,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Ornate Mithril Helm",
 							["hash"] = "recipeID9980",
 							["recipeID"] = 9980
-						},
-						{
-							["name"] = "Peerless Draenic Steel Helm",
-							["hash"] = "recipeID153659",
-							["recipeID"] = 153659
 						},
 						{
 							["name"] = "Radiant Circlet",
@@ -5923,11 +5903,6 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 16660
 						},
 						{
-							["name"] = "Draenic Steel Shoulders",
-							["hash"] = "recipeID153610",
-							["recipeID"] = 153610
-						},
-						{
 							["name"] = "Fiery Chain Shoulders",
 							["hash"] = "recipeID20873",
 							["recipeID"] = 20873
@@ -5941,11 +5916,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Green Iron Shoulders",
 							["hash"] = "recipeID3504",
 							["recipeID"] = 3504
-						},
-						{
-							["name"] = "Hardened Draenic Steel Shoulders",
-							["hash"] = "recipeID153648",
-							["recipeID"] = 153648
 						},
 						{
 							["name"] = "Heavy Mithril Shoulder",
@@ -5966,11 +5936,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Ornate Mithril Shoulder",
 							["hash"] = "recipeID9952",
 							["recipeID"] = 9952
-						},
-						{
-							["name"] = "Peerless Draenic Steel Shoulders",
-							["hash"] = "recipeID153661",
-							["recipeID"] = 153661
 						},
 						{
 							["name"] = "Rough Bronze Shoulders",
@@ -6040,11 +6005,6 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 16667
 						},
 						{
-							["name"] = "Draenic Steel Chestplate",
-							["hash"] = "recipeID153605",
-							["recipeID"] = 153605
-						},
-						{
 							["name"] = "Enchanted Thorium Breastplate",
 							["hash"] = "recipeID16745",
 							["recipeID"] = 16745
@@ -6058,11 +6018,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Green Iron Hauberk",
 							["hash"] = "recipeID3508",
 							["recipeID"] = 3508
-						},
-						{
-							["name"] = "Hardened Draenic Steel Chestplate",
-							["hash"] = "recipeID153643",
-							["recipeID"] = 153643
 						},
 						{
 							["name"] = "Heavy Mithril Breastplate",
@@ -6108,11 +6063,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Ornate Mithril Breastplate",
 							["hash"] = "recipeID9972",
 							["recipeID"] = 9972
-						},
-						{
-							["name"] = "Peerless Draenic Steel Chestplate",
-							["hash"] = "recipeID153656",
-							["recipeID"] = 153656
 						},
 						{
 							["name"] = "Radiant Breastplate",
@@ -6207,11 +6157,6 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 24912
 						},
 						{
-							["name"] = "Draenic Steel Gauntlets",
-							["hash"] = "recipeID153607",
-							["recipeID"] = 153607
-						},
-						{
 							["name"] = "Fiery Plate Gauntlets",
 							["hash"] = "recipeID16655",
 							["recipeID"] = 16655
@@ -6235,11 +6180,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Green Iron Gauntlets",
 							["hash"] = "recipeID3336",
 							["recipeID"] = 3336
-						},
-						{
-							["name"] = "Hardened Draenic Steel Gauntlets",
-							["hash"] = "recipeID153645",
-							["recipeID"] = 153645
 						},
 						{
 							["name"] = "Heavy Mithril Gauntlet",
@@ -6270,11 +6210,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Ornate Mithril Gloves",
 							["hash"] = "recipeID9950",
 							["recipeID"] = 9950
-						},
-						{
-							["name"] = "Peerless Draenic Steel Gauntlets",
-							["hash"] = "recipeID153658",
-							["recipeID"] = 153658
 						},
 						{
 							["name"] = "Radiant Gloves",
@@ -6324,11 +6259,6 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 20874
 						},
 						{
-							["name"] = "Draenic Steel Wristwraps",
-							["hash"] = "recipeID153612",
-							["recipeID"] = 153612
-						},
-						{
 							["name"] = "Golden Scale Bracers",
 							["hash"] = "recipeID7223",
 							["recipeID"] = 7223
@@ -6337,11 +6267,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Green Iron Bracers",
 							["hash"] = "recipeID3501",
 							["recipeID"] = 3501
-						},
-						{
-							["name"] = "Hardened Draenic Steel Wristwraps",
-							["hash"] = "recipeID153650",
-							["recipeID"] = 153650
 						},
 						{
 							["name"] = "Icebane Bracers",
@@ -6391,11 +6316,6 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 2661
 						},
 						{
-							["name"] = "Draenic Steel Girdle",
-							["hash"] = "recipeID153611",
-							["recipeID"] = 153611
-						},
-						{
 							["name"] = "Fiery Chain Girdle",
 							["hash"] = "recipeID20872",
 							["recipeID"] = 20872
@@ -6404,11 +6324,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Girdle of the Dawn",
 							["hash"] = "recipeID23632",
 							["recipeID"] = 23632
-						},
-						{
-							["name"] = "Hardened Draenic Steel Girdle",
-							["hash"] = "recipeID153649",
-							["recipeID"] = 153649
 						},
 						{
 							["name"] = "Heavy Obsidian Belt",
@@ -6434,11 +6349,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Light Obsidian Belt",
 							["hash"] = "recipeID27588",
 							["recipeID"] = 27588
-						},
-						{
-							["name"] = "Peerless Draenic Steel Wristwraps",
-							["hash"] = "recipeID153663",
-							["recipeID"] = 153663
 						},
 						{
 							["name"] = "Radiant Belt",
@@ -6478,11 +6388,6 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 24140
 						},
 						{
-							["name"] = "Draenic Steel Legguards",
-							["hash"] = "recipeID153609",
-							["recipeID"] = 153609
-						},
-						{
 							["name"] = "Enchanted Thorium Leggings",
 							["hash"] = "recipeID16744",
 							["recipeID"] = 16744
@@ -6496,11 +6401,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Green Iron Leggings",
 							["hash"] = "recipeID3506",
 							["recipeID"] = 3506
-						},
-						{
-							["name"] = "Hardened Draenic Steel Legguards",
-							["hash"] = "recipeID153647",
-							["recipeID"] = 153647
 						},
 						{
 							["name"] = "Heavy Mithril Pants",
@@ -6526,11 +6426,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Ornate Mithril Pants",
 							["hash"] = "recipeID9945",
 							["recipeID"] = 9945
-						},
-						{
-							["name"] = "Peerless Draenic Steel Legguards",
-							["hash"] = "recipeID153660",
-							["recipeID"] = 153660
 						},
 						{
 							["name"] = "Radiant Leggings",
@@ -6590,11 +6485,6 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 24399
 						},
 						{
-							["name"] = "Draenic Steel Warboots",
-							["hash"] = "recipeID153606",
-							["recipeID"] = 153606
-						},
-						{
 							["name"] = "Golden Scale Boots",
 							["hash"] = "recipeID3515",
 							["recipeID"] = 3515
@@ -6603,11 +6493,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Green Iron Boots",
 							["hash"] = "recipeID3334",
 							["recipeID"] = 3334
-						},
-						{
-							["name"] = "Hardened Draenic Steel Warboots",
-							["hash"] = "recipeID153644",
-							["recipeID"] = 153644
 						},
 						{
 							["name"] = "Heavy Mithril Boots",
@@ -6628,11 +6513,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Ornate Mithril Boots",
 							["hash"] = "recipeID9979",
 							["recipeID"] = 9979
-						},
-						{
-							["name"] = "Peerless Draenic Steel Warboots",
-							["hash"] = "recipeID153657",
-							["recipeID"] = 153657
 						},
 						{
 							["name"] = "Polished Steel Boots",
@@ -6671,16 +6551,6 @@ profession(164, {	-- Blacksmithing
 					["categoryID"] = 226,
 					["hash"] = "categoryID226",
 					["g"] = {
-						{
-							["name"] = "Draenic Steel Bulwark",
-							["hash"] = "recipeID153631",
-							["recipeID"] = 153631
-						},
-						{
-							["name"] = "Hardened Draenic Steel Bulwark",
-							["hash"] = "recipeID153655",
-							["recipeID"] = 153655
-						},
 						{
 							["name"] = "Jagged Obsidian Shield",
 							["hash"] = "recipeID27586",
@@ -6864,26 +6734,6 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 3295
 						},
 						{
-							["name"] = "Draenic Steel Dagger",
-							["hash"] = "recipeID153629",
-							["recipeID"] = 153629
-						},
-						{
-							["name"] = "Draenic Steel Mace",
-							["hash"] = "recipeID153630",
-							["recipeID"] = 153630
-						},
-						{
-							["name"] = "Draenic Steel Sword",
-							["hash"] = "recipeID153628",
-							["recipeID"] = 153628
-						},
-						{
-							["name"] = "Draenic Steel War Axe",
-							["hash"] = "recipeID153627",
-							["recipeID"] = 153627
-						},
-						{
 							["name"] = "Ebon Hand",
 							["hash"] = "recipeID23650",
 							["recipeID"] = 23650
@@ -6927,26 +6777,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Hammer of the Titans",
 							["hash"] = "recipeID16988",
 							["recipeID"] = 16988
-						},
-						{
-							["name"] = "Hardened Draenic Steel Dagger",
-							["hash"] = "recipeID153653",
-							["recipeID"] = 153653
-						},
-						{
-							["name"] = "Hardened Draenic Steel Mace",
-							["hash"] = "recipeID153654",
-							["recipeID"] = 153654
-						},
-						{
-							["name"] = "Hardened Draenic Steel Sword",
-							["hash"] = "recipeID153652",
-							["recipeID"] = 153652
-						},
-						{
-							["name"] = "Hardened Draenic Steel War Axe",
-							["hash"] = "recipeID153651",
-							["recipeID"] = 153651
 						},
 						{
 							["name"] = "Hardened Iron Shortsword",
@@ -7042,26 +6872,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Pearl-handled Dagger",
 							["hash"] = "recipeID6517",
 							["recipeID"] = 6517
-						},
-						{
-							["name"] = "Peerless Draenic Steel Dagger",
-							["hash"] = "recipeID153666",
-							["recipeID"] = 153666
-						},
-						{
-							["name"] = "Peerless Draenic Steel Mace",
-							["hash"] = "recipeID153667",
-							["recipeID"] = 153667
-						},
-						{
-							["name"] = "Peerless Draenic Steel Sword",
-							["hash"] = "recipeID153665",
-							["recipeID"] = 153665
-						},
-						{
-							["name"] = "Peerless Draenic Steel War Axe",
-							["hash"] = "recipeID153664",
-							["recipeID"] = 153664
 						},
 						{
 							["name"] = "Persuader",

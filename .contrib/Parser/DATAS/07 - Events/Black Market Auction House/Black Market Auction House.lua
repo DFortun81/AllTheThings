@@ -39,9 +39,9 @@ _.WorldEvents =
 				i(183634),	-- Papa's Mint Condition Bag (9.1)
 			}),
 			filter(103, {	-- Illusions
-				un(21, i(138838)),	-- Illusion: Deathfrost
-				un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(118572)),	-- Illusion: Flame of Ragnaros
-				un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(128649)),	-- Illusion: Winter's Grasp
+				un(MIDSUMMER_FIRE_FESTIVAL, i(138838)),	-- Illusion: Deathfrost
+				un(FEAST_OF_WINTER_VEIL, i(118572)),	-- Illusion: Flame of Ragnaros
+				un(FEAST_OF_WINTER_VEIL, i(128649)),	-- Illusion: Winter's Grasp
 			}),
 			n(-160, {	-- Mounts
 				i(143643),	-- Abyss Worm

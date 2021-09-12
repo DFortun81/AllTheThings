@@ -3,6 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(256, {	-- The Blood Furnace
+		["lore"] = "The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",
 		["coord"] = { 46.06, 51.74, HELLFIRE_PENINSULA },	-- The Blood Furnace, Hellfire Peninsula
 		["mapID"] = HELLFIRE_CITADEL_BLOOD_FURNACE,
 		["lvl"] = lvlsquish(58, 10, 58),

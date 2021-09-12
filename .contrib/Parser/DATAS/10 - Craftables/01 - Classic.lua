@@ -731,7 +731,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		filter(23, {	-- 1H Maces
 			i(19808, {	-- Rockhide Strongfish
 				["description"] = "Can be caught in schools in The Cape of Stranglethorn or Northern Stranglethorn during the Stranglethorn Fishing Extravaganza.",
-				["u"] = 30,	-- Stranglethorn Fishing Extravaganza
+				["u"] = STRANGLETHORN_FISHING_EXTRAVAGANZA,
 			}),
 			i(6360, {	-- Steelscale Crushfish
 				["description"] = "Can be caught in Darkmoon Island, Northern Stranglethorn, and Wetlands in open water.",
@@ -1156,7 +1156,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				un(REMOVED_FROM_GAME, i(15074)),	-- Chimeric Gloves
 				i(8346),	-- Gauntlets of the Sea
 				i(18238),	-- Shadowskin Gloves
-				un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(17721)),	-- Gloves of the Greatfather
+				un(FEAST_OF_WINTER_VEIL, i(17721)),	-- Gloves of the Greatfather
 				i(5966),	-- Guardian Gloves
 				i(4247),	-- Hillman's Leather Gloves
 				i(7359),	-- Heavy Earthen Gloves
@@ -1213,6 +1213,9 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(7282),	-- Light Leather Pants
 				i(4242),	-- Embossed Leather Pants
 				i(7280),	-- Rugged Leather Pants
+				i(29970, {	-- Wildfeather Leggings
+					["timeline"] = { "added 2.0.1.6180" },
+				}),
 			}),
 			n(-330, {	-- Feet
 				i(22760),	-- Bramblewood Boots

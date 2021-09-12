@@ -405,14 +405,14 @@ profession(TAILORING, {
 					["name"] = "Festival Dress",
 					["recipeID"] = 26403,
 					-- #if NOT ANYCLASSIC
-					["u"] = 17,
+					["u"] = LUNAR_FESTIVAL,
 					-- #endif
 				},
 				{
 					["name"] = "Festival Suit",
 					["recipeID"] = 26407,
 					-- #if NOT ANYCLASSIC
-					["u"] = 17,
+					["u"] = LUNAR_FESTIVAL,
 					-- #endif
 				},
 				{
@@ -453,7 +453,7 @@ profession(TAILORING, {
 					["timeline"] = { "added 2.3.0.7382" },
 					["recipeID"] = 44950,
 					-- #if NOT ANYCLASSIC
-					["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
+					["u"] = FEAST_OF_WINTER_VEIL,
 					-- #endif
 				}),
 				{
@@ -494,7 +494,7 @@ profession(TAILORING, {
 					["timeline"] = { "added 2.3.0.7382" },
 					["recipeID"] = 44958,
 					-- #if NOT ANYCLASSIC
-					["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
+					["u"] = FEAST_OF_WINTER_VEIL,
 					-- #endif
 				}),
 				{
@@ -1036,7 +1036,7 @@ profession(TAILORING, {
 					["name"] = "Green Holiday Shirt",
 					["recipeID"] = 21945,
 					-- #if NOT ANYCLASSIC
-					["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
+					["u"] = FEAST_OF_WINTER_VEIL,
 					-- #endif
 				},
 				{
@@ -5252,7 +5252,9 @@ profession(TAILORING, {
 			["requireSkill"] = TAILORING,
 			["lvl"] = 40,
 			["groups"] = {
-				i(10463),	-- Pattern: Shadoweave Mask
+				i(10463, {	-- Pattern: Shadoweave Mask
+					["timeline"] = { "removed 4.0.3.10000", "added 7.3" },
+				}),
 			},
 		}),
 	})),

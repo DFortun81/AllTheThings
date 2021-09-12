@@ -88,6 +88,16 @@ _.Zones =
 							i(141911),	-- Formula: Enchant Neck - Mark of the Heavy Hide (Rank 1)
 						},
 					}),
+					q(39916, {	-- Turnabout Betrayal
+						["provider"] = { "n", 98675 },	-- Fallen Priestess
+						["coord"] = { 63.8, 30.2, AZSUNA },
+						["sourceQuests"] = { 40169 },	-- Crossroads Rendezvous
+					}),
+					q(40130, {	-- Washed Clean
+						["provider"] = { "n", 98675 },	-- Fallen Priestess
+						["coord"] = { 63.8, 30.2, AZSUNA },
+						["sourceQuests"] = { 39916 },	-- Turnabout Betrayal
+					}),
 				}),
 				prof(ENGINEERING, {
 					q(40856, {	-- It'll Cost You

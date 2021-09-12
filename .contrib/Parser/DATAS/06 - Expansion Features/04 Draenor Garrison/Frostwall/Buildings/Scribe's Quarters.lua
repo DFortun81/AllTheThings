@@ -13,6 +13,7 @@ _.ExpansionFeatures =
 						n(QUESTS, {
 							q(37572, {	-- Your First Inscription Work Order
 								["provider"] = { "n", 79829 },	-- Urgra
+								["races"] = HORDE_ONLY,
 							}),
 						}),
 						n(VENDORS, {

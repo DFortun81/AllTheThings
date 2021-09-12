@@ -185,3 +185,6 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(62689),	-- triggered when 5x Focused Life Anima and got "Magnifying Lens of the Focusing" R2
+};

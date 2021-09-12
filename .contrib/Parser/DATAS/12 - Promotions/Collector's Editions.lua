@@ -122,8 +122,8 @@ _.Promotions =
 				i(85871),	-- Lucky Quilen Cub
 			},
 		})),
-		tier(WOD_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-			["description"] = "These rewards were made available to anyone that purchased a Collector's Edition of Warlords of Draenor.\n\nThe rewards can be be purchased from the in-game shop.",
+		tier(WOD_TIER, {
+			["description"] = "These rewards were made available to anyone that purchased a Collector's Edition of Warlords of Draenor.",
 			["timeline"] = { "added 6.0.1" },
 			["groups"] = {
 				ach(8917),	-- Collector's Edition: Dread Hatchling
@@ -131,7 +131,7 @@ _.Promotions =
 				i(109014),	-- Dread Hatchling
 				i(109013),	-- Reins of the Dread Raven
 			},
-		})),
+		}),
 		tier(LEGION_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["description"] = "These rewards were made available to anyone that purchased a Collector's Edition of Legion.\n\nThe rewards can be be purchased from the in-game shop.",
 			["timeline"] = { "added 7.0.1" },
@@ -155,7 +155,7 @@ _.Promotions =
 			},
 		})),
 		tier(SL_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-			["description"] = "These rewards were made available to anyone that purchased Shadowlands Heroic Edition.\n\nIt is currently unknown if these will be appearing in the In-Game Shop or not.",
+			["description"] = "These rewards are available to anyone that purchases Shadowlands Heroic Edition.",
 			["timeline"] = { "added 9.0.1" },
 			["groups"] = {
 				mount(307932),	-- Ensorcelled Everwyrm
@@ -252,53 +252,54 @@ _.Promotions =
 				i(76062),	-- Fetish Shaman's Spear (Fetish Shaman)
 			},
 		}),
-		n(-575, {	-- Diablo III: Reaper of Souls
-			["description"] = "These rewards were made available to anyone that purchased the Diablo III: Reaper of Souls Collector's Edition.",
+		
+		n(-575, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Diablo III: Reaper of Souls
+			["description"] = "These rewards are available to anyone that purchases the Diablo III: Reaper of Souls Collector's Edition.",
 			["timeline"] = { "added 5.4.2.17585" },
 			["groups"] = {
 				ach(8795),	-- Collector's Edition: Treasure Goblin
 				i(106256),	-- Treasure Goblin's Pack (Treasure Goblin)
 			},
-		}),
-		n(-568, {	-- Overwatch: Origins
-			["description"] = "These rewards were made available to anyone that purchased the Overwatch: Origins Collector's Edition.",
+		})),
+		n(-568, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Overwatch: Origins
+			["description"] = "These rewards are available to anyone that purchases the Overwatch: Origins Collector's Edition.",
 			["timeline"] = { "added 6.2.3.20716" },
 			["groups"] = {
 				ach(11064),	-- Collector's Edition: Baby Winston
 				i(134047),	-- Baby Winston
 			},
-		}),
-		n(-564, {	-- Starcraft II: Wings of Liberty
-			["description"] = "These rewards were made available to anyone that purchased the Starcraft II: Wings of Liberty Collector's Edition.",
+		})),
+		n(-564, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Starcraft II: Wings of Liberty
+			["description"] = "These rewards are available to anyone that purchases the Starcraft II: Wings of Liberty Collector's Edition.",
 			["timeline"] = { "added 3.3.5.12340" },
 			["groups"] = {
 				ach(4824),	-- Collector's Edition: Mini Thor
 				i(56806),	-- Mini Thor
 			},
-		}),
-		n(-565, {	-- Starcraft II: Heart of the Swarm
-			["description"] = "These rewards were made available to anyone that purchased the Starcraft II: Heart of the Swarm Collector's Edition.",
+		})),
+		n(-565, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Starcraft II: Heart of the Swarm
+			["description"] = "These rewards are available to anyone that purchases the Starcraft II: Heart of the Swarm Collector's Edition.",
 			["timeline"] = { "added 5.0.4.15913" },
 			["groups"] = {
 				ach(7842),	-- Collector's Edition: Baneling
 				i(90177),	-- Baneling
 			},
-		}),
-		n(-576, {	-- Starcraft II: Legacy of the Void
-			["description"] = "These rewards were made available to anyone that purchased the Starcraft II: Legacy of the Void Collector's Edition.",
+		})),
+		n(-576, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Starcraft II: Legacy of the Void
+			["description"] = "These rewards are available to anyone that purchases the Starcraft II: Legacy of the Void Collector's Edition.",
 			["timeline"] = { "added 6.2.2.20395" },
 			["groups"] = {
 				ach(10309),	-- Collector's Edition: Zeradar
 				i(128423),	-- Zeradar
 			},
-		}),
-		n(-552, {	-- Warcraft 3 Reforged Spoils of War Edition
-			["description"] = "These rewards were made available to anyone that purchased the Warcraft 3 Reforged Spoils of War Edition.",
+		})),
+		n(-552, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Warcraft 3 Reforged Spoils of War Edition
+			["description"] = "These rewards are available to anyone that purchases the Warcraft 3 Reforged Spoils of War Edition.",
 			["timeline"] = { "added 8.1.0.28724" },
 			["groups"] = {
 				ach(13196),	-- Meat Marauder
 				i(164571),	-- Meat Wagon
 			},
-		}),
+		})),
 	})),
 };

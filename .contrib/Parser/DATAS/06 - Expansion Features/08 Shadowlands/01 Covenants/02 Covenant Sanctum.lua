@@ -326,32 +326,32 @@ _.HiddenQuestTriggers = {
 	q(63102),	-- Kelisthene | Humility | Pelagos
 	q(63103),	-- Kelisthene | Humility | Kleia
 	q(63104),	-- Kelisthene | Humility | Mikanikos
-	q(63105),	-- Echthra | Humility | Pelagos
+	q(63105),	-- Echthra | Humility | Pelagos / Killing "Alderyn and Myn'ir" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
 	q(63106),	-- Echthra | Humility | Kleia
 	q(63107),	-- Echthra | Humility | Mikanikos
 	q(63108),	-- Alderyn and Myn'ir| Humility | Pelagos
 	q(63109),	-- Alderyn and Myn'ir| Humility | Kleia
 	q(63110),	-- Alderyn and Myn'ir| Humility | Mikanikos
-	q(63111),	-- Nuuminuuru | Humility | Pelagos
-	q(63112),	-- Nuuminuuru | Humility | Kleia
+	q(63111),	-- Nuuminuuru | Humility | Pelagos / Killing "Nuuminuuru" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
+	q(63112),	-- Nuuminuuru | Humility | Kleia / Killing "Nuuminuuru" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms, with active braziers.
 	q(63113),	-- Nuuminuuru | Humility | Mikanikos
-	q(63114),	-- Craven Corinth | Humility | Pelagos
+	q(63114),	-- Craven Corinth | Humility | Pelagos / Killing "Craven Corinth" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
 	q(63115),	-- Craven Corinth | Humility | Kleia
 	q(63116),	-- Craven Corinth | Humility | Mikanikos
-	q(63117),	-- Splinterbark | Humility | Pelagos
-	q(63118),	-- Splinterbark | Humility | Kleia
+	q(63117),	-- Splinterbark | Humility | Pelagos / Killing "Splinterbark" boss in PoA rank 5 building on Humility difficulty with Pelagos with charms and active braziers.
+	q(63118),	-- Splinterbark | Humility | Kleia / Killing "Splinterbark Nightmare" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
 	q(63119),	-- Splinterbark | Humility | Mikanikos
-	q(63120),	-- Thran'tiok | Humility | Pelagos
+	q(63120),	-- Thran'tiok | Humility | Pelagos / Killing "Thran'tiok" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
 	q(63121),	-- Thran'tiok | Humility | Kleia
 	q(63122),	-- Thran'tiok | Humility | Mikanikos
-	q(63123),	-- Mad Mortimer | Humility | Pelagos
+	q(63123),	-- Mad Mortimer | Humility | Pelagos / Killing "Mad Mortimer" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
 	q(63124),	-- Mad Mortimer | Humility | Kleia
 	q(63125),	-- Mad Mortimer | Humility | Mikanikos
 	q(63126),	-- Athanos | Humility | Pelagos
-	q(63127),	-- Athanos | Humility | Kleia
+	q(63127),	-- Athanos | Humility | Kleia / Killing "Arthanos" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
 	q(63128),	-- Athanos | Humility | Mikanikos
 	q(63129),	-- Azaruux | Humility | Pelagos
-	q(63130),	-- Azaruux | Humility | Kleia
+	q(63130),	-- Azaruux | Humility | Kleia / Killing "Azaruux" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
 	q(63131),	-- Azaruux | Humility | Mikanikos
 	
 	-- HQTS PATH
@@ -370,24 +370,24 @@ _.HiddenQuestTriggers = {
 	-- More HQTS Regarding PATH
 	q(61041),	-- Alderyn and Myn'ir| Humility | Kleia -- First Time no braziers, no charms,
 	q(64144),	-- Nuuminuuru | Humility | Pelagos -- First time  no braziers, no charms, on Humility, during the enrage
-	q(61040),	-- Looting chest after the encounter above (Reverent Bearer's Warboots)
+	q(61040),	-- Looting chest after the encounter above (Reverent Bearer's Warboots) / Killing "Nuuminuuru" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
 	q(61039),	-- Craven Corinth | Humility | -- First Time, without a soulbind (seesaw cheese), no braziers, no charms,
-	q(63146),	-- Looting chest after the encounter above (Reverent Bearer's gauntlets)
-	q(63139),	-- Echthra | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms
-	q(61042),	-- Looting chest after the encounter above (Reverent Bearer's Girdle)
+	q(63146),	-- Looting chest after the encounter above (Reverent Bearer's gauntlets) / Killing "Craven Corinth" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
+	q(63139),	-- Echthra | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms /Killing "Alderyn and Myn'ir" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
+	q(61042),	-- Looting chest after the encounter above (Reverent Bearer's Girdle) / Killing "Alderyn and Myn'ir" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers
 	q(63147),	-- Splinterbark | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms
-	q(61038),	-- Looting chest after the encounter above
-	q(63148),	-- Thran'tiok | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms
-	q(61037),	-- Looting chest after the encounter above
-	q(63149),	-- Mad Mortimer | Humility |  -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms
-	q(61036),	-- Looting chest after the encounter above
-	q(63150),	-- Athanos | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms
-	q(61035),	-- Looting chest after the encounter above
-	q(63151),	-- Azaruux | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms
-	q(61034),	-- Looting chest after the encounter above (Reverent Wings of the Ascension)
-	q(63086),	-- Alderyn and Myn'ir| Humility | Mikanikos
+	q(61038),	-- Looting chest after the encounter above/Killing "Splinterbark Nightmare" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
+	q(63148),	-- Thran'tiok | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms / Killing "Splinterbark Nightmare" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers. /Killing "Thran'tiok" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
+	q(61037),	-- Looting chest after the encounter above / Killing "Thran'tiok" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
+	q(63149),	-- Mad Mortimer | Humility |  -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms / Killing "Mad Mortimer" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
+	q(61036),	-- Looting chest after the encounter above / Killing "Mad Mortimer" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
+	q(63150),	-- Athanos | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms / Killing "Arthanos" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
+	q(61035),	-- Looting chest after the encounter above / Killing "Arthanos" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
+	q(63151),	-- Azaruux | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms / Killing "Azaruux" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
+	q(61034),	-- Looting chest after the encounter above (Reverent Wings of the Ascension) / Killing "Azaruux" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
+	q(63086),	-- Alderyn and Myn'ir| Humility | Mikanikos / Killing "Splinterbark" boss in PoA rank 5 building on Humility difficulty with Pelagos with charms and active braziers.
 	q(63089),	-- Echthra | Humility | Mikanikos
-	q(63088),	-- Nuuminuuru | Humility | Mikanikos
+	q(63088),	-- Nuuminuuru | Humility | Mikanikos / Killing "Craven Corinth" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
 	q(61032),	-- Echthra | Wisdom | Pelagos
 	q(61031),	-- Alderyn and Myn'ir| Wisdom | Pelagos
 	q(61030),	-- Nuuminuuru | Wisdom | Kleia
@@ -411,17 +411,17 @@ _.HiddenQuestTriggers = {
 	--q(61034),	-- ?
 	--q(61035),	-- ?
 	--q(61036),	-- ?
-	--q(61037),	-- ?
-	--q(61038),	-- ?
-	--q(61039),	-- ?
+	--q(61037),	-- Killing "Thran'tiok" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
+	--q(61038),	-- Killing "Splinterbark Nightmare" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
+	--q(61039),	-- Killing "Craven Corinth" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
 	--q(61040),	-- ?
 	--q(61042),	-- ?
-	--q(63085),	-- ?
+	--q(63085),	-- Killing "Nuuminuuru" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
 	--q(63086),	-- ?
 	--q(63088),	-- ?
 	--q(63139),	-- ?
-	--q(63143),	-- ?
-	--q(63144),	-- ?
+	--q(63143),	-- Killing "Alderyn and Myn'ir" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
+	--q(63144),	-- Killing "Nuuminuuru" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
 	--q(63146),	-- ?
 	--q(63147),	-- ?
 	--q(63148),	-- ?

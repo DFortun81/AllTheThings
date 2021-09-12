@@ -2,11 +2,11 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = 17},
+_.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 {
 	holiday(235471, {	-- Lunar Festival
 		ach(913, {	-- To Honor One's Elders
-			un(17, title(43)),	-- Elder
+			title(43),	-- Elder
 			ach(6006, {	-- Elders of Cataclysm
 				crit(1),	-- Elder Stonebrand in the Temple of the Earth
 				crit(2),	-- Elder Menkhaf in Uldum

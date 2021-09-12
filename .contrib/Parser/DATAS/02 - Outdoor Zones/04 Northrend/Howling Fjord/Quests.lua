@@ -439,6 +439,7 @@ _.Zones =
 					["provider"] = { "n", 24106 },	-- Scout Valory
 					["coord"] = { 55.9, 55.7, 117 },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(29609, {	-- Friends in Dalaran
 					["coord"] = { 79.0, 29.7, 117 },

@@ -1113,3 +1113,6 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(55591),	-- Expedition Demolisher
+};

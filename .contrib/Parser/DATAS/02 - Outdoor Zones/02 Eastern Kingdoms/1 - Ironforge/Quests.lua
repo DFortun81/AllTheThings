@@ -14,7 +14,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(122339, {	-- Ancient Heirloom Scabbard
-							["sym"] = { { "select", "itemID", 122339 } },	-- Fake select for whatever is cached for itself
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 					},
 				}),
@@ -94,7 +94,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(122340, {	-- Timeworn Heirloom Armor Casing
-							["sym"] = { { "select", "itemID", 122340 } },	-- Fake select for whatever is cached for itself
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 					},
 				}),
@@ -221,7 +221,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(122338, {	-- Ancient Heirloom Armor Casing
-							["sym"] = { { "select", "itemID", 122338 } },	-- Fake select for whatever is cached for itself
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 					},
 				}),
@@ -319,7 +319,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(122341, {	-- Timeworn Heirloom Scabbard
-							["sym"] = { { "select", "itemID", 122341 } },	-- Fake select for whatever is cached for itself
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 					},
 				}),

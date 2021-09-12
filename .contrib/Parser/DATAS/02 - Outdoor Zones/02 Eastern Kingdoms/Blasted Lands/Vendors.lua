@@ -8,7 +8,11 @@ _.Zones =
 		m(BLASTED_LANDS, {
 			n(VENDORS, {
 				n(3546, {	-- Bernie Heisten <Food & Drink>
+					-- #if BEFORE CATA
 					["coord"] = { 63.5, 17.0, BLASTED_LANDS },
+					-- #else
+					["coord"] = { 59.4, 14.9, BLASTED_LANDS },
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(23848),	-- Nethergarde Bitter

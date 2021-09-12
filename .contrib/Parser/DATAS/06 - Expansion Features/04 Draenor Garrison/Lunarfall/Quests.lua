@@ -1161,6 +1161,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 34019 },	-- Shadows Awaken
 						["coord"] = { 42.8, 45.2, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME, -- There is no Bulletin Board anymore, only heroes calls
 						["isBreadcrumb"] = true,
 						["provider"] = { "o", 232397 },	-- Bulletin Board
 					}),

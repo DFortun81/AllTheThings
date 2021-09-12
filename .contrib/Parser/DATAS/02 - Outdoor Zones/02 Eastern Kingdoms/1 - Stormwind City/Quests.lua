@@ -1236,7 +1236,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 5496 },	-- Sandahl
 					["classes"] = { WARLOCK },
-					["coord"] = { 57.6, 24.8, STORMWIND_CITY },	-- Sandahl
+					["coord"] = { 39.8, 85.4, STORMWIND_CITY },	-- Sandahl
 				}),
 				q(1078,  {	-- Retrieval for Mauren
 					["provider"] = { "n", 4078 },	-- Collin Mauren

@@ -7,6 +7,19 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
 			n(VENDORS, {
+				n(92936,  {	-- Aimee <Pie, Pastry & Cakes>
+					["coord"] = { 50.85, 29.09, LEGION_DALARAN },
+					["groups"] = {
+						i(42432),	-- Berry Pie Slice
+						i(42436),	-- Chocolate Celebration Cake
+						i(42431),	-- Dalaran Brownie
+						i(42430),	-- Dalaran Doughnut
+						i(128847),	-- Lovingly Crafted Carrot Cake
+						i(124398),	-- Nightberry Truffle
+						i(60378),	-- Plumpkin Pie
+						i(42429),	-- Red Velvet Cupcake
+					},
+				}),
 				n(93528,  {	-- Angelique Butler <First Aid Supplies>
 					["coord"] = { 36.6, 37.6, LEGION_DALARAN },
 					["g"] = {

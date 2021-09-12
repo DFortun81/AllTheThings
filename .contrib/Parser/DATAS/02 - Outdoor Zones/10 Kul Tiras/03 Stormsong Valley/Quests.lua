@@ -1737,4 +1737,5 @@ _.HiddenQuestTriggers = {
 	q(54855),	-- naming the ship "The Lionheart" during Blessing of the Tides quest to recruit Kul Tirans
 	q(54775),	-- Warmode Storm's Rage
 	q(54716),	-- Secret Chest during Stormsong Valley Incursion in Warmode
+	--q(53635),	-- Got this either just after collecting Curious Grain Sacks, or after Killing Poacher Zane
 };

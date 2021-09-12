@@ -24,11 +24,11 @@ _.BattlePets =
 			p(1688),	-- Crusher
 			p(225, {	-- Curious Oracle Hatchling (A)
 				["races"] = ALLIANCE_ONLY,
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(226, {	-- Curious Oracle Hatchling (H)
 				["races"] = HORDE_ONLY,
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(2850),	-- Cursed Dune Watcher
 			p(2900),	-- Dal

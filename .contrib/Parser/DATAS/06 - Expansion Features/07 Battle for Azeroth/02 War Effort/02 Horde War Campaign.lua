@@ -1692,6 +1692,14 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["maps"] = { 1534 },
 						}),
+						q(57147, {	-- Not My Warchief
+							["description"] = "Have to be Sylvanas Loyalist that escapes with Eitrigg",
+							["sourceQuests"] = { 57152 },	-- Most Loyal
+							["provider"] = { "n", 156124 },	-- Eitrigg
+							["coord"] = { 74.0,  46.0, 1534 },
+							["races"] = HORDE_ONLY,
+							["maps"] = { 1534 },
+						}),
 					}),
 				},
 			}),

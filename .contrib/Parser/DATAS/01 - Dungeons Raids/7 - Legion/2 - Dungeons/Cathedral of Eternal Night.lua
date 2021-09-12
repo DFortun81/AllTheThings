@@ -31,6 +31,54 @@ _.Instances = { tier(LEGION_TIER, {
 			}),
 			d(2,	{	-- Heroic
 				n(ZONEDROPS, {
+					i(147514, {	-- Felguard Destroyer's Legplates
+						["bonusID"] = 1812,
+						["crs"] = {
+							118704,	-- Dul'zak
+							118723,	-- Gazerax
+							118705,	-- Nal'asha
+							120713,	-- Wa'glur
+							120716,	-- Dreadspeaker Serilis
+							120715,	-- Raga'yut
+							120717,	-- Mistress Dominix
+						},
+					}),
+					i(147515, {	-- Hellblaze Invader's Greaves
+						["bonusID"] = 1812,
+						["crs"] = {
+							118704,	-- Dul'zak
+							118723,	-- Gazerax
+							118705,	-- Nal'asha
+							120713,	-- Wa'glur
+							120716,	-- Dreadspeaker Serilis
+							120715,	-- Raga'yut
+							120717,	-- Mistress Dominix
+						},
+					}),
+					i(147517, {	-- Inquisitor's Battle Cowl
+						["bonusID"] = 1812,
+						["crs"] = {
+							118704,	-- Dul'zak
+							118723,	-- Gazerax
+							118705,	-- Nal'asha
+							120713,	-- Wa'glur
+							120716,	-- Dreadspeaker Serilis
+							120715,	-- Raga'yut
+							120717,	-- Mistress Dominix
+						},
+					}),
+					i(147516, {	-- Legion Stalker's Hood
+						["bonusID"] = 1812,
+						["crs"] = {
+							118704,	-- Dul'zak
+							118723,	-- Gazerax
+							118705,	-- Nal'asha
+							120713,	-- Wa'glur
+							120716,	-- Dreadspeaker Serilis
+							120715,	-- Raga'yut
+							120717,	-- Mistress Dominix
+						},
+					}),
 					i(147117, {	-- Orb of the Fel Temptress
 						["cr"] = 118714,  -- Hellblaze Temptress
 						["classes"] = { WARLOCK },

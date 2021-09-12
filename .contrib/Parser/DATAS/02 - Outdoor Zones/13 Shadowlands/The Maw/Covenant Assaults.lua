@@ -515,6 +515,16 @@ _.Zones =
 									}),
 								},
 							}),
+							q(63972, {	-- Just Don't Ask Me to Spell It
+								["provider"] = { "n", 179070 },	-- Krrprripripkraak
+								["isWeekly"] = true,
+								["coord"] = { 22.2, 41.4, THE_MAW },
+								["g"] = {
+									crit(5, {	-- Just Don't Ask Me to Spell It
+										["achievementID"] = 15036,	-- Rooting Out The Evil
+									}),
+								},
+							}),
 							q(63969, {	-- Looming Darkness
 								["provider"] = { "n", 178828 },	-- Lord Herne
 								["isWeekly"] = true,

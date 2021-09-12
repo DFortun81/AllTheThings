@@ -104,7 +104,7 @@ _.Toys =
 		i(134004),		-- Noble's Eternal Elementium Signet
 		i(45014),		-- Orgrimmar Banner (Horde)
 		i(158149, {		-- Overtuned Corgi Goggles
-			["u"] = 31,	-- WoW Anniversary
+			["u"] = WOW_ANNIVERSARY,
 		}),
 		i(89869),		-- Pandaren Scarecrow
 		i(163210),		-- Party Totem

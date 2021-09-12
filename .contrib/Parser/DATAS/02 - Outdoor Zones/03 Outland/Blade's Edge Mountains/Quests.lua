@@ -1363,6 +1363,7 @@ _.Zones =
 				}),
 				q(10580, {	-- Where Did Those Darn Gnomes Go?
 					["qg"] = 21158,	-- Commander Skyshadow
+					["sourceQuest"] = 10518,	-- Planting the Banner
 					["coord"] = { 36.5, 66.4, BLADES_EDGE_MOUNTAINS },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,

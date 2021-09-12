@@ -18,14 +18,14 @@ _.Achievements =
 			["g"] = {
 				ach(13928, {	-- Alterac Valley of Olde (A)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 31,	-- WoW Anniversary
+					["u"] = WOW_ANNIVERSARY,
 					["g"] = {
 						i(172022),	-- Stormpike Battle Ram
 					},
 				}),
 				ach(13930, {	-- Alterac Valley of Olde (H)
 					["races"] = HORDE_ONLY,
-					["u"] = 31,	-- WoW Anniversary
+					["u"] = WOW_ANNIVERSARY,
 					["g"] = {
 						i(172023),	-- Frostwolf Snarler
 					},

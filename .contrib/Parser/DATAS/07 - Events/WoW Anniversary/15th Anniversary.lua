@@ -12,14 +12,14 @@ _.WorldEvents =
 		},
 		["g"] = {
 			ach(13917, {	-- 15th Anniversary
-				["u"] = 36,	-- WoW Anniversary [Removed]
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			n(-9987, {	-- Alterac Valley
 				["maps"] = {
 					1537,	-- Alterac Valley
 					HILLSBRAD_FOOTHILLS,
 				},
-				["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
+				["g"] = bubbleDown({ ["u"] = WOW_ANNIVERSARY }, {
 					ach(13928, {	-- Alterac Valley of Olde (A)
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -700,10 +700,10 @@ _.WorldEvents =
 					["g"] = {
 						d(24, {	-- Timewalking
 							ach(13931, {	-- Memories of Fel, Frost and Fire
-								["u"] = 36,	-- WoW Anniversary [Removed]
+								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									i(172012, {	-- Obsidian Worldbreaker (MOUNT!)
-										["u"] = 36,	-- WoW Anniversary [Removed]
+										["u"] = REMOVED_FROM_GAME,
 									}),
 								},
 							}),
@@ -716,7 +716,7 @@ _.WorldEvents =
 								}),
 								e(1572, {	-- Lady Vashj — WoW anniversary only
 									["cr"] = 21212,	-- Lady Vashj
-									["g"] = bubbleDown({ ["u"] = 36 }, {	-- WoW Anniversary [Removed]
+									["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 										-- Old Token Items
 										i(171912),	-- Crystalforge Faceguard
 										i(171914),	-- Crystalforge Greathelm
@@ -758,7 +758,7 @@ _.WorldEvents =
 								}),
 								e(1576, {	-- Kael'thas Sunstrider — WoW anniversary only
 									["cr"] = 19622,	-- Kael'thas Sunstrider
-									["g"] = bubbleDown({ ["u"] = 36 }, {	-- WoW Anniversary [Removed]
+									["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 										-- Old Token Items
 										i(171902),	-- Cataclysm Chestguard
 										i(171903),	-- Cataclysm Chestpiece
@@ -801,7 +801,7 @@ _.WorldEvents =
 								}),
 								e(1581, {	-- Archimonde — WoW anniversary only
 									["cr"] = 17968,	-- Archimonde
-									["g"] = bubbleDown({ ["u"] = 36 }, {	-- WoW Anniversary [Removed]
+									["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 										--	ach(695),	-- The Battle for Mount Hyjal
 										-- Old Token Items
 										i(171942),	-- Cowl of Absolution
@@ -839,7 +839,7 @@ _.WorldEvents =
 							}),
 							n(-10014, {	-- Wrath of the Lich King
 								n(15936, {	-- Heigan the Unclean
-									["g"] = bubbleDown({ ["u"] = 36 }, {	-- WoW Anniversary [Removed]
+									["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 										i(171618),	-- Amulet of Autopsy
 										i(171515),	-- Bindings of the Decrepit
 										i(171509),	-- Breastplate of Tormented Rage
@@ -870,7 +870,7 @@ _.WorldEvents =
 									i(142085),	-- Nerubian Relic (PET!)
 								}),
 								n(34564, {	-- Anub'arak — WoW Anniversary only
-									["g"] = bubbleDown({ ["u"] = 36 }, {	-- WoW Anniversary [Removed]
+									["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 										i(171615, {	-- Aegis of the Coliseum
 											["races"] = HORDE_ONLY,
 										}),
@@ -1105,7 +1105,7 @@ _.WorldEvents =
 								}),
 								n(36597, {	-- The Lich King — anniversary only
 									--	["cr"] = 36597,	-- The Lich King
-									["g"] = bubbleDown({ ["u"] = 36 }, {	-- WoW Anniversary [Removed]
+									["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 										i(172021),	-- Marks of Sanctification Purse
 										i(171571),	-- Archus, Greatstaff of Antonidas
 										i(171569),	-- Bloodsurge, Kel'Thuzad's Blade of Agony
@@ -1137,7 +1137,7 @@ _.WorldEvents =
 								}),
 								e(167, {	-- Cho'gall — WoW anniversary only
 									["cr"] = 43324,
-									["g"] = bubbleDown({ ["u"] = 36 }, {	-- WoW Anniversary [Removed]
+									["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 										-- Old tier Items
 										i(171856),	-- Shadowflame Mantle
 										i(171872),	-- Reinforced Sapphirium Shoulderguards
@@ -1181,7 +1181,7 @@ _.WorldEvents =
 								}),
 								e(174, {	-- Nefarian's End — WoW anniversary only
 									["cr"] = 41376,
-									["g"] = bubbleDown({ ["u"] = 36 }, {	-- WoW Anniversary [Removed]
+									["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 										-- Old tier Items
 										i(171875),	-- Shadowflame Hood
 										i(171889),	-- Reinforced Sapphirium Helmet
@@ -1226,7 +1226,7 @@ _.WorldEvents =
 								}),
 								e(198, {	-- Ragnaros — WoW anniversary only
 									["cr"] = 52409,
-									["g"] = bubbleDown({ ["u"] = 36 }, {	-- WoW Anniversary [Removed]
+									["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 										i(171804),	-- Balespider's Hood
 										i(171794),	-- Cowl of the Cleansing Flame
 										i(171770),	-- Dark Phoenix Helmet
@@ -1268,17 +1268,17 @@ _.WorldEvents =
 			}),
 			n(-297, {	-- Mailbox
 				i(172014, {	-- Anniversary Gift
-					["u"] = 36,	-- WoW Anniversary [Removed]
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(172016, {	-- Lil' Nefarian
-							["u"] = 36,	-- WoW Anniversary [Removed]
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(172013, {	-- Celebration Firework
-							["u"] = 31,	-- WoW Anniversary
+							["u"] = WOW_ANNIVERSARY,
 						}),
 						q(57249, {	-- A Timely Invitation
 							["provider"] = { "i", 171177 },	-- Invitation from the Timewalkers
-							["u"] = 31,	-- WoW Anniversary
+							["u"] = WOW_ANNIVERSARY,
 							["isYearly"] = true,
 						}),
 					},
@@ -1288,7 +1288,7 @@ _.WorldEvents =
 				q(57300, {	-- Soldier of Time
 					["provider"] = { "n", 157113 },	-- Chromie
 					["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
-					["u"] = 31,	-- WoW Anniversary
+					["u"] = WOW_ANNIVERSARY,
 					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
 				}),
@@ -1297,21 +1297,21 @@ _.WorldEvents =
 					["isDaily"] = true,
 					["coord"] = { 51.4, 39.0, CAVERNS_OF_TIME },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 31,	-- WoW Anniversary
+					["u"] = WOW_ANNIVERSARY,
 				}),
 				q(43461, {	-- A Time to Reflect (H)
 					["provider"] = { "n", 110035 },		-- Historian Jupa
 					["isDaily"] = true,
 					["coord"] = { 51.4, 39.0, CAVERNS_OF_TIME },
 					["races"] = HORDE_ONLY,
-					["u"] = 31,	-- WoW Anniversary
+					["u"] = WOW_ANNIVERSARY,
 				}),
 				q(57298, {	-- How Things "Really" Happened...
 					["sourceQuests"] = { 57249 },	-- A Timely Invitation
 					["provider"] = { "n", 157113 },	-- Chromie
 					["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
 					["lvl"] = 60,
-					["u"] = 36,	-- WoW Anniversary [Removed]
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(47253, {	-- The Originals (A)
 					["provider"] = { "n", 110034 },	-- Historian Llore
@@ -1324,7 +1324,7 @@ _.WorldEvents =
 					},
 					-- Note!! Crieve wants these to link to the KillID's for the bosses so it's easier to track and plot coordinates.
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 31,	-- WoW Anniversary
+					["u"] = WOW_ANNIVERSARY,
 				}),
 				q(47254, {	-- The Originals (H)
 					["provider"] = { "n", 110035 },	-- Historian Jupa
@@ -1337,10 +1337,10 @@ _.WorldEvents =
 					},
 					-- Note!! Crieve wants these to link to the KillID's for the bosses so it's easier to track and plot coordinates.
 					["races"] = HORDE_ONLY,
-					["u"] = 31,	-- WoW Anniversary
+					["u"] = WOW_ANNIVERSARY,
 				}),
 			}),
-			n(VENDORS, bubbleDown({ ["u"] = 31, }, {
+			n(VENDORS, bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {
 				n(158061, {	-- Historian Ma'di
 					["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
 					["g"] = {

@@ -697,7 +697,6 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(25674),	-- Wild Draenish Gloves
 			i(25675),	-- Wild Draenish Leggings
 			i(25676),	-- Wild Draenish Vest
-			i(29970),	-- Wildfeather Leggings
 			i(29504),	-- Windscale Hood
 			i(29507),	-- Windslayer Wraps
 		}),

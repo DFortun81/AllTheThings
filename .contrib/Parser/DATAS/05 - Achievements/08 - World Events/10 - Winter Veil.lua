@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9962, {	-- World Events
-		["groups"] = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL}, {
+		["groups"] = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL}, {
 			n(-10023, {	-- Winter Veil
 				ach(277),		-- 'Tis the Season
 				ach(1690),		-- A Frosty Shake (Dalaran - NR)

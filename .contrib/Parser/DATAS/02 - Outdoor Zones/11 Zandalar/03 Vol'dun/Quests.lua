@@ -1040,7 +1040,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(49335, {	-- Skycaller Slaughter
-					["provider"] = { "n", 134611 },	-- Seriah
+					["provider"] = { "n", 128691 },	-- Izarn
 					["coord"] = { 32.6, 48.4, VOLDUN },
 					["races"] = HORDE_ONLY,
 				}),

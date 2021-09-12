@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9962, {	-- World Events
-		["groups"] = bubbleDown({["u"] = 17}, {
+		["groups"] = bubbleDown({["u"] = LUNAR_FESTIVAL}, {
 			n(-10015, {	-- Lunar Festival
 				ach(609, {	-- 50 Coins of Ancestry
 					ach(608),	-- 25 Coins of Ancestry

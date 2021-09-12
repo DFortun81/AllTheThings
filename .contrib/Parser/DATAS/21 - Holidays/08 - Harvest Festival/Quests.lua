@@ -5,7 +5,7 @@
 _.Holidays =
 {
 	holiday(235465, {	-- Harvest Festival
-		["u"] = 25,	-- Harvest Festival
+		["u"] = HARVEST_FESTIVAL,
 		["g"] = {
 			n(QUESTS, {
 				q(8149,  {	-- Honoring a Hero (A)
@@ -13,14 +13,14 @@ _.Holidays =
 					["isYearly"] = true,
 					["coord"] = { 59.8, 34.2, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 25,	-- Harvest Festival
+					["u"] = HARVEST_FESTIVAL,
 				}),
 				q(8150, {	-- Honoring a Hero (H)
 					["provider"] = { "n", 15012 },	-- Javnir Nashak
 					["isYearly"] = true,
 					["coord"] = { 46.2, 15.0, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["u"] = 25,	-- Harvest Festival
+					["u"] = HARVEST_FESTIVAL,
 				}),
 			}),
 		},

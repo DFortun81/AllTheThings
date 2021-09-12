@@ -129,6 +129,7 @@ _.Zones =
 				i(176976),	-- Warflesh Stand
 				i(176965),	-- Warflesh Vest
 				i(186727),	-- Seal Breaker Key
+				i(186995),	-- Pattern: Shrouded Hand Towel
 			}),
 		}),
 	}),

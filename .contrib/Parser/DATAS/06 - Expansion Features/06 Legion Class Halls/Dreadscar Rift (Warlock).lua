@@ -649,7 +649,9 @@ _.ExpansionFeatures =
 					q(41795),	-- Summoning the Sisters
 					q(41155),	-- The Dark Riders
 					q(41156),	-- The Power Possessed
-					q(44227),	-- Unleashing our Wrath
+					q(44227, {	-- Unleashing our Wrath
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(44682),	-- Unparalleled Power
 					q(44254, {	-- Gazing Into Oblivion
 						i(139765),	-- Visage of the Black Harvest

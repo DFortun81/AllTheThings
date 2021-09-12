@@ -7,6 +7,18 @@ _.Zones =
 	m(113, {	-- Northrend
 		m(125, {	-- Dalaran: Northrend
 			n(VENDORS, {
+				n(29548,  {	-- Aimee <Pie, Pastry & Cakes>
+					["coord"] = { 36.4, 33.8, 125 },
+					["groups"] = {
+						i(42439),	-- Big Berry Pie
+						i(42428),	-- Carrot Cupcake
+						i(42436),	-- Chocolate Celebration Cake
+						i(42431),	-- Dalaran Brownie
+						i(42430),	-- Dalaran Doughnut
+						i(42438),	-- Lovely Cake
+						i(42429),	-- Red Velvet Cupcake
+					},
+				}),
 				n(29512,  {	-- Ainderu Summerleaf <Mooncloth Tailoring Specialist>
 					["coord"] = { 36.4, 33.8, 125 },
 					["g"] = {

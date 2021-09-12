@@ -47,6 +47,7 @@ _.Zones =
 			}),
 			q(28790, {	-- A Personal Summons (Vashj'ir Starter Quest)
 				["isBreadcrumb"] = true,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
 				["isBreadcrumb"] = true,

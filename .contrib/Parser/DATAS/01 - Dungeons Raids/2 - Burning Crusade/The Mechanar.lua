@@ -3,9 +3,10 @@
 -----------------------------------------------------
 _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(258, {	-- The Mechanar
+		["lore"] = "Among the satellites of Tempest Keep, the Mechanar has been chosen by Kael'thas to be a factory to create large amounts of power. Mechano-Lord Capacitus appears to be the one creating it using the naaru-technology found in Tempest Keep, and the power is stored in manacells which piles up into walls and heaps inside the satellite. The large amount of manacells are smuggled by ethereals to the Sunwell where Kael'thas plans to use them to power up the summoning of Kil'jaeden.",
 		["coord"] = { 70.61, 69.75, NETHERSTORM },	-- The Mechanar, Netherstorm
 		["maps"] = {
-			TEMPEST_KEEP_MECHANAR,	-- The Mechanar
+			TEMPEST_KEEP_MECHANAR,
 			268,	-- Calculation Chamber
 		},
 		["lvl"] = lvlsquish(65, 20, 65),
@@ -16,27 +17,30 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10664,	-- Additional Materials
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["maps"] = { TEROKKAR_FOREST },
-					["cost"] = {
-						{ "i", 30824, 1 },	-- Overcharged Manacell
-					},
 					["lvl"] = lvlsquish(67, 25, 67),
+					["g"] = {
+						objective(1, {
+							["provider"] = { "i", 30824, 1 },	-- Overcharged Manacell
+						}),
+					},
 				}),
 				q(29659, {	-- Lost Treasure
-					["qg"] = 18481,	-- Adal, auto-granted
+					["description"] = "Automatically provided after killing either Gatewatcher.",
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 72663, 1 },	-- Blinding Fury
-					},
 					["lvl"] = lvlsquish(67, 20, 67),
+					["g"] = {
+						objective(1, {
+							["provider"] = { "i", 72663, 1 },	-- Blinding Fury
+						}),
+					},
 				}),
 				q(29658, {	-- The Calculator
-					["qg"] = 18481,	-- Adal, auto-granted
 					["sourceQuest"] = 29657,	-- With Great Power, Comes Great Responsibility
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
 				}),
 				q(29657, {	-- With Great Power, Comes Great Responsibility
-					["qg"] = 18481,	-- Adal, auto-granted
+					["description"] = "Automatically provided upon starting the instance.",
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
 				}),

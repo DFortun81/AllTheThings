@@ -5,17 +5,14 @@
 local InfiniteTimereaver =
 {
 	d(24, {  -- Timewalking
-		["u"] = 42,	--  Timewalking
-		["g"] = {
-			n(COMMON_BOSS_DROPS, {
-				["maps"] = TIMEWALKING_DUNGEON_MAP_IDS,
-				["g"] = {
-					i(133543, {	-- Reins of the Infinite Timereaver
-						["crs"] = TIMEWALKING_DUNGEON_CREATURE_IDS,
-					}),
-				},
-			}),
-		},
+		n(COMMON_BOSS_DROPS, {
+			["maps"] = TIMEWALKING_DUNGEON_MAP_IDS,
+			["g"] = {
+				i(133543, {	-- Reins of the Infinite Timereaver
+					["crs"] = TIMEWALKING_DUNGEON_CREATURE_IDS,
+				}),
+			},
+		}),
 	}),
 };
 _.WorldEvents = InfiniteTimereaver;

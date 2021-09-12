@@ -13,9 +13,9 @@ _.WorldEvents =
 		},
 		["g"] = {
 			ach(10741, {	-- 12th Anniversary
-				["u"] = 36,	-- WoW Anniversary [Removed]
+				["u"] = REMOVED_FROM_GAME,
 			}),
-			n(-297, bubbleDown({ ["u"] = 36, }, {	-- Mailbox
+			n(-297, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- Mailbox
 				i(139284, {	-- Anniversary Gift
 					i(139285),	-- Celebration Package
 					i(139410, {	-- Letter from the Timewalker [Horde]
@@ -30,7 +30,7 @@ _.WorldEvents =
 					}),
 				}),
 			})),
-			n(QUESTS, bubbleDown({ ["u"] = 31, }, {
+			n(QUESTS, bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {
 				q(43461, {	-- A Time to Reflect
 					["provider"] = { "n", 110035 },		-- Historian Jupa
 					["isDaily"] = true,
@@ -48,7 +48,7 @@ _.WorldEvents =
 					-- Was going to list it in description, but too many and terrible looking
 				}),
 			})),
-			n(VENDORS, bubbleDown({ ["u"] = 31, }, {
+			n(VENDORS, bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {
 				n(110035, {	-- Historian Jupa [Horde]
 					["coord"] = { 36.6, 74.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,

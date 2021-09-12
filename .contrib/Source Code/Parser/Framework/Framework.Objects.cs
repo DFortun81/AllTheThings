@@ -363,7 +363,7 @@ namespace ATT
                             case 00:
                                 switch (inventoryType)
                                 {
-                                    case 00: return Filters.Miscellaneous;      // Miscellaneous
+                                    case 00: return Filters.Ignored;            // Ignored
                                     case 01: return Filters.Cosmetic;           // Head (no armor type specified - Cosmetic?)
                                     case 03: return Filters.Cosmetic;           // Shoulder (no armor type specified - Cosmetic?)
                                     case 05: return Filters.Cosmetic;           // Shirt (no armor type specified - Cosmetic?)

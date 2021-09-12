@@ -3,6 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(254, {	-- The Arcatraz
+		["lore"] = "The Arcatraz is a prison where the naaru jailed the most terrifying and dangerous creatures they encountered on their journeys. When Kael'thas and his followers took the Keep, he sent a warden and guards to the Arcatraz. Kael's blood elves, however, were corruptible and the prisoners have begun to break free...",
 		["coord"] = { 74.42, 57.72, NETHERSTORM },	-- The Arcatraz, Netherstorm
 		["maps"] = {
 			TEMPEST_KEEP_ARCATRAZ,	-- Stasis Block: Trion
@@ -50,16 +51,18 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10280,	-- Special Delivery to Shattrath City
 					["coord"] = { 53.7, 44.6, SHATTRATH_CITY },
 					["maps"] = { SHATTRATH_CITY, TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
-					["cost"] = {
-						{ "i", 31085, 1 },	-- Top Shard of the Arcatraz Key
-						{ "i", 31086, 1 },	-- Bottom Shard of the Arcatraz Key
-					},
 					-- #if AFTER WRATH
 					["lvl"] = lvlsquish(67, 25, 67),
 					-- #else
 					["lvl"] = lvlsquish(70, 25, 70),
 					-- #endif
 					["groups"] = {
+						objective(1, {
+							["provider"] = { "i", 31085, 1 },	-- Top Shard of the Arcatraz Key
+						}),
+						objective(2, {
+							["provider"] = { "i", 31086, 1 },	-- Bottom Shard of the Arcatraz Key
+						}),
 						i(31084, {	-- Key to the Arcatraz
 							["timeline"] = { "removed 4.0.3.14732" },
 						}),

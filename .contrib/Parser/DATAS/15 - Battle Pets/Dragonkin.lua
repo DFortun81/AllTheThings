@@ -40,7 +40,7 @@ _.BattlePets =
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			p(2621, {	-- Lil' Nefarian
-				["u"] = 31,	-- WoW Anniversary
+				["u"] = WOW_ANNIVERSARY,
 			}),
 			p(320),		-- Lil' Tarecgosa
 			p(3053, {	-- Moon-Touched Netherwhelp
@@ -60,7 +60,7 @@ _.BattlePets =
 			p(143),		-- Red Dragonhawk Hatchling
 			p(2421),	-- Saurolisk Hatchling
 			p(2578, {	-- Scaley
-				["u"] = 20,	-- Children's Week
+				["u"] = CHILDRENS_WEEK,
 			}),
 			p(144),		-- Silver Dragonhawk Hatchling
 			un(BLIZZARD_BALANCE, p(347)),	-- Soul of the Aspects

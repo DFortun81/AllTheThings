@@ -181,6 +181,9 @@ _.Zones =
 				q(39119, {	-- Assault on Skold-Ashil (Bonus Objective)
 					["coord"] = { 60.0, 63.8, STORMHEIM },
 				}),
+				q(38939, {	-- Assault on Skold-Ashil (Bonus Objective)
+					["coord"] = { 60.0, 63.8, STORMHEIM },
+				}),
 				q(38374, {	-- Assault the Drekirjar (Bonus Objective)
 					["coord"] = { 43.2, 69.4, STORMHEIM },
 				}),

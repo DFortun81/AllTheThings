@@ -382,3 +382,6 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(54400),	-- Russel The Bard Recruited for Upright Citizens
+};

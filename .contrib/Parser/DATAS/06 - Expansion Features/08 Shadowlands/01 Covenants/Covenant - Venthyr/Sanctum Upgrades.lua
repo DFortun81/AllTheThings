@@ -233,22 +233,22 @@ _.ExpansionFeatures =
 								q(63721, {	-- Lord Garridan's Egg
 									["cost"] = { { "i", 185684, 1 } },	-- Lord Garridan's Egg
 									["repeatable"] = true,
-									["u"] = HOLIDAY_NOBLEGARDEN,
+									["u"] = NOBLEGARDEN,
 								}),
 								q(63720, {	-- Prince Renethal's Egg
 									["cost"] = { { "i", 185683, 1 } },	-- Prince Renethal's Egg
 									["repeatable"] = true,
-									["u"] = HOLIDAY_NOBLEGARDEN,
+									["u"] = NOBLEGARDEN,
 								}),
 								q(63718, {	-- Theotar's Egg
 									["cost"] = { { "i", 185681, 1 } },	-- Theotar's Egg
 									["repeatable"] = true,
-									["u"] = HOLIDAY_NOBLEGARDEN,
+									["u"] = NOBLEGARDEN,
 								}),
 								q(63719, {	-- Temel's Egg
 									["cost"] = { { "i", 185682, 1 } },	-- Temel's Egg
 									["repeatable"] = true,
-									["u"] = HOLIDAY_NOBLEGARDEN,
+									["u"] = NOBLEGARDEN,
 								}),
 							}),
 							n(-908, {	-- Rewards
@@ -1677,7 +1677,7 @@ _.ExpansionFeatures =
 								q(63693, {	-- Rendle and Cudgelface's Best Friend
 									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Rendle and Cudgelface?
 									["provider"] = { "n", 171190 },	-- Alexandros Mograine
-									["coord"] = { 31, 40, REVENDRETH },
+									["coord"] = { 31.0, 40.0, REVENDRETH },
 								}),
 								q(61255, {	-- RSVP: Alexandros Mograine
 									["sourceQuests"] = { 61943 },	-- Court Influencer
@@ -2544,7 +2544,7 @@ _.HiddenQuestTriggers = {
 			q(61556),	-- 'Party Crashers'
 			q(61725),	-- turning in Stolen Mementos to Keeper Ta'saran in Ember Court
 			q(62135),	-- picked up when entering the Ember Court for the week — for "Fungi Experiments"
-			q(62122),	-- Mystery Mirror 
+			q(62122),	-- Mystery Mirror
 			q(62123),	-- Prison Break
 
 		-- RSVPs
@@ -2648,8 +2648,12 @@ _.HiddenQuestTriggers = {
 			q(62525),	-- completed 'Relaxing' criteria for It's Certainly Never Boring
 			q(62526),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)
 			-- q(59689),	-- Completed at the end, was unlocking Generous Gift and Protective Braziers for the Court Favors achievement.
-			
+
 			--q(61918),	-- unflagged when doing restock quest (62078)
+
+			--q(61935),	-- Stonehad was miserable, Adrestes was elated if it matters. This was at the start of the court - no idea what that was.  It's the first court with decorations though.
+
+			--q(61930),	-- Unknown
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

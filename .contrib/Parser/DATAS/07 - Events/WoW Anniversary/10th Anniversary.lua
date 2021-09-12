@@ -8,9 +8,9 @@ _.WorldEvents =
 		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
 		["g"] = {
 			ach(8820, {	-- 10th Anniversary
-				["u"] = 36,	-- WoW Anniversary [Removed]
+				["u"] = REMOVED_FROM_GAME,
 			}),
-			n(-297, bubbleDown({ ["u"] = 36, }, {	-- Mailbox
+			n(-297, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- Mailbox
 				i(107224),	-- Celebration Package
 				i(115301),	-- Molten Corgi
 			})),
@@ -22,7 +22,7 @@ _.WorldEvents =
 				-- Attaching via maps places it at the top and shows two Ragnaros'. Eww!!
 				["g"] = {
 					ach(9550, {	-- Boldly, You Sought the Power of Ragnaros
-						["u"] = 36,					-- WoW Anniversary [Removed]
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							i(115484, {	-- Core Hound Chain
 								["u"] = 9,				-- Black Market AH Filter
@@ -34,21 +34,21 @@ _.WorldEvents =
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(118572, {	-- Illusion: Flames of Ragnaros
-						["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
+						["u"] = FEAST_OF_WINTER_VEIL,
 						-- Note!! We are using Winter Veil because you can get it each year from the gifts.
 						-- It's also available from the BMAH, but less likely to see it there.
 					}),
 					i(118942, {	-- Crown of Power
-						["u"] = 36,				-- WoW Anniversary [Removed]
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(118941, {	-- Crown of Woe
-						["u"] = 36,				-- WoW Anniversary [Removed]
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(118939, {	-- Crown of Destruction
-						["u"] = 36,				-- WoW Anniversary [Removed]
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(118940, {	-- Crown of Desolation
-						["u"] = 36,				-- WoW Anniversary [Removed]
+						["u"] = REMOVED_FROM_GAME,
 					}),
 				},
 			}),

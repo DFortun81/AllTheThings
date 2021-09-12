@@ -940,6 +940,13 @@ _.Zones =
 						currency(824),	-- Garrison Resources
 					},
 				}),
+				o(233048, {	-- Brilliant Dreampetal
+					["questID"] = 35661,
+					["coord"] = { 81.1, 37.2, DRAENOR_NAGRAND },
+					["g"] = {
+						i(118262),	-- Brilliant Dreampetal
+					},
+				}),
 				o(233137, {	-- Burning Blade Cache
 					["questID"] = 35696,
 					["coord"] = { 85.4, 53.46, DRAENOR_NAGRAND },
@@ -1085,6 +1092,10 @@ _.Zones =
 						i(117981),	-- Fragment of Oshu'gun
 					},
 				}),
+				o(233132, {	-- Freshwater Clam
+					["questID"] = 35692,
+					["coord"] = { 73.1, 21.6, DRAENOR_NAGRAND },
+				}),
 				o(233539, {	-- Genedar Debris
 					["questID"] = 35987,
 					["coord"] = { 43.2, 57.6, DRAENOR_NAGRAND },
@@ -1193,6 +1204,13 @@ _.Zones =
 					["coord"] = { 80.9, 79.8, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118255),	-- Trophy Ring of Gordal
+					},
+				}),
+				o(233768, {	-- Pale Elixir
+					["questID"] = 36115,
+					["coord"] = { 57.8, 62.1, DRAENOR_NAGRAND },
+					["g"] = {
+						i(118278), -- Pale Vision Potion
 					},
 				}),
 				o(233593, {	-- Polished Saberon Skull

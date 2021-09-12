@@ -37,7 +37,6 @@ _.Zones =
 				q(37839, {	-- Light Be With You
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(38273),	-- Spirits of the Bleeding Hollow
 				q(34366),	-- Tanaan 01: Front of the Portal
 				q(40237),	-- Work Work Stoppage
 				q(38989, {	-- Your Orders, General?
@@ -234,14 +233,20 @@ _.Zones =
 						}),
 					},
 				}),
-				q(39441, {	-- Bleeding the Bleeding Hollow [Bonus Objective]
+				q(38871,  {	-- Bleeding the Bleeding Hollow [Bonus Objective]
 					["sourceQuests"] = { 38453 },	-- Garrison Campaign: The Bane of the Bleeding Hollow
+					--["isDaily"] = true, Maybe not according to wowhead comments
+					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
+					["races"] = HORDE_ONLY,
+				}),
+				q(39441, {	-- Bleeding the Bleeding Hollow [Bonus Objective]
+					["sourceQuests"] = { 38560 },	-- Garrison Campaign: The Bane of the Bleeding Hollow
 					["isDaily"] = true,
 					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38045, {	-- Bleeding the Bleeding Hollow
-					["sourceQuest"] = 38453,
+					["sourceQuest"] = 38560,
 					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -476,6 +481,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 37935,
 					["isBreadcrumb"] = true,	-- The Assault Base
+				}),
+				q(38273, {	-- Spirits of the Bleeding Hollow
+					["provider"] = { "o", 240547 },	-- Orc Skull
+					["coord"] = { 32.5, 37.5, TANAAN_JUNGLE },
+					["sourceQuest"] = 38271,	-- Following the Bloody Path
 				}),
 				q(38445, {	-- The Assault Base
 					["provider"] = { "n", 91923 },	-- Exarch Naielle

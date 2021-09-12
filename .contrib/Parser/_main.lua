@@ -251,33 +251,24 @@ KORTHIA = 1961;
 TAZAVESH_THE_VEILED_MARKET_WORLD = 2016;
 
 -- Holiday Filters
--- TODO: Match Classic. (Left = Original, Right = Classic)
--- That means find all the numerical values and update them to use constants and then sync them.
-BREWFEST = 24;--1000;
-CHILDRENS_WEEK = 30;--1001;
+BREWFEST = 1000;
+CHILDRENS_WEEK = 1001;
 DARKMOON_FAIRE = 1012;
-DAY_OF_THE_DEAD = 27;--1002;
-FEAST_OF_WINTER_VEIL = 29;--1003;
-HALLOWS_END = 26;--1004;
-HARVEST_FESTIVAL = 25;--1005;
-LOVE_IS_IN_THE_AIR = 18;--1006;
-LUNAR_FESTIVAL = 17;--1007;
-MICRO_HOLIDAY = 22;--1014;
-MIDSUMMER_FIRE_FESTIVAL = 21;--1008;
+DAY_OF_THE_DEAD = 1002;
+FEAST_OF_WINTER_VEIL = 1003;
+HALLOWS_END = 1004;
+HARVEST_FESTIVAL = 1005;
+LOVE_IS_IN_THE_AIR = 1006;
+LUNAR_FESTIVAL = 1007;
+MICRO_HOLIDAY = 1014;
+MIDSUMMER_FIRE_FESTIVAL = 1008;
 NEW_YEARS_CELEBRATION = 1009;
-NOBLEGARDEN = 19;--1010;
-PILGRIMS_BOUNTY = 28;--1013;
-PIRATES_DAY = 23;--1011;
-STRANGLETHORN_FISHING_EXTRAVAGANZA = 30;--1015;
-TIMEWALKING = 42;--1016;
-WOW_ANNIVERSARY = 36;--1017;
-
--- TODO: Deprecate these.
-HOLIDAY_DAY_OF_THE_DEAD = 27;
-HOLIDAY_FEAST_OF_WINTER_VEIL = 29;
-HOLIDAY_LOVEINTHEAIR = 18;
-HOLIDAY_NOBLEGARDEN = 19;
-HOLIDAY_PILGRIMS_BOUNTY = 28;
+NOBLEGARDEN = 1010;
+PILGRIMS_BOUNTY = 1013;
+PIRATES_DAY = 1011;
+STRANGLETHORN_FISHING_EXTRAVAGANZA = 1015;
+TIMEWALKING = 1016;
+WOW_ANNIVERSARY = 1017;
 
 -- Helper Tables
 local DifficultyDB = {
@@ -294,8 +285,8 @@ local DifficultyDB = {
 	[17] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 4 },
 	[18] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },	-- Event
 	[23] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 23 },
-	[24] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = 42 },
-	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = 42 },
+	[24] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = TIMEWALKING },
+	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = TIMEWALKING },
 };
 
 -- Races
@@ -419,6 +410,7 @@ TREASURES = -212;
 VENDORS = -2;
 WORLD_QUESTS = -34;
 ZONEDROPS = 0;
+FACTION_HEADER_NEUTRAL = -9912;
 FACTION_HEADER_ALLIANCE = -9914;
 FACTION_HEADER_HORDE = -9913;
 
@@ -459,6 +451,7 @@ REMOVED_FROM_GAME = 2;
 BLIZZARD_BALANCE = 35;
 
 -- Classic Phases
+-- #if ANYCLASSIC
 PHASE_ONE = 11;
 PHASE_ONE_DIREMAUL = 1101;
 PHASE_TWO = 12;
@@ -513,6 +506,9 @@ BFA_PHASE_ONE = 80;
 
 -- Shadowlands Phases
 SHADOWLANDS_PHASE_ONE = 90;
+
+-- Done defining Phases for Classic
+-- #endif
 
 ItemClassInfo = {
 	{
@@ -926,7 +922,12 @@ merge = function(...)
 	end
 	return t;
 end
-
+unpack = function(t, i)
+  i = i or 1
+  if t[i] ~= nil then
+	return t[i], unpack(t, i + 1)
+  end
+end
 
 -- Asset Path Helper Functions
 asset = function(path)

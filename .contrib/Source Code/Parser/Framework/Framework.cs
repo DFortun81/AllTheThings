@@ -33,6 +33,7 @@ namespace ATT
             { "CATA", 40 },     // CATA_PHASE_ONE
             { "MOP", 50 },      // MOP_PHASE_ONE
             { "WOD", 60 },      // WOD_PHASE_ONE
+            { "TRANSMOG", 69 }, // Transmog came out sometime after WOD.
             { "LEGION", 70 },   // LEGION_PHASE_ONE
             { "BFA", 80 },      // BFA_PHASE_ONE
             { "SHADOWLANDS", 90 },      // SHADOWLANDS_PHASE_ONE
@@ -51,6 +52,7 @@ namespace ATT
             { "CATA", 49 },     // CATA_PHASE_SIX?
             { "MOP", 59 },      // MOP_PHASE_SIX?
             { "WOD", 69 },      // WOD_PHASE_SIX?
+            { "TRANSMOG", 69 }, // Transmog came out sometime after WOD.
             { "LEGION", 79 },   // LEGION_PHASE_SIX?
             { "BFA", 89 },      // BFA_PHASE_SIX?
             { "SHADOWLANDS", 99 },      // SHADOWLANDS_PHASE_SIX?
@@ -92,7 +94,7 @@ namespace ATT
             { "WOD", new int[] { 6, 2, 4, 21345 } },
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
             { "BFA", new int[] { 8, 3, 7, 35249 } },
-            { "SHADOWLANDS", new int[] { 9, 1, 0, 40000 } },
+            { "SHADOWLANDS", new int[] { 9, 1, 0, 40120 } },
         };
 
         public static readonly string CURRENT_RELEASE_PHASE_NAME =

@@ -13,9 +13,9 @@ _.WorldEvents =
 		},
 		["g"] = {
 			ach(11848, {	-- 13th Anniversary
-				["u"] = 36,	-- WoW Anniversary [Removed]
+				["u"] = REMOVED_FROM_GAME,
 			}),
-			n(-297, bubbleDown({ ["u"] = 36, }, {	-- Mailbox
+			n(-297, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- Mailbox
 				i(147876, {	-- Anniversary Gift
 					i(147877),	-- Celebration Package
 					i(147881, {	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
@@ -38,7 +38,7 @@ _.WorldEvents =
 					}),
 				}),
 			})),
-			n(QUESTS, bubbleDown({ ["u"] = 31, }, {
+			n(QUESTS, bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {
 				q(43461, {	-- A Time to Reflect [Horde]
 					["provider"] = { "n", 110035 },		-- Historian Jupa
 					["isDaily"] = true,
@@ -88,11 +88,11 @@ _.WorldEvents =
 					["races"] = ALLIANCE_ONLY,
 				}),
 			})),
-			n(VENDORS, bubbleDown({ ["u"] = 31, }, {
+			n(VENDORS, bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {
 				n(110035, {	-- Historian Jupa [Horde]
 					["coord"] = { 36.6, 74.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {	-- WoW Anniversary
+					["g"] = {
 						i(147885, {	-- Bronze-Tinted Sunglasses
 							["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 						}),
@@ -110,7 +110,7 @@ _.WorldEvents =
 				n(110034, {	-- Historian Llore [Alliance]
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 84.6, 25.0, STORMWIND_CITY },
-					["g"] = {	-- WoW Anniversary
+					["g"] = {
 						i(147885, {	-- Bronze-Tinted Sunglasses
 							["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 						}),
@@ -127,8 +127,8 @@ _.WorldEvents =
 				}),
 			})),
 			n(-7, {	-- World Bosses
-				["u"] = 31, -- WoW Anniversary Filter
-				["g"] = bubbleDown({ ["u"] = 31, }, {	-- WoW Anniversary
+				["u"] = WOW_ANNIVERSARY,
+				["g"] = bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {
 					n(121820, {	-- Azuregos [Azshara - Always Up]
 						["isRaid"] = true,
 						["questID"] = 47462,

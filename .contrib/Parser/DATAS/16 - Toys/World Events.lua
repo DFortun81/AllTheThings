@@ -104,15 +104,15 @@ _.Toys =
 			}),
 		}),
 		holiday(235445, {	-- Children's Week
-			["u"] = 20,
-			["g"] = sharedData({["u"] = 20,}, {
+			["u"] = CHILDRENS_WEEK,
+			["g"] = sharedData({["u"] = CHILDRENS_WEEK,}, {
 				i(69895),	-- Green Balloon
 				i(69896),	-- Yellow Balloon
 			}),
 		}),
 		holiday(307365, {	-- Day of the Dead
-			["u"] = HOLIDAY_DAY_OF_THE_DEAD,
-			["g"] = sharedData({["u"] = HOLIDAY_DAY_OF_THE_DEAD,}, {
+			["u"] = DAY_OF_THE_DEAD,
+			["g"] = sharedData({["u"] = DAY_OF_THE_DEAD,}, {
 				i(116856),	-- "Blooming Rose" Contender's Costume
 				i(116888),	-- "Night Demon" Contender's Costume
 				i(116889),	-- "Purple Phantom" Contender's Costume
@@ -121,8 +121,8 @@ _.Toys =
 			}),
 		}),
 		holiday(235485, {	-- Feast of Winter Veil
-			["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
-			["g"] = sharedData({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,}, {
+			["u"] = FEAST_OF_WINTER_VEIL,
+			["g"] = sharedData({["u"] = FEAST_OF_WINTER_VEIL,}, {
 				i(54343),	-- Blue Crashin' Thrashin' Racer Controller
 				i(172223),	-- Crashin' Thrashin' Battleship [A]
 				i(108632, {	-- Crashin' Thrashin' Flamer Controller
@@ -170,8 +170,8 @@ _.Toys =
 			}),
 		}),
 		holiday(235462, {	-- Hallow's End
-			["u"] = 26,
-			["g"] = sharedData({["u"] = 26,}, {
+			["u"] = HALLOWS_END,
+			["g"] = sharedData({["u"] = HALLOWS_END,}, {
 				i(128807),	-- Coin of Many Faces
 				i(163045),	-- Headless Horseman's Hearthstone
 				i(151271),	-- Horse Head Costume
@@ -181,8 +181,8 @@ _.Toys =
 			}),
 		}),
 		holiday(235468, {	-- Love is in the Air
-			["u"] = HOLIDAY_LOVEINTHEAIR,
-			["g"] = sharedData({["u"] = HOLIDAY_LOVEINTHEAIR,}, {
+			["u"] = LOVE_IS_IN_THE_AIR,
+			["g"] = sharedData({["u"] = LOVE_IS_IN_THE_AIR,}, {
 				i(142341),	-- Love Boat
 				i(165670),	-- Peddlefeet's Lovely Hearthstone
 				i(34480),	-- Romantic Picnic Basket
@@ -192,8 +192,8 @@ _.Toys =
 			}),
 		}),
 		holiday(235471, {	-- Lunar Festival
-			["u"] = 17,
-			["g"] = sharedData({["u"] = 17,}, {
+			["u"] = LUNAR_FESTIVAL,
+			["g"] = sharedData({["u"] = LUNAR_FESTIVAL,}, {
 				i(165672),	-- Blue Dragon Body Costume
 				i(165671),	-- Blue Dragon Head Costume
 				i(165673),	-- Blue Dragon Tail Costume
@@ -217,20 +217,20 @@ _.Toys =
 			i(141649),	-- Set of Matches
 		})),
 		holiday(235477, {	-- Noblegarden
-			["u"] = HOLIDAY_NOBLEGARDEN,
-			["g"] = sharedData({["u"] = HOLIDAY_NOBLEGARDEN,}, {
+			["u"] = NOBLEGARDEN,
+			["g"] = sharedData({["u"] = NOBLEGARDEN,}, {
 				i(165802),	-- Noble Gardener's Hearthstone
 			}),
 		}),
 		holiday(235466, {	-- Pilgrim's Bounty
-			["u"] = HOLIDAY_PILGRIMS_BOUNTY,
-			["g"] = sharedData({["u"] = HOLIDAY_PILGRIMS_BOUNTY,}, {
+			["u"] = PILGRIMS_BOUNTY,
+			["g"] = sharedData({["u"] = PILGRIMS_BOUNTY,}, {
 				i(116400),	-- Silver-Plated Turkey Shooter
 			}),
 		}),
 		holiday(235481, {	-- Pirates' Day
-			["u"] = 23,
-			["g"] = sharedData({["u"] = 23,}, {
+			["u"] = PIRATES_DAY,
+			["g"] = sharedData({["u"] = PIRATES_DAY,}, {
 				i(150547),	-- Jolly Roger
 				i(138415),	-- Slightly-Chewed Insult Book
 			}),

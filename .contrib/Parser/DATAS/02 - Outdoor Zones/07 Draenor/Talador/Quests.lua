@@ -1886,4 +1886,5 @@ _.Zones =
 };
 _.HiddenQuestTriggers = {
 	q(34199),	-- Vignette: Anchorite's Sojourn
+	q(34113),	-- Vignette: Guy 2 Found (Deathweb Hallow)
 };

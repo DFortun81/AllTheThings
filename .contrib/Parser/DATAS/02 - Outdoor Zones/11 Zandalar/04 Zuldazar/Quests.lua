@@ -2050,3 +2050,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(54738),	-- Loa Changer Jani to Paku
+};

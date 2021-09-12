@@ -22,6 +22,22 @@ _.Zones =
 					},
 				}),
 			}),
+			prof(LEATHERWORKING, {
+				q(56565, {	-- Hanging by a Thread (A)
+					["provider"] = { "i", 169767 },	-- Deteriorating Cragscales
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						recipe(302888),	-- Skinning Technique: Cragscale (Rank 3)
+					},
+				}),
+				q(56566, {	-- Hanging by a Thread (H)
+					["provider"] = { "i", 169779 },	-- Deteriorating Cragscales
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						recipe(302888),	-- Skinning Technique: Cragscale (Rank 3)
+					},
+				}),
+			}),
 			prof(MINING, {
 				q(56103, {	-- Ounces of Osmenite (A)
 					["provider"] = { "i", 168939 },	-- Osmenite Shards

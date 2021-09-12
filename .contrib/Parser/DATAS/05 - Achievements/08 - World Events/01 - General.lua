@@ -22,9 +22,9 @@ _.Achievements =
 				crit(4),				-- Have Keg, Will Travel
 				crit(5),				-- Does Your Wolpertinger Linger?
 			})),
-			un(HOLIDAY_DAY_OF_THE_DEAD, ach(9428)),	-- Calavera (Day of the Dead)
-			un(HOLIDAY_DAY_OF_THE_DEAD, ach(3456)),	-- Dead Man's Party (Day of the Dead)
-			un(HOLIDAY_LOVEINTHEAIR, ach(1693, {		-- Fool For Love (Love is in the Air)
+			un(DAY_OF_THE_DEAD, ach(9428)),	-- Calavera
+			un(DAY_OF_THE_DEAD, ach(3456)),	-- Dead Man's Party
+			un(LOVE_IS_IN_THE_AIR, ach(1693, {		-- Fool For Love
 				title(103),				-- the Love Fool
 				crit(1),				-- Charming
 				crit(2),				-- Shafted!
@@ -39,7 +39,7 @@ _.Achievements =
 				crit(11),				-- My Love is Like a Red, Red Rose
 				crit(12),				-- I Pitied The Fool
 			})),
-			un(20, ach(1793, {		-- For the Children (Children's WeeK)
+			un(CHILDRENS_WEEK, ach(1793, {		-- For the Children
 				title(104, {			-- Matron
 					["description"] = "Must login with a female character.",
 				}),
@@ -53,7 +53,7 @@ _.Achievements =
 				crit(5),				-- School of Hard Knocks
 				crit(6),				-- Hail To The King, Baby
 			})),
-			un(26, ach(1656, {		-- Hallowed Be Thy Name
+			un(HALLOWS_END, ach(1656, {		-- Hallowed Be Thy Name
 				title(92),				-- the Hallowed
 				crit(1),				-- Trick or Treat!
 				crit(2),				-- Out With It
@@ -67,7 +67,7 @@ _.Achievements =
 				crit(10),				-- Sinister Calling
 				crit(11),				-- Tricks and Treats of Azeroth
 			})),
-			un(HOLIDAY_FEAST_OF_WINTER_VEIL, ach(1691, {	-- Merrymaker (Winter Veil)
+			un(FEAST_OF_WINTER_VEIL, ach(1691, {	-- Merrymaker
 				title(102),				-- Merrymaker
 				crit(1),				-- On Metzen!
 				crit(2),				-- With a Little Helper from My Friends
@@ -81,7 +81,7 @@ _.Achievements =
 				crit(10),				-- He Knows If You've Been Naughty
 				crit(11),				-- A Frosty Shake
 			})),
-			un(HOLIDAY_NOBLEGARDEN, ach(2798, {		-- Noble Gardener (Noble Garden)
+			un(NOBLEGARDEN, ach(2798, {		-- Noble Gardener
 				title(122),				-- the Noble
 				crit(1),				-- I Found One!
 				crit(2),				-- Chocoholic
@@ -92,7 +92,7 @@ _.Achievements =
 				crit(7),				-- Noble Garden
 				crit(8),				-- Shake Your Bunny-Maker
 			})),
-			un(HOLIDAY_PILGRIMS_BOUNTY, ach(3478, {		-- Pilgrim (Pilgrim's Bounty)
+			un(PILGRIMS_BOUNTY, ach(3478, {		-- Pilgrim
 				title(133),				-- the Pilgrim
 				i(44810),				-- Turkey Cage
 				crit(1),				-- "FOOD FIGHT!"
@@ -105,8 +105,8 @@ _.Achievements =
 				crit(8),				-- The Turkinator
 				crit(9),				-- Turkey Lurkey
 			})),
-			un(23, ach(3457)),		-- The Captain's Booty (Pirates' Day)
-			un(21, a(ach(1038, {	-- The Flame Warden (Alliance) (Midsummer)
+			un(PIRATES_DAY, ach(3457)),		-- The Captain's Booty
+			un(MIDSUMMER_FIRE_FESTIVAL, a(ach(1038, {	-- The Flame Warden (Alliance)
 				title(44),				-- Flame Warden
 				crit(1),				-- The Fires of Azeroth
 				crit(2),				-- Desecration of the Horde/Alliance
@@ -115,7 +115,7 @@ _.Achievements =
 				crit(5),				-- King of the Fire Festival
 				crit(6),				-- Torch Juggler
 			}))),
-			un(21, h(ach(1039, {	-- The Flame Keeper (Horde) (Midsummer)
+			un(MIDSUMMER_FIRE_FESTIVAL, h(ach(1039, {	-- The Flame Keeper (Horde)
 				title(45),				-- Flame Keeper
 				crit(1),				-- The Fires of Azeroth
 				crit(2),				-- Desecration of the Horde/Alliance
@@ -124,7 +124,7 @@ _.Achievements =
 				crit(5),				-- King of the Fire Festival
 				crit(6),				-- Torch Juggler
 			}))),
-			un(17, ach(913, {		-- To Honor One's Elders (Lunar Festival)
+			un(LUNAR_FESTIVAL, ach(913, {		-- To Honor One's Elders
 				title(43),				-- Elder
 				crit(1),				-- Elders of Cataclysm
 				crit(2),				-- Elders of Eastern Kingdoms
@@ -139,8 +139,8 @@ _.Achievements =
 				crit(11),				-- Frenzied Firecracker
 				crit(12),				-- Elune's Blessing
 			})),
-			un(HOLIDAY_DAY_OF_THE_DEAD, ach(9426)),	-- To The Afterlife (Day of the Dead)
-			un(HOLIDAY_DAY_OF_THE_DEAD, ach(9427)),	-- Vientos! (Day of the Dead)
+			un(DAY_OF_THE_DEAD, ach(9426)),	-- To The Afterlife
+			un(DAY_OF_THE_DEAD, ach(9427)),	-- Vientos!
 			ach(2144, {				-- What a Long, Strange Trip It's Been
 				i(44177),				-- Reins of the Violet Proto-Drake
 				crit(1),				-- To Honor One's Elders

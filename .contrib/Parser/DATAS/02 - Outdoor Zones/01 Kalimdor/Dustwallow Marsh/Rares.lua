@@ -50,7 +50,7 @@ _.Zones =
 					},
 				}),
 				n(15552,  {	-- Dr. Weavil
-					["coord"] = { 76.0, 18.6, DUSTWALLOW_MARSH },
+					["coord"] = { 77.6, 17.2, DUSTWALLOW_MARSH },
 					["lvl"] = 110,
 					["g"] = {
 						i(142265),	-- Big Red Raygun

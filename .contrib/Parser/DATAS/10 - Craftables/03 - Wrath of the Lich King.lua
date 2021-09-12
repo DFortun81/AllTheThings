@@ -437,7 +437,6 @@ _.Craftables =
 				i(43255),	-- Seafoam Gauntlets
 				i(43484),	-- Trollwoven Girdle
 				i(43481),	-- Trollwoven Spaulders
-				i(29970),	-- Wildfeather Leggings
 				i(43257),	-- Wildscale Breastplate
 				i(44930),	-- Windripper Boots
 				i(44931),	-- Windripper Leggings

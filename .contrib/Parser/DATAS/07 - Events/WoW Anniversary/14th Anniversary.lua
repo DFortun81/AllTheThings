@@ -13,9 +13,9 @@ _.WorldEvents =
 		},
 		["g"] = {
 			ach(12827, {	-- 14th Anniversary
-				["u"] = 36,	-- WoW Anniversary [Removed]
+				["u"] = REMOVED_FROM_GAME,
 			}),
-			n(-297, bubbleDown({ ["u"] = 36, }, {	-- Mailbox
+			n(-297, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- Mailbox
 				i(162637, {	-- Anniversary Gift
 					i(162636),	-- Celebration Package
 					i(147881, {	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
@@ -28,7 +28,7 @@ _.WorldEvents =
 					}),
 				}),
 			})),
-			n(QUESTS, bubbleDown({ ["u"] = 31, }, {
+			n(QUESTS, bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {
 				q(43461, {	-- A Time to Reflect [Horde]
 					["provider"] = { "n", 110035 },		-- Historian Jupa
 					["isDaily"] = true,
@@ -78,7 +78,7 @@ _.WorldEvents =
 					["races"] = ALLIANCE_ONLY,
 				}),
 			})),
-			n(VENDORS, bubbleDown({ ["u"] = 31, }, {
+			n(VENDORS, bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {
 				n(110035, {	-- Historian Jupa [Horde]
 					["coord"] = { 36.6, 74.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
