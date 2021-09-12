@@ -3141,13 +3141,30 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
---[[
+-- TODO:
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
-
+	-- Seasonal Filters
+		[1000] = {4, "|CFF00FFDEThis requires the Brewfest Holiday to be Active.|r", "美酒节"},
+		[1001] = {4, "|CFF00FFDEThis requires the Children's Week Holiday to be Active.|r", "儿童周"},
+		[1012] = {4, "|CFF00FFDEThis requires the Darkmoon Faire Holiday to be Active.|r", "暗月马戏团" },
+		[1002] = {4, "|CFF00FFDEThis requires the Day of the Dead Holiday to be Active.|r", "悼念日"},
+		[1003] = {4, "|CFF00FFDEThis requires the Feast of Winter Veil Holiday to be Active.|r", "冬幕节"},
+		[1009] = {4, "|CFF00FFDEThis requires the Fireworks Celebration Holiday to be Active.|r", "烟花庆典" },
+		[1004] = {4, "|CFF00FFDEThis requires the Hallow's End Holiday to be Active.|r", "万圣节"},
+		[1005] = {4, "|CFF00FFDEThis requires the Harvest Festival Holiday to be Active.|r", "收获节"},
+		[1006] = {4, "|CFF00FFDEThis requires the Love is in the Air Holiday to be Active.|r", "情人节"},
+		[1007] = {4, "|CFF00FFDEThis requires the Lunar Festival Holiday to be Active.|r", "春节"},
+		[1014] = {4, "|CFF00FFDEThis requires a Specific Micro Holiday to be Active.|r", "Micro Holiday"},
+		[1008] = {4, "|CFF00FFDEThis requires the Midsummer Fire Festival Holiday to be Active.|r", "仲夏火焰节"},
+		[1010] = {4, "|CFF00FFDEThis requires the Noblegarden Holiday to be Active.|r", "复活节"},
+		[1013] = {4, "|CFF00FFDEThis requires the Pilgrim's Bounty Holiday to be Active.|r", "感恩节"},
+		[1011] = {4, "|CFF00FFDEThis requires the Pirates' Day Holiday to be Active.|r", "海盗日"},
+		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be active.|r", "荆棘谷钓鱼大赛"},
+		[1016] = {4, "|CFFFF0000This requires the Timewalking Event to be active.\nOnly dungeon content released during the active Timewalking expansion will be available.|r", "时间漫游"},
+		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary Event to be active.|r", "魔兽世界周年庆典"},
 })
 do a[key] = value; end
-]]
 
 -- TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;

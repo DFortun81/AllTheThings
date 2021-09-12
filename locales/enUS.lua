@@ -2550,19 +2550,19 @@ app.L = {
 		[1012] = {4, "|CFF00FFDEThis requires the Darkmoon Faire Holiday to be Active.|r", "Darkmoon Faire" },
 		[1002] = {4, "|CFF00FFDEThis requires the Day of the Dead Holiday to be Active.|r", "Day of the Dead"},
 		[1003] = {4, "|CFF00FFDEThis requires the Feast of Winter Veil Holiday to be Active.|r", "Feast of Winter Veil"},
+		[1009] = {4, "|CFF00FFDEThis requires the Fireworks Celebration Holiday to be Active.|r", "Fireworks Celebration" },
 		[1004] = {4, "|CFF00FFDEThis requires the Hallow's End Holiday to be Active.|r", "Hallow's End"},
 		[1005] = {4, "|CFF00FFDEThis requires the Harvest Festival Holiday to be Active.|r", "Harvest Festival"},
 		[1006] = {4, "|CFF00FFDEThis requires the Love is in the Air Holiday to be Active.|r", "Love is in the Air"},
 		[1007] = {4, "|CFF00FFDEThis requires the Lunar Festival Holiday to be Active.|r", "Lunar Festival"},
 		[1014] = {4, "|CFF00FFDEThis requires a Specific Micro Holiday to be Active.|r", "Micro Holiday"},
 		[1008] = {4, "|CFF00FFDEThis requires the Midsummer Fire Festival Holiday to be Active.|r", "Midsummer Fire Festival"},
-		[1009] = {4, "|CFF00FFDEThis requires the New Years Celebration Holiday to be Active.|r", "New Years Celebration" },
 		[1010] = {4, "|CFF00FFDEThis requires the Noblegarden Holiday to be Active.|r", "Noblegarden"},
 		[1013] = {4, "|CFF00FFDEThis requires the Pilgrim's Bounty Holiday to be Active.|r", "Pilgrim's Bounty"},
-		[1011] = {4, "|CFF00FFDEThis requires the Pirate's Day Holiday to be Active.|r", "Pirate's Day"},
+		[1011] = {4, "|CFF00FFDEThis requires the Pirates' Day Holiday to be Active.|r", "Pirates' Day"},
 		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be active.|r", "Stranglethorn Fishing Extravaganza"},
 		[1016] = {4, "|CFFFF0000This requires the Timewalking Event to be active.\nOnly dungeon content released during the active Timewalking expansion will be available.|r", "Timewalking"},
-		[1017] = {4, "|CFF00FFDEThis requires the WoW Anniversary Event to be active.|r", "WoW Anniversary"},
+		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary Event to be active.|r", "WoW's Anniversary"},
 	};
 
 	["CUSTOM_COLLECTS_REASONS"] = {

@@ -3096,13 +3096,30 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
---[[
+-- TODO:
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
-
+	-- Seasonal Filters
+		[1000] = {4, "|CFF00FFDEThis requires the Brewfest Holiday to be Active.|r", "Fête des Brasseurs"},
+		[1001] = {4, "|CFF00FFDEThis requires the Children's Week Holiday to be Active.|r", "Semaine des enfants"},
+		[1012] = {4, "|CFF00FFDEThis requires the Darkmoon Faire Holiday to be Active.|r", "Foire de Sombrelune" },
+		[1002] = {4, "|CFF00FFDEThis requires the Day of the Dead Holiday to be Active.|r", "Jour des morts"},
+		[1003] = {4, "|CFF00FFDEThis requires the Feast of Winter Veil Holiday to be Active.|r", "Voile d'hiver"},
+		[1009] = {4, "|CFF00FFDEThis requires the Fireworks Celebration Holiday to be Active.|r", "Fêtes des artifices" },
+		[1004] = {4, "|CFF00FFDEThis requires the Hallow's End Holiday to be Active.|r", "Sanssaint"},
+		[1005] = {4, "|CFF00FFDEThis requires the Harvest Festival Holiday to be Active.|r", "Fête des moissons"},
+		[1006] = {4, "|CFF00FFDEThis requires the Love is in the Air Holiday to be Active.|r", "De l'amour dans l'air"},
+		[1007] = {4, "|CFF00FFDEThis requires the Lunar Festival Holiday to be Active.|r", "Fête lunaire"},
+		[1014] = {4, "|CFF00FFDEThis requires a Specific Micro Holiday to be Active.|r", "Micro Holiday"},
+		[1008] = {4, "|CFF00FFDEThis requires the Midsummer Fire Festival Holiday to be Active.|r", "Fête du Feu du solstice d'été"},
+		[1010] = {4, "|CFF00FFDEThis requires the Noblegarden Holiday to be Active.|r", "Le Jardin des nobles"},
+		[1013] = {4, "|CFF00FFDEThis requires the Pilgrim's Bounty Holiday to be Active.|r", "Les Bienfaits du pèlerin"},
+		[1011] = {4, "|CFF00FFDEThis requires the Pirates' Day Holiday to be Active.|r", "Jour des pirates"},
+		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be active.|r", "Concours de pêche de Strangleronce"},
+		[1016] = {4, "|CFFFF0000This requires the Timewalking Event to be active.\nOnly dungeon content released during the active Timewalking expansion will be available.|r", "Marcheurs du temps"},
+		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary Event to be active.|r", "Anniversaire de WoW"},
 })
 do a[key] = value; end
-]]
 
 -- TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
