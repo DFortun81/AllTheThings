@@ -3050,7 +3050,7 @@ for key,value in pairs({
 	[369339] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
 	[369340] = "Scatola di Reliquie di Korthia",	-- Korthian Relic Box
 	[369341] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
-	--TODO: [369432] = "Misplaced Venthyr Tome",	-- Misplaced Venthyr Tome
+	[369432] = "Tomo dei Venthyr Smarrito",	-- Misplaced Venthyr Tome
 	[369437] = "Cassa Vincolata alla Fenditura",	-- Riftbound Cache
 	[369438] = "Cassa Vincolata alla Fenditura",	-- Riftbound Cache
 	[369439] = "Cassa Vincolata alla Fenditura",	-- Riftbound Cache

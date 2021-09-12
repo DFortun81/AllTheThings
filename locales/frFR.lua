@@ -3050,7 +3050,7 @@ for key,value in pairs({
 	[369339] = "Cache antrelige",	-- Mawsworn Cache
 	[369340] = "Boîte à reliques korthienne",	-- Korthian Relic Box
 	[369341] = "Cache antrelige",	-- Mawsworn Cache
-	--TODO: [369432] = "Misplaced Venthyr Tome",	-- Misplaced Venthyr Tome
+	[369432] = "Tome venthyr égaré",	-- Misplaced Venthyr Tome
 	[369437] = "Cache liée à la faille",	-- Riftbound Cache
 	[369438] = "Cache liée à la faille",	-- Riftbound Cache
 	[369439] = "Cache liée à la faille",	-- Riftbound Cache
