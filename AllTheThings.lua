@@ -7096,7 +7096,7 @@ local fields = {
 	end,
 	["u"] = function(t)
 		if t.difficultyID == 24 or t.difficultyID == 33 then
-			return 42;
+			return 1016;
 		end
 	end,
 	["description"] = function(t)
