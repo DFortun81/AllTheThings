@@ -3050,7 +3050,7 @@ for key,value in pairs({
 	[369339] = "나락살이 보관함",	-- Mawsworn Cache
 	[369340] = "코르시아 유물 상자",	-- Korthian Relic Box
 	[369341] = "나락살이 보관함",	-- Mawsworn Cache
-	--TODO: [369432] = "Misplaced Venthyr Tome",	-- Misplaced Venthyr Tome
+	[369432] = "잘못 놓인 벤티르 고서",	-- Misplaced Venthyr Tome
 	[369437] = "균열결속 보관함",	-- Riftbound Cache
 	[369438] = "균열결속 보관함",	-- Riftbound Cache
 	[369439] = "균열결속 보관함",	-- Riftbound Cache

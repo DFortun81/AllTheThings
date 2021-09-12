@@ -3051,7 +3051,7 @@ for key,value in pairs({
 	[369339] = "Alijo jurafauces",	-- Mawsworn Cache
 	[369340] = "Caja de reliquias korthiana",	-- Korthian Relic Box
 	[369341] = "Alijo jurafauces",	-- Mawsworn Cache
-	--TODO: [369432] = "Misplaced Venthyr Tome",	-- Misplaced Venthyr Tome
+	[369432] = "Tomo venthyr extraviado",	-- Misplaced Venthyr Tome
 	[369437] = "Alijo vinculafalla",	-- Riftbound Cache
 	[369438] = "Alijo vinculafalla",	-- Riftbound Cache
 	[369439] = "Alijo vinculafalla",	-- Riftbound Cache

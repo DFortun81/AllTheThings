@@ -3051,7 +3051,7 @@ for key,value in pairs({
 	[369339] = "Schlundgebundene Truhe",	-- Mawsworn Cache
 	[369340] = "Korthianische Reliktschatulle",	-- Korthian Relic Box
 	[369341] = "Schlundgebundene Truhe",	-- Mawsworn Cache
-	--TODO: [369432] = "Misplaced Venthyr Tome",	-- Misplaced Venthyr Tome
+	[369432] = "Verlegter Venthyrfoliant",	-- Misplaced Venthyr Tome
 	[369437] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369438] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369439] = "Rissgebundene Truhe",	-- Riftbound Cache

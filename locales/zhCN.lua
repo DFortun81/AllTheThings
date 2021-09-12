@@ -2478,7 +2478,7 @@ for key, value in pairs({
 	[273854] = "行囊",	-- Backpack
 	[276187] = "祖恩基",	-- Junji
 	--TODO: [276223] = "Eredar Treasure Cache",	-- Eredar Treasure Cache
-	--TODO: [276224] = "Chest of Ill-Gotten Gains",	-- Chest of Ill-Gotten Gains
+	[276224] = "来路不明的箱子",	-- Chest of Ill-Gotten Gains
 	--TODO: [276225] = "Student's Surprising Surplus",	-- Student's Surprising Surplus
 	[276226] = "虚空回荡的宝箱",	-- Void-Tinged Chest
 	--TODO: [276227] = "Augari Secret Stash",	-- Augari Secret Stash
@@ -3101,7 +3101,7 @@ for key, value in pairs({
 	[369339] = "渊誓之箱",	-- Mawsworn Cache
 	[369340] = "刻希亚圣物箱",	-- Korthian Relic Box
 	[369341] = "渊誓之箱",	-- Mawsworn Cache
-	--TODO: [369432] = "Misplaced Venthyr Tome",	-- Misplaced Venthyr Tome
+	[369432] = "放错的温西尔书典",	-- Misplaced Venthyr Tome
 	[369437] = "隙缚宝箱",	-- Riftbound Cache
 	[369438] = "隙缚宝箱",	-- Riftbound Cache
 	[369439] = "隙缚宝箱",	-- Riftbound Cache
