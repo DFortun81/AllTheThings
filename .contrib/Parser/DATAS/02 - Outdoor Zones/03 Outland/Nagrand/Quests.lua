@@ -582,13 +582,13 @@ _.Zones =
 					},
 				}),
 				q(9871,  {	-- Murkblood Invaders! (A)
-					["description"] = "This quest is bugged and can only be obtained by low-level characters until it is fixed.",
+					["description"] = "This quest is bugged and can only be obtained by low-level/Chromie Time characters until it is fixed.",
 					["crs"] = { 18238 },	-- Murkblood Invader
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 24559 },	-- Murkblood Invasion Plans (Alliance Version)
 				}),
 				q(9872,  {	-- Murkblood Invaders (H)
-					["description"] = "This quest is bugged and can only be obtained by low-level characters until it is fixed.",
+					["description"] = "This quest is bugged and can only be obtained by low-level/Chromie Time characters until it is fixed.",
 					["crs"] = { 18238 },	-- Murkblood Invader
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 24558 },	-- Murkblood Invasion Plans (Horde Version)
