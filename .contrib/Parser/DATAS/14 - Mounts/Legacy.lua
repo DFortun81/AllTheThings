@@ -72,10 +72,10 @@ _.Mounts =
 			un(REMOVED_FROM_GAME, ach(11061, {	-- Gladiator: Legion Season 4
 				un(REMOVED_FROM_GAME, i(141846)),	-- Ferocious Gladiator's Storm Dragon
 			})),
-			un(REMOVED_FROM_GAME, ach(12010, {	-- Fierce Gladiator: Legion Season 5
+			un(REMOVED_FROM_GAME, ach(12045, {	-- Gladiator: Legion Season 5
 				un(REMOVED_FROM_GAME, i(141847)),	-- Fierce Gladiator's Storm Dragon
 			})),
-			un(REMOVED_FROM_GAME, ach(12134, {	-- Dominant Gladiator: Legion Season 6
+			un(REMOVED_FROM_GAME, ach(12167, {	-- Gladiator: Legion Season 6
 				un(REMOVED_FROM_GAME, i(141848)),	-- Dominant Gladiator's Storm Dragon
 			})),
 			un(REMOVED_FROM_GAME, ach(12168, {	-- Gladiator: Legion Season 7
@@ -92,6 +92,9 @@ _.Mounts =
 			})),
 			un(REMOVED_FROM_GAME, ach(13967, {	-- Gladiator: Battle for Azeroth Season 4
 				un(REMOVED_FROM_GAME, i(156884)),	-- Corrupted Gladiator's Proto-Drake
+			})),
+			un(REMOVED_FROM_GAME, ach(14689, {	-- Gladiator: Shadowlands Season 1
+				un(REMOVED_FROM_GAME, i(183937)),	-- Sinful Gladiator's Soul Eater
 			})),
 		}),
 		un(REMOVED_FROM_GAME, ach(4156, {	-- A Tribute to Immortality
