@@ -5023,7 +5023,10 @@ local function PopulateQuestObject(questObject)
 			-- only merge into the quest object properties from an object in cache with this questID
 			if data.questID == questObject.questID then
 				MergeProperties(questObject, data, true);
-				-- NestObjects(questObject, data.g, true);
+				-- merge in sourced things under this quest object if it is not a raw quest
+				if data.key ~= "questID" then
+					NestObjects(questObject, data.g, true);
+				end
 			-- otherwise this is a non-quest object flagged with this questID so it should be added under the quest
 			else
 				NestObject(questObject, data, true);
