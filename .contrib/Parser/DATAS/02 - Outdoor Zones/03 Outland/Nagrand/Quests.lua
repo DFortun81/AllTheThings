@@ -98,7 +98,7 @@ _.Zones =
 					["sourceQuest"] = 10101,	-- When Spirits Speak
 				}),
 				q(11037, {	-- A Strange Vision
-					["provider"] = { "n", 23268 },	-- Seer Nakha
+					["provider"] = { "n", 23265 },	-- Seer Nakha
 					["coord"] = { 55.6, 37.2, NAGRAND },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -582,13 +582,13 @@ _.Zones =
 					},
 				}),
 				q(9871,  {	-- Murkblood Invaders! (A)
-					["description"] = "Likely only obtainable in Chromie Time",
+					["description"] = "This quest is bugged and can only be obtained by low-level characters until it is fixed.",
 					["crs"] = { 18238 },	-- Murkblood Invader
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 24559 },	-- Murkblood Invasion Plans (Alliance Version)
 				}),
 				q(9872,  {	-- Murkblood Invaders (H)
-					["description"] = "Likely only obtainable in Chromie Time",
+					["description"] = "This quest is bugged and can only be obtained by low-level characters until it is fixed.",
 					["crs"] = { 18238 },	-- Murkblood Invader
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 24558 },	-- Murkblood Invasion Plans (Horde Version)
