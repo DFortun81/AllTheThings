@@ -194,6 +194,11 @@ _.Zones =
 					["provider"] = { "n", 167135 },	-- Mikanikos
 					["coord"] = { 40.7, 55.5, BASTION },
 				}),
+				q(63984, {	-- Coins for the Ferryman
+					["sourceQuests"] = { 63983 },	-- Dead Drop
+					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
+					["coord"] = { 32.5, 32.4, BASTION },
+				}),
 				q(57934, {	-- Combat Drills
 					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
 					["provider"] = { "n", 158765 },	-- Pelodis
@@ -211,6 +216,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 159762 },	-- Eridia
 					["coord"] = { 61.2, 74.3, BASTION },
+				}),
+				q(63983, {	-- Dead Drop
+					["sourceQuests"] = { 63982 },	-- Above My Station
+					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
+					["coord"] = { 32.5, 32.4, BASTION },
 				}),
 				q(63589, {	-- Directing Dedication
 					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
@@ -975,51 +985,56 @@ _.Zones =
 					["provider"] = { "n", 165045 },	-- Kalisthene
 					["coord"] = { 52.8, 47.8, BASTION },
 				}),
-
-				-- Bonus Objectives
-				q(62737, {	-- Aspirant For a Day (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181580),	-- Soulbearer's Gloves [monk]
-					},
-				}),
-				q(59015, {	-- Hostile Recollection
-				}),
-				q(62735, {	-- Hostile Recollection (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["coord"] = { 56.9, 59.9, BASTION },
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-				}),
-				q(62732, {	-- Locus Focus (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["coord"] = { 54.7, 64.1, BASTION },
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181587),	-- Soulbearer's Belt [monk]
-					},
-				}),
-				q(62736, {	-- Maldraxxi Eviction Notice (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181577),	-- Soulbearer's Vest [monk]
-					},
-				}),
-
-				-- PTR - todo: merge with regular quests
-				q(63984, {	-- Coins for the Ferryman
-					["sourceQuests"] = { 63983 },	-- Dead Drop
-					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
-					["coord"] = { 32.5, 32.4, BASTION },
-				}),
-				q(63983, {	-- Dead Drop
-					["sourceQuests"] = { 63982 },	-- Above My Station
-					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
-					["coord"] = { 32.5, 32.4, BASTION },
+				n(BONUS_OBJECTIVES, {
+					q(62737, {	-- Aspirant For a Day (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181571),	-- Spiritmender's Handwraps
+							i(181580),	-- Soulbearer's Gloves
+							i(181596),	-- Forgehand's Handguards
+							i(181608),	-- Shieldguard's Gauntlets
+						},
+					}),
+					q(59015, {	-- Hostile Recollection
+					}),
+					q(62735, {	-- Hostile Recollection (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["coord"] = { 56.9, 59.9, BASTION },
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181703),	-- Skychime Necklace
+						},
+					}),
+					q(62732, {	-- Locus Focus (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["coord"] = { 54.7, 64.1, BASTION },
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181575),	-- Spiritmender's Cord
+							i(181587),	-- Soulbearer's Belt
+							i(181603),	-- Forgehand's Chain
+							i(181612),	-- Shieldguard's Girdle
+						},
+					}),
+					q(62736, {	-- Maldraxxi Eviction Notice (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181569),	-- Spiritmender's Robe
+							i(181577),	-- Soulbearer's Vest
+							i(181591),	-- Forgehand's Hauberk
+							i(181605),	-- Shieldguard's Breastplate
+						},
+					}),
+					q(62705, {	-- Scour the Temple (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["coord"] = { 58.4, 75.2, BASTION },
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181721),	-- Ascendent Valor Signet
+						},
+					}),
 				}),
 			}),
 		}),

@@ -208,7 +208,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				i(181577),	-- Soulbearer's Vest
 			}),
 		}),
 	}),

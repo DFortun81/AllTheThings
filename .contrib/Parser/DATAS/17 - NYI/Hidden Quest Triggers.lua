@@ -3785,7 +3785,7 @@ _.HiddenQuestTriggers = {
 		q(61069),	-- Demi the Relic Hoarder secondary quest
 		q(61082),	-- Echo of Aella kill quest
 		q(62251),	-- Echo of Aella secondary loot quest
-		q(62705),	-- Fallen Acolyte Erisne secondary quest
+		--q(62705),	-- Fallen Acolyte Erisne secondary quest
 		q(57705),	-- Herculon kill quest
 		q(62201),	-- Herculon secondary loot quest
 		q(63421),	-- Nemaeus secondary quest
