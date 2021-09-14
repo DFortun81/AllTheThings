@@ -23,6 +23,7 @@ _.ExpansionFeatures =
 					["crs"] = {
 						151331,	-- Cellblock Sentinel
 						170418,	-- Goxul the Devourer
+						153382,	-- Maw of the Maw
 						159190,	-- Synod
 					},
 				}),
@@ -88,6 +89,7 @@ _.ExpansionFeatures =
 				i(187046, {	-- Pauldrons of Immaculate Laceration
 					["crs"] = {
 						151331,	-- Cellblock Sentinel
+						153382,	-- Maw of the Maw
 						151329,	-- Warden Skoldus
 					},
 				}),

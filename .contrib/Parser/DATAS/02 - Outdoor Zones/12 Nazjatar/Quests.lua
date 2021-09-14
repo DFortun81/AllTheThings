@@ -1234,7 +1234,7 @@ _.Zones =
 				["coord"] = { 31.5, 37.6, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 56156,	-- A Tempered Blade  (maybe add 57041 for selecting Farseer Ori for the day?)
+				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
 			q(55845, {	-- Plans of Attack
@@ -1258,7 +1258,7 @@ _.Zones =
 				["coord"] = { 31.0, 37.7, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 56156,	-- A Tempered Blade  (maybe add 57041 for selecting Farseer Ori for the day?)
+				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
 			q(56158, {	-- Plug the Geysers
@@ -1290,7 +1290,7 @@ _.Zones =
 				["coord"] = { 60.7, 50.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 56156,	-- A Tempered Blade  (maybe add 57041 for selecting Farseer Ori for the day?)
+				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
 			q(55874, {	-- Plug the Geysers
@@ -2588,10 +2588,12 @@ _.HiddenQuestTriggers = {
 	q(57143),	-- looting an Eel Filet
 
 --	RECRUITMENT QUESTS
+	q(57040),	-- recruiting Hunter Akana / Vim Brineheart for the day
 	q(57041),	-- recruiting Farseer Ori / Neri Sharpfin for the day
 	q(57042),	-- recruiting Bladesman Inowari / Poen Gillbrack for the day
 
---	HORRIBLE NAZJATAR BODYGUARD DIALOGUE QUESTS (usually trigger in areas where you're doing the daily quests for the bodyguard)
+--	HORRIBLE NAZJATAR BODYGUARD DIALOGUE QUESTS (usually trigger in areas where you're doing the daily quests for the bodyguard, OR after 1-2 minutes of idling post-pickup)
+--	not sure if Alliance quests are once per account (horde appear to be daily) or if they just don't have HQTs - they have instant dialogue upon quest pickup/turn-in but haven't triggered any HQTs for me at all - the first time i did them on my account would have been looooooooong ago
 --	unknown/probable bodyguard dialogue quests
 	q(56659),	-- not sure precisely what triggered this -- selected Neri as my daily follower, refreshed, walked outside, picked up "Down into Nazjatar," and this popped (probably dialogue quest)
 	q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires (haven't reproduced w/poen, so probably another horde bodyguard)
@@ -2608,6 +2610,7 @@ _.HiddenQuestTriggers = {
 	q(56668),	-- "Kelp grass is one of our most useful resources here in Nazjatar."
 	q(56669),	-- "The tamed snapdragons aren't producing venom anymore. Our only way to harvest it is from the wild packs roaming here."
 	q(56673),	-- "How can a place so horrible still be this beautiful?  One day soon, this chamber will be empty."
+	q(56674),	-- "Someday we won't have to think of ourselves as shackled or Unshackled.  We'll all just... be free."
 	q(56675),	-- "Have you seen the ankoan?  Impressive fighters, but a bit standoffish.  Too bad.  We'd be stronger together!"
 	q(56676),	-- "When it looked like we were done for, Gral found us.  He was angry at the naga, just like we were.  He's a good friend."
 	q(56679),	-- "One day, there will be no more shackles."
@@ -2628,11 +2631,60 @@ _.HiddenQuestTriggers = {
 	q(56690),	-- "It sounds like this Horde you come from has survived some awful things.  Just like us!  Seeing you stick together brings me hope."
 	q(56692),	-- "Mmm, I love eel!"
 	q(56693),	-- "These are lovely.  Sometimes, doing something nice for a friend is what it's all about."
+	q(56694),	-- "Do you think water elementals ever get thirsty?"
 	q(56695),	-- "Dani is great!  She wrangles all of our snapdragons, even the most difficult and ornery ones."
 	q(56696),	-- "Have you ever swooped on a ray?  It's out-ray-geous!"
 	q(56697),	-- "We have so many free people in Newhome that we need to gather more food!  This is great!"
 --	Vim
+	q(56665),	-- "It's brave to sacrifice yourself to save others.  It's craven to sacrifice others to serve yourself.  And Azshara is anything but brave."
+	q(56672),	-- "One person's pride destroyed so many lives."
+	q(56700),	-- "In the deep, dark sea, no one can hear you scream.  Trust me..."
 	q(56701),	-- "Without Neri, we would have scattered with the current.  She brought us together."
+	q(56703),	-- "When the naga were keeping me in chains, I never thought I'd be free again.  Shows what I know, huh?"
 	q(56705),	-- "Azshara and her 'loyal subjects' are the worst kind of monsters.  We have to stop them here and now."
+	q(56706),	-- "Everyone I knew as a sprog is gone.  I've got a new family now, but I'll never forget the one I lost."
+	q(56707),	-- "Those sea giants can tell a mean tale... when you can make sense of what they're saying."
+	q(56708),	-- "You think you know the naga?  Believe me, you've never faced the ones here in Nazjatar."
+	q(56710),	-- "Let me tell ya, sea giants throw the best parties."
 	q(56711),	-- "I won't always be around to protect Newhome.  If these scales can help keep our people safe, then they're worth the effort."
+	q(56712),	-- "These snakes will go to any length to feel powerful... usually by hurting the helpless."
+
+--	LABORATORY OF MARDIVAS
+	q(55202),	-- Elemental Essence Amalgamator Selection	-- Needs confirmation
+	q(55198),	-- Small Water
+	q(56721),	-- Large Water
+	q(56428),	-- Summoned Arcane Amalgamation
+	q(55144),	-- Summoned Dusty Amalgamation
+	q(55205),	-- Summoned Moghiea
+	q(55206),	-- Summoned Ungormath
+	q(55203),	-- Summoned Salgos, the Eternal
+	q(55201),	-- Summoned Spawn of Salgos
+	q(55204),	-- Summoned Xue
+	q(55199),	-- Summoned Zomera
+	q(55200),	-- Summoned Omus
+	q(56476),	-- Killed Arcane Amalgamation
+	q(56892),	-- Killed Arcane Amalgamation, Burning Amalgamation, Herald of Salgos, Moghiea, Salgos the Eternal, Spawn of Salgos, Xue, and Zomera
+	q(56724),	-- Triggered when killing Arcane Amalgamation in mardivas' lab. Probably used to disable something else in the room
+	q(55145),	-- Killed Burning Amalgamation
+	q(56481),	-- Killed Burning Amalgamation
+	q(56725),	-- Killed Burning Amalgamation
+	q(56891),	-- Killed Burning Amalgamation, Moghiea, Salgos the Eternal, Spawn of Salgos, and Xue
+	q(56485),	-- Killed Dusty Amalgamation
+	q(56730),	-- First kill of Dusty Amalgamation
+	q(56488),	-- Killed Herald of Salgos
+	q(56733),	-- First kill of Herald of Salgos
+	q(56484),	-- Killed Moghiea
+	q(56728),	-- killed Moghiea (first time)
+	q(56479),	-- Killed Omus
+	q(56722),	-- Killed Omus
+	q(56483),	-- Killed Ungormath
+	q(56487),	-- Killed Salgos, the Eternal
+	q(56732),	-- Killed Salgos, the Eternal
+	q(56486),	-- Killed Spawn of Salgos
+	q(56731),	-- Killed Spawn of Salgos
+	q(56482),	-- Killed Xue
+	q(56726),	-- Killed Xue
+	q(56480),	-- Killed Zomera
+	q(56723),	-- Killed Zomera
+	q(56721),	-- Killed Osgen
 };

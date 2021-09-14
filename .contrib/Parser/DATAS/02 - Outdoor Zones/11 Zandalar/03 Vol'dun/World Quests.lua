@@ -882,7 +882,3 @@ _.Zones =
 		}),
 	}),
 };
-
-_.HiddenQuestTriggers = {
-	q(54525),	-- looting Handful of Glass Spider Eyes from the bridge elites during the Vol'dun incursion (the associated WQ wasn't up, not sure if that makes a difference)
-};

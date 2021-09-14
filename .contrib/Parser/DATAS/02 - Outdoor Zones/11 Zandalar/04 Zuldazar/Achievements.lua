@@ -12,7 +12,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(4, {	-- Gonk Respected
-							["coord"] = { 49.2, 44.3, DAZARALOR },
+							["coord"] = { 49.2, 44.3, ZULDAZAR },
 							["cr"] = 129740,	-- Gonk
 						}),
 						crit(6, {	-- Jani Respected

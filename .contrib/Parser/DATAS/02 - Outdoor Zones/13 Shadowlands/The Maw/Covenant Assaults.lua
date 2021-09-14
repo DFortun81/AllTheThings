@@ -16,19 +16,9 @@ _.Zones =
 						ach(15035, {	-- On the Offensive
 							ach(15000),		-- United Front
 							ach(15037),		-- This Army
-							ach(15044, {	-- Krrprripripkraak's Heroes
-								crit(1),	-- Elder Gwenna
-								crit(2),	-- Foreman Thorodir
-								crit(3),	-- Te'zan
-								crit(4),	-- Warden Casad
-								crit(5),	-- Kivarr
-								crit(6),	-- Guardian Kota
-							}),
 						}),
 					}),
-					ach(15036, {	-- Rooting Out The Evil
-						crit(5),	-- Just Don't Ask Me to Spell It
-					}),
+					ach(15036),	-- Rooting Out The Evil
 					ach(15033),	-- Taking the Tremaculum
 					ach(15034, {	-- Wings Against the Flames
 						crit(9),	-- Kill The Flame
@@ -516,10 +506,37 @@ _.Zones =
 								},
 							}),
 							q(63972, {	-- Just Don't Ask Me to Spell It
-								["provider"] = { "n", 179070 },	-- Krrprripripkraak
+								["provider"] = { "n", 179066 },	-- Choofa
 								["isWeekly"] = true,
-								["coord"] = { 22.2, 41.4, THE_MAW },
+								["coord"] = { 22.2, 43.3, THE_MAW },
 								["g"] = {
+									ach(15044, {	-- Krrprripripkraak's Heroes
+										crit(1, {	-- Elder Gwenna
+											["coord"] = { 20.4, 43.9, THE_MAW },
+											["cr"] = 179555,	-- Elder Gwenna
+										}),
+										crit(2, {	-- Foreman Thorodir
+											["coord"] = { 20.6, 32.8, THE_MAW },
+											["cr"] = 179554,	-- Foreman Thorodir
+										}),
+										crit(3, {	-- Te'zan
+											["coord"] = { 25.6, 39.0, THE_MAW },
+											["cr"] = 179553,	-- Te'zan
+										}),
+										crit(4, {	-- Warden Casad
+											["coord"] = { 23.7, 42.4, THE_MAW },
+											["cr"] = 179561,	-- Warden Casad
+										}),
+										crit(5, {	-- Kivarr
+											["description"] = "Inside the cave.",
+											["coord"] = { 20.8, 39.3, THE_MAW },
+											["cr"] = 179557,	-- Kivarr
+										}),
+										crit(6, {	-- Guardian Kota
+											["coord"] = { 21.9, 45.7, THE_MAW },
+											["cr"] = 179559,	-- Guardian Kota
+										}),
+									}),
 									crit(5, {	-- Just Don't Ask Me to Spell It
 										["achievementID"] = 15036,	-- Rooting Out The Evil
 									}),
