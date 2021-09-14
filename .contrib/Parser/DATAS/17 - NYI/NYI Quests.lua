@@ -283,6 +283,9 @@ _.NeverImplemented =
 			q(55660),	-- Time Trials (Tournament Realm Quest)
 			q(62402),	-- Timewalking Campaigns
 		}),
+		q(38295, {	-- *Retrieving Data; nothing comes up for it on Wowhead
+			["_drop"] = { "g" },	-- drop Hexweave Cloth from rewards
+		}),
 		q(3064,  {	-- <NYI> <TXT> Pirate Hats
 			["u"] = NEVER_IMPLEMENTED,
 		}),

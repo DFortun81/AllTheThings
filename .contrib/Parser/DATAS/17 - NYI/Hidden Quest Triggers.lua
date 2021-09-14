@@ -3090,6 +3090,7 @@ _.HiddenQuestTriggers = {
 		q(56917),	-- Rockweed Shambler additional loot (Benthic/Manapearls)
 		q(56606),	-- Sandclaw Stonoeshell first kill
 		q(57142),	-- looting Giant Crab Leg + Brinestone Pickaxe from Sandclaw Stoneshell
+		q(56591),	-- Scale Matriarch Gratinax first kill
 		q(56590),	-- Scale Matriarch Vynara first kill
 		q(56589),	-- Scale Matriarch Zodia first kill
 		q(56588),	-- Shassera first kill

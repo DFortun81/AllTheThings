@@ -2597,8 +2597,6 @@ _.HiddenQuestTriggers = {
 --	unknown/probable bodyguard dialogue quests
 	q(56659),	-- not sure precisely what triggered this -- selected Neri as my daily follower, refreshed, walked outside, picked up "Down into Nazjatar," and this popped (probably dialogue quest)
 	q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires (haven't reproduced w/poen, so probably another horde bodyguard)
-	q(56663),	-- Unknown trigger. Occured when walking into Shirakess Repository, but need to confirm potential pre-reqs
-	q(56543),	-- Triggered when walking into Kelfin Pocket for the first time. Follower dialog goes off (horde)
 	q(56507),	-- Triggered randomly while in nazjatar
 	q(56658),	-- Triggered randomly while in Nazjatar
 	q(56670),	-- Triggered randomly while in Nazjatar
@@ -2606,6 +2604,8 @@ _.HiddenQuestTriggers = {
 --	Inowari
 --	Neri
 	q(56521),	-- "If I'd been put on one of these work crews, I might have never broken free.  The people here haven't been broken yet.  There's still a chance..."
+	q(56543),	-- "Like this place?  Vim named it.  He thinks you should always keep something in your pocket that the enemy won't expect."
+	q(56663),	-- "What choice would I have made... to save our people?"
 	q(56664),	-- "We need to be careful down here.  The locals are definitely not friendly."
 	q(56668),	-- "Kelp grass is one of our most useful resources here in Nazjatar."
 	q(56669),	-- "The tamed snapdragons aren't producing venom anymore. Our only way to harvest it is from the wild packs roaming here."
