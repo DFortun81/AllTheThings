@@ -164,7 +164,7 @@ _.ExpansionFeatures =
 						31482,	-- Breath of the Black Prince
 						32109,	-- Lion's Landing
 					},
-					["classes"] = ALLIANCE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["timeline"] = {
 						"added 5.1.0.16139",
 						"removed 6.0.3.19116",
@@ -177,7 +177,7 @@ _.ExpansionFeatures =
 						31482,	-- Breath of the Black Prince
 						32108,	-- Domination Point
 					},
-					["classes"] = HORDE_ONLY,
+					["races"] = HORDE_ONLY,
 					["timeline"] = {
 						"added 5.1.0.16155",
 						"removed 6.0.3.19116",
@@ -187,7 +187,7 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 64616 },	-- Wrathion <The Black Prince>
 					["coord"] = { 54.6, 72.6, THE_VEILED_STAIR },
 					["sourceQuests"] = { 32373 },	-- The Measure of a Leader (A)
-					["classes"] = ALLIANCE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["timeline"] = {
 						"added 5.1.0.16155",
 						"removed 6.0.3.19116",
@@ -197,7 +197,7 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 64616 },	-- Wrathion <The Black Prince>
 					["coord"] = { 54.6, 72.6, THE_VEILED_STAIR },
 					["sourceQuests"] = { 32427 },	-- The Measure of a Leader (H)
-					["classes"] = HORDE_ONLY,
+					["races"] = HORDE_ONLY,
 					["timeline"] = {
 						"added 5.1.0.16155",
 						"removed 6.0.3.19116",
@@ -207,7 +207,7 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 64616 },	-- Wrathion <The Black Prince>
 					["coord"] = { 54.6, 72.6, THE_VEILED_STAIR },
 					["sourceQuests"] = { 32373 },	-- The Measure of a Leader (A)
-					["classes"] = ALLIANCE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = { { "c", 396, 3000 }, },	-- 3000 Valor
 					["timeline"] = {
 						"added 5.1.0.16309",
@@ -218,7 +218,7 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 64616 },	-- Wrathion <The Black Prince>
 					["coord"] = { 54.6, 72.6, THE_VEILED_STAIR },
 					["sourceQuests"] = { 32427 },	-- The Measure of a Leader (H)
-					["classes"] = HORDE_ONLY,
+					["races"] = HORDE_ONLY,
 					["cost"] = { { "c", 396, 3000 }, },	-- 3000 Valor
 					["timeline"] = {
 						"added 5.1.0.16309",
@@ -232,7 +232,7 @@ _.ExpansionFeatures =
 						32374,	-- The Prince's Pursuit (A)
 						32474,	-- A Test of Valor (A)
 					},
-					["classes"] = ALLIANCE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["timeline"] = {
 						"added 5.1.0.16139",
 						"removed 6.0.3.19116",
@@ -245,7 +245,7 @@ _.ExpansionFeatures =
 						32429,	-- The Prince's Pursuit (H)
 						32476,	-- A Test of Valor (H)
 					},
-					["classes"] = HORDE_ONLY,
+					["races"] = HORDE_ONLY,
 					["timeline"] = {
 						"added 5.1.0.16155",
 						"removed 6.0.3.19116",
@@ -258,7 +258,7 @@ _.ExpansionFeatures =
 						32374,	-- The Prince's Pursuit (A)
 						32474,	-- A Test of Valor (A)
 					},
-					["classes"] = ALLIANCE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["timeline"] = {
 						"added 5.1.0.16139",
 						"removed 6.0.3.19116",
@@ -271,7 +271,7 @@ _.ExpansionFeatures =
 						32429,	-- The Prince's Pursuit (H)
 						32476,	-- A Test of Valor (H)
 					},
-					["classes"] = HORDE_ONLY,
+					["races"] = HORDE_ONLY,
 					["timeline"] = {
 						"added 5.1.0.16155",
 						"removed 6.0.3.19116",
@@ -284,7 +284,7 @@ _.ExpansionFeatures =
 						32388,	-- A Change of Command (A)
 						32389,	-- The Lion Roars
 					},
-					["classes"] = ALLIANCE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["timeline"] = {
 						"added 5.1.0.16139",
 						"removed 6.0.3.19116",
@@ -301,7 +301,7 @@ _.ExpansionFeatures =
 						32430,	-- A Change of Command (H)
 						32431,	-- Glory to the Horde
 					},
-					["classes"] = HORDE_ONLY,
+					["races"] = HORDE_ONLY,
 					["timeline"] = {
 						"added 5.1.0.16155",
 						"removed 6.0.3.19116",
