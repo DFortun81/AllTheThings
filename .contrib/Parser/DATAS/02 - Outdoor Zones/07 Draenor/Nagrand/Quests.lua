@@ -728,16 +728,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35838,	-- The Warlord's Council
 				}),
-				q(36004, {	-- Power Unleashed
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(118295)),	-- Timeless Solium Band of Brutality
-						un(REMOVED_FROM_GAME, i(118296)),	-- Timeless Solium Band of the Archmage
-						un(REMOVED_FROM_GAME, i(118297)),	-- Timeless Solium Band of the Assassin
-						un(REMOVED_FROM_GAME, i(118298)),	-- Timeless Solium Band of the Bulwark
-						un(REMOVED_FROM_GAME, i(118299)),	-- Timeless Solium Band of Lifegiving
-					},
-				}),
 				q(35970, {	-- Preservation Capitalization
 					["provider"] = { "n", 83734 },	-- Greblin Fastfizzle
 					["coord"] = { 39.6, 24.4, DRAENOR_NAGRAND },
@@ -984,9 +974,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34899,	-- A Choice to Make
 				}),
-				q(35995, {	-- Tarnished Bronze
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(34869, {	-- Tastes Like Chicken
 					["provider"] = { "n", 81955 },	-- Digrem Orebar
 					["coord"] = { 79.2, 52.6, DRAENOR_NAGRAND },
@@ -1158,9 +1145,6 @@ _.Zones =
 						i(119057),	-- Gar'rok's Sunshade Cloak
 						i(114884),	-- Gar'rok's Weathered Cloak
 					},
-				}),
-				q(36206, {	-- The Dragon's Tale
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(34964, {	-- The Farseer Awaits
 					["provider"] = { "n", 80003 },	-- Thrall

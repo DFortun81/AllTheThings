@@ -649,18 +649,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34564,	-- Destination: Unknown
 				}),
-				q(35990, {	-- Core of Flame
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-				}),
-				q(35991, {	-- Core of Iron
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-				}),
-				q(35992, {	-- Core of Life
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-				}),
 				q(34667, {	-- Court of Souls (bonus objective)
 					["coord"] = { 42.5, 60.6, TALADOR },
 				}),
@@ -737,10 +725,6 @@ _.Zones =
 						34981,	-- The Only Way to Travel (alliance, artillery tower)
 						34971,	-- The Only Way to Travel (horde, artillery tower)
 					},
-				}),
-				q(36158, {	-- Draenor's Secret Power
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 				}),
 				q(34959, {	-- Dreadpiston
 					["provider"] = { "n", 75803 },	-- Vindicator Maraad
@@ -824,10 +808,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(35994, {	-- Eyes of the Archmage
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-				}),
 				q(36010, {	-- Flamebender's Tome
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar
@@ -844,10 +824,6 @@ _.Zones =
 				q(34400, {	-- Frenzied Manafeeders
 					["provider"] = { "n", 78534 },	-- Ageilaa
 					["coord"] = { 49.8, 56.1, TALADOR },
-				}),
-				q(36000, {	-- Fugitive Dragon
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 				}),
 				q(34777, {	-- Gatekeepers of Auchindoun
 					["provider"] = { "n", 79979 },	-- Defender Illona
@@ -1023,17 +999,6 @@ _.Zones =
 					["coord"] = { 55.5, 40.9, TALADOR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33730,	-- Engineering Her Demise
-				}),
-				q(35989, {	-- Khadgar's Task
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(118290)),	-- Solium Band of Might
-						un(REMOVED_FROM_GAME, i(118291)),	-- Solium Band of Wisdom
-						un(REMOVED_FROM_GAME, i(118292)),	-- Solium Band of Dexterity
-						un(REMOVED_FROM_GAME, i(118293)),	-- Solium Band of Endurance
-						un(REMOVED_FROM_GAME, i(118294)),	-- Solium Band of Mending
-					},
 				}),
 				q(33582, {	-- Kura's Vengeance
 					["provider"] = { "n", 75324 },	-- Kura the Blind
@@ -1461,10 +1426,6 @@ _.Zones =
 						34981,	-- The Only Way to Travel (artillery tower)
 					},
 				}),
-				q(36157, {	-- Spires of the Betrayer
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-				}),
 				q(34451, {	-- Sunsworn Camp
 					["provider"] = { "n", 75121 },	-- Sunsworn Camp
 					["coord"] = { 55.4, 67.6, TALADOR },
@@ -1473,10 +1434,6 @@ _.Zones =
 						33530,	-- Nightmare in the Tomb
 						34351,	-- We Must Construct Additional Pylons
 					},
-				}),
-				q(35993, {	-- Tackling Teron'gor
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
 				}),
 				q(34472, {	-- Temporal Juxtaposition
 					["provider"] = { "n", 86949 },	-- Zooti Fizzlefury
