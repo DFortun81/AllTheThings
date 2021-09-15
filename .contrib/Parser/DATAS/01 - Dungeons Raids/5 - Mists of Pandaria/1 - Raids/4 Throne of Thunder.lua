@@ -22,6 +22,8 @@ _.Instances = { tier(MOP_TIER, {
 			n(COMMON_BOSS_DROPS, {
 				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
 				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
+				un(REMOVED_FROM_GAME, i(94593)),	-- Secrets of the Empire
+				un(REMOVED_FROM_GAME, i(94594)),	-- Titan Runestone
 			}),
 			n(QUESTS, {
 				i(97153, {	-- Spoils of the Thunder King
@@ -599,6 +601,7 @@ _.Instances = { tier(MOP_TIER, {
 								i(95802),	-- Rune of Re-Origination
 								i(95811),	-- Soul Barrier
 								i(95814),	-- Unerring Vision of Lei Shen
+								i(94867),	-- Heart of the Thunder King
 							})),
 						},
 					}),
@@ -1189,6 +1192,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(94532),	-- Rune of Re-Origination
 						i(94528),	-- Soul Barrier
 						i(94524),	-- Unerring Vision of Lei Shen
+						i(94867),	-- Heart of the Thunder King
 						n(-355, {	-- Thunderforged
 							i(96175),	-- Shan-Dun, Breaker of Hope
 							i(96181),	-- Uroe, Harbinger of Terror
@@ -1817,6 +1821,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(96546),	-- Rune of Re-Origination
 						i(96555),	-- Soul Barrier
 						i(96558),	-- Unerring Vision of Lei Shen
+						i(94867),	-- Heart of the Thunder King
 						n(-355, {	-- Thunderforged
 							i(96919),	-- Shan-Dun, Breaker of Hope
 							i(96925),	-- Uroe, Harbinger of Terror
