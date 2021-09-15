@@ -48,6 +48,10 @@ _.Instances = { tier(MOP_TIER, {
 					},
 				}),
 			}),
+			n(COMMON_BOSS_DROPS, {
+				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
+				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
+			}),
 			d(-1, {	-- Raid Finder (Pre-Patch 6.0) >> Items marked "Raid Finder" after 6.0 <<
 				["u"] = REMOVED_FROM_GAME,
 				["ignoreBonus"] = true,

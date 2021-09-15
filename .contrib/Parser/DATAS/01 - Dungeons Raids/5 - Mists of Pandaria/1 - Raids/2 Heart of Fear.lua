@@ -11,6 +11,10 @@ _.Instances = { tier(MOP_TIER, {
 		["maps"] = { 475 },	-- 2nd wing
 		["coord"] = { 39.0, 34.9, DREAD_WASTES },	-- Heart of Fear
 		["groups"] = {
+			n(COMMON_BOSS_DROPS, {
+				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
+				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
+			}),
 			d(7, {	-- LFR
 				["description"] = "Speak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.",
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },	-- Seat of Knowledge

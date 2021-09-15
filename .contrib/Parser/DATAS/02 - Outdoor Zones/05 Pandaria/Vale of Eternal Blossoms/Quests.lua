@@ -137,11 +137,13 @@ _.Zones =
 					["provider"] = { "n", 64610 },	-- Lyalia
 					["coord"] = { 84.0, 58.7, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 31483 },	-- Incoming...
 				}),
 				q(32249, {	-- Meet the Scout (H)
 					["provider"] = { "n", 64566 },	-- Sunwalker Dezco
 					["coord"] = { 62.8, 27.9, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 31483 },	-- Incoming...
 				}),
 				q(31288, {	-- Research Project: The Mogu Dynasties
 					["provider"] = { "n", 63984 },	-- Master Liu

@@ -52,19 +52,6 @@ _.ExpansionFeatures =
 										}),
 									}),
 								}),
-								q(39057, {	-- Command of the Seas
-									["u"] = REMOVED_FROM_GAME,
-									["provider"] = { "n", 92213 },	-- Archmage Khadgar
-								}),
-								q(39003, {	-- Cooking the Books
-									["u"] = REMOVED_FROM_GAME,
-									["provider"] = { "n", 92213 },	-- Archmage Khadgar
-									["sourceQuest"] = 39000,	-- We Don't Need No Library Card
-								}),
-								q(39004, {	-- Darkness Incarnate
-									["u"] = REMOVED_FROM_GAME,
-									["provider"] = { "n", 92213 },	-- Archmage Khadgar
-								}),
 								q(39404, {	-- Destroying the Competition
 									["provider"] = { "n", 93822 },	-- Merreck Vonder
 									["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
@@ -95,26 +82,6 @@ _.ExpansionFeatures =
 									["races"] = ALLIANCE_ONLY,
 									["sourceQuest"] = 38259,	-- All Hands on Deck
 								}),
-								q(37839, {	-- Light Be With You
-									["u"] = REMOVED_FROM_GAME,
-									["provider"] = { "n", 92213 },	-- Archmage Khadgar
-									["races"] = ALLIANCE_ONLY,
-									["g"] = {
-										un(REMOVED_FROM_GAME, i(124634)),	-- Thorasus, the Stone Heart of Draenor
-										un(REMOVED_FROM_GAME, i(124635)),	-- Nithramus, the All-Seer
-										un(REMOVED_FROM_GAME, i(124636)),	-- Maalus, the Blood Drinker
-										un(REMOVED_FROM_GAME, i(124637)),	-- Sanctus, Sigil of the Unbroken
-										un(REMOVED_FROM_GAME, i(124638)),	-- Etheralus, the Eternal Reward
-									},
-								}),
-								q(39697, {	-- Master vs. Commander
-									["u"] = REMOVED_FROM_GAME,
-									["provider"] = { "n", 92213 },	-- Archmage Khadgar
-									["sourceQuest"] = 39057,	-- Command of the Seas
-									["g"] = {
-										 un(REMOVED_FROM_GAME, i(128693)),	-- Draenic Sea Chart
-									},
-								}),
 								q(39056, {	-- Naval Commander
 									["provider"] = { "n", 93822 },	-- Merreck Vonder
 									["coord"] = { 28.2, 10.6, DRAENOR_SHADOWMOON_VALLEY },
@@ -142,31 +109,17 @@ _.ExpansionFeatures =
 									["races"] = ALLIANCE_ONLY,
 									["sourceQuest"] = 39054,	-- Shipbuilding
 								}),
-								q(37841, {	-- The Final Assault
-									["u"] = REMOVED_FROM_GAME,
-									["provider"] = { "n", 90233 },	-- Archmage Khadgar
-									["sourceQuest"] = 37837,	-- An Inside Job
-								}),
 								q(38435, {	-- The Invasion of Tanaan
 									["provider"] = { "n", 95002 },	-- Yanas Seastrike
 									["coord"] = { 29.8, 10.6, DRAENOR_SHADOWMOON_VALLEY },
 									["races"] = ALLIANCE_ONLY,
 									["sourceQuest"] = 39055,	-- Ship Shape
 								}),
-								q(37835, {	-- The Shadow War
-									["u"] = REMOVED_FROM_GAME,
-									["provider"] = { "n", 83823 },	-- Archmage Khadgar
-								}),
 								q(39067, {	-- Upgrading The Fleet
 									["provider"] = { "n", 93822 },	-- Merreck Vonder
 									["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
 									["races"] = ALLIANCE_ONLY,
 									["sourceQuest"] = 39665,	-- A True Naval Commander
-								}),
-								q(39000, {	-- We Don't Need No Library Card
-									["u"] = REMOVED_FROM_GAME,
-									["provider"] = { "n", 92213 },	-- Archmage Khadgar
-									["sourceQuest"] = 39024,	-- Call of the Archmage
 								}),
 							}),
 

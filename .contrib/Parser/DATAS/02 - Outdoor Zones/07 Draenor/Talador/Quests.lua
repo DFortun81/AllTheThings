@@ -443,11 +443,6 @@ _.Zones =
 						33724,	-- Vol. X Pages ?
 					},
 				}),
-				q(37837, {	-- An Inside Job
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 90233 },	-- Archmage Khadgar
-					["sourceQuest"] = 37964,	-- To Gul'dan!
-				}),
 				q(34414, {	-- An'dure The Giant
 					["provider"] = { "n", 78515 },	-- Manduil Skycaller
 					["coord"] = { 51.6, 50.5, TALADOR },
@@ -554,16 +549,6 @@ _.Zones =
 						34571,	-- Out of Jovite (alliance, artillery tower)
 					},
 				}),
-				q(36014, {	-- Blackhand's Secret
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuests"] = {
-						36010,	-- Flamebender's Tome
-						36009,	-- Heart of the Fury
-						36013,	-- Might of the Elemental Lords
-						36012,	-- Reverse Piracy
-					},
-				}),
 				q(34164, {	-- Book Burning
 					["provider"] = { "n", 77629 },	-- Kor'thos Dawnfury
 					["coord"] = { 34.0, 73.9, TALADOR },
@@ -585,11 +570,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33728,	-- An Eye for a Spy
 				}),
-				q(37836, {	-- Breaking Badness
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuest"] = 37834,	-- Orb of Dominion
-				}),
 				q(33740, {	-- Burning Sky
 					["provider"] = { "n", 75896 },	-- Crystal-Shaper Barum
 					["coord"] = { 73.0, 38.7, 353 },
@@ -601,19 +581,6 @@ _.Zones =
 						34573,	-- Iridium Recovery (alliance, artillery tower)
 						34875,	-- Next Steps (alliance, arcane sanctum)
 						34571,	-- Out of Jovite (alliance, artillery tower)
-					},
-				}),
-				q(39019, {	-- Call of the Archmage
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(39018, {	-- Call of the Archmage
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(39023, {	-- Call of the Archmage
-					["u"] = REMOVED_FROM_GAME,
-					["sourceQuests"] = {
-						36014,	-- Blackhand's Secret
-						36016,	-- The Unbroken Circle
 					},
 				}),
 				q(34406, {	-- Caught In The Chaos
@@ -756,14 +723,6 @@ _.Zones =
 					["provider"] = { "n", 77031 },	-- Ahm
 					["coord"] = { 56.9, 25.9, TALADOR },
 				}),
-				q(35997, {	-- Empire's Fall
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuests"] = {
-						36004,	-- Power Unleashed
-						39022,	-- Call of the Archmage
-					},
-				}),
 				q(34098, {	-- Engineering Her Demise
 					["provider"] = { "n", 75968 },	-- Iron Shredder Prototype
 					["coord"] = { 61.0, 38.4, TALADOR },
@@ -808,11 +767,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(36010, {	-- Flamebender's Tome
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuest"] = 36007,	-- Touch of the Kirin-Tor
-				}),
 				q(36353, {	-- For Old Times' Sake
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -845,11 +799,6 @@ _.Zones =
 						i(113023),	-- Foolproof Targeting Mechanism
 					},
 				}),
-				q(36009, {	-- Heart of the Fury
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuest"] = 36007,	-- Touch of the Kirin-Tor
-				}),
 				q(34163, {	-- Hiding in the Shadows
 					--["objectID"] = 227737,	-- Shadow Council Communicator
 					["coord"] = { 37.2, 79.3, TALADOR },
@@ -876,11 +825,6 @@ _.Zones =
 						34696,	-- The Lady of Light (breadcrumb)
 						34971,	-- The Only Way to Travel
 					},
-				}),
-				q(36006, {	-- Hunter: Hunted
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuest"] = 36005,	-- The Scrying Game
 				}),
 				q(34089, {	-- In Short Supply
 					["provider"] = { "n", 75804 },	-- Yrel
@@ -1005,14 +949,6 @@ _.Zones =
 					["coord"] = { 70.7, 56.7, TALADOR },
 					["sourceQuest"] = 33579,	-- What the Draenei Found
 				}),
-				q(35998, {	-- Legacy of the Sorcerer Kings
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuests"] = {
-						36004,	-- Power Unleashed
-						39022,	-- Call of the Archmage
-					},
-				}),
 				q(34452, {	-- Light's Rest
 					["provider"] = { "n", 75119 },	-- Exarch Maladaar
 					["coord"] = { 55.6, 67.7, TALADOR },
@@ -1034,22 +970,9 @@ _.Zones =
 						34577,	-- Out of Jovite (artillery tower)
 					},
 				}),
-				q(36013, {	-- Might of the Elemental Lords
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuest"] = 36007,	-- Touch of the Kirin-Tor
-				}),
 				q(35237, {	-- Mor'gran Logworks (bonus objective)
 					["coord"] = { 65.4, 32.0, TALADOR },
 					["races"] = HORDE_ONLY,
-				}),
-				q(37838, {	-- My Garona
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 90237 },	-- Garona Halforcen
-					["sourceQuest"] = 37837,	-- An Inside Job
-					["g"] = {
-						un(REMOVED_FROM_GAME, follower(466)),	-- Garona Halforcen
-					},
 				}),
 				q(34465, {	-- Mystical Hat
 					["coord"] = { 45.2, 37.0, TALADOR },
@@ -1163,18 +1086,6 @@ _.Zones =
 						34577,	-- Out of Jovite (artillery tower)
 					},
 				}),
-				q(37834, {	-- Orb of Dominion
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuests"] = {
-						39023,	-- Call of the Archmage
-						36017,	-- Prisoner of the Mind
-						36018,	-- We're Not Finished...
-					},
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(122155)),	-- Orb of Dominion
-					},
-				}),
 				q(35236, {	-- Orunai Coast (bonus objective)
 					["coord"] = { 56.9, 13.0, TALADOR },
 					["races"] = ALLIANCE_ONLY,
@@ -1222,14 +1133,6 @@ _.Zones =
 					["coord"] = { 55.5, 67.0, TALADOR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34971,	-- The Only Way to Travel
-				}),
-				q(36017, {	-- Prisoner of the Mind
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuests"] = {
-						36014,	-- Blackhand's Secret
-						36016,	-- The Unbroken Circle
-					},
 				}),
 				q(33578, {	-- Pyrophobia
 					["provider"] = { "n", 75311 },	-- Raksi
@@ -1282,11 +1185,6 @@ _.Zones =
 				}),
 				q(34570, {	-- REUSE
 					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(36012, {	-- Reverse Piracy
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuest"] = 36007,	-- Touch of the Kirin-Tor
 				}),
 				q(37191, {	-- Sanketsu, The Burning Blade
 					["provider"] = { "n", 87764 },	-- Sanketsu
@@ -1480,11 +1378,6 @@ _.Zones =
 						i(112516),	-- Talador Sentinel Gloves
 					},
 				}),
-				q(37841, {	-- The Final Assault
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 90233 },	-- Archmage Khadgar
-					["sourceQuest"] = 37837,	-- An Inside Job
-				}),
 				q(33976, {	-- The Final Piece
 					["provider"] = { "n", 77082 },	-- Restalaan
 					["coord"] = { 44.8, 90.4, TALADOR },
@@ -1543,14 +1436,6 @@ _.Zones =
 				q(38417, {	-- The Sargerei Menace
 					["races"] = HORDE_ONLY,
 				}),
-				q(36005, {	-- The Scrying Game
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuests"] = {
-						35997,	-- Empire's Fall
-						35998,	-- Legacy of the Sorcerer Kings
-					},
-				}),
 				q(36027, {	-- The Staff of Archmage Vargoth
 					["provider"] = { "n", 77853 },	-- Image of Archmage Vargoth
 					["coord"] = { 84.6, 31.6, TALADOR },
@@ -1577,23 +1462,6 @@ _.Zones =
 						follower(207),	-- Defender Illona
 					},
 				}),
-				q(36016, {	-- The Unbroken Circle
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuests"] = {
-						36010,	-- Flamebender's Tome
-						36009,	-- Heart of the Fury
-						36013,	-- Might of the Elemental Lords
-						36012,	-- Reverse Piracy
-					},
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(118305)),	-- Spellbound Runic Band of Elemental Power
-						un(REMOVED_FROM_GAME, i(118306)),	-- Spellbound Runic Band of the All-Seeing Eye
-						un(REMOVED_FROM_GAME, i(118307)),	-- Spellbound Runic Band of Unrelenting Slaughter
-						un(REMOVED_FROM_GAME, i(118308)),	-- Spellbound Runic Band of Elemental Invincibility
-						un(REMOVED_FROM_GAME, i(118309)),	-- Spellbound Runic Band of Infinite Preservation
-					},
-				}),
 				q(36843, {	-- They Came From Above
 					-- TODO: ["sourceQuests"] = { },
 					["provider"] = { "n", 86522 },	-- Akhan
@@ -1615,11 +1483,6 @@ _.Zones =
 					["coord"] = { 70.8, 29.6, TALADOR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34683,	-- One Step Ahead
-				}),
-				q(37964, {	-- To Gul'dan!
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuest"] = 37836,	-- Breaking Badness
 				}),
 				q(36512, {	-- Together We Are Strong
 					["provider"] = { "n", 79434 },	-- Soulbinder Tuulani
@@ -1643,17 +1506,6 @@ _.Zones =
 					["coord"] = { 61.5, 10.9, TALADOR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33754,	-- Through the Looking Glass
-				}),
-				q(36007, {	-- Touch of the Kirin-Tor
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(118300)),	-- Spellbound Solium Band of Sorcerous Strength
-						un(REMOVED_FROM_GAME, i(118301)),	-- Spellbound Solium Band of the Kirin-Tor
-						un(REMOVED_FROM_GAME, i(118302)),	-- Spellbound Solium Band of Fatal Strikes
-						un(REMOVED_FROM_GAME, i(118303)),	-- Spellbound Solium Band of Sorcerous Invincibility
-						un(REMOVED_FROM_GAME, i(118304)),	-- Spellbound Solium Band of the Immortal Spirit
-					},
 				}),
 				q(34399, {	-- Trouble In The Mine
 					["provider"] = { "n", 78534 },	-- Ageilaa
@@ -1808,14 +1660,6 @@ _.Zones =
 					["sourceQuests"] = {
 						34458,	-- Powering the Defenses (Alliance)
 						35249,	-- Powering the Defenses (Horde)
-					},
-				}),
-				q(36018, {	-- We're Not Finished...
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar
-					["sourceQuests"] = {
-						36014,	-- Blackhand's Secret
-						36016,	-- The Unbroken Circle
 					},
 				}),
 				q(33579, {	-- What the Draenei Found

@@ -8,7 +8,6 @@ _.Zones =
 		m(TANAAN_JUNGLE, {
 			n(QUESTS, {
 --[[
-				q(40235),	-- Abrogator Arbitrator
 				q(38462),	-- Breaching the Barrier
 				q(38223),	-- Dark Ascension
 				q(38267, {	-- Friends Above
@@ -38,7 +37,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34366),	-- Tanaan 01: Front of the Portal
-				q(40237),	-- Work Work Stoppage
 				q(38989, {	-- Your Orders, General?
 					["races"] = HORDE_ONLY,
 				}),

@@ -11,6 +11,10 @@ _.Instances = { tier(MOP_TIER, {
 		["maps"] = { 472, 473 },	-- 2nd LFR Wing
 		["coord"] = { 59.6, 39.1, KUN_LAI_SUMMIT },	-- Mogu'shan Terrace
 		["groups"] = {
+			n(COMMON_BOSS_DROPS, {
+				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
+				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
+			}),
 			d(7, {	-- LFR
 				["description"] = "Speak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from the Elegon chest is NOT tradeable to others in group.",
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },	-- Seat of Knowledge

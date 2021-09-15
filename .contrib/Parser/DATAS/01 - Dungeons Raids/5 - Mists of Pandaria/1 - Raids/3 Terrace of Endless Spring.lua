@@ -10,6 +10,10 @@ _.Instances = { tier(MOP_TIER, {
 		["maps"] = { 456 },	-- Terrace of Endless Spring
 		["coord"] = { 48.4, 61.4, THE_VEILED_STAIR },	-- Terrace of Endless Spring
 		["g"] = {
+			n(COMMON_BOSS_DROPS, {
+				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
+				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
+			}),
 			d(7, {	-- LFR
 				["description"] = "Speak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.",
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },	-- Seat of Knowledge
@@ -183,6 +187,7 @@ _.Instances = { tier(MOP_TIER, {
 								i(89986),	-- Shadowgrip Girdle
 								i(86908),	-- Dreadwoven Leggings of Failure
 								i(86907),	-- Essence of Terror
+								i(87210),	-- Chimera of Fear
 								i(122199),	-- Music Roll: Heart of Pandaria
 							})),
 						},
@@ -335,6 +340,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(89839),	-- Shadowgrip Girdle
 						i(86389),	-- Dreadwoven Leggings of Failure
 						i(86388),	-- Essence of Terror
+						i(87210),	-- Chimera of Fear
 						i(122199),	-- Music Roll: Heart of Pandaria
 					})),
 				},
@@ -496,6 +502,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(89951),	-- Shadowgrip Girdle
 						i(87174),	-- Dreadwoven Leggings of Failure
 						i(87175),	-- Essence of Terror
+						i(87210),	-- Chimera of Fear
 						i(122199),	-- Music Roll: Heart of Pandaria
 					})),
 				},

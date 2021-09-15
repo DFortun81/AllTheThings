@@ -19,6 +19,10 @@ _.Instances = { tier(MOP_TIER, {
 		},
 		["coord"] = { 63.4, 32.6, ISLE_OF_THUNDER },	-- Throne of Thunder
 		["g"] = {
+			n(COMMON_BOSS_DROPS, {
+				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
+				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
+			}),
 			n(QUESTS, {
 				i(97153, {	-- Spoils of the Thunder King
 					["description"] = "This bag contains gold, flasks, reagents, epic necklaces, and has chance to drop a Primal Egg.",
