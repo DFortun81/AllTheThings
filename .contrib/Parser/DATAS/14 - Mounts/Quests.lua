@@ -110,8 +110,12 @@ _.Mounts =
 			["races"] = HORDE_ONLY
 		}),
 		i(116769),		-- Mudback Riverbeast
+		mount(232412, {	-- Netherlord's Chaotic Wrathsteed
+			["classes"] = { WARLOCK },
+		}),
 		mount(241851, {	-- Netherlord's Chaotic Wrathsteed
 			["classes"] = { WARLOCK },
+			["u"] = NEVER_IMPLEMENTED,
 		}),
 		i(174771),		-- Obedient Drone
 		i(87768),		-- Onyx Cloud Serpent
