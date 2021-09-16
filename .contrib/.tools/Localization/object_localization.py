@@ -37,7 +37,6 @@ class GameFlavor(Enum):
     RETAIL = ""
     CLASSIC = "classic"
     TBC = "tbc"
-    PTR = "ptr"
 
 
 def get_localized_obj_name(
@@ -280,7 +279,7 @@ def get_new_object_line(obj_id: int, obj_name: str, lang_code: LangCode):
         if game_flavor and game_flavor != GameFlavor.RETAIL:
             new_object = re.sub(
                 "\n",
-                f"\t--TODO: This was taken from {game_flavor} Wowhead\n",
+                f"\t--TODO: This was taken from {game_flavor.value} Wowhead\n",
                 new_object,
             )
 
