@@ -1432,6 +1432,7 @@ namespace ATT
                     case "modID":
                     case "bonusID":
                     case "runeforgePowerID":
+                    case "raceID":
                     case "conduitID":
                     case "f":
                     case "u":

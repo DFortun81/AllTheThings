@@ -467,6 +467,7 @@ namespace ATT
                     case "spellID":
                     case "objectiveID":
                     case "runeforgePowerID":
+                    case "raceID":
                     case "conduitID":
                     case "f":
                     case "u":
@@ -696,6 +697,7 @@ namespace ATT
                     case "isYearly":
                     case "isWorldQuest":
                     case "runeforgePowerID":
+                    case "raceID":
                     case "conduitID":
                     case "customCollect":
                         data[field] = value;

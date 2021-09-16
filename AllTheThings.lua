@@ -10749,6 +10749,72 @@ app.RefreshQuestInfo = function(questID)
 	end
 end
 
+-- Race Lib
+(function()
+local key = "raceID";
+local cache = app.CreateCache(key);
+local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
+local C_AlliedRaces_GetRaceInfoByID = C_AlliedRaces.GetRaceInfoByID;
+local function default_name(t)
+	local info = C_CreatureInfo_GetRaceInfo(t.raceID);
+	return info and info.raceName;
+end
+local function default_text(t)
+	return app.TryColorizeName(t, t.name);
+end
+local function default_icon(t)
+	local icon;
+	-- Allied Races are different
+	local arInfo = C_AlliedRaces_GetRaceInfoByID(t.raceID);
+	if arInfo then
+		local race = string.lower(arInfo.raceFileString);
+		-- blizzard being inconsistent
+		if race == "kultiran" then race = "kultiranhuman"; end
+		icon = "Interface\\Icons\\achievement_alliedrace_"..race;
+	else
+		local info = C_CreatureInfo_GetRaceInfo(t.raceID);
+		local race = string.lower(info.clientFileString);
+		-- blizzard being inconsistent
+		if race == "scourge" then race = "undead"; end
+		if race == "goblin" then
+			-- goblinhead?
+			local gender = app.Gender == 2 and "" or "female";
+			icon = "Interface\\Icons\\achievement_"..gender.."goblinhead";
+		elseif race == "worgen" then
+			-- misspelled worgen?
+			icon = "Interface\\Icons\\achievement_worganhead";
+		elseif race == "pandaren" then
+			-- no pandaren male icon?
+			icon = "Interface\\Icons\\achievement_character_pandaren_female";
+		else
+			local gender = app.Gender == 2 and "male" or "female";
+			icon = "Interface\\Icons\\achievement_character_"..race.."_"..gender;
+		end
+	end
+	print("Dynamic Race Icon")
+	print(t.raceID,icon)
+	return icon;
+end
+local raceFields = {
+	["key"] = function(t)
+		return key;
+	end,
+	["text"] = function(t)
+		return cache.GetCachedField(t, "text", default_text);
+	end,
+	["icon"] = function(t)
+		return cache.GetCachedField(t, "icon", default_icon);
+	end,
+	["name"] = function(t)
+		return cache.GetCachedField(t, "name", default_name);
+	end,
+};
+app.BaseRace = app.BaseObjectFields(raceFields);
+app.CreateRace = function(id, t)
+	return setmetatable(constructor(id, t, key), app.BaseRace);
+end
+end)();
+
 -- Recipe Lib
 (function()
 local fields = {
@@ -10860,14 +10926,18 @@ app.SpellNameToSpellID = setmetatable({}, {
 			local numSpells = select(4, GetSpellTabInfo(spellTabIndex));
 			for spellIndex=1,numSpells do
 				local spellName, _, _, _, _, _, spellID = GetSpellInfo(offset + spellIndex, BOOKTYPE_SPELL);
-				if lastSpellName == spellName then
-					currentSpellRank = currentSpellRank + 1;
-				else
-					lastSpellName = spellName;
-					currentSpellRank = 1;
+				if spellName then
+					if lastSpellName == spellName then
+						currentSpellRank = currentSpellRank + 1;
+					else
+						lastSpellName = spellName;
+						currentSpellRank = 1;
+					end
+					app.GetSpellName(spellID, currentSpellRank);
+					rawset(app.SpellNameToSpellID, spellName, spellID);
+				-- else
+				-- 	print("GetSpellInfo:Failed",offset + spellIndex);
 				end
-				app.GetSpellName(spellID, currentSpellRank);
-				rawset(app.SpellNameToSpellID, spellName, spellID);
 			end
 			offset = offset + numSpells;
 		end
@@ -13121,7 +13191,7 @@ local function SetRowData(self, row, data)
 	end
 end
 local function Refresh(self)
-	if not app.IsReady then return; end
+	if not app.IsReady or not self:IsVisible() then return; end
 	-- print("Refresh:",self.Suffix or self.suffix)
 	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
 	if self:GetHeight() < 40 then
@@ -19339,6 +19409,7 @@ app.events.VARIABLES_LOADED = function()
 	app.Race = race;
 	app.RaceID = raceID;
 	app.RaceIndex = raceIndex;
+	app.Gender = UnitSex("player");
 	local name, realm = UnitName("player");
 	local className = GetClassInfo(classID);
 	app.GUID = UnitGUID("player");
