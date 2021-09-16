@@ -602,7 +602,6 @@ for key,value in pairs({
 		[-1] = "Общая добыча с боссов",							-- Common Boss Drop
 		[-5] = "Просеивание",
 		[-7] = "Мировые Боссы",									-- World Bosses
-		[-10] = "Синхронизация Группы",							-- Party Sync
 		[-11] = "Обычная добыча из Сундуков",					-- Common Box Drops
 		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [Восток - Демоны]",	-- Warpwood Quarter [East - Demon]
 		[-13] = DUNGEON_FLOOR_DIREMAUL1.." [Север - Огры]",		-- Gordok Commons [North - Ogres]
@@ -637,19 +636,14 @@ for key,value in pairs({
 		[-88] = "Собор",
 		[-90] = "Элитный",										-- Elite
 		[-93] = "Силитус (Рана)",
-		[-94] = "Аукцион Черного Рынка",						-- Black Market Auction House
 	-- TODO: Garrison Note: These will be changed into a new class soon(TM)
 		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)),		-- Stables
 		[-99] = "Строения",
-		[-101] = "Спутники",
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
 		[-130] = "Сумеречный лес - активен",						-- Duskwood Active
 		[-131] = "Внутренние земли - активен",						-- The Hinterlands Active
 		[-132] = "Фералас - активен",								-- Feralas Active
 		[-133] = "Сумеречный лес - активирован",					-- Duskwood Activated
-	-- Invasions TODO: what levels?
-		[-137] = "90-й Уровень",									-- Level 90
-		[-138] = "100-й Уровень",									-- Level 100
 	-- Class Trial Sets
 		[-140] = "Общинные",
 		[-141] = "Оскверненная душа",
@@ -679,29 +673,22 @@ for key,value in pairs({
 		[-218] = "Побережье",										-- Coastal (for Fishing)
 		[-224] = "Иллидари",										-- Illidari
 		[-228] = "Точка полета",									-- GetSpellInfo(218950),  -- Flight Path
-		[-236] = "Военная кампания Альянса",						-- Alliance War Campaign
 		[-242] = "Нерейтинговые",									-- Unrated
 		[-243] = "Премия",											-- Bounty
 		[-244] = "Дворф Черного железа",							-- Dark Iron Dwarf
 		[-245] = "Орк Маг'хар",										-- Mag'har Orc
-		[-246] = "...то другому прибыль",							-- Is Another Man's Treasure
-		[-247] = "Богатства Пандарии",								-- Riches of Pandaria
 		[-251] = "Зандаларский Тролль",								-- Zandalari Troll
 		[-252] = "Култирасец",										-- Kul Tiran
-		[-253] = "Военная кампания Орды",							-- Horde War Campaign
 		[-254] = "Традиционные доспехи",							-- Heritage Armor
 		[-255] = "Вульпер",
 		[-256] = "Мехагном",
 	-- Other
-		[-351] = "Добыча с Босса",									-- Boss Drop
 		[-356] = "Атака на Темный портал",
 		[-361] = "Артиллерийная башня",								-- Artillery Tower
-		[-362] = "Пик Безмятежности",								-- Peak of Serenity
 		[-364] = "Легендарные предметы",							-- Legendaries
 		[-366] = "Наборы оружия",									-- Weapons Sets
 	-- Dungeon/Raid Wing Info
 		[-379] = "Свалка",											-- Junkyard
-		[-380] = "Мастерская",										-- Workshop
 		[-388] = "Главные ворота",									-- Main Gate (Stratholme)
 		[-389] = "Вход для слуг",									-- Service Entrance (Stratholme)
 		[-390] = "Контрабандный путь",								-- Smuggler's Den (Spires of Arak)
@@ -717,7 +704,6 @@ for key,value in pairs({
 	-- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "Трофейный сундук",								-- Daily War Chest
 		[-491] = "Карты таро",
-		[-498] = "Круговерть Пустоты",								-- Twisting Nether (Demon Hunter Order Hall advancement)
 
 		[-520] = "Препатч",
 		[-521] = "Burning Crusade: Открытие Темного портала",
@@ -726,8 +712,6 @@ for key,value in pairs({
 		[-525] = "Warlords of Draenor: Вторжение Железной Орды",
 		[-526] = "Legion: Вторжение Легиона",
 		[-527] = "Battle for Azeroth: Война Шипов",
-		[-528] = "Расколотые острова",								-- Broken Isles [Mole Machine]
-		[-531] = "2008 событие Дух соперничества",
 		[-532] = "Heroes of the Storm",
 		[-533] = "Hearthstone",
 		[-534] = "Коллекционное издание",
@@ -789,9 +773,9 @@ for key,value in pairs({
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 	[-806] = "Часовой пояс",									-- Waist of Time
 
-	-- Mechagon
+	-- Chests
 		[-850] = "Механизированный сундук",							-- Mechanized Chest
-		[-851] = "Сейф братства Стальных Волн",						-- Irontide Chest
+		[-851] = "Тайник Темной Империи",							-- Black Empire Cache
 
 	-- 8.2 Neck Stuff
 		[-853] = "Все роли",										-- All Roles
@@ -805,13 +789,9 @@ for key,value in pairs({
 		[-861] = "Ранг 4",											-- Rank 4
 
 	-- Shadowlands Header
-		[-900] = "Обитель Ковенанта",								-- Covenant Sanctum
 		[-903] = "Добыча локации",									-- Zone Rewards
-		[-904] = "Гнев Тюремщика",									-- Wrath of the Jailer
-		[-905] = "Командирский стол",								-- Command Table
 		[-906] = "1-й уровень: Тактическое мышление",				-- Tier 1: Tactical Insight
-		[-907] = "Мертвая Бланчи",									-- Dead Blanchy
-		[-908] = "Награды",											-- Rewards
+		[-907] = "Мертвая Савраска",								-- Dead Blanchy
 		[-909] = "Охота: элементали смерти",						-- Hunt: Death Elementals
 		[-910] = "Охота: пожиратели душ",							-- Hunt: Alpha Devourers
 		[-911] = "Охота: темные гончие",							-- Hunt: Shadehounds
@@ -819,29 +799,23 @@ for key,value in pairs({
 		[-913] = "Мучители из Торгаста",							-- Tormentors of Torghast
 		[-914] = "Приключения",										-- Adventures
 		[-915] = "Проводник анимы",									-- Anima Conductor
-		[-916] = "1-й уровень: Растущая паутина",					-- Tier 1: Flowing Tendrils
-		[-917] = "2-й уровень: Тянущиеся нити",						-- Tier 2: Streaming Threads
-		[-918] = "3-й уровень: Текущая энергия",					-- Tier 3: Flowing Power
-		[-919] = "Ночная кобыла",									-- Night Mare
+		[-916] = string.format(COVENANT_SANCTUM_TIER, 1)..": Растущая паутина",	-- Tier 1: Flowing Tendrils
+		[-917] = string.format(COVENANT_SANCTUM_TIER, 2)..": Тянущиеся нити",-- Tier 2: Streaming Threads
+		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": Текущая энергия",	-- Tier 3: Flowing Power
 		[-977] = "Маэли Странница",									-- Maelie the Wanderer
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		[-980] = "Общие Сокровища",									-- Shared Treasures
 
 		-- SL Maldraxxus/Necrolord
-			[-920] = "Ковенант: Некролорды",						-- Covenant: Necrolord
 			[-921] = "Улучшения для Обители",						-- Sanctum Upgrades (Necrolord)
-			[-922] = "Театр Боли",									-- Theater of Pain
-			[-923] = "Фабрика Поганищ",								-- Abomination Factory (Necrolord)
 			[-924] = "Транспортная Сеть",							-- Transport Network (Necrolord)
-			[-925] = "1-й уровень: Собери себе друга",				-- Abomination Factory (Necrolord) Tier 1
-			[-926] = "2-й уровень: А теперь добавим ножек",			-- Abomination Factory (Necrolord) Tier 2
-			[-927] = "3-й уровень: Встань и живи",					-- Abomination Factory (Necrolord) Tier 3
-			[-928] = "4-й уровень: Кованые друзья",					-- Abomination Factory (Necrolord) Tier 4
-			[-938] = "5-й уровень: Лучшие друзья навсегда",			-- Abomination Factory (Necrolord) Tier 5
+			[-925] = string.format(COVENANT_SANCTUM_TIER, 1)..": Собери себе друга",	-- Abomination Factory (Necrolord) Tier 1
+			[-926] = string.format(COVENANT_SANCTUM_TIER, 2)..": А теперь добавим ножек",	-- Abomination Factory (Necrolord) Tier 2
+			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": Встань и живи",	-- Abomination Factory (Necrolord) Tier 3
+			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": Кованые друзья",	-- Abomination Factory (Necrolord) Tier 4
+			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Лучшие друзья навсегда",	-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			[-929] = "Ковенант: Ночной Народец",					-- Covenant: Night Fae
-			[-930] = "Королевский зимний сад",						-- Queen's Conservatory
 			[-931] = "Малый дух",									-- Lesser Spirit
 			[-932] = "Могучий дух",									-- Spirit
 			[-933] = "Божественный дух",							-- Greater Spirit
@@ -851,50 +825,44 @@ for key,value in pairs({
 			[-937] = "Транспортная сеть",							-- Transport Network (Night Fae)
 
 		-- SL Bastion/Kyrian
-			[-939] = "Ковенант: Кирии",								-- Covenant: Kyrian
-			[-940] = "Совет Перерожденных",							-- Ascended Counil
+			[-940] = "Совет перерожденных",							-- Ascended Counil
 			[-941] = "Улучшения для обители",						-- Sanctum Upgrades (Kyrian)
-			[-942] = "Путь Перерождения",							-- Path of Ascension
-			[-943] = "1-й уровень: Первые шаги",					-- Tier 1: First Steps
-			[-944] = "2-й уровень: Священные испытания",			-- Tier 2: Sacred Trials
-			[-945] = "3-й уровень: Дальнейшие тренировки",			-- Tier 3: Continued Teaching
-			[-946] = "4-й уровень: Учение Мудрости",				-- Tier 4: Teachings of Wisdom
-			[-947] = "5-й уровень: Испытания Смирения",				-- Tier 5: Trials of Humility
+			[-943] = string.format(COVENANT_SANCTUM_TIER, 1)..": Первые шаги",	-- Tier 1: First Steps
+			[-944] = string.format(COVENANT_SANCTUM_TIER, 2)..": Священные испытания",	-- Tier 2: Sacred Trials
+			[-945] = string.format(COVENANT_SANCTUM_TIER, 3)..": Дальнейшие тренировки",	-- Tier 3: Continued Teaching
+			[-946] = string.format(COVENANT_SANCTUM_TIER, 4)..": Учение Мудрости",	-- Tier 4: Teachings of Wisdom
+			[-947] = string.format(COVENANT_SANCTUM_TIER, 5)..": Испытания Смирения",	-- Tier 5: Trials of Humility
 			[-948] = "Транспортная сеть",							-- Transport Network (Kyrian)
-			[-3348] = "1-й уровень: Шаг веры",						-- Tier 1: Step of Faith
-			[-3349] = "2-й уровень: Прыжок силы",					-- Tier 2: Leap of Power
-			[-3350] = "3-й уровень: Вечные пути",					-- Tier 3: Eternal Paths
+			[-3348] = string.format(COVENANT_SANCTUM_TIER, 1)..": Шаг веры",	-- Tier 1: Step of Faith
+			[-3349] = string.format(COVENANT_SANCTUM_TIER, 2)..": Прыжок силы",	-- Tier 2: Leap of Power
+			[-3350] = string.format(COVENANT_SANCTUM_TIER, 3)..": Вечные пути",	-- Tier 3: Eternal Paths
 			[-966] = "Чертежи и Создание",							-- "Blueprints & Crafting"
-			[-972] = "Отвага",										-- Courage
 			[-973] = "Верность",									-- Loyalty
-			[-974] = "Мудрость",									-- Wisdom
 			[-975] = "Смирение",									-- Humility
 
 		-- SL Revendreth/Venthyr
-			[-949] = "Ковенант: Вентиры",							-- Covenant: Venthyr
 			[-950] = "Транспортная сеть",							-- Transport Network
-			[-951] = "1-й уровень: Зеркало, зеркало",				-- Tier 1: Mirror Mirror
-			[-952] = "2-й уровень: Через стекло",					-- Tier 2: Looking Glass"
-			[-953] = "3-й уровень: Зазеркалье",						-- Tier 3: Mirror's Edge
+			[-951] = string.format(COVENANT_SANCTUM_TIER, 1)..": Зеркало, зеркало",	-- Tier 1: Mirror, Mirror
+			[-952] = string.format(COVENANT_SANCTUM_TIER, 2)..": Через стекло",	-- Tier 2: Looking Glass
+			[-953] = string.format(COVENANT_SANCTUM_TIER, 3)..": Зазеркалье",	-- Tier 3: Mirror's Edge
 			[-954] = "Инквизиторы",									-- Inquisitors
-			[-955] = "Высшие Инквизиторы",							-- High Inquisitors
+			[-955] = "Старшие Инквизиторы",							-- High Inquisitors
 			[-956] = "Великие Инквизиторы",							-- Grand Inquisitors
 			[-957] = "Улучшения для обители",						-- Sanctum Upgrades (Venthyr)
-			[-958] = "2-й уровень: Заслуженное пиршество",			-- Tier 2: Deserved Feast
-			[-959] = "3-й уровень: Высокая эффективность",			-- Tier 3: Superior Efficiency
-			[-960] = "Пепельный двор",								-- The Ember Court
-			[-961] = "1-й уровень: Новый Двор",						-- Tier 1: A New Court
-			[-962] = "2-й уровень: Доморощенная помощь",			-- Tier 2: Homegrown Help
-			[-963] = "3-й уровень: Влияние при Дворе",				-- Tier 3: Court Influencer
-			[-964] = "4-й уровень: Тонкий вкус",					-- Tier 4: Discerning Taste
-			[-965] = "5-й уровень: Профессионалы",					-- Tier 5: The Professionals
+			[-958] = string.format(COVENANT_SANCTUM_TIER, 2)..": Заслуженное пиршество",	-- Tier 2: Deserved Feast
+			[-959] = string.format(COVENANT_SANCTUM_TIER, 3)..": Высокая эффективность",	-- Tier 3: Superior Efficiency
+			[-961] = string.format(COVENANT_SANCTUM_TIER, 1)..": Новый Двор",	-- Tier 1: A New Court
+			[-962] = string.format(COVENANT_SANCTUM_TIER, 2)..": Доморощенная помощь",	-- Tier 2: Homegrown Help
+			[-963] = string.format(COVENANT_SANCTUM_TIER, 3)..": Влияние при Дворе",	-- Tier 3: Court Influencer
+			[-964] = string.format(COVENANT_SANCTUM_TIER, 4)..": Тонкий вкус",	-- Tier 4: Discerning Taste
+			[-965] = string.format(COVENANT_SANCTUM_TIER, 5)..": Профессионалы",	-- Tier 5: The Professionals
 			[-967] = "Восстановление зеркала",						-- "Mirror Restoration",
 			[-968] = "Набор A",										-- Set A
 			[-969] = "Набор B",										-- Set B
 			[-970] = "Набор C",										-- Set C
 			[-971] = "Набор D",										-- Set D
 
-			[-976] = "Комплекты Кортии",								-- Korthian Sets
+			[-976] = "Комплекты Кортии",							-- Korthian Sets
 			[-1001] = "Черный ящик",
 
 	-- Warrior order hall lore items TODO: localize
@@ -904,12 +872,12 @@ for key,value in pairs({
 		[-2203] = "Глаз Хранителя",
 		[-2204] = "Первая из валь'кир",
 		[-2205] = "Печать на Чертогах Доблести",
-		[-2206] = "His Name Is Dragonblood",
-		[-2207] = "The Last Words of Asgrim the Dreadkiller",
-		[-2208] = "A Shieldmaiden's Creed",
-		[-2209] = "The Prophecy of Rythas the Oracle",
-		[-2210] = "The Lessons of the Blacklist",
-		[-2211] = "Volund's Folly",
+		[-2206] = "Октель Драконья Кровь",							-- His Name Is Dragonblood
+		[-2207] = "Последние слова Азгрима Смертоубийцы",			-- The Last Words of Asgrim the Dreadkiller
+		[-2208] = "Кредо девы щита",								-- A Shieldmaiden's Creed
+		[-2209] = "Пророчество Райтаса Провидца",					-- The Prophecy of Rythas the Oracle
+		[-2210] = "Уроки Черного Кулака",							-- The Lessons of the Blacklist
+		[-2211] = "Безрассудный Волунд",							-- Volund's Folly
 
 	-- Other Sets
 		[-3179] = "Комплект 3-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
@@ -921,11 +889,6 @@ for key,value in pairs({
 		[-3219] = "Благословенная броня убийцы нежити",
 		[-3220] = "Благословенное облачение убийцы нежити",
 		[-3221] = "Благословенное снаряжение истребителя нежити",
-	-- Anti-Undead Armor Sets [Vanilla Scourge Event]
-		[-3222] = "Регалии Зачистки Нежити",
-		[-3223] = "Доспехи истребителя нежити",
-		[-3224] = "Облачение Истребителя нежити",
-		[-3225] = "Броня истребления нежити",
 	-- Cloth WQ Gear
 		[-3241] = "Опаленный чародейский",
 		[-3242] = "Говорящий с костями",
@@ -1005,16 +968,12 @@ for key,value in pairs({
 		[-3336] = "Гремящие кости",
 		[-3337] = "Сумеречный дракон",
 		[-3347] = "Рубака Черного Зуба",
-	-- Chromie Scenario
 
-	-- PvP Sets
-	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
-		[-4191] = "Турнир",
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "Основной облик",
 			[-5201] = "Кампания оплота",
-			[-5202] = "Баланс Сил",
+			[-5202] = "Баланс Сил",									-- Balance of Power
 			[-5203] = "Награды за Престиж",
 			[-5204] = "Облик Испытаний",
 			[-5205] = "Скрытый облик",
@@ -1028,8 +987,6 @@ for key,value in pairs({
 		[-9952] = GetSpellInfo(234890).." и "..GetSpellInfo(137011), 	-- Guardian / Feral Druid Spec
 
 	------ ACHIEVEMENT HEADER SECTION ------
-		[-10066] = "Легендарные",									-- "Legendary";
-		[-10069] = "Сценарии",
 		[-10071] = "Видения Н'Зота",
 		[-10072] = "Нападение Н'Зота",
 		[-10073] = "Жуткое видение Оргримара",
@@ -1039,7 +996,6 @@ for key,value in pairs({
 		[-10077] = "Нападение: враждебные кланы",
 		[-10078] = "Нападение: нескончаемый рой",
 		[-10079] = "Нападение: появление акиров",
-		[-10080] = "Жуткие Видения",
 		[-10081] = "Заражённая область",
 		[-10082] = "Захваченная область",
 		[-10083] = "Нападения Ковенантов",							-- Covenant Assaults
@@ -1047,55 +1003,6 @@ for key,value in pairs({
 		-- Shadowlands Achievement Header
 			-- Achieve 14339 Sub-Criteira
 				[-1433901] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433902] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433903] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433904] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433905] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433906] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433907] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433908] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433909] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433910] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433911] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433912] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433913] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433914] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433915] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433916] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433917] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433918] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433919] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433920] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433921] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433922] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433923] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433924] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433925] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433926] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433927] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433928] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433929] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433930] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433931] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433932] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433933] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433934] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433935] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433936] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433937] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433938] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433939] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433940] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433941] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433942] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433943] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433944] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433945] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433946] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433947] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433948] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433949] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-				[-1433950] = "Осколок кристалла анимы",				-- Anima Crystal Shard
 
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Разбитое зеркало A-1",				-- Broken Mirror

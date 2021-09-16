@@ -119,7 +119,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 156003 },	-- Lorewalker Cho
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
 							["g"] = {
-								n(-851, {	-- Black Empire Cache placeholder
+								n(-851, {	-- Black Empire Cache
 									["coords"] = {
 										{ 52.7, 39.7, 1530 },	-- 57197
 										{ 53.9, 41.8, 1530 },	-- 57197

@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	tier(BFA_TIER, {
 		n(-10057, {	-- War Effort
-			n(-253, {	-- Horde War Campaign
+			n(-253, {	-- War Campaign - Horde
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					n(ACHIEVEMENTS, {

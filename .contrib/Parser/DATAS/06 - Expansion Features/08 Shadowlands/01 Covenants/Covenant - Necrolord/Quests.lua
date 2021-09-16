@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-920, {	-- Covenant: Necrolord
+		n(-920, {	-- Necrolord
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
 			["maps"] = { SEAT_OF_THE_PRIMUS },
 			["g"] = {
@@ -107,8 +107,8 @@ _.ExpansionFeatures =
 							-- Warrior
 							i(181469),	-- Indelible Victory
 							i(180847),	-- Inspiring Presence
-							
-							
+
+
 						},
 					}),
 					q(58504, {	-- Accusatory Missive

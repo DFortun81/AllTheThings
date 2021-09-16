@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-929, {	-- Covenant: Night Fae
+		n(-929, {	-- Night Fae
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 			["maps"] = {
 				THE_TRUNK,	-- Heart of the Forest
@@ -199,7 +199,7 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
-					n(-930, {	-- Queen's Conservatory
+					n(-930, {	-- The Queen's Conservatory
 						["maps"] = { 1662 },	-- Queen's Conservatory
 						["g"] = {
 							n(ACHIEVEMENTS,{

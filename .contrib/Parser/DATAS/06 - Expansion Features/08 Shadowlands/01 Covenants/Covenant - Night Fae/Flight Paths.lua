@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 	tier(SL_TIER, bubbleDown({
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 		},{
-		n(-929, {	-- Covenant: Night Fae
+		n(-929, {	-- Night Fae
 			["maps"] = {
 				THE_TRUNK,	-- Heart of the Forest
 				THE_ROOTS,	-- Heart of the Forest

@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-949, {	-- Covenant: Venthyr
+		n(-949, {	-- Venthyr
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr
 			--	TODO: quest through as Venthyr and unlock Adventures Scouting Map first instead of Mirror Network to test alternative version of "Our True Purpose"
 			-- "Our True Purpose" 59324 no longer shows as a 'valid Quest' from the server (2020-12-04), meaning likely no character has acquired it this week (2) of the expac?
@@ -2182,7 +2182,7 @@ _.ExpansionFeatures =
 							["coord"] = { 55.3, 27.1, SINFALL_REACHES },
 						}),
 						-- TODO: Add Questline for each Mirror Tier
-						n(-951, {	-- Tier 1: Mirror Mirror
+						n(-951, {	-- Tier 1: Mirror, Mirror
 							q(60060, {	-- Mirror Attunement: Pridefall Hamlet
 								["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
 								["provider"] = { "n", 167160 },	-- Laurent

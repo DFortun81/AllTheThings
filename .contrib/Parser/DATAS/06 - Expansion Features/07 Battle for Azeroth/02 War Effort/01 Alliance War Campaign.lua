@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	tier(BFA_TIER, {
 		n(-10057, {	-- War Effort
-			n(-236, {	-- Alliance War Campaign
+			n(-236, {	-- War Campaign - Alliance
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					ach(12510, {	-- Ready for War

@@ -52,13 +52,13 @@ _.Achievements =
 				ach(14836),		-- Unwavering Bond
 				ach(14637),		-- Your Covenant's Flavor
 			}),
-			n(-939, bubbleDown({["customCollect"] = { "SL_COV_KYR" }},{	-- Covenant: Kyrian
+			n(-939, bubbleDown({["customCollect"] = { "SL_COV_KYR" }},{	-- Kyrian
 				ach(14853),	-- All The Colors of the Painbow
 				ach(14860),	-- Bare Necessities
 				ach(14851, {	-- Bastion of Protection
 					crit(1),	-- Defeat Kalisthene with Spiritforged Aegis
 					crit(2),	-- Defeat Craven Corinth with Spiritforged Aegis
-				}),	
+				}),
 				ach(14856),	-- Charmed, I'm Sure
 				ach(14858),	-- Curse of Thirst
 				ach(14863),	-- Death Foursworn
@@ -152,7 +152,7 @@ _.Achievements =
 					["description"] = "Requires the Path of Ascension building. Some people needed 50+ tries for this achievement, others needed 500+. There is no guaranteed way known. You need to /wave at Athanos while he knocks you off with any ability.",
 				}),
 			})),
-			n(-920, bubbleDown({["customCollect"] = { "SL_COV_NEC" }},{	-- Covenant: Necrolord
+			n(-920, bubbleDown({["customCollect"] = { "SL_COV_NEC" }},{	-- Necrolord
 				ach(14833, {	-- Fashion Abomination
 					crit(1),	-- Chef Hat
 					crit(2),	-- Dapper Top Hat
@@ -286,7 +286,7 @@ _.Achievements =
 					ach(14753),	-- It's a Wrap
 				}),
 			})),
-			n(-929, bubbleDown({["customCollect"] = { "SL_COV_NFA" }},{	-- Covenant: Night Fae
+			n(-929, bubbleDown({["customCollect"] = { "SL_COV_NFA" }},{	-- Night Fae
 				ach(14789),	-- All Spirits Great and Small
 				ach(14676),	-- Divine Spirit Savior
 				ach(14780),	-- Meditation Master
@@ -297,7 +297,7 @@ _.Achievements =
 				ach(14677),	-- Spiritual Observations
 				ach(14670),	-- That's the Spirit
 			})),
-			n(-949, bubbleDown({["customCollect"] = { "SL_COV_VEN" }},{	-- Covenant: Venthyr
+			n(-949, bubbleDown({["customCollect"] = { "SL_COV_VEN" }},{	-- Venthyr
 				ach(14749, {	-- Rendle's Big Day
 					crit(1),	-- Crown of the Righteous
 					crit(2),	-- Fae Revel Masque

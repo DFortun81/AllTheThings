@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-920, {	-- Covenant: Necrolord
+		n(-920, {	-- Necrolord
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
 			["maps"] = { SEAT_OF_THE_PRIMUS },
 			["g"] = {
@@ -1567,7 +1567,7 @@ _.HiddenQuestTriggers = {
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10100, {	-- Shadowlands
-		n(-920, {	-- Covenant: Necrolord
+		n(-920, {	-- Necrolord
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth
 					i(179412),	-- 9.0 Covenant - Maldraxxus - Cloth - Head

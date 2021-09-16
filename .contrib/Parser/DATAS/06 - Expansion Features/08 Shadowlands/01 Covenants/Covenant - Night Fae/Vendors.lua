@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-929, {	-- Covenant: Night Fae
+		n(-929, {	-- Night Fae
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 			["maps"] = {
 				THE_TRUNK,	-- Heart of the Forest
@@ -1672,7 +1672,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 
 	}),
 	n(-10100, {	-- Shadowlands
-		n(-929, {	-- Covenant: Night Fae
+		n(-929, {	-- Night Fae
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth
 					i(179439),	-- 9.0 Covenant - Ardenweald - Cloth - Head

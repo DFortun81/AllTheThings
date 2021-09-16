@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-920, {	-- Covenant: Necrolord
+		n(-920, {	-- Necrolord
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
 			["maps"] = { SEAT_OF_THE_PRIMUS },
 			["g"] = {
@@ -931,7 +931,7 @@ _.ExpansionFeatures =
 					}),
 					n(-905, {	-- Command Table
 						["g"] = {
-							i(183744),	-- Superior Parts		
+							i(183744),	-- Superior Parts
 							n(-906, {	-- Tier 1: Tactical Insight
 								q(64465, {	-- Adventurer: Enceladus
 									["description"] = "Requires Renown 62.",

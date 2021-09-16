@@ -653,7 +653,6 @@ for key,value in pairs({
 		[-1] = BATTLE_PET_BREED_QUALITY2 .. TRANSMOG_SOURCE_1,		-- Common Boss Drop 普通首领掉落
 		--TODO: [-5] = "Prospecting",
 		[-7] = WORLD .. RAID_BOSSES,								-- World Bosses 世界首领
-		[-10] = "小队同步",											-- Party Sync
 		--TODO: [-11] = "Common Box Drops",							-- Common Box Drops
 		[-12] = DUNGEON_FLOOR_DIREMAUL5 .. " [东 - 恶魔]",			-- Warpwood Quarter [East - Demon] 扭木广场
 		[-13] = DUNGEON_FLOOR_DIREMAUL1 .. " [北 - 食人魔]",			-- Gordok Commons [North - Ogres] 戈多克议会
@@ -692,19 +691,14 @@ for key,value in pairs({
 		--TODO: [-88] = "Cathedral",
 		--TODO: [-90] = ELITE,										-- Elite
 		[-93] = "希利苏斯：创伤之痕",									-- Silithus (The Wound)
-		[-94] = "黑市拍卖行",										-- Black Market Auction House
 	-- TODO: Garrison Note: These will be changed into a new class soon(TM)
 		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)),			-- Stables
 		[-99] = "建筑",												-- Buildings
-		[-101] = "追随者",											-- Followers
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
 		[-130] = "暮色森林 "..GetSpellInfo(133137),					-- Duskwood Active
 		[-131] = "辛特兰 "..GetSpellInfo(133137),					-- The Hinterlands Active
 		[-132] = "菲拉斯 "..GetSpellInfo(133137),					-- Feralas Active
 		[-133] = "暮色森林 "..GetSpellInfo(78741),					-- Duskwood Activated
-	-- Invasions TODO: what levels?
-		[-137] = "90级",												-- Level 90
-		[-138] = "100级",											-- Level 100
 	-- Class Trial Sets
 		[-140] = "共济",												-- Communal
 		[-141] = "邪魂",												-- Felsoul
@@ -735,29 +729,22 @@ for key,value in pairs({
 		[-218] = "鱼饵",												-- Coastal (for Fishing)
 		[-224] = "伊利达雷",											-- Illidari
 		--TODO: [-228] = GetSpellInfo(218950),						-- GetSpellInfo(218950),  -- Flight Path
-		[-236] = "联盟阵营战役",										-- Alliance War Campaign
 		--TODO: [-242] = "Unrated",									-- Unrated
 		[-243] = "赏金任务",											-- Bounty
 		[-244] = "黑铁矮人",											-- Dark Iron Dwarf
 		[-245] = "玛格汉兽人",										-- Mag'har Orc
-		[-246] = "我之蜜糖",											-- Is Another Man's Treasure
-		[-247] = "潘达利亚的财富",									-- Riches of Pandaria
 		[-251] = "赞达拉巨魔",										-- Zandalari Troll
 		[-252] = "库尔提拉斯人",										-- Kul Tiran
-		[-253] = "部落阵营战役",										-- Horde War Campaign
 		[-254] = "传承护甲",											-- Heritage Armor
 		[-255] = "狐人",												-- Vulpera
 		[-256] = "机械侏儒",											-- Mechagnome
 	-- Other
-		[-351] = "首领掉落",											-- Boss Drop
 		[-356] = "进攻黑暗之门",										-- Assault on the Dark Portal
 		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower
-		[-362] = "晴日峰",											-- Peak of Serenity
 		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
 		[-366] = "武器系列",											-- Weapons Sets
 	-- Dungeon/Raid Wing Info
 		[-379] = "垃圾场",											-- Junkyard
-		[-380] = "车间",												-- Workshop
 		[-388] = "主门",												-- Main Gate (Stratholme)
 		[-389] = "仆从入口",											-- Service Entrance (Stratholme)
 		--TODO: [-390] = "Smuggler's Den",							-- Smuggler's Den (Spires of Arak)
@@ -773,7 +760,6 @@ for key,value in pairs({
 	-- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "战争宝箱",											-- Daily War Chest
 		[-491] = "塔罗牌",											-- Tarot Cards
-		--TODO: [-498] = "Круговерть Пустоты",						-- Twisting Nether (Demon Hunter Order Hall advancement)
 
 		[-520] = "资料片前夕",										-- Expansion Pre-Launch
 		[-521] = "燃烧的远征：Dark Portal Opens",					-- 这些谁知道官翻？
@@ -782,8 +768,6 @@ for key,value in pairs({
 		[-525] = "德拉诺之王：Iron Horde Incursion",					-- Warlords of Draenor: Iron Horde Incursion
 		[-526] = "军团再临：军团入侵",								-- Legion: Legion Invasion
 		[-527] = "争霸艾泽拉斯：荆棘之战",							-- Battle for Azeroth: War of the Thorns
-		[-528] = "破碎群岛",											-- Broken Isles [Mole Machine]
-		[-531] = "2008年竞争之魂活动",
 		[-532] = "风暴英雄推广活动",									-- Heroes of the Storm
 		[-533] = "炉石传说推广活动",									-- Hearthstone
 		[-534] = "典藏版",											-- Collector's Edition
@@ -854,9 +838,9 @@ for key,value in pairs({
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 	[-806] = "钟示贤德腰带",												-- Waist of Time
 
-	-- Mechagon
+	-- Chests
 		[-850] = "机械化的宝箱",										-- Mechanized Chest
-		[-851] = "铁潮宝箱",											-- Irontide Chest
+		[-851] = "Black Empire Cache",								-- Black Empire Cache
 
 	-- 8.2 Neck Stuff
 		[-853] = "全部角色",											-- All Roles
@@ -870,13 +854,9 @@ for key,value in pairs({
 		--TODO: [-861] = "Rank 4",									-- Rank 4
 
 	-- Shadowlands Header
-		[-900] = "盟约圣所",											-- Covenant Sanctum
 		[-903] = "区域奖励",											-- Zone Rewards
-		[-904] = "典狱长之怒",										-- Wrath of the Jailer
-		[-905] = "指挥台",											-- Command Table
 		[-906] = "等级 1: 战术洞察",									-- Tier 1: Tactical Insight
 		[-907] = "死掉的布兰契",										-- Dead Blanchy
-		--TODO: [-908] = "Rewards",									-- Rewards
 		--TODO: [-909] = "Hunt: Death Elementals",					-- Hunt: Death Elementals
 		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
 		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
@@ -884,29 +864,23 @@ for key,value in pairs({
 		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
 		--TODO: [-914] = "Adventures",								-- Adventures
 		[-915] = "心能导流器",										-- Anima Conductor
-		[-916] = "等级 1: 流动卷须",									-- Tier 1: Flowing Tendrils
-		[-917] = "等级 2: 涌动丝缕",									-- Tier 2: Streaming Threads
-		[-918] = "等级 3: 流动能量",									-- Tier 3: Flowing Power
-		[-919] = "梦魇骒马",											-- Night Mare
+		[-916] = string.format(COVENANT_SANCTUM_TIER, 1)..": 流动卷须",	-- Tier 1: Flowing Tendrils
+		[-917] = string.format(COVENANT_SANCTUM_TIER, 2)..": 涌动丝缕",-- Tier 2: Streaming Threads
+		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": 流动能量",	-- Tier 3: Flowing Power
 		[-977] = "游荡者梅莉",											-- Maelie the Wanderer
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		--TODO: [-980] = "Shared Treasures",						-- Shared Treasures
 
 		-- SL Maldraxxus/Necrolord
-			[-920] = "盟约: 通灵领主",								-- Covenant: Necrolord
 			--TODO: [-921] = "Sanctum Upgrades",					-- Sanctum Upgrades (Necrolord)
-			[-922] = "伤逝剧场",										-- Theater of Pain
-			[-923] = "憎恶工厂",										-- Abomination Factory (Necrolord)
 			[-924] = "传送网络",										-- Transport Network (Necrolord)
-			[-925] = "等级 1: 建造伙伴",								-- Abomination Factory (Necrolord) Tier 1
-			[-926] = "等级 2: 打造肢体",								-- Abomination Factory (Necrolord) Tier 2
-			[-927] = "等级 3: 给予生命",								-- Abomination Factory (Necrolord) Tier 3
-			[-928] = "等级 4: 铸就友谊",								-- Abomination Factory (Necrolord) Tier 4
-			[-938] = "等级 5: 永远的好魔友",							-- Abomination Factory (Necrolord) Tier 5
+			[-925] = string.format(COVENANT_SANCTUM_TIER, 1)..": 建造伙伴",	-- Abomination Factory (Necrolord) Tier 1
+			[-926] = string.format(COVENANT_SANCTUM_TIER, 2)..": 打造肢体",	-- Abomination Factory (Necrolord) Tier 2
+			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": 给予生命",	-- Abomination Factory (Necrolord) Tier 3
+			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": 铸就友谊",	-- Abomination Factory (Necrolord) Tier 4
+			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": 永远的好魔友",	-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			[-929] = "盟约: 法夜",									-- Covenant: Night Fae
-			[-930] = "女王的温室",									-- Queen's Conservatory
 			--TODO: [-931] = GetSpellInfo(7851),					-- Lesser Spirit
 			--TODO: [-932] = GetSpellInfo(172153),					-- Spirit
 			--TODO: [-933] = GetSpellInfo(13826),					-- Greater Spirit
@@ -916,43 +890,37 @@ for key,value in pairs({
 			[-937] = "传送网络",										-- Transport Network (Night Fae)
 
 		-- SL Bastion/Kyrian
-			[-939] = "盟约: 格里恩",									-- Covenant: Kyrian
 			[-940] = "晋升者议会",									-- Ascended Counil
 			--TODO: [-941] = "Sanctum Upgrades",					-- Sanctum Upgrades (Kyrian)
-			[-942] = "晋升之路",										-- Path of Ascension
-			[-943] = "等级 1: 牛刀小试",								-- Tier 1: First Steps
-			[-944] = "等级 2: 神圣试炼",								-- Tier 2: Sacred Trials
-			[-945] = "等级 3: 持续训练",								-- Tier 3: Continued Teaching
-			[-946] = "等级 4: 智慧教导",								-- Tier 4: Teachings of Wisdom
-			[-947] = "等级 5: 谦逊试炼",								-- Tier 5: Trials of Humility
+			[-943] = string.format(COVENANT_SANCTUM_TIER, 1)..": 牛刀小试",	-- Tier 1: First Steps
+			[-944] = string.format(COVENANT_SANCTUM_TIER, 2)..": 神圣试炼",	-- Tier 2: Sacred Trials
+			[-945] = string.format(COVENANT_SANCTUM_TIER, 3)..": 持续训练",	-- Tier 3: Continued Teaching
+			[-946] = string.format(COVENANT_SANCTUM_TIER, 4)..": 智慧教导",	-- Tier 4: Teachings of Wisdom
+			[-947] = string.format(COVENANT_SANCTUM_TIER, 5)..": 谦逊试炼",	-- Tier 5: Trials of Humility
 			[-948] = "传送网络",										-- Transport Network (Kyrian)
-			[-3348] = "等级 1: 信仰之步",							-- Tier 1: Step of Faith
-			[-3349] = "等级 2: 力量之跃",							-- Tier 2: Leap of Power
-			[-3350] = "等级 3: 永恒之路",							-- Tier 3: Eternal Paths
+			[-3348] = string.format(COVENANT_SANCTUM_TIER, 1)..": 信仰之步",	-- Tier 1: Step of Faith
+			[-3349] = string.format(COVENANT_SANCTUM_TIER, 2)..": 力量之跃",	-- Tier 2: Leap of Power
+			[-3350] = string.format(COVENANT_SANCTUM_TIER, 3)..": 永恒之路",	-- Tier 3: Eternal Paths
 			--TODO: [-966] = "Blueprints & Crafting",				-- Blueprints (for Path of Ascension)
-			--TODO: [-972] = "Courage",								-- Courage
 			--TODO: [-973] = "Loyalty",								-- Loyalty
-			--TODO: [-974] = "Wisdom",								-- Wisdom
 			--TODO: [-975] = "Humility",							-- Humility
 
 		-- SL Revendreth/Venthyr
-			[-949] = "盟约: 温西尔",									-- Covenant: Venthyr
 			[-950] = "传送网络",										-- Transport Network
-			--TODO: [-951] = "Tier 1: Mirror Mirror",				-- Tier 1: Mirror Mirror
-			[-952] = "等级 2: 通透镜面",								-- Tier 2: Looking Glass"
-			--TODO: [-953] = "Tier 3: Mirror's Edge",				-- Tier 3: Mirror's Edge
+			[-951] = string.format(COVENANT_SANCTUM_TIER, 1)..": 魔镜",	-- Tier 1: Mirror, Mirror
+			[-952] = string.format(COVENANT_SANCTUM_TIER, 2)..": 通透镜面",	-- Tier 2: Looking Glass
+			[-953] = string.format(COVENANT_SANCTUM_TIER, 3)..": 镜之边缘",	-- Tier 3: Mirror's Edge
 			--TODO: [-954] = "Inquisitors",							-- Inquisitors
 			--TODO: [-955] = "High Inquisitors",					-- High Inquisitors
 			--TODO: [-956] = "Grand Inquisitors",					-- Grand Inquisitors
 			--TODO: [-957] = "Sanctum Upgrades",					-- Sanctum Upgrades (Venthyr)
-			[-958] = "等级 2: 犒劳盛宴",								-- Tier 2: Deserved Feast
-			[-959] = "等级 3: 超强效率",								-- Tier 3: Superior Efficiency
-			[-960] = "灰烬王庭",										-- The Ember Court
-			[-961] = "等级 1: 全新王庭",								-- Tier 1: A New Court
-			[-962] = "等级 2: 家用帮手",								-- Tier 2: Homegrown Help
-			[-963] = "等级 3: 王庭明星",								-- Tier 3: Court Influencer
-			[-964] = "等级 4: 敏锐的味觉",							-- Tier 4: Discerning Taste
-			[-965] = "等级 5: 专业人士",								-- Tier 5: The Professionals
+			[-958] = string.format(COVENANT_SANCTUM_TIER, 2)..": 犒劳盛宴",	-- Tier 2: Deserved Feast
+			[-959] = string.format(COVENANT_SANCTUM_TIER, 3)..": 超强效率",	-- Tier 3: Superior Efficiency
+			[-961] = string.format(COVENANT_SANCTUM_TIER, 1)..": 全新王庭",	-- Tier 1: A New Court
+			[-962] = string.format(COVENANT_SANCTUM_TIER, 2)..": 家用帮手",	-- Tier 2: Homegrown Help
+			[-963] = string.format(COVENANT_SANCTUM_TIER, 3)..": 王庭明星",	-- Tier 3: Court Influencer
+			[-964] = string.format(COVENANT_SANCTUM_TIER, 4)..": 敏锐的味觉",	-- Tier 4: Discerning Taste
+			[-965] = string.format(COVENANT_SANCTUM_TIER, 5)..": 专业人士",	-- Tier 5: The Professionals
 			[-967] = "破镜重圆",										-- "Mirror Restoration",
 			--TODO: [-968] = "Set A",								-- Set A
 			--TODO: [-969] = "Set B",								-- Set B
@@ -965,7 +933,7 @@ for key,value in pairs({
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
-		--TODO: [-2202] = "Halls of GOld and Glory",
+		--TODO: [-2202] = "Halls of Gold and Glory",
 		--TODO: [-2203] = "The Keeper's Eye",
 		--TODO: [-2204] = "First of the Val'kyr",
 		--TODO: [-2205] = "The Sealing of the Halls of Valor",
@@ -986,11 +954,6 @@ for key,value in pairs({
 		[-3219] = "神圣的亡灵毁灭护甲",
 		[-3220] = "神圣的亡灵毁灭套装",
 		[-3221] = "神圣的亡灵毁灭战甲",
-	-- Anti-Undead Armor Sets [Vanilla Scourge Event]
-		[-3222] = "亡灵净化者",
-		[-3223] = "亡灵屠戮者的护甲",
-		[-3224] = "亡灵屠戮者的装备",
-		[-3225] = "亡灵毁灭者",
 	-- Cloth WQ Gear
 		[-3241] = "焦魔套装",
 		[-3242] = "骨语套装",
@@ -1071,12 +1034,10 @@ for key,value in pairs({
 		[-3336] = "响骨",
 		[-3337] = "暮光巨龙",
 		[-3347] = "黑齿步兵",
-	-- Chromie Scenario
 
 	-- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
 		[-4189] = "PvP套装",											-- Instance Item Sets, PvP
-		[-4191] = "竞技装备",										-- Tournament
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "基础外观",									-- Base Appearance
@@ -1091,8 +1052,6 @@ for key,value in pairs({
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
 
 	------ ACHIEVEMENT HEADER SECTION ------
-		--TODO: [-10066] = BATTLE_PET_BREED_QUALITY6,				-- Legendary
-		[-10069] = "场景战役",										-- Scenarios
 		[-10071] = "恩佐斯的幻象",									-- Visions of N'Zoth
 		[-10072] = "恩佐斯突袭",										-- N'Zoth Assault
 		[-10073] = "奥格瑞玛的惊魂幻象",								-- Horrific Vision of Orgrimmar
@@ -1102,7 +1061,6 @@ for key,value in pairs({
 		[-10077] = "突袭：战争氏族",									-- Assault: The Warring Clans
 		[-10078] = "突袭：无尽虫群",									-- Assault: The Endless Swarm
 		[-10079] = "突袭：亚基重现",									-- Assault: Aqir Unearthed
-		[-10080] = "惊魂幻象",										-- Horrific Visions
 		[-10081] = "腐化区域",										-- Corrupted Area
 		[-10082] = "失落区域",										-- Lost Area
 		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
@@ -1110,55 +1068,6 @@ for key,value in pairs({
 		-- Shadowlands Achievement Header
 			-- Achieve 14339 Sub-Criteira
 				[-1433901] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433902] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433903] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433904] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433905] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433906] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433907] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433908] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433909] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433910] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433911] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433912] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433913] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433914] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433915] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433916] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433917] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433918] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433919] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433920] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433921] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433922] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433923] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433924] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433925] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433926] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433927] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433928] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433929] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433930] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433931] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433932] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433933] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433934] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433935] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433936] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433937] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433938] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433939] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433940] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433941] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433942] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433943] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433944] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433945] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433946] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433947] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433948] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433949] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433950] = "心能水晶碎片",							-- Anima Crystal Shard
 
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "残破的镜子 A-1",						-- Broken Mirror

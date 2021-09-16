@@ -230,227 +230,227 @@ _.Zones =
 						i(180772),	-- Silverwind Larion (MOUNT!)
 					--	https://www.wowhead.com/achievement=14339/shard-labor#comments
 					--	moving completed ones up to the top for now so it's easier to see which one checks off (to verify coords + add data more easily)
-						n(-1433945, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On a bookshelf inside the room behind Rector Kalliope.",
 							["questID"] = 61295,
 							["coord"] = { 24.3, 18.2, BASTION },
 						}),
-						n(-1433943, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On a pillar underneath the platform.  The shard is surrounded by mobs that will attack you even if you land properly on top of the pillar, so you need a way to stun, fear, or kill them so you can loot.\n\nDon't jump all the way down to the middle section.  There is a small gap between the staircase to the top of the platform and the archway the waterfall passes through.  Walk through the gap and forward along the ledge.  The shard can be difficult to see, depending on your camera angle, but you need to jump off the ledge towards the pillar.",
 							["questID"] = 61293,
 							["coord"] = { 24.6, 22.9, BASTION },
 						}),
-						n(-1433944, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Behind some barrels of anima.",
 							["questID"] = 61294,
 							["coord"] = { 26.1, 22.6, BASTION },
 						}),
-						n(-1433942, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "The pathway to this shard starts at |cFFFFFFFF27.7, 19.2|r, in an area full of elite mobs.  Run up the ledge on the side of the mountain until you can jump down to the archway and pick up the shard.",
 							["questID"] = 61292,
 							["coord"] = { 30.6, 23.7, BASTION },
 						}),
-						n(-1433941, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "At the bottom of the lake, hidden inside the base of a fallen statue.",
 							["questID"] = 61291,
 							["coord"] = { 31.0, 27.4, BASTION },
 						}),
-						n(-1433940, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Jump over the short wall to the left of the statue at |cFFFFFFFF33.2, 36.8|r.  The shard is at the end of the ledge.",
 							["questID"] = 61290,
 							["coord"] = { 33.0, 37.6, BASTION },
 						}),
-						n(-1433916, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On a tiny outcropping behind Epistasia.  Jump from the side, rather than trying to fall backwards to the shard.",
 							["questID"] = 61257,
 							["coord"] = { 34.8, 65.7, BASTION },
 						}),
-						n(-1433937, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "The path to this shard starts at |cFFFFFFFF35.1, 23.2|r.  Just follow the ledge around the cliffs.",
 							["questID"] = 61287,
 							["coord"] = { 37.1, 24.6, BASTION },
 						}),
-						n(-1433921, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Up at the top of a small fallen pillar.",	-- TODO: i don't remember if it was a pillar or a crumbled building or something, fix wording?
 							["questID"] = 61264,
 							["coord"] = { 38.5, 53.2, BASTION },
 						}),
-						n(-1433901, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Underneath the bridge that runs from Aspirant's Crucible to the Vestibule of Eternity.\n\nUse a Goblin Glider at |cFFFFFFFF39.6, 74.6|r to reach the platform.  After you've collected the shard, leap off the side and a Kyrian will carry you to safety.",
 							["questID"] = 61225,
 							["coord"] = { 39.0, 77.0, BASTION },
 						}),
-						n(-1433920, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On top of a pillar.  Jump down from the cliffs above.  Levitate helped me reach this one.",
 							["questID"] = 61263,
 							["coord"] = { 40.0, 59.1, BASTION },
 						}),
-						n(-1433919, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Don't fully jump down from the cliffs.  It's on the lower portion, hidden on a narrow ledge.",
 							["questID"] = 61261,
 							["coord"] = { 41.4, 46.6, BASTION },
 						}),
-						n(-1433936, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "From |cFFFFFFFF43.8, 21.6|r, simply walk toward the shard's coordinates.  It's just through an arch on a ledge.",
 							["questID"] = 61286,
 							["coord"] = { 42.3, 24.0, BASTION },
 						}),
-						n(-1433939, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On top of a gazebo with a crystal roof.  You will have to jump down to the shard from the cliffs above.",
 							["questID"] = 61289,
 							["coord"] = { 42.7, 39.4, BASTION },
 						}),
-						n(-1433938, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "At the end of a narrow ledge that starts at |cFFFFFFFF43.6, 33.8|r.",
 							["questID"] = 61288,
 							["coord"] = { 42.8, 33.2, BASTION },
 						}),
-						n(-1433902, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On the middle level of the waterfall.  Jump down from above.",
 							["questID"] = 61235,
 							["coord"] = { 43.6, 76.2, BASTION },
 						}),
-						n(-1433935, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On a ledge underneath a waterfall.  The path starts at |cFFFFFFFF45.6, 25.2|r.  Follow the ledge to the right until you get to the shard.",
 							["questID"] = 61285,
 							["coord"] = { 44.9, 28.4, BASTION },
 						}),
-						n(-1433934, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "The path starts around |cFFFFFFFF45.5, 20.3|r.  Just follow the ledge on the right.  You will pass a statue of a steward when you are about halfway to the shard.  The path is so narrow and short in some places that mounting will knock you off the path or prevent you from continuing along it.",
 							["questID"] = 61284,
 							["coord"] = { 46.7, 18.0, BASTION },
 						}),
-						n(-1433914, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On top of a fallen wall.  Climb up, and then you can carefully fall backwards towards the shard.",
 							["questID"] = 61253,
 							["coord"] = { 46.7, 65.9, BASTION },
 						}),
-						n(-1433918, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On the middle section of the cliffside, underneath the platform.",
 							["questID"] = 61260,
 							["coord"] = { 47.0, 49.2, BASTION },
 						}),
-						n(-1433903, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On a very narrow piece of the framework of Aspirant's Rest.  Use a Goblin Glider.  You can go to the highest cliff on the other side of the building, but I was able to glide straight towards the shard from |cFFFFFFFF48.6, 70.7|r, land on the nearby pillar, and hop over to pick up the shard.",
 							["questID"] = 61236,
 							["coord"] = { 48.4, 72.7, BASTION },
 						}),
-						n(-1433929, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On top of a pillar.  You will need to jump down from the cliffs above.",
 							["questID"] = 61279,
 							["coord"] = { 48.5, 34.9, BASTION },
 						}),
-						n(-1433928, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On a rock underneath the bridge.  You will have to jump down from the cliffs on the western side.",
 							["questID"] = 61278,
 							["coord"] = { 49.9, 38.2, BASTION },
 						}),
-						n(-1433915, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On a beam that goes across the top of a little hut.  You will have to jump down to the shard from the cliffs above.",
 							["questID"] = 61254,
 							["coord"] = { 50.6, 56.1, BASTION },
 						}),
-						n(-1433917, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On the ledge of Hero's Rest, next to the stairs.  You have to jump down to the bottom of the rocky platform and walk along the edge to reach the shard.",
 							["questID"] = 61258,
 							["coord"] = { 51.6, 48.0, BASTION },
 						}),
-						n(-1433927, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On top of a pillar.  You will have to jump down from the cliffs above.",
 							["questID"] = 61277,
 							["coord"] = { 52.1, 39.4, BASTION },
 						}),
-						n(-1433933, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Enter Covinkles' Workshop at |cFFFFFFFF53.8, 9.6|r.  The shard is on the left side, behind some barrels.",
 							["questID"] = 61283,
 							["coord"] = { 52.4, 09.3, BASTION },
 						}),
-						n(-1433904, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Underneath the cliff, on a small outcropping above the water.  You'll need to jump from the side of the hill to get to the shard.  Slow fall abilities are useful here.",
 							["questID"] = 61237,
 							["coord"] = { 52.6, 75.5, BASTION },
 						}),
-						n(-1433905, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Underwater, beneath the little bridge.",
 							["questID"] = 61238,
 							["coord"] = { 53.3, 73.6, BASTION },
 						}),
-						n(-1433906, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On top of one of the pillars.  Some strategic jumping is required to get to this one (and luck).",
 							["questID"] = 61239,
 							["coord"] = { 53.5, 80.6, BASTION },
 						}),
-						n(-1433913, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "At the bottom of waterfall on the left-hand side, inside a small shrine.",
 							["questID"] = 61251,
 							["coord"] = { 54.0, 59.6, BASTION },
 						}),
-						n(-1433907, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On a little outcropping on the cliffside.  Some strategic falling is required to reach this shard.",
 							["questID"] = 61241,
 							["coord"] = { 55.9, 86.6, BASTION },
 						}),
-						n(-1433931, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Underneath the highest part of the cliff.  Jump down to the second part of the cliff and walk underneath the large outcropping.",
 							["questID"] = 61281,
 							["coord"] = { 56.2, 17.3, BASTION },
 						}),
-						n(-1433930, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Behind the Gilded Bulwark, on the left side of a small table.",
 							["questID"] = 61280,
 							["coord"] = { 56.7, 28.8, BASTION },
 						}),
-						n(-1433910, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Partway up the wall.  You must jump down from the platform above.",
 							["questID"] = 61247,
 							["coord"] = { 56.9, 74.9, BASTION },
 						}),
-						n(-1433926, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Enter the Hall of Beasts at |cFFFFFFFF55.6, 43.0|r.  The shard is all the way at the back, hidden behind some barrels.",
 							["questID"] = 61275,
 							["coord"] = { 57.5, 38.3, BASTION },
 						}),
-						n(-1433922, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On top of the cliff (not in the cave below), at the base of a tree.",
 							["questID"] = 61270,
 							["coord"] = { 57.6, 55.6, BASTION },
 						}),
-						n(-1433912, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Don't go up the small staircase.  To the right of the stairs, there is a passage that leads to the bottom of a little waterfall on the cliffside.  The shard is there, to the left, underneath a Vesper.",
 							["questID"] = 61250,
 							["coord"] = { 58.1, 63.9, BASTION },
 						}),
-						n(-1433909, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "You have to carefully jump down from the cliffs.  The shard is close to the edge of the map, next to a small pool of water at the top of a waterfall.",
 							["questID"] = 61245,
 							["coord"] = { 58.1, 80.0, BASTION },
 						}),
-						n(-1433932, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On a ledge.  You will need to jump down from the cliffs above.",
 							["questID"] = 61282,
 							["coord"] = { 59.8, 13.9, BASTION },
 						}),
-						n(-1433908, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On the edge of the cliffs.",
 							["questID"] = 61244,
 							["coord"] = { 61.0, 85.6, BASTION },
 						}),
-						n(-1433923, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "On the upper level, in a bookshelf.",
 							["questID"] = 61271,
 							["coord"] = { 65.2, 42.8, BASTION },
 						}),
-						n(-1433911, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Use the Anima Gateway at |cFFFFFFFF63.5, 72.4|r.  You can only use the gateway if you aren't in combat, so be careful what you pull.\n\nAfter taking the gateway, head to the shard coordinates.  It is hidden behind a pillar.",
 							["questID"] = 61249,
 							["coord"] = { 65.5, 71.9, BASTION },
 						}),
-						n(-1433925, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Underneath the edge of the platform.  Facing north, towards the sky, drop off the left-hand side of the platform and walk under it.",
 							["questID"] = 61274,
 							["coord"] = { 66.9, 26.9, BASTION },
 						}),
-						n(-1433924, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Walk along the lower ledge that starts at |cFFFFFFFF71.4, 38.9|r.",
 							["questID"] = 61273,
 							["coord"] = { 72.4, 40.2, BASTION },

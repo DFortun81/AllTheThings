@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-939, {	-- Covenant: Kyrian
+		n(-939, {	-- Kyrian
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 			["maps"] = {
 				ARCHONS_RISE,
@@ -1542,7 +1542,7 @@ _.HiddenQuestTriggers = {
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10100, {	-- Shadowlands
-		n(-939, {	-- Covenant: Kyrian
+		n(-939, {	-- Kyrian
 			n(-163, {	-- Armor
 				n(-45, {	-- Mail
 					i(179394),	-- 9.0 Covenant - Bastion - Mail - Base - Head

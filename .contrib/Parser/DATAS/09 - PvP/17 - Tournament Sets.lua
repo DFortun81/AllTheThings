@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	pvp(n(-4191, {	-- Tournament Sets
+	pvp(n(-4191, {	-- Tournament Gear
 		["description"] = "These items were available during Warlords of Draenor, but only served as an ilvl booster for players participating in War Games for fun. They could not be transmogged nor used for any purpose other than War Games.",
 		["u"] = REMOVED_FROM_GAME,
 		["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME }, {

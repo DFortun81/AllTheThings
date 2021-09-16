@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 	tier(SL_TIER, bubbleDown({
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 		},{
-		n(-939, {	-- Covenant: Kyrian
+		n(-939, {	-- Kyrian
 			["maps"] = {
 				ARCHONS_RISE,
 				SANCTUM_OF_BINDING,

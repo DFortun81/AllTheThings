@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-949, {	-- Covenant: Venthyr
+		n(-949, {	-- Venthyr
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr
 			["maps"] = {
 				SINFALL_REACHES,
