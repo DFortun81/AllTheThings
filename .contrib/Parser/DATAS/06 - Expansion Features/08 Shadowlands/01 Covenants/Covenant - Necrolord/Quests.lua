@@ -107,8 +107,6 @@ _.ExpansionFeatures =
 							-- Warrior
 							i(181469),	-- Indelible Victory
 							i(180847),	-- Inspiring Presence
-
-
 						},
 					}),
 					q(58504, {	-- Accusatory Missive

@@ -6,10 +6,12 @@ import fileinput
 import logging
 import re
 import sys
-from collections import namedtuple
+from enum import Enum
+from typing import NamedTuple, cast
 
 import requests
 from bs4 import BeautifulSoup
+from bs4.element import Tag
 
 logging.basicConfig(
     format="%(levelname)s:%(message)s", stream=sys.stdout, level=logging.INFO
@@ -19,15 +21,34 @@ CUSTOM_OBJECTS_CONST = 9000000
 LOCALES_DIR = "../../../locales/"
 
 
-def get_localized_obj_name(obj_id, lang_code="en", game_flavor="retail"):
-    if lang_code == "en":
-        lang_code = ""
-    if game_flavor == "retail":
-        game_flavor = ""
+class LangCode(Enum):
+    ENGLISH = ""
+    DEUTSCH = "de"
+    SPANISH = "es"
+    FRENCH = "fr"
+    ITALIAN = "it"
+    PORTUGUESE = "pt"
+    RUSSIAN = "ru"
+    KOREAN = "ko"
+    CHINESE = "cn"
+
+
+class GameFlavor(Enum):
+    RETAIL = ""
+    CLASSIC = "classic"
+    TBC = "tbc"
+    PTR = "ptr"
+
+
+def get_localized_obj_name(
+    obj_id: int,
+    lang_code: LangCode = LangCode.ENGLISH,
+    game_flavor: GameFlavor = GameFlavor.RETAIL,
+) -> str:
     url = "https://"
-    if lang_code != "":
+    if lang_code != LangCode.ENGLISH:
         url += f"{lang_code}."
-    if game_flavor != "":
+    if game_flavor != GameFlavor.RETAIL:
         url += f"{game_flavor}."
     url += f"wowhead.com/object={obj_id}"
 
@@ -36,24 +57,25 @@ def get_localized_obj_name(obj_id, lang_code="en", game_flavor="retail"):
         logging.warning(f"Can't find {obj_id} at {url}!")
         return ""
     if "ptr" in page.url:
-        logging.warning(f"{url} redirects to {url.replace(lang_code, 'ptr')}")
+        logging.warning(f"{url} redirects to {url.replace(str(lang_code), 'ptr')}")
         return ""
     soup = BeautifulSoup(page.content, "html.parser")
     heading = soup.find("h1", class_="heading-size-1")
     if heading is None:
         logging.warning(f"Can't find heading-size-1 for {obj_id} on Wowhead!")
         return ""
+    text = cast(Tag, heading).text
     # not localized names look like [en_obj_name] on Wowhead
-    if heading.text.startswith("["):
-        logging.info(f"No localization for {obj_id}: {heading.text}")
+    if text.startswith("["):
+        logging.info(f"No localization for {obj_id}: {text}")
         return ""
-    if '"' in heading.text:
-        return heading.text.replace('"', '\\"')
-    return heading.text
+    if '"' in text:
+        return text.replace('"', '\\"')
+    return text
 
 
-def get_todo_lines(lines):
-    todo_dict = {}
+def get_todo_lines(lines: list[str]):
+    todo_dict: dict[int, int] = {}
     for ind, line in enumerate(lines):
         if "ObjectNames" in line:
             # logging.info(f"Found beginning at line {ind + 2}!")
@@ -63,7 +85,12 @@ def get_todo_lines(lines):
                     # logging.info(f"Found ending at line {ind - 1}!")
                     break
                 if "--TODO: " in line:
-                    obj_id = re.search(r"\d+", line).group()
+                    match = re.search(r"\d+", line)
+                    if match is None:
+                        logging.error(f"Couldn't find id in line {ind}: {line}")
+                        ind += 1
+                        continue
+                    obj_id: int = cast(re.Match, match).group()
                     if int(obj_id) > CUSTOM_OBJECTS_CONST:  # custom objects
                         ind += 1
                         continue
@@ -73,8 +100,8 @@ def get_todo_lines(lines):
     return todo_dict
 
 
-def get_localized_names(todo_dict, lang_code):
-    localized_dict = {}
+def get_localized_names(todo_dict: dict[int, int], lang_code: LangCode):
+    localized_dict: dict[int, str] = {}
     for obj_line_ind, obj_id in todo_dict.items():
         localized_obj_name = get_localized_obj_name(obj_id, lang_code)
 
@@ -88,7 +115,9 @@ def get_localized_names(todo_dict, lang_code):
     return localized_dict
 
 
-def localize_objects(filename, lang_code, original_obj_names={}):
+def localize_objects(
+    filename: str, lang_code: LangCode, original_obj_names: dict[int, str] = {}
+):
     logging.info(f"Starting {lang_code}!")
     file = open(filename)
     lines = file.readlines()
@@ -114,12 +143,14 @@ def localize_objects(filename, lang_code, original_obj_names={}):
     return original_obj_names
 
 
-def sort_objects(filename):
+def sort_objects(filename: str):
     file = open(filename)
     lines = file.readlines()
     lines_copy = lines.copy()
 
-    todo_dict = {}
+    todo_dict: dict[int, int] = {}
+    first_obj_line = -1
+    last_obj_line = -1
     for ind, line in enumerate(lines):
         if "ObjectNames" in line:
             first_obj_line = ind + 2
@@ -136,10 +167,21 @@ def sort_objects(filename):
                     # logging.info(f"Found ending at line {last_obj_line}!")
                     break
 
-                obj_id = re.search(r"\d+", line).group()
+                match = re.search(r"\d+", line)
+                if match is None:
+                    logging.error(f"Couldn't find id in line {ind}: {line}")
+                    ind += 1
+                    continue
+                obj_id: int = cast(re.Match, match).group()
                 todo_dict[ind] = int(obj_id)
                 ind += 1
             break
+    if first_obj_line == -1:
+        logging.error("Couldn't find list of objects.")
+        return
+    if last_obj_line == -1:
+        logging.error("Couldn't find end of object list.")
+        return
     sorted_list = list(
         dict(sorted(todo_dict.items(), key=lambda item: item[1])).items()
     )
@@ -153,17 +195,25 @@ def sort_objects(filename):
         print(line, end="")  # this writes to file
 
 
-ObjectsInfo = namedtuple("ObjectsInfo", "objects first_obj_line last_obj_line")
-Object = namedtuple("Object", "id name line")
+class Object(NamedTuple):
+    id: int
+    name: str
+    line: str
 
 
-def get_objects_info(filename):
+class ObjectsInfo(NamedTuple):
+    objects: list[Object]
+    first_line: int
+    last_line: int
+
+
+def get_objects_info(filename: str):
     sort_objects(filename)
     file = open(filename)
     lines = file.readlines()
     file.close()
 
-    objects = []
+    objects: list[Object] = []
     first_obj_line = 0
     last_obj_line = 0
     for ind, line in enumerate(lines):
@@ -182,7 +232,8 @@ def get_objects_info(filename):
                     # logging.info(f"Found ending at line {last_obj_line}!")
                     break
 
-                obj_id = re.search(r"\d+", line).group()
+                match = re.search(r"\d+", line)
+                obj_id: int = cast(re.Match, match).group()
 
                 if "GetSpellInfo" in line:  # skip GetSpellInfo lines
                     ind += 1
@@ -210,13 +261,12 @@ def get_objects_info(filename):
     return ObjectsInfo(objects, first_obj_line, last_obj_line)
 
 
-game_flavors = ["retail", "classic", "tbc"]
-
-
-def get_new_object_line(obj_id, obj_name, lang_code):
+def get_new_object_line(obj_id: int, obj_name: str, lang_code: LangCode):
     logging.info(f"New object {obj_id}: {obj_name}")
 
-    for game_flavor in game_flavors:
+    localized_obj_name = ""
+    game_flavor = GameFlavor.RETAIL
+    for game_flavor in GameFlavor:
         localized_obj_name = get_localized_obj_name(obj_id, lang_code, game_flavor)
         if localized_obj_name != "":
             break
@@ -227,7 +277,7 @@ def get_new_object_line(obj_id, obj_name, lang_code):
         new_object = f'\t--TODO: [{obj_id}] = "{obj_name}",\t-- {obj_name}\n'
     else:  # all good (maybe)
         new_object = f'\t[{obj_id}] = "{localized_obj_name}",\t-- {obj_name}\n'
-        if game_flavor != "retail":
+        if game_flavor and game_flavor != GameFlavor.RETAIL:
             new_object = re.sub(
                 "\n",
                 f"\t--TODO: This was taken from {game_flavor} Wowhead\n",
@@ -238,12 +288,13 @@ def get_new_object_line(obj_id, obj_name, lang_code):
     return new_object
 
 
-def sync_objects(objects, filename, lang_code):
+def sync_objects(objects: list[Object], filename: str, lang_code: LangCode):
     logging.info(f"Syncing {lang_code}!")
     localized_objects, first_obj_line, last_obj_line = get_objects_info(filename)
 
     new_tail = False
     localized_ind = 0
+    ind = 0
     for ind, (obj_id, obj_name, _) in enumerate(objects):
         if localized_ind == len(localized_objects):  # new objects in tail
             new_tail = True

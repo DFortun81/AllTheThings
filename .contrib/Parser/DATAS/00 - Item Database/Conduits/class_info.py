@@ -25,8 +25,8 @@ def build_set_x_classes() -> dict[int, SetXClasses]:
         csvreader = csv.reader(csvfile, delimiter=",")
         next(csvreader)
         for row in csvreader:
-            spec_id = row[3]
-            class_id = row[4]
+            spec_id = int(row[3])
+            class_id = int(row[4])
             specs[spec_id] = SpecXClass(spec_id, class_id)
 
     spec_sets: list[SpecXSet] = []
@@ -34,7 +34,7 @@ def build_set_x_classes() -> dict[int, SetXClasses]:
         csvreader = csv.reader(csvfile, delimiter=",")
         next(csvreader)
         for _, spec_id, set_id in csvreader:
-            spec_sets.append(SpecXSet(spec_id, set_id))
+            spec_sets.append(SpecXSet(int(spec_id), int(set_id)))
 
     spec_set_x_classes: dict[int, SetXClasses] = {}
     for spec_set_info in spec_sets:
