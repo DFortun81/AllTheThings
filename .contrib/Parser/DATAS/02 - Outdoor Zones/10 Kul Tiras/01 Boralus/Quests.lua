@@ -686,15 +686,6 @@ _.Zones =
 					["coord"] = { 68.0, 21.9, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(55142, {	-- For the Alliance
-					["provider"] = { "n", 150941 },	-- Katherine Proudmoore
-					["coord"] = { 67.8, 21.8, BORALUS },
-					["races"] = { KULTIRAN },
-					["lvl"] = 20,
-					["g"] = {
-						i(165010),	-- Tabard of Kul Tiras
-					},
-				}),
 				q(50790, {	-- Hot Pursuit
 					["sourceQuests"] = {
 						50789,	-- Clear the Air

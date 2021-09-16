@@ -10,23 +10,6 @@ _.Zones =
 			["isRaid"] = true,	-- Cities we mark as Raids
 			["races"] = { MECHAGNOME },
 			["icon"] = "Interface\\Icons\\inv_eng_gearspringparts",
-			["g"] = {
-				q(58146, {	-- For the Alliance
-					["coord"] = { 34.0, 57.5, 1573 },
-					["races"] = { MECHAGNOME },
-					["provider"] = { "n", 159587 },	-- Gelbin Mekkatorque
-					["g"] = {
-						i(174068),	-- Mechagonian Tabard
-					},
-				}),
-				q(58147, {	-- Stranger in a Strange Land
-					["maps"] = { STORMWIND_CITY },
-					["coord"] = { 53.0, 15.2, STORMWIND_CITY },
-					["races"] = { MECHAGNOME },
-					["provider"] = { "n", 133362 },	-- Ambassador Moorgard
-					["sourceQuest"] = 58146,	-- For the Alliance
-				}),
-			},
 		}),
 	}),
 };

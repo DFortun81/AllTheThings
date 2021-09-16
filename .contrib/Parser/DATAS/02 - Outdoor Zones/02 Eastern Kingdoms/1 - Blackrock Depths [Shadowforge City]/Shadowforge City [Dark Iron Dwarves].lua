@@ -6,34 +6,6 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(1186, {	-- Blackrock Depths: Shadowforge City
-			q(51486, {	-- Fer the Alliance
-				["provider"] = { "n", 144152 },	-- Moira Thaurissan
-				["coord"] = { 56.6, 31.8, 1186 },
-				["races"] = { DARKIRON },
-				["lvl"] = 20,
-				["g"] = {
-					i(161329),	-- Tabard of the Dark Iron
-					i(157022),	-- Letter from King Anduin Wrynn
-				},
-			}),
-			q(51483, {	-- Heritage o' the Dark Iron
-				["provider"] = { "n", 144152 },	-- Moira Thaurissan
-				["coord"] = { 56.6, 31.8, 1186 },
-				["races"] = { DARKIRON },
-				["lvl"] = 110,
-				["g"] = {
-					ach(13076, {	-- Heritage of the Dark Iron
-						i(161008),	-- Dark Iron Helm
-						i(161009),	-- Dark Iron Pauldrons
-						i(161010),	-- Dark Iron Mantle
-						i(161015),	-- Dark Iron Bracers
-						i(161011),	-- Dark Iron Gloves
-						i(161012),	-- Dark Iron Belt
-						i(161013),	-- Dark Iron Leggings
-						i(161014),	-- Dark Iron Boots
-					}),
-				},
-			}),
 			n(-517, {	-- Mole Machine
 				n(-9976, {	-- Kalimdor
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
