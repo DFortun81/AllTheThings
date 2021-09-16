@@ -47,9 +47,9 @@ def get_localized_obj_name(
 ) -> str:
     url = "https://"
     if lang_code != LangCode.ENGLISH:
-        url += f"{str(lang_code)}."
+        url += f"{lang_code.value}."
     if game_flavor != GameFlavor.RETAIL:
-        url += f"{str(game_flavor)}."
+        url += f"{game_flavor.value}."
     url += f"wowhead.com/object={obj_id}"
 
     page = requests.get(url)
@@ -57,7 +57,7 @@ def get_localized_obj_name(
         logging.warning(f"Can't find {obj_id} at {url}!")
         return ""
     if "ptr" in page.url:
-        logging.warning(f"{url} redirects to {url.replace(str(lang_code), 'ptr')}")
+        logging.warning(f"{url} redirects to {url.replace(lang_code.value, 'ptr')}")
         return ""
     soup = BeautifulSoup(page.content, "html.parser")
     heading = soup.find("h1", class_="heading-size-1")
