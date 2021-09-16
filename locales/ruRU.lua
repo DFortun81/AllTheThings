@@ -2634,6 +2634,7 @@ for key,value in pairs({
 	--TODO: [330168] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [330169] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [330170] = "Hozen Totem",	-- Hozen Totem
+	[330183] = "Сейф братства Стальных Волн",	-- Irontide Lockbox
 	[330627] = "Знак \"Опасность!\"",	-- Danger Sign
 	[332220] = "Светящийся чародейский сундук",	-- Glowing Arcane Trunk
 	[332568] = "Кристальная статуэтка кошки",	-- Crystalline Cat Figurine
