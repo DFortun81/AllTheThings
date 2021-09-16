@@ -47,9 +47,9 @@ def get_localized_obj_name(
 ) -> str:
     url = "https://"
     if lang_code != LangCode.ENGLISH:
-        url += f"{lang_code}."
+        url += f"{str(lang_code)}."
     if game_flavor != GameFlavor.RETAIL:
-        url += f"{game_flavor}."
+        url += f"{str(game_flavor)}."
     url += f"wowhead.com/object={obj_id}"
 
     page = requests.get(url)
