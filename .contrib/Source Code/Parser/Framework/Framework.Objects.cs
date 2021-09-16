@@ -723,93 +723,22 @@ namespace ATT
                 // Calculate the faction ID. (0 is no faction)
                 if (data.TryGetValue("races", out object racesRef) && racesRef is List<object> races)
                 {
-                    var allRaces = new List<object>(races);
-                    var allianceDictionary = new Dictionary<object, bool>(ALLIANCE_ONLY_DICT);
-                    var allianceRaces = new List<object>();
-                    foreach (var raceID in races)
+                    // No races?
+                    if (!races.Any())
                     {
-                        if (allianceDictionary.Remove(raceID))
-                        {
-                            allRaces.Remove(raceID);
-                            allianceRaces.Add(raceID);
-                        }
+                        throw new InvalidDataException("Invalid 'races' value in data:" + Environment.NewLine + MiniJSON.Json.Serialize(data));
                     }
-
-                    var hordeDictionary = new Dictionary<object, bool>(HORDE_ONLY_DICT);
-                    var hordeRaces = new List<object>();
-                    foreach (var raceID in races)
+                    // Alliance Only?
+                    else if (ALLIANCE_ONLY.Matches(races))
                     {
-                        if (hordeDictionary.Remove(raceID))
-                        {
-                            allRaces.Remove(raceID);
-                            hordeRaces.Add(raceID);
-                        }
+                        data["r"] = 2;  // Alliance Only!
+                        data.Remove("races");   // We do not need to include races for this as it is ALLIANCE_ONLY.
                     }
-
-                    // Calculate the faction.
-                    var allCount = allRaces.Count;
-                    if (allRaces.Count == 0)
+                    // Horde Only?
+                    else if (HORDE_ONLY.Matches(races))
                     {
-                        // If there are no neutral races in this list, good. We need to do the thing.
-                        var allianceCount = allianceRaces.Count;
-                        var hordeCount = hordeRaces.Count;
-                        if (allianceCount == 0)
-                        {
-                            // If there are no alliance races, that means this might be a horde only item.
-                            if (hordeCount == 0)
-                            {
-                                // Uh, or not. I don't have a clue!
-                            }
-                            else
-                            {
-                                var leftovers = hordeDictionary.Count;
-                                if (leftovers == 0)
-                                {
-                                    // This is all horde races, cool. Let's clean this up!
-                                    data["r"] = 1;  // Horde Only!
-                                    data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
-                                }
-                                else
-                                {
-                                    // Nah man, we need to list them all. Damnit!
-                                    //Trace.WriteLine("There was a leftover race?!");
-                                }
-                            }
-                        }
-                        else
-                        {
-                            var leftovers = allianceDictionary.Count;
-                            if (leftovers == 0)
-                            {
-                                // This is all alliance races, cool. Let's clean this up!
-                                data["r"] = 2;  // Alliance Only!
-                                data.Remove("races");   // We do not need to include races for this as it is ALLIANCE_ONLY.
-                            }
-                            else if (hordeCount == 0)
-                            {
-                                // If there are no horde or alliance races, do nothing.
-                            }
-                            else
-                            {
-                                leftovers = hordeDictionary.Count;
-                                if (leftovers == 0)
-                                {
-                                    // This is all horde races, cool. Let's clean this up!
-                                    data["r"] = 1;  // Horde Only!
-                                    data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
-                                }
-                                else
-                                {
-                                    // Nah man, we need to list them all. Damnit!
-                                    //Trace.WriteLine("There was a leftover race?!");
-                                }
-                            }
-                        }
-                    }
-                    else
-                    {
-                        // Nah man, we need to list them all. Damnit!
-                        //Trace.WriteLine("There was a leftover race?!");
+                        data["r"] = 1;  // Horde Only!
+                        data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
                     }
                 }
             }

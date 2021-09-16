@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ATT
@@ -148,6 +149,24 @@ namespace ATT
         }
 
         /// <summary>
+        /// Try to get a strongly-typed list of objects from the dictionary.
+        /// </summary>
+        /// <param name="dict">The dictionary.</param>
+        /// <param name="key">The key.</param>
+        /// <param name="value">The variable to write to.</param>
+        /// <returns>Whether or not a value was found for the key.</returns>
+        public static bool TryGetValue<T>(this IDictionary<string, object> dict, string key, out List<T> value)
+        {
+            if (dict.TryGetValue(key, out object o) && o is List<T> value2)
+            {
+                value = value2;
+                return true;
+            }
+            value = null;
+            return false;
+        }
+
+        /// <summary>
         /// Get a dictionary from the dictionary.
         /// </summary>
         /// <param name="dict">The dictionary.</param>
@@ -174,6 +193,39 @@ namespace ATT
             }
             value = null;
             return false;
+        }
+
+        /// <summary>
+        /// Returns whether the sequence matches the content of another sequence regardless of ordering<para/>
+        /// NOTE: Not well-optimized for long sequences
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="sequence"></param>
+        /// <param name="sequence"></param>
+        /// <returns></returns>
+        public static bool Matches<T>(this IEnumerable<T> x, IEnumerable<T> y)
+        {
+            // check counts
+            int xCount = x?.Count() ?? -1;
+            int yCount = y?.Count() ?? -1;
+            if (xCount != yCount)
+            {
+                return false;
+            }
+            // matching count is only valid if both are null
+            else if (xCount == -1)
+            {
+                return true;
+            }
+
+            // check elements regardless of ordering
+            List<T> copy = y.ToList();
+            foreach (T item in x)
+            {
+                if (!copy.Remove(item))
+                    return false;
+            }
+            return true;
         }
     }
 }

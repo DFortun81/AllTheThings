@@ -226,6 +226,11 @@ namespace ATT
         private static bool MergeItemData { get; set; } = true;
 
         /// <summary>
+        /// Represents the valid values for the 'classes' / 'c' field of an object
+        /// </summary>
+        internal static readonly HashSet<long> Valid_Classes = new HashSet<long>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+
+        /// <summary>
         /// Merge the data into the database.
         /// </summary>
         /// <param name="listing">The listing.</param>
@@ -518,6 +523,20 @@ namespace ATT
             {
                 if (cc.Count == 0)
                     data.Remove("customCollect");
+            }
+
+            // Verify 'classes' have acceptable values
+            if (data.TryGetValue("c", out List<object> classes))
+            {
+                try
+                {
+                    if (classes.Any(c => !Valid_Classes.Contains(Convert.ToInt64(c))))
+                        Trace.WriteLine($"Invalid 'classes' value: {MiniJSON.Json.Serialize(data)}");
+                }
+                catch
+                {
+                    Trace.WriteLine($"Invalid 'classes' value: {MiniJSON.Json.Serialize(data)}");
+                }
             }
 
             // Merge all relevant Item Data into the data container.
@@ -1088,7 +1107,7 @@ namespace ATT
         public static void Process()
         {
             // Go through and merge all of the item species data into the item containers.
-            foreach(var pair in Items.AllItemsWithSpecies)
+            foreach (var pair in Items.AllItemsWithSpecies)
             {
                 var item = Items.GetNull(pair.Key);
                 if (item != null) Items.MergeInto(pair.Key, pair.Value, item);
