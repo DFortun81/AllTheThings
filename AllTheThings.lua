@@ -10791,8 +10791,6 @@ local function default_icon(t)
 			icon = "Interface\\Icons\\achievement_character_"..race.."_"..gender;
 		end
 	end
-	print("Dynamic Race Icon")
-	print(t.raceID,icon)
 	return icon;
 end
 local raceFields = {
