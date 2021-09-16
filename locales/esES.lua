@@ -2647,6 +2647,7 @@ for key,value in pairs({
 	--TODO: [330168] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [330169] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [330170] = "Hozen Totem",	-- Hozen Totem
+	[330183] = "Arcón de los Marea de Hierro",	-- Irontide Lockbox
 	[330627] = "Señal de peligro",	-- Danger Sign
 	--TODO: [332220] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
 	[332568] = "Figurilla de gato cristalina",	-- Crystalline Cat Figurine
