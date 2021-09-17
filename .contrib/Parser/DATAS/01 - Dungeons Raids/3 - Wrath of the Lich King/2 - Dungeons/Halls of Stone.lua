@@ -12,25 +12,6 @@ _.Instances = { tier(WOTLK_TIER, {
 					["provider"] = { "n", 55835 },	-- Kaldir Ironbane
 					["coord"] = { 35.6, 35.2, 140 },
 				}),
-				q(54642, {	-- G.E.A.R. Up
-					["provider"] = { "n", 149503 },	-- Cog Captain Winklespring
-					["coord"] = { 50.0, 12.9, 1375 },
-					["races"] = { GNOME },
-					["sourceQuest"] = 54641, -- For Gnomeregan!
-					["minReputation"] = { 54, EXALTED }, -- Gnomeregan
-					["g"] = {
-						i(168286),	-- G.E.A.R. Commander's Buckle
-						i(168284),	-- G.E.A.R. Commander's Chestpiece
-						i(168290),	-- G.E.A.R. Commander's Cloak
-						i(168282),	-- G.E.A.R. Commander's Goggles
-						i(168285),	-- G.E.A.R. Commander's Handgrips
-						i(168287),	-- G.E.A.R. Commander's Legguards
-						i(168283),	-- G.E.A.R. Commander's Shoulderguards
-						i(168288),	-- G.E.A.R. Commander's Stompers
-						i(168289),	-- G.E.A.R. Commander's Wristbands
-						i(168862),	-- G.E.A.R. Tracking Beacon (not collectible, just here so it's not in Unsorted)
-					},
-				}),
 				q(13207, {	-- Halls of Stone
 					["provider"] = { "n", 28070 },	-- Brann Bronzebeard
 					["coord"] = { 70.8, 50.0, 140 },

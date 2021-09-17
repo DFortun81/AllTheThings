@@ -502,13 +502,6 @@ _.Zones =
 					["coord"] = { 40.4, 77.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(54977, {	-- Into Duskwood
-					["minReputation"] = { 1134, EXALTED }, -- Gilneas
-					["sourceQuests"] = { 54976 }, -- The Shadow of Gilneas
-					["provider"] = { "n", 151784 },	-- Mia Greymane
-					["coord"] = { 82.3, 27.8, STORMWIND_CITY },
-					["races"] = { WORGEN },
-				}),
 				q(14481, {	-- Into The Abyss
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 36674 },	-- Nambria
@@ -941,12 +934,6 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["coord"] = { 39.8, 85.4, STORMWIND_CITY },
 				}),
-				q(54402, {	-- Shifting Gears
-					["minReputation"] = { 54, EXALTED }, -- Gnomeregan
-					["provider"] = { "n", 147939 },	-- Ace Pilot Stormcog
-					["coord"] = { 54.6, 18.4, STORMWIND_CITY },
-					["races"] = { GNOME },
-				}),
 				q(28401, {	-- Slaves of the Firelord
 					["sourceQuests"] = { 28287 },	-- Meet with Farseer Umbrua
 					["provider"] = { "n", 20407 },	-- Farseer Umbrua
@@ -1174,12 +1161,6 @@ _.Zones =
 					["g"] = {
 						i(65620),	-- Hood of the Royal Wizard
 					},
-				}),
-				q(54976, {	-- The Shadow of Gilneas
-					["minReputation"] = { 1134, EXALTED }, -- Gilneas
-					["provider"] = { "n", 150200 },	-- Courier Claridge
-					["coord"] = { 54.6, 18.4, STORMWIND_CITY },
-					["races"] = { WORGEN },
 				}),
 				q(1790,  {	-- The Symbol of Life
 					["provider"] = { "n", 6171 },	-- Duthorian Rall

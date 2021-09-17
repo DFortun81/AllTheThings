@@ -58,13 +58,6 @@ _.Zones =
 					["coord"] = { 45.2, 33.3, 114 },
 					["sourceQuest"] = 11663,	-- Sharing Intelligence
 				}),
-				q(54639, {	-- A Signal in Storm Peaks
-					["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
-					["coord"] = { 55.3, 18.9, 114 },
-					["races"] = { GNOME },
-					["sourceQuest"] = 54579, -- The Gnome Behind the Trogg
-					["minReputation"] = { 54, EXALTED }, -- Gnomeregan
-				}),
 				q(11789, {	-- A Soldier in Need
 					["coord"] = { 55.0, 68.9, 114 },
 					["races"] = ALLIANCE_ONLY,
@@ -1023,13 +1016,6 @@ _.Zones =
 					["provider"] = { "n", 25299 },	-- Admiral Cantlebree
 					["sourceQuest"] = 11920,	-- Cultists Among Us
 				}),
-				q(54581, {	-- Now With More Mechanical Fowl
-					["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
-					["coord"] = { 55.3, 18.9, 114 },
-					["races"] = { GNOME },
-					["sourceQuest"] = 54580, -- A Tundra Conundrum
-					["minReputation"] = { 54, EXALTED }, -- Gnomeregan
-				}),
 				q(11912, {	-- Nuts for Berries
 					["provider"] = { "n", 26110 },	-- Librarian Serrah
 					["coord"] = { 33.4, 34.3, 114 },
@@ -1330,11 +1316,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11894,	-- Patching Up
 				}),
-				q(54582, {	-- Smarter Than Your Average Trogg
-					["races"] = { GNOME },
-					["sourceQuest"] = 54581, -- Now With More Mechanical Fowl
-					["minReputation"] = { 54, EXALTED }, -- Gnomeregan
-				}),
 				q(11899, {	-- Souls of the Decursed
 					["provider"] = { "n", 25602 },	-- Greatmother Taiga
 					["coord"] = { 77.3, 36.8, 114 },
@@ -1607,13 +1588,6 @@ _.Zones =
 						i(37442),	-- Chilled Mail Boots
 						i(37530),	-- Icy Ripper Fang
 					},
-				}),
-				q(54579, {	-- The Gnome Behind the Trogg
-					["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
-					["coord"] = { 55.3, 18.9, 114 },
-					["races"] = { GNOME },
-					["sourceQuest"] = 54582, -- Smarter Than Your Average Trogg
-					["minReputation"] = { 54, EXALTED }, -- Gnomeregan
 				}),
 				q(11685, {	-- The Heart of the Elements
 					["provider"] = { "n", 24702 },	-- Greatfather Mahan

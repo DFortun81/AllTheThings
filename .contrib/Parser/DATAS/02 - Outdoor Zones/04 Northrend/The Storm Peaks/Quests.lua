@@ -353,24 +353,11 @@ _.Zones =
 						i(43192),	-- Ring of the Northern Winds
 					},
 				}),
-				q(54641, {	-- For Gnomeregan!
-					["provider"] = { "n", 149503 },	-- Cog Captain Winklespring
-					["races"] = { GNOME },
-					["sourceQuest"] = 54850, -- Operation: Troggageddon
-					["minReputation"] = { 54, EXALTED }, -- Gnomeregan
-				}),
 				q(12879, {	-- Fury of the Frostborn King
 					["provider"] = { "n", 30548 },	-- The Guardian's Charge (looks like an object, but is actually an NPC)
 					["coord"] = { 44.5, 64.5, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12878 },	-- The Hidden Relic
-				}),
-				q(54640, {	-- Gnomercy!
-					["provider"] = { "n", 147950 },	-- Cog Captain Winklespring
-					["coord"] = { 37.6, 60.3, 120 },
-					["races"] = { GNOME },
-					["sourceQuest"] = 54639, -- A Signal in Storm Peaks
-					["minReputation"] = { 54, EXALTED }, -- Gnomeregan
 				}),
 				q(13273, {	-- Going After the Core
 					["races"] = HORDE_ONLY,
@@ -577,13 +564,6 @@ _.Zones =
 						12828,	-- Ample Inspiration
 						12832,	-- Bitter Departure
 					},
-				}),
-				q(54850, {	-- Operation: Troggageddon
-					["provider"] = { "n", 147950 },	-- Cog Captain Winklespring
-					["coord"] = { 56.1, 51.4, 120 },
-					["races"] = { GNOME },
-					["sourceQuest"] = 54640, -- Gnomercy!
-					["minReputation"] = { 54, EXALTED }, -- Gnomeregan
 				}),
 				q(12830, {	-- Ore Repossession
 					["provider"] = { "n", 29430 },	-- Tore Rumblewrench

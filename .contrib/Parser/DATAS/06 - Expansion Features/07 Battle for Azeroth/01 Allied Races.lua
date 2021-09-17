@@ -5,8 +5,12 @@
 _.ExpansionFeatures =
 {
 	tier(BFA_TIER, {
-		gsh(1522, {	-- Allied Races
-			["icon"] = "Interface\\Icons\\FactionChange",
+		n(-254, {	-- Allied Races
+			["maps"] = {
+				STORMWIND_CITY,
+				ORGRIMMAR,
+			},
+			["isRaid"] = true,
 			["g"] = {
 				q(50239, {	-- A Choice of Allies (A)
 					["providers"] = {
@@ -58,15 +62,90 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				race(DARKIRON, {
+				race(BLOODELF, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Blood Elf|r with a standing of |cFFFFFFFFExalted|r with Silvermoon City.",
 					["maps"] = {
-						STORMWIND_CITY,
+						SILVERMOON_CITY,
+						GHOSTLANDS,
+						EVERSONG_WOODS,
+						ISLE_OF_QUELDANAS,
+						973,	-- The Sunwell: Shrine of the Eclipse (Scenario)
+					},
+					["races"] = { BLOODELF },
+					["g"] = bubbleDown({ ["races"] = { BLOODELF }, ["minReputation"] = { 911, EXALTED }, }, {
+						q(53791, {	-- The Pride of the Sin'dorei
+							["provider"] = { "n", 146939 },	-- Ambassador Dawnsworn
+							["coord"] = { 39.2, 79.0, ORGRIMMAR },
+						}),
+						q(53734, {	-- Walk Among Ghosts
+							["provider"] = { "n", 16802 },	-- Lor'themar Theron
+							["coord"] = { 53.8, 20.2, SILVERMOON_CITY },
+							["sourceQuest"] = 53791,	-- The Pride of the Sin'dorei
+						}),
+						q(53882, {	-- Writing on the Wall
+							["provider"] = { "n", 145015 },	-- Lor'themar Theron
+							["coord"] = { 46.2, 31.8, GHOSTLANDS },
+							["sourceQuest"] = 53734,	-- Walk Among Ghosts
+						}),
+						q(53735, {	-- The First to Fall
+							["provider"] = { "n", 145005 },	-- Lor'themar Theron
+							["coord"] = { 47.5, 84.1, GHOSTLANDS },
+							["sourceQuest"] = 53882,	-- Writing on the Wall
+						}),
+						q(53736, {	-- Lament of the Highborne
+							["provider"] = { "n", 145005 },		-- Lor'themar Theron
+							["coord"] = { 37.2, 66.4, GHOSTLANDS },	-- Pickup Quest
+							["sourceQuest"] = 53735,	-- The First to Fall
+						}),
+						q(53737, {	-- The Day Hope Died
+							["provider"] = { "n", 145005 },	-- Lor'themar Theron
+							["coord"] = { 12.7, 56.9, GHOSTLANDS },	-- Pickup Quest
+							["sourceQuest"] = 53736,	-- Lament of the Highborne
+						}),
+						q(53738, {	-- Defense of Qual'Danas
+							["provider"] = { "n", 145005 },	-- Lor'themar Theron
+							["sourceQuest"] = 53737,	-- The Day Hope Died
+							["coord"] = { 51.1, 68.8, EVERSONG_WOODS },
+						}),
+						q(53725, {	-- A People Shattered
+							["provider"] = { "n", 145793 },	-- Lady Liadrin
+							["sourceQuest"] = 53738,	-- Defense of Qual'Danas
+							["coord"] = { 48.3, 36.0, ISLE_OF_QUELDANAS },
+						}),
+						q(53853, {	-- The Setting Sun
+							["provider"] = { "n", 145793 },	-- Lady Liadrin
+							["sourceQuest"] = 53725,	-- A People Shattered
+							["coord"] = { 48.3, 36.0, ISLE_OF_QUELDANAS },
+						}),
+						q(54096, {	-- The Fall of the Sunwell
+							["provider"] = { "n", 145793 },	-- Lady Liadrin
+							["sourceQuest"] = 53853,	-- The Setting Sun
+							["coord"] = { 48.3, 36.0, ISLE_OF_QUELDANAS },
+							["g"] = {
+								i(166348),	-- Sin'dorei Helm
+								i(166349),	-- Sin'dorei Pauldrons
+								i(166357),	-- Sin'dorei Cloak
+								i(166356),	-- Sin'dorei Raiment
+								i(166350),	-- Sin'dorei Tunic
+								i(166355),	-- Sin'dorei Bracers
+								i(166351),	-- Sin'dorei Gauntlets
+								i(166352),	-- Sin'dorei Belt
+								i(166353),	-- Sin'dorei Leggings
+								i(166354),	-- Sin'dorei Slippers
+							},
+						}),
+					}),
+				}),
+				race(DARKIRON, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
+					["maps"] = {
 						1159,	-- Blackrock Depths: Dark Iron Dwarf Scenario
 						1160,	-- Blackrock Depths: Dark Iron Dwarf Scenario
 						1958,	-- Firelands: Dark Iron Dwarf Scenario
 						1959,	-- Firelands: Dark Iron Dwarf Scenario
 						1186,	-- Blackrock Depths: Shadowforge City
 					},
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(51813, {	-- Blackrock Depths
 							["sourceQuests"] = { 50239 },	-- A Choice of Allies (A)
@@ -146,12 +225,258 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				race(HIGHMOUNTAIN_TAUREN, {
+				race(DWARF, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dwarf|r with a standing of |cFFFFFFFFExalted|r with Ironforge.",
 					["maps"] = {
-						ORGRIMMAR,
+						IRONFORGE,
+						31,	-- Gol'Bolar Quarry
+						LOCH_MODAN,
+					},
+					["races"] = { DWARF },
+					["g"] = bubbleDown({ ["races"] = { DWARF }, ["minReputation"] = { 47, EXALTED }, }, {
+						q(53838, {	-- Keep Yer Feet On The Ground
+							["provider"] = { "n", 146988 },	-- Digger Golad
+							["coord"] = { 54.6, 18.0, STORMWIND_CITY },
+						}),
+						q(53835, {	-- Something Valuable, Perhaps?
+							["sourceQuest"] = 53838,	-- Keep Yer Feet On The Ground
+							["provider"] = { "o", 311155 },	-- Ancient Tablet
+							["coord"] = { 40.8, 21.0, 31 },
+						}),
+						q(53836, {	-- Ancient Armor, Ancient Mystery
+							["sourceQuest"] = 53835,	-- Something Valuable, Perhaps?
+							["provider"] = { "n", 145462 },	-- Brann Bronzebeard
+							["coord"] = { 77.2, 9.8, IRONFORGE },
+						}),
+						q(53837, {	-- Watch Yer Back
+							["sourceQuest"] = 53836,	-- Ancient Armor, Ancient Mystery
+							["provider"] = { "n", 145464 },	-- Advisor Belgrum
+						}),
+						q(53839, {	-- Aegrim's Study
+							["description"] = "The coords leads to the stair down",
+							["sourceQuest"] = 53837,	-- Watch Yer Back
+							["provider"] = { "n", 145707 },	-- Advisor Belgrum
+							["coord"] = { 44.5, 49.4, IRONFORGE },
+						}),
+						q(53841, {	-- Shards of the Past
+							["sourceQuest"] = 53839,	-- Aegrim's Study
+							["provider"] = { "o", 309498 },	-- Armor Stand
+							["coord"] = { 19.8, 51.9, IRONFORGE },
+						}),
+						q(53840, {	-- Interest Yah In A Pint?
+							["sourceQuest"] = 53841,	-- Shards of the Past
+							["provider"] = { "n", 145462 },	-- Brann Bronzebeard
+							["coord"] = { 77.2, 9.8, IRONFORGE },
+						}),
+						q(53844, {	-- Recruiting the Furnace Master
+							["sourceQuest"] = 53840,	-- Interest Yah In A Pint?
+							["provider"] = { "n", 145462 },	-- Brann Bronzebeard
+							["coord"] = { 35.0, 48.8, LOCH_MODAN },
+						}),
+						q(53842, {	-- Earthen Blessing
+							["sourceQuest"] = 53844,	-- Recruiting the Furnace Master
+							["provider"] = { "n", 145462 },	-- Brann Bronzebeard
+							["coord"] = { 35.0, 48.8, LOCH_MODAN },
+						}),
+						q(53845, {	-- Forging the Armor
+							["sourceQuest"] = 53842,	-- Earthen Blessing
+							["provider"] = { "n", 5164 },	-- Grumnus Steelshaper
+							["coord"] = { 48.8, 46.0, IRONFORGE },
+						}),
+						q(53846, {	-- Legacy of the Bronzebeard
+							["sourceQuest"] = 53845,	-- Forging the Armor
+							["provider"] = { "n", 145462 },	-- Brann Bronzebeard
+							["coord"] = { 46.2, 49.6, IRONFORGE },
+							["g"] = {
+								i(165931),	-- Bronzebeard Helm
+								i(165932),	-- Bronzebeard Pauldrons
+								i(165933),	-- Bronzebeard Tunic
+								i(165938),	-- Bronzebeard Wristclamps
+								i(165934),	-- Bronzebeard Mitts
+								i(165935),	-- Bronzebeard Cinch
+								i(165936),	-- Bronzebeard Leggings
+								i(165937),	-- Bronzebeard Stompers
+							},
+						}),
+					}),
+				}),
+				race(GNOME, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Gnome|r with a standing of |cFFFFFFFFExalted|r with Gnomeregan and completed |cFFFFD700Stay of Execution|r, The 8.2 War Campaign.",
+					["maps"] = {
+						469,	-- New Tinkertown [Above]
+						1380,	-- GnomereganC
+						114,	-- Borean Tundra
+						120,	-- The Storm Peaks
+						1375,	-- Halls of Stone (Scenario)
+					},
+					["races"] = { GNOME },
+					["g"] = bubbleDown({ ["races"] = { GNOME }, ["minReputation"] = { 54, EXALTED }, }, {
+						q(54402, {	-- Shifting Gears
+							["provider"] = { "n", 147939 },	-- Ace Pilot Stormcog
+							["coord"] = { 54.6, 18.4, STORMWIND_CITY },
+						}),
+						q(54576, {	-- Gnomeregan's Finest
+							["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
+							["coord"] = { 41.8, 31.7, 469 },
+							["sourceQuest"] = 54402, -- Shifting Gears
+						}),
+						q(54577, {	-- Shadowed Halls and Dusty Cogs
+							["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
+							["coord"] = { 41.8, 31.7, 469 },
+							["sourceQuest"] = 54576, -- Gnomeregan's Finest
+						}),
+						q(54580, {	-- A Tundra Conundrum
+							["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
+							["coord"] = { 41.8, 31.7, 469 },
+							["sourceQuest"] = 54577, -- Shadowed Halls and Dusty Cogs
+						}),
+						q(54581, {	-- Now With More Mechanical Fowl
+							["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
+							["coord"] = { 55.3, 18.9, 114 },
+							["sourceQuest"] = 54580, -- A Tundra Conundrum
+						}),
+						q(54582, {	-- Smarter Than Your Average Trogg
+							["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
+							["coord"] = { 55.3, 18.9, 114 },
+							["sourceQuest"] = 54581, -- Now With More Mechanical Fowl
+						}),
+						q(54579, {	-- The Gnome Behind the Trogg
+							["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
+							["coord"] = { 55.3, 18.9, 114 },
+							["sourceQuest"] = 54582, -- Smarter Than Your Average Trogg
+						}),
+						q(54639, {	-- A Signal in Storm Peaks
+							["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
+							["coord"] = { 55.3, 18.9, 114 },
+							["sourceQuest"] = 54579, -- The Gnome Behind the Trogg
+						}),
+						q(54640, {	-- Gnomercy!
+							["provider"] = { "n", 147950 },	-- Cog Captain Winklespring
+							["coord"] = { 37.6, 60.3, 120 },
+							["sourceQuest"] = 54639, -- A Signal in Storm Peaks
+						}),
+						q(54850, {	-- Operation: Troggageddon
+							["provider"] = { "n", 147950 },	-- Cog Captain Winklespring
+							["coord"] = { 56.1, 51.4, 120 },
+							["sourceQuest"] = 54640, -- Gnomercy!
+						}),
+						q(54641, {	-- For Gnomeregan!
+							["provider"] = { "n", 149503 },	-- Cog Captain Winklespring
+							["coord"] = { 39.4, 26.8, 120 },
+							["sourceQuest"] = 54850, -- Operation: Troggageddon
+						}),
+						q(54642, {	-- G.E.A.R. Up
+							["provider"] = { "n", 149503 },	-- Cog Captain Winklespring
+							["coord"] = { 50.0, 12.9, 1375 },
+							["sourceQuest"] = 54641, -- For Gnomeregan!
+							["g"] = {
+								i(168286),	-- G.E.A.R. Commander's Buckle
+								i(168284),	-- G.E.A.R. Commander's Chestpiece
+								i(168290),	-- G.E.A.R. Commander's Cloak
+								i(168282),	-- G.E.A.R. Commander's Goggles
+								i(168285),	-- G.E.A.R. Commander's Handgrips
+								i(168287),	-- G.E.A.R. Commander's Legguards
+								i(168283),	-- G.E.A.R. Commander's Shoulderguards
+								i(168288),	-- G.E.A.R. Commander's Stompers
+								i(168289),	-- G.E.A.R. Commander's Wristbands
+								i(168862),	-- G.E.A.R. Tracking Beacon (not collectible, just here so it's not in Unsorted)
+							},
+						}),
+					}),
+				}),
+				race(GOBLIN, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Goblin|r with a standing of |cFFFFFFFFExalted|r with Bilgewater Cartel.",
+					["maps"] = {
+						THE_CAPE_OF_STRANGLETHORN,
+						1531,	-- Crapopolis
+						1532,	-- Crapopolis
+					},
+					["races"] = { GOBLIN },
+					["g"] = bubbleDown({ ["races"] = { GOBLIN }, ["minReputation"] = { 1133, EXALTED }, }, {
+						q(57043, {	-- Old Friends, New Opportunities
+							["provider"] = { "n", 156358 },	-- Izzy
+							["coord"] = { 39.5, 80.2, ORGRIMMAR },
+						}),
+						q(57045, {	-- A Special Delivery
+							["provider"] = { "n", 156396 },	-- Sassy Hardwrench
+							["coord"] = { 34.6, 28.5, THE_CAPE_OF_STRANGLETHORN },
+							["sourceQuest"] = 57043,	-- Old Friends, New Opportunities
+						}),
+						q(57047, {	-- A Simple Experiment
+							["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
+							["coord"] = { 53.5, 61.9, 1532 },
+							["sourceQuest"] = 57045,	-- A Special Delivery
+						}),
+						q(57048, {	-- Shopping For Parts
+							["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
+							["coord"] = { 52.9, 58.6, 1532 },
+							["sourceQuest"] = 57047,	-- A Simple Experiment
+						}),
+						q(57051, {	-- Debt Collection!
+							["provider"] = { "n", 156542 },	-- Crank Greasefuse
+							["coord"] = { 56.0, 78.2, 1532 },
+							["sourceQuest"] = 57048,	-- Shopping For Parts
+						}),
+						q(57052, {	-- I've Got What You Need
+							["provider"] = { "n", 156542 },	-- Crank Greasefuse
+							["coord"] = { 56.0, 78.2, 1532 },
+							["sourceQuest"] = 57051,	-- Debt Collection!
+						}),
+						q(57053, {	-- Blunt Force Testing
+							["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
+							["coord"] = { 58.7, 60.8, 1532 },
+							["sourceQuest"] = 57052,	-- I've Got What You Need
+						}),
+						q(57058, {	-- Fun With Landmines
+							["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
+							["coord"] = { 58.7, 60.8, 1532 },
+							["sourceQuest"] = 57053,	-- Blunt Force Testing
+						}),
+						q(57059, {	-- Let's Rumble!
+							["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
+							["coord"] = { 52.0, 59.3, 1532 },
+							["sourceQuest"] = 57058,	-- Fun With Landmines
+						}),
+						q(57077, {	-- Buyers Wanted!
+							["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
+							["coord"] = { 52.0, 59.3, 1532 },
+							["sourceQuest"] = 57059,	-- Let's Rumble!
+						}),
+						q(57078, {	-- The VIP List
+							["provider"] = { "n", 156396 },	-- Sassy Hardwrench
+							["coord"] = { 34.6, 28.5, THE_CAPE_OF_STRANGLETHORN },
+							["sourceQuest"] = 57077,	-- Buyers Wanted!
+						}),
+						q(57079, {	-- Beat The Crapopolis Outta Him!
+							["provider"] = { "n", 156396 },	-- Sassy Hardwrench
+							["coord"] = { 34.6, 28.5, THE_CAPE_OF_STRANGLETHORN },
+							["sourceQuest"] = 57078,	-- The VIP List
+						}),
+						q(57080, {	-- A Fitting Reward
+							["provider"] = { "n", 157491 },	-- Hobart Grapplehammer
+							["coord"] = { 47.8, 50.5, 1531 },
+							["sourceQuest"] = 57079,	-- Beat The Crapopolis Outta Him!
+							["g"] = {
+								i(174077),	-- X-52 Insulated Headgear
+								i(173978),	-- X-52 Precision Goggles
+								i(173979),	-- X-52 Reinforced Legguards
+								i(173981),	-- X-52 Utility Belt
+								i(173975),	-- X-52 Fireproof Stompers
+								i(173974),	-- X-52 Bomber Jacket
+								i(173980),	-- X-52 Sapper's Shoulderguards
+								i(173982),	-- X-52 Minesweeper Wristwraps
+								i(173977),	-- X-52 Extreme Handgrips
+							},
+						}),
+					}),
+				}),
+				race(HIGHMOUNTAIN_TAUREN, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",
+					["maps"] = {
 						THUNDER_BLUFF,
 						HIGHMOUNTAIN,
 					},
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						q(48066, {	-- A Feast for Our Kin
 							["sourceQuests"] = { 50242 },	-- A Choice for Allies (H)
@@ -264,7 +589,7 @@ _.ExpansionFeatures =
 						}),
 						-- Highmountain Tauren Starter Quests
 						q(49773, {	-- For the Horde
-							["provider"] = { "n", 143845 },	--  Mayla Highmountain
+							["provider"] = { "n", 93826 },	--  Mayla Highmountain
 							["coord"] = { 46.6, 61.0, HIGHMOUNTAIN },
 							["races"] = { HIGHMOUNTAIN_TAUREN },
 							["lvl"] = 20,
@@ -282,7 +607,7 @@ _.ExpansionFeatures =
 						}),
 						-- Highmountain Tauren lvl 50 Quest
 						q(49783, {	-- Heritage of Highmountain
-							["provider"] = { "n", 143845 },	--  Mayla Highmountain
+							["provider"] = { "n", 93826 },	--  Mayla Highmountain
 							["coord"] = { 46.6, 61.0, HIGHMOUNTAIN },
 							["races"] = { HIGHMOUNTAIN_TAUREN },
 							["lvl"] = 50,
@@ -301,13 +626,14 @@ _.ExpansionFeatures =
 					},
 				}),
 				race(KULTIRAN, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700A Nation United|r, The Kul Tiran Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
 					["maps"] = {
-						STORMWIND_CITY,
 						BORALUS,
 						STORMSONG_VALLEY,
 						TIRAGARDE_SOUND,
 						DRUSTVAR,
 					},
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(54706, {	-- Made in Kul Tiras
 							["sourceQuests"] = { 50239 },	-- A Choice of Allies (A)
@@ -472,7 +798,6 @@ _.ExpansionFeatures =
 								i(165002),	-- Kul'Tiran Bicorne
 								i(165003),	-- Kul'Tiran Tasseled Pauldron
 								i(165004),	-- Kul'Tiran Longcoat
-								i(165010),	-- Tabard of Kul'Tiras
 								i(165009),	-- Kul'Tiran Bracers
 								i(165005),	-- Kul'Tiran Gloves
 								i(165006),	-- Kul'Tiran Cinch
@@ -483,12 +808,13 @@ _.ExpansionFeatures =
 					},
 				}),
 				race(LIGHTFORGED, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
 					["maps"] = {
-						STORMWIND_CITY,
 						886,	-- The Vindicar
 						940,	-- The Vindicar
 						933,	-- Forge of Souls (Lightbound Draenei Scenario)
 					},
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(49698, {	-- The Lightforged
 							["sourceQuests"] = { 50239 },	-- A Choice of Allies (A)
@@ -551,8 +877,8 @@ _.ExpansionFeatures =
 					},
 				}),
 				race(MAGHAR, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
 					["maps"] = {
-						ORGRIMMAR,
 						1185,
 						TANARIS,
 						BLASTED_LANDS,
@@ -560,6 +886,7 @@ _.ExpansionFeatures =
 						1170,
 						DUROTAR,
 					},
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						q(53466, {	-- Vision of Time
 							["sourceQuests"] = { 50242 },	-- A Choice for Allies (H)
@@ -680,13 +1007,14 @@ _.ExpansionFeatures =
 					},
 				}),
 				race(MECHAGNOME, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700The Mechagonian Threat|r, The Mechagon Storyline.",
 					["maps"] = {
-						STORMWIND_CITY,
 						MECHAGON,
 						BORALUS,
 						1574,	-- Mechagon City (Scenario)
 						1573,	-- Mechagon City
 					},
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(58214, {	-- Urgent Care
 							["isBreadcrumb"] = true,
@@ -807,11 +1135,12 @@ _.ExpansionFeatures =
 					},
 				}),
 				race(NIGHTBORNE, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Insurrection|r, The 7.2 Suramar Campaign.",
 					["maps"] = {
-						ORGRIMMAR,
 						SURAMAR,
 						SILVERMOON_CITY,
 					},
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						q(49973, {	-- Thalyssra's Estate
 							["sourceQuests"] = { 50242 },	-- A Choice for Allies (H)
@@ -879,176 +1208,76 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				race(ZANDALARI, {
+				race(TAUREN, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Tauren|r with a standing of |cFFFFFFFFExalted|r with Thunder Bluff and completed |cFFFFD700Stay of Execution|r, The 8.2 War Campaign.",
 					["maps"] = {
-						ORGRIMMAR,
-						THE_GREAT_SEAL,
-						DAZARALOR,
+						THUNDER_BLUFF,
+						462,	-- Camp Narache
+						STONETALON_MOUNTAINS,
 					},
-					["g"] = {
-						q(53831, {	-- A Royal Occasion
-							["sourceQuests"] = { 50242 },	-- A Choice for Allies (H)
-							["provider"] = { "n", 133519 },	-- Rokhan
-							["coord"] = { 38.2, 81.4, ORGRIMMAR },
-							["races"] = HORDE_ONLY,
+					["races"] = { TAUREN },
+					["g"] = bubbleDown({ ["races"] = { TAUREN }, ["minReputation"] = { 81, EXALTED }, }, {
+						q(54759, {	-- When Spririts Whisper
+							["provider"] = { "n", 149088 },	-- Spiritwalker Isahi
+							["coord"] = { 39.1, 79.0, ORGRIMMAR },
+							["sourceQuest"] = 55779,	-- Stay of Execution (after the Baine Rescue Scenario)
 						}),
-						q(53823, {	-- A Queen's Entourage
-							["sourceQuests"] = { 53831 },	-- A Royal Occasion
-							["provider"] = { "n", 145414 },	-- Natal'hakata
-							["coord"] = { 48.6, 22.0, THE_GREAT_SEAL },
-							["races"] = HORDE_ONLY,
+						q(54760, {	-- The Spiritwalkers
+							["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
+							["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
+							["sourceQuest"] = 54759,	-- When Spririts Whisper
 						}),
-						q(53824, {	-- The Rite of Kings and Queens
-							["sourceQuests"] = { 53823 },	-- A Queen's Entourage
-							["provider"] = { "n", 148096 },	-- High Prelate Rata
-							["coord"] = { 42.57, 22.54, DAZARALOR },
-							["races"] = HORDE_ONLY,
+						q(54761, {	-- Spirit Guide
+							["provider"] = { "n", 149084 },	-- Spiritwalker Ussoh
+							["coord"] = { 12.3, 31.3, 462 },
+							["sourceQuest"] = 54760,	-- The Spiritwalkers
 						}),
-						q(54419, {	-- Quelling the Masses
-							["sourceQuests"] = { 53824 },	-- The Rite of Kings and Queens
-							["provider"] = { "n", 145360 },	-- Zolani
-							["coord"] = { 40.28, 12.45, DAZARALOR },
-							["races"] = HORDE_ONLY,
+						q(54762, {	-- A Small Retreat
+							["provider"] = { "n", 149084 },	-- Spiritwalker Ussoh
+							["coord"] = { 12.3, 31.3, 462 },
+							["sourceQuest"] = 54761,	-- Spirit Guide
 						}),
-						q(53826, {	-- The Instigator Among Us
-							["sourceQuests"] = { 53824 },	-- The Rite of Kings and Queens
-							["provider"] = { "n", 145360 },	-- Zolani
-							["coord"] = { 40.28, 12.45, DAZARALOR },
-							["races"] = HORDE_ONLY,
+						q(54763, {	-- Crossing Over
+							["provider"] = { "n", 149529 },	-- Spiritwalker Ussoh
+							["coord"] = { 49.2, 60.8, STONETALON_MOUNTAINS },
+							["sourceQuest"] = 54762,	-- A Small Retreat
 						}),
-						q(54301, {	-- Talanji's Mercy
-							["sourceQuests"] = {
-								54419,	-- Quelling the Masses
-								53826,	-- The Instigator Among Us
-							},
-							["provider"] = { "n", 145359 },	-- Princess Talanji
-							["coord"] = { 40.5, 11.9, DAZARALOR },
-							["races"] = HORDE_ONLY,
+						q(54764, {	-- Storm in Bloodhoof
+							["provider"] = { "n", 149529 },	-- Spiritwalker Ussoh
+							["coord"] = { 49.2, 60.8, STONETALON_MOUNTAINS },
+							["sourceQuest"] = 54763,	-- Crossing Over
 						}),
-						q(54925, {	-- Heresy!
-							["sourceQuests"] = {
-								54419,	-- Quelling the Masses
-								53826,	-- The Instigator Among Us
-							},
-							["provider"] = { "n", 148096 },	-- High Prelate Rata
-							["coord"] = { 40.2, 11.9, DAZARALOR },
-							["races"] = HORDE_ONLY,
+						q(54766, {	-- Answer the Call
+							["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
+							["coord"] = { 58.3, 51.8, THUNDER_BLUFF },
+							["sourceQuest"] = 54764,	-- Storm in Bloodhoof
 						}),
-						q(54300, {	-- Breaking the Faith
-							["sourceQuests"] = {
-								54419,	-- Quelling the Masses
-								53826,	-- The Instigator Among Us
-							},
-							["provider"] = { "n", 145360 },	-- Zolani
-							["coord"] = { 40.5, 12.4, DAZARALOR },
-							["races"] = HORDE_ONLY,
-						}),
-						q(53825, {	-- The New Zanchuli Council
-							["sourceQuests"] = {
-								54301,	-- Talanji's Mercy
-								54925,	-- Heresy!
-								54300,	-- Breaking the Faith
-							},
-							["provider"] = { "n", 145359 },	-- Princess Talanji
-							["coord"] = { 40.6, 12.0, DAZARALOR },
-							["races"] = HORDE_ONLY,
-						}),
-						q(53827, {	-- The Council Has Spoken
-							["sourceQuests"] = { 53825 },	-- The New Zanchuli Council
-							["provider"] = { "n", 145359 },	-- Princess Talanji
-							["coord"] = { 60.4, 38.9, DAZARALOR },
-							["races"] = HORDE_ONLY,
-						}),
-						q(53828, {	-- Gaze of the Loa
-							["sourceQuests"] = { 53827 },	-- The Council Has Spoken
-							["provider"] = { "n", 145359 },	-- Princess Talanji
-							["coord"] = { 60.4, 38.9, DAZARALOR },
-							["races"] = HORDE_ONLY,
-						}),
-						q(54031, {	-- Gaze of the Loa: Krag'wa
-							["sourceQuests"] = { 53828 },	-- Gaze of the Loa
-							["provider"] = { "n", 146208 },	-- Krag'wa the Huge
-							["coord"] = { 44.2, 15.0, DAZARALOR },
-							["races"] = HORDE_ONLY,
-						}),
-						q(54033, {	-- Gaze of the Loa: Gonk
-							["sourceQuests"] = { 54031 },	-- Gaze of the Loa: Krag'wa
-							["provider"] = { "n", 146208 },	-- Krag'wa the Huge
-							["coord"] = { 44.2, 15.0, DAZARALOR },
-							["races"] = HORDE_ONLY,
-						}),
-						q(54032, {	-- Gaze of the Loa: Pa'ku
-							["sourceQuests"] = { 54033 },	-- Gaze of the Loa: Gonk
-							["provider"] = { "n", 146214 },	-- Gonk
-							["coord"] = { 46.5, 12.0, DAZARALOR },
-							["races"] = HORDE_ONLY,
-						}),
-						q(54034, {	-- Gaze of the Loa: Bwonsamdi
-							["sourceQuests"] = { 54032 },	-- Gaze of the Loa: Pa'ku
-							["provider"] = { "n", 146209 },	-- Pa'ku <Lord of Winds>
-							["coord"] = { 44.5, 8.8, DAZARALOR },
-							["races"] = HORDE_ONLY,
-						}),
-						q(53830, {	-- Queen of the Zandalari
-							["sourceQuests"] = { 54034 },	-- Gaze of the Loa: Bwonsamdi
-							["provider"] = { "n", 145359 },	-- Princess Talanji
-							["coord"] = { 42.7, 8.7, DAZARALOR },
-							["races"] = HORDE_ONLY,
-						}),
-						q(53719, {	-- Allegiance of the Zandalari
-							["sourceQuests"] = { 53830 },	-- Queen of the Zandalari
-							["provider"] = { "n", 146335 },	-- Queen Talanji
-							["coord"] = { 42.4, 9.2, DAZARALOR },
-							["races"] = HORDE_ONLY,
+						q(54765, {	-- Thank Your Guide
+							["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
+							["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
+							["sourceQuest"] = 54766,	-- Answer the Call
 							["g"] = {
-								ach(13161),	-- Allied Races: Zandalari Troll
-								i(157870),	-- Zandalari Direhorn (MOUNT!)
+								i(168298),	-- Ancestral Chieftain's Armor
+								i(168297),	-- Ancestral Chieftain's Grasps
+								i(168296),	-- Ancestral Chieftain's Greatbelt
+								i(168291),	-- Ancestral Chieftain's Headdress
+								i(168292),	-- Ancestral Chieftain's Hoofbands
+								i(168293),	-- Ancestral Chieftain's Loincloth
+								i(168294),	-- Ancestral Chieftain's Mantle
+								i(170063),	-- Ancestral Chieftain's Totem
+								i(168295),	-- Ancestral Chieftain's Wristbands
+								i(167860),	-- Ancient Tauren Talisman (not collectible, just here so it's not in Unsorted)
 							},
 						}),
-						-- Zandalari Troll Starter Quests
-						q(55137, {	-- For the Horde
-							["provider"] = { "n", 146335 },	--  Queen Talanji
-							["coord"] = { 42.2, 9.4, DAZARALOR },
-							["races"] = { ZANDALARI },
-							["lvl"] = 20,
-							["g"] = {
-								i(165001),	-- Tabard of the Zandalari
-								i(167169),	-- Letter from Lady Sylvannas
-							},
-						}),
-						q(55138, {	-- Stranger in a Strange Land
-							["sourceQuests"] = { 55137 },	-- For the Horde
-							["provider"] = { "n", 133407 },	-- Ambassador Blackguard
-							["coord"] = { 39.4, 79.2, ORGRIMMAR },
-							["races"] = { ZANDALARI },
-							["lvl"] = 20,
-						}),
-						-- Zandalari Troll lvl 50 Quest
-						q(53721, {    -- Heritage of the Zandalari
-							["provider"] = { "n", 146335 },	--  Queen Talanji
-							["coord"] = { 42.2, 9.4, DAZARALOR },
-							["races"] = { ZANDALARI },
-							["lvl"] = 50,
-							["g"] = {
-								ach(13503),	-- Heritage of the Zandalari
-								i(164993),	-- Zandalari Mask
-								i(164994),	-- Zandalari Pauldrons
-								i(164995),	-- Zandalari Torque
-								i(165000),	-- Zandalari Bracers
-								i(164996),	-- Zandalari Blade-Turners
-								i(164997),	-- Zandalari Belt
-								i(164998),	-- Zandalari Leggings
-								i(164999),	-- Zandalari Shinguards
-							},
-						}),
-					},
+					}),
 				}),
 				race(VOIDELF, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
 					["maps"] = {
-						STORMWIND_CITY,
 						971,	-- Telogrus Rift
 						972,	-- Telogrus Rift, Void Elf Scenario
 					},
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(49787, {	-- The Ghostlands
 							["provider"] = { "n", 126321 },	-- Alleria Windrunner
@@ -1105,13 +1334,14 @@ _.ExpansionFeatures =
 					},
 				}),
 				race(VULPERA, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Secrets in the Sands|r, The Vol'dun Storyline.",
 					["maps"] = {
-						ORGRIMMAR,
 						TWILIGHT_HIGHLANDS,
 						ZULDAZAR,
 						SURAMAR,
 						VOLDUN,
 					},
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						q(53870, {	-- Guests at Grommash Hold
 							["sourceQuests"] = { 50242 },	-- A Choice for Allies (H)
@@ -1298,7 +1528,7 @@ _.ExpansionFeatures =
 							["races"] = { VULPERA },
 							["lvl"] = 50,
 							["g"] = {
-								ach(12291),	-- Heritage of the Void
+								ach(14002),	-- Heritage of the Vulpera
 								i(173968),	-- Vulpera Heritage Shawl
 								i(173971),	-- Vulpera Heritage Shoulderpads
 								i(174376),	-- Vulpera Heritage Rucksack
@@ -1306,6 +1536,235 @@ _.ExpansionFeatures =
 								i(173967),	-- Vulpera Heritage Handgrips
 								i(173970),	-- Vulpera Heritage Utility Belt
 								i(173969),	-- Vulpera Heritage Legguards
+							},
+						}),
+					},
+				}),
+				race(WORGEN, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Worgen|r with a standing of |cFFFFFFFFExalted|r with Gilneas.",
+					["maps"] = {
+						DUSKWOOD,
+						1577,	-- Gilneas City (Scenario)
+					},
+					["races"] = { WORGEN },
+					["g"] = bubbleDown({ ["races"] = { WORGEN }, ["minReputation"] = { 1134, EXALTED }, }, {
+						q(54976, {	-- The Shadow of Gilneas
+							["provider"] = { "n", 150200 },	-- Courier Claridge
+							["coord"] = { 54.6, 18.4, STORMWIND_CITY },
+						}),
+						q(54977, {	-- Into Duskwood
+							["sourceQuests"] = { 54976 }, -- The Shadow of Gilneas
+							["provider"] = { "n", 151784 },	-- Mia Greymane
+							["coord"] = { 82.3, 27.8, STORMWIND_CITY },
+						}),
+						q(54980, {	-- Bane of the Nightbane
+							["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
+							["coord"] = { 18.1, 57.2, DUSKWOOD },
+							["sourceQuest"] = 54977, -- Into Duskwood
+						}),
+						q(54981, {	-- Cry to the Moon
+							["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
+							["coord"] = { 18.1, 57.2, DUSKWOOD },
+							["sourceQuest"] = 54980, -- Bane of the Nightbane
+						}),
+						q(54982, {	-- The Spirit of the Hunter
+							["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
+							["coord"] = { 18.1, 57.2, DUSKWOOD },
+							["sourceQuest"] = 54980, -- Bane of the Nightbane
+						}),
+						q(54983, {	-- Waking a Dreamer
+							["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
+							["coord"] = { 46.4, 36.9, DUSKWOOD },
+							["sourceQuests"] = {
+								54981,		-- Cry to the Moon
+								54982,		-- The Spirit of the Hunter
+							},
+						}),
+						q(54984, {	-- Let Sleeping Wolves Lie
+							["description"] = "If you can't see Goldrinn, try relog",
+							["provider"] = { "n", 150106 },	-- Goldrinn
+							["coord"] = { 46.6, 36.6, DUSKWOOD },
+							["sourceQuest"] = 54983, -- Waking a Dreamer
+						}),
+						q(54990, {	-- The New Guard
+							["provider"] = { "n", 150115 },	-- Princess Tess Greymane
+							["coord"] = { 46.3, 37.0, DUSKWOOD },
+							["sourceQuest"] = 54984, -- Let Sleeping Wolves Lie
+							["g"] = {
+								i(173999),	-- Greyguard Buckle
+								i(174000),	-- Greyguard Ceremonial Shoulderguards
+								i(174003),	-- Greyguard Dueling Gloves
+								i(174005),	-- Greyguard Formal Overcoat
+								i(174006),	-- Greyguard Formal Robe
+								i(174001),	-- Greyguard Formal Trousers
+								i(174004),	-- Greyguard Stompers
+								i(174002),	-- Greyguard Tophat
+								i(173998),	-- Greyguard Wristbands
+							},
+						}),
+					}),
+				}),
+				race(ZANDALARI, {
+					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700Zandalar Forever!|r, The Zandalari Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
+					["maps"] = {
+						THE_GREAT_SEAL,
+						DAZARALOR,
+					},
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						q(53831, {	-- A Royal Occasion
+							["sourceQuests"] = { 50242 },	-- A Choice for Allies (H)
+							["provider"] = { "n", 133519 },	-- Rokhan
+							["coord"] = { 38.2, 81.4, ORGRIMMAR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(53823, {	-- A Queen's Entourage
+							["sourceQuests"] = { 53831 },	-- A Royal Occasion
+							["provider"] = { "n", 145414 },	-- Natal'hakata
+							["coord"] = { 48.6, 22.0, THE_GREAT_SEAL },
+							["races"] = HORDE_ONLY,
+						}),
+						q(53824, {	-- The Rite of Kings and Queens
+							["sourceQuests"] = { 53823 },	-- A Queen's Entourage
+							["provider"] = { "n", 148096 },	-- High Prelate Rata
+							["coord"] = { 42.57, 22.54, DAZARALOR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(54419, {	-- Quelling the Masses
+							["sourceQuests"] = { 53824 },	-- The Rite of Kings and Queens
+							["provider"] = { "n", 145360 },	-- Zolani
+							["coord"] = { 40.28, 12.45, DAZARALOR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(53826, {	-- The Instigator Among Us
+							["sourceQuests"] = { 53824 },	-- The Rite of Kings and Queens
+							["provider"] = { "n", 145360 },	-- Zolani
+							["coord"] = { 40.28, 12.45, DAZARALOR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(54301, {	-- Talanji's Mercy
+							["sourceQuests"] = {
+								54419,	-- Quelling the Masses
+								53826,	-- The Instigator Among Us
+							},
+							["provider"] = { "n", 145359 },	-- Princess Talanji
+							["coord"] = { 40.5, 11.9, DAZARALOR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(54925, {	-- Heresy!
+							["sourceQuests"] = {
+								54419,	-- Quelling the Masses
+								53826,	-- The Instigator Among Us
+							},
+							["provider"] = { "n", 148096 },	-- High Prelate Rata
+							["coord"] = { 40.2, 11.9, DAZARALOR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(54300, {	-- Breaking the Faith
+							["sourceQuests"] = {
+								54419,	-- Quelling the Masses
+								53826,	-- The Instigator Among Us
+							},
+							["provider"] = { "n", 145360 },	-- Zolani
+							["coord"] = { 40.5, 12.4, DAZARALOR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(53825, {	-- The New Zanchuli Council
+							["sourceQuests"] = {
+								54301,	-- Talanji's Mercy
+								54925,	-- Heresy!
+								54300,	-- Breaking the Faith
+							},
+							["provider"] = { "n", 145359 },	-- Princess Talanji
+							["coord"] = { 40.6, 12.0, DAZARALOR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(53827, {	-- The Council Has Spoken
+							["sourceQuests"] = { 53825 },	-- The New Zanchuli Council
+							["provider"] = { "n", 145359 },	-- Princess Talanji
+							["coord"] = { 60.4, 38.9, DAZARALOR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(53828, {	-- Gaze of the Loa
+							["sourceQuests"] = { 53827 },	-- The Council Has Spoken
+							["provider"] = { "n", 145359 },	-- Princess Talanji
+							["coord"] = { 60.4, 38.9, DAZARALOR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(54031, {	-- Gaze of the Loa: Krag'wa
+							["sourceQuests"] = { 53828 },	-- Gaze of the Loa
+							["provider"] = { "n", 146208 },	-- Krag'wa the Huge
+							["coord"] = { 44.2, 15.0, DAZARALOR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(54033, {	-- Gaze of the Loa: Gonk
+							["sourceQuests"] = { 54031 },	-- Gaze of the Loa: Krag'wa
+							["provider"] = { "n", 146208 },	-- Krag'wa the Huge
+							["coord"] = { 44.2, 15.0, DAZARALOR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(54032, {	-- Gaze of the Loa: Pa'ku
+							["sourceQuests"] = { 54033 },	-- Gaze of the Loa: Gonk
+							["provider"] = { "n", 146214 },	-- Gonk
+							["coord"] = { 46.5, 12.0, DAZARALOR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(54034, {	-- Gaze of the Loa: Bwonsamdi
+							["sourceQuests"] = { 54032 },	-- Gaze of the Loa: Pa'ku
+							["provider"] = { "n", 146209 },	-- Pa'ku <Lord of Winds>
+							["coord"] = { 44.5, 8.8, DAZARALOR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(53830, {	-- Queen of the Zandalari
+							["sourceQuests"] = { 54034 },	-- Gaze of the Loa: Bwonsamdi
+							["provider"] = { "n", 145359 },	-- Princess Talanji
+							["coord"] = { 42.7, 8.7, DAZARALOR },
+							["races"] = HORDE_ONLY,
+						}),
+						q(53719, {	-- Allegiance of the Zandalari
+							["sourceQuests"] = { 53830 },	-- Queen of the Zandalari
+							["provider"] = { "n", 146335 },	-- Queen Talanji
+							["coord"] = { 42.4, 9.2, DAZARALOR },
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								ach(13161),	-- Allied Races: Zandalari Troll
+								i(157870),	-- Zandalari Direhorn (MOUNT!)
+							},
+						}),
+						-- Zandalari Troll Starter Quests
+						q(55137, {	-- For the Horde
+							["provider"] = { "n", 146335 },	--  Queen Talanji
+							["coord"] = { 42.2, 9.4, DAZARALOR },
+							["races"] = { ZANDALARI },
+							["lvl"] = 20,
+							["g"] = {
+								i(165001),	-- Tabard of the Zandalari
+								i(167169),	-- Letter from Lady Sylvannas
+							},
+						}),
+						q(55138, {	-- Stranger in a Strange Land
+							["sourceQuests"] = { 55137 },	-- For the Horde
+							["provider"] = { "n", 133407 },	-- Ambassador Blackguard
+							["coord"] = { 39.4, 79.2, ORGRIMMAR },
+							["races"] = { ZANDALARI },
+							["lvl"] = 20,
+						}),
+						-- Zandalari Troll lvl 50 Quest
+						q(53721, {    -- Heritage of the Zandalari
+							["provider"] = { "n", 146335 },	--  Queen Talanji
+							["coord"] = { 42.2, 9.4, DAZARALOR },
+							["races"] = { ZANDALARI },
+							["lvl"] = 50,
+							["g"] = {
+								ach(13503),	-- Heritage of the Zandalari
+								i(164993),	-- Zandalari Mask
+								i(164994),	-- Zandalari Pauldrons
+								i(164995),	-- Zandalari Torque
+								i(165000),	-- Zandalari Bracers
+								i(164996),	-- Zandalari Blade-Turners
+								i(164997),	-- Zandalari Belt
+								i(164998),	-- Zandalari Leggings
+								i(164999),	-- Zandalari Shinguards
 							},
 						}),
 					},

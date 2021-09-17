@@ -954,10 +954,8 @@ app.L = {
 		[-203] = "Interface\\Icons\\ClassIcon_Warrior",										-- Warrior
 		[-204] = "Interface\\Icons\\ClassIcon_DeathKnight",									-- Death Knight
 		[-206] = "Interface\\Icons\\achievement_dungeon_heroic_gloryoftheraider",			-- Paragon
-		[-207] = "Interface\\Icons\\Achievement_alliedrace_lightforgeddraenei",				-- Lightforged Draenei
-		[-208] = "Interface\\Icons\\achievement_alliedrace_voidelf",						-- Void Elf
-		[-209] = "Interface\\Icons\\achievement_alliedrace_highmountaintauren",				-- Highmountain Tauren
-		[-210] = "Interface\\Icons\\achievement_alliedrace_nightborne",						-- Nightborne
+		
+		
 		[-211] = 1530081,																	-- New Characters
 		[-212] = app.asset("Interface_Tchest"),									            -- Treasure Chest
 		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",								-- The Underbelly
@@ -983,16 +981,16 @@ app.L = {
 		[-236] = "Interface\\Icons\\ui_alliance_7legionmedal",								-- Alliance War Campaign
 		[-237] = "Interface\\Icons\\achievement_zone_darkshore_01",							-- Warfront: The Battle for Darkshore
 		[-243] = "Interface\\Icons\\ability_hunter_markedfordeath",							-- Bounty
-		[-244] = "Interface\\Icons\\ability_racial_fireblood",								-- Dark Iron Dwarf
-		[-245] = "Interface\\Icons\\achievement_alliedrace_magharorc",						-- Mag'har Orc
+		
+		
 		[-246] = "Interface\\Icons\\inv_misc_ornatebox",									-- Is Another Man's Treasure
 		[-247] = "Interface\\Icons\\racial_dwarf_findtreasure",								-- Riches of Pandaria
-		[-251] = "Interface\\Icons\\achievement_alliedrace_zandalaritroll",					-- Zandalari Troll
-		[-252] = "Interface\\Icons\\Achievement_AlliedRace_KulTiranHuman",					-- Kul Tiran
+		
+		
 		[-253] = "Interface\\Icons\\ui_horde_honorboundmedal",								-- Horde War Campaign
-		[-254] = "Interface\\Icons\\inv_chest_chain_10",									-- Heritage Armor
-		[-255] = "Interface\\Icons\\achievement_alliedrace_vulpera",						-- Vulpera
-		[-256] = "Interface\\Icons\\achievement_alliedrace_mechagnome",						-- Mechagnome
+		[-254] = "Interface\\Icons\\FactionChange",									-- Allied Races & Heritage
+		
+		
 		[-297] = "Interface\\Icons\\inv_letter_17",											-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000",						-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",										-- Battlegrounds
@@ -1643,10 +1641,8 @@ app.L = {
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
 
 		[-206] = GetSpellInfo(67772),											-- Paragon
-		[-207] = GetSpellInfo(262064),											-- Lightforged Draenei
-		[-208] = GetSpellInfo(262062),											-- Void Elf
-		[-209] = GetSpellInfo(262063),											-- Highmountain Tauren
-		[-210] = GetSpellInfo(262061),											-- Nightborne
+		
+		
 		[-211] = NEW.." "..CHARACTER,											-- New Character
 		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest
 		[-213] = DUNGEON_FLOOR_DALARAN2,										-- The Underbelly
@@ -1669,16 +1665,16 @@ app.L = {
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-242] = "Unrated",														-- Unrated
 		[-243] = "Bounty",														-- Bounty
-		[-244] = "Dark Iron Dwarf",												-- Dark Iron Dwarf
-		[-245] = "Mag'har Orc",													-- Mag'har Orc
+		
+		
 		[-246] = select(2, GetAchievementInfo(7284)),							-- Is Another Man's Treasure
 		[-247] = select(2, GetAchievementInfo(7997)),							-- Riches of Pandaria
-		[-251] = "Zandalari Troll",												-- Zandalari Troll
-		[-252] = "Kul Tiran",													-- Kul Tiran
+		
+		
 		[-253] = C_Map.GetAreaInfo(9664),										-- War Campaign - Horde
-		[-254] = "Heritage Armor",												-- Heritage Armor
-		[-255] = "Vulpera",
-		[-256] = "Mechagnome",
+		[-254] = "Allied Races & Heritage",										-- Allied Races & Heritage
+		
+		
 -- Other
 		[-297] = MINIMAP_TRACKING_MAILBOX,										-- Mailbox
 		[-299] = GARRISON_MISSIONS,												-- Missions

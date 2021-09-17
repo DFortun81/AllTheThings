@@ -20,13 +20,6 @@ _.Zones =
 						["races"] = { GNOME },
 						["sourceQuest"] = 26208,	-- The Fight Continues
 					}),
-					q(54580, {	-- A Tundra Conundrum
-						["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
-						["coord"] = { 41.8, 31.7, 469 },
-						["races"] = { GNOME },
-						["sourceQuest"] = 54577, -- Shadowed Halls and Dusty Cogs
-						["minReputation"] = { 54, EXALTED }, -- Gnomeregan
-					}),
 					q(26331, {	-- Crushcog's Minions
 						["provider"] = { "n", 42317 },	-- High Tinker Mekkatorque
 						["coord"] = { 38.7, 32.7, 469 },
@@ -62,13 +55,6 @@ _.Zones =
 						["coord"] = { 37.2, 65.1, 469 },
 						["races"] = { GNOME },
 						["sourceQuest"] = 26316,	-- What's Keeping jessup?
-					}),
-					q(54576, {	-- Gnomeregan's Finest
-						["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
-						["coord"] = { 41.8, 31.7, 469 },
-						["races"] = { GNOME },
-						["sourceQuest"] = 54402, -- Shifting Gears
-						["minReputation"] = { 54, EXALTED }, -- Gnomeregan
 					}),
 					q(26423, {	-- Meet the High Tinker
 						["provider"] = { "n", 42366 },	-- Kelsey Steelspark
@@ -155,14 +141,6 @@ _.Zones =
 						["coord"] = { 40.5, 28.0, 469 },
 						["races"] = { GNOME },
 						["sourceQuest"] = 26566,	-- A Triumph of Gnomish Ingenuity
-					}),
-					q(54577, {	-- Shadowed Halls and Dusty Cogs
-						["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
-						["coord"] = { 41.8, 31.7, 469 },
-						["maps"] = { 1380 },	-- GnomereganC
-						["races"] = { GNOME },
-						["sourceQuest"] = 54576, -- Gnomeregan's Finest
-						["minReputation"] = { 54, EXALTED }, -- Gnomeregan
 					}),
 					q(26339, {	-- Staging in Brewnall
 						["races"] = { GNOME },

@@ -21,100 +21,16 @@ _.Achievements =
 				crit(11),	-- Warlock
 				crit(12),	-- Warrior
 			}),
+			--[[ -- Not real achievement
 			ach(13089, {	-- Allied Races: Dark Iron Dwarf
-				["groups"] = {
-					a(ach(12510)),	-- Ready for War
-					faction(2159),	-- 7th Legion
-					q(53566, {	-- Dark Iron Dwarfs
-						i(161331),	-- Dark Iron Core Hound
-					}),
-				},
-				["races"] = ALLIANCE_ONLY,
-				--["description"] = "Requires 7th Legion Exalted",
-				["lvl"] = 120,
-			}),
 			ach(12445, {	-- Allied Races: Highmountain Tauren
-				["groups"] = {
-					ach(10059),	-- Ain't No Mountain High Enough
-					faction(1828),	-- Highmountain Tribe
-					q(48433, {	-- Together We Are the Horde!
-						i(155662),	-- Highmountain Thunderhoof
-					}),
-				},
-				["races"] = HORDE_ONLY,
-				--["description"] = "Requires Battle for Azeroth to be purchased.",
-				["lvl"] = 110,
-			}),
 			ach(12448, {	-- Allied Races: Lightforged Draenei
-				["groups"] = {
-					ach(12066),	-- You Are Now Prepared!
-					faction(2165),	-- Army of the Light
-					q(50071, {	-- For the Light!
-						i(155656),	-- Lightforged Felcrusher
-					}),
-				},
-				["races"] = ALLIANCE_ONLY,
-				--["description"] = "Requires Battle for Azeroth to be purchased.",
-				["lvl"] = 110,
-			}),
 			ach(13092, {	-- Allied Races: Mag'har Orc
-				["groups"] = {
-					ach(12509),	-- Ready for War
-					faction(2157),	-- The Honorbound
-					q(51479, {	-- The Uncorrupted
-						i(161330),	-- Mag'har Direwolf
-					}),
-				},
-				["races"] = HORDE_ONLY,
-				--["description"] = "Requires Honorbound Exalted",
-				["lvl"] = 120,
-			}),
 			ach(13991, {	-- Allied Races: Mechagnome
-				["lvl"] = 120,
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					ach(13557),	-- Rustbolt Rebellion
-					faction(2391),	-- Rustbolt Resistance
-					q(57497, {	-- Propagate The News
-						i(174067),	-- Mechagon Mechanostrider
-					}),
-				},
-			}),
 			ach(12446, {	-- Allied Races: Nightborne
-				["groups"] = {
-					ach(11340),	-- Insurrection
-					faction(1859),	-- The Nightfallen
-					q(49614, {	-- The Nightborne
-						i(156487),	-- Nightborne Manasaber
-					}),
-				},
-				["races"] = HORDE_ONLY,
-				--["description"] = "Requires Battle for Azeroth to be purchased.",
-				["lvl"] = 110,
-			}),
 			ach(12447, {	-- Allied Races: Void Elf
-				["groups"] = {
-					ach(12066),	-- You Are Now Prepared!
-					faction(2170),	-- Argussian Reach
-					q(48962, {	-- Telogrus Rift
-						i(156486),	-- Starcursed Voidstrider
-					}),
-				},
-				["races"] = ALLIANCE_ONLY,
-				--["description"] = "Requires Battle for Azeroth to be purchased.",
-				["lvl"] = 110,
-			}),
 			ach(13207, {	-- Allied Races: Vulpera
-				["lvl"] = 120,
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					ach(12478),	-- Secrets in the Sands
-					faction(2158),	-- Voldunai
-					q(57448, {	-- New Allies Among Us
-						i(174066),	-- Caravan Hyena
-					}),
-				},
-			}),
+			--]]
 			un(REMOVED_FROM_GAME, ach(9016, {	-- Breaker of the Black Harvest
 				un(REMOVED_FROM_GAME, title(256)),	-- of the Black Harvest
 			})),
