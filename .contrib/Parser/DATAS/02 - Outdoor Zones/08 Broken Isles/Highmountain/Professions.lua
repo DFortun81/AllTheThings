@@ -7,12 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(-38,  {	-- Profession
-				prof(ALCHEMY, {
-					q(39334, {	-- Thanks for Flasking
-						["sourceQuests"] = { 39430 },	-- Flasking for a Favor
-						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
-					}),
-				}),
 				prof(ARCHAEOLOGY, {
 					q(41190, {	-- Crystal Eyes
 						["sourceQuests"] = { 41189 },	-- A New Lead

@@ -96,6 +96,7 @@ _.Instances = { tier(LEGION_TIER, {
 							i(139252),	-- Preserved Worldseed
 							i(139249),	-- Shaladrassil's Blossom
 							i(139250),	-- Unwaking Slumber
+							i(136820),	-- Nythendra's Heart
 						})),
 						cr(106087, e(1744, {	-- Elerethe Renferal
 							ach(10818, crit(2)),	-- Darkbough / Elerethe Renferal
@@ -334,6 +335,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(139252),	-- Preserved Worldseed
 					i(139249),	-- Shaladrassil's Blossom
 					i(139250),	-- Unwaking Slumber
+					i(136820),	-- Nythendra's Heart
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10830),	-- Took the Red Eye Down
@@ -569,6 +571,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(139252),	-- Preserved Worldseed
 					i(139249),	-- Shaladrassil's Blossom
 					i(139250),	-- Unwaking Slumber
+					i(136820),	-- Nythendra's Heart
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10830),	-- Took the Red Eye Down
@@ -807,6 +810,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(139252),	-- Preserved Worldseed
 					i(139249),	-- Shaladrassil's Blossom
 					i(139250),	-- Unwaking Slumber
+					i(136820),	-- Nythendra's Heart
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10830),	-- Took the Red Eye Down

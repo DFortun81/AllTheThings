@@ -7,12 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			n(-38, {	-- Profession
-				prof(ALCHEMY, {
-					q(39390, {	-- A Mysterious Text
-						["provider"] = { "o", 243392 },	-- Alchemy Book
-						["sourceQuests"] = { 39566 },	-- The Search for Knowledge
-					}),
-				}),
 				prof(ARCHAEOLOGY, {
 					q(41162, {	-- And Into the Fel Fire
 						["isWeekly"] = true,

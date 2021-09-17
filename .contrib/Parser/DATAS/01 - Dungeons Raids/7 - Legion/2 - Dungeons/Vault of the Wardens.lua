@@ -8,13 +8,6 @@ _.Instances = { tier(LEGION_TIER, {
 		["maps"] = { 710, 711, 712 },
 		["g"] = {
 			n(QUESTS, {
-				i(127877, {	-- Bendy Glass Tubes
-					["provider"] = { "n", 105824 },	-- Grimoira
-					["requireSkill"] = ALCHEMY,
-					["g"] = {
-						q(39343),	-- Vault of the Wardens: Bendy Glass Tubes
-					},
-				}),
 				q(44486, {	-- Fel-Ravaged Tome
 					["provider"] = { "o", 258979 },	-- Fel-Ravaged Tome
 					["g"] = {

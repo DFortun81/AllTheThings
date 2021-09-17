@@ -7,12 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
 			n(-38,  {	-- Profession
-				prof(ALCHEMY, {
-					q(39338, {	-- Return the Filter
-						["provider"] = { "n", 93974 },	-- Leyweaver Erenyi
-						["sourceQuests"] = { 44112 },	-- Trading for Dreams
-					}),
-				}),
 				prof(ARCHAEOLOGY, {
 					q(41178, {	-- Explosive Results
 						["isWeekly"] = true,
