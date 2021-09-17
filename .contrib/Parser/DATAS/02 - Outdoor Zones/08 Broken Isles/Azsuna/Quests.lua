@@ -746,9 +746,6 @@ _.Zones =
 					["lvl"] = 98,
 					["provider"] = { "i", 140249 }	-- Timeworn Artifact
 				}),
-				q(37779, {	-- Tip the Scales (Bonus Objective)
-					["coord"] = { 62.6, 42.6, AZSUNA },
-				}),
 				q(37497, {	-- Trailing the Tidestone
 					["sourceQuests"] = { 37257 },	-- Our Very Bones
 					["coord"] = { 47.0, 41.2, AZSUNA },
