@@ -954,8 +954,6 @@ app.L = {
 		[-203] = "Interface\\Icons\\ClassIcon_Warrior",										-- Warrior
 		[-204] = "Interface\\Icons\\ClassIcon_DeathKnight",									-- Death Knight
 		[-206] = "Interface\\Icons\\achievement_dungeon_heroic_gloryoftheraider",			-- Paragon
-		
-		
 		[-211] = 1530081,																	-- New Characters
 		[-212] = app.asset("Interface_Tchest"),									            -- Treasure Chest
 		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",								-- The Underbelly
@@ -981,16 +979,10 @@ app.L = {
 		[-236] = "Interface\\Icons\\ui_alliance_7legionmedal",								-- Alliance War Campaign
 		[-237] = "Interface\\Icons\\achievement_zone_darkshore_01",							-- Warfront: The Battle for Darkshore
 		[-243] = "Interface\\Icons\\ability_hunter_markedfordeath",							-- Bounty
-		
-		
 		[-246] = "Interface\\Icons\\inv_misc_ornatebox",									-- Is Another Man's Treasure
 		[-247] = "Interface\\Icons\\racial_dwarf_findtreasure",								-- Riches of Pandaria
-		
-		
 		[-253] = "Interface\\Icons\\ui_horde_honorboundmedal",								-- Horde War Campaign
-		[-254] = "Interface\\Icons\\FactionChange",									-- Allied Races & Heritage
-		
-		
+		[-254] = "Interface\\Icons\\FactionChange",											-- Allied Races & Heritage
 		[-297] = "Interface\\Icons\\inv_letter_17",											-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000",						-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",										-- Battlegrounds
@@ -1639,10 +1631,7 @@ app.L = {
 		[-173] = PLAYER_DIFFICULTY_TIMEWALKER,									-- Timewalking
 		[-174] = CALENDAR_FILTER_DARKMOON,										-- Darkmoon Faire
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
-
 		[-206] = GetSpellInfo(67772),											-- Paragon
-		
-		
 		[-211] = NEW.." "..CHARACTER,											-- New Character
 		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest
 		[-213] = DUNGEON_FLOOR_DALARAN2,										-- The Underbelly
@@ -1665,16 +1654,10 @@ app.L = {
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-242] = "Unrated",														-- Unrated
 		[-243] = "Bounty",														-- Bounty
-		
-		
 		[-246] = select(2, GetAchievementInfo(7284)),							-- Is Another Man's Treasure
 		[-247] = select(2, GetAchievementInfo(7997)),							-- Riches of Pandaria
-		
-		
 		[-253] = C_Map.GetAreaInfo(9664),										-- War Campaign - Horde
 		[-254] = "Allied Races & Heritage",										-- Allied Races & Heritage
-		
-		
 -- Other
 		[-297] = MINIMAP_TRACKING_MAILBOX,										-- Mailbox
 		[-299] = GARRISON_MISSIONS,												-- Missions

@@ -692,13 +692,7 @@ for key,value in pairs({
 		--TODO: [-228] = GetSpellInfo(218950),						-- GetSpellInfo(218950),  -- Flight Path
 		--TODO: [-242] = "Unrated",									-- Unrated
 		--TODO: [-243] = "Bounty",									-- Bounty
-		--TODO: [-244] = "Dark Iron Dwarf",							-- Dark Iron Dwarf
-		--TODO: [-245] = "Mag'har Orc",								-- Mag'har Orc
-		--TODO: [-251] = "Zandalari Troll",							-- Zandalari Troll
-		--TODO: [-252] = "Kul Tiran",								-- Kul Tiran
-		--TODO: [-254] = "Heritage Armor",							-- Heritage Armor
-		--TODO: [-255] = "Vulpera",
-		--TODO: [-256] = "Mechagnome",
+		[-254] = "Raças Aliadas & Armadura Tradicional",			-- Allied Races & Heritage
 	-- Other
 		--TODO: [-356] = "Assault on the Dark Portal",
 		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower

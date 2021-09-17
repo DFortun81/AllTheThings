@@ -731,13 +731,7 @@ for key,value in pairs({
 		--TODO: [-228] = GetSpellInfo(218950),						-- GetSpellInfo(218950),  -- Flight Path
 		--TODO: [-242] = "Unrated",									-- Unrated
 		[-243] = "赏金任务",											-- Bounty
-		[-244] = "黑铁矮人",											-- Dark Iron Dwarf
-		[-245] = "玛格汉兽人",										-- Mag'har Orc
-		[-251] = "赞达拉巨魔",										-- Zandalari Troll
-		[-252] = "库尔提拉斯人",										-- Kul Tiran
-		[-254] = "传承护甲",											-- Heritage Armor
-		[-255] = "狐人",												-- Vulpera
-		[-256] = "机械侏儒",											-- Mechagnome
+		[-254] = "同盟种族 & 传承护甲",										-- Allied Races & Heritage
 	-- Other
 		[-356] = "进攻黑暗之门",										-- Assault on the Dark Portal
 		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower
