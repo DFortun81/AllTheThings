@@ -404,6 +404,7 @@ _.Zones =
 										i(140609),	-- Slippers of the Earthen Healer
 									}
 								}),
+								q(43483),	-- Fel Annihilation, unavailable afterwards
 							},
 						}),
 						q(44153, {	-- Light's Charge

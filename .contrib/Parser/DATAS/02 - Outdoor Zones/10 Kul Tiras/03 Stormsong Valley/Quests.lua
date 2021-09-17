@@ -1699,6 +1699,14 @@ _.Zones =
 						i(158680),	-- Rikal's Ritual Beads
 					},
 				}),
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ also probably cant do after a certain level
+					q(50779, {	-- A Clean Slate
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(51534),	-- The Battle for Brennadam
+					q(50133),	-- Weed Whacking
+				}),
 			}),
 		}),
 	}),

@@ -415,9 +415,6 @@ _.Zones =
 						i(132937),	-- Traitor's Bane Breastplate
 					},
 				}),
-				q(37495, {	-- Plunder the Cove (Bonus Objective)
-					["coord"] = { 49.2, 58.8, AZSUNA },
-				}),
 				q(37729, {	-- Pop Quiz: Advanced Rune Drawing
 					["sourceQuests"] = { 42371 },	-- Study Hall: Combat Research
 					["coord"] = { 29.5, 42.6, 631 },	-- Nar'thalas Academy
@@ -455,9 +452,6 @@ _.Zones =
 						i(141626),	-- Soul-Stealer's Chain Pants
 						i(141625),	-- Soul-Trapper's Greaves
 					},
-				}),
-				q(36811, {	-- Retake Faronaar (Bonus Objective)
-					["coord"] = { 39.4, 50.2, AZSUNA },
 				}),
 				q(37538, {	-- Round 1, Fight!
 					["sourceQuests"] = { 37536 },	-- Morale Booster
@@ -558,9 +552,6 @@ _.Zones =
 					["sourceQuests"] = { 42370 },	-- Wanding 101
 					["coord"] = { 30.9, 44.6, 631 },	-- Nar'thalas Academy
 					["provider"] = { "n", 107334 },	-- Sythorne
-				}),
-				q(37466, {	-- The Broken Academy (Bonus Objective)
-					["coord"] = { 55.6, 43.2, AZSUNA },
 				}),
 				q(37659, {	-- The Captain's Foot Locker
 					["sourceQuests"] = { 37654 },	-- Maritime Law
@@ -746,9 +737,6 @@ _.Zones =
 						i(138878),	-- Copy of Daglop's Contract (TOY!)
 					},
 				}),
-				q(37963, {	-- Those Beyond Redemption (Bonus Objective)
-					["coord"] = { 57.6, 15.6, AZSUNA },
-				}),
 				q(37690, {	-- Those Who Remember
 					["sourceQuests"] = { 42271 },	-- Their Dying Breaths
 					["coord"] = { 48.0, 26.9, AZSUNA },
@@ -796,6 +784,26 @@ _.Zones =
 					},
 					["coord"] = { 53.7, 16.7, AZSUNA },
 					["provider"] = { "n", 90383 },	-- Runas the Shamed
+				}),
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ also probably cant do after a certain level
+					q(37965),	-- A Tainted Vintage
+					q(42020),	-- Bonus Objective: Hatecoil Warcamp
+					q(37495, {	-- Plunder the Cove
+						["coord"] = { 49.2, 58.8, AZSUNA },
+					}),
+					q(36811, {	-- Retake Faronaar
+						["coord"] = { 39.4, 50.2, AZSUNA },
+					}),
+					q(37466, {	-- The Broken Academy
+						["coord"] = { 55.6, 43.2, AZSUNA },
+					}),
+					q(37963, {	-- Those Beyond Redemption
+						["coord"] = { 57.6, 15.6, AZSUNA },
+					}),
+					q(37779, {	-- Tip the Scales
+						["coord"] = { 62.6, 42.6, AZSUNA },
+					}),
 				}),
 		--[[ TODO: These quests will be organized soon™
 				q(38961),	-- Eye of Azshara: The Depraved Nightfallen

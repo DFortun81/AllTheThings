@@ -830,10 +830,6 @@ _.Zones =
 						i(175663),	-- Grove Warden's Greaves
 					},
 				}),
-				q(60840, {	-- Wild Hunt Offensive (bonus objective)
-					["isWorldQuest"] = true,	-- shows up in /attwq without this
-					["coord"] = { 64.0, 46.0, ARDENWEALD },
-				}),
 				q(60778, {	-- Wildseed Rescue
 					["sourceQuests"] = { 60341 },	-- First on the Agenda
 					["provider"] = { "n", 170175 },	-- Featherlight
@@ -845,23 +841,48 @@ _.Zones =
 					["coord"] = { 45.2, 65.1, ARDENWEALD },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
-
-				-- Bonus Objectives
-				q(62773, {	-- Dreamshrine Basin (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-				}),
-				q(62720, {	-- The Fallen Tree (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-				}),
-				q(62775, {	-- The Waning Grove (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-				}),
-				q(62774, {	-- Tranquil Pools (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				n(BONUS_OBJECTIVES, {
+					q(62773, {	-- Dreamshrine Basin (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(175713),	-- Sprigthistle Loop
+						},
+					}),
+					q(60840, {	-- Wild Hunt Offensive
+						["isWorldQuest"] = true,	-- shows up in /attwq without this
+						["coord"] = { 64.0, 46.0, ARDENWEALD },
+					}),
+					q(62720, {	-- The Fallen Tree (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181404),	-- Faemoss Shoes
+							i(181406),	-- Runetender Boots
+							i(181405),	-- Gormhusk Steps
+							i(181403),	-- Sapsteel Sabatons
+						},
+					}),
+					q(62775, {	-- The Waning Grove (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181415),	-- Faemoss Leggings
+							i(181417),	-- Runetender Pants
+							i(181416),	-- Gormhusk Kilt
+							i(181414),	-- Sapsteel Legplates
+						},
+					}),
+					q(62774, {	-- Tranquil Pools (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181420),	-- Faemoss Amice
+							i(181418),	-- Runetender Shoulderguards
+							i(181421),	-- Gormhusk Mantle
+							i(181419),	-- Sapsteel Pauldrons
+						},
+					}),
 				}),
 			}),
 		}),

@@ -98,13 +98,6 @@ _.Zones =
 							follower(154),	-- Magister Krelas
 						},
 					}),
-					q(37421, {	-- Kuuro's Claim (bonus objective)
-						["coord"] = { 75.1, 23.4, TALADOR },
-						["sourceQuests"] = {
-							34558,	-- At Your Command (A)
-							34566,	-- At Your Command (H)
-						}
-					}),
 					q(34814, {	-- Making Acquaintances
 						["provider"] = { "n", 80142 },	-- Archmage Khadgar
 						["coord"] = { 74.9, 31.1, TALADOR },
@@ -216,6 +209,20 @@ _.Zones =
 						["coord"] = { 68.3, 70.3, TALADOR },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34879,	-- Dropping In
+					}),
+					n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ also probably cant do after a certain level
+						q(37421, {	-- Kuuro's Claim
+							["coord"] = { 75.1, 23.4, TALADOR },
+							["sourceQuests"] = {
+								34558,	-- At Your Command (A)
+								34566,	-- At Your Command (H)
+							}
+						}),
+						q(35237, {	-- Mor'gran Logworks
+							["coord"] = { 65.4, 32.0, TALADOR },
+							["races"] = HORDE_ONLY,
+						}),
 					}),
 				}),
 				n(-361, {	-- Artillery Tower
@@ -408,9 +415,16 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34569,	-- The Quarry Quandary
 					}),
-					q(37422, {	-- Zangarra (bonus objective)
-						["coord"] = { 83.4, 28.6, TALADOR },
-						["sourceQuest"] = 34566,	-- At Your Command
+					n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ also probably cant do after a certain level
+						q(35236, {	-- Orunai Coast
+							["coord"] = { 56.9, 13.0, TALADOR },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(37422, {	-- Zangarra
+							["coord"] = { 83.4, 28.6, TALADOR },
+							["sourceQuest"] = 34566,	-- At Your Command
+						}),
 					}),
 				}),
 				q(34802, {	-- A Pilgrimage Gone Awry
@@ -502,9 +516,6 @@ _.Zones =
 						i(113034),	-- Sha'tari Keeper Gauntlets
 						i(113035),	-- Talador Sentinel Gauntlets
 					},
-				}),
-				q(34639, {	-- Aruuna's Desolation (bonus objective)
-					["coord"] = { 76.2, 48.9, TALADOR },
 				}),
 				q(34685, {	-- As the Smoke Rises
 					["provider"] = { "n", 79573 },	-- Kalaam
@@ -615,9 +626,6 @@ _.Zones =
 					["coord"] = { 45.6, 74.4, TALADOR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34564,	-- Destination: Unknown
-				}),
-				q(34667, {	-- Court of Souls (bonus objective)
-					["coord"] = { 42.5, 60.6, TALADOR },
 				}),
 				q(34404, {	-- Crystals of Unusual Power
 					["provider"] = { "n", 78515 },	-- Manduil Skycaller
@@ -970,10 +978,6 @@ _.Zones =
 						34577,	-- Out of Jovite (artillery tower)
 					},
 				}),
-				q(35237, {	-- Mor'gran Logworks (bonus objective)
-					["coord"] = { 65.4, 32.0, TALADOR },
-					["races"] = HORDE_ONLY,
-				}),
 				q(34465, {	-- Mystical Hat
 					["coord"] = { 45.2, 37.0, TALADOR },
 					["icon"] = "Interface\\Icons\\inv_helmet_65",
@@ -1085,10 +1089,6 @@ _.Zones =
 						34874,	-- Next Steps (arcane sanctum)
 						34577,	-- Out of Jovite (artillery tower)
 					},
-				}),
-				q(35236, {	-- Orunai Coast (bonus objective)
-					["coord"] = { 56.9, 13.0, TALADOR },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34234, {	-- Payback
 					["provider"] = { "n", 78082 },	-- Vindicator Kaluud
@@ -1678,8 +1678,17 @@ _.Zones =
 						34571,	-- Out of Jovite (artillery tower)
 					},
 				}),
-				q(34660, {	-- Zorkra's Fall (bonus objective)
-					["coord"] = { 54.2, 88.7, TALADOR },
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ also probably cant do after a certain level
+					q(34639, {	-- Aruuna's Desolation
+						["coord"] = { 76.2, 48.9, TALADOR },
+					}),
+					q(34667, {	-- Court of Souls
+						["coord"] = { 42.5, 60.6, TALADOR },
+					}),
+					q(34660, {	-- Zorkra's Fall
+						["coord"] = { 54.2, 88.7, TALADOR },
+					}),
 				}),
 			}),
 		}),

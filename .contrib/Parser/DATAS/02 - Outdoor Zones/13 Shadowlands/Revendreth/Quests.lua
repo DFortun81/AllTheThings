@@ -1,4 +1,4 @@
----------------------------------------------------
+ ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
@@ -61,6 +61,11 @@ _.Zones =
 				--	this doesn't require turning in "hunting trophies," the other quest the NPC provides - i went to him to turn it in and he had this other quest to offer me.
 					["provider"] = { "n", 156384 },	-- Huntmaster Constantin
 					["coord"] = { 48.5, 68.5, REVENDRETH },
+				}),
+				q(63982, {	-- Above My Station
+					["sourceQuests"] = { 63980 },	-- Seeking Smugglers
+					["provider"] = { "n", 160090 },	-- Ta'nla the Identifier
+					["coord"] = { 51.4, 82.7, REVENDRETH },
 				}),
 				q(59713, {	-- Active Ingredients
 					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
@@ -964,16 +969,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 
-				-- PTR QUESTS - TODO: MERGE INTO MAIN QUESTS AFTER CONFIRMATION ON LIVE
-
-				-- part of tazavesh unlock, unrelated to campaign
-				q(63982, {	-- Above My Station
-					["sourceQuests"] = { 63980 },	-- Seeking Smugglers
-					["provider"] = { "n", 160090 },	-- Ta'nla the Identifier
-					["coord"] = { 51.4, 82.7, REVENDRETH },
-				}),
-				-------------------------------------------------
-
 				q(63645, {	-- The Dawnkeep Prisoner
 				--	i think this is only for characters who haven't already killed Denathrius, so will have to find a way to check it off for characters who aren't eligible
 					["sourceQuests"] = { 63644 },	-- Dread Tidings
@@ -981,57 +976,53 @@ _.Zones =
 					["coord"] = { 22.9, 43.7, REVENDRETH },
 				}),
 
-
-				-- Bonus Objectives
-				q(57177, {	-- A Fresh Start
-				--	probably have to be on quest 57175, "Inquisitor Vilhelm's Sinstone" for this to show up
-					["sourceQuests"] = { 59021 },	-- Herald Their Demise
-				}),
-				q(62781, {	-- Ash You Like It (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181334),	-- Essence Extractor [monk]
-					},
-				}),
-				q(62784, {	-- Charlatans (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181185),	-- Soulstalker Breeches [monk]
-					},
-				}),
-				q(59211, {	-- Forgotten Village
-					["description"] = "This Bonus Objective is only available at level 58 or 59.",
-					["isBreadcrumb"] = true,
-					["sourceQuests"] = { 60313 },	-- Dredhollow
-					["lvl"] = { 58, 59 },
-				}),
-				q(62780, {	-- Parasites of Reality (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181183),	-- Soulstalker Grips [monk]
-					},
-				}),
-				q(62783, {	-- Stalking Fear (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181187),	-- Soulstalker Bindings [monk]
-					},
-				}),
-				q(62782, {	-- The Banewood (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181184),	-- Soulstalker Helm [monk]
-					},
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check Rewards they are true for Druid and Monk atm.
+					q(57177, {	-- A Fresh Start
+						["description"] = "Probably have to be on quest 57175, Inquisitor Vilhelm's Sinstone for this to show up.",
+						["sourceQuests"] = { 59021 },	-- Herald Their Demise
+					}),
+					q(62781, {	-- Ash You Like It (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181334),	-- Essence Extractor
+						},
+					}),
+					q(62784, {	-- Charlatans (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181185),	-- Soulstalker Breeches
+						},
+					}),
+					q(59211, {	-- Forgotten Village
+						["description"] = "This Bonus Objective is only available at level 58 or 59.",
+						["isBreadcrumb"] = true,
+						["sourceQuests"] = { 60313 },	-- Dredhollow
+						["lvl"] = { 58, 59 },
+					}),
+					q(62780, {	-- Parasites of Reality (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181183),	-- Soulstalker Grips
+						},
+					}),
+					q(62783, {	-- Stalking Fear (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181187),	-- Soulstalker Bindings
+						},
+					}),
+					q(62782, {	-- The Banewood (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181184),	-- Soulstalker Helm
+						},
+					}),
 				}),
 			}),
 		}),

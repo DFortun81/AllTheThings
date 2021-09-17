@@ -745,39 +745,48 @@ _.Zones =
 					["provider"] = { "n", 177435 },	-- Khaliiq
 					["coord"] = { 52.8, 68.6, MALDRAXXUS },
 				}),
-
-				-- Bonus Objectives
-				q(62742, {	-- Avoid 'Em Like the Plague (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181638),	-- Gorewrought Drape [monk]
-					},
-				}),
-				q(62741, {	-- Choice of Action (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-				}),
-				q(62743, {	-- Decaying Situation (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-				}),
-				q(62721, {	-- Deconstructing The Problem (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181682),	-- Corpsehide Wristwraps [monk]
-					},
-				}),
-				q(62712, {	-- War of Attrition (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181678),	-- Corpsehide Belt [monk]
-					},
+				n(BONUS_OBJECTIVES, {
+					q(62742, {	-- Avoid 'Em Like the P	lague (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181638),	-- Gorewrought Drape
+						},
+					}),
+					q(62741, {	-- Choice of Action (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+					}),
+					q(62743, {	-- Decaying Situation (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181664),	-- Bloodsilk Hood
+							i(181666),	-- Corpsehide Helm
+							i(181665),	-- Fleshscale Coif
+							i(181651),	-- Steelcore Helmet
+						},
+					}),
+					q(62721, {	-- Deconstructing The Problem (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181679),	-- Bloodsilk Wristwraps
+							i(181682),	-- Corpsehide Wristwraps
+							i(181681),	-- Fleshscale Wristwraps
+							i(181680),	-- Steelcore Wristwraps
+						},
+					}),
+					q(62712, {	-- War of Attrition (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181676),	-- Bloodsilk Cord
+							i(181678),	-- Corpsehide Belt
+							i(181677),	-- Fleshscale Belt
+							i(181675),	-- Steelcore Girdle
+						},
+					}),
 				}),
 			}),
 		}),

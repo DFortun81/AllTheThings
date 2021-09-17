@@ -1094,7 +1094,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48946 },	-- The Order of Embers
 				}),
-				q(44785, {	-- Tea Party
+				q(44785, {	-- Tea Party (A)
 					["provider"] = { "n", 122493 },	-- Annie Warren
 					["coord"] = { 54.7, 49.1, DRUSTVAR },
 					["races"] = ALLIANCE_ONLY,
@@ -1105,6 +1105,12 @@ _.Zones =
 						i(155569),	-- Mayor Striggs
 						i(155565),	-- Trunksy
 					},
+				}),
+				q(53465, {	-- Tea Party (H)
+					["provider"] = { "n", 143908 },	-- Mangled Body
+					["sourceQuests"] = { 53464 },	-- The Village of Glenbrook
+					["coord"] = { 54.6, 49.0, DRUSTVAR },
+					["races"] = HORDE_ONLY,
 				}),
 				q(47289, {	-- Teddies and Tea
 					["provider"] = { "n", 121603 },	-- Abby Lewis
@@ -1291,12 +1297,17 @@ _.Zones =
 					},
 				}),
 				o(270917, {	-- Glenbrook Register
-					q(45079, {	-- The Village of Glenbrook
+					q(45079, {	-- The Village of Glenbrook (A)
 						["coord"] = { 55.6, 41.1, DRUSTVAR },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 47428 },	-- Kitty?
 						-- Not required for "Drust Do It."
 					}),
+				}),
+				q(53464, {	-- The Village of Glenbrook (H)
+					["provider"] = { "o", 270917 },	-- Glenbrook Register
+					["coord"] = { 55.6, 41.1, DRUSTVAR },
+					["races"] = HORDE_ONLY,
 				}),
 				q(48108, {	-- The Waycrest Daughter
 					["provider"] = { "n", 124417 },	-- Cyril White
@@ -1426,6 +1437,26 @@ _.Zones =
 						-- Not required for "Drust Do It."
 					}),
 				}),
+				q(51240, {	-- WANTED: Anchorface
+					["coord"] = { 19.57, 43.65, DRUSTVAR },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53459, {	-- WANTED: Sister Lilias
+					["coord"] = { 37.51, 25.8, DRUSTVAR },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53455, {	-- WANTED: The Crimson Cutthroats
+					["coord"] = { 19.57, 43.65, DRUSTVAR },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53456, {	-- WANTED: The Rime Huntress
+					["coord"] = { 37.51, 25.8, DRUSTVAR },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53458, {	-- WANTED: The Rindlewoe
+					["coord"] = { 37.51, 25.8, DRUSTVAR },
+					["races"] = HORDE_ONLY,
+				}),
 				q(52486, {	-- Waycrest Manor: Draining the Heartsbane
 					["sourceQuests"] = {
 						52484,	-- Buried Power
@@ -1483,38 +1514,29 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48941 },	-- A Slight Detour
 				}),
-			}),
-			n(QUESTS, {	-- [Horde]
-				q(53465, {	-- Tea Party (H)
-					["provider"] = { "n", 143908 },	-- Mangled Body
-					["sourceQuests"] = { 53464 },	-- The Village of Glenbrook
-					["coord"] = { 54.6, 49.0, DRUSTVAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(53464, {	-- The Village of Glenbrook (H)
-					["provider"] = { "o", 270917 },	-- Glenbrook Register
-					["coord"] = { 55.6, 41.1, DRUSTVAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(51240, {	-- WANTED: Anchorface
-					["coord"] = { 19.57, 43.65, DRUSTVAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(53459, {	-- WANTED: Sister Lilias
-					["coord"] = { 37.51, 25.8, DRUSTVAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(53455, {	-- WANTED: The Crimson Cutthroats
-					["coord"] = { 19.57, 43.65, DRUSTVAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(53456, {	-- WANTED: The Rime Huntress
-					["coord"] = { 37.51, 25.8, DRUSTVAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(53458, {	-- WANTED: The Rindlewoe
-					["coord"] = { 37.51, 25.8, DRUSTVAR },
-					["races"] = HORDE_ONLY,
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ also probably cant do after a certain level
+					q(48525, {	-- Break Them to Splinters
+						["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
+					}),
+					q(48474, {	-- Crypt Keepers
+						["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
+					}),
+					q(47969, {	-- Fallhaven's Curse
+						["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
+					}),
+					q(48181),	-- Nooooope
+					q(48680, {	-- Not the Bees!
+						["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
+					}),
+					q(50959),	-- Plundering Pirates
+					q(50448, {	-- Reclaiming Corlain
+						["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
+					}),
+					q(45972),	-- The Accursed Thicket
+					q(50091, {	-- Village Repair
+						["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
+					}),
 				}),
 --[[	raw quest list to check against
 				-- Unknown

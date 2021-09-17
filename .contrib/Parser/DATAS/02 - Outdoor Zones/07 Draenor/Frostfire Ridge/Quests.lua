@@ -328,15 +328,6 @@ _.Zones =
 						i(111542),	-- Frostwolf Wind-Talker Cudgel
 					},
 				}),
-				q(34505, {	-- Forbidden Glacier
-					["coord"] = { 25.5, 55.0, FROSTFIRE_RIDGE },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(1, {
-							["achievementID"] = 9606,	-- Frostfire Fridge
-						}),
-					},
-				}),
 				q(33807, {	-- Free Our Brothers and Sisters
 					["coord"] = { 21.7, 56.3, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
@@ -353,15 +344,6 @@ _.Zones =
 					["provider"] = { "n", 84689 },	-- Trega
 					["coord"] = { 20.4, 60.6, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
-				}),
-				q(34501, {	-- Frostbite Hollow
-					["coord"] = { 66.1, 18.0, FROSTFIRE_RIDGE },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(2, {
-							["achievementID"] = 9606,	-- Frostfire Fridge
-						}),
-					},
 				}),
 				q(34346, {	-- Frosted Fury
 					["provider"] = { "n", 78209 },	-- Shadow Hunter Mala
@@ -422,15 +404,6 @@ _.Zones =
 					["coord"] = { 34.2, 72.9, 526 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33546,	-- Deeds Left Undone
-				}),
-				q(33145, {	-- Grimfrost Hill
-					["coord"] = { 65.1, 47.7, FROSTFIRE_RIDGE },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(3, {
-							["achievementID"] = 9606,	-- Frostfire Fridge
-						}),
-					},
 				}),
 				q(33132, {	-- Gut Guttra
 					["provider"] = { "n", 72976 },	-- Outrider Urukag
@@ -1272,6 +1245,36 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 76862 },	-- Gog'rak
 					["sourceQuest"] = 33468,	-- Save Wolf Home
+				}),
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ also probably cant do after a certain level
+					q(34505, {	-- Forbidden Glacier
+						["coord"] = { 25.5, 55.0, FROSTFIRE_RIDGE },
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							crit(1, {
+								["achievementID"] = 9606,	-- Frostfire Fridge
+							}),
+						},
+					}),
+					q(33145, {	-- Grimfrost Hill
+						["coord"] = { 65.1, 47.7, FROSTFIRE_RIDGE },
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							crit(3, {
+								["achievementID"] = 9606,	-- Frostfire Fridge
+							}),
+						},
+					}),
+					q(34501, {	-- Frostbite Hollow
+						["coord"] = { 66.1, 18.0, FROSTFIRE_RIDGE },
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							crit(2, {
+								["achievementID"] = 9606,	-- Frostfire Fridge
+							}),
+						},
+					}),
 				}),
 			}),
 		}),

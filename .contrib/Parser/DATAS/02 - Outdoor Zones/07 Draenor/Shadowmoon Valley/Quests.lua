@@ -59,27 +59,11 @@ _.Zones =
 						garrisonBuilding(64),	-- Fishing Shack
 					},
 				}),
-				q(37631, {	-- Assault on Socrethar's Rise
-					["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(36348, {	-- Assault on Socrethar's Rise [Bonus Objective]
-					["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(37632, {	-- Assault on Socrethar's Rise [Bonus Objective]
-					["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
-					["races"] = HORDE_ONLY,
-				}),
 				q(35014, {	-- Blademoon Bloom
 					["sourceQuests"] = { 33788 },	-- Cooking With Unstable Herbs
 					["coord"] = { 53.7, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80727 },	-- Rangari Arepheon
-				}),
-				q(34504, {	-- Bloodthorn Cave (bonus objective)
-					["coord"] = { 79.7, 34.0, 540 },	-- Bloodthorn Cave
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34995, {	-- Botani Beatdown
 					["sourceQuests"] = { 33788 },	-- Cooking With Unstable Herbs
@@ -780,10 +764,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 74233 },	-- Traevar Gunnermark
 				}),
-				q(34076, {	-- The Burial Fields (bonus objective)
-					["coord"] = { 44.9, 60.6, DRAENOR_SHADOWMOON_VALLEY },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(33076, {	-- The Clarity Elixir
 					["sourceQuests"] = { 33072 },	-- Into Twilight
 					["coord"] = { 40.6, 54.9, DRAENOR_SHADOWMOON_VALLEY },
@@ -864,10 +844,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 81176 },	-- Rangari Saa'to
 				}),
-				q(34496, {	-- The Hills of Valuun (bonus objective)
-					["coord"] = { 65.1, 33.6, DRAENOR_SHADOWMOON_VALLEY },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(35344, {	-- The Missing Father
 					["requireSkill"] = ALCHEMY,
 					["sourceQuests"] = { 35343 },	-- The Young Alchemist
@@ -918,10 +894,6 @@ _.Zones =
 					["coord"] = { 46.3, 38.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 73395 },	-- Yrel
-				}),
-				q(34728, {	-- The Shimmer Moor (bonus objective)
-					["coord"] = { 60.3, 65.0, DRAENOR_SHADOWMOON_VALLEY },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35450, {	-- The Southern Wilds
 					["sourceQuests"] = { 34019 },	-- Shadows Awaken
@@ -1058,7 +1030,38 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\INV_Artifact_tome01",
 					--["objectID"] = 233229,	-- Shadow Council Tome of Curses
 				}),
-				i(111418),	-- Mushroom Juice (Used for the Bonus Objective).
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ also probably cant do after a certain level
+					i(111418),	-- Mushroom Juice (Used for the Bonus Objective). <-- Dont know about this
+					q(37631, {	-- Assault on Socrethar's Rise
+						["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(36348, {	-- Assault on Socrethar's Rise
+						["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(37632, {	-- Assault on Socrethar's Rise
+						["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
+						["races"] = HORDE_ONLY,
+					}),
+					q(34504, {	-- Bloodthorn Cave
+						["coord"] = { 79.7, 34.0, 540 },	-- Bloodthorn Cave
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(34076, {	-- The Burial Fields
+						["coord"] = { 44.9, 60.6, DRAENOR_SHADOWMOON_VALLEY },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(34496, {	-- The Hills of Valuun
+						["coord"] = { 65.1, 33.6, DRAENOR_SHADOWMOON_VALLEY },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(34728, {	-- The Shimmer Moor
+						["coord"] = { 60.3, 65.0, DRAENOR_SHADOWMOON_VALLEY },
+						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
 			}),
 		}),
 	}),

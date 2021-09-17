@@ -436,9 +436,6 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 37799,	-- Gutrek's Cleaver: The Final Piece
 				}),
-				q(35379, {	-- Hemet's Happy Hunting Grounds (bonus objective)
-					["coord"] = { 87.7, 46.8, DRAENOR_NAGRAND },
-				}),
 				q(36220, {	-- How Tough Are You?
 					["provider"] = { "n", 84637 },	-- Gurgthock
 					["coord"] = { 63.0, 36.0, DRAENOR_NAGRAND },
@@ -485,9 +482,6 @@ _.Zones =
 					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35845,	-- Plans of War
-				}),
-				q(34723, {	-- Ironfist Harbor (bonus objective)
-					["coord"] = { 40.0, 74.4, DRAENOR_NAGRAND },
 				}),
 				q(35357, {	-- King of the Breezestriders
 					["provider"] = { "n", 82094 },	-- Rangari Laara
@@ -952,9 +946,6 @@ _.Zones =
 				}),
 				q(35377, {	-- Someone's Missing Axe
 					["races"] = HORDE_ONLY,
-				}),
-				q(37280, {	-- Snarlpaw Ledge (bonus objective)
-					["coord"] = { 79.1, 29.0, DRAENOR_NAGRAND },
 				}),
 				q(35393, {	-- Spiritual Matters
 					["provider"] = { "n", 82179 },	-- Vindicator Nobundo
@@ -1467,6 +1458,18 @@ _.Zones =
 				q(36273, {	-- Whacking Weeds
 					["provider"] = { "n", 84632 },	-- Marybelle Walsh
 					["coord"] = { 77.4, 47.3, DRAENOR_NAGRAND },
+				}),
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ also probably cant do after a certain level
+					q(35379, {	-- Hemet's Happy Hunting Grounds (bonus objective)
+						["coord"] = { 87.7, 46.8, DRAENOR_NAGRAND },
+					}),
+					q(34723, {	-- Ironfist Harbor (bonus objective)
+						["coord"] = { 40.0, 74.4, DRAENOR_NAGRAND },
+					}),
+					q(37280, {	-- Snarlpaw Ledge (bonus objective)
+						["coord"] = { 79.1, 29.0, DRAENOR_NAGRAND },
+					}),
 				}),
 			}),
 		}),

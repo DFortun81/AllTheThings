@@ -126,9 +126,6 @@ _.Zones =
 					["coord"] = { 46.6, 44.4, STORMHEIM },
 					["sourceQuests"] = { 39590 },	-- Ahead of the Game
 				}),
-				q(38442, {	-- A Worthy Challenger (Bonus Objective)
-					["coord"] = { 44.8, 45.6, STORMHEIM },
-				}),
 				q(38412, {	-- Above the Winter Moonlight (Alliance)
 					["sourceQuests"] = { 38342 },	-- Another Way
 					["races"] = ALLIANCE_ONLY,
@@ -177,15 +174,6 @@ _.Zones =
 						i(134560),	-- Stormborn Tunic
 						i(134561),	-- Dreadsworn Chestguard
 					},
-				}),
-				q(39119, {	-- Assault on Skold-Ashil (Bonus Objective)
-					["coord"] = { 60.0, 63.8, STORMHEIM },
-				}),
-				q(38939, {	-- Assault on Skold-Ashil (Bonus Objective)
-					["coord"] = { 60.0, 63.8, STORMHEIM },
-				}),
-				q(38374, {	-- Assault the Drekirjar (Bonus Objective)
-					["coord"] = { 43.2, 69.4, STORMHEIM },
 				}),
 				q(39092, {	-- Becoming the Ascendant (Alliance)
 					["sourceQuests"] = { 39063 },	-- Shielded Secrets
@@ -345,9 +333,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 54.9, 72.5, STORMHEIM },
 					["provider"] = { "n", 93603 },	-- Nathanos Blightcaller
-				}),
-				q(39998, {	-- Drive Back the Tideskorn(Bonus Objective)
-					["coord"] = { 69.2, 68.0, STORMHEIM },
 				}),
 				q(39789, {	-- Eating Into Our Business
 					["provider"] = { "n", 97258 },	-- Ootasa Galehoof
@@ -601,9 +586,6 @@ _.Zones =
 					["coord"] = { 51.2, 57.1, STORMHEIM },
 					["provider"] = { "n", 107674 },		-- Snaggle Sixtrigger
 				}),
-				q(40111, {	-- Rout the Bilgefin Invaders (Bonus Objective)
-					["coord"] = { 81.0, 61.4, STORMHEIM },
-				}),
 				q(40046, {	-- Scavenging the Shallows
 					["sourceQuests"] = { 39984 },	-- Remnants of the Past
 					["coord"] = { 59.0, 42.9, STORMHEIM },
@@ -774,9 +756,6 @@ _.Zones =
 						i(132776),	-- Yotnar's Pride
 						i(132788),	-- Yotnar's Turmoil
 					},
-				}),
-				q(42431, {	-- The Brood of Nithogg (Bonus Objective)
-					["coord"] = { 45.2, 36.8, STORMHEIM },
 				}),
 				q(38872, {	-- The Dark Lady's Bidding
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
@@ -1099,6 +1078,33 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 37.8, 21.6, STORMHEIM },
 					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
+				}),
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ also probably cant do after a certain level
+					q(38442, {	-- A Worthy Challenger
+						["coord"] = { 44.8, 45.6, STORMHEIM },
+					}),
+					q(39119, {	-- Assault on Skold-Ashil
+						["coord"] = { 60.0, 63.8, STORMHEIM },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(38939, {	-- Assault on Skold-Ashil
+						["coord"] = { 60.0, 63.8, STORMHEIM },
+						["races"] = HORDE_ONLY,
+					}),
+					q(38374, {	-- Assault the Drekirjar
+						["coord"] = { 43.2, 69.4, STORMHEIM },
+					}),
+					q(39998, {	-- Drive Back the Tideskorn
+						["coord"] = { 69.2, 68.0, STORMHEIM },
+					}),
+					q(38343),	-- Raze Hel
+					q(40111, {	-- Rout the Bilgefin Invaders
+						["coord"] = { 81.0, 61.4, STORMHEIM },
+					}),
+					q(42431, {	-- The Brood of Nithogg
+						["coord"] = { 45.2, 36.8, STORMHEIM },
+					}),
 				}),
 			--[[ TODO: These quests will be organized soon™
 				q(45534, {	-- A Common Enemy

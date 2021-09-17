@@ -49,10 +49,6 @@ _.Zones =
 							35209,	-- The Life Spring
 						},
 					}),
-					q(36473,  {	-- Affliction Ridge (bonus objective)
-						["coord"] = { 47.1, 64.4, GORGROND },
-						["sourceQuest"] = 35151,	-- Your Base, Your Choice
-					}),
 					q(35205,  {	-- Burn the Bodies
 						["provider"] = { "n", 81601 },	-- Burrian Coalpart
 						["races"] = ALLIANCE_ONLY,
@@ -401,20 +397,6 @@ _.Zones =
 							33689,	-- Plant Pruning
 						},
 					}),
-					q(36476,  {	-- South Gronn Canyon (bonus objective)
-						["coord"] = { 45.1, 52.1, GORGROND },
-						["sourceQuests"] = {
-							35063,	-- We Need an Outpost
-							35151,	-- Your Base, Your Choice
-						},
-					}),
-					q(36566,  {	-- Stonemaul Arena (bonus objective)
-						["coord"] = { 39.9, 66.4, GORGROND },
-						["sourceQuests"] = {
-							35063,	-- We Need an Outpost
-							35151,	-- Your Base, Your Choice
-						},
-					}),
 					q(36575,  {	-- Strike While the Iron is Hot (A)
 						["provider"] = { "n", 75127 },	-- Vindicator Maraad
 						["races"] = ALLIANCE_ONLY,
@@ -568,6 +550,27 @@ _.Zones =
 						["coord"] = { 46.4, 93.5, GORGROND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 36488,	-- Thieving Dwarves
+					}),
+					n(BONUS_OBJECTIVES, {
+						-- TODO: Check SQ also probably cant do after a certain level
+						q(36473,  {	-- Affliction Ridge
+							["coord"] = { 47.1, 64.4, GORGROND },
+							["sourceQuest"] = 35151,	-- Your Base, Your Choice
+						}),
+						q(36476,  {	-- South Gronn Canyon
+							["coord"] = { 45.1, 52.1, GORGROND },
+							["sourceQuests"] = {
+								35063,	-- We Need an Outpost
+								35151,	-- Your Base, Your Choice
+							},
+						}),
+						q(36566,  {	-- Stonemaul Arena
+							["coord"] = { 39.9, 66.4, GORGROND },
+							["sourceQuests"] = {
+								35063,	-- We Need an Outpost
+								35151,	-- Your Base, Your Choice
+							},
+						}),
 					}),
 				}),
 				n(-357,  {	-- Sparring Arena
@@ -1198,6 +1201,21 @@ _.Zones =
 							36208,	-- The Crystal Shard
 						},
 					}),
+					n(BONUS_OBJECTIVES, {
+						-- TODO: Check SQ also probably cant do after a certain level
+						q(36504, {	-- Evermorn Springs
+							["coord"] = { 43.0, 79.9, GORGROND },
+							["sourceQuest"] = 35151,	-- Your Base, Your Choice
+						}),
+						q(36564, {	-- Tangleheart
+							["coord"] = { 60.2, 67.6, GORGROND },
+							["sourceQuest"] = 35151,	-- Your Base, Your Choice
+						}),
+						q(36500, {	-- The Razorbloom
+							["coord"] = { 47.8, 72.8, GORGROND },
+							["sourceQuest"] = 35151,	-- Your Base, Your Choice
+						}),
+					}),
 				}),
 				q(36037, {	-- A Centurion Without a Cause
 					["provider"] = { "n", 83820 },	-- High Centurion Tormmok
@@ -1285,16 +1303,6 @@ _.Zones =
 						34335,	-- Garrison Campaign: Crows In The Field
 					},
 				}),
-				q(36383, {	-- Assault on the Pit (A) (bonus objectives)
-					["isDaily"] = true,
-					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 48.4, 25.8, GORGROND },
-				}),
-				q(36489, {	-- Assault on the Pit (H) (bonus objectives)
-					["isDaily"] = true,
-					["races"] = HORDE_ONLY,
-					["coord"] = { 48.4, 25.8, GORGROND },
-				}),
 				q(35016, {	-- Basic Skulltaking
 					["provider"] = { "n", 81218 },	-- Grulkor
 					["coord"] = { 54.4, 66.6, GORGROND },
@@ -1307,19 +1315,6 @@ _.Zones =
 						34409,	-- Garrison Campaign: Crows In The Field
 						34335,	-- Garrison Campaign: Crows In The Field
 					},
-				}),
-				q(36603, {	-- Brimstone Springs (bonus objectives)
-					["coord"] = { 40.4, 54.6, GORGROND },
-				}),
-				q(37921, {	-- Clearing the Way (A) (bonus objective)
-					["lvl"] = 100,
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 38257,	-- We Need a Shipwright
-				}),
-				q(38569, {	-- Clearing the Way (H) (bonus objective)
-					["lvl"] = 100,
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 38568,	-- We Need a Shipwright
 				}),
 				q(35027, {	-- Clearing the Way
 					["provider"] = { "n", 80757 },
@@ -1348,10 +1343,6 @@ _.Zones =
 					["coord"] = { 52.5, 9.8, GORGROND },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 38568,	-- We Need a Shipwright
-				}),
-				q(36504, {	-- Evermorn Springs (bonus objective)
-					["coord"] = { 43.0, 79.9, GORGROND },
-					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 				}),
 				q(33563, {	-- Eye Candy
 					["provider"] = { "n", 74611 },	-- Limbflayer
@@ -1450,9 +1441,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35033,	-- Welcome to Gorgrond
 				}),
-				q(36571, {	-- Iyun Weald (bonus objective)
-					["coord"] = { 61.9, 54.4, GORGROND },
-				}),
 				q(36460, {	-- Just Another Stick in the Wall
 					["provider"] = { "n", 85147 },	-- Penny Clobberbottom
 					["coord"] = { 45.6, 70.5, GORGROND },
@@ -1514,9 +1502,6 @@ _.Zones =
 						i(112597),	-- Steamburst Gloves
 						i(112598),	-- Wildwood Wrangler Gauntlets
 					},
-				}),
-				q(36563, {	-- Mistcreep Mire (bonus objective)
-					["coord"] = { 51.9, 66.6, GORGROND },
 				}),
 				q(35642, {	-- Mysterious Pod (A)
 					["provider"] = { "i", 113260 },	-- Glowing Red Pod
@@ -1643,9 +1628,6 @@ _.Zones =
 					["provider"] = { "n", 75593 },	-- Rooter
 					["coord"] = { 42.6, 37.8, GORGROND },
 				}),
-				q(35881, {	-- Ruins of the First Bastion (bonus objective)
-					["coord"] = { 49.9, 79.5, GORGROND },
-				}),
 				q(36440, {	-- Saberon Population Reduction
 					["provider"] = { "n", 85431 },	-- Altauur
 					["coord"] = { 50.8, 51.3, GORGROND },
@@ -1716,9 +1698,6 @@ _.Zones =
 						i(118005),	-- Steamscar Vessel
 					},
 				}),
-				q(36520, {	-- Tailthrasher Basin (bonus objective, not related to achievements)
-					["coord"] = { 45.1, 91.2, GORGROND },
-				}),
 				q(36442, {	-- Taking the Death Bloom (A)
 					["provider"] = { "n", 85436 },	-- Altauur
 					["coord"] = { 52.8, 51.7, GORGROND },
@@ -1734,10 +1713,6 @@ _.Zones =
 						33660,	-- The Sacking of the Saberon
 					},
 				}),
-				q(36564, {	-- Tangleheart (bonus objective)
-					["coord"] = { 60.2, 67.6, GORGROND },
-					["sourceQuest"] = 35151,	-- Your Base, Your Choice
-				}),
 				q(34410, {	-- The Beating Heart
 					["hordeQuestID"] = 34341,
 					["provider"] = { "n", 78251 },	-- Thisalee Crow
@@ -1750,9 +1725,6 @@ _.Zones =
 				q(34338, {	-- The Descent
 					["provider"] = { "n", 78251 },	-- Thisalee Crow
 					["sourceQuest"] = 34337,	-- The Giant Cauldron
-				}),
-				q(34724, {	-- The Forgotten Caves (bonus objective)
-					["coord"] = { 51.4, 77.8, GORGROND },
 				}),
 				q(34337, {	-- The Giant Cauldron
 					["provider"] = { "n", 78187 },	-- Thisalee Crow
@@ -1776,10 +1748,6 @@ _.Zones =
 					["coord"] = { 69.6, 26.1, GORGROND },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34028,	-- These Look Familiar
-				}),
-				q(36500, {	-- The Razorbloom (bonus objective)
-					["coord"] = { 47.8, 72.8, GORGROND },
-					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 				}),
 				q(35645, {	-- The Secret of the Fungus (A)
 					["provider"] = { "n", 82476 },	-- Khaano
@@ -1999,9 +1967,6 @@ _.Zones =
 						{ 50.8, 67.6, GORGROND },
 					},
 				}),
-				q(36480, {	-- Valley of Destruction (bonus objective)
-					["coord"] = { 46.4, 47.2, GORGROND },
-				}),
 				q(35640, {	-- Vengeance for the Fallen
 					["provider"] = { "n", 82499 },	-- Dying Rangari
 					["coord"] = { 59.5, 57.9, GORGROND },
@@ -2103,6 +2068,50 @@ _.Zones =
 					["coord"] = { 43.8, 48.8, GORGROND },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35041,	-- Xuk It!
+				}),
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ also probably cant do after a certain level
+					q(36383, {	-- Assault on the Pit (A)
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["coord"] = { 48.4, 25.8, GORGROND },
+					}),
+					q(36489, {	-- Assault on the Pit (H)
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+						["coord"] = { 48.4, 25.8, GORGROND },
+					}),
+					q(36603, {	-- Brimstone Springs
+						["coord"] = { 40.4, 54.6, GORGROND },
+					}),
+					q(37921, {	-- Clearing the Way (A)
+						["lvl"] = 100,
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 38257,	-- We Need a Shipwright
+					}),
+					q(38569, {	-- Clearing the Way (H)
+						["lvl"] = 100,
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 38568,	-- We Need a Shipwright
+					}),
+					q(36571, {	-- Iyun Weald
+						["coord"] = { 61.9, 54.4, GORGROND },
+					}),
+					q(36563, {	-- Mistcreep Mire
+						["coord"] = { 51.9, 66.6, GORGROND },
+					}),
+					q(35881, {	-- Ruins of the First Bastion
+						["coord"] = { 49.9, 79.5, GORGROND },
+					}),
+					q(36520, {	-- Tailthrasher Basin
+						["coord"] = { 45.1, 91.2, GORGROND },
+					}),
+					q(34724, {	-- The Forgotten Caves
+						["coord"] = { 51.4, 77.8, GORGROND },
+					}),
+					q(36480, {	-- Valley of Destruction
+						["coord"] = { 46.4, 47.2, GORGROND },
+					}),
 				}),
 			}),
 		}),

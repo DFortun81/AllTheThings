@@ -744,6 +744,16 @@ _.Zones =
 					["coord"] = { 69.5, 49.4, VALSHARAH },
 					["provider"] = { "n", 95117 },	-- Aldos Duskwing
 				}),
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ also probably cant do after a certain level
+					q(38716),	-- Black Rook Hold
+					q(39029),	-- Defend the Temple
+					q(38842),	-- Faerie Fracas
+					q(43241),	-- Flow of the Nightmare
+					q(39393),	-- Moonclaw Vale
+					q(38748),	-- Ruins of Shala'nir
+					q(38372),	-- Wretched Sisters
+				}),
 			}),
 		}),
 	}),

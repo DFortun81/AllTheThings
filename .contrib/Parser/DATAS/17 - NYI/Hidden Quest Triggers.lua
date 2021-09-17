@@ -2262,44 +2262,6 @@ _.HiddenQuestTriggers = {
 		q(49264),	-- opening a Void-Seeped Cache in Mac'Aree
 		q(48361),	-- opening a Void-Seeped Cache in Mac'Aree
 
-		-- Bonus Objectives
-		--	putting bonus objectives here because it'd be impossible to do them all unless you locked your XP and did all the quests in every legion zone.
-		--	they aren't automatically up as soon as you're 100; most of them are locked behind specific questlines, and then they all disappear as soon as you hit 110.
-
-		--	Azsuna bonus objectives
-		q(37965),	-- A Tainted Vintage
-		q(42020),	-- Bonus Objective: Hatecoil Warcamp
-		q(37495),	-- Plunder the Cove
-		q(36811),	-- Retake Faronaar
-		q(37466),	-- The Broken Academy
-		q(37779),	-- Tip the Scales
-
-		--	Highmountain bonus objectives
-		q(39274),	-- Defend the Riverlands
-		q(39576),	-- Echoes of Deathwing
-		q(40050),	-- Shipwreck Cove
-		q(39317),	-- Siege of Crawliac
-		q(40316),	-- The Screeching Crag
-		q(42373),	-- Vengeance for the Stonedark
-		q(39371),	-- Witches of the Sky
-
-		--	Stormheim bonus objectives
-		q(42431),	-- The Brood of Nithogg
-		q(38343),	-- Raze Hel
-		q(40111),	-- Rout the Bilgefin Invaders
-
-		--	Val'sharah bonus objectives
-		q(38716),	-- Black Rook Hold
-		q(39029),	-- Defend the Temple
-		q(38842),	-- Faerie Fracas
-		q(43241),	-- Flow of the Nightmare
-		q(39393),	-- Moonclaw Vale
-		q(38748),	-- Ruins of Shala'nir
-		q(38372),	-- Wretched Sisters
-
-		--	Various non-zone bonus objectives
-		q(43483),	-- Fel Annihilation — bonus objective in "In Defense of the Exodar" scenario, unavailable afterwards
-
 		--	Deaths of Chromie scenario
 		q(48032),	-- FLAG - Hyjal Scene Seen - immediately upon entering Hyjal
 		q(47829),	-- FLAG - Hyjal complete - kill the fiery behemoth
@@ -2788,40 +2750,7 @@ _.HiddenQuestTriggers = {
 		q(51852),	-- Triggered after completing "Storming the Manor". Didn't appear to trigger anything specific, so not sure what they're used for
 		q(54318),	-- Triggered immediately after completing "A Drust Cause" invasion in Drustvar as Alliance (first completion on character? WM off specific? it doesn't trigger later in WM)
 
-		-- Bonus Objectives
-		q(48525, {	-- Break Them to Splinters
-			["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
-			["isWorldQuest"] = true,
-		}),
-		q(48474, {	-- Crypt Keepers
-			["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
-			["isWorldQuest"] = true,
-		}),
-		q(47969, {	-- Fallhaven's Curse
-			["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
-			["isWorldQuest"] = true,
-		}),
-		q(48181, {	-- Nooooope
-			["isWorldQuest"] = true,
-		}),
-		q(48680, {	-- Not the Bees!
-			["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
-			["isWorldQuest"] = true,
-		}),
-		q(50959, {	-- Plundering Pirates
-			["isWorldQuest"] = true,
-		}),
-		q(50448, {	-- Reclaiming Corlain
-			["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
-			["isWorldQuest"] = true,
-		}),
-		q(45972, {	-- The Accursed Thicket
-			["isWorldQuest"] = true,
-		}),
-		q(50091, {	-- Village Repair
-			["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
-			["isWorldQuest"] = true,
-		}),
+		
 		-- Chests
 		q(51871),	-- Drustvar repeatable random chest
 		q(51875),	-- Drustvar repeatable random chest
@@ -2839,31 +2768,6 @@ _.HiddenQuestTriggers = {
 		q(51914),	-- Drustvar repeatable random chest
 
 		--	Nazmir
-		-- Bonus Objectives
-		q(48934, {	-- Mark of the Damned
-			["isWorldQuest"] = true,
-		}),
-		q(47996, {	-- Mawfiend Extermination
-			["isWorldQuest"] = true,
-		}),
-		q(48093, {	-- Nagating the Threat
-			["isWorldQuest"] = true,
-		}),
-		q(48588, {	-- Purge the Infection
-			["isWorldQuest"] = true,
-		}),
-		q(48852, {	-- Stopping Zardax
-			["isWorldQuest"] = true,
-		}),
-		q(47756, {	-- The Libation's Liberation
-			["isWorldQuest"] = true,
-		}),
-		q(51689, {	-- Tortollan Rescue
-			["isWorldQuest"] = true,
-		}),
-		q(49406, {	-- Zalamar Slaughter
-			["isWorldQuest"] = true,
-		}),
 		-- Chests
 		q(49885),	-- Nazmir repeatable random chest
 		q(50895),	-- Nazmir repeatable random chest
@@ -2889,17 +2793,6 @@ _.HiddenQuestTriggers = {
 		}),
 
 		--	Stormsong Valley
-		-- Bonus Objectives
-		q(50779, {	-- A Clean Slate
-			["races"] = ALLIANCE_ONLY,
-			["isWorldQuest"] = true,
-		}),
-		q(51534, {	-- The Battle for Brennadam
-			["isWorldQuest"] = true,
-		}),
-		q(50133, {	-- Weed Whacking
-			["isWorldQuest"] = true,
-		}),
 		-- Chests
 		q(51184),	-- Stormsong Valley repeatable random chest
 		q(51927),	-- Stormsong Valley repeatable random chest
@@ -2922,19 +2815,6 @@ _.HiddenQuestTriggers = {
 		q(50541),	-- triggered after defeating Beehemoth WQ
 
 		--	Tiragarde Sound
-		-- Bonus Objectives
-		q(49300, {	-- Creature Corruption
-			["isWorldQuest"] = true,
-		}),
-		q(49739, {	-- Enemies at the Gate
-			["isWorldQuest"] = true,
-		}),
-		q(50009, {	-- Shipwreck Recovery Crew
-			["isWorldQuest"] = true,
-		}),
-		q(49529, {	-- Spring Cleaning
-			["isWorldQuest"] = true,
-		}),
 		-- Chests
 		q(48593),	-- Tiragarde Sound repeatable random chest
 		q(48595),	-- Tiragarde Sound repeatable random chest
@@ -2981,8 +2861,6 @@ _.HiddenQuestTriggers = {
 		-- Various
 		q(49684),	-- triggered when picking the staff on "Armed and Ready"
 		q(49685),	-- triggered when picking the scythe/glaive thing on "Armed and Ready"
-		q(47647),	-- Monsters of Zem'lan - bonus quest
-		q(50805),	-- Skycaller Shutdown - bonus quest
 		q(51648),	-- Vol'dun - select "The Nimble" as your Akunda title during "Trial of Truth"
 		q(51649),	-- Vol'dun - select "the Serene" as your Akunda title during "Trial of Truth"
 		q(51650),	-- Vol'dun - select "the Courageous" as your Akunda title during "Trial of Truth"
@@ -2995,22 +2873,6 @@ _.HiddenQuestTriggers = {
 		q(54299),	-- triggered when completing #54272, "Battle Bots" WQ
 
 		--	Zuldazar
-		-- Bonus Objectives
-		q(47527, {	-- Rituals of Heresy
-			["isWorldQuest"] = true,
-		}),
-		q(47797, {	-- Occupation Hazard
-			["isWorldQuest"] = true,
-		}),
-		q(49315, {	-- Dreadpearl Collusion
-			["isWorldQuest"] = true,
-		}),
-		q(49918, {	-- Gorilla Gorge
-			["isWorldQuest"] = true,
-		}),
-		q(50178, {	-- Trouble in the Rootway
-			["isWorldQuest"] = true,
-		}),
 		-- Chests
 		q(49142),	-- Zuldazar repeatable random chest
 		q(50710),	-- Zuldazar repeatable random chest

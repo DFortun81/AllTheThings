@@ -478,12 +478,6 @@ _.Zones =
 					["coord"] = { 44.4, 24.0, SPIRES_OF_ARAK },
 					["provider"] = { "n", 80508 },	-- Talonpriest Zellek
 				}),
-				q(36792, {	-- Bladefist Hold (bonus objective)
-					["coord"] = { 29.2, 30.0, SPIRES_OF_ARAK },
-				}),
-				q(36660, {	-- Bloodmane Pridelands (bonus objective)
-					["coord"] = { 48.0, 71.4, SPIRES_OF_ARAK },
-				}),
 				q(35009, {	-- Call of the Raven Mother
 					["sourceQuests"] = {
 						34939,	-- Declawing the Bloodmane
@@ -1112,9 +1106,6 @@ _.Zones =
 					["coord"] = { 48.9, 49.0, SPIRES_OF_ARAK },
 					["provider"] = { "n", 80639 },	-- Iktis of the Flock
 				}),
-				q(36590, {	-- The Howling Crag (bonus objective)
-					["coord"] = { 65.0, 25.9, SPIRES_OF_ARAK },
-				}),
 				q(36790, {	-- The Initiate's Revenge
 					["sourceQuests"] = {
 						34923,	-- The Bloodmane
@@ -1169,9 +1160,6 @@ _.Zones =
 					["sourceQuests"] = { 35733 },	-- Rites of the Talonpriests
 					["coord"] = { 46.6, 46.6, SPIRES_OF_ARAK },
 					["provider"] = { "n", 82813 },	-- Effigy of Terokk
-				}),
-				q(35649, {	-- The Writhing Mire (bonus objective)
-					["coord"] = { 33.2, 43.3, SPIRES_OF_ARAK },
 				}),
 				q(36864, {	-- Three Feet Under
 					["provider"] = { "n", 86597 },	-- Benjamin Gibb
@@ -1259,6 +1247,21 @@ _.Zones =
 					["sourceQuests"] = { 35007 },	-- Rendezvous with the Ritualists
 					["coord"] = { 54.8, 54.1, SPIRES_OF_ARAK },
 					["provider"] = { "n", 80740 },	-- Ravenspeaker Sekara
+				}),
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ also probably cant do after a certain level
+					q(36792, {	-- Bladefist Hold
+						["coord"] = { 29.2, 30.0, SPIRES_OF_ARAK },
+					}),
+					q(36660, {	-- Bloodmane Pridelands
+						["coord"] = { 48.0, 71.4, SPIRES_OF_ARAK },
+					}),
+					q(36590, {	-- The Howling Crag
+						["coord"] = { 65.0, 25.9, SPIRES_OF_ARAK },
+					}),
+					q(35649, {	-- The Writhing Mire
+						["coord"] = { 33.2, 43.3, SPIRES_OF_ARAK },
+					}),
 				}),
 			}),
 		}),

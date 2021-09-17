@@ -1534,6 +1534,11 @@ _.Zones =
 						i(161304),	-- Mad-Butcher's Mace (Alliance-only appearance granted by either Trapped Soul Warmace or Zak'rajan's Hexmace)
 					},
 				}),
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ also probably cant do after a certain level
+					q(47647),	-- Monsters of Zem'lan
+					q(50805),	-- Skycaller Shutdown
+				}),
 			}),
 		}),
 	}),
