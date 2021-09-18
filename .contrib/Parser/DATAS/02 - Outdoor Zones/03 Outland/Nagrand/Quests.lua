@@ -812,6 +812,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10114, {	-- The Nesingwary Safari (H)
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 19133 },	-- Ohlorn Farstrider <Nesingwary Safari>
 					["coord"] = { 55.4, 37.4, NAGRAND },
 					["races"] = HORDE_ONLY,
