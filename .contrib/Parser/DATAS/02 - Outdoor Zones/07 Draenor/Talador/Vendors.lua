@@ -8,7 +8,7 @@ _.Zones =
 		m(TALADOR, {
 			n(VENDORS, {
 				n(84212, {	-- Kazbala
-					["description"] = "This vendor is only available until you reach level 100. Items are also available from vendors in Stormwind, Orgrimmar, and Dalaran.|r",
+					["description"] = "This vendor is only available until you reach 50(Can be lower). Items are also available from vendors in Stormwind, Orgrimmar, and Dalaran.|r",
 					["coord"] = { 45.2, 38.8, TALADOR },
 					["g"] = {
 						i(54436),	-- Blue Clockwork Rocket Bot (PET!)

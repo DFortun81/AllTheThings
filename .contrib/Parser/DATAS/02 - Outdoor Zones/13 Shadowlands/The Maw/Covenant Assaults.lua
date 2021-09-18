@@ -376,47 +376,51 @@ _.Zones =
 							}),
 						}),
 						n(TREASURES, {
-							o(369141, {	-- Mawsworn Cache
-								["questID"] = 64209,
-								["isDaily"] = true,
-								["coords"] = {
-									{ 27.7, 61.6, THE_MAW },	-- found ring here once 9.1 went live, not sure if other coord is still accurate
-									{ 35.1, 69.7, THE_MAW },
-								},
-								["g"] = {
-									i(186600),	-- Quartered Ancient Ring
-								},
-							}),
-							o(368206, {	-- Mawsworn Cache
-								["questID"] = 63816,
-								["isDaily"] = true,
-								["coord"] = { 30.1, 64.9, THE_MAW },
-							}),
-							o(368207, {	-- Mawsworn Cache
-								["questID"] = 63817,
-								["isDaily"] = true,
-								["coord"] = { 34.1, 61.6, THE_MAW },
-							}),
-							o(368208, {	-- Mawsworn Cache
-								["questID"] = 63818,
-								["isDaily"] = true,
-								["coord"] = { 33.5, 70.4, THE_MAW },
-							}),
-							o(368213, {	-- Mawsworn Cache
-								["questID"] = 63825,
-								["isDaily"] = true,
-								["coord"] = { 32.8, 65.0, THE_MAW },
-							}),
-							o(368214, {	-- Mawsworn Cache
-								["questID"] = 63826,
-								["isDaily"] = true,
-								["coords"] = {
-									{ 32.0, 56.3, THE_MAW },
-									{ 33.8, 57.3, THE_MAW },
-								},
-								["g"] = {
-									i(187011),	-- Mawsworn Enforcer's Shoulder-Spires
-								},
+							o_repeated({	-- Mawsworn Cache
+								-- Contains
+								i(186600),	-- Quartered Ancient Ring
+								i(187011),	-- Mawsworn Enforcer's Shoulder-Spires
+								i(187015),	-- Soulfeeder's Shoulderguards
+								i(187026),	-- Field Warden's Torture Kit
+								i(187240),	-- Field Warden's Watchful Eye
+								i(187023),	-- Instructor's Mantle
+								-- Objects
+								o(369141, {	-- Mawsworn Cache
+									["questID"] = 64209,
+									["isDaily"] = true,
+									["coords"] = {
+										{ 27.7, 61.6, THE_MAW },	-- found ring here once 9.1 went live, not sure if other coord is still accurate
+										{ 35.1, 69.7, THE_MAW },
+									},
+								}),
+								o(368206, {	-- Mawsworn Cache
+									["questID"] = 63816,
+									["isDaily"] = true,
+									["coord"] = { 30.1, 64.9, THE_MAW },
+								}),
+								o(368207, {	-- Mawsworn Cache
+									["questID"] = 63817,
+									["isDaily"] = true,
+									["coord"] = { 34.1, 61.6, THE_MAW },
+								}),
+								o(368208, {	-- Mawsworn Cache
+									["questID"] = 63818,
+									["isDaily"] = true,
+									["coord"] = { 33.5, 70.4, THE_MAW },
+								}),
+								o(368213, {	-- Mawsworn Cache
+									["questID"] = 63825,
+									["isDaily"] = true,
+									["coord"] = { 32.8, 65.0, THE_MAW },
+								}),
+								o(368214, {	-- Mawsworn Cache
+									["questID"] = 63826,
+									["isDaily"] = true,
+									["coords"] = {
+										{ 32.0, 56.3, THE_MAW },
+										{ 33.8, 57.3, THE_MAW },
+									},
+								}),
 							}),
 							i(186603, {	-- Nilganihmaht's Stone Ring
 								["cost"] = {

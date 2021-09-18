@@ -1222,11 +1222,6 @@ _.WorldEvents =
 									["cr"] = 52409,
 									["g"] = {
 										i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
-									},
-								}),
-								e(198, {	-- Ragnaros — WoW anniversary only
-									["cr"] = 52409,
-									["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 										i(171804),	-- Balespider's Hood
 										i(171794),	-- Cowl of the Cleansing Flame
 										i(171770),	-- Dark Phoenix Helmet
@@ -1259,7 +1254,7 @@ _.WorldEvents =
 										i(171646),	-- Matrix Restabilizer
 										i(171640),	-- Variable Pulse Lightning Capacitor
 										i(171647),	-- Vessel of Acceleration
-									}),
+									},
 								}),
 							}),
 						}),

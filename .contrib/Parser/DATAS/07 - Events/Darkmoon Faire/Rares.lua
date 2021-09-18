@@ -10,9 +10,7 @@ _.WorldEvents =
 				["coord"] = { 75.69, 78.17, 407 },
 				["g"] = {
 					ach(6332),	-- That Rabbit's Dynamite!
-					i(80008, {	-- Darkmoon Rabbit
-						["description"] = "Only one pet drops per kill.",
-					}),
+					i(80008),	-- Darkmoon Rabbit
 				},
 			}),
 			n(122899, {	-- Death Metal Knight

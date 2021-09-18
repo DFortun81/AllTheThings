@@ -218,6 +218,7 @@ _.Zones =
 					i(187021),	-- Punisher's Spiked Mantle
 					i(187018),	-- Ritualist's Shoulder-Scythes
 					i(187431),	-- Sleeping Armament
+					i(187017),	-- Brutalizer's Mantle
 					-- Objects
 					o(368876, {	-- Mawsworn Cache
 						["questID"] = 64021,
