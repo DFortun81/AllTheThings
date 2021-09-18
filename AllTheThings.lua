@@ -9089,6 +9089,10 @@ itemHarvesterFields.text = function(t)
 			if info.iLvl and info.iLvl < 2 then
 				info.iLvl = nil;
 			end
+			-- can debug output for tooltip harvesting
+			-- if t.itemID == 153037 then
+			-- 	info._debug = true;
+			-- end
 			t.itemType = itemType;
 			t.itemSubType = itemSubType;
 			t.info = info;
@@ -9117,159 +9121,181 @@ itemTooltipHarvesterFields.text = function(t)
 	if link then
 		ItemHarvester:SetOwner(UIParent,"ANCHOR_NONE")
 		ItemHarvester:SetHyperlink(link);
+		-- a way to capture when the tooltip is giving information about something that is NOT the current ItemID
+		local isSubItem, craftName;
 		local lineCount = ItemHarvester:NumLines();
 		if ATTItemHarvesterTextLeft1:GetText() and ATTItemHarvesterTextLeft1:GetText() ~= RETRIEVING_DATA and lineCount > 0 then
-			for index=2,lineCount,1 do
+			-- local debugPrint = t.info._debug;
+			-- if debugPrint then print("Item Info:",t.info.itemID) end
+			for index=1,lineCount,1 do
 				local line = _G["ATTItemHarvesterTextLeft" .. index] or _G["ATTItemHarvesterText" .. index];
 				if line then
 					local text = line:GetText();
 					if text then
-						if string.find(text, "Classes: ") then
-							local classes = {};
-							local _,list = strsplit(":", text);
-							for i,s in ipairs({strsplit(",", list)}) do
-								table.insert(classes, app.ClassDB[strtrim(s)]);
-							end
-							if #classes > 0 then
-								t.info.classes = classes;
-							end
-						elseif string.find(text, "Races: ") then
-							local races = {};
-							local _,list = strsplit(":", text);
-							for i,s in ipairs({strsplit(",", list)}) do
-								table.insert(races, app.RaceDB[strtrim(s)]);
-							end
-							if #races > 0 then
-								t.info.races = races;
-							end
-						elseif string.find(text, " Only") then
-							local faction,list,c = strsplit(" ", text);
-							if not c then
-								faction = strtrim(faction);
-								if faction == "Alliance" then
-									t.info.races = app.FACTION_RACES[1];
-								elseif faction == "Horde" then
-									t.info.races = app.FACTION_RACES[2];
-								else
-									print("Unknown Faction", faction);
+						-- pull the "Recipe Type: Recipe Name" out if it matches
+						if index == 1 then
+							craftName = text:match("^[^:]+:%s*([^:]+)$");
+							if craftName then craftName = "^%s*"..craftName; end
+						-- use this name to check that the Item it creates may be listed underneath
+						elseif craftName and text:match(craftName) then
+							-- print("subitem for",t.info.itemID)
+							-- print(craftName)
+							isSubItem = true;
+							-- don't care to store info about the sub item
+						elseif isSubItem and text:match("^Requires") then
+							-- leaving the sub-item tooltip when encountering 'Requires '
+							isSubItem = nil;
+						end
+
+						if not isSubItem then
+							-- if debugPrint then print(text) end
+							if string.find(text, "Classes: ") then
+								local classes = {};
+								local _,list = strsplit(":", text);
+								for i,s in ipairs({strsplit(",", list)}) do
+									table.insert(classes, app.ClassDB[strtrim(s)]);
 								end
-							end
-						elseif string.find(text, "Requires") and not string.find(text, "Level") and not string.find(text, "Riding") then
-							local c = strsub(text, 1, 1);
-							if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
-								text = strsub(strtrim(text), 9);
-								if string.find(text, "-") then
-									local faction,replevel = strsplit("-", text);
-									t.info.minReputation = { app.GetFactionIDByName(faction), app.GetFactionStandingThresholdFromString(replevel) };
-								else
-									if string.find(text, "%(") then
-										if t.info.requireSkill then
-											-- If non-specialization skill is already assigned, skip this part.
-											text = nil;
-										else
-											text = strsplit("(", text);
-										end
+								if #classes > 0 then
+									t.info.classes = classes;
+								end
+							elseif string.find(text, "Races: ") then
+								local races = {};
+								local _,list = strsplit(":", text);
+								for i,s in ipairs({strsplit(",", list)}) do
+									table.insert(races, app.RaceDB[strtrim(s)]);
+								end
+								if #races > 0 then
+									t.info.races = races;
+								end
+							elseif string.find(text, " Only") then
+								local faction,list,c = strsplit(" ", text);
+								if not c then
+									faction = strtrim(faction);
+									if faction == "Alliance" then
+										t.info.races = app.FACTION_RACES[1];
+									elseif faction == "Horde" then
+										t.info.races = app.FACTION_RACES[2];
+									else
+										print("Unknown Faction", faction);
 									end
-									if text then
-										local spellName = strtrim(text);
-										if string.find(spellName, "Outland ") then spellName = strsub(spellName, 9);
-										elseif string.find(spellName, "Northrend ") then spellName = strsub(spellName, 11);
-										elseif string.find(spellName, "Cataclysm ") then spellName = strsub(spellName, 11);
-										elseif string.find(spellName, "Pandaria ") then spellName = strsub(spellName, 10);
-										elseif string.find(spellName, "Draenor ") then spellName = strsub(spellName, 9);
-										elseif string.find(spellName, "Legion ") then spellName = strsub(spellName, 8);
-										elseif string.find(spellName, "Kul Tiran ") then spellName = strsub(spellName, 11);
-										elseif string.find(spellName, "Zandalari ") then spellName = strsub(spellName, 11);
-										elseif string.find(spellName, "Shadowlands ") then spellName = strsub(spellName, 13);
-										elseif string.find(spellName, "Classic ") then spellName = strsub(spellName, 9); end
-										if spellName == "Herbalism" then spellName = "Herb Gathering"; end
-										spellName = strtrim(spellName);
-										local spellID = app.SpellNameToSpellID[spellName];
-										if spellID then
-											local skillID = app.SpellIDToSkillID[spellID];
-											if skillID then
-												t.info.requireSkill = skillID;
-											elseif spellName == "Pick Pocket" then
-												-- Do nothing, for now.
-											elseif spellName == "Warforged Nightmare" then
-												-- Do nothing, for now.
+								end
+							elseif string.find(text, "Requires") and not string.find(text, "Level") and not string.find(text, "Riding") then
+								local c = strsub(text, 1, 1);
+								if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
+									text = strsub(strtrim(text), 9);
+									if string.find(text, "-") then
+										local faction,replevel = strsplit("-", text);
+										t.info.minReputation = { app.GetFactionIDByName(faction), app.GetFactionStandingThresholdFromString(replevel) };
+									else
+										if string.find(text, "%(") then
+											if t.info.requireSkill then
+												-- If non-specialization skill is already assigned, skip this part.
+												text = nil;
 											else
-												print("Unknown Skill", text, "'" .. spellName .. "'");
+												text = strsplit("(", text);
 											end
-										elseif spellName == "Previous Rank" then
-											-- Do nothing
-										elseif spellName == "" then
-											-- Do nothing
-										elseif spellName == "Brewfest" then
-											-- Do nothing, yet.
-										elseif spellName == "Call of the Scarab" then
-											-- Do nothing, yet.
-										elseif spellName == "Children's Week" then
-											-- Do nothing, yet.
-										elseif spellName == "Darkmoon Faire" then
-											-- Do nothing, yet.
-										elseif spellName == "Day of the Dead" then
-											-- Do nothing, yet.
-										elseif spellName == "Feast of Winter Veil" then
-											-- Do nothing, yet.
-										elseif spellName == "Hallow's End" then
-											-- Do nothing, yet.
-										elseif spellName == "Love is in the Air" then
-											-- Do nothing, yet.
-										elseif spellName == "Lunar Festival" then
-											-- Do nothing, yet.
-										elseif spellName == "Midsummer Fire Festival" then
-											-- Do nothing, yet.
-										elseif spellName == "Moonkin Festival" then
-											-- Do nothing, yet.
-										elseif spellName == "Noblegarden" then
-											-- Do nothing, yet.
-										elseif spellName == "Pilgrim's Bounty" then
-											-- Do nothing, yet.
-										elseif spellName == "Un'Goro Madness" then
-											-- Do nothing, yet.
-										elseif spellName == "Thousand Boat Bash" then
-											-- Do nothing, yet.
-										elseif spellName == "Glowcap Festival" then
-											-- Do nothing, yet.
-										elseif spellName == "Battle Pet Training" then
-											-- Do nothing.
-										elseif spellName == "Lockpicking" then
-											-- Do nothing.
-										elseif spellName == "Luminous Luminaries" then
-											-- Do nothing.
-										elseif spellName == "Pick Pocket" then
-											-- Do nothing.
-										elseif spellName == "WoW's 14th Anniversary" then
-											-- Do nothing.
-										elseif spellName == "WoW's 13th Anniversary" then
-											-- Do nothing.
-										elseif spellName == "WoW's 12th Anniversary" then
-											-- Do nothing.
-										elseif spellName == "WoW's 11th Anniversary" then
-											-- Do nothing.
-										elseif spellName == "WoW's 10th Anniversary" then
-											-- Do nothing.
-										elseif spellName == "WoW's Anniversary" then
-											-- Do nothing.
-										elseif spellName == "level 1 to 29" then
-											-- Do nothing.
-										elseif spellName == "level 1 to 39" then
-											-- Do nothing.
-										elseif spellName == "level 1 to 44" then
-											-- Do nothing.
-										elseif spellName == "level 1 to 49" then
-											-- Do nothing.
-										elseif spellName == "Unknown" then
-											-- Do nothing.
-										elseif spellName == "Open" then
-											-- Do nothing.
-										elseif string.find(spellName, " specialization") then
-											-- Do nothing.
-										elseif string.find(spellName, ": ") then
-											-- Do nothing.
-										else
-											print("Unknown Spell", text, "'" .. spellName .. "'");
+										end
+										if text then
+											local spellName = strtrim(text);
+											if string.find(spellName, "Outland ") then spellName = strsub(spellName, 9);
+											elseif string.find(spellName, "Northrend ") then spellName = strsub(spellName, 11);
+											elseif string.find(spellName, "Cataclysm ") then spellName = strsub(spellName, 11);
+											elseif string.find(spellName, "Pandaria ") then spellName = strsub(spellName, 10);
+											elseif string.find(spellName, "Draenor ") then spellName = strsub(spellName, 9);
+											elseif string.find(spellName, "Legion ") then spellName = strsub(spellName, 8);
+											elseif string.find(spellName, "Kul Tiran ") then spellName = strsub(spellName, 11);
+											elseif string.find(spellName, "Zandalari ") then spellName = strsub(spellName, 11);
+											elseif string.find(spellName, "Shadowlands ") then spellName = strsub(spellName, 13);
+											elseif string.find(spellName, "Classic ") then spellName = strsub(spellName, 9); end
+											if spellName == "Herbalism" then spellName = "Herb Gathering"; end
+											spellName = strtrim(spellName);
+											local spellID = app.SpellNameToSpellID[spellName];
+											if spellID then
+												local skillID = app.SpellIDToSkillID[spellID];
+												if skillID then
+													t.info.requireSkill = skillID;
+												elseif spellName == "Pick Pocket" then
+													-- Do nothing, for now.
+												elseif spellName == "Warforged Nightmare" then
+													-- Do nothing, for now.
+												else
+													print("Unknown Skill", text, "'" .. spellName .. "'");
+												end
+											elseif spellName == "Previous Rank" then
+												-- Do nothing
+											elseif spellName == "" then
+												-- Do nothing
+											elseif spellName == "Brewfest" then
+												-- Do nothing, yet.
+											elseif spellName == "Call of the Scarab" then
+												-- Do nothing, yet.
+											elseif spellName == "Children's Week" then
+												-- Do nothing, yet.
+											elseif spellName == "Darkmoon Faire" then
+												-- Do nothing, yet.
+											elseif spellName == "Day of the Dead" then
+												-- Do nothing, yet.
+											elseif spellName == "Feast of Winter Veil" then
+												-- Do nothing, yet.
+											elseif spellName == "Hallow's End" then
+												-- Do nothing, yet.
+											elseif spellName == "Love is in the Air" then
+												-- Do nothing, yet.
+											elseif spellName == "Lunar Festival" then
+												-- Do nothing, yet.
+											elseif spellName == "Midsummer Fire Festival" then
+												-- Do nothing, yet.
+											elseif spellName == "Moonkin Festival" then
+												-- Do nothing, yet.
+											elseif spellName == "Noblegarden" then
+												-- Do nothing, yet.
+											elseif spellName == "Pilgrim's Bounty" then
+												-- Do nothing, yet.
+											elseif spellName == "Un'Goro Madness" then
+												-- Do nothing, yet.
+											elseif spellName == "Thousand Boat Bash" then
+												-- Do nothing, yet.
+											elseif spellName == "Glowcap Festival" then
+												-- Do nothing, yet.
+											elseif spellName == "Battle Pet Training" then
+												-- Do nothing.
+											elseif spellName == "Lockpicking" then
+												-- Do nothing.
+											elseif spellName == "Luminous Luminaries" then
+												-- Do nothing.
+											elseif spellName == "Pick Pocket" then
+												-- Do nothing.
+											elseif spellName == "WoW's 14th Anniversary" then
+												-- Do nothing.
+											elseif spellName == "WoW's 13th Anniversary" then
+												-- Do nothing.
+											elseif spellName == "WoW's 12th Anniversary" then
+												-- Do nothing.
+											elseif spellName == "WoW's 11th Anniversary" then
+												-- Do nothing.
+											elseif spellName == "WoW's 10th Anniversary" then
+												-- Do nothing.
+											elseif spellName == "WoW's Anniversary" then
+												-- Do nothing.
+											elseif spellName == "level 1 to 29" then
+												-- Do nothing.
+											elseif spellName == "level 1 to 39" then
+												-- Do nothing.
+											elseif spellName == "level 1 to 44" then
+												-- Do nothing.
+											elseif spellName == "level 1 to 49" then
+												-- Do nothing.
+											elseif spellName == "Unknown" then
+												-- Do nothing.
+											elseif spellName == "Open" then
+												-- Do nothing.
+											elseif string.find(spellName, " specialization") then
+												-- Do nothing.
+											elseif string.find(spellName, ": ") then
+												-- Do nothing.
+											else
+												print("Unknown Spell", text, "'" .. spellName .. "'");
+											end
 										end
 									end
 								end
@@ -9278,6 +9304,7 @@ itemTooltipHarvesterFields.text = function(t)
 					end
 				end
 			end
+			-- if debugPrint then print("---") end
 			rawset(t, "text", link);
 			rawset(t, "collected", true);
 		end
