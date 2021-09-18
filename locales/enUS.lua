@@ -2404,7 +2404,7 @@ app.L = {
 		[2] = {1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game"}, -- No Hope
 
 		-- Hidden Filter (General Tab)
-		[12] = {0, "|CFF00FFDEThis item, quest or achievement requires Player vs Player activities or a currency related to those activities.|r", "Requires PvP"},
+		[12] = {0, "|CFF00FFDEThis Thing requires Player vs Player activities or a currency related to those activities.|r", "Requires PvP"},
 
 		-- Arbitrary Filters
 		[9] = {3, "|CFFFF0000The original source of obtaining this has been removed and is now only available via the Black Market Auction House.|r", "Black Market AH [BMAH]"},
