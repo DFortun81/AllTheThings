@@ -322,110 +322,132 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 _.HiddenQuestTriggers = {
 	q(60635),	-- Night Fae Mission Table
 	
-	-- HUMILITY DIFFICULTY 
+	-- COURAGE DIFFICULTY KILL
+	q(60917),	-- Kalisthene | Courage 
+	q(60918),	-- Echthra | Courage 
+	q(60919),	-- Alderyn and Myn'ir | Courage 
+	q(60921),	-- Nuuminuuru | Courage 
+	q(60922),	-- Craven Corinth | Courage 
+	q(60923),	-- Splinterbark Nightmare
+	q(60924),	-- Thran'tiok | Courage
+	q(60925),	-- Mad Mortimer | Courage
+	q(60926),	-- Athanos | Courage
+	q(60927),	-- Azaruux | Courage
+	
+	-- LOYALTY DIFFICULTY KILL
+	q(61014),	-- Azaruux | Loyalty
+	q(61015),	-- Athanos | Loyalty
+	q(61016),	-- Mad Mortimer | Loyalty
+	q(61017),	-- Thran'tiok | Loyalty
+	q(61018),	-- Splinterbark Nightmare | Loyalty
+	q(61019),	-- Cravin Corinth | Loyalty
+	q(61020),	-- Nuuminuuru | Loyalty 
+	q(61021),	-- Alderyn and Myn'ir | Loyalty
+	q(61022),	-- Echthra | Loyalty
+	q(61023),	-- Kalisthene | Loyalty
+	
+	-- WISDOM DIFFICULTY KILL
+	q(61024),	-- Azaruux | Wisdom
+	q(61025),	-- Athanos | Wisdom
+	q(61026),	-- Mad Mortimer | Wisdom 
+	q(61027),	-- Thran'tiok | Wisdom
+	q(61028),	-- Splinterbark | Wisdom
+	q(61029),	-- Craven Corinth | Wisdom
+	q(61030),	-- Nuuminuuru | Wisdom
+	q(61031),	-- Alderyn and Myn'ir | Wisdom
+	q(61032),	-- Echthra | Wisdom
+	q(61033),	-- Kalisthene | Wisdom
+	
+	-- HUMILITY DIFFICULTY KILL
 	q(63102),	-- Kelisthene | Humility | Pelagos
 	q(63103),	-- Kelisthene | Humility | Kleia
 	q(63104),	-- Kelisthene | Humility | Mikanikos
-	q(63105),	-- Echthra | Humility | Pelagos / Killing "Alderyn and Myn'ir" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
+	q(63105),	-- Echthra | Humility | Pelagos
 	q(63106),	-- Echthra | Humility | Kleia
 	q(63107),	-- Echthra | Humility | Mikanikos
 	q(63108),	-- Alderyn and Myn'ir| Humility | Pelagos
 	q(63109),	-- Alderyn and Myn'ir| Humility | Kleia
 	q(63110),	-- Alderyn and Myn'ir| Humility | Mikanikos
-	q(63111),	-- Nuuminuuru | Humility | Pelagos / Killing "Nuuminuuru" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	q(63112),	-- Nuuminuuru | Humility | Kleia / Killing "Nuuminuuru" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms, with active braziers.
+	q(63111),	-- Nuuminuuru | Humility | Pelagos
+	q(63112),	-- Nuuminuuru | Humility | Kleia
 	q(63113),	-- Nuuminuuru | Humility | Mikanikos
-	q(63114),	-- Craven Corinth | Humility | Pelagos / Killing "Craven Corinth" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
+	q(63114),	-- Craven Corinth | Humility | Pelagos
 	q(63115),	-- Craven Corinth | Humility | Kleia
 	q(63116),	-- Craven Corinth | Humility | Mikanikos
-	q(63117),	-- Splinterbark | Humility | Pelagos / Killing "Splinterbark" boss in PoA rank 5 building on Humility difficulty with Pelagos with charms and active braziers.
-	q(63118),	-- Splinterbark | Humility | Kleia / Killing "Splinterbark Nightmare" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
+	q(63117),	-- Splinterbark | Humility | Pelagos
+	q(63118),	-- Splinterbark | Humility | Kleia
 	q(63119),	-- Splinterbark | Humility | Mikanikos
-	q(63120),	-- Thran'tiok | Humility | Pelagos / Killing "Thran'tiok" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
+	q(63120),	-- Thran'tiok | Humility | Pelagos
 	q(63121),	-- Thran'tiok | Humility | Kleia
 	q(63122),	-- Thran'tiok | Humility | Mikanikos
-	q(63123),	-- Mad Mortimer | Humility | Pelagos / Killing "Mad Mortimer" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
+	q(63123),	-- Mad Mortimer | Humility | Pelagos
 	q(63124),	-- Mad Mortimer | Humility | Kleia
 	q(63125),	-- Mad Mortimer | Humility | Mikanikos
 	q(63126),	-- Athanos | Humility | Pelagos
-	q(63127),	-- Athanos | Humility | Kleia / Killing "Arthanos" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
+	q(63127),	-- Athanos | Humility | Kleia
 	q(63128),	-- Athanos | Humility | Mikanikos
 	q(63129),	-- Azaruux | Humility | Pelagos
-	q(63130),	-- Azaruux | Humility | Kleia / Killing "Azaruux" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
+	q(63130),	-- Azaruux | Humility | Kleia
 	q(63131),	-- Azaruux | Humility | Mikanikos
 	
-	-- HQTS PATH
-	q(61026),	-- Mad Mortimer | Wisdom | Pelagos -- Vial of Serenity and no charms
-	q(61096),	-- Athanos | Wisdom | Kleia -- Vial of Serenity and no charms*
-	q(61025),	-- Halo of the Reverent?* May change with each other
-	q(63098),	-- Athanos | Wisdom | Mikanikos -- Vial of Serenity and no charms /Learning from the masters
-	q(61024),	-- Azaruux | Wisdom | Pelagos -- Vial of Serenity and no charms/Personal Nightmare
-	q(63087),	-- Kelisthene | Humility | Kleia -- the Vial of Serenity, no charms, no braziers
-	q(63138),	-- Kelisthene | Humility | Kleia -- the Vial of Serenity, no charms, no braziers
-	q(61043),	-- Looting Kelisthene Chest
-	q(63084),	-- Kelisthene | Humility | Pelagos -- the Footpads, 5 charms, both braziers
-	q(61028),	-- Splinterbark | Wisdom | Pelagos -- herald's footpads and no charms
-	q(61027),	-- Thran'tiok | Wisdom | Pelagos -- no charms and the Trident/ Death Foursworn!
+	-- HUMILITY DIFFICULTY NO CHARMS, NO ACTIVE BRAZIERS (probably only for either charms or braziers)
+	q(61034),	-- Azaruux | Humility | no charms | no active braziers
+	q(61035),	-- Arthanos | Humility | no charms | no active braziers
+	q(61036),	-- Mad Mortimer | Humility | no charms | no active braziers
+	q(61037),	-- Thran'tiok | Humility | no charms | no active braziers
+	q(61038),	-- Splinterbark | Humility | no charms | no active braziers
+	q(61039),	-- Craven Corinth | Humility | no charms | no active braziers
+	q(61040),	-- Nuuminuuru | Humility | no charms | no active braziers.
+	q(61041),	-- Alderyn and Myn'ir | Humility | no charms | no active braziers
+	q(61042),	-- Echthra | Humility | no charms | no active braziers
+	q(61043),	-- Kelisthene | Humility | no charms | no active braziers
 	
-	-- More HQTS Regarding PATH
-	q(61041),	-- Alderyn and Myn'ir| Humility | Kleia -- First Time no braziers, no charms,
-	q(64144),	-- Nuuminuuru | Humility | Pelagos -- First time  no braziers, no charms, on Humility, during the enrage
-	q(61040),	-- Looting chest after the encounter above (Reverent Bearer's Warboots) / Killing "Nuuminuuru" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	q(61039),	-- Craven Corinth | Humility | -- First Time, without a soulbind (seesaw cheese), no braziers, no charms,
-	q(63146),	-- Looting chest after the encounter above (Reverent Bearer's gauntlets) / Killing "Craven Corinth" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	q(63139),	-- Echthra | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms /Killing "Alderyn and Myn'ir" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	q(61042),	-- Looting chest after the encounter above (Reverent Bearer's Girdle) / Killing "Alderyn and Myn'ir" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers
-	q(63147),	-- Splinterbark | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms
-	q(61038),	-- Looting chest after the encounter above/Killing "Splinterbark Nightmare" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
-	q(63148),	-- Thran'tiok | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms / Killing "Splinterbark Nightmare" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers. /Killing "Thran'tiok" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	q(61037),	-- Looting chest after the encounter above / Killing "Thran'tiok" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	q(63149),	-- Mad Mortimer | Humility |  -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms / Killing "Mad Mortimer" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	q(61036),	-- Looting chest after the encounter above / Killing "Mad Mortimer" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	q(63150),	-- Athanos | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms / Killing "Arthanos" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
-	q(61035),	-- Looting chest after the encounter above / Killing "Arthanos" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
-	q(63151),	-- Azaruux | Humility | -- First Time, , without a soulbind (seesaw cheese), no braziers, no charms / Killing "Azaruux" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
-	q(61034),	-- Looting chest after the encounter above (Reverent Wings of the Ascension) / Killing "Azaruux" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
-	q(63086),	-- Alderyn and Myn'ir| Humility | Mikanikos / Killing "Splinterbark" boss in PoA rank 5 building on Humility difficulty with Pelagos with charms and active braziers.
-	q(63089),	-- Echthra | Humility | Mikanikos
-	q(63088),	-- Nuuminuuru | Humility | Mikanikos / Killing "Craven Corinth" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	q(61032),	-- Echthra | Wisdom | Pelagos
-	q(61031),	-- Alderyn and Myn'ir| Wisdom | Pelagos
-	q(61030),	-- Nuuminuuru | Wisdom | Kleia
-	q(61029),	-- Craven Corinth | Wisdom | Pelagos
-	q(61015),	-- Athanos | Loyalty | Kleia
-	q(61014),	-- Azaruux | Loyalty | Pelagos
+	-- HUMILITY DIFFICULTY NO CHARMS, NO ACTIVE BRAZIERS (probably only for either charms or braziers)
+	q(63138),	-- Kelisthene | Humility | no charms | no active braziers
+	q(63139),	-- Echthra | Humility | no charms | no active braziers
+	q(63143),	-- Alderyn and Myn'ir | Humility | no charms | no active braziers
+	q(63144),	-- Nuuminuuru" boss | Humility | no charms | no active braziers
+	q(63146),	-- Craven Corinth | Humility | no charms | no active braziers
+	q(63147),	-- Splinterbark | Humility | | no charms | no active braziers
+	q(63148),	-- Thran'tiok | Humility | no charms | no active braziers
+	q(63149),	-- Mad Mortimer | Humility | no charms | no active braziers
+	q(63150),	-- Athanos | Humility | no charms | no active braziers
+	q(63151),	-- Azaruux | Humility | no charms | no active braziers
+	
+	-- UNKNOWN EXACT TRIGGERS (could be loyalty kills instead, but what is in loyalty kills then?)
 	q(63074),	-- Kelisthene | Loyalty | Kleia
-	q(63096),	-- Athanos | Courage | Kleia
+	q(63075),	-- Craven Corinth | Loyalty | Kleia
+	--q(63076),	-- ? | Loyalty | ?
+	--q(63077),	-- ? | Loyalty | ?
+	q(63078),	-- Kalisthene | Loyalty
+	q(63079),	-- Nuuminuuru | Loyalty
+	q(63080),	-- Mad Mortimer | Loyalty | Pelagos
+	--q(63081),	-- ? | Loyalty | ?
 	q(63082),	-- Thran'tiok | Loyalty | Pelagos
+	q(63083),	-- Craven Corinth | Loyalty | Kleia
 	
-	q(61033),	-- Looted the chest after defeating Kalisthene on wisdom
-	q(63093),	-- Looted the chest after defeating Kalisthene on wisdom
+	-- UNKNOWN EXACT TRIGGERS
+	q(63084),	-- Kelisthene | Humility | Pelagos | 5 charms | both braziers | Footpads
+	q(63085),	-- Nuuminuuru | Humility | Pelagos | no charms or active braziers
+	q(63086),	-- Alderyn and Myn'ir | Humility | Mikanikos / Killing "Splinterbark" boss in PoA rank 5 building on Humility difficulty with Pelagos with charms and active braziers.
+	q(63087),	-- Kelisthene | Humility | Kleia | no charms | no active braziers | Vial of Serenity
+	q(63088),	-- Nuuminuuru | Humility | Mikanikos / Killing "Craven Corinth" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
+	q(63089),	-- Echthra | Humility | Mikanikos
+	q(63093),	-- Kalisthene | Wisdom
+	q(63094),	--
+	q(63095),	--
+	q(63096),	-- Athanos | Courage | Kleia
+	q(63097),	-- Completing first 9 Path of Ascension 'Courage' challenges?
+	q(63098),	-- Athanos | Wisdom | Mikanikos -- Vial of Serenity and no charms
 	
+	
+	
+
+
 	-- Unflagged
 	--q(62771)
 	--q(62770)
 	
-	q(62989),	-- Arsenal: Doubt's Weapon Cache
 	
-	-- KNOWN HQTs in Path of Ascension but unknown exact triggers
-	--q(61034),	-- ?
-	--q(61035),	-- ?
-	--q(61036),	-- ?
-	--q(61037),	-- Killing "Thran'tiok" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	--q(61038),	-- Killing "Splinterbark Nightmare" boss in PoA rank 5 building on Humility difficulty with Kleia without any charms or active braziers.
-	--q(61039),	-- Killing "Craven Corinth" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	--q(61040),	-- ?
-	--q(61042),	-- ?
-	--q(63085),	-- Killing "Nuuminuuru" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	--q(63086),	-- ?
-	--q(63088),	-- ?
-	--q(63139),	-- ?
-	--q(63143),	-- Killing "Alderyn and Myn'ir" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	--q(63144),	-- Killing "Nuuminuuru" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	--q(63146),	-- ?
-	--q(63147),	-- ?
-	--q(63148),	-- ?
-	--q(63149),	-- ?
-	--q(63150),	-- ?
-	--q(63151),	-- ?
+	q(62989),	-- Arsenal: Doubt's Weapon Cache
 };

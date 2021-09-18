@@ -3671,30 +3671,6 @@ _.HiddenQuestTriggers = {
 		q(61589),	-- triggered when turning in #57903, "Power in the Sky," possibly connected to channeling anima to Purity's Pinnacle
 		q(60936),	-- Completed when crafting "Herald's Footpads" with Ascension Crafting
 		q(61054),	-- Completed when turning in quest 61473 (Sourcing Your Own Materials), Path of Ascension quest
-		q(60917),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Courage difficulty)
-		q(63078),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Loyalty difficulty)
-		q(61023),	-- Looting Path of Ascension Victor's Chest (Kalisthene, Loyalty difficulty) + Received Phial of Serentiy Blueprint
-		q(60918),	-- Looting Path of Ascension Victor's Chest (Echthra, Courage difficulty)
-		q(60919),	-- Looting Path of Ascension Victor's Chest (Alderyn and Myn'ir, Courage difficulty)
-		q(60921),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Courage difficulty)
-		q(61020),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Loyalty difficulty)
-		q(63079),	-- Looting Path of Ascension Victor's Chest (Nuuminuuru, Loyalty difficulty)
-		q(60922),	-- Looting Path of Ascension Victor's Chest (Craven Corinth, Courage difficulty)
-		q(61019),	-- Looting Path of Ascension Victor's Chest (Cravin Corinth, Loyalty, Kleia/Pelagos)
-		q(60923),	-- Looting Path of Ascension Victor's Chest (Splinterbark Nightmare, Courage difficulty)
-		q(61018),	-- Looting Path of Ascension Victor's Chest (Splinterbark Nightmare, Loyalty, Pelagos)
-		q(61021),	-- Looting Path of Ascension Victor's Chest (Myn'ir and Alderyn, Loyalty difficulty)
-		q(61022),	-- Looting Path of Ascension Victor's Chest (Echthra, Loyalty difficulty)
-		q(60924),	-- Looting Path of Ascension Victor's Chest (Thran'tiok, Courage, Pelagos)
-		q(61017),	-- Looting Path of Ascension Victor's Chest (Thran'tiok, Loyalty, Pelagos)
-		q(60925),	-- Looting Path of Ascension Victor's Chest (Mad Mortimer, Courage, Pelagos)
-		q(61016),	-- Looting Path of Ascension Victor's Chest (Mad Mortimer, Loyalty, Pelagos)
-		q(63080),	-- Looting Path of Ascension Victor's Chest (Mad Mortimer, Loyalty, Pelagos) [First time?]
-		q(60926),	-- Looting Path of Ascension Victor's Chest (Athanos, Courage, Pelagos)
-		q(60927),	-- Looting Path of Ascension Victor's Chest (Azaruux, Courage, Mikanikos)
-		q(63075),	-- defeating Craven Corinth on Loyalty w/Kleia, pre-looting (also used Spiritforged Aegis for 'Bastion of Protection' achievement criteria)
-		q(63083),	-- defeating Craven Corinth on Loyalty w/Kleia, pre-looting (also used Spiritforged Aegis for 'Bastion of Protection' achievement criteria)
-		q(63097),	-- Completing first 9 Path of Ascension 'Courage' challenges?
 		q(63451),	-- triggered when turning in #61332, "Return Lost Souls"
 		q(62756),	-- Reaching Renown 19 Kyrian / unlocking Deepening Bond 4% stam increase
 		q(62757),	-- Reaching Renown 35 Kyrian / unlocking Deepening Bond 6% stam increase
