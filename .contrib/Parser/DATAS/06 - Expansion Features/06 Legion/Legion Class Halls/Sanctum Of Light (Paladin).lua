@@ -533,16 +533,29 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
 							["coord"] = { 52.3, 78.1, 24 },
 						}),
+						q(42885, {	-- The Highlord's Command
+							["sourceQuests"] = { 42919 },	-- The Scion's Legacy
+							["classes"] = { PALADIN },
+							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+							["coord"] = { 50.8, 70.9, 24 },
+						}),
 						q(42966, {	-- The Highlord's Command
 							["sourceQuests"] = { 42919 },	-- The Scion's Legacy
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 							["coord"] = { 50.8, 70.9, 24 },
-							["altQuests"] = {
-								42885,	-- The Highlord's Command
-								42967,	-- The Highlord's Command
-								42968,	-- The Highlord's Command
-							},
+						}),
+						q(42967, {	-- The Highlord's Command
+							["sourceQuests"] = { 42919 },	-- The Scion's Legacy
+							["classes"] = { PALADIN },
+							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+							["coord"] = { 50.8, 70.9, 24 },
+						}),
+						q(42968, {	-- The Highlord's Command
+							["sourceQuests"] = { 42919 },	-- The Scion's Legacy
+							["classes"] = { PALADIN },
+							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+							["coord"] = { 50.8, 70.9, 24 },
 						}),
 						q(42773, {	-- The Light Reveals
 							["sourceQuests"] = { 42771 },	-- Keeping the Peace
@@ -598,7 +611,12 @@ _.ExpansionFeatures =
 							["maps"] = { AZSUNA },
 						}),
 						q(42886, {	-- To Faronaar
-							["sourceQuests"] = { 42966 },	-- The Highlord's Command
+							["sourceQuests"] = {
+								42885,	-- The Highlord's Command
+								42966,	-- The Highlord's Command
+								42967,	-- The Highlord's Command
+								42968,	-- The Highlord's Command
+							},
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 							["coord"] = { 52.3, 78.1, 24 },
