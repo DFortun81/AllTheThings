@@ -171,7 +171,7 @@ namespace ATT
                             //builder.Append('"').Append(Convert.ToString(data[field]).Replace("\"", "\\\"")).Append('"');
                             ExportRawLua(builder, data[field]);
                         }
-                        else if (field == "OnUpdate" || field == "OnTooltip")
+                        else if (field == "OnUpdate" || field == "OnTooltip" || field == "OnClick")
                         {
                             var functionBody = Convert.ToString(data[field]).Replace("\n", "\t").Replace("\r", "\t").Replace("\t\t", "\t").Replace("\t\t", "\t");
                             if ((functionBody.StartsWith("\"") && functionBody.EndsWith("\""))

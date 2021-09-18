@@ -13055,6 +13055,7 @@ function app:CreateMiniListForGroup(group)
 		end
 	end
 	popout:Toggle(true);
+	return popout;
 end
 local function ClearRowData(self)
 	self.ref = nil;

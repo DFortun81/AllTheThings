@@ -581,6 +581,7 @@ namespace ATT
                         break;
 
                     // Functions
+                    case "OnClick":
                     case "OnUpdate":
                     case "OnTooltip":
                         item[field] = value;
