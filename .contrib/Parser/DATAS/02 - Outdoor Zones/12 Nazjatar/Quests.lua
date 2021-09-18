@@ -2591,6 +2591,8 @@ _.HiddenQuestTriggers = {
 	q(57040),	-- recruiting Hunter Akana / Vim Brineheart for the day
 	q(57041),	-- recruiting Farseer Ori / Neri Sharpfin for the day
 	q(57042),	-- recruiting Bladesman Inowari / Poen Gillbrack for the day
+	
+	q(55969),	-- Using Troop Requisition (168480)
 
 --	HORRIBLE NAZJATAR BODYGUARD DIALOGUE QUESTS (usually trigger in areas where you're doing the daily quests for the bodyguard, OR after 1-2 minutes of idling post-pickup)
 --	not sure if Alliance quests are once per account (horde appear to be daily) or if they just don't have HQTs - they have instant dialogue upon quest pickup/turn-in but haven't triggered any HQTs for me at all - the first time i did them on my account would have been looooooooong ago
@@ -2600,6 +2602,7 @@ _.HiddenQuestTriggers = {
 	q(56507),	-- Triggered randomly while in nazjatar
 	q(56658),	-- Triggered randomly while in Nazjatar
 	q(56670),	-- Triggered randomly while in Nazjatar
+	q(56678),	-- Triggered when picking up Bounty Wanted:Inquisitor Ithriza (56227)
 --	Akana
 --	Inowari
 --	Neri

@@ -1033,6 +1033,9 @@ _.Zones =
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ also probably cant do after a certain level
 					i(111418),	-- Mushroom Juice (Used for the Bonus Objective). <-- Dont know about this
+					q(37633, {	-- Assault on Darktide Roost
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(37631, {	-- Assault on Socrethar's Rise
 						["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,

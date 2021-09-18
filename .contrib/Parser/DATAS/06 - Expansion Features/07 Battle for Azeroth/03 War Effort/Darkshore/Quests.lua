@@ -122,3 +122,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(54048),	-- To Kill A Warden
 	}),
 });
+_.HiddenQuestTriggers = {
+	--q(54908),	-- Opening Darkshore Cache
+};

@@ -472,7 +472,12 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					-- #if BEFORE CATA
 					i(32283),	-- Design: Bright Crimson Spinel [TBC] / Design: Delicate Crimson Spinel [CATA+]
 					-- #endif
-					i(32290),	-- Design: Brilliant Lionseye [TBC] / Design: Brilliant Crimson Spinel [CATA+]
+					i(32290, {	-- Design: Brilliant Lionseye [TBC] / Design: Brilliant Crimson Spinel [CATA+]
+						["timeline"] = {
+							"added 2.1.0.6624",
+							"removed 9.0.1.10000", -- Unsure exactly when this was removed but not in SL at least.566
+						},
+					}),
 					-- #if BEFORE CATA
 					i(32311),	-- Design: Dazzling Seaspray Emerald [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
 					-- #endif

@@ -72,6 +72,8 @@ _.HiddenQuestTriggers = {
 		--q(54324),	-- Triggered in BfA
 		--q(54317),	-- BfA Alliance Stormsong "Invasion"
 		--q(62521),	-- unknown tracking
+		--q(62571),	-- Flying in Maldraxxus
+		--q(62397),	-- Unknown
 
 		-------------------
 		--    VARIOUS    --
@@ -1725,6 +1727,7 @@ _.HiddenQuestTriggers = {
 		q(36902),	-- Tracking Quest: Aeda Brightdawn — assigned Aeda Brightdawn as bodyguard
 		q(46952),	-- Flag Garrison Dog Quest
 		q(54705),	-- Level 17 human monk looting mailbox in garrisson <-- Hmm. Errors report also says using 7th legion scouting map.
+		q(37197),	-- See Rexxar Quest Giver 002 (Garrison Campaign for Darktide Roost)
 
 		-- ASSAULTS
 		q(36808),	-- Missive completion: Assault on Shattrath Harbour (Alliance)

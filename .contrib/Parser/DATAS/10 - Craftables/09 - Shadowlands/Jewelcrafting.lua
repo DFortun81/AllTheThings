@@ -31,6 +31,7 @@ _.Craftables =
 				i(173135),	-- Versatile Laestrite Band
 				i(173137),	-- Quick Laestrite Band
 			}),
+			i(185960),		-- Vestige of Origins
 		}),
 	}),
 };

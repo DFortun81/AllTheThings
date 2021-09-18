@@ -82,10 +82,20 @@ _.Zones =
 					["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan
 					["isBreadcrumb"] = true,
 				}),
+				q(31047, {	-- Born Free
+					["provider"] = { "n", 62304 },	-- Ban Bearheart
+					["coord"] = { 49.0, 70.6, TOWNLONG_STEPPES },
+					["isDaily"] = true,
+				}),
 				q(30888, {	-- Breach in the Defenses
 					["coord"] = { 79.4, 84.4, TOWNLONG_STEPPES },
 					["provider"] = { "n", 61468 },	-- Taoshi
 					["sourceQuest"] = 30887,	-- Unwelcome Intruders
+				}),
+				q(31044, {	-- Bronze Claws
+					["provider"] = { "n", 62304 },	-- Ban Bearheart
+					["coord"] = { 49.0, 70.6, TOWNLONG_STEPPES },
+					["isDaily"] = true,
 				}),
 				q(31065, {	-- Buried Beneath
 					["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },

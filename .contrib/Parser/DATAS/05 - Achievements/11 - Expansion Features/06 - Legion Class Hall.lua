@@ -166,14 +166,6 @@ _.Achievements =
 					ach(11214),		-- Many Missions (10)
 				}),
 				ach(11219),			-- Need Backup
-				ach(10743, {	-- The Prestige (A)
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				ach(10745, {	-- The Prestige (H)
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 			},
 		}),
 	}),

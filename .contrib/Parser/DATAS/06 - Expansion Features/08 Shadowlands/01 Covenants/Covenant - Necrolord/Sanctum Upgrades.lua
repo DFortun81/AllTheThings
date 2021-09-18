@@ -1057,6 +1057,7 @@ _.HiddenQuestTriggers = {
 	q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
 	--q(62572),	-- Created "Marz" as the 2nd construct, to finish "build one more" / Faction flag kit
 	--q(61512),	-- Completing Something Old, Something Used first time?
+	q(63099 ),	-- Opening 184589, Bag of Potions from Atticus
 
 -- Stitched Conjurer Abom Set
 	q(63392),	-- Gloves (182502)
@@ -1065,6 +1066,8 @@ _.HiddenQuestTriggers = {
 	q(63394),	-- Armguards (182497)
 	q(63395),	-- Breeches (182494)
 	q(63400),	-- Cloak (182498)
+-- Duty-Bound Wraith
+	q(63404),	-- Gloves Leather
 
 -- Anima Conductor
 	q(60774),	-- Theater of Pain (lvl 3)

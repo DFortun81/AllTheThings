@@ -145,6 +145,7 @@ _.WorldEvents =
 					["provider"] = { "n", 149808 },	-- Boss Bazzelflange
 					["races"] = HORDE_ONLY,
 					["maps"] = { NETHERSTORM },
+					["u"] = REMOVED_FROM_GAME,
 					["lvl"] = 120,
 					["g"] = {
 						i(166724),	-- Bruce (MOUNT!)

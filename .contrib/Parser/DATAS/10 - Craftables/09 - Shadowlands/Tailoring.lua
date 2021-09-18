@@ -52,6 +52,8 @@ _.Craftables =
 				i(173219),	-- Shadowlace Trousers
 				i(173198),	-- Shrouded Cloth Pants
 			}),
+			i(185960),		-- Vestige of Origins
+			i(184479),		-- Shrouded Cloth Bag
 		}),
 	}),
 };

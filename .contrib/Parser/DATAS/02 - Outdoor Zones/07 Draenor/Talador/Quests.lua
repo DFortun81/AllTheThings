@@ -1680,6 +1680,9 @@ _.Zones =
 				}),
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ also probably cant do after a certain level
+					q(37636, {	-- Assault on Shattrath Harbor
+						["races"] = HORDE_ONLY,
+					}),
 					q(34639, {	-- Aruuna's Desolation
 						["coord"] = { 76.2, 48.9, TALADOR },
 					}),

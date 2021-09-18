@@ -703,6 +703,7 @@ _.Zones =
 					},
 				}),
 				q(12033, {	-- Message from the West
+					["sourceQuests"] = { 11916 },	-- Hellscream's Champion
 					["coord"] = { 37.3, 46.7, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26649 },	-- Messenger Torvus

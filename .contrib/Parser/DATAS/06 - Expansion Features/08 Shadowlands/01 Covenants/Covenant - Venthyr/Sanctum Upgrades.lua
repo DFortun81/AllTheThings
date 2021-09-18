@@ -2654,6 +2654,7 @@ _.HiddenQuestTriggers = {
 			--q(61935),	-- Stonehad was miserable, Adrestes was elated if it matters. This was at the start of the court - no idea what that was.  It's the first court with decorations though.
 
 			--q(61930),	-- Unknown
+			q(61936),	-- Triggered after Restock: Surveillance
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

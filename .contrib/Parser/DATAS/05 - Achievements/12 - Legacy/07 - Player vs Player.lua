@@ -172,6 +172,14 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, title(50)),	-- Arena Master
 			})),
 			un(REMOVED_FROM_GAME, ach(1761)),		-- The Dapper Sapper
+			ach(10743, {	-- The Prestige (A)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			ach(10745, {	-- The Prestige (H)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			un(REMOVED_FROM_GAME, ach(11469)),		-- The River Six
 			un(REMOVED_FROM_GAME, ach(11686)),		-- These Go To Eleven
 			un(REMOVED_FROM_GAME, ach(10993)),		-- Third Time's The Charm

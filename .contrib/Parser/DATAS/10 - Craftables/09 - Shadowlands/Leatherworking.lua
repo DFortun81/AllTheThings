@@ -117,6 +117,7 @@ _.Craftables =
 				i(186702),	-- Pallid Bone Flute
 				i(186686),	-- Pallid Oracle Bones
 			}),
+			i(185960),		-- Vestige of Origins
 		}),
 	}),
 };

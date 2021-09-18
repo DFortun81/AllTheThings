@@ -1653,5 +1653,11 @@ _.HiddenQuestTriggers = {
 	q(56662),	-- Triggered when completed "Real Ultimate Power"
 	--q(56252),	-- Paint Bottle:Electric blue?
 	--q(55453),	-- Unknown Mecha
-	--q(56238),	-- Alternative world pop
+	q(56238),	-- Triggered in the alternative world
+	q(56208),	-- HQT triggered when completing 55103 (Ideas Can Come from Anywhere)
+	q(56435),	-- Playing Ode to Tinkertown on the Gramophone
+	q(56511),	-- Playing Battle of Gnomeregan on the Gramophone
+	--q(56360),	-- Vinyl:Depths of Ulduar?
+	--q(56742),	-- Blueprint: Black Market Radio?
+	--q(55417),	-- Paint vial: Bronze/Red or Blueprint: Gramophone or Mining in Mechagon
 };
