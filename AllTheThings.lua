@@ -14689,7 +14689,7 @@ function app:GetDataCache()
 			db = {};
 			db.text = BATTLE_PET_SOURCE_8;
 			db.description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.";
-			db.icon = app.asset("Category_InGameShop");
+			db.icon = app.asset("Category_Promo");
 			db.g = app.Categories.Promotions;
 			db.expanded = false;
 			table.insert(g, db);
