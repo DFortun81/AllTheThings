@@ -133,7 +133,7 @@ _.Mounts =
 		i(184167),	-- Mawsworn Soulhunter
 		i(174769),	-- Malevolent Drone
 		i(181819),	-- Marrowfang's Reins
-		i(186479, {	-- Masterwork Gravewing
+		i(186479, {	-- Mastercraft Gravewing
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
 		}),
 		i(168826),	-- Mechagon Peacekeeper

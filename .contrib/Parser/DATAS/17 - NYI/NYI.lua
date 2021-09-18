@@ -1660,7 +1660,6 @@ _.NeverImplemented =
 			{ ["mountID"] = 15781, ["u"] = NEVER_IMPLEMENTED }
 		}))),
 		i(168673),	-- keys to the silver mono-wheel (no mount in yet)
-		spell(215545),	-- Fel Bat (Test) (Actual name of the Item)
 		model(17890, i(25596)),	-- Peep's Whistle						(Never added in Game)
 		i(8627),	-- Reins of the Nightsaber								(Never added in Game)
 		a(model(6447, i(8628))),	-- Reins of the Spotted Nightsaber		(Never added in Game)

@@ -402,7 +402,7 @@ i(185996, 332904);	-- Harvester's Dredwing
 i(186489, 347250);	-- Lord of the Corpseflies
 i(186643, 354362);	-- Maelie The Wanderer
 i(186487, 353883);	-- Maldraxxian Corpsefly
-i(186479, 215545);	-- Masterwork Gravewing
+i(186479, 215545);	-- Mastercraft Gravewing
 i(186655, 339956);	-- Mawsworn Charger
 i(186478, 353866);	-- Obsidian Gravewing
 i(186477, 353873);	-- Pale Gravewing

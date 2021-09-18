@@ -233,7 +233,7 @@ _.Zones =
 							["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
 							["questID"] = 64530,	-- Gravewing Crystal
 							["g"] = {
-								i(186479, {	-- Masterwork Gravewing (MOUNT!)
+								i(186479, {	-- Mastercraft Gravewing (MOUNT!)
 									["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
 								}),
 							},
