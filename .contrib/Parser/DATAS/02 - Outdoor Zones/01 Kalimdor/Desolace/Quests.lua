@@ -1020,3 +1020,10 @@ _.Zones =
 		}),
 	}),
 };
+
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(14411),	-- Feralas Breadcrumb [PH]
+		q(14414),	-- Feralas Breadcrumb [PH]
+	}),
+});
