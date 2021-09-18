@@ -16,13 +16,16 @@ namespace ATT
             var databaseContexts = new Dictionary<string, Dictionary<long, object>>();
             foreach (var file in Directory.GetFiles("../.raw"))
             {
-                Console.WriteLine(file);
-                Lua lua = new Lua();
-                lua.DoString("DBContext = \"\";ItemDB = {};");
-                lua.DoFile(Path.GetFullPath(file));
+                if (file.EndsWith(".lua"))
+                {
+                    Console.WriteLine(file);
+                    Lua lua = new Lua();
+                    lua.DoString("DBContext = \"\";ItemDB = {};");
+                    lua.DoFile(Path.GetFullPath(file));
 
-                // Determine the DB Context of this file.
-                databaseContexts[lua.GetString("DBContext")] = ParseAsObject<long>(lua.GetTable("ItemDB"));
+                    // Determine the DB Context of this file.
+                    databaseContexts[lua.GetString("DBContext")] = ParseAsObject<long>(lua.GetTable("ItemDB"));
+                }
             }
 
             var databaseFolder = "../.db";
