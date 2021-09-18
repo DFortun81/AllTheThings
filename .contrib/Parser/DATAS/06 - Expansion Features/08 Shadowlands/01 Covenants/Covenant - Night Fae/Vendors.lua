@@ -1048,10 +1048,10 @@ _.ExpansionFeatures =
 									i(181938),	-- Conservator's Scale Gloves
 									i(181880),	-- Conservator's Scale Greatcloak
 									i(181937),	-- Conservator's Scale Guise
+									i(181940),	-- Conservator's Scale Hauberk
 									i(181936),	-- Conservator's Scale Legguards
 									i(181935),	-- Conservator's Scale Spaulders
-									i(181978),	-- Conservator's Scale Vestments (might not be ingame)
-									i(181940),	-- Conservator's Scale Hauberk (might not be ingame)
+									i(181978),	-- Conservator's Scale Vestments
 								},
 							}),
 							i(184112, {	-- Ensemble: Conservator's Raiment

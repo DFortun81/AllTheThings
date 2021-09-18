@@ -1586,6 +1586,12 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["maps"] = { REDRIDGE_MOUNTAINS },
 						}),
+						q(54755, {	-- Not My Table
+							["sourceQuests"] = { 54106 },	-- Tracking Tipoff
+							["races"] = HORDE_ONLY,
+							["maps"] = { REDRIDGE_MOUNTAINS },
+							["u"] = NEVER_IMPLEMENTED,
+						}),
 						q(54754, {	-- For the Queen
 							["sourceQuests"] = { 54106 },	-- Tracking Tipoff
 							["description"] = "Your options are remaining loyal to Sylvanas or betraying her to help Saurfang.  |cfffd1818You can only get the \"Worn Cloak\" toy if you betray Sylvanas.|r\n\nTo help Sylvanas, choose \"I won't betray my Warchief, Troll.\" when you speak to Zekhan.\n\nTo help Saurfang, pick up the quest \"Grim Tidings\".\n",

@@ -112,6 +112,7 @@ _.NeverImplemented =
 		i(175942),	-- Spiritual Alchemy Stone (171323 is the version in game)
 		i(175943),	-- Spiritual Alchemy Stone (171323 is the version in game)
 		i(179775),	-- Conservator's Leather Tunic (reported as not being awarded from ensemble 184112)
+		i(179659),	-- Conservator's Silken Tunic
 		-- Pets
 		i(180838),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
 		i(180837),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)

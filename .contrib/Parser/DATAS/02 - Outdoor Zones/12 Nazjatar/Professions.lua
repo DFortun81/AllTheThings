@@ -22,22 +22,6 @@ _.Zones =
 					},
 				}),
 			}),
-			prof(LEATHERWORKING, {
-				q(56565, {	-- Hanging by a Thread (A)
-					["provider"] = { "i", 169767 },	-- Deteriorating Cragscales
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						recipe(302888),	-- Skinning Technique: Cragscale (Rank 3)
-					},
-				}),
-				q(56566, {	-- Hanging by a Thread (H)
-					["provider"] = { "i", 169779 },	-- Deteriorating Cragscales
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(302888),	-- Skinning Technique: Cragscale (Rank 3)
-					},
-				}),
-			}),
 			prof(MINING, {
 				q(56103, {	-- Ounces of Osmenite (A)
 					["provider"] = { "i", 168939 },	-- Osmenite Shards
@@ -65,6 +49,36 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						recipe(296143),	-- Mining Technique: Osmenite Seam (Rank 3)
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				q(56565, {	-- Hanging by a Thread (A)
+					["provider"] = { "i", 169767 },	-- Deteriorating Cragscales
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						recipe(302016),	-- Skinning Technique: Cragscale (Rank 3)
+					},
+				}),
+				q(56566, {	-- Hanging by a Thread (H)
+					["provider"] = { "i", 169779 },	-- Deteriorating Cragscales
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						recipe(302016),	-- Skinning Technique: Cragscale (Rank 3)
+					},
+				}),
+				q(56562, {	-- The Problem with Shrinkage (A)
+					["provider"] = { "i", 169775 },	-- Shriveled Leather Hide
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						recipe(302011),	-- Skinning Technique: Dredged Leather (Rank 3)
+					},
+				}),
+				q(56563, {	-- The Problem with Shrinkage (H)
+					["provider"] = { "i", 169772 },	-- Shriveled Leather Hide
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						recipe(302011),	-- Skinning Technique: Dredged Leather (Rank 3)
 					},
 				}),
 			}),
