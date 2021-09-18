@@ -568,11 +568,6 @@ _.Zones =
 					["sourceQuest"] = 992,	-- Gadgetzan Water Survey
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(40881, {	-- Oil Rags to Riches
-					["coord"] = { 69.5, 68.4, TANARIS },
-					["provider"] = { "o", 246438 },	-- Blingtron Circuit Design
-					["requireSkill"] = ENGINEERING,
-				}),
 				q(4507,  {	-- Pawn Captures Queen
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, TANARIS },

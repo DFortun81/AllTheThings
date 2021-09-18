@@ -41,35 +41,6 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(BLACKSMITHING, {
-					q(38525, {	-- Part of the Team
-						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["sourceQuest"] = 38524,	-- Felsmith Nal'ryssa
-					}),
-					q(38526, {	-- Smith Under Fire
-						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["sourceQuest"] = 38525,	-- Part of the Team
-						["g"] = {
-							i(123934),	-- Plans: Leystone Boots (Rank 2)
-						},
-					}),
-					q(38527, {	-- Nal'ryssa's Technique
-						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["sourceQuest"] = 38526,	-- Smith Under Fire
-					}),
-					q(38528, {	-- Leystone's Potential
-						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["sourceQuest"] = 38527,	-- Nal'ryssa's Technique
-						["g"] = {
-							i(123928),	-- Plans: Leystone Armguards (Rank 2)
-						},
-					}),
-					q(38530, {	-- The Firmament Stone
-						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["sourceQuest"] = 38528,	-- Leystone's Potential
-						["isBreadcrumb"] = true,
-					}),
-				}),
 				prof(COOKING, {
 					i(141011, {	-- Recipe: Surf
 						["description"] = "Drops from any marine mob in the zone.",

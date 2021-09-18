@@ -282,20 +282,8 @@ _.Zones =
 					}),
 				}),
 				prof(BLACKSMITHING, {
-					q(38499, {	-- Strange New Ores
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["g"] = {
-							recipe(264446),	-- Legion Blacksmithing
-						},
-					}),
-					q(39681, {	-- The Properties of Leystone
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["sourceQuest"] = 38499,	-- Strange New Ores
-						["g"] = {
-							i(123899),	-- Recipe: Leystone Armguards (Rank 1)
-							i(123900),	-- Recipe: Leystone Waistguard (Rank 1)
-						},
-					}),
+				------
+					
 					q(48053, {	-- Weigh Anchor
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["races"] = ALLIANCE_ONLY,
@@ -311,91 +299,6 @@ _.Zones =
 						["g"] = {
 							i(151709),	-- Recipe: Felslate Anchor
 						},
-					}),
-					q(38502, {	-- The Methods of the Nightfallen
-						["sourceQuest"] = 39681,	-- The Properties of Leystone
-						["provider"] = { "n", 97261 },	-- Alard Schmied
-					}),
-					q(38501, {	-- Hatecoil Hammerwork
-						["sourceQuest"] = 39681,	-- The Properties of Leystone
-						["provider"] = { "n", 97261 },	-- Alard Schmied
-						["g"] = {
-							i(123906),	-- Recipe: Leystone Breastplate (Rank 1)
-							i(123901),	-- Recipe: Leystone Pauldrons (Rank 1)
-						},
-					}),
-					q(38505, {	-- Engineers: Not COMPLETELY Useless
-						["sourceQuests"] = {
-							38501,	-- Hatecoil Hammerwork
-							38502,	-- The Methods of the Nightfallen
-						},
-						["provider"] = { "n", 97261 },	-- Alard Schmied
-					}),
-					q(38506, {	-- Chicken Scratch
-						["sourceQuest"] = 38505,	-- Engineers: Not COMPLETELY Useless
-						["provider"] = { "n", 92194 },	-- Timofey Oshenko
-					}),
-					q(38507, {	-- Secrets of Leysmithing
-						["sourceQuest"] = 38506,	-- Chicken Scratch
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-					}),
-					q(38515, {	-- Nature Provides
-						["sourceQuest"] = 38507,	-- Secrets of Leysmithing
-						["provider"] = { "n", 97261 },	-- Alard Schmied
-					}),
-					q(38500, {	-- Leysmithing Mastery
-						["sourceQuest"] = 38515,	-- Nature Provides
-						["provider"] = { "n", 97261 },	-- Alard Schmied
-						["g"] = {
-							i(123905),	-- Recipe: Leystone Boots (Rank 1)
-							i(123904),	-- Recipe: Leystone Gauntlets (Rank 1)
-							i(123902),	-- Recipe: Leystone Greaves (Rank 1)
-							i(123903),	-- Recipe: Leystone Helm (Rank 1)
-						},
-					}),
-					q(38563, {	-- Flower-Pickers and Potion-Quaffers
-						["sourceQuest"] = 38500,	-- Leysmithing Mastery
-						["provider"] = { "n", 97261 },	-- Alard Schmied
-					}),
-					q(38513, {	-- The Highmountain Smiths
-						["isBreadcrumb"] = true,
-						["sourceQuest"] = 38563,	-- Flower-Pickers and Potion-Quaffers
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-					}),
-					q(38522, {	-- Not Just Weapons and Armor
-						["sourceQuest"] = 38518,	-- From One Master to Another
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["g"] = {
-							i(123957),	-- Recipe: Leystone Hoofplates
-						},
-					}),
-					q(38523, {	-- Leystone Hoofplates
-						["sourceQuest"] = 38522,	-- Not Just Weapons and Armor
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["g"] = {
-							i(123957),	-- Recipe: Leystone Hoofplates
-						},
-					}),
-					q(39702, {	-- Legend of Black Rook Hold
-						["isBreadcrumb"] = true,
-						["sourceQuest"] = 38523,	-- Leystone Hoofplates
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-					}),
-					q(38564, {	-- A Sweet Bargain
-						["sourceQuest"] = 39729,	-- The Knowledge of Black Rock
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-					}),
-					q(44449, {	-- Advanced Quenching
-						["sourceQuest"] = 38564,	-- A Sweet Bargain
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["g"] = {
-							i(123935),	-- Recipe: Leystone Breastplate (Rank 2)
-						},
-					}),
-					q(38524, {	-- Felsmith Nal'ryssa
-						["isBreadcrumb"] = true,
-						["sourceQuest"] = 44449,	-- Advanced Quenching
-						["provider"] = { "n", 92183 },	-- Alard Schmied
 					}),
 					n(WORLD_QUESTS, {
 						q(41638, {	-- Work Order: Leystone Gauntlets
@@ -441,38 +344,11 @@ _.Zones =
 					}),
 				}),
 				prof(ENCHANTING, {
-					q(39903, {	-- An Enchanting Home
-						["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
-					}),
-					q(39891, {	-- Cursed, But Convenient
-						["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
-						-- available after all other enchanting quests are complete. Need good source IDs here
-					}),
-					q(39881, {	-- Fey Enchantments
-						["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
-					}),
-					q(39876, {	-- Helping the Hunters
-						["sourceQuests"] = { 39875 },	-- The Last Few
-						["provider"] = { "n", 93530 },	-- Ildine Sorrowspear
-					}),
-					q(39920, {	-- On Azure Wings
-						["sourceQuests"] = { 39907 },	-- Elven Enchantments
-						["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
-					}),
-					q(39874, {	-- Some Enchanted Evening
-						["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
-						["g"] = {
-							recipe(264471),	-- Legion Enchanting
-						},
-					}),
-					q(39875, {	-- The Last Few
-						["sourceQuests"] = { 39874 },	-- Some Enchanted Evening
-						["provider"] = { "n", 93530 },	-- Ildine Sorrowspear
-					}),
-					q(39878, {	-- Thunder Struck
-						["sourceQuests"] = { 39905 },	-- Ringing True
-						["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
-					}),
+					
+				
+					
+					
+					-- 
 					n(WORLD_QUESTS, {
 						q(41674, {	-- Work Order: Word of Intellect
 							["requireSkill"] = ENCHANTING,
@@ -486,51 +362,33 @@ _.Zones =
 					}),
 				}),
 				prof(ENGINEERING, {
-					q(40871, {	-- 'Locke and Load
-						["provider"] = { "n", 93539 },
+					
+					-- later
+					q(46128, {	-- Time for a Recharge
+						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+						["g"] = {
+							recipe(235775),	-- Rechargeable Reaves Battery
+						},
 					}),
+					q(46119, {	-- Boon of the Builder
+						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+					}),
+					
+					---
+					
+					-- 7.3
+					
 					q(48056, {	-- A Harsh Mistress
 						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 						["g"] = {
 							recipe(247717),	-- Gravitational Reduction Slippers
 						},
 					}),
-					q(40863, {	-- Always the Last Thing
-						["sourceQuests"] = { 40858 },	-- The Missing Pieces
-						["provider"] = { "n", 93520 },	-- Didi the Wrench
-						["g"] = {
-							recipe(198982),	-- Reaves Battery
-						},
-					}),
-					q(40878, {	-- Assault on Violet Hold: Cheating Death
-						["provider"] = { "n", 93520 },	-- Didi the Wrench
-						["g"] = {
-							recipe(198985),	-- Reaves Module: Failure Detection Mode
-						},
-					}),
-					q(40545, {	-- Aww Scrap!
-						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
-						["g"] = {
-							recipe(264490),	-- Legion Engineering
-						},
-					}),
-					q(46119, {	-- Boon of the Builder
-						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
-					}),
-					q(40882, {	-- Court of Stars: Revamping the Recoil
-						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
-						["g"] = {
-							i(133671),	-- Schematic: Semi-Automagic Cranial Cannon
-							i(133672),	-- Schematic: Sawed-Off Cranial Cannon
-							i(133673),	-- Schematic: Double-Barreled Cranial Cannon
-							i(133674),	-- Schematic: Ironsight Cranial Cannon
-						},
-					}),
-					q(40854, {	-- Endless Possibilities -- underbelly
-						["sourceQuests"] = { 40545 },	-- Aww Scrap!
-						["coord"] = { 66.4, 53.4, 628 },	-- Dalaran Underbelly
-						["provider"] = { "n", 102193 },	-- Filgo Scrapbottom
-					}),
+					
+					
+					
+					
+					
 					q(48065, {	-- Extraterrestrial Exploration
 						["sourceQuests"] = { 48069 },	-- The Wrench Calls
 						["provider"] = { "n", 93520 },	-- Didi the Wrench
@@ -538,61 +396,11 @@ _.Zones =
 							recipe(247744),	-- Wormhole Generator: Argus
 						},
 					}),
-					q(40869, {	-- Fire and Forget
-						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
-						["g"] = {
-							recipe(198974),	-- Pump-Action Bandage Gun (Rank 1)
-						},
-					}),
-					q(40877, {	-- Halls of Valor: Trigger Happy
-						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
-						["g"] = {
-							recipe(198981),	-- Trigger
-						},
-					}),
-					q(40870, {	-- Here Comes the BOOM!
-						["provider"] = { "n", 93520 },	-- Didi the Wrench
-						["g"] = {
-							recipe(198987),	-- Reaves Module: Fireworks Display Mode
-						},
-					}),
-					q(40865, {	-- It's Not Rocket Science
-						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
-					}),
-					q(40879, {	-- It's On With Automatons
-						["provider"] = { "n", 93520 },	-- Didi the Wrench
-						["g"] = {
-							recipe(198990),	-- Reaves Module: Piloted Combat Mode
-						},
-					}),
-					q(40864, {	-- Modular Modifications
-						["sourceQuests"] = { 40863 },	-- Always the Last Thing
-						["provider"] = { "n", 93520 },	-- Didi the Wrench
-						["g"] = {
-							recipe(198984),	-- Reaves Module: Repair Mode
-							recipe(198988),	-- Reaves Module: Snack Distrubition Mode
-						},
-					}),
-					q(40855, {	-- Our Man in Azsuna
-						["sourceQuests"] = { 40854 },	-- Endless Possibilities
-						["coord"] = { 38.6, 25.0, LEGION_DALARAN },
-						["provider"] = { "n", 93520 },	-- Didi the Wrench
-					}),
-					q(40860, {	-- Resupplying the Line
-						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
-					}),
-					q(40880, {	-- Short Circuit
-						["provider"] = { "n", 93520 },	-- Didi the Wrench
-						["g"] = {
-							recipe(198980),	-- Blingtron's Circuit Design Tutorial
-						},
-					}),
-					q(46128, {	-- Time for a Recharge
-						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
-						["g"] = {
-							recipe(235775),	-- Rechargeable Reaves Battery
-						},
-					}),
+					
+					
+					
+					
+					
 					n(WORLD_QUESTS, {
 						q(41680, {	-- Work Order: Failure Detection Pylon
 							["requireSkill"] = ENGINEERING,

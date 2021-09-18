@@ -371,13 +371,6 @@ _.Zones =
 						38618,	-- Above the Winter Moonlight (Horde)
 					},
 				}),
-				q(39904, {	-- Halls of Valor: Revenge of the Enchantress
-					["provider"] = { "n", 98367 },	-- Tigrid the Charmer
-					["requireSkill"] = ENCHANTING,
-					["g"] = {
-						i(128623),	-- Formula: Enchanted Pen
-					},
-				}),
 				q(40072, {	-- Halls of Valor: Securing the Aegis
 					["sourceQuests"] = { 40005 },	-- Stormheim's Salvation
 					["provider"] = { "n", 97988 },	-- Havi
@@ -844,14 +837,6 @@ _.Zones =
 						i(121560),	-- Signet of the Watcher's Guile
 					},
 				}),
-				q(40866, {	-- The Shell, You Say?
-					["provider"] = { "n", 102198 },	-- Fargo Flintlocke
-					["requireSkill"] = ENGINEERING,
-					["g"] = {
-						-- recipe(201596),	-- Schematic: Sonic Environment Enhancer(Spell that is cast on you to learn the following recipe.  Not collectible)
-						recipe(200466),	-- Schematic: Sonic Environment Enhancer
-					},
-				}),
 				q(39803, {	-- The Trials Continue
 					["sourceQuests"] = { 38624 },	-- Cry Thunder!
 					["coord"] = { 47.9, 54.6, STORMHEIM },
@@ -1028,17 +1013,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 71.5, 59.9, STORMHEIM },
 					["provider"] = { "n", 94318 },	-- Genn Greymane
-				}),
-				q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
-					["provider"] = { "n", 102198 },	-- Fargo Flintlocke
-					["requireSkill"] = ENGINEERING,
-					["sourceQuests"] = {
-						40866,	-- The Shell, You Say?
-						40867,	-- Bubble Baubles
-					},
-					["g"] = {
-						sp(201602),	-- Schematic: Intra-Dalaran Wormhole Generator
-					},
 				}),
 				q(38473, {	-- Will of the Thorignir (Alliance)
 					["sourceQuests"] = { 39597 },	-- The Blessing of the Watchers

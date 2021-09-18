@@ -19,22 +19,6 @@ _.Zones =
 					}),
 				}),
 				prof(BLACKSMITHING, {
-					q(39680, {	-- Between the Hammer...
-						["sourceQuests"] = { 39702 },	-- Legend of Black Rook Hold
-						["provider"] = { "n", 96763 },	-- Saris Swifthammer
-						["groups"] = {
-							i(123929),	-- Plans: Leystone Waistguard (Rank 2)
-						},
-					}),
-					q(39726, {	-- ...And the Anvil
-						["sourceQuests"] = { 39702 },	-- Legend of Black Rook Hold
-						["provider"] = { "n", 96763 },	-- Saris Swifthammer
-					}),
-					q(39729, {	-- The Knowledge of Black Rook
-						["sourceQuests"] = { 39680, 39726 },	-- Between the Hammer..., ...And the Anvil
-						["isBreadcrumb"] = true,
-						["provider"] = { "n", 96763 },	-- Saris Swifthammer
-					}),
 					n(WORLD_QUESTS, {
 						q(41634, {	-- Work Order: Leystone Armguards
 							["provider"] = { "n", 106901 },	-- Sylvia Hartshorn
@@ -44,35 +28,6 @@ _.Zones =
 								i(123936),	-- Recipe: Leystone Armguards (Rank 3)
 							},
 						}),
-					}),
-				}),
-				prof(ENCHANTING, {
-					q(39884, {	-- No Longer Worthy
-						["provider"] = { "n", 98156 },	-- Nalamya
-						["sourceQuests"] = { 39883 },	-- Cloaked In Tradition
-					}),
-					q(39889, {	-- Led Astray
-						["provider"] = { "n", 98156 },	-- Nalamya
-						["sourceQuests"] = { 39883 },	-- Cloaked In Tradition
-					}),
-					q(39882, {	-- Darkheart Thicket: The Glamour Has Faded
-						["provider"] = { "n", 98156 },	-- Nalamya
-						["sourceQuests"] = {
-							39884,	-- No Longer Worthy
-							39889,	-- Led Astray
-						},
-					}),
-				}),
-				prof(ENGINEERING, {
-					q(40861, {	-- In My Sights
-						["provider"] = { "n", 102197 },	-- Fargo Flintlocke
-						["coord"] = { 59.8, 62.2, VALSHARAH },
-						["sourceQuest"] = 40860,	-- Resupplying the Line
-					}),
-					q(40862, {	-- All Charged Up
-						["provider"] = { "n", 102197 },	-- Fargo Flintlocke
-						["coord"] = { 59.8, 62.2, VALSHARAH },
-						["sourceQuest"] = 40861,	-- In My Sights
 					}),
 				}),
 				prof(FISHING, {

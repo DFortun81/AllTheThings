@@ -72,6 +72,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(134214),	-- Tideskorn Vest
 					i(133684),	-- Screams of the Unworthy
 					i(133683),	-- Seacrusted Mist
+					i(124025),	-- Ancient Vrykul Hammer
 				})),
 			}),
 			d(2, {		-- Heroic
@@ -132,6 +133,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(134214),	-- Tideskorn Vest
 					i(133684),	-- Screams of the Unworthy
 					i(133683),	-- Seacrusted Mist
+					i(124025),	-- Ancient Vrykul Hammer
 				})),
 			}),
 			d(23, {		-- Mythic
@@ -201,6 +203,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(134214),	-- Tideskorn Vest
 					i(133684),	-- Screams of the Unworthy
 					i(133683),	-- Seacrusted Mist
+					i(124025),	-- Ancient Vrykul Hammer
 				})),
 			}),
 		},
