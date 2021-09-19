@@ -131,15 +131,15 @@ _.Zones =
 						["sourceQuest"] = 34427,	-- A Potential Ally
 					}),
 					q(34431, {	-- Masters of Shadow (A)
-						["hordeQuestID"] = 34737,
 						["provider"] = { "n", 79661 },	-- Luuka
 						["coord"] = { 82.8, 44.2, 578 },
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34429,	-- Kill Your Hundred
 					}),
 					q(34737, {	-- Masters of Shadow (H)
-						["hordeQuestID"] = 34737,
 						["provider"] = { "n", 79661 },	-- Luuka
 						["coord"] = { 82.8, 44.2, 578 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34429,	-- Kill Your Hundred
 					}),
 					q(34392, {	-- Onslaught's End
@@ -206,10 +206,16 @@ _.Zones =
 						["coord"] = { 44.0, 29.5, 577 },
 						["sourceQuest"] = 34439,	-- The Battle of the Forge
 					}),
-					q(35884, {	-- The Home Stretch
-						["hordeQuestID"] = 34446,
+					q(35884, {	-- The Home Stretch (A)
 						["provider"] = { "n", 80521 },	-- Thaelin Darkanvil
 						["coord"] = { 40.1, 48.4, 577 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 34445,	-- A Taste of Iron
+					}),
+					q(34446, {	-- The Home Stretch (H)
+						["provider"] = { "n", 80521 },	-- Thaelin Darkanvil
+						["coord"] = { 40.1, 48.4, 577 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34445,	-- A Taste of Iron
 					}),
 					q(34425, {	-- The Kargathar Proving Grounds
@@ -281,11 +287,13 @@ _.Zones =
 					q(34434, {	-- Yrel (A)
 						["provider"] = { "n", 78994 },	-- Yrel
 						["coord"] = { 45.1, 15.9, 578 },
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34429,	-- Kill Your Hundred
 					}),
 					q(34740, {	-- Yrel (H)
 						["provider"] = { "n", 78994 },	-- Yrel
 						["coord"] = { 45.1, 15.9, 578 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34429,	-- Kill Your Hundred
 					}),
 					q(34426, {	-- Yrel - this version was never implemented. Flagged as completed when turning in "A Potential Ally"
