@@ -6886,11 +6886,8 @@ local fields = {
 				-- Quick escape if current-character only and comes from something saved
 				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
 				return filteredCost;
-			elseif t.metaAfterFailure then
-				setmetatable(t, t.metaAfterFailure);
-			-- TODO: test this
-			-- else
-			-- 	SetCachedField(t, "costCollectibles", app.EmptyTable);
+			else
+				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
 		else
 			-- Quick escape if current-character only and comes from something saved
@@ -6911,10 +6908,6 @@ local fields = {
 			end
 		end
 		return false;
-	end,
-	["collectibleAsCostAfterFailure"] = app.ReturnFalse,
-	["collectedAsCostAfterFailure"] = function(t)
-
 	end,
 	["collectedAsCost"] = function(t)
 		if not t.costCollectibles then return; end
@@ -6946,13 +6939,6 @@ local fields = {
 	end,
 };
 app.BaseCurrencyClass = app.BaseObjectFields(fields, "BaseCurrencyClass");
-(function()
-local fieldsAfterFailure = RawCloneData(fields);
-fieldsAfterFailure.collectibleAsCost = fields.collectibleAsCostAfterFailure;
-fieldsAfterFailure.collectedAsCost = fields.collectedAsCostAfterFailure;
-local newMeta = app.BaseObjectFields(fieldsAfterFailure);
-fields.metaAfterFailure = function(t) return newMeta; end;
-end)();
 app.CreateCurrencyClass = function(id, t)
 	return setmetatable(constructor(id, t, "currencyID"), app.BaseCurrencyClass);
 end
@@ -8733,12 +8719,8 @@ local itemFields = {
 				-- Not true if current-character only and comes from something saved
 				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
 				return filteredCost;
-			-- for future reference, this can change the 'type' of a group which derives from the itemFields...
-			elseif t.metaAfterFailure then
-				setmetatable(t, t.metaAfterFailure);
-			-- TODO: test this
-			-- else
-			-- 	SetCachedField(t, "costCollectibles", app.EmptyTable);
+			else
+				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
 		else
 			-- Quick escape if current-character only and comes from something saved
@@ -8763,7 +8745,6 @@ local itemFields = {
 	["costsCount"] = function(t)
 		if t.costCollectibles then return #t.costCollectibles; end
 	end,
-	["collectibleAsCostAfterFailure"] = app.ReturnFalse,
 	["collectibleAsFaction"] = function(t)
 		return app.CollectibleReputations;
 	end,
@@ -8838,9 +8819,6 @@ local itemFields = {
 		end
 		return true;
 	end,
-	["collectedAsCostAfterFailure"] = function(t)
-
-	end,
 	["collectedAsFaction"] = function(t)
 		return t.collectedAsFactionOnly;
 	end,
@@ -8885,37 +8863,16 @@ local itemFields = {
 	end,
 };
 app.BaseItem = app.BaseObjectFields(itemFields, "BaseItem");
-(function()
-local fieldsAfterFailure = RawCloneData(itemFields);
-fieldsAfterFailure.collectibleAsCost = itemFields.collectibleAsCostAfterFailure;
-fieldsAfterFailure.collectedAsCost = itemFields.collectedAsCostAfterFailure;
-local newMeta = app.BaseObjectFields(fieldsAfterFailure);
-itemFields.metaAfterFailure = function(t) return newMeta; end;
-end)();
 
 local fields = RawCloneData(itemFields);
 fields.collectible = itemFields.collectibleAsAchievement;
 fields.collected = itemFields.collectedAsAchievement;
 app.BaseItemWithAchievementID = app.BaseObjectFields(fields);
-(function()
-local fieldsAfterFailure = RawCloneData(fields);
-fieldsAfterFailure.collectibleAsCost = itemFields.collectibleAsCostAfterFailure;
-fieldsAfterFailure.collectedAsCost = itemFields.collectedAsCostAfterFailure;
-local newMeta = app.BaseObjectFields(fieldsAfterFailure);
-fields.metaAfterFailure = function(t) return newMeta; end;
-end)();
 
 local fields = RawCloneData(itemFields);
 fields.collectible = itemFields.collectibleAsFaction;
 fields.collected = itemFields.collectedAsFaction;
 app.BaseItemWithFactionID = app.BaseObjectFields(fields);
-(function()
-local fieldsAfterFailure = RawCloneData(fields);
-fieldsAfterFailure.collectibleAsCost = itemFields.collectibleAsCostAfterFailure;
-fieldsAfterFailure.collectedAsCost = itemFields.collectedAsCostAfterFailure;
-local newMeta = app.BaseObjectFields(fieldsAfterFailure);
-fields.metaAfterFailure = function(t) return newMeta; end;
-end)();
 
 local fields = RawCloneData(itemFields);
 fields.collectible = itemFields.collectibleAsQuest;
@@ -8923,13 +8880,6 @@ fields.collected = itemFields.collectedAsQuest;
 fields.trackable = itemFields.trackableAsQuest;
 fields.saved = itemFields.savedAsQuest;
 app.BaseItemWithQuestID = app.BaseObjectFields(fields);
-(function()
-local fieldsAfterFailure = RawCloneData(fields);
-fieldsAfterFailure.collectibleAsCost = itemFields.collectibleAsCostAfterFailure;
-fieldsAfterFailure.collectedAsCost = itemFields.collectedAsCostAfterFailure;
-local newMeta = app.BaseObjectFields(fieldsAfterFailure);
-fields.metaAfterFailure = function(t) return newMeta; end;
-end)();
 
 local fields = RawCloneData(itemFields);
 fields.collectible = itemFields.collectibleAsFactionOrQuest;
@@ -8937,13 +8887,6 @@ fields.collected = itemFields.collectedAsFactionOrQuest;
 fields.trackable = itemFields.trackableAsQuest;
 fields.saved = itemFields.savedAsQuest;
 app.BaseItemWithQuestIDAndFactionID = app.BaseObjectFields(fields);
-(function()
-local fieldsAfterFailure = RawCloneData(fields);
-fieldsAfterFailure.collectibleAsCost = itemFields.collectibleAsCostAfterFailure;
-fieldsAfterFailure.collectedAsCost = itemFields.collectedAsCostAfterFailure;
-local newMeta = app.BaseObjectFields(fieldsAfterFailure);
-fields.metaAfterFailure = function(t) return newMeta; end;
-end)();
 
 -- Appearance Lib (Item Source)
 local fields = RawCloneData(itemFields);
@@ -8951,13 +8894,6 @@ fields.key = function(t) return "s"; end;
 fields.collectible = itemFields.collectibleAsTransmog;
 fields.collected = itemFields.collectedAsTransmog;
 app.BaseItemSource = app.BaseObjectFields(fields);
-(function()
-local fieldsAfterFailure = RawCloneData(fields);
-fieldsAfterFailure.collectibleAsCost = itemFields.collectibleAsCostAfterFailure;
-fieldsAfterFailure.collectedAsCost = itemFields.collectedAsCostAfterFailure;
-local newMeta = app.BaseObjectFields(fieldsAfterFailure);
-fields.metaAfterFailure = function(t) return newMeta; end;
-end)();
 
 app.CreateItemSource = function(sourceID, itemID, t)
 	t = setmetatable(constructor(sourceID, t, "s"), app.BaseItemSource);
