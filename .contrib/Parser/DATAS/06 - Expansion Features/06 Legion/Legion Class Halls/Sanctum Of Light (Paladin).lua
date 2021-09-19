@@ -283,8 +283,9 @@ _.ExpansionFeatures =
 						q(49812, {	-- Delas in Dalaran
 							["provider"] = { "n", 90251 },	-- Aponi Brightmane
 							["classes"] = { PALADIN },
-							["races"] = { BLOODELF, DARKIRONDWARF }, -- Might need confirmation
+							--["races"] = { BLOODELF, DARKIRONDWARF }, -- Might need confirmation
 							["sourceQuests"] = { 43486 },	-- Cracking the Codex
+							["coord"] = { 48.4, 72.8, 24 },
 							["description"] = "Complete Cracking the Codex (43486) and don't accept the next quest. Go back to Aponi instead."
 						}),
 						q(45149, {	-- Ending the Crescent Curse

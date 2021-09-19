@@ -415,39 +415,38 @@ _.HiddenQuestTriggers = {
 	q(63151),	-- Azaruux | Humility | no charms | no active braziers
 	
 	-- UNKNOWN EXACT TRIGGERS (could be loyalty kills instead, but what is in loyalty kills then?)
-	q(63074),	-- Kelisthene | Loyalty | Kleia
-	q(63075),	-- Craven Corinth | Loyalty | Kleia
+	--q(63074),	-- Kelisthene | Loyalty | Kleia
+	--q(63075),	-- Craven Corinth | Loyalty | Kleia
 	--q(63076),	-- ? | Loyalty | ?
 	--q(63077),	-- ? | Loyalty | ?
-	q(63078),	-- Kalisthene | Loyalty
-	q(63079),	-- Nuuminuuru | Loyalty
-	q(63080),	-- Mad Mortimer | Loyalty | Pelagos
+	--q(63078),	-- Kalisthene | Loyalty
+	--q(63079),	-- Nuuminuuru | Loyalty
+	--q(63080),	-- Mad Mortimer | Loyalty | Pelagos
 	--q(63081),	-- ? | Loyalty | ?
-	q(63082),	-- Thran'tiok | Loyalty | Pelagos
-	q(63083),	-- Craven Corinth | Loyalty | Kleia
+	--q(63082),	-- Thran'tiok | Loyalty | Pelagos
+	--q(63083),	-- Craven Corinth | Loyalty | Kleia
 	
-	-- UNKNOWN EXACT TRIGGERS
-	q(63084),	-- Kelisthene | Humility | Pelagos | 5 charms | both braziers | Footpads
-	q(63085),	-- Nuuminuuru | Humility | Pelagos | no charms or active braziers
-	q(63086),	-- Alderyn and Myn'ir | Humility | Mikanikos / Killing "Splinterbark" boss in PoA rank 5 building on Humility difficulty with Pelagos with charms and active braziers.
-	q(63087),	-- Kelisthene | Humility | Kleia | no charms | no active braziers | Vial of Serenity
-	q(63088),	-- Nuuminuuru | Humility | Mikanikos / Killing "Craven Corinth" boss in PoA rank 5 building on Humility difficulty with Pelagos without any charms or active braziers.
-	q(63089),	-- Echthra | Humility | Mikanikos
-	q(63093),	-- Kalisthene | Wisdom
-	q(63094),	--
-	q(63095),	--
-	q(63096),	-- Athanos | Courage | Kleia
-	q(63097),	-- Completing first 9 Path of Ascension 'Courage' challenges?
-	q(63098),	-- Athanos | Wisdom | Mikanikos -- Vial of Serenity and no charms
+	-- HQTs for It's How You Wear It achievement
+	q(63084),	-- Humility | Herald's Footpads
+	q(63085),	-- Humility | Deep Echo Trident
+	q(63086),	-- Humility | Vial of Lichfrost
+	q(63087),	-- Humility | Phial of Serenity
+	q(63088),	-- Humility | Ring of Warding
+	q(63089),	-- Humility | Spiritforged Aegis
 	
+	-- I think this might be for Learning from the Masters achievement
+	--q(63093),	-- Kalisthene | Wisdom
+	--q(63094),	--
+	--q(63095),	--
+	--q(63096),	-- Athanos | Courage | Kleia
+	--q(63097),	-- Completing first 9 Path of Ascension 'Courage' challenges?
+	--q(63098),	-- Athanos | Wisdom | Mikanikos | Vial of Serenity | no charms
 	
-	
-
-
-	-- Unflagged
-	--q(62771)
-	--q(62770)
-	
-	
+	q(63165),	-- after earning To the Moon achievement
 	q(62989),	-- Arsenal: Doubt's Weapon Cache
+	
+	-- Unflagged
+	--q(62770)
+	--q(62771)
+	
 };

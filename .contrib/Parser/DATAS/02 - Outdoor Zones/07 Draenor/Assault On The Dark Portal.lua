@@ -130,7 +130,13 @@ _.Zones =
 						["coord"] = { 73.0, 38.0, 577 },
 						["sourceQuest"] = 34427,	-- A Potential Ally
 					}),
-					q(34431, {	-- Masters of Shadow
+					q(34431, {	-- Masters of Shadow (A)
+						["hordeQuestID"] = 34737,
+						["provider"] = { "n", 79661 },	-- Luuka
+						["coord"] = { 82.8, 44.2, 578 },
+						["sourceQuest"] = 34429,	-- Kill Your Hundred
+					}),
+					q(34737, {	-- Masters of Shadow (H)
 						["hordeQuestID"] = 34737,
 						["provider"] = { "n", 79661 },	-- Luuka
 						["coord"] = { 82.8, 44.2, 578 },
@@ -272,8 +278,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34420,	-- The Cost of War
 					}),
-					q(34434, {	-- Yrel
-						["hordeQuestID"] = 34740,
+					q(34434, {	-- Yrel (A)
+						["provider"] = { "n", 78994 },	-- Yrel
+						["coord"] = { 45.1, 15.9, 578 },
+						["sourceQuest"] = 34429,	-- Kill Your Hundred
+					}),
+					q(34740, {	-- Yrel (H)
 						["provider"] = { "n", 78994 },	-- Yrel
 						["coord"] = { 45.1, 15.9, 578 },
 						["sourceQuest"] = 34429,	-- Kill Your Hundred
