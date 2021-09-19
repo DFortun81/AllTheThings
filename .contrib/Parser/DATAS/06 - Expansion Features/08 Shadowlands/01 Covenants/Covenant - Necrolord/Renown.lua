@@ -13,22 +13,19 @@ _.ExpansionFeatures =
 					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
 					["g"] = bubbleDown( { ["customCollect"] = "SL_COV_NEC" }, {	-- Necrolord
 						i(181821,  {	-- Armored Plaguerot Tauralus (MOUNT!)
-							["description"] = "Requires 39 Renown.",
+							["description"] = "Requires Renown 39.",
 						}),
 						i(186487,  {	-- Maldraxxian Corpsefly (MOUNT!)
-							["description"] = "Requires 45 Renown.",
+							["description"] = "Requires Renown 45.",
 						}),
-						title(426, {	-- Baron
-							["description"] = "Requires Renown 40. Rewarded to a male character. You can also receive the title by changing your gender at the barber shop after obtaining the Baroness title, however it will display as not earned on external websites.",
-						}),
-						title(427, {	-- Baroness
-							["description"] = "Requires Renown 40. Rewarded to a female character. You can also receive the title by changing your gender at the barber shop after obtaining the Baron title, however it will display as not earned on external websites.",
+						title_gendered(426, 427, {	-- Baron / Baroness
+							["description"] = "Requires Renown 40.",
 						}),
 						title(443, {	-- Sword of the Primus
-							["description"] = "Requires 80 Renown.",
+							["description"] = "Requires Renown 80.",
 						}),
 						i(186503,  {	-- Initiate's Necromantle Vestments
-							["description"] = "Requires 60 Renown.",
+							["description"] = "Requires Renown 60.",
 							["g"] = {
 								i(185028),	-- Initiate's Necromantle Drape
 								i(185022),	-- Initiate's Necromantle Handwraps
@@ -42,7 +39,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(186524,  {	-- A Tiny Vial of Slime
-							["description"] = "Requires 56 Renown.",
+							["description"] = "Requires Renown 56.",
 							["questID"] = 64098,
 						}),
 						n(LEGENDARIES, {

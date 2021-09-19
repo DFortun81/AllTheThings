@@ -487,6 +487,7 @@ namespace ATT
                     case "sourceQuests":
                     case "altAchievements":
                     case "altQuests":
+                    case "titleIDs":
                         {
                             Objects.MergeIntegerArrayData(item, field, value);
                             break;
@@ -499,7 +500,7 @@ namespace ATT
                         }
                         else if (value is long lvl)
                         {
-                            item[field] = Convert.ToInt64(lvl);
+                            item[field] = lvl;
                         }
                         else
                         {

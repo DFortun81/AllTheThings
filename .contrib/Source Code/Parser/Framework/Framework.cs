@@ -2091,6 +2091,7 @@ namespace ATT
                 case "talentID":
                 case "title":
                 case "titleID":
+                case "titleIDs":
                 case "text":
                 case "tierID":
                 case "vignetteID":

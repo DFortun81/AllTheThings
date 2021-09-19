@@ -17,16 +17,16 @@ _.ExpansionFeatures =
 					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
 					["g"] = bubbleDown( { ["customCollect"] = "SL_COV_NFA" }, {	-- Night Fae
 						i(186493, {	-- Ardenweald Wilderling (MOUNT!)
-							["description"] = "Requires 45 Renown.",
+							["description"] = "Requires Renown 45.",
 						}),
 						i(180722, {	-- Enchanted Shadeleaf Runestag (MOUNT!)
-							["description"] = "Requires 39 Renown.",
+							["description"] = "Requires Renown 39.",
 						}),
 						title(442, {	-- Protector of the Weald
-							["description"] = "Requires 80 Renown.",
+							["description"] = "Requires Renown 80.",
 						}),
 						title(428, {	-- Winter's Envoy
-							["description"] = "Requires 40 Renown.",
+							["description"] = "Requires Renown 40.",
 						}),
 						i(186497, {	-- Ensemble: Garb of Pure Spirit
 							["description"] = "Requires Renown 60.",
@@ -43,7 +43,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(186473, {	-- A Tiny Winter Staff
-							["description"] = "Requires 56 Renown.",
+							["description"] = "Requires Renown 56.",
 							["questID"] = 64078,
 						}),
 						n(LEGENDARIES, {

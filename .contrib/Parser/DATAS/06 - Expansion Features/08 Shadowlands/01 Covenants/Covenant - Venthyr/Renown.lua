@@ -21,11 +21,8 @@ _.ExpansionFeatures =
 						i(186476,  {	-- Sinfall Gravewing (MOUNT!)
 							["description"] = "Requires Renown 45.",
 						}),
-						title(429, {	-- Count
-							["description"] = "Requires Renown 40. Rewarded to a male character. You can also receive the title by changing your gender at the barber shop after obtaining the Countess title, however it will display as not earned on external websites.",
-						}),
-						title(430, {	-- Countess
-							["description"] = "Requires Renown 40. Rewarded to a female character. You can also receive the title by changing your gender at the barber shop after obtaining the Count title, however it will display as not earned on external websites.",
+						title_gendered(429, 430, {	-- Count / Countess
+							["description"] = "Requires Renown 40.",
 						}),
 						title(444, {	-- Sin Eater
 							["description"] = "Requires Renown 80.",

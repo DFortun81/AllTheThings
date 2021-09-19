@@ -1494,6 +1494,7 @@ namespace ATT
                     case "maps":
                     case "qgs":
                     case "crs":
+                    case "titleIDs":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;

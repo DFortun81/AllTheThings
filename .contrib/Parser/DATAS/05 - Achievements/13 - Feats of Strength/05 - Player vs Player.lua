@@ -736,12 +736,7 @@ _.Achievements =
 				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(9725, {								-- The Last of Us
-				title(302, {						-- Lord of War (Gender specific title, must log in with both genders to recieve both titles)
-					["description"] = "Earned with a male character. Female version can be obtained by swapping your gender at the barber.",
-				}),
-				title(303, {						-- Lady of War (Gender specific title, must log in with both genders to recieve both titles)
-					["description"] = "Earned with a female character. Male version can be obtained by swapping your gender at the barber.",
-				}),
+				title_gendered(302, 303),	-- Lord of War / Lady of War
 			}),
 			un(REMOVED_FROM_GAME, ach(8392, {		-- Tournament Glory 2013
 				un(REMOVED_FROM_GAME, title(128)),		-- Vanquisher

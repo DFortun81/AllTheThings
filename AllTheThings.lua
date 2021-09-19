@@ -11147,12 +11147,12 @@ local fields = {
 		local name = t.playerTitle;
 		if name then
 			name = "|cff00ccff" .. name .. "|r";
-			rawset(t, "name", name);
+			rawset(t, "text", name);
 			return name;
 		end
 	end,
 	["playerTitle"] = function(t)
-		local name = GetTitleName(t.titleID);
+		local name = t.name;
 		if name then
 			local style = t.style;
 			if style == 0 then
@@ -11171,7 +11171,7 @@ local fields = {
 		end
 	end,
 	["style"] = function(t)
-		local name = GetTitleName(t.titleID);
+		local name = t.name;
 		if name then
 			local first = string.sub(name, 1, 1);
 			if first == " " then
@@ -11179,50 +11179,80 @@ local fields = {
 				first = string.sub(name, 2, 2);
 				if first == string.upper(first) then
 					-- Comma Separated
+					rawset(t, "style", 3);
 					return 3;
 				end
 
 				-- Player Name First
+					rawset(t, "style", 1);
 				return 1;
 			else
 				local last = string.sub(name, -1);
 				if last == " " then
 					-- Prefix
+					rawset(t, "style", 0);
 					return 0;
 				end
 
 				-- Suffix
 				if first == string.lower(first) then
 					-- Player Name First with a space
+					rawset(t, "style", 2);
 					return 2;
 				end
 
 				-- Comma Separated
+				rawset(t, "style", 3);
 				return 3;
 			end
 		end
 
+		rawset(t, "style", 1);
 		return 1;	-- Player Name First
+	end,
+	["name"] = function(t)
+		-- return the gender-proper name for the title
+		local name;
+		if t.titleIDs then
+			name = GetTitleName(app.Gender == 2 and t.titleIDs[1] or t.titleIDs[2]);
+		else
+			name = GetTitleName(t.titleID);
+		end
+		if name then rawset(t, "name", name); end
+		return name;
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleTitles;
 	end,
 	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
-		if app.CurrentCharacter.Titles[t.titleID] then return 1; end
+		if t.saved then return 1; end
 		if app.AccountWideTitles and ATTAccountWideData.Titles[t.titleID] then return 2; end
-		if IsTitleKnown(t.titleID) then
-			app.CurrentCharacter.Titles[t.titleID] = 1;
-			ATTAccountWideData.Titles[t.titleID] = 1;
-			return 1;
-		end
 	end,
 	["saved"] = function(t)
-		if app.CurrentCharacter.Titles[t.titleID] then return true; end
-		if IsTitleKnown(t.titleID) then
-			app.CurrentCharacter.Titles[t.titleID] = 1;
-			ATTAccountWideData.Titles[t.titleID] = 1;
-			return true;
+		local id, charTitles = t.titleID, app.CurrentCharacter.Titles;
+		if t.titleIDs then
+			local ids = t.titleIDs;
+			local m, f = ids[1], ids[2];
+			-- combo-id is already saved
+			if ATTAccountWideData.Titles[id] then
+				if charTitles[m] or charTitles[f] then return true; end
+			-- otherwise verify both titles for players with one already saved
+			elseif IsTitleKnown(m) or IsTitleKnown(f) then
+				charTitles[m] = 1;
+				charTitles[f] = 1;
+				ATTAccountWideData.Titles[m] = 1;
+				ATTAccountWideData.Titles[f] = 1;
+				-- the shared arbitrary ID can be used for account-wide checks
+				ATTAccountWideData.Titles[id] = 1;
+			end
+		else
+			if charTitles[id] then return true; end
+			if IsTitleKnown(id) then
+				charTitles[id] = 1;
+				ATTAccountWideData.Titles[id] = 1;
+				return true;
+			end
 		end
 	end,
 };
@@ -13874,7 +13904,7 @@ RowOnEnter = function (self)
 		end
 		if reference.titleID then
 			if app.Settings:GetTooltipSetting("titleID") then GameTooltip:AddDoubleLine(L["TITLE_ID"], tostring(reference.titleID)); end
-			GameTooltip:AddDoubleLine(" ", L[IsTitleKnown(reference.titleID) and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
+			GameTooltip:AddDoubleLine(" ", L[reference.saved and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
 			AttachTooltipSearchResults(GameTooltip, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
 		end
 		if reference.questID then
@@ -19476,6 +19506,7 @@ app.events.VARIABLES_LOADED = function()
 	app.Race = race;
 	app.RaceID = raceID;
 	app.RaceIndex = raceIndex;
+	-- 1 = unknown, 2 = male, 3 = female
 	app.Gender = UnitSex("player");
 	local name, realm = UnitName("player");
 	local className = GetClassInfo(classID);
