@@ -351,9 +351,14 @@ _.Zones =
 				}),
 				q(27361, {	-- Favored of the Light
 					["sourceQuests"] = { 27268 },	-- Make Haste to the Cathedral
+					-- #if ANYCLASSIC
 					["provider"] = { "n", 376 },	-- High Priestess Laurena
-					["classes"] = { PRIEST },
 					["coord"] = { 49.6, 44.8, STORMWIND_CITY },
+					-- #else
+					["provider"] = { "n", 164949 },	-- Patrice Lancaster
+					["coord"] = { 49.6, 44.8, STORMWIND_CITY },
+					-- #endif
+					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(65482),	-- Staff of the Hallowed
@@ -610,173 +615,127 @@ _.Zones =
 				}),
 				-- MORE BREADCRUMBS, PLEASE DONT PUT THEM EVERWHERE THEY CAN BE PICKED UP. USE MAPS.
 				q(27271, {	-- Journey to the Wizard's Sanctum
-					["provider"] = { "n", 16749 },	-- Edirah (The Exodar)
-					["coord"] = { 47.2, 61.8, THE_EXODAR },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 20,
-				}),
-				q(27271, {	-- Journey to the Wizard's Sanctum
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 50690 },	-- Tarelvir
-					["classes"] = { MAGE },
-					["coord"] = { 37.6, 80.0, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27271, {	-- Journey to the Wizard's Sanctum
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5146 },	-- Nittlebur Sparkfizzle
-					["classes"] = { MAGE },
-					["coord"] = { 51.0, 26.2, IRONFORGE },	-- Nittlebur Sparkfizzle
-					["races"] = ALLIANCE_ONLY,
+					["qgs"] = {
+						16749,	-- Edirah
+						50690,	-- Tarelvir
+						5146,	-- Nittlebur Sparkfizzle
+					},
+					["coords"] = {
+						{ 47.2, 61.8, THE_EXODAR },	-- Edirah
+						{ 37.6, 80.0, DARNASSUS },	-- Tarelvir
+						{ 51.0, 26.2, IRONFORGE },	-- Nittlebur Sparkfizzle
+					},
 				}),
 				q(27265, {	-- Lord Grayson Shadowbreaker
-					["provider"] = { "n", 16761 },	-- Baatun
-					["coord"] = { 43.6, 78.4, THE_EXODAR },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
-				}),
-				q(27265, {	-- Lord Grayson Shadowbreaker
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 35281 },	-- Rukua
-					["classes"] = { PALADIN },
-					["coord"] = { 43.6, 78.4, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27265, {	-- Lord Grayson Shadowbreaker
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5147 },	-- Valgar Highforge
-					["classes"] = { PALADIN },
-					["coord"] = { 51.0, 26.2, IRONFORGE },	-- Nittlebur Sparkfizzle
-					["races"] = ALLIANCE_ONLY,
+					["qgs"] = {
+						16761,	-- Baatun
+						35281,	-- Rukua
+						5147,	-- Valgar Highforge
+					},
+					["coords"] = {
+						{ 43.6, 78.4, THE_EXODAR },	-- Baatun
+						{ 43.6, 78.4, DARNASSUS },	-- Rukua
+						{ 51.0, 26.2, IRONFORGE },	-- Valgar Highforge
+					},
 				}),
 				q(27268, {	-- Make Haste to the Cathedral
-					["provider"] = { "n", 16756 },	-- Caedmos
-					["coord"] = { 33.0, 65.4, THE_EXODAR },
-					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
-				}),
-				q(27268, {	-- Make Haste to the Cathedral
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 11401 },	-- Priestess Alathea
-					["classes"] = { PRIEST },
-					["coord"] = { 43.4, 79.2, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27268, {	-- Make Haste to the Cathedral
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 11406 },	-- High Priest Rohan
-					["classes"] = { PRIEST },
-					["coord"] = { 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
-					["races"] = ALLIANCE_ONLY,
+					["qgs"] = {
+						16756,	-- Caedmos
+						11401,	-- Priestess Alathea
+						11406,	-- High Priest Rohan
+					},
+					["coords"] = {
+						{ 38.5, 50.9, THE_EXODAR },	-- Caedmos
+						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
+						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
+					},
 				}),
 				q(28258, {	-- Meet with Ander Germaine
-					["provider"] = { "n", 17120 },	-- Behomat
-					["coord"] = { 56.4, 46.2, THE_EXODAR },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 50,
-				}),
-				q(28258, {	-- Meet with Ander Germaine
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4087 },	-- Arias'ta Bladesinger
-					["classes"] = { WARRIOR },
-					["coord"] = { 56.4, 46.2, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28285, {	-- Meet with High Priestess Laurena
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 11401 },	-- Priestess Alathea
-					["classes"] = { PRIEST },
-					["coord"] = { 43.4, 79.2, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
+					["qgs"] = {
+						17120,	-- Behomat
+						4087,	-- Arias'ta Bladesinger
+					},
+					["coords"] = {
+						{ 56.4, 46.2, THE_EXODAR },	-- Behomat
+						{ 56.4, 46.2, DARNASSUS },	-- Arias'ta Bladesinger
+					},
 				}),
 				q(28285, {	-- Meet with High Priestess Laurena
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 11406 },	-- High Priest Rohan
-					["classes"] = { PRIEST },
-					["coord"] = { 25.0, 8.2, IRONFORGE }, -- High Priest Rohan
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28285, {	-- Meet with High Priestess Laurena
-					["provider"] = { "n", 16756 },	-- Caedmos
-					["coord"] = { 33.0, 65.4, THE_EXODAR },
-					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },
-					["lvl"] = 50,
+					["qgs"] = {
+						11401,	-- Priestess Alathea
+						11406,	-- High Priest Rohan
+						16756,	-- Caedmos
+					},
+					["coords"] = {
+						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
+						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
+						{ 38.5, 50.9, THE_EXODAR },	-- Caedmos
+					},
 				}),
 				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
-					["provider"] = { "n", 16761 },	-- Baatun
-					["coord"] = { 39.0, 84.2, THE_EXODAR },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 50,
-				}),
-				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 35281 },	-- Rukua
-					["classes"] = { PALADIN },
-					["coord"] = { 43.6, 78.4, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5147 },	-- Valgar Highforge
-					["classes"] = { PALADIN },
-					["coord"] = { 51.0, 26.2, IRONFORGE },	-- Nittlebur Sparkfizzle
-					["races"] = ALLIANCE_ONLY,
+					["qgs"] = {
+						16761,	-- Baatun
+						35281,	-- Rukua
+						5147,	-- Valgar Highforge
+					},
+					["coords"] = {
+						{ 39.0, 84.2, THE_EXODAR },	-- Baatun
+						{ 43.6, 78.4, DARNASSUS },	-- Rukua
+						{ 51.0, 26.2, IRONFORGE },	-- Valgar Highforge
+					},
 				}),
 				q(28263, {	-- Meet with Maginor Dumas
-					["provider"] = { "n", 16749 },	-- Edirah
-					["coord"] = { 26.2, 6.2, THE_EXODAR },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 50,
-				}),
-				q(28263, {	-- Meet with Maginor Dumas
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 50690 },	-- Tarelvir
-					["classes"] = { MAGE },
-					["coord"] = { 37.6, 80.0, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28263, {	-- Meet with Maginor Dumas
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5146 },	-- Nittlebur Sparkfizzle
-					["classes"] = { MAGE },
-					["coord"] = { 26.2, 6.2, IRONFORGE },	-- Nittlebur Sparkfizzle
-					["races"] = ALLIANCE_ONLY,
+					["qgs"] = {
+						16749,	-- Edirah
+						50690,	-- Tarelvir
+						5146,	-- Nittlebur Sparkfizzle
+					},
+					["coords"] = {
+						{ 26.2, 6.2, THE_EXODAR },	-- Edirah
+						{ 37.6, 80.0, DARNASSUS },	-- Tarelvir
+						{ 26.2, 6.2, IRONFORGE },	-- Nittlebur Sparkfizzle
+					},
 				}),
 				q(28260, {	-- Meet with Wulf Hansreim
-					["provider"] = { "n", 17122 },	-- Vord
-					["coord"] = { 47.2, 88.4, THE_EXODAR },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
-				}),
-				q(28260, {	-- Meet with Wulf Hansreim
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5115 },	-- Daera Brightspear
-					["classes"] = { HUNTER },
-					["coord"] = { 47.2, 88.4, IRONFORGE },	-- Daera Brightspear
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28260, {	-- Meet with Wulf Hansreim
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4138 },	-- Jeen'ra Nightrunner
-					["classes"] = { HUNTER },
-					["coord"] = { 43.4, 26.0, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
+					["qgs"] = {
+						17122,	-- Vord
+						5115,	-- Daera Brightspear
+						4138,	-- Jeen'ra Nightrunner
+					},
+					["coords"] = {
+						{ 47.2, 88.4, THE_EXODAR },	-- Vord
+						{ 47.2, 88.4, IRONFORGE },	-- Daera Brightspear
+						{ 43.4, 26.0, DARNASSUS },	-- Jeen'ra Nightrunner
+					},
 				}),
 				-- END BREADCRUMBS
 				q(28295, {	-- Meetup with the Caravan
@@ -1211,9 +1170,14 @@ _.Zones =
 				}),
 				q(28328, {	-- Twilight Scheming
 					["sourceQuests"] = { 28285 },	-- Meet with High Priestess Laurena
-					["provider"] = { "n", 376 },	-- Twilight Scheming
-					["classes"] = { PRIEST },
+					-- #if ANYCLASSIC
+					["provider"] = { "n", 376 },	-- High Priestess Laurena
 					["coord"] = { 49.6, 44.8, STORMWIND_CITY },
+					-- #else
+					["provider"] = { "n", 164949 },	-- Patrice Lancaster
+					["coord"] = { 78.9, 69.8, STORMWIND_CITY },
+					-- #endif
+					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(65616),	-- Crown of the Hallowed
