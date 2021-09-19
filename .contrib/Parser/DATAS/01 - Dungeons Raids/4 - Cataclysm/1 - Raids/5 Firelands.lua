@@ -132,7 +132,7 @@ _.Instances = { tier(CATA_TIER, {
 								},
 							}),
 							i(71016, {	-- Charged Pyreshell Focus
-								["description"] = "While fighting Alysrazor you loot the Pyreshell Fragments, one of which spawns when a Molten Egg hatches. Gather three and create a Dull Pyreshell Focus, which is then used just after she starts the Firestorm.\n\nIf she stays grounded and you need more fragments or need to charge your focus, you can fly out of the instance to reset, no more Eggs will spawn at this time.",
+								["description"] = "While fighting Alysrazor you loot the Pyreshell Fragments, one of which spawns when a Molten Egg hatches. Gather three and create a Dull Pyreshell Focus, to be used when she is on the ground and close to full resources during Burnout.\n\nIf she stays grounded and you need more fragments or need to charge your focus, you can fly out of the instance to reset, no more Eggs will spawn at this time.",
 								["crs"] = { 52530 },	-- Alysrazor
 								["questID"] = 29432,	-- Delegation Tracker
 								["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
