@@ -2205,4 +2205,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
+	n(QUESTS, {
+		q(31723),	-- Valley of the Four Winds
+	}),
 });

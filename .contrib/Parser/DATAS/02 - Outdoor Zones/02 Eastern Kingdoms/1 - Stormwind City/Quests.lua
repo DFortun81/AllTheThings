@@ -1416,6 +1416,7 @@ _.HiddenQuestTriggers = {
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(60362),	-- Blank
+		q(31685),	-- Valley of the Four Winds
 		q(57766),	-- War with the Horde
 	}),
 });

@@ -684,6 +684,24 @@ _.Zones =
 					["coord"] = { 58.9, 81.5, THE_JADE_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(31691, {	-- Inscribed Crane Staff
+					["requireSkill"] = INSCRIPTION,
+					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
+					["coord"] = { 54.8, 45.2, THE_JADE_FOREST },
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(31692, {	-- Inscribed Serpent Staff
+					["requireSkill"] = INSCRIPTION,
+					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
+					["coord"] = { 54.8, 45.2, THE_JADE_FOREST },
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(31690, {	-- Inscribed Tiger Staff
+					["requireSkill"] = INSCRIPTION,
+					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
+					["coord"] = { 54.8, 45.2, THE_JADE_FOREST },
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(29936, {	-- Instant Messaging
 					["sourceQuests"] = { 29935 },	-- Orders are Orders
 					["provider"] = { "n", 56336 },	-- Chief Kah Kah
