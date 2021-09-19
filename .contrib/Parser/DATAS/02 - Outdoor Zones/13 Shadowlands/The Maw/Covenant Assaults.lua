@@ -239,6 +239,15 @@ _.Zones =
 									}),
 								},
 							}),
+							q(63594, {	-- Clearing the Walls
+								-- TODO: not sure if completing 'Putting a Plan...' will lock out getting the Defense Map drop
+								-- ["sourceQuests"] = { 63545 },	-- Putting A Plan Together
+								["provider"] = { "i", 186573 },	-- Defense Map
+								["isWeekly"] = true,
+								["g"] = {
+									i(186601),	-- Quartered Ancient Ring
+								},
+							}),
 							q(63455, {	-- Dead On Their Feet
 								["provider"] = { "n", 177076 },	-- Margrave Sin'dane
 								["isWeekly"] = true,
@@ -288,23 +297,6 @@ _.Zones =
 								["g"] = {
 									crit(5, {	-- Putting a Plan Together
 										["achievementID"] = 15032,	-- Breaking Their Hold
-									}),
-									o(368205, {	-- Mawsworn Cache
-										["questID"] = 63815,
-										["isDaily"] = true,
-										["coords"] = {
-											{ 30.3, 55.8, THE_MAW },
-											{ 32.2, 67.4, THE_MAW },
-										},
-										["g"] = {
-											i(186573, {	-- Defense Map
-												["description"] = "This item will not drop if |cFF349cffPutting A Plan Together|r is not an active quest.",
-												["questID"] = 63594,	-- Clearing the Walls
-												["g"] = {
-													i(186601),	-- Quartered Ancient Ring
-												},
-											}),
-										},
 									}),
 								},
 							}),
@@ -376,6 +368,20 @@ _.Zones =
 							}),
 						}),
 						n(TREASURES, {
+							-- TODO: can ONLY this mawsworn cache object drop the map? or should this be in the 'repeated' object below?
+							o(368205, {	-- Mawsworn Cache
+								["questID"] = 63815,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 30.3, 55.8, THE_MAW },
+									{ 32.2, 67.4, THE_MAW },
+								},
+								["g"] = {
+									i(186573, {	-- Defense Map
+										["description"] = "This item will not drop if |cFF349cffPutting A Plan Together|r is not an active quest.",
+									}),
+								},
+							}),
 							o_repeated({	-- Mawsworn Cache
 								-- Contains
 								i(186600),	-- Quartered Ancient Ring
