@@ -9163,7 +9163,14 @@ itemTooltipHarvesterFields.text = function(t)
 								local races = {};
 								local _,list = strsplit(":", text);
 								for i,s in ipairs({strsplit(",", list)}) do
-									table.insert(races, app.RaceDB[strtrim(s)]);
+									local race = app.RaceDB[strtrim(s)];
+									if type(race) == "number" then
+										table.insert(races, race);
+									else -- Pandaren
+										for _,panda in pairs(race) do
+											table.insert(races, panda);
+										end
+									end
 								end
 								if #races > 0 then
 									t.info.races = races;
