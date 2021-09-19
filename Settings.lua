@@ -213,7 +213,7 @@ settings.Initialize = function(self)
 
 	-- force re-enable of optional filters which become not optional
 	-- (any filterID's here must be 'true' in all class presets)
-	local reEnableFilters = { 50 };
+	local reEnableFilters = { };
 	for _,filterID in ipairs(reEnableFilters) do
 		if not AllTheThingsSettingsPerCharacter.Filters[filterID] then
 			AllTheThingsSettingsPerCharacter.Filters[filterID] = nil;
