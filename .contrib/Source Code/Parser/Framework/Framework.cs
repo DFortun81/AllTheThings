@@ -480,6 +480,11 @@ namespace ATT
                                 if (CURRENT_RELEASE_VERSION >= version) removed = 3;
                                 break;
                             }
+                        case "timewalking":
+                            {
+                                if (CURRENT_RELEASE_VERSION >= version) removed = 5;
+                                break;
+                            }
                     }
                     ++index;
                 }
@@ -494,6 +499,11 @@ namespace ATT
                     {
                         // Never Implemented
                         data["u"] = 1;
+                    }
+                    else if (removed == 5)
+                    {
+                        // Timewalking re-implemented
+                        data["u"] = 1016;
                     }
                     else if (removed == 4)
                     {

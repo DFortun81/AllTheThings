@@ -1297,7 +1297,7 @@ namespace ATT
                     if (field == "timeline")
                     {
                         // Verify the timeline data is parsable since it's 'just a string' ... could be anything!
-                        if (!System.Text.RegularExpressions.Regex.IsMatch(index, "^(created|added|deleted|removed|blackmarket) [0-9][\\.0-9]+$"))
+                        if (!System.Text.RegularExpressions.Regex.IsMatch(index, "^(created|added|deleted|removed|blackmarket|timewalking) [0-9][\\.0-9]+$"))
                             throw new InvalidDataException("Invalid 'timeline' value: " + index);
                     }
                     if (oldList.Contains(index)) continue;
