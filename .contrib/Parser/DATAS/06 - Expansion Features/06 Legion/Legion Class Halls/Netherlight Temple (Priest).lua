@@ -156,6 +156,12 @@ _.ExpansionFeatures =
 							["coord"] = { 78.9, 41.0, TIRISFAL_GLADES },
 							["provider"] = { "n", 101314 },	-- Alonsus Faol
 						}),
+						q(43401, {	-- A Light in the Darkness
+							["sourceQuests"] = { 43832 },	-- Elixirs of Aid
+							["provider"] = { "n", 110564 },	-- Alonsus Faol <Bishop of Secrets>
+							["coord"] = { 51.0, 48.4, 702 },
+							["classes"] = { PRIEST },
+						}),
 						q(41626, {	-- A New Threat
 							["sourceQuests"] = { 41625 },	-- The Light's Wrath
 							["classes"] = { PRIEST },
@@ -761,6 +767,7 @@ _.HiddenQuestTriggers = {
 	q(44612),	-- Priest Order Hall - Tracking Quest: Holy Ground 5
 	q(44650),	-- Priest Order Hall - "Relieving the Front Lines" mission
 	q(43385),	-- Tracking Quest: 7.0 Class Hall - Priest - One-Time Quest Mission - Chapter 3 (JAP)
+	q(44059),	-- Legion Attacks
 };
 
 -- These quests never made it in.

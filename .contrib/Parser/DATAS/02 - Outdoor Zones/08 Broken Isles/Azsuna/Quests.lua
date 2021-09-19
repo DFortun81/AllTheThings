@@ -897,4 +897,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 });
 _.HiddenQuestTriggers = {
 	q(45515),	-- Valakar the Thirsty
+	q(43815),	-- Karthax
+	q(45496),	-- The Whisperer
 };

@@ -219,6 +219,7 @@ _.Zones =
 					i(187018),	-- Ritualist's Shoulder-Scythes
 					i(187431),	-- Sleeping Armament
 					i(187017),	-- Brutalizer's Mantle
+					i(187019),	-- Infiltrator's Shoulderguards
 					-- Objects
 					o(368876, {	-- Mawsworn Cache
 						["questID"] = 64021,
@@ -439,6 +440,7 @@ _.Zones =
 						i(187240),	-- Field Warden's Watchful Eye
 						i(187023),	-- Instructor's Mantle
 						i(187020),	-- Necrobinder's Shoulderpads
+						i(187097),	-- Construct's Shoulderplates
 					},
 				}),
 			}),

@@ -408,6 +408,8 @@ _.Zones =
 					["coord"] = { 60.2, 50.8, STORMHEIM },
 					["sourceQuest"] = 44771,	-- A Threat Rises
 				}),
+				q(44922),	-- Inside the Winter Storm <-- Might be HQT, using grappling hook
+				q(44940),	-- Inside the Winter Storm <-- Might be HQT, using grappling hook
 				q(38410, {	-- Impalement Insurance (Alliance)
 					["sourceQuests"] = {
 						38318,	-- No Wings Required
@@ -1112,8 +1114,6 @@ _.Zones =
 				q(38625),	-- Hook & Sinker
 				q(38630),	-- Horde Kill Squad (Alliance Only)
 				q(38712),	-- Houndmaster Ely
-				q(44922),	-- Inside the Winter Storm
-				q(44940),	-- Inside the Winter Storm
 				q(40865),	-- It's Not Rocket Science
 				q(46949),	-- Jorvild the Trusted
 				q(40166),	-- Leying with Murlocs

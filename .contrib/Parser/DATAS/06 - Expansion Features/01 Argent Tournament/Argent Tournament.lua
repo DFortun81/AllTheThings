@@ -669,9 +669,9 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["provider"] = { "n", 33545 },	-- Gahju
 				}),
-				q(13861, {	-- Battle Before the Citadel (A / H, non-DK)
-					["hordeQuestID"] = 13862,
+				q(13861, {	-- Battle Before the Citadel (A, non-DK)
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["coord"] = { 69.9, 23.4, 118 },
 					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
@@ -680,9 +680,31 @@ _.ExpansionFeatures =
 						i(45724),	-- Champion's Purse
 					},
 				}),
-				q(13864, {	-- Battle Before the Citadel (A / H, DK)
-					["hordeQuestID"] = 13863,
+				q(13862, {	-- Battle Before the Citadel (H, non-DK)
+					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["coord"] = { 69.9, 23.4, 118 },
+					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
+					["g"] = {
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+					},
+				}),
+				q(13863, {	-- Battle Before the Citadel (H, DK)
 					["classes"] = { DEATHKNIGHT },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["coord"] = { 73.8, 20.0, 118 },
+					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
+					["g"] = {
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+					},
+				}),
+				q(13864, {	-- Battle Before the Citadel (A , DK)
+					["classes"] = { DEATHKNIGHT },
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["coord"] = { 73.8, 20.0, 118 },
 					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
@@ -1194,10 +1216,10 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 					["sourceQuest"] = 13643,	-- The Stories Dead Men Tell
 				}),
-				q(13682, {	-- Threat From Above (A / H, non-DK)
-					["hordeQuestID"] = 13809,
+				q(13682, {	-- Threat From Above (A, non-DK)
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 69.9, 23.4, 118 },
 					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 					["g"] = {
@@ -1205,10 +1227,32 @@ _.ExpansionFeatures =
 						i(45724),	-- Champion's Purse
 					},
 				}),
-				q(13788, {	-- Threat From Above (A / H, DK)
-					["hordeQuestID"] = 13812,
+				q(13809, {	-- Threat From Above (H, non-DK)
+					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["coord"] = { 69.9, 23.4, 118 },
+					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
+					["g"] = {
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+					},
+				}),
+				q(13788, {	-- Threat From Above (A, DK)
 					["isDaily"] = true,
 					["classes"] = { DEATHKNIGHT },
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 73.8, 20.0, 118 },
+					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
+					["g"] = {
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+					},
+				}),
+				q(13812, {	-- Threat From Above (H, DK)
+					["isDaily"] = true,
+					["classes"] = { DEATHKNIGHT },
+					["races"] = HORDE_ONLY,
 					["coord"] = { 73.8, 20.0, 118 },
 					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 					["g"] = {

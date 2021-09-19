@@ -1072,3 +1072,6 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(32477),	-- Going back and forth in time via Taradormi
+};
