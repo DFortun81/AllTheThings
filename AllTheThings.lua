@@ -10540,6 +10540,7 @@ end
 -- 				end
 -- 			end
 -- 		end
+--		if t.spellID then return select(3, GetSpellInfo(t.spellID)); end
 -- 		return t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
 -- 	end,
 -- 	["model"] = function(t)

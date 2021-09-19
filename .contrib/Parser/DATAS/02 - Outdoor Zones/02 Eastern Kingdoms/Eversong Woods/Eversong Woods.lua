@@ -75,6 +75,12 @@ _.Zones =
 								["races"] = { BLOODELF },
 								["lvl"] = lvlsquish(1, 1, 1),
 								["groups"] = {
+									objective(1, {	-- 0/7 Tender slain
+										["provider"] = { "n", 15271 },	-- Tender
+									}),
+									objective(2, {	-- 0/7 Feral Tender slain
+										["provider"] = { "n", 15294 },	-- Feral Tender
+									}),
 									i(20837),	-- Sunstrider Axe
 									i(20836),	-- Sunstrider Dagger
 									i(20840),	-- Sunstrider Mace
@@ -176,19 +182,17 @@ _.Zones =
 								-- #else
 								["coord"] = { 35.4, 22.4, EVERSONG_WOODS },
 								-- #endif
-								["cost"] = {
-									{ "i", 20799, 1 },	-- Felendren's Head
-								},
 								["races"] = { BLOODELF },
 								["lvl"] = lvlsquish(3, 1, 3),
 								["groups"] = {
-									i(20799, {	-- Felendren's Head
-										["cr"] = 15367,	-- Felendren the Banished
+									objective(1, {	-- 0/1 Felendren's Head
+										["provider"] = { "i", 20799 },	-- Felendren's Head
 										-- #if AFTER LEGION
 										["coord"] = { 38.6, 64.6, SUNSTRIDER_ISLE },
 										-- #else
 										["coord"] = { 30.8, 27.1, EVERSONG_WOODS },
 										-- #endif
+										["cr"] = 15367,	-- Felendren the Banished
 									}),
 									i(20838),	-- Sunstrider Bow
 									i(20841),	-- Sunstrider Shield
@@ -346,6 +350,9 @@ _.Zones =
 								["races"] = { BLOODELF },
 								["lvl"] = 1,
 								["groups"] = {
+									objective(1, {	-- 0/8 Mana Wyrm slain
+										["provider"] = { "n", 15274 },	-- Mana Wyrm
+									}),
 									i(20997),	-- Green Chain Boots
 									i(20998),	-- Wyrm Sash
 								},
@@ -532,6 +539,15 @@ _.Zones =
 								["timeline"] = { "added 1.12.1.10772", "removed 6.0.2.18816" },
 								["lvl"] = lvlsquish(2, 1, 2),
 								["groups"] = {
+									-- #if BEFORE CATA
+									objective(1, {	-- 0/6 Mana Tap creature
+										["spellID"] = 28734,	-- Mana Tap
+										["crs"] = {
+											15294,	-- Feral Tender
+											15274,	-- Mana Wyrm
+										},
+									}),
+									-- #endif
 									i(20999),	-- Green Chain Gauntlets
 									i(21001),	-- Striding Pants
 									i(21000),	-- Vigorous Bracers
@@ -566,12 +582,16 @@ _.Zones =
 								-- #else
 								["coord"] = { 38, 21, EVERSONG_WOODS },
 								-- #endif
-								["cost"] = {
-									{ "i", 20797, 8 },	-- Lynx Collar
-								},
 								["races"] = { BLOODELF },
 								["lvl"] = lvlsquish(1, 1, 1),
 								["groups"] = {
+									objective(1, {	-- 0/8 Lynx Collar
+										["provider"] = { "i", 20797 },	-- Lynx Collar
+										["crs"] = {
+											15366,	-- Springpaw Cub
+											15372,	-- Springpaw Lynx
+										},
+									}),
 									i(20994),	-- Green Chain Vest
 									i(20993),	-- Lynxskin Gloves
 									i(20992),	-- Sunrise Bracers
@@ -720,12 +740,6 @@ _.Zones =
 							-- #endif
 						}),
 						n(ZONEDROPS, {
-							i(20797, {	-- Lynx Collar
-								["crs"] = {
-									15366,	-- Springpaw Cub
-									15372,	-- Springpaw Lynx
-								},
-							}),
 							i(20483, {	-- Tainted Arcane Sliver
 								["cr"] = 15298,	-- Tainted Arcane Wraith
 							}),
@@ -860,6 +874,11 @@ _.Zones =
 						["coord"] = { 34.0, 80.0, EVERSONG_WOODS },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(6, 1, 6),
+						["groups"] = {
+							objective(1, {	-- 0/10 Withered Green Keeper slain
+								["provider"] = { "n", 15637 },	-- Withered Green Keeper
+							}),
+						},
 					}),
 					q(8891, {	-- Abandoned Investigations
 						["provider"] = { "o", 181011 },	-- Magister Duskwither's Journal
@@ -875,6 +894,14 @@ _.Zones =
 						["coord"] = { 60.3, 62.7, EVERSONG_WOODS },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(7, 1, 7),
+						["groups"] = {
+							objective(1, {	-- 0/5 Amani Berserker slain
+								["provider"] = { "n", 15643 },	-- Amani Berserker
+							}),
+							objective(2, {	-- 0/5 Amani Axe Thrower slain
+								["provider"] = { "n", 15641 },	-- Amani Axe Thrower
+							}),
+						},
 					}),
 					q(9360, {	-- Amani Invasion
 						["provider"] = { "i", 23249 },	-- Amani Invasion Plans
@@ -888,6 +915,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(4, 1, 4),
 						["groups"] = {
+							objective(1, {	-- 0/5 Manawraith slain
+								["provider"] = { "n", 15648 },	-- Manawraith
+							}),
+							objective(2, {	-- 0/5 Mana Stalker slain
+								["provider"] = { "n", 15647 },	-- Mana Stalker
+							}),
 							i(23370),	-- Ley-Keeper's Blade
 							i(23371),	-- Velania's Walking Stick
 						},
@@ -921,6 +954,14 @@ _.Zones =
 						["coord"] = { 68.7, 46.9, EVERSONG_WOODS },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(8, 1, 8),
+						["groups"] = {
+							objective(1, {	-- 0/6 Mana Serpent slain
+								["provider"] = { "n", 15966 },	-- Mana Serpent
+							}),
+							objective(2, {	-- 0/6 Ether Fiend slain
+								["provider"] = { "n", 15967 },	-- Ether Fiend
+							}),
+						},
 					}),
 					q(9489, {	-- Cleansing the Scar
 						["qg"] = 16276,	-- Ponaris <Priest Trainer>
@@ -930,6 +971,10 @@ _.Zones =
 						["races"] = { BLOODELF },
 						["lvl"] = lvlsquish(5, 1, 5),
 						["groups"] = {
+							objective(1, {	-- 0/6 Eversong Ranger Blessed
+								["spellID"] = 1243,	-- Power Word: Fortitude
+								["cr"] = 15938,	-- Eversong Ranger
+							}),
 							i(23924, {	-- Robes of Silvermoon
 								["timeline"] = { "removed 4.0.3.10000" },
 							}),
@@ -964,6 +1009,11 @@ _.Zones =
 						["cr"] = 15968,	-- Darnassian Scout
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(5, 1, 5),
+						["groups"] = {
+							objective(1, {	-- Intruder Defeated
+								["provider"] = { "n", 15968 },	-- Darnassian Scout
+							}),
+						},
 					}),
 					q(8889, {	-- Deactivating the Spire
 						["qg"] = 15924,	-- Apprentice Loralthalis
@@ -992,6 +1042,14 @@ _.Zones =
 						["coord"] = { 46.9, 71.7, EVERSONG_WOODS },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(7, 1, 7),
+						["groups"] = {
+							objective(1, {	-- 0/4 Rotlimb Marauder slain
+								["provider"] = { "n", 15658 },	-- Rotlimb Marauder
+							}),
+							objective(2, {	-- 0/4 Darkwraith slain
+								["provider"] = { "n", 15657 },	-- Darkwraith
+							}),
+						},
 					}),
 					q(8895, {	-- Delivery to the North Sanctum
 						["qg"] = 15418,	-- Magister Jaronis
@@ -1326,6 +1384,14 @@ _.Zones =
 						["coord"] = { 43.3, 70.8, EVERSONG_WOODS },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(5, 1, 5),
+						["groups"] = {
+							objective(1, {	-- 0/5 Wretched Thug slain
+								["provider"] = { "n", 15645 },	-- Wretched Thug
+							}),
+							objective(2, {	-- 0/5 Wretched Hooligan slain
+								["provider"] = { "n", 16162 },	-- Wretched Hooligan
+							}),
+						},
 					}),
 					q(9704, {	-- Slain by the Wretched
 						["qg"] = 15301,	-- Outrunner Alarion
@@ -1390,6 +1456,9 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(4, 1, 4),
 						["groups"] = {
+							objective(1, {	-- 0/8 Plaguebone Pillager slain
+								["provider"] = { "n", 15654 },	-- Plaguebone Pillager
+							}),
 							i(23375),	-- Black Leather Vest
 							i(23376),	-- Gatewatcher's Chain Gloves
 							i(23377),	-- Guard's Leggings
@@ -1541,6 +1610,11 @@ _.Zones =
 						["coord"] = { 54.2, 70.9, EVERSONG_WOODS },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(7, 1, 7),
+						["groups"] = {
+							objective(2, {	-- Gharsul the Remorseless slain
+								["provider"] = { "n", 15958 },	-- Gharsul the Remorseless
+							}),
+						},
 					}),
 					q(8463, {	-- Unstable Mana Crystals
 						["qg"] = 15403,	-- Aeldon Sunbrand
@@ -1549,7 +1623,7 @@ _.Zones =
 						["lvl"] = lvlsquish(4, 1, 4),
 						["groups"] = {
 							objective(1, {	-- 0/6 Unstable Mana Crystal
-								["cost"] = { "i", 20743 },	-- Unstable Mana Crystal
+								["provider"] = { "i", 20743 },	-- Unstable Mana Crystal
 							}),
 						},
 					}),
