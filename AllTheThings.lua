@@ -4687,6 +4687,7 @@ end
 local function SearchForFieldContainer(field)
 	if field then return rawget(fieldCache, field); end
 end
+app.SearchForFieldContainer = SearchForFieldContainer;
 -- This method returns a table containing all groups which are related to or keyed by the
 -- provided field type and key id
 -- Meaning, when using this function, the results must be filtered to ensure the expected group(s) are being utilized
