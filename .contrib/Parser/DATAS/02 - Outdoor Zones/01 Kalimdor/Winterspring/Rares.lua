@@ -74,7 +74,9 @@ _.Zones =
 					["description"] = "This rare was only available during the Elemental Invasions.",
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(21548)),	-- Pattern: Stormshroud Gloves
+						i(21548, {	-- Pattern: Stormshroud Gloves
+							["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },
+						}),
 						un(REMOVED_FROM_GAME, i(18678)),	-- Tempestria's Frozen Necklace
 						un(REMOVED_FROM_GAME, i(18679)),	-- Frigid Ring
 					},

@@ -199,7 +199,9 @@ _.Zones =
 					["description"] = "This rare was only available during the Elemental Invasions.",
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(21548)),	-- Pattern: Stormshroud Gloves
+						i(21548, {	-- Pattern: Stormshroud Gloves
+							["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },
+						}),
 						un(REMOVED_FROM_GAME, i(18676)),	-- Sash of the Windreaver
 						un(REMOVED_FROM_GAME, i(18677)),	-- Zephyr Cloak
 					},

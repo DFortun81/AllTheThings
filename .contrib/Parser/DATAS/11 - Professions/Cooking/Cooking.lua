@@ -3037,7 +3037,9 @@ profession(COOKING, {
 			})),
 			un(REMOVED_FROM_GAME, i(5485)),	-- Recipe: Fillet of Frenzy
 			un(REMOVED_FROM_GAME, i(5489)),	-- Recipe: Lean Venison
-			un(REMOVED_FROM_GAME, i(12227)),	-- Recipe: Lean Wolf Steak
+			i(12227, {	-- Recipe: Lean Wolf Steak
+				["timeline"] = { "added 1.11.1.5462", "removed 5.0.4" },
+			}),
 			un(REMOVED_FROM_GAME, i(3736)),	-- Recipe: Tasty Lion Steak
 			un(REMOVED_FROM_GAME, i(13939)),	-- Recipe: Spotted Yellowtail
 			un(REMOVED_FROM_GAME, i(13942)),	-- Recipe: Grilled Squid

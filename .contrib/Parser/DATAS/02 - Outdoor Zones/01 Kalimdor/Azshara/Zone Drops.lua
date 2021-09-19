@@ -26,12 +26,12 @@ _.Zones =
 					["crs"] = { 7864 },	-- Lingering Highborne
 				}),
 				i(15753, {	-- Pattern: Stormshroud Armor
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 6138 },	-- Arkkoran Oracle
+					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },
 				}),
 				i(15764, {	-- Pattern: Stormshroud Shoulders
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 6144 },	-- Son of Arkkoroc
+					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },
 				}),
 				i(15728, {	-- Pattern: Wicked Leather Bracers
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game

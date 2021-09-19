@@ -80,51 +80,30 @@ _.WorldEvents =
 				-- Heirlooms!!
 					i(122340, {	-- Timeworn Heirloom Armor Casing
 						["cost"] = {
-							{ "g", 10000000 },		-- 1,000g
-							{ "i", 23247, 600 },	-- 600x   Burning Blossom
-							{ "i", 21100, 75 },		-- 75x    Coin of Ancestry
 							{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
-							{ "i", 33226, 450 },	-- 450x   Tricky Treat
 						},
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(151614, {	-- Weathered Heirloom Armor Casing
 						["cost"] = {
-							{ "g", 20000000 },		-- 2,000g
-							{ "i", 23247, 600 },	-- 600x   Burning Blossom
-							{ "i", 21100, 75 },		-- 75x    Coin of Ancestry
 							{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
-							{ "i", 33226, 450 },	-- 450x   Tricky Treat
 						},
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(122338, {	-- Ancient Heirloom Armor Casing
 						["cost"] = {
-							{ "g", 5000000 },		-- 500g
-							{ "i", 23247, 350 },	-- 350x Burning Blossom
-							{ "c", 241, 55 },		-- 55x  Champion's Seal
-							{ "i", 21100, 40 },		-- 40x  Coin of Ancestry
-							{ "c", 515, 100 },		-- 100x Darkmoon Prize Ticket
-							{ "i", 137642, 12 },	-- 12x  Mark of Honor
 							{ "c", 1166, 750 },		-- 750x Timewarped Badge
-							{ "i", 33226, 250 },	-- 250x Tricky Treat
 						},
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(122341, {	-- Timeworn Heirloom Scabbard
 						["cost"] = {
-							{ "g", 15000000 },		-- 1,500g
-							{ "i", 37829, 500 },	-- 500x   Brewfest Token
-							{ "i", 49927, 450 },	-- 450x   Love Token
 							{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 						},
 						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(151615, {	-- Weathered Heirloom Scabbard
 						["cost"] = {
-							{ "g", 30000000 },		-- 3,000g
-							{ "i", 37829, 500 },	-- 500x   Brewfest Token
-							{ "i", 49927, 450 },	-- 450x   Love Token
 							{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 						},
 						["sym"] = { { "fill" } },	-- simply fill this item
@@ -165,6 +144,44 @@ _.WorldEvents =
 					}),
 					i(133536, {	-- Bracers of the Black Dream
 						["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+					}),
+				-- Recipes!!
+					-- TODO: confirm once live
+					i(13497, {	-- Recipe: Greater Arcane Protection Potion
+						--["cost"] = { { "c", 1166, ?? } },	-- ??x Timewarped Badge
+						["timeline"] = { "timewalking 9.1" },
+					}),
+					i(5489, {	-- Recipe: Lean Venison
+						--["cost"] = { { "c", 1166, ?? } },	-- ??x Timewarped Badge
+						["timeline"] = { "timewalking 9.1" },
+					}),
+					i(3734, {	-- Recipe: Big Bear Steak
+						--["cost"] = { { "c", 1166, ?? } },	-- ??x Timewarped Badge
+						["timeline"] = { "timewalking 9.1" },
+					}),
+					i(12227, {	-- Recipe: Lean Wolf Steak
+						--["cost"] = { { "c", 1166, ?? } },	-- ??x Timewarped Badge
+						["timeline"] = { "timewalking 9.1" },
+					}),
+					i(13308, {	-- Schematic: Ice Deflector
+						--["cost"] = { { "c", 1166, ?? } },	-- ??x Timewarped Badge
+						["timeline"] = { "timewalking 9.1" },
+					}),
+					i(167888, {	-- Pattern: Robe of Winter Night
+						--["cost"] = { { "c", 1166, ?? } },	-- ??x Timewarped Badge
+						["timeline"] = { "timewalking 9.1" },
+					}),
+					i(15764, {	-- Pattern: Stormshroud Shoulders
+						--["cost"] = { { "c", 1166, ?? } },	-- ??x Timewarped Badge
+						["timeline"] = { "timewalking 9.1" },
+					}),
+					i(21548, {	-- Pattern: Stormshroud Gloves
+						--["cost"] = { { "c", 1166, ?? } },	-- ??x Timewarped Badge
+						["timeline"] = { "timewalking 9.1" },
+					}),
+					i(15753, {	-- Pattern: Stormshroud Armor
+						--["cost"] = { { "c", 1166, ?? } },	-- ??x Timewarped Badge
+						["timeline"] = { "timewalking 9.1" },
 					}),
 				-- Miscellaneous!!
 					i(67414, {	-- Bag of Shiny Things

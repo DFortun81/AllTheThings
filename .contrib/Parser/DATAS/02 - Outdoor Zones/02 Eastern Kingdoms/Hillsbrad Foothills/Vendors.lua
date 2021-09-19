@@ -309,7 +309,9 @@ _.Zones =
 				n(2684,   {	-- Rizz Loosebolt <Engineering Supplies>
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(13308)),	-- Schematic: Ice Deflector
+						i(13308, {	-- Schematic: Ice Deflector
+							["timeline"] = { "added 1.11.1.6692", "removed 4.0.3" },
+						}),
 					},
 				}),
 				n(6779,   {	-- Smudge Thunderwood <Poison Supplies>

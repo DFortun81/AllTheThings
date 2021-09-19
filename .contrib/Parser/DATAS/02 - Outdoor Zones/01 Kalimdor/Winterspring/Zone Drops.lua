@@ -32,7 +32,7 @@ _.Zones =
 				}),
 				i(13497, {	-- Recipe: Greater Arcane Protection Potion
 					["crs"] = { 7437 },	-- Cobalt Mageweaver
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { "added 1.11.1.5462", "removed 4.0" },
 				}),
 				i(13495, {	-- Recipe: Greater Frost Protection Potion
 					["crs"] = { 7428 },	-- Frostmaul Giant

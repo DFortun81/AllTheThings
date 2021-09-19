@@ -406,7 +406,7 @@ _.Zones =
 						"added 1.11.1.7272",
 						"removed 4.0.3.10000",
 					},
-					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.5462", "removed 5.0.5.10000", "added 9.1.0.10000", } },{
+					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.5462", "removed 4.0.3.10000", } },{
 						i(3734),	-- Recipe: Big Bear Steak
 						i(5489),	-- Recipe: Lean Venison
 					}),
