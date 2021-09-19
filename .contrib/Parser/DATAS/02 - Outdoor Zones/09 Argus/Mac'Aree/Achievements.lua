@@ -83,7 +83,7 @@ _.Zones =
 					}),
 					o(276223, {	-- Eredar Treasure Cache
 						["description"] = "You can use the |cFFFFD700Lightforged Warframe|r to get across, although it shouldn't be necessary.",
-					--	["questID"] = ,	-- TODO: Need this questID
+						["questID"] = 48743,
 						["coord"] = { 42.9, 5.30, 882 },
 						["icon"] = "Interface\\Icons\\inv_misc_treasurechest04d",
 						["g"] = {
@@ -105,7 +105,7 @@ _.Zones =
 						},
 					}),
 					o(276229, {	-- Shattered House Chest
-					--	["questID"] = ,	-- TODO: Need this questID
+						["questID"] = 48750,
 						["description"] = "You will need a |cFFFFD700Goblin Glider Kit|r to reach this chest.",
 						["icon"] = "Interface\\Icons\\inv_misc_treasurechest04d",
 						["coord"] = { 27.5, 40.2, 882 },
@@ -143,4 +143,9 @@ _.Zones =
 			}),
 		}),
 	}),
+};
+_.HiddenQuestTriggers = {
+	q(48613),	-- clearing the rubble in front of "Eredar Treasure Cache" (object id: 276223)
+	q(48742),	-- clearing the rubble in front of "Students Surprising Surplus" (object id: 276225)
+	q(48746),	-- clearing the rubble in front of "Void Tinged Chest" (object id: 276226)
 };

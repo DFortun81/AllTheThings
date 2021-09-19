@@ -23,6 +23,7 @@ _.GearSets =
 					i(154746),	-- Illidari Ring
 					i(154744),	-- Charm of Demonic Fire
 					i(154743),	-- Demon Trophy
+					i(160513),	-- Illidari Warglaive <-- Imteid a bit off...
 				},
 			}),
 		}),
@@ -77,7 +78,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(164758),	-- Illidari Chain
 					i(164756),	-- Illidari Band
 					i(164757),	-- Illidari Ring
-					i(160513),	-- Illidari Warglaive
 				},
 			}),
 		}),

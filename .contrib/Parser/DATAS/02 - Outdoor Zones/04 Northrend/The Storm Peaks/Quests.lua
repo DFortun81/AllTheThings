@@ -779,8 +779,9 @@ _.Zones =
 					["provider"] = { "n", 30295 },	-- Thorim
 					["coord"] = { 56.2, 51.3, 120 },
 					["sourceQuests"] = {
-						12872,	-- Norgannon's Shell (A)
-						12928,	-- Norgannon's Shell (H)
+						--12872,	-- Norgannon's Shell (A)
+						--12928,	-- Norgannon's Shell (H)
+						13057,	-- The Terrace of the Makers (Probably)
 					},
 					["g"] = {
 						i(42847),	-- Terrace Gazer's Gloves

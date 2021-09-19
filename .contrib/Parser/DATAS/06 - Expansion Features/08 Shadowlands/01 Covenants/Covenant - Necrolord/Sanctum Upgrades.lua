@@ -1058,6 +1058,7 @@ _.HiddenQuestTriggers = {
 	--q(62572),	-- Created "Marz" as the 2nd construct, to finish "build one more" / Faction flag kit
 	--q(61512),	-- Completing Something Old, Something Used first time?
 	q(63099 ),	-- Opening 184589, Bag of Potions from Atticus
+	--q(62535),	-- Unknown doing dailies from abom
 
 -- Stitched Conjurer Abom Set
 	q(63392),	-- Gloves (182502)

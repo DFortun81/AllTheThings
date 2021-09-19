@@ -943,4 +943,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 _.HiddenQuestTriggers = {
 	q(63427),	-- Intro Skip
 	q(63007),	-- Intro Skip
+	q(64312),	-- listening to the story time with tyrande after 9.1 campaign finish (in ardenweald)
 };

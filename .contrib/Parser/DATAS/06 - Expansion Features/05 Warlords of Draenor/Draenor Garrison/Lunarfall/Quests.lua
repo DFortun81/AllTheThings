@@ -1270,4 +1270,5 @@ _.HiddenQuestTriggers = {
 	q(39829),	-- Sleigh and Guards Shared Criteria (Winter Veil)
 	q(39610),	-- Winter Veil Active (Winter Veil)
 	q(38276),	-- 6.1 Garrison - World Boss Invasion Loot (killing Commander Dro'gan)
+	q(39409),	-- After completing the WoD mission "Ghost Wrangler" (mission ID: 305), although not sure why that would be tracked.
 };

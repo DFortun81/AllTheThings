@@ -746,6 +746,14 @@ _.Zones =
 								i(128569),	-- Formula: Enchant Ring - Binding of Versatility (Rank 1)
 							},
 						}),
+						---
+						q(42971, {	-- Controlling the Elements
+							["provider"] = { "n", 42465 },	-- Therazane <The Stonemother>
+							["coord"] = { 56.4, 12.2, 207 },
+							["g"] = {
+								sp(217762),	-- Formula: Tome of Illusions: Elemental Lords
+							},
+						}),
 					},
 				}),
 				prof(ENGINEERING, {

@@ -1264,6 +1264,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 });
 
 _.HiddenQuestTriggers = {
+	--q(63074),	-- Stygian ember loot >-- seems a too low number for this.
 	q(64604),	-- Stygian Ember from Bonesteel [] (Normal / Heroic)
 	q(64616),	-- Stygian Ember from Bonesteel (Normal / Heroic)
 	q(64674),	-- 1x Styigan Ember from Bonesteel (LFR)

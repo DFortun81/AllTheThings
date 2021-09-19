@@ -3189,6 +3189,7 @@ itemrecipe("Recipe: Runn Tum Tuber Surprise", 18267, 22761, PHASE_ONE_DIREMAUL);
 itemrecipe("Recipe: Heavy Crocolisk Stew", 20075, 24418);
 itemrecipe("Recipe: Dirge's Kickin' Chimaerok Chops", 21025, 25659, PHASE_FIVE);
 itemrecipe("Expert Cookbook", 16072, 0--[[3413]], nil, true);
+un(REMOVED_FROM_GAME, itemrecipe("Recipe: Thistle Tea", 7678, 9513));
 
 -- #if AFTER TBC
 -- TBC Recipes
@@ -3238,7 +3239,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	filter(200, {	-- Recipe
 		itemrecipe("Recipe: Herb Baked Egg", 6891, 8604),	-- this is taught by trainer when you learn cooking; recipe item was never in game
 		itemrecipe("Deprecated Recipe: Kodo Skin Bag", 4997),
-		itemrecipe("Recipe: Thistle Tea", 7678, 9513),
 		itemrecipe("Artisan Cookbook", 16073, 19887),
 
 		-- #if AFTER WRATH

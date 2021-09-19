@@ -97,6 +97,7 @@ _.Zones =
 								{ 33.0, 66.3, THE_MAW },
 								{ 41.6, 46.7, THE_MAW },	-- first place i found it, not sure if someone else had dragged it there.  but it appears to have multiple spawnpoints
 								{ 47.2, 79.6, THE_MAW },
+								{ 47.3, 43.6, THE_MAW },
 								{ 62.2, 64.2, THE_MAW },
 							},
 							["g"] = {

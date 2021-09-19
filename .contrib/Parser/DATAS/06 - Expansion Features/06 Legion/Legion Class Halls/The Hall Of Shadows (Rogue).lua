@@ -1089,6 +1089,8 @@ _.HiddenQuestTriggers = {
 	q(45447),	-- Rogue Order Hall - give a Noggenfogger coin to Marin Noggenfogger
 	q(46790),	-- Rogue Order Hall - triggered when completing A Hero's Weapon (artifact appearances after finishing class campaigh)
 	q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
+	q(44871),	-- 7.1 World - 850 - Special - Moroes 1
+	q(44872),	-- 7.1 World - 850 - Special - Moroes 2
 };
 
 -- These quests never made it in.

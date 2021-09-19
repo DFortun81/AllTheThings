@@ -44,14 +44,6 @@ _.Zones =
 						}),
 					},
 				}),
-				q(3861, {	-- CLUCK!
-					["provider"] = { "n", 620 },	-- Chicken
-					["description"] = "Spam |cFFFFD700/chicken|r at a Chicken for it to grant you this quest. The vendor, William Saldean sells the Special Chicken Feed you need.",
-					["repeatable"] = true,
-					["g"] = {
-						i(11110) -- Chicken Egg
-					},
-				}),
 				q(31569, {	-- Got one!
 					["provider"] = { "n", 63077 },	-- Lehna
 					["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },

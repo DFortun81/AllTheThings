@@ -77,3 +77,7 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(48876),	-- jumping on the rubble in front of "Krokul Emergency Cache" (object id: 276490)
+	q(48877),	-- I'm guessing for clearing the rubble in front of "Legion Power Chest" (object id: 276489)
+};

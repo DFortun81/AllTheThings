@@ -1248,6 +1248,12 @@ _.Zones =
 				}),
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ also probably cant do after a certain level
+					q(37623, {	-- Assault on Stonefury Cliffs
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(37622, {	-- Assault on the Iron Siegeworks
+						["races"] = HORDE_ONLY,
+					}),
 					q(34505, {	-- Forbidden Glacier
 						["coord"] = { 25.5, 55.0, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,

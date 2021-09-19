@@ -767,4 +767,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 });
 _.HiddenQuestTriggers = {
 	q(45490),	-- Lytheron
+	q(44881),	-- Sharptalon Matriarch Tracking Q From the WQ Sharptalon
 };

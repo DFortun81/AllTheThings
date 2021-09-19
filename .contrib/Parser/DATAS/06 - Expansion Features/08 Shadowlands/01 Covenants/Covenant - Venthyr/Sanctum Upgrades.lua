@@ -462,6 +462,7 @@ _.ExpansionFeatures =
 											i(179605),	-- Elderwood Barrier
 											i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
 											i(179548),	-- Elderwood Gavel
+											i(181598),	-- Decree: Lady Moonberry's Favor
 											i(177232, {	-- Bewitched Wardrobe
 												crit(3, {	-- Bewitched Wardrobe
 													["achievementID"] = 14678,	-- Court Favors
@@ -2655,6 +2656,8 @@ _.HiddenQuestTriggers = {
 
 			--q(61930),	-- Unknown
 			q(61936),	-- Triggered after Restock: Surveillance
+			--q(61825),	-- During Ember Court after finishin Glimpse of the Wilds Niya's minigame
+			q(59691),	-- "The Party Herald"
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
