@@ -12,7 +12,7 @@
 
 - Modified the Refresh function to only refresh visible windows (Shift+Click on any ATT window or minimap button).
 - Moved WoD, Legion and BfA Expansion Features under their respective headers in Expansion Features.
-- More strings in the addon should be localized in your game client.
+- More strings in the addon should be localized in your game client's language.
 - Quite a few old quests added in various expansions.
 - Updated Zone and Promo icons.
 - Various fixes.
