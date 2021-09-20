@@ -152,7 +152,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["provider"] = { "i", 32233 },	-- Wolpertinger's Tankard
 			}),
 			ach(1186, {	-- Down With The Dark Iron
-				["u"] = REMOVED_FROM_GAME,
+				["timeline"] = { "added 3.0.1", "removed 8.2.0" },
 			}),
 			ach(4782, {	-- Green Brewfest Stein [Removed]
 				["provider"] = { "i", 37892 },	-- Green Brewfest Stein
@@ -1369,13 +1369,15 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #else
 					["coord"] = { 47.5, 39.8, DUN_MOROGH },
 					-- #endif
-					["timeline"] = { "added 2.2.2" },
+					["timeline"] = { "added 2.2.2", "removed 8.2.0" },
 					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["groups"] = {
-						ach(1186),	-- Down With The Dark Iron
-					},
+					["groups"] = appendGroups(BREWFEST_TOKEN, {
+						ach(1186, {	-- Down With The Dark Iron
+							["timeline"] = { "added 3.0.1", "removed 8.2.0" },
+						}),
+					}),
 				}),
 				q(12192, {	-- This One Time, When I Was Drunk... (H)
 					["provider"] = { "o", 189990 },	-- Dark Iron Mole Machine Wreckage
@@ -1384,13 +1386,15 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #else
 					["coord"] = { 40.7, 17.4, DUROTAR },	-- TODO: Get accurate coordinates for TBC
 					-- #endif
-					["timeline"] = { "added 2.2.2" },
+					["timeline"] = { "added 2.2.2", "removed 8.2.0" },
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = {
-						ach(1186),	-- Down With The Dark Iron
-					},
+					["groups"] = appendGroups(BREWFEST_TOKEN, {
+						ach(1186, {	-- Down With The Dark Iron
+							["timeline"] = { "added 3.0.1", "removed 8.2.0" },
+						}),
+					}),
 				}),
 				q(11442, {	-- Welcome to Brewfest! (A)
 					["qg"] = 24710,	-- Ipfelkofer Ironkeg
