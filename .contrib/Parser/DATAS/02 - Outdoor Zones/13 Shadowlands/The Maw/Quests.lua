@@ -496,10 +496,6 @@ _.Zones =
 					["coord"] = { 42.3, 42.1, 1648 },
 					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
-				q(62539, {	-- Stygian Incinerator (Bonus Objective)
-					["isDaily"] = true,
-					["coord"] = { 37.2, 44.6, THE_MAW },
-				}),
 				q(63043, {	-- Sundered Souls
 					["provider"] = { "n", 175813 },	-- Trapped Soul
 					["isDaily"] = true,
@@ -541,12 +537,6 @@ _.Zones =
 				q(60972, {	-- The Hunt for the Baron
 					["sourceQuests"] = { 59897 },	-- Seeking the Baron
 					["coord"] = { 44.9, 40.9, THE_MAW },
-				}),
-				q(60622, {	-- The Jailer's Share
-				--	["sourceQuests"] = {  },	-- no clue
-					["provider"] = { "n", 162804 },	-- Ve'nari
-					["isWeekly"] = true,
-					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(61079, {	-- The Jailer's Share
 				--	["sourceQuests"] = {  },	-- no clue

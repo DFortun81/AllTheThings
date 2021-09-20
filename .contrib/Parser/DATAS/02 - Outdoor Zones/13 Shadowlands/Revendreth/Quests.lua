@@ -961,13 +961,6 @@ _.Zones =
 						i(177665),	-- Spectral Hankerchief
 					},
 				}),
-				q(62653, {	-- Stop the Inquisition
-					-- ["provider"] = { "n", ### },	--
-					-- ["coord"] = { ##, ##, REVENDRETH },
-					-- ["sourceQuests"] = { },
-					["isWeekly"] = true,
-					["races"] = HORDE_ONLY,
-				}),
 
 				q(63645, {	-- The Dawnkeep Prisoner
 				--	i think this is only for characters who haven't already killed Denathrius, so will have to find a way to check it off for characters who aren't eligible

@@ -94,13 +94,6 @@ _.ExpansionFeatures =
 							i(181556),	-- Tribute of the Court
 						},
 					}),
-					q(60462, {	-- Anima Appeal
-						["provider"] = { "n", 164739 },	-- Devahia
-						--["coord"] = { 48.9, 39.3, REVENDRETH },
-						["g"] = {
-							i(181556),	-- Tribute of the Court
-						},
-					}),
 					q(60460, {	-- Anima Salvage
 						["provider"] = { "n", 164738 },	-- Tenaval
 						["coord"] = { 45.4, 28.5, SINFALL_REACHES },

@@ -1060,10 +1060,8 @@ _.HiddenQuestTriggers = {
 	q(63099 ),	-- Opening 184589, Bag of Potions from Atticus
 	--q(62535),	-- Unknown doing dailies from abom
 
--- Stitched Conjurer Abom Set
-	q(63392),	-- Gloves (182502)
--- Stitched Wraith Abom Set
-	q(63392),	-- Stranglers (182493)
+-- Stitched Abom Set (armor-type agnostic it seems by slot rewarded)
+	q(63392),	-- Gloves (182502) / Stranglers (182493)
 	q(63394),	-- Armguards (182497)
 	q(63395),	-- Breeches (182494)
 	q(63400),	-- Cloak (182498)

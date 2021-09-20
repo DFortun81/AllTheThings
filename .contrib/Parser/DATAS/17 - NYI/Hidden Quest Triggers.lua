@@ -2753,7 +2753,7 @@ _.HiddenQuestTriggers = {
 		q(51852),	-- Triggered after completing "Storming the Manor". Didn't appear to trigger anything specific, so not sure what they're used for
 		q(54318),	-- Triggered immediately after completing "A Drust Cause" invasion in Drustvar as Alliance (first completion on character? WM off specific? it doesn't trigger later in WM)
 
-		
+
 		-- Chests
 		q(51871),	-- Drustvar repeatable random chest
 		q(51875),	-- Drustvar repeatable random chest
@@ -3787,7 +3787,6 @@ _.HiddenQuestTriggers = {
 		q(62405),	-- using Mucosal Pigment (Crypt Couture)
 		q(59266),	-- triggered when i picked up the last eye for "Prying Eyes"
 		q(60166),	-- Triggered after raising portcullis to access Miru Soulblossom in Etheric Vault
-		q(63428),	-- After Necro intro skip (A Hero of Great Renown)
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant
@@ -4016,14 +4015,7 @@ _.HiddenQuestTriggers = {
 		q(59687),	-- using "Dog Bone's Bone"
 		q(59681),	-- using "Anima-Infused Water"
 		q(61455),	-- using "Protective Braziers"
-		q(63001),	-- triggers when choosing to skip the Covenant sanctum intro quests
-		--q(63007),	-- triggers when choosing to skip the Night Fae sanctum intro quests
-		q(63023),	-- triggers when choosing to skip the Covenant sanctum intro quests
-		q(63425),	-- triggers when choosing to skip the Covenant sanctum intro quests
-		q(62426),	-- triggers when choosing to skip the Kyrian sanctum intro quests
-		q(63427),	-- triggers when choosing to skip the Night Fae sanctum intro quests
 		q(63428),	-- triggers when choosing to skip the Necrolord sanctum intro quests
-		q(63429),	-- triggers when choosing to skip the Venthyr sanctum intro quests
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End
@@ -4097,6 +4089,5 @@ _.HiddenQuestTriggers = {
 
 		-- Treasures of Korthia achievement
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
-		q(64044),	-- The Maw repeatable treasure, Stolen Anima Vessel (34.2, 64.6) / (30.6, 58.4)
 	}),
 };
