@@ -7162,9 +7162,9 @@ end)();
 local cache = app.CreateCache("encounterID");
 local function CacheEncounterInfo(t)
 	local t, id = cache.GetCached(t);
-	local name, description, _, _, link = EJ_GetEncounterInfo(id);
+	local name, lore, _, _, link = EJ_GetEncounterInfo(id);
 	t.name = name;
-	t.lore = description;
+	t.lore = lore;
 	t.link = link;
 	t.displayID = select(4, EJ_GetCreatureInfo(1, id));
 end
@@ -7172,9 +7172,9 @@ local function default_name(t)
 	CacheEncounterInfo(t);
 	return cache.GetCachedField(t, "name");
 end
-local function default_description(t)
+local function default_lore(t)
 	CacheEncounterInfo(t);
-	return cache.GetCachedField(t, "description");
+	return cache.GetCachedField(t, "lore");
 end
 local function default_link(t)
 	CacheEncounterInfo(t);
@@ -7206,8 +7206,8 @@ local fields = {
 	["name"] = function(t)
 		return cache.GetCachedField(t, "name", default_name);
 	end,
-	["description"] = function(t)
-		return cache.GetCachedField(t, "description", default_description);
+	["lore"] = function(t)
+		return cache.GetCachedField(t, "lore", default_lore);
 	end,
 	["link"] = function(t)
 		return cache.GetCachedField(t, "link", default_link);
@@ -7522,7 +7522,7 @@ app.CreateFaction = function(id, t)
 end
 app.OnUpdateReputationRequired = function(t)
 	-- The only non-regular update processing this group should have
-	-- is if the User is not in Deubg/Account and should not see it due to the reputation requirement not being met
+	-- is if the User is not in Debug/Account and should not see it due to the reputation requirement not being met
 	if not app.MODE_DEBUG_OR_ACCOUNT and t.minReputation and (select(6, GetFactionInfoByID(t.minReputation[1])) or 0) < t.minReputation[2] then
 		t.visible = false;
 		return true;
@@ -8272,28 +8272,30 @@ end)();
 
 -- Instance Lib
 (function()
-local cache = {};
-local function GetCached(t, field)
-	if not t[t["key"]] then return nil; end
-	local id, _ = t[t["key"]];
-	local idcache = rawget(cache, id);
-	if not idcache then
-		idcache = {};
-		rawset(cache, id, idcache);
-		-- Set necessary fields from the result
-		idcache["name"],
-		idcache["lore"],
-		_,
-		_,
-		_,
-		idcache["icon"],
-		_,
-		idcache["link"]
-			= EJ_GetInstanceInfo(id);
-		-- print("Set New CacheID",id)
-		-- app.PrintTable(idcache);
-	end
-	return rawget(idcache, field);
+local cache = app.CreateCache("instanceID");
+local function CacheInstanceInfo(t)
+	local _t, id = cache.GetCached(t);
+	local name, lore, _, _, _, icon, _, link = EJ_GetInstanceInfo(id);
+	_t.name = name;
+	_t.lore = lore;
+	_t.icon = icon;
+	_t.link = link;
+end
+local function default_name(t)
+	CacheInstanceInfo(t);
+	return cache.GetCachedField(t, "name");
+end
+local function default_lore(t)
+	CacheInstanceInfo(t);
+	return cache.GetCachedField(t, "lore");
+end
+local function default_icon(t)
+	CacheInstanceInfo(t);
+	return cache.GetCachedField(t, "icon");
+end
+local function default_link(t)
+	CacheInstanceInfo(t);
+	return cache.GetCachedField(t, "link");
 end
 local fields = {
 	["key"] = function(t)
@@ -8303,20 +8305,16 @@ local fields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["icon"] = function(t)
-		return GetCached(t, "icon");
-		-- return select(6, EJ_GetInstanceInfo(t.instanceID));
+		return cache.GetCachedField(t, "icon", default_icon);
 	end,
 	["name"] = function(t)
-		return GetCached(t, "name");
-		-- return select(1, EJ_GetInstanceInfo(t.instanceID));
+		return cache.GetCachedField(t, "name", default_name);
 	end,
 	["lore"] = function(t)
-		return GetCached(t, "lore");
-		-- return select(2, EJ_GetInstanceInfo(t.instanceID));
+		return cache.GetCachedField(t, "lore", default_lore);
 	end,
 	["link"] = function(t)
-		return GetCached(t, "link");
-		-- return select(8, EJ_GetInstanceInfo(t.instanceID));
+		return cache.GetCachedField(t, "link", default_link);
 	end,
 	["back"] = function(t)
 		if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
@@ -10705,8 +10703,7 @@ end
 
 -- Race Lib
 (function()
-local key = "raceID";
-local cache = app.CreateCache(key);
+local cache = app.CreateCache("raceID");
 local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 local C_AlliedRaces_GetRaceInfoByID = C_AlliedRaces.GetRaceInfoByID;
 local function default_name(t)
@@ -10749,7 +10746,7 @@ local function default_icon(t)
 end
 local raceFields = {
 	["key"] = function(t)
-		return key;
+		return "raceID";
 	end,
 	["text"] = function(t)
 		return cache.GetCachedField(t, "text", default_text);
@@ -10763,7 +10760,7 @@ local raceFields = {
 };
 app.BaseRace = app.BaseObjectFields(raceFields);
 app.CreateRace = function(id, t)
-	return setmetatable(constructor(id, t, key), app.BaseRace);
+	return setmetatable(constructor(id, t, "raceID"), app.BaseRace);
 end
 end)();
 
@@ -10849,7 +10846,6 @@ end)();
 
 -- Spell Lib
 (function()
-local MaxSpellRankPerSpellName = {};
 local SpellIDToSpellName = {};
 app.GetSpellName = function(spellID)
 	local spellName = rawget(SpellIDToSpellName, spellID);
