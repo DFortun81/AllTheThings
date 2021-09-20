@@ -781,22 +781,14 @@ _.Holidays = { applyholiday(BREWFEST, {
 				}),
 				q(11400, {	-- Brewfest Riding Rams (A)
 					["provider"] = { "i", 33978 },	-- "Honorary Brewer" Hand Stamp (A)
-					-- #if AFTER WRATH
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
-					-- #else
-					["timeline"] = { "added 2.0.1", "removed 3.0.1" },	-- Originally removed 2.4.3, unsure if available in classic
-					-- #endif
 					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(40, 1, 40),
 				}),
 				q(11419, {	-- Brewfest Riding Rams (H)
 					["provider"] = { "i", 34028 },	-- "Honorary Brewer" Hand Stamp (H)
-					-- #if AFTER WRATH
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
-					-- #else
-					["timeline"] = { "added 2.0.1", "removed 3.0.1" },	-- Originally removed 2.4.3, unsure if available in classic
-					-- #endif
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(40, 1, 40),
@@ -872,7 +864,11 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #else
 					["coord"] = { 48.0, 39.5, DUN_MOROGH },
 					-- #endif
+					-- #if ANYCLASSIC
+					["timeline"] = { "created 2.2.2" },	-- Not implemented in Classic, so it seems. :(
+					-- #else
 					["timeline"] = { "added 2.2.2" },
+					-- #endif
 					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
@@ -899,7 +895,11 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #else
 					["coord"] = { 45.0, 17.4, DUROTAR },
 					-- #endif
+					-- #if ANYCLASSIC
+					["timeline"] = { "created 2.2.2" },	-- Not implemented in Classic, so it seems. :(
+					-- #else
 					["timeline"] = { "added 2.2.2" },
+					-- #endif
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
@@ -919,7 +919,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 						}),
 					},
 				}),
-				q(12022, {	-- Chug and Chuck! (A) [TODO: Check Source Quests]
+				q(12022, {	-- Chug and Chuck! (A)
 					["qg"] = 27215,	-- Boxey Boltspinner
 					["sourceQuests"] = {
 						11441,	-- Brewfest! (A)
@@ -997,9 +997,9 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 46.4, 40.3, DUN_MOROGH },
 					-- #endif
 					-- #if BEFORE WRATH
-					["description"] = "This quest was only available during the 2007 Brewfest. We are unsure if it will be returning during TBC Classic.",
+					["description"] = "This quest was only available during the 2007 Brewfest.",
 					-- #endif
-					["timeline"] = { "added 2.0.1", "removed 3.0.1" },
+					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -1008,7 +1008,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["isYearly"] = true,
 					["groups"] = {
 						i(32912, {	-- Yellow Brewfest Stein
-							["timeline"] =  { "added 2.0.1", "removed 3.0.1" },
+							["timeline"] =  { "added 2.0.1", "removed 2.4.3" },
 						}),
 					},
 				}),
@@ -1020,9 +1020,9 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 46.3, 14.8, DUROTAR },
 					-- #endif
 					-- #if BEFORE WRATH
-					["description"] = "This quest was only available during the 2007 Brewfest. We are unsure if it will be returning during TBC Classic.",
+					["description"] = "This quest was only available during the 2007 Brewfest.",
 					-- #endif
-					["timeline"] = { "added 2.0.1", "removed 3.0.1" },
+					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -1031,7 +1031,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["isYearly"] = true,
 					["groups"] = {
 						i(32912, {	-- Yellow Brewfest Stein
-							["timeline"] =  { "added 2.0.1", "removed 3.0.1" },
+							["timeline"] =  { "added 2.0.1", "removed 2.4.3" },
 						}),
 					},
 				}),
@@ -1115,7 +1115,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				}),
 				q(12062, {	-- Insult Coren Direbrew
 					["qg"] = 26719,	-- Brewfest Spy
-					["sourceQuest"] = 11442,	-- Save Brewfest!
+					["sourceQuest"] = 12318,	-- Save Brewfest!
 					["timeline"] = { "added 2.4.3", "removed 3.3.3" },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["isDaily"] = true,
@@ -1166,7 +1166,11 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #else
 					["coord"] = { 48.0, 39.5, DUN_MOROGH },
 					-- #endif
+					-- #if ANYCLASSIC
+					["timeline"] = { "created 2.2.2" },	-- Not implemented in Classic, so it seems. :(
+					-- #else
 					["timeline"] = { "added 2.2.2" },
+					-- #endif
 					["maps"] = { DUN_MOROGH, AZUREMYST_ISLE, THE_EXODAR, ELWYNN_FOREST, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 3.2.0.10314
@@ -1195,7 +1199,11 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #else
 					["coord"] = { 45.0, 17.4, DUROTAR },
 					-- #endif
+					-- #if ANYCLASSIC
+					["timeline"] = { "created 2.2.2" },	-- Not implemented in Classic, so it seems. :(
+					-- #else
 					["timeline"] = { "added 2.2.2" },
+					-- #endif
 					["maps"] = { DUROTAR, EVERSONG_WOODS, MULGORE, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					-- #if AFTER 3.2.0.10314
@@ -1280,7 +1288,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 						}),
 					},
 				}),
-				q(11454, {	-- Seek the Saboteurs [TODO: Check if in the game still!]
+				q(11454, {	-- Seek the Saboteurs
 					["provider"] = { "o", 186881 },	-- Dark Iron Sabotage Plans
 					["coords"] = {
 						{ 44.3, 17.5, DUROTAR },
@@ -1294,7 +1302,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					},
 					["lvl"] = lvlsquish(48, 48, 48),
 				}),
-				q(11486, {	-- The Best of Brews (A) [TODO: Check if in the game still!]
+				q(11486, {	-- The Best of Brews (A)
 					["qg"] = 23872,	-- Coren Direbrew
 					["sourceQuest"] = 11454,	-- Seek the Saboteurs
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
@@ -1307,7 +1315,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 						}),
 					},
 				}),
-				q(11487, {	-- The Best of Brews (H) [TODO: Check if in the game still!]
+				q(11487, {	-- The Best of Brews (H)
 					["qg"] = 23872,	-- Coren Direbrew
 					["sourceQuest"] = 11454,	-- Seek the Saboteurs
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
@@ -1446,7 +1454,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 			},
 		}),
 		n(REWARDS, {
-			i(33016, bubbleDown({ ["timeline"] = { "added 2.0.1", "removed 3.0.1" } }, {	-- Blue Brewfest Stein
+			i(33016, bubbleDown({ ["timeline"] = { "added 2.4.3", "removed 3.0.1" } }, {	-- Blue Brewfest Stein
 				-- #if AFTER TRANSMOG
 				["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
 				-- #endif
@@ -1489,13 +1497,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["lore"] = "This stein was the reward from the 2011 Brewfest onward.",
 				["timeline"] = { "added 4.0.1" },
 			}),
-			i(32912, bubbleDown({	-- Yellow Brewfest Stein
-				-- #if ANYCLASSIC
-				["timeline"] = { "removed 2.4.3" },	-- The Yellow One is not available in Classic. :(
-				-- #else
-				["timeline"] = { "added 2.0.1", "removed 3.0.1" },
-				-- #endif
-			}, {
+			i(32912, bubbleDown({ ["timeline"] = { "added 2.0.1", "removed 2.4.3" } }, {	-- Yellow Brewfest Stein
 				-- #if AFTER TRANSMOG
 				["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
 				-- #endif
@@ -2070,7 +2072,9 @@ _.Holidays = { applyholiday(BREWFEST, {
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	holiday(235442, {	-- Brewfest
-		i(167998),	-- Dark Iron Tankard
+		i(167998, {	-- Dark Iron Tankard
+			["timeline"] = { "created 8.1.5.29701" },
+		}),
 	}),
 });
 
