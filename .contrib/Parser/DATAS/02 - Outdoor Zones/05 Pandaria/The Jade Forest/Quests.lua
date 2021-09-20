@@ -1016,11 +1016,6 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 				}),
-				q(29744, {	-- Pupil of Nature
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "o", 214871 },	-- Shattered Destroyer
-					["coord"] = { 48.5, 20.6, THE_JADE_FOREST },
-				}),
 				q(29882, {	-- Quill of Stingers
 					["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
 					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
@@ -1873,5 +1868,34 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(90331),	-- Face Smasher Warhammer
 			i(80981),	-- Scavenged Rotor Blade
 		}),
+	}),
+	n(QUESTS, {
+		q(30003),	-- A Book By Its Cover
+		q(29766),	-- A Good Start
+		q(29722),	-- A Lesson in Bravery
+		q(29878),	-- Building a Better Hozen Trap
+		q(29724),	-- Burial at Sea
+		q(29856),	-- Cairn of Bone
+		q(29880),	-- Catch and Release!
+		q(29728),	-- Explosive Evidence
+		q(29938),	-- Friends and Foes
+		q(29712),	-- Horde Justice
+		q(29696),	-- My Stars!
+		q(29869),	-- One Hand Clapping
+		q(29837),	-- Sacred Scroll
+		q(29842),	-- Seeking Answers
+		q(29718),	-- Sixteen Fluid Ounces of Prevention
+		q(29744),	-- Some "Pupil of Nature"
+		q(29713),	-- Standard Protocol
+		q(29693),	-- The General's Edge
+		q(29720),	-- The Jade Witch
+		q(30458),	-- The Scouts Return
+		q(29715),	-- The Witch in the Woods
+		q(29895),	-- Trail of the White Pawn
+		q(29714),	-- Wet Work!
+		q(29732),	-- What Goes Down, Must Come Up!
+		q(29858),	-- Wisdom of the Ages
+		q(29729),	-- Without a Trace
+		q(29886),	-- Zen Healing
 	}),
 });

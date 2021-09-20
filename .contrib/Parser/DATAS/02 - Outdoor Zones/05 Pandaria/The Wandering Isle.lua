@@ -106,6 +106,7 @@ _.Zones =
 						["provider"] = { "n", 54786 },	-- Master Shang Xi
 						["sourceQuests"] = { 29775 },	-- The Spirit and Body of Shen-zin Su
 					}),
+					un(REMOVED_FROM_GAME, q(29404)),	-- Much to Learn
 					un(REMOVED_FROM_GAME, q(30039)),	-- Much to Learn
 					un(REMOVED_FROM_GAME, q(30040)),	-- Much to Learn
 					un(REMOVED_FROM_GAME, q(30041)),	-- Much to Learn
@@ -324,3 +325,9 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(29407),	-- The First Sign of Winter
+		q(29405),	-- The Lesson of the Iron Staff
+	}),
+});

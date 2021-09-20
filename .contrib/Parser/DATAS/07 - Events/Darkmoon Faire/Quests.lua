@@ -1196,3 +1196,8 @@ _.WorldEvents =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(29601),	-- The Darkmoon Field Guide
+	}),
+});

@@ -472,7 +472,11 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
+		q(25455),	-- A Test of Wills
 		q(25474),	-- BETA Once More, With Eeling [DEPRICATED]
+		q(25435),	-- Pressure is Mounting
+		q(25506),	-- Sea-Food Chain
+		
 	}),
 	n(-9979, {	-- Cataclysm
 		n(-319, {	-- Weapons

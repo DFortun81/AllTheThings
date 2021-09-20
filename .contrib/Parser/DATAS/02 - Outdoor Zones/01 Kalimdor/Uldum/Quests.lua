@@ -893,9 +893,11 @@ _.Zones =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(28555),	-- Expel the Envoys
+		q(27946),	-- NYI
 		q(28270, {	-- Riding Shotgun
 			["_drop"] = { "g" },	-- We dont wanna any items on NYI Quests
 		}),
+		q(28743),	-- Tailgunner!
 		q(28240),	-- Tapped Out
 		q(28255),	-- Vhat's Next?
 	}),

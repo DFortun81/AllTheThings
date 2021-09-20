@@ -22,15 +22,30 @@ _.NeverImplemented =
 			q(62351),	-- Classic 50
 			q(62352),	-- Classic 50
 			q(38164),	-- Classic 50-59
+			q(24881),	-- Classic Random 5-15 (1st)
+			q(24889),	-- Classic Random 5-15 (Nth)
+			q(24882),	-- LFGDungeons - Classic - Random - 1st
+			q(24890),	-- LFGDungeons - Classic - Random - Nth
 			q(42461),	-- Vanilla 10-19
 		}),
 		tier(TBC_TIER, { -- These Quests might be ingame, very unlikely however.
+			q(24922),	-- LFGDungeons - Burning Crusade - Heroic Random - 1st
+			q(24923),	-- LFGDungeons - Burning Crusade - Heroic Random - Nth
 			q(38154),	-- TBC 60-69
 			q(38165),	-- TBC 60-69
 		}),
 		tier(WOTLK_TIER, { -- These Quests might be ingame, very unlikely however.
+			q(24790),	-- Daily Normal Random (1st)
+			q(24791),	-- Daily Normal Random (Nth)
+			q(24788),	-- LFGDungeons - Lich King - Heroic Random - 1st
+			q(24789),	-- LFGDungeons - Lich King - Heroic Random - Nth
 			q(38155),	-- WLK 70-79
 			q(38166),	-- WLK 70-79
+			q(25306),	-- You're In The Army Gnow!
+			q(25482),	-- LFGDungeons - Holiday Dungeon - Headless Horseman - 1st
+			q(25483),	-- LFGDungeons - Holiday Dungeon - Coren Direbrew - 1st
+			q(25484),	-- LFGDungeons - Holiday Dungeon - Ahune - 1st
+			q(25485),	-- LFGDungeons - Holiday Dungeon - Crown Chemical - 1st
 		}),
 		tier(CATA_TIER, { -- These Quests might be ingame, very unlikely however.
 			q(28011),	-- Adventurers Wanted: Blackfathom Deeps
@@ -77,6 +92,17 @@ _.NeverImplemented =
 			q(28036),	-- Adventurers Wanted: Zul'farrak
 			q(38156),	-- Cata/MoP 80-89
 			q(38167),	-- Cata/MoP 80-89
+			q(28907),	-- Daily Normal Random (1st)
+			q(28908),	-- Daily Normal Random (Nth)
+			q(29185),	-- Daily Tier 2 Heroic (1st)
+			q(29183),	-- Daily Tier 2 Heroic (Nth)
+			q(28905),	-- LFGDungeons - Cataclysm - Heroic Dungeon - 1st
+			q(28906),	-- LFGDungeons - Cataclysm - Heroic Dungeon - Nth
+			q(30110),	-- LFGDungeons - Cataclysm - Raid Finder - 1st
+			q(30111),	-- LFGDungeons - Cataclysm - Raid Finder - Nth
+			q(29339),	-- Short-Supply Reward
+			q(29340),	-- Short-Supply Reward
+			q(29341),	-- Short-Supply Reward
 		}),
 		tier(MOP_TIER, {
 			q(31614),	-- LFGDungeons - Mists - Heroic Random - 1st

@@ -306,6 +306,14 @@ _.Instances = { tier(WOTLK_TIER, {
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
+					q(24842, { -- A Change of Heart
+						["isRepeatable"] = true,
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					}),
+					q(24843, { -- A Change of Heart
+						["isRepeatable"] = true,
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					}),
 					q(24844, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
@@ -319,6 +327,22 @@ _.Instances = { tier(WOTLK_TIER, {
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
 					q(24847, { -- A Change of Heart
+						["isRepeatable"] = true,
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					}),
+					q(25246, { -- A Change of Heart
+						["isRepeatable"] = true,
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					}),
+					q(25247, { -- A Change of Heart
+						["isRepeatable"] = true,
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					}),
+					q(25248, { -- A Change of Heart
+						["isRepeatable"] = true,
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					}),
+					q(25249, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
