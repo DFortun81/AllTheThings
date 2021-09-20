@@ -6095,7 +6095,7 @@ app.BaseObjectFields = function(fields, type)
 		if not _cache then
 			-- special re-direct keys possible for 'any' Type of object
 			if key == "parent" then return t.sourceParent;
-			-- elseif key == "__type" then return type;
+			elseif key == "__type" then return type;
 			end
 		end
 		return _cache and _cache(t);
@@ -6138,10 +6138,88 @@ app.CreateCache = function(idField)
 			print("SetCachedField",id,field,"New",value);
 		end
 		--]]
-		t = cache.GetCached(t);
-		rawset(t, field, value);
+		local _t = cache.GetCached(t);
+		if _t then rawset(_t, field, value);
+		else
+			print("Failed to get cache table using",idField)
+			print(t.__type,field,value)
+			app.PrintTable(t)
+		end
 	end;
 	return cache;
+end
+-- Function which returns both collectible/collected for 't' based on a given 'ref' Thing, which has been previously determined as a
+-- possible collectible which requires the 't' Thing as a cost. 'cache' is the type-cache for the 'ref' Thing
+app.CheckCollectible = function(t, ref, cache)
+	-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
+	if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
+		-- don't include groups which do not meet the current filter requirements
+		and app.RecursiveGroupRequirementsFilter(ref) then
+		-- Used as a cost for something which is collectible itself and not collected
+		-- if LOG then print("check collectible/collected",LOG,ref.key,ref[ref.key]) end
+		if ref.collectible then
+			-- if LOG then print("Cost Required via Collectible") end
+			return true,ref.collected;
+		-- Used as a cost for something which has an incomplete progress
+		elseif ref.total and ref.total > 0 then
+			-- if LOG then print("Cost Required via Total/Prog") end
+			return true,ref.progress == ref.total;
+		-- Used as a cost for something which is collectible as a cost itself and not collected
+		elseif ref.collectibleAsCost then
+			-- if LOG then print("Cost Required via Collectible") end
+			return true,ref.collectedAsCost;
+		-- Something that hasn't been calculated yet which could contain collectibles
+		elseif not ref.total and (ref.sym or ref.g) then
+			-- If this is something with ONLY direct subgroups, just build it out in the source
+			if ref.g and not ref.sym then
+				-- Build the ref groups
+				BuildGroups(ref, ref.g);
+				-- do an Update pass for the ref
+				app.TopLevelUpdateGroup(ref);
+				-- print("Populated collectedAsCost for (raw groups)",t.modItemID)
+				-- app.PrintTable(ref)
+				-- check if this ref has been completed
+				if ref.total and ref.total > 0 then
+					return true,ref.progress == ref.total;
+				end
+			else
+				if not cache then
+					-- print("cannot determine collectibility")
+					-- print("cost",t.key,t.key and t[t.key])
+					-- app.PrintTable(ref)
+					-- print(ref.__type, ref._cache)
+					return false,false;
+				end
+				-- Already have a cached version of this reference with populated content
+				local expItem = cache.GetCachedField(ref, "_populated");
+				if expItem then
+					if expItem.total and expItem.total > 0 then
+						return true,expItem.progress == expItem.total;
+					end
+					return;
+				end
+				-- print("Un-populated collectedAsCost",t.modItemID)
+				-- app.PrintTable(ref)
+				-- create a cached copy of this ref if it is an Item
+				expItem = CreateObject(ref);
+				-- fill the copied Item's symlink if any
+				FillSymLinks(expItem);
+				-- Build the Item's groups if any
+				BuildGroups(expItem, expItem.g);
+				-- do an Update pass for the copied Item
+				app.TopLevelUpdateGroup(expItem);
+				-- print("Populated collectedAsCost (symlink)",t.modItemID)
+				-- app.PrintTable(expItem)
+				-- save it in the Item cache in case something else is able to purchase this reference
+				cache.SetCachedField(ref, "_populated", expItem);
+				-- check if this expItem has been completed
+				if expItem.total and expItem.total > 0 then
+					return true,expItem.progress == expItem.total;
+				end
+			end
+		end
+	end
+	return false;
 end
 
 -- Achievement Lib
@@ -6876,7 +6954,7 @@ local fields = {
 				results = app.SearchForField("currencyIDAsCost", id);
 			end
 			if results and #results > 0 then
-				local costCollectibles, filteredCost = {};
+				local costCollectibles, collectible = {};
 				cache.SetCachedField(t, "costCollectibles", costCollectibles);
 				for _,ref in pairs(results) do
 					-- different currencyID
@@ -6885,65 +6963,31 @@ local fields = {
 						not GetRelativeField(t, "parent", ref) then
 						-- track this item as a cost collectible
 						tinsert(costCollectibles, ref);
-						-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
-						if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
-							-- don't include groups which do not meet the current filter requirements
-							and app.RecursiveGroupRequirementsFilter(ref) then
-							-- Used as a cost for something which is collectible itself
-							if ref.collectible then
-								filteredCost = true;
-							-- Used as a cost for something which has a total
-							elseif ref.total and ref.total > 0 then
-								filteredCost = true;
-							end
-						end
+						collectible = collectible or app.CheckCollectible(t, ref, ref._cache);
 					end
 				end
-				-- Quick escape if current-character only and comes from something saved
-				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
-				return filteredCost;
+				return collectible;
 			else
 				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
 		else
 			-- Quick escape if current-character only and comes from something saved
 			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
+			-- Use the common collectibility check logic
+			local collectible;
 			for _,ref in pairs(t.costCollectibles) do
-				-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
-				if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
-					-- don't include groups which do not meet the current filter requirements
-					and app.RecursiveGroupRequirementsFilter(ref) then
-					-- Used as a cost for something which is collectible itself
-					if ref.collectible then
-						return true;
-					-- Used as a cost for something which has a total
-					elseif ref.total and ref.total > 0 then
-						return true;
-					end
-				end
+				collectible = app.CheckCollectible(t, ref, ref._cache);
+				if collectible then return true; end
 			end
 		end
-		return false;
 	end,
 	["collectedAsCost"] = function(t)
-		if not t.costCollectibles then return; end
-		-- local LOG = t.s;
-		for _,ref in pairs(t.costCollectibles) do
-			-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
-			if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
-				-- don't include groups which do not meet the current filter requirements
-				and app.RecursiveGroupRequirementsFilter(ref) then
-				-- Used as a cost for something which is collectible itself and not collected
-				-- if LOG then print("check collectible/collected",LOG,ref.key,ref[ref.key]) end
-				if ref.collectible and not ref.collected then
-					-- if LOG then print("Cost Required via Collectible") end
-					return false;
-				-- Used as a cost for something which has an incomplete progress
-				elseif ref.total and ref.total > 0 and ref.progress < ref.total then
-					-- if LOG then print("Cost Required via Total/Prog") end
-					return false;
-				end
-			end
+		local collectibles, collectible, collected = t.costCollectibles;
+		if not collectibles then return; end
+		for _,ref in pairs(collectibles) do
+			-- Use the common collectibility check logic
+			collectible, collected = app.CheckCollectible(t, ref, ref._cache);
+			if collectible and not collected then return false; end
 		end
 		return true;
 	end,
@@ -8060,260 +8104,6 @@ app.CreateGearSetSubHeader = function(id, t)
 end
 end)();
 
--- Heirloom Lib
-(function()
-local C_Heirloom_GetHeirloomInfo = C_Heirloom.GetHeirloomInfo;
-local C_Heirloom_GetHeirloomLink = C_Heirloom.GetHeirloomLink;
-local C_Heirloom_PlayerHasHeirloom = C_Heirloom.PlayerHasHeirloom;
-local C_Heirloom_GetHeirloomMaxUpgradeLevel = C_Heirloom.GetHeirloomMaxUpgradeLevel;
-local heirloomIDs = {};
-local fields = {
-	["key"] = function(t)
-		return "heirloomUnlockID";
-	end,
-	["text"] = function(t)
-		return L["HEIRLOOM_TEXT"];
-	end,
-	["icon"] = function(t)
-		return "Interface/ICONS/Achievement_GuildPerk_WorkingOvertime_Rank2";
-	end,
-	["description"] = function(t)
-		return L["HEIRLOOM_TEXT_DESC"];
-	end,
-	["collectible"] = function(t)
-		return app.CollectibleHeirlooms;
-	end,
-	["saved"] = function(t)
-		return C_Heirloom_PlayerHasHeirloom(t.heirloomUnlockID);
-	end,
-	["trackable"] = app.ReturnTrue,
-};
-fields.collected = fields.saved;
-app.BaseHeirloomUnlocked = app.BaseObjectFields(fields);
-
-local armorTextures = {
-	"Interface/ICONS/INV_Icon_HeirloomToken_Armor01",
-	"Interface/ICONS/INV_Icon_HeirloomToken_Armor02",
-	"Interface/ICONS/Inv_leather_draenordungeon_c_01shoulder",
-	"Interface/ICONS/inv_mail_draenorquest90_b_01shoulder"
-};
-local weaponTextures = {
-	"Interface/ICONS/INV_Icon_HeirloomToken_Weapon01",
-	"Interface/ICONS/INV_Icon_HeirloomToken_Weapon02",
-	"Interface/ICONS/inv_weapon_shortblade_112",
-	"Interface/ICONS/inv_weapon_shortblade_111"
-};
-local isWeapon = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
-local fields = {
-	["key"] = function(t)
-		return "heirloomLevelID";
-	end,
-	["level"] = function(t)
-		return 1;
-	end,
-	["text"] = function(t)
-		return "Upgrade Level " .. t.level;
-	end,
-	["icon"] = function(t)
-		return t.isWeapon and weaponTextures[t.level] or armorTextures[t.level];
-	end,
-	["description"] = function(t)
-		return L["HEIRLOOMS_UPGRADES_DESC"];
-	end,
-	["collectible"] = function(t)
-		return app.CollectibleHeirlooms and app.CollectibleHeirloomUpgrades;
-	end,
-	["saved"] = function(t)
-		local itemID = t.heirloomLevelID;
-		if itemID then
-			if t.level <= (ATTAccountWideData.HeirloomRanks[itemID] or 0) then return true; end
-			local level = select(5, C_Heirloom_GetHeirloomInfo(itemID));
-			if level then
-				ATTAccountWideData.HeirloomRanks[itemID] = level;
-				if t.level <= level then return true; end
-			end
-		end
-	end,
-	["trackable"] = app.ReturnTrue,
-	["isWeapon"] = function(t)
-		if t.f and contains(isWeapon, t.f) then
-			rawset(t, "isWeapon", true);
-			return true;
-		end
-		rawset(t, "isWeapon", false);
-		return false;
-	end,
-};
-fields.collected = fields.saved;
-app.BaseHeirloomLevel = app.BaseObjectFields(fields);
-
-local fields = {
-	["key"] = function(t)
-		return "itemID";
-	end,
-	["b"] = function(t)
-		return 2;
-	end,
-	["filterID"] = function(t)
-		return 109;
-	end,
-	["text"] = function(t)
-		return t.link;
-	end,
-	["icon"] = function(t)
-		return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or select(5, GetItemInfoInstant(t.itemID));
-	end,
-	["link"] = function(t)
-		return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID));
-	end,
-	["collectible"] = function(t)
-		if t.factionID then return app.CollectibleReputations; end
-		return t.s and app.CollectibleTransmog;
-	end,
-	["collected"] = function(t)
-		if t.factionID then
-			if t.repeatable then
-				return (app.CurrentCharacter.Factions[t.factionID] and 1)
-					or (ATTAccountWideData.Factions[t.factionID] and 2);
-			else
-				-- This is used for the Grand Commendations unlocking Bonus Reputation
-				if ATTAccountWideData.FactionBonus[t.factionID] then return 1; end
-				if select(15, GetFactionInfoByID(t.factionID)) then
-					ATTAccountWideData.FactionBonus[t.factionID] = 1;
-					return 1;
-				end
-			end
-		end
-		if t.s and ATTAccountWideData.Sources[t.s] then return 1; end
-		if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
-	end,
-	["trackable"] = app.ReturnTrue,
-	["saved"] = function(t)
-		return t.collected == 1;
-	end,
-	["isWeapon"] = function(t)
-		if t.f and contains(isWeapon, t.f) then
-			rawset(t, "isWeapon", true);
-			return true;
-		end
-		rawset(t, "isWeapon", false);
-		return false;
-	end,
-	["modItemID"] = function(t)
-		return t.itemID;
-	end,
-	["g"] = function(t)
-		-- unlocking the heirloom is the only thing contained in the heirloom
-		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
-			rawset(t, "g", { setmetatable({ ["heirloomUnlockID"] = t.itemID, ["u"] = t.u, ["f"] = t.f }, app.BaseHeirloomUnlocked) });
-			return rawget(t, "g");
-		end
-	end,
-};
-app.BaseHeirloom = app.BaseObjectFields(fields);
-app.CreateHeirloom = function(id, t)
-	tinsert(heirloomIDs, id);
-	return setmetatable(constructor(id, t, "itemID"), app.BaseHeirloom);
-end
-
--- Will retrieve all the cached entries by itemID for existing heirlooms and generate their
--- upgrade levels into the respective upgrade tokens
-app.CacheHeirlooms = function()
-	if #heirloomIDs < 1 then return; end
-
-	-- setup the armor tokens which will contain the upgrades for the heirlooms
-	local armorTokens = {
-		app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
-		app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
-		app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
-		app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
-	};
-	local weaponTokens = {
-		app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
-		app.CreateItem(151615),	-- Weathered Heirloom Scabbard
-		app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
-		app.CreateItem(122339),	-- Ancient Heirloom Scabbard
-	};
-
-	-- cache the heirloom upgrade tokens
-	for i,item in ipairs(armorTokens) do
-		-- CacheFields(item);
-		item.g = {};
-	end
-	for i,item in ipairs(weaponTokens) do
-		-- CacheFields(item);
-		item.g = {};
-	end
-
-	-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
-	local heirloom, upgrades, isWeapon;
-	local uniques = {};
-	for _,itemID in ipairs(heirloomIDs) do
-		if not uniques[itemID] then
-			uniques[itemID] = true;
-
-			heirloom = app.SearchForObject("itemID", itemID);
-			if heirloom then
-				upgrades = GetDataSubMember("HeirloomUpgradeLevels", itemID) or C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
-				if upgrades then
-					SetDataSubMember("HeirloomUpgradeLevels", itemID, upgrades);
-					isWeapon = heirloom.isWeapon;
-
-					local heirloomHeader;
-					for i=1,upgrades,1 do
-						-- Create a non-collectible version of the heirloom item itself to hold the upgrade within the token
-						heirloomHeader = CloneData(heirloom);
-						heirloomHeader.collectible = false;
-						-- put the upgrade object into the header heirloom object
-						heirloomHeader.g = { setmetatable({ ["level"] = i, ["heirloomLevelID"] = itemID, ["u"] = heirloom.u, ["f"] = heirloom.f }, app.BaseHeirloomLevel) };
-
-						-- add the header into the appropriate upgrade token
-						if isWeapon then
-							tinsert(weaponTokens[upgrades + 1 - i].g, heirloomHeader);
-						else
-							tinsert(armorTokens[upgrades + 1 - i].g, heirloomHeader);
-						end
-					end
-				end
-			end
-		end
-	end
-
-	-- build groups for each upgrade token
-	-- and copy the set of upgrades into the cached versions of the upgrade tokens so they therefore exist in the main list
-	-- where the sources of the upgrade tokens exist
-	local cachedTokenGroups;
-	for i,item in ipairs(armorTokens) do
-		cachedTokenGroups = app.SearchForField("itemID", item.itemID);
-		for _,token in ipairs(cachedTokenGroups) do
-			-- ensure the tokens do not have a modID attached
-			token.modID = nil;
-			if not token.sym then
-				for _,heirloom in ipairs(item.g) do
-					NestObject(token, heirloom, true);
-				end
-				BuildGroups(token, token.g);
-			end
-		end
-	end
-	for i,item in ipairs(weaponTokens) do
-		cachedTokenGroups = app.SearchForField("itemID", item.itemID);
-		for _,token in ipairs(cachedTokenGroups) do
-			-- ensure the tokens do not have a modID attached
-			token.modID = nil;
-			if not token.sym then
-				for _,heirloom in ipairs(item.g) do
-					NestObject(token, heirloom, true);
-				end
-				BuildGroups(token, token.g);
-			end
-		end
-	end
-
-	wipe(heirloomIDs);
-end
-end)();
-
 -- Holiday Lib
 (function()
 local function GetHolidayCache()
@@ -8636,6 +8426,9 @@ local itemFields = {
 	["key"] = function(t)
 		return "itemID";
 	end,
+	["_cache"] = function(t)
+		return cache;
+	end,
 	["text"] = function(t)
 		return t.link;
 	end,
@@ -8709,7 +8502,8 @@ local itemFields = {
 				results = app.SearchForField("itemIDAsCost", id);
 			end
 			if results and #results > 0 then
-				local costCollectibles, filteredCost = {};
+				-- setup the costCollectibles initially
+				local costCollectibles, collectible = {};
 				cache.SetCachedField(t, "costCollectibles", costCollectibles);
 				for _,ref in pairs(results) do
 					-- different itemID, OR same itemID with different modID is allowed
@@ -8718,45 +8512,23 @@ local itemFields = {
 						not GetRelativeField(t, "parent", ref) then
 						-- track this item as a cost collectible
 						tinsert(costCollectibles, ref);
-						-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
-						if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
-							-- don't include groups which do not meet the current filter requirements
-							and app.RecursiveGroupRequirementsFilter(ref) then
-							-- Used as a cost for something which is collectible itself
-							if ref.collectible then
-								filteredCost = true;
-							-- Used as a cost for something which has a total
-							elseif ref.total and ref.total > 0 then
-								filteredCost = true;
-							end
-						end
+						collectible = collectible or app.CheckCollectible(t, ref, ref._cache);
 					end
 				end
-				-- Not true if current-character only and comes from something saved
-				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
-				return filteredCost;
+				return collectible;
 			else
 				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
 			end
 		else
 			-- Quick escape if current-character only and comes from something saved
 			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
+			-- Use the common collectibility check logic
+			local collectible;
 			for _,ref in pairs(t.costCollectibles) do
-				-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
-				if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
-					-- don't include groups which do not meet the current filter requirements
-					and app.RecursiveGroupRequirementsFilter(ref) then
-					-- Used as a cost for something which is collectible itself
-					if ref.collectible then
-						return true;
-					-- Used as a cost for something which has a total
-					elseif ref.total and ref.total > 0 then
-						return true;
-					end
-				end
+				collectible = app.CheckCollectible(t, ref, ref._cache);
+				if collectible then return true; end
 			end
 		end
-		return false;
 	end,
 	["costsCount"] = function(t)
 		if t.costCollectibles then return #t.costCollectibles; end
@@ -8774,64 +8546,12 @@ local itemFields = {
 		return app.CollectibleAsQuest(t);
 	end,
 	["collectedAsCost"] = function(t)
-		if not t.costCollectibles then return; end
-		-- local LOG = t.s;
-		for _,ref in pairs(t.costCollectibles) do
-			-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
-			if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
-				-- don't include groups which do not meet the current filter requirements
-				and app.RecursiveGroupRequirementsFilter(ref) then
-				-- Used as a cost for something which is collectible itself and not collected
-				-- if LOG then print("check collectible/collected",LOG,ref.key,ref[ref.key]) end
-				if ref.collectible and not ref.collected then
-					-- if LOG then print("Cost Required via Collectible") end
-					return false;
-				-- Used as a cost for something which has an incomplete progress
-				elseif ref.total and ref.total > 0 and ref.progress < ref.total then
-					-- if LOG then print("Cost Required via Total/Prog") end
-					return false;
-				-- Something that hasn't been calculated yet which could contain collectibles
-				elseif not ref.total and (ref.sym or ref.g) then
-					-- If this is something with ONLY direct subgroups, just build it out in the source
-					if ref.g and not ref.sym then
-						-- Build the ref groups
-						BuildGroups(ref, ref.g);
-						-- do an Update pass for the ref
-						app.TopLevelUpdateGroup(ref);
-						-- print("Populated collectedAsCost for (raw groups)",t.modItemID)
-						-- app.PrintTable(ref)
-						-- check if this ref has been completed
-						if ref.total and ref.total > 0 and ref.progress < ref.total then
-							return false;
-						end
-					else
-						-- Already have a cached version of this reference with populated content
-						local expItem = cache.GetCachedField(ref, "_populated");
-						if expItem and expItem.total and expItem.total > 0 and expItem.progress < expItem.total then
-							return false;
-						end
-						-- print("Un-populated collectedAsCost",t.modItemID)
-						-- app.PrintTable(ref)
-						if expItem then break; end
-						-- create a cached copy of this ref if it is an Item
-						expItem = CreateObject(ref);
-						-- fill the copied Item's symlink if any
-						FillSymLinks(expItem);
-						-- Build the Item's groups if any
-						BuildGroups(expItem, expItem.g);
-						-- do an Update pass for the copied Item
-						app.TopLevelUpdateGroup(expItem);
-						-- print("Populated collectedAsCost (symlink)",t.modItemID)
-						-- app.PrintTable(expItem)
-						-- save it in the Item cache in case something else is able to purchase this reference
-						cache.SetCachedField(ref, "_populated", expItem);
-						-- check if this expItem has been completed
-						if expItem.total and expItem.total > 0 and expItem.progress < expItem.total then
-							return false;
-						end
-					end
-				end
-			end
+		local collectibles, collectible, collected = t.costCollectibles;
+		if not collectibles then return; end
+		for _,ref in pairs(collectibles) do
+			-- Use the common collectibility check logic
+			collectible, collected = app.CheckCollectible(t, ref, ref._cache);
+			if collectible and not collected then return false; end
 		end
 		return true;
 	end,
@@ -8992,6 +8712,243 @@ fields.lvl = function(t) return 60; end;
 app.BaseConduit = app.BaseObjectFields(fields);
 app.CreateConduit = function(id, t)
 	return setmetatable(constructor(id, t, "conduitID"), app.BaseConduit);
+end
+end)();
+
+
+-- Heirloom Lib
+(function()
+local C_Heirloom_GetHeirloomInfo = C_Heirloom.GetHeirloomInfo;
+local C_Heirloom_GetHeirloomLink = C_Heirloom.GetHeirloomLink;
+local C_Heirloom_PlayerHasHeirloom = C_Heirloom.PlayerHasHeirloom;
+local C_Heirloom_GetHeirloomMaxUpgradeLevel = C_Heirloom.GetHeirloomMaxUpgradeLevel;
+local heirloomIDs = {};
+local fields = {
+	["key"] = function(t)
+		return "heirloomUnlockID";
+	end,
+	["text"] = function(t)
+		return L["HEIRLOOM_TEXT"];
+	end,
+	["icon"] = function(t)
+		return "Interface/ICONS/Achievement_GuildPerk_WorkingOvertime_Rank2";
+	end,
+	["description"] = function(t)
+		return L["HEIRLOOM_TEXT_DESC"];
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleHeirlooms;
+	end,
+	["saved"] = function(t)
+		return C_Heirloom_PlayerHasHeirloom(t.heirloomUnlockID);
+	end,
+	["trackable"] = app.ReturnTrue,
+};
+fields.collected = fields.saved;
+app.BaseHeirloomUnlocked = app.BaseObjectFields(fields);
+
+local armorTextures = {
+	"Interface/ICONS/INV_Icon_HeirloomToken_Armor01",
+	"Interface/ICONS/INV_Icon_HeirloomToken_Armor02",
+	"Interface/ICONS/Inv_leather_draenordungeon_c_01shoulder",
+	"Interface/ICONS/inv_mail_draenorquest90_b_01shoulder"
+};
+local weaponTextures = {
+	"Interface/ICONS/INV_Icon_HeirloomToken_Weapon01",
+	"Interface/ICONS/INV_Icon_HeirloomToken_Weapon02",
+	"Interface/ICONS/inv_weapon_shortblade_112",
+	"Interface/ICONS/inv_weapon_shortblade_111"
+};
+local isWeapon = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
+local fields = {
+	["key"] = function(t)
+		return "heirloomLevelID";
+	end,
+	["level"] = function(t)
+		return 1;
+	end,
+	["text"] = function(t)
+		return "Upgrade Level " .. t.level;
+	end,
+	["icon"] = function(t)
+		return t.isWeapon and weaponTextures[t.level] or armorTextures[t.level];
+	end,
+	["description"] = function(t)
+		return L["HEIRLOOMS_UPGRADES_DESC"];
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleHeirlooms and app.CollectibleHeirloomUpgrades;
+	end,
+	["saved"] = function(t)
+		local itemID = t.heirloomLevelID;
+		if itemID then
+			if t.level <= (ATTAccountWideData.HeirloomRanks[itemID] or 0) then return true; end
+			local level = select(5, C_Heirloom_GetHeirloomInfo(itemID));
+			if level then
+				ATTAccountWideData.HeirloomRanks[itemID] = level;
+				if t.level <= level then return true; end
+			end
+		end
+	end,
+	["trackable"] = app.ReturnTrue,
+	["isWeapon"] = function(t)
+		if t.f and contains(isWeapon, t.f) then
+			rawset(t, "isWeapon", true);
+			return true;
+		end
+		rawset(t, "isWeapon", false);
+		return false;
+	end,
+};
+fields.collected = fields.saved;
+app.BaseHeirloomLevel = app.BaseObjectFields(fields);
+
+-- copy base Item fields
+local fields = RawCloneData(itemFields);
+fields.b = function(t) return 2; end
+fields.filterID = function(t) return 109; end
+fields.icon = function(t) return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or select(5, GetItemInfoInstant(t.itemID)); end
+fields.link = function(t) return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID)); end
+fields.collectibleAsCost = app.ReturnFalse;
+fields.collectible = function(t)
+		if t.factionID then return app.CollectibleReputations; end
+		return t.s and app.CollectibleTransmog;
+	end
+fields.collected = function(t)
+		if t.factionID then
+			if t.repeatable then
+				return (app.CurrentCharacter.Factions[t.factionID] and 1)
+					or (ATTAccountWideData.Factions[t.factionID] and 2);
+			else
+				-- This is used for the Grand Commendations unlocking Bonus Reputation
+				if ATTAccountWideData.FactionBonus[t.factionID] then return 1; end
+				if select(15, GetFactionInfoByID(t.factionID)) then
+					ATTAccountWideData.FactionBonus[t.factionID] = 1;
+					return 1;
+				end
+			end
+		end
+		if t.s and ATTAccountWideData.Sources[t.s] then return 1; end
+		if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
+	end
+fields.saved = function(t)
+		return t.collected == 1;
+	end
+fields.isWeapon = function(t)
+		if t.f and contains(isWeapon, t.f) then
+			rawset(t, "isWeapon", true);
+			return true;
+		end
+		rawset(t, "isWeapon", false);
+		return false;
+	end
+fields.g = function(t)
+		-- unlocking the heirloom is the only thing contained in the heirloom
+		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
+			rawset(t, "g", { setmetatable({ ["heirloomUnlockID"] = t.itemID, ["u"] = t.u, ["f"] = t.f }, app.BaseHeirloomUnlocked) });
+			return rawget(t, "g");
+		end
+	end
+
+app.BaseHeirloom = app.BaseObjectFields(fields, "BaseHeirloom");
+app.CreateHeirloom = function(id, t)
+	tinsert(heirloomIDs, id);
+	return setmetatable(constructor(id, t, "itemID"), app.BaseHeirloom);
+end
+
+-- Will retrieve all the cached entries by itemID for existing heirlooms and generate their
+-- upgrade levels into the respective upgrade tokens
+app.CacheHeirlooms = function()
+	if #heirloomIDs < 1 then return; end
+
+	-- setup the armor tokens which will contain the upgrades for the heirlooms
+	local armorTokens = {
+		app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
+		app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
+		app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
+		app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
+	};
+	local weaponTokens = {
+		app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
+		app.CreateItem(151615),	-- Weathered Heirloom Scabbard
+		app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
+		app.CreateItem(122339),	-- Ancient Heirloom Scabbard
+	};
+
+	-- cache the heirloom upgrade tokens
+	for i,item in ipairs(armorTokens) do
+		item.g = {};
+	end
+	for i,item in ipairs(weaponTokens) do
+		item.g = {};
+	end
+
+	-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
+	local heirloom, upgrades, isWeapon;
+	local uniques = {};
+	for _,itemID in ipairs(heirloomIDs) do
+		if not uniques[itemID] then
+			uniques[itemID] = true;
+
+			heirloom = app.SearchForObject("itemID", itemID);
+			if heirloom then
+				upgrades = GetDataSubMember("HeirloomUpgradeLevels", itemID) or C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
+				if upgrades then
+					SetDataSubMember("HeirloomUpgradeLevels", itemID, upgrades);
+					isWeapon = heirloom.isWeapon;
+
+					local heirloomHeader;
+					for i=1,upgrades,1 do
+						-- Create a non-collectible version of the heirloom item itself to hold the upgrade within the token
+						heirloomHeader = CloneData(heirloom);
+						heirloomHeader.collectible = false;
+						-- put the upgrade object into the header heirloom object
+						heirloomHeader.g = { setmetatable({ ["level"] = i, ["heirloomLevelID"] = itemID, ["u"] = heirloom.u, ["f"] = heirloom.f }, app.BaseHeirloomLevel) };
+
+						-- add the header into the appropriate upgrade token
+						if isWeapon then
+							tinsert(weaponTokens[upgrades + 1 - i].g, heirloomHeader);
+						else
+							tinsert(armorTokens[upgrades + 1 - i].g, heirloomHeader);
+						end
+					end
+				end
+			end
+		end
+	end
+
+	-- build groups for each upgrade token
+	-- and copy the set of upgrades into the cached versions of the upgrade tokens so they therefore exist in the main list
+	-- where the sources of the upgrade tokens exist
+	local cachedTokenGroups;
+	for i,item in ipairs(armorTokens) do
+		cachedTokenGroups = app.SearchForField("itemID", item.itemID);
+		for _,token in ipairs(cachedTokenGroups) do
+			-- ensure the tokens do not have a modID attached
+			token.modID = nil;
+			if not token.sym then
+				for _,heirloom in ipairs(item.g) do
+					NestObject(token, heirloom, true);
+				end
+				BuildGroups(token, token.g);
+			end
+		end
+	end
+	for i,item in ipairs(weaponTokens) do
+		cachedTokenGroups = app.SearchForField("itemID", item.itemID);
+		for _,token in ipairs(cachedTokenGroups) do
+			-- ensure the tokens do not have a modID attached
+			token.modID = nil;
+			if not token.sym then
+				for _,heirloom in ipairs(item.g) do
+					NestObject(token, heirloom, true);
+				end
+				BuildGroups(token, token.g);
+			end
+		end
+	end
+
+	wipe(heirloomIDs);
 end
 end)();
 
