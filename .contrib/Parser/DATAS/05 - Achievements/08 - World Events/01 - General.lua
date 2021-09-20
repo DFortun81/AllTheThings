@@ -40,12 +40,7 @@ _.Achievements =
 				crit(12),				-- I Pitied The Fool
 			})),
 			un(CHILDRENS_WEEK, ach(1793, {		-- For the Children
-				title(104, {			-- Matron
-					["description"] = "Must login with a female character.",
-				}),
-				title(105, {			-- Patron
-					["description"] = "Must login with a male character.",
-				}),
+				title_gendered(105, 104),	-- Patron / Matron
 				crit(1),				-- Home Alone
 				crit(2),				-- Bad Example
 				crit(3),				-- Daily Chores

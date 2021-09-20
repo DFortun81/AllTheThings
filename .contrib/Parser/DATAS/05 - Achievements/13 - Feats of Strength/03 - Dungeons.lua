@@ -157,12 +157,7 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, title(298)),	-- the Violet Guardian
 			})),
 			un(REMOVED_FROM_GAME, ach(9627, {		-- Challenge Master: Upper Blackrock Spire
-				un(REMOVED_FROM_GAME, title(296, {	-- , Lord of Blackrock
-					["description"] = "Must earn with a male character.",
-				})),
-				un(REMOVED_FROM_GAME, title(297, {	-- , Lady of Blackrock
-					["description"] = "Must earn with a female character.",
-				})),
+				un(REMOVED_FROM_GAME, title_gendered(296, 297)),	-- Lord of Blackrock / Lady of Blackrock
 			})),
 			un(REMOVED_FROM_GAME, ach(13789)),		-- Hertz Locker
 			un(REMOVED_FROM_GAME, ach(8903, {		-- Mistwalker

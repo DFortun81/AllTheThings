@@ -85,8 +85,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
 			ach(1793, {	-- For the Children
-				title(104),	-- Matron [Female Characters]
-				title(105),	-- Patron [Male Characters]
+				title_gendered(105, 104),	-- Patron / Matron
 				ach(1792),	-- Aw, Isn't It Cute?
 				ach(1788, {	-- Bad Example
 					{	-- Dalaran Brownie
