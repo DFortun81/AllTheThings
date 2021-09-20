@@ -4186,14 +4186,30 @@ app.BuildSourceParent = function(group)
 			local parent = thing.sourceParent or thing.parent;
 			if parent then
 				-- print("parent",parent.text,parent.key)
-				-- only show certain types of parents as sources.. typically 'Game World Things'
 				parentKey = parent.key;
 				if parentKey and parent[parentKey] then
-					if ThingKeys[parentKey] then
+					-- only show certain types of parents as sources.. typically 'Game World Things'
+					-- or if the parent is directly tied to an NPC
+					if ThingKeys[parentKey] or parent.npcID or parent.creatureID then
 						if parents then tinsert(parents, parent);
 						else parents = { parent }; end
 					end
 					-- TODO: maybe handle mapID/instanceID in a different way as a fallback for things nested under headers within a zone....?
+				end
+			end
+			-- Things tagged with an npcID should show that NPC as a Source
+			if thing.npcID or thing.creatureID then
+				local parentNPC = app.SearchForObject("npcID", thing.npcID or thing.creatureID) or {["npcID"] = thing.npcID or thing.creatureID};
+				if parents then tinsert(parents, parentNPC);
+				else parents = { parentNPC }; end
+			end
+			-- Things tagged with many npcIDs should show all those NPCs as a Source
+			if thing.crs then
+				if not parents then parents = {}; end
+				local parentNPC;
+				for _,npcID in ipairs(thing.crs) do
+					parentNPC = app.SearchForObject("npcID", npcID) or {["npcID"] = npcID};
+					tinsert(parents, parentNPC);
 				end
 			end
 		end
