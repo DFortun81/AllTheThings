@@ -864,9 +864,7 @@ _.Zones =
 						["sourceQuest"] = 9151,	-- The Sanctum of the Sun
 						["coord"] = { 55.0, 48.8, GHOSTLANDS },
 						["races"] = HORDE_ONLY,
-						-- #if BEFORE BFA
 						["isBreadcrumb"] = true,
-						-- #endif
 						["lvl"] = lvlsquish(15, 1, 15),
 					}),
 					q(9327, {	-- The Forsaken [Blood Elf Only]

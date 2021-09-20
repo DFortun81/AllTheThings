@@ -251,7 +251,7 @@ _.Zones =
 						["groups"] = {
 							objective(1, {	-- Resurrect Sangrias Stillblade
 								["provider"] = { "n", 17768 },	-- Blood Knight Stillblade
-								["cost"] = { { "i", 24184 } },	-- Filled Shimmering Vessel
+								["cost"] = { { "i", 24184, 1 } },	-- Filled Shimmering Vessel
 								["coord"] = { 80.4, 59.2, SILVERMOON_CITY },
 							}),
 							-- #if BEFORE CATA
