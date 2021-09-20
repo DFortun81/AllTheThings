@@ -1942,7 +1942,6 @@ _.HiddenQuestTriggers = {
 		q(44297),	-- Tracking Quest - W2 - Jaina Gone
 		q(44659),	-- Dalaran - I Skipped The Intro Tracking Quest
 		q(48984),	-- Antoran Wastes - triggered when combining the Smashed Portal Generator and other parts to make Vishak's Portal Generator
-		q(49022),	-- Antoran Wastes - triggered when looting Forgotten Legion Supplies. Probably achievement criteria as chests have their own questIDs
 		q(49023),	-- Antoran Wastes - triggered when looting Ancient Legion War Cache. Probably achievement criteria as chests have their own questIDs
 		q(49024),	-- Antoran Wastes - triggered when looting Fel-Bound Chest. Probably achievement criteria as chests have their own questIDs
 		q(46717),	-- got achievement Burning Bridges and looted Qa'pla, Eredun War Order legendary, so one of the two
@@ -2196,10 +2195,8 @@ _.HiddenQuestTriggers = {
 		q(49091),	-- Invasion Point: Val
 		q(49195),	-- Greater Invasion Point: Occularus - weekly completion
 		q(49176),	-- Greater Invasion Point: Occularus - bonus roll used
-		q(49170),	-- Greater Invasion Point: Occularus - Occularus kill credit
 		q(49196),	-- Greater Invasion Point: Pit Lord Vilemus - weekly completion
 		q(49174),	-- Greater Invasion Point: Pit Lord Vilemus - bonus roll used
-		q(49168),	-- Greater Invasion Point: Pit Lord Vilemus - Vilemus kill credit
 		q(49197),	-- Greater Invasion Point: Sotanathor - weekly completion
 		q(49177),	-- Greater Invasion Point: Sotanathor - bonus roll used
 		--q(),	-- Greater Invasion Point: Sotanathor - sotanathor kill credit
@@ -2207,7 +2204,6 @@ _.HiddenQuestTriggers = {
 		q(49172),	-- Greater Invasion Point: Inquisitor Meto - bonus roll used
 		q(49199),	-- Greater Invasion Point: Matron Folnuna - weekly completion
 		q(49173),	-- Greater Invasion Point: Matron Folnuna - folnuna bonus roll
-		q(49167),	-- Greater Invasion Point: Matron Folnuna - folnuna kill credit
 		q(49213),	-- triggered upon completing Aurinor, but not the official quest.
 		q(49215),	-- triggered upon completing Bonich, but not the official quest.
 		q(49211),	-- triggered upon completing Cen'gar, but not the official quest.
@@ -2414,7 +2410,6 @@ _.HiddenQuestTriggers = {
 		q(53800),	-- Battle for Darkshore — triggered after defeating Sira Moonwarden in Darkshore warfront
 		q(52212),	-- Battle for Stormgarde — triggered after defeating Rokhan on Heroic difficulty
 		q(51973),	-- looting chest with resources after Lost Caravan event in Battle for Stormgarde
-		q(53122),	-- A Season for Celebration — unused version of hallow's end quest?  triggered when i turned in the alliance version along with the other horde one
 		q(57244),	-- triggered when turning in #55618, "The Heart Forge"
 		q(55492),	-- not sure if this was when i hit Rank 8 with brawler's guild, when i purchased the ensemble, or when i handed in bag of chipped dice to the bouncer
 		q(55493),	-- Completed after killing Hexos in a random brawl.
@@ -2772,7 +2767,6 @@ _.HiddenQuestTriggers = {
 
 		--	Nazmir
 		-- Chests
-		q(49885),	-- Nazmir repeatable random chest
 		q(50895),	-- Nazmir repeatable random chest
 		q(49904),	-- Nazmir repeatable random chest
 		q(49916),	-- Nazmir repeatable random chest

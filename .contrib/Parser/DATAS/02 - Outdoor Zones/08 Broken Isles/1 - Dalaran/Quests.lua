@@ -365,12 +365,6 @@ _.Zones =
 					},
 					["coord"] = { 28.5, 49.5, LEGION_DALARAN },
 				}),
-				q(48021, {	-- Chromie
-					["providers"] = {
-						{ "n", 90417 },	-- Archmage Khadgar
-						{ "n", 122926 },	-- Image of Chromie
-					},
-				}),
 				q(45414, {	-- Confirming Suspicions
 					["sourceQuests"] = { 45413 },	-- Gathering Information
 					["classes"] = {

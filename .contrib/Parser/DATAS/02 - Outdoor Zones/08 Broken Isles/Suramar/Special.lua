@@ -26,21 +26,6 @@ _.Zones =
 					}),
 				},
 			}),
-			n(-214, {	-- Nightborne Home
-				["g"] = {
-					n(QUESTS, {
-						q(49933, {	-- For the Horde
-							["g"] = {
-								--i(157028),	-- Letter from Lady Sylvanas Windrunner
-								i(157759),	-- Shal'dorei Tabard
-							},
-							["provider"] = { "n", 131326 },	-- First Arcanist Thalyssra
-							["coord"] = { 59.3, 85.5, SURAMAR },
-						}),
-					}),
-				},
-				["races"] = { NIGHTBORNE },
-			}),
 		}),
 	}),
 };

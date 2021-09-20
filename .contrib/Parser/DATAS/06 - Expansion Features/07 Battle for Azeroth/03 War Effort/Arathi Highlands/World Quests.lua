@@ -73,10 +73,6 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(52847, {	-- Doom's Howl (A)
-						["races"] = ALLIANCE_ONLY,
-						["isWeekly"] = true,
-					}),
 					q(54540, {	-- Doomrider Helgrim (A)
 						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
@@ -281,10 +277,6 @@ _.ExpansionFeatures =
 						["lvl"] = { 50 },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-					}),
-					q(52848, {	-- The Lion's Roar (H)
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
 					}),
 					q(54598, {	-- Thundering Goliath (A)
 						["lvl"] = { 50 },

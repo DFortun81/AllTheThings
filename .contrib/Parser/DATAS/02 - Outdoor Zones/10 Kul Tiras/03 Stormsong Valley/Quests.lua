@@ -1589,10 +1589,6 @@ _.Zones =
 						i(155170),	-- Tidespeaker Sandals
 					},
 				}),
-				q(50690, {	-- UNUSED
-					["races"] = ALLIANCE_ONLY,
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(49998, {	-- Voices Below
 					["sourceQuests"] = { 49997 },	-- Storm's Judgment
 					["provider"] = { "n", 130714 },	-- Brother Pike

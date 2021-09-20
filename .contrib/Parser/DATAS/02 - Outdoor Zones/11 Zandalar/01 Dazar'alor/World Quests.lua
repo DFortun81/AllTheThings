@@ -81,13 +81,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale
 					}),
-					q(51035, {	-- Supplies Needed: Deep Sea Satin
-						["provider"] = { "n", 142095 },	-- Henrick Wyther
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-						-- ["coord"] = { 44.01, 32.21, THE_GREAT_SEAL },
-						["isWorldQuest"] = true,
-					}),
 					q(51051, {	-- Supplies Needed: Deep Sea Satin
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,

@@ -7,30 +7,6 @@ _.Zones =
 	m(905, {	-- Argus
 		m(885, {	-- Antoran Wastes
 			n(QUESTS, {
-				q(48075, {	-- A Colorful Key
-					["provider"] = { "n", 125343 },		-- Vorel
-					["requireSkill"] = JEWELCRAFTING,
-					["sourceQuests"] = { 46941 },	-- The Path Forward
-					["g"] = {
-						i(151736),	-- Design: Deadly Deep Chemirine
-						i(151738),	-- Design: Masterful Argulite
-						i(151737),	-- Design: Quick Lightsphene
-						i(151739),	-- Design: Versatile Labradorite
-					},
-				}),
-				q(48076, {	-- A Crowning Achievement
-					["provider"] = { "n", 125343 },		-- Vorel
-					["requireSkill"] = JEWELCRAFTING,
-					["sourceQuests"] = {
-						48075,	-- A Colorful Key
-					},
-					["g"] = {
-						i(151724),	-- Design: Empyrial Cosmic Crown (Rank 1)
-						i(151727),	-- Design: Empyrial Deep Crown (Rank 1)
-						i(151730),	-- Design: Empyrial Elemental Crown (Rank 1)
-						i(151733),	-- Design: Empyrial Titan Crown (Rank 1)
-					},
-				}),
 				q(49007, {	-- Commander on Deck!
 					["description"] = "Collect all four parts from mobs near the Terminus, and combine them to repair the Portal Generator.  This allows you to summon Squadron Commander Vishax.",
 					["provider"] = { "i", 152965 },	-- Vishax's Portal Generator
@@ -65,8 +41,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49031),	-- Out With The Inquisitors
---]]			q(48200),	-- Securing a Foothold
-				q(47473, {	-- Sizing Up The Opposition (Light's Purchase)
+--]]			q(47473, {	-- Sizing Up The Opposition (Light's Purchase)
 					["sourceQuests"] = { 48201 },	-- Reinforce Light's Purchase
 					["provider"] = { "n", 127051 },	-- Illidan Stormrage
 					["coord"] = { 68.8, 25.9, 885 },

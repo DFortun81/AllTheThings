@@ -251,6 +251,7 @@ _.Zones =
 					}),
 					q(48065, {	-- Extraterrestrial Exploration
 						["requireSkill"] = ENGINEERING,
+						["provider"] = { "n", 93520 },	-- Didi the Wrench
 						["sourceQuests"] = { 48069 },	-- The Wrench Calls
 						["g"] = {
 							recipe(247744),	-- Wormhole Generator: Argus

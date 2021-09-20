@@ -434,11 +434,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { ORC },
 				}),
-				q(47523, {	-- Disturbance Detected: Black Temple (EVENT: TIMEWALKING)
-					["provider"] = { "n", 123252 },	-- Vormu
-					["isWeekly"] = true,
-					["description"] = "This quest is only available during BC Timewalking.",
-				}),
 				q(41160, {	-- Earth to Earth
 					["requireSkill"] = BLACKSMITHING,
 					["coord"] = { 64.1, 71.5, SHATTRATH_CITY },

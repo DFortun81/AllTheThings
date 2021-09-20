@@ -283,7 +283,7 @@ _.Zones =
 				}),
 				prof(BLACKSMITHING, {
 				------
-					
+
 					q(48053, {	-- Weigh Anchor
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["races"] = ALLIANCE_ONLY,
@@ -344,11 +344,11 @@ _.Zones =
 					}),
 				}),
 				prof(ENCHANTING, {
-					
-				
-					
-					
-					-- 
+
+
+
+
+					--
 					n(WORLD_QUESTS, {
 						q(41674, {	-- Work Order: Word of Intellect
 							["requireSkill"] = ENCHANTING,
@@ -362,7 +362,7 @@ _.Zones =
 					}),
 				}),
 				prof(ENGINEERING, {
-					
+
 					-- later
 					q(46128, {	-- Time for a Recharge
 						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
@@ -373,34 +373,20 @@ _.Zones =
 					q(46119, {	-- Boon of the Builder
 						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 					}),
-					
+
 					---
-					
+
 					-- 7.3
-					
+
 					q(48056, {	-- A Harsh Mistress
 						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 						["g"] = {
 							recipe(247717),	-- Gravitational Reduction Slippers
 						},
 					}),
-					
-					
-					
-					
-					
-					q(48065, {	-- Extraterrestrial Exploration
-						["sourceQuests"] = { 48069 },	-- The Wrench Calls
-						["provider"] = { "n", 93520 },	-- Didi the Wrench
-						["g"] = {
-							recipe(247744),	-- Wormhole Generator: Argus
-						},
-					}),
-					
-					
-					
-					
-					
+
+
+
 					n(WORLD_QUESTS, {
 						q(41680, {	-- Work Order: Failure Detection Pylon
 							["requireSkill"] = ENGINEERING,

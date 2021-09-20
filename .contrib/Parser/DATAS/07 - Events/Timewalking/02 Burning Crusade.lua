@@ -9,8 +9,10 @@ _.WorldEvents =
 			["maps"] = { SHATTRATH_CITY },
 			["g"] = {
 				q(47523, {	-- Disturbance Detected: Black Temple
+					-- ["coord"] = { { SHATTRATH_CITY } },
 					["provider"] = { "n", 123252 },	-- Vormu
 					["isWeekly"] = true,
+					["maps"] = { SHATTRATH_CITY },
 				}),
 				q(40168, {	-- The Swirling Vial
 					["provider"] = { "i", 129747 },	-- Swirling Timewarped Vial

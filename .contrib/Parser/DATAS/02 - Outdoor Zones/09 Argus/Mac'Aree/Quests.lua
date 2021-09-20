@@ -12,32 +12,10 @@ _.Zones =
 					["provider"] = { "n", 121230 },	-- Alleria Windrunner
 					["coord"] = { 28.3, 47.0, 882 },
 				}),
-				q(48075, {	-- A Colorful Key
-					["sourceQuests"] = { 46941 },	-- The Path Forward
-					["requireSkill"] = JEWELCRAFTING,
-					["provider"] = { "n", 125343 },		-- Vorel
-					["g"] = {
-						i(151736),	-- Design: Deadly Deep Chemirine
-						i(151738),	-- Design: Masterful Argulite
-						i(151737),	-- Design: Quick Lightsphene
-						i(151739),	-- Design: Versatile Labradorite
-					},
-				}),
 				q(47856, {	-- Across the Universe
 					["sourceQuests"] = { 47855 },
 					["provider"] = { "n", 120533 },	-- Prophet Velen
 					["coord"] = { 48.8, 19.5, 882 },
-				}),
-				q(48076, {	-- A Crowning Achievment
-					["sourceQuests"] = { 48075 },	-- A Colorful Key
-					["requireSkill"] = JEWELCRAFTING,
-					["provider"] = { "n", 125343 },		-- Vorel
-					["g"] = {
-						i(151724),	-- Design: Empyrial Cosmic Crown (Rank 1)
-						i(151727),	-- Design: Empyrial Deep Crown (Rank 1)
-						i(151730),	-- Design: Empyrial Elemental Crown (Rank 1)
-						i(151733),	-- Design: Empyrial Titan Crown (Rank 1)
-					},
 				}),
 				q(47691, {	-- A Non-Prophet Organization
 					["sourceQuests"] = { 48344 },	-- We Have a Problem
