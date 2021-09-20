@@ -28,9 +28,9 @@ local BREWFEST_RIDING_RAMS_ONUPDATE = [[function(t)
 			item.u = 2;
 		end
 -- #else
-		t.description = "You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest yet. If the \"Honorary Brewer\" Hand Stamp item can be purchased from the vendor, STOP WHAT YOU ARE DOING AND GO GET THAT HAND STAMP RIGHT NOW.";
+		t.description = "You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest.";
 		for i,item in ipairs(t.g) do
-			item.u = ]] .. BREWFEST .. [[;
+			item.u = 2;
 		end
 -- #endif
 	else
@@ -1864,7 +1864,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 						["cost"] = { { "g", 1000000 } },	-- 100g
 					}),
 					i(33976, {	-- Brewfest Ram
-						["timeline"] = { "added 2.0.1" },
+						["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 						["cost"] = { { "g", 100000 } },	-- 10g
 					}),
 				},
@@ -1987,7 +1987,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 				-- #else
 				["coord"] = { 46.4, 40.3, DUN_MOROGH },
 				-- #endif
-				["timeline"] = { "added 4.0.1" },
 				["maps"] = { DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -1996,7 +1995,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 						["cost"] = { { "g", 1000000 } },	-- 100g
 					}),
 					i(33976, {	-- Brewfest Ram
-						["timeline"] = { "added 2.0.1" },
+						["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 						["cost"] = { { "g", 100000 } },	-- 10g
 					}),
 				},
