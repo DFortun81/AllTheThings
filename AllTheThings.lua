@@ -3102,7 +3102,7 @@ local function FillPurchases(group, depth)
 	-- print("FillPurchases",group.itemID,group.currencyID,depth)
 
 	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles or group.costCollectibles);
-	if collectibles then
+	if collectibles and #collectibles > 0 then
 		-- Nest new copies of the cost collectible objects of this group under itself
 		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
 		NestObject(group, usedToBuy);
