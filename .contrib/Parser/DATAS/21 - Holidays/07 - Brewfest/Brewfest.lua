@@ -30,9 +30,9 @@ local BREWFEST_RIDING_RAMS_ONUPDATE = [[function(t)
 			item.u = 2;
 		end
 -- #else
-		t.description = "You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest.";
+		t.description = "You are unable to purchase the rams from this vendor as you have not completed the 'Brewfest Riding Rams' quest. GO GET IT!";
 		for i,item in ipairs(t.g) do
-			item.u = 2;
+			item.u = ]] .. BREWFEST .. [[;
 		end
 -- #endif
 	else
@@ -782,15 +782,23 @@ _.Holidays = { applyholiday(BREWFEST, {
 					}),
 				}),
 				q(11400, {	-- Brewfest Riding Rams (A)
-					["provider"] = { "i", 33978 },	-- "Honorary Brewer" Hand Stamp (A)
+					["provider"] = { "i", 34028 },	-- "Honorary Brewer" Hand Stamp (A)
+					-- #if AFTER WRATH
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
+					-- #else
+					["timeline"] = { "added 2.0.1", "removed 3.0.1" },	-- Originally removed 2.4.3, actually available in classic!
+					-- #endif
 					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(40, 1, 40),
 				}),
 				q(11419, {	-- Brewfest Riding Rams (H)
-					["provider"] = { "i", 34028 },	-- "Honorary Brewer" Hand Stamp (H)
+					["provider"] = { "i", 33978 },	-- "Honorary Brewer" Hand Stamp (H)
+					-- #if AFTER WRATH
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
+					-- #else
+					["timeline"] = { "added 2.0.1", "removed 3.0.1" },	-- Originally removed 2.4.3, actually available in classic!
+					-- #endif
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(40, 1, 40),
@@ -1602,7 +1610,11 @@ _.Holidays = { applyholiday(BREWFEST, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(34028, {	-- "Honorary Brewer" Hand Stamp (Alliance)
+						-- #if AFTER WRATH
 						["timeline"] = { "added 2.0.1", "removed 2.4.3" },
+						-- #else
+						["timeline"] = { "added 2.0.1", "removed 3.0.1" },	-- Originally removed 2.4.3, actually available in classic!
+						-- #endif
 						["cost"] = BREWFEST_TOKEN_COST(600),
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1749,7 +1761,11 @@ _.Holidays = { applyholiday(BREWFEST, {
 						["races"] = HORDE_ONLY,
 					}),
 					i(33978, {	-- "Honorary Brewer" Hand Stamp (Horde)
+						-- #if AFTER WRATH
 						["timeline"] = { "added 2.0.1", "removed 2.4.3" },
+						-- #else
+						["timeline"] = { "added 2.0.1", "removed 3.0.1" },	-- Originally removed 2.4.3, actually available in classic!
+						-- #endif
 						["cost"] = BREWFEST_TOKEN_COST(600),
 						["races"] = HORDE_ONLY,
 					}),
