@@ -13,13 +13,15 @@ local BREWFEST_TOKEN = {
 	}),
 	-- #endif
 };
+-- #if AFTER 2.4.3
 local BREWFEST_TOKEN_COST = function(cost)
-	-- #if AFTER 2.4.3
 	return { { "i", 37829, cost } };	-- Brewfest Prize Token
-	-- #else
-	return { { "i", 33455, cost } };	-- Brewfest Prize Ticket
-	-- #endif
 end
+-- #else
+local BREWFEST_TOKEN_COST = function(cost)
+	return { { "i", 33455, cost } };	-- Brewfest Prize Ticket
+end
+-- #endif
 local BREWFEST_RIDING_RAMS_ONUPDATE = [[function(t)
 	if not (C_QuestLog.IsQuestFlaggedCompleted(t.sourceQuests[1])) then
 -- #if NOT ANYCLASSIC

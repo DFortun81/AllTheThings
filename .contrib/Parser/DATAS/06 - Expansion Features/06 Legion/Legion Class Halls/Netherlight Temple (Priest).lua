@@ -766,7 +766,6 @@ _.HiddenQuestTriggers = {
 	q(44611),	-- Priest Order Hall - Tracking Quest: Holy Ground 4
 	q(44612),	-- Priest Order Hall - Tracking Quest: Holy Ground 5
 	q(44650),	-- Priest Order Hall - "Relieving the Front Lines" mission
-	q(43385),	-- Tracking Quest: 7.0 Class Hall - Priest - One-Time Quest Mission - Chapter 3 (JAP)
 	q(44059),	-- Legion Attacks
 };
 
