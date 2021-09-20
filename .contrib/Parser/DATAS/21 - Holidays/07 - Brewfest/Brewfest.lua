@@ -1600,11 +1600,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(34028, {	-- "Honorary Brewer" Hand Stamp (Alliance)
-						-- #if AFTER WRATH
 						["timeline"] = { "added 2.0.1", "removed 2.4.3" },
-						-- #else
-						["timeline"] = { "added 2.0.1", "removed 3.0.1" },	-- Originally removed 2.4.3, unsure if available in classic
-						-- #endif
 						["cost"] = BREWFEST_TOKEN_COST(600),
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1751,11 +1747,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 						["races"] = HORDE_ONLY,
 					}),
 					i(33978, {	-- "Honorary Brewer" Hand Stamp (Horde)
-						-- #if AFTER WRATH
 						["timeline"] = { "added 2.0.1", "removed 2.4.3" },
-						-- #else
-						["timeline"] = { "added 2.0.1", "removed 3.0.1" },	-- Originally removed 2.4.3, unsure if available in classic
-						-- #endif
 						["cost"] = BREWFEST_TOKEN_COST(600),
 						["races"] = HORDE_ONLY,
 					}),
