@@ -4,15 +4,19 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		n(-38,  {	-- Profession
-			["maps"] = { LEGION_DALARAN, },
+			["maps"] = {
+				LEGION_DALARAN,
+				AZSUNA,
+				VALSHARAH,
+				HIGHMOUNTAIN,
+				STORMHEIM,
+				SURAMAR,
+			},
 			["g"] = {
 				prof(ALCHEMY, {
 					["maps"] = {
-						AZSUNA,
 						713,	-- Eye of Azshara
-						HIGHMOUNTAIN,
 						731,	-- Neltharion's Lair
-						VALSHARAH,
 						710,	-- Vault of the Wardens
 						711,	-- Vault of the Wardens
 						712,	-- Vault of the Wardens
@@ -251,8 +255,9 @@ _.Zones =
 				}),
 				prof(BLACKSMITHING, {
 					["maps"] = {
-						HIGHMOUNTAIN,
-						AZSUNA,
+						706,	-- Maw of Souls
+						707,	-- Maw of Souls
+						708,	-- Maw of Souls
 					},
 					["g"] = {
 						q(38499, {	-- Strange New Ores
@@ -558,7 +563,11 @@ _.Zones =
 				}),
 				prof(ENCHANTING, {
 					["maps"] = {
-						AZSUNA,
+						733,	-- Darkheart Thicket
+						703,	-- Halls of Valor
+						704,	-- Halls of Valor
+						705,	-- Halls of Valor
+						731,	-- Neltharion's Lair
 					},
 					["g"] = {
 						q(39874, {	-- Some Enchanted Evening
@@ -758,7 +767,13 @@ _.Zones =
 				}),
 				prof(ENGINEERING, {
 					["maps"] = {
-						AZSUNA,
+						703,	-- Halls of Valor
+						704,	-- Halls of Valor
+						705,	-- Halls of Valor
+						732,	-- Assault of Violet Hold (Legion)
+						761,	-- Court of Stars
+						762,	-- Court of Stars
+						763, 	-- Court of Stars
 					},
 					["g"] = {
 						q(40545, {	-- Aww Scrap!
@@ -983,6 +998,849 @@ _.Zones =
 								i(133672),	-- Schematic: Sawed-Off Cranial Cannon
 								i(133673),	-- Schematic: Double-Barreled Cranial Cannon
 								i(133674),	-- Schematic: Ironsight Cranial Cannon
+							},
+						}),
+					},
+				}),
+				prof(JEWELCRAFTING, {
+					["maps"] = {
+						751,	-- Black Rook Hold
+						752,	-- Black Rook Hold
+						753,	-- Black Rook Hold
+						754,	-- Black Rook Hold
+						755,	-- Black Rook Hold
+						756,	-- Black Rook Hold
+						703,	-- Halls of Valor
+						704,	-- Halls of Valor
+						705,	-- Halls of Valor
+						706,	-- Maw of Souls
+						707,	-- Maw of Souls
+						708,	-- Maw of Souls
+					},
+					["g"] = {
+						q(40523,  {	-- Facet-nating Friends
+							["coord"] = { 40.3, 34.7, LEGION_DALARAN },
+							["provider"] = { "n", 93526 },	-- Tiffany Cartier
+							["g"] = {
+								recipe(264546),	-- Legion Jewelcrafting
+							},
+						}),
+						q(40529,  {	-- Truly Outrageous
+							["provider"] = { "n", 93526 },	-- Tiffany Cartier
+							["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+							["sourceQuests"] = { 40523 },	-- Facet-nating Friends
+							["g"] = {
+								recipe(195850),	-- Versatile Skystone
+							},
+						}),
+						q(40530,  {	-- An Eye for Detail
+							["provider"] = { "n", 93526 },	-- Tiffany Cartier
+							["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+							["sourceQuests"] = { 40529 },	-- Truly Outrageous
+						}),
+						q(40531,  {	-- Swift Vengeance
+							["provider"] = { "n", 93526 },	-- Tiffany Cartier
+							["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+							["sourceQuests"] = { 40530 },	-- An Eye for Detail
+						}),
+						q(40532,  {	-- Making the Cut (Deadly Deep Amber)
+							["provider"] = { "n", 93526 },	-- Tiffany Cartier
+							["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+							["sourceQuest"] = 40531,	-- Swift Vengeance
+							["g"] = {
+								recipe(195848),	-- Deadly Deep Amber
+							},
+						}),
+						q(40534,  {	-- Making the Cut (Masterful Queen's Opal)
+							["provider"] = { "n", 93526 },	-- Tiffany Cartier
+							["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+							["sourceQuest"] = 40531,	-- Swift Vengeance
+							["g"] = {
+								recipe(195851),	-- Masterful Queen's Opal
+							},
+						}),
+						q(40533,  {	-- Making the Cut (Quick Azsunite)
+							["provider"] = { "n", 93526 },	-- Tiffany Cartier
+							["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+							["sourceQuest"] = 40531,	-- Swift Vengeance
+							["g"] = {
+								recipe(195849),	-- Quick Azsunite
+							},
+						}),
+						q(40524,  {	-- A Familiar Ring to It
+							["provider"] = { "n", 93527 },	-- Timothy Jones
+							["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+							["sourceQuest"] = 40523,	-- Facet-nating Friends
+						}),
+						q(40525, {	-- Getting the Band Back Together
+							["provider"] = { "n", 100538 },	-- Timothy Jones
+							["coord"] = { 46.6, 41.4, AZSUNA },
+							["sourceQuest"] = 40524,	-- A Familiar Ring to It
+						}),
+						q(42214, {	-- Knocked for a Loop
+							["provider"] = { "n", 100538 },	-- Timothy Jones
+							["coord"] = { 46.6, 41.4, AZSUNA },
+							["sourceQuest"] = 40524,	-- A Familiar Ring to It
+							["requireSkill"] = JEWELCRAFTING,
+						}),
+						q(40528, {	-- Finishing Touches (Azsunite Loop)
+							["provider"] = { "n", 100538 },	-- Timothy Jones
+							["coord"] = { 46.6, 41.4, AZSUNA },
+							["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
+							["sourceQuests"] = {
+								42214,	-- Knocked for a Loop
+								40525,	-- Getting the Band Back Together
+							},
+							["g"] = {
+								i(137794),	-- Design: Azsunite Loop (Rank 1)
+							},
+						}),
+						q(40526, {	-- Finishing Touches (Skystone Loop)
+							["provider"] = { "n", 100538 },	-- Timothy Jones
+							["coord"] = { 46.6, 41.4, AZSUNA },
+							["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
+							["sourceQuests"] = {
+								42214,	-- Knocked for a Loop
+								40525,	-- Getting the Band Back Together
+							},
+							["g"] = {
+								i(137793),	-- Design: Skystone Loop (Rank 1)
+							},
+						}),
+						q(40527, {	-- Finishing Touches (Deep Amber Loop)
+							["provider"] = { "n", 100538 },	-- Timothy Jones
+							["coord"] = { 46.6, 41.4, AZSUNA },
+							["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
+							["sourceQuests"] = {
+								42214,	-- Knocked for a Loop
+								40525,	-- Getting the Band Back Together
+							},
+							["g"] = {
+								i(137792),	-- Design: Deep Amber Loop (Rank 1)
+							},
+						}),
+						q(40535,  {	-- Raising the Drogbar
+							["provider"] = { "n", 93526 },	-- Tiffany Cartier
+							["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+							["sourceQuests"] = {
+								40532,	-- Making the Cut (Deadly Deep Amber)
+								40534,	-- Making the Cut (Masterful Queen's Opal)
+								40533,	-- Making the Cut (Quick Azsunite)
+								40527,	-- Finishing Touches (Deep Amber Loop)
+								40526,	-- Finishing Touches (Skystone Loop)
+								40528,	-- Finishing Touches (Azsunite Loop)
+							},
+						}),
+						q(40536, {	-- Bruls Before Jewels
+							["provider"] = { "n", 100776 },	-- Jabrul <Jewelcrafting Master>
+							["coord"] = { 45.3, 73.3, VALSHARAH },
+							["sourceQuest"] = 40535,	-- Raising the Drogbar
+							["groups"] = {
+								i(132469),	-- Design: Azsunite Pendant
+								i(132468),	-- Design: Deep Amber Pendant
+								i(132467),	-- Design: Skystone Pendant
+							},
+						}),
+						q(40538,  {	-- Lapidary Lessons
+							["provider"] = { "n", 93526 },	-- Tiffany Cartier
+							["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+							["sourceQuests"] = { 40536 },	-- Bruls Before Jewels
+							["g"] = {
+								recipe(195854),	-- Versatile Maelstrom Sapphire
+							},
+						}),
+						q(40539,  {	-- Hidden Intentions
+							["provider"] = { "n", 100939 },	-- Clive Cozen
+							["coord"] = { 38.3, 36.2, LEGION_DALARAN },
+							["sourceQuests"] = { 40536 },	-- Bruls Before Jewels
+							["g"] = {
+								recipe(195881),	-- Jeweled Lockpick
+							},
+						}),
+						q(40540,  {	-- Come at Me, Brul
+							["provider"] = { "n", 93526 },	-- Tiffany Cartier
+							["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+							["sourceQuests"] = { 40538 },	-- Lapidary Lessons
+						}),
+						q(40541, {	-- The Charge Within
+							["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+							["coord"] = { 42.2, 35.0, STORMHEIM },
+							["sourceQuests"] = { 40540 },	-- Come at Me, Brul
+						}),
+						q(40546, {	-- Mysteries of Nature
+							["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+							["coord"] = { 42.2, 35.0, STORMHEIM },
+							["sourceQuests"] = { 40541 },	-- The Charge Within
+							["g"] = {
+								recipe(195883),	-- Chatterstone
+							},
+						}),
+						q(40542, {	-- Eyes of Nashal
+							["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+							["coord"] = { 42.2, 35.0, STORMHEIM },
+							["sourceQuests"] = { 40546 },	-- Mysteries of Nature
+							["g"] = {
+								sp(199417),	-- Design: Deadly Eye of Prophecy
+								recipe(195852),	-- Deadly Eye of Prophecy
+							},
+						}),
+						q(40543, {	-- Eyes of Nashal
+							["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+							["coord"] = { 42.2, 35.0, STORMHEIM },
+							["sourceQuests"] = { 40546 },	-- Mysteries of Nature
+							["g"] = {
+								sp(199418),	-- Design: Quick Dawnlight
+								recipe(195853),	-- Quick Dawnlight
+							},
+						}),
+						q(40544, {	-- Eyes of Nashal
+							["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+							["coord"] = { 42.2, 35.0, STORMHEIM },
+							["sourceQuests"] = { 40546 },	-- Mysteries of Nature
+							["g"] = {
+								sp(199419),	-- Design: Masterful Shadowruby
+								recipe(195855),	-- Masterful Shadowruby
+							},
+						}),
+						q(40556, {	-- Jabrul Needs You
+							["provider"] = { "o", 246250 },	-- Letter From Jabrul
+							["coord"] = { 40.0, 35.3, LEGION_DALARAN },
+							["sourceQuests"] = {
+								40542,	-- Eyes of Nashal
+								40543,	-- Eyes of Nashal
+								40544,	-- Eyes of Nashal
+							},
+						}),
+						q(40547, {	-- To Dalaran, With Love
+							["provider"] = { "n", 100521 },	-- Jabrul
+							["coord"] = { 56.4, 59.6, AZSUNA },
+							["sourceQuests"] = { 40556 },	-- Jabrul Needs You
+						}),
+						q(40558, {	-- Socket to Me
+							["provider"] = { "o", 246154 },	-- Broken Toy Box
+							["coord"] = { 40.0, 35.3, LEGION_DALARAN },
+							["sourceQuests"] = { 40547 },	-- To Dalaran, With Love
+							["g"] = {
+								recipe(195882),	-- JewelCraft
+							},
+						}),
+						q(40559,  {	-- Black Rook Hold: The Raven's Wisdom
+							["provider"] = { "n", 93527 },	-- Timothy Jones
+							["coord"] = { 39.8, 35, LEGION_DALARAN },
+							["sourceQuests"] = { 40558 },	-- Socket to Me
+							["g"] = {
+								i(137800),	-- Dawnlight Band (Rank 1)
+							},
+						}),
+						q(40561,  {	-- Halls of Valor: Jewel of the Heavens
+							["provider"] = { "n", 93527 },	-- Timothy Jones
+							["coord"] = { 39.8, 35, LEGION_DALARAN },
+							["sourceQuests"] = { 40558 },	-- Socket to Me
+							["g"] = {
+								i(137799),	-- Maelstrom Band (Rank 1)
+							},
+						}),
+						q(40560,  {	-- Maw of Souls: Spiriting Away
+							["provider"] = { "n", 93527 },	-- Timothy Jones
+							["coord"] = { 39.8, 35, LEGION_DALARAN },
+							["sourceQuests"] = { 40558 },	-- Socket to Me
+							["g"] = {
+								i(137798),	-- Prophetic Band (Rank 1)
+							},
+						}),
+						q(40562,  {	-- A Personal Touch
+							["provider"] = { "n", 93543 },	-- Sminx Glasseye
+							["coord"] = { 39.8, 35, LEGION_DALARAN },
+							["sourceQuests"] = {
+								40559,	-- Black Rook Hold: The Raven's Wisdom
+								40561,	-- Halls of Valor: Jewel of the Heavens
+								40560,	-- Maw of Souls: Spiriting Away
+							},
+							["g"] = {
+								sp(199991),	-- Design: Class Necklace
+							},
+						}),
+					},
+				}),
+				prof(LEATHERWORKING, {
+					["maps"] = {
+						713,	-- Eye of Azshara
+					},
+					["g"] = {
+						q(39958,  {	-- Skin Deep
+							["provider"] = { "n", 93523 },	-- Namha Moonwater
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["g"] = {
+								recipe(264590),	-- Legion Leatherworking
+							},
+						}),
+						q(40183,  {	-- Over Your Head
+							["sourceQuests"] = { 39958 },	-- Skin Deep
+							["provider"] = { "n", 93523 },	-- Namha Moonwater
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["g"] = {
+								recipe(194699),	-- Warhide Mask
+								i(132123),	-- Pattern: Battlebound Warhelm
+							},
+						}),
+						q(40196,  {	-- Adventuring Anxieties
+							["sourceQuests"] = { 40183 },	-- Over Your Head
+							["provider"] = { "n", 93523 },	-- Namha Moonwater
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+						}),
+						q(40197,  {	-- The Necessary Materials
+							["sourceQuests"] = { 40196 },	-- Adventuring Anxieties
+							["provider"] = { "n", 93523 },	-- Namha Moonwater
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+						}),
+						q(41889,  {	-- Dazed of the Past
+							["sourceQuests"] = { 40197 },	-- The Necessary Materials
+							["provider"] = { "n", 93523 },	-- Namha Moonwater
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["g"] = {
+								i(137952),	-- Recipe: Stonehide Leather Barding
+							},
+						}),
+						q(40241, {	-- Battle Bonds (H)
+							["sourceQuests"] = { 41889 },	-- Dazed of the Past
+							["provider"] = { "n", 93523 },	-- Namha Moonwater
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["races"] = HORDE_ONLY,
+						}),
+						q(40200, {	-- Battle Bonds (A)
+							["sourceQuests"] = { 41889 },	-- Dazed of the Past
+							["provider"] = { "n", 93523 },	-- Namha Moonwater
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(40201,  {	-- Playthings
+							["sourceQuests"] = {
+								40200,	-- Battle Bonds (alliance)
+								40241,	-- Battle Bonds (horde)
+							},
+							["provider"] = { "n", 93523 },	-- Namha Moonwater
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["g"] = {
+								i(137933),	-- Recipe: Leather Pet Bed
+							},
+						}),
+						q(40177,  {	-- Leather Lady
+							["sourceQuests"] = { 40201 },	-- Playthings
+							["provider"] = { "n", 93523 },	-- Namha Moonwater
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+						}),
+						q(40178,  {	-- Vestment Opportunity
+							["sourceQuests"] = { 40177 },	-- Leather Lady
+							["provider"] = { "n", 93522 },	-- Diane Cannings
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["g"] = {
+								recipe(194702),	-- Warhide Jerkin (Rank 1)
+							},
+						}),
+						q(40179,  {	-- Stormheim Savagery
+							["sourceQuests"] = { 40177 },	-- Leather Lady
+							["provider"] = { "n", 93522 },	-- Diane Cannings
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["g"] = {
+								recipe(194696),	-- Warhide Belt (Rank 1)
+								recipe(194698),	-- Warhide Pants (Rank 1)
+							},
+						}),
+						q(40180,  {	-- Mail Men
+							["sourceQuests"] = { 40201 },	-- Playthings
+							["provider"] = { "n", 93523 },	-- Namha Moonwater
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+						}),
+						q(40181,  {	-- Black Rook Bandit
+							["sourceQuests"] = { 40201 },	-- Playthings
+							["provider"] = { "n", 98931 },	-- Thanid Glowergold
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["g"] = {
+								recipe(194736),	-- Battlebound Girdle (Rank 1)
+								recipe(194738),	-- Battlebound Leggings (Rank 1)
+							},
+						}),
+						q(40182,  {	-- Too Good To Pass Up
+							["sourceQuests"] = { 40181 },	-- Black Rook Bandit
+							["provider"] = { "n", 98931 },	-- Thanid Glowergold
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["g"] = {
+								recipe(194742),	-- Battlebound Hauberk (Rank 1)
+							},
+						}),
+						q(40176,  {	-- From Head to Toe
+							["sourceQuests"] = {
+								40201,	-- Too Good To Pass Up
+								40179,	-- Stormheim Savagery
+							},
+							["provider"] = { "n", 93523 },	-- Namha Moonwater
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["g"] = {
+								i(132124),	-- Pattern: Battlebound Treads
+								recipe(194701),	-- Recipe: Warhide Footpads
+							},
+						}),
+						q(40184,  {	-- Tauren Tanning
+							["sourceQuests"] = { 40176 },	-- From Head to Toe
+							["provider"] = { "n", 93522 },	-- Diane Cannings
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+						}),
+						q(40185, {	-- Shoulder the Burden
+							["sourceQuests"] = { 40184 },	-- Tauren Tanning
+							["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+							["coord"] = { 36.8, 78.2, 750 },
+							["g"] = {
+								recipe(194697),	-- Recipe: Warhide Shoulderguard (Rank 1)
+							},
+						}),
+						q(40186, {	-- Drogbar Durability
+							["sourceQuests"] = { 40184 },	-- Tauren Tanning
+							["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+							["coord"] = { 36.8, 78.2, 750 },
+							["g"] = {
+								recipe(194700),	-- Recipe: Warhide Gloves (Rank 1)
+								recipe(194695),	-- Recipe: Warhide Bindings (Rank 1)
+							},
+						}),
+						q(40187,  {	-- Links in the Chain
+							["sourceQuests"] = { 40176 },	-- From Head to Toe
+							["provider"] = { "n", 98931 },	-- Thanid Glowergold
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+						}),
+						q(40188, {	-- Best Served Cold
+							["sourceQuests"] = { 40187 },	-- Links in the Chain
+							["provider"] = { "n", 98964 },	-- Celea
+							["coord"] = { 47.4, 44.2, ASZUNA },
+							["g"] = {
+								recipe(194735),	-- Battlebound Armbands (Rank 1)
+								recipe(194740),	-- Battlebound Grips (Rank 1)
+							},
+						}),
+						q(40189, {	-- Naga Know-How
+							["sourceQuests"] = { 40187 },	-- Links in the Chain
+							["provider"] = { "n", 98964 },	-- Celea
+							["coord"] = { 47.4, 44.2, ASZUNA },
+							["g"] = {
+								i(137902),	-- Recipe: Battlebound Spaulders (Rank 2)
+							},
+						}),
+						q(40190,  {	-- Hardening the Hide
+							["sourceQuests"] = { 40189 },	-- Naga Know-How
+							["provider"] = { "n", 93522 },	-- Diane Cannings
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["isBreadcrumb"] = true,
+						}),
+						q(40191, {	-- Stamped Stories
+							["sourceQuests"] = { 40190 },	-- Hardening the Hide
+							["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+							["coord"] = { 36.8, 78.2, 750 },
+							["g"] = {
+								i(137875),	-- Recipe: Warhide Jerkin (Rank 2)
+							},
+						}),
+						q(40192, {	-- Claw of the Land
+							["sourceQuests"] = { 40191 },	-- Stamped Stories
+							["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+							["coord"] = { 36.8, 78.2, 750 },
+							["g"] = {
+								i(137869),	-- Recipe: Warhide Belt (Rank 2)
+								i(137868),	-- Recipe: Warhide Bindings (Rank 2)
+							},
+						}),
+						q(40193,  {	-- Getting the Kinks Out
+							["sourceQuests"] = { 40192 },	-- Claw of the Land
+							["provider"] = { "n", 98931 },	-- Thanid Glowergold
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["isBreadcrumb"] = true,
+						}),
+						q(40194, {	-- Reclaimed Cargo
+							["sourceQuests"] = { 40193 },	-- Getting the Kinks Out
+							["provider"] = { "n", 98964 },	-- Celea
+							["coord"] = { 47.4, 44.2, ASZUNA },
+							["g"] = {
+								i(137900),	-- Recipe: Battlebound Armbands (Rank 2)
+								i(137901),	-- Recipe: Battlebound Girdle (Rank 2)
+							},
+						}),
+						q(40195, {	-- A Daring Rescue
+							["sourceQuests"] = { 40194 },	-- Reclaimed Cargo
+							["provider"] = { "n", 98964 },	-- Celea
+							["coord"] = { 47.4, 44.2, ASZUNA },
+						}),
+						q(40327, {	-- Testing the Metal
+							["sourceQuests"] = { 40195 },	-- A Daring Rescue
+							["provider"] = { "n", 99689 },	-- Taldranis
+							["coord"] = { 51.6, 58.0, ASZUNA },
+							["g"] = {
+								i(137907),	-- Recipe: Battlebound Hauberk (Rank 2)
+							},
+						}),
+						q(40198,  {	-- Rats!
+							["sourceQuests"] = {
+								40192,	-- Claw of the Land
+								40327,	-- Testing the Metal
+							},
+							["provider"] = { "n", 93522 },	-- Diane Cannings
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["g"] = {
+								i(137874),	-- Recipe: Warhide Footpads (Rank 2)
+								i(137870),	-- Recipe: Warhide Shoulderguard (Rank 2)
+							},
+						}),
+						q(40199,  {	-- Leather Legwork
+							["sourceQuests"] = { 40198 },	-- Rats!
+							["provider"] = { "n", 98931 },	-- Thanid Glowergold
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["g"] = {
+								i(137902),	-- Recipe: Battlebound Spaulders (Rank 2)
+								i(137906),	-- Recipe: Battlebound Treads (Rank 2)
+							},
+						}),
+						q(40202,  {	-- The Final Lessons
+							["sourceQuests"] = { 40199 },	-- Leather Legwork
+							["provider"] = { "n", 93522 },	-- Diane Cannings
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+						}),
+						q(40204, {	-- Evolution of the Past
+							["sourceQuests"] = { 40202 },	-- The Final Lessons
+							["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+							["coord"] = { 36.8, 78.2, 750 },
+							["g"] = {
+								i(137873),	-- Recipe: Warhide Gloves (Rank 2)
+							},
+						}),
+						q(40205, {	-- Respect for the Past
+							["sourceQuests"] = { 40202 },	-- The Final Lessons
+							["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+							["coord"] = { 36.8, 78.2, 750 },
+							["g"] = {
+								i(137871),	-- Recipe: Warhide Pants (Rank 2)
+							},
+						}),
+						q(40203, {	-- Strength of the Past
+							["sourceQuests"] = { 40202 },	-- The Final Lessons
+							["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+							["coord"] = { 36.8, 78.2, 750 },
+							["g"] = {
+								i(137872),	-- Recipe: Warhide Mask (Rank 2)
+							},
+						}),
+						q(40415, {	-- Well Spent Time
+							["sourceQuests"] = {
+								40204,	-- Evolution of the Past
+								40205,	-- Respect for the Past
+								40203,	-- Strength of the Past
+							},
+							["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+							["coord"] = { 36.8, 78.2, 750 },
+						}),
+						q(40206,  {	-- A Debt Paid
+							["sourceQuests"] = { 40199 },	-- Leather Legwork
+							["provider"] = { "n", 98931 },	-- Thanid Glowergold
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+						}),
+						q(40208, {	-- Eye of Azshara: Scales of the Sea
+							["sourceQuests"] = { 40206 },	-- A Debt Paid
+							["provider"] = { "n", 98964 },	-- Celea
+							["coord"] = { 47.4, 44.2, ASZUNA },
+							["g"] = {
+								i(137904),	-- Recipe: Battlebound Warhelm (Rank 2)
+							},
+						}),
+						q(40207, {	-- Scales of the Arcane
+							["sourceQuests"] = { 40206 },	-- A Debt Paid
+							["provider"] = { "n", 98964 },	-- Celea
+							["coord"] = { 47.4, 44.2, ASZUNA },
+							["g"] = {
+								i(137905),	-- Recipe: Battlebound Grips (Rank 2)
+							},
+						}),
+						q(40209, {	-- Scales of the Earth
+							["sourceQuests"] = { 40206 },	-- A Debt Paid
+							["provider"] = { "n", 98964 },	-- Celea
+							["coord"] = { 47.4, 44.2, ASZUNA },
+							["g"] = {
+								i(137903),	-- Recipe: Battlebound Leggings (Rank 2)
+							},
+						}),
+						q(40210, {	-- Time Well Spent
+							["sourceQuests"] = {
+								40207,	-- Scales of the Arcane
+								40208,	-- Eye of Azshara: Scales of the Sea
+								40209,	-- Scales of the Earth
+							},
+							["provider"] = { "n", 98964 },	-- Celea
+							["coord"] = { 47.4, 44.2, ASZUNA },
+						}),
+						q(40211,  {	-- Demon Flesh
+							["sourceQuests"] = {
+								40415,	-- Well Spent Time
+								40210,	-- Time Well Spent
+							},
+							["provider"] = { "n", 93523 },	-- Namha Moonwater
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+						}),
+						q(40212, {	-- Wrong End of the Knife
+							["sourceQuests"] = { 40211 },	-- Demon Flesh
+							["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
+							["coord"] = { 26.6, 71.6, SURAMAR },
+						}),
+						q(40213, {	-- Hounds Abound
+							["sourceQuests"] = { 40212 },	-- Wrong End of the Knife
+							["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
+							["coord"] = { 26.6, 71.6, SURAMAR },
+						}),
+						q(40214, {	-- Fel Tanning
+							["sourceQuests"] = { 40213 },	-- Hounds Abound
+							["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
+							["coord"] = { 26.6, 71.6, SURAMAR },
+							["g"] = {
+								i(140636),	-- Pattern: Dreadleather Bindings (Rank 1)
+								i(140644),	-- Recipe: Gravenscale Armbands (Rank 1)
+							},
+						}),
+						q(40215,  {	-- Mounting Made Easy
+							["sourceQuests"] = { 40214 },	-- Fel Tanning
+							["provider"] = { "n", 93523 },	-- Namha Moonwater
+							["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+							["g"] = {
+								i(141850),	-- Recipe: Elderhorn Riding Harness
+							},
+						}),
+					},
+				}),
+				prof(TAILORING, {
+					["maps"] = {
+						713,	-- Eye of Azshara
+						732,	-- Assault of Violet Hold (Legion)
+						703,	-- Halls of Valor
+						704,	-- Halls of Valor
+						705,	-- Halls of Valor
+					},
+					["g"] = {
+						q(38944, {	-- Sew It Begins
+							["provider"] = { "n", 93542 },	-- Tanithria
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+							["g"] = {
+								recipe(264628),	-- Legion Tailoring
+							},
+						}),
+						q(38945, {	-- This Should Be Simple... Right?
+							["sourceQuests"] = { 38944 },	-- Sew It Begins
+							["provider"] = { "n", 93542 },	-- Tanithria
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+							["g"] = {
+								recipe(185920),	-- Silkweave Epaulets
+								recipe(185919),	-- Silkweave Cinch
+							},
+						}),
+						q(38946, {	-- Consult the Locals
+							["sourceQuests"] = { 38945 },	-- This Should Be Simple... Right?
+							["provider"] = { "n", 93542 },	-- Tanithria
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+						}),
+						q(38947, {	-- Runic Catgut
+							["sourceQuests"] = { 38946 },	-- Consult the Locals
+							["provider"] = { "n", 93967 },	-- Lyndras
+							["coord"] = { 60.0, 34.6, AZSUNA },
+						}),
+						q(38948, {	-- Hard Times
+							["sourceQuests"] = { 38946 },	-- Consult the Locals
+							["provider"] = { "n", 93967 },	-- Lyndras
+							["coord"] = { 60.0, 34.6, AZSUNA },
+						}),
+						q(38949, {	-- So You Think You Can Sew
+							["sourceQuests"] = {
+								38947,	-- Runic Catgut
+								38948,	-- Hard Times
+							},
+							["provider"] = { "n", 93967 },	-- Lyndras
+							["coord"] = { 60.0, 34.6, AZSUNA },
+							["g"] = {
+								sp(186018),	-- Beginner's Silkweaving
+								recipe(185918),	-- Silkweave Bracers Rank 1
+							},
+						}),
+						q(38950, {	-- The Wayward Tailor
+							["sourceQuests"] = { 38949 },	-- So You Think You Can Sew
+							["provider"] = { "n", 93967 },	-- Lyndras
+							["coord"] = { 60.0, 34.6, AZSUNA },
+						}),
+						q(38951, {	-- A Needle Need
+							["sourceQuests"] = { 38950 },	-- The Wayward Tailor
+							["provider"] = { "n", 93967 },	-- Lyndras
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+						}),
+						q(38952, {	-- Meticulous Precision
+							["sourceQuests"] = { 38951 },	-- A Needle Need
+							["provider"] = { "n", 93542 },	-- Tanithria
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+						}),
+						q(38953, {	-- Advanced Needlework
+							["sourceQuests"] = { 38952 },	-- Meticulous Precision
+							["provider"] = { "n", 93967 },	-- Lyndras
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+							["g"] = {
+								sp(186019),	-- Intermediate Silkweaving
+							},
+						}),
+						q(38954, {	-- Where's Lyndras?
+							["sourceQuests"] = { 38953 },	-- Advanced Needlework
+							["provider"] = { "n", 93542 },	-- Tanithria
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+						}),
+						q(38955, {	-- Sew Far, Sew Good
+							["sourceQuests"] = { 38954 },	-- Where's Lyndras?
+							["provider"] = { "n", 93967 },	-- Lyndras
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+							["g"] = {
+								recipe(186388),	-- Silkweave Satchel
+							},
+						}),
+						q(38956, {	-- Where's Lyndras Again?
+							["sourceQuests"] = { 38955 },	-- Sew Far, Sew Good
+							["provider"] = { "n", 93542 },	-- Tanithria
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+						}),
+						q(38957, {	-- Taking Inspiration
+							["sourceQuests"] = { 38956 },	-- Where's Lyndras Again?
+							["provider"] = { "n", 93967 },	-- Lyndras
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+							["g"] = {
+								recipe(185921),	-- Silkweave Pantaloons (Rank 1)
+							},
+						}),
+						q(38958, {	-- The Right Color
+							["sourceQuests"] = { 38957 },	-- Taking Inspiration
+							["provider"] = { "n", 93525 },	-- Ainderu Summerleaf
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+							["g"] = {
+								recipe(185924),	-- Silkweave Slippers (Rank 1)
+							},
+						}),
+						q(38959, {	-- Left Behind
+							["sourceQuests"] = { 38958 },	-- Taking Inspiration
+							["provider"] = { "n", 93967 },	-- Lyndras
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+						}),
+						q(38960, {	-- Lining Them Up
+							["sourceQuests"] = { 38958 },	-- Taking Inspiration
+							["provider"] = { "n", 93967 },	-- Lyndras
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+						}),
+						q(38963, {	-- The Final Lesson?
+							["sourceQuests"] = {
+								38959,	-- Left Behind
+								38960,	-- Lining Them Up
+							},
+							["provider"] = { "n", 93967 },	-- Lyndras
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+							["g"] = {
+								recipe(185922),	-- Silkweave Hood (Rank 1)
+							},
+						}),
+						q(38961, {	-- Eye of Azshara: The Depraved Nightfallen
+							["sourceQuests"] = { 38963 },	-- The Final Lesson?
+							["provider"] = { "n", 93967 },	-- Lyndras
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+							["g"] = {
+								recipe(185923),	-- Silkweave Gloves (Rank 1)
+							},
+						}),
+						q(38964, {	-- Where's Lyndras Now?
+							["sourceQuests"] = { 38961 },	-- Eye of Azshara: The Depraved Nightfallen
+							["provider"] = { "n", 93542 },	-- Tanithria
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+						}),
+						q(39602, {	-- Where's Lyndras: Sewer Sleuthing
+							["sourceQuests"] = { 38964 },	-- Where's Lyndras Now?
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 93542 },	-- Tanithria
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+						}),
+						q(39605, {	-- Where's Lyndras: Downward Spiral
+							["sourceQuests"] = {
+								38964,	-- Where's Lyndras Now?
+								39602,	-- Where's Lyndras: Sewer Sleuthing
+							},
+							["provider"] = { "o", 243899 },	-- Broken Ley Flame Burner
+							["coord"] = { 56.2, 68.4, LEGION_DALARAN }
+						}),
+						q(39667, {	-- Where's Lyndras: Leyflame Larceny
+							["sourceQuests"] = { 39605 },	-- Where's Lyndras: Downward Spiral
+							["provider"] = { "o", 243899 },	-- Broken Ley Flame Burner
+							["coord"] = { 56.2, 68.4, LEGION_DALARAN }
+							
+						}),
+						q(38965, {	-- Assault on Violet Hold: Into the Hold
+							["sourceQuests"] = { 39667 },	-- Where's Lyndras: Leyflame Larceny
+							["provider"] = { "n", 96444 },	-- Violet Hold Guard
+							["coord"] = { 65.2, 67.4, LEGION_DALARAN },
+						}),
+						q(38966, {	-- Secret Silkweaving Methods
+							["sourceQuests"] = { 38965 },	-- Assault on Violet Hod: Into the Hold
+							["provider"] = { "n", 93542 },	-- Tanithria
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+							["g"] = {
+								recipe(185937),	-- Silkweave Pantaloons (Rank 2)
+								recipe(185938),	-- Silkweave Hood (Rank 2)
+								recipe(185939),	-- Silkweave Gloves (Rank 2)
+								recipe(185940),	-- Silkweave Slippers (Rank 2)
+							},
+						}),
+						q(38962, {	-- The Path to Suramar City
+							["sourceQuests"] = { 38966 },	-- Secret Silkweaving Methods
+							["provider"] = { "n", 93542 },	-- Tanithria
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+						}),
+						q(38967, {	-- The Nightborne Connection
+							["sourceQuests"] = { 38962 },	-- The Path to Suramar City
+							["provider"] = { "n", 93542 },	-- Tanithria
+							["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+						}),
+						q(38968, {	-- Proof of Loyalty
+							["sourceQuests"] = { 38967 },	-- The Nightborne Connection
+							["provider"] = { "n", 93969 },	-- Leyweaver Tytallo
+							["coord"] = { 40.4, 69.4, SURAMAR },
+						}),
+						q(38969, {	-- Master of Silkweave
+							["sourceQuests"] = { 38967 },	-- The Nightborne Connection
+							["provider"] = { "n", 93971 },	-- Leyweaver Inondra
+							["coord"] = { 40.4, 69.4, SURAMAR },
+							["g"] = {
+								sp(186514),	-- Silkweave Set
+							},
+						}),
+						q(38970, {	-- The Queen's Grace Loom
+							["sourceQuests"] = { 38967 },	-- The Nightborne Connection
+							["provider"] = { "n", 93969 },	-- Leyweaver Tytallo
+							["coord"] = { 40.4, 69.4, SURAMAR },
+							["g"] = {
+								sp(186028),	-- Introduction to Imbued Silkweave
+							},
+						}),
+						q(38971, {	-- Exotic Textiles
+							["sourceQuests"] = { 38970 },	-- The Queen's Grace Loom
+							["provider"] = { "n", 93978 },	-- Leyweaver Athystro
+							["coord"] = { 26.6, 71.4, SURAMAR },
+							["g"] = {
+								i(127026),	-- Pattern: Imbued Silkweave Gloves (Rank 1)
+							},
+						}),
+						q(38974, {	-- Halls of Valor: The Right Question
+							["sourceQuests"] = { 38971 },	-- Exotic Textiles
+							["provider"] = { "n", 93977 },	-- Leyweaver Tellumi
+							["coord"] = { 65.6, 56.2, STORMHEIM },
+							["g"] = {
+								i(127024),	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
+							},
+						}),
+						q(38975, {	-- Inspire Me!
+							["sourceQuests"] = { 38974 },	-- Halls of Valor: The Right Question
+							["provider"] = { "n", 93976 },	-- Leyweaver Mithrogane
+							["coord"] = { 40.2, 69.6, SURAMAR },
+							["g"] = {
+								i(127028),	-- Pattern: Imbued Silkwave Robes (Rank 1)
 							},
 						}),
 					},

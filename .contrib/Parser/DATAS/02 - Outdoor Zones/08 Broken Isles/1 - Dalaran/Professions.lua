@@ -201,19 +201,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
 			n(-38,  {	-- Profession
-				prof(ALCHEMY, {
-					----
-					n(WORLD_QUESTS, {
-						q(41662, {	-- Work Order: Ancient Rejuvenation Potions
-							["isWorldQuest"] = true,
-							["requireSkill"] = ALCHEMY,
-							["lvl"] = { 45 },
-							["g"] = {
-								i(127920),	-- Recipe: Draught of Raw Magic (Rank 2)
-							},
-						}),
-					}),
-				}),
 				prof(ARCHAEOLOGY, {
 					q(41189, {	-- A New Lead
 						["isWeekly"] = true,
@@ -282,8 +269,7 @@ _.Zones =
 					}),
 				}),
 				prof(BLACKSMITHING, {
-				------
-
+				-- Later
 					q(48053, {	-- Weigh Anchor
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["races"] = ALLIANCE_ONLY,
@@ -299,16 +285,6 @@ _.Zones =
 						["g"] = {
 							i(151709),	-- Recipe: Felslate Anchor
 						},
-					}),
-					n(WORLD_QUESTS, {
-						q(41638, {	-- Work Order: Leystone Gauntlets
-							["isWorldQuest"] = true,
-							["requireSkill"] = BLACKSMITHING,
-							["lvl"] = { 45 },
-							["g"] = {
-								i(137606),	-- Recipe: Leystone Gauntlets (Rank 3)
-							},
-						}),
 					}),
 				}),
 				prof(COOKING, {
@@ -343,26 +319,7 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(ENCHANTING, {
-
-
-
-
-					--
-					n(WORLD_QUESTS, {
-						q(41674, {	-- Work Order: Word of Intellect
-							["requireSkill"] = ENCHANTING,
-							["provider"] = { "n", 32725 },	-- Warmage Silva
-							["lvl"] = { 45 },
-							["isWorldQuest"] = true,
-							["g"] = {
-								i(128606),	-- Formula: Enchant CLoak - Word of Intellect (Rank 3)
-							},
-						}),
-					}),
-				}),
 				prof(ENGINEERING, {
-
 					-- later
 					q(46128, {	-- Time for a Recharge
 						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
@@ -373,30 +330,19 @@ _.Zones =
 					q(46119, {	-- Boon of the Builder
 						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 					}),
-
-					---
-
 					-- 7.3
-
 					q(48056, {	-- A Harsh Mistress
 						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 						["g"] = {
 							recipe(247717),	-- Gravitational Reduction Slippers
 						},
 					}),
-
-
-
-					n(WORLD_QUESTS, {
-						q(41680, {	-- Work Order: Failure Detection Pylon
-							["requireSkill"] = ENGINEERING,
-							["lvl"] = { 45 },
-							["isWorldQuest"] = true,
-							["provider"] = { "n", 32725 },	-- Warmage Silva
-							["g"] = {
-								i(137724),	-- Schematic: Failure Detection Pylon (Rank 3)
-							},
-						}),
+					q(48065, {	-- Extraterrestrial Exploration
+						["sourceQuests"] = { 48069 },	-- The Wrench Calls
+						["provider"] = { "n", 93520 },	-- Didi the Wrench
+						["g"] = {
+							recipe(247744),	-- Wormhole Generator: Argus
+						},
 					}),
 				}),
 				prof(FISHING, {
@@ -707,302 +653,6 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(JEWELCRAFTING, {
-					q(40524,  {	-- A Familiar Ring to It
-						["coord"] = { 40.0, 35.3, LEGION_DALARAN },
-						["provider"] = { "n", 93527 },	-- Timothy Jones
-						["sourceQuest"] = 40523,	-- Facet-nating Friends
-					}),
-					q(40562,  {	-- A Personal Touch
-						["provider"] = { "n", 93543 },	-- Sminx Glasseye
-					}),
-					q(40530,  {	-- An Eye for Detail
-						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-						["provider"] = { "n", 93526 },	-- Tiffany Cartier
-						["sourceQuests"] = { 40529 },	-- Truly Outrageous
-					}),
-					q(40559,  {	-- Black Rook Hold: The Raven's Wisdom
-						["provider"] = { "n", 93527 },	-- Timothy Jones
-						["g"] = {
-							i(137800),	-- Dawnlight Band (Rank 1)
-						},
-					}),
-					q(40540,  {	-- Come at Me, Brul
-						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-						["provider"] = { "n", 93526 },	-- Tiffany Cartier
-					}),
-					q(40523,  {	-- Facet-nating Friends
-						["coord"] = { 40.3, 34.7, LEGION_DALARAN },
-						["provider"] = { "n", 93526 },	-- Tiffany Cartier
-						["g"] = {
-							recipe(264546),	-- Legion Jewelcrafting
-						},
-					}),
-					q(40561,  {	-- Halls of Valor: Jewel of the Heavens
-						["provider"] = { "n", 93527 },	-- Timothy Jones
-						["g"] = {
-							i(137799),	-- Maelstrom Band (Rank 1)
-						},
-					}),
-					q(40539,  {	-- Hidden Intentions
-						["provider"] = { "n", 100939 },	-- Clive Cozen
-						["g"] = {
-							recipe(195881),	-- Jeweled Lockpick
-						},
-					}),
-					q(40556, {	-- Jabrul Needs You
-						["provider"] = { "o", 246250 },	-- Letter From Jabrul
-					}),
-					q(40538,  {	-- Lapidary Lessons
-						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-						["provider"] = { "n", 93526 },	-- Tiffany Cartier
-						["g"] = {
-							recipe(195854),	-- Versatile Maelstrom Sapphire
-						},
-					}),
-					q(40532,  {	-- Making the Cut (Deadly Deep Amber)
-						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-						["provider"] = { "n", 93526 },	-- Tiffany Cartier
-						["sourceQuest"] = 40531,	-- Swift Justice
-						["g"] = {
-							recipe(195848),	-- Deadly Deep Amber
-						},
-					}),
-					q(40534,  {	-- Making the Cut (Masterful Queen's Opal)
-						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-						["provider"] = { "n", 93526 },	-- Tiffany Cartier
-						["sourceQuest"] = 40531,	-- Swift Justice
-						["g"] = {
-							recipe(195851),	-- Masterful Queen's Opal
-						},
-					}),
-					q(40533,  {	-- Making the Cut (Quick Azsunite)
-						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-						["provider"] = { "n", 93526 },	-- Tiffany Cartier
-						["sourceQuest"] = 40531,	-- Swift Justice
-						["g"] = {
-							recipe(195849),	-- Quick Azsunite
-						},
-					}),
-					q(40560,  {	-- Maw of Souls: Spiriting Away
-						["provider"] = { "n", 93527 },	-- Timothy Jones
-						["g"] = {
-							i(137798),	-- Prophetic Band (Rank 1)
-						},
-					}),
-					q(40535,  {	-- Raising the Drogbar
-						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-						["provider"] = { "n", 93526 },	-- Tiffany Cartier
-						["sourceQuests"] = {
-							40532,	-- Making the Cut (Deadly Deep Amber)
-							40534,	-- Making the Cut (Masterful Queen's Opal)
-							40533,	-- Making the Cut (Quick Azsunite)
-						},
-					}),
-					q(40558, {	-- Socket to Me
-						["provider"] = { "o", 246154 },	-- Broken Toy Box
-						["g"] = {
-							recipe(195882),	-- JewelCraft
-						},
-					}),
-					q(40531,  {	-- Swift Vengeance
-						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-						["provider"] = { "n", 93526 },	-- Tiffany Cartier
-						["sourceQuests"] = { 40530 },	-- An Eye for Detail
-					}),
-					q(40529,  {	-- Truly Outrageous
-						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-						["provider"] = { "n", 93526 },	-- Tiffany Cartier
-						["sourceQuests"] = { 40523 },	-- Facet-nating Friends
-						["g"] = {
-							recipe(195850),	-- Versatile Skystone
-						},
-					}),
-					n(WORLD_QUESTS, {
-						q(46134, {	-- Gemcutter Needed
-							["isWorldQuest"] = true,
-							["requireSkill"] = JEWELCRAFTING,
-							["lvl"] = { 45 },
-						}),
-						q(46135, {	-- Gemcutter Needed
-							["isWorldQuest"] = true,
-							["requireSkill"] = JEWELCRAFTING,
-							["lvl"] = { 45 },
-						}),
-						q(46136, {	-- Gemcutter Needed
-							["isWorldQuest"] = true,
-							["requireSkill"] = JEWELCRAFTING,
-							["lvl"] = { 45 },
-						}),
-						q(46137, {	-- Gemcutter Needed
-							["isWorldQuest"] = true,
-							["requireSkill"] = JEWELCRAFTING,
-							["lvl"] = { 45 },
-						}),
-						q(46138, {	-- Gemcutter Needed
-							["isWorldQuest"] = true,
-							["requireSkill"] = JEWELCRAFTING,
-							["lvl"] = { 45 },
-						}),
-						q(46139, {	-- Gemcutter Needed
-							["isWorldQuest"] = true,
-							["requireSkill"] = JEWELCRAFTING,
-							["lvl"] = { 45 },
-						}),
-						q(41656,  {	-- Work Order: Azsunite Loop
-							["lvl"] = { 45 },
-							["isWorldQuest"] = true,
-							["g"] = {
-								i(137840),	-- Design: Azsunite Loop (Rank 3)
-							},
-						}),
-					}),
-				}),
-				prof(LEATHERWORKING, {
-					q(40206,  {	-- A Debt Paid
-						["sourceQuests"] = { 40199 },	-- Leather Legwork
-						["provider"] = { "n", 98931 },	-- Thanid Glowergold
-					}),
-					q(40196,  {	-- Adventuring Anxieties
-						["provider"] = { "n", 93523 },	-- Namha Moonwater
-					}),
-					q(40241, {	-- Battle Bonds
-						["provider"] = { "n", 93523 },	-- Namha Moonwater
-						["races"] = HORDE_ONLY,
-					}),
-					q(40200, {	-- Battle Bonds
-						["provider"] = { "n", 93523 },	-- Namha Moonwater
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(40181,  {	-- Black Rook Bandit
-						["provider"] = { "n", 98931 },	-- Thanid Glowergold
-						["g"] = {
-							recipe(194736),	-- Battlebound Girdle (Rank 1)
-							recipe(194738),	-- Battlebound Leggings (Rank 1)
-						},
-					}),
-					q(41889,  {	-- Dazed of the Past
-						["sourceQuests"] = { 40197 },	-- The Necessary Materials
-						["provider"] = { "n", 93523 },	-- Namha Moonwater
-						["g"] = {
-							i(137952),	-- Recipe: Stonehide Leather Barding
-						},
-					}),
-					q(40211,  {	-- Demon Flesh
-						["provider"] = { "n", 93523 },	-- Namha Moonwater
-					}),
-					q(40176,  {	-- From Head to Toe
-						["provider"] = { "n", 93523 },	-- Namha Moonwater
-						["g"] = {
-							i(132124),	-- Pattern: Battlebound Treads
-							recipe(194701),	-- Recipe: Warhide Footpads
-						},
-					}),
-					q(40193,  {	-- Getting the Kinks Out
-						["sourceQuests"] = { 40192 },	-- Claw of the Land
-						["isBreadcrumb"] = true,
-						["provider"] = { "n", 98931 },	-- Thanid Glowergold
-					}),
-					q(40190,  {	-- Hardening the Hide
-						["sourceQuests"] = { 40189 },	-- Naga Know-How
-						["isBreadcrumb"] = true,
-						["provider"] = { "n", 93522 },	-- Diane Cannings
-					}),
-					q(40177,  {	-- Leather Lady
-						["provider"] = { "n", 93523 },	-- Namha Moonwater
-					}),
-					q(40199,  {	-- Leather Legwork
-						["provider"] = { "n", 98931 },	-- Thanid Glowergold
-						["g"] = {
-							i(137902),	-- Recipe: Battlebound Spaulders (Rank 2)
-							i(137906),	-- Recipe: Battlebound Treads (Rank 2)
-						},
-					}),
-					q(40187,  {	-- Links in the Chain
-						["provider"] = { "n", 98931 },	-- Thanid Glowergold
-					}),
-					q(40180,  {	-- Mail Men
-						["provider"] = { "n", 93523 },	-- Namha Moonwater
-					}),
-					q(40215,  {	-- Mounting Made Easy
-						["provider"] = { "n", 93523 },	-- Namha Moonwater
-						["g"] = {
-							i(141850),	-- Recipe: Elderhorn Riding Harness
-						},
-					}),
-					q(40183,  {	-- Over Your Head
-						["sourceQuests"] = { 39958 },	-- Skin Deep
-						["provider"] = { "n", 93523 },	-- Namha Moonwater
-						["g"] = {
-							recipe(194699),	-- Warhide Mask
-							i(132123),	-- Pattern: Battlebound Warhelm
-						},
-					}),
-					q(40201,  {	-- Playthings
-						["sourceQuests"] = {
-							40200,	-- Battle Bonds (alliance)
-							40241,	-- Battle Bonds (horde)
-						},
-						["provider"] = { "n", 93523 },	-- Namha Moonwater
-						["g"] = {
-							i(137933),	-- Recipe: Leather Pet Bed
-						},
-					}),
-					q(40198,  {	-- Rats!
-						["provider"] = { "n", 93522 },	-- Diane Cannings
-						["g"] = {
-							i(137874),	-- Recipe: Warhide Footpads (Rank 2)
-							i(137870),	-- Recipe: Warhide Shoulderguard (Rank 2)
-						},
-					}),
-					q(39958,  {	-- Skin Deep
-						["provider"] = { "n", 93523 },	-- Namha Moonwater
-						["g"] = {
-							recipe(264590),	-- Legion Leatherworking
-						},
-					}),
-					q(40179,  {	-- Stormheim Savagery
-						["provider"] = { "n", 93522 },	-- Diane Cannings
-						["g"] = {
-							recipe(194696),	-- Warhide Belt (Rank 1)
-							recipe(194698),	-- Warhide Pants (Rank 1)
-						},
-					}),
-					q(40184,  {	-- Tauren Tanning
-						["provider"] = { "n", 93522 },	-- Diane Cannings
-					}),
-					q(40202,  {	-- The Final Lessons
-						["sourceQuests"] = { 40198 },	-- Rats!
-						["provider"] = { "n", 93522 },	-- Diane Cannings
-					}),
-					q(40197,  {	-- The Necessary Materials
-						["sourceQuests"] = { 40196 },	-- Adventuring Anxieties
-						["provider"] = { "n", 93523 },	-- Namha Moonwater
-					}),
-					q(40182,  {	-- Too Good To Pass Up
-						["provider"] = { "n", 98931 },	-- Thanid Glowergold
-						["g"] = {
-							recipe(194742),	-- Battlebound Hauberk (Rank 1)
-						},
-					}),
-					q(40178,  {	-- Vestment Opportunity
-						["provider"] = { "n", 93522 },	-- Diane Cannings
-						["g"] = {
-							recipe(194702),	-- Warhide Jerkin (Rank 1)
-						},
-					}),
-					n(WORLD_QUESTS, {
-						q(41644, {	-- Work Order: Warhide Gloves
-							["requireSkill"] = LEATHERWORKING,
-							["lvl"] = { 45 },
-							["isWorldQuest"] = true,
-							["provider"] = { "n", 32725 },	-- Warmage Silva
-							["g"] = {
-								i(137879),	-- Recipe: Warhide Gloves (Rank 3)
-							},
-						}),
-					}),
-				}),
 				prof(SKINNING, {
 					q(40157,  {	-- An Unseemly Task
 						["requireSkill"] = SKINNING,
@@ -1063,147 +713,6 @@ _.Zones =
 						["g"] = {
 							recipe(194169),	-- Felhide (Rank 3)
 						},
-					}),
-				}),
-				prof(TAILORING, {
-					q(38951, {	-- A Needle Need
-						["provider"] = { "n", 93967 },	-- Lyndras
-					}),
-					q(38953, {	-- Advanced Needlework
-						["sourceQuests"] = { 38952 },	-- Meticulous Precision
-						["provider"] = { "n", 93967 },	-- Lyndras
-					}),
-					q(38965, {	-- Assault on Violet Hold: Into the Hold
-						["sourceQuests"] = { 39667 },	-- Where's Lyndras: Leyflame Larceny
-						["provider"] = { "n", 96444 },	-- Violet Hold Guard
-					}),
-					q(38946, {	-- Consult the Locals
-						["sourceQuests"] = { 38945 },	-- This Should Be Simple... Right?
-						["provider"] = { "n", 93542 },	-- Tanithria
-					}),
-					q(38961, {	-- Eye of Azshara: The Depraved Nightfallen
-						["sourceQuests"] = { 38963 },	-- The Final Lesson?
-						["provider"] = { "n", 93967 },	-- Lyndras
-						["g"] = {
-							recipe(185923),	-- Silkweave Gloves (Rank 1)
-						},
-					}),
-					q(38948, {	-- Hard Times
-						["provider"] = { "n", 93967 },	-- Lyndras
-					}),
-					q(38952, {	-- Meticulous Precision
-						["sourceQuests"] = { 38951 },	-- A Needle Need
-						["provider"] = { "n", 93542 },	-- Tanithria
-					}),
-					q(38947, {	-- Runic Catgut
-						["provider"] = { "n", 93967 },	-- Lyndras
-					}),
-					q(38966, {	-- Secret Silkweaving Methods
-						["sourceQuests"] = { 38965 },	-- Assault on Violet Hod: Into the Hold
-						["provider"] = { "n", 93542 },	-- Tanithria
-						["g"] = {
-							recipe(185937),	-- Silkweave Pantaloons (Rank 2)
-							recipe(185938),	-- Silkweave Hood (Rank 2)
-							recipe(185939),	-- Silkweave Gloves (Rank 2)
-							recipe(185940),	-- Silkweave Slippers (Rank 2)
-						},
-					}),
-					q(38955, {	-- Sew Far, Sew Good
-						["sourceQuests"] = { 38954 },	-- Where's Lyndras?
-						["provider"] = { "n", 93967 },	-- Lyndras
-						["g"] = {
-							recipe(186388),	-- Silkweave Satchel
-						},
-					}),
-					q(38944, {	-- Sew It Begins
-						["provider"] = { "n", 93542 },	-- Tanithria
-						["g"] = {
-							recipe(264628),	-- Legion Tailoring
-						},
-					}),
-					q(38949, {	-- So You Think You Can Sew
-						["sourceQuests"] = {
-							38947,	-- Runic Catgut
-							38948,	-- Hard Times
-						},
-						["provider"] = { "n", 93967 },	-- Lyndras
-					}),
-					q(38957, {	-- Taking Inspiration
-						["sourceQuests"] = { 38956 },	-- Where's Lyndras Again?
-						["provider"] = { "n", 93967 },	-- Lyndras
-						["g"] = {
-							recipe(185921),	-- Silkweave Pantaloons (Rank 1)
-						},
-					}),
-					q(38963, {	-- The Final Lesson?
-						["sourceQuests"] = {
-							38959,	-- Left Behind
-							38960,	-- Lining Them Up
-						},
-						["provider"] = { "n", 93967 },	-- Lyndras
-						["g"] = {
-							recipe(185922),	-- Silkweave Hood (Rank 1)
-						},
-					}),
-					q(38967, {	-- The Nightborne Connection
-						["sourceQuests"] = { 38962 },	-- The Path to Suramar City
-						["provider"] = { "n", 93542 },	-- Tanithria
-					}),
-					q(38962, {	-- The Path to Suramar City
-						["sourceQuests"] = { 38966 },	-- Secret Silkweaving Methods
-						["provider"] = { "n", 93542 },	-- Tanithria
-					}),
-					q(38958, {	-- The Right Color
-						["provider"] = { "n", 93525 },	-- Ainderu Summerleaf
-						["g"] = {
-							recipe(185924),	-- Silkweave Slippers (Rank 1)
-						},
-					}),
-					q(38950, {	-- The Wayward Tailor
-						["sourceQuests"] = { 38949 },	-- So You Think You Can Sew
-						["provider"] = { "n", 93967 },	-- Lyndras
-					}),
-					q(38945, {	-- This Should Be Simple... Right?
-						["provider"] = { "n", 93542 },	-- Tanithria
-						["g"] = {
-							recipe(185920),	-- Silkweave Epaulets
-							recipe(185919),	-- Silkweave Cinch
-						},
-					}),
-					q(38956, {	-- Where's Lyndras Again?
-						["provider"] = { "n", 93542 },	-- Tanithria
-					}),
-					q(38964, {	-- Where's Lyndras Now?
-						["sourceQuests"] = { 38961 },	-- Eye of Azshara: The Depraved Nightfallen
-						["provider"] = { "n", 93542 },	-- Tanithria
-					}),
-					q(39605, {	-- Where's Lyndras: Downward Spiral
-						["sourceQuests"] = {
-							38964,	-- Where's Lyndras Now?
-							39602,	-- Where's Lyndras: Sewer Sleuthing
-						},
-					}),
-					q(39667, {	-- Where's Lyndras: Leyflame Larceny
-						["provider"] = { "o", 243899 },	-- Broken Ley Flame Burner
-						["sourceQuests"] = { 39605 },	-- Where's Lyndras: Downward Spiral
-					}),
-					q(39602, {	-- Where's Lyndras: Sewer Sleuthing
-						["sourceQuests"] = { 38964 },	-- Where's Lyndras Now?
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 93542 },	-- Tanithria
-					}),
-					q(38954, {	-- Where's Lyndras?
-						["provider"] = { "n", 93542 },	-- Tanithria
-					}),
-					n(WORLD_QUESTS, {
-						q(41650, {	-- Work Order: Silkweave Hood
-							["requireSkill"] = TAILORING,
-							["lvl"] = { 45 },
-							["isWorldQuest"] = true,
-							["g"] = {
-								i(138013),	-- Pattern: Silkweave Hood (Rank 3)
-							},
-						}),
 					}),
 				}),
 			}),

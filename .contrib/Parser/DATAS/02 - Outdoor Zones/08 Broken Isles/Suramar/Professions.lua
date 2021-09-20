@@ -245,23 +245,6 @@ _.Zones =
 						["provider"] = { "i", 129143 },	-- Scribbled Ramblings
 					}),
 				}),
-				prof(LEATHERWORKING, {
-					q(40214, {	-- Fel Tanning
-						["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
-						["g"] = {
-							i(140636),	-- Pattern: Dreadleather Bindings (Rank 1)
-							i(140644),	-- Recipe: Gravenscale Armbands (Rank 1)
-						},
-					}),
-					q(40213),	-- Hounds Abound
-
-					q(40212, {	-- Wrong End of the Knife
-						["requireSkill"] = LEATHERWORKING,
-						["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
-						["coord"] = { 26.6, 71.6, SURAMAR },
-						["sourceQuests"] = { 40211 },	-- Demon Flesh
-					}),
-				}),
 				prof(SKINNING, {
 					q(40158),	-- Darkheart Thicket: Demons Be Different
 					q(40154),	-- Eye of Azshara: The Scales of Serpentrix
@@ -302,24 +285,9 @@ _.Zones =
 					}),
 				}),
 				prof(TAILORING, {
-					q(38971, {	-- Exotic Textiles
-						["requireSkill"] = TAILORING,
-						["coord"] = { 26.6, 71.4, SURAMAR },
-						["provider"] = { "n", 93978 },	-- Leyweaver Athystro
-						["g"] = {
-							i(127026),	-- Pattern: Imbued Silkweave Gloves (Rank 1)
-						},
-					}),
-					q(38975, {	-- Inspire Me!
-						["requireSkill"] = TAILORING,
-						["coord"] = { 40.2, 69.6, SURAMAR },
-						["provider"] = { "n", 93976 },	-- Leyweaver Mithrogane
-						["g"] = {
-							i(127028),	-- Pattern: Imbued Silkwave Robes (Rank 1)
-						},
-					}),
-					q(38969),	-- Master of Silkweave
-					q(38968),	-- Proof of Loyalty
+					
+				
+					
 					q(44741, {	-- Return to Karazhan: The Big Bag Theory
 						["requireSkill"] = TAILORING,
 						["coord"] = { 40.4, 69.4, SURAMAR },
@@ -328,7 +296,7 @@ _.Zones =
 							i(142076),	-- Pattern: Imbued Silkweave Bag (Rank 1)
 						},
 					}),
-					q(38970),	-- The Queen's Grace Loom
+					
 				}),
 			}),
 		}),

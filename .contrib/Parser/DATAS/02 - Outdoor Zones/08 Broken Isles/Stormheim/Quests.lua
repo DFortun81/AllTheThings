@@ -376,14 +376,6 @@ _.Zones =
 					["provider"] = { "n", 97988 },	-- Havi
 					["coord"] = { 70.2, 69.1, STORMHEIM },
 				}),
-				q(38974, {	-- Halls of Valor: The Right Question
-					["provider"] = { "n", 93977 },	-- Leyweaver Tellumi
-					["coord"] = { 65.6, 56.2, STORMHEIM },
-					["requireSkill"] = TAILORING,
-					["g"] = {
-						i(127024),	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
-					},
-				}),
 				q(38331, {	-- Havi's Test
 					["provider"] = { "n", 96254 },	-- Havi
 					["coord"] = { 41.8, 42.9, STORMHEIM },
@@ -490,13 +482,6 @@ _.Zones =
 						i(140619),	-- Helbreaker Epaulets
 						i(140620),	-- Helbreaker Spaulders
 						i(140621),	-- Helbreaker Pauldrons
-					},
-				}),
-				q(40546, {	-- Mysteries of Nature
-					["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
-					["requireSkill"] = JEWELCRAFTING,
-					["g"] = {
-						recipe(195883),	-- Chatterstone
 					},
 				}),
 				q(42445, {	-- Nithogg's Tribute

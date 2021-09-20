@@ -232,57 +232,6 @@ _.Zones =
 						["description"] = "Can drop from digsites via Archaeology.",
 					}),
 				}),
-				prof(LEATHERWORKING, {
-					q(40192, {	-- Claw of the Land
-						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-						["g"] = {
-							i(137869),	-- Recipe: Warhide Belt (Rank 2)
-							i(137868),	-- Recipe: Warhide Bindings (Rank 2)
-						},
-					}),
-					q(40204, {	-- Evolution of the Past
-						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-						["g"] = {
-							i(137873),	-- Recipe: Warhide Gloves (Rank 2)
-						},
-					}),
-					q(40205, {	-- Respect for the Past
-						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-						["g"] = {
-							i(137871),	-- Recipe: Warhide Pants (Rank 2)
-						},
-					}),
-					q(40185, {	-- Shoulder the Burden
-						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-						["g"] = {
-							recipe(194697),	-- Recipe: Warhide Shoulderguard (Rank 1)
-						},
-					}),
-					q(40186, {	-- Drogbar Durability
-						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-						["g"] = {
-							recipe(194700),	-- Recipe: Warhide Gloves (Rank 1)
-							recipe(194695),	-- Recipe: Warhide Bindings (Rank 1)
-						},
-					}),
-					q(40191, {	-- Stamped Stories
-						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-						-- ["sourceQuests"] = { 40190 },	-- Hardening the Hide -- TODO verify
-						["g"] = {
-							i(137875),	-- Recipe: Warhide Jerkin (Rank 2)
-						},
-					}),
-					q(40203, {	-- Strength of the Past
-						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-						["g"] = {
-							i(137872),	-- Recipe: Warhide Mask (Rank 2)
-						},
-					}),
-					q(40415, {	-- Well Spent Time
-						["requireSkill"] = LEATHERWORKING,
-						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-					}),
-				}),
 				prof(SKINNING, {
 					q(40134, {	-- Highmountain Hides
 						["sourceQuests"] = { 40133 },	-- Scrap of Pants
