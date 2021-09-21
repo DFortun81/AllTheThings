@@ -2061,7 +2061,7 @@ for key,value in pairs({
 	[245316] = "작은 보물 상자",	-- Small Treasure Chest
 	[245328] = "마력 깃든 두루마리",	-- Enchanted Scroll
 	[245345] = "작은 보물 상자",	-- Small Treasure Chest
-	--TODO: [245479] = "Battered Chest",	-- Battered Chest
+	[245479] = "찌그러진 궤짝",	-- Battered Chest
 	[245524] = "보물 상자",	-- Treasure Chest
 	[245525] = "작은 보물 상자",	-- Small Treasure Chest
 	[245528] = "보물 상자",	-- Treasure Chest
