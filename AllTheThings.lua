@@ -15484,7 +15484,7 @@ customWindowUpdates["AuctionData"] = function(self)
 					end,
 					['OnUpdate'] = function(data)
 						data.visible = true;
-						local val = app.GetDataMember("UnobtainableItemFilters");
+						local val = app.GetDataMember("UnobtainableItemFilters", {});
 						if val[7] then
 							data.trackable = true;
 							data.saved = true;
