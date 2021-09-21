@@ -16,6 +16,9 @@ i(137642);	-- Mark of Honor
 i(163036);	-- Polished Pet Charm
 i(116415);	-- Shiny Pet Charm
 
+-- SL Tokens
+i(187187);	-- Korthian Armaments
+
 -- BFA Black Empire Tokens
 i(173420);	-- Black Empire Cloth Belt
 i(173415);	-- Black Empire Cloth Boots
