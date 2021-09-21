@@ -1165,10 +1165,12 @@ for key,value in pairs({
 	[181153] = "Avis de recherche : Kel'gash le Malfaisant",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Avis de recherche",	-- Wanted Poster
 	[181672] = "Effigie de l'homme d'osier",	-- Wickerman Effigy
+	[181698] = "Pierre de Vide",	-- Voidstone
 	[181748] = "Cristal de sang",	-- Blood Crystal
 	[181756] = "Livre ancien endommagé",	-- Battered Ancient Book
 	[181889] = "Avis de recherche",	-- Wanted Poster
 	[182032] = "Journal de Galaen",	-- Galaen's Journal
+	[182058] = "Chariot à viande du Fléau",	-- Scourge Meat Wagon
 	[182115] = "Avis de recherche",	-- Wanted Poster
 	[182165] = "Avis de recherche",	-- Wanted Poster
 	[182392] = "Panneau d'affichage de Garadar",	-- Garadar Bulletin Board

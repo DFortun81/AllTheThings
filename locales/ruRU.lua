@@ -1153,10 +1153,12 @@ for key,value in pairs({
 	[181153] = "Плакат: \"Разыскивается\": Кел'гаш Коварный",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[181672] = "Фигурка Плетеного человека",	-- Wickerman Effigy
+	[181698] = "Камень Бездны",	-- Voidstone
 	[181748] = "Кровавый кристалл",	-- Blood Crystal
 	[181756] = "Потрепанная древняя книга",	-- Battered Ancient Book
 	[181889] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[182032] = "Записи Галена",	-- Galaen's Journal
+	[182058] = "Мясной фургон Плети",	-- Scourge Meat Wagon
 	[182115] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[182165] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[182392] = "Гарадарская доска объявлений",	-- Garadar Bulletin Board

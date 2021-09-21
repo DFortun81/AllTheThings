@@ -1165,10 +1165,12 @@ for key,value in pairs({
 	[181153] = "현상 수배 전단: 사악한 켈가쉬",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "현상 수배 전단",	-- Wanted Poster
 	[181672] = "밀짚인형",	-- Wickerman Effigy	--TODO: This was taken from tbc Wowhead
+	[181698] = "공허의 돌",	-- Voidstone
 	[181748] = "핏빛 수정",	-- Blood Crystal
 	[181756] = "닳아해진 고대 책",	-- Battered Ancient Book
 	[181889] = "현상 수배 전단",	-- Wanted Poster
 	[182032] = "갈라엔의 일지",	-- Galaen's Journal
+	[182058] = "스컬지 시체 수레",	-- Scourge Meat Wagon
 	[182115] = "현상 수배 전단",	-- Wanted Poster
 	[182165] = "현상 수배 전단",	-- Wanted Poster
 	[182392] = "가라다르 게시판",	-- Garadar Bulletin Board
