@@ -55,7 +55,7 @@ _.Zones =
 					["description"] = "This vendor is only accessible when the Horde controls Halaa.",
 					["coord"] = { 42.8, 42.6, NAGRAND },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["groups"] = pvp({
 						i(30570, {	-- Arkadian Claymore
 							["isLimited"] = true,
 						}),
@@ -82,7 +82,7 @@ _.Zones =
 								{ "i", 26044, 20 },		-- 20x Halaa Research Token
 							},
 						}),
-					},
+					}),
 				}),
 				n(18072, {	-- Elementalist Sharvak <The Earthen Ring>
 					["coord"] = { 60.6, 22.1, NAGRAND },
@@ -184,7 +184,7 @@ _.Zones =
 					},
 				}),
 				n(20241, {	-- Provisioner Nasela <Mag'har Quartermaster>
-					["coord"] = { 55.8, 37.8, NAGRAND },
+					["coord"] = { 53.8, 36.8, NAGRAND },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(29145),	-- Band of Ancestral Spirits
