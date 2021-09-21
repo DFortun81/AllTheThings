@@ -875,22 +875,22 @@ settings.version = f;
 
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("TOPLEFT", settings, "BOTTOMLEFT", 0, -6);
-f:SetText("https://www.twitch.tv/crieve");
+f:SetText("discord.gg/allthethings");
 f:SetWidth(230);
 f:SetHeight(30);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", settings.ShowCopyPasteDialog);
-f:SetATTTooltip(L["TWITCH_BUTTON_TOOLTIP"]);
+f:SetATTTooltip(L["DISCORD_BUTTON_TOOLTIP"]);
 settings.twitch = f;
 
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("TOPLEFT", settings.twitch, "TOPRIGHT", 4, 0);
-f:SetText("https://discord.gg/9GFDsgy");
+f:SetText("twitch.tv/crieve");
 f:SetWidth(200);
 f:SetHeight(30);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", settings.ShowCopyPasteDialog);
-f:SetATTTooltip(L["DISCORD_BUTTON_TOOLTIP"]);
+f:SetATTTooltip(L["TWITCH_BUTTON_TOOLTIP"]);
 settings.community = f;
 
 ------------------------------------------
