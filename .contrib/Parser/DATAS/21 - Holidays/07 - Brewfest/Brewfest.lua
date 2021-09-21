@@ -80,6 +80,51 @@ local BREWFEST_REGALIA = {
 		["cost"] = BREWFEST_TOKEN_COST(100),
 	}),
 };
+local BREWFEST_VENDOR_OnTooltip = [[function(t)
+	local itemID = 37829;
+	local item = _.SearchForField("itemID", itemID)[1];
+	local icon = "|T" .. item.icon .. ":0|t";
+	GameTooltip:AddLine(" ");
+	GameTooltip:AddLine("One-Time Quests:");
+	local coren = C_QuestLog.IsQuestFlaggedCompleted(12491);
+	GameTooltip:AddDoubleLine(" " .. icon .. " 40 for Direbrew's Dire Brew", _.L[coren and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
+	
+	local chucked = C_QuestLog.IsQuestFlaggedCompleted(12022);
+	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for Chug and Chuck", _.L[chucked and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
+	
+	local back = C_QuestLog.IsQuestFlaggedCompleted(11122);
+	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for There And Back Again", _.L[back and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
+	
+	GameTooltip:AddLine(" ");
+	GameTooltip:AddLine("Daily Quests:");
+	local barked = C_QuestLog.IsQuestFlaggedCompleted(11293);
+	GameTooltip:AddDoubleLine(" " .. icon .. " 15 for Brewfest Barking", _.L[barked and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+	
+	local invasion = C_QuestLog.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 12192 or 12020);
+	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for Dark Iron Invasion", _.L[invasion and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+	GameTooltip:AddLine(" " .. icon .. " 0-30 for Ram Racing Dialog (every 12-18 hours)");
+	GameTooltip:AddLine(" ");
+	GameTooltip:AddDoubleLine("Currently", GetItemCount(itemID, true) .. "x " .. icon .. " " .. item.link);
+	
+	local now = time();
+	local y = date("*t").year;
+	local start = time({day=20,month=9,year=y});
+	local ends = time({day=6,month=10,year=y});
+	if now > start and now < ends then
+		local totalDays = math.ceil((ends - start) / (24 * 60 * 60));
+		local m = 60 + (25 * totalDays);
+		GameTooltip:AddDoubleLine("Total Possible*", m .. " - " .. (m + (30 * totalDays)) .. "x " .. icon .. " " .. item.link);
+		
+		local remaining = math.ceil((ends - now) / (24 * 60 * 60)) - 1;
+		if remaining <= 1 then
+			GameTooltip:AddDoubleLine("Total Remaining*", baseAmount .. " - " .. (baseAmount + 30) .. "x " .. icon .. " " .. item.link);
+		else
+			local baseAmount = (barked and 0 or 15) + (invasion and 0 or 10) + (25 * remaining);
+			GameTooltip:AddDoubleLine("Total Remaining*", baseAmount .. " - " .. (baseAmount + (30 * remaining)) .. "x " .. icon .. " " .. item.link);
+		end
+	end
+	GameTooltip:AddLine("* Based on if you didn't miss a single day and only whole days count.");
+end]];
 
 _.Holidays = { applyholiday(BREWFEST, {
 	-- #if ANYCLASSIC
@@ -1057,6 +1102,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #else
 					["lvl"] = 65,
 					-- #endif
+					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(12492, {	-- Direbrew's Dire Brew (H)
 					["provider"] = { "i", 38281 },	-- Direbrew's Dire Brew
@@ -1070,6 +1116,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #else
 					["lvl"] = 65,
 					-- #endif
+					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(56341, {	-- Direbrew Cog (A)
 					["provider"] = { "o", 328343 },	-- Direbrew Cog
@@ -1603,6 +1650,9 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["timeline"] = { "added 2.2.2" },
 				["maps"] = { DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
+				-- #if ANYCLASSIC
+				["OnTooltip"] = BREWFEST_VENDOR_OnTooltip,
+				-- #endif
 				["groups"] = appendGroups(BREWFEST_REGALIA, {
 					i(37571, {	-- "Brew of the Month" Club Membership Form
 						["timeline"] = { "added 2.2.2" },
@@ -1754,6 +1804,9 @@ _.Holidays = { applyholiday(BREWFEST, {
 				["timeline"] = { "added 2.2.2" },
 				["maps"] = { DUROTAR },
 				["races"] = HORDE_ONLY,
+				-- #if ANYCLASSIC
+				["OnTooltip"] = BREWFEST_VENDOR_OnTooltip,
+				-- #endif
 				["groups"] = appendGroups(BREWFEST_REGALIA, {
 					i(37599, {	-- "Brew of the Month" Club Membership Form
 						["timeline"] = { "added 2.2.2" },
