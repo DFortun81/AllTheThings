@@ -207,9 +207,6 @@ _.Zones =
 						i(121804),	-- Cloak of the Everliving Keeper
 					},
 				}),
-				q(40725, {	-- Arganax (NYI)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(43569, {	-- Arluin's Request
 					["coord"] = { 36.4, 46.6, SURAMAR },
 					["provider"] = { "n", 107598 },	-- Vanthir
@@ -311,9 +308,6 @@ _.Zones =
 					["provider"] = { "n", 115710 },	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 44964,	-- I'll Just Leave This Here
 				}),
-				q(45405, {	-- Breaching the Sanctum
-					["u"] = NEVER_IMPLEMENTED, -- couldn't find any information to suggest this was ever in-game
-				}),
 				q(44845, {	-- Break An Arm
 					["coord"] = { 40.5, 53.0, SURAMAR },
 					["provider"] = { "n", 114908 },	-- First Arcanist Thalyssra
@@ -349,9 +343,6 @@ _.Zones =
 					["coord"] = { 36.8, 46.6, SURAMAR },
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 42230,	-- The Valewalker's Burden
-				}),
-				q(40763, {	-- Casual Redistribution
-					["u"] = NEVER_IMPLEMENTED, -- likely replaced with #40730 "Redistribution"
 				}),
 				q(44827, {	-- Citizens' Army
 					["coord"] = { 39.7, 51.2, SURAMAR },
@@ -617,9 +608,6 @@ _.Zones =
 					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
 					["sourceQuest"] = 43562,	-- Giving It All We've Got
 				}),
-				q(41031, {	-- For the People
-					["u"] = NEVER_IMPLEMENTED,	-- replaced with #42859, "A Draught of Hope"
-				}),
 				q(43361, {	-- Fragments of Disaster
 					["coord"] = { 42.3, 14.8, 684 },
 					["provider"] = { "n", 112967 },	-- Valewalker Farodin
@@ -834,19 +822,10 @@ _.Zones =
 					["provider"] = { "n", 99948 },	-- Toryl
 					["sourceQuest"] = 40907,	-- Removing Obstacles
 				}),
-				q(40674, {	-- Jars for Jandvik
-					["u"] = NEVER_IMPLEMENTED, -- presumably!  no data on wowhead and all attached items also have no attached data
-				}),
-				q(40776, {	-- Kazok'thul
-					["u"] = NEVER_IMPLEMENTED, -- presumably!  no data on wowhead.  it's also a daily, which is weird af
-				}),
 				q(41760, {	-- Kel'danath's Legacy
 					["coord"] = { 37.0, 46.2, SURAMAR },
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 41704,	-- Subject 16
-				}),
-				q(41000, {	-- King Forgalash's Burden
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(41877, {	-- Lady Lunastre
 					["coord"] = { 36.8, 46.6, SURAMAR },
@@ -861,9 +840,6 @@ _.Zones =
 						40970,	-- The Orchestrator of Our Demise
 					},
 				}),
-				q(40974, {	-- Latosius' Trial
-					["u"] = NEVER_IMPLEMENTED, -- presumably!  no data on wowhead.
-				}),
 				q(40965, {	-- Lay Waste, Lay Mines
 					["coord"] = { 36.4, 22.3, SURAMAR },
 					["provider"] = { "n", 101768 },	-- Lothrius Mooncaller
@@ -876,9 +852,6 @@ _.Zones =
 						44861,	-- Arming the Rebels (A)
 						44862,	-- Arming the Rebels (H)
 					},
-				}),
-				q(40121, {	-- Ley Line Influences
-					["u"] = NEVER_IMPLEMENTED, -- presumably!  no data on wowhead.
 				}),
 				q(44492, {	-- Leyline Apprentice
 					["coord"] = { 37.0, 46.2, SURAMAR },
@@ -987,9 +960,6 @@ _.Zones =
 					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 					["provider"] = { "n", 98801 },	-- Lyana Darksorrow
 					["sourceQuest"] = 42230,	-- The Valewalker's Burden
-				}),
-				q(40160, {	-- Magic Clams
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(42829, {	-- Make an Entrance
 					["coord"] = { 36.8, 46.6, SURAMAR },
@@ -1132,9 +1102,6 @@ _.Zones =
 						43568,	-- Arcan'dor, Gift of the Ancient Magi
 						45271,	-- Insurrection (legacy)
 					},
-				}),
-				q(41027, {	-- One Last Breath
-					["u"] = NEVER_IMPLEMENTED, -- replaced with #40334, "Fisherman's Tonic
 				}),
 				q(40746, {	-- One of the People
 					["coord"] = { 47.0, 61.9, SURAMAR },
@@ -1535,9 +1502,6 @@ _.Zones =
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 40956,	-- Survey Says...
 				}),
-				q(40161, {	-- Tapping the Underground
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(44742, {	-- Tavernkeeper's Fate
 					["coord"] = { 36.5, 46.7, SURAMAR },
 					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
@@ -1932,3 +1896,40 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(40749),	-- A Token of Remembrance
+		q(40725),	-- Arganax
+		q(41044),	-- Attack and Assail!
+		q(40393),	-- Axes for Arrows
+		q(45405),	-- Breaching the Sanctum
+		q(41007),	-- Building a Better Boat
+		q(40763),	-- Casual Redistribution
+		q(41005),	-- Coastal Cleanup
+		q(40656),	-- Cutting the Crystal Flow
+		q(40394),	-- Fish and Supplies
+		q(41031),	-- For the People
+		q(40741),	-- In Need of Information
+		q(41004),	-- Jandvik Craftsmanship
+		q(41043),	-- Jandvik's First Sailor
+		q(40674),	-- Jars for Jandvik
+		q(40776),	-- Kazok'thul
+		q(41000),	-- King Forgalash's Burden
+		q(40974),	-- Latosius's Trial
+		q(40121),	-- Ley Line Influences
+		q(40160),	-- Magic Clams
+		q(41027),	-- One Last Breath
+		q(40346),	-- Pilfered Provisions
+		q(40637),	-- Proof of Honor
+		q(40635),	-- Sashj'tar Slayer
+		q(40659),	-- Seeing Stars
+		q(40906),	-- Serpents from the Deep
+		q(40670),	-- Shattering the Sashj'tar
+		q(40342),	-- Surprise the Sashj'tar
+		q(40161),	-- Tapping the Underground
+		q(40396),	-- That's the Spirit
+		q(40742),	-- The Elusive Three
+		q(41104),	-- The New Jarl
+		q(40372),	-- The Tidemistress
+	}),
+});

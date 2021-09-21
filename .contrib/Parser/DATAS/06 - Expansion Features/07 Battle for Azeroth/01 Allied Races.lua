@@ -1781,5 +1781,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(174354),	-- Vulpera Heritage Footwraps
 			i(174355),	-- Vulpera Heritage Wristwraps
 		}),
+		n(QUESTS, {
+			q(48068),	-- A Cure for Ebonhorn
+			q(48435),	-- The Spiritwalkers
+		}),
 	}),
 });

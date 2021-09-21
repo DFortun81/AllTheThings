@@ -1089,3 +1089,80 @@ _.HiddenQuestTriggers = {
 	--q(40473),	-- Tracking Quest - Highmountain Treasure Chest
 	--q(44352),	-- Tracking Quest - Highmountain Treasure Chest (UNderwater Cave) (All Chests seems to have a QuestID attached already...)
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(39311),	-- Bitestone Enclave Treasure
+		q(40468),	-- Bitestone Enclave Treasure
+		q(39819),	-- Bloodhunt Highland Treasure
+		q(39820),	-- Bloodhunt Highland Treasure
+		q(39821),	-- Bloodhunt Highland Treasure
+		q(39822),	-- Bloodhunt Highland Treasure
+		q(39823),	-- Bloodhunt Highland Treasure
+		q(40322),	-- Bloodhunt Highland Treasure
+		q(40243),	-- Break Weapon Racks
+		q(40323),	-- Cave of the Blood Trial Treasure
+		q(39296),	-- Crystal Fissure Treasure
+		q(39813),	-- Earthmother's Bounty Treasure
+		q(40007),	-- Fields of An'she Treasure
+		q(40461),	-- Fields of An'she Treasure
+		q(40462),	-- Fields of An'she Treasure
+		q(40463),	-- Fields of An'she Treasure
+		q(39436),	-- Haglands Treasure
+		q(39827),	-- Haglands Treasure
+		q(40466),	-- Howling Hills Treasure
+		q(40467),	-- Howling Hills Treasure
+		q(39814),	-- Lifespring Cavern Treasure
+		q(40464),	-- Mucksnout Den Treasure
+		q(40268),	-- Neltharion's Vault Treasure
+		q(40513),	-- Oro's Overlook Treasure
+		q(39809),	-- Path of Huln Treasure
+		q(39493),	-- Pinerock Basin Treasure
+		q(39506),	-- Pinerock Basin Treasure
+		q(39508),	-- Pinerock Basin Treasure
+		q(39964),	-- Pinerock Basin Treasure
+		q(40458),	-- Pinerock Basin Treasure
+		q(40459),	-- Pinerock Basin Treasure
+		q(40460),	-- Pinerock Basin Treasure
+		q(41846),	-- Power in a Vessel
+		q(40114),	-- Prephoof Compound Treasure
+		q(40115),	-- Prephoof Compound Treasure
+		q(40116),	-- Prephoof Compound Treasure
+		q(39966),	-- Riverbend Treasure
+		q(40457),	-- Riverbend Treasure
+		q(39995),	-- Rockaway Coast Treasure
+		q(39996),	-- Rockaway Coast Treasure
+		q(39997),	-- Rockaway Coast Treasure
+		q(39999),	-- Rockaway Coast Treasure
+		q(40465),	-- Rockcrawler Chasm Treasure
+		q(39808),	-- Sepulcher of the Sky Treasure
+		q(40485),	-- Skyhorn Treasure
+		q(40486),	-- Skyhorn Treasure
+		q(40504),	-- Skyhorn Treasure
+		q(40162),	-- Snowblind Mesa Treasure
+		q(40163),	-- Snowblind Mesa Treasure
+		q(40512),	-- Snowblind Mesa Treasure
+		q(40333),	-- Spiritwind Summit Treasure
+		q(39825),	-- Stonedark Grotto Treasure
+		q(39815),	-- Sylvan Falls Treasure
+		q(39965),	-- Sylvan Falls Treasure
+		q(40006),	-- Sylvan Falls Treasure
+		q(41684),	-- The Necrodark
+		q(48394),	-- The Necrodark
+		q(41839),	-- The Taken
+		q(41845),	-- The Tribes Must Be Warned
+		q(39312),	-- Thunder Totem Treasure
+		q(39967),	-- Thunder Totem Treasure
+		q(39968),	-- Thunder Totem Treasure
+		q(40490),	-- Thunder Totem Treasure
+		q(40492),	-- Thunder Totem Treasure
+		q(40597),	-- Thunder Totem Treasure
+		q(40269),	-- Torok's Bluff Treasure
+		q(47811),	-- Whispers from the Shadows
+		q(48395),	-- Whispers from the Shadows
+		q(41883),	-- Whispers from the Shadows
+		q(39810),	-- Whitewater Wash Treasure
+		q(39811),	-- Whitewater Wash Treasure
+		q(41761),	-- Winter Moose Roundup
+		q(39826),	-- Witchwood Treasure
+	}),
+});

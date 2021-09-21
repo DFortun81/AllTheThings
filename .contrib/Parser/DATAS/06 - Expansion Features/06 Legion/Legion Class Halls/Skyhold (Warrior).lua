@@ -726,11 +726,11 @@ _.HiddenQuestTriggers = {
 	q(44635),	-- Warrior Order Hall - "Enslaved by Sea Giants" mission complete
 	q(44658),	-- Warrior Order Hall - "On the Trail of the Great Worm" mission complete
 };
-
--- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-
+		q(42617),	-- Champion: King Ymiron
+		q(44482),	-- Recruiting Ebon Knights
+		q(42143),	-- The Champion's Call [WIP]
 	}),
 });
 -- #endif

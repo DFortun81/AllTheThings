@@ -11,26 +11,41 @@ _.NeverImplemented =
 {
 	n(QUESTS, {
 		tier(CLASSIC_TIER, { -- These Quests might be ingame, very unlikely however.
+			q(38149),	-- Classic 10-19
 			q(38160),	-- Classic 10-19
+			q(38132),	-- Classic 20-29
+			q(38150),	-- Classic 20-29
 			q(38161),	-- Classic 20-29
 			q(62300),	-- Classic 20-49
+			q(38133),	-- Classic 30-39
+			q(38151),	-- Classic 30-39
 			q(38162),	-- Classic 30-39
+			q(38134),	-- Classic 40-49
+			q(38152),	-- Classic 40-49
 			q(38163),	-- Classic 40-49
 			q(62301),	-- Classic 50
 			q(62302),	-- Classic 50
 			q(62303),	-- Classic 50
 			q(62351),	-- Classic 50
 			q(62352),	-- Classic 50
+			q(38113),	-- Classic 50-59
+			q(38124),	-- Classic 50-59
+			q(38135),	-- Classic 50-59
+			q(38153),	-- Classic 50-59
 			q(38164),	-- Classic 50-59
 			q(24881),	-- Classic Random 5-15 (1st)
 			q(24889),	-- Classic Random 5-15 (Nth)
 			q(24882),	-- LFGDungeons - Classic - Random - 1st
 			q(24890),	-- LFGDungeons - Classic - Random - Nth
+			q(38131),	-- Vanilla 10-19
 			q(42461),	-- Vanilla 10-19
 		}),
 		tier(TBC_TIER, { -- These Quests might be ingame, very unlikely however.
 			q(24922),	-- LFGDungeons - Burning Crusade - Heroic Random - 1st
 			q(24923),	-- LFGDungeons - Burning Crusade - Heroic Random - Nth
+			q(38114),	-- TBC 60-69
+			q(38125),	-- TBC 60-69
+			q(38136),	-- TBC 60-69
 			q(38154),	-- TBC 60-69
 			q(38165),	-- TBC 60-69
 		}),
@@ -39,6 +54,9 @@ _.NeverImplemented =
 			q(24791),	-- Daily Normal Random (Nth)
 			q(24788),	-- LFGDungeons - Lich King - Heroic Random - 1st
 			q(24789),	-- LFGDungeons - Lich King - Heroic Random - Nth
+			q(38115),	-- WLK 70-79
+			q(38126),	-- WLK 70-79
+			q(38137),	-- WLK 70-79
 			q(38155),	-- WLK 70-79
 			q(38166),	-- WLK 70-79
 			q(25306),	-- You're In The Army Gnow!
@@ -90,6 +108,9 @@ _.NeverImplemented =
 			q(28006),	-- Adventurers Wanted: Wailing Caverns
 			q(28037),	-- Adventurers Wanted: Zul'farrak
 			q(28036),	-- Adventurers Wanted: Zul'farrak
+			q(38116),	-- Cata/Mop 80-89
+			q(38127),	-- Cata/MoP 80-89
+			q(38138),	-- Cata/MoP 80-89
 			q(38156),	-- Cata/MoP 80-89
 			q(38167),	-- Cata/MoP 80-89
 			q(28907),	-- Daily Normal Random (1st)
@@ -107,6 +128,8 @@ _.NeverImplemented =
 		tier(MOP_TIER, {
 			q(31614),	-- LFGDungeons - Mists - Heroic Random - 1st
 			q(31615),	-- LFGDungeons - Mists - Heroic Random - Nth
+			q(31274),	-- LFGDungeons - Mists - Raid Finder - 1st
+			q(31275),	-- LFGDungeons - Mists - Raid Finder - Nth
 			q(32897),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth
 			q(31987),	-- LFGDungeons - Theramore Launch Event
 		}),
@@ -118,6 +141,9 @@ _.NeverImplemented =
 			q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
 			q(40395),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
 			q(36865),	-- UBRS Event Dungeon Reward Quest
+			q(38117),	-- WOD 90-99
+			q(38128),	-- WOD 90-99
+			q(38139),	-- WOD 90-99
 			q(38157),	-- WOD 90-99
 			q(38168),	-- WOD 90-99
 			q(42554),	-- WOD 100 A
@@ -147,10 +173,16 @@ _.NeverImplemented =
 			q(45536),	-- 2v2 Weekly Quest UI
 			q(45337),	-- 3v3 Weekly Quest UI
 			q(45538),	-- 10v10 Weekly Quest UI
+			q(38118),	-- Legion 100-109 A
+			q(38129),	-- Legion 100-109 A
+			q(38140),	-- Legion 100-109 A
 			q(38158),	-- Legion 100-109 A
 			q(38169),	-- Legion 100-109 A
 			q(38171),	-- Legion 100-109 A
 			q(38172),	-- Legion 100-109 A
+			q(38119),	-- Legion 100-109 H
+			q(38130),	-- Legion 100-109 H
+			q(38141),	-- Legion 100-109 H
 			q(38159),	-- Legion 100-109 H
 			q(38170),	-- Legion 100-109 H
 			q(38173),	-- Legion 100-109 H

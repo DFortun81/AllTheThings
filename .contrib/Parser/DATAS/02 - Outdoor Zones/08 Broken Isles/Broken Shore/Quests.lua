@@ -418,7 +418,6 @@ _.Zones =
 				}),
 				q(46773, {	-- The Command Center
 					["sourceQuests"] = { 46245 },	-- Begin Construction (probably?  i didn't pick it up until after doing 'defending broken isles' and finishing my class campaign)
-					["repeatable"] = true,	-- technically isOccasional, lol
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["coord"] = { 44.4, 63.1, BROKEN_SHORE },
 				}),
@@ -440,13 +439,11 @@ _.Zones =
 				}),
 				q(46772, {	-- The Mage Tower
 					["sourceQuests"] = { 46773 },	-- The Command Center
-					["repeatable"] = true,
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["coord"] = { 44.4, 63.1, BROKEN_SHORE },
 				}),
 				q(46774, {	-- The Nether Disruptor
 					["provider"] = { "n", 120183 },	-- Commander Chambers
-					["repeatable"] = true,
 					["g"] = {
 						i(147451),	-- Armorcrafter's Commendation
 					},
