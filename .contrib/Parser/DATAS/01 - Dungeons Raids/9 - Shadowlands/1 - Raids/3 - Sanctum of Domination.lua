@@ -1363,10 +1363,10 @@ _.HiddenQuestTriggers = {
 
 	q(64493),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
 	q(64494),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
-	q(64495),	-- Fatescribe Roh-Kalo (Heroic) / (Heroic-Week 2)
+	q(64495),	-- Fatescribe Roh-Kalo (Heroic)
+	q(64496),	-- Fatescribe Roh-Kalo (Mythic)
 	q(64636),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
 	q(64663),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
-	-- q( ),	-- Fatescribe Roh-Kalo (Mythic)
 
 	q(64497),	-- Kel'Thuzad (Normal)?
 	q(64498),	-- Kel'Thuzad (Normal)?
