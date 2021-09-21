@@ -2036,6 +2036,7 @@ local MergeObject,
 -- ex. NestObject(parent, new, newCreate, index)
 NestObject,
 -- Merges multiple Objects into an existing set of Objects so as to not duplicate any incoming Objects
+-- ex. MergeObjects(group, group2, newCreate)
 MergeObjects,
 -- Nests multiple Objects under another Object, only creating the 'g' group if necessary
 -- ex. NestObjects(parent, group, newCreate)
@@ -3693,6 +3694,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						-- print("Replace root",otherRoot.key,otherRoot[otherRoot.key]);
 						root = o;
 						MergeProperties(root, otherRoot);
+						-- previous root content will be nested after
+						if otherRoot.g then
+							MergeObjects(nested, otherRoot.g);
+						end
 					else
 						root = o;
 					end
@@ -15471,7 +15476,7 @@ customWindowUpdates["AuctionData"] = function(self)
 					["visible"] = true,
 					["priority"] = 0,
 					["OnClick"] = function()
-						local val = app.GetDataMember("UnobtainableItemFilters")
+						local val = app.GetDataMember("UnobtainableItemFilters", {})
 						if val[7] then val[7] = false else val[7] = true end
 						for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 							if v[1] == 1 or v[1] == 2 or v[1] == 3 then
