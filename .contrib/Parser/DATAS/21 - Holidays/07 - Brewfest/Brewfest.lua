@@ -102,7 +102,7 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	
 	local invasion = C_QuestLog.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 12192 or 12020);
 	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for Dark Iron Invasion", _.L[invasion and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
-	GameTooltip:AddLine(" " .. icon .. " 0-30 for Ram Racing Dialog (every 12-18 hours)");
+	GameTooltip:AddLine(" " .. icon .. " 0-22 for Ram Racing Dialog (every 12-18 hours)");
 	GameTooltip:AddLine(" ");
 	GameTooltip:AddDoubleLine("Currently", GetItemCount(itemID, true) .. "x " .. icon .. " " .. item.link);
 	
@@ -113,14 +113,14 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	if now > start and now < ends then
 		local totalDays = math.ceil((ends - start) / (24 * 60 * 60));
 		local m = 60 + (25 * totalDays);
-		GameTooltip:AddDoubleLine("Total Possible*", m .. " - " .. (m + (30 * totalDays)) .. "x " .. icon .. " " .. item.link);
+		GameTooltip:AddDoubleLine("Total Possible*", m .. " - " .. (m + (22 * totalDays)) .. "x " .. icon .. " " .. item.link);
 		
 		local remaining = math.ceil((ends - now) / (24 * 60 * 60)) - 1;
 		if remaining <= 1 then
-			GameTooltip:AddDoubleLine("Total Remaining*", baseAmount .. " - " .. (baseAmount + 30) .. "x " .. icon .. " " .. item.link);
+			GameTooltip:AddDoubleLine("Total Remaining*", baseAmount .. " - " .. (baseAmount + 22) .. "x " .. icon .. " " .. item.link);
 		else
 			local baseAmount = (barked and 0 or 15) + (invasion and 0 or 10) + (25 * remaining);
-			GameTooltip:AddDoubleLine("Total Remaining*", baseAmount .. " - " .. (baseAmount + (30 * remaining)) .. "x " .. icon .. " " .. item.link);
+			GameTooltip:AddDoubleLine("Total Remaining*", baseAmount .. " - " .. (baseAmount + (22 * remaining)) .. "x " .. icon .. " " .. item.link);
 		end
 	end
 	GameTooltip:AddLine("* Based on if you didn't miss a single day and only whole days count.");
