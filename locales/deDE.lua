@@ -1166,10 +1166,12 @@ for key,value in pairs({
 	[181153] = "Gesucht: Kel'gash der Boshafte",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Steckbrief",	-- Wanted Poster
 	[181672] = "Weidenmann",	-- Wickerman Effigy
+	[181698] = "Leerstein",	-- Voidstone
 	[181748] = "Blutkristall",	-- Blood Crystal
 	[181756] = "Zerfleddertes altes Buch",	-- Battered Ancient Book
 	[181889] = "Steckbrief",	-- Wanted Poster
 	[182032] = "Galaens Tagebuch",	-- Galaen's Journal
+	[182058] = "Fleischwagen der Geißel",	-- Scourge Meat Wagon
 	[182115] = "Steckbrief",	-- Wanted Poster
 	[182165] = "Steckbrief",	-- Wanted Poster
 	[182392] = "Aushang von Garadar",	-- Garadar Bulletin Board

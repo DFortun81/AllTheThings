@@ -1165,10 +1165,12 @@ for key,value in pairs({
 	[181153] = "Manifesto dei Ricercati: Kel'gash il Perfido",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[181672] = "Effige dell'Uomo di Paglia",	-- Wickerman Effigy
+	[181698] = "Pietra del Vuoto",	-- Voidstone
 	[181748] = "Cristallo di Sangue",	-- Blood Crystal
 	[181756] = "Antico Libro Rovinato",	-- Battered Ancient Book
 	[181889] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[182032] = "Diario di Galaen",	-- Galaen's Journal
+	[182058] = "Carro dei Morti del Flagello",	-- Scourge Meat Wagon
 	[182115] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[182165] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[182392] = "Bacheca di Garadar",	-- Garadar Bulletin Board
