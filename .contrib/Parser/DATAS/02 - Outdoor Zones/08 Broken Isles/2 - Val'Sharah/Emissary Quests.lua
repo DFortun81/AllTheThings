@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
-			n(-169, {	-- Emissary Quests
+			n(EMISSARY_QUESTS, {
 				q(42170, {	-- The Dreamweavers
 					["repeatable"] = true,
 					["provider"] = { "n", 106901 },	-- Sylvia Hartshorn <Dreamweaver Emissary>
@@ -18,10 +18,8 @@ _.Zones =
 								{"finalize"},	-- Push the processed items on to the finalized stack and ignore further queries on them.
 								{"select", "mapID", VALSHARAH},
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"where", "headerID", WORLD_QUESTS },
+								{"where", "headerID", ZONE_REWARDS },
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"not", "headerID", QUESTS},	-- Not the 'Quests' header
-								{"is", "headerID"},	-- Ignore all of the non-npcID entries. (set headers only)
 							},
 							["groups"] = {
 								i(144319),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 3)
@@ -50,22 +48,20 @@ _.Zones =
 						})),
 					},
 				}),
-				n(-206, {	-- Paragon
-					q(46747, {	-- Supplies From the Dreamweavers
-						["repeatable"] = true,
-						["provider"] = { "n", 106901 },	-- Sylvia Hartshorn <Dreamweaver Emissary>
-						["groups"] = {
-							i(152103, {	-- Dreamweaver Cache
-								i(147804),	-- Wild Dreamrunner
-							}),
-							un(REMOVED_FROM_GAME, i(146898, {	-- Dreamweaver Cache
-								["sym"] = {
-									{"select", "itemID", 152103},	-- Dreamweaver Cache
-									{"pop"},
-								},
-							})),
-						},
-					}),
+				q(46747, {	-- Supplies From the Dreamweavers
+					["repeatable"] = true,
+					["provider"] = { "n", 106901 },	-- Sylvia Hartshorn <Dreamweaver Emissary>
+					["groups"] = {
+						i(152103, {	-- Dreamweaver Cache
+							i(147804),	-- Wild Dreamrunner
+						}),
+						un(REMOVED_FROM_GAME, i(146898, {	-- Dreamweaver Cache
+							["sym"] = {
+								{"select", "itemID", 152103},	-- Dreamweaver Cache
+								{"pop"},
+							},
+						})),
+					},
 				}),
 			}),
 		}),

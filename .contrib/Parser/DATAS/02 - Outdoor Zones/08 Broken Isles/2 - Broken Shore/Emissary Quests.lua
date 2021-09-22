@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(BROKEN_SHORE, {
-			n(-169, {	-- Emissary Quests
+			n(EMISSARY_QUESTS, {
 				q(48641, {	-- Armies of Legionfall
 					["repeatable"] = true,
 					["provider"] = { "n", 120414 },	-- Captain Ruysantos
@@ -41,23 +41,21 @@ _.Zones =
 						})),
 					},
 				}),
-				n(-206,  {	-- Paragon
-					q(46777, {	-- The Bounties of Legionfall
-						["repeatable"] = true,
-						["provider"] = { "n", 120414 },	-- Captain Ruysantos
-						["coord"] = { 42.2, 58.8, BROKEN_SHORE },
-						["g"] = {
-							i(152108, {	-- Legionfall Chest
-								i(147841),	-- Orphaned Felbat (PET!)
-							}),
-							un(REMOVED_FROM_GAME, i(147361, {	-- Legionfall Chest
-								["sym"] = {
-									{"select", "itemID", 152108},	-- Legionfall Chest
-									{"pop"},
-								},
-							})),
-						},
-					}),
+				q(46777, {	-- The Bounties of Legionfall
+					["repeatable"] = true,
+					["provider"] = { "n", 120414 },	-- Captain Ruysantos
+					["coord"] = { 42.2, 58.8, BROKEN_SHORE },
+					["g"] = {
+						i(152108, {	-- Legionfall Chest
+							i(147841),	-- Orphaned Felbat (PET!)
+						}),
+						un(REMOVED_FROM_GAME, i(147361, {	-- Legionfall Chest
+							["sym"] = {
+								{"select", "itemID", 152108},	-- Legionfall Chest
+								{"pop"},
+							},
+						})),
+					},
 				}),
 			}),
 		}),

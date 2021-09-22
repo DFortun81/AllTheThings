@@ -19,7 +19,7 @@ _.Zones =
 								{"select", "mapID", HIGHMOUNTAIN},
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 								{"where", "headerID", ZONE_REWARDS },
-								{"is", "headerID"},	-- Ignore all of the non-npcID entries. (set headers only)
+								{"pop"},
 							},
 							["groups"] = {
 								i(144313),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 3)

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
-			n(-169, {	-- Emissary Quests
+			n(EMISSARY_QUESTS, {
 				q(42421, {	-- The Nightfallen
 					["repeatable"] = true,
 					["providers"] = {
@@ -21,10 +21,8 @@ _.Zones =
 								{"finalize"},	-- Push the processed items on to the finalized stack and ignore further queries on them.
 								{"select", "mapID", SURAMAR},
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"where", "headerID", WORLD_QUESTS },
+								{"where", "headerID", ZONE_REWARDS },
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"not", "headerID", QUESTS},	-- Not the 'Quests' header
-								{"is", "headerID"},	-- Ignore all of the non-npcID entries. (set headers only)
 							},
 							["g"] = {
 								i(140495),	-- Torn Invitation
@@ -53,26 +51,24 @@ _.Zones =
 						})),
 					},
 				}),
-				n(-206, {	-- Paragon
-					q(46748, {	-- Supplies From the Nightfallen
-						["repeatable"] = true,
-						["providers"] = {
-							{ "n", 97140 },	-- Thalyssra
-							{ "n", 115736 },	-- First Arcanist Thalyssra
-						},
-						["g"] = {
-							i(152105, {	-- Nightfallen Cache
-								i(143764),	-- Leywoven Flying Carpet
-								i(140495),	-- Torn Invitation [Fox Mount Quest]
-							}),
-							un(REMOVED_FROM_GAME, i(146900, {	-- Nightfallen Cache
-								["sym"] = {
-									{"select", "itemID", 152105},	-- Nightfallen Cache
-									{"pop"},
-								},
-							})),
-						},
-					}),
+				q(46748, {	-- Supplies From the Nightfallen
+					["repeatable"] = true,
+					["providers"] = {
+						{ "n", 97140 },	-- Thalyssra
+						{ "n", 115736 },	-- First Arcanist Thalyssra
+					},
+					["g"] = {
+						i(152105, {	-- Nightfallen Cache
+							i(143764),	-- Leywoven Flying Carpet
+							i(140495),	-- Torn Invitation [Fox Mount Quest]
+						}),
+						un(REMOVED_FROM_GAME, i(146900, {	-- Nightfallen Cache
+							["sym"] = {
+								{"select", "itemID", 152105},	-- Nightfallen Cache
+								{"pop"},
+							},
+						})),
+					},
 				}),
 			}),
 		}),

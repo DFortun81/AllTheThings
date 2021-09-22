@@ -7,6 +7,7 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
 			n(ACHIEVEMENTS, {
+				ach(11262),	-- Adventurer of Val'sharah
 				ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -232,6 +233,7 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(11258),	-- Treasures of Val'sharah
 			}),
 		}),
 	}),

@@ -96,6 +96,9 @@ _.Zones =
 							i(132831),	-- Worthy Soul
 						},
 					}),
+					n(BONUS_OBJECTIVES, {
+						q(38343),	-- Raze Hel
+					}),
 				}),
 			}),
 		}),

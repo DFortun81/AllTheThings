@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
-			filter(101,  {	-- Pet Battles
+			filter(BATTLE_PETS,  {
 				p(1738),	-- Auburn Ringtail
 				p(398),	-- Black Rat
 				p(380),	-- Bucktooth Flapper

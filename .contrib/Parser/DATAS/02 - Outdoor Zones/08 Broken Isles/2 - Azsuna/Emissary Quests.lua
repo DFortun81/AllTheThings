@@ -20,7 +20,6 @@ _.Zones =
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 								{"where", "headerID", ZONE_REWARDS },
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"is", "headerID"},	-- Ignore all of the non-npcID entries.
 							},
 							["groups"] = {
 								i(144316),	-- Formula: Enchant Neck - Mark of the Quick (Rank 3)
@@ -61,7 +60,6 @@ _.Zones =
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 								{"where", "headerID", ZONE_REWARDS },
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"is", "headerID"},	-- Ignore all of the non-npcID entries.
 							},
 						}),
 						un(REMOVED_FROM_GAME, i(137565, {	-- Warden's Field Kit

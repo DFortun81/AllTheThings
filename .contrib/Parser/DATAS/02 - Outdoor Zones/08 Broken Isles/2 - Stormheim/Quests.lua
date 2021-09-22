@@ -1059,7 +1059,6 @@ _.Zones =
 					q(39998, {	-- Drive Back the Tideskorn
 						["coord"] = { 69.2, 68.0, STORMHEIM },
 					}),
-					q(38343),	-- Raze Hel
 					q(40111, {	-- Rout the Bilgefin Invaders
 						["coord"] = { 81.0, 61.4, STORMHEIM },
 					}),

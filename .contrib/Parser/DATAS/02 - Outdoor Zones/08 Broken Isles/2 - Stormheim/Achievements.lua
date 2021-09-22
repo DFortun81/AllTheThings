@@ -7,6 +7,7 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
 			n(ACHIEVEMENTS, {
+				ach(11263),	-- Adventurer of Stormheim
 				ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -205,6 +206,7 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(11259),	-- Treasures of Stormheim
 				ach(10790, {	-- Vrykul Story, Bro
 					crit(1, {	-- Greymane's Gambit
 						["sourceQuests"] = {

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(425, {	-- Ash Viper
 					["crs"] = { 61385 },	-- Ash Viper
 				}),
