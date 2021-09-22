@@ -850,7 +850,11 @@ app.L = {
 		[-15] = "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02",					-- Exploration
 		[-16] = app.asset("Interface_Rare"),												-- Rare
 		[-17] = app.asset("Interface_Quest_header"),										-- Quests
+		-- #if BEFORE WOD
 		[-18] = "Interface\\Icons\\INV_Misc_Bag_13", 										-- Rewards
+		-- #else
+		[-18] = "Interface\\Icons\\inv_misc_coinbag_special", 								-- Rewards
+		-- #endif
 		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
 		[-20] = "Interface\\Icons\\INV_Misc_Coin_02",										-- Common Vendor Items
 		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
@@ -1173,7 +1177,6 @@ app.L = {
 		[-904] = "Interface\\Icons\\ui_torghast",											-- Wrath of the Jailer
 		[-905] = 3675495,																	-- Command Table
 		[-906] = 3675495,																	-- Tier 1: Tactical Insight
-		[-908] = 901746,																	-- Rewards
 		[-913] = "Interface\\Icons\\ui_torghast",											-- Tormentors of Torghast
 
 		[-915] = "Interface\\Icons\\sanctum_features_animadiversion",						-- Anima Conductor
@@ -1945,7 +1948,6 @@ app.L = {
 		[-905] = GetSpellInfo(280630),											-- Command Table
 		[-906] = "Tier 1: Tactical Insight",									-- Tier 1: Tactical Insight
 		[-907] = "Dead Blanchy",												-- Dead Blanchy
-		[-908] = REWARDS,														-- Rewards
 		[-909] = "Hunt: Death Elementals",										-- Hunt: Death Elementals
 		[-910] = "Hunt: Alpha Devourers",										-- Hunt: Alpha Devourers
 		[-911] = "Hunt: Shadehounds",											-- Hunt: Shadehounds

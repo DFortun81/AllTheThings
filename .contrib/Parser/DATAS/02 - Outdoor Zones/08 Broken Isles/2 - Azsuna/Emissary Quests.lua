@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
-			n(-169, {	-- Emissary Quests
+			n(EMISSARY_QUESTS, {
 				q(42420, {	-- Court of Farondis
 					["repeatable"] = true,
 					["provider"] = { "n", 107376 },	-- Veridis Fallon <Court of Farondis Emissary>
@@ -20,8 +20,9 @@ _.Zones =
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 								{"where", "headerID", WORLD_QUESTS },
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"not", "headerID", QUESTS},	-- Not the 'Quests' header
-								{"is", "headerID"},	-- Ignore all of the non-npcID entries. (set headers only)
+								{"where", "headerID", REWARDS },
+								{"pop"},	-- Push all of the groups contained to the processing layer.
+								{"is", "headerID"},	-- Ignore all of the non-npcID entries.
 							},
 							["groups"] = {
 								i(144316),	-- Formula: Enchant Neck - Mark of the Quick (Rank 3)
@@ -62,8 +63,9 @@ _.Zones =
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 								{"where", "headerID", WORLD_QUESTS },
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"is", "headerID"},	-- Ignore all of the non-npcID entries. (set headers only)
-								{"exclude", "headerID", -17 },	-- Exclude Quests Header
+								{"where", "headerID", REWARDS },
+								{"pop"},	-- Push all of the groups contained to the processing layer.
+								{"is", "headerID"},	-- Ignore all of the non-npcID entries.
 							},
 						}),
 						un(REMOVED_FROM_GAME, i(137565, {	-- Warden's Field Kit
@@ -88,37 +90,35 @@ _.Zones =
 						})),
 					},
 				}),
-				n(-206,  {	-- Paragon
-					q(46745, {	-- Supplies from the Court
-						["repeatable"] = true,
-						["provider"] = { "n", 107376 },	-- Veridis Fallon <Court of Farondis Emissary>
-						["g"] = {
-							i(152102, {	-- Farondis Chest
-								i(147806),	-- Cloudwing Hippogryph (MOUNT!)
-							}),
-							un(REMOVED_FROM_GAME,  i(146897, {	-- Farondis Chest
-								["sym"] = {
-									{"select", "itemID", 152102},	-- Farondis Chest
-									{"pop"},
-								},
-							})),
-						},
-					}),
-					q(46749, {	-- Supplies From the Wardens
-						["repeatable"] = true,
-						["provider"] = { "n", 107379 },	-- Marin Bladewing <Wardens Emissary>
-						["g"] = {
-							i(152107, {	-- Warden's Supply Kit
-								i(147843),	-- Sira's Extra Cloak (TOY!)
-							}),
-							un(REMOVED_FROM_GAME, i(146902, {	-- Warden's Supply Kit
-								["sym"] = {
-									{"select", "itemID", 152107},	-- Warden's Supply Kit
-									{"pop"},
-								},
-							})),
-						},
-					}),
+				q(46745, {	-- Supplies from the Court
+					["repeatable"] = true,
+					["provider"] = { "n", 107376 },	-- Veridis Fallon <Court of Farondis Emissary>
+					["g"] = {
+						i(152102, {	-- Farondis Chest
+							i(147806),	-- Cloudwing Hippogryph (MOUNT!)
+						}),
+						un(REMOVED_FROM_GAME,  i(146897, {	-- Farondis Chest
+							["sym"] = {
+								{"select", "itemID", 152102},	-- Farondis Chest
+								{"pop"},
+							},
+						})),
+					},
+				}),
+				q(46749, {	-- Supplies From the Wardens
+					["repeatable"] = true,
+					["provider"] = { "n", 107379 },	-- Marin Bladewing <Wardens Emissary>
+					["g"] = {
+						i(152107, {	-- Warden's Supply Kit
+							i(147843),	-- Sira's Extra Cloak (TOY!)
+						}),
+						un(REMOVED_FROM_GAME, i(146902, {	-- Warden's Supply Kit
+							["sym"] = {
+								{"select", "itemID", 152107},	-- Warden's Supply Kit
+								{"pop"},
+							},
+						})),
+					},
 				}),
 			}),
 		}),

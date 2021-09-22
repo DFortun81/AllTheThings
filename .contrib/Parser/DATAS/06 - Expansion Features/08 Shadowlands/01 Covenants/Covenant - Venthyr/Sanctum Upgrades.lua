@@ -251,7 +251,7 @@ _.ExpansionFeatures =
 									["u"] = NOBLEGARDEN,
 								}),
 							}),
-							n(-908, {	-- Rewards
+							n(REWARDS, {
 								["description"] = "Some rewards drop from the non-Extravagant tribute chests, but targeting the Extravagant tribute from Elated guests is the best way to get rare loot.",	-- typically a few pieces will drop from the regular/medium chests, but it appears to be the same loot that drops from Extravagant chests - just listing the Extravagant chest for source and duplication reduction, especially since some pieces drop from multiple guests' chests
 								["g"] = {
 								--	TODO: the following tributes do not have any/much info on wowhead, check back and add more drops later:
@@ -2385,7 +2385,7 @@ _.ExpansionFeatures =
 										}),
 									}),
 								}),
-								n(-908, {	-- Rewards
+								n(REWARDS, {
 									i(183798),	-- Silessa's Battle Harness (MOUNT!)
 									i(183855),	-- Stony's Infused Ruby (PET!)
 									i(181064),	-- Burnished Death Shroud Belt

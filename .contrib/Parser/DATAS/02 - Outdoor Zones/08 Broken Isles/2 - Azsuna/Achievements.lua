@@ -7,32 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			n(ACHIEVEMENTS, {
-				ach(10994, {	-- A Glorious Campaign
-					cl(PALADIN, {
-						["classes"] = { PALADIN },
-						["g"] = {
-							q(43490),	-- Aponi's Trail
-						},
-					}),
-					cl(ROGUE, {
-						["classes"] = { ROGUE },
-						["g"] = {
-							q(46324, {	-- False Orders
-								["races"] = HORDE_ONLY,
-							}),
-							q(45835, {	-- False Orders
-								["races"] = ALLIANCE_ONLY,
-							}),
-						},
-					}),
-					cl(WARLOCK, {
-						["classes"] = { WARLOCK },
-						["g"] = {
-							q(45024),	-- Cult Culling
-							q(45026),	-- Expending Fel Energy
-						},
-					}),
-				}),
 				ach(11261),		-- Adventurer of Azsuna
 				ach(10763, {	-- Azsuna Matata
 					crit(1, {	-- Behind Legion Lines
@@ -217,6 +191,7 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(11256),	-- Treasures of Azsuna
 			}),
 		}),
 	}),

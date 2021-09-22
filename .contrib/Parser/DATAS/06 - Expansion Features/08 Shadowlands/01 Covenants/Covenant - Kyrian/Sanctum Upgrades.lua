@@ -264,7 +264,7 @@ _.ExpansionFeatures =
 									ach(14349),	-- The Path Towards Ascension 24
 								}))),
 							}),
-							n(-908, {	-- Rewards
+							n(REWARDS, {
 								n(172408, {	-- Alderyn [& Myn'ir]
 									["crs"] = { 172409 },	-- Myn'ir
 									["g"] = {
@@ -1096,7 +1096,7 @@ _.ExpansionFeatures =
 							n(-946, {	-- Tier 4: Teachings of Wisdom
 							}),
 							n(-947, {	-- Tier 5: Trials of Humility
-								n(-908, {	-- Rewards
+								n(REWARDS, {
 								--	TODO: cloaks may need to be tagged with classes based on armor proficiency (like if leather users can't learn/use the 'cloth' set cloak)
 								--	*not sure about 3 items marked with asterisk
 									i(181287),	-- Halo of the Reverent*

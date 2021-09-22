@@ -378,7 +378,7 @@ _.ExpansionFeatures =
 									["coord"] = { 24.2, 38.8, MALDRAXXUS },
 								}),
 							}),
-							n(-908, {	-- Rewards
+							n(REWARDS, {
 								["description"] = "The cosmetic items under this header are occasionally random rewards from the Weekly Quests from your Constructs.",
 								["g"] = {
 									i(184843, {	-- Salvaged Supplies
@@ -785,7 +785,7 @@ _.ExpansionFeatures =
 									["description"] = "Becomes available after you research Abomination Factory Tier 5 in your sanctum.",
 								}),
 							}),
-							n(-908, {	-- Rewards
+							n(REWARDS, {
 								["description"] = "The cosmetic items under this header are occasionally random rewards from doing Maldraxxus world quests with Unity as your active abomination.",
 								["g"] = {
 									i(182543),	-- Duty-Bound Conjurer's Cape

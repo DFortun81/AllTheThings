@@ -803,86 +803,11 @@ _.Zones =
 					}),
 				}),
 		--[[ TODO: These quests will be organized soon™
-				q(38961),	-- Eye of Azshara: The Depraved Nightfallen
-				q(41167),	-- Fel Fragments
-				q(40527),	-- Finishing Touches
-				q(40528),	-- Finishing Touches
-				q(40526),	-- Finishing Touches
-				q(41175),	-- Fit for an Elven Queen
-				q(40144),	-- Glielle
-				q(41177),	-- Goblin Archaeology
-				q(40872),	-- Going Out With a Bang
-				q(40875),	-- Going to Waste
-				q(38948),	-- Hard Times
 				q(43561),	-- I Believe I Can Fly!
-				q(40874),	-- I'd Do It Myself, But...
-				q(37908),	-- Inquisitor Ernstenbok
-				q(40556),	-- Jabrul Needs You
-				q(40873),	-- Keep Yer Powder Dry
-				q(42691),	-- Leyworm Lure
-				q(38785),	-- Living Leystone Sample
 				q(43519),	-- Lucid Strength
-				q(38952),	-- Meticulous Precision
-				q(41181),	-- Narrowing Down
-				q(39921),	-- Neltharion's Lair: Rod of Azure
-				q(37928),	-- Normantis the Deposed
-				q(44873),	-- Oculeth Ex Machina
-				q(39920),	-- On Azure Wings
-				q(41164),	-- One Step Closer
-				q(40855),	-- Our Man in Azsuna
-				q(39934),	-- Our New Allies
-				q(40056),	-- Our New Allies
-				q(41161),	-- Out of the Frying Pan
-				q(39906),	-- Prepping For Battle
-				q(45795),	-- Presence of Power
-				q(37728),	-- Presentation is Everything
-				q(38061),	-- Pridelord Meowl
-				q(41159),	-- Process of Elimination
-				q(41771),	-- Recharging the Blade
-				q(43523),	-- Repaid Debt
-				q(38803),	-- Rin'thissa
-				q(38947),	-- Runic Catgut
-				q(43527),	-- Saving the Guard
 				q(40133),	-- Scrap of Pants
-				q(38955),	-- Sew Far, Sew Good
-				q(46795),	-- Ship - Azsuna
-				q(46808),	-- Ship - Highmountain
-				q(46801),	-- Ship - Val'sharah
-				q(41176),	-- Sifting Through the Rubble
-				q(38949),	-- So You Think You Can Sew
-				q(45175),	-- Soul Prism of the Illidari
-				q(40131),	-- Stonehide Leather Sample
-				q(40141),	-- Stormscale Sample
-				q(41288),	-- Supplies Needed: Aethril
-				q(41327),	-- Supplies Needed: Stormscales
-				q(38957),	-- Taking Inspiration
-				q(43518),	-- Tempering Darkness
-				q(41163),	-- The Apocalypse Bringer
-				q(43520),	-- The Emerald Nightmare: In Nightmares
-				q(38963),	-- The Final Lesson?
-				q(45174),	-- The Hunt for Illidan Stormrage
-				q(41185),	-- The Keys to Success
-				q(41168),	-- The Purple Hills of Mac'Aree
-				q(41170),	-- The Relic Renewed
-				q(41171),	-- The Reliquary Calls
 				q(37660),	-- The Scythe of Souls
-				q(38950),	-- The Wayward Tailor
-				q(43581),	-- The Wisdom of Patience
-				q(37963),	-- Those Beyond Redemption
-				q(47064),	-- Tracking Quest
-				q(44081),	-- Treacherous Leyrunners
-				q(37649),	-- Treasure: Offerings for the Giants
-				q(45176),	-- Trial of Valor: The Once and Future Lord of Shadows
-				q(41184),	-- Tried and True
-				q(39916),	-- Turnabout Betrayal
-				q(41182),	-- Uncovering the Orb of Sciallax
-				q(41180),	-- Unspeakable Power
-				q(40130),	-- Washed Clean
-				q(41179),	-- What Once Was Lost
 				q(37930),	-- Whelp? That Happened.
-				q(38956),	-- Where's Lyndras Again?
-				q(38954),	-- Where's Lyndras?
-				q(41174),	-- Worth Its Weight
 				--]]
 			}),
 		}),

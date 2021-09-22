@@ -744,13 +744,8 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				n(-322,  {	-- Cloak
-					i(134334),	-- Disgraced Court Cloak
-					i(134246),	-- Herringbone Drape
-				}),
-				n(-3241, {	-- Arcane Singed Set
-					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
-					["g"] = {
+				n(REWARDS, {
+					n(-163, {	-- Armor
 						i(134348),	-- Arcane Singed Aurora
 						i(134353),	-- Arcane Singed Mantle
 						i(134351),	-- Arcane Singed Robe
@@ -759,11 +754,6 @@ _.Zones =
 						i(134347),	-- Arcane Singed Cord
 						i(134350),	-- Arcane Singed Leggings
 						i(134352),	-- Arcane Singed Slippers
-					},
-				}),
-				n(-3248, {	-- Seawitch Set
-					["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
-					["g"] = {
 						i(134260),	-- Seawitch Hood
 						i(134265),	-- Seawitch Mantle
 						i(134263),	-- Seawitch Robes
@@ -772,11 +762,6 @@ _.Zones =
 						i(134259),	-- Seawitch Cinch
 						i(134262),	-- Seawitch Leggings
 						i(134264),	-- Seawitch Sandals
-					},
-				}),
-				n(-3271, {	-- Brinewashed Set
-					["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
-					["g"] = {
 						i(134240),	-- Brinewashed Leather Cowl
 						i(134242),	-- Brinewashed Leather Shoulderpads
 						i(134241),	-- Brinewashed Leather Vest
@@ -785,11 +770,6 @@ _.Zones =
 						i(134243),	-- Brinewashed Leather Belt
 						i(134238),	-- Brinewashed Leather Pants
 						i(134237),	-- Brinewashed Leather Boots
-					},
-				}),
-				n(-3264, {	-- Mana-Saber Set
-					["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
-					["g"] = {
 						i(134328),	-- Mana-Saber Hide Hood
 						i(134330),	-- Mana-Saber Hide Shoulders
 						i(134329),	-- Mana-Saber Hide Jerkin
@@ -798,11 +778,6 @@ _.Zones =
 						i(134331),	-- Mana-Saber Hide Belt
 						i(134326),	-- Mana-Saber Hide Pants
 						i(134325),	-- Mana-Saber Hide Boots
-					},
-				}),
-				n(-3282, {	-- Manaburst Set
-					["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
-					["g"] = {
 						i(134343),	-- Manaburst Helm
 						i(134345),	-- Manaburst Spaulders
 						i(134346),	-- Manaburst Chainmail
@@ -811,11 +786,6 @@ _.Zones =
 						i(134339),	-- Manaburst Waistguard
 						i(134344),	-- Manaburst Legguards
 						i(134342),	-- Manaburst Greaves
-					},
-				}),
-				n(-3276, {	-- Sea Stalker's Set
-					["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
-					["g"] = {
 						i(134255),	-- Sea Stalker's Hood
 						i(134257),	-- Sea Stalker's Mantle
 						i(134258),	-- Sea Stalker's Shirt
@@ -824,11 +794,6 @@ _.Zones =
 						i(134251),	-- Sea Stalker's Cinch
 						i(134256),	-- Sea Stalker's Leggings
 						i(134254),	-- Sea Stalker's Boots
-					},
-				}),
-				n(-3305, {	-- Coralplate Set
-					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
-					["g"] = {
 						i(134226),	-- Coralplate Helmet
 						i(134228),	-- Coralplate Pauldrons
 						i(134223),	-- Coralplate Chestguard
@@ -837,11 +802,6 @@ _.Zones =
 						i(134225),	-- Coralplate Girdle
 						i(134227),	-- Coralplate Legguards
 						i(134229),	-- Coralplate Sandstompers
-					},
-				}),
-				n(-3304, {	-- Ley-Scarred Set
-					["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
-					["g"] = {
 						i(134314),	-- Ley-Scarred Helm
 						i(134316),	-- Ley-Scarred Pauldrons
 						i(134311),	-- Ley-Scarred Chestplate
@@ -850,39 +810,41 @@ _.Zones =
 						i(134313),	-- Ley-Scarred Waistplate
 						i(134315),	-- Ley-Scarred Greaves
 						i(134317),	-- Ley-Scarred Sabatons
-					},
+					}),
+					n(-384, {	-- Neck
+						i(134319),	-- Depleted Mana Crystal Pendant
+					}),
+					n(-385, {	-- Finger
+						i(134245),	-- Nazjatar Manapearl Ring
+						i(134323),	-- Glinting Quartz Ring
+					}),
+					n(-386,  {	-- Trinkets
+						i(134234),	-- Barnacled Azsharan Insignia
+						i(134248),	-- Leycoral Shard
+						i(134247),	-- Silent Seashell
+						i(136750),	-- Vault Guardian's Talisman
+					}),
+					n(-387,  {	-- Relics
+						i(141280),	-- Demonic Shackles
+						i(141273),	-- Echo of Eons
+						i(143702),	-- Eternity of Wisdom
+						i(141274),	-- Frozen Ley Scar
+						i(141272),	-- Mana-Saber Eye
+						i(141257),	-- Roar of the Ocean
+						i(141259),	-- Seawitch's Foci
+						i(143684),	-- Slavemaster's Malevolence
+						i(141258),	-- Whirlpool Seed
+					}),
+					f(200,  {	-- Recipes
+						i(137843),	-- Design: Azsunite Pendant (Rank 3)
+						i(128596),	-- Formula: Enchant Ring - Word of Critical Strike (Rank 3)
+						i(137963),	-- Pattern: Silkweave Epaulets (Rank 3)
+						i(137914),	-- Recipe: Battlebound Spaulders (Rank 3)
+						i(123931),	-- Recipe: Leystone Greaves (Rank 3)
+						i(137711),	-- Schematic: Blink-Trigger Headgun (Rank 3)
+						i(137772),	-- Vantus Rune Technique: Elerethe Renferal [Rank 3]
+					}),
 				}),
-				n(-384, {	-- Neck
-					i(134319),	-- Depleted Mana Crystal Pendant
-				}),
-				n(-385, {	-- Finger
-					i(134245),	-- Nazjatar Manapearl Ring
-					i(134323),	-- Glinting Quartz Ring
-				}),
-				n(-386,  {	-- Trinkets
-					i(134234),	-- Barnacled Azsharan Insignia
-					i(134248),	-- Leycoral Shard
-					i(134247),	-- Silent Seashell
-					i(136750),	-- Vault Guardian's Talisman
-				}),
-				n(-387,  {	-- Relics
-					i(141280),	-- Demonic Shackles
-					i(141273),	-- Echo of Eons
-					i(143702),	-- Eternity of Wisdom
-					i(141274),	-- Frozen Ley Scar
-					i(141272),	-- Mana-Saber Eye
-					i(141257),	-- Roar of the Ocean
-					i(141259),	-- Seawitch's Foci
-					i(143684),	-- Slavemaster's Malevolence
-					i(141258),	-- Whirlpool Seed
-				}),
-				i(137843),	-- Design: Azsunite Pendant (Rank 3)
-				i(128596),	-- Formula: Enchant Ring - Word of Critical Strike (Rank 3)
-				i(137963),	-- Pattern: Silkweave Epaulets (Rank 3)
-				i(137914),	-- Recipe: Battlebound Spaulders (Rank 3)
-				i(123931),	-- Recipe: Leystone Greaves (Rank 3)
-				i(137711),	-- Schematic: Blink-Trigger Headgun (Rank 3)
-				i(137772),	-- Vantus Rune Technique: Elerethe Renferal [Rank 3]
 			}),
 		}),
 	}),

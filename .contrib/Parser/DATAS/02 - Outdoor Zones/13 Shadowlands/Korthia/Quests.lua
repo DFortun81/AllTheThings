@@ -7,7 +7,7 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(QUESTS, {
-				n(-908, {	-- Rewards
+				n(REWARDS, {
 					["description"] = "These pieces can be rewarded from covenant dailies in Korthia.",
 					["g"] = {
 						n(-929, {	-- Night Fae

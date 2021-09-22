@@ -763,6 +763,15 @@ _.Zones =
 				i(127923),	-- Recipe: Skaggldrynk (Rank 2)
 				i(137880),	-- Recipe: Warhide Footpads (Rank 3)
 				i(137722),	-- Schematic: Gunpack [Rank 3]
+				f(200,  {	-- Recipes
+					q(41666, {	-- Vantus Rune Work Order: Nythendra
+						["repeatable"] = true,
+						["provider"] = { "n", 106904 },	-- Valdemar Stormseeker <Valarjar Emissary>
+						["g"] = {
+							i(137768),	-- Vantus Rune Technique: Nythendra [Rank 3]
+						},
+					}),
+				}),
 			}),
 		}),
 	}),
