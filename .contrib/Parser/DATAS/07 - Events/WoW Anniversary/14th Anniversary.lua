@@ -15,7 +15,7 @@ _.WorldEvents =
 			ach(12827, {	-- 14th Anniversary
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			n(-297, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- Mailbox
+			n(MAILBOX, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {
 				i(162637, {	-- Anniversary Gift
 					i(162636),	-- Celebration Package
 					i(147881, {	-- A Slightly More Urgent Letter from the Timewalkers [Horde]

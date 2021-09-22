@@ -10,7 +10,7 @@ _.WorldEvents =
 			ach(2398, {	-- 4th Anniversary
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			n(-297, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- Mailbox
+			n(MAILBOX, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {
 				i(44819),	-- Baby Blizzard Bear
 			})),
 		},

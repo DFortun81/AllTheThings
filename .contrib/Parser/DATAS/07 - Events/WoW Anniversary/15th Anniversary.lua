@@ -1247,7 +1247,7 @@ _.WorldEvents =
 					},
 				}),
 			}),
-			n(-297, {	-- Mailbox
+			n(MAILBOX, {
 				i(172014, {	-- Anniversary Gift
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

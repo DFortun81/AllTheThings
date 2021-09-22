@@ -132,7 +132,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 							i(17724),	-- Pattern: Green Holiday Shirt
 						},
 					}),
-					n(-297, {	-- Mailbox
+					n(MAILBOX, {
 						["description"] = "Greatfather Winter will mail this toy to you approximately 1 day after you complete this quest.",
 						["g"] = {
 							n(13444, {	-- Greatfather Winter
@@ -353,7 +353,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 							i(17724),	-- Pattern: Green Holiday Shirt
 						},
 					}),
-					n(-297, {	-- Mailbox
+					n(MAILBOX, {
 						["description"] = "Greatfather Winter will mail this toy to you approximately 1 day after you complete this quest.",
 						["g"] = {
 							n(13445, {	-- Greatfather Winter

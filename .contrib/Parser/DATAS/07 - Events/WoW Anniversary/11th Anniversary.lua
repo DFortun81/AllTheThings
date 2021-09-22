@@ -15,7 +15,7 @@ _.WorldEvents =
 			ach(10058, {	-- 11th Anniversary
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			n(-297, {	-- Mailbox
+			n(MAILBOX, {
 				i(128513, {	-- Anniversary Gift
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

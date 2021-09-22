@@ -24,7 +24,7 @@ _.WorldEvents =
 				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["lvl"] = 98,
 				["groups"] = {
-					n(-297, bubbleDown({["u"] = REMOVED_FROM_GAME}, {	-- Mailbox
+					n(MAILBOX, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 						["description"] = "This item came automatically in the mail box, in some cases even equipped, once the prepatch launched due class&ability changes.",
 						["groups"] = {
 							i(140715),	-- Frost-Etched Runeblade. DK Frost

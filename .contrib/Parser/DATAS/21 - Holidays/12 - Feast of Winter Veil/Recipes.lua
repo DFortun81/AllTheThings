@@ -7,7 +7,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 	holiday(235485, {	-- Feast of Winter Veil
 		-- TODO: These are temporarily here.  They trigger Crieve to be in unsorted.  Will fix more when I revamp it - Luce.
 		f(200, {	-- Recipes
-			n(-297, {	-- Mailbox
+			n(MAILBOX, {
 				["description"] = "These recipes are mailed to characters with the corresponding profession(s) on the FIRST day of the event. They can also be bought from several seasonal vendors.",
 				["g"] = {
 					n(13444, {	-- Greatfather Winter (Note: This NPC sends mail to both factions.)

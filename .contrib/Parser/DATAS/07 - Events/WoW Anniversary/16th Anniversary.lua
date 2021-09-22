@@ -14,7 +14,7 @@ _.WorldEvents =
 			ach(14271, {	-- 16th Anniversary
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			n(-297, bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {	-- Mailbox
+			n(MAILBOX, bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {
 				i(178513),	-- Anniversary Gift
 			})),
 			n(VENDORS, bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {

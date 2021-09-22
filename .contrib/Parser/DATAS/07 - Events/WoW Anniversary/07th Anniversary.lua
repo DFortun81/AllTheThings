@@ -10,7 +10,7 @@ _.WorldEvents =
 			ach(5863, {	-- 7th Anniversary
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			n(-297, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- Mailbox
+			n(MAILBOX, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {
 				i(71134, {	-- Celebration Package
 					["description"] = "Depsite saying 8%, it was 7% during this year's celebration.",
 				}),
