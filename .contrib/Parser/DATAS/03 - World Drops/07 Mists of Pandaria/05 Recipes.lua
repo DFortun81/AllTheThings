@@ -17,11 +17,14 @@ _.WorldDrops =
 			}),
 			prof(ENGINEERING, {
 				i(100910, {	-- Schematic: Chief Engineer Jard's Journal
-					recipe(139197),	-- Advanced Refrigeration Unit
-					recipe(139176),	-- Jard's Peculiar Energy Source
-					recipe(139196),	-- Pierre
-					recipe(143714),	-- Rascal-Bot
-					recipe(139192),	-- Sky Golem
+					["spellID"] = 0,	-- Not learnable.
+					["g"] = {
+						recipe(139197),	-- Advanced Refrigeration Unit
+						recipe(139176),	-- Jard's Peculiar Energy Source
+						recipe(139196),	-- Pierre
+						recipe(143714),	-- Rascal-Bot
+						recipe(139192),	-- Sky Golem
+					},	
 				}),
 			}),
 			prof(INSCRIPTION, {
