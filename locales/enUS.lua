@@ -2439,7 +2439,7 @@ app.L = {
 		[1013] = {4, "|CFF00FFDEThis requires the Pilgrim's Bounty Holiday to be Active.|r", "Pilgrim's Bounty"},
 		[1011] = {4, "|CFF00FFDEThis requires the Pirates' Day Holiday to be Active.|r", "Pirates' Day"},
 		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be active.|r", "Stranglethorn Fishing Extravaganza"},
-		[1016] = {4, "|CFFFF0000This requires the Timewalking Event to be active.\nOnly dungeon content released during the active Timewalking expansion will be available.|r", "Timewalking"},
+		[1016] = {4, "|CFF00FFDEThis requires the Timewalking Event to be active.|r", "Timewalking"},
 		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary Event to be active.|r", "WoW's Anniversary"},
 	};
 

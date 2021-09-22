@@ -1084,7 +1084,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			}),
 			n(-321, {	-- Shoulder
 				un(REMOVED_FROM_GAME, i(19689)),	-- Blood Tiger Shoulders
-				un(REMOVED_FROM_GAME, i(15058)),	-- Stormshroud Shoulders
+				i(15058),	-- Stormshroud Shoulders
 				i(15055),	-- Volcanic Shoulders
 				i(19058),	-- Golden Mantle of the Dawn
 				i(15061),	-- Living Shoulders
@@ -1105,7 +1105,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(15090),	-- Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)
 				i(15085),	-- Wicked Leather Armor (Trainable now, old Pattern id 15773 used to teach this.)
 				un(REMOVED_FROM_GAME, i(15066)),	-- Ironfeather Breastplate
-				un(REMOVED_FROM_GAME, i(15056)),	-- Stormshroud Armor
+				i(15056),	-- Stormshroud Armor
 				i(15075),	-- Chimeric Vest
 				i(15053),	-- Volcanic Breastplate
 				i(15064),	-- Warbear Harness
@@ -1150,7 +1150,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				un(REMOVED_FROM_GAME, i(19686)),	-- Primal Batskin Gloves
 				un(REMOVED_FROM_GAME, i(15070)),	-- Frostsaber Gloves
 				i(15063),	-- Devilsaur Gauntlets
-				un(REMOVED_FROM_GAME, i(21278)),	-- Stormshroud Gloves
+				i(21278),	-- Stormshroud Gloves
 				i(15091),	-- Runic Leather Gauntlets (Trainable now, old Pattern id 15731 used to teach this.)
 				i(15083),	-- Wicked Leather Gauntlets (Trainable now, old Pattern id 15725 used to teach this.)
 				un(REMOVED_FROM_GAME, i(15074)),	-- Chimeric Gloves

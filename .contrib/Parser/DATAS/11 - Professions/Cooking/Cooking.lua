@@ -213,12 +213,14 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Lean Venison",
-					["timeline"] = { "removed 4.0.3.10000" },
+				--	["timeline"] = { "removed 4.0.3.10000" },
+				--	Added in 9.1
 					["recipeID"] = 6419
 				},
 				{
 					["name"] = "Lean Wolf Steak",
-					["timeline"] = { "removed 5.0.4.10000" },
+				--	["timeline"] = { "removed 5.0.4.10000" },
+				-- 	Added in 9.1
 					["recipeID"] = 15853
 				},
 				-- #if AFTER WOD
@@ -3035,12 +3037,8 @@ profession(COOKING, {
 			un(REMOVED_FROM_GAME, i(27736, {	-- Master Cookbook
 				["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
 			})),
-			un(REMOVED_FROM_GAME, i(5485)),	-- Recipe: Fillet of Frenzy
-			un(REMOVED_FROM_GAME, i(5489)),	-- Recipe: Lean Venison
-			i(12227, {	-- Recipe: Lean Wolf Steak
-				["timeline"] = { "added 1.11.1.5462", "removed 5.0.4" },
-			}),
-			un(REMOVED_FROM_GAME, i(3736)),	-- Recipe: Tasty Lion Steak
+			un(REMOVED_FROM_GAME, i(5485)),		-- Recipe: Fillet of Frenzy
+			un(REMOVED_FROM_GAME, i(3736)),		-- Recipe: Tasty Lion Steak
 			un(REMOVED_FROM_GAME, i(13939)),	-- Recipe: Spotted Yellowtail
 			un(REMOVED_FROM_GAME, i(13942)),	-- Recipe: Grilled Squid
 			un(REMOVED_FROM_GAME, i(35564)),	-- Recipe: Charred Bear Kabobs
