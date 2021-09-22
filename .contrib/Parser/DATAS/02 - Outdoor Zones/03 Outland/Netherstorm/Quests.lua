@@ -1064,6 +1064,9 @@ _.HiddenQuestTriggers = {
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		i(134012),	-- X-52 Rocket Helmet [Might be the transmog it applies when you use the toy itself.]
+		q(10187),	-- A Message for the Archmage
+		q(10441),	-- Peddling the Goods
+		q(10179),	-- The Custodian of Kirin'Var
 	}),
 });
 -- #endif

@@ -2491,6 +2491,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(25990),	-- Smooth Soapstone Band
 		}),
 		q(10398),	-- BETA Return to Honor Hold
+		q(10558),	-- BETA Revered Among Honor Hold
+		q(10559),	-- BETA Revered Among Thrallmar
 		q(10128),	-- BETA Saving Private Imarion
 		q(10153),	-- BETA Saving Scout Makha
 		q(10122),	-- BETA The Citadel's Reach
@@ -2511,6 +2513,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(10061),	-- BETA The Unyielding
 		q(10130),	-- BETA The Western Flank
 		q(10152),	-- BETA The Western Flank
+		q(9377),	-- BETA Thirsting For Power
+		q(10046),	-- BETA Through the Dark Portal
 		q(10138),	-- BETA Under Whose Orders?
 		q(10156),	-- BETA Under Whose Orders?
 		q(10126),	-- BETA Warboss Nekrogg's Orders

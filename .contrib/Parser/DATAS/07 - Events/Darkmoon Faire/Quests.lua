@@ -1198,6 +1198,8 @@ _.WorldEvents =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
+		q(11334),	-- He Shoots, He Scores!
+		q(11345),	-- Prizes for Pellets
 		q(29601),	-- The Darkmoon Field Guide
 	}),
 });

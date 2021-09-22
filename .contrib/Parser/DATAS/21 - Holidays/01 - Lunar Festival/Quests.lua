@@ -6,6 +6,14 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 {
 	holiday(235471, {	-- Lunar Festival
 		n(QUESTS, {
+			q(8882,  {	-- Cluster Launcher
+				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
+			}),
+			q(8880,  {	-- Cluster Rockets
+				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
+			}),
 			q(56903, {	-- Crown of Courage
 				["sourceQuests"] = { 56842 },	-- Lunar Preservation
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Courage|r transmog.",
@@ -54,6 +62,35 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			}),
 			q(8862,  {	-- Elune's Candle
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
+			}),
+			q(8863,  {	-- Festival Dumplings
+				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
+			}),
+			q(8864,  {	-- Festive Lunar Dresses
+				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
+			}),
+			q(8865,  {	-- Festive Lunar Pant Suits
+				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
+			}),
+			q(8878,  {	-- Festive Recipes
+				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
+			}),
+			q(8877,  {	-- Firework Launcher
+				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
+			}),
+			q(8881,  {	-- Large Cluster Rockets
+				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
+			}),
+			q(8879,  {	-- Large Rockets
+				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(8867,  {	-- Lunar Fireworks
 				["sourceQuests"] = {
@@ -86,6 +123,10 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(56842, {	-- Lunar Preservation
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
 				["coord"] = { 53.1, 36.0, MOONGLADE },
+			}),
+			q(8876,  {	-- Small Rockets
+				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(8870,  {	-- The Lunar Festival (A)
 				["isBreadcrumb"] = true,

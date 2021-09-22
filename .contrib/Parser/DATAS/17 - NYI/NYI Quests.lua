@@ -43,6 +43,7 @@ _.NeverImplemented =
 		tier(TBC_TIER, { -- These Quests might be ingame, very unlikely however.
 			q(24922),	-- LFGDungeons - Burning Crusade - Heroic Random - 1st
 			q(24923),	-- LFGDungeons - Burning Crusade - Heroic Random - Nth
+			q(10610),	-- Prospecting Basics
 			q(38114),	-- TBC 60-69
 			q(38125),	-- TBC 60-69
 			q(38136),	-- TBC 60-69

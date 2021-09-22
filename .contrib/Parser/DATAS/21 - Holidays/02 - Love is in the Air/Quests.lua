@@ -105,6 +105,7 @@ _.Holidays = bubbleDown({["u"] = LOVE_IS_IN_THE_AIR}, {
 			q(9024,  {	-- Aristan's Hunch
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(24636, {	-- Bonbon Blitz
 				["provider"] = { "n", 37675 },	-- Public Relations Agent
@@ -263,34 +264,50 @@ _.Holidays = bubbleDown({["u"] = LOVE_IS_IN_THE_AIR}, {
 			q(8903,  {	-- Dangerous Love
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
+			}),
+			q(8904,  {	-- Dangerous Love
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
+			}),
+			q(11558, {	-- Dangerous Love
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(8897,  {	-- Dearest Colara,
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(8898,  {	-- Dearest Colara,
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(8899,  {	-- Dearest Colara,
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(8900,  {	-- Dearest Elenia,
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(8901,  {	-- Dearest Elenia,
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(8902,  {	-- Dearest Elenia,
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(8979,  {	-- Fenstad's Hunch
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(24848, {	-- Fireworks At The Gilded Rose
 				["sourceQuests"] = { 24656 },	-- Pilfering Perfume (A)
@@ -309,6 +326,16 @@ _.Holidays = bubbleDown({["u"] = LOVE_IS_IN_THE_AIR}, {
 				["isDaily"] = true,
 				["coord"] = { 45.2, 73.8, SILVERPINE_FOREST },
 				["races"] = HORDE_ONLY,
+			}),
+			q(8981,  {	-- Gift Giving
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
+			}),
+			q(8993,  {	-- Gift Giving
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(24849, {	-- Hot On The Trail (A)
 				["sourceQuests"] = { 24848 },	-- Fireworks At The Gilded Rose
@@ -339,6 +366,7 @@ _.Holidays = bubbleDown({["u"] = LOVE_IS_IN_THE_AIR}, {
 			q(9025,  {	-- Morgan's Discovery
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(24656, {	-- Pilfering Perfume (A)
 				["sourceQuests"] = { 24655 },	-- Something Stinks (A)
@@ -383,26 +411,32 @@ _.Holidays = bubbleDown({["u"] = LOVE_IS_IN_THE_AIR}, {
 			q(9028,  {	-- The Source Revealed (A)
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(8984,  {	-- The Source Revealed (H)
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(9026,  {	-- Tracing the Source (A)
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(9027,  {	-- Tracing the Source (A)
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(8982,  {	-- Tracing the Source (H)
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(8983,  {	-- Tracing the Source (H)
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 			q(24804, {	-- Uncommon Scents (A)
 				["isBreadcrumb"] = true,
@@ -437,6 +471,7 @@ _.Holidays = bubbleDown({["u"] = LOVE_IS_IN_THE_AIR}, {
 			q(8980,  {	-- Zinge's Assessment
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
 			}),
 		}),
 	}),

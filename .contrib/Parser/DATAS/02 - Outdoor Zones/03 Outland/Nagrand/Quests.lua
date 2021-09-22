@@ -1109,6 +1109,7 @@ _.HiddenQuestTriggers = {
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(13800),	-- Get My Keys
+		q(10375),	-- Obsidian Warbeads
 		q(13799),	-- Where Are My Keys?
 	}),
 });

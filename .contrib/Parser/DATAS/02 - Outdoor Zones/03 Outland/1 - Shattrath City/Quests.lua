@@ -471,6 +471,11 @@ _.Zones =
 					["provider"] = { "n", 18584 },	-- Sal'salabim
 					["sourceQuests"] = { 10009 },	-- Crackin' Some Skulls *UNTESTED*
 				}),
+				q(10169, {	-- Losing Gracefully
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 19485 },	-- Magister Falris
+					["coord"] = { 47.0, 83.5, SHATTRATH_CITY },
+				}),
 				q(12785, {	-- Orgrimmar (Troll)
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { TROLL },
@@ -702,6 +707,7 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
+		q(10560),	-- Revered Among the Sha'tar
 		q(12479),	-- Wrath of the Lich King: Onwards to Northrend!
 		q(12480),	-- Wrath of the Lich King: Onwards to Northrend!
 	}),

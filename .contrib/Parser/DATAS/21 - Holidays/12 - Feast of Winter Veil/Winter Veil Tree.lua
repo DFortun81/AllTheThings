@@ -312,5 +312,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		i(162641),	-- Alliance Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 		i(147379),	-- Wooden Toy Axe (H) used to apply the mog
 		i(147378),	-- Wooden Toy Sword (A) (Visual usage for toy weapon set)
+		n(QUESTS, {
+			q(11528),	-- A Winter Veil Gift
+		}),
 	}),
 });
+	

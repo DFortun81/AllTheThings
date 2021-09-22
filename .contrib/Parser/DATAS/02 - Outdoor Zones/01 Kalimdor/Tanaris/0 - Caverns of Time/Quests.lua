@@ -29,3 +29,9 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(10561),	-- Revered Among the Keepers of Time
+		q(10445),	-- The Vials of Eternity
+	}),
+});

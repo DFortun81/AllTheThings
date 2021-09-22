@@ -4630,5 +4630,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, { {
 			["isYearly"] = true,
 			["_drop"] = { "g" },
 		}),
+		q(11401),	-- Call the Headless Horseman
+		q(11404),	-- Call the Headless Horseman
+		q(11405),	-- Call the Headless Horseman
 	},
 }});
