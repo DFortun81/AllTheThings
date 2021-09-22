@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(BASTION, {
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				currency(1819, {	-- Medallion of Service
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian
 				}),

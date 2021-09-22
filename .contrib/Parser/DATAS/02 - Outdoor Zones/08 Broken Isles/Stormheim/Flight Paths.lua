@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
-			n(-228,   {	-- Flight Paths
+			n(FLIGHT_PATHS, {
 				fp(1738, {	-- Cullen's Post, Stormheim
 					-- ["creatureID"] = ,	--
 					["coord"] = { 44.8, 59.2, STORMHEIM },

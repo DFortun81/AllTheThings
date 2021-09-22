@@ -141,7 +141,7 @@ _.Zones =
 								},
 							}),
 						}),
-						n(-18, {	-- Rewards
+						n(REWARDS, {
 							crit(4, {	-- Kyrian Assault
 								["achievementID"] = 15000,	-- United Front
 							}),
@@ -356,7 +356,7 @@ _.Zones =
 								},
 							}),
 						}),
-						n(-18, {	-- Rewards
+						n(REWARDS, {
 							crit(1, {	-- Necrolord Assault
 								["achievementID"] = 15000,	-- United Front
 							}),
@@ -723,7 +723,7 @@ _.Zones =
 								},
 							}),
 						}),
-						n(-18, {	-- Rewards
+						n(REWARDS, {
 							crit(3, {	-- Night Fae Assault
 								["achievementID"] = 15000,	-- United Front
 							}),
@@ -882,7 +882,7 @@ _.Zones =
 								},
 							}),
 						}),
-						n(-18, {	-- Rewards
+						n(REWARDS, {
 							crit(2, {	-- Venthyr Assault
 								["achievementID"] = 15000,	-- United Front
 							}),

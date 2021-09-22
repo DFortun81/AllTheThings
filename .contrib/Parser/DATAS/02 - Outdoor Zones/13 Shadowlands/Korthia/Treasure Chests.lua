@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 			--	TODO: (?) korthian relic boxes currently do not have questIDs and don't actually even disappear immediately when you open them - if quests for them get implemented, they need to be added
 				i(187216),	-- Soultwining Crescent
 				i(185962, {	-- Rune Chit

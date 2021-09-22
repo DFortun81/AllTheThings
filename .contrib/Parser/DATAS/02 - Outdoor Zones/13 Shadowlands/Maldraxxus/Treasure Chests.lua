@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(MALDRAXXUS, {
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				o(353627, {		-- Battlefront Rations
 					["description"] = "To unlock it, you must obtain |cFF0070ddBattlefront Ration Key|r from Thalrix the Slicer or one of the Supply Officer mobs in the area nearby.",
 					["questID"] = 60772,

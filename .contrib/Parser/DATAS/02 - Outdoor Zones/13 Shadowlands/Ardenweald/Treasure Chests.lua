@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				n(171156, {		-- Aerto <Grove Ranger>
 				--	["questID"] = 61072,
 					["coord"] = { 55.9, 21.0, ARDENWEALD },

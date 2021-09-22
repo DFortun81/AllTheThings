@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(TIMELESS_ISLE, {
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {
 				o(220986, {	-- Blackguard's Jetsam
 					["description"] = "Coordinates are for an underwater cave entrance off the coast of the island.",
 					["isWeekly"] = true,
