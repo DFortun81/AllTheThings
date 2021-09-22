@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
-			filter(101, {	-- Battle Pet
+			filter(BATTLE_PETS, {
 				p(1708, {	-- Albatross Chick
 					["crs"] = { 97018 },	-- Albatross Chick
 				}),

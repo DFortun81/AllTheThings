@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
-			n(-77, {	-- Special
+			n(SPECIAL, {
 				o(251168, {	-- Ephemeral Crystal
 					["g"] = {
 						i(138258),	-- Reins of the Long-Forgotten Hippogryph

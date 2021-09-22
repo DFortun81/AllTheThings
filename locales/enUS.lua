@@ -1518,9 +1518,9 @@ app.L = {
 -- Commonly used
 		[0] = ZONE.." "..BATTLE_PET_SOURCE_1,									-- Zone Drop
 		[-1] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,				-- Common Boss Drop
-		[-2] = BATTLE_PET_SOURCE_3,												-- Vendor
+		[-2] = TUTORIAL_TITLE20,												-- Vendor
 		[-3] = GetItemSubClassInfo(15,3),										-- World Event
-		[-4] = BATTLE_PET_SOURCE_6,												-- Achievement
+		[-4] = ACHIEVEMENTS,													-- Achievement
 		[-5] = "Prospecting",
 		[-7] = WORLD.." "..RAID_BOSSES,											-- World Bosses
 		[-9] = GDAPI_REALMTYPE_PVP,												-- PvP
