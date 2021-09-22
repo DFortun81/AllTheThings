@@ -55,6 +55,10 @@ _.WorldDrops =
 				}),
 				i(100864, {	-- Pattern: Hardened Magnificent Hide and Its Uses
 					["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
+					["spellID"] = 0,	-- Not learnable.
+					["g"] = {
+						recipe(142976),	-- Hardened Magnificent Hide
+					},
 				}),
 				i(95467),	-- Pattern: Magnificence of Leather
 				i(95468),	-- Pattern: Magnificence of Scales
