@@ -1019,6 +1019,7 @@ app.L = {
 		[-349] = "Interface\\Icons\\Ability_Mage_IceForm",									-- Cosmetic
 		[-351] = "Interface\\Icons\\Achievement_Garrison_Horde_PVE",						-- Boss Drop
 		[-355] = "Interface\\Icons\\misc_arrowlup",											-- Titanforged
+		[-356] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Assault on the Dark Portal
 		[-357] = "Interface\\Icons\\garrison_building_sparringarena",						-- Sparring Arena Outpost (Gorgond)
 		[-358] = "Interface\\Icons\\garrison_building_lumbermill",							-- Lumber Mill Outpost (Gorgrond)
 		[-363] = "Interface\\Icons\\achievement_reputation_argentchampion",					-- The Argent Tournament
