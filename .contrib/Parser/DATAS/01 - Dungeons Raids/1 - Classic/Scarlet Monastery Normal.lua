@@ -40,7 +40,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 				}),
 			}),
 			d(1,   {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(7759),	-- Archon Chestpiece
 					i(7728, {	-- Beguiler's Robes
 						["crs"] = {

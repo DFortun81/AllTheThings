@@ -21,7 +21,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 			}),
 			d(1,   {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(35654, {	-- Bindings of the Bastille
 						["crs"] = {
 							30666,	-- Azure Captain
@@ -129,7 +129,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(35654, {	-- Bindings of the Bastille
 							["crs"] = {
 								30666,	-- Azure Captain

@@ -12,7 +12,7 @@ _.Instances = { tier(CATA_TIER, {
 			d(2, {	-- Heroic
 				["lvl"] = 85,
 				["g"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(69803, {	-- Gurubashi Punisher
 							["crs"] = {
 								52348,	-- Berserking Boulder Roller

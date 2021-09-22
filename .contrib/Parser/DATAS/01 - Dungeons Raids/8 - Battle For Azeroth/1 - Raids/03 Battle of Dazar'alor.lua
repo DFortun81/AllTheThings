@@ -28,7 +28,7 @@ _.Instances = { tier(BFA_TIER, {
 				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor Rank3
 			}),
 			d(17, bubbleDown({["modID"] = 4}, {	-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165564),	-- Last Stand Greatbelt
 					i(165545),	-- Waistguard of Elemental Resistance
@@ -338,7 +338,7 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 			})),
 			d(14, bubbleDown({["modID"] = 3}, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165518),	-- Warbeast Hide Cinch
 					i(165545),	-- Waistguard of Elemental Resistance
@@ -633,7 +633,7 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 			})),
 			d(15, bubbleDown({["modID"] = 5}, {	-- Heroic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165518),	-- Warbeast Hide Cinch
 					i(165545),	-- Waistguard of Elemental Resistance
@@ -929,7 +929,7 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 			})),
 			d(16, bubbleDown({["modID"] = 6}, {	-- Mythic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165518),	-- Warbeast Hide Cinch
 					i(165545),	-- Waistguard of Elemental Resistance

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(ZANGARMARSH, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(29960, {	-- Captured Firefly
 					["cr"] = 20197,	-- Bogflare Needler
 				}),

@@ -30,7 +30,7 @@ _.Instances = { tier(CATA_TIER, {
 				}),
 			}),
 			d(1,   {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(55855, {	-- Darksky Treads
 						["crs"] = {
 							45915,	-- Armored Mistal
@@ -122,7 +122,7 @@ _.Instances = { tier(CATA_TIER, {
 					n(ACHIEVEMENTS, {
 						ach(5289),	-- Extra Credit Bonus Stage
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(55855, {	-- Darksky Treads
 							["crs"] = {
 								45915,	-- Armored Mistal

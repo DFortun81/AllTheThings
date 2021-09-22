@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(DRUSTVAR, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(163574, {	-- Chewed-On Reins of the Terrified Pack Mule
 					["crs"] = {
 						133892,	-- Hexthralled Crossbowman

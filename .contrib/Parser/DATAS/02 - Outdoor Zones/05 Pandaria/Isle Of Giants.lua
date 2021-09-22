@@ -29,7 +29,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(94573, {	-- Direhorn Runt (PET!)
 						["crs"] = { 69983 },	-- Primal Direhorn
 					}),

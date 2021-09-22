@@ -382,7 +382,7 @@ _.Instances = { tier(CATA_TIER, {
 							}),
 						},
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						["groups"] = {
 							i(78886),	-- Belt of Ghostly Graces
 							i(78885),	-- Dragoncarver Belt
@@ -647,7 +647,7 @@ _.Instances = { tier(CATA_TIER, {
 							}),
 						},
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						["g"] = {
 							i(78886),	-- Belt of Ghostly Graces
 							i(78885),	-- Dragoncarver Belt

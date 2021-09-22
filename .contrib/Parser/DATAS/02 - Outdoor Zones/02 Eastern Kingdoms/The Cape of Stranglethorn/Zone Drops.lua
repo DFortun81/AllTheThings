@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(THE_CAPE_OF_STRANGLETHORN, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(5079, {	-- Cold Basilisk Eye
 					["crs"] = { 690 },	-- Cold Eye Basilisk
 				}),

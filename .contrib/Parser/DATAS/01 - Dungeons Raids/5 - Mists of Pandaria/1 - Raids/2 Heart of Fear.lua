@@ -216,7 +216,7 @@ _.Instances = { tier(MOP_TIER, {
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						["groups"] = {
 							i(86192),	-- Darting Damselfly Cuffs
 							i(86186),	-- Gleaming Moth Cuffs
@@ -360,7 +360,7 @@ _.Instances = { tier(MOP_TIER, {
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						["groups"] = {
 							i(86192),	-- Darting Damselfly Cuffs
 							i(86186),	-- Gleaming Moth Cuffs

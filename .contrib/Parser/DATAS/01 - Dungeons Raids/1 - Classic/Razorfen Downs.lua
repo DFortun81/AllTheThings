@@ -86,7 +86,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(10573, {	-- Boneslasher
 					["crs"] = {
 						74947,	-- Boneflayer Ghoul

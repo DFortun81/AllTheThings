@@ -166,7 +166,7 @@ _.Instances = { tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						-- #endif
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					AMANI_HEX_STICK,
 					i(33106),	-- Forest Troll Tusk
 				}),

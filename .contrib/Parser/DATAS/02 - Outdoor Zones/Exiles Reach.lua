@@ -1045,7 +1045,7 @@ _.Zones =
 					["questID"] = 56088,
 				}),
 			})),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 			--	probably need to add more crs to these, these are just the NPCs i looted them from
 				i(175244, {	-- Spider-Eye Ring
 					["crs"] = { 160394 },	-- Barrow Spider

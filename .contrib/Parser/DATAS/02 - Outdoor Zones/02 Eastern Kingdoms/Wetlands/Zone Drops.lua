@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(WETLANDS, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				un(REMOVED_FROM_GAME, n(1028, {	-- Bluegill Muckdweller
 					un(REMOVED_FROM_GAME, i(3022)),	-- Bluegill Breeches
 				})),

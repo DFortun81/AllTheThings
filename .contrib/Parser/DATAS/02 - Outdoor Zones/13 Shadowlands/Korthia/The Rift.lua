@@ -114,7 +114,7 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(187174, {	-- Shaded Judgment Stone
 							["description"] = "This has a chance to drop from creatures in The Rift, or from the specific Rares which are pulled out of The Rift.",
 							["crs"] = {

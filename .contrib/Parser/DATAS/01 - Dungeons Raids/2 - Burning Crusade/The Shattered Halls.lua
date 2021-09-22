@@ -339,7 +339,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(22554, {	-- Formula: Enchant 2H Weapon - Savagery
 					["cr"] = 17465,	-- Shattered Hand Centurion
 				}),

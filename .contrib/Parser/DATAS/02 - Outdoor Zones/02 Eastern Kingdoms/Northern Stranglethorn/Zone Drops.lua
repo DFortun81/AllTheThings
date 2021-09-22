@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(NORTHERN_STRANGLETHORN, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(1998, {	-- Bloodscalp Channeling Staff
 					["crs"] = { 697 },	-- Bloodscalp Shaman
 				}),

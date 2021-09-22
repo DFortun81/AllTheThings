@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(BLADES_EDGE_MOUNTAINS, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(32663, {	-- Apexis Cleaver
 					["cost"] = {
 						{ "i", 32670, 1 },	-- Depleted Two-Handed Axe

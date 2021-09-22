@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(PANDARIA, {
-		n(ZONEDROPS, {
+		n(ZONE_DROPS, {
 			["maps"] = {
 				DREAD_WASTES,
 				THE_JADE_FOREST,

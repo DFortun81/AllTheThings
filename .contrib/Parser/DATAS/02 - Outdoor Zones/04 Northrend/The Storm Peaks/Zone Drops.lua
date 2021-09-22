@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(120, {	-- The Storm Peaks
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(41820, {	-- Design: Defender's Twilight Opal
 					["crs"] = {
 						30208,	-- Stormforged Ambusher

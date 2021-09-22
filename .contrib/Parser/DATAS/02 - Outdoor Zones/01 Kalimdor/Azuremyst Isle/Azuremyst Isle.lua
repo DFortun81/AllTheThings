@@ -568,7 +568,7 @@ _.Zones =
 								["lvl"] = lvlsquish(3, 1, 3),
 							}),
 						}),
-						n(ZONEDROPS, {
+						n(ZONE_DROPS, {
 							i(24414, {	-- Blood Elf Plans
 								["cr"] = 16522,	-- Surveyor Candress
 								-- #if AFTER MOP
@@ -1479,7 +1479,7 @@ _.Zones =
 						["groups"] = COOKIE_GROUPS,
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(23678, {	-- Faintly Glowing Crystal
 						["cr"] = 17202,	-- Infected Nightstalker Runt)
 						["coords"] = {

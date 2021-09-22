@@ -28,7 +28,7 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 			}),
 			d(17, {		-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					un(REMOVED_FROM_GAME, i(115510, {	-- Elemental Rune
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(115509)),	-- Elemental Tablet
@@ -284,7 +284,7 @@ _.Instances = { tier(WOD_TIER, {
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(119332),	-- Bracers of Darkened Skies
 					i(119333),	-- Bracers of Shattered Limbs
 					i(119331),	-- Bracers of Visceral Force
@@ -815,7 +815,7 @@ _.Instances = { tier(WOD_TIER, {
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(119334),	-- Bracers of Callous Disregard
 					i(119332),	-- Bracers of Darkened Skies
 					i(119333),	-- Bracers of Shattered Limbs
@@ -1348,7 +1348,7 @@ _.Instances = { tier(WOD_TIER, {
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(119334),	-- Bracers of Callous Disregard
 					i(119332),	-- Bracers of Darkened Skies
 					i(119333),	-- Bracers of Shattered Limbs

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(MALDRAXXUS, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(187425),	-- Ancient Maldraxxi Armament
 				i(184104, {	-- Blight-Touched Egg
 					["crs"] = {

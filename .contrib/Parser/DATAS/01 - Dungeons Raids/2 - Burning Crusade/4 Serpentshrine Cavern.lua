@@ -25,7 +25,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					["description"] = "After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				COILFANG_ARMAMENTS,
 				i(30280),	-- Pattern: Belt of Blasting
 				i(30302, {	-- Pattern: Belt of Deep Shadow

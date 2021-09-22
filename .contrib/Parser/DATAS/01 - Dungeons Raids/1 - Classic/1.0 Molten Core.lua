@@ -209,7 +209,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					-- #endif
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(20951, {	-- Narain's Scrying Goggles
 					["description"] = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
 					["timeline"] = REMOVED_WITH_CATA,

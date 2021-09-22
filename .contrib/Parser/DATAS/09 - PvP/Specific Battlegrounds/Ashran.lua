@@ -1865,7 +1865,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(118333),	-- Universal Language Compensator [Part 1 of 3]
 					i(118334),	-- Universal Language Filter [Part 2 of 3]
 					i(118335),	-- Universal Language Repository [Part 3 of 3]

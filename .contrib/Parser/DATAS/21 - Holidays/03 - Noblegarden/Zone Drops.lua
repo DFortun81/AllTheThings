@@ -4,7 +4,7 @@
 
 _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 	holiday(235477, {	-- Noblegarden
-		n(ZONEDROPS, {
+		n(ZONE_DROPS, {
 			i(45072, {	-- Brightly Colored Egg
 				["maps"] = {
 					DUROTAR,

@@ -29,7 +29,7 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(55822, {	-- Heavy Geode Mace
 					["crs"] = {
 						42810,	-- Crystalspawn Giant

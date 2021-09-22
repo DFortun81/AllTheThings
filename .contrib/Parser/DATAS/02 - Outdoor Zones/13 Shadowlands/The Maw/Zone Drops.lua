@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(THE_MAW, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(187253, {	-- Maw Guard's Spiked Spaulders
 					["crs"] = {
 						167322,	-- Mawsworn Shackler

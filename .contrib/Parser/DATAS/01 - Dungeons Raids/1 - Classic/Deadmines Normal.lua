@@ -105,7 +105,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 				}),
 			}),
 			d(1, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(10401, {	-- Blackened Defias Gloves
 						["crs"] = { 48421 },	-- Defias Overseer
 					}),
@@ -203,7 +203,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 				n(-40, {	-- Legacy
-					n(ZONEDROPS, {	-- TODO:: These are all from the original version of deadmines. Should these be merged into the rest of this file or left in a dedicated header?
+					n(ZONE_DROPS, {	-- TODO:: These are all from the original version of deadmines. Should these be merged into the rest of this file or left in a dedicated header?
 						un(REMOVED_FROM_GAME, n(647, {	-- Captain Greenskin
 							i(10403, {	-- Blackened Defias Belt **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
 								["description"] = "You can obtain this appearance by doing a Rogue-only quest in the current Deadmines instance.",

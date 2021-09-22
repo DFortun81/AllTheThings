@@ -25,7 +25,7 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 			}),
 			d(17, {	-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
 						["crs"] = {
 							78714,	-- Kargath
@@ -151,7 +151,7 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 			}),
 			d(14, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(119343, {	-- Eye-Blinder Greatcloak
 						["crs"] = {
 							86290,	-- Underbelly Vagrant
@@ -351,7 +351,7 @@ _.Instances = { tier(WOD_TIER, {
 				})),
 			}),
 			d(15, {	-- Heroic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(119343, {	-- Eye-Blinder Greatcloak
 						["crs"] = {
 							86290,	-- Underbelly Vagrant
@@ -551,7 +551,7 @@ _.Instances = { tier(WOD_TIER, {
 				})),
 			}),
 			d(16, {	-- Mythic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(119343, {	-- Eye-Blinder Greatcloak
 						["crs"] = {
 							86290,	-- Underbelly Vagrant

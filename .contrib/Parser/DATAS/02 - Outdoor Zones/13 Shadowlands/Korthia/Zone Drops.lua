@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 			-- Special Loot/Tracking
 				--	if these Relic Fragment loot dailies make it to live, we could change them to custom headers for localization of 'Relic Fragment.'  they may require having purchased Research Report: All-Seeing Crystal
 				q(64433, {	-- 30 Relic Fragments

@@ -232,7 +232,7 @@ _.Instances = { tier(SL_TIER, {
 				}),
 			}),
 			d(17, {	-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(186371),	-- Ancient Brokensoul Bands
 					i(186362),	-- Bindings of the Subjugated
 					i(186367),	-- Bonded Soulsmelt Greaves
@@ -495,7 +495,7 @@ _.Instances = { tier(SL_TIER, {
 						-- },
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(186371),	-- Ancient Brokensoul Bands
 					i(186362),	-- Bindings of the Subjugated
 					i(186367),	-- Bonded Soulsmelt Greaves
@@ -754,7 +754,7 @@ _.Instances = { tier(SL_TIER, {
 						-- },
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(186371),	-- Ancient Brokensoul Bands
 					i(186362),	-- Bindings of the Subjugated
 					i(186367),	-- Bonded Soulsmelt Greaves
@@ -1013,7 +1013,7 @@ _.Instances = { tier(SL_TIER, {
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(186371),	-- Ancient Brokensoul Bands
 					i(186362),	-- Bindings of the Subjugated
 					i(186367),	-- Bonded Soulsmelt Greaves

@@ -427,7 +427,7 @@ _.ExpansionFeatures =
 							["isWorldQuest"] = true,
 						}),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(170553, {	-- Void Focus Splinter
 							["description"] = "The fastest way is to farm them inside Lesser Vision.",
 						}),
@@ -793,7 +793,7 @@ _.ExpansionFeatures =
 							["isWorldQuest"] = true,
 						}),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(174759),	-- Mogu Relic Fragment
 					}),
 				}),
@@ -1129,7 +1129,7 @@ _.ExpansionFeatures =
 							["isWorldQuest"] = true,
 						}),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(174760),	-- Mantid Relic Fragment
 					}),
 				}),
@@ -1506,7 +1506,7 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(174368),	-- Pattern: Unsettling Cragscale Boots
 						i(174369),	-- Pattern: Unsettling Cragscale Greaves
 						i(174366),	-- Pattern: Unsettling Dredged Leather Boots
@@ -1522,7 +1522,7 @@ _.ExpansionFeatures =
 						i(171314),	-- Schematic: A-N0M-A-L0U5 Synthetic Specs
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(173420, {	-- Black Empire Cloth Belt
 						i(173511),	-- Vile Manipulator's Belt
 						i(173436),	-- Vile Manipulator's Cinch

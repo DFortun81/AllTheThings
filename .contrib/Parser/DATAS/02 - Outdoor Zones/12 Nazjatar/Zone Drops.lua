@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(ZONEDROPS, {
+		n(ZONE_DROPS, {
 			--[[ TODO:: where are lockboxes going?
 			i(169475, {	-- Barnacled Lockbox (also drops all zone drops
 				i(170118),	-- Centurion's Shortsword
@@ -639,7 +639,7 @@ _.Zones =
 			i(169496),	-- Recipe: Superior Steelskin Potion (Rank 3)
 		}),
 		--	Gear
-		n(ZONEDROPS, {
+		n(ZONE_DROPS, {
 			["g"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 120}, {
 				i(170116),	-- Darkened Slicer
 				i(169402),	-- Deeptide Amice

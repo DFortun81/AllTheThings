@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(DUSTWALLOW_MARSH, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(10822, {	-- Dark Whelpling
 					["crs"] = {
 						4323,	-- Searing Hatchling

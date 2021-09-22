@@ -1265,7 +1265,7 @@ _.Zones =
 						["groups"] = RATHIS_TOMBER_GROUPS,
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(22641, {	-- Rotting Heart
 						["crs"] = {
 							16301,	-- Risen Hungerer

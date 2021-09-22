@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(HILLSBRAD_FOOTHILLS, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(8491),	-- Cat Carrier (Black Tabby)
 				n(2287, {	-- Crushridge Warmonger
 					un(REMOVED_FROM_GAME, i(1602)),	-- Sickle Axe

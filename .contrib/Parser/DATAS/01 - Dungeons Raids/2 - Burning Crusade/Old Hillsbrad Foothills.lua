@@ -112,7 +112,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(22539),	-- Formula: Enchant Shield - Intellect
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(25729, {	-- Pattern: Stylin' Adventure Hat
 					["crs"] = {
 						28132,	-- Don Carlos

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(REDRIDGE_MOUNTAINS, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(1446, {	-- Blackrock Boots
 					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 440 },	-- Blackrock Grunt

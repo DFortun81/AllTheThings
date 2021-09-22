@@ -594,7 +594,7 @@ _.WorldEvents = { n(-540, -- The Scourge Invasion
 					i(23089),	-- Tunic of Undead Slaying
 				},
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
 					16383,	-- Flameshocker
 					16141,	-- Ghoul Berserker

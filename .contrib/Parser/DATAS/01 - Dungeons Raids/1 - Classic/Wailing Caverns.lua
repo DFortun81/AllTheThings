@@ -68,7 +68,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(48114, {	-- Deviate Hatchling (PET!)
 					["crs"] = {
 						3637,	-- Deviate Guardian

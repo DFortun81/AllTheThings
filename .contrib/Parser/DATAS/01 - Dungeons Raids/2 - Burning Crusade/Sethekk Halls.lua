@@ -136,7 +136,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				-- #endif
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(72480, {	-- Cobalt Eye
 					["timeline"] = { "added 4.3.0.14942" },
 					["cr"] = 19428,	-- Cobalt Serpent

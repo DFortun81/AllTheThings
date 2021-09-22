@@ -65,7 +65,7 @@ _.Instances = { tier(LEGION_TIER, {
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						i(141696),	-- Pendant of Liquid Horror
@@ -307,7 +307,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(139706),	-- Corrupted Essence
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
 					i(140993),	-- Gloves of Murmured Promises
@@ -543,7 +543,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(139706),	-- Corrupted Essence
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
 					i(140993),	-- Gloves of Murmured Promises
@@ -782,7 +782,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(139706),	-- Corrupted Essence
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
 					i(140993),	-- Gloves of Murmured Promises

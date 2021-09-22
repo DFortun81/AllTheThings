@@ -601,7 +601,7 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				n(47676, {	-- Baradin Fox
 					i(64403),  -- Fox Kit Pet
 				}),

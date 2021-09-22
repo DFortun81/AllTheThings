@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(180522),	-- Phaedrum Lockbox
 				i(175545),	-- Blackthorn Chestplate
 				i(175553),	-- Blackthorn Gauntlets

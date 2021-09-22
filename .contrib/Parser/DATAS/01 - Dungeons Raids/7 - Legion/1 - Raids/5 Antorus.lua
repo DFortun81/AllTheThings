@@ -103,7 +103,7 @@ _.Instances = { tier(LEGION_TIER, {
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						i(152084),	-- Gloves of Abhorrent Strategies
@@ -515,7 +515,7 @@ _.Instances = { tier(LEGION_TIER, {
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(152084),	-- Gloves of Abhorrent Strategies
 					i(152085),	-- Cuffs of the Viridian Flameweavers
 					i(153018),	-- Corrupted Mantle of the Felseekers
@@ -920,7 +920,7 @@ _.Instances = { tier(LEGION_TIER, {
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(152084),	-- Gloves of Abhorrent Strategies
 					i(152085),	-- Cuffs of the Viridian Flameweavers
 					i(153018),	-- Corrupted Mantle of the Felseekers
@@ -1330,7 +1330,7 @@ _.Instances = { tier(LEGION_TIER, {
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(152084),	-- Gloves of Abhorrent Strategies
 					i(152085),	-- Cuffs of the Viridian Flameweavers
 					i(153018),	-- Corrupted Mantle of the Felseekers

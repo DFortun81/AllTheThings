@@ -45,7 +45,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(67, 20, 67),
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				-- #if BEFORE 4.3.0.14942
 				i(30438, {	-- Cache of the Legion Key
 					["cost"] = {

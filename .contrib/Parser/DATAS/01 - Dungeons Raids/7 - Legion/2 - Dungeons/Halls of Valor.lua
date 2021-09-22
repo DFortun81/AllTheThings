@@ -44,7 +44,7 @@ _.Instances = { tier(LEGION_TIER, {
 				}),
 			}),
 			d(1,  {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 				}),
 				e(1485, {	-- Hymdall
@@ -142,7 +142,7 @@ _.Instances = { tier(LEGION_TIER, {
 			d(2,  {	-- Heroic
 				["lvl"] = 110,
 				["g"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 					}),
 					e(1485, {	-- Hymdall
@@ -247,7 +247,7 @@ _.Instances = { tier(LEGION_TIER, {
 						ach(10542),	-- I Got What You Mead
 						ach(10544),	-- Stag Party
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 					}),
 					e(1485, {	-- Hymdall

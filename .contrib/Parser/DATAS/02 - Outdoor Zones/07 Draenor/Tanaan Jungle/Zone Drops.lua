@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(DRAENOR, {
 		m(TANAAN_JUNGLE, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["g"] = {
 					i(126950, {	-- Equipment Blueprint: Bilge Pump
 						["questID"] = 38932,	-- Equipment Blueprint: Bilge Pump

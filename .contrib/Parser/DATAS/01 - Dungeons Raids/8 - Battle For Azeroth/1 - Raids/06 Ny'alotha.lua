@@ -51,7 +51,7 @@ _.Instances = { tier(BFA_TIER, {
 				i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 3)
 			}),
 			d(17, {	-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
 						["f"] = 6,	-- Mail
 					}),
@@ -303,7 +303,7 @@ _.Instances = { tier(BFA_TIER, {
 						},
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
 						["f"] = 6,	-- Mail
 					}),
@@ -536,7 +536,7 @@ _.Instances = { tier(BFA_TIER, {
 						},
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
 						["f"] = 6,	-- Mail
 					}),
@@ -772,7 +772,7 @@ _.Instances = { tier(BFA_TIER, {
 						},
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
 						["f"] = 6,	-- Mail
 					}),

@@ -10,45 +10,45 @@ _.Instances = { tier(WOTLK_TIER, {
 		["maps"] = { 148, 149, 150, 151, 152 },
 		["coord"] = { 41.5, 17.9, 120 },	-- Ulduar, The Storm Peaks
 		["g"] = {
-			i(45038, {	-- Fragment of Val'anyr
-				["classes"] = {
-					PALADIN,
-					PRIEST,
-					SHAMAN,
-					MONK,
-					DRUID
-				},
-				["crs"] = {
-					33113,	-- Flame Leviathan
-					33118,	-- Ignis the Furnace Master
-					33293,	-- XT-002 Deconstructor
-					32871,	-- Algalon the Observer
-					32927,	-- Runemaster Molgeim
-					32857,	-- Stormcaller Brundir
-					32867,	-- Steelbreaker
-					32930,	-- Kologarn
-					33515,	-- Auriaya
-					32845,	-- Hodir
-					32865,	-- Thorim
-					32906,	-- Freya
-					33350,	-- Mimiron
-					33271,	-- General Vezax
-					33288,	-- Yogg-Saron
-				},
+			n(-10066, {	-- Legendary Questline
+				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
+				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
+				["title"] = "Val'anyr, Hammer of Ancient Kings",
+				["icon"] = "Interface\\Icons\\inv_mace_99",
+				["isRaid"] = true,
 				["g"] = {
-					i(45039, {	-- Shattered Fragments of Val'anyr
-						q(13622),	-- Ancient History
-						q(13629, {	-- Val'anyr, Hammer of Ancient Kings
-							["sourceQuest"] = 13622,	-- Ancient History
-							["g"] = {
-								i(46017)	-- Val'anyr, Hammer of Ancient Kings
-							},
-						}),
-					})
+					i(45038, {	-- Fragment of Val'anyr
+						["crs"] = {
+							33113,	-- Flame Leviathan
+							33118,	-- Ignis the Furnace Master
+							33293,	-- XT-002 Deconstructor
+							32871,	-- Algalon the Observer
+							32927,	-- Runemaster Molgeim
+							32857,	-- Stormcaller Brundir
+							32867,	-- Steelbreaker
+							32930,	-- Kologarn
+							33515,	-- Auriaya
+							32845,	-- Hodir
+							32865,	-- Thorim
+							32906,	-- Freya
+							33350,	-- Mimiron
+							33271,	-- General Vezax
+							33288,	-- Yogg-Saron
+						},
+					}),
+					q(13622, {	-- Ancient History
+						["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
+					}),
+					q(13629, {	-- Val'anyr, Hammer of Ancient Kings
+						["sourceQuest"] = 13622,	-- Ancient History
+						["g"] = {
+							i(46017)	-- Val'anyr, Hammer of Ancient Kings
+						},
+					}),
 				},
 			}),
 			d(14, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					["g"] = {
 						i(46351),	-- Bloodcrush Cudgel
 						i(45605),	-- Daschal's Bite
@@ -895,7 +895,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				["lvl"] = 81,
 				["crs"] = { 130654 },	-- Vormu
 				["g"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(156462),	-- Drape of the Spellweaver
 						-- i(156468),	-- Cloak of the Dormant Blaze	(no equivalent in TW, 'Retrieving Data' on possible item, no data on WoWHead)
 						-- i(156465),	-- Iceshear Mantle	(no equivalent in TW, 'Retrieving Data' on possible item, no data on WoWHead)

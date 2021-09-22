@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(NETHERSTORM, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(24162, {	-- Design: Arcane Khorium Band
 					["cr"] = 18866,  -- Mageslayer
 				}),

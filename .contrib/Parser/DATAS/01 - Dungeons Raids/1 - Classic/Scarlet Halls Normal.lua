@@ -18,7 +18,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 						["provider"] = { "n", 64738 },	-- Hooded Crusader
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(7754, {    -- Harbinger Boots
 						["crs"] = {
 							59175,	-- Master Archer

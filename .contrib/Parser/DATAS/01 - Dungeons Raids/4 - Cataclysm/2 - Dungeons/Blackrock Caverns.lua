@@ -41,7 +41,7 @@ _.Instances = { tier(CATA_TIER, {
 					["sourceQuest"] = 28735,	-- To the Chamber of Incineration!
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(55791, { -- Acanthia's Lost Pendant
 					["crs"] = {
 						40084,	-- Bellows Slave

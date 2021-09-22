@@ -30,7 +30,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(37115, {	-- Crusader's Square Pauldrons
 					["crs"] = {
 						27731,	-- Acolyte

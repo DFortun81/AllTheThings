@@ -18,7 +18,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 						["provider"] = { "n", 64562 },	-- Talking Skull
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(18702, {	-- Belt of the Ordained
 						["crs"] = {
 							59501,	-- Reanimated Corpse
@@ -163,7 +163,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 							["sourceQuest"] = 5251,	-- The Archivist
 						}),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						un(REMOVED_FROM_GAME, i(16254)),	-- Formula: Enchant Weapon - Lifestealing [Scholomance, Removed from game with revamp? Might have been added back in 7.3.5, but not sure.]
 						n(10495, {	-- Diseased Ghoul
 							un(REMOVED_FROM_GAME, i(16714)),	-- Wildheart Bracers

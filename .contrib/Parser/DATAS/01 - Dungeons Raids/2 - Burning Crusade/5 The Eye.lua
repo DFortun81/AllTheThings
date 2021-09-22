@@ -50,7 +50,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
 					20043,	-- Apprentice Star Scryer
 					20033,	-- Astromancer

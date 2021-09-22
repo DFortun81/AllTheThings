@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(NAZMIR, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				-- Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate
 				i(163575, {	-- Reins of a Tamed Bloodfeaster
 					["crs"] = {

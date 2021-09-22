@@ -66,7 +66,7 @@ _.Instances = { tier(LEGION_TIER, {
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						i(144399),	-- Aristocrat's Winter Drape
@@ -415,7 +415,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(140199),	-- Nightshard
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(144399),	-- Aristocrat's Winter Drape
 					i(144401),	-- Cloak of Multitudinous Sheaths
 					i(144403),	-- Fashionable Autumn Cloak
@@ -789,7 +789,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(140199),	-- Nightshard
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(144399),	-- Aristocrat's Winter Drape
 					i(144401),	-- Cloak of Multitudinous Sheaths
 					i(144403),	-- Fashionable Autumn Cloak
@@ -1167,7 +1167,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(140199),	-- Nightshard
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(144399),	-- Aristocrat's Winter Drape
 					i(144401),	-- Cloak of Multitudinous Sheaths
 					i(144403),	-- Fashionable Autumn Cloak

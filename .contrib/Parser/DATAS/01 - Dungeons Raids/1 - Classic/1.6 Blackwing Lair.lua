@@ -66,7 +66,7 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(19434, {	-- Band of Dark Dominion
 					["crs"] = {
 						12457,	-- Blackwing Spellbinder

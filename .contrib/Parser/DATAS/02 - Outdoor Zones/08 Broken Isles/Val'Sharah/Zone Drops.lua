@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
-			n(ZONEDROPS, {	-- (Need to change this to list crs individually because not all items drop from all of those mobs)
+			n(ZONE_DROPS, {	-- (Need to change this to list crs individually because not all items drop from all of those mobs)
 				["modID"] = 0,
 				["crs"] = {
 					110896,	-- Ancient Annihilator

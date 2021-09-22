@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHADOWMOON_VALLEY, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(34689, {	-- Design: Chaotic Skyfire Diamond
 					["crs"] = { 19768 },  -- Coilskar Siren
 				}),

@@ -14,7 +14,7 @@ _.Instances = { tier(BFA_TIER, {
 		},
 		["lvl"] = 120,
 		["g"] = {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(170212),	-- Mecha-Bytes
 				i(170211),	-- Recipe: Famine Evaluator and Snack Table
 				i(170210),	-- Recipe: Abyssal Healing Potion (Rank 3)

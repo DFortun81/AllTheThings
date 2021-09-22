@@ -13,7 +13,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(68, 30, 68),	-- Level 68s could zone in without any attunements. TODO: Check this.
 		["groups"] = {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(35202),	-- Design: Amulet of Flowing Life
 				i(35200),	-- Design: Hard Khorium Band
 				i(35203),	-- Design: Hard Khorium Choker

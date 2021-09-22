@@ -115,7 +115,7 @@ _.Instances = { tier(LEGION_TIER, {
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					["cr"] = 111246,	-- Archmage Timear
 					["g"] = {
 						i(147422),	-- Acolyte's Abandoned Footwraps
@@ -459,7 +459,7 @@ _.Instances = { tier(LEGION_TIER, {
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(147422),	-- Acolyte's Abandoned Footwraps
 					i(147425),	-- Cord of Pilfered Rosaries
 					i(147064),	-- Diadem of the Highborne
@@ -790,7 +790,7 @@ _.Instances = { tier(LEGION_TIER, {
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(147422),	-- Acolyte's Abandoned Footwraps
 					i(147425),	-- Cord of Pilfered Rosaries
 					i(147064),	-- Diadem of the Highborne
@@ -1121,7 +1121,7 @@ _.Instances = { tier(LEGION_TIER, {
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(147422),	-- Acolyte's Abandoned Footwraps
 					i(147425),	-- Cord of Pilfered Rosaries
 					i(147064),	-- Diadem of the Highborne

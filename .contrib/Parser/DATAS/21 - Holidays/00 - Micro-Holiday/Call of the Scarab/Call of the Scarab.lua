@@ -438,7 +438,7 @@ _.Holidays = { applyholiday(MICRO_HOLIDAY, holiday(1574965, {	-- Call of the Sca
 				["lvl"] = 40,
 			}),
 		}),
-		n(ZONEDROPS, {
+		n(ZONE_DROPS, {
 			i(143865),	-- Abyssal Crest
 			i(143858),	-- Twilight Cultist Cowl
 			i(143857),	-- Twilight Cultist Mantle

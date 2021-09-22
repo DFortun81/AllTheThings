@@ -42,7 +42,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["provider"] = { "n", 40712 },	-- Mazoga's Spirit
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(142402, {	-- Plans: Light Earthforged Blade
 					["crs"] = {
 						8127,	-- Antu'sul

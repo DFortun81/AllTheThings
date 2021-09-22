@@ -175,7 +175,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(78346, {	-- Pattern: Green Dragonscale Breastplate
 					["crs"] = {
 						5721,	-- Dreamscythe

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(948, {	-- The Maelstrom
 		m(207, {	-- Deepholm
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(65650),	-- Technique: Origami Rock
 			}),
 		}),

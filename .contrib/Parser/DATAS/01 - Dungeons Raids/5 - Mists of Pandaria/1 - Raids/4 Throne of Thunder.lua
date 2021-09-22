@@ -133,7 +133,7 @@ _.Instances = { tier(MOP_TIER, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
 					69909,	-- Amani'shi Flame Chanter
 					70448,	-- Ancient Python

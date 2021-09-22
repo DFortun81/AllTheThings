@@ -30,7 +30,7 @@ _.Instances = { tier(LEGION_TIER, {
 				}),
 			}),
 			d(2,	{	-- Heroic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(147514, {	-- Felguard Destroyer's Legplates
 						["bonusID"] = 1812,
 						["crs"] = {
@@ -144,7 +144,7 @@ _.Instances = { tier(LEGION_TIER, {
 				})),
 			}),
 			d(23,	{	-- Mythic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(147514, {	-- Felguard Destroyer's Legplates
 						["bonusID"] = 1812,
 						["crs"] = {

@@ -43,7 +43,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 			d(1,   {	-- Normal
 				ach(4517),	-- The Pit of Saron
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(49852, {	-- Coffin Nail
 						["crs"] = {
 							37712,	-- Deathwhisper Shadowcaster
@@ -163,7 +163,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				["lvl"] = 80,
 				["g"] = {
 					ach(4520),	-- Heroic: The Pit of Saron
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						["g"] = {
 							i(50379),	-- Battered Hilt (Alliance)
 							i(50380),	-- Battered Hilt (Horde)

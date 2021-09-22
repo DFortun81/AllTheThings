@@ -8,7 +8,7 @@ _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(TEROKKAR_FOREST, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(34491, {    -- Pattern: Bag of Many Hides
 					["crs"] = {
 						22143,    -- Gordunni Back-Breaker

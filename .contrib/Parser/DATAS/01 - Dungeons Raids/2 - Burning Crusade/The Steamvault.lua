@@ -68,7 +68,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(67, 20, 67),
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(24368),	-- Coilfang Armaments
 				i(24159, {	-- Design: Khorium Band of Frost
 					["cr"] = 17722,	-- Coilfang Sorceress

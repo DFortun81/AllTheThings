@@ -28,7 +28,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 			}),
 			d(1, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(35683, {	-- Palladium Ring
 						["crs"] = {
 							27962,	-- Dark Rune Elementalist
@@ -133,7 +133,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				["lvl"] = 80,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(37673, {	-- Dark Runic Mantle
 							["crs"] = {
 								27966,	-- Dark Rune Controller

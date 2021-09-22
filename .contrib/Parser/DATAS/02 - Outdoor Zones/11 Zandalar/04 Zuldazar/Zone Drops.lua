@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(ZULDAZAR, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["maps"] = {	-- Note!! We can list this in these two zones due to them dropping here.  If we add more to Zuldazar then we'll look into adjusting this.
 					NAZMIR,
 					VOLDUN,

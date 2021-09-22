@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(STORMSONG_VALLEY, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(161344, {	-- Abyssal Fragment
 					["description"] = "These are a World Drop in any zone and can be bought from the Auction House.  Once you collect 20, combine them and use them on the \"Abyssal Icon\" located at 73.5, 23.6 in Stormsong Valley.",
 					["g"] = {

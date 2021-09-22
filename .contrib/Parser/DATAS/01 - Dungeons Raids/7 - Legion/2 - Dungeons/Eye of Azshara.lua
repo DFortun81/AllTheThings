@@ -8,7 +8,7 @@ _.Instances = { tier(LEGION_TIER, {
 		["coord"] = { 61.2, 41.1, AZSUNA },
 		["lvl"] = 98,
 		["g"] = {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(137726),	-- Schematic: Leystone Buoy
 			}),
 			n(-10067, {	-- Artifacts

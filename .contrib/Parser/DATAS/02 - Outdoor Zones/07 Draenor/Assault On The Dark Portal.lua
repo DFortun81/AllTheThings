@@ -300,7 +300,7 @@ _.Zones =
 						["u"] = NEVER_IMPLEMENTED,
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(112436, {	-- Mismatched Cloth Gloves
 						["cr"] = 78651,	-- Shattered Hand Bonechopper
 					}),

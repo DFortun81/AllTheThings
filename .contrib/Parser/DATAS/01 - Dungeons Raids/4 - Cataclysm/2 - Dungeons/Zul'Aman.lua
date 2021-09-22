@@ -35,7 +35,7 @@ _.Instances = { tier(CATA_TIER, {
 							},
 						}),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(69801, {	-- Amani Armguards
 							["crs"] = {
 								23584,	-- Amani Bear

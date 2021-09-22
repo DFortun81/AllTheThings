@@ -1027,7 +1027,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 							},
 						}),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						un(REMOVED_FROM_GAME, i(23221)),	-- Misplaced Servo Arm
 						un(REMOVED_FROM_GAME, i(23044)),	-- Harbinger of Doom
 						un(REMOVED_FROM_GAME, i(23238)),	-- Stygian Buckler

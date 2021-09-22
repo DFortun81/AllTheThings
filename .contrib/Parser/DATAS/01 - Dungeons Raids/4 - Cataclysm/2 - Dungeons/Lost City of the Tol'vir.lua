@@ -26,7 +26,7 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(55881, {	-- Impetuous Query
 					["crs"] = {
 						45007,	-- Enslaved Bandit

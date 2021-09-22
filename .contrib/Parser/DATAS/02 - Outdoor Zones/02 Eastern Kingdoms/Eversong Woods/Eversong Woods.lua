@@ -739,7 +739,7 @@ _.Zones =
 							}),
 							-- #endif
 						}),
-						n(ZONEDROPS, {
+						n(ZONE_DROPS, {
 							i(20483, {	-- Tainted Arcane Sliver
 								["cr"] = 15298,	-- Tainted Arcane Wraith
 							}),
@@ -1805,7 +1805,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(23249, {	-- Amani Invasion Plans
 						["cr"] = 15407,	-- Chieftain Zul'Marosh
 						["coord"] = { 62.5, 79.7, EVERSONG_WOODS },

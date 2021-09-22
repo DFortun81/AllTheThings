@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(THE_JADE_FOREST, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(87426, {	-- Deathspite Breastplate
 					["crs"] = {
 						59102,	-- Forest Huntress

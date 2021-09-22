@@ -367,7 +367,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(ZONEDROPS, {	--
+				n(ZONE_DROPS, {	--
 					["g"] = {
 						i(151493, {	-- Sands of Time
 							i(151482, {	-- Time-Lost Wallet

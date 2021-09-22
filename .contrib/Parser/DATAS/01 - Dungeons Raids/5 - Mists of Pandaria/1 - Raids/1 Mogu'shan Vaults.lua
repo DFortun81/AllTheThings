@@ -249,7 +249,7 @@ _.Instances = { tier(MOP_TIER, {
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						["groups"] = {
 							i(86238),	-- Pattern: Chestguard of Nemeses
 							i(86272),	-- Pattern: Fists of Lightning
@@ -461,7 +461,7 @@ _.Instances = { tier(MOP_TIER, {
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["g"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						["groups"] = {
 							i(86238),	-- Pattern: Chestguard of Nemeses
 							i(86272),	-- Pattern: Fists of Lightning

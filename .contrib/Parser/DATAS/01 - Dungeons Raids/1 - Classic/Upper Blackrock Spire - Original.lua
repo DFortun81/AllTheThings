@@ -112,7 +112,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 						["provider"] = { "n", 10929 },	-- Haleh
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					n(10318, {	-- Blackhand Assassin
 						un(REMOVED_FROM_GAME, i(15774)),	-- Pattern: Heavy Scorpid Shoulders
 						un(REMOVED_FROM_GAME, i(16713)),	-- Shadowcraft Belt

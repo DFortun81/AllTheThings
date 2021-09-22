@@ -75,7 +75,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 				}),
 			}),
 			d(1, {		-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(1935, {	-- Assassin's Blade
 						["crs"] = {
 							47232,	-- Ghostly Cook

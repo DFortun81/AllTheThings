@@ -1015,7 +1015,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(20263),	-- Gurubashi Helm
 				i(19908),	-- Sceptre of Smiting
 				i(20261),	-- Shadow Panther Hide Belt

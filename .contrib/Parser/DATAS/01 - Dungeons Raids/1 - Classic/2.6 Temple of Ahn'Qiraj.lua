@@ -1071,7 +1071,7 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					i(20731),	-- Formula: Enchant Gloves - Superior Agility
 				},
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(21218),	-- Blue Qiraji Resonating Crystal
 				i(21323),	-- Green Qiraji Resonating Crystal
 				i(21321),	-- Red Qiraji Resonating Crystal

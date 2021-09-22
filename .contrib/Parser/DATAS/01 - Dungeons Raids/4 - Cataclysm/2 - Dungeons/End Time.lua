@@ -36,7 +36,7 @@ _.Instances = { tier(CATA_TIER, {
 				}),
 			}),
 			d(2, {	-- Heroic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(76154, {	-- Breastplate of Despair
 						["crs"] = {
 							54920,	-- Infinite Suppressor

@@ -125,7 +125,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					}),
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(32754),	-- Pattern: Bracers of Nimble Thought
 				i(32744, {	-- Pattern: Bracers of Renewed Life
 					["spellID"] = 41156,	-- Bracers of Renewed Life

@@ -496,7 +496,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					["u"] = 15,			-- Unlearnable Filter
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
 					37012,	-- Ancient Skeletal Soldier
 					37022,	-- Blighted Abomination

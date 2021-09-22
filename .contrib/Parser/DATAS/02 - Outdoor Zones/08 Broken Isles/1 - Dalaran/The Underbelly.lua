@@ -212,7 +212,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(139572, {	-- Lost Codex of the Amani
 						["crs"] = {
 							97380,	-- Splint

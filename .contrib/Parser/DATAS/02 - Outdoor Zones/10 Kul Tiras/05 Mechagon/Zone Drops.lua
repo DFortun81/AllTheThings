@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(MECHAGON, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(159164),  -- Ashvane Company Sabatons
 				i(168491, {	-- Blueprint: Personal Time Displacer
 					["questID"] = 55070,

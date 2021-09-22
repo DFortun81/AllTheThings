@@ -106,7 +106,7 @@ _.Instances = { tier(BFA_TIER, {
 				},
 			}),
 			d(17,  {	-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(161071),	-- Bloody Experimenter's Wraps
 					i(160612),	-- Spellbound Specimen Handlers
 					i(161075),	-- Antiseptic Specimen Handlers
@@ -313,7 +313,7 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 			}),
 			d(14,  {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(161071),	-- Bloody Experimenter's Wraps
 					i(160612),	-- Spellbound Specimen Handlers
 					i(161075),	-- Antiseptic Specimen Handlers
@@ -514,7 +514,7 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 			}),
 			d(15,  {	-- Heroic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(161071),	-- Bloody Experimenter's Wraps
 					i(160612),	-- Spellbound Specimen Handlers
 					i(161075),	-- Antiseptic Specimen Handlers
@@ -720,7 +720,7 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 			}),
 			d(16,  {	-- Mythic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					["g"] = {
 						i(161071),	-- Bloody Experimenter's Wraps
 						i(160612),	-- Spellbound Specimen Handlers

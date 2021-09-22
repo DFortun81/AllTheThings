@@ -25,7 +25,7 @@ _.Instances = { tier(BFA_TIER, {
 					["isWorldQuest"] = true,
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(168144, {	-- Extremely Precise Vial
 					["crs"] = {
 						133432,	-- Venture Co. Alchemist

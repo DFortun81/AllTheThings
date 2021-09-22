@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(DREAD_WASTES, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(120140, {	-- Tome of Polymorph: Porcupine
 					["spellID"] = 126819,	-- Polymorph (Porcupine)
 					["classes"] = { MAGE },

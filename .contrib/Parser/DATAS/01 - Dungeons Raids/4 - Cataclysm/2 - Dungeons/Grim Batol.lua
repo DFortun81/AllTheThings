@@ -23,7 +23,7 @@ _.Instances = { tier(CATA_TIER, {
 					}),
 					q(28852),	-- Soften them Up
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					["crs"] = {
 						39415,	-- Ascended Flameseeker
 						40272,	-- Ascended Rockbreaker

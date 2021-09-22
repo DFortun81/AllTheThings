@@ -12,7 +12,7 @@ _.Instances = { tier(CATA_TIER, {
 		["lvl"] = 85,
 		["groups"] = {
 			ach(4850),	-- The Bastion of Twilight
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["groups"] = {
 					i(60211),	-- Bracers of the Dark Pool
 					i(60202),	-- Tsanga's Helm

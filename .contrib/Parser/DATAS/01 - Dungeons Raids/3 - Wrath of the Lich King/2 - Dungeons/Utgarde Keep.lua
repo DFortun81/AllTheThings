@@ -69,7 +69,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 			}),
 			d(1, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					{	-- Skein Woven Mantle
 						["itemID"] = 35580,	-- Skein Woven Mantle
 						["crs"]	= {
@@ -159,7 +159,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			d(2, {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						{	-- Dragon Prow Amulet
 							["itemID"] = 37290,	-- Dragon Prow Amulet
 							["crs"]	= {

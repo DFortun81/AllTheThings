@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(ARATHI_HIGHLANDS, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(5624,  {	-- Circlet of the Order
 					["crs"] = { 2584 },	-- Stromgarde Defender
 					["u"] = REMOVED_FROM_GAME,

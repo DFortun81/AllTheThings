@@ -389,7 +389,7 @@ _.Instances = { tier(SL_TIER, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(180453, {	-- She Had a Stone Heart
 					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 					["questID"] = 60889,	-- Favor: She Had a Stone Heart
@@ -397,7 +397,7 @@ _.Instances = { tier(SL_TIER, {
 				}),
 			}),
 			d(17, {	-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
 					i(182978),	-- Barkweave Wristwraps
@@ -620,7 +620,7 @@ _.Instances = { tier(SL_TIER, {
 						--},
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
 					i(182978),	-- Barkweave Wristwraps
@@ -855,7 +855,7 @@ _.Instances = { tier(SL_TIER, {
 						--},
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
 					i(182978),	-- Barkweave Wristwraps
@@ -1120,7 +1120,7 @@ _.Instances = { tier(SL_TIER, {
 						["provider"] = { "n", 172653 },	-- General Draven
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
 					i(182978),	-- Barkweave Wristwraps

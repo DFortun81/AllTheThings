@@ -881,7 +881,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					i(32307),	-- Design: Veiled Pyrestone [TBC] / Design: Veiled Shadowsong Amethyst [CATA+]
 				},
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
 					17898,	-- Abomination
 					17905,	-- Banshee

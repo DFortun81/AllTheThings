@@ -160,7 +160,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				-- #endif
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(24514, {	-- First Key Fragment
 					["cr"] = 22890,	-- First Fragment Guardian
 					["coord"] = { 82.6, 30.8, AUCHINDOUN_SHADOW_LABYRINTH },

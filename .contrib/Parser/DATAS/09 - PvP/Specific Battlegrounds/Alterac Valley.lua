@@ -763,7 +763,7 @@ _.PVP =
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(18229, {	-- Nat Pagle's Guide to Extreme Anglin'
 						["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nLooted from Player Corpses in Alterac Valley.",
 					}),

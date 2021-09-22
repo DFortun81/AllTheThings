@@ -14,7 +14,7 @@ _.Instances = { tier(BFA_TIER, {
 		},
 		["lvl"] = 110,
 		["g"] = {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(168143, {	-- Purposefully Potent Potion
 					["crs"] = {
 						131819,	-- Coven Diviner

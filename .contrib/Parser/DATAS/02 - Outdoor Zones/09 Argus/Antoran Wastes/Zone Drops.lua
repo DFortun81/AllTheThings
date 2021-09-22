@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(905, {	-- Argus
 		m(885, {	-- Antoran Wastes
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(152940, {	-- Arc Circuit
 					["description"] = "Only drops after |cFFFFFFFFSmashed Portal Generator|r has been collected.",
 					["crs"] = {

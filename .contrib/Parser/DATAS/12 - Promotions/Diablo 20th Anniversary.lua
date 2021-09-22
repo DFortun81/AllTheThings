@@ -7,7 +7,7 @@ _.Promotions =
 		["timeline"] = { "added 7.1.0.22908" },
 		["maps"] = { DUSKWOOD },
 		["groups"] = {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(143628),	-- Blank Diabolic Tome
 				i(142548),	-- Large Charm of Dexterity
 				i(142547),	-- Large Charm of Strength

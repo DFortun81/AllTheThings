@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(DEADWIND_PASS, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(16246, {	-- Formula: Enchant Bracer - Superior Strength
 					["cr"] = 7372,	-- Deadwind Warlock
 				}),

@@ -123,7 +123,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 				},
 			}),
 			n(-40, {	-- Legacy
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					un(REMOVED_FROM_GAME, n(11519, {	-- Bazzalan
 						un(REMOVED_FROM_GAME, i(68195)),	-- Bazzalan's Blade
 					})),

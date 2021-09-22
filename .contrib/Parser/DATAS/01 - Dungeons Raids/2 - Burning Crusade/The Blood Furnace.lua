@@ -146,7 +146,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(23894),	-- Fel Orc Blood Vial
 			}),
 			d(1, {	-- Normal

@@ -135,7 +135,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				-- #endif
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(29460),	-- Ethereum Prison Key
 				i(22543, {	-- Formula: Enchant Boots - Fortitude
 					["cr"] = 18317,	-- Ethereal Priest

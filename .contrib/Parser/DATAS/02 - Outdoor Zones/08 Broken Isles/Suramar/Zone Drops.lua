@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
 					112705,	-- Achronos
 					104521,	-- Alteria
@@ -284,7 +284,7 @@ _.Zones =
 					i(121801),	-- Coral-Edge Band
 				},
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(136901, {	-- Eye of Inquisition (PET!)
 					["crs"] = { 101878 },	-- Felsoul Inquisitor
 				}),

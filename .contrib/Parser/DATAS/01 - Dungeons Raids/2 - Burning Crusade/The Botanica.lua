@@ -42,7 +42,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(67, 20, 67),
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(24172, {	-- Design: Coronet of Verdant Flame
 					["cr"] = 18422,	-- Sunseeker Botanist
 				}),

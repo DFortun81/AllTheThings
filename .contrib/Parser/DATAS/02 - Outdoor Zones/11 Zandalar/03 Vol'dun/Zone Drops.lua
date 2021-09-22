@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(VOLDUN, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(163576, {	-- Captured Dune Scavenger
 					["crs"] = {
 						134429,	-- Diamondback Warbringer

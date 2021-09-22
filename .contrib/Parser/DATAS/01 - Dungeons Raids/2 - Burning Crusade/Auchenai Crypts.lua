@@ -98,7 +98,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				-- #endif
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(22544, {	-- Formula: Enchant Boots - Dexterity
 					["cr"] = 18521,	-- Raging Skeleton
 				}),

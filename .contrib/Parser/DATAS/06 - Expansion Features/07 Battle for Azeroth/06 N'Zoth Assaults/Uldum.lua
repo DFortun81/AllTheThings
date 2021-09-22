@@ -407,7 +407,7 @@ _.ExpansionFeatures =
 							["isWorldQuest"] = true,
 						}),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(174764),	-- Tol'vir Relic Fragment
 					}),
 				}),
@@ -776,7 +776,7 @@ _.ExpansionFeatures =
 							["isWorldQuest"] = true,
 						}),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(174756),	-- Aqir Relic Fragment
 					}),
 				}),
@@ -1260,7 +1260,7 @@ _.ExpansionFeatures =
 						}),
 						]]--
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(170553, {	-- Void Focus Splinter
 							["description"] = "The fastest way is to farm them inside Lesser Vision.",
 						}),
@@ -2014,7 +2014,7 @@ _.ExpansionFeatures =
 					n(-10071,	{	-- Visions of N'Zoth
 						["description"] = "Use the obelisk to see Uldum succumb to N'Zoth's corruption.",
 						["g"] = {
-							n(ZONEDROPS, {
+							n(ZONE_DROPS, {
 								i(174837),	-- Decaying Fusion Core (14 day timer on this. use it at 78/65 during Amathet assault to get fast percentage)
 								i(171312, {	-- Recipe: Void Focus
 									["spellID"] = 0,
@@ -2052,7 +2052,7 @@ _.ExpansionFeatures =
 							["isWorldQuest"] = true,
 						}),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(174368),	-- Pattern: Unsettling Cragscale Boots
 						i(174369),	-- Pattern: Unsettling Cragscale Greaves
 						i(174366),	-- Pattern: Unsettling Dredged Leather Boots
@@ -2068,7 +2068,7 @@ _.ExpansionFeatures =
 						i(171314),	-- Schematic: A-N0M-A-L0U5 Synthetic Specs
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(173420, {	-- Black Empire Cloth Belt
 						i(173511),	-- Vile Manipulator's Belt
 						i(173436),	-- Vile Manipulator's Cinch

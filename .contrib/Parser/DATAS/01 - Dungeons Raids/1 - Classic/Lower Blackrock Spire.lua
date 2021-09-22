@@ -58,7 +58,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(16244, {			-- Formula: Enchant Gloves - Greater Strength
 					["crs"] = {
 						9198,	-- Spirestone Mystic
@@ -296,7 +296,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 				}),
 			})),
 			n(-40, {	-- Legacy
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					un(REMOVED_FROM_GAME, i(16680, {	-- Beaststalker's Belt
 						["crs"] = {
 							9692,	-- Bloodaxe Raider

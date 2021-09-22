@@ -37,7 +37,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 			}),
 			d(1,   {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(36977, {	-- Bindings of the Construct
 						["crs"] = {
 							27633,	-- Azure Inquisitor
@@ -166,7 +166,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(37365, {	-- Bands of the Sky Ring
 							["crs"] = {
 								27633,	-- Azure Inquisitor

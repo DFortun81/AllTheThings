@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["groups"] = {
 					i(144309),	-- Formula: Enchant Neck - Mark of the Master (Rank 2)
 					i(137717, {	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)

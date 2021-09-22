@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(SOUTHERN_BARRENS, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(78342, {	-- Plump Dig Rat
 					["spellID"] = 0,	-- Filter: No Spell ID plox
 					["cr"] = 3444,	-- Dig Rat

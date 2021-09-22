@@ -104,7 +104,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(67, 25, 67),
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(29460),	-- Ethereum Prison Key
 				i(22556, {	-- Formula: Enchant 2H Weapon - Major Agility
 					["cr"] = 20880,	-- Eredar Deathbringer

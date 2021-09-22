@@ -46,7 +46,7 @@ _.Instances = { tier(MOP_TIER, {
 						["model"] = 534984,
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					n(65317, {	-- Xiang <The Two Jugglers>
 						i(87522),	-- Star Carrier Bracers  [Lucetia: Only drops from this mob don't remove]
 					}),

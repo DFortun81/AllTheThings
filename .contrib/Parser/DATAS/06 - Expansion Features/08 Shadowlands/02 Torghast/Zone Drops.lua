@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
 		m(1627, {	-- Torghast
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 			--	Epics
 				i(187096, {	-- Adamant Vault Shoulderplates
 					["crs"] = {

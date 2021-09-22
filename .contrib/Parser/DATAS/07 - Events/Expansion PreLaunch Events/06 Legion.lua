@@ -351,7 +351,7 @@ _.WorldEvents =
 							}),
 						})),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						n(112315, {	-- Dread Infiltrator
 							["description"] = "Players with some sort of Sense Demons ability could get this mob to spawn from Doomsayers.",
 							["groups"] = {

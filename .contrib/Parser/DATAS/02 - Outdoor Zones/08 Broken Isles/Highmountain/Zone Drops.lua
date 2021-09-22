@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
 					104481,	-- Ala'washte
 					104294,	-- Archmage Brixton

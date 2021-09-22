@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(WESTFALL, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(1959, {	-- Cold Iron Pick
 					["crs"] = { 623 },	-- Skeletal Miner
 				}),

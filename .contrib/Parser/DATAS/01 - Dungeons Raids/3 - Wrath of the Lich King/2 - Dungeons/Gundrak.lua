@@ -66,7 +66,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 			}),
 			d(1, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(35593, {	-- Steel Bear Trap Bracers
 						["crs"] = {
 							29836,	-- Drakkari Battle Rider
@@ -162,7 +162,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			d(2, {	-- Heroic
 				["lvl"] = 80,
 				["g"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(37646, {	-- Burning Skull Pendant
 							["crs"] = {
 								29822,	-- Drakkari Fire Weaver

@@ -8,7 +8,7 @@ _.Instances = { tier(MOP_TIER, {
 		["maps"] = { 453, 454, 455 },
 		["lvl"] = 87,
 		["g"] = {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(87806, {	-- Ancient Mogu Key
 					["crs"] = {
 						61216,	-- Glintrok Hexxer

@@ -1194,7 +1194,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(23984),	-- Irradiated Crystal Shard
 					i(23870, {	-- Red Crystal Pendant
 						["cr"] = 17496,	-- Cruelfin

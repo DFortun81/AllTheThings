@@ -112,7 +112,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					i(35311),	-- Schematic: Mana Potion Injector
 				},
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(35516),	-- Sun Touched Satchel
 			}),
 			d(1, {	-- Normal

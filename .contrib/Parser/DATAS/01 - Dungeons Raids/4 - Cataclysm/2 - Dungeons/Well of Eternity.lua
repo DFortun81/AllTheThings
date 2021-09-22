@@ -49,7 +49,7 @@ _.Instances = { tier(CATA_TIER, {
 					["sourceQuests"] = { 30099 },	-- In Unending Numbers
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
 					55654,	-- Corrupted Arcanist
 					55656,	-- Dreadlord Defender

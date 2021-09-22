@@ -32,7 +32,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 			}),
 			d(1, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(37800, {	-- Aviary Guardsman's Hauberk
 						["crs"] = {
 							26625,	-- Darkweb Recluse
@@ -219,7 +219,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				["lvl"] = 80,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(37800, {	-- Aviary Guardsman's Hauberk
 							["crs"] = {
 								26625,	-- Darkweb Recluse

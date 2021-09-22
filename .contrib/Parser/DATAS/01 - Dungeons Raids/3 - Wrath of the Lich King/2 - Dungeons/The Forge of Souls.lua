@@ -32,7 +32,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 			d(1,   {	-- Normal
 				ach(4516),	-- The Forge of Souls
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(49852, {	-- Coffin Nail
 						["crs"] = {
 							36522,	-- Soul Horror
@@ -125,7 +125,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				["lvl"] = 80,
 				["g"] = {
 					ach(4519),	-- Heroic: The Forge of Souls
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(50379),	-- Battered Hilt (Alliance)
 						i(50380),	-- Battered Hilt (Horde)
 						i(50318, {	-- Ghostly Wristwraps

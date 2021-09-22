@@ -68,7 +68,7 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 			}),
 			d(17, {	-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					un(REMOVED_FROM_GAME, i(127115, {	-- Tome of Chaos
 						["crs"] = {
 							95068,	-- Hellfire Assault
@@ -353,7 +353,7 @@ _.Instances = { tier(WOD_TIER, {
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt
@@ -872,7 +872,7 @@ _.Instances = { tier(WOD_TIER, {
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt
@@ -1394,7 +1394,7 @@ _.Instances = { tier(WOD_TIER, {
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt

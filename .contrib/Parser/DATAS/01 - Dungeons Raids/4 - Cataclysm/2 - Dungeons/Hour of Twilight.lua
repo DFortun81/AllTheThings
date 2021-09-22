@@ -42,7 +42,7 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				},
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
 					55559,	-- Crystalline Elemental
 					54555,	-- Frozen Servitor

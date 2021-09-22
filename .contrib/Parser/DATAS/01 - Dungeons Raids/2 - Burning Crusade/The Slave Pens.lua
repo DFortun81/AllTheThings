@@ -132,7 +132,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(70, 10, 70),
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(24368),	-- Coilfang Armaments
 			}),
 			d(1, {	-- Normal

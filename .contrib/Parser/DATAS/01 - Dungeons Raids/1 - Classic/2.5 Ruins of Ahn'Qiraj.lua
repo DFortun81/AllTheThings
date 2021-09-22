@@ -464,7 +464,7 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(21801),	-- Antenna of Invigoration
 				i(21804),	-- Coif of Elemental Fury
 				i(21803),	-- Helm of the Holy Avenger

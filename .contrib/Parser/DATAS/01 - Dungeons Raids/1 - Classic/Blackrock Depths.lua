@@ -250,7 +250,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["lvl"] = 48,
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(12546, {	-- Aristocratic Cuffs
 					["crs"] = {
 						8903,	-- Anvilrage Captain

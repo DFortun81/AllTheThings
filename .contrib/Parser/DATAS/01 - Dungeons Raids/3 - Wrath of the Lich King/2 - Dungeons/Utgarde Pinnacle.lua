@@ -23,7 +23,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 				q(29864),	-- Working at the Source, No actual awards.
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				{	-- Bands of Fading Light
 					["itemID"] = 37590,	-- Bands of Fading Light
 					["crs"] = {

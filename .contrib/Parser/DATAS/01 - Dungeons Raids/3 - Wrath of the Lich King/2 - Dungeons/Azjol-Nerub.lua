@@ -34,7 +34,7 @@ _.Instances = { tier(WOTLK_TIER, {
 			}),
 			d(1,   {	-- Normal
 				ach(480),	-- Azjol-Nerub
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(35664, {	-- Unknown Archaeologist's Hammer
 						["crs"] = {
 							29128,	-- Anub'ar Prime Guard
@@ -115,7 +115,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				["lvl"] = 80,
 				["groups"] = {
 					ach(491),	-- Heroic: Azjol-Nerub
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(37624, {	-- Stained-Glass Shard Ring
 							["crs"] = {
 								29128,	-- Anub'ar Prime Guard

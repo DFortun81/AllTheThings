@@ -34,7 +34,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 			}),
 			d(1,   {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(36999, {	-- Boots of the Terrestrial Guardian
 						["crs"] = {
 							28583,	-- Blistering Steamrager
@@ -169,7 +169,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				["lvl"] = 80,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(37858, {	-- Awakened Handguards
 							["crs"] = {
 								28583,	-- Blistering Steamrager

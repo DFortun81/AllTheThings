@@ -82,7 +82,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(1488, {	-- Avenger's Armor
 					["crs"] = {
 						74620,	-- Battle Boar

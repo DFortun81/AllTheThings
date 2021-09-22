@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(ISLE_OF_THUNDER, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
 					69909,	-- Amani'shi Flame Chanter
 					67473,	-- Animated Warrior
@@ -157,7 +157,7 @@ _.Zones =
 					i(94028),	-- Zandalari Head-Cleaver
 				},
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(97961, {	-- Half-Empty Food Container (Filthling Pet)
 					["crs"] = { 69251 },	-- Quivering Filth
 				}),

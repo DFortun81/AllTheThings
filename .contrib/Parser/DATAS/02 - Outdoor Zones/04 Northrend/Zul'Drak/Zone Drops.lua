@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(121, {	-- Zul'Drak
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(48116, {	-- Gundrak Hatchling
 					["crs"] = { 29334 },	-- Gundrak Raptor
 				}),

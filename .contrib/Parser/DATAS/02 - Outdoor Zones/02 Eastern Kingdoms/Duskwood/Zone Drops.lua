@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(DUSKWOOD, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(2014, {	-- Black Metal Greatsword
 					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 1270 },	-- Fetid Corpse

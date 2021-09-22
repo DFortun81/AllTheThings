@@ -87,7 +87,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(9420, {	-- Adventurer's Pith Helmet
 					["crs"] = {
 						4848,	-- Shadowforge Darkcaster

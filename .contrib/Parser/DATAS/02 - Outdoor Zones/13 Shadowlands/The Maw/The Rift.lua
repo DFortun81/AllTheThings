@@ -121,7 +121,7 @@ _.Zones =
 							},
 						}),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(187174),	-- Shaded Judgment Stone
 					}),
 				},

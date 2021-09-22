@@ -342,7 +342,7 @@ _.Instances = { tier(MOP_TIER, {
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Flexible difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				["g"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						un(REMOVED_FROM_GAME, i(105838)),	-- Aeth's Swiftcinder Cloak Normal
 						un(38, i(105830)),	-- Brave Niunai's Cloak Normal (confirmed to drop from Ordos cache on July 23, 2020)
 						un(38, i(105826)),	-- Cape of the Alpha Normal (confirmed to drop from Ordos cache on July 23, 2020)
@@ -641,7 +641,7 @@ _.Instances = { tier(MOP_TIER, {
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Normal difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				["g"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						un(REMOVED_FROM_GAME, i(103846)),	-- Aeth's Swiftcinder Cloak Heroic
 						un(REMOVED_FROM_GAME, i(103960)),	-- Brave Niunai's Cloak Heroic
 						un(REMOVED_FROM_GAME, i(103935)),	-- Cape of the Alpha Heroic
@@ -1190,7 +1190,7 @@ _.Instances = { tier(MOP_TIER, {
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Heroic difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				["g"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						un(REMOVED_FROM_GAME, i(105852)),	-- Aeth's Swiftcinder Cloak Mythic
 						un(REMOVED_FROM_GAME, i(105844)),	-- Brave Niunai's Cloak Mythic
 						un(REMOVED_FROM_GAME, i(105840)),	-- Cape of the Alpha Mythic
@@ -1824,7 +1824,7 @@ _.Instances = { tier(MOP_TIER, {
 							},
 						})),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						-- Confirmed drops are uncommented
 						-- i(113224),	-- Aeth's Swiftcinder Cloak
 						-- i(113231),	-- Brave Niunai's Cloak
@@ -2245,7 +2245,7 @@ _.Instances = { tier(MOP_TIER, {
 				},
 			}),
 			d(14, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(113224),	-- Aeth's Swiftcinder Cloak
 					i(113231),	-- Brave Niunai's Cloak
 					i(113226),	-- Cape of the Alpha
@@ -2670,7 +2670,7 @@ _.Instances = { tier(MOP_TIER, {
 				})),
 			}),
 			d(15, {	-- Heroic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(113224),	-- Aeth's Swiftcinder Cloak
 					i(113231),	-- Brave Niunai's Cloak
 					i(113226),	-- Cape of the Alpha
@@ -3114,7 +3114,7 @@ _.Instances = { tier(MOP_TIER, {
 				})),
 			}),
 			d(16, {	-- Mythic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(113224),	-- Aeth's Swiftcinder Cloak
 					i(113231),	-- Brave Niunai's Cloak
 					i(113226),	-- Cape of the Alpha

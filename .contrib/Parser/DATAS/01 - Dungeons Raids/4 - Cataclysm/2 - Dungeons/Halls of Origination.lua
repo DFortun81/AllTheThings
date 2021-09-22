@@ -33,7 +33,7 @@ _.Instances = { tier(CATA_TIER, {
 				}),
 			}),
 			d(1, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(56109, {    -- Book of Origination
 						["crs"] = {
 							39803,	-- Air Warden
@@ -161,7 +161,7 @@ _.Instances = { tier(CATA_TIER, {
 					n(ACHIEVEMENTS, {
 						ach(5296),	-- Faster Than the Speed of Light
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(56109, {    -- Book of Origination
 							["crs"] = {
 								39803,	-- Air Warden

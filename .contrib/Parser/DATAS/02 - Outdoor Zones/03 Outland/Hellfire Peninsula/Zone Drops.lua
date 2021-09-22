@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(28552, {	-- A Mysterious Tome
 					["description"] = "Must have started or completed |cFFFFD700Make Them Listen|r for this item to become available.",
 					["cr"] = 16906,	-- Unyielding Knight

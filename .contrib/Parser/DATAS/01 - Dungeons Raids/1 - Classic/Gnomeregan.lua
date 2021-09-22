@@ -168,7 +168,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(9281, {	-- Red Punch Card
 					["requireSkill"] = ENGINEERING,
 					["g"] = {

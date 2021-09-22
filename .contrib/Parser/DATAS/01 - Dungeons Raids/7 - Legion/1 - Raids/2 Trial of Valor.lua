@@ -78,7 +78,7 @@ _.Instances = { tier(LEGION_TIER, {
 				}),
 			}),
 			d(17,  {	-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						i(142541),	-- Drape of the Forgotten Souls
@@ -224,7 +224,7 @@ _.Instances = { tier(LEGION_TIER, {
 				}),
 			}),
 			d(14,  {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				cr(114263, e(1819, {	-- Odyn
@@ -296,7 +296,7 @@ _.Instances = { tier(LEGION_TIER, {
 				}))
 			}),
 			d(15,  {	-- Heroic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				n(COMMON_BOSS_DROPS, {
@@ -440,7 +440,7 @@ _.Instances = { tier(LEGION_TIER, {
 				}))
 			}),
 			d(16, {	-- Mythic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				cr(114263, e(1819, {	-- Odyn

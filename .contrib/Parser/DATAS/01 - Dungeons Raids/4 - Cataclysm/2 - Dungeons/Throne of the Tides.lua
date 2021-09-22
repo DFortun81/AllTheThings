@@ -42,7 +42,7 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
 					40936,	-- Faceless Watcher
 					40943,	-- Gilgoblin Aquamage

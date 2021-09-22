@@ -4580,7 +4580,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 			}),
 		}),
 		-- #endif
-		n(ZONEDROPS, {
+		n(ZONE_DROPS, {
 			i(128807, {	-- Coin of Many Faces (TOY!)
 				["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
 				["timeline"] = { "added 6.0.1" },

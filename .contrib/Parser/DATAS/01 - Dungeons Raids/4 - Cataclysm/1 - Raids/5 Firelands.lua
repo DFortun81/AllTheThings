@@ -278,7 +278,7 @@ _.Instances = { tier(CATA_TIER, {
 					i(71253),
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["g"] = {
 					i(69976),	-- Pattern: Boots of the Black Flame
 					i(69966),	-- Pattern: Don Tayo's Inferno Mittens

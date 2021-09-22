@@ -72,7 +72,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(31753, {	-- Essence of Infinity
 					["crs"] = {
 						21104,	-- Rift Keeper

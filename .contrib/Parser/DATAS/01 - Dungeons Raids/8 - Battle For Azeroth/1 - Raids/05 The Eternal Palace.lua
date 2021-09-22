@@ -99,7 +99,7 @@ _.Instances = { tier(BFA_TIER, {
 				i(168627),	-- Vantus Rune Technique: The Eternal Palace (Rank 3)
 			}),
 			d(17, {	-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
 					i(169932),	-- Brineweaver Guardian's Gloves
@@ -326,7 +326,7 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 			}),
 			d(14, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
 					i(169932),	-- Brineweaver Guardian's Gloves
@@ -540,7 +540,7 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 			}),
 			d(15, {	-- Heroic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
 					i(169932),	-- Brineweaver Guardian's Gloves
@@ -756,7 +756,7 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 			}),
 			d(16, {	-- Mythic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
 					i(169932),	-- Brineweaver Guardian's Gloves

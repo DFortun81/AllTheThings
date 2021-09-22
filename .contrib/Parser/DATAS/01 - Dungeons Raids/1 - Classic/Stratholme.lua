@@ -42,7 +42,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 							["provider"] = { "n", 45323 },	-- Packmaster Stonebruiser
 						}),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(16249,  {  -- Formula: Enchant 2H Weapon - Major Intellect
 							["crs"] = {
 								10422,  -- Risen Sorcerer
@@ -201,7 +201,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 						un(REMOVED_FROM_GAME, i(16725)),	-- Lightforge Boots
 					})),
 					n(-40, {	-- Legacy
-						n(ZONEDROPS, {
+						n(ZONE_DROPS, {
 							un(REMOVED_FROM_GAME, n(16102, {	-- Sothos
 								["description"] = "Sothos and Jarien are a pair of elite ghosts summoned in the Scarlet Bastion by using Brazier of Beckoning.",
 								["groups"] = {
@@ -297,7 +297,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 							["provider"] = { "n", 45331 },	-- Master Craftsman Wilhelm
 						}),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(16248, {	-- Formula: Enchant Weapon - Unholy
 							["crs"] = {
 								10398,	-- Thuzadin Shadowcaster
@@ -455,7 +455,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 								un(REMOVED_FROM_GAME, i(17044)),	-- Will of the Martyr
 							})),
 						}),
-						n(ZONEDROPS, {
+						n(ZONE_DROPS, {
 							un(REMOVED_FROM_GAME, i(16681, {	-- Beaststalker's Bindings
 								["crs"] = {
 									10407,	-- Fleshflayer Ghoul

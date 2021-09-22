@@ -33,7 +33,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				}),
 			}),
 			d(1, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(35615, {	-- Glowworm Cavern Bindings
 						["crs"] = {
 							30277,	-- Ahn'kahar Slasher
@@ -135,7 +135,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				["lvl"] = 80,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(37624, {	-- Stained-Glass Shard Ring
 							["crs"] = {
 								30277,	-- Ahn'kahar Slasher

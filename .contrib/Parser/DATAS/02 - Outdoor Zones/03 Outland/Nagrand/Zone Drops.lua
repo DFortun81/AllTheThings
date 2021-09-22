@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(NAGRAND, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(23608, {	-- Plans: Khorium Belt
 					["cr"] = 18203,	-- Murkblood Raider
 				}),

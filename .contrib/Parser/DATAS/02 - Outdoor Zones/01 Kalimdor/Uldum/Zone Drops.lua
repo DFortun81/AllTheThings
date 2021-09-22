@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(249, {	-- Uldum
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(65651),	-- Technique: Origami Beetle
 			}),
 		}),

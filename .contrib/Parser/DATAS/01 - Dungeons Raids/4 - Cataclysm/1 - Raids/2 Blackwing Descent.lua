@@ -14,7 +14,7 @@ _.Instances = { tier(CATA_TIER, {
 		["coord"] = { 47.54, 68.93, EASTERN_KINGDOMS },	-- Blackwing Descent (This is the metamap it uses, don't change!)
 		["groups"] = {
 			ach(4842),	-- Blackwing Descent
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["groups"] = {
 					i(59466),	-- Ironstar's Impenetrable Cover
 					i(59468),	-- Shadowforge's Lightbound Smock

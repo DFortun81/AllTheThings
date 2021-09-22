@@ -7,7 +7,7 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(203, {	-- Vashj'ir
 			m(201, {	-- Kelp'thar Forest
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(65649),	-- Technique: Origami Slime
 				}),
 			}),

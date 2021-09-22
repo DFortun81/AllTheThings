@@ -17,7 +17,7 @@ _.Instances = { tier(WOTLK_TIER, {
 				un(REMOVED_FROM_GAME, ach(2187, {	-- The Undying
 					un(REMOVED_FROM_GAME, title(109)),	-- The Undying
 				})),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(39467),	-- Minion Bracers
 					i(39427),	-- Omen of Ruin
 					i(39468),	-- The Stray
@@ -515,7 +515,7 @@ _.Instances = { tier(WOTLK_TIER, {
 						},
 					},
 				},
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(40410),	-- Shadow of the Ghoul
 					i(40409),	-- Boots of the Escaped Captive
 					i(40414),	-- Shoulderguards of the Undaunted

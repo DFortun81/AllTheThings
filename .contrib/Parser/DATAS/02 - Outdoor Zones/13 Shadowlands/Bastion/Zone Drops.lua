@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(BASTION, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				currency(1819, {	-- Medallion of Service
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian
 					["description"] = "One of the best spots to farm those is in the northwest of Bastion around the World Boss. In the area there are 4 repeatable treasure chests, all of which contain 1 Medallion & can be looted without any daily CD. \n\nCan also drop from any Forsworn enemy.",
