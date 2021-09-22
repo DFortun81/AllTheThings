@@ -2353,7 +2353,9 @@ app.L = {
 	};
 	["HEADER_DESCRIPTIONS"] = {
 		[-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
+		[-169] = "These items can be obtain by doing Emissary Quests or gaining a paragon box",
 		[-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
+		[-903] = "These items can drop from repeatable treasure chests, wish crickets, world quests or table missions.",
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter

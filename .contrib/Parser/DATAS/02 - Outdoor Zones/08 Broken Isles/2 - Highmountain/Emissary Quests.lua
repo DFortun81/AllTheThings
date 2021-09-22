@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
-			n(-169, {	-- Emissary Quests
+			n(EMISSARY_QUESTS, {
 				q(42233, {	-- Highmountain Tribes
 					["repeatable"] = true,
 					["provider"] = { "n", 106902 },	-- Ransa Greyfeather <Highmountain Emissary>
@@ -18,9 +18,7 @@ _.Zones =
 								{"finalize"},	-- Push the processed items on to the finalized stack and ignore further queries on them.
 								{"select", "mapID", HIGHMOUNTAIN},
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"where", "headerID", WORLD_QUESTS },
-								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"not", "headerID", QUESTS},	-- Not the 'Quests' header
+								{"where", "headerID", ZONE_REWARDS },
 								{"is", "headerID"},	-- Ignore all of the non-npcID entries. (set headers only)
 							},
 							["groups"] = {
@@ -49,22 +47,20 @@ _.Zones =
 						})),
 					},
 				}),
-				n(-206, {	-- Paragon
-					q(46743, {	-- Supplies From Highmountain
-						["repeatable"] = true,
-						["provider"] = { "n", 106902 },	-- Ransa Greyfeather <Highmountain Emissary>
-						["groups"] = {
-							i(152104, {	-- Highmountain Supplies
-								i(147807),	-- Highmountain Elderhorn (MOUNT!)
-							}),
-							un(REMOVED_FROM_GAME, i(146899, {	-- Highmountain Supplies
-								["sym"] = {
-									{"select", "itemID", 152104},	-- Highmountain Supplies
-									{"pop"},
-								},
-							})),
-						},
-					}),
+				q(46743, {	-- Supplies From Highmountain
+					["repeatable"] = true,
+					["provider"] = { "n", 106902 },	-- Ransa Greyfeather <Highmountain Emissary>
+					["groups"] = {
+						i(152104, {	-- Highmountain Supplies
+							i(147807),	-- Highmountain Elderhorn (MOUNT!)
+						}),
+						un(REMOVED_FROM_GAME, i(146899, {	-- Highmountain Supplies
+							["sym"] = {
+								{"select", "itemID", 152104},	-- Highmountain Supplies
+								{"pop"},
+							},
+						})),
+					},
 				}),
 			}),
 		}),

@@ -7,6 +7,7 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(ACHIEVEMENTS, {
+				ach(11264),	-- Adventurer of Highmountain
 				ach(10059, {	-- Ain't No Mountain High Enough
 					crit(1, {	-- The Rivermane Tribe
 						["sourceQuests"] = { 39487 },	-- Crystal Fury
@@ -272,6 +273,7 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(11257),	-- Treasures of Highmountain
 			}),
 		}),
 	}),

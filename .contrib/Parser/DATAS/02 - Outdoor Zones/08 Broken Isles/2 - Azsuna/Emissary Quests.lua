@@ -18,9 +18,7 @@ _.Zones =
 								{"finalize"},	-- Push the processed items on to the finalized stack and ignore further queries on them.
 								{"select", "mapID", AZSUNA},
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"where", "headerID", WORLD_QUESTS },
-								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"where", "headerID", REWARDS },
+								{"where", "headerID", ZONE_REWARDS },
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 								{"is", "headerID"},	-- Ignore all of the non-npcID entries.
 							},
@@ -61,9 +59,7 @@ _.Zones =
 								{"finalize"},	-- Push the processed items on to the finalized stack and ignore further queries on them.
 								{"select", "mapID", AZSUNA},
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"where", "headerID", WORLD_QUESTS },
-								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{"where", "headerID", REWARDS },
+								{"where", "headerID", ZONE_REWARDS },
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 								{"is", "headerID"},	-- Ignore all of the non-npcID entries.
 							},
