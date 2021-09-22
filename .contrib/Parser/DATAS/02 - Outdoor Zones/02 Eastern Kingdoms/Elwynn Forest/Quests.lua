@@ -199,11 +199,12 @@ _.Zones =
 				}),
 				q(7678,  {	-- Palomino Exchange
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 					["provider"] = { "n", 384 },	-- Katie Hunter
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(18777),	-- Swift Brown Steed
-						i(16776),	-- Swift Palomino
+						i(18776),	-- Swift Palomino
 						i(18778),	-- Swift White Steed
 					},
 				}),
@@ -338,6 +339,7 @@ _.Zones =
 				}),
 				q(7677,  {	-- White Stallion Exchange
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 					["provider"] = { "n", 384 },	-- Katie Hunter
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

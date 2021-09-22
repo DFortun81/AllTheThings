@@ -858,6 +858,17 @@ _.Zones =
 						"removed 4.0.3.10000",
 					},
 				}),
+				q(7664,  {	-- Ivory Raptor Replacement
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 7952 },	-- Zjolnir
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["g"] = {
+						i(18788),	-- Swift Blue Raptor
+						i(18789),	-- Swift Olive Raptor
+						i(18990),	-- Swift Orange Raptor
+					},
+				}),
 				q(31012, {	-- Joining the Horde
 					["qg"] = 60570,	-- Ji Firepaw
 					["coord"] = { 45.6, 12.6, DUROTAR },
@@ -1213,6 +1224,17 @@ _.Zones =
 						objective(2, {	-- 0/4 Razormane Scout
 							["cr"] = 3112,	-- Razormane Scout
 						}),
+					},
+				}),
+				q(7665,  {	-- Red Raptor Replacement
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 7952 },	-- Zjolnir
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["g"] = {
+						i(18788),	-- Swift Blue Raptor
+						i(18789),	-- Swift Olive Raptor
+						i(18990),	-- Swift Orange Raptor
 					},
 				}),
 				q(823, {	-- Report to Orgnil

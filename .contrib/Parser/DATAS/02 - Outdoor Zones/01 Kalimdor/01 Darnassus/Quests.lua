@@ -54,6 +54,17 @@ _.Zones =
 						i(65483),	-- Moon Staff of Elune
 					},
 				}),
+				q(7671,  {	-- Frostsaber Replacement
+					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
+					["provider"] = { "n", 4730 },	-- Lelanai
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(18766),	-- Reins of the Swift Frostsaber
+						i(18767),	-- Reins of the Swift Mistsaber
+						i(18902),	-- Reins of the Swift Stormsaber
+					},
+				}),
 				q(32664, {	-- Learn to Ride
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
@@ -115,6 +126,17 @@ _.Zones =
 					["coord"] = { 64.6, 53.0, DARNASSUS },
 					["races"] = { NIGHTELF },
 					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(7672,  {	-- Nightsaber Replacement
+					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
+					["provider"] = { "n", 4730 },	-- Lelanai
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(18766),	-- Reins of the Swift Frostsaber
+						i(18767),	-- Reins of the Swift Mistsaber
+						i(18902),	-- Reins of the Swift Stormsaber
+					},
 				}),
 				q(6343,  {	-- Return to Nyoma
 					["sourceQuests"] = { 6342 },	-- An Unexpected Gift

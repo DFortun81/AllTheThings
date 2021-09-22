@@ -2139,6 +2139,7 @@ _.Zones =
 					["provider"] = { "n", 3362 },	-- Ogunaro Wolfrunner
 					["coord"] = { 61.0, 35.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(18796),	-- Horn of the Swift Brown Wolf
@@ -2150,6 +2151,7 @@ _.Zones =
 					["provider"] = { "n", 3362 },	-- Ogunaro Wolfrunner
 					["coord"] = { 61.0, 35.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(18796),	-- Horn of the Swift Brown Wolf

@@ -93,6 +93,7 @@ _.Zones =
 				}),
 				q(7663,  {	-- New Kodo - Green
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 					["provider"] = { "n", 3685 },	-- Harb Clawhoof
 					["coord"] = { 47.6, 58.0, MULGORE },
 					["g"] = {
@@ -103,6 +104,7 @@ _.Zones =
 				}),
 				q(7662,  {	-- New Kodo - Teal
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 					["provider"] = { "n", 3685 },	-- Harb Clawhoof
 					["coord"] = { 47.6, 58.0, MULGORE },
 					["g"] = {

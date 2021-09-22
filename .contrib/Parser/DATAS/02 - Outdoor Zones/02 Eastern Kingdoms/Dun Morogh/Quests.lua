@@ -45,6 +45,7 @@ _.Zones =
 				}),
 				q(7674,  {	-- Black Ram Exchange
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 					["provider"] = { "n", 1261 },	-- Veron Amberstill
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -114,6 +115,17 @@ _.Zones =
 					["sourceQuest"] = 25998,	-- Get to the Airfield
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(7675,  {	-- Icy Blue Mechanostrider Replacement
+					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
+					["provider"] = { "n", 7955 },	-- Milli Featherwhistle
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(18772),	-- Swift Green Mechanostrider
+						i(18773),	-- Swift White Mechanostrider
+						i(18774),	-- Swift Yellow Mechanostrider
+					},
+				}),
 				q(313,   {	-- Forced to Watch from Afar
 					["provider"] = { "n", 40950 },	-- Captain Tharran
 					["coord"] = { 53.7, 52.1, DUN_MOROGH },
@@ -122,11 +134,7 @@ _.Zones =
 				}),
 				q(7673,  { -- Frost Ram Exchange
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 1261 },	-- Veron Amberstill
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(7673,  {	-- Frost Ram Exchange
-					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 					["provider"] = { "n", 1261 },	-- Veron Amberstill
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -407,6 +415,17 @@ _.Zones =
 						25937,	-- Priceless Treasures
 						433,	-- The Public Servant
 						432,	-- Those Blasted Troggs!
+					},
+				}),
+				q(7676,  {	-- White Mechanostrider Replacement
+					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
+					["provider"] = { "n", 7955 },	-- Milli Featherwhistle
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(18772),	-- Swift Green Mechanostrider
+						i(18773),	-- Swift White Mechanostrider
+						i(18774),	-- Swift Yellow Mechanostrider
 					},
 				}),
 			}),
