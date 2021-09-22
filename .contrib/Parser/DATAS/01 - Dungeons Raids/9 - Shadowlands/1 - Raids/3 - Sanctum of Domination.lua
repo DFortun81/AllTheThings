@@ -439,9 +439,7 @@ _.Instances = { tier(SL_TIER, {
 								}),
 								i(186550),	-- Mawsworn Minion (PET!)
 								i(187542),	-- Jaithys, the Prison Blade
-								i(186410, {	-- Jaithys, the Prison Blade
-									["description"] = "This version is only available as a 'Great Vault' reward.",
-								}),
+								i(186410),	-- Jaithys, the Prison Blade
 								i(186406),	-- Maledict Opus
 								i(187056),	-- The Devouring Cold
 								i(186350),	-- Valorous Visage of Krexus
@@ -701,9 +699,7 @@ _.Instances = { tier(SL_TIER, {
 						ach(15108),	-- Together Forever
 						i(186550),	-- Mawsworn Minion (PET!)
 						i(187542),	-- Jaithys, the Prison Blade
-						i(186410, {	-- Jaithys, the Prison Blade
-							["description"] = "This version is only available as a 'Great Vault' reward.",
-						}),
+						i(186410),	-- Jaithys, the Prison Blade
 						i(186406),	-- Maledict Opus
 						i(187056),	-- The Devouring Cold
 						i(186350),	-- Valorous Visage of Krexus
@@ -960,9 +956,7 @@ _.Instances = { tier(SL_TIER, {
 						ach(15108),	-- Together Forever
 						i(186550),	-- Mawsworn Minion (PET!)
 						i(187542),	-- Jaithys, the Prison Blade
-						i(186410, {	-- Jaithys, the Prison Blade
-							["description"] = "This version is only available as a 'Great Vault' reward.",
-						}),
+						i(186410),	-- Jaithys, the Prison Blade
 						i(186406),	-- Maledict Opus
 						i(187056),	-- The Devouring Cold
 						i(186350),	-- Valorous Visage of Krexus
@@ -1203,9 +1197,7 @@ _.Instances = { tier(SL_TIER, {
 						ach(15108),	-- Together Forever
 						i(186550),	-- Mawsworn Minion (PET!)
 						i(187542),	-- Jaithys, the Prison Blade
-						i(186410, {	-- Jaithys, the Prison Blade
-							["description"] = "This version is only available as a 'Great Vault' reward.",
-						}),
+						i(186410),	-- Jaithys, the Prison Blade
 						i(186406),	-- Maledict Opus
 						i(187056),	-- The Devouring Cold
 						i(186350),	-- Valorous Visage of Krexus
@@ -1373,7 +1365,7 @@ _.HiddenQuestTriggers = {
 	q(64499),	-- Kel'Thuzad (Heroic)
 	q(64637),	-- Kel'Thuzad (Normal)?
 	q(64664),	-- Kel'Thuzad (Normal)?
-	-- q( ),	-- Kel'Thuzad (Mythic)
+	q(64500),	-- Kel'Thuzad (Mythic)
 
 	q(64501),	-- Sylvanas Windrunner (Normal)?
 	q(64502),	-- Sylvanas Windrunner (Normal)?
