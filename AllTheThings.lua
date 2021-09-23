@@ -5649,6 +5649,7 @@ local function AttachTooltipSearchResults(self, search, method, paramA, paramB, 
 	app.SetSkipPurchases(1);
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 	app.SetSkipPurchases(0);
+	self.HasATTSearchResults = true;
 end
 
 local npcQuestsCache = {}
@@ -5681,6 +5682,7 @@ local function AttachTooltip(self)
 	if numLines < 1 then
 		return false
 	end
+	self.HasATTSearchResults = nil;
 	if CanAttachTooltips() then
 		-- check what this tooltip is currently displaying, and keep that reference
 		local link, target, spellID = select(2, self:GetItem());
@@ -13594,8 +13596,10 @@ end
 RowOnEnter = function (self)
 	local reference = self.ref; -- NOTE: This is the good ref value, not the parasitic one.
 	if reference and GameTooltip then
+		local GameTooltip = GameTooltip;
 		local initialBuild = not GameTooltip.IsRefreshing;
 		GameTooltip.IsRefreshing = true;
+		GameTooltip.HasATTSearchResults = nil;
 
 		if initialBuild then
 			-- print("RowOnEnter-Initial");
@@ -13634,7 +13638,6 @@ RowOnEnter = function (self)
 					GameTooltip:SetHyperlink(link);
 				else
 					GameTooltip:AddLine("Item #" .. reference.itemID);
-					if reference and reference.u then GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, true); end
 					AttachTooltipSearchResults(GameTooltip, "itemID:" .. reference.itemID, SearchForField, "itemID", reference.itemID);
 				--elseif reference.speciesID then
 					-- Do nothing.
@@ -13826,41 +13829,9 @@ RowOnEnter = function (self)
 		end
 		if reference.bonusID and app.Settings:GetTooltipSetting("bonusID") then GameTooltip:AddDoubleLine("Bonus ID", tostring(reference.bonusID)); end
 		if reference.modID and app.Settings:GetTooltipSetting("modID") then GameTooltip:AddDoubleLine("Mod ID", tostring(reference.modID)); end
-		if app.Settings:GetTooltipSetting("Lore") then
-			if reference.lore then
-				local found = false;
-				for i=1,GameTooltip:NumLines() do
-					if _G["GameTooltipTextLeft"..i]:GetText() == reference.lore then
-						found = true;
-						break;
-					end
-				end
-				if not found then GameTooltip:AddLine(reference.lore, 0.4, 0.8, 1, 1); end
-			end
-		end
-		if app.Settings:GetTooltipSetting("Descriptions") then
-			-- non-localized description on the specified Thing (will be converted into localized text at some point)
-			if reference.description then
-				local found = false;
-				for i=1,GameTooltip:NumLines() do
-					if _G["GameTooltipTextLeft"..i]:GetText() == reference.description then
-						found = true;
-						break;
-					end
-				end
-				if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
-			end
-		end
 		if not reference.itemID then
 			if reference.speciesID then
 				AttachTooltipSearchResults(GameTooltip, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
-			elseif reference.u then
-				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
-			end
-			-- PvP filter text
-			if reference.pvp then
-				-- TODO: probably re-design this once it's no longer considered an unobtainable filter completely
-				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][12][2], 1, 1, 1, 1, true);
 			end
 		end
 		if reference.speciesID then
@@ -14023,6 +13994,27 @@ RowOnEnter = function (self)
 			if right and right ~= "" and right ~= "---" then
 				GameTooltipTextRight1:SetText(right);
 				GameTooltipTextRight1:Show();
+			end
+		end
+
+		-- Additional information if the row did not generate a search result for the tooltip
+		if not GameTooltip.HasATTSearchResults then
+			-- Lore
+			if app.Settings:GetTooltipSetting("Lore") and reference.lore then
+				GameTooltip:AddLine(reference.lore, 0.4, 0.8, 1, 1);
+			end
+			-- Description
+			if app.Settings:GetTooltipSetting("Descriptions") and reference.description then
+				GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
+			end
+			-- Unobtainable
+			if reference.u then
+				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
+			end
+			-- PvP
+			if reference.pvp then
+				-- TODO: probably re-design this once it's no longer considered an unobtainable filter completely
+				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][12][2], 1, 1, 1, 1, true);
 			end
 		end
 
