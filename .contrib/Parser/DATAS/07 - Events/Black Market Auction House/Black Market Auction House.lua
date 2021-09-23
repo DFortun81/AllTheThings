@@ -2,11 +2,9 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
--- TODO: refactor some items here according to new format standarts.
 _.WorldEvents =
 {
-	n(-94, {	-- Black Market AH
-		["u"] = 9,
+	n(-94, bubbleDown({["u"] = 9}, {	-- Black Market AH
 		["description"] = "This list is close to what you can expect to find on the Black Market Auction House, but keep in mind other items could pop up.",
 		["maps"] = {
 			BORALUS,
@@ -23,8 +21,8 @@ _.WorldEvents =
 			103791,	-- Madam Gosu [Rogue Class Hall]
 			135709,	-- Madam Goya [Dazar'alor - Horde]
 			160081,	-- Ta'xera <Matron of the Market>
-			94829,	-- Zhang Yeoh [Garrison]
 			--100986,	-- Madam Goya [Underbelly] -- Option to interact with this Version removed in 9.0.2
+			-- 94829,	-- Zhang Yeoh [Garrison]
 		},
 		["coords"] = {
 			{ 56.71, 46.32, BORALUS },	-- Madam Gosu
@@ -39,16 +37,16 @@ _.WorldEvents =
 				i(183634),	-- Papa's Mint Condition Bag (9.1)
 			}),
 			filter(103, {	-- Illusions
-				un(MIDSUMMER_FIRE_FESTIVAL, i(138838)),	-- Illusion: Deathfrost
-				un(FEAST_OF_WINTER_VEIL, i(118572)),	-- Illusion: Flame of Ragnaros
-				un(FEAST_OF_WINTER_VEIL, i(128649)),	-- Illusion: Winter's Grasp
+				i(138838),	-- Illusion: Deathfrost
+				i(118572),	-- Illusion: Flame of Ragnaros
+				i(128649),	-- Illusion: Winter's Grasp
 			}),
 			n(-160, {	-- Mounts
 				i(143643),	-- Abyss Worm
 				i(68823),	-- Armored Razzashi Raptor
 				i(32458),	-- Ashes of Alar
 				i(95059),	-- Clutch of Ji-Kun
-				un(9, i(115484)),	-- Core Hound Chain
+				i(115484),	-- Core Hound Chain
 				i(13335),	-- Deathcharger's Reins
 				i(78919),	-- Experiment 12-B
 				i(123890),	-- Felsteel Annihilator
@@ -61,7 +59,7 @@ _.WorldEvents =
 				i(77069),	-- Life-Binder's Handmaiden
 				i(137574),	-- Living Infernal Core
 				i(45693),	-- Mimiron's Head
-				un(9, i(172012)),	-- Obsidian Worldbreaker
+				i(172012),	-- Obsidian Worldbreaker
 				i(94230),	-- Reins of the Amber Primordial Direhorn
 				i(87777),	-- Reins of the Astral Cloud Serpent
 				i(43952),	-- Reins of the Azure Drake
@@ -76,9 +74,9 @@ _.WorldEvents =
 				i(44707),	-- Reins of the Green Proto-Drake
 				i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent
 				i(94231),	-- Reins of the Jade Primordial Direhorn
-				un(9, i(163042)),  -- Reins of the Mighty Caravan Brutosaur
+				i(163042),  -- Reins of the Mighty Caravan Brutosaur
 				i(49636),	-- Reins of the Onyxian Drake
-				un(9, i(44175)),	-- Reins of the Plagued Proto-Drake
+				i(44175),	-- Reins of the Plagued Proto-Drake
 				i(94229),	-- Reins of the Slate Primordial Direhorn
 				i(32768),	-- Reins of the Raven Lord
 				i(45802),	-- Reins of the Rusted Proto-Drake
@@ -93,10 +91,10 @@ _.WorldEvents =
 				i(93666),	-- Spawn of Horridon
 				i(69224),	-- Smoldering Egg of Millagazor
 				i(89783),	-- Son of Galleon's Saddle
-				un(9, i(19872)),	-- Swift Razzashi Raptor
+				i(19872),	-- Swift Razzashi Raptor
 				i(68824),	-- Swift Zulian Panther
 				i(35513),	-- Swift White Hawkstrider
-				un(9, i(19902)),	-- Swift Zulian Tiger
+				i(19902),	-- Swift Zulian Tiger
 				i(54068),	-- Wooly White Rhino
 				i(147805),	-- Valarjar Stormwing
 				i(152790),	-- Vile Fiend
@@ -104,70 +102,70 @@ _.WorldEvents =
 			}),
 			n(72057, {	-- Ordos
 				-- Head
-				un(38, i(105804)),	-- Aladya's Spiritfire Greathelm
-				un(38, i(105810)),	-- Buc-Zakai Burning Hood
-				un(38, i(105806)),	-- Circlet of the Panser
-				un(38, i(105809)),	-- Crest of Burning Deeds
-				un(38, i(105808)),	-- Damien's Ice-Vein Mask
-				un(38, i(105805)),	-- Dominik's Casque of Raging Flame
-				un(38, i(105807)),	-- Magdalena's Murderous Crown
-				un(38, i(105811)),	-- Olivia's Graceful Gaze
-				un(38, i(105803)),	-- Stickney's Grey-Shade Hood
+				i(105804),	-- Aladya's Spiritfire Greathelm
+				i(105810),	-- Buc-Zakai Burning Hood
+				i(105806),	-- Circlet of the Panser
+				i(105809),	-- Crest of Burning Deeds
+				i(105808),	-- Damien's Ice-Vein Mask
+				i(105805),	-- Dominik's Casque of Raging Flame
+				i(105807),	-- Magdalena's Murderous Crown
+				i(105811),	-- Olivia's Graceful Gaze
+				i(105803),	-- Stickney's Grey-Shade Hood
 				-- Neck
-				un(38, i(105766)),	-- Anafielle's Spiked Choker
-				un(38, i(105765)),	-- Bladeforger Necklace
-				un(38, i(105763)),	-- Penate's Perilous Pendant
-				un(38, i(105764)),	-- Rising New Moon Talisman
-				un(38, i(105762)),	-- Smoldering Eye
+				i(105766),	-- Anafielle's Spiked Choker
+				i(105765),	-- Bladeforger Necklace
+				i(105763),	-- Penate's Perilous Pendant
+				i(105764),	-- Rising New Moon Talisman
+				i(105762),	-- Smoldering Eye
 				-- Shoulder
-				un(38, i(105795)),	-- Bo He Me's Deathwind Mantle
-				un(38, i(105800)),	-- Firearrow Shoulderpads
-				un(38, i(105798)),	-- Flame Healer's Shoulderguards
-				un(38, i(105799)),	-- Fleshsmoke Chain Shoulders
-				un(38, i(105796)),	-- Rossi's Rosin-Soaked Shoulderplates
-				un(38, i(105797)),	-- Shay-Nii's Popping Shoulderpads
-				un(38, i(105801)),	-- Spaulders of Dominating Dreams
-				un(38, i(105794)),	-- Starry Spaulders of Durability
-				un(38, i(105802)),	-- Yaungol Deathcult Shoulderguards
+				i(105795),	-- Bo He Me's Deathwind Mantle
+				i(105800),	-- Firearrow Shoulderpads
+				i(105798),	-- Flame Healer's Shoulderguards
+				i(105799),	-- Fleshsmoke Chain Shoulders
+				i(105796),	-- Rossi's Rosin-Soaked Shoulderplates
+				i(105797),	-- Shay-Nii's Popping Shoulderpads
+				i(105801),	-- Spaulders of Dominating Dreams
+				i(105794),	-- Starry Spaulders of Durability
+				i(105802),	-- Yaungol Deathcult Shoulderguards
 				-- Chest
-				un(38, i(105774)),	-- Catia's Flowing Robes
-				un(38, i(105771)),	-- Chestguard of Pyrrhic Immolation
-				un(38, i(105775)),	-- Gleaming Eye Spellplate
-				un(38, i(105767)),	-- Hoodrych's Bloodied Chestplate
-				un(38, i(105772)),	-- Moonhee's Mean Vest
-				un(38, i(105769)),	-- Omegal's Crushing Carapace
-				un(38, i(105768)),	-- Pamela's Muuscat Wrap
-				un(38, i(105773)),	-- Ulmaas' Robes of Crushing Magma
-				un(38, i(105770)),	-- Zoo-Per's Superior Chestguard
+				i(105774),	-- Catia's Flowing Robes
+				i(105771),	-- Chestguard of Pyrrhic Immolation
+				i(105775),	-- Gleaming Eye Spellplate
+				i(105767),	-- Hoodrych's Bloodied Chestplate
+				i(105772),	-- Moonhee's Mean Vest
+				i(105769),	-- Omegal's Crushing Carapace
+				i(105768),	-- Pamela's Muuscat Wrap
+				i(105773),	-- Ulmaas' Robes of Crushing Magma
+				i(105770),	-- Zoo-Per's Superior Chestguard
 				-- Wrists
-				un(38, i(105789)),	-- Bjam's Blasting Bracers
-				un(38, i(105792)),	-- Bowflight Wristguard
-				un(38, i(105793)),	-- Bracers of Simmering Fury
-				un(38, i(105791)),	-- Bracers of Unquestioning Belief
-				un(38, i(105787)),	-- Burnseal Bracers
-				un(38, i(105790)),	-- Firetotem Bracers
-				un(38, i(105786)),	-- Ordosian Cultist's Bracers
-				un(38, i(105788)),	-- Paululum's Doodled Wraps
-				un(38, i(105785)),	-- Vanguard's Burly Bracers
+				i(105789),	-- Bjam's Blasting Bracers
+				i(105792),	-- Bowflight Wristguard
+				i(105793),	-- Bracers of Simmering Fury
+				i(105791),	-- Bracers of Unquestioning Belief
+				i(105787),	-- Burnseal Bracers
+				i(105790),	-- Firetotem Bracers
+				i(105786),	-- Ordosian Cultist's Bracers
+				i(105788),	-- Paululum's Doodled Wraps
+				i(105785),	-- Vanguard's Burly Bracers
 				-- Waist
-				un(38, i(105782)),	-- Belt of Glowing Embers
-				un(38, i(105776)),	-- Belt of the Burning Soul
-				un(38, i(105784)),	-- Binkenstein's Burnished Belt
-				un(38, i(105778)),	-- Derevka's Gleaming Girdle
-				un(38, i(105783)),	-- Greatbelt of the Crendor
-				un(38, i(105779)),	-- Light Kindler Waistguard
-				un(38, i(105777)),	-- Remnar's Ruinous Girdle
-				un(38, i(105781)),	-- Venruki's Venerable Sash
-				un(38, i(105780)),	-- Windflame Girdle
+				i(105782),	-- Belt of Glowing Embers
+				i(105776),	-- Belt of the Burning Soul
+				i(105784),	-- Binkenstein's Burnished Belt
+				i(105778),	-- Derevka's Gleaming Girdle
+				i(105783),	-- Greatbelt of the Crendor
+				i(105779),	-- Light Kindler Waistguard
+				i(105777),	-- Remnar's Ruinous Girdle
+				i(105781),	-- Venruki's Venerable Sash
+				i(105780),	-- Windflame Girdle
 				-- Legs
-				un(38, i(105758)),	-- Arielle's Ancient Legwraps
-				un(38, i(105754)),	-- Desirae's Dashing Leggings
-				un(38, i(105760)),	-- Hamlet's Wind-Whipped Leggings
-				un(38, i(105759)),	-- Magmaplates of Jian Wu Xi Feng
-				un(38, i(105755)),	-- Moshne's Keen Kilt
-				un(38, i(105761)),	-- Partik's Purified Legplates
-				un(38, i(105756)),	-- Poxleitner's Leggings of Lights
-				un(38, i(105757)),	-- Shipley's Shady Silks
+				i(105758),	-- Arielle's Ancient Legwraps
+				i(105754),	-- Desirae's Dashing Leggings
+				i(105760),	-- Hamlet's Wind-Whipped Leggings
+				i(105759),	-- Magmaplates of Jian Wu Xi Feng
+				i(105755),	-- Moshne's Keen Kilt
+				i(105761),	-- Partik's Purified Legplates
+				i(105756),	-- Poxleitner's Leggings of Lights
+				i(105757),	-- Shipley's Shady Silks
 			}),
 			n(-162, {	-- Pets
 				i(44984),	-- Ammen Vale Lashling Pet
@@ -253,99 +251,98 @@ _.WorldEvents =
 				i(38311),	-- Tabard of the Void
 			}),
 			n(-3179, {	-- Tier 3 (Naxxramas - Vanilla)
-				["groups"] = {
+				ach(11744, {	-- Drop Dead, Gorgeous
 					gs(355, {	-- Vestments of Faith
-						un(9, i(22514)),	-- Circlet of Faith
-						un(9, i(22515)),	-- Shoulderpads of Faith
-						un(9, i(22512)),	-- Robe of Faith
-						un(9, i(22519)),	-- Bindings of Faith
-						un(9, i(22517)),	-- Gloves of Faith
-						un(9, i(22518)),	-- Belt of Faith
-						un(9, i(22513)),	-- Leggings of Faith
-						un(9, i(22516)),	-- Sandals of Faith
+						i(22514),	-- Circlet of Faith
+						i(22515),	-- Shoulderpads of Faith
+						i(22512),	-- Robe of Faith
+						i(22519),	-- Bindings of Faith
+						i(22517),	-- Gloves of Faith
+						i(22518),	-- Belt of Faith
+						i(22513),	-- Leggings of Faith
+						i(22516),	-- Sandals of Faith
 					}),
 					gs(907, {	-- Frostfire Regalia
-						un(9, i(22498)),	-- Frostfire Circlet
-						un(9, i(22499)),	-- Frostfire Shoulderpads
-						un(9, i(22496)),	-- Frostfire Robe
-						un(9, i(22503)),	-- Frostfire Bindings
-						un(9, i(22501)),	-- Frostfire Gloves
-						un(9, i(22502)),	-- Frostfire Belt
-						un(9, i(22497)),	-- Frostfire Leggings
-						un(9, i(22500)),	-- Frostfire Sandals
+						i(22498),	-- Frostfire Circlet
+						i(22499),	-- Frostfire Shoulderpads
+						i(22496),	-- Frostfire Robe
+						i(22503),	-- Frostfire Bindings
+						i(22501),	-- Frostfire Gloves
+						i(22502),	-- Frostfire Belt
+						i(22497),	-- Frostfire Leggings
+						i(22500),	-- Frostfire Sandals
 					}),
 					gs(865, {	-- Plagueheart Raiment
-						un(9, i(22506)),	-- Plagueheart Circlet
-						un(9, i(22507)),	-- Plagueheart Shoulderpads
-						un(9, i(22504)),	-- Plagueheart Robe
-						un(9, i(22511)),	-- Plagueheart Bindings
-						un(9, i(22509)),	-- Plagueheart Gloves
-						un(9, i(22510)),	-- Plagueheart Belt
-						un(9, i(22505)),	-- Plagueheart Leggings
-						un(9, i(22508)),	-- Plagueheart Sandals
+						i(22506),	-- Plagueheart Circlet
+						i(22507),	-- Plagueheart Shoulderpads
+						i(22504),	-- Plagueheart Robe
+						i(22511),	-- Plagueheart Bindings
+						i(22509),	-- Plagueheart Gloves
+						i(22510),	-- Plagueheart Belt
+						i(22505),	-- Plagueheart Leggings
+						i(22508),	-- Plagueheart Sandals
 					}),
 					gs(924, {	--Dreamwalker Raiment
-						un(9, i(22490)),	-- Dreamwalker Headpiece
-						un(9, i(22491)),	-- Dreamwalker Spaulders
-						un(9, i(22488)),	-- Dreamwalker Tunic
-						un(9, i(22495)),	-- Dreamwalker Wristguards
-						un(9, i(22493)),	-- Dreamwalker Handguards
-						un(9, i(22494)),	-- Dreamwalker Girdle
-						un(9, i(22489)),	-- Dreamwalker Legguards
-						un(9, i(22492)),	-- Dreamwalker Boots
+						i(22490),	-- Dreamwalker Headpiece
+						i(22491),	-- Dreamwalker Spaulders
+						i(22488),	-- Dreamwalker Tunic
+						i(22495),	-- Dreamwalker Wristguards
+						i(22493),	-- Dreamwalker Handguards
+						i(22494),	-- Dreamwalker Girdle
+						i(22489),	-- Dreamwalker Legguards
+						i(22492),	-- Dreamwalker Boots
 					}),
 					gs(891, {	-- Bonescythe Armor
-						un(9, i(22478)),	-- Bonescythe Helmet
-						un(9, i(22479)),	-- Bonescythe Pauldrons
-						un(9, i(22476)),	-- Bonescythe Breastplate
-						un(9, i(22483)),	-- Bonescythe Bracers
-						un(9, i(22481)),	-- Bonescythe Gauntlets
-						un(9, i(22482)),	-- Bonescythe Waistguard
-						un(9, i(22477)),	-- Bonescythe Legplates
-						un(9, i(22480)),	-- Bonescythe Sabatons
+						i(22478),	-- Bonescythe Helmet
+						i(22479),	-- Bonescythe Pauldrons
+						i(22476),	-- Bonescythe Breastplate
+						i(22483),	-- Bonescythe Bracers
+						i(22481),	-- Bonescythe Gauntlets
+						i(22482),	-- Bonescythe Waistguard
+						i(22477),	-- Bonescythe Legplates
+						i(22480),	-- Bonescythe Sabatons
 					}),
 					gs(914, {	-- Cryptstalker Armor
-						un(9, i(22438)),	-- Cryptstalker Headpiece
-						un(9, i(22439)),	-- Cryptstalker Spaulders
-						un(9, i(22436)),	-- Cryptstalker Tunic
-						un(9, i(22443)),	-- Cryptstalker Wristguards
-						un(9, i(22441)),	-- Cryptstalker Handguards
-						un(9, i(22442)),	-- Cryptstalker Girdle
-						un(9, i(22437)),	-- Cryptstalker Legguards
-						un(9, i(22440)),	-- Cryptstalker Boots
+						i(22438),	-- Cryptstalker Headpiece
+						i(22439),	-- Cryptstalker Spaulders
+						i(22436),	-- Cryptstalker Tunic
+						i(22443),	-- Cryptstalker Wristguards
+						i(22441),	-- Cryptstalker Handguards
+						i(22442),	-- Cryptstalker Girdle
+						i(22437),	-- Cryptstalker Legguards
+						i(22440),	-- Cryptstalker Boots
 					}),
 					gs(873, {	-- The Earthshatter
-						un(9, i(22466)),	-- Earthshatter Headpiece
-						un(9, i(22467)),	-- Earthshatter Spaulders
-						un(9, i(22464)),	-- Earthshatter Tunic
-						un(9, i(22471)),	-- Earthshatter Wristguards
-						un(9, i(22469)),	-- Earthshatter Handguards
-						un(9, i(22470)),	-- Earthshatter Girdle
-						un(9, i(22465)),	-- Earthshatter Legguards
-						un(9, i(22468)),	-- Earthshatter Boots
+						i(22466),	-- Earthshatter Headpiece
+						i(22467),	-- Earthshatter Spaulders
+						i(22464),	-- Earthshatter Tunic
+						i(22471),	-- Earthshatter Wristguards
+						i(22469),	-- Earthshatter Handguards
+						i(22470),	-- Earthshatter Girdle
+						i(22465),	-- Earthshatter Legguards
+						i(22468),	-- Earthshatter Boots
 					}),
 					gs(899, {	-- Redemption  Armor
-						un(9, i(22428)),	-- Redemption Headpiece
-						un(9, i(22429)),	-- Redemption Spaulders
-						un(9, i(22425)),	-- Redemption Tunic
-						un(9, i(22424)),	-- Redemption Wristguards
-						un(9, i(22426)),	-- Redemption Handguards
-						un(9, i(22431)),	-- Redemption Girdle
-						un(9, i(22427)),	-- Redemption Legguards
-						un(9, i(22430)),	-- Redemption Boots
+						i(22428),	-- Redemption Headpiece
+						i(22429),	-- Redemption Spaulders
+						i(22425),	-- Redemption Tunic
+						i(22424),	-- Redemption Wristguards
+						i(22426),	-- Redemption Handguards
+						i(22431),	-- Redemption Girdle
+						i(22427),	-- Redemption Legguards
+						i(22430),	-- Redemption Boots
 					}),
 					gs(850, {	-- Dreadnaught's Battlegear
-						un(9, i(22418)),	-- Dreadnaught Helmet
-						un(9, i(22419)),	-- Dreadnaught Pauldrons
-						un(9, i(22416)),	-- Dreadnaught Breastplate
-						un(9, i(22423)),	-- Dreadnaught Bracers
-						un(9, i(22421)),	-- Dreadnaught Gauntlets
-						un(9, i(22422)),	-- Dreadnaught Waistguard
-						un(9, i(22417)),	-- Dreadnaught Legplates
-						un(9, i(22420)),	-- Dreadnaught Sabatons
+						i(22418),	-- Dreadnaught Helmet
+						i(22419),	-- Dreadnaught Pauldrons
+						i(22416),	-- Dreadnaught Breastplate
+						i(22423),	-- Dreadnaught Bracers
+						i(22421),	-- Dreadnaught Gauntlets
+						i(22422),	-- Dreadnaught Waistguard
+						i(22417),	-- Dreadnaught Legplates
+						i(22420),	-- Dreadnaught Sabatons
 					}),
-				},
-				["achievementID"] = 11744,	-- Drop Dead, Gorgeous
+				}),
 			}),
 			n(-161, {	-- Toy
 				i(33223),	-- Fishing Chair
@@ -359,10 +356,10 @@ _.WorldEvents =
 				i(38578),	-- The Flag of Ownership
 			}),
 			n(-319, {	-- Weapons
-				un(9, i(39769)),	-- Arcanite Ripper
-				un(9, i(90176)),	-- Flintlocke's Blasthammer
 				un(NEVER_IMPLEMENTED, i(110591)),	-- Flintlocke's Blasthammer
-				un(9, i(44924)),	-- Sun-Lute of the Phoenix King
+				i(39769),	-- Arcanite Ripper
+				i(90176),	-- Flintlocke's Blasthammer
+				i(44924),	-- Sun-Lute of the Phoenix King
 			}),
 			i(50379),	-- Battered Hilt (Alliance)
 			i(50380),	-- Battered Hilt (Horde)
@@ -370,8 +367,8 @@ _.WorldEvents =
 				["description"] = "Contains 250-500 Darkmoon Faire Tickets",
 			}),
 			un(REMOVED_FROM_GAME, i(128312)),	-- Elixir of the Rapid Mind
-			un(9, i(45037)),					-- Epic Purple Shirt
-			i(110672, {							-- Grimoire of the Four Winds
+			i(45037),	-- Epic Purple Shirt
+			i(110672, {	-- Grimoire of the Four Winds
 				["u"] = REMOVED_FROM_GAME,
 				["collectible"] = false,
 			}),
@@ -386,20 +383,17 @@ _.WorldEvents =
 			un(REMOVED_FROM_GAME, i(87001)),	-- Serrated Wasp Bracers
 			un(REMOVED_FROM_GAME, i(86992)),	-- Shining Cicada Bracers
 			un(REMOVED_FROM_GAME, i(86995)),	-- Smooth Beetle Wristbands
-			{	-- Kor'kron Shaman's Treasure
-				["groups"] = {
-					i(105745),	-- Kor'kron Dark Shaman Cowl
-					i(105747),	-- Kor'kron Dark Shaman Shoulder
-					i(105743),	-- Kor'kron Dark Shaman Vestment
-					i(105748),	-- Kor'kron Dark Shaman Bracers
-					i(105744),	-- Kor'kron Dark Shaman Glovesfs
-					i(105741),	-- Kor'kron Dark Shaman Belt
-					i(105746),	-- Kor'kron Dark Shaman Kilt
-					i(105742),	-- Kor'kron Dark Shaman Treads
-				},
-				["itemID"] = 105751,
-			},
-			un(9, i(142000)),	-- Rhinestone Sunglasses
+			i(105751, {	-- Kor'kron Shaman's Treasure
+				i(105745),	-- Kor'kron Dark Shaman Cowl
+				i(105747),	-- Kor'kron Dark Shaman Shoulder
+				i(105743),	-- Kor'kron Dark Shaman Vestment
+				i(105748),	-- Kor'kron Dark Shaman Bracers
+				i(105744),	-- Kor'kron Dark Shaman Glovesfs
+				i(105741),	-- Kor'kron Dark Shaman Belt
+				i(105746),	-- Kor'kron Dark Shaman Kilt
+				i(105742),	-- Kor'kron Dark Shaman Treads
+			}),
+			i(142000),	-- Rhinestone Sunglasses
 			i(14617),			-- Sawbones Shirt
 			i(112935),			-- Tusk of Mannoroth
 			i(141006),			-- The First Satyr's Spaulders
@@ -413,5 +407,5 @@ _.WorldEvents =
 			}),
 			un(REMOVED_FROM_GAME, i(141995)),	-- Unclaimed Black Market Container Pre 8.2.5 (they updated and added new items)
 		},
-	}),
+	})),
 };

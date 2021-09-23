@@ -185,17 +185,11 @@ _.Zones =
 					["description"] = "Need Conductor Tier 2",
 					["isWorldQuest"] = true,
 					["customCollect"] = "SL_COV_NEC",	-- Necrolord
-					["g"] = {
-						currency(1885),	-- Grateful Offering
-					},
 				}),
 				q(61841, {	-- Not Much to Goo On
 					["description"] = "Need Conductor Tier 2",
 					["isWorldQuest"] = true,
 					["customCollect"] = "SL_COV_NEC",	-- Necrolord
-					["g"] = {
-						currency(1885),	-- Grateful Offering
-					},
 				}),
 				q(58437, {	-- Parts to a Whole
 					["isWorldQuest"] = true,

@@ -1267,6 +1267,7 @@ app.L = {
 		[-2209] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2210] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2211] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-3179] = "Interface\\Icons\\achievement_dungeon_naxxramas",						-- Tier 3 Sets
 		[-3198] = "Interface\\Icons\\inv_misc_beer_01",										-- Brewfest Garb
 		[-3199] = "Interface\\Icons\\ability_mage_firestarter",								-- Midsummer Reveler Set
 		-- Island Expeditions
@@ -2018,7 +2019,7 @@ app.L = {
 		[-2211] = "Volund's Folly",
 
 	-- Other Sets
-		[-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
+		[-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),	-- Tier 3 Sets
 
 	-- Holiday Sets
 		[-3198] = GetSpellInfo(55005),											-- Brewfest Garb
@@ -2028,7 +2029,7 @@ app.L = {
 		[-3219] = "Undead Slayer's Blessed Armor",
 		[-3220] = "Blessed Garb of the Undead Slayer",
 		[-3221] = "Blessed Battlegear of the Undead Slaying",
-		
+
 	-- Island Expedition Sets
 		[-3315] = "Spider Acolyte",
 		[-3316] = "Hydraxian",
