@@ -28,7 +28,11 @@ _.Zones =
 					["requireSkill"] = MINING,
 				}),
 				q(41990),	-- Chopped
-				q(45307),	-- Claws for Alarm!
+				q(45307, {	-- Claws for Alarm!
+					crit(3, {	-- Claws for Alarm!
+						["achievementID"] = 11427,	-- No Shellfish Endeavor
+					}),
+				}),
 				q(41914),	-- Clear the Catacombs
 				q(42151),	-- Clear the Skies
 				q(44067),	-- Consolidating Power

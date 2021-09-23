@@ -128,7 +128,11 @@ _.Zones =
 				}),
 				q(46016),	-- Magdrezoth (Invasion wq)
 				q(40278),	-- My Beasts's Bidding
-				q(44943),	-- Now That's Just Clawful!
+				q(44943, {	-- Now That's Just Clawful!
+					crit(1, {	-- Now That's Just Clawful!
+						["achievementID"] = 11427,	-- No Shellfish Endeavor
+					}),
+				}),
 				q(41958),	-- Oh, Ominitron
 				q(43751, {	-- Oh, Ship! (A)
 					["races"] = ALLIANCE_ONLY,
