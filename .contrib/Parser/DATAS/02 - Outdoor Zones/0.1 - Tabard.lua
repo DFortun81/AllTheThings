@@ -117,13 +117,13 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 			}),
-			i(43349),	-- Tabard of Brute Force
-			i(49052, {	-- Tabard of Conquest [Alliance]
+			pvp(i(43349)),	-- Tabard of Brute Force
+			pvp(i(49052, {	-- Tabard of Conquest [Alliance]
 				["races"] = ALLIANCE_ONLY,
-			}),
-			i(49054, {	-- Tabard of Conquest [Horde]
+			})),
+			pvp(i(49054, {	-- Tabard of Conquest [Horde]
 				["races"] = HORDE_ONLY,
-			}),
+			})),
 			i(35280, {	-- Tabard of Summer Flames
 				["sourceQuests"] = {
 					11972,	-- Shards of Ahune

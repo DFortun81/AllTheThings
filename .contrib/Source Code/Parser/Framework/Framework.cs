@@ -682,10 +682,11 @@ namespace ATT
                     var c = cost[i];
                     if (c != null && c.Any())
                     {
+                        decimal costID = Convert.ToDecimal(c[1]);
                         switch (c[0].ToString())
                         {
                             case "i":
-                                var item = Items.GetNull(Convert.ToDecimal(c[1]));
+                                var item = Items.GetNull(costID);
                                 if (item != null)
                                 {
                                     // The item was classified as never being implemented or being completely removed from the game.
@@ -693,8 +694,21 @@ namespace ATT
                                     {
                                         cost.RemoveAt(i);
                                     }
+                                    // anything that costs Mark of Honor should have pvp tag
+                                    else if (costID == 137642)
+                                    {
+                                        data["pvp"] = true;
+                                    }
                                 }
                                 break;
+                            case "c":
+                                if (costID == 1602 ||   // Conquest
+                                    costID == 1792)     // Honor
+                                {
+                                    data["pvp"] = true;
+                                }
+                                break;
+
                             default: break;
                         }
                     }
