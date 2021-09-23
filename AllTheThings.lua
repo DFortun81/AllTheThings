@@ -1365,8 +1365,6 @@ local MergeProperties = function(g, t, noReplace)
 						g[k] = f(g[k], t[k]);
 						-- print("result",g[k])
 					end
-				else
-					g[k] = t[k];
 				end
 			end
 		end
