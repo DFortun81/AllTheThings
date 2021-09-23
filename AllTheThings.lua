@@ -4009,6 +4009,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 	end
 
+	-- delete sub-groups if there are none
+	if group.g and #group.g == 0 then
+		group.g = nil;
+	end
+
 	-- Cache the result for a while depending on if there is more work to be done.
 	group.isSearchResult = true;
 	group.working = working;
