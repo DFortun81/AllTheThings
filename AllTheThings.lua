@@ -9478,7 +9478,7 @@ local mountFields = {
 	["mountID"] = function(t)
 		return SpellIDToMountID[t.spellID];
 	end,
-	["description"] = function(t)
+	["lore"] = function(t)
 		local mountID = t.mountID;
 		if mountID then return select(2, C_MountJournal_GetMountInfoExtraByID(mountID)); end
 	end,
