@@ -456,7 +456,7 @@ _.Zones =
 						q(44466, {	-- An Unclear Path
 							["sourceQuest"] = 44464,	-- Awakenings
 							["provider"] = { "n", 113857 },	-- Light's Heart
-							
+
 						}),
 						q(44479, {	-- Ravencrest's Legacy
 							["description"] = "This quest sends you to a scenario involving Kur'talos Ravencrest, Illidan Stormrage, and the ill-fated Moonguard. Before you kill the final boss, make sure to do everything contained within!",
@@ -581,7 +581,7 @@ _.Zones =
 				}),
 				o(247797, {	-- Lost Mail
 					["maps"] = {
-						LEGION_DALARAN, 628, 629,	-- Dalaran
+						LEGION_DALARAN, LEGION_THE_UNDERBELLY, 629,	-- Dalaran
 						701,	-- Icecrown Citadel (scenario version)
 						FERALAS,
 					},

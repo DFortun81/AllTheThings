@@ -288,8 +288,8 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 42503,	-- Codebreaker
 						}),
 						q(41921, {	-- Closing In
-							["maps"] = { 628 },	-- The Underbelly
-							["coord"] = { 67.9, 63.1, 628 },
+							["maps"] = { LEGION_THE_UNDERBELLY },
+							["coord"] = { 67.9, 63.1, LEGION_THE_UNDERBELLY },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 							["sourceQuest"] = 41920,	-- A Matter of Finesse
@@ -381,8 +381,8 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 43841,	-- Convincin' Old Yancey
 						}),
 						q(41924, {	-- Fangs of the Devourer
-							["maps"] = { 628 },	-- The Underbelly
-							["coord"] = { 67.9, 63.1, 628 },
+							["maps"] = { LEGION_THE_UNDERBELLY },
+							["coord"] = { 67.9, 63.1, LEGION_THE_UNDERBELLY },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 105464 },	-- Val'zuun
 							["sourceQuest"] = 41922,	-- Traitor!

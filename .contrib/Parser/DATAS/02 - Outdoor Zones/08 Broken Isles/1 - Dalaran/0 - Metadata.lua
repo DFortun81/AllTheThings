@@ -10,7 +10,7 @@ _.Zones =
 			["isRaid"] = true,
 			["icon"] = "Interface\\Icons\\Spell_arcane_teleportdalaranbrokenisles",
 			["maps"] = { -- Do not include 626 as that is Rogue Class Hall
-				628,	-- The Underbelly,
+				LEGION_THE_UNDERBELLY,
 				629,	-- Aegwynn's Gallery [May separate out later]
 			},
 			["lvl"] = 98,

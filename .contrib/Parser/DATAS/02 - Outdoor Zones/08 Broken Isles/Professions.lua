@@ -20,7 +20,7 @@ _.Zones =
 						710,	-- Vault of the Wardens
 						711,	-- Vault of the Wardens
 						712,	-- Vault of the Wardens
-						628,	-- The Underbelly
+						LEGION_THE_UNDERBELLY,
 						751,	-- Black Rook Hold
 						752,	-- Black Rook Hold
 						753,	-- Black Rook Hold
@@ -173,7 +173,7 @@ _.Zones =
 						q(39342, {	-- The Price of the Black Market
 							["sourceQuests"] = { 39344 },	-- Going Underground
 							["provider"] = { "n", 101492 },	-- Ms. Xiulan
-							["coord"] = { 70.8, 19.8, 628 },	-- The Underbelly
+							["coord"] = { 70.8, 19.8, LEGION_THE_UNDERBELLY },
 							["cost"] = {
 								{ "i", 124124, 1 },	-- 1xBlood of Sargeras
 								{ "i", 128833, 5 },	-- 5xKaldorei Ginger Wine
@@ -183,7 +183,7 @@ _.Zones =
 						q(39333, {	-- An Imprecise Burette
 							["sourceQuests"] = { 39342 },	-- The Price of the Black Market
 							["provider"] = { "n", 101492 },	-- Ms. Xiulan
-							["coord"] = { 70.8, 19.8, 628 },	-- The Underbelly
+							["coord"] = { 70.8, 19.8, LEGION_THE_UNDERBELLY },
 						}),
 						q(39645, {	-- Calibration Experts (A)
 							["sourceQuests"] = { 39333 },	-- An Imprecise Burette
@@ -786,7 +786,7 @@ _.Zones =
 						q(40854, {	-- Endless Possibilities
 							["sourceQuests"] = { 40545 },	-- Aww Scrap!
 							["provider"] = { "n", 102193 },	-- Filgo Scrapbottom
-							["coord"] = { 66.4, 53.4, 628 },	-- Dalaran Underbelly
+							["coord"] = { 66.4, 53.4, LEGION_THE_UNDERBELLY },
 						}),
 						q(40855, {	-- Our Man in Azsuna
 							["sourceQuests"] = { 40854 },	-- Endless Possibilities
@@ -1006,7 +1006,7 @@ _.Zones =
 					["maps"] = {
 						IRONFORGE,
 						UNDERCITY,
-						628,	-- The Underbelly
+						LEGION_THE_UNDERBELLY,
 						703,	-- Halls of Valor
 						704,	-- Halls of Valor
 						705,	-- Halls of Valor
@@ -1215,12 +1215,12 @@ _.Zones =
 						q(39949, {	-- Once a Scribe Like You
 							["sourceQuests"] = { 39948 },	-- The Ink Flows
 							["provider"] = { "n", 97359 },	-- Raethan
-							["coord"] = { 68.6, 59.6, 628 },
+							["coord"] = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
 						}),
 						q(39950, {	-- An Odd Trinket
 							["sourceQuests"] = { 39949 },	-- Once a Scribe Like You
 							["provider"] = { "n", 97359 },	-- Raethan
-							["coord"] = { 68.6, 59.6, 628 },
+							["coord"] = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
 							["g"] = {
 								recipe(192855),	-- Prophecy Tarot (Rank 2)
 							},
@@ -2098,7 +2098,7 @@ _.Zones =
 							["sourceQuests"] = { 39605 },	-- Where's Lyndras: Downward Spiral
 							["provider"] = { "o", 243899 },	-- Broken Ley Flame Burner
 							["coord"] = { 56.2, 68.4, LEGION_DALARAN }
-							
+
 						}),
 						q(38965, {	-- Assault on Violet Hold: Into the Hold
 							["sourceQuests"] = { 39667 },	-- Where's Lyndras: Leyflame Larceny

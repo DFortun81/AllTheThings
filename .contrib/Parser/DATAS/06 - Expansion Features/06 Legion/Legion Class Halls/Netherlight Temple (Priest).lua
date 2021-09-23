@@ -18,7 +18,7 @@ _.ExpansionFeatures =
 									AZSUNA,
 									751,		-- Black Rook Hold
 									LEGION_DALARAN,
-									628,		-- The Underbelly (Dalaran)
+									LEGION_THE_UNDERBELLY,
 									629,		-- Aegwynn's Gallery (Dalaran)
 									115,		-- New Hearthglen in Northrend
 									SCARLET_MONASTERY,	-- Scarlet Halls

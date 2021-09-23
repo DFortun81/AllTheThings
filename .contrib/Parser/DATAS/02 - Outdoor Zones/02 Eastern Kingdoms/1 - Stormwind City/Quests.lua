@@ -406,7 +406,7 @@ _.Zones =
 				q(39800, {	-- Greymane's Gambit
 					["sourceQuests"] = { 38206 },	-- Making the Rounds
 					["provider"] = { "n", 96663 },	-- Genn Greymane
-					["coord"] = { 18.6, 50.8, 628 },
+					["coord"] = { 18.6, 50.8, LEGION_THE_UNDERBELLY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(139914),	-- 7th Legion Battlemage Amice

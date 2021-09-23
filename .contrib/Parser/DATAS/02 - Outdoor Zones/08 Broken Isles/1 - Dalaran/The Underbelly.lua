@@ -20,7 +20,7 @@ _.Zones =
 				n(VENDORS, {
 					n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 						["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
-						["coord"] = { 51.6, 40.6, 628 },
+						["coord"] = { 51.6, 40.6, LEGION_THE_UNDERBELLY },
 						["g"] = {
 							i(136803, {	-- Dirty Tricks, Vol 1: Detection
 								--["spellID"] = 210108,	-- Detection
@@ -33,7 +33,7 @@ _.Zones =
 						},
 					}),
 					n(97362, {	-- Dazzik "Proudmoore" <Magical Things>
-						["coord"] = { 66.2, 74.8, 628 },
+						["coord"] = { 66.2, 74.8, LEGION_THE_UNDERBELLY },
 						["g"] = {
 							i(138016, {	-- Clothes Chest Pattern: Dalaran Citizens
 								["cost"] = { { "c", 1149, 250 }, },	-- 250x Sightless Eye
@@ -47,7 +47,7 @@ _.Zones =
 						},
 					}),
 					n(97363, {	-- K'huta <Portals and Jujus>
-						["coord"] = { 66.0, 79.9, 628 },
+						["coord"] = { 66.0, 79.9, LEGION_THE_UNDERBELLY },
 						["g"] = {
 							i(139423, {	-- Croc Mojo
 								["cost"] = { { "c", 1149, 175 }, },	-- 175x Sightless Eye
@@ -79,7 +79,7 @@ _.Zones =
 						},
 					}),
 					n(97364, {	-- Laura Malley <Creatures>
-						["coord"] = { 58.0, 58.1, 628 },
+						["coord"] = { 58.0, 58.1, LEGION_THE_UNDERBELLY },
 						["g"] = {
 							i(137932, {	-- Recipe: Flaming Hoop
 								["cost"] = { { "c", 1149, 100 }, },		-- 100x Sightless Eye
@@ -99,7 +99,7 @@ _.Zones =
 						},
 					}),
 					n(97360, {	-- Matthew Rabis <Feral Warlock>
-						["coord"] = { 47.0, 56.6, 628 },
+						["coord"] = { 47.0, 56.6, LEGION_THE_UNDERBELLY },
 						["g"] = {
 							i(137828, {	-- Design: Twisted Pandemonite Choker (Rank 2)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
@@ -116,7 +116,7 @@ _.Zones =
 						},
 					}),
 					n(97361, {	-- Oxana Demonslay <Weapons and Secrets>
-						["coord"] = { 67.4, 18.1, 628 },
+						["coord"] = { 67.4, 18.1, LEGION_THE_UNDERBELLY },
 						["g"] = {
 							i(137831, {	-- Design: Vindictive Pandemonite Choker (Rank 2)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
@@ -127,7 +127,7 @@ _.Zones =
 						},
 					}),
 					n(107760, {	-- Strap Bucklebolt <Belts>
-						["coord"] = { 65.8, 80.8, 628 },
+						["coord"] = { 65.8, 80.8, LEGION_THE_UNDERBELLY },
 						["g"] = {
 							i(137966, {	-- Pattern: Imbued Silkweave Cinch (Rank 2)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
@@ -189,7 +189,7 @@ _.Zones =
 						},
 					}),
 					n(97366, {	-- The Widow <Tools of Deception>
-						["coord"] = { 71.5, 24.0, 628 },
+						["coord"] = { 71.5, 24.0, LEGION_THE_UNDERBELLY },
 						["g"] = {
 							i(137829, {	-- Design: Subtle Shadowruby Pendant (Rank 2)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye

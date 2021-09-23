@@ -79,7 +79,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 40823 },	-- Rebuilding the Council
 							["classes"] = { WARLOCK },
 							["provider"] = { "n", 112693 },	-- Black Harvest Acolyte
-							["maps"] = { 628 },	-- Dalaran, Broken Isles
+							["maps"] = { LEGION_THE_UNDERBELLY },
 						}),
 						q(43153, {	-- An Eye for a Scepter
 							["sourceQuest"] = 43100,	-- Finding the Scepter
@@ -514,9 +514,9 @@ _.ExpansionFeatures =
 								42125,	-- Dark Whispers
 							},
 							["classes"] = { WARLOCK },
-							["coord"] = { 56.4, 65.0, 628 },
+							["coord"] = { 56.4, 65.0, LEGION_THE_UNDERBELLY },
 							["provider"] = { "n", 101097 },	-- Calydus
-							["maps"] = { 628 },	-- Dalaran, Broken Isles
+							["maps"] = { LEGION_THE_UNDERBELLY },
 						}),
 						q(46241, {	-- The Minions of Hel'nurath
 							["sourceQuests"] = {
@@ -531,9 +531,9 @@ _.ExpansionFeatures =
 						q(40729, {	-- The New Blood
 							["sourceQuests"] = { 40716 },	-- The Sixth
 							["classes"] = { WARLOCK },
-							["coord"] = { 57.3, 60.8, 628 },	-- Dalaran Underbelly
+							["coord"] = { 57.3, 60.8, LEGION_THE_UNDERBELLY },
 							["provider"] = { "n", 101456 },	-- Ritssyn Flamescowl
-							["maps"] = { 628 },	-- Dalaran, Broken Isles
+							["maps"] = { LEGION_THE_UNDERBELLY },
 						}),
 						q(40824, {	-- The Path of the Dreadscar
 							["sourceQuests"] = { 40823 },	-- Rebuilding the Council
@@ -557,14 +557,14 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
 							["classes"] = { WARLOCK },
 							["provider"] = { "n", 103506 },	-- Ritssyn Flamescowl
-							["maps"] = { 628 },	-- Dalaran, Broken Isles
+							["maps"] = { LEGION_THE_UNDERBELLY },
 						}),
 						q(40684, {	-- The Tome of Blighted Implements
 							["sourceQuests"] = { 40729 },	-- The New Blood
 							["classes"] = { WARLOCK },
-							["coord"] = { 56.3, 65.0, 628 },
+							["coord"] = { 56.3, 65.0, LEGION_THE_UNDERBELLY },
 							["provider"] = { "n", 101097 },	-- Calydus
-							["maps"] = { 628 },	-- Dalaran, Broken Isles
+							["maps"] = { LEGION_THE_UNDERBELLY },
 						}),
 						q(43984, {	-- The Tome Opens Again
 							["sourceQuests"] = { 44099 },	-- A Mutual Friend

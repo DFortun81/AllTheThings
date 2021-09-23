@@ -9,7 +9,7 @@ _.Secrets =
 		["modelScale"] = .8,
 		["modelID"] = 78092,
 		["maps"] = {
-			LEGION_DALARAN, 628,									-- Broken Isles Dalaran
+			LEGION_DALARAN, LEGION_THE_UNDERBELLY,
 			DEADWIND_PASS, 41, 43, 44, 45, 46,						-- Deadwind Pass
 			207,													-- Deepholm
 			226, 227, 228, 229,										-- Gnomeregan

@@ -12,7 +12,7 @@ _.WorldEvents =
 			ZULDAZAR,
 			REVENDRETH,
 			--625,	-- Dalaran: Broken Isles -- Option to interact with this Version removed in 9.0.2
-			--628,	-- Dalaran: The Underbelly -- Option to interact with this Version removed in 9.0.2
+			--LEGION_THE_UNDERBELLY,	-- Option to interact with this Version removed in 9.0.2
 			--FROSTWALL,
 			--LUNARFALL,
 		},
@@ -29,7 +29,7 @@ _.WorldEvents =
 			{ 57.91, 46.28, 626 },	-- Madam Gosu, Dalaran: Rogue Class Hall
 			{ 63.54, 62.68, ZULDAZAR },	-- Madam Goya
 			{ 52.40, 83.80, REVENDRETH },	-- Ta'xera <Matron of the Market>
-			--{ 71.37, 17.93, 628 },	-- Madam Goya, Dalaran: The Underbelly -- Option to interact with this Version removed in 9.0.2
+			--{ 71.37, 17.93, LEGION_THE_UNDERBELLY },	-- Madam Goya	-- Option to interact with this Version removed in 9.0.2
 			--{ 44.96, 50.07, FROSTWALL },	-- Zhang Yeoh
 		},
 		["g"] = {
