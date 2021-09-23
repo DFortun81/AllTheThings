@@ -7,7 +7,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 		["lvl"] = 37,
 		["groups"] = {
 			ach(646),	-- Stratholme
-			n(-388, {	-- Main Gate
+			n(-388, {	-- Stratholme - Main Gate
 				["description"] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 				["maps"] = {
 					STRATHOLME,	-- Living Side
@@ -271,7 +271,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(-389, {	-- Service Entrance
+			n(-389, {	-- Stratholme - Service Entrance
 				["description"] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
 				["maps"] = { 318 },	-- Undead Side
 				["coord"] = { 43.76, 17.52, EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]

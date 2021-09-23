@@ -690,7 +690,6 @@ for key,value in pairs({
 		--TODO: [-87] = "Armory",
 		--TODO: [-88] = "Cathedral",
 		--TODO: [-90] = ELITE,										-- Elite
-		[-93] = "希利苏斯：创伤之痕",									-- Silithus (The Wound)
 	-- TODO: Garrison Note: These will be changed into a new class soon(TM)
 		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)),			-- Stables
 		[-99] = "建筑",												-- Buildings
@@ -739,15 +738,8 @@ for key,value in pairs({
 		[-366] = "武器系列",											-- Weapons Sets
 	-- Dungeon/Raid Wing Info
 		[-379] = "垃圾场",											-- Junkyard
-		[-388] = "主门",												-- Main Gate (Stratholme)
-		[-389] = "仆从入口",											-- Service Entrance (Stratholme)
-		--TODO: [-390] = "Smuggler's Den",							-- Smuggler's Den (Spires of Arak)
-		--TODO: [-391] = "Stoktron Brewery",						-- Stoktron Brewery (Spires of Arak)
-		--TODO: [-392] = "Hearthfire Tavern",						-- Hearthfire Tavern
 		[-393] = "进攻堡垒",											-- Storming the Citadel
 		[-394] = "天灾工厂",											-- The Plagueworks
-		--TODO: [-395] = "The Crimson Halls",						-- The Crimson Halls
-		[-396] = "霜翼大厅",											-- The Frostwing Halls
 		--TODO: [-397] = "Outposts",								-- Outposts
 		--TODO: [-420] = "Tier 0.5 Sets",							-- Tier 0.5 Sets
 	-- Blizzard Events and Anniversaries
@@ -878,7 +870,6 @@ for key,value in pairs({
 			--TODO: [-931] = GetSpellInfo(7851),					-- Lesser Spirit
 			--TODO: [-932] = GetSpellInfo(172153),					-- Spirit
 			--TODO: [-933] = GetSpellInfo(13826),					-- Greater Spirit
-			--TODO: [-934] = "Star Lake Amphitheater",				-- Star Lake Amphitheater
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 			[-937] = "传送网络",										-- Transport Network (Night Fae)
@@ -948,51 +939,6 @@ for key,value in pairs({
 		[-3219] = "神圣的亡灵毁灭护甲",
 		[-3220] = "神圣的亡灵毁灭套装",
 		[-3221] = "神圣的亡灵毁灭战甲",
-	-- Cloth WQ Gear
-		[-3241] = "焦魔套装",
-		[-3242] = "骨语套装",
-		[-3243] = "灭法者套装",
-		[-3244] = "虚空语者套装",
-		[-3245] = "暗夜追梦者套装",
-		[-3246] = "裂痕祭司套装",
-		[-3247] = "石线套装",
-		[-3248] = "海巫套装",
-		[-3249] = "霜阳套装",
-		[-3259] = "织恐套装",
-	-- Leather WQ Gear
-		[-3262] = "剑歌者套装",
-		[-3263] = "河鬃套装",
-		--TODO: [-3264] = "Mana-Saber Set",
-		[-3265] = "魔蝠皮套装",
-		[-3266] = "白熊皮套装",
-		[-3268] = "静枝套装",
-		[-3269] = "死皮套装",
-		--TODO: [-3270] = "Steelgazer Set",
-		--TODO: [-3271] = "Brinewashed Set",
-		[-3272] = "灾月套装",
-	-- Mail WQ Gear
-		[-3274] = "魔力龙骑兵套装",
-		--TODO: [-3275] = "Skyhorn Set",
-		[-3276] = "海行者套装",
-		[-3277] = "马顿链甲套装",
-		[-3278] = "蔑潮套装",
-		[-3279] = "邪鳞套装",
-		[-3281] = "棘锁套装",
-		[-3282] = "魔爆套装",
-		[-3283] = "神殿毁灭者套装",
-		[-3346] = "守岛人套装";
-	-- Plate WQ Gear
-		[-3299] = "奥术防御者套装",
-		[-3300] = "灰石套装",
-		[-3301] = "传送卫士套装",
-		[-3302] = "斯克迪尔套装",
-		[-3303] = "灭魂套装",
-		[-3304] = "魔痕套装",
-		--TODO: [-3305] = "Coral Plate Set",
-		[-3306] = "碎月套装",
-		[-3307] = "夜幕套装",
-		[-3308] = "缚石套装",
-		[-3309] = "越狱者套装",
 	-- Island Expedition Sets
 		[-3315] = "蜘蛛助祭",
 		[-3316] = "海达希亚",

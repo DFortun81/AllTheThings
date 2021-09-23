@@ -1692,7 +1692,7 @@ app.L = {
 		[-393] = "Storming the Citadel",										-- Storming the Citadel
 		[-394] = "The Plagueworks",												-- The Plagueworks
 		[-395] = C_Map.GetAreaInfo(4892),										-- The Crimson Hall
-		[-396] = "The Frostwing Halls",											-- The Frostwing Halls
+		[-396] = C_Map.GetAreaInfo(7932),										-- The Frostwing Halls
 		[-397] = "Outposts",													-- Outposts
 		[-420] = "Tier 0.5 Sets",												-- Tier 0.5 Sets
 -- Blizzard Events and Anniversaries
