@@ -51,7 +51,7 @@ _.Craftables =
 			}),
 		}),
 		prof(ENGINEERING, {
-			filter(101, {	-- Pets
+			filter(BATTLE_PETS, {
 				i(112057),	-- Lifelike Mechanical Frostboar*
 				i(111402),	-- Mechanical Axebeak*
 				i(118741),	-- Mechanical Scorpid*
@@ -208,7 +208,7 @@ _.Craftables =
 			n(-160, {	-- Mounts
 				i(115363),	-- Creeping Carpet
 			}),
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				i(113216),	-- Elekk Plushie
 			}),
 		}),

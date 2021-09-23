@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(ELWYNN_FOREST, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(374, {	-- Black Lamb
 					["crs"] = { 60649 },	-- Black Lamb
 				}),

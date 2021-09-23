@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(THE_MAW, {
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				pet(3115, {	-- Clinging Remains
 					["cr"] = 179179,	-- Clinging Remains
 				}),

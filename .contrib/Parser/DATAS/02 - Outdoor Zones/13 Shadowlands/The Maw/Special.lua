@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(THE_MAW, {
-			n(-77, {	-- Special
+			n(SPECIAL, {
 				n(-229, {	-- Weekly
 					-- TODO: use 'crs' when the mobs don't drop anything, otherwise 'g' with nested n()
 					-- TODO: add icon for "weekly" header (can't figure out where the blue ! comes from on daily quests)
@@ -189,7 +189,7 @@ _.Zones =
 									i(186218),	-- Fire-Tempered Armor Cinch
 									i(186012),	-- Inferno Blast Shield
 								},
-							}),	
+							}),
 							n(177980, {	-- Gruukuuek the Elder
 								["questID"] = 64112,
 								["isDaily"] = true,

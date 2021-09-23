@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(635, {	-- Adder
 					["cr"] = 61325,	-- Adder
 				}),

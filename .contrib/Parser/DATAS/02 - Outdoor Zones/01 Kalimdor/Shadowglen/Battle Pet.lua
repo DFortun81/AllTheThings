@@ -7,7 +7,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(TELDRASSIL, {
 			m(460, {	-- Shadowglen
-				filter(101, {	-- Pet Battle
+				filter(BATTLE_PETS, {
 					p(507, {	-- Crested Owl
 						["crs"] = { 62242 },	-- Crested Owl
 					}),

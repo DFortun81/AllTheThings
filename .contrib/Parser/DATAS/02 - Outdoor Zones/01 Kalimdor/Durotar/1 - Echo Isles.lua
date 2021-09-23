@@ -628,7 +628,7 @@ _.Zones =
 						},
 					}),
 					-- if AFTER MOP
-					filter(101, {	-- Pet Battle
+					filter(BATTLE_PETS, {
 						p(467, {	-- Dung Beetle
 							["crs"] = { 62115 },	-- Dung Beetle
 						}),

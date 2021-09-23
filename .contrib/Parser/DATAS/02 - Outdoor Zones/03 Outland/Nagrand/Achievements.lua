@@ -9,7 +9,7 @@ _.Zones =
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["groups"] = {
 						crit(26, {	-- Narrok
 							["coord"] = { 61.0, 49.4, NAGRAND },

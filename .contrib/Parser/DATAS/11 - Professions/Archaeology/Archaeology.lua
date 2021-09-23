@@ -1,7 +1,7 @@
 -- Archaeology - Skill ID 794 / Spell ID 158762
 profession(ARCHAEOLOGY, {
 	currency(829,  {	-- Arakkoa
-		f(101,  {	-- Battle Pet
+		filter(BATTLE_PETS, {
 			i(117354),	-- Ancient Nest Guardian
 		}),
 		f(50,   {	-- Miscellaneous
@@ -337,7 +337,7 @@ profession(ARCHAEOLOGY, {
 		n(-318, {	-- Armor
 			i(116985),	-- Headdress of the First Shaman
 		}),
-		f(101,  {	-- Battle Pet
+		filter(BATTLE_PETS, {
 			sp(172466, {	-- Ancient Frostwolf Fang
 				i(117380),	-- Frostwolf Ghostpup
 			}),
@@ -614,7 +614,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(1535, {	-- Drust
-		f(101,  {	-- Battle Pet
+		filter(BATTLE_PETS, {
 			i(161089),	-- Restored Revenant
 		}),
 		f(50,   {	-- Miscellaneous
@@ -725,7 +725,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(384,  {	-- Dwarf
-		f(101,  {	-- Battle Pet
+		filter(BATTLE_PETS, {
 			i(64372),	-- Clockwork Gnome
 		}),
 		f(50,   {	-- Miscellaneous
@@ -769,7 +769,7 @@ profession(ARCHAEOLOGY, {
 		n(-318, {	-- Armor
 			i(69764),	-- Extinct Turtle Shell
 		}),
-		f(101,  {	-- Battle Pet
+		filter(BATTLE_PETS, {
 			i(60955),	-- Fossilized Hatchling
 			i(69821),	-- Pterrordax Hatchling
 		}),
@@ -1645,7 +1645,7 @@ profession(ARCHAEOLOGY, {
 				},
 			}),
 		}),
-		f(101,    {	-- Battle Pet
+		filter(BATTLE_PETS, {
 			i(60847),	-- Crawling Claw
 		}),
 		n(-385,   {	-- Finger
@@ -1673,7 +1673,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(385,  {	-- Troll
-		f(101,  {	-- Battle Pet
+		filter(BATTLE_PETS, {
 			i(69824),	-- Voodoo Figurine
 		}),
 		f(50,   {	-- Miscellaneous
@@ -1715,7 +1715,7 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 	currency(1534, {	-- Zandalari
-		f(101,  {	-- Battle Pet
+		filter(BATTLE_PETS, {
 			sp(273817, {	-- Intact Direhorn Hatchling
 				i(161080),	-- Intact Direhorn Egg
 			}),

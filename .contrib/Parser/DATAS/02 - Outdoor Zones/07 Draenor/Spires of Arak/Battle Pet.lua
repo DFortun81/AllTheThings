@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(DRAENOR, {
 		m(SPIRES_OF_ARAK, {
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				p(635,  {	-- Adder
 					["crs"] = { 61325 },	-- Adder
 				}),

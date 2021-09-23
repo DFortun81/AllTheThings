@@ -50,7 +50,7 @@ _.Zones =
 				}),
 				-- #endif
 				-- #if AFTER MOP
-				filter(101, {	-- Pet Battle
+				filter(BATTLE_PETS, {
 					p(628, {	-- Infected Fawn
 						["crs"] = { 61827 },	-- Infected Fawn
 					}),

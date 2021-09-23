@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(BORALUS, {
-			n(-169, {	-- Emissary Quests
+			n(EMISSARY_QUESTS, {
 				q(50605, {	-- Alliance War Effort [7th Legion]
 					["provider"] = { "n", 135446 },	-- Vindicator Jaelaana
 					["lvl"] = 120,

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(DRAENOR, {
 		m(DRAENOR_SHADOWMOON_VALLEY, {
-			filter(101, {	-- Pet Battles
+			filter(BATTLE_PETS, {
 				p(407, {	-- Forest Spiderling
 					["crs"] = { 61320 },	-- Forest Spiderling
 				}),

@@ -9,7 +9,7 @@ _.Zones =
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["g"] = {
 						crit(27, {	-- Nearly Headless Jacob
 							["coord"] = { 50.2, 59.0, 127 },

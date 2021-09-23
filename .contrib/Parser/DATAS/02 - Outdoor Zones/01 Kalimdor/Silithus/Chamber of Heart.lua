@@ -39,7 +39,7 @@ _.Zones =
 							["sourceQuest"] = 55618,	-- The Heart Forge
 						}),
 					}),
-					n(-169, {	-- Emissary Quests
+					n(EMISSARY_QUESTS, {
 						q(50562, {	-- Champions of Azeroth
 							["isDaily"] = true,
 							["coord"] = { 42.22, 44.27, SILITHUS },

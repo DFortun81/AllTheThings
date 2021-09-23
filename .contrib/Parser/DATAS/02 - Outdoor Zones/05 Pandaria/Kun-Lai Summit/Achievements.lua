@@ -9,7 +9,7 @@ _.Zones =
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["g"] = {
 						crit(11, {	-- Courageous Yon
 							["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },

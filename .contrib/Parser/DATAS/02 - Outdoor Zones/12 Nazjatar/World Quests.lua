@@ -55,7 +55,7 @@ _.Zones =
 				}),
 				q(56382, {	-- Chomp
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = 120,
 				}),
 				q(57353, {	-- Deepcoil Cleansing
@@ -76,7 +76,7 @@ _.Zones =
 				}),
 				q(56386, {	-- Elderspawn of Nalaada
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = 120,
 				}),
 				q(57340, {	-- Fathom Ray Feast
@@ -85,7 +85,7 @@ _.Zones =
 				}),
 				q(56391, {	-- Frenzied Knifefang
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = 120,
 				}),
 				q(55895, {	-- Frozen Winds of Zhiela
@@ -94,7 +94,7 @@ _.Zones =
 				}),
 				q(56392, {	-- Giant Opaline Conch
 					["isWorldQuest"] = true,
-					["filterID"] = 101, -- Battle Pets
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = 120,
 				}),
 				q(56041, {	-- Give 'Em Shell
@@ -119,7 +119,7 @@ _.Zones =
 				}),
 				q(56389, {	-- Kelpstone
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = 120,
 				}),
 				q(56023, {	-- Leylocked Chest
@@ -136,7 +136,7 @@ _.Zones =
 				}),
 				q(56388, {	-- Mindshackle
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = 120,
 				}),
 				q(57335, {	-- Murloc Mayhem
@@ -149,12 +149,12 @@ _.Zones =
 				}),
 				q(56385, {	-- Pearlhusk Crawler
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = 120,
 				}),
 				q(56381, {	-- Prince Wiggletail
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = 120,
 				}),
 				q(57336, {	-- Putting the Past to Rest
@@ -163,7 +163,7 @@ _.Zones =
 				}),
 				q(56387, {	-- Ravenous Scalespawn
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = 120,
 				}),
 				q(56003, {	-- Runelocked Chest
@@ -261,12 +261,12 @@ _.Zones =
 				}),
 				q(56384, {	-- Shadowspike Lurker
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = 120,
 				}),
 				q(56383, {	-- Silence
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = 120,
 				}),
 				q(55899, {	-- Starseeker of the Shirakess
@@ -311,7 +311,7 @@ _.Zones =
 				}),
 				q(56390, {	-- Voltgorger
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = 120,
 				}),
 				q(56795, {	-- Work Order: Abyssal-Fried Rissole (A)

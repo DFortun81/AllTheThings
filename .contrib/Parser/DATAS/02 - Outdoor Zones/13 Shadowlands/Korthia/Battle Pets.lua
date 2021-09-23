@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				pet(3102, {	-- Animite Broodling
 					["cr"] = 179131,	-- Animite Broodling
 				}),

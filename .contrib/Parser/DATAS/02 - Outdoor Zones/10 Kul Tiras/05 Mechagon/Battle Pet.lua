@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(MECHAGON, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(2662, {	-- Duskytooth Snooter
 					["crs"] = { 154769 },	-- Duskytooth Snoother
 					["description"] = "Rare pet. Shares spawns with |cFFFFD700Rustyroot Snooter|r."

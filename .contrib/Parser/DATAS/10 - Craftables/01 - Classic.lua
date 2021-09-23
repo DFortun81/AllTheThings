@@ -650,7 +650,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				["description"] = "This recipe is crafted by Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
 			}),
 		}),
-		filter(101, {	-- Pets
+		filter(BATTLE_PETS, {
 			i(15996),	-- Lifelike Mechanical Toad*
 			i(11826),	-- Lil' Smoky*
 			i(4401),	-- Mechanical Squirrel Box*

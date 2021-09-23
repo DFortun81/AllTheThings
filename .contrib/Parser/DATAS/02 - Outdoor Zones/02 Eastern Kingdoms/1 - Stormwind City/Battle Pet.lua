@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(STORMWIND_CITY, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(378, {	-- Rabbit
 					["crs"] = { 61080 },	-- Rabbit
 				}),

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(VALLEY_OF_THE_FOUR_WINDS, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(706),	-- Bandicoon
 				p(707),	-- Bandicoon Kit
 				p(564),	-- Emerald Turtle

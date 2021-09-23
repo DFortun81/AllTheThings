@@ -23,7 +23,7 @@ _.ExpansionFeatures =
 							i(140397),	-- G'hanir's Blossom
 						},
 					}),
-					filter(101, {	-- Pet Battle
+					filter(BATTLE_PETS, {
 						p(479),	-- Elfin Rabbit
 					}),
 					n(FLIGHT_PATHS, {

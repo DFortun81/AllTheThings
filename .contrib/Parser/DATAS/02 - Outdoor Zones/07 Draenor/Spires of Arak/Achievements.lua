@@ -9,7 +9,7 @@ _.Zones =
 			n(ACHIEVEMENTS, {
 				ach(9069,  {	-- An Awfully Big Adventure
 					["collectible"] = false,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["g"] = {
 						crit(40, {	-- Vesharr
 							["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },

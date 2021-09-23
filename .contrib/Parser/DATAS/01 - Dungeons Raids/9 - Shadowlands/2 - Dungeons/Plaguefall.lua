@@ -184,7 +184,7 @@ _.Instances = { tier(SL_TIER, {
 							i(178769),	-- Infinitely Divisible Ooze
 						},
 					}),
-					n(-77, {	-- Special
+					n(SPECIAL, {
 						mount(346141, {	-- Slime Serpent
 							["description"] = SLIME_SERPENT_DESC,
 						}),
@@ -248,7 +248,7 @@ _.Instances = { tier(SL_TIER, {
 							i(178769),	-- Infinitely Divisible Ooze
 						},
 					}),
-					n(-77, {	-- Special
+					n(SPECIAL, {
 						mount(346141, {	-- Slime Serpent
 							["description"] = SLIME_SERPENT_DESC,
 						}),

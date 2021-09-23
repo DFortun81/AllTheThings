@@ -14,7 +14,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				filter(101, {	-- Battle Pet
+				filter(BATTLE_PETS, {
 					p(1915),	-- Blind Rat
 				}),
 				n(VENDORS, {

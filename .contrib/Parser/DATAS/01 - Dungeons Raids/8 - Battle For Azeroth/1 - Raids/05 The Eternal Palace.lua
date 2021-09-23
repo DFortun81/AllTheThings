@@ -81,7 +81,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 			}),
-			f(101, {	-- Battle Pet
+			filter(BATTLE_PETS, {
 				p(2657, {	-- Blackchasm Crawler
 					["crs"] = { 154718 },
 				}),

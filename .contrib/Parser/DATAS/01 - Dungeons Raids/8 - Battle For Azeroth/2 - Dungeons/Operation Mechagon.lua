@@ -29,7 +29,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 			}),
-			f(101, {	-- Pet Battles
+			filter(BATTLE_PETS, {
 				p(2672, {	-- Alloyed Alleyrat
 					["crs"] = { 154789 },
 				}),

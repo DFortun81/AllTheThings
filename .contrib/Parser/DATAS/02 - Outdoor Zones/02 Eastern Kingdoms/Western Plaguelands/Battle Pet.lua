@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(WESTERN_PLAGUELANDS, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(398, {	-- Black Rat
 					["crs"] = { 61257 },	-- Black Rat
 				}),

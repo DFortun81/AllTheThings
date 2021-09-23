@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(NETHERSTORM, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(521, {	-- Fledgling Nether Ray
 					["crs"] = { 62627 },	-- Fledgling Nether Ray
 				}),

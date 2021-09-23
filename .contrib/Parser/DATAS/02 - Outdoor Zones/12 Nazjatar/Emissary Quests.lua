@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-169, {	-- Emissary Quests
+		n(EMISSARY_QUESTS, {
 			q(53982, {	-- Supplies From The Unshackled
 				["provider"] = { "n", 154002 },	-- Atolia Seapearl
 				["lvl"] = 120,

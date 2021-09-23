@@ -747,7 +747,7 @@ _.Zones =
 					},
 				}),
 				-- #if AFTER MOP
-				filter(101, {	-- Pet Battle
+				filter(BATTLE_PETS, {
 					p(459, {	-- Cat
 						["crs"] = { 62019 },	-- Cat
 						["maps"] = { SUNSTRIDER_ISLE },

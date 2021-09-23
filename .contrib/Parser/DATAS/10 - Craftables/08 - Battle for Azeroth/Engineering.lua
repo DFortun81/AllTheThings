@@ -12,7 +12,7 @@ _.Craftables =
 					i(153594),	-- Xiwyllag ATV
 				}),
 			}),
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				i(165849),	-- Mechantula
 			}),
 			filter(55, {	-- Consumable

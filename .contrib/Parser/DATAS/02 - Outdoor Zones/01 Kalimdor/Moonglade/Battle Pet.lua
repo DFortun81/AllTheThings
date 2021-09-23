@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(MOONGLADE, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(478, {	-- Forest Moth
 					["crs"] = { 62177 },	-- Forest Moth
 				}),

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(UNGORO_CRATER, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(632, {	-- Ash Lizard
 					["crs"] = { 62364 },	-- Ash Lizard
 				}),

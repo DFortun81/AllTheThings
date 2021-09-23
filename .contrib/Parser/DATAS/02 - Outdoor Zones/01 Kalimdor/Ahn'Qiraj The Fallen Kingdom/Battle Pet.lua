@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(AHNQIRAJ_THE_FALLEN_KINGDOM, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(513, {	-- Qiraji Guardling
 					["crs"] = { 62526 },	-- Qiraji Guardling
 					["description"] = "Starts spawning March 20th. Stops spawning September 23rd.",

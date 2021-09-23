@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 	tier(WOD_TIER, {
 		n(-9966, {	-- Draenor Garrisons
 			m(LUNARFALL, {
-				filter(101, {	-- Pet Battle
+				filter(BATTLE_PETS, {
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						ach(9264),	-- Draenor Pet Brawler

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(THE_JADE_FOREST, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				q(31953, {	-- Grand Master Hyuna
 					["repeatable"] = true,
 					["coord"] = { 47.9, 54.1, THE_JADE_FOREST },

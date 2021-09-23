@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(SWAMP_OF_SORROWS, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(648, {	-- Huge Toad
 					["crs"] = { 61368 },	-- Huge Toad
 				}),

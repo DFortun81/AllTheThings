@@ -10,7 +10,7 @@ _.Zones =
 				ach(9437),	-- A Demidos of Reality
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["g"] = {
 						crit(2, {	-- Ashlei
 							["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },

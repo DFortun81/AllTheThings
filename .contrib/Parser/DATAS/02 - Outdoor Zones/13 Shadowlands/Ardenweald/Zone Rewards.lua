@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
-			n(-903, {	-- Zone Rewards
+			n(ZONE_REWARDS, {
 				["description"] = "These items can drop from repeatable treasure chests, wish crickets, and are sometimes awarded from world quests or table missions.",
 				["g"] = {
 					i(179562),	-- Duskwarder Branch

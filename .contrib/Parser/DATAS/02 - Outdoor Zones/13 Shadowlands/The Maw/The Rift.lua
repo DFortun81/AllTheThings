@@ -59,7 +59,7 @@ _.Zones =
 							},
 						}),
 					}),
-					n(-77, {	-- Special
+					n(SPECIAL, {
 						n(179572, {	-- Hand of Nilganihmaht
 							["description"] = "At the back of the cave.  Collect 5 rings from throughout the Maw and place them on the Hand to receive the mount.\n\nThe 4 pieces that make up the Stone Ring require the Necrolord Assault; 2 pieces additionally require the quest |cFF349cffPutting a Plan Together|r.  The Hand of Nilganihmaht and the Runed Band are both in the Rift, which requires either the Night Fae Covenant Assault quest |cFF349cffA Shady Place|r or the use of a |cFF1eff00Repaired Riftkey|r in Korthia.\n\nThe other 3 rings can be collected at any time in the normal phase of the Maw.",
 							["coord"] = { 25.6, 32.0, THE_MAW },

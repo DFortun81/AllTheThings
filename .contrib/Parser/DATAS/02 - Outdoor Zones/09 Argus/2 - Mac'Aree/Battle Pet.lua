@@ -6,8 +6,9 @@ _.Zones =
 {
 	m(905, {	-- Argus
 		m(882, {	-- Mac'Aree
-			filter(101,  {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				ach(12088, {	-- Anomalous Animals of Argus
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["groups"] = {
 						{
 							["achievementID"] = 12088,	-- Anomalous Animals of Argus
@@ -40,14 +41,15 @@ _.Zones =
 							["coord"] = { 69.7, 51.9, 882 },
 						},
 					},
-					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 				}),
 				ach(12100, {	-- Family Fighter
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["groups"] = {
 						i(153040, {	-- Felclaw Marsuul
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12089, {	-- Aquatic Assault
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["groups"] = {
 								{
 									["achievementID"] = 12089,	-- Aquatic Assault
@@ -80,9 +82,9 @@ _.Zones =
 									["coord"] = { 69.7, 51.9, 882 },
 								},
 							},
-							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12091, {	-- Beast Blitz
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["groups"] = {
 								{
 									["achievementID"] = 12091,	-- Beast Blitz
@@ -115,9 +117,9 @@ _.Zones =
 									["coord"] = { 69.7, 51.9, 882 },
 								},
 							},
-							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12092, {	-- Critical Critters
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["groups"] = {
 								{
 									["achievementID"] = 12092,	-- Critical Critters
@@ -150,9 +152,9 @@ _.Zones =
 									["coord"] = { 69.7, 51.9, 882 },
 								},
 							},
-							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12093, {	-- Draconic Destruction
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["groups"] = {
 								{
 									["achievementID"] = 12093,	-- Draconic Destruction
@@ -185,9 +187,9 @@ _.Zones =
 									["coord"] = { 69.7, 51.9, 882 },
 								},
 							},
-							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12094, {	-- Elemental Escalation
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["groups"] = {
 								{
 									["achievementID"] = 12094,	-- Elemental Escalation
@@ -220,9 +222,9 @@ _.Zones =
 									["coord"] = { 69.7, 51.9, 882 },
 								},
 							},
-							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12095, {	-- Fierce Fliers
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["groups"] = {
 								{
 									["achievementID"] = 12095,	-- Fierce Fliers
@@ -255,9 +257,9 @@ _.Zones =
 									["coord"] = { 69.7, 51.9, 882 },
 								},
 							},
-							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12096, {	-- Humanoid Havoc
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["groups"] = {
 								{
 									["achievementID"] = 12096,	-- Humanoid Havoc
@@ -290,9 +292,9 @@ _.Zones =
 									["coord"] = { 69.7, 51.9, 882 },
 								},
 							},
-							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12097, {	-- Magical Mayhem
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["groups"] = {
 								{
 									["achievementID"] = 12097,	-- Magical Mayhem
@@ -325,9 +327,9 @@ _.Zones =
 									["coord"] = { 69.7, 51.9, 882 },
 								},
 							},
-							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12098, {	-- Mechanical Melee
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["groups"] = {
 								{
 									["achievementID"] = 12098,	-- Mechanical Melee
@@ -360,9 +362,9 @@ _.Zones =
 									["coord"] = { 69.7, 51.9, 882 },
 								},
 							},
-							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12099, {	-- Unstoppable Undead
+							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["groups"] = {
 								{
 									["achievementID"] = 12099,	-- Unstoppable Undead
@@ -395,10 +397,8 @@ _.Zones =
 									["coord"] = { 69.7, 51.9, 882 },
 								},
 							},
-							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 					},
-					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 				}),
 				p(2131),	-- Arcane Gorger
 				p(2132),	-- Felcrazed Wyrm

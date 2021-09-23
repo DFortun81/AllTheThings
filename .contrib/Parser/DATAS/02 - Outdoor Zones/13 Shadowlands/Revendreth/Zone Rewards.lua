@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(REVENDRETH, {
-			n(-903, {	-- Zone Rewards
+			n(ZONE_REWARDS, {
 				["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
 				["g"] = {
 					i(182728, {	-- A Crate of Sinvyr Ore

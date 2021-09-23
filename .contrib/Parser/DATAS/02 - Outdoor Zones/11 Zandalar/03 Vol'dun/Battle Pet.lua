@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(VOLDUN, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(2388, {	-- Bloodfever Tarantula
 					["crs"] = { 143047 },	-- Bloodfever Tarantula
 				}),

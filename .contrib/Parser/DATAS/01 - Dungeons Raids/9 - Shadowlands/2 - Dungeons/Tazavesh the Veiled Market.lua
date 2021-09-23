@@ -47,7 +47,7 @@ _.Instances = { tier(SL_TIER, {
 					}),
 				}),
 			}),
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				pet(3108, {	-- Curious Purrkin
 					["cr"] = 179164,	-- Curious Purrkin
 				}),

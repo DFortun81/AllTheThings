@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(FERALAS, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(557, {	-- Nether Faerie Dragon
 					["crs"] = { 62395 },	-- Nether Faerie Dragon
 					["description"] = "Can be found in the surrounding areas outside of the Dire Maul instance portals in Feralas.",

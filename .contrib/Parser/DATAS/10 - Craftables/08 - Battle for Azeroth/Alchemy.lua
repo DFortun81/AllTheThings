@@ -6,7 +6,7 @@ _.Craftables =
 {
 	tier(BFA_TIER, {
 		prof(ALCHEMY, {
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				i(160324, {	-- Grumbling Sac
 					i(163859),	-- Baby Crawg
 					i(163858),	-- Ball of Tentacles

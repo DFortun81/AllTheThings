@@ -6,7 +6,7 @@ _.Craftables =
 {
 	tier(SL_TIER, {
 		prof(ENGINEERING, {
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				i(180208),	-- PHA7-YNX
 			}),
 			filter(55, {	-- Consumable

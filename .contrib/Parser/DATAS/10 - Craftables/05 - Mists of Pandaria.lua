@@ -267,7 +267,7 @@ _.Craftables =
 				i(87251),	-- Geosynchronous World Spinner*
 				i(95416),	-- Sky Golem*
 			}),
-			filter(101, {	-- Pets
+			filter(BATTLE_PETS, {
 				i(87526),	-- Mechanical Pandaren Dragonling*
 				i(94903),	-- Pierre*
 				i(100905),	-- Rascal-Bot*
@@ -354,7 +354,7 @@ _.Craftables =
 					}),
 				}),
 			}),
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				i(89368),	-- Chi-Ji Kite
 				i(89367),	-- Yu'lon Kite
 			}),
@@ -392,7 +392,7 @@ _.Craftables =
 				i(83090),	-- Sapphire Panther
 				i(83089),	-- Sunstone Panther
 			}),
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				i(82774),	-- Jade Owl
 				i(82775),	-- Sapphire Cub
 			}),
@@ -675,7 +675,7 @@ _.Craftables =
 			}),
 		}),
 		prof(TAILORING, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				i(92960, {	-- Silkworm Cocoon
 					i(90900),	-- Imperial Moth
 					i(90902),	-- Imperial Silkworm

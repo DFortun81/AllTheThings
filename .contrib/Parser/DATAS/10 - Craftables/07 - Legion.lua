@@ -93,7 +93,7 @@ _.Craftables =
 					}),
 				},
 			}),
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				i(137599, {	-- Pulsating Sac
 					i(137608, {	-- Growling Sac
 						i(44822),	-- Albino Snake
@@ -173,7 +173,7 @@ _.Craftables =
 			}),
 		}),
 		prof(ENCHANTING, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				i(128533),	-- Enchanted Cauldron
 				i(128535),	-- Enchanted Pen
 				i(128534),	-- Enchanted Torch
@@ -183,7 +183,7 @@ _.Craftables =
 			}),
 		}),
 		prof(ENGINEERING, {
-			filter(101, {	-- Pets
+			filter(BATTLE_PETS, {
 				i(132519),	-- Trigger*
 			}),
 			filter(102, {	-- Toys

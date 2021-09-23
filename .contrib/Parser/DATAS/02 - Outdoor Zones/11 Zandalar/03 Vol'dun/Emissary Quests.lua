@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(VOLDUN, {
-			n(-169, {	-- Emissary Quests
+			n(EMISSARY_QUESTS, {
 				q(54461, {	-- Supplies from the Voldunai
 					["provider"] = { "n", 135804 },	-- Hoarder Jena
 					["lvl"] = 120,

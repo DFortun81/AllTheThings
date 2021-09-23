@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(ARATHI_HIGHLANDS, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(443, {	-- Grasslands Cottontail
 					["crs"] = { 61704 },	-- Grasslands Cottontail
 				}),

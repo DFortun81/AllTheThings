@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(905, {	-- Argus
 		m(830, {	-- Krokuun
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				ach(12088, {	-- Anomalous Animals of Argus
 					["groups"] = {
 						{

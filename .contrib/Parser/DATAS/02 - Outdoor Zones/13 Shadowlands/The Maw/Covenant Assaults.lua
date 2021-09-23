@@ -152,7 +152,7 @@ _.Zones =
 								i(187185),	-- Vesper of Faith (TOY!)
 							}),
 						}),
-						n(-77, {	-- Special
+						n(SPECIAL, {
 							n(179096, {	-- Sly
 								["description"] = "Speak to Orator Kloe and tell her you will help find the missing Vulpin.  Follow the footprints and reassure Sly 3 times (over the course of 3 Kyrian Assaults) to earn the achievement and pet.",
 								["isWeekly"] = true,

@@ -20,7 +20,7 @@ _.Zones =
 			["g"] = {
 				n(ACHIEVEMENTS, {
 				}),
-				n(-169, {	-- Emissary Quests
+				n(EMISSARY_QUESTS, {
 					q(48642, {	-- Argussian Reach
 						["provider"] = { "n", 127151 },	-- Toraan the Revered
 						["repeatable"] = true,

@@ -10,7 +10,7 @@ _.Zones =
 				-- #if AFTER MOP
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["groups"] = {
 						crit(28, {	-- Nicki Tinytech
 							["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },

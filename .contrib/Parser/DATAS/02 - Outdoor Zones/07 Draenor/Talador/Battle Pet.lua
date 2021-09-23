@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(DRAENOR, {
 		m(TALADOR, {
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				p(427, {	--  Ash Spiderling
 					["crs"] = { 61420 },	--  Ash Spiderling
 				}),

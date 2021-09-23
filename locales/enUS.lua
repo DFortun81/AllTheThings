@@ -1477,9 +1477,9 @@ app.L = {
 -- Commonly used
 		[0] = ZONE.." "..BATTLE_PET_SOURCE_1,									-- Zone Drop
 		[-1] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,				-- Common Boss Drop
-		[-2] = TUTORIAL_TITLE20,												-- Vendor
+		[-2] = TUTORIAL_TITLE20,												-- Vendors
 		[-3] = GetItemSubClassInfo(15,3),										-- World Event
-		[-4] = ACHIEVEMENTS,													-- Achievement
+		[-4] = ACHIEVEMENTS,													-- Achievements
 		[-5] = "Prospecting",
 		[-7] = WORLD.." "..RAID_BOSSES,											-- World Bosses
 		[-9] = GDAPI_REALMTYPE_PVP,												-- PvP
@@ -2266,7 +2266,7 @@ app.L = {
 	};
 	["HEADER_DESCRIPTIONS"] = {
 		[-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
-		[-169] = "These items can be obtain by doing Emissary Quests or gaining a paragon box",
+		[-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
 		[-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
 		[-903] = "These items can drop from repeatable treasure chests, wish crickets, world quests or table missions.",
 	};

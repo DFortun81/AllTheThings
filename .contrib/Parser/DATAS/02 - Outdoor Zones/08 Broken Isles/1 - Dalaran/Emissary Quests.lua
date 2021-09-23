@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
-			n(-169, {	-- Emissary Quests
+			n(EMISSARY_QUESTS, {
 				q(43179, {	-- The Kirin Tor of Dalaran
 					["repeatable"] = true,
 					["provider"] = { "n", 32725 },	-- Warmage Silva

@@ -9,7 +9,7 @@ _.Zones =
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["groups"] = {
 						crit(31, {	-- Ras'an
 							["coord"] = { 17.2, 50.6, ZANGARMARSH },

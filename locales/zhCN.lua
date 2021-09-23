@@ -3095,7 +3095,7 @@ for key,value in pairs({
 		[1013] = {4, "|CFF00FFDEThis requires the Pilgrim's Bounty Holiday to be Active.|r", "感恩节"},
 		[1011] = {4, "|CFF00FFDEThis requires the Pirates' Day Holiday to be Active.|r", "海盗日"},
 		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be active.|r", "荆棘谷钓鱼大赛"},
-		[1016] = {4, "|CFFFF0000This requires the Timewalking Event to be active.\nOnly dungeon content released during the active Timewalking expansion will be available.|r", "时间漫游"},
+		[1016] = {4, "|CFF00FFDEThis requires the Timewalking Event to be active.|r", "时间漫游"},
 		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary Event to be active.|r", "魔兽世界周年庆典"},
 })
 do a[key] = value; end

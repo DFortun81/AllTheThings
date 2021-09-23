@@ -192,7 +192,7 @@ profession(SKINNING, {
 			}),
 		}),
 	}),
-	filter(101, {	-- Pet Battle
+	filter(BATTLE_PETS, {
 		i(153057),	-- Fossorial Bile Larva
 	}),
 	n(-161, {	-- Toys

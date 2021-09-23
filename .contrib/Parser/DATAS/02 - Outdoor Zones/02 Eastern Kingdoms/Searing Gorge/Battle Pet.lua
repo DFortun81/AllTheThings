@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(SEARING_GORGE, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(427, {	-- Ash Spiderling
 					["crs"] = { 61420 },	-- Ash Spiderling
 				}),

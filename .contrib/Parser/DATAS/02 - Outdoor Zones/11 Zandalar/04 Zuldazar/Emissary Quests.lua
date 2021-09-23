@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(ZULDAZAR, {
-			n(-169, {	-- Emissary Quests
+			n(EMISSARY_QUESTS, {
 				q(54451, {	-- Baubles from the Seekers
 					["provider"] = { "n", 134345 },	-- Collector Kojo
 					["lvl"] = 120,

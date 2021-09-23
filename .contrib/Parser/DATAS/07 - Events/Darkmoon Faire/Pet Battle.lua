@@ -5,7 +5,7 @@
 _.WorldEvents =
 {
 	m(407, {	-- Darkmoon Island
-		filter(101, {	-- Pet Battle
+		filter(BATTLE_PETS, {
 			p(1068, {	-- Crow
 				["crs"] = { 67443 },	-- Crow
 			}),

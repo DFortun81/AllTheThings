@@ -41,7 +41,7 @@ _.Zones =
 				}),
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["g"] = {
 						crit(15, {	-- Flowing Pandaren Spirit
 							["coord"] = { 61.2, 87.6, DREAD_WASTES },

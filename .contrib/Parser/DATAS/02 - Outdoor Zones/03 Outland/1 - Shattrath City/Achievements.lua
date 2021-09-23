@@ -9,7 +9,7 @@ _.Zones =
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["groups"] = {
 						crit(25, {	-- Morolu the Elder
 							["coord"] = { 59.0, 70.0, SHATTRATH_CITY },

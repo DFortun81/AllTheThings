@@ -13,7 +13,7 @@ _.Promotions =
 		["u"] = 10,
 		-- #endif
 	}, {
-		filter(101, {	-- Battle Pets
+		filter(BATTLE_PETS, {
 			i(50301, {	-- Landro's Pet Box [TODO: SYMLINK]
 				["timeline"] = { "added 3.3.0.10958" },
 				["groups"] = {

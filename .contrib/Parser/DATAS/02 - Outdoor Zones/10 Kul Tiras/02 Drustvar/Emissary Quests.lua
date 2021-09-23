@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(DRUSTVAR, {
-			n(-169, {	-- Emissary Quests
+			n(EMISSARY_QUESTS, {
 				q(50600, {	-- Order of Embers
 					["provider"] = { "n", 135815 },	-- Quartermaster Alcorn
 					["lvl"] = 120,

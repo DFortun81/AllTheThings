@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(DEADWIND_PASS, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(1160, {	-- Arcane Eye
 					["crs"] = { 68819 },	-- Arcane Eye
 				}),

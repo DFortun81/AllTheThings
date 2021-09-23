@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(KUN_LAI_SUMMIT, {
-			f(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(724, {	-- Alpine Foxling
 					["crs"] = { 63550 },	-- Alpine Foxling
 				}),

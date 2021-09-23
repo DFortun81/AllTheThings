@@ -65,7 +65,7 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			f(101, {	-- Battle Pet
+			filter(BATTLE_PETS, {
 				p(410),	-- Wharf Rat
 			}),
 			n(QUESTS, {

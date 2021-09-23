@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(THE_EXODAR, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(464, {	-- Grey Moth
 					["crs"] = { 62050 },	-- Grey Moth
 				}),

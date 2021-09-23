@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(NAZMIR, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(2388, {	-- Bloodfeaver Tarantula
 					["crs"] = { 143047 },	-- Bloodfeaver Tarantula
 				}),

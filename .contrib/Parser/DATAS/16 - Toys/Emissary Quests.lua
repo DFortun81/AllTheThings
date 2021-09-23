@@ -4,7 +4,7 @@
 
 _.Toys =
 {
-	n(-169, {	-- Emissary Quests/Paragon Rewards
+	n(EMISSARY_QUESTS, {	-- Paragon Rewards
 		i(166877),	-- Azerite Firework Launcher
 		i(166808),	-- Bewitching Tea Set
 		i(166704),	-- Bowl of Glowing Pufferfish

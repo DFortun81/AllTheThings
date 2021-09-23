@@ -7,7 +7,7 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(DUN_MOROGH, {
 			m(469, {	-- New Tinkertown [Above]
-				filter(101, {	-- Pet Battle
+				filter(BATTLE_PETS, {
 					p(441, {	-- Alpine Hare
 						["crs"] = { 61690 },	-- Alpine Hare
 					}),
@@ -23,7 +23,7 @@ _.Zones =
 				}),
 			}),
 			m(30,  {	-- New Tinkertown [Below]
-				filter(101, {	-- Pet Battle
+				filter(BATTLE_PETS, {
 					q(47895, {	-- Bert's Bots
 						["provider"] = { "n", 124617 },	-- Environeer Bert
 						["coord"] = { 42.9, 74.2, 30 },

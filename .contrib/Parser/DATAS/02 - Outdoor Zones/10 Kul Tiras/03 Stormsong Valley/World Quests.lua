@@ -742,7 +742,7 @@ _.Zones =
 						["lvl"] = { 50 },
 						["coord"] = { 42.41, 76.61, STORMSONG_VALLEY },
 						["isWorldQuest"] = true,
-						["filter"] = 101,	-- Pet Battles
+						["filterID"] = BATTLE_PETS,
 					}),
 					q(54403, {	-- Tidesage Clarissa (Faction Assault WQ)
 						["lvl"] = 110,

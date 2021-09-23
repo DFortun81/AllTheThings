@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(REVENDRETH, {
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				p(2902, {	-- Dusky Dredwing Pup
 					["crs"] = { 171149 },	-- Dusky Dredwing Pup
 				}),

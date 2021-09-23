@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
-			n(-77, {	-- Special
+			n(SPECIAL, {
 				n(180063, {	-- Darkmaul
 					["description"] = "Collect |cFFFFFFFFTasty Mawshrooms|r from the daily Invasive Mawshroom treasures in Korthia and feed them to Darkmaul.",
 					["coord"] = { 42.8, 32.7, KORTHIA },

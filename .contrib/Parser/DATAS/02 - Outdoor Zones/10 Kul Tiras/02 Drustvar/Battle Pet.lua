@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(DRUSTVAR, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(2386, {	-- Coastal Scuttler
 					["crs"] = { 143045 },	-- Coastal Scuttler
 				}),

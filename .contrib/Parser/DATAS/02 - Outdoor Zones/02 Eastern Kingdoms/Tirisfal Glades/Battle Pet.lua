@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(TIRISFAL_GLADES, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(417, {	-- Bat
 					["crs"] = { 61829 },
 				}),

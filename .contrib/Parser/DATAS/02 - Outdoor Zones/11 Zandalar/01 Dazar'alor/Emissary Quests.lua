@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(THE_GREAT_SEAL, {	-- Dazar'alor
-			n(-169, {	-- Emissary Quests
+			n(EMISSARY_QUESTS, {
 				q(50606, {	-- Horde War Effort [The Honorbound] [Tier 2]
 					["provider"] = { "n", 135447 },	-- Ransa Greyfeather
 					["lvl"] = 120,

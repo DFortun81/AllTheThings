@@ -66,7 +66,7 @@ _.Zones =
 				}),
 				-- #endif
 				-- #if AFTER MOP
-				filter(101, {	-- Pet Battle
+				filter(BATTLE_PETS, {
 					p(461, {	-- Larva
 						["crs"] = { 62022 },	-- Larva
 					}),

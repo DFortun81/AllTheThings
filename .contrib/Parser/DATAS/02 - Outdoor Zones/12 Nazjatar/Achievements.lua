@@ -16,11 +16,11 @@ _.Zones =
 				["pvp"] = true,
 			}),
 			ach(13715, {	-- From the Belly of the Jelly
-				["filterID"] = 101,	-- Battle Pet
+				["filterID"] = BATTLE_PETS,
 			}),
 			ach(13692),		-- Give Me the Biggest Bag You've Got
 			ach(13626, {	-- Nautical Nuisances of Nazjatar
-				["filterID"] = 101,	-- Battle Pet
+				["filterID"] = BATTLE_PETS,
 				["g"] = {
 					crit(2, {	-- Chomp
 						["crs"] = { 154911 },	-- Chomp

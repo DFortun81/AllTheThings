@@ -195,7 +195,7 @@ _.Craftables =
 					ill(4074),	-- Elemental Slayer
 				}),
 			}),
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				i(67274),	-- Enchanted Lantern
 				i(67275),	-- Magic Lamp
 			}),
@@ -229,7 +229,7 @@ _.Craftables =
 				i(59595),	-- R19 Threatfinder
 				i(59596),	-- Safety Catch Removal Kit
 			}),
-			filter(101, {	-- Pets
+			filter(BATTLE_PETS, {
 				i(60216),	-- De-Weaponized Mechanical Companion*
 				i(59597),	-- Personal World Destroyer*
 			}),

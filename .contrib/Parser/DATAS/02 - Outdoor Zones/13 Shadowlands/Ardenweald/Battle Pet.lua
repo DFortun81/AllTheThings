@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				p(3081, {	-- Decay Grub
 					["crs"] = { 176020 },	-- Decay Grub
 				}),

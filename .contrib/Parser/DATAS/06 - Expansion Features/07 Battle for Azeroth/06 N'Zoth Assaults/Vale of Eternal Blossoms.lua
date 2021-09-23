@@ -1133,7 +1133,7 @@ _.ExpansionFeatures =
 						i(174760),	-- Mantid Relic Fragment
 					}),
 				}),
-				n(-169, {	-- Emissary Quests
+				n(EMISSARY_QUESTS, {
 					q(58096, {	-- Supplies from the Rajani
 						["repeatable"] = true,
 						["g"] = {
@@ -1337,7 +1337,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					]]--
-					f(101,  {	-- Battle Pets
+					filter(BATTLE_PETS, {
 						p(2867, {	-- Golden Chirper
 						}),
 						p(2866, {	-- Voidglower
@@ -1429,24 +1429,24 @@ _.ExpansionFeatures =
 					}),
 					n(WORLD_QUESTS, {
 						q(58747, {	-- Brain Tickling
-							["f"] = 101,	-- Battle Pet
+							["filterID"] = BATTLE_PETS,
 							["lvl"] = 120,
 							["coord"] = { 57.5, 54.3, 1530 },
 							["isWorldQuest"] = true,
 						}),
 						q(58749, {	-- Flight of the Vil'thik
-							["f"] = 101,	-- Battle Pet
+							["filterID"] = BATTLE_PETS,
 							["lvl"] = 120,
 							["coord"] = { 07.4, 31.4, 1530 },
 							["isWorldQuest"] = true,
 						}),
 						q(58748, {	-- Living Statues Are Tough
-							["f"] = 101,	-- Battle Pet
+							["filterID"] = BATTLE_PETS,
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
 						}),
 						q(58746, {	-- Tiny Madness
-							["f"] = 101,	-- Battle Pet
+							["filterID"] = BATTLE_PETS,
 							["lvl"] = 120,
 							["coord"] = { 56.2, 28.2, 1530 },
 							["isWorldQuest"] = true,

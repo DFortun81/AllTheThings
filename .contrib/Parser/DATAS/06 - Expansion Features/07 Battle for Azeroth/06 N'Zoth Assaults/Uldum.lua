@@ -1267,7 +1267,7 @@ _.ExpansionFeatures =
 						i(174758),	-- Voidwarped Relic Fragment
 					}),
 				}),
-				n(-169, {	-- Emissary Quests
+				n(EMISSARY_QUESTS, {
 					q(58097, {	-- Supplies from the Uldum Accord
 						["repeatable"] = true,
 						["g"] = {
@@ -1545,11 +1545,9 @@ _.ExpansionFeatures =
 							crit(3),		-- Assault: The Black Empire
 						}),
 					}),
-					f(101,	{	-- Battle Pets
-						pet(2863, {	-- Oasis Void-Duster
-						}),
-						pet(2864, {	-- Void-Scarred Locust
-						}),
+					filter(BATTLE_PETS, {
+						pet(2863),	-- Oasis Void-Duster
+						pet(2864),	-- Void-Scarred Locust
 					}),
 					n(-38,	{	-- Professions
 						prof(FISHING, {

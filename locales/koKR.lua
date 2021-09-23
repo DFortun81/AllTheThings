@@ -3042,7 +3042,7 @@ for key,value in pairs({
 		[1013] = {4, "|CFF00FFDEThis requires the Pilgrim's Bounty Holiday to be Active.|r", "순례자의 감사절"},
 		[1011] = {4, "|CFF00FFDEThis requires the Pirates' Day Holiday to be Active.|r", "해적의 날"},
 		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be active.|r", "가시덤불 골짜기 낚시왕 선발대회"},
-		[1016] = {4, "|CFFFF0000This requires the Timewalking Event to be active.\nOnly dungeon content released during the active Timewalking expansion will be available.|r", "시간여행"},
+		[1016] = {4, "|CFF00FFDEThis requires the Timewalking Event to be active.|r", "시간여행"},
 		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary Event to be active.|r", "월드 오브 워크래프트의 생일"},
 })
 do a[key] = value; end

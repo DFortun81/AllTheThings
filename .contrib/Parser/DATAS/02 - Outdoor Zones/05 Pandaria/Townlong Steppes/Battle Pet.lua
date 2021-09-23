@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(TOWNLONG_STEPPES, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(724, {	-- Alpine Foxling
 					["cr"] = 63550,
 				}),

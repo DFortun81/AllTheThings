@@ -1865,7 +1865,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						}),
 					},
 				}),
-				
+
 				-- #if BEFORE CATA
 				i(37012, {	-- The Horseman's Reins
 					["timeline"] = { "added 2.0.1" },
@@ -1990,7 +1990,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				}),
 			},
 		}),
-		filter(101, {	-- Pet Battle
+		filter(BATTLE_PETS, {
 			["description"] = "|cFFFFD700Ghastly Rats|r, |cFFFFD700Ghost Maggots|r, and |cFFFFD700Spectral Spinners|r are only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought for |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in the Garrison.",
 			["timeline"] = { "added 6.2.2.20395" },
 			["maps"] = {
@@ -3237,7 +3237,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(10, 1, 10),
 			}),
-			
+
 			-- Candy Bucket Quests
 			n(FACTION_HEADER_NEUTRAL, {
 				["timeline"] = { "added 2.0.1" },

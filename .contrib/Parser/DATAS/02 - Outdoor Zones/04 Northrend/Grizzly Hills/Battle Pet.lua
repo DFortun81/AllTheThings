@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(116, {	-- Grizzly Hills
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(647, {	-- Grizzly Squirrel
 					["crs"] = { 62818 },	-- Grizzly Squirrel
 				}),

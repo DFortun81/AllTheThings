@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(THE_MAW, {
-			n(-169, {	-- Emissary Quests
+			n(EMISSARY_QUESTS, {
 				q(64267, {	-- Mysterious Gifts from Ve'nari
 					["repeatable"] = true,
 					["g"] = {

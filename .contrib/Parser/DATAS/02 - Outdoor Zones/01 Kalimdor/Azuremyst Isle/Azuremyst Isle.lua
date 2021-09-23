@@ -582,7 +582,7 @@ _.Zones =
 					},
 				}),
 				-- #if AFTER MOP
-				filter(101, {	-- Pet Battle
+				filter(BATTLE_PETS, {
 					p(464, {	-- Grey Moth
 						["crs"] = { 62050 },	-- Grey Moth
 						["maps"] = { AMMEN_VALE },
@@ -1083,7 +1083,7 @@ _.Zones =
 					}),
 					q(9538, {	-- Learning the Language
 						["qg"] = 17232,	-- Cryptographer Aurren
-						["coord"] = { 49.4, 51.0, AZUREMYST_ISLE },	
+						["coord"] = { 49.4, 51.0, AZUREMYST_ISLE },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(8, 1, 8),
 						["groups"] = {

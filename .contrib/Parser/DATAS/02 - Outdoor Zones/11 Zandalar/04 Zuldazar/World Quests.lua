@@ -424,7 +424,7 @@ _.Zones =
 					q(52938, {	-- Small Beginnings
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["filter"] = 101,	-- Pet Battles
+						["filterID"] = BATTLE_PETS,
 					}),
 					q(54712, {	-- Spell Components (Faction Assault WQ)
 						["lvl"] = 110,

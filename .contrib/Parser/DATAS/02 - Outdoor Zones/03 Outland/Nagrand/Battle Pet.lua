@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(OUTLAND, {
 		m(NAGRAND, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(635, {	-- Adder
 					["crs"] = { 61325 },	-- Adder
 				}),

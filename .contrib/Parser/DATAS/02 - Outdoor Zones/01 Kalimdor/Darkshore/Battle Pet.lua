@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(DARKSHORE, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(508, {	-- Darkshore Cub
 					["crs"] = { 62250 },	-- Darkshore Cub
 					["description"] = "Can be found in the woods west of the Grove of the Ancients, usually on the treeline just before the beach.",

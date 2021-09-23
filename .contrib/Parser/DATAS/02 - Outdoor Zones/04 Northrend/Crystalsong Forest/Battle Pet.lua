@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(127, {	-- Crystalsong Forest
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(385, {	-- Mouse
 					["crs"] = { 61143 },	-- Mouse
 				}),

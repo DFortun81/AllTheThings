@@ -9,7 +9,7 @@ _.Zones =
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["g"] = {
 						crit(1, {	-- Aki the Chosen
 							["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },

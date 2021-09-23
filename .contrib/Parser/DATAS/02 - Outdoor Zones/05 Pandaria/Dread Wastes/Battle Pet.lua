@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(DREAD_WASTES, {
-			filter(101, {	-- Battle Pet
+			filter(BATTLE_PETS, {
 				p(732, {	-- Amber Moth
 					["cr"] = 65187,
 				}),

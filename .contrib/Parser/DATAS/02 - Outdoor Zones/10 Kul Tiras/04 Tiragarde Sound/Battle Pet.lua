@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(TIRAGARDE_SOUND, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(487, {	-- Alpine Chipmunk
 					["crs"] = { 62189 },	-- Alpine Chipmunk
 				}),
