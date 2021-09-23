@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
-			n(-38,  {	-- Profession
+			n(PROFESSIONS,  {
 				prof(ARCHAEOLOGY, {
 					q(41178, {	-- Explosive Results
 						["isWeekly"] = true,

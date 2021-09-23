@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
-			n(-38,  {	-- Profession
+			n(PROFESSIONS,  {
 				prof(ARCHAEOLOGY, {
 					q(41190, {	-- Crystal Eyes
 						["sourceQuests"] = { 41189 },	-- A New Lead

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(249, {	-- Uldum
-			n(-38, {	-- Profession
+			n(PROFESSIONS, {
 				prof(ARCHAEOLOGY, {
 					i(64657, {	-- Canopic Jar
 						["description"] = "Alchemy is not required to get the recipe.\n\nNOTE TO BLUES: Why isn't this item BoA? You have the technology!\n  - Crieve",

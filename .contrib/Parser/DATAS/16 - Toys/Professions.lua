@@ -4,7 +4,7 @@
 
 _.Toys =
 {
-	n(-38, {	-- Profession
+	n(PROFESSIONS, {
 		prof(ARCHAEOLOGY, {
 			i(89614),	-- Anatomical Dummy
 			i(69776),	-- Ancient Amber

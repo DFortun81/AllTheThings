@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(THE_GREAT_SEAL, {	-- Dazar'alor
-			n(-38, {	-- Professions
+			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					q(54464, {	-- Alchemical Equations
 						["requireSkill"] = ALCHEMY,

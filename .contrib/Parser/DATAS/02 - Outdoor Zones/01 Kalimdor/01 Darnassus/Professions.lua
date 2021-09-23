@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(DARNASSUS, {
-			n(-38, {	-- Professions
+			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(QUESTS, {
 						q(29481, {	-- Elixir Master

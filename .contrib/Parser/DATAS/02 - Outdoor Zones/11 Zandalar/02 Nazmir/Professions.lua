@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(NAZMIR, {
-			n(-38, {	-- Professions
+			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					-- Tools of Trade Questline
 					q(50116, {	-- A Possible Solution (H)

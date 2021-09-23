@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
-			n(-38, {	-- Profession
+			n(PROFESSIONS, {
 				prof(ARCHAEOLOGY, {
 					q(41157, {	-- Corrupted Studies
 						["isWeekly"] = true,

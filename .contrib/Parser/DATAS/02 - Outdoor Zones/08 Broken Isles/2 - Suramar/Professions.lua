@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
-			n(-38, {	-- Profession
+			n(PROFESSIONS, {
 				prof(ARCHAEOLOGY, {
 					q(41173, {	-- A Beacon of Hope
 						["isWeekly"] = true,

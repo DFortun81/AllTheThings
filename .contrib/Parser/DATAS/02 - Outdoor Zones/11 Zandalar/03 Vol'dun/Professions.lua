@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(VOLDUN, {
-			n(-38, {	-- Professions
+			n(PROFESSIONS, {
 				prof(ENGINEERING, {
 					-- Tools of Trade Questline
 					q(53802, {	-- Sethrak Persuasion

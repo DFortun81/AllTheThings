@@ -4,7 +4,7 @@
 
 _.Mounts =
 {
-	n(-38, {	-- Profession
+	n(PROFESSIONS, {
 		i(138811),	-- Brinedeep Bottom-Feeder
 		i(115363),	-- Creeping Carpet
 		i(87250),	-- Depleted-Kyparium Rocket

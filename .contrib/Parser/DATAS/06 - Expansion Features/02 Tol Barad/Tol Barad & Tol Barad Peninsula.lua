@@ -422,7 +422,7 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			n(-38, {	-- Profession
+			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(22739, {	-- Tome of Polymorph: Turtle
 						["providers"] = {
@@ -887,7 +887,7 @@ _.ExpansionFeatures =
 							},
 						}),
 					})),
-					n(-38, {	-- Profession
+					n(PROFESSIONS, {
 						prof(MINING, {
 							i(67282),	-- Pet Elementium Geode
 						}),

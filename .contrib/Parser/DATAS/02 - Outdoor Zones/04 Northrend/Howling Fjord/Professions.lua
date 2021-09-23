@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(117, {	-- Howling Fjord
-			n(-38, {	-- Profession
+			n(PROFESSIONS, {
 				prof(FISHING, {
 					o(192049, {	-- Fangtooth Herring School
 						["model"] = 219405,

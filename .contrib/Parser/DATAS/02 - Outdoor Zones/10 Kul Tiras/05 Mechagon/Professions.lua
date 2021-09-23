@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(MECHAGON, {
-			n(-38, {	-- Professions
+			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(167661, {	-- Energized Lightning Cod
 						["questID"] = 55311,

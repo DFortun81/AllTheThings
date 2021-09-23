@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
-			n(-38, {	-- Profession
+			n(PROFESSIONS, {
 				prof(ARCHAEOLOGY, {
 					q(41162, {	-- And Into the Fel Fire
 						["isWeekly"] = true,

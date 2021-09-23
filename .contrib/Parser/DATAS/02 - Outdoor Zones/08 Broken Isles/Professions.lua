@@ -3,7 +3,7 @@
 _.Zones =
 {
 	m(BROKEN_ISLES, {
-		n(-38,  {	-- Profession
+		n(PROFESSIONS,  {
 			["maps"] = {
 				LEGION_DALARAN,
 				AZSUNA,

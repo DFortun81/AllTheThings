@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(BROKEN_SHORE, {
-			n(-38, {	-- Profession
+			n(PROFESSIONS, {
 				q(46804, {	-- Fashion History and a Philosophy of Style
 					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 					["coord"] = { 41.1, 59.3, BROKEN_SHORE },

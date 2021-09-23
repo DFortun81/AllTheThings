@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(BORALUS, {
-			n(-38, {	-- Professions
+			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					q(54463, {	-- Alchemical Equations
 						["requireSkill"] = ALCHEMY,

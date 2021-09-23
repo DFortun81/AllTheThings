@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(WESTFALL, {
-			n(-38, {	-- Professions
+			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(68795, {	-- Stendel's Bane
 						i(68797),	-- Stendel's Wedding Band

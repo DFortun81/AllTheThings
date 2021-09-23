@@ -56,7 +56,7 @@ _.Zones =
 							},
 						}),
 					}),
-					n(-38, {	-- Professions
+					n(PROFESSIONS, {
 						-- Void Focus quests
 						q(57275, {	-- Something in Your Mind
 							["provider"] = { "i", 171320 },	-- Void Focus

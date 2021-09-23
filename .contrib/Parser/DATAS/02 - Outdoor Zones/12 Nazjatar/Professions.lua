@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-38, {	-- Professions
+		n(PROFESSIONS, {
 			prof(HERBALISM, {
 				q(56098, {	-- Defensive in Death (A)
 					["provider"] = { "i", 168919 },	-- Zin'anthid Tentacle

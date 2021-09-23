@@ -1346,7 +1346,7 @@ _.ExpansionFeatures =
 						p(2865, {	-- Voidskimmer
 						}),
 					}),
-					n(-38,  {	-- Professions
+					n(PROFESSIONS,  {
 						prof(FISHING, {
 							i(174456, {	-- Bottle of Gloop (pet)
 								["description"] = "Must be fishing in water currently affected by a N'Zoth assault.",

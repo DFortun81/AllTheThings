@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(STORMSONG_VALLEY, {
-			n(-38, {	-- Professions
+			n(PROFESSIONS, {
 				prof(HERBALISM, {
 					-- Siren's Pollen
 					q(51312, {	-- Aromatic Pollenator (A)

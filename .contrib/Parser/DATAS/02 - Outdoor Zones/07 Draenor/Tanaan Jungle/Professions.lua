@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(DRAENOR, {
 		m(TANAAN_JUNGLE, {
-			n(-38, {	-- Profession
+			n(PROFESSIONS, {
 				o(243334, {	-- Withered Herb
 					["requireSkill"] = HERBALISM,
 					["g"] = {

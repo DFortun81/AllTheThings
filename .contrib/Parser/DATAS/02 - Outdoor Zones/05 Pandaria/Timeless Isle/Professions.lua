@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(TIMELESS_ISLE, {
-			n(-38, {	-- Profession
+			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(104034, {	-- Purse of Timeless Coins
 						["description"] = "Can be fished up from Jewel Danio Schools.|r",

@@ -1549,7 +1549,7 @@ _.ExpansionFeatures =
 						pet(2863),	-- Oasis Void-Duster
 						pet(2864),	-- Void-Scarred Locust
 					}),
-					n(-38,	{	-- Professions
+					n(PROFESSIONS,	{
 						prof(FISHING, {
 							i(174456, {	-- Bottle of Gloop (pet)
 								["description"] = "Can be caught from schools of fish in zone currently affected by a N'Zoth assault.",

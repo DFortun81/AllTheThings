@@ -200,7 +200,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
-			n(-38,  {	-- Profession
+			n(PROFESSIONS,  {
 				prof(ARCHAEOLOGY, {
 					q(41189, {	-- A New Lead
 						["isWeekly"] = true,

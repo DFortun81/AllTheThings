@@ -1788,7 +1788,7 @@ _.NeverImplemented =
 		i(136921),	-- Trigger (132519 is crafted from engineering, doesn't appear this version was ever used)
 		i(67600),	-- Lil' Alexstrasza (Never added in Game)
 	}),
-	n(-38, {	-- Professions
+	n(PROFESSIONS, {
 		prof(ALCHEMY, {
 			i(2556),	-- Recipe: Elixir of Tongues
 			i(5641),	-- Recipe: Cowardly Flight Potion

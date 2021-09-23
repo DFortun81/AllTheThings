@@ -6,7 +6,7 @@
 --{
 --	m(DRAENOR, {
 --		m(GORGROND, {
---			n(-38, {	-- Profession
+--			n(PROFESSIONS, {
 --				prof(FISHING, {
 	--				i(118380),		-- Hightfish Cap
 --				}),

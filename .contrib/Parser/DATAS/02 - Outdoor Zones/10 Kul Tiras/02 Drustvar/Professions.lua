@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(DRUSTVAR, {
-			n(-38, {	-- Professions
+			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					-- Tools of Trade Questline
 					q(50127, {	-- A Stone's Throw (A)
