@@ -679,7 +679,7 @@ namespace ATT
                     case "isToy":
                     case "objectiveID":
                     case "f":
-                    case "u":
+                    //case "u":
                     case "b":
                     case "rank":
                     case "ilvl":
@@ -691,8 +691,8 @@ namespace ATT
                     case "altAchievements":
                     case "altQuests":
                     case "repeatable":
-                    case "pvp":
-                    case "isLimited":
+                    //case "pvp":
+                    //case "isLimited":
                     case "isWeekly":
                     case "isDaily":
                     case "isMonthly":

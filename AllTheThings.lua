@@ -1274,9 +1274,51 @@ local function BuildSourceTextForTSM(group, l)
 	end
 	return L["TITLE"];
 end
+-- Fields which are dynamic or pertain only to the specific ATT window and should never merge automatically
+app.MergeSkipFields = {
+	["expanded"] = true,
+	["indent"] = true,
+	["modItemID"] = true,
+	["g"] = true,
+	["u"] = true,
+	["pvp"] = true,
+};
+-- Fields on a Thing which are specific to where the Thing is Sourced or displayed in a ATT window
+app.SourceSpecificFields = {
+-- Returns the 'most obtainable' unobtainable value from the provided set of unobtainable values
+	["u"] = function(...)
+		-- print("GetMostObtainableValue:")
+		local vals, max, check, new = {...}, -1;
+		-- app.PrintTable(vals)
+		local reasons = L["UNOBTAINABLE_ITEM_REASONS"];
+		local record;
+		for _,u in pairs(vals) do
+			-- missing u value means NOT unobtainable
+			if not u then return; end
+			record = reasons[u];
+			if record then
+				check = record[1];
+			else
+				-- otherwise it's an invalid unobtainable filter
+				app.print("Invalid Unobtainable Filter:",u);
+				return;
+			end
+			-- track the highest unobtainable value, which is the most obtainable (according to UNOBTAINABLE_ITEM_TEXTURES)
+			if check > max then
+				new = u;
+				max = check;
+			end
+		end
+			-- print("new:",new)
+		return new;
+	end,
+-- Simple boolean
+	["pvp"] = true,
+};
 -- merges the properties of the t group into the g group, making sure not to alter the filterability of the group
 local MergeProperties = function(g, t, noReplace)
 	if g and t then
+		local skips = app.MergeSkipFields;
 		if noReplace then
 			for k,v in pairs(t) do
 				-- certain keys should never transfer to the merge group directly
@@ -1284,10 +1326,7 @@ local MergeProperties = function(g, t, noReplace)
 					if not rawget(g, "sourceParent") then
 						rawset(g, "sourceParent", v);
 					end
-				elseif k ~= "expanded" and
-					k ~= "indent" and
-					k ~= "modItemID" and
-					k ~= "g" then
+				elseif not skips[k] then
 					if not rawget(g, k) then
 						rawset(g, k, v);
 					end
@@ -1300,11 +1339,34 @@ local MergeProperties = function(g, t, noReplace)
 					if not rawget(g, "sourceParent") then
 						rawset(g, "sourceParent", v);
 					end
-				elseif k ~= "expanded" and
-					k ~= "indent" and
-					k ~= "modItemID" and
-					k ~= "g" then
+				elseif not skips[k] then
 					rawset(g, k, v);
+				end
+			end
+		end
+		-- custom special logic for fields which need to represent the commonality between all Sources of a group
+		-- loop through specific fields for custom logic
+		-- initial creation of a g object, has no key
+		if not g.key then
+			for k,_ in pairs(app.SourceSpecificFields) do
+				g[k] = t[k];
+			end
+		else
+			for k,f in pairs(app.SourceSpecificFields) do
+				-- existing is set
+				if g[k] then
+					-- no value on merger
+					if not t[k] then
+						-- print("remove",k,g[k],t[k])
+						g[k] = nil;
+					elseif f and type(f) == "function" then
+						-- two different values with a compare function
+						-- print("compare",k,g[k],t[k])
+						g[k] = f(g[k], t[k]);
+						-- print("result",g[k])
+					end
+				else
+					g[k] = t[k];
 				end
 			end
 		end
@@ -3359,24 +3421,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 			-- Show the unobtainable source text, if necessary.
 			if sourceGroup then
-				-- Description for Items
-				if sourceGroup.lore and app.Settings:GetTooltipSetting("Lore") then
-					tinsert(info, 1, { left = sourceGroup.lore, wrap = true, color = "ff66ccff" });
-				end
-				if sourceGroup.description and app.Settings:GetTooltipSetting("Descriptions") then
-					tinsert(info, 1, { left = sourceGroup.description, wrap = true, color = "ff66ccff" });
-				end
-
-				if sourceGroup.u and (not sourceGroup.crs or paramA == "itemID" or paramA == "sourceID") then
-					tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][sourceGroup.u][2] });
-				end
-
-				-- PvP filter text
-				-- TODO: probably re-design this once it's no longer considered an unobtainable filter completely
-				if sourceGroup.pvp then
-					tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][12][2] });
-				end
-
 				-- Acquire the SourceID if it hadn't been determined yet.
 				if not sourceID and sourceGroup.link then
 					sourceID = GetSourceID(sourceGroup.link) or sourceGroup.s;
@@ -3816,16 +3860,29 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 	end
 
+	-- Add various text to the group now that it has been consolidated from all sources
 	if group.isLimited then
 		tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
 	end
-
+	-- Description for Items
+	if group.lore and app.Settings:GetTooltipSetting("Lore") then
+		tinsert(info, 1, { left = group.lore, wrap = true, color = "ff66ccff" });
+	end
+	if group.description and app.Settings:GetTooltipSetting("Descriptions") then
+		tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
+	end
+	if group.u and (not group.crs or group.itemID or group.s) then
+		tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2] });
+	end
+	-- TODO: probably re-design this once it's no longer considered an unobtainable filter completely
+	if group.pvp then
+		tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][12][2] });
+	end
 	if paramA == "itemID" and paramB == 137642 then
 		if app.Settings:GetTooltipSetting("SummarizeThings") then
 			tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], wrap = false, color = "ffff8426" });
 		end
 	end
-
 	-- an item used for a faction which is repeatable
 	if group.itemID and group.factionID and group.repeatable then
 		tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });
@@ -3944,7 +4001,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	-- If the user wants to show the progress of this search result, do so.
 	if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
 		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
-		-- print(group.collectionText)
 	end
 
 	-- If there was any informational text generated, then attach that info.
@@ -6660,7 +6716,7 @@ local fields = {
 	["icon"] = function(t)
 		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
 	end,
-	["description"] = function(t)
+	["lore"] = function(t)
 		return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
 	end,
 	["displayID"] = function(t)
