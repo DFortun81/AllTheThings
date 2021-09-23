@@ -1309,7 +1309,6 @@ app.L = {
 		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Class Trial Item Sets
 		[-6013] = app.asset("Category_Factions"),											-- Faction
 		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",							-- Cities
-		[-6015] = "Interface\\Icons\\battleground_strongbox_gold_horde",					-- Rewards
 
 		[-7776] = "Interface\\Icons\\INV_Helm_Cloth_Holiday_Christmas_A_03",				-- Winter Revelers (for Winter Veil)
 
@@ -2098,7 +2097,6 @@ app.L = {
 
 		[-6013] = FACTION,														-- Faction
 		[-6014] = BUG_CATEGORY4,												-- Cities
-		[-6015] = GUILD_TAB_REWARDS,											-- Rewards
 
 		[-7776] = "Winter Revelers",											-- Winter Revelers (for Winter Veil)
 

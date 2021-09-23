@@ -69,7 +69,7 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					n(-6015, {	-- Rewards
+					n(REWARDS, {
 						["description"] = "You'll be offered these rewards at the end of your first foothold.",
 						["g"] = {
 							-- 163 = azerite; 175 = azewrong

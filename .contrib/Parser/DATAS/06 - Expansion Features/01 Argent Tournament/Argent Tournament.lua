@@ -204,7 +204,7 @@ _.ExpansionFeatures =
 							["races"] = { BLOODELF },
 							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 						}),
-						n(-6015, {	-- Rewards
+						n(REWARDS, {
 							["description"] = "You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",
 							["sourceQuests"] = {
 								24796,	-- A Victory For The Silver Covenant [Alliance]

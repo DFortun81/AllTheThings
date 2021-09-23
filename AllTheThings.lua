@@ -2479,7 +2479,7 @@ subroutines = {
 		return {
 			{"select", "headerID", -3338 },	-- Select the Island Expeditions header
 			{"pop"},	-- Discard the Island Expeditions header and acquire the children.
-			{"where", "headerID", -6015 },	-- Select the Rewards header
+			{"where", "headerID", -18 },	-- Select the Rewards header
 			{"pop"},	-- Discard the Rewards header and acquire the children.
 			{"where", "headerID", -3339 },	-- Select the Item Sets header
 			{"pop"},	-- Discard the Item Sets header and acquire the children.
@@ -15806,7 +15806,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						-- RARES = -16;
 						-- TREASURES = -212;
 						-- VENDORS = -2;
-						-- ZONEDROPS = 0;
+						-- ZONE_DROPS = 0;
 
 						-- TODO: Maybe generically just find creature headers < 1 instead of checking specific ones...
 

@@ -71,7 +71,7 @@ _.ExpansionFeatures =
 							title(412),	-- Veteran of the Fourth War
 						},
 					}),
-					n(-6015, {	-- Rewards
+					n(REWARDS, {
 						["description"] = "You'll be offered these rewards at the end of your first foothold.",
 						["modID"] = 25,
 						["g"] = {

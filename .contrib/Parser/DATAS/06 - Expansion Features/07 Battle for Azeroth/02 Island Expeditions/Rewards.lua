@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	tier(BFA_TIER, {
 		n(-3338, {	-- Island Expeditions
-			n(-6015, {	-- Rewards
+			n(REWARDS, {
 				["icon"] = "Interface\\Icons\\INV_Misc_Bag_SatchelofCenarius",
 				["description"] = "These are the random rewards you can receive by completing an Island Expedition.  It is estimated that winning will give you a higher chance to receive a reward.\n\nIf you receive something not listed here, please screenshot and submit it to our Discord.",
 				["g"] = {
