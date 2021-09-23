@@ -1775,6 +1775,7 @@ _.HiddenQuestTriggers = {
 		--	WORLD BOSSES (probably?  'short-supply reward' is usually a bonus roll)
 		q(37460),	-- Gorgrond - Short-Supply Reward (Drov the Ruiner killed)
 		q(37672),	-- Short-Supply Reward (Rukhmar bonus roll)
+		q(37673),	-- Drov the Ruiner bonus roll
 		q(37675),	-- Tarlna the Ageless bonus roll
 		q(39434),	-- Short-Supply Reward / First Rare killed in Tanaan
 		q(39375),	-- Short-Supply Reward / Suspiciously Glowing Chest in Tanaan

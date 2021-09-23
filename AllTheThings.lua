@@ -3656,7 +3656,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
 		local abbrevs = L["ABBREVIATIONS"];
 		for i,j in ipairs(group.g or group) do
-			if j.parent and not j.parent.hideText and j.parent.parent and (showCompleted or not app.IsComplete(j)) and not app.HasCost(j, paramA, paramB) then
+			if j.parent and not j.parent.hideText and j.parent.parent
+				and (showCompleted or not app.IsComplete(j))
+				and not app.HasCost(j, paramA, paramB)
+				and not app.RecursiveFirstParentWithField(j, "sourceIgnored")
+				then
 				text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
 				if showUnsorted or (not string.match(text, L["UNSORTED_1"]) and not string.match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
 					for source,replacement in pairs(abbrevs) do
@@ -14818,6 +14822,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = MOUNTS;
 			db.icon = app.asset("Category_Mounts");
+			db.sourceIgnored = true;
 			table.insert(g, db);
 		end
 
@@ -14829,6 +14834,12 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = AUCTION_CATEGORY_BATTLE_PETS;
 			db.icon = app.asset("Category_PetJournal");
+			for _,o in ipairs(db.g) do
+				-- the raw pet journal listings
+				if o.headerID == -797 then
+					o.sourceIgnored = true;
+				end
+			end
 			table.insert(g, db);
 		end
 
@@ -14838,6 +14849,7 @@ function app:GetDataCache()
 			db.g = app.Categories.Titles;
 			db.expanded = false;
 			db.text = "Titles";
+			db.sourceIgnored = true;
 			table.insert(g, db);
 		end
 
@@ -14849,6 +14861,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.f = 102;
 			db.text = TOY_BOX;
+			db.sourceIgnored = true;
 			table.insert(g, db);
 		end
 
