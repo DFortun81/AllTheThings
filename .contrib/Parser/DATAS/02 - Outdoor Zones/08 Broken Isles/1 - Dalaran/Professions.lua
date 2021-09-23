@@ -501,145 +501,14 @@ _.Zones =
 					}),
 				}),
 				prof(INSCRIPTION, {
-					q(39942, {	-- Aethrem Crystal
-						["provider"] = { "i", 136909 },	-- Aethrem Crystal
-						["description"] = "There is a chance of getting this quest when milling Aethril.",
-						["g"] = {
-							recipe(209658),	-- Mass Mill Aethril
-						},
-					}),
-					q(39961, {	-- An Embarrassing Revelation
-						["provider"] = { "o", 244651 },	-- Steamy Romance Novel
-					}),
-					q(39950, {	-- An Odd Trinket
-						["sourceQuests"] = { 39949 },	-- Once a Scribe Like You
-						["provider"] = { "n", 97359 },	-- Raethan
-						["g"] = {
-							recipe(192855),	-- Prophecy Tarot (Rank 2)
-						},
-					}),
-					q(40062, {	-- Bulging Nightmare Pod
-						["provider"] = { "i", 136912 },	-- Bulging Nightmare Pod
-						["description"] = "There is a chance of getting this quest when milling Dreamleaf.",
-						["g"] = {
-							recipe(209659),	-- Mass Mill Dreamleaf
-						},
-					}),
-					q(39957, {	-- Demon Ink
-						["sourceQuests"] = { 39953 },	-- Halls of Valor: Vision of Valor
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-						["g"] = {
-							recipe(191659),	-- Darkmoon Card of the Legion (Rank 1)
-						},
-					}),
-					q(39932, {	-- Fish Ink
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-					}),
-					q(40065, {	-- Fjarnsk
-						["provider"] = { "i", 136916 },	-- Fjarnsk
-						["description"] = "There is a chance of getting this quest when milling Fjarnskaggl.",
-						["g"] = {
-							recipe(209661),	-- Mass Mill Fjarnskaggl
-						},
-					}),
-					q(39953, {	-- Halls of Valor: Vision of Valor
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-					}),
-					q(39954, {	-- Mass Milling Techniques
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-						["g"] = {
-							recipe(210116),	-- Mass Mill Yseralline Seeds
-						},
-					}),
-					q(39944, {	-- Mysterious Messages
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-					}),
-					q(39949, {	-- Once a Scribe Like You
-						["sourceQuests"] = { 39948 },	-- The Ink Flows
-						["provider"] = { "n", 97359 },	-- Raethan
-					}),
-					q(40056, {	-- Our New Allies
-						["classes"] = { DEMONHUNTER },
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-					}),
-					q(39934, {	-- Our New Allies
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-					}),
-					q(39951, {	-- Roseate Essence
-						["provider"] = { "i", 136917 },	-- Roseate Essence
-						["description"] = "There is a chance of getting this quest when milling Starlight Rose.",
-						["g"] = {
-							recipe(209662),	-- Mass Mill Starlight Rose
-						},
-					}),
-					q(39952, {	-- Sallow Essence
-						["provider"] = { "i", 136918 },	-- Sallow Essence
-						["description"] = "There is a chance of getting this quest when milling Felwort.",
-						["g"] = {
-							recipe(209664),	-- Mass Mill Felwort
-						},
-					}),
-					q(39847, {	-- Sign This
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-						["g"] = {
-							recipe(264506),	-- Legion Inscription
-						},
-					}),
-					q(39931, {	-- Smashing Herbs
-						["sourceQuests"] = { 39847 },	-- Sign This
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-					--[[ None of the recipe IDs appear to exist to anymore despite the quest still being active
-						["g"] = {
-							recipe(192969),	--
-							recipe(192975),	--
-							recipe(192970),	--
-							recipe(192971),	--
-							recipe(192972),	--
-							recipe(192973),	--
-							recipe(192974),	--
-							recipe(192976),	--
-							recipe(192978),	--
-							recipe(192979),	--
-							recipe(192980),	--
-							recipe(192981),	--
-						},]]--
-					}),
 					q(43726, {	-- Tales of the Broken Isles
 						["provider"] = { "n", 97362 },	-- Dazzik "Proudmoore"
 						["repeatable"] = true,
-					}),
-					q(39933, {	-- The Card Shark
-						["sourceQuests"] = { 39932 },	-- Fish Ink
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-						["g"] = {
-							recipe(192854),	-- Prophecy Tarot (Rank 1)
-						},
-					}),
-					q(39948, {	-- The Ink Flows
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-					}),
-					q(39959, {	-- The Plot Thickens
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-						["coord"] = { 41.4, 37.2, LEGION_DALARAN },
-						["isBreadcrumb"] = true,
-						["races"] = HORDE_ONLY,
-					}),
-					q(39955, {	-- The Plot Thickens
-						["isBreadcrumb"] = true,
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-						["races"] = ALLIANCE_ONLY,
 					}),
 					q(43929, {	-- Vantus Mastery
 						["provider"] = { "n", 90417 },	-- Archmage Khadgar
 						["g"] = {
 							i(137783),	-- Vantus Rune Technique: Gul'dan (Rank 3)
-						},
-					}),
-					q(40064, {	-- Woody Seed Cluster
-						["provider"] = { "i", 136915 },	-- Woody Seed Cluster
-						["description"] = "There is a chance of getting this quest when milling Foxflower.",
-						["g"] = {
-							recipe(209660),	-- Mass Mill Foxflower
 						},
 					}),
 					n(WORLD_QUESTS, {

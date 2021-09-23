@@ -198,34 +198,6 @@ _.Zones =
 						["provider"] = { "i", 129142 },		-- Runed Journal Page
 					}),
 				}),
-				prof(INSCRIPTION, {
-					q(40052, {	-- Ancient Vrykul Mastered
-						["sourceQuests"] = { 39947 },	-- Not So Complex?
-						["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
-						["coord"] = { 69.2, 40.6, STORMHEIM },
-						["g"] = {
-							i(137728),	-- Technique: Scroll of Forgotten Knowledge
-						},
-					}),
-					q(39947, {	-- Not So Complex?
-						["sourceQuests"] = { 39946 },	-- Right Tool for the Job
-						["requireSkill"] = INSCRIPTION,
-						["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
-						["coord"] = { 69.2, 40.6, STORMHEIM },
-					}),
-					q(39946, {	-- Right Tool for the Job
-						["sourceQuests"] = { 39945 },	-- Runes Within the Ruins
-						["requireSkill"] = INSCRIPTION,
-						["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
-						["coord"] = { 69.2, 40.6, STORMHEIM },
-					}),
-					q(39945, {	-- Runes Within the Ruins
-						["sourceQuests"] = { 39944 },	-- Mysterious Messages
-						["requireSkill"] = INSCRIPTION,
-						["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
-						["coord"] = { 69.2, 40.6, STORMHEIM },
-					}),
-				}),
 				prof(SKINNING, {
 					q(40149, {	-- Drakol'nir Must Die
 						["sourceQuests"] = {

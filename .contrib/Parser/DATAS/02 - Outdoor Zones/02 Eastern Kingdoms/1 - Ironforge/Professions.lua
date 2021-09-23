@@ -268,21 +268,6 @@ _.Zones =
 					}),
 					i(34484),		-- Old Ironjaw
 				}),
-				prof(INSCRIPTION, {
-					n(QUESTS, {
-						q(39956, {	-- The Legacy Passed On
-							["provider"] = { "n", 97762 },	-- Bill Spearshaker <Author Extrodinaire>
-							["coord"] = { 77.2, 10.4, IRONFORGE },
-							["sourceQuest"] = 39955,	-- The Plot Thickens
-							["requireSkill"] = INSCRIPTION,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 108,
-							["g"] = {
-								recipe(192804),	-- Steamy Romance Novel Kit
-							},
-						}),
-					}),
-				}),
 			}),
 		}),
 	}),

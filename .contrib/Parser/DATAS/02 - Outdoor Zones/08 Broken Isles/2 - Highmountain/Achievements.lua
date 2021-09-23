@@ -248,6 +248,12 @@ _.Zones =
 						},
 					})),
 				})),
+				ach(10774, {	-- Hatchling of the Talon
+					["sourceQuests"] = { 41094 },	-- Hatchlings of the Talon
+					["g"] = {
+						i(139773),	-- Emerald Winds (TOY!)
+					},
+				}),
 				ach(10877, {	-- Pillars of Creation
 					["collectible"] = false,
 					["g"] = {

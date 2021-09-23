@@ -442,16 +442,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(39960, {	-- The Legacy Passed On
-					["requireSkill"] = INSCRIPTION,
-					["sourceQuests"] = { 39959 },	-- The Plot Thickens
-					["provider"] = { "n", 97766 },	-- Francis Serbacon <Author Extrodinaire>
-					["coord"] = { 77.8, 38.8, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(192804),	-- Steamy Romance Novel Kit
-					},
-				}),
 				q(357,   {	-- The Lich's Identity
 					["sourceQuests"] = { 405 },	-- The Prodigal Lich
 					["provider"] = { "n", 1498 },	-- Bethor Iceshard

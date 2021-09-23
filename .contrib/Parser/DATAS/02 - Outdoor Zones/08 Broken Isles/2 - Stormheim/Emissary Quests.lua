@@ -20,7 +20,6 @@ _.Zones =
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 								{"where", "headerID", ZONE_REWARDS },
 								{"pop"},	-- Push all of the groups contained to the processing layer.
-								{ "is", "itemID" },
 							},
 							["groups"] = {
 								i(144310),	-- Formula: Enchant Neck - Mark of the Master (Rank 3)
