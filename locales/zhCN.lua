@@ -1082,7 +1082,9 @@ do a[key] = value; end
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
 	[-34] = "世界任务是有时间限制的任务, 可在特定地点进行, 奖励不一.\n\n一定要经常查看ATT世界任务窗口(/attwq), 看看有什么限时的东西你应该去收集!",
+	--TODO: [-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
 	--TODO: [-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
+	--TODO: [-903] = "These items can drop from repeatable treasure chests, wish crickets, world quests or table missions.",
 })
 do a[key] = value; end
 
