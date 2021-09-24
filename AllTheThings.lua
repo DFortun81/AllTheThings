@@ -9014,6 +9014,45 @@ app.CacheHeirlooms = function()
 end
 end)();
 
+-- Toy Lib
+(local fields = {
+	["key"] = function(t)
+		return "itemID";
+	end,
+	["filterID"] = function(t)
+		return 102;
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleToys;
+	end,
+	["collected"] = function(t)
+		return ATTAccountWideData.Toys[t.itemID];
+	end,
+	["isToy"] = app.ReturnTrue,
+	["text"] = function(t)
+		return C_ToyBox_GetToyLink(t.itemID);
+	end,
+	["link"] = function(t)
+		return C_ToyBox_GetToyLink(t.itemID);
+	end,
+	["icon"] = function(t)
+		return select(3, C_ToyBox_GetToyInfo(t.itemID));
+	end,
+	["name"] = function(t)
+		return select(2, C_ToyBox_GetToyInfo(t.itemID));
+	end,
+	["tsm"] = function(t)
+		return string.format("i:%d", t.itemID);
+	end,
+	["b"] = function(t)
+		return 2;
+	end,
+};
+app.BaseToy = app.BaseObjectFields(fields);
+app.CreateToy = function(id, t)
+	return setmetatable(constructor(id, t, "itemID"), app.BaseToy);
+end)();
+
 local HarvestedItemDatabase = {};
 local C_Item_GetItemInventoryTypeByID = C_Item.GetItemInventoryTypeByID;
 local itemHarvesterFields = RawCloneData(itemFields);
@@ -11229,47 +11268,6 @@ local fields = {
 app.BaseTitle = app.BaseObjectFields(fields);
 app.CreateTitle = function(id, t)
 	return setmetatable(constructor(id, t, "titleID"), app.BaseTitle);
-end
-end)();
-
--- Toy Lib
-(function()
-local fields = {
-	["key"] = function(t)
-		return "itemID";
-	end,
-	["filterID"] = function(t)
-		return 102;
-	end,
-	["collectible"] = function(t)
-		return app.CollectibleToys;
-	end,
-	["collected"] = function(t)
-		return ATTAccountWideData.Toys[t.itemID];
-	end,
-	["isToy"] = app.ReturnTrue,
-	["text"] = function(t)
-		return C_ToyBox_GetToyLink(t.itemID);
-	end,
-	["link"] = function(t)
-		return C_ToyBox_GetToyLink(t.itemID);
-	end,
-	["icon"] = function(t)
-		return select(3, C_ToyBox_GetToyInfo(t.itemID));
-	end,
-	["name"] = function(t)
-		return select(2, C_ToyBox_GetToyInfo(t.itemID));
-	end,
-	["tsm"] = function(t)
-		return string.format("i:%d", t.itemID);
-	end,
-	["b"] = function(t)
-		return 2;
-	end,
-};
-app.BaseToy = app.BaseObjectFields(fields);
-app.CreateToy = function(id, t)
-	return setmetatable(constructor(id, t, "itemID"), app.BaseToy);
 end
 end)();
 
