@@ -54,14 +54,6 @@ _.Zones =
 			i(121758),	-- Sentinel's Wire Chain Belt
 			i(139972),	-- Saberguard's Greaves
 			i(139980),	-- Spider Stompers
-			i(134167),	-- Bitestone Cowl
-			i(134169),	-- Bitestone Shoulderguard
-			i(134170),	-- Bitestone Vest
-			i(134164),	-- Bitestone Wristwrap
-			i(134165),	-- Bitestone Gauntlets
-			i(134163),	-- Bitestone Girthcord
-			i(134168),	-- Bitestone Kilt
-			i(134166),	-- Bitestone Boots
 			i(136728),	-- Wardbreaker Helm
 			i(136730),	-- Wardbreaker Pauldrons
 			i(136725),	-- Wardbreaker Chestplate

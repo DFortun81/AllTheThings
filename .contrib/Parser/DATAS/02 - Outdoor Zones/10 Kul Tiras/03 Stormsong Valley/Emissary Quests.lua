@@ -27,6 +27,33 @@ _.Zones =
 					["coord"] = { 59.29, 69.33, STORMSONG_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
+					["g"] = {
+						i(165868, {	-- Storm's Wake Equipment Cache
+							["sym"] = {
+								{"select", "mapID", STORMSONG_VALLEY},
+								{"pop"},	-- Discard the Map Header and acquire the children.
+								{"where", "headerID", ZONE_REWARDS },
+								{"pop"},	-- Discard the Zone Rewards Header and acquire the children.
+								{"is", "itemID" },	-- Select the Items.
+								{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.
+							},
+						}),
+						i(165867, {	-- Kul Tiran Weapons Cache
+							["sym"] = {
+								{"select", "mapID", KULTIRAS},
+								{"pop"},	-- Discard the Map Header and acquire the children.
+								{"where", "headerID", ZONE_REWARDS },
+								{"pop"},	-- Discard the Zone Rewards Header and acquire the children.
+								{"is", "itemID" },	-- Select the Items.
+								{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
+							},
+						}),
+						i(163857, {	-- Azerite Armor Cache
+							["sym"] = {
+								{"sub", "bfa_azerite_armor_chest" },
+							},
+						}),
+					},
 				}),
 				q(54457, {	-- Supplies from Storm's Wake
 					["provider"] = { "n", 135800 },	-- Sister Lilyana

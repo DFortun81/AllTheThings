@@ -49,6 +49,14 @@ _.Zones =
 				i(139115),	-- Skyhorn Cinch
 				i(139120),	-- Skyhorn Legguards
 				i(139118),	-- Skyhorn Boots
+				i(134167),	-- Bitestone Cowl
+				i(134169),	-- Bitestone Shoulderguard
+				i(134170),	-- Bitestone Vest
+				i(134164),	-- Bitestone Wristwrap
+				i(134165),	-- Bitestone Gauntlets
+				i(134163),	-- Bitestone Girthcord
+				i(134168),	-- Bitestone Kilt
+				i(134166),	-- Bitestone Boots
 				i(139096),	-- Greystone Helm
 				i(139098),	-- Greystone Pauldrons
 				i(139093),	-- Greystone Chestpiece
