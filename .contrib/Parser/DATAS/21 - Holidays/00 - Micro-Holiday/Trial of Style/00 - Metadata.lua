@@ -24,6 +24,11 @@ _.Holidays =
 					85291,	-- Warpweaver Tuviss <Transmogrifier> (Alliance / Lunarfall)
 				},
 			}),
+			n(133164, {	-- Nellie Voguesong <Shirts and Tabards>
+				["sym"] = {
+					{"sub", "common_vendor", 28776}, -- Elizabeth Ross <Tabard Vendor>
+				},
+			}),
 		},
 	}),
 };

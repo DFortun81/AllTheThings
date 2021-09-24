@@ -371,6 +371,13 @@ _.Zones =
 						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
 					},
 				}),
+				n(5049, {	-- Lyesa Steelbrow <Tabard Vendor>
+					["coord"] = { 36.4, 84.4, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"sub", "common_vendor", 5193}, -- Rebecca Laughlin <Tabard Designer>
+					},
+				}),
 				n(50308, {	-- Master Tinker Trini <Gnomeregan Quartermaster>
 					["coord"] = { 55.8, 47.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,

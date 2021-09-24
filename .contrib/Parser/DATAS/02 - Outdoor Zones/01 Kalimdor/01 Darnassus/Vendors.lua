@@ -147,6 +147,13 @@ _.Zones =
 						}),
 					},
 				}),
+				n(5191, {	-- Shalumon <Tabard Vendor>
+					["coord"] = { 64.6, 37.8, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"sub", "common_vendor", 5193}, -- Rebecca Laughlin <Tabard Designer>
+					},
+				}),
 				n(8665,  {	-- Shylenai <Owl Trainer>
 					["coord"] = { 64.0, 53.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,

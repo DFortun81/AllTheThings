@@ -20,7 +20,6 @@ _.Zones =
 					["coord"] = { 28.9, 36.0, THE_JADE_FOREST },
 					["g"] = {
 						i(93148, {	-- Pandaren Spirit Pet Supplies
-							i(37460),	-- Rope Pet Leash
 							i(89139),	-- Chain Pet Leash
 							i(44820),	-- Red Ribbon Pet Leash
 							i(92799),	-- Pandaren Air Spirit

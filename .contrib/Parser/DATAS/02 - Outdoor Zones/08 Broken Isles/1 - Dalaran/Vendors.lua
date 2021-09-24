@@ -3004,6 +3004,12 @@ _.Zones =
 						h(i(48071)),	-- Zabra's Shoulderpads of Conquest
 					},
 				}),
+				n(96812, {	-- Elizabeth Ross <Tabard Vendor>
+					["coord"] = { 50.8, 55.6, LEGION_DALARAN },
+					["sym"] = {
+						{"sub", "common_vendor", 28776}, -- Elizabeth Ross <Tabard Vendor>
+					},
+				}),
 				n(107326, {	-- Draemus <Exotic Pet Supplier>
 					["coord"] = { 58.7, 39.3, LEGION_DALARAN },
 					["g"] = {

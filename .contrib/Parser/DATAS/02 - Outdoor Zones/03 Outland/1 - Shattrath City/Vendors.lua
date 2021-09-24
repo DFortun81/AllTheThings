@@ -1020,6 +1020,14 @@ _.Zones =
 					},
 				}),
 				-- #endif
+				-- #if AFTER CATA
+				n(52278, {	-- Linsa <Tabard Vendor>
+					["coord"] = { 58.8, 46.4, SHATTRATH_CITY },
+					["sym"] = {
+						{"sub", "common_vendor", 28776}, -- Elizabeth Ross <Tabard Vendor>
+					},
+				}),
+				-- #endif
 				n(115546, {	-- Lunelli <Keeper of Lost Recipes>
 					["description"] = "She will only sell these recipes to those who have completed the quests that reward them.",
 					["coord"] = { 64.2, 71.4, SHATTRATH_CITY },

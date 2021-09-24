@@ -24,7 +24,6 @@ _.BattlePets =
 				i(92680),	-- Flawless Mechanical Battle-Stone
 				i(92681),	-- Flawless Undead Battle-Stone
 				i(89139),	-- Chain Pet Leash
-				i(37460),	-- Rope Pet Leash
 				i(44820),	-- Red Ribbon Pet Leash
 				i(94210),	-- Mountain Panda
 				i(94209),	-- Snowy Panda
@@ -82,7 +81,6 @@ _.BattlePets =
 				i(92681),	-- Flawless Undead Battle-Stone
 				i(89139),	-- Chain Pet Leash
 				i(37460),	-- Rope Pet Leash
-				i(44820),	-- Red Ribbon Pet Leash
 			},
 		}),
 		i(98095, {	-- Brawler's Pet Supplies
@@ -103,7 +101,6 @@ _.BattlePets =
 				i(92680),	-- Flawless Mechanical Battle-Stone
 				i(92681),	-- Flawless Undead Battle-Stone
 				i(89139),	-- Chain Pet Leash
-				i(37460),	-- Rope Pet Leash
 				i(44820),	-- Red Ribbon Pet Leash
 			},
 		}),

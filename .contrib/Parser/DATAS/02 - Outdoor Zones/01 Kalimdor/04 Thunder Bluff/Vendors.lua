@@ -204,6 +204,13 @@ _.Zones =
 						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
 					},
 				}),
+				n(5189, {	-- Thrumn
+					["coord"] = { 38.0, 63.0, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"sub", "common_vendor", 5188},	-- Garyl <Tabard Vendor>
+					},
+				}),
 			}),
 		}),
 	}),

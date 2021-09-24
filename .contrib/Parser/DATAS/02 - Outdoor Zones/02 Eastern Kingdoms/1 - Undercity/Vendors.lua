@@ -394,6 +394,20 @@ _.Zones =
 						i(6369),	-- Recipe: Rockscale Cod
 					},
 				}),
+				n(5190, {	-- Merill Pleasance <Tabard Vendor>
+					["coord"] = { 68.4, 44.4, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"sub", "common_vendor", 5188}, -- -- Garyl <Tabard Vendor>
+					},
+				}),
+				n(130966, {	-- Merill Pleasance <Tabard Vendor>
+					["coord"] = { 64.6, 49.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"sub", "common_vendor", 5188},	-- Garyl <Tabard Vendor>
+					},
+				}),
 				n(4577,  {	-- Millie Gregorian <Tailoring Supplies>
 					["coord"] = { 70.6, 30.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
