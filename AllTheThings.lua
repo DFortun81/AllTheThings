@@ -3387,45 +3387,24 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 
 		if itemID then
-			-- Grab the best matching source group.
-			local sourceGroup;
-
-			-- Match the DB group by sourceID
-			-- if not sourceGroup and sourceID then
-			-- 	for i,j in ipairs(group.g or group) do
-			-- 		if j.s == sourceID then
-			-- 			sourceGroup = j;
-			-- 		end
-			-- 	end
-			-- end
-
-			-- Otherwise use modItemID for item accuracy
-			if not sourceGroup then
-				for i,j in ipairs(group.g or group) do
-					if j.modItemID == paramB then
-						sourceGroup = j;
-					end
-				end
-			end
-
-			-- Finally match the DB group by itemID
-			if not sourceGroup then
-				for i,j in ipairs(group.g or group) do
-					if j.itemID == itemID then
-						sourceGroup = j;
-					end
+			-- Merge the source group for all matching Sources of the search results
+			local sourceGroup = {};
+			for i,j in ipairs(group.g or group) do
+				if GroupMatchesParams(j, paramA, paramB, false) then
+					MergeProperties(sourceGroup, j);
+				elseif GroupMatchesParams(j, paramA, paramB) then
+					MergeProperties(sourceGroup, j, true);
 				end
 			end
 
 			-- Show the unobtainable source text, if necessary.
-			if sourceGroup then
+			if sourceGroup.key then
 				-- Acquire the SourceID if it hadn't been determined yet.
 				if not sourceID and sourceGroup.link then
 					sourceID = GetSourceID(sourceGroup.link) or sourceGroup.s;
 				end
 			else
-				-- make sure the sourceGroup is defined if it doesnt exist so indexing doesn't cause errors
-				sourceGroup = { ["missing"] = true };
+				sourceGroup.missing = true;
 			end
 
 			if sourceID then
@@ -3456,9 +3435,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
 									end
 								else
-									local otherATTSource = app.SearchForField("s", otherSourceID);
-									if otherATTSource then
-										otherATTSource = otherATTSource[1];
+									local otherATTSources = app.SearchForField("s", otherSourceID);
+									if otherATTSources then
+										local otherATTSource;
+										if #otherATTSources == 1 then
+											otherATTSource = otherATTSources[1];
+										else
+											otherATTSource = {};
+											for _,o in ipairs(otherATTSources) do
+												MergeProperties(otherATTSource, o);
+											end
+										end
 
 										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
 										if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
@@ -3518,9 +3505,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
 									end
 								else
-									local otherATTSource = app.SearchForField("s", otherSourceID);
-									if otherATTSource then
-										otherATTSource = otherATTSource[1];
+									local otherATTSources = app.SearchForField("s", otherSourceID);
+									if otherATTSources then
+										local otherATTSource;
+										if #otherATTSources == 1 then
+											otherATTSource = otherATTSources[1];
+										else
+											otherATTSource = {};
+											for _,o in ipairs(otherATTSources) do
+												MergeProperties(otherATTSource, o);
+											end
+										end
 
 										-- Show information about the appearance:
 										local failText = "";
