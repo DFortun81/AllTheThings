@@ -5691,7 +5691,26 @@ local function AttachTooltip(self)
 	if numLines < 1 then
 		return false
 	end
-	self.HasATTSearchResults = nil;
+
+	-- Does the tooltip have an owner?
+	local owner = self:GetOwner();
+	if owner then
+		if owner.SpellHighlightTexture then
+			-- Actionbars, don't want that.
+			return true;
+		end
+		if owner.cooldownWrapper then
+			local parent = owner:GetParent();
+			if parent then
+				parent = parent:GetParent();
+				if parent and parent.fanfareToys then
+					-- Toy Box, don't want that.
+					return true;
+				end
+			end
+		end
+	end
+
 	if CanAttachTooltips() then
 		-- check what this tooltip is currently displaying, and keep that reference
 		local link, target, spellID = select(2, self:GetItem());
@@ -5731,25 +5750,6 @@ local function AttachTooltip(self)
 		self:AddDoubleLine("GetSpell", tostring(select(2, self:GetSpell()) or "nil"));
 		self:AddDoubleLine("GetUnit", tostring(select(2, self:GetUnit()) or "nil"));
 		--]]--
-
-		-- Does the tooltip have an owner?
-		local owner = self:GetOwner();
-		if owner then
-			if owner.SpellHighlightTexture then
-				-- Actionbars, don't want that.
-				return true;
-			end
-			if owner.cooldownWrapper then
-				local parent = owner:GetParent();
-				if parent then
-					parent = parent:GetParent();
-					if parent and parent.fanfareToys then
-						-- Toy Box, don't want that.
-						return true;
-					end
-				end
-			end
-		end
 
 		-- Does the tooltip have a target?
 		if self.AllTheThingsProcessing and target then
@@ -5804,7 +5804,7 @@ local function AttachTooltip(self)
 			if AllTheThingsAuctionData[itemID] then
 				self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
 			end--]]
-			-- print("Search Item",itemID);
+			-- print("Search Item",link);
 			local mohIndex = link:find("item:137642");
 			if mohIndex and mohIndex > 0 then -- skip Mark of Honor for now
 				AttachTooltipSearchResults(self, link, app.EmptyFunction, "itemID", 137642);
@@ -5924,6 +5924,7 @@ end
 local function ClearTooltip(self)
 	-- print("Clear Tooltip");
 	self.AllTheThingsProcessing = nil;
+	self.HasATTSearchResults = nil;
 	self.AttachComplete = nil;
 	self.MiscFieldsComplete = nil;
 	self.UpdateTooltip = nil;
@@ -13608,7 +13609,6 @@ RowOnEnter = function (self)
 		local GameTooltip = GameTooltip;
 		local initialBuild = not GameTooltip.IsRefreshing;
 		GameTooltip.IsRefreshing = true;
-		GameTooltip.HasATTSearchResults = nil;
 
 		if initialBuild then
 			-- print("RowOnEnter-Initial");
