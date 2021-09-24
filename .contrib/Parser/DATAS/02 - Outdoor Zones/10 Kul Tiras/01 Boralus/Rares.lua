@@ -13,12 +13,12 @@ _.Zones =
 						{ 76.8, 37.2, BORALUS },
 						{ 81.6, 50.4, BORALUS },
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(155273),	-- Shartook Hatchet
 						crit(22, {	-- Sawtooth
 							["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 						}),
-					}),
+					},
 				}),
 			}),
 		}),

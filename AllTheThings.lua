@@ -1160,8 +1160,8 @@ local function GetProgressTextForRow(data)
 		if data.g and not data.expanded and #data.g > 0 then
 			return "+++";
 		end
-		return "---";
 	end
+	return "---";
 end
 local function GetProgressTextForTooltip(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
@@ -8414,14 +8414,14 @@ end)();
 -- TODO: Once Item information is stored in a single source table, this mechanism can reference that instead of using a cache table here
 local cache = app.CreateCache("modItemID");
 -- Consolidated function to handle how many retries for information an Item may have
-local function HandleItemRetries(t)
-	local t, id = cache.GetCached(t);
+local function HandleItemRetries(_t)
+	local t, id = cache.GetCached(_t);
 	if rawget(t, "retries") then
 		rawset(t, "retries", rawget(t, "retries") + 1);
 		if rawget(t, "retries") > app.MaximumItemInfoRetries then
 			local itemName = "Item #" .. tostring(id) .. "*";
 			rawset(t, "title", L["FAILED_ITEM_INFO"]);
-			rawset(t, "text", itemName);
+			rawset(_t, "name", itemName);
 			rawset(t, "retries", nil);
 			rawset(t, "link", nil);
 			rawset(t, "s", nil);
@@ -8498,7 +8498,7 @@ local itemFields = {
 		return cache;
 	end,
 	["text"] = function(t)
-		return t.link;
+		return t.name;
 	end,
 	["icon"] = function(t)
 		return cache.GetCachedField(t, "icon", default_icon);

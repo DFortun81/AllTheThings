@@ -15,10 +15,7 @@ _.Zones =
 						crit(1, {	-- Ak'tar
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
-						i(161021, {	-- Soaring Slateclaw Gloves
-							["bonusID"] = 4776,
-							["modID"] = 110,
-						}),
+						i(161021),	-- Soaring Slateclaw Gloves
 					},
 				}),
 				n(130439, {	-- Ashmane
@@ -28,10 +25,7 @@ _.Zones =
 						crit(2, {	-- Ashmane
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
-						i(161106, {	-- Rabid Packleader Bracers
-							["bonusID"] = 4776,
-							["lvl"] = 110,
-						}),
+						i(161106),	-- Rabid Packleader Bracers
 					},
 				}),
 				n(128553, {	-- Azer'tor
@@ -50,21 +44,18 @@ _.Zones =
 						crit(4, {	-- Bajiani the Slick
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
-						i(162622, {	-- Groggy Brawler's Chestplate
-							["bonusID"] = 4776,
-							["lvl"] = 110,
-						}),
+						i(162622),	-- Groggy Brawler's Chestplate
 					},
 				}),
 				n(129476, {	-- Bloated Krolusk
 					["questID"] = 47562,
 					["coord"] = { 48.8, 50.0, VOLDUN },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(5, {	-- Bloated Krolusk
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(161037),	-- Sand Scoured Girdle
-					}),
+					},
 				}),
 				n(136393, {	-- Bloodwing Bonepicker
 					["questID"] = 51079,
@@ -74,12 +65,12 @@ _.Zones =
 						{ 56.0, 53.5, VOLDUN },	-- actual rare/nest coord
 					},
 					["cr"] = 136390,	-- Enormous Egg
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(6, {	-- Bloodwing Bonepicker
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(161019),	-- Dread Vulture Waistcord
-					}),
+					},
 				}),
 				n(136346, {	-- Captain Stef "Marrow" Quin
 					["questID"] = 51073,
@@ -88,22 +79,19 @@ _.Zones =
 						crit(7, {	-- Captain Stef "Marrow" Quin
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
-						i(160990, {	-- Marrow's Sash
-							["bonusID"] = 4776,
-							["lvl"] = 110,
-						}),
+						i(160990),	-- Marrow's Sash
 					},
 				}),
 				n(124722, {	-- Commodore Calhoun
 					["description"] = "This rare is at the very top of the Ashvane encampment, not down by the ship.",
 					["questID"] = 50905,
 					["coord"] = { 42.5, 92.1, VOLDUN },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(8, {	-- Commodore Calhoun
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(162615),	-- Commodore Calhoun's Tricorne
-					}),
+					},
 				}),
 				n(162681, {	-- Elusive Quickhoof
 					["description"] = "Feed it Seaside Leafy Greens Mix to get the mount.",
@@ -144,32 +132,32 @@ _.Zones =
 						{ 62.3, 48.1, VOLDUN },	-- start of path (if we ever have ability to add description to coords)
 						{ 63.9, 48.0, VOLDUN },	-- cave entrance
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(10, {	-- Gut-Gut the Glutton
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(161105),	-- Gluttonous Carnivore Treads
-					}),
+					},
 				}),
 				n(130443, {	-- Hivemother Kraxi
 					["questID"] = 47533,
 					["coord"] = { 53.9, 51.8, VOLDUN },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(11, {	-- Hivemother Kraxi
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(161027),	-- Venomous Hivemother Cord
-					}),
+					},
 				}),
 				n(129283, {	-- Jumbo Sandsnapper
 					["questID"] = 49392,
 					["coord"] = { 37.3, 84.8, VOLDUN },	-- sort of mills around in this general area, 1 coord should suffice
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(12, {	-- Jumbo Sandsnapper
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(161107),	-- Brineshell Footguards [Low Droprate]
-					}),
+					},
 				}),
 				n(136341, {	-- Jungleweb Hunter
 					["questID"] = 51074,
@@ -178,10 +166,7 @@ _.Zones =
 						crit(13, {	-- Jungleweb Hunter
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
-						i(161026, {	-- Spiderbite Wristwraps
-							["bonusID"] = 4776,
-							["lvl"] = 110,
-						}),
+						i(161026),	-- Spiderbite Wristwraps
 					},
 				}),
 				n(128686, { -- Kamid the Trapper
@@ -191,31 +176,28 @@ _.Zones =
 						crit(14, {	-- Kamid the Trapper
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
-						i(161038, {	-- Sand Trapper's Legguards
-							["bonusID"] = 4776,
-							["lvl"] = 110,
-						}),
+						i(161038),	-- Sand Trapper's Legguards
 					},
 				}),
 				n(137681, {	-- King Clickyclack
 					["questID"] = 51424,
 					["coord"] = { 38.2, 41.3, VOLDUN },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(15, {	-- King Clickyclack
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(161108),	-- Kingshell Legplates
-					}),
+					},
 				}),
 				n(128951, {	-- Nez'ara
 					["questID"] = 50898,
 					["coord"] = { 43.9, 87.0, VOLDUN },	-- cave entrance
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(16, {	-- Nez'ara
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(161024),	-- Wrathful Sister's Cincture
-					}),
+					},
 				}),
 				n(143313, {	-- Portakillo
 					--Note!! No questID triggered
@@ -229,42 +211,42 @@ _.Zones =
 				n(136340, {	-- Relic Hunter Hazaak
 					["questID"] = 51126,
 					["coord"] = { 49.0, 72.0, VOLDUN },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(17, {	-- Relic Hunter Hazaak
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(160956),	-- Hazaak's Windshorn Claws
-					}),
+					},
 				}),
 				n(127776, {	-- Scaleclaw Broodmother
 					["questID"] = 48960,
 					["coord"] = { 44.4, 80.1, VOLDUN },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(18, {	-- Scaleclaw Broodmother
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(161039),	-- Sandclaw Handguards
-					}),
+					},
 				}),
 				n(136336, {	-- Scorpox
 					["questID"] = 51076,
 					["coord"] = { 32.8, 65.1, VOLDUN },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(19, {	-- Scorpox
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(161030),	-- Vicious Scorpidsting Sandals
-					}),
+					},
 				}),
 				n(136338, {	-- Sirokar
 					["questID"] = 51075,
 					["coord"] = { 24.8, 68.6, VOLDUN },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(20, {	-- Sirokar
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(161099),	-- Wind-Scoured Greaves
-					}),
+					},
 				}),
 				n(134571, {	-- Skycaller Teskris
 					["questID"] = 50637,
@@ -273,10 +255,7 @@ _.Zones =
 						crit(21, {	-- Skycaller Teskris
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
-						i(160968, {	-- Skycaller Spellstaff
-							["bonusID"] = 4776,
-							["lvl"] = 110,
-						}),
+						i(160968),	-- Skycaller Spellstaff
 					},
 				}),
 				n(134745, {	-- Skycarver Krakit
@@ -286,10 +265,7 @@ _.Zones =
 						crit(22, {	-- Skycarver Krakit
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
-						i(160980, {	-- Skycarver Warglaive
-							["bonusID"] = 4776,
-							["lvl"] = 110,
-						}),
+						i(160980),	-- Skycarver Warglaive
 					},
 				}),
 				n(136304, {	-- Songstress Nahjeen
@@ -299,41 +275,38 @@ _.Zones =
 						crit(23, {	-- Songstress Nahjeen
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
-						i(161025, {	-- Wailing Sister's Gloves
-							["bonusID"] = 4776,
-							["lvl"] = 110,
-						}),
+						i(161025),	-- Wailing Sister's Gloves
 					},
 				}),
 				n(130401, {	-- Vathikur
 					["questID"] = 49674,
 					["coord"] = { 57.2, 73.2, VOLDUN },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(24, {	-- Vathikur
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(161097),	-- Rattling Earth Armwraps
-					}),
+					},
 				}),
 				n(129180, {	-- Warbringer Hozzik
 					["questID"] = 49373,
 					["coord"] = { 37.0, 46.1, VOLDUN },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(25, {	-- Warbringer Hozzik
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(161032),	-- Spire-Charged Links
-					}),
+					},
 				}),
 				n(134638, {	-- Warlord Zothix
 					["questID"] = 50662,
 					["coord"] = { 30.0, 52.6, VOLDUN },
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(26, {	-- Warlord Zothix
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(161031),	-- Zothix's Conductive Vambraces
-					}),
+					},
 				}),
 				n(134625, {	-- Warmother Captive
 					["questID"] = 50658,
@@ -342,21 +315,18 @@ _.Zones =
 						crit(27, {	-- Warmother Captive
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
-						i(161103, {	-- Barbarous Captive's Wargreavers
-							["bonusID"] = 4776,
-							["lvl"] = 110,
-						}),
+						i(161103),	-- Barbarous Captive's Wargreavers
 					},
 				}),
 				n(129411, {	-- Zunashi the Exile
 					["questID"] = 48319,
 					["coord"] = { 43.9, 52.4, VOLDUN },	-- cave entrance
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						crit(28, {	-- Zunashi the Exile
 							["achievementID"] = 12943,	-- Adventurer of Vol'dun
 						}),
 						i(161119),	-- Ravasaur Skull Bijou
-					}),
+					},
 				}),
 			}),
 		}),

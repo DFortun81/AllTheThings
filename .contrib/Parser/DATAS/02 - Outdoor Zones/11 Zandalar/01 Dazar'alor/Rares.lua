@@ -11,12 +11,10 @@ _.Zones =
 					["questID"] = 48333,
 					["coord"] = { 55.01, 83.61, DAZARALOR },
 					["g"] = {
-						i(160947, {	-- Amani Berserker's Chopper
-							["bonusID"] = 4776,
-						}),
 						crit(11, {	-- Kul'krazahn (Adventurer of Zuldazar)
 							["achievementID"] = 12944,	-- Adventurer of Zuldazar
 						}),
+						i(160947),	-- Amani Berserker's Chopper
 					},
 				}),
 				n(122639, {	-- Old R'gal
