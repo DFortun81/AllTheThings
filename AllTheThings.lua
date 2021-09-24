@@ -9015,7 +9015,8 @@ end
 end)();
 
 -- Toy Lib
-(local fields = {
+(function()
+local fields = {
 	["key"] = function(t)
 		return "itemID";
 	end,
@@ -9051,6 +9052,7 @@ end)();
 app.BaseToy = app.BaseObjectFields(fields);
 app.CreateToy = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseToy);
+end
 end)();
 
 local HarvestedItemDatabase = {};
