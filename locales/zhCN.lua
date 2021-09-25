@@ -721,7 +721,6 @@ for key,value in pairs({
 		[-168] = FACTION_OTHER .. QUESTS_LABEL,						-- Other Quests
 		[-171] = "任务线",											-- Quest Chains
 
-		[-206] = "典范",												-- Paragon
 		[-211] = NEW .. CHARACTER,									-- New Character 新建角色
 		[-212] = "宝箱",												-- Treasure Chest
 		[-214] = "夜之子",											-- Nightborne Home

@@ -34,7 +34,7 @@ _.Zones =
 			}),
 			n(ZONE_DROPS, {
 				["maps"] = {
-					TIRAGARDE_SOUND,	-- During Assualts
+					TIRAGARDE_SOUND,	-- During Assaults
 					DAZARALOR,
 				},
 				["g"] = bubbleDown({["bonusID"] = 4796, }, {
