@@ -35,9 +35,9 @@ _.Zones =
 					},
 				}),
 			}),
-			n(-ZONE_DROPS, {
+			n(ZONE_DROPS, {
 				["maps"] = { NAZMIR },	-- During Assaults
-				["g"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
+				["g"] = bubbleDown({["bonusID"] = 4796, }, {
 					i(159217),	-- Sagehold Circlet
 					i(159222),	-- Sagehold Mantle
 					i(159199),	-- Sagehold Cloak

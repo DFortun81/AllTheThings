@@ -70,6 +70,9 @@ _.Zones =
 			i(121756),	-- Shieldguard Girdle
 			i(140009),	-- Felsword Legplates
 			i(140017),	-- Boots of the Felsword
+			i(134334, {	-- Disgraced Court Cloak
+				["bonusID"] = 1812,
+			}),
 			n(-384, {	-- Neck
 				i(139101),	-- An'she's Pendant
 				i(134161),	-- Brulstone Pendant

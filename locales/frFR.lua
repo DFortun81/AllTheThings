@@ -627,6 +627,7 @@ for key,value in pairs({
 		--TODO: [-19] = "Dragons of Nightmare",						-- Dragons of Nightmare
 		--TODO: [-20] = "Common Vendor Items",						-- Common Vendor Items
 		--TODO: [-21] = "Captains",									-- Captains
+		--TODO: [-22] = "Secrets",									-- Secrets
 
 		--TODO: [-40] = LFG_LIST_LEGACY,							-- Legacy
 		--TODO: [-41] = "Cache of Madness",
@@ -974,6 +975,7 @@ do a[key] = value; end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
+	--TODO: [-22] = "Naughty secrets...",
 	--TODO: [-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
 	--TODO: [-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
 	--TODO: [-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",

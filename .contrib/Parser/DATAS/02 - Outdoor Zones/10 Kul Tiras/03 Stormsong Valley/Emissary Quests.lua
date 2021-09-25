@@ -35,7 +35,7 @@ _.Zones =
 								{"where", "headerID", ZONE_REWARDS },
 								{"pop"},	-- Discard the Zone Rewards Header and acquire the children.
 								{"is", "itemID" },	-- Select the Items.
-								{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.
+								{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_CLOAK", },	-- Only include a couple of inventory types.
 							},
 						}),
 						i(165867, {	-- Kul Tiran Weapons Cache
