@@ -23,7 +23,6 @@ local C_TransmogCollection_GetIllusionSourceInfo = C_TransmogCollection.GetIllus
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 local C_TransmogCollection_GetIllusions = C_TransmogCollection.GetIllusions;
 local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
-local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
 local C_ToyBox_GetToyLink = C_ToyBox.GetToyLink;
 local C_QuestLog_GetAllCompletedQuestIDs = C_QuestLog.GetAllCompletedQuestIDs
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
@@ -9016,39 +9015,22 @@ end)();
 
 -- Toy Lib
 (function()
-local fields = {
-	["key"] = function(t)
-		return "itemID";
-	end,
-	["filterID"] = function(t)
+-- copy base Item fields
+local fields = RawCloneData(itemFields);
+fields.filterID = function(t)
 		return 102;
-	end,
-	["collectible"] = function(t)
+	end
+fields.collectible = function(t)
 		return app.CollectibleToys;
-	end,
-	["collected"] = function(t)
+	end
+fields.collected = function(t)
 		return ATTAccountWideData.Toys[t.itemID];
-	end,
-	["isToy"] = app.ReturnTrue,
-	["text"] = function(t)
-		return C_ToyBox_GetToyLink(t.itemID);
-	end,
-	["link"] = function(t)
-		return C_ToyBox_GetToyLink(t.itemID);
-	end,
-	["icon"] = function(t)
-		return select(3, C_ToyBox_GetToyInfo(t.itemID));
-	end,
-	["name"] = function(t)
-		return select(2, C_ToyBox_GetToyInfo(t.itemID));
-	end,
-	["tsm"] = function(t)
+	end
+fields.tsm = function(t)
 		return string.format("i:%d", t.itemID);
-	end,
-	["b"] = function(t)
-		return 2;
-	end,
-};
+	end
+fields.isToy = app.ReturnTrue;
+
 app.BaseToy = app.BaseObjectFields(fields);
 app.CreateToy = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseToy);
