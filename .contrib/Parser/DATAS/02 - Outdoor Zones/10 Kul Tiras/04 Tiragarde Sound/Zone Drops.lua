@@ -10,7 +10,7 @@ _.Zones =
 				["maps"] = {
 					ZULDAZAR,	-- During Assaults
 				},
-				["g"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
+				["g"] = bubbleDown({["bonusID"] = 4796,}, {
 					i(159184),	-- Foxhollow Circlet
 					i(159189),	-- Foxhollow Amice
 					i(159166),	-- Foxhollow Drape

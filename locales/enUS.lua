@@ -958,7 +958,7 @@ app.L = {
 		[-202] = "Interface\\Icons\\ClassIcon_Paladin",										-- Paladin
 		[-203] = "Interface\\Icons\\ClassIcon_Warrior",										-- Warrior
 		[-204] = "Interface\\Icons\\ClassIcon_DeathKnight",									-- Death Knight
-		[-206] = "Interface\\Icons\\achievement_dungeon_heroic_gloryoftheraider",			-- Paragon
+
 		[-211] = 1530081,																	-- New Characters
 		[-212] = app.asset("Interface_Tchest"),									            -- Treasure Chest
 		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",								-- The Underbelly
@@ -974,7 +974,7 @@ app.L = {
 		[-223] = "Interface\\Icons\\achievement_quests_completed_daily_07",					-- Daily
 		[-224] = "Interface\\Icons\\ClassIcon_DemonHunter",									-- Demon Hunter
 		[-225] = "Interface\\Icons\\spell_lightning_lightningbolt01",						-- Elemental Bonds
-		[-226] = "Interface\\ICONS\\INV_Misc_Map02",										-- World Drops
+
 		[-227] = "Interface\\ICONS\\spell_holy_divinepurpose",								-- Victory
 		[-228] = app.asset("Category_FlightPaths"),											-- Flight Paths
 		[-231] = "Interface\\Icons\\Spell_Shadow_DeathScream",
@@ -1596,7 +1596,7 @@ app.L = {
 		[-173] = PLAYER_DIFFICULTY_TIMEWALKER,									-- Timewalking
 		[-174] = CALENDAR_FILTER_DARKMOON,										-- Darkmoon Faire
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
-		[-206] = GetSpellInfo(67772),											-- Paragon
+
 		[-211] = NEW.." "..CHARACTER,											-- New Character
 		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest
 		[-213] = DUNGEON_FLOOR_DALARAN2,										-- The Underbelly
@@ -1608,7 +1608,7 @@ app.L = {
 		[-221] = TRACKER_HEADER_BONUS_OBJECTIVES,								-- Bonus Objectives
 		[-222] = select(2, GetAchievementInfo(9726)),							-- Treasure Hunter
 		[-224] = "Illidari",													-- Illidari
-		[-226] = TRANSMOG_SOURCE_4,												-- World Drop
+
 		[-227] = GetSpellInfo(109382),											-- Victory
 		[-228] = GetSpellInfo(218950),											-- Flight Path
 		[-229] = CALENDAR_REPEAT_WEEKLY,										-- Weekly

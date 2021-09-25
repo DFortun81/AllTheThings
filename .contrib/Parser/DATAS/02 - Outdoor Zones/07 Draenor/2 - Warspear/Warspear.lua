@@ -880,7 +880,7 @@ _.Zones =
 						n(88161, {	-- Challenger Sunforge
 							["description"] = "Can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",
 							["coord"] = { 65.3, 59.3, WARSPEAR },
-							["g"] = {
+							["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {
 								i(118401, {	-- Arcana Shard Spire
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -1089,7 +1089,7 @@ _.Zones =
 										un(REMOVED_FROM_GAME, i(119021)),	-- Stonebinder Shield
 									},
 								})),
-							},
+							}),
 						}),
 						n(93909, {	-- Cladd Dawnstrider <Wild Gladiator>
 							["coord"] = { 49.3, 56.7, WARSPEAR },
