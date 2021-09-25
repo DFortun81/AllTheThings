@@ -1710,7 +1710,6 @@ _.NeverImplemented =
 		i(18768),	-- Reins of the Swift Dawnsaber
 		i(23193),	-- Naxxramas Deathcharger Reins
 		i(28482),	-- Great Elite Elekk
-		i(37827),	-- Brewfest Kodo
 		i(43963),	-- Reins of the Brown Polar Bear
 		i(43964),	-- Reins of the Black Polar Bear
 		i(46101),	-- Blue Skeletal Warhorse

@@ -102,7 +102,8 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	
 	local invasion = C_QuestLog.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 12192 or 12020);
 	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for Dark Iron Invasion", _.L[invasion and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
-	GameTooltip:AddLine(" " .. icon .. " 0-22 for Ram Racing Dialog (every 12-18 hours)");
+	GameTooltip:AddLine(" " .. icon .. " 0-22 for Ram Racing Dialog** (every 18 hours)");
+	GameTooltip:AddLine("** Log out in a rested location and it will be reset after 8 hours.");
 	GameTooltip:AddLine(" ");
 	GameTooltip:AddDoubleLine("Currently", GetItemCount(itemID, true) .. "x " .. icon .. " " .. item.link);
 	
@@ -1573,576 +1574,583 @@ _.Holidays = { applyholiday(BREWFEST, {
 			})),
 		}),
 		n(VENDORS, {
-			n(23604,  {	-- Agnes Farwithers <Cheese Vendor>
-				-- #if AFTER CATA
-				["coord"] = { 41.0, 18.3, DUROTAR },
-				-- #else
-				["coord"] = { 43.9, 17.9, DUROTAR },
-				-- #endif
-				["timeline"] = { "added 2.2.2" },
-				["maps"] = { DUROTAR },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(34065, {	-- Spiced Onion Cheese
-						["timeline"] = { "added 2.2.2" },
-					}),
-				},
-			}),
-			n(23521,  {	-- Anne Summers <Cheese Vendor>
-				["coord"] = { 56.4, 37.6, DUN_MOROGH },
-				["timeline"] = { "added 2.2.2" },
-				["maps"] = { DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(34065, {	-- Spiced Onion Cheese
-						["timeline"] = { "added 2.2.2" },
-					}),
-				},
-			}),
-			n(23522,  {	-- Arlen Lochlan <Bread Vendor>
-				-- #if AFTER CATA
-				["coord"] = { 55.6, 38.0, DUN_MOROGH },
-				-- #else
-				["coord"] = { 48.5, 40.0, DUN_MOROGH },
-				-- #endif
-				["timeline"] = { "added 2.2.2" },
-				["maps"] = { DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(33043, {	-- The Essential Brewfest Pretzel
-						["timeline"] = { "added 2.2.2" },
-					}),
-				},
-			}),
-			n(23482,  {	-- Barleybrew Apprentice <Barleybrew Brew Vendor>
-				-- #if AFTER CATA
-				["coord"] = { 56.0, 38.0, DUN_MOROGH },
-				-- #else
-				["coord"] = { 48.9, 39.8, DUN_MOROGH },
-				-- #endif
-				["timeline"] = { "added 2.2.2" },
-				["maps"] = { DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(33030, {	-- Barleybrew Clear
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(33029, {	-- Barleybrew Dark
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(46400, {	-- Barleybrew Gold
-						["timeline"] = { "added 3.2.0.10314" },
-					}),
-					i(33028, {	-- Barleybrew Light
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(138867, {	-- Shimmer Stout
-						["timeline"] = { "added 7.0.3.22248" },
-					}),
-				},
-			}),
-			n(23710,  {	-- Belbi Quikswitch <Token Redeemer>
-				-- #if AFTER CATA
-				["coord"] = { 56.3, 37.5, DUN_MOROGH },
-				-- #else
-				["coord"] = { 49.3, 39.6, DUN_MOROGH },
-				-- #endif
-				["timeline"] = { "added 2.2.2" },
-				["maps"] = { DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-				-- #if ANYCLASSIC
-				["OnTooltip"] = BREWFEST_VENDOR_OnTooltip,
-				-- #endif
-				["groups"] = appendGroups(BREWFEST_REGALIA, {
-					i(37571, {	-- "Brew of the Month" Club Membership Form
-						["timeline"] = { "added 2.2.2" },
-						["cost"] = BREWFEST_TOKEN_COST(200),
-						["races"] = ALLIANCE_ONLY,
-					}),
-					i(34028, {	-- "Honorary Brewer" Hand Stamp (Alliance)
-						-- #if AFTER WRATH
-						["timeline"] = { "added 2.0.1", "removed 2.4.3" },
-						-- #else
-						["timeline"] = { "added 2.0.1", "removed 3.0.1" },	-- Originally removed 2.4.3, actually available in classic!
-						-- #endif
-						["cost"] = BREWFEST_TOKEN_COST(600),
-						["races"] = ALLIANCE_ONLY,
-					}),
-					i(119209, {	-- Angry Brewfest Letter
-						["timeline"] = { "added 6.0.2.18816" },
-						["cost"] = BREWFEST_TOKEN_COST(50),
-					}),
-					i(33047, {	-- Belbi's Eyesight Enhancing Romance Goggles
-						["collectible"] = false,	-- Needs marked because for some reason ATT thinks it is a collectible TODO: Look into this
-						["timeline"] = { "added 2.2.0.7272" },
-						["cost"] = BREWFEST_TOKEN_COST(100),
-					}),
-					i(169448, {	-- Bottomless Brewfest Stein
-						["timeline"] = { "added 8.0.1" },
-						["cost"] = BREWFEST_TOKEN_COST(10),
-					}),
-					i(116758, {	-- Brewfest Banner (TOY!)
-						["timeline"] = { "added 6.0.1.18594" },
-						["cost"] = BREWFEST_TOKEN_COST(100),
-					}),
-					i(71137, {	-- Brewfest Keg Pony (TOY!)
-						["timeline"] = { "added 4.2.0.14333" },
-						["cost"] = BREWFEST_TOKEN_COST(200),
-					}),
-					i(33927, {	-- Brewfest Pony Keg (TOY!)
-						["timeline"] = { "added 2.2.0.7272" },
-						["cost"] = BREWFEST_TOKEN_COST(100),
-					}),
-					i(166747, {	-- Brewfest Reveler's Hearthstone
-						["timeline"] = { "added 8.1.5.29701" },
-						["cost"] = BREWFEST_TOKEN_COST(200),
-					}),
-					i(90426, {	-- Brewhelm
-						["timeline"] = { "added 5.0.4.15913" },
-						["cost"] = BREWFEST_TOKEN_COST(2),
-					}),
-					i(37750, {	-- Fresh Brewfest Hops
-						["timeline"] = { "added 2.4.3.8601" },
-						["cost"] = BREWFEST_TOKEN_COST(2),
-					}),
-					i(39476, {	-- Fresh Goblin Brewfest Hops
-						["timeline"] = { "added 2.4.3.8601" },
-						["cost"] = BREWFEST_TOKEN_COST(5),
-					}),
-					i(169461, {	-- Garland of Grain
-						["timeline"] = { "added 8.2.0.30918" },
-						["cost"] = BREWFEST_TOKEN_COST(150),
-					}),
-					i(90427, {	-- Pandaren Brewpack (TOY!)
-						["timeline"] = { "added 5.0.4.15913" },
-						["cost"] = BREWFEST_TOKEN_COST(100),
-					}),
-					i(46707, {	-- Pint-Sized Pink Pachyderm (PET!)
-						["timeline"] = { "added 3.2.0.10314" },
-						["cost"] = BREWFEST_TOKEN_COST(100),
-					}),
-					i(37816, {	-- Preserved Brewfest Hops
-						["timeline"] = { "added 2.4.3.8601" },
-						["cost"] = BREWFEST_TOKEN_COST(20),
-					}),
-					i(116757, {	-- Steamworks Sausage Grill (TOY!)
-						["timeline"] = { "added 6.0.1.18594" },
-						["cost"] = BREWFEST_TOKEN_COST(200),
-					}),
-					i(116756, {	-- Stout Alemental (PET!)
-						["timeline"] = { "added 6.0.1.18594" },
-						["cost"] = BREWFEST_TOKEN_COST(200),
-					}),
-					i(138730, {	-- Synthebrew Goggles XL
-						["timeline"] = { "added 7.0.3.22248" },
-						["collectible"] = false,	-- TODO: Look into this
-						["cost"] = BREWFEST_TOKEN_COST(200),
-					}),
-					i(168915, {	-- Tabard of Brew
-						["timeline"] = { "added 8.2.0.30918" },
-						["cost"] = BREWFEST_TOKEN_COST(200),
-					}),
-					i(122341, {	-- Timeworn Heirloom Scabbard
-						["cost"] = BREWFEST_TOKEN_COST(500),
-						["timeline"] = { "added 6.1.0.19445" },
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(151615, {	-- Weathered Heirloom Scabbard
-						["timeline"] = { "added 7.2.5.24076" },
-						["cost"] = BREWFEST_TOKEN_COST(500),
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(32233, {	-- Wolpertinger's Tankard
-						["cost"] = BREWFEST_TOKEN_COST(200),
-						["timeline"] = { "added 2.2.2" },
-					}),
-				}),
-			}),
-			n(23605,  {	-- Bron <Sausage Vendor>
-				-- #if AFTER CATA
-				["coord"] = { 41.6, 17.8, DUROTAR },
-				-- #else
-				["coord"] = { 44.4, 16.6, DUROTAR },
-				-- #endif
-				["timeline"] = { "added 2.2.2" },
-				["maps"] = { DUROTAR },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(34063, {	-- Dried Sausage
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(138900, {	-- Gravil Goldbraid's Famous Sausage Hat (TOY!)
-						["timeline"] = { "added 7.0.3.22248" },
-						["cost"] = BREWFEST_TOKEN_COST(100),
-					}),
-					i(33024, {	-- Pickled Sausage
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(33023, {	-- Savory Sausage
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(33025, {	-- Spicy Smoked Sausage
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(34064, {	-- Succulent Sausage
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(33026, {	-- The Golden Link
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(138884, {	-- Throwing Sausage
-						["timeline"] = { "added 7.0.3.22248" },
-					}),
-				},
-			}),
-			n(24495,  {	-- Blix Fixwidget <Token Redeemer>
-				-- #if AFTER CATA
-				["coord"] = { 41.0, 17.0, DUROTAR },
-				-- #else
-				["coord"] = { 44.1, 18.0, DUROTAR },
-				-- #endif
-				["timeline"] = { "added 2.2.2" },
-				["maps"] = { DUROTAR },
-				["races"] = HORDE_ONLY,
-				-- #if ANYCLASSIC
-				["OnTooltip"] = BREWFEST_VENDOR_OnTooltip,
-				-- #endif
-				["groups"] = appendGroups(BREWFEST_REGALIA, {
-					i(37599, {	-- "Brew of the Month" Club Membership Form
-						["timeline"] = { "added 2.2.2" },
-						["cost"] = BREWFEST_TOKEN_COST(200),
-						["races"] = HORDE_ONLY,
-					}),
-					i(33978, {	-- "Honorary Brewer" Hand Stamp (Horde)
-						-- #if AFTER WRATH
-						["timeline"] = { "added 2.0.1", "removed 2.4.3" },
-						-- #else
-						["timeline"] = { "added 2.0.1", "removed 3.0.1" },	-- Originally removed 2.4.3, actually available in classic!
-						-- #endif
-						["cost"] = BREWFEST_TOKEN_COST(600),
-						["races"] = HORDE_ONLY,
-					}),
-					i(119209, {	-- Angry Brewfest Letter
-						["timeline"] = { "added 6.0.2.18816" },
-						["cost"] = BREWFEST_TOKEN_COST(50),
-					}),
-					i(34008, {	-- Blix's Eyesight Enhancing Romance Goggles
-						["collectible"] = false,	-- Needs marked because for some reason ATT thinks it is a collectible
-						["timeline"] = { "added 2.2.0.7272" },
-						["cost"] = BREWFEST_TOKEN_COST(100),
-					}),
-					i(169448, {	-- Bottomless Brewfest Stein
-						["timeline"] = { "added 8.0.1" },
-						["cost"] = BREWFEST_TOKEN_COST(10),
-					}),
-					i(116758, {	-- Brewfest Banner (TOY!)
-						["timeline"] = { "added 6.0.1.18594" },
-						["cost"] = BREWFEST_TOKEN_COST(100),
-					}),
-					i(71137, {	-- Brewfest Keg Pony (TOY!)
-						["timeline"] = { "added 4.2.0.14333" },
-						["cost"] = BREWFEST_TOKEN_COST(200),
-					}),
-					i(33927, {	-- Brewfest Pony Keg (TOY!)
-						["timeline"] = { "added 2.2.0.7272" },
-						["cost"] = BREWFEST_TOKEN_COST(100),
-					}),
-					i(166747, {	-- Brewfest Reveler's Hearthstone
-						["timeline"] = { "added 8.1.5.29701" },
-						["cost"] = BREWFEST_TOKEN_COST(200),
-					}),
-					i(90426, {	-- Brewhelm
-						["timeline"] = { "added 5.0.4.15913" },
-						["cost"] = BREWFEST_TOKEN_COST(2),
-					}),
-					i(37750, {	-- Fresh Brewfest Hops
-						["timeline"] = { "added 2.4.3.8601" },
-						["cost"] = BREWFEST_TOKEN_COST(2),
-					}),
-					i(39477, {	-- Fresh Dwarven Brewfest Hops
-						["timeline"] = { "added 2.4.3.8601" },
-						["cost"] = BREWFEST_TOKEN_COST(5),
-					}),
-					i(169461, {	-- Garland of Grain
-						["timeline"] = { "added 8.2.0.30918" },
-						["cost"] = BREWFEST_TOKEN_COST(150),
-					}),
-					i(90427, {	-- Pandaren Brewpack (TOY!)
-						["timeline"] = { "added 5.0.4.15913" },
-						["cost"] = BREWFEST_TOKEN_COST(100),
-					}),
-					i(46707, {	-- Pint-Sized Pink Pachyderm (PET!)
-						["timeline"] = { "added 3.2.0.10314" },
-						["cost"] = BREWFEST_TOKEN_COST(100),
-					}),
-					i(37816, {	-- Preserved Brewfest Hops
-						["timeline"] = { "added 2.4.3.8601" },
-						["cost"] = BREWFEST_TOKEN_COST(20),
-					}),
-					i(116757, {	-- Steamworks Sausage Grill (TOY!)
-						["timeline"] = { "added 6.0.1.18594" },
-						["cost"] = BREWFEST_TOKEN_COST(200),
-					}),
-					i(116756, {	-- Stout Alemental (PET!)
-						["timeline"] = { "added 6.0.1.18594" },
-						["cost"] = BREWFEST_TOKEN_COST(200),
-					}),
-					i(138730, {	-- Synthebrew Goggles XL
-						["timeline"] = { "added 7.0.3.22248" },
-						["collectible"] = false,
-						["cost"] = BREWFEST_TOKEN_COST(200),
-					}),
-					i(168915, {	-- Tabard of Brew
-						["timeline"] = { "added 8.2.0.30918" },
-						["cost"] = BREWFEST_TOKEN_COST(200),
-					}),
-					i(122341, {	-- Timeworn Heirloom Scabbard
-						["timeline"] = { "added 6.1.0.19445" },
-						["cost"] = BREWFEST_TOKEN_COST(500),
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(151615, {	-- Weathered Heirloom Scabbard
-						["timeline"] = { "added 7.2.5.24076" },
-						["cost"] = BREWFEST_TOKEN_COST(500),
-						["sym"] = { { "fill" } },	-- simply fill this item
-					}),
-					i(32233, {	-- Wolpertinger's Tankard
-						["cost"] = BREWFEST_TOKEN_COST(200),
-						["timeline"] = { "added 2.2.2" },
-					}),
-				}),
-			}),
-			n(153574, {	-- Britta Steinheart <Chowdown Organizer>
-				["coord"] = { 54.8, 38.6, DUN_MOROGH },
-				["timeline"] = { "added 8.2.0.30918" },
-				["maps"] = { DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(169865, {	-- Brewfest Chowdown Trophy
-						["cost"] = { { "i", 169599, 5 } },	-- 5x Chowdown Champion Token
-						["timeline"] = { "added 8.2.0.30918" },
-					}),
-				},
-			}),
-			n(24510, {	-- Driz Tumblequick <Ram Racing Apprentice>
-				["sourceQuest"] = 11419,	-- Brewfest Riding Rams (H)
-				["OnUpdate"] = BREWFEST_RIDING_RAMS_ONUPDATE,
-				["timeline"] = { "added 2.2.2" },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(33977, {	-- Swift Brewfest Ram
-						["timeline"] = { "added 2.0.1" },
-						["cost"] = { { "g", 1000000 } },	-- 100g
-					}),
-					i(33976, {	-- Brewfest Ram
-						["timeline"] = { "added 2.0.1", "removed 2.4.3" },
-						["cost"] = { { "g", 100000 } },	-- 10g
-					}),
-				},
-			}),
-			n(24501,  {	-- Drohn's Distillery Apprentice <Drohn's Distillery Brew Vendor>
-				-- #if AFTER CATA
-				["coord"] = { 40.4, 18.1, DUROTAR },
-				-- #else
-				["coord"] = { 44.3, 18.0, DUROTAR },
-				-- #endif
-				["timeline"] = { "added 2.2.2" },
-				["maps"] = { DUROTAR },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(34018, {	-- Long Stride Brew
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(138868, {	-- Mannoroth's Blood Red Ale
-						["timeline"] = { "added 7.0.3.22248" },
-					}),
-					i(34019, {	-- Path of Brew
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(46402, {	-- Promise of the Pandaren
-						["timeline"] = { "added 3.2.0.10314" },
-					}),
-					i(34017, {	-- Small Step Brew
-						["timeline"] = { "added 2.2.2" },
-					}),
-				},
-			}),
-			n(155133, {	-- Etga <Chowdown Organizer>
-				["coord"] = { 42.2, 18.5, DUROTAR },
-				["timeline"] = { "added 8.2.0.30918" },
-				["maps"] = { DUROTAR },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(169865, {	-- Brewfest Chowdown Trophy
-						["cost"] = { { "i", 169599, 5 } },	-- 5x Chowdown Champion Token
-						["timeline"] = { "added 8.2.0.30918" },
-					}),
-				},
-			}),
-			n(23511,  {	-- Gordok Brew Apprentice <Gordok Brew Vendor>
-				["coords"] = {
+			-- #if ANYCLASSIC
+			["OnTooltip"] = BREWFEST_VENDOR_OnTooltip,
+			-- #endif
+			["groups"] = {
+				n(23604,  {	-- Agnes Farwithers <Cheese Vendor>
 					-- #if AFTER CATA
-					{ 55.6, 36.6, DUN_MOROGH },
-					{ 40.9, 16.8, DUROTAR },
+					["coord"] = { 41.0, 18.3, DUROTAR },
 					-- #else
-					{ 48.4, 38.4, DUN_MOROGH },
-					{ 44.0, 16.6, DUROTAR },
+					["coord"] = { 43.9, 17.9, DUROTAR },
 					-- #endif
-				},
-				["timeline"] = { "added 2.2.2" },
-				["maps"] = {
-					DUN_MOROGH,
-					DUROTAR,
-				},
-				["groups"] = {
-					i(46403, {	-- Chuganpug's Delight
-						["timeline"] = { "added 3.2.0.10314" },
+					["timeline"] = { "added 2.2.2" },
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(34065, {	-- Spiced Onion Cheese
+							["timeline"] = { "added 2.2.2" },
+						}),
+					},
+				}),
+				n(23521,  {	-- Anne Summers <Cheese Vendor>
+					["coord"] = { 56.4, 37.6, DUN_MOROGH },
+					["timeline"] = { "added 2.2.2" },
+					["maps"] = { DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(34065, {	-- Spiced Onion Cheese
+							["timeline"] = { "added 2.2.2" },
+						}),
+					},
+				}),
+				n(23522,  {	-- Arlen Lochlan <Bread Vendor>
+					-- #if AFTER CATA
+					["coord"] = { 55.6, 38.0, DUN_MOROGH },
+					-- #else
+					["coord"] = { 48.5, 40.0, DUN_MOROGH },
+					-- #endif
+					["timeline"] = { "added 2.2.2" },
+					["maps"] = { DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(33043, {	-- The Essential Brewfest Pretzel
+							["timeline"] = { "added 2.2.2" },
+						}),
+					},
+				}),
+				n(23482,  {	-- Barleybrew Apprentice <Barleybrew Brew Vendor>
+					-- #if AFTER CATA
+					["coord"] = { 56.0, 38.0, DUN_MOROGH },
+					-- #else
+					["coord"] = { 48.9, 39.8, DUN_MOROGH },
+					-- #endif
+					["timeline"] = { "added 2.2.2" },
+					["maps"] = { DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(33030, {	-- Barleybrew Clear
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(33029, {	-- Barleybrew Dark
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(46400, {	-- Barleybrew Gold
+							["timeline"] = { "added 3.2.0.10314" },
+						}),
+						i(33028, {	-- Barleybrew Light
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(138867, {	-- Shimmer Stout
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
+				n(23710,  {	-- Belbi Quikswitch <Token Redeemer>
+					-- #if AFTER CATA
+					["coord"] = { 56.3, 37.5, DUN_MOROGH },
+					-- #else
+					["coord"] = { 49.3, 39.6, DUN_MOROGH },
+					-- #endif
+					["timeline"] = { "added 2.2.2" },
+					["maps"] = { DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = appendGroups(BREWFEST_REGALIA, {
+						i(37571, {	-- "Brew of the Month" Club Membership Form
+							["timeline"] = { "added 2.2.2" },
+							["cost"] = BREWFEST_TOKEN_COST(200),
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(34028, {	-- "Honorary Brewer" Hand Stamp (Alliance)
+							-- #if AFTER WRATH
+							["timeline"] = { "added 2.0.1", "removed 2.4.3" },
+							-- #else
+							["timeline"] = { "added 2.0.1", "removed 3.0.1" },	-- Originally removed 2.4.3, actually available in classic!
+							-- #endif
+							["cost"] = BREWFEST_TOKEN_COST(600),
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(119209, {	-- Angry Brewfest Letter
+							["timeline"] = { "added 6.0.2.18816" },
+							["cost"] = BREWFEST_TOKEN_COST(50),
+						}),
+						i(33047, {	-- Belbi's Eyesight Enhancing Romance Goggles
+							["collectible"] = false,	-- Needs marked because for some reason ATT thinks it is a collectible TODO: Look into this
+							["timeline"] = { "added 2.2.0.7272" },
+							["cost"] = BREWFEST_TOKEN_COST(100),
+						}),
+						i(169448, {	-- Bottomless Brewfest Stein
+							["timeline"] = { "added 8.0.1" },
+							["cost"] = BREWFEST_TOKEN_COST(10),
+						}),
+						i(116758, {	-- Brewfest Banner (TOY!)
+							["timeline"] = { "added 6.0.1.18594" },
+							["cost"] = BREWFEST_TOKEN_COST(100),
+						}),
+						i(71137, {	-- Brewfest Keg Pony (TOY!)
+							["timeline"] = { "added 4.2.0.14333" },
+							["cost"] = BREWFEST_TOKEN_COST(200),
+						}),
+						i(33927, {	-- Brewfest Pony Keg (TOY!)
+							["timeline"] = { "added 2.2.0.7272" },
+							["cost"] = BREWFEST_TOKEN_COST(100),
+						}),
+						i(166747, {	-- Brewfest Reveler's Hearthstone
+							["timeline"] = { "added 8.1.5.29701" },
+							["cost"] = BREWFEST_TOKEN_COST(200),
+						}),
+						i(90426, {	-- Brewhelm
+							["timeline"] = { "added 5.0.4.15913" },
+							["cost"] = BREWFEST_TOKEN_COST(2),
+						}),
+						i(37750, {	-- Fresh Brewfest Hops
+							["timeline"] = { "added 2.4.3.8601" },
+							["cost"] = BREWFEST_TOKEN_COST(2),
+						}),
+						i(39476, {	-- Fresh Goblin Brewfest Hops
+							["timeline"] = { "added 2.4.3.8601" },
+							["cost"] = BREWFEST_TOKEN_COST(5),
+						}),
+						i(169461, {	-- Garland of Grain
+							["timeline"] = { "added 8.2.0.30918" },
+							["cost"] = BREWFEST_TOKEN_COST(150),
+						}),
+						i(90427, {	-- Pandaren Brewpack (TOY!)
+							["timeline"] = { "added 5.0.4.15913" },
+							["cost"] = BREWFEST_TOKEN_COST(100),
+						}),
+						i(46707, {	-- Pint-Sized Pink Pachyderm (PET!)
+							["timeline"] = { "added 3.2.0.10314" },
+							["cost"] = BREWFEST_TOKEN_COST(100),
+						}),
+						i(37816, {	-- Preserved Brewfest Hops
+							["timeline"] = { "added 2.4.3.8601" },
+							["cost"] = BREWFEST_TOKEN_COST(20),
+						}),
+						i(116757, {	-- Steamworks Sausage Grill (TOY!)
+							["timeline"] = { "added 6.0.1.18594" },
+							["cost"] = BREWFEST_TOKEN_COST(200),
+						}),
+						i(116756, {	-- Stout Alemental (PET!)
+							["timeline"] = { "added 6.0.1.18594" },
+							["cost"] = BREWFEST_TOKEN_COST(200),
+						}),
+						i(138730, {	-- Synthebrew Goggles XL
+							["timeline"] = { "added 7.0.3.22248" },
+							["collectible"] = false,	-- TODO: Look into this
+							["cost"] = BREWFEST_TOKEN_COST(200),
+						}),
+						i(168915, {	-- Tabard of Brew
+							["timeline"] = { "added 8.2.0.30918" },
+							["cost"] = BREWFEST_TOKEN_COST(200),
+						}),
+						i(122341, {	-- Timeworn Heirloom Scabbard
+							["cost"] = BREWFEST_TOKEN_COST(500),
+							["timeline"] = { "added 6.1.0.19445" },
+							["sym"] = { { "fill" } },	-- simply fill this item
+						}),
+						i(151615, {	-- Weathered Heirloom Scabbard
+							["timeline"] = { "added 7.2.5.24076" },
+							["cost"] = BREWFEST_TOKEN_COST(500),
+							["sym"] = { { "fill" } },	-- simply fill this item
+						}),
+						i(32233, {	-- Wolpertinger's Tankard
+							["cost"] = BREWFEST_TOKEN_COST(200),
+							["timeline"] = { "added 2.2.2" },
+						}),
 					}),
-					i(138869, {	-- Gordok Bock
-						["timeline"] = { "added 7.0.3.22248" },
+				}),
+				n(23605,  {	-- Bron <Sausage Vendor>
+					-- #if AFTER CATA
+					["coord"] = { 41.6, 17.8, DUROTAR },
+					-- #else
+					["coord"] = { 44.4, 16.6, DUROTAR },
+					-- #endif
+					["timeline"] = { "added 2.2.2" },
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(34063, {	-- Dried Sausage
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(138900, {	-- Gravil Goldbraid's Famous Sausage Hat (TOY!)
+							["timeline"] = { "added 7.0.3.22248" },
+							["cost"] = BREWFEST_TOKEN_COST(100),
+						}),
+						i(33024, {	-- Pickled Sausage
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(33023, {	-- Savory Sausage
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(33025, {	-- Spicy Smoked Sausage
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(34064, {	-- Succulent Sausage
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(33026, {	-- The Golden Link
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(138884, {	-- Throwing Sausage
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
+				n(24495,  {	-- Blix Fixwidget <Token Redeemer>
+					-- #if AFTER CATA
+					["coord"] = { 41.0, 17.0, DUROTAR },
+					-- #else
+					["coord"] = { 44.1, 18.0, DUROTAR },
+					-- #endif
+					["timeline"] = { "added 2.2.2" },
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = appendGroups(BREWFEST_REGALIA, {
+						i(37599, {	-- "Brew of the Month" Club Membership Form
+							["timeline"] = { "added 2.2.2" },
+							["cost"] = BREWFEST_TOKEN_COST(200),
+							["races"] = HORDE_ONLY,
+						}),
+						i(33978, {	-- "Honorary Brewer" Hand Stamp (Horde)
+							-- #if AFTER WRATH
+							["timeline"] = { "added 2.0.1", "removed 2.4.3" },
+							-- #else
+							["timeline"] = { "added 2.0.1", "removed 3.0.1" },	-- Originally removed 2.4.3, actually available in classic!
+							-- #endif
+							["cost"] = BREWFEST_TOKEN_COST(600),
+							["races"] = HORDE_ONLY,
+						}),
+						i(119209, {	-- Angry Brewfest Letter
+							["timeline"] = { "added 6.0.2.18816" },
+							["cost"] = BREWFEST_TOKEN_COST(50),
+						}),
+						i(34008, {	-- Blix's Eyesight Enhancing Romance Goggles
+							["collectible"] = false,	-- Needs marked because for some reason ATT thinks it is a collectible
+							["timeline"] = { "added 2.2.0.7272" },
+							["cost"] = BREWFEST_TOKEN_COST(100),
+						}),
+						i(169448, {	-- Bottomless Brewfest Stein
+							["timeline"] = { "added 8.0.1" },
+							["cost"] = BREWFEST_TOKEN_COST(10),
+						}),
+						i(116758, {	-- Brewfest Banner (TOY!)
+							["timeline"] = { "added 6.0.1.18594" },
+							["cost"] = BREWFEST_TOKEN_COST(100),
+						}),
+						i(71137, {	-- Brewfest Keg Pony (TOY!)
+							["timeline"] = { "added 4.2.0.14333" },
+							["cost"] = BREWFEST_TOKEN_COST(200),
+						}),
+						i(33927, {	-- Brewfest Pony Keg (TOY!)
+							["timeline"] = { "added 2.2.0.7272" },
+							["cost"] = BREWFEST_TOKEN_COST(100),
+						}),
+						i(166747, {	-- Brewfest Reveler's Hearthstone
+							["timeline"] = { "added 8.1.5.29701" },
+							["cost"] = BREWFEST_TOKEN_COST(200),
+						}),
+						i(90426, {	-- Brewhelm
+							["timeline"] = { "added 5.0.4.15913" },
+							["cost"] = BREWFEST_TOKEN_COST(2),
+						}),
+						i(37750, {	-- Fresh Brewfest Hops
+							["timeline"] = { "added 2.4.3.8601" },
+							["cost"] = BREWFEST_TOKEN_COST(2),
+						}),
+						i(39477, {	-- Fresh Dwarven Brewfest Hops
+							["timeline"] = { "added 2.4.3.8601" },
+							["cost"] = BREWFEST_TOKEN_COST(5),
+						}),
+						i(169461, {	-- Garland of Grain
+							["timeline"] = { "added 8.2.0.30918" },
+							["cost"] = BREWFEST_TOKEN_COST(150),
+						}),
+						i(90427, {	-- Pandaren Brewpack (TOY!)
+							["timeline"] = { "added 5.0.4.15913" },
+							["cost"] = BREWFEST_TOKEN_COST(100),
+						}),
+						i(46707, {	-- Pint-Sized Pink Pachyderm (PET!)
+							["timeline"] = { "added 3.2.0.10314" },
+							["cost"] = BREWFEST_TOKEN_COST(100),
+						}),
+						i(37816, {	-- Preserved Brewfest Hops
+							["timeline"] = { "added 2.4.3.8601" },
+							["cost"] = BREWFEST_TOKEN_COST(20),
+						}),
+						i(116757, {	-- Steamworks Sausage Grill (TOY!)
+							["timeline"] = { "added 6.0.1.18594" },
+							["cost"] = BREWFEST_TOKEN_COST(200),
+						}),
+						i(116756, {	-- Stout Alemental (PET!)
+							["timeline"] = { "added 6.0.1.18594" },
+							["cost"] = BREWFEST_TOKEN_COST(200),
+						}),
+						i(138730, {	-- Synthebrew Goggles XL
+							["timeline"] = { "added 7.0.3.22248" },
+							["collectible"] = false,
+							["cost"] = BREWFEST_TOKEN_COST(200),
+						}),
+						i(168915, {	-- Tabard of Brew
+							["timeline"] = { "added 8.2.0.30918" },
+							["cost"] = BREWFEST_TOKEN_COST(200),
+						}),
+						i(122341, {	-- Timeworn Heirloom Scabbard
+							["timeline"] = { "added 6.1.0.19445" },
+							["cost"] = BREWFEST_TOKEN_COST(500),
+							["sym"] = { { "fill" } },	-- simply fill this item
+						}),
+						i(151615, {	-- Weathered Heirloom Scabbard
+							["timeline"] = { "added 7.2.5.24076" },
+							["cost"] = BREWFEST_TOKEN_COST(500),
+							["sym"] = { { "fill" } },	-- simply fill this item
+						}),
+						i(32233, {	-- Wolpertinger's Tankard
+							["cost"] = BREWFEST_TOKEN_COST(200),
+							["timeline"] = { "added 2.2.2" },
+						}),
 					}),
-					i(33034, {	-- Gordok Grog
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(33036, {	-- Mudder's Milk
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(33035, {	-- Ogre Mead
-						["timeline"] = { "added 2.2.2" },
-					}),
-				},
-			}),
-			n(23481,  {	-- Keiran Donoghue <Sausage Vendor>
-				-- #if AFTER CATA
-				["coord"] = { 55.33, 37.17, DUN_MOROGH },
-				-- #else
-				["coord"] = { 48.9, 38.1, DUN_MOROGH },
-				-- #endif
-				["timeline"] = { "added 2.2.2" },
-				["maps"] = { DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(34063, {	-- Dried Sausage
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(138900, {	-- Gravil Goldbraid's Famous Sausage Hat (TOY!)
-						["timeline"] = { "added 7.0.3.22248" },
-						["cost"] = BREWFEST_TOKEN_COST(100),
-					}),
-					i(33024, {	-- Pickled Sausage
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(33023, {	-- Savory Sausage
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(33025, {	-- Spicy Smoked Sausage
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(34064, {	-- Succulent Sausage
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(33026, {	-- The Golden Link
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(138884, {	-- Throwing Sausage
-						["timeline"] = { "added 7.0.3.22248" },
-					}),
-				},
-			}),
-			n(24468, {	-- Pol Amberstill <Ram Racing Apprentice>
-				["sourceQuest"] = 11400,	-- Brewfest Riding Rams (A)
-				["OnUpdate"] = BREWFEST_RIDING_RAMS_ONUPDATE,
-				["timeline"] = { "added 2.2.2" },
-				-- #if AFTER CATA
-				["coord"] = { 53.6, 38.6, DUN_MOROGH },
-				-- #else
-				["coord"] = { 46.4, 40.3, DUN_MOROGH },
-				-- #endif
-				["maps"] = { DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(33977, {	-- Swift Brewfest Ram
-						["timeline"] = { "added 2.0.1" },
-						["cost"] = { { "g", 1000000 } },	-- 100g
-					}),
-					i(33976, {	-- Brewfest Ram
-						["timeline"] = { "added 2.0.1", "removed 2.4.3" },
-						["cost"] = { { "g", 100000 } },	-- 10g
-					}),
-				},
-			}),
-			n(23533,  {	-- T'chali's Voodoo Brewery Apprentice <Voodoo Brew Vendor>
-				["coord"] = { 40.3, 16.9, DUROTAR },
-				["timeline"] = { "added 2.2.2" },
-				["maps"] = { DUROTAR },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(34021, {	-- Brewdoo Magic
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(46401, {	-- Crimson Stripe
-						["timeline"] = { "added 3.2.0.10314" },
-					}),
-					i(34020, {	-- Jungle River Water
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(138870, {	-- Spirit Spirits
-						["timeline"] = { "added 7.0.3.22248" },
-					}),
-					i(34022, {	-- Stout Shrunken Head
-						["timeline"] = { "added 2.2.2" },
-					}),
-				},
-			}),
-			n(23510,  {	-- Thunderbrew Apprentice <Thunderbrew Brew Vendor>
-				["coord"] = { 56.6, 37.0, DUN_MOROGH },
-				["timeline"] = { "added 2.2.2" },
-				["maps"] = { DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					i(138871, {	-- Storming Saison
-						["timeline"] = { "added 7.0.3.22248" },
-					}),
-					i(33031, {	-- Thunder 45
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(46399, {	-- Thunder's Plunder
-						["timeline"] = { "added 3.2.0.10314" },
-					}),
-					i(33032, {	-- Thunderbrew Ale
-						["timeline"] = { "added 2.2.2" },
-					}),
-					i(33033, {	-- Thunderbrew Stout
-						["timeline"] = { "added 2.2.2" },
-					}),
-				},
-			}),
-			n(23603,  {	-- Uta Roughdough <Bread Vendor>
-				-- #if AFTER CATA
-				["coord"] = { 41.6, 17.8, DUROTAR },
-				-- #else
-				["coord"] = { 44.8, 17.5, DUROTAR },
-				-- #endif
-				["timeline"] = { "added 2.2.2" },
-				["maps"] = { DUROTAR },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(33043, {	-- The Essential Brewfest Pretzel
-						["timeline"] = { "added 2.2.2" },
-					}),
-				},
-			}),
+				}),
+				n(153574, {	-- Britta Steinheart <Chowdown Organizer>
+					["coord"] = { 54.8, 38.6, DUN_MOROGH },
+					["timeline"] = { "added 8.2.0.30918" },
+					["maps"] = { DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(169865, {	-- Brewfest Chowdown Trophy
+							["cost"] = { { "i", 169599, 5 } },	-- 5x Chowdown Champion Token
+							["timeline"] = { "added 8.2.0.30918" },
+						}),
+					},
+				}),
+				n(24510, {	-- Driz Tumblequick <Ram Racing Apprentice>
+					["sourceQuest"] = 11419,	-- Brewfest Riding Rams (H)
+					["OnUpdate"] = BREWFEST_RIDING_RAMS_ONUPDATE,
+					["timeline"] = { "added 2.2.2" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(33977, {	-- Swift Brewfest Ram
+							["timeline"] = { "added 2.0.1" },
+							["cost"] = { { "g", 1000000 } },	-- 100g
+						}),
+						i(33976, {	-- Brewfest Ram
+							["timeline"] = { "added 2.0.1", "removed 2.4.3" },
+							["cost"] = { { "g", 100000 } },	-- 10g
+						}),
+					},
+				}),
+				n(24501,  {	-- Drohn's Distillery Apprentice <Drohn's Distillery Brew Vendor>
+					-- #if AFTER CATA
+					["coord"] = { 40.4, 18.1, DUROTAR },
+					-- #else
+					["coord"] = { 44.3, 18.0, DUROTAR },
+					-- #endif
+					["timeline"] = { "added 2.2.2" },
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(34018, {	-- Long Stride Brew
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(138868, {	-- Mannoroth's Blood Red Ale
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(34019, {	-- Path of Brew
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(46402, {	-- Promise of the Pandaren
+							["timeline"] = { "added 3.2.0.10314" },
+						}),
+						i(34017, {	-- Small Step Brew
+							["timeline"] = { "added 2.2.2" },
+						}),
+					},
+				}),
+				n(155133, {	-- Etga <Chowdown Organizer>
+					["coord"] = { 42.2, 18.5, DUROTAR },
+					["timeline"] = { "added 8.2.0.30918" },
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(169865, {	-- Brewfest Chowdown Trophy
+							["cost"] = { { "i", 169599, 5 } },	-- 5x Chowdown Champion Token
+							["timeline"] = { "added 8.2.0.30918" },
+						}),
+					},
+				}),
+				n(23511,  {	-- Gordok Brew Apprentice <Gordok Brew Vendor>
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.6, 36.6, DUN_MOROGH },
+						{ 40.9, 16.8, DUROTAR },
+						-- #else
+						{ 48.4, 38.4, DUN_MOROGH },
+						{ 44.0, 16.6, DUROTAR },
+						-- #endif
+					},
+					["timeline"] = { "added 2.2.2" },
+					["maps"] = {
+						DUN_MOROGH,
+						DUROTAR,
+					},
+					["groups"] = {
+						i(46403, {	-- Chuganpug's Delight
+							["timeline"] = { "added 3.2.0.10314" },
+						}),
+						i(138869, {	-- Gordok Bock
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(33034, {	-- Gordok Grog
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(33036, {	-- Mudder's Milk
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(33035, {	-- Ogre Mead
+							["timeline"] = { "added 2.2.2" },
+						}),
+					},
+				}),
+				n(23481,  {	-- Keiran Donoghue <Sausage Vendor>
+					-- #if AFTER CATA
+					["coord"] = { 55.33, 37.17, DUN_MOROGH },
+					-- #else
+					["coord"] = { 48.9, 38.1, DUN_MOROGH },
+					-- #endif
+					["timeline"] = { "added 2.2.2" },
+					["maps"] = { DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(34063, {	-- Dried Sausage
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(138900, {	-- Gravil Goldbraid's Famous Sausage Hat (TOY!)
+							["timeline"] = { "added 7.0.3.22248" },
+							["cost"] = BREWFEST_TOKEN_COST(100),
+						}),
+						i(33024, {	-- Pickled Sausage
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(33023, {	-- Savory Sausage
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(33025, {	-- Spicy Smoked Sausage
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(34064, {	-- Succulent Sausage
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(33026, {	-- The Golden Link
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(138884, {	-- Throwing Sausage
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
+				n(24468, {	-- Pol Amberstill <Ram Racing Apprentice>
+					["sourceQuest"] = 11400,	-- Brewfest Riding Rams (A)
+					["OnUpdate"] = BREWFEST_RIDING_RAMS_ONUPDATE,
+					["timeline"] = { "added 2.2.2" },
+					-- #if AFTER CATA
+					["coord"] = { 53.6, 38.6, DUN_MOROGH },
+					-- #else
+					["coord"] = { 46.4, 40.3, DUN_MOROGH },
+					-- #endif
+					["maps"] = { DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(33977, {	-- Swift Brewfest Ram
+							["timeline"] = { "added 2.0.1" },
+							["cost"] = { { "g", 1000000 } },	-- 100g
+						}),
+						i(33976, {	-- Brewfest Ram
+							["timeline"] = { "added 2.0.1", "removed 2.4.3" },
+							["cost"] = { { "g", 100000 } },	-- 10g
+						}),
+					},
+				}),
+				n(23533,  {	-- T'chali's Voodoo Brewery Apprentice <Voodoo Brew Vendor>
+					["coord"] = { 40.3, 16.9, DUROTAR },
+					["timeline"] = { "added 2.2.2" },
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(34021, {	-- Brewdoo Magic
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(46401, {	-- Crimson Stripe
+							["timeline"] = { "added 3.2.0.10314" },
+						}),
+						i(34020, {	-- Jungle River Water
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(138870, {	-- Spirit Spirits
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(34022, {	-- Stout Shrunken Head
+							["timeline"] = { "added 2.2.2" },
+						}),
+					},
+				}),
+				n(23510,  {	-- Thunderbrew Apprentice <Thunderbrew Brew Vendor>
+					["coord"] = { 56.6, 37.0, DUN_MOROGH },
+					["timeline"] = { "added 2.2.2" },
+					["maps"] = { DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(138871, {	-- Storming Saison
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(33031, {	-- Thunder 45
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(46399, {	-- Thunder's Plunder
+							["timeline"] = { "added 3.2.0.10314" },
+						}),
+						i(33032, {	-- Thunderbrew Ale
+							["timeline"] = { "added 2.2.2" },
+						}),
+						i(33033, {	-- Thunderbrew Stout
+							["timeline"] = { "added 2.2.2" },
+						}),
+					},
+				}),
+				n(23603,  {	-- Uta Roughdough <Bread Vendor>
+					-- #if AFTER CATA
+					["coord"] = { 41.6, 17.8, DUROTAR },
+					-- #else
+					["coord"] = { 44.8, 17.5, DUROTAR },
+					-- #endif
+					["timeline"] = { "added 2.2.2" },
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(33043, {	-- The Essential Brewfest Pretzel
+							["timeline"] = { "added 2.2.2" },
+						}),
+					},
+				}),
+			},
 		}),
 	},
 })};
 
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	holiday(235442, {	-- Brewfest
+_.NeverImplemented = { bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	-- #if ANYCLASSIC
+	["npcID"] = -56,
+	-- #else
+	["holidayID"] = 235442,
+	-- #endif
+	["groups"] = {
+		i(37827, { -- Brewfest Kodo
+			["timeline"] = { "created 2.0.1" },
+		}),
 		i(167998, {	-- Dark Iron Tankard
 			["timeline"] = { "created 8.1.5.29701" },
 		}),
-	}),
-});
+	},
+})};
 
 --[[ TODO: Transfer these achievement criteria to the item on the actual vendor
 -- Alliance
