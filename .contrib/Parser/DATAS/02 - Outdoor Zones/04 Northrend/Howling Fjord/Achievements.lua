@@ -9,7 +9,7 @@ _.Zones =
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["g"] = {
 						crit(3, {	-- Beegle Blastfuse
 							["coord"] = { 28.6, 33.8, 117 },
@@ -66,7 +66,7 @@ _.Zones =
 								11348,	-- The Rune of Command
 							},
 						}),
-						crit(12, {	--Alpha Worg
+						crit(12, {	-- Alpha Worg
 							["sourceQuest"] = 11326,	-- Alpha Worg
 						}),
 					},

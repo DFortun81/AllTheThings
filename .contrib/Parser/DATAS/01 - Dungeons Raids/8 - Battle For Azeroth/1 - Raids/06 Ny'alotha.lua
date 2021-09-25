@@ -2,14 +2,13 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(8, {	-- Battle for Azeroth
-	inst(1180, { 	-- Ny'alotha
+_.Instances = { tier(BFA_TIER, {
+	inst(1180, {	-- Ny'alotha
 		["coords"] = {
 			{ 55.1, 43.8, 1527 },	-- Uldum
 			{ 41.6, 45.5, 1530 },	-- Vale of Eternal Blossoms
 		},
 		["isRaid"] = true,
-		["order"] = "06",
 		["lvl"] = { 50 },
 		["maps"] = {
 			1580,	-- Vision of Destiny
@@ -52,7 +51,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 3)
 			}),
 			d(17, {	-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
 						["f"] = 6,	-- Mail
 					}),
@@ -304,7 +303,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						},
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
 						["f"] = 6,	-- Mail
 					}),
@@ -537,7 +536,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						},
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
 						["f"] = 6,	-- Mail
 					}),
@@ -738,12 +737,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 158041 },
 					["g"] = {
 						un(REMOVED_FROM_GAME, ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
-							q(58876, {	-- Lost Flight
-								["provider"] = { "i", 174863 },	-- Spawn of Vexiona
-								["g"] = {
-									i(174862),	-- Uncorrupted Voidwing
-								},
-							}),
+							un(REMOVED_FROM_GAME, i(174863)),	-- Spawn of Vexiona
 						})),
 						ach(14148),	-- Peer Pressure
 						i(175062),	-- Malefic Core
@@ -778,7 +772,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						},
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
 						["f"] = 6,	-- Mail
 					}),
@@ -990,12 +984,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 158041 },
 					["g"] = {
 						un(REMOVED_FROM_GAME, ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
-							q(58876, {	-- Lost Flight
-								["provider"] = { "i", 174863 },	-- Spawn of Vexiona
-								["g"] = {
-									i(174862),	-- Uncorrupted Voidwing
-								},
-							}),
+							un(REMOVED_FROM_GAME, i(174863)),	-- Spawn of Vexiona
 						})),
 						un(REMOVED_FROM_GAME, ach(14069)),	-- Cutting Edge: N'Zoth, the Corruptor
 						un(REMOVED_FROM_GAME, ach(14055, {	-- Mythic: N'Zoth, the Corruptor

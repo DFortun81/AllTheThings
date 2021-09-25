@@ -1,5 +1,6 @@
 ﻿using NLua;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -22,12 +23,12 @@ namespace ATT
             /// <summary>
             /// A list of fields that have already warned the programmer.
             /// </summary>
-            private static IDictionary<string, bool> WARNED_FIELDS = new Dictionary<string, bool>();
+            private static IDictionary<string, bool> WARNED_FIELDS = new ConcurrentDictionary<string, bool>();
 
             /// <summary>
             /// All of the containers that are in the database.
             /// </summary>
-            public static IDictionary<string, List<object>> AllContainers { get; } = new Dictionary<string, List<object>>();
+            public static IDictionary<string, List<object>> AllContainers { get; } = new ConcurrentDictionary<string, List<object>>();
 
             /// <summary>
             /// Get a container by its name.
@@ -60,6 +61,11 @@ namespace ATT
             /// All of the Recipes (Name,RecipeID) that are in the database, keyed by required skill
             /// </summary>
             public static IDictionary<object, List<Tuple<string, long>>> AllRecipes { get; } = new Dictionary<object, List<Tuple<string, long>>>();
+
+            /// <summary>
+            /// All of the SourceID's harvested for Legion Artifacts
+            /// </summary>
+            public static IDictionary<long, Dictionary<string, long>> ArtifactSources { get; } = new Dictionary<long, Dictionary<string, long>>();
 
             /// <summary>
             /// Whether the Parser is processing Source data as added by contributors (rather than an automated JSON DB)
@@ -357,7 +363,7 @@ namespace ATT
                             case 00:
                                 switch (inventoryType)
                                 {
-                                    case 00: return Filters.Miscellaneous;      // Miscellaneous
+                                    case 00: return Filters.Ignored;            // Ignored
                                     case 01: return Filters.Cosmetic;           // Head (no armor type specified - Cosmetic?)
                                     case 03: return Filters.Cosmetic;           // Shoulder (no armor type specified - Cosmetic?)
                                     case 05: return Filters.Cosmetic;           // Shirt (no armor type specified - Cosmetic?)
@@ -457,7 +463,7 @@ namespace ATT
                 foreach (Tuple<string, long> recipeInfo in skillRecipes)
                 {
                     // perfect recipe - item match!
-                    if (recipeItemName.Contains(recipeInfo.Item1))
+                    if (recipeItemName.Contains(": " + recipeInfo.Item1))
                     {
                         recipeID = recipeInfo.Item2;
                         return true;
@@ -529,6 +535,12 @@ namespace ATT
                 {978, 185},     // Way of the Steamer
                 {979, 185},     // Way of the Oven
                 {980, 185},     // Way of the Brew
+                {124694, 185},     // Way of the Grill
+                {125584, 185},     // Way of the Wok
+                {125586, 185},     // Way of the Pot
+                {125587, 185},     // Way of the Steamer
+                {125588, 185},     // Way of the Oven
+                {125589, 185},     // Way of the Brew
                 {2548, 185},	// Classic Cooking [8.0.1]
                 {2547, 185},	// Outland Cooking [8.0.1]
                 {2546, 185},	// Northrend Cooking [8.0.1]
@@ -660,6 +672,9 @@ namespace ATT
 
                 // Tailoring Skills
                 {197, 197},	    // Tailoring [7.3.5]
+                {26801, 26801},  // Shadoweave Tailoring
+                {26797, 26797},  // Spellfire Tailoring
+                {26798, 26798},  // Mooncloth Tailoring
                 {2540, 197},	// Classic Tailoring [8.0.1]
                 {2539, 197},	// Outland Tailoring [8.0.1]
                 {2538, 197},	// Northrend Tailoring [8.0.1]
@@ -708,93 +723,22 @@ namespace ATT
                 // Calculate the faction ID. (0 is no faction)
                 if (data.TryGetValue("races", out object racesRef) && racesRef is List<object> races)
                 {
-                    var allRaces = new List<object>(races);
-                    var allianceDictionary = new Dictionary<object, bool>(ALLIANCE_ONLY_DICT);
-                    var allianceRaces = new List<object>();
-                    foreach (var raceID in races)
+                    // No races?
+                    if (!races.Any())
                     {
-                        if (allianceDictionary.Remove(raceID))
-                        {
-                            allRaces.Remove(raceID);
-                            allianceRaces.Add(raceID);
-                        }
+                        throw new InvalidDataException("Invalid 'races' value in data:" + Environment.NewLine + MiniJSON.Json.Serialize(data));
                     }
-
-                    var hordeDictionary = new Dictionary<object, bool>(HORDE_ONLY_DICT);
-                    var hordeRaces = new List<object>();
-                    foreach (var raceID in races)
+                    // Alliance Only?
+                    else if (ALLIANCE_ONLY.Matches(races))
                     {
-                        if (hordeDictionary.Remove(raceID))
-                        {
-                            allRaces.Remove(raceID);
-                            hordeRaces.Add(raceID);
-                        }
+                        data["r"] = 2;  // Alliance Only!
+                        data.Remove("races");   // We do not need to include races for this as it is ALLIANCE_ONLY.
                     }
-
-                    // Calculate the faction.
-                    var allCount = allRaces.Count;
-                    if (allRaces.Count == 0)
+                    // Horde Only?
+                    else if (HORDE_ONLY.Matches(races))
                     {
-                        // If there are no neutral races in this list, good. We need to do the thing.
-                        var allianceCount = allianceRaces.Count;
-                        var hordeCount = hordeRaces.Count;
-                        if (allianceCount == 0)
-                        {
-                            // If there are no alliance races, that means this might be a horde only item.
-                            if (hordeCount == 0)
-                            {
-                                // Uh, or not. I don't have a clue!
-                            }
-                            else
-                            {
-                                var leftovers = hordeDictionary.Count;
-                                if (leftovers == 0)
-                                {
-                                    // This is all horde races, cool. Let's clean this up!
-                                    data["r"] = 1;  // Horde Only!
-                                    data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
-                                }
-                                else
-                                {
-                                    // Nah man, we need to list them all. Damnit!
-                                    //Trace.WriteLine("There was a leftover race?!");
-                                }
-                            }
-                        }
-                        else
-                        {
-                            var leftovers = allianceDictionary.Count;
-                            if (leftovers == 0)
-                            {
-                                // This is all alliance races, cool. Let's clean this up!
-                                data["r"] = 2;  // Alliance Only!
-                                data.Remove("races");   // We do not need to include races for this as it is ALLIANCE_ONLY.
-                            }
-                            else if (hordeCount == 0)
-                            {
-                                // If there are no horde or alliance races, do nothing.
-                            }
-                            else
-                            {
-                                leftovers = hordeDictionary.Count;
-                                if (leftovers == 0)
-                                {
-                                    // This is all horde races, cool. Let's clean this up!
-                                    data["r"] = 1;  // Horde Only!
-                                    data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
-                                }
-                                else
-                                {
-                                    // Nah man, we need to list them all. Damnit!
-                                    //Trace.WriteLine("There was a leftover race?!");
-                                }
-                            }
-                        }
-                    }
-                    else
-                    {
-                        // Nah man, we need to list them all. Damnit!
-                        //Trace.WriteLine("There was a leftover race?!");
+                        data["r"] = 1;  // Horde Only!
+                        data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
                     }
                 }
             }
@@ -811,9 +755,9 @@ namespace ATT
                 {
                     if (entry is Dictionary<string, object> o)
                     {
-                        if (o.TryGetValue("itemID", out long itemID))
+                        if (o.ContainsKey("itemID"))
                         {
-                            var itemData = Items.GetNull(itemID);
+                            var itemData = Items.GetNull(o);
                             if (itemData != null && itemData.TryGetValue("name", out object nameRef)) o["name"] = nameRef;
                             result.Add(o);
                         }
@@ -971,69 +915,6 @@ namespace ATT
                         }
                     }
                 }
-
-                // Lazily do the same thing, but for Objects.
-                content = File.ReadAllText("./../../locales/enUS.lua");
-                content = content.Substring(content.IndexOf("{", content.IndexOf("[\"OBJECT_ID_NAMES\"]")));
-                content = content.Substring(0, content.IndexOf('}'));
-
-                // Scan through for Header Localization. (we don't care about the actual name)
-                long objectID;
-                index = 0;
-                var allLocalizedObjects = new Dictionary<long, string>();
-                while ((index = content.IndexOf('[', index)) > -1)
-                {
-                    ++index;
-                    int endIndex = content.IndexOf(']', index);
-                    if (endIndex > -1 && long.TryParse(content.Substring(index, endIndex - index), out objectID))
-                    {
-                        int dataStartIndex = content.IndexOf('=', endIndex) + 1;
-                        int dataEndIndex = content.IndexOfAny(new char[] { '\r', '\n' }, dataStartIndex);
-                        allLocalizedObjects[objectID] = content.Substring(dataStartIndex, dataEndIndex - dataStartIndex).Trim();
-                    }
-                }
-
-                // Determine if any of the localized objects have no references.
-                if (allLocalizedObjects.Any())
-                {
-                    var sortedObjectIDs = allLocalizedObjects.Keys.ToList();
-                    sortedObjectIDs.Sort();
-                    sortedObjectIDs.Reverse();
-                    foreach (int sortedObjectID in sortedObjectIDs)
-                    {
-                        if (OBJECTS_WITH_REFERENCES.ContainsKey(sortedObjectID)) continue;
-                        Trace.Write("Object [");
-                        Trace.Write(sortedObjectID);
-                        Trace.WriteLine("] has no reference and should be removed.");
-                    }
-
-                    var missingLocalization = new List<long>();
-                    foreach (var pair in OBJECTS_WITH_REFERENCES)
-                    {
-                        if (allLocalizedObjects.ContainsKey(pair.Key)) continue;
-                        missingLocalization.Add(pair.Key);
-                    }
-                    if (missingLocalization.Any())
-                    {
-                        Trace.WriteLine("Missing Localization for Objects:");
-                        missingLocalization.Sort();
-                        foreach (int id in missingLocalization)
-                        {
-                            allLocalizedObjects[id] = "\"\",";
-                            Trace.Write(id);
-                            Trace.Write(',');
-                        }
-
-                        var allLocalizationIDs = allLocalizedObjects.Keys.ToList();
-                        allLocalizationIDs.Sort();
-                        var builder = new StringBuilder();
-                        foreach (var id in allLocalizationIDs)
-                        {
-                            builder.Append("\t\t[").Append(id).Append("] = ").Append(allLocalizedObjects[id]).AppendLine();
-                        }
-                        File.WriteAllText("localizedObjects.txt", builder.ToString());
-                    }
-                }
             }
 
             /// <summary>
@@ -1042,9 +923,12 @@ namespace ATT
             /// <param name="directory">The directory to file the debug files to.</param>
             public static void Export(string directory)
             {
-                var AllContainerClones = new Dictionary<string, List<object>>(AllContainers);
+                var AllContainerClones = new SortedDictionary<string, List<object>>(AllContainers);
                 AllContainerClones.Remove("Uncollectable");
-                File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString());
+
+                var filename = Path.Combine(directory, "Categories.lua");
+                var content = ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString().Replace("\r\n", "\n").Trim();
+                if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
             }
             #endregion
             #region Export DB
@@ -1129,6 +1013,7 @@ namespace ATT
                     switch (pair.Key)
                     {
                         case "description":
+                        case "lore":
                         //case "lvl":
                         case "races":
                         case "classes":
@@ -1220,6 +1105,7 @@ namespace ATT
                         case "isYearly":
                         case "isWorldQuest":
                         case "repeatable":
+                        case "pvp":
                         case "factionID":
                         case "requireSkill":
                         case "followerID":
@@ -1268,6 +1154,7 @@ namespace ATT
                         case "collectible":
                         case "hideText":
                         case "description":
+                        case "lore":
                             //case "lvl":
                             // Ignore these!
                             break;
@@ -1291,6 +1178,7 @@ namespace ATT
             {
                 // Convert the data to a list of generic objects.
                 var newList = ConvertToList(item, field, value);
+                if (newList == null) return;
 
                 // Attempt to get the old list data.
                 List<object> oldList;
@@ -1348,16 +1236,33 @@ namespace ATT
                 else
                 {
                     // Merge the new list of data into the old data and ensure there are no duplicate values.
-                    foreach (var entry in newList)
+                    try
                     {
-                        var index = Convert.ToInt64(entry);
-                        if (oldList.Contains(index)) continue;
-                        oldList.Add(index);
+                        foreach (var entry in newList)
+                        {
+                            var index = Convert.ToInt64(entry);
+                            if (oldList.Contains(index)) continue;
+                            oldList.Add(index);
+                        }
+                    }
+                    catch(Exception e)
+                    {
+                        Trace.WriteLine("WHAT IS THIS");
+                        Trace.WriteLine(field);
+                        Trace.WriteLine(MiniJSON.Json.Serialize(newList));
+                        Console.ReadLine();
+                        throw e;
                     }
                 }
 
                 // Sort the old list to ensure that the order is consistent.
                 oldList.Sort();
+
+                if (oldList.Count == 0)
+                {
+                    Trace.WriteLine("int-array field: '" + field + "' contained no data after merge.");
+                    Trace.WriteLine(MiniJSON.Json.Serialize(item));
+                }
             }
 
             /// <summary>
@@ -1370,6 +1275,7 @@ namespace ATT
             {
                 // Convert the data to a list of generic objects.
                 var newList = ConvertToList(item, field, value);
+                if (newList == null) return;
 
                 // Attempt to get the old list data.
                 List<object> oldList;
@@ -1388,8 +1294,20 @@ namespace ATT
                 foreach (var entry in newList)
                 {
                     var index = Convert.ToString(entry);
+                    if (field == "timeline")
+                    {
+                        // Verify the timeline data is parsable since it's 'just a string' ... could be anything!
+                        if (!System.Text.RegularExpressions.Regex.IsMatch(index, "^(created|added|deleted|removed|blackmarket|timewalking) [0-9][\\.0-9]+$"))
+                            throw new InvalidDataException("Invalid 'timeline' value: " + index);
+                    }
                     if (oldList.Contains(index)) continue;
                     oldList.Add(index);
+                }
+
+                if (oldList.Count == 0)
+                {
+                    Trace.WriteLine("string-array field: '" + field + "' contained no data after merge.");
+                    Trace.WriteLine(MiniJSON.Json.Serialize(item));
                 }
             }
 
@@ -1426,10 +1344,6 @@ namespace ATT
                             {
                                 Merge(groups, list);
                             }
-                            else if (value is Dictionary<object, object> dict)
-                            {
-                                Merge(groups, dict.Values.ToList());
-                            }
                             else
                             {
                                 Trace.WriteLine(ToJSON(value));
@@ -1442,6 +1356,7 @@ namespace ATT
                     case "collectible":
                     case "equippable":
                     case "repeatable":
+                    case "pvp":
                     case "isBreadcrumb":
                     case "DisablePartySync":
                     case "isLimited":
@@ -1480,10 +1395,12 @@ namespace ATT
                             item[field] = ATT.Export.ToString(value).Replace("\\\\", "\\").Replace("\\\\", "\\").Replace("\\", "\\\\");
                             break;
                         }
+                    case "lore":
                     case "name":
                     case "description":
                     case "title":
                     case "order":
+                    case "maphash":
                         {
                             item[field] = ATT.Export.ToString(value).Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");
                             break;
@@ -1514,6 +1431,9 @@ namespace ATT
                     case "displayID":
                     case "modID":
                     case "bonusID":
+                    case "runeforgePowerID":
+                    case "raceID":
+                    case "conduitID":
                     case "f":
                     case "u":
                     case "b":
@@ -1521,6 +1441,7 @@ namespace ATT
                     case "ilvl":
                     case "q":
                     case "r":
+                    case "isOffHand":
                         {
                             item[field] = Convert.ToInt64(value);
                             break;
@@ -1573,6 +1494,7 @@ namespace ATT
                     case "maps":
                     case "qgs":
                     case "crs":
+                    case "titleIDs":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;
@@ -1582,10 +1504,6 @@ namespace ATT
                         if (value is List<object> lvls)
                         {
                             MergeIntegerArrayData(item, field, lvls);
-                        }
-                        else if (value is Dictionary<object, object> dict)
-                        {
-                            MergeIntegerArrayData(item, field, dict.Values.ToList());
                         }
 #if CRIEVE
                         else item[field] = Convert.ToInt64(value);
@@ -1597,7 +1515,7 @@ namespace ATT
                     case "bonusIDs":
                         {
                             // Convert the data to a list of generic objects.
-                            var newDict = value as Dictionary<object, object>;
+                            var newDict = value as Dictionary<long, object>;
                             if (newDict == null) return;
 
                             // Attempt to get the old list data.
@@ -1614,7 +1532,7 @@ namespace ATT
                             }
 
                             // Merge the new list of data into the old data and ensure there are no duplicate values.
-                            foreach (var pair in newDict) oldDict[Convert.ToInt64(pair.Key)] = Convert.ToInt64(pair.Value);
+                            foreach (var pair in newDict) oldDict[pair.Key] = Convert.ToInt64(pair.Value);
                             break;
                         }
 
@@ -1630,27 +1548,18 @@ namespace ATT
                     case "sym":
                         {
                             // Convert the data to a list of generic objects.
-                            var newListOfLists = value as List<List<object>>;
+                            var newListOfLists = value as List<object>;
                             if (newListOfLists == null)
                             {
-                                var newList = value as List<object>;
-                                if (newList == null)
+                                Console.WriteLine("Ignoring 'sym' with improper format.");
+                                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                Console.ReadLine();
+                                foreach(var sublist in newListOfLists)
                                 {
-                                    var dict = value as Dictionary<object, object>;
-                                    if (dict == null) return;
-                                    else newList = dict.Values.ToList();
-                                }
-                                newListOfLists = new List<List<object>>();
-                                foreach (var o in newList)
-                                {
-                                    var list = o as List<object>;
-                                    if (list == null)
-                                    {
-                                        var dict = o as Dictionary<object, object>;
-                                        if (dict == null) return;
-                                        else list = dict.Values.ToList();
-                                    }
-                                    newListOfLists.Add(list);
+                                    if (sublist is List<object>) continue;
+                                    Console.WriteLine("Ignoring 'sym' with improper format.");
+                                    Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                    Console.ReadLine();
                                 }
                             }
                             item[field] = newListOfLists;
@@ -1665,11 +1574,10 @@ namespace ATT
                         {
                             if (!(value is List<object> newList))
                             {
-                                if (value is Dictionary<object, object> dict)
-                                {
-                                    newList = dict.Values.ToList();
-                                }
-                                else return;
+                                Console.WriteLine($"Ignoring '{field}' with improper format.");
+                                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                Console.ReadLine();
+                                return;
                             }
                             var newRep = new List<object>();
                             foreach (var repArg in newList) newRep.Add(Convert.ToInt64(repArg));
@@ -1691,11 +1599,10 @@ namespace ATT
                             // Convert the data to a list of generic objects.
                             if (!(value is List<object> newList))
                             {
-                                if (value is Dictionary<object, object> dict)
-                                {
-                                    newList = dict.Values.ToList();
-                                }
-                                else return;
+                                Console.WriteLine("Ignoring 'coord' with improper format.");
+                                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                Console.ReadLine();
+                                return;
                             }
 
                             // Convert the input into something more usable.
@@ -1747,16 +1654,19 @@ namespace ATT
                             {
                                 foreach (var coord in newList) Merge(item, "coord", coord);
                             }
-                            else if (value is Dictionary<object, object> dict)
+                            else
                             {
-                                newList = dict.Values.ToList();
-                                foreach (var coord in newList) Merge(item, "coord", coord);
+                                Console.WriteLine("Ignoring 'coords' with improper format.");
+                                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                Console.ReadLine();
                             }
                             break;
                         }
 
                     // Functions
+                    case "OnClick":
                     case "OnUpdate":
+                    case "OnTooltip":
                         item[field] = value;
                         break;
 
@@ -1773,11 +1683,7 @@ namespace ATT
                     case "_quests":
                     case "_items":
                     case "_npcs":
-                        if (value is Dictionary<object, object> ids)
-                        {
-                            item[field] = ids.Values.ToList();
-                        }
-                        else if (value is List<object> idList)
+                        if (value is List<object> idList)
                         {
                             item[field] = idList;
                         }
@@ -1907,11 +1813,7 @@ namespace ATT
 
                 if (!(value is List<object> newList))
                 {
-                    if (value is Dictionary<object, object> dict)
-                    {
-                        newList = dict.Values.ToList();
-                    }
-                    else throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value));
+                    throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value));
                 }
                 var newProvider = new List<object>()
                 {
@@ -1926,6 +1828,7 @@ namespace ATT
                 const string field = "providers";
 
                 var mergeProviders = ConvertToList(item, field, value);
+                if (mergeProviders == null) return;
                 foreach (var mergeProvider in mergeProviders)
                 {
                     bool match = false;
@@ -1964,7 +1867,7 @@ namespace ATT
                             }
                             else if (newProvider.Item1 == "o")
                             {
-                                OBJECTS_WITH_REFERENCES[newProvider.Item2] = true;
+                                ProcessObjectInstance(item, newProvider.Item2);
                             }
                         }
                     }
@@ -1973,18 +1876,6 @@ namespace ATT
                         throw new InvalidDataException("Failed parsing value '" + mergeProvider?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
                     }
                 }
-            }
-
-            /// <summary>
-            /// Merge the data into the item reference.
-            /// Only a couple of fields will successfully merge into an item.
-            /// They need to be whitelisted in the Merge(item, field, value) function.
-            /// </summary>
-            /// <param name="item">The item dictionary to merge into.</param>
-            /// <param name="data">The data to merge into the item.</param>
-            public static void Merge(Dictionary<string, object> item, Dictionary<object, object> data)
-            {
-                foreach (var pair in data) Merge(item, ATT.Export.ToString(pair.Key), pair.Value);
             }
 
             /// <summary>
@@ -2010,33 +1901,34 @@ namespace ATT
             public static void PreMerge(Dictionary<string, object> entry, Dictionary<string, object> data)
             {
                 // sometimes existing data from harvests may be inaccurate, so may need to clean existing fields from being merged in
-                if (entry.TryGetValue("_drop", out object drops) && drops is Dictionary<object, object> dropStrs)
+                if (entry.TryGetValue("_drop", out object drops))
                 {
-                    if (dropStrs != null && dropStrs.Count > 0)
-                    {
-                        foreach (object dropObj in dropStrs.Values)
-                        {
-                            data.Remove(dropObj?.ToString() ?? string.Empty);
-                        }
-                    }
+                    PerformDrops(data, drops);
                 }
             }
 
             /// <summary>
-            /// Merge the data into the container.
+            /// Takes the value of the "_drops" key and applies it to the given data
             /// </summary>
-            /// <param name="container">The container to merge into.</param>
-            /// <param name="data">The data to merge into the container.</param>
-            public static void Merge(List<object> container, Dictionary<object, object> data)
+            /// <param name="data"></param>
+            /// <param name="drops"></param>
+            public static void PerformDrops(Dictionary<string, object> data, object drops)
             {
-                // Make sure that the data is valid.
-                if (data == null) return;
-
-                // Convert the object based on key values.
-                Dictionary<string, object> data2 = new Dictionary<string, object>();
-                foreach (var pair in data) data2[ConvertFieldName(pair.Key.ToString())] = pair.Value;
-
-                Merge(container, data2);
+                if (drops is List<object> dropStrs && dropStrs.Count > 0)
+                {
+                    foreach (var dropObj in dropStrs)
+                    {
+                        data.Remove(dropObj.ToString());
+                        //if (data.Remove(dropObj.ToString()))
+                            //Trace.WriteLine("Removed key: " + dropObj.ToString() + " from: " + MiniJSON.Json.Serialize(data));
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Invalid format for '_drop':");
+                    Console.WriteLine(MiniJSON.Json.Serialize(drops));
+                    Console.ReadLine();
+                }
             }
 
             /// <summary>
@@ -2252,6 +2144,12 @@ namespace ATT
                             }
                         }
                     }
+
+                    // capture Raw Quest listing which appear multiple times, ignore Quests tied to Items, or removed Quests (because it's chaos)
+                    if (mostSignificantID == "questID" && ProcessingSourceData && AllQuests.ContainsKey(id))
+                    {
+                        DuplicateSourceQuests.Add(id);
+                    }
                 }
 
                 // If no object matched the data, then we need to create a new entry.
@@ -2292,15 +2190,6 @@ namespace ATT
                         if (entry.TryGetValue("isBreadcrumb", out bool isBreadcrumb))
                         {
                             Merge(quest, "isBreadcrumb", isBreadcrumb);
-                        }
-
-                        // capture Raw Quest listing which appear multiple times, ignore Quests tied to Items, or removed Quests (because it's chaos)
-                        if (ProcessingSourceData)
-                        {
-                            if (IsImportantQuestListing(quest) || IsImportantQuestListing(entry))
-                            {
-                                DuplicateSourceQuests.Add(questID);
-                            }
                         }
                     }
                 }
@@ -2344,11 +2233,11 @@ namespace ATT
                     // not tied to an Item
                     !quest.ContainsKey("itemID") &&
                     // not repeatable
-                    !quest.ContainsKey("repeatable") &&
-                    !quest.ContainsKey("isDaily") &&
-                    !quest.ContainsKey("isWeekly") &&
-                    !quest.ContainsKey("isMonthly") &&
-                    !quest.ContainsKey("isYearly") &&
+                    //!quest.ContainsKey("repeatable") &&
+                    //!quest.ContainsKey("isDaily") &&
+                    //!quest.ContainsKey("isWeekly") &&
+                    //!quest.ContainsKey("isMonthly") &&
+                    //!quest.ContainsKey("isYearly") &&
                     // not unobtainable
                     (!quest.ContainsKey("u") || Convert.ToInt64(quest["u"]) > 3);
             }
@@ -2363,8 +2252,7 @@ namespace ATT
             {
                 foreach (var data in list)
                 {
-                    if (data is Dictionary<object, object> oDict) Merge(container, oDict);
-                    else if (data is Dictionary<string, object> sDict) Merge(container, sDict);
+                    if (data is Dictionary<string, object> sDict) Merge(container, sDict);
                     else
                     {
                         Trace.Write("MERGE CONFUSION: ");
@@ -2380,6 +2268,8 @@ namespace ATT
             /// <returns></returns>
             public static List<object> ConvertToList(Dictionary<string, object> item, string field, object value)
             {
+                if (value == null) return null;
+
                 List<object> list = CompressToList(value);
                 if (list != null)
                     return list;
@@ -2418,6 +2308,10 @@ namespace ATT
                     return list;
                 }
 
+                Console.Write(field);
+                Console.Write(": ");
+                Console.WriteLine(MiniJSON.Json.Serialize(value));
+
                 // no hope
                 throw new InvalidDataException("Failed parsing value '" + value?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
             }
@@ -2432,14 +2326,14 @@ namespace ATT
                 if (value is List<object> newList)
                     return newList;
 
-                if (value is IDictionary<object, object> dict)
-                    return dict.Values.ToList();
-
-                if (value is ICollection<object> icoll)
-                    return icoll.ToList();
-
                 if (value is IEnumerable<object> ienum)
                     return ienum.ToList();
+
+                if (value is IDictionary<long, object> idict)
+                    return idict.Values.ToList();
+
+                if (value is IDictionary<string, object> sdict)
+                    return sdict.Values.ToList();
 
                 // something that doesn't make sense as a List
                 return null;

@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
-		m(543, {	-- Gorgrond
-			filter(101, {	-- Pet Battles
+	m(DRAENOR, {
+		m(GORGROND, {
+			filter(BATTLE_PETS, {
 				p(1465, {	-- Amberbarb Wasp
 					["crs"] = { 85257 },
 				}),
@@ -48,7 +48,7 @@ _.Zones =
 				}),
 				q(37201, {	-- Cymre Brightblade
 					["isDaily"] = true,
-					["coord"] = { 51.1, 70.6, 543 },
+					["coord"] = { 51.1, 70.6, GORGROND },
 					["provider"] = { "n", 83837 },	-- Cymre Brightblade
 					["g"] = {
 						i(116415),	-- Shiny Pet Charm x2

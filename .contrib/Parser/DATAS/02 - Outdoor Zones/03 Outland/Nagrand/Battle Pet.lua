@@ -1,12 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if AFTER MOP
 _.Zones =
 {
 	m(OUTLAND, {
 		m(NAGRAND, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(635, {	-- Adder
 					["crs"] = { 61325 },	-- Adder
 				}),
@@ -25,7 +25,7 @@ _.Zones =
 				p(420, {	-- Toad
 					["crs"] = { 61369 },	-- Toad
 				}),
-				q(31924, { 	-- Narrok
+				q(31924, {	-- Narrok
 					["isDaily"] = true,
 					["coord"] = { 61.0, 49.4, NAGRAND },
 					["provider"] = { "n", 66552 },	-- Narrok <Master Pet Tamer>
@@ -37,3 +37,4 @@ _.Zones =
 		}),
 	}),
 };
+-- #endif

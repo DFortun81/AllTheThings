@@ -533,6 +533,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26881 },	-- Palena Silvercloud
 					["sourceQuest"] = 12171,	-- Of Traitors and Treason
+					["isBreadcrumb"] = true,
 				}),
 				q(12189, {	-- Imbeciles Abound!
 					["coord"] = { 36.0, 48.8, 115 },
@@ -599,6 +600,7 @@ _.Zones =
 				}),
 				q(12789, {	-- Into the Breach!
 					["coord"] = { 83.9, 26.0, 115 },
+					-- ["altQuests"] = { 12770 },	-- Reallocating Resources -- TODO: confirm this
 					["provider"] = { "n", 28228 },	-- Crusader Valus
 					["sourceQuest"] = 12545,	-- The Cleansing of Jintha'kalar
 					["isBreadcrumb"] = true,
@@ -701,6 +703,7 @@ _.Zones =
 					},
 				}),
 				q(12033, {	-- Message from the West
+					["sourceQuests"] = { 11916 },	-- Hellscream's Champion
 					["coord"] = { 37.3, 46.7, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26649 },	-- Messenger Torvus
@@ -1553,7 +1556,7 @@ _.Zones =
 					["sourceQuest"] = 12305,	-- Parting Thoughts
 				}),
 				q(12271, {	-- The Rod of Compulsion
-					["crs"] = { 27209 },	-- Torturer LeCraft
+					["crs"] = { 27209 },	-- Torturer Alphonse
 					["coord"] = { 69.7, 71.9, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 37432 },	-- Torturer's Rod
@@ -1855,3 +1858,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(12051),	-- Rustling Some Feathers
+	}),
+});

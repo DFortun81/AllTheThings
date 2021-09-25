@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
+	n(-9968, {	-- Legacy
 		n(-10055, {	-- Expansion Features
 			un(REMOVED_FROM_GAME, ach(11611)),		-- A Challenging Look
 			un(REMOVED_FROM_GAME, ach(12071)),		-- Crucible's Promise

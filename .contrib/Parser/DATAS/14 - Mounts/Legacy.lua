@@ -72,10 +72,10 @@ _.Mounts =
 			un(REMOVED_FROM_GAME, ach(11061, {	-- Gladiator: Legion Season 4
 				un(REMOVED_FROM_GAME, i(141846)),	-- Ferocious Gladiator's Storm Dragon
 			})),
-			un(REMOVED_FROM_GAME, ach(12010, {	-- Fierce Gladiator: Legion Season 5
+			un(REMOVED_FROM_GAME, ach(12045, {	-- Gladiator: Legion Season 5
 				un(REMOVED_FROM_GAME, i(141847)),	-- Fierce Gladiator's Storm Dragon
 			})),
-			un(REMOVED_FROM_GAME, ach(12134, {	-- Dominant Gladiator: Legion Season 6
+			un(REMOVED_FROM_GAME, ach(12167, {	-- Gladiator: Legion Season 6
 				un(REMOVED_FROM_GAME, i(141848)),	-- Dominant Gladiator's Storm Dragon
 			})),
 			un(REMOVED_FROM_GAME, ach(12168, {	-- Gladiator: Legion Season 7
@@ -91,7 +91,10 @@ _.Mounts =
 				un(REMOVED_FROM_GAME, i(156881)),	-- Notorious Gladiator's Proto-Drake
 			})),
 			un(REMOVED_FROM_GAME, ach(13967, {	-- Gladiator: Battle for Azeroth Season 4
-				un(REMOVED_FROM_GAME, i(156884)),	-- Dread Gladiator's Proto-Drake
+				un(REMOVED_FROM_GAME, i(156884)),	-- Corrupted Gladiator's Proto-Drake
+			})),
+			un(REMOVED_FROM_GAME, ach(14689, {	-- Gladiator: Shadowlands Season 1
+				un(REMOVED_FROM_GAME, i(183937)),	-- Sinful Gladiator's Soul Eater
 			})),
 		}),
 		un(REMOVED_FROM_GAME, ach(4156, {	-- A Tribute to Immortality
@@ -120,11 +123,11 @@ _.Mounts =
 			["u"] = REMOVED_FROM_GAME, -- unobtainable as of BFA prepatch
 		}),
 		i(98405, {			-- Brawler's Burly Mushan Beast
-			["u"] = 4,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "If you completed rank 8 in Season 1 or 2 of the Brawler's Guild, you can purchase this mount from Quartermaster in Brawler's Guild.",
 		}),
 		i(33976, {			-- Brewfest Ram
-			["u"] = 4,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "If you completed the Brewfest Riding Rams quest in 2007, you are eligible to buy this mount from Brewfest vendors. You cannot purchase this mount otherwise.",
 		}),
 		un(REMOVED_FROM_GAME, ach(6375, {	-- Challenge Conqueror: Silver
@@ -140,13 +143,13 @@ _.Mounts =
 			un(REMOVED_FROM_GAME, i(128422)),	-- Grove Warden
 		})),
 		un(REMOVED_FROM_GAME, ach(2138, {	-- Glory of the Raider (25 Player) Pre 3.1
-			["description"] = "|cff66ccffCompleted prior to patch 3.1 awarded the mount.|r",
+			["description"] = "Completed prior to patch 3.1 awarded the mount.",
 			["g"] = {
 				un(REMOVED_FROM_GAME, i(44164)),	-- Reins of the Black Proto-Drake
 			},
 		})),
 		un(REMOVED_FROM_GAME, ach(2137, {	-- Glory of the Raider (10 Player) Pre 3.1
-			["description"] = "|cff66ccffCompleted prior to patch 3.1 awarded the mount.|r",
+			["description"] = "Completed prior to patch 3.1 awarded the mount.",
 			["g"] = {
 				un(9, i(44175)),	-- Reins of the Plagued Proto-Drake
 			},

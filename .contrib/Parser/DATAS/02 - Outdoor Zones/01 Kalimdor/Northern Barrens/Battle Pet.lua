@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(10, {	-- Northern Barrens
-			filter(101, {	-- Pet Battle
+		m(NORTHERN_BARRENS, {
+			filter(BATTLE_PETS, {
 				p(635, {	-- Adder
 					["crs"] = { 61325 },	-- Adder
 				}),
@@ -28,7 +28,7 @@ _.Zones =
 				}),
 				q(31814, {	-- Analynn
 					["provider"] = { "n", 66135 },	-- Dagra the Fierce
-					["coord"] = { 58.6, 53.0, 10 },
+					["coord"] = { 58.6, 53.0, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31813,	-- Dagra the Fierce
 					["groups"] = {
@@ -41,7 +41,7 @@ _.Zones =
 				}),
 				q(45083, {	-- Crysa's Flyers
 					["provider"] = { "n", 115286 },	-- Crysa
-					["coord"] = { 63.6, 35.8, 10 },
+					["coord"] = { 63.6, 35.8, NORTHERN_BARRENS },
 					["isDaily"] = true,
 					["groups"] = {
 						i(142447, {	-- Torn Sack of Pet Supplies
@@ -52,7 +52,7 @@ _.Zones =
 				}),
 				q(31819, {	-- Dagra the Fierce
 					["provider"] = { "n", 66135 },	-- Dagra the Fierce
-					["coord"] = { 58.6, 53.0, 10 },
+					["coord"] = { 58.6, 53.0, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),

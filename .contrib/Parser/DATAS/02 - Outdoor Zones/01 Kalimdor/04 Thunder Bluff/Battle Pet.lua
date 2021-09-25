@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(88, {	-- Thunder Bluff
-			filter(101, {	-- Pet Battle
+		m(THUNDER_BLUFF, {
+			filter(BATTLE_PETS, {
 				p(477, {	-- Gazelle Fawn
 					["crs"] = { 62176 },	-- Gazelle Fawn
 				}),

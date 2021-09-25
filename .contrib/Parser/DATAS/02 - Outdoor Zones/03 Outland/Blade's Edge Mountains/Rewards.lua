@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(BLADES_EDGE_MOUNTAINS, {
 			n(REWARDS, {
 				i(32643, {	-- Darkrune
@@ -33,5 +32,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

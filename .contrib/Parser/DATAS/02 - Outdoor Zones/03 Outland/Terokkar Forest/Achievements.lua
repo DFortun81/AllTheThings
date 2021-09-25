@@ -1,15 +1,16 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if AFTER WRATH
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(TEROKKAR_FOREST, {
 			n(ACHIEVEMENTS, {
 				ach(1191, {	-- Terror of Terokkar (A)
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
+						ach(894), -- Flying High Over Skettis
 						crit(1, {	-- The Skettis Offensive
 							["sourceQuest"] = 10879,	-- The Skettis Offensive
 						}),
@@ -49,7 +50,7 @@ _.Zones =
 				}),
 				ach(1272, {	-- Terror of Terokkar (H)
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(1, {	-- The Skettis Offensive
 							["sourceQuest"] = 10879,	-- The Skettis Offensive
 						}),
@@ -95,5 +96,6 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+-- #endif

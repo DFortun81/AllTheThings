@@ -4,19 +4,18 @@
 
 _.Zones =
 {
-	m(875, { 	-- Zandalar
-		m(1163, {	-- Dazar'alor
+	m(ZANDALAR, {
+		m(THE_GREAT_SEAL, {	-- Dazar'alor
 			["isRaid"] = true,
 			["achievementID"] = 12559,	-- Explore Zuldazar
 			["lvl"] = 110,
 			["maps"] = {
-				--1163,	-- Dazar'alor
-				1164,	-- Dazar'alor
-				1165,	-- Dazar'alor
+				HALL_OF_CHRONICLERS,
+				DAZARALOR,
 				1166,	-- Zanchul
 				1167,	-- Zanchul 2
 			},
-			["description"] = "|cff66ccffDazar'alor is King Rastakhan's palace in Zuldazar. The Great Seal, in its interior chamber, serves as the Horde's embassy on Zandalar and includes some portals to each major city and expansions, profession trainers, bank and guild banks, transmogifier and a mission table.|r",
+			["lore"] = "Dazar'alor is King Rastakhan's palace in Zuldazar. The Great Seal, in its interior chamber, serves as the Horde's embassy on Zandalar and includes some portals to each major city and expansions, profession trainers, bank and guild banks, transmogifier and a mission table.",
 		}),
 	}),
 };

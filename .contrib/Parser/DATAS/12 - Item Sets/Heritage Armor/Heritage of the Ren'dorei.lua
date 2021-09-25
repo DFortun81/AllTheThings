@@ -1,13 +1,13 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-
+--[[
 _.GearSets =
 {
 	n(-254, {	-- Heritage Armor
 		gs(1524, {	-- Heritage of the Ren'dorei
 			["races"] = { VOIDELF },
-			["g"] = {   
+			["g"] = {
 				q(49928, {    -- Heritage of the Void
 					i(156690),	-- Ren'dorei Helm
 					i(156691),	-- Ren'dorei Pauldrons
@@ -24,3 +24,4 @@ _.GearSets =
 		}),
 	}),
 };
+--]]

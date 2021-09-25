@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(BLADES_EDGE_MOUNTAINS, {
 			n(RARES, {
 				n(23391, {	-- Bash'ir
@@ -15,7 +14,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 32759, 1 },	-- Accelerator Module
 					},
-					["g"] = {
+					["groups"] = {
 						i(32572),	-- Apexis Crystal
 					},
 				}),
@@ -27,7 +26,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 32759, 1 },	-- Accelerator Module
 					},
-					["g"] = {
+					["groups"] = {
 						i(32572),	-- Apexis Crystal
 						i(32773),	-- Bash'ir's Skeleton Key
 					},
@@ -37,7 +36,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 32569, 35 },	-- Apexis Shard
 					},
-					["g"] = {
+					["groups"] = {
 						i(32732),	-- Dragon Teeth
 						i(32683),	-- Jet Scale of Furywing
 					},
@@ -59,7 +58,7 @@ _.Zones =
 						{ 29.4, 70.0, BLADES_EDGE_MOUNTAINS },
 						{ 29.8, 70.8, BLADES_EDGE_MOUNTAINS },
 					},
-					["g"] = {
+					["groups"] = {
 						crit(11, {	-- Hemathion
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
@@ -74,7 +73,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 32569, 35 },	-- Apexis Shard
 					},
-					["g"] = {
+					["groups"] = {
 						i(32732),	-- Dragon Teeth
 						i(32684),	-- Insidion's Ebony Scale
 					},
@@ -88,7 +87,7 @@ _.Zones =
 						{ 68.0, 67.0, BLADES_EDGE_MOUNTAINS },
 						{ 68.4, 69.4, BLADES_EDGE_MOUNTAINS },
 					},
-					["g"] = {
+					["groups"] = {
 						crit(15, {	-- Morcrush
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
@@ -103,7 +102,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 32569, 35 },	-- Apexis Shard
 					},
-					["g"] = {
+					["groups"] = {
 						i(32732),	-- Dragon Teeth
 						i(32682),	-- Obsidia Scale
 					},
@@ -113,7 +112,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 32569, 35 },	-- Apexis Shard
 					},
-					["g"] = {
+					["groups"] = {
 						i(32732),	-- Dragon Teeth
 						i(32681),	-- Onyx Scale of Rivendark
 					},
@@ -128,7 +127,7 @@ _.Zones =
 						"added 2.2.0.7272",
 						"removed 4.1.0.7272",
 					},
-					["g"] = {
+					["groups"] = {
 						i(32941, {	-- Corruptor's Signet
 							["timeline"] = {
 								"added 2.2.0.7272",
@@ -169,7 +168,7 @@ _.Zones =
 						{ 46.6, 77.4, BLADES_EDGE_MOUNTAINS },
 						{ 46.4, 78.6, BLADES_EDGE_MOUNTAINS },
 					},
-					["g"] = {
+					["groups"] = {
 						crit(18, {	-- Speaker Mar'grom
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
@@ -181,5 +180,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

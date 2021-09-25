@@ -2,17 +2,17 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(4, {	-- Cataclysm
+_.Instances = { tier(CATA_TIER, {
 	inst(76, {	-- Zul'Gurub
 		["maps"] = {
-			337,	-- Zul'Gurub
+			ZULGURUB,
 		},
-		["coord"] = { 72.0, 32.9, 50 },	-- Zul'Gurub, Northern Stranglethorn
+		["coord"] = { 72.0, 32.9, NORTHERN_STRANGLETHORN },	-- Zul'Gurub
 		["g"] = {
 			d(2, {	-- Heroic
 				["lvl"] = 85,
 				["g"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(69803, {	-- Gurubashi Punisher
 							["crs"] = {
 								52348,	-- Berserking Boulder Roller

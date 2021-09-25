@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(48, {	-- Loch Modan
-			n(ZONEDROPS, {
+		m(LOCH_MODAN, {
+			n(ZONE_DROPS, {
 				un(REMOVED_FROM_GAME, n(1222, {	-- Dark Iron Sapper
 					un(REMOVED_FROM_GAME, i(2274)),	-- Sapper's Gloves
 				})),

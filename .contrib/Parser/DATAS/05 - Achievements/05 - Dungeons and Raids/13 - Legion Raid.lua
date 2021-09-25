@@ -111,7 +111,7 @@ _.Achievements =
 			ach(10849),		-- Mythic: Grand Magistrix Elisande
 			ach(11397),		-- Mythic: Guarm
 			ach(10850, {	-- Mythic: Gul'dan
-				title(342),		-- ,Vengeance Incarnate
+				title(342),		-- , Vengeance Incarnate
 			}),
 			ach(11775),		-- Mythic: Harjatan
 			ach(11398),		-- Mythic: Helya
@@ -139,7 +139,7 @@ _.Achievements =
 			ach(10843),		-- Mythic: Trilliax
 			ach(10824),		-- Mythic: Ursoc
 			ach(11999),		-- Mythic: Varimathras
-			ach(10827,	{ 	-- Mythic: Xavius
+			ach(10827,	{	-- Mythic: Xavius
 				title(341),		-- the Dreamer
 			}),
 			ach(10838, {	-- Nightspire

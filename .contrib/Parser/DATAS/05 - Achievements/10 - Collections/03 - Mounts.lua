@@ -14,7 +14,7 @@ _.Achievements =
 {
 	n(-9964, {	-- Collections
 		n(-10031, {	-- Mounts
-			ach(12933, {	-- A Horde of Hoofbeats (A, 400 mounts) 
+			ach(12933, {	-- A Horde of Hoofbeats (A, 400 mounts)
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(163981),	-- Frenzied Feltalon

@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(78, {	-- Un'Goro Crater
-			n(ZONEDROPS, {
+		m(UNGORO_CRATER, {
+			n(ZONE_DROPS, {
 				i(142377, {	-- Badly Broken Dark Spear
 					["requireSkill"] = BLACKSMITHING,
 					["crs"] = {

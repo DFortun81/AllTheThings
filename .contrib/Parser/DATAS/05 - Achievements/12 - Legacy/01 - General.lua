@@ -12,9 +12,8 @@ TODO:
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
+	n(-9968, {	-- Legacy
 		n(-9955, {	-- General
-			un(REMOVED_FROM_GAME, ach(2921)),		-- A Quick Shave (25 player)
 			un(REMOVED_FROM_GAME, a(ach(8030))),	-- A Test of Valor (Alliance)
 			un(REMOVED_FROM_GAME, h(ach(8031))),	-- A Test of Valor (Horde)
 			un(REMOVED_FROM_GAME, ach(7944)),		-- Bottle Service (Season 2) **Comments on wowhead indicate this might still available in Legion, this needs to be tested.**
@@ -35,13 +34,13 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(9641)),		-- Chapter II: Gul'dan Strikes Back
 			un(REMOVED_FROM_GAME, a(ach(7534))),	-- Chapter II: Wrathion's War (Alliance)
 			un(REMOVED_FROM_GAME, h(ach(8008))),	-- Chapter II: Wrathion's War (Horde)
-			un(REMOVED_FROM_GAME, ach(9642)),	 	-- Chapter III: The Foundry Falls
+			un(REMOVED_FROM_GAME, ach(9642)),		-- Chapter III: The Foundry Falls
 			un(REMOVED_FROM_GAME, ach(7535)),		-- Chapter III: Two Princes
 			un(REMOVED_FROM_GAME, ach(7536)),		-- Chapter IV: Celestial Blessings
 			un(REMOVED_FROM_GAME, a(ach(10021))),	-- Chapter IV: Darkness Incarnate (Alliance)
 			un(REMOVED_FROM_GAME, h(ach(10148))),	-- Chapter IV: Darkness Incarnate(Horde)
 			un(REMOVED_FROM_GAME, ach(8325, {		-- Chapter V: Judgment of the Black Prince
-				un(REMOVED_FROM_GAME, title(306)),		-- ,Legend of Pandaria
+				un(REMOVED_FROM_GAME, title(306)),		-- , Legend of Pandaria
 			})),
 			un(REMOVED_FROM_GAME, ach(2358, {		-- Charger
 				["classes"] = { PALADIN },
@@ -114,7 +113,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(2923)),		-- Iron Dwarf, Medium Rare (10 player)
 			un(REMOVED_FROM_GAME, ach(2924)),		-- Iron Dwarf, Medium Rare (25 player)
 			un(REMOVED_FROM_GAME, a(ach(11565, {	-- King of the Guild (Alliance)(Legion)
-				un(REMOVED_FROM_GAME, ach(11563)), 		-- The Second Rule of Brawler's Guild(Legion)
+				un(REMOVED_FROM_GAME, ach(11563)),		-- The Second Rule of Brawler's Guild(Legion)
 				un(REMOVED_FROM_GAME, ach(11560)),		-- You Are Not Your $#*@! Legplates(Legion)
 			}))),
 			un(REMOVED_FROM_GAME, h(ach(11566, {	-- King of the Guild (Horde)

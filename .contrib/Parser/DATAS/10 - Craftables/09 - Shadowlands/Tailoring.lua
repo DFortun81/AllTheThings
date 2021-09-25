@@ -4,9 +4,9 @@
 
 _.Craftables =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		prof(TAILORING, {
-			n(-320,	{ 		-- Head
+			n(-320,	{	-- Head
 				i(173245),	-- Grim-Veiled Hood
 				i(173218),	-- Shadowlace Cowl
 				i(173197),	-- Shrouded Cloth Hood
@@ -52,6 +52,8 @@ _.Craftables =
 				i(173219),	-- Shadowlace Trousers
 				i(173198),	-- Shrouded Cloth Pants
 			}),
+			i(185960),		-- Vestige of Origins
+			i(184479),		-- Shrouded Cloth Bag
 		}),
 	}),
 };

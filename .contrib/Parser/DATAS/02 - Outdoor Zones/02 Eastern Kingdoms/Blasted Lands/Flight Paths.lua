@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(17, {	-- Blasted Lands
+		m(BLASTED_LANDS, {
 			n(FLIGHT_PATHS, {
 				fp(604),	-- Dreadmaul Hold, Blasted Lands
 				fp(45),	-- Nethergarde Keep, Blasted Lands

@@ -2,8 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(4, {	-- Cataclysm
-	inst(65, { 	-- Throne of the Tides
+_.Instances = { tier(CATA_TIER, {
+	inst(65, {	-- Throne of the Tides
 		["lvl"] = 77,
 		["maps"] = { 322, 323 },
 		["coord"] = { 71.00, 29.00, 204 },	-- Abyssal Depths, Vashj'ir
@@ -42,14 +42,14 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
-					40936, 	-- Faceless Watcher
+					40936,	-- Faceless Watcher
 					40943,	-- Gilgoblin Aquamage
 					40935,	-- Gilgoblin Hunter
 					39616,	-- Naz'jar Invader
 					40584,	-- Naz'jar Invader
-					40577, 	-- Naz'jar Sentinel
+					40577,	-- Naz'jar Sentinel
 					41139,	-- Naz'jar Spiritmender
 					41096,	-- Naz'jar Spiritmender
 					40634,	-- Naz'jar Tempest Witch

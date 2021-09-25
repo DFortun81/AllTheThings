@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	n(-9983, {	-- Honor
+	pvp(n(-9983, {	-- Honor
 		ach(12893, {	-- Honor Level 5
 			i(142380, {	-- Dutiful Gruntling
 				["races"] = HORDE_ONLY,
@@ -92,7 +92,7 @@ _.PVP =
 		ach(12915, {	-- Honor Level 300
 			title(369),	-- %s the Tactician
 		}),
-		ach(12916, { 	-- Honor Level 400
+		ach(12916, {	-- Honor Level 400
 			i(163974, {	-- Bucketshell
 				["races"] = HORDE_ONLY,
 				["crs"] = {
@@ -113,5 +113,5 @@ _.PVP =
 		ach(12917, {	-- Honor Level 500
 			i(164250),	-- Prestigious Bloodforged Courser
 		}),
-	}),
+	})),
 };

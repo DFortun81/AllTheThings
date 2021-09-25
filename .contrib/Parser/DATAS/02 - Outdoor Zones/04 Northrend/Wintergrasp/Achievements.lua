@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(123, {	-- Wintergrasp
-			n(ACHIEVEMENTS, {
+			pvp(n(ACHIEVEMENTS, {
 				ach(1752, {	-- Master of Wintergrasp
 					ach(2080),	-- Black War Mammoth
 					ach(1737, {	-- Destruction Derby (A)
@@ -47,7 +47,7 @@ _.Zones =
 					}),
 					ach(1755),	-- Within Our Grasp
 				}),
-			}),
+			})),
 		}),
 	}),
 };

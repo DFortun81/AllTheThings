@@ -4,8 +4,9 @@
 
 _.Toys =
 {
-	n(-26, { 	-- Drop
+	n(-26, {	-- Drop
 		i(127670),		-- Accursed Tome of the Sargerei
+		i(187417),		-- Adamant Vaults Cell
 		i(86589),		-- Ai-Li's Skymirror
 		i(175140),		-- All-Seeing Eyes
 		i(153204),		-- All-Seer's Eye
@@ -28,10 +29,13 @@ _.Toys =
 		i(119178),		-- Black Whirlwind
 		i(104302),		-- Blackflame Daggers
 		i(153179),		-- Blue Conservatory Scroll
+		i(183901),		-- Bonestorm Top
 		i(184312),		-- Borr-Geth's Fiery Brimstone
 		i(119432),		-- Botani Camouflage
+		i(187139),		-- Bottled Shade Heart
 		i(134023),		-- Bottled Tornado
 		i(128223),		-- Bottomless Stygana Mushroom Brew
+		i(187075),		-- Box of Rattling Chains
 		i(163713),		-- Brazier Cap
 		i(116113),		-- Breath of Talador
 		i(114227),		-- Bubble Wand
@@ -152,6 +156,7 @@ _.Toys =
 		i(153253),		-- S.F.E. Interceptor
 		i(86583),		-- Salyin Battle Banner
 		i(127655),		-- Sassy Imp
+		i(187174),	 	-- Shaded Judgment Stone
 		i(170187),		-- Shadescale
 		i(86573),		-- Shard of Archstone
 		i(170196),		-- Shirakess Warning Sign
@@ -193,6 +198,7 @@ _.Toys =
 		i(170476),		-- Underlight Sealamp
 		i(153004),		-- Unstable Portal Emitter
 		i(141301),		-- Unstable Powder Box
+		i(187176),		-- Vesper of Harmony
 		i(141331),		-- Vial of Green Goo
 		i(127666),		-- Vial of Red Goo
 		i(113375),		-- Vindicator's Armor Polish Kit

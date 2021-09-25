@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(4, {	-- Cataclysm
+	tier(CATA_TIER, {
 		n(-318, {	-- Armor
 			n(-320, {	-- Head
 				i(66931),	-- Mercury-Coated Hood

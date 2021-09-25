@@ -675,50 +675,50 @@ _.Achievements =
 				["races"] = HORDE_ONLY,
 			}),
 			ach(13690, {	-- Nazjatarget Eliminated
-				crit(1, { 	-- Szun, Breaker of Slaves
-					["_quests"]  = { 55897 },
+				crit(1, {	-- Szun, Breaker of Slaves
+					["_quests"] = { 55897 },
 				}),
-				crit(2, { 	-- Frozen Winds of Zhiela
-					["_quests"]  = { 55895 },
+				crit(2, {	-- Frozen Winds of Zhiela
+					["_quests"] = { 55895 },
 				}),
-				crit(3, { 	-- Zoko, Her Iron Defender
-					["_quests"]  = { 55894 },
+				crit(3, {	-- Zoko, Her Iron Defender
+					["_quests"] = { 55894 },
 				}),
-				crit(4, { 	-- Tempest-Speaker Shalan'ali
-					["_quests"]  = { 55898 },
+				crit(4, {	-- Tempest-Speaker Shalan'ali
+					["_quests"] = { 55898 },
 				}),
-				crit(5, { 	-- Starseeker of the Shirakess
-					["_quests"]  = { 55899 },
+				crit(5, {	-- Starseeker of the Shirakess
+					["_quests"] = { 55899 },
 				}),
-				crit(6, { 	-- Azanz, the Slitherblade
-					["_quests"]  = { 55893 },
+				crit(6, {	-- Azanz, the Slitherblade
+					["_quests"] = { 55893 },
 				}),
-				crit(7, { 	-- Undana, Chilling Assassin
-					["_quests"]  = { 55896 },
+				crit(7, {	-- Undana, Chilling Assassin
+					["_quests"] = { 55896 },
 				}),
-				crit(8, { 	-- Kassar, Wielder of Dark Blades
-					["_quests"]  = { 55900 },
+				crit(8, {	-- Kassar, Wielder of Dark Blades
+					["_quests"] = { 55900 },
 				}),
-				crit(9, { 	-- The Zanj'ir Brutalizer
-					["_quests"]  = { 55886 },
+				crit(9, {	-- The Zanj'ir Brutalizer
+					["_quests"] = { 55886 },
 				}),
 				crit(10, {	-- Champion Aldrantiss, Defender of Her Kingdom
-					["_quests"]  = { 55891 },
+					["_quests"] = { 55891 },
 				}),
 				crit(11, {	-- Champion Alzana, Arrow of Thunder
-					["_quests"]  = { 55887 },
+					["_quests"] = { 55887 },
 				}),
 				crit(12, {	-- Champion Eldanar, Shield of Her Glory
-					["_quests"]  = { 55892 },
+					["_quests"] = { 55892 },
 				}),
 				crit(13, {	-- Champion Kyx'zhul the Deepspeaker
-					["_quests"]  = { 55889 },
+					["_quests"] = { 55889 },
 				}),
 				crit(14, {	-- Champion Qalina, Spear of Ice
-					["_quests"]  = { 55888 },
+					["_quests"] = { 55888 },
 				}),
 				crit(15, {	-- Champion Vyz'olgo the Mind-Taker
-					["_quests"]  = { 55890 },
+					["_quests"] = { 55890 },
 				}),
 			}),
 			ach(13713),		-- Nothing to Scry About
@@ -916,9 +916,75 @@ _.Achievements =
 			ach(13765),	-- Subaquatic Support
 			ach(13722),	-- Terror of the Tadpoles
 			ach(13061, {	-- Three Sheets to the Wind
+				crit(1, {	-- "Aurora Borealis"
+					["cost"] = { { "i", 160484, 1 } },	-- "Aurora Borealis"
+				}),
+				crit(2, {	-- Admiralty-Issued Grog
+					["cost"] = { { "i", 163103, 1 } },	-- Admiralty-Issued Grog
+				}),
+				crit(3, {	-- Arathor Single Cask
+					["cost"] = { { "i", 163639, 1 } },	-- Arathor Single Cask
+				}),
+				crit(4, {	-- Bitter Darkroot Vodka
+					["cost"] = { { "i", 159850, 1 } },	-- Bitter Darkroot Vodka
+				}),
+				crit(5, {	-- Blacktooth Bloodwine
+					["cost"] = { { "i", 159848, 1 } },	-- Blacktooth Bloodwine
+				}),
+				crit(6, {	-- Brennadam Apple Brandy
+					["cost"] = { { "i", 159845, 1 } },	-- Brennadam Apple Brandy
+				}),
+				crit(7, {	-- Corlain Estate 12 Year
+					["cost"] = { { "i", 163638, 1 } },	-- Corlain Estate 12 Year
+				}),
+				crit(8, {	-- Dark and Stormy
+					["cost"] = { { "i", 163522, 1 } },	-- Dark and Stormy
+				}),
+				crit(9, {	-- Drop Anchor Dunkel
+					["cost"] = { { "i", 163019, 1 } },	-- Drop Anchor Dunkel
+				}),
+				crit(10, {	-- Foaming Turtle Broth
+					["cost"] = { { "i", 158927, 1 } },	-- Foaming Turtle Broth
+				}),
+				crit(11, {	-- Hook Point Porter
+					["cost"] = { { "i", 162026, 1 } },	-- Hook Point Porter
+				}),
+				crit(12, {	-- Hook Point Schnapps
+					["cost"] = { { "i", 159849, 1 } },	-- Hook Point Schnapps
+				}),
+				crit(13, {	-- Kul Tiran Tripel
+					["cost"] = { { "i", 163548, 1 } },	-- Kul Tiran Tripel
+				}),
+				crit(14, {	-- Long Forgotten Rum
+					["cost"] = { { "i", 161153, 1 } },	-- Long Forgotten Rum
+				}),
+				crit(15, {	-- Mildenhall Mead
+					["cost"] = { { "i", 159847, 1 } },	-- Mildenhall Mead
+				}),
+				crit(16, {	-- Patina Pale Ale
+					["cost"] = { { "i", 162560, 1 } },	-- Patina Pale Ale
+				}),
+				crit(17, {	-- Pontoon Pilsner
+					["cost"] = { { "i", 163018, 1 } },	-- Pontoon Pilsner
+				}),
+				crit(18, {	-- Sausage Martini
+					["cost"] = { { "i", 163651, 1 } },	-- Sausage Martini
+				}),
+				crit(19, {	-- Snowberry Berliner
+					["cost"] = { { "i", 163094, 1 } },	-- Snowberry Berliner
+				}),
+				crit(20, {	-- Thornspeaker Moonshine
+					["cost"] = { { "i", 163549, 1 } },	-- Thornspeaker Moonshine
+				}),
+				crit(21, {	-- Tradewinds Kolsch
+					["cost"] = { { "i", 163098, 1 } },	-- Tradewinds Kolsch
+				}),
+				crit(22, {	-- Whitegrove Pale Ale
+					["cost"] = { { "i", 159846, 1 } },	-- Whitegrove Pale Ale
+				}),
+				-- Items which grant the criteria... ideally these would be sourced in the respective zones on the respective vendors,
+				-- but not taking the time to worry about that right now...
 				i(160484, {	-- "Aurora Borealis"
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 1,			-- "Aurora Borealis"
 					["crs"] = {
 						138221,	-- "Nasty" Buck
 						142188,	-- Allison Weber
@@ -928,22 +994,20 @@ _.Achievements =
 						138905,	-- Rusty Blade Waitress
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						942,	-- Stormsong Valley
-						895,	-- Tiragarde Sound
+						BORALUS,
+						STORMSONG_VALLEY,
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 58.58, 70.31, 942 },	-- "Nasty" Buck
-						{ 74.25, 17.76, 1161 },	-- Allison Weber
-						{ 49.73, 25.22, 895 },	-- Arthur Seville
-						{ 75.37, 14.48, 1161 },	-- Harold Atkey
-						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-						{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
+						{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
+						{ 74.25, 17.76, BORALUS },	-- Allison Weber
+						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
+						{ 75.37, 14.48, BORALUS },	-- Harold Atkey
+						{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
+						{ 50.82, 33.46, STORMSONG_VALLEY },	-- Rusty Blade Waitress
 					},
 				}),
 				i(163103, {	-- Admiralty-Issued Grog
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 2,			-- Admiralty-Issued Grog
 					["crs"] = {
 						134729,	-- Crimper Mirjam
 						143246,	-- Garrett Elmendorf
@@ -953,35 +1017,31 @@ _.Achievements =
 						142189,	-- Ruddy the Rat
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						896,	-- Drustvar
-						895,	-- Tiragarde Sound
+						BORALUS,
+						DRUSTVAR,
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 54.99, 43.63, 1161 },	-- Crimper Mirjam
-						{ 75.44, 18.61, 1161 },	-- Garrett Elmendorf
-						{ 75.37, 14.48, 1161 },	-- Harold Atkey
-						{ 21.51, 43.59, 896 },	-- Linda Deepwater
-						{ 77.21, 84.25, 895 },	-- Martha Mae
-						{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
+						{ 54.99, 43.63, BORALUS },	-- Crimper Mirjam
+						{ 75.44, 18.61, BORALUS },	-- Garrett Elmendorf
+						{ 75.37, 14.48, BORALUS },	-- Harold Atkey
+						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
+						{ 77.21, 84.25, TIRAGARDE_SOUND },	-- Martha Mae
+						{ 69.26, 29.82, BORALUS },	-- Ruddy the Rat
 					},
 				}),
 				i(163639, {	-- Arathor Single Cask
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 3,			-- Arathor Single Cask
 					["crs"] = {
 						143487,	-- Nicolas Moal
 					},
 					["maps"] = {
-						1161,	-- Boralus
+						BORALUS,
 					},
 					["coords"] = {
-						{ 58.17, 70.32, 1161 },	-- Nicolas Moal
+						{ 58.17, 70.32, BORALUS },	-- Nicolas Moal
 					},
 				}),
 				i(159850, {	-- Bitter Darkroot Vodka
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 4,			-- Bitter Darkroot Vodka
 					["crs"] = {
 						142188,	-- Allison Weber
 						126600,	-- Arthur Seville
@@ -994,25 +1054,23 @@ _.Achievements =
 						135153,	-- Wesley Rockhold
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						896,	-- Drustvar
-						895,	-- Tiragarde Sound
+						BORALUS,
+						DRUSTVAR,
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 74.25, 17.76, 1161 },	-- Allison Weber
-						{ 49.73, 25.22, 895 },	-- Arthur Seville
-						{ 66.28, 61.58, 1161 },	-- Diana Seafinch
-						{ 21.51, 43.71, 896 },	-- Fixi Slyshiv
-						{ 75.37, 14.48, 1161 },	-- Harold Atkey
-						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-						{ 21.51, 43.59, 896 },	-- Linda Deepwater
-						{ 77.21, 84.25, 895 },	-- Martha Mae
-						{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
+						{ 74.25, 17.76, BORALUS },	-- Allison Weber
+						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
+						{ 66.28, 61.58, BORALUS },	-- Diana Seafinch
+						{ 21.51, 43.71, DRUSTVAR },	-- Fixi Slyshiv
+						{ 75.37, 14.48, BORALUS },	-- Harold Atkey
+						{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
+						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
+						{ 77.21, 84.25, TIRAGARDE_SOUND },	-- Martha Mae
+						{ 74.12, 12.66, BORALUS },	-- Wesley Rockhold
 					},
 				}),
 				i(159848, {	-- Blacktooth Bloodwine
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 5,			-- Blacktooth Bloodwine
 					["crs"] = {
 						142188,	-- Allison Weber
 						126600,	-- Arthur Seville
@@ -1025,26 +1083,24 @@ _.Achievements =
 						129044,	-- Martha Mae
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						1164,	-- Dazar'alor
-						896,	-- Drustvar
-						895,	-- Tiragarde Sound
+						BORALUS,
+						HALL_OF_CHRONICLERS,
+						DRUSTVAR,
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 74.25, 17.76, 1161 },	-- Allison Weber
-						{ 49.73, 25.22, 895 },	-- Arthur Seville
-						{ 21.04, 66.14, 896 },	-- Barkeep Cotner
-						{ 75.44, 18.61, 1161 },	-- Garrett Elmendorf
-						{ 75.37, 14.48, 1161 },	-- Harold Atkey
-						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-						{ 26.45, 50.7, 1164 },	-- Lily Whistlebrew
-						{ 21.51, 43.59, 896 },	-- Linda Deepwater
-						{ 77.21, 84.25, 895 },	-- Martha Mae
+						{ 74.25, 17.76, BORALUS },	-- Allison Weber
+						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
+						{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
+						{ 75.44, 18.61, BORALUS },	-- Garrett Elmendorf
+						{ 75.37, 14.48, BORALUS },	-- Harold Atkey
+						{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
+						{ 26.45, 50.7, HALL_OF_CHRONICLERS },	-- Lily Whistlebrew
+						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
+						{ 77.21, 84.25, TIRAGARDE_SOUND },	-- Martha Mae
 					},
 				}),
 				i(159845, {	-- Brennadam Apple Brandy
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 6,			-- Brennadam Apple Brandy
 					["crs"] = {
 						138221,	-- "Nasty" Buck
 						142188,	-- Allison Weber
@@ -1057,38 +1113,34 @@ _.Achievements =
 						135153,	-- Wesley Rockhold
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						942,	-- Stormsong Valley
-						895,	-- Tiragarde Sound
+						BORALUS,
+						STORMSONG_VALLEY,
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 58.58, 70.31, 942 },	-- "Nasty" Buck
-						{ 74.25, 17.76, 1161 },	-- Allison Weber
-						{ 49.73, 25.22, 895 },	-- Arthur Seville
-						{ 75.37, 14.48, 1161 },	-- Harold Atkey
-						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-						{ 41.22, 50.21, 942 },	-- Rebecca Barnes
-						{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
-						{ 53.31, 28.29, 895 },	-- Terry Rigglesmith
-						{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
+						{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
+						{ 74.25, 17.76, BORALUS },	-- Allison Weber
+						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
+						{ 75.37, 14.48, BORALUS },	-- Harold Atkey
+						{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
+						{ 41.22, 50.21, STORMSONG_VALLEY },	-- Rebecca Barnes
+						{ 50.82, 33.46, STORMSONG_VALLEY },	-- Rusty Blade Waitress
+						{ 53.31, 28.29, TIRAGARDE_SOUND },	-- Terry Rigglesmith
+						{ 74.12, 12.66, BORALUS },	-- Wesley Rockhold
 					},
 				}),
 				i(163638, {	-- Corlain Estate 12 Year
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 7,			-- Corlain Estate 12 Year
 					["crs"] = {
 						143487,	-- Nicolas Moal
 					},
 					["maps"] = {
-						1161,	-- Boralus
+						BORALUS,
 					},
 					["coords"] = {
-						{ 58.17, 70.32, 1161 },	-- Nicolas Moal
+						{ 58.17, 70.32, BORALUS },	-- Nicolas Moal
 					},
 				}),
 				i(163522, {	-- Dark and Stormy
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 8,			-- Dark and Stormy
 					["crs"] = {
 						137411,	-- Joseph Stephens
 						129376,	-- Lenne
@@ -1096,20 +1148,18 @@ _.Achievements =
 						138905,	-- Rusty Blade Waitress
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						1165,	-- Dazar'alor
-						942,	-- Stormsong Valley
+						BORALUS,
+						DAZARALOR,
+						STORMSONG_VALLEY,
 					},
 					["coords"] = {
-						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-						{ 47.04, 91.55, 1165 },	-- Lenne
-						{ 41.22, 50.21, 942 },	-- Rebecca Barnes
-						{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
+						{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
+						{ 47.04, 91.55, DAZARALOR },	-- Lenne
+						{ 41.22, 50.21, STORMSONG_VALLEY },	-- Rebecca Barnes
+						{ 50.82, 33.46, STORMSONG_VALLEY },	-- Rusty Blade Waitress
 					},
 				}),
 				i(163019, {	-- Drop Anchor Dunkel
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 9,			-- Drop Anchor Dunkel
 					["crs"] = {
 						142764,	-- "Fairplay" JJ
 						142760,	-- Barserver Aspen
@@ -1128,44 +1178,40 @@ _.Achievements =
 						131781,	-- Zuaba Sonja
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						1165,	-- Dazar'alor
-						895,	-- Tiragarde Sound
+						BORALUS,
+						DAZARALOR,
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 53.09, 16.67, 1161 },	-- "Fairplay" JJ
-						{ 54.71, 16.29, 1161 },	-- Barserver Aspen
-						{ 54.41, 16.43, 1161 },	-- Barserver Donlyuk
-						{ 55.44, 15.44, 1161 },	-- Barserver Vince
-						{ 53.99, 75.22, 1161 },	-- Bored Barkeep
-						{ 54.55, 16.81, 1161 },	-- Captain Langton
-						{ 66.28, 61.58, 1161 },	-- Diana Seafinch
-						{ 75.37, 14.48, 1161 },	-- Harold Atkey
-						{ 53.18, 16.48, 1161 },	-- Kevin Tack
-						{ 52.78, 17.27, 1161 },	-- Monica Winters
-						{ 65.45, 39.29, 1161 },	-- Ron Mahogany
-						{ 49.77, 25.13, 895 },	-- Sarella Griffin
-						{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
-						{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
-						{ 35.42, 16.66, 1165 },	-- Zuaba Sonja
+						{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
+						{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
+						{ 54.41, 16.43, BORALUS },	-- Barserver Donlyuk
+						{ 55.44, 15.44, BORALUS },	-- Barserver Vince
+						{ 53.99, 75.22, BORALUS },	-- Bored Barkeep
+						{ 54.55, 16.81, BORALUS },	-- Captain Langton
+						{ 66.28, 61.58, BORALUS },	-- Diana Seafinch
+						{ 75.37, 14.48, BORALUS },	-- Harold Atkey
+						{ 53.18, 16.48, BORALUS },	-- Kevin Tack
+						{ 52.78, 17.27, BORALUS },	-- Monica Winters
+						{ 65.45, 39.29, BORALUS },	-- Ron Mahogany
+						{ 49.77, 25.13, TIRAGARDE_SOUND },	-- Sarella Griffin
+						{ 73.27, 16.02, BORALUS },	-- Victor Esquivias [Patrols]
+						{ 74.12, 12.66, BORALUS },	-- Wesley Rockhold
+						{ 35.42, 16.66, DAZARALOR },	-- Zuaba Sonja
 					},
 				}),
 				i(158927, {	-- Foaming Turtle Broth
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 10,		-- Foaming Turtle Broth
 					["crs"] = {
 						135600,	-- Emma Haribull
 					},
 					["maps"] = {
-						942,	-- Stormsong Valley
+						STORMSONG_VALLEY,
 					},
 					["coords"] = {
-						{ 44.47, 54.21, 942 },	-- Emma Haribull
+						{ 44.47, 54.21, STORMSONG_VALLEY },	-- Emma Haribull
 					},
 				}),
 				i(162026, {	-- Hook Point Porter
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 11,		-- Hook Point Porter
 					["crs"] = {
 						142764,	-- "Fairplay" JJ
 						142760,	-- Barserver Aspen
@@ -1186,32 +1232,30 @@ _.Achievements =
 						135153,	-- Wesley Rockhold
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						895,	-- Tiragarde Sound
+						BORALUS,
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 53.09, 16.67, 1161 },	-- "Fairplay" JJ
-						{ 54.71, 16.29, 1161 },	-- Barserver Aspen
-						{ 54.41, 16.43, 1161 },	-- Barserver Donlyuk
-						{ 55.44, 15.44, 1161 },	-- Barserver Vince
-						{ 54.55, 16.81, 1161 },	-- Captain Langton
-						{ 54.99, 43.63, 1161 },	-- Crimper Mirjam
-						{ 66.28, 61.58, 1161 },	-- Diana Seafinch
-						{ 21.51, 43.71, 896 },	-- Fixi Slyshiv
-						{ 75.44, 18.61, 1161 },	-- Garrett Elmendorf
-						{ 75.37, 14.48, 1161 },	-- Harold Atkey
-						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-						{ 53.18, 16.48, 1161 },	-- Kevin Tack
-						{ 52.78, 17.27, 1161 },	-- Monica Winters
-						{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
-						{ 49.77, 25.13, 895 },	-- Sarella Griffin
-						{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
-						{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
+						{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
+						{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
+						{ 54.41, 16.43, BORALUS },	-- Barserver Donlyuk
+						{ 55.44, 15.44, BORALUS },	-- Barserver Vince
+						{ 54.55, 16.81, BORALUS },	-- Captain Langton
+						{ 54.99, 43.63, BORALUS },	-- Crimper Mirjam
+						{ 66.28, 61.58, BORALUS },	-- Diana Seafinch
+						{ 21.51, 43.71, DRUSTVAR },	-- Fixi Slyshiv
+						{ 75.44, 18.61, BORALUS },	-- Garrett Elmendorf
+						{ 75.37, 14.48, BORALUS },	-- Harold Atkey
+						{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
+						{ 53.18, 16.48, BORALUS },	-- Kevin Tack
+						{ 52.78, 17.27, BORALUS },	-- Monica Winters
+						{ 69.26, 29.82, BORALUS },	-- Ruddy the Rat
+						{ 49.77, 25.13, TIRAGARDE_SOUND },	-- Sarella Griffin
+						{ 73.27, 16.02, BORALUS },	-- Victor Esquivias [Patrols]
+						{ 74.12, 12.66, BORALUS },	-- Wesley Rockhold
 					},
 				}),
 				i(159849, {	-- Hook Point Schnapps
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 12,		-- Hook Point Schnapps
 					["crs"] = {
 						142188,	-- Allison Weber
 						126600,	-- Arthur Seville
@@ -1225,26 +1269,24 @@ _.Achievements =
 						135153,	-- Wesley Rockhold
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						896,	-- Drustvar
-						895,	-- Tiragarde Sound
+						BORALUS,
+						DRUSTVAR,
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 74.25, 17.76, 1161 },	-- Allison Weber
-						{ 49.73, 25.22, 895 },	-- Arthur Seville
-						{ 53.99, 75.22, 1161 },	-- Bored Barkeep
-						{ 75.37, 14.48, 1161 },	-- Harold Atkey
-						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-						{ 21.51, 43.59, 896 },	-- Linda Deepwater
-						{ 49.77, 25.13, 895 },	-- Sarella Griffin
-						{ 53.31, 28.29, 895 },	-- Terry Rigglesmith
-						{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
-						{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
+						{ 74.25, 17.76, BORALUS },	-- Allison Weber
+						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
+						{ 53.99, 75.22, BORALUS },	-- Bored Barkeep
+						{ 75.37, 14.48, BORALUS },	-- Harold Atkey
+						{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
+						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
+						{ 49.77, 25.13, TIRAGARDE_SOUND },	-- Sarella Griffin
+						{ 53.31, 28.29, TIRAGARDE_SOUND },	-- Terry Rigglesmith
+						{ 73.27, 16.02, BORALUS },	-- Victor Esquivias [Patrols]
+						{ 74.12, 12.66, BORALUS },	-- Wesley Rockhold
 					},
 				}),
 				i(163548, {	-- Kul Tiran Tripel
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 13,		-- Kul Tiran Tripel
 					["crs"] = {
 						139638,	-- Barkeep Cotner
 						139113,	-- Bored Barkeep
@@ -1254,38 +1296,34 @@ _.Achievements =
 						143244,	-- Victor Esquivias
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						896,	-- Drustvar
-						895,	-- Tiragarde Sound
+						BORALUS,
+						DRUSTVAR,
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 21.04, 66.14, 896 },	-- Barkeep Cotner
-						{ 53.99, 75.22, 1161 },	-- Bored Barkeep
-						{ 75.37, 14.48, 1161 },	-- Harold Atkey
-						{ 21.51, 43.59, 896 },	-- Linda Deepwater
-						{ 49.77, 25.13, 895 },	-- Sarella Griffin
-						{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
+						{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
+						{ 53.99, 75.22, BORALUS },	-- Bored Barkeep
+						{ 75.37, 14.48, BORALUS },	-- Harold Atkey
+						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
+						{ 49.77, 25.13, TIRAGARDE_SOUND },	-- Sarella Griffin
+						{ 73.27, 16.02, BORALUS },	-- Victor Esquivias [Patrols]
 					},
 				}),
 				i(161153, {	-- Long Forgotten Rum
-					["provider"] = { "n", 140055 }, 			-- First Mate Grogtok
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 14,		-- Long Forgotten Rum
+					-- ["provider"] = { "n", 140055 },	-- First Mate Grogtok -- Why is this here...
 					["crs"] = {
 						137040,	-- Linda Deepwater
 					},
 					["maps"] = {
-						942,	-- Stormsong Valley
-						896,	-- Drustvar
+						STORMSONG_VALLEY,
+						DRUSTVAR,
 					},
 					["coords"] = {
-						{ 21.51, 43.59, 896 },	-- Linda Deepwater
-						{ 49.07, 57.22, 942 },	-- Long Forgotten Rum
+						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
+						{ 49.07, 57.22, STORMSONG_VALLEY },	-- Long Forgotten Rum
 					},
 				}),
 				i(159847, {	-- Mildenhall Mead
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 15,		-- Mildenhall Mead
 					["crs"] = {
 						138221,	-- "Nasty" Buck
 						126600,	-- Arthur Seville
@@ -1303,31 +1341,29 @@ _.Achievements =
 						136465,	-- Tom Fishbury
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						896,	-- Drustvar
-						942,	-- Stormsong Valley
-						895,	-- Tiragarde Sound
+						BORALUS,
+						DRUSTVAR,
+						STORMSONG_VALLEY,
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 58.58, 70.31, 942 },	-- "Nasty" Buck
-						{ 49.73, 25.22, 895 },	-- Arthur Seville
-						{ 66.27, 24.29, 895 },	-- Dandy Jones
-						{ 42.06, 22.85, 895 },	-- Egert Tominson
-						{ 44.59, 55.49, 942 },	-- Felicity Noel
-						{ 75.37, 14.48, 1161 },	-- Harold Atkey
-						{ 72.61, 68.41, 1161 },	-- Jaela Billman
-						{ 77.38, 83.97, 895 },	-- Jill McHoonigan
-						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-						{ 75.88, 50.64, 895 },	-- Lidia Plank
-						{ 21.51, 43.59, 896 },	-- Linda Deepwater
-						{ 31.19, 29.78, 896 },	-- Quartermaster Rickard
-						{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
-						{ 35.33, 24.22, 895 },	-- Tom Fishbury
+						{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
+						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
+						{ 66.27, 24.29, TIRAGARDE_SOUND },	-- Dandy Jones
+						{ 42.06, 22.85, TIRAGARDE_SOUND },	-- Egert Tominson
+						{ 44.59, 55.49, STORMSONG_VALLEY },	-- Felicity Noel
+						{ 75.37, 14.48, BORALUS },	-- Harold Atkey
+						{ 72.61, 68.41, BORALUS },	-- Jaela Billman
+						{ 77.38, 83.97, TIRAGARDE_SOUND },	-- Jill McHoonigan
+						{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
+						{ 75.88, 50.64, TIRAGARDE_SOUND },	-- Lidia Plank
+						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
+						{ 31.19, 29.78, DRUSTVAR },	-- Quartermaster Rickard
+						{ 50.82, 33.46, STORMSONG_VALLEY },	-- Rusty Blade Waitress
+						{ 35.33, 24.22, TIRAGARDE_SOUND },	-- Tom Fishbury
 					},
 				}),
 				i(162560, {	-- Patina Pale Ale
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 16,		-- Patina Pale Ale
 					["crs"] = {
 						142764,	-- "Fairplay" JJ
 						142760,	-- Barserver Aspen
@@ -1340,23 +1376,21 @@ _.Achievements =
 						142189,	-- Ruddy the Rat
 					},
 					["maps"] = {
-						1161,	-- Boralus
+						BORALUS,
 					},
 					["coords"] = {
-						{ 53.09, 16.67, 1161 },	-- "Fairplay" JJ
-						{ 54.71, 16.29, 1161 },	-- Barserver Aspen
-						{ 54.41, 16.43, 1161 },	-- Barserver Donlyuk
-						{ 55.44, 15.44, 1161 },	-- Barserver Vince
-						{ 54.55, 16.81, 1161 },	-- Captain Langton
-						{ 54.99, 43.63, 1161 },	-- Crimper Mirjam
-						{ 53.18, 16.48, 1161 },	-- Kevin Tack
-						{ 52.78, 17.27, 1161 },	-- Monica Winters
-						{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
+						{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
+						{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
+						{ 54.41, 16.43, BORALUS },	-- Barserver Donlyuk
+						{ 55.44, 15.44, BORALUS },	-- Barserver Vince
+						{ 54.55, 16.81, BORALUS },	-- Captain Langton
+						{ 54.99, 43.63, BORALUS },	-- Crimper Mirjam
+						{ 53.18, 16.48, BORALUS },	-- Kevin Tack
+						{ 52.78, 17.27, BORALUS },	-- Monica Winters
+						{ 69.26, 29.82, BORALUS },	-- Ruddy the Rat
 					},
 				}),
 				i(163018, {	-- Pontoon Pilsner
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 17,		-- Pontoon Pilsner
 					["crs"] = {
 						142764,	-- "Fairplay" JJ
 						142760,	-- Barserver Aspen
@@ -1372,41 +1406,37 @@ _.Achievements =
 						131781,	-- Zuaba Sonja
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						1165,	-- Dazar'alor
-						895,	-- Tiragarde Sound
+						BORALUS,
+						DAZARALOR,
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 53.09, 16.67, 1161 },	-- "Fairplay" JJ
-						{ 54.71, 16.29, 1161 },	-- Barserver Aspen
-						{ 54.41, 16.43, 1161 },	-- Barserver Donlyuk
-						{ 55.44, 15.44, 1161 },	-- Barserver Vince
-						{ 53.99, 75.22, 1161 },	-- Bored Barkeep
-						{ 54.55, 16.81, 1161 },	-- Captain Langton
-						{ 75.37, 14.48, 1161 },	-- Harold Atkey
-						{ 53.18, 16.48, 1161 },	-- Kevin Tack
-						{ 52.78, 17.27, 1161 },	-- Monica Winters
-						{ 49.77, 25.13, 895 },	-- Sarella Griffin
-						{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
-						{ 35.42, 16.66, 1165 },	-- Zuaba Sonja
+						{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
+						{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
+						{ 54.41, 16.43, BORALUS },	-- Barserver Donlyuk
+						{ 55.44, 15.44, BORALUS },	-- Barserver Vince
+						{ 53.99, 75.22, BORALUS },	-- Bored Barkeep
+						{ 54.55, 16.81, BORALUS },	-- Captain Langton
+						{ 75.37, 14.48, BORALUS },	-- Harold Atkey
+						{ 53.18, 16.48, BORALUS },	-- Kevin Tack
+						{ 52.78, 17.27, BORALUS },	-- Monica Winters
+						{ 49.77, 25.13, TIRAGARDE_SOUND },	-- Sarella Griffin
+						{ 73.27, 16.02, BORALUS },	-- Victor Esquivias [Patrols]
+						{ 35.42, 16.66, DAZARALOR },	-- Zuaba Sonja
 					},
 				}),
 				i(163651, {	-- Sausage Martini
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 18,		-- Sausage Martini
 					["crs"] = {
 						139638,	-- Barkeep Cotner
 					},
 					["maps"] = {
-						896,	-- Drustvar
+						DRUSTVAR,
 					},
 					["coords"] = {
-						{ 21.04, 66.14, 896 },	-- Barkeep Cotner
+						{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
 					},
 				}),
 				i(163094, {	-- Snowberry Berliner
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 19,		-- Snowberry Berliner
 					["crs"] = {
 						142764,	-- "Fairplay" JJ
 						139638,	-- Barkeep Cotner
@@ -1420,43 +1450,39 @@ _.Achievements =
 						142189,	-- Ruddy the Rat
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						896,	-- Drustvar
+						BORALUS,
+						DRUSTVAR,
 					},
 					["coords"] = {
-						{ 53.09, 16.67, 1161 },	-- "Fairplay" JJ
-						{ 21.04, 66.14, 896 },	-- Barkeep Cotner
-						{ 54.71, 16.29, 1161 },	-- Barserver Aspen
-						{ 54.41, 16.43, 1161 },	-- Barserver Donlyuk
-						{ 55.44, 15.44, 1161 },	-- Barserver Vince
-						{ 54.55, 16.81, 1161 },	-- Captain Langton
-						{ 54.99, 43.63, 1161 },	-- Crimper Mirjam
-						{ 53.18, 16.48, 1161 },	-- Kevin Tack
-						{ 52.78, 17.27, 1161 },	-- Monica Winters
-						{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
+						{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
+						{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
+						{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
+						{ 54.41, 16.43, BORALUS },	-- Barserver Donlyuk
+						{ 55.44, 15.44, BORALUS },	-- Barserver Vince
+						{ 54.55, 16.81, BORALUS },	-- Captain Langton
+						{ 54.99, 43.63, BORALUS },	-- Crimper Mirjam
+						{ 53.18, 16.48, BORALUS },	-- Kevin Tack
+						{ 52.78, 17.27, BORALUS },	-- Monica Winters
+						{ 69.26, 29.82, BORALUS },	-- Ruddy the Rat
 					},
 				}),
 				i(163549, {	-- Thornspeaker Moonshine
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 20,		-- Thornspeaker Moonshine
 					["crs"] = {
 						142188,	-- Allison Weber
 						137411,	-- Joseph Stephens
 						137040,	-- Linda Deepwater
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						896,	-- Drustvar
+						BORALUS,
+						DRUSTVAR,
 					},
 					["coords"] = {
-						{ 74.25, 17.76, 1161 },	-- Allison Weber
-						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-						{ 21.51, 43.59, 896 },	-- Linda Deepwater
+						{ 74.25, 17.76, BORALUS },	-- Allison Weber
+						{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
+						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
 					},
 				}),
 				i(163098, {	-- Tradewinds Kolsch
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 21,		-- Tradewinds Kolsch
 					["crs"] = {
 						142764,	-- "Fairplay" JJ
 						142760,	-- Barserver Aspen
@@ -1471,28 +1497,26 @@ _.Achievements =
 						143244,	-- Victor Esquivias
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						896,	-- Drustvar
-						895,	-- Tiragarde Sound
+						BORALUS,
+						DRUSTVAR,
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 53.09, 16.67, 1161 },	-- "Fairplay" JJ
-						{ 54.71, 16.29, 1161 },	-- Barserver Aspen
-						{ 21.04, 66.14, 896 },	-- Barkeep Cotner
-						{ 54.41, 16.43, 1161 },	-- Barserver Donlyuk
-						{ 55.44, 15.44, 1161 },	-- Barserver Vince
-						{ 54.55, 16.81, 1161 },	-- Captain Langton
-						{ 54.99, 43.63, 1161 },	-- Crimper Mirjam
-						{ 53.18, 16.48, 1161 },	-- Kevin Tack
-						{ 52.78, 17.27, 1161 },	-- Monica Winters
-						{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
-						{ 49.77, 25.13, 895 },	-- Sarella Griffin
-						{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
+						{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
+						{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
+						{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
+						{ 54.41, 16.43, BORALUS },	-- Barserver Donlyuk
+						{ 55.44, 15.44, BORALUS },	-- Barserver Vince
+						{ 54.55, 16.81, BORALUS },	-- Captain Langton
+						{ 54.99, 43.63, BORALUS },	-- Crimper Mirjam
+						{ 53.18, 16.48, BORALUS },	-- Kevin Tack
+						{ 52.78, 17.27, BORALUS },	-- Monica Winters
+						{ 69.26, 29.82, BORALUS },	-- Ruddy the Rat
+						{ 49.77, 25.13, TIRAGARDE_SOUND },	-- Sarella Griffin
+						{ 73.27, 16.02, BORALUS },	-- Victor Esquivias [Patrols]
 					},
 				}),
 				i(159846, {	-- Whitegrove Pale Ale
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 22,		-- Whitegrove Pale Ale
 					["crs"] = {
 						138221,	-- "Nasty" Buck
 						126600,	-- Arthur Seville
@@ -1510,26 +1534,26 @@ _.Achievements =
 						135153,	-- Wesley Rockhold
 					},
 					["maps"] = {
-						1161,	-- Boralus
-						896,	-- Drustvar
-						942,	-- Stormsong Valley
-						895,	-- Tiragarde Sound
+						BORALUS,
+						DRUSTVAR,
+						STORMSONG_VALLEY,
+						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
-						{ 58.58, 70.31, 942 },	-- "Nasty" Buck
-						{ 49.73, 25.22, 895 },	-- Arthur Seville
-						{ 21.04, 66.14, 896 },	-- Barkeep Cotner
-						{ 54.99, 43.63, 1161 },	-- Crimper Mirjam
-						{ 66.28, 61.58, 1161 },	-- Diana Seafinch
-						{ 44.59, 55.49, 942 },	-- Felicity Noel
-						{ 21.51, 43.71, 896 },	-- Fixi Slyshiv
-						{ 75.37, 14.48, 1161 },	-- Harold Atkey
-						{ 72.60, 82.60, 1161 },	-- Jaela Billa
-						{ 77.38, 83.97, 895 },	-- Jill McHoonigan
-						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-						{ 21.51, 43.59, 896 },	-- Linda Deepwater
-						{ 69.26, 29.82, 1161 },	-- Ruddy the Rat
-						{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
+						{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
+						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
+						{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
+						{ 54.99, 43.63, BORALUS },	-- Crimper Mirjam
+						{ 66.28, 61.58, BORALUS },	-- Diana Seafinch
+						{ 44.59, 55.49, STORMSONG_VALLEY },	-- Felicity Noel
+						{ 21.51, 43.71, DRUSTVAR },	-- Fixi Slyshiv
+						{ 75.37, 14.48, BORALUS },	-- Harold Atkey
+						{ 72.60, 82.60, BORALUS },	-- Jaela Billa
+						{ 77.38, 83.97, TIRAGARDE_SOUND },	-- Jill McHoonigan
+						{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
+						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
+						{ 69.26, 29.82, BORALUS },	-- Ruddy the Rat
+						{ 74.12, 12.66, BORALUS },	-- Wesley Rockhold
 					},
 				}),
 			}),
@@ -1551,8 +1575,8 @@ _.Achievements =
 				crit(1),	-- Complete an Emissary for your ally in Nazjatar
 				crit(2),	-- Defeat one of the World Bosses of Nazjatar
 				crit(3),	-- Learn about the Scrying Stones of Nazjatar
-				crit(4, { 	-- Defeat one of Azshara's Champions
-					["_quests"]  = {
+				crit(4, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
 						55893,	-- Azanz, the Slitherblade
 						55891,	-- Champion Aldrantiss, Defender of Her Kingdom
 						55887,	-- Champion Alzana, Arrow of Thunder

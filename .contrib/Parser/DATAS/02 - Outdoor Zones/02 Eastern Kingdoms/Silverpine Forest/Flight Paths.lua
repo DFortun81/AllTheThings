@@ -5,19 +5,19 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(21, {	-- Silverpine Forest
+		m(SILVERPINE_FOREST, {
 			n(FLIGHT_PATHS, {
 				fp(645, {	-- Forsaken High Command, Silverpine Forest
-					["coord"] = { 57.8, 8.80, 21 },
+					["coord"] = { 57.8, 8.80, SILVERPINE_FOREST },
 				}),
 				fp(681, {	-- Forsaken Rear Guard, Silverpine Forest
-					["coord"] = { 45.8, 21.8, 21 },
+					["coord"] = { 45.8, 21.8, SILVERPINE_FOREST },
 				}),
 				fp(654, {	-- The Forsaken Front, Silverpine Forest
-					["coord"] = { 50.8, 63.6, 21 },
+					["coord"] = { 50.8, 63.6, SILVERPINE_FOREST },
 				}),
 				fp(10, {	-- The Sepulcher, Silverpine Forest
-					["coord"] = { 45.4, 42.4, 21 },
+					["coord"] = { 45.4, 42.4, SILVERPINE_FOREST },
 				}),
 			}),
 		}),

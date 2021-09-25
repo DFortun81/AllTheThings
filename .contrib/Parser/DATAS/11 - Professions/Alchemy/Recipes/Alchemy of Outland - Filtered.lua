@@ -3,7 +3,7 @@ profession(ALCHEMY, {
 		{
 			["categoryID"] = 602--[[Alchemy of Outland]],
 			["g"] = {
-				n(-37, {	-- Discovery
+				n(DISCOVERY, {
 					["g"] = bubbleDown({ ["description"] = "This recipe can be discovered by Transmuting Primals or by crafting Flasks, Elixirs and Potions. The type of discovery generally has a better chance to proc if you craft something of a similar type. (Burning Crusade Primals for Primal Transmutes, Burning Crusade Flasks for any of the missing flasks, etc)" }, {
 						recipe(28590),	-- Flask of Blinding Light
 						recipe(28587),	-- Flask of Fortification
@@ -19,7 +19,7 @@ profession(ALCHEMY, {
 						recipe(28581),	-- Transmute: Primal Water to Shadow
 					}),
 				}),
-				n(-37, {	-- Discovery
+				n(DISCOVERY, {
 					recipe(28575, {	-- Major Arcane Protection Potion
 						["description"] = "Craft for a chance to Discover the Cauldron Recipe.",
 						["g"] = {

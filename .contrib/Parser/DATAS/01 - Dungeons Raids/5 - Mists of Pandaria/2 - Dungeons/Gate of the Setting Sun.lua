@@ -2,8 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(303, { 	-- Gate of the Setting Sun
+_.Instances = { tier(MOP_TIER, {
+	inst(303, {	-- Gate of the Setting Sun
 		["lvl"] = 88,
 		["maps"] = { 437, 438 },
 		["groups"] = {

@@ -6,12 +6,12 @@ profession(LEATHERWORKING, {
 			["provider"] = { "i", 114877 },	-- Dirty Note
 			["races"] = ALLIANCE_ONLY,
 			["maps"] = {
-				525,	-- Frostfire Ridge
-				543,	-- Gorgrond
-				550,	-- Nagrand
-				539,	-- Shadowmoon Valley
-				542,	-- Spires of Arak
-				535,	-- Talador
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
 			},
 		}),
 		q(36505, {	-- A Warrior's Shroud
@@ -20,12 +20,12 @@ profession(LEATHERWORKING, {
 			["provider"] = { "i", 116173 },	-- Tattered Frostwolf Shroud
 			["races"] = HORDE_ONLY,
 			["maps"] = {
-				525,	-- Frostfire Ridge
-				543,	-- Gorgrond
-				550,	-- Nagrand
-				539,	-- Shadowmoon Valley
-				542,	-- Spires of Arak
-				535,	-- Talador
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
 			},
 		}),
 	}),

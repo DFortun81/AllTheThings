@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(69, {	-- Feralas
+		m(FERALAS, {
 			n(QUESTS, {
 				q(2974, {	-- A Grim Discovery
 					["u"] = REMOVED_FROM_GAME,
@@ -25,7 +25,7 @@ _.Zones =
 				}),
 				q(25362, {	-- A Grim Discovery
 					["provider"] = { "n", 4544 },	-- Krueg Skullsplitter
-					["coord"] = { 74.8, 43.2, 69 },
+					["coord"] = { 74.8, 43.2, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25361,	-- A New Cloak's Sheen
 				}),
@@ -45,7 +45,7 @@ _.Zones =
 				}),
 				q(25361, {	-- A New Cloak's Sheen (when does this pop up?)
 					["provider"] = { "n", 4544 },	-- Krueg Skullsplitter
-					["coord"] = { 74.8, 43.3, 69 },
+					["coord"] = { 74.8, 43.3, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25345,	-- Faerie Dragon Muisek
 				}),
@@ -61,7 +61,7 @@ _.Zones =
 				}),
 				q(26574, {	-- Adella's Covert Camp
 					["provider"] = { "n", 39653 },	-- Silvia
-					["coord"] = { 56.9, 54.9, 69 },
+					["coord"] = { 56.9, 54.9, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -73,19 +73,19 @@ _.Zones =
 				}),
 				q(25427, {	-- Alpha Strike (A)
 					["provider"] = { "n", 39725 },	-- Adella
-					["coord"] = { 77.2, 56.5, 69 },
+					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25426,	-- War on the Woodpaw
 				}),
 				q(25364, {	-- Alpha Strike (H)
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
-					["coord"] = { 74.9, 42.4, 69 },
+					["coord"] = { 74.9, 42.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25363,	-- War on the Woodpaw
 				}),
 				q(25423, {	-- Ancient Suffering
 					["provider"] = { "n", 40131 },	-- Sensiria
-					["coord"] = { 65.9, 62.8, 69 },
+					["coord"] = { 65.9, 62.8, FERALAS },
 					["sourceQuests"] = {
 						25643,	-- The Darkmist Ruins
 						25350,	-- Lost Apprentice
@@ -99,7 +99,7 @@ _.Zones =
 				}),
 				q(25654, {	-- Dark Heart (A)
 					["provider"] = { "n", 40035 },	-- Erina Willowborn
-					["coord"] = { 51.2, 17.8, 69 },
+					["coord"] = { 51.2, 17.8, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(54921),	-- Dark Crystal Waistband
@@ -118,7 +118,7 @@ _.Zones =
 				}),
 				q(25340, {	-- Dark Heart (H)
 					["provider"] = { "n", 7776 },	-- Talo Thornhoof
-					["coord"] = { 41.5, 15.2, 69 },
+					["coord"] = { 41.5, 15.2, FERALAS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(54921),	-- Dark Crystal Waistband
@@ -151,20 +151,20 @@ _.Zones =
 				}),
 				q(25402, {	-- Estulan's Examination
 					["provider"] = { "n", 39653 },	-- Silvia
-					["coord"] = { 56.9, 54.9, 69 },
+					["coord"] = { 56.9, 54.9, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25401,	-- The Gordunni Orb
 				}),
 				q(25466, {	-- Even More Fuel for the Zapping
 					["provider"] = { "n", 14637 },	-- Zorbin Fandazzle
-					["coord"] = { 48.6, 44.7, 69 },
+					["coord"] = { 48.6, 44.7, FERALAS },
 					["g"] = {
 						i(19039),	-- Zorbin's Water Resistant Hat
 					},
 				}),
 				q(27133, {	-- Eyes in the Sky
 					["provider"] = { "n", 3936 },	-- Shandris Feathermoon
-					["coord"] = { 46.0, 49.1, 69 },
+					["coord"] = { 46.0, 49.1, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -176,7 +176,7 @@ _.Zones =
 				}),
 				q(25345, {	-- Faerie Dragon Muisek
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.3, 69 },
+					["coord"] = { 74.4, 43.3, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25338,	-- Treant Muisek
 				}),
@@ -190,20 +190,21 @@ _.Zones =
 				}),
 				q(25468, {	-- Forces of Nature: Faerie Dragons
 					["provider"] = { "n", 40913 },	-- Handler Jesana
-					["coord"] = { 77.0, 56.6, 69 },
+					["coord"] = { 77.0, 56.6, FERALAS },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25410,	-- Forces of Nature: Treants
 				}),
 				q(25409, {	-- Forces of Nature: Hippogryphs
 					["provider"] = { "n", 40078 },	-- Handler Tessina
-					["coord"] = { 57.1, 53.8, 69 },
+					["coord"] = { 57.1, 53.8, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25407,	-- Forces of Nature: Wisps
 				}),
 				q(25469, {	-- Forces of Nature: Mountain Giants
 					["provider"] = { "n", 40913 },	-- Handler Jesana
-					["coord"] = { 77.0, 56.6, 69 },
+					["coord"] = { 77.0, 56.6, FERALAS },
 					["races"] = ALLIANCE_ONLY,
-					--["sourceQuest"] = 25468,	-- Forces of Nature: Faerie Dragons (6/6/2019 Wowhead shows this as a chain but in game she offered me both quests at same time)
+					["sourceQuest"] = 25410,	-- Forces of Nature: Treants
 					["g"] = {
 						i(54885),	-- Power of the Hippogryph
 						i(54886),	-- Power of the Mountain Giant
@@ -213,13 +214,13 @@ _.Zones =
 				}),
 				q(25410, {	-- Forces of Nature: Treants
 					["provider"] = { "n", 40078 },	-- Handler Tessina
-					["coord"] = { 57.1, 53.8, 69 },
+					["coord"] = { 57.1, 53.8, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25409,	-- Forces of Nature: Hippogryphs
 				}),
 				q(25407, {	-- Forces of Nature: Wisps
 					["provider"] = { "n", 40078 },	-- Handler Tessina
-					["coord"] = { 57.1, 53.8, 69 },
+					["coord"] = { 57.1, 53.8, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7721, {	-- Fuel for the Zapping
@@ -232,19 +233,20 @@ _.Zones =
 				}),
 				q(26402, {	-- General Shandris Feathermoon
 					["provider"] = { "n", 40032 },	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, 69 },
+					["coord"] = { 50.7, 17.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true, 	-- If you picked up or done any quest at Feathermoon Stronghold, this quest stops being available
+					["isBreadcrumb"] = true,
 					["sourceQuest"] = 25398,	-- Sealing the Dream
+					["description"] = "If you picked up or done any quest at Feathermoon Stronghold, this quest stops being available",
 				}),
 				q(25458, {	-- General Skessesh
 					["provider"] = { "n", 39723 },	-- Tambre
-					["coord"] = { 32.6, 45.7, 69 },
+					["coord"] = { 32.6, 45.7, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25406, {	-- Gordok Guards
 					["provider"] = { "n", 39653 },	-- Silvia
-					["coord"] = { 56.9, 54.9, 69 },
+					["coord"] = { 56.9, 54.9, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25400,	-- The Gordunni Threat
 				}),
@@ -259,12 +261,12 @@ _.Zones =
 				}),
 				q(25399, {	-- Hatecrest Forces
 					["provider"] = { "n", 39726 },	-- Tambre
-					["coord"] = { 32.6, 45.7, 69 },
+					["coord"] = { 32.6, 45.7, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25337, {	-- Hippogryph Muisek
 					["provider"] = { "n", 39894 },	-- Gombana
-					["coord"] = { 52.2, 48.0, 69 },
+					["coord"] = { 52.2, 48.0, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25336,	-- Testing the Vessel
 				}),
@@ -295,7 +297,7 @@ _.Zones =
 				}),
 				q(25453, {	-- Improved Quality
 					["provider"] = { "n", 7854 },	-- Hangdor Swiftstrider
-					["coord"] = { 52.8, 47.1, 69 },
+					["coord"] = { 52.8, 47.1, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25452,	-- The Mark of Quality
 					["g"] = {
@@ -305,12 +307,12 @@ _.Zones =
 				}),
 				q(25432, {	-- It's not "Ogre" Yet
 					["provider"] = { "n", 39725 },	-- Adella
-					["coord"] = { 77.2, 56.5, 69 },
+					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27063, {	-- Looming Threat
 					["provider"] = { "n", 40032 },	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, 69 },
+					["coord"] = { 50.7, 17.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -324,7 +326,7 @@ _.Zones =
 				}),
 				q(25333, {	-- Might of the Sentinels
 					["provider"] = { "n", 39653 },	-- Silvia
-					["coord"] = { 56.9, 54.9, 69 },
+					["coord"] = { 56.9, 54.9, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25406,	-- Gordok Guards
@@ -339,7 +341,7 @@ _.Zones =
 				}),
 				q(25329, {	-- Might of the Stonemaul
 					["provider"] = { "n", 39656 },	-- Orhan Ogreblade
-					["coord"] = { 51.9, 47.9, 69 },
+					["coord"] = { 51.9, 47.9, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25344,	-- Ogre Abduction
 					["g"] = {
@@ -351,7 +353,7 @@ _.Zones =
 				}),
 				q(25394, {	-- More than Illness (A)
 					["provider"] = { "n", 40032 },	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, 69 },
+					["coord"] = { 50.7, 17.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25447,	-- Signs of Change
 					["g"] = {
@@ -365,7 +367,7 @@ _.Zones =
 				}),
 				q(25230, {	-- More than Illness (H)
 					["provider"] = { "n", 39377 },	-- Konu Runetotem
-					["coord"] = { 41.3, 15.4, 69 },
+					["coord"] = { 41.3, 15.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25210,	-- Signs of Change
 					["g"] = {
@@ -385,7 +387,7 @@ _.Zones =
 				}),
 				q(25346, {	-- Mountain Giant Muisek
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.3, 69 },
+					["coord"] = { 74.4, 43.3, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25345,	-- Faerie Dragon Muisek
 				}),
@@ -399,7 +401,7 @@ _.Zones =
 				}),
 				q(25403, {	-- Ogre Abduction (A)
 					["provider"] = { "n", 40052 },	-- Estulan
-					["coord"] = { 57.0, 55.4, 69 },
+					["coord"] = { 57.0, 55.4, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25402,	-- Estulan's Examination
 					["g"] = {
@@ -412,7 +414,7 @@ _.Zones =
 				}),
 				q(25344, {	-- Ogre Abduction (H)
 					["provider"] = { "n", 39840 },	-- Swar'jan
-					["coord"] = { 51.9, 46.6, 69 },
+					["coord"] = { 51.9, 46.6, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25342,	-- Talk to Swar'jan
 					["g"] = {
@@ -425,7 +427,7 @@ _.Zones =
 				}),
 				q(27134, {	-- Ogre in the Field
 					["provider"] = { "n", 39656 },	-- Orhan Ogreblade
-					["coord"] = { 51.9, 47.9, 69 },
+					["coord"] = { 51.9, 47.9, FERALAS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25454, {	-- Perfect Yeti Hide
@@ -442,7 +444,7 @@ _.Zones =
 				}),
 				q(25463, {	-- Report to Silvia
 					["provider"] = { "n", 3936 },	-- Shandris Feathermoon
-					["coord"] = { 46.0, 49.1, 69 },
+					["coord"] = { 46.0, 49.1, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25458,	-- General Skessesh
 					["isBreadcrumb"] = true,
@@ -453,7 +455,7 @@ _.Zones =
 				}),
 				q(25476, {	-- Rescue OOX-22/FE!
 					["provider"] = { "n", 7807 },	-- Homing Robot OOX-22/FE
-					["coord"] = { 53.3, 55.6, 69 },
+					["coord"] = { 53.3, 55.6, FERALAS },
 					["sourceQuest"] = 25475,	-- Find OOX-22/FE!
 					["g"] = {
 						i(9647),	-- Failed Flying Experiment
@@ -461,13 +463,13 @@ _.Zones =
 					},
 				}),
 				q(25645, {	-- Return to Sage Palerunner
-					["coord"] = { 65.8, 62.8, 69 },
+					["coord"] = { 65.8, 62.8, FERALAS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 203134 },	-- Empty Pedestal
 					["sourceQuest"] = 25368,	-- Verinias the Twisted
 				}),
 				q(26401, {	-- Return to Vestia
-					["coord"] = { 65.8, 62.8, 69 },
+					["coord"] = { 65.8, 62.8, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 203134 },	-- Empty Pedestal
 					["sourceQuest"] = 25368,	-- Verinias the Twisted
@@ -483,13 +485,13 @@ _.Zones =
 				}),
 				q(25252, {	-- Rulers of Dire Maul
 					["provider"] = { "n", 39656 },	-- Orhan Ogreblade
-					["coord"] = { 51.9, 48.0, 69 },
+					["coord"] = { 51.9, 48.0, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25209,	-- The Gordunni Threat
 				}),
 				q(25433, {	-- Sasquatch Sighting (A)
 					["provider"] = { "n", 39725 },	-- Adella
-					["coord"] = { 77.2, 56.5, 69 },
+					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25432,	-- It's Not "Ogre" Yet
 					["g"] = {
@@ -501,7 +503,7 @@ _.Zones =
 				}),
 				q(25374, {	-- Sasquatch Sighting (H)
 					["provider"] = { "n", 39847 },	-- Chief Spirithorn
-					["coord"] = { 74.5, 42.8, 69 },
+					["coord"] = { 74.5, 42.8, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25373,	-- The Hilltop Threat
 					["g"] = {
@@ -513,19 +515,19 @@ _.Zones =
 				}),
 				q(27129, {	-- Saving Warpwood (A)
 					["provider"] = { "n", 40032 },	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, 69 },
+					["coord"] = { 50.7, 17.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(27130, {	-- Saving Warpwood (H)
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
-					["coord"] = { 74.9, 42.4, 69 },
+					["coord"] = { 74.9, 42.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(25398, {	-- Sealing the Dream (A)
 					["provider"] = { "n", 40032 },	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, 69 },
+					["coord"] = { 50.7, 17.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25396,	-- Tears of Stone
@@ -539,7 +541,7 @@ _.Zones =
 				}),
 				q(25250, {	-- Sealing the Dream (H)
 					["provider"] = { "n", 39377 },	-- Konu Runetotem
-					["coord"] = { 41.3, 15.4, 69 },
+					["coord"] = { 41.3, 15.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						25237,	-- Tears of Stone
@@ -553,7 +555,7 @@ _.Zones =
 				}),
 				q(25447, {	-- Signs of Change (A)
 					["provider"] = { "n", 40032 },	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, 69 },
+					["coord"] = { 50.7, 17.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						28511,	-- Hero's Call: Feralas!
@@ -562,7 +564,7 @@ _.Zones =
 				}),
 				q(25210, {	-- Signs of Change (H)
 					["provider"] = { "n", 39377 },	-- Konu Runetotem
-					["coord"] = { 41.3, 15.4, 69 },
+					["coord"] = { 41.3, 15.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26589,	-- The Wilds of Feralas
@@ -571,20 +573,20 @@ _.Zones =
 				}),
 				q(25436, {	-- Spiteful Sisters
 					["provider"] = { "n", 39725 },	-- Adella
-					["coord"] = { 77.2, 56.5, 69 },
+					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25429,	-- Spiteful Sisters
 				}),
 				q(25465, {	-- Still With The Zapped Giants
 					["provider"] = { "n", 14637 },	-- Zorbin Fandazzle
-					["coord"] = { 48.6, 44.7, 69 },
+					["coord"] = { 48.6, 44.7, FERALAS },
 					["g"] = {
 						i(54966),	-- Zorbin's Mega-Chopper
 					},
 				}),
 				q(25431, {	-- Stinglasher (A)
 					["provider"] = { "n", 39725 },	-- Adella
-					["coord"] = { 77.2, 56.5, 69 },
+					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25427,	-- Alpha Strike
 					["g"] = {
@@ -598,7 +600,7 @@ _.Zones =
 				}),
 				q(25369, {	-- Stinglasher (H)
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
-					["coord"] = { 74.9, 42.4, 69 },
+					["coord"] = { 74.9, 42.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25366,	-- The Battle Plans
 					["g"] = {
@@ -607,7 +609,7 @@ _.Zones =
 				}),
 				q(25379, {	-- Taerar's Fall
 					["provider"] = { "n", 39407 },	-- Ysondre
-					["coord"] = { 81.5, 42.4, 69 },
+					["coord"] = { 81.5, 42.4, FERALAS },
 					["sourceQuests"] = {
 						25378,	-- Ysondre's Call (horde)
 						25437,	-- Ysondre's Call (alliance)
@@ -615,37 +617,37 @@ _.Zones =
 				}),
 				q(25342, {	-- Talk to Swar'jan
 					["provider"] = { "n", 39656 },	-- Orhan Ogreblade
-					["coord"] = { 51.9, 48.0, 69 },
+					["coord"] = { 51.9, 48.0, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25341,	-- The Gordunni Orb
 				}),
 				q(25434, {	-- Taming the Tamers (A)
 					["provider"] = { "n", 39725 },	-- Adella
-					["coord"] = { 77.2, 56.5, 69 },
+					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25432,	-- It's Not "Ogre" Yet
 				}),
 				q(25375, {	-- Taming the Tamers (H)
 					["provider"] = { "n", 39847 },	-- Chief Spirithorn
-					["coord"] = { 74.5, 42.8, 69 },
+					["coord"] = { 74.5, 42.8, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25373,	-- The Hilltop Threat
 				}),
 				q(25396, {	-- Tears of Stone (A)
 					["provider"] = { "n", 40032 },	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, 69 },
+					["coord"] = { 50.7, 17.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25394,	-- More Than Illness
 				}),
 				q(25237, {	-- Tears of Stone (H)
 					["provider"] = { "n", 39377 },	-- Konu Runetotem
-					["coord"] = { 41.3, 15.4, 69 },
+					["coord"] = { 41.3, 15.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25230,	-- More Than Illness
 				}),
 				q(25208, {	-- Tell Silvia
 					["provider"] = { "n", 40052 },	-- Estulan
-					["coord"] = { 57.0, 55.4, 69 },
+					["coord"] = { 57.0, 55.4, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25403,	-- Ogre Abduction
 				}),
@@ -657,18 +659,18 @@ _.Zones =
 				}),
 				q(25336, {	-- Testing the Vessel
 					["provider"] = { "n", 39894 },	-- Gombana
-					["coord"] = { 52.2, 48.0, 69 },
+					["coord"] = { 52.2, 48.0, FERALAS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25304, {	-- The Battle of Sardor
 					["provider"] = { "n", 3936 },	-- Shandris Feathermoon
-					["coord"] = { 46.0, 49.1, 69 },
+					["coord"] = { 46.0, 49.1, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(2903,  {	-- The Battle Plans
 					["u"] = REMOVED_FROM_GAME,
-					["coord"] = { 71.6, 55.9, 69 },
+					["coord"] = { 71.6, 55.9, FERALAS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 142195 },	-- Woodpaw Battle Map
 					["g"] = {
@@ -677,7 +679,7 @@ _.Zones =
 					},
 				}),
 				q(25366, {	-- The Battle Plans
-					["coord"] = { 71.6, 55.9, 69 },
+					["coord"] = { 71.6, 55.9, FERALAS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 142195 },	-- Woodpaw Battle Map
 					["sourceQuest"] = 25365,	-- Woodpaw Investigation
@@ -699,7 +701,7 @@ _.Zones =
 				}),
 				q(25422, {	-- The Darkmist Legacy
 					["provider"] = { "n", 40131 },	-- Sensiria
-					["coord"] = { 65.9, 62.8, 69 },
+					["coord"] = { 65.9, 62.8, FERALAS },
 					["sourceQuests"] = {
 						25643,	-- The Darkmist Ruins
 						25350,	-- Lost Apprentice
@@ -707,12 +709,12 @@ _.Zones =
 				}),
 				q(25643, {	-- The Darkmist Ruins
 					["provider"] = { "n", 5390 },	-- Sage Palerunner
-					["coord"] = { 75.0, 42.7, 69 },
+					["coord"] = { 75.0, 42.7, FERALAS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25641, {	-- The Flow of Muisek
 					["provider"] = { "n", 39894 },	-- Gombana
-					["coord"] = { 52.2, 48.0, 69 },
+					["coord"] = { 52.2, 48.0, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25337,	-- Hippogryph Muisek
 				}),
@@ -724,12 +726,12 @@ _.Zones =
 				}),
 				q(25401, {	-- The Gordunni Orb (A)
 					["provider"] = { "n", 39653 },	-- Silvia
-					["coord"] = { 56.9, 54.9, 69 },
+					["coord"] = { 56.9, 54.9, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25341, {	-- The Gordunni Orb (H)
 					["provider"] = { "n", 39656 },	-- Orhan Ogreblade
-					["coord"] = { 51.9, 47.9, 69 },
+					["coord"] = { 51.9, 47.9, FERALAS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(2978, {	-- The Gordunni Scroll
@@ -739,53 +741,53 @@ _.Zones =
 				}),
 				q(25400, {	-- The Gordunni Threat (A)
 					["provider"] = { "n", 39653 },	-- Silvia
-					["coord"] = { 56.9, 54.9, 69 },
+					["coord"] = { 56.9, 54.9, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25209, {	-- The Gordunni Threat (H)
 					["provider"] = { "n", 39656 },	-- Orhan Ogreblade
-					["coord"] = { 51.9, 47.9, 69 },
+					["coord"] = { 51.9, 47.9, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25386,	-- To Stonemaul Hold
 				}),
 				q(25486, {	-- The Grimtotem are Coming
 					["provider"] = { "n", 39946 },	-- Caryssia Moonhunter
-					["coord"] = { 86.1, 45.3, 69 },
+					["coord"] = { 86.1, 45.3, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28503,    -- Hero's Call: Thousand Needles!
 				}),
 				q(27131, {	-- The Highborne (A)
 					["provider"] = { "n", 40032 },	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, 69 },
+					["coord"] = { 50.7, 17.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(27132, {	-- The Highborne (H)
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
-					["coord"] = { 74.9, 42.4, 69 },
+					["coord"] = { 74.9, 42.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(25373, {	-- The Hilltop Threat
 					["provider"] = { "n", 39847 },	-- Chief Spirithorn
-					["coord"] = { 74.5, 42.8, 69 },
+					["coord"] = { 74.5, 42.8, FERALAS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25397, {	-- The Land, Corrupted (A)
 					["provider"] = { "n", 40032 },	-- Telaron Windflight
-					["coord"] = { 50.7, 17.2, 69 },
+					["coord"] = { 50.7, 17.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25394,	-- More Than Illness
 				}),
 				q(25241, {	-- The Land, Corrupted (H)
 					["provider"] = { "n", 39377 },	-- Konu Runetotem
-					["coord"] = { 41.3, 15.4, 69 },
+					["coord"] = { 41.3, 15.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25230,	-- More Than Illness
 				}),
 				q(25350, {	-- The Lost Apprentice
 					["provider"] = { "n", 40132 },	-- Vestia Moonspear
-					["coord"] = { 57.2, 55.0, 69 },
+					["coord"] = { 57.2, 55.0, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2822, {	-- The Mark of Quality
@@ -799,7 +801,7 @@ _.Zones =
 				}),
 				q(25449, {	-- The Mark of Quality (A)
 					["provider"] = { "n", 40226 },	-- Pratt McGrubben
-					["coord"] = { 45.4, 41.3, 69 },
+					["coord"] = { 45.4, 41.3, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(9630),	-- Pratt's Handcrafted Boots
@@ -810,7 +812,7 @@ _.Zones =
 				}),
 				q(25452, {	-- The Mark of Quality (H)
 					["provider"] = { "n", 7854 },	-- Jangdor Swiftstrider
-					["coord"] = { 52.8, 47.1, 69 },
+					["coord"] = { 52.8, 47.1, FERALAS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(9633),	-- Jangdor's Handcrafted Boots
@@ -839,7 +841,7 @@ _.Zones =
 				}),
 				q(25448, {	-- The Northspring Menace
 					["provider"] = { "n", 40035 },	-- Erina Willowborn
-					["coord"] = { 51.2, 17.8, 69 },
+					["coord"] = { 51.2, 17.8, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2975, {	-- The Ogres of Feralas
@@ -861,19 +863,19 @@ _.Zones =
 				}),
 				q(25387, {	-- To Camp Mojache
 					["provider"] = { "n", 39656 },	-- Orhan Ogreblade
-					["coord"] = { 51.9, 48.0, 69 },
+					["coord"] = { 51.9, 48.0, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25329,	-- Might of the Stonoemaul
 				}),
 				q(25481, {	-- To New Thalanaar
 					["provider"] = { "n", 40369 },	-- Falfindel Waywarder
-					["coord"] = { 77.2, 56.5, 69 },
+					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(25386, {	-- To Stonemaul Hold
 					["provider"] = { "n", 39377 },	-- Konu Runetotem
-					["coord"] = { 41.3, 15.4, 69 },
+					["coord"] = { 41.3, 15.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 25250,	-- Sealing the Dream
@@ -892,18 +894,18 @@ _.Zones =
 				}),
 				q(25338, {	-- Treant Muisek
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.3, 69 },
+					["coord"] = { 74.4, 43.3, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25641,	-- The Flow of Muisek
 				}),
 				q(25349, {	-- Twisted Sisters
 					["provider"] = { "n", 39847 },	-- Chief Spirithorn
-					["coord"] = { 74.5, 42.8, 69 },
+					["coord"] = { 74.5, 42.8, FERALAS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25488, {	-- Two If By Boat
 					["provider"] = { "n", 39992 },	-- Rendow
-					["coord"] = { 88.5, 44.4, 69 },
+					["coord"] = { 88.5, 44.4, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25486,	-- The Grimtotem Are Coming
 					["g"] = {
@@ -920,12 +922,12 @@ _.Zones =
 				}),
 				q(25339, {	-- Vengeance on the Northspring
 					["provider"] = { "n", 7776 },	-- Talo Thornhoof
-					["coord"] = { 41.5, 15.2, 69 },
+					["coord"] = { 41.5, 15.2, FERALAS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25368, {	-- Verinias the Twisted
 					["provider"] = { "n", 40131 },	-- Sensiria
-					["coord"] = { 65.9, 62.8, 69 },
+					["coord"] = { 65.9, 62.8, FERALAS },
 					["g"] = {
 						i(54924),	-- Twisted Leggings
 						i(54925),	-- Luring Footpads
@@ -952,12 +954,12 @@ _.Zones =
 				}),
 				q(25426, {	-- War on the Woodpaw (A)
 					["provider"] = { "n", 39725 },	-- Adella
-					["coord"] = { 77.2, 56.5, 69 },
+					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25363, {	-- War on the Woodpaw (H)
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
-					["coord"] = { 74.9, 42.4, 69 },
+					["coord"] = { 74.9, 42.4, FERALAS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(3129,  {	-- Weapons of Spirit
@@ -972,7 +974,7 @@ _.Zones =
 				}),
 				q(25391, {	-- Weapons of Spirit
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.3, 69 },
+					["coord"] = { 74.4, 43.3, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25346,	-- Mountain Giant Muisek
 					["g"] = {
@@ -1031,25 +1033,25 @@ _.Zones =
 				}),
 				q(25365, {	-- Woodpaw Investigation
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
-					["coord"] = { 74.9, 42.4, 69 },
+					["coord"] = { 74.9, 42.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25363,	-- War on the Woodpaw
 				}),
 				q(25437, {	-- Ysondre's Call (A)
 					["provider"] = { "n", 39725 },	-- Adella
-					["coord"] = { 77.2, 56.5, 69 },
+					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25436,	-- Spiteful Sisters
 				}),
 				q(25378, {	-- Ysondre's Call (H)
 					["provider"] = { "n", 39847 },	-- Chief Spirithorn
-					["coord"] = { 74.5, 42.8, 69 },
+					["coord"] = { 74.5, 42.8, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25349,	-- Twisted Sisters
 				}),
 				q(25438, {	-- Ysondre's Farewell (A)
 					["provider"] = { "n", 39407 },	-- Ysondre
-					["coord"] = { 81.5, 42.4, 69 },
+					["coord"] = { 81.5, 42.4, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25379,	-- Taerar's Fall
 					["g"] = {
@@ -1060,7 +1062,7 @@ _.Zones =
 				}),
 				q(25383, {	-- Ysondre's Farewell (H)
 					["provider"] = { "n", 39407 },	-- Ysondre
-					["coord"] = { 81.5, 42.4, 69 },
+					["coord"] = { 81.5, 42.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25379,	-- Taerar's Fall
 					["g"] = {
@@ -1078,7 +1080,7 @@ _.Zones =
 				}),
 				q(25429, {	-- Zukk'ash Infestation (A)
 					["provider"] = { "n", 39725 },	-- Adella
-					["coord"] = { 77.2, 56.5, 69 },
+					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25427,	-- Alpha Strike
 				}),
@@ -1089,7 +1091,7 @@ _.Zones =
 				}),
 				q(25367, {	-- Zukk'ash Infestation (H)
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
-					["coord"] = { 74.9, 42.4, 69 },
+					["coord"] = { 74.9, 42.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25366,	-- The Battle Plans
 				}),
@@ -1105,4 +1107,8 @@ _.Zones =
 			}),
 		}),
 	}),
+};
+_.HiddenQuestTriggers = {
+--	Druid
+	q(42078),	-- Ysondre's Seal. If you are druid and done the quest 25398 Sealing the Dream you can reopen the Feralas portal.
 };

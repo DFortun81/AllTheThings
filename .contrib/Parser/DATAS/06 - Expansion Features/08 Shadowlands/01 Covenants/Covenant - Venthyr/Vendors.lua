@@ -4,21 +4,23 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
-		n(-949, {	-- Covenant: Venthyr
+	tier(SL_TIER, {
+		n(-949, {	-- Venthyr
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr
 			--	TODO: quest through as Venthyr and unlock Adventures Scouting Map first instead of Mirror Network to test alternative version of "Our True Purpose"
 			-- "Our True Purpose" 59324 no longer shows as a 'valid Quest' from the server (2020-12-04), meaning likely no character has acquired it this week (2) of the expac?
 			-- But it is complete for my main, as well as 62921... /shrug
 			["maps"] = {
-				1699,	-- Sinfall Reaches
-				1700,	-- Sinfall Depths
+				SINFALL_REACHES,
+				SINFALL_DEPTHS,
 			},
 			["g"] = {
 				n(VENDORS, {
 					n(174710, {	-- Chachi the Artiste <Renown Quartermaster>
-						["coord"] = { 54.0, 25.6, 1699 },
-						["g"] = {
+						["coord"] = { 54.0, 25.6, SINFALL_REACHES },
+						["g"] = sharedData(
+							{ ["customCollect"] = "SL_COV_VEN", }	-- Venthyr
+							, {
 							i(184665, {	-- Chronicle of Lost Memories
 								["cost"] = { { "c", 1885, 35 } },		-- 35x Grateful Offering
 							}),
@@ -26,16 +28,20 @@ _.ExpansionFeatures =
 							--	appears on the vendor at Renown 14, not sure if this is the same or different for other covenants
 								["cost"] = { { "c", 1813, 250 } },	-- 250x Reservoir Anima
 							}),
-					--[[	TODO: this mount doesn't show up on the vendor for me at Renown 13.  does it show up when you reach the Renown required (39)?
 							i(182332, {	-- Gravestone Battle Armor (MOUNT!)
-								["cost"] = { { "c", 1813, 3000 } },
+								["cost"] = {
+									{ "c", 1813, 100 },	-- 100x Reservoir Anima
+									{ "c", 1885, 50 },	-- 50x Grateful Offering
+								},
 							}),
-					--]]
 							i(180461, {	-- Horrid Dredwing (MOUNT!)
 								["cost"] = {
 									{ "c", 1813, 5000 },	-- 5,000x Reservoir Anima
 									{ "c", 1885, 100 },		-- 100x Grateful Offering
 								},
+							}),
+							i(186478, {	-- Obsidian Gravewing (MOUNT!)
+								["cost"] = { { "c", 1813, 7500 } },	-- 7,500x Reservoir Anima
 							}),
 							i(183715, {	-- Sinfall Gargon (MOUNT!)
 								["cost"] = { { "c", 1813, 5000 } },	-- 5,000x Reservoir Anima
@@ -189,6 +195,47 @@ _.ExpansionFeatures =
 								["cost"] = {
 									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
 									{ "c", 1885, 15 },		-- 15x Grateful Offering
+								},
+							}),
+							i(186508, {	-- Ensemble: Court Inquisitor's Vestments
+								["cost"] = { { "c", 1813, 10000 } },	-- 10,000x Reservoir Anima
+								["g"] = {
+									i(185097),	-- Court Inquisitor's Cape
+									i(185091),	-- Court Inquisitor's Handwraps
+									i(185092),	-- Court Inquisitor's Hood
+									i(185093),	-- Court Inquisitor's Leggings
+									i(185094),	-- Court Inquisitor's Mantle
+									i(185089),	-- Court Inquisitor's Robe
+									i(185095),	-- Court Inquisitor's Sash
+									i(185090),	-- Court Inquisitor's Slippers
+									i(185096),	-- Court Inquisitor's Wraps
+								},
+							}),
+							i(186510, {	-- Ensemble: Sinful Inquisitor's Vestments
+								["cost"] = { { "c", 1813, 10000 } },	-- 10,000x Reservoir Anima
+								["g"] = {
+									i(185118),	-- Sinful Inquisitor's Handwraps
+									i(185119),	-- Sinful Inquisitor's Hood
+									i(185120),	-- Sinful Inquisitor's Leggings
+									i(185121),	-- Sinful Inquisitor's Mantle
+									i(185116),	-- Sinful Inquisitor's Robes
+									i(185122),	-- Sinful Inquisitor's Sash
+									i(185124),	-- Sinful Inquisitor's Shawl
+									i(185117),	-- Sinful Inquisitor's Slippers
+									i(185123),	-- Sinful Inquisitor's Wraps
+								},
+							}),
+							i(186509, {	-- Ensemble: Sinful Venthyr Attire
+								["cost"] = { { "c", 1813, 10000 } },	-- 10,000x Reservoir Anima
+								["g"] = {
+									i(185083),	-- Sinfall Venthyr Handwraps
+									i(185084),	-- Sinfall Venthyr Hood
+									i(185085),	-- Sinfall Venthyr Leggings
+									i(185086),	-- Sinfall Venthyr Sash
+									i(185088),	-- Sinfall Venthyr Shawl
+									i(185082),	-- Sinfall Venthyr Slippers
+									i(185081),	-- Sinfall Venthyr Vestments
+									i(185087),	-- Sinfall Venthyr Wraps
 								},
 							}),
 							i(181073, {	-- Fearstalker's Crimson Belt
@@ -362,10 +409,10 @@ _.ExpansionFeatures =
 									{ "c", 1885, 15 },		-- 15x Grateful Offering
 								},
 							}),
-						},
+						}),
 					}),
 					n(175406, {	-- Gregor the Pallidblade <Sinfall Quartermaster>
-						["coord"] = { 70.6, 27.3, 1700 },	-- Sinfall Depths
+						["coord"] = { 70.6, 27.3, SINFALL_DEPTHS },
 						["g"] = {
 							i(181143, {	-- Claw of the Stoneborn Executioner
 								["cost"] = {
@@ -557,8 +604,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(175407, {	-- Lord Afanas <Normal Nathrian Weaponsmith>
-						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
-						["coord"] = { 55.2, 54.1, 1700 },
+						["coord"] = { 55.2, 54.1, SINFALL_DEPTHS },
 						["g"] = bubbleDown({
 							["modID"] = 3,	-- Normal
 							["customCollect"] = { "SL_COV_VEN" }	-- Venthyr Covenant
@@ -765,11 +811,9 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),
-					n(174183, {	-- Solivane <Raid Finder Nathrian Weaponsmith>
-						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
-						-- ^ i'm not having this issue, but the modID doesn't seem to be picking up at all.  looking at the individual items shows the 'normal' version of the currencies instead of the LFR version
-						-- and when you look at the currencies in the dungeon journal or in an ATT list, none of the things they buy show up (doesn't appear on LFR or normal currency)
-						["coord"] = { 55.1, 46.1, 1700 },
+					n(178176, {	-- Night Guardian Jethraasa <Raid Finder Nathrian Weaponsmith>
+						["coord"] = { 55.1, 46.1, SINFALL_DEPTHS },
+						["cr"] = 174183,	-- Solivane <Raid Finder Nathrian Weaponsmith> (no longer the vendor for anyone who has progressed through Chapter 5/9 of Chains of Domination)
 						["g"] = bubbleDown({
 							["customCollect"] = { "SL_COV_VEN" },	-- Venthyr Covenant
 							["modID"] = 4,	-- LFR
@@ -980,8 +1024,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(174709, {	-- Stoneweaver McConnell <Heroic Nathrian Weaponsmith>
-						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
-						["coord"] = { 45.4, 65.0, 1700 },
+						["coord"] = { 45.4, 65.0, SINFALL_DEPTHS },
 						["g"] = bubbleDown({
 							["modID"] = 5,	-- Heroic
 							["customCollect"] = { "SL_COV_VEN" }	-- Venthyr Covenant
@@ -1189,8 +1232,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175369, {	-- Vorpalia <Mythic Nathrian Weaponsmith>
-						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
-						["coord"] = { 40.3, 46.1, 1700 },
+						["coord"] = { 40.3, 46.1, SINFALL_DEPTHS },
 						["g"] = bubbleDown({
 							["modID"] = 6,	-- Mythic
 							["customCollect"] = { "SL_COV_VEN" }	-- Venthyr Covenant
@@ -1402,3 +1444,64 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(63633),	-- learning Ensemble: Sinful Venthyr Attire
+	q(63634),	-- learning Ensemble: Court Inquisitor's Vestments
+};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10100, {	-- Shadowlands
+		n(-949, {	-- Venthyr
+			n(-163, {	-- Armor
+				n(-43, {	-- Cloth
+					i(179466),	-- 9.0 Covenant - Revendreth - Cloth - Head
+					i(179467),	-- 9.0 Covenant - Revendreth - Cloth - Chest
+					i(179468),	-- 9.0 Covenant - Revendreth - Cloth - Feet
+					i(179469),	-- 9.0 Covenant - Revendreth - Cloth - Hands
+					i(179470),	-- 9.0 Covenant - Revendreth - Cloth - Legs
+					i(179471),	-- 9.0 Covenant - Revendreth - Cloth - Shoulders
+					i(179472),	-- 9.0 Covenant - Revendreth - Cloth - Waist
+					i(179473),	-- 9.0 Covenant - Revendreth - Cloth - Wrists
+				}),
+				n(-44, {	-- Leather
+					i(179457),	-- 9.0 Covenant - Revendreth - Leather - Head
+					i(179458),	-- 9.0 Covenant - Revendreth - Leather - Chest
+					i(179459),	-- 9.0 Covenant - Revendreth - Leather - Feet
+					i(179460),	-- 9.0 Covenant - Revendreth - Leather - Hands
+					i(179461),	-- 9.0 Covenant - Revendreth - Leather - Legs
+					i(179462),	-- 9.0 Covenant - Revendreth - Leather - Shoulders
+					i(179463),	-- 9.0 Covenant - Revendreth - Leather - Waist
+					i(179464),	-- 9.0 Covenant - Revendreth - Leather - Wrists
+				}),
+				n(-45, {	-- Mail
+					i(179475),	-- 9.0 Covenant - Revendreth - Mail Head
+					i(179476),	-- 9.0 Covenant - Revendreth - Mail Chest
+					i(179477),	-- 9.0 Covenant - Revendreth - Mail Feet
+					i(179478),	-- 9.0 Covenant - Revendreth - Mail Hands
+					i(179479),	-- 9.0 Covenant - Revendreth - Mail Legs
+					i(179480),	-- 9.0 Covenant - Revendreth - Mail Shoulders
+					i(179481),	-- 9.0 Covenant - Revendreth - Mail Waist
+					i(179482),	-- 9.0 Covenant - Revendreth - Mail Wrists
+				}),
+				n(-46, {	-- Plate
+					i(174198),	-- 9.0 Covenant - Revendreth - Plate Head
+					i(174199),	-- 9.0 Covenant - Revendreth - Plate Chest
+					i(174200),	-- 9.0 Covenant - Revendreth - Plate Feet
+					i(174201),	-- 9.0 Covenant - Revendreth - Plate Hands
+					i(174202),	-- 9.0 Covenant - Revendreth - Plate Legs
+					i(174203),	-- 9.0 Covenant - Revendreth - Plate Shoulders
+					i(174204),	-- 9.0 Covenant - Revendreth - Plate Waist
+					i(174205),	-- 9.0 Covenant - Revendreth - Plate Wrists
+				}),
+				n(-322, {	-- Cloaks
+					i(174206),	-- 9.0 Covenant - Revendreth - Plate Cloak
+					i(179465),	-- 9.0 Covenant - Revendreth - Leather - Cloak
+					i(179474),	-- 9.0 Covenant - Revendreth - Cloth - Cloak
+					i(179483),	-- 9.0 Covenant - Revendreth - Mail Cloak
+					i(181812),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 1 - Red
+					i(181813),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 2 - Black
+					i(181814),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 3 - Red
+				}),
+			}),
+		}),
+	}),
+});

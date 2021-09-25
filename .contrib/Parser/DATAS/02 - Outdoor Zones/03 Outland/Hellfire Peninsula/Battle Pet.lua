@@ -1,13 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 -- #if AFTER MOP
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(635, {	-- Adder
 					["cr"] = 61325,	-- Adder
 				}),
@@ -21,6 +20,6 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
 -- #endif

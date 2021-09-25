@@ -32,7 +32,7 @@ namespace ATT
             ObjectData.Create("classID",            "cl",           "_.CreateCharacterClass", "f");
             ObjectData.Create("criteriaID",         "crit",         "_.CreateAchievementCriteria", "f");
             ObjectData.Create("difficultyID",       "d",            "_.CreateDifficulty", "f");
-            ObjectData.Create<EncounterData>("encounterID",        "e",            "_.CreateEncounter", "f");
+            ObjectData.Create<EncounterData>("encounterID", "e",    "_.CreateEncounter", "f");
             ObjectData.Create("explorationID",      "exp",          "_.CreateExploration", "f");
             ObjectData.Create("flightPathID",       "fp",           "_.CreateFlightPath", "f");
             ObjectData.Create<NPCData>("npcID",     "n",            "_.CreateNPC", "f");
@@ -46,14 +46,17 @@ namespace ATT
             ObjectData.Create("mapID",              "m",            "_.CreateMap", "f");
             ObjectData.Create("illusionID",         "ill",          "_.CreateIllusion", "f", "spellID");
             ObjectData.Create("recipeID",           "r",            "_.CreateRecipe", "f", "spellID", "modID");
-            ObjectData.Create<SpellData>("spellID", "sp",           "_.CreateSpell");
+            ObjectData.Create("azeriteEssenceID",   "aze",          "_.CreateAzeriteEssence", "f");
+            ObjectData.Create("runeforgePowerID",   "rfl",          "_.CreateRuneforgeLegendary", "f");
+            ObjectData.Create("conduitID",          "cd",           "_.CreateConduit", "f");
+            ObjectData.Create("raceID",             "ra",           "_.CreateRace", "f");
             ObjectData.Create("setID",              "gs",           "_.CreateGearSet", "f");
             ObjectData.Create("setHeaderID",        "gsh",          "_.CreateGearSetHeader", "f");
             ObjectData.Create("setSubHeaderID",     "gssh",         "_.CreateGearSetSubHeader", "f");
             ObjectData.Create("titleID",            "title",        "_.CreateTitle", "f");
             ObjectData.Create("currencyID",         "cu",           "_.CreateCurrencyClass", "f");
-            ObjectData.Create("azeriteEssenceID",   "aze",          "_.CreateAzeriteEssence", "f");
             ObjectData.Create<ItemData>("itemID",   "i",            "_.CreateItem");
+            ObjectData.Create<SpellData>("spellID", "sp",           "_.CreateSpell");
             ObjectData.Create("factionID",          "faction",      "_.CreateFaction", "f");
             ObjectData.Create<QuestData>("questID", "q",            "_.CreateQuest", "f");
             ObjectData.Create("achID",              "ach",          "_.CreateAchievement", "f", "modID");
@@ -84,7 +87,7 @@ namespace ATT
                 .AppendLine("--   S O U R C E   D A T A B A S E   M O D U L E   --")
                 .AppendLine("-----------------------------------------------------")
                 .AppendLine("--   WARNING: This file is dynamically generated   --")
-                .Append("--   UPDATED: ").Append($"{utcNow.ToLongDateString()} @ {utcNow.ToShortTimeString()}".PadRight(36, ' ')).AppendLine(" --")
+                //.Append("--   UPDATED: ").Append($"{utcNow.ToLongDateString()} @ {utcNow.ToShortTimeString()}".PadRight(36, ' ')).AppendLine(" --")
                 .AppendLine("-----------------------------------------------------")
                 .AppendLine("local _ = select(2, ...); local rawset = rawset;")
                 .AppendLine("local g = function(t,g) rawset(t,'g',g); return t; end"));

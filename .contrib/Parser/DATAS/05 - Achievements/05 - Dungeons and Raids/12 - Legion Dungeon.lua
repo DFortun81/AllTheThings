@@ -49,7 +49,7 @@ _.Achievements =
 			ach(10542),		-- I Got What You Mead
 			ach(10554),		-- I Made a Food!
 			ach(10413),		-- Instant Karma
-			ach(11181, {	-- Legion Keymaster
+			un(REMOVED_FROM_GAME, ach(11181, {	-- Legion Keymaster / TODO: will probably move in 9.1
 				crit(1),		-- Eye of Azshara
 				crit(2),		-- Darkheart Thicket
 				crit(3),		-- Neltharion's Lair
@@ -59,7 +59,7 @@ _.Achievements =
 				crit(7),		-- Maw of Souls
 				crit(8),		-- The Arcway
 				crit(9),		-- Court of Stars
-			}),
+			})),
 			ach(12005),		-- Let it All Out
 			ach(11703),		-- Master of Shadows
 			ach(10800, {	-- Mythic: Assault on Violet Hold

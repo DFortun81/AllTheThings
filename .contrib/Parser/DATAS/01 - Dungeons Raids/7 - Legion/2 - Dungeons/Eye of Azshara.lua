@@ -2,13 +2,13 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(7, {	-- Legion
+_.Instances = { tier(LEGION_TIER, {
 	inst(716, {	-- Eye of Azshara
 		["mapID"] = 713,
-		["coord"] = { 61.2, 41.1, 630 },
+		["coord"] = { 61.2, 41.1, AZSUNA },
 		["lvl"] = 98,
 		["g"] = {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(137726),	-- Schematic: Leystone Buoy
 			}),
 			n(-10067, {	-- Artifacts
@@ -293,3 +293,7 @@ _.Instances = { tier(7, {	-- Legion
 		},
 	}),
 })};
+
+_.HiddenQuestTriggers = {
+	q(43675),	-- triggered when learning 'Coil of the Drowned Queen' (139574)
+};

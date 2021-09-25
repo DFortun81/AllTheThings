@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(2, {	-- Burning Crusade
+	tier(TBC_TIER, {
 		n(QUESTS, {
 			i(29739, {	-- Arcane Tome
 				["altAchievements"] = { 1205 },	-- Hero of Shattrath

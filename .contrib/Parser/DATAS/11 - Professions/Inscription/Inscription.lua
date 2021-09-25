@@ -1,10 +1,8 @@
 profession(INSCRIPTION, {
-	n(-37, {	-- Discovery
-		["groups"] = {
-			i(172450, {	-- Technique: Glyph of Lavish Servings
-				["description"] = "A Mage inscriptionist with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
-			}),
-		},
+	n(DISCOVERY, {
+		i(172450, {	-- Technique: Glyph of Lavish Servings
+			["description"] = "A Mage inscriptionist with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
+		}),
 	}),
 	n(-26, {	-- Drop
 		q(36239, {	-- A Mysterious Satchel
@@ -13,12 +11,12 @@ profession(INSCRIPTION, {
 			["provider"] = { "i", 114984 },	-- Mysterious Satchel
 			["races"] = ALLIANCE_ONLY,
 			["maps"] = {
-				525,	-- Frostfire Ridge
-				543,	-- Gorgrond
-				550,	-- Nagrand
-				539,	-- Shadowmoon Valley
-				542,	-- Spires of Arak
-				535,	-- Talador
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
 			},
 			["lvl"] = 90,
 		}),
@@ -28,12 +26,12 @@ profession(INSCRIPTION, {
 			["provider"] = { "i", 115593 },	-- Illegible Sootstained Notes
 			["races"] = HORDE_ONLY,
 			["maps"] = {
-				525,	-- Frostfire Ridge
-				543,	-- Gorgrond
-				550,	-- Nagrand
-				539,	-- Shadowmoon Valley
-				542,	-- Spires of Arak
-				535,	-- Talador
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
 			},
 			["lvl"] = 90,
 		}),

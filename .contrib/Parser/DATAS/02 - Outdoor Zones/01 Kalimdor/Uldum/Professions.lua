@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(249, {	-- Uldum
-			n(-38, {	-- Profession
+			n(PROFESSIONS, {
 				prof(ARCHAEOLOGY, {
 					i(64657, {	-- Canopic Jar
 						["description"] = "Alchemy is not required to get the recipe.\n\nNOTE TO BLUES: Why isn't this item BoA? You have the technology!\n  - Crieve",
@@ -36,9 +36,9 @@ _.Zones =
 					}),
 				}),
 				prof(MINING, {
-					["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.|r",
+					["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
 					["g"] = {
-						i(67282), 	-- Elementium Geode (PET!)
+						i(67282),	-- Elementium Geode (PET!)
 					},
 				}),
 			}),

@@ -7,15 +7,15 @@ _.WorldEvents =
 	n(-5362, {	-- 13th Anniversary
 		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
 		["maps"] = {
-			85,	-- Orgrimmar
+			ORGRIMMAR,
 			86,	-- Orgrimmar: Cleft of Shadows
-			13,	-- Stormwind City
+			STORMWIND_CITY,
 		},
 		["g"] = {
 			ach(11848, {	-- 13th Anniversary
-				["u"] = 36,	-- WoW Anniversary [Removed]
+				["u"] = REMOVED_FROM_GAME,
 			}),
-			n(-297, bubbleDown({ ["u"] = 36, }, {	-- Mailbox
+			n(MAILBOX, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {
 				i(147876, {	-- Anniversary Gift
 					i(147877),	-- Celebration Package
 					i(147881, {	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
@@ -38,12 +38,12 @@ _.WorldEvents =
 					}),
 				}),
 			})),
-			n(QUESTS, bubbleDown({ ["u"] = 31, }, {
+			n(QUESTS, bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {
 				q(43461, {	-- A Time to Reflect [Horde]
 					["provider"] = { "n", 110035 },		-- Historian Jupa
 					["isDaily"] = true,
 					["coords"] = {
-						{ 36.6, 74.6, 85 },
+						{ 36.6, 74.6, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
 					-- Note!! See Master List of quiz answers at the end of 12th anniversary in a better format
@@ -53,7 +53,7 @@ _.WorldEvents =
 					["provider"] = { "n", 110034 },		-- Historian Llore
 					["isDaily"] = true,
 					["coords"] = {
-						{ 84.61, 25.01, 13 },
+						{ 84.61, 25.01, STORMWIND_CITY },
 					},
 					["races"] = ALLIANCE_ONLY,
 					-- Note!! See Master List of quiz answers at the end of 12th anniversary in a better format
@@ -63,7 +63,7 @@ _.WorldEvents =
 					["provider"] = { "n", 110035 },		-- Historian Jupa
 					["isDaily"] = true,
 					["coords"] = {
-						{ 36.6, 74.6, 85 },
+						{ 36.6, 74.6, ORGRIMMAR },
 					},
 					["sourceQuests"] = {
 						47462,	-- Azuregos
@@ -77,7 +77,7 @@ _.WorldEvents =
 					["provider"] = { "n", 110034 },		-- Historian Llore
 					["isDaily"] = true,
 					["coords"] = {
-						{ 84.61, 25.01, 13 },
+						{ 84.61, 25.01, STORMWIND_CITY },
 					},
 					["sourceQuests"] = {
 						47462,	-- Azuregos
@@ -88,11 +88,11 @@ _.WorldEvents =
 					["races"] = ALLIANCE_ONLY,
 				}),
 			})),
-			n(VENDORS, bubbleDown({ ["u"] = 31, }, {
+			n(VENDORS, bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {
 				n(110035, {	-- Historian Jupa [Horde]
-					["coord"] = { 36.6, 74.6, 85 },
+					["coord"] = { 36.6, 74.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {	-- WoW Anniversary
+					["g"] = {
 						i(147885, {	-- Bronze-Tinted Sunglasses
 							["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 						}),
@@ -109,8 +109,8 @@ _.WorldEvents =
 				}),
 				n(110034, {	-- Historian Llore [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 84.6, 25.0, 13 },
-					["g"] = {	-- WoW Anniversary
+					["coord"] = { 84.6, 25.0, STORMWIND_CITY },
+					["g"] = {
 						i(147885, {	-- Bronze-Tinted Sunglasses
 							["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
 						}),
@@ -127,18 +127,17 @@ _.WorldEvents =
 				}),
 			})),
 			n(-7, {	-- World Bosses
-				["ordered"] = true,
-				["u"] = 31, -- WoW Anniversary Filter
-				["g"] = bubbleDown({ ["u"] = 31, }, {	-- WoW Anniversary
+				["u"] = WOW_ANNIVERSARY,
+				["g"] = bubbleDown({ ["u"] = WOW_ANNIVERSARY, }, {
 					n(121820, {	-- Azuregos [Azshara - Always Up]
 						["isRaid"] = true,
 						["questID"] = 47462,
 						["isDaily"] = true,
 						["maps"] = {
-							76,	-- Azshara
+							AZSHARA,
 						},
 						["coords"] = {
-							{ 48.76, 83.82, 76 },
+							{ 48.76, 83.82, AZSHARA },
 						},
 						["g"] = {
 							i(150424),	-- Cold Snap
@@ -158,12 +157,8 @@ _.WorldEvents =
 						["isRaid"] = true,
 						["questID"] = 47463,
 						["isDaily"] = true,
-						["maps"] = {
-							47,	-- Duskwood
-						},
-						["coords"] = {
-							{ 46.54, 39.73, 47 },
-						},
+						["maps"] = { DUSKWOOD },
+						["coord"] = { 46.54, 39.73, DUSKWOOD },
 						["g"] = {
 							i(150429),	-- Emerald Dragonfang
 							i(150412),	-- Hammer of Bestial Fury
@@ -186,11 +181,9 @@ _.WorldEvents =
 						["isRaid"] = true,
 						["questID"] = 47461,
 						["isDaily"] = true,
-						["maps"] = {
-							17,	-- Blasted Lands
-						},
+						["maps"] = { BLASTED_LANDS },
 						["coords"] = {
-							{ 32.42, 48.21 ,17 },
+							{ 32.42, 48.21, BLASTED_LANDS },
 						},
 						["g"] = {
 							i(150383),	-- Amberseal Keeper
@@ -209,12 +202,8 @@ _.WorldEvents =
 						["isRaid"] = true,
 						["questID"] = 47463,
 						["isDaily"] = true,
-						["maps"] = {
-							26,	-- The Hinterlands
-						},
-						["coords"] = {
-							{ 62.87, 25.2, 26 },
-						},
+						["maps"] = { THE_HINTERLANDS },
+						["coord"] = { 62.87, 25.2, THE_HINTERLANDS },
 						["g"] = {
 							i(150429),	-- Emerald Dragonfang
 							i(150412),	-- Hammer of Bestial Fury
@@ -238,10 +227,10 @@ _.WorldEvents =
 						["questID"] = 47463,
 						["isDaily"] = true,
 						["maps"] = {
-							63,	-- Ashenvale
+							ASHENVALE,
 						},
 						["coords"] = {
-							{ 93.8, 40.8, 63 },
+							{ 93.8, 40.8, ASHENVALE },
 						},
 						["g"] = {
 							i(150429),	-- Emerald Dragonfang
@@ -266,10 +255,10 @@ _.WorldEvents =
 						["questID"] = 47463,
 						["isDaily"] = true,
 						["maps"] = {
-							69,	-- Feralas
+							FERALAS,
 						},
 						["coords"] = {
-							{ 50.93, 11.91, 69 },
+							{ 50.93, 11.91, FERALAS },
 						},
 						["g"] = {
 							i(150429),	-- Emerald Dragonfang

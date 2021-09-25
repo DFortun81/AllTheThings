@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(77, {	-- Felwood
-			filter(101, {	-- Pet Battle
+		m(FELWOOD, {
+			filter(BATTLE_PETS, {
 				p(406, {	-- Beetle
 					["crs"] = { 61319 },	-- Beetle
 				}),
@@ -27,7 +27,7 @@ _.Zones =
 				}),
 				q(31907, {	-- Zoltan
 					["provider"] = { "n", 66442 },	-- Zoltan
-					["coord"] = { 40.0, 56.6, 77 },
+					["coord"] = { 40.0, 56.6, FELWOOD },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),

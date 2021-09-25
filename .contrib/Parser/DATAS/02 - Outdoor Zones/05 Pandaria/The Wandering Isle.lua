@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, { 	-- Pandaria
+	m(PANDARIA, {
 		m(378, {	-- The Wandering Isle Starter Zones
 			["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },	-- [Adding faction just to be safe]
 			["icon"] = "Interface\\Icons\\INV_Misc_Fish_Turtle_03",
@@ -106,6 +106,7 @@ _.Zones =
 						["provider"] = { "n", 54786 },	-- Master Shang Xi
 						["sourceQuests"] = { 29775 },	-- The Spirit and Body of Shen-zin Su
 					}),
+					un(REMOVED_FROM_GAME, q(29404)),	-- Much to Learn
 					un(REMOVED_FROM_GAME, q(30039)),	-- Much to Learn
 					un(REMOVED_FROM_GAME, q(30040)),	-- Much to Learn
 					un(REMOVED_FROM_GAME, q(30041)),	-- Much to Learn
@@ -201,6 +202,11 @@ _.Zones =
 					q(29799, {	-- The Healing of Shen-zin Su
 						["provider"] = { "n", 56418 },	-- Ji Firepaw
 						["sourceQuests"] = { 30767 },	-- Risking it All
+					}),
+					q(30817, {	-- The Healing of Shen-zin Su Removed Version
+						["provider"] = { "n", 56418 },	-- Ji Firepaw
+					--	["sourceQuests"] = { 30767 },	-- Risking it All
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(29661, {	-- The Lesson of Dry Fur
 						["provider"] = { "n", 54975 },	-- Aysa Cloudsinger
@@ -319,3 +325,9 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(29407),	-- The First Sign of Winter
+		q(29405),	-- The Lesson of the Iron Staff
+	}),
+});

@@ -6,10 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
-			n(ZONEDROPS, {
-				i(177698),	-- Untamed Spirit Ardenweald (Uncommon)
-				i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)
-				i(177700),	-- Greater Untamed Spirit Ardenweald (Epic)
+			n(ZONE_DROPS, {
 				i(180522),	-- Phaedrum Lockbox
 				i(175545),	-- Blackthorn Chestplate
 				i(175553),	-- Blackthorn Gauntlets
@@ -35,6 +32,7 @@ _.Zones =
 				i(175550),	-- Eventide Sabatons
 				i(175546),	-- Eventide Vest
 				i(175573),	-- Eventide Wristwraps
+				i(187429),	-- Petrified Sylvan Antlers
 				i(175568),	-- Shimmerbough Cord
 				i(175554),	-- Shimmerbough Gloves
 				i(175556),	-- Shimmerbough Hood
@@ -53,3 +51,18 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10100, {	-- Shadowlands
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(179587),	-- Drust Mask
+				i(179588),	-- Drust Mask
+				i(179589),	-- Drust Mask
+				i(179590),	-- Drust Mask
+				i(179591),	-- Drust Mask
+				i(179592),	-- Drust Mask
+				i(179595),	-- Drust Mask
+			}),
+		}),
+	}),
+});

@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(ZANGARMARSH, {
 			n(RARES, {
 				n(18682, {	-- Bog Lurker
@@ -21,7 +20,7 @@ _.Zones =
 						{ 86.0, 89.6, ZANGARMARSH },
 						{ 86.0, 91.2, ZANGARMARSH },
 					},
-					["g"] = {
+					["groups"] = {
 						crit(2, {	-- Bog Lurker
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
@@ -48,7 +47,7 @@ _.Zones =
 						{ 74.8, 77.0, ZANGARMARSH },
 						{ 73.4, 82.4, ZANGARMARSH },
 					},
-					["g"] = {
+					["groups"] = {
 						crit(4, {	-- Coilfang Emissary
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
@@ -89,7 +88,7 @@ _.Zones =
 						{ 77.0, 51.4, ZANGARMARSH },
 						{ 78.8, 53.6, ZANGARMARSH },
 					},
-					["g"] = {
+					["groups"] = {
 						crit(13, {	-- Marticar
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
@@ -98,5 +97,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

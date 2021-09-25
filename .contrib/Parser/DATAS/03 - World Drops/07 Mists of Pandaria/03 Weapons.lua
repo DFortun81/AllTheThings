@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(5, {	-- Mists of Pandaria
+	tier(MOP_TIER, {
 		n(-319, {	-- Weapons
 			n(-334, {	-- 1H Axes
 				i(82020),	-- Polished Axe

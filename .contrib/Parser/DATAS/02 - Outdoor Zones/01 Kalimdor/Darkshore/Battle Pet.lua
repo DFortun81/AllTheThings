@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(62, {	-- Darkshore
-			filter(101, {	-- Pet Battle
+		m(DARKSHORE, {
+			filter(BATTLE_PETS, {
 				p(508, {	-- Darkshore Cub
 					["crs"] = { 62250 },	-- Darkshore Cub
 					["description"] = "Can be found in the woods west of the Grove of the Ancients, usually on the treeline just before the beach.",
@@ -24,7 +24,7 @@ _.Zones =
 					["crs"] = { 61081 },	-- Squirrel
 				}),
 				n(63083, {	-- Will Larsons
-					["coord"] = { 50.1, 20.2, 62 },
+					["coord"] = { 50.1, 20.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 					["g"] = {
@@ -50,25 +50,25 @@ _.Zones =
 				}),
 				q(31584, {	-- Got one!
 					["provider"] = { "n", 63083 },	-- Will Larsons
-					["coord"] = { 50.1, 20.2, 62 },
+					["coord"] = { 50.1, 20.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31832,	-- Level Up!
 				}),
 				q(31582, {	-- Learning the Ropes
 					["provider"] = { "n", 63083 },	-- Will Larsons
-					["coord"] = { 50.1, 20.2, 62 },
+					["coord"] = { 50.1, 20.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31832, {	-- Level Up!
 					["provider"] = { "n", 63083 },	-- Will Larsons
-					["coord"] = { 50.1, 20.2, 62 },
+					["coord"] = { 50.1, 20.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31583,	-- On The Mend
 				}),
 				q(31583, {	-- On The Mend
 					["provider"] = { "n", 63083 },	-- Will Larsons
-					["coord"] = { 50.1, 20.2, 62 },
+					["coord"] = { 50.1, 20.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31582,	-- Learning the Ropes
 				}),

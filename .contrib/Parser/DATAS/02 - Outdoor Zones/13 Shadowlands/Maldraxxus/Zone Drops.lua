@@ -6,7 +6,8 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(MALDRAXXUS, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
+				i(187425),	-- Ancient Maldraxxi Armament
 				i(184104, {	-- Blight-Touched Egg
 					["crs"] = {
 						170456,	-- Diseased Galescreamer
@@ -17,10 +18,11 @@ _.Zones =
 						164587,	-- Satiated Sawtooth
 					},
 					["g"] = {
-						i(181818),	-- Chewed Reins of the Callowed Flayedwing
+						i(184103, {	-- Cracked Blight-Touched Egg
+							i(181818),	-- Chewed Reins of the Callowed Flayedwing
+						}),
 					},
 				}),
-				i(178877),	-- Divine Martial Spirit (Rare)
 				i(177236, {	-- Dog Bone's Bone
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["crs"] = {
@@ -36,8 +38,6 @@ _.Zones =
 						}),
 					},
 				}),
-				i(178874),	-- Martial Spirit Maldraxxus (Uncommon)
-				i(178878),	-- Greater Martial Spirit (Epic)
 				i(180781, {	-- Pattern: Pink Party Hat
 					["crs"] = {
 						172389,	-- Acrid Runoff
@@ -116,7 +116,9 @@ _.Zones =
 				i(176968),	-- Ossein Scale Sabatons
 				i(176984),	-- Ossein Scale Spaulders
 				i(183124, {	-- Simple Tome of Bone-Binding
+					["questID"] = 62255,
 					["classes"] = { HUNTER },
+					["_drop"] = { "spellID" },
 				}),
 				i(178947),	-- Steeljaw Crossbow
 				i(178951),	-- Vellum-Bound Tome
@@ -128,6 +130,8 @@ _.Zones =
 				i(176981),	-- Warflesh Spaulders
 				i(176976),	-- Warflesh Stand
 				i(176965),	-- Warflesh Vest
+				i(186727),	-- Seal Breaker Key
+				i(186995),	-- Pattern: Shrouded Hand Towel
 			}),
 		}),
 	}),

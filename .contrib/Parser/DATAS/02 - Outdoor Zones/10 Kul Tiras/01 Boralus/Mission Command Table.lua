@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
-		m(1161, {	-- Boralus
+	m(KULTIRAS, {
+		m(BORALUS, {
 			n(138704, {	-- Mission Command Table
 				["modelScale"] = 2,
 				["races"] = ALLIANCE_ONLY,
@@ -136,9 +136,7 @@ _.Zones =
 					mission(2078),	--  Azeroth Bleed
 					mission(2087),	-- Explore the Roost
 					mission(1877, {	-- The Shadow War
-						i(160982, {	-- Recruitment Orders
-							["questID"] = 51715,	-- War of Shadows	NOTE!! Finishing the quest rewards the unlock
-						}),
+						i(160982),	-- Recruitment Orders
 					}),
 				},
 			}),

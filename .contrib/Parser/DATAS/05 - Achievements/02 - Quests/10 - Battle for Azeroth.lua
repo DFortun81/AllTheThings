@@ -54,28 +54,28 @@ _.Achievements =
 			}),
 			ach(13050, {	-- Bless the Rains Down in Freehold
 				crit(1, {		-- Banana Hoard
-					["coord"] = { 76.1, 84.6, 895 },
+					["coord"] = { 76.1, 84.6, TIRAGARDE_SOUND },
 					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
 					},
 				}),
 				crit(2, {		-- Sweete's Feast
-					["coord"] = { 73.3, 83.9, 895 },
+					["coord"] = { 73.3, 83.9, TIRAGARDE_SOUND },
 					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
 					},
 				}),
 				crit(3, {		-- Cart o' Cutlasses
-					["coord"] = { 75.0, 82.9, 895 },
+					["coord"] = { 75.0, 82.9, TIRAGARDE_SOUND },
 					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
 					},
 				}),
 				crit(4, {		-- Blacktooth Brew
-					["coord"] = { 76.6, 81.8, 895 },
+					["coord"] = { 76.6, 81.8, TIRAGARDE_SOUND },
 					["_quests"] = {
 						52159,	-- Swab This! [A]
 						53196,	-- Swab This! [H]
@@ -177,7 +177,7 @@ _.Achievements =
 				["_quests"] = { 52798 },	-- A Few More Charges
 			})),
 			a(ach(13251)),	-- In Teldrassil's Shadow
-			ach(13023, { 	-- It's Really Getting Out of Hand
+			ach(13023, {	-- It's Really Getting Out of Hand
 				["_quests"] = { 51127 },	-- Getting Out of Hand (A)
 			}),
 			a(ach(13060, {	-- Kul Runnings
@@ -197,30 +197,30 @@ _.Achievements =
 			})),
 			ach(13048, {	-- Life Finds a Way... To Die!
 				crit(1, {		-- Thuderfoot the Brutosaur slain
-					["coord"] = { 67.7, 29.0, 862 },	-- Zuldazar
+					["coord"] = { 67.7, 29.0, ZULDAZAR },
 					["description"] = "This rare shares respawn with Azuresail (67.10 26.57) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
 				}),
 				crit(2, {		-- Azuresail the Diemetrodon slain
-					["coord"] = { 67.1, 26.5, 862 },	-- Zuldazar
+					["coord"] = { 67.1, 26.5, ZULDAZAR },
 					["description"] = "This rare shares respawn with Thuderfoot (67.73 29.03) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
 				}),
 				crit(3, {		-- Queenfeather the Ravasaur slain
-					["coord"] = { 71.1, 40.3, 862 },	-- Zuldazar
+					["coord"] = { 71.1, 40.3, ZULDAZAR },
 				}),
 				crit(4, {		-- Makatau the Pterrordax slain
-					["coord"] = { 26.3, 73.3, 863 },	-- Nazmir
+					["coord"] = { 26.3, 73.3, NAZMIR },
 				}),
 				crit(5, {		-- The Sabertusk Empress slain
-					["coord"] = { 52.3, 47.7, 862 },	-- Zuldazar
+					["coord"] = { 52.3, 47.7, ZULDAZAR },
 				}),
 				crit(6, {		-- Sludgecrusher the Anklyodon slain
-					["coord"] = { 66.0, 22.3, 862 },	-- Zuldazar
+					["coord"] = { 66.0, 22.3, ZULDAZAR },
 				}),
 				crit(7, {		-- Nol'ixwan the Direhorn slain
-					["coord"] = { 61.6, 25.3, 862 },	-- Zuldazar
+					["coord"] = { 61.6, 25.3, ZULDAZAR },
 				}),
 				crit(8, {		-- King K'tal the Devilsaur slain
-					["coord"] = { 71.2, 21.8, 862 },	-- Zuldazar
+					["coord"] = { 71.2, 21.8, ZULDAZAR },
 				}),
 			}),
 			h(ach(12614, {	-- Loa Expectations
@@ -310,7 +310,7 @@ _.Achievements =
 			ach(13011),		-- Scourge of Zem'lan
 			h(ach(12719, {	-- Spirits Be With You
 				crit(1),		-- The Fallen Chieftain
-				crit(2), 		-- Justice For The Fallen
+				crit(2),		-- Justice For The Fallen
 			})),
 			a(ach(13710, {	-- Sunken Ambitions
 				crit(1),		-- Welcome to Nazjatar
@@ -474,15 +474,15 @@ _.Achievements =
 				i(166247),		-- Citizens Brigade Whistle (toy)
 				crit(1, {		-- Russel the Bard recruited
 					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
-					["coord"] = { 72.4, 68.9, 1161 },	-- Boralus
+					["coord"] = { 72.4, 68.9, BORALUS },
 				}),
 				crit(2, {		-- Flynn Fairwind recruited
 					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
-					["coord"] = { 72.0, 61.6, 1161 },	-- Boralus
+					["coord"] = { 72.0, 61.6, BORALUS },
 				}),
 				crit(3, {		-- Leeroy Jenkins recruited
 					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
-					["coord"] = { 66.8, 64.0, 1161 },	-- Boralus
+					["coord"] = { 66.8, 64.0, BORALUS },
 				}),
 			})),
 			h(ach(13014, {	-- Vorrik's Champion

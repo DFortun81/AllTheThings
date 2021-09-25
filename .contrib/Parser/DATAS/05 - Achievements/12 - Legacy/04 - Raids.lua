@@ -12,9 +12,10 @@ TODO:
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
+	n(-9968, {	-- Legacy
 		n(-10044, {	-- Raids
 			un(REMOVED_FROM_GAME, ach(2919)),	-- A Quick Shave (10 player)
+			un(REMOVED_FROM_GAME, ach(2921)),	-- A Quick Shave (25 player)
 			un(REMOVED_FROM_GAME, ach(4080, {	-- A Tribute to Dedicated Insanity
 				un(REMOVED_FROM_GAME, title(136)),	-- the Argent Defender
 				un(REMOVED_FROM_GAME, ach(3810)),	-- A Tribute to Insanity (10 player)
@@ -40,17 +41,17 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(2947)),	-- Can't Do That While Stunned (10 player)
 			un(REMOVED_FROM_GAME, ach(2948)),	-- Can't Do That While Stunned (25 player)
 			un(REMOVED_FROM_GAME, ach(432, {	-- Champion of the Naaru
-				un(REMOVED_FROM_GAME, title(36)),	-- ,Champion of the Naaru
+				un(REMOVED_FROM_GAME, title(36)),	-- , Champion of the Naaru
 			})),
 			un(REMOVED_FROM_GAME, ach(2903, {	-- Champion of Ulduar
-				un(REMOVED_FROM_GAME, title(127)),	-- ,Champion of Ulduar
+				un(REMOVED_FROM_GAME, title(127)),	-- , Champion of Ulduar
 			})),
 			un(REMOVED_FROM_GAME, ach(2961)),	-- Cheese the Freeze (10 player)
 			un(REMOVED_FROM_GAME, ach(2962)),	-- Cheese the Freeze (25 player)
 			un(REMOVED_FROM_GAME, ach(2980)),	-- Con-speed-atory (10 player)
 			un(REMOVED_FROM_GAME, ach(2981)),	-- Con-speed-atory (25 player)
 			un(REMOVED_FROM_GAME, ach(2904, {	-- Conqueror of Ulduar
-				un(REMOVED_FROM_GAME, title(126)),	-- ,Conqueror of Ulduar
+				un(REMOVED_FROM_GAME, title(126)),	-- , Conqueror of Ulduar
 			})),
 			un(REMOVED_FROM_GAME, ach(3006)),	-- Crazy Cat Lady (10 player)
 			un(REMOVED_FROM_GAME, ach(3007)),	-- Crazy Cat Lady (25 player)
@@ -74,7 +75,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(2957)),	-- Glory of the Ulduar Raider (10 player)
 			un(REMOVED_FROM_GAME, ach(2958)),	-- Glory of the Ulduar Raider (25 player)
 			un(REMOVED_FROM_GAME, ach(431, {	-- Hand of A'dal
-				un(REMOVED_FROM_GAME, title(39)),	-- ,Hand of A'dal
+				un(REMOVED_FROM_GAME, title(39)),	-- , Hand of A'dal
 			})),
 			un(REMOVED_FROM_GAME, ach(3012)),	-- He's Not Getting Any Older (10 player)
 			un(REMOVED_FROM_GAME, ach(3013)),	-- He's Not Getting Any Older (25 player)

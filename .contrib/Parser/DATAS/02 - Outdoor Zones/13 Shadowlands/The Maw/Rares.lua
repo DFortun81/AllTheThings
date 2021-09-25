@@ -9,7 +9,7 @@ _.Zones =
 			n(RARES, {
 				n(COMMON_BOSS_DROPS, {
 					i(184395, {	-- Fallen Adventurer's Cache
-						["description"] = "Drops from numerous rares, elites, and named mobs in The Maw.",
+						["description"] = "Drops from numerous rares, elites, and named mobs in The Maw and Korthia.",
 						["crs"] = {
 							169102,	-- Agonix
 							170301,	-- Apholeias, Herald of Loss
@@ -34,6 +34,13 @@ _.Zones =
 							156203,	-- Stygian Incinerator
 							170302,	-- Talaporas, Herald of Pain
 							172862,	-- Yero the Skittish
+						--	Korthia
+							179769,	-- Consumption
+							179755,	-- Consumption (Rare, non-Elite version)
+							179768,	-- Consumption (Rare Elite version)
+							179931,	-- Relic Breaker Krelva
+							179985,	-- Stygian Stonecrusher
+							179760,	-- Towering Exterminator
 						},
 						["g"] = {
 							i(183409),	-- Decaying Mawrat
@@ -49,6 +56,9 @@ _.Zones =
 						crit(1, {	-- Adjutant Dekaris
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186222, {	-- Grips of the Coldheart Adjutant
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 					},
 				}),
 				n(169102, {	-- Agonix
@@ -59,18 +69,21 @@ _.Zones =
 						crit(8, {	-- Agonix
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(61136, {	-- Bonus Objective
-							["isDaily"] = true,
+						i(186616, {	-- Bindings of Screaming Death
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
 				n(170787, {	-- Akros <Death's Hammer>
-					["questID"] = 60920,
+					["questID"] = 63382,
 					["isDaily"] = true,
 					["coord"] = { 34.0, 74.6, THE_MAW },
 					["g"] = {
 						crit(10, {	-- Akros
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						i(186617, {	-- Death's Hammer Stompers
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
@@ -95,12 +108,32 @@ _.Zones =
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
 						i(184312),	-- Borr-Geth's Fiery Brimstone
+						i(186223),	-- Coif of the Molten Terror
+					},
+				}),
+				n(180246, {	-- Carriage Crusher
+					["description"] = "The Assault Supply Carriage starts in Korthia, moves to the northeastern bridge out of the Beastwarrens, and then finishes its supply run to the current covenant assault.\n\nWhen the carriage makes it to the bridge, the Carriage Crusher spawns.  You can hop into the carriage to heal it and yourself.",
+					["questID"] = 64258, -- and 64439, both of which also triggered on my first Traitor Balthier kill.  so currently they share a lockout and i'm not sure which quest to put where
+					["isDaily"] = true,
+					["coord"] = { 45.5, 54.8, THE_MAW },
+					["cr"] = 180182,	-- Assault Supply Carriage
+					["maps"] = { KORTHIA, },	-- show in Korthia as well since it spawns there
+					["g"] = {
+						crit(2, {	-- Carriage Crusher
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+						i(187370),	-- Carriage Crusher's Padded Slippers
+						i(187399),	-- Maw Construct's Shoulderguards
 					},
 				}),
 				n(171317, {	-- Conjured Death
+					["description"] = "Spawns outside the Tremaculum when the Venthyr assault is active and inside the Tremaculum at all other times.",
 					["questID"] = 61106,
 					["isDaily"] = true,
-					["coord"] = { 27.8, 13.2, THE_MAW },
+					["coords"] = {
+						{ 27.8, 13.2, THE_MAW },
+						{ 28.6, 19.4, THE_MAW },	-- Venthyr assault spawnpoint
+					},
 					["g"] = {
 						crit(4, {	-- Conjured Death
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -116,6 +149,7 @@ _.Zones =
 						crit(7, {	-- Cyrixia
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
+						i(186618),	-- Willbreaker's Chain
 						i(183070, {	-- Mawsworn Orders
 							["questID"] = 63164,	-- Mawsworn Orders
 							["g"] = {
@@ -127,13 +161,15 @@ _.Zones =
 					},
 				}),
 				n(160770, {	-- Darithis the Bleak
+					["description"] = "At the back of the cave.",
 					["questID"] = 62281,
 					["isDaily"] = true,
-					["coord"] = { 61.0, 48.6, THE_MAW },
+					["coord"] = { 59.3, 51.9, THE_MAW },
 					["g"] = {
 						crit(5, {	-- Darithis the Bleak
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186220),	-- Stygian Chestcage
 					},
 				}),
 				n(158025, {	-- Darklord Taraxis
@@ -143,6 +179,12 @@ _.Zones =
 					["g"] = {
 						crit(6, {	-- Darklord Taraxis
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+						i(183901, {	-- Bonestorm Top (TOY!)
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
+						i(186611, {	-- Taraxis' Treads
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
@@ -155,9 +197,7 @@ _.Zones =
 						crit(2, {	-- Dartanos
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(59230, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
+						i(186619),	-- Bloodspattered Shoulders of the Flayer
 					},
 				}),
 				n(162844, {	-- Dath Rezara
@@ -192,9 +232,21 @@ _.Zones =
 								}),
 							},
 						}),
-						q(61140, {	-- Bonus Objective
-							["isDaily"] = true,
+						i(186620),	-- Rezara's Fencing Grips
+					},
+				}),
+				n(179791, {	-- Deomen the Vortex
+					["description"] = "If the cage is locked, enter the building to the left of the rare at |cFFFFFFFF63.3, 43.6|r.  There is a lever on the wall on either side of the room at the bottom of the stairs, inside the alcoves.",
+					["questID"] = 64251,
+					["isDaily"] = true,
+				--	["coord"] = { 66.4, 55.4, THE_MAW }, old coord?
+					["coord"] = { 61.3, 41.3, THE_MAW },
+					["g"] = {
+						crit(5, {	-- Deomen the Vortex
+							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187367),	-- Deomen's Vortex Blade
+						i(187385),	-- Vortex Piercing Headgear
 					},
 				}),
 				n(170711, {	-- Dolos
@@ -205,6 +257,7 @@ _.Zones =
 						crit(7, {	-- Dolos
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186209),	-- Blood-Spattered Gloves of Death
 					},
 				}),
 				n(158314, {	-- Drifting Sorrow
@@ -216,8 +269,8 @@ _.Zones =
 						crit(1, {	-- Drifting Sorrow
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(59183, {	-- Bonus Objective
-							["isDaily"] = true,
+						i(186622, {	-- Robe of Drifting Sorrow
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
@@ -229,10 +282,11 @@ _.Zones =
 						crit(8, {	-- Eketra
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186563),	-- Spear of the Impaler
 					},
 				}),
 				n(169827, {	-- Ekphoras, Herald of Grief
-				--	["questID"] = 61125,	-- Malevolent Stygia
+					["questID"] = 60666,
 					["isDaily"] = true,
 					["coord"] = { 42.2, 21.0, THE_MAW },
 					["g"] = {
@@ -251,7 +305,10 @@ _.Zones =
 						crit(10, {	-- Eternas the Tormentor
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
-						i(183407),	-- Contained Essence of Dread
+						i(183407),	-- Dread (PET!)
+						i(186212, {	-- Eternas' Braided Waistcord
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 					},
 				}),
 				n(170303, {	-- Exos, Herald of Domination
@@ -264,6 +321,7 @@ _.Zones =
 						crit(11, {	-- Exos, Herald of Domination
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186606),	-- Nilganihmaht's Signet Ring
 						i(184108),	-- Vorpal Amulet
 						i(183066, {	-- Korrath's Grimoire: Aleketh
 							["questID"] = 63160,	-- Korrath's Grimoire: Aleketh
@@ -291,6 +349,17 @@ _.Zones =
 						}),
 					},
 				}),
+				n(179460, {	-- Fallen Charger
+					["description"] = "It spawns in the Crucible of the Damned with a zonewide announcement: |cFFff8040An earsplitting whinny echoes across the Maw as the Fallen Charger begins its ride.|r\n\nIt either runs (A) through the Tremaculum, south past Ve'nari's Refuge, and down the eastern side of the Beastwarrens or (B) down the western side of Zovaal's Cauldron, past Perdition Hold, and down the western side of the Beastwarrens.\n\nIf it makes it all the way to Korthia, it despawns with another zonewide announcement: |cFFff8040Fallen Charger releases a final mournful whinny as it fades away.|r",
+					["questID"] = 64164,
+					["isDaily"] = true,
+					["g"] = {
+						crit(8, {	-- Fallen Charger
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+						i(186659),	-- Fallen Charger (MOUNT!)
+					},
+				}),
 				n(172523, {	-- Houndmaster Vasanok
 					["questID"] = 63385,
 					["isDaily"] = true,
@@ -299,9 +368,7 @@ _.Zones =
 						crit(13, {	-- Houndmaster Vasanok
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(62209, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
+						i(186224),	-- Beastwarren Houndmaster's Treads
 					},
 				}),
 				n(162965, {	-- Huwerath
@@ -311,6 +378,9 @@ _.Zones =
 					["g"] = {
 						crit(5, {	-- Huwerath
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						i(186623, {	-- Lost Soul's Mantle
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
@@ -323,6 +393,7 @@ _.Zones =
 						crit(21, {	-- Ikras the Devourer
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186214),	-- Maw Snakeskin Boots
 					},
 				}),
 				n(170692, {	-- Krala <Death's Wings>
@@ -333,9 +404,7 @@ _.Zones =
 						crit(9, {	-- Krala
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(60903, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
+						i(186624),	-- Death Wing Drape
 					},
 				}),
 				n(171316, {	-- Malevolent Stygia
@@ -346,20 +415,27 @@ _.Zones =
 						crit(11, {	-- Malevolent Stygia
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(61125, {	-- Bonus Objective
-							["isDaily"] = true,
+						i(186625, {	-- Hood of Malevolence
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
 				n(162849, {	-- Morguliax <Lord of Decapitation>
-					["coord"] = { 16.6, 50.6, THE_MAW },
+					["description"] = "Spawns next to the Herald of Loss when the Night Fae assault is active.",
+					["coords"] = {
+						{ 16.6, 50.6, THE_MAW },
+						{ 19.0, 43.8, THE_MAW },	-- Night Fae assault spawnpoint
+					},
 					["questID"] = 60987,
 					["isDaily"] = true,
 					["g"] = {
 						crit(12, {	-- Morguliax
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
-						i(184292),		-- Ancient Elethium Coin
+						i(184292),	-- Ancient Elethium Coin
+						i(185892, {	-- Stygia-Etched Decapitator
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 					},
 				}),
 				n(158278, {	-- Nascent Devourer
@@ -370,6 +446,9 @@ _.Zones =
 						crit(13, {	-- Nascent Devourer
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186236, {	-- Devourer's Shadehide Jerkin
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 					},
 				}),
 				n(164064, {	-- Obolos
@@ -379,6 +458,9 @@ _.Zones =
 					["g"] = {
 						crit(14, {	-- Obolos
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+						i(186238, {	-- Mantle of the Prime Collector
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
@@ -398,9 +480,6 @@ _.Zones =
 								}),
 							},
 						}),
-						q(62618, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
 					},
 				}),
 				n(162845, {	-- Orrholyn <Lord of Bloodletting>
@@ -411,8 +490,8 @@ _.Zones =
 						crit(4, {	-- Orrholyn
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(60991, {	-- Bonus Objective
-							["isDaily"] = true,
+						i(186626, {	-- Bloodwicking Bands
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
@@ -425,6 +504,9 @@ _.Zones =
 						crit(15, {	-- Orophea
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186211, {	-- Pantaloons of the Condemned Bard
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 						o(356555, {	-- Eurydea's Necklace
 							["coord"] = { 26.8, 29.3, THE_MAW },
 							["g"] = {
@@ -434,16 +516,15 @@ _.Zones =
 					},
 				}),
 				n(175821, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
+					["description"] = "Inside the cave.",
 					["questID"] = 63388,
 					["isDaily"] = true,
-					["coord"] = { 21.6, 41.8, THE_MAW },
+					["coord"] = { 20.8, 39.1, THE_MAW },
 					["g"] = {
 						crit(19, {	-- Ratgusher
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(63044, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
+						i(186627),	-- Belt of Ten Thousand Tails
 						i(183136),	-- Incendiary Mawrat
 					},
 				}),
@@ -455,9 +536,7 @@ _.Zones =
 						crit(3, {	-- Razkazzar
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(60992, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
+						i(186628),	-- Razkazzar's Axe Grippers
 					},
 				}),
 				n(172521, {	-- Sanngror the Torturer
@@ -469,7 +548,8 @@ _.Zones =
 						crit(12, {	-- Sanngror the Torturer
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						i(183410),	-- Sharpclaw
+						i(186629),	-- Sanngor's Spiked Band
+						i(183410),	-- Sharpclaw (PET!)
 					},
 				}),
 				n(170634, {	-- Shadeweaver Zeris
@@ -480,6 +560,7 @@ _.Zones =
 						crit(16, {	-- Shadeweaver Zeris
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(185945),	-- Shadeweaver's Spire
 						i(183066, {	-- Korrath's Grimoire: Aleketh
 							["questID"] = 63160,	-- Korrath's Grimoire: Aleketh
 							["g"] = {
@@ -510,29 +591,33 @@ _.Zones =
 					["description"] = "Inside the cave.",
 					["questID"] = 63386,
 					["isDaily"] = true,
-					["coord"] = { 59.2, 79.9, THE_MAW },
+				--	["coord"] = { 59.2, 79.9, THE_MAW }, pre-9.1 idk how the fuck to do timeline shit for coords
+					["coord"] = { 54.4, 79.2, THE_MAW },	-- 9.1 cave entrance
 					["g"] = {
 						crit(14, {	-- Skittering Broodmother
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(62211, {	-- Bonus Objective
-							["isDaily"] = true,
+						i(186240, {	-- Broodmotherhide Cloak
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
 				n(166398, {	-- Soulforger Rhovus
 					["questID"] = 60834,
 					["isDaily"] = true,
-					["coord"] = { 35.1, 41.5, THE_MAW },
+					["coord"] = { 36.0, 41.4, THE_MAW },
 					["g"] = {
 						crit(17, {	-- Soulforger Rhovus
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
-						i(183141),	-- Stygic Magma
+						i(186613, {	-- Rhovus' Linked Greaves
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 						i(185473, {	-- Soulforger's Tools
 							["description"] = "Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters who have collected the |cFFa335eeIntact Rune Codex|r.",
 							["questID"] = 63667,
 						}),
+						i(183141),	-- Stygic Magma
 					},
 				}),
 				n(165047, {	-- Soulsmith Yol-Mattar
@@ -543,9 +628,7 @@ _.Zones =
 						crit(6, {	-- Soulsmith Yol-Mattar
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(59441, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
+						i(186630),	-- Spark-Deflecting Girdle
 					},
 				}),
 				n(156203, {	-- Stygian Incinerator
@@ -556,8 +639,8 @@ _.Zones =
 						crit(17, {	-- Stygian Incinerator
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(62539, {	-- Bonus Objective
-							["isDaily"] = true,
+						i(186631, {	-- Emberfused Band
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
@@ -581,6 +664,22 @@ _.Zones =
 						crit(19, {	-- Thanassos
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186234),	-- Girdle of the Death Speaker
+					},
+				}),
+				n(179805, {	-- Traitor Balthier
+					["questID"] = 64439, -- and 64258, both of which also triggered on my first completion of the Assault Supply Carriage event. so currently they share a lockout and i'm not sure which quest to put where
+					["isDaily"] = true,
+					["coords"] = {	-- TODO: the first few times i saw it, it was up on a ledge, but then it was down on the lowest level, so i'm not sure if it can spawn on multiple levels/needs additional coords or if these coords need to be changed
+						{ 67.5, 48.3, THE_MAW },
+						{ 68.8, 45.5, THE_MAW },
+					},
+					["g"] = {
+						crit(22, {	-- Traitor Balthier
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+						i(187374),	-- Balthier's Waistcord
+						i(187364),	-- Maldraxxi Traitor's Blade
 					},
 				}),
 				n(173086, {	-- Valis the Cruel
@@ -592,8 +691,15 @@ _.Zones =
 						crit(15, {	-- Valis the Cruel
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(61728, {	-- Bonus Objective
-							["isDaily"] = true,
+						i(186632),	-- Rune Covered Bindings
+						n(174810, {	-- Rune of Cruelty (1)
+							["description"] = "Click 1st.",
+						}),
+						n(174811, {	-- Rune of Cruelty (2)
+							["description"] = "Click 2nd.",
+						}),
+						n(174812, {	-- Rune of Cruelty (3)
+							["description"] = "Click 3rd.",
 						}),
 					},
 				}),
@@ -604,6 +710,43 @@ _.Zones =
 					["g"] = {
 						crit(20, {	-- Yero the Skittish
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+						i(186228),	-- Helm of the Skittish Hero
+					},
+				}),
+				n(177444, {	-- Ylva <Mate of Guarm>
+					["questID"] = 64152,	-- also 62683 after a refresh, not sure which one is 'first time' or if both trigger every time.  didn't get to do the achievement so it's unrelated to that
+					["isDaily"] = true,
+					["coord"] = { 66.7, 42.4, THE_MAW },
+					["g"] = {
+						crit(27, {	-- Ylva, Mate of Guarm
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+						ach(14943, {	-- Guarmageddon
+							["description"] = "Kill all of Ylva and Guarm's children, and then kill the rare.  You must be within range of the baby guarm when they die to get the debuff.",
+							["coords"] = {
+								{ 63.1, 42.4, THE_MAW },	-- Vanargun <Child of Guarm>
+								{ 63.1, 40.3, THE_MAW },	-- Hrodvetni <Child of Guarm>
+								{ 65.4, 38.9, THE_MAW },	-- Frekki <Child of Guarm>
+								{ 68.4, 42.0, THE_MAW },	-- Vargir <Child of Guarm>
+								{ 67.0, 41.5, THE_MAW },	-- Girs <Child of Guarm>
+							},
+							["crs"] = {
+								177441,	-- Frekki
+								177422,	-- Girs
+								177442,	-- Hrodvetni
+								177445,	-- Vanargun
+								177443,	-- Vargir
+							},
+						}),
+						i(187393),	-- Sterling Hound-Handler's Gauntlets
+						i(186217),	-- Supple Helhound Leather Pants
+						i(187359),	-- Ylva's Water Dish
+						i(186970, {	-- Feeder's Hand and Key
+							["questID"] = 62683,
+							["g"] = {
+								i(186727),	-- Seal Breaker Key
+							},
 						}),
 					},
 				}),
@@ -619,3 +762,31 @@ _.Zones =
 		}),
 	}),
 };
+
+_.HiddenQuestTriggers = {
+	q(61136),	-- Agonix bonus objective
+	q(60920),	-- Akros bonus objective
+	q(59230),	-- Dartanos bonus objective
+	q(61140),	-- Dath Rezara bonus objective
+	q(59183),	-- Drifting Sorrow bonus objective
+	q(62209),	-- Houndmaster Vasanok bonus objective
+	q(60903),	-- Krala bonus objective
+	q(61125),	-- Malevolent Stygia bonus objective
+	q(62618),	-- Odalrik bonus objective
+	q(60991),	-- Orrholyn bonus objective
+	q(63044),	-- Ratgusher bonus objective
+	q(60992),	-- Razkazzar bonus objective
+	q(62211),	-- Skittering Broodmother bonus objective
+	q(59441),	-- Soulsmith Yol-Mattar bonus objective
+	q(62539),	-- Stygian Incinerator bonus objective
+	q(61728),	-- Valis bonus objective
+
+	-- q(64258),	-- Carriage Crusher / Traitor Balthier
+	-- q(64439),	-- Carriage Crusher / Traitor Balthier
+	q(64701),	-- Stolen Anima Supplies 2nd trigger ?
+};
+
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10100, {	-- Shadowlands
+	}),
+});

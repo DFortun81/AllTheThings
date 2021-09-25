@@ -1,12 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(NETHERSTORM, {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(24162, {	-- Design: Arcane Khorium Band
 					["cr"] = 18866,  -- Mageslayer
 				}),
@@ -44,8 +43,11 @@ _.Zones =
 				i(22530, {	-- Formula: Enchant Bracer - Greater Dodge
 					["crs"] = {
 						23008,	-- Ethereum Jailor
-						22822, 	-- Ethereum Nullifier
+						22822,	-- Ethereum Nullifier
 					},
+				}),
+				i(28277, {  -- Formula: Enchant Cloak - Greater Shadow Resistance
+					["cr"] = 18870,  -- Voidshrieker
 				}),
 				i(22551, {	-- Formula: Enchant Weapon - Major Intellect
 					["cr"] = 20136,	-- Sunfury Researcher
@@ -65,10 +67,13 @@ _.Zones =
 				i(23610, {	-- Plans: Khorium Boots
 					["cr"] = 18873,	-- Disembodied Protector
 				}),
+				applyclassicphase(TBC_PHASE_THREE, i(33804, {	-- Schematic: Adamantite Arrow Maker
+					["cr"] = 19707,	-- Sunfury Archer
+				})),
 				i(23808, {	-- Schematic: Khorium Scope
 					["cr"] = 20207,	-- Sunfury Bowman
 				}),
 			}),
 		}),
-	}),
+	})),
 };

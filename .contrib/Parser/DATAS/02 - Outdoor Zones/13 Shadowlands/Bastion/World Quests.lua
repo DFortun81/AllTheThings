@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(BASTION, {
-			n(-34,  {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(61593, {	-- A Crisis of Memory (no idea why there are 2 versions of this)
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
@@ -208,7 +208,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
 				}),
-				i(181577),	-- Soulbearer's Vest
 			}),
 		}),
 	}),

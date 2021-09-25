@@ -2,19 +2,12 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(7, {	-- Legion
+_.Instances = { tier(LEGION_TIER, {
 	inst(707, {	-- Vault of the Wardens
-		["coord"] = { 48.0, 82.1, 630 },
+		["coord"] = { 48.0, 82.1, AZSUNA },
 		["maps"] = { 710, 711, 712 },
 		["g"] = {
 			n(QUESTS, {
-				i(127877, {	-- Bendy Glass Tubes
-					["provider"] = { "n", 105824 },	-- Grimoira
-					["requireSkill"] = ALCHEMY,
-					["g"] = {
-						q(39343),	-- Vault of the Wardens: Bendy Glass Tubes
-					},
-				}),
 				q(44486, {	-- Fel-Ravaged Tome
 					["provider"] = { "o", 258979 },	-- Fel-Ravaged Tome
 					["g"] = {

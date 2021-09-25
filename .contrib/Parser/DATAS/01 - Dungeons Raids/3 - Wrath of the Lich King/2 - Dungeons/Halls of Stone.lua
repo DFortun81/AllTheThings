@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
+_.Instances = { tier(WOTLK_TIER, {
 	inst(277, {	-- Halls of Stone
 		["lvl"] = 64,
 		["mapID"] = 140,
@@ -10,30 +10,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			n(QUESTS, {
 				q(29850, {	-- Corrupt Constructs
 					["provider"] = { "n", 55835 },	-- Kaldir Ironbane
-					["coord"] = { 35.6, 35.2 },
-				}),
-				q(54642, {	-- G.E.A.R. Up
-					["provider"] = { "n", 149503 },	-- Cog Captain Winklespring
-					["coord"] = { 50.0, 12.9, 1375 },
-					["races"] = { GNOME },
-					["sourceQuest"] = 54641, -- For Gnomeregan!
-					["minReputation"] = { 54, EXALTED }, -- Gnomeregan
-					["g"] = {
-						i(168286),	-- G.E.A.R. Commander's Buckle
-						i(168284),	-- G.E.A.R. Commander's Chestpiece
-						i(168290),	-- G.E.A.R. Commander's Cloak
-						i(168282),	-- G.E.A.R. Commander's Goggles
-						i(168285),	-- G.E.A.R. Commander's Handgrips
-						i(168287),	-- G.E.A.R. Commander's Legguards
-						i(168283),	-- G.E.A.R. Commander's Shoulderguards
-						i(168288),	-- G.E.A.R. Commander's Stompers
-						i(168289),	-- G.E.A.R. Commander's Wristbands
-						i(168862),	-- G.E.A.R. Tracking Beacon (not collectible, just here so it's not in Unsorted)
-					},
+					["coord"] = { 35.6, 35.2, 140 },
 				}),
 				q(13207, {	-- Halls of Stone
 					["provider"] = { "n", 28070 },	-- Brann Bronzebeard
-					["coord"] = { 70.8, 50.0 },
+					["coord"] = { 70.8, 50.0, 140 },
 					["groups"] = {
 						i(44370),	-- Mantle of the Intrepid Explorer
 						i(44373),	-- Pauldrons of Reconnaissance
@@ -43,11 +24,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 				q(29848, {	-- The Forlorn Watcher
 					["provider"] = { "n", 55835 },	-- Kaldir Ironbane
-					["coord"] = { 35.6, 35.2 },
+					["coord"] = { 35.6, 35.2, 140 },
 				}),
 			}),
 			d(1, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(35683, {	-- Palladium Ring
 						["crs"] = {
 							27962,	-- Dark Rune Elementalist
@@ -125,7 +106,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37655),	-- Mantle of the Tribunal
 					i(35677),	-- Cosmos Vestments
 					i(35675),	-- Linked Armor of the Sphere
-					i(157564), 	-- Marbled Bracers
+					i(157564),	-- Marbled Bracers
 					i(37656),	-- Raging Construct Bands
 					i(35676),	-- Constellation Leggings
 					i(37654),	-- Sabaton of the Ages
@@ -152,7 +133,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 80,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(37673, {	-- Dark Runic Mantle
 							["crs"] = {
 								27966,	-- Dark Rune Controller
@@ -240,7 +221,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37655),	-- Mantle of the Tribunal
 						i(35677),	-- Cosmos Vestments
 						i(35675),	-- Linked Armor of the Sphere
-						i(157564), 	-- Marbled Bracers
+						i(157564),	-- Marbled Bracers
 						i(37656),	-- Raging Construct Bands
 						i(35676),	-- Constellation Leggings
 						i(37654),	-- Sabaton of the Ages

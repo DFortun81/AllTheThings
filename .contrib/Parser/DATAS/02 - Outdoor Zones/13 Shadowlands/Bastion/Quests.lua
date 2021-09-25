@@ -87,6 +87,11 @@ _.Zones =
 					["provider"] = { "n", 167460 },	-- Thanikos
 					["coord"] = { 38.9, 55.2, BASTION },
 				}),
+				q(63584, {	-- A Triumphant Return
+					["sourceQuests"] = { 63590 },	-- The Vesper Rings
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 20.6, 22.8, BASTION },
+				}),
 				q(57716, {	-- A Wayward Disciple?
 					["sourceQuests"] = {
 						57977,	-- A Temple in Need
@@ -166,6 +171,11 @@ _.Zones =
 					["provider"] = { "n", 158862 },	-- Kleia
 					["coord"] = { 51.7, 81.0, BASTION },
 				}),
+				q(63585, {	-- Blind Loyalty
+					["sourceQuests"] = { 63583 },	-- I Intend to Live Forever
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 39.9, 20.0, BASTION },
+				}),
 				q(59262, {	-- Broken Wings
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
@@ -184,6 +194,11 @@ _.Zones =
 					["provider"] = { "n", 167135 },	-- Mikanikos
 					["coord"] = { 40.7, 55.5, BASTION },
 				}),
+				q(63984, {	-- Coins for the Ferryman
+					["sourceQuests"] = { 63983 },	-- Dead Drop
+					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
+					["coord"] = { 32.5, 32.4, BASTION },
+				}),
 				q(57934, {	-- Combat Drills
 					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
 					["provider"] = { "n", 158765 },	-- Pelodis
@@ -201,6 +216,16 @@ _.Zones =
 					},
 					["provider"] = { "n", 159762 },	-- Eridia
 					["coord"] = { 61.2, 74.3, BASTION },
+				}),
+				q(63983, {	-- Dead Drop
+					["sourceQuests"] = { 63982 },	-- Above My Station
+					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
+					["coord"] = { 32.5, 32.4, BASTION },
+				}),
+				q(63589, {	-- Directing Dedication
+					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 24.3, 30.2, BASTION },
 				}),
 				q(58771, {	-- Directions Not Included
 					["sourceQuests"] = { 58976 },	-- Chasing a Memory
@@ -271,6 +296,11 @@ _.Zones =
 					["provider"] = { "n", 167038 },	-- Kleia
 					["coord"] = { 54.4, 64.2, BASTION },
 				}),
+				q(63582, {	-- He Was My Student
+					["sourceQuests"] = { 63581 },	-- Step Into the Light
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 39.9, 20.0, BASTION },
+				}),
 				q(62718, {	-- Hero's Rest
 					["sourceQuests"] = { 57266 },	-- The First Cleansing
 					["isBreadcrumb"] = true,
@@ -291,6 +321,11 @@ _.Zones =
 					["g"] = {
 						i(180839)	-- Helpful Glimmerfly (PET!)
 					},
+				}),
+				q(63583, {	-- I Intend to Live Forever
+					["sourceQuests"] = { 63582 },	-- He Was My Student
+					["provider"] = { "n", 180733 },	-- Uther
+					["coord"] = { 40.1, 20.3, BASTION },
 				}),
 				q(58979, {	-- I MADE You!
 					["sourceQuests"] = { 58978 },	-- Lysonia's Truth
@@ -480,6 +515,16 @@ _.Zones =
 					["provider"] = { "n", 157687 },	-- Vesiphone
 					["coord"] = { 64.4, 71.0, BASTION },
 				}),
+				q(63588, {	-- Rebuilding Faith
+					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
+					["provider"] = { "n", 177300 },	-- Fallen Disciple Nikolon
+					["coord"] = { 24.4, 30.1, BASTION },
+				}),
+				q(63587, {	-- Reclaimable Anima
+					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
+					["provider"] = { "n", 177123 },	-- Kleia
+					["coord"] = { 24.2, 30.0, BASTION },
+				}),
 				q(57932, {	-- Resource Drain
 					["sourceQuests"] = {
 						59674,	-- A Friendly Rivalry
@@ -524,6 +569,11 @@ _.Zones =
 					["sourceQuests"] = { 57716 },	-- A Wayward Disciple?
 					["provider"] = { "n", 159762 },	-- Eridia
 					["coord"] = { 54.1, 73.6, BASTION },
+				}),
+				q(63581, {	-- Step Into the Light
+					["sourceQuests"] = { 63580 },	-- Wounded Memories
+					["provider"] = { "n", 154629 },	-- Thenios
+					["coord"] = { 40.1, 20.0, BASTION },
 				}),
 				q(59197, {	-- Steward at Work
 					["sourceQuests"] = { 59426 },	-- Your Personal Assistant
@@ -782,6 +832,15 @@ _.Zones =
 					["provider"] = { "n", 167035 },	-- Locus-Keeper Mnemis
 					["coord"] = { 58.8, 65.2, BASTION },
 				}),
+				q(63590, {	-- The Vesper Rings
+					["sourceQuests"] = {
+						63589,	-- Directing Dedication
+						63588,	-- Rebuilding Faith
+						63587,	-- Reclaimable Anima
+					},
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 20.6, 22.8, BASTION },
+				}),
 				q(59200, {	-- The Wards of Bastion
 					["sourceQuests"] = { 59199 },	-- Kyrestia, the Firstborne
 					["provider"] = { "n", 160037 },	-- Polemarch Adrestes
@@ -898,6 +957,11 @@ _.Zones =
 					["provider"] = { "n", 157696 },	-- Nemea
 					["coord"] = { 57.2, 39.2, BASTION },
 				}),
+				q(63580, {	-- Wounded Memories
+					["sourceQuests"] = { 63579 },	-- A Paladin's Soul
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 39.9, 20.0, BASTION },
+				}),
 				q(57966, {	-- You Go First
 					["sourceQuests"] = {
 						57875,	-- Mark of Humility
@@ -921,39 +985,140 @@ _.Zones =
 					["provider"] = { "n", 165045 },	-- Kalisthene
 					["coord"] = { 52.8, 47.8, BASTION },
 				}),
-
-				-- Bonus Objectives
-				q(62737, {	-- Aspirant For a Day (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181580),	-- Soulbearer's Gloves [monk]
-					},
-				}),
-				q(59015, {	-- Hostile Recollection
-				}),
-				q(62735, {	-- Hostile Recollection (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-				}),
-				q(62732, {	-- Locus Focus (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181587),	-- Soulbearer's Belt [monk]
-					},
-				}),
-				q(62736, {	-- Maldraxxi Eviction Notice (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181577),	-- Soulbearer's Vest [monk]
-					},
+				n(BONUS_OBJECTIVES, {
+					q(62737, {	-- Aspirant For a Day (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181571),	-- Spiritmender's Handwraps
+							i(181580),	-- Soulbearer's Gloves
+							i(181596),	-- Forgehand's Handguards
+							i(181608),	-- Shieldguard's Gauntlets
+						},
+					}),
+					q(59015, {	-- Hostile Recollection
+					}),
+					q(62735, {	-- Hostile Recollection (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["coord"] = { 56.9, 59.9, BASTION },
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181703),	-- Skychime Necklace
+						},
+					}),
+					q(62732, {	-- Locus Focus (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["coord"] = { 54.7, 64.1, BASTION },
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181575),	-- Spiritmender's Cord
+							i(181587),	-- Soulbearer's Belt
+							i(181603),	-- Forgehand's Chain
+							i(181612),	-- Shieldguard's Girdle
+						},
+					}),
+					q(62736, {	-- Maldraxxi Eviction Notice (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181569),	-- Spiritmender's Robe
+							i(181577),	-- Soulbearer's Vest
+							i(181591),	-- Forgehand's Hauberk
+							i(181605),	-- Shieldguard's Breastplate
+						},
+					}),
+					q(62705, {	-- Scour the Temple (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["coord"] = { 58.4, 75.2, BASTION },
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181721),	-- Ascendent Valor Signet
+						},
+					}),
 				}),
 			}),
 		}),
 	}),
+};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(57681),	-- [NYI] Temple of Courage
+		q(57684),	-- [NYI] Temple of Humility
+		q(57683),	-- [NYI] Temple of Loyalty
+		q(58954),	-- [PH] Catch!
+		q(58516),	-- [UNUSED]
+		q(58517),	-- [UNUSED]
+		q(60235),	-- Newfound Power
+		q(61636),	-- PH - UNUSED
+		q(62304),	-- Round 1
+		q(62321),	-- Round 1
+		q(62324),	-- Round 1
+		q(62367),	-- Round 1
+		q(62385),	-- Round 1
+		q(62305),	-- Round 2
+		q(62322),	-- Round 2
+		q(62325),	-- Round 2
+		q(62373),	-- Round 2
+		q(62386),	-- Round 2
+		q(62307),	-- Round 3
+		q(62323),	-- Round 3
+		q(62366),	-- Round 3
+		q(62374),	-- Round 3
+		q(62387),	-- Round 3
+		q(57685),	-- Temple of Purity
+		q(57682),	-- Temple of Wisdom
+		q(62895),	-- Track Selection
+		q(62896),	-- Track Selection
+	}),
+	n(-10100, {	-- Shadowlands
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(175608),	-- Pure Aspirant's Robe
+				i(175620),	-- Pure Aspirant's Hood
+				i(175629),	-- Pure Aspirant's Mantle
+				i(175632),	-- Pure Aspirant's Cord
+				i(178958),	-- Pure Aspirant's Handwraps
+			}),
+			n(-44, {	-- Leather
+				i(175611),	-- Courageous Aspirant's Vest
+				i(175622),	-- Courageous Aspirant's Helm
+				i(175627),	-- Courageous Aspirant's Spaulders
+				i(175634),	-- Courageous Aspirant's Belt
+				i(178956),	-- Courageous Aspirant's Mitts
+			}),
+			n(-45, {	-- Mail
+				i(175610),	-- Humble Aspirant's Vest
+				i(175621),	-- Humble Aspirant's Helm
+				i(175630),	-- Humble Aspirant's Monnion
+				i(175633),	-- Humble Aspirant's Belt
+				i(178959),	-- Humble Aspirant's Handguards
+			}),
+			n(-46, {	-- Plate
+				i(175607),	-- Judicious Aspirant's Helm
+				i(175609),	-- Judicious Aspirant's Chestplate
+				i(175628),	-- Judicious Aspirant's Shoulders
+				i(175631),	-- Judicious Aspirant's Girdle
+				i(178957),	-- Judicious Aspirant's Gloves
+			}),
+		}),
+		n(-319, {	-- Weapons
+			i(184471),	-- Guidenote Dagger
+			i(184529),	-- Elysian Ceremonial Dagger
+			i(184532),	-- Silver-Edged Elysian Dirk
+			i(184528),	-- Elysian Guillotine Claws
+			i(184531),	-- Elysian Battle Hammer
+			i(184533),	-- Elysian Forgelite's Hammer
+			i(184527),	-- Elysian Watcher's Bell
+			i(184524),	-- Elysian Twinbladed Glaive
+			i(184525),	-- Elysian Pointed Hoplon
+			i(184526),	-- Elysian Phalanx Dory
+			i(179735),	-- 9.0 Monster - Bastion - Weapon - Polearm AGI (But is a sword)
+			i(184530),	-- Greatsword of the Elysian Guard
+			i(184523),	-- Elysian Ironbolt Gastraphetes
+			i(179007),	-- 9.0 Monster - Bastion - Weapon - Dark
+		}),
+	}),
+});
+_.HiddenQuestTriggers = {
+	q(60625),	-- Triggerd when looting chest at 41,67
 };

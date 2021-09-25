@@ -4,7 +4,7 @@
 _.ItemDB = {};
 local i = function(itemID, spellID)
 	local item = { ["itemID"] = itemID, ["spellID"] = spellID };
-	
+
 	_.ItemDB[itemID] = item;
 	return item;
 end

@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
-		m(550, {	-- Nagrand (Draenor)
+	m(DRAENOR, {
+		m(DRAENOR_NAGRAND, {
 			n(VENDORS, {
 				n(82754, {	-- Nurse Lizz <First Aid>
-					["coord"] = { 78.6, 47.8, 550 },
+					["coord"] = { 78.6, 47.8, DRAENOR_NAGRAND },
 					["g"] = {
 						i(44694),	-- Antiseptic-Soaked Dressing
 						i(44693),	-- Wound Dressing

@@ -4,12 +4,12 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
-		m(862, {	-- Zuldazar
-			n(ZONEDROPS, {
+	m(ZANDALAR, {
+		m(ZULDAZAR, {
+			n(ZONE_DROPS, {
 				["maps"] = {	-- Note!! We can list this in these two zones due to them dropping here.  If we add more to Zuldazar then we'll look into adjusting this.
-					863,	-- Nazmir
-					864,	-- Vol'dun
+					NAZMIR,
+					VOLDUN,
 				},
 				["g"] = {
 					i(157782, {	-- Pterrordax Egg

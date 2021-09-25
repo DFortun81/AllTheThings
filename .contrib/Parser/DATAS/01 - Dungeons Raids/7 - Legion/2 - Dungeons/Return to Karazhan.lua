@@ -2,9 +2,9 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(7, {	-- Legion
+_.Instances = { tier(LEGION_TIER, {
 	inst(860, {	-- Return to Karazhan
-		["coord"] = { 46.7, 70.1, 42 },
+		["coord"] = { 46.7, 70.1, DEADWIND_PASS },
 		["maps"] = {
 			815, 816, 817, 818, 819, 820, 821, 822,	-- Upper
 			809, 810, 811, 812, 813, 814,	-- Lower
@@ -135,7 +135,7 @@ _.Instances = { tier(7, {	-- Legion
 					["cr"] = 114312,	-- Moroes
 					["g"] = {
 						i(138797),	-- Illusion: Mongoose
-						i(142246, { 	-- Broken Pocket Watch
+						i(142246, {	-- Broken Pocket Watch
 							["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
 							["questID"] = 44803,	-- Return to Karazhan: Master of the House
 						}),
@@ -334,7 +334,7 @@ _.Instances = { tier(7, {	-- Legion
 					["g"] = {
 						ach(11338),	-- Dine and Bash
 						i(138797),	-- Illusion: Mongoose
-						i(142246, { 	-- Broken Pocket Watch
+						i(142246, {	-- Broken Pocket Watch
 							["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
 							["questID"] = 44803,	-- Return to Karazhan: Master of the House
 						}),
@@ -444,3 +444,18 @@ _.Instances = { tier(7, {	-- Legion
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(142214),	-- 7.1 Dungeon - Karazhan - Cloth SHOULDER 2
+			}),
+		}),
+	}),
+});
+_.HiddenQuestTriggers = {
+	q(45395),	-- Shade of Medivh Kill
+	q(45393),	-- Moroes cutscene
+	q(45394),	-- Maiden of Virtue Kill
+	q(45396),	-- Mana Devourer Kill
+};

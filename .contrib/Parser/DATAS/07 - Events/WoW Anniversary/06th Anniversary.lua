@@ -8,7 +8,7 @@ _.WorldEvents =
 		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
 		["g"] = {
 			ach(5512, {	-- 6th Anniversary
-				["u"] = 36,	-- WoW Anniversary [Removed]
+				["u"] = REMOVED_FROM_GAME,
 			}),
 		},
 	}),

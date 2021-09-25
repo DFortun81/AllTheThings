@@ -27,7 +27,7 @@ _.Achievements =
 				i(147543),	-- Son of Skum
 			}),
 			ach(12927),		-- Polished Pet Charmer*
-			ach(9712), 		-- Shiny Pet Charmer*
+			ach(9712),		-- Shiny Pet Charmer*
 			ach(6607,  {	-- Taming Azeroth*
 				title(207),	-- Tamer
 				crit(1),	-- Taming Outland

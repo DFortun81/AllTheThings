@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {
+	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 		m(ISLE_OF_QUELDANAS, {
 			n(QUESTS, {
 				q(11545, {	-- A Charitable Donation (Removed completion of Phase 4)
@@ -94,15 +93,6 @@ _.Zones =
 					["coord"] = { 47.4, 35.3, ISLE_OF_QUELDANAS },
 					["isDaily"] = true,
 				}),
-				q(11488, {	-- Magisters' Terrace
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 24813 },	-- Exarch Larethor
-					["sourceQuest"] = 11481,	-- Crisis at the Sunwell
-				}),
-				q(29682, {	-- Magisters' Terrace
-					["provider"] = { "n", 24967 },	-- Captain Theris Dawnhearth
-					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
-				}),
 				q(11535, {	-- Making Ready
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 25046 },	-- Smith Hauthaa
@@ -174,5 +164,12 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(11551),	-- BETA Agamath, the First Gate
+		q(11553),	-- BETA Archonisus, the Final Gate
+		q(11552),	-- BETA Rohendor, the Second Gate
+	}),
+});

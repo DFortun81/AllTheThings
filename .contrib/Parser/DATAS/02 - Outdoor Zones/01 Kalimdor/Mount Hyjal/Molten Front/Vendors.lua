@@ -1,10 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-_.Zones = 
+_.Zones =
 {
 	m(KALIMDOR, {
-		m(198, {	-- Mount Hyjal
+		m(MOUNT_HYJAL, {
 			m(338, {	-- Molten Front
 				n(VENDORS, {
 					n(53881, {	-- Ayla Shadowstorm <Treasures of Elune>

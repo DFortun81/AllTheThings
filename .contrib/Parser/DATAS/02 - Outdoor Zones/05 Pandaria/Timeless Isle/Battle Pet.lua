@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(424, { 	-- Pandaria
-		m(554, {	-- Timeless Isle
-			filter(101, {	-- Pet Battle
+	m(PANDARIA, {
+		m(TIMELESS_ISLE, {
+			filter(BATTLE_PETS, {
 				p(1324, {	-- Ashwing Moth
 					["crs"] = { 73542 },	-- Ashwing Moth
 				}),

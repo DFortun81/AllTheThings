@@ -1,17 +1,14 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-
--- TODO: formatting
 _.Holidays =
 {
-	{	-- Trial of Style
-		["holidayID"] = 1671631,	-- Trial of Style
+	holiday(1671631, {	-- Trial of Style
+		["u"] = MICRO_HOLIDAY,
 		["mapID"] = -777,
-		["g"] = {
-			{	-- Trial of Style Token
-				["itemID"] = 151134,	-- Trial of Style Token
-				["u"] = 22,				-- Micro-Holiday Filter
+		["groups"] = {
+			i(151134, {	-- Trial of Style Token
+				["u"] = MICRO_HOLIDAY,
 				["crs"] = {
 					54473,	-- Warpweaver Dushar <Transmogrifier> (Horde / Orgrimmar)
 					142068,	-- Warpweaver Ezil <Transmogrifier> (Alliance / Boralus)
@@ -26,7 +23,12 @@ _.Holidays =
 					99867,	-- Warpweaver Tuviss <Transmogrifier> (Neutral / Dalaran)
 					85291,	-- Warpweaver Tuviss <Transmogrifier> (Alliance / Lunarfall)
 				},
-			},
+			}),
+			n(133164, {	-- Nellie Voguesong <Shirts and Tabards>
+				["sym"] = {
+					{"sub", "common_vendor", 28776}, -- Elizabeth Ross <Tabard Vendor>
+				},
+			}),
 		},
-	},
+	}),
 };

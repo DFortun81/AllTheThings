@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(8, {	-- Battle For Azeroth
+	tier(BFA_TIER, {
 		prof(LEATHERWORKING, {
 			filter(114, {	-- Mount Equipment
 				i(168419),	-- Comfortable Rider's Barding

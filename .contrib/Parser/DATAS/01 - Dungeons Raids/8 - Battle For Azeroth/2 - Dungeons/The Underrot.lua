@@ -2,9 +2,9 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(8, {	-- Battle For Azeroth
+_.Instances = { tier(BFA_TIER, {
 	inst(1022, {	-- The Underrot
-		["coord"] = { 51.6, 65.3, 863 },
+		["coord"] = { 51.6, 65.3, NAZMIR },
 		["maps"] = {
 			1041,	-- The Underot
 			1042,	-- Ruin's Descent
@@ -56,7 +56,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						131383,	-- Sporecaller Zancha
 					},
-					["g"] =  bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159654),	-- Corruption Borne Headlopper
 						i(159665),	-- Targee of the Ancient Warder
 						i(159292),	-- Sporecaller's Shroud
@@ -71,7 +71,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						133007,	-- Unbound Abomination
 					},
-					["g"] =  bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12500),	-- Underrot
 						i(159655),	-- Vile Exasanguinator
 						i(159446),	-- Greathelm of the Putrid Path

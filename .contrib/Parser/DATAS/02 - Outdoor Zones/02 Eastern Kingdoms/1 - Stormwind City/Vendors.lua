@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(84, {	-- Stormwind City
+		m(STORMWIND_CITY, {
 			n(VENDORS, {
 				n(69334,  {	-- Adherent Hanjun
-					["coord"] = { 68.0, 17.0, 84 },
+					["coord"] = { 68.0, 17.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(92071),	-- Tushui Satchel
@@ -16,61 +16,19 @@ _.Zones =
 					},
 				}),
 				n(1347,   {	-- Alexandra Bolero
-					["coord" ] = { 53.2, 81.6, 84 },
+					["coord"] = { 53.2, 81.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(54601, {	-- Pattern: Belt of the Depths
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(68199, {	-- Pattern: Black Embersilk Gown
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
+					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
 						i(6274, {	-- Pattern: Blue Overalls
 							["isLimited"] = true,
-						}),
-						i(54603, {	-- Pattern: Breeches of Mended Nightmares
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54602, {	-- Pattern: Dreamless Belt
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54604, {	-- Pattern: Flame-Ascended Pantaloons
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54605, {	-- Pattern: Illusionary Bag
-							["cost"] = { { "i", 54440, 1 }, },	-- 1x Dreamcloth
-						}),
-						i(54600, {	-- Pattern: Powerful Ghostly Spellthread
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54599, {	-- Pattern: Powerful Enchanted Spellthread
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54593, {	-- Pattern: Vicious Embersilk Cowl
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54594, {	-- Pattern: Vicious Embersilk Pants
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54595, {	-- Pattern: Vicious Embersilk Robe
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54596, {	-- Pattern: Vicious Fireweave Cowl
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54597, {	-- Pattern: Vicious Fireweave Pants
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
-						}),
-						i(54598, {	-- Pattern: Vicious Fireweave Robe
-							["cost"] = { { "i", 53643, 8 }, },	-- 8x Bolt of Embersilk Cloth
 						}),
 						i(10325, {	-- Pattern: White Wedding Dress
 							["isLimited"] = true,
 						}),
-					},
+					}),
 				}),
 				n(175051, {	-- Alice Fischer <Corrupted Aspirant Vendor>
-					["coord" ] = { 74.97, 67.35, 84 },
+					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(-659, {	-- Aspirant PvP Gear
@@ -276,7 +234,7 @@ _.Zones =
 				}),
 				n(55285,  {	-- Astrid Langstrump
 					["description"] = "Appears in Stormwind after War of Thorns.",
-					["coord"] = { 52.4, 8.2, 84 },
+					["coord"] = { 52.4, 8.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(73838),	-- Mountain Horse
@@ -284,7 +242,7 @@ _.Zones =
 					},
 				}),
 				n(12777,  {	-- Captain Dirgehammer (Legacy)
-					["coord"] = { 75.0, 67.5, 84 },
+					["coord"] = { 75.0, 67.5, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -373,18 +331,16 @@ _.Zones =
 					},
 				}),
 				n(69975,  {	-- Captain Dirgehammer <Cataclysmic Gladiator>
-					["coord"] = { 75.0, 67.5, 84 },
+					["coord"] = { 75.0, 67.5, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "headerID", -9979 },	-- Select the Cataclysm header.
-						{"pop"},	-- Discard header and acquire the children.
-						{"where", "headerID", -674 },	-- Cataclysmic Gladiator header.
-						{"pop"},	-- Discard header and acquire the children.
-						{"where", "headerID", -661 },	-- Gladiator header.
+						{"sub", "pvp_gear_base", -9979, -674, -661 },	-- Cataclysmic Gladiator: Season 11 Gladiator Gear
+						{"pop"},	-- Discard the Set header and acquire the children.
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(49877,  {	-- Captain Lancy Revshon
-					["coord"] = { 67.6, 72.8, 84 },
+					["coord"] = { 67.6, 72.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64902),	-- Cape of Stormwind
@@ -395,7 +351,7 @@ _.Zones =
 					},
 				}),
 				n(34079,  {	-- Captain O'Neal
-					["coord"] = { 75.0, 66.7, 84 },
+					["coord"] = { 75.0, 66.7, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -415,7 +371,7 @@ _.Zones =
 					},
 				}),
 				n(1291,   {	-- Carla Granger
-					["coord"] = { 62.2, 67.6, 84 },
+					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(16059),	-- Common Brown Shirt
@@ -424,14 +380,14 @@ _.Zones =
 					},
 				}),
 				n(30713,  {	-- Catarina Stanford
-					["coord"] = { 49.8, 74.6, 84 },
+					["coord"] = { 49.8, 74.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(140566),	-- Technique: Songs of the Alliance
 					},
 				}),
 				n(5494,   {	-- Catherine Leland
-					["coord"] = { 55.0, 69.6, 84 },
+					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish
@@ -440,7 +396,7 @@ _.Zones =
 					},
 				}),
 				n(1307,   {	-- Charys Yserian
-					["coord"] = { 44.8, 86.2, 84 },
+					["coord"] = { 44.8, 86.2, STORMWIND_CITY },
 					["description"] = "The items this vendor sells have all limited supply.",
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -466,10 +422,10 @@ _.Zones =
 				}),
 				n(52358,  {	-- Craggle Wobbletop
 					["coords"] = {
-						{ 66.6, 64.4, 84 },
-						{ 63.6, 61.2, 84 },
-						{ 56.6, 67.6, 84 },
-						{ 58.6, 76.8, 84 },
+						{ 66.6, 64.4, STORMWIND_CITY },
+						{ 63.6, 61.2, STORMWIND_CITY },
+						{ 56.6, 67.6, STORMWIND_CITY },
+						{ 58.6, 76.8, STORMWIND_CITY },
 					},
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -477,7 +433,7 @@ _.Zones =
 						i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
 						i(104324),	-- Foot Ball (TOY!)
 						i(69895, {	-- Green Balloon (TOY!)
-							["u"] = 20, -- Children's Week
+							["u"] = CHILDRENS_WEEK,
 						}),
 						i(137663),	-- Soft Foam Sword (TOY!)
 						i(104323),	-- The Swineskin (TOY!)
@@ -487,12 +443,12 @@ _.Zones =
 						i(95621),	-- Warbot Ignition Key (PET!)
 						i(45057),	-- Wind-Up Train Wrecker (TOY!)
 						i(69896, {	-- Yellow Balloon (TOY!)
-							["u"] = 20, -- Children's Week
+							["u"] = CHILDRENS_WEEK,
 						}),
 					},
 				}),
 				n(133411, {	-- Dalia Skyblossom
-					["coord"] = { 51.4, 18.0, 84 },
+					["coord"] = { 51.4, 18.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
@@ -500,7 +456,7 @@ _.Zones =
 					},
 				}),
 				n(1304,   {	-- Darian Singh
-					["coord"] = { 42.6, 76.8, 84 },
+					["coord"] = { 42.6, 76.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(18649, {	-- Schematic: Blue Firework
@@ -509,7 +465,7 @@ _.Zones =
 					},
 				}),
 				n(50669,  {	-- Dawn Radue
-					["coord"] = { 64.8, 71.6, 84 },
+					["coord"] = { 64.8, 71.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(67396),	-- "Carriage - Christina" Precious Metal Bag
@@ -522,9 +478,9 @@ _.Zones =
 						i(67387),	-- "Carriage" Signature Bag
 					},
 				}),
-				n(52029,  {	-- Edlan Halsing
+				n(52029,  {	-- Edlan Halsing <Bloodthirsty Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 74.7, 68.2, 84 },
+					["coord"] = { 74.7, 68.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -9983 },
@@ -532,23 +488,30 @@ _.Zones =
 					},
 				}),
 				n(1286,   {	-- Edna Mullby
-					["coord"] = { 64.6, 71.6, 84 },
+					["coord"] = { 64.6, 71.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(20856, {	-- Design: Heavy Golden Necklace of Battle
+							["spellID"] = 25320,	-- Heavy Golden Necklace of Battle
+							["requireSkill"] = JEWELCRAFTING,
+							["timeline"] = { "added 2.0.1.6180" },
+							-- #if ANYCLASSIC
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
 				n(5503,   {	-- Eldraeith
-					["coord"] = { 55.6, 85.6, 84 },
+					["coord"] = { 55.6, 85.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22250),	-- Herb Pouch
 					},
 				}),
 				n(5483,   {	-- Erika Tate
-					["coord"] = { 77.6, 53.2, 84 },
+					["coord"] = { 77.6, 53.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
@@ -556,7 +519,7 @@ _.Zones =
 					},
 				}),
 				n(44245,  {	-- Faldren Tillsdale
-					["coord"] = { 76.07, 66.78, 84 },
+					["coord"] = { 76.1, 66.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(77162),	-- Arrowflick Gauntlets
@@ -635,7 +598,7 @@ _.Zones =
 							["cost"] = { { "i", 78184, 1 }, },	-- Chest of the Corrupted Conqueror
 						}),
 						i(78726, {	-- Breastplate of Radiant Glory
-							["cost"] = { { "i", 78726, 1 }, },	-- Chest of the Corrupted Conqueror
+							["cost"] = { { "i", 78184, 1 }, },	-- Chest of the Corrupted Conqueror
 						}),
 						i(77091),	-- Cameo of Terrible Memories
 						i(78827, {	-- Chestguard of Radiant Glory
@@ -1493,7 +1456,7 @@ _.Zones =
 					},
 				}),
 				n(56925,  {	-- Farrah Facet
-					["coord"] = { 63.8, 61.6, 84 },
+					["coord"] = { 63.8, 61.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(71928, {	-- Design: Accurate Shadow Spinel
@@ -1699,8 +1662,19 @@ _.Zones =
 						}),
 					},
 				}),
+				n(179896, {	-- Finn
+					["coord"] = { 61.0, 65.0, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(187009),	-- Dazzling Spectacles
+						i(186092),	-- Historical Perspective Shifters
+						i(186091),	-- Onyx Glare-Reducers
+						i(186090),	-- Simple Glasses
+						i(187010),	-- Tasteful Eyeglasses
+					},
+				}),
 				n(1298,   {	-- Frederick Stover
-					["coord"] = { 58.6, 69.0, 84 },
+					["coord"] = { 58.6, 69.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11303, {	-- Fine Shortbow
@@ -1715,468 +1689,29 @@ _.Zones =
 					},
 				}),
 				n(50480,  {	-- Isabel Jones
-					["coord"] = { 63.8, 61.3, 84 },
+					["coord"] = { 63.8, 61.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["g"] ={
-						i(52409, {	-- Design: Accurate Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52419, {	-- Design: Adept Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52421, {	-- Design: Artful Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52437, {	-- Design: Austere Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52461, {	-- Design: Band of Blades
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52381, {	-- Design: Bold Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52362, {	-- Design: Bold Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52435, {	-- Design: Bracing Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52464, {	-- Design: Brazen Elementium Medallion
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52449, {	-- Design: Brilliant Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52387, {	-- Design: Brilliant Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52434, {	-- Design: Chaotic Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52413, {	-- Design: Deadly Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52401, {	-- Design: Defender's Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52416, {	-- Design: Deft Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52447, {	-- Design: Delicate Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52380, {	-- Design: Delicate Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52441, {	-- Design: Destructive Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52438, {	-- Design: Effulgent Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52460, {	-- Design: Elementium Destroyer's Ring
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52467, {	-- Design: Elementium Guardian
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52463, {	-- Design: Elementium Moebius Band
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52439, {	-- Design: Ember Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52443, {	-- Design: Enigmatic Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52465, {	-- Design: Entwined Elementium Choker
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52405, {	-- Design: Etched Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52436, {	-- Design: Eternal Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52466, {	-- Design: Eye of Many Deaths
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52415, {	-- Design: Fierce Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52420, {	-- Design: Fine Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52448, {	-- Design: Flashing Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52384, {	-- Design: Flashing Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52433, {	-- Design: Fleet Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52428, {	-- Design: Forceful Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52445, {	-- Design: Forlorn Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52398, {	-- Design: Fractured Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52459, {	-- Design: Fractured Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52406, {	-- Design: Glinting Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52403, {	-- Design: Guardian's Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52444, {	-- Design: Impassive Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52412, {	-- Design: Inscribed Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52425, {	-- Design: Jagged Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52422, {	-- Design: Keen Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52429, {	-- Design: Lightning Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(68360, {	-- Design: Lucent Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52396, {	-- Design: Mystic Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52457, {	-- Design: Mystic Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52424, {	-- Design: Nimble Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52426, {	-- Design: Piercing Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52410, {	-- Design: Polished Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52414, {	-- Design: Potent Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52442, {	-- Design: Powerful Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52450, {	-- Design: Precise Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52389, {	-- Design: Precise Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52430, {	-- Design: Puissant Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(69853, {	-- Design: Punisher's Band
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52404, {	-- Design: Purified Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52397, {	-- Design: Quick Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52458, {	-- Design: Quick Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52417, {	-- Design: Reckless Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52423, {	-- Design: Regal Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52411, {	-- Design: Resolute Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(68361, {	-- Design: Resplendent Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52407, {	-- Design: Retaliating Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52440, {	-- Design: Revitalizing Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52454, {	-- Design: Rigid Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52393, {	-- Design: Rigid Ocean Sapphire
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52462, {	-- Design: Ring of Warring Elements
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52432, {	-- Design: Sensei's Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52400, {	-- Design: Shifting Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52418, {	-- Design: Skillful Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52395, {	-- Design: Smooth Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52456, {	-- Design: Smooth Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52451, {	-- Design: Solid Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52390, {	-- Design: Solid Ocean Sapphire
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52399, {	-- Design: Sovereign Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52452, {	-- Design: Sparkling Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52391, {	-- Design: Sparkling Ocean Sapphire
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52427, {	-- Design: Steady Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52453, {	-- Design: Stormy Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52392, {	-- Design: Stormy Ocean Sapphire
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52394, {	-- Design: Subtle Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52455, {	-- Design: Subtle Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52402, {	-- Design: Timeless Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52408, {	-- Design: Veiled Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(68742, {	-- Design: Vivid Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(68359, {	-- Design: Willful Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52431, {	-- Design: Zen Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
 					},
 				}),
 				n(1318,   {	-- Jessara Cordell
-					["coord"] = { 53.0, 74.2, 84 },
+					["coord"] = { 53.0, 74.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(64411, {	-- Formula: Enchant Boots - Assassin's Step
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64412, {	-- Formula: Enchant Boots - Lavawalker
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64413, {	-- Formula: Enchant Bracer - Greater Speed
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52740, {	-- Formula: Enchant Chest - Greater Stamina
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52739, {	-- Formula: Enchant Chest - Peerless Stats
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(67312, {	-- Formula: Magic Lamp
-							["races"] = ALLIANCE_ONLY,
-							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
-						}),
-						i(64414, {	-- Formula: Enchant Gloves - Greater Mastery
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(64415, {	-- Formula: Enchant Gloves - Mighty Strength
-							["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-						}),
-						i(52736, {	-- Formula: Enchant Weapon - Landslide
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
-						i(52733, {	-- Formula: Enchant Weapon - Power Torrent
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
-						i(52735, {	-- Formula: Enchant Weapon - Windwalk
-							["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-						}),
+					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					},
+					}),
 				}),
 				n(5565,   {	-- Jillian Tanner
-					["coord"] = { 71.7, 62.8, 84 },
+					["coord"] = { 71.7, 62.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(67095, {	-- Pattern: Assassin's Chestplate
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67070, {	-- Pattern: Belt of Nefarious Whispers
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67084, {	-- Pattern: Charscale Leg Armor
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67094, {	-- Pattern: Chestguard of Nature's Fury
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67073, {	-- Pattern: Corded Viper Belt
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67100, {	-- Pattern: Dragonkiller Tunic
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(68193, {	-- Pattern: Dragonscale Leg Armor
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(71721, {	-- Pattern: Drakehide Leg Armor
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67068, {	-- Pattern: Lightning Lash
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67082, {	-- Pattern: Razor-Edged Cloak
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67072, {	-- Pattern: Stormleather Sash
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67083, {	-- Pattern: Twilight Dragonscale Cloak
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67096, {	-- Pattern: Twilight Scale Chestguard
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67064, {	-- Pattern: Vicious Charscale Belt
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67063, {	-- Pattern: Vicious Charscale Boots
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67049, {	-- Pattern: Vicious Charscale Bracers
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67090, {	-- Pattern: Vicious Charscale Chest
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67053, {	-- Pattern: Vicious Charscale Gloves
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67091, {	-- Pattern: Vicious Charscale Helm
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67079, {	-- Pattern: Vicious Charscale Legs
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67078, {	-- Pattern: Vicious Charscale Shoulders
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67080, {	-- Pattern: Vicious Dragonscale Belt
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67065, {	-- Pattern: Vicious Dragonscale Boots
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67054, {	-- Pattern: Vicious Dragonscale Bracers
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67093, {	-- Pattern: Vicious Dragonscale Chest
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67066, {	-- Pattern: Vicious Dragonscale Gloves
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67081, {	-- Pattern: Vicious Dragonscale Helm
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67092, {	-- Pattern: Vicious Dragonscale Legs
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67055, {	-- Pattern: Vicious Dragonscale Shoulders
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67076, {	-- Pattern: Vicious Leather Belt
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67060, {	-- Pattern: Vicious Leather Boots
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67046, {	-- Pattern: Vicious Leather Bracers
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67087, {	-- Pattern: Vicious Leather Chest
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67048, {	-- Pattern: Vicious Leather Gloves
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67077, {	-- Pattern: Vicious Leather Helm
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67089, {	-- Pattern: Vicious Leather Legs
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67062, {	-- Pattern: Vicious Leather Shoulders
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67044, {	-- Pattern: Vicious Wyrmhide Belt
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67058, {	-- Pattern: Vicious Wyrmhide Boots
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67042, {	-- Pattern: Vicious Wyrmhide Bracers
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67075, {	-- Pattern: Vicious Wyrmhide Chest
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67056, {	-- Pattern: Vicious Wyrmhide Gloves
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67086, {	-- Pattern: Vicious Wyrmhide Helm
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67085, {	-- Pattern: Vicious Wyrmhide Legs
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-						i(67074, {	-- Pattern: Vicious Wyrmhide Shoulders
-							["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-						}),
-					},
+					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {}),
 				}),
 				n(49701,  {	-- Jon Casper
-					["coord"] = { 50.6, 71.6, 84 },
+					["coord"] = { 50.6, 71.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(65426, {	-- Recipe: Baked Rockfish
@@ -2269,226 +1804,24 @@ _.Zones =
 					},
 				}),
 				n(55684,  {	-- Jordan Smith
-					["coord"] = { 64.8, 48.2, 84 },
+					["coord"] = { 64.8, 48.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(66100, {	-- Plans: Ebonsteel Belt Buckle
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66113, {	-- Plans: Elementium Bonesplitter
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66106, {	-- Plans: Elementium Deathplate
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66115, {	-- Plans: Elementium Earthguard
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66107, {	-- Plans: Elementium Girdle of Pain
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(67603, {	-- Plans: Elementium Gutslicer
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66111, {	-- Plans: Elementium Hammer
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66112, {	-- Plans: Elementium Poleaxe
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66114, {	-- Plans: Elementium Shank
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66110, {	-- Plans: Elementium Spellblade
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66116, {	-- Plans: Elementium Stormshield
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(67606, {	-- Plans: Forged Elementium Mindcrusher
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66105, {	-- Plans: Hardened Elementium Girdle
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66104, {	-- Plans: Hardened Elementium Hauberk
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66109, {	-- Plans: Light Elementium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66108, {	-- Plans: Light Elementium Chestguard
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66101, {	-- Plans: Pyrium Shield Spike
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66103, {	-- Plans: Pyrium Weapon Chain
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66127, {	-- Plans: Vicious Ornate Pyrium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66128, {	-- Plans: Vicious Ornate Pyrium Boots
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66131, {	-- Plans: Vicious Ornate Pyrium Helm
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66119, {	-- Plans: Vicious Pyrium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66120, {	-- Plans: Vicious Pyrium Boots
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66117, {	-- Plans: Vicious Pyrium Bracers
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66124, {	-- Plans: Vicious Pyrium Breastplate
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66118, {	-- Plans: Vicious Pyrium Gauntlets
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66123, {	-- Plans: Vicious Pyrium Helm
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66122, {	-- Plans: Vicious Pyrium Legguards
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66121, {	-- Plans: Vicious Pyrium Shoulders
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-					},
+					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {}),
 				}),
 				n(5512,   {	-- Kaita Deepforge
-					["coord"] = { 63.2, 37.6, 84 },
+					["coord"] = { 63.2, 37.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(66100, {	-- Plans: Ebonsteel Belt Buckle
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66113, {	-- Plans: Elementium Bonesplitter
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66106, {	-- Plans: Elementium Deathplate
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66115, {	-- Plans: Elementium Earthguard
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66107, {	-- Plans: Elementium Girdle of Pain
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(67603, {	-- Plans: Elementium Gutslicer
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66111, {	-- Plans: Elementium Hammer
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66112, {	-- Plans: Elementium Poleaxe
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66114, {	-- Plans: Elementium Shank
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66110, {	-- Plans: Elementium Spellblade
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66116, {	-- Plans: Elementium Stormshield
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(67606, {	-- Plans: Forged Elementium Mindcrusher
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66105, {	-- Plans: Hardened Elementium Girdle
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66104, {	-- Plans: Hardened Elementium Hauberk
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
+					["groups"] = {
 						i(12162, {	-- Plans: Hardened Iron Shortsword
 							["isLimited"] = true,
-						}),
-						i(66109, {	-- Plans: Light Elementium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66108, {	-- Plans: Light Elementium Chestguard
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66101, {	-- Plans: Pyrium Shield Spike
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66103, {	-- Plans: Pyrium Weapon Chain
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66127, {	-- Plans: Vicious Ornate Pyrium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66128, {	-- Plans: Vicious Ornate Pyrium Boots
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66131, {	-- Plans: Vicious Ornate Pyrium Helm
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66119, {	-- Plans: Vicious Pyrium Belt
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66120, {	-- Plans: Vicious Pyrium Boots
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
-						}),
-						i(66117, {	-- Plans: Vicious Pyrium Bracers
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66124, {	-- Plans: Vicious Pyrium Breastplate
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66118, {	-- Plans: Vicious Pyrium Gauntlets
-							["cost"] = { { "i", 52186, 20 }, },	-- 20x Elementium Bar
-						}),
-						i(66123, {	-- Plans: Vicious Pyrium Helm
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66122, {	-- Plans: Vicious Pyrium Legguards
-							["cost"] = { { "i", 51950, 5 }, },	-- 5x Pyrium Bar
-						}),
-						i(66121, {	-- Plans: Vicious Pyrium Shoulders
-							["cost"] = { { "i", 53039, 2 }, },	-- 2x Hardened Elementium Bar
 						}),
 					},
 				}),
 				n(43694,  {	-- Katie Stokx
-					["coord"] = { 77.0, 67.8, 84 },
+					["coord"] = { 77.0, 67.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(2411),	-- Black Stallion Bridle
@@ -2501,7 +1834,7 @@ _.Zones =
 					},
 				}),
 				n(340,    {	-- Kendor Kabonka
-					["coord"] = { 76.4, 53.0, 84 },
+					["coord"] = { 76.4, 53.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(2889),	-- Recipe: Beer Basted Boar Ribs
@@ -2519,226 +1852,25 @@ _.Zones =
 						i(728),		-- Recipe: Westfall Stew
 					},
 				}),
-				n(40606,  {	-- Knight-Lieutenant T'Maire Sydes >S10< Elite / Old S11 <Ruthless Gladiator>
-					["coord"] = { 74.8, 67.6, 84 },
+				n(40606,  {	-- Knight-Lieutenant T'Maire Sydes >S10< Elite Vendor
+					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["sym"] = {
-						{"select", "headerID", -9979 },	-- Select the Cataclysm header.
-						{"pop"},	-- Discard header and acquire the children.
-						{"where", "headerID", -673 },	-- Ruthless Gladiator header.
-						{"pop"},	-- Discard header and acquire the children.
-						{"where", "headerID", -662 },	-- Elite header.
-					},
 					["g"] = {
-						cl(DEATHKNIGHT, {
-							un(REMOVED_FROM_GAME, i(72332)), -- Ruthless Gladiator's Dreadplate Chestpiece
-							un(REMOVED_FROM_GAME, i(72333)), -- Ruthless Gladiator's Dreadplate Gauntlets
-							un(REMOVED_FROM_GAME, i(72334)), -- Ruthless Gladiator's Dreadplate Helm
-							un(REMOVED_FROM_GAME, i(72335)), -- Ruthless Gladiator's Dreadplate Legguards
-							un(REMOVED_FROM_GAME, i(72336)), -- Ruthless Gladiator's Dreadplate Shoulders
-						}),
-						cl(DRUID, {
-							un(REMOVED_FROM_GAME, i(72337)), -- Ruthless Gladiator's Dragonhide Gloves
-							un(REMOVED_FROM_GAME, i(72338)), -- Ruthless Gladiator's Dragonhide Helm
-							un(REMOVED_FROM_GAME, i(72339)), -- Ruthless Gladiator's Dragonhide Legguards
-							un(REMOVED_FROM_GAME, i(72340)), -- Ruthless Gladiator's Dragonhide Robes
-							un(REMOVED_FROM_GAME, i(72341)), -- Ruthless Gladiator's Dragonhide Spaulders
-							un(REMOVED_FROM_GAME, i(72345)), -- Ruthless Gladiator's Kodohide Gloves
-							un(REMOVED_FROM_GAME, i(72346)), -- Ruthless Gladiator's Kodohide Helm
-							un(REMOVED_FROM_GAME, i(72347)), -- Ruthless Gladiator's Kodohide Legguards
-							un(REMOVED_FROM_GAME, i(72348)), -- Ruthless Gladiator's Kodohide Robes
-							un(REMOVED_FROM_GAME, i(72349)), -- Ruthless Gladiator's Kodohide Spaulders
-							un(REMOVED_FROM_GAME, i(72353)), -- Ruthless Gladiator's Wyrmhide Gloves
-							un(REMOVED_FROM_GAME, i(72354)), -- Ruthless Gladiator's Wyrmhide Helm
-							un(REMOVED_FROM_GAME, i(72355)), -- Ruthless Gladiator's Wyrmhide Legguards
-							un(REMOVED_FROM_GAME, i(72356)), -- Ruthless Gladiator's Wyrmhide Robes
-							un(REMOVED_FROM_GAME, i(72357)), -- Ruthless Gladiator's Wyrmhide Spaulders
-						}),
-						cl(HUNTER, {
-							un(REMOVED_FROM_GAME, i(72368)), -- Ruthless Gladiator's Chain Armor
-							un(REMOVED_FROM_GAME, i(72369)), -- Ruthless Gladiator's Chain Gauntlets
-							un(REMOVED_FROM_GAME, i(72370)), -- Ruthless Gladiator's Chain Helm
-							un(REMOVED_FROM_GAME, i(72371)), -- Ruthless Gladiator's Chain Leggings
-							un(REMOVED_FROM_GAME, i(72372)), -- Ruthless Gladiator's Chain Spaulders
-						}),
-						cl(MAGE, {
-							un(REMOVED_FROM_GAME, i(72373)), -- Ruthless Gladiator's Silk Handguards
-							un(REMOVED_FROM_GAME, i(72374)), -- Ruthless Gladiator's Silk Cowl
-							un(REMOVED_FROM_GAME, i(72375)), -- Ruthless Gladiator's Silk Trousers
-							un(REMOVED_FROM_GAME, i(72376)), -- Ruthless Gladiator's Silk Robe
-							un(REMOVED_FROM_GAME, i(72377)), -- Ruthless Gladiator's Silk Amice
-						}),
-						cl(PALADIN, {
-							un(REMOVED_FROM_GAME, i(72378)), -- Ruthless Gladiator's Scaled Chestpiece
-							un(REMOVED_FROM_GAME, i(72379)), -- Ruthless Gladiator's Scaled Gauntlets
-							un(REMOVED_FROM_GAME, i(72380)), -- Ruthless Gladiator's Scaled Helm
-							un(REMOVED_FROM_GAME, i(72381)), -- Ruthless Gladiator's Scaled Legguards
-							un(REMOVED_FROM_GAME, i(72382)), -- Ruthless Gladiator's Scaled Shoulders
-							un(REMOVED_FROM_GAME, i(72389)), -- Ruthless Gladiator's Ornamented Chestguard
-							un(REMOVED_FROM_GAME, i(72390)), -- Ruthless Gladiator's Ornamented Gloves
-							un(REMOVED_FROM_GAME, i(72391)), -- Ruthless Gladiator's Ornamented Headcover
-							un(REMOVED_FROM_GAME, i(72392)), -- Ruthless Gladiator's Ornamented Legplates
-							un(REMOVED_FROM_GAME, i(72393)), -- Ruthless Gladiator's Ornamented Spaulders
-						}),
-						cl(PRIEST, {
-							un(REMOVED_FROM_GAME, i(72400)), -- Ruthless Gladiator's Mooncloth Gloves
-							un(REMOVED_FROM_GAME, i(72401)), -- Ruthless Gladiator's Mooncloth Helm
-							un(REMOVED_FROM_GAME, i(72402)), -- Ruthless Gladiator's Mooncloth Leggings
-							un(REMOVED_FROM_GAME, i(72403)), -- Ruthless Gladiator's Mooncloth Robe
-							un(REMOVED_FROM_GAME, i(72404)), -- Ruthless Gladiator's Mooncloth Mantle
-							un(REMOVED_FROM_GAME, i(72405)), -- Ruthless Gladiator's Satin Gloves
-							un(REMOVED_FROM_GAME, i(72406)), -- Ruthless Gladiator's Satin Hood
-							un(REMOVED_FROM_GAME, i(72407)), -- Ruthless Gladiator's Satin Leggings
-							un(REMOVED_FROM_GAME, i(72408)), -- Ruthless Gladiator's Satin Robe
-							un(REMOVED_FROM_GAME, i(72409)), -- Ruthless Gladiator's Satin Mantle
-						}),
-						cl(ROGUE, {
-							un(REMOVED_FROM_GAME, i(72422)), -- Ruthless Gladiator's Leather Tunic
-							un(REMOVED_FROM_GAME, i(72423)), -- Ruthless Gladiator's Leather Gloves
-							un(REMOVED_FROM_GAME, i(72424)), -- Ruthless Gladiator's Leather Helm
-							un(REMOVED_FROM_GAME, i(72425)), -- Ruthless Gladiator's Leather Legguards
-							un(REMOVED_FROM_GAME, i(72426)), -- Ruthless Gladiator's Leather Spaulders
-						}),
-						cl(SHAMAN, {
-							un(REMOVED_FROM_GAME, i(72432)),	-- Ruthless Gladiator's Ringmail Armor
-							un(REMOVED_FROM_GAME, i(72433)),	-- Ruthless Gladiator's Ringmail gauntlets
-							un(REMOVED_FROM_GAME, i(72434)),	-- Ruthless Gladiator's Ringmail Helm
-							un(REMOVED_FROM_GAME, i(72435)),	-- Ruthless Gladiator's Ringmail Legs
-							un(REMOVED_FROM_GAME, i(72436)),	-- Ruthless Gladiator's Ringmail Spaulders
-							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked Armor
-							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked gauntlets
-							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked Helm
-							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked Legs
-							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked Spaulders
-							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Armor
-							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail gauntlets
-							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Helm
-							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Legs
-							un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Mail Spaulders
-						}),
-						cl(WARLOCK, {
-							un(REMOVED_FROM_GAME, i(72459)), -- Ruthless Gladiator's Felweave Handguards
-							un(REMOVED_FROM_GAME, i(72460)), -- Ruthless Gladiator's Felweave Cowl
-							un(REMOVED_FROM_GAME, i(72461)), -- Ruthless Gladiator's Felweave Trousers
-							un(REMOVED_FROM_GAME, i(72462)), -- Ruthless Gladiator's Felweave Raiment
-							un(REMOVED_FROM_GAME, i(72463)), -- Ruthless Gladiator's Felweave Amice
-						}),
-						cl(WARRIOR, {
-							un(REMOVED_FROM_GAME, i(72464)), -- Ruthless Gladiator's Plate Chestpiece
-							un(REMOVED_FROM_GAME, i(72465)), -- Ruthless Gladiator's Plate Gauntlets
-							un(REMOVED_FROM_GAME, i(72466)), -- Ruthless Gladiator's Plate Helm
-							un(REMOVED_FROM_GAME, i(72467)), -- Ruthless Gladiator's Plate Legguards
-							un(REMOVED_FROM_GAME, i(72468)), -- Ruthless Gladiator's Plate Shoulders
-						}),
-						n(-322, {	-- Back
-							un(REMOVED_FROM_GAME, i(72305)), -- Ruthless Gladiator's Cape of Cruelty
-							un(REMOVED_FROM_GAME, i(72306)), -- Ruthless Gladiator's Cape of Prowess
-							un(REMOVED_FROM_GAME, i(72322)), -- Ruthless Gladiator's Drape of Prowess
-							un(REMOVED_FROM_GAME, i(72323)), -- Ruthless Gladiator's Drape of Diffusion
-							un(REMOVED_FROM_GAME, i(72324)), -- Ruthless Gladiator's Drape of Meditation
-							un(REMOVED_FROM_GAME, i(72451)), -- Ruthless Gladiator's Cloak of Alacrity
-							un(REMOVED_FROM_GAME, i(72452)), -- Ruthless Gladiator's Cloak of Prowess
-						}),
-						n(-326, {	-- Wrists
-							un(REMOVED_FROM_GAME, i(72319)), -- Ruthless Gladiator's Cuffs of Accuracy
-							un(REMOVED_FROM_GAME, i(72320)), -- Ruthless Gladiator's Cuffs of Prowess
-							un(REMOVED_FROM_GAME, i(72321)), -- Ruthless Gladiator's Cuffs of Meditation
-							un(REMOVED_FROM_GAME, i(72344)), -- Ruthless Gladiator's Bindings of Meditation
-							un(REMOVED_FROM_GAME, i(72352)), -- Ruthless Gladiator's Bindings of Prowess
-							un(REMOVED_FROM_GAME, i(72366)), -- Ruthless Gladiator's Wristguards of Alacrity
-							un(REMOVED_FROM_GAME, i(72367)), -- Ruthless Gladiator's Wristguards of Accuracy
-							un(REMOVED_FROM_GAME, i(72387)), -- Ruthless Gladiator's Bracers of Prowess
-							un(REMOVED_FROM_GAME, i(72388)), -- Ruthless Gladiator's Bracers of Meditation
-							un(REMOVED_FROM_GAME, i(72398)), -- Ruthless Gladiator's Armplates of Proficiency
-							un(REMOVED_FROM_GAME, i(72399)), -- Ruthless Gladiator's Armplates of Alacrity
-							un(REMOVED_FROM_GAME, i(72420)), -- Ruthless Gladiator's Armwraps of Alacrity
-							un(REMOVED_FROM_GAME, i(72421)), -- Ruthless Gladiator's Armwraps of Accuracy
-							un(REMOVED_FROM_GAME, i(72430)), -- Ruthless Gladiator's Armbands of Prowess
-							un(REMOVED_FROM_GAME, i(72431)), -- Ruthless Gladiator's Armbands of Meditation
-						}),
-						n(-328, {	-- Waist
-							un(REMOVED_FROM_GAME, i(72313)), -- Ruthless Gladiator's Cord of Cruelty
-							un(REMOVED_FROM_GAME, i(72314)), -- Ruthless Gladiator's Cord of Accuracy
-							un(REMOVED_FROM_GAME, i(72315)), -- Ruthless Gladiator's Cord of Meditation
-							un(REMOVED_FROM_GAME, i(72342)), -- Ruthless Gladiator's Belt of Meditation
-							un(REMOVED_FROM_GAME, i(72350)), -- Ruthless Gladiator's Belt of Cruelty
-							un(REMOVED_FROM_GAME, i(72362)), -- Ruthless Gladiator's Links of Cruelty
-							un(REMOVED_FROM_GAME, i(72363)), -- Ruthless Gladiator's Links of Accuracy
-							un(REMOVED_FROM_GAME, i(72383)), -- Ruthless Gladiator's Clasp of Cruelty
-							un(REMOVED_FROM_GAME, i(72384)), -- Ruthless Gladiator's Clasp of Meditation
-							un(REMOVED_FROM_GAME, i(72394)), -- Ruthless Gladiator's Girdle of Accuracy
-							un(REMOVED_FROM_GAME, i(72395)), -- Ruthless Gladiator's Girdle of Prowess
-							un(REMOVED_FROM_GAME, i(72416)), -- Ruthless Gladiator's Waistband of Cruelty
-							un(REMOVED_FROM_GAME, i(72417)), -- Ruthless Gladiator's Waistband of Accuracy
-							un(REMOVED_FROM_GAME, i(72427)), -- Ruthless Gladiator's Waistguard of Meditation
-							un(REMOVED_FROM_GAME, i(72442)), -- Ruthless Gladiator's Waistguard of Cruelty
-						}),
-						n(-330, {	-- Feet
-							un(REMOVED_FROM_GAME, i(72316)), -- Ruthless Gladiator's Treads of Cruelty
-							un(REMOVED_FROM_GAME, i(72317)), -- Ruthless Gladiator's Treads of Alacrity
-							un(REMOVED_FROM_GAME, i(72318)), -- Ruthless Gladiator's Treads of Meditation
-							un(REMOVED_FROM_GAME, i(72343)), -- Ruthless Gladiator's Footguards of Meditation
-							un(REMOVED_FROM_GAME, i(72351)), -- Ruthless Gladiator's Footguards of Alacrity
-							un(REMOVED_FROM_GAME, i(72364)), -- Ruthless Gladiator's Sabatons of Cruelty
-							un(REMOVED_FROM_GAME, i(72365)), -- Ruthless Gladiator's Sabatons of Alacrity
-							un(REMOVED_FROM_GAME, i(72385)), -- Ruthless Gladiator's Greaves of Alacrity
-							un(REMOVED_FROM_GAME, i(72386)), -- Ruthless Gladiator's Greaves of Meditation
-							un(REMOVED_FROM_GAME, i(72396)), -- Ruthless Gladiator's Warboots of Cruelty
-							un(REMOVED_FROM_GAME, i(72397)), -- Ruthless Gladiator's Warboots of Alacrity
-							un(REMOVED_FROM_GAME, i(72418)), -- Ruthless Gladiator's Boots of Cruelty
-							un(REMOVED_FROM_GAME, i(72419)), -- Ruthless Gladiator's Boots of Alacrity
-							un(REMOVED_FROM_GAME, i(72428)), -- Ruthless Gladiator's Sabatons of Alacrity
-							un(REMOVED_FROM_GAME, i(72429)), -- Ruthless Gladiator's Sabatons of Meditation
-						}),
-						n(-384,	{	-- Neck
-							un(REMOVED_FROM_GAME, i(72307)), -- Ruthless Gladiator's Necklace of Proficiency
-							un(REMOVED_FROM_GAME, i(72308)), -- Ruthless Gladiator's Necklace of Prowess
-							un(REMOVED_FROM_GAME, i(72325)), -- Ruthless Gladiator's Pendant of Alacrity
-							un(REMOVED_FROM_GAME, i(72326)), -- Ruthless Gladiator's Pendant of Diffusion
-							un(REMOVED_FROM_GAME, i(72327)), -- Ruthless Gladiator's Pendant of Meditation
-							un(REMOVED_FROM_GAME, i(72453)), -- Ruthless Gladiator's Choker of Proficiency
-							un(REMOVED_FROM_GAME, i(72454)), -- Ruthless Gladiator's Choker of Accuracy
-						}),
-						n(-385,	{	-- Finger
-							un(REMOVED_FROM_GAME, i(72311)), -- Ruthless Gladiator's Ring of Cruelty
-							un(REMOVED_FROM_GAME, i(72312)), -- Ruthless Gladiator's Ring of Accuracy
-							un(REMOVED_FROM_GAME, i(72329)), -- Ruthless Gladiator's Band of Cruelty
-							un(REMOVED_FROM_GAME, i(72330)), -- Ruthless Gladiator's Band of Accuracy
-							un(REMOVED_FROM_GAME, i(72331)), -- Ruthless Gladiator's Band of Meditation
-							un(REMOVED_FROM_GAME, i(72457)), -- Ruthless Gladiator's Signet of Cruelty
-							un(REMOVED_FROM_GAME, i(72458)), -- Ruthless Gladiator's Signet of Accuracy
-						}),
-						n(-386,	{	-- Trinket
-							un(REMOVED_FROM_GAME, i(72304)), -- Ruthless Gladiator's Badge of Conquest
-							un(REMOVED_FROM_GAME, i(72309)), -- Ruthless Gladiator's Insignia of Conquest
-							un(REMOVED_FROM_GAME, i(72359)), -- Ruthless Gladiator's Emblem of Cruelty
-							un(REMOVED_FROM_GAME, i(72360)), -- Ruthless Gladiator's Emblem of Tenacity
-							un(REMOVED_FROM_GAME, i(72361)), -- Ruthless Gladiator's Emblem of Meditation
-							un(REMOVED_FROM_GAME, i(72448)), -- Ruthless Gladiator's Badge of Dominance
-							un(REMOVED_FROM_GAME, i(72449)), -- Ruthless Gladiator's Insignia of Dominance
-							un(REMOVED_FROM_GAME, i(72450)), -- Ruthless Gladiator's Badge of Victory
-							un(REMOVED_FROM_GAME, i(72455)), -- Ruthless Gladiator's Insignia of Victory
-							un(REMOVED_FROM_GAME, i(72411)), -- Ruthless Gladiator's Medallion of Cruelty (Alliance)
-							un(REMOVED_FROM_GAME, i(72412)), -- Ruthless Gladiator's Medallion of Tenacity (Alliance)
-							un(REMOVED_FROM_GAME, i(72414)), -- Ruthless Gladiator's Medallion of Meditation (Alliance)
-						}),
 					},
 				}),
 				n(69974,  {	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
-					["coord"] = { 74.8, 67.6, 84 },
+					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "headerID", -9979 },	-- Select the Cataclysm header.
-						{"pop"},	-- Discard header and acquire the children.
-						{"where", "headerID", -673 },	-- Ruthless Gladiator header.
-						{"pop"},	-- Discard header and acquire the children.
-						{"where", "headerID", -661 },	-- Gladiator header.
+						{"sub", "pvp_gear_base", -9979, -673, -661 },
+						{"pop"},	-- Discard the Set header and acquire the children.
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(4730,   {	-- Lelanai <Saber Handler>
 					["description"] = "Appears in Stormwind after War of Thorns.",
-					["coord"] = { 55.0, 12.6, 84 },
+					["coord"] = { 55.0, 12.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(8632),	-- Reins of the Spotted Frostsaber
@@ -2751,7 +1883,7 @@ _.Zones =
 					},
 				}),
 				n(2795,   {	-- Lenny "Fingers" McCoy
-					["coord"] = { 72.8, 58.8, 84 },
+					["coord"] = { 72.8, 58.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(97921),	-- Bom'bay's Color-Seein'Sauce (TOY!)
@@ -2759,9 +1891,9 @@ _.Zones =
 					},
 				}),
 				n(12784,  {	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>
-					["coord"] = { 75.2, 67.2, 84 },
+					["coord"] = { 75.2, 67.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["g"] = pvp({
 						i(18825, {	-- Grand Marshal's Aegis
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
@@ -2825,12 +1957,12 @@ _.Zones =
 						i(23454, {	-- Grand Marshal's Warhammer
 							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
 						}),
-					},
+					}),
 				}),
 				n(12783,  {	-- Lieutenant Karter
-					["coord"] = { 76.2, 65.6, 84 },
+					["coord"] = { 76.2, 65.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["g"] = pvp({
 						i(29465, {	-- Black Battlestrider Mount
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
@@ -2850,199 +1982,29 @@ _.Zones =
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
 						un(REMOVED_FROM_GAME, i(18242)),	-- Reins of the Black War Tiger. Pre 2.0 Version
-					},
+					}),
 				}),
-				n(23446,  {	-- Lieutenant Tristia -- BC S1/S2/S3/S4 Vendor
-					-- The NPC ID got reused — she was also >S11< Elite Vendor & >S9< Vendor
-					["coord"] = { 75.0, 67.0, 84 },
+				n(23446,  {	-- Lieutenant Tristia -- BC Vendor for Trinkets
+					-- The NPC ID got reused many times. This is the BC Version, items listed under PvP>BC
+					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(33065)),	-- Veterans Pendant of Dominance
-						un(REMOVED_FROM_GAME, i(33066)),	-- Veterans Pendant of triumph
-						un(REMOVED_FROM_GAME, i(33067)),	-- Veterans Pendant of conquest
-						un(REMOVED_FROM_GAME, i(33068)),	-- Veterans Pendant of salvation
-						un(REMOVED_FROM_GAME, i(33918)),	-- vindicator's band of salvation
-						un(REMOVED_FROM_GAME, i(33919)),	-- vindicator's band of triumph
-						un(REMOVED_FROM_GAME, i(37927)),	-- vindicator's band of subjugation
-						un(REMOVED_FROM_GAME, i(33920)),	-- Vindicator's Pendant of conquest
-						un(REMOVED_FROM_GAME, i(33921)),	-- Vindicator's Pendant of dominance
-						un(REMOVED_FROM_GAME, i(33922)),	-- Vindicator's Pendant of salvation
-						un(REMOVED_FROM_GAME, i(33923)),	-- Vindicator's Pendant of triumph
-						un(REMOVED_FROM_GAME, i(35132)),	-- guardians pendant of conquest
-						un(REMOVED_FROM_GAME, i(35133)),	-- guardians pendant of dominance
-						un(REMOVED_FROM_GAME, i(35134)),	-- guardians pendant of salvation
-						un(REMOVED_FROM_GAME, i(35135)),	-- guardians pendant of triumph
-						un(REMOVED_FROM_GAME, i(35129)),	-- guardians band of dominance
-						un(REMOVED_FROM_GAME, i(35130)),	-- guardians band of salvation
-						un(REMOVED_FROM_GAME, i(35131)),	-- guardians band of triumph
-						un(REMOVED_FROM_GAME, i(37927)),	-- guardians band of subjugations
-						un(REMOVED_FROM_GAME, i(35317)),	-- Vindicator's Pendant of reprive
-						un(REMOVED_FROM_GAME, i(35319)),	-- Vindicator's Pendant of subjugation
-						un(REMOVED_FROM_GAME, i(37928)),	-- guardians pendant of subjugation
-						un(REMOVED_FROM_GAME, i(37929)),	-- guardians pendant of reprieve
-						un(REMOVED_FROM_GAME, i(41587)),	-- battlemaster's celerity
-						un(REMOVED_FROM_GAME, i(41588)),	-- battlemaster's aggression
-						un(REMOVED_FROM_GAME, i(41589)),	-- battlemaster's resolve
-						un(REMOVED_FROM_GAME, i(41590)),	-- battlemaster's courage
-						un(REMOVED_FROM_GAME, i(33056)),	-- Veteran's Band of Dominance
-						un(REMOVED_FROM_GAME, i(33057)),	-- Veteran's Band of Triumph
-						un(REMOVED_FROM_GAME, i(33064)),	-- Veteran's Band of Salvation
-						un(REMOVED_FROM_GAME, i(33853)),	-- Vindicator's Band of Dominance
-						un(REMOVED_FROM_GAME, i(35320)),	-- Vindicator's Band of subjugation
 					},
 				}),
-				n(51255,  {	-- Lieutenant Tristia >S9< Elite <Vicious Gladiator>
-					["coord"] = { 75.0, 67.0, 84 },
+				n(51255,  {	-- Lieutenant Tristia Original CATA S9 ELITE VENDOR Alliance
+					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["sym"] = {
-						{"sub", "pvp_gear_base", -9979, -674, -662 },
-						{"pop"},	-- Discard the Set header and acquire the children.
-					},
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(70515)),	-- Vicious Gladiator's armwraps of accuracy. S10 Version
-						un(REMOVED_FROM_GAME, i(70516)),	-- Vicious Gladiator's armwrapf of alacrity. S10 Version
-						un(REMOVED_FROM_GAME, i(70523)),	-- Vicious Gladiator's belt of cruelty. S10 Version
-						un(REMOVED_FROM_GAME, i(70524)),	-- Vicious Gladiator's belt of mediation. S10 Version
-						un(REMOVED_FROM_GAME, i(70525)),	-- Vicious Gladiator's bindings of meditation. S10 Version
-						un(REMOVED_FROM_GAME, i(70526)),	-- Vicious Gladiator's bindings of prowess. S10 Version
-						un(REMOVED_FROM_GAME, i(70527)),	-- Vicious Gladiator's boots of alacrity. S10 Version
-						un(REMOVED_FROM_GAME, i(70528)),	-- Vicious Gladiator's boots of cruelty. S10 Version
-						un(REMOVED_FROM_GAME, i(70550)),	-- Vicious Gladiator's dragonhide gloves. S10 Version
-						un(REMOVED_FROM_GAME, i(70551)),	-- Vicious Gladiator's dragonhide helm. S10 Version
-						un(REMOVED_FROM_GAME, i(70552)),	-- Vicious Gladiator's dragonhide legguards. S10 Version
-						un(REMOVED_FROM_GAME, i(70553)),	-- Vicious Gladiator's dragonhide robes. S10 Version
-						un(REMOVED_FROM_GAME, i(70554)),	-- Vicious Gladiator's dragonhide spaulders. S10 Version
-						un(REMOVED_FROM_GAME, i(70571)),	-- Vicious Gladiator's footguards of alacrity. S10 Version
-						un(REMOVED_FROM_GAME, i(70572)),	-- Vicious Gladiator's footguards of mediation. S10 Version
-						un(REMOVED_FROM_GAME, i(70580)),	-- Vicious Gladiator's kodohide gloves. S10 Version
-						un(REMOVED_FROM_GAME, i(70581)),	-- Vicious Gladiator's kodohide helm. S10 Version
-						un(REMOVED_FROM_GAME, i(70582)),	-- Vicious Gladiator's kodohide legguards. S10 Version
-						un(REMOVED_FROM_GAME, i(70583)),	-- Vicious Gladiator's kodohide robes. S10 Version
-						un(REMOVED_FROM_GAME, i(70584)),	-- Vicious Gladiator's kodohide spaulders. S10 Version
-						un(REMOVED_FROM_GAME, i(70585)),	-- Vicious Gladiator's leather gloves. S10 Version
-						un(REMOVED_FROM_GAME, i(70586)),	-- Vicious Gladiator's leather helm. S10 Version
-						un(REMOVED_FROM_GAME, i(70587)),	-- Vicious Gladiator's leather legguards. S10 Version
-						un(REMOVED_FROM_GAME, i(70588)),	-- Vicious Gladiator's leather spaulders. S10 Version
-						un(REMOVED_FROM_GAME, i(70589)),	-- Vicious Gladiator's leather tunic. S10 Version
-						un(REMOVED_FROM_GAME, i(70663)),	-- Vicious Gladiator's waistband of accuracy. S10 Version
-						un(REMOVED_FROM_GAME, i(70664)),	-- Vicious Gladiator's waistband of cruelty. S10 Version
-						un(REMOVED_FROM_GAME, i(70671)),	-- Vicious Gladiator's wyrmhide gloves. S10 Version
-						un(REMOVED_FROM_GAME, i(70672)),	-- Vicious Gladiator's wyrmhide helm. S10 Version
-						un(REMOVED_FROM_GAME, i(70673)),	-- Vicious Gladiator's wyrmhide legguards. S10 Version
-						un(REMOVED_FROM_GAME, i(70674)),	-- Vicious Gladiator's wyrmhide robes. S10 Version
-						un(REMOVED_FROM_GAME, i(70675)),	-- Vicious Gladiator's wyrmhide spaulders. S10 Version
-						un(REMOVED_FROM_GAME, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity. S10 Version
-						un(REMOVED_FROM_GAME, i(70543)),	-- Vicious Gladiator's Cloak of Prowess. S10 Version
-						un(REMOVED_FROM_GAME, i(70555)),	-- Vicious Gladiator's Drape of Diffusion. S10 Version
-						un(REMOVED_FROM_GAME, i(70556)),	-- Vicious Gladiator's Drape of of Mediation. S10 Version
-						un(REMOVED_FROM_GAME, i(70557)),	-- Vicious Gladiator's Drape of of Prowess.. S10 Version
-						un(REMOVED_FROM_GAME, i(70531)),	-- Vicious Gladiator's Cape of Cruelty. S10 Version
-						un(REMOVED_FROM_GAME, i(70532)),	-- Vicious Gladiator's Cape of Prowess. S10 Version
-						un(REMOVED_FROM_GAME, i(70511)),	-- Vicious Gladiator's Armsband of Mediation. S10 Version
-						un(REMOVED_FROM_GAME, i(70512)),	-- Vicious Gladiator's Armsband of Prowess. S10 Version
-						un(REMOVED_FROM_GAME, i(70590)),	-- Vicious Gladiator's Linked Armor. S10 Version
-						un(REMOVED_FROM_GAME, i(70591)),	-- Vicious Gladiator's Linked Gauntlets. S10 Version
-						un(REMOVED_FROM_GAME, i(70592)),	-- Vicious Gladiator's Linked Helm. S10 Version
-						un(REMOVED_FROM_GAME, i(70593)),	-- Vicious Gladiator's Linked Legs. S10 Version
-						un(REMOVED_FROM_GAME, i(70594)),	-- Vicious Gladiator's Linked Spaulders. S10 Version
-						un(REMOVED_FROM_GAME, i(70597)),	-- Vicious Gladiator's Mail Armor. S10 Version
-						un(REMOVED_FROM_GAME, i(70598)),	-- Vicious Gladiator's Mail Gauntlets. S10 Version
-						un(REMOVED_FROM_GAME, i(70599)),	-- Vicious Gladiator's Mail Helm. S10 Version
-						un(REMOVED_FROM_GAME, i(70600)),	-- Vicious Gladiator's Mail Legs. S10 Version
-						un(REMOVED_FROM_GAME, i(70601)),	-- Vicious Gladiator's Mail Spaulders. S10 Version
-						un(REMOVED_FROM_GAME, i(70632)),	-- Vicious Gladiator's RingMail Armor. S10 Version
-						un(REMOVED_FROM_GAME, i(70633)),	-- Vicious Gladiator's RingMail Gauntlets. S10 Version
-						un(REMOVED_FROM_GAME, i(70634)),	-- Vicious Gladiator's RingMail Helm. S10 Version
-						un(REMOVED_FROM_GAME, i(70635)),	-- Vicious Gladiator's RingMail Legs. S10 Version
-						un(REMOVED_FROM_GAME, i(70636)),	-- Vicious Gladiator's RingMail Spaulders. S10 Version
-						un(REMOVED_FROM_GAME, i(70640)),	-- Vicious Gladiator's Sabatons of Alacrity. S10 Version
-						un(REMOVED_FROM_GAME, i(70642)),	-- Vicious Gladiator's Sabatons of Medi. S10 Version
-						un(REMOVED_FROM_GAME, i(70665)),	-- Vicious Gladiator's Waistguard of Cruelty. S10 Version
-						un(REMOVED_FROM_GAME, i(70666)),	-- Vicious Gladiator's Waistguard of Medi. S10 Version
-						un(REMOVED_FROM_GAME, i(70513)),	-- Vicious Gladiator's armplates of alacrity. S10 Version
-						un(REMOVED_FROM_GAME, i(70514)),	-- Vicious Gladiator's armplates of proficiency. S10 Version
-						un(REMOVED_FROM_GAME, i(70529)),	-- Vicious Gladiator's bracers of meditation. S10 Version
-						un(REMOVED_FROM_GAME, i(70530)),	-- Vicious Gladiator's bracers of prowess. S10 Version
-						un(REMOVED_FROM_GAME, i(70540)),	-- Vicious Gladiator's clasp of cruelty. S10 Version
-						un(REMOVED_FROM_GAME, i(70541)),	-- Vicious Gladiator's clasp of meditation. S10 Version
-						un(REMOVED_FROM_GAME, i(70558)),	-- Vicious Gladiator's Dreadplate chest. S10 Version
-						un(REMOVED_FROM_GAME, i(70559)),	-- Vicious Gladiator's Dreadplate gloves. S10 Version
-						un(REMOVED_FROM_GAME, i(70560)),	-- Vicious Gladiator's Dreadplate helm. S10 Version
-						un(REMOVED_FROM_GAME, i(70561)),	-- Vicious Gladiator's Dreadplate legs. S10 Version
-						un(REMOVED_FROM_GAME, i(70562)),	-- Vicious Gladiator's Dreadplate shoulders. S10 Version
-						un(REMOVED_FROM_GAME, i(70573)),	-- Vicious Gladiator's girdle of cruelty. S10 Version
-						un(REMOVED_FROM_GAME, i(70574)),	-- Vicious Gladiator's girdle of prowess. S10 Version
-						un(REMOVED_FROM_GAME, i(70575)),	-- Vicious Gladiator's greaves of alacrity. S10 Version
-						un(REMOVED_FROM_GAME, i(70576)),	-- Vicious Gladiator's greaves of meditation. S10 Version
-						un(REMOVED_FROM_GAME, i(70615)),	-- Vicious Gladiator's Ornamented chest. S10 Version
-						un(REMOVED_FROM_GAME, i(70616)),	-- Vicious Gladiator's Ornamented gloves. S10 Version
-						un(REMOVED_FROM_GAME, i(70617)),	-- Vicious Gladiator's Ornamented head. S10 Version
-						un(REMOVED_FROM_GAME, i(70618)),	-- Vicious Gladiator's Ornamented legs. S10 Version
-						un(REMOVED_FROM_GAME, i(70619)),	-- Vicious Gladiator's Ornamented shoulders. S10 Version
-						un(REMOVED_FROM_GAME, i(70623)),	-- Vicious Gladiator's Plate chest. S10 Version
-						un(REMOVED_FROM_GAME, i(70624)),	-- Vicious Gladiator's Plate gloves. S10 Version
-						un(REMOVED_FROM_GAME, i(70625)),	-- Vicious Gladiator's Plate helm. S10 Version
-						un(REMOVED_FROM_GAME, i(70626)),	-- Vicious Gladiator's Plate legs. S10 Version
-						un(REMOVED_FROM_GAME, i(70627)),	-- Vicious Gladiator's Plate shoulders. S10 Version
-						un(REMOVED_FROM_GAME, i(70648)),	-- Vicious Gladiator's Scaled chest. S10 Version
-						un(REMOVED_FROM_GAME, i(70649)),	-- Vicious Gladiator's Scaled gloves. S10 Version
-						un(REMOVED_FROM_GAME, i(70650)),	-- Vicious Gladiator's Scaled helm. S10 Version
-						un(REMOVED_FROM_GAME, i(70651)),	-- Vicious Gladiator's Scaled legs. S10 Version
-						un(REMOVED_FROM_GAME, i(70652)),	-- Vicious Gladiator's Scaled shoulders. S10 Version
-						un(REMOVED_FROM_GAME, i(70667)),	-- Vicious Gladiator's Warboots of alacrity. S10 Version
-						un(REMOVED_FROM_GAME, i(70668)),	-- Vicious Gladiator's warboots of cruelty. S10 Version
-						un(REMOVED_FROM_GAME, i(70533)),	-- Vicious Gladiator's Chain armor. S10 Version
-						un(REMOVED_FROM_GAME, i(70534)),	-- Vicious Gladiator's Chain gloves. S10 Version
-						un(REMOVED_FROM_GAME, i(70535)),	-- Vicious Gladiator's Chain helm. S10 Version
-						un(REMOVED_FROM_GAME, i(70536)),	-- Vicious Gladiator's Chain leggs. S10 Version
-						un(REMOVED_FROM_GAME, i(70537)),	-- Vicious Gladiator's Chain spaulders. S10 Version
-						un(REMOVED_FROM_GAME, i(70595)),	-- Vicious Gladiator's links of accuracy. S10 Version
-						un(REMOVED_FROM_GAME, i(70596)),	-- Vicious Gladiator's links of cruelty. S10 Version
-						un(REMOVED_FROM_GAME, i(70639)),	-- Vicious Gladiator's sabatons of alacrity. S10 Version
-						un(REMOVED_FROM_GAME, i(70641)),	-- Vicious Gladiator's sabatons of cruelty. S10 Version
-						un(REMOVED_FROM_GAME, i(70669)),	-- Vicious Gladiator's wristguards of accuracy. S10 Version
-						un(REMOVED_FROM_GAME, i(70670)),	-- Vicious Gladiator's wristguards of alacrity. S10 Version
-						un(REMOVED_FROM_GAME, i(70538)),	-- Vicious Gladiator's choker of accuracy. S10 Version
-						un(REMOVED_FROM_GAME, i(70539)),	-- Vicious Gladiator's choker of proficiency. S10 Version
-						un(REMOVED_FROM_GAME, i(70613)),	-- Vicious Gladiator's necklace of proficiency. S10 Version
-						un(REMOVED_FROM_GAME, i(70614)),	-- Vicious Gladiator's necklace of prowess. S10 Version
-						un(REMOVED_FROM_GAME, i(70620)),	-- Vicious Gladiator's pendant of alacrity. S10 Version
-						un(REMOVED_FROM_GAME, i(70621)),	-- Vicious Gladiator's pendant of diffusion. S10 Version
-						un(REMOVED_FROM_GAME, i(70622)),	-- Vicious Gladiator's pendant of meditation. S10 Version
-						un(REMOVED_FROM_GAME, i(70520)),	-- Vicious Gladiator's band of accuracy. S10 Version
-						un(REMOVED_FROM_GAME, i(70521)),	-- Vicious Gladiator's band of cruelty S10 Version
-						un(REMOVED_FROM_GAME, i(70522)),	-- Vicious Gladiator's band of mediation S10 Version
-						un(REMOVED_FROM_GAME, i(70637)),	-- Vicious Gladiator's ring of accuracy S10 Version
-						un(REMOVED_FROM_GAME, i(70638)),	-- Vicious Gladiator's ring of cruelty S10 Version
-						un(REMOVED_FROM_GAME, i(70653)),	-- Vicious Gladiator's signet of accuracy S10 Version
-						un(REMOVED_FROM_GAME, i(70654)),	-- Vicious Gladiator's signet of cruelty S10 Version
-						un(REMOVED_FROM_GAME, i(70517)),	-- Vicious Gladiator's badge of conquest. S10 Version
-						un(REMOVED_FROM_GAME, i(70518)),	-- Vicious Gladiator's badge of dominance. S10 Version
-						un(REMOVED_FROM_GAME, i(70519)),	-- Vicious Gladiator's badge of citory. S10 Version
-						un(REMOVED_FROM_GAME, i(70563)),	-- Vicious Gladiator's emblem of cruelty. S10 Version
-						un(REMOVED_FROM_GAME, i(70564)),	-- Vicious Gladiator's emblem of mediation. S10 Version
-						un(REMOVED_FROM_GAME, i(70565)),	-- Vicious Gladiator's emblem of tanicty. S10 Version
-						un(REMOVED_FROM_GAME, i(70577)),	-- Vicious Gladiator's insignia of conquest. S10 Version
-						un(REMOVED_FROM_GAME, i(70578)),	-- Vicious Gladiator's insignia of dominance. S10 Version
-						un(REMOVED_FROM_GAME, i(70579)),	-- Vicious Gladiator's insignia of victory. S10 Version
-						un(REMOVED_FROM_GAME, i(70603)),	-- Vicious Gladiator's medallion of cruelty. S10 Version (ally)
-						un(REMOVED_FROM_GAME, i(70604)),	-- Vicious Gladiator's medallion of meditation. S10 Version (ally)
-						un(REMOVED_FROM_GAME, i(70606)),	-- Vicious Gladiator's medallion of tenacity. S10 Version (ally)
-					},
 				}),
 				n(54660,  {	-- Lieutenant Tristia <Vicious Gladiator>
-					-- The NPC ID got reused — she was also >S11< Elite Vendor
-					["coord"] = { 75.0, 67.0, 84 },
+					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -661 },	-- Vicious Gladiator: Season 9 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 						{"finalize"},	-- Push the Set items to the finalized list.
-						{"sub", "pvp_gear_base", -9979, -674, -662 },	-- Cataclysmic Gladiator: Season 11 Elite Gear
-						{"pop"},	-- Discard the Set header and acquire the children.
 					},
 				}),
 				n(8666,   {	-- Lil Timmy
@@ -3054,7 +2016,7 @@ _.Zones =
 				}),
 				n(52030,  {	-- Liliana Emberfrost
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 74.4, 67.6, 84 },
+					["coord"] = { 74.4, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(122375, {	-- Aged Paundrons of The Five Thunders
@@ -3071,6 +2033,7 @@ _.Zones =
 								{ "c", 1166, 750 },		-- 750x Timewarped Badge
 								{ "i", 33226, 250 },	-- 250x Tricky Treat
 							},
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = {
@@ -3082,6 +2045,7 @@ _.Zones =
 								{ "i", 137642, 14 },	-- 14x  Mark of Honor
 								{ "c", 1166, 900 },		-- 900x Timewarped Badge
 							},
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(122369, {	-- Battleworn Thrash Blade
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
@@ -3128,7 +2092,7 @@ _.Zones =
 					},
 				}),
 				n(1299,   {	-- Lisbeth Schneider
-					["coord"] = { 58.2, 67.6, 84 },
+					["coord"] = { 58.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(3426),	-- Bold Yellow Shirt
@@ -3138,7 +2102,7 @@ _.Zones =
 				}),
 				n(50307,  {	-- Lord Candren
 					["description"] = "Appears in Stormwind after War of Thorns.",
-					["coord"] = { 56.1, 13.2, 84 },
+					["coord"] = { 56.1, 13.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64893),	-- Cape of Gilneas
@@ -3149,7 +2113,7 @@ _.Zones =
 					},
 				}),
 				n(44246,  {	-- Magatha Silverton
-					["coord"] = { 75.5, 66.1, 84 },
+					["coord"] = { 75.5, 66.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(71213),	-- Amulet of Burning Brilliance
@@ -3701,7 +2665,7 @@ _.Zones =
 								{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
 							},
 						}),
-						i(71150), 	-- Scorchvine Wand
+						i(71150),	-- Scorchvine Wand
 						i(71208),	-- Serrated Brimstone Signet
 						i(70941),	-- Shoulderguards of the Molten Giant
 						i(71608, {	-- Shoulderguards of the Molten Giant
@@ -3727,7 +2691,7 @@ _.Zones =
 					},
 				}),
 				n(1313,   {	-- Maria Lumere
-					["coord"]= { 55.7, 85.6, 84 },
+					["coord"] = { 55.7, 85.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(9301, {	-- Recipe: Elixir of Shadow Power
@@ -3736,7 +2700,7 @@ _.Zones =
 					},
 				}),
 				n(12781,  {	-- Master Sergeant Biggins
-					["coord"] = { 75.2, 66.8, 84 },
+					["coord"] = { 75.2, 66.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(15198, {	-- Knight's Colors
@@ -3753,26 +2717,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(18862)),	-- Insignia of the Alliance [Priest]
 						un(REMOVED_FROM_GAME, i(18858)),	-- Insignia of the Alliance [Warlock]
 						un(REMOVED_FROM_GAME, i(18863)),	-- Insignia of the Alliance [Druid]
-						un(REMOVED_FROM_GAME, i(28234)),	-- medallion of the alliance (rogue)
-						un(REMOVED_FROM_GAME, i(28235)),	-- medallion of the alliance (druid)
-						un(REMOVED_FROM_GAME, i(28236)),	-- medallion of the alliance (pala)
-						un(REMOVED_FROM_GAME, i(28237)),	-- medallion of the alliance (hunter)
-						un(REMOVED_FROM_GAME, i(28238)),	-- medallion of the alliance (mage)
-						un(REMOVED_FROM_GAME, i(30348)),	-- medallion of the alliance (warlock)
-						un(REMOVED_FROM_GAME, i(30349)),	-- medallion of the alliance (priest)
-						un(REMOVED_FROM_GAME, i(30350)),	-- medallion of the alliance (warrior)
-						un(REMOVED_FROM_GAME, i(30351)),	-- medallion of the alliance (shaman)
-						un(REMOVED_FROM_GAME, i(37864)),	-- medallion of the alliance (epic)
-						un(REMOVED_FROM_GAME, i(38589)),	-- Medallion of the alliance (dk)
-						un(REMOVED_FROM_GAME, i(69861)),	-- Medallion of the alliance
-						un(REMOVED_FROM_GAME, i(34576)),	-- battlemaster's cruelty
-						un(REMOVED_FROM_GAME, i(34577)),	-- battlemaster's depravity
-						un(REMOVED_FROM_GAME, i(34578)),	-- battlemaster's determination
-						un(REMOVED_FROM_GAME, i(34579)),	-- battlemaster's audacity
-						un(REMOVED_FROM_GAME, i(34580)),	-- battlemaster's persevennerance
-						un(REMOVED_FROM_GAME, i(35327)),	-- battlemaster's alacrity
-						un(REMOVED_FROM_GAME, i(28246)),	-- Band of Triumph
-						un(REMOVED_FROM_GAME, i(28247)),	-- Band of Dominance
 						un(REMOVED_FROM_GAME, i(18442)),	-- Master Sergeant's Insignia
 						un(REMOVED_FROM_GAME, i(18444)),	-- Master Sergeant's Insignia
 						un(REMOVED_FROM_GAME, i(18443)),	-- Master Sergeant's Insignia
@@ -3780,7 +2724,7 @@ _.Zones =
 					},
 				}),
 				n(28347,  {	-- Miles Sidney
-					["coord"] = {74.2, 58.1, 84 },
+					["coord"] = { 74.2, 58.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(38579, {	-- Venomous Tome
@@ -3790,7 +2734,7 @@ _.Zones =
 				}),
 				n(50305,  {	-- Moon Priestess Lasara
 					["description"] = "Appears in Stormwind after War of Thorns.",
-					["coord"] = { 56.6, 13.2, 84 },
+					["coord"] = { 56.6, 13.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64887),	-- Cape of Darnassus
@@ -3801,17 +2745,23 @@ _.Zones =
 					},
 				}),
 				n(73190,  {	-- Necrolord Sipe
-					["coord"] = { 76.8, 65.6, 84 },
+					["coord"] = { 76.8, 65.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["g"] = pvp({
 						i(70909, {	-- Reins of the Vicious War Steed
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
 						i(102514, {	-- Reins of the Vicious Warsaber
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
+						i(165019, {	-- Vicious Black Warsaber (A)
+							["cost"] = { { "i", 103533, 1 }, },
+						}),
 						i(140353, {	-- Vicious Gilnean Warhorse
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
+						}),
+						i(163122, {	-- Vicious War Basilisk (A)
+							["cost"] = { { "i", 103533, 1 }, },
 						}),
 						i(142234, {	-- Vicious War Bear
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
@@ -3831,25 +2781,31 @@ _.Zones =
 						i(116777, {	-- Vicious War Ram
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
+						i(163123, {	-- Vicious War Riverbeast (A)
+							["cost"] = { { "i", 103533, 1 }, },
+						}),
+						i(173714, {	-- Vicious White Warsaber (A)
+							["cost"] = { { "i", 103533, 1 }, },
+						}),
 						i(143648, {	-- Vicious War Turtle
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-					},
+					}),
 				}),
 				n(65068,  {	-- Old Whitenose
-					["coord"] = { 67.8, 18.4, 84 },
+					["coord"] = { 67.8, 18.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(87795), 	-- Black Dragon Turtle
-						i(91008, { 	-- Black Dragon Turtle (Panda)
+						i(87795),	-- Black Dragon Turtle
+						i(91008, {	-- Black Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87796), 	-- Blue Dragon Turtle
+						i(87796),	-- Blue Dragon Turtle
 						i(91009, {	-- Blue Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87797), 	-- Brown Dragon Turtle
-						i(91005, { 	-- Brown Dragon Turtle (Panda)
+						i(87797),	-- Brown Dragon Turtle
+						i(91005, {	-- Brown Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87802),	-- Great Black Dragon Turtle
@@ -3894,7 +2850,7 @@ _.Zones =
 					},
 				}),
 				n(87501,  {	-- Paulie
-					["coord"] = { 73.0, 59.3, 84 },
+					["coord"] = { 73.0, 59.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(116789, {	-- Champion's Treadblade
@@ -3903,7 +2859,7 @@ _.Zones =
 					},
 				}),
 				n(167429, {	-- Quartermaster Richter
-					["coord"] = { 79.5, 69.0, 84 },
+					["coord"] = { 79.5, 69.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(175173),  -- Expeditionary Cudgel
@@ -3915,11 +2871,94 @@ _.Zones =
 						i(175167),  -- Expeditionary Staff
 					},
 				}),
-				n(12785,  {	-- Sergeant Major Clate
-					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 75.4, 67.0, 84 },
+				n(5193, {	-- Rebecca Laughlin <Tabard Designer>
+					["coord"] = { 64.0, 77.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						i(31779),	-- Aldor Tabard
+						i(31804),	-- Cenarion Expedition Tabard
+						i(36941, {	-- Competitor's Tabard
+							["u"] = REMOVED_FROM_GAME,
+							["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
+						}),
+						i(31776),	-- Consortium Tabard
+						i(31404, {	-- Green Trophy Tabard of the Illidari
+							["sourceQuests"] = {
+								10781,	-- Battle of the Crimson Watch
+							},
+						}),
+						i(5976),	-- Guild Tabard
+						i(23999, {	-- Honor Hold Tabard
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(31777),	-- Keepers of Time Tabard
+						i(15198, {	-- Knight's Colors
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(31774, {	-- Kurenai Tabard
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(43300),	-- Loremaster's Colors
+						i(31778),	-- Lower City Tabard
+						i(32828, {	-- Ogri'la Tabard
+							["cost"] = { { "i", 32569, 10 } },	-- 10x Apexis Shard
+						}),
+						i(15196, {	-- Private's Tabard
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(31405, {	-- Purple Trophy Tabard of the Illidari
+							["sourceQuests"] = {
+								10781,	-- Battle of the Crimson Watch
+							},
+						}),
+						i(31780),	-- Scryers Tabard
+						i(31781),	-- Sha'tar Tabard
+						i(19506, {	-- Silverwing Battle Tabard
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+						}),
+						i(32445),	-- Skyguard Tabard
+						i(31775, {	-- Sporeggar Tabard
+							["cost"] = { { "i", 24245, 10 }, },	-- 10x Glowcap
+						}),
+						i(19032, {	-- Stormpike Battle Tabard
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+						}),
+						pvp(i(43349)),	-- Tabard of Brute Force
+						pvp(i(49052, {	-- Tabard of Conquest [Alliance]
+							["races"] = ALLIANCE_ONLY,
+							["timeline"] = { "added 3.2.0.10192" },
+						})),
+						i(35280, {	-- Tabard of Summer Flames
+							["sourceQuests"] = {
+								11972,	-- Shards of Ahune
+							},
+						}),
+						i(35279, {	-- Tabard of Summer Skies
+							["sourceQuests"] = {
+								11972,	-- Shards of Ahune
+							},
+						}),
+						i(40643),	-- Tabard of the Achiever
+						i(43348),	-- Tabard of the Explorer
+						i(24344, {	-- Tabard of the Hand
+							["sourceQuests"] = {
+								9762,	-- The Unwritten Prophecy
+							},
+							["description"] = "This is from a Draenei only quest, but can used by any Alliance race.",
+							["races"] = ALLIANCE_ONLY,	-- Note!! This is strictly Alliance only as the only thing it converts to for Horde is "Guild Tabard"
+						}),
+						i(35221),	-- Tabard of the Shattered Sun
+					},
+				}),
+				n(12785,  {	-- Sergeant Major Clate
+					["itemID"] = 137642,	-- Mark of Honor
+					["coord"] = { 75.4, 67.0, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = pvp({
 						-- Head
 						i(16465, {	-- Field Marshal's Chain Helm
 							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
@@ -4297,12 +3336,11 @@ _.Zones =
 						i(16437, {	-- Marshal's Silk Footwraps
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						un(REMOVED_FROM_GAME, i(25829)),	-- Talisman of the Alliance
-					},
+					}),
 				}),
 				n(8665,   {	-- Shylenai
 					["description"] = "Appears in Stormwind after War of Thorns.",
-					["coord"] = { 56.0, 3.22, 84 },
+					["coord"] = { 56.0, 3.22, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(8500),	-- Great Horned Owl (PET!)
@@ -4310,7 +3348,7 @@ _.Zones =
 					},
 				}),
 				n(30730,  {	-- Stanly McCormick
-					["coord"] = { 49.6, 74.8, 84 },
+					["coord"] = { 49.6, 74.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(39489, {	-- Scribe's Satchel
@@ -4319,7 +3357,7 @@ _.Zones =
 					},
 				}),
 				n(43768,  {	-- Tannec Stonebeak
-					["coord"] = { 71.4, 72.0, 84 },
+					["coord"] = { 71.4, 72.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25471),	-- Ebon Gryphon Mount
@@ -4332,277 +3370,12 @@ _.Zones =
 					},
 				}),
 				n(44583,  {	-- Terrance Denman
-					["coord"] = { 63.1, 61.5, 84 },
+					["coord"] = { 63.1, 61.5, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["g"] ={
-						i(52409, {	-- Design: Accurate Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52419, {	-- Design: Adept Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52421, {	-- Design: Artful Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52437, {	-- Design: Austere Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52461, {	-- Design: Band of Blades
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52381, {	-- Design: Bold Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52362, {	-- Design: Bold Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52435, {	-- Design: Bracing Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52464, {	-- Design: Brazen Elementium Medallion
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52449, {	-- Design: Brilliant Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52387, {	-- Design: Brilliant Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52434, {	-- Design: Chaotic Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52413, {	-- Design: Deadly Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52401, {	-- Design: Defender's Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52416, {	-- Design: Deft Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52447, {	-- Design: Delicate Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52380, {	-- Design: Delicate Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52441, {	-- Design: Destructive Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52438, {	-- Design: Effulgent Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52460, {	-- Design: Elementium Destroyer's Ring
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52467, {	-- Design: Elementium Guardian
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52463, {	-- Design: Elementium Moebius Band
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52439, {	-- Design: Ember Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52443, {	-- Design: Enigmatic Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52465, {	-- Design: Entwined Elementium Choker
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52405, {	-- Design: Etched Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52436, {	-- Design: Eternal Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52466, {	-- Design: Eye of Many Deaths
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52415, {	-- Design: Fierce Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52420, {	-- Design: Fine Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52448, {	-- Design: Flashing Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52384, {	-- Design: Flashing Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52433, {	-- Design: Fleet Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52428, {	-- Design: Forceful Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52445, {	-- Design: Forlorn Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52398, {	-- Design: Fractured Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52459, {	-- Design: Fractured Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52406, {	-- Design: Glinting Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52403, {	-- Design: Guardian's Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52444, {	-- Design: Impassive Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52412, {	-- Design: Inscribed Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52425, {	-- Design: Jagged Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52422, {	-- Design: Keen Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52429, {	-- Design: Lightning Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(68360, {	-- Design: Lucent Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52396, {	-- Design: Mystic Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52457, {	-- Design: Mystic Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52424, {	-- Design: Nimble Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52426, {	-- Design: Piercing Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52410, {	-- Design: Polished Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52414, {	-- Design: Potent Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52442, {	-- Design: Powerful Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52450, {	-- Design: Precise Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52389, {	-- Design: Precise Inferno Ruby
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52430, {	-- Design: Puissant Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(69853, {	-- Design: Punisher's Band
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52404, {	-- Design: Purified Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52397, {	-- Design: Quick Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52458, {	-- Design: Quick Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52417, {	-- Design: Reckless Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52423, {	-- Design: Regal Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52411, {	-- Design: Resolute Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(68361, {	-- Design: Resplendent Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52407, {	-- Design: Retaliating Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52440, {	-- Design: Revitalizing Shadowspirit Diamond
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-						}),
-						i(52454, {	-- Design: Rigid Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52393, {	-- Design: Rigid Ocean Sapphire
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52462, {	-- Design: Ring of Warring Elements
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(52432, {	-- Design: Sensei's Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52400, {	-- Design: Shifting Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52418, {	-- Design: Skillful Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52395, {	-- Design: Smooth Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52456, {	-- Design: Smooth Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52451, {	-- Design: Solid Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52390, {	-- Design: Solid Ocean Sapphire
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52399, {	-- Design: Sovereign Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52452, {	-- Design: Sparkling Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52391, {	-- Design: Sparkling Ocean Sapphire
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52427, {	-- Design: Steady Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52453, {	-- Design: Stormy Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52392, {	-- Design: Stormy Ocean Sapphire
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52394, {	-- Design: Subtle Amberjewel
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52455, {	-- Design: Subtle Chimera's Eye
-							["cost"] = { { "c", 361, 2 }, },	-- 2x Illustrious Jewelcrafter's Token
-						}),
-						i(52402, {	-- Design: Timeless Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52408, {	-- Design: Veiled Demonseye
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(68742, {	-- Design: Vivid Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(68359, {	-- Design: Willful Ember Topaz
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-						i(52431, {	-- Design: Zen Dream Emerald
-							["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
-						}),
-					},
+					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 				}),
 				n(58154,  {	-- Toren Landow
-					["coord"] = { 75.7, 65.9, 84 },
+					["coord"] = { 75.7, 65.9, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(57931),	-- Amulet of Dull Dreaming

@@ -20,7 +20,7 @@ _.Zones =
 				q(14120, {	-- A Bazillion Macaroons?!
 					["coord"] = { 56.7, 76.9, 194 },
 					["provider"] = { "n", 35222 },	-- Trady Prince Gallywix
-					["sourceQuests"] =  { 14116 },	-- The Uninvited Guest
+					["sourceQuests"] = { 14116 },	-- The Uninvited Guest
 				}),
 				q(14070, {	-- Do it Yourself
 					["coord"] = { 56.4, 76.9, 194 },

@@ -5,9 +5,9 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(27, {	-- Dun Morogh
+		m(DUN_MOROGH, {
 			m(427,  {	-- Coldridge Valley
-				filter(101, {	-- Pet Battle
+				filter(BATTLE_PETS, {
 					p(441, {	-- Alpine Hare
 						["crs"] = { 61690 },	-- Alpine Hare
 					}),

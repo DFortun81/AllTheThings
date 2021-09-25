@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		n(QUESTS, {
 			q(31055, {    -- Between a Saurok and a Hard Place
 				["provider"] = { "i", 83769 },    -- Between a Saurok and a Hard Place

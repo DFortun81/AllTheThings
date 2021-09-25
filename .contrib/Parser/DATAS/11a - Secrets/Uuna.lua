@@ -9,16 +9,16 @@ _.Secrets =
 		["modelScale"] = 1.1,
 		--["modelID"] = 80456,
 		["maps"] = {
-			33,
-			36,
+			BLACKROCK_MOUNTAIN,
+			BURNING_STEPPES,
 			SHATTRATH_CITY,
 			115,
-			198,
-			379,
-			390,
-			539,
-			627,
-			680,
+			MOUNT_HYJAL,
+			KUN_LAI_SUMMIT,
+			VALE_OF_ETERNAL_BLOSSOMS,
+			DRAENOR_SHADOWMOON_VALLEY,
+			LEGION_DALARAN,
+			SURAMAR,
 		},
 		["g"] = {
 			q(50098, {	-- Steps 1-4: A New Friend
@@ -54,7 +54,7 @@ _.Secrets =
 				["sourceQuests"] = { 50102 },	-- Step 5: Bright Lights
 				["description"] = "Take Uuna to the moonlight by Ashenvale's Lake Falathim.",
 				["name"] = "Step 6: Wanna be Friends?",
-				["coord"] = { 18.9, 41.6, 63 },
+				["coord"] = { 18.9, 41.6, ASHENVALE },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
 			q(50104, {	-- Step 7: Finding Nuu
@@ -78,7 +78,7 @@ _.Secrets =
 				["sourceQuests"] = { 50105 },	-- Step 8: Shooting Stars
 				["description"] = "Take Uuna to the small campsite northwest of Path of the Light in Draenor's Shadowmoon Valley.  She will pick up the flower crown that is resting on one of the chairs around the campfire.",
 				["name"] = "Step 9: Flower Crown",
-				["coord"] = { 55.9, 41.1, 539 },
+				["coord"] = { 55.9, 41.1, DRAENOR_SHADOWMOON_VALLEY },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
 			q(50107, {	-- Step 10: Uuna Gets Kidnapped
@@ -100,7 +100,7 @@ _.Secrets =
 				["coord"] = { 66.1, 74.5, 115 },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
-			o(9999938, { 	-- Uuna's World Tour
+			o(9999938, {	-- Uuna's World Tour
 				["description"] = "Congrats on making it this far!  Now it's time to take your favorite li'l ghost on a world tour.",
 				["icon"] = "Interface\\Icons\\inv_misc_toy_03",
 				["g"] = {
@@ -108,19 +108,19 @@ _.Secrets =
 						["sourceQuests"] = { 50109 },	-- Step 12: A Dark Place
 						["name"] = "Step 1: Gate of the Setting Sun",
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
-						["coord"] = { 8.00, 59.0, 390 },
+						["coord"] = { 8.00, 59.0, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
 					q(50141, {	-- Step 2: Nighthold
 						["sourceQuests"] = { 50140 },	-- Step 1: Gate of the Setting Sun
 						["name"] = "Step 2: Nighthold",
-						["coord"] = { 62.3, 83.7, 680 },
-						["maps"] = { 680 },
+						["coord"] = { 62.3, 83.7, SURAMAR },
+						["maps"] = { SURAMAR },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50142, {	-- Step 3: Krasus Landing, Legion Dalaran
 						["sourceQuests"] = { 50141 },	-- Step 2: Nighthold
 						["name"] = "Step 3: Krasus Landing, Legion Dalaran",
-						["coord"] = { 72.4, 45.9, 627 },
+						["coord"] = { 72.4, 45.9, LEGION_DALARAN },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50143, {	-- Step 4: Dragonblight
@@ -132,28 +132,28 @@ _.Secrets =
 					q(50144, {	-- Step 5: Mount Hyjal
 						["sourceQuests"] = { 50143 },	-- Step 4: Dragonblight
 						["name"] = "Step 5: Mount Hyjal",
-						["coord"] = { 59.0, 24.1, 198 },
+						["coord"] = { 59.0, 24.1, MOUNT_HYJAL },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50145, {	-- Step 6: Kun-Lai Summit
 						["sourceQuests"] = { 50144 },	-- Step 5: Mount Hyjal
 						["name"] = "Step 6: Kun-Lai Summit",
-						["coord"] = { 44.8, 52.3, 379 },
+						["coord"] = { 44.8, 52.3, KUN_LAI_SUMMIT },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50146, {	-- Step 7: Blackrock Mountain
 						["sourceQuests"] = { 50145 },	-- Step 6: Kun-Lai Summit
 						["name"] = "Step 7: Blackrock Mountain",
 						["coords"] = {
-							{ 37.5, 67.4, 33 },	-- Inside Blackrock Mountain
-							{ 21.1, 38.4, 36 },	-- Burning Steppes
+							{ 37.5, 67.4, BLACKROCK_MOUNTAIN },
+							{ 21.1, 38.4, BURNING_STEPPES },
 						},
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50147, {	-- Step 8: Temple of Karabor
 						["sourceQuests"] = { 50146 },	-- Step 7: Blackrock Mountain
 						["name"] = "Step 8: Temple of Karabor",
-						["coord"] = { 70.7, 46.7, 539 },
+						["coord"] = { 70.7, 46.7, DRAENOR_SHADOWMOON_VALLEY },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 				},

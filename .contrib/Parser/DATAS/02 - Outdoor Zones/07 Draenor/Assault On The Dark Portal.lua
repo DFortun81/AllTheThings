@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		n(-356, {	-- Assault on the Dark Portal
-			["description"] = "|cff66ccffThe Assault on the Dark Portal is the instanced version of Tanaan Valley, which is the subzone of Tanaan Jungle and a location of Warlords of Draenor introductory experience. Once the intro is completed, players have no means of returning to the area, similiar to Plaguelands: The Scarlet Enclave for death knights.|r",
+			["description"] = "The Assault on the Dark Portal is the instanced version of Tanaan Valley, which is the subzone of Tanaan Jungle and a location of Warlords of Draenor introductory experience. Once the intro is completed, players have no means of returning to the area, similiar to Plaguelands: The Scarlet Enclave for death knights.",
 			["mapID"] = 577,
 			["maps"] = { 578 },	-- Umbral Halls
 			["lvl"] = 90,
@@ -22,11 +22,23 @@ _.Zones =
 					}),
 				}),
 				n(QUESTS, {
-					q(34478, {	-- A Potential Ally
-						["hordeQuestID"] = 34427,
+					q(34478, {	-- A Potential Ally (A)
 						["provider"] = { "n", 78560 },	-- Archmage Khadgar
 						["coord"] = { 73.0, 38.1, 577 },
 						["sourceQuest"] = 34425,	-- The Kargathar Proving Grounds
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(112440),	-- Slavebreaker Robes
+							i(112441),	-- Slavebreaker Tunic
+							i(112442),	-- Slavebreaker Chainmail
+							i(112443),	-- Slavebreaker Chestguard
+						},
+					}),
+					q(34427, {	-- A Potential Ally (H)
+						["provider"] = { "n", 78560 },	-- Archmage Khadgar
+						["coord"] = { 73.0, 38.1, 577 },
+						["sourceQuest"] = 34425,	-- The Kargathar Proving Grounds
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(112440),	-- Slavebreaker Robes
 							i(112441),	-- Slavebreaker Tunic
@@ -46,8 +58,8 @@ _.Zones =
 							34422,	-- Blaze of Glory
 							34421,	-- Bled Dry
 							35240,	-- Bled Dry
-							35241,	-- Vengeance for the Fallen
-							35241,	-- Vengeance for the Fallen
+							35242,	-- Vengeance for the Fallen (A)
+							35241,	-- Vengeance for the Fallen	(H)
 						},
 					}),
 					q(34817, {	-- Altar Altercation - never implemented but gets flagged completed
@@ -118,10 +130,16 @@ _.Zones =
 						["coord"] = { 73.0, 38.0, 577 },
 						["sourceQuest"] = 34427,	-- A Potential Ally
 					}),
-					q(34431, {	-- Masters of Shadow
-						["hordeQuestID"] = 34737,
+					q(34431, {	-- Masters of Shadow (A)
 						["provider"] = { "n", 79661 },	-- Luuka
 						["coord"] = { 82.8, 44.2, 578 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 34429,	-- Kill Your Hundred
+					}),
+					q(34737, {	-- Masters of Shadow (H)
+						["provider"] = { "n", 79661 },	-- Luuka
+						["coord"] = { 82.8, 44.2, 578 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34429,	-- Kill Your Hundred
 					}),
 					q(34392, {	-- Onslaught's End
@@ -188,10 +206,16 @@ _.Zones =
 						["coord"] = { 44.0, 29.5, 577 },
 						["sourceQuest"] = 34439,	-- The Battle of the Forge
 					}),
-					q(35884, {	-- The Home Stretch
-						["hordeQuestID"] = 34446,
+					q(35884, {	-- The Home Stretch (A)
 						["provider"] = { "n", 80521 },	-- Thaelin Darkanvil
 						["coord"] = { 40.1, 48.4, 577 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 34445,	-- A Taste of Iron
+					}),
+					q(34446, {	-- The Home Stretch (H)
+						["provider"] = { "n", 80521 },	-- Thaelin Darkanvil
+						["coord"] = { 40.1, 48.4, 577 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34445,	-- A Taste of Iron
 					}),
 					q(34425, {	-- The Kargathar Proving Grounds
@@ -260,14 +284,76 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34420,	-- The Cost of War
 					}),
-					q(34434, {	-- Yrel
-						["hordeQuestID"] = 34740,
+					q(34434, {	-- Yrel (A)
 						["provider"] = { "n", 78994 },	-- Yrel
 						["coord"] = { 45.1, 15.9, 578 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 34429,	-- Kill Your Hundred
+					}),
+					q(34740, {	-- Yrel (H)
+						["provider"] = { "n", 78994 },	-- Yrel
+						["coord"] = { 45.1, 15.9, 578 },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34429,	-- Kill Your Hundred
 					}),
 					q(34426, {	-- Yrel - this version was never implemented. Flagged as completed when turning in "A Potential Ally"
 						["u"] = NEVER_IMPLEMENTED,
+					}),
+				}),
+				n(ZONE_DROPS, {
+					i(112436, {	-- Mismatched Cloth Gloves
+						["cr"] = 78651,	-- Shattered Hand Bonechopper
+					}),
+					i(112438, {	-- Mismatched Leather Gloves
+						["cr"] = 78651,	-- Shattered Hand Bonechopper
+					}),
+					i(112435, {	-- Mismatched Mail Gloves
+						["cr"] = 78651,	-- Shattered Hand Bonechopper
+					}),
+					i(112437, {	-- Mismatched Plate Gauntlets
+						["crs"] = {
+							78651,	-- Shattered Hand Bonechopper
+							78650,	-- Shattered Hand Torturer
+						},
+					}),
+					i(112471, {	-- Jungle-Chopper Bracers
+						["crs"] = {
+							78507,	-- Bleeding Hollow Savage
+							78510,	-- Bleeding Hollow Hatchet
+						},
+					}),
+					i(112468, {	-- Jungle-Chopper Manacles
+						["crs"] = {
+							78507,	-- Bleeding Hollow Savage
+							78510,	-- Bleeding Hollow Hatchet
+						},
+					}),
+					i(112470, {	-- Jungle-Chopper Wristcovers
+						["crs"] = {
+							78507,	-- Bleeding Hollow Savage
+							78509,	-- Bleeding Hollow Berserker
+						},
+					}),
+					i(112469, {	-- Jungle-Chopper Wristplates
+						["crs"] = {
+							78507,	-- Bleeding Hollow Savage
+							78510,	-- Bleeding Hollow Hatchet
+						},
+					}),
+					i(112660, {	-- Blackrock Slippers
+						["cr"] = 81357,	-- Blackrock Slaghauler
+					}),
+					i(112662, {	-- Blackrock Moccasins
+						["cr"] = 81357,	-- Blackrock Slaghauler
+					}),
+					i(112661, {	-- Blackrock Chain Boots
+						["cr"] = 81357,	-- Blackrock Slaghauler
+					}),
+					i(112659, {	-- Blackrock Infantry Warboots
+						["crs"] = {
+							81357,	-- Blackrock Slaghauler
+							81367,	-- Blackrock Forgeworker
+						},
 					}),
 				}),
 			},

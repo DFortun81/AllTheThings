@@ -11,6 +11,8 @@ _.Zones =
 					["provider"] = { "n", 68586 },	-- Grand Magister Rommath
 					["races"] = { BLOODELF, ORC },
 					["classes"] = { WARRIOR, WARLOCK },
+					["sourceQuest"] = 32412,
+					["description"] = "To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",
 				}),
 				--[[
 				q(32406, {	-- A Tactical Assault
@@ -28,7 +30,7 @@ _.Zones =
 					["isWeekly"] = true,
 				}),
 				i(46007,  {	-- Bag of Fishing Treasures
-					["description"] = "|cff66ccffFishing Daily Quest Reward|r",
+					["description"] = "Fishing Daily Quest Reward",
 					["crs"] = { 28742 },	-- Marcia Chase
 					["g"] = {
 						i(46004),	-- Sealed Vial of Poison
@@ -62,7 +64,7 @@ _.Zones =
 				}),
 				q(14151, {	-- Cardinal Ruby
 					["provider"] = { "n", 28703 },	-- Quest Giver: Linzy Blackbolt <Alchemy Trainer>
-					["coord"] = { 42.4, 32.0 },
+					["coord"] = { 42.4, 32.0, 125 },
 					["repeatable"] = true,
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
@@ -204,7 +206,7 @@ _.Zones =
 				}),
 				q(12853, {	-- Luxurious Getaway!
 					["provider"] = { "n", 30490 },	-- Rin Duoctane
-					["coord"] = { 31.2, 49.6 },
+					["coord"] = { 31.2, 49.6, 126 },
 					["sourceQuests"] = {
 						49554,	-- Hero's Call: Storm Peaks!
 						49536,	-- Warchief's Command: Storm Peaks!
@@ -408,3 +410,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(13692),	-- The Sword and the Sea
+	}),
+});

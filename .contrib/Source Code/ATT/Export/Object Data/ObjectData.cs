@@ -106,32 +106,6 @@ namespace ATT
                 if (objectData == null) return false;
                 return true;
             }
-
-            /// <summary>
-            /// Try to get the most significant object type.
-            /// </summary>
-            /// <param name="data">The data.</param>
-            /// <param name="objectData">The object data container.</param>
-            /// <returns>Whether or not the most signficant object type was found.</returns>
-            public static bool TryGetMostSignificantObjectType(Dictionary<object, object> data, out ObjectData objectData)
-            {
-                ObjectData defaultValue = null;
-                foreach (var objectType in ALL_OBJECTS)
-                {
-                    if (data.TryGetValue(objectType.ObjectType, out object objRef))
-                    {
-                        if (Convert.ToInt64(objRef) == 0) defaultValue = objectType;
-                        else
-                        {
-                            objectData = objectType;
-                            return true;
-                        }
-                    }
-                }
-                objectData = defaultValue;
-                if (objectData == null) return false;
-                return true;
-            }
             #endregion
             #region Properties
             /// <summary>

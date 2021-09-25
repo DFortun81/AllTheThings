@@ -10,7 +10,6 @@ i(7509, 0, 2859);		-- Manaweave Robe (Ghostlands)
 i(24339, 0, 9500);		-- Stung
 i(49888, 0, 24432);		-- Shadow's Edge
 i(20637, 0, 8133);		-- Acid Inscribed Pauldrons
-i(5197, 0, 1989);		-- Cookie's Tenderizer
 i(41755, 0, 20156);		-- The Fire Extinguisher
 i(86559, 0, 44498);		-- Frying Pan
 i(86558, 0, 44497);		-- Rolling Pin
@@ -97,7 +96,6 @@ i(25978, 0, 10687);		-- Seth's Graphite Fishing Pole
 i(88535, 0, 45845);		-- Sharpened Tuskarr Spear
 i(180136, 0, 112899);	-- The Brokers Angle'r
 i(120163, 0, 67918);	-- Thruk's Fishing Rod
-i(133755, 0, 76909);	-- Underlight Angler
 
 -------------------
 -- F I S H I E S --

@@ -4,9 +4,8 @@
 
 _.Zones =
 {
-	i(155915, {	-- Special Duty Assignments
-		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",
-		["collectible"] = false,
+	o(206109, {	-- Warchief's Command Board
+		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
 		["races"] = HORDE_ONLY,
 		["g"] = {
 			--[[
@@ -16,6 +15,12 @@ _.Zones =
 					Thunder Bluff: 207323
 					Undercity: 207324
 			]]--
+			q(49851, {	-- Cataclysm First Responder (Horde)
+				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
+				["isBreadcrumb"] = true,
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			q(29390, {	-- Guardians of Hyjal: Call of the Ancients
 				["isBreadcrumb"] = true,
 				["lvl"] = 85,
@@ -42,6 +47,7 @@ _.Zones =
 			}),
 			q(28790, {	-- A Personal Summons (Vashj'ir Starter Quest)
 				["isBreadcrumb"] = true,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
 				["isBreadcrumb"] = true,
@@ -96,6 +102,8 @@ _.Zones =
 				["isBreadcrumb"] = true,
 			}),
 			q(49543, {	-- Warchief's Command: Dread Wastes!
+				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
+				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
 				["isBreadcrumb"] = true,
 				["races"] = HORDE_ONLY,
 			}),
@@ -136,10 +144,14 @@ _.Zones =
 				["isBreadcrumb"] = true,
 			}),
 			q(49540, {	-- Warchief's Command: Krasarang Wilds!
+				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
+				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
 				["isBreadcrumb"] = true,
 				["races"] = HORDE_ONLY,
 			}),
 			q(49541, {	-- Warchief's Command: Kun-Lai Summit!
+				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
+				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
 				["isBreadcrumb"] = true,
 				["lvl"] = 82,
 			}),
@@ -222,6 +234,8 @@ _.Zones =
 				["isBreadcrumb"] = true,
 			}),
 			q(49542, {	-- Warchief's Command: Townlong Steppes!
+				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
+				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
 				["isBreadcrumb"] = true,
 				["lvl"] = 83,
 				["races"] = HORDE_ONLY,
@@ -236,6 +250,8 @@ _.Zones =
 				["isBreadcrumb"] = true,
 			}),
 			q(49539, {	-- Warchief's Command: Valley of the Four Winds!
+				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
+				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
 				["isBreadcrumb"] = true,
 				["lvl"] = 81,
 				["races"] = HORDE_ONLY,
@@ -257,9 +273,8 @@ _.Zones =
 			}),
 		},
 	}),
-	i(156474, {	-- Special Duty Assignments
-		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",
-		["collectible"] = false,
+	o(206111, {	-- Hero's Call Board
+		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
 		["races"] = ALLIANCE_ONLY,
 		["g"] = {
 			--[[
@@ -440,6 +455,7 @@ _.Zones =
 			q(49562, {	-- Hero's Call: Shadowmoon Valley! (Draenor)
 				["isBreadcrumb"] = true,
 				["lvl"] = 90,
+				["description"] = "Abandon quest 'Step Three: Prophet!' after the 'Assault on the Dark Portal' scenario and visit a Hero's Call Board to pick this quest up.",
 			}),
 			q(49553, {	-- Hero's Call: Sholazar Basin!
 				["isBreadcrumb"] = true,
@@ -452,6 +468,7 @@ _.Zones =
 			q(28550, {	-- Hero's Call: Southern Barrens! (breadcrumb quest for 24862) (max level 33)
 				["isBreadcrumb"] = true,
 				["lvl"] = 25,
+				["description"] = "This quest needs to be accepted from the 'Adventure Guide' and not the 'Hero's Call Board'.",
 			}),
 			q(28551, {	-- Hero's Call: Southern Barrens!
 				["isBreadcrumb"] = true,
@@ -461,7 +478,7 @@ _.Zones =
 				["isBreadcrumb"] = true,
 				["lvl"] = 96,
 			}),
-			q(28539, { 	-- Hero's Call: Stonetalon Mountains!  (max level 28)
+			q(28539, {	-- Hero's Call: Stonetalon Mountains!  (max level 28)
 				["isBreadcrumb"] = true,
 				["lvl"] = 20,
 			}),
@@ -572,9 +589,9 @@ _.Zones =
 				["description"] = "This is a breadcrumb quest and is mutually exclusive with other Redridge Mountains breadcrumbs.  It also seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
 				["lvl"] = 15,
 				["coords"] = {
-					{ 85.6, 31.8, 84 },	-- Anduin Wrynn <King of Stormwind> -- not sure about this one
-					{ 85.8, 32.4, 84 },	-- Grand Admiral Jes-Tereth
-					{ 56.3, 47.6, 52 },	-- Captain Danuvin
+					{ 85.6, 31.8, STORMWIND_CITY },	-- Anduin Wrynn <King of Stormwind> -- not sure about this one
+					{ 85.8, 32.4, STORMWIND_CITY },	-- Grand Admiral Jes-Tereth
+					{ 56.3, 47.6, WESTFALL },	-- Captain Danuvin
 				},
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
@@ -608,13 +625,6 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(49851, {	-- Cataclysm First Responder (Horde)
-				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
-				["isBreadcrumb"] = true,
-				["races"] = HORDE_ONLY,
-				["lvl"] = 80,
-				["u"] = REMOVED_FROM_GAME,
-			}),
 			q(49864, {	-- Wars on Two Fronts (Cataclysm or Pandaria)
 				["isBreadcrumb"] = true,
 				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
@@ -636,3 +646,9 @@ _.Zones =
 		},
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(62250),	-- A New Adventure Awaits
+		q(62265),	-- A New Adventure Awaits
+	}),
+});

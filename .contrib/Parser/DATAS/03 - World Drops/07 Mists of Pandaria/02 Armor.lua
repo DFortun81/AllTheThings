@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(5, {	-- Mists of Pandaria
+	tier(MOP_TIER, {
 		n(-318, {	-- Armor
 			n(-320, {	-- Head
 				i(87450),	-- Hood of Alchemical Vapors
@@ -18,6 +18,7 @@ _.WorldDrops =
 			}),
 			f(51,   {	-- Neck
 				i(82225),	-- Bejeweled Amulet
+				i(87473),	-- Necklace of the Eternal Watch
 				i(90583),	-- Don Guerrero's Glorious Choker
 				i(82060),	-- Gemmed Amulet
 				i(82170),	-- Grummle Amulet
@@ -122,6 +123,7 @@ _.WorldDrops =
 			f(53,   {	-- Trinket
 				i(87496),	-- Daelo's Final Words
 				i(87497),	-- Core of Decency
+				i(87500),	-- Brooch of Munificent Deeds
 			}),
 		}),
 	}),

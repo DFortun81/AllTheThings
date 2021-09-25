@@ -83,7 +83,7 @@ _.Zones =
 					},
 				}),
 				n(161310, {	-- Executioner Adrastia
-				--	TODO: unsure what triggers this rare's spawn.  speculation that it's tied to Executioner Aatron or has a similar aggro mechanic to him.  i have seen both up at the same time
+					["description"] = "As of 9.1, there is now an on-screen counter in the area: 'Dredgers Escaped: 0/50'. Freeing 50 dredgers causes the rare to spawn. Once the rare is killed, the counter resets.",
 					["questID"] = 58441,
 					["isDaily"] = true,
 					["coord"] = { 44.0, 51.0, REVENDRETH },
@@ -116,7 +116,9 @@ _.Zones =
 					["coord"] = { 32.6, 14.7, REVENDRETH },	-- Madalav's Hammer (to summon rare)
 					["g"] = {
 						i(180489),	-- Forgemaster's Many-Fold Rapier
-						i(180939),	-- Mantle of the Forgemaster's Dark Blades
+						i(180939, {	-- Mantle of the Forgemaster's Dark Blades
+							["customCollect"] = "SL_COV_VEN",	-- Venthyr
+						}),
 					},
 				}),
 				n(167464, {	-- Grand Arcanist Dimitri
@@ -141,7 +143,7 @@ _.Zones =
 					["g"] = {
 						q(59607, {	-- Takin' Down the Beast
 							["description"] = "If this quest is offered, it must be completed to spawn the rare.",
-							["isDaily"] = true,
+							["repeatable"] = true,
 							["crs"] = { 165327 },	-- Wingsmash
 							["coord"] = { 46.30, 77.86, REVENDRETH },
 							["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
@@ -150,20 +152,20 @@ _.Zones =
 							["coord"] = { 43.2, 77.6, REVENDRETH },	-- Dredhollow Bolt
 						}),
 						-- TODO: do they offer a quest to repair the ballista? have never seen it...
-						-- n(165325, {	-- Muckborn Craftsman
-						-- 	["coord"] = { 46.0, 79.0, REVENDRETH },	-- Muckborn Craftsman
-						-- 	["g"] = {
-						-- 		-- i(176396, {			-- Dredhollow Tools
-						-- 		-- 	["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
-						-- 		-- 	["crs"] = { 165325 },	-- Muckborn Craftsman
-						-- 		-- 	["coords"] = {
-						-- 		-- 		{ 40.77, 72.70, REVENDRETH },	-- Tool1
-						-- 		-- 		{ 41.18, 74.67, REVENDRETH },	-- Tool2
-						-- 		-- 	},
-						-- 		-- 	["g"] = {
-						-- 		-- 	},
-						-- 		-- }),
-						-- 	},
+						--n(165325, {	-- Muckborn Craftsman
+						--	["coord"] = { 46.0, 79.0, REVENDRETH },	-- Muckborn Craftsman
+						--	["g"] = {
+						--		--i(176396, {			-- Dredhollow Tools
+						--		--	["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
+						--		--	["crs"] = { 165325 },	-- Muckborn Craftsman
+						--		--	["coords"] = {
+						--		--		{ 40.77, 72.70, REVENDRETH },	-- Tool1
+						--		--		{ 41.18, 74.67, REVENDRETH },	-- Tool2
+						--		--	},
+						--		--	["g"] = {
+						--		--	},
+						--		--}),
+						--	},
 						-- }),
 						i(180713),	-- Shrieker's Voicebox
 						i(180461, {	-- Horrid Dredwing (MOUNT!)
@@ -355,7 +357,10 @@ _.Zones =
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
 						i(180583, {	-- Impressionable Gorger Spawn
-							i(182589),	-- Loyal Gorger (MOUNT!)
+							["description"] = "To have a chance for this item to drop, you may need to complete the The Endmire Quest (/ATT quest:60480). Better save than sorry, the Quest only takes 1 minute to do.",
+							["g"] = {
+							--	i(182589), -- Loyal Gorger
+							},
 						}),
 					},
 				}),

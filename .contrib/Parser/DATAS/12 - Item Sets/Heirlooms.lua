@@ -183,10 +183,12 @@ _.GearSets =
 				n(-322, {	-- Back
 					un(REMOVED_FROM_GAME, i(62040)),	-- Ancient Bloodmoon Cloak
 					i(122262),	-- Ancient Bloodmoon Cloak
+					i(166770),	-- Banded Gilnean Cloak
 					un(REMOVED_FROM_GAME, i(62039)),	-- Inherited Cape of the Black Baron
 					i(122261),	-- Inherited Cape of the Black Baron
 					un(REMOVED_FROM_GAME, i(69892)),	-- Ripped Sandstorm Cloak
 					i(122266),	-- Ripped Sandstorm Cloak
+					i(166752),	-- Stone Guard's Bladed Cloak
 					un(REMOVED_FROM_GAME, i(62038)),	-- Worn Stoneskin Gargoyle Cape
 					i(122260),	-- Worn Stoneskin Gargoyle Cape
 				}),
@@ -440,3 +442,21 @@ _.GearSets =
 		},
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-365, {	-- Heirlooms
+		i(62035),	-- Antique Myrmidon's Signet
+		i(62036),	-- Ornate Band of Accuria
+		i(62037),	-- Gleaming seal of the archmagus
+		i(69891),	-- Burnished Dark Iron Ring
+		i(183150),	-- Heirloom Trinket
+		i(183160),	-- Heirloom Trinket
+		i(183149),	-- Heirloom Ring
+		i(183159),	-- Heirloom Ring
+		i(183148),	-- Heirloom Necklace
+		i(183143),	-- Heirloom Chestpiece
+		i(183144),	-- Heirloom Helm
+		i(183145),	-- Heirloom Shoulders
+		i(183147),	-- Heirloom Legs
+		i(183146),	-- Heirloom Cloak
+	}),
+});

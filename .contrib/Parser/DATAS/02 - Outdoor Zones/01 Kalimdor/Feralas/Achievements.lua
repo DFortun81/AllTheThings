@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(69, {	-- Feralas
+		m(FERALAS, {
 			n(ACHIEVEMENTS, {
 				ach(4932, {	-- Feralas Quests
 					["races"] = ALLIANCE_ONLY,

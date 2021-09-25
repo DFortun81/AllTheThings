@@ -1,17 +1,16 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 -- #if AFTER WRATH
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, {
 			n(ACHIEVEMENTS, {
 				-- #if AFTER MOP
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["groups"] = {
 						crit(28, {	-- Nicki Tinytech
 							["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
@@ -120,6 +119,6 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
 -- #endif

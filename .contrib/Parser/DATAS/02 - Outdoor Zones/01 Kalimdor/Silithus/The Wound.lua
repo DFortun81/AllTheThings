@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(81, {	-- Silithus
+		m(SILITHUS, {
 			n(-93, {	-- Silithus (The Wound)
 				["lvl"] = 110,
 				["g"] = {
@@ -15,12 +15,11 @@ _.Zones =
 							["lvl"] = 120,
 						}),
 						q(54938, {	-- A Brother's Help
+							-- This was removed during BfA in 8.2 but is now appearing again for characters leveling up during Shadowlands
 							["sourceQuests"] = { 53406 },	-- The Chamber of Heart
 							["description"] = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
-							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
+							["coord"] = { 42.1, 44.3, SILITHUS },
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
-							["lvl"] = 120,
-							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
 						}),
 						q(50373, {	-- A Recent Arrival
 							["sourceQuest"] = 50228,	-- The Twilight Survivor
@@ -32,7 +31,7 @@ _.Zones =
 								50358,	-- Desert Research
 								50372,	-- Desert Research
 							},
-							["coord"] = { 29.6, 69.6, 81 },
+							["coord"] = { 29.6, 69.6, SILITHUS },
 						}),
 						q(50372, {	-- Desert Research
 							["sourceQuests"] = {
@@ -44,6 +43,7 @@ _.Zones =
 						}),
 						q(50358, {	-- Desert Research
 							["sourceQuest"] = 50053,	-- Lazy Prospectors
+							["coord"] = { 65.9, 54.7, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132147 },	-- Grol Warblade
 						}),
@@ -53,12 +53,13 @@ _.Zones =
 							["provider"] = { "n", 131963 },	-- Nolan Speed
 						}),
 						q(50046, {	-- It's a Sabotage
-							["sourceQuest"] = 49981 ,	-- Witness to the Wound
+							["sourceQuest"] = 49981,	-- Witness to the Wound
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 130030 },	-- Kelsey Steelspark
 						}),
 						q(50360, {	-- Khadgar's Request
 							["sourceQuest"] = 50232,	-- The Twilight Survivor
+							["coord"] = { 65.9, 54.7, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132147 },	-- Grol Warblade
 						}),
@@ -69,16 +70,19 @@ _.Zones =
 						}),
 						q(50231, {	-- Larvae By The Dozen
 							["sourceQuest"] = 50358,	-- Desert Research
+							["coord"] = { 66.9, 56.5, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132040 },	-- Pixni Rustbomb
 						}),
 						q(50053, {	-- Lazy Prospectors
 							["sourceQuest"] = 49982,	-- Witness to the Wound
+							["coord"] = { 65.9, 54.7, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132147 },	-- Grol Warblade
 						}),
 						q(50052, {	-- No Spies Allowed
 							["sourceQuest"] = 49982,	-- Witness to the Wound
+							["coord"] = { 66.9, 56.5, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132045 },	-- Gizmax Greasebolt
 						}),
@@ -89,13 +93,14 @@ _.Zones =
 						}),
 						q(50364, {	-- The Blood of Azeroth
 							["sourceQuest"] = 50055,	-- The Speaker's Perspective
+							["coord"] = { 42.5, 44.2, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 130216 },	-- Magni Bronzebear
 						}),
 						q(53406, {	-- The Chamber of Heart (third HoA upgrade)
 							["sourceQuests"] = { 53405 },	-- Unlocking the Heart's Potential
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Revered with Champions of Azeroth.",
-							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
+							["coord"] = { 42.1, 44.3, SILITHUS },
 							["lvl"] = 120,
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
 							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
@@ -106,14 +111,14 @@ _.Zones =
 								53028,	-- A Dying World
 							},
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
-							["coord"] = { 42.2, 44.2, 81 },
+							["coord"] = { 42.2, 44.2, SILITHUS },
 							["g"] = {
 								i(158075),	-- Heart of Azeroth
 							},
 						}),
 						q(50973, {	-- The Heart's Power (first HoA upgrade)
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Friendly with Champions of Azeroth.",
-							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
+							["coord"] = { 42.1, 44.3, SILITHUS },
 							["lvl"] = 120,
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
 							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
@@ -138,6 +143,7 @@ _.Zones =
 						}),
 						q(50230, {	-- The Source of Power
 							["sourceQuest"] = 50358,	-- Desert Research
+							["coord"] = { 66.9, 56.5, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132040 },	-- Pixni Rustbomb
 						}),
@@ -160,6 +166,7 @@ _.Zones =
 						}),
 						q(50055, {	-- The Speaker's Perspective
 							["sourceQuest"] = 50360,	-- Khadgar's Request
+							["coord"] = { 66.4, 56.8, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 130033 },	-- Archmage Khadgar
 						}),
@@ -173,13 +180,14 @@ _.Zones =
 						}),
 						q(50232, {	-- The Twilight Survivor
 							["sourceQuest"] = 50053,	-- Lazy Prospectors
+							["coord"] = { 65.9, 54.7, SILITHUS },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 132147 },	-- Grol Warblade
 						}),
 						q(53405, {	-- Unlocking the Heart's Potential (second HoA upgrade)
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Honored with Champions of Azeroth.",
 							["sourceQuests"] = { 50973 },	-- The Heart's Power
-							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
+							["coord"] = { 42.1, 44.3, SILITHUS },
 							["lvl"] = 120,
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
 							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
@@ -188,7 +196,7 @@ _.Zones =
 					n(RARES, {
 						n(132591, {	-- Ogmot the Mad
 							["questID"] = 50334,
-							["coord"] = { 28.9, 74.6, 81 },
+							["coord"] = { 28.9, 74.6, SILITHUS },
 							["g"] = {
 								i(156852),	-- Ogmot's Dream Journal
 							},
@@ -196,7 +204,7 @@ _.Zones =
 						n(132578, {	-- Qroshekx
 							["questID"] = 50255,
 							["isDaily"] = true,
-							["coord"] = { 59.3, 11.4, 81 },
+							["coord"] = { 59.3, 11.4, SILITHUS },
 							["g"] = {
 								i(156851),	-- Silithid Mini-Tank
 							},
@@ -204,7 +212,7 @@ _.Zones =
 						n(132580, {	-- Ssinkrix
 							["questID"] = 50223,
 							["isDaily"] = true,
-							["coord"] = { 54.5, 79.8, 81 },
+							["coord"] = { 54.5, 79.8, SILITHUS },
 							["g"] = {
 								i(156851),	-- Silithid Mini-Tank
 							},
@@ -212,7 +220,7 @@ _.Zones =
 						n(132584, {	-- Xaarshej
 							["questID"] = 50224,
 							["isDaily"] = true,
-							["coord"] = { 29.5, 35.0, 81 },
+							["coord"] = { 29.5, 35.0, SILITHUS },
 							["g"] = {
 								i(156851),	-- Silithid Mini-Tank
 							},
@@ -223,3 +231,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(49931),	-- The Titan's Wrath
+	}),
+});

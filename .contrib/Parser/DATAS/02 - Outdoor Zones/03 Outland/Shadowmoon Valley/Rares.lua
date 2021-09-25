@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHADOWMOON_VALLEY, {
 			n(RARES, {
 				n(18695, {	-- Ambassador Jerrikar
@@ -28,7 +27,7 @@ _.Zones =
 						{ 46.2, 28.8, SHADOWMOON_VALLEY },
 						{ 46.8, 26.6, SHADOWMOON_VALLEY },
 					},
-					["g"] = {
+					["groups"] = {
 						crit(1, {	-- Ambassador Jerrikar
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
@@ -49,7 +48,7 @@ _.Zones =
 						{ 55.0, 71.2, SHADOWMOON_VALLEY },
 						{ 59.2, 70.6, SHADOWMOON_VALLEY },
 					},
-					["g"] = {
+					["groups"] = {
 						crit(5, {	-- Collidus the Warp-Watcher
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
@@ -67,7 +66,7 @@ _.Zones =
 						{ 59.6, 46.6, SHADOWMOON_VALLEY },
 						{ 42.4, 68.4, SHADOWMOON_VALLEY },
 					},
-					["g"] = {
+					["groups"] = {
 						crit(12, {	-- Kraator
 							["achievementID"] = 1312,	-- Bloody Rare
 						}),
@@ -79,5 +78,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };

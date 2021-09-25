@@ -1,21 +1,21 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-
+--[[
 _.GearSets =
 {
 	n(-254, {	-- Heritage Armor
 		gs(1977, {	-- Heritage of Kezan
 			q(57043, {	-- Old Friends, New Opportunities
-				["maps"] = { 85 },	-- Orgrimmar
-				["coord"] = { 39.5, 80.2, 85 },
+				["maps"] = { ORGRIMMAR },
+				["coord"] = { 39.5, 80.2, ORGRIMMAR },
 				["races"] = { GOBLIN },
 				["provider"] = { "n", 156358 },	-- Izzy
 				["minReputation"] = { 1133, EXALTED },
 			}),
 			q(57045, {	-- A Special Delivery
-				["maps"] = { 210 },	-- The Cape of Stranglethorn
-				["coord"] = { 34.6, 28.5, 210 },
+				["maps"] = { THE_CAPE_OF_STRANGLETHORN },
+				["coord"] = { 34.6, 28.5, THE_CAPE_OF_STRANGLETHORN },
 				["races"] = { GOBLIN },
 				["provider"] = { "n", 156396 },	-- Sassy Hardwrench
 				["sourceQuest"] = 57043,	-- Old Friends, New Opportunities
@@ -77,15 +77,15 @@ _.GearSets =
 				["sourceQuest"] = 57059,	-- Let's Rumble!
 			}),
 			q(57078, {	-- The VIP List
-				["maps"] = { 210 },	-- The Cape of Stranglethorn
-				["coord"] = { 34.6, 28.5, 210 },
+				["maps"] = { THE_CAPE_OF_STRANGLETHORN },
+				["coord"] = { 34.6, 28.5, THE_CAPE_OF_STRANGLETHORN },
 				["races"] = { GOBLIN },
 				["provider"] = { "n", 156396 },	-- Sassy Hardwrench
 				["sourceQuest"] = 57077,	-- Buyers Wanted!
 			}),
 			q(57079, {	-- Beat The Crapopolis Outta Him!
-				["maps"] = { 210 },	-- The Cape of Stranglethorn
-				["coord"] = { 34.6, 28.5, 210 },
+				["maps"] = { THE_CAPE_OF_STRANGLETHORN },
+				["coord"] = { 34.6, 28.5, THE_CAPE_OF_STRANGLETHORN },
 				["races"] = { GOBLIN },
 				["provider"] = { "n", 156396 },	-- Sassy Hardwrench
 				["sourceQuest"] = 57078,	-- The VIP List
@@ -111,3 +111,4 @@ _.GearSets =
 		}),
 	}),
 };
+--]]

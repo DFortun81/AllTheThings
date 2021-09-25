@@ -5,17 +5,17 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(18, {	-- Tirisfal Glades
+		m(TIRISFAL_GLADES, {
 			n(VENDORS, {
 				n(2118,  {	-- Abigail Shiel <Trade Supplies>
-					["coord"] = { 61.0, 51.0, 18 },
+					["coord"] = { 61.0, 51.0, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(12226),	-- Recipe: Crispy Bat Wing
 					},
 				}),
 				n(10856, { -- Argent Quartermaster Hasana <The Argent Dawn>
-					["coord"] = { 83.26, 68.14, 18 },
+					["coord"] = { 83.26, 68.14, TIRISFAL_GLADES },
 					["g"] = {
 						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
 						i(19447),	-- Formula: Enchant Bracer - Healing Power
@@ -28,7 +28,7 @@ _.Zones =
 					},
 				}),
 				n(3522,  {	-- Constance Brisboise <Apprentice Clothier>
-					["coord"] = { 52.6, 55.6, 18 },
+					["coord"] = { 52.6, 55.6, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
@@ -37,7 +37,7 @@ _.Zones =
 					},
 				}),
 				n(3550,  {	-- Martine Tramblay <Fishing Supplies>
-					["coord"] = { 65.8, 59.6, 18 },
+					["coord"] = { 65.8, 59.6, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish
@@ -45,7 +45,7 @@ _.Zones =
 					},
 				}),
 				n(12943, {	-- Werg Thickblade <Leatherworking Supplies>
-					["coord"] = { 83.2, 69.4, 18 },
+					["coord"] = { 83.2, 69.4, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(15741, {	-- Pattern: Stormshroud Pants
@@ -57,7 +57,7 @@ _.Zones =
 					},
 				}),
 				n(4731,  {	-- Zachariah Post <Undead Horse Merchant>
-					["coord"] = { 61.8, 51.8, 18 },
+					["coord"] = { 61.8, 51.8, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(46308),	-- Black Skeletal Warhorse

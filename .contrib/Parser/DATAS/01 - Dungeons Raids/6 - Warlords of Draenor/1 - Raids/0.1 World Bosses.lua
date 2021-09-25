@@ -2,10 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(6, {	-- Warlords of Draenor
+_.Instances = { tier(WOD_TIER, {
 	n(-7, {	-- World Bosses
-		["order"] = "00",
-		["ordered"] = true,
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["g"] = {
@@ -13,9 +11,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				["isWeekly"] = true,
 				["questID"] = 37462,
 				["isRaid"] = true,
-				["coord"] = { 44.1, 39.9, 543 },
+				["coord"] = { 44.1, 39.9, GORGROND },
 				["maps"] = {	-- all Gorgrond maps
-					543,	-- Gorgrond
+					GORGROND,
 					544,	-- Moira's Reach
 					545,	-- Moira's Reach
 					546,	-- Fissure of Fury
@@ -54,8 +52,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				["isWeekly"] = true,
 				["questID"] = 37464,
 				["isRaid"] = true,
-				["coord"] = { 37.0, 39.3, 542 },
-				["maps"] = { 542 },	-- Spires of Arak
+				["coord"] = { 37.0, 39.3, SPIRES_OF_ARAK },
+				["maps"] = { SPIRES_OF_ARAK },
 				["crs"] = {
 					87493,	-- Rukhmar (WoWHead)
 					83746,	-- Rukhmar (Crieve)
@@ -72,7 +70,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["spellID"] = 187640,
-						["coord"] = { 25.8, 39.7, 534 },
+						["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 					}),
 					i(115434),	-- Down-Lined Leggings
 					i(115435),	-- Leggings of Flowing Feathers
@@ -93,10 +91,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				["isWeekly"] = true,
 				["questID"] = 39380,
 				["isRaid"] = true,
-				["coord"] = { 47.5, 22.1, 534 },
-				["maps"] = {	-- all Tanaan Jungle maps
-					534,	-- Tanaan Jungle
-				},
+				["coord"] = { 47.5, 22.1, TANAAN_JUNGLE },
+				["maps"] = { TANAAN_JUNGLE },
 				["cr"] = 94015,	-- Supreme Lord Kazzak
 				["g"] = {
 					ach(10071),	-- The Legion Will NOT Conquer All
@@ -122,9 +118,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				["isWeekly"] = true,
 				["questID"] = 37462,
 				["isRaid"] = true,
-				["coord"] = { 47.0, 86.7, 543 },
+				["coord"] = { 47.0, 86.7, GORGROND },
 				["maps"] = {	-- all Gorgrond maps
-					543,	-- Gorgrond
+					GORGROND,
 					544,	-- Moira's Reach
 					545,	-- Moira's Reach
 					546,	-- Fissure of Fury

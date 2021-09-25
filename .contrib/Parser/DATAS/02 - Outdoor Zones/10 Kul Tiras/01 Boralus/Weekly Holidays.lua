@@ -4,9 +4,11 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
-		m(1161, {	-- Boralus
-			n(-176, {	-- Weekly Holidays
+	m(KULTIRAS, {
+		m(BORALUS, {
+			n(-176, sharedData({	-- Weekly Holidays
+				["u"] = REMOVED_FROM_GAME,
+			}, {
 				q(53032, {	-- A Burning Path Through Time (BC Timewalking)
 					["providers"] = {
 						{ "n", 144384 },	-- Chronicler Shoopa
@@ -37,6 +39,7 @@ _.Zones =
 						{ "n", 144383 },	-- Chronicler Toopa
 					},
 					["isWeekly"] = true,
+					["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
 				}),
 				q(53033, {	-- A Frozen Path Through Time (WotLK Timewalking)
 					["providers"] = {
@@ -137,8 +140,7 @@ _.Zones =
 				}),
 				q(53037, {	-- Emissary of War (Mythic dungeons)
 					["provider"] = { "n", 144383 },	-- Chronicler Toopa
-					["coord"] = { 74.11, 14.19, 1161 },
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 74.11, 14.19, BORALUS },
 					["isWeekly"] = true,
 					["g"] = {
 						i(164257, {	-- Cache of Uldir Treasures (Heroic Quality)
@@ -160,7 +162,7 @@ _.Zones =
 				}),
 				q(47148, {	-- Something Different
 					["provider"] = { "n", 144383 },	-- Chronicler Toopa
-					["coord"] = { 74.1, 14.1, 1161 },
+					["coord"] = { 74.1, 14.1, BORALUS },
 					["isWeekly"] = true,
 					["maps"] = {
 						623,	-- Southshore vs. Tarren Mill
@@ -178,8 +180,7 @@ _.Zones =
 				}),
 				q(53039, {	-- The Arena Calls
 					["provider"] = { "n", 144383 },	-- Chronicler Toopa
-					["coord"] = { 74.11, 14.19, 1161 },
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 74.11, 14.19, BORALUS },
 					["isWeekly"] = true,
 					["g"] = {
 						i(164261),	-- Steel Strongbox
@@ -187,17 +188,15 @@ _.Zones =
 				}),
 				q(53038, {	-- The Very Best (pet battles)
 					["provider"] = { "n", 144383 },	-- Chronicler Toopa
-					["coord"] = { 74.11, 14.19, 1161 },
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 74.11, 14.19, BORALUS },
 					["isWeekly"] = true,
 				}),
 				q(53030, {	-- The World Awaits
 					["provider"] = { "n", 144383 },	-- Chronicler Toopa
-					["coord"] = { 74.11, 14.19, 1161 },
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 74.11, 14.19, BORALUS },
 					["isWeekly"] = true,
 				}),
-			}),
+			})),
 		}),
 	}),
 };

@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		prof(BLACKSMITHING, {
 			filter(20, {	-- Daggers
 				i(171390),	-- Ceremonious Blade
@@ -83,6 +83,7 @@ _.Craftables =
 			i(171436),		-- Porous Sharpening Stone
 			i(171437),		-- Shaded Sharpening Stone
 			i(171439),		-- Shaded Weightstone
+			i(185960),		-- Vestige of Origins
 		}),
 	}),
 };

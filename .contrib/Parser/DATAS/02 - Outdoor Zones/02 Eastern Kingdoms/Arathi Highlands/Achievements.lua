@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(14, {	-- Arathi Highlands
+		m(ARATHI_HIGHLANDS, {
 			n(ACHIEVEMENTS, {
 				ach(4896, {	-- Arathi Highlands Quests
 					crit(1, {	-- Faldir's Cove

@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9958, {	-- Player vs Player
+	pvp(n(-9958, {	-- Player vs Player
 		n(-9985, {	-- Arathi Basin
 			["maps"] = {
 				-- figure out wtf the rest of these maps are.
@@ -55,5 +55,5 @@ _.Achievements =
 				}),
 			},
 		}),
-	}),
+	})),
 };

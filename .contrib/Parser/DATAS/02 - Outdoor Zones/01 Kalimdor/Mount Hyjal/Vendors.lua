@@ -1,13 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-_.Zones = 
+_.Zones =
 {
 	m(KALIMDOR, {
-		m(198, {	-- Mount Hyjal
+		m(MOUNT_HYJAL, {
 			n(VENDORS, {
 				n(50314, {	-- Provisioner Whitecloud <Guardians of Hyjal Quartermaster>
-					["coord"] = { 62.7, 23.8, 198 },
+					["coord"] = { 62.7, 23.8, MOUNT_HYJAL },
 					["g"] = {
 						i(62378),	-- Acorn of the Daughter Tree
 						i(62381),	-- Aessina- Blessed Gloves
@@ -23,6 +23,16 @@ _.Zones =
 						i(62382),	-- Waywatcher's Boots
 						i(62380),	-- Wilderness Legguards
 						i(62383),	-- Wrap of the Great Turtle
+					},
+				}),
+				n(71304, {	-- Iris Moondreamer <Quartermaster>
+					["coord"] = { 62.8, 24.2, MOUNT_HYJAL },
+					["timeline"] = { "added 5.3.0.16781" },
+					["lvl"] = lvlsquish(80, 30, 80),
+					["sym"] = {
+						{ "select", "headerID", -573 },	-- Scroll of Resurrection
+						{ "pop" },						-- Pop the Headers
+						{ "where", "key", "classID" },	-- Only grab class headers
 					},
 				}),
 			}),

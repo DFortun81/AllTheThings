@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(8, {	-- Battle For Azeroth
+	tier(BFA_TIER, {
 		prof(JEWELCRAFTING, {
 			filter(28, {	-- Staves
 				i(159939),	-- Honorable Combatant's Staff of Intuition

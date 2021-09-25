@@ -231,10 +231,10 @@ _.Zones =
 					["provider"] = { "n", 26787 },	-- Image of Drakuru
 					["sourceQuest"] = 12068,	-- Voices From the Dust
 					["g"] = {
-						i(40755), 	-- Enticing Sabatons
+						i(40755),	-- Enticing Sabatons
 						i(40757),	-- Shackles of Dark Whispers
-						i(40756), 	-- Shoulders of the Seducer
-						i(40758), 	-- Shroud of Temptation
+						i(40756),	-- Shoulders of the Seducer
+						i(40758),	-- Shroud of Temptation
 					},
 				}),
 				q(12293, {	-- Close the Deal
@@ -746,6 +746,7 @@ _.Zones =
 				}),
 				q(12770, {	-- Reallocating Resources
 					-- NOTE: This quest is mutually exclusive with 12789 (Into the Breach) from Dragonblight
+					["altQuests"] = { 12789 },	-- Into the Breach
 					["coord"] = { 59.4, 26.0, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26212 },	-- Captain Gryan Stoutmantle
@@ -1396,3 +1397,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(12233),	-- [Depricated]Sewing Your Seed
+	}),
+});

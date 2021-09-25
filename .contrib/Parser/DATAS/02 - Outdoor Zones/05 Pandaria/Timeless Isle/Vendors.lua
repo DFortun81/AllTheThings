@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
-		m(554, {	-- Timeless Isle
+	m(PANDARIA, {
+		m(TIMELESS_ISLE, {
 			n(VENDORS, {
 				n(73656, {	-- Crafter Kwon <Arms & Armor Repairs>
-					["coord"] = { 38.5, 46.4, 554 },
+					["coord"] = { 38.5, 46.4, TIMELESS_ISLE },
 					["g"] = {
 						i(81655),	-- Faded Forest Amulet
 						i(81650),	-- Faded Forest Armored Bracers
@@ -122,7 +122,7 @@ _.Zones =
 				}),
 				n(73657, {	-- Great Chef Woo <Food & Drink>
 					["description"] = "You can turn in various zone drops to this vendor for Timeless Coins.\n\nThe quests can be repeated indefinitely.",
-					["coord"] = { 41.8, 63.7, 554 },
+					["coord"] = { 41.8, 63.7, TIMELESS_ISLE },
 					["g"] = {
 						i(104265, {	-- Great Turtle Meat
 							["description"] = "Can be turned in for 50 Timeless Coins.",
@@ -152,7 +152,7 @@ _.Zones =
 					},
 				}),
 				n(73819, {	-- Ku-Mo <Hand-Made Kites>
-					["coord"] = { 41.1, 63.8, 554 },
+					["coord"] = { 41.1, 63.8, TIMELESS_ISLE },
 					["g"] = {
 						i(104333, {	-- Flimsy Sky Lantern
 							["cost"] = { { "c", 777, 500 } },	-- 500x Timeless Coin
@@ -165,8 +165,8 @@ _.Zones =
 						}),
 					},
 				}),
-				n(72007, { 	-- Master Kukuru
-					["description"] = "|cff66ccffBuy Kukuru's Cache Key and open chests for a chance at the pet.|r",
+				n(72007, {	-- Master Kukuru
+					["description"] = "Buy Kukuru's Cache Key and open chests for a chance at the pet.",
 					["g"] = {
 						i(101538, {	-- Kukuru's Cache Key
 							["cost"] = { { "c", 777, 500 } },	-- 500x Timeless Coin
@@ -181,7 +181,7 @@ _.Zones =
 					},
 				}),
 				n(73305, {	-- Mistweaver Ai <Timeless Artifacts>
-					["coord"] = { 42.6, 55.7, 554 },
+					["coord"] = { 42.6, 55.7, TIMELESS_ISLE },
 					["g"] = {
 						i(103989, {	-- Alacrity of Xuen
 							["cost"] = { { "c", 777, 50000 } },	-- 50,000x Timeless Coin
@@ -251,7 +251,7 @@ _.Zones =
 					},
 				}),
 				n(73306, {	-- Mistweaver Ku <Lost Treasures of Shaohao>
-					["coord"] = { 42.6, 54.6, 554 },
+					["coord"] = { 42.6, 54.6, TIMELESS_ISLE },
 					["g"] = {
 						i(103685, {	-- Celestial Defender's Medallion (TOY!)
 							["cost"] = { { "c", 777, 1000 } },	-- 1,000x Timeless Coin
@@ -286,8 +286,8 @@ _.Zones =
 					},
 				}),
 				n(73307, {	-- Speaker Gulan <Emissary of Ordos>
-					["coord"] = { 74.9, 44.9, 554 },
-					["g"] = {
+					["coord"] = { 74.9, 44.9, TIMELESS_ISLE },
+					["g"] = pvp({
 						currency(789, {	-- Bloody Coin
 							["description"] = "Earn Bloody Coins by transforming into an Emissary of Ordos and participating in PvP.",
 							["g"] = {
@@ -317,15 +317,15 @@ _.Zones =
 						i(103637, {	-- Vengeful Porcupette (PET!)
 							["cost"] = { { "c", 789, 100 } },	-- 100x Bloody Coin
 						}),
-					},
+					}),
 				}),
 				n(73293, {	-- Whizzig
 					["description"] = "This vendor is rare and is not always available.",
 					["coords"] = {
-						{ 40.0, 63.0, 554 },
-						{ 42.8, 59.4, 554 },
-						{ 41.6, 47.2, 554 },
-						{ 35.0, 52.8, 554 },
+						{ 40.0, 63.0, TIMELESS_ISLE },
+						{ 42.8, 59.4, TIMELESS_ISLE },
+						{ 41.6, 47.2, TIMELESS_ISLE },
+						{ 35.0, 52.8, TIMELESS_ISLE },
 					},
 					["g"] = {
 						i(103786, {	-- "Dapper Gentleman" Costume

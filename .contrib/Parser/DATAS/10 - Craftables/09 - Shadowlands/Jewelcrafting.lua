@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		prof(JEWELCRAFTING, {
 			n(-320, {	-- Head
 				i(180760),	-- Crown of the Righteous
@@ -31,6 +31,7 @@ _.Craftables =
 				i(173135),	-- Versatile Laestrite Band
 				i(173137),	-- Quick Laestrite Band
 			}),
+			i(185960),		-- Vestige of Origins
 		}),
 	}),
 };

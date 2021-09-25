@@ -8,7 +8,7 @@ _.Achievements =
 		n(-10053, {	-- Battle Dungeon
 			ach(12726),		-- A Fish Out of Water
 			ach(12490),		-- Alchemical Romance
-			ach(13075, {	-- Battle for Azeroth Keymaster
+			un(REMOVED_FROM_GAME, ach(13075, {	-- Battle for Azeroth Keymaster / TODO: will probably move in 9.1
 				crit(4),		-- Atal'Dazar
 				crit(1),		-- Freehold
 				crit(10),		-- Kings' Rest
@@ -19,7 +19,7 @@ _.Achievements =
 				crit(5),		-- The Underrot
 				crit(7),		-- Tol Dagor
 				crit(2),		-- Waycrest Manor
-			}),
+			})),
 			ach(12600),		-- Breath of the Shrine
 			ach(12270, {	-- Bringing Hexy Back
 				crit(2),		-- Priestess Alun'za defeated

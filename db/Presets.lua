@@ -52,6 +52,7 @@ select(2, ...).Presets = {
 		[106] = true,
 		[200] = true,
 		-- Hidden Filter types (should always be allowed since User cannot show/hide)
+		[-1] = true,
 		[51] = true,
 		[52] = true,
 		[53] = true,
@@ -113,6 +114,7 @@ select(2, ...).Presets = {
 		[106] = true,
 		[200] = true,
 		-- Hidden Filter types (should always be allowed since User cannot show/hide)
+		[-1] = true,
 		[51] = true,
 		[52] = true,
 		[53] = true,
@@ -174,6 +176,7 @@ select(2, ...).Presets = {
 		[106] = true,
 		[200] = true,
 		-- Hidden Filter types (should always be allowed since User cannot show/hide)
+		[-1] = true,
 		[51] = true,
 		[52] = true,
 		[53] = true,
@@ -235,6 +238,7 @@ select(2, ...).Presets = {
 		[106] = true,
 		[200] = true,
 		-- Hidden Filter types (should always be allowed since User cannot show/hide)
+		[-1] = true,
 		[51] = true,
 		[52] = true,
 		[53] = true,
@@ -296,6 +300,7 @@ select(2, ...).Presets = {
 		[106] = true,
 		[200] = true,
 		-- Hidden Filter types (should always be allowed since User cannot show/hide)
+		[-1] = true,
 		[51] = true,
 		[52] = true,
 		[53] = true,
@@ -357,6 +362,7 @@ select(2, ...).Presets = {
 		[106] = true,
 		[200] = true,
 		-- Hidden Filter types (should always be allowed since User cannot show/hide)
+		[-1] = true,
 		[51] = true,
 		[52] = true,
 		[53] = true,
@@ -418,6 +424,7 @@ select(2, ...).Presets = {
 		[106] = true,
 		[200] = true,
 		-- Hidden Filter types (should always be allowed since User cannot show/hide)
+		[-1] = true,
 		[51] = true,
 		[52] = true,
 		[53] = true,
@@ -470,6 +477,7 @@ select(2, ...).Presets = {
 		[106] = true,
 		[200] = true,
 		-- Hidden Filter types (should always be allowed since User cannot show/hide)
+		[-1] = true,
 		[51] = true,
 		[52] = true,
 		[53] = true,
@@ -530,6 +538,7 @@ select(2, ...).Presets = {
 		[106] = true,
 		[200] = true,
 		-- Hidden Filter types (should always be allowed since User cannot show/hide)
+		[-1] = true,
 		[51] = true,
 		[52] = true,
 		[53] = true,
@@ -581,6 +590,7 @@ select(2, ...).Presets = {
 		[106] = true,
 		[200] = true,
 		-- Hidden Filter types (should always be allowed since User cannot show/hide)
+		[-1] = true,
 		[51] = true,
 		[52] = true,
 		[53] = true,
@@ -634,6 +644,7 @@ select(2, ...).Presets = {
 		[106] = true,
 		[200] = true,
 		-- Hidden Filter types (should always be allowed since User cannot show/hide)
+		[-1] = true,
 		[51] = true,
 		[52] = true,
 		[53] = true,
@@ -695,6 +706,7 @@ select(2, ...).Presets = {
 		[106] = true,
 		[200] = true,
 		-- Hidden Filter types (should always be allowed since User cannot show/hide)
+		[-1] = true,
 		[51] = true,
 		[52] = true,
 		[53] = true,

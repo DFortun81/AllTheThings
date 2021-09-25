@@ -1,13 +1,13 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-
+--[[
 _.GearSets =
 {
 	n(-254, {	-- Heritage Armor
 		gs(1681, {	-- Heritage of the Blackrock
 			["races"] = { MAGHAR },
-			["g"] = {   
+			["g"] = {
 				q(51484, {    -- Heritage of the Mag'har
 					i(161050),	-- Blackrock Clan Helm
 					i(161051),	-- Blackrock Clan Pauldrons
@@ -22,3 +22,4 @@ _.GearSets =
 		}),
 	}),
 };
+--]]

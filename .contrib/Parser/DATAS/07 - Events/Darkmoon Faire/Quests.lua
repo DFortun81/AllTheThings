@@ -36,7 +36,7 @@ _.WorldEvents =
 					}),
 					q(7907,  {	-- Darkmoon Beast Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
+						["provider"] = { "i", 19228 },	-- Beasts Deck
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 60,
 						["g"] = {
@@ -83,7 +83,7 @@ _.WorldEvents =
 					}),
 					q(7929,  {	-- Darkmoon Elementals Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
+						["provider"] = { "i", 19267 },	-- Elementals Deck
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 60,
 						["g"] = {
@@ -145,7 +145,7 @@ _.WorldEvents =
 					}),
 					q(7927,  {	-- Darkmoon Portals Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
+						["provider"] = { "i", 19277 },	-- Portals Deck
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 60,
 						["g"] = {
@@ -220,13 +220,85 @@ _.WorldEvents =
 					}),
 					q(7928,  {	-- Darkmoon Warlords Deck
 						["repeatable"] = true,
-						["provider"] = { "n", 14847 },	-- Professor Thaddeus
+						["provider"] = { "i", 19257 },	-- Warlords Deck
 						["coord"] = { 51.9, 60.9, 407 },
 						["lvl"] = 60,
 						["g"] = {
 							i(19287),	-- Darkmoon Card: Heroism
 						},
 					}),
+				},
+			}),
+			q(7930, {	-- 5 Tickets - Darkmoon Flower
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14828 },	-- Gelvas Grimegate
+				["coord"] = { 48.0, 64.8, 407 },
+				["g"] = {
+					i(19295),	-- Darkmoon Flower
+				},
+			}),
+			q(7931, {	-- 5 Tickets - Minor Darkmoon Prize
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14828 },	-- Gelvas Grimegate
+				["coord"] = { 48.0, 64.8, 407 },
+				["g"] = {
+					i(19298),	-- Minor Darkmoon Prize
+				},
+			}),
+			q(7935, {	-- 10 Tickets - Last Month's Mutton
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14828 },	-- Gelvas Grimegate
+				["coord"] = { 48.0, 64.8, 407 },
+				["g"] = {
+					i(19292),	-- Last Month's Mutton
+				},
+			}),
+			q(7932, {	-- 12 Tickets - Lesser Darkmoon Prize
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14828 },	-- Gelvas Grimegate
+				["coord"] = { 48.0, 64.8, 407 },
+				["g"] = {
+					i(19297),	-- Lesser Darkmoon Prize
+				},
+			}),
+			q(7933, {	-- 40 Tickets - Greater Darkmoon Prize
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14828 },	-- Gelvas Grimegate
+				["coord"] = { 48.0, 64.8, 407 },
+				["g"] = {
+					i(19296),	-- Greater Darkmoon Prize
+				},
+			}),
+			q(9249, {	-- 40 Tickets - Schematic: Steam Tonk Controller
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14828 },	-- Gelvas Grimegate
+				["coord"] = { 48.0, 64.8, 407 },
+				["g"] = {
+					i(22729),	-- Schematic: Steam Tonk Controller
+				},
+			}),
+			q(7934, {	-- 50 Tickets - Darkmoon Storage Box
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14828 },	-- Gelvas Grimegate
+				["coord"] = { 48.0, 64.8, 407 },
+				["g"] = {
+					i(19291),	-- Darkmoon Storage Box
+				},
+			}),
+			q(7936, {	-- 50 Tickets - Last Year's Mutton
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14828 },	-- Gelvas Grimegate
+				["coord"] = { 48.0, 64.8, 407 },
+				["g"] = {
+					i(19293),	-- Last Year's Mutton
 				},
 			}),
 			q(7981,  {	-- 1200 Tickets - Amulet of the Darkmoon
@@ -338,6 +410,16 @@ _.WorldEvents =
 					}),
 				},
 			}),
+			q(7885, {	-- Armor Kits
+				["requireSkill"] = LEATHERWORKING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14833 },	-- Chronos
+				["coord"] = { 55.0, 71.6, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
 			q(29508, {	-- Baby Needs Two Pair of Shoes
 				["requireSkill"] = BLACKSMITHING,
 				["isMonthly"] = true,
@@ -368,11 +450,89 @@ _.WorldEvents =
 			q(29480, {	-- Banners, Banners Everywhere!
 				["u"] = REMOVED_FROM_GAME,
 			}),
+			q(7892, {	-- Big Black Mace
+				["requireSkill"] = BLACKSMITHING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14832 },	-- Kerri Hicks
+				["coord"] = { 48.2, 67.6, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
+			q(7881, {	-- Carnival Boots
+				["requireSkill"] = LEATHERWORKING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14833 },	-- Chronos
+				["coord"] = { 55.0, 71.6, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
+			q(7882, {	-- Carnival Jerkins
+				["requireSkill"] = LEATHERWORKING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14833 },	-- Chronos
+				["coord"] = { 55.0, 71.6, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
+			q(7889, {	-- Coarse Weightstone
+				["requireSkill"] = BLACKSMITHING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14832 },	-- Kerri Hicks
+				["coord"] = { 48.2, 67.6, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
+			q(7894, {	-- Copper Modulator
+				["requireSkill"] = ENGINEERING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14841 },	-- Rinling
+				["coord"] = { 49.6, 60.8, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
+			q(7884, {	-- Crocolisk Boy and the Bearded Murloc
+				["requireSkill"] = LEATHERWORKING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14833 },	-- Chronos
+				["coord"] = { 55.0, 71.6, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
+			q(13311, {	-- Demons Deck
+				["provider"] = { "i", 44158 },	-- Demons Deck
+				["repeatable"] = true,
+				["g"] = {
+					i(44217),	-- Darkmoon Dirk
+					i(44218),	-- Darkmoon Executioner
+					i(44219),	-- Darkmoon Magestaff
+				},
+			}),
 			q(33354, {	-- Den Mother's Demise
 				["creatureID"] = 71992,	-- Moonfang
 				["isMonthly"] = true,
 				["provider"] = { "i", 105891 },	-- Moonfang's Pelt
 				["coord"] = { 39.3, 43.6, 407 },
+			}),
+			q(7903, {	-- Evil Bat Eyes
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14829 },	-- Yebb Neblegear
+				["coord"] = { 51.6, 81.8, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
 			}),
 			q(29517, {	-- Eyes on the Prizes
 				["requireSkill"] = TAILORING,
@@ -414,6 +574,45 @@ _.WorldEvents =
 					crit(2, {	-- Archaeology
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
+				},
+			}),
+			q(8222, {	-- Glowing Scorpid Blood
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14829 },	-- Yebb Neblegear
+				["coord"] = { 51.6, 81.8, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
+			q(7896, {	-- Green Fireworks
+				["requireSkill"] = ENGINEERING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14841 },	-- Rinling
+				["coord"] = { 49.6, 60.8, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
+			q(7891, {	-- Green Iron Bracers
+				["requireSkill"] = BLACKSMITHING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14832 },	-- Kerri Hicks
+				["coord"] = { 48.2, 67.6, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
+			q(7890, {	-- Heavy Grinding Stone
+				["requireSkill"] = BLACKSMITHING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14832 },	-- Kerri Hicks
+				["coord"] = { 48.2, 67.6, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(29479, {	-- Herbs for Healing
@@ -483,7 +682,6 @@ _.WorldEvents =
 			}),
 			q(12518, {	-- Mages Deck
 				["provider"] = { "i", 44148 },	-- Mages Deck
-				["requireSkill"] = INSCRIPTION,
 				["repeatable"] = true,
 				["g"] = {
 					i(44215),	-- Darkmoon Necklace
@@ -498,6 +696,16 @@ _.WorldEvents =
 				["g"] = {
 					i(74035),	-- Master Pit Fighter
 					ach(6024),	-- Darkmoon Dominator
+				},
+			}),
+			q(7897, {	-- Mechanical Repair Kits
+				["requireSkill"] = ENGINEERING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14841 },	-- Rinling
+				["coord"] = { 49.6, 60.8, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7941,  {	-- More Armor Kits
@@ -593,15 +801,24 @@ _.WorldEvents =
 					i(116067),	-- Ring of Broken Promises
 				},
 			}),
+			q(7893, {	-- Rituals of Strength
+				["requireSkill"] = BLACKSMITHING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14832 },	-- Kerri Hicks
+				["coord"] = { 48.2, 67.6, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
 			q(12517, {	-- Rogues Deck
 				["repeatable"] = true,
 				["provider"] = { "i", 37163 },	-- Rogues Deck
-				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					i(38318),	-- Darkmoon Robe
-					i(39509),	-- Darkmoon Vest
 					i(39507),	-- Darkmoon Breastplate
 					i(131276),	-- Darkmoon Chainmail
+					i(38318),	-- Darkmoon Robe
+					i(39509),	-- Darkmoon Vest
 				},
 			}),
 			q(38934, {	-- Sila's Secret Stash
@@ -614,6 +831,24 @@ _.WorldEvents =
 					i(127148, {	-- Sila's Secret Stash
 						["description"] = "This item contains 100 Darkmoon Faire Tickets.",
 					}),
+				},
+			}),
+			q(7899, {	-- Small Furry Paws
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14829 },	-- Yebb Neblegear
+				["coord"] = { 51.6, 81.8, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
+			q(7901, {	-- Soft Bushy Tails
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14829 },	-- Yebb Neblegear
+				["coord"] = { 51.6, 81.8, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7946,  {	-- Spawn of Jubjub
@@ -639,7 +874,6 @@ _.WorldEvents =
 			q(12798, {	-- Swords Deck
 				["repeatable"] = true,
 				["provider"] = { "i", 37164 },	-- Swords Deck
-				["requireSkill"] = INSCRIPTION,
 				["g"] = {
 					i(39897),	-- Azure Shoulderguards
 					i(39895),	-- Cloaked Shoulderpads
@@ -847,6 +1081,26 @@ _.WorldEvents =
 					i(93724),	-- Darkmoon Game Prize
 				},
 			}),
+			q(7883, {	-- The World's Largest Gnome!
+				["requireSkill"] = LEATHERWORKING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14833 },	-- Chronos
+				["coord"] = { 55.0, 71.6, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
+			q(7898, {	-- Thorium Widget
+				["requireSkill"] = ENGINEERING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14841 },	-- Rinling
+				["coord"] = { 49.6, 60.8, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
 			q(29434, {	-- Tonk Commander
 				["provider"] = { "n", 54605 },	-- Finaly Coolshot
 				["isDaily"] = true,
@@ -861,7 +1115,7 @@ _.WorldEvents =
 					i(93724),	-- Darkmoon Game Prize
 				},
 			}),
-			q(29464, { 	-- Tools of Divination
+			q(29464, {	-- Tools of Divination
 				["isMonthly"] = true,
 				["provider"] = { "i", 71716 },	-- Soothsayer's Runes
 				["coord"] = { 51.9, 60.9, 407 },
@@ -875,12 +1129,40 @@ _.WorldEvents =
 			q(29465, {	-- Tools of Divination
 				["u"] = REMOVED_FROM_GAME,
 			}),
+			q(7900, {	-- Torn Bear Pelts
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14829 },	-- Yebb Neblegear
+				["coord"] = { 51.6, 81.8, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
+			q(7902, {	-- Vibrant Plumes
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14829 },	-- Yebb Neblegear
+				["coord"] = { 51.6, 81.8, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),
 			q(37819, {	-- Welcome to the Darkmoon Races
 				["provider"] = { "n", 74056 },	-- Malle Earnhard
 				["coord"] = { 48.9, 88.3, 407 },
 				["g"] = {
 					ach(9755),	-- Darkmoon Race Enthusiast
 					i(93724),	-- Darkmoon Game Prize
+				},
+			}),
+			q(7895, {	-- Whirring Bronze Gizmo
+				["requireSkill"] = ENGINEERING,
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14841 },	-- Rinling
+				["coord"] = { 49.6, 60.8, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(29515, {	-- Writing the Future
@@ -914,3 +1196,10 @@ _.WorldEvents =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(11334),	-- He Shoots, He Scores!
+		q(11345),	-- Prizes for Pellets
+		q(29601),	-- The Darkmoon Field Guide
+	}),
+});

@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(8, {	-- Battle For Azeroth
+	tier(BFA_TIER, {
 		prof(ENGINEERING, {
 			filter(100, {	-- Mounts
 				i(161134),	-- Mecha-Mogul Mk2
@@ -12,32 +12,14 @@ _.Craftables =
 					i(153594),	-- Xiwyllag ATV
 				}),
 			}),
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				i(165849),	-- Mechantula
 			}),
 			filter(55, {	-- Consumable
 				i(165738),	-- Makeshift Azerite Detector
 			}),
 			filter(102, {	-- Toys
-				i(168667, { -- Blingtron 7000
-					q(56042, { -- Blingtron 7000
-						["provider"] = { "n", 153897 },    -- Blingtron 7000
-						["isDaily"] = true,
-						["g"] = {
-							i(168740, {	-- Blingtron 7000 Gift Package
-								i(87250),	-- Depleted-Kyparium Rocket Mount
-								i(87251),	-- Geosynchronous World Spinner Mount
-								i(112057),	-- Lifelike Mechanical Frostboar Pet
-								i(136911),	-- Knockoff Blingtron -- https://www.wowhead.com/item=168740/blingtron-7000-gift-package#comments:id=3210510
-								i(103670),	-- Lil' Bling Pet
-								i(41508),	-- Mechano-Hog Mount
-								i(44413),	-- Mekgineer's Chopper Mount
-								--i(115483),	-- Sky-Bo Pet -- one random report with no screenshot
-								i(21277),	-- Tranquil Mechanical Yeti Pet (confirmed 9.0.1)
-							}),
-						},
-					}),
-				}),
+				i(168667), -- Blingtron 7000
 				i(168807),	-- Wormhole Generator: Kul Tiras
 				i(168808),	-- Wormhole Generator: Zandalar
 			}),
@@ -61,7 +43,7 @@ _.Craftables =
 				i(170314),	-- Uncanny Combatant's Stormsteel Destroyer [Alliance]
 				i(170315),	-- Uncanny Combatant's Stormsteel Destroyer [Horde]
 			}),
-			n(-320,	{ 		-- Head
+			n(-320,	{		-- Head
 				filter(4, {	-- Cloth
 					i(168689, {	-- Abyssal Synthetic Specs
 						i(168763),	-- Schematic: A5C-3N-D3D Synthetic Specs
@@ -178,3 +160,10 @@ _.Craftables =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		prof(ENGINEERING, {
+			i(153505),	-- Monelite Boomstick
+		}),
+	}),
+});

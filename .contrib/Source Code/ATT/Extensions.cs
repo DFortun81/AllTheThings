@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ATT
@@ -30,7 +31,7 @@ namespace ATT
         /// <param name="dict">The dictionary.</param>
         /// <param name="key">The key.</param>
         /// <returns>The boolean.</returns>
-        public static bool GetBoolean(this Dictionary<string, object> dict, string key)
+        public static bool GetBoolean(this IDictionary<string, object> dict, string key)
         {
             return dict.TryGetValue(key, out object o) ? Convert.ToBoolean(o) : false;
         }
@@ -42,7 +43,7 @@ namespace ATT
         /// <param name="key">The key.</param>
         /// <param name="value">The variable to write to.</param>
         /// <returns>Whether or not a value was found for the key.</returns>
-        public static bool TryGetValue(this Dictionary<string, object> dict, string key, out bool value)
+        public static bool TryGetValue(this IDictionary<string, object> dict, string key, out bool value)
         {
             if (dict.TryGetValue(key, out object o))
             {
@@ -60,11 +61,29 @@ namespace ATT
         /// <param name="key">The key.</param>
         /// <param name="value">The variable to write to.</param>
         /// <returns>Whether or not a value was found for the key.</returns>
-        public static bool TryGetValue(this Dictionary<string, object> dict, string key, out long value)
+        public static bool TryGetValue(this IDictionary<string, object> dict, string key, out long value)
         {
             if (dict.TryGetValue(key, out object o))
             {
                 value = Convert.ToInt64(o);
+                return true;
+            }
+            value = 0;
+            return false;
+        }
+
+        /// <summary>
+        /// Try to get a decimal from the dictionary.
+        /// </summary>
+        /// <param name="dict">The dictionary.</param>
+        /// <param name="key">The key.</param>
+        /// <param name="value">The variable to write to.</param>
+        /// <returns>Whether or not a value was found for the key.</returns>
+        public static bool TryGetValue(this IDictionary<string, object> dict, string key, out decimal value)
+        {
+            if (dict.TryGetValue(key, out object o))
+            {
+                value = Convert.ToDecimal(o);
                 return true;
             }
             value = 0;
@@ -77,7 +96,7 @@ namespace ATT
         /// <param name="dict">The dictionary.</param>
         /// <param name="key">The key.</param>
         /// <returns>The string.</returns>
-        public static string GetString(this Dictionary<string, object> dict, string key)
+        public static string GetString(this IDictionary<string, object> dict, string key)
         {
             return dict.TryGetValue(key, out object o) ? Convert.ToString(o) : null;
         }
@@ -89,7 +108,7 @@ namespace ATT
         /// <param name="key">The key.</param>
         /// <param name="value">The variable to write to.</param>
         /// <returns>Whether or not a value was found for the key.</returns>
-        public static bool TryGetValue(this Dictionary<string, object> dict, string key, out string value)
+        public static bool TryGetValue(this IDictionary<string, object> dict, string key, out string value)
         {
             if (dict.TryGetValue(key, out object o))
             {
@@ -106,7 +125,7 @@ namespace ATT
         /// <param name="dict">The dictionary.</param>
         /// <param name="key">The key.</param>
         /// <returns>The list.</returns>
-        public static List<object> GetList(this Dictionary<string, object> dict, string key)
+        public static List<object> GetList(this IDictionary<string, object> dict, string key)
         {
             return dict.TryGetValue(key, out object o) ? o as List<object> : null;
         }
@@ -118,9 +137,27 @@ namespace ATT
         /// <param name="key">The key.</param>
         /// <param name="value">The variable to write to.</param>
         /// <returns>Whether or not a value was found for the key.</returns>
-        public static bool TryGetValue(this Dictionary<string, object> dict, string key, out List<object> value)
+        public static bool TryGetValue(this IDictionary<string, object> dict, string key, out List<object> value)
         {
             if (dict.TryGetValue(key, out object o) && o is List<object> value2)
+            {
+                value = value2;
+                return true;
+            }
+            value = null;
+            return false;
+        }
+
+        /// <summary>
+        /// Try to get a strongly-typed list of objects from the dictionary.
+        /// </summary>
+        /// <param name="dict">The dictionary.</param>
+        /// <param name="key">The key.</param>
+        /// <param name="value">The variable to write to.</param>
+        /// <returns>Whether or not a value was found for the key.</returns>
+        public static bool TryGetValue<T>(this IDictionary<string, object> dict, string key, out List<T> value)
+        {
+            if (dict.TryGetValue(key, out object o) && o is List<T> value2)
             {
                 value = value2;
                 return true;
@@ -135,7 +172,7 @@ namespace ATT
         /// <param name="dict">The dictionary.</param>
         /// <param name="key">The key.</param>
         /// <returns>The dictionary.</returns>
-        public static Dictionary<string, object> GetDictionary(this Dictionary<string, object> dict, string key)
+        public static Dictionary<string, object> GetDictionary(this IDictionary<string, object> dict, string key)
         {
             return dict.TryGetValue(key, out object o) ? o as Dictionary<string, object> : null;
         }
@@ -147,7 +184,7 @@ namespace ATT
         /// <param name="key">The key.</param>
         /// <param name="value">The variable to write to.</param>
         /// <returns>Whether or not a value was found for the key.</returns>
-        public static bool TryGetValue(this Dictionary<string, object> dict, string key, out Dictionary<string, object> value)
+        public static bool TryGetValue(this IDictionary<string, object> dict, string key, out Dictionary<string, object> value)
         {
             if (dict.TryGetValue(key, out object o) && o is Dictionary<string, object> value2)
             {
@@ -156,6 +193,39 @@ namespace ATT
             }
             value = null;
             return false;
+        }
+
+        /// <summary>
+        /// Returns whether the sequence matches the content of another sequence regardless of ordering<para/>
+        /// NOTE: Not well-optimized for long sequences
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="sequence"></param>
+        /// <param name="sequence"></param>
+        /// <returns></returns>
+        public static bool Matches<T>(this IEnumerable<T> x, IEnumerable<T> y)
+        {
+            // check counts
+            int xCount = x?.Count() ?? -1;
+            int yCount = y?.Count() ?? -1;
+            if (xCount != yCount)
+            {
+                return false;
+            }
+            // matching count is only valid if both are null
+            else if (xCount == -1)
+            {
+                return true;
+            }
+
+            // check elements regardless of ordering
+            List<T> copy = y.ToList();
+            foreach (T item in x)
+            {
+                if (!copy.Remove(item))
+                    return false;
+            }
+            return true;
         }
     }
 }

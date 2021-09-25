@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(2, {	-- Burning Crusade
+	tier(TBC_TIER, {
 		n(-319, {	-- Weapons
 			n(-334, {	-- 1H Axes
 				i(25198),	-- Karaborian Battle Axe
@@ -331,6 +331,50 @@ _.WorldDrops =
 				i(25294),	-- Dragonscale Wand
 				i(25295),	-- Flawless Wand
 			}),
+			-- #if BEFORE MOP
+			i(28535, {	-- Amani Throwing Axe
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(28540, {	-- Arakkoa Talon-Axe
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(28544, {	-- Assassin's Shuriken
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(28531, {	-- Barbed Shrike
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(28543, {	-- Dreghood Throwing Axe
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(28534, {	-- Fel Tipped Dart
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(28538, {	-- Forked Shuriken
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(28542, {	-- Heartseeker Knives
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(28536, {	-- Jagged Guillotine
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(28539, {	-- Razor-Edged Boomerang
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(28541, {	-- Sawshrike
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(28532, {	-- Silver Throwing Knifes
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(28537, {	-- Wildhammer Throwing Axe
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(28533, {	-- Wooden Boomerang
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			-- #endif
 		}),
 	}),
 };

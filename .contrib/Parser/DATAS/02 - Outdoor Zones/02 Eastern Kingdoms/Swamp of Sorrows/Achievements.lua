@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(51, {	-- Swamp of Sorrows
+		m(SWAMP_OF_SORROWS, {
 			n(ACHIEVEMENTS, {
 				ach(4904, {	-- Swamp of Sorrows Quests
 					crit(1, {	-- Bogpaddle

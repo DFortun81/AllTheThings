@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(50, {	-- Northern Stranglethorn
-			n(ZONEDROPS, {
+		m(NORTHERN_STRANGLETHORN, {
+			n(ZONE_DROPS, {
 				i(1998, {	-- Bloodscalp Channeling Staff
 					["crs"] = { 697 },	-- Bloodscalp Shaman
 				}),
@@ -30,7 +30,7 @@ _.Zones =
 					["crs"] = { 709 },	-- Mosh'Ogg Warmonger
 				}),
 				i(1680, {	-- Headchopper
-					["crs"] = { 723 }, 	-- Mosh'Ogg Butcher
+					["crs"] = { 723 },	-- Mosh'Ogg Butcher
 				}),
 				i(1522, {	-- Headhunting Spear
 					["crs"] = { 671 },	-- Bloodscalp Headhunter
@@ -47,7 +47,7 @@ _.Zones =
 				i(1703, {	-- Crystal Basilisk Spine
 					["crs"] = { 689 },	-- Crystal Spine Basilisk
 				}),
-				i(48126), 	-- Razzashi Hatchling
+				i(48126),	-- Razzashi Hatchling
 				i(8494),	-- Parrot Cage (Hyacinth Macaw)
 				i(1997, {	-- Pressed Felt Robe
 					["crs"] = { 701 },	-- Bloodscalp Mystic

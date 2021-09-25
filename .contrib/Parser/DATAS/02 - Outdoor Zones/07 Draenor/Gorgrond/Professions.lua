@@ -4,9 +4,9 @@
 
 --_.Zones =
 --{
---	m(572, {	-- Draenor
---		m(543, {	-- Gorgrond
---			n(-38, {	-- Profession
+--	m(DRAENOR, {
+--		m(GORGROND, {
+--			n(PROFESSIONS, {
 --				prof(FISHING, {
 	--				i(118380),		-- Hightfish Cap
 --				}),

@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	n(-242, {	-- Unrated
+	pvp(n(-242, {	-- Unrated
 		i(126919, {	-- Champion's Strongbox [Alliance]
 			["u"] = REMOVED_FROM_GAME,
 		}),
@@ -35,5 +35,5 @@ _.PVP =
 		},
 		i(164261),	-- Steel Strongbox [Alliance] -- This item can drop any <name of current season> Aspirant's gear, but we dont list it cuz bloat. Rewarded from BG
 		i(164262),	-- Steel Strongbox [Horde] -- This item can drop any <name of current season>, but we dont list it cuz bloat. Rewarded from BG
-	}),
+	})),
 };

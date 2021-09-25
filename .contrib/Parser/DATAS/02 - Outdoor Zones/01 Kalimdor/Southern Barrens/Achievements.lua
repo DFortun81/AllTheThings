@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(199, {	-- Southern Barrens
+		m(SOUTHERN_BARRENS, {
 			n(ACHIEVEMENTS, {
 				ach(4937, {	-- Southern Barrens Quests
 					["races"] = ALLIANCE_ONLY,

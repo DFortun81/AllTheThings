@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = 29},
+_.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 {
 	holiday(235485, {	-- Feast of Winter Veil
 		n(QUESTS, {
@@ -10,8 +10,8 @@ _.Holidays = bubbleDown({["u"] = 29},
 				-- Added for Winter Veil 2020
 				["questID"] = 58901,
 				["coords"] = {
-					{ 33.9, 68.1, 87 },	-- Ironforge
-					{ 52.9, 77.4, 85 },	-- Orgrimmar
+					{ 33.9, 68.1, IRONFORGE },
+					{ 52.9, 77.4, ORGRIMMAR },
 				},
 			}),
 			-- ALLIANCE QUESTS --
@@ -27,7 +27,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					{ "n", 96304 },	-- Tradurjo Jinglepocket
 				},
 				["maps"] = {
-					84,		-- Stormwind City
+					STORMWIND_CITY,
 					THE_EXODAR,
 					579,	-- Lunarfall
 				},
@@ -37,10 +37,10 @@ _.Holidays = bubbleDown({["u"] = 29},
 			q(8860,  {	-- New Year Celebrations! (A)
 				["description"] = "This quest is only available on December 31, and can be done once per character (not each year). Quest can be obtained from any Wonderform Operator in any major city.",
 				["provider"] = { "n", 15732 },	-- Wonderform Operator
-				["coord"] = { 67.7, 71.4, 84 },	-- Stormwind (closest pick-up to turn-in)
+				["coord"] = { 67.7, 71.4, STORMWIND_CITY },	-- (closest pick-up to turn-in
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 84 },	-- Stormwind
-				["u"] = 29,	-- Feast of Winter Veil
+				["maps"] = { STORMWIND_CITY },
+				["u"] = FEAST_OF_WINTER_VEIL,
 			}),
 			q(7025,  {	-- Treats for Greatfather Winter
 				["provider"] = { "n", 13444 },	-- Greatfather Winter
@@ -56,7 +56,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					{ "n", 13433 },	-- Wulmort Jinglepocket
 					{ "n", 13636 },	-- Strange Snowman
 				},
-				["maps"] = { 25 },	-- Hillsbrad Foothills
+				["maps"] = { HILLSBRAD_FOOTHILLS },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["g"] = {
@@ -68,47 +68,47 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["lvl"] = 101,
 						["g"] = {
 							-- Battle Pets/Companions
-							un(29, p(254)),		-- Blue Clockwork Rocket Bot
-							un(29, p(191)),		-- Clockwork Rocket Bot
-							un(29, i(73797)),	-- Lump of Coal
-							un(29, i(104317)),	-- Rotten Helper Box
+							un(FEAST_OF_WINTER_VEIL, p(254)),		-- Blue Clockwork Rocket Bot
+							un(FEAST_OF_WINTER_VEIL, p(191)),		-- Clockwork Rocket Bot
+							un(FEAST_OF_WINTER_VEIL, i(73797)),	-- Lump of Coal
+							un(FEAST_OF_WINTER_VEIL, i(104317)),	-- Rotten Helper Box
 							-- Toys
-							un(29, i(54343)),	-- Blue Crashin' Thrashin' Racer Controller
-							un(29, i(108632, {	-- Crashin' Thrashin' Flamer Controller
+							un(FEAST_OF_WINTER_VEIL, i(54343)),	-- Blue Crashin' Thrashin' Racer Controller
+							un(FEAST_OF_WINTER_VEIL, i(108632, {	-- Crashin' Thrashin' Flamer Controller
 								crit(1, {	-- Crashin' Thrashin' Flamer
 									["achievementID"] = 10353,	-- Iron Armada
 								}),
 							})),
-							un(29, i(104318)),	-- Crashin' Thrashin' Flyer Controller
-							un(29, i(37710)),	-- Crashin' Thrashin' Racer Controller
-							un(29, i(116763)),	-- Crashin' Thrashin' Shredder Controller
-							un(29, i(139337)),	-- Disposable Winter Veil Suits
-							un(29, i(128636)),	-- Endothermic Blaster
-							un(29, i(90888)),	-- Foot Ball
-							un(29, i(116692)),	-- Fuzzy Green Lounge Cushion
-							un(29, i(46709)),	-- MiniZep Controller
-							un(29, i(116689)),	-- Pineapple Lounge Cushion
-							un(29, i(128776)),	-- Red Wooden Sled
-							un(29, i(116690)),	-- Safari Lounge Cushion
-							un(29, i(116456)),	-- Scroll of Storytelling
-							un(29, i(90883)),	-- The Pigskin
-							un(29, i(54438)),	-- Tiny Blue Ragdoll
-							un(29, i(54437)),	-- Tiny Green Ragdoll
-							un(29, i(44606)),	-- Toy Train Set
-							un(29, i(151349)), 	-- Toy Weapon Set [Alliance]
-							un(29, i(151348)), 	-- Toy Weapon Set [Horde]
-							un(29, i(45057)),	-- Wind-Up Train Wrecker
-							un(29, i(116691)),	-- Zhevra Lounge Cushion
+							un(FEAST_OF_WINTER_VEIL, i(104318)),	-- Crashin' Thrashin' Flyer Controller
+							un(FEAST_OF_WINTER_VEIL, i(37710)),	-- Crashin' Thrashin' Racer Controller
+							un(FEAST_OF_WINTER_VEIL, i(116763)),	-- Crashin' Thrashin' Shredder Controller
+							un(FEAST_OF_WINTER_VEIL, i(139337)),	-- Disposable Winter Veil Suits
+							un(FEAST_OF_WINTER_VEIL, i(128636)),	-- Endothermic Blaster
+							un(FEAST_OF_WINTER_VEIL, i(90888)),	-- Foot Ball
+							un(FEAST_OF_WINTER_VEIL, i(116692)),	-- Fuzzy Green Lounge Cushion
+							un(FEAST_OF_WINTER_VEIL, i(46709)),	-- MiniZep Controller
+							un(FEAST_OF_WINTER_VEIL, i(116689)),	-- Pineapple Lounge Cushion
+							un(FEAST_OF_WINTER_VEIL, i(128776)),	-- Red Wooden Sled
+							un(FEAST_OF_WINTER_VEIL, i(116690)),	-- Safari Lounge Cushion
+							un(FEAST_OF_WINTER_VEIL, i(116456)),	-- Scroll of Storytelling
+							un(FEAST_OF_WINTER_VEIL, i(90883)),	-- The Pigskin
+							un(FEAST_OF_WINTER_VEIL, i(54438)),	-- Tiny Blue Ragdoll
+							un(FEAST_OF_WINTER_VEIL, i(54437)),	-- Tiny Green Ragdoll
+							un(FEAST_OF_WINTER_VEIL, i(44606)),	-- Toy Train Set
+							un(FEAST_OF_WINTER_VEIL, i(151349)),	-- Toy Weapon Set [Alliance]
+							un(FEAST_OF_WINTER_VEIL, i(151348)),	-- Toy Weapon Set [Horde]
+							un(FEAST_OF_WINTER_VEIL, i(45057)),	-- Wind-Up Train Wrecker
+							un(FEAST_OF_WINTER_VEIL, i(116691)),	-- Zhevra Lounge Cushion
 							-- Illusions
-							un(29, i(118572)),	-- Illusion: Flames of Ragnaros
-							un(29, i(128649)),	-- Illusion: Winter's Grasp
+							un(FEAST_OF_WINTER_VEIL, i(118572)),	-- Illusion: Flames of Ragnaros
+							un(FEAST_OF_WINTER_VEIL, i(128649)),	-- Illusion: Winter's Grasp
 							-- Appearances
 							un(REMOVED_FROM_GAME, i(66540)),	-- Miniature Winter Veil Tree (Level 85)
 							un(REMOVED_FROM_GAME, i(93625)),	-- Miniature Winter Veil Tree (Level 90)
 							un(REMOVED_FROM_GAME, i(117371)),	-- Miniature Winter Veil Tree (Level 1-110)
-							un(29, i(143898)),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
+							un(FEAST_OF_WINTER_VEIL, i(143898)),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
 							-- Trinkets
-							un(29, i(151351)),	-- Glowing Gift
+							un(FEAST_OF_WINTER_VEIL, i(151351)),	-- Glowing Gift
 						},
 					}),
 				},
@@ -132,11 +132,11 @@ _.Holidays = bubbleDown({["u"] = 29},
 							i(17724),	-- Pattern: Green Holiday Shirt
 						},
 					}),
-					n(-297, {	-- Mailbox
+					n(MAILBOX, {
 						["description"] = "Greatfather Winter will mail this toy to you approximately 1 day after you complete this quest.",
 						["g"] = {
 							n(13444, {	-- Greatfather Winter
-								un(29, i(17712)),	-- Winter Veil Disguise Kit
+								un(FEAST_OF_WINTER_VEIL, i(17712)),	-- Winter Veil Disguise Kit
 							}),
 						},
 					}),
@@ -154,13 +154,20 @@ _.Holidays = bubbleDown({["u"] = 29},
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
+			q(8763, {	-- The Hero of the Day
+				["provider"] = { "n", 13433 },	-- Wulmort Jinglepocket
+				["coord"] = { 33.2, 67.8, IRONFORGE },
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["isYearly"] = true,
+			}),
 			q(8827,  {	-- Winter's Presents (Alliance)
 				["provider"] = { "n", 15732 },	-- Wonderform Operator <Smokywood Pastures>
 				["maps"] = {
 					125,	-- Dalaran (Northrend) (couldn't find it in Legion)
-					27,		-- Dun Morogh
-					71,		-- Gadgetzan
-					84,		-- Stormwind
+					DUN_MOROGH,
+					TANARIS,	-- Gadgetzan
+					STORMWIND_CITY,
 				},
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true, -- not sure, I was able to pick it up only after 25th
@@ -173,19 +180,19 @@ _.Holidays = bubbleDown({["u"] = 29},
 			}),
 			q(7021,  {	-- Great-father Winter is Here!
 				["provider"] = { "n", 13431 },	-- Whulwert Copperpinch
-				["maps"] = { 88 },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(7024,  {	-- Great-father Winter is Here!
 				["provider"] = { "n", 13429 },	-- Nardstrum Copperpinch
-				["maps"] = { 90 },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(39651, {	-- Grumpus
 				["provider"] = { "n", 96735 },	-- Pizzle
-				["maps"] = { 590 },	-- Frostwall
+				["maps"] = { FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["g"] = {
@@ -194,7 +201,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 			}),
 			q(39649, {	-- Menacing Grumplings
 				["provider"] = { "n", 96735 },	-- Pizzle
-				["maps"] = { 590 },	-- Frostwall
+				["maps"] = { FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["g"] = {
@@ -204,15 +211,22 @@ _.Holidays = bubbleDown({["u"] = 29},
 			q(8861,  {	-- New Year Celebrations! (H)
 				["description"] = "This quest is only available on December 31, and can be done once per character (not each year). Quest can be obtained from Wonderform Operator in any major city.",
 				["provider"] = { "n", 15732 },	-- Wonderform Operator
-				["coord"] = { 50.1, 61.8, 85 },	-- Orgrimmar (closest pick-up to turn-in)
+				["coord"] = { 50.1, 61.8, ORGRIMMAR },	-- closest pick-up to turn-in
 				["races"] = HORDE_ONLY,
-				["maps"] = { 88 },	-- Thunder Bluff
-				["u"] = 29,	-- Feast of Winter Veil
+				["maps"] = { THUNDER_BLUFF },
+				["u"] = FEAST_OF_WINTER_VEIL,
 			}),
 			q(7061,  {	-- The Feast of Winter Veil (Horde)
 				["provider"] = { "n", 13417 },	-- Sagorne Creststrider
 				["sourceQuest"] = 6964,	-- The Reason for the Season (Horde)
 				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
+			}),
+			q(8799, {	-- The Hero of the Day
+				["provider"] = { "n", 13418 },	-- Kaymard Copperpinch
+				["coord"] = { 52.4, 77.0, IRONFORGE },
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 			}),
 			q(6964,  {	-- The Reason for the Season (Horde)
@@ -235,7 +249,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					{ "n", 13418 },	-- Kaymard Copperpinch
 					{ "n", 13636 },	-- Strange Snowman
 				},
-				["maps"] = { 25 },	-- Hillsbrad Foothills
+				["maps"] = { HILLSBRAD_FOOTHILLS },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["g"] = {
@@ -247,53 +261,53 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["lvl"] = 101,
 						["g"] = {
 							-- Battle Pets/Companions
-							un(29, p(191)),	-- Clockwork Rocket Bot
-							un(29, i(73797, {	-- Lump of Coal
-								un(29, p(337)),		-- Lumpy
+							un(FEAST_OF_WINTER_VEIL, p(191)),	-- Clockwork Rocket Bot
+							un(FEAST_OF_WINTER_VEIL, i(73797, {	-- Lump of Coal
+								un(FEAST_OF_WINTER_VEIL, p(337)),		-- Lumpy
 							})),
-							un(29, i(104317, {	-- Rotten Helper Box
-								un(29, p(1349)),	-- Rotten Helper Box
+							un(FEAST_OF_WINTER_VEIL, i(104317, {	-- Rotten Helper Box
+								un(FEAST_OF_WINTER_VEIL, p(1349)),	-- Rotten Helper Box
 							})),
-							un(29, p(254)),	-- Blue Clockwork Rocket Bot
+							un(FEAST_OF_WINTER_VEIL, p(254)),	-- Blue Clockwork Rocket Bot
 							-- Toys
-							un(29, i(45057)),	-- Wind-Up Train Wrecker
-							un(29, i(54343)),	-- Blue Crashin' Thrashin' Racer Controller
-							un(29, i(90888)),	-- Foot Ball
-							un(29, i(104318)),	-- Crashin' Thrashin' Flyer Controller
-							un(29, i(46709)),	-- MiniZep Controller
-							un(29, i(37710)),	-- Crashin' Thrashin' Racer Controller
-							un(29, i(90883)),	-- The Pigskin
-							un(29, i(116692)),	-- Fuzzy Green Lounge Cushion
-							un(29, i(116691)),	-- Zhevra Lounge Cushion
-							un(29, i(116689)),	-- Pineapple Lounge Cushion
-							un(29, i(116690)),	-- Safari Lounge Cushion
-							un(29, i(116763)),	-- Crashin' Thrashin' Shredder Controller
-							un(29, i(108632, {	-- Crashin' Thrashin' Flamer Controller
+							un(FEAST_OF_WINTER_VEIL, i(45057)),	-- Wind-Up Train Wrecker
+							un(FEAST_OF_WINTER_VEIL, i(54343)),	-- Blue Crashin' Thrashin' Racer Controller
+							un(FEAST_OF_WINTER_VEIL, i(90888)),	-- Foot Ball
+							un(FEAST_OF_WINTER_VEIL, i(104318)),	-- Crashin' Thrashin' Flyer Controller
+							un(FEAST_OF_WINTER_VEIL, i(46709)),	-- MiniZep Controller
+							un(FEAST_OF_WINTER_VEIL, i(37710)),	-- Crashin' Thrashin' Racer Controller
+							un(FEAST_OF_WINTER_VEIL, i(90883)),	-- The Pigskin
+							un(FEAST_OF_WINTER_VEIL, i(116692)),	-- Fuzzy Green Lounge Cushion
+							un(FEAST_OF_WINTER_VEIL, i(116691)),	-- Zhevra Lounge Cushion
+							un(FEAST_OF_WINTER_VEIL, i(116689)),	-- Pineapple Lounge Cushion
+							un(FEAST_OF_WINTER_VEIL, i(116690)),	-- Safari Lounge Cushion
+							un(FEAST_OF_WINTER_VEIL, i(116763)),	-- Crashin' Thrashin' Shredder Controller
+							un(FEAST_OF_WINTER_VEIL, i(108632, {	-- Crashin' Thrashin' Flamer Controller
 								crit(1, {	-- Crashin' Thrashin' Flamer
 									["achievementID"] = 10353,	-- Iron Armada
 								}),
 							})),
-							un(29, i(116456)),	-- Scroll of Storytelling
-							un(29, i(54438)),	-- Tiny Blue Ragdoll
-							un(29, i(54437)),	-- Tiny Green Ragdoll
-							un(29, i(128776)),	-- Red Wooden Sled
-							un(29, i(44606)),	-- Toy Train Set
-							un(29, i(139337)),	-- Disposable Winter Veil Suits
+							un(FEAST_OF_WINTER_VEIL, i(116456)),	-- Scroll of Storytelling
+							un(FEAST_OF_WINTER_VEIL, i(54438)),	-- Tiny Blue Ragdoll
+							un(FEAST_OF_WINTER_VEIL, i(54437)),	-- Tiny Green Ragdoll
+							un(FEAST_OF_WINTER_VEIL, i(128776)),	-- Red Wooden Sled
+							un(FEAST_OF_WINTER_VEIL, i(44606)),	-- Toy Train Set
+							un(FEAST_OF_WINTER_VEIL, i(139337)),	-- Disposable Winter Veil Suits
 							-- Illusions
-							un(29, i(128649)),	-- Illusion: Winter's Grasp
-							un(29, i(118572)),	-- Illusion: Flames of Ragnaros
+							un(FEAST_OF_WINTER_VEIL, i(128649)),	-- Illusion: Winter's Grasp
+							un(FEAST_OF_WINTER_VEIL, i(118572)),	-- Illusion: Flames of Ragnaros
 							-- Appearances
 							un(REMOVED_FROM_GAME, i(66540)),	-- Miniature Winter Veil Tree (Level 85)
 							un(REMOVED_FROM_GAME, i(93625)),	-- Miniature Winter Veil Tree (Level 90)
 							un(REMOVED_FROM_GAME, i(117371)),	-- Miniature Winter Veil Tree (Level 1-110)
-							un(29, i(143898)),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
+							un(FEAST_OF_WINTER_VEIL, i(143898)),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
 						},
 					}),
 				},
 			}),
 			q(39668, {	-- What Horrible Presents
 				["provider"] = { "n", 96735 },	-- Pizzle
-				["maps"] = { 590 },	-- Frostwall
+				["maps"] = { FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["g"] = {
@@ -302,7 +316,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 			}),
 			q(39648, {	-- Where Are the Children?
 				["provider"] = { "n", 96735 },	-- Pizzle
-				["maps"] = { 590 },	-- Frostwall
+				["maps"] = { FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["g"] = {
@@ -313,9 +327,9 @@ _.Holidays = bubbleDown({["u"] = 29},
 				["provider"] = { "n", 15732 },	-- Wonderform Operator <Smokywood Pastures>
 				["maps"] = {
 					125,	-- Dalaran (Northrend) (couldn't find it in Legion)
-					27,		-- Dun Morogh
-					71,		-- Gadgetzan
-					84,		-- Stormwind
+					DUN_MOROGH,
+					TANARIS,	-- Gadgetzan
+					STORMWIND_CITY,
 				},
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true, -- not sure, I was able to pick it up only after 25th
@@ -339,33 +353,17 @@ _.Holidays = bubbleDown({["u"] = 29},
 							i(17724),	-- Pattern: Green Holiday Shirt
 						},
 					}),
-					n(-297, {	-- Mailbox
+					n(MAILBOX, {
 						["description"] = "Greatfather Winter will mail this toy to you approximately 1 day after you complete this quest.",
 						["g"] = {
 							n(13445, {	-- Greatfather Winter
-								un(29, i(17712)),	-- Winter Veil Disguise Kit
+								un(FEAST_OF_WINTER_VEIL, i(17712)),	-- Winter Veil Disguise Kit
 							}),
 						},
 					}),
 				},
 				["isYearly"] = true,
 			}),
-			--[[-- Legacy Winter Veil Quests
-			q(8799, {	-- The Hero of the Day
-				["provider"] = { "n", 13418 },	-- Kaymard Copperpinch
-				["coord"] = { 52.4, 77.0, 87 },
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-				["isYearly"] = true,
-				}),
-			q(8763, {	-- The Hero of the Day
-				["provider"] = { "n", 13433 },	-- Wulmort Jinglepocket
-				["coord"] = { 33.2, 67.8, 87 },
-				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-				["isYearly"] = true,
-			}),
-			]]--
 		}),
 	}),
 });

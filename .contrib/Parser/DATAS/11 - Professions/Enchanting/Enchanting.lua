@@ -13,12 +13,12 @@ profession(ENCHANTING, {
 			["provider"] = { "i", 115281 },	-- Enchanted Highmaul Bracer
 			["races"] = ALLIANCE_ONLY,
 			["maps"] = {
-				525,	-- Frostfire Ridge
-				543,	-- Gorgrond
-				550,	-- Nagrand
-				539,	-- Shadowmoon Valley
-				542,	-- Spires of Arak
-				535,	-- Talador
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
 			},
 			["lvl"] = 90,
 		}),
@@ -28,20 +28,20 @@ profession(ENCHANTING, {
 			["provider"] = { "i", 115008 },	-- Enchanted Highmaul Bracer
 			["races"] = HORDE_ONLY,
 			["maps"] = {
-				525,	-- Frostfire Ridge
-				543,	-- Gorgrond
-				550,	-- Nagrand
-				539,	-- Shadowmoon Valley
-				542,	-- Spires of Arak
-				535,	-- Talador
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
 			},
 			["lvl"] = 90,
 		}),
 	}),
 	gb(126, {	-- Enchanter's Study (Level 3)  --- Leaving here for now, but should really be moved to the garrison vendor files
-		["maps"] = {582, 590},	-- Both Garrisons
+		["maps"] = { LUNARFALL, FROSTWALL },	-- Both Garrisons
 		["g"] = {
-			n(77354, { 	-- Ayada the White [Alliance]
+			n(77354, {	-- Ayada the White [Alliance]
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(111922, {		-- Draenor Enchanting
@@ -128,7 +128,7 @@ profession(ENCHANTING, {
 					spell(175074),	-- Illusion: Windfury
 				},
 			}),
-			n(79821, { 	-- Yukla Greenshadow [Horde]
+			n(79821, {	-- Yukla Greenshadow [Horde]
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(111922, {		-- Draenor Enchanting

@@ -2,8 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(278, { 	-- Pit of Saron
+_.Instances = { tier(WOTLK_TIER, {
+	inst(278, {	-- Pit of Saron
 		["mapID"] = 184,
 		["coord"] = { 52.3, 89.3, 118 },
 		["maps"] = { 823 },
@@ -30,27 +30,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["provider"] = { "n", 38189 },	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["races"] = HORDE_ONLY,
 				}),
-				q(45331, {	-- Return to Acherus
-					["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
-					["coord"] = { 47.8, 19.2, 823 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuests"] = {
-						45398, -- Harnessing Power
-						45399, -- Severing the Sveldrek
-					},
-				}),
-				q(45398, {	-- Harnessing Power
-					["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
-					["coord"] = { 47.8, 19.2, 823 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 45240, -- Making Preparations
-				}),
-				q(45399, {	-- Severing the Sveldrek
-					["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
-					["coord"] = { 47.8, 19.2, 823 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 45240, -- Making Preparations
-				}),
 				q(24498, {	-- The Path to the Citadel
 					["sourceQuest"] = 24683,	-- The Pit of Saron
 					["provider"] = { "n", 36993 },	-- Lady Jaina Proudmoore
@@ -64,7 +43,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(1,   {	-- Normal
 				ach(4517),	-- The Pit of Saron
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(49852, {	-- Coffin Nail
 						["crs"] = {
 							37712,	-- Deathwhisper Shadowcaster
@@ -184,7 +163,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 80,
 				["g"] = {
 					ach(4520),	-- Heroic: The Pit of Saron
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						["g"] = {
 							i(50379),	-- Battered Hilt (Alliance)
 							i(50380),	-- Battered Hilt (Horde)

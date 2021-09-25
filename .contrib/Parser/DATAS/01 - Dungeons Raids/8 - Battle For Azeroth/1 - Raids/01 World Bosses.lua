@@ -2,10 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(8, {	-- Battle For Azeroth
+_.Instances = { tier(BFA_TIER, {
 	n(-7, {	-- World Bosses
-		["order"] = "01",
-		["ordered"] = true,
 		["isRaid"] = true,
 		["modID"] = 14,
 		["lvl"] = 120,
@@ -14,9 +12,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["isWeekly"] = true,
 				["questID"] = 52163,	-- The Matriarch (WQ)
 				["isRaid"] = true,
-				["coord"] = { 62.0, 24.0, 895 },	-- Tiragarde Sound
+				["coord"] = { 62.0, 24.0, TIRAGARDE_SOUND },
 				["maps"] = {	-- all Tiragarde Sound maps
-					895,	-- Tiragarde Sound
+					TIRAGARDE_SOUND,
 					1171,	-- Gol Thovas (lower)
 					1172,	-- Gol Thovas (upper)
 					1184,	-- Winterchill Mine (lower)
@@ -45,8 +43,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["questID"] = 52847,	-- Doom's Howl (WQ)
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["coord"] = { 37.8, 40.2, 14 },
-				["maps"] = { 14 },	-- Arathi Highlands
+				["coord"] = { 37.8, 40.2, ARATHI_HIGHLANDS },
+				["maps"] = { ARATHI_HIGHLANDS },
 				["cr"] = 138122,	-- Doom's Howl
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(163195),	-- Schematic: Makeshift Azerite Detector (confirmed drop by Crieve on stream 11.23.18)
@@ -66,11 +64,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2210, {	-- Dunegorger Kraulok
 				["isWeekly"] = true,
+				["isWorldQuest"] = true,
 				["questID"] = 52196,	-- Sandswept Bones (WQ)
 				["isRaid"] = true,
-				["coord"] = { 44.3, 55.5, 864 },
+				["coord"] = { 44.3, 55.5, VOLDUN },
+				["lvl"] = { 50 },
 				["maps"] = {	-- all Vol'dun maps
-					864,	-- Vol'dun
+					VOLDUN,
 					1009,	-- Atul'Aman: The Blood Font
 				},
 				["cr"] = 138794,	-- Dunegorger Kraulok
@@ -110,11 +110,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["questID"] = 52157,	-- A Chilling Encounter (WQ)
 				["isRaid"] = true,
 				["coords"] = {
-					{ 62.4, 69.1, 896 },	-- east road
-					{ 31.8, 66.9, 896 },	-- west road
-					{ 49.2, 74.6, 896 },	-- actual boss
+					{ 62.4, 69.1, DRUSTVAR },	-- east road
+					{ 31.8, 66.9, DRUSTVAR },	-- west road
+					{ 49.2, 74.6, DRUSTVAR },	-- actual boss
 				},
-				["maps"] = { 896 },	-- Drustvar
+				["maps"] = { DRUSTVAR },
 				["cr"] = 140252,	-- Hailstone Construct
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(2, {	-- Hailstone
@@ -135,11 +135,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2345, {	-- Ivus the Decayed [Alliance Only]
 				["isWeekly"] = true,
+				["isWorldQuest"] = true,
 				["questID"] = 54895,	-- Ivus the Decayed (WQ)
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["coord"] = { 41.47, 35.97, 62 },
-				["maps"] = { 62 },	-- Darkshore
+				["coord"] = { 41.47, 35.97, DARKSHORE },
+				["maps"] = { DARKSHORE },
+				["lvl"] = { 50 },
 				["cr"] = 148295,	-- Ivus the Decayed
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(166695),	-- Petrified Ironbark Crown
@@ -157,11 +159,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2329, {	-- Ivus the Forest Lord [Horde Only]
 				["isWeekly"] = true,
+				["isWorldQuest"] = true,
 				["questID"] = 54896,	-- Ivus the Forest Lord (WQ)
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
-				["coord"] = { 41.4, 35.9, 62 },
-				["maps"] = { 62 },	-- Darkshore
+				["coord"] = { 41.4, 35.9, DARKSHORE },
+				["maps"] = { DARKSHORE },
+				["lvl"] = { 50 },
 				["cr"] = 144946,	-- Ivus the Forest Lord
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(166696),	-- Petrified Ironbark Crown
@@ -179,11 +183,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2141, {	-- Ji'arak
 				["isWeekly"] = true,
+				["isWorldQuest"] = true,
 				["questID"] = 52169,	-- The Matriarch (WQ)
 				["isRaid"] = true,
-				["coord"] = { 69.0, 31.0, 862 },
+				["coord"] = { 69.0, 31.0, ZULDAZAR },
+				["lvl"] = { 50 },
 				["maps"] = {	-- all Zuldazar maps
-					862,	-- Zuldazar
+					ZULDAZAR,
 					1166,	-- Zanchul
 					1167,	-- Zanchul 2
 					1176,	-- Breath of Pa'ku, middle level
@@ -207,12 +213,14 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2139, {	-- T'zane <The Soul Terror>
 				["isWeekly"] = true,
+				["isWorldQuest"] = true,
 				["questID"] = 52181,	-- Smoke and Shadow (WQ)
 				["isRaid"] = true,
-				["coord"] = { 35.6, 33.6, 863 },
-				["maps"] = { 863 },	-- Nazmir
+				["coord"] = { 35.6, 33.6, NAZMIR },
+				["lvl"] = { 50 },
+				["maps"] = { NAZMIR },
 				["cr"] = 132701,	-- T'zane <Tehe Soul Terror>
-				["g"] =  bubbleDown({["modID"] = 3}, {
+				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(3, {	-- T'zane
 						["achievementID"] = 12587,	-- Unbound Monstrosities
 					}),
@@ -234,8 +242,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["questID"] = 52848,	-- The Lion's Roar (WQ)
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
-				["coord"] = { 35.5, 38.9, 14 },
-				["maps"] = { 14 },	-- Arathi Highlands
+				["coord"] = { 35.5, 38.9, ARATHI_HIGHLANDS },
+				["maps"] = { ARATHI_HIGHLANDS },
 				["cr"] = 137374,	-- The Lion's Roar
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(163829),	-- Toy War Machine
@@ -302,11 +310,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2198, {	-- Warbringer Yenajz
 				["isWeekly"] = true,
+				["isWorldQuest"] = true,
 				["questID"] = 52166,	-- The Faceless Herald (WQ)
 				["isRaid"] = true,
-				["coord"] = { 83.2, 49.6, 942 },
+				["coord"] = { 83.2, 49.6, STORMSONG_VALLEY },
+				["lvl"] = { 50 },
 				["maps"] = {	-- all Stormsong Valley maps
-					942,	-- Stormsong Valley
+					STORMSONG_VALLEY,
 					1179,	-- Abyssal Melody
 					1182,	-- Saltstone Mine
 					1183,	-- Thornheart

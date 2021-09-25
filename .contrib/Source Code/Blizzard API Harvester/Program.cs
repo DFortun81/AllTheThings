@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -1120,7 +1120,7 @@ namespace ATT
             //{
             //    dict["lvl"] = new List<object>() { minlvl, maxlvl };
             //}
-            //else 
+            //else
             if (minlvl > 0)
             {
                 dict["lvl"] = new List<object>() { minlvl };

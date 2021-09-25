@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(113, { 	-- Northrend
+	m(113, {	-- Northrend
 		m(116, {	-- Grizzly Hills
 			n(FLIGHT_PATHS, {
 				fp(253, {	-- Amberpine Lodge, Grizzly Hills

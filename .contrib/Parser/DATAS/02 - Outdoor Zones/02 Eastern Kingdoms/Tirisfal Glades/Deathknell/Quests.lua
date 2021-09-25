@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(18, {	-- Tirisfal Glades
+		m(TIRISFAL_GLADES, {
 			m(465, {	-- Deathknell
 				n(QUESTS, {
 					q(24971, {	-- Assault on the Rotbrain Encampment

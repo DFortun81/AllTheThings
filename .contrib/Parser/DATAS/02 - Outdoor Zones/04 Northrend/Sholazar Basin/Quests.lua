@@ -91,8 +91,8 @@ _.Zones =
 				}),
 				q(12797, {	-- Back Through the Waygate
 					["lvl"] = 66,
-					["maps"] = { 78 },	-- Un'goro Crater
-					["coord"] = { 47.4, 9.2, 78 },
+					["maps"] = { UNGORO_CRATER },
+					["coord"] = { 47.4, 9.2, UNGORO_CRATER },
 					["provider"] = { "n", 28092 },	-- The Etymidian
 					["sourceQuest"] = 12547,	-- The Activation Rune
 				}),
@@ -271,7 +271,10 @@ _.Zones =
 					["coord"] = { 27.0, 58.6, 119 },
 					["provider"] = { "n", 27986 },	-- Hemet Nesingwary
 					["isBreadcrumb"] = true,
-					["sourceQuest"] = 12543,	-- An Offering for Soo-rahm
+					["sourceQuests"] = {
+						12543,	-- An Offering for Soo-rahm
+						12560,	-- Crocolisk Mastery: The Plan
+					},
 				}),
 				q(12579, {	-- Lifeblood of the Mosswalker Shrine
 					["coord"] = { 74.1, 50.7, 119 },
@@ -463,8 +466,8 @@ _.Zones =
 				}),
 				q(12547, {	-- The Activation Rune
 					["lvl"] = 66,
-					["maps"] = { 78 },	-- Un'goro Crater
-					["coord"] = { 47.4, 9.2, 78 },
+					["maps"] = { UNGORO_CRATER },
+					["coord"] = { 47.4, 9.2, UNGORO_CRATER },
 					["provider"] = { "n", 28092 },	-- The Etymidian
 					["sourceQuest"] = 12548,	-- The Etymidian
 					["g"] = {

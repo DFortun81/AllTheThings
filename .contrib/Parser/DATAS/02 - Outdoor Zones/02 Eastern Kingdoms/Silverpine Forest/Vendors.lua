@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(21, {	-- Silverpine Forest
+		m(SILVERPINE_FOREST, {
 			n(VENDORS, {
 				n(3552, {	-- Alexandre Lefevre <Leather Armor Merchant>
-					["coord"] = { 44.6, 39.6, 21 },
+					["coord"] = { 44.6, 39.6, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4788, {	-- Agile Boots
@@ -20,7 +20,7 @@ _.Zones =
 					},
 				}),
 				n(3554, {	-- Andrea Boynton <Clothier>
-					["coord"] = { 44.6, 39.2, 21 },
+					["coord"] = { 44.6, 39.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(16059),	-- Common Brown Shirt
@@ -38,7 +38,7 @@ _.Zones =
 					},
 				}),
 				n(3556, {	-- Andrew Hilbert <Trade Supplies>
-					["coord"] = { 43.2, 40.6, 21 },
+					["coord"] = { 43.2, 40.6, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6272, {	-- Pattern: Blue Linen Robe
@@ -57,7 +57,7 @@ _.Zones =
 					},
 				}),
 				n(5748, {	-- Killian Sanatha <Fisherman>
-					["coord"] = { 59.4, 33.4, 21 },
+					["coord"] = { 59.4, 33.4, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6328),	-- Recipe: Longjaw Mud Snapper
@@ -65,7 +65,7 @@ _.Zones =
 					},
 				}),
 				n(5758, {	-- Leo Sarn <Enchanting Supplies>
-					["coord"] = { 53.8, 82.2, 21 },
+					["coord"] = { 53.8, 82.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect
@@ -78,7 +78,7 @@ _.Zones =
 					},
 				}),
 				n(5757, {	-- Lilly <Enchanting Supplies>
-					["coord"] = { 46.8, 40.6, 21 },
+					["coord"] = { 46.8, 40.6, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6346),	-- Formula: Enchant Chest - Lesser Mana
@@ -89,7 +89,7 @@ _.Zones =
 					},
 				}),
 				n(9553, {	-- Nadia Vernon <Bowyer>
-					["coord"] = { 44.8, 39.8, 21 },
+					["coord"] = { 44.8, 39.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11304, {	-- Fine Longbow
@@ -98,7 +98,7 @@ _.Zones =
 					},
 				}),
 				n(3534, {	-- Wallace the Blind <Weaponsmith>
-					["coord"] = { 33.0, 17.8, 21 },
+					["coord"] = { 33.0, 17.8, SILVERPINE_FOREST },
 					["g"] = {
 						i(4817, {	-- Blessed Claymore
 							["isLimited"] = true,

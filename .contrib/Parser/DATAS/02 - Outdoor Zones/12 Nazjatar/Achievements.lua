@@ -13,13 +13,14 @@ _.Zones =
 					crit(3),	-- Kill players in Nazjatar
 					crit(4),	-- Loot 5 War Supply Chests in Nazjatar
 				},
+				["pvp"] = true,
 			}),
 			ach(13715, {	-- From the Belly of the Jelly
-				["filterID"] = 101,	-- Battle Pet
+				["filterID"] = BATTLE_PETS,
 			}),
 			ach(13692),		-- Give Me the Biggest Bag You've Got
 			ach(13626, {	-- Nautical Nuisances of Nazjatar
-				["filterID"] = 101,	-- Battle Pet
+				["filterID"] = BATTLE_PETS,
 				["g"] = {
 					crit(2, {	-- Chomp
 						["crs"] = { 154911 },	-- Chomp
@@ -73,6 +74,7 @@ _.Zones =
 					}),
 				},
 			}),
+			pvp(ach(13569)),	-- Tour of Duty: Nazjatar
 			ach(13638, {	-- Undersea Usurper
 				i(169194),		-- Snapback Scuttler
 				title(405),		-- of the Deeps

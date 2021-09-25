@@ -2,9 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(756, { 	-- The Eye of Eternity
-		["order"] = "04",
+_.Instances = { tier(WOTLK_TIER, {
+	inst(756, {	-- The Eye of Eternity
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,

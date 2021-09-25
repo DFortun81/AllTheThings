@@ -2,21 +2,21 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(285, { 	-- Utgarde Keep
+_.Instances = { tier(WOTLK_TIER, {
+	inst(285, {	-- Utgarde Keep
 		["lvl"] = 57,
 		["mapID"] = 133,
 		["maps"] = { 134, 135 },
 		["groups"] = {
 			n(QUESTS, {
-				q(30112,{ 	-- A Score to Settle
+				q(30112,{	-- A Score to Settle
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 24137 },	-- Dark Ranger Marrah
 					["groups"] = {
-						i(39679), 	-- Runecaster's Bracers
+						i(39679),	-- Runecaster's Bracers
 						i(39680),	-- Vambraces of the Vengeance Bringer
-						i(39678), 	-- Vendetta Bindings
-						i(39676), 	-- Wraps of the San'layn
+						i(39678),	-- Vendetta Bindings
+						i(39676),	-- Wraps of the San'layn
 					},
 				}),
 				q(29764, {	-- Disarmament
@@ -39,14 +39,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(44403),	-- Amulet of Constrained Power
 					},
 				}),
-				q(29803,{ 	-- Ears of the Lich King
+				q(29803,{	-- Ears of the Lich King
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24111 },	-- Defender Mordun
 					["groups"] = {
-						i(39679), 	-- Runecaster's Bracers
+						i(39679),	-- Runecaster's Bracers
 						i(39680),	-- Vambraces of the Vengeance Bringer
-						i(39678), 	-- Vendetta Bindings
-						i(39676), 	-- Wraps of the San'layn
+						i(39678),	-- Vendetta Bindings
+						i(39676),	-- Wraps of the San'layn
 					},
 				}),
 				q(11262, {	-- Ingvar Must Die!
@@ -69,7 +69,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(1, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					{	-- Skein Woven Mantle
 						["itemID"] = 35580,	-- Skein Woven Mantle
 						["crs"]	= {
@@ -159,7 +159,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			d(2, {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						{	-- Dragon Prow Amulet
 							["itemID"] = 37290,	-- Dragon Prow Amulet
 							["crs"]	= {

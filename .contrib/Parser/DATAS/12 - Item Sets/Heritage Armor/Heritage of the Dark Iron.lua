@@ -1,13 +1,13 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-
+--[[
 _.GearSets =
 {
 	n(-254, {	-- Heritage Armor
 		gs(1679, {	-- Heritage of the Dark Iron
 			["races"] = { DARKIRON },
-			["g"] = {   
+			["g"] = {
 				q(51483, {    -- Heritage o' the Dark Iron
 					i(161008),	-- Dark Iron Helm
 					i(161009),	-- Dark Iron Pauldrons
@@ -22,3 +22,4 @@ _.GearSets =
 		}),
 	}),
 };
+--]]

@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
-		m(388, {	-- Townlong Steppes
-			filter(101, {	-- Pet Battle
+	m(PANDARIA, {
+		m(TOWNLONG_STEPPES, {
+			filter(BATTLE_PETS, {
 				p(724, {	-- Alpine Foxling
 					["cr"] = 63550,
 				}),
@@ -44,7 +44,7 @@ _.Zones =
 					["cr"] = 63957,
 				}),
 				q(31991, {	-- Grand Master Zusshi
-					["coord"] = { 36.3, 52.2, 388 },
+					["coord"] = { 36.3, 52.2, TOWNLONG_STEPPES },
 					["isDaily"] = true,
 					["provider"] = { "n", 66918 },	-- Seeker Zusshi
 					["g"] = {
@@ -52,7 +52,7 @@ _.Zones =
 					},
 				}),
 				q(32434, {	-- Burning Pandaren Spirit
-					["coord"] = { 57.2, 42.1, 388 },
+					["coord"] = { 57.2, 42.1, TOWNLONG_STEPPES },
 					["isDaily"] = true,
 					["provider"] = { "n", 68463 },
 					["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
@@ -61,7 +61,6 @@ _.Zones =
 							i(89139),	-- Chain Pet Leash
 							i(44820),	-- Red Ribbon Pet Leash
 							i(92798),	-- Pandaren Fire Spirit
-							i(37460),	-- Rope Pet Leash (37460) 
 						})
 					},
 				}),

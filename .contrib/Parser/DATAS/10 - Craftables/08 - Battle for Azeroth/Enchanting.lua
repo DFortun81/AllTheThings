@@ -4,12 +4,12 @@
 
 _.Craftables =
 {
-	tier(8, {	-- Battle For Azeroth
+	tier(BFA_TIER, {
 		prof(ENCHANTING, {
 			filter(114, {	-- Mount Equipment
 				i(168412),	-- Light-Step Hoofplates
 			}),
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				i(152878),	-- Enchanted Tiki Mask
 			}),
 			filter(27, {	-- Wands

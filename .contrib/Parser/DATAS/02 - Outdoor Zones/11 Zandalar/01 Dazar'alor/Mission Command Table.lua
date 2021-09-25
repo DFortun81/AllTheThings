@@ -4,14 +4,14 @@
 
 _.Zones =
 {
-	m(875, { 	-- Zandalar
-		m(1163, {	-- Dazar'alor
+	m(ZANDALAR, {
+		m(THE_GREAT_SEAL, {	-- Dazar'alor
 			n(138706, {	-- Mission Command Table
 				["modelScale"] = 3,
 				["crs"] = { 147244 },	-- Dazar'alor: The Great Seal Location
 				["coords"] = {
-					{ 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-					{ 58.42, 70.63, 1164 },	-- Dazar'alor: The Great Seal Location
+					{ 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location [Original]
+					{ 58.42, 70.63, HALL_OF_CHRONICLERS },
 				},
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -141,11 +141,7 @@ _.Zones =
 					mission(2078),	-- Azeroth Bleeds
 					mission(2087),	-- Explore the Roost
 					mission(1878, {	-- The Shadow War
-						["g"] = {
-							i(160983, {	-- Recruitment Orders
-								["questID"] = 51771,	-- War of Shadows	NOTE!! Finishing the quest rewards the unlock
-							}),
-						},
+						i(160983),	-- Recruitment Orders
 					}),
 					currency(1579, {	-- Champions of Azeroth
 						["repeatable"] = true,

@@ -8,9 +8,9 @@ _.WorldEvents =
 		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
 		["g"] = {
 			ach(7853, {	-- 9th Anniversary
-				["u"] = 36,	-- WoW Anniversary [Removed]
+				["u"] = REMOVED_FROM_GAME,
 			}),
-			n(-297, bubbleDown({ ["u"] = 36, }, {	-- Mailbox
+			n(MAILBOX, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {
 				i(90918),	-- Celebration Package
 			})),
 		},

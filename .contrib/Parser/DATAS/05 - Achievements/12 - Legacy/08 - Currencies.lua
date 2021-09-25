@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
+	n(-9968, {	-- Legacy
 		n(-10045, {	-- Currencies
 			un(REMOVED_FROM_GAME, ach(5539, {	-- 50,000 Conquest Points
 				un(REMOVED_FROM_GAME, ach(5540)),	-- 25,000 Conquest Points

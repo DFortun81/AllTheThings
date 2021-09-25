@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
-		m(534, {	-- Tanaan Jungle
-			filter(101, {	-- Battle Pets
+	m(DRAENOR, {
+		m(TANAAN_JUNGLE, {
+			filter(BATTLE_PETS, {
 				i(127751, {	-- Fel-Touched Pet Supplies
 					["crs"] = {
 						94645,	-- Bleakclaw (15.8, 44.6)

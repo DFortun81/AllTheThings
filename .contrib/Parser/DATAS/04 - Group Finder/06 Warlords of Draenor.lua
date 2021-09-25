@@ -4,7 +4,7 @@
 
 _.GroupFinder =
 {
-	tier(6, {	-- Warlords of Draenor
+	tier(WOD_TIER, {
 		i(120334, {	-- Satchel of Cosmic Mysteries
 			["u"] = REMOVED_FROM_GAME,
 			["sym"] = {

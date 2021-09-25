@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(4, {	-- Cataclysm
+	tier(CATA_TIER, {
 		f(200, {	-- Recipes
 			prof(ENCHANTING, {
 				i(68787),	-- Formula: Enchant Bracer - Agility

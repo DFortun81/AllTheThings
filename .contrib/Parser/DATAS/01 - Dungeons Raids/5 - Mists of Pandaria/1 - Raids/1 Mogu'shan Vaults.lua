@@ -2,19 +2,22 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(317, { 	-- Mogu'shan Vaults
-		["order"] = "01",
+_.Instances = { tier(MOP_TIER, {
+	inst(317, {	-- Mogu'shan Vaults
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 90,
 		["mapID"] = 471,
 		["maps"] = { 472, 473 },	-- 2nd LFR Wing
-		["coord"] = { 59.6, 39.1, 379 },	-- Kun-Lai Summit (Mogu'shan Terrace)
+		["coord"] = { 59.6, 39.1, KUN_LAI_SUMMIT },	-- Mogu'shan Terrace
 		["groups"] = {
+			n(COMMON_BOSS_DROPS, {
+				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
+				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
+			}),
 			d(7, {	-- LFR
-				["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from the Elegon chest is NOT tradeable to others in group.|r",
-				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
+				["description"] = "Speak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from the Elegon chest is NOT tradeable to others in group.",
+				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },	-- Seat of Knowledge
 				["ignoreBonus"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
@@ -89,18 +92,18 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						--[[
 						["crs"] = {
-							60047, 	-- Amethyst Guardian
-							60051, 	-- Cobalt Guardian
-							60043, 	-- Jade Guardian
-							59915, 	-- Jasper Guardian
-							60009, 	-- Feng the Accursed
-							60143, 	-- Gara'jal the Spiritbindre
-							60701, 	-- Zian of the Endless Shadow <Sorcer King>
-							60708, 	-- Meng the Demented <Mad King>
-							60709, 	-- Qiang the Merciless <Warlord King>
-							60710, 	-- Subetai the Swift <Bandit King>
-							60410, 	-- Elegon
-							60400, 	-- Jan-xi <Emperor's Open Hand>
+							60047,	-- Amethyst Guardian
+							60051,	-- Cobalt Guardian
+							60043,	-- Jade Guardian
+							59915,	-- Jasper Guardian
+							60009,	-- Feng the Accursed
+							60143,	-- Gara'jal the Spiritbindre
+							60701,	-- Zian of the Endless Shadow <Sorcer King>
+							60708,	-- Meng the Demented <Mad King>
+							60709,	-- Qiang the Merciless <Warlord King>
+							60710,	-- Subetai the Swift <Bandit King>
+							60410,	-- Elegon
+							60400,	-- Jan-xi <Emperor's Open Hand>
 							60399,	-- Qin-xi <Emperor's Closed Fist>
 						},
 						]]--
@@ -174,7 +177,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 					}),
 					ach(6844, {	-- The Vault of Mysteries
-						["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from the Elegon chest is NOT tradeable to others in group.|r",
+						["description"] = "Speak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from the Elegon chest is NOT tradeable to others in group.",
 						["crs"] = {
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
@@ -246,39 +249,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					n(ZONEDROPS, {
-						["crs"] = {
-							60047, 	-- Amethyst Guardian
-							60051, 	-- Cobalt Guardian
-							60043, 	-- Jade Guardian
-							59915, 	-- Jasper Guardian
-							60009, 	-- Feng the Accursed
-							60143, 	-- Gara'jal the Spiritbindre
-							60701, 	-- Zian of the Endless Shadow <Sorcer King>
-							60708, 	-- Meng the Demented <Mad King>
-							60709, 	-- Qiang the Merciless <Warlord King>
-							60710, 	-- Subetai the Swift <Bandit King>
-							60410, 	-- Elegon
-							60400, 	-- Jan-xi <Emperor's Open Hand>
-							60399,	-- Qin-xi <Emperor's Closed Fist>
-							60043,	-- Jade Guardian
-							61989,	-- Cursed Mogu Sculpture
-							61334,	-- Cursed Mogu Sculpture
-							64183,	-- Enormous Stone Quilen
-							61347,	-- Kingsguard
-							61345,	-- Mogu Archer
-							64063,	-- Mogu'shan Arcanist
-							64068,	-- Mogu'shan Engine Keeper
-							61131,	-- Mogu'shan Secret-Keeper
-							64061,	-- Mogu'shan Warden
-							64947,	-- Mogu'shan Warden
-							61341,	-- Mounted Mogu
-							61250,	-- Sorcerer Mogu
-							60402,	-- Zandalari Fire-Dancer
-							60381,	-- Zandalari Infiltrator
-							60375,	-- Zandalari Skullcharger
-							60386,	-- Zandalari Terror Rider
-						},
+					n(ZONE_DROPS, {
 						["groups"] = {
 							i(86238),	-- Pattern: Chestguard of Nemeses
 							i(86272),	-- Pattern: Fists of Lightning
@@ -298,14 +269,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(87413),	-- Plans: Gauntlets of Unbound Devotion
 							i(87410),	-- Plans: Ornate Battleplate of the Master
 							i(87408),	-- Plans: Unyielding Bloodplate
+							i(86043),	-- Jade Bandit Figurine
+							i(86042),	-- Jade Charioteer Figurine
+							i(86045),	-- Jade Courtesan Figurine
+							i(86044),	-- Jade Magistrate Figurine
+							i(86046),	-- Jade Warlord Figurine
 						},
-					}),
-					n(ZONEDROPS, {
-						i(86043),	-- Jade Bandit Figurine
-						i(86042),	-- Jade Charioteer Figurine
-						i(86045),	-- Jade Courtesan Figurine
-						i(86044),	-- Jade Magistrate Figurine
-						i(86046),	-- Jade Warlord Figurine
 					}),
 					e(679, {	-- The Stone Guard
 						["crs"] = {
@@ -492,39 +461,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["g"] = {
-					n(ZONEDROPS, {
-						["crs"] = {
-							60047, 	-- Amethyst Guardian
-							60051, 	-- Cobalt Guardian
-							60043, 	-- Jade Guardian
-							59915, 	-- Jasper Guardian
-							60009, 	-- Feng the Accursed
-							60143, 	-- Gara'jal the Spiritbindre
-							60701, 	-- Zian of the Endless Shadow <Sorcer King>
-							60708, 	-- Meng the Demented <Mad King>
-							60709, 	-- Qiang the Merciless <Warlord King>
-							60710, 	-- Subetai the Swift <Bandit King>
-							60410, 	-- Elegon
-							60400, 	-- Jan-xi <Emperor's Open Hand>
-							60399,	-- Qin-xi <Emperor's Closed Fist>
-							60043,	-- Jade Guardian
-							61989,	-- Cursed Mogu Sculpture
-							61334,	-- Cursed Mogu Sculpture
-							64183,	-- Enormous Stone Quilen
-							61347,	-- Kingsguard
-							61345,	-- Mogu Archer
-							64063,	-- Mogu'shan Arcanist
-							64068,	-- Mogu'shan Engine Keeper
-							61131,	-- Mogu'shan Secret-Keeper
-							64061,	-- Mogu'shan Warden
-							64947,	-- Mogu'shan Warden
-							61341,	-- Mounted Mogu
-							61250,	-- Sorcerer Mogu
-							60402,	-- Zandalari Fire-Dancer
-							60381,	-- Zandalari Infiltrator
-							60375,	-- Zandalari Skullcharger
-							60386,	-- Zandalari Terror Rider
-						},
+					n(ZONE_DROPS, {
 						["groups"] = {
 							i(86238),	-- Pattern: Chestguard of Nemeses
 							i(86272),	-- Pattern: Fists of Lightning
@@ -718,8 +655,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							{	-- Heroic: Will of the Emperor
 								["achievementID"] = 6724,	-- Heroic: Will of the Emperor
 								["g"] = {
-									{	-- ,Delver of the Vaults
-										["titleID"] =  204,	-- ,Delver of the Vaults
+									{	-- , Delver of the Vaults
+										["titleID"] = 204,	-- , Delver of the Vaults
 									},
 								},
 							},

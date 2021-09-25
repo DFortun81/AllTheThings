@@ -2,25 +2,25 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 
---[[ commenting out until secret is finished
+--[[ TODO: commenting out until secret is finished
 _.Secrets =
 {
-	n(-807, {	-- Hivemind
+	n(-807, {	-- The Hivemind
 		["description"] = "Below is a detailed explanation on how to obtain The Hivemind mount.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",
 		["modelScale"] = 1.1,
 		--["modelID"] = ,
 		["maps"] = {
-			47,
-			64,
+			DUSKWOOD,
+			THOUSAND_NEEDLES,
 			114,
 			118,
-			198,
+			MOUNT_HYJAL,
 			201,
 			204,
 			205,
-			388,
+			TOWNLONG_STEPPES,
 			594,
-			650,
+			HIGHMOUNTAIN,
 		},
 		["g"] = {
 			o(13000000, {	-- Step 1: Purchase Talisman of True Treasure Tracking
@@ -31,7 +31,7 @@ _.Secrets =
 				},
 			}),
 			o(13000001, {	-- Step 2: Equip Talisman
-				["description"] = "|cFFFFFFFFSTEP 2:|r |cff66ccffYou must wear the talisman to see/interact with many objects in this secret.",
+				["description"] = "|cFFFFFFFFSTEP 2:|r You must wear the talisman to see/interact with many objects in this secret.",
 			}),
 			o(13000032, {	-- Step 3: Pick a Monocle (Or Don't!)
 				["description"] = "|cFFFFFFFFSTEP 3:|r Hivemind requires a five-man group.  Four members must each collect a different monocle before the group can continue with the secret.",
@@ -50,28 +50,28 @@ _.Secrets =
 							o(280836, {	-- Letter 2: Prepfoot Compound, Highmountain
 								["model"] = 1661948,
 								["questID"] = 40314,
-								["coord"] = { 57.4, 27.9, 650 },	-- Prepfoot Compound, Highmountain
+								["coord"] = { 57.4, 27.9, HIGHMOUNTAIN },	-- Prepfoot Compound
 								["sourceQuest"] = 40397,	-- Letter 1: Shattrath City
 								["description"] = "|cFFFFFFFFLetter 2:|r Go to |cFFFFFFFF57.4, 27.9|r in |cFFFFD700Highmountain|r. The |cFFFFD700Letter from Ms. Graham|r is located in one of the tents on the box next to the pumpkin. Click it. The letter reads...\n\n|cFFFFFFFFOf all of Gai's cures for Nature, the most liberating is Death.|r\n",
 							}),
 							o(280837, {	-- Letter 3: Karazhan (Old)
 								["model"] = 1661948,
 								["questID"] = 40404,
-								["coord"] = { 47.4, 75.0, 47 },	-- Karazhan
-								["sourceQuest"] = 40314, 	-- Leter 2: Prepfoot Compound, Highmountain
+								["coord"] = { 47.4, 75.0, DUSKWOOD },	-- Karazhan
+								["sourceQuest"] = 40314,	-- Leter 2: Prepfoot Compound, Highmountain
 								["description"] = "|cFFFFFFFFLetter 3:|r Go to |cFFFFD700Karazhan (Old)|r in |cFFFFD700Duskwood|r. The third letter is located in |cFFFFD700Medivh's Chambers|r, located after the Chess Event, in the staircase leading to Prince Malchezaar. The letter is on the chair Medivh used to write his scrolls and spells, literally the seat of the guardian. Click it. The letter reads...\n\n|cFFFFFFFFI sat Dumbfounded, watching As the most Subtle Rat reached for the cheese a third time in under an hour.|r\n"
 							}),
 							o(280838, {	-- Letter 4: Razorfen Downs
 								["model"] = 1661948,
 								["questID"] = 40252,
-								["coord"] = { 45.7, 24.0, 64 },	-- Razorfen Downs
+								["coord"] = { 45.7, 24.0, THOUSAND_NEEDLES },	-- Razorfen Downs
 								["sourceQuest"] = 40404,	-- Letter 3: Karazhan (Old)
 								["description"] = "|cFFFFFFFFLetter 4:|r Go to |cFFFFD700Razorfen Downs|r in |cFFFFD700Thousand Needles|r. The next |cFFFFD700Letter from Ms. Graham|r is located on a hay box behind the second-to-last boss, |cFFFFD700Death Speaker Blackthorn|r. will spawn on the table.  Click it.  The note reads...\r\r|cFFFFFFFFMs. Sin will accompany you down The longest Streets Of the underworld.|r\n",
 							}),
 							o(280842, {	-- Letter 5: Shrine of Aviana, Mount Hyjal
 								["model"] = 1661948,
 								["questID"] = 40293,
-								["coord"] = { 44.3, 47.3, 198 },	-- Mount Hyjal
+								["coord"] = { 44.3, 47.3, MOUNT_HYJAL },
 								["sourceQuest"] = 40252,	-- Letter 4: Razorfen Downs
 								["description"] = "|cFFFFFFFFLetter 5:|r Go to |cFFFFFFFF44.3, 47.3|r in |cFFFFD700Mount Hyjal|r. The next |cFFFFD700Letter from Ms. Graham|r is on a table at the highest floor of the tree that serves as her shrine. Click it.  The note reads...\r\r|cFFFFFFFFThe Elite champions will rule the World with the mightiest F.C.|r\n",
 							}),
@@ -85,7 +85,7 @@ _.Secrets =
 							o(280844, {	-- Letter 7: Niuzao Temple, Townlong Steppes
 								["model"] = 1661948,
 								["questID"] = 50187,
-								["coord"] = { 66.0, 36.5, 388 },	-- Townlong Steppes
+								["coord"] = { 66.0, 36.5, TOWNLONG_STEPPES },
 								["sourceQuest"] = 40288,	-- Letter 6: Ironwall Dam, Icecrown
 								["description"] = "|cFFFFFFFFLetter 7:|r Go to |cFFFFFFFF37.7, 63.0|r in |cFFFFD700Townlong Steppes|r. The final |cFFFFD700Letter from Ms. Graham|r is located near a bell on the back part of the temple. Click it. The note reads...\r\r|cFFFFFFFFMice look so sad when they have a Cleft lip.\n\nHoping you succeed,\n~Ana|r\n",
 							}),
@@ -104,7 +104,7 @@ _.Secrets =
 						["icon"] = "Interface\\Icons\\inv_helmet_44",
 						["name"] = "Green Crystal Monocle",
 						["description"] = "Go to |cFFFFD700Skyreach|r in |cFFFFD700Spires of Arak|r. Behind the final boss of the instance, |cFFFFD700High Sage Viryx|r, you will find a console that you are able to interact with. Use the four glowing yellow balls to move the sun across the board (the north ball, for instance, makes the sun move up).\n\nThe directions and order in which you must move the sun are:\n\n|cFFFFFFFFRight -> Up -> Down -> Up -> Right -> Right -> Up -> Left -> Down -> Up -> Left -> Down|r\n\nLoot the chest that spawns to obtain the |cFFFFFFFFGreen Crystal Monocle|r\n",
-						["coord"] = { 35.3, 33.6, 542 },	-- Skyreach
+						["coord"] = { 35.3, 33.6, SPIRES_OF_ARAK },	-- Skyreach
 						["g"] = {
 							o(280883, {	-- Sun-Worn Chest
 								["questID"] = 50185,

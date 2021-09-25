@@ -384,7 +384,7 @@ _.Zones =
 						["provider"] = { "n", 42114 },	-- Alliance Sea-Scout
 						["races"] = HORDE_ONLY,
 					}),
-					q(26125, { 	-- Secure Seabrush (Pickup)
+					q(26125, {	-- Secure Seabrush (Pickup)
 						["provider"] = { "n", 41663 },	-- Captain "Jewels" Verne
 						["coord"] = { 51.4, 61.5, 204 },
 						["races"] = HORDE_ONLY,

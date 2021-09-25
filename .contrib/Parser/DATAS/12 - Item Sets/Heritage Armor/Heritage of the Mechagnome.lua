@@ -1,13 +1,13 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-
+--[[
 _.GearSets =
 {
 	n(-254, {	-- Heritage Armor
 		gs(1980, {	-- Heritage of the Mechagnome
 			["races"] = { MECHAGNOME },
-			["g"] = {   
+			["g"] = {
 				q(58436, {    -- Heritage of the Mechagnome
 					i(173961),	-- Mechagnome Heritage Helmet
 					i(173963),	-- Mechagnome Heritage Shouldergaurds
@@ -20,3 +20,4 @@ _.GearSets =
 		}),
 	}),
 };
+--]]

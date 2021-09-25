@@ -2,8 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(280, { 	-- The Forge of Souls
+_.Instances = { tier(WOTLK_TIER, {
+	inst(280, {	-- The Forge of Souls
 		["mapID"] = 183,
 		["coord"] = { 52.3, 89.3, 118 },
 		["lvl"] = 75,
@@ -32,7 +32,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(1,   {	-- Normal
 				ach(4516),	-- The Forge of Souls
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(49852, {	-- Coffin Nail
 						["crs"] = {
 							36522,	-- Soul Horror
@@ -125,7 +125,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 80,
 				["g"] = {
 					ach(4519),	-- Heroic: The Forge of Souls
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(50379),	-- Battered Hilt (Alliance)
 						i(50380),	-- Battered Hilt (Horde)
 						i(50318, {	-- Ghostly Wristwraps

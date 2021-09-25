@@ -2,10 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(7, {	-- Legion
-	inst(762, { 	-- Darkheart Thicket
+_.Instances = { tier(LEGION_TIER, {
+	inst(762, {	-- Darkheart Thicket
 		["mapID"] = 733,
-		["coord"] = { 59.0, 31.3, 641 },
+		["coord"] = { 59.0, 31.3, VALSHARAH },
 		["lvl"] = 98,
 		["g"] = {
 			n(WORLD_QUESTS, {

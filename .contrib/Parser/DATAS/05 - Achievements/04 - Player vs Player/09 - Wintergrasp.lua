@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9958, {	-- Player vs Player
+	pvp(n(-9958, {	-- Player vs Player
 		n(-9995, {	-- Wintergrasp
 			ach(1752, {	-- Master of Wintergrasp
 				ach(1722),	-- Archavon the Stone Watcher [10 Man]
@@ -55,5 +55,5 @@ _.Achievements =
 			ach(4585),		-- Toravon the Ice Watcher (10 player)
 			ach(4586),		-- Toravon the Ice Watcher (25 player)
 		}),
-	}),
+	})),
 };

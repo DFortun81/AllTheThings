@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		prof(LEATHERWORKING, {
 			filter(32, {	-- Bows
 				i(172350),	-- Composite Bow
@@ -112,6 +112,12 @@ _.Craftables =
 					i(172243),	-- Desolate Scale Treads
 				}),
 			}),
+			filter(102, {	-- Toys
+				i(186985),	-- Elusive Pet Treat
+				i(186702),	-- Pallid Bone Flute
+				i(186686),	-- Pallid Oracle Bones
+			}),
+			i(185960),		-- Vestige of Origins
 		}),
 	}),
 };

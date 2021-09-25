@@ -2,11 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(7, {	-- Legion
-	inst(727, { 	-- Maw of Souls
+_.Instances = { tier(LEGION_TIER, {
+	inst(727, {	-- Maw of Souls
 		["lvl"] = 110,
 		["maps"] = { 706, 707, 708 },
-		["coord"] = { 52.5, 45.3, 634 },	-- Maw of Souls, Stormheim
+		["coord"] = { 52.5, 45.3, STORMHEIM },
 		["groups"] = {
 			n(WORLD_QUESTS, {
 				q(42780, {	-- Maw of Souls: From Hell's Mouth
@@ -72,6 +72,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(134214),	-- Tideskorn Vest
 					i(133684),	-- Screams of the Unworthy
 					i(133683),	-- Seacrusted Mist
+					i(124025),	-- Ancient Vrykul Hammer
 				})),
 			}),
 			d(2, {		-- Heroic
@@ -132,6 +133,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(134214),	-- Tideskorn Vest
 					i(133684),	-- Screams of the Unworthy
 					i(133683),	-- Seacrusted Mist
+					i(124025),	-- Ancient Vrykul Hammer
 				})),
 			}),
 			d(23, {		-- Mythic
@@ -201,6 +203,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(134214),	-- Tideskorn Vest
 					i(133684),	-- Screams of the Unworthy
 					i(133683),	-- Seacrusted Mist
+					i(124025),	-- Ancient Vrykul Hammer
 				})),
 			}),
 		},

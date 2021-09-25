@@ -3,11 +3,10 @@
 -----------------------------------------------------
 
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
-_.Instances = { tier(7, {	-- Legion
-	inst(768, { 	-- The Emerald Nightmare
-		["order"] = "01",
+_.Instances = { tier(LEGION_TIER, {
+	inst(768, {	-- The Emerald Nightmare
 		["isRaid"] = true,
-		["coord"] = { 56.3, 36.9, 641 },
+		["coord"] = { 56.3, 36.9, VALSHARAH },
 		["maps"] = {
 			777,
 			778,
@@ -26,7 +25,7 @@ _.Instances = { tier(7, {	-- Legion
 		["lvl"] = 110,
 		["g"] = {
 			n(-68, {	-- The Emerald Dream
-				filter(101, { 	-- Pet Battle
+				filter(BATTLE_PETS, {
 					p(1722, {	-- Dream Whelpling
 						["description"] = "Once you defeat Xavius these will spawn in the room after him."
 					}),
@@ -66,7 +65,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						i(141696),	-- Pendant of Liquid Horror
@@ -76,7 +75,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(141695),	-- Tarnished Dreamkeeper's Gauntlets
 					},
 				}),
-				ach(10818, { 	-- Darkbough
+				ach(10818, {	-- Darkbough
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(102672, e(1703, {	-- Nythendra
@@ -97,6 +96,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(139252),	-- Preserved Worldseed
 							i(139249),	-- Shaladrassil's Blossom
 							i(139250),	-- Unwaking Slumber
+							i(136820),	-- Nythendra's Heart
 						})),
 						cr(106087, e(1744, {	-- Elerethe Renferal
 							ach(10818, crit(2)),	-- Darkbough / Elerethe Renferal
@@ -146,7 +146,7 @@ _.Instances = { tier(7, {	-- Legion
 						})),
 					},
 				}),
-				ach(10819, { 	-- Tormented Guardians
+				ach(10819, {	-- Tormented Guardians
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(100497, e(1667, {	-- Ursoc
@@ -231,7 +231,7 @@ _.Instances = { tier(7, {	-- Legion
 						})),
 					},
 				}),
-				ach(10820, { 	-- Rift of Aln
+				ach(10820, {	-- Rift of Aln
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(103769, e(1726, {	-- Xavius <Nightmare Lord>
@@ -307,7 +307,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(139706),	-- Corrupted Essence
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
 					i(140993),	-- Gloves of Murmured Promises
@@ -335,6 +335,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(139252),	-- Preserved Worldseed
 					i(139249),	-- Shaladrassil's Blossom
 					i(139250),	-- Unwaking Slumber
+					i(136820),	-- Nythendra's Heart
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10830),	-- Took the Red Eye Down
@@ -542,7 +543,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(139706),	-- Corrupted Essence
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
 					i(140993),	-- Gloves of Murmured Promises
@@ -570,6 +571,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(139252),	-- Preserved Worldseed
 					i(139249),	-- Shaladrassil's Blossom
 					i(139250),	-- Unwaking Slumber
+					i(136820),	-- Nythendra's Heart
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10830),	-- Took the Red Eye Down
@@ -780,7 +782,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(139706),	-- Corrupted Essence
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
 					i(140993),	-- Gloves of Murmured Promises
@@ -808,6 +810,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(139252),	-- Preserved Worldseed
 					i(139249),	-- Shaladrassil's Blossom
 					i(139250),	-- Unwaking Slumber
+					i(136820),	-- Nythendra's Heart
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10830),	-- Took the Red Eye Down
@@ -990,3 +993,11 @@ _.Instances = { tier(7, {	-- Legion
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		inst(768, {	-- The Emerald Nightmare
+			i(138229),	-- Nightmare Boss 3 Relic Storm
+			i(157766),	-- Vial of Nightmare Fog
+		}),
+	}),
+});

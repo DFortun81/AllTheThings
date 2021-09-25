@@ -4,15 +4,15 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
-		m(542, {	-- Spires of Arak
+	m(DRAENOR, {
+		m(SPIRES_OF_ARAK, {
 			n(ACHIEVEMENTS, {
 				ach(9069,  {	-- An Awfully Big Adventure
 					["collectible"] = false,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["g"] = {
 						crit(40, {	-- Vesharr
-							["coord"] = { 46.4, 45.2, 542 },
+							["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },
 							["cr"] = 87123,	-- Vesharr <Grand Master Pet Tamer>
 						}),
 					},
@@ -114,7 +114,7 @@ _.Zones =
 					["collectible"] = false,
 					["g"] = {
 						crit(1, {	-- Pirate Pepe
-							["coord"] = { 54.11, 83.61, 542 }	-- Pepe Location
+							["coord"] = { 54.11, 83.61, SPIRES_OF_ARAK }	-- Pepe Location
 						}),
 					},
 				}),

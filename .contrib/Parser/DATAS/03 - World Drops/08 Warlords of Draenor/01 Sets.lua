@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(6, {	-- Warlords of Draenor
+	tier(WOD_TIER, {
 		n(-1000, {	-- Sets
 			i(106390),	-- Bladespire Breastplate
 			i(106391),	-- Bladespire Gauntlets

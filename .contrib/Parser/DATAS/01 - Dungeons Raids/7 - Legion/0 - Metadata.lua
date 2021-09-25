@@ -3,10 +3,10 @@
 -----------------------------------------------------
 
 _.Instances =
-	{
-		tier(7,
-			{	-- Legion
-				["ordered"] = true,
-			}
-		)
-	}
+{
+	tier(LEGION_TIER, {
+		-- #if ANYCLASSIC
+		["u"] = LEGION_PHASE_ONE,
+		-- #endif
+	}),
+}

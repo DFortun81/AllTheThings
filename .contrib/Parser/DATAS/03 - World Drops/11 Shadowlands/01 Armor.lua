@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		n(-318, {	-- Armor [Epic -- No adjustments]
 			i(184790),	-- Archdruid Van-Yali's Greenthumbs
 			i(184791),	-- Azsharys' Lunar Veil

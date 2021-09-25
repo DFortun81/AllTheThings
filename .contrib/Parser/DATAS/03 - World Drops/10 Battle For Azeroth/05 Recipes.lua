@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(8, {	-- Battle for Azeroth
+	tier(BFA_TIER, {
 		f(200, {	-- Recipes
 			prof(BLACKSMITHING, {
 				i(166260),	-- Recipe: Monel-Hardened Hoofplates (Rank 3)

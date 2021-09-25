@@ -1,12 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if AFTER CATA
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(63, {	-- Ashenvale
-			n(ACHIEVEMENTS, {
+		m(ASHENVALE, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 4.0.3.10000", } },{
 				ach(4925, {	-- Ashenvale Quests
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -83,7 +83,8 @@ _.Zones =
 						}),
 					},
 				}),
-			}),
+			})),
 		}),
 	}),
 };
+-- #endif

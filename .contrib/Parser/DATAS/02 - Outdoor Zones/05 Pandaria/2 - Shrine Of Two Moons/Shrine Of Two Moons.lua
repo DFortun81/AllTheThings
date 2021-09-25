@@ -4,10 +4,9 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(391, {	-- Shrine of Two Moons
-			["order"] = "02",
-			["description"] = "|cff66ccffThe Shrine of Two Moons is an ancient mogu structure located north of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. The Golden Lotus have allowed use of the shrine by the Horde, and it serves as the main hub for the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.|r",
+			["lore"] = "The Shrine of Two Moons is an ancient mogu structure located north of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. The Golden Lotus have allowed use of the shrine by the Horde, and it serves as the main hub for the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.",
 			["isRaid"] = true,
 			["races"] = HORDE_ONLY,
 			["icon"] = "Interface\\Icons\\achievement_doublejeopardyhorde",
@@ -18,33 +17,66 @@ _.Zones =
 					ach(7285),	-- Every Day I'm Pand-a-ren
 				}),
 				n(QUESTS, {
---[[
+					--[[
 					q(31511, {	-- A Witness to History
 						["races"] = HORDE_ONLY,
 					}),
+					--]]
 					q(31528, {	-- A Worthy Challenge: Darkmaster Gandling
-						["u"] = REMOVED_FROM_GAME,
+						["isDaily"] = true,
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(98134),	-- Heroic Cache of Treasures
-						},
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(31526, {	-- A Worthy Challenge: Durand
-						["u"] = REMOVED_FROM_GAME,
+						["isDaily"] = true,
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(98134),	-- Heroic Cache of Treasures
-						},
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(31527, {	-- A Worthy Challenge: Flameweaver Koegler
-						["u"] = REMOVED_FROM_GAME,
+						["isDaily"] = true,
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(98134),	-- Heroic Cache of Treasures
-						},
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
 					}),
-					q(31279),	-- Everything I Know About Cooking
-					--]]
+					q(31524, {	-- A Worthy Challenge: Raigonn
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(31520, {	-- A Worthy Challenge: Sha of Doubt
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(31522, {	-- A Worthy Challenge: Sha of Hatred
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(31525, {	-- A Worthy Challenge: Wing Leader Ner'onok
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(31523, {	-- A Worthy Challenge: Xin the Weaponmaster
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(31519, {	-- A Worthy Challenge: Yan-zhu the Uncasked
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+				--	q(31279),	-- Everything I Know About Cooking
 					q(32901, {	-- Heroic Deeds
 						["coord"] = { 46.6, 56.5, 392 },
 						["races"] = HORDE_ONLY,
@@ -75,13 +107,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 --]]
-					q(31375, {	-- The Order of the Cloud Serpent
-					--	possibly removed, maybe gated behind completion of a specific quest/questline
-						["isBreadcrumb"] = true,
-						["coord"] = { 60.6, 21.8, 391 },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 64533 },	-- Wei Lakebreeze
-					}),
 					--[[
 					q(31388, {	-- The Shado-Pan Offensive
 						["races"] = HORDE_ONLY,
@@ -1945,3 +1970,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(31375),	-- The Order of the Cloud Serpent
+	}),
+});

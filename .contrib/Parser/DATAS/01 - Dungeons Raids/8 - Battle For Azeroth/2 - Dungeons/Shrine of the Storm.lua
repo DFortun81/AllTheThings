@@ -2,16 +2,16 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(8, {	-- Battle For Azeroth
+_.Instances = { tier(BFA_TIER, {
 	inst(1036, {	-- Shrine of the Storm
-		["coord"] = { 78.8, 26.5, 942 },
+		["coord"] = { 78.8, 26.5, STORMSONG_VALLEY },
 		["maps"] = {
 			1039,	-- Shrine of the Storm
 			1040,	-- Storm's End
 		},
 		["lvl"] = 110,
 		["g"] = {
-			n(-34,  {	-- World Quests
+			n(WORLD_QUESTS, {
 				q(51453, {	-- Shrine of the Storm: Behold, Pure Water
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
@@ -27,7 +27,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(1, {	-- Normal
 				e(2153, {	-- Aqu'sirr
-					["crs"]  = {
+					["crs"] = {
 						134056,	-- Aqu'sirr
 						134828,	-- Aqualing
 					},
@@ -41,7 +41,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2154, {	-- Tidesage Council
-					["crs"]  = {
+					["crs"] = {
 						134063,	-- Brother Ironhull
 						134058,	-- Galecaller Faye
 					},
@@ -56,7 +56,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2155, {	-- Lord Stormsong
-					["crs"]  = {
+					["crs"] = {
 						134060,	-- Lord Stormsong
 					},
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -69,7 +69,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2156, {	-- Vol'zith the Whisperer
-					["crs"]  = {
+					["crs"] = {
 						134069,	-- Vol'zith the Whisperer
 					},
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -91,7 +91,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["lvl"] = 120,
 				["g"] = {
 					e(2153, {	-- Aqu'sirr
-						["crs"]  = {
+						["crs"] = {
 							134056,	-- Aqu'sirr
 						},
 						["g"] = {
@@ -104,7 +104,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2154, {	-- Tidesage Council
-						["crs"]  = {
+						["crs"] = {
 							134063,	-- Brother Ironhull
 							134058,	-- Galecaller Faye
 						},
@@ -119,7 +119,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2155, {	-- Lord Stormsong
-						["crs"]  = {
+						["crs"] = {
 							134060,	-- Lord Stormsong
 						},
 						["g"] = {
@@ -132,7 +132,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2156, {	-- Vol'zith the Whisperer
-						["crs"]  = {
+						["crs"] = {
 							134069,	-- Vol'zith the Whisperer
 						},
 						["g"] = {
@@ -157,7 +157,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["g"] = {
 					ach(12600),	-- Breath of the Shrine
 					e(2153, {	-- Aqu'sirr
-						["crs"]  = {
+						["crs"] = {
 							134056,	-- Aqu'sirr
 						},
 						["g"] = {
@@ -197,7 +197,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2155, {	-- Lord Stormsong
-						["crs"]  = {
+						["crs"] = {
 							134060,	-- Lord Stormsong
 						},
 						["g"] = {
@@ -223,7 +223,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2156, {	-- Vol'zith the Whisperer
-						["crs"]  = {
+						["crs"] = {
 							134069,	-- Vol'zith the Whisperer
 						},
 						["g"] = {

@@ -3,10 +3,10 @@
 -----------------------------------------------------
 
 _.Instances =
-	{
-		tier(8,
-			{	-- Battle For Azeroth
-				["ordered"] = true,
-			}
-		)
-	}
+{
+	tier(BFA_TIER, {
+		-- #if ANYCLASSIC
+		["u"] = BFA_PHASE_ONE,
+		-- #endif
+	}),
+}

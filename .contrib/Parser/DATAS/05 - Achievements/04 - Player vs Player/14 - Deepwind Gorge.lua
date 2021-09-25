@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9958, {	-- Player vs Player
+	pvp(n(-9958, {	-- Player vs Player
 		n(-9994, {	-- Deepwind Gorge
 			["maps"] = {
 				519,	-- Deepwind Gorge (old)
@@ -30,5 +30,5 @@ _.Achievements =
 				}),
 			},
 		}),
-	}),
+	})),
 };

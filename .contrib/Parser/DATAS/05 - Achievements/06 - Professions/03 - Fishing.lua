@@ -101,7 +101,7 @@ _.Achievements =
 			ach(12990),		-- Catchin' Some Rays
 			ach(3217,  {	-- Chasing Marcia
 				crit(1),		-- The Ghostfish
-				crit(2), 		-- Jewel Of The Sewers
+				crit(2),		-- Jewel Of The Sewers
 				crit(3),		-- Dangerously Delicious
 				crit(4),		-- Blood Is Thicker
 				crit(5),		-- Disarmed!
@@ -391,7 +391,7 @@ _.Achievements =
 					crit(8, {	-- Drowned Goldfish
 						["itemID"] = 167709,	-- Drowned Goldfish
 						["description"] = "Found at around |cffffffff46, 50|r, at the Drowned Lands in Stormsong Valley.",
-						["coord"] = { 46.0, 50.0, 942 },
+						["coord"] = { 46.0, 50.0, STORMSONG_VALLEY },
 					}),
 					crit(9, {	-- Elusive Moonfish
 						["itemID"] = 167715,	-- Elusive Moonfish
@@ -444,7 +444,7 @@ _.Achievements =
 					crit(21, {	-- Tortollan Tank Dweller
 						["itemID"] = 167724,	-- Tortollan Tank Dweller
 						["description"] = "Found in Anyport, Drustvar, inside the Tortollan inn named 'The Drunk Tank.'",
-						["coord"] = { 19.6, 42.8, 896 },
+						["coord"] = { 19.6, 42.8, DRUSTVAR },
 					}),
 					crit(22, {	-- Travelling Goby
 						["itemID"] = 167714,	-- Travelling Goby
@@ -469,7 +469,7 @@ _.Achievements =
 					crit(27, {	-- Green Roughy
 						["itemID"] = 169884,	-- Green Roughy
 						["description"] = "Can be caught anywhere, but requires the |cffffffff[Painted Green]|r buff from Mechagon. Head over to the painting station at |cffffffff63, 42|r and get the buff.",
-						["coord"] = { 63.0, 42.0, 1462 },
+						["coord"] = { 63.0, 42.0, MECHAGON },
 					}),
 					crit(28, {	-- Displaced Scrapfin
 						["itemID"] = 169870,	-- Displaced Scrapfin

@@ -4,13 +4,13 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
-		n(-929, {	-- Covenant: Night Fae
+	tier(SL_TIER, {
+		n(-929, {	-- Night Fae
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 			["maps"] = {
-				1701,	-- Heart of the Forest (The Trunk)
-				1702,	-- Heart of the Forest (The Roots)
-				1703,	-- Heart of the Forest (The Canopy
+				THE_TRUNK,	-- Heart of the Forest
+				THE_ROOTS,	-- Heart of the Forest
+				THE_CANOPY,	-- Heart of the Forest
 			},
 			["g"] = {
 				n(-936, sharedData({["customCollect"] = { "SL_COV_NFA" }}, {	-- Soulshape Forms
@@ -18,28 +18,36 @@ _.ExpansionFeatures =
 					q(62422, {	-- Ardenmoth Soul
 						["provider"] = { "i", 182165 },	-- Ardenmoth Soul
 					}),
-					--q(xxxxx, {	-- Cobra Soul
-						--["provider"] = { "i", 182167 },	-- Cobra Soul
-					--}),
+					pvp(q(64651, {	-- Cobra Soul
+						["description"] = "Drops from rated PvP.",
+						["provider"] = { "i", 182167 },	-- Cobra Soul
+					})),
 					q(62424, {	-- Crane Soul
 						["provider"] = { "i", 182168 },	-- Crane Soul
+					}),
+					q(63607, {	-- Direhorn Soul
+						["provider"] = { "i", 185051 },	-- Direhorn Soul
 					}),
 					q(62428, {	-- Equine Soul
 						["provider"] = { "i", 182172 },	-- Equine Soul
 					}),
-					q(62426, {	-- Gryphon Soul
+					pvp(q(62426, {	-- Gryphon Soul
 						["description"] = "Drops from rated PvP.",
 						["provider"] = { "i", 182170 },	-- Gryphon Soul
-					}),
+					})),
 					q(62421, {	-- Gulper Soul
 						["provider"] = { "i", 181314 },	-- Gulper Soul
+					}),
+					q(63608, {	-- Hippo Soul
+						["provider"] = { "i", 185052 },	-- Hippo Soul
 					}),
 					q(62427, {	-- Hippogryph Soul
 						["provider"] = { "i", 182171 },	-- Hippogryph Soul
 					}),
-					--q(xxxxx, {	-- Hyena Soul
-						--["provider"] = { "i", 182173 },	-- Hyena Soul
-					--}),
+					q(64650, {	-- Hyena Soul
+						["description"] = "Drops from M+.",
+						["provider"] = { "i", 182173 },	-- Hyena Soul
+					}),
 					q(62429, {	-- Leonine Soul
 						["provider"] = { "i", 182174 },	-- Leonine Soul
 					}),
@@ -51,14 +59,18 @@ _.ExpansionFeatures =
 					}),
 					q(62432, {	-- Owlcat Soul
 						["provider"] = { "i", 182177 },	-- Owlcat Soul
+						["crs"] = { 175732 },	-- Sylvanas Windrunner
 					}),
 					q(62433, {	-- Raptor Soul
 						["provider"] = { "i", 182178 },	-- Raptor Soul
-						["crs"] = { 169769 },	-- 	Mueh'zala
+						["crs"] = { 169769 },	-- Mueh'zala
 					}),
 					q(62434, {	-- Runestag Soul
 						["provider"] = { "i", 182179 },	-- Runestag Soul
 						["crs"] = { 164547 },	-- Mystic Rainbowhorn
+					}),
+					q(63605, {	-- Saurolisk Soul
+						["provider"] = { "i", 185049 },	-- Saurolisk Soul
 					}),
 					q(62431, {	-- Shadowstalker Soul
 						["provider"] = { "i", 182176 },	-- Shadowstalker Soul
@@ -70,6 +82,9 @@ _.ExpansionFeatures =
 					}),
 					q(62420, {	-- Snapper Soul
 						["provider"] = { "i", 181313 },	-- Snapper Soul
+					}),
+					q(63606, {	-- Spider Soul
+						["provider"] = { "i", 185050 },	-- Spider Soul
 					}),
 					q(62435, {	-- Stag Soul
 						["provider"] = { "i", 182180 },	-- Stag Soul
@@ -87,9 +102,12 @@ _.ExpansionFeatures =
 						["provider"] = { "i", 182183 },	-- Wolfhawk Soul
 						["crs"] = { 164415 },	-- Skuld Vit
 					}),
-					q(62440, {	-- Wyvern Soul
+					pvp(q(62440, {	-- Wyvern Soul
 						["description"] = "Drops from random battlegrounds.",
 						["provider"] = { "i", 182184 },	-- Wyvern Soul
+					})),
+					q(63603, {	-- Yak Soul
+						["provider"] = { "i", 185047 },	-- Yak Soul
 					}),
 				})),
 			},

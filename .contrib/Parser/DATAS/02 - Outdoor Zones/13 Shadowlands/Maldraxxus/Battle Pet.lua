@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(MALDRAXXUS, {
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				p(3051, {	-- Animated Cruor
 					["crs"] = { 175023 },
 				}),

@@ -1,11 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-_.Zones = 
+_.Zones =
 {
 	m(KALIMDOR, {
-		m(198, {	-- Mount Hyjal
-			filter(101, {	-- Pet Battle
+		m(MOUNT_HYJAL, {
+			filter(BATTLE_PETS, {
 				p(487, {	-- Alpine Chipmunk
 					["crs"] = { 62189 },	-- Alpine Chipmunk
 				}),
@@ -48,7 +48,7 @@ _.Zones =
 				}),
 				q(31972, {	-- Brok
 					["provider"] = { "n", 66819 },	-- Brok
-					["coord"] = { 61.4, 32.7, 198 },
+					["coord"] = { 61.4, 32.7, MOUNT_HYJAL },
 					["isDaily"] = true,
 				}),
 			}),

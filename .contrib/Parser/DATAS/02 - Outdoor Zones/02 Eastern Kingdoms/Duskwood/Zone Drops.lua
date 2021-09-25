@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(47, {	-- Duskwood
-			n(ZONEDROPS, {
+		m(DUSKWOOD, {
+			n(ZONE_DROPS, {
 				i(2014, {	-- Black Metal Greatsword
 					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 1270 },	-- Fetid Corpse
@@ -41,7 +41,7 @@ _.Zones =
 				}),
 				i(2226, {	-- Ogremage Staff
 					["u"] = REMOVED_FROM_GAME,
-					["crs"] = { 
+					["crs"] = {
 						1251,	-- Splinter Fist Firemonger
 						891,	-- Splinter Fist Fire Weaver
 					},

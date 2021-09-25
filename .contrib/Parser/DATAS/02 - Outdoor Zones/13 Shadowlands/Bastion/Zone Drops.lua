@@ -6,9 +6,13 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(BASTION, {
-			n(ZONEDROPS, {
-				i(184397, {	-- Lost Featherling (PET)
-					["description"] = "This pet seems to only drop for Kyrian players, but can be used by non-Kyrians",
+			n(ZONE_DROPS, {
+				currency(1819, {	-- Medallion of Service
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					["description"] = "One of the best spots to farm those is in the northwest of Bastion around the World Boss. In the area there are 4 repeatable treasure chests, all of which contain 1 Medallion & can be looted without any daily CD. \n\nCan also drop from any Forsworn enemy.",
+				}),
+				i(184397, {	-- Lost Featherling (PET!)
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
 					["crs"] = {
 						156559,	-- Ardent Warrior
 						157212,	-- Assuming Scholar
@@ -16,9 +20,6 @@ _.Zones =
 						156560,	-- Misguided Postulant
 					},
 				}),
-				i(178879),	-- Greater Dutiful Spirit (Epic)
-				i(178880),	-- Divine Dutiful Spirit (Rare)
-				i(178881),	-- Dutiful Spirit Bastion (Uncommon)
 				i(180533),	-- Solenium Lockbox
 				i(176788),	-- Darkfeather Belt
 				i(176792),	-- Darkfeather Bindings
@@ -44,6 +45,7 @@ _.Zones =
 				i(176803),	-- Harmonious Mallet
 				i(176793),	-- Honorguide Crossbow
 				i(176798),	-- Larion Claw
+				i(187427),	-- Lost Meditation Bell
 				i(176802),	-- Meditator's Blade
 				i(176800),	-- Modest Greatblade
 				i(176987),	-- Ossein Scale Belt

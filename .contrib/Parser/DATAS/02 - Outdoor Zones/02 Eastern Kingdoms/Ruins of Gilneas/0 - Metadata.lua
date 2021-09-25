@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(217, {	-- Ruins of Gilneas
+		m(RUINS_OF_GILNEAS, {
 		}),
 	}),
 };

@@ -4,9 +4,12 @@
 
 _.WorldDrops =
 {
-	tier(1, {	-- Classic
+	tier(CLASSIC_TIER, {
 		f(200, {	-- Recipes
 			prof(ALCHEMY, {
+				-- #if AFTER 8.0.1.10000
+				i(6454),	-- Manual: Strong Anti-Venom
+				-- #endif
 				i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility
 				i(9297),	-- Recipe: Elixir of Dream Vision
 				i(3830),	-- Recipe: Elixir of Fortitude
@@ -16,9 +19,9 @@ _.WorldDrops =
 				i(6211),	-- Recipe: Elixir of Ogre's Strength
 				un(REMOVED_FROM_GAME, i(13491)),	-- Recipe: Elixir of the Mongoose [May no longer drop?]
 				un(REMOVED_FROM_GAME, i(13493)),	-- Recipe: Greater Arcane Elixir
-				i(9296), 	-- Recipe: Gift of Arthas
+				i(9296),	-- Recipe: Gift of Arthas
 				i(13490),	-- Recipe: Greater Stoneshield Potion
-				i(9295), 	-- Recipe: Invisibility Potion
+				i(9295),	-- Recipe: Invisibility Potion
 				i(3395),	-- Recipe: Limited Invulnerability Potion
 				i(3831),	-- Recipe: Major Troll's Blood Elixir
 				i(3394),	-- Recipe: Potion of Curing
@@ -142,6 +145,11 @@ _.WorldDrops =
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
 				}),
 			}),
+			-- #if BEFORE 8.0.1.10000
+			prof(FIRST_AID, {
+				i(6454),	-- Manual: Strong Anti-Venom
+			}),
+			-- #endif
 			prof(JEWELCRAFTING, {
 				i(20976),	-- Design: Citrine Pendant of Golden Healing
 				i(21953),	-- Design: Emerald Owl
@@ -193,8 +201,16 @@ _.WorldDrops =
 			}),
 			prof(TAILORING, {
 				i(7085),	-- Pattern: Azure Shoulders
-				i(5775),	-- Pattern: Black Silk Pack
 				i(4352),	-- Pattern: Boots of the Enchanter
+				i(14484, {	-- Pettern: Brightcloth Cloak
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+				}),
+				i(14479, {	-- Pettern: Brightcloth Gloves
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+				}),
+				i(14478, {	-- Pettern: Brightcloth Robe
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+				}),
 				i(14510),	-- Pattern: Bottomless Bag
 				i(14494),	-- Pattern: Brightcloth Pants
 				i(10316),	-- Pattern: Colorful Kilt
@@ -246,6 +262,15 @@ _.WorldDrops =
 				i(4345),	-- Pattern: Red Woolen Boots
 				i(4347),	-- Pattern: Reinforced Woolen Shoulders
 				i(4354),	-- Pattern: Rich Purple Silk Shirt
+				i(14498, {	-- Pattern: Runecloth Headband
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+				}),
+				i(14491, {	-- Pattern: Runecloth Pants
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+				}),
+				i(14504, {	-- Pattern: Runecloth Shoulders
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
+				}),
 				i(14470, {	-- Pattern: Runecloth Tunic
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
 				}),

@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(89, {	-- Darnassus
-			n(-38, {	-- Professions
+		m(DARNASSUS, {
+			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(QUESTS, {
 						q(29481, {	-- Elixir Master
-							["provider"] = { "n", 4160 },	-- Ainethil (Darnassus)
-							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
+							["provider"] = { "n", 4160 },	-- Ainethil
+							["coord"] = { 54.0, 38.6, DARNASSUS },
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -25,8 +25,8 @@ _.Zones =
 							},]]
 						}),
 						q(29067, {	-- Potion Master
-							["provider"] = { "n", 4160 },	-- Ainethil (Darnassus)
-							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
+							["provider"] = { "n", 4160 },	-- Ainethil
+							["coord"] = { 54.0, 38.6, DARNASSUS },
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -40,8 +40,8 @@ _.Zones =
 							},]]
 						}),
 						q(29482, {	-- Transmutation Master
-							["provider"] = { "n", 4160 },	-- Ainethil (Darnassus)
-							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
+							["provider"] = { "n", 4160 },	-- Ainethil
+							["coord"] = { 54.0, 38.6, DARNASSUS },
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -65,7 +65,7 @@ _.Zones =
 					n(QUESTS, {
 						q(29316, {	-- Back to Basics
 							["provider"] = { "n", 4210 },	-- Alegorn
-							["coord"] = { 50.0, 36.6, 89 },
+							["coord"] = { 50.0, 36.6, DARNASSUS },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -79,7 +79,7 @@ _.Zones =
 						}),
 						q(29314, {	-- Remembering the Ancestors
 							["provider"] = { "n", 4210 },	-- Alegorn
-							["coord"] = { 50.0, 36.6, 89 },
+							["coord"] = { 50.0, 36.6, DARNASSUS },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -93,7 +93,7 @@ _.Zones =
 						}),
 						q(29318, {	-- Ribs for the Sentinels
 							["provider"] = { "n", 4210 },	-- Alegorn
-							["coord"] = { 50.0, 36.6, 89 },
+							["coord"] = { 50.0, 36.6, DARNASSUS },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -107,7 +107,7 @@ _.Zones =
 						}),
 						q(29357, {	-- Spice Bread Aplenty
 							["provider"] = { "n", 4210 },	-- Alegorn
-							["coord"] = { 50.0, 36.6, 89 },
+							["coord"] = { 50.0, 36.6, DARNASSUS },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -121,7 +121,7 @@ _.Zones =
 						}),
 						q(29313, {	-- The Secret to Perfect Kimchi
 							["provider"] = { "n", 4210 },	-- Alegorn
-							["coord"] = { 50.0, 36.6, 89 },
+							["coord"] = { 50.0, 36.6, DARNASSUS },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -142,88 +142,91 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
-						i(67414, {	-- Bag of Shiny Things
-							["description"] = "|cff66ccffFishing Daily Quest Reward|r",
-							["crs"] = { 4156 },	-- Astaia
-							["g"] = {
-								i(44983),	-- Strand Crawler
-								i(33820),	-- Weather-Beaten Fishing Hat
-								i(45991),	-- Bone Fishing Pole
-								i(45992),	-- Jeweled Fishing Pole
-							},
-						}),
-						q(29325, {	-- A Slippery Snack
-							["provider"] = { "n", 4156 },	-- Astaia
-							["coord"] = { 49.0, 61.0, 89 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 10,
-							["g"] = {
-								crit(4, {	-- A Slippery Snack
-									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
-								}),
-							},
-						}),
-						q(29359, {	-- An Old Favorite
-							["provider"] = { "n", 4156 },	-- Astaia
-							["coord"] = { 49.0, 61.0, 89 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 10,
-							["g"] = {
-								crit(5, {	-- An Old Favorite
-									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
-								}),
-							},
-						}),
-						q(29321, {	-- Happy as a Clam Digger
-							["provider"] = { "n", 4156 },	-- Astaia
-							["coord"] = { 49.0, 61.0, 89 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 10,
-							["g"] = {
-								crit(1, {	-- Happy as a Clam Digger
-									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
-								}),
-							},
-						}),
-						q(29323, {	-- Stocking Up
-							["provider"] = { "n", 4156 },	-- Astaia
-							["coord"] = { 49.0, 61.0, 89 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 10,
-							["g"] = {
-								crit(2, {	-- Stocking Up
-									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
-								}),
-							},
-						}),
-						q(29324, {	-- The Sister's Pendant
-							["provider"] = { "n", 4156 },	-- Astaia
-							["coord"] = { 49.0, 61.0, 89 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 10,
-							["g"] = {
-								crit(3, {	-- The Sister's Pendant
-									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
-								}),
-							},
-						}),
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(67414, {	-- Bag of Shiny Things
+								["description"] = "Fishing Daily Quest Reward",
+								["crs"] = { 4156 },	-- Astaia
+								["g"] = {
+									i(44983),	-- Strand Crawler
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								},
+							}),
+							q(29325, {	-- A Slippery Snack
+								["provider"] = { "n", 4156 },	-- Astaia
+								["coord"] = { 49.0, 61.0, DARNASSUS },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 10,
+								["g"] = {
+									crit(4, {	-- A Slippery Snack
+										["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
+									}),
+								},
+							}),
+							q(29359, {	-- An Old Favorite
+								["provider"] = { "n", 4156 },	-- Astaia
+								["coord"] = { 49.0, 61.0, DARNASSUS },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 10,
+								["g"] = {
+									crit(5, {	-- An Old Favorite
+										["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
+									}),
+								},
+							}),
+							q(29321, {	-- Happy as a Clam Digger
+								["provider"] = { "n", 4156 },	-- Astaia
+								["coord"] = { 49.0, 61.0, DARNASSUS },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 10,
+								["g"] = {
+									crit(1, {	-- Happy as a Clam Digger
+										["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
+									}),
+								},
+							}),
+							q(29323, {	-- Stocking Up
+								["provider"] = { "n", 4156 },	-- Astaia
+								["coord"] = { 49.0, 61.0, DARNASSUS },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 10,
+								["g"] = {
+									crit(2, {	-- Stocking Up
+										["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
+									}),
+								},
+							}),
+							q(29324, {	-- The Sister's Pendant
+								["provider"] = { "n", 4156 },	-- Astaia
+								["coord"] = { 49.0, 61.0, DARNASSUS },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 10,
+								["g"] = {
+									crit(3, {	-- The Sister's Pendant
+										["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
+									}),
+								},
+							}),
+						},
 					}),
 				}),
 				prof(LEATHERWORKING, {
 					n(QUESTS, {
 						q(1582, {	-- Moonglow Vest
 							["provider"] = { "n", 6034 },	-- Lotherias
-							["coord"] = { 60.4, 37.0, 89 },
+							["coord"] = { 60.4, 37.0, DARNASSUS },
 							["requireSkill"] = LEATHERWORKING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 8,

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(116, {	-- Grizzly Hills
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(41123, {	-- Plans: Reinforced Cobalt Helm
 					["crs"] = { 26270 },	-- Iron Rune-Shaper
 				}),

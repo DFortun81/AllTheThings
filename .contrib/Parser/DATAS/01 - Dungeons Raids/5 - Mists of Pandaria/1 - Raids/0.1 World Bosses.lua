@@ -2,10 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(5, {	-- Mists of Pandaria
+_.Instances = { tier(MOP_TIER, {
 	n(-7, {	-- World Bosses
-		["order"] = "00",
-		["ordered"] = true,
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["g"] = {
@@ -13,9 +11,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["isWeekly"] = true,
 				["questID"] = 32518,
 				["isRaid"] = true,
-				["coord"] = { 60.0, 37.7, 504 },
+				["coord"] = { 60.0, 37.7, ISLE_OF_THUNDER },
 				["maps"] = {	-- all Isle of Thunder maps
-					504,	-- Isle of Thunder
+					ISLE_OF_THUNDER,
 					505,	-- Lightning Vein Mine
 					506,	-- The Swollen Vault
 					516,	-- Scenario [Phase 1]
@@ -333,12 +331,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(94417),	-- Tyrannical Gladiator's Signet of Cruelty
 				},
 			}),
-			e(826, { 	-- Oondasta
+			e(826, {	-- Oondasta
 				["isWeekly"] = true,
 				["questID"] = 32519,
 				["isRaid"] = true,
-				["coord"] = { 49.9, 56.8, 507 },
-				["maps"] = { 507 },	-- Isle of Giants
+				["coord"] = { 49.9, 56.8, ISLE_OF_GIANTS },
+				["maps"] = { ISLE_OF_GIANTS },
 				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
 				["cr"] = 69161,	-- Oondasta
 				["g"] = {
@@ -413,14 +411,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(95163),	-- Ring of Shamuru
 				},
 			}),
-			e(861, { 	-- Ordos, Fire-God of the Yaungol
+			e(861, {	-- Ordos, Fire-God of the Yaungol
 				["sourceQuests"] = { 33104 },	-- A Pandaren Legend
 				["isWeekly"] = true,
 				["questID"] = 33118,
 				["isRaid"] = true,
-				["coord"] = { 54.9, 17.3, 554 },
+				["coord"] = { 54.9, 17.3, TIMELESS_ISLE },
 				["maps"] = {	-- all Timeless Isle maps
-					554,	-- Timeless Isle
+					TIMELESS_ISLE,
 					555,	-- Cavern of Lost Spirits
 				},
 				["lvl"] = 80,	-- Confirmed by Lucetia November 5, 2018
@@ -433,7 +431,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["g"] = {
 						--	NOTE FOR CONTRIBS: Only add items you receive to this. The old listings on WoWHead may be inaccurate or out of date.
 						--	it's likely that the commented items drop also.  if they get confirmed, uncomment them and adjust the unobtainable filter here + in Siege of Orgrimmar
-						--	un(REMOVED_FROM_GAME, i(105838)),	-- Aeth's Swiftcinder Cloak Normal
+							un(38, i(105838)),	-- Aeth's Swiftcinder Cloak Normal
 							un(38, i(105830)),	-- Brave Niunai's Cloak Normal (confirmed to drop from Ordos cache on July 23, 2020)
 							un(38, i(105826)),	-- Cape of the Alpha Normal (confirmed to drop from Ordos cache on July 23, 2020)
 							un(38, i(105832)),	-- Crimson Gauntlets of Death Normal (confirmed to drop from Ordos cache on July 23, 2020)
@@ -516,13 +514,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(38, i(105757)),	-- Shipley's Shady Silks
 				},
 			}),
-			e(725, { 	-- Saylis's Warband [Galleon]
+			e(725, {	-- Saylis's Warband [Galleon]
 				["isWeekly"] = true,
 				["questID"] = 32098,
 				["isRaid"] = true,
-				["coord"] = { 70.79, 63.51, 376 },
+				["coord"] = { 70.79, 63.51, VALLEY_OF_THE_FOUR_WINDS },
 				["maps"] = {	-- all Valley of the Four Winds maps
-					376,	-- Valley of the Four Winds
+					VALLEY_OF_THE_FOUR_WINDS,
 					377,	-- Cavern of Endless Echoes
 				},
 				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
@@ -642,13 +640,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(90434),	-- Steaming Seal of Flame
 				},
 			}),
-			e(691, { 	-- Sha of Anger
+			e(691, {	-- Sha of Anger
 				["isWeekly"] = true,
 				["questID"] = 32099,
 				["isRaid"] = true,
-				["coord"] = { 53.53, 65.26, 379 },
+				["coord"] = { 53.53, 65.26, KUN_LAI_SUMMIT },
 				["maps"] = {	-- all Kun-Lai Summit maps
-					379,	-- Kun-Lai Summit
+					KUN_LAI_SUMMIT,
 					380,	-- Howlingwind Cavern
 					381,	-- Pranksters' Hollow
 					382,	-- Knucklethump Hole
@@ -878,11 +876,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["isWeekly"] = true,
 				["questID"] = 33117,
 				["maps"] = {	-- all Timeless Isle maps
-					554,	-- Timeless Isle
+					TIMELESS_ISLE,
 					555,	-- Cavern of Lost Spirits
 				},
 				["isRaid"] = true,
-				["coord"] = { 38.87, 55.29, 554 },
+				["coord"] = { 38.87, 55.29, TIMELESS_ISLE },
 				["lvl"] = 80,	-- Confirmed by Lucetia November 5, 2018
 				["crs"] = {
 					71952,	-- Chi-Ji, The Red Crane

@@ -4,10 +4,10 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
-		n(-920, {	-- Covenant: Necrolord
+	tier(SL_TIER, {
+		n(-920, {	-- Necrolord
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
-			["maps"] = { 1698 },	-- Seat of the Primus
+			["maps"] = { SEAT_OF_THE_PRIMUS },
 			["g"] = {
 				n(-921, {	-- Sanctum Upgrades
 					n(-923, {	-- Abomination Factory
@@ -99,6 +99,12 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 161270 },    -- Chordy
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182489),	-- Stitched Harbinger's Greatcloak
+										i(182498),	-- Stitched Wraith's Cloak
+										i(182507),	-- Stitched Conjurer's Cape
+										i(182516),	-- Stitched Tactician's Drape
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62213, {    -- A Brokered Deal
@@ -114,7 +120,8 @@ _.ExpansionFeatures =
 									["coord"] = { 24.2, 38.6, MALDRAXXUS },
 								}),
 								q(59747, {    -- A Lost Soul
-									["provider"] = { "n", 166096 },    -- Miru Soulblossom
+									["provider"] = { "n", 166096 },	-- Miru Soulblossom
+									["coord"] = { 32.9, 33.3, 1649 },	-- Etheric Vault
 								}),
 								q(58727, {	-- A Place To Call Home
 									["sourceQuests"] = { 58671 },	-- Bottled Up Inside
@@ -124,14 +131,23 @@ _.ExpansionFeatures =
 								q(63058, {	-- Abominable Stitching and Me
 									-- TODO: is this a breadcrumb to 60041?
 									["provider"] = { "n", 161909 },	-- Arkadia Moa
-									["coord"] = { 52.4, 38.4, 1698 },
+									["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
 									["description"] = "Becomes available after you research Abomination Factory Tier 1 in your sanctum.",
 								}),
 								q(62232, {	-- Arboreal Tactics
 									["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 									["provider"] = { "n", 158301 },    -- Marz
 									["coord"] = { 54.2, 68.6, MALDRAXXUS },
+									["crs"] = {
+										167162,	-- Marz (Ghost)
+									},
 									["isWeekly"] = true,
+									["g"] = {
+										i(182482),	-- Stitched Harbinger's Chestguard
+										i(182500),	-- Stitched Conjurer's Tunic
+										i(182491),	-- Stitched Wraith's Jerkin
+										i(182509),	-- Stitched Tactician's Hauberk
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62256, {    -- Asset Extraction
@@ -169,6 +185,12 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 158300 },    -- Flytrap
 									["coord"] = { 54.3, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182501),	-- Stitched Conjurer's Slippers
+										i(182483),	-- Stitched Harbinger's Stompers
+										i(182510),	-- Stitched Tactician's Sabatons
+										i(182492),	-- Stitched Wraith's Boots
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61522, {	-- Corpse Run
@@ -176,6 +198,12 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 158300 },    -- Flytrap
 									["coord"] = { 54.3, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182501),	-- Stitched Conjurer's Slippers
+										i(182483),	-- Stitched Harbinger's Stompers
+										i(182510),	-- Stitched Tactician's Sabatons
+										i(182492),	-- Stitched Wraith's Boots
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61523, {	-- Corpse Run
@@ -183,20 +211,44 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 158300 },    -- Flytrap
 									["coord"] = { 54.3, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182501),	-- Stitched Conjurer's Slippers
+										i(182483),	-- Stitched Harbinger's Stompers
+										i(182510),	-- Stitched Tactician's Sabatons
+										i(182492),	-- Stitched Wraith's Boots
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60765, {    -- Cure For All Ills
 									["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
 									["provider"] = { "n", 159241 },    -- Roseboil
+									["crs"] = {
+										167159,	-- Roseboil (Ghost)
+									},
 									["coord"] = { 55.1, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182496),	-- Stitched Wraith's Belt
+										i(182487),	-- Stitched Harbinger's Warbelt
+										i(182505),	-- Stitched Conjurer's Cinch
+										i(182514),	-- Stitched Tactician's Girdle
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62217, {	-- Field Training
 									["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 									["provider"] = { "n", 158301 },    -- Marz
+									["crs"] = {
+										167162,	-- Marz (Ghost)
+									},
 									["coord"] = { 54.2, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182482),	-- Stitched Harbinger's Chestguard
+										i(182500),	-- Stitched Conjurer's Tunic
+										i(182491),	-- Stitched Wraith's Jerkin
+										i(182509),	-- Stitched Tactician's Hauberk
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58668, {	-- Find The Way
@@ -207,8 +259,17 @@ _.ExpansionFeatures =
 								q(62041, {	-- In A Bad Light
 									["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
 									["provider"] = { "n", 159241 },    -- Roseboil
+									["crs"] = {
+										167159,	-- Roseboil (Ghost)
+									},
 									["coord"] = { 55.1, 68.1, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182496),	-- Stitched Wraith's Belt
+										i(182487),	-- Stitched Harbinger's Warbelt
+										i(182505),	-- Stitched Conjurer's Cinch
+										i(182514),	-- Stitched Tactician's Girdle
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58680, {	-- Loose Threads
@@ -224,13 +285,19 @@ _.ExpansionFeatures =
 								q(58665, {	-- Rebellious Souls
 									["sourceQuests"] = { 59609 },	-- No Rest For the Dead
 									["provider"] = { "n", 162222 },	-- Rathan
-									["coord"] = { 48.0, 50.2, 1698 },	-- Seat of the Primus
+									["coord"] = { 48.0, 50.2, SEAT_OF_THE_PRIMUS },
 								}),
 								q(61509, {	-- Shinies of Bastion
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
 									["provider"] = { "n", 161270 },	-- Chordy
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182489),	-- Stitched Harbinger's Greatcloak
+										i(182498),	-- Stitched Wraith's Cloak
+										i(182507),	-- Stitched Conjurer's Cape
+										i(182516),	-- Stitched Tactician's Drape
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58677, {	-- Skin in the Game
@@ -243,6 +310,12 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 161270 },	-- Chordy
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182489),	-- Stitched Harbinger's Greatcloak
+										i(182498),	-- Stitched Wraith's Cloak
+										i(182507),	-- Stitched Conjurer's Cape
+										i(182516),	-- Stitched Tactician's Drape
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60264, {    -- Soul Survivor
@@ -272,13 +345,28 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 161270 },	-- Chordy
 									["coord"] = { 55.1, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182489),	-- Stitched Harbinger's Greatcloak
+										i(182498),	-- Stitched Wraith's Cloak
+										i(182507),	-- Stitched Conjurer's Cape
+										i(182516),	-- Stitched Tactician's Drape
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62216, {	-- Training Program
 									["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 									["provider"] = { "n", 158301 },    -- Marz
+									["crs"] = {
+										167162,	-- Marz (Ghost)
+									},
 									["coord"] = { 54.2, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182482),	-- Stitched Harbinger's Chestguard
+										i(182500),	-- Stitched Conjurer's Tunic
+										i(182491),	-- Stitched Wraith's Jerkin
+										i(182509),	-- Stitched Tactician's Hauberk
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58686, {	-- Weapon of Mass Construction
@@ -290,7 +378,7 @@ _.ExpansionFeatures =
 									["coord"] = { 24.2, 38.8, MALDRAXXUS },
 								}),
 							}),
-							n(-908, {	-- Rewards
+							n(REWARDS, {
 								["description"] = "The cosmetic items under this header are occasionally random rewards from the Weekly Quests from your Constructs.",
 								["g"] = {
 									i(184843, {	-- Salvaged Supplies
@@ -299,42 +387,13 @@ _.ExpansionFeatures =
 									i(183744, {	-- Superior Parts
 										["description"] = "Rewarded by the Weekly Quests from your Constructs.",
 									}),
-									i(182507),	-- Stitched Conjurer's Cape
-									i(182505),	-- Stitched Conjurer's Cinch
-									i(182499),	-- Stitched Conjurer's Cowl
-									i(182502),	-- Stitched Conjurer's Gloves
-									i(182503),	-- Stitched Conjurer's Leggings
-									i(182504),	-- Stitched Conjurer's Mantle
-									i(182501),	-- Stitched Conjurer's Slippers
-									i(182500),	-- Stitched Conjurer's Tunic
-									i(182506),	-- Stitched Conjurer's Wristwraps
-									i(182482),	-- Stitched Harbinger's Chestguard
-									i(182484),	-- Stitched Harbinger's Crushers
-									i(182489),	-- Stitched Harbinger's Greatcloak
-									i(182481),	-- Stitched Harbinger's Greathelm
-									i(182485),	-- Stitched Harbinger's Greaves
-									i(182486),	-- Stitched Harbinger's Pauldrons
-									i(182483),	-- Stitched Harbinger's Stompers
-									i(182488),	-- Stitched Harbinger's Vambraces
-									i(182487),	-- Stitched Harbinger's Warbelt
-									i(182515),	-- Stitched Tactician's Bracers
-									i(182512),	-- Stitched Tactician's Chausses
-									i(182516),	-- Stitched Tactician's Drape
-									i(182508),	-- Stitched Tactician's Faceguard
-									i(182511),	-- Stitched Tactician's Gauntlets
-									i(182514),	-- Stitched Tactician's Girdle
-									i(182509),	-- Stitched Tactician's Hauberk
-									i(182510),	-- Stitched Tactician's Sabatons
-									i(182513),	-- Stitched Tactician's Spaulders
-									i(182497),	-- Stitched Wraith's Armguards
-									i(182496),	-- Stitched Wraith's Belt
-									i(182492),	-- Stitched Wraith's Boots
-									i(182494),	-- Stitched Wraith's Breeches
-									i(182498),	-- Stitched Wraith's Cloak
-									i(182491),	-- Stitched Wraith's Jerkin
-									i(182495),	-- Stitched Wraith's Shoulders
-									i(182493),	-- Stitched Wraith's Stranglers
-									i(182490),	-- Stitched Wraith's Visage
+								},
+							}),
+							n(161270, {	-- Chordy
+								["description"] = "These abomination crafting reagents can randomly be found using Chordy's ability in any Shadowlands zone",
+								["g"] = {
+									i(184205),	-- Long Lost Crown
+									i(184204),	-- Otherworld Hat
 								},
 							}),
 						}),
@@ -343,9 +402,27 @@ _.ExpansionFeatures =
 								q(62244, {	-- Digging Around
 									["sourceQuests"] = { 58414 },	-- Construct Body: Toothpick
 									["provider"] = { "n", 159212 },    -- Toothpick
+									["crs"] = {
+										167764,	-- Toothpick (Ghost)
+									},
 									["coord"] = { 54.9, 67.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["g"] = {
+										i(182488),	-- Stitched Harbinger's Vambraces
+										i(182497),	-- Stitched Wraith's Armguards
+										i(182506),	-- Stitched Conjurer's Wristwraps
+										i(182515),	-- Stitched Tactician's Bracers
+										o(357937, {	-- Burried Cache (Revendreth version)
+											["g"] = {
+												i(183826),	-- Big Floppy Hat
+												i(183789),	-- Six-League Pack
+												i(181797),	-- Strange Cloth
+												i(183759),	-- Unusually Large Cranium
+												i(183760),	-- Venthyr Spectacles
+											},
+										}),
+									},
 								}),
 								q(59615, {	-- Every Dog Has Its Day
 									["description"] = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available.  The key will only drop if you have tier 2 or higher Abomination Table.",
@@ -356,8 +433,17 @@ _.ExpansionFeatures =
 								q(62194, {	-- Fighting Words
 									["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
 									["provider"] = { "n", 159226 },    -- Sabrina
+									["crs"] = {
+										173028,	-- Sabrina (Ghost)
+									},
 									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182485),	-- Stitched Harbinger's Greaves
+										i(182494),	-- Stitched Wraith's Breeches
+										i(182512),	-- Stitched Tactician's Chausses
+										i(182503),	-- Stitched Conjurer's Leggings
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60230, {	-- More the Merrier
@@ -367,29 +453,75 @@ _.ExpansionFeatures =
 								q(60237, {	-- Old Stomping Grounds
 									["sourceQuests"] = { 58414 },	-- Construct Body: Toothpick
 									["provider"] = { "n", 159212 },    -- Toothpick
+									["crs"] = {
+										167764,	-- Toothpick (Ghost)
+									},
 									["coord"] = { 54.9, 67.8, MALDRAXXUS },
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
+									["g"] = {
+										i(182488),	-- Stitched Harbinger's Vambraces
+										i(182497),	-- Stitched Wraith's Armguards
+										i(182506),	-- Stitched Conjurer's Wristwraps
+										i(182515),	-- Stitched Tactician's Bracers
+										o(357771, {	-- Burried Cache (Ardenweald version)
+											["g"] = {
+												i(183755),	-- Ardenweald Wreath
+												i(183826),	-- Big Floppy Hat
+												i(183789),	-- Six-League Pack
+												i(181797),	-- Strange Cloth
+												i(183759),	-- Unusually Large Cranium
+												i(183760),	-- Venthyr Spectacles
+											},
+										}),
+									},
 								}),
 								q(62294, {	-- One Lich's Trash...
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 									["provider"] = { "n", 159198 },    -- The Professor
+									["crs"] = {
+										167762,	-- The Professor (Ghost)
+									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182513),	-- Stitched Tactician's Spaulders
+										i(182504),	-- Stitched Conjurer's Mantle
+										i(182495),	-- Stitched Wraith's Shoulders
+										i(182486),	-- Stitched Harbinger's Pauldrons
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61996, {	-- Say The Magic Words
 									["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
 									["provider"] = { "n", 159226 },    -- Sabrina
+									["crs"] = {
+										173028,	-- Sabrina (Ghost)
+									},
 									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182485),	-- Stitched Harbinger's Greaves
+										i(182494),	-- Stitched Wraith's Breeches
+										i(182512),	-- Stitched Tactician's Chausses
+										i(182503),	-- Stitched Conjurer's Leggings
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58515, {	-- Scrounging for Scrolls
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 									["provider"] = { "n", 159198 },    -- The Professor
+									["crs"] = {
+										167762,	-- The Professor (Ghost)
+									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182513),	-- Stitched Tactician's Spaulders
+										i(182504),	-- Stitched Conjurer's Mantle
+										i(182495),	-- Stitched Wraith's Shoulders
+										i(182486),	-- Stitched Harbinger's Pauldrons
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60283, {	-- Specter Of War: Visectus
@@ -400,15 +532,33 @@ _.ExpansionFeatures =
 								q(62195, {	-- The Last Word
 									["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
 									["provider"] = { "n", 159226 },    -- Sabrina
+									["crs"] = {
+										173028,	-- Sabrina (Ghost)
+									},
 									["coord"] = { 54.8, 68.8, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182485),	-- Stitched Harbinger's Greaves
+										i(182494),	-- Stitched Wraith's Breeches
+										i(182512),	-- Stitched Tactician's Chausses
+										i(182503),	-- Stitched Conjurer's Leggings
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58525, {	-- The Two Sides of History
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 									["provider"] = { "n", 159198 },    -- The Professor
+									["crs"] = {
+										167762,	-- The Professor (Ghost)
+									},
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182513),	-- Stitched Tactician's Spaulders
+										i(182504),	-- Stitched Conjurer's Mantle
+										i(182495),	-- Stitched Wraith's Shoulders
+										i(182486),	-- Stitched Harbinger's Pauldrons
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 							}),
@@ -423,13 +573,24 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60342, {	-- Cut 'Em Down to Size
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
 									["provider"] = { "n", 159214 },	-- Guillotine
+									["crs"] = {
+										173030,	-- Guillotine (Ghost)
+									},
 									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182493),	-- Stitched Wraith's Stranglers
+										i(182484),	-- Stitched Harbinger's Crushers
+										i(182502),	-- Stitched Conjurer's Gloves
+										i(182511),	-- Stitched Tactician's Gauntlets
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(56470, {	-- Give A Dog A Bone
@@ -437,27 +598,56 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62261, {	-- Grinder
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
 									["provider"] = { "n", 159214 },	-- Guillotine
+									["crs"] = {
+										173030,	-- Guillotine (Ghost)
+									},
 									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182493),	-- Stitched Wraith's Stranglers
+										i(182484),	-- Stitched Harbinger's Crushers
+										i(182502),	-- Stitched Conjurer's Gloves
+										i(182511),	-- Stitched Tactician's Gauntlets
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(60340, {	-- Hands on Approach
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
 									["provider"] = { "n", 159214 },	-- Guillotine
+									["crs"] = {
+										173030,	-- Guillotine (Ghost)
+									},
 									["coord"] = { 54.4, 67.9, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182493),	-- Stitched Wraith's Stranglers
+										i(182484),	-- Stitched Harbinger's Crushers
+										i(182502),	-- Stitched Conjurer's Gloves
+										i(182511),	-- Stitched Tactician's Gauntlets
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(62407, {	-- Herbicidal Tendencies
 									["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag
 									["provider"] = { "n", 159240 },	-- Gas Bag
+									["crs"] = {
+										167763,	-- Gas Bag (Ghost)
+									},
 									["coord"] = { 54.2, 68.0, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182499),	-- Stitched Conjurer's Cowl
+										i(182490),	-- Stitched Wraith's Visage
+										i(182481),	-- Stitched Harbinger's Greathelm
+										i(182508),	-- Stitched Tactician's Faceguard
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(58992, {	-- Pie Not?
@@ -465,13 +655,24 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(59293, {	-- Special Formula
 									["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag
 									["provider"] = { "n", 159240 },	-- Gas Bag
+									["crs"] = {
+										167763,	-- Gas Bag (Ghost)
+									},
 									["coord"] = { 54.2, 68.0, MALDRAXXUS },
 									["isWeekly"] = true,
+									["g"] = {
+										i(182499),	-- Stitched Conjurer's Cowl
+										i(182490),	-- Stitched Wraith's Visage
+										i(182481),	-- Stitched Harbinger's Greathelm
+										i(182508),	-- Stitched Tactician's Faceguard
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61635, {	-- Troubled Souls
@@ -491,6 +692,12 @@ _.ExpansionFeatures =
 										i(183790),	-- Platter Master Stue
 									},
 								})
+							}),
+							o(360054, {	-- Sticky Cat
+								["coord"] = { 67.9, 79.3, MALDRAXXUS },
+								["g"] = {
+									i(183829),	-- Slime Cat
+								},
 							}),
 						}),
 						n(-928, {	-- Tier 4: Forged Friends
@@ -520,6 +727,16 @@ _.ExpansionFeatures =
 						}),
 						n(-938, {	-- Tier 5: Best Fiends Forever
 							n(QUESTS, {
+								q(59043, {	-- Baker's Dozen
+									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
+									["provider"] = { "n", 161678 },	-- Mama Tomalin
+									["coord"] = { 55.3, 68.6, MALDRAXXUS },
+									["isWeekly"] = true,
+									["g"] = {
+										i(181809),	-- Tomalins Seasoning Crystal
+									},
+									["_drop"] = { "g" },	-- Superior Parts is included from API
+								}),
 								q(57634, {	-- Bring Your Own
 									["sourceQuests"] = { 58411 },	-- Construct Body: Iron Phillip
 									["provider"] = { "n", 159199 },    -- Iron Phillip
@@ -542,15 +759,24 @@ _.ExpansionFeatures =
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
+								q(56470, {	-- Give A Dog A Bone
+									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
+									["provider"] = { "n", 161678 },	-- Mama Tomalin
+									["coord"] = { 55.3, 68.6, MALDRAXXUS },
+									["isWeekly"] = true,
+									["g"] = {
+										i(181809),	-- Tomalins Seasoning Crystal
+									},
+									["_drop"] = { "g" },	-- Superior Parts is included from API
+								}),
 								q(58992, {	-- Pie Not?
 									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
 									["provider"] = { "n", 161678 },	-- Mama Tomalin
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
-									-- Tier 5 is required to have the item sometimes show up.
-									["g"] = {
-										i(181809),	-- Tomalin's Seasoning Crystal
-									},
 									["isWeekly"] = true,
+									["g"] = {
+										i(181809),	-- Tomalins Seasoning Crystal
+									},
 									["_drop"] = { "g" },	-- Superior Parts is included from API
 								}),
 								q(61637, {	-- Unity
@@ -559,7 +785,7 @@ _.ExpansionFeatures =
 									["description"] = "Becomes available after you research Abomination Factory Tier 5 in your sanctum.",
 								}),
 							}),
-							n(-908, {	-- Rewards
+							n(REWARDS, {
 								["description"] = "The cosmetic items under this header are occasionally random rewards from doing Maldraxxus world quests with Unity as your active abomination.",
 								["g"] = {
 									i(182543),	-- Duty-Bound Conjurer's Cape
@@ -609,12 +835,12 @@ _.ExpansionFeatures =
 							q(63057, {	-- Restoring Power
 								["description"] = "Becomes available after you build Anima Conductor tier 1 in your sanctum.",
 								["provider"] = { "n", 161909 },	-- Arkadia Moa
-								["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+								["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
 							}),
 							q(60722, {	-- Tower Power
 								["sourceQuests"] = { 63057 },	-- Restoring Power
 								["provider"] = { "n", 167205 },	-- Yondare Hex
-								["coord"] = { 49.0, 36.0, 1698 },	-- Seat of the Primus
+								["coord"] = { 49.0, 36.0, SEAT_OF_THE_PRIMUS },
 							}),
 							o(355035, {	-- Treasure: House of the Chosen -- TODO: proper objectID
 								["description"] = "Becomes accessible when selecting the Anima Conduit to 'The House of the Chosen'\nRequires clicking the 3 Runes in the area to unlock",
@@ -639,6 +865,61 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
+							q(62563, {	-- Back Again!
+								["isDaily"] = true,
+								["provider"] = { "n", 160523 },	-- Cyrin Smirk
+								["coord"] = { 51.4, 16.2, MALDRAXXUS },
+							}),
+							q(62403, {	-- Boared to Death
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
+							q(62390, {	-- Body Count
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
+							q(62364, {	-- Dire Learning
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
+							q(62363, {	-- Heavy Lifting
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
+							q(58211, {	-- Pumped Up
+								["isDaily"] = true,
+								["provider"] = { "n", 168675 },	-- Varzisk Lidless
+								["coord"] = { 51.2, 16.8, MALDRAXXUS },
+							}),
+							q(58260, {	-- Queens and Future Kings
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
+							q(57964, {	-- Revenge Is Easy
+								["isDaily"] = true,
+								["provider"] = { "n", 160523 },	-- Cyrin Smirk
+								["coord"] = { 51.4, 16.2, MALDRAXXUS },
+							}),
+							q(60482, {	-- See With My Eyes
+								["isDaily"] = true,
+								["provider"] = { "n", 168675 },	-- Varzisk Lidless
+								["coord"] = { 51.2, 16.8, MALDRAXXUS },
+							}),
+							q(60505, {	-- Spider's Lair
+								["isDaily"] = true,
+								["provider"] = { "n", 168675 },	-- Varzisk Lidless
+								["coord"] = { 51.2, 16.8, MALDRAXXUS },
+							}),
+							q(62362, {	-- Volatile Reactions
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
 						}),
 						n(-918, {	-- Tier 3: Flowing Power
 							q(58454, {	-- Spoiling For A Fight
@@ -649,80 +930,107 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-905, {	-- Command Table
-						n(-906, {	-- Tier 1: Tactical Insight
-							q(62312, {    -- Adventurer: Gunn Gorgebone
-								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
-								["description"] = "Becomes available at Renown 12",
-								["g"] = {
-									follower(1301),	-- Gunn Gorgebone
-								},
+						["g"] = {
+							i(183744),	-- Superior Parts
+							n(-906, {	-- Tier 1: Tactical Insight
+								q(64465, {	-- Adventurer: Enceladus
+									["description"] = "Requires Renown 62.",
+									["provider"] = { "n", 165321 },	-- Merick Feldscar
+									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
+									["g"] = {
+										follower(1335),	-- Enceladus
+									},
+								}),
+								q(64466, {	-- Adventurer: Deathfang
+									["description"] = "Requires Renown 71.",
+									["provider"] = { "n", 165321 },	-- Merick Feldscar
+									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
+									["g"] = {
+										follower(1336),	-- Deathfang
+									},
+								}),
+								q(62312, {	-- Adventurer: Gunn Gorgebone
+									["description"] = "Requires Renown 12.",
+									["provider"] = { "n", 165321 },	-- Merick Feldscar
+									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
+									["g"] = {
+										follower(1301),	-- Gunn Gorgebone
+									},
+								}),
+								q(62314, {	-- Adventurer: Khaliiq
+									["description"] = "Requires Renown 27.",
+									["provider"] = { "n", 165321 },	-- Merick Feldscar
+									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
+									["g"] = {
+										follower(1303),	-- Khaliiq
+									},
+								}),
+								q(64464, {	-- Adventurer: Lyra Hailstorm
+									["description"] = "Requires Renown 44.",
+									["provider"] = { "n", 165321 },	-- Merick Feldscar
+									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
+									["g"] = {
+										follower(1334),	-- Lyra Hailstorm
+									},
+								}),
+								q(62315, {	-- Adventurer: Plaguey
+									["description"] = "Requires Renown 33.",
+									["provider"] = { "n", 165321 },	-- Merick Feldscar
+									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
+									["g"] = {
+										follower(1304),	-- Plaguey
+									},
+								}),
+								q(62316, {	-- Adventurer: Rathan
+									["description"] = "Requires Renown 38.",
+									["provider"] = { "n", 165321 },	-- Merick Feldscar
+									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
+									["g"] = {
+										follower(1305),	-- Rathan
+									},
+								}),
+								q(62313, {	-- Adventurer: Rencissa the Dynamo
+									["description"] = "Requires Renown 17.",
+									["provider"] = { "n", 165321 },	-- Merick Feldscar
+									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
+									["g"] = {
+										follower(1302),	-- Rencissa the Dynamo
+									},
+								}),
+								q(62309, {	-- Adventurer: Secutor Mevix
+									["sourceQuests"] = { 59603 },	-- In Shadowlands Service
+									["description"] = "Requires Renown 4.",
+									["provider"] = { "n", 165321 },	-- Merick Feldscar
+									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
+									["g"] = {
+										follower(1300),	-- Secutor Mevix
+									},
+								}),
+								q(59603, {	-- In Shadowlands Service
+									["sourceQuests"] = { 63054 },	-- Strength in Numbers
+									["provider"] = { "n", 165321 },	-- Merick Feldscar
+									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
+								}),
+								q(63054, {	-- Strength in Numbers
+									["provider"] = { "n", 161909 },	-- Arkadia Moa
+									["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
+									["description"] = "Becomes available after you build Command Table tier 1 in your sanctum.",
+								}),
 							}),
-							q(62314, {    -- Adventurer: Khaliiq
-								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
-								["description"] = "Becomes available at Renown 27",
-								["g"] = {
-									follower(1303),	-- Khaliiq
-								},
-							}),
-							q(62315, {    -- Adventurer: Plaguey
-								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
-								["description"] = "Becomes available at Renown 33",
-								["g"] = {
-									follower(1304),	-- Plaguey
-								},
-							}),
-							q(62316, {    -- Adventurer: Rathan
-								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
-								["description"] = "Becomes available at Renown 38",
-								["g"] = {
-									follower(1305),	-- Rathan
-								},
-							}),
-							q(62313, {    -- Adventurer: Rencissa the Dynamo
-								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
-								["description"] = "Becomes available at Renown 17",
-								["g"] = {
-									follower(1302),	-- Rencissa the Dynamo
-								},
-							}),
-							q(62309, {	-- Adventurer: Secutor Mevix
-								["sourceQuests"] = { 59603 },	-- In Shadowlands Service
-								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
-								["description"] = "Becomes available at Renown 4",
-								["g"] = {
-									follower(1300),	-- Secutor Mevix
-								},
-							}),
-							q(59603, {	-- In Shadowlands Service
-								["sourceQuests"] = { 63054 },	-- Strength in Numbers
-								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
-							}),
-							q(63054, {	-- Strength in Numbers
-								["provider"] = { "n", 161909 },	-- Arkadia Moa
-								["coord"] = { 52.4, 38.4, 1698 },
-								["description"] = "Becomes available after you build Command Table tier 1 in your sanctum.",
-							}),
-						}),
-						-- Tier 2: Recuperative Treatments
-						-- Tier 3: Forced March
+							-- Tier 2: Recuperative Treatments
+							-- Tier 3: Forced March
+						},
 					}),
 					n(-924, {	-- Transport Network
 						-- Tier 1: Ziggurat Now
 							q(63059, {	-- Blink of an Eye
 								["sourceQuests"] = { 63055 },	-- Powering the Portals
 								["provider"] = { "n", 175963 },	-- Serafina Von
-								["coord"] = { 59.8, 31.8, 1698 },
+								["coord"] = { 59.8, 31.8, SEAT_OF_THE_PRIMUS },
 							}),
 							q(63055, {	-- Powering the Portals
 								["provider"] = { "n", 161909 },	-- Arkadia Moa
-								["coord"] = { 52.4, 38.4, 1698 },
+								["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
 								["description"] = "Becomes available after you build Transport Network tier 1 in your sanctum.",
 							}),
 						-- Tier 2: A Keep Above
@@ -742,3 +1050,34 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+_.HiddenQuestTriggers = {
+	q(60773),	-- Triggered shortly after completing 'Dude, Where's My Necropolis' (60184) after NPC RP
+	q(63397),	-- Triggered when Completing weeklies with abominations/receiving Sitched set gear
+	q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
+	--q(62572),	-- Created "Marz" as the 2nd construct, to finish "build one more" / Faction flag kit
+	--q(61512),	-- Completing Something Old, Something Used first time?
+	q(63099 ),	-- Opening 184589, Bag of Potions from Atticus
+	--q(62535),	-- Unknown doing dailies from abom
+
+-- Stitched Abom Set (armor-type agnostic it seems by slot rewarded)
+	q(63392),	-- Gloves (182502) / Stranglers (182493)
+	q(63394),	-- Armguards (182497)
+	q(63395),	-- Breeches (182494)
+	q(63400),	-- Cloak (182498)
+-- Duty-Bound Wraith
+	q(63404),	-- Gloves Leather
+
+-- Anima Conductor
+	q(60774),	-- Theater of Pain (lvl 3)
+	q(60780),	-- triggered the first time i channeled anima to the daily quest hub
+};
+
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(58377),	-- Abomination Part: Magnificent Skin
+		q(58378),	-- Abomination Part: Regenerative Frame
+		q(58596),	-- Specter Of War: Visectus
+		q(58664),	-- Ultimate Makeover
+	}),
+});

@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9958, {	-- Player vs Player
+	pvp(n(-9958, {	-- Player vs Player
 		n(-9993, {	-- Temple of Kotmogu
 			["maps"] = { 417 },
 			["g"] = {
@@ -38,5 +38,5 @@ _.Achievements =
 				}),
 			},
 		}),
-	}),
+	})),
 };

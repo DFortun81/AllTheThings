@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(87, {	-- Ironforge
+		m(IRONFORGE, {
 			n(FLIGHT_PATHS, {
 				fp(6, {	-- Ironforge, Dun Morogh
-					["coord"] = { 55.8, 47.8, 87 },
+					["coord"] = { 55.8, 47.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),

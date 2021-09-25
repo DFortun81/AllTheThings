@@ -1,1 +1,1 @@
-"Parser V2.exe" debug
+"Parser for Retail.exe" debug

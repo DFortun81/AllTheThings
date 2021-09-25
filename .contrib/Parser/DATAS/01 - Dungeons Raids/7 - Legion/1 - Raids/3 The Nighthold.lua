@@ -3,13 +3,12 @@
 -----------------------------------------------------
 
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
-_.Instances = { tier(7, {	-- Legion
-	inst(786, { 	-- The Nighthold
-		["order"] = "03",
+_.Instances = { tier(LEGION_TIER, {
+	inst(786, {	-- The Nighthold
 		["isRaid"] = true,
 		["coords"] = {
-			{ 43.3, 62.3, 680 },	-- entrance that leads underground
-			{ 44.1, 59.7, 680 },	-- actual raid entrance
+			{ 43.3, 62.3, SURAMAR },	-- entrance that leads underground
+			{ 44.1, 59.7, SURAMAR },	-- actual raid entrance
 		},
 		["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
 		["lvl"] = 110,
@@ -67,7 +66,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						i(144399),	-- Aristocrat's Winter Drape
@@ -80,7 +79,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(144405),	-- Waistclasp of Unethical Power
 					},
 				}),
-				ach(10829, { 	-- Arcing Aqueducts
+				ach(10829, {	-- Arcing Aqueducts
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(102263, e(1706, {	-- Skorpyron
@@ -154,7 +153,7 @@ _.Instances = { tier(7, {	-- Legion
 						})),
 					},
 				}),
-				ach(10837, { 	-- Royal Athenaeum
+				ach(10837, {	-- Royal Athenaeum
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(104881, e(1751, {	-- Spellblade Aluriel
@@ -233,7 +232,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				ach(10838, { 	-- Nightspire
+				ach(10838, {	-- Nightspire
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(103685, e(1762, {	-- Tichondrius
@@ -321,7 +320,7 @@ _.Instances = { tier(7, {	-- Legion
 						})),
 					},
 				}),
-				ach(10839, { 	-- Betrayer's Rise
+				ach(10839, {	-- Betrayer's Rise
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(104154, e(1737, {	-- Gul'dan
@@ -416,7 +415,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140199),	-- Nightshard
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(144399),	-- Aristocrat's Winter Drape
 					i(144401),	-- Cloak of Multitudinous Sheaths
 					i(144403),	-- Fashionable Autumn Cloak
@@ -790,7 +789,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140199),	-- Nightshard
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(144399),	-- Aristocrat's Winter Drape
 					i(144401),	-- Cloak of Multitudinous Sheaths
 					i(144403),	-- Fashionable Autumn Cloak
@@ -1168,7 +1167,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140199),	-- Nightshard
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(144399),	-- Aristocrat's Winter Drape
 					i(144401),	-- Cloak of Multitudinous Sheaths
 					i(144403),	-- Fashionable Autumn Cloak
@@ -1517,3 +1516,11 @@ _.Instances = { tier(7, {	-- Legion
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		inst(786, {	-- The Nighthold
+			i(157764),	-- Claw of the Crystalline Scorpid
+			i(157765),	-- Draught of Souls
+		}),
+	}),
+});

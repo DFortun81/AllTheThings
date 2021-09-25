@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9958, {	-- Player vs Player
+	pvp(n(-9958, {	-- Player vs Player
 		n(-9990, {	-- Battle for Gilneas
 			["maps"] = { 275 },	-- Battle for Gilneas
 			["g"] = {
@@ -42,5 +42,5 @@ _.Achievements =
 				}),
 			},
 		}),
-	}),
+	})),
 };

@@ -4,19 +4,19 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
+	m(KULTIRAS, {
 		n(QUESTS, {
 			o(311218, {	-- Xal'atath, Blade of the Black Empire
 				q(54438, {	-- Crucible of Storms: Relics of Shadow
 					["sourceQuests"] = { 54126 },	-- Twist the Knife
 					["provider"] = { "n", 146902 },	-- Brother Pike
-					["coords"] = { 67.4, 21.0, 1161 },
+					["coord"] = { 67.4, 21.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54113, {	-- Every Little Death Helps
 					["sourceQuests"] = { 54144 },	-- Orders from Azshara
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
-					["coord"] = { 34.2, 31.8, 942 },
+					["coord"] = { 34.2, 31.8, STORMSONG_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54114, {	-- Every Little Death Helps
@@ -26,15 +26,15 @@ _.Zones =
 					},
 					["classes"] = { PRIEST },
 					["coords"] = {
-						{ 78.0, 36.7, 862 },
-						{ 34.2, 31.8, 942 },
+						{ 78.0, 36.7, ZULDAZAR },
+						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
 				q(53765, {	-- His Eye Upon You
 					["sourceQuests"] = { 54126 },	-- Twist the Knife [Alliance]
 					["description"]	= "You only get the toy if you choose to cleanse the gift.",
 					["provider"] = { "n", 146902 },	-- Brother Pike
-					["coords"] = { 67.4, 21.0, 1161 },
+					["coord"] = { 67.4, 21.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168123),	-- Twitching Eyeball (TOY!)
@@ -44,14 +44,14 @@ _.Zones =
 					["sourceQuests"] = { 54141 },	-- The Azsharan Medallion
 					["provider"] = { "n", 135793 },	-- Collector Kojo
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
-					["coord"] = { 40.4, 36.4, 942 },
+					["coord"] = { 40.4, 36.4, STORMSONG_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54265, {	-- Orders from Azshara
 					["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
 					["provider"] = { "n", 134345 },	-- Collector Kojo
 					["classes"] = { PRIEST },
-					["coord"] = { 71.4, 30.2, 862 },
+					["coord"] = { 71.4, 30.2, ZULDAZAR },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54141, {	-- The Azsharan Medallion
@@ -76,33 +76,33 @@ _.Zones =
 				q(53761, {	-- The Pirate's Treasure
 					["sourceQuests"] = { 53760 },	-- Unintended Consequences
 					["provider"] = { "n", 144773 },	-- Xal'atath
-					["coord"] = { 20.0, 35.8, 896 },
+					["coord"] = { 20.0, 35.8, DRUSTVAR },
 				}),
 				q(53762, {	-- The Tempest Crown
 					["sourceQuests"] = { 53761 },	-- The Pirate's Treasure
 					["provider"] = { "n", 145396 },	-- Xal'atath
-					["coord"] = { 75.0, 77.7, 895 },
+					["coord"] = { 75.0, 77.7, TIRAGARDE_SOUND },
 				}),
 				q(54126, {	-- Twist the Knife
 					["sourceQuests"] = { 53762 },	-- The Tempest Crown
 					["provider"] = { "n", 146384 },	-- Xal'atath
-					["coord"] = { 53.0, 13.6, 864 },
+					["coord"] = { 53.0, 13.6, VOLDUN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53760, {	-- Unintended Consequences
 					["sourceQuests"] = { 54117 },	-- Every Little Death Helps
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
 					["coords"] = {
-						{ 78.0, 36.7, 862 },
-						{ 34.2, 31.8, 942 },
+						{ 78.0, 36.7, ZULDAZAR },
+						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
 				q(54058, {	-- Unintended Consequences
 					["sourceQuests"] = { 54118 },	-- Every Little Death Helps
 					["classes"] = { PRIEST },
 					["coords"] = {
-						{ 78.0, 36.7, 862 },
-						{ 34.2, 31.8, 942 },
+						{ 78.0, 36.7, ZULDAZAR },
+						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
 			}),

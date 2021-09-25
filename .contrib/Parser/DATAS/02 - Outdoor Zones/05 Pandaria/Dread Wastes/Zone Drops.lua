@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(424, { 	-- Pandaria
-		m(422, {	-- Dread Wastes
-			n(ZONEDROPS, {
+	m(PANDARIA, {
+		m(DREAD_WASTES, {
+			n(ZONE_DROPS, {
 				i(120140, {	-- Tome of Polymorph: Porcupine
-					["spellID"] = 126819,	-- Polymorph(Porcupine)
+					["spellID"] = 126819,	-- Polymorph (Porcupine)
 					["classes"] = { MAGE },
 					["crs"] = { 65118 },	-- Needleback Porcupine
 				}),

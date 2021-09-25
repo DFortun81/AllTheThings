@@ -216,12 +216,12 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Bloodvine Goggles",
 							["recipeID"] = 24356,
-							["u"] = 8
+							["u"] = 2
 						},
 						{
 							["name"] = "Bloodvine Lens",
 							["recipeID"] = 24357,
-							["u"] = 8
+							["u"] = 2
 						},
 						{
 							["name"] = "Bright-Eye Goggles",
@@ -592,16 +592,6 @@ profession(ENGINEERING, {
 						}
 					}
 				},
-				{
-					["name"] = "Mounts",
-					["categoryID"] = 192,
-					["g"] = {
-						{
-							["name"] = "Flying Machine",
-							["recipeID"] = 44155
-						}
-					}
-				}
 			}
 		},
 	}),

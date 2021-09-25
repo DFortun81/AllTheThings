@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(948, {	-- The Maelstrom
 		m(207, {	-- Deepholm
-			n(-38, {	-- Profession
+			n(PROFESSIONS, {
 				prof(BLACKSMITHING, {
 					q(50271, {	-- Smash and Grab
 						["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
@@ -71,9 +71,9 @@ _.Zones =
 					}),
 				}),
 				prof(MINING, {
-					["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require Cataclysm Mining.|r",
+					["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require Cataclysm Mining.",
 					["g"] = {
-						i(67282), 	-- Pet Elementium Geode
+						i(67282),	-- Pet Elementium Geode
 					},
 				}),
 			}),

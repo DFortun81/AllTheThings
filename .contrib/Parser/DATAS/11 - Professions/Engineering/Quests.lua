@@ -307,7 +307,9 @@ profession(ENGINEERING, {
 			["requireSkill"] = ENGINEERING,
 			["maps"] = { ZANGARMARSH },
 			["races"] = ALLIANCE_ONLY,
+			-- #if BEFORE WRATH
 			["u"] = TBC_PHASE_ONE,
+			-- #endif
 			["cost"] = {
 				{ "i", 23981, 15 },	-- Steam Pump Part
 			},
@@ -322,7 +324,9 @@ profession(ENGINEERING, {
 			["requireSkill"] = ENGINEERING,
 			["maps"] = { ZANGARMARSH },
 			["races"] = HORDE_ONLY,
+			-- #if BEFORE WRATH
 			["u"] = TBC_PHASE_ONE,
+			-- #endif
 			["cost"] = {
 				{ "i", 23981, 15 },	-- Steam Pump Part
 			},

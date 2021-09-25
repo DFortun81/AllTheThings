@@ -164,11 +164,11 @@ _.Achievements =
 						crit(24),	-- Manape
 						crit(25),	-- Arwan Beastheart
 					}),
-					ach(13121, {	-- Notorious
+					pvp(ach(13121, {	-- Notorious
 						ach(13120, {	-- Blood in the Water
 							ach(12597),	-- Bayside Brawler
 						}),
-					}),
+					})),
 					ach(12595, {	-- Expert Expeditioner
 						ach(12596, {	-- No Tourist
 							ach(12594),	-- Competent Captain
@@ -232,7 +232,7 @@ _.Achievements =
 							crit(24),	-- Thornspeaker Tavery
 						},
 					}),
-					ach(13141, {	-- Island Slayer
+					pvp(ach(13141, {	-- Island Slayer
 						ach(13115),		-- Reef Madness
 						ach(13114),		-- War for the Wilds
 						ach(13110),		-- Skittering Smashed
@@ -244,9 +244,11 @@ _.Achievements =
 						ach(13400),		-- Havenswood Hero
 						ach(13580),		-- Crestfallen
 						ach(13584),		-- Snowblossom Scrapper
-					}),
+					})),
 				}),
-				ach(13129),		-- Sucker Punch
+				ach(13129, {		-- Sucker Punch
+					["pvp"] = true,
+				}),
 			},
 		}),
 	}),

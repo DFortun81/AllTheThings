@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9958, {	-- Player vs Player
+	pvp(n(-9958, {	-- Player vs Player
 		n(-9986, {	-- Eye of the Storm
 			["maps"] = {
 				112,	-- Eye of the Storm (BG)
@@ -41,5 +41,5 @@ _.Achievements =
 				ach(1258),	-- Take a Chill Pill
 			},
 		}),
-	}),
+	})),
 };

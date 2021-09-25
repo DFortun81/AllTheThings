@@ -7,6 +7,18 @@ _.Zones =
 	m(113, {	-- Northrend
 		m(125, {	-- Dalaran: Northrend
 			n(VENDORS, {
+				n(29548,  {	-- Aimee <Pie, Pastry & Cakes>
+					["coord"] = { 36.4, 33.8, 125 },
+					["groups"] = {
+						i(42439),	-- Big Berry Pie
+						i(42428),	-- Carrot Cupcake
+						i(42436),	-- Chocolate Celebration Cake
+						i(42431),	-- Dalaran Brownie
+						i(42430),	-- Dalaran Doughnut
+						i(42438),	-- Lovely Cake
+						i(42429),	-- Red Velvet Cupcake
+					},
+				}),
 				n(29512,  {	-- Ainderu Summerleaf <Mooncloth Tailoring Specialist>
 					["coord"] = { 36.4, 33.8, 125 },
 					["g"] = {
@@ -813,6 +825,114 @@ _.Zones =
 						}),
 					},
 				}),
+				n(28776, {	-- Elizabeth Ross <Tabard Vendor>
+					["coord"] = { 51.8, 55.8, 125 },
+					["g"] = {
+						i(31779),	-- Aldor Tabard
+						i(31804),	-- Cenarion Expedition Tabard
+						i(36941, {	-- Competitor's Tabard
+							["u"] = REMOVED_FROM_GAME,
+							["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
+						}),
+						i(31776),	-- Consortium Tabard
+						i(19031, {	-- Frostwolf Battle Tabard
+							["races"] = HORDE_ONLY,
+							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+						}),
+						i(31404, {	-- Green Trophy Tabard of the Illidari
+							["sourceQuests"] = {
+								10781,	-- Battle of the Crimson Watch
+							},
+						}),
+						i(5976),	-- Guild Tabard
+						i(23999, {	-- Honor Hold Tabard
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(31777),	-- Keepers of Time Tabard
+						i(15198, {	-- Knight's Colors
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(31774, {	-- Kurenai Tabard
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(43300),	-- Loremaster's Colors
+						i(31778),	-- Lower City Tabard
+						i(31773, {	-- Mag'har Tabard
+							["races"] = HORDE_ONLY,
+						}),
+						i(32828, {	-- Ogri'la Tabard
+							["cost"] = { { "i", 32569, 10 } },	-- 10x Apexis Shard
+						}),
+						i(15196, {	-- Private's Tabard
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(31405, {	-- Purple Trophy Tabard of the Illidari
+							["sourceQuests"] = {
+								10781,	-- Battle of the Crimson Watch
+							},
+						}),
+						i(31780),	-- Scryers Tabard
+						i(15197, {	-- Scout's Tabard
+							["races"] = HORDE_ONLY,
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(31781),	-- Sha'tar Tabard
+						i(19506, {	-- Silverwing Battle Tabard
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+						}),
+						i(32445),	-- Skyguard Tabard
+						i(31775, {	-- Sporeggar Tabard
+							["cost"] = { { "i", 24245, 10 }, },	-- 10x Glowcap
+						}),
+						i(15199, {	-- Stone Guard's Herald
+							["races"] = HORDE_ONLY,
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19032, {	-- Stormpike Battle Tabard
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+						}),
+						pvp(i(43349)),	-- Tabard of Brute Force
+						pvp(i(49052, {	-- Tabard of Conquest [Alliance]
+							["races"] = ALLIANCE_ONLY,
+							["timeline"] = { "added 3.2.0.10192" },
+						})),
+						pvp(i(49054, {	-- Tabard of Conquest [Horde]
+							["races"] = HORDE_ONLY,
+							["timeline"] = { "added 3.2.0.10192" },
+						})),
+						i(35280, {	-- Tabard of Summer Flames
+							["sourceQuests"] = {
+								11972,	-- Shards of Ahune
+							},
+						}),
+						i(35279, {	-- Tabard of Summer Skies
+							["sourceQuests"] = {
+								11972,	-- Shards of Ahune
+							},
+						}),
+						i(40643),	-- Tabard of the Achiever
+						i(43348),	-- Tabard of the Explorer
+						i(24344, {	-- Tabard of the Hand
+							["sourceQuests"] = {
+								9762,	-- The Unwritten Prophecy
+							},
+							["description"] = "This is from a Draenei only quest, but can used by any Alliance race.",
+							["races"] = ALLIANCE_ONLY,	-- Note!! This is strictly Alliance only as the only thing it converts to for Horde is "Guild Tabard"
+						}),
+						i(35221),	-- Tabard of the Shattered Sun
+						i(24004, {	-- Thrallmar Tabard
+							["races"] = HORDE_ONLY,
+						}),
+						i(19505, {	-- Warsong Battle Tabard
+							["races"] = HORDE_ONLY,
+							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+						}),
+					},
+				}),
 				n(40160,  {	-- Frozo the Renowned <Frozen Orb Trader>
 					["coord"] = { 40.0, 28.9, 125 },
 					["g"] = {
@@ -1153,7 +1273,7 @@ _.Zones =
 						i(45819),	-- Spiked Battleguard Choker
 					},
 				}),
-				n(31238, {	-- Hira Snowdawn <Cold Weather Flying Trainer>
+				n(31238,  {	-- Hira Snowdawn <Cold Weather Flying Trainer>
 					["coord"] = { 69.73, 45.45, 125 },
 					["groups"] = {
 						un(REMOVED_FROM_GAME, i(49177)),	-- Tome of Cold Weather Flight
@@ -1700,17 +1820,8 @@ _.Zones =
 				}),
 				n(96483,  {	-- Jepetto Joybuzz <Toymaker>
 					["coord"] = { 44.5, 45.7, 125 },
-					["g"] = {
-						i(54436),	-- Blue Clockwork Rocket Bot (PET!)
-						i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
-						i(104324),	-- Foot Ball (TOY!)
-						i(137663),	-- Soft Foam Sword (TOY!)
-						i(104323),	-- The Swineskin (TOY!)
-						i(54438),	-- Tiny Blue Ragdoll (TOY!)
-						i(54437),	-- Tiny Green Ragdoll (TOY!)
-						i(44606),	-- Toy Train Set (TOY!)
-						i(95621),	-- Warbot Ignition Key (PET!)
-						i(45057),	-- Wind-Up Train Wreck (TOY!)
+					["sym"] = {
+						{"sub", "common_vendor", 29716},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
 					},
 				}),
 				n(29491,  {	-- Karandonna <Clothier>
@@ -1786,21 +1897,21 @@ _.Zones =
 						i(50839),	-- Frost Witch's Spaulders
 						i(50835),	-- Frost Witch's Tunic
 						i(50833),	-- Frost Witch's War-Kilt
-						i(48341),	-- Nobundo's Chestguard of Conquest
-						i(48343),	-- Nobundo's Faceguard of Conquest
-						i(48312),	-- Nobundo's Gloves of Conquest
-						i(48342),	-- Nobundo's Grips of Conquest
-						i(48284),	-- Nobundo's Handguards of Conquest
-						i(48310),	-- Nobundo's Hauberk of Conquest
-						i(48280),	-- Nobundo's Headpiece of Conquest
-						i(48313),	-- Nobundo's Helm of Conquest
-						i(48314),	-- Nobundo's Kilt of Conquest
-						i(48282),	-- Nobundo's Legguards of Conquest
-						i(48345),	-- Nobundo's Shoulderguards of Conquest
-						i(48315),	-- Nobundo's Shoulderpads of Conquest
-						i(48283),	-- Nobundo's Spaulders of Conquest
-						i(48281),	-- Nobundo's Tunic of Conquest
-						i(48344),	-- Nobundo's War-Kilt of Conquest
+						a(i(48341)),	-- Nobundo's Chestguard of Conquest
+						a(i(48343)),	-- Nobundo's Faceguard of Conquest
+						a(i(48312)),	-- Nobundo's Gloves of Conquest
+						a(i(48342)),	-- Nobundo's Grips of Conquest
+						a(i(48284)),	-- Nobundo's Handguards of Conquest
+						a(i(48310)),	-- Nobundo's Hauberk of Conquest
+						a(i(48280)),	-- Nobundo's Headpiece of Conquest
+						a(i(48313)),	-- Nobundo's Helm of Conquest
+						a(i(48314)),	-- Nobundo's Kilt of Conquest
+						a(i(48282)),	-- Nobundo's Legguards of Conquest
+						a(i(48345)),	-- Nobundo's Shoulderguards of Conquest
+						a(i(48315)),	-- Nobundo's Shoulderpads of Conquest
+						a(i(48283)),	-- Nobundo's Spaulders of Conquest
+						a(i(48281)),	-- Nobundo's Tunic of Conquest
+						a(i(48344)),	-- Nobundo's War-Kilt of Conquest
 						i(51154, {	-- Sanctified Ahn'Kahar Blood Hunter's Handguards (N)
 							["cost"] = {
 								{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
@@ -2041,58 +2152,82 @@ _.Zones =
 								{ "i", 51198, 1 },	-- Sanctified Frost Witch's War-Kilt
 							},
 						}),
-						i(48366),	-- Thrall's Chestguard of Conquest
-						i(48368),	-- Thrall's Faceguard of Conquest
-						i(48337),	-- Thrall's Gloves of Conquest
-						i(48367),	-- Thrall's Grips of Conquest
-						i(48296),	-- Thrall's Handguards of Conquest
-						i(48336),	-- Thrall's Hauberk of Conquest
-						i(48297),	-- Thrall's Headpiece of Conquest
-						i(48338),	-- Thrall's Helm of Conquest
-						i(48339),	-- Thrall's Kilt of Conquest
-						i(48298),	-- Thrall's Legguards of Conquest
-						i(48370),	-- Thrall's Shoulderguards of Conquest
-						i(48340),	-- Thrall's Shoulderpads of Conquest
-						i(48299),	-- Thrall's Spaulders of Conquest
-						i(48295),	-- Thrall's Tunic of Conquest
-						i(48369),	-- Thrall's War-Kilt of Conquest
-						i(48254),	-- Windrunner's Handguards of Conquest (A)
-						i(48276),	-- Windrunner's Handguards of Conquest (H)
-						i(48250),	-- Windrunner's Headpiece of Conquest (A)
-						i(48277),	-- Windrunner's Headpiece of Conquest (H)
-						i(48252),	-- Windrunner's Legguards of Conquest (A)
-						i(48278),	-- Windrunner's Legguards of Conquest (H)
-						i(48253),	-- Windrunner's Spaulders of Conquest (A)
-						i(48279),	-- Windrunner's Spaulders of Conquest (H)
-						i(48251),	-- Windrunner's Tunic of Conquest (A)
-						i(48275),	-- Windrunner's Tunic of Conquest (H)
+						h(i(48366)),	-- Thrall's Chestguard of Conquest
+						h(i(48368)),	-- Thrall's Faceguard of Conquest
+						h(i(48337)),	-- Thrall's Gloves of Conquest
+						h(i(48367)),	-- Thrall's Grips of Conquest
+						h(i(48296)),	-- Thrall's Handguards of Conquest
+						h(i(48336)),	-- Thrall's Hauberk of Conquest
+						h(i(48297)),	-- Thrall's Headpiece of Conquest
+						h(i(48338)),	-- Thrall's Helm of Conquest
+						h(i(48339)),	-- Thrall's Kilt of Conquest
+						h(i(48298)),	-- Thrall's Legguards of Conquest
+						h(i(48370)),	-- Thrall's Shoulderguards of Conquest
+						h(i(48340)),	-- Thrall's Shoulderpads of Conquest
+						h(i(48299)),	-- Thrall's Spaulders of Conquest
+						h(i(48295)),	-- Thrall's Tunic of Conquest
+						h(i(48369)),	-- Thrall's War-Kilt of Conquest
+						a(i(48254)),	-- Windrunner's Handguards of Conquest (A)
+						h(i(48276)),	-- Windrunner's Handguards of Conquest (H)
+						a(i(48250)),	-- Windrunner's Headpiece of Conquest (A)
+						h(i(48277)),	-- Windrunner's Headpiece of Conquest (H)
+						a(i(48252)),	-- Windrunner's Legguards of Conquest (A)
+						h(i(48278)),	-- Windrunner's Legguards of Conquest (H)
+						a(i(48253)),	-- Windrunner's Spaulders of Conquest (A)
+						h(i(48279)),	-- Windrunner's Spaulders of Conquest (H)
+						a(i(48251)),	-- Windrunner's Tunic of Conquest (A)
+						h(i(48275)),	-- Windrunner's Tunic of Conquest (H)
 					},
 				}),
 				n(32216,  {	-- Mei Francis <Exotic Mounts>
 					["coord"] = { 57.8, 42.5, 125 },
 					["g"] = {
-						i(44690),	-- Armored Blue Wind Rider
-						i(44689),	-- Armored Snowy Gryphon
-						i(25475),	-- Blue Wind Rider
-						i(25471),	-- Ebon Gryphon
-						i(25470),	-- Golden Gryphon
-						i(25476),	-- Green Wind Rider
-						i(44225),	-- Reins of the Armored Brown Bear (A)
-						i(44226),	-- Reins of the Armored Brown Bear (H)
-						i(44235),	-- Reins of the Traveler's Tundra Mammoth (A)
-						i(44234),	-- Reins of the Traveler's Tundra Mammoth (H)
-						i(44230),	-- Reins of the Wooly Mammoth (A)
-						i(44231),	-- Reins of the Wooly Mammoth (H)
-						i(25472),	-- Snowy Gryphon
-						i(25473),	-- Swift Blue Gryphon
-						i(25528),	-- Swift Green Gryphon
-						i(25531),	-- Swift Green Wind Rider
-						i(25529),	-- Swift Purple Gryphon
-						i(25533),	-- Swift Purple Wind Rider
-						i(25527),	-- Swift Red Gryphon
-						i(25477),	-- Swift Red Wind Rider
-						i(25532),	-- Swift Yellow Wind Rider
-						i(25474),	-- Tawny Wind Rider
+						i(44690, {	-- Armored Blue Wind Rider
+							["races"] = HORDE_ONLY,
+							["cost"] = 20000000,	-- 2,000g
+						}),
+						i(44689, {	-- Armored Snowy Gryphon
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = 20000000,	-- 2,000g
+						}),
+						h(i(25475)),	-- Blue Wind Rider
+						a(i(25471)),	-- Ebon Gryphon
+						a(i(25470)),	-- Golden Gryphon
+						h(i(25476)),	-- Green Wind Rider
+						i(44225, {	-- Reins of the Armored Brown Bear
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = 7500000,	-- 750g
+						}),
+						i(44226, {	-- Reins of the Armored Brown Bear
+							["races"] = HORDE_ONLY,
+							["cost"] = 7500000,	-- 750g
+						}),
+						i(44235, {	-- Reins of the Traveler's Tundra Mammoth
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = 200000000,	-- 20,000g
+						}),
+						i(44234, {	-- Reins of the Traveler's Tundra Mammoth
+							["races"] = HORDE_ONLY,
+							["cost"] = 200000000,	-- 20,000g
+						}),
+						i(44230, {	-- Reins of the Wooly Mammoth
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = 100000000,	-- 10,000g
+						}),
+						i(44231, {	-- Reins of the Wooly Mammoth
+							["races"] = HORDE_ONLY,
+							["cost"] = 100000000,	-- 10,000g
+						}),
+						a(i(25472)),	-- Snowy Gryphon
+						a(i(25473)),	-- Swift Blue Gryphon
+						a(i(25528)),	-- Swift Green Gryphon
+						h(i(25531)),	-- Swift Green Wind Rider
+						a(i(25529)),	-- Swift Purple Gryphon
+						h(i(25533)),	-- Swift Purple Wind Rider
+						a(i(25527)),	-- Swift Red Gryphon
+						h(i(25477)),	-- Swift Red Wind Rider
+						h(i(25532)),	-- Swift Yellow Wind Rider
+						h(i(25474)),	-- Tawny Wind Rider
 					},
 				}),
 				n(29495,  {	-- Norvin Alderman <Cloaks>
@@ -2378,11 +2513,11 @@ _.Zones =
 				n(35497,  {	-- Rafael Langrom <Leather Armor Merchant>
 					["coord"] = { 51.2, 71.5, 125 },
 					["g"] = {
-						i(48243),	-- Garona's Breastplate of Conquest
-						i(48244),	-- Garona's Gauntlets of Conquest
-						i(48245),	-- Garona's Helmet of Conquest
-						i(48246),	-- Garona's Legplates of Conquest
-						i(48247),	-- Garona's Pauldrons of Conquest
+						h(i(48243)),	-- Garona's Breastplate of Conquest
+						h(i(48244)),	-- Garona's Gauntlets of Conquest
+						h(i(48245)),	-- Garona's Helmet of Conquest
+						h(i(48246)),	-- Garona's Legplates of Conquest
+						h(i(48247)),	-- Garona's Pauldrons of Conquest
 						i(50821),	-- Lasherweave Cover
 						i(50107),	-- Lasherweave Gauntlets
 						i(50822),	-- Lasherweave Gloves
@@ -2398,36 +2533,36 @@ _.Zones =
 						i(50824),	-- Lasherweave Shoulderpads
 						i(50820),	-- Lasherweave Trousers
 						i(50823),	-- Lasherweave Vestment
-						i(48158),	-- Malfurion's Cover of Conquest
-						i(48162),	-- Malfurion's Gloves of Conquest
-						i(48213),	-- Malfurion's Handgrips of Conquest
-						i(48132),	-- Malfurion's Handguards of Conquest
-						i(48214),	-- Malfurion's Headguard of Conquest
-						i(48102),	-- Malfurion's Headpiece of Conquest
-						i(48130),	-- Malfurion's Leggings of Conquest
-						i(48215),	-- Malfurion's Legguards of Conquest
-						i(48161),	-- Malfurion's Mantle of Conquest
-						i(48216),	-- Malfurion's Raiments of Conquest
-						i(48129),	-- Malfurion's Robe of Conquest
-						i(48217),	-- Malfurion's Shoulderpads of Conquest
-						i(48131),	-- Malfurion's Spaulders of Conquest
-						i(48160),	-- Malfurion's Trousers of Conquest
-						i(48159),	-- Malfurion's Vestments of Conquest
-						i(48184),	-- Runetotem's Cover of Conquest
-						i(48183),	-- Runetotem's Gloves of Conquest
-						i(48192),	-- Runetotem's Handgrips of Conquest
-						i(48153),	-- Runetotem's Handguards of Conquest
-						i(48188),	-- Runetotem's Headguard of Conquest
-						i(48154),	-- Runetotem's Headpiece of Conquest
-						i(48155),	-- Runetotem's Leggings of Conquest
-						i(48190),	-- Runetotem's Legguards of Conquest
-						i(48187),	-- Runetotem's Mantle of Conquest
-						i(48189),	-- Runetotem's Raiments of Conquest
-						i(48156),	-- Runetotem's Robe of Conquest
-						i(48191),	-- Runetotem's Shoulderpads of Conquest
-						i(48157),	-- Runetotem's Spaulders of Conquest
-						i(48185),	-- Runetotem's Trousers of Conquest
-						i(48186),	-- Runetotem's Vestments of Conquest
+						a(i(48158)),	-- Malfurion's Cover of Conquest
+						a(i(48162)),	-- Malfurion's Gloves of Conquest
+						a(i(48213)),	-- Malfurion's Handgrips of Conquest
+						a(i(48132)),	-- Malfurion's Handguards of Conquest
+						a(i(48214)),	-- Malfurion's Headguard of Conquest
+						a(i(48102)),	-- Malfurion's Headpiece of Conquest
+						a(i(48130)),	-- Malfurion's Leggings of Conquest
+						a(i(48215)),	-- Malfurion's Legguards of Conquest
+						a(i(48161)),	-- Malfurion's Mantle of Conquest
+						a(i(48216)),	-- Malfurion's Raiments of Conquest
+						a(i(48129)),	-- Malfurion's Robe of Conquest
+						a(i(48217)),	-- Malfurion's Shoulderpads of Conquest
+						a(i(48131)),	-- Malfurion's Spaulders of Conquest
+						a(i(48160)),	-- Malfurion's Trousers of Conquest
+						a(i(48159)),	-- Malfurion's Vestments of Conquest
+						h(i(48184)),	-- Runetotem's Cover of Conquest
+						h(i(48183)),	-- Runetotem's Gloves of Conquest
+						h(i(48192)),	-- Runetotem's Handgrips of Conquest
+						h(i(48153)),	-- Runetotem's Handguards of Conquest
+						h(i(48188)),	-- Runetotem's Headguard of Conquest
+						h(i(48154)),	-- Runetotem's Headpiece of Conquest
+						h(i(48155)),	-- Runetotem's Leggings of Conquest
+						h(i(48190)),	-- Runetotem's Legguards of Conquest
+						h(i(48187)),	-- Runetotem's Mantle of Conquest
+						h(i(48189)),	-- Runetotem's Raiments of Conquest
+						h(i(48156)),	-- Runetotem's Robe of Conquest
+						h(i(48191)),	-- Runetotem's Shoulderpads of Conquest
+						h(i(48157)),	-- Runetotem's Spaulders of Conquest
+						h(i(48185)),	-- Runetotem's Trousers of Conquest
+						h(i(48186)),	-- Runetotem's Vestments of Conquest
 						i(51149, {	-- Sanctified Lasherweave Cover (N)
 							["cost"] = {
 								{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
@@ -2673,11 +2808,11 @@ _.Zones =
 						i(50089),	-- Shadowblade Helmet
 						i(50090),	-- Shadowblade Legplates
 						i(50105),	-- Shadowblade Pauldrons
-						i(48219),	-- VanCleef's Breastplate of Conquest
-						i(48222),	-- VanCleef's Gauntlets of Conquest
-						i(48218),	-- VanCleef's Helmet of Conquest
-						i(48220),	-- VanCleef's Legplates of Conquest
-						i(48221),	-- VanCleef's Pauldrons of Conquest
+						a(i(48219)),	-- VanCleef's Breastplate of Conquest
+						a(i(48222)),	-- VanCleef's Gauntlets of Conquest
+						a(i(48218)),	-- VanCleef's Helmet of Conquest
+						a(i(48220)),	-- VanCleef's Legplates of Conquest
+						a(i(48221)),	-- VanCleef's Pauldrons of Conquest
 					},
 				}),
 				n(35496,  {	-- Rueben Lauren <Cloth Armor Merchant>
@@ -3261,252 +3396,7 @@ _.Zones =
 				}),
 				n(28701,  {	-- Timothy Jones <Jewelcrafting Trainer>
 					["coord"] = { 40.3, 35.1, 125 },
-					["g"] = {
-						i(47010, {	-- Design: Accurate Dreadstone
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46917, {	-- Design: Bold Cardinal Ruby
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46916, {	-- Design: Brilliant Cardinal Ruby
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46930, {	-- Design: Brilliant Cardinal Ruby
-							["spellID"] = 0,	-- This is now available via 46916, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(47015, {	-- Design: Champion's Ametrine
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46949, {	-- Design: Deadly Ametrine
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(47011, {	-- Design: Deadly Ametrine
-							["spellID"] = 0,	-- This is now available via 46949, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46941, {	-- Design: Defender's Dreadstone
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(47020, {	-- Design: Deft Ametrine
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(47023, {	-- Design: Deft Ametrine
-							["spellID"] = 0,	-- This is now available via 47020, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46918, {	-- Design: Delicate Cardinal Ruby
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46919, {	-- Design: Delicate Cardinal Ruby
-							["spellID"] = 0,	-- This is now available via 46918, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46912, {	-- Design: Energized Eye of Zul
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46910, {	-- Design: Energized Eye of Zul
-							["spellID"] = 0,	-- This is now available via 46912, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46953, {	-- Design: Etched Dreadstone
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(47019, {	-- Design: Fierce Ametrine
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46923, {	-- Design: Flashing Cardinal Ruby
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46904, {	-- Design: Forceful Eye of Zul
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46956, {	-- Design: Glinting Dreadstone
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46945, {	-- Design: Glinting Dreadstone
-							["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46946, {	-- Design: Glinting Dreadstone
-							["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(47008, {	-- Design: Glinting Dreadstone
-							["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46942, {	-- Design: Guardian's Dreadstone
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46948, {	-- Design: Inscribed Ametrine
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46901, {	-- Design: Jagged Eye of Zul
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46944, {	-- Design: Jagged Eye of Zul
-							["spellID"] = 0,	-- This is now available via 46901, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46909, {	-- Design: Lightning Eye of Zul
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46907, {	-- Design: Lightning Eye of Zul
-							["spellID"] = 0,	-- This is now available via 46909, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(47021, {	-- Design: Lucent Ametrine
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(47016, {	-- Design: Lucent Ametrine
-							["spellID"] = 0,	-- This is now available via 47021, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46905, {	-- Design: Misty Eye of Zul
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46906, {	-- Design: Misty Eye of Zul
-							["spellID"] = 0,	-- This is now available via 46905, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46943, {	-- Design: Mysterious Dreadstone
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46932, {	-- Design: Mystic King's Amber
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(49112, {	-- Design: Nightmare Tear
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46899, {	-- Design: Nimble Eye of Zul
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46950, {	-- Design: Potent Ametrine
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46920, {	-- Design: Precise Cardinal Ruby
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46937, {	-- Design: Purified Dreadstone
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46900, {	-- Design: Purified Dreadstone
-							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46903, {	-- Design: Purified Dreadstone
-							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46947, {	-- Design: Purified Dreadstone
-							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46939, {	-- Design: Purified Dreadstone
-							["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46933, {	-- Design: Quick King's Amber
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46911, {	-- Design: Radiant Eye of Zul
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46908, {	-- Design: Radiant Eye of Zul
-							["spellID"] = 0,	-- This is now available via 46911, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(47007, {	-- Design: Reckless Ametrine
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46897, {	-- Design: Regal Eye of Zul
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46940, {	-- Design: Regal Eye of Zul
-							["spellID"] = 0,	-- This is now available via 46897, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(47022, {	-- Design: Resolute Ametrine
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(47018, {	-- Design: Resplendent Ametrine
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46928, {	-- Design: Rigid Majestic Zircon
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46913, {	-- Design: Shattered Eye of Zul
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46938, {	-- Design: Shifting Dreadstone
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46934, {	-- Design: Shifting Dreadstone
-							["spellID"] = 0,	-- This is now available via 46938, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46929, {	-- Design: Smooth King's Amber
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46921, {	-- Design: Smooth King's Amber
-							["spellID"] = 0,	-- This is now available via 46929, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46924, {	-- Design: Solid Majestic Zircon
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46935, {	-- Design: Sovereign Dreadstone
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46925, {	-- Design: Sparkling Majestic Zircon
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46927, {	-- Design: Sparkling Majestic Zircon
-							["spellID"] = 0,	-- This is now available via 46925, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(47017, {	-- Design: Stalwart Ametrine
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(47012, {	-- Design: Stalwart Ametrine
-							["spellID"] = 0,	-- This is now available via 47017, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46898, {	-- Design: Steady Eye of Zul
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46926, {	-- Design: Stormy Majestic Zircon
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46922, {	-- Design: Subtle King's Amber
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46931, {	-- Design: Subtle King's Amber
-							["spellID"] = 0,	-- This is now available via 46922, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46902, {	-- Design: Timeless Dreadstone
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46936, {	-- Design: Timeless Dreadstone
-							["spellID"] = 0,	-- This is now available via 46902, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46915, {	-- Design: Turbid Eye of Zul
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46914, {	-- Design: Turbid Eye of Zul
-							["spellID"] = 0,	-- This is now available via 46915, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(46951, {	-- Design: Veiled Dreadstone
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(46952, {	-- Design: Willful Ametrine
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-					},
+					["g"] = COMMON_WRATH_JEWELCRAFTING_RECIPES,
 				}),
 				n(28991,  {	-- Valaden Silverblade <Sword Merchant>
 					["coord"] = { 54.5, 62.9, 125 },

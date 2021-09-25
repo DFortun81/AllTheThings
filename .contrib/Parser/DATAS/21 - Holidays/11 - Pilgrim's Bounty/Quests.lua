@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = 28},
+_.Holidays = bubbleDown({["u"] = PILGRIMS_BOUNTY},
 {
 	holiday(235466, {	-- Pilgrim's Bounty
 		n(QUESTS, {
@@ -17,66 +17,66 @@ _.Holidays = bubbleDown({["u"] = 28},
 					{ "n", 20102 },	-- Goblin Commoner
 				},
 				["maps"] = {
-					10,		-- Northern Barrens
-					37,		-- Elwynn Forest
-					71,		-- Tanaris
-					83,		-- Winterspring
-					84,		-- Stormwind City
-					87,		-- Ironforge
-					89,		-- Darnassus
+					NORTHERN_BARRENS,
+					ELWYNN_FOREST,
+					TANARIS,
+					WINTERSPRING,
+					STORMWIND_CITY,
+					IRONFORGE,
+					DARNASSUS,
 					THE_EXODAR,
 					NETHERSTORM,
 					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
-					210,	-- The Cape of Stranglethorn
-					504,	-- Isle of Thunder
+					THE_CAPE_OF_STRANGLETHORN,
+					ISLE_OF_THUNDER,
 				},
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14064, {	-- Sharing a Bountiful Feast (Alliance)
 				["provider"] = { "n", 34653 },	-- Bountiful Table Hostess
-				["maps"] = { 37, },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14023, {	-- Spice Bread Stuffing (Alliance)
 				["provider"] = { "n", 34675 },	-- Gregory Tabor
-				["maps"] = { 37, },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14024, {	-- Pumpkin Pie (Alliance)
 				["provider"] = { "n", 34744 },	-- Jasper Moore
-				["maps"] = { 37, },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["sourceQuests"] = { 14023, },	-- Spice Bread Stuffing (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14028, {	-- Cranberry Chutney (Alliance)
 				["provider"] = { "n", 34644 },	-- Edward Winslow
-				["maps"] = { 27, },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 				["sourceQuests"] = { 14024, },	-- Pumpkin Pie (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14030, {	-- They're Ravenous In Darnassus (Alliance)
 				["provider"] = { "n", 34744 },	-- Jasper Moore
-				["maps"] = { 37, },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["sourceQuests"] = { 14028, },	-- Cranberry Chutney (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14033, {	-- Candied Sweet Potatoes (Alliance)
 				["provider"] = { "n", 34676 },	-- Isaac Allerton
-				["maps"] = { 89, },	-- Darnassus
+				["maps"] = { DARNASSUS },
 				["sourceQuests"] = { 14030, },	-- They're Ravenous In Darnassus (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14035, {	-- Slow-roasted Turkey (Alliance)
 				["provider"] = { "n", 34675 },	-- Gregory Tabor
-				["maps"] = { 37, },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["sourceQuests"] = { 14033, },	-- Candied Sweet Potatoes (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -86,7 +86,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 				["provider"] = { "n", 34708 },	-- Caitrin Ironkettle
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 27, },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -104,7 +104,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 				["provider"] = { "n", 34708 },	-- Caitrin Ironkettle
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 27, },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -122,7 +122,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 				["provider"] = { "n", 34710 },	-- Ellen Moore
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 37, },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -139,9 +139,9 @@ _.Holidays = bubbleDown({["u"] = 28},
 			q(14054, {	-- Easy As Pie (Alliance)
 				["provider"] = { "n", 34711 },	-- Mary Allerton
 				["isDaily"] = true,
-				["coord"] = { 61.8, 46.2, 89 },
+				["coord"] = { 61.8, 46.2, DARNASSUS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 89 },	-- Darnassus
+				["maps"] = { DARNASSUS },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -159,7 +159,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 				["provider"] = { "n", 34744 },	-- Jasper Moore
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 37 },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -186,18 +186,18 @@ _.Holidays = bubbleDown({["u"] = 28},
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					10,		-- Northern Barrens
-					71,		-- Tanaris
-					83,		-- Winterspring
-					85,		-- Orgrimmar
-					88,		-- Thunder Bluff
-					90,		-- Undercity
+					NORTHERN_BARRENS,
+					TANARIS,
+					WINTERSPRING,
+					ORGRIMMAR,
+					THUNDER_BLUFF,
+					UNDERCITY,
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
 					120,	-- The Storm Peaks
 					125,	-- Dalaran (Northrend)
-					210,	-- The Cape of Stranglethorn
+					THE_CAPE_OF_STRANGLETHORN,
 				},
 			}),
 			q(14065, {	-- Sharing a Bountiful Feast (Horde)
@@ -205,49 +205,49 @@ _.Holidays = bubbleDown({["u"] = 28},
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					1,		-- Durotar
-					18,		-- Tirisfal Glades
+					DUROTAR,
+					TIRISFAL_GLADES,
 					EVERSONG_WOODS,
 					HELLFIRE_PENINSULA,
 				},
 			}),
 			q(14037, {	-- Spice Bread Stuffing (Horde)
 				["provider"] = { "n", 34677 },	-- Miles Standish
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14040, {	-- Pumpkin Pie (Horde)
 				["provider"] = { "n", 34768 },	-- William Mullins
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["sourceQuests"] = { 14037, },	-- Spice Bread Stuffing (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14041, {	-- Cranberry Chutney (Horde)
 				["provider"] = { "n", 34679 },	-- Francis Eaton
-				["maps"] = { 1, },	-- Durotar
+				["maps"] = { DUROTAR },
 				["sourceQuests"] = { 14040, },	-- Pumpkin Pie (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14043, {	-- Candied Sweet Potatoes (Horde)
 				["provider"] = { "n", 34678 },	-- Dokin Farplain
-				["maps"] = { 88, },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 				["sourceQuests"] = { 14041, },	-- Cranberry Chutney (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14044, {	-- Undersupplied in the Undercity (Horde)
 				["provider"] = { "n", 34679 },	-- Francis Eaton
-				["maps"] = { 1, },	-- Durotar
+				["maps"] = { DUROTAR },
 				["sourceQuests"] = { 14043, },	-- Candied Sweet Potatoes (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14047, {	-- Slow-roasted Turkey (Horde)
 				["provider"] = { "n", 34677 },	-- Miles Standish
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["sourceQuests"] = { 14044 },	-- Undersupplied in the Undercity (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -257,7 +257,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 				["provider"] = { "n", 34768 },	-- William Mullins
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -275,7 +275,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 				["provider"] = { "n", 34712 },	-- Roberta Carter
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -293,7 +293,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 				["provider"] = { "n", 34713 },	-- Mahara Goldwheat
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 88 },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -311,7 +311,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 				["provider"] = { "n", 34713 },	-- Ondani Greatmill
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 1, },	-- Durotar
+				["maps"] = { DUROTAR },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -329,7 +329,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 				["provider"] = { "n", 34713 },	-- Ondani Greatmill
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 1, },	-- Durotar
+				["maps"] = { DUROTAR },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire

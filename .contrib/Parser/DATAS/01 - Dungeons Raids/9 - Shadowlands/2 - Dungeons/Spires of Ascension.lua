@@ -2,13 +2,13 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(9, {	-- Shadowlands
+_.Instances = { tier(SL_TIER, {
 	inst(1186, {	-- Spires of Ascension
 		["coord"] = { 58.5, 28.5, BASTION },
 		["maps"] = {
 			1692,	-- Honor's Ascent
-			1693,	-- Spires of Ascension
-			1694,	--
+			1693,	-- Gardens of Repose
+			1694,	-- Font of Fealty
 			1695,	-- Seat of the Archon
 		},
 		["lvl"] = { 50 },
@@ -19,20 +19,98 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["collectible"] = false,
 					["lvl"] = { 60 },
 					["g"] = {
-						-- spires of ascension(gardens of repose)
-						n(-1433948, {	-- Shard ##
+						-- spires of ascension (gardens of repose)
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "After Kin-Tara, behind a lounge chair on the left side of the fountain.",
 							["questID"] = 61298,
 						}),
-						n(-1433949, {	-- Shard ##
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "After Ventunax, behind the left-hand torch next to the Winged Guardian that will take you to the Font of Fealty.",
 							["questID"] = 61299,
 						}),
-						-- spires of ascension(font of feality)
-						n(-1433950, {	-- Shard ##
+						-- spires of ascension (font of feality)
+						n(-1433901, {	-- Anima Crystal Shard
 							["description"] = "Can be collected before or after Oryphrion.  There is a heart-shaped whirlpool in the middle of the room.  The shard is at the top of the heart in the middle.  After the boss, there will be two Winged Guardians on either side of it.",
 							["questID"] = 61300
 						}),
+					},
+				}),
+			}),
+			n(CONDUITS, {
+				e(2399, {	-- Kin-Tara
+					["crs"] = {
+						163077,	-- Azules
+						162059,	-- Kin-Tara
+					},
+					["g"] = {
+						i(183483),	-- Carnivorous Instinct
+						i(182610),	-- Ferocious Appetite
+						i(182468),	-- Mortal Combo
+						i(182144),	-- Nature's Reach
+						i(183513),	-- Stiletto Staccato
+					},
+				}),
+				e(2416, {	-- Ventunax
+					["crs"] = { 162058 },	-- Ventunax
+					["g"] = {
+						i(183508),	-- Ambidexterity
+						i(181435),	-- Calculated Strikes
+						i(182478),	-- Corrupting Leer
+						i(182462),	-- Expurgation
+						i(181389),	-- Shivering Core
+					},
+				}),
+				e(2414, {	-- Oryphrion
+					["crs"] = { 162060 },	-- Oryphrion
+					["g"] = {
+						i(182187),	-- Meat Shield
+						i(180944),	-- Merciless Bonegrinder
+						i(182753),	-- Royal Decree
+						i(182471),	-- Soul Furnace
+					},
+				}),
+				e(2412, {	-- Devos, Paragon of Doubt
+					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
+					["g"] = {
+						i(182649),	-- Brutal Projectiles
+						i(182667),	-- Focused Light
+						i(182135),	-- Focused Lightning
+						i(182141),	-- Holy Oration
+						i(183488),	-- Unstoppable Growth
+						i(181465),	-- Xuen's Bond
+					},
+				}),
+			}),
+			n(LEGENDARIES, {
+				e(2399, {	-- Kin-Tara
+					["crs"] = {
+						163077,	-- Azules
+						162059,	-- Kin-Tara
+					},
+					["g"] = {
+						i(183231),	-- Memory of a Cat-eye Curio
+					},
+				}),
+				e(2416, {	-- Ventunax
+					["crs"] = { 162058 },	-- Ventunax
+					["g"] = {
+						i(183338),	-- Memory of Celerity
+						i(183365),	-- Memory of the Consuming Wrath
+					},
+				}),
+				e(2414, {	-- Oryphrion
+					["crs"] = { 162060 },	-- Oryphrion
+					["g"] = {
+						i(183313),	-- Memory of the Lightbringer's Tempest
+						i(183392),	-- Memory of the Thunderlord
+					},
+				}),
+				e(2412, {	-- Devos, Paragon of Doubt
+					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
+					["g"] = {
+						i(183354),	-- Memory of the Doom Winds
+						i(183257),	-- Memory of the Rylakstalker's Fangs
+						i(183290),	-- Memory of Ancient Teachings
 					},
 				}),
 			}),
@@ -43,12 +121,6 @@ _.Instances = { tier(9, {	-- Shadowlands
 						162059,	-- Kin-Tara
 					},
 					["g"] = {
-						i(183483),	-- Carnivorous Instinct
-						i(182610),	-- Ferocious Appetite
-						i(183231),	-- Memory of a Cat-eye Curio
-						i(182468),	-- Mortal Combo
-						i(182144),	-- Nature's Reach
-						i(183513),	-- Stiletto Staccato
 						i(180097),	-- Quarterstaff of Discordant Ethic
 						i(180115),	-- Azure-Venom Choker
 						i(180100),	-- Forsworn Stalker's Hauberk
@@ -60,13 +132,6 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2416, {	-- Ventunax
 					["crs"] = { 162058 },	-- Ventunax
 					["g"] = {
-						i(183508),	-- Ambidexterity
-						i(181435),	-- Calculated Strikes
-						i(182478),	-- Corrupting Leer
-						i(182462),	-- Expurgation
-						i(183338),	-- Memory of Celerity
-						i(183365),	-- Memory of the Consuming Wrath
-						i(181389),	-- Shivering Core
 						i(180095),	-- Penitent Edge
 						i(180104),	-- Distorted Construct's Gauntlets
 						i(180110),	-- Dark Praetorian's Clasp
@@ -78,12 +143,6 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2414, {	-- Oryphrion
 					["crs"] = { 162060 },	-- Oryphrion
 					["g"] = {
-						i(182187),	-- Meat Shield
-						i(183313),	-- Memory of the Lightbringer's Tempest
-						i(183392),	-- Memory of the Thunderlord
-						i(180944),	-- Merciless Bonegrinder
-						i(182753),	-- Royal Decree
-						i(182471),	-- Soul Furnace
 						i(180112),	-- The Philosopher
 						i(180106),	-- Vicious Surge Faceguard
 						i(180113),	-- Thunderous Echo Vambraces
@@ -93,19 +152,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(180117),	-- Empyreal Ordnance
 					},
 				}),
-				e(2412, {	-- 	Devos, Paragon of Doubt
-					["crs"] = { 162061 },	-- 	Devos, Paragon of Doubt
+				e(2412, {	-- Devos, Paragon of Doubt
+					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
 					["g"] = {
 						ach(14326),	-- Spires of Ascension
-						i(182649),	-- Brutal Projectiles
-						i(182667),	-- Focused Light
-						i(182135),	-- Focused Lightning
-						i(182141),	-- Holy Oration
-						i(183290),	-- Ancient Teachings
-						i(183354),	-- Memory of the Doom Winds
-						i(183257),	-- Memory of the Rylakstalker's Fangs
-						i(183488),	-- Unstoppable Growth
-						i(181465),	-- Xuen's Bond
 						i(180096),	-- Devos' Cacophonous Poleaxe
 						i(180123),	-- Drape of Twisted Loyalties
 						i(180099),	-- Breastplate of Brutal Dissonance
@@ -125,12 +175,6 @@ _.Instances = { tier(9, {	-- Shadowlands
 							162059,	-- Kin-Tara
 						},
 						["g"] = {
-							i(183483),	-- Carnivorous Instinct
-							i(182610),	-- Ferocious Appetite
-							i(183231),	-- Memory of a Cat-eye Curio
-							i(182468),	-- Mortal Combo
-							i(182144),	-- Nature's Reach
-							i(183513),	-- Stiletto Staccato
 							i(180097),	-- Quarterstaff of Discordant Ethic
 							i(180115),	-- Azure-Venom Choker
 							i(180100),	-- Forsworn Stalker's Hauberk
@@ -142,13 +186,6 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2416, {	-- Ventunax
 						["crs"] = { 162058 },	-- Ventunax
 						["g"] = {
-							i(183508),	-- Ambidexterity
-							i(181435),	-- Calculated Strikes
-							i(182478),	-- Corrupting Leer
-							i(182462),	-- Expurgation
-							i(183338),	-- Memory of Celerity
-							i(183365),	-- Memory of the Consuming Wrath
-							i(181389),	-- Shivering Core
 							i(180095),	-- Penitent Edge
 							i(180104),	-- Distorted Construct's Gauntlets
 							i(180110),	-- Dark Praetorian's Clasp
@@ -160,12 +197,6 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2414, {	-- Oryphrion
 						["crs"] = { 162060 },	-- Oryphrion
 						["g"] = {
-							i(182187),	-- Meat Shield
-							i(183313),	-- Memory of the Lightbringer's Tempest
-							i(183392),	-- Memory of the Thunderlord
-							i(180944),	-- Merciless Bonegrinder
-							i(182753),	-- Royal Decree
-							i(182471),	-- Soul Furnace
 							i(180112),	-- The Philosopher
 							i(180106),	-- Vicious Surge Faceguard
 							i(180113),	-- Thunderous Echo Vambraces
@@ -175,19 +206,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(180117),	-- Empyreal Ordnance
 						},
 					}),
-					e(2412, {	-- 	Devos, Paragon of Doubt
-						["crs"] = { 162061 },	-- 	Devos, Paragon of Doubt
+					e(2412, {	-- Devos, Paragon of Doubt
+						["crs"] = { 162061 },	--	Devos, Paragon of Doubt
 						["g"] = {
 							ach(14324),	-- Heroic: Spires of Ascension
-							i(182649),	-- Brutal Projectiles
-							i(182667),	-- Focused Light
-							i(182135),	-- Focused Lightning
-							i(182141),	-- Holy Oration
-							i(183290),	-- Ancient Teachings
-							i(183354),	-- Memory of the Doom Winds
-							i(183257),	-- Memory of the Rylakstalker's Fangs
-							i(183488),	-- Unstoppable Growth
-							i(181465),	-- Xuen's Bond
 							i(180096),	-- Devos' Cacophonous Poleaxe
 							i(180123),	-- Drape of Twisted Loyalties
 							i(180099),	-- Breastplate of Brutal Dissonance
@@ -212,12 +234,6 @@ _.Instances = { tier(9, {	-- Shadowlands
 							162059,	-- Kin-Tara
 						},
 						["g"] = {
-							i(183483),	-- Carnivorous Instinct
-							i(182610),	-- Ferocious Appetite
-							i(183231),	-- Memory of a Cat-eye Curio
-							i(182468),	-- Mortal Combo
-							i(182144),	-- Nature's Reach
-							i(183513),	-- Stiletto Staccato
 							i(180097),	-- Quarterstaff of Discordant Ethic
 							i(180115),	-- Azure-Venom Choker
 							i(180100),	-- Forsworn Stalker's Hauberk
@@ -229,13 +245,6 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2416, {	-- Ventunax
 						["crs"] = { 162058 },	-- Ventunax
 						["g"] = {
-							i(183508),	-- Ambidexterity
-							i(181435),	-- Calculated Strikes
-							i(182478),	-- Corrupting Leer
-							i(182462),	-- Expurgation
-							i(183338),	-- Memory of Celerity
-							i(183365),	-- Memory of the Consuming Wrath
-							i(181389),	-- Shivering Core
 							i(180095),	-- Penitent Edge
 							i(180104),	-- Distorted Construct's Gauntlets
 							i(180110),	-- Dark Praetorian's Clasp
@@ -248,12 +257,6 @@ _.Instances = { tier(9, {	-- Shadowlands
 						["crs"] = { 162060 },	-- Oryphrion
 						["g"] = {
 							ach(14331),	-- Goliath Offline
-							i(182187),	-- Meat Shield
-							i(183313),	-- Memory of the Lightbringer's Tempest
-							i(183392),	-- Memory of the Thunderlord
-							i(180944),	-- Merciless Bonegrinder
-							i(182753),	-- Royal Decree
-							i(182471),	-- Soul Furnace
 							i(180112),	-- The Philosopher
 							i(180106),	-- Vicious Surge Faceguard
 							i(180113),	-- Thunderous Echo Vambraces
@@ -263,20 +266,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(180117),	-- Empyreal Ordnance
 						},
 					}),
-					e(2412, {	-- 	Devos, Paragon of Doubt
-						["crs"] = { 162061 },	-- 	Devos, Paragon of Doubt
+					e(2412, {	-- Devos, Paragon of Doubt
+						["crs"] = { 162061 },	--	Devos, Paragon of Doubt
 						["g"] = {
 							ach(14325),	-- Mythic: Spires of Ascension
 							ach(14323),	-- ExSPEARiential
-							i(182649),	-- Brutal Projectiles
-							i(182667),	-- Focused Light
-							i(182135),	-- Focused Lightning
-							i(182141),	-- Holy Oration
-							i(183290),	-- Ancient Teachings
-							i(183354),	-- Memory of the Doom Winds
-							i(183257),	-- Memory of the Rylakstalker's Fangs
-							i(183488),	-- Unstoppable Growth
-							i(181465),	-- Xuen's Bond
 							i(180096),	-- Devos' Cacophonous Poleaxe
 							i(180123),	-- Drape of Twisted Loyalties
 							i(180099),	-- Breastplate of Brutal Dissonance

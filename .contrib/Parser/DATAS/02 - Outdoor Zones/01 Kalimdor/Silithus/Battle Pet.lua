@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(81, {	-- Silithus
-			filter(101, {	-- Pet Battle
+		m(SILITHUS, {
+			filter(BATTLE_PETS, {
 				p(406, {	-- Beetle
 					["crs"] = { 61319 },	-- Beetle
 				}),

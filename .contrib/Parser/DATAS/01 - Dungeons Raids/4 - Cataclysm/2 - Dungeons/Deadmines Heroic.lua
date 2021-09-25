@@ -2,8 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(4, {	-- Cataclysm
-	inst(63, { 	-- Deadmines
+_.Instances = { tier(CATA_TIER, {
+	inst(63, {	-- Deadmines
 		["mapID"] = 291,
 		["maps"] = { 292 },
 		["coord"] = { 25.59, 50.97, 55 },	-- Deadmines, The Deadmines [Westfall]

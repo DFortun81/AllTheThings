@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(26, {	-- The Hinterlands
-			filter(101, {	-- Pet Battle
+		m(THE_HINTERLANDS, {
+			filter(BATTLE_PETS, {
 				p(449, {	-- Brown Marmot
 					["crs"] = { 61752 },	-- Brown Marmot
 				}),
@@ -27,7 +27,7 @@ _.Zones =
 				}),
 				q(31910, {	-- David Kosse
 					["provider"] = { "n", 66478 },	-- David Kosse
-					["coord"] = { 62.9, 54.5, 26 },
+					["coord"] = { 62.9, 54.5, THE_HINTERLANDS },
 					["isDaily"] = true,
 				}),
 			}),

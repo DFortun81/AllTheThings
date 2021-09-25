@@ -2,12 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(369, { 	-- Siege of Orgrimmar
-		["order"] = "05",
+_.Instances = { tier(MOP_TIER, {
+	inst(369, {	-- Siege of Orgrimmar
 		["isRaid"] = true,
 		["coords"] = {
-			{ 72.3, 44.3, 390 },	-- old Vale
+			{ 72.3, 44.3, VALE_OF_ETERNAL_BLOSSOMS },	-- old Vale
 			{ 72.3, 44.3, 1530 },	-- new Vale
 		},
 		["mapID"] = 556,
@@ -48,6 +47,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(5640),	-- Recipe: Rage Potion
 					},
 				}),
+			}),
+			n(COMMON_BOSS_DROPS, {
+				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
+				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
+				un(REMOVED_FROM_GAME, i(94593)),	-- Secrets of the Empire
+				un(REMOVED_FROM_GAME, i(94594)),	-- Titan Runestone
 			}),
 			d(-1, {	-- Raid Finder (Pre-Patch 6.0) >> Items marked "Raid Finder" after 6.0 <<
 				["u"] = REMOVED_FROM_GAME,
@@ -337,7 +342,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Flexible difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				["g"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						un(REMOVED_FROM_GAME, i(105838)),	-- Aeth's Swiftcinder Cloak Normal
 						un(38, i(105830)),	-- Brave Niunai's Cloak Normal (confirmed to drop from Ordos cache on July 23, 2020)
 						un(38, i(105826)),	-- Cape of the Alpha Normal (confirmed to drop from Ordos cache on July 23, 2020)
@@ -636,7 +641,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Normal difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				["g"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						un(REMOVED_FROM_GAME, i(103846)),	-- Aeth's Swiftcinder Cloak Heroic
 						un(REMOVED_FROM_GAME, i(103960)),	-- Brave Niunai's Cloak Heroic
 						un(REMOVED_FROM_GAME, i(103935)),	-- Cape of the Alpha Heroic
@@ -1185,7 +1190,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Heroic difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				["g"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						un(REMOVED_FROM_GAME, i(105852)),	-- Aeth's Swiftcinder Cloak Mythic
 						un(REMOVED_FROM_GAME, i(105844)),	-- Brave Niunai's Cloak Mythic
 						un(REMOVED_FROM_GAME, i(105840)),	-- Cape of the Alpha Mythic
@@ -1730,8 +1735,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				},
 			}),
 			d(17, {	-- LFR
-				["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.|r",
-				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
+				["description"] = "Speak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.",
+				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },	-- Seat of Knowledge
 				["g"] = {
 					n(COMMON_BOSS_DROPS, {
 						un(REMOVED_FROM_GAME, i(104275, {	-- Twisted Treasures of the Vale
@@ -1819,626 +1824,22 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							},
 						})),
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						-- Confirmed drops are uncommented
-						--[[
-						i(113224, {	-- Aeth's Swiftcinder Cloak
-							["crs"] = {
-								72658,	-- Amalgamated Hubris
-								73191,	-- Aqueous Defender
-								72131,	-- Blind Blademaster
-								73188,	-- Captive Cave Bat
-								72564,	-- Doomlord<Grol'dar's Minion>
-								72354,	-- Dragonmaw Bonecrusher
-								72365,	-- Dragonmaw Cannoneer
-								72350,	-- Dragonmaw Elite Grunt
-								72351,	-- Dragonmaw Flagbearer
-								72367,	-- Dragonmaw Tidal Shaman
-								72655,	-- Fragment of Pride
-								73452,	-- Harbinger of Y'Shaarj
-								72194,	-- Hellscream Demolisher
-								73012,	-- Klaxxi Skirmisher
-								71772,	-- Kor'kron Assassin
-								72728,	-- Kor'kron Blood Axe
-								72770,	-- Kor'kron Dark Farseer
-								72451,	-- Kor'kron Dark Shaman
-								72452,	-- Kor'kron Dire Wolf
-								72412,	-- Kor'kron Grunt
-								72784,	-- Kor'kron Gunner
-								74158,	-- Kor'kron Gunner
-								73194,	-- Kor'kron Iron Scorpion
-								73904,	-- Kor'kron Iron Sentinel
-								71770,	-- Kor'kron Ironblade
-								72421,	-- Kor'kron Overseer
-								72411,	-- Kor'kron Provisioner
-								73414,	-- Kor'kron Reaper
-								72150,	-- Kor'kron Shadowmage
-								72744,	-- Kor'kron Skullsplitter
-								72768,	-- Kor'kron War Wolf
-								71773,	-- Kor'kron Warshaman
-								72954,	-- Kor'thik Honor Guard
-								72791,	-- Lingering Corruption
-								72496,	-- Overseer Thathung
-								72929,	-- Sra'thik Amber-Master
-								73152,	-- Storeroom Guard
-								73349,	-- Tormented Initiate
-								73775,	-- War Master Kragg
-							},
-						}),
-						i(113231, {	-- Brave Niunai's Cloak
-							["crs"] = {
-								72658,	-- Amalgamated Hubris
-								73191,	-- Aqueous Defender
-								72354,	-- Dragonmaw Bonecrusher
-								72365,	-- Dragonmaw Cannoneer
-								72350,	-- Dragonmaw Elite Grunt
-								72367,	-- Dragonmaw Tidal Shaman
-								72655,	-- Fragment of Pride
-								73452,	-- Harbinger of Y'Shaarj
-								73012,	-- Klaxxi Skirmisher
-								71771,	-- Kor'kron Arcweaver
-								71772,	-- Kor'kron Assassin
-								72728,	-- Kor'kron Blood Axe
-								72770,	-- Kor'kron Dark Farseer
-								72451,	-- Kor'kron Dark Shaman
-								73539,	-- Kor'kron Den Mother
-								72452,	-- Kor'kron Dire Wolf
-								72412,	-- Kor'kron Grunt
-								72784,	-- Kor'kron Gunner
-								73904,	-- Kor'kron Iron Sentinel
-								71770,	-- Kor'kron Ironblade
-								72421,	-- Kor'kron Overseer
-								73414,	-- Kor'kron Reaper
-								72150,	-- Kor'kron Shadowmage
-								72744,	-- Kor'kron Skullsplitter
-								71773,	-- Kor'kron Warshaman
-								73250,	-- Kor'kron Wild Gun
-								73541,	-- Kor'kron Wolf Pup
-								72954,	-- Kor'thik Honor Guard
-								72927,	-- Kovok
-								72791,	-- Lingering Corruption
-								72490,	-- Overseer Mojka
-								73223,	-- Pterrordax
-								72929,	-- Sra'thik Amber-Master
-								73152,	-- Storeroom Guard
-								73349,	-- Tormented Initiate
-							},
-						}),
-						i(113226, {	-- Cape of the Alpha
-							["crs"] = {
-								72658,	-- Amalgamated Hubris
-								73188,	-- Captive Cave Bat
-								72564,	-- Doomlord<Grol'dar's Minion>
-								72354,	-- Dragonmaw Bonecrusher
-								72365,	-- Dragonmaw Cannoneer
-								72350,	-- Dragonmaw Elite Grunt
-								72351,	-- Dragonmaw Flagbearer
-								72367,	-- Dragonmaw Tidal Shaman
-								72655,	-- Fragment of Pride
-								73452,	-- Harbinger of Y'Shaarj
-								72194,	-- Hellscream Demolisher
-								73012,	-- Klaxxi Skirmisher
-								71771,	-- Kor'kron Arcweaver
-								71772,	-- Kor'kron Assassin
-								72728,	-- Kor'kron Blood Axe
-								72770,	-- Kor'kron Dark Farseer
-								72451,	-- Kor'kron Dark Shaman
-								72452,	-- Kor'kron Dire Wolf
-								72412,	-- Kor'kron Grunt
-								74158,	-- Kor'kron Gunner
-								72784,	-- Kor'kron Gunner
-								73904,	-- Kor'kron Iron Sentinel
-								71770,	-- Kor'kron Ironblade
-								72421,	-- Kor'kron Overseer
-								73414,	-- Kor'kron Reaper
-								72150,	-- Kor'kron Shadowmage
-								72744,	-- Kor'kron Skullsplitter
-								73538,	-- Kor'kron War Wolf
-								71773,	-- Kor'kron Warshaman
-								73250,	-- Kor'kron Wild Gun
-								73541,	-- Kor'kron Wolf Pup
-								72954,	-- Kor'thik Honor Guard
-								72791,	-- Lingering Corruption
-								72433,	-- Mokvar the Treasurer
-								72490,	-- Overseer Mojka
-								72496,	-- Overseer Thathung
-								72929,	-- Sra'thik Amber-Master
-								73349,	-- Tormented Initiate
-								72434,	-- Treasury Guard
-								73775,	-- War Master Kragg
-							},
-						}),
-						i(113230, {	-- Drape of the Omega
-							["crs"] = {
-								72658,	-- Amalgamated Hubris
-								73191,	-- Aqueous Defender
-								72663,	-- Arrogance
-								73188,	-- Captive Cave Bat
-								72564,	-- Doomlord<Grol'dar's Minion>
-								72354,	-- Dragonmaw Bonecrusher
-								72365,	-- Dragonmaw Cannoneer
-								72350,	-- Dragonmaw Elite Grunt
-								72351,	-- Dragonmaw Flagbearer
-								72367,	-- Dragonmaw Tidal Shaman
-								73342,	-- Fallen Pool Tender
-								72655,	-- Fragment of Pride
-								73670,	-- Gate-Crasher Sav'ah
-								73452,	-- Harbinger of Y'Shaarj
-								72194,	-- Hellscream Demolisher
-								73012,	-- Klaxxi Skirmisher
-								71771,	-- Kor'kron Arcweaver
-								72728,	-- Kor'kron Blood Axe
-								72770,	-- Kor'kron Dark Farseer
-								72451,	-- Kor'kron Dark Shaman
-								72452,	-- Kor'kron Dire Wolf
-								72412,	-- Kor'kron Grunt
-								72784,	-- Kor'kron Gunner
-								73904,	-- Kor'kron Iron Sentinel
-								71770,	-- Kor'kron Ironblade
-								72421,	-- Kor'kron Overseer
-								72411,	-- Kor'kron Provisioner
-								73414,	-- Kor'kron Reaper
-								72150,	-- Kor'kron Shadowmage
-								72903,	-- Kor'kron Siegemaster
-								72744,	-- Kor'kron Skullsplitter
-								73538,	-- Kor'kron War Wolf
-								72768,	-- Kor'kron War Wolf
-								71773,	-- Kor'kron Warshaman
-								73541,	-- Kor'kron Wolf Pup
-								72954,	-- Kor'thik Honor Guard
-								72927,	-- Kovok
-								72791,	-- Lingering Corruption
-								72433,	-- Mokvar the Treasurer
-								73223,	-- Pterrordax
-								72929,	-- Sra'thik Amber-Master
-								73349,	-- Tormented Initiate
-								72434,	-- Treasury Guard
-							},
-						}),
-						i(113223, {	-- Turtleshell Greatcloak
-							["crs"] = {
-								72658,	-- Amalgamated Hubris
-								73191,	-- Aqueous Defender
-								72663,	-- Arrogance
-								72131,	-- Blind Blademaster
-								73188,	-- Captive Cave Bat
-								72564,	-- Doomlord<Grol'dar's Minion>
-								72354,	-- Dragonmaw Bonecrusher
-								72365,	-- Dragonmaw Cannoneer
-								72350,	-- Dragonmaw Elite Grunt
-								72351,	-- Dragonmaw Flagbearer
-								72367,	-- Dragonmaw Tidal Shaman
-								72655,	-- Fragment of Pride
-								72194,	-- Hellscream Demolisher
-								73012,	-- Klaxxi Skirmisher
-								71772,	-- Kor'kron Assassin
-								72728,	-- Kor'kron Blood Axe
-								72770,	-- Kor'kron Dark Farseer
-								72451,	-- Kor'kron Dark Shaman
-								72452,	-- Kor'kron Dire Wolf
-								72412,	-- Kor'kron Grunt
-								74158,	-- Kor'kron Gunner
-								72784,	-- Kor'kron Gunner
-								73194,	-- Kor'kron Iron Scorpion
-								73904,	-- Kor'kron Iron Sentinel
-								71770,	-- Kor'kron Ironblade
-								73195,	-- Kor'kron Jailer
-								72421,	-- Kor'kron Overseer
-								73414,	-- Kor'kron Reaper
-								72150,	-- Kor'kron Shadowmage
-								72744,	-- Kor'kron Skullsplitter
-								72768,	-- Kor'kron War Wolf
-								71773,	-- Kor'kron Warshaman
-								73250,	-- Kor'kron Wild Gun
-								73541,	-- Kor'kron Wolf Pup
-								72954,	-- Kor'thik Honor Guard
-								72791,	-- Lingering Corruption
-								72433,	-- Mokvar the Treasurer
-								72490,	-- Overseer Mojka
-								72496,	-- Overseer Thathung
-								73223,	-- Pterrordax
-								72929,	-- Sra'thik Amber-Master
-								73349,	-- Tormented Initiate
-								73775,	-- War Master Kragg
-								72661,	-- Zeal
-							},
-						}),
-						i(113225, {	-- Kalaena's Arcane Handwraps
-							["crs"] = {
-								72658,	-- Amalgamated Hubris
-								73188,	-- Captive Cave Bat
-								72354,	-- Dragonmaw Bonecrusher
-								72365,	-- Dragonmaw Cannoneer
-								72350,	-- Dragonmaw Elite Grunt
-								72351,	-- Dragonmaw Flagbearer
-								72367,	-- Dragonmaw Tidal Shaman
-								72655,	-- Fragment of Pride
-								73670,	-- Gate-Crasher Sav'ah
-								73452,	-- Harbinger of Y'Shaarj
-								72194,	-- Hellscream Demolisher
-								73012,	-- Klaxxi Skirmisher
-								71771,	-- Kor'kron Arcweaver
-								71772,	-- Kor'kron Assassin
-								72728,	-- Kor'kron Blood Axe
-								72451,	-- Kor'kron Dark Shaman
-								72452,	-- Kor'kron Dire Wolf
-								72412,	-- Kor'kron Grunt
-								72784,	-- Kor'kron Gunner
-								74158,	-- Kor'kron Gunner
-								73904,	-- Kor'kron Iron Sentinel
-								71770,	-- Kor'kron Ironblade
-								73195,	-- Kor'kron Jailer
-								72411,	-- Kor'kron Provisioner
-								73414,	-- Kor'kron Reaper
-								72150,	-- Kor'kron Shadowmage
-								72744,	-- Kor'kron Skullsplitter
-								72768,	-- Kor'kron War Wolf
-								71773,	-- Kor'kron Warshaman
-								73250,	-- Kor'kron Wild Gun
-								73541,	-- Kor'kron Wolf Pup
-								72954,	-- Kor'thik Honor Guard
-								72927,	-- Kovok
-								72791,	-- Lingering Corruption
-								72433,	-- Mokvar the Treasurer
-								72455,	-- Overseer Komak
-								73223,	-- Pterrordax
-								72929,	-- Sra'thik Amber-Master
-								73152,	-- Storeroom Guard
-								73349,	-- Tormented Initiate
-								72434,	-- Treasury Guard
-								73667,	-- Windreaver Tar'rath
-								72661,	-- Zeal
-							},
-						}),
-						i(113218, {	-- Seebo's Sainted Touch
-							["crs"] = {
-								72658,	-- Amalgamated Hubris
-								73188,	-- Captive Cave Bat
-								72354,	-- Dragonmaw Bonecrusher
-								72365,	-- Dragonmaw Cannoneer
-								72350,	-- Dragonmaw Elite Grunt
-								72351,	-- Dragonmaw Flagbearer
-								72367,	-- Dragonmaw Tidal Shaman
-								73342,	-- Fallen Pool Tender
-								72655,	-- Fragment of Pride
-								73452,	-- Harbinger of Y'Shaarj
-								72194,	-- Hellscream Demolisher
-								73012,	-- Klaxxi Skirmisher
-								71771,	-- Kor'kron Arcweaver
-								71772,	-- Kor'kron Assassin
-								72728,	-- Kor'kron Blood Axe
-								72770,	-- Kor'kron Dark Farseer
-								72451,	-- Kor'kron Dark Shaman
-								72452,	-- Kor'kron Dire Wolf
-								72412,	-- Kor'kron Grunt
-								74158,	-- Kor'kron Gunner
-								72784,	-- Kor'kron Gunner
-								73194,	-- Kor'kron Iron Scorpion
-								73904,	-- Kor'kron Iron Sentinel
-								71770,	-- Kor'kron Ironblade
-								73195,	-- Kor'kron Jailer
-								73414,	-- Kor'kron Reaper
-								72150,	-- Kor'kron Shadowmage
-								72744,	-- Kor'kron Skullsplitter
-								73538,	-- Kor'kron War Wolf
-								72768,	-- Kor'kron War Wolf
-								71773,	-- Kor'kron Warshaman
-								73541,	-- Kor'kron Wolf Pup
-								72954,	-- Kor'thik Honor Guard
-								72791,	-- Lingering Corruption
-								72455,	-- Overseer Komak
-								72490,	-- Overseer Mojka
-								72929,	-- Sra'thik Amber-Master
-								73152,	-- Storeroom Guard
-								73349,	-- Tormented Initiate
-							},
-						}),
-						i(113220, {	-- Crimson Gauntlets of Death
-							["crs"] = {
-								72658,	-- Amalgamated Hubris
-								72131,	-- Blind Blademaster
-								73188,	-- Captive Cave Bat
-								72564,	-- Doomlord<Grol'dar's Minion>
-								72354,	-- Dragonmaw Bonecrusher
-								72365,	-- Dragonmaw Cannoneer
-								72350,	-- Dragonmaw Elite Grunt
-								72351,	-- Dragonmaw Flagbearer
-								72367,	-- Dragonmaw Tidal Shaman
-								73185,	-- Enraged Mushan Beast
-								72655,	-- Fragment of Pride
-								73696,	-- Grand Master Alchemist Ki'xen
-								73452,	-- Harbinger of Y'Shaarj
-								72194,	-- Hellscream Demolisher
-								73012,	-- Klaxxi Skirmisher
-								71771,	-- Kor'kron Arcweaver
-								71772,	-- Kor'kron Assassin
-								72728,	-- Kor'kron Blood Axe
-								72770,	-- Kor'kron Dark Farseer
-								72451,	-- Kor'kron Dark Shaman
-								73539,	-- Kor'kron Den Mother
-								72412,	-- Kor'kron Grunt
-								72784,	-- Kor'kron Gunner
-								74158,	-- Kor'kron Gunner
-								71770,	-- Kor'kron Ironblade
-								73195,	-- Kor'kron Jailer
-								72421,	-- Kor'kron Overseer
-								73414,	-- Kor'kron Reaper
-								72150,	-- Kor'kron Shadowmage
-								72744,	-- Kor'kron Skullsplitter
-								73538,	-- Kor'kron War Wolf
-								71773,	-- Kor'kron Warshaman
-								73541,	-- Kor'kron Wolf Pup
-								72954,	-- Kor'thik Honor Guard
-								72791,	-- Lingering Corruption
-								72490,	-- Overseer Mojka
-								72929,	-- Sra'thik Amber-Master
-								73152,	-- Storeroom Guard
-								73349,	-- Tormented Initiate
-								72661,	-- Zeal
-							},
-						}),
-						i(113221, {	-- Siid's Silent Stranglers
-							["crs"] = {
-								72658,	-- Amalgamated Hubris
-								73191,	-- Aqueous Defender
-								73188,	-- Captive Cave Bat
-								72354,	-- Dragonmaw Bonecrusher
-								72365,	-- Dragonmaw Cannoneer
-								72350,	-- Dragonmaw Elite Grunt
-								72351,	-- Dragonmaw Flagbearer
-								72367,	-- Dragonmaw Tidal Shaman
-								73185,	-- Enraged Mushan Beast
-								73342,	-- Fallen Pool Tender
-								72655,	-- Fragment of Pride
-								73452,	-- Harbinger of Y'Shaarj
-								72194,	-- Hellscream Demolisher
-								73012,	-- Klaxxi Skirmisher
-								71771,	-- Kor'kron Arcweaver
-								71772,	-- Kor'kron Assassin
-								72728,	-- Kor'kron Blood Axe
-								72770,	-- Kor'kron Dark Farseer
-								72451,	-- Kor'kron Dark Shaman
-								72452,	-- Kor'kron Dire Wolf
-								72412,	-- Kor'kron Grunt
-								72784,	-- Kor'kron Gunner
-								73904,	-- Kor'kron Iron Sentinel
-								71770,	-- Kor'kron Ironblade
-								73414,	-- Kor'kron Reaper
-								72150,	-- Kor'kron Shadowmage
-								72744,	-- Kor'kron Skullsplitter
-								73538,	-- Kor'kron War Wolf
-								72768,	-- Kor'kron War Wolf
-								71773,	-- Kor'kron Warshaman
-								73541,	-- Kor'kron Wolf Pup
-								72954,	-- Kor'thik Honor Guard
-								72927,	-- Kovok
-								72791,	-- Lingering Corruption
-								72455,	-- Overseer Komak
-								72490,	-- Overseer Mojka
-								73223,	-- Pterrordax
-								72929,	-- Sra'thik Amber-Master
-								73184,	-- Starved Yeti
-								73152,	-- Storeroom Guard
-								73349,	-- Tormented Initiate
-								72434,	-- Treasury Guard
-								73775,	-- War Master Kragg
-							},
-						}),
-						]]
-						i(113222, {	-- Keengrip Arrowpullers
-							["crs"] = {
-								72658,	-- Amalgamated Hubris
-								73191,	-- Aqueous Defender
-								73188,	-- Captive Cave Bat
-								72564,	-- Doomlord<Grol'dar's Minion>
-								72354,	-- Dragonmaw Bonecrusher
-								72365,	-- Dragonmaw Cannoneer
-								72350,	-- Dragonmaw Elite Grunt
-								72367,	-- Dragonmaw Tidal Shaman
-								73342,	-- Fallen Pool Tender
-								72655,	-- Fragment of Pride
-								73452,	-- Harbinger of Y'Shaarj
-								72194,	-- Hellscream Demolisher
-								73012,	-- Klaxxi Skirmisher
-								71772,	-- Kor'kron Assassin
-								72728,	-- Kor'kron Blood Axe
-								72770,	-- Kor'kron Dark Farseer
-								72451,	-- Kor'kron Dark Shaman
-								72412,	-- Kor'kron Grunt
-								72784,	-- Kor'kron Gunner
-								74158,	-- Kor'kron Gunner
-								73194,	-- Kor'kron Iron Scorpion
-								73904,	-- Kor'kron Iron Sentinel
-								71770,	-- Kor'kron Ironblade
-								72421,	-- Kor'kron Overseer
-								73414,	-- Kor'kron Reaper
-								72150,	-- Kor'kron Shadowmage
-								72744,	-- Kor'kron Skullsplitter
-								72768,	-- Kor'kron War Wolf
-								71773,	-- Kor'kron Warshaman
-								73250,	-- Kor'kron Wild Gun
-								73541,	-- Kor'kron Wolf Pup
-								72954,	-- Kor'thik Honor Guard
-								72791,	-- Lingering Corruption
-								72929,	-- Sra'thik Amber-Master
-								73152,	-- Storeroom Guard
-								73349,	-- Tormented Initiate
-								72661,	-- Zeal
-							},
-						}),
-						--[[
-						i(113227, {	-- Marco's Crackling Gloves
-							["crs"] = {
-								73191,	-- Aqueous Defender
-								73188,	-- Captive Cave Bat
-								72354,	-- Dragonmaw Bonecrusher
-								72365,	-- Dragonmaw Cannoneer
-								72350,	-- Dragonmaw Elite Grunt
-								72367,	-- Dragonmaw Tidal Shaman
-								73185,	-- Enraged Mushan Beast
-								73342,	-- Fallen Pool Tender
-								72655,	-- Fragment of Pride
-								73696,	-- Grand Master Alchemist Ki'xen
-								73452,	-- Harbinger of Y'Shaarj
-								72194,	-- Hellscream Demolisher
-								73012,	-- Klaxxi Skirmisher
-								71771,	-- Kor'kron Arcweaver
-								71772,	-- Kor'kron Assassin
-								72728,	-- Kor'kron Blood Axe
-								72770,	-- Kor'kron Dark Farseer
-								72451,	-- Kor'kron Dark Shaman
-								72452,	-- Kor'kron Dire Wolf
-								72412,	-- Kor'kron Grunt
-								74158,	-- Kor'kron Gunner
-								72784,	-- Kor'kron Gunner
-								71770,	-- Kor'kron Ironblade
-								72421,	-- Kor'kron Overseer
-								73414,	-- Kor'kron Reaper
-								72150,	-- Kor'kron Shadowmage
-								72744,	-- Kor'kron Skullsplitter
-								73538,	-- Kor'kron War Wolf
-								71773,	-- Kor'kron Warshaman
-								73541,	-- Kor'kron Wolf Pup
-								72954,	-- Kor'thik Honor Guard
-								72791,	-- Lingering Corruption
-								72433,	-- Mokvar the Treasurer
-								73223,	-- Pterrordax
-								72929,	-- Sra'thik Amber-Master
-								73349,	-- Tormented Initiate
-								72661,	-- Zeal
-							},
-						}),
-						i(113228, {	-- Gauntlets of Discarded Time
-							["crs"] = {
-								72658,	-- Amalgamated Hubris
-								73191,	-- Aqueous Defender
-								72131,	-- Blind Blademaster
-								73188,	-- Captive Cave Bat
-								72354,	-- Dragonmaw Bonecrusher
-								72365,	-- Dragonmaw Cannoneer
-								72350,	-- Dragonmaw Elite Grunt
-								72351,	-- Dragonmaw Flagbearer
-								72367,	-- Dragonmaw Tidal Shaman
-								73342,	-- Fallen Pool Tender
-								72655,	-- Fragment of Pride
-								73452,	-- Harbinger of Y'Shaarj
-								72194,	-- Hellscream Demolisher
-								73012,	-- Klaxxi Skirmisher
-								71772,	-- Kor'kron Assassin
-								72728,	-- Kor'kron Blood Axe
-								72770,	-- Kor'kron Dark Farseer
-								72451,	-- Kor'kron Dark Shaman
-								73539,	-- Kor'kron Den Mother
-								72452,	-- Kor'kron Dire Wolf
-								72412,	-- Kor'kron Grunt
-								72784,	-- Kor'kron Gunner
-								74158,	-- Kor'kron Gunner
-								73194,	-- Kor'kron Iron Scorpion
-								73904,	-- Kor'kron Iron Sentinel
-								71770,	-- Kor'kron Ironblade
-								72421,	-- Kor'kron Overseer
-								72411,	-- Kor'kron Provisioner
-								73414,	-- Kor'kron Reaper
-								72150,	-- Kor'kron Shadowmage
-								72744,	-- Kor'kron Skullsplitter
-								73538,	-- Kor'kron War Wolf
-								71773,	-- Kor'kron Warshaman
-								73541,	-- Kor'kron Wolf Pup
-								72954,	-- Kor'thik Honor Guard
-								72927,	-- Kovok
-								72791,	-- Lingering Corruption
-								72433,	-- Mokvar the Treasurer
-								72929,	-- Sra'thik Amber-Master
-								73184,	-- Starved Yeti
-								73152,	-- Storeroom Guard
-								73349,	-- Tormented Initiate
-							},
-						}),
-						i(113219, {	-- Romy's Reliable Grips
-							["crs"] = {
-								72658,	-- Amalgamated Hubris
-								72131,	-- Blind Blademaster
-								72354,	-- Dragonmaw Bonecrusher
-								72365,	-- Dragonmaw Cannoneer
-								72367,	-- Dragonmaw Tidal Shaman
-								73185,	-- Enraged Mushan Beast
-								73342,	-- Fallen Pool Tender
-								72655,	-- Fragment of Pride
-								72194,	-- Hellscream Demolisher
-								73012,	-- Klaxxi Skirmisher
-								71771,	-- Kor'kron Arcweaver
-								71772,	-- Kor'kron Assassin
-								72728,	-- Kor'kron Blood Axe
-								72770,	-- Kor'kron Dark Farseer
-								72451,	-- Kor'kron Dark Shaman
-								72452,	-- Kor'kron Dire Wolf
-								72412,	-- Kor'kron Grunt
-								72784,	-- Kor'kron Gunner
-								74158,	-- Kor'kron Gunner
-								71770,	-- Kor'kron Ironblade
-								72421,	-- Kor'kron Overseer
-								73414,	-- Kor'kron Reaper
-								72150,	-- Kor'kron Shadowmage
-								72744,	-- Kor'kron Skullsplitter
-								73538,	-- Kor'kron War Wolf
-								72768,	-- Kor'kron War Wolf
-								71773,	-- Kor'kron Warshaman
-								73250,	-- Kor'kron Wild Gun
-								73541,	-- Kor'kron Wolf Pup
-								72954,	-- Kor'thik Honor Guard
-								72927,	-- Kovok
-								72791,	-- Lingering Corruption
-								72433,	-- Mokvar the Treasurer
-								72929,	-- Sra'thik Amber-Master
-								73152,	-- Storeroom Guard
-								73349,	-- Tormented Initiate
-								72661,	-- Zeal
-							},
-						}),
-						i(113229, {	-- Zoid's Molten Gauntlets
-							["crs"] = {
-								72658,	-- Amalgamated Hubris
-								73191,	-- Aqueous Defender
-								72131,	-- Blind Blademaster
-								73188,	-- Captive Cave Bat
-								72354,	-- Dragonmaw Bonecrusher
-								72365,	-- Dragonmaw Cannoneer
-								72350,	-- Dragonmaw Elite Grunt
-								72351,	-- Dragonmaw Flagbearer
-								72367,	-- Dragonmaw Tidal Shaman
-								73185,	-- Enraged Mushan Beast
-								72655,	-- Fragment of Pride
-								73452,	-- Harbinger of Y'Shaarj
-								73012,	-- Klaxxi Skirmisher
-								71771,	-- Kor'kron Arcweaver
-								71772,	-- Kor'kron Assassin
-								72728,	-- Kor'kron Blood Axe
-								72770,	-- Kor'kron Dark Farseer
-								72451,	-- Kor'kron Dark Shaman
-								72452,	-- Kor'kron Dire Wolf
-								72412,	-- Kor'kron Grunt
-								74158,	-- Kor'kron Gunner
-								72784,	-- Kor'kron Gunner
-								73194,	-- Kor'kron Iron Scorpion
-								71770,	-- Kor'kron Ironblade
-								72421,	-- Kor'kron Overseer
-								72411,	-- Kor'kron Provisioner
-								73414,	-- Kor'kron Reaper
-								72150,	-- Kor'kron Shadowmage
-								72903,	-- Kor'kron Siegemaster
-								72744,	-- Kor'kron Skullsplitter
-								72768,	-- Kor'kron War Wolf
-								71773,	-- Kor'kron Warshaman
-								72954,	-- Kor'thik Honor Guard
-								72791,	-- Lingering Corruption
-								72929,	-- Sra'thik Amber-Master
-								73184,	-- Starved Yeti
-								73152,	-- Storeroom Guard
-								73349,	-- Tormented Initiate
-								73775,	-- War Master Kragg
-							},
-						}),
-						]]
+						-- i(113224),	-- Aeth's Swiftcinder Cloak
+						-- i(113231),	-- Brave Niunai's Cloak
+						-- i(113226),	-- Cape of the Alpha
+						-- i(113230),	-- Drape of the Omega
+						-- i(113223),	-- Turtleshell Greatcloak
+						-- i(113225),	-- Kalaena's Arcane Handwraps
+						-- i(113218),	-- Seebo's Sainted Touch
+						-- i(113220),	-- Crimson Gauntlets of Death
+						-- i(113221),	-- Siid's Silent Stranglers
+						i(113222),	-- Keengrip Arrowpullers
+						-- i(113227),	-- Marco's Crackling Gloves
+						-- i(113228),	-- Gauntlets of Discarded Time
+						-- i(113219),	-- Romy's Reliable Grips
+						-- i(113229),	-- Zoid's Molten Gauntlets
 					}),
 					ach(8458, {	-- Vale of Eternal Sorrows
 						["crs"] = {
@@ -2446,11 +1847,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							cr(71543, e(852, {	-- Immerseus
-								ach(8458, {	-- Vale of Eternal Sorrows
-									["collectible"] = false,
-									["g"] = {
-										crit(1),	-- Immerseus
-									},
+								crit(1, {	-- Immerseus
+									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 								}),
 								i(110784),	-- Trident of Corrupted Waters
 								i(110785),	-- Encapsulated Essence of Immerseus
@@ -2482,11 +1880,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									71480,	-- Sun Tenderheart [The Fallen Protectors]
 								},
 								["g"] = {
-									ach(8458, {	-- Vale of Eternal Sorrows
-										["collectible"] = false,
-										["g"] = {
-											crit(2),	-- Fallen Protectors
-										},
+									crit(2, {	-- Fallen Protectors
+										["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 									}),
 									i(112477),	-- Softfoot's Last Resort
 									i(112478),	-- Death Lotus Crossbow
@@ -2517,11 +1912,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									72276,	-- Amalgam of Corruption
 								},
 								["g"] = {
-									ach(8458, {	-- Vale of Eternal Sorrows
-										["collectible"] = false,
-										["g"] = {
-											crit(3),	-- Norushen
-										},
+									crit(3, {	-- Norushen
+										["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 									}),
 									i(112547),	-- Norushen's Shortblade
 									i(112546),	-- Xifeng, Longblade of the Titanic Guardian
@@ -2548,41 +1940,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								},
 							}),
 							cr(71734, e(867, {	-- Sha of Pride
-								ach(8458, {	-- Vale of Eternal Sorrows
-									["collectible"] = false,
-									["g"] = {
-										crit(4),	-- Sha of Pride
-									},
+								crit(4, {	-- Sha of Pride
+									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 								}),
-								i(99678, {	-- Chest of the Cursed Conqueror
-									i(99052),	-- Battleplate of Winged Triumph
-									i(99003),	-- Breastplate of Winged Triumph
-									i(99031),	-- Chestguard of Winged Triumph
-									i(99004),	-- Raiment of the Ternion Glory
-									i(99017),	-- Robes of the Ternion Glory
-									i(99056),	-- Robes of the Horned Nightmare
-								}),
-								i(99679, {	-- Chest of the Cursed Protector
-									i(99085),	-- Tunic of the Unblinking Vigil
-									i(99063),	-- Chestguard of Seven Sacred Seals
-									i(99071),	-- Tunic of Seven Sacred Seals
-									i(99061),	-- Vest of Seven Sacred Seals
-									i(98992),	-- Cuirass of Celestial Harmony
-									i(99087),	-- Hauberk of Celestial Harmony
-									i(99011),	-- Tunic of Celestial Harmony
-									i(99047),	-- Battleplate of the Prehistoric Marauder
-									i(99037),	-- Chestguard of the Prehistoric Marauder
-								}),
-								i(99677, {	-- Chest of the Cursed Vanquisher
-									i(99066),	-- Breastplate of Cyclopean Dread
-									i(99060),	-- Chestguard of Cyclopean Dread
-									i(99041),	-- Raiment of the Shattered Vale
-									i(99015),	-- Robes of the Shattered Vale
-									i(98999),	-- Tunic of the Shattered Vale
-									i(98997),	-- Vestment of the Shattered Vale
-									i(99078),	-- Chronomancer Robes
-									i(99006),	-- Tunic of the Barbed Assassin
-								}),
+								i(99678),	-- Chest of the Cursed Conqueror
+								i(99679),	-- Chest of the Cursed Protector
+								i(99677),	-- Chest of the Cursed Vanquisher
 								i(104162),	-- Droplet of Y'Shaarj (PET!)
 								i(104163),	-- Gooey Sha-ling (PET!)
 								i(112951),	-- Gaze of Arrogance
@@ -2604,11 +1967,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							cr(72249, e(881, {	-- Galakras
-								ach(8459, {	-- Gates of Retribution
-									["collectible"] = false,
-									["g"] = {
-										crit(1),	-- Galakras
-									},
+								crit(1, {	-- Galakras
+									["achievementID"] = 8459,	-- Gates of Retribution
 								}),
 								i(112723),	-- Drakebinder Greatstaff
 								i(112710),	-- Dagryn's Discarded Longbow
@@ -2634,11 +1994,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112703),	-- Evil Eye of Galakras
 							})),
 							cr(71466, e(864, {	-- Iron Juggernaut
-								ach(8459, {	-- Gates of Retribution
-									["collectible"] = false,
-									["g"] = {
-										crit(2),	-- Iron Juggernaut
-									},
+								crit(2, {	-- Iron Juggernaut
+									["achievementID"] = 8459,	-- Gates of Retribution
 								}),
 								i(112736),	-- Seismic Bore
 								i(112748),	-- Juggernaut's Power Core
@@ -2664,11 +2021,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112729),	-- Juggernaut's Focusing Crystal
 							})),
 							cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
-								ach(8459, {	-- Gates of Retribution
-									["collectible"] = false,
-									["g"] = {
-										crit(3),	-- Kor'kron Dark Shaman
-									},
+								crit(3, {	-- Kor'kron Dark Shaman
+									["achievementID"] = 8459,	-- Gates of Retribution
 								}),
 								i(112759),	-- Haromm's Frozen Crescent
 								i(112769),	-- Kardris' Scepter
@@ -2693,41 +2047,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112768),	-- Kardris' Toxic Totem
 							})),
 							cr(71515, e(850, {	-- General Nazgrim
-								ach(8459, {	-- Gates of Retribution
-									["collectible"] = false,
-									["g"] = {
-										crit(4),	-- General Nazgrim
-									},
+								crit(4, {	-- General Nazgrim
+									["achievementID"] = 8459,	-- Gates of Retribution
 								}),
-								i(99681, {	-- Gauntlets of the Cursed Conqueror
-									i(99002),	-- Gauntlets of Winged Triumph
-									i(98982),	-- Gloves of Winged Triumph
-									i(99028),	-- Handguards of Winged Triumph
-									i(99019),	-- Gloves of the Ternion Glory
-									i(99023),	-- Handwraps of the Ternion Glory
-									i(99053),	-- Gloves of the Horned Nightmare
-								}),
-								i(99667, {	-- Gauntlets of the Cursed Protector
-									i(99086),	-- Gloves of the Unblinking Vigil
-									i(99064),	-- Gauntlets of Seven Sacred Seals
-									i(99072),	-- Grips of Seven Sacred Seals
-									i(99068),	-- Handwraps of Seven Sacred Seals
-									i(99088),	-- Gloves of Celestial Harmony
-									i(98993),	-- Grips of Celestial Harmony
-									i(98988),	-- Handwraps of Celestial Harmony
-									i(99034),	-- Gauntlets of the Prehistoric Marauder
-									i(99038),	-- Handguards of the Prehistoric Marauder
-								}),
-								i(99680, {	-- Gauntlets of the Cursed Vanquisher
-									i(99067),	-- Gauntlets of Cyclopean Dread
-									i(99048),	-- Handguards of Cyclopean Dread
-									i(98994),	-- Gloves of the Shattered Vale
-									i(99042),	-- Grips of the Shattered Vale
-									i(99000),	-- Handguards of the Shattered Vale
-									i(99012),	-- Handwraps of the Shattered Vale
-									i(99083),	-- Chronomancer Gloves
-									i(99007),	-- Gloves of the Barbed Assassin
-								}),
+								i(99681),	-- Gauntlets of the Cursed Conqueror
+								i(99667),	-- Gauntlets of the Cursed Protector
+								i(99680),	-- Gauntlets of the Cursed Vanquisher
 								i(112785),	-- Gar'tok, Strength of the Faithful
 								i(112787),	-- Arcweaver Spell Sword
 								i(112780),	-- Naz'grim's Gutripper
@@ -2748,11 +2073,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							cr(71454, e(846, {	-- Malkorok
-								ach(8461, {	-- The Underhold
-									["collectible"] = false,
-									["g"] = {
-										crit(1),	-- Malkorok
-									},
+								crit(1, {	-- Malkorok
+									["achievementID"] = 8461,	-- The Underhold
 								}),
 								i(112805),	-- Halberd of Inner Shadows
 								i(112804),	-- Malkorok's Skullcleaver
@@ -2778,11 +2100,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112792),	-- Vial of Living Corruption
 							})),
 							cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-								ach(8461, {	-- The Underhold
-									["collectible"] = false,
-									["g"] = {
-										crit(2),	-- Spoils of Pandaria
-									},
+								crit(2, {	-- Spoils of Pandaria
+									["achievementID"] = 8461,	-- The Underhold
 								}),
 								i(112835),	-- Enchanted Shao-Tien Saber
 								i(112841),	-- Immaculately Preserved Wand
@@ -2807,41 +2126,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112825),	-- Sigil of Rampage
 							})),
 							cr(71529, e(851, {	-- Thok the Bloodthirsty
-								ach(8461, {	-- The Underhold
-									["collectible"] = false,
-									["g"] = {
-										crit(3),	-- Thok the Bloodthirsty
-									},
+								crit(3, {	-- Thok the Bloodthirsty
+									["achievementID"] = 8461,	-- The Underhold
 								}),
-								i(99672, {	-- Helm of the Cursed Conqueror
-									i(99029),	-- Faceguard of Winged Triumph
-									i(98979),	-- Headguard of Winged Triumph
-									i(98985),	-- Helmet of Winged Triumph
-									i(99024),	-- Cowl of the Ternion Glory
-									i(99020),	-- Hood of the Ternion Glory
-									i(99054),	-- Hood of the Horned Nightmare
-								}),
-								i(99673, {	-- Helm of the Cursed Protector
-									i(99080),	-- Headguard of the Unblinking Vigil
-									i(99065),	-- Crown of Seven Sacred Seals
-									i(99073),	-- Headpiece of Seven Sacred Seals
-									i(99069),	-- Helm of Seven Sacred Seals
-									i(99089),	-- Faceguard of Celestial Harmony
-									i(98989),	-- Headpiece of Celestial Harmony
-									i(98983),	-- Helmet of Celestial Harmony
-									i(99032),	-- Faceguard of the Prehistoric Marauder
-									i(99046),	-- Helmet of the Prehistoric Marauder
-								}),
-								i(99671, {	-- Helm of the Cursed Vanquisher
-									i(99049),	-- Faceguard of Cyclopean Dread
-									i(99057),	-- Helmet of Cyclopean Dread
-									i(98995),	-- Cover of the Shattered Vale
-									i(99001),	-- Headguard of the Shattered Vale
-									i(99043),	-- Headpiece of the Shattered Vale
-									i(99013),	-- Helm of the Shattered Vale
-									i(99084),	-- Chronomancer Hood
-									i(99008),	-- Helmet of the Barbed Assassin
-								}),
+								i(99672),	-- Helm of the Cursed Conqueror
+								i(99673),	-- Helm of the Cursed Protector
+								i(99671),	-- Helm of the Cursed Vanquisher
 								i(112862),	-- Britomart's Jagged Pike
 								i(112853),	-- Hvitserk's Formidable Shanker
 								i(112861),	-- Festering Primordial Globule
@@ -2862,42 +2152,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							cr(71504, e(865, {	-- Siegecrafter Blackfuse
-								ach(8462, {	-- Downfall
-									["collectible"] = false,
-									["g"] = {
-										crit(1),	-- Siegecrafter Blackfuse
-									},
+								crit(1, {	-- Siegecrafter Blackfuse
+									["achievementID"] = 8462,	-- Downfall
 								}),
 								i(104158),	-- Blackfuse Bombling (PET!)
-								i(99669, {	-- Shoulders of the Cursed Conqueror
-									i(99076),	-- Mantle of Winged Triumph
-									i(98987),	-- Pauldrons of Winged Triumph
-									i(99027),	-- Shoulderguards of Winged Triumph
-									i(99018),	-- Mantle of the Ternion Glory
-									i(99005),	-- Shoulderguards of the Ternion Glory
-									i(99045),	-- Mantle of the Horned Nightmare
-								}),
-								i(99670, {	-- Shoulders of the Cursed Protector
-									i(99082),	-- Spaulders of the Unblinking Vigil
-									i(99062),	-- Mantle of Seven Sacred Seals
-									i(99051),	-- Shoulderguards of Seven Sacred Seals
-									i(99075),	-- Spaulders of Seven Sacred Seals
-									i(99091),	-- Mantle of Celestial Harmony
-									i(98991),	-- Shoulderwraps of Celestial Harmony
-									i(98977),	-- Spaulders of Celestial Harmony
-									i(99036),	-- Pauldrons of the Prehistoric Marauder
-									i(99030),	-- Shoulderguards of the Prehistoric Marauder
-								}),
-								i(99668, {	-- Shoulders of the Cursed Vanquisher
-									i(99059),	-- Pauldrons of Cyclopean Dread
-									i(99040),	-- Shoulderguards of Cyclopean Dread
-									i(99016),	-- Mantle of the Shattered Vale
-									i(98978),	-- Shoulderguards of the Shattered Vale
-									i(98998),	-- Shoulderwraps of the Shattered Vale
-									i(99022),	-- Spaulders of the Shattered Vale
-									i(99079),	-- Chronomancer Mantle
-									i(99010),	-- Spaulders of the Barbed Assassin
-								}),
+								i(99669),	-- Shoulders of the Cursed Conqueror
+								i(99670),	-- Shoulders of the Cursed Protector
+								i(99668),	-- Shoulders of the Cursed Vanquisher
 								i(112892),	-- Lever of the Megantholithic Apparatus
 								i(112897),	-- Siegecrafter's Forge Hammer
 								i(112894),	-- Blackfuse's Blasting Cord
@@ -2911,42 +2172,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112879),	-- Ticking Ebon Detonator
 							})),
 							cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-								ach(8462, {	-- Downfall
-									["collectible"] = false,
-									["g"] = {
-										crit(2),	-- Paragons of the Klaxxi
-									},
+								crit(2, {	-- Paragons of the Klaxxi
+									["achievementID"] = 8462,	-- Downfall
 								}),
 								i(104165),	-- Kovok (PET!)
-								i(99675, {	-- Leggings of the Cursed Conqueror
-									i(98980),	-- Greaves of Winged Triumph
-									i(99026),	-- Legguards of Winged Triumph
-									i(98986),	-- Legplates of Winged Triumph
-									i(99021),	-- Leggings of the Ternion Glory
-									i(99025),	-- Legwraps of the Ternion Glory
-									i(99055),	-- Leggings of the Horned Nightmare
-								}),
-								i(99676, {	-- Leggings of the Cursed Protector
-									i(99081),	-- Legguards of the Unblinking Vigil
-									i(99074),	-- Leggings of Seven Sacred Seals
-									i(99050),	-- Legguards of Seven Sacred Seals
-									i(99070),	-- Legwraps of Seven Sacred Seals
-									i(99090),	-- Leggings of Celestial Harmony
-									i(98984),	-- Legguards of Celestial Harmony
-									i(98990),	-- Legwraps of Celestial Harmony
-									i(99033),	-- Legguards of the Prehistoric Marauder
-									i(99035),	-- Legplates of the Prehistoric Marauder
-								}),
-								i(99674, {	-- Leggings of the Cursed Vanquisher
-									i(99058),	-- Greaves of Cyclopean Dread
-									i(99039),	-- Legguards of Cyclopean Dread
-									i(98981),	-- Breeches of the Shattered Vale
-									i(98996),	-- Leggings of the Shattered Vale
-									i(99044),	-- Legguards of the Shattered Vale
-									i(99014),	-- Legwraps of the Shattered Vale
-									i(99077),	-- Chronomancer Leggings
-									i(99009),	-- Legguards of the Barbed Assassin
-								}),
+								i(99675),	-- Leggings of the Cursed Conqueror
+								i(99676),	-- Leggings of the Cursed Protector
+								i(99674),	-- Leggings of the Cursed Vanquisher
 								i(112921),	-- Kil'ruk's Furious Blade
 								i(112920),	-- Korven's Crimson Crescent
 								i(112922),	-- Rik'kal's Bloody Scalpel
@@ -2960,25 +2192,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(112913),	-- Skeer's Bloodsoaked Talisman
 							})),
 							cr(71865, e(869, {	-- Garrosh Hellscream
-								ach(8462, {	-- Downfall
-									["collectible"] = false,
-									["g"] = {
-										crit(3),	-- Garrosh Hellscream
-									},
+								crit(3, {	-- Garrosh Hellscream
+									["achievementID"] = 8462,	-- Downfall
 								}),
 								i(105861, {	-- Essence of the Cursed Conqueror
 									["classes"] = {
 										PALADIN,
 										PRIEST,
 										WARLOCK,
-									},
-									["sym"] = {
-										{"select", "itemID", 99672}, -- Helm of the Cursed Conqueror
-										{"select", "itemID", 99669}, -- Shoulders of the Cursed Conqueror
-										{"select", "itemID", 99678}, -- Chest of the Cursed Conqueror
-										{"select", "itemID", 99681}, -- Gauntlets of the Cursed Conqueror
-										{"select", "itemID", 99675}, -- Leggings of the Cursed Conqueror
-										{"pop"},
 									},
 								}),
 								i(105860, {	-- Essence of the Cursed Protector
@@ -2988,14 +2209,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 										SHAMAN,
 										WARRIOR,
 									},
-									["sym"] = {
-										{"select", "itemID", 99673}, -- Helm of the Cursed Protector
-										{"select", "itemID", 99670}, -- Shoulders of the Cursed Protector
-										{"select", "itemID", 99679}, -- Chest of the Cursed Protector
-										{"select", "itemID", 99667}, -- Gauntlets of the Cursed Protector
-										{"select", "itemID", 99676}, -- Leggings of the Cursed Protector
-										{"pop"},
-									},
 								}),
 								i(105862, {	-- Essence of the Cursed Vanquisher
 									["classes"] = {
@@ -3003,14 +2216,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 										DRUID,
 										MAGE,
 										ROGUE,
-									},
-									["sym"] = {
-										{"select", "itemID", 99671}, -- Helm of the Cursed Vanquisher
-										{"select", "itemID", 99668}, -- Shoulders of the Cursed Vanquisher
-										{"select", "itemID", 99677}, -- Chest of the Cursed Vanquisher
-										{"select", "itemID", 99680}, -- Gauntlets of the Cursed Vanquisher
-										{"select", "itemID", 99674}, -- Leggings of the Cursed Vanquisher
-										{"pop"},
 									},
 								}),
 								i(112932),	-- Kor'kron Spire of Supremacy
@@ -3040,630 +2245,27 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				},
 			}),
 			d(14, {	-- Normal
-				n(ZONEDROPS, {
-					i(113224, {	-- Aeth's Swiftcinder Cloak
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72496,	-- Overseer Thathung
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							73775,	-- War Master Kragg
-						},
-					}),
-					i(113231, {	-- Brave Niunai's Cloak
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							73539,	-- Kor'kron Den Mother
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72490,	-- Overseer Mojka
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-						},
-					}),
-					i(113226, {	-- Cape of the Alpha
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72490,	-- Overseer Mojka
-							72496,	-- Overseer Thathung
-							72929,	-- Sra'thik Amber-Master
-							73349,	-- Tormented Initiate
-							72434,	-- Treasury Guard
-							73775,	-- War Master Kragg
-						},
-					}),
-					i(113230, {	-- Drape of the Omega
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72663,	-- Arrogance
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73670,	-- Gate-Crasher Sav'ah
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72903,	-- Kor'kron Siegemaster
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73349,	-- Tormented Initiate
-							72434,	-- Treasury Guard
-						},
-					}),
-					i(113223, {	-- Turtleshell Greatcloak
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72663,	-- Arrogance
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							73195,	-- Kor'kron Jailer
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72490,	-- Overseer Mojka
-							72496,	-- Overseer Thathung
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73349,	-- Tormented Initiate
-							73775,	-- War Master Kragg
-							72661,	-- Zeal
-						},
-					}),
-					i(113225, {	-- Kalaena's Arcane Handwraps
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							73670,	-- Gate-Crasher Sav'ah
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							73195,	-- Kor'kron Jailer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72455,	-- Overseer Komak
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72434,	-- Treasury Guard
-							73667,	-- Windreaver Tar'rath
-							72661,	-- Zeal
-						},
-					}),
-					i(113218, {	-- Seebo's Sainted Touch
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							73195,	-- Kor'kron Jailer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72455,	-- Overseer Komak
-							72490,	-- Overseer Mojka
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-						},
-					}),
-					i(113220, {	-- Crimson Gauntlets of Death
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							72655,	-- Fragment of Pride
-							73696,	-- Grand Master Alchemist Ki'xen
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							73539,	-- Kor'kron Den Mother
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							71770,	-- Kor'kron Ironblade
-							73195,	-- Kor'kron Jailer
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72490,	-- Overseer Mojka
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72661,	-- Zeal
-						},
-					}),
-					i(113221, {	-- Siid's Silent Stranglers
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72455,	-- Overseer Komak
-							72490,	-- Overseer Mojka
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73184,	-- Starved Yeti
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72434,	-- Treasury Guard
-							73775,	-- War Master Kragg
-						},
-					}),
-					i(113222, {	-- Keengrip Arrowpullers
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72367,	-- Dragonmaw Tidal Shaman
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72661,	-- Zeal
-						},
-					}),
-					i(113227, {	-- Marco's Crackling Gloves
-						["crs"] = {
-							73191,	-- Aqueous Defender
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73696,	-- Grand Master Alchemist Ki'xen
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73349,	-- Tormented Initiate
-							72661,	-- Zeal
-						},
-					}),
-					i(113228, {	-- Gauntlets of Discarded Time
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							73539,	-- Kor'kron Den Mother
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72929,	-- Sra'thik Amber-Master
-							73184,	-- Starved Yeti
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-						},
-					}),
-					i(113219, {	-- Romy's Reliable Grips
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							72131,	-- Blind Blademaster
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72661,	-- Zeal
-						},
-					}),
-					i(113229, {	-- Zoid's Molten Gauntlets
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72903,	-- Kor'kron Siegemaster
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72929,	-- Sra'thik Amber-Master
-							73184,	-- Starved Yeti
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							73775,	-- War Master Kragg
-						},
-					}),
+				n(ZONE_DROPS, {
+					i(113224),	-- Aeth's Swiftcinder Cloak
+					i(113231),	-- Brave Niunai's Cloak
+					i(113226),	-- Cape of the Alpha
+					i(113230),	-- Drape of the Omega
+					i(113223),	-- Turtleshell Greatcloak
+					i(113225),	-- Kalaena's Arcane Handwraps
+					i(113218),	-- Seebo's Sainted Touch
+					i(113220),	-- Crimson Gauntlets of Death
+					i(113221),	-- Siid's Silent Stranglers
+					i(113222),	-- Keengrip Arrowpullers
+					i(113227),	-- Marco's Crackling Gloves
+					i(113228),	-- Gauntlets of Discarded Time
+					i(113219),	-- Romy's Reliable Grips
+					i(113229),	-- Zoid's Molten Gauntlets
 				}),
 				cr(71543, e(852, {	-- Immerseus
-					ach(8536),	-- No More Tears
-					ach(8458, {	-- Vale of Eternal Sorrows
-						["collectible"] = false,
-						["g"] = {
-							crit(1),	-- Immerseus
-						},
+					crit(1, {	-- Immerseus
+						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 					}),
+					ach(8536),	-- No More Tears
 					i(110784),	-- Trident of Corrupted Waters
 					i(110785),	-- Encapsulated Essence of Immerseus
 					i(112382),	-- Hood of Blackened Tears
@@ -3694,13 +2296,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
 					["g"] = {
-						ach(8528),	-- Go Long
-						ach(8458, {	-- Vale of Eternal Sorrows
-							["collectible"] = false,
-							["g"] = {
-								crit(2),	-- Fallen Protectors
-							},
+						crit(2, {	-- Fallen Protectors
+							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 						}),
+						ach(8528),	-- Go Long
 						i(112477),	-- Softfoot's Last Resort
 						i(112478),	-- Death Lotus Crossbow
 						i(112491),	-- Purehearted Cricket Cage
@@ -3729,13 +2328,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71965,	-- Norushen
 					},
 					["g"] = {
-						ach(8532),	-- None Shall Pass
-						ach(8458, {	-- Vale of Eternal Sorrows
-							["collectible"] = false,
-							["g"] = {
-								crit(3),	-- Norushen
-							},
+						crit(3, {	-- Norushen
+							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 						}),
+						ach(8532),	-- None Shall Pass
 						i(112547),	-- Norushen's Shortblade
 						i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 						i(112560),	-- Norushen's Enigmatic Barrier
@@ -3761,42 +2357,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				})),
 				cr(71734, e(867, {	-- Sha of Pride
+					crit(4, {	-- Sha of Pride
+						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+					}),
 					ach(8521),	-- Swallow Your Pride
-					ach(8458, {	-- Vale of Eternal Sorrows
-						["collectible"] = false,
-						["g"] = {
-							crit(4),	-- Sha of Pride
-						},
-					}),
-					i(99743, {	-- Chest of the Cursed Conqueror
-						i(99566),	-- Battleplate of Winged Triumph
-						i(99626),	-- Breastplate of Winged Triumph
-						i(99598),	-- Chestguard of Winged Triumph
-						i(99627),	-- Raiment of the Ternion Glory
-						i(99584),	-- Robes of the Ternion Glory
-						i(99570),	-- Robes of the Horned Nightmare
-					}),
-					i(99744, {	-- Chest of the Cursed Protector
-						i(99577),	-- Tunic of the Unblinking Vigil
-						i(99643),	-- Chestguard of Seven Sacred Seals
-						i(99555),	-- Tunic of Seven Sacred Seals
-						i(99641),	-- Vest of Seven Sacred Seals
-						i(99615),	-- Cuirass of Celestial Harmony
-						i(99579),	-- Hauberk of Celestial Harmony
-						i(99636),	-- Tunic of Celestial Harmony
-						i(99603),	-- Battleplate of the Prehistoric Marauder
-						i(99562),	-- Chestguard of the Prehistoric Marauder
-					}),
-					i(99742, {	-- Chest of the Cursed Vanquisher
-						i(99608),	-- Breastplate of Cyclopean Dread
-						i(99640),	-- Chestguard of Cyclopean Dread
-						i(99632),	-- Raiment of the Shattered Vale
-						i(99582),	-- Robes of the Shattered Vale
-						i(99622),	-- Tunic of the Shattered Vale
-						i(99620),	-- Vestment of the Shattered Vale
-						i(99658),	-- Chronomancer Robes
-						i(99629),	-- Tunic of the Barbed Assassin
-					}),
+					i(99743),	-- Chest of the Cursed Conqueror
+					i(99744),	-- Chest of the Cursed Protector
+					i(99742),	-- Chest of the Cursed Vanquisher
 					i(104162),	-- Droplet of Y'Shaarj (PET!)
 					i(104163),	-- Gooey Sha-ling (PET!)
 					i(112951),	-- Gaze of Arrogance
@@ -3811,11 +2378,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112948),	-- Prismatic Prison of Pride
 				})),
 				cr(72249, e(881, {	-- Galakras
-					ach(8459, {	-- Gates of Retribution
-						["collectible"] = false,
-						["g"] = {
-							crit(1),	-- Galakras
-						},
+					crit(1, {	-- Galakras
+						["achievementID"] = 8459,	-- Gates of Retribution
 					}),
 					ach(8530),	-- The Immortal Vanguard
 					i(112723),	-- Drakebinder Greatstaff
@@ -3842,13 +2406,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112703),	-- Evil Eye of Galakras
 				})),
 				cr(71466, e(864, {	-- Iron Juggernaut
-					ach(8520),	-- Fire in the Hole!
-					ach(8459, {	-- Gates of Retribution
-						["collectible"] = false,
-						["g"] = {
-							crit(2),	-- Iron Juggernaut
-						},
+					crit(2, {	-- Iron Juggernaut
+						["achievementID"] = 8459,	-- Gates of Retribution
 					}),
+					ach(8520),	-- Fire in the Hole!
 					i(112736),	-- Seismic Bore
 					i(112748),	-- Juggernaut's Power Core
 					i(112742),	-- Juggernaut's Ignition Keys
@@ -3878,11 +2439,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71858,	-- Wavebinder Kardris
 					},
 					["g"] = {
-						ach(8459, {	-- Gates of Retribution
-							["collectible"] = false,
-							["g"] = {
-								crit(3),	-- Kor'kron Dark Shaman
-							},
+						crit(3, {	-- Kor'kron Dark Shaman
+							["achievementID"] = 8459,	-- Gates of Retribution
 						}),
 						ach(8453),	-- Rescue Raiders
 						i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
@@ -3919,42 +2477,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				})),
 				cr(71515, e(850, {	-- General Nazgrim
+					crit(4, {	-- General Nazgrim
+						["achievementID"] = 8459,	-- Gates of Retribution
+					}),
 					ach(8448),	-- Gamon Will Save Us!
-					ach(8459, {	-- Gates of Retribution
-						["collectible"] = false,
-						["g"] = {
-							crit(4),	-- General Nazgrim
-						},
-					}),
-					i(99746, {	-- Gauntlets of the Cursed Conqueror
-						i(99625),	-- Gauntlets of Winged Triumph
-						i(99648),	-- Gloves of Winged Triumph
-						i(99595),	-- Handguards of Winged Triumph
-						i(99586),	-- Gloves of the Ternion Glory
-						i(99590),	-- Handwraps of the Ternion Glory
-						i(99567),	-- Gloves of the Horned Nightmare
-					}),
-					i(99747, {	-- Gauntlets of the Cursed Protector
-						i(99578),	-- Gloves of the Unblinking Vigil
-						i(99644),	-- Gauntlets of Seven Sacred Seals
-						i(99556),	-- Grips of Seven Sacred Seals
-						i(99552),	-- Handwraps of Seven Sacred Seals
-						i(99580),	-- Gloves of Celestial Harmony
-						i(99616),	-- Grips of Celestial Harmony
-						i(99611),	-- Handwraps of Celestial Harmony
-						i(99559),	-- Gauntlets of the Prehistoric Marauder
-						i(99563),	-- Handguards of the Prehistoric Marauder
-					}),
-					i(99745, {	-- Gauntlets of the Cursed Vanquisher
-						i(99609),	-- Gauntlets of Cyclopean Dread
-						i(99604),	-- Handguards of Cyclopean Dread
-						i(99633),	-- Grips of the Shattered Vale
-						i(99617),	-- Gloves of the Shattered Vale
-						i(99623),	-- Handguards of the Shattered Vale
-						i(99637),	-- Handwraps of the Shattered Vale
-						i(99575),	-- Chronomancer Gloves
-						i(99630),	-- Gloves of the Barbed Assassin
-					}),
+					i(99746),	-- Gauntlets of the Cursed Conqueror
+					i(99747),	-- Gauntlets of the Cursed Protector
+					i(99745),	-- Gauntlets of the Cursed Vanquisher
 					i(112785),	-- Gar'tok, Strength of the Faithful
 					i(112787),	-- Arcweaver Spell Sword
 					i(112780),	-- Naz'grim's Gutripper
@@ -3968,11 +2497,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112778),	-- Nazgrim's Burnished Insignia
 				})),
 				cr(71454, e(846, {	-- Malkorok
-					ach(8461, {	-- The Underhold
-						["collectible"] = false,
-						["g"] = {
-							crit(1),	-- Malkorok
-						},
+					crit(1, {	-- Malkorok
+						["achievementID"] = 8461,	-- The Underhold
 					}),
 					ach(8538),	-- Unlimited Potential
 					i(112805),	-- Halberd of Inner Shadows
@@ -3999,13 +2525,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112792),	-- Vial of Living Corruption
 				})),
 				cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-					ach(8529),	-- Criss Cross
-					ach(8461, {	-- The Underhold
-						["collectible"] = false,
-						["g"] = {
-							crit(2),	-- Spoils of Pandaria
-						},
+					crit(2, {	-- Spoils of Pandaria
+						["achievementID"] = 8461,	-- The Underhold
 					}),
+					ach(8529),	-- Criss Cross
 					i(112835),	-- Enchanted Shao-Tien Saber
 					i(112841),	-- Immaculately Preserved Wand
 					i(112829),	-- Ancient Mogu Tower Shield
@@ -4029,42 +2552,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112825),	-- Sigil of Rampage
 				})),
 				cr(71529, e(851, {	-- Thok the Bloodthirsty
+					crit(3, {	-- Thok the Bloodthirsty
+						["achievementID"] = 8461,	-- The Underhold
+					}),
 					ach(8527),	-- Giant Dinosaur vs. Mega Snail
-					ach(8461, {	-- The Underhold
-						["collectible"] = false,
-						["g"] = {
-							crit(3),	-- Thok the Bloodthirsty
-						},
-					}),
-					i(99749, {	-- Helm of the Cursed Conqueror
-						i(99596),	-- Faceguard of Winged Triumph
-						i(99665),	-- Headguard of Winged Triumph
-						i(99651),	-- Helmet of Winged Triumph
-						i(99591),	-- Cowl of the Ternion Glory
-						i(99587),	-- Hood of the Ternion Glory
-						i(99568),	-- Hood of the Horned Nightmare
-					}),
-					i(99750, {	-- Helm of the Cursed Protector
-						i(99660),	-- Headguard of the Unblinking Vigil
-						i(99607),	-- Crown of Seven Sacred Seals
-						i(99653),	-- Headpiece of Seven Sacred Seals
-						i(99553),	-- Helm of Seven Sacred Seals
-						i(99612),	-- Faceguard of Celestial Harmony
-						i(99645),	-- Headpiece of Celestial Harmony
-						i(99649),	-- Helmet of Celestial Harmony
-						i(99557),	-- Faceguard of the Prehistoric Marauder
-						i(99602),	-- Helmet of the Prehistoric Marauder
-					}),
-					i(99748, {	-- Helm of the Cursed Vanquisher
-						i(99605),	-- Faceguard of Cyclopean Dread
-						i(99571),	-- Helmet of Cyclopean Dread
-						i(99618),	-- Cover of the Shattered Vale
-						i(99624),	-- Headguard of the Shattered Vale
-						i(99599),	-- Headpiece of the Shattered Vale
-						i(99638),	-- Helm of the Shattered Vale
-						i(99576),	-- Chronomancer Hood
-						i(99631),	-- Helmet of the Barbed Assassin
-					}),
+					i(99749),	-- Helm of the Cursed Conqueror
+					i(99750),	-- Helm of the Cursed Protector
+					i(99748),	-- Helm of the Cursed Vanquisher
 					i(112862),	-- Britomart's Jagged Pike
 					i(112853),	-- Hvitserk's Formidable Shanker
 					i(112861),	-- Festering Primordial Globule
@@ -4078,11 +2572,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112850),	-- Thok's Tail Tip
 				})),
 				cr(71504, e(865, {	-- Siegecrafter Blackfuse
-					ach(8462, {	-- Downfall
-						["collectible"] = false,
-						["g"] = {
-							crit(1),	-- Siegecrafter Blackfuse
-						},
+					crit(1, {	-- Siegecrafter Blackfuse
+						["achievementID"] = 8462,	-- Downfall
 					}),
 					ach(8543, {	-- Lasers and Magnets and Drills! Oh My!
 						crit(2),	-- Deactivated Electromagnet
@@ -4091,35 +2582,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						crit(4),	-- Disassembled Crawler Mines
 					}),
 					i(104158),	-- Blackfuse Bombling (PET!)
-					i(99755, {	-- Shoulders of the Cursed Conqueror
-						i(99656),	-- Mantle of Winged Triumph
-						i(99662),	-- Pauldrons of Winged Triumph
-						i(99594),	-- Shoulderguards of Winged Triumph
-						i(99585),	-- Mantle of the Ternion Glory
-						i(99628),	-- Shoulderguards of the Ternion Glory
-						i(99601),	-- Mantle of the Horned Nightmare
-					}),
-					i(99756, {	-- Shoulders of the Cursed Protector
-						i(99574),	-- Spaulders of the Unblinking Vigil
-						i(99642),	-- Mantle of Seven Sacred Seals
-						i(99565),	-- Shoulderguards of Seven Sacred Seals
-						i(99655),	-- Spaulders of Seven Sacred Seals
-						i(99614),	-- Mantle of Celestial Harmony
-						i(99647),	-- Shoulderwraps of Celestial Harmony
-						i(99663),	-- Spaulders of Celestial Harmony
-						i(99561),	-- Pauldrons of the Prehistoric Marauder
-						i(99597),	-- Shoulderguards of the Prehistoric Marauder
-					}),
-					i(99754, {	-- Shoulders of the Cursed Vanquisher
-						i(99639),	-- Pauldrons of Cyclopean Dread
-						i(99652),	-- Shoulderguards of Cyclopean Dread
-						i(99583),	-- Mantle of the Shattered Vale
-						i(99664),	-- Shoulderguards of the Shattered Vale
-						i(99621),	-- Shoulderwraps of the Shattered Vale
-						i(99589),	-- Spaulders of the Shattered Vale
-						i(99659),	-- Chronomancer Mantle
-						i(99635),	-- Spaulders of the Barbed Assassin
-					}),
+					i(99755),	-- Shoulders of the Cursed Conqueror
+					i(99756),	-- Shoulders of the Cursed Protector
+					i(99754),	-- Shoulders of the Cursed Vanquisher
 					i(112892),	-- Lever of the Megantholithic Apparatus
 					i(112897),	-- Siegecrafter's Forge Hammer
 					i(112894),	-- Blackfuse's Blasting Cord
@@ -4133,43 +2598,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112879),	-- Ticking Ebon Detonator
 				})),
 				cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-					ach(8462, {	-- Downfall
-						["collectible"] = false,
-						["g"] = {
-							crit(2),	-- Paragons of the Klaxxi
-						},
+					crit(2, {	-- Paragons of the Klaxxi
+						["achievementID"] = 8462,	-- Downfall
 					}),
 					ach(8531),	-- Now We are the Paragon
 					i(104165),	-- Kovok (PET!)
-					i(99752, {	-- Leggings of the Cursed Conqueror
-						i(99666),	-- Greaves of Winged Triumph
-						i(99593),	-- Legguards of Winged Triumph
-						i(99661),	-- Legplates of Winged Triumph
-						i(99588),	-- Leggings of the Ternion Glory
-						i(99592),	-- Legwraps of the Ternion Glory
-						i(99569),	-- Leggings of the Horned Nightmare
-					}),
-					i(99753, {	-- Leggings of the Cursed Protector
-						i(99573),	-- Legguards of the Unblinking Vigil
-						i(99654),	-- Leggings of Seven Sacred Seals
-						i(99606),	-- Legguards of Seven Sacred Seals
-						i(99554),	-- Legwraps of Seven Sacred Seals
-						i(99646),	-- Leggings of Celestial Harmony
-						i(99650),	-- Legguards of Celestial Harmony
-						i(99613),	-- Legwraps of Celestial Harmony
-						i(99558),	-- Legguards of the Prehistoric Marauder
-						i(99560),	-- Legplates of the Prehistoric Marauder
-					}),
-					i(99751, {	-- Leggings of the Cursed Vanquisher
-						i(99572),	-- Greaves of Cyclopean Dread
-						i(99564),	-- Legguards of Cyclopean Dread
-						i(99610),	-- Breeches of the Shattered Vale
-						i(99619),	-- Leggings of the Shattered Vale
-						i(99600),	-- Legguards of the Shattered Vale
-						i(99581),	-- Legwraps of the Shattered Vale
-						i(99657),	-- Chronomancer Leggings
-						i(99634),	-- Legguards of the Barbed Assassin
-					}),
+					i(99752),	-- Leggings of the Cursed Conqueror
+					i(99753),	-- Leggings of the Cursed Protector
+					i(99751),	-- Leggings of the Cursed Vanquisher
 					i(112921),	-- Kil'ruk's Furious Blade
 					i(112920),	-- Korven's Crimson Crescent
 					i(112922),	-- Rik'kal's Bloody Scalpel
@@ -4183,11 +2619,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112913),	-- Skeer's Bloodsoaked Talisman
 				})),
 				cr(71865, e(869, {	-- Garrosh Hellscream
-					ach(8462, {	-- Downfall
-						["collectible"] = false,
-						["g"] = {
-							crit(3),	-- Garrosh Hellscream
-						},
+					crit(3, {	-- Garrosh Hellscream
+						["achievementID"] = 8462,	-- Downfall
 					}),
 					ach(8537),	-- Strike!
 					i(105864, {	-- Essence of the Cursed Conqueror
@@ -4195,14 +2628,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							PALADIN,
 							PRIEST,
 							WARLOCK,
-						},
-						["sym"] = {
-							{"select", "itemID", 99749}, -- Helm of the Cursed Conqueror
-							{"select", "itemID", 99755}, -- Shoulders of the Cursed Conqueror
-							{"select", "itemID", 99743}, -- Chest of the Cursed Conqueror
-							{"select", "itemID", 99746}, -- Gauntlets of the Cursed Conqueror
-							{"select", "itemID", 99752}, -- Leggings of the Cursed Conqueror
-							{"pop"},
 						},
 					}),
 					i(105863, {	-- Essence of the Cursed Protector
@@ -4212,14 +2637,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							SHAMAN,
 							WARRIOR,
 						},
-						["sym"] = {
-							{"select", "itemID", 99750}, -- Helm of the Cursed Protector
-							{"select", "itemID", 99756}, -- Shoulders of the Cursed Protector
-							{"select", "itemID", 99744}, -- Chest of the Cursed Protector
-							{"select", "itemID", 99747}, -- Gauntlets of the Cursed Protector
-							{"select", "itemID", 99753}, -- Leggings of the Cursed Protector
-							{"pop"},
-						},
 					}),
 					i(105865, {	-- Essence of the Cursed Vanquisher
 						["classes"] = {
@@ -4227,14 +2644,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							DRUID,
 							MAGE,
 							ROGUE,
-						},
-						["sym"] = {
-							{"select", "itemID", 99748}, -- Helm of the Cursed Vanquisher
-							{"select", "itemID", 99754}, -- Shoulders of the Cursed Vanquisher
-							{"select", "itemID", 99742}, -- Chest of the Cursed Vanquisher
-							{"select", "itemID", 99745}, -- Gauntlets of the Cursed Vanquisher
-							{"select", "itemID", 99751}, -- Leggings of the Cursed Vanquisher
-							{"pop"},
 						},
 					}),
 					i(112932),	-- Kor'kron Spire of Supremacy
@@ -4261,630 +2670,27 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				})),
 			}),
 			d(15, {	-- Heroic
-				n(ZONEDROPS, {
-					i(113224, {	-- Aeth's Swiftcinder Cloak
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72496,	-- Overseer Thathung
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							73775,	-- War Master Kragg
-						},
-					}),
-					i(113231, {	-- Brave Niunai's Cloak
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							73539,	-- Kor'kron Den Mother
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72490,	-- Overseer Mojka
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-						},
-					}),
-					i(113226, {	-- Cape of the Alpha
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72490,	-- Overseer Mojka
-							72496,	-- Overseer Thathung
-							72929,	-- Sra'thik Amber-Master
-							73349,	-- Tormented Initiate
-							72434,	-- Treasury Guard
-							73775,	-- War Master Kragg
-						},
-					}),
-					i(113230, {	-- Drape of the Omega
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72663,	-- Arrogance
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73670,	-- Gate-Crasher Sav'ah
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72903,	-- Kor'kron Siegemaster
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73349,	-- Tormented Initiate
-							72434,	-- Treasury Guard
-						},
-					}),
-					i(113223, {	-- Turtleshell Greatcloak
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72663,	-- Arrogance
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							73195,	-- Kor'kron Jailer
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72490,	-- Overseer Mojka
-							72496,	-- Overseer Thathung
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73349,	-- Tormented Initiate
-							73775,	-- War Master Kragg
-							72661,	-- Zeal
-						},
-					}),
-					i(113225, {	-- Kalaena's Arcane Handwraps
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							73670,	-- Gate-Crasher Sav'ah
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							73195,	-- Kor'kron Jailer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72455,	-- Overseer Komak
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72434,	-- Treasury Guard
-							73667,	-- Windreaver Tar'rath
-							72661,	-- Zeal
-						},
-					}),
-					i(113218, {	-- Seebo's Sainted Touch
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							73195,	-- Kor'kron Jailer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72455,	-- Overseer Komak
-							72490,	-- Overseer Mojka
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-						},
-					}),
-					i(113220, {	-- Crimson Gauntlets of Death
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							72655,	-- Fragment of Pride
-							73696,	-- Grand Master Alchemist Ki'xen
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							73539,	-- Kor'kron Den Mother
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							71770,	-- Kor'kron Ironblade
-							73195,	-- Kor'kron Jailer
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72490,	-- Overseer Mojka
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72661,	-- Zeal
-						},
-					}),
-					i(113221, {	-- Siid's Silent Stranglers
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72455,	-- Overseer Komak
-							72490,	-- Overseer Mojka
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73184,	-- Starved Yeti
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72434,	-- Treasury Guard
-							73775,	-- War Master Kragg
-						},
-					}),
-					i(113222, {	-- Keengrip Arrowpullers
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72367,	-- Dragonmaw Tidal Shaman
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72661,	-- Zeal
-						},
-					}),
-					i(113227, {	-- Marco's Crackling Gloves
-						["crs"] = {
-							73191,	-- Aqueous Defender
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73696,	-- Grand Master Alchemist Ki'xen
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73349,	-- Tormented Initiate
-							72661,	-- Zeal
-						},
-					}),
-					i(113228, {	-- Gauntlets of Discarded Time
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							73539,	-- Kor'kron Den Mother
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72929,	-- Sra'thik Amber-Master
-							73184,	-- Starved Yeti
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-						},
-					}),
-					i(113219, {	-- Romy's Reliable Grips
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							72131,	-- Blind Blademaster
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72661,	-- Zeal
-						},
-					}),
-					i(113229, {	-- Zoid's Molten Gauntlets
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72903,	-- Kor'kron Siegemaster
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72929,	-- Sra'thik Amber-Master
-							73184,	-- Starved Yeti
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							73775,	-- War Master Kragg
-						},
-					}),
+				n(ZONE_DROPS, {
+					i(113224),	-- Aeth's Swiftcinder Cloak
+					i(113231),	-- Brave Niunai's Cloak
+					i(113226),	-- Cape of the Alpha
+					i(113230),	-- Drape of the Omega
+					i(113223),	-- Turtleshell Greatcloak
+					i(113225),	-- Kalaena's Arcane Handwraps
+					i(113218),	-- Seebo's Sainted Touch
+					i(113220),	-- Crimson Gauntlets of Death
+					i(113221),	-- Siid's Silent Stranglers
+					i(113222),	-- Keengrip Arrowpullers
+					i(113227),	-- Marco's Crackling Gloves
+					i(113228),	-- Gauntlets of Discarded Time
+					i(113219),	-- Romy's Reliable Grips
+					i(113229),	-- Zoid's Molten Gauntlets
 				}),
 				cr(71543, e(852, {	-- Immerseus
-					ach(8536),	-- No More Tears
-					ach(8458, {	-- Vale of Eternal Sorrows
-						["collectible"] = false,
-						["g"] = {
-							crit(1),	-- Immerseus
-						}
+					crit(1, {	-- Immerseus
+						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 					}),
+					ach(8536),	-- No More Tears
 					i(110784),	-- Trident of Corrupted Waters
 					i(110785),	-- Encapsulated Essence of Immerseus
 					i(112382),	-- Hood of Blackened Tears
@@ -4915,13 +2721,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
 					["g"] = {
-						ach(8528),	-- Go Long
-						ach(8458, {	-- Vale of Eternal Sorrows
-							["collectible"] = false,
-							["g"] = {
-								crit(2),	-- Fallen Protectors
-							},
+						crit(2, {	-- Fallen Protectors
+							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 						}),
+						ach(8528),	-- Go Long
 						i(112477),	-- Softfoot's Last Resort
 						i(112478),	-- Death Lotus Crossbow
 						i(112491),	-- Purehearted Cricket Cage
@@ -4950,13 +2753,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71965,	-- Norushen
 					},
 					["g"] = {
-						ach(8532),	-- None Shall Pass
-						ach(8458, {	-- Vale of Eternal Sorrows
-							["collectible"] = false,
-							["g"] = {
-								crit(3),	-- Norushen
-							},
+						crit(3, {	-- Norushen
+							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 						}),
+						ach(8532),	-- None Shall Pass
 						i(112547),	-- Norushen's Shortblade
 						i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 						i(112560),	-- Norushen's Enigmatic Barrier
@@ -4982,42 +2782,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				})),
 				cr(71734, e(867, {	-- Sha of Pride
+					crit(4, {	-- Sha of Pride
+						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+					}),
 					ach(8521),	-- Swallow Your Pride
-					ach(8458, {	-- Vale of Eternal Sorrows
-						["collectible"] = false,
-						["g"] = {
-							crit(4),	-- Sha of Pride
-						},
-					}),
-					i(99686, {	-- Chest of the Cursed Conqueror
-						i(99136),	-- Battleplate of Winged Triumph
-						i(99133),	-- Breastplate of Winged Triumph
-						i(99126),	-- Chestguard of Winged Triumph
-						i(99110),	-- Raiment of the Ternion Glory
-						i(99119),	-- Robes of the Ternion Glory
-						i(99204),	-- Robes of the Horned Nightmare
-					}),
-					i(99691, {	-- Chest of the Cursed Protector
-						i(99167),	-- Tunic of the Unblinking Vigil
-						i(99140),	-- Chestguard of Seven Sacred Seals
-						i(99154),	-- Tunic of Seven Sacred Seals
-						i(99150),	-- Vest of Seven Sacred Seals
-						i(99101),	-- Cuirass of Celestial Harmony
-						i(99106),	-- Hauberk of Celestial Harmony
-						i(99107),	-- Tunic of Celestial Harmony
-						i(99197),	-- Battleplate of the Prehistoric Marauder
-						i(99201),	-- Chestguard of the Prehistoric Marauder
-					}),
-					i(99696, { -- Chest of the Cursed Vanquisher
-						i(99192),	-- Breastplate of Cyclopean Dread
-						i(99188),	-- Chestguard of Cyclopean Dread
-						i(99180),	-- Raiment of the Shattered Vale
-						i(99172),	-- Robes of the Shattered Vale
-						i(99170),	-- Tunic of the Shattered Vale
-						i(99177),	-- Vestment of the Shattered Vale
-						i(99152),	-- Chronomancer Robes
-						i(99112),	-- Tunic of the Barbed Assassin
-					}),
+					i(99686),	-- Chest of the Cursed Conqueror
+					i(99691),	-- Chest of the Cursed Protector
+					i(99696),	-- Chest of the Cursed Vanquisher
 					i(104162),	-- Droplet of Y'Shaarj (PET!)
 					i(104163),	-- Gooey Sha-ling (PET!)
 					i(112951),	-- Gaze of Arrogance
@@ -5032,11 +2803,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112948),	-- Prismatic Prison of Pride
 				})),
 				cr(72249, e(881, {	-- Galakras
-					ach(8459, {	-- Gates of Retribution
-						["collectible"] = false,
-						["g"] = {
-							crit(1),	-- Galakras
-						},
+					crit(1, {	-- Galakras
+						["achievementID"] = 8459,	-- Gates of Retribution
 					}),
 					ach(8530),	-- The Immortal Vanguard
 					i(112723),	-- Drakebinder Greatstaff
@@ -5063,13 +2831,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112703),	-- Evil Eye of Galakras
 				})),
 				cr(71466, e(864, {	-- Iron Juggernaut
-					ach(8520),	-- Fire in the Hole!
-					ach(8459, {	-- Gates of Retribution
-						["collectible"] = false,
-						["g"] = {
-							crit(2),	-- Iron Juggernaut
-						},
+					crit(2, {	-- Iron Juggernaut
+						["achievementID"] = 8459,	-- Gates of Retribution
 					}),
+					ach(8520),	-- Fire in the Hole!
 					i(112736),	-- Seismic Bore
 					i(112748),	-- Juggernaut's Power Core
 					i(112742),	-- Juggernaut's Ignition Keys
@@ -5099,11 +2864,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71858,	-- Wavebinder Kardris
 					},
 					["g"] = {
-						ach(8459, {	-- Gates of Retribution
-							["collectible"] = false,
-							["g"] = {
-								crit(3),	-- Kor'kron Dark Shaman
-							},
+						crit(3, {	-- Kor'kron Dark Shaman
+							["achievementID"] = 8459,	-- Gates of Retribution
 						}),
 						ach(8453),	-- Rescue Raiders
 						i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
@@ -5140,42 +2902,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				})),
 				cr(71515, e(850, {	-- General Nazgrim
+					crit(4, {	-- General Nazgrim
+						["achievementID"] = 8459,	-- Gates of Retribution
+					}),
 					ach(8448),	-- Gamon Will Save Us!
-					ach(8459, {	-- Gates of Retribution
-						["collectible"] = false,
-						["g"] = {
-							crit(4),	-- General Nazgrim
-						},
-					}),
-					i(99687, {	-- Gauntlets of the Cursed Conqueror
-						i(99137),	-- Gauntlets of Winged Triumph
-						i(99134),	-- Gloves of Winged Triumph
-						i(99127),	-- Handguards of Winged Triumph
-						i(99121),	-- Gloves of the Ternion Glory
-						i(99131),	-- Handgwraps of the Ternion Glory
-						i(99096),	-- Gloves of the Horned Nightmare
-					}),
-					i(99692, {	-- Gauntlets of the Cursed Protector
-						i(99168),	-- Gloves of the Unblinking Vigil
-						i(99141),	-- Gauntlets of Seven Sacred Seals
-						i(99155),	-- Grips of Seven Sacred Seals
-						i(99147),	-- Handwraps of Seven Sacred Seals
-						i(99092),	-- Gloves of Celestial Harmony
-						i(99102),	-- Grips of Celestial Harmony
-						i(99108),	-- Handwraps of Celestial Harmony
-						i(99198),	-- Gauntlets of the Prehistoric Marauder
-						i(99202),	-- Handguards of the Prehistoric Marauder
-					}),
-					i(99682, {	-- Gauntlets of the Cursed Vanquisher
-						i(99193),	-- Gauntlets of Cyclopean Dread
-						i(99189),	-- Handguards of Cyclopean Dread
-						i(99174),	-- Gloves of the Shattered Vale
-						i(99181),	-- Grips of the Shattered Vale
-						i(99163),	-- Handguards of the Shattered Vale
-						i(99185),	-- Handwraps of the Shattered Vale
-						i(99160),	-- Chronomancer Gloves
-						i(99113),	-- Gloves of the Barbed Assassin
-					}),
+					i(99687),	-- Gauntlets of the Cursed Conqueror
+					i(99692),	-- Gauntlets of the Cursed Protector
+					i(99682),	-- Gauntlets of the Cursed Vanquisher
 					i(112785),	-- Gar'tok, Strength of the Faithful
 					i(112787),	-- Arcweaver Spell Sword
 					i(112780),	-- Naz'grim's Gutripper
@@ -5189,11 +2922,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112778),	-- Nazgrim's Burnished Insignia
 				})),
 				cr(71454, e(846, {	-- Malkorok
-					ach(8461, {	-- The Underhold
-						["collectible"] = false,
-						["g"] = {
-							crit(1),	-- Malkorok
-						},
+					crit(1, {	-- Malkorok
+						["achievementID"] = 8461,	-- The Underhold
 					}),
 					ach(8538),	-- Unlimited Potential
 					i(112805),	-- Halberd of Inner Shadows
@@ -5220,13 +2950,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112792),	-- Vial of Living Corruption
 				})),
 				cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-					ach(8529),	-- Criss Cross
-					ach(8461, {	-- The Underhold
-						["collectible"] = false,
-						["g"] = {
-							crit(2),	-- Spoils of Pandaria
-						},
+					crit(2, {	-- Spoils of Pandaria
+						["achievementID"] = 8461,	-- The Underhold
 					}),
+					ach(8529),	-- Criss Cross
 					i(112835),	-- Enchanted Shao-Tien Saber
 					i(112841),	-- Immaculately Preserved Wand
 					i(112829),	-- Ancient Mogu Tower Shield
@@ -5250,42 +2977,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112825),	-- Sigil of Rampage
 				})),
 				cr(71529, e(851, {	-- Thok the Bloodthirsty
+					crit(3, {	-- Thok the Bloodthirsty
+						["achievementID"] = 8461,	-- The Underhold
+					}),
 					ach(8527),	-- Giant Dinosaur vs. Mega Snail
-					ach(8461, {	-- The Underhold
-						["collectible"] = false,
-						["g"] = {
-							crit(3),	-- Thok the Bloodthirsty
-						},
-					}),
-					i(99689, {	-- Helm of the Cursed Conqueror
-						i(99128),	-- Faceguard of Winged Triumph
-						i(99135),	-- Headguard of Winged Triumph
-						i(99138),	-- Helmet of Winged Triumph
-						i(99117),	-- Cowl of the Ternion Glory
-						i(99122),	-- Hood of the Ternion Glory
-						i(99097),	-- Hood of the Horned Nightmare
-					}),
-					i(99694, {	-- Helm of the Cursed Protector
-						i(99157),	-- Headguard of the Unblinking Vigil
-						i(99142),	-- Crown of Seven Sacred Seals
-						i(99156),	-- Headpiece of Seven Sacred Seals
-						i(99148),	-- Helm of Seven Sacred Seals
-						i(99109),	-- Faceguard of Celestial Harmony
-						i(99093),	-- Headpiece of Celestial Harmony
-						i(99103),	-- Helmet of Celestial Harmony
-						i(99203),	-- Faceguard of the Prehistoric Marauder
-						i(99206),	-- Helmet of the Prehistoric Marauder
-					}),
-					i(99683, {	-- Helm of the Cursed Vanquisher
-						i(99190),	-- Faceguard of Cyclopean Dread
-						i(99194),	-- Helmet of Cyclopean Dread
-						i(99175),	-- Cover of the Shattered Vale
-						i(99164),	-- Headguard of the Shattered Vale
-						i(99182),	-- Headpiece of the Shattered Vale
-						i(99178),	-- Helm of the Shattered Vale
-						i(99161),	-- Chronomancer Hood
-						i(99114),	-- Helmet of the Barbed Assassin
-					}),
+					i(99689),	-- Helm of the Cursed Conqueror
+					i(99694),	-- Helm of the Cursed Protector
+					i(99683),	-- Helm of the Cursed Vanquisher
 					i(112862),	-- Britomart's Jagged Pike
 					i(112853),	-- Hvitserk's Formidable Shanker
 					i(112861),	-- Festering Primordial Globule
@@ -5299,11 +2997,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112850),	-- Thok's Tail Tip
 				})),
 				cr(71504, e(865, {	-- Siegecrafter Blackfuse
-					ach(8462, {	-- Downfall
-						["collectible"] = false,
-						["g"] = {
-							crit(1),	-- Siegecrafter Blackfuse
-						},
+					crit(1, {	-- Siegecrafter Blackfuse
+						["achievementID"] = 8462,	-- Downfall
 					}),
 					ach(8543, {	-- Lasers and Magnets and Drills! Oh My!
 						crit(2),	-- Deactivated Electromagnet
@@ -5312,35 +3007,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						crit(4),	-- Disassembled Crawler Mines
 					}),
 					i(104158),	-- Blackfuse Bombling (PET!)
-					i(99690, {	-- Shoulders of the Cursed Conqueror
-						i(99125),	-- Mantle of Winged Triumph
-						i(99132),	-- Pauldrons of Winged Triumph
-						i(99130),	-- Shoulderguards of Winged Triumph
-						i(99120),	-- Mantle of the Ternion Glory
-						i(99111),	-- Shoulderguards of the Ternion Glory
-						i(99205),	-- Mantle of the Horned Nightmare
-					}),
-					i(99695, {	-- Shoulders of the Cursed Protector
-						i(99159),	-- Spaulders of the Unblinking Vigil
-						i(99151),	-- Mantle of Seven Sacred Seals
-						i(99144),	-- Shoulderguards of Seven Sacred Seals
-						i(99146),	-- Spaulders of Seven Sacred Seals
-						i(99100),	-- Mantle of Celestial Harmony
-						i(99095),	-- Shoulderwraps of Celestial Harmony
-						i(99105),	-- Spaulders of Celestial Harmony
-						i(99200),	-- Pauldrons of the Prehistoric Marauder
-						i(99196),	-- Shoulderguards of the Prehistoric Marauder
-					}),
-					i(99685, {	-- Shoulders of the Cursed Vanquisher
-						i(99187),	-- Pauldrons of Cyclopean Dread
-						i(99179),	-- Shoulderguards of Cyclopean Dread
-						i(99173),	-- Mantle of the Shattered Vale
-						i(99166),	-- Shoulderguards of the Shattered Vale
-						i(99169),	-- Shoulderwraps of the Shattered Vale
-						i(99184),	-- Spaulders of the Shattered Vale
-						i(99153),	-- Chronomancer Mantle
-						i(99116),	-- Spaulders of the Barbed Assassin
-					}),
+					i(99690),	-- Shoulders of the Cursed Conqueror
+					i(99695),	-- Shoulders of the Cursed Protector
+					i(99685),	-- Shoulders of the Cursed Vanquisher
 					i(112892),	-- Lever of the Megantholithic Apparatus
 					i(112897),	-- Siegecrafter's Forge Hammer
 					i(112894),	-- Blackfuse's Blasting Cord
@@ -5354,43 +3023,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112879),	-- Ticking Ebon Detonator
 				})),
 				cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-					ach(8462, {	-- Downfall
-						["collectible"] = false,
-						["g"] = {
-							crit(2),	-- Paragons of the Klaxxi
-						},
+					crit(2, {	-- Paragons of the Klaxxi
+						["achievementID"] = 8462,	-- Downfall
 					}),
 					ach(8531),	-- Now We are the Paragon
 					i(104165),	-- Kovok (PET!)
-					i(99688, {	-- Leggings of the Cursed Conqueror
-						i(99124),	-- Greaves 	of Winged Triumph
-						i(99129),	-- Legguards of Winged Triumph
-						i(99139),	-- Legplates of Winged Triumph
-						i(99123),	-- Leggings of the Ternion Glory
-						i(99118),	-- Legwraps of the Ternion Glory
-						i(99098),	-- Leggings of the Horned Nightmare
-					}),
-					i(99693, {	-- Leggings of the Cursed Protector
-						i(99158),	-- Legguards of the Unblinking Vigil
-						i(99145),	-- Leggings of Seven Sacred Seals
-						i(99143),	-- Legguards of Seven Sacred Seals
-						i(99149),	-- Legwraps of Seven Sacred Seals
-						i(99094),	-- Leggings of Celestial Harmony
-						i(99104),	-- Legguards of Celestial Harmony
-						i(99099),	-- Legwraps of Celestial Harmony
-						i(99195),	-- Legguards of the Prehistoric Marauder
-						i(99199),	-- Legplates of the Prehistoric Marauder
-					}),
-					i(99684, {	-- Leggings of the Cursed Vanquisher
-						i(99186),	-- Greaves of Cyclopean Dread
-						i(99191),	-- Legguards of Cyclopean Dread
-						i(99165),	-- Breeches of the Shattered Vale
-						i(99176),	-- Leggings of the Shattered Vale
-						i(99183),	-- Legguards of the Shattered Vale
-						i(99171),	-- Legwraps of the Shattered Vale
-						i(99162),	-- Chronomancer Leggings
-						i(99115),	-- Legguards of the Barbed Assassin
-					}),
+					i(99688),	-- Leggings of the Cursed Conqueror
+					i(99693),	-- Leggings of the Cursed Protector
+					i(99684),	-- Leggings of the Cursed Vanquisher
 					i(112921),	-- Kil'ruk's Furious Blade
 					i(112920),	-- Korven's Crimson Crescent
 					i(112922),	-- Rik'kal's Bloody Scalpel
@@ -5404,6 +3044,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112913),	-- Skeer's Bloodsoaked Talisman
 				})),
 				cr(71865, e(869, {	-- Garrosh Hellscream
+					crit(3, {	-- Garrosh Hellscream
+						["achievementID"] = 8462,	-- Downfall
+					}),
 					ach(8679, {	-- Conqueror of Orgrimmar
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -5411,12 +3054,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								["races"] = ALLIANCE_ONLY,
 							}),
 						},
-					}),
-					ach(8462, {	-- Downfall
-						["collectible"] = false,
-						["g"] = {
-							crit(3),	-- Garrosh Hellscream
-						}
 					}),
 					ach(8680, {	-- Liberator of Orgrimmar
 						["races"] = HORDE_ONLY,
@@ -5433,14 +3070,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							PRIEST,
 							WARLOCK,
 						},
-						["sym"] = {
-							{"select", "itemID", 99689}, -- Helm of the Cursed Conqueror
-							{"select", "itemID", 99690}, -- Shoulders of the Cursed Conqueror
-							{"select", "itemID", 99686}, -- Chest of the Cursed Conqueror
-							{"select", "itemID", 99687}, -- Gauntlets of the Cursed Conqueror
-							{"select", "itemID", 99688}, -- Leggings of the Cursed Conqueror
-							{"pop"},
-						},
 					}),
 					i(105857, {	-- Essence of the Cursed Protector
 						["classes"] = {
@@ -5448,14 +3077,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							MONK,
 							SHAMAN,
 							WARRIOR,
-						},
-						["sym"] = {
-							{"select", "itemID", 99694}, -- Helm of the Cursed Protector
-							{"select", "itemID", 99695}, -- Shoulders of the Cursed Protector
-							{"select", "itemID", 99691}, -- Chest of the Cursed Protector
-							{"select", "itemID", 99692}, -- Gauntlets of the Cursed Protector
-							{"select", "itemID", 99693}, -- Leggings of the Cursed Protector
-							{"pop"},
 						},
 					}),
 					i(105859, {	-- Essence of the Cursed Vanquisher
@@ -5465,17 +3086,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							MAGE,
 							ROGUE,
 						},
-						["sym"] = {
-							{"select", "itemID", 99683}, -- Helm of the Cursed Vanquisher
-							{"select", "itemID", 99685}, -- Shoulders of the Cursed Vanquisher
-							{"select", "itemID", 99696}, -- Chest of the Cursed Vanquisher
-							{"select", "itemID", 99682}, -- Gauntlets of the Cursed Vanquisher
-							{"select", "itemID", 99684}, -- Leggings of the Cursed Vanquisher
-							{"pop"},
-						},
 					}),
 					i(112935, {	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
-						["bonusID"] = 449,
+						-- ["bonusID"] = 449,
 					}),
 					i(112932),	-- Kor'kron Spire of Supremacy
 					i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
@@ -5501,631 +3114,28 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				})),
 			}),
 			d(16, {	-- Mythic
-				n(ZONEDROPS, {
-					i(113224, {	-- Aeth's Swiftcinder Cloak
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72496,	-- Overseer Thathung
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							73775,	-- War Master Kragg
-						},
-					}),
-					i(113231, {	-- Brave Niunai's Cloak
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							73539,	-- Kor'kron Den Mother
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72490,	-- Overseer Mojka
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-						},
-					}),
-					i(113226, {	-- Cape of the Alpha
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72490,	-- Overseer Mojka
-							72496,	-- Overseer Thathung
-							72929,	-- Sra'thik Amber-Master
-							73349,	-- Tormented Initiate
-							72434,	-- Treasury Guard
-							73775,	-- War Master Kragg
-						},
-					}),
-					i(113230, {	-- Drape of the Omega
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72663,	-- Arrogance
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73670,	-- Gate-Crasher Sav'ah
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72903,	-- Kor'kron Siegemaster
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73349,	-- Tormented Initiate
-							72434,	-- Treasury Guard
-						},
-					}),
-					i(113223, {	-- Turtleshell Greatcloak
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72663,	-- Arrogance
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							73195,	-- Kor'kron Jailer
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72490,	-- Overseer Mojka
-							72496,	-- Overseer Thathung
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73349,	-- Tormented Initiate
-							73775,	-- War Master Kragg
-							72661,	-- Zeal
-						},
-					}),
-					i(113225, {	-- Kalaena's Arcane Handwraps
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							72655,	-- Fragment of Pride
-							73670,	-- Gate-Crasher Sav'ah
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							73195,	-- Kor'kron Jailer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72455,	-- Overseer Komak
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72434,	-- Treasury Guard
-							73667,	-- Windreaver Tar'rath
-							72661,	-- Zeal
-						},
-					}),
-					i(113218, {	-- Seebo's Sainted Touch
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							73195,	-- Kor'kron Jailer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72455,	-- Overseer Komak
-							72490,	-- Overseer Mojka
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-						},
-					}),
-					i(113220, {	-- Crimson Gauntlets of Death
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							72655,	-- Fragment of Pride
-							73696,	-- Grand Master Alchemist Ki'xen
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							73539,	-- Kor'kron Den Mother
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							71770,	-- Kor'kron Ironblade
-							73195,	-- Kor'kron Jailer
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72490,	-- Overseer Mojka
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72661,	-- Zeal
-						},
-					}),
-					i(113221, {	-- Siid's Silent Stranglers
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72455,	-- Overseer Komak
-							72490,	-- Overseer Mojka
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73184,	-- Starved Yeti
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72434,	-- Treasury Guard
-							73775,	-- War Master Kragg
-						},
-					}),
-					i(113222, {	-- Keengrip Arrowpullers
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							73188,	-- Captive Cave Bat
-							72564,	-- Doomlord<Grol'dar's Minion>
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72367,	-- Dragonmaw Tidal Shaman
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72661,	-- Zeal
-						},
-					}),
-					i(113227, {	-- Marco's Crackling Gloves
-						["crs"] = {
-							73191,	-- Aqueous Defender
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73696,	-- Grand Master Alchemist Ki'xen
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							73223,	-- Pterrordax
-							72929,	-- Sra'thik Amber-Master
-							73349,	-- Tormented Initiate
-							72661,	-- Zeal
-						},
-					}),
-					i(113228, {	-- Gauntlets of Discarded Time
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							73539,	-- Kor'kron Den Mother
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							73904,	-- Kor'kron Iron Sentinel
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72929,	-- Sra'thik Amber-Master
-							73184,	-- Starved Yeti
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-						},
-					}),
-					i(113219, {	-- Romy's Reliable Grips
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							72131,	-- Blind Blademaster
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							73342,	-- Fallen Pool Tender
-							72655,	-- Fragment of Pride
-							72194,	-- Hellscream Demolisher
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							72784,	-- Kor'kron Gunner
-							74158,	-- Kor'kron Gunner
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72744,	-- Kor'kron Skullsplitter
-							73538,	-- Kor'kron War Wolf
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							73250,	-- Kor'kron Wild Gun
-							73541,	-- Kor'kron Wolf Pup
-							72954,	-- Kor'thik Honor Guard
-							72927,	-- Kovok
-							72791,	-- Lingering Corruption
-							72433,	-- Mokvar the Treasurer
-							72929,	-- Sra'thik Amber-Master
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							72661,	-- Zeal
-						},
-					}),
-					i(113229, {	-- Zoid's Molten Gauntlets
-						["crs"] = {
-							72658,	-- Amalgamated Hubris
-							73191,	-- Aqueous Defender
-							72131,	-- Blind Blademaster
-							73188,	-- Captive Cave Bat
-							72354,	-- Dragonmaw Bonecrusher
-							72365,	-- Dragonmaw Cannoneer
-							72350,	-- Dragonmaw Elite Grunt
-							72351,	-- Dragonmaw Flagbearer
-							72367,	-- Dragonmaw Tidal Shaman
-							73185,	-- Enraged Mushan Beast
-							72655,	-- Fragment of Pride
-							73452,	-- Harbinger of Y'Shaarj
-							73012,	-- Klaxxi Skirmisher
-							71771,	-- Kor'kron Arcweaver
-							71772,	-- Kor'kron Assassin
-							72728,	-- Kor'kron Blood Axe
-							72770,	-- Kor'kron Dark Farseer
-							72451,	-- Kor'kron Dark Shaman
-							72452,	-- Kor'kron Dire Wolf
-							72412,	-- Kor'kron Grunt
-							74158,	-- Kor'kron Gunner
-							72784,	-- Kor'kron Gunner
-							73194,	-- Kor'kron Iron Scorpion
-							71770,	-- Kor'kron Ironblade
-							72421,	-- Kor'kron Overseer
-							72411,	-- Kor'kron Provisioner
-							73414,	-- Kor'kron Reaper
-							72150,	-- Kor'kron Shadowmage
-							72903,	-- Kor'kron Siegemaster
-							72744,	-- Kor'kron Skullsplitter
-							72768,	-- Kor'kron War Wolf
-							71773,	-- Kor'kron Warshaman
-							72954,	-- Kor'thik Honor Guard
-							72791,	-- Lingering Corruption
-							72929,	-- Sra'thik Amber-Master
-							73184,	-- Starved Yeti
-							73152,	-- Storeroom Guard
-							73349,	-- Tormented Initiate
-							73775,	-- War Master Kragg
-						},
-					}),
+				n(ZONE_DROPS, {
+					i(113224),	-- Aeth's Swiftcinder Cloak
+					i(113231),	-- Brave Niunai's Cloak
+					i(113226),	-- Cape of the Alpha
+					i(113230),	-- Drape of the Omega
+					i(113223),	-- Turtleshell Greatcloak
+					i(113225),	-- Kalaena's Arcane Handwraps
+					i(113218),	-- Seebo's Sainted Touch
+					i(113220),	-- Crimson Gauntlets of Death
+					i(113221),	-- Siid's Silent Stranglers
+					i(113222),	-- Keengrip Arrowpullers
+					i(113227),	-- Marco's Crackling Gloves
+					i(113228),	-- Gauntlets of Discarded Time
+					i(113219),	-- Romy's Reliable Grips
+					i(113229),	-- Zoid's Molten Gauntlets
 				}),
 				cr(71543, e(852, {	-- Immerseus
+					crit(1, {	-- Immerseus
+						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+					}),
 					ach(8463),	-- Mythic: Immerseus
 					ach(8536),	-- No More Tears
-					ach(8458, {	-- Vale of Eternal Sorrows
-						["collectible"] = false,
-						["g"] = {
-							crit(1),	-- Immerseus
-						},
-					}),
 					i(110784),	-- Trident of Corrupted Waters
 					i(110785),	-- Encapsulated Essence of Immerseus
 					i(112382),	-- Hood of Blackened Tears
@@ -6156,14 +3166,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
 					["g"] = {
-						ach(8528),	-- Go Long
-						ach(8465),	-- Mythic: Fallen Protectors
-						ach(8458, {	-- Vale of Eternal Sorrows
-							["collectible"] = false,
-							["g"] = {
-								crit(2),	-- Fallen Protectors
-							},
+						crit(2, {	-- Fallen Protectors
+							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 						}),
+						ach(8465),	-- Mythic: Fallen Protectors
+						ach(8528),	-- Go Long
 						i(112477),	-- Softfoot's Last Resort
 						i(112478),	-- Death Lotus Crossbow
 						i(112491),	-- Purehearted Cricket Cage
@@ -6192,14 +3199,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71965,	-- Norushen
 					},
 					["g"] = {
+						crit(3, {	-- Norushen
+							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+						}),
 						ach(8466),	-- Mythic: Norushen
 						ach(8532),	-- None Shall Pass
-						ach(8458, {	-- Vale of Eternal Sorrows
-							["collectible"] = false,
-							["g"] = {
-								crit(3),	-- Norushen
-							},
-						}),
 						i(112547),	-- Norushen's Shortblade
 						i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 						i(112560),	-- Norushen's Enigmatic Barrier
@@ -6225,65 +3229,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				})),
 				cr(71734, e(867, {	-- Sha of Pride
+					crit(4, {	-- Sha of Pride
+						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+					}),
 					ach(8467),	-- Mythic: Sha of Pride
 					ach(8521),	-- Swallow Your Pride
-					ach(8458, {	-- Vale of Eternal Sorrows
-						["collectible"] = false,
-						["g"] = {
-							crit(4),	-- Sha of Pride
-						},
-					}),
-					i(99715, {	-- Chest of the Cursed Conqueror
-						["classes"] = {
-							PRIEST,
-							WARLOCK,
-							PALADIN,
-						},
-						["g"] = {
-							i(99362),	-- Raiment of the Ternion Glory
-							i(99357),	-- Robes of the Ternion Glory
-							i(99416),	-- Robes of the Horned Nightmare
-							i(99387),	-- Battleplate of Winged Triumph
-							i(99374),	-- Breastplate of Winged Triumph
-							i(99368),	-- Chestguard of Winged Triumph
-						},
-					}),
-					i(99716, {	-- Chest of the Cursed Protector
-						["classes"] = {
-							MONK,
-							HUNTER,
-							SHAMAN,
-							WARRIOR,
-						},
-						["g"] = {
-							i(99396),	-- Tunic of Seven Sacred Seals
-							i(99391),	-- Vest of Seven Sacred Seals
-							i(99405),	-- Tunic of the Unblinking Vigil
-							i(99347),	-- Cuirass of Celestial Harmony
-							i(99344),	-- Hauberk of Celestial Harmony
-							i(99351),	-- Tunic of Celestial Harmony
-							i(99411),	-- Battleplate of the Prehistoric Marauder
-							i(99415),	-- Chestguard of the Prehistoric MarauderSeals
-						},
-					}),
-					i(99714, {	-- Chest of the Cursed Vanquisher
-						["classes"] = {
-							MAGE,
-							DRUID,
-							ROGUE,
-							DEATHKNIGHT,
-						},
-						["g"] = {
-							i(99400),	-- Chronomancer Robes
-							i(99326),	-- Raiment of the Shattered Vale
-							i(99430),	-- Robes of the Shattered Vale
-							i(99419),	-- Tunic of the Shattered Vale
-							i(99427),	-- Vestment of the Shattered Vale
-							i(99356),	-- Tunic of the Barbed Assassin
-							i(99335),	-- Breastplate of Cyclopean Dread
-							i(99330),	-- Chestguard of Cyclopean Dread
-						},
-					}),
+					i(99715),	-- Chest of the Cursed Conqueror
+					i(99716),	-- Chest of the Cursed Protector
+					i(99714),	-- Chest of the Cursed Vanquisher
 					i(104162),	-- Droplet of Y'Shaarj (PET!)
 					i(104163),	-- Gooey Sha-ling (PET!)
 					i(112951),	-- Gaze of Arrogance
@@ -6298,11 +3251,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112948),	-- Prismatic Prison of Pride
 				})),
 				cr(72249, e(881, {	-- Galakras
-					ach(8459, {	-- Gates of Retribution
-						["collectible"] = false,
-						["g"] = {
-							crit(1),	-- Galakras
-						},
+					crit(1, {	-- Galakras
+						["achievementID"] = 8459,	-- Gates of Retribution
 					}),
 					ach(8468),	-- Mythic: Galakras
 					ach(8530),	-- The Immortal Vanguard
@@ -6330,14 +3280,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112703),	-- Evil Eye of Galakras
 				})),
 				cr(71466, e(864, {	-- Iron Juggernaut
-					ach(8520),	-- Fire in the Hole!
-					ach(8459, {	-- Gates of Retribution
-						["collectible"] = false,
-						["g"] = {
-							crit(2),	-- Iron Juggernaut
-						},
+					crit(2, {	-- Iron Juggernaut
+						["achievementID"] = 8459,	-- Gates of Retribution
 					}),
 					ach(8469),	-- Mythic: Iron Juggernaut
+					ach(8520),	-- Fire in the Hole!
 					i(112736),	-- Seismic Bore
 					i(112748),	-- Juggernaut's Power Core
 					i(112742),	-- Juggernaut's Ignition Keys
@@ -6367,11 +3314,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71858,	-- Wavebinder Kardris
 					},
 					["g"] = {
-						ach(8459, {	-- Gates of Retribution
-							["collectible"] = false,
-							["g"] = {
-								crit(3),	-- Kor'kron Dark Shaman
-							},
+						crit(3, {	-- Kor'kron Dark Shaman
+							["achievementID"] = 8459,	-- Gates of Retribution
 						}),
 						ach(8470),	-- Mythic: Kor'kron Dark Shaman
 						ach(8453),	-- Rescue Raiders
@@ -6409,58 +3353,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				})),
 				cr(71515, e(850, {	-- General Nazgrim
-					ach(8448),	-- Gamon Will Save Us!
-					ach(8459, {	-- Gates of Retribution
-						["collectible"] = false,
-						["g"] = {
-							crit(4),	-- General Nazgrim
-						},
+					crit(4, {	-- General Nazgrim
+						["achievementID"] = 8459,	-- Gates of Retribution
 					}),
 					ach(8471),	-- Mythic: General Nazgrim
-					i(99721, {	-- Gauntlets of the Cursed Conqueror
-						["classes"] = {
-							PRIEST,
-							WARLOCK,
-							PALADIN,
-						},
-						["g"] = {
-							i(99359),	-- Gloves of the Ternion Glory
-							i(99365),	-- Handwraps of the Ternion GloryGlory
-							i(99424),	-- Gloves of the Horned Nightmare
-							i(99380),	-- Gauntlets of Winged Triumph
-							i(99375),	-- Gloves of Winged Triumph
-							i(99369),	-- Handguards of Winged Triumph
-						},
-					}),
-					i(99722, {	-- Gauntlets of the Cursed Protector
-						["classes"] = {
-							MONK,
-							HUNTER,
-							SHAMAN,
-							WARRIOR,
-						},
-						["g"] = {
-							i(99383),	-- Gauntlets of Seven Sacred Seals
-							i(99392),	-- Grips of Seven Sacred Seals
-							i(99388),	-- Handwraps of Seven Sacred Seals
-							i(99406),	-- Gloves of the Unblinking Vigil
-							i(99345),	-- Gloves of Celestial Harmony
-							i(99340),	-- Grips of Celestial Harmony
-							i(99352),	-- Handwraps of Celestial Harmony
-							i(99412),	-- Gauntlets of the Prehistoric Marauder
-							i(99408),	-- Handguards of the Prehistoric Marauder
-						},
-					}),
-					i(99720, {	-- Gauntlets of the Cursed Vanquisher
-						i(99397),	-- Chronomancer Gloves
-						i(99336),	-- Gauntlets of Cyclopean Dread
-						i(99355),	-- Gloves of the Barbed Assassin
-						i(99432),	-- Gloves of the Shattered Vale
-						i(99327),	-- Grips of the Shattered Vale
-						i(99331),	-- Handguards of Cyclopean Dread
-						i(99420),	-- Handguards of the Shattered Vale
-						i(99435),	-- Handwraps of the Shattered Vale
-					}),
+					ach(8448),	-- Gamon Will Save Us!
+					i(99721),	-- Gauntlets of the Cursed Conqueror
+					i(99722),	-- Gauntlets of the Cursed Protector
+					i(99720),	-- Gauntlets of the Cursed Vanquisher
 					i(112785),	-- Gar'tok, Strength of the Faithful
 					i(112787),	-- Arcweaver Spell Sword
 					i(112780),	-- Naz'grim's Gutripper
@@ -6474,13 +3374,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112778),	-- Nazgrim's Burnished Insignia
 				})),
 				cr(71454, e(846, {	-- Malkorok
-					ach(8472),	-- Mythic: Malkorok
-					ach(8461, {	-- The Underhold
-						["collectible"] = false,
-						["g"] = {
-							crit(1),	-- Malkorok
-						},
+					crit(1, {	-- Malkorok
+						["achievementID"] = 8461,	-- The Underhold
 					}),
+					ach(8472),	-- Mythic: Malkorok
 					ach(8538),	-- Unlimited Potential
 					i(112805),	-- Halberd of Inner Shadows
 					i(112804),	-- Malkorok's Skullcleaver
@@ -6506,14 +3403,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112792),	-- Vial of Living Corruption
 				})),
 				cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-					ach(8529),	-- Criss Cross
-					ach(8478),	-- Mythic: Spoils of Pandaria
-					ach(8461, {	-- The Underhold
-						["collectible"] = false,
-						["g"] = {
-							crit(2),	-- Spoils of Pandaria
-						},
+					crit(2, {	-- Spoils of Pandaria
+						["achievementID"] = 8461,	-- The Underhold
 					}),
+					ach(8478),	-- Mythic: Spoils of Pandaria
+					ach(8529),	-- Criss Cross
 					i(112835),	-- Enchanted Shao-Tien Saber
 					i(112841),	-- Immaculately Preserved Wand
 					i(112829),	-- Ancient Mogu Tower Shield
@@ -6537,43 +3431,14 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112825),	-- Sigil of Rampage
 				})),
 				cr(71529, e(851, {	-- Thok the Bloodthirsty
-					ach(8527),	-- Giant Dinosaur vs. Mega Snail
+					crit(3, {	--Thok the Bloodthirsty
+						["achievementID"] = 8461,	-- The Underhold
+					}),
 					ach(8479),	-- Mythic: Thok the Bloodthirsty
-					ach(8461, {	-- The Underhold
-						["collectible"] = false,
-						["g"] = {
-							crit(3),	-- Thok the Bloodthirsty
-						},
-					}),
-					i(99724, {	-- Helm of the Cursed Conqueror
-						i(99370),	-- Faceguard of Winged Triumph
-						i(99376),	-- Headguard of Winged Triumph
-						i(99379),	-- Helmet of Winged Triumph
-						i(99366),	-- Cowl of the Ternion Glory
-						i(99360),	-- Hood of the Ternion Glory
-						i(99425),	-- Hood of the Horned Nightmare
-					}),
-					i(99725, {	-- Helm of the Cursed Protector
-						i(99402),	-- Headguard of the Unblinking Vigil
-						i(99384),	-- Crown of Seven Sacred Seals
-						i(99393),	-- Headpiece of Seven Sacred Seals
-						i(99389),	-- Helm of Seven Sacred Seals
-						i(99353),	-- Faceguard of Celestial Harmony
-						i(99332),	-- Headpiece of Celestial Harmony
-						i(99341),	-- Helmet of Celestial Harmony
-						i(99409),	-- Faceguard of the Prehistoric Marauder
-						i(99418),	-- Helmet of the Prehistoric Marauder
-					}),
-					i(99723, {	-- Helm of the Cursed Vanquisher
-						i(99323),	-- Faceguard of Cyclopean Dread
-						i(99337),	-- Helmet of Cyclopean Dread
-						i(99433),	-- Cover of the Shattered Vale
-						i(99421),	-- Headguard of the Shattered Vale
-						i(99328),	-- Headpiece of the Shattered Vale
-						i(99436),	-- Helm of the Shattered Vale
-						i(99398),	-- Chronomancer Hood
-						i(99348),	-- Helmet of the Barbed Assassin
-					}),
+					ach(8527),	-- Giant Dinosaur vs. Mega Snail
+					i(99724),	-- Helm of the Cursed Conqueror
+					i(99725),	-- Helm of the Cursed Protector
+					i(99723),	-- Helm of the Cursed Vanquisher
 					i(112862),	-- Britomart's Jagged Pike
 					i(112853),	-- Hvitserk's Formidable Shanker
 					i(112861),	-- Festering Primordial Globule
@@ -6587,49 +3452,20 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112850),	-- Thok's Tail Tip
 				})),
 				cr(71504, e(865, {	-- Siegecrafter Blackfuse
-					ach(8462, {	-- Downfall
-						["collectible"] = false,
-						["g"] = {
-							crit(1),	-- Siegecrafter Blackfuse
-						},
+					crit(1, {	-- Siegecrafter Blackfuse
+						["achievementID"] = 8462,	-- Downfall
 					}),
+					ach(8480),	-- Mythic: Siegecrafter Blackfuse
 					ach(8543, {	-- Lasers and Magnets and Drills! Oh My!
 						crit(2),	-- Deactivated Electromagnet
 						crit(1),	-- Deactivated Laser Turret
 						crit(3),	-- Deactivated Missile Turret
 						crit(4),	-- Disassembled Crawler Mines
 					}),
-					ach(8480),	-- Mythic: Siegecrafter Blackfuse
 					i(104158),	-- Blackfuse Bombling (PET!)
-					i(99718, {	-- Shoulders of the Cursed Conqueror
-						i(99378),	-- Mantle of Winged Triumph
-						i(99373),	-- Pauldrons of Winged Triumph
-						i(99364),	-- Shoulderguards of Winged Triumph
-						i(99358),	-- Mantle of the Ternion Glory
-						i(99363),	-- Shoulderguards of the Ternion Glory
-						i(99417),	-- Mantle of the Horned Nightmare
-					}),
-					i(99719, {	-- Shoulders of the Cursed Protector
-						i(99404),	-- Spaulders of the Unblinking Vigil
-						i(99381),	-- Mantle of Seven Sacred Seals
-						i(99386),	-- Shoulderguards of Seven Sacred Seals
-						i(99395),	-- Spaulders of Seven Sacred Seals
-						i(99346),	-- Mantle of Celestial Harmony
-						i(99334),	-- Shoulderwraps of Celestial Harmony
-						i(99343),	-- Spaulders of Celestial Harmony
-						i(99414),	-- Pauldrons of the Prehistoric Marauder
-						i(99407),	-- Shoulderguards of the Prehistoric Marauder
-					}),
-					i(99717, {	-- Shoulders of the Cursed Vanquisher
-						i(99339),	-- Pauldrons of Cyclopean Dread
-						i(99325),	-- Shoulderguards of Cyclopean Dread
-						i(99431),	-- Mantle of the Shattered Vale
-						i(99423),	-- Shoulderguards of the Shattered Vale
-						i(99428),	-- Shoulderwraps of the Shattered Vale
-						i(99322),	-- Spaulders of the Shattered Vale
-						i(99401),	-- Chronomancer Mantle
-						i(99350),	-- Spaulders of the Barbed Assassin
-					}),
+					i(99718),	-- Shoulders of the Cursed Conqueror
+					i(99719),	-- Shoulders of the Cursed Protector
+					i(99717),	-- Shoulders of the Cursed Vanquisher
 					i(112892),	-- Lever of the Megantholithic Apparatus
 					i(112897),	-- Siegecrafter's Forge Hammer
 					i(112894),	-- Blackfuse's Blasting Cord
@@ -6643,44 +3479,15 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112879),	-- Ticking Ebon Detonator
 				})),
 				cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-					ach(8462, {	-- Downfall
-						["collectible"] = false,
-						["g"] = {
-							crit(2),	-- Paragons of the Klaxxi
-						},
+					crit(2, {	-- Paragons of the Klaxxi
+						["achievementID"] = 8462,	-- Downfall
 					}),
 					ach(8481),	-- Mythic: Paragons of the Klaxxi
 					ach(8531),	-- Now We are the Paragon
 					i(104165),	-- Kovok (PET!)
-					i(99712, {	-- Leggings of the Cursed Conqueror
-						i(99377),	-- Greaves of Winged Triumph
-						i(99371),	-- Legguards of Winged Triumph
-						i(99372),	-- Legplates of Winged Triumph
-						i(99361),	-- Leggings of the Ternion Glory
-						i(99367),	-- Legwraps of the Ternion Glory
-						i(99426),	-- Leggings of the Horned Nightmare
-					}),
-					i(99713, {	-- Leggings of the Cursed Protector
-						i(99403),	-- Legguards of the Unblinking Vigil
-						i(99394),	-- Leggings of Seven Sacred Seals
-						i(99385),	-- Legguards of Seven Sacred Seals
-						i(99390),	-- Legwraps of Seven Sacred Seals
-						i(99333),	-- Leggings of Celestial Harmony
-						i(99342),	-- Legguards of Celestial Harmony
-						i(99354),	-- Legwraps of Celestial Harmony
-						i(99410),	-- Legguards of the Prehistoric Marauder
-						i(99413),	-- Legplates of the Prehistoric Marauder
-					}),
-					i(99726, {	-- Leggings of the Cursed Vanquisher
-						i(99338),	-- Greaves of Cyclopean Dread
-						i(99324),	-- Legguards of Cyclopean Dread
-						i(99422),	-- Breeches of the Shattered Vale
-						i(99434),	-- Leggings of the Shattered Vale
-						i(99329),	-- Legguards of the Shattered Vale
-						i(99429),	-- Legwraps of the Shattered Vale
-						i(99399),	-- Chronomancer Leggings
-						i(99349),	-- Legguards of the Barbed Assassin
-					}),
+					i(99712),	-- Leggings of the Cursed Conqueror
+					i(99713),	-- Leggings of the Cursed Protector
+					i(99726),	-- Leggings of the Cursed Vanquisher
 					i(112921),	-- Kil'ruk's Furious Blade
 					i(112920),	-- Korven's Crimson Crescent
 					i(112922),	-- Rik'kal's Bloody Scalpel
@@ -6694,18 +3501,18 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112913),	-- Skeer's Bloodsoaked Talisman
 				})),
 				cr(71865, e(869, {	-- Garrosh Hellscream
+					crit(3, {	-- Garrosh Hellscream
+						["achievementID"] = 8462,	-- Downfall
+					}),
+					ach(8482, {	-- Mythic: Garrosh Hellscream
+						title(214),	-- , Hellscream's Downfall
+					}),
 					ach(8679, {	-- Conqueror of Orgrimmar
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							title(211, {	-- Conqueror of Orgrimmar
 								["races"] = ALLIANCE_ONLY,
 							}),
-						},
-					}),
-					ach(8462, {	-- Downfall
-						["collectible"] = false,
-						["g"] = {
-							crit(3),	-- Garrosh Hellscream
 						},
 					}),
 					ach(8680, {	-- Liberator of Orgrimmar
@@ -6716,23 +3523,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							}),
 						},
 					}),
-					ach(8482, {	-- Mythic: Garrosh Hellscream
-						title(214),	-- , Hellscream's Downfall
-					}),
 					ach(8537),	-- Strike!
 					i(105867, {	-- Essence of the Cursed Conqueror
 						["classes"] = {
 							PALADIN,
 							PRIEST,
 							WARLOCK,
-						},
-						["sym"] = {
-							{"select", "itemID", 99724}, -- Helm of the Cursed Conqueror
-							{"select", "itemID", 99718}, -- Shoulders of the Cursed Conqueror
-							{"select", "itemID", 99715}, -- Chest of the Cursed Conqueror
-							{"select", "itemID", 99721}, -- Gauntlets of the Cursed Conqueror
-							{"select", "itemID", 99712}, -- Leggings of the Cursed Conqueror
-							{"pop"},
 						},
 					}),
 					i(105866, {	-- Essence of the Cursed Protector
@@ -6742,14 +3538,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							SHAMAN,
 							WARRIOR,
 						},
-						["sym"] = {
-							{"select", "itemID", 99725}, -- Helm of the Cursed Protector
-							{"select", "itemID", 99719}, -- Shoulders of the Cursed Protector
-							{"select", "itemID", 99716}, -- Chest of the Cursed Protector
-							{"select", "itemID", 99722}, -- Gauntlets of the Cursed Protector
-							{"select", "itemID", 99713}, -- Leggings of the Cursed Protector
-							{"pop"},
-						},
 					}),
 					i(105868, {	-- Essence of the Cursed Vanquisher
 						["classes"] = {
@@ -6758,17 +3546,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							MAGE,
 							ROGUE,
 						},
-						["sym"] = {
-							{"select", "itemID", 99723}, -- Helm of the Cursed Vanquisher
-							{"select", "itemID", 99717}, -- Shoulders of the Cursed Vanquisher
-							{"select", "itemID", 99714}, -- Chest of the Cursed Vanquisher
-							{"select", "itemID", 99720}, -- Gauntlets of the Cursed Vanquisher
-							{"select", "itemID", 99726}, -- Leggings of the Cursed Vanquisher
-							{"pop"},
-						},
 					}),
 					i(112935, {	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
-						["bonusID"] = 450,
+						-- ["bonusID"] = 450,
 					}),
 					i(104253),	-- Kor'kron Juggernaut (MOUNT!)
 					i(112932),	-- Kor'kron Spire of Supremacy
@@ -6797,3 +3577,17 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10041, {
+		inst(369, {	-- Siege of Orgrimmar
+			i(104986),	-- Unrepentant Heels
+			i(102312),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Agi DPS Trinket (5)
+			i(102313),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Int Hit Trinket (5)
+			i(102314),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Int Versatility Trinket (5)
+			i(102315),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Str DPS Trinket (5)
+			i(102316),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Tank Trinket (5)
+			i(103897),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Str Tank Ring
+			i(103825),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
+		}),
+	}),
+});

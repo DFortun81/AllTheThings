@@ -52,11 +52,13 @@ _.Achievements =
 				ach(14836),		-- Unwavering Bond
 				ach(14637),		-- Your Covenant's Flavor
 			}),
-			n(-939, {	-- Covenant: Kyrian
-				-- These are only available to Kyrian covenant members
+			n(-939, bubbleDown({["customCollect"] = { "SL_COV_KYR" }},{	-- Kyrian
 				ach(14853),	-- All The Colors of the Painbow
 				ach(14860),	-- Bare Necessities
-				ach(14851),	-- Bastion of Protection
+				ach(14851, {	-- Bastion of Protection
+					crit(1),	-- Defeat Kalisthene with Spiritforged Aegis
+					crit(2),	-- Defeat Craven Corinth with Spiritforged Aegis
+				}),
 				ach(14856),	-- Charmed, I'm Sure
 				ach(14858),	-- Curse of Thirst
 				ach(14863),	-- Death Foursworn
@@ -101,7 +103,14 @@ _.Achievements =
 					crit(5),	-- Ring of Warding
 					crit(6),	-- Spiritforged Aegis
 				}),
-				ach(14854),	-- It's Not What You Wear
+				ach(14854, {	-- It's Not What You Wear
+					crit(1),	-- Herald's Footpads
+					crit(2),	-- Deep Echo Trident
+					crit(3),	-- Vial of Lichfrost
+					crit(4),	-- Phial of Serenity
+					crit(5),	-- Ring of Warding
+					crit(6),	-- Spiritforged Aegis
+				}),
 				ach(14857),	-- Itsy Bitsy Fighters
 				ach(14861, {	-- Learning from the Masters
 					crit(1),	-- Defeat Kalisthene as Pelagos
@@ -125,8 +134,11 @@ _.Achievements =
 				}),
 				ach(14864),	-- Personal Nightmare
 				ach(14502),	-- Pursuing Loyalty
-				ach(14852),	-- The Hoot of the Issue
-				ach(14351, {	-- The Path Towards Ascension 39 (TODO: do these actually exist? not on in-game achieves list)
+				ach(14852, {	-- The Hoot of the Issue
+					crit(1),	-- Defeat Alderyn and Myn'ir in a Trial of Loyalty as Mikanikos
+					crit(2),	-- Defeat Splinterbark Nightmare in a Trial of Loyalty as Mikanikos
+				}),
+				un(NEVER_IMPLEMENTED, ach(14351, sharedData({["u"] = NEVER_IMPLEMENTED}, {	-- The Path Towards Ascension 39
 					ach(14340),	-- The Path Towards Ascension 1
 					ach(14342),	-- The Path Towards Ascension 3
 					ach(14343),	-- The Path Towards Ascension 5
@@ -135,10 +147,49 @@ _.Achievements =
 					ach(14346),	-- The Path Towards Ascension 16
 					ach(14348),	-- The Path Towards Ascension 20
 					ach(14349),	-- The Path Towards Ascension 24
+				}))),
+				ach(14887, {	-- To the Moon
+					["description"] = "Requires the Path of Ascension building. Some people needed 50+ tries for this achievement, others needed 500+. There is no guaranteed way known. You need to /wave at Athanos while he knocks you off with any ability.",
 				}),
-			}),
-			n(-920, {	-- Covenant: Necrolord
-				-- These are only available to Necrolord covenant members
+			})),
+			n(-920, bubbleDown({["customCollect"] = { "SL_COV_NEC" }},{	-- Necrolord
+				ach(14833, {	-- Fashion Abomination
+					crit(1),	-- Chef Hat
+					crit(2),	-- Dapper Top Hat
+					crit(3),	-- Dundae's Hat
+					crit(4),	-- Egg Hat
+					crit(5),	-- Flower Crown
+					crit(6),	-- Halo of Purity
+					crit(7),	-- Holiday Hat
+					crit(8),	-- Magician's Hat
+					crit(9),	-- Pirate Hat
+					crit(10),	-- Red Eye Lens
+					crit(11),	-- Skull Fungus
+					crit(12),	-- Skull Protector
+					crit(13),	-- Unworthy Crown
+					crit(14),	-- Happiness Bird
+					crit(15),	-- Hitchhiker
+					crit(16),	-- Lovely Candle Display
+					crit(17),	-- Shoulder Sprouts
+					crit(18),	-- Sticky Cat
+					crit(19),	-- Trained Corpselice
+					crit(20),	-- Trustworthy Doll
+					crit(21),	-- Armor Plating
+					crit(22),	-- Back Mushrooms
+					crit(23),	-- Collector Kash's Pack
+					crit(24),	-- Engineering Pack
+					crit(25),	-- Plague Pack
+					crit(26),	-- Safe Fall Pack
+					crit(27),	-- Six-League Pack
+					crit(28),	-- Vestigial Wings
+					crit(29),	-- Barrel O' Fish
+					crit(30),	-- Underpowered Gravity Pack
+					crit(31),	-- Butterflies
+					crit(32),	-- Spare Weapon
+					crit(33),	-- Faction Flag
+					crit(34),	-- Operational Instructions
+					crit(35),	-- Outlaw Flag
+				}),
 				ach(14764),	-- The Great Luckydo
 				ach(14752, {	-- Things To Do When You're Dead
 					i(181820),	-- Armored Chosen Tauralus (MOUNT!)
@@ -234,9 +285,8 @@ _.Achievements =
 					}),
 					ach(14753),	-- It's a Wrap
 				}),
-			}),
-			n(-929, {	-- Covenant: Night Fae
-				-- These are only available to Night Fae covenant members
+			})),
+			n(-929, bubbleDown({["customCollect"] = { "SL_COV_NFA" }},{	-- Night Fae
 				ach(14789),	-- All Spirits Great and Small
 				ach(14676),	-- Divine Spirit Savior
 				ach(14780),	-- Meditation Master
@@ -246,9 +296,8 @@ _.Achievements =
 				ach(14675),	-- Spirit Talker
 				ach(14677),	-- Spiritual Observations
 				ach(14670),	-- That's the Spirit
-			}),
-			n(-949, {	-- Covenant: Venthyr
-				-- These are only available to Venthyr covenant members
+			})),
+			n(-949, bubbleDown({["customCollect"] = { "SL_COV_VEN" }},{	-- Venthyr
 				ach(14749, {	-- Rendle's Big Day
 					crit(1),	-- Crown of the Righteous
 					crit(2),	-- Fae Revel Masque
@@ -371,9 +420,20 @@ _.Achievements =
 						crit(5),	-- Sinrunner Riding
 						crit(6),	-- Dredbat Riding
 					}),
-					ach(14683),	-- Dredger Style
+					ach(14683, {	-- Dredger Style
+						crit(1),	-- Black Muck Armor Dye
+						crit(2),	-- Blue Muck Armor Dye
+						crit(3),	-- Green Muck Armor Dye
+						crit(4),	-- Bubbling Muck Armor Dye
+						crit(5),	-- Thin Hair Cut
+						crit(6),	-- Spikey Hair Cut
+						crit(7),	-- Full Flowing Hair Cut
+						crit(8),	-- Dredger Lether Coif
+						crit(9),	-- Short Sleeved Doublet
+						crit(10),	-- Long Sleeved Doublet
+					}),
 				}),
-			}),
+			})),
 		}),
 	}),
 };

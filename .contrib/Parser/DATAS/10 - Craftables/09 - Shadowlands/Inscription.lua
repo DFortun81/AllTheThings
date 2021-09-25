@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		prof(INSCRIPTION, {
 			n(-320, {	-- Head
 				i(180755),	-- Fae Revel Masque

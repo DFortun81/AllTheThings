@@ -4,7 +4,7 @@
 
 _.GroupFinder =
 {
-	tier(2, {	-- Burning Crusade
+	tier(TBC_TIER, {
 		i(156682, {	-- Otherworldy Satchel of Helpful Goods
 			i(51969),	-- Enumerated Shoulders*
 			i(51972),	-- Enumerated Bracers*
@@ -37,7 +37,7 @@ _.GroupFinder =
 		}),
 		i(52004, {	-- Satchel of Helpful Goods 60-64
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 60-64 range.|r",
+			["description"] = "Rewarded for completing a random dungeon in the level 60-64 range.",
 			["g"] = {
 				i(51970),	-- Enumerated Gloves
 				i(51960),	-- Vigorous Gloves
@@ -47,7 +47,7 @@ _.GroupFinder =
 		}),
 		i(52005, {	-- Satchel of Helpful Goods 65-70
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 65-70 range.|r",
+			["description"] = "Rewarded for completing a random dungeon in the level 65-70 range.",
 			["g"] = {
 				i(51969),	-- Enumerated Shoulders
 				i(51961),	-- Vigorous Shoulderguards

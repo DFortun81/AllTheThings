@@ -4,27 +4,27 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
-		m(1462, {	-- Mechagon
-			n(-34,  {	-- World Quests
+	m(KULTIRAS, {
+		m(MECHAGON, {
+			n(WORLD_QUESTS, {
 				q(56396, {	-- Creakclank
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = { 50 },
 				}),
 				q(56397, {	-- CK-9 Micro-Oppression Unit
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = { 50 },
 				}),
 				q(56393, {	-- Gnomefeaster
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = { 50 },
 				}),
 				q(56395, {	-- Goldenbot XD
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = { 50 },
 				}),
 				q(56139, {	-- Junkyard Treasures
@@ -59,22 +59,22 @@ _.Zones =
 				}),
 				q(56394, {	-- Sputtertube
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = { 50 },
 				}),
 				q(56399, {	-- Unit 6
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = { 50 },
 				}),
 				q(56400, {	-- Unit 17
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = { 50 },
 				}),
 				q(56398, {	-- Unit 35
 					["isWorldQuest"] = true,
-					["filterID"] = 101,	-- Battle Pet
+					["filterID"] = BATTLE_PETS,
 					["lvl"] = { 50 },
 				}),
 			}),

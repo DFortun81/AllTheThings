@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(64, {	-- Thousand Needles
-			filter(101, {	-- Pet Battle
+		m(THOUSAND_NEEDLES, {
+			filter(BATTLE_PETS, {
 				p(398, {	-- Black Rat
 					["crs"] = { 61257 },	-- Black Rat
 				}),
@@ -22,7 +22,7 @@ _.Zones =
 				}),
 				q(31906, {	-- Kela Grimtotem
 					["provider"] = { "n", 66452 },	-- Kela Grimtotem
-					["coord"] = { 31.8, 32.8, 64 },
+					["coord"] = { 31.8, 32.8, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),

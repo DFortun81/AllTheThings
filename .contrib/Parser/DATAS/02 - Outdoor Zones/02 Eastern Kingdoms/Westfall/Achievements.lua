@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(52, {	-- Westfall
+		m(WESTFALL, {
 			n(ACHIEVEMENTS, {
 				ach(4903, {	-- Westfall Quests
 					["races"] = ALLIANCE_ONLY,

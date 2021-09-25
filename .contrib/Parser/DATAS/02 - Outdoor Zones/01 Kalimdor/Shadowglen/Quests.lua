@@ -5,13 +5,14 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(57, {	-- Teldrassil
+		m(TELDRASSIL, {
 			m(460, {	-- Shadowglen
 				n(QUESTS, {
 					q(28734, {	-- A Favor for Melithar
 						["provider"] = { "n", 2079 },	-- Ilthalaine
 						["coord"] = { 46.3, 73.5, 460 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 28714,	-- Fel Moss Corruption
 						["isBreadcrumb"] = true,
 					}),
 					q(31168, {	-- Calligraphed Sigil
@@ -107,7 +108,7 @@ _.Zones =
 						["description"] = "The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",
 						["coords"] = {
 							{ 47.1, 55.9, 460 },
-							{ 41.4, 45.8, 57 },
+							{ 41.4, 45.8, TELDRASSIL },
 						},
 					}),
 					q(28713, {	-- The Balance of Nature

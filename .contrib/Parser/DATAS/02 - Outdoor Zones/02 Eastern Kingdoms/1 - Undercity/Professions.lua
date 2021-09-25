@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(90, {	-- Undercity
-			n(-38, {	-- Profession
+		m(UNDERCITY, {
+			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(QUESTS, {
 						q(29481, {	-- Elixir Master
-							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey (Undercity)
-							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
+							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey
+							["coord"] = { 47.6, 72.8, UNDERCITY },
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -25,8 +25,8 @@ _.Zones =
 							},]]
 						}),
 						q(29067, {	-- Potion Master
-							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey (Undercity)
-							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
+							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey
+							["coord"] = { 47.6, 72.8, UNDERCITY },
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -40,8 +40,8 @@ _.Zones =
 							},]]
 						}),
 						q(29482, {	-- Transmutation Master
-							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey (Undercity)
-							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
+							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey
+							["coord"] = { 47.6, 72.8, UNDERCITY },
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -63,76 +63,79 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
-						i(67414, {	-- Bag of Shiny Things
-							["description"] = "|cff66ccffFishing Daily Quest Reward|r",
-							["crs"] = { 4573 },	-- Armand Cromwell
-							["g"] = {
-								i(44983),	-- Strand Crawler
-								i(33820),	-- Weather-Beaten Fishing Hat
-								i(45991),	-- Bone Fishing Pole
-								i(45992),	-- Jeweled Fishing Pole
-							},
-						}),
-						q(29317, {	-- Fish Head
-							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, 90 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(1, {	-- Fish Head
-									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
-								}),
-							},
-						}),
-						q(29320, {	-- Like Pike?
-							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, 90 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(3, {	-- Like Pike?
-									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
-								}),
-							},
-						}),
-						q(29361, {	-- Moat Monster!
-							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, 90 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(5, {	-- Moat Monster!
-									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
-								}),
-							},
-						}),
-						q(29319, {	-- Tadpole Terror
-							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, 90 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(2, {	-- Tadpole Terror
-									["achievementID"] = 5850,-- Fish or Cut Bait: Undercity
-								}),
-							},
-						}),
-						q(29322, {	-- Time for Slime
-							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, 90 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(4, {	-- Time for Slime
-									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
-								}),
-							},
-						}),
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(67414, {	-- Bag of Shiny Things
+								["description"] = "Fishing Daily Quest Reward",
+								["crs"] = { 4573 },	-- Armand Cromwell
+								["g"] = {
+									i(44983),	-- Strand Crawler
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								},
+							}),
+							q(29317, {	-- Fish Head
+								["provider"] = { "n", 4573 },	-- Armand Cromwell
+								["coord"] = { 80.7, 31.2, UNDERCITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(1, {	-- Fish Head
+										["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
+									}),
+								},
+							}),
+							q(29320, {	-- Like Pike?
+								["provider"] = { "n", 4573 },	-- Armand Cromwell
+								["coord"] = { 80.7, 31.2, UNDERCITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(3, {	-- Like Pike?
+										["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
+									}),
+								},
+							}),
+							q(29361, {	-- Moat Monster!
+								["provider"] = { "n", 4573 },	-- Armand Cromwell
+								["coord"] = { 80.7, 31.2, UNDERCITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(5, {	-- Moat Monster!
+										["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
+									}),
+								},
+							}),
+							q(29319, {	-- Tadpole Terror
+								["provider"] = { "n", 4573 },	-- Armand Cromwell
+								["coord"] = { 80.7, 31.2, UNDERCITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(2, {	-- Tadpole Terror
+										["achievementID"] = 5850,-- Fish or Cut Bait: Undercity
+									}),
+								},
+							}),
+							q(29322, {	-- Time for Slime
+								["provider"] = { "n", 4573 },	-- Armand Cromwell
+								["coord"] = { 80.7, 31.2, UNDERCITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = HORDE_ONLY,
+								["groups"] = {
+									crit(4, {	-- Time for Slime
+										["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
+									}),
+								},
+							}),
+						},
 					}),
 				}),
 				prof(COOKING, {
@@ -144,7 +147,7 @@ _.Zones =
 					n(QUESTS, {
 						q(29333, {	-- Escargot A Go-Go
 							["provider"] = { "n", 4552 },	-- Eunice Burch
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 62.2, 44.6, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
@@ -157,7 +160,7 @@ _.Zones =
 						}),
 						q(29315, {	-- Fungus Among Us
 							["provider"] = { "n", 4552 },	-- Eunice Burch
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 62.2, 44.6, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
@@ -170,7 +173,7 @@ _.Zones =
 						}),
 						q(29332, {	-- Lily, Oh Lily
 							["provider"] = { "n", 4552 },	-- Eunice Burch
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 62.2, 44.6, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
@@ -183,7 +186,7 @@ _.Zones =
 						}),
 						q(29334, {	-- Roach Coach
 							["provider"] = { "n", 4552 },	-- Eunice Burch
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 62.2, 44.6, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
@@ -196,7 +199,7 @@ _.Zones =
 						}),
 						q(29360, {	-- Would You Like Some Flies With That?
 							["provider"] = { "n", 4552 },	-- Eunice Burch
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 62.2, 44.6, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,

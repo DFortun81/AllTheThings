@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
-		m(379, {	-- Kun-Lai Summit
+	m(PANDARIA, {
+		m(KUN_LAI_SUMMIT, {
 			n(-362, {	-- Peak of Serenity
 				["description"] = "This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.|r",
 				["classes"] = { MONK },
@@ -33,12 +33,12 @@ _.Zones =
 							i(89567),
 							i(89569),
 						}),
-						q(31833, {	-- Continue Your Training: Master Woo
-							i(89556),
-							i(89558),
-							i(89555),
-						}),
-						q(31836, { 	-- Continue Your Training: Master Yoon
+						un(REMOVED_FROM_GAME, q(31833, {	-- Continue Your Training: Master Woo/removed in 8.0.1
+							un(REMOVED_FROM_GAME, i(89556)),
+							un(REMOVED_FROM_GAME, i(89558)),
+							un(REMOVED_FROM_GAME, i(89555)),
+						})),
+						q(31836, {	-- Continue Your Training: Master Yoon
 							i(89548),
 							i(89549),
 							i(89550),
@@ -48,29 +48,29 @@ _.Zones =
 							i(90010),
 							i(90011),
 						}),
-						q(31844, {	-- Practice Makes Perfect: Master Cheng/lvl 60
+						q(31844, {	-- Practice Makes Perfect: Master Cheng/lvl 20
 							["isDaily"] = true,
 						}),
-						q(31840, {	-- Practice Makes Perfect: Master Cheng/lvl 20
+						q(31840, {	-- Practice Makes Perfect: Master Cheng/lvl 10
 							["isDaily"] = true,
 						}),
-						q(31846, {	-- Practice Makes Perfect: Master Hsu/lvl 80
+						q(31846, {	-- Practice Makes Perfect: Master Hsu/lvl 30
 							["isDaily"] = true,
 						}),
-						q(31842, {	-- Practice Makes Perfect: Master Kistane/lvl 40
+						q(31842, {	-- Practice Makes Perfect: Master Kistane/lvl 10
 							["isDaily"] = true,
 						}),
-						q(31845, {	-- Practice Makes Perfect: Master Tsang/lvl 70
+						q(31845, {	-- Practice Makes Perfect: Master Tsang/lvl 25
 							["isDaily"] = true,
 						}),
-						q(31841, {	-- Practice Makes Perfect: Master Woo/lvl 30
+						q(31841, {	-- Practice Makes Perfect: Master Woo/lvl 10
 							["isDaily"] = true,
 							["u"] = REMOVED_FROM_GAME,
 						}),
-						q(31843, {	-- Practice Makes Perfect: Master Yoon/lvl 50
+						q(31843, {	-- Practice Makes Perfect: Master Yoon/lvl 15
 							["isDaily"] = true,
 						}),
-						q(31856), 	-- The Peak of Serenity - Begin Your Training
+						q(31856),	-- The Peak of Serenity - Begin Your Training
 						q(31989),	-- The Peak of Serenity - Complete Your Training/lvl 90
 						q(31859),	-- The Peak of Serenity - Continue Your Training/lvl 60
 						q(31860),	-- The Peak of Serenity - Continue Your Training/lvl 70
@@ -85,7 +85,7 @@ _.Zones =
 						n(66354, {	-- Master Cannon <Tanner>
 							["description"] = "All items on this vendor are quest rewards. You must have completed the quest to purchase the reward.|r",
 							["g"] = {
-								-- biting/formidable/serene yellow belt currently bugged. Temporarily marking them unavailable until blizzard fixes it
+								-- biting/formidable/serene yellow belt currently bugged. Removed in 8.0.1
 								un(REMOVED_FROM_GAME, i(89555)),	-- Biting Yellow Belt
 								un(REMOVED_FROM_GAME, i(89556)),	-- Formidable Yellow Belt
 								un(REMOVED_FROM_GAME, i(89558)),	-- Serene Yellow Belt
@@ -102,6 +102,7 @@ _.Zones =
 						}),
 						n(66356, {	-- Master Hwang <Staff Vendor>
 							["description"] = "The blue-quality staves on this vendor are quest rewards. You must have completed the quest to purchase the reward.|r",
+							["coord"] = { 50.44, 42.61, KUN_LAI_SUMMIT },
 							["g"] = {
 								i(89553),	-- Aspirant's Staff of Grace
 								i(89551),	-- Aspirant's Staff of Harmony
@@ -125,6 +126,7 @@ _.Zones =
 						}),
 						n(66359, {	-- Master Tan <Fist Weapon Vendor>
 							["description"] = "The blue-quality fist weapons on this vendor require that you have completed the level 30 Monk quest 'Continue Your Training: Master Hsu'|r",
+							["coord"] = { 50.02, 38.53, KUN_LAI_SUMMIT },
 							["g"] = {
 								i(89579),	-- Tiger Lord's Bladed Claws
 								i(89578),	-- Tiger Lord's Razor Claws

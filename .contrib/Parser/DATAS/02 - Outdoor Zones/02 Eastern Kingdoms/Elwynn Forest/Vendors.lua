@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(37, {	-- Elwynn Forest
+		m(ELWYNN_FOREST, {
 			n(VENDORS, {
 				n(844, {	-- Antonio Perelli <Traveling Salesman>
 					["races"] = ALLIANCE_ONLY,
@@ -23,7 +23,7 @@ _.Zones =
 					},
 				}),
 				n(6367, {	-- Donni Anthania <Crazy Cat Lady>
-					["coord"] = { 44.2, 53.4, 37 },
+					["coord"] = { 44.2, 53.4, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(8485),	-- Cat Carrier (Bombay) (PET!)
@@ -33,7 +33,7 @@ _.Zones =
 					},
 				}),
 				n(1250, {	-- Drake Lindgren <General & Trade Supplies>
-					["coord"] = { 83.3, 66.7, 37 },
+					["coord"] = { 83.3, 66.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(6272, {	-- Pattern: Blue Linen Robe
@@ -42,7 +42,7 @@ _.Zones =
 					},
 				}),
 				n(384, {	-- Katie Hunter <Horse Breeder>
-					["coord"] = { 84.2, 65.5, 37 },
+					["coord"] = { 84.2, 65.5, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(5656),	-- Brown Horse Bridle
@@ -54,7 +54,7 @@ _.Zones =
 					},
 				}),
 				n(1198, {	-- Rallic Finn <Bowyer>
-					["coord"] = { 83.3, 66.1, 37 },
+					["coord"] = { 83.3, 66.1, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11303, {	-- Fine Shortbow
@@ -63,7 +63,7 @@ _.Zones =
 					},
 				}),
 				n(66, {	-- Tharynn Bouden <Trade Supplies>
-					["coord"] = { 41.9, 67.1, 37 },
+					["coord"] = { 41.9, 67.1, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest

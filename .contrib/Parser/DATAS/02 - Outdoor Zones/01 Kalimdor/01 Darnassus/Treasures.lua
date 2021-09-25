@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(89, {	-- Darnassus
+		m(DARNASSUS, {
 			n(TREASURES, {
 				o(240625, {	-- High Priestess' Reliquary
-					["description"] = "|cff66ccffLoot the chest on the top floor of the Temple of the Moon, on the wall opposite Tyrande Whisperwind.|r",
+					["description"] = "Loot the chest on the top floor of the Temple of the Moon, on the wall opposite Tyrande Whisperwind.",
 					["model"] = 942843,
 					["icon"] = "Interface\\Icons\\Garrison_SilverChest",
 					["g"] = {

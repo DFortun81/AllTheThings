@@ -2,14 +2,14 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(4, {	-- Cataclysm
-	inst(186, { 	-- Hour of Twilight
+_.Instances = { tier(CATA_TIER, {
+	inst(186, {	-- Hour of Twilight
 		["lvl"] = 85,
 		["mapID"] = 399,
 		["maps"] = { 400 },
 		["coords"] = {
-			{ 66.2, 29.2, 75 },	-- dungeon entrance
-			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
+			{ 66.2, 29.2, CAVERNS_OF_TIME },	-- dungeon entrance
+			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 		},
 		["g"] = {
 			n(QUESTS, {
@@ -42,7 +42,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				},
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
 					55559,	-- Crystalline Elemental
 					54555,	-- Frozen Servitor
@@ -66,7 +66,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				i(72850),	-- Surestride Boots
 				i(72849),	-- Wayfinder Boots
 			})),
-			cr(54968, e(342, { 	-- Asira Dawnslayer
+			cr(54968, e(342, {	-- Asira Dawnslayer
 				i(72860),	-- Mandible of the Old Ones
 				i(72855),	-- Corrupted Carapace
 				i(72859),	-- Dawnslayer Helm

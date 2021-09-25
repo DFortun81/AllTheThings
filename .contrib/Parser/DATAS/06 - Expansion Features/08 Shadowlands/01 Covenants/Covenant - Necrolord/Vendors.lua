@@ -4,10 +4,10 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
-		n(-920, {	-- Covenant: Necrolord
+	tier(SL_TIER, {
+		n(-920, {	-- Necrolord
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
-			["maps"] = { 1698 },	-- Seat of the Primus
+			["maps"] = { SEAT_OF_THE_PRIMUS },
 			["g"] = {
 				n(VENDORS, {
 					n(159238, {	-- Atticus <Supplies & Acquisitions>
@@ -64,7 +64,7 @@ _.ExpansionFeatures =
 							i(184303, {	-- Arsenal: Stitchmasters' Weapons
 								["cost"] = {
 									{ "i", 184304, 750 },
-									{ "c", 1813, 1000 },
+									{ "c", 1813, 30000 },
 								},
 								["g"] = {
 									i(184079),	-- Abominable Bulwark of Marz
@@ -84,31 +84,73 @@ _.ExpansionFeatures =
 							i(184047, {	-- Ascended Chest of Arms
 								["cost"] = { { "c", 1813, 1000 } },
 								["g"] = {
-									-- TODO: Add items when we find out what is in this box.
+									i(181225),		-- Crossbow of Contemplative Calm
+									i(181226),		-- Bronze Dual-Bladed Glaive
+									i(181232),		-- Cupbearer's Claymore
+									i(181234),		-- Dutybound Spellblade
+									i(181228),		-- Temple Guard's Partisan
+									i(181229),		-- Tranquil's Censer
+									i(181230),		-- Pugilist's Chakram
+									i(181233),		-- Bellringer's Hammer
+									i(181227),		-- Bronze Ceremonial Targe
+									i(181231),		-- Broadbladed Severer
+									i(181235),		-- Final Arbiter's Gavel
 								},
 							}),
 							i(184045, {	-- Martial Tithe of the Court of Harvesters
 								["cost"] = { { "c", 1813, 1000 } },
 								["g"] = {
-									-- TODO: Add items when we find out what is in this box.
+									i(180955),		-- Stonewing Halberd
+									i(180956),		-- Axeblade Blunderbuss
+									i(180957),		-- Batwing Glaive
+									i(180963),		-- Crypt Keeper's Vessel
+									i(180954),		-- Crypt Watcher's Spire
+									i(180959),		-- Dredger Anklebiter
+									i(180960),		-- Shiny-Metal Topped Basher
+									i(180954),		-- Ember Court Barrier
+									i(180958),		-- Redelev House Foil
+									i(180961),		-- Silver-Bladed Ritual Dagger
+									i(180962),		-- Sterling-Silver Cudgel
 								},
 							}),
 							i(184046, {	-- Undying Army Weapon Cache
 								["cost"] = { { "c", 1813, 1000 } },
 								["g"] = {
-									-- TODO: Add items when we find out what is in this box.
+									i(181329),		-- Marrowfused Claymore
+									i(181321),		-- Gem-Crowned Wand
+									i(181327),		-- Spineforged Tenderizer
+									i(181330),		-- Marrowfused Warglaive
+									i(181325),		-- Marrowfused Dagger
+									i(181328),		-- Marrowfused Sword
+									i(181331),		-- Marrowfused Shield
+									i(181326),		-- Bloodstained Hacksaw
+									i(181323),		-- Blightclutched Greatstaff
+									i(181320),		-- Bonejowl Ballista
+									i(181322),		-- Bonebound Tome
 								},
 							}),
 							i(184048, {	-- Weapon Satchel of the Wild Hunt
 								["cost"] = { { "c", 1813, 1000 } },
 								["g"] = {
-									-- TODO: Add items when we find out what is in this box.
+									i(179548),		-- Elderwood Gavel
+									i(179563),		-- Heartwood Stem
+									i(179499),		-- Nightwillow Barb
+									i(179538),		-- Grove Warden's Maul
+									i(179605),		-- Elderwood Barrier
+									i(179514),		-- Ripvine Saber
+									i(179585),		-- Nightwillow Shortbow
+									i(179509),		-- Grove Warden's Edge
+									i(179516),		-- Songwood Staff
+									i(179533),		-- Grove Warden's Harvester
 								},
 							}),
+							i(184050),	-- Malleable Mesh
+							i(184049),	-- Counterfeit Luckydo
+							i(184051),	-- Stitched Lich Effigy
 						},
 					}),
 					n(175310, {	-- Mellisa Fate <Raid Finder Nathrian Warsmith>
-						["coord"] = { 60.8, 44.3, 1698 },
+						["coord"] = { 60.8, 44.3, SEAT_OF_THE_PRIMUS },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 4,	-- LFR
@@ -324,7 +366,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175371, {	-- Mortis Elfsen <Normal Nathrian Warsmith>
-						["coord"] = { 61.1, 45.7, 1698 },
+						["coord"] = { 61.1, 45.7, SEAT_OF_THE_PRIMUS },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 3,	-- Normal
@@ -541,7 +583,7 @@ _.ExpansionFeatures =
 					}),
 					n(175370, {	-- Odious Gwor <Mythic Nathrian Warsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
-						["coord"] = { 60.5, 48.6, 1698 },
+						["coord"] = { 60.5, 48.6, SEAT_OF_THE_PRIMUS },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 6,	-- Mythic
@@ -755,14 +797,8 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),
-					n(164588, {	-- Shinbone Slim <Food and Attire>
-						["coord"] = { 47.0, 48.8, MALDRAXXUS },
-						["g"] = {
-							i(184036),	-- Dundae's Hat
-						},
-					}),
 					n(175311, {	-- Slayer Araya <Covenant Armor>
-						["coord"] = { 57.1, 48.3, 1698 },
+						["coord"] = { 57.1, 48.3, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(182276, {	-- Bladesworn Conjurer's Cape
 								["cost"] = { { "c", 1813, 100 } },
@@ -954,339 +990,360 @@ _.ExpansionFeatures =
 					n(172176, {	-- Su Zettai <Renown Quartermaster>
 						["coords"] = {
 							{ 50.68, 71.38, MALDRAXXUS },
-							{ 52.5, 41.2, 1698 },	-- Seat of the Primus
+							{ 52.5, 41.2, SEAT_OF_THE_PRIMUS },
 						},
-						["g"] = {
+						["g"] = sharedData(
+							{ ["customCollect"] = "SL_COV_NEC", }	-- Necrolord
+							, {
 							i(181815, {	-- Armored Bonehoof Tauralus (MOUNT)
 								["cost"] = {
-									{ "c", 1813, 5000 },
-									{ "c", 1885, 100 },
+									{ "c", 1813, 5000 },	-- 5,000x Reservoir Anima
+									{ "c", 1885, 100 },		-- 100x Grateful Offering
 								},
 							}),
-							i(181821, {	-- Armored Plaguerot Tauralus (MOUNT)
+							i(181821, {	-- Armored Plaguerot Tauralus (MOUNT!)
 								["cost"] = {
-									{ "c", 1813, 100 },
-									{ "c", 1885, 50 },
+									{ "c", 1813, 100 },	-- 100x Reservoir Anima
+									{ "c", 1885, 50 },	-- 50x Grateful Offering
 								},
 							}),
-							i(182076, {	-- Plaguerot Tauralus (MOUNT)
-								["cost"] = { { "c", 1813, 5000 } },
+							i(182076, {	-- Plaguerot Tauralus (MOUNT!)
+								["cost"] = { { "c", 1813, 5000 } },	-- 5,000x Reservoir Anima
+							}),
+							i(186488, {	-- Regal Corpsefly (MOUNT!)
+								["cost"] = { { "c", 1813, 7500 } },	-- 7,500x Reservoir Anima
 							}),
 							i(183462, {	-- Illusion: Unbreakable Resolve
-								["cost"] = { { "c", 1813, 2500 } },
+								["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
+							}),
+							i(183249, {	-- Memory of a Vital Sacrifice
+								["cost"] = { { "c", 1813, 250 } },	-- 250x Reservoir Anima
 							}),
 							i(183601, {	-- Jiggles (PET)
 								["cost"] = {
-									{ "c", 1813, 1500 },
-									{ "c", 1885, 30 },
+									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", 1885, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(182773, {	-- Necrolord Hearthstone (TOY)
 								["customCollect"] = { "SL_COV_NEC" },	-- Requires Necrolord to obtain & use
-								["description"] = "Unlike the other Covenant hearthstone Toys, this one can ONLY be used by a Necrolord character.",
 								["cost"] = { { "c", 1813, 750 } },
 							}),
 							i(184071, {	-- Blooddoused Aranakk Polearm
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 50 },
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(184072, {	-- Brutal Fury-Forged Cleaver
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 50 },
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(184074, {	-- Chopper of the Hidden Hand
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 50 },
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(184070, {	-- Colossal Greataxe of Pandemonium
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 50 },
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(184073, {	-- Crooked Plaguedtouched Dagger
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 50 },
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(184064, {	-- Deathforged Bulwark of Maldraxxus
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 50 },
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 50 },		-- 50x Grateful Offering
+								},
+							}),
+							i(186502, {	-- Ensemble: Marileth's Assistant Vestments
+								["cost"] = { { "c", 1813, 10000 } },	-- 10,000x Reservoir Anima
+								["g"] = {
+									i(185037),	-- Marileth's Assistant's Drape
+									i(185031),	-- Marileth's Assistant's Handwraps
+									i(185032),	-- Marileth's Assistant's Hood
+									i(185033),	-- Marileth's Assistant's Leggings
+									i(185034),	-- Marileth's Assistant's Mantle
+									i(185035),	-- Marileth's Assistant's Sash
+									i(185030),	-- Marileth's Assistant's Slippers
+									i(185029),	-- Marileth's Assistant's Vestments
+									i(185036),	-- Marileth's Assistant's Wraps
 								},
 							}),
 							i(184068, {	-- Greatstaff of the Lichsworn
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 50 },
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(184065, {	-- Lambent Plaguetouched Focux
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 50 },
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(181805, {	-- Osteowings of the Necrolords
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 40 },
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 40 },		-- 40x Grateful Offering
 								},
 							}),
 							i(182239, {	-- Prime Conjurer's Cape
 								["cost"] = {
-									{ "c", 1813, 1500 },
-									{ "c", 1885, 10 },
+									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(182237, {	-- Prime Conjurer's Cinch
 								["cost"] = {
-									{ "c", 1813, 3000 },
-									{ "c", 1885, 25 },
+									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", 1885, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(182231, {	-- Prime Conjurer's Cowl
 								["cost"] = {
-									{ "c", 1813, 4000 },
-									{ "c", 1885, 30 },
+									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", 1885, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(182234, {	-- Prime Conjurer's Gloves
 								["cost"] = {
-									{ "c", 1813, 2000 },
-									{ "c", 1885, 15 },
+									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", 1885, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(182235, {	-- Prime Conjurer's Leggings
 								["cost"] = {
-									{ "c", 1813, 3000 },
-									{ "c", 1885, 25 },
+									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", 1885, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(182236, {	-- Prime Conjurer's Mantle
 								["cost"] = {
-									{ "c", 1813, 4000 },
-									{ "c", 1885, 30 },
+									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", 1885, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(182233, {	-- Prime Conjurer's Slippers
 								["cost"] = {
-									{ "c", 1813, 2000 },
-									{ "c", 1885, 15 },
+									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", 1885, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(182232, {	-- Prime Conjurer's Tunic
 								["cost"] = {
-									{ "c", 1813, 4000 },
-									{ "c", 1885, 30 },
+									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", 1885, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(182238, {	-- Prime Conjurer's Wristwraps
 								["cost"] = {
-									{ "c", 1813, 2000 },
-									{ "c", 1885, 15 },
+									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", 1885, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(182214, {	-- Prime Harbinger's Chestguard
 								["cost"] = {
-									{ "c", 1813, 4000 },
-									{ "c", 1885, 30 },
+									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", 1885, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(182216, {	-- Prime Harbinger's Crushers
 								["cost"] = {
-									{ "c", 1813, 2000 },
-									{ "c", 1885, 15 },
+									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", 1885, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(182221, {	-- Prime Harbinger's Greatcloak
 								["cost"] = {
-									{ "c", 1813, 1500 },
-									{ "c", 1885, 10 },
+									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(182213, {	-- Prime Harbinger's Greathelm
 								["cost"] = {
-									{ "c", 1813, 4000 },
-									{ "c", 1885, 30 },
+									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", 1885, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(182217, {	-- Prime Harbinger's Greaves
 								["cost"] = {
-									{ "c", 1813, 3000 },
-									{ "c", 1885, 25 },
+									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", 1885, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(182218, {	-- Prime Harbinger's Pauldrons
 								["cost"] = {
-									{ "c", 1813, 4000 },
-									{ "c", 1885, 30 },
+									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", 1885, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(182215, {	-- Prime Harbinger's Stompers
 								["cost"] = {
-									{ "c", 1813, 2000 },
-									{ "c", 1885, 15 },
+									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", 1885, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(182220, {	-- Prime Harbinger's Vambraces
 								["cost"] = {
-									{ "c", 1813, 2000 },
-									{ "c", 1885, 15 },
+									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", 1885, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(182219, {	-- Prime Harbinger's Warbelt
 								["cost"] = {
-									{ "c", 1813, 3000 },
-									{ "c", 1885, 25 },
+									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", 1885, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(182247, {	-- Prime Tactician's Bracers
 								["cost"] = {
-									{ "c", 1813, 2000 },
-									{ "c", 1885, 15 },
+									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", 1885, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(182244, {	-- Prime Tactician's Chausses
 								["cost"] = {
-									{ "c", 1813, 3000 },
-									{ "c", 1885, 25 },
+									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", 1885, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(182248, {	-- Prime Tactician's Drape
 								["cost"] = {
-									{ "c", 1813, 1500 },
-									{ "c", 1885, 10 },
+									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(182240, {	-- Prime Tactician's Faceguard
 								["cost"] = {
-									{ "c", 1813, 4000 },
-									{ "c", 1885, 30 },
+									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", 1885, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(182243, {	-- Prime Tactician's Gauntlets
 								["cost"] = {
-									{ "c", 1813, 2000 },
-									{ "c", 1885, 15 },
+									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", 1885, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(182246, {	-- Prime Tactician's Girdle
 								["cost"] = {
-									{ "c", 1813, 3000 },
-									{ "c", 1885, 25 },
+									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", 1885, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(182241, {	-- Prime Tactician's Hauberk
 								["cost"] = {
-									{ "c", 1813, 4000 },
-									{ "c", 1885, 30 },
+									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", 1885, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(182242, {	-- Prime Tactician's Sabatons
 								["cost"] = {
-									{ "c", 1813, 2000 },
-									{ "c", 1885, 15 },
+									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", 1885, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(182245, {	-- Prime Tactician's Spaulders
 								["cost"] = {
-									{ "c", 1813, 4000 },
-									{ "c", 1885, 30 },
+									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", 1885, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(182229, {	-- Prime Wraith's Armguards
 								["cost"] = {
-									{ "c", 1813, 2000 },
-									{ "c", 1885, 15 },
+									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", 1885, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(182228, {	-- Prime Wraith's Belt
 								["cost"] = {
-									{ "c", 1813, 3000 },
-									{ "c", 1885, 25 },
+									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", 1885, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(182226, {	-- Prime Wraith's Breeches
 								["cost"] = {
-									{ "c", 1813, 3000 },
-									{ "c", 1885, 25 },
+									{ "c", 1813, 3000 },	-- 3,000x Reservoir Anima
+									{ "c", 1885, 25 },		-- 25x Grateful Offering
 								},
 							}),
 							i(182224, {	-- Prime Wraith's Boots
 								["cost"] = {
-									{ "c", 1813, 2000 },
-									{ "c", 1885, 15 },
+									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", 1885, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(182230, {	-- Prime Wraith's Cloak
 								["cost"] = {
-									{ "c", 1813, 1500 },
-									{ "c", 1885, 10 },
+									{ "c", 1813, 1500 },	-- 1,500x Reservoir Anima
+									{ "c", 1885, 10 },		-- 10x Grateful Offering
 								},
 							}),
 							i(182223, {	-- Prime Wraith's Jerkin
 								["cost"] = {
-									{ "c", 1813, 4000 },
-									{ "c", 1885, 30 },
+									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", 1885, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(182227, {	-- Prime Wraith's Shoulders
 								["cost"] = {
-									{ "c", 1813, 4000 },
-									{ "c", 1885, 30 },
+									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", 1885, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(182225, {	-- Prime Wraith's Stranglers
 								["cost"] = {
-									{ "c", 1813, 2000 },
-									{ "c", 1885, 15 },
+									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
+									{ "c", 1885, 15 },		-- 15x Grateful Offering
 								},
 							}),
 							i(182222, {	-- Prime Wraith's Visage
 								["cost"] = {
-									{ "c", 1813, 4000 },
-									{ "c", 1885, 30 },
+									{ "c", 1813, 4000 },	-- 4,000x Reservoir Anima
+									{ "c", 1885, 30 },		-- 30x Grateful Offering
 								},
 							}),
 							i(184063, {	-- Shank of the Unseen Eye
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 50 },
+									{ "c", 1813, 3500 },	-- 3,500 Reservoir Anima
+									{ "c", 1885, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(184067, {	-- Skullformed Ossein Warglaive
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 50 },
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(184069, {	-- Soulbarb, the Breathless Kill
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 50 },
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 50 },		-- 50x Grateful Offering
 								},
 							}),
 							i(181801, {	-- Standard of the Necrolords
-								["cost"] = { { "c", 1813, 3500 } },
+								["cost"] = { { "c", 1813, 3500 } },	-- 3,500x Reservoir Anima
 							}),
 							i(184066, {	-- Wriggling Soulcharged Mace
 								["cost"] = {
-									{ "c", 1813, 3500 },
-									{ "c", 1885, 50 },
+									{ "c", 1813, 3500 },	-- 3,500x Reservoir Anima
+									{ "c", 1885, 50 },		-- 50x Grateful Offering
 								},
 							}),
-						},
+						}),
 					}),
 					n(175312, {	-- Taiya Tacere <Heroic Nathrian Warsmith>
-						["coord"] = { 61.2, 47.4, 1698 },
+						["coord"] = { 61.2, 47.4, SEAT_OF_THE_PRIMUS },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 5,	-- Heroic
@@ -1505,3 +1562,60 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(63627),	-- learning Ensemble: Marileth's Assistant's Vestments
+};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10100, {	-- Shadowlands
+		n(-920, {	-- Necrolord
+			n(-163, {	-- Armor
+				n(-43, {	-- Cloth
+					i(179412),	-- 9.0 Covenant - Maldraxxus - Cloth - Head
+					i(179413),	-- 9.0 Covenant - Maldraxxus - Cloth - Chest
+					i(179414),	-- 9.0 Covenant - Maldraxxus - Cloth - Feet
+					i(179415),	-- 9.0 Covenant - Maldraxxus - Cloth - Hands
+					i(179416),	-- 9.0 Covenant - Maldraxxus - Cloth - Legs
+					i(179417),	-- 9.0 Covenant - Maldraxxus - Cloth - Shoulders
+					i(179418),	-- 9.0 Covenant - Maldraxxus - Cloth - Waist
+					i(179419),	-- 9.0 Covenant - Maldraxxus - Cloth - Wrists
+				}),
+				n(-44, {	-- Leather
+					i(179403),	-- 9.0 Covenant - Maldraxxus - Leather - Head
+					i(179404),	-- 9.0 Covenant - Maldraxxus - Leather - Chest
+					i(179405),	-- 9.0 Covenant - Maldraxxus - Leather - Feet
+					i(179406),	-- 9.0 Covenant - Maldraxxus - Leather - Hands
+					i(179407),	-- 9.0 Covenant - Maldraxxus - Leather - Legs
+					i(179408),	-- 9.0 Covenant - Maldraxxus - Leather - Shoulders
+					i(179409),	-- 9.0 Covenant - Maldraxxus - Leather - Waist
+					i(179410),	-- 9.0 Covenant - Maldraxxus - Leather - Wrists
+				}),
+				n(-45, {	-- Mail
+					i(179421),	-- 9.0 Covenant - Maldraxxus - Mail Head
+					i(179422),	-- 9.0 Covenant - Maldraxxus - Mail Chest
+					i(179423),	-- 9.0 Covenant - Maldraxxus - Mail Feet
+					i(179424),	-- 9.0 Covenant - Maldraxxus - Mail Hands
+					i(179425),	-- 9.0 Covenant - Maldraxxus - Mail Legs
+					i(179426),	-- 9.0 Covenant - Maldraxxus - Mail Shoulders
+					i(179427),	-- 9.0 Covenant - Maldraxxus - Mail Waist
+					i(179428),	-- 9.0 Covenant - Maldraxxus - Mail Wrists
+				}),
+				n(-46, {	-- Plate
+					i(174185),	-- 9.0 Covenant - Maldraxxus - Plate Head
+					i(174186),	-- 9.0 Covenant - Maldraxxus - Plate Chest
+					i(174187),	-- 9.0 Covenant - Maldraxxus - Plate Feet
+					i(174188),	-- 9.0 Covenant - Maldraxxus - Plate Hands
+					i(174189),	-- 9.0 Covenant - Maldraxxus - Plate Legs
+					i(174190),	-- 9.0 Covenant - Maldraxxus - Plate Shoulders
+					i(174191),	-- 9.0 Covenant - Maldraxxus - Plate Waist
+					i(174192),	-- 9.0 Covenant - Maldraxxus - Plate Wrists
+				}),
+				n(-322, {	-- Cloaks
+					i(174193),	-- 9.0 Covenant - Maldraxxus - Plate Cloak
+					i(179411),	-- 9.0 Covenant - Maldraxxus - Leather - Cloak
+					i(179420),	-- 9.0 Covenant - Maldraxxus - Cloth - Cloak
+					i(179429),	-- 9.0 Covenant - Maldraxxus - Mail Cloak
+				}),
+			}),
+		}),
+	}),
+});

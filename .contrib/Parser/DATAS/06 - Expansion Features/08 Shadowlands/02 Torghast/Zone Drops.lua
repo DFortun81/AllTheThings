@@ -4,32 +4,198 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		m(1627, {	-- Torghast
-			n(ZONEDROPS, {
-				i(183192, {	-- Frenzied Mawrat
-					["crs"] = { 
+			n(ZONE_DROPS, {
+			--	Epics
+				i(187096, {	-- Adamant Vault Shoulderplates
+					["crs"] = {
+						155945,	-- Gherus the Chained
+					},
+				}),
+				i(187081, {	-- Blackflame Skull Crescent
+					["crs"] = {
+						179526,	-- Troz'igal the Oppressor
+						179433,	-- Vault Aegis
+					},
+				}),
+				i(187044, {	-- Deathbringer's Epaulettes
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						170418,	-- Goxul the Devourer
+						153382,	-- Maw of the Maw
+						159190,	-- Synod
+					},
+				}),
+				i(187030, {	-- Deathsworn Shoulderguards
+					["crs"] = {
+						151329,	-- Warden Skoldus
+					},
+				}),
+				i(187093, {	-- Gilded Ornamental Mantle
+					["crs"] = {
+						179433,	-- Vault Aegis
+						176578,	-- Vault Sentinel
+						179526,	-- Troz'igal the Oppressor
+					},
+				}),
+				i(187094, {	-- Gilded Spike Fortresses
+					["crs"] = {
+						179526,	-- Troz'igal the Oppressor
+					},
+				}),
+				i(187091, {	-- Gilded Twin-Scythe Shoulders
+					["crs"] = {
+						179526,	-- Troz'igal the Oppressor
+						179433,	-- Vault Aegis
+						176578,	-- Vault Sentinel
+					},
+				}),
+				i(187092, {	-- Gilded Shoulder-Shields
+					["crs"] = {
+						179526,	-- Troz'igal the Oppressor
+						176578,	-- Vault Sentinel
+					},
+				}),
+				i(187084, {	-- Jailer's Eye Crescent
+					["crs"] = {
+						179526,	-- Troz'igal the Oppressor
+					},
+				}),
+				i(187039, {	-- Malleare's Stygian Pauldrons
+					["crs"] = {
+						171422,	-- Arch-Suppressor Laguas
+						151331,	-- Cellblock Sentinel
+						153165,	-- Custodian Thonar
+						170418,	-- Goxul the Devourer
+						157122,	-- Patrician Cromwell
+						159190,	-- Synod
+					},
+				}),
+				i(187042, {	-- Occultist's Ornamental Gorget
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						153165,	-- Custodian Thonar
+						170418,	-- Goxul the Devourer
+						159190,	-- Synod
+						151329,	-- Warden Skoldus
+					},
+				}),
+				i(187025, {	-- Painbringer's Back-Prison
+					["crs"] = {
+						179526,	-- Troz'igal the Oppressor
+					},
+				}),
+				i(187046, {	-- Pauldrons of Immaculate Laceration
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						153382,	-- Maw of the Maw
+						151329,	-- Warden Skoldus
+					},
+				}),
+				i(187041, {	-- Shoulders of Unbreakable Demise
+					["crs"] = {
+						155250,	-- Decayspeaker
+						159190,	-- Synod
+					},
+				}),
+				i(187038, {	-- Shoulders of Vehement Slicing
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						157122,	-- Patrician Cromwell
+						159190,	-- Synod
+						159755,	-- The Grand Malleare
+					},
+				}),
+				i(187027, {	-- Skoldus' Shoulder Skewers
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						153165,	-- Custodian Thonar
+						170418,	-- Goxul the Devourer
+						159190,	-- Synod
+						151329,	-- Warden Skoldus
+					},
+				}),
+				i(187032, {	-- Spaulders of Prophetic Death
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						170418,	-- Goxul the Devourer
+						151329,	-- Warden Skoldus
+					},
+				}),
+				i(187043, {	-- Spiked Citadel Shoulderguards
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						153165,	-- Custodian Thonar
+						170418,	-- Goxul the Devourer
+						159190,	-- Synod
+						159755,	-- The Grand Malleare
+						151329,	-- Warden Skoldus
+					},
+				}),
+				i(187031, {	-- Towering Mantle of the Maw
+					["crs"] = {
+						153165,	-- Custodian Thonar
+						169859,	-- Observer Zelgar <The Third Eye>
+					},
+				}),
+				i(187040, {	-- Twin-Scythe Spaulders
+					["crs"] = {
+						169859,	-- Observer Zelgar
+					},
+				}),
+				i(187045, {	-- Veiled Tormentor's Mantle
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						153165,	-- Custodian Thonar
+						159190,	-- Synod
+						151329,	-- Warden Skoldus
+					},
+				}),
+			--	Blues
+				i(187417, {	-- Adamant Vaults Cell
+					["crs"] = {
+						179433,	-- Vault Aegis
+						176578,	-- Vault Sentinel
+					},
+				}),
+				i(183193, {	-- Ashen Chomper (PET!)
+					["crs"] = {
 						151331,	-- Cellblock Sentinel
 						153165,	-- Custodian Thonar
 						151329,	-- Warden Skoldus
 					},
 				}),
+				i(187075, {	-- Box of Rattling Chains (TOY!)
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						170418,	-- Goxul the Devourer
+						157122,	-- Patrician Cromwell
+						159190,	-- Synod
+					},
+				}),
+				i(183192, {	-- Frenzied Mawrat
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						153165,	-- Custodian Thonar
+						151329,	-- Warden Skoldus
+					},
+				}),
+				i(186549, {	-- Gilded Darknight (PET!)
+					["crs"] = {
+						179526,	-- Troz'igal the Oppressor
+						176578, -- Vault Sentinel
+					},
+				}),
 				i(183116, {	-- Hissing Deathroach
-					["crs"] = { 
+					["crs"] = {
 						156239,	-- Dark Ascended Corrus
 						155250,	-- Decayspeaker
 						155251,	-- Elder Longbranch
 					},
 				}),
-				i(183193, {	-- Jar of Ashes
-					["crs"] = { 
-						151331,	-- Cellblock Sentinel
-						153165,	-- Custodian Thonar
-						151329,	-- Warden Skoldus
-					},
-				}),
 				i(183191, {	-- Maw Crawler
-					["crs"] = { 
+					["crs"] = {
 						153165,	-- Custodian Thonar
 						155945,	-- Gherus the Chained
 						153451,	-- Kosarus the Fallen
@@ -38,7 +204,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(183194, {	-- Maw Stalker
-					["crs"] = { 
+					["crs"] = {
 						171422,	-- Arch-Suppressor Laguas
 						151331,	-- Cellblock Sentinel
 						169859,	-- Observer Zelgar
@@ -46,7 +212,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(183117, {	-- Severs
-					["crs"] = { 
+					["crs"] = {
 						171422,	-- Arch-Suppressor Laguas
 						155945,	-- Gherus the Chained
 						170418,	-- Goxul the Devourer
@@ -55,7 +221,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(183195, {	-- Torghast Lurker
-					["crs"] = { 
+					["crs"] = {
 						153011,	-- Binder Baritas
 						170418,	-- Goxul the Devourer
 						153382,	-- Maw of the Maw
@@ -64,42 +230,13 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(183115, {	-- Tower Deathroach
-					["crs"] = { 
+					["crs"] = {
 						156239,	-- Dark Ascended Corrus
 						155250,	-- Decayspeaker
 						155251,	-- Elder Longbranch
 					},
 				}),
-
-				-- TODO: are legendaries specific to Zone/Level/Floor? categorize?
-
-				-- Fracture Chambers 3
-				i(183291),	-- Memory of Yu'lon [Monk]
-				i(183327),	-- Memory of the Painbreaker Psalm [Priest]
-
-				-- Mortregar 3
-				i(183281),	-- Memory of Slick Ice [Mage]
-				i(183262),	-- Memory of the Butcher's Bone Fragments [Hunter]
-				i(183320),	-- Memory of the Kiss of Death [Priest]
-				i(183286),	-- Memory of Shadohao [Monk]
-				i(183357),	-- Memory of the Witch Doctor [Shaman]
-
-				-- Skodus Hall 3
-				i(183254),	-- Memory of a Dire Command [Hunter]
-				i(183359),	-- Memory of Jonat [Shaman]
-
-				-- Skodus Hall 6
-				i(183247),	-- Memory of a Stable Phantasma Lure [ALL]
-				
-				i(183230, {	-- Memory of the Apex Predator [Druid]
-					["crs"] = { 
-						171422,	-- Arch-Suppressor Laguas
-						155945,	-- Gherus the Chained
-						170418,	-- Goxul the Devourer
-						157122,	-- Patrician Cromwell
-						159190,	-- Synod
-					},
-				}),
+				i(185049),	-- Saurolisk Soul (AV)
 			}),
 		}),
 	}),

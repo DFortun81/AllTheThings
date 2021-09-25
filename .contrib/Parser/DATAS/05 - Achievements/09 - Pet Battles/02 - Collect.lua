@@ -89,12 +89,7 @@ _.Achievements =
 				crit(5),		-- Pandaria Tamer
 			}),
 			ach(8397, {		-- Crazy for Cats* (need to add locations to comments for future use - wowhead did not link)
-				title(240, {	-- the Crazy Cat Lady
-					["description"] = "Must login with a female character.",
-				}),
-				title(252, {	-- the Crazy Cat Man
-					["description"] = "Must login with a male character.",
-				}),
+				title_gendered(252, 240),	-- the Crazy Cat Man / the Crazy Cat Lady
 				crit(1),		-- Black Tabby Cat
 				crit(2),		-- Bombay Cat
 				crit(3),		-- Brightpaw
@@ -748,6 +743,10 @@ _.Achievements =
 				}),
 				ach(6555),		-- Building a Team (25)
 				ach(6554),		-- He's Mine! (10)
+			}),
+			-- PTR - TODO: merge into regular achievement list, figure out what zone or w/e this belongs in
+			ach(15004, {	-- A Sly Fox
+				i(186539),	-- Sly
 			}),
 		}),
 	}),

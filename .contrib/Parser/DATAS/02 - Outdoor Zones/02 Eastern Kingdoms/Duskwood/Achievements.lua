@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(47, {	-- Duskwood
+		m(DUSKWOOD, {
 			n(ACHIEVEMENTS, {
 				ach(12430, {	-- Duskwood Quests
 					["races"] = ALLIANCE_ONLY,

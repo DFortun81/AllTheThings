@@ -4,12 +4,12 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
-		m(942, {	-- Stormsong Valley
+	m(KULTIRAS, {
+		m(STORMSONG_VALLEY, {
 			n(TREASURES, {
 				o(281646, {	-- Honey Vat
 					["questID"] = 50576,
-					["coord"] = { 66.6, 71.1, 942 },
+					["coord"] = { 66.6, 71.1, STORMSONG_VALLEY },
 					["g"] = {
 						i(154476),	-- Honey-Glazed Vambraces
 					},

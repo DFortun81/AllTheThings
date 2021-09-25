@@ -2,14 +2,13 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(6, {	-- Warlords of Draenor
-	inst(669, { 	-- Hellfire Citadel
-		["order"] = "03",
+_.Instances = { tier(WOD_TIER, {
+	inst(669, {	-- Hellfire Citadel
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["mapID"] = 661,
 		["maps"] = { 662, 663, 664, 665, 666, 667, 668, 669, 670 },
-		["coord"] = { 45.56, 53.61, 534 },	-- Tanaan Jungle, Draenor
+		["coord"] = { 45.56, 53.61, TANAAN_JUNGLE },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(10149, {	-- Glory of the Hellfire Raider
@@ -69,7 +68,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 			}),
 			d(17, {	-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					un(REMOVED_FROM_GAME, i(127115, {	-- Tome of Chaos
 						["crs"] = {
 							95068,	-- Hellfire Assault
@@ -88,7 +87,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						},
 					})),
 				}),
-				ach(10023, { 	-- Hellbreach
+				ach(10023, {	-- Hellbreach
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
@@ -114,7 +113,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							}),
 							i(128094),	-- Spiked Torque Wrench
 							i(128118),	-- Demonhorn Buckler
-							i(128053), 	-- Liquid-Cooled Mantle
+							i(128053),	-- Liquid-Cooled Mantle
 							i(128060),	-- Double-Polished Chain Pauldrons
 							i(128102),	-- Unfired Ejection Parachute
 							i(128105),	-- Commander's Seat Cushion Cover
@@ -143,7 +142,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						})),
 					},
 				}),
-				ach(10024, { 	-- Halls of Blood
+				ach(10024, {	-- Halls of Blood
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
@@ -206,7 +205,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						})),
 					},
 				}),
-				ach(10025, { 	-- Bastion of Shadows
+				ach(10025, {	-- Bastion of Shadows
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
@@ -216,7 +215,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 								["requireSkill"] = JEWELCRAFTING,
 								["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 								["spellID"] = 187634,
-								["coord"] = { 25.8, 39.7, 534 },
+								["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 							}),
 							ig(127749),	-- Corrupted Nest Guardian
 							i(128096),	-- Demonspine Wand
@@ -262,7 +261,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						})),
 					},
 				}),
-				ach(10020, { 	-- Destructor's Rise
+				ach(10020, {	-- Destructor's Rise
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
@@ -309,7 +308,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						})),
 					},
 				}),
-				ach(10019, { 	-- The Black Gate
+				ach(10019, {	-- The Black Gate
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
@@ -354,7 +353,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt
@@ -584,7 +583,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["spellID"] = 187634,
-						["coord"] = { 25.8, 39.7, 534 },
+						["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 					}),
 					ig(127749),	-- Corrupted Nest Guardian
 					i(124387),	-- Shadowrend Talonblade
@@ -873,7 +872,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt
@@ -1103,7 +1102,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["spellID"] = 187634,
-						["coord"] = { 25.8, 39.7, 534 },
+						["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 					}),
 					ig(127749),	-- Corrupted Nest Guardian
 					i(124387),	-- Shadowrend Talonblade
@@ -1395,7 +1394,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt
@@ -1625,7 +1624,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["spellID"] = 187634,
-						["coord"] = { 25.8, 39.7, 534 },
+						["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 					}),
 					ig(127749),	-- Corrupted Nest Guardian
 					i(124387),	-- Shadowrend Talonblade

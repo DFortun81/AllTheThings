@@ -2,9 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(4, {	-- Cataclysm
-	inst(75, { 	-- Baradin Hold
-		["order"] = "01",
+_.Instances = { tier(CATA_TIER, {
+	inst(75, {	-- Baradin Hold
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 85,

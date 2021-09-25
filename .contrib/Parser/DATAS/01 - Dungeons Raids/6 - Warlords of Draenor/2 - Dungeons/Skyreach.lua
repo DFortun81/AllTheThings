@@ -2,11 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(6, {	-- Warlords of Draenor
+_.Instances = { tier(WOD_TIER, {
 	inst(476, {	-- Skyreach
 		["lvl"] = 96,
 		["maps"] = { 601, 602 },
-		["coord"] = { 35.5, 33.6, 542 },	-- Spires of Arak, Draenor
+		["coord"] = { 35.5, 33.6, SPIRES_OF_ARAK },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
@@ -802,7 +802,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							["requireSkill"] = JEWELCRAFTING,
 							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 							["spellID"] = 187635,
-							["coord"] = { 25.8, 39.7, 534 },
+							["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 						}),
 						i(110033),	-- Arcanic of the High Sage
 						i(110034),	-- Viryx's Indomitable Bulwark
@@ -1015,7 +1015,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							["requireSkill"] = JEWELCRAFTING,
 							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 							["spellID"] = 187635,
-							["coord"] = { 25.8, 39.7, 534 },
+							["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 						}),
 						i(110033),	-- Arcanic of the High Sage
 						i(110034),	-- Viryx's Indomitable Bulwark

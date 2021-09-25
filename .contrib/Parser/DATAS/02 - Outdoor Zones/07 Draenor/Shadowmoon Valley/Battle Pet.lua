@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
-		m(539, {	-- Shadowmoon Valley (Draenor)
-			filter(101, {	-- Pet Battles
+	m(DRAENOR, {
+		m(DRAENOR_SHADOWMOON_VALLEY, {
+			filter(BATTLE_PETS, {
 				p(407, {	-- Forest Spiderling
 					["crs"] = { 61320 },	-- Forest Spiderling
 				}),
@@ -33,7 +33,7 @@ _.Zones =
 				}),
 				q(37203, {	-- Ashlei
 					["isDaily"] = true,
-					["coord"] = { 50.0, 31.2, 539 },
+					["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 					["provider"] = { "n", 87124 },	-- Ashlei
 					["g"] = {
 						i(116415),	-- Shiny Pet Charm

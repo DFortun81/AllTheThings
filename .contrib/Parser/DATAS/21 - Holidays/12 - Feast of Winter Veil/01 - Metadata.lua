@@ -2,13 +2,12 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = 29},
+_.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 {
 	holiday(235485, {	-- Feast of Winter Veil
-		["icon"] = asset("winter_veil"),
 		["maps"] = {
-			87,	-- Ironforge
-			85,	-- Orgrimmar
+			IRONFORGE,
+			ORGRIMMAR,
 			86,	-- Orgrimmar: The Drag
 		},
 	}),

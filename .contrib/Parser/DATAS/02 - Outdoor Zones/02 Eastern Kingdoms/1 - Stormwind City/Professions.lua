@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(84, {	-- Stormwind City
-			n(-38, {	-- Profession
+		m(STORMWIND_CITY, {
+			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(QUESTS, {
 						q(29481, {	-- Elixir Master
-							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze (Stormwind)
-							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
+							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze
+							["coord"] = { 55.6, 85.8, STORMWIND_CITY },
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -25,8 +25,8 @@ _.Zones =
 							},]]
 						}),
 						q(29067, {	-- Potion Master
-							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze (Stormwind)
-							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
+							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze
+							["coord"] = { 55.6, 85.8, STORMWIND_CITY },
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -40,8 +40,8 @@ _.Zones =
 							},]]
 						}),
 						q(29482, {	-- Transmutation Master
-							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze (Stormwind)
-							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
+							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze
+							["coord"] = { 55.6, 85.8, STORMWIND_CITY },
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -60,7 +60,7 @@ _.Zones =
 					n(QUESTS, {
 						q(2759, {	-- In Search of Galvan
 							["provider"] = { "n", 7798 },	-- Hank the Hammer
-							["coord"] = { 56.0, 16.0, 84 },
+							["coord"] = { 56.0, 16.0, STORMWIND_CITY },
 							["sourceQuest"] = 2758,	-- The Origins of Smithing
 							["requireSkill"] = BLACKSMITHING,
 							["races"] = ALLIANCE_ONLY,
@@ -72,7 +72,7 @@ _.Zones =
 						}),
 						q(2758, {	-- The Origins of Smithing
 							["provider"] = { "n", 7798 },	-- Hank the Hammer
-							["coord"] = { 56.0, 16.0, 84 },
+							["coord"] = { 56.0, 16.0, STORMWIND_CITY },
 							["requireSkill"] = BLACKSMITHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
@@ -92,7 +92,7 @@ _.Zones =
 					n(QUESTS, {
 						q(26190, {	-- A Fisherman's Feast
 							["provider"] = { "n", 42288 },	-- Robby Flay
-							["coord"] = { 50.6, 71.6, 84 },
+							["coord"] = { 50.6, 71.6, STORMWIND_CITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -105,7 +105,7 @@ _.Zones =
 						}),
 						q(26177, {	-- Feeling Crabby?
 							["provider"] = { "n", 42288 },	-- Robby Flay
-							["coord"] = { 50.6, 71.6, 84 },
+							["coord"] = { 50.6, 71.6, STORMWIND_CITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -118,7 +118,7 @@ _.Zones =
 						}),
 						q(26192, {	-- Orphans Like Cookies Too!
 							["provider"] = { "n", 42288 },	-- Robby Flay
-							["coord"] = { 50.6, 71.6, 84 },
+							["coord"] = { 50.6, 71.6, STORMWIND_CITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -131,7 +131,7 @@ _.Zones =
 						}),
 						q(26153, {	-- Penny's Pumpkin Pancakes
 							["provider"] = { "n", 42288 },	-- Robby Flay
-							["coord"] = { 50.6, 71.6, 84 },
+							["coord"] = { 50.6, 71.6, STORMWIND_CITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -144,7 +144,7 @@ _.Zones =
 						}),
 						q(26183, {	-- The King's Cider
 							["provider"] = { "n", 42288 },	-- Robby Flay
-							["coord"] = { 50.6, 71.6, 84 },
+							["coord"] = { 50.6, 71.6, STORMWIND_CITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -164,83 +164,86 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
-						i(67414, {	-- Bag of Shiny Things
-							["description"] = "|cff66ccffFishing Daily Quest Reward|r",
-							["crs"] = { 5494 },	-- Catherine Leland
-							["g"] = {
-								i(44983),	-- Strand Crawler
-								i(33820),	-- Weather-Beaten Fishing Hat
-								i(45991),	-- Bone Fishing Pole
-								i(45992),	-- Jeweled Fishing Pole
-							},
-						}),
-						q(26488, {	-- Big Gulp
-							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, 84 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(4, {	-- Big Gulp
-									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
-								}),
-							},
-						}),
-						q(26420, {	-- Diggin' For Worms
-							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, 84 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(2, {	-- Diggin' For Worms
-									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
-								}),
-							},
-						}),
-						q(26414, {	-- Hitting a Walleye
-							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, 84 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(1, {	-- Hitting a Walleye
-									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
-								}),
-							},
-						}),
-						q(26442, {	-- Rock Lobster
-							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, 84 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(3, {	-- Rock Lobster
-									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
-								}),
-							},
-						}),
-						q(26536, {	-- Thunder Falls
-							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, 84 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(5, {	-- Thunder Falls
-									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
-								}),
-							},
-						}),
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(67414, {	-- Bag of Shiny Things
+								["description"] = "Fishing Daily Quest Reward",
+								["crs"] = { 5494 },	-- Catherine Leland
+								["g"] = {
+									i(44983),	-- Strand Crawler
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								},
+							}),
+							q(26488, {	-- Big Gulp
+								["provider"] = { "n", 5494 },	-- Catherine Leland
+								["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									crit(4, {	-- Big Gulp
+										["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+									}),
+								},
+							}),
+							q(26420, {	-- Diggin' For Worms
+								["provider"] = { "n", 5494 },	-- Catherine Leland
+								["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									crit(2, {	-- Diggin' For Worms
+										["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+									}),
+								},
+							}),
+							q(26414, {	-- Hitting a Walleye
+								["provider"] = { "n", 5494 },	-- Catherine Leland
+								["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									crit(1, {	-- Hitting a Walleye
+										["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+									}),
+								},
+							}),
+							q(26442, {	-- Rock Lobster
+								["provider"] = { "n", 5494 },	-- Catherine Leland
+								["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									crit(3, {	-- Rock Lobster
+										["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+									}),
+								},
+							}),
+							q(26536, {	-- Thunder Falls
+								["provider"] = { "n", 5494 },	-- Catherine Leland
+								["coord"] = { 55.0, 69.6, STORMWIND_CITY },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									crit(5, {	-- Thunder Falls
+										["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+									}),
+								},
+							}),
+						},
 					}),
 				}),
 				prof(JEWELCRAFTING, {
 					n(QUESTS, {
 						q(25154, {	-- A Present for Lila
 							["provider"] = { "n", 50480 },	-- Isabel Jones
-							["coord"] = { 63.8, 61.2, 84 },
+							["coord"] = { 63.8, 61.2, STORMWIND_CITY },
 							["isDaily"] = true,
 							["requireSkill"] = JEWELCRAFTING,
 							["races"] = ALLIANCE_ONLY,
@@ -250,7 +253,7 @@ _.Zones =
 						}),
 						q(25156, {	-- Elemental Goo
 							["provider"] = { "n", 50480 },	-- Isabel Jones
-							["coord"] = { 63.8, 61.2, 84 },
+							["coord"] = { 63.8, 61.2, STORMWIND_CITY },
 							["isDaily"] = true,
 							["requireSkill"] = JEWELCRAFTING,
 							["races"] = ALLIANCE_ONLY,
@@ -260,7 +263,7 @@ _.Zones =
 						}),
 						q(25105, {	-- Nibbler! No!
 							["provider"] = { "n", 50480 },	-- Isabel Jones
-							["coord"] = { 63.8, 61.2, 84 },
+							["coord"] = { 63.8, 61.2, STORMWIND_CITY },
 							["isDaily"] = true,
 							["requireSkill"] = JEWELCRAFTING,
 							["races"] = ALLIANCE_ONLY,
@@ -270,7 +273,7 @@ _.Zones =
 						}),
 						q(25155, {	-- Ogrezonians in the Mood
 							["provider"] = { "n", 50480 },	-- Isabel Jones
-							["coord"] = { 63.8, 61.2, 84 },
+							["coord"] = { 63.8, 61.2, STORMWIND_CITY },
 							["isDaily"] = true,
 							["requireSkill"] = JEWELCRAFTING,
 							["races"] = ALLIANCE_ONLY,
@@ -280,28 +283,12 @@ _.Zones =
 						}),
 						q(25157, {	-- The Latest Fashion!
 							["provider"] = { "n", 50480 },	-- Isabel Jones
-							["coord"] = { 63.8, 61.2, 84 },
+							["coord"] = { 63.8, 61.2, STORMWIND_CITY },
 							["isDaily"] = true,
 							["requireSkill"] = JEWELCRAFTING,
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(361),	-- Illustrious Jewelcrafter's Token
-							},
-						}),
-					}),
-				}),
-				prof(LEATHERWORKING, {
-					n(QUESTS, {
-						q(7497, {	-- The Journey Has Just Begun
-							["provider"] = { "n", 14394 },	-- Major Mattingly
-							["coord"] = { 67.2, 85.1, 84 },
-							["sourceQuest"] = 24428, -- A Most Puzzling Circumstance (A)
-							["requireSkill"] = LEATHERWORKING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 60,
-							["g"] = {
-								recipe(19093),		-- Onyxia Scale Cloak
-								un(REMOVED_FROM_GAME, i(15769)), 	-- Pattern: Onyxia Scale Cloak
 							},
 						}),
 					}),

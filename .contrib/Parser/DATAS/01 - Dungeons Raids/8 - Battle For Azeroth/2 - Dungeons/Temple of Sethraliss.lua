@@ -2,9 +2,9 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(8, {	-- Battle For Azeroth
+_.Instances = { tier(BFA_TIER, {
 	inst(1030, {	-- Temple of Sethraliss
-		["coord"] = { 51.9, 25.4, 864 },
+		["coord"] = { 51.9, 25.4, VOLDUN },
 		["maps"] = {
 			1038,	-- Temple of Sethraliss
 			1043,	-- Atrium of Sethraliss

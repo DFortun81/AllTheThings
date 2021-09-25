@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(65, {	-- Stonetalon Mountains
+		m(STONETALON_MOUNTAINS, {
 			n(VENDORS, {
 				n(9549, {	-- Borand <Bowyer>
-					["coord"] = { 48.6, 61.4, 65 },
+					["coord"] = { 48.6, 61.4, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11304, {	-- Fine Longbow
@@ -17,7 +17,7 @@ _.Zones =
 					},
 				}),
 				n(4083, {	-- Jeeda <Apprentice Witch Doctor>
-					["coord"] = { 50.4, 63.4, 65 },
+					["coord"] = { 50.4, 63.4, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6055, {	-- Recipe: Fire Protection Potion
@@ -26,7 +26,7 @@ _.Zones =
 					},
 				}),
 				n(12043, {	-- Kulwia <Trade Supplies>
-					["coord"] = { 48.6, 61.6, 65 },
+					["coord"] = { 48.6, 61.6, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11101, {	-- Formula: Enchant Bracer - Lesser Strength
@@ -38,7 +38,7 @@ _.Zones =
 					},
 				}),
 				n(42028, {	-- Krom'gar Quartermaster <Quartermaster>
-					["coord"] = { 65.8, 64.0, 65 },
+					["coord"] = { 65.8, 64.0, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(57505),	-- Krom'gar Champion's Armored Pauldrons

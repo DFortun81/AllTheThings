@@ -2,9 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(8, {	-- Battle For Azeroth
+_.Instances = { tier(BFA_TIER, {
 	n(-857, {	-- Mythic+
-		["order"] = "07",
 		["g"] = {
 			i(169491),	-- Focused Life Anima
 			i(168399, {	-- Fetish of the Dark Caverns (Rank 1)

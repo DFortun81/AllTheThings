@@ -2,9 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(761, { 	-- The Ruby Sanctum
-		["order"] = "09",
+_.Instances = { tier(WOTLK_TIER, {
+	inst(761, {	-- The Ruby Sanctum
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,

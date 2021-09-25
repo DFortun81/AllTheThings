@@ -2,21 +2,20 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(758, { 	-- Icecrown Citadel
-		["order"] = "08",
+_.Instances = { tier(WOTLK_TIER, {
+	inst(758, {	-- Icecrown Citadel
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,
 		["mapID"] = 186,
-		["maps"] = { 187, 188, 189, 190, 191, 192, 193, 698, 699, 1359 },	-- 1359 may be a specific scenario map - it was reported as missing in early 2019, but i couldn't find context for it
+		["maps"] = { 187, 188, 189, 190, 191, 192, 193, 699, 1359 },	-- 1359 may be a specific scenario map - it was reported as missing in early 2019, but i couldn't find context for it
 		["coord"] = { 53.7, 87.0, 118 },	-- Icecrown Citadel, Icecrown
 		["g"] = {
 			faction(1156, {	-- The Ashen Verdict
 				["achievementID"] = 4598,	-- The Ashen Verdict (Achievement)
 				["g"] = {
 					title(141),	-- Of the Ashen Verdict
-					n(37687, { 	-- Alchemist Finklestein
+					n(37687, {	-- Alchemist Finklestein
 						i(49959, {	-- Pattern: Bladeborn Leggings
 							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 						}),
@@ -94,7 +93,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 						},
 					}),
-				-- 	Quest Chain: Path of Courage
+				-- Quest Chain: Path of Courage
 					q(24827, {	-- Path of Courage (Honored)
 						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 						["sourceQuest"] = 24815,	-- Choose Your Path
@@ -307,6 +306,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
+					q(24842, { -- A Change of Heart
+						["isRepeatable"] = true,
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					}),
+					q(24843, { -- A Change of Heart
+						["isRepeatable"] = true,
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					}),
 					q(24844, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
@@ -320,6 +327,22 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
 					q(24847, { -- A Change of Heart
+						["isRepeatable"] = true,
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					}),
+					q(25246, { -- A Change of Heart
+						["isRepeatable"] = true,
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					}),
+					q(25247, { -- A Change of Heart
+						["isRepeatable"] = true,
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					}),
+					q(25248, { -- A Change of Heart
+						["isRepeatable"] = true,
+						["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					}),
+					q(25249, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent
 					}),
@@ -473,7 +496,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["u"] = 15,			-- Unlearnable Filter
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
 					37012,	-- Ancient Skeletal Soldier
 					37022,	-- Blighted Abomination
@@ -541,7 +564,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				},
 			}),
 			n(VENDORS, {
-				n(37999, { 	-- Alana Moonstrike <Druid Armor>
+				n(37999, {	-- Alana Moonstrike <Druid Armor>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(50821),	-- Lasherweave Cover
@@ -741,7 +764,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(37688, { 	-- Crusader Grimtong <Warrior Armor>
+				n(37688, {	-- Crusader Grimtong <Warrior Armor>
 					i(51214, {	-- Sanctified Ymirjar Lord's Battleplate (N)
 						["cost"] = {
 							{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
@@ -873,7 +896,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(50846),	-- Ymirjar Lord's Pauldrons
 					i(50082),	-- Ymirjar Lord's Shoulderplates
 				}),
-				n(37696, { 	-- Crusader Halford <Paladin Armor>
+				n(37696, {	-- Crusader Halford <Paladin Armor>
 					i(50328),	-- Lightsworn Battleplate
 					i(50864),	-- Lightsworn Chestguard
 					i(50862),	-- Lightsworn Faceguard
@@ -1070,7 +1093,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					}),
 				}),
-				n(37993, { 	-- Gerardo the Suave <Hunter Armor>
+				n(37993, {	-- Gerardo the Suave <Hunter Armor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(50114),	-- Ahn'Kahar Blood Hunter's Handguards
@@ -1140,149 +1163,53 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(38858, { 	-- Goodman the "Closer" <Legacy Justice Quartermaster>
-					i(50993),	-- Band of the Night Raven
-					i(50996),	-- Belt of Omission
-					i(50994),	-- Belt of Petrified Ivy
-					i(50980),	-- Blizzard Keeper's Mitts
-					i(50965),	-- Castle Breaker's Battleplate
-					i(50982),	-- Cat Burglar's Grips
-					i(50968),	-- Cataclysmic Chestguard
-					i(50969),	-- Chestplate of Unspoken Truths
-					i(50997),	-- Circle of Ossus
-					i(50356),	-- Corroded Skeleton Key
-					i(50468),	-- Drape of the Violet Tower
-					i(50975),	-- Ermine Coronation Robes
-					i(50977),	-- Gatecrasher's Gauntlets
-					i(50976),	-- Gauntlets of Overexposure
-					i(50978),	-- Gauntlets of the Kraken
-					i(50984),	-- Gloves of Ambivalence
-					i(50983),	-- Gloves of False Gestures
-					i(50981),	-- Gloves of the Great Horned Owl
-					i(50355),	-- Herkumi War Token
-					i(50989),	-- Lich Killer's Lanyard
-					i(50979),	-- Logsplitters
-					i(50970),	-- Longstrider's Vest
-					i(50357),	-- Maghia's Misguised Quill
-					i(50971),	-- Mail of the Geyser
-					i(50987),	-- Malevolent Girdle
-					i(50974),	-- Meteor Chaser's Raiment
-					i(50467),	-- Might of the Ocean Serpent
-					i(49908),	-- Primordial Saronite
-					i(50358),	-- Purified Lunar Dust
-					i(50470),	-- Recovered Scarlet Onsalught Cape
-					gs(776, {	-- Relentless Gladiator's Chain Armor
-						i(41088),	-- Relentless Gladiator's Chain Armor
-						i(41144),	-- Relentless Gladiator's Chain Gauntlets
-						i(41158),	-- Relentless Gladiator's Chain Helm
-						i(41206),	-- Relentless Gladiator's Chain Leggings
-						i(41218),	-- Relentless Gladiator's Chain Spaulders
-					}),
-					gs(777, {	-- Relentless Gladiator's Dragonhide Armor
-						i(41679),	-- Relentless Gladiator's Dragonhide Helm
-						i(41716),	-- Relentless Gladiator's Dragonhide Spaulders
-						i(41662),	-- Relentless Gladiator's Dragonhide Robes
-						i(41774),	-- Relentless Gladiator's Dragonhide Gloves
-						i(41668),	-- Relentless Gladiator's Dragonhide Legguards
-						i(41328),	-- Relentless Gladiator's Wyrmhide Helm
-						i(41282),	-- Relentless Gladiator's Wyrmhide Spaulders
-						i(41317),	-- Relentless Gladiator's Wyrmhide Robes
-						i(41294),	-- Relentless Gladiator's Wyrmhide Gloves
-						i(41305),	-- Relentless Gladiator's Wyrmhide Legguards
-						i(41322),	-- Relentless Gladiator's Kodohide Helm
-						i(41276),	-- Relentless Gladiator's Kodohide Spaulders
-						i(41311),	-- Relentless Gladiator's Kodohide Robes
-						i(41288),	-- Relentless Gladiator's Kodohide Gloves
-						i(41299),	-- Relentless Gladiator's Kodohide Legguards
-					}),
-					gs(778, {	-- Relentless Gladiator's Dreaplate Armor
-						i(40830),	-- Relentless Gladiator's Dreadplate Helm
-						i(40871),	-- Relentless Gladiator's Dreadplate Shoulders
-						i(40791),	-- Relentless Gladiator's Dreadplate Chestpiece
-						i(40811),	-- Relentless Gladiator's Dreadplate Gauntlets
-						i(40851),	-- Relentless Gladiator's Dreadplate Legguards
-					}),
-					gs(771, {	-- Relentless Gladiator's Felweave Armor
-						i(41994),	-- Relentless Gladiator's Felweave Cowl
-						i(42012),	-- Relentless Gladiator's Felweave Amice
-						i(41999),	-- Relentless Gladiator's Felweave Raiment
-						i(42018),	-- Relentless Gladiator's Felweave Handguards
-						i(42006),	-- Relentless Gladiator's Felweave Trousers
-					}),
-					gs(773, {	-- Relentless Gladiator's Leather Armor
-						i(41673),	-- Relentless Gladiator's Leather Helm
-						i(41684),	-- Relentless Gladiator's Leather Spaulders
-						i(41651),	-- Relentless Gladiator's Leather Tunic
-						i(41768),	-- Relentless Gladiator's Leather Gloves
-						i(41656),	-- Relentless Gladiator's Leather Legguards
-					}),
-					gs(770, {	-- Relentless Gladiator's Plate Armor
-						i(40829),	-- Relentless Gladiator's Plate Helm
-						i(40870),	-- Relentless Gladiator's Plate Shoulders
-						i(40790),	-- Relentless Gladiator's Plate Chestpiece
-						i(40810),	-- Relentless Gladiator's Plate Gauntlets
-						i(40850),	-- Relentless Gladiator's Plate Legguards
-					}),
-					gs(772, {	-- Relentless Gladiator's Ringmail Armor
-						i(41152),	-- Relentless Gladiator's Linked Helm
-						i(41212),	-- Relentless Gladiator's Linked Spaulders
-						i(41082),	-- Relentless Gladiator's Linked Armor
-						i(41138),	-- Relentless Gladiator's Linked Gauntlets
-						i(41200),	-- Relentless Gladiator's Linked Leggings
-						i(41020),	-- Relentless Gladiator's Mail Helm
-						i(41045),	-- Relentless Gladiator's Mail Spaulders
-						i(40995),	-- Relentless Gladiator's Mail Armor
-						i(41008),	-- Relentless Gladiator's Mail Gauntlets
-						i(41034),	-- Relentless Gladiator's Mail Leggings
-						i(41014),	-- Relentless Gladiator's Ringmail Helm
-						i(41039),	-- Relentless Gladiator's Ringmail Spaulders
-						i(40994),	-- Relentless Gladiator's Ringmail Armor
-						i(41002),	-- Relentless Gladiator's Ringmail Gauntlets
-						i(41028),	-- Relentless Gladiator's Ringmail Leggings
-					}),
-					gs(373, {	-- Relentless Gladiator's Satin Armor
-						i(41855),	-- Relentless Gladiator's Mooncloth Hood
-						i(41870),	-- Relentless Gladiator's Mooncloth Mantle
-						i(41860),	-- Relentless Gladiator's Mooncloth Robe
-						i(41875),	-- Relentless Gladiator's Mooncloth Gloves
-						i(41865),	-- Relentless Gladiator's Mooncloth Leggings
-						i(41916),	-- Relentless Gladiator's Satin Hood
-						i(41935),	-- Relentless Gladiator's Satin Mantle
-						i(41922),	-- Relentless Gladiator's Satin Robe
-						i(41941),	-- Relentless Gladiator's Satin Gloves
-						i(41928),	-- Relentless Gladiator's Satin Leggings
-					}),
-					gs(774, {	-- Relentless Gladiator's Scaled Armor
-						i(40934),	-- Relentless Gladiator's Ornamented Headcover
-						i(40964),	-- Relentless Gladiator's Ornamented Spaulders
-						i(40910),	-- Relentless Gladiator's Ornamented Chestguard
-						i(40928),	-- Relentless Gladiator's Ornamented Gloves
-						i(40940),	-- Relentless Gladiator's Ornamented Legplates
-						i(40831),	-- Relentless Gladiator's Scaled Helm
-						i(40872),	-- Relentless Gladiator's Scaled Shoulders
-						i(40792),	-- Relentless Gladiator's Scaled Chestpiece
-						i(40812),	-- Relentless Gladiator's Scaled Gauntlets
-						i(40852),	-- Relentless Gladiator's Scaled Legguards
-					}),
-					gs(775, {	-- Relentless Gladiator's Silk Armor
-						["icon"] = "Interface\\Icons\\INV_Helmet_86",	-- Relentless Silk Cowl Icon as Mage Set didn't have one
-						["g"] = {
-							i(41947),	-- Relentless Gladiator's Silk Cowl
-							i(41966),	-- Relentless Gladiator's Silk Amice
-							i(41954),	-- Relentless Gladiator's Silk Raiment
-							i(41972),	-- Relentless Gladiator's Silk Handguards
-							i(41960),	-- Relentless Gladiator's Silk Trousers
-						},
-					}),
-					i(50466),	-- Sentinel's Winter Cloak
-					i(50972),	-- Shadow Seeker's Tunic
-					i(50995),	-- Vengeful Noose
-					i(50991),	-- Verdigris Chain Belt
-					i(50973),	-- Vestments of Spruce and Fir
-					i(50469),	-- Volde's Cloak of the Night Sky
-					i(50992),	-- Waistband of Despair
+				n(38858, {	-- Goodman the "Closer" <Legacy Justice Quartermaster>
+					["g"] = {
+						i(50993),	-- Band of the Night Raven
+						i(50996),	-- Belt of Omission
+						i(50994),	-- Belt of Petrified Ivy
+						i(50980),	-- Blizzard Keeper's Mitts
+						i(50965),	-- Castle Breaker's Battleplate
+						i(50982),	-- Cat Burglar's Grips
+						i(50968),	-- Cataclysmic Chestguard
+						i(50969),	-- Chestplate of Unspoken Truths
+						i(50997),	-- Circle of Ossus
+						i(50356),	-- Corroded Skeleton Key
+						i(50468),	-- Drape of the Violet Tower
+						i(50975),	-- Ermine Coronation Robes
+						i(50977),	-- Gatecrasher's Gauntlets
+						i(50976),	-- Gauntlets of Overexposure
+						i(50978),	-- Gauntlets of the Kraken
+						i(50984),	-- Gloves of Ambivalence
+						i(50983),	-- Gloves of False Gestures
+						i(50981),	-- Gloves of the Great Horned Owl
+						i(50355),	-- Herkumi War Token
+						i(50989),	-- Lich Killer's Lanyard
+						i(50979),	-- Logsplitters
+						i(50970),	-- Longstrider's Vest
+						i(50357),	-- Maghia's Misguised Quill
+						i(50971),	-- Mail of the Geyser
+						i(50987),	-- Malevolent Girdle
+						i(50974),	-- Meteor Chaser's Raiment
+						i(50467),	-- Might of the Ocean Serpent
+						i(49908),	-- Primordial Saronite
+						i(50358),	-- Purified Lunar Dust
+						i(50470),	-- Recovered Scarlet Onsalught Cape
+						i(50466),	-- Sentinel's Winter Cloak
+						i(50972),	-- Shadow Seeker's Tunic
+						i(50995),	-- Vengeful Noose
+						i(50991),	-- Verdigris Chain Belt
+						i(50973),	-- Vestments of Spruce and Fir
+						i(50469),	-- Volde's Cloak of the Night Sky
+						i(50992),	-- Waistband of Despair
+					},
+					["sym"] = {
+						{"sub", "pvp_gear_base", -10014, -670, -661 },	-- Relentless Gladiator: Season 7 Gladiator Gear
+						{"pop"},	-- Discard the Set header and acquire the children.
+						{"exclude", "headerID", -384, -385, -386, -322, -326, -328, -330, -319 },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
+					},
 				}),
-				n(38181, { 	-- Haragg the Unseen <Warlock Armor>
+				n(38181, {	-- Haragg the Unseen <Warlock Armor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(50240),	-- Dark Coven Gloves
@@ -1352,7 +1279,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(37991, { 	-- Ikfirus the Vile <Rogue Armor>
+				n(37991, {	-- Ikfirus the Vile <Rogue Armor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(51189, {	-- Sanctified Shadowblade Breastplate (N)
@@ -1422,7 +1349,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(50105),	-- Shadowblade Pauldrons
 					},
 				}),
-				n(38840, { 	-- Jedebia <Shaman Armor>
+				n(38840, {	-- Jedebia <Shaman Armor>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(50830),	-- Frost Witch's Chestguard
@@ -1622,7 +1549,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(38283, { 	-- Malfus Grimfrost <Mage Armor>
+				n(38283, {	-- Malfus Grimfrost <Mage Armor>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(50275),	-- Bloodmage Gloves
@@ -1692,7 +1619,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(38182, { 	-- Niby the Almighty <Warlock Armor>
+				n(38182, {	-- Niby the Almighty <Warlock Armor>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(50240),	-- Dark Coven Gloves
@@ -1762,7 +1689,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(38316, { 	-- Ormus the Penitent <Death Knight Armor>
+				n(38316, {	-- Ormus the Penitent <Death Knight Armor>
 					i(51129, {	-- Sanctified Scourgelord Battleplate (N)
 						["cost"] = {
 							{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
@@ -1894,7 +1821,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(50853),	-- Scourgelord Pauldrons
 					i(50098),	-- Scourgelord Shoulderplates
 				}),
-				n(38054, { 	-- Scott the Merciful <Priest Armor>
+				n(38054, {	-- Scott the Merciful <Priest Armor>
 					i(50392),	-- Crimson Acolyte Cowl
 					i(50766),	-- Crimson Acolyte Gloves
 					i(50391),	-- Crimson Acolyte Handwraps
@@ -2026,7 +1953,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					}),
 				}),
-				n(37998, { 	-- Talan Moonstrike <Hunter Armor>
+				n(37998, {	-- Talan Moonstrike <Hunter Armor>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(50114),	-- Ahn'Kahar Blood Hunter's Handguards
@@ -2096,7 +2023,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(37992, { 	-- Tortunok <Druid Armor>
+				n(37992, {	-- Tortunok <Druid Armor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(50821),	-- Lasherweave Cover
@@ -2296,7 +2223,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(38284, { 	-- Uvlus Banefire <Mage Armor>
+				n(38284, {	-- Uvlus Banefire <Mage Armor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(50275),	-- Bloodmage Gloves
@@ -2366,7 +2293,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(38841, { 	-- Vol'guk <Shaman Armor>
+				n(38841, {	-- Vol'guk <Shaman Armor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(50830),	-- Frost Witch's Chestguard
@@ -2566,7 +2493,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(37997, { 	-- Yili <Rogue Armor>
+				n(37997, {	-- Yili <Rogue Armor>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(51189, {	-- Sanctified Shadowblade Breastplate (N)
@@ -3035,8 +2962,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							ach(4537),	-- I've Gone and Made a Mess (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142095),	-- Remains of a Blood Beast (PET!)
 							i(51898),	-- Mag'hari Chieftain's Staff
 							i(51905),	-- Ramaladni's Blade of Culling
@@ -3117,8 +3044,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							ach(4578),	-- Nausea, Heartburn, Indigestion... (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142096),	-- Putricide's Alchemy Supplies (PET!)
 							i(51868),	-- Flesh-Carving Scalpel
 							i(51869),	-- The Facelifter
@@ -3173,8 +3100,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(51846),	-- Bloodsipper
 							i(51838),	-- Lana'thel's Bloody Nail
 							i(51845),	-- Stakethrower
@@ -3221,8 +3148,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							ach(4580),	-- All You Can Eat (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142097),	-- Skull of a Frozen Whelp (PET!)
 							i(51815),	-- Bleak Coldarra Carver
 							i(51819),	-- Splintershard
@@ -3250,8 +3177,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							ach(4601),	-- Been Waiting a Long Time for This (10 player)
 							ach(4581),	-- Neck-Deep in Vile (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142099),	-- Call of the Frozen Blade (PET!)
 							i(138955),	-- Illusion: Rune of Razorice
 							i(51943),	-- Halion, Staff of Forgotten Love
@@ -3379,8 +3306,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							ach(4613),	-- I've Gone and Made a Mess (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142095),	-- Remains of a Blood Beast (PET!)
 							i(50412),	-- Bloodvenom Blade
 							i(50014),	-- Greatcloak of the Turned Champion
@@ -3470,8 +3397,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142096),	-- Putricide's Alchemy Supplies (PET!)
 							i(50179),	-- Last Word
 							i(50068),	-- Rigormortis
@@ -3522,8 +3449,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(50178),	-- Bloodfall
 							i(50181),	-- Divine Light
 							i(50065),	-- Icecrown Glacial Wall
@@ -3568,8 +3495,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							ach(4620),	-- All You Can Eat (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142097),	-- Skull of a Frozen Whelp (PET!)
 							i(50423),	-- Sundial of Eternal Dusk
 							i(50421),	-- Sindragosa's Cruel Claw
@@ -3590,8 +3517,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								title(140),	-- the Kingslayer
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142098),	-- Drudge Remains (PET!)
 							i(138955),	-- Illusion: Rune of Razorice
 							i(50429),	-- Archus, Greatstaff of Antonidas
@@ -3720,9 +3647,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							ach(4613),	-- I've Gone and Made a Mess (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142095),	-- Remains of a Blood Beast (PET!)
 							i(50672),	-- Bloodvenom Blade
@@ -3814,9 +3741,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142096),	-- Putricide's Alchemy Supplies (PET!)
 							i(50708),	-- Last Word
@@ -3869,9 +3796,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(50727),	-- Bloodfall
 							i(50725),	-- Dying Light
@@ -3918,9 +3845,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							ach(4620),	-- All You Can Eat (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142097),	-- Skull of a Frozen Whelp (PET!)
 							i(50635),	-- Sundial of Eternal Dusk
@@ -3944,9 +3871,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(50818),	-- Invincible's Reins (MOUNT!)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142099),	-- Call of the Frozen Blade (PET!)
 							i(138955),	-- Illusion: Rune of Razorice
@@ -3970,3 +3897,134 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10014, {
+		inst(758, {
+			-- Most sets was added 4.0.1
+			cl(DEATHKNIGHT, {
+				i(51682),	-- Scourgelord Shoulderplates
+				i(51683),	-- Scourgelord Legplates
+				i(51684),	-- Scourgelord Helmet
+				i(51685),	-- Scourgelord Gauntlets
+				i(51686),	-- Scourgelord Battleplate
+				i(51687),	-- Scourgelord Chestguard
+				i(51688),	-- Scourgelord Handguards
+				i(51689),	-- Scourgelord Faceguard
+				i(51690),	-- Scourgelord Legguards
+				i(51691),	-- Scourgelord Pauldrons
+			}),
+			cl(DRUID, {
+				i(51692),	-- Lasherweave Pauldrons
+				i(51693),	-- Lasherweave Legplates
+				i(51694),	-- Lasherweave Helmet
+				i(51695),	-- Lasherweave Gauntlets
+				i(51696),	-- Lasherweave Robes
+				i(51697),	-- Lasherweave Raiment
+				i(51698),	-- Lasherweave Handgrips
+				i(51699),	-- Lasherweave Headguard
+				i(51700),	-- Lasherweave Legguards
+				i(51701),	-- Lasherweave Shoulderpads
+				i(51702),	-- Lasherweave Vestment
+				i(51703),	-- Lasherweave Gloves
+				i(51704),	-- Lasherweave Cover
+				i(51705),	-- Lasherweave Trousers
+				i(51706),	-- Lasherweave Mantle
+			}),
+			cl(HUNTER, {
+				i(51707),	-- Ahn'kahar Blood Hunter's Tunic
+				i(51708),	-- Ahn'kahar Blood Hunter's Spaulders
+				i(51709),	-- Ahn'kahar Blood Hunter's Legguards
+				i(51710),	-- Ahn'kahar Blood Hunter's Headpiece
+				i(51711),	-- Ahn'kahar Blood Hunter's Handguards
+			}),
+			cl(MAGE, {
+				i(51712),	-- Bloodmage Shoulderpads
+				i(51713),	-- Bloodmage Robe
+				i(51714),	-- Bloodmage Leggings
+				i(51715),	-- Bloodmage Hood
+				i(51716),	-- Bloodmage Gloves
+			}),
+			cl(PALADIN, {
+				i(51717),	-- Lightsworn Battleplate
+				i(51718),	-- Lightsworn Gauntlets
+				i(51719),	-- Lightsworn Helmet
+				i(51720),	-- Lightsworn Legplates
+				i(51721),	-- Lightsworn Shoulderplates
+				i(51722),	-- Lightsworn Tunic
+				i(51723),	-- Lightsworn Gloves
+				i(51724),	-- Lightsworn Headpiece
+				i(51725),	-- Lightsworn Greaves
+				i(51726),	-- Lightsworn Spaulders
+				i(51727),	-- Lightsworn Chestguard
+				i(51728),	-- Lightsworn Handguards
+				i(51729),	-- Lightsworn Faceguard
+				i(51730),	-- Lightsworn Legguards
+				i(51731),	-- Lightsworn Shoulderguards
+			}),
+			cl(PRIEST, {
+				i(51732),	-- Crimson Acolyte Leggings
+				i(51733),	-- Crimson Acolyte Robe
+				i(51734),	-- Crimson Acolyte Shoulderpads
+				i(51735),	-- Crimson Acolyte Gloves
+				i(51736),	-- Crimson Acolyte Hood
+				i(51737),	-- Crimson Acolyte Cowl
+				i(51738),	-- Crimson Acolyte Handwraps
+				i(51739),	-- Crimson Acolyte Mantle
+				i(51740),	-- Crimson Acolyte Rainments
+				i(51741),	-- Crimson Acolyte Pants
+			}),
+			cl(ROGUE, {
+				i(51742),	-- Shadowblade Gauntlets
+				i(51743),	-- Shadowblade Breastplate
+				i(51744),	-- Shadowblade Legplates
+				i(51745),	-- Shadowblade Helmet
+				i(51746),	-- Shadowblade Pauldrons
+			}),
+			cl(SHAMAN, {
+				i(51747),	-- Frost Witch's Tunic
+				i(51748),	-- Frost Witch's Handguards
+				i(51749),	-- Frost Witch's Headpiece
+				i(51750),	-- Frost Witch's Legguards
+				i(51751),	-- Frost Witch's Spaulders
+				i(51752),	-- Frost Witch's Chestguard
+				i(51753),	-- Frost Witch's Grips
+				i(51754),	-- Frost Witch's Faceguard
+				i(51755),	-- Frost Witch's War-Kilt
+				i(51756),	-- Frost Witch's Shoulderguards
+				i(51757),	-- Frost Witch's Hauberk
+				i(51758),	-- Frost Witch's Gloves
+				i(51759),	-- Frost Witch's Helm
+				i(51760),	-- Frost Witch's Kilt
+				i(51761),	-- Frost Witch's Shoulderpads
+			}),
+			cl(WARLOCK, {
+				i(51762),	-- Dark Coven Shoulderpads
+				i(51763),	-- Dark Coven Robe
+				i(51764),	-- Dark Coven Leggings
+				i(51765),	-- Dark Coven Hood
+				i(51766),	-- Dark Coven Gloves
+			}),
+			cl(WARRIOR, {
+				i(51767),	-- Ymirjar Lord's Shoulderplates
+				i(51768),	-- Ymirjar Lord's Legplates
+				i(51769),	-- Ymirjar Lord's Helmet
+				i(51770),	-- Ymirjar Lord's Gauntlets
+				i(51771),	-- Ymirjar Lord's Battleplate
+				i(51772),	-- Ymirjar Lord's Breastplate
+				i(51773),	-- Ymirjar Lord's Handguards
+				i(51774),	-- Ymirjar Lord's Greathelm
+				i(51775),	-- Ymirjar Lord's Legguards
+				i(51776),	-- Ymirjar Lord's Pauldrons
+				-- Added 5.0.1
+				i(81704),	-- Ymirjar Lord's Battleplate
+				i(81705),	-- Ymirjar Lord's Gauntlets
+				i(81706),	-- Ymirjar Lord's Helmet
+				i(81707),	-- Ymirjar Lord's Legplates
+				i(81708),	-- Ymirjar Lord's Shoulderplates
+			}),
+			n(-319, {	-- Weapons
+				i(50251),	-- Shadow's Edge One-Hander
+			}),
+		}),
+	}),
+});

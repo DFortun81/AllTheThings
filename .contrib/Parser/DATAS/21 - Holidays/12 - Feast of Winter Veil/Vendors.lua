@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = 29},
+_.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 {
 	holiday(235485, {	-- Feast of Winter Veil
 		n(VENDORS, {
@@ -27,7 +27,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					i(70923),	-- Gaudy Winter Veil Sweater
 				},
 			}),
-			n(13435, { 	-- Khole Jinglepocket
+			n(13435, {	-- Khole Jinglepocket
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					-- Cooking
@@ -42,7 +42,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					i(70923),	-- Gaudy Winter Veil Sweater
 				},
 			}),
-			n(23010, { 	-- Wolgren Jinglepocket
+			n(23010, {	-- Wolgren Jinglepocket
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					-- Cooking
@@ -57,7 +57,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					i(70923),	-- Gaudy Winter Veil Sweater
 				},
 			}),
-			n(96304, { 	-- Tradurjo Jinglepocket
+			n(96304, {	-- Tradurjo Jinglepocket
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					-- Cooking
@@ -79,7 +79,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					i(104324),	-- Foot Ball
 				},
 			}),
-			n(13420, { 	-- Penney Copperpinch
+			n(13420, {	-- Penney Copperpinch
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					-- Cooking
@@ -94,7 +94,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					i(70923),	-- Gaudy Winter Veil Sweater
 				},
 			}),
-			n(23012, { 	-- Hotoppik Jinglepocket
+			n(23012, {	-- Hotoppik Jinglepocket
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					-- Cooking
@@ -109,7 +109,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					i(70923),	-- Gaudy Winter Veil Sweater
 				},
 			}),
-			n(13432, { 	-- Seersa Jinglepocket
+			n(13432, {	-- Seersa Jinglepocket
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					-- Cooking
@@ -124,7 +124,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 					i(70923),	-- Gaudy Winter Veil Sweater
 				},
 			}),
-			n(13429, { 	-- Nardstrum Copperpinch
+			n(13429, {	-- Nardstrum Copperpinch
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					-- Cooking
@@ -172,12 +172,12 @@ _.Holidays = bubbleDown({["u"] = 29},
 			}),
 			n(96362, {	-- Izzy Hollyfizzle
 				["coords"] = {
-					{ 47.33, 38.47, 590 },	-- Horde Garrison
-					{ 44.29, 51.05, 582 },	-- Alliance Garrison
+					{ 47.33, 38.47, FROSTWALL },
+					{ 44.29, 51.05, LUNARFALL },
 				},
 				["maps"] = {
-					590,	-- Frostwall
-					582,	-- Lunarfall
+					FROSTWALL,
+					LUNARFALL,
 				},
 				["g"] = {
 					i(128659, {	-- Merry Supplies

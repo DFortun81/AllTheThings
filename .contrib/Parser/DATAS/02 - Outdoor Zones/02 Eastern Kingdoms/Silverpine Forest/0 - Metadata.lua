@@ -5,9 +5,9 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(21, {	-- Silverpine Forest
+		m(SILVERPINE_FOREST, {
 			["achievementID"] = 769,
-			["description"] = "|cff66ccffSilverpine Forest borders Tirisfal Glades and Gilneas. As such, it is a zone constantly under fire in Cataclysm. The Gilnean Liberation Front is pushing back against the Forsaken, which Lady Sylvanas Windrunner oversees.|r",
+			["lore"] = "Silverpine Forest borders Tirisfal Glades and Gilneas. As such, it is a zone constantly under fire in Cataclysm. The Gilnean Liberation Front is pushing back against the Forsaken, which Lady Sylvanas Windrunner oversees.",
 		}),
 	}),
 };

@@ -78,21 +78,26 @@ _.Zones =
 						i(184742),	-- Rattling Bonefists
 						i(184736),	-- Robe of the March Warden
 						i(184745),	-- Tunic of the March Warden
-						n(-920, {	-- Covenant: Necrolord
-							-- These are only available to Necrolord covenant members
+						n(-920, sharedData({["customCollect"] = { "SL_COV_NEC" }},{	-- Necrolord
 							i(181807, {	-- Barbarous Osteowings
 								["cost"] = 5000000, -- 500g
 							}),
 							i(181808, {	-- Death Fetish
 								["cost"] = 5000000, -- 500g
 							}),
-						}),
+						})),
 					},
 				}),
 				n(169964, {	-- One-Eyed Joby <Unusual Wares>
 					["coord"] = { 53.2, 41.2, MALDRAXXUS },
 					["g"] = {
 						i(181798),	-- Stuffed Construct
+					},
+				}),
+				n(164588, {	-- Shinbone Slim <Food and Attire>
+					["coord"] = { 47.0, 48.8, MALDRAXXUS },
+					["g"] = {
+						i(184036),	-- Dundae's Hat
 					},
 				}),
 			}),

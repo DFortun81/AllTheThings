@@ -1,12 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if AFTER MOP
 _.Zones =
 {
 	m(OUTLAND, {
 		m(TEROKKAR_FOREST, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(514, {	-- Flayer Youngling
 					["crs"] = { 62555 },	-- Flayer Youngling
 				}),
@@ -32,3 +32,4 @@ _.Zones =
 		}),
 	}),
 };
+-- #endif

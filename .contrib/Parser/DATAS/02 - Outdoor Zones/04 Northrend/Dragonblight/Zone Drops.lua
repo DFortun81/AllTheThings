@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(113, { 	-- Northrend
-		m(115, { 	-- Dragonblight
-			n(ZONEDROPS, {
+	m(113, {	-- Northrend
+		m(115, {	-- Dragonblight
+			n(ZONE_DROPS, {
 				i(50406, {	-- Formula: Enchant Gloves - Angler
 					["crs"] = {
 						26343,	-- Indu'le Fisherman

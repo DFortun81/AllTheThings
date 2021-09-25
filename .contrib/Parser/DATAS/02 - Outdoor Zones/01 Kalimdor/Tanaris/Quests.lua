@@ -5,12 +5,15 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(71, {	-- Tanaris
+		m(TANARIS, {
 			n(QUESTS, {
 				q(25072, {	-- A Few Good Goblins
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
-					["coord"] = { 55.6, 60.8, 71 },
-					["sourceQuest"] = 25103,	-- Bootlegger Outpost
+					["coord"] = { 55.6, 60.8, TANARIS },
+					["sourceQuests"] = {
+						25103,	-- Bootlegger Outpost
+						26889,	-- All Cheered Out
+					},
 					["g"] = {
 						i(56855),	-- Dangerous Machinery Piece
 						i(56856),	-- Bughunter Belt
@@ -20,7 +23,7 @@ _.Zones =
 				}),
 				q(2771,  {	-- A Good Head On Your Shoulders
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
-					["coord"] = { 51.6, 28.6, 71 },
+					["coord"] = { 51.6, 28.6, TANARIS },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = BLACKSMITHING,
 					["u"] = REMOVED_FROM_GAME,
@@ -36,31 +39,17 @@ _.Zones =
 				q(24951, {	-- A Great Idea
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
 					["sourceQuest"] = 24933,	-- Chicken of the Desert
-					["coord"] = { 55.6, 60.8, 71 },
-				}),
-				q(8925,  {	-- A Portable Power Source
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0 , 71 },
-					["sourceQuest"] = 8924,	-- Hunting for Ectoplasm
-					["lvl"] = 58,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(8928,  {	-- A Shifty Merchant
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0 , 71 },
-					["sourceQuest"] = 8925,	-- A Portable Power Source
-					["lvl"] = 58,
-					["u"] = REMOVED_FROM_GAME,
+					["coord"] = { 55.6, 60.8, TANARIS },
 				}),
 				q(26889, {	-- All Cheered Out
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
-					["coord"] = { 72.1, 45.2, 71 },
+					["coord"] = { 72.1, 45.2, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25166,	-- Captain Dreadbeard
 				}),
 				q(25420, {	-- Ancient Obstacles
 					["provider"] = { "n", 40109 },	-- Prospector Gunstan
-					["coord"] = { 40.1, 76.8, 71 },
+					["coord"] = { 40.1, 76.8, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 28881 },	-- Prospector Gunstan
 					["g"] = {
@@ -71,7 +60,7 @@ _.Zones =
 				}),
 				q(25017, {	-- Ancient Obstacles
 					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
-					["coord"] = { 33.2, 77.0, 71 },
+					["coord"] = { 33.2, 77.0, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						25020,	-- Fragments of Language
@@ -85,7 +74,7 @@ _.Zones =
 				}),
 				q(25018, {	-- Andoren Will Know
 					["provider"] = { "n", 38849 },	-- Megs Dreadshredder
-					["coord"] = { 44.5, 52.6, 71 },
+					["coord"] = { 44.5, 52.6, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25014,	-- Sandscraper's Treasure
 					["isBreadcrumb"] = true,
@@ -129,28 +118,28 @@ _.Zones =
 				}),
 				q(25115, {	-- Blisterpaw Butchery
 					["provider"] = { "n", 39178 },	-- Driz Plunkbow
-					["coord"] = { 52.2, 28.0, 71 },
+					["coord"] = { 52.2, 28.0, TANARIS },
 					["sourceQuest"] = 25111,	-- Scavengers Scavenged
 				}),
 				q(25021, {	-- Blood to Thrive
 					["provider"] = { "n", 38927 },	-- Mazoga
-					["coord"] = { 42.2, 23.8, 71 },
+					["coord"] = { 42.2, 23.8, TANARIS },
 				}),
 				q(25103, {	-- Bootlegger Outpost
 					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
-					["coord"] = { 71.8, 45.4, 71 },
+					["coord"] = { 71.8, 45.4, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24950,	-- Captain Dreadbeard
 				}),
 				q(24949, {	-- Booty Duty
 					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
-					["coord"] = { 71.8, 45.4, 71 },
+					["coord"] = { 71.8, 45.4, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24910,	-- Rocket Rescue
 				}),
 				q(4496,  {	-- Bungle in the Jungle
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
-					["coord"] = { 50.8, 27.0, 71 },
+					["coord"] = { 50.8, 27.0, TANARIS },
 					["sourceQuests"] = {
 						4494,	-- March of the Silithid [Horde]
 						4493,	-- March of the Silithid [Alliance]
@@ -159,25 +148,25 @@ _.Zones =
 				}),
 				q(25112, {	-- Butcherbot
 					["provider"] = { "n", 39178 },	-- Driz Plunkbow
-					["coord"] = { 52.2, 28.0, 71 },
+					["coord"] = { 52.2, 28.0, TANARIS },
 				}),
 				q(4508,  {	-- Calm Before the Storm (A)
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
-					["coord"] = { 50.8, 27.0, 71 },
+					["coord"] = { 50.8, 27.0, TANARIS },
 					["sourceQuest"] = 4507,	-- Pawn Captures Queen
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(4509,  {	-- Calm Before the Storm (H)
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
-					["coord"] = { 50.8, 27.0, 71 },
+					["coord"] = { 50.8, 27.0, TANARIS },
 					["sourceQuest"] = 4507,	-- Pawn Captures Queen
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25166, {	-- Captain Dreadbeard (A)
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
-					["coord"] = { 72.1, 45.1, 71 },
+					["coord"] = { 72.1, 45.1, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						26887,	-- Filling Our Pockets
@@ -193,7 +182,7 @@ _.Zones =
 				}),
 				q(24950, {	-- Captain Dreadbeard (H)
 					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
-					["coord"] = { 71.8, 45.4, 71 },
+					["coord"] = { 71.8, 45.4, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						25541,	-- Filling Our Pockets
@@ -209,7 +198,7 @@ _.Zones =
 				}),
 				q(24933, {	-- Chicken of the Desert
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
-					["coord"] = { 55.6, 60.8, 71 },
+					["coord"] = { 55.6, 60.8, TANARIS },
 					["sourceQuest"] = 24932,	-- Cutting Losses
 				}),
 				q(8181,  {	-- Confront Yeh'kinya
@@ -226,16 +215,16 @@ _.Zones =
 						25103,	-- Bootlegger Outpost
 						26889,	-- All Cheered Out
 					},
-					["coord"] = { 55.6, 60.8, 71 },
+					["coord"] = { 55.6, 60.8, TANARIS },
 				}),
 				q(25026, {	-- Darkest Mojo
 					["provider"] = { "n", 38927 },	-- Mazoga
-					["coord"] = { 42.2, 23.8, 71 },
+					["coord"] = { 42.2, 23.8, TANARIS },
 					["sourceQuest"] = 25025,	-- Sang'thraze the Deflector
 				}),
 				q(25052, {	-- Dead Man's Chest
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
-					["coord"] = { 72.1, 45.1, 71 },
+					["coord"] = { 72.1, 45.1, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25050,	-- Rocket Rescue
 					["g"] = {
@@ -247,7 +236,7 @@ _.Zones =
 				}),
 				q(24927, {	-- Dead Man's Chest
 					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
-					["coord"] = { 71.8, 45.4, 71 },
+					["coord"] = { 71.8, 45.4, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24910,	-- Rocket Rescue
 					["g"] = {
@@ -260,7 +249,7 @@ _.Zones =
 				q(25060, {	-- Define "Crazy"
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
 					["sourceQuest"] = 25061,	-- Land's End
-					["coord"] = { 49.9, 82.8, 71 },
+					["coord"] = { 49.9, 82.8, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2661, {	-- Delivery for Marin
@@ -278,7 +267,7 @@ _.Zones =
 				}),
 				q(3321,  {	-- Did You Lose This?
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
-					["coord"] = { 51.6, 28.6, 71 },
+					["coord"] = { 51.6, 28.6, TANARIS },
 					["sourceQuests"] = {
 						2771,	-- A Good Head On Your Shoulders
 						2773,	-- The Mithril Kid
@@ -292,7 +281,7 @@ _.Zones =
 				}),
 				q(27003, {	-- Easy Money
 					["provider"] = { "n", 44833 },	-- Adarrah
-					["coord"] = { 30.4, 65.5, 71 },
+					["coord"] = { 30.4, 65.5, TANARIS },
 					["sourceQuests"] = {
 						28558,	-- Hero's Call: Uldum!
 						28295,	-- Meetup with the Caravan
@@ -302,16 +291,16 @@ _.Zones =
 				}),
 				q(26887, {	-- Filling Our Pockets
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
-					["coord"] = { 72.1, 45.1, 71 },
+					["coord"] = { 72.1, 45.1, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
-						25052,	-- Dead Man's Chest
+						25053,	-- To The Ground!
 						25054,	-- Lootin' Plunder
 					},
 				}),
 				q(25541, {	-- Filling Our Pockets
 					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
-					["coord"] = { 71.8, 45.4, 71 },
+					["coord"] = { 71.8, 45.4, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24949,	-- Booty Duty
 				}),
@@ -328,12 +317,12 @@ _.Zones =
 				q(25565, {	-- Fragments of Language
 					["sourceQuests"] = { 28881 },	-- Prospector Gunstan
 					["provider"] = { "n", 40109 },	-- Prospector Gunstan
-					["coord"] = { 40.1, 76.8, 71 },
+					["coord"] = { 40.1, 76.8, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25020, {	-- Fragments of Language
 					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
-					["coord"] = { 33.2, 77.0, 71 },
+					["coord"] = { 33.2, 77.0, TANARIS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9250,  {	-- Frame of Atiesh
@@ -342,7 +331,7 @@ _.Zones =
 				}),
 				q(992,   {	-- Gadgetzan Water Survey
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
-					["coord"] = { 50.2, 27.5, 71 },
+					["coord"] = { 50.2, 27.5, TANARIS },
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3161,  {	-- Gahz'ridian
@@ -355,7 +344,7 @@ _.Zones =
 				}),
 				q(25522, {	-- Gargantapid
 					["provider"] = { "n", 40580 },	-- Gus Rustflutter
-					["coord"] = { 42.4, 24.2, 71 },
+					["coord"] = { 42.4, 24.2, TANARIS },
 					["sourceQuest"] = 25521,	-- I'm With Scorpid
 					["g"] = {
 						i(56847),	-- Chelsea's Nightmare
@@ -365,33 +354,32 @@ _.Zones =
 				}),
 				q(24931, {	-- Gazer Tag
 					["provider"] = { "n", 11811 },	-- Narain Soothfancy
-					["coord"] = { 55.2, 60.2, 71 },
+					["coord"] = { 55.2, 60.2, TANARIS },
 					["sourceQuest"] = 24932,	-- Cutting Losses
 				}),
 				q(24957, {	-- Get The Centipaarty Started
 					["provider"] = { "n", 38849 },	-- Megs Dreadshredder
-					["coord"] = { 44.5, 52.6, 71 },
+					["coord"] = { 44.5, 52.6, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24955,	-- Un-Chartered
 				}),
 				q(26886, {	-- Going Off-Task
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
-					["coord"] = { 72.1, 45.1, 71 },
+					["coord"] = { 72.1, 45.1, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25052,	-- Dead Man's Chest
-						25054,	-- Lootin' Plunder
 					},
 				}),
 				q(25534, {	-- Going Off-Task
 					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
-					["coord"] = { 71.8, 45.4, 71 },
+					["coord"] = { 71.8, 45.4, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24927,	-- Dead Man's Chest
 				}),
 				q(53821, {	-- He's Dead, Jastor
 					["provider"] = { "n", 151130 },	-- Grizzek Fizzwrench
-					["coord"] = { 27.2, 60.1, 71 },	-- Tanaris
+					["coord"] = { 27.2, 60.1, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 53819,	-- Return to the Nest
 					["lvl"] = 120,
@@ -399,19 +387,9 @@ _.Zones =
 						i(165845),	-- Feathers (PET!)
 					},
 				}),
-				q(8924,  {	-- Hunting for Ectoplasm
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0 , 71 },
-					["sourceQuests"] = {
-						8922,	-- A Supernatural Device [Alliance]
-						8921,	-- The Ectoplasmic Distiller [Horde]
-					},
-					["lvl"] = 58,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(25521, {	-- I'm With Scorpid
 					["provider"] = { "n", 40580 },	-- Gus Rustflutter
-					["coord"] = { 42.4, 24.2, 71 },
+					["coord"] = { 42.4, 24.2, TANARIS },
 				}),
 				q(7653,  {	-- Imperial Plate Belt
 					["u"] = REMOVED_FROM_GAME,
@@ -490,13 +468,13 @@ _.Zones =
 				}),
 				q(110,   {	-- Insect Part Analysis
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
-					["coord"] = { 50.2, 27.5, 71 },
+					["coord"] = { 50.2, 27.5, TANARIS },
 					["sourceQuest"] = 10,	-- The Scrimshank Redemption
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(113,   {	-- Insect Part Analysis
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
-					["coord"] = { 50.8, 27.0, 71 },
+					["coord"] = { 50.8, 27.0, TANARIS },
 					["sourceQuest"] = 110,	-- Insect Part Analysis
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -507,14 +485,14 @@ _.Zones =
 				}),
 				q(25556, {	-- Into Zul'Farrak
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
-					["coord"] = { 42.4, 24.0, 71 },
+					["coord"] = { 42.4, 24.0, TANARIS },
 					["sourceQuest"] = 25032,	-- Secrets in the Oasis
 					["isBreadcrumb"] = true,
 				}),
 				q(24953, {	-- Just Trying to Kill Some Bugs
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
 					["sourceQuest"] = 24951,	-- A Great Idea
-					["coord"] = { 55.6, 60.8, 71 },
+					["coord"] = { 55.6, 60.8, TANARIS },
 					["g"] = {
 						i(56851),	-- Pendant of the Gaping Chasm
 						i(56852),	-- Mostly-Amazing Gloves
@@ -526,18 +504,18 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 11811 },	-- Narain Soothfancy
 					["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
-					["coord"] = { 55.2, 60.2, 71 },
+					["coord"] = { 55.2, 60.2, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25559, {	-- Laying Claim (A)
 					["sourceQuests"] = { 28881 },	-- Prospector Gunstan
 					["provider"] = { "n", 40109 },	-- Prospector Gunstan
-					["coord"] = { 40.1, 76.8, 71 },
+					["coord"] = { 40.1, 76.8, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25019, {	-- Laying Claim (H)
 					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
-					["coord"] = { 33.2, 77.0, 71 },
+					["coord"] = { 33.2, 77.0, TANARIS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(3914,  {	-- Linken's Sword
@@ -545,26 +523,21 @@ _.Zones =
 					["provider"] = { "o", 148504 },	-- A Conspicuous Gravestone
 					["sourceQuest"] = 3913,	-- A Grave Situation
 				}),
-				q(8305,  {	-- Long Forgotten Memories
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["sourceQuest"] = 8303,	-- Anachronos
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(25054, {	-- Lootin' Plunder
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
-					["coord"] = { 72.1, 45.1, 71 },
+					["coord"] = { 72.1, 45.1, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25050,	-- Rocket Rescue
 				}),
 				q(24963, {	-- Maul 'Em With Kindness
 					["provider"] = { "n", 38849 },	-- Megs Dreadshredder
-					["coord"] = { 44.5, 52.6, 71 },
+					["coord"] = { 44.5, 52.6, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24957,	-- Get The Centiparty Started
 				}),
 				q(25121, {	-- Momentum
 					["provider"] = { "n", 38535 },	-- Kelsey Steelspark
-					["coord"] = { 51.2, 29.8, 71 },
+					["coord"] = { 51.2, 29.8, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25050,	-- Rocket Rescue
 					["isBreadcrumb"] = true,
@@ -572,7 +545,7 @@ _.Zones =
 				q(24947, {	-- Momentum
 					["provider"] = { "n", 38534 },	-- Megs Dreadshredder
 					["races"] = HORDE_ONLY,
-					["coord"] = { 51.2, 29.9, 71 },
+					["coord"] = { 51.2, 29.9, TANARIS },
 					["sourceQuest"] = 24910,	-- Rocket Rescue
 					["isBreadcrumb"] = true,
 				}),
@@ -580,28 +553,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle
 					["sourceQuest"] = 1690,	-- Wastewander Justice
-				}),
-				q(12513, {	-- Nice Hat...
-					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
-					["provider"] = { "n", 28126 },	-- Don Carlos
-					["coord"] = { 50.7, 27.5, 71 },
-					["races"] = { HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME },
-					["g"] = {
-						i(38276, {	-- Haliscan Brimmed Hat
-							["ignoreSource"] = true,	-- White Item
-						}),
-					},
-				}),
-				q(12515, {	-- Nice Hat...
-					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
-					["provider"] = { "n", 28126 },	-- Don Carlos
-					["coord"] = { 50.7, 27.5, 71 },
-					["races"] = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME }, ALL_RACES),
-					["g"] = {
-						i(38276, {	-- Haliscan Brimmed Hat
-							["ignoreSource"] = true,	-- White Item
-						}),
-					},
 				}),
 				q(2662, {	-- Noggenfogger Elixir
 					["u"] = REMOVED_FROM_GAME,
@@ -613,23 +564,13 @@ _.Zones =
 				}),
 				q(82,    {	-- Noxious Lair Investigation
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
-					["coord"] = { 50.2, 27.5, 71 },
+					["coord"] = { 50.2, 27.5, TANARIS },
 					["sourceQuest"] = 992,	-- Gadgetzan Water Survey
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(40881, {	-- Oil Rags to Riches
-					["coord"] = { 69.5, 68.4, 71 },
-					["provider"] = { "o", 246438 },	-- Blingtron Circuit Design
-					["requireSkill"] = ENGINEERING,
-				}),
-				q(10282, {	-- Old Hillsbrad
-					["provider"] = { "n", 20130 },	-- Andormu
-					["coord"] = { 41.5, 38.5, 71 },
-					["sourceQuest"] = 10277,	-- The Caverns of Time
-				}),
 				q(4507,  {	-- Pawn Captures Queen
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
-					["coord"] = { 50.8, 27.0, 71 },
+					["coord"] = { 50.8, 27.0, TANARIS },
 					["sourceQuest"] = 4496,	-- Bungle in the Jungle
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -640,32 +581,32 @@ _.Zones =
 				q(28881, {	-- Prospector Gunstan
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 39059 },	-- Kelsey steelspark
-					["coord"] = { 50.0, 82.8, 71 },
+					["coord"] = { 50.0, 82.8, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25065,	-- You Too, Brute?
 				}),
 				q(25049, {	-- Puddle Stomping,
 					["provider"] = { "n", 38535 },	-- Kelsey Steelspark
-					["coord"] = { 51.2, 29.9, 71 },
+					["coord"] = { 51.2, 29.9, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28507,	-- Hero's Call: Tanaris!
 				}),
 				q(24907, {	-- Puddle Stomping
 					["provider"] = { "n", 38534 },	-- Megs Dreadshredder
-					["coord"] = { 51.2, 29.9, 71 },
+					["coord"] = { 51.2, 29.9, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28509,	-- Warchief's Command: Tanaris!
 				}),
 				q(53818, {	-- Re-parrot / Programming On The Fly
 					-- Quest shows up in-game as "Re-parrot" currently, but Wowhead redirects to the second quest name listed
 					["provider"] = { "n", 151132 },	-- Feathers
-					["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
+					["coord"] = { 62.1, 45.3, TANARIS },
 					["sourceQuest"] = 53816,	-- Some Reassembly Required
 					["lvl"] = 120,
 				}),
 				q(648,   {	-- Rescue OOX-17/TN!
 					["provider"] = { "n", 7784 },	-- Homing Robot OOX-17/TN
-					["coord"] = { 59.7, 64.0, 71 },
+					["coord"] = { 59.7, 64.0, TANARIS },
 					["sourceQuest"] = 351,	-- Find OOX-17/TN!
 					["g"] = {
 						i(9643),	-- Optomatic Deflector
@@ -683,40 +624,24 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(9634)),	-- Skilled Handling Gloves
 					},
 				}),
-				q(8977,  {	-- Return to Deliana
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0, 71 },
-					["sourceQuest"] = 8928,	-- A Shifty Merchant
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 58,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(2977,  {	-- Return to Ironforge
 					["model"] = 201041,
-					["coord"] = { 37.6, 81.4, 71 },
+					["coord"] = { 37.6, 81.4, TANARIS },
 					["provider"] = { "o", 142343 },	-- Uldum Pedestal
 					["sourceQuest"] = 2954,	-- The Stone Watcher
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(8978,  {	-- Return to Mokvar
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0, 71 },
-					["sourceQuest"] = 8928,	-- A Shifty Merchant
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(53819, {	-- Return to the Nest
 					["provider"] = { "n", 151132 },	-- Feathers
-					["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
+					["coord"] = { 62.1, 45.3, TANARIS },
 					["sourceQuest"] = 53818,	-- Re-parrot / Programming On The Fly
 					["lvl"] = 120,
 				}),
 				q(2967,  {	-- Return to Thunder Bluff
 					["model"] = 201041,
-					["coord"] = { 37.6, 81.4, 71 },
+					["coord"] = { 37.6, 81.4, TANARIS },
 					["provider"] = { "o", 142343 },	-- Uldum Pedestal
 					["sourceQuest"] = 2954,	-- The Stone Watcher
 					["races"] = HORDE_ONLY,
@@ -725,28 +650,28 @@ _.Zones =
 				}),
 				q(24905, {	-- Returning a Favor
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
-					["coord"] = { 55.6, 60.8, 71 },
+					["coord"] = { 55.6, 60.8, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
 					["isBreadcrumb"] = true,
 				}),
 				q(32,    {	-- Rise of the Silithid [Horde]
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
-					["coord"] = { 50.2, 27.5, 71 },
+					["coord"] = { 50.2, 27.5, TANARIS },
 					["sourceQuest"] = 113,	-- Insect Part Analysis
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(162,   {	-- Rise of the Silithid [Alliance]
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
-					["coord"] = { 50.2, 27.5, 71 },
+					["coord"] = { 50.2, 27.5, TANARIS },
 					["sourceQuest"] = 113,	-- Insect Part Analysis
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25050, {	-- Rocket Rescue
 					["provider"] = { "n", 38535 },	-- Kelsey Steelspark
-					["coord"] = { 51.2, 29.9, 71 },
+					["coord"] = { 51.2, 29.9, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25049,	-- Puddle Stomping
@@ -761,7 +686,7 @@ _.Zones =
 				}),
 				q(24910, {	-- Rocket Rescue
 					["provider"] = { "n", 38534 },	-- Megs Dreadshredder
-					["coord"] = { 51.2, 29.9, 71 },
+					["coord"] = { 51.2, 29.9, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						24907,	-- Puddle Stomping
@@ -785,7 +710,7 @@ _.Zones =
 				}),
 				q(25001, {	-- Sandscraper
 					["provider"] = { "n", 38849 },	-- Megs Dreadshredder
-					["coord"] = { 44.5, 52.6, 71 },
+					["coord"] = { 44.5, 52.6, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24963,	-- Maul 'Em With Kindness
 					["g"] = {
@@ -797,18 +722,18 @@ _.Zones =
 					},
 				}),
 				q(25014, {	-- Sandscraper's Treasure
-					["coord"] = { 41.8, 57.4, 71 },
+					["coord"] = { 41.8, 57.4, TANARIS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 202407 },	-- Sandscraper's Chest
 				}),
 				q(25091, {	-- Sandsorrow Watch
 					["provider"] = { "n", 39178 },	-- Driz Plunkbow
-					["coord"] = { 52.2, 28.0, 71 },
+					["coord"] = { 52.2, 28.0, TANARIS },
 					["sourceQuest"] = 25115,	-- Blisterpaw Butchery
 				}),
 				q(25025, {	-- Sang'thraze the Deflector
 					["provider"] = { "n", 38927 },	-- Mazoga
-					["coord"] = { 42.2, 23.8, 71 },
+					["coord"] = { 42.2, 23.8, TANARIS },
 					["sourceQuest"] = 25021,	-- Blood to Thrive
 					["g"] = {
 						i(56844),	-- Bone Valley Mace
@@ -824,7 +749,7 @@ _.Zones =
 				}),
 				q(25111, {	-- Scavengers Scavenged
 					["provider"] = { "n", 39178 },	-- Driz Plunkbow
-					["coord"] = { 52.2, 28.0, 71 },
+					["coord"] = { 52.2, 28.0, TANARIS },
 					["sourceQuest"] = 25112,	-- Butcherbot
 				}),
 				q(38892, {	-- Scouting Report -- never went live
@@ -836,18 +761,18 @@ _.Zones =
 				}),
 				q(25048, {	-- Seaside Salvage (A)
 					["provider"] = { "n", 38535 },	-- Kelsey Steelspark
-					["coord"] = { 51.2, 29.9, 71 },
+					["coord"] = { 51.2, 29.9, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24906, {	-- Seaside Salvage (H)
 					["provider"] = { "n", 38534 },	-- Megs Dreadshredder
-					["coord"] = { 51.2, 29.9, 71 },
+					["coord"] = { 51.2, 29.9, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27447,	-- Tanaris is Calling
 				}),
 				q(25032, {	-- Secrets in the Oasis
 					["provider"] = { "n", 38927 },	-- Mazoga
-					["coord"] = { 42.2, 23.8, 71 },
+					["coord"] = { 42.2, 23.8, TANARIS },
 					["sourceQuest"] = 25026,	-- Darkest Mojo
 					["g"] = {
 						i(56840),	-- Oasis Mantle
@@ -858,7 +783,7 @@ _.Zones =
 				}),
 				q(53820, {	-- She's in a Happier Place
 					["provider"] = { "n", 151129 },	-- Sapphronetta Flavvers
-					["coord"] = { 27.1, 60.0, 71 },	-- Tanaris
+					["coord"] = { 27.1, 60.0, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 53819,	-- Return to the Nest
 					["g"] = {
@@ -879,7 +804,7 @@ _.Zones =
 				}),
 				q(53816, {	-- Some Reassembly Required
 					["provider"] = { "n", 151132 },	-- Feathers
-					["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
+					["coord"] = { 62.1, 45.3, TANARIS },
 					["lvl"] = 120,
 					["sourceQuests"] = {
 						53815,	-- Whatever Happened to Saffy Flivvers?
@@ -918,7 +843,7 @@ _.Zones =
 						25060,	-- Define "Crazy"
 						25062,	-- What We Came For
 					},
-					["coord"] = { 49.9, 82.8, 71 },
+					["coord"] = { 49.9, 82.8, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(4787, {	-- The Ancient Egg
@@ -926,18 +851,14 @@ _.Zones =
 					["provider"] = { "n", 8579 },	-- Yeh'kinya
 					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
 				}),
-				q(10296, {	-- The Black Morass
-					["provider"] = { "n", 20130 },	-- Andormu
-					["coord"] = { 41.5, 38.5, 71 },
-				}),
 				q(10277, {	-- The Caverns of Time
 					["provider"] = { "n", 20130 },	-- Andormu
-					["coord"] = { 41.5, 38.5, 71 },
+					["coord"] = { 41.5, 38.5, TANARIS },
 					["sourceQuest"] = 10279,	-- To The Master's Lair
 				}),
 				q(25068, {	-- The Crumbling Past
 					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
-					["coord"] = { 33.2, 77.0, 71 },
+					["coord"] = { 33.2, 77.0, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25017,	-- Ancient Obstacles
 				}),
@@ -949,18 +870,11 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(16738)),	-- Witherseed Gloves
 					},
 				}),
-				q(8921,  {	-- The Ectoplasmic Distiller
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0, 71 },
-					["sourceQuest"] = 8923,	-- A Supernatural Device
-					["lvl"] = 58,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(25421, {	-- The Grand Tablet (A)
-					["coord"] = { 37.8, 82.4, 71 },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
+					["coord"] = { 37.8, 82.4, TANARIS },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 202474 },	-- Antediluvean Chest
-					["sourceQuest"] = 25070,	-- What Lies Within
+					["sourceQuest"] = 25070,	-- What Lies Within  ?? Acnient Obstacles
 					["g"] = {
 						i(56897),	-- Hieroglyphic Helm
 						i(56898),	-- Translation Boots
@@ -968,7 +882,7 @@ _.Zones =
 					},
 				}),
 				q(25107, {	-- The Grand Tablet (H)
-					["coord"] = { 37.8, 82.4, 71 },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
+					["coord"] = { 37.8, 82.4, TANARIS },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 202474 },	-- Antediluvean Chest
 					["sourceQuest"] = 25070,	-- What Lies Within
@@ -985,7 +899,7 @@ _.Zones =
 				}),
 				q(2773,  {	-- The Mithril Kid
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
-					["coord"] = { 51.6, 28.6, 71 },
+					["coord"] = { 51.6, 28.6, TANARIS },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = BLACKSMITHING,
 					["u"] = REMOVED_FROM_GAME,
@@ -1000,20 +914,20 @@ _.Zones =
 				}),
 				q(10,    {	-- The Scrimshank Redemption
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
-					["coord"] = { 50.2, 27.5, 71 },
+					["coord"] = { 50.2, 27.5, TANARIS },
 					["sourceQuest"] = 82,	-- Noxious Lair Investigation
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25566, {	-- The Secrets of Uldum
 					["provider"] = { "n", 40109 },	-- Prospector Gunstan
-					["coord"] = { 40.1, 76.8, 71 },
+					["coord"] = { 40.1, 76.8, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25420,	-- Ancient Obstacles
 					["description"] = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
 				}),
 				q(25069, {	-- The Secrets of Uldum
 					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
-					["coord"] = { 33.2, 77.0, 71 },
+					["coord"] = { 33.2, 77.0, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25017,	-- Ancient Obstacles
 					["description"] = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
@@ -1028,7 +942,7 @@ _.Zones =
 				}),
 				q(2954,  {	-- The Stone Watcher
 					["provider"] = { "n", 7918 },	-- Stone Watcher of Norgannon
-					["coord"] = { 37.6, 81.4, 71 },
+					["coord"] = { 37.6, 81.4, TANARIS },
 					["sourceQuests"] = {
 						2966,	-- Seeing What Happens [Horde]
 						2946,	-- Seeing What Happens [Alliance]
@@ -1046,32 +960,19 @@ _.Zones =
 				}),
 				q(26896, {	-- The Thunderdrome!
 					["provider"] = { "n", 44374 },	-- Sherm
-					["coord"] = { 33.2, 76.8, 71 },
+					["coord"] = { 33.2, 76.8, TANARIS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26895, {	-- The Thunderdrome!
 					["provider"] = { "n", 38578 },	-- Flinn
-					["coord"] = { 40.3, 77.2, 71 },
+					["coord"] = { 40.3, 77.2, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(10445, {	-- The Vials of Eternity (legacy version)
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = 	{ "n", 19935 },	-- Soridormi
-				}),
-				q(13432, {	-- The Vials of Eternity
-					["description"] = "The questgiver can be found walking around the Caverns of Time.",
-					["providers"] = {
-						{ "n", 19935 },	-- Soridormi
-						{ "n", 19936 },	-- Arazmodu
-					},
-					["lvl"] = 70,
-					["altQuests"] = { 10445 },	-- The Vials of Eternity (legacy version)
-				}),
 				q(2772,  {	-- The World At Your Feet
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
-					["coord"] = { 51.6, 28.6, 71 },
+					["coord"] = { 51.6, 28.6, TANARIS },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = BLACKSMITHING,
 					["u"] = REMOVED_FROM_GAME,
@@ -1086,7 +987,7 @@ _.Zones =
 				}),
 				q(25513, {	-- Thunderdrome: Grudge Match!
 					["provider"] = { "n", 39034 },	-- Dr. Dealwell
-					["coord"] = { 51.7, 28.0, 71 },
+					["coord"] = { 51.7, 28.0, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25095,	-- Thunderdrome: Sarinexx!
@@ -1100,7 +1001,7 @@ _.Zones =
 				}),
 				q(25591, {	-- Thunderdrome: Grudge Match!
 					["provider"] = { "n", 39034 },	-- Dr. Dealwell
-					["coord"] = { 51.7, 28.0, 71 },
+					["coord"] = { 51.7, 28.0, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						25001,	-- Sandscraper
@@ -1114,12 +1015,12 @@ _.Zones =
 				}),
 				q(25095, {	-- Thunderdrome: Sarinexx!
 					["provider"] = { "n", 39034 },	-- Dr. Dealwell
-					["coord"] = { 51.7, 28.0, 71 },
+					["coord"] = { 51.7, 28.0, TANARIS },
 					["sourceQuest"] = 25094,	-- Thunderdrome: Zumonga!
 				}),
 				q(25067, {	-- Thunderdrome: The Ginormus!
 					["provider"] = { "n", 39034 },	-- Dr. Dealwell
-					["coord"] = { 51.7, 28.0, 71 },
+					["coord"] = { 51.7, 28.0, TANARIS },
 					["sourceQuests"] = {
 						26895,	-- The Thunderdrome!
 						26896,	-- The Thunderdrome!
@@ -1127,27 +1028,24 @@ _.Zones =
 				}),
 				q(25094, {	-- Thunderdrome: Zumonga!
 					["provider"] = { "n", 39034 },	-- Dr. Dealwell
-					["coord"] = { 51.7, 28.0, 71 },
+					["coord"] = { 51.7, 28.0, TANARIS },
 					["sourceQuest"] = 25067,	-- Thunderdrome: The Ginormus!
 				}),
 				q(25053, {	-- To The Ground!
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
-					["coord"] = { 72.1, 45.1, 71 },
+					["coord"] = { 72.1, 45.1, TANARIS },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {
-						25052,	-- Dead Man's Chest
-						25054,	-- Lootin' Plunder
-					},
+					["sourceQuest"] = 24910,	-- Rocket Rescue
 				}),
 				q(24928, {	-- To The Ground!
 					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
-					["coord"] = { 71.8, 45.4, 71 },
+					["coord"] = { 71.8, 45.4, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24910,	-- Rocket Rescue
 				}),
 				q(10279, {	-- To The Master's Lair
 					["provider"] = { "n", 20142 },	-- Steward of Time
-					["coord"] = { 55.3, 27.7, 71 },
+					["coord"] = { 55.3, 27.7, TANARIS },
 					["isBreadcrumb"] = true,
 				}),
 				q(1560,  {	-- Tooga's Quest
@@ -1165,8 +1063,8 @@ _.Zones =
 				q(24911, {	-- Tropical Paradise Beckons
 					["isBreadcrumb"] = true,
 					["coords"] = {
-						{ 33.2, 76.8, 71 },
-						{ 40.2, 77.0, 71 },
+						{ 33.2, 76.8, TANARIS },
+						{ 40.2, 77.0, TANARIS },
 					},
 					["providers"] = {
 						{ "n", 38578 },	-- Flinn
@@ -1175,7 +1073,7 @@ _.Zones =
 				}),
 				q(24955, {	-- Un-Chartered
 					["provider"] = { "n", 38849 },	-- Megs Dreadshredder
-					["coord"] = { 44.5, 52.6, 71 },
+					["coord"] = { 44.5, 52.6, TANARIS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24905,	-- Returning a Favor
 				}),
@@ -1189,7 +1087,7 @@ _.Zones =
 				}),
 				q(9268,  {	-- War at Sea
 					["provider"] = { "n", 16417 },	-- Rumsen Fizzlebrack
-					["coord"] = { 50.4, 27.2, 71 },
+					["coord"] = { 50.4, 27.2, TANARIS },
 					["repeatable"] = true,
 					["description"] = "Only available with reputations of Hated or Unfriendly with Gadgetzan",
 				}),
@@ -1202,7 +1100,7 @@ _.Zones =
 					["provider"] = { "n", 7408 },	-- Spigot Operator Luglunket
 				}),
 				q(25070, {	-- What Lies Within
-					["coord"] = { 37.8, 82.4, 71 },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
+					["coord"] = { 37.8, 82.4, TANARIS },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
 					["provider"] = { "o", 202474 },	-- Antediluvean Chest
 					["sourceQuests"] = {
 						25566,	-- The Secrets of Uldum
@@ -1212,13 +1110,13 @@ _.Zones =
 				q(25062, {	-- What We Came For
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
 					["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
-					["coord"] = { 49.9, 82.8, 71 },
+					["coord"] = { 49.9, 82.8, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25065, {	-- You Too, Brute?
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
 					["sourceQuest"] = 25063,	-- Terrapination
-					["coord"] = { 49.9, 82.8, 71 },
+					["coord"] = { 49.9, 82.8, TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(56883),	-- Meatface Pummeler

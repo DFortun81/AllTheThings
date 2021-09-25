@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	n(-10052, {	-- Battle for Azeroth
+	pvp(n(-10052, {	-- Battle for Azeroth
 		n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
 			n(-659, {	-- Aspirant PvP Gear
 				n(-319, {	-- Weapons
@@ -116,14 +116,30 @@ _.PVP =
 					i(162937),	-- Dread Aspirant's Plate Warboots (H)
 				}),
 				n(-322, {	-- Back
-					i(163724),	-- Dread Aspirant's Cape (A, plate)
-					i(163721),	-- Dread Aspirant's Cloak (A, cloth)
-					i(163723),	-- Dread Aspirant's Drape (A, mail)
-					i(163722),	-- Dread Aspirant's Greatcloak (A, leather)
-					i(162968),	-- Dread Aspirant's Cape (H, plate)
-					i(162864),	-- Dread Aspirant's Cloak (H, cloth)
-					i(162967),	-- Dread Aspirant's Drape (H, mail)
-					i(162895),	-- Dread Aspirant's Greatcloak (H, leather)
+					i(163724, {	-- Dread Aspirant's Cape (A, plate)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Plate Ensemble.",
+					}),
+					i(163721, {	-- Dread Aspirant's Cloak (A, cloth)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Cloth Ensemble.",
+					}),
+					i(163723, {	-- Dread Aspirant's Drape (A, mail)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Mail Ensemble.",
+					}),
+					i(163722, {	-- Dread Aspirant's Greatcloak (A, leather)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Leather Ensemble.",
+					}),
+					i(162968, {	-- Dread Aspirant's Cape (H, plate)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Plate Ensemble.",
+					}),
+					i(162864, {	-- Dread Aspirant's Cloak (H, cloth)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Cloth Ensemble.",
+					}),
+					i(162967, {	-- Dread Aspirant's Drape (H, mail)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Mail Ensemble.",
+					}),
+					i(162895, {	-- Dread Aspirant's Greatcloak (H, leather)
+						["description"] = "This item is only obtainable via the Dread Aspirant's Leather Ensemble.",
+					}),
 				}),
 				n(-385, {	-- Finger
 					un(REMOVED_FROM_GAME, i(162896)),	-- Dread Aspirant's Band
@@ -135,7 +151,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(162966)),	-- Dread Aspirant's Badge
 					un(REMOVED_FROM_GAME, i(162898)),	-- Dread Aspirant's Emblem
 					un(REMOVED_FROM_GAME, i(162899)),	-- Dread Aspirant's Insignia
-					un(REMOVED_FROM_GAME, i(162897)),	-- Dread Aspirant's Medallion
+					i(162897),	-- Dread Aspirant's Medallion
 				}),
 			}),
 			n(-661, {	-- Gladiator PvP Gear
@@ -176,151 +192,166 @@ _.PVP =
 					i(161693),	-- Dread Gladiator's Warglaive (H)
 				}),
 				n(-43, {	-- Cloth
-				--	items still marked "removed" were not learned when i used the ensemble that got added.  not sure if they're available to non-priest classes.
 					i(161731),	-- Dread Gladiator's Silk Amice (A)
 					i(161737),	-- Dread Gladiator's Silk Bracers (A)
-					un(REMOVED_FROM_GAME, i(161625)),	-- Dread Gladiator's Silk Cord (A)
+					i(161625),	-- Dread Gladiator's Silk Cord (A)
 					i(161722),	-- Dread Gladiator's Silk Cowl (A)
-					un(REMOVED_FROM_GAME, i(161628)),	-- Dread Gladiator's Silk Cuffs (A)
-					un(REMOVED_FROM_GAME, i(161611)),	-- Dread Gladiator's Silk Gloves (A)
+					i(161628),	-- Dread Gladiator's Silk Cuffs (A)
+					i(161611),	-- Dread Gladiator's Silk Gloves (A)
 					i(161720),	-- Dread Gladiator's Silk Handguards (A)
-					un(REMOVED_FROM_GAME, i(161613)),	-- Dread Gladiator's Silk Hood (A)
-					un(REMOVED_FROM_GAME, i(161617)),	-- Dread Gladiator's Silk Leggings (A)
-					un(REMOVED_FROM_GAME, i(161622)),	-- Dread Gladiator's Silk Mantle (A)
+					i(161613),	-- Dread Gladiator's Silk Hood (A)
+					i(161617),	-- Dread Gladiator's Silk Leggings (A)
+					i(161622),	-- Dread Gladiator's Silk Mantle (A)
 					i(161710),	-- Dread Gladiator's Silk Raiment (A)
-					un(REMOVED_FROM_GAME, i(161601)),	-- Dread Gladiator's Silk Robe (A)
+					i(161601),	-- Dread Gladiator's Silk Robe (A)
 					i(161657),	-- Dread Gladiator's Silk Sash (A)
 					i(161715),	-- Dread Gladiator's Silk Slippers (A)
-					un(REMOVED_FROM_GAME, i(161606)),	-- Dread Gladiator's Silk Treads (A)
+					i(161606),	-- Dread Gladiator's Silk Treads (A)
 					i(161726),	-- Dread Gladiator's Silk Trousers (A)
 					i(161763),	-- Dread Gladiator's Silk Amice (H)
 					i(161769),	-- Dread Gladiator's Silk Bracers (H)
-					un(REMOVED_FROM_GAME, i(161734)),	-- Dread Gladiator's Silk Cord (H)
+					i(161734),	-- Dread Gladiator's Silk Cord (H)
 					i(161754),	-- Dread Gladiator's Silk Cowl (H)
-					un(REMOVED_FROM_GAME, i(161660)),	-- Dread Gladiator's Silk Cuffs (H)
-					un(REMOVED_FROM_GAME, i(161643)),	-- Dread Gladiator's Silk Gloves (H)
+					i(161660),	-- Dread Gladiator's Silk Cuffs (H)
+					i(161643),	-- Dread Gladiator's Silk Gloves (H)
 					i(161752),	-- Dread Gladiator's Silk Handguards (H)
-					un(REMOVED_FROM_GAME, i(161645)),	-- Dread Gladiator's Silk Hood (H)
-					un(REMOVED_FROM_GAME, i(161649)),	-- Dread Gladiator's Silk Leggings (H)
-					un(REMOVED_FROM_GAME, i(161654)),	-- Dread Gladiator's Silk Mantle (H)
+					i(161645),	-- Dread Gladiator's Silk Hood (H)
+					i(161649),	-- Dread Gladiator's Silk Leggings (H)
+					i(161654),	-- Dread Gladiator's Silk Mantle (H)
 					i(161742),	-- Dread Gladiator's Silk Raiment (H)
-					un(REMOVED_FROM_GAME, i(161633)),	-- Dread Gladiator's Silk Robe (H)
+					i(161633),	-- Dread Gladiator's Silk Robe (H)
 					i(161766),	-- Dread Gladiator's Silk Sash (H)
 					i(161747),	-- Dread Gladiator's Silk Slippers (H)
-					un(REMOVED_FROM_GAME, i(161638)),	-- Dread Gladiator's Silk Treads (H)
+					i(161638),	-- Dread Gladiator's Silk Treads (H)
 					i(161758),	-- Dread Gladiator's Silk Trousers (H)
 				}),
 				n(-44, {	-- Leather
 					i(161740),	-- Dread Gladiator's Leather Armwraps (A)
-					un(REMOVED_FROM_GAME, i(161627)),	-- Dread Gladiator's Leather Belt (A)
-					un(REMOVED_FROM_GAME, i(161631)),	-- Dread Gladiator's Leather Bindings (A)
-					un(REMOVED_FROM_GAME, i(161608)),	-- Dread Gladiator's Leather Boots (A)
+					i(161627),	-- Dread Gladiator's Leather Belt (A)
+					i(161631),	-- Dread Gladiator's Leather Bindings (A)
+					i(161608),	-- Dread Gladiator's Leather Boots (A)
 					i(161717),	-- Dread Gladiator's Leather Footguards (A)
-					un(REMOVED_FROM_GAME, i(161609)),	-- Dread Gladiator's Leather Gloves (A)
+					i(161609),	-- Dread Gladiator's Leather Gloves (A)
 					i(161718),	-- Dread Gladiator's Leather Handguards (A)
-					un(REMOVED_FROM_GAME, i(161615)),	-- Dread Gladiator's Leather Helm (A)
+					i(161615),	-- Dread Gladiator's Leather Helm (A)
 					i(161724),	-- Dread Gladiator's Leather Hood (A)
-					un(REMOVED_FROM_GAME, i(161619)),	-- Dread Gladiator's Leather Legguards (A)
+					i(161619),	-- Dread Gladiator's Leather Legguards (A)
 					i(161729),	-- Dread Gladiator's Leather Mantle (A)
 					i(161728),	-- Dread Gladiator's Leather Pants (A)
-					un(REMOVED_FROM_GAME, i(161620)),	-- Dread Gladiator's Leather Spaulders (A)
-					un(REMOVED_FROM_GAME, i(161604)),	-- Dread Gladiator's Leather Tunic (A)
+					i(161620),	-- Dread Gladiator's Leather Spaulders (A)
+					i(161604),	-- Dread Gladiator's Leather Tunic (A)
 					i(161713),	-- Dread Gladiator's Leather Vest (A)
 					i(161736),	-- Dread Gladiator's Leather Waistband (A)
 					i(161772),	-- Dread Gladiator's Leather Armwraps (H)
-					un(REMOVED_FROM_GAME, i(161659)),	-- Dread Gladiator's Leather Belt (H)
-					un(REMOVED_FROM_GAME, i(161663)),	-- Dread Gladiator's Leather Bindings (H)
-					un(REMOVED_FROM_GAME, i(161640)),	-- Dread Gladiator's Leather Boots (H)
+					i(161659),	-- Dread Gladiator's Leather Belt (H)
+					i(161663),	-- Dread Gladiator's Leather Bindings (H)
+					i(161640),	-- Dread Gladiator's Leather Boots (H)
 					i(161749),	-- Dread Gladiator's Leather Footguards (H)
-					un(REMOVED_FROM_GAME, i(161641)),	-- Dread Gladiator's Leather Gloves (H)
+					i(161641),	-- Dread Gladiator's Leather Gloves (H)
 					i(161750),	-- Dread Gladiator's Leather Handguards (H)
-					un(REMOVED_FROM_GAME, i(161647)),	-- Dread Gladiator's Leather Helm (H)
+					i(161647),	-- Dread Gladiator's Leather Helm (H)
 					i(161756),	-- Dread Gladiator's Leather Hood (H)
-					un(REMOVED_FROM_GAME, i(161651)),	-- Dread Gladiator's Leather Legguards (H)
+					i(161651),	-- Dread Gladiator's Leather Legguards (H)
 					i(161761),	-- Dread Gladiator's Leather Mantle (H)
 					i(161760),	-- Dread Gladiator's Leather Pants (H)
-					un(REMOVED_FROM_GAME, i(161652)),	-- Dread Gladiator's Leather Spaulders (H)
-					un(REMOVED_FROM_GAME, i(161636)),	-- Dread Gladiator's Leather Tunic (H)
+					i(161652),	-- Dread Gladiator's Leather Spaulders (H)
+					i(161636),	-- Dread Gladiator's Leather Tunic (H)
 					i(161745),	-- Dread Gladiator's Leather Vest (H)
 					i(161768),	-- Dread Gladiator's Leather Waistband (H)
 				}),
 				n(-45, {	-- Mail
-					un(REMOVED_FROM_GAME, i(161630)),	-- Dread Gladiator's Chain Armbands (A)
-					un(REMOVED_FROM_GAME, i(161603)),	-- Dread Gladiator's Chain Armor (A)
+					i(161630),	-- Dread Gladiator's Chain Armbands (A)
+					i(161603),	-- Dread Gladiator's Chain Armor (A)
 					i(161712),	-- Dread Gladiator's Chain Chestguard (A)
 					i(161735),	-- Dread Gladiator's Chain Clasp (A)
 					i(161716),	-- Dread Gladiator's Chain Footguards (A)
-					un(REMOVED_FROM_GAME, i(161612)),	-- Dread Gladiator's Chain Gauntlets (A)
+					i(161612),	-- Dread Gladiator's Chain Gauntlets (A)
 					i(161721),	-- Dread Gladiator's Chain Handguards (A)
 					i(161723),	-- Dread Gladiator's Chain Headpiece (A)
-					un(REMOVED_FROM_GAME, i(161614)),	-- Dread Gladiator's Chain Helm (A)
-					un(REMOVED_FROM_GAME, i(161618)),	-- Dread Gladiator's Chain Leggings (A)
+					i(161614),	-- Dread Gladiator's Chain Helm (A)
+					i(161618),	-- Dread Gladiator's Chain Leggings (A)
 					i(161727),	-- Dread Gladiator's Chain Legguards (A)
-					un(REMOVED_FROM_GAME, i(161607)),	-- Dread Gladiator's Chain Sabatons (A)
+					i(161607),	-- Dread Gladiator's Chain Sabatons (A)
 					i(161732),	-- Dread Gladiator's Chain Shoulderguards (A)
-					un(REMOVED_FROM_GAME, i(161623)),	-- Dread Gladiator's Chain Spaulders (A)
-					un(REMOVED_FROM_GAME, i(161626)),	-- Dread Gladiator's Chain Waistguard (A)
+					i(161623),	-- Dread Gladiator's Chain Spaulders (A)
+					i(161626),	-- Dread Gladiator's Chain Waistguard (A)
 					i(161739),	-- Dread Gladiator's Chain Wristguards (A)
-					un(REMOVED_FROM_GAME, i(161662)),	-- Dread Gladiator's Chain Armbands (H)
-					un(REMOVED_FROM_GAME, i(161635)),	-- Dread Gladiator's Chain Armor (H)
+					i(161662),	-- Dread Gladiator's Chain Armbands (H)
+					i(161635),	-- Dread Gladiator's Chain Armor (H)
 					i(161744),	-- Dread Gladiator's Chain Chestguard (H)
 					i(161767),	-- Dread Gladiator's Chain Clasp (H)
 					i(161748),	-- Dread Gladiator's Chain Footguards (H)
-					un(REMOVED_FROM_GAME, i(161644)),	-- Dread Gladiator's Chain Gauntlets (H)
+					i(161644),	-- Dread Gladiator's Chain Gauntlets (H)
 					i(161753),	-- Dread Gladiator's Chain Handguards (H)
 					i(161755),	-- Dread Gladiator's Chain Headpiece (H)
-					un(REMOVED_FROM_GAME, i(161646)),	-- Dread Gladiator's Chain Helm (H)
-					un(REMOVED_FROM_GAME, i(161650)),	-- Dread Gladiator's Chain Leggings (H)
+					i(161646),	-- Dread Gladiator's Chain Helm (H)
+					i(161650),	-- Dread Gladiator's Chain Leggings (H)
 					i(161759),	-- Dread Gladiator's Chain Legguards (H)
-					un(REMOVED_FROM_GAME, i(161639)),	-- Dread Gladiator's Chain Sabatons (H)
+					i(161639),	-- Dread Gladiator's Chain Sabatons (H)
 					i(161764),	-- Dread Gladiator's Chain Shoulderguards (H)
-					un(REMOVED_FROM_GAME, i(161655)),	-- Dread Gladiator's Chain Spaulders (H)
-					un(REMOVED_FROM_GAME, i(161658)),	-- Dread Gladiator's Chain Waistguard (H)
+					i(161655),	-- Dread Gladiator's Chain Spaulders (H)
+					i(161658),	-- Dread Gladiator's Chain Waistguard (H)
 					i(161771),	-- Dread Gladiator's Chain Wristguards (H)
 				}),
 				n(-46, {	-- Plate
-					un(REMOVED_FROM_GAME, i(161629)),	-- Dread Gladiator's Plate Armguards (A)
+					i(161629),	-- Dread Gladiator's Plate Armguards (A)
 					i(161711),	-- Dread Gladiator's Plate Chestguard (A)
-					un(REMOVED_FROM_GAME, i(161602)),	-- Dread Gladiator's Plate Chestpiece (A)
+					i(161602),	-- Dread Gladiator's Plate Chestpiece (A)
 					i(161733),	-- Dread Gladiator's Plate Clasp (A)
-					un(REMOVED_FROM_GAME, i(161610)),	-- Dread Gladiator's Plate Gauntlets (A)
-					un(REMOVED_FROM_GAME, i(161624)),	-- Dread Gladiator's Plate Girdle (A)
+					i(161610),	-- Dread Gladiator's Plate Gauntlets (A)
+					i(161624),	-- Dread Gladiator's Plate Girdle (A)
 					i(161719),	-- Dread Gladiator's Plate Gloves (A)
 					i(161714),	-- Dread Gladiator's Plate Greaves (A)
 					i(161709),	-- Dread Gladiator's Plate Headcover (A)
-					un(REMOVED_FROM_GAME, i(161600)),	-- Dread Gladiator's Plate Helm (A)
+					i(161600),	-- Dread Gladiator's Plate Helm (A)
 					i(161725),	-- Dread Gladiator's Plate Leg Armor (A)
-					un(REMOVED_FROM_GAME, i(161616)),	-- Dread Gladiator's Plate Legguards (A)
-					un(REMOVED_FROM_GAME, i(161621)),	-- Dread Gladiator's Plate Pauldrons (A)
+					i(161616),	-- Dread Gladiator's Plate Legguards (A)
+					i(161621),	-- Dread Gladiator's Plate Pauldrons (A)
 					i(161730),	-- Dread Gladiator's Plate Shoulders (A)
 					i(161738),	-- Dread Gladiator's Plate Vambraces (A)
-					un(REMOVED_FROM_GAME, i(161605)),	-- Dread Gladiator's Plate Warboots (A)
-					un(REMOVED_FROM_GAME, i(161661)),	-- Dread Gladiator's Plate Armguards (H)
+					i(161605),	-- Dread Gladiator's Plate Warboots (A)
+					i(161661),	-- Dread Gladiator's Plate Armguards (H)
 					i(161743),	-- Dread Gladiator's Plate Chestguard (H)
-					un(REMOVED_FROM_GAME, i(161634)),	-- Dread Gladiator's Plate Chestpiece (H)
+					i(161634),	-- Dread Gladiator's Plate Chestpiece (H)
 					i(161765),	-- Dread Gladiator's Plate Clasp (H)
-					un(REMOVED_FROM_GAME, i(161642)),	-- Dread Gladiator's Plate Gauntlets (H)
-					un(REMOVED_FROM_GAME, i(161656)),	-- Dread Gladiator's Plate Girdle (H)
+					i(161642),	-- Dread Gladiator's Plate Gauntlets (H)
+					i(161656),	-- Dread Gladiator's Plate Girdle (H)
 					i(161751),	-- Dread Gladiator's Plate Gloves (H)
 					i(161746),	-- Dread Gladiator's Plate Greaves (H)
 					i(161741),	-- Dread Gladiator's Plate Headcover (H)
-					un(REMOVED_FROM_GAME, i(161632)),	-- Dread Gladiator's Plate Helm (H)
+					i(161632),	-- Dread Gladiator's Plate Helm (H)
 					i(161757),	-- Dread Gladiator's Plate Leg Armor (H)
-					un(REMOVED_FROM_GAME, i(161648)),	-- Dread Gladiator's Plate Legguards (H)
-					un(REMOVED_FROM_GAME, i(161653)),	-- Dread Gladiator's Plate Pauldrons (H)
+					i(161648),	-- Dread Gladiator's Plate Legguards (H)
+					i(161653),	-- Dread Gladiator's Plate Pauldrons (H)
 					i(161762),	-- Dread Gladiator's Plate Shoulders (H)
 					i(161770),	-- Dread Gladiator's Plate Vambraces (H)
-					un(REMOVED_FROM_GAME, i(161637)),	-- Dread Gladiator's Plate Warboots (H)
+					i(161637),	-- Dread Gladiator's Plate Warboots (H)
 				}),
 				n(-322, {	-- Back
-					i(163732),	-- Dread Gladiator's Cape (A)
-					i(163731),	-- Dread Gladiator's Drape (A)
-					i(163730),	-- Dread Gladiator's Greatcloak (A)
-					i(163729),	-- Dread Gladiator's Shawl (A)
-					i(161907),	-- Dread Gladiator's Cape (H)
-					i(161906),	-- Dread Gladiator's Drape (H)
-					i(161669),	-- Dread Gladiator's Greatcloak (H)
-					i(161668),	-- Dread Gladiator's Shawl (H)
+					i(163732, {	-- Dread Gladiator's Cape (A)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Plate Ensemble.",
+					}),
+					i(163731, {	-- Dread Gladiator's Drape (A)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Mail Ensemble.",
+					}),
+					i(163730, {	-- Dread Gladiator's Greatcloak (A)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Leather Ensemble.",
+					}),
+					i(163729, {	-- Dread Gladiator's Shawl (A)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Cloth Ensemble.",
+					}),
+					i(161907, {	-- Dread Gladiator's Cape (H)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Plate Ensemble.",
+					}),
+					i(161906, {	-- Dread Gladiator's Drape (H)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Mail Ensemble.",
+					}),
+					i(161669, {	-- Dread Gladiator's Greatcloak (H)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Leather Ensemble.",
+					}),
+					i(161668, {	-- Dread Gladiator's Shawl (H)
+						["description"] = "This item is only obtainable via the Dread Gladiator's Cloth Ensemble.",
+					}),
 				}),
 				n(-385, {	-- Finger
 					un(REMOVED_FROM_GAME, i(161672)),	-- Dread Gladiator's Band
@@ -335,24 +366,24 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(161674)),	-- Dread Gladiator's Medallion
 				}),
 			}),
-			un(REMOVED_FROM_GAME, i(159570)),	-- Battleborn Sigil Dread Combatant
-			un(REMOVED_FROM_GAME, i(155622)),	-- Warlord's Trophy Dread Combatant
-			un(REMOVED_FROM_GAME, i(164580)),	-- Battleborn Sigil Dread Challenger
-			un(REMOVED_FROM_GAME, i(164584)),	-- Warlord's Trophy Dread Challenger
-			un(REMOVED_FROM_GAME, i(164581)),	-- Battleborn Sigil Dread Rival
-			un(REMOVED_FROM_GAME, i(164585)),	-- Warlord's Trophy Dread Rival
-			un(REMOVED_FROM_GAME, i(164582)),	-- Battleborn Sigil Dread Duelist
-			un(REMOVED_FROM_GAME, i(164586)),	-- Warlord's Trophy Dread Duelist
-			un(REMOVED_FROM_GAME, i(164583)),	-- Battleborn Sigil Dread Elite
-			un(REMOVED_FROM_GAME, i(164587)),	-- Warlord's Trophy Dread Elite
+			un(REMOVED_FROM_GAME, i(163827, {	-- Quartermaster's Coin
+				un(REMOVED_FROM_GAME, i(159570)),	-- Battleborn Sigil Dread Combatant
+				un(REMOVED_FROM_GAME, i(164580)),	-- Battleborn Sigil Dread Challenger
+				un(REMOVED_FROM_GAME, i(164581)),	-- Battleborn Sigil Dread Rival
+				un(REMOVED_FROM_GAME, i(164582)),	-- Battleborn Sigil Dread Duelist
+				un(REMOVED_FROM_GAME, i(164583)),	-- Battleborn Sigil Dread Elite
+				un(REMOVED_FROM_GAME, i(155622)),	-- Warlord's Trophy Dread Combatant
+				un(REMOVED_FROM_GAME, i(164584)),	-- Warlord's Trophy Dread Challenger
+				un(REMOVED_FROM_GAME, i(164585)),	-- Warlord's Trophy Dread Rival
+				un(REMOVED_FROM_GAME, i(164586)),	-- Warlord's Trophy Dread Duelist
+				un(REMOVED_FROM_GAME, i(164587)),	-- Warlord's Trophy Dread Elite
+			})),
 			filter(100, {	-- Mounts
 				i(163123, {	-- Vicious War Riverbeast (A)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(163124, {	-- Vicious War Clefthoof (H)
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 		}),
@@ -457,14 +488,30 @@ _.PVP =
 					i(165087),	-- Sinister Aspirant's Plate Warboots (H)
 				}),
 				n(-322, {	-- Back
-					i(165216),	-- Sinister Aspirant's Cape (A)
-					i(165215),	-- Sinister Aspirant's Drape (A)
-					i(165214),	-- Sinister Aspirant's Greatcloak (A)
-					i(165213),	-- Sinister Aspirant's Shawl (A)
-					i(165212),	-- Sinister Aspirant's Cape (H)
-					i(165211),	-- Sinister Aspirant's Drape (H)
-					i(165210),	-- Sinister Aspirant's Greatcloak (H)
-					i(165209),	-- Sinister Aspirant's Shawl (H)
+					i(165216, {	-- Sinister Aspirant's Cape (A)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Plate Ensemble.",
+					}),
+					i(165215, {	-- Sinister Aspirant's Drape (A)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Mail Ensemble.",
+					}),
+					i(165214, {	-- Sinister Aspirant's Greatcloak (A)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Leather Ensemble.",
+					}),
+					i(165213, {	-- Sinister Aspirant's Shawl (A)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Cloth Ensemble.",
+					}),
+					i(165212, {	-- Sinister Aspirant's Cape (H)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Plate Ensemble.",
+					}),
+					i(165211, {	-- Sinister Aspirant's Drape (H)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Mail Ensemble.",
+					}),
+					i(165210, {	-- Sinister Aspirant's Greatcloak (H)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Leather Ensemble.",
+					}),
+					i(165209, {	-- Sinister Aspirant's Shawl (H)
+						["description"] = "This item is only obtainable via the Sinister Aspirant's Cloth Ensemble.",
+					}),
 				}),
 				n(-385, {	-- Finger
 					un(REMOVED_FROM_GAME, i(165219)),	-- Sinister Aspirant's Band
@@ -481,7 +528,6 @@ _.PVP =
 				n(-319, {	-- Weapons
 					i(165041),	-- Sinister Gladiator's Bonecracker (A)
 					i(166479),	-- Sinister Gladiator's Greatsword (A)
-					un(NEVER_IMPLEMENTED, i(165036)),	-- Sinister Gladiator's Halberd (A) (either NYI or removed)
 					i(165043),	-- Sinister Gladiator's Longbow (A)
 					i(165042),	-- Sinister Gladiator's Mageblade (A)
 					i(165037),	-- Sinister Gladiator's Pike (A)
@@ -506,222 +552,214 @@ _.PVP =
 					i(165028),	-- Sinister Gladiator's Warglaive (H)
 				}),
 				n(-43,  {	-- Cloth
-					un(REMOVED_FROM_GAME, i(164897)),	-- Sinister Gladiator's Silk Amice (A)
-					un(REMOVED_FROM_GAME, i(166634)),	-- Sinister Gladiator's Silk Armor (A)
-					un(REMOVED_FROM_GAME, i(164903)),	-- Sinister Gladiator's Silk Bracers (A)
-					un(REMOVED_FROM_GAME, i(166611)),	-- Sinister Gladiator's Silk Cap (A)
-					un(REMOVED_FROM_GAME, i(166626)),	-- Sinister Gladiator's Silk Chestwrap (A)
+					i(164897),	-- Sinister Gladiator's Silk Amice (A)
+					i(164903),	-- Sinister Gladiator's Silk Bracers (A)
+					i(166626),	-- Sinister Gladiator's Silk Chestwrap (A)
 					i(164836),	-- Sinister Gladiator's Silk Cord (A)
-					un(REMOVED_FROM_GAME, i(166603)),	-- Sinister Gladiator's Silk Cover (A)
-					un(REMOVED_FROM_GAME, i(164888)),	-- Sinister Gladiator's Silk Cowl (A)
+					i(166603),	-- Sinister Gladiator's Silk Cover (A)
+					i(164888),	-- Sinister Gladiator's Silk Cowl (A)
 					i(164839),	-- Sinister Gladiator's Silk Cuffs (A)
-					un(REMOVED_FROM_GAME, i(166644)),	-- Sinister Gladiator's Silk Epaulets (A)
+					i(166644),	-- Sinister Gladiator's Silk Epaulets (A)
 					i(164822),	-- Sinister Gladiator's Silk Gloves (A)
-					un(REMOVED_FROM_GAME, i(164886)),	-- Sinister Gladiator's Silk Handguards (A)
-					un(REMOVED_FROM_GAME, i(166595)),	-- Sinister Gladiator's Silk Helm (A)
+					i(164886),	-- Sinister Gladiator's Silk Handguards (A)
+					i(166595),	-- Sinister Gladiator's Silk Helm (A)
 					i(164824),	-- Sinister Gladiator's Silk Hood (A)
 					i(164828),	-- Sinister Gladiator's Silk Leggings (A)
 					i(164833),	-- Sinister Gladiator's Silk Mantle (A)
-					un(REMOVED_FROM_GAME, i(164876)),	-- Sinister Gladiator's Silk Raiment (A)
+					i(164876),	-- Sinister Gladiator's Silk Raiment (A)
 					i(164812),	-- Sinister Gladiator's Silk Robe (A)
-					un(REMOVED_FROM_GAME, i(164900)),	-- Sinister Gladiator's Silk Sash (A)
-					un(REMOVED_FROM_GAME, i(166660)),	-- Sinister Gladiator's Silk Shoulderguards (A)
-					un(REMOVED_FROM_GAME, i(166652)),	-- Sinister Gladiator's Silk Shoulderpads (A)
-					un(REMOVED_FROM_GAME, i(164881)),	-- Sinister Gladiator's Silk Slippers (A)
+					i(164900),	-- Sinister Gladiator's Silk Sash (A)
+					i(166652),	-- Sinister Gladiator's Silk Shoulderpads (A)
+					i(164881),	-- Sinister Gladiator's Silk Slippers (A)
 					i(164817),	-- Sinister Gladiator's Silk Treads (A)
-					un(REMOVED_FROM_GAME, i(164892)),	-- Sinister Gladiator's Silk Trousers (A)
-					un(REMOVED_FROM_GAME, i(166618)),	-- Sinister Gladiator's Silk Vestments (A)
-					un(REMOVED_FROM_GAME, i(164848)),	-- Sinister Gladiator's Silk Amice (H)
-					un(REMOVED_FROM_GAME, i(166630)),	-- Sinister Gladiator's Silk Armor (H)
-					un(REMOVED_FROM_GAME, i(164849)),	-- Sinister Gladiator's Silk Bracers (H)
-					un(REMOVED_FROM_GAME, i(166606)),	-- Sinister Gladiator's Silk Cap (H)
-					un(REMOVED_FROM_GAME, i(166622)),	-- Sinister Gladiator's Silk Chestwrap (H)
+					i(164892),	-- Sinister Gladiator's Silk Trousers (A)
+					i(166618),	-- Sinister Gladiator's Silk Vestments (A)
+					i(164848),	-- Sinister Gladiator's Si
+					i(164849),	-- Sinister Gladiator's Silk
+					i(166622),	-- Sinister Gladiator's Silk Chestwrap (H)
 					i(164786),	-- Sinister Gladiator's Silk Cord (H)
-					un(REMOVED_FROM_GAME, i(166598)),	-- Sinister Gladiator's Silk Cover (H)
-					un(REMOVED_FROM_GAME, i(164846)),	-- Sinister Gladiator's Silk Cowl (H)
+					i(166598),	-- Sinister Gladiator's Silk Cover (H)
+					i(164846),	-- Sinister Gladiator's Silk Cowl (H)
 					i(164785),	-- Sinister Gladiator's Silk Cuffs (H)
-					un(REMOVED_FROM_GAME, i(166638)),	-- Sinister Gladiator's Silk Epaulets (H)
+					i(166638),	-- Sinister Gladiator's Silk Epaulets (H)
 					i(164781),	-- Sinister Gladiator's Silk Gloves (H)
-					un(REMOVED_FROM_GAME, i(164845)),	-- Sinister Gladiator's Silk Handguards (H)
-					un(REMOVED_FROM_GAME, i(166590)),	-- Sinister Gladiator's Silk Helm (H)
+					i(164845),	-- Sinister Gladiator's Silk Handguards (H)
+					i(166590),	-- Sinister Gladiator's Silk Helm (H)
 					i(164782),	-- Sinister Gladiator's Silk Hood (H)
 					i(164783),	-- Sinister Gladiator's Silk Leggings (H)
 					i(164784),	-- Sinister Gladiator's Silk Mantle (H)
-					un(REMOVED_FROM_GAME, i(164843)),	-- Sinister Gladiator's Silk Raiment (H)
+					i(164843),	-- Sinister Gladiator's Silk Raiment (H)
 					i(164779),	-- Sinister Gladiator's Silk Robe (H)
-					un(REMOVED_FROM_GAME, i(164850)),	-- Sinister Gladiator's Silk Sash (H)
-					un(REMOVED_FROM_GAME, i(166654)),	-- Sinister Gladiator's Silk Shoulderguards (H)
-					un(REMOVED_FROM_GAME, i(166646)),	-- Sinister Gladiator's Silk Shoulderpads (H)
-					un(REMOVED_FROM_GAME, i(164844)),	-- Sinister Gladiator's Silk Slippers (H)
+					i(164850),	-- Sinister Gladiator's S
+					i(166646),	-- Sinister Gladiator's Silk Shoulderpads (H)
+					i(164844),	-- Sinister Gladiator's Silk Slippers (H)
 					i(164780),	-- Sinister Gladiator's Silk Treads (H)
-					un(REMOVED_FROM_GAME, i(164847)),	-- Sinister Gladiator's Silk Trousers (H)
-					un(REMOVED_FROM_GAME, i(166614)),	-- Sinister Gladiator's Silk Vestments (H)
+					i(164847),	-- Sinister Gladiator's Silk Trousers (H)
+					i(166614),	-- Sinister Gladiator's Silk Vestments (H)
 				}),
 				n(-44,  {	-- Leather
-					un(REMOVED_FROM_GAME, i(164906)),	-- Sinister Gladiator's Leather Armwraps (A)
+					i(164906),	-- Sinister Gladiator's Leather Armwraps (A)
 					i(164838),	-- Sinister Gladiator's Leather Belt (A)
 					i(164842),	-- Sinister Gladiator's Leather Bindings (A)
 					i(164819),	-- Sinister Gladiator's Leather Boots (A)
-					un(REMOVED_FROM_GAME, i(166597)),	-- Sinister Gladiator's Leather Cap (A)
-					un(REMOVED_FROM_GAME, i(166629)),	-- Sinister Gladiator's Leather Chestguard (A)
-					un(REMOVED_FROM_GAME, i(164883)),	-- Sinister Gladiator's Leather Footguards (A)
+					i(166597),	-- Sinister Gladiator's Leather Cap (A)
+					i(166629),	-- Sinister Gladiator's Leather Chestguard (A)
+					i(164883),	-- Sinister Gladiator's Leather Footguards (A)
 					i(164820),	-- Sinister Gladiator's Leather Gloves (A)
-					un(REMOVED_FROM_GAME, i(164884)),	-- Sinister Gladiator's Leather Handguards (A)
-					un(REMOVED_FROM_GAME, i(166637)),	-- Sinister Gladiator's Leather Harness (A)
-					un(REMOVED_FROM_GAME, i(166613)),	-- Sinister Gladiator's Leather Headpiece (A)
+					i(164884),	-- Sinister Gladiator's Leather Handguar
 					i(164826),	-- Sinister Gladiator's Leather Helm (A)
-					un(REMOVED_FROM_GAME, i(164890)),	-- Sinister Gladiator's Leather Hood (A)
-					un(REMOVED_FROM_GAME, i(166621)),	-- Sinister Gladiator's Leather Jerkin (A)
+					i(164890),	-- Sinister Gladiator's Leather Hood (A)
+					i(166621),	-- Sinister Gladiator's Leather Jerkin (A)
 					i(164830),	-- Sinister Gladiator's Leather Legguards (A)
-					un(REMOVED_FROM_GAME, i(164895)),	-- Sinister Gladiator's Leather Mantle (A)
-					un(REMOVED_FROM_GAME, i(164894)),	-- Sinister Gladiator's Leather Pants (A)
-					un(REMOVED_FROM_GAME, i(166650)),	-- Sinister Gladiator's Leather Pauldrons (A)
-					un(REMOVED_FROM_GAME, i(166642)),	-- Sinister Gladiator's Leather Shoulderguards (A)
-					un(REMOVED_FROM_GAME, i(166658)),	-- Sinister Gladiator's Leather Shoulderpads (A)
-					un(REMOVED_FROM_GAME, i(166605)),	-- Sinister Gladiator's Leather Skullguard (A)
+					i(164895),	-- Sinister Gladiator's Leather Mantle (A)
+					i(164894),	-- Sinister Gladiator's Leather Pants (A)
+					i(166650),	-- Sinister Gladiator's Leather Pauldrons (A)
+					i(166642),	-- Sinister Gladiator's Leather Shoulderguar
+					i(166605),	-- Sinister Gladiator's Leather Skullguard (A)
 					i(164831),	-- Sinister Gladiator's Leather Spaulders (A)
 					i(164815),	-- Sinister Gladiator's Leather Tunic (A)
-					un(REMOVED_FROM_GAME, i(164879)),	-- Sinister Gladiator's Leather Vest (A)
-					un(REMOVED_FROM_GAME, i(164902)),	-- Sinister Gladiator's Leather Waistband (A)
-					un(REMOVED_FROM_GAME, i(164858)),	-- Sinister Gladiator's Leather Armwraps (H)
+					i(164879),	-- Sinister Gladiator's Leather Vest (A)
+					i(164902),	-- Sinister Gladiator's Leather Waistband (A)
+					i(164858),	-- Sinister Gladiator's Leather Armwraps (H)
 					i(164793),	-- Sinister Gladiator's Leather Belt (H)
 					i(164794),	-- Sinister Gladiator's Leather Bindings (H)
 					i(164788),	-- Sinister Gladiator's Leather Boots (H)
-					un(REMOVED_FROM_GAME, i(166591)),	-- Sinister Gladiator's Leather Cap (H)
-					un(REMOVED_FROM_GAME, i(166623)),	-- Sinister Gladiator's Leather Chestguard (H)
-					un(REMOVED_FROM_GAME, i(164852)),	-- Sinister Gladiator's Leather Footguards (H)
+					i(166591),	-- Sinister Gladiator's Leather Cap (H)
+					i(166623),	-- Sinister Gladiator's Leather Chestguard (H)
+					i(164852),	-- Sinister Gladiator's Leather Footguards (H)
 					i(164789),	-- Sinister Gladiator's Leather Gloves (H)
-					un(REMOVED_FROM_GAME, i(164853)),	-- Sinister Gladiator's Leather Handguards (H)
-					un(REMOVED_FROM_GAME, i(166631)),	-- Sinister Gladiator's Leather Harness (H)
-					un(REMOVED_FROM_GAME, i(166607)),	-- Sinister Gladiator's Leather Headpiece (H)
+					i(164853),	-- Sinister Gladiator's Leather Handguar
 					i(164790),	-- Sinister Gladiator's Leather Helm (H)
-					un(REMOVED_FROM_GAME, i(164854)),	-- Sinister Gladiator's Leather Hood (H)
-					un(REMOVED_FROM_GAME, i(166615)),	-- Sinister Gladiator's Leather Jerkin (H)
+					i(164854),	-- Sinister Gladiator's Leather Hood (H)
+					i(166615),	-- Sinister Gladiator's Leather Jerkin (H)
 					i(164791),	-- Sinister Gladiator's Leather Legguards (H)
-					un(REMOVED_FROM_GAME, i(164856)),	-- Sinister Gladiator's Leather Mantle (H)
-					un(REMOVED_FROM_GAME, i(164855)),	-- Sinister Gladiator's Leather Pants (H)
-					un(REMOVED_FROM_GAME, i(166647)),	-- Sinister Gladiator's Leather Pauldrons (H)
-					un(REMOVED_FROM_GAME, i(166639)),	-- Sinister Gladiator's Leather Shoulderguards (H)
-					un(REMOVED_FROM_GAME, i(166655)),	-- Sinister Gladiator's Leather Shoulderpads (H)
-					un(REMOVED_FROM_GAME, i(166599)),	-- Sinister Gladiator's Leather Skullguard (H)
+					i(164856),	-- Sinister Gladiator's Leather Mantle (H)
+					i(164855),	-- Sinister Gladiator's Leather Pants (H)
+					i(166647),	-- Sinister Gladiator's Leather Pauldrons (H)
+					i(166639),	-- Sinister Gladiator's Leather Shoulderguar
+					i(166599),	-- Sinister Gladiator's Leather Skullguard (H)
 					i(164792),	-- Sinister Gladiator's Leather Spaulders (H)
 					i(164787),	-- Sinister Gladiator's Leather Tunic (H)
-					un(REMOVED_FROM_GAME, i(164851)),	-- Sinister Gladiator's Leather Vest (H)
-					un(REMOVED_FROM_GAME, i(164857)),	-- Sinister Gladiator's Leather Waistband (H)
+					i(164851),	-- Sinister Gladiator's Leather Vest (H)
+					i(164857),	-- Sinister Gladiator's Leather Waistband (H)
 				}),
 				n(-45,  {	-- Mail
 					i(164841),	-- Sinister Gladiator's Chain Armbands (A)
 					i(164814),	-- Sinister Gladiator's Chain Armor (A)
-					un(REMOVED_FROM_GAME, i(164878)),	-- Sinister Gladiator's Chain Chestguard (A)
-					un(REMOVED_FROM_GAME, i(164901)),	-- Sinister Gladiator's Chain Clasp (A)
-					un(REMOVED_FROM_GAME, i(166596)),	-- Sinister Gladiator's Chain Coif (A)
-					un(REMOVED_FROM_GAME, i(166661)),	-- Sinister Gladiator's Chain Epaulets (A)
-					un(REMOVED_FROM_GAME, i(164882)),	-- Sinister Gladiator's Chain Footguards (A)
+					i(164878),	-- Sinister Gladiator's Chain Chestguard (A)
+					i(164901),	-- Sinister Gladiator's Chain Clasp (A)
+					i(166596),	-- Sinister Gladiator's Chain Coif (A)
+					i(164882),	-- Sinister Gladiator's Chain Footguards (A)
 					i(164823),	-- Sinister Gladiator's Chain Gauntlets (A)
-					un(REMOVED_FROM_GAME, i(164887)),	-- Sinister Gladiator's Chain Handguards (A)
-					un(REMOVED_FROM_GAME, i(166620)),	-- Sinister Gladiator's Chain Hauberk (A)
-					un(REMOVED_FROM_GAME, i(166604)),	-- Sinister Gladiator's Chain Headgear (A)
-					un(REMOVED_FROM_GAME, i(164889)),	-- Sinister Gladiator's Chain Headpiece (A)
+					i(164887),	-- Sinister Gladiator's Chain Handguards (A)
+					i(166620),	-- Sinister Gladiator's Chain Hauberk (A)
+					i(166604),	-- Sinister Gladiator's Chain Headgear (A)
+					i(164889),	-- Sinister Gladiator's Chain Headpiece (A)
 					i(164825),	-- Sinister Gladiator's Chain Helm (A)
 					i(164829),	-- Sinister Gladiator's Chain Leggings (A)
-					un(REMOVED_FROM_GAME, i(164893)),	-- Sinister Gladiator's Chain Legguards (A)
-					un(REMOVED_FROM_GAME, i(166628)),	-- Sinister Gladiator's Chainmail (A)
-					un(REMOVED_FROM_GAME, i(166653)),	-- Sinister Gladiator's Chain Mantle (A)
-					un(REMOVED_FROM_GAME, i(166645)),	-- Sinister Gladiator's Chain Pauldrons (A)
+					i(164893),	-- Sinister Gladiator's Chain Legguards (A)
+					i(166628),	-- Sinister Gladiator's Chainmail (A)
+					i(166653),	-- Sinister Gladiator's Chain Mantle (A)
+					i(166645),	-- Sinister Gladiator's Chain Pauldrons (A)
 					i(164818),	-- Sinister Gladiator's Chain Sabatons (A)
-					un(REMOVED_FROM_GAME, i(164898)),	-- Sinister Gladiator's Chain Shoulderguards (A)
-					un(REMOVED_FROM_GAME, i(166612)),	-- Sinister Gladiator's Chain Skullcover (A)
+					i(164898),	-- Sinister Gladiator's Chain Shoulderguards (A)
 					i(164834),	-- Sinister Gladiator's Chain Spaulders (A)
-					un(REMOVED_FROM_GAME, i(166636)),	-- Sinister Gladiator's Chain Vest (A)
 					i(164837),	-- Sinister Gladiator's Chain Waistguard (A)
-					un(REMOVED_FROM_GAME, i(164905)),	-- Sinister Gladiator's Chain Wristguards (A)
+					i(164905),	-- Sinister Gladiator's Chain Wristguards (A)
 					i(164802),	-- Sinister Gladiator's Chain Armbands (H)
 					i(164795),	-- Sinister Gladiator's Chain Armor (H)
-					un(REMOVED_FROM_GAME, i(164859)),	-- Sinister Gladiator's Chain Chestguard (H)
-					un(REMOVED_FROM_GAME, i(164865)),	-- Sinister Gladiator's Chain Clasp (H)
-					un(REMOVED_FROM_GAME, i(166592)),	-- Sinister Gladiator's Chain Coif (H)
-					un(REMOVED_FROM_GAME, i(166656)),	-- Sinister Gladiator's Chain Epaulets (H)
-					un(REMOVED_FROM_GAME, i(164860)),	-- Sinister Gladiator's Chain Footguards (H)
+					i(164859),	-- Sinister Gladiator's Chain Chestguard (H)
+					i(164865),	-- Sinister Gladiator's Chain Clasp (H)
+					i(166592),	-- Sinister Gladiator's Chain Coif (H)
+					i(164860),	-- Sinister Gladiator's Chain Footguards (H)
 					i(164797),	-- Sinister Gladiator's Chain Gauntlets (H)
-					un(REMOVED_FROM_GAME, i(164861)),	-- Sinister Gladiator's Chain Handguards (H)
-					un(REMOVED_FROM_GAME, i(166616)),	-- Sinister Gladiator's Chain Hauberk (H)
-					un(REMOVED_FROM_GAME, i(166600)),	-- Sinister Gladiator's Chain Headgear (H)
-					un(REMOVED_FROM_GAME, i(164862)),	-- Sinister Gladiator's Chain Headpiece (H)
+					i(164861),	-- Sinister Gladiator's Chain Handguards (H)
+					i(166616),	-- Sinister Gladiator's Chain Hauberk (H)
+					i(166600),	-- Sinister Gladiator's Chain Headgear (H)
+					i(164862),	-- Sinister Gladiator's Chain Headpiece (H)
 					i(164798),	-- Sinister Gladiator's Chain Helm (H)
 					i(164799),	-- Sinister Gladiator's Chain Leggings (H)
-					un(REMOVED_FROM_GAME, i(164863)),	-- Sinister Gladiator's Chain Legguards (H)
-					un(REMOVED_FROM_GAME, i(166624)),	-- Sinister Gladiator's Chainmail (H)
-					un(REMOVED_FROM_GAME, i(166648)),	-- Sinister Gladiator's Chain Mantle (H)
-					un(REMOVED_FROM_GAME, i(166640)),	-- Sinister Gladiator's Chain Pauldrons (H)
+					i(164863),	-- Sinister Gladiator's Chain Legguards (H)
+					i(166624),	-- Sinister Gladiator's Chainmail (H)
+					i(166648),	-- Sinister Gladiator's Chain Mantle (H)
+					i(166640),	-- Sinister Gladiator's Chain Pauldrons (H)
 					i(164796),	-- Sinister Gladiator's Chain Sabatons (H)
-					un(REMOVED_FROM_GAME, i(164864)),	-- Sinister Gladiator's Chain Shoulderguards (H)
-					un(REMOVED_FROM_GAME, i(166608)),	-- Sinister Gladiator's Chain Skullcover (H)
+					i(164864),	-- Sinister Gladiator's Chain Shoulderguards (H)
 					i(164800),	-- Sinister Gladiator's Chain Spaulders (H)
-					un(REMOVED_FROM_GAME, i(166632)),	-- Sinister Gladiator's Chain Vest (H)
 					i(164801),	-- Sinister Gladiator's Chain Waistguard (H)
-					un(REMOVED_FROM_GAME, i(164866)),	-- Sinister Gladiator's Chain Wristguards (H)
+					i(164866),	-- Sinister Gladiator's Chain Wristguards (H)
 				}),
 				n(-46,  {	-- Plate
 					i(164840),	-- Sinister Gladiator's Plate Armguards (A)
-					un(REMOVED_FROM_GAME, i(166619)),	-- Sinister Gladiator's Plate Armor (A)
-					un(REMOVED_FROM_GAME, i(166627)),	-- Sinister Gladiator's Plate Breastplate (A)
-					un(REMOVED_FROM_GAME, i(164877)),	-- Sinister Gladiator's Plate Chestguard (A)
+					i(166619),	-- Sinister Gladiator's Plate Armor (A)
+					i(166627),	-- Sinister Gladiator's Plate Breastplate (A)
+					i(164877),	-- Sinister Gladiator's Plate Chestguard (A)
 					i(164813),	-- Sinister Gladiator's Plate Chestpiece (A)
-					un(REMOVED_FROM_GAME, i(166635)),	-- Sinister Gladiator's Plate Chestplate (A)
-					un(REMOVED_FROM_GAME, i(164899)),	-- Sinister Gladiator's Plate Clasp (A)
+					i(164899),	-- Sinister Gladiator's Plate Clasp (A)
 					i(164821),	-- Sinister Gladiator's Plate Gauntlets (A)
 					i(164835),	-- Sinister Gladiator's Plate Girdle (A)
-					un(REMOVED_FROM_GAME, i(164885)),	-- Sinister Gladiator's Plate Gloves (A)
-					un(REMOVED_FROM_GAME, i(166602)),	-- Sinister Gladiator's Plate Greathelm (A)
-					un(REMOVED_FROM_GAME, i(164880)),	-- Sinister Gladiator's Plate Greaves (A)
-					un(REMOVED_FROM_GAME, i(164875)),	-- Sinister Gladiator's Plate Headcover (A)
+					i(164885),	-- Sinister Gladiator's Plate Gloves (A)
+					i(166602),	-- Sinister Gladiator's Plate Greathelm (A)
+					i(164880),	-- Sinister Gladiator's Plate Greaves (A)
+					i(164875),	-- Sinister Gladiator's Plate Headcover (A)
 					i(164811),	-- Sinister Gladiator's Plate Helm (A)
-					un(REMOVED_FROM_GAME, i(164891)),	-- Sinister Gladiator's Plate Leg Armor (A)
+					i(164891),	-- Sinister Gladiator's Plate Leg Armor (A)
 					i(164827),	-- Sinister Gladiator's Plate Legguards (A)
 					i(164832),	-- Sinister Gladiator's Plate Pauldrons (A)
-					un(REMOVED_FROM_GAME, i(166651)),	-- Sinister Gladiator's Plate Shoulderguards (A)
-					un(REMOVED_FROM_GAME, i(166659)),	-- Sinister Gladiator's Shoulderplates (A)
-					un(REMOVED_FROM_GAME, i(164896)),	-- Sinister Gladiator's Plate Shoulders (A)
-					un(REMOVED_FROM_GAME, i(166610)),	-- Sinister Gladiator's Plate Skullguard (A)
-					un(REMOVED_FROM_GAME, i(166643)),	-- Sinister Gladiator's Plate Spaulders (A)
-					un(REMOVED_FROM_GAME, i(164904)),	-- Sinister Gladiator's Plate Vambraces (A)
+					i(166651),	-- Sinister Gladiator's Plate Shoulderguards (A)
+					i(164896),	-- Sinister Gladiator's Plate Shoulders (A)
+					i(166643),	-- Sinister Gladiator's Plate Spaulders (A)
+					i(164904),	-- Sinister Gladiator's Plate Vambraces (A)
 					i(164816),	-- Sinister Gladiator's Plate Warboots (A)
-					un(REMOVED_FROM_GAME, i(166594)),	-- Sinister Gladiator's Plate Warhelm (A)
+					i(166594),	-- Sinister Gladiator's Plate Warhelm (A)
 					i(164810),	-- Sinister Gladiator's Plate Armguards (H)
-					un(REMOVED_FROM_GAME, i(166617)),	-- Sinister Gladiator's Plate Armor (H)
-					un(REMOVED_FROM_GAME, i(166625)),	-- Sinister Gladiator's Plate Breastplate (H)
-					un(REMOVED_FROM_GAME, i(164868)),	-- Sinister Gladiator's Plate Chestguard (H)
+					i(166617),	-- Sinister Gladiator's Plate Armor (H)
+					i(166625),	-- Sinister Gladiator's Plate Breastplate (H)
+					i(164868),	-- Sinister Gladiator's Plate Chestguard (H)
 					i(164804),	-- Sinister Gladiator's Plate Chestpiece (H)
-					un(REMOVED_FROM_GAME, i(166633)),	-- Sinister Gladiator's Plate Chestplate (H)
-					un(REMOVED_FROM_GAME, i(164873)),	-- Sinister Gladiator's Plate Clasp (H)
+					i(164873),	-- Sinister Gladiator's Plate Clasp (H)
 					i(164806),	-- Sinister Gladiator's Plate Gauntlets (H)
 					i(164809),	-- Sinister Gladiator's Plate Girdle (H)
-					un(REMOVED_FROM_GAME, i(164870)),	-- Sinister Gladiator's Plate Gloves (H)
-					un(REMOVED_FROM_GAME, i(166601)),	-- Sinister Gladiator's Plate Greathelm (H)
-					un(REMOVED_FROM_GAME, i(164869)),	-- Sinister Gladiator's Plate Greaves (H)
-					un(REMOVED_FROM_GAME, i(164867)),	-- Sinister Gladiator's Plate Headcover (H)
+					i(164870),	-- Sinister Gladiator's Plate Gloves (H)
+					i(166601),	-- Sinister Gladiator's Plate Greathelm (H)
+					i(164869),	-- Sinister Gladiator's Plate Greaves (H)
+					i(164867),	-- Sinister Gladiator's Plate Headcover (H)
 					i(164803),	-- Sinister Gladiator's Plate Helm (H)
-					un(REMOVED_FROM_GAME, i(164871)),	-- Sinister Gladiator's Plate Leg Armor (H)
+					i(164871),	-- Sinister Gladiator's Plate Leg Armor (H)
 					i(164807),	-- Sinister Gladiator's Plate Legguards (H)
 					i(164808),	-- Sinister Gladiator's Plate Pauldrons (H)
-					un(REMOVED_FROM_GAME, i(166649)),	-- Sinister Gladiator's Plate Shoulderguards (H)
-					un(REMOVED_FROM_GAME, i(166657)),	-- Sinister Gladiator's Shoulderplates (H)
-					un(REMOVED_FROM_GAME, i(164872)),	-- Sinister Gladiator's Plate Shoulders (H)
-					un(REMOVED_FROM_GAME, i(166609)),	-- Sinister Gladiator's Plate Skullguard (H)
-					un(REMOVED_FROM_GAME, i(166641)),	-- Sinister Gladiator's Plate Spaulders (H)
-					un(REMOVED_FROM_GAME, i(164874)),	-- Sinister Gladiator's Plate Vambraces (H)
+					i(166649),	-- Sinister Gladiator's Plate Shoulderguards (H)
+					i(164872),	-- Sinister Gladiator's Plate Shoulders (H)
+					i(166641),	-- Sinister Gladiator's Plate Spaulders (H)
+					i(164874),	-- Sinister Gladiator's Plate Vambraces (H)
 					i(164805),	-- Sinister Gladiator's Plate Warboots (H)
-					un(REMOVED_FROM_GAME, i(166593)),	-- Sinister Gladiator's Plate Warhelm (H)
+					i(166593),	-- Sinister Gladiator's Plate Warhelm (H)
 				}),
 				n(-322, {	-- Back
-					i(165051),	-- Sinister Gladiator's Cape (A)
-					i(165050),	-- Sinister Gladiator's Drape (A)
-					i(165049),	-- Sinister Gladiator's Greatcloak (A)
-					i(165048),	-- Sinister Gladiator's Shawl (A)
-					i(165047),	-- Sinister Gladiator's Cape (H)
-					i(165046),	-- Sinister Gladiator's Drape (H)
-					i(165045),	-- Sinister Gladiator's Greatcloak (H)
-					i(165044),	-- Sinister Gladiator's Shawl (H)
+					i(165051, {	-- Sinister Gladiator's Cape (A)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's Plate Ensemble.",
+					}),
+					i(165050, {	-- Sinister Gladiator's Drape (A)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's Mail Ensemble.",
+					}),
+					i(165049, {	-- Sinister Gladiator's Greatcloak (A)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's Leather Ensemble.",
+					}),
+					i(165048, {	-- Sinister Gladiator's Shawl (A)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's Cloth Ensemble.",
+					}),
+					i(165047, {	-- Sinister Gladiator's Cape (H)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's Plate Ensemble.",
+					}),
+					i(165046, {	-- Sinister Gladiator's Drape (H)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's  Mail Ensemble.",
+					}),
+					i(165045, {	-- Sinister Gladiator's Greatcloak (H)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's Leather Ensemble.",
+					}),
+					i(165044, {	-- Sinister Gladiator's Shawl (H)
+						["description"] = "This item is only obtainable via the Sinister Gladiator's Cloth Ensemble.",
+					}),
 				}),
 				n(-385, {	-- Finger
 					un(REMOVED_FROM_GAME, i(165053)),	-- Sinister Gladiator's Band
@@ -738,25 +776,23 @@ _.PVP =
 				}),
 			}),
 			un(REMOVED_FROM_GAME, i(163827, {	-- Quartermaster's Coin
-				un(REMOVED_FROM_GAME, i(164950)),	-- Warlord's Trophy Sinister Combatant
-				un(REMOVED_FROM_GAME, i(164956)),	-- Warlord's Trophy Sinister Challenger
-				un(REMOVED_FROM_GAME, i(164957)),	-- Warlord's Trophy Sinister Rival
-				un(REMOVED_FROM_GAME, i(164958)),	-- Warlord's Trophy Sinister Duelist
-				un(REMOVED_FROM_GAME, i(164959)),	-- Warlord's Trophy Sinister Elite
 				un(REMOVED_FROM_GAME, i(164951)),	-- Battleborn Sigil Sinister Combatant
 				un(REMOVED_FROM_GAME, i(164952)),	-- Battleborn Sigil Sinister Challenger
 				un(REMOVED_FROM_GAME, i(164953)),	-- Battleborn Sigil Sinister Rival
 				un(REMOVED_FROM_GAME, i(164954)),	-- Battleborn Sigil Sinister Duelist
 				un(REMOVED_FROM_GAME, i(164955)),	-- Battleborn Sigil Sinister Elite
+				un(REMOVED_FROM_GAME, i(164950)),	-- Warlord's Trophy Sinister Combatant
+				un(REMOVED_FROM_GAME, i(164956)),	-- Warlord's Trophy Sinister Challenger
+				un(REMOVED_FROM_GAME, i(164957)),	-- Warlord's Trophy Sinister Rival
+				un(REMOVED_FROM_GAME, i(164958)),	-- Warlord's Trophy Sinister Duelist
+				un(REMOVED_FROM_GAME, i(164959)),	-- Warlord's Trophy Sinister Elite
 			})),
 			filter(100, {	-- Mounts
 				i(165019, {	-- Vicious Black Warsaber (A)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(165020, {	-- Vicious Black Bonesteed (H)
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 		}),
@@ -772,7 +808,6 @@ _.PVP =
 					i(169750),	-- Notorious Aspirant's Pummeler (A)
 					i(169742),	-- Notorious Aspirant's Reprieve (A)
 					i(169735),	-- Notorious Aspirant's Shanker (A)
-					i(167522),	-- Notorious Aspirant's Shield Wall (A)
 					i(169744),	-- Notorious Aspirant's Shield Wall (A)
 					i(169752),	-- Notorious Aspirant's Slicer (A)
 					i(169734),	-- Notorious Aspirant's Stabber (A)
@@ -788,7 +823,6 @@ _.PVP =
 					i(169751),	-- Notorious Aspirant's Pummeler (H)
 					i(169743),	-- Notorious Aspirant's Reprieve (H)
 					i(169737),	-- Notorious Aspirant's Shanker (H)
-					i(167521),	-- Notorious Aspirant's Shield Wall (H)
 					i(169745),	-- Notorious Aspirant's Shield Wall (H)
 					i(169753),	-- Notorious Aspirant's Slicer (H)
 					i(169736),	-- Notorious Aspirant's Stabber (H)
@@ -805,7 +839,6 @@ _.PVP =
 					i(167511),	-- Notorious Aspirant's Silk Mantle (A)
 					i(167490),	-- Notorious Aspirant's Silk Robe (A)
 					i(167495),	-- Notorious Aspirant's Silk Treads (A)
-					i(167464),	-- Notorious Aspirant's Silk Cord (H)
 					i(167463),	-- Notorious Aspirant's Silk Cuffs (H)
 					i(167459),	-- Notorious Aspirant's Silk Gloves (H)
 					i(167460),	-- Notorious Aspirant's Silk Hood (H)
@@ -813,6 +846,7 @@ _.PVP =
 					i(167462),	-- Notorious Aspirant's Silk Mantle (H)
 					i(167457),	-- Notorious Aspirant's Silk Robe (H)
 					i(167458),	-- Notorious Aspirant's Silk Treads (H)
+					i(167464),	-- Notorious Aspirant's Silk Cord (H)
 				}),
 				n(-44,  {	-- Leather
 					i(167516),	-- Notorious Aspirant's Leather Belt (A)
@@ -869,14 +903,30 @@ _.PVP =
 					i(167483),	-- Notorious Aspirant's Plate Warboots (H)
 				}),
 				n(-322, {	-- Back
-					i(167536),	-- Notorious Aspirant's Cape (A)
-					i(167535),	-- Notorious Aspirant's Drape (A)
-					i(167534),	-- Notorious Aspirant's Greatcloak (A)
-					i(167533),	-- Notorious Aspirant's Shawl (A)
-					i(167532),	-- Notorious Aspirant's Cape (H)
-					i(167531),	-- Notorious Aspirant's Drape (H)
-					i(167530),	-- Notorious Aspirant's Greatcloak (H)
-					i(167529),	-- Notorious Aspirant's Shawl (H)
+					i(167536, {	-- Notorious Aspirant's Cape (A)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Plate Ensemble.",
+					}),
+					i(167535, {	-- Notorious Aspirant's Drape (A)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Mail Ensemble.",
+					}),
+					i(167534, {	-- Notorious Aspirant's Greatcloak (A)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Leather Ensemble.",
+					}),
+					i(167533, {	-- Notorious Aspirant's Shawl (A)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Cloth Ensemble.",
+					}),
+					i(167532, {	-- Notorious Aspirant's Cape (H)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Plate Ensemble.",
+					}),
+					i(167531, {	-- Notorious Aspirant's Drape (H)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Mail Ensemble.",
+					}),
+					i(167530, {	-- Notorious Aspirant's Greatcloak (H)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Leather Ensemble.",
+					}),
+					i(167529, {	-- Notorious Aspirant's Shawl (H)
+						["description"] = "This item is only obtainable via the Notorious Aspirant's Cloth Ensemble.",
+					}),
 				}),
 				n(-385, {	-- Finger
 					un(REMOVED_FROM_GAME, i(167523)),	-- Notorious Aspirant's Ring
@@ -892,7 +942,6 @@ _.PVP =
 			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
 					i(169720),	-- Notorious Gladiator's Bonegrinder (A)
-					i(169725),	-- Notorious Gladiator's Bonegrinder (A)
 					i(169712),	-- Notorious Gladiator's Chopper (A)
 					i(171160),	-- Notorious Gladiator's Claw (A)
 					i(169730),	-- Notorious Gladiator's Cutter (A)
@@ -909,7 +958,6 @@ _.PVP =
 					i(171155),	-- Notorious Gladiator's Staff (A)
 					i(169718),	-- Notorious Gladiator's Wand (A)
 					i(169710),	-- Notorious Gladiator's Warglaive (A)
-					i(169724),	-- Notorious Gladiator's Bonegrinder (H)
 					i(169721),	-- Notorious Gladiator's Bonegrinder (H)
 					i(169704),	-- Notorious Gladiator's Chopper (H)
 					i(171161),	-- Notorious Gladiator's Claw (H)
@@ -929,222 +977,238 @@ _.PVP =
 					i(169707),	-- Notorious Gladiator's Warglaive (H)
 				}),
 				n(-43,  {	-- Cloth
-					un(REMOVED_FROM_GAME, i(167352)),	-- Notorious Gladiator's Silk Amice (A)
-					un(REMOVED_FROM_GAME, i(167429)),	-- Notorious Gladiator's Silk Armor (A)
-					un(REMOVED_FROM_GAME, i(167358)),	-- Notorious Gladiator's Silk Bracers (A)
-					un(REMOVED_FROM_GAME, i(167406)),	-- Notorious Gladiator's Silk Cap (A)
-					un(REMOVED_FROM_GAME, i(167421)),	-- Notorious Gladiator's Silk Chestwrap (A)
+					i(167352),	-- Notorious Gladiator's Silk Amice (A)
+					i(167429),	-- Notorious Gladiator's Silk Armor (A)
+					i(167358),	-- Notorious Gladiator's Silk Bracers (A)
+					i(167406),	-- Notorious Gladiator's Silk Cap (A)
+					i(167421),	-- Notorious Gladiator's Silk Chestwrap (A)
 					i(167291),	-- Notorious Gladiator's Silk Cord (A)
-					un(REMOVED_FROM_GAME, i(167398)),	-- Notorious Gladiator's Silk Cover (A)
-					un(REMOVED_FROM_GAME, i(167343)),	-- Notorious Gladiator's Silk Cowl (A)
+					i(167398),	-- Notorious Gladiator's Silk Cover (A)
+					i(167343),	-- Notorious Gladiator's Silk Cowl (A)
 					i(167294),	-- Notorious Gladiator's Silk Cuffs (A)
-					un(REMOVED_FROM_GAME, i(167439)),	-- Notorious Gladiator's Silk Epaulets (A)
+					i(167439),	-- Notorious Gladiator's Silk Epaulets (A)
 					i(167277),	-- Notorious Gladiator's Silk Gloves (A)
-					un(REMOVED_FROM_GAME, i(167341)),	-- Notorious Gladiator's Silk Handguards (A)
-					un(REMOVED_FROM_GAME, i(167390)),	-- Notorious Gladiator's Silk Helm (A)
+					i(167341),	-- Notorious Gladiator's Silk Handguards (A)
+					i(167390),	-- Notorious Gladiator's Silk Helm (A)
 					i(167279),	-- Notorious Gladiator's Silk Hood (A)
 					i(167283),	-- Notorious Gladiator's Silk Leggings (A)
 					i(167288),	-- Notorious Gladiator's Silk Mantle (A)
-					un(REMOVED_FROM_GAME, i(167331)),	-- Notorious Gladiator's Silk Raiment (A)
+					i(167331),	-- Notorious Gladiator's Silk Raiment (A)
 					i(167267),	-- Notorious Gladiator's Silk Robe (A)
-					un(REMOVED_FROM_GAME, i(167355)),	-- Notorious Gladiator's Silk Sash (A)
-					un(REMOVED_FROM_GAME, i(167455)),	-- Notorious Gladiator's Silk Shoulderguards (A)
-					un(REMOVED_FROM_GAME, i(167447)),	-- Notorious Gladiator's Silk Shoulderpads (A)
-					un(REMOVED_FROM_GAME, i(167336)),	-- Notorious Gladiator's Silk Slippers (A)
+					i(167355),	-- Notorious Gladiator's Silk Sash (A)
+					i(167455),	-- Notorious Gladiator's Silk Shoulderguards (A)
+					i(167447),	-- Notorious Gladiator's Silk Shoulderpads (A)
+					i(167336),	-- Notorious Gladiator's Silk Slippers (A)
 					i(167272),	-- Notorious Gladiator's Silk Treads (A)
-					un(REMOVED_FROM_GAME, i(167347)),	-- Notorious Gladiator's Silk Trousers (A)
-					un(REMOVED_FROM_GAME, i(167413)),	-- Notorious Gladiator's Silk Vestments (A)
-					un(REMOVED_FROM_GAME, i(167303)),	-- Notorious Gladiator's Silk Amice (H)
-					un(REMOVED_FROM_GAME, i(167425)),	-- Notorious Gladiator's Silk Armor (H)
-					un(REMOVED_FROM_GAME, i(167304)),	-- Notorious Gladiator's Silk Bracers (H)
-					un(REMOVED_FROM_GAME, i(167401)),	-- Notorious Gladiator's Silk Cap (H)
-					un(REMOVED_FROM_GAME, i(167417)),	-- Notorious Gladiator's Silk Chestwrap (H)
+					i(167347),	-- Notorious Gladiator's Silk Trousers (A)
+					i(167413),	-- Notorious Gladiator's Silk Vestments (A)
+					i(167303),	-- Notorious Gladiator's Silk Amice (H)
+					i(167425),	-- Notorious Gladiator's Silk Armor (H)
+					i(167304),	-- Notorious Gladiator's Silk Bracers (H)
+					i(167401),	-- Notorious Gladiator's Silk Cap (H)
+					i(167417),	-- Notorious Gladiator's Silk Chestwrap (H)
 					i(167241),	-- Notorious Gladiator's Silk Cord (H)
-					un(REMOVED_FROM_GAME, i(167393)),	-- Notorious Gladiator's Silk Cover (H)
-					un(REMOVED_FROM_GAME, i(167301)),	-- Notorious Gladiator's Silk Cowl (H)
+					i(167393),	-- Notorious Gladiator's Silk Cover (H)
+					i(167301),	-- Notorious Gladiator's Silk Cowl (H)
 					i(167240),	-- Notorious Gladiator's Silk Cuffs (H)
-					un(REMOVED_FROM_GAME, i(167433)),	-- Notorious Gladiator's Silk Epaulets (H)
+					i(167433),	-- Notorious Gladiator's Silk Epaulets (H)
 					i(167236),	-- Notorious Gladiator's Silk Gloves (H)
-					un(REMOVED_FROM_GAME, i(167300)),	-- Notorious Gladiator's Silk Handguards (H)
-					un(REMOVED_FROM_GAME, i(167385)),	-- Notorious Gladiator's Silk Helm (H)
+					i(167300),	-- Notorious Gladiator's Silk Handguards (H)
+					i(167385),	-- Notorious Gladiator's Silk Helm (H)
 					i(167237),	-- Notorious Gladiator's Silk Hood (H)
 					i(167238),	-- Notorious Gladiator's Silk Leggings (H)
 					i(167239),	-- Notorious Gladiator's Silk Mantle (H)
-					un(REMOVED_FROM_GAME, i(167298)),	-- Notorious Gladiator's Silk Raiment (H)
+					i(167298),	-- Notorious Gladiator's Silk Raiment (H)
 					i(167234),	-- Notorious Gladiator's Silk Robe (H)
-					un(REMOVED_FROM_GAME, i(167305)),	-- Notorious Gladiator's Silk Sash (H)
-					un(REMOVED_FROM_GAME, i(167449)),	-- Notorious Gladiator's Silk Shoulderguards (H)
-					un(REMOVED_FROM_GAME, i(167441)),	-- Notorious Gladiator's Silk Shoulderpads (H)
-					un(REMOVED_FROM_GAME, i(167299)),	-- Notorious Gladiator's Silk Slippers (H)
+					i(167305),	-- Notorious Gladiator's Silk Sash (H)
+					i(167449),	-- Notorious Gladiator's Silk Shoulderguards (H)
+					i(167441),	-- Notorious Gladiator's Silk Shoulderpads (H)
+					i(167299),	-- Notorious Gladiator's Silk Slippers (H)
 					i(167235),	-- Notorious Gladiator's Silk Treads (H)
-					un(REMOVED_FROM_GAME, i(167302)),	-- Notorious Gladiator's Silk Trousers (H)
-					un(REMOVED_FROM_GAME, i(167409)),	-- Notorious Gladiator's Silk Vestments (H)
+					i(167302),	-- Notorious Gladiator's Silk Trousers (H)
+					i(167409),	-- Notorious Gladiator's Silk Vestments (H)
 				}),
 				n(-44,  {	-- Leather
-					un(REMOVED_FROM_GAME, i(167361)),	-- Notorious Gladiator's Leather Armwraps (A)
+					i(167361),	-- Notorious Gladiator's Leather Armwraps (A)
 					i(167293),	-- Notorious Gladiator's Leather Belt (A)
 					i(167297),	-- Notorious Gladiator's Leather Bindings (A)
 					i(167274),	-- Notorious Gladiator's Leather Boots (A)
-					un(REMOVED_FROM_GAME, i(167392)),	-- Notorious Gladiator's Leather Cap (A)
-					un(REMOVED_FROM_GAME, i(167424)),	-- Notorious Gladiator's Leather Chestguard (A)
-					un(REMOVED_FROM_GAME, i(167338)),	-- Notorious Gladiator's Leather Footguards (A)
+					i(167392),	-- Notorious Gladiator's Leather Cap (A)
+					i(167424),	-- Notorious Gladiator's Leather Chestguard (A)
+					i(167338),	-- Notorious Gladiator's Leather Footguards (A)
 					i(167275),	-- Notorious Gladiator's Leather Gloves (A)
-					un(REMOVED_FROM_GAME, i(167339)),	-- Notorious Gladiator's Leather Handguards (A)
-					un(REMOVED_FROM_GAME, i(167432)),	-- Notorious Gladiator's Leather Harness (A)
-					un(REMOVED_FROM_GAME, i(167408)),	-- Notorious Gladiator's Leather Headpiece (A)
+					i(167339),	-- Notorious Gladiator's Leather Handguards (A)
+					i(167432),	-- Notorious Gladiator's Leather Harness (A)
+					i(167408),	-- Notorious Gladiator's Leather Headpiece (A)
 					i(167281),	-- Notorious Gladiator's Leather Helm (A)
-					un(REMOVED_FROM_GAME, i(167345)),	-- Notorious Gladiator's Leather Hood (A)
-					un(REMOVED_FROM_GAME, i(167416)),	-- Notorious Gladiator's Leather Jerkin (A)
+					i(167345),	-- Notorious Gladiator's Leather Hood (A)
+					i(167416),	-- Notorious Gladiator's Leather Jerkin (A)
 					i(167285),	-- Notorious Gladiator's Leather Legguards (A)
-					un(REMOVED_FROM_GAME, i(167350)),	-- Notorious Gladiator's Leather Mantle (A)
-					un(REMOVED_FROM_GAME, i(167349)),	-- Notorious Gladiator's Leather Pants (A)
-					un(REMOVED_FROM_GAME, i(167445)),	-- Notorious Gladiator's Leather Pauldrons (A)
-					un(REMOVED_FROM_GAME, i(167437)),	-- Notorious Gladiator's Leather Shoulderguards (A)
-					un(REMOVED_FROM_GAME, i(167453)),	-- Notorious Gladiator's Leather Shoulderpads (A)
-					un(REMOVED_FROM_GAME, i(167400)),	-- Notorious Gladiator's Leather Skullguard (A)
+					i(167350),	-- Notorious Gladiator's Leather Mantle (A)
+					i(167349),	-- Notorious Gladiator's Leather Pants (A)
+					i(167445),	-- Notorious Gladiator's Leather Pauldrons (A)
+					i(167437),	-- Notorious Gladiator's Leather Shoulderguards (A)
+					i(167453),	-- Notorious Gladiator's Leather Shoulderpads (A)
+					i(167400),	-- Notorious Gladiator's Leather Skullguard (A)
 					i(167286),	-- Notorious Gladiator's Leather Spaulders (A)
 					i(167270),	-- Notorious Gladiator's Leather Tunic (A)
-					un(REMOVED_FROM_GAME, i(167334)),	-- Notorious Gladiator's Leather Vest (A)
-					un(REMOVED_FROM_GAME, i(167357)),	-- Notorious Gladiator's Leather Waistband (A)
-					un(REMOVED_FROM_GAME, i(167313)),	-- Notorious Gladiator's Leather Armwraps (H)
+					i(167334),	-- Notorious Gladiator's Leather Vest (A)
+					i(167357),	-- Notorious Gladiator's Leather Waistband (A)
+					i(167313),	-- Notorious Gladiator's Leather Armwraps (H)
 					i(167248),	-- Notorious Gladiator's Leather Belt (H)
 					i(167249),	-- Notorious Gladiator's Leather Bindings (H)
 					i(167243),	-- Notorious Gladiator's Leather Boots (H)
-					un(REMOVED_FROM_GAME, i(167386)),	-- Notorious Gladiator's Leather Cap (H)
-					un(REMOVED_FROM_GAME, i(167418)),	-- Notorious Gladiator's Leather Chestguard (H)
-					un(REMOVED_FROM_GAME, i(167307)),	-- Notorious Gladiator's Leather Footguards (H)
+					i(167386),	-- Notorious Gladiator's Leather Cap (H)
+					i(167418),	-- Notorious Gladiator's Leather Chestguard (H)
+					i(167307),	-- Notorious Gladiator's Leather Footguards (H)
 					i(167244),	-- Notorious Gladiator's Leather Gloves (H)
-					un(REMOVED_FROM_GAME, i(167308)),	-- Notorious Gladiator's Leather Handguards (H)
-					un(REMOVED_FROM_GAME, i(167426)),	-- Notorious Gladiator's Leather Harness (H)
-					un(REMOVED_FROM_GAME, i(167402)),	-- Notorious Gladiator's Leather Headpiece (H)
+					i(167308),	-- Notorious Gladiator's Leather Handguards (H)
+					i(167426),	-- Notorious Gladiator's Leather Harness (H)
+					i(167402),	-- Notorious Gladiator's Leather Headpiece (H)
 					i(167245),	-- Notorious Gladiator's Leather Helm (H)
-					un(REMOVED_FROM_GAME, i(167309)),	-- Notorious Gladiator's Leather Hood (H)
-					un(REMOVED_FROM_GAME, i(167410)),	-- Notorious Gladiator's Leather Jerkin (H)
+					i(167309),	-- Notorious Gladiator's Leather Hood (H)
+					i(167410),	-- Notorious Gladiator's Leather Jerkin (H)
 					i(167246),	-- Notorious Gladiator's Leather Legguards (H)
-					un(REMOVED_FROM_GAME, i(167311)),	-- Notorious Gladiator's Leather Mantle (H)
-					un(REMOVED_FROM_GAME, i(167310)),	-- Notorious Gladiator's Leather Pants (H)
-					un(REMOVED_FROM_GAME, i(167442)),	-- Notorious Gladiator's Leather Pauldrons (H)
-					un(REMOVED_FROM_GAME, i(167434)),	-- Notorious Gladiator's Leather Shoulderguards (H)
-					un(REMOVED_FROM_GAME, i(167450)),	-- Notorious Gladiator's Leather Shoulderpads (H)
-					un(REMOVED_FROM_GAME, i(167394)),	-- Notorious Gladiator's Leather Skullguard (H)
+					i(167311),	-- Notorious Gladiator's Leather Mantle (H)
+					i(167310),	-- Notorious Gladiator's Leather Pants (H)
+					i(167442),	-- Notorious Gladiator's Leather Pauldrons (H)
+					i(167434),	-- Notorious Gladiator's Leather Shoulderguards (H)
+					i(167450),	-- Notorious Gladiator's Leather Shoulderpads (H)
+					i(167394),	-- Notorious Gladiator's Leather Skullguard (H)
 					i(167247),	-- Notorious Gladiator's Leather Spaulders (H)
 					i(167242),	-- Notorious Gladiator's Leather Tunic (H)
-					un(REMOVED_FROM_GAME, i(167306)),	-- Notorious Gladiator's Leather Vest (H)
-					un(REMOVED_FROM_GAME, i(167312)),	-- Notorious Gladiator's Leather Waistband (H)
+					i(167306),	-- Notorious Gladiator's Leather Vest (H)
+					i(167312),	-- Notorious Gladiator's Leather Waistband (H)
 				}),
 				n(-45,  {	-- Mail
 					i(167296),	-- Notorious Gladiator's Chain Armbands (A)
 					i(167269),	-- Notorious Gladiator's Chain Armor (A)
-					un(REMOVED_FROM_GAME, i(167333)),	-- Notorious Gladiator's Chain Chestguard (A)
-					un(REMOVED_FROM_GAME, i(167356)),	-- Notorious Gladiator's Chain Clasp (A)
-					un(REMOVED_FROM_GAME, i(167391)),	-- Notorious Gladiator's Chain Coif (A)
-					un(REMOVED_FROM_GAME, i(167456)),	-- Notorious Gladiator's Chain Epaulets (A)
-					un(REMOVED_FROM_GAME, i(167337)),	-- Notorious Gladiator's Chain Footguards (A)
+					i(167333),	-- Notorious Gladiator's Chain Chestguard (A)
+					i(167356),	-- Notorious Gladiator's Chain Clasp (A)
+					i(167391),	-- Notorious Gladiator's Chain Coif (A)
+					i(167456),	-- Notorious Gladiator's Chain Epaulets (A)
+					i(167337),	-- Notorious Gladiator's Chain Footguards (A)
 					i(167278),	-- Notorious Gladiator's Chain Gauntlets (A)
-					un(REMOVED_FROM_GAME, i(167342)),	-- Notorious Gladiator's Chain Handguards (A)
-					un(REMOVED_FROM_GAME, i(167415)),	-- Notorious Gladiator's Chain Hauberk (A)
-					un(REMOVED_FROM_GAME, i(167399)),	-- Notorious Gladiator's Chain Headgear (A)
-					un(REMOVED_FROM_GAME, i(167344)),	-- Notorious Gladiator's Chain Headpiece (A)
+					i(167342),	-- Notorious Gladiator's Chain Handguards (A)
+					i(167415),	-- Notorious Gladiator's Chain Hauberk (A)
+					i(167399),	-- Notorious Gladiator's Chain Headgear (A)
+					i(167344),	-- Notorious Gladiator's Chain Headpiece (A)
 					i(167280),	-- Notorious Gladiator's Chain Helm (A)
 					i(167284),	-- Notorious Gladiator's Chain Leggings (A)
-					un(REMOVED_FROM_GAME, i(167348)),	-- Notorious Gladiator's Chain Legguards (A)
-					un(REMOVED_FROM_GAME, i(167448)),	-- Notorious Gladiator's Chain Mantle (A)
-					un(REMOVED_FROM_GAME, i(167440)),	-- Notorious Gladiator's Chain Pauldrons (A)
+					i(167348),	-- Notorious Gladiator's Chain Legguards (A)
+					i(167448),	-- Notorious Gladiator's Chain Mantle (A)
+					i(167440),	-- Notorious Gladiator's Chain Pauldrons (A)
 					i(167273),	-- Notorious Gladiator's Chain Sabatons (A)
-					un(REMOVED_FROM_GAME, i(167353)),	-- Notorious Gladiator's Chain Shoulderguards (A)
-					un(REMOVED_FROM_GAME, i(167407)),	-- Notorious Gladiator's Chain Skullcover (A)
+					i(167353),	-- Notorious Gladiator's Chain Shoulderguards (A)
+					i(167407),	-- Notorious Gladiator's Chain Skullcover (A)
 					i(167289),	-- Notorious Gladiator's Chain Spaulders (A)
-					un(REMOVED_FROM_GAME, i(167431)),	-- Notorious Gladiator's Chain Vest (A)
+					i(167431),	-- Notorious Gladiator's Chain Vest (A)
 					i(167292),	-- Notorious Gladiator's Chain Waistguard (A)
-					un(REMOVED_FROM_GAME, i(167360)),	-- Notorious Gladiator's Chain Wristguards (A)
-					un(REMOVED_FROM_GAME, i(167423)),	-- Notorious Gladiator's Chainmail (A)
+					i(167360),	-- Notorious Gladiator's Chain Wristguards (A)
+					i(167423),	-- Notorious Gladiator's Chainmail (A)
 					i(167257),	-- Notorious Gladiator's Chain Armbands (H)
 					i(167250),	-- Notorious Gladiator's Chain Armor (H)
-					un(REMOVED_FROM_GAME, i(167314)),	-- Notorious Gladiator's Chain Chestguard (H)
-					un(REMOVED_FROM_GAME, i(167320)),	-- Notorious Gladiator's Chain Clasp (H)
-					un(REMOVED_FROM_GAME, i(167387)),	-- Notorious Gladiator's Chain Coif (H)
-					un(REMOVED_FROM_GAME, i(167451)),	-- Notorious Gladiator's Chain Epaulets (H)
-					un(REMOVED_FROM_GAME, i(167315)),	-- Notorious Gladiator's Chain Footguards (H)
+					i(167314),	-- Notorious Gladiator's Chain Chestguard (H)
+					i(167320),	-- Notorious Gladiator's Chain Clasp (H)
+					i(167387),	-- Notorious Gladiator's Chain Coif (H)
+					i(167451),	-- Notorious Gladiator's Chain Epaulets (H)
+					i(167315),	-- Notorious Gladiator's Chain Footguards (H)
 					i(167252),	-- Notorious Gladiator's Chain Gauntlets (H)
-					un(REMOVED_FROM_GAME, i(167316)),	-- Notorious Gladiator's Chain Handguards (H)
-					un(REMOVED_FROM_GAME, i(167411)),	-- Notorious Gladiator's Chain Hauberk (H)
-					un(REMOVED_FROM_GAME, i(167395)),	-- Notorious Gladiator's Chain Headgear (H)
-					un(REMOVED_FROM_GAME, i(167317)),	-- Notorious Gladiator's Chain Headpiece (H)
+					i(167316),	-- Notorious Gladiator's Chain Handguards (H)
+					i(167411),	-- Notorious Gladiator's Chain Hauberk (H)
+					i(167395),	-- Notorious Gladiator's Chain Headgear (H)
+					i(167317),	-- Notorious Gladiator's Chain Headpiece (H)
 					i(167253),	-- Notorious Gladiator's Chain Helm (H)
 					i(167254),	-- Notorious Gladiator's Chain Leggings (H)
-					un(REMOVED_FROM_GAME, i(167318)),	-- Notorious Gladiator's Chain Legguards (H)
-					un(REMOVED_FROM_GAME, i(167443)),	-- Notorious Gladiator's Chain Mantle (H)
-					un(REMOVED_FROM_GAME, i(167435)),	-- Notorious Gladiator's Chain Pauldrons (H)
+					i(167318),	-- Notorious Gladiator's Chain Legguards (H)
+					i(167443),	-- Notorious Gladiator's Chain Mantle (H)
+					i(167435),	-- Notorious Gladiator's Chain Pauldrons (H)
 					i(167251),	-- Notorious Gladiator's Chain Sabatons (H)
-					un(REMOVED_FROM_GAME, i(167319)),	-- Notorious Gladiator's Chain Shoulderguards (H)
-					un(REMOVED_FROM_GAME, i(167403)),	-- Notorious Gladiator's Chain Skullcover (H)
+					i(167319),	-- Notorious Gladiator's Chain Shoulderguards (H)
+					i(167403),	-- Notorious Gladiator's Chain Skullcover (H)
 					i(167255),	-- Notorious Gladiator's Chain Spaulders (H)
-					un(REMOVED_FROM_GAME, i(167427)),	-- Notorious Gladiator's Chain Vest (H)
+					i(167427),	-- Notorious Gladiator's Chain Vest (H)
 					i(167256),	-- Notorious Gladiator's Chain Waistguard (H)
-					un(REMOVED_FROM_GAME, i(167321)),	-- Notorious Gladiator's Chain Wristguards (H)
-					un(REMOVED_FROM_GAME, i(167419)),	-- Notorious Gladiator's Chainmail (H)
+					i(167321),	-- Notorious Gladiator's Chain Wristguards (H)
+					i(167419),	-- Notorious Gladiator's Chainmail (H)
 				}),
 				n(-46,  {	-- Plate
 					i(167295),	-- Notorious Gladiator's Plate Armguards (A)
-					un(REMOVED_FROM_GAME, i(167414)),	-- Notorious Gladiator's Plate Armor (A)
-					un(REMOVED_FROM_GAME, i(167422)),	-- Notorious Gladiator's Plate Breastplate (A)
-					un(REMOVED_FROM_GAME, i(167332)),	-- Notorious Gladiator's Plate Chestguard (A)
+					i(167414),	-- Notorious Gladiator's Plate Armor (A)
+					i(167422),	-- Notorious Gladiator's Plate Breastplate (A)
+					i(167332),	-- Notorious Gladiator's Plate Chestguard (A)
 					i(167268),	-- Notorious Gladiator's Plate Chestpiece (A)
-					un(REMOVED_FROM_GAME, i(167430)),	-- Notorious Gladiator's Plate Chestplate (A)
-					un(REMOVED_FROM_GAME, i(167354)),	-- Notorious Gladiator's Plate Clasp (A)
+					i(167430),	-- Notorious Gladiator's Plate Chestplate (A)
+					i(167354),	-- Notorious Gladiator's Plate Clasp (A)
 					i(167276),	-- Notorious Gladiator's Plate Gauntlets (A)
 					i(167290),	-- Notorious Gladiator's Plate Girdle (A)
-					un(REMOVED_FROM_GAME, i(167340)),	-- Notorious Gladiator's Plate Gloves (A)
-					un(REMOVED_FROM_GAME, i(167397)),	-- Notorious Gladiator's Plate Greathelm (A)
-					un(REMOVED_FROM_GAME, i(167335)),	-- Notorious Gladiator's Plate Greaves (A)
-					un(REMOVED_FROM_GAME, i(167330)),	-- Notorious Gladiator's Plate Headcover (A)
+					i(167340),	-- Notorious Gladiator's Plate Gloves (A)
+					i(167397),	-- Notorious Gladiator's Plate Greathelm (A)
+					i(167335),	-- Notorious Gladiator's Plate Greaves (A)
+					i(167330),	-- Notorious Gladiator's Plate Headcover (A)
 					i(167266),	-- Notorious Gladiator's Plate Helm (A)
-					un(REMOVED_FROM_GAME, i(167346)),	-- Notorious Gladiator's Plate Leg Armor (A)
+					i(167346),	-- Notorious Gladiator's Plate Leg Armor (A)
 					i(167282),	-- Notorious Gladiator's Plate Legguards (A)
 					i(167287),	-- Notorious Gladiator's Plate Pauldrons (A)
-					un(REMOVED_FROM_GAME, i(167446)),	-- Notorious Gladiator's Plate Shoulderguards (A)
-					un(REMOVED_FROM_GAME, i(167351)),	-- Notorious Gladiator's Plate Shoulders (A)
-					un(REMOVED_FROM_GAME, i(167405)),	-- Notorious Gladiator's Plate Skullguard (A)
-					un(REMOVED_FROM_GAME, i(167438)),	-- Notorious Gladiator's Plate Spaulders (A)
-					un(REMOVED_FROM_GAME, i(167359)),	-- Notorious Gladiator's Plate Vambraces (A)
+					i(167446),	-- Notorious Gladiator's Plate Shoulderguards (A)
+					i(167351),	-- Notorious Gladiator's Plate Shoulders (A)
+					i(167405),	-- Notorious Gladiator's Plate Skullguard (A)
+					i(167438),	-- Notorious Gladiator's Plate Spaulders (A)
+					i(167359),	-- Notorious Gladiator's Plate Vambraces (A)
 					i(167271),	-- Notorious Gladiator's Plate Warboots (A)
-					un(REMOVED_FROM_GAME, i(167389)),	-- Notorious Gladiator's Plate Warhelm (A)
-					un(REMOVED_FROM_GAME, i(167454)),	-- Notorious Gladiator's Shoulderplates (A)
+					i(167389),	-- Notorious Gladiator's Plate Warhelm (A)
+					i(167454),	-- Notorious Gladiator's Shoulderplates (A)
 					i(167265),	-- Notorious Gladiator's Plate Armguards (H)
-					un(REMOVED_FROM_GAME, i(167412)),	-- Notorious Gladiator's Plate Armor (H)
-					un(REMOVED_FROM_GAME, i(167420)),	-- Notorious Gladiator's Plate Breastplate (H)
-					un(REMOVED_FROM_GAME, i(167323)),	-- Notorious Gladiator's Plate Chestguard (H)
+					i(167412),	-- Notorious Gladiator's Plate Armor (H)
+					i(167420),	-- Notorious Gladiator's Plate Breastplate (H)
+					i(167323),	-- Notorious Gladiator's Plate Chestguard (H)
 					i(167259),	-- Notorious Gladiator's Plate Chestpiece (H)
-					un(REMOVED_FROM_GAME, i(167428)),	-- Notorious Gladiator's Plate Chestplate (H)
-					un(REMOVED_FROM_GAME, i(167328)),	-- Notorious Gladiator's Plate Clasp (H)
+					i(167428),	-- Notorious Gladiator's Plate Chestplate (H)
+					i(167328),	-- Notorious Gladiator's Plate Clasp (H)
 					i(167261),	-- Notorious Gladiator's Plate Gauntlets (H)
 					i(167264),	-- Notorious Gladiator's Plate Girdle (H)
-					un(REMOVED_FROM_GAME, i(167325)),	-- Notorious Gladiator's Plate Gloves (H)
-					un(REMOVED_FROM_GAME, i(167396)),	-- Notorious Gladiator's Plate Greathelm (H)
-					un(REMOVED_FROM_GAME, i(167324)),	-- Notorious Gladiator's Plate Greaves (H)
-					un(REMOVED_FROM_GAME, i(167322)),	-- Notorious Gladiator's Plate Headcover (H)
+					i(167325),	-- Notorious Gladiator's Plate Gloves (H)
+					i(167396),	-- Notorious Gladiator's Plate Greathelm (H)
+					i(167324),	-- Notorious Gladiator's Plate Greaves (H)
+					i(167322),	-- Notorious Gladiator's Plate Headcover (H)
 					i(167258),	-- Notorious Gladiator's Plate Helm (H)
-					un(REMOVED_FROM_GAME, i(167326)),	-- Notorious Gladiator's Plate Leg Armor (H)
+					i(167326),	-- Notorious Gladiator's Plate Leg Armor (H)
 					i(167262),	-- Notorious Gladiator's Plate Legguards (H)
 					i(167263),	-- Notorious Gladiator's Plate Pauldrons (H)
-					un(REMOVED_FROM_GAME, i(167444)),	-- Notorious Gladiator's Plate Shoulderguards (H)
-					un(REMOVED_FROM_GAME, i(167327)),	-- Notorious Gladiator's Plate Shoulders (H)
-					un(REMOVED_FROM_GAME, i(167404)),	-- Notorious Gladiator's Plate Skullguard (H)
-					un(REMOVED_FROM_GAME, i(167436)),	-- Notorious Gladiator's Plate Spaulders (H)
-					un(REMOVED_FROM_GAME, i(167329)),	-- Notorious Gladiator's Plate Vambraces (H)
+					i(167444),	-- Notorious Gladiator's Plate Shoulderguards (H)
+					i(167327),	-- Notorious Gladiator's Plate Shoulders (H)
+					i(167404),	-- Notorious Gladiator's Plate Skullguard (H)
+					i(167436),	-- Notorious Gladiator's Plate Spaulders (H)
+					i(167329),	-- Notorious Gladiator's Plate Vambraces (H)
 					i(167260),	-- Notorious Gladiator's Plate Warboots (H)
-					un(REMOVED_FROM_GAME, i(167388)),	-- Notorious Gladiator's Plate Warhelm (H)
-					un(REMOVED_FROM_GAME, i(167452)),	-- Notorious Gladiator's Shoulderplates (H)
+					i(167388),	-- Notorious Gladiator's Plate Warhelm (H)
+					i(167452),	-- Notorious Gladiator's Shoulderplates (H)
 				}),
 				n(-322, {	-- Back
-					i(167373),	-- Notorious Gladiator's Cape (A)
-					i(167372),	-- Notorious Gladiator's Drape (A)
-					i(167370),	-- Notorious Gladiator's Shawl (A)
-					i(167371),	-- Notorious Gladiator's Greatcloak (A)
-					i(167369),	-- Notorious Gladiator's Cape (H)
-					i(167368),	-- Notorious Gladiator's Drape (H)
-					i(167366),	-- Notorious Gladiator's Shawl (H)
-					i(167367),	-- Notorious Gladiator's Greatcloak (H)
+					i(167373, {	-- Notorious Gladiator's Cape (A)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Plate Ensemble.",
+					}),
+					i(167372, {	-- Notorious Gladiator's Drape (A)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Mail Ensemble.",
+					}),
+					i(167370, {	-- Notorious Gladiator's Shawl (A)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Cloth Ensemble.",
+					}),
+					i(167371, {	-- Notorious Gladiator's Greatcloak (A)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Leather Ensemble.",
+					}),
+					i(167369, {	-- Notorious Gladiator's Cape (H)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Plate Ensemble.",
+					}),
+					i(167368, {	-- Notorious Gladiator's Drape (H)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Mail Ensemble.",
+					}),
+					i(167366, {	-- Notorious Gladiator's Shawl (H)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Cloth Ensemble.",
+					}),
+					i(167367, {	-- Notorious Gladiator's Greatcloak (H)
+						["description"] = "This item is only obtainable via the Notorious Gladiator's Leather Ensemble.",
+					}),
 				}),
 				n(-385, {	-- Finger
 					un(REMOVED_FROM_GAME, i(167375)),	-- Notorious Gladiator's Band
@@ -1175,11 +1239,9 @@ _.PVP =
 			filter(100, {	-- Mounts
 				i(163122, {	-- Vicious War Basilisk (A)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(163121, {	-- Vicious War Basilisk (H)
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 		}),
@@ -1363,9 +1425,7 @@ _.PVP =
 				}),
 				n(-43, {	-- Cloth
 					i(172641),	-- Corrupted Gladiator's Silk Amice (A)
-					i(172718),	-- Corrupted Gladiator's Silk Armor (A)
 					i(172647),	-- Corrupted Gladiator's Silk Bracers (A)
-					i(172695),	-- Corrupted Gladiator's Silk Cap (A)
 					i(172710),	-- Corrupted Gladiator's Silk Chestwrap (A)
 					i(172580),	-- Corrupted Gladiator's Silk Cord (A)
 					i(172687),	-- Corrupted Gladiator's Silk Cover (A)
@@ -1381,16 +1441,13 @@ _.PVP =
 					i(172620),	-- Corrupted Gladiator's Silk Raiment (A)
 					i(172556),	-- Corrupted Gladiator's Silk Robe (A)
 					i(172644),	-- Corrupted Gladiator's Silk Sash (A)
-					i(172744),	-- Corrupted Gladiator's Silk Shoulderguards (A)
 					i(172736),	-- Corrupted Gladiator's Silk Shoulderpads (A)
 					i(172625),	-- Corrupted Gladiator's Silk Slippers (A)
 					i(172561),	-- Corrupted Gladiator's Silk Treads (A)
 					i(172636),	-- Corrupted Gladiator's Silk Trousers (A)
 					i(172702),	-- Corrupted Gladiator's Silk Vestments (A)
 					i(172592),	-- Corrupted Gladiator's Silk Amice (H)
-					i(172714),	-- Corrupted Gladiator's Silk Armor (H)
 					i(172593),	-- Corrupted Gladiator's Silk Bracers (H)
-					i(172690),	-- Corrupted Gladiator's Silk Cap (H)
 					i(172706),	-- Corrupted Gladiator's Silk Chestwrap (H)
 					i(172530),	-- Corrupted Gladiator's Silk Cord (H)
 					i(172682),	-- Corrupted Gladiator's Silk Cover (H)
@@ -1406,7 +1463,6 @@ _.PVP =
 					i(172587),	-- Corrupted Gladiator's Silk Raiment (H)
 					i(172523),	-- Corrupted Gladiator's Silk Robe (H)
 					i(172594),	-- Corrupted Gladiator's Silk Sash (H)
-					i(172738),	-- Corrupted Gladiator's Silk Shoulderguards (H)
 					i(172730),	-- Corrupted Gladiator's Silk Shoulderpads (H)
 					i(172588),	-- Corrupted Gladiator's Silk Slippers (H)
 					i(172524),	-- Corrupted Gladiator's Silk Treads (H)
@@ -1423,8 +1479,6 @@ _.PVP =
 					i(172627),	-- Corrupted Gladiator's Leather Footguards (A)
 					i(172564),	-- Corrupted Gladiator's Leather Gloves (A)
 					i(172628),	-- Corrupted Gladiator's Leather Handguards (A)
-					i(172721),	-- Corrupted Gladiator's Leather Harness (A)
-					i(172697),	-- Corrupted Gladiator's Leather Headpiece (A)
 					i(172570),	-- Corrupted Gladiator's Leather Helm (A)
 					i(172634),	-- Corrupted Gladiator's Leather Hood (A)
 					i(172705),	-- Corrupted Gladiator's Leather Jerkin (A)
@@ -1433,7 +1487,6 @@ _.PVP =
 					i(172638),	-- Corrupted Gladiator's Leather Pants (A)
 					i(172734),	-- Corrupted Gladiator's Leather Pauldrons (A)
 					i(172726),	-- Corrupted Gladiator's Leather Shoulderguards (A)
-					i(172742),	-- Corrupted Gladiator's Leather Shoulderpads (A)
 					i(172689),	-- Corrupted Gladiator's Leather Skullguard (A)
 					i(172575),	-- Corrupted Gladiator's Leather Spaulders (A)
 					i(172559),	-- Corrupted Gladiator's Leather Tunic (A)
@@ -1448,8 +1501,6 @@ _.PVP =
 					i(172596),	-- Corrupted Gladiator's Leather Footguards (H)
 					i(172533),	-- Corrupted Gladiator's Leather Gloves (H)
 					i(172597),	-- Corrupted Gladiator's Leather Handguards (H)
-					i(172715),	-- Corrupted Gladiator's Leather Harness (H)
-					i(172691),	-- Corrupted Gladiator's Leather Headpiece (H)
 					i(172534),	-- Corrupted Gladiator's Leather Helm (H)
 					i(172598),	-- Corrupted Gladiator's Leather Hood (H)
 					i(172699),	-- Corrupted Gladiator's Leather Jerkin (H)
@@ -1458,7 +1509,6 @@ _.PVP =
 					i(172599),	-- Corrupted Gladiator's Leather Pants (H)
 					i(172731),	-- Corrupted Gladiator's Leather Pauldrons (H)
 					i(172723),	-- Corrupted Gladiator's Leather Shoulderguards (H)
-					i(172739),	-- Corrupted Gladiator's Leather Shoulderpads (H)
 					i(172683),	-- Corrupted Gladiator's Leather Skullguard (H)
 					i(172536),	-- Corrupted Gladiator's Leather Spaulders (H)
 					i(172531),	-- Corrupted Gladiator's Leather Tunic (H)
@@ -1471,7 +1521,6 @@ _.PVP =
 					i(172622),	-- Corrupted Gladiator's Chain Chestguard (A)
 					i(172645),	-- Corrupted Gladiator's Chain Clasp (A)
 					i(172680),	-- Corrupted Gladiator's Chain Coif (A)
-					i(172745),	-- Corrupted Gladiator's Chain Epaulets (A)
 					i(172626),	-- Corrupted Gladiator's Chain Footguards (A)
 					i(172567),	-- Corrupted Gladiator's Chain Gauntlets (A)
 					i(172631),	-- Corrupted Gladiator's Chain Handguards (A)
@@ -1485,9 +1534,7 @@ _.PVP =
 					i(172729),	-- Corrupted Gladiator's Chain Pauldrons (A)
 					i(172562),	-- Corrupted Gladiator's Chain Sabatons (A)
 					i(172642),	-- Corrupted Gladiator's Chain Shoulderguards (A)
-					i(172696),	-- Corrupted Gladiator's Chain Skullcover (A)
 					i(172578),	-- Corrupted Gladiator's Chain Spaulders (A)
-					i(172720),	-- Corrupted Gladiator's Chain Vest (A)
 					i(172581),	-- Corrupted Gladiator's Chain Waistguard (A)
 					i(172649),	-- Corrupted Gladiator's Chain Wristguards (A)
 					i(172712),	-- Corrupted Gladiator's Chainmail (A)
@@ -1496,7 +1543,6 @@ _.PVP =
 					i(172603),	-- Corrupted Gladiator's Chain Chestguard (H)
 					i(172609),	-- Corrupted Gladiator's Chain Clasp (H)
 					i(172676),	-- Corrupted Gladiator's Chain Coif (H)
-					i(172740),	-- Corrupted Gladiator's Chain Epaulets (H)
 					i(172604),	-- Corrupted Gladiator's Chain Footguards (H)
 					i(172541),	-- Corrupted Gladiator's Chain Gauntlets (H)
 					i(172605),	-- Corrupted Gladiator's Chain Handguards (H)
@@ -1510,9 +1556,7 @@ _.PVP =
 					i(172724),	-- Corrupted Gladiator's Chain Pauldrons (H)
 					i(172540),	-- Corrupted Gladiator's Chain Sabatons (H)
 					i(172608),	-- Corrupted Gladiator's Chain Shoulderguards (H)
-					i(172692),	-- Corrupted Gladiator's Chain Skullcover (H)
 					i(172544),	-- Corrupted Gladiator's Chain Spaulders (H)
-					i(172716),	-- Corrupted Gladiator's Chain Vest (H)
 					i(172545),	-- Corrupted Gladiator's Chain Waistguard (H)
 					i(172610),	-- Corrupted Gladiator's Chain Wristguards (H)
 					i(172708),	-- Corrupted Gladiator's Chainmail (H)
@@ -1523,7 +1567,6 @@ _.PVP =
 					i(172711),	-- Corrupted Gladiator's Plate Breastplate (A)
 					i(172621),	-- Corrupted Gladiator's Plate Chestguard (A)
 					i(172557),	-- Corrupted Gladiator's Plate Chestpiece (A)
-					i(172719),	-- Corrupted Gladiator's Plate Chestplate (A)
 					i(172643),	-- Corrupted Gladiator's Plate Clasp (A)
 					i(172565),	-- Corrupted Gladiator's Plate Gauntlets (A)
 					i(172579),	-- Corrupted Gladiator's Plate Girdle (A)
@@ -1537,18 +1580,15 @@ _.PVP =
 					i(172576),	-- Corrupted Gladiator's Plate Pauldrons (A)
 					i(172735),	-- Corrupted Gladiator's Plate Shoulderguards (A)
 					i(172640),	-- Corrupted Gladiator's Plate Shoulders (A)
-					i(172694),	-- Corrupted Gladiator's Plate Skullguard (A)
 					i(172727),	-- Corrupted Gladiator's Plate Spaulders (A)
 					i(172648),	-- Corrupted Gladiator's Plate Vambraces (A)
 					i(172560),	-- Corrupted Gladiator's Plate Warboots (A)
 					i(172678),	-- Corrupted Gladiator's Plate Warhelm (A)
-					i(172743),	-- Corrupted Gladiator's Shoulderplates (A)
 					i(172554),	-- Corrupted Gladiator's Plate Armguards (H)
 					i(172701),	-- Corrupted Gladiator's Plate Armor (H)
 					i(172709),	-- Corrupted Gladiator's Plate Breastplate (H)
 					i(172612),	-- Corrupted Gladiator's Plate Chestguard (H)
 					i(172548),	-- Corrupted Gladiator's Plate Chestpiece (H)
-					i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
 					i(172617),	-- Corrupted Gladiator's Plate Clasp (H)
 					i(172550),	-- Corrupted Gladiator's Plate Gauntlets (H)
 					i(172553),	-- Corrupted Gladiator's Plate Girdle (H)
@@ -1562,12 +1602,10 @@ _.PVP =
 					i(172552),	-- Corrupted Gladiator's Plate Pauldrons (H)
 					i(172733),	-- Corrupted Gladiator's Plate Shoulderguards (H)
 					i(172616),	-- Corrupted Gladiator's Plate Shoulders (H)
-					i(172693),	-- Corrupted Gladiator's Plate Skullguard (H)
 					i(172725),	-- Corrupted Gladiator's Plate Spaulders (H)
 					i(172618),	-- Corrupted Gladiator's Plate Vambraces (H)
 					i(172549),	-- Corrupted Gladiator's Plate Warboots (H)
 					i(172677),	-- Corrupted Gladiator's Plate Warhelm (H)
-					i(172741),	-- Corrupted Gladiator's Shoulderplates (H)
 				}),
 				-- Only via the Duelist Achievement obtainable.
 				--[[n(-322, {	-- Back
@@ -1590,18 +1628,18 @@ _.PVP =
 					i(174472),	-- Corrupted Gladiator's Spite
 				}),
 			}),
-			i(172519, {	-- Quartermaster's Note
-				i(172890),	-- Battleborn Sigil Corrupted Combatant
-				i(172891),	-- Battleborn Sigil Corrupted Challenger
-				i(172892),	-- Battleborn Sigil Corrupted Rival
-				i(172893),	-- Battleborn Sigil Corrupted Duelist
-				i(172894),	-- Battleborn Sigil Corrupted Elite
-				i(172895),	-- Warlord's Trophy Corrupted Combatant
-				i(172896),	-- Warlord's Trophy Corrupted Challenger
-				i(172897),	-- Warlord's Trophy Corrupted Rival
-				i(172898),	-- Warlord's Trophy Corrupted Duelist
-				i(172899),	-- Warlord's Trophy Corrupted Elite
-			}),
+			un(REMOVED_FROM_GAME, i(172519, {	-- Quartermaster's Note
+				un(REMOVED_FROM_GAME, i(172890)),	-- Battleborn Sigil Corrupted Combatant
+				un(REMOVED_FROM_GAME, i(172891)),	-- Battleborn Sigil Corrupted Challenger
+				un(REMOVED_FROM_GAME, i(172892)),	-- Battleborn Sigil Corrupted Rival
+				un(REMOVED_FROM_GAME, i(172893)),	-- Battleborn Sigil Corrupted Duelist
+				un(REMOVED_FROM_GAME, i(172894)),	-- Battleborn Sigil Corrupted Elite
+				un(REMOVED_FROM_GAME, i(172895)),	-- Warlord's Trophy Corrupted Combatant
+				un(REMOVED_FROM_GAME, i(172896)),	-- Warlord's Trophy Corrupted Challenger
+				un(REMOVED_FROM_GAME, i(172897)),	-- Warlord's Trophy Corrupted Rival
+				un(REMOVED_FROM_GAME, i(172898)),	-- Warlord's Trophy Corrupted Duelist
+				un(REMOVED_FROM_GAME, i(172899)),	-- Warlord's Trophy Corrupted Elite
+			})),
 			filter(100, {	-- Mounts
 				i(173714, {	-- Vicious White Warsaber (A)
 					["races"] = ALLIANCE_ONLY,
@@ -1611,6 +1649,199 @@ _.PVP =
 				}),
 			}),
 		}),
-		i(163826),	-- Raider's Supply Cache
-	}),
+	})),
 };
+
+-- The items never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
+			n(-163, {	-- Armor
+				n(-43, {	-- Cloth
+					i(166907),	-- Dread Gladiator's Silk Robe
+					i(166908),	-- Dread Gladiator's Silk Treads
+					i(166909),	-- Dread Gladiator's Silk Gloves
+					i(166910),	-- Dread Gladiator's Silk Hood
+					i(166911),	-- Dread Gladiator's Silk Leggings
+					i(166912),	-- Dread Gladiator's Silk Mantle
+					i(166913),	-- Dread Gladiator's Silk Cord
+					i(166914),	-- Dread Gladiator's Silk Cuffs
+					i(166938),	-- Dread Gladiator's Silk Robe
+					i(166939),	-- Dread Gladiator's Silk Treads
+					i(166940),	-- Dread Gladiator's Silk Gloves
+					i(166941),	-- Dread Gladiator's Silk Hood
+					i(166942),	-- Dread Gladiator's Silk Leggings
+					i(166943),	-- Dread Gladiator's Silk Mantle
+					i(166944),	-- Dread Gladiator's Silk Cord
+					i(166945),	-- Dread Gladiator's Silk Cuffs
+				}),
+				n(-44, {	-- Leather
+					i(166946),	-- Dread Gladiator's Leather Tunic
+					i(166947),	-- Dread Gladiator's Leather Boots
+					i(166948),	-- Dread Gladiator's Leather Gloves
+					i(166949),	-- Dread Gladiator's Leather Helm
+					i(166950),	-- Dread Gladiator's Leather Legguards
+					i(166951),	-- Dread Gladiator's Leather Spaulders
+					i(166952),	-- Dread Gladiator's Leather Belt
+					i(166953),	-- Dread Gladiator's Leather Bindings
+					i(166915),	-- Dread Gladiator's Leather Tunic
+					i(166916),	-- Dread Gladiator's Leather Boots
+					i(166917),	-- Dread Gladiator's Leather Gloves
+					i(166918),	-- Dread Gladiator's Leather Helm
+					i(166919),	-- Dread Gladiator's Leather Legguards
+					i(166920),	-- Dread Gladiator's Leather Spaulders
+					i(166921),	-- Dread Gladiator's Leather Belt
+					i(166922),	-- Dread Gladiator's Leather Bindings
+				}),
+				n(-45, {	-- Mail
+					i(166954),	-- Dread Gladiator's Chain Armor
+					i(166955),	-- Dread Gladiator's Chain Sabatons
+					i(166956),	-- Dread Gladiator's Chain Gauntlets
+					i(166957),	-- Dread Gladiator's Chain Helm
+					i(166958),	-- Dread Gladiator's Chain Leggings
+					i(166959),	-- Dread Gladiator's Chain Spaulders
+					i(166960),	-- Dread Gladiator's Chain Waistguard
+					i(166961),	-- Dread Gladiator's Chain Armbands
+					i(166923),	-- Dread Gladiator's Chain Armor
+					i(166924),	-- Dread Gladiator's Chain Sabatons
+					i(166925),	-- Dread Gladiator's Chain Gauntlets
+					i(166926),	-- Dread Gladiator's Chain Helm
+					i(166927),	-- Dread Gladiator's Chain Leggings
+					i(166928),	-- Dread Gladiator's Chain Spaulders
+					i(166929),	-- Dread Gladiator's Chain Waistguard
+					i(166930),	-- Dread Gladiator's Chain Armbands
+				}),
+				n(-46, {	-- Plate
+					i(166906),	-- Dread Gladiator's Plate Pauldrons
+					i(166931),	-- Dread Gladiator's Plate Chestpiece
+					i(166932),	-- Dread Gladiator's Plate Warboots
+					i(166933),	-- Dread Gladiator's Plate Gauntlets
+					i(166934),	-- Dread Gladiator's Plate Helm
+					i(166935),	-- Dread Gladiator's Plate Legguards
+					i(166936),	-- Dread Gladiator's Plate Girdle
+					i(166937),	-- Dread Gladiator's Plate Armguards
+					i(166962),	-- Dread Gladiator's Plate Chestpiece
+					i(166963),	-- Dread Gladiator's Plate Warboots
+					i(166964),	-- Dread Gladiator's Plate Gauntlets
+					i(166965),	-- Dread Gladiator's Plate Helm
+					i(166966),	-- Dread Gladiator's Plate Legguards
+					i(166967),	-- Dread Gladiator's Plate Pauldrons
+					i(166968),	-- Dread Gladiator's Plate Girdle
+					i(166969),	-- Dread Gladiator's Plate Armguards
+				}),
+			}),
+			n(-319, {	-- Weapons
+				i(159894),	-- Honorable Combatant's Striker
+				i(159895),	-- Honorable Combatant's Cestus
+				i(161973),	-- Honorable Combatant's Striker
+				i(161974),	-- Honorable Combatant's Cestus
+				i(159941),	-- Honorable Combatant's Inked Vessel
+				i(161937),	-- Honorable Combatant's Inked Vessel
+				i(159923),	-- Honorable Combatant's Salutary Scepter
+				i(161929),	-- Honorable Combatant's Salutary Scepter
+			}),
+		}),
+		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
+			n(-319, {	-- Weapons
+				i(165036),	-- Sinister Gladiator's Halberd (A)
+				i(165201),	-- Sinister Aspirant's Halberd (A)
+			}),
+			n(-163, {	-- Armor
+				n(-43, {	-- Cloth
+					i(166634),	-- Sinister Gladiator's Silk Armor (A)
+					i(166660),	-- Sinister Gladiator's Silk Shoulderguards (A)
+					i(166611),	-- Sinister Gladiator's Silk Cap (A)
+					i(166630),	-- Sinister Gladiator's Silk Armor (H)
+					i(166654),	-- Sinister Gladiator's Silk Shoulderguards (H)
+					i(166606),	-- Sinister Gladiator's Silk Cap (H)
+				}),
+				n(-44, {	-- Leather
+					i(166637),	-- Sinister Gladiator's Leather Harness (A)
+					i(166613),	-- Sinister Gladiator's Leather Headpiece (A)
+					i(166658),	-- Sinister Gladiator's Leather Shoulderpads (A)
+					i(166631),	-- Sinister Gladiator's Leather Harness (H)
+					i(166607),	-- Sinister Gladiator's Leather Headpiece (H)
+					i(166655),	-- Sinister Gladiator's Leather Shoulderpads (H)
+				}),
+				n(-45, {	-- Mail
+					i(166661),	-- Sinister Gladiator's Chain Epaulets (A)
+					i(166612),	-- Sinister Gladiator's Chain Skullcover (A)
+					i(166636),	-- Sinister Gladiator's Chain Vest (A)
+					i(166632),	-- Sinister Gladiator's Chain Vest (H)
+					i(166608),	-- Sinister Gladiator's Chain Skullcover (H
+					i(166656),	-- Sinister Gladiator's Chain Epaulets (H)
+				}),
+				n(-46, {	-- Plate
+					i(166635),	-- Sinister Gladiator's Plate Chestplate (A)
+					i(166659),	-- Sinister Gladiator's Shoulderplates (A)
+					i(166610),	-- Sinister Gladiator's Plate Skullguard (A)
+					i(166633),	-- Sinister Gladiator's Plate Chestplate (H)
+					i(166657),	-- Sinister Gladiator's Shoulderplates (H)
+					i(166609),	-- Sinister Gladiator's Plate Skullguard (H)
+				}),
+			}),
+		}),
+		n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
+			n(-319, {	-- Weapons
+				i(167522),	-- Notorious Aspirant's Shield Wall (A)
+				i(167521),	-- Notorious Aspirant's Shield Wall (H)
+				i(169725),	-- Notorious Gladiator's Bonegrinder (A)
+				i(169724),	-- Notorious Gladiator's Bonegrinder
+			}),
+		}),
+		n(-692, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
+			n(-163, {	-- Armor
+				n(-43, {	-- Cloth
+					i(172718),	-- Corrupted Gladiator's Silk Armor (A)
+					i(172695),	-- Corrupted Gladiator's Silk Cap (A)
+					i(172744),	-- Corrupted Gladiator's Silk Shoulderguards (A)
+					i(172714),	-- Corrupted Gladiator's Silk Armor (H)
+					i(172690),	-- Corrupted Gladiator's Silk Cap (H)
+					i(172738),	-- Corrupted Gladiator's Silk Shoulderguards (H)
+				}),
+				n(-44, {	-- Leather
+					i(172721),	-- Corrupted Gladiator's Leather Harness (A)
+					i(172697),	-- Corrupted Gladiator's Leather Headpiece (A)
+					i(172742),	-- Corrupted Gladiator's Leather Shoulderpads (A)
+					i(172715),	-- Corrupted Gladiator's Leather Harness (H)
+					i(172691),	-- Corrupted Gladiator's Leather Headpiece (H)
+					i(172739),	-- Corrupted Gladiator's Leather Shoulderpads (H)
+				}),
+				n(-45, {	-- Mail
+					i(172745),	-- Corrupted Gladiator's Chain Epaulets (A)
+					i(172696),	-- Corrupted Gladiator's Chain Skullcover (A)
+					i(172720),	-- Corrupted Gladiator's Chain Vest (A)
+					i(172716),	-- Corrupted Gladiator's Chain Vest (H)
+					i(172692),	-- Corrupted Gladiator's Chain Skullcover (H)
+					i(172740),	-- Corrupted Gladiator's Chain Epaulets (H)
+				}),
+				n(-46, {	-- Plate
+					i(172719),	-- Corrupted Gladiator's Plate Chestplate (A)
+					i(172694),	-- Corrupted Gladiator's Plate Skullguard (A)
+					i(172743),	-- Corrupted Gladiator's Shoulderplates (A)
+					i(172741),	-- Corrupted Gladiator's Shoulderplates (H)
+					i(172693),	-- Corrupted Gladiator's Plate Skullguard (H)
+					i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
+				}),
+				n(-322, {	-- Cloaks
+					i(172655),	-- Corrupted Gladiator's Shawl
+					i(172656),	-- Corrupted Gladiator's Greatcloak
+					i(172657),	-- Corrupted Gladiator's Drape
+					i(172658),	-- Corrupted Gladiator's Cape
+					i(172659),	-- Corrupted Gladiator's Shawl
+					i(172660),	-- Corrupted Gladiator's Greatcloak
+					i(172661),	-- Corrupted Gladiator's Drape
+					i(172662),	-- Corrupted Gladiator's Cape
+					i(172851),	-- Corrupted Aspirant's Greatcloak
+					i(172855),	-- Corrupted Aspirant's Greatcloak
+				}),
+				-- These were added 9.0.1??
+				n(-386, {	-- Trinkets
+					i(184055),	-- Corrupted Gladiator's Medallion
+					i(184056),	-- Corrupted Gladiator's Relentless Brooch
+					i(184057),	-- Corrupted Gladiator's Sigil of Adaptation
+				}),
+			}),
+		}),
+	}),
+});

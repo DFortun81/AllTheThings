@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
-		m(862, {	-- Zuldazar
-			n(-34,  {	-- World Quests
+	m(ZANDALAR, {
+		m(ZULDAZAR, {
+			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(52923, {	-- Add More to the Collection
 						["provider"] = { "n", 142114 },	-- Talia Sparkbrow
@@ -21,11 +21,11 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(52858, { 	-- Azerite Empowerment
+					q(52858, {	-- Azerite Empowerment
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(51444, { 	-- Azerite Empowerment
+					q(51444, {	-- Azerite Empowerment
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
@@ -107,11 +107,6 @@ _.Zones =
 					q(50966, {	-- Cleanup Crew
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-					}),
-					q(52251, {	-- Compromised Reconnaissance
-						["lvl"] = 120,
-						["isWorldQuest"] = true,
-						["races"] = ALLIANCE_ONLY,
 					}),
 					q(54524, {	-- Crate n' Barrel (Faction Assault WQ)
 						["lvl"] = 110,
@@ -268,11 +263,11 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(50859, { 	-- Kandak
+					q(50859, {	-- Kandak
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(50869, { 	-- Kiboku
+					q(50869, {	-- Kiboku
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
@@ -284,11 +279,7 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(50885, { 	-- Lei-zhi
-						["lvl"] = 120,
-						["isWorldQuest"] = true,
-					}),
-					q(51496, {	-- Loa Your Standards
+					q(50885, {	-- Lei-zhi
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
@@ -319,12 +310,12 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(50855, { 	-- Old R'gal
+					q(50855, {	-- Old R'gal
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["g"] = {
-							i(160509), 	-- Echoes of Rezan (TOY!)
+							i(160509),	-- Echoes of Rezan (TOY!)
 						},
 					}),
 					q(51495, {	-- Old Rotana
@@ -364,7 +355,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51821, { 	-- Quelling the Cove
+					q(51821, {	-- Quelling the Cove
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
@@ -410,7 +401,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51822, { 	-- Scrolls and Scales
+					q(51822, {	-- Scrolls and Scales
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
@@ -433,7 +424,7 @@ _.Zones =
 					q(52938, {	-- Small Beginnings
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["filter"] = 101,	-- Pet Battles
+						["filterID"] = BATTLE_PETS,
 					}),
 					q(54712, {	-- Spell Components (Faction Assault WQ)
 						["lvl"] = 110,
@@ -472,10 +463,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(55304, {	-- The Cycle of Life
-						["lvl"] = 120,
-						["isWorldQuest"] = true,
-					}),
-					q(52169, {	-- The Matriarch
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
@@ -523,7 +510,7 @@ _.Zones =
 								["description"] = "This rare is only up when its associated world quest is active.",
 								["questID"] = 50673,
 								["isDaily"] = true,	-- this questID seems to reset / trigger again when you complete the WQ
-								["coord"] = { 49.0, 29.2, 862 },
+								["coord"] = { 49.0, 29.2, ZULDAZAR },
 								["g"] = {
 									i(162617),	-- Shadraspawn Shoulderpads
 								},
@@ -647,12 +634,12 @@ _.Zones =
 							i(162291),	-- Recipe: Swamp Fish 'n Chips [Rank 3]
 						},
 					}),
-					q(50957, { 	-- Wrath of Rezan
+					q(50957, {	-- Wrath of Rezan
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 						["g"] = {
-							i(160509), 	-- Echoes of Rezan (TOY!)
+							i(160509),	-- Echoes of Rezan (TOY!)
 						},
 					}),
 					q(54701, {	-- Wrath of the Ravasaur (Faction Assault WQ)
@@ -676,9 +663,9 @@ _.Zones =
 				}),
 				i(165863, {	-- Zandalari Weapons Cache
 					["sym"] = {
-						{"select", "mapID", 862},	-- Zuldazar
+						{"select", "mapID", ZULDAZAR},
 						{"pop"},	-- Discard the Map Header and acquire the children.
-						{"where", "headerID", -34 },	-- Select the World Quests Header.
+						{"where", "headerID", WORLD_QUESTS },
 						{"pop"},	-- Discard the World Quests Header and acquire the children.
 						{"is", "itemID" },	-- Select the Items.
 						{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
@@ -691,9 +678,9 @@ _.Zones =
 						{"select", "itemID", 158150},	-- Loa-Pledged Drape
 						{"finalize"},	-- Push the items to the finalized list.
 
-						{"select", "mapID", 862},	-- Zuldazar
+						{"select", "mapID", ZULDAZAR},
 						{"pop"},	-- Discard the Map Header and acquire the children.
-						{"where", "headerID", -34 },	-- Select the World Quests Header.
+						{"where", "headerID", WORLD_QUESTS },
 						{"pop"},	-- Discard the World Quests Header and acquire the children.
 						{"is", "headerID" },	-- Select the Item Set Headers.
 						{"pop"},	-- Discard the Item Set Header and acquire the children.

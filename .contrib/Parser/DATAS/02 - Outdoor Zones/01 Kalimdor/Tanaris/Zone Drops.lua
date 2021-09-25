@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(71, {	-- Tanaris
-			n(ZONEDROPS, {
+		m(TANARIS, {
+			n(ZONE_DROPS, {
 				i(71714),	-- Formula: Enchant Cloak - Lesser Agility
 				un(REMOVED_FROM_GAME, i(11206)),	-- Formula: Enchant Cloak - Lesser Agility (legacy version, removed from game)
 				i(72028),	-- Pattern: Tough Scorpid Boots

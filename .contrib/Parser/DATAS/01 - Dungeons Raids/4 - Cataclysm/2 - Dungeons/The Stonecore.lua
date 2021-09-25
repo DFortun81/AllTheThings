@@ -2,8 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(4, {	-- Cataclysm
-	inst(67, { 	-- The Stonecore
+_.Instances = { tier(CATA_TIER, {
+	inst(67, {	-- The Stonecore
 		["lvl"] = 80,
 		["mapID"] = 324,
 		["groups"] = {
@@ -29,7 +29,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(55822, {	-- Heavy Geode Mace
 					["crs"] = {
 						42810,	-- Crystalspawn Giant

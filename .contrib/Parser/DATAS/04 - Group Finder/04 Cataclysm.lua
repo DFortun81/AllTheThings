@@ -4,9 +4,9 @@
 
 _.GroupFinder =
 {
-	tier(4, {	-- Cataclysm
+	tier(CATA_TIER, {
 		i(156689, {	-- Scorched Satchel of Helpful Goods (30 - 50)
-			["description"] = "|cff66ccffBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
+			["description"] = "Bag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			["g"] = {
 				i(113760),	-- Smoldercloth Bracers*
 				i(113759),	-- Smoldercloth Cap*
@@ -43,7 +43,7 @@ _.GroupFinder =
 		}),
 		i(114648, {	-- Scorched Satchel of Helpful Goods 80-83
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "|cff66ccffRewarded for completing a random Cataclysm dungeon in the level 80-84 range.|r",
+			["description"] = "Rewarded for completing a random Cataclysm dungeon in the level 80-84 range.",
 			["g"] = {
 				i(113760),	-- Smoldercloth Bracers
 				i(113759),	-- Smoldercloth Cap
@@ -70,7 +70,7 @@ _.GroupFinder =
 		}),
 		i(114655, {	-- Scorched Satchel of Helpful Goods 84-85
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "|cff66ccffRewarded for completing a random Cataclysm dungeon in the level 84-85 range.|r",
+			["description"] = "Rewarded for completing a random Cataclysm dungeon in the level 84-85 range.",
 			["g"] = {
 				i(113763),	-- Smoldercloth Gloves
 				i(113761),	-- Smoldercloth Leggings
@@ -119,3 +119,15 @@ _.GroupFinder =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9979, {	-- Cataclysm
+		n(-163, {	-- Armor
+			n(-44, {	-- Leather
+				i(113710),	-- Ravaged Leather Leggings
+			}),
+			n(-45, {	-- Mail
+				i(113715),	-- Sparkmail Vest
+			}),
+		}),
+	}),
+});

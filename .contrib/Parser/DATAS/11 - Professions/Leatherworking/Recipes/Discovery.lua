@@ -4,7 +4,7 @@ profession(LEATHERWORKING, {
 			["name"] = "Pandaria Patterns",
 			["categoryID"] = 876,
 			["g"] = {
-				n(-37, {    -- Discovery
+				n(DISCOVERY, {
 					spell(142976, {  -- Hardened Magnificent Hide
 						recipe(143139),	-- Crafted Malevolent Gladiator's Chain Helm
 						recipe(143119),	-- Crafted Malevolent Gladiator's Copperskin Helm
@@ -266,7 +266,7 @@ profession(LEATHERWORKING, {
 			["name"] = "Zandalari Patterns",
 			["categoryID"] = 871,
 			["g"] = {
-				n(-37, {    -- Discovery
+				n(DISCOVERY, {
 					{	-- Hardened Tempest Boots
 						["spellID"] = 256765,	-- Hardened Tempest Boots
 						["g"] = {

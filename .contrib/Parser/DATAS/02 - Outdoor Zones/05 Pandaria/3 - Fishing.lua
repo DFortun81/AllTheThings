@@ -4,21 +4,20 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		prof(FISHING, {
-			["order"] = "03",
 			["maps"] = {
-				422,	-- Dread Wastes
-				507,	-- Isle of Giants
-				504,	-- Isle of Thunder
-				418,	-- Krasarang Wilds
-				379,	-- Kun-Lai Summit
-				371,	-- The Jade Forest
-				433,	-- The Veiled Stair
-				554,	-- Timeless Isle
-				388,	-- Townlong Steppes
-				390,	-- Vale of Eternal Blossoms
-				376,	-- Valley of the Four Winds
+				DREAD_WASTES,
+				ISLE_OF_GIANTS,
+				ISLE_OF_THUNDER,
+				KRASARANG_WILDS,
+				KUN_LAI_SUMMIT,
+				THE_JADE_FOREST,
+				THE_VEILED_STAIR,
+				TIMELESS_ISLE,
+				TOWNLONG_STEPPES,
+				VALE_OF_ETERNAL_BLOSSOMS,
+				VALLEY_OF_THE_FOUR_WINDS,
 			},
 			["g"] = {
 				i(94933, {	-- Tiny Blue Carp

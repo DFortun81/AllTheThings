@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(27, {	-- Dun Morogh
+		m(DUN_MOROGH, {
 			m(427,  {	-- Coldridge Valley
 				n(QUESTS, {
 					q(3361,  {	-- A Refugee's Quandary

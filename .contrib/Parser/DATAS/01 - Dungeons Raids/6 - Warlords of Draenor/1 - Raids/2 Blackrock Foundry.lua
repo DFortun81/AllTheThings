@@ -2,14 +2,13 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(6, {	-- Warlords of Draenor
-	inst(457, { 	-- Blackrock Foundry
-		["order"] = "02",
+_.Instances = { tier(WOD_TIER, {
+	inst(457, {	-- Blackrock Foundry
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["mapID"] = 598,
 		["maps"] = { 596, 597, 599, 600 },
-		["coord"] = { 51.55, 27.23, 543 },	-- Gorgrond, Draenor
+		["coord"] = { 51.55, 27.23, GORGROND },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
@@ -29,7 +28,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 			}),
 			d(17, {		-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					un(REMOVED_FROM_GAME, i(115510, {	-- Elemental Rune
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(115509)),	-- Elemental Tablet
@@ -48,7 +47,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						},
 					})),
 				}),
-				ach(8989, { 	-- Slagworks
+				ach(8989, {	-- Slagworks
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
@@ -109,7 +108,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						})),
 					},
 				}),
-				ach(8990, { 	-- Black Forge
+				ach(8990, {	-- Black Forge
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
@@ -174,7 +173,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						})),
 					},
 				}),
-				ach(8991, { 	-- Iron Assembly
+				ach(8991, {	-- Iron Assembly
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
@@ -246,7 +245,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						}),
 					},
 				}),
-				ach(8992, { 	-- Blackhand's Crucible
+				ach(8992, {	-- Blackhand's Crucible
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
@@ -268,6 +267,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(116251),	-- Ironshatter Legplates
 							i(116042),	-- Ram-Carrier's Treads
 							i(116317),	-- Storage House Key
+							i(122200),	-- Music Roll: A Siege of Worlds
 							un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
 						})),
 					},
@@ -284,7 +284,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(119332),	-- Bracers of Darkened Skies
 					i(119333),	-- Bracers of Shattered Limbs
 					i(119331),	-- Bracers of Visceral Force
@@ -815,7 +815,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(119334),	-- Bracers of Callous Disregard
 					i(119332),	-- Bracers of Darkened Skies
 					i(119333),	-- Bracers of Shattered Limbs
@@ -1348,7 +1348,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(119334),	-- Bracers of Callous Disregard
 					i(119332),	-- Bracers of Darkened Skies
 					i(119333),	-- Bracers of Shattered Limbs
@@ -1686,7 +1686,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							})),
 						},
 					}),
-					i(120209, { 	-- Essence of the Iron Conqueror
+					i(120209, {	-- Essence of the Iron Conqueror
 						["questID"] = 37552,	-- Essence of the Iron Conqueror
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
@@ -1720,8 +1720,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							})),
 						},
 					}),
-                    i(120284, { 	-- Essence of the Iron Protector
-						["questID"] = 37562, 	-- Essence of the Iron Protector
+                    i(120284, {	-- Essence of the Iron Protector
+						["questID"] = 37562,	-- Essence of the Iron Protector
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["modID"] = 0,	-- in-game this drops with no modID
@@ -1759,8 +1759,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							})),
 						},
 					}),
-					i(120210, { 	-- Essence of the Iron Protector
-						["questID"] = 37548, 	-- Essence of the Iron Protector
+					i(120210, {	-- Essence of the Iron Protector
+						["questID"] = 37548,	-- Essence of the Iron Protector
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["modID"] = 0,	-- in-game this drops with no modID
@@ -1798,8 +1798,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							})),
 						},
 					}),
-					i(120285, { 	-- Essence of the Iron Vanquisher
-						["questID"] = 37561, 	-- Essence of the Iron Vanquisher
+					i(120285, {	-- Essence of the Iron Vanquisher
+						["questID"] = 37561,	-- Essence of the Iron Vanquisher
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["modID"] = 0,	-- in-game this drops with no modID
@@ -1837,8 +1837,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							})),
 						},
 					}),
-					i(120211, { 	-- Essence of the Iron Vanquisher
-						["questID"] = 37550, 	-- Essence of the Iron Vanquisher
+					i(120211, {	-- Essence of the Iron Vanquisher
+						["questID"] = 37550,	-- Essence of the Iron Vanquisher
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["modID"] = 0,	-- in-game this drops with no modID

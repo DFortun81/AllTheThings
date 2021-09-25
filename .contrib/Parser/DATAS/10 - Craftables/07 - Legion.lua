@@ -1,12 +1,11 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-
 _.Craftables =
 {
-	tier(7, {	-- Legion
+	tier(LEGION_TIER, {
 		prof(ALCHEMY, {
-			n(-37, {	-- Discovery
+			n(DISCOVERY, {
 				["requireSkill"] = ALCHEMY,
 				["groups"] = {
 					spell(188299, {	-- Ancient Healing Potion (Rank 2)
@@ -94,7 +93,7 @@ _.Craftables =
 					}),
 				},
 			}),
-			filter(101, { 	-- Pet Battle
+			filter(BATTLE_PETS, {
 				i(137599, {	-- Pulsating Sac
 					i(137608, {	-- Growling Sac
 						i(44822),	-- Albino Snake
@@ -174,7 +173,7 @@ _.Craftables =
 			}),
 		}),
 		prof(ENCHANTING, {
-			filter(101, { 	-- Pet Battle
+			filter(BATTLE_PETS, {
 				i(128533),	-- Enchanted Cauldron
 				i(128535),	-- Enchanted Pen
 				i(128534),	-- Enchanted Torch
@@ -184,7 +183,7 @@ _.Craftables =
 			}),
 		}),
 		prof(ENGINEERING, {
-			filter(101, {	-- Pets
+			filter(BATTLE_PETS, {
 				i(132519),	-- Trigger*
 			}),
 			filter(102, {	-- Toys
@@ -209,33 +208,6 @@ _.Craftables =
 				i(136687),	-- "The Felic"*
 				i(136688),	-- Shockinator*
 			}),
-			n(-494, {	-- Miscellaneous
-				q(40753, { -- Blingtron 6000
-					["isDaily"] = true,
-					["provider"] = { "n", 101527 },    -- Blingtron 6000
-					["g"] ={
-						i(132892, {	-- Blingtron 6000 Gift Package
-							i(87250),	-- Depleted-Kyparium Rocket Mount
-							i(87251),	-- Geosynchronous World Spinner Mount
-							i(41508),	-- Mechano-Hog Mount
-							i(44413),	-- Mekgineer's Chopper Mount
-							i(136911),	-- Knockoff Blingtron
-							i(103670),	-- Lil'Bling Pet
-							i(15996),	-- Lifelike Mechanical Toad Pet
-							i(11826),	-- Lil' Smoky Pet
-							i(4401),	-- Mechanical Squirrel Box Pet
-							i(11825),	-- Pet Bombling
-							i(115483),	-- Sky-Bo Pet
-							i(21277),	-- Tranquil Mechanical Yeti Pet
-							i(123851),	-- Photo B.O.M.B. Toy
-							i(136631),	-- Surface-to-Infernal Rocket Launcher
-							i(136630),	-- "Twirling Bottom" Repeaater"
-							i(136629),	-- Felgibber Shotgun
-							i(136632),	-- Chaos Blaster
-						}),
-					},
-				})
-			}),
 			{
 				["name"] = "Robotics",
 				["categoryID"] = 474,
@@ -243,24 +215,31 @@ _.Craftables =
 					i(144341, {	-- Rechargeable Reaves Battery
 						i(132524, {	-- Reaves Module: Wormhole Generator Mode
 							["questID"] = 40738,	-- FLAG - Reaves Wormhole Generator Module
+							["requireSkill"] = ENGINEERING,
 						}),
 						i(132530, {	-- Reaves Module: Bling Mode
 							["questID"] = 40736,	-- FLAG - Reaves Bling Module
+							["requireSkill"] = ENGINEERING,
 						}),
 						i(132531, {	-- Reaves Module: Piloted Combat Mode
 							["questID"] = 40737,	-- FLAG - Reaves Piloted Combat Module
+							["requireSkill"] = ENGINEERING,
 						}),
 						i(132525, {	-- Reaves Module: Repair Mode
 							["questID"] = 40732,	-- FLAG - Reaves Repair Module
+							["requireSkill"] = ENGINEERING,
 						}),
 						i(132529, {	-- Reaves Module: Snack Distribution Mode
 							["questID"] = 40735,	-- FLAG - Reaves Snack Distribution Module
+							["requireSkill"] = ENGINEERING,
 						}),
 						i(132526, {	-- Reaves Module: Failure Detection Mode
 							["questID"] = 40733,	-- FLAG - Reaves Failure Detection Module
+							["requireSkill"] = ENGINEERING,
 						}),
 						i(132528, {	-- Reaves Module: Fireworks Display Mode
 							["questID"] = 40734,	-- FLAG - Reaves Fireworks Module
+							["requireSkill"] = ENGINEERING,
 						}),
 					}),
 				},
@@ -307,6 +286,25 @@ _.Craftables =
 				i(136693),	-- Straszan Mark
 			}),
 		}),
+		prof(FISHING, {
+			spell(201943, {	-- Better Luck Next Time
+				["maps"] = { AZSUNA, BROKEN_SHORE, EYE_OF_AZSHARA, HIGHMOUNTAIN, STORMHEIM, SURAMAR, VALSHARAH },
+				["g"] = {
+					i(139408, {	-- Deck Sandals
+						["bonusID"] = 1812,
+					}),
+					i(139407, {	-- Diver's Chain Boots
+						["bonusID"] = 1812,
+					}),
+					i(139405, {	-- Kul'Tiras Marine Issue Boots
+						["bonusID"] = 1812,
+					}),
+					i(139406, {	-- Sea Dog Boots
+						["bonusID"] = 1812,
+					}),
+				},
+			}),
+		}),
 		prof(JEWELCRAFTING, {
 			filter(102, {	-- Toy
 				i(130254),	-- Chatterstone
@@ -348,10 +346,10 @@ _.Craftables =
 			}),
 		}),
 		prof(LEATHERWORKING, {
-			n(-349, { 	-- Cosmetic
-				un(29, i(151791)),	-- Winter Boots
+			n(-349, {	-- Cosmetic
+				un(FEAST_OF_WINTER_VEIL, i(151791)),	-- Winter Boots
 			}),
-			n(-44, { 	-- Leather
+			n(-44, {	-- Leather
 				i(128890),	-- Dreadleather Belt
 				i(128891),	-- Dreadleather Bindings
 				i(128885),	-- Dreadleather Footpads
@@ -371,7 +369,7 @@ _.Craftables =
 				i(128880),	-- Warhide Pants
 				i(128881),	-- Warhide Shoulderguard
 			}),
-			n(-45, { 	-- Mail
+			n(-45, {	-- Mail
 				i(128899),	-- Battlebound Armbands
 				i(128898),	-- Battlebound Girdle
 				i(128894),	-- Battlebound Grips
@@ -423,6 +421,9 @@ _.Craftables =
 				i(132538),	-- Spritescale Jerkin
 				i(132541),	-- Spritescale Wraps
 				i(146668),	-- Vigilance Perch
+			}),
+			n(55, {	-- Consumables
+				i(142406),	-- Drums of the Mountain
 			}),
 		}),
 		prof(TAILORING, {

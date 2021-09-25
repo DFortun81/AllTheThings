@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(210, {	-- The Cape of Stranglethorn
-			filter(101, {	-- Pet Battle
+		m(THE_CAPE_OF_STRANGLETHORN, {
+			filter(BATTLE_PETS, {
 				p(411, {	-- Baby Ape
 					["crs"] = { 61324 },
 					["description"]	= "This wild pet can be found on Jaguero Isle in The Cape of Stranglethorn. It only spawns when it's raining on the island, but this area has its own unique weather pattern. Although it might be raining in Stranglethorn, it may not be raining on the isle.",
@@ -40,13 +40,13 @@ _.Zones =
 				}),
 				q(31917, {	-- A Tamer's Homecoming
 					["provider"] = { "n", 65656 },	-- Bill Buckler
-					["coord"] = { 51.4, 73.2, 210 },
+					["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31728,	-- Bill Buckler
 				}),
 				q(31851, {	-- Bill Buckler
 					["provider"] = { "n", 65656 },	-- Bill Buckler
-					["coord"] = { 51.4, 73.2, 210 },
+					["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),

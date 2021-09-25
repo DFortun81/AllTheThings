@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(875, { 	-- Zandalar
-		m(862, {	-- Zuldazar
-			n(-38, {	-- Professions
+	m(ZANDALAR, {
+		m(ZULDAZAR, {
+			n(PROFESSIONS, {
 				prof(HERBALISM, {
 					-- Siren's Pollen
 					q(51312, {	-- Aromatic Pollenator (A)
@@ -55,7 +55,7 @@ _.Zones =
 				prof(JEWELCRAFTING, {
 					q(55582, {	-- Atal'Dazar: Not All That Glitters... (A)
 						["provider"] = { "n", 150894 },	-- Shrine of Nature
-						["coord"] = { 43.2, 64.3, 862 },
+						["coord"] = { 43.2, 64.3, ZULDAZAR },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49584,	-- The Missing Chapter (A)
 						["requireSkill"] = JEWELCRAFTING,
@@ -77,7 +77,7 @@ _.Zones =
 					}),
 					q(51971, {	-- An Exquisite Brooch
 						["provider"] = { "i", 160944 },	-- An Exquisite Brooch
-						["coord"] = { 44.0, 39.0, 1165 },
+						["coord"] = { 44.0, 39.0, DAZARALOR },
 						["description"] = "This can drop from |cFFFFD700Monelite Seam|r at any mining level.  You can only turn it in at Level 150 Zandalari Mining.",
 						["requireSkill"] = MINING,
 						["races"] = HORDE_ONLY,

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(78, {	-- Un'Goro Crater
+		m(UNGORO_CRATER, {
 			n(ACHIEVEMENTS, {
 				ach(4939, {	-- Un'Goro Crater Quests
 					crit(1, {	-- The Pylons of Un'Goro

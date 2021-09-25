@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(1, {	-- Classic
+	tier(CLASSIC_TIER, {
 		n(-318, {	-- Armor
 			n(-320, {	-- Head
 				i(13102),	-- Cassandra's Grace
@@ -19,7 +19,6 @@ _.WorldDrops =
 				i(13112),	-- Winged Helm
 			}),
 			f(51,   {	-- Neck
-				un(NEVER_IMPLEMENTED, i(21793)),	-- Arcanite Sword Pendant
 				i(12044),	-- Arctic Pendant
 				i(12028),	-- Basalt Necklace
 				i(12019),	-- Cerulean Talisman
@@ -282,7 +281,7 @@ _.WorldDrops =
 				un(REMOVED_FROM_GAME, i(2273)),	-- Guerrilla Armor (No info on where this originally droppped)
 				i(13067),	-- Hydralick Armor
 				i(1981),	-- Icemail Jerkin
-				un(REMOVED_FROM_GAME, i(914)), 	-- Large Ogre Chain Vest
+				un(REMOVED_FROM_GAME, i(914)),	-- Large Ogre Chain Vest
 				un(REMOVED_FROM_GAME, i(2234)),	-- Nightwalker Armor (blue version seen on AH 5/26/2019 so this may be dropping again, but don't know for sure.)
 				i(1715),	-- Polished Jazeraint Armor
 				i(1716),	-- Robe of the Magi

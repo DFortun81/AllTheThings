@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(4, {	-- Cataclysm
+	tier(CATA_TIER, {
 		n(-319, {	-- Weapons
 			n(-334, {	-- 1H Axes
 				i(55283),	-- Angerfang Axe

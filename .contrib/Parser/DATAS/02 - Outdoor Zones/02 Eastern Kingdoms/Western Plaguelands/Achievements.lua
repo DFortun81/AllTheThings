@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(22, {	-- Western Plaguelands
+		m(WESTERN_PLAGUELANDS, {
 			n(ACHIEVEMENTS, {
 				ach(4893, {	-- Western Plaguelands Quests
 					crit(1, {	-- The First Battle for Andorhal

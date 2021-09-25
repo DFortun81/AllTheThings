@@ -132,17 +132,20 @@ _.Zones =
 						i(184727),	-- Courtier's Shoulderguard
 						i(184755),	-- Reinforced High Collar
 						i(182207),	-- Illusion: Sinsedge
-						n(-949, {	-- Covenant: Venthyr
-							-- These are only available to Venthyr covenant members
+						n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Venthyr
 							i(183708, {	-- Glittering Gold Sinstone Chain
 								["cost"] = { { "c", 1813, 3500 } },
 							}),
-						}),
+						})),
 					},
 				}),
 				n(160084, {	-- Ta'rmoro <Purveyor of Arms>
 					["coord"] = { 50.4, 81.4, REVENDRETH },
 					["g"] = {
+						i(183977, {	-- House Renathal Ceremonial Dagger
+							["customCollect"] = "SL_COV_VEN",
+							["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+						}),
 						i(183982, {	-- Devourer Mite Sticker
 							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
 						}),
@@ -166,12 +169,6 @@ _.Zones =
 						}),
 						i(183968, {	-- Venthyr Ritualist's Kris
 							["cost"] = { { "c", 1813, 3500 } },	-- 3,500x Reservoir Anima
-						}),
-						n(-949, {	-- Covenant: Venthyr
-							-- These are only available to Venthyr covenant members
-							i(183977, {	-- House Renathal Ceremonial Dagger
-								["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
-							}),
 						}),
 					},
 				}),

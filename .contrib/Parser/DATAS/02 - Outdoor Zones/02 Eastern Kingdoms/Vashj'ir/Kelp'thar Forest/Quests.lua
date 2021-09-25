@@ -302,8 +302,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = {
-							25942,	-- Buy Us Some Time
-							25943,	-- Traveling on Our Stomachs
+							25944,	-- Girding Our Loins
 						},
 					}),
 					q(25281, {	-- Pay It Forward (A)
@@ -471,3 +470,18 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(25455),	-- A Test of Wills
+		q(25474),	-- BETA Once More, With Eeling [DEPRICATED]
+		q(25435),	-- Pressure is Mounting
+		q(25506),	-- Sea-Food Chain
+		
+	}),
+	n(-9979, {	-- Cataclysm
+		n(-319, {	-- Weapons
+			i(54554),	-- Bejeweled Ship's Wheel
+			i(54553),	-- Kliklak's Fearsome Greatsword (never made it to live)
+		}),
+	}),
+});

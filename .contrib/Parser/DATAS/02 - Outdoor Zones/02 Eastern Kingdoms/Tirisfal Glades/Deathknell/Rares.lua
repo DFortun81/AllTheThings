@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(18, {	-- Tirisfal Glades
+		m(TIRISFAL_GLADES, {
 			m(465, {	-- Deathknell
 				n(RARES, {
 					n(50328, {	-- Fangor

@@ -3,11 +3,10 @@
 -----------------------------------------------------
 
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
-_.Instances = { tier(7, {	-- Legion
-	inst(875, { 	-- Tomb of Sargeras
+_.Instances = { tier(LEGION_TIER, {
+	inst(875, {	-- Tomb of Sargeras
 		["isRaid"] = true,
-		["coord"] = { 64.3, 21.0, 646 },	-- Broken Shore
-		["order"] = "04",
+		["coord"] = { 64.3, 21.0, BROKEN_SHORE },
 		["maps"] = {
 			850,
 			851,
@@ -116,7 +115,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					["cr"] = 111246,	-- Archmage Timear
 					["g"] = {
 						i(147422),	-- Acolyte's Abandoned Footwraps
@@ -133,7 +132,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(147038),	-- Wakening Horror Spaulders
 					},
 				}),
-				ach(11787, { 	-- The Gates of Hell
+				ach(11787, {	-- The Gates of Hell
 					["cr"] = 111246,	-- Archmage Timear
 					["g"] = {
 						e(1862, {	-- Goroth
@@ -220,7 +219,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				ach(11788, { 	-- Wailing Halls
+				ach(11788, {	-- Wailing Halls
 					["cr"] = 111246,	-- Archmage Timear
 					["g"] = {
 						e(1867, {	-- Demonic Inquisition
@@ -318,7 +317,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				ach(11789, { 	-- Chamber of the Avatar
+				ach(11789, {	-- Chamber of the Avatar
 					["cr"] = 111246,	-- Archmage Timear
 					["g"] = {
 						e(1897, {	-- Maiden of Vigilance
@@ -385,7 +384,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				ach(11790, { 	-- Deceiver's Fall
+				ach(11790, {	-- Deceiver's Fall
 					["cr"] = 111246,	-- Archmage Timear
 					["g"] = {
 						e(1898, {	-- Kil'jaeden
@@ -460,7 +459,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(147422),	-- Acolyte's Abandoned Footwraps
 					i(147425),	-- Cord of Pilfered Rosaries
 					i(147064),	-- Diadem of the Highborne
@@ -791,7 +790,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(147422),	-- Acolyte's Abandoned Footwraps
 					i(147425),	-- Cord of Pilfered Rosaries
 					i(147064),	-- Diadem of the Highborne
@@ -1122,7 +1121,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(147422),	-- Acolyte's Abandoned Footwraps
 					i(147425),	-- Cord of Pilfered Rosaries
 					i(147064),	-- Diadem of the Highborne
@@ -1434,3 +1433,15 @@ _.Instances = { tier(7, {	-- Legion
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		inst(875, {	-- Tomb of Sargeras
+			i(147036),	-- Fel-Stippled Legguards		(removed Beta)
+			i(147058),	-- Chaos-Calming Wristguards	(removed Beta)
+			i(147074),	-- Vambraces of Resoulte Justice
+			i(157761),	-- Barbaric Mindslaver
+			i(157763),	-- Engine of Eradication
+			i(146304),	-- Fel Titan Hammer (test version for Maiden Mog Drop)
+		}),
+	}),
+});

@@ -2,8 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(271, { 	-- Ahn'kahet: The Old Kingdom
+_.Instances = { tier(WOTLK_TIER, {
+	inst(271, {	-- Ahn'kahet: The Old Kingdom
 		["lvl"] = 61,
 		["mapID"] = 132,
 		["coord"] = { 28.3, 51.6, 115 },
@@ -15,25 +15,25 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["provider"] = { "i", 43512 },	-- Ooze-Covered Fungus
 				}),
 				q(29825),	-- Pupil No More, No actual awards.
-				q(29826), 	-- Reclaiming Ahn'Kahet, No actual awards.
-				q(13187,{ 	-- The Faceless Ones
-					i(44353), 	-- Epaulets of the Faceless Ones
+				q(29826),	-- Reclaiming Ahn'Kahet, No actual awards.
+				q(13187,{	-- The Faceless Ones
+					i(44353),	-- Epaulets of the Faceless Ones
 					i(44350),	-- Mantle of Thwarted Evil
-					i(44351), 	-- Shoulderpads of Abhorrence
-					i(44352), 	-- Shoulderplates of the Abolished
+					i(44351),	-- Shoulderpads of Abhorrence
+					i(44352),	-- Shoulderplates of the Abolished
 				}),
 				q(29810, {	-- The Faceless Ones
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						i(44353), 	-- Epaulets of the Faceless Ones
+						i(44353),	-- Epaulets of the Faceless Ones
 						i(44350),	-- Mantle of Thwarted Evil
-						i(44351), 	-- Shoulderpads of Abhorrence
-						i(44352), 	-- Shoulderplates of the Abolished
+						i(44351),	-- Shoulderpads of Abhorrence
+						i(44352),	-- Shoulderplates of the Abolished
 					},
 				}),
 			}),
 			d(1, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(35615, {	-- Glowworm Cavern Bindings
 						["crs"] = {
 							30277,	-- Ahn'kahar Slasher
@@ -135,7 +135,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 80,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(37624, {	-- Stained-Glass Shard Ring
 							["crs"] = {
 								30277,	-- Ahn'kahar Slasher

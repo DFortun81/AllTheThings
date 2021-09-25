@@ -15,7 +15,7 @@ _.Zones =
 				q(57986, {	-- A Burden Worth Bearing
 					["sourceQuests"] = { 57984 },	-- The Ones in Charge
 					["provider"] = { "n", 160211 },	-- Aspirant Thales
-					["coord"] = { 32.0 , 27.4, MALDRAXXUS },
+					["coord"] = { 32.0, 27.4, MALDRAXXUS },
 				}),
 				q(58751, {	-- A Common Peril
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus
@@ -41,6 +41,14 @@ _.Zones =
 					["sourceQuests"] = { 59837 },	-- Working For The Living
 					["provider"] = { "n", 161559 },	-- Louison
 					["coord"] = { 54.4, 48.6, MALDRAXXUS },
+				}),
+				q(63678, {	-- Akarek Avenged
+					["sourceQuests"] = {
+						63677,	-- You Can Only Die
+						63676,	-- You Cannot Hide
+						63675,	-- You Cannot Run
+					},
+					["provider"] = { "n", 177437 },	-- Khaliiq
 				}),
 				q(59202, {	-- Among the Chosen
 					["sourceQuests"] = {
@@ -149,6 +157,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 58.3, 71.6, MALDRAXXUS },
+				}),
+				q(63674, {	-- By Your Leave
+					["sourceQuests"] = { 63990 },	-- The Blade in the Night
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 42.1, 23.2, MALDRAXXUS },
 				}),
 				q(57301, {	-- Callous Concoctions
 					["sourceQuests"] = { 58431 },	-- Pool of Potions
@@ -289,6 +302,11 @@ _.Zones =
 					["provider"] = { "n", 159830 },	-- Au'narim
 					["coord"] = { 53.6, 47.5, MALDRAXXUS },
 				}),
+				q(63679, {	-- Magical Mystery Tour!
+					["sourceQuests"] = { 63678 },	-- Akarek Avenged
+					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
+					["coord"] = { 74.7, 33.6, MALDRAXXUS },
+				}),
 				q(58617, {	-- Maintaining Order
 					["sourceQuests"] = { 57514 },	-- The First Act of War
 					["provider"] = { "n", 157895 },	-- Baron Vyraz
@@ -419,7 +437,7 @@ _.Zones =
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, MALDRAXXUS },
 					["g"] = {
-						i(173891),	-- 	Plagueborn Slime (PET!)
+						i(173891),	--	Plagueborn Slime (PET!)
 					},
 				}),
 				q(58785, {	-- Smack And Grab
@@ -483,6 +501,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 161559 },	-- Louison
 					["coord"] = { 54.4, 48.6, MALDRAXXUS },
+				}),
+				q(63990, {	-- The Blade in the Night
+					["sourceQuests"] = { 63728, 63673 },	-- Hunting Amid Houses (Kyrian/Necrolord/Venthyr, Night Fae)
+					["provider"] = { "n", 177471 },	-- Huln Highmountain
+					["coord"] = { 42.8, 25.2, MALDRAXXUS },
 				}),
 				q(60428, {	-- The Blade of the Primus
 					["sourceQuests"] = {
@@ -596,7 +619,10 @@ _.Zones =
 					},
 				}),
 				q(59879, {	-- This Thing Of Ours
-					["sourceQuests"] = { 58090 },	-- Side Effects
+					["sourceQuests"] = {
+						58947,	-- Test Your Mettle
+						58090,	-- Side Effects
+					},
 					["provider"] = { "n", 161559 },	-- Louison
 					["coord"] = { 54.4, 48.6, MALDRAXXUS },
 				}),
@@ -699,46 +725,121 @@ _.Zones =
 					["sourceQuests"] = { 59203 },	-- Leave Me a Loan
 					["provider"] = { "n", 159830 },	-- Au'narim
 					["coord"] = { 53.6, 47.5, MALDRAXXUS },
-					["maps"] = { 1691 },	-- Shattered Grove
-				}),
-
-				-- Sojourner of Maldraxxus
-				-- Theater of Pain
-
-				-- Bonus Objectives
-				q(62742, {	-- Avoid 'Em Like the Plague (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181638),	-- Gorewrought Drape [monk]
+					["maps"] = {
+						1691,	-- Shattered Grove
+						1715,	-- Vestibule Of Eternity (procs when entering the portal but not actual destination)
 					},
 				}),
-				q(62741, {	-- Choice of Action (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				q(63677, {	-- You Can Only Die
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
 				}),
-				q(62743, {	-- Decaying Situation (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				q(63676, {	-- You Cannot Hide
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
 				}),
-				q(62721, {	-- Deconstructing The Problem (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181682),	-- Corpsehide Wristwraps [monk]
-					},
+				q(63675, {	-- You Cannot Run
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
 				}),
-				q(62712, {	-- War of Attrition (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181678),	-- Corpsehide Belt [monk]
-					},
+				n(BONUS_OBJECTIVES, {
+					q(62742, {	-- Avoid 'Em Like the P	lague (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181638),	-- Gorewrought Drape
+						},
+					}),
+					q(62741, {	-- Choice of Action (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+					}),
+					q(62743, {	-- Decaying Situation (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181664),	-- Bloodsilk Hood
+							i(181666),	-- Corpsehide Helm
+							i(181665),	-- Fleshscale Coif
+							i(181651),	-- Steelcore Helmet
+						},
+					}),
+					q(62721, {	-- Deconstructing The Problem (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181679),	-- Bloodsilk Wristwraps
+							i(181682),	-- Corpsehide Wristwraps
+							i(181681),	-- Fleshscale Wristwraps
+							i(181680),	-- Steelcore Wristwraps
+						},
+					}),
+					q(62712, {	-- War of Attrition (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181676),	-- Bloodsilk Cord
+							i(181678),	-- Corpsehide Belt
+							i(181677),	-- Fleshscale Belt
+							i(181675),	-- Steelcore Girdle
+						},
+					}),
 				}),
 			}),
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(58625),	-- Connecting the Dots
+		q(57537),	-- Covering our Tracks
+		q(57513),	-- Enemy of My Enemy
+		q(59204),	-- Foreign Contamination
+		q(57978),	-- Forward and Back
+		q(62394),	-- House in Decline
+		q(60736),	-- Quest 02
+		q(59903),	-- Split Blob Test
+		q(59882),	-- Sure Bet
+		q(59175),	-- The Eternal Revenge
+		q(58261),	-- What's the Grub
+	}),
+	n(-10100, {	-- Shadowlands
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(175512),	-- Corpse-Stitcher's Raiment
+				i(175528),	-- Corpse-Stitcher's Trousers
+			}),
+			n(-44, {	-- Leather
+				i(175515),	-- Deceitful Agent's Tunic
+				i(175530),	-- Deceitful Agent's Legwraps
+			}),
+			n(-45, {	-- Mail
+				i(175514),	-- Flesh Architect's Hauberk
+				i(175529),	-- Flesh Architect's Greaves
+			}),
+			n(-46, {	-- Plate
+				i(175513),	-- Cruel Executioner's Breastplate
+				i(175527),	-- Cruel Executioner's Greaves
+			}),
+		}),
+		n(-319, {	-- Weapons
+			i(183086),	-- Battle Tested Warglaive
+			i(183077),	-- Battle Tested Shank
+			i(183088),	-- Battle Tested Dagger
+			i(183078),	-- Battle Tested Basher
+			i(183079),	-- Battle Tested Stave
+			i(183090),	-- Battle Tested Staff
+			i(183080),	-- Battle Tested Shortsword
+			i(183087),	-- Battle Tested Longsword
+			i(183089),	-- Battle Tested Spellblade
+			i(183081),	-- Battle Tested Crossbow
+			i(183082),	-- Battle Tested Wand
+			i(183083),	-- Battle Tested Greatsword
+			i(183084),	-- Battle Tested Bulwark
+			i(183085),	-- Battle Tested Tome
+		}),
+	}),
+});

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(4, {	-- Cataclysm
+_.Instances = { tier(CATA_TIER, {
 	inst(69, {	-- Lost City of the Tol'vir
 		["lvl"] = 83,
 		["mapID"] = 277,
@@ -26,7 +26,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(55881, {	-- Impetuous Query
 					["crs"] = {
 						45007,	-- Enslaved Bandit
@@ -299,3 +299,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9979, {	-- Cataclysm
+		inst(69, {	-- Lost City of the Tol'vir
+			i(56405),	-- Oasis Bracers (Lost City)
+		}),
+	}),
+});
+_.HiddenQuestTriggers = {
+	q(35413),	-- Lost City of the Tol'vir Reward Quest
+};

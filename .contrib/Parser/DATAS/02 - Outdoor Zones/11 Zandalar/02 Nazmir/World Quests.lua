@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
-		m(863, {	-- Nazmir
-			n(-34,  {	-- World Quests
+	m(ZANDALAR, {
+		m(NAZMIR, {
+			n(WORLD_QUESTS, {
 				n(QUESTS, {
 					q(51131, {	-- Absolutely Barbaric (A)
 						["lvl"] = 120,
@@ -445,7 +445,7 @@ _.Zones =
 							n(128610, {	-- Maw of Shul-Nagruth
 								["description"] = "This rare is only up when its associated world quest is active.",
 								["questID"] = 50467,
-								["coord"] = { 49.8, 67.0, 863 },
+								["coord"] = { 49.8, 67.0, NAZMIR },
 								["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(160973),	-- Accursed Tuskwand
 								}),
@@ -475,10 +475,6 @@ _.Zones =
 					q(52785, {	-- Smashing Zalamar
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["isWorldQuest"] = true,
-					}),
-					q(52181, {	-- Smoke and Shadow
-						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 					q(54694, {	-- Stormcaller Morka (Faction Assault WQ)
@@ -674,7 +670,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENGINEERING,
 						["g"] = {
-							i(162339), 	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
+							i(162339),	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
 						},
 					}),
 					q(50489, {	-- Xu'ba
@@ -702,9 +698,9 @@ _.Zones =
 						{"select", "itemID", 166672},	-- Bloodhunter's Drape
 						{"finalize"},	-- Push the items to the finalized list.
 
-						{"select", "mapID", 863},	-- Tiragarde Sound
+						{"select", "mapID", NAZMIR},
 						{"pop"},	-- Discard the Map Header and acquire the children.
-						{"where", "headerID", -34 },	-- Select the World Quests Header.
+						{"where", "headerID", WORLD_QUESTS },
 						{"pop"},	-- Discard the World Quests Header and acquire the children.
 						{"is", "headerID" },	-- Select the Item Set Headers.
 						{"pop"},	-- Discard the Item Set Header and acquire the children.

@@ -10,6 +10,8 @@ namespace ATT
 {
     class Program
     {
+        private static bool Errored { get; set; }
+
         static void Main(string[] args)
         {
             // Setup tracing to the console.
@@ -18,7 +20,7 @@ namespace ATT
             // Determine if running in Debug Mode or not.
             if (args != null && args.Length > 0)
             {
-                foreach(var arg in args)
+                foreach (var arg in args)
                 {
                     if (arg == "debug") Framework.DebugMode = true;
                 }
@@ -35,27 +37,27 @@ namespace ATT
 
                 Directory.CreateDirectory("../Debugging");
 
-                // Load all of the RAW JSON Data into the database.
-                var files = Directory.EnumerateFiles(databaseRootFolder, "*.json", SearchOption.AllDirectories).ToList();
-                files.Sort();
-                foreach (var fileName in files)
+                do
                 {
-                    Trace.Write(fileName);
-                    Trace.Write("... ");
+                    Errored = false;
+                    // Load all of the RAW JSON Data into the database.
+                    var files = Directory.EnumerateFiles(databaseRootFolder, "*.json", SearchOption.AllDirectories).ToList();
+                    Trace.WriteLine("Parsing JSON files...");
+#if ANYCLASSIC
+                    foreach (var f in files) ParseJSONFile(f);
+#else
+                    files.AsParallel().ForAll(f => ParseJSONFile(f));
+#endif
+                    Trace.WriteLine("Done parsing JSON files.");
 
-                    // Load the text and then convert it to a common JSON data format.
-                    var data = Framework.ToDictionary(File.ReadAllText(fileName));
-                    if (data == null)
+                    if (Errored)
                     {
-                        Trace.WriteLine("Invalid format!");
-                        continue;
+                        Trace.WriteLine("Please fix the formatting of the above Invalid JSON file(s)");
+                        Trace.WriteLine("Press Enter once you have resolved the issue.");
+                        Console.ReadLine();
                     }
-                    else Trace.WriteLine("");
-
-                    // Attempt to merge the data into the Database.
-                    Framework.Merge(data);
                 }
-                Trace.WriteLine("Done parsing JSON files...");
+                while (Errored);
 
                 // Load all of the Lua files into the database.
                 var mainFileName = $"{databaseRootFolder}\\_main.lua";
@@ -75,7 +77,7 @@ namespace ATT
                 }
 
                 Lua lua = new Lua();
-                ProcessLuaFile(lua, mainFileName);
+                lua.DoString(ProcessContent(File.ReadAllText(mainFileName)));
 
                 // Try to Copy in the Alliance Only / Horde Only lists
                 try
@@ -116,30 +118,16 @@ namespace ATT
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
                 }
+                //string content = "";
                 Framework.Objects.ProcessingSourceData = true;
+                //Trace.WriteLine("Parsing LUA files in Parallel: Start");
+                //luaFiles.AsParallel().ForAll(f => ParseLUAFile(lua, f));
+                Trace.WriteLine("Parsing LUA files...");
                 foreach (var fileName in luaFiles)
                 {
-                    //Trace.WriteLine(fileName);
-                    do
-                    {
-                        try
-                        {
-                            lua.DoString("AllTheThings = {};_ = AllTheThings;");
-                            ProcessLuaFile(lua, fileName);
-                            Framework.Merge(lua, lua.GetTable("AllTheThings"));
-                            break;
-                        }
-                        catch (Exception e)
-                        {
-                            Trace.WriteLine(fileName);
-                            Trace.WriteLine(e.Message);
-                            Trace.WriteLine("Press Enter once you have resolved the issue.");
-                            Console.ReadLine();
-                        }
-                    }
-                    while (true);
+                    ParseLUAFile(lua, fileName);
                 }
-                Trace.WriteLine("Done parsing LUA files...");
+                Trace.WriteLine("Done parsing LUA files.");
                 Framework.Objects.ProcessingSourceData = false;
 
                 do
@@ -148,7 +136,7 @@ namespace ATT
                     {
                         lua.DoString("AllTheThings = {};_ = AllTheThings;");
                         lua.DoString("for i,method in ipairs(POST_PROCESSING_FUNCTIONS) do method(); end");
-                        Framework.Merge(lua, lua.GetTable("AllTheThings"));
+                        Framework.Merge(lua.GetTable("AllTheThings"));
                         break;
                     }
                     catch (Exception e)
@@ -191,20 +179,17 @@ namespace ATT
 
                 //}
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Trace.WriteLine(e);
             }
         }
 
-        static void ProcessLuaFile(Lua lua, string filename)
+        public static int GetLineNumber(Exception ex)
         {
-            // Old:
-            //lua.DoFile(filename);
-
-            // New:
-            // We are now pre-processing the files based on parser version.
-            lua.DoString(ProcessContent(File.ReadAllText(filename)));
+            var s = ex.Message.Split(':');
+            if (s.Length > 1 && int.TryParse(s[1], out int line)) return line;
+            return -1;
         }
 
         /// <summary>
@@ -214,8 +199,8 @@ namespace ATT
         /// <returns>The processed content of the file.</returns>
         static string ProcessContent(string content)
         {
-            // If it doesn't contain an IF statement, just skip processing it.
-            if (content.Contains("-- #if"))
+            // If it doesn't contain a command statement, just skip processing it.
+            if (content.Contains("-- #"))
             {
                 int startIndex = 0;
                 var builder = new StringBuilder();
@@ -243,14 +228,18 @@ namespace ATT
         /// <param name="length">The total length of the string content.</param>
         static void ProcessContent(StringBuilder builder, string content, ref int index, int previousIndex, int length)
         {
-            while (previousIndex < length && (index = content.IndexOf("-- #", previousIndex)) > -1)
+            while (previousIndex < length && previousIndex > -1 && (index = content.IndexOf("-- #", previousIndex)) > -1)
             {
                 builder.Append(content.Substring(previousIndex, index - previousIndex).TrimEnd());
                 ProcessInitialCommandBlock(builder, content, ref index, length);
                 previousIndex = index;
             }
-            if (previousIndex < index) builder.Append(content.Substring(previousIndex, index - previousIndex));
-            else if (previousIndex < length) builder.Append(content.Substring(previousIndex, length - previousIndex));
+            if (previousIndex > -1)
+            {
+                if (previousIndex < index) builder.Append(content.Substring(previousIndex, index - previousIndex));
+                else if (previousIndex < length) builder.Append(content.Substring(previousIndex, length - previousIndex));
+            }
+            else if (index > -1 && index < length) builder.Append(content.Substring(index, length - index));
         }
 
         static void ProcessInitialCommandBlock(StringBuilder builder, string content, ref int index, int length)
@@ -262,8 +251,12 @@ namespace ATT
             switch (command[0])
             {
                 case "IF":
-                    // This is an IF. It is the start of a new internal command block.
+                    // This is an IF command. It is the start of a new internal command block.
                     ProcessInternalCommandBlock(command, builder, content, ref index, length);
+                    break;
+                case "IMPORT:":
+                    // This is an IMPORT command. It indicates that a Live DB file should be loaded.
+                    ProcessImportCommand(command, builder, content, ref index, length);
                     break;
                 default:
                     throw new Exception($"Malformed #{command[0]} statement: Expected #IF statement first... '{string.Join(" ", command)}'");
@@ -297,7 +290,7 @@ namespace ATT
                         int j = 0;
                         var newCommand = new string[command.Length - 1];
                         newCommand[0] = command[0];
-                        for (int i = 2;i < command.Length; ++i)
+                        for (int i = 2; i < command.Length; ++i)
                         {
                             newCommand[++j] = command[i];
                         }
@@ -305,13 +298,27 @@ namespace ATT
                     case "BEFORE":
                         if (command.Length == 3)    // Example: "IF" "BEFORE" "WOD"
                         {
-                            return Framework.FIRST_EXPANSION_PHASE.TryGetValue(command[2], out int phase) && Framework.CURRENT_RELEASE_PHASE < phase;
+                            if (Framework.FIRST_EXPANSION_PHASE.TryGetValue(command[2], out int phase))
+                            {
+                                return Framework.CURRENT_RELEASE_PHASE < phase;
+                            }
+                            else
+                            {
+                                return Framework.CURRENT_RELEASE_VERSION < command[2].Split('.').ConvertVersion();
+                            }
                         }
                         throw new Exception($"Malformed #IF BEFORE statement. '{string.Join(" ", command)}'");
                     case "AFTER":
                         if (command.Length == 3)    // Example: "IF" "AFTER" "WOD"
                         {
-                            return Framework.FIRST_EXPANSION_PHASE.TryGetValue(command[2], out int phase) && Framework.CURRENT_RELEASE_PHASE >= phase;
+                            if (Framework.FIRST_EXPANSION_PHASE.TryGetValue(command[2], out int phase))
+                            {
+                                return Framework.CURRENT_RELEASE_PHASE >= phase;
+                            }
+                            else
+                            {
+                                return Framework.CURRENT_RELEASE_VERSION >= command[2].Split('.').ConvertVersion();
+                            }
                         }
                         throw new Exception($"Malformed #IF AFTER statement. '{string.Join(" ", command)}'");
                     case "RETAIL":
@@ -365,6 +372,24 @@ namespace ATT
             else throw new Exception($"Malformed #IF statement. '{string.Join(" ", command)}'");
         }
 
+        static void ProcessImportCommand(string[] command, StringBuilder builder, string content, ref int index, int length)
+        {
+            string filename = "..\\..\\..\\..\\..\\..\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\" + string.Join(" ", command.Skip(1));
+            if (File.Exists(filename))
+            {
+                if (index > 0) builder.Append("\n");
+                builder.Append("(function() ").Append(ProcessContent(File.ReadAllText(filename))).Append(" end)();");
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("File doesn't exist:");
+                Console.WriteLine(Path.GetFullPath(filename));
+                Console.Write("You will need to clone the Retail version of AllTheThings in order to develop for this version of the addon.");
+                Console.ReadLine();
+            }
+        }
+
         static bool ProcessInternalCommandBlock(string[] command, StringBuilder builder, string content, ref int index, int length)
         {
             // Parse the next command in the block
@@ -407,6 +432,72 @@ namespace ATT
             // Reset the index to the previous index.
             index = previousIndex;
             return false;
+        }
+
+        private static void ParseJSONFile(string fileName)
+        {
+            // Load the text and then convert it to a common JSON data format.
+            var data = Framework.ToDictionary(File.ReadAllText(fileName));
+            if (data == null)
+            {
+                Trace.WriteLine(fileName + ": Invalid format!");
+                Errored = true;
+            }
+            else
+            {
+                Trace.WriteLine(fileName + ": Complete");
+
+                // Attempt to merge the data into the Database.
+                Framework.Merge(data);
+            }
+        }
+
+        private static void ParseLUAFile(Lua lua, string fileName)
+        {
+            // copy the base LUA state for use on this file due to shared access issues
+            //Lua lua = new Lua(mainLua.State);
+            string content = string.Empty;
+            do
+            {
+                try
+                {
+                    //Trace.WriteLine("Parsing:" + fileName);
+                    lua.DoString("AllTheThings = {};_ = AllTheThings;");
+                    lua.DoString(content = ProcessContent(File.ReadAllText(fileName)));
+                    Framework.Merge(lua.GetTable("AllTheThings"));
+                    break;
+                }
+                // Invalid data are thrown on purpose when ATT-specific formatting issues are encountered in LUA files
+                catch (InvalidDataException e)
+                {
+                    Trace.WriteLine(fileName);
+                    Trace.WriteLine(e.Message);
+                    Trace.WriteLine("Press Enter once you have resolved the issue.");
+                    Console.ReadLine();
+                }
+                catch (Exception e)
+                {
+                    Trace.WriteLine(fileName);
+                    Trace.WriteLine(e.Message);
+                    var line = GetLineNumber(e);
+                    if (line > -1)
+                    {
+                        var lines = content.Split(new char[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+                        for (int i = Math.Max(0, line - 2), count = 0; count < 4 && i < lines.Length; ++count)
+                        {
+                            Trace.Write(i);
+                            Trace.Write(":");
+                            if (i == line) Trace.Write(">");
+                            Trace.WriteLine(lines[i]);
+                            ++i;
+                        }
+                    }
+                    else Trace.WriteLine(e);
+                    Trace.WriteLine("Press Enter once you have resolved the issue.");
+                    Console.ReadLine();
+                }
+            }
+            while (true);
         }
     }
 }

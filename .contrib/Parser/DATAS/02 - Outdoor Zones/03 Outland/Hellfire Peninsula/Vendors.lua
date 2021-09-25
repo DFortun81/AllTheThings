@@ -1,73 +1,42 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 -- The following recipes and gems go through a lot of changes between TBC and Cata.
 local JEWELCRAFTING_PATTERNS = {
-	i(23131, {	-- Design: Bold Blood Garnet (Both)
-		["spellID"] = 28905,	-- Bold Blood Garnet
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23130, {	-- Design: Brilliant Blood Garnet (Cata+) / Design: Teardrop Blood Garnet (TBC)
-		["spellID"] = 28903,	-- Brilliant Blood Garnet (Cata+) / Teardrop Blood Garnet (TBC)
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23148, {	-- Design: Brilliant Blood Garnet (Both)
-		-- #if BEFORE CATA
-		["spellID"] = 28938,	-- Brilliant Blood Garnet
-		-- #else
-		["spellID"] = 28903,	-- Brilliant Blood Garnet
-		-- #endif
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(28596, {	-- Design: Delicate Blood Garnet (Cata+) / Design: Bright Blood Garnet (TBC)
-		["spellID"] = 34590,	-- Delicate Blood Garnet (Cata+) / Bright Blood Garnet (TBC)
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23137, {	-- Design: Glinting Shadow Draenite (Both)
-		["spellID"] = 28914,	-- Glinting Shadow Draenite
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23135, {	-- Design: Inscribed Flame Spessarite (Both)
-		["spellID"] = 28910,	-- Inscribed Flame Spessarite
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23141, {	-- Design: Jagged Deep Peridot (Both)
-		["spellID"] = 28917,	-- Jagged Deep Peridot
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23140, {	-- Design: Radiant Deep Peridot (Both)
-		["spellID"] = 28916,	-- Radiant Deep Peridot
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23151, {	-- Design: Rigid Azure Moonstone (Cata+) / Design: Rigid Golden Draenite (TBC)
-		["spellID"] = 28948,	-- Rigid Azure Moonstone (Cata+) / Rigid Golden Draenite (TBC)
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(28291, {	-- Design: Smooth Golden Draenite (Both)
-		-- #if BEFORE CATA
-		["spellID"] = 34069,	-- Smooth Golden Draenite
-		-- #else
-		["spellID"] = 28944,	-- Smooth Golden Draenite
-		-- #endif
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23152, {	-- Design: Solid Azure Moonstone (Both)
-		["spellID"] = 28950,	-- Solid Azure Moonstone
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23147, {	-- Design: Sovereign Shadow Draenite (Both)
-		["spellID"] = 28936,	-- Sovereign Shadow Draenite
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23153, {	-- Design: Sparkling Azure Moonstone (Both)
-		["spellID"] = 28953,	-- Sparkling Azure Moonstone
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23144, {	-- Design: Timeless Shadow Draenite (Cata+) / Design: Glowing Shadow Draenite (TBC)
-		["spellID"] = 28925,	-- Timeless Shadow Draenite (Cata+) / Glowing Shadow Draenite (TBC)
-		["requireSkill"] = JEWELCRAFTING,
-	}),
+	i(23131),	-- Design: Bold Blood Garnet (Both)
+	-- #if BEFORE CATA
+	i(28596),	-- Design: Bright Blood Garnet [TBC] / Design: Delicate Blood Garnet [Cata+]
+	-- #endif
+	-- #if AFTER CATA
+	i(23130),	-- Design: Brilliant Blood Garnet [Cata+] / Design: Teardrop Blood Garnet (TBC)
+	-- #endif
+	-- #if AFTER CATA
+	i(23148),	-- Design: Brilliant Blood Garnet [Cata+] / Design: Brilliant Golden Draenite [TBC]
+	-- #endif
+	-- #if AFTER CATA
+	i(23148),	-- Design: Brilliant Golden Draenite [TBC] / Design: Brilliant Blood Garnet [Cata+]
+	-- #endif
+	-- #if AFTER CATA
+	i(28596),	-- Design: Delicate Blood Garnet [Cata+] / Design: Bright Blood Garnet [TBC]
+	-- #endif
+	i(23137),	-- Design: Glinting Flame Spessarite [TBC] / Design: Glinting Shadow Draenite [CATA+]
+	-- #if AFTER CATA
+	i(23144),	-- Design: Glowing Shadow Draenite [TBC] / Design: Timeless Shadow Draenite [Cata+]
+	-- #endif
+	i(23135),	-- Design: Inscribed Flame Spessarite (Both)
+	i(23141),	-- Design: Jagged Deep Peridot (Both)
+	i(23140),	-- Design: Radiant Deep Peridot (Both)
+	i(23151),	-- Design: Rigid Azure Moonstone [Cata+] / Design: Rigid Golden Draenite [TBC]
+	i(28291),	-- Design: Smooth Golden Draenite (Both)
+	i(23152),	-- Design: Solid Azure Moonstone (Both)
+	i(23147),	-- Design: Sovereign Shadow Draenite (Both)
+	i(23153),	-- Design: Sparkling Azure Moonstone (Both)
+	-- #if AFTER CATA
+	i(23130),	-- Design: Teardrop Blood Garnet [TBC] / Design: Brilliant Blood Garnet [Cata+]
+	-- #endif
+	-- #if AFTER CATA
+	i(23144),	-- Design: Timeless Shadow Draenite [Cata+] / Design: Glowing Shadow Draenite [TBC]
+	-- #endif
 };
 local VENDOR_GEMS = {
 	i(28458),	-- Bold Tourmaline (Both)
@@ -94,9 +63,14 @@ local VENDOR_GEMS = {
 	i(28467),	-- Smooth Amber (Both)
 	i(28470),	-- Thick Amber (TBC) / Subtle Amber (Cata+)
 };
+local FELANNIA_JOHAN_GROUPS = {};
+-- #if AFTER WRATH
+-- All of these were removed and the associated recipes are now available through trainers now.
+bubbleDown({ ["spellID"] = 0, ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS);
+-- #endif
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, {
 			n(VENDORS, {
 				n(18802, {	-- Alchemist Gribble <Alchemy Trainer>
@@ -104,8 +78,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
-							["spellID"] = 28543,	-- Elixir of Camouflage
-							["requireSkill"] = ALCHEMY,
 							["isLimited"] = true,
 						}),
 					},
@@ -115,16 +87,23 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
-							["spellID"] = 28543,	-- Elixir of Camouflage
-							["requireSkill"] = ALCHEMY,
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(18991, {	-- Aresella <Medic>
+					["coord"] = { 26.2, 62.0, HELLFIRE_PENINSULA },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(21993),	-- Manual: Heavy Netherweave Bandage
+						i(21992),	-- Manual: Netherweave Bandage
+						i(22012),	-- Master First Aid - Doctor in the House
 					},
 				}),
 				n(18267, {	-- Battlecryer Blackeye
 					["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["groups"] = pvp({
 						i(27832, {	-- Band of the Victor
 							["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
 						}),
@@ -147,7 +126,7 @@ _.Zones =
 						i(24522, {	-- Thrallmar Favor
 							["cost"] = { { "i", 24581, 5 }, },	-- 5x Mark of Thrallmar
 						}),
-					},
+					}),
 				}),
 				-- #if AFTER WRATH
 				n(35099, {	-- Bana Wildmane <Wind Rider Keeper>
@@ -165,14 +144,20 @@ _.Zones =
 					},
 				}),
 				-- #endif
+				n(18990, {	-- Burko <Medic>
+					["coord"] = { 22.4, 39.4, HELLFIRE_PENINSULA },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(21993),	-- Manual: Heavy Netherweave Bandage
+						i(21992),	-- Manual: Netherweave Bandage
+						i(22012),	-- Master First Aid - Doctor in the House
+					},
+				}),
 				n(16585, {	-- Cookie One-Eye <Food & Drink>
 					["coord"] = { 54.6, 41.0, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(27688, {	-- Recipe: Ravager Dog
-							["recipeID"] = 33284,	-- Ravager Dog
-							["requireSkill"] = COOKING,
-						}),
+						i(27688),	-- Recipe: Ravager Dog
 					},
 				}),
 				n(18997, {	-- Fallesh Sunfallow <Weapon Merchant>
@@ -190,15 +175,7 @@ _.Zones =
 				n(18753, {	-- Felannia <Enchanting Trainer>
 					["coord"] = { 52.2, 36.0, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-						-- #if BEFORE CATA
-						i(6342),	-- Formula: Enchant Chest - Minor Mana
-						-- #endif
-					},
+					["groups"] = FELANNIA_JOHAN_GROUPS,
 				}),
 				n(16602, {	-- Floyd Pinkus <Innkeeper>
 					["coord"] = { 56.7, 37.5, HELLFIRE_PENINSULA },
@@ -237,39 +214,21 @@ _.Zones =
 				n(18773, {	-- Johan Barnes <Enchanting Trainer>
 					["coord"] = { 53.6, 66.0, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-						-- #if BEFORE CATA
-						i(6342),	-- Formula: Enchant Chest - Minor Mana
-						-- #endif
-					},
+					["groups"] = FELANNIA_JOHAN_GROUPS,
 				}),
 				n(18751, {	-- Kalaen <Jewelcrafting Trainer>
 					["coord"] = { 56.78, 37.79, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["groups"] =
-						-- #if BEFORE WRATH
-						JEWELCRAFTING_PATTERNS,
-						-- #else
-						-- All of these were removed and the associated recipes are now available through trainers now.
-						bubbleDown({ ["spellID"] = 0, ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS),
-						-- #endif
+					["groups"] = JEWELCRAFTING_PATTERNS,
 				}),
 				n(18775, {	-- Lebowski <Engineering Trainer>
 					["coord"] = { 55.6, 65.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(23803, {	-- Schematic: Cogspinner Goggles
-							["spellID"] = 30316,	-- Cogspinner Goggles
-							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 						}),
 						i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
-							["spellID"] = 30318,	-- Ultra-Spectropic Detection Goggles
-							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 						}),
 					},
@@ -291,30 +250,15 @@ _.Zones =
 						i(29153),	-- Blade of the Archmage
 						i(35476),	-- Crusader's Ornamented Spaulders
 						i(35477),	-- Crusader's Scaled Gauntlets
-						i(24180, {	-- Design: Dawnstone Crab
-							["spellID"] = 31080,	-- Figurine - Dawnstone Crab
-							["requireSkill"] = JEWELCRAFTING,
-						}),
-						i(23142, {	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC)
-							["spellID"] = 28918,	-- Regal Deep Peridot (Cata+) / Enduring Deep Peridot (TBC)
-							["requireSkill"] = JEWELCRAFTING,
-						}),
+						i(24180),	-- Design: Dawnstone Crab
+						i(23142),	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC)
 						i(35469),	-- Dragonhide Robe
 						i(35464),	-- Dreadweave Robe
 						i(35465),	-- Evoker's Silk Amice
 						i(25825),	-- Footman's Longsword
-						i(22531, {	-- Formula: Enchant Bracer - Superior Healing
-							["spellID"] = 27911,	-- Enchant Bracer - Superior Healing
-							["requireSkill"] = ENCHANTING,
-						}),
-						i(22547, {	-- Formula: Enchant Chest - Exceptional Stats
-							["spellID"] = 27960,	-- Enchant Chest - Exceptional Stats
-							["requireSkill"] = ENCHANTING,
-						}),
-						i(33150, {	-- Formula: Enchant Cloak - Subtlety
-							["spellID"] = 25084,	-- Enchant Cloak - Subtlety
-							["requireSkill"] = ENCHANTING,
-						}),
+						i(22531),	-- Formula: Enchant Bracer - Superior Healing
+						i(22547),	-- Formula: Enchant Chest - Exceptional Stats
+						i(33150),	-- Formula: Enchant Cloak - Subtlety
 						i(29166),	-- Hellforged Halberd
 						i(29156),	-- Honor's Call
 						i(35470),	-- Kodohide Spaulders
@@ -345,18 +289,9 @@ _.Zones =
 							["requireSkill"] = LEATHERWORKING,
 							["timeline"] = { "removed 4.0.1.10000" },
 						}),
-						i(23619, {	-- Plans: Felsteel Shield Spike
-							["spellID"] = 29657,	-- Felsteel Shield Spike
-							["requireSkill"] = BLACKSMITHING,
-						}),
-						i(22905, {	-- Recipe: Elixir of Major Agility
-							["spellID"] = 28553,	-- Elixir of Major Agility
-							["requireSkill"] = ALCHEMY,
-						}),
-						i(25870, {	-- Recipe: Transmute Skyfire Diamond
-							["spellID"] = 32766,	-- Transmute Skyfire Diamond
-							["requireSkill"] = JEWELCRAFTING,
-						}),
+						i(23619),	-- Plans: Felsteel Shield Spike
+						i(22905),	-- Recipe: Elixir of Major Agility
+						i(25870),	-- Recipe: Transmute Skyfire Diamond
 						i(29169),	-- Ring of Convalescence
 						i(25826),	-- Sage's Band
 						i(35466),	-- Satin Hood
@@ -381,13 +316,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(23807, {	-- Schematic: Adamantite Scope
-							["spellID"] = 30329,	-- Adamantite Scope
-							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 						}),
 						i(23803, {	-- Schematic: Cogspinner Goggles
-							["spellID"] = 30316,	-- Cogspinner Goggles
-							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 						}),
 					},
@@ -410,30 +341,15 @@ _.Zones =
 						i(29167),	-- Blackened Spear
 						i(35406),	-- Crusader's Ornamented Spaulders
 						i(35413),	-- Crusader's Scaled Gauntlets
-						i(31358, {	-- Design: Dawnstone Crab
-							["spellID"] = 31080,	-- Figurine - Dawnstone Crab
-							["requireSkill"] = JEWELCRAFTING,
-						}),
-						i(31359, {	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC)
-							["spellID"] = 28918,	-- Regal Deep Peridot (Cata+) / Enduring Deep Peridot (TBC)
-							["requireSkill"] = JEWELCRAFTING,
-						}),
+						i(31358),	-- Design: Dawnstone Crab
+						i(31359),	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC)
 						i(35360),	-- Dragonhide Robe
 						i(35332),	-- Dreadweave Robe
 						i(35343),	-- Evoker's Silk Amice
 						i(25824),	-- Farseer's Band
-						i(24000, {	-- Formula: Enchant Bracer - Superior Healing
-							["spellID"] = 27911,	-- Enchant Bracer - Superior Healing
-							["requireSkill"] = ENCHANTING,
-						}),
-						i(24003, {	-- Formula: Enchant Chest - Exceptional Stats
-							["spellID"] = 27960,	-- Enchant Chest - Exceptional Stats
-							["requireSkill"] = ENCHANTING,
-						}),
-						i(33151, {	-- Formula: Enchant Cloak - Subtlety
-							["spellID"] = 25084,	-- Enchant Cloak - Subtlety
-							["requireSkill"] = ENCHANTING,
-						}),
+						i(24000),	-- Formula: Enchant Bracer - Superior Healing
+						i(24003),	-- Formula: Enchant Chest - Exceptional Stats
+						i(33151),	-- Formula: Enchant Cloak - Subtlety
 						i(25823),	-- Grunt's Waraxe
 						i(35364),	-- Kodohide Spaulders
 						i(29152),	-- Marksman's Bow
@@ -464,18 +380,9 @@ _.Zones =
 							["requireSkill"] = LEATHERWORKING,
 							["timeline"] = { "removed 4.0.1.10000" },
 						}),
-						i(24002, {	-- Plans: Felsteel Shield Spike
-							["spellID"] = 29657,	-- Felsteel Shield Spike
-							["requireSkill"] = BLACKSMITHING,
-						}),
-						i(24001, {	-- Recipe: Elixir of Major Agility
-							["spellID"] = 28553,	-- Elixir of Major Agility
-							["requireSkill"] = ALCHEMY,
-						}),
-						i(29232, {	-- Recipe: Transmute Skyfire Diamond
-							["spellID"] = 32766,	-- Transmute Skyfire Diamond
-							["requireSkill"] = JEWELCRAFTING,
-						}),
+						i(24002),	-- Plans: Felsteel Shield Spike
+						i(24001),	-- Recipe: Elixir of Major Agility
+						i(29232),	-- Recipe: Transmute Skyfire Diamond
 						i(35339),	-- Satin Hood
 						i(35409),	-- Savage Plate Helm
 						i(35383),	-- Seer's Linked Helm
@@ -498,14 +405,8 @@ _.Zones =
 					["coord"] = { 53.2, 38.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(25847, {	-- Plans: Eternium Rod
-							["spellID"] = 32657,	-- Eternium Rod
-							["requireSkill"] = BLACKSMITHING,
-							["timeline"] = { "removed 5.0.4.10000" },
-						}),
+						i(25847),	-- Plans: Eternium Rod
 						i(23638, {	-- Plans: Lesser Ward of Shielding
-							["spellID"] = 29728,	-- Lesser Ward of Shielding
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
 						}),
 					},
@@ -514,10 +415,7 @@ _.Zones =
 					["coord"] = { 54.2, 63.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(27688, {	-- Recipe: Ravager Dog
-							["recipeID"] = 33284,	-- Ravager Dog
-							["requireSkill"] = COOKING,
-						}),
+						i(27688),	-- Recipe: Ravager Dog
 					},
 				}),
 				n(19001, {	-- Talaara <Weapon Merchant>
@@ -535,18 +433,19 @@ _.Zones =
 				n(18774, {	-- Tatiana <Jewelcrafting Trainer>
 					["coord"] = { 54.6, 63.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] =
-						-- #if BEFORE WRATH
-						JEWELCRAFTING_PATTERNS,
-						-- #else
-						-- All of these were removed and the associated recipes are now available through trainers now.
-						bubbleDown({ ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS),
-						-- #endif
+					["groups"] = JEWELCRAFTING_PATTERNS,
+				}),
+				n(19004, {	-- Vodesiin <Reagents>
+					["coord"] = { 24.4, 38.8, HELLFIRE_PENINSULA },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(25848),	-- Formula: Runed Adamantite Rod
+					},
 				}),
 				n(18266, {	-- Warrant Officer Tracy Proudwell
 					["coord"] = { 56.4, 62.8, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["groups"] = pvp({
 						i(27833, {	-- Band of the Victor
 							["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
 						}),
@@ -578,9 +477,20 @@ _.Zones =
 								{ "i", 4291, 1 },	-- Silken Thread
 							},
 						}),
-					},
+					}),
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+
+-- Add in the items that aren't locked by phase.
+appendGroups({
+	i(20753),	-- Formula: Lesser Wizard Oil
+	i(20752),	-- Formula: Minor Mana Oil
+	i(20758),	-- Formula: Minor Wizard Oil
+	i(22307),	-- Pattern: Enchanted Mageweave Pouch
+	-- #if BEFORE CATA
+	i(6342),	-- Formula: Enchant Chest - Minor Mana
+	-- #endif
+}, FELANNIA_JOHAN_GROUPS);

@@ -4,7 +4,7 @@
 
 _.Zones = {
 	m(KALIMDOR, {
-		m(10, {	-- Northern Barrens -- NOTE:: using this map for legacy barrens quests since they reused the mapID
+		m(NORTHERN_BARRENS, {	-- NOTE:: using this map for legacy barrens quests since they reused the mapID
 			n(QUESTS, {
 				q(6626, {	-- A Host of Evil
 					["u"] = REMOVED_FROM_GAME,

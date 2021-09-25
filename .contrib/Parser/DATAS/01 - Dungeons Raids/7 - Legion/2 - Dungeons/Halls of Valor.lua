@@ -2,9 +2,9 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(7, {	-- Legion
+_.Instances = { tier(LEGION_TIER, {
 	inst(721, {	-- Halls of Valor
-		["coord"] = { 70.4, 69.4, 634 },
+		["coord"] = { 70.4, 69.4, STORMHEIM },
 		["maps"] = { 703, 704, 705 },
 		["lvl"] = 98,
 		["g"] = {
@@ -44,7 +44,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(1,  {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 				}),
 				e(1485, {	-- Hymdall
@@ -135,13 +135,14 @@ _.Instances = { tier(7, {	-- Legion
 						i(139283),	-- Wristbands of Magnificent Splender
 						i(133685),	-- Odyn's Boon
 						i(133686),	-- Stormforged Inferno
+						i(136784),	-- Eternity Sand
 					},
 				}),
 			}),
 			d(2,  {	-- Heroic
 				["lvl"] = 110,
 				["g"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 					}),
 					e(1485, {	-- Hymdall
@@ -234,6 +235,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(139283),	-- Wristbands of Magnificent Splender
 							i(133685),	-- Odyn's Boon
 							i(133686),	-- Stormforged Inferno
+							i(136784),	-- Eternity Sand
 						},
 					}),
 				},
@@ -245,7 +247,7 @@ _.Instances = { tier(7, {	-- Legion
 						ach(10542),	-- I Got What You Mead
 						ach(10544),	-- Stag Party
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 					}),
 					e(1485, {	-- Hymdall
@@ -341,6 +343,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(139283),	-- Wristbands of Magnificent Splender
 							i(133685),	-- Odyn's Boon
 							i(133686),	-- Stormforged Inferno
+							i(136784),	-- Eternity Sand
 						},
 					}),
 				},

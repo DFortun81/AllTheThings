@@ -4,18 +4,28 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
-		n(-939, {	-- Covenant: Kyrian
+	tier(SL_TIER, {
+		n(-939, {	-- Kyrian
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 			["maps"] = {
-				1707,	-- Elysian Hold
-				1708,	-- Elysian Hold
+				ARCHONS_RISE,
+				SANCTUM_OF_BINDING,
 			},
 			["g"] = {
 				n(VENDORS, {
 					n(174937, {	-- Adjutant Galos <Renown Quartermaster>
-						["coord"] = { 63.3, 30.6, 1708 },
-						["g"] = {
+						["coord"] = { 63.3, 30.6, SANCTUM_OF_BINDING },
+						["g"] = sharedData(
+							{ ["customCollect"] = "SL_COV_KYR", }	-- Kyrian
+							, {
+							i(186485, {	-- Ascendant's Aquilon (MOUNT!)
+								["cost"] = { { "c", 1813, 7500 } },	-- 7,500 Reservoir Anima
+							}),
+							i(184665, {	-- Chronicle of Lost Memories
+								["cost"] = {
+									{ "c", 1885, 35 },
+								},
+							}),
 							i(180762, {	-- Phalynx of Humility (MOUNT!)
 								["cost"] = {
 									{ "c", 1813, 5000 },
@@ -38,6 +48,23 @@ _.ExpansionFeatures =
 								["cost"] = {
 									{ "c", 1813, 1500 },
 									{ "c", 1885, 30 },
+								},
+							}),
+							i(183249, {	-- Memory of a Vital Sacrifice
+								["cost"] = { { "c", 1813, 250 } },	-- 250x Reservoir Anima
+							}),
+							i(186516, {	-- Ensemble: Devoted Aspirant's Regalia
+								["cost"] = { { "c", 1813, 10000 } },	-- 10,000 Reservoir Anima
+								["g"] = {
+									i(185006),	-- Devoted Aspirant's Drape
+									i(185001),	-- Devoted Aspirant's Handwraps
+									i(185002),	-- Devoted Aspirant's Hood
+									i(185003),	-- Devoted Aspirant's Leggings
+									i(185007),	-- Devoted Aspirant's Robes
+									i(185004),	-- Devoted Aspirant's Sash
+									i(185000),	-- Devoted Aspirant's Slippers
+									i(184999),	-- Devoted Aspirant's Vestments
+									i(185005),	-- Devoted Aspirant's Wraps
 								},
 							}),
 							i(181288, {	-- Halo of the Harmonious
@@ -349,10 +376,10 @@ _.ExpansionFeatures =
 									{ "c", 1885, 40 },
 								},
 							}),
-						},
+						}),
 					}),
 					n(175521, {	-- Alisius <Normal Nathrian Weaponsmith>
-						["coord"] = { 56.1, 84.5, 1707 },	-- Archon's Rise
+						["coord"] = { 56.1, 84.5, ARCHONS_RISE },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 							["modID"] = 3,	-- Normal
@@ -590,7 +617,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175524, {	-- Battlemaster Endios <Mythic Nathrian Weaponsmith>
-						["coord"] = { 58.0, 81.4, 1707 },	-- Archon's Rise
+						["coord"] = { 58.0, 81.4, ARCHONS_RISE },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 							["modID"] = 6,	-- Mythic
@@ -828,7 +855,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175823, {	-- Forgelite Neptira <Kyrian Armorsmith>
-						["coord"] = { 56.9, 30.9, 1708 },
+						["coord"] = { 56.9, 30.9, SANCTUM_OF_BINDING },
 						["g"] = {
 							i(181290, {	-- Harmonious Sigil of the Archon
 								["cost"] = { { "c", 1813, 20 } },	-- 20x Reservoir Anima
@@ -1028,7 +1055,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(175522, {	-- Kelli Hoo <Raid Finder Nathrian Weaponsmith>
-						["coord"] = { 55.0, 82.9, 1707 },	-- Archon's Rise
+						["coord"] = { 55.0, 82.9, ARCHONS_RISE },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 							["modID"] = 4,	-- LFR
@@ -1036,10 +1063,10 @@ _.ExpansionFeatures =
 							i(177872, {	-- Archon's Guiding Glaive
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(184272, {	-- Ascended Gladius of Glory
@@ -1066,10 +1093,10 @@ _.ExpansionFeatures =
 							i(184270, {	-- Disciple's Peacebound Poniard
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(174298, {	-- Dutiful Disciple's Cleaver
@@ -1089,10 +1116,10 @@ _.ExpansionFeatures =
 							i(177865, {	-- Faithful Sidearm
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(175251, {	-- Forked Blade of Fortitude
@@ -1114,10 +1141,10 @@ _.ExpansionFeatures =
 							i(174302, {	-- Labrys of the Loyal Larion
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(175279, {	-- Lost Soul Xiphos
@@ -1147,19 +1174,19 @@ _.ExpansionFeatures =
 							i(180315, {	-- Polemarch's Scepter of Faith
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(184243, {	-- Praetorian Wingblade
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(184273, {	-- Puremind Piercer
@@ -1173,10 +1200,10 @@ _.ExpansionFeatures =
 							i(184274, {	-- Reaver of Renewed Resolve
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(184275, {	-- Sacred Sparrer's Edge
@@ -1190,28 +1217,28 @@ _.ExpansionFeatures =
 							i(177860, {	-- Silvered Recurve of Reconciliation
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(177849, {	-- Soulbearer's Blade of Salvation
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(177855, {	-- Spellblade of Antiquity
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(178973, {	-- Symphonic Chimekeeper
@@ -1240,10 +1267,10 @@ _.ExpansionFeatures =
 							i(178975, {	-- Vesiphone's Vesper of Reflection
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(184236, {	-- Warglaive of Devoted Might
@@ -1257,16 +1284,16 @@ _.ExpansionFeatures =
 							i(184271, {	-- Xandria's Kopis of Courage
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 						}),
 					}),
 					n(175523, {	-- Provisioner Prothos <Heroic Nathrian Weaponsmith>
-						["coord"] = { 57.0, 79.8, 1707 },	-- Archon's Rise
+						["coord"] = { 57.0, 79.8, ARCHONS_RISE },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 							["modID"] = 5,	-- Heroic
@@ -1510,3 +1537,38 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(63602),	-- learning Ensemble: Devoted Aspirant's Regalia
+};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10100, {	-- Shadowlands
+		n(-939, {	-- Kyrian
+			n(-163, {	-- Armor
+				n(-45, {	-- Mail
+					i(179394),	-- 9.0 Covenant - Bastion - Mail - Base - Head
+					i(179395),	-- 9.0 Covenant - Bastion - Mail - Base - Chest
+					i(179396),	-- 9.0 Covenant - Bastion - Mail - Base - Feet
+					i(179397),	-- 9.0 Covenant - Bastion - Mail - Base - Hands
+					i(179398),	-- 9.0 Covenant - Bastion - Mail - Base - Legs
+					i(179399),	-- 9.0 Covenant - Bastion - Mail - Base - Shoulders
+					i(179400),	-- 9.0 Covenant - Bastion - Mail - Base - Waist
+					i(179401),	-- 9.0 Covenant - Bastion - Mail - Base - Wrists
+				}),
+				n(-46, {	-- Plate
+					i(177684),	-- 9.0 Covenant - Bastion - Plate - Head
+					i(177685),	-- 9.0 Covenant - Bastion - Plate - Chest
+					i(177686),	-- 9.0 Covenant - Bastion - Plate - Feet
+					i(177687),	-- 9.0 Covenant - Bastion - Plate - Hands
+					i(177688),	-- 9.0 Covenant - Bastion - Plate - Legs
+					i(177689),	-- 9.0 Covenant - Bastion - Plate - Shoulders
+					i(177690),	-- 9.0 Covenant - Bastion - Plate - Waist
+					i(177691),	-- 9.0 Covenant - Bastion - Plate - Wrists
+				}),
+				n(-322, {	-- Cloaks
+					i(177692),	-- 9.0 Covenant - Bastion - Plate - Base - Cloak
+					i(179402),	-- 9.0 Covenant - Bastion - Mail - Base - Cloak
+				}),
+			}),
+		}),
+	}),
+});

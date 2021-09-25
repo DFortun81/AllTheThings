@@ -8,7 +8,7 @@ _.WorldEvents =
 		n(ACHIEVEMENTS, {
 			ach(9069, {	-- An Awfully Big Adventure
 				["collectible"] = false,
-				["filterID"] = 101,	-- Battle Pet
+				["filterID"] = BATTLE_PETS,
 				["g"] = {
 					crit(10, {	-- Christoph VonFeasel
 						["coord"] = { 47.4, 62.2, 407 },

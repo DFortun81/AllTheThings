@@ -4,13 +4,13 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
-		m(864, {	-- Vol'dun
-			n(-169, {	-- Emissary Quests
+	m(ZANDALAR, {
+		m(VOLDUN, {
+			n(EMISSARY_QUESTS, {
 				q(54461, {	-- Supplies from the Voldunai
 					["provider"] = { "n", 135804 },	-- Hoarder Jena
 					["lvl"] = 120,
-					["coord"] = { 56.68, 49.74, 864 },
+					["coord"] = { 56.68, 49.74, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -23,7 +23,7 @@ _.Zones =
 				q(50603, {	-- Voldunai
 					["provider"] = { "n", 135804 },	-- Hoarder Jena
 					["lvl"] = 120,
-					["coord"] = { 56.68, 49.74, 864 },
+					["coord"] = { 56.68, 49.74, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),

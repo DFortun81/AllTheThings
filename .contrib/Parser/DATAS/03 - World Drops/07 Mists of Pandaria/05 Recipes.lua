@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(5, {	-- Mists of Pandaria
+	tier(MOP_TIER, {
 		f(200, {	-- Recipes
 			prof(BLACKSMITHING, {
 				i(100865, {	-- Plans: Balanced Trillium Ingot and Its Uses
@@ -16,12 +16,15 @@ _.WorldDrops =
 				}),
 			}),
 			prof(ENGINEERING, {
-				i(100910, { 	-- Schematic: Chief Engineer Jard's Journal
-					recipe(139197),	-- Advanced Refrigeration Unit
-					recipe(139176),	-- Jard's Peculiar Energy Source
-					recipe(139196),	-- Pierre
-					recipe(143714),	-- Rascal-Bot
-					recipe(139192),	-- Sky Golem
+				i(100910, {	-- Schematic: Chief Engineer Jard's Journal
+					["spellID"] = 0,	-- Not learnable.
+					["g"] = {
+						recipe(139197),	-- Advanced Refrigeration Unit
+						recipe(139176),	-- Jard's Peculiar Energy Source
+						recipe(139196),	-- Pierre
+						recipe(143714),	-- Rascal-Bot
+						recipe(139192),	-- Sky Golem
+					},	
 				}),
 			}),
 			prof(INSCRIPTION, {
@@ -55,6 +58,10 @@ _.WorldDrops =
 				}),
 				i(100864, {	-- Pattern: Hardened Magnificent Hide and Its Uses
 					["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
+					["spellID"] = 0,	-- Not learnable.
+					["g"] = {
+						recipe(142976),	-- Hardened Magnificent Hide
+					},
 				}),
 				i(95467),	-- Pattern: Magnificence of Leather
 				i(95468),	-- Pattern: Magnificence of Scales

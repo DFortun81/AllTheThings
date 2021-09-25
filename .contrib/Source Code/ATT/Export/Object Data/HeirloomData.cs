@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -25,7 +25,7 @@ namespace ATT
                 base.Constructor(builder, data, fields);
 
                 // Check to make sure that only filterable types get written here.
-                // Rings, Necks, and Trinkets by default will 
+                // Rings, Necks, and Trinkets by default will
                 if (data.TryGetValue("f", out object fObj))
                 {
                     var f = Convert.ToInt64(fObj);

@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(87, {	-- Ironforge
-			n(-38, {	-- Profession
+		m(IRONFORGE, {
+			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(QUESTS, {
 						q(29481, {	-- Elixir Master
-							["provider"] = { "n", 5177 },	-- Tally Berryfizz (Ironfoge)
-							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
+							["provider"] = { "n", 5177 },	-- Tally Berryfizz
+							["coord"] = { 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -25,8 +25,8 @@ _.Zones =
 							},]]
 						}),
 						q(29067, {	-- Potion Master
-							["provider"] = { "n", 5177 },	-- Tally Berryfizz (Ironfoge)
-							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
+							["provider"] = { "n", 5177 },	-- Tally Berryfizz
+							["coord"] = { 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -40,8 +40,8 @@ _.Zones =
 							},]]
 						}),
 						q(29482, {	-- Transmutation Master
-							["provider"] = { "n", 5177 },	-- Tally Berryfizz (Ironfoge)
-							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
+							["provider"] = { "n", 5177 },	-- Tally Berryfizz
+							["coord"] = { 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -65,7 +65,7 @@ _.Zones =
 					n(QUESTS, {
 						q(29352, {	-- A Fowl Shortage
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
-							["coord"] = { 60.1, 36.4, 87 },
+							["coord"] = { 60.1, 36.4, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -79,7 +79,7 @@ _.Zones =
 						}),
 						q(29351, {	-- A Round for the Guards
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
-							["coord"] = { 60.1, 36.4, 87 },
+							["coord"] = { 60.1, 36.4, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -93,7 +93,7 @@ _.Zones =
 						}),
 						q(29355, {	-- Can't Get Enough Spice Bread
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
-							["coord"] = { 60.1, 36.4, 87 },
+							["coord"] = { 60.1, 36.4, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -107,7 +107,7 @@ _.Zones =
 						}),
 						q(29356, {	-- I Need to Cask a Favor
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
-							["coord"] = { 60.1, 36.4, 87 },
+							["coord"] = { 60.1, 36.4, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -121,7 +121,7 @@ _.Zones =
 						}),
 						q(29353, {	-- Keepin' the Haggis Flowin'
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
-							["coord"] = { 60.1, 36.4, 87 },
+							["coord"] = { 60.1, 36.4, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -139,7 +139,7 @@ _.Zones =
 					n(QUESTS, {
 						q(1618,  {	-- Gearing Redridge
 							["provider"] = { "n", 6031 },	-- Tormus Deepforge
-							["coord"] = { 49.0, 42.4, 87 },
+							["coord"] = { 49.0, 42.4, IRONFORGE },
 							["requireSkill"] = BLACKSMITHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 15,
@@ -149,7 +149,7 @@ _.Zones =
 						}),
 						q(1578,  {	-- Supplying the Front
 							["provider"] = { "n", 6031 },	-- Tormus Deepforge
-							["coord"] = { 49.0, 42.4, 87 },
+							["coord"] = { 49.0, 42.4, IRONFORGE },
 							["requireSkill"] = BLACKSMITHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
@@ -166,131 +166,107 @@ _.Zones =
 						}),
 					}),
 					n(QUESTS, {
-						i(67414, {	-- Bag of Shiny Things
-							["description"] = "|cff66ccffFishing Daily Quest Reward|r",
-							["crs"] = { 5161 },	-- Grimnur Stonebrand
-							["g"] = {
-								i(44983),	-- Strand Crawler
-								i(33820),	-- Weather-Beaten Fishing Hat
-								i(45991),	-- Bone Fishing Pole
-								i(45992),	-- Jeweled Fishing Pole
-							},
-						}),
-						q(29342, {	-- Cold Water Fishing
-							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
-							["coord"] = { 48.4, 8.2, 87 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 10,
-							["g"] = {
-								crit(1, {	-- Cold Water Fishing
-									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
-								}),
-							},
-						}),
-						q(8229, {	-- Could I get a Fishing Flier?
-							["provider"] = { "n", 15119 },	-- Barrus
-							["coord"] = { 28.6, 74.6, 87 },
-							["isBreadcrumb"] = true,
-							["repeatable"]= true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 50,
-						}),
-						q(29344, {	-- Fish fer Squrky
-							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
-							["coord"] = { 48.4, 8.2, 87 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 10,
-							["g"] = {
-								crit(3, {	-- Fish fer Squrky
-									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
-								}),
-							},
-						}),
-						q(6609, {	-- I Got Nothin' Left!
-							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
-							["coord"] = { 48.4, 8.2, 87 },
-							["isBreadcrumb"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 35,
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						q(29347, {	-- Live Bait
-							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
-							["coord"] = { 48.4, 8.2, 87 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 10,
-							["g"] = {
-								crit(4, {	-- Live Bait
-									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
-								}),
-							},
-						}),
-						q(29343, {	-- One fer the Ages
-							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
-							["coord"] = { 48.4, 8.2, 87 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 10,
-							["g"] = {
-								crit(2, {	-- One fer the Ages
-									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
-								}),
-							},
-						}),
-						q(29350, {	-- The Gnomish Bait-o-Matic
-							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
-							["coord"] = { 48.4, 8.2, 87 },
-							["isDaily"] = true,
-							["requireSkill"] = FISHING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 10,
-							["g"] = {
-								crit(5, {	-- The Gnomish Bait-o-Matic
-									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
-								}),
-							},
-						}),
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(67414, {	-- Bag of Shiny Things
+								["description"] = "Fishing Daily Quest Reward",
+								["crs"] = { 5161 },	-- Grimnur Stonebrand
+								["g"] = {
+									i(44983),	-- Strand Crawler
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								},
+							}),
+							q(29342, {	-- Cold Water Fishing
+								["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
+								["coord"] = { 48.4, 8.2, IRONFORGE },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 10,
+								["g"] = {
+									crit(1, {	-- Cold Water Fishing
+										["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
+									}),
+								},
+							}),
+							q(8229, {	-- Could I get a Fishing Flier?
+								["provider"] = { "n", 15119 },	-- Barrus
+								["coord"] = { 28.6, 74.6, IRONFORGE },
+								["isBreadcrumb"] = true,
+								["repeatable"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 50,
+							}),
+							q(29344, {	-- Fish fer Squrky
+								["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
+								["coord"] = { 48.4, 8.2, IRONFORGE },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 10,
+								["g"] = {
+									crit(3, {	-- Fish fer Squrky
+										["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
+									}),
+								},
+							}),
+							q(6609, {	-- I Got Nothin' Left!
+								["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
+								["coord"] = { 48.4, 8.2, IRONFORGE },
+								["isBreadcrumb"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 35,
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(29347, {	-- Live Bait
+								["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
+								["coord"] = { 48.4, 8.2, IRONFORGE },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 10,
+								["g"] = {
+									crit(4, {	-- Live Bait
+										["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
+									}),
+								},
+							}),
+							q(29343, {	-- One fer the Ages
+								["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
+								["coord"] = { 48.4, 8.2, IRONFORGE },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 10,
+								["g"] = {
+									crit(2, {	-- One fer the Ages
+										["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
+									}),
+								},
+							}),
+							q(29350, {	-- The Gnomish Bait-o-Matic
+								["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
+								["coord"] = { 48.4, 8.2, IRONFORGE },
+								["isDaily"] = true,
+								["requireSkill"] = FISHING,
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 10,
+								["g"] = {
+									crit(5, {	-- The Gnomish Bait-o-Matic
+										["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
+									}),
+								},
+							}),
+						},
 					}),
 					i(122204, {	-- Music Roll: Cold Mountain
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(34484),		-- Old Ironjaw
-				}),
-				prof(INSCRIPTION, {
-					n(QUESTS, {
-						q(39956, {	-- The Legacy Passed On
-							["provider"] = { "n", 97762 },	-- Bill Spearshaker <Author Extrodinaire>
-							["coord"] = { 77.2, 10.4, 87 },
-							["sourceQuest"] = 39955,	-- The Plot Thickens
-							["requireSkill"] = INSCRIPTION,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 108,
-							["g"]= {
-								recipe(192804),	-- Steamy Romance Novel Kit
-							},
-						}),
-					}),
-				}),
-				prof(TAILORING, {
-					n(QUESTS, {
-						q(6625,  {	-- Alliance Trauma
-							["provider"] = { "n", 5150 },	-- Nissa Firestone
-							["coord"] = { 55.1, 58.3, 87 },
-							["isBreadcrumb"] = true,
-							["requireSkill"] = TAILORING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 35,
-						}),
-					}),
 				}),
 			}),
 		}),

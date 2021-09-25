@@ -2,8 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(313, { 	-- Temple of the Jade Serpent
+_.Instances = { tier(MOP_TIER, {
+	inst(313, {	-- Temple of the Jade Serpent
 		["maps"] = { 429, 430 },
 		["lvl"] = { 10 },
 		["g"] = {
@@ -46,7 +46,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["model"] = 534984,
 					}),
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					n(65317, {	-- Xiang <The Two Jugglers>
 						i(87522),	-- Star Carrier Bracers  [Lucetia: Only drops from this mob don't remove]
 					}),

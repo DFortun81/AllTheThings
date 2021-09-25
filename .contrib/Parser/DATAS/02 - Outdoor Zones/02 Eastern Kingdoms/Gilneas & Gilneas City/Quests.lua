@@ -297,7 +297,7 @@ _.Zones =
 					q(14273, {	-- Shady Associates
 						["provider"] = { "n", 35840 },	-- Gwen Armstead
 						["sourceQuest"] = 14099,	-- Royal Orders
-						["coords"] = { 70.79, 55.05, 202 },
+						["coord"] = { 70.79, 55.05, 202 },
 						["races"] = { WORGEN },
 						["classes"] = { WARLOCK },
 					}),
@@ -495,7 +495,7 @@ _.Zones =
 					["races"] = { WORGEN },
 				}),
 				q(14401, {	-- Grandma's Cat
-					["provider"] = { "n", 36452 },	-- Grandma Wahl
+					["provider"] = { "n", 36458 },	-- Grandma Wahl
 					["sourceQuest"] = 14400,	-- I Can't Wear This
 					["coord"] = { 32.52, 75.48, 179 },
 					["races"] = { WORGEN },
@@ -512,7 +512,7 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(14399, {	-- Grandma's Lost It Alright
-					["provider"] = { "n", 36452 },	-- Grandma Wahl
+					["provider"] = { "n", 36458 },	-- Grandma Wahl
 					["sourceQuest"] = 14398,	-- Grandma Wahl
 					["coord"] = { 32.52, 75.48, 179 },
 					["races"] = { WORGEN },
@@ -548,7 +548,7 @@ _.Zones =
 					["sourceQuest"] = 14416,	-- The Hungry Ettin
 				}),
 				q(14400, {	-- I Can't Wear This
-					["provider"] = { "n", 36452 },	-- Grandma Wahl
+					["provider"] = { "n", 36458 },	-- Grandma Wahl
 					["sourceQuest"] = 14399,	-- Grandma's Lost It Alright
 					["coord"] = { 32.52, 75.48, 179 },
 					["races"] = { WORGEN },
@@ -716,7 +716,7 @@ _.Zones =
 					},
 				}),
 				q(14402, {	-- Ready to Go
-					["provider"] = { "n", 36452 },	-- Grandma Wahl
+					["provider"] = { "n", 36458 },	-- Grandma Wahl
 					["sourceQuest"] = 14401,	-- Grandma's Cat
 					["coord"] = { 32.52, 75.48, 179 },
 					["races"] = { WORGEN },
@@ -937,3 +937,9 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(14319),	-- BETA Further Treatment
+		q(14220),	-- BETA This Is the End
+	}),
+});

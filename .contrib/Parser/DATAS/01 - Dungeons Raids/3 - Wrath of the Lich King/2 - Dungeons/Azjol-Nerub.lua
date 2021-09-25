@@ -2,30 +2,30 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(272, { 	-- Azjol-Nerub
+_.Instances = { tier(WOTLK_TIER, {
+	inst(272, {	-- Azjol-Nerub
 		["lvl"] = 60,
 		["mapID"] = 157,
 		["coord"] = { 26.0, 50.6, 115 },
-		["maps"] =  { 158, 159 },
+		["maps"] = { 158, 159 },
 		["groups"] = {
 			n(QUESTS, {
 				q(29807, {	-- Death to the Traitor King
 					["provider"] = { "n", 55564 },	-- Reclaimer A'zak
 					["groups"] = {
-						i(44359), 	-- Don Soto's Boots
+						i(44359),	-- Don Soto's Boots
 						i(44361),	-- Greaves of the Traitor
-						i(44360), 	-- Husk Shard Sabatons
-						i(44358), 	-- Kilix's Silk Slippers
+						i(44360),	-- Husk Shard Sabatons
+						i(44358),	-- Kilix's Silk Slippers
 					},
 				}),
 				q(29808, {	-- Don't Forget the Eggs!
 					["provider"] = { "n", 55564 },	-- Reclaimer A'zak
 					["groups"] = {
-						i(44362), 	-- Expelling Gauntlets
+						i(44362),	-- Expelling Gauntlets
 						i(44365),	-- Gloves of Banished Infliction
-						i(44363), 	-- Purging Handguards
-						i(44364), 	-- Wraps of Quelled Bane
+						i(44363),	-- Purging Handguards
+						i(44364),	-- Wraps of Quelled Bane
 					},
 				}),
 				q(29811, {	-- The Gatewatcher's Talisman
@@ -34,7 +34,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(1,   {	-- Normal
 				ach(480),	-- Azjol-Nerub
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(35664, {	-- Unknown Archaeologist's Hammer
 						["crs"] = {
 							29128,	-- Anub'ar Prime Guard
@@ -68,7 +68,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					}),
 				}),
-				cr(28684, e(585, { 	-- Krik'thir the Gatewatcher
+				cr(28684, e(585, {	-- Krik'thir the Gatewatcher
 					crit(1, {	-- Krik'thir the Gatewatcher slain
 						["achievementID"] = 480,	-- Azjol-Nerub
 					}),
@@ -115,7 +115,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 80,
 				["groups"] = {
 					ach(491),	-- Heroic: Azjol-Nerub
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(37624, {	-- Stained-Glass Shard Ring
 							["crs"] = {
 								29128,	-- Anub'ar Prime Guard
@@ -146,7 +146,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							},
 						}),
 					}),
-					cr(28684, e(585, { 	-- Krik'thir the Gatewatcher
+					cr(28684, e(585, {	-- Krik'thir the Gatewatcher
 						ach(1296, {	-- Watch Him Die
 							["crs"] = {
 								28730,	-- Watcher Gashra

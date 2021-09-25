@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9958, {	-- Player vs Player
+	pvp(n(-9958, {	-- Player vs Player
 		n(-9992, {	-- Silvershard Mines
 			["maps"] = { 423 },	-- Silvershard Mines
 			["g"] = {
@@ -37,5 +37,5 @@ _.Achievements =
 				}),
 			},
 		}),
-	}),
+	})),
 };

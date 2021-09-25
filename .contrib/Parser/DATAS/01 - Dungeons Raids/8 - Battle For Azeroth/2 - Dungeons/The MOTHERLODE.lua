@@ -2,11 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(8, {	-- Battle For Azeroth
+_.Instances = { tier(BFA_TIER, {
 	inst(1012, {	-- The MOTHERLODE!!
 		["coords"] = {
-			{ 39.2, 71.5, 862 },	-- Alliance, Zuldazar
-			{ 44.3, 92.6, 1165 },	-- Horde, Dazar'alor
+			{ 39.2, 71.5, ZULDAZAR },	-- Alliance
+			{ 44.3, 92.6, DAZARALOR },	-- Horde
 		},
 		["maps"] = { 1010 },	-- The Motherlode
 		["lvl"] = 110,
@@ -25,7 +25,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isWorldQuest"] = true,
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(168144, {	-- Extremely Precise Vial
 					["crs"] = {
 						133432,	-- Venture Co. Alchemist

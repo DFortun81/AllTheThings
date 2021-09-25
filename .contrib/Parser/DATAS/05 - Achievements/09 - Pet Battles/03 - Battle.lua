@@ -17,16 +17,16 @@ _.Achievements =
 			ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 				i(184512),	-- Winterleaf Spriggan
 				crit(1,  {	-- Crystalsnap
-					--["coord"] = { 31.2, 74.2, 390 },
+					--["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
 				}),
 				crit(2,  {	-- Briarpaw
-					--["coord"] = { 50.0, 31.2, 539 },
+					--["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				crit(3,  {	-- Chittermaw
 					--["coord"] = { 28.6, 33.8, 117 },
 				}),
 				crit(4,  {	-- Mistwing
-					--["coord"] = { 34.8, 59.6, 554 },
+					--["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 				}),
 				crit(5,  {	-- Sewer Creeper
 					--["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
@@ -35,102 +35,102 @@ _.Achievements =
 					--["coord"] = { 49.8, 57.0, 207 },
 				}),
 				crit(7,  {	-- Digallo
-					--["coord"] = { 61.4, 32.8, 198 },
+					--["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
 				}),
 				crit(8,  {	-- Gelatinous
-					--["coord"] = { 57.0, 42.2, 388 },
+					--["coord"] = { 57.0, 42.2, TOWNLONG_STEPPES },
 				}),
 				crit(9,  {	-- Kostos <Challenger of the Small>
-					--["coord"] = { 34.8, 59.6, 554 },
+					--["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 				}),
 				crit(10, {	-- Glurp
-					--["coord"] = { 34.8, 59.6, 554 },
+					--["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 				}),
 			}),
 			ach(9069,  {	-- An Awfully Big Adventure
 				i(120121),	-- Trunks
 				crit(1,  {	-- Aki the Chosen (Vale of Eternal Blossoms)
-					["coord"] = { 31.2, 74.2, 390 },
+					["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
 				}),
 				crit(2,  {	-- Ashlei (Shadowmoon Valley, Draenor)
-					["coord"] = { 50.0, 31.2, 539 },
+					["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				crit(3,  {	-- Beegle Blastfuse (Howling Fjord)
 					["coord"] = { 28.6, 33.8, 117 },
 				}),
 				crit(4,  {	-- Blingtron 4000 (Celestial Tournament)
-					["coord"] = { 34.8, 59.6, 554 },
+					["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 				}),
-				crit(5,  {	-- Bloodknight Antari (Shadowmoon Valley, Outland)
+				crit(5,  {	-- Bloodknight Antari (Outland)
 					["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 				}),
 				crit(6,  {	-- Bordin Steadyfist (Deepholm)
 					["coord"] = { 49.8, 57.0, 207 },
 				}),
-				crit(7,  {	-- Brok (Mount Hyjal)
-					["coord"] = { 61.4, 32.8, 198 },
+				crit(7,  {	-- Brok
+					["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
 				}),
-				crit(8,  {	-- Burning Pandaren Spirit (Townlong Steppes)
-					["coord"] = { 57.0, 42.2, 388 },
+				crit(8,  {	-- Burning Pandaren Spirit
+					["coord"] = { 57.0, 42.2, TOWNLONG_STEPPES },
 				}),
 				crit(9,  {	-- Chen Stormstout (Celestial Tournament)
-					["coord"] = { 34.8, 59.6, 554 },
+					["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 				}),
 				crit(10, {	-- Christoph VonFeasel (Darkmoon Island)
 					["coord"] = { 47.4, 62.2, 407 },
 				}),
-				crit(11, {	-- Courageous Yon (Kun-Lai Summit)
-					["coord"] = { 35.8, 73.6, 379 },
+				crit(11, {	-- Courageous Yon
+					["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
 				}),
-				crit(12, {	-- Cymre Brightblade (Gorgrond)
-					["coord"] = { 51.0, 70.6, 543 },
+				crit(12, {	-- Cymre Brightblade
+					["coord"] = { 51.0, 70.6, GORGROND },
 				}),
 				crit(13, {	-- Dr. Ion Goldbloom (Celestial Tournament)
-					["coord"] = { 34.8, 59.6, 554 },
+					["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 				}),
-				crit(14, {	-- Farmer Nishi (Valley of the Four Winds)
-					["coord"] = { 46.0, 43.6, 376 },
+				crit(14, {	-- Farmer Nishi
+					["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
 				}),
-				crit(15, {	-- Flowing Pandaren Spirit (Dread Wastes)
-					["coord"] = { 61.2, 87.6, 422 },
+				crit(15, {	-- Flowing Pandaren Spirit
+					["coord"] = { 61.2, 87.6, DREAD_WASTES },
 				}),
-				crit(16, {	-- Gargra (Frostfire Ridge)
-					["coord"] = { 68.6, 64.6, 525 },
+				crit(16, {	-- Gargra
+					["coord"] = { 68.6, 64.6, FROSTFIRE_RIDGE },
 				}),
-				crit(17, {	-- Goz Banefury (Twilight Highlands)
-					["coord"] = { 56.6, 56.8, 241 },
+				crit(17, {	-- Goz Banefury
+					["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
 				}),
 				crit(18, {	-- Gutretch (Zul'Drak)
 					["coord"] = { 13.2, 66.8, 121 },
 				}),
-				crit(19, {	-- Hyuna of the Shrines (The Jade Forest)
-					["coord"] = { 48.0, 54.0, 371 },
+				crit(19, {	-- Hyuna of the Shrines
+					["coord"] = { 48.0, 54.0, THE_JADE_FOREST },
 				}),
 				crit(20, {	-- Jeremy Feasel (Darkmoon Island)
 					["coord"] = { 47.8, 62.6, 407 },
 				}),
 				crit(21, {	-- Lorewalker Cho (Celestial Tournament)
-					["coord"] = { 34.8, 59.6, 554 },
+					["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 				}),
-				crit(22, {	-- Lydia Accoste (Deadwind Pass)
-					["coord"] = { 40.2, 76.6, 42 },
+				crit(22, {	-- Lydia Accoste
+					["coord"] = { 40.2, 76.6, DEADWIND_PASS },
 				}),
 				crit(23, {	-- Major Payne (Icecrown)
 					["coord"] = { 77.4, 19.6, 118 },
 				}),
-				crit(24, {	-- Mo'ruk (Krasarang Wilds)
-					["coord"] = { 65.0, 42.7, 418 },
+				crit(24, {	-- Mo'ruk
+					["coord"] = { 65.0, 42.7, KRASARANG_WILDS },
 				}),
-				crit(25, {	-- Morulu The Elder (Shattrath City)
+				crit(25, {	-- Morulu The Elder
 					["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
 				}),
-				crit(26, {	-- Narrok (Nagrand, Outland)
+				crit(26, {	-- Narrok (Outland)
 					["coord"] = { 61.0, 49.4, NAGRAND },
 				}),
 				crit(27, {	-- Nearly Headless Jacob (Crystalsong Forest)
 					["coord"] = { 50.2, 59.0, 127 },
 				}),
-				crit(28, {	-- Nicki Tinytech (Hellfire Peninsula)
+				crit(28, {	-- Nicki Tinytech
 					["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
 				}),
 				crit(29, {	-- Obalis (Uldum)
@@ -139,47 +139,47 @@ _.Achievements =
 				crit(30, {	-- Okrut Dragonwaste (Dragonblight)
 					["coord"] = { 59.0, 77.0, 115 },
 				}),
-				crit(31, {	-- Ras'an (Zangarmarsh)
+				crit(31, {	-- Ras'an
 					["coord"] = { 17.2, 50.6, ZANGARMARSH },
 				}),
-				crit(32, {	-- Seeker Zusshi (Townlong Steppes)
-					["coord"] = { 36.2, 52.2, 388 },
+				crit(32, {	-- Seeker Zusshi
+					["coord"] = { 36.2, 52.2, TOWNLONG_STEPPES },
 				}),
 				crit(33, {	-- Shademaster Kiryn (Celestial Tournament)
-					["coord"] = { 37.8, 57.2, 554 },
+					["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 				}),
-				crit(34, {	-- Stone Cold Trixxy (Winterspring)
-					["coord"] = { 65.6, 64.6, 83 },
+				crit(34, {	-- Stone Cold Trixxy
+					["coord"] = { 65.6, 64.6, WINTERSPRING },
 				}),
 				crit(35, {	-- Sully "The Pickle" McLeary (Celestial Tournament)
-					["coord"] = { 37.8, 57.2, 554 },
+					["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 				}),
-				crit(36, {	-- Taralune (Talador)
-					["coord"] = { 49.0, 80.4, 535 },
+				crit(36, {	-- Taralune
+					["coord"] = { 49.0, 80.4, TALADOR },
 				}),
 				crit(37, {	-- Taran Zhu (Celestial Tournament)
-					["coord"] = { 37.8, 57.2, 554 },
+					["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 				}),
-				crit(38, {	-- Tarr the Terrible (Nagrand)
-					["coord"] = { 56.2, 9.80, 550 },
+				crit(38, {	-- Tarr the Terrible
+					["coord"] = { 56.2, 9.80, DRAENOR_NAGRAND },
 				}),
-				crit(39, {	-- Thundering Pandaren Spirit  (Kun-Lai Summit)
-					["coord"] = { 64.8, 93.6, 379 },
+				crit(39, {	-- Thundering Pandaren Spirit
+					["coord"] = { 64.8, 93.6, KUN_LAI_SUMMIT },
 				}),
-				crit(40, {	-- Vesharr (Spires of Arak)
-					["coord"] = { 46.4, 45.2, 542 },
+				crit(40, {	-- Vesharr
+					["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },
 				}),
-				crit(41, {	-- Wastewalker Shu (Dread Wastes)
-					["coord"] = { 55.0, 37.6, 422 },
+				crit(41, {	-- Wastewalker Shu
+					["coord"] = { 55.0, 37.6, DREAD_WASTES },
 				}),
-				crit(42, {	-- Whispering Pandaren Spirit  (The Jade Forest)
-					["coord"] = { 28.8, 36.0, 371 },
+				crit(42, {	-- Whispering Pandaren Spirit
+					["coord"] = { 28.8, 36.0, THE_JADE_FOREST },
 				}),
 				crit(43, {	-- Wise Mari (Celestial Tournament)
-					["coord"] = { 37.8, 57.2, 554 },
+					["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 				}),
 				crit(44, {	-- Wrathion (Celestial Tournament)
-					["coord"] = { 37.8, 57.2, 554 },
+					["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 				}),
 			}),
 			ach(12088, {	-- Anomalous Animals of Argus

@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	n(-240, {	-- Rated
+	pvp(n(-240, {	-- Rated
 		["icon"] = "Interface\\Icons\\Achievement_BG_KillXEnemies_GeneralsRoom",
 		["g"] = {
 			filter(200, bubbleDown(	-- Recipes
@@ -31,10 +31,10 @@ _.PVP =
 			}),
 			i(103533, {	-- Vicious Saddle
 				["description"] = "Offered as Season Reward Cap after you received your Seasonal Mount, up to 10 times per Season." ..
-					" Any win above 1400 rating will reward:\n\n10 Points in 2v2 (0.42%)\n\n30 Points in 3v3 (1.25%)\n\n60 Points in RBG (2.5%)",
+					" Any win above 1000 rating will reward:\n\n10 Points in 2v2 (0.42%)\n\n30 Points in 3v3 (1.25%)\n\n60 Points in RBG (2.5%)",
 			}),
 			i(165717),	-- Steel Strong Box, 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Ally
 			i(165718),	-- Steel Strong Box, 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Horde
 		},
-	}),
+	})),
 };

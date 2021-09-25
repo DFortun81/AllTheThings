@@ -33,6 +33,7 @@ namespace ATT
             { "CATA", 40 },     // CATA_PHASE_ONE
             { "MOP", 50 },      // MOP_PHASE_ONE
             { "WOD", 60 },      // WOD_PHASE_ONE
+            { "TRANSMOG", 69 }, // Transmog came out sometime after WOD.
             { "LEGION", 70 },   // LEGION_PHASE_ONE
             { "BFA", 80 },      // BFA_PHASE_ONE
             { "SHADOWLANDS", 90 },      // SHADOWLANDS_PHASE_ONE
@@ -51,6 +52,7 @@ namespace ATT
             { "CATA", 49 },     // CATA_PHASE_SIX?
             { "MOP", 59 },      // MOP_PHASE_SIX?
             { "WOD", 69 },      // WOD_PHASE_SIX?
+            { "TRANSMOG", 69 }, // Transmog came out sometime after WOD.
             { "LEGION", 79 },   // LEGION_PHASE_SIX?
             { "BFA", 89 },      // BFA_PHASE_SIX?
             { "SHADOWLANDS", 99 },      // SHADOWLANDS_PHASE_SIX?
@@ -63,16 +65,16 @@ namespace ATT
         public static readonly Dictionary<string, int[]> FIRST_EXPANSION_PATCH = new Dictionary<string, int[]>
         {
             // Key-Value Pair   // Classic Release Version
-            { "UNKNOWN", new int[] { 0, 0, 0, 0 } },   // Unknown, invalid data.
-            { "CLASSIC", new int[] { 1, 0, 0, 22248 } },
-            { "TBC", new int[] { 2, 0, 1, 22248 } },
-            { "WRATH", new int[] { 3, 0, 2, 22248 } },
-            { "CATA", new int[] { 4, 0, 1, 22248 } },
-            { "MOP", new int[] { 5, 0, 4, 22248 } },
-            { "WOD", new int[] { 6, 0, 2, 22248 } },
-            { "LEGION", new int[] { 7, 0, 3, 22248 } },
-            { "BFA", new int[] { 8, 3, 7, 22248 } },
-            { "SHADOWLANDS", new int[] { 9, 1, 0, 22248 } },
+            { "UNKNOWN", new int[] { 0, 0, 0, 0 } },        // Unknown, invalid data.
+            { "CLASSIC", new int[] { 1, 0, 0, 22248 } },    // NOTE: Values for WoW-Classic
+            { "TBC", new int[] { 2, 0, 1, 22248 } },        // NOTE: Values for TBC-Classic
+            { "WRATH", new int[] { 3, 0, 2, 9056 } },
+            { "CATA", new int[] { 4, 0, 1, 13164 } },
+            { "MOP", new int[] { 5, 0, 4, 16015 } },
+            { "WOD", new int[] { 6, 0, 2, 18764 } },
+            { "LEGION", new int[] { 7, 0, 1, 20740 } },
+            { "BFA", new int[] { 8, 0, 1, 27026 } },
+            { "SHADOWLANDS", new int[] { 9, 0, 1, 36216 } },
         };
 
         /// <summary>
@@ -83,16 +85,16 @@ namespace ATT
         public static readonly Dictionary<string, int[]> LAST_EXPANSION_PATCH = new Dictionary<string, int[]>
         {
             // Key-Value Pair   // Classic Release Version
-            { "UNKNOWN", new int[] { 0, 0, 0, 22248 } },   // Unknown, invalid data.
-            { "CLASSIC", new int[] { 1, 13, 7, 22248 } },
-            { "TBC", new int[] { 2, 4, 3, 22248 } },
-            { "WRATH", new int[] { 3, 3, 5, 22248 } },
-            { "CATA", new int[] { 4, 3, 4, 22248 } },
-            { "MOP", new int[] { 5, 4, 8, 22248 } },
-            { "WOD", new int[] { 6, 2, 4, 22248 } },
-            { "LEGION", new int[] { 7, 3, 5, 22248 } },
-            { "BFA", new int[] { 8, 3, 7, 22248 } },
-            { "SHADOWLANDS", new int[] { 9, 1, 0, 22248 } },
+            { "UNKNOWN", new int[] { 0, 0, 0, 22248 } },    // Unknown, invalid data.
+            { "CLASSIC", new int[] { 1, 13, 7, 22248 } },   // NOTE: Values for WoW-Classic
+            { "TBC", new int[] { 2, 5, 4, 22248 } },        // NOTE: Values for TBC-Classic
+            { "WRATH", new int[] { 3, 3, 5, 12340 } },
+            { "CATA", new int[] { 4, 3, 4, 15595 } },
+            { "MOP", new int[] { 5, 4, 8, 18224 } },
+            { "WOD", new int[] { 6, 2, 4, 21345 } },
+            { "LEGION", new int[] { 7, 3, 5, 26365 } },
+            { "BFA", new int[] { 8, 3, 7, 35249 } },
+            { "SHADOWLANDS", new int[] { 9, 1, 0, 40120 } },
         };
 
         public static readonly string CURRENT_RELEASE_PHASE_NAME =
@@ -152,9 +154,44 @@ namespace ATT
         public static Dictionary<object, bool> HORDE_ONLY_DICT;
 
         /// <summary>
+        /// All of the Category Icons that have been loaded into the database.
+        /// NOTE: For the purpose of creating a sorted list.
+        /// </summary>
+        private static Dictionary<long, string> CATEGORY_ICONS = new Dictionary<long, string>();
+
+        /// <summary>
+        /// All of the Category Names that have been loaded into the database.
+        /// NOTE: For the purpose of creating a sorted list.
+        /// </summary>
+        private static Dictionary<long, string> CATEGORY_NAMES = new Dictionary<long, string>();
+
+        /// <summary>
+        /// All of the Category IDs that have been referenced somewhere in the database.
+        /// </summary>
+        private static Dictionary<long, bool> CATEGORY_WITH_REFERENCES = new Dictionary<long, bool>();
+
+        /// <summary>
         /// All of the NPC IDs that have been referenced somewhere in the database.
         /// </summary>
         private static IDictionary<long, bool> NPCS_WITH_REFERENCES = new Dictionary<long, bool>();
+
+        /// <summary>
+        /// All of the Object Icons that have been loaded into the database.
+        /// NOTE: For the purpose of creating a sorted list.
+        /// </summary>
+        private static Dictionary<long, string> OBJECT_ICONS = new Dictionary<long, string>();
+
+        /// <summary>
+        /// All of the Object Models that have been loaded into the database.
+        /// NOTE: For the purpose of creating a sorted list.
+        /// </summary>
+        private static Dictionary<long, long> OBJECT_MODELS = new Dictionary<long, long>();
+
+        /// <summary>
+        /// All of the Object Names that have been loaded into the database.
+        /// NOTE: For the purpose of creating a sorted list.
+        /// </summary>
+        private static Dictionary<long, string> OBJECT_NAMES = new Dictionary<long, string>();
 
         /// <summary>
         /// All of the Object IDs that have been referenced somewhere in the database.
@@ -182,6 +219,16 @@ namespace ATT
         /// Represents the current parent group when processing the 'g' subgroup
         /// </summary>
         private static KeyValuePair<string, object>? CurrentParentGroup { get; set; }
+        /// <summary>
+        /// Represents that Item info will be merged into the base set of Item info.
+        /// This should only be performed on the first processing pass, allowing the second processing pass to sync all Item info in nested group references
+        /// </summary>
+        private static bool MergeItemData { get; set; } = true;
+
+        /// <summary>
+        /// Represents the valid values for the 'classes' / 'c' field of an object
+        /// </summary>
+        internal static readonly HashSet<long> Valid_Classes = new HashSet<long>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
 
         /// <summary>
         /// Merge the data into the database.
@@ -282,6 +329,15 @@ namespace ATT
             // Check to make sure the data is valid.
             if (data == null) return false;
 
+            // Merge all relevant Item Data into the data container.
+            if (!MergeItemData)
+                Items.MergeInto(data);
+
+#if RETAIL
+            // Retail has no reason to include Objective groups since the in-game Quest system does not warrant ATT including all this extra information
+            if (data.ContainsKey("objectiveID")) return false;
+#endif
+
             // If this item has an "unobtainable" flag on it, meaning for a different phase of content.
             if (data.TryGetValue("u", out long phase))
             {
@@ -295,7 +351,7 @@ namespace ATT
             }
 
             // Items that were added to the game after the current expansion shouldn't be included in the game.
-            data.TryGetValue("itemID", out long itemID);
+            //data.TryGetValue("itemID", out decimal itemID);
 
             // Get the filter for this Item
             if (data.TryGetValue("f", out long f))
@@ -312,28 +368,38 @@ namespace ATT
             {
                 modID = Convert.ToInt64(modIDRef);
                 // don't use modID if there isn't one
-                if (modID < 0) data.Remove("modID");
+                if (modID <= 0) data.Remove("modID");
             }
             else if (data.ContainsKey("ignoreBonus"))
             {
                 data.Remove("modID");
             }
-            else if (itemID > 0 && modID > 0)
+            else if (modID > 0 && data.ContainsKey("itemID"))
             {
                 // only modID if it's a real item and real modID
                 data["modID"] = modID;
             }
-            if (data.TryGetValue("npcID", out long npcID))
+
+            // Get the specific ItemID using ModID and BonusID of the data as well for accuracy
+            //decimal itemID = Items.GetSpecificItemID(data);
+
+            //if (data.TryGetValue("bonusID", out long bonusID) || modID != 0)
+            //{
+            //    Trace.WriteLine($"ItemID:{itemID}, ModID:{modID}, BonusID:{bonusID}");
+            //}
+
+            if (data.TryGetValue("categoryID", out long categoryID)) ProcessCategoryObject(data, categoryID);
+            if (data.TryGetValue("creatureID", out long creatureID))
             {
-                NPCS_WITH_REFERENCES[npcID] = true;
+                NPCS_WITH_REFERENCES[creatureID] = true;
             }
-            if (data.TryGetValue("creatureID", out npcID))
+            if (data.TryGetValue("npcID", out creatureID))
             {
-                NPCS_WITH_REFERENCES[npcID] = true;
+                NPCS_WITH_REFERENCES[creatureID] = true;
             }
-            if (data.TryGetValue("qg", out npcID))
+            if (data.TryGetValue("qg", out creatureID))
             {
-                NPCS_WITH_REFERENCES[npcID] = true;
+                NPCS_WITH_REFERENCES[creatureID] = true;
             }
             if (data.TryGetValue("qgs", out List<object> qgs))
             {
@@ -343,13 +409,24 @@ namespace ATT
             {
                 foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt64(qg)] = true;
             }
-            if (data.TryGetValue("objectID", out npcID))
+            if (data.TryGetValue("objectID", out creatureID)) ProcessObjectInstance(data, creatureID);
+            if (data.TryGetValue("artifactID", out creatureID) && !data.ContainsKey("s") && Objects.ArtifactSources.TryGetValue(creatureID, out Dictionary<string, long> sources))
             {
-                OBJECTS_WITH_REFERENCES[npcID] = true;
+                // off-hand artifact source
+                if (data.ContainsKey("isOffHand"))
+                {
+                    if (sources.TryGetValue("offHand", out long s))
+                        data["s"] = s;
+                }
+                else
+                {
+                    if (sources.TryGetValue("mainHand", out long s))
+                        data["s"] = s;
+                }
             }
 
             // Check to see what patch this data was made relevant for.
-            if (data.TryGetValue("timeline", out object timelineRef) && !data.ContainsKey("u") && timelineRef is List<object> timeline)
+            if (data.TryGetValue("timeline", out object timelineRef) && timelineRef is List<object> timeline)
             {
                 // 2.0.1 or older items.
                 int removed = 0;
@@ -363,6 +440,7 @@ namespace ATT
                     if (version > lastVersion) lastVersion = version;
                     switch (commandSplit[0])
                     {
+                        // Note: Adding command options here requires adjusting the filter Regex for 'timeline' entries during MergeStringArrayData
                         case "created":
                             {
                                 if (CURRENT_RELEASE_VERSION < version) return false;    // Invalid
@@ -402,6 +480,11 @@ namespace ATT
                                 if (CURRENT_RELEASE_VERSION >= version) removed = 3;
                                 break;
                             }
+                        case "timewalking":
+                            {
+                                if (CURRENT_RELEASE_VERSION >= version) removed = 5;
+                                break;
+                            }
                     }
                     ++index;
                 }
@@ -417,14 +500,19 @@ namespace ATT
                         // Never Implemented
                         data["u"] = 1;
                     }
+                    else if (removed == 5)
+                    {
+                        // Timewalking re-implemented
+                        data["u"] = 1016;
+                    }
                     else if (removed == 4)
                     {
                         // Never Implemented
                         data["u"] = 1;
 #if RETAIL
                         // Merge all relevant Item Data into the data container.
-                        Items.Merge(data);
-                        Items.MergeInto(data);
+                        if (MergeItemData)
+                            Items.Merge(data);
                         Objects.AssignFactionID(data);
                         return false;
 #endif
@@ -440,9 +528,30 @@ namespace ATT
             // Cache whether or not this entry had an explicit spellID assignment already.
             bool hasSpellID = data.ContainsKey("spellID");
 
+            // Remove any fields which contain 'empty' data
+            if (data.TryGetValue("customCollect", out List<object> cc))
+            {
+                if (cc.Count == 0)
+                    data.Remove("customCollect");
+            }
+
+            // Verify 'classes' have acceptable values
+            if (data.TryGetValue("c", out List<object> classes))
+            {
+                try
+                {
+                    if (classes.Any(c => !Valid_Classes.Contains(Convert.ToInt64(c))))
+                        Trace.WriteLine($"Invalid 'classes' value: {MiniJSON.Json.Serialize(data)}");
+                }
+                catch
+                {
+                    Trace.WriteLine($"Invalid 'classes' value: {MiniJSON.Json.Serialize(data)}");
+                }
+            }
+
             // Merge all relevant Item Data into the data container.
-            Items.Merge(data);
-            Items.MergeInto(data);
+            if (MergeItemData)
+                Items.Merge(data);
             Objects.AssignFactionID(data);
 
             // Cache the Filter ID.
@@ -573,11 +682,11 @@ namespace ATT
                     var c = cost[i];
                     if (c != null && c.Any())
                     {
+                        decimal costID = Convert.ToDecimal(c[1]);
                         switch (c[0].ToString())
                         {
                             case "i":
-                                itemID = decimal.ToInt64(Convert.ToDecimal(c[1]));
-                                var item = Items.GetNull(itemID);
+                                var item = Items.GetNull(costID);
                                 if (item != null)
                                 {
                                     // The item was classified as never being implemented or being completely removed from the game.
@@ -585,8 +694,21 @@ namespace ATT
                                     {
                                         cost.RemoveAt(i);
                                     }
+                                    // anything that costs Mark of Honor should have pvp tag
+                                    else if (costID == 137642)
+                                    {
+                                        data["pvp"] = true;
+                                    }
                                 }
                                 break;
+                            case "c":
+                                if (costID == 1602 ||   // Conquest
+                                    costID == 1792)     // Honor
+                                {
+                                    data["pvp"] = true;
+                                }
+                                break;
+
                             default: break;
                         }
                     }
@@ -635,7 +757,7 @@ namespace ATT
                     Objects.AddRecipe(requiredSkill, recipeName, recipeID);
                 }
                 // otherwise see if we can associate a recipeID
-                else
+                else if (!MergeItemData)
                 {
                     // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
                     // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
@@ -677,7 +799,7 @@ namespace ATT
 
             // clean up any metadata tags
             List<string> keys = data.Keys.ToList();
-            for (int i = 1; i < data.Count; i++)
+            for (int i = 0; i < data.Count; i++)
             {
                 if (keys[i].StartsWith("_"))
                     data.Remove(keys[i]);
@@ -687,13 +809,113 @@ namespace ATT
         }
 
         /// <summary>
+        /// Process the Category Object.
+        /// </summary>
+        /// <param name="data">The Category data.</param>
+        /// <param name="categoryID">The Category ID.</param>
+        private static void ProcessCategoryObject(Dictionary<string, object> data, long categoryID)
+        {
+            CATEGORY_WITH_REFERENCES[categoryID] = true;
+            if (!CATEGORY_ICONS.ContainsKey(categoryID) && data.TryGetValue("icon", out string icon))
+            {
+                // Assign the icon and then inform the engineer.
+                CATEGORY_ICONS[categoryID] = icon.Replace("\\", "/");
+                Trace.Write("CATEGORY ICON MISSING FOR ");
+                Trace.Write(categoryID);
+                Trace.Write(": ASSIGNED ");
+                Trace.Write(icon);
+                Trace.WriteLine(" FROM SOURCE.");
+                if (!Framework.DebugMode)
+                {
+                    Trace.WriteLine("Activating Debug Mode!");
+                    Trace.WriteLine("Update CategoriesDB.lua from the Debugging folder.");
+                    Framework.DebugMode = true;
+                }
+            }
+            if (!CATEGORY_NAMES.ContainsKey(categoryID) && data.TryGetValue("name", out string name))
+            {
+                // Assign the name and then inform the engineer.
+                CATEGORY_NAMES[categoryID] = name;
+                Trace.Write("CATEGORY NAME MISSING FOR ");
+                Trace.Write(categoryID);
+                Trace.Write(": ASSIGNED ");
+                Trace.Write(name);
+                Trace.WriteLine(" FROM SOURCE.");
+                if (!Framework.DebugMode)
+                {
+                    Trace.WriteLine("Activating Debug Mode!");
+                    Trace.WriteLine("Update CategoriesDB.lua from the Debugging folder.");
+                    Framework.DebugMode = true;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Process the Object Instance.
+        /// </summary>
+        /// <param name="data">The Object data.</param>
+        /// <param name="objectID">The Object ID.</param>
+        private static void ProcessObjectInstance(Dictionary<string, object> data, long objectID)
+        {
+            OBJECTS_WITH_REFERENCES[objectID] = true;
+            if (!OBJECT_ICONS.ContainsKey(objectID) && data.TryGetValue("icon", out string icon))
+            {
+                // Assign the icon and then inform the engineer.
+                OBJECT_ICONS[objectID] = icon.Replace("\\", "/");
+                Trace.Write("OBJECT ICON MISSING FOR ");
+                Trace.Write(objectID);
+                Trace.Write(": ASSIGNED ");
+                Trace.Write(icon);
+                Trace.WriteLine(" FROM SOURCE.");
+                if (!Framework.DebugMode)
+                {
+                    Trace.WriteLine("Activating Debug Mode!");
+                    Trace.WriteLine("Update NPCDB.lua from the Debugging folder.");
+                    Framework.DebugMode = true;
+                }
+            }
+            if (!OBJECT_MODELS.ContainsKey(objectID) && data.TryGetValue("model", out long model))
+            {
+                // Assign the model and then inform the engineer.
+                OBJECT_MODELS[objectID] = model;
+                Trace.Write("OBJECT ICON MISSING FOR ");
+                Trace.Write(objectID);
+                Trace.Write(": ASSIGNED ");
+                Trace.Write(model);
+                Trace.WriteLine(" FROM SOURCE.");
+                if (!Framework.DebugMode)
+                {
+                    Trace.WriteLine("Activating Debug Mode!");
+                    Trace.WriteLine("Update NPCDB.lua from the Debugging folder.");
+                    Framework.DebugMode = true;
+                }
+            }
+            if (!OBJECT_NAMES.ContainsKey(objectID) && data.TryGetValue("name", out string name))
+            {
+                // Assign the name and then inform the engineer.
+                OBJECT_NAMES[objectID] = name;
+                Trace.Write("OBJECT NAME MISSING FOR ");
+                Trace.Write(objectID);
+                Trace.Write(": ASSIGNED ");
+                Trace.Write(name);
+                Trace.WriteLine(" FROM SOURCE.");
+                if (!Framework.DebugMode)
+                {
+                    Trace.WriteLine("Activating Debug Mode!");
+                    Trace.WriteLine("Update NPCDB.lua from the Debugging folder.");
+                    Framework.DebugMode = true;
+                }
+            }
+        }
+
+        /// <summary>
         /// Attempts to find the recipe ID in the already parsed data which corresponds to this item.... by name
         /// </summary>
         /// <param name="data"></param>
         private static void TryFindRecipeID(Dictionary<string, object> data)
         {
-            // don't apply a recipeID to data which is not an item or is a Toy
-            if (data.ContainsKey("isToy") || !data.ContainsKey("itemID"))
+            // don't apply a recipeID to data which is not an item or is a Toy or has a questID (Reaves Modules... argghhh)
+            if (data.ContainsKey("isToy") || !data.ContainsKey("itemID") || data.ContainsKey("questID"))
                 return;
 
             // all recipes require a skill
@@ -908,6 +1130,13 @@ namespace ATT
         /// </summary>
         public static void Process()
         {
+            // Go through and merge all of the item species data into the item containers.
+            foreach (var pair in Items.AllItemsWithSpecies)
+            {
+                var item = Items.GetNull(pair.Key);
+                if (item != null) Items.MergeInto(pair.Key, pair.Value, item);
+            }
+
             // Go through all of the items in the database and calculate the Filter ID
             // if the Filter ID is not already assigned. (manual assignment should always override this)
             foreach (var data in Items.AllItems)
@@ -925,7 +1154,23 @@ namespace ATT
             }
 
             // Merge the Item Data into the Containers.
+            //Trace.WriteLine("Container Processing #1...");
             foreach (var container in Objects.AllContainers.Values) Process(container, 0, 1);
+            //Trace.WriteLine("Container Processing #1 Done.");
+
+            // Remove the removed from game flag from the Tome of Polymorph: Turtle
+            var tomeOfPolymorph = Items.GetNull(22739);
+            if (tomeOfPolymorph != null)
+            {
+                tomeOfPolymorph.Remove("timeline");
+                if (tomeOfPolymorph.TryGetValue("u", out long u) && u != 14) tomeOfPolymorph.Remove("u");
+            }
+
+            // Merge the Item Data into the Containers again, this time syncing Item data into nested Item groups
+            //Trace.WriteLine("Container Processing #2...");
+            MergeItemData = false;
+            foreach (var container in Objects.AllContainers.Values) Process(container, 0, 1);
+            //Trace.WriteLine("Container Processing #2 Done.");
 
             // Sort World Drops by Name
             var worldDrops = Objects.GetNull("WorldDrops");
@@ -1194,9 +1439,6 @@ namespace ATT
                 }
             }
 
-            // Merge the Item Data into the Containers again.
-            foreach (var container in Objects.AllContainers.Values) Process(container, 0, 1);
-
             // If NOT Classic
             if (Items.GetNull(30000) != null)
             {
@@ -1391,10 +1633,10 @@ namespace ATT
             if (b == null) return 1;
 
             // If a contains a name, then try to get it.
-            if (a.TryGetValue("itemID", out object aRef) && Items.Get(Convert.ToInt64(aRef)).TryGetValue("name", out aRef))
+            if (a.ContainsKey("itemID") && Items.Get(a).TryGetValue("name", out string aRef))
             {
                 // If b contains a name, then try to get it.
-                if (b.TryGetValue("itemID", out object bRef) && Items.Get(Convert.ToInt64(bRef)).TryGetValue("name", out bRef))
+                if (b.ContainsKey("itemID") && Items.Get(b).TryGetValue("name", out string bRef))
                 {
                     // Both have a name, compare them!
                     var first = aRef.ToString().CompareTo(bRef);
@@ -1508,6 +1750,13 @@ namespace ATT
                 case "explorationID":
                     {
                         return "explorationID";
+                    }
+
+                case "explorationhash":
+                case "explorationmap":
+                case "maphash":
+                    {
+                        return "maphash";
                     }
 
                 case "illusionId":
@@ -1822,9 +2071,11 @@ namespace ATT
                 case "isFlying":
                 case "isGround":
                 case "isJumping":
+                case "isOffHand":
                 case "isRaid":
                 case "isToy":
                 case "isWorldQuest":
+                case "lore":
                 case "mapID":
                 case "maps":
                 case "missionID":
@@ -1844,10 +2095,14 @@ namespace ATT
                 case "professionID":
                 case "provider":
                 case "providers":
+                case "pvp":
                 case "qg":
                 case "qgs":
                 case "r": // horde/alliance faction
                 case "races":
+                case "runeforgePowerID":
+                case "raceID":
+                case "conduitID":
                 case "customCollect":
                 case "setHeaderID":
                 case "setSubHeaderID":
@@ -1860,6 +2115,7 @@ namespace ATT
                 case "talentID":
                 case "title":
                 case "titleID":
+                case "titleIDs":
                 case "text":
                 case "tierID":
                 case "vignetteID":
@@ -1920,29 +2176,35 @@ namespace ATT
         /// </summary>
         /// <param name="lua">The lua context.</param>
         /// <param name="table">The raw lua table.</param>
-        public static void Merge(Lua lua, LuaTable table)
+        public static void Merge(LuaTable table)
         {
             // Parse the contents of the table into a generic object.
-            var dict = Parse(lua, table);
+            var dict = ParseAsDictionary(table);
             if (dict == null) return;
 
             // Iterate through the pairs and determine what goes where.
             foreach (var pair in dict)
             {
-                var data = pair.Value as Dictionary<object, object>;
-                if (data == null) continue;
                 switch (pair.Key)
                 {
                     case "IllusionDB":
                         {
                             // The format of the Illusions DB is a list of generic objects.
                             // This means that it becomes really easy to merge into the database.
-                            foreach (var o in data.Values)
+                            if (pair.Value is List<object> illusionDB)
                             {
-                                if (o is Dictionary<object, object> entry)
+                                foreach (var o in illusionDB)
                                 {
-                                    Items.Merge(entry);
+                                    if (o is Dictionary<string, object> illusion)
+                                    {
+                                        Items.Merge(illusion);
+                                    }
                                 }
+                            }
+                            else
+                            {
+                                Console.WriteLine("IllusionDB not in the correct format!");
+                                Console.ReadLine();
                             }
                             break;
                         }
@@ -1950,94 +2212,315 @@ namespace ATT
                         {
                             // The format of the Item DB is a dictionary of item ID -> Values.
                             // This is slightly more annoying to parse, but it works okay.
-                            foreach (var o in data)
+                            if (pair.Value is Dictionary<long, object> itemDB)
                             {
-                                // KEY: Item ID, VALUE: Data (generic object field/value pairs)
-                                if (o.Value is Dictionary<object, object> entry)
+                                foreach (var itemValuePair in itemDB)
                                 {
-                                    entry["itemID"] = o.Key;
-                                    Items.Merge(entry);
+                                    if (itemValuePair.Value is Dictionary<string, object> item)
+                                    {
+                                        item["itemID"] = itemValuePair.Key;
+                                        Items.Merge(item);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(itemValuePair.Value));
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else if (pair.Value is List<object> items)
+                            {
+                                foreach (var o in items)
+                                {
+                                    if (o is Dictionary<string, object> item)
+                                    {
+                                        Items.Merge(item);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(o));
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("ItemDB not in the correct format!");
+                                Console.ReadLine();
+                            }
+                            break;
+                        }
+                    case "ItemSpeciesDB":
+                        {
+                            // The format of the Item DB is a dictionary of item ID -> Values.
+                            // This is slightly more annoying to parse, but it works okay.
+                            if (pair.Value is Dictionary<long, object> itemDB)
+                            {
+                                foreach (var itemValuePair in itemDB)
+                                {
+                                    if (itemValuePair.Value is Dictionary<string, object> item)
+                                    {
+                                        var itemSpecies = Items.GetWithSpecies(itemValuePair.Key);
+                                        foreach (var p in item) Items.Merge(itemSpecies, p.Key, p.Value);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("ItemSpeciesDB not in the correct format!");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(itemValuePair.Value));
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("ItemSpeciesDB not in the correct format!");
+                                Console.ReadLine();
+                            }
+                            break;
+                        }
+                    case "Artifacts":
+                        {
+                            if (pair.Value is Dictionary<long, object> artifactDB)
+                            {
+                                foreach (var itemValuePair in artifactDB)
+                                {
+                                    if (itemValuePair.Value is Dictionary<string, object> artifact)
+                                    {
+                                        long artifactID = itemValuePair.Key;
+                                        if (!Objects.ArtifactSources.TryGetValue(artifactID, out Dictionary<string, long> artifactInfo))
+                                            Objects.ArtifactSources[artifactID] = artifactInfo = new Dictionary<string, long>();
+
+                                        foreach (var hand in artifact)
+                                        {
+                                            artifactInfo[ATT.Export.ToString(hand.Key)] = Convert.ToInt64(hand.Value);
+                                        }
+                                    }
+                                }
+                            }
+                            else if (pair.Value is List<object> artifacts)
+                            {
+                                var artifactID = 0;
+                                foreach (var o in artifacts)
+                                {
+                                    ++artifactID;
+                                    if (o is Dictionary<string, object> artifact)
+                                    {
+                                        if (!Objects.ArtifactSources.TryGetValue(artifactID, out Dictionary<string, long> artifactInfo))
+                                            Objects.ArtifactSources[artifactID] = artifactInfo = new Dictionary<string, long>();
+
+                                        foreach (var hand in artifact)
+                                        {
+                                            artifactInfo[ATT.Export.ToString(hand.Key)] = Convert.ToInt64(hand.Value);
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        }
+                    case "CategoryIcons":
+                        {
+                            // The format of the Category Icons DB is a dictionary of Category ID <-> Icon pairs.
+                            if (pair.Value is Dictionary<long, object> CategoryIcons)
+                            {
+                                foreach (var categoryPair in CategoryIcons)
+                                {
+                                    // KEY: Category ID, VALUE: Icon
+                                    if (categoryPair.Value is string icon)
+                                    {
+                                        CATEGORY_ICONS[categoryPair.Key] = icon;
+                                    }
+                                }
+                            }
+                            break;
+                        }
+                    case "CategoryNames":
+                        {
+                            // The format of the Category Names DB is a dictionary of Category ID <-> Name pairs.
+                            if (pair.Value is Dictionary<long, object> CategoryNames)
+                            {
+                                foreach (var categoryPair in CategoryNames)
+                                {
+                                    // KEY: Category ID, VALUE: Icon
+                                    if (categoryPair.Value is string name)
+                                    {
+                                        CATEGORY_NAMES[categoryPair.Key] = name;
+                                    }
+                                }
+                            }
+                            break;
+                        }
+                    case "ObjectIcons":
+                        {
+                            // The format of the Object Icons DB is a dictionary of Object ID <-> Icon pairs.
+                            if (pair.Value is Dictionary<long, object> ObjectIcons)
+                            {
+                                foreach (var categoryPair in ObjectIcons)
+                                {
+                                    // KEY: Object ID, VALUE: Icon
+                                    if (categoryPair.Value is string name)
+                                    {
+                                        OBJECT_ICONS[categoryPair.Key] = name;
+                                    }
+                                }
+                            }
+                            break;
+                        }
+                    case "ObjectModels":
+                        {
+                            // The format of the Object Models DB is a dictionary of Object ID <-> Model ID pairs.
+                            if (pair.Value is Dictionary<long, object> ObjectModels)
+                            {
+                                foreach (var categoryPair in ObjectModels)
+                                {
+                                    // KEY: Object ID, VALUE: Model ID
+                                    if (categoryPair.Value is long modelID)
+                                    {
+                                        OBJECT_MODELS[categoryPair.Key] = modelID;
+                                    }
+                                }
+                            }
+                            break;
+                        }
+                    case "ObjectNames":
+                        {
+                            // The format of the Object Names DB is a dictionary of Object ID <-> Name pairs.
+                            if (pair.Value is Dictionary<long, object> ObjectNames)
+                            {
+                                foreach (var categoryPair in ObjectNames)
+                                {
+                                    // KEY: Object ID, VALUE: Name
+                                    if (categoryPair.Value is string name)
+                                    {
+                                        OBJECT_NAMES[categoryPair.Key] = name;
+                                    }
                                 }
                             }
                             break;
                         }
                     default:
                         {
-                            // Parse a Source DB Container
-                            var contents = data.Values;
-                            if (contents == null)
-                            {
-                                Trace.Write("Invalid Source DB Format for Container '");
-                                Trace.Write(pair.Key);
-                                Trace.WriteLine("'!");
-                                continue;
-                            }
-
                             // Get the object container for this section.
-                            Objects.Merge(Objects.Get(ATT.Export.ToString(pair.Key)), data.Values.ToList());
+                            List<object> list = null;
+                            if (pair.Value is List<object> list2)
+                            {
+                                list = list2;
+                            }
+                            else if (pair.Value is Dictionary<string, object> data)
+                            {
+                                list = data.Values.ToList();
+                            }
+                            else if (pair.Value is Dictionary<long, object> ignoredKeys)
+                            {
+                                list = ignoredKeys.Values.ToList();
+                            }
+                            if (list != null)
+                            {
+                                if (list.Any()) Objects.Merge(Objects.Get(ATT.Export.ToString(pair.Key)), list);
+                            }
+                            else
+                            {
+                                Console.Write("Invalid Container format: ");
+                                Console.WriteLine(pair.Key);
+                                Console.ReadLine();
+                                Console.WriteLine(MiniJSON.Json.Serialize(pair.Value));
+                                Console.ReadLine();
+                                throw new Exception("Invalid Container format!");
+                            }
                             break;
                         }
                 }
             }
         }
 
-        /// <summary>
-        /// Parse the lua table into a commonly formatted object container.
-        /// </summary>
-        /// <param name="lua">The lua context.</param>
-        /// <param name="table">The raw lua table.</param>
-        /// <returns>The object dictionary or null.</returns>
-        public static Dictionary<object, object> Parse(Lua lua, LuaTable table)
+        static object ParseAsObject(LuaTable table)
         {
-            // If the table is invalid, return immediately.
-            if (table == null) return null;
-
-            // A dictioonary of generic values is always used.
-            var dict = new Dictionary<object, object>();
-            foreach (var field in table.Keys)
+            if (table.Keys.Count > 0)
             {
-                var v = table[field];
-                switch (v.GetType().ToString())
+                // Determine if we're dealing with a <string,object> dictionary.
+                var keyList = new List<object>();
+                foreach (var key in table.Keys)
                 {
-                    case "NLua.LuaTable":
-                        {
-                            var t = Parse(lua, v as LuaTable);
-                            if (t != null && t.Count > 0) dict[field] = t;
-                            break;
-                        }
-                    case "System.Boolean":
-                    case "System.Double":
-                    case "System.Int32":
-                    case "System.Int64":
-                    case "System.String":
-                        {
-                            dict[field] = v;
-                            break;
-                        }
-                    case "NLua.LuaFunction":
-                        {
-                            Trace.Write(field);
-                            Trace.Write(" (");
-                            Trace.Write(v.GetType().ToString());
-                            Trace.Write("): ");
-                            Trace.WriteLine(v);
-                            Trace.WriteLine("Functions are not directly supported at this time. Please use a [[ ]] surrounded string.");
-                            Console.ReadLine();
-                            break;
-                        }
-                    default:
-                        {
-                            Trace.Write(field);
-                            Trace.Write(" (");
-                            Trace.Write(v.GetType().ToString());
-                            Trace.Write("): ");
-                            Trace.WriteLine(v);
-                            Console.ReadLine();
-                            break;
-                        }
+                    if (key.GetType().ToString() == "System.String")
+                    {
+                        if (table[key].GetType().ToString() == "NLua.LuaFunction") continue;
+                        return ParseAsDictionary(table);
+                    }
+                    keyList.Add(key);
                 }
+                keyList.Sort();
+
+                // Determine if we're dealing with a <long,object> dictionary.
+                for (int i = 1; i <= keyList.Count; ++i)
+                {
+                    var key = keyList[i - 1];
+                    if (Convert.ToInt32(key) != i) return ParseAsTable(table);
+                }
+
+                // Create an ordered list from the table.
+                var list = new List<object>();
+                foreach (var key in keyList)
+                {
+                    list.Add(ParseObject(table[key]));
+                }
+                return list;
             }
+
+            return new List<object>();
+        }
+
+        static Dictionary<long, object> ParseAsTable(LuaTable table)
+        {
+            var dict = new Dictionary<long, object>();
+            foreach (var key in table.Keys) dict[Convert.ToInt64(key)] = ParseObject(table[key]);
             return dict;
+        }
+
+        static Dictionary<string, object> ParseAsDictionary(LuaTable table)
+        {
+            var dict = new Dictionary<string, object>();
+            foreach (var key in table.Keys) dict[ConvertFieldName(key.ToString())] = ParseObject(table[key]);
+            return dict;
+        }
+
+        static object ParseObject(object data)
+        {
+            switch (data.GetType().ToString())
+            {
+                case "NLua.LuaTable":
+                    {
+                        return ParseAsObject(data as LuaTable);
+                    }
+                case "System.Boolean":
+                case "System.Double":
+                case "System.Int32":
+                case "System.Int64":
+                case "System.String":
+                    {
+                        return data;
+                    }
+                case "NLua.LuaFunction":
+                    {
+                        Trace.Write(" (");
+                        Trace.Write(data.GetType().ToString());
+                        Trace.Write("): ");
+                        Trace.WriteLine(data);
+                        Trace.WriteLine("Functions are not directly supported at this time. Please use a [[ ]] surrounded string.");
+                        Console.ReadLine();
+                        break;
+                    }
+                default:
+                    {
+                        Trace.Write(" (");
+                        Trace.Write(data.GetType().ToString());
+                        Trace.Write("): ");
+                        Trace.WriteLine(data);
+                        Console.ReadLine();
+                        break;
+                    }
+            }
+            return null;
         }
         #endregion
         #region Export (Clean)
@@ -2055,11 +2538,8 @@ namespace ATT
             else if (data is List<object> list) ExportClean(builder, list);
             else if (data is Dictionary<string, object> dict) ExportClean(builder, dict);
             else if (data is string str) builder.Append('"').Append(str.Replace("\"", "\\\"")).Append('"');
-            else if (data is Dictionary<object, object> objdict) ExportClean(builder, objdict);
-            else if (data is Dictionary<int, object> intdict) ExportClean(builder, intdict);
             else if (data is Dictionary<long, object> longdict) ExportClean(builder, longdict);
-            else if (data is Dictionary<int, int> intintdict) ExportClean(builder, intintdict);
-            else if (data is Dictionary<long, int> longintdict) ExportClean(builder, longintdict);
+            else if (data is Dictionary<long, long> longlongdict) ExportClean(builder, longlongdict);
             else if (data is Dictionary<string, List<object>> listdict) ExportClean(builder, listdict);
             else if (data is List<List<object>> listOLists) ExportClean(builder, listOLists);
             else
@@ -2227,10 +2707,10 @@ namespace ATT
             string addonRootFolder = "../../../../../../_classic_beta_/Interface/AddOns/ATT-Classic";
 #elif TBC
             // We want Classic TBC builds of ATT to build the database to the ATT-Classic Classic TBC folder.
-            string addonRootFolder = "../../../../../../_classic_tbc_/Interface/AddOns/ATT-Classic";
+            string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";
 #elif CLASSIC
             // We want Classic builds of ATT to build the database to the ATT-Classic Classic folder.
-            string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";
+            string addonRootFolder = "../../../../../../_classic_era_/Interface/AddOns/ATT-Classic";
 #else
             // Default is relative to where the executable is. (.contrib/Parser)
             string addonRootFolder = "../..";
@@ -2246,7 +2726,184 @@ namespace ATT
                     Items.ExportDebug(debugFolder.FullName);
                     Objects.ExportDebug(debugFolder.FullName);
                     Objects.ExportDB(debugFolder.FullName);
+
+                    // Export the Category DB file.
+                    if (CATEGORY_NAMES.Any())
+                    {
+                        var builder = new StringBuilder("---------------------------------------------------------\n--   C A T E G O R Y   D A T A B A S E   M O D U L E   --\n---------------------------------------------------------\n");
+                        var keys = CATEGORY_NAMES.Keys.ToList();
+                        keys.Sort();
+                        builder.Append("_.CategoryNames = {").AppendLine();
+                        foreach (var key in keys)
+                        {
+                            var name = CATEGORY_NAMES[key];
+                            builder.Append("\t[").Append(key).Append("] = ");
+                            if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                            {
+                                builder.Append("[[").Append(name).Append("]],").AppendLine();
+                            }
+                            else builder.Append("\"").Append(name).Append("\",").AppendLine();
+                        }
+                        builder.AppendLine("};");
+                        builder.Append("_.CategoryIcons = {").AppendLine();
+                        foreach (var key in keys)
+                        {
+                            if (CATEGORY_ICONS.TryGetValue(key, out string icon))
+                            {
+                                builder.Append("\t[").Append(key).Append("] = \"").Append(icon).Append("\",");
+                                if (CATEGORY_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
+                                builder.AppendLine();
+                            }
+                            else
+                            {
+                                builder.Append("\t-- [").Append(key).Append("] = \"\",");
+                                if (CATEGORY_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
+                                builder.AppendLine();
+                            }
+                        }
+                        keys = CATEGORY_ICONS.Keys.ToList();
+                        keys.Sort();
+                        foreach (var key in keys)
+                        {
+                            if (!CATEGORY_NAMES.ContainsKey(key))
+                            {
+                                builder.Append("\t[").Append(key).Append("] = \"").Append(CATEGORY_ICONS[key]).Append("\",").AppendLine();
+                            }
+                        }
+                        builder.AppendLine("};");
+                        File.WriteAllText(Path.Combine(debugFolder.FullName, "CategoryDB.lua"), builder.ToString());
+                    }
+
+                    // Export the Object DB file.
+                    if (OBJECT_NAMES.Any())
+                    {
+                        var builder = new StringBuilder("-----------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
+                        var keys = OBJECT_NAMES.Keys.ToList();
+                        keys.Sort();
+                        builder.Append("_.ObjectNames = {").AppendLine();
+                        foreach (var key in keys)
+                        {
+                            var name = OBJECT_NAMES[key];
+                            builder.Append("\t[").Append(key).Append("] = ");
+                            if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                            {
+                                builder.Append("[[").Append(name).Append("]],").AppendLine();
+                            }
+                            else builder.Append("\"").Append(name).Append("\",").AppendLine();
+                        }
+                        builder.AppendLine("};");
+                        keys = OBJECT_ICONS.Keys.ToList();
+                        keys.Sort();
+                        builder.Append("_.ObjectIcons = {").AppendLine();
+                        foreach (var key in keys)
+                        {
+                            builder.Append("\t[").Append(key).Append("] = \"").Append(OBJECT_ICONS[key]).Append("\",");
+                            if (OBJECT_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
+                            builder.AppendLine();
+                        }
+                        builder.AppendLine("};");
+                        keys = OBJECT_MODELS.Keys.ToList();
+                        keys.Sort();
+                        builder.Append("_.ObjectModels = {").AppendLine();
+                        foreach (var key in keys)
+                        {
+                            builder.Append("\t[").Append(key).Append("] = ").Append(OBJECT_MODELS[key]).Append(",");
+                            if (OBJECT_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
+                            builder.AppendLine();
+                        }
+                        builder.AppendLine("};");
+                        File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), builder.ToString());
+                    }
                 }
+            }
+
+            // Export the Category DB file, but only Categories that have references in the addon.
+            if (CATEGORY_NAMES.Any())
+            {
+                var builder = new StringBuilder("---------------------------------------------------------\n--   C A T E G O R Y   D A T A B A S E   M O D U L E   --\n---------------------------------------------------------\n");
+                var keys = CATEGORY_NAMES.Keys.ToList();
+                keys.Sort();
+                builder.Append("select(2, ...).CategoryNames = {").AppendLine();
+                foreach (var key in keys)
+                {
+                    if (CATEGORY_WITH_REFERENCES.ContainsKey(key))
+                    {
+                        var name = CATEGORY_NAMES[key];
+                        builder.Append("\t[").Append(key).Append("] = ");
+                        if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                        {
+                            builder.Append(name).Append(",").AppendLine();
+                        }
+                        else builder.Append("\"").Append(name).Append("\",").AppendLine();
+                    }
+                }
+                builder.AppendLine("};");
+                keys = CATEGORY_ICONS.Keys.ToList();
+                keys.Sort();
+                builder.Append("select(2, ...).CategoryIcons = {").AppendLine();
+                foreach (var key in keys)
+                {
+                    if (CATEGORY_WITH_REFERENCES.ContainsKey(key))
+                    {
+                        builder.Append("\t[").Append(key).Append("] = \"").Append(CATEGORY_ICONS[key]).Append("\",").AppendLine();
+                    }
+                }
+                builder.AppendLine("};");
+
+                // Check to make sure the content is different since Diff tools are dumb as hell.
+                var filename = Path.Combine(addonRootFolder, "db/CategoryDB.lua");
+                var content = builder.ToString().Replace("\r\n", "\n").Trim();
+                if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
+            }
+
+            // Export the Object DB file.
+            if (OBJECT_NAMES.Any())
+            {
+                var builder = new StringBuilder("-------------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-------------------------------------------------------\n");
+                var keys = OBJECT_NAMES.Keys.ToList();
+                keys.Sort();
+                builder.Append("select(2, ...).ObjectNames = {").AppendLine();
+                foreach (var key in keys)
+                {
+                    if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
+                    {
+                        var name = OBJECT_NAMES[key];
+                        builder.Append("\t[").Append(key).Append("] = ");
+                        if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                        {
+                            builder.Append(name).Append(",").AppendLine();
+                        }
+                        else builder.Append("\"").Append(name).Append("\",").AppendLine();
+                    }
+                }
+                builder.AppendLine("};");
+                keys = OBJECT_ICONS.Keys.ToList();
+                keys.Sort();
+                builder.Append("select(2, ...).ObjectIcons = {").AppendLine();
+                foreach (var key in keys)
+                {
+                    if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
+                    {
+                        builder.Append("\t[").Append(key).Append("] = \"").Append(OBJECT_ICONS[key]).Append("\",").AppendLine();
+                    }
+                }
+                builder.AppendLine("};");
+                keys = OBJECT_MODELS.Keys.ToList();
+                keys.Sort();
+                builder.Append("select(2, ...).ObjectModels = {").AppendLine();
+                foreach (var key in keys)
+                {
+                    if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
+                    {
+                        builder.Append("\t[").Append(key).Append("] = ").Append(OBJECT_MODELS[key]).Append(",").AppendLine();
+                    }
+                }
+                builder.AppendLine("};");
+
+                // Check to make sure the content is different since Diff tools are dumb as hell.
+                var filename = Path.Combine(addonRootFolder, "db/ObjectDB.lua");
+                var content = builder.ToString().Replace("\r\n", "\n").Trim();
+                if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
             }
 
             // Setup the output folder (/db)

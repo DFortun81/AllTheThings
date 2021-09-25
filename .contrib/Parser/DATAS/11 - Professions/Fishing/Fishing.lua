@@ -2,88 +2,28 @@
 profession(FISHING, {
 	n(-26,    {	-- Drop
 		i(34109, {	-- Weather-Beaten Journal
-			["collectible"] = false,	-- Does not track
-			["spellID"] = 0,	-- invalidate spellID, still shows up as collectible with "false" tag
-		}),
-		i(16082, {	-- Artisan Fishing - The Way of the Lure
-			["collectible"] = false,
-			["description"] = "No longer required.",
-			["u"] = REMOVED_FROM_GAME,
-		}),
-		i(16083, {	-- Expert Fishing - The Bass and You
-			["collectible"] = false,
-			["description"] = "No longer required.",
-			["u"] = REMOVED_FROM_GAME,
-		}),
-		i(27532, {	-- Master Fishing - The Art of Angling
-			["collectible"] = false,
-			["description"] = "No longer required.",
-			["u"] = REMOVED_FROM_GAME,
-		}),
-		i(46054, {	-- Journeyman Fishing - Fishing for Dummies
-			["collectible"] = false,
-			["description"] = "No longer required.",
-			["u"] = REMOVED_FROM_GAME,
-		}),
-		i(46055, {	-- Grand Master Fishing - Deep Sea Adventures
-			["collectible"] = false,
-			["description"] = "No longer required.",
-			["u"] = REMOVED_FROM_GAME,
+			["_drop"] = { "spellID", "recipeID" },
 		}),
 	}),
-	f(52,     {	-- Finger
-		i(8350, {	-- The 1 Ring
-			["description"] = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
+	filter(57,   {	-- Fishing Poles
+		i(19970),	-- Arcanite Fishing Pole
+		i(45991),	-- Bone Fishing Pole
+		i(116826, {	-- Draenic Fishing Pole
+			["races"] = ALLIANCE_ONLY,
 		}),
-	}),
-	n(-167,   {	-- Fishing Poles
-		["icon"] = "Interface\\Icons\\inv_fishingpole_02",
-		["g"] = {
-			i(19970),	-- Arcanite Fishing Pole
-			i(45991),	-- Bone Fishing Pole
-			i(116826, {	-- Draenic Fishing Pole
-				["races"] = ALLIANCE_ONLY,
-			}),
-			i(84661),	-- Dragon Fishing Pole
-			i(45992),	-- Jeweled Fishing Pole
-			i(44050),	-- Mastercraft Kalu'ak Fishing Pole
-			i(19022),	-- Nat Pagle's Extreme Angler FC-5000
-			i(45858),	-- Nat's Lucky Fishing Pole
-			i(84660),	-- Pandaren Fishing Pole
-			i(168804),	-- Powered Piscine Procurement Pole
-			i(116825, {	-- Savage Fishing Pole
-				["races"] = HORDE_ONLY,
-			}),
-			i(25978),	-- Seth's Graphite Fishing Pole
-			i(180136),	-- The Brokers Angle'r
-			i(120163),	-- Thruk's Fishing Rod
-		},
-	}),
-	f(1,      {	-- Held in Off-hand
-		i(6292),	-- 10 Pound Mud Snapper
-		i(6294),	-- 12 Pound Mud Snapper
-		i(6295),	-- 15 Pound Mud Snapper
-		i(13901),	-- 15 Pound Salmon
-		i(6309),	-- 17 Pound Catfish
-		i(13902),	-- 18 Pound Salmon
-		i(6310),	-- 19 Pound Catfish
-		i(6311),	-- 22 Pound Catfish
-		i(13903),	-- 22 Pound Salmon
-		i(13904),	-- 25 Pound Salmon
-		i(6363),	-- 26 Pound Catfish
-		i(13905),	-- 29 Pound Salmon
-		i(6364),	-- 32 Pound Catfish
-		i(13906),	-- 32 Pound Salmon
-		i(13885),	-- 34 Pound Redgill
-		i(13886),	-- 37 Pound Redgill
-		i(13882),	-- 42 Pound Redgill
-		i(13883),	-- 45 Pound Redgill
-		i(13884),	-- 49 Pound Redgill
-		i(13887),	-- 52 Pound Redgill
-		i(13914),	-- 70 Pound Mightfish
-		i(13915),	-- 85 Pound Mightfish
-		i(13916),	-- 92 Pound Mightfish
-		i(13917),	-- 103 Pound Mightfish
+		i(84661),	-- Dragon Fishing Pole
+		i(45992),	-- Jeweled Fishing Pole
+		i(44050),	-- Mastercraft Kalu'ak Fishing Pole
+		i(19022),	-- Nat Pagle's Extreme Angler FC-5000
+		i(45858),	-- Nat's Lucky Fishing Pole
+		i(84660),	-- Pandaren Fishing Pole
+		i(168804),	-- Powered Piscine Procurement Pole
+		i(116825, {	-- Savage Fishing Pole
+			["races"] = HORDE_ONLY,
+		}),
+		i(25978),	-- Seth's Graphite Fishing Pole
+		i(180136),	-- The Brokers Angle'r
+		i(120163),	-- Thruk's Fishing Rod
 	}),
 	i(168016, {	-- Hyper-Compressed Ocean
 		["crs"] = {
@@ -222,7 +162,7 @@ profession(FISHING, {
 			["description"] = "When the short buff expires, this item will disappear from your inventory and a Bitestone Fishbrul will spawn.  Kill it for the lure.",
 			["g"] = {
 				n(102347, {	-- Bitestone Fishbrul
-					i(133710), 	-- Salmon Lure
+					i(133710),	-- Salmon Lure
 				}),
 			},
 		}),
@@ -423,36 +363,7 @@ profession(FISHING, {
 			},
 		}),
 	}),
-	f(50,     {	-- Miscellaneous
-		i(13907),	-- 7 Pound Lobster
-		i(13908),	-- 9 Pound Lobster
-		i(13909),	-- 12 Pound Lobster
-		i(13910),	-- 15 Pound Lobster
-		i(13911),	-- 19 Pound Lobster
-		i(13912),	-- 21 Pound Lobster
-		i(13913),	-- 22 Pound Lobster
-		i(13876),	-- 40 Pound Grouper
-		i(13877),	-- 47 Pound Grouper
-		i(13878),	-- 53 Pound Grouper
-		i(13879),	-- 59 Pound Grouper
-		i(13880),	-- 68 Pound Grouper
-		i(6646),	-- Bloated Albacore
-		i(6647),	-- Bloated Catfish
-		i(21163),	-- Bloated Firefin
-		i(6644),	-- Bloated Mackerel
-		i(21243),	-- Bloated Mightfish
-		i(6645),	-- Bloated Mud Snapper
-		i(21162),	-- Bloated Oily Blackmouth
-		i(13881, {	-- Bloated Redgill
-			i(7551),	-- Entwined Opaline Talisman
-			i(7549),	-- Fairy's Embrace
-		}),
-		i(21164),	-- Bloated Rockscale Cod
-		i(13891),	-- Bloated Salmon
-		i(6643),	-- Bloated Smallfish
-		i(8366),	-- Bloated Trout
-	}),
-	n(-160,   {	-- Mounts
+	filter(100,   {	-- Mounts
 		i(142398, {	-- Darkwater Skate
 			["cost"] = { { "i", 124669, 500 }, },	-- 500x Darkmoon Daggermaw
 		}),
@@ -497,49 +408,56 @@ profession(FISHING, {
 		}),
 		p(163),		-- Toothy
 	}),
+	n(QUESTS, {
+		q(24431, {	-- Waterlogged Recipe
+			["repeatable"] = true,
+			["provider"] = { "i", 49667 },	-- Waterlogged Recipe
+		}),
+	}),
 	n(-319,   {	-- Weapons
 		i(44703),	-- Dark Herring
 		i(44505, {	-- Dustbringer
 			["description"] = "Can be caught in schools or open water in Northrend.",
 		}),
-		i(34486),	-- Old Crafty
-		i(34484),	-- Old Ironjaw
-		i(19808, {	-- Rockhide Strongfish
-			["description"] = "Can be caught in schools in The Cape of Stranglethorn or Northern Stranglethorn during the Stranglethorn Fishing Extravaganza.",
-		}),
-		i(6360, {	-- Steelscale Crushfish
-			["description"] = "Can be caught in Darkmoon Island, Northern Stranglethorn, and Wetlands in open water.",
-		}),
 	}),
-	--[[
-	tier(1, {	-- Classic
-	}),
-	tier(2, { 	-- The Burning Crusade
-	}),
-	tier(3, { 	-- Wrath of the Lich King
-	}),
-	tier(4, { 	-- Cataclysm
-	}),
-	tier(6, { 	-- Warlords of Draenor
-	}),
-	--]]
-	tier(7, { 	-- Legion
-		spell(201943, {	-- Better Luck Next Time
-			["maps"] = { 630, 646, 790, 650, 634, 680, 641 },	-- Azsuna / Broken Shore / Eye of Azshara / Highmountain / Stormheim / Suramar / Val'sharah
-			["g"] = {
-				i(139408, {	-- Deck Sandals
-					["bonusID"] = 1812,
-				}),
-				i(139407, {	-- Diver's Chain Boots
-					["bonusID"] = 1812,
-				}),
-				i(139405, {	-- Kul'Tiras Marine Issue Boots
-					["bonusID"] = 1812,
-				}),
-				i(139406, {	-- Sea Dog Boots
-					["bonusID"] = 1812,
-				}),
-			},
-		}),
+});
+
+-- Fishing Recipes
+_.ItemDB = {};
+local itemrecipe = function(itemID, spellID, timeline, classicphase)
+	local o = { ["itemID"] = itemID };
+	if spellID and spellID > 0 then
+		o.spellID = spellID;
+	end
+	if timeline then
+		-- Ensure that the timeline is in a table format.
+		if type(timeline) == "string" then timeline = { timeline }; end
+		o.timeline = timeline;
+	end
+	if classicphase then applyclassicphase(classicphase, o); end
+	_.ItemDB[itemID] = o;
+	return o;
+end
+
+-- Classic Recipes
+itemrecipe(16083, 0--[[7732]], "removed 3.1.0.9767");	-- Expert Fishing - The Bass and You
+itemrecipe(27532, 0--[[7732]], "removed 3.1.0.9767");	-- Master Fishing - The Art of Angling
+
+-- TBC Recipes
+-- #if ANYCLASSIC
+itemrecipe(34109, 43308, "added 2.3.0.7382", TBC_PHASE_ONE);	-- Weather-Beaten Journal
+-- #else
+-- This spellID is not collectible in Retail
+itemrecipe(34109, 0--[[43308]], "added 2.3.0.7382", TBC_PHASE_ONE);	-- Weather-Beaten Journal
+-- #endif
+
+-- These items never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	filter(200, {	-- Recipes
+		i(16082),	-- Artisan Fishing - The Way of the Lure
+		-- #if AFTER CATA
+		i(46054),	-- Journeyman Fishing - Fishing for Dummies
+		i(46055),	-- Grand Master Fishing - Deep Sea Adventures
+		-- #endif
 	}),
 });

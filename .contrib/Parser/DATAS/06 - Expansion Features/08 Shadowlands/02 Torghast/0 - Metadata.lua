@@ -4,12 +4,24 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		m(1627, {	-- Torghast
 			["coord"] = { 48.2, 39.4, THE_MAW },	-- Torghast Portal
 			["icon"] = 3642306,
 			["maps"] = {
 				-- Tracking which mapID is which Zone name might not be necessary for Layer/Floor since they seem to be repeated within the Named 'Tower'
+				1962,	-- Adamant Vaults
+				1963,	-- Adamant Vaults - Floor 6
+				1964,	-- Adamant Vaults - Floor 6
+				1969,	-- Adamant Vaults - Floor 6
+				1974,	-- Adamant Vaults - Floor 6 (Lower)
+				1979,	-- Adamant Vaults - Floor 6 (Lower)
+				1977,	-- Adamant Vaults - Floor 6 (Lower)
+				1975,	-- Adamant Vaults - Floor 6 (Upper)
+				1976,	-- Adamant Vaults - Floor 6 (Upper)
+				1966,	-- Adamant Vaults - Floor 7 (Lower)
+				1965,	-- Adamant Vaults - Floor 7 (Upper)
+				--
 				1769,	-- Arkoban Hall - Floor 6 / Skoldus Hall - Layer 1, Floor 6 / Layer 2, Floor 6 / Layer 3, Floor 6
 				--
 				1779,	-- Coldheart Interstitia - Layer 1, Floor 1
@@ -22,8 +34,11 @@ _.ExpansionFeatures =
 				1631,	-- Coldheart Interstitia - Layer 2, Floor 2 / Layer 2, Floor 4
 				1776,	-- Coldheart Interstitia - Layer 2, Floor 5
 				--
-				1912,	-- Coldheart Interstitia - Layer 6, Floor 1
 				1913,	-- Coldheart Interstitia - Layer 4, Floor 2
+				--
+				1912,	-- Coldheart Interstitia - Layer 6, Floor 1 -- TODO: this is the Runecarver's area... seems weird to list all Torghast stuff in there
+				--
+				1988,	-- Coldheart Interstitia - Layer 9, Floor 2
 				--
 				1641,	-- Fracture Chambers - Layer 1, Floor 2
 				1624,	-- Fracture Chambers - Layer 1, Floor 3 / Layer 2, Floor 3
@@ -39,6 +54,8 @@ _.ExpansionFeatures =
 				--
 				1615,	-- Fracture Chambers - Layer 6, Floor 1
 				--
+				1982,	-- Fracture Chambers - Layer 9, Floor 2
+				--
 				1780,	-- Mort'regar - Layer 1, Floor 1
 				1802,	-- Mort'regar - Layer 1, Floor 2
 				1777,	-- Mort'regar - Layer 1, Floor 3
@@ -52,6 +69,9 @@ _.ExpansionFeatures =
 				1757,	-- Mort'regar - Layer 2, Floor 5
 				1781,	-- Mort'regar - Layer 2, Floor 6
 				--
+				1984,	-- Mort-regar - Layer 10, Floor 2?
+				1987,	-- Mort'regar - Layer 10, Floor 1
+				--
 				1810,	-- Skoldus Hall - Layer 1, Floor 1
 				1758,	-- Skoldus Hall - Layer 1, Floor 3 / Layer 2, Floor 3 / Layer 3, Floor 3
 				1766,	-- Skoldus Hall - Layer 1, Floor 4 / Layer 2, Floor 5 / Layer 3, Floor 2
@@ -63,7 +83,11 @@ _.ExpansionFeatures =
 				1804,	-- Skoldus Hall - Layer 3, Floor 5
 				1809,	-- Skoldus Hall - Layer 3, Floor 5
 				--
+				1983,	-- Skoldus Hall - Layer 12, Some floor
+				--
 				1623,	-- Soulforges - Layer 8, Floor 4
+				--
+				1981,	-- Soulforges - Layer 12, Some floor
 				--
 				1792,	-- Upper Reaches - Layer 1, Floor 1 / Layer 3, Floor 4
 				1791,	-- Upper Reaches - Layer 1, Floor 2 / Layer 2, Floor 4 / Layer 3, Floor 1
@@ -76,6 +100,7 @@ _.ExpansionFeatures =
 				--
 				1798,	-- Coldheart - Layer 2, Floor 1 / Layer 3, Floor 1
 				1795,	-- Coldheart - Layer 2, Floor 2 / Layer 3, Floor 2
+				1985,	-- Coldheart - Layer 11
 				--
 				1799,	-- somewhere in Coldheart Interstitia
 				1797,	-- somewhere in Coldheart Interstitia
@@ -110,6 +135,8 @@ _.ExpansionFeatures =
 				1811,	-- Torghast
 				1812,	-- Torghast
 				1911,	-- Torghast Entrance
+				--
+				1986,	-- Uknown floor(Probably Mort-regar)
 			},
 		}),
 	}),

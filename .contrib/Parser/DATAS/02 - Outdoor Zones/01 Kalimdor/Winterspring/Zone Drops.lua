@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(83, {	-- Winterspring
-			n(ZONEDROPS, {
+		m(WINTERSPRING, {
+			n(ZONE_DROPS, {
 				i(34535),	-- Azure Whelpling
 				i(16223, {	-- Formula: Enchant Weapon - Icy Chill
 					["crs"] = {
@@ -32,7 +32,7 @@ _.Zones =
 				}),
 				i(13497, {	-- Recipe: Greater Arcane Protection Potion
 					["crs"] = { 7437 },	-- Cobalt Mageweaver
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { "added 1.11.1.5462", "removed 4.0" },
 				}),
 				i(13495, {	-- Recipe: Greater Frost Protection Potion
 					["crs"] = { 7428 },	-- Frostmaul Giant

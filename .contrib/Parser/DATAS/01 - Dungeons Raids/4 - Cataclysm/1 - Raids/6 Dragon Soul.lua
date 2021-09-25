@@ -2,9 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(4, {	-- Cataclysm
-	inst(187, { 	-- Dragon Soul
-		["order"] = "06",
+_.Instances = { tier(CATA_TIER, {
+	inst(187, {	-- Dragon Soul
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 85,
@@ -18,8 +17,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 			414,
 		},
 		["coords"] = {
-			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
-			{ 61.9, 27.2, 75 },	-- actual raid entrance
+			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
+			{ 61.9, 27.2, CAVERNS_OF_TIME },	-- actual raid entrance
 		},
 		["groups"] = {
 			n(-10066, {	-- Legendary Questline
@@ -29,14 +28,14 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["isRaid"] = true,
 				["lvl"] = 85,
 				["maps"] = {
-					25,	-- Hillsbrad Foothills (maybe needs specific rogue building id)
+					HILLSBRAD_FOOTHILLS,	-- maybe needs specific rogue building id
 					74,	-- Tanaris: Caverns of Time Entrance
-					75,	-- Tanaris: Caverns of Time
-					84,	-- Stormwind City
-					85,	-- Orgrimmar
+					CAVERNS_OF_TIME,	-- Tanaris: Caverns of Time
+					STORMWIND_CITY,
+					ORGRIMMAR,
 					86,	-- Orgrimmar: The Drag
 					129,	-- The Nexus
-					198,	-- Mount Hyjal
+					MOUNT_HYJAL,
 					114,	-- Borean Tundra
 					DEADWIND_PASS,
 				},
@@ -213,134 +212,23 @@ _.Instances = { tier(4, {	-- Cataclysm
 							80675,	-- Auridormi <Raid Finder Guardian>
 						},
 						["groups"] = {
-							i(78869, {	-- Crown of the Corrupted Conqueror
-								i(78790),	-- Faceguard of Radiant Glory
-								i(78787),	-- Headguard of Radiant Glory
-								i(78788),	-- Helmet of Radiant Glory
-								i(78795),	-- Cowl of Dying Light
-								i(78798),	-- Hood of Dying Light
-								i(78797),	-- Hood of the Faceless Shroud
-							}),
-							i(78870, {	-- Crown of the Corrupted Protector
-								i(78793),	-- Wyrmstalker's Headguard
-								i(78786),	-- Spiritwalker's Faceguard
-								i(78780),	-- Spiritwalker's Headpiece
-								i(78781),	-- Spiritwalker's Helmet
-								i(78784),	-- Colossal Dragonplate Faceguard
-								i(78783),	-- Colossal Dragonplate Helmet
-							}),
-							i(78868, {	-- Crown of the Corrupted Vanquisher
-								i(78792),	-- Necrotic Boneplate Faceguard
-								i(78782),	-- Necrotic Boneplate Helmet
-								i(78791),	-- Deep Earth Cover
-								i(78789),	-- Deep Earth Headpiece
-								i(78785),	-- Deep Earth Helm
-								i(78796),	-- Time Lord's Hoodd
-								i(78794),	-- Blackfang Battleweave Helmet
-							}),
-							i(78875, {	-- Shoulders of the Corrupted Conqueror
-								i(78841),	-- Mantle of Radiant Glory
-								i(78837),	-- Pauldrons of Radiant Glory
-								i(78840),	-- Shoulderguards of Radiant Glory
-								i(78842),	-- Mantle of Dying Light
-								i(78845),	-- Mantle of Dying Light
-								i(78844),	-- Mantle of the Faceless Shroud
-							}),
-							i(78876, {	-- Shoulders of the Corrupted Protector
-								i(78832),	-- Wyrmstalker's Spaulders
-								i(78834),	-- Spiritwalker's Mantle
-								i(78836),	-- Spiritwalker's Shoulderwraps
-								i(78828),	-- Spiritwalker's Spaulders
-								i(78830),	-- Colossal Dragonplate Pauldrons
-								i(78829),	-- Colossal Dragonplate Shoulderguards
-							}),
-							i(78874, {	-- Shoulders of the Corrupted Vanquisher
-								i(78831),	-- Necrotic Boneplate Pauldrons
-								i(78846),	-- Necrotic Boneplate Shoulderguards
-								i(78835),	-- Deep Earth Mantle
-								i(78839),	-- Deep Earth Shoulderwraps
-								i(78838),	-- Deep Earth Spaulders
-								i(78843),	-- Time Lord's Mantle
-								i(78833),	-- Blackfang Battleweave Spaulders
-							}),
+							i(78869),	-- Crown of the Corrupted Conqueror
+							i(78870),	-- Crown of the Corrupted Protector
+							i(78868),	-- Crown of the Corrupted Vanquisher
+							i(78875),	-- Shoulders of the Corrupted Conqueror
+							i(78876),	-- Shoulders of the Corrupted Protector
+							i(78874),	-- Shoulders of the Corrupted Vanquisher
 							i(78863, {	-- Chest of the Corrupted Conqueror
 								["description"] = "Paladin Completionists will want to take this item to the vendor to get the specific item they want.  Right-clicking can award the Holy piece regardless of your spec.",
-								["groups"] = {
-									i(78822),	-- Battleplate of Radiant Glory
-									i(78821),	-- Breastplate of Radiant Glory
-									i(78827),	-- Chestguard of Radiant Glory
-									i(78823),	-- Robes of Dying Light
-									i(78826),	-- Robes of Dying Light
-									i(78825),	-- Robes of the Faceless Shroud
-								},
 							}),
-							i(78864, {	-- Chest of the Corrupted Protector
-								i(78756),	-- Wyrmstalker's Tunic
-								i(78819),	-- Spiritwalker's Cuirass
-								i(78818),	-- Spiritwalker's Hauberk
-								i(78820),	-- Spiritwalker's Tunic
-								i(78752),	-- Colossal Dragonplate Battleplate
-								i(78753),	-- Colossal Dragonplate Chestguard
-							}),
-							i(78862, {	-- Chest of the Corrupted Vanquisher
-								i(78754),	-- Necrotic Boneplate Breastplate
-								i(78758),	-- Necrotic Boneplate Chestguard
-								i(78760),	-- Deep Earth Raiment
-								i(78755),	-- Deep Earth Robes
-								i(78757),	-- Deep Earth Vestment
-								i(78824),	-- Time Lord's Robes
-								i(78759),	-- Blackfang Battleweave Tunic
-							}),
-							i(78866, {	-- Gauntlets of the Corrupted Conqueror
-								i(78770),	-- Gauntlets of Radiant Glory
-								i(78768),	-- Gloves of Radiant Glory
-								i(78772),	-- Handguards of Radiant Glory
-								i(78777),	-- Gloves of Dying Light
-								i(78778),	-- Handwraps of Dying Light
-								i(78776),	-- Gloves of the Faceless Shroud
-							}),
-							i(78867, {	-- Gauntlets of the Corrupted Protector
-								i(78769),	-- Wyrmstalker's Gloves
-								i(78761),	-- Spiritwalker's Gloves
-								i(78762),	-- Spiritwalker's Grips
-								i(78767),	-- Spiritwalker's Handwraps
-								i(78763),	-- Colossal Dragonplate Gauntlets
-								i(78764),	-- Colossal Dragonplate Handguards
-							}),
-							i(78865, {	-- Gauntlets of the Corrupted Vanquisher
-								i(78765),	-- Necrotic Boneplate Gauntlets
-								i(78773),	-- Necrotic Boneplate Handguards
-								i(78771),	-- Deep Earth Gloves
-								i(78779),	-- Deep Earth Grips
-								i(78775),	-- Deep Earth Handwraps
-								i(78766),	-- Time Lord's Gloves
-								i(78774),	-- Blackfang Battleweave Gloves
-							}),
-							i(78872, {	-- Leggings of the Corrupted Conqueror
-								i(78812),	-- Greaves of Radiant Glory
-								i(78810),	-- Legguards of Radiant Glory
-								i(78807),	-- Legplates of Radiant Glory
-								i(78817),	-- Leggings of Dying Light
-								i(78814),	-- Legwraps of Dying Light
-								i(78816),	-- Leggings of the Faceless Shroud
-							}),
-							i(78873, {	-- Leggings of the Corrupted Protector
-								i(78804),	-- Wyrmstalker's Legguards
-								i(78806),	-- Spiritwalker's Kilt
-								i(78799),	-- Spiritwalker's Legguards
-								i(78813),	-- Spiritwalker's Legwraps
-								i(78800),	-- Colossal Dragonplate Legguards
-								i(78801),	-- Colossal Dragonplate Legplates
-							}),
-							i(78871, {	-- Leggings of the Corrupted Vanquisher
-								i(78802),	-- Necrotic Boneplate Greaves
-								i(78811),	-- Necrotic Boneplate Legguards
-								i(78809),	-- Deep Earth Leggings
-								i(78808),	-- Deep Earth Legguards
-								i(78805),	-- Deep Earth Legwraps
-								i(78815),	-- Time Lord's Leggings
-								i(78803),	-- Blackfang Battleweave Legguards
-							}),
+							i(78864),	-- Chest of the Corrupted Protector
+							i(78862),	-- Chest of the Corrupted Vanquisher
+							i(78866),	-- Gauntlets of the Corrupted Conqueror
+							i(78867),	-- Gauntlets of the Corrupted Protector
+							i(78865),	-- Gauntlets of the Corrupted Vanquisher
+							i(78872),	-- Leggings of the Corrupted Conqueror
+							i(78873),	-- Leggings of the Corrupted Protector
+							i(78871),	-- Leggings of the Corrupted Vanquisher
 							i(78497),	-- Breathstealer Band
 							i(78498),	-- Hardheart Ring
 							i(78495),	-- Infinite Loop
@@ -390,7 +278,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(78412),	-- Heartblood Wristplates
 								i(78408),	-- Interrogator's Bloody Footpads
 								i(78411),	-- Mindstrainer Treads
-								i(77971), 	-- Insignia of the Corrupted Mind
+								i(77971),	-- Insignia of the Corrupted Mind
 								i(77970),	-- Soulshifter Vortex
 							})),
 							cr(55689, e(317, {	-- Hagara the Stormbinder
@@ -494,23 +382,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							}),
 						},
 					}),
-					n(ZONEDROPS, {
-						["crs"] = {
-							57333,	-- Acidic Globule
-							57160,	-- Ancient Water Lord
-							57890,	-- Claw of Go'rath
-							57384,	-- Cobalt Globule <Blood of Shu'ma>
-							57386,	-- Crimson Globule <Blood of Shu'ma>
-							57382,	-- Dark Globule <Blood of Shu'ma>
-							57158,	-- Earthen Destroyer
-							57159,	-- Earthen Soldier
-							57875,	-- Eye of Go'rath
-							57877,	-- Flail of Go'rath
-							57387,	-- Glowing Globule <Blood of Shu'ma>
-							57821,	-- Lieutenant Shara
-							57388,	-- Shadowed Globule <Blood of Shu'ma>
-							57280,	-- Twilight Siege Captain
-						},
+					n(ZONE_DROPS, {
 						["groups"] = {
 							i(78886),	-- Belt of Ghostly Graces
 							i(78885),	-- Dragoncarver Belt
@@ -564,31 +436,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Ping Pong Champion
 							["achievementID"] = 6128,	-- Ping Pong Champion
 						},
-						i(78183, {	-- Gauntlets of the Corrupted Conqueror
-							i(76875),	-- Gauntlets of Radiant Glory
-							i(76766),	-- Gloves of Radiant Glory
-							i(77004),	-- Handguards of Radiant Glory
-							i(76348),	-- Gloves of Dying Light
-							i(76357),	-- Handwraps of Dying Light
-							i(76343),	-- Gloves of the Faceless Shroud
-						}),
-						i(78178, {	-- Gauntlets of the Corrupted Protector
-							i(77029),	-- Wyrmstalker's Gloves
-							i(77038),	-- Spiritwalker's Gloves
-							i(77041),	-- Spiritwalker's Grips
-							i(76757),	-- Spiritwalker's Handwraps
-							i(76985),	-- Colossal Dragonplate Gauntlets
-							i(76989),	-- Colossal Dragonplate Handguards
-						}),
-						i(78173, {	-- Gauntlets of the Corrupted Vanquisher
-							i(76975),	-- Necrotic Boneplate Gauntlets
-							i(77009),	-- Necrotic Boneplate Handguards
-							i(77018),	-- Deep Earth Gloves
-							i(77014),	-- Deep Earth Grips
-							i(76749),	-- Deep Earth Handwraps
-							i(76212),	-- Time Lord's Gloves
-							i(77024),	-- Blackfang Battleweave Gloves
-						}),
+						i(78183),	-- Gauntlets of the Corrupted Conqueror
+						i(78178),	-- Gauntlets of the Corrupted Protector
+						i(78173),	-- Gauntlets of the Corrupted Vanquisher
 						i(77216),	-- Finger of Zon'ozz
 						i(77215),	-- Horrifying Horn Arbalest
 						i(77258),	-- Graveheart Bracers
@@ -620,31 +470,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 								},
 							},
 						},
-						i(78181, {	-- Leggings of the Corrupted Conqueror
-							i(76768),	-- Greaves of Radiant Glory
-							i(77006),	-- Legguards of Radiant Glory
-							i(76877),	-- Legplates of Radiant Glory
-							i(76346),	-- Leggings of Dying Light
-							i(76359),	-- Legwraps of Dying Light
-							i(76341),	-- Leggings of the Faceless Shroud
-						}),
-						i(78176, {	-- Leggings of the Corrupted Protector
-							i(77031),	-- Wyrmstalker's Legguards
-							i(77036),	-- Spiritwalker's Kilt
-							i(77043),	-- Spiritwalker's Legguards
-							i(76759),	-- Spiritwalker's Legwraps
-							i(76991),	-- Colossal Dragonplate Legguards
-							i(76986),	-- Colossal Dragonplate Legplates
-						}),
-						i(78171, {	-- Leggings of the Corrupted Vanquisher
-							i(76977),	-- Necrotic Boneplate Greaves
-							i(77011),	-- Necrotic Boneplate Legguards
-							i(77020),	-- Deep Earth Leggings
-							i(77016),	-- Deep Earth Legguards
-							i(76751),	-- Deep Earth Legwraps
-							i(76214),	-- Time Lord's Leggings
-							i(77026),	-- Blackfang Battleweave Legguards
-						}),
+						i(78181),	-- Leggings of the Corrupted Conqueror
+						i(78176),	-- Leggings of the Corrupted Protector
+						i(78171),	-- Leggings of the Corrupted Vanquisher
 						i(152979),	-- Puddle of Black Liquid (PET!)
 						i(77217),	-- Experimental Specimen Slicer
 						i(77218),	-- Spire of Coagulated Globules
@@ -659,31 +487,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Holding Hands
 							["achievementID"] = 6175,	-- Holding Hands
 						},
-						i(78180, {	-- Shoulders of the Corrupted Conqueror
-							i(76769),	-- Mantle of Radiant Glory
-							i(76878),	-- Pauldrons of Radiant Glory
-							i(77007),	-- Shoulderguards of Radiant Glory
-							i(76344),	-- Mantle of Dying Light
-							i(76361),	-- Mantle of Dying Light
-							i(76339),	-- Mantle of the Faceless Shroud
-						}),
-						i(78175, {	-- Shoulders of the Corrupted Protector
-							i(77032),	-- Wyrmstalker's Spaulders
-							i(76760),	-- Spiritwalker's Mantle
-							i(77044),	-- Spiritwalker's Spaulders
-							i(77035),	-- Spiritwalker's Shoulderwraps
-							i(76987),	-- Colossal Dragonplate Pauldrons
-							i(76992),	-- Colossal Dragonplate Shoulderguards
-						}),
-						i(78170, {	-- Shoulders of the Corrupted Vanquisher
-							i(76978),	-- Necrotic Boneplate Pauldrons
-							i(77012),	-- Necrotic Boneplate Shoulderguards
-							i(76753),	-- Deep Earth Mantle
-							i(77022),	-- Deep Earth Shoulderwraps
-							i(77017),	-- Deep Earth Spaulders
-							i(76216),	-- Time Lord's Mantle
-							i(77027),	-- Blackfang Battleweave Spaulders
-						}),
+						i(78180),	-- Shoulders of the Corrupted Conqueror
+						i(78175),	-- Shoulders of the Corrupted Protector
+						i(78170),	-- Shoulders of the Corrupted Vanquisher
 						i(77221),	-- Lightning Rod
 						i(77220),	-- Electrowing Dagger
 						i(77249),	-- Bracers of the Banished
@@ -704,31 +510,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Minutes to Midnight
 							["achievementID"] = 6084,	-- Minutes to Midnight
 						},
-						i(78184, {	-- Chest of the Corrupted Conqueror
-							i(76874),	-- Battleplate of Radiant Glory
-							i(76765),	-- Breastplate of Radiant Glory
-							i(77003),	-- Chestguard of Radiant Glory
-							i(76345),	-- Robes of Dying Light
-							i(76360),	-- Robes of Dying Light
-							i(76340),	-- Robes of the Faceless Shroud
-						}),
-						i(78179, {	-- Chest of the Corrupted Protector
-							i(77028),	-- Wyrmstalker's Tunic
-							i(77040),	-- Spiritwalker's Cuirass
-							i(77039),	-- Spiritwalker's Hauberk
-							i(76756),	-- Spiritwalker's Tunic
-							i(76984),	-- Colossal Dragonplate Battleplate
-							i(76988),	-- Colossal Dragonplate Chestguard
-						}),
-						i(78174, {	-- Chest of the Corrupted Vanquisher
-							i(76974),	-- Necrotic Boneplate Breastplate
-							i(77008),	-- Necrotic Boneplate Chestguard
-							i(77013),	-- Deep Earth Raiment
-							i(76752),	-- Deep Earth Robes
-							i(77021),	-- Deep Earth Vestment
-							i(76215),	-- Time Lord's Robes
-							i(77023),	-- Blackfang Battleweave Tunic
-						}),
+						i(78184),	-- Chest of the Corrupted Conqueror
+						i(78179),	-- Chest of the Corrupted Protector
+						i(78174),	-- Chest of the Corrupted Vanquisher
 						i(78919),	-- Experiment 12-B (MOUNT!)
 						i(77223),	-- Morningstar of Heroic Will
 						i(77245),	-- Ledger of Revolting Rituals
@@ -748,31 +532,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 							["achievementID"] = 6107,	-- Fall of Deathwing
 							["criteriaID"] = 2,	-- Warmaster Blackhorn
 						},
-						i(78182, {	-- Crown of the Corrupted Conqueror
-							i(77005),	-- Faceguard of Radiant Glory
-							i(76767),	-- Headguard of Radiant Glory
-							i(76876),	-- Helmet of Radiant Glory
-							i(76358),	-- Cowl of Dying Light
-							i(76347),	-- Hood of Dying Light
-							i(76342),	-- Hood of the Faceless Shroud
-						}),
-						i(78177, {	-- Crown of the Corrupted Protector
-							i(77030),	-- Wyrmstalker's Headguard
-							i(76758),	-- Spiritwalker's Faceguard
-							i(77037),	-- Spiritwalker's Headpiece
-							i(77042),	-- Spiritwalker's Helmet
-							i(76990),	-- Colossal Dragonplate Faceguard
-							i(76983),	-- Colossal Dragonplate Helmet
-						}),
-						i(78172, {	-- Crown of the Corrupted Vanquisher
-							i(77010),	-- Necrotic Boneplate Faceguard
-							i(76976),	-- Necrotic Boneplate Helmet
-							i(77019),	-- Deep Earth Cover
-							i(77015),	-- Deep Earth Headpiece
-							i(76750),	-- Deep Earth Helm
-							i(76213),	-- Time Lord's Hood
-							i(77025),	-- Blackfang Battleweave Helmet
-						}),
+						i(78182),	-- Crown of the Corrupted Conqueror
+						i(78177),	-- Crown of the Corrupted Protector
+						i(78172),	-- Crown of the Corrupted Vanquisher
 						i(77224),	-- Ataraxis, Cudgel of the Warmaster
 						i(77225),	-- Visage of the Destroyer
 						i(77226),	-- Blackhorn's Mighty Bulwark
@@ -828,8 +590,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Destroyer's End
 							["achievementID"] = 6177,	-- Destroyer's End
 							["g"] = {
-								{	-- ,Destroyer's End
-									["titleID"] = 196,	-- ,Destroyer's End
+								{	-- , Destroyer's End
+									["titleID"] = 196,	-- , Destroyer's End
 								},
 							},
 						},
@@ -854,7 +616,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					})),
 				},
 			}),
-			d(2, { 	-- Heroic
+			d(2, {	-- Heroic
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
@@ -885,23 +647,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							}),
 						},
 					}),
-					n(ZONEDROPS, {
-						["crs"] = {
-							57333,	-- Acidic Globule
-							57160,	-- Ancient Water Lord
-							57890,	-- Claw of Go'rath
-							57384,	-- Cobalt Globule <Blood of Shu'ma>
-							57386,	-- Crimson Globule <Blood of Shu'ma>
-							57382,	-- Dark Globule <Blood of Shu'ma>
-							57158,	-- Earthen Destroyer
-							57159,	-- Earthen Soldier
-							57875,	-- Eye of Go'rath
-							57877,	-- Flail of Go'rath
-							57387,	-- Glowing Globule <Blood of Shu'ma>
-							57821,	-- Lieutenant Shara
-							57388,	-- Shadowed Globule <Blood of Shu'ma>
-							57280,	-- Twilight Siege Captain
-						},
+					n(ZONE_DROPS, {
 						["g"] = {
 							i(78886),	-- Belt of Ghostly Graces
 							i(78885),	-- Dragoncarver Belt
@@ -962,31 +708,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Ping Pong Champion
 							["achievementID"] = 6128,	-- Ping Pong Champion
 						},
-						i(78853, {	-- Gauntlets of the Corrupted Conqueror
-							i(78675),	-- Gauntlets of Radiant Glory
-							i(78673),	-- Gloves of Radiant Glory
-							i(78677),	-- Handguards of Radiant Glory
-							i(78682),	-- Gloves of Dying Light
-							i(78683),	-- Handwraps of Dying Light
-							i(78681),	-- Gloves of the Faceless Shroud
-						}),
-						i(78854, {	-- Gauntlets of the Corrupted Protector
-							i(78674),	-- Wyrmstalker's Gloves
-							i(78666),	-- Spiritwalker's Gloves
-							i(78667),	-- Spiritwalker's Grips
-							i(78672),	-- Spiritwalker's Handwraps
-							i(78668),	-- Colossal Dragonplate Gauntlets
-							i(78669),	-- Colossal Dragonplate Handguards
-						}),
-						i(78855, {	-- Gauntlets of the Corrupted Vanquisher
-							i(78670),	-- Necrotic Boneplate Gauntlets
-							i(78678),	-- Necrotic Boneplate Handguards
-							i(78676),	-- Deep Earth Gloves
-							i(78684),	-- Deep Earth Grips
-							i(78680),	-- Deep Earth Handwraps
-							i(78671),	-- Time Lord's Gloves
-							i(78679),	-- Blackfang Battleweave Gloves
-						}),
+						i(78853),	-- Gauntlets of the Corrupted Conqueror
+						i(78854),	-- Gauntlets of the Corrupted Protector
+						i(78855),	-- Gauntlets of the Corrupted Vanquisher
 						i(78392),	-- Finger of Zon'ozz
 						i(78387),	-- Horrifying Horn Arbalest
 						i(78390),	-- Graveheart Bracers
@@ -1021,31 +745,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 								},
 							},
 						},
-						i(78856, {	-- Leggings of the Corrupted Conqueror
-							i(78717),	-- Greaves of Radiant Glory
-							i(78715),	-- Legguards of Radiant Glory
-							i(78712),	-- Legplates of Radiant Glory
-							i(78722),	-- Leggings of Dying Light
-							i(78719),	-- Legwraps of Dying Light
-							i(78721),	-- Leggings of the Faceless Shroud
-						}),
-						i(78857, {	-- Leggings of the Corrupted Protector
-							i(78709),	-- Wyrmstalker's Legguards
-							i(78711),	-- Spiritwalker's Kilt
-							i(78704),	-- Spiritwalker's Legguards
-							i(78718),	-- Spiritwalker's Legwraps
-							i(78705),	-- Colossal Dragonplate Legguards
-							i(78706),	-- Colossal Dragonplate Legplates
-						}),
-						i(78858, {	-- Leggings of the Corrupted Vanquisher
-							i(78707),	-- Necrotic Boneplate Greaves
-							i(78716),	-- Necrotic Boneplate Legguards
-							i(78714),	-- Deep Earth Leggings
-							i(78713),	-- Deep Earth Legguards
-							i(78710),	-- Deep Earth Legwraps
-							i(78720),	-- Time Lord's Leggings
-							i(78708),	-- Blackfang Battleweave Legguards
-						}),
+						i(78856),	-- Leggings of the Corrupted Conqueror
+						i(78857),	-- Leggings of the Corrupted Protector
+						i(78858),	-- Leggings of the Corrupted Vanquisher
 						i(152979),	-- Puddle of Black Liquid (PET!)
 						i(78403),	-- Experimental Specimen Slicer
 						i(78401),	-- Spire of Coagulated Globules
@@ -1063,31 +765,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Holding Hands
 							["achievementID"] = 6175,	-- Holding Hands
 						},
-						i(78859, {	-- Shoulders of the Corrupted Conqueror
-							i(78746),	-- Mantle of Radiant Glory
-							i(78742),	-- Pauldrons of Radiant Glory
-							i(78745),	-- Shoulderguards of Radiant Glory
-							i(78747),	-- Mantle of Dying Light
-							i(78750),	-- Mantle of Dying Light
-							i(78749),	-- Mantle of the Faceless Shroud
-						}),
-						i(78860, {	-- Shoulders of the Corrupted Protector
-							i(78737),	-- Wyrmstalker's Spaulders
-							i(78739),	-- Spiritwalker's Mantle
-							i(78741),	-- Spiritwalker's Shoulderwraps
-							i(78733),	-- Spiritwalker's Spaulders
-							i(78735),	-- Colossal Dragonplate Pauldrons
-							i(78734),	-- Colossal Dragonplate Shoulderguards
-						}),
-						i(78861, {	-- Shoulders of the Corrupted Vanquisher
-							i(78736),	-- Necrotic Boneplate Pauldrons
-							i(78751),	-- Necrotic Boneplate Shoulderguards
-							i(78740),	-- Deep Earth Mantle
-							i(78744),	-- Deep Earth Shoulderwraps
-							i(78743),	-- Deep Earth Spaulders
-							i(78748),	-- Time Lord's Mantle
-							i(78738),	-- Blackfang Battleweave Spaulders
-						}),
+						i(78859),	-- Shoulders of the Corrupted Conqueror
+						i(78860),	-- Shoulders of the Corrupted Protector
+						i(78861),	-- Shoulders of the Corrupted Vanquisher
 						i(78418),	-- Lightning Rod
 						i(78414),	-- Electrowing Dagger
 						i(78417),	-- Bracers of the Banished
@@ -1111,31 +791,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Minutes to Midnight
 							["achievementID"] = 6084,	-- Minutes to Midnight
 						},
-						i(78847, {	-- Chest of the Corrupted Conqueror
-							i(78727),	-- Battleplate of Radiant Glory
-							i(78726),	-- Breastplate of Radiant Glory
-							i(78732),	-- Chestguard of Radiant Glory
-							i(78728),	-- Robes of Dying Light
-							i(78731),	-- Robes of Dying Light
-							i(78730),	-- Robes of the Faceless Shroud
-						}),
-						i(78848, {	-- Chest of the Corrupted Protector
-							i(78661),	-- Wyrmstalker's Tunic
-							i(78724),	-- Spiritwalker's Cuirass
-							i(78723),	-- Spiritwalker's Hauberk
-							i(78725),	-- Spiritwalker's Tunic
-							i(78657),	-- Colossal Dragonplate Battleplate
-							i(78658),	-- Colossal Dragonplate Chestguard
-						}),
-						i(78849, {	-- Chest of the Corrupted Vanquisher
-							i(78659),	-- Necrotic Boneplate Breastplate
-							i(78663),	-- Necrotic Boneplate Chestguard
-							i(78665),	-- Deep Earth Raiment
-							i(78660),	-- Deep Earth Robes
-							i(78662),	-- Deep Earth Vestment
-							i(78729),	-- Time Lord's Robes
-							i(78664),	-- Blackfang Battleweave Tunic
-						}),
+						i(78847),	-- Chest of the Corrupted Conqueror
+						i(78848),	-- Chest of the Corrupted Protector
+						i(78849),	-- Chest of the Corrupted Vanquisher
 						i(78919),	-- Experiment 12-B (MOUNT!)
 						i(78429),	-- Morningstar of Heroic Will
 						i(78433),	-- Ledger of Revolting Rituals
@@ -1158,31 +816,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Heroic: Warmaster Blackhorn
 							["achievementID"] = 6114,	-- Heroic: Warmaster Blackhorn
 						},
-						i(78850, {	-- Crown of the Corrupted Conqueror
-							i(78695),	-- Faceguard of Radiant Glory
-							i(78692),	-- Headguard of Radiant Glory
-							i(78693),	-- Helmet of Radiant Glory
-							i(78700),	-- Cowl of Dying Light
-							i(78703),	-- Hood of Dying Light
-							i(78702),	-- Hood of the Faceless Shroud
-						}),
-						i(78851, {	-- Crown of the Corrupted Protector
-							i(78698),	-- Wyrmstalker's Headguard
-							i(78691),	-- Spiritwalker's Faceguard
-							i(78685),	-- Spiritwalker's Headpiece
-							i(78686),	-- Spiritwalker's Helmet
-							i(78689),	-- Colossal Dragonplate Faceguard
-							i(78688),	-- Colossal Dragonplate Helmet
-						}),
-						i(78852, {	-- Crown of the Corrupted Vanquisher
-							i(78697),	-- Necrotic Boneplate Faceguard
-							i(78687),	-- Necrotic Boneplate Helmet
-							i(78696),	-- Deep Earth Cover
-							i(78694),	-- Deep Earth Headpiece
-							i(78690),	-- Deep Earth Helm
-							i(78701),	-- Time Lord's Hood
-							i(78699),	-- Blackfang Battleweave Helmet
-						}),
+						i(78850),	-- Crown of the Corrupted Conqueror
+						i(78851),	-- Crown of the Corrupted Protector
+						i(78852),	-- Crown of the Corrupted Vanquisher
 						i(78445),	-- Ataraxis, Cudgel of the Warmaster
 						i(78451),	-- Visage of the Destroyer
 						i(78448),	-- Blackhorn's Mighty Bulwark
@@ -1241,8 +877,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Destroyer's End
 							["achievementID"] = 6177,	-- Destroyer's End
 							["g"] = {
-								{	-- ,Destroyer's End
-									["titleID"] = 196,	-- ,Destroyer's End
+								{	-- , Destroyer's End
+									["titleID"] = 196,	-- , Destroyer's End
 								},
 							},
 						},
@@ -1253,8 +889,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Heroic: Madness of Deathwing
 							["achievementID"] = 6116,	-- Heroic: Madness of Deathwing
 							["g"] = {
-								{	-- ,Savior of Azeroth
-									["titleID"] = 194,	-- ,Savior of Azeroth
+								{	-- , Savior of Azeroth
+									["titleID"] = 194,	-- , Savior of Azeroth
 								},
 							},
 						},
@@ -1279,3 +915,86 @@ _.Instances = { tier(4, {	-- Cataclysm
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9979, {	-- Cataclysm
+		inst(187, {	-- Dragon Soul
+			i(78499),	-- Bones of the Damned
+			i(78503),	-- Shining Carapace of Glory
+			i(78525),	-- Grimfist Crushers
+			i(78529),	-- Gleaming Grips of Mending
+			i(78534),	-- Visage of Petrification
+			i(78538),	-- Glowing Wings of Hope
+			i(78563),	-- Blinding Girdle of Truth
+			i(78564),	-- Demonbone Waistguard
+			i(78569),	-- Heartcrusher Wristplates
+			i(78573),	-- Flashing Bracers of Warmth
+			i(78578),	-- Shining Carapace of Glory
+			i(78583),	-- Bones of the Damned
+			i(78584),	-- Chestplate of the Unshakable Titan
+			i(78605),	-- Grimfist Crushers
+			i(78606),	-- Gauntlets of Feathery Blows
+			i(78612),	-- Gleaming Grips of Mending
+			i(78614),	-- Visage of Petrification
+			i(78615),	-- Jaw of Repudiation
+			i(78621),	-- Glowing Wings of Hope
+			i(78644),	-- Blinding Girdle of Truth
+			i(78645),	-- Demonbone Waistguard
+			i(78646),	-- Forgesmelter Waistplate
+			i(78648),	-- Flashing Bracers of Warmth
+			i(78649),	-- Heartcrusher Wristplates
+			i(78650),	-- Bracers of Unrelenting Excellence
+			i(78532),	-- Clockwinder's Immaculate Gloves
+			i(78533),	-- The Hands of Gilly
+			i(78541),	-- Hood of Hidden Flesh
+			i(78542),	-- Soulgaze Cowl
+			i(78555),	-- Robes of Searing Shadow
+			i(78556),	-- Lightwarper Vestments
+			i(78607),	-- The Hands of Gilly
+			i(78608),	-- Clockwinder's Immaculate Gloves
+			i(78620),	-- Soulgaze Cowl
+			i(78635),	-- Lightwarper Vestments
+			i(78501),	-- Dragonflayer Vest
+			i(78502),	-- Ghostworld Chestguard
+			i(78512),	-- Boneshard Boots
+			i(78513),	-- Sabatons of the Graceful Spirit
+			i(78527),	-- Arrowflick Gauntlets
+			i(78528),	-- Gloves of Ghostly Dreams
+			i(78536),	-- Zeherah's Dragonskull Crown
+			i(78537),	-- Wolfdream Circlet
+			i(78561),	-- Cord of Dragon Sinew
+			i(78562),	-- Girdle of Shamanic Fury
+			i(78571),	-- Dragonbelly Bracers
+			i(78572),	-- Bracers of the Spectral Wolf
+			i(78579),	-- Dragonflayer Vest
+			i(78596),	-- Boneshard Boots
+			i(78610),	-- Arrowflick Gauntlets
+			i(78619),	-- Zeherah's Dragonskull Crown
+			i(78642),	-- Cord of Dragon Sinew
+			i(78653),	-- Dragonbelly Bracers
+			i(78504),	-- Shadowbinder Chestguard
+			i(78505),	-- Decaying Herbalist's Robes
+			i(78516),	-- Rooftop Griptoes
+			i(78517),	-- Boots of Fungoid Growth
+			i(78530),	-- Lightfinger Handwraps
+			i(78531),	-- Fungus-Born Gloves
+			i(78539),	-- Nocturnal Gaze
+			i(78540),	-- Helmet of Perpetual Rebirth
+			i(78565),	-- Belt of Hidden Keys
+			i(78566),	-- Belt of Universal Curing
+			i(78574),	-- Bracers of Manifold Pockets
+			i(78575),	-- Luminescent Bracers
+			i(78581),	-- Shadowbinder Chestguard
+			i(78582),	-- Decaying Herbalist's Robes
+			i(78592),	-- Boots of Fungoid Growth
+			i(78594),	-- Rooftop Griptoes
+			i(78604),	-- Fungus-Born Gloves
+			i(78609),	-- Lightfinger Handwraps
+			i(78617),	-- Nocturnal Gaze
+			i(78618),	-- Helmet of Perpetual Rebirth
+			i(78640),	-- Belt of Hidden Keys
+			i(78641),	-- Belt of Universal Curing
+			i(78652),	-- Luminescent Bracers
+			i(78654),	-- Bracers of Manifold Pockets
+		}),
+	}),
+});

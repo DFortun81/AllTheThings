@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(8, {	-- Battle For Azeroth
+	tier(BFA_TIER, {
 		prof(BLACKSMITHING, {
 			filter(100, {	-- Mounts
 				i(158887, {	-- Monelite Reinforced Chassis
@@ -57,8 +57,8 @@ _.Craftables =
 				i(167936),	-- Notorious Combatant's Cutlass [Horde]
 				i(164690),	-- Sinister Combatant's Cutlass [Alliance]
 				i(164649),	-- Sinister Combatant's Cutlass [Horde]
-				i(162655), 	-- Stormsteel Saber [Alliance]
-				i(162665), 	-- Stormsteel Saber [Horde]
+				i(162655),	-- Stormsteel Saber [Alliance]
+				i(162665),	-- Stormsteel Saber [Horde]
 				i(170294),	-- Uncanny Combatant's Cutlass [Alliance]
 				i(170302),	-- Uncanny Combatant's Cutlass [Horde]
 			}),

@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(23, {	-- Eastern Plaguelands
-			filter(101, {	-- Pet Battle
+		m(EASTERN_PLAGUELANDS, {
+			filter(BATTLE_PETS, {
 				p(626, {	-- Bat
 					["crs"] = { 61829 },	-- Bat
 				}),
@@ -24,7 +24,7 @@ _.Zones =
 				}),
 				q(31911, {	-- Deiza Plaguehorn
 					["provider"] = { "n", 66512 },	-- Deiza Plaguehorn
-					["coord"] = { 67.0, 52.4, 23 },
+					["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },
 					["isDaily"] = true,
 				}),
 			}),

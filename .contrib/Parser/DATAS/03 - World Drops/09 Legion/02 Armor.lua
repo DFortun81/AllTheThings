@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(7, {	-- Legion
+	tier(LEGION_TIER, {
 		n(-318, {	-- Armor
 			n(-320, {	-- Head
 				i(141566),	-- Serrinne's Maleficent Habit

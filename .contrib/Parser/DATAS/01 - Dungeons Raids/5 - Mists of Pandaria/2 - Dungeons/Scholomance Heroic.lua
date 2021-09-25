@@ -2,10 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(246, { 	-- Scholomance
-		["coord"] = { 69.07, 72.96, 22 },	-- Scholomance, Western Plaguelands
-		["maps"] = { 476, 477, 478, 479 },
+_.Instances = { tier(MOP_TIER, {
+	inst(246, {	-- Scholomance
+		["coord"] = { 69.07, 72.96, WESTERN_PLAGUELANDS },
+		["maps"] = { SCHOLOMANCE, 477, 478, 479 },
 		["g"] = {
 			d(2, {		-- Heroic
 				["lvl"] = 90,
@@ -30,7 +30,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							["provider"] = { "n", 64563 },	-- Talking Skull
 						}),
 					}),
-					e(659,   { 	-- Instructor Chillheart
+					e(659,   {	-- Instructor Chillheart
 						["crs"] = {
 							58633,	-- Instructor Chillheart
 							58664,	-- Instructor Chillheart's Phylactery
@@ -47,7 +47,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							un(REMOVED_FROM_GAME, i(82823)),	-- Icewrath Belt (7.1 - Removed from Game!)
 						},
 					}),
-					e(663,   { 	-- Jandice Barov
+					e(663,   {	-- Jandice Barov
 						["crs"] = { 59184 },	-- Jandice Barov
 						["g"] = {
 							ach(6531),	-- Attention to Detail
@@ -63,7 +63,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							un(REMOVED_FROM_GAME, i(82852)),	-- Wraithplate Treads (7.1 - Removed from Game!)
 						},
 					}),
-					e(665,   { 	-- Rattlegore
+					e(665,   {	-- Rattlegore
 						["crs"] = { 59153 },	-- Rattlegore
 						["g"] = {
 							ach(6394),	-- Rattle No More
@@ -86,7 +86,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(88566),	-- Krastinov's Bag of Horrors
 						},
 					}),
-					e(666,   { 	-- Lilian Voss
+					e(666,   {	-- Lilian Voss
 						["crs"] = { 58722 },	-- Lilian Voss
 						["g"] = {
 							i(144030),	-- Soulburner Crown
@@ -100,7 +100,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							un(REMOVED_FROM_GAME, i(82854)),	-- Leggings of Unleashed Anguish (7.1 - Removed from Game!)
 						},
 					}),
-					e(684, { 	-- Darkmaster Gandling
+					e(684, {	-- Darkmaster Gandling
 						["crs"] = { 59080 },	-- Darkmaster Gandling
 						["g"] = {
 							ach(6762),	-- Heroic: Scholomance

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(32, {	-- Searing Gorge
+		m(SEARING_GORGE, {
 			n(ACHIEVEMENTS, {
 				ach(4910, {	-- Searing Gorge Quests
 					crit(1, {	-- Thorium Advance

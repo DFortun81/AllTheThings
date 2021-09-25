@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(14, {	-- Arathi Highlands
+		m(ARATHI_HIGHLANDS, {
 			n(FLIGHT_PATHS, {
 				fp(601),	-- Galen's Fall, Arathi
 				fp(17),	-- Hammerfall, Arathi

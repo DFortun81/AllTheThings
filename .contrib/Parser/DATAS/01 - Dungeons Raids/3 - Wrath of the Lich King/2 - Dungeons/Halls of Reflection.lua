@@ -2,8 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(276, { 	-- Halls of Reflection
+_.Instances = { tier(WOTLK_TIER, {
+	inst(276, {	-- Halls of Reflection
 		["mapID"] = 185,
 		["coord"] = { 52.3, 89.3, 118 },
 		["lvl"] = 78,
@@ -20,7 +20,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(1,   {	-- Normal
 				ach(4518),	-- The Halls of Reflection
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(49852, {	-- Coffin Nail
 						["crs"] = {
 							38177,	-- Shadowy Mercenary
@@ -86,7 +86,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				cr(36954, e(603, {	-- Escape from Arthas
 					{
 						["achievementID"] = 4518,	-- The Halls of Reflection
-						["criteriaID"] = 3,	-- 	Survive the encounter with the Lich King
+						["criteriaID"] = 3,	--	Survive the encounter with the Lich King
 					},
 					i(49839),	-- Mourning Malice
 					i(50303),	-- Black Icicle
@@ -118,7 +118,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 80,
 				["g"] = {
 					ach(4521),	-- Heroic: The Halls of Reflection
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(50379),	-- Battered Hilt (Alliance)
 						i(50380),	-- Battered Hilt (Horde)
 						i(50318, {	-- Ghostly Wristwraps
@@ -187,7 +187,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						ach(4526),	-- We're Not Retreating; We're Advancing in a Different Direction.
 						{
 							["achievementID"] = 4521,	-- Heroic: The Halls of Reflection
-							["criteriaID"] = 3,	-- 	Survive the encounter with the Lich King
+							["criteriaID"] = 3,	--	Survive the encounter with the Lich King
 						},
 						i(49839),	-- Mourning Malice
 						i(50303),	-- Black Icicle

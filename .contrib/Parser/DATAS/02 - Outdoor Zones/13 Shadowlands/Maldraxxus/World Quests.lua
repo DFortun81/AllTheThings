@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(MALDRAXXUS, {
-			n(-34,  {	-- World Quests
+			n(WORLD_QUESTS, {
 				i(183111, {	-- Animated Ulna
 					["description"] = "A rare reward from pet battle WQs in Maldraxxus.  Combine with the other bones to craft the pet:\n|cFF0070ddAnimated Radius|r: Purchased from |cFFFFFFFFNalcorn Talsen|r in Maldraxxus or |cFFFFFFFFDar Vattish|r in Oribos.\n|cFF0070ddFlexing Phalanges|r: Skeletal Hand Fragments (47.4, 62.1 in Maldraxxus).",
 					["g"] = {
@@ -180,6 +180,16 @@ _.Zones =
 				q(59234, {	-- Mixing a Mess
 					["isWorldQuest"] = true,
 					["lvl"] = { 60 },
+				}),
+				q(61699, {	-- Not Much to Goo On
+					["description"] = "Need Conductor Tier 2",
+					["isWorldQuest"] = true,
+					["customCollect"] = "SL_COV_NEC",	-- Necrolord
+				}),
+				q(61841, {	-- Not Much to Goo On
+					["description"] = "Need Conductor Tier 2",
+					["isWorldQuest"] = true,
+					["customCollect"] = "SL_COV_NEC",	-- Necrolord
 				}),
 				q(58437, {	-- Parts to a Whole
 					["isWorldQuest"] = true,

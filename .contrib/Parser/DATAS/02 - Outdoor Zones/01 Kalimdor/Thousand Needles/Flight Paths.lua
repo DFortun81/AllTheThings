@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(64, {	-- Thousand Needles
+		m(THOUSAND_NEEDLES, {
 			n(FLIGHT_PATHS, {
 				fp(513, {	-- Fizzle & Pozzik's Speedbarge, Thousand Needles
-					["coord"] = { 79, 71.8, 64 },
+					["coord"] = { 79, 71.8, THOUSAND_NEEDLES },
 				}),
 				fp(30, {	-- Westreach Summit, Thousand Needles
-					["coord"] = { 11, 11.6, 64 },
+					["coord"] = { 11, 11.6, THOUSAND_NEEDLES },
 				}),
 			}),
 		}),

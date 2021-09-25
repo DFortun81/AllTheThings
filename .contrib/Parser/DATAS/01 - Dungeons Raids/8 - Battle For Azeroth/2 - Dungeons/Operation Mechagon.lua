@@ -2,9 +2,9 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(8, {	-- Battle For Azeroth
+_.Instances = { tier(BFA_TIER, {
 	inst(1178, {	-- Operation: Mechagon
-		["coord"] = { 73.1, 36.3, 1462 },
+		["coord"] = { 73.1, 36.3, MECHAGON },
 		["maps"] = {
 			1490,	-- Mechagon Island
 			1491,	-- The Robodrome
@@ -14,7 +14,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		},
 		["lvl"] = 120,
 		["g"] = {
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(170212),	-- Mecha-Bytes
 				i(170211),	-- Recipe: Famine Evaluator and Snack Table
 				i(170210),	-- Recipe: Abyssal Healing Potion (Rank 3)
@@ -29,7 +29,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					},
 				}),
 			}),
-			f(101, {	-- Pet Battles
+			filter(BATTLE_PETS, {
 				p(2672, {	-- Alloyed Alleyrat
 					["crs"] = { 154789 },
 				}),
@@ -41,12 +41,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				p(2674, {	-- H4ND-EE
 					["crs"] = { 154794 },
-				}),
-			}),
-			n(QUESTS, {
-				q(55609, {	-- Operation: Mechagon - The Mechoriginator
-					["sourceQuests"] = { 55736 },	-- Welcome to the Resistance
-					["provider"] = { "n", 149816 },	-- Prince Erazmin
 				}),
 			}),
 			d(2,  {	-- Heroic

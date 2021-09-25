@@ -1,13 +1,13 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-
+--[[
 _.GearSets =
 {
 	n(-254, {	-- Heritage Armor
 		gs(1525, {	-- Heritage of the Lightforged
 			["races"] = { LIGHTFORGED },
-			["g"] = {   
+			["g"] = {
 				q(49782, {    -- Heritage of the Lightforged
 					i(156699),	-- Lightforged Gorget
 					i(156700),	-- Lightforged Pauldrons
@@ -22,3 +22,4 @@ _.GearSets =
 		}),
 	}),
 };
+--]]

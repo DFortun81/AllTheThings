@@ -1,16 +1,16 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if AFTER WRATH
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(ZANGARMARSH, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
-					["filterID"] = 101,	-- Battle Pet
-					["g"] = {
+					["filterID"] = BATTLE_PETS,
+					["groups"] = {
 						crit(31, {	-- Ras'an
 							["coord"] = { 17.2, 50.6, ZANGARMARSH },
 							["cr"] = 66551,	-- Ras'an <Master Pet Tamer>
@@ -36,7 +36,7 @@ _.Zones =
 						["sourceQuests"] = {
 							9783,	-- An Unnatural Drought
 							-- TODO:: verify below
-							9896, 	-- Blacksting's Bane
+							9896,	-- Blacksting's Bane
 							9790,	-- Diaphanous Wings
 							9777,	-- Fulgor Spores
 							9780,	-- Umbrafen Eel Filets
@@ -98,5 +98,6 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+-- #endif

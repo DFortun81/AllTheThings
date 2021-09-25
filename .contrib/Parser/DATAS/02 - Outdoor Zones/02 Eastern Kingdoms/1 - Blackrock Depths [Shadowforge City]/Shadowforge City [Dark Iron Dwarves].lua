@@ -6,58 +6,30 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(1186, {	-- Blackrock Depths: Shadowforge City
-			q(51486, {	-- Fer the Alliance
-				["provider"] = { "n", 144152 },	-- Moira Thaurissan
-				["coord"] = { 56.6, 31.8, 1186 },
-				["races"] = { DARKIRON },
-				["lvl"] = 20,
-				["g"] = {
-					i(161329),	-- Tabard of the Dark Iron
-					i(157022),	-- Letter from King Anduin Wrynn
-				},
-			}),
-			q(51483, {	-- Heritage o' the Dark Iron
-				["provider"] = { "n", 144152 },	-- Moira Thaurissan
-				["coord"] = { 56.6, 31.8, 1186 },
-				["races"] = { DARKIRON },
-				["lvl"] = 110,
-				["g"] = {
-					ach(13076, {	-- Heritage of the Dark Iron
-						i(161008),	-- Dark Iron Helm
-						i(161009),	-- Dark Iron Pauldrons
-						i(161010),	-- Dark Iron Mantle
-						i(161015),	-- Dark Iron Bracers
-						i(161011),	-- Dark Iron Gloves
-						i(161012),	-- Dark Iron Belt
-						i(161013),	-- Dark Iron Leggings
-						i(161014),	-- Dark Iron Boots
-					}),
-				},
-			}),
 			n(-517, {	-- Mole Machine
 				n(-9976, {	-- Kalimdor
 					["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 					["g"] = {
 						q(53591, {	-- Fire Plume Ridge
 							["name"] = "Fire Plume Ridge",
-							["coord"] = { 52.89, 55.76, 78 },
+							["coord"] = { 52.89, 55.76, UNGORO_CRATER },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 78 },	-- Un'goro Crater
+							["maps"] = { UNGORO_CRATER },
 						}),
 						q(53600, {	-- Honor's Stand
 							["name"] = "Honor's Stand",
-							["coord"] = { 39.11, 09.31, 199 },
+							["coord"] = { 39.11, 09.31, SOUTHERN_BARRENS },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 199 },	-- Southern Barrens
+							["maps"] = { SOUTHERN_BARRENS },
 						}),
 						q(53601, {	-- Sulfuron Spire
 							["name"] = "Sulfuron Spire",
-							["coord"] = { 57.16, 77.09, 198 },
+							["coord"] = { 57.16, 77.09, MOUNT_HYJAL },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 198 },	-- Mount Hyjal
+							["maps"] = { MOUNT_HYJAL },
 						}),
 					},
 				}),
@@ -73,10 +45,10 @@ _.Zones =
 						}),
 						q(53587, {	-- Blackrock Depths
 							["name"] = "Blackrock Depths",
-							["coord"] = { 33.4, 24.7, 35 },
+							["coord"] = { 33.4, 24.7, BLACKROCK_MOUNTAIN_LEVEL3 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 35 },	-- Blackrock Mountain
+							["maps"] = { BLACKROCK_MOUNTAIN_LEVEL3 },
 						}),
 						q( 53594, {	-- Nethergarde Keep
 							["name"] = "Nethergarde Keep",
@@ -130,17 +102,17 @@ _.Zones =
 					["g"] = {
 						q(53595, {	-- One Keg
 							["name"] = "One Keg",
-							["coord"] = { 57.68, 62.81, 379 },
+							["coord"] = { 57.68, 62.81, KUN_LAI_SUMMIT },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 379 },	-- Kun-Lai Summit
+							["maps"] = { KUN_LAI_SUMMIT },
 						}),
 						q(53598, {	-- Stormstout Brewery
 							["name"] = "Stormstout Brewery",
-							["coord"] = { 31.51, 73.57, 376 },
+							["coord"] = { 31.51, 73.57, VALLEY_OF_THE_FOUR_WINDS },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 376 },	-- Valley of the Four Winds
+							["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 						}),
 					},
 				}),
@@ -149,17 +121,17 @@ _.Zones =
 					["g"] = {
 						q(53590, {	-- Elemental Plateau
 							["name"] = "Elemental Plateau",
-							["coord"] = { 65.74, 08.24, 550 },
+							["coord"] = { 65.74, 08.24, DRAENOR_NAGRAND },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 550 },	-- Nagrand
+							["maps"] = { DRAENOR_NAGRAND },
 						}),
 						q(53588, {	-- The Pit
 							["name"] = "The Pit",
-							["coord"] = { 46.69, 38.75, 543 },
+							["coord"] = { 46.69, 38.75, GORGROND },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 543 },	-- Gorgrond
+							["maps"] = { GORGROND },
 						}),
 					},
 				}),
@@ -168,17 +140,17 @@ _.Zones =
 					["g"] = {
 						q(53589, {	-- Aalgen Point
 							["name"] = "Aalgen Point",
-							["coord"] = { 71.68, 48.01, 646 },
+							["coord"] = { 71.68, 48.01, BROKEN_SHORE },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 646 },	-- Broken Shore
+							["maps"] = { BROKEN_SHORE },
 						}),
 						q(53593, {	-- Neltharion's Vault
 							["name"] = "Neltharion's Vault",
-							["coord"] = { 44.66, 72.87, 650 },
+							["coord"] = { 44.66, 72.87, HIGHMOUNTAIN },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 650 },	-- Highmountain
+							["maps"] = { HIGHMOUNTAIN },
 						}),
 					},
 				}),

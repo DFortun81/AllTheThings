@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(90, {	-- Undercity
+		m(UNDERCITY, {
 			n(FLIGHT_PATHS, {
 				fp(11, {	-- Undercity, Tirisfal [Horde]
 					["description"] = "Undercity, Tirisfal - Horde Only",
-					["coord"] = { 63.0, 48.2, 90 },
+					["coord"] = { 63.0, 48.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

@@ -4,22 +4,22 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		n(-900, {	-- Covenant Sanctum
 			["icon"] = 3726261, -- Inv_misc_covenant_renown
 			["maps"] = {
 				-- Kyrian
-				1707,	-- Elysian Hold
-				1708,	-- Elysian Hold
+				ARCHONS_RISE,
+				SANCTUM_OF_BINDING,
 				-- Necrolord
-				1698,	-- Seat of the Primus
+				SEAT_OF_THE_PRIMUS,
 				-- Night Fae
-				1701,	-- Heart of the Forest - The Trunk
-				1702,	-- Heart of the Forest - The Roots
-				1703,	-- Heart of the Forest - The Canopy
+				THE_TRUNK,	-- Heart of the Forest
+				THE_ROOTS,	-- Heart of the Forest
+				THE_CANOPY,	-- Heart of the Forest
 				-- Venthyr
-				1699,	-- Sinfall Reaches
-				1700,	-- Sinfall Depths
+				SINFALL_REACHES,
+				SINFALL_DEPTHS,
 			},
 		}),
 	}),

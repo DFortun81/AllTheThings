@@ -115,8 +115,8 @@ _.Achievements =
 			{	-- Destroyer's End
 				["achievementID"] = 6177,	-- Destroyer's End
 				["g"] = {
-					{	-- ,Destroyer's End
-						["titleID"] = 196,	-- ,Destroyer's End
+					{	-- , Destroyer's End
+						["titleID"] = 196,	-- , Destroyer's End
 					},
 				},
 			},
@@ -264,8 +264,8 @@ _.Achievements =
 			{	-- Heroic: Madness of Deathwing
 				["achievementID"] = 6116,	-- Heroic: Madness of Deathwing
 				["g"] = {
-					{	-- ,Savior of Azeroth
-						["titleID"] = 194,	-- ,Savior of Azeroth
+					{	-- , Savior of Azeroth
+						["titleID"] = 194,	-- , Savior of Azeroth
 					},
 				},
 			},
@@ -284,8 +284,8 @@ _.Achievements =
 			{	-- Heroic: Nefarian
 				["achievementID"] = 5116,	-- Heroic: Nefarian
 				["g"] = {
-					{	-- ,Blackwing's Bane
-						["titleID"] = 187,	-- ,Blackwing's Bane
+					{	-- , Blackwing's Bane
+						["titleID"] = 187,	-- , Blackwing's Bane
 					},
 				},
 			},

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(69, {	-- Feralas
-			filter(101, {	-- Pet Battle
+		m(FERALAS, {
+			filter(BATTLE_PETS, {
 				p(557, {	-- Nether Faerie Dragon
 					["crs"] = { 62395 },	-- Nether Faerie Dragon
 					["description"] = "Can be found in the surrounding areas outside of the Dire Maul instance portals in Feralas.",
@@ -25,7 +25,7 @@ _.Zones =
 				}),
 				q(31871, {	-- Traitor Gluk
 					["provider"] = { "n", 66352 },	-- Traitor Gluk
-					["coord"] = { 59.6, 49.6, 69 },
+					["coord"] = { 59.6, 49.6, FERALAS },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),

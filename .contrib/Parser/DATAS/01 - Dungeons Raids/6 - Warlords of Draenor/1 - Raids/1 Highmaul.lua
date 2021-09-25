@@ -2,14 +2,13 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(6, {	-- Warlords of Draenor
+_.Instances = { tier(WOD_TIER, {
 	inst(477, {	-- Highmaul
-		["order"] = "01",
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["mapID"] = 612,
 		["maps"] = { 610, 611, 613, 614, 615 },
-		["coord"] = { 32.9, 38.3, 550 },	-- Nagrand, Draenor
+		["coord"] = { 32.9, 38.3, DRAENOR_NAGRAND },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
@@ -26,7 +25,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 			}),
 			d(17, {	-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
 						["crs"] = {
 							78714,	-- Kargath
@@ -152,7 +151,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 			}),
 			d(14, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(119343, {	-- Eye-Blinder Greatcloak
 						["crs"] = {
 							86290,	-- Underbelly Vagrant
@@ -352,7 +351,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 			}),
 			d(15, {	-- Heroic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(119343, {	-- Eye-Blinder Greatcloak
 						["crs"] = {
 							86290,	-- Underbelly Vagrant
@@ -552,7 +551,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 			}),
 			d(16, {	-- Mythic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(119343, {	-- Eye-Blinder Greatcloak
 						["crs"] = {
 							86290,	-- Underbelly Vagrant
@@ -770,3 +769,12 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9981, {	-- Draenor
+		inst(477, {	-- Highmaul
+			i(116207),	-- 6.0 LFR - Highmaul Raid - UNUSED - Leather Belt 1
+			i(116031),	-- 6.0 LFR - Highmaul Raid - UNUSED - Mail Versatile Belt 1
+			i(116232),	-- 6.0 LFR - Highmaul Raid - UNUSED - Plate Versatile Belt 1
+		}),
+	}),
+});

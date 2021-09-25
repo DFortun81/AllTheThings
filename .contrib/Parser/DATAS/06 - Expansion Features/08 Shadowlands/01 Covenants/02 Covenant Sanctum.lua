@@ -4,7 +4,7 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
+	tier(SL_TIER, {
 		n(-900, {	-- Covenant Sanctum
 			["description"] = "These rewards are shared across Covenants.",
 			["g"] = {
@@ -61,6 +61,16 @@ _.ExpansionFeatures =
 						166143,	-- Command Table [Venthyr]
 					},
 					["g"] = {
+						-- Follower XP Items
+						i(187413, {	-- Crystalline Memory Repository
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
+						i(187414, {	-- Fractal Thoughtbinder
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
+						i(187415, {	-- Mind-Expanding Prism
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 						-- Mounts
 						i(183617),	-- Chittering Animite
 						i(183052),	-- Darkwarren Hardshell
@@ -72,6 +82,7 @@ _.ExpansionFeatures =
 						i(182671),	-- Runelight Leaper
 						i(180872),	-- Spirited Skyfoal
 						-- Misc.
+						i(184650),	-- Adventure Campaign Progress
 						i(184631),	-- Adventurer's Enchanting Cache
 						-- i(  )	-- Adventurer's Fish Cache (doesn't exist)
 						i(184634),	-- Adventurer's Herbalism Cache
@@ -79,6 +90,18 @@ _.ExpansionFeatures =
 						i(184635),	-- Adventurer's Mining Cache
 						i(184636),	-- Adventurer's Skinning Cache
 						i(184630),	-- Adventurer's Tailoring Cache
+						i(187573, {	-- Broker's Enchanting Mote of Potentiation
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
+						i(187572, {	-- Broker's Herbalism Mote of Potentiation
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
+						i(187569, {	-- Broker's Tailoring Mote of Potentiation
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
+						i(187574, {	-- Broker's Overflowing Bucket
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 						i(184643),	-- Champion's Enchanting Cache
 						i(184632),	-- Champion's Fish Cache
 						i(184642),	-- Champion's Herbalism Cache
@@ -93,46 +116,22 @@ _.ExpansionFeatures =
 						i(184646),	-- Hero's Mining Cache
 						i(184645),	-- Hero's Skinning Cache
 						i(184644),	-- Hero's Tailoring Cache
+						i(187575, {	-- Korthian Fishing Cache
+							["timeline"] = { "added 9.1.0.39185" },
+						}),
+						i(187577, {	-- Korthian Meat Cache
+							["timeline"] = { "added 9.1.0.39185" },
+						}),
+						i(187576, {	-- Korthian Skinning Cache
+							["timeline"] = { "added 9.1.0.39185" },
+						}),
 						i(181468),	-- Veiled Augment Rune
+						-- Gear
+						i(185942),	-- Sinheart Choker
 					},
 				}),
 				n(-901, {	-- Covenant Callings
 					["g"] = {
-						n(-11, {	-- Common Box Drops
-							-- TODO: Feels like this is pointless. Getting conduits from literally every source in the game via calling boxes...
-							["description"] = "Can be contained in any of the Calling rewards.",
-							["g"] = {
-								-- Gear
-								-- Conduits (maybe remove since it's basically just any Conduit in the game...)
-								i(182105),	-- Astral Protection [Shaman]
-								i(181770),	-- Bone Marrow Hops [Monk]
-								i(181435),	-- Calcualted Strikes [Monk-Windwalker]
-								i(181838),	-- Charitable Soul [Priest]
-								i(182136),	-- Chilled to the Core [Shaman-Enhance]
-								i(181837),	-- Clear Mind [Priest]
-								i(181462),	-- Coordinated Offensive [Monk]
-								i(181974),	-- Courageous Ascension [Priest]
-								i(182110),	-- Crippling Hex [Shaman]
-								i(181512),	-- Dizzying Tumble [Monk]
-								i(181740),	-- Evasive Stride [Monk]
-								i(181845),	-- Exaltation [Priest]
-								i(181942),	-- Focused Mending [Priest]
-								i(181508),	-- Fortifying Ingredients [Monk-Brewmaster]
-								i(181466),	-- Grounding Breath [Monk]
-								i(181373),	-- Harm Denial [Monk]
-								i(181495),	-- Jade Bond [Monk]
-								i(181840),	-- Light's Inspiration [Priest]
-								i(182138),	-- Mind Devourer [Priest-Shadow]
-								i(181842),	-- Power Unto Others
-								i(181505),	-- Resplendent Mist [Monk]
-								i(181700),	-- Scalding Brew [Monk]
-								i(181843),	-- Shining Radiance
-								i(182127),	-- Shake the Foundations [Shaman-Elemental]
-								i(181640),	-- Tumbling Technique [Monk]
-								i(182107),	-- Vital Accretion [Shaman]
-								i(181742),	-- Walk with the Ox [Monk-Brewmaster]
-							},
-						}),
 						n(175390, {	-- Dirty Glinting Object
 							["description"] = "Can appear when on certain Training callings.  Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
 							["crs"] = {
@@ -238,7 +237,216 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
+				n(QUESTS, {
+				--	LIVE DATA
+					q(63586, {	-- Compassion in Devotion
+						["sourceQuests"] = { 63585 },	-- Blind Loyalty
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 55.4, 42.4, ARCHONS_RISE },
+					}),
+					q(63651, {	-- Cryptograms
+						["sourceQuests"] = { 63650 },	-- De-Infiltration
+						["provider"] = { "n", 178260 },	-- The Stonewright
+						["coord"] = { 54.6, 40.3, SINFALL_REACHES },
+					}),
+					q(63728, {	-- Hunting Amid Houses TODO: fix customCollect hiding quest
+						["customCollect"] = { "SL_COV_KYR", "SL_COV_NEC", "SL_COV_VEN" },	-- Kyrian / Necrolord / Venthyr (Night Fae have their own version of the quest)
+						["sourceQuests"] = { 63672 },	-- A Cry From the Heart
+						["provider"] = { "n", 177434 },	-- Ysera
+						["coord"] = { 47.8, 53.5, ARDENWEALD },
+					}),
+					q(64437, {	-- Inform the Primus
+						["sourceQuests"] = { 63683 },	-- Winter's Sigil
+						["provider"] = { "n", 177434 },	-- Ysera
+						["coord"] = { 47.8, 53.6, THE_TRUNK },	-- Heart of the Forest
+					}),
+					q(63593, {	-- New Sigil of the Kyrian
+						["sourceQuests"] = { 63592 },	-- A New Path
+						["provider"] = { "n", 179379 },	-- Polemarch Adrestes
+						["coord"] = { 46.0, 58.0, 2018 },	-- Spires of Ascension (scenario)
+						["maps"] = { 2018 },	-- Spires of Ascension (scenario)
+					}),
+					q(63652, {	-- The "Unwelcome" Guests
+						["sourceQuests"] = { 63650 },	-- De-Infiltration
+						["provider"] = { "n", 158653 },	-- Prince Renathal
+						["coord"] = { 51.3, 38.1, SINFALL_REACHES },
+					}),
+					q(63592, {	-- The New Path
+						["sourceQuests"] = { 63591 },	-- The Grand Reception
+						["provider"] = { "n", 180189 },	-- Polemarch Kalisthene
+						["coord"] = { 55.8, 29.9, 2017 },
+						["_drop"] = { "g" },	-- drop anima trash
+						["maps"] = { 2017, 2018 },	-- Spires of Ascension (scenario)
+					}),
+					q(63653, {	-- The Power of a Crown
+						["sourceQuests"] = {
+							63651,	-- Cryptograms
+							63652,	-- The "Unwelcome Guests"
+						},
+						["provider"] = { "n", 158653 },	-- Prince Renathal
+						["coord"] = { 51.1, 38.0, SINFALL_REACHES },
+					}),
+				}),
 			},
 		}),
 	}),
+};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(61326),	-- [[Deprecated]]
+		q(61327),	-- [[Deprecated]]
+		q(61328),	-- [[Deprecated]]
+		q(61329),	-- [[Deprecated]]
+		q(59816),	-- [DNT] Bwonsamdi's Plan
+		q(59820),	-- [DNT] Da Treacherous Loa
+		q(61138),	-- [DNT] Purge the Grove
+		q(59814),	-- [DNT] Words of Mueh'zala
+		q(59810),	-- [DNT]Just A Small Request
+		q(57820),	-- Diplomatic Relations
+		q(59608),	-- Don't Cross The Streams
+		q(60885),	-- Grove of Awekening
+		q(57821),	-- Keeping the Peace
+		q(61056),	-- Niya of Ardenweald
+		q(61881),	-- Pauldrons
+		q(61324),	-- Replenish the Reservoir
+		q(61325),	-- Return Lost Souls
+		q(63024),	-- Return Lost Souls
+		q(63025),	-- Return Lost Souls
+		q(63026),	-- Return Lost Souls
+		q(63027),	-- Return Lost Souls
+		q(59606),	-- The Anima Expert
+		q(57896),	-- The Archon's Will
+		q(59318),	-- Work Not Wasted
+	}),
+});
+_.HiddenQuestTriggers = {
+	q(60635),	-- Night Fae Mission Table
+	
+	-- COURAGE DIFFICULTY KILL
+	q(60917),	-- Kalisthene | Courage 
+	q(60918),	-- Echthra | Courage 
+	q(60919),	-- Alderyn and Myn'ir | Courage 
+	q(60921),	-- Nuuminuuru | Courage 
+	q(60922),	-- Craven Corinth | Courage 
+	q(60923),	-- Splinterbark Nightmare
+	q(60924),	-- Thran'tiok | Courage
+	q(60925),	-- Mad Mortimer | Courage
+	q(60926),	-- Athanos | Courage
+	q(60927),	-- Azaruux | Courage
+	
+	-- LOYALTY DIFFICULTY KILL
+	q(61014),	-- Azaruux | Loyalty
+	q(61015),	-- Athanos | Loyalty
+	q(61016),	-- Mad Mortimer | Loyalty
+	q(61017),	-- Thran'tiok | Loyalty
+	q(61018),	-- Splinterbark Nightmare | Loyalty
+	q(61019),	-- Cravin Corinth | Loyalty
+	q(61020),	-- Nuuminuuru | Loyalty 
+	q(61021),	-- Alderyn and Myn'ir | Loyalty
+	q(61022),	-- Echthra | Loyalty
+	q(61023),	-- Kalisthene | Loyalty
+	
+	-- WISDOM DIFFICULTY KILL
+	q(61024),	-- Azaruux | Wisdom
+	q(61025),	-- Athanos | Wisdom
+	q(61026),	-- Mad Mortimer | Wisdom 
+	q(61027),	-- Thran'tiok | Wisdom
+	q(61028),	-- Splinterbark | Wisdom
+	q(61029),	-- Craven Corinth | Wisdom
+	q(61030),	-- Nuuminuuru | Wisdom
+	q(61031),	-- Alderyn and Myn'ir | Wisdom
+	q(61032),	-- Echthra | Wisdom
+	q(61033),	-- Kalisthene | Wisdom
+	
+	-- HUMILITY DIFFICULTY KILL
+	q(63102),	-- Kelisthene | Humility | Pelagos
+	q(63103),	-- Kelisthene | Humility | Kleia
+	q(63104),	-- Kelisthene | Humility | Mikanikos
+	q(63105),	-- Echthra | Humility | Pelagos
+	q(63106),	-- Echthra | Humility | Kleia
+	q(63107),	-- Echthra | Humility | Mikanikos
+	q(63108),	-- Alderyn and Myn'ir| Humility | Pelagos
+	q(63109),	-- Alderyn and Myn'ir| Humility | Kleia
+	q(63110),	-- Alderyn and Myn'ir| Humility | Mikanikos
+	q(63111),	-- Nuuminuuru | Humility | Pelagos
+	q(63112),	-- Nuuminuuru | Humility | Kleia
+	q(63113),	-- Nuuminuuru | Humility | Mikanikos
+	q(63114),	-- Craven Corinth | Humility | Pelagos
+	q(63115),	-- Craven Corinth | Humility | Kleia
+	q(63116),	-- Craven Corinth | Humility | Mikanikos
+	q(63117),	-- Splinterbark | Humility | Pelagos
+	q(63118),	-- Splinterbark | Humility | Kleia
+	q(63119),	-- Splinterbark | Humility | Mikanikos
+	q(63120),	-- Thran'tiok | Humility | Pelagos
+	q(63121),	-- Thran'tiok | Humility | Kleia
+	q(63122),	-- Thran'tiok | Humility | Mikanikos
+	q(63123),	-- Mad Mortimer | Humility | Pelagos
+	q(63124),	-- Mad Mortimer | Humility | Kleia
+	q(63125),	-- Mad Mortimer | Humility | Mikanikos
+	q(63126),	-- Athanos | Humility | Pelagos
+	q(63127),	-- Athanos | Humility | Kleia
+	q(63128),	-- Athanos | Humility | Mikanikos
+	q(63129),	-- Azaruux | Humility | Pelagos
+	q(63130),	-- Azaruux | Humility | Kleia
+	q(63131),	-- Azaruux | Humility | Mikanikos
+	
+	-- HUMILITY DIFFICULTY NO CHARMS, NO ACTIVE BRAZIERS (probably only for either charms or braziers)
+	q(61034),	-- Azaruux | Humility | no charms | no active braziers
+	q(61035),	-- Arthanos | Humility | no charms | no active braziers
+	q(61036),	-- Mad Mortimer | Humility | no charms | no active braziers
+	q(61037),	-- Thran'tiok | Humility | no charms | no active braziers
+	q(61038),	-- Splinterbark | Humility | no charms | no active braziers
+	q(61039),	-- Craven Corinth | Humility | no charms | no active braziers
+	q(61040),	-- Nuuminuuru | Humility | no charms | no active braziers.
+	q(61041),	-- Alderyn and Myn'ir | Humility | no charms | no active braziers
+	q(61042),	-- Echthra | Humility | no charms | no active braziers
+	q(61043),	-- Kelisthene | Humility | no charms | no active braziers
+	
+	-- HUMILITY DIFFICULTY NO CHARMS, NO ACTIVE BRAZIERS (probably only for either charms or braziers)
+	q(63138),	-- Kelisthene | Humility | no charms | no active braziers
+	q(63139),	-- Echthra | Humility | no charms | no active braziers
+	q(63143),	-- Alderyn and Myn'ir | Humility | no charms | no active braziers
+	q(63144),	-- Nuuminuuru" boss | Humility | no charms | no active braziers
+	q(63146),	-- Craven Corinth | Humility | no charms | no active braziers
+	q(63147),	-- Splinterbark | Humility | | no charms | no active braziers
+	q(63148),	-- Thran'tiok | Humility | no charms | no active braziers
+	q(63149),	-- Mad Mortimer | Humility | no charms | no active braziers
+	q(63150),	-- Athanos | Humility | no charms | no active braziers
+	q(63151),	-- Azaruux | Humility | no charms | no active braziers
+	
+	-- UNKNOWN EXACT TRIGGERS (could be loyalty kills instead, but what is in loyalty kills then?)
+	--q(63074),	-- Kelisthene | Loyalty | Kleia
+	--q(63075),	-- Craven Corinth | Loyalty | Kleia
+	--q(63076),	-- ? | Loyalty | ?
+	--q(63077),	-- ? | Loyalty | ?
+	--q(63078),	-- Kalisthene | Loyalty
+	--q(63079),	-- Nuuminuuru | Loyalty
+	--q(63080),	-- Mad Mortimer | Loyalty | Pelagos
+	--q(63081),	-- ? | Loyalty | ?
+	--q(63082),	-- Thran'tiok | Loyalty | Pelagos
+	--q(63083),	-- Craven Corinth | Loyalty | Kleia
+	
+	-- HQTs for It's How You Wear It achievement
+	q(63084),	-- Humility | Herald's Footpads
+	q(63085),	-- Humility | Deep Echo Trident
+	q(63086),	-- Humility | Vial of Lichfrost
+	q(63087),	-- Humility | Phial of Serenity
+	q(63088),	-- Humility | Ring of Warding
+	q(63089),	-- Humility | Spiritforged Aegis
+	
+	-- I think this might be for Learning from the Masters achievement
+	--q(63093),	-- Kalisthene | Wisdom
+	--q(63094),	--
+	--q(63095),	--
+	--q(63096),	-- Athanos | Courage | Kleia
+	--q(63097),	-- Completing first 9 Path of Ascension 'Courage' challenges?
+	--q(63098),	-- Athanos | Wisdom | Mikanikos | Vial of Serenity | no charms
+	
+	q(63165),	-- after earning To the Moon achievement
+	q(62989),	-- Arsenal: Doubt's Weapon Cache
+	
+	-- Unflagged
+	--q(62770)
+	--q(62771)
+	
 };

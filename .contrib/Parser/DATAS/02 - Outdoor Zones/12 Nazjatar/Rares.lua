@@ -784,6 +784,7 @@ _.Zones =
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					}),
+					i(170502),	-- Waterlogged Toolbox
 				},
 			}),
 			n(153928, {	-- Tidelord Dispersius
@@ -800,6 +801,7 @@ _.Zones =
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					}),
+					i(170502),	-- Waterlogged Toolbox
 				},
 			}),
 			n(154148, {	-- Tidemistress Leth'sindra

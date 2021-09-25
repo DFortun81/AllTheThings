@@ -2,11 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(8, {	-- Battle for Azeroth
-	inst(1179, { 	-- The Eternal Palace
+_.Instances = { tier(BFA_TIER, {
+	inst(1179, {	-- The Eternal Palace
 		["isRaid"] = true,
 		["coord"] = { 50.5, 11.9, 1355 },
-		["order"] = "05",
 		["maps"] = {
 			1512,
 			1513,
@@ -82,7 +81,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 			}),
-			f(101, {	-- Battle Pet
+			filter(BATTLE_PETS, {
 				p(2657, {	-- Blackchasm Crawler
 					["crs"] = { 154718 },
 				}),
@@ -100,7 +99,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				i(168627),	-- Vantus Rune Technique: The Eternal Palace (Rank 3)
 			}),
 			d(17, {	-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
 					i(169932),	-- Brineweaver Guardian's Gloves
@@ -327,7 +326,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(14, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
 					i(169932),	-- Brineweaver Guardian's Gloves
@@ -541,7 +540,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(15, {	-- Heroic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
 					i(169932),	-- Brineweaver Guardian's Gloves
@@ -757,7 +756,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(16, {	-- Mythic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
 					i(169932),	-- Brineweaver Guardian's Gloves
@@ -1003,3 +1002,10 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(56836),	-- The Eternal Palace: Master's Call
+		q(56837),	-- The Eternal Palace: Master's Call
+		q(56838),	-- The Eternal Palace: Master's Call
+	}),
+});

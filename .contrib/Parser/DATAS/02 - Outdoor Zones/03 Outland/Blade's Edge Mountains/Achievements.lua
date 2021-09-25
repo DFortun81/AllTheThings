@@ -1,10 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if IF AFTER WRATH
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(BLADES_EDGE_MOUNTAINS, {
 			n(ACHIEVEMENTS, {
 				ach(896),	-- A Quest a Day Keeps the Ogres at Bay
@@ -47,5 +47,6 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+-- #endif

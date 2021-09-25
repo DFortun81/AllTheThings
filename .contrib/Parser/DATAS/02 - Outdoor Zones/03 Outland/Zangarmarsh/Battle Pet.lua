@@ -1,12 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if AFTER MOP
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(ZANGARMARSH, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(419, {	-- Small Frog
 					["crs"] = { 61071 },	-- Small Frog
 				}),
@@ -23,5 +23,6 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+-- #endif

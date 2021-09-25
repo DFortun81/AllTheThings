@@ -1,0 +1,127 @@
+Name_lang,FemaleName_lang,Description_lang,ID,ClassID,OrderIndex,PetTalentType,Role,Flags,SpellIconFileID,PrimaryStatPriority,AnimReplacements,MasterySpellID[0],MasterySpellID[1]
+Arcane,Arcane,"Manipulates raw Arcane magic, destroying enemies with overwhelming power.
+
+Preferred Weapon: Staff, Wand, Dagger, Sword",62,8,0,0,2,3,135932,0,362,190740,0
+Fire,Fire,"Focuses the pure essence of Fire magic, assaulting enemies with combustive flames.
+
+Preferred Weapon: Staff, Wand, Dagger, Sword",63,8,1,0,2,3,135810,0,362,12846,0
+Frost,Frost,"Freezes enemies in their tracks and shatters them with Frost magic.
+
+Preferred Weapon: Staff, Wand, Dagger, Sword",64,8,2,0,2,67,135846,0,362,76613,0
+Holy,Holy,"Invokes the power of the Light to heal and protect allies and vanquish evil from the darkest corners of the world.
+
+Preferred Weapon: Sword, Mace, and Shield",65,2,0,0,1,5,135920,1,0,183997,0
+Protection,Protection,"Uses Holy magic to shield $Ghimself:herself; and defend allies from attackers.
+
+Preferred Weapon: Sword, Mace, Axe, and Shield",66,2,1,0,0,4,236264,5,0,76671,0
+Retribution,Retribution,"A righteous crusader who judges and punishes opponents with weapons and Holy magic.
+
+Preferred Weapon: Two-Handed Sword, Mace, Axe",70,2,2,0,2,68,135873,5,0,267316,0
+Arms,Arms,"A battle-hardened master of weapons, using mobility and overpowering attacks to strike $Ghis:her; opponents down.
+
+Preferred Weapon: Two-Handed Axe, Mace, Sword",71,1,0,0,2,68,132355,5,0,262111,0
+Fury,Fury,"A furious berserker unleashing a flurry of attacks to carve $Ghis:her; opponents to pieces.
+
+Preferred Weapons: Dual Axes, Maces, Swords",72,1,1,0,2,20,132347,5,0,76856,0
+Protection,Protection,"A stalwart protector who uses a shield to safeguard $Ghimself:herself; and $Ghis:her; allies.
+
+Preferred Weapon: Axe, Mace, Sword, and Shield",73,1,2,0,0,4,132341,5,0,76857,0
+Ferocity,Ferocity,"Driven by a frenzied persistence to pursue prey, these beasts stop at nothing to achieve victory; even death is temporary for these predators.",74,0,0,0,2,0,236159,0,0,0,0
+Cunning,Cunning,Guileful creatures capable of skillfully mitigating lethal blows dealt to themselves and their allies.,79,0,2,2,2,0,132150,0,0,0,0
+Tenacity,Tenacity,Stalwart and veteran defenders who unquestionably place their thick hides and protective exteriors in harm's way for their allies.,81,0,1,1,0,0,132121,0,0,0,0
+Balance,Balance,"Can shapeshift into a powerful Moonkin, balancing the power of Arcane and Nature magic to destroy enemies.
+
+Preferred Weapon: Staff, Dagger, Mace",102,11,0,0,2,331,136096,0,363,326085,0
+Feral,Feral,"Takes on the form of a great cat to deal damage with bleeds and bites.
+
+Preferred Weapon: Staff, Polearm",103,11,1,0,2,260,132115,3,363,77493,0
+Guardian,Guardian,"Takes on the form of a mighty bear to absorb damage and protect allies.
+
+Preferred Weapon: Staff, Polearm",104,11,2,0,0,4,132276,3,363,155783,0
+Restoration,Restoration,"Channels powerful Nature magic to regenerate and revitalize allies.
+
+Preferred Weapon: Staff, Dagger, Mace",105,11,3,0,1,3,136041,0,363,77495,0
+Blood,Blood,"A dark guardian who manipulates and corrupts life energy to sustain $Ghimself:herself; in the face of an enemy onslaught.
+
+Preferred Weapon: Two-Handed Axe, Mace, Sword",250,6,0,0,0,4,135770,5,0,77513,0
+Frost,Frost,"An icy harbinger of doom, channeling runic power and delivering vicious weapon strikes.
+
+Preferred Weapons: Dual Axes, Maces, Swords",251,6,1,0,2,4,135773,5,0,77514,0
+Unholy,Unholy,"A master of death and decay, spreading infection and controlling undead minions to do $Ghis:her; bidding.
+
+Preferred Weapon: Two-Handed Axe, Mace, Sword",252,6,2,0,2,68,135775,5,0,77515,0
+Beast Mastery,Beast Mastery,"A master of the wild who can tame a wide variety of beasts to assist $Ghim:her; in combat.
+
+Preferred Weapon: Bow, Crossbow, Gun",253,3,0,0,2,66,461112,2,0,76657,0
+Marksmanship,Marksmanship,"A master sharpshooter who excels in bringing down enemies from afar.
+
+Preferred Weapon: Bow, Crossbow, Gun",254,3,1,0,2,2,236179,2,0,193468,0
+Survival,Survival,"An adaptive ranger who favors using explosives, animal venom, and coordinated attacks with their bonded beast.
+
+Preferred Weapon: Polearm, Staff",255,3,2,0,2,260,461113,2,0,263135,0
+Discipline,Discipline,"Uses magic to shield allies from taking damage as well as heal their wounds.
+
+Preferred Weapon: Staff, Wand, Dagger, Mace",256,5,0,0,1,67,135940,0,353,271534,0
+Holy,Holy,"A versatile healer who can reverse damage on individuals or groups and even heal from beyond the grave.
+
+Preferred Weapon: Staff, Wand, Dagger, Mace",257,5,1,0,1,3,237542,0,353,77485,0
+Shadow,Shadow,"Uses sinister Shadow magic and terrifying Void magic to eradicate enemies.
+
+Preferred Weapon: Staff, Wand, Dagger, Mace",258,5,2,0,2,11,136207,0,353,343690,0
+Assassination,Assassination,"A deadly master of poisons who dispatches victims with vicious dagger strikes.
+
+Preferred Weapons: Daggers",259,4,0,0,2,68,236270,3,0,76803,0
+Outlaw,Outlaw,"A ruthless fugitive who uses agility and guile to stand toe-to-toe with enemies.
+
+Preferred Weapons: Axes, Maces, Swords, Fist Weapons",260,4,1,0,2,4,236286,3,0,76806,0
+Subtlety,Subtlety,"A dark stalker who leaps from the shadows to ambush $Ghis:her; unsuspecting prey.
+
+Preferred Weapons: Daggers",261,4,2,0,2,4,132320,3,0,76808,0
+Elemental,Elemental,"A spellcaster who harnesses the destructive forces of nature and the elements.
+
+Preferred Weapon: Mace, Dagger, and Shield",262,7,0,0,2,75,136048,0,369,168534,0
+Enhancement,Enhancement,"A totemic warrior who strikes foes with weapons imbued with elemental power.
+
+Preferred Weapons: Dual Axes, Maces, Fist Weapons",263,7,1,0,2,260,237581,2,369,77223,0
+Restoration,Restoration,"A healer who calls upon ancestral spirits and the cleansing power of water to mend allies' wounds.
+
+Preferred Weapon: Mace, Dagger, and Shield",264,7,2,0,1,3,136052,0,369,77226,0
+Affliction,Affliction,"A master of shadow magic who specializes in drains and damage-over-time spells.
+
+Preferred Weapon: Staff, Wand, Dagger, Sword",265,9,0,0,2,67,136145,0,357,77215,0
+Demonology,Demonology,"A commander of demons who twists the souls of $Ghis:her; army into devastating power.
+
+Preferred Weapon: Staff, Wand, Dagger, Sword",266,9,1,0,2,3,136172,0,357,77219,0
+Destruction,Destruction,"A master of chaos who calls down fire to burn and demolish enemies.
+
+Preferred Weapon: Staff, Wand, Dagger, Sword",267,9,2,0,2,3,136186,0,357,77220,0
+Brewmaster,Brewmaster,"A sturdy brawler who uses unpredictable movement and mystical brews to avoid damage and protect allies.
+
+Preferred Weapon: Staff, Polearm",268,10,0,0,0,4,608951,2,618,117906,0
+Windwalker,Windwalker,"A martial artist without peer who pummels foes with hands and fists.
+
+Preferred Weapons: Fist Weapons, Axes, Maces, Swords",269,10,2,0,2,68,608953,2,618,115636,0
+Mistweaver,Mistweaver,"A healer who masters the mysterious art of manipulating life energies aided by the wisdom of the Jade Serpent.
+
+Preferred Weapon: Staff, Mace, Sword",270,10,1,0,1,5,608952,0,618,117907,0
+Ferocity,Ferocity,"Driven by a rabid persistence to pursue prey, these carnivorous beasts stop at nothing to achieve victory; even death is temporary for these predators.",535,0,0,0,2,32,236159,0,0,0,0
+Cunning,Cunning,Guileful creatures capable of skillfully mitigating lethal blows dealt to themselves and their allies.,536,0,2,2,2,32,132150,0,0,0,0
+Tenacity,Tenacity,Stalwart and veteran defenders who unquestionably place their thick hides and protective exteriors in harm's way for their allies.,537,0,1,1,0,32,132121,0,0,0,0
+Havoc,Havoc,"A brooding master of warglaives and the destructive power of Fel magic.
+
+Preferred Weapons: Warglaives, Swords, Axes, Fist Weapons",577,12,0,0,2,68,1247264,3,364,185164,0
+Vengeance,Vengeance,"Embraces the demon within to incinerate enemies and protect their allies.
+
+Preferred Weapons: Warglaives, Swords, Axes, Fist Weapons",581,12,1,0,0,4,1247265,3,364,203747,0
+Initial,Initial,,1444,7,4,0,2,3,136048,0,369,0,0
+Initial,Initial,,1446,1,4,0,2,68,132355,5,0,0,0
+Initial,Initial,,1447,11,4,0,2,331,136096,0,363,0,0
+Initial,Initial,,1448,3,4,0,2,66,461112,2,0,0,0
+Initial,Initial,,1449,8,4,0,2,67,135846,0,362,0,0
+Initial,Initial,,1450,10,4,0,2,68,608953,2,618,0,0
+Initial,Initial,,1451,2,4,0,2,68,135873,5,0,0,0
+Initial,Initial,,1452,5,4,0,1,67,135940,0,353,0,0
+Initial,Initial,,1453,4,4,0,2,68,236270,3,0,0,0
+Initial,Initial,,1454,9,4,0,2,67,136145,0,357,0,0
+Initial,Initial,,1455,6,4,0,2,68,135775,5,0,0,0
+Initial,Initial,,1456,12,4,0,2,68,1247264,3,364,0,0

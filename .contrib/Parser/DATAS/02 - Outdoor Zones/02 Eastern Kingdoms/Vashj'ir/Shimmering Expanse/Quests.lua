@@ -41,8 +41,8 @@ _.Zones =
 						["sourceQuests"] = { 25222 },	-- Silver Tide Hollow
 						["g"] = {
 							i(59764),	-- Cowl of the Leptochelae
-							i(59763), 	-- Aquasear Waistguard
-							i(59762), 	-- Wentletrap Legplates
+							i(59763),	-- Aquasear Waistguard
+							i(59762),	-- Wentletrap Legplates
 						},
 					}),
 					q(25442, {	-- A Pearl of Wisdom

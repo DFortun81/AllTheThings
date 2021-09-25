@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(10, {	-- Northern Barrens
+		m(NORTHERN_BARRENS, {
 			n(ACHIEVEMENTS, {
 				ach(4933, {	-- Northern Barrens Quests
 					["races"] = HORDE_ONLY,

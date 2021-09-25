@@ -4,10 +4,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(69, {	-- Feralas
+		m(FERALAS, {
 			n(VENDORS, {
 				n(44381, {	-- Apprentice of Estulan <Enchanting Supplies>
-					["coord"] = { 56.8, 54.4, 69 },
+					["coord"] = { 56.8, 54.4, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -17,7 +17,7 @@ _.Zones =
 					},
 				}),
 				n(8158,  {	-- Bronk <Alchemy Supplies>
-					["coord"] = { 76.0, 43.4, 69 },
+					["coord"] = { 76.0, 43.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(9302, {	-- Recipe: Ghost Dye
@@ -29,7 +29,7 @@ _.Zones =
 					},
 				}),
 				n(9548,  {	-- Cawind Trueaim <Gunsmith & Bowyer>
-					["coord"] = { 74.8, 45.6, 69 },
+					["coord"] = { 74.8, 45.6, FERALAS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11308, {	-- Sylvan Shortbow
@@ -38,7 +38,7 @@ _.Zones =
 					},
 				}),
 				n(7854,  {	-- Jangdor Swiftstrider <Leatherworking Supplies>
-					["coord"] = { 52.8, 47.0, 69 },
+					["coord"] = { 52.8, 47.0, FERALAS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(7451, {	-- Pattern: Green Whelp Bracers
@@ -56,7 +56,7 @@ _.Zones =
 					},
 				}),
 				n(8157,  {	-- Logannas <Alchemy Supplies>
-					["coord"] = { 46.6, 43.0, 69 },
+					["coord"] = { 46.6, 43.0, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(9302, {	-- Recipe: Ghost Dye
@@ -68,7 +68,7 @@ _.Zones =
 					},
 				}),
 				n(40474, {	-- Moro Sungrain <Trade Supplies>
-					["coord"] = { 40.8, 15.2, 69 },
+					["coord"] = { 40.8, 15.2, FERALAS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
@@ -76,7 +76,7 @@ _.Zones =
 					},
 				}),
 				n(40226, {	-- Pratt McGrubben <Leatherworking Supplies>
-					["coord"] = { 45.4, 41.2, 69 },
+					["coord"] = { 45.4, 41.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(7451, {	-- Pattern: Green Whelp Bracers
@@ -91,7 +91,7 @@ _.Zones =
 					},
 				}),
 				n(8145,  {	-- Sheendra Tallgrass <Trade Supplies>
-					["coord"] = { 74.6, 42.8, 69 },
+					["coord"] = { 74.6, 42.8, FERALAS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(13949),	-- Recipe: Baked Salmon
@@ -101,7 +101,7 @@ _.Zones =
 					},
 				}),
 				n(7947,  {	-- Vivianna <Trade Supplies>
-					["coord"] = { 46.2, 41.6, 69 },
+					["coord"] = { 46.2, 41.6, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(13949),	-- Recipe: Baked Salmon
@@ -111,7 +111,7 @@ _.Zones =
 					},
 				}),
 				n(8159,  {	-- Worb Strongstitch <Light Armor Merchant>
-					["coord"] = { 74.6, 42.6, 69 },
+					["coord"] = { 74.6, 42.6, FERALAS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(12253, {	-- Brilliant Red Cloak
@@ -124,7 +124,7 @@ _.Zones =
 				}),
 				n(14637, {	-- Zorbin Fandazzle
 					["description"] = "Must complete quests |cFFFFD700Still With The Zapped Giants|r and |cFFFFD700Even More Fuel For The Zapping|r before he will sell to you.",
-					["coord"] = { 48.6, 44.8, 69 },
+					["coord"] = { 48.6, 44.8, FERALAS },
 					["g"] = {
 						i(19027),	-- Schematic: Snake Burst Firework
 					},

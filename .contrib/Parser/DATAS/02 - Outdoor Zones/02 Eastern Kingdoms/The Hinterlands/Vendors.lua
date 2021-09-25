@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(26, {	-- The Hinterlands
+		m(THE_HINTERLANDS, {
 			n(VENDORS, {
 				n(12040, {	-- Brannik Ironbelly <Armorsmith>
-					["coord"] = { 66.6, 44.2, 26 },
+					["coord"] = { 66.6, 44.2, THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(12257, {	-- Heavy Notched Belt
@@ -20,7 +20,7 @@ _.Zones =
 					},
 				}),
 				n(12958, {	-- Gigget Zipcoil <Trade Supplies>
-					["coord"] = { 34.4, 38.6, 26 },
+					["coord"] = { 34.4, 38.6, THE_HINTERLANDS },
 					["g"] = {
 						i(15735, {	-- Pattern: Ironfeather Shoulders
 							["isLimited"] = true,
@@ -28,7 +28,7 @@ _.Zones =
 					},
 				}),
 				n(8161, {	-- Harggan <Blacksmithing Supplies>
-					["coord"] = { 13.5, 45.0, 26 },
+					["coord"] = { 13.5, 45.0, THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(7995, {	-- Plans: Mithril Scale Bracers
@@ -44,7 +44,7 @@ _.Zones =
 					},
 				}),
 				n(8160, {	-- Nioma <Leatherworking Supplies>
-					["coord"] = { 13.3, 43.4, 26 },
+					["coord"] = { 13.3, 43.4, THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(8409, {	-- Pattern: Nightscape Shoulders
@@ -53,7 +53,7 @@ _.Zones =
 					},
 				}),
 				n(2688, {	-- Ruppo Zipcoil <Engineering Supplies>
-					["coord"] = { 34.33, 37.77, 26 },
+					["coord"] = { 34.33, 37.77, THE_HINTERLANDS },
 					["g"] = {
 						i(10609, {	-- Schematic: Mithril Mechanical Dragonling
 							["isLimited"] = true,
@@ -61,7 +61,7 @@ _.Zones =
 					},
 				}),
 				n(4782, {	-- Truk Wildbeard <Bartender>
-					["coord"] = { 14.4, 42.3, 26 },
+					["coord"] = { 14.4, 42.3, THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(18046),	-- Recipe: Tender Wolf Steak

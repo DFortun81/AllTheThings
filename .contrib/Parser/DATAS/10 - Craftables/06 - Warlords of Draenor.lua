@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(6, {	-- Warlords of Draneor
+	tier(WOD_TIER, {
 		prof(ALCHEMY, {
 			filter(53, {	-- Trinkets
 				i(109262),	-- Draenic Philosopher's Stone
@@ -51,41 +51,22 @@ _.Craftables =
 			}),
 		}),
 		prof(ENGINEERING, {
-			filter(101, {	-- Pets
+			filter(BATTLE_PETS, {
 				i(112057),	-- Lifelike Mechanical Frostboar*
 				i(111402),	-- Mechanical Axebeak*
 				i(118741),	-- Mechanical Scorpid*
 			}),
 			filter(102, {	-- Toys
-				i(111821, {	-- Blingtron 5000*
-					q(34774, { -- Blingtron 5000
-						["provider"] = { "n", 77789 },    -- Blingtron 5000
-						["isDaily"] = true,
-						["g"] = {
-							i(113258, {	-- Blingtron 5000 Gift Package
-								i(87250),	-- Depleted-Kyparium Rocket Mount
-								i(87251), 	-- Geosynchronous World Spinner Mount
-								i(41508), 	-- Mechano-Hog Mount
-								i(44413), 	-- Mekgineer's Chopper Mount
-								i(103670), 	-- Lil'Bling Pet
-								i(15996), 	-- Lifelike Mechanical Toad Pet
-								i(11826), 	-- Lil' Smoky Pet
-								i(118741), 	-- Mechanical Scorpid
-								i(4401), 	-- Mechanical Squirrel Box Pet
-								i(11825), 	-- Pet Bombling
-								i(115483), 	-- Sky-Bo Pet
-								i(21277), 	-- Tranquil Mechanical Yeti Pet
-								i(123851), 	-- Photo B.O.M.B. Toy
-							}),
-						},
-					}),
-				}),
+				i(111821),	-- Blingtron 5000*
 				i(109167),	-- Findle's Loot-A-Rang*
 				i(108745),	-- Personal Hologram*
 				i(109183),	-- World Shrinker*
 				i(112059),	-- Wormhole Centrifuge*
 			}),
 			n(-319, {	-- Weapons
+				i(109168, {	-- Shrediron's Shredder
+					-- ["description"] = "",	-- TODO how to obtain this base version?!
+				}),
 				WOD_CRAFTED_ITEM(109168, 128017),	-- Shrediron's Shredder* + True Iron Trigger*
 			}),
 			n(-318, {	-- Armour
@@ -121,13 +102,25 @@ _.Craftables =
 				i(118603),	-- Savage Tarot
 			}),
 			filter(1, {	-- Off-hand
+				i(113270, {	-- Shadowtome
+					-- ["description"] = "",	-- TODO how to obtain this base version?!
+				}),
 				WOD_CRAFTED_ITEM(113270),	-- Shadowtome
 			}),
 			filter(28, {	-- Staves
+				i(113134, {	-- Crystalfire Spellstaff
+					-- ["description"] = "",	-- TODO how to obtain this base version?!
+				}),
 				WOD_CRAFTED_ITEM(113134),	-- Crystalfire Spellstaff
+				i(111526, {	-- Etched-Blade Warstaff
+					-- ["description"] = "",	-- TODO how to obtain this base version?!
+				}),
 				WOD_CRAFTED_ITEM(111526),	-- Etched-Blade Warstaff
 			}),
 			filter(27, {	-- Wands
+				i(113131, {	-- Warmaster's Firestick
+					-- ["description"] = "",	-- TODO how to obtain this base version?!
+				}),
 				WOD_CRAFTED_ITEM(113131),	-- Warmaster's Firestick
 			}),
 		}),
@@ -158,12 +151,12 @@ _.Craftables =
 				i(116259),	-- Burnished Leather Bag
 				i(116260),	-- Burnished Mining Bag
 			}),
-			n(-322, { 	-- Cloak
+			n(-322, {	-- Cloak
 				WOD_CRAFTED_ITEM(116175, 128014),	-- Brilliant Burnished Cloak + Burnished Essence
 				WOD_CRAFTED_ITEM(116174, 128014),	-- Nimble Burnished Cloak + Burnished Essence
 				WOD_CRAFTED_ITEM(116171, 128014),	-- Powerful Burnished Cloak + Burnished Essence
 			}),
-			n(-44, { 	-- Leather
+			n(-44, {	-- Leather
 				i(116164),	-- Journeying Helm
 				i(116165),	-- Journeying Robes
 				i(116166),	-- Journeying Slacks
@@ -176,7 +169,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(116180, 128014),	-- Supple Vest + Burnished Essence
 				WOD_CRAFTED_ITEM(116183, 128014),	-- Supple Waistguard + Burnished Essence
 			}),
-			n(-45, { 	-- Mail
+			n(-45, {	-- Mail
 				i(116167),	-- Traveling Helm
 				i(116169),	-- Traveling Leggings
 				i(116168),	-- Traveling Tunic
@@ -215,7 +208,7 @@ _.Craftables =
 			n(-160, {	-- Mounts
 				i(115363),	-- Creeping Carpet
 			}),
-			filter(101, { 	-- Pet Battle
+			filter(BATTLE_PETS, {
 				i(113216),	-- Elekk Plushie
 			}),
 		}),

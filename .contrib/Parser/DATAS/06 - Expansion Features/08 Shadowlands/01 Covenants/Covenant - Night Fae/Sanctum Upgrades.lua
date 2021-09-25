@@ -4,13 +4,13 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
-		n(-929, {	-- Covenant: Night Fae
+	tier(SL_TIER, {
+		n(-929, {	-- Night Fae
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 			["maps"] = {
-				1701,	-- Heart of the Forest (The Trunk)
-				1702,	-- Heart of the Forest (The Roots)
-				1703,	-- Heart of the Forest (The Canopy
+				THE_TRUNK,	-- Heart of the Forest
+				THE_ROOTS,	-- Heart of the Forest
+				THE_CANOPY,	-- Heart of the Forest
 			},
 			["g"] = {
 				n(-935, {	-- Sanctum Upgrades
@@ -18,12 +18,12 @@ _.ExpansionFeatures =
 						n(-916, {	-- Tier 1: Flowing Tendrils
 							q(63067, {	-- Root Restoration
 								["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-								["coord"] = { 39.6, 55.0, 1702 },	-- The Roots
+								["coord"] = { 39.6, 55.0, THE_ROOTS },
 							}),
 							q(60723, {	-- The Roots Thirst
 								["sourceQuests"] = { 63067 },	-- Root Restoration
 								["provider"] = { "n", 167196 },	-- Sesselie
-								["coord"] = { 50.1, 63.7, 1702 },	-- The Roots
+								["coord"] = { 50.1, 63.7, THE_ROOTS },
 							}),
 							o(356820, {	-- Large Lunarlight Pod
 								["description"] = "Requires channeling the Anima Conductor to Glitterfall Basin.  To unlock the chest, run over 5 nearby Lunarlight Buds.",
@@ -103,69 +103,103 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-905, {	-- Command Table
-						q(61857, {	-- Adventurer: Groonoomcrooek
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["description"] = "Requires Renown 38.",
-							["g"] = {
-								follower(1288),	-- Groonoomcrooek
-							},
-						}),
-						q(61854, {	-- Adventurer: Master Sha'lor
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["description"] = "Requires Renown 17.",
-							["g"] = {
-								follower(1284),	-- Master Sha'lor
-							},
-						}),
-						q(61852, {	-- Adventurer: Guardian Kota
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["description"] = "Requires Renown 4.",
-							["g"] = {
-								follower(1283),	-- Guardian Kota
-							},
-						}),
-						q(61855, {	-- Adventurer: Qadarin
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["description"] = "Requires Renown 27.",
-							["g"] = {
-								follower(1286),	-- Qadarin
-							},
-						}),
-						q(61853, {	-- Adventurer: Te'zan
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["description"] = "Requires Renown 12.",
-							["g"] = {
-								follower(1285),	-- Te'zan
-							},
-						}),
-						q(61856, {	-- Adventurer: Watcher Vesperbloom
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["description"] = "Requires Renown 33.",
-							["g"] = {
-								follower(1287),	-- Watcher Vesperbloom
-							},
-						}),
-						q(61553, {	-- Know Where to Strike
-							["sourceQuests"] = { 61552 },	-- The Hunt Watches
-							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
-							["coord"] = { 44.6, 56.2, ARDENWEALD },
-						}),
-						q(61552, {	-- The Hunt Watches
-							["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-							["coord"] = { 39.7, 55.7, 1701 },	-- The Trunk
-						}),
-						-- think these headers are unneccessary, unless we find quests later that require tier 2/3
-						-- n(-906, {	-- Tier 1: Tactical Insight
-						-- Tier 2: Grovetender's Gift
-						-- Tier 3: Hidden Pathways
+						["g"] = {
+							i(177698),	-- Untamed Spirit Ardenweald (Uncommon)
+							i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)
+						--	i(177700),	-- Greater Untamed Spirit Ardenweald (Epic)
+						--	i(178879),	-- Greater Dutiful Spirit (Epic)
+							i(178880),	-- Divine Dutiful Spirit (Rare)
+							i(178881),	-- Dutiful Spirit Bastion (Uncommon)
+							i(178877),	-- Divine Martial Spirit (Rare)
+							i(178874),	-- Martial Spirit Maldraxxus (Uncommon)
+						--	i(178878),	-- Greater Martial Spirit (Epic)
+						--	i(178884),	-- Greater Prideful Spirit (Epic)
+							i(178883),	-- Divine Prideful Spirit (Rare)
+							i(178882),	-- Prideful Spirit Revendreth(Uncommon)
+							q(64459, {	-- Adventurer: Elwyn
+								["description"] = "Requires Renown 62.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1338),	-- Elwyn
+								},
+							}),
+							q(61857, {	-- Adventurer: Groonoomcrooek
+								["description"] = "Requires Renown 38.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1288),	-- Groonoomcrooek
+								},
+							}),
+							q(61854, {	-- Adventurer: Master Sha'lor
+								["description"] = "Requires Renown 17.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1284),	-- Master Sha'lor
+								},
+							}),
+							q(61852, {	-- Adventurer: Guardian Kota
+								["description"] = "Requires Renown 4.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1283),	-- Guardian Kota
+								},
+							}),
+							q(61855, {	-- Adventurer: Qadarin
+								["description"] = "Requires Renown 27.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1286),	-- Qadarin
+								},
+							}),
+							q(64458, {	-- Adventurer: Sulanoom
+								["description"] = "Requires Renown 44.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1337),	-- Sulanoom
+								},
+							}),
+							q(61853, {	-- Adventurer: Te'zan
+								["description"] = "Requires Renown 12.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1285),	-- Te'zan
+								},
+							}),
+							q(61856, {	-- Adventurer: Watcher Vesperbloom
+								["description"] = "Requires Renown 33.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1287),	-- Watcher Vesperbloom
+								},
+							}),
+							q(64460, {	-- Adventurer: Yanlar
+								["description"] = "Requires Renown 71.",
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.7, 56.3, ARDENWEALD },
+								["g"] = {
+									follower(1339),	-- Yanlar
+								},
+							}),
+							q(61553, {	-- Know Where to Strike
+								["sourceQuests"] = { 61552 },	-- The Hunt Watches
+								["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+								["coord"] = { 44.6, 56.2, ARDENWEALD },
+							}),
+							q(61552, {	-- The Hunt Watches
+								["provider"] = { "n", 165702 },	-- Zayhad, The Builder
+								["coord"] = { 39.7, 55.7, THE_TRUNK },
+							}),
+						},
 					}),
-					n(-930, {	-- Queen's Conservatory
+					n(-930, {	-- The Queen's Conservatory
 						["maps"] = { 1662 },	-- Queen's Conservatory
 						["g"] = {
 							n(ACHIEVEMENTS,{
@@ -180,7 +214,7 @@ _.ExpansionFeatures =
 								filter(100, {	-- Mounts
 									["coord"] = { 43.4, 33.6, ARDENWEALD },
 									-- TODO: let's break this description up into each Mount, along with minimum 'cost' on the required Catalysts/Seeds perhaps?
-									["description"] = "Each mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. Once the seeds are planted, you need to wait |cFFFFD7003|r days for the incubation.\n\nOnce the Wildseed of Regrowth is fully incubated, you can loot it, which causes an NPC to spawn next to you. Talking with him enables you to loot the Queen's Conservatory Cache.\n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearb.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearby. \n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
+									["description"] = "Each mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. Once the seeds are planted, you need to wait |cFFFFD7003|r days for the incubation.\n\nOnce the Wildseed of Regrowth is fully incubated, you can loot it. Cache.\n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearb.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearby. \n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
 									["g"] = {
 										i(181317),	-- Dauntless Duskrunner
 										i(180723),	-- Enchanted Wakener's Runestag
@@ -189,27 +223,23 @@ _.ExpansionFeatures =
 										i(181316),	-- Silvertip Dredwing
 										i(180414, {	-- Wakener's Runestag
 											["description"] = "Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
-											-- ["cost"] = {	-- TODO: waiting to verify...
-											-- 	{ "i", 177699, 1 },	-- Divine Untamed Spirit Ardenweald
-											-- 	{ "i", 176832, 2 },	-- Wildseed Root Grain
-											-- },
+											--["cost"] = {	-- TODO: waiting to verify...
+											--	{ "i", 177699, 1 },	-- Divine Untamed Spirit Ardenweald
+											--	{ "i", 176832, 2 },	-- Wildseed Root Grain
+											--},
 										}),
 									},
 								}),
 								i(181315),	-- Bloodfeaster Spiderling
+								i(180815),	-- Brightscale Hatchling
+								i(181168),	-- Corpulent Bonetusk
 								i(180639),	-- Dusty Sporeflutterer
-								--i(181314, {	-- Gulper Soul
-								--	["questID"] = 62421,	-- Gulper Soul
-								--}),
 								i(180628),	-- Pearlwing Heron
-								i(181313, {	-- Snapper Soul
-									["questID"] = 62420,	-- Snapper Soul
-								}),
+								i(181264),	-- Plaguelouse Larva
 								i(181302),	-- Spirit Tender's Branches
 								i(181306),	-- Spirit Tender's Bulb
 								i(181310),	-- Spirit Tender's Pack
 								i(180603),	-- Violet Dredwing Pup
-								i(180815),	-- Brightscale Hatchling
 							}),
 							n(QUESTS, {
 								q(62447, {	-- A Rare and Unusual Spirit (1)
@@ -260,6 +290,12 @@ _.ExpansionFeatures =
 									["isWeekly"] = true,
 								}),
 								q(62452, {	-- A Spirit's Might
+									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
+									["provider"] = { "n", 174329 },	-- Falir the Shifting
+									["coord"] = { 24.0, 53.3, 1662 },
+									["isWeekly"] = true,
+								}),
+								q(62445, {	-- A Spirit's Pride
 									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 									["provider"] = { "n", 174329 },	-- Falir the Shifting
 									["coord"] = { 24.0, 53.3, 1662 },
@@ -389,7 +425,7 @@ _.ExpansionFeatures =
 								q(63046, {	-- The End and the Beginning
 									["sourceQuests"] = { 62624 },	-- The Queen's Conservatory
 									["provider"] = { "n", 173171 },	-- Conservator Starry Night
-									["coord"] = { 56.0, 68.2, 1702 },	-- The Roots
+									["coord"] = { 56.0, 68.2, THE_ROOTS },
 								}),
 								q(60642, {	-- The Grove Resplendent
 									["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
@@ -398,102 +434,134 @@ _.ExpansionFeatures =
 								}),
 								q(62624, {	-- The Queen's Conservatory
 									["provider"] = { "n", 173171 },	-- Conservator Starry Night
-									["coord"] = { 56.0, 68.2, 1702 },	-- The Roots
+									["coord"] = { 56.0, 68.2, THE_ROOTS },
 								}),
 							}),
 							-- Spirits/Transmog
 							-- TODO: do these all need their own 'tier' of seed sub-header? they're already split by the minimum Spirit item required...
-							n(-931, {		-- Lesser Spirit
+							n(-931, {	-- Lesser Spirit
 								["description"] = "Requires minimum |cFFFFD7001x|r Wildseed Root Grain. It's possible to receive rewards from higher quality spirits of the same type as well.",
 								["g"] = {
-									i(177698, {		--	Untamed Spirit Ardenweald (Uncommon)
-										i(179548),		-- Elderwood Gavel
-										i(179563),		-- Heartwood Stem
-										i(181313),		-- Snapper Soul
-										i(181314),		-- Gulper Soul
+									i(178881, {	--	Dutiful Spirit (Uncommon) [Bastion]
+										["g"] = sharedData({["cost"] = {{ "i", 176832, 1 }}}, {
+											i(181225),		-- Crossbow of Contemplative Calm
+											i(181226),		-- Bronze Dual-Bladed Glaive
+											i(181232),		-- Cupbearer's Claymore
+											i(181234),		-- Dutybound Spellblade
+										}),
 									}),
-									i(178881, {		--	Dutiful Spirit Bastion (Uncommon)
-										i(181225),		-- Crossbow of Contemplative Calm
-										i(181226),		-- Bronze Dual-Bladed Glaive
-										i(181232),		-- Cupbearer's Claymore
-										i(181234),		-- Dutybound Spellblade
+									i(178874, {	--	Martial Spirit (Uncommon) [Maldraxxus]
+										["g"] = sharedData({["cost"] = {{ "i", 176832, 1 }}}, {
+											i(181329),		-- Marrowfused Claymore
+											i(181321),		-- Gem-Crowned Wand
+											i(181327),		-- Spineforged Tenderizer
+										}),
 									}),
-									i(178874, {		--	Martial Spirit Maldraxxus (Uncommon)
-										i(181329),		-- Marrowfused Claymore
-										i(181321),		-- Gem-Crowned Wand
-										i(181327),		-- Spineforged Tenderizer
+									i(178882, {	--	Prideful Spirit (Uncommon) [Revendreth]
+										["g"] = sharedData({["cost"] = {{ "i", 176832, 1 }}}, {
+											i(180955),		-- Stonewing Halberd
+											i(180956),		-- Axeblade Blunderbuss
+											i(180957),		-- Batwing Glaive
+											i(180963),		-- Crypt Keeper's Vessel
+										}),
 									}),
-									i(178882, {		--	Prideful Spirit Revendreth(Uncommon)
-										i(180955),		-- Stonewing Halberd
-										i(180956),		-- Axeblade Blunderbuss
-										i(180957),		-- Batwing Glaive
-										i(180963),		-- Crypt Keeper's Vessel
+									i(177698, {	--	Untamed Spirit (Uncommon) [Ardenweald]
+										["g"] = sharedData({["cost"] = {{ "i", 176832, 1 }}}, {
+											i(179548),		-- Elderwood Gavel
+											i(179563),		-- Heartwood Stem
+											i(181313),		-- Snapper Soul
+											i(181314),		-- Gulper Soul
+										}),
 									}),
 								},
 							}),
-							n(-932, {		-- Spirit
+							n(-932, {	-- Spirit
 								["description"] = "Requires minimum |cFFFFD7002x|r Wildseed Root Grain. It's possible to receive rewards from lower & higher quality spirits of the same type as well.",
 								["g"] = {
-									i(177699, {		--	Divine Untamed Spirit Ardenweald (Rare)
-										i(179499),		-- Nightwillow Barb
-										i(179538),		-- Grove Warden's Maul
-										i(179605),		-- Elderwood Barrier
-										i(179514),		-- Ripvine Saber
-										i(179585),		-- Nightwillow Shortbow
-										i(180726),		-- Pale Acidmaw
-										i(180723),		-- Enchanted Wakener's Runestag
-										i(180414),		-- Wakener's Runestag
+									i(178880, {	--	Divine Dutiful Spirit (Rare)
+										["sym"] = { { "select", "itemID", 178881 } },	-- Dutiful Spirit Bastion (Uncommon)
+										["g"] = sharedData({["cost"] = {{ "i", 176832, 2 }}}, {
+											i(181228),		-- Temple Guard's Partisan
+											i(181229),		-- Tranquil's Censer
+											i(181230),		-- Pugilist's Chakram
+											i(181233),		-- Bellringer's Hammer
+											i(181317),		-- Dauntless Duskrunner
+										}),
 									}),
-									i(178880, {		--	Divine Dutiful Spirit (Rare)
-										i(181228),		-- Temple Guard's Partisan
-										i(181229),		-- Tranquil's Censer
-										i(181230),		-- Pugilist's Chakram
-										i(181233),		-- Bellringer's Hammer
-										i(181317),		-- Dauntless Duskrunner
+									i(178877, {	--	Divine Martial Spirit (Rare)
+										["sym"] = { { "select", "itemID", 178874 } },	-- Martial Spirit Maldraxxus (Uncommon)
+										["g"] = sharedData({["cost"] = {{ "i", 176832, 2 }}}, {
+											i(181330),		-- Marrowfused Warglaive
+											i(181325),		-- Marrowfused Dagger
+											i(181328),		-- Marrowfused Sword
+											i(181331),		-- Marrowfused Shield
+											i(181300),		-- Gruesome Flayedwing
+											i(181326),		-- Bloodstained Hacksaw
+											i(181323),		-- Blightclutched Greatstaff
+										}),
 									}),
-									i(178877, {		--	Divine Martial Spirit (Rare)
-										i(181330),		-- Marrowfused Warglaive
-										i(181325),		-- Marrowfused Dagger
-										i(181328),		-- Marrowfused Sword
-										i(181331),		-- Marrowfused Shield
-										i(181300),		-- Gruesome Flayedwing
-										i(181326),		-- Bloodstained Hacksaw
-										i(181323),		-- Blightclutched Greatstaff
+									i(178883, {	--	Divine Prideful Spirit (Rare)
+										["sym"] = { { "select", "itemID", 178882 } },	-- Prideful Spirit Revendreth (Uncommon)
+										["g"] = sharedData({["cost"] = {{ "i", 176832, 2 }}}, {
+											i(180954),		-- Crypt Watcher's Spire
+											i(180959),		-- Dredger Anklebiter
+											i(180960),		-- Shiny-Metal Topped Basher
+											i(180954),		-- Ember Court Barrier
+											i(181316),		-- Silvertip Dredwing
+										}),
 									}),
-									i(178883, {		--	Divine Prideful Spirit (Rare)
-										i(180954),		-- Crypt Watcher's Spire
-										i(180959),		-- Dredger Anklebiter
-										i(180960),		-- Shiny-Metal Topped Basher
-										i(180954),		-- Ember Court Barrier
-										i(181316),		-- Silvertip Dredwing
+									i(177699, {	--	Divine Untamed Spirit Ardenweald (Rare)
+										["sym"] = { { "select", "itemID", 177698 } },	-- Untamed Spirit Ardenweald (Uncommon)
+										["g"] = sharedData({["cost"] = {{ "i", 176832, 2 }}}, {
+											i(179499),		-- Nightwillow Barb
+											i(179538),		-- Grove Warden's Maul
+											i(179605),		-- Elderwood Barrier
+											i(179514),		-- Ripvine Saber
+											i(179585),		-- Nightwillow Shortbow
+											i(180726),		-- Pale Acidmaw
+											i(180723),		-- Enchanted Wakener's Runestag
+											i(180414),		-- Wakener's Runestag
+										}),
 									}),
 								},
 							}),
-							n(-933, {		-- Greater Spirit
+							n(-933, {	-- Greater Spirit
 								["description"] = "Requires minimum |cFFFFD7004x|r Wildseed Root Grain. It's possible to receive rewards from lower quality spirits of the same type as well.",
 								["g"] = {
-									i(177700, {		--	Greater Untamed Spirit Ardenweald (Epic)
-										i(179509),		-- Grove Warden's Edge
-										i(179516),		-- Songwood Staff
-										i(179533),		-- Grove Warden's Harvester
-										--i(181225),	-- Backpack (Spirit Tender's Pack)
+									i(178879, {	--	Greater Dutiful Spirit (Epic)
+										["sym"] = { { "select", "itemID", 178880 } },	-- Divine Dutiful Spirit (Rare)
+										["g"] = sharedData({["cost"] = {{ "i", 176832, 4 }}}, {
+											i(181227),		-- Bronze Ceremonial Targe
+											i(181231),		-- Broadbladed Severer
+											i(181235),		-- Final Arbiter's Gavel
+											--i(181227),	-- Backpack (Spirit Tender's Pack)
+										}),
 									}),
-									i(178884, {		--	Greater Prideful Spirit (Epic)
-										i(180958),		-- Redelev House Foil
-										i(180961),		-- Silver-Bladed Ritual Dagger
-										i(180962),		-- Sterling-Silver Cudgel
-										--i(181317),	-- Backpack (Spirit Tender's Pack)
+									i(178878, {	--	Greater Martial Spirit (Epic)
+										["sym"] = { { "select", "itemID", 178877 } },	-- Divine Martial Spirit (Rare)
+										["g"] = sharedData({["cost"] = {{ "i", 176832, 4 }}}, {
+											i(181320),		-- Bonejowl Ballista
+											i(181322),		-- Bonebound Tome
+											--i(181317),	-- Backpack (Spirit Tender's Pack)
+										}),
 									}),
-									i(178878, {		--	Greater Martial Spirit (Epic)
-										i(181320),		-- Bonejowl Ballista
-										i(181322),		-- Bonebound Tome
-										--i(181317),	-- Backpack (Spirit Tender's Pack)
+									i(178884, {	--	Greater Prideful Spirit (Epic)
+										["sym"] = { { "select", "itemID", 178883 } },	-- Divine Prideful Spirit (Rare)
+										["g"] = sharedData({["cost"] = {{ "i", 176832, 4 }}}, {
+											i(180958),		-- Redelev House Foil
+											i(180961),		-- Silver-Bladed Ritual Dagger
+											i(180962),		-- Sterling-Silver Cudgel
+											--i(181317),	-- Backpack (Spirit Tender's Pack)
+										}),
 									}),
-									i(178879, {		--	Greater Dutiful Spirit (Epic)
-										i(181227),		-- Bronze Ceremonial Targe
-										i(181231),		-- Broadbladed Severer
-										i(181235),		-- Final Arbiter's Gavel
-										--i(181227),	-- Backpack (Spirit Tender's Pack)
+									i(177700, {	--	Greater Untamed Spirit Ardenweald (Epic)
+										["sym"] = { { "select", "itemID", 177699 } },	-- Divine Untamed Spirit Ardenweald (Rare)
+										["g"] = sharedData({["cost"] = {{ "i", 176832, 4 }}}, {
+											i(179509),		-- Grove Warden's Edge
+											i(179516),		-- Songwood Staff
+											i(179533),		-- Grove Warden's Harvester
+											--i(181225),	-- Backpack (Spirit Tender's Pack)
+										}),
 									}),
 								},
 							}),
@@ -514,7 +582,7 @@ _.ExpansionFeatures =
 						}),
 						q(63073, {	-- A Mycelial Network
 							["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-							["coord"] = { 39.6, 55.0, 1702 },	-- The Roots
+							["coord"] = { 39.6, 55.0, THE_ROOTS },
 						}),
 						q(62608, {	-- A Royal Treat
 							["sourceQuests"] = { 57583 },	-- Through the Veil
@@ -537,6 +605,55 @@ _.ExpansionFeatures =
 							["coord"] = { 29.5, 34.8, ARDENWEALD },
 						}),
 						q(62607, {	-- Glittering Gritty Goodness
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62466, {	-- Go Beyond! (1)
+							-- requires tier 3 network, but there's no SQ for that
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62263, {	-- Go Beyond! (2)
+							-- requires tier 3 network, but there's no SQ for that
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62459, {	-- Go Beyond! (3)
+							-- requires tier 3 network, but there's no SQ for that
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62417, {	-- Go Beyond! (4)
+							-- requires tier 3 network, but there's no SQ for that
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(60188, {	-- Go Beyond! (5)
+							-- requires tier 3 network, but there's no SQ for that
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62400, {	-- Go Beyond! (6)
+							-- requires tier 3 network, but there's no SQ for that
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62465, {	-- Go Beyond! (7)
+							-- requires tier 3 network, but there's no SQ for that
 							["sourceQuests"] = { 57583 },	-- Through the Veil
 							["provider"] = { "n", 167455 },	-- Marasmius
 							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
@@ -608,12 +725,22 @@ _.ExpansionFeatures =
 						q(57454, {	-- Silence in the Stalks
 							["sourceQuests"] = { 63073 },	-- A Mycelial Network
 							["provider"] = { "n", 174609 },	-- Zaki
-							["coord"] = { 53.2, 33.2, 1702 },	-- The Roots
+							["coord"] = { 53.2, 33.2, THE_ROOTS },
 						}),
 						q(57583, {	-- Through the Veil
 							["sourceQuests"] = { 57463 },	-- My Way or the Hyphae
 							["provider"] = { "n", 166982 },	-- Marasmius
 							["coord"] = { 29.5, 34.6, ARDENWEALD },
+						}),
+						n(174609, {	-- Zaki
+							i(184346),	-- Damp Portalbello
+							i(184345),	-- Glowing Portalbello
+							i(184343),	-- Healthy Portalbello
+							i(184342),	-- Large Portalbello
+							i(184341),	-- Nibbled Portalbello
+							i(184340),	-- Root Cellar VIP Pass
+							i(184347),	-- Slender Portalbello
+							i(184344),	-- Withered Portalbello
 						}),
 					}),
 				}),
@@ -621,3 +748,22 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+_.HiddenQuestTriggers = {
+	q(62958),	-- triggered during Marasmius dailies
+	q(62962),	-- triggered when turning in 'Into the Unknown' (62296)
+	q(62963),	-- triggered when turning in 'Go Beyond' (??)
+	q(61168),	-- triggered when obtaining trickers moves from conductor lvl 3 enchantments
+};
+
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(59870),	-- [OLD NOT USED]
+		q(59912),	-- [OLD NOT USED]
+		q(59925),	-- [OLD NOT USED]
+		q(60643),	-- [OLD NOT USED]
+		q(60726),	-- [OLD NOT USED]
+		q(59840),	-- Divine Gratitude
+		q(59986),	-- Wide Worlds of Catalysts
+	}),
+});

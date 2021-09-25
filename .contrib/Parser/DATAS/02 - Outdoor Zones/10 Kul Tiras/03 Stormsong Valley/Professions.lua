@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
-		m(942, {	-- Stormsong Valley
-			n(-38, {	-- Professions
+	m(KULTIRAS, {
+		m(STORMSONG_VALLEY, {
+			n(PROFESSIONS, {
 				prof(HERBALISM, {
 					-- Siren's Pollen
 					q(51312, {	-- Aromatic Pollenator (A)
@@ -55,7 +55,7 @@ _.Zones =
 				prof(JEWELCRAFTING, {
 					q(55579, {	-- Cracking the Surface (H)
 						["provider"] = { "n", 150898 },	-- Shrine of Storms
-						["coord"] = { 60.7, 58.5, 942 },
+						["coord"] = { 60.7, 58.5, STORMSONG_VALLEY },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49599,	-- The Missing Chapter (H)
 						["requireSkill"] = JEWELCRAFTING,
@@ -77,7 +77,7 @@ _.Zones =
 					}),
 					q(51971, {	-- An Exquisite Brooch
 						["provider"] = { "i", 160944 },	-- An Exquisite Brooch
-						["coord"] = { 44.0, 39.0, 1165 },
+						["coord"] = { 44.0, 39.0, DAZARALOR },
 						["description"] = "This can drop from |cFFFFD700Monelite Seam|r at any mining level.  You can only turn it in at Level 150 Zandalari Mining.",
 						["requireSkill"] = MINING,
 						["races"] = HORDE_ONLY,

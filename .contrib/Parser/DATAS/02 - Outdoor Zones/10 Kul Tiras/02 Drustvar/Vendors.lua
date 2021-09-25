@@ -4,12 +4,12 @@
 
 _.Zones =
 {
-	m(876, {	-- Kul'Tiras
-		m(896, {	-- Drustvar
+	m(KULTIRAS, {
+		m(DRUSTVAR, {
 			n(VENDORS, {
 				n(142197, {	-- Nigel Rifthold <Adventurer's Society>
 					["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at his coords and click on the chest twice.",
-					["coord"] = { 52.2, 31.6, 896 },
+					["coord"] = { 52.2, 31.6, DRUSTVAR },
 					["g"] = {
 						i(163493, {	-- Bloody Rabbit Fang
 							["description"] = "Defeat Cottontail Matron (located at 52.2, 46.8) for this item to appear on the vendor.",
@@ -32,7 +32,7 @@ _.Zones =
 					},
 				}),
 				n(135815, {	-- Quartermaster Alcorn <Order of Embers Emissary>
-					["coord"] = { 37.8, 49.0, 896 },
+					["coord"] = { 37.8, 49.0, DRUSTVAR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(161596, {	-- Coven Buster's Waistguard
@@ -131,22 +131,56 @@ _.Zones =
 					},
 				}),
 				n(138021, {	-- Sally Boltwrench <Repairs>
-					["coord"] = { 37.6, 25.8, 896 },
+					["coord"] = { 37.6, 25.8, DRUSTVAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(23596),	-- Plans: Adamantite Breastplate
-						i(23591, {	-- Plans: Adamantite Cleaver
+						i(23596, {	-- Plans: Adamantite Breastplate
+							["spellID"] = 29606,	-- Adamantite Breastplate
+							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
-						i(23592),	-- Plans: Adamantite Dagger
-						i(23590),	-- Plans: Adamantite Maul
-						i(23594),	-- Plans: Adamantite Plate Bracers
-						i(23595),	-- Plans: Adamantite Plate Gloves
-						i(23593),	-- Plans: Adamantite Rapier
+						i(23591, {	-- Plans: Adamantite Cleaver
+							["spellID"] = 29568,	-- Adamantite Cleaver
+							["requireSkill"] = BLACKSMITHING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(23592, {	-- Plans: Adamantite Dagger
+							["spellID"] = 29569,	-- Adamantite Dagger
+							["requireSkill"] = BLACKSMITHING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(23590, {	-- Plans: Adamantite Maul
+							["spellID"] = 29566,	-- Adamantite Maul
+							["requireSkill"] = BLACKSMITHING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(23594, {	-- Plans: Adamantite Plate Bracers
+							["spellID"] = 29603,	-- Adamantite Plate Bracers
+							["requireSkill"] = BLACKSMITHING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(23595, {	-- Plans: Adamantite Plate Gloves
+							["spellID"] = 29605,	-- Adamantite Plate Gloves
+							["requireSkill"] = BLACKSMITHING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
+						i(23593, {	-- Plans: Adamantite Rapier
+							["spellID"] = 29571,	-- Adamantite Rapier
+							["requireSkill"] = BLACKSMITHING,
+							["isLimited"] = true,
+							["f"] = 200,
+						}),
 						i(23638, {	-- Plans: Lesser Ward of Shielding
 							["spellID"] = 29728,	-- Lesser Ward of Shielding
 							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),

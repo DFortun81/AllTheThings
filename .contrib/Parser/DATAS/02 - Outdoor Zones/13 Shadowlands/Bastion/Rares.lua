@@ -7,6 +7,9 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(BASTION, {
 			n(RARES, {
+				currency(1819, {	-- Medallion of Service
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
+				}),
 				n(161528, { -- Aethon
 					["questID"] = 58526,
 					["isDaily"] = true,
@@ -20,7 +23,7 @@ _.Zones =
 					},
 				}),
 				n(-940,   {	-- Ascended Council
-					["description"] = "You have to ring all 5 vespers within 5 minutes to summon the Ascended Council at |cFFFFFFFF53.5, 88.3|r.  The vespers are spread out all over the map, so this will require at least a couple people.",
+					["description"] = "You have to ring all 5 vespers within 5 minutes to summon the Ascended Council at |cFFFFFFFF53.5, 88.3|r.  The vespers are spread out all over the map, so this might require at least a couple people.",
 					["questID"] = 60933,
 					["isDaily"] = true,
 					["coords"] = {
@@ -275,7 +278,10 @@ _.Zones =
 						crit(28, {	-- Orstus and Sotiros
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
-						i(184401),	-- Larion Pouncer (PET!)
+						i(184401, {	-- Larion Pouncer (PET!)
+							["customCollect"] = "SL_COV_KYR",	-- Kyrian
+							["description"] = "To be eligible to receive the pet, your Anima Conductor must be upgraded to Rank 3.",
+						}),
 						i(184365),	-- Aegis of Salvation
 					},
 				}),
@@ -436,4 +442,8 @@ _.Zones =
 			}),
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(57741),	-- when defeating Sundancer after also having ridden Sundancer using the Skyfeather Glider
 };

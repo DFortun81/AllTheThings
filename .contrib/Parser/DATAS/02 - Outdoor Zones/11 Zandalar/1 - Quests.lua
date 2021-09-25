@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
+	m(ZANDALAR, {
 		n(QUESTS, {
 			o(311218, {	-- Xal'atath, Blade of the Black Empire
 				q(54439, {	-- Crucible of Storms: Relics of Shadow
@@ -15,12 +15,12 @@ _.Zones =
 						{ "n", 133050 },	-- Princess Talanji
 					},
 					["coords"] = {
-						{ 49.9, 46.6, 1165 },
-						{ 41.7, 66.7, 1163 },
+						{ 49.9, 46.6, DAZARALOR },
+						{ 41.7, 66.7, THE_GREAT_SEAL },
 					},
 				}),
 				q(54117, {	-- Every Little Death Helps
-					["coord"] = { 78.0, 36.7, 862 },
+					["coord"] = { 78.0, 36.7, ZULDAZAR },
 					["sourceQuest"] = 54174,	-- Orders from Azshara
 					["races"] = HORDE_ONLY,
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
@@ -32,8 +32,8 @@ _.Zones =
 					},
 					["classes"] = { PRIEST },
 					["coords"] = {
-						{ 78.0, 36.7, 862 },
-						{ 34.2, 31.8, 942 },
+						{ 78.0, 36.7, ZULDAZAR },
+						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
 				q(53766, {	-- His Eye Upon You
@@ -45,8 +45,8 @@ _.Zones =
 						{ "n", 133050 },	-- Princess Talanji
 					},
 					["coords"] = {
-						{ 49.9, 46.6, 1165 },
-						{ 41.7, 66.7, 1163 },
+						{ 49.9, 46.6, DAZARALOR },
+						{ 41.7, 66.7, THE_GREAT_SEAL },
 					},
 					["g"] = {
 						i(168123),	-- Twitching Eyeball
@@ -55,7 +55,7 @@ _.Zones =
 				q(54174, {	-- Orders from Azshara
 					["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
 					["races"] = HORDE_ONLY,
-					["coord"] = { 71.4, 30.2, 862 },
+					["coord"] = { 71.4, 30.2, ZULDAZAR },
 					["provider"] = { "n", 134345 },	-- Collector Kojo
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
 				}),
@@ -63,7 +63,7 @@ _.Zones =
 					["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
 					["classes"] = { PRIEST },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 71.4, 30.2, 862 },
+					["coord"] = { 71.4, 30.2, ZULDAZAR },
 					["provider"] = { "n", 134345 },	-- Collector Kojo
 				}),
 				q(54172, {	-- The Azsharan Medallion
@@ -88,16 +88,16 @@ _.Zones =
 				q(53761, {	-- The Pirate's Treasure
 					["sourceQuests"] = { 53760 },	-- Unintended Consequences
 					["provider"] = { "n", 144773 },	-- Xal'atath
-					["coord"] = { 20.0, 35.8, 896 },
+					["coord"] = { 20.0, 35.8, DRUSTVAR },
 				}),
 				q(53762, {	-- The Tempest Crown
 					["sourceQuests"] = { 53761 },	-- The Pirate's Treasure
 					["provider"] = { "n", 145396 },	-- Xal'atath
-					["coord"] = { 75.0, 77.7, 895 },
+					["coord"] = { 75.0, 77.7, TIRAGARDE_SOUND },
 				}),
 				q(53763, {	-- Twist the Knife
 					["provider"] = { "n", 146384 },	-- Xal'atath
-					["coord"] = { 53.0, 13.6, 864 },
+					["coord"] = { 53.0, 13.6, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53762 },	-- The Tempest Crown
 				}),
@@ -105,16 +105,16 @@ _.Zones =
 					["sourceQuests"] = { 54117 },	-- Every Little Death Helps
 					["classes"] = exclude(PRIEST, ALL_CLASSES),
 					["coords"] = {
-						{ 78.0, 36.7, 862 },
-						{ 34.2, 31.8, 942 },
+						{ 78.0, 36.7, ZULDAZAR },
+						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
 				q(54058, {	-- Unintended Consequences
 					["sourceQuests"] = { 54118 },	-- Every Little Death Helps
 					["classes"] = { PRIEST },
 					["coords"] = {
-						{ 78.0, 36.7, 862 },
-						{ 34.2, 31.8, 942 },
+						{ 78.0, 36.7, ZULDAZAR },
+						{ 34.2, 31.8, STORMSONG_VALLEY },
 					},
 				}),
 			}),

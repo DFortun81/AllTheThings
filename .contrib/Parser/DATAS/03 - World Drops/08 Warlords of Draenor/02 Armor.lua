@@ -4,7 +4,7 @@
 
 _.WorldDrops =
 {
-	tier(6, {	-- Warlords of Draenor
+	tier(WOD_TIER, {
 		n(-318, {	-- Armor
 			n(-320, {	-- Head
 				i(118857),	-- Casque of Defiance

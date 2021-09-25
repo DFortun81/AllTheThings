@@ -4,7 +4,7 @@
 
 _.Craftables =
 {
-	tier(3, {	-- Wrath of the Lich King
+	tier(WOTLK_TIER, {
 		prof(ALCHEMY, {
 			filter(53, {	-- Trinkets
 				i(44323),	-- Indestructible Alchemist Stone
@@ -13,6 +13,12 @@ _.Craftables =
 			}),
 		}),
 		prof(BLACKSMITHING, {
+			f(55, {		-- Consumables
+				i(41611),	-- Eternal Belt Buckle
+				i(41976),	-- Titanium Weapon Chain
+				i(42500),	-- Titanium Shield Spike
+				i(44936),	-- Titanium Plating
+			}),
 			filter(20, {	-- Daggers
 				i(41183),	-- Saronite Ambusher
 				i(41184),	-- Saronite Shiv
@@ -203,6 +209,10 @@ _.Craftables =
 				i(40768),	-- MOLL-E*
 				i(48933),	-- Wormhole Generator: Northrend*
 			}),
+			f(55, {		-- Consumables
+				i(41146),	-- Sun Scope
+				i(41167),	-- Heartseeker Scope
+			}),
 			n(-319, {	-- Weapons
 				-- Guns
 				i(41168),	-- Armor Plated Combat Shotgun*
@@ -347,13 +357,21 @@ _.Craftables =
 				un(REMOVED_FROM_GAME, i(44447)),	-- Dragonscale Ammo Pouch
 				un(REMOVED_FROM_GAME, i(44448)),	-- Nerubian Reinforced Quiver
 			}),
-			n(-322, { 	-- Cloak
+			f(55, {		-- Consumables
+				i(38371),	-- Jormungar Leg Armor
+				i(38372),	-- Nerubian Leg Armor
+				i(38376),	-- Heavy Borean Armor Kit
+				i(38373),	-- Frosthide Leg Armor
+				i(38374),	-- Icescale Leg Armor
+				i(44963),	-- Earthen Leg Armor
+			}),
+			n(-322, {	-- Cloak
 				i(38441),	-- Cloak of Harsh Winds
 				i(41238),	-- Cloak of Tormented Skies
 				i(43565),	-- Durable Nerubhide Cape
 				i(43566),	-- Ice Striker's Cloak
 			}),
-			n(-44, { 	-- Leather
+			n(-44, {	-- Leather
 				i(38405),	-- Arctic Belt
 				i(38404),	-- Arctic Boots
 				i(38400),	-- Arctic Chestpiece
@@ -419,12 +437,11 @@ _.Craftables =
 				i(43255),	-- Seafoam Gauntlets
 				i(43484),	-- Trollwoven Girdle
 				i(43481),	-- Trollwoven Spaulders
-				i(29970),	-- Wildfeather Leggings
 				i(43257),	-- Wildscale Breastplate
 				i(44930),	-- Windripper Boots
 				i(44931),	-- Windripper Leggings
 			}),
-			n(-45, { 	-- Mail
+			n(-45, {	-- Mail
 				i(45553),	-- Belt of Dragons
 				i(47580),	-- Black Chitin Bracers
 				i(47579),	-- Black Chitin Bracers
@@ -500,6 +517,12 @@ _.Craftables =
 				i(41599),	-- Frostweave Bag
 				i(41600),	-- Glacial Bag
 				i(41598),	-- Mysterious Bag
+			}),
+			f(55, {		-- Consumables
+				i(41601),	-- Shining Spellthread
+				i(41602),	-- Brilliant Spellthread
+				i(41603),	-- Azure Spellthread
+				i(41604),	-- Sapphire Spellthread
 			}),
 			n(-323, {	-- Chest
 				i(41554),	-- Black Duskweave Robe
@@ -605,3 +628,18 @@ _.Craftables =
 		}),
 	}),
 };
+-- The items never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10014, {	-- Wrath of the Lich King
+		prof(ENCHANTING, {
+			i(34138),	-- Enchanted White Wand
+			i(34139),	-- Enchanted Crimson Wand
+		}),
+		prof(ENGINEERING, {
+			i(48945),	-- Gnomish Thinking Cap (Mind Amplification Disk was added for it)
+		}),
+		prof(LEATHERWORKING, {
+			i(38378)	-- Wyrmscale Leg Armor
+		}),
+	}),
+});

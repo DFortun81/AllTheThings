@@ -15,7 +15,7 @@ _.Toys =
 		i(168012),		-- Apexis Focusing Shard
 		i(46843),		-- Argent Crusader's Banner
 		i(184410),		-- Aspirant's Stretcher
-		i(147537, { 	-- A Tiny Set of Warglaives -- demon hunter class hall
+		i(147537, {	-- A Tiny Set of Warglaives -- demon hunter class hall
 			["classes"] = { DEMONHUNTER },
 		}),
 		i(168014),		-- Banner of the Burning Blade
@@ -49,6 +49,7 @@ _.Toys =
 		i(129279),		-- Enchanted Stone Whistle
 		i(134007),		-- Eternal Black Diamond Ring
 		i(45020),		-- Exodar Banner (Alliance)
+		i(186974),		-- Experimental Anima Cell
 		i(136846),		-- Familiar Stone
 		i(104324),		-- Foot Ball
 		i(88802),		-- Foxicopter Controller
@@ -103,7 +104,7 @@ _.Toys =
 		i(134004),		-- Noble's Eternal Elementium Signet
 		i(45014),		-- Orgrimmar Banner (Horde)
 		i(158149, {		-- Overtuned Corgi Goggles
-			["u"] = 31,	-- WoW Anniversary
+			["u"] = WOW_ANNIVERSARY,
 		}),
 		i(89869),		-- Pandaren Scarecrow
 		i(163210),		-- Party Totem

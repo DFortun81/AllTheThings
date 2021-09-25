@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(241, {	-- Twilight Highlands
-			filter(101, {	-- Pet Battle
+		m(TWILIGHT_HIGHLANDS, {
+			filter(BATTLE_PETS, {
 				p(398, {	-- Black Rat
 					["crs"] = { 61257 },
 				}),
@@ -59,7 +59,7 @@ _.Zones =
 				}),
 				q(31974, {	-- Goz Banefury
 					["provider"] = { "n", 66822 },	-- Goz Banefury
-					["coord"] = { 56.5, 56.7, 241 },
+					["coord"] = { 56.5, 56.7, TWILIGHT_HIGHLANDS },
 					["isDaily"] = true,
 				}),
 			}),

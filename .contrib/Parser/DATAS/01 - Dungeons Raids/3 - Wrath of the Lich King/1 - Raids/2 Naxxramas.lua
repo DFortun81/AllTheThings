@@ -2,9 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(754, { 	-- Naxxramas
-		["order"] = "02",
+_.Instances = { tier(WOTLK_TIER, {
+	inst(754, {	-- Naxxramas
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,
@@ -18,234 +17,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				un(REMOVED_FROM_GAME, ach(2187, {	-- The Undying
 					un(REMOVED_FROM_GAME, title(109)),	-- The Undying
 				})),
-				n(ZONEDROPS, {
-					i(39467, {	-- Minion Bracers
-						["crs"] = {
-							16018,	-- Bile Retcher
-							16167,	-- Bony Construct
-							15975,	-- Carrion Spinner
-							15978,	-- Crypt Reaver
-							16146,	-- Death Knight
-							16145,	-- Death Knight Captain
-							16163,	-- Death Knight Cavalier
-							16067,	-- Deathcharger Steed
-							15974,	-- Dread Creeper
-							16036,	-- Frenzied Bat
-							16244,	-- Infectious Ghoul
-							16021,	-- Living Monstrosity
-							16020,	-- Mad Scientist
-							16297,	-- Mutated Grub
-							15981,	-- Naxxramas Acolyte
-							15980,	-- Naxxramas Cultist
-							16165,	-- Necro Knight
-							16017,	-- Patchwork Golem
-							16037,	-- Plagued Bat
-							16447,	-- Plagued Ghoul
-							16154,	-- Risen Squire
-							16164,	-- Shade of Naxxramas
-							16193,	-- Skeletal Smith
-							16029,	-- Sludge Belcher
-							30071,	-- Stitched Colossus
-							16025,	-- Stitched Giant
-							16168,	-- Stoneskin Gargoyle
-							16022,	-- Surgical Assistant
-							15979,	-- Tomb Horror
-							16194,	-- Unholy Axe
-							16215,	-- Unholy Staff
-							16216,	-- Unholy Swords
-							15976,	-- Venom Stalker
-						},
-					}),
-					i(39427, {	-- Omen of Ruin
-						["crs"] = {
-							16018,	-- Bile Retcher
-							16167,	-- Bony Construct
-							15975,	-- Carrion Spinner
-							15978,	-- Crypt Reaver
-							16146,	-- Death Knight
-							16145,	-- Death Knight Captain
-							16163,	-- Death Knight Cavalier
-							16067,	-- Deathcharger Steed
-							15974,	-- Dread Creeper
-							16036,	-- Frenzied Bat
-							16244,	-- Infectious Ghoul
-							16021,	-- Living Monstrosity
-							16020,	-- Mad Scientist
-							16297,	-- Mutated Grub
-							15981,	-- Naxxramas Acolyte
-							15980,	-- Naxxramas Cultist
-							16165,	-- Necro Knight
-							16017,	-- Patchwork Golem
-							16037,	-- Plagued Bat
-							16447,	-- Plagued Ghoul
-							16154,	-- Risen Squire
-							16164,	-- Shade of Naxxramas
-							16193,	-- Skeletal Smith
-							16029,	-- Sludge Belcher
-							30071,	-- Stitched Colossus
-							16025,	-- Stitched Giant
-							16168,	-- Stoneskin Gargoyle
-							16022,	-- Surgical Assistant
-							15979,	-- Tomb Horror
-							16194,	-- Unholy Axe
-							16215,	-- Unholy Staff
-							16216,	-- Unholy Swords
-							15976,	-- Venom Stalker
-						},
-					}),
-					i(39468, {	-- The Stray
-						["crs"] = {
-							16018,	-- Bile Retcher
-							16167,	-- Bony Construct
-							15975,	-- Carrion Spinner
-							15978,	-- Crypt Reaver
-							16146,	-- Death Knight
-							16145,	-- Death Knight Captain
-							16163,	-- Death Knight Cavalier
-							16067,	-- Deathcharger Steed
-							15974,	-- Dread Creeper
-							16036,	-- Frenzied Bat
-							16244,	-- Infectious Ghoul
-							16021,	-- Living Monstrosity
-							16020,	-- Mad Scientist
-							16297,	-- Mutated Grub
-							15981,	-- Naxxramas Acolyte
-							15980,	-- Naxxramas Cultist
-							16165,	-- Necro Knight
-							16017,	-- Patchwork Golem
-							16037,	-- Plagued Bat
-							16447,	-- Plagued Ghoul
-							16154,	-- Risen Squire
-							16164,	-- Shade of Naxxramas
-							16193,	-- Skeletal Smith
-							16029,	-- Sludge Belcher
-							30071,	-- Stitched Colossus
-							16025,	-- Stitched Giant
-							16168,	-- Stoneskin Gargoyle
-							16022,	-- Surgical Assistant
-							15979,	-- Tomb Horror
-							16194,	-- Unholy Axe
-							16215,	-- Unholy Staff
-							16216,	-- Unholy Swords
-							15976,	-- Venom Stalker
-						},
-					}),
-					i(39473, {	-- Contortion
-						["crs"] = {
-							16018,	-- Bile Retcher
-							16167,	-- Bony Construct
-							15975,	-- Carrion Spinner
-							15978,	-- Crypt Reaver
-							16146,	-- Death Knight
-							16145,	-- Death Knight Captain
-							16163,	-- Death Knight Cavalier
-							16067,	-- Deathcharger Steed
-							15974,	-- Dread Creeper
-							16036,	-- Frenzied Bat
-							16244,	-- Infectious Ghoul
-							16021,	-- Living Monstrosity
-							16020,	-- Mad Scientist
-							16297,	-- Mutated Grub
-							15981,	-- Naxxramas Acolyte
-							15980,	-- Naxxramas Cultist
-							16165,	-- Necro Knight
-							16017,	-- Patchwork Golem
-							16037,	-- Plagued Bat
-							16447,	-- Plagued Ghoul
-							16154,	-- Risen Squire
-							16164,	-- Shade of Naxxramas
-							16193,	-- Skeletal Smith
-							16029,	-- Sludge Belcher
-							30071,	-- Stitched Colossus
-							16025,	-- Stitched Giant
-							16168,	-- Stoneskin Gargoyle
-							16022,	-- Surgical Assistant
-							15979,	-- Tomb Horror
-							16194,	-- Unholy Axe
-							16215,	-- Unholy Staff
-							16216,	-- Unholy Swords
-							15976,	-- Venom Stalker
-						},
-					}),
-					i(39472, {	-- Chain of Latent Energies
-						["crs"] = {
-							16018,	-- Bile Retcher
-							16167,	-- Bony Construct
-							15975,	-- Carrion Spinner
-							15978,	-- Crypt Reaver
-							16146,	-- Death Knight
-							16145,	-- Death Knight Captain
-							16163,	-- Death Knight Cavalier
-							16067,	-- Deathcharger Steed
-							15974,	-- Dread Creeper
-							16036,	-- Frenzied Bat
-							16244,	-- Infectious Ghoul
-							16021,	-- Living Monstrosity
-							16020,	-- Mad Scientist
-							16297,	-- Mutated Grub
-							15981,	-- Naxxramas Acolyte
-							15980,	-- Naxxramas Cultist
-							16165,	-- Necro Knight
-							16017,	-- Patchwork Golem
-							16037,	-- Plagued Bat
-							16447,	-- Plagued Ghoul
-							16154,	-- Risen Squire
-							16164,	-- Shade of Naxxramas
-							16193,	-- Skeletal Smith
-							16029,	-- Sludge Belcher
-							30071,	-- Stitched Colossus
-							16025,	-- Stitched Giant
-							16168,	-- Stoneskin Gargoyle
-							16022,	-- Surgical Assistant
-							15979,	-- Tomb Horror
-							16194,	-- Unholy Axe
-							16215,	-- Unholy Staff
-							16216,	-- Unholy Swords
-							15976,	-- Venom Stalker
-						},
-					}),
-					i(39470, {	-- Medallion of the Disgraced
-						["crs"] = {
-							16018,	-- Bile Retcher
-							16167,	-- Bony Construct
-							15975,	-- Carrion Spinner
-							15978,	-- Crypt Reaver
-							16146,	-- Death Knight
-							16145,	-- Death Knight Captain
-							16163,	-- Death Knight Cavalier
-							16067,	-- Deathcharger Steed
-							15974,	-- Dread Creeper
-							16036,	-- Frenzied Bat
-							16244,	-- Infectious Ghoul
-							16021,	-- Living Monstrosity
-							16020,	-- Mad Scientist
-							16297,	-- Mutated Grub
-							15981,	-- Naxxramas Acolyte
-							15980,	-- Naxxramas Cultist
-							16165,	-- Necro Knight
-							16017,	-- Patchwork Golem
-							16037,	-- Plagued Bat
-							16447,	-- Plagued Ghoul
-							16154,	-- Risen Squire
-							16164,	-- Shade of Naxxramas
-							16193,	-- Skeletal Smith
-							16029,	-- Sludge Belcher
-							30071,	-- Stitched Colossus
-							16025,	-- Stitched Giant
-							16168,	-- Stoneskin Gargoyle
-							16022,	-- Surgical Assistant
-							15979,	-- Tomb Horror
-							16194,	-- Unholy Axe
-							16215,	-- Unholy Staff
-							16216,	-- Unholy Swords
-							15976,	-- Venom Stalker
-						},
-					}),
+				n(ZONE_DROPS, {
+					i(39467),	-- Minion Bracers
+					i(39427),	-- Omen of Ruin
+					i(39468),	-- The Stray
+					i(39473),	-- Contortion
+					i(39472),	-- Chain of Latent Energies
+					i(39470),	-- Medallion of the Disgraced
 				}),
 				n(-368, {	-- The Arachnid Quarter
 					ach(562),	-- The Arachnid Quarter (10 player)
 					cr(15956, e(1601, {	-- Anub'Rehkan
-						["description"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
+						["lore"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
 						["groups"] = {
 							{
 								["achievementID"] = 562,	-- The Arachnid Quarter (10 player)
@@ -268,7 +51,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(15953, e(1602, {	-- Grand Widow Faerlina
-						["description"] = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
+						["lore"] = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
 						["groups"] = {
 							ach(1997),	-- Momma Said Knock You Out (10 player)
 							{
@@ -292,7 +75,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(15952, e(1603, {	-- Maexxna
-						["description"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
+						["lore"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
 						["groups"] = {
 							ach(1858),	-- Arachnophobia (10 player)
 							{
@@ -317,10 +100,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-370, { 	-- The Plague Quarter
+				n(-370, {	-- The Plague Quarter
 					ach(566),	-- The Plague Quarter (10 player)
 					cr(15954, e(1604, {	-- Noth the Plaguebringer
-						["description"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
+						["lore"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
 						["groups"] = {
 							{
 								["achievementID"] = 566,	-- The Plague Quarter (10 player)
@@ -343,7 +126,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(15936, e(1605, {	-- Heigan the Unclean
-						["description"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
+						["lore"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
 						["groups"] = {
 							ach(1996),	-- The Safety Dance (10 player)
 							{
@@ -367,7 +150,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(16011, e(1606, {	-- Loatheb
-						["description"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
+						["lore"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
 						["groups"] = {
 							ach(2182),	-- Spore Loser (10 player)
 							{
@@ -379,31 +162,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["criteriaID"] = 9,			-- Loatheb slain
 							},
 							i(93032),	-- Blighted Spore (PET!)
-							i(40622, {	-- Spaulders of the Lost Conqueror
-								i(39518),	-- Heroes' Shoulderpads of Faith
-								i(39631),	-- Heroes' Redemption Spaulders
-								i(39637),	-- Heroes' Redemption Shoulderplates
-								i(39642),	-- Heroes' Redemption Shoulderguards
-								i(39499),	-- Heroes' Plagueheart Shoulderpads
-								i(39529),	-- Heroes' Mantle of Faith
-							}),
-							i(40623, {	-- Spaulders of the Lost Protector
-								i(39590),	-- Heroes' Earthshatter Spaulders
-								i(39596),	-- Heroes' Earthshatter Shoulderpads
-								i(39604),	-- Heroes' Earthshatter Shoulderguards
-								i(39608),	-- Heroes' Dreadnaught Shoulderplates
-								i(39613),	-- Heroes' Dreadnaught Pauldrons
-								i(39581),	-- Heroes' Cryptstalker Spaulders
-							}),
-							i(40624, {	-- Spaulders of the Lost Vanquisher
-								i(39621),	-- Heroes' Scourgeborne Shoulderplates
-								i(39627),	-- Heroes' Scourgeborne Pauldrons
-								i(39494),	-- Heroes' Frostfire Shoulderpads
-								i(39542),	-- Heroes' Dreamwalker Spaulders
-								i(39556),	-- Heroes' Dreamwalker Shoulderpads
-								i(39548),	-- Heroes' Dreamwalker Mantle
-								i(39565),	-- Heroes' Bonescythe Pauldrons
-							}),
+							i(40622),	-- Spaulders of the Lost Conqueror
+							i(40623),	-- Spaulders of the Lost Protector
+							i(40624),	-- Spaulders of the Lost Vanquisher
 							i(39256),	-- Sulfur Stave
 							i(39260),	-- Helm of the Corrupted Mind
 							i(39259),	-- Fungi-Stained Coverings
@@ -412,10 +173,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-369, { 	-- The Military Quarter
+				n(-369, {	-- The Military Quarter
 					ach(568),	-- The Military Quarter (10 player)
 					cr(16061, e(1607, {	-- Instructor Razuvious
-						["description"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
+						["lore"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
 						["groups"] = {
 							{
 								["achievementID"] = 568,	-- The Military Quarter (10 player)
@@ -438,7 +199,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(16060, e(1608, {	-- Gothik the Harvester
-						["description"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
+						["lore"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
 						["groups"] = {
 							{
 								["achievementID"] = 568,	-- The Military Quarter (10 player)
@@ -461,38 +222,16 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(30549, e(1609, {	-- The Four Horsemen
-						["description"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
+						["lore"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
 						["groups"] = {
 							ach(2176),	-- And They Would All Go Down Together (10 player)
 							{
 								["achievementID"] = 568,	-- The Military Quarter (10 player)
 								["criteriaID"] = 3,	-- The Four Horsemen slain
 							},
-							i(40610, {	-- Chestguard of the Lost Conqueror
-								i(39515),	-- Heroes' Robe of Faith
-								i(39629),	-- Heroes' Redemption Tunic
-								i(39633),	-- Heroes' Redemption Chestpiece
-								i(39638),	-- Heroes' Redemption Breastplate
-								i(39523),	-- Heroes' Raiment of Faith
-								i(39497),	-- Heroes' Plagueheart Robe
-							}),
-							i(40611, {	-- Chestguard of the Lost Protector
-								i(39588),	-- Heroes' Earthshatter Tunic
-								i(39592),	-- Heroes' Earthshatter Hauberk
-								i(39597),	-- Heroes' Cryptstalker Tunic
-								i(39611),	-- Heroes' Dreadnaught Breastplate
-								i(39606),	-- Heroes' Dreadnaught Battleplate
-								i(39579),	-- Heroes' Earthshatter Chestguard
-							}),
-							i(40612, {	-- Chestguard of the Lost Vanquisher
-								i(39623),	-- Heroes' Scourgeborne Chestguard
-								i(39617),	-- Heroes' Scourgeborne Battleplate
-								i(39492),	-- Heroes' Frostfire Robe
-								i(39547),	-- Heroes' Dreamwalker Vestments
-								i(39538),	-- Heroes' Dreamwalker Robe
-								i(39554),	-- Heroes' Dreamwalker Raiments
-								i(39558),	-- Heroes' Bonescythe Breastplate
-							}),
+							i(40610),	-- Chestguard of the Lost Conqueror
+							i(40611),	-- Chestguard of the Lost Protector
+							i(40612),	-- Chestguard of the Lost Vanquisher
 							i(39394),	-- Charmed Cierge
 							i(39393),	-- Claymore of Ancient Power
 							i(39395),	-- Thane's Tainted Greathelm
@@ -501,10 +240,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-367, { 	-- The Construct Quarter
+				n(-367, {	-- The Construct Quarter
 					ach(564),	-- The Construct Quarter (10 player)
 					cr(16028, e(1610, {	-- Patchwerk
-						["description"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
+						["lore"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
 						["groups"] = {
 							ach(1856),	-- Make Quick Werk of Him (10 player)
 							{
@@ -528,7 +267,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(15931, e(1611, {	-- Grobbulus
-						["description"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
+						["lore"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
 						["groups"] = {
 							{
 								["achievementID"] = 564,	-- The Construct Quarter (10 player)
@@ -551,7 +290,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(15932, e(1612, {	-- Gluth
-						["description"] = "The foul plague-dog of Naxxramas, was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
+						["lore"] = "The foul plague-dog of Naxxramas, was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
 						["groups"] = {
 							{
 								["achievementID"] = 564,	-- The Construct Quarter (10 player)
@@ -562,81 +301,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["criteriaID"] = 10,		-- Gluth slain
 							},
 							i(93029),	-- Gluth's Bone (PET!)
-							i(40610, {	-- Chestguard of the Lost Conqueror
-								i(39515),	-- Heroes' Robe of Faith
-								i(39629),	-- Heroes' Redemption Tunic
-								i(39633),	-- Heroes' Redemption Chestpiece
-								i(39638),	-- Heroes' Redemption Breastplate
-								i(39523),	-- Heroes' Raiments of Faith
-								i(39497),	-- Heroes' Plagueheart Robe
-							}),
-							i(40611, {	-- Chestguard of the Lost Protector
-								i(39588),	-- Heroes' Earthshatter Tunic
-								i(39592),	-- Heroes' Earthshatter Hauberk
-								i(39597),	-- Heroes' Earthshatter Chestguard
-								i(39611),	-- Heroes' Dreadnaught Breastplate
-								i(39606),	-- Heroes' Dreadnaught Battleplate
-								i(39579),	-- Heroes' Cryptstalker Tunic
-							}),
-							i(40612, {	-- Chestguard of the Lost Vanquisher
-								i(39623),	-- Heroes' Scourgeborne Chestguard
-								i(39617),	-- Heroes' Scourgeborne Battleplate
-								i(39492),	-- Heroes' Frostfire Robe
-								i(39547),	-- Heroes' Dreamwalker Vestments
-								i(39538),	-- Heroes' Dreamwalker Robe
-								i(39554),	-- Heroes' Dreamwalker Raiments
-								i(39558),	-- Heroes' Bonescythe Breastplate
-							}),
-							i(40619, {	-- Leggings of the Lost Conqueror
-								i(39636),	-- Heroes' Redemption Legplates
-								i(39641),	-- Heroes' Redemption Legguards
-								i(39630),	-- Heroes' Redemption Greaves
-								i(39498),	-- Heroes' Plagueheart Leggings
-								i(39528),	-- Heroes' Pants of Faith
-								i(39517),	-- Heroes' Leggings of Faith
-							}),
-							i(40620, {	-- Leggings of the Lost Protector
-								i(39603),	-- Heroes' Earthshatter War-Kilt
-								i(39589),	-- Heroes' Earthshatter Legguards
-								i(39595),	-- Heroes' Earthshatter Kilt
-								i(39607),	-- Heroes' Dreadnaught Legplates
-								i(39612),	-- Heroes' Dreadnaught Legguards
-								i(39580),	-- Heroes' Cryptstalker Legguards
-							}),
-							i(40621, {	-- Leggings of the Lost Vanquisher
-								i(39620),	-- Heroes' Scourgeborne Legplates
-								i(39626),	-- Heroes' Scourgeborne Legguards
-								i(39493),	-- Heroes' Frostfire Leggings
-								i(39546),	-- Heroes' Dreamwalker Trousers
-								i(39555),	-- Heroes' Dreamwalker Legguards
-								i(39539),	-- Heroes' Dreamwalker Leggings
-								i(39564),	-- Heroes' Bonescythe Legplates
-							}),
-							i(40622, {	-- Spaulders of the Lost Conqueror
-								i(39518),	-- Heroes' Shoulderpads of Faith
-								i(39631),	-- Heroes' Redemption Spaulders
-								i(39637),	-- Heroes' Redemption Shoulderplates
-								i(39642),	-- Heroes' Redemption Shoulderguards
-								i(39499),	-- Heroes' Plagueheart Shoulderpads
-								i(39529),	-- Heroes' Mantle of Faith
-							}),
-							i(40623, {	-- Spaulders of the Lost Protector
-								i(39590),	-- Heroes' Earthshatter Spaulders
-								i(39596),	-- Heroes' Earthshatter Shoulderpads
-								i(39604),	-- Heroes' Earthshatter Shoulderguards
-								i(39608),	-- Heroes' Dreadnaught Shoulderplates
-								i(39613),	-- Heroes' Dreadnaught Pauldrons
-								i(39581),	-- Heroes' Cryptstalker Spaulders
-							}),
-							i(40624, {	-- Spaulders of the Lost Vanquisher
-								i(39621),	-- Heroes' Scourgeborne Shoulderplates
-								i(39627),	-- Heroes' Scourgeborne Pauldrons
-								i(39494),	-- Heroes' Frostfire Shoulderpads
-								i(39542),	-- Heroes' Dreamwalker Spaulders
-								i(39556),	-- Heroes' Dreamwalker Shoulderpads
-								i(39548),	-- Heroes' Dreamwalker Mantle
-								i(39565),	-- Heroes' Bonescythe Pauldrons
-							}),
+							i(40610),	-- Chestguard of the Lost Conqueror
+							i(40611),	-- Chestguard of the Lost Protector
+							i(40612),	-- Chestguard of the Lost Vanquisher
+							i(40619),	-- Leggings of the Lost Conqueror
+							i(40620),	-- Leggings of the Lost Protector
+							i(40621),	-- Leggings of the Lost Vanquisher
+							i(40622),	-- Spaulders of the Lost Conqueror
+							i(40623),	-- Spaulders of the Lost Protector
+							i(40624),	-- Spaulders of the Lost Vanquisher
 							i(39394),	-- Charmed Cierge
 							i(39393),	-- Claymore of Ancient Power
 							i(39245),	-- Demise
@@ -745,7 +418,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(15928, e(1613, {	-- Thaddius
-						["description"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
+						["lore"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
 						["groups"] = {
 							ach(2178),	-- Shocking! (10 player)
 							ach(2180),	-- Subtraction (10 player)
@@ -757,31 +430,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["achievementID"] = 578,	-- The Dedicated Few (10 player)
 								["criteriaID"] = 11,		-- Thaddius slain
 							},
-							i(40619, {	-- Leggings of the Lost Conqueror
-								i(39636),	-- Heroes' Redemption Legplates
-								i(39641),	-- Heroes' Redemption Legguards
-								i(39630),	-- Heroes' Redemption Greaves
-								i(39498),	-- Heroes' Plagueheart Leggings
-								i(39528),	-- Heroes' Pants of Faith
-								i(39517),	-- Heroes' Leggings of Faith
-							}),
-							i(40620, {	-- Leggings of the Lost Protector
-								i(39603),	-- Heroes' Earthshatter War-Kilt
-								i(39589),	-- Heroes' Earthshatter Legguards
-								i(39595),	-- Heroes' Earthshatter Kilt
-								i(39607),	-- Heroes' Dreadnaught Legplates
-								i(39612),	-- Heroes' Dreadnaught Legguards
-								i(39580),	-- Heroes' Cryptstalker Legguards
-							}),
-							i(40621, {	-- Leggings of the Lost Vanquisher
-								i(39620),	-- Heroes' Scourgeborne Legplates
-								i(39626),	-- Heroes' Scourgeborne Legguards
-								i(39493),	-- Heroes' Frostfire Leggings
-								i(39546),	-- Heroes' Dreamwalker Trousers
-								i(39555),	-- Heroes' Dreamwalker Legguards
-								i(39539),	-- Heroes' Dreamwalker Leggings
-								i(39564),	-- Heroes' Bonescythe Legplates
-							}),
+							i(40619),	-- Leggings of the Lost Conqueror
+							i(40620),	-- Leggings of the Lost Protector
+							i(40621),	-- Leggings of the Lost Vanquisher
 							i(39291),	-- Torment of the Banished
 							i(39294),	-- Arc-Scorched Helmet
 							i(39295),	-- Cowl of Sheet Lightning
@@ -790,9 +441,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-371, { 	-- The Upper Necropolis
+				n(-371, {	-- The Upper Necropolis
 					cr(15989, e(1614, {	-- Sapphiron
-						["description"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
+						["lore"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
 						["groups"] = {
 							ach(572),	-- Sapphiron's Demise (10 player)
 							ach(2146),	-- The Hundred Club (10 player)
@@ -817,7 +468,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(15990, e(1615, {	-- Kel'Thuzad
-						["description"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
+						["lore"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
 						["groups"] = {
 							ach(574),	-- Kel'Thuzad's Defeat (10 player)
 							{
@@ -833,31 +484,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["achievementID"] = 578,	-- The Dedicated Few (10 player)
 								["criteriaID"] = 1,			-- Kel'Thuzad slain
 							},
-							i(40616, {	-- Helm of the Lost Conqueror
-								i(39635),	-- Heroes' Redemption Helm
-								i(39628),	-- Heroes' Redemption Headpiece
-								i(39640),	-- Heroes' Redemption Faceguard
-								i(39496),	-- Heroes' Plagueheart Circlet
-								i(39514),	-- Heroes' Crown of Faith
-								i(39521),	-- Heroes' Circlet of Faith
-							}),
-							i(40617, {	-- Helm of the Lost Protector
-								i(39594),	-- Heroes' Earthshatter Helm
-								i(39583),	-- Heroes' Earthshatter Headpiece
-								i(39602),	-- Heroes' Earthshatter Faceguard
-								i(39605),	-- Heroes' Dreadnaught Helmet
-								i(39610),	-- Heroes' Dreadnaught Greathelm
-								i(39578),	-- Heroes' Cryptstalker Headpiece
-							}),
-							i(40618, {	-- Helm of the Lost Vanquisher
-								i(39619),	-- Heroes' Scourgeborne Helmet
-								i(39625),	-- Heroes' Scourgeborne Faceguard
-								i(39491),	-- Heroes' Frostfire Circlet
-								i(39531),	-- Heroes' Dreamwalker Headpiece
-								i(39553),	-- Heroes' Dreamwalker Headguard
-								i(39545),	-- Heroes' Dreamwalker Cover
-								i(39561),	-- Heroes' Bonescythe Helmet
-							}),
+							i(40616),	-- Helm of the Lost Conqueror
+							i(40617),	-- Helm of the Lost Protector
+							i(40618),	-- Helm of the Lost Vanquisher
 							i(39417),	-- Death's Bite
 							i(39422),	-- Staff of the Plaguehound
 							i(39420),	-- Anarchy
@@ -886,271 +515,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					},
 				},
-				n(ZONEDROPS, {
-					i(40410, {	-- Shadow of the Ghoul
-						["crs"] = {
-							16018,	-- Bile Retcher
-							16167,	-- Bony Construct
-							15975,	-- Carrion Spinner
-							15978,	-- Crypt Reaver
-							16146,	-- Death Knight
-							16145,	-- Death Knight Captain
-							16163,	-- Death Knight Cavalier
-							16067,	-- Deathcharger Steed
-							15974,	-- Dread Creeper
-							16036,	-- Frenzied Bat
-							16244,	-- Infectious Ghoul
-							16021,	-- Living Monstrosity
-							16020,	-- Mad Scientist
-							16297,	-- Mutated Grub
-							15981,	-- Naxxramas Acolyte
-							15980,	-- Naxxramas Cultist
-							16165,	-- Necro Knight
-							16017,	-- Patchwork Golem
-							16037,	-- Plagued Bat
-							16447,	-- Plagued Ghoul
-							16154,	-- Risen Squire
-							16164,	-- Shade of Naxxramas
-							16193,	-- Skeletal Smith
-							16029,	-- Sludge Belcher
-							30071,	-- Stitched Colossus
-							16025,	-- Stitched Giant
-							16168,	-- Stoneskin Gargoyle
-							16022,	-- Surgical Assistant
-							15979,	-- Tomb Horror
-							16194,	-- Unholy Axe
-							16215,	-- Unholy Staff
-							16216,	-- Unholy Swords
-							15976,	-- Venom Stalker
-						},
-					}),
-					i(40409, {	-- Boots of the Escaped Captive
-						["crs"] = {
-							16018,	-- Bile Retcher
-							16167,	-- Bony Construct
-							15975,	-- Carrion Spinner
-							15978,	-- Crypt Reaver
-							16146,	-- Death Knight
-							16145,	-- Death Knight Captain
-							16163,	-- Death Knight Cavalier
-							16067,	-- Deathcharger Steed
-							15974,	-- Dread Creeper
-							16036,	-- Frenzied Bat
-							16244,	-- Infectious Ghoul
-							16021,	-- Living Monstrosity
-							16020,	-- Mad Scientist
-							16297,	-- Mutated Grub
-							15981,	-- Naxxramas Acolyte
-							15980,	-- Naxxramas Cultist
-							16165,	-- Necro Knight
-							16017,	-- Patchwork Golem
-							16037,	-- Plagued Bat
-							16447,	-- Plagued Ghoul
-							16154,	-- Risen Squire
-							16164,	-- Shade of Naxxramas
-							16193,	-- Skeletal Smith
-							16029,	-- Sludge Belcher
-							30071,	-- Stitched Colossus
-							16025,	-- Stitched Giant
-							16168,	-- Stoneskin Gargoyle
-							16022,	-- Surgical Assistant
-							15979,	-- Tomb Horror
-							16194,	-- Unholy Axe
-							16215,	-- Unholy Staff
-							16216,	-- Unholy Swords
-							15976,	-- Venom Stalker
-						},
-					}),
-					i(40414, {	-- Shoulderguards of the Undaunted
-						["crs"] = {
-							16018,	-- Bile Retcher
-							16167,	-- Bony Construct
-							15975,	-- Carrion Spinner
-							15978,	-- Crypt Reaver
-							16146,	-- Death Knight
-							16145,	-- Death Knight Captain
-							16163,	-- Death Knight Cavalier
-							16067,	-- Deathcharger Steed
-							15974,	-- Dread Creeper
-							16036,	-- Frenzied Bat
-							16244,	-- Infectious Ghoul
-							16021,	-- Living Monstrosity
-							16020,	-- Mad Scientist
-							16297,	-- Mutated Grub
-							15981,	-- Naxxramas Acolyte
-							15980,	-- Naxxramas Cultist
-							16165,	-- Necro Knight
-							16017,	-- Patchwork Golem
-							16037,	-- Plagued Bat
-							16447,	-- Plagued Ghoul
-							16154,	-- Risen Squire
-							16164,	-- Shade of Naxxramas
-							16193,	-- Skeletal Smith
-							16029,	-- Sludge Belcher
-							30071,	-- Stitched Colossus
-							16025,	-- Stitched Giant
-							16168,	-- Stoneskin Gargoyle
-							16022,	-- Surgical Assistant
-							15979,	-- Tomb Horror
-							16194,	-- Unholy Axe
-							16215,	-- Unholy Staff
-							16216,	-- Unholy Swords
-							15976,	-- Venom Stalker
-						},
-					}),
-					i(40408, {	-- Haunting Call
-						["crs"] = {
-							16018,	-- Bile Retcher
-							16167,	-- Bony Construct
-							15975,	-- Carrion Spinner
-							15978,	-- Crypt Reaver
-							16146,	-- Death Knight
-							16145,	-- Death Knight Captain
-							16163,	-- Death Knight Cavalier
-							16067,	-- Deathcharger Steed
-							15974,	-- Dread Creeper
-							16036,	-- Frenzied Bat
-							16244,	-- Infectious Ghoul
-							16021,	-- Living Monstrosity
-							16020,	-- Mad Scientist
-							16297,	-- Mutated Grub
-							15981,	-- Naxxramas Acolyte
-							15980,	-- Naxxramas Cultist
-							16165,	-- Necro Knight
-							16017,	-- Patchwork Golem
-							16037,	-- Plagued Bat
-							16447,	-- Plagued Ghoul
-							16154,	-- Risen Squire
-							16164,	-- Shade of Naxxramas
-							16193,	-- Skeletal Smith
-							16029,	-- Sludge Belcher
-							30071,	-- Stitched Colossus
-							16025,	-- Stitched Giant
-							16168,	-- Stoneskin Gargoyle
-							16022,	-- Surgical Assistant
-							15979,	-- Tomb Horror
-							16194,	-- Unholy Axe
-							16215,	-- Unholy Staff
-							16216,	-- Unholy Swords
-							15976,	-- Venom Stalker
-						},
-					}),
-					i(40407, {	-- Silent Crusader
-						["crs"] = {
-							16018,	-- Bile Retcher
-							16167,	-- Bony Construct
-							15975,	-- Carrion Spinner
-							15978,	-- Crypt Reaver
-							16146,	-- Death Knight
-							16145,	-- Death Knight Captain
-							16163,	-- Death Knight Cavalier
-							16067,	-- Deathcharger Steed
-							15974,	-- Dread Creeper
-							16036,	-- Frenzied Bat
-							16244,	-- Infectious Ghoul
-							16021,	-- Living Monstrosity
-							16020,	-- Mad Scientist
-							16297,	-- Mutated Grub
-							15981,	-- Naxxramas Acolyte
-							15980,	-- Naxxramas Cultist
-							16165,	-- Necro Knight
-							16017,	-- Patchwork Golem
-							16037,	-- Plagued Bat
-							16447,	-- Plagued Ghoul
-							16154,	-- Risen Squire
-							16164,	-- Shade of Naxxramas
-							16193,	-- Skeletal Smith
-							16029,	-- Sludge Belcher
-							30071,	-- Stitched Colossus
-							16025,	-- Stitched Giant
-							16168,	-- Stoneskin Gargoyle
-							16022,	-- Surgical Assistant
-							15979,	-- Tomb Horror
-							16194,	-- Unholy Axe
-							16215,	-- Unholy Staff
-							16216,	-- Unholy Swords
-							15976,	-- Venom Stalker
-						},
-					}),
-					i(40406, {	-- Inevitable Defeat
-						["crs"] = {
-							16018,	-- Bile Retcher
-							16167,	-- Bony Construct
-							15975,	-- Carrion Spinner
-							15978,	-- Crypt Reaver
-							16146,	-- Death Knight
-							16145,	-- Death Knight Captain
-							16163,	-- Death Knight Cavalier
-							16067,	-- Deathcharger Steed
-							15974,	-- Dread Creeper
-							16036,	-- Frenzied Bat
-							16244,	-- Infectious Ghoul
-							16021,	-- Living Monstrosity
-							16020,	-- Mad Scientist
-							16297,	-- Mutated Grub
-							15981,	-- Naxxramas Acolyte
-							15980,	-- Naxxramas Cultist
-							16165,	-- Necro Knight
-							16017,	-- Patchwork Golem
-							16037,	-- Plagued Bat
-							16447,	-- Plagued Ghoul
-							16154,	-- Risen Squire
-							16164,	-- Shade of Naxxramas
-							16193,	-- Skeletal Smith
-							16029,	-- Sludge Belcher
-							30071,	-- Stitched Colossus
-							16025,	-- Stitched Giant
-							16168,	-- Stoneskin Gargoyle
-							16022,	-- Surgical Assistant
-							15979,	-- Tomb Horror
-							16194,	-- Unholy Axe
-							16215,	-- Unholy Staff
-							16216,	-- Unholy Swords
-							15976,	-- Venom Stalker
-						},
-					}),
-					i(40412, {	-- Ousted Bead Necklace
-						["crs"] = {
-							16018,	-- Bile Retcher
-							16167,	-- Bony Construct
-							15975,	-- Carrion Spinner
-							15978,	-- Crypt Reaver
-							16146,	-- Death Knight
-							16145,	-- Death Knight Captain
-							16163,	-- Death Knight Cavalier
-							16067,	-- Deathcharger Steed
-							15974,	-- Dread Creeper
-							16036,	-- Frenzied Bat
-							16244,	-- Infectious Ghoul
-							16021,	-- Living Monstrosity
-							16020,	-- Mad Scientist
-							16297,	-- Mutated Grub
-							15981,	-- Naxxramas Acolyte
-							15980,	-- Naxxramas Cultist
-							16165,	-- Necro Knight
-							16017,	-- Patchwork Golem
-							16037,	-- Plagued Bat
-							16447,	-- Plagued Ghoul
-							16154,	-- Risen Squire
-							16164,	-- Shade of Naxxramas
-							16193,	-- Skeletal Smith
-							16029,	-- Sludge Belcher
-							30071,	-- Stitched Colossus
-							16025,	-- Stitched Giant
-							16168,	-- Stoneskin Gargoyle
-							16022,	-- Surgical Assistant
-							15979,	-- Tomb Horror
-							16194,	-- Unholy Axe
-							16215,	-- Unholy Staff
-							16216,	-- Unholy Swords
-							15976,	-- Venom Stalker
-						},
-					}),
+				n(ZONE_DROPS, {
+					i(40410),	-- Shadow of the Ghoul
+					i(40409),	-- Boots of the Escaped Captive
+					i(40414),	-- Shoulderguards of the Undaunted
+					i(40408),	-- Haunting Call
+					i(40407),	-- Silent Crusader
+					i(40406),	-- Inevitable Defeat
+					i(40412),	-- Ousted Bead Necklace
 				}),
-				n(-368, { 	-- The Arachnid Quarter
+				n(-368, {	-- The Arachnid Quarter
 					ach(563),	-- The Arachnid Quarter (25 player)
 					cr(15956, e(1601, {	-- Anub'Rekhan
-						["description"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
+						["lore"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
 						["groups"] = {
 							{
 								["achievementID"] = 563,	-- The Arachnid Quarter (25 player)
@@ -1186,7 +563,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(15953, e(1602, {	-- Grand Widow Faerlina
-						["description"] = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
+						["lore"] = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
 						["groups"] = {
 							ach(2140),	-- Momma Said Knock You Out (25 player)
 							{
@@ -1222,7 +599,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(15952, e(1603, {	-- Maexxna
-						["description"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
+						["lore"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
 						["groups"] = {
 							ach(1859),	-- Arachnophobia (25 player)
 							{
@@ -1261,10 +638,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-370, { 	-- The Plague Quarter
+				n(-370, {	-- The Plague Quarter
 					ach(567),	-- The Plague Quarter (25 player)
 					cr(15954, e(1604, {	-- Noth the Plaguebringer
-						["description"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
+						["lore"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
 						["groups"] = {
 							{
 								["achievementID"] = 567,	-- The Plague Quarter (25 player)
@@ -1299,7 +676,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(15936, e(1605, {	-- Heigan the Unclean
-						["description"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
+						["lore"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
 						["groups"] = {
 							ach(2139),	-- The Safety Dance (25 player)
 							{
@@ -1336,7 +713,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(16011, e(1606, {	-- Loatheb
-						["description"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
+						["lore"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
 						["groups"] = {
 							ach(2183),	-- Spore Loser (25 player)
 							{
@@ -1348,31 +725,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["criteriaID"] = 9,			-- Loatheb slain
 							},
 							i(93032),	-- Blighted Spore (PET!)
-							i(40637, {	-- Mantle of the Lost Conqueror
-								i(40450),	-- Valorous Shoulderpads of Faith
-								i(40573),	-- Valorous Redemption Spaulders
-								i(40578),	-- Valorous Redemption Shoulderplates
-								i(40584),	-- Valorous Redemption Shoulderguards
-								i(40424),	-- Valorous Plagueheart Shoulderpads
-								i(40459),	-- Valorous Mantle of Faith
-							}),
-							i(40638, {	-- Mantle of the Lost Protector
-								i(40513),	-- Valorous Earthshatter Spaulders
-								i(40518),	-- Valorous Earthshatter Shoulderpads
-								i(40524),	-- Valorous Earthshatter Shoulderguards
-								i(40530),	-- Valorous Dreadnaught Shoulderplates
-								i(40548),	-- Valorous Dreadnaught Pauldrons
-								i(40507),	-- Valorous Cryptstalker Spaulders
-							}),
-							i(40639, {	-- Mantle of the Lost Vanquisher
-								i(40557),	-- Valorous Scourgeborne Shoulderplates
-								i(40568),	-- Valorous Scourgeborne Pauldrons
-								i(40419),	-- Valorous Frostfire Shoulderpads
-								i(40465),	-- Valorous Dreamwalker Spaulders
-								i(40494),	-- Valorous Dreamwalker Shoulderpads
-								i(40470),	-- Valorous Dreamwalker Mantle
-								i(40502),	-- Valorous Bonescythe Pauldrons
-							}),
+							i(40637),	-- Mantle of the Lost Conqueror
+							i(40638),	-- Mantle of the Lost Protector
+							i(40639),	-- Mantle of the Lost Vanquisher
 							i(40239),	-- The Hand of Nerub
 							i(40244),	-- The Impossible Dream
 							i(40245),	-- Fading Glow
@@ -1386,10 +741,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-369, { 	-- The Military Quarter
+				n(-369, {	-- The Military Quarter
 					ach(569),	-- The Military Quarter (25 player)
 					cr(16061, e(1607, {	-- Instructor Razuvious
-						["description"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
+						["lore"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
 						["groups"] = {
 							{
 								["achievementID"] = 569,	-- The Military Quarter (25 player)
@@ -1424,7 +779,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(16060, e(1608, {	-- Gothik the Harvester
-						["description"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
+						["lore"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
 						["groups"] = {
 							{
 								["achievementID"] = 569,	-- The Military Quarter (25 player)
@@ -1459,7 +814,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(30549, e(1609, {	-- The Four Horsemen
-						["description"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
+						["lore"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
 						["groups"] = {
 							ach(2177),	-- And They Would All Go Down Together (25 player)
 							{
@@ -1476,41 +831,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(40349),	-- Gloves of Peaceful Death
 							i(40347),	-- Zeliek's Gauntlets
 							i(40352),	-- Leggings of Voracious Shadows
-							i(40625, {	-- Breastplate of the Lost Conqueror
-								i(40449),	-- Valorous Robe of Faith
-								i(40569),	-- Valorous Redemption Tunic
-								i(40574),	-- Valorous Redemption Chestpiece
-								i(40579),	-- Valorous Redemption Breastplate
-								i(40458),	-- Valorous Raiments of Faith
-								i(40423),	-- Valorous Plagueheart Robe
-							}),
-							i(40626, {	-- Breastplate of the Lost Protector
-								i(40508),	-- Valorous Earthshatter Tunic
-								i(40514),	-- Valorous Earthshatter Hauberk
-								i(40523),	-- Valorous Earthshatter Chestguard
-								i(40544),	-- Valorous Dreadnaught Breastplate
-								i(40525),	-- Valorous Dreadnaught Battleplate
-								i(40503),	-- Valorous Cryptstalker Tunic
-							}),
-							i(40627, {	-- Breastplate of the Lost Vanquisher
-								i(40559),	-- Valorous Scourgeborne Chestguard
-								i(40550),	-- Valorous Scourgeborne Battleplate
-								i(40418),	-- Valorous Frostfire Robe
-								i(40469),	-- Valorous Dreamwalker Vestments
-								i(40463),	-- Valorous Dreamwalker Robe
-								i(40471),	-- Valorous Dreamwalker Raiments
-								i(40495),	-- Valorous Bonescythe Breastplate
-							}),
+							i(40625),	-- Breastplate of the Lost Conqueror
+							i(40626),	-- Breastplate of the Lost Protector
+							i(40627),	-- Breastplate of the Lost Vanquisher
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								artifact(870),	-- Find Hidden Artifact Skin
 							}),
 						},
 					})),
 				}),
-				n(-367, { 	-- The Construct Quarter
+				n(-367, {	-- The Construct Quarter
 					ach(565),	-- The Construct Quarter (25 player)
 					cr(16028, e(1610, {	-- Patchwerk
-						["description"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
+						["lore"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
 						["groups"] = {
 							ach(1857),	-- Make Quick Werk of Him (25 player)
 							{
@@ -1546,7 +879,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(15931, e(1611, {	-- Grobbulus
-						["description"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
+						["lore"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
 						["groups"] = {
 							{
 								["achievementID"] = 565,	-- The Construct Quarter (25 player)
@@ -1583,7 +916,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(15932, e(1612, {	-- Gluth
-						["description"] = "The foul plague-dog of Naxxramas was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
+						["lore"] = "The foul plague-dog of Naxxramas was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
 						["groups"] = {
 							{
 								["achievementID"] = 565,	-- The Construct Quarter (25 player)
@@ -1594,81 +927,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["criteriaID"] = 10,		-- Gluth slain
 							},
 							i(93029),	-- Gluth's Bone (TOY!)
-							i(40625, {	-- Breastplate of the Lost Conqueror
-								i(40449),	-- Valorous Robe of Faith
-								i(40569),	-- Valorous Redemption Tunic
-								i(40574),	-- Valorous Redemption Chestpiece
-								i(40579),	-- Valorous Redemption Breastplate
-								i(40458),	-- Valorous Raiments of Faith
-								i(40423),	-- Valorous Plagueheart Robe
-							}),
-							i(40626, {	-- Breastplate of the Lost Protector
-								i(40508),	-- Valorous Earthshatter Tunic
-								i(40514),	-- Valorous Earthshatter Hauberk
-								i(40523),	-- Valorous Earthshatter Chestguard
-								i(40544),	-- Valorous Dreadnaught Breastplate
-								i(40525),	-- Valorous Dreadnaught Battleplate
-								i(40503),	-- Valorous Cryptstalker Tunic
-							}),
-							i(40627, {	-- Breastplate of the Lost Vanquisher
-								i(40559),	-- Valorous Scourgeborne Chestguard
-								i(40550),	-- Valorous Scourgeborne Battleplate
-								i(40418),	-- Valorous Frostfire Robe
-								i(40469),	-- Valorous Dreamwalker Vestments
-								i(40463),	-- Valorous Dreamwalker Robe
-								i(40471),	-- Valorous Dreamwalker Raiments
-								i(40495),	-- Valorous Bonescythe Breastplate
-							}),
-							i(40634, {	-- Legplates of the Lost Conqueror
-								i(40577),	-- Valorous Redemption Legplates
-								i(40583),	-- Valorous Redemption Legguards
-								i(40572),	-- Valorous Redemption Greaves
-								i(40422),	-- Valorous Plagueheart Leggings
-								i(40457),	-- Valorous Pants of Faith
-								i(40448),	-- Valorous Leggings of Faith
-							}),
-							i(40635, {	-- Legplates of the Lost Protector
-								i(40522),	-- Valorous Earthshatter War-Kilt
-								i(40512),	-- Valorous Earthshatter Legguards
-								i(40517),	-- Valorous Earthshatter Kilt
-								i(40529),	-- Valorous Dreadnaught Legplates
-								i(40547),	-- Valorous Dreadnaught Legguards
-								i(40506),	-- Valorous Crypstalker Legguards
-							}),
-							i(40636, {	-- Legplates of the Lost Vanquisher
-								i(40556),	-- Valorous Scourgeborne Legplates
-								i(40567),	-- Valorous Scourgeborne Legguards
-								i(40417),	-- Valorous Frostfire Leggings
-								i(40468),	-- Valorous Dreamwalker Trousers
-								i(40493),	-- Valorous Dreamwalker Legguards
-								i(40462),	-- Valorous Dreamwalker Leggings
-								i(40500),	-- Valorous Bonescythe Legplates
-							}),
-							i(40637, {	-- Mantle of the Lost Conqueror
-								i(40450),	-- Valorous Shoulderpads of Faith
-								i(40573),	-- Valorous Redemption Spaulders
-								i(40578),	-- Valorous Redemption Shoulderplates
-								i(40584),	-- Valorous Redemption Shoulderguards
-								i(40424),	-- Valorous Plagueheart Shoulderpads
-								i(40459),	-- Valorous Mantle of Faith
-							}),
-							i(40638, {	-- Mantle of the Lost Protector
-								i(40513),	-- Valorous Earthshatter Spaulders
-								i(40518),	-- Valorous Earthshatter Shoulderpads
-								i(40524),	-- Valorous Earthshatter Shoulderguards
-								i(40530),	-- Valorous Dreadnaught Shoulderplates
-								i(40548),	-- Valorous Dreadnaught Pauldrons
-								i(40507),	-- Valorous Cryptstalker Spaulders
-							}),
-							i(40639, {	-- Mantle of the Lost Vanquisher
-								i(40557),	-- Valorous Scourgeborne Shoulderplates
-								i(40568),	-- Valorous Scourgeborne Pauldrons
-								i(40419),	-- Valorous Frostfire Shoulderpads
-								i(40465),	-- Valorous Dreamwalker Spaulders
-								i(40494),	-- Valorous Dreamwalker Shoulderpads
-								i(40470),	-- Valorous Dreamwalker Mantle
-								i(40502),	-- Valorous Bonescythe Pauldrons
-							}),
+							i(40625),	-- Breastplate of the Lost Conqueror
+							i(40626),	-- Breastplate of the Lost Protector
+							i(40627),	-- Breastplate of the Lost Vanquisher
+							i(40634),	-- Legplates of the Lost Conqueror
+							i(40635),	-- Legplates of the Lost Protector
+							i(40636),	-- Legplates of the Lost Vanquisher
+							i(40637),	-- Mantle of the Lost Conqueror
+							i(40638),	-- Mantle of the Lost Protector
+							i(40639),	-- Mantle of the Lost Vanquisher
 							i(40343),	-- Armageddon
 							i(40208),	-- Cryptfiend's Bite
 							i(40348),	-- Damnation
@@ -1821,7 +1088,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(15928, e(1613, {	-- Thaddius
-						["description"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
+						["lore"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
 						["groups"] = {
 							ach(2179),	-- Shocking! (25 player)
 							ach(2181),	-- Subtraction (25 player)
@@ -1833,31 +1100,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["achievementID"] = 579,	-- The Dedicated Few (25 player)
 								["criteriaID"] = 12,		-- Thaddius slain
 							},
-							i(40634, {	-- Legplates of the Lost Conqueror
-								i(40577),	-- Valorous Redemption Legplates
-								i(40583),	-- Valorous Redemption Legguards
-								i(40572),	-- Valorous Redemption Greaves
-								i(40422),	-- Valorous Plagueheart Leggings
-								i(40457),	-- Valorous Pants of Faith
-								i(40448),	-- Valorous Leggings of Faith
-							}),
-							i(40635, {	-- Legplates of the Lost Protector
-								i(40522),	-- Valorous Earthshatter War-Kilt
-								i(40512),	-- Valorous Earthshatter Legguards
-								i(40517),	-- Valorous Earthshatter Kilt
-								i(40529),	-- Valorous Dreadnaught Legplates
-								i(40547),	-- Valorous Dreadnaught Legguards
-								i(40506),	-- Valorous Cryptstalker Legguards
-							}),
-							i(40636, {	-- Legplates of the Lost Vanquisher
-								i(40556),	-- Valorous Scourgeborne Legplates
-								i(40567),	-- Valorous Scourgeborne Legguards
-								i(40417),	-- Valorous Frostfire Leggings
-								i(40468),	-- Valorous Dreamwalker Trousers
-								i(40493),	-- Valorous Dreamwalker Legguards
-								i(40462),	-- Valorous Dreamwalker Leggings
-								i(40500),	-- Valorous Bonescythe Legplates
-							}),
+							i(40634),	-- Legplates of the Lost Conqueror
+							i(40635),	-- Legplates of the Lost Protector
+							i(40636),	-- Legplates of the Lost Vanquisher
 							i(40300),	-- Spire of Sunset
 							i(40296),	-- Cover of Silence
 							i(40298),	-- Faceguard of the Succumbed
@@ -1871,9 +1116,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-371, { 	-- The Upper Necropolis
+				n(-371, {	-- The Upper Necropolis
 					cr(15989, e(1614, {	-- Sapphiron
-						["description"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
+						["lore"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
 						["groups"] = {
 							ach(573),	-- Sapphiron's Demise (25 player)
 							ach(2147),	-- The Hundred Club (25 player)
@@ -1908,7 +1153,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 					cr(15990, e(1615, {	-- Kel'Thuzad
-						["description"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
+						["lore"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
 						["groups"] = {
 							{
 								["achievementID"] = 1402,	-- Realm First! Conqueror of Naxxramas
@@ -1934,31 +1179,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["achievementID"] = 579,	-- The Dedicated Few (25 player)
 								["criteriaID"] = 6,			-- Kel'Thuzad slain
 							},
-							i(40631, {	-- Crown of the Lost Conqueror
-								i(40576),	-- Valorous Redemption Helm
-								i(40571),	-- Valorous Redemption Headpiece
-								i(40581),	-- Valorous Redemption Faceguard
-								i(40421),	-- Valorous Plagueheart Circlet
-								i(40447),	-- Valorous Crown of Faith
-								i(40456),	-- Valorous Circlet of Faith
-							}),
-							i(40632, {	-- Crown of the Lost Protector
-								i(40516),	-- Valorous Earthshatter Helm
-								i(40510),	-- Valorous Earthshatter Headpiece
-								i(40521),	-- Valorous Earthshatter Faceguard
-								i(40528),	-- Valorous Dreadnaught Helmet
-								i(40546),	-- Valorous Dreadnaught Greathelm
-								i(40505),	-- Valorous Cryptstalker Headpiece
-							}),
-							i(40633, {	-- Crown of the Lost Vanquisher
-								i(40554),	-- Valorous Scourgeborne Helmet
-								i(40565),	-- Valorous Scourgeborne Faceguard
-								i(40416),	-- Valorous Frostfire Circlet
-								i(40461),	-- Valorous Dreamwalker Headpiece
-								i(40473),	-- Valorous Dreamwalker Headguard
-								i(40467),	-- Valorous Dreamwalker Cover
-								i(40499),	-- Valorous Bonescythe Helmet
-							}),
+							i(40631),	-- Crown of the Lost Conqueror
+							i(40632),	-- Crown of the Lost Protector
+							i(40633),	-- Crown of the Lost Vanquisher
 							i(40384),	-- Betrayer of Humanity
 							i(40388),	-- Journey's End
 							i(40383),	-- Calamity's Grasp

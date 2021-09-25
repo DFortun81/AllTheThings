@@ -4,10 +4,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(7, {	-- Mulgore
+		m(MULGORE, {
 			n(FLIGHT_PATHS, {
 				fp(402, {	-- Bloodhoof Village, Mulgore
-					["coord"] = { 47.4, 58.6, 7 },
+					["coord"] = { 47.4, 58.6, MULGORE },
 				}),
 			}),
 		}),

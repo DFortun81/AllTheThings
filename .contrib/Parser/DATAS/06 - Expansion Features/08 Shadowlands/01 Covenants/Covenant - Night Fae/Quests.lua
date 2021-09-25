@@ -4,23 +4,30 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
-		n(-929, {	-- Covenant: Night Fae
+	tier(SL_TIER, {
+		n(-929, {	-- Night Fae
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 			["maps"] = {
-				1701,	-- Heart of the Forest (The Trunk)
-				1702,	-- Heart of the Forest (The Roots)
-				1703,	-- Heart of the Forest (The Canopy
+				THE_TRUNK,	-- Heart of the Forest
+				THE_ROOTS,	-- Heart of the Forest
+				THE_CANOPY,	-- Heart of the Forest
 			},
 			["g"] = {
-				n(QUESTS, {
+				n(QUESTS, sharedData({
+					["customCollect"] = { "SL_COV_NFA", },	-- Night Fae
+					}, {
+					q(63673, {	-- Hunting Amid Houses
+						["sourceQuests"] = { 63672 },	-- A Cry From the Heart
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.3, 38.8, THE_TRUNK },
+					}),
 					-- These quests are not part of the covenant questline chapters, but are Night Fae only
 					q(61058, {	-- Bound in Dreams
 						-- SQ needs confirmation, but this is when i saw the quest pop up.  this happened at Renown 16 for me, even though the soulbind only requires Renown 9 and i had been back to the sanctum many times since hitting that level
 						-- If someone quests on a new Night Fae character they might be able to figure out the SQ(s)
 						["sourceQuests"] = { 59242 },	-- Their New Home
 						["provider"] = { "n", 160482 },	-- Dreamweaver
-						["coord"] = { 33.7, 47.6, 1701 },
+						["coord"] = { 33.7, 47.6, THE_TRUNK },
 						["g"] = {
 							follower(1264),	-- Dreamweaver
 						},
@@ -28,7 +35,7 @@ _.ExpansionFeatures =
 					q(61057, {	-- By Trials Forged
 						["sourceQuests"] = { 60108 },	-- Drust and Ashes
 						["provider"] = { "n", 165659 },	-- Hunt-Captain Korayn
-						["coord"] = { 35.2, 47.4, 1701 },
+						["coord"] = { 35.2, 47.4, THE_TRUNK },
 						["g"] = {
 							follower(1266),	-- Hunt-Captain Korayn
 						},
@@ -36,47 +43,63 @@ _.ExpansionFeatures =
 					q(62544, {	-- From a Dark Place
 						["sourceQuests"] = { 62536 },	-- The Lost of Teldrassil
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.6, 39.0, 1701 },
+						["coord"] = { 44.6, 39.0, THE_TRUNK },
 					}),
 					q(62561, {	-- My Heart is Full
 						["sourceQuests"] = { 60108 },	-- Drust and Ashes
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 47.6, 36.4, 1701 },	-- The Trunk
+						["coord"] = { 47.6, 36.4, THE_TRUNK },
 					}),
 					q(63347, {	-- Night Fae Tactician
 						["description"] = "Requires Renown 22.",
 						["provider"] = { "n", 176096 },	-- Laurel
-						["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
+						["coord"] = { 34.0, 37.0, THE_TRUNK },
+						["timeline"] = {
+							"added 9.0.2.36734",
+							"removed 9.1.0.39226",
+						},
+					}),
+					q(64085, {	-- Night Fae Tactician #2
+						["description"] = "Requires Renown 59.",
+						["provider"] = { "n", 176096 },	-- Laurel
+						["coord"] = { 34.0, 37.0, THE_TRUNK },
 					}),
 					q(63346, {	-- Night Fae Veteran
 						["sourceQuests"] = { 62899 },	-- The Endless Forest
 						["description"] = "Requires Renown 7.",
 						["provider"] = { "n", 176096 },	-- Laurel
-						["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
+						["coord"] = { 34.0, 37.0, THE_TRUNK },
+						["timeline"] = {
+							"added 9.0.2.36734",
+							"removed 9.1.0.39226",
+						},
+					}),
+					q(64322, {	-- Night Fae Veteran #2
+						["description"] = "Requires Renown 43.",
+						["provider"] = { "n", 176096 },	-- Laurel
+						["coord"] = { 34.0, 37.0, THE_TRUNK },
 					}),
 					q(62546, {	-- No Wisp Left Behind (1)
-						-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday (similar to 62536 a couple weeks earlier).
-						-- possibly a Venari requirement? Currently Apprehensive + Rule 4 completed
-						["sourceQuests"] = { 62536 },	-- The Lost of Teldrassil
+						["sourceQuests"] = { 62544 },	-- From a Dark Place
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.6, 39.0, 1701 },
+						["coord"] = { 44.6, 39.0, THE_TRUNK },
 					}),
 					q(62549, {	-- No Wisp Left Behind (2)
 						["sourceQuests"] = { 62546 },	-- No Wisp Left Behind (1)
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.6, 39.0, 1701 },
+						["coord"] = { 44.6, 39.0, THE_TRUNK },
 					}),
 					q(61984, {	-- Replenish the Reservoir
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["isWeekly"] = true,
-						["coord"] = { 33.9, 43.5, 1702 },	-- The Roots
+						["coord"] = { 33.9, 43.5, THE_ROOTS },
 					}),
 					q(61331, {	-- Return Lost Souls (5 soul version)
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["isWeekly"] = true,
-						["coord"] = { 33.9, 43.5, 1701 },	-- The Trunk
+						["coord"] = { 33.9, 43.5, THE_TRUNK },
 					}),
 					q(62858, {	-- Return Lost Souls (10 soul version)
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
@@ -94,17 +117,31 @@ _.ExpansionFeatures =
 					}),
 					q(62860, {	-- Return Lost Souls (20 soul version)
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
-						["description"] = "Requires Renown 32.",
+						["description"] = "Requires Renown 32. Depending on the level of your Queen's Conservatory this will reward higher quality spirits. Rank 5 will grant you an Epic Spirit.",
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["coord"] = { 33.9, 43.5, ARDENWEALD },
 						["isWeekly"] = true,
+						["g"] = {
+							i(177698),	-- Untamed Spirit Ardenweald (Uncommon)
+							i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)
+							i(177700),	-- Greater Untamed Spirit Ardenweald (Epic)
+							i(178879),	-- Greater Dutiful Spirit (Epic)
+							i(178880),	-- Divine Dutiful Spirit (Rare)
+							i(178881),	-- Dutiful Spirit Bastion (Uncommon)
+							i(178877),	-- Divine Martial Spirit (Rare)
+							i(178874),	-- Martial Spirit Maldraxxus (Uncommon)
+							i(178878),	-- Greater Martial Spirit (Epic)
+							i(178884),	-- Greater Prideful Spirit (Epic)
+							i(178883),	-- Divine Prideful Spirit (Rare)
+							i(178882),	-- Prideful Spirit Revendreth(Uncommon)
+						},
 					}),
 					q(62536, {	-- The Lost of Teldrassil
 						-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday.
 						-- i *think* this requires doing "their new home" and then waiting for a daily (or weekly?) reset.  it was the last campaign quest i did, and the next day (which was a weekly reset day) this quest was there
 						["sourceQuests"] = { 59242 },	-- Their New Home
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.6, 39.0, 1701 },	-- The Trunk
+						["coord"] = { 44.6, 39.0, THE_TRUNK },
 					}),
 
 					-- currently in order of the chapters / quest sequence, will alphabetize after verifying all
@@ -118,7 +155,7 @@ _.ExpansionFeatures =
 					q(58104, {	-- Show, Don't Tell
 						["sourceQuests"] = { 61479 },	-- The Boon of Shapes
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 49.5, 40.1, 1701 },
+						["coord"] = { 49.5, 40.1, THE_TRUNK },
 					}),
 					q(58157, {	-- Break a Leg
 						["sourceQuests"] = { 58104 },	-- Show, Don't Tell
@@ -150,32 +187,32 @@ _.ExpansionFeatures =
 					q(62884, {	-- The Forest Will Sing Your Name
 						["sourceQuests"] = { 62883 },	-- Keeper of Great Renown
 						["provider"] = { "n", 176096 },	-- Laurel
-						["coord"] = { 34.3, 36.8, 1701 },
+						["coord"] = { 34.3, 36.8, THE_TRUNK },
 					}),
 					q(62697, {	-- A Call to Service
 						["sourceQuests"] = { 62884 },	-- The Forest Will Sing Your Name
 						["provider"] = { "n", 176096 },	-- Laurel
-						["coord"] = { 34.3, 36.8, 1701 },
+						["coord"] = { 34.3, 36.8, THE_TRUNK },
 					}),
 					q(62890, {	-- Who Shapes the Forest
 						["sourceQuests"] = { 62697 },	-- A Call to Service
 						["provider"] = { "n", 167195 },	-- Blodwyn
-						["coord"] = { 53.8, 6.2, 1701 },
+						["coord"] = { 53.8, 6.2, THE_TRUNK },
 					}),
 					q(62891, {	-- Into the Reservoir
 						["sourceQuests"] = { 62890 },	-- Who Shapes the Forest
 						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-						["coord"] = { 39.7, 55.7, 1701 },
+						["coord"] = { 39.7, 55.7, THE_TRUNK },
 					}),
 					q(62892, {	-- Recover the Lost
 						["sourceQuests"] = { 62891 },	-- Into the Reservoir
 						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-						["coord"] = { 39.7, 55.7, 1701 },
+						["coord"] = { 39.7, 55.7, THE_TRUNK },
 					}),
 					q(62893, {	-- Do What We Cannot
 						["sourceQuests"] = { 62892 },	-- Recover the Lost
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 34.1, 43.6, 1701 },
+						["coord"] = { 34.1, 43.6, THE_TRUNK },
 					}),
 					q(62894, {	-- Flutterback
 						["sourceQuests"] = { 62837 },	-- Hopeful News
@@ -186,17 +223,17 @@ _.ExpansionFeatures =
 					q(62897, {	-- Recovered Souls
 						["sourceQuests"] = { 62894 },	-- Flutterback
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 34.1, 43.6, 1701 },
+						["coord"] = { 34.1, 43.6, THE_TRUNK },
 					}),
 					q(62898, {	-- The First New Growth
 						["sourceQuests"] = { 62897 },	-- Recovered Souls (technically can be acquired after 62837 Hopeful News, but requires Souls reward from 62897 anyway...)
 						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-						["coord"] = { 39.7, 55.7, 1701 },
+						["coord"] = { 39.7, 55.7, THE_TRUNK },
 					}),
 					q(61541, {	-- The Forge of Bonds
 						["sourceQuests"] = { 62898 },	-- The First New Growth
 						["provider"] = { "n", 172431 },	-- Lady Moonberry
-						["coord"] = { 49.5, 40.0, 1701 },
+						["coord"] = { 49.5, 40.0, THE_TRUNK },
 					}),
 					q(63008, {	-- The Forge of Bonds
 					--	TODO: unsure how to pick up this version.  it automatically turned in with 61541
@@ -207,48 +244,92 @@ _.ExpansionFeatures =
 					q(61542, {	-- The Boon of Binding
 						["sourceQuests"] = { 61541 },	-- The Forge of Bonds
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 34.1, 43.6, 1701 },
+						["coord"] = { 34.1, 43.6, THE_TRUNK },
 					}),
 					q(61550, {	-- Strengthening the Bond
 						["sourceQuests"] = { 61542 },	-- The Boon of Binding
 						["provider"] = { "n", 172677 },	-- Niya
-						["coord"] = { 33.7, 45.0, 1701 },
+						["coord"] = { 33.7, 45.0, THE_TRUNK },
 						["g"] = {
 							i(183473),	-- Conflux of Elements
+							i(182651),	-- Destructive Reverberations
+							i(181539),	-- Discipline of the Grove
+							i(182347),	-- Essential Extraction
+							i(182129),	-- Fae Fermata
+							i(183494),	-- Septic Shock
+							i(182335),	-- Spirit Attunement
+							i(182964),	-- Soul Eater
+							i(182767),	-- The Long Summer
+							i(183463),	-- Unnatural Malice
+							i(181775),	-- Way of the Fae
+							i(183199),	-- Withering Ground
+							-- TODO: Get Rest of class specific rewards
+							-- DK
+							i(182113),	-- Fleeting Wind
+							i(182133),	-- Insatiable Appetite
+							-- DH
+							i(182317),	-- Shattered Restoration
+							i(182324),	-- Felfire Haste
+							-- Druid
 							i(183466),	-- Innate Resolve
 							i(183467),	-- Tireless Pursuit
+							-- Hunter
+							i(182584),	-- Cheetah's Vigor
+							i(182469),	-- Rejuvenating Wind
+							-- Mage
+							i(181707),	-- Diverted Energy
+							i(181467),	-- Flow of Time
+							-- Monk
+							i(181512),	-- Dizzying Tumble
+							i(181373),	-- Harm Denial
+							-- Paladin
+							-- Priest
+							i(181840),	-- Light's Inspiration
+							i(181962),	-- Mental Recovery
+							-- Rogue
+							i(183500),	-- Fade to Nothing
+							i(183496),	-- Nimble Fingers
+							-- Shaman
+							i(182106),	-- Refreshing Waters
+							i(182108),	-- Thunderous Paws
+							-- Warlock
+							i(182460),	-- Accrued Vitality
+							i(182466),	-- Shade of Terror
+							-- Warrior
+							i(181469),	-- Indelible Victory
+							i(180847),	-- Inspiring Presence
 							follower(1265),	-- Niya
 						},
 					}),
 					q(62900, {	-- A Conduit for Growth
 						["sourceQuests"] = { 61550 },	-- Strengthening the Bond
 						["provider"] = { "n", 172677 },	-- Niya
-						["coord"] = { 33.7, 45.0, 1701 },
+						["coord"] = { 33.7, 45.0, THE_TRUNK },
 					}),
 					q(62899, {	-- The Endless Forest
 						["sourceQuests"] = { 62900 },	-- A Conduit for Growth
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 34.1, 43.6, 1701 },
+						["coord"] = { 34.1, 43.6, THE_TRUNK },
 					}),
 
 					-- Chapter 2: Torghast (almost all quests in this chapter are shared among all covenants and can be found in the Torghast quest file)
 					q(63030, {	-- The Highlord Calls
 						["sourceQuests"] = { 62899 },	-- The Endless Forest
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 47.4, 36.2, 1701 },
+						["coord"] = { 47.4, 36.2, THE_TRUNK },
 					}),
 
 					-- Chapter 3: The Night Warrior (Renown 5 required to start)
 					q(59179, {	-- Daughter of the Night Warrior (A)
 						["sourceQuests"] = { 60272 },	-- The Weak Link
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.9, 38.8, 1701 },
+						["coord"] = { 44.9, 38.8, THE_TRUNK },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(59246, {	-- Daughter of the Night Warrior (H)
 						["sourceQuests"] = { 60272 },	-- The Weak Link
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.9, 38.8, 1701 },
+						["coord"] = { 44.9, 38.8, THE_TRUNK },
 						["races"] = HORDE_ONLY,
 					}),
 					q(59181, {	-- Into the Maw
@@ -331,7 +412,7 @@ _.ExpansionFeatures =
 					q(59818, {	-- Gathering The Hunt
 						["sourceQuests"] = { 59817 },	-- Winter Be Comin'
 						["provider"] = { "n", 156634 },	-- Winter Queen
-						["coord"] = { 50.9, 29.4, 1703 },	-- The Canopy
+						["coord"] = { 50.9, 29.4, THE_CANOPY },
 					}),
 					q(59819, {	-- Cleansing the Forest
 						["sourceQuests"] = { 59818 },	-- Gathering The Hunt
@@ -349,7 +430,7 @@ _.ExpansionFeatures =
 					q(58610, {	-- The Speaker of Elune
 						["sourceQuests"] = { 59821 },	-- Report to the Queen
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.7, 39.0, 1701 },	-- The Trunk
+						["coord"] = { 44.7, 39.0, THE_TRUNK },
 					}),
 					q(58647, {	-- Broken Webs
 						["sourceQuests"] = { 58610 },	-- The Speaker of Elune
@@ -388,7 +469,7 @@ _.ExpansionFeatures =
 					q(59725, {	-- Archivist on the Edge
 						["sourceQuests"] = { 58871 },	-- Broken Harts
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.0, 37.1, 1701 }, -- The Trunk
+						["coord"] = { 44.0, 37.1, THE_TRUNK },
 					}),
 					q(59063, {	-- Curses!
 						["sourceQuests"] = { 59725 },	-- Archivist on the Edge
@@ -398,17 +479,17 @@ _.ExpansionFeatures =
 					q(59068, {	-- A Secret Never Spoken
 						["sourceQuests"] = { 59063 },	-- Curses!
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.0, 37.1, 1701 },	-- The Trunk
+						["coord"] = { 44.0, 37.1, THE_TRUNK },
 					}),
 					q(59070, {	-- A Sacrifice of Anima
 						["sourceQuests"] = { 59063 },	-- Curses!
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.0, 37.1, 1701 },	-- The Trunk
+						["coord"] = { 44.0, 37.1, THE_TRUNK },
 					}),
 					q(59069, {	-- A Token of Lost Love
 						["sourceQuests"] = { 59063 },	-- Curses!
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.7, 39.0, 1701 },	-- The Trunk
+						["coord"] = { 44.7, 39.0, THE_TRUNK },
 					}),
 					q(59071, {	-- Mending a Broken Hart
 						["sourceQuests"] = {
@@ -417,7 +498,7 @@ _.ExpansionFeatures =
 							59069,	-- A Token of Lost Love
 						},
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.0, 37.1, 1701 },	-- The Trunk
+						["coord"] = { 44.0, 37.1, THE_TRUNK },
 						["g"] = {
 							i(181301),	-- Faewoven Branches
 							i(182172),	-- Equine Soul
@@ -427,14 +508,14 @@ _.ExpansionFeatures =
 					--	TODO: this SQ is wrong, but i'm not sure what the exact prereq is.  i hadn't done 'mending a broken heart,' but i had just done a 'return lost souls' weekly and gotten to 12 Renown when this appeared.  so maybe a strict renown unlock? - quest text says "you have gathered enough anima," so maybe tied to turning in anima weeklies or something?
 						["sourceQuests"] = { 59071 },	-- Mending a Broken Hart
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 47.4, 36.1, 1701 },
+						["coord"] = { 47.4, 36.1, THE_TRUNK },
 					}),
 
 					-- Chapter 6: Drust to Drust (Renown 13 required to start)
 					q(60898, {	-- The Fate of Ara'lon
 						["sourceQuests"] = { 62560 },	-- Growing in Power
 						["provider"] = { "n", 158544 },	-- Lord Herne
-						["coord"] = { 40.9, 72.4, 1701 },	-- The Trunk
+						["coord"] = { 40.9, 72.4, THE_TRUNK },
 					}),
 					q(60910, {	-- Masks of Deception
 						["sourceQuests"] = { 60898 },	-- The Fate of Ara'lon
@@ -460,22 +541,22 @@ _.ExpansionFeatures =
 					q(61061, {	-- Ulfar's Guidance
 						["sourceQuests"] = { 60934 },	-- Report to Lord Herne
 						["provider"] = { "n", 171138 },	-- Ysera
-						["coord"] = { 53.2, 78.3, 1701 },
+						["coord"] = { 53.2, 78.3, THE_TRUNK },
 					}),
 					q(61076, {	-- Into the Flame
 						["sourceQuests"] = { 61061 },	-- Ulfar's Guidance
 						["provider"] = { "n", 141159 },	-- Ulfar
-						["coord"] = { 45.2, 45.8, 896 },	-- Drustvar
+						["coord"] = { 45.2, 45.8, DRUSTVAR },
 					}),
 					q(61102, {	-- Kivarr the Thornspeaker
 						["sourceQuests"] = { 61076 },	-- Into the Flame
 						["provider"] = { "n", 141159 },	-- Ulfar
-						["coord"] = { 45.2, 45.8, 896 },	-- Drustvar
+						["coord"] = { 45.2, 45.8, DRUSTVAR },
 					}),
 					q(61113, {	-- Kivarr's Den
 						["sourceQuests"] = { 61102 },	-- Kivarr the Thornspeaker
 						["provider"] = { "n", 170848 },	-- Lord Herne
-						["coord"] = { 50.9, 80.8, 1701 },	-- The Trunk
+						["coord"] = { 50.9, 80.8, THE_TRUNK },
 					}),
 					q(61701, {	-- Searching the Grove
 						["sourceQuests"] = { 61113 },	-- Kivarr's Den
@@ -542,12 +623,12 @@ _.ExpansionFeatures =
 					q(58445, {	-- Containing the Night
 						["sourceQuests"] = { 61171 },	-- Unbroken Bonds
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.5, 39.1, 1701 }, -- The Trunk
+						["coord"] = { 44.5, 39.1, THE_TRUNK },
 					}),
 					q(58446, {	-- Tracker Tracking
 						["sourceQuests"] = { 58445 },	-- Containing the Night
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.5, 39.1, 1701 }, -- The Trunk
+						["coord"] = { 44.5, 39.1, THE_TRUNK },
 					}),
 					q(59258, {	-- Home of the Tirnenn
 						["sourceQuests"] = { 58446 },	-- Tracker Tracking
@@ -604,7 +685,7 @@ _.ExpansionFeatures =
 					q(59731, {	-- An Expected Guest
 						["sourceQuests"] = { 58452 },	-- Tracking the Shadows
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.5, 39.1, 1701 },
+						["coord"] = { 44.5, 39.1, THE_TRUNK },
 					}),
 					q(59732, {	-- Something Extra for the Winter Queen
 						["sourceQuests"] = { 59731 },	-- An Expected Guest
@@ -614,17 +695,17 @@ _.ExpansionFeatures =
 					q(59739, {	-- The Problem with Containing a Death Loa
 						["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
 						["provider"] = { "n", 122688 },	-- Bwonsamdi
-						["coord"] = { 39.6, 24.7, 863 },	-- Nazmir
+						["coord"] = { 39.6, 24.7, NAZMIR },
 					}),
 					q(59741, {	-- Dark Mojo for a Dark Loa
 						["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
 						["provider"] = { "n", 165968 },	-- Hanzabu
-						["coord"] = { 39.5, 24.7, 863 },	-- Nazmir
+						["coord"] = { 39.5, 24.7, NAZMIR },
 					}),
 					q(59742, {	-- Delaying the Other Side
 						["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
 						["provider"] = { "n", 165968 },	-- Hanzabu
-						["coord"] = { 39.5, 24.7, 863 },	-- Nazmir
+						["coord"] = { 39.5, 24.7, NAZMIR },
 					}),
 					q(59749, {	-- One Little Whisper
 						["sourceQuests"] = {
@@ -633,7 +714,7 @@ _.ExpansionFeatures =
 							59739,	-- The Problem with Containing a Death Loa
 						},
 						["provider"] = { "n", 122688 },	-- Bwonsamdi
-						["coord"] = { 39.6, 24.7, 863 },	-- Nazmir
+						["coord"] = { 39.6, 24.7, NAZMIR },
 						["g"] = {
 							i(179623),	-- Faewoven Drape
 							i(179773),	-- Oakheart Cape
@@ -644,7 +725,7 @@ _.ExpansionFeatures =
 					q(59805, {	-- Maw Manifested
 						["sourceQuests"] = { 59749 },	-- One Little Whisper
 						["provider"] = { "n", 122688 },	-- Bwonsamdi
-						["coord"] = { 39.6, 24.7, 863 },	-- Nazmir
+						["coord"] = { 39.6, 24.7, NAZMIR },
 					}),
 					q(59822, {	-- Tracking a Wild God
 						["sourceQuests"] = { 59805 },	-- Maw Manifested
@@ -653,7 +734,7 @@ _.ExpansionFeatures =
 					}),
 					q(59824, {	-- Loa Rescue
 						["sourceQuests"] = { 59822 },	-- Tracking a Wild God
-						["provider"] = { "n", 171828 },	-- Spirit of Vol'jin
+						["provider"] = { "n", 171806 },	-- Spirit of Vol'jin
 						["coord"] = { 41.0, 64.2, THE_MAW },
 					}),
 					q(59856, {	-- Rezan, Loa of Kings
@@ -677,7 +758,7 @@ _.ExpansionFeatures =
 					q(60189, {	-- We Strike Now
 						["sourceQuests"] = { 59866 },	-- Parting Ways
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.5, 39.1, 1701 },	-- The Trunk
+						["coord"] = { 44.5, 39.1, THE_TRUNK },
 					}),
 					q(60190, {	-- Assault on Darkreach
 						["sourceQuests"] = { 60189 },	-- We Strike Now
@@ -747,8 +828,56 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 60233 },	-- Souls of the Damned
 					}),
 					--]]
-				}),
+				})),
 			},
 		}),
 	}),
+};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(62886),	-- A Call to Service
+		q(60888),	-- Ceremony of Awakening
+		q(60599),	-- Soul Shape
+		q(61554),	-- The Play's The Thing
+		q(63101),	-- XX REUSEME
+	}),
+	n(-10100, {	-- Shadowlands
+		n(-163, {	-- Armor
+			n(-319, {	-- Weapons
+				i(176017),	-- Ardenweald Quest 2H Mace
+				i(176018),	-- Ardenweald Quest 2H Mace
+				i(176019),	-- Ardenweald Quest 2H Mace
+				i(176020),	-- Ardenweald Quest 2H Mace
+				i(176021),	-- Ardenweald Quest 2H Mace
+				i(176047),	-- Ardenweald Quest Warglaives
+				i(176048),	-- Ardenweald Quest Warglaives
+				i(176049),	-- Ardenweald Quest Warglaives
+				i(176050),	-- Ardenweald Quest Warglaives
+				i(176051),	-- Ardenweald Quest Warglaives
+				i(176037),	-- Ardenweald Quest Shield
+				i(176038),	-- Ardenweald Quest Shield
+				i(176039),	-- Ardenweald Quest Shield
+				i(176040),	-- Ardenweald Quest Shield
+				i(176041),	-- Ardenweald Quest Shield
+				i(176027),	-- Ardenweald Quest Polearm
+				i(176028),	-- Ardenweald Quest Polearm
+				i(176029),	-- Ardenweald Quest Polearm
+				i(176030),	-- Ardenweald Quest Polearm
+				i(176031),	-- Ardenweald Quest Polearm
+				i(176022),	-- Ardenweald Quest Bow
+				i(176023),	-- Ardenweald Quest Bow
+				i(176024),	-- Ardenweald Quest Bow
+				i(176025),	-- Ardenweald Quest Bow
+				i(176026),	-- Ardenweald Quest Bow
+				i(176032),	-- Ardenweald Quest Sword
+				i(176033),	-- Ardenweald Quest Sword
+				i(176034),	-- Ardenweald Quest Sword
+				i(176035),	-- Ardenweald Quest Sword
+				i(176036),	-- Ardenweald Quest Sword
+			}),
+		}),
+	}),
+});
+_.HiddenQuestTriggers = {
+	q(62961),	-- Completed after doing Go Beyond! by Marasmius
 };

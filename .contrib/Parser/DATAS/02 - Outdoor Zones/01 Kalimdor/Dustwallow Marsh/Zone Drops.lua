@@ -4,12 +4,17 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(70, {	-- Dustwallow Marsh
-			n(ZONEDROPS, {
+		m(DUSTWALLOW_MARSH, {
+			n(ZONE_DROPS, {
 				i(10822, {	-- Dark Whelpling
 					["crs"] = {
 						4323,	-- Searing Hatchling
 						4324,	-- Searing Whelp
+					},
+				}),
+				n(4834, {	-- Theramore Infiltrator
+					["g"] = {
+						un(REMOVED_FROM_GAME, i(5775)),	-- Pattern: Black Silk Pack
 					},
 				}),
 			}),

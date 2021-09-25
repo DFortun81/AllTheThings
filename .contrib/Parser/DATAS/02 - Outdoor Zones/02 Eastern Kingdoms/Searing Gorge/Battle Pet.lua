@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(32, {	-- Searing Gorge
-			filter(101, {	-- Pet Battle
+		m(SEARING_GORGE, {
+			filter(BATTLE_PETS, {
 				p(427, {	-- Ash Spiderling
 					["crs"] = { 61420 },	-- Ash Spiderling
 				}),
@@ -21,7 +21,7 @@ _.Zones =
 				}),
 				q(31912, {	--Kortas Darkhammer
 					["provider"] = { "n", 66515 },	-- Kortas Darkhammer
-					["coord"] = { 35.2, 27.7, 32 },
+					["coord"] = { 35.2, 27.7, SEARING_GORGE },
 					["isDaily"] = true,
 				}),
 			}),

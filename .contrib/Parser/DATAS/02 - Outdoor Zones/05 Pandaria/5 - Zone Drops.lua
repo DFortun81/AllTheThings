@@ -4,14 +4,13 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
-		n(ZONEDROPS, {
-			["order"] = "04",
+	m(PANDARIA, {
+		n(ZONE_DROPS, {
 			["maps"] = {
-				422,	-- Dread Wastes
-				371,	-- Jade Forest
-				388,	-- Towlong Steppes
-				418,	-- Krasarang Wilds
+				DREAD_WASTES,
+				THE_JADE_FOREST,
+				TOWNLONG_STEPPES,
+				KRASARANG_WILDS,
 			},
 			["g"] = {
 				i(94158, {	-- Big Bag of Zandalari Supplies
@@ -25,10 +24,10 @@ _.Zones =
 					},
 					--[[
 					["maps"] = {
-						422,	-- Dread Wastes
-						371,	-- Jade Forest
-						388,	-- Towlong Steppes
-						418,	-- Krasarang Wilds
+						DREAD_WASTES,
+						THE_JADE_FOREST,
+						TOWNLONG_STEPPES,
+						KRASARANG_WILDS,
 					},
 					--]]
 					["g"] = {
@@ -62,10 +61,10 @@ _.Zones =
 					},
 					--[[
 					["maps"] = {
-						422,	-- Dread Wastes
-						371,	-- Jade Forest
-						388,	-- Towlong Steppes
-						418,	-- Krasarang Wilds
+						DREAD_WASTES,
+						THE_JADE_FOREST,
+						TOWNLONG_STEPPES,
+						KRASARANG_WILDS,
 					},
 					--]]
 				}),
@@ -80,10 +79,10 @@ _.Zones =
 					},
 					--[[
 					["maps"] = {
-						422,	-- Dread Wastes
-						371,	-- Jade Forest
-						388,	-- Towlong Steppes
-						418,	-- Krasarang Wilds
+						DREAD_WASTES,
+						THE_JADE_FOREST,
+						TOWNLONG_STEPPES,
+						KRASARANG_WILDS,
 					},
 					--]]
 				}),
@@ -98,10 +97,10 @@ _.Zones =
 					},
 					--[[
 					["maps"] = {
-						422,	-- Dread Wastes
-						371,	-- Jade Forest
-						388,	-- Towlong Steppes
-						418,	-- Krasarang Wilds
+						DREAD_WASTES,
+						THE_JADE_FOREST,
+						TOWNLONG_STEPPES,
+						KRASARANG_WILDS,
 					},
 					--]]
 				}),
@@ -116,10 +115,10 @@ _.Zones =
 					},
 					--[[
 					["maps"] = {
-						422,	-- Dread Wastes
-						371,	-- Jade Forest
-						388,	-- Towlong Steppes
-						418,	-- Krasarang Wilds
+						DREAD_WASTES,
+						THE_JADE_FOREST,
+						TOWNLONG_STEPPES,
+						KRASARANG_WILDS,
 					},
 					--]]
 				}),
@@ -134,10 +133,10 @@ _.Zones =
 					},
 					--[[
 					["maps"] = {
-						422,	-- Dread Wastes
-						371,	-- Jade Forest
-						388,	-- Towlong Steppes
-						418,	-- Krasarang Wilds
+						DREAD_WASTES,
+						THE_JADE_FOREST,
+						TOWNLONG_STEPPES,
+						KRASARANG_WILDS,
 					},
 					--]]
 				}),

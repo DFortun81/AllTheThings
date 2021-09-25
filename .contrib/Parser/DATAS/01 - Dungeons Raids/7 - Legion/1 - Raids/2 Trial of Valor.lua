@@ -2,11 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(7, {	-- Legion
-	inst(861, { 	-- Trial of Valor
-		["order"] = "02",
+_.Instances = { tier(LEGION_TIER, {
+	inst(861, {	-- Trial of Valor
 		["isRaid"] = true,
-		["coord"] = { 70.4, 69.4, 634 },
+		["coord"] = { 70.4, 69.4, STORMHEIM },
 		["maps"] = { 806, 807, 808 },
 		["lvl"] = 110,
 		["g"] = {
@@ -79,7 +78,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(17,  {	-- LFR
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						i(142541),	-- Drape of the Forgotten Souls
@@ -160,7 +159,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				ach(11394, { 	-- Trial of Valor
+				ach(11394, {	-- Trial of Valor
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(114263, e(1819, {	-- Odyn
@@ -225,7 +224,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(14,  {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				cr(114263, e(1819, {	-- Odyn
@@ -297,7 +296,7 @@ _.Instances = { tier(7, {	-- Legion
 				}))
 			}),
 			d(15,  {	-- Heroic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				n(COMMON_BOSS_DROPS, {
@@ -441,7 +440,7 @@ _.Instances = { tier(7, {	-- Legion
 				}))
 			}),
 			d(16, {	-- Mythic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				cr(114263, e(1819, {	-- Odyn
@@ -599,3 +598,11 @@ _.Instances = { tier(7, {	-- Legion
 		},
 	}),
 })};
+
+_.HiddenQuestTriggers = {
+	q(45235),	-- learning Ensemble: Funerary Plate of the Chosen Dead (143519)
+	q(45234),	-- learning Ensemble: Funerary Plate of the Chosen Dead (normal)
+	
+	q(45230),	-- Chains of the Chosen Dead (Normal)
+	q(45231),	-- Chains of the Chosen Dead (Heroic)
+};

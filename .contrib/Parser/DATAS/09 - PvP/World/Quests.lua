@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	n(-10058, {	-- World
+	pvp(n(-10058, {	-- World
 		n(QUESTS, {
 			q(58274, {	-- Servant of N'Zoth
 				["races"] = ALLIANCE_ONLY,
@@ -41,5 +41,5 @@ _.PVP =
 				},
 			}),
 		}),
-	}),
+	})),
 };

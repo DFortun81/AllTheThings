@@ -4,8 +4,8 @@
 
 _.WorldDrops =
 {
-	tier(3, {	-- Wrath of the Lich King
-		n(-161, { 	-- Toys
+	tier(WOTLK_TIER, {
+		n(-161, {	-- Toys
 			i(37254),	-- Super Simian Sphere
 		}),
 	}),

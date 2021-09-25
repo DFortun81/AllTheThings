@@ -1,4 +1,4 @@
----------------------------------------------------
+ ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
@@ -62,6 +62,11 @@ _.Zones =
 					["provider"] = { "n", 156384 },	-- Huntmaster Constantin
 					["coord"] = { 48.5, 68.5, REVENDRETH },
 				}),
+				q(63982, {	-- Above My Station
+					["sourceQuests"] = { 63980 },	-- Seeking Smugglers
+					["provider"] = { "n", 160090 },	-- Ta'nla the Identifier
+					["coord"] = { 51.4, 82.7, REVENDRETH },
+				}),
 				q(59713, {	-- Active Ingredients
 					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
 					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
@@ -124,6 +129,14 @@ _.Zones =
 					["description"] = "The quest item drops from Depraved and Dredger mobs in the Court of the Harvesters.",
 					["provider"] = { "i", 172957 },	-- Atonement Crypt Key
 				}),
+				q(63681, {	-- Back to The Heart
+					["sourceQuests"] = { 63680 },	-- Out On the Edge
+					["providers"] = {
+						{ "n", 177962 },	-- Lady Moonberry <Court of Night>
+						{ "n", 177964 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
+					},
+					["coord"] = { 34.0, 9.65, REVENDRETH },
+				}),
 				q(58936, {	-- Beast Control
 				--	TODO: verify SQs.  i saw it after turning in 57098, "The Grove of Terror," not sure if it was available before that
 					["provider"] = { "o", 355296 },	-- Bounty: Beast Control
@@ -131,6 +144,7 @@ _.Zones =
 				}),
 				q(58717, {	-- Bell of Remembrance
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["coord"] = { 67.0, 33.6, REVENDRETH },
 					["provider"] = { "i", 174674 },	-- Bell of Remembrance
 					["crs"] = { 160716 },	-- Sinstone Rampager
 				}),
@@ -182,6 +196,19 @@ _.Zones =
 						i(175417),	-- Soul Hunter's Hauberk
 						i(175416),	-- Stoneforged Chestplate
 					},
+				}),
+				q(63646, {	-- Convoy of the Covenants
+					["sourceQuests"] = { 63644 },	-- Dread Tidings
+					["provider"] = { "n", 168898 },	-- Prince Renathal
+					["coord"] = { 22.9, 43.7, REVENDRETH },
+				}),
+				q(63650, {	-- De-Infiltration
+					["sourceQuests"] = {
+						63648,	-- Nal'ragas
+						63649,	-- Spy vs Spy
+					},
+					["provider"] = { "n", 177644 },	-- Prince Renathal
+					["coord"] = { 25.0, 27.9, REVENDRETH },
 				}),
 				q(57164, {	-- Devour This
 					["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
@@ -280,6 +307,11 @@ _.Zones =
 					["provider"] = { "n", 160248 },	-- Archivist Fane
 					["coord"] = { 73.0, 52.0, REVENDRETH },
 				}),
+				q(64092, {	-- Hunting Huln
+					["sourceQuests"] = { 63679 },	-- Magical Mystery Tour!
+					["provider"] = { "n", 177962 },	-- Lady Moonberry
+					["coord"] = { 25.3, 29.0, REVENDRETH },
+				}),
 				q(60514, {	-- Hunting Trophies
 					["sourceQuests"] = { 59014 },	-- King of the Hill
 					["provider"] = { "n", 156384 },	-- Huntmaster Constantin
@@ -324,6 +356,15 @@ _.Zones =
 					["coord"] = { 69.5, 53.3, REVENDRETH },
 				}),
 				q(57471, {	-- It's a Dirty Job
+					["altQuests"] = { 62190 },		-- It's a Dirty Job
+					["sourceQuests"] = { 60509 },	-- Not My Job
+					["provider"] = { "n", 157846 },	-- Rendle
+					["coord"] = { 72.5, 73.2, REVENDRETH },
+				}),
+				q(62190, {	-- It's a Dirty Job
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["description"] = "This quest is available to players with Ember Court rank 2 while doing Dredger quest-line before doing Dirty Jobs quest-line in Revendreth",
+					["altQuests"] = { 57471 },		-- It's a Dirty Job
 					["sourceQuests"] = { 60509 },	-- Not My Job
 					["provider"] = { "n", 157846 },	-- Rendle
 					["coord"] = { 72.5, 73.2, REVENDRETH },
@@ -370,6 +411,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 157650 },	-- Theotar
 				}),
+				q(64091, {	-- Mal'appropriated
+					["sourceQuests"] = { 64092 },	-- Hunting Huln
+					["provider"] = { "n", 179327 },	-- Mal'Ganis
+					["coord"] = { 37.9, 23.4, REVENDRETH },
+				}),
 				q(59715, {	-- Message for Matyas
 					["sourceQuests"] = {
 						59714,	-- A Fine Vintage
@@ -411,9 +457,15 @@ _.Zones =
 						i(175424),	-- Stoneforged Grips
 					},
 				}),
+				q(63648, {	-- Nal'ragas
+					["sourceQuests"] = { 63647 },	-- The Unseen Guests
+					["provider"] = { "n", 177628 },	-- Kael'thas Sunstrider
+					["coord"] = { 36.0, 22.4, REVENDRETH },
+				}),
 				q(61839, {	-- Nipping at the Undergrowth
-					["description"] = "Becomes available in the Endmire north of Darkhaven, after looting Impressionable Gorger Spawn from the Worldedge Gorger.",
+					["description"] = "Becomes available in the Endmire north of Darkhaven after looting Impressionable Gorger Spawn from the Worldedge Gorger.",
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
+					["cost"] = { { "i", 180583, 1 } },	-- Impressionable Gorger Spawn (technically this doesn't stay in your inventory, but i think this is a better way to display it - when it was added as a drop, the rare still showed up as something you needed to do, vs 'cost' that will disappear as soon as this quest is done)
 					["g"] = {
 						i(182590),	-- Vinewormed Coin Pouch
 					}
@@ -441,18 +493,24 @@ _.Zones =
 					["coord"] = { 65.3, 66.2, REVENDRETH },
 				}),
 				q(58093, {	-- Our Forgotten Purpose
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 				--	["sourceQuests"] = {  },	-- TODO: unknown.  possibly just requires 60
 					["isBreadcrumb"] = true,
 					["altQuests"] = { 57918 },	-- The Absolution of Souls
 					["provider"] = { "n", 160248 },	-- Archivist Fane
 					["coord"] = { 72.9, 52.0, REVENDRETH },
 				}),
-				q(62189, {	-- Parasol Components
-					["provider"] = { "o", 349798 },	-- Smuggled Cache
-					["coord"] = { 31.1, 55.1, REVENDRETH },
-					["g"] =  {
-						i(182738),	-- Bundle of Smuggled Parasol Components
+				q(63680, {	-- Out On the Edge
+					["sourceQuests"] = { 64090 },	-- The Big Squeeze
+					["providers"] = {
+						{ "n", 177964 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
+						{ "n", 177967 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
 					},
+					["coord"] = { 35.6, 22.6, REVENDRETH },
+				}),
+				q(62189, {	-- Parasol Components
+					["provider"] = { "i", 182738 },	-- Bundle of Smuggled Parasol Components
+					["coord"] = { 31.1, 55.1, REVENDRETH },
 				}),
 				q(57689, {	-- Prince Renathal
 					["sourceQuests"] = { 59327 },	-- In the Ruin of Rebellion
@@ -505,10 +563,14 @@ _.Zones =
 					["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 					["coord"] = { 70.1, 56.1, REVENDRETH },
 				}),
+				q(60501, {	-- Redemption for the Redeemer
+					["description"] = "Defeat Sire Denathrius on any difficulty in Castle Nathria to start this quest.",
+					["provider"] = { "i", 179358 },	-- Remornia
+				}),
 				q(57694, {	-- Refuge of Revendreth
 					["sourceQuests"] = { 57693 },	-- Torghast, Tower of the Damned
 					["provider"] = { "n", 162688 },	-- Prince Renathal
-					["coord"] = { 25.8, 57.1, 1699 },	-- Sinfall Reaches
+					["coord"] = { 25.8, 57.1, SINFALL_REACHES },
 				}),
 				q(57923, {	-- Ritual of Absolution
 					["sourceQuests"] = {
@@ -533,7 +595,7 @@ _.Zones =
 					["sourceQuests"] = { 57477 },	-- We're Gonna Need a Bigger Dredger
 					["provider"] = { "n", 157898 },	-- Bootus
 					["coord"] = { 72.8, 73.9, REVENDRETH },
-					["g"] =  {
+					["g"] = {
 						i(177656),	-- Boot-a-Charge Flyers
 						i(177655),	-- Air Bootuses
 						i(177654),	-- Bootus Shocks
@@ -601,6 +663,11 @@ _.Zones =
 					["description"] = "Pick up the Hollow Rock at |cFFFFFFFF38.8, 64.3|r, or Stonehead will fling you away when you try to approach the quest.",
 					["coord"] = { 39.2, 65.2, REVENDRETH },
 				}),
+				q(63649, {	-- Spy vs Spy
+					["sourceQuests"] = { 63647 },	-- The Unseen Guests
+					["provider"] = { "n", 177637 },	-- Baroness Vashj
+					["coord"] = { 36.0, 22.4, REVENDRETH },
+				}),
 				q(62044, {	-- Standing Toe To Toe
 					["sourceQuests"] = { 61844 },	-- Hungry Hungry Gorger
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
@@ -643,8 +710,14 @@ _.Zones =
 					["provider"] = { "n", 156644 },	-- Sire Denathrius
 					["coord"] = { 57.4, 49.4, REVENDRETH },
 				}),
+				q(64090, {	-- The Big Squeeze
+					["sourceQuests"] = { 64091 },	-- Mal'appropriated
+					["provider"] = { "n", 177968 },	-- Cudgelface
+					["coord"] = { 38.0, 23.7, REVENDRETH },
+				}),
 				q(57876, {	-- The End of the Beginning
 					["sourceQuests"] = { 58086 },	-- The Master of Lies
+					["altQuests"] = { 62704 },	-- The Threads of Fate (can't do this version on a Skip character)
 					["provider"] = { "n", 165557 },	-- Prince Renathal
 					["coord"] = { 50.2, 28.2, REVENDRETH },
 				}),
@@ -711,6 +784,17 @@ _.Zones =
 						i(175479),	-- Stoneforged Cover
 					},
 				}),
+				q(63656, {	-- The Meaning of Wrath
+					["sourceQuests"] = { 63654 },	-- The Nathrezim
+					["provider"] = { "n", 179978 },	-- The Accuser
+					["coord"] = { 23.1, 45.9, REVENDRETH },
+				}),
+				q(63654, {	-- The Nathrezim
+					["sourceQuests"] = { 63653 },	-- The Power of a Crown
+					["provider"] = { "n", 178337 },	-- The Stonewright
+					["coord"] = { 25.2, 45.1, REVENDRETH },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
 				q(58060, {	-- The Night Market
 					["provider"] = { "n", 160100 },	-- Provisioner Dracho
 					["coord"] = { 61.0, 39.6, REVENDRETH },
@@ -752,6 +836,11 @@ _.Zones =
 					["sourceQuests"] = { 56978 },	-- To Darkhaven
 					["provider"] = { "n", 156374 },	-- Lord Chamberlain
 					["coord"] = { 63.2, 62.1, REVENDRETH },
+				}),
+				q(63647, {	-- The Unseen Guests
+					["sourceQuests"] = { 63646 },	-- Convoy of the Covenants
+					["provider"] = { "n", 165866 },	-- The Stonewright
+					["coord"] = { 34.3, 22.0, REVENDRETH },
 				}),
 				q(57428, {	-- Theotar's Mission
 					["sourceQuests"] = { 57405 },	-- Chasing Madness
@@ -809,7 +898,7 @@ _.Zones =
 				q(60275, {	-- WANTED: Enforcer Kristof
 					["provider"] = { "o", 351874 },	-- Wanted: Enforcer Kristof
 					["coord"] = { 30.6, 48.9, REVENDRETH },
-					["g"] =  {
+					["g"] = {
 						i(181714),	-- Jeweled Hand Fan
 					},
 				}),
@@ -820,7 +909,7 @@ _.Zones =
 				q(60276, {	-- WANTED: Summoner Marcelis
 					["provider"] = { "o", 351888 },	-- Wanted: Summoner Marcelis
 					["coord"] = { 30.8, 49.0, REVENDRETH },
-					["g"] =  {
+					["g"] = {
 						i(180459),	-- Dessication Duster
 					},
 				}),
@@ -830,7 +919,7 @@ _.Zones =
 				--	mob is in the endmire, so possibly after 'the endmire'?  ('the endmire' is also available prior to doing 'a plea to revendreth')
 					["provider"] = { "o", 351889 },	-- Wanted: The Pale Doom
 					["coord"] = { 62.2, 63.5, REVENDRETH },
-					["g"] =  {
+					["g"] = {
 						i(180458),	-- Writ of Tithe Exemption
 					},
 				}),
@@ -872,71 +961,133 @@ _.Zones =
 						i(177665),	-- Spectral Hankerchief
 					},
 				}),
-				h(q(62653, {	-- Stop the Inquisition
-					-- ["provider"] = { "n", ### },	--
-					-- ["coord"] = { ##, ##, REVENDRETH },
-					-- ["sourceQuests"] = { },
-					["isWeekly"] = true,
-				})),
-				-- End of Zone Achievement Quests
-				-- The Duelist's Debt
-				-- Tithes of Darkhaven
-				-- The Final Atonement
-				-- Revelations of the Light
 
+				q(63645, {	-- The Dawnkeep Prisoner
+				--	i think this is only for characters who haven't already killed Denathrius, so will have to find a way to check it off for characters who aren't eligible
+					["sourceQuests"] = { 63644 },	-- Dread Tidings
+					["provider"] = { "n", 168898 },	-- Prince Renathal
+					["coord"] = { 22.9, 43.7, REVENDRETH },
+				}),
 
-				-- Bonus Objectives
-				q(57177, {	-- A Fresh Start
-				--	probably have to be on quest 57175, "Inquisitor Vilhelm's Sinstone" for this to show up
-					["sourceQuests"] = { 59021 },	-- Herald Their Demise
-				}),
-				q(62781, {	-- Ash You Like It (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181334),	-- Essence Extractor [monk]
-					},
-				}),
-				q(62784, {	-- Charlatans (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181185),	-- Soulstalker Breeches [monk]
-					},
-				}),
-				q(59211, {	-- Forgotten Village
-					["description"] = "This Bonus Objective is only available at level 58 or 59.",
-					["isBreadcrumb"] = true,
-					["sourceQuests"] = { 60313 },	-- Dredhollow
-					["lvl"] = { 58, 59 },
-				}),
-				q(62780, {	-- Parasites of Reality (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181183),	-- Soulstalker Grips [monk]
-					},
-				}),
-				q(62783, {	-- Stalking Fear (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181187),	-- Soulstalker Bindings [monk]
-					},
-				}),
-				q(62782, {	-- The Banewood (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						-- TODO: doubt this is a fixed selection per class, remove if we get more data and there's a bunch of items
-						i(181184),	-- Soulstalker Helm [monk]
-					},
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check Rewards they are true for Druid and Monk atm.
+					q(57177, {	-- A Fresh Start
+						["description"] = "Probably have to be on quest 57175, Inquisitor Vilhelm's Sinstone for this to show up.",
+						["sourceQuests"] = { 59021 },	-- Herald Their Demise
+					}),
+					q(62781, {	-- Ash You Like It (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181334),	-- Essence Extractor
+						},
+					}),
+					q(62784, {	-- Charlatans (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181185),	-- Soulstalker Breeches
+						},
+					}),
+					q(59211, {	-- Forgotten Village
+						["description"] = "This Bonus Objective is only available at level 58 or 59.",
+						["isBreadcrumb"] = true,
+						["sourceQuests"] = { 60313 },	-- Dredhollow
+						["lvl"] = { 58, 59 },
+					}),
+					q(62780, {	-- Parasites of Reality (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181183),	-- Soulstalker Grips
+						},
+					}),
+					q(62783, {	-- Stalking Fear (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181187),	-- Soulstalker Bindings
+						},
+					}),
+					q(62782, {	-- The Banewood (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181184),	-- Soulstalker Helm
+						},
+					}),
 				}),
 			}),
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(58067),	-- [DNT] DO NOT USE - Template Quest
+		q(62987),	-- [DNT] Test Quest
+		q(58607),	-- [DNT] Tracking Quest
+		q(58855),	-- [DNT] Tracking Quest
+		q(58338),	-- [NYI] Sinstone Mining
+		q(60001),	-- [NYI] The Sword in the Stone
+		q(57099),	-- A Dreadful Roundup
+		q(58400),	-- Break the Barrier
+		q(57172),	-- Break Their Will
+		q(58399),	-- Clear the Skies
+		q(61087),	-- Delayed Delivery: Old Gate Parcel
+		q(58402),	-- Destroy Siege Weapons
+		q(57185),	-- Dutybound
+		q(57100),	-- Feeding Time is Over
+		q(58405),	-- Find KT's Phylactery
+		q(58644),	-- Gather Our Forces
+		q(58396),	-- Interrogate Baddies
+		q(58404),	-- Kill Elites in Phase
+		q(57414),	-- Mount Up Test
+		q(58401),	-- Ooze Kills
+		q(60228),	-- Sinstone Delivery TBD
+		q(58397),	-- Steal Supplies
+		q(58403),	-- Supercharge Kael'thas
+		q(58328),	-- TBD
+		q(60227),	-- TBD Soulguard Torch
+		q(57228),	-- The Assault on Dreadhollow
+	}),
+	n(-10100, {	-- Shadowlands
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(175420),	-- Slippers of Pained Absolution
+				i(175490),	-- Gloves of Pained Absolution
+				i(175501),	-- Shoulders of Pained Absolution
+				i(178074),	-- Cover of Pained Absolution
+			}),
+			n(-44, {	-- Leather
+				i(175422),	-- Nightcloaked Boots
+				i(175488),	-- Nightcloaked Grips
+				i(175499),	-- Nightcloaked Shoulderpads
+				i(178076),	-- Nightcloaked Cover
+			}),
+			n(-45, {	-- Mail
+				i(175421),	-- Soul Hunter's  Sabatons
+				i(175491),	-- Soul Hunter's Grips
+				i(175502),	-- Soul Hunter's Mantle
+				i(178075),	-- Soul Hunter's Cover
+			}),
+			n(-46, {	-- Plate
+				i(175419),	-- Stoneforged Greatboots
+				i(175489),	-- Stoneforged Gauntlets
+				i(175500),	-- Stoneforged Shoulderguards
+				i(178073),	-- Stoneforged Helm
+			}),
+		}),
+		n(-319, {	-- Weapons
+			i(184325),	-- Sinfall Quickblade
+			i(184514),	-- Sinfall Spellbinder's Kris
+			i(184330),	-- Sinfall Enchanted Elixir Bottle
+			i(184327),	-- Sinfall Redeemer's Morningstar
+			i(184323),	-- Sinfall Wing-Glaive
+			i(184329),	-- Sinfall Kite Shield
+			i(184321),	-- Sinfall Skirmisher's Poleaxe
+			i(184328),	-- Sinfall Defender's Halberd
+			i(184324),	-- Sinfall Fencer's Rapier
+			i(184322),	-- Sinfall Blunderbus
+		}),
+	}),
+});

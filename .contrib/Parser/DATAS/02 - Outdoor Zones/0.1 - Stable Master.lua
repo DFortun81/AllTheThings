@@ -1,10 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+--[[
 _.Zones =
 {
-	n(-48, { 	-- Stable Master
+	n(-48, {	-- Stable Master
+		["description"] = "Any one of the 300+ Stable Masters out in the world can get you this item.",
+		["icon"] = "Interface\\Icons\\garrison_building_stables",
 		["groups"] = {
 			i(37460, {	-- Rope Pet Leash
 				["crs"] = {
@@ -211,7 +213,6 @@ _.Zones =
 				},
 			}),
 		},
-		["description"] = "Any one of the 300+ Stable Masters out in the world can get you this item.",
-		["icon"] = "Interface\\Icons\\garrison_building_stables",
 	}),
 };
+--]]

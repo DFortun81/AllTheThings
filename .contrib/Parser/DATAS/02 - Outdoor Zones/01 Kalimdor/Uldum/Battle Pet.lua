@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(249, {	-- Uldum
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(484, {	-- Desert Spider
 					["crs"] = { 62186 },	-- Desert Spider
 				}),

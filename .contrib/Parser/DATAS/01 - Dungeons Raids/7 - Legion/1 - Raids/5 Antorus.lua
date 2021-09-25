@@ -3,11 +3,10 @@
 -----------------------------------------------------
 
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
-_.Instances = { tier(7, {	-- Legion
+_.Instances = { tier(LEGION_TIER, {
 	inst(946, {	-- Antorus, the Burning Throne
 		["isRaid"] = true,
 		["coord"] = { 54.9, 62.3, 885 },
-		["order"] = "05",
 		["maps"] = {
 			909,
 			910,
@@ -104,7 +103,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						i(152084),	-- Gloves of Abhorrent Strategies
@@ -480,7 +479,7 @@ _.Instances = { tier(7, {	-- Legion
 								{"isnt", "c"},	-- Exclude Tier Set Pieces
 								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
 								{"exclude", "itemID",
-									152094, 153115, 	-- Exclude Taeshalach, Scythe of the Unmaker
+									152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
 									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
 									155831,	-- Pantheon's Blessing
 								},
@@ -516,7 +515,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(152084),	-- Gloves of Abhorrent Strategies
 					i(152085),	-- Cuffs of the Viridian Flameweavers
 					i(153018),	-- Corrupted Mantle of the Felseekers
@@ -885,7 +884,7 @@ _.Instances = { tier(7, {	-- Legion
 								{"isnt", "c"},	-- Exclude Tier Set Pieces
 								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
 								{"exclude", "itemID",
-									152094, 153115, 	-- Exclude Taeshalach, Scythe of the Unmaker
+									152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
 									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
 									155831,	-- Pantheon's Blessing
 								},
@@ -921,7 +920,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(152084),	-- Gloves of Abhorrent Strategies
 					i(152085),	-- Cuffs of the Viridian Flameweavers
 					i(153018),	-- Corrupted Mantle of the Felseekers
@@ -1295,7 +1294,7 @@ _.Instances = { tier(7, {	-- Legion
 								{"isnt", "c"},	-- Exclude Tier Set Pieces
 								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
 								{"exclude", "itemID",
-									152094, 153115, 155880, 	-- Exclude Taeshalach, Scythe of the Unmaker (Both)
+									152094, 153115, 155880,	-- Exclude Taeshalach, Scythe of the Unmaker (Both)
 									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
 									155831,	-- Pantheon's Blessing
 								},
@@ -1331,7 +1330,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(152084),	-- Gloves of Abhorrent Strategies
 					i(152085),	-- Cuffs of the Viridian Flameweavers
 					i(153018),	-- Corrupted Mantle of the Felseekers

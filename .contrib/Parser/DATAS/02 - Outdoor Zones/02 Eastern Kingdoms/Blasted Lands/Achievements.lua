@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(17, {	-- Blasted Lands
+		m(BLASTED_LANDS, {
 			n(ACHIEVEMENTS, {
 				ach(4909, {	-- Blasted Lands Quests
 					crit(1, {	-- Razelikh

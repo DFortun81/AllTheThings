@@ -2,13 +2,13 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(4, {	-- Cataclysm
-	inst(185, { 	-- Well of Eternity
+_.Instances = { tier(CATA_TIER, {
+	inst(185, {	-- Well of Eternity
 		["lvl"] = 85,
 		["mapID"] = 398,
 		["coords"] = {
-			{ 22.9, 64.4, 75 },	-- dungeon entrance
-			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
+			{ 22.9, 64.4, CAVERNS_OF_TIME },	-- dungeon entrance
+			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 		},
 		["g"] = {
 			n(QUESTS, {
@@ -49,7 +49,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					["sourceQuests"] = { 30099 },	-- In Unending Numbers
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				["crs"] = {
 					55654,	-- Corrupted Arcanist
 					55656,	-- Dreadlord Defender

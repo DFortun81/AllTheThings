@@ -2,11 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
+_.Instances = { tier(WOTLK_TIER, {
 	inst(279, {	-- The Culling of Stratholme
 		["coords"] = {
-			{ 56.9, 82.4, 75 },	-- dungeon entrance
-			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
+			{ 56.9, 82.4, CAVERNS_OF_TIME },	-- dungeon entrance
+			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 		},
 		["mapID"] = 130,
 		["maps"] = { 131 },
@@ -30,7 +30,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 			}),
-			n(ZONEDROPS, {
+			n(ZONE_DROPS, {
 				i(37115, {	-- Crusader's Square Pauldrons
 					["crs"] = {
 						27731,	-- Acolyte
@@ -122,7 +122,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37682),	-- Bindings of Dark Will
 					i(37088),	-- Spiked Metal Cilice
 					i(37095),	-- Waistband of the Thuzadin
-					i(157563), 	-- Freshly Sewn Leggings
+					i(157563),	-- Freshly Sewn Leggings
 				})),
 				cr(26532, e(613, {	-- Chrono-Lord Epoch
 					crit(2, {	-- Chrono-Lord Epoch
@@ -192,7 +192,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37682),	-- Bindings of Dark Will
 						i(37088),	-- Spiked Metal Cilice
 						i(37095),	-- Waistband of the Thuzadin
-						i(157563), 	-- Freshly Sewn Leggings
+						i(157563),	-- Freshly Sewn Leggings
 					})),
 					cr(26532, e(613, {	-- Chrono-Lord Epoch
 						crit(2, {	-- Chrono-Lord Epoch

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -507,7 +507,7 @@ namespace ATT
         /// <returns>Whether or not the file is blacklisted.</returns>
         static bool IsFileBlacklisted(FileInfo file)
         {
-            return BLACKLISTED_FILE_EXTENSIONS.ContainsKey(file.Extension.ToLower()) 
+            return BLACKLISTED_FILE_EXTENSIONS.ContainsKey(file.Extension.ToLower())
                 || BLACKLISTED_FILE_NAMES.ContainsKey(file.Name.ToLower());
         }
     }

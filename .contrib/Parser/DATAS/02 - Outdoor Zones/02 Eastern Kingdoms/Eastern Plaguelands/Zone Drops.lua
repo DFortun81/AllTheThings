@@ -5,9 +5,9 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(23, {	-- Eastern Plaguelands
-			n(ZONEDROPS, {
-				i(61387, { 	-- Hidden Stash
+		m(EASTERN_PLAGUELANDS, {
+			n(ZONE_DROPS, {
+				i(61387, {	-- Hidden Stash
 					["description"] = "Before being able to farm for this companion, players must complete a quest chain from Fiona. When asked to choose a buff from the carriage, choose Fiona's Lucky Charm. This gives a buff with a blue rabbit's foot while in the zone.",
 					["g"] = {
 						i(66076),	-- Mr. Grubbs Pet
@@ -30,6 +30,11 @@ _.Zones =
 						15162,	-- Scarlet Inquisitor
 					},
 					["u"] = REMOVED_FROM_GAME,
+				}),
+				i(14477, {	-- Pattern: Ghostweave Gloves
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
+					["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
+					["crs"] = { 8538 },	-- Unseen Servant
 				}),
 				i(14485, {	-- Pattern: Wizardweave Leggings
 					["crs"] = { 8551 },	-- Dark Summoner

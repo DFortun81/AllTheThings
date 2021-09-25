@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9958, {	-- Player vs Player
+	pvp(n(-9958, {	-- Player vs Player
 		n(-9984, {	-- Warsong Gulch
 			["maps"] = {
 				859,	-- Warsong Gulch (brawl?)
@@ -58,5 +58,5 @@ _.Achievements =
 				}),
 			},
 		}),
-	}),
+	})),
 };

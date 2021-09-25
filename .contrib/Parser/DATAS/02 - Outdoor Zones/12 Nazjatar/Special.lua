@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-77, {	-- Special
+		n(SPECIAL, {
 			i(169201, {	-- Fabious
 				["description"] = "|c00CC2222!!DO NOT KILL!!|r\n|cFFFFD700Fabious|r spawns every couple hours, walks around for a couple minutes, then disappears. Use the |cFFFFD700S.E.L.F.I.E. Camera MkII|r to take a picture with him for the mount.",
 				["cr"] = 65090,	-- Fabious

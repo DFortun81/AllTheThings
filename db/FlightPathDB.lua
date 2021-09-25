@@ -1,4 +1,6 @@
 select(2, ...).FlightPathDB = {
+	-- Uncomment the global comment and /rl to see which Flight Paths are not properly Sourced (shows up as *NEW*)
+	--[[]]
 	nil, -- [1]
 	{
 		["name"] = "Stormwind, Elwynn",
@@ -193,16 +195,23 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Splintertree Post, Ashenvale",
 		["faction"] = 1,
 	}, -- [61]
+	-- Two druid-only 'flight paths' which come back as flight paths but do not have flight masters nor show up on Flight Master maps so cannot be 'collected'
 	{
 		["u"] = 1,	-- NEVER_IMPLEMENTED
 		["name"] = "Nighthaven, Moonglade",
 		["faction"] = 2,
-	}, -- [62]
+		["coord"] = { 44.0, 45.4, 80 },
+		["c"] = { 11, }, -- Druid
+		["description"] = "This is registered as a flight path in the game data, but does not show on any flight maps, and cannot be collected.",
+	},	-- [62]
 	{
 		["u"] = 1,	-- NEVER_IMPLEMENTED
 		["name"] = "Nighthaven, Moonglade",
 		["faction"] = 1,
-	}, -- [63]
+		["coord"] = { 44.2, 45.6, 80 },
+		["c"] = { 11, }, -- Druid
+		["description"] = "This is registered as a flight path in the game data, but does not show on any flight maps, and cannot be collected.",
+	},	-- [63]
 	nil, -- [64]
 	{
 		["name"] = "Talonbranch Glade, Felwood",
@@ -472,11 +481,6 @@ select(2, ...).FlightPathDB = {
 	[541] = {
 		["name"] = "Mirkfallon Post, Stonetalon Mountains",
 		["faction"] = 2,
-	},
-	[2162] = {
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Devoted Sanctuary, Vol'dun",
-		["faction"] = 0,
 	},
 	[2164] = {
 		["name"] = "Isle of Fangs, Zuldazar",
@@ -850,10 +854,6 @@ select(2, ...).FlightPathDB = {
 	[633] = {
 		["name"] = "Dustwind Dig, Badlands",
 		["faction"] = 2,
-	},
-	[2530] = {
-		["name"] = "Dreamsong Fenn, Ardenweald",
-		["u"] = 1,	-- NEVER_IMPLEMENTED
 	},
 	[634] = {
 		["name"] = "Dragon's Mouth, Badlands",
@@ -1462,11 +1462,6 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Honor's Stand, Southern Barrens",
 		["faction"] = 2,
 	},
-	[2071] = {
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Dreadpearl, Zuldazar",
-		["faction"] = 0,
-	},
 	[388] = {
 		["name"] = "Northwatch Hold, Southern Barrens",
 		["faction"] = 2,
@@ -1892,10 +1887,6 @@ select(2, ...).FlightPathDB = {
 	[2561] = {
 		["name"] = "Renounced Bastille, Maldraxxus",
 	},
-	[2565] = {
-		["name"] = "Starlit Overlook, Ardenweald",
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-	},
 	[2569] = {
 		["name"] = "Plague Watch, Maldraxxus",
 	},
@@ -1980,13 +1971,6 @@ select(2, ...).FlightPathDB = {
 			3, -- [1]
 		},
 	},
-	[1849] = {
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Dalaran",
-		["c"] = {
-			3, -- [1]
-		},
-	},
 	[1850] = {
 		["name"] = "Eastern Highmountain",
 		["c"] = {
@@ -2027,6 +2011,9 @@ select(2, ...).FlightPathDB = {
 			6, -- [1]
 		},
 		["faction"] = 0,
+		["sourceQuests"] = {
+			39017,	-- HQT representing if the player has completed any of their artifacts (assumed)
+		},
 	},
 	[1863] = {
 		["name"] = "Hafr Fjall, Stormheim",
@@ -2085,11 +2072,6 @@ select(2, ...).FlightPathDB = {
 	},
 	[2584] = {
 		["name"] = "Glitterfall Basin, Ardenweald",
-	},
-	[2059] = {
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Southwind Village, Silithus",
-		["faction"] = 1,
 	},
 	[2529] = {
 		["name"] = "Hero's Rest, Bastion",
@@ -2150,11 +2132,6 @@ select(2, ...).FlightPathDB = {
 	[2056] = {
 		["name"] = "Fallhaven, Drustvar",
 		["faction"] = 2,
-	},
-	[2066] = {
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Atal'Gral, Zuldazar",
-		["faction"] = 0,
 	},
 	[2442] = {
 		["coord"] = {
@@ -2341,9 +2318,21 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Zhu's Watch, Krasarang Wilds",
 		["faction"] = 0,
 	},
+	[1928] = {
+		["name"] = "Krokul Hovel, Krokuun",
+		["faction"] = 0,
+	},
+	[1967] = {
+		["name"] = "Shattered Fields, Krokuun",
+		["faction"] = 0,
+	},
 	[1975] = {
 		["name"] = "Zeb'ahari, Zuldazar",
 		["faction"] = 1,
+	},
+	[1976] = {
+		["name"] = "Destiny Point, Krokuun",
+		["faction"] = 0,
 	},
 	[247] = {
 		["name"] = "Stars' Rest, Dragonblight",
@@ -2383,6 +2372,18 @@ select(2, ...).FlightPathDB = {
 	},
 	[1982] = {
 		["name"] = "Triumvirate's End, Mac'Aree",
+		["faction"] = 0,
+	},
+	[1988] = {
+		["name"] = "Hope's Landing, Antoran Wastes",
+		["faction"] = 0,
+	},
+	[1992] = {
+		["name"] = "Light's Purchase, Antoran Wastes",
+		["faction"] = 0,
+	},
+	[1993] = {
+		["name"] = "The Veiled Den, Antoran Wastes",
 		["faction"] = 0,
 	},
 	[992] = {
@@ -2558,11 +2559,6 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Skysea Ridge, Gorgrond",
 		["faction"] = 0,
 	},
-	[1567] = {
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Temple of Karabor, Shadowmoon Valley",
-		["faction"] = 2,
-	},
 	[537] = {
 		["name"] = "Razor Hill, Durotar",
 		["faction"] = 1,
@@ -2611,6 +2607,76 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Gao-Ran Battlefront, Townlong Steppes",
 		["faction"] = 0,
 	},
+	[2698] = {
+		["name"] = "Keeper's Respite, Korthia",
+	},
+	[2700] = {
+		["name"] = "Ve'nari's Refuge, The Maw",
+	},
+	[2703] = {
+		["name"] = "Tazavesh, the Veiled Market",
+	},
+	-- Kyrian Travel Network Nodes
+	[2626] = {
+		["name"] = "Hero's Rest, Bastion",
+	},
+	[2630] = {
+		["name"] = "Aspirant's Rest, Bastion",
+	},
+	[2625] = {
+		["name"] = "Elysian Hold, Bastion",
+	},
+	[2631] = {
+		["name"] = "Xandaria's Vigil, Bastion",
+	},
+	[2634] = {
+		["name"] = "Seat of Eternal Hymns, Bastion",
+	},
+	[2633] = {
+		["name"] = "Temple of Purity, Bastion",
+	},
+	[2632] = {
+		["name"] = "Sagehaven, Bastion",
+	},
+	[2636] = {
+		["name"] = "Terrace of the Collectors, Bastion",
+	},
+	[2635] = {
+		["name"] = "Temple of Humility, Bastion",
+	},
+	--]]
+
+	-- Never Implemented Flight Paths (in-game data says they exist but also that's a lie)
+	[1567] = {
+		["u"] = 1,	-- NEVER_IMPLEMENTED
+		["name"] = "Temple of Karabor, Shadowmoon Valley",
+		["faction"] = 2,
+	},
+	[1849] = {
+		["u"] = 1,	-- NEVER_IMPLEMENTED
+		["name"] = "Dalaran",
+		["c"] = { 3, }, -- Hunter
+	},
+	[2059] = {
+		["u"] = 1,	-- NEVER_IMPLEMENTED
+		["name"] = "Southwind Village, Silithus",
+		["faction"] = 1,
+	},
+	[2066] = {
+		["u"] = 1,	-- NEVER_IMPLEMENTED
+		["name"] = "Atal'Gral, Zuldazar",
+		["faction"] = 0,
+	},
+	[2071] = {
+		["u"] = 1,	-- NEVER_IMPLEMENTED
+		["name"] = "Dreadpearl, Zuldazar",
+		["faction"] = 0,
+	},
+	[2162] = {
+		["u"] = 1,	-- NEVER_IMPLEMENTED
+		["name"] = "Devoted Sanctuary, Vol'dun",
+		["faction"] = 0,
+	},
 	[2401] = {
 		["name"] = "Alliance Outpost, Exile's Reach Outpost",
 		["faction"] = 2,
@@ -2622,5 +2688,18 @@ select(2, ...).FlightPathDB = {
 		["faction"] = 2,
 		["u"] = 1,	-- NEVER_IMPLEMENTED
 		-- TODO: likely requires customCollect/sourceQuests/altQuests?
+	},
+	[2530] = {
+		["name"] = "Dreamsong Fenn, Ardenweald",
+		["u"] = 1,	-- NEVER_IMPLEMENTED
+	},
+	[2555] = {
+		["name"] = "The Maw",
+		["faction"] = 0,
+		["u"] = 1,	-- NEVER_IMPLEMENTED
+	},
+	[2565] = {
+		["name"] = "Starlit Overlook, Ardenweald",
+		["u"] = 1,	-- NEVER_IMPLEMENTED
 	},
 };

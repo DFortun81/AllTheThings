@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(21, {	-- Silverpine Forest
-			filter(101, {	-- Pet Battle
+		m(SILVERPINE_FOREST, {
+			filter(BATTLE_PETS, {
 				p(455, {	-- Blighted Squirrel
 					["crs"] = { 61890 },	-- Blighted Squirrel
 				}),

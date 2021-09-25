@@ -78,7 +78,7 @@ _.Achievements =
 			ach(8977),		-- Lineage of Power
 			ach(8974),		-- More Like Wrecked-us
 			ach(10043, {	-- Mythic: Archimonde
-				title(319),		-- ,Defiler's End
+				title(319),		-- , Defiler's End
 			}),
 			ach(8956),		-- Mythic: Beastlord Darmac
 			ach(8973, {		-- Mythic: Blackhand's Crucible
@@ -135,7 +135,7 @@ _.Achievements =
 			ach(8986, {		-- The Walled City
 				crit(1),		-- Kargath Bladefist
 				crit(2),		-- The Butcher
-				crit(3),		-- 	Brackenspore
+				crit(3),		-- Brackenspore
 			}),
 			ach(8982),		-- There's Always a Bigger Train
 			ach(10012),		-- This Land Was Green and Good Until...

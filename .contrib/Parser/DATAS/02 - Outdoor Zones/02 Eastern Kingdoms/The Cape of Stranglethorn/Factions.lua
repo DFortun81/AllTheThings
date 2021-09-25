@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(210, {	-- The Cape of Stranglethorn
+		m(THE_CAPE_OF_STRANGLETHORN, {
 			n(FACTIONS, {
 				faction(87, {	-- Bloodsail Buccaneers
 					["collectible"] = false,
@@ -13,13 +13,13 @@ _.Zones =
 						n(QUESTS, {
 							q(1036,  {	-- Avast Ye, Scallywag
 								["provider"] = { "n", 43454 },	-- "Good-Boy" Bruce
-								["coord"] = { 41.6, 61.2, 210 },
+								["coord"] = { 41.6, 61.2, THE_CAPE_OF_STRANGLETHORN },
 								["minReputation"] = { 87, FRIENDLY }, -- Bloodsail Buccaneers
 								["isBreadcrumb"] = true,
 							}),
 							q(4621,  {	-- Avast Ye, Admiral!
 								["provider"] = { "n", 2546 },	-- Fleet Master Firallon
-								["coord"] = { 46.7, 95.2, 210 },
+								["coord"] = { 46.7, 95.2, THE_CAPE_OF_STRANGLETHORN },
 								["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
 								["g"] = {
 									i(12185),	-- Bloodsail Admiral's Hat
@@ -27,7 +27,7 @@ _.Zones =
 							}),
 							q(9272, {	-- Dressing the Part
 								["provider"] = { "n", 2546 },	-- Fleet Master Firallon
-								["coord"] = { 46.6, 95.2, 210 },
+								["coord"] = { 46.6, 95.2, THE_CAPE_OF_STRANGLETHORN },
 								["minReputation"] = { 87, NEUTRAL },
 								["g"] = bubbleDown({["collectible"] = false }, {
 									i(22746, {	-- Buccaneer's Uniform

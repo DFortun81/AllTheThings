@@ -1,12 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- #if AFTER MOP
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHADOWMOON_VALLEY, {
-			filter(101, {	-- Pet Battle
+			filter(BATTLE_PETS, {
 				p(425, {	-- Ash Viper
 					["crs"] = { 61385 },	-- Ash Viper
 				}),
@@ -39,7 +39,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
 				}),
-				q(31926, { 	-- Grand Master Antari
+				q(31926, {	-- Grand Master Antari
 					["sourceQuests"] = { 31920 },	-- Grand Master Antari
 					["isDaily"] = true,
 					["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
@@ -50,5 +50,6 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+-- #endif

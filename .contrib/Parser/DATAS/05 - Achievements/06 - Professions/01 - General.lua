@@ -22,9 +22,6 @@ _.Achievements =
 				h(i(116249)),	-- Frostwall Mines, Level 3 [Blueprints]
 			}),
 			ach(9087),		-- Draenor Master of All
-			ach(10585, {	-- Fel-Smelter
-				crit(1),		-- Firing Up the Forge
-			}),
 			ach(12740, {	-- Full of Scrap!
 				ach(12739),		-- Scraptastic!
 				ach(12738),		-- Holy Scrap!
@@ -35,7 +32,7 @@ _.Achievements =
 			ach(13056, {	-- Giving a Scrap (H)
 				["races"] = HORDE_ONLY,
 			}),
-			ach(10587), 	-- Hot Swapper
+			ach(10587),	-- Hot Swapper
 			ach(9071, {		-- Inspector Gagetzan
 				i(114002, {	-- Encoded Message
 					crit(1),	-- Decoded Message 001-003
@@ -73,9 +70,8 @@ _.Achievements =
 				crit(5),		-- Inscription: Sanguine Feather Quill of Lana'thel
 				crit(6),		-- Jewelcrafting: Jewelhammer's Focus
 				crit(7),		-- Leatherworking: Mallet of Thunderous Skins
-				crit(8),		-- Tailoring: Synchronous Thread]]--  				--Only need one for achiev.
+				crit(8),		-- Tailoring: Synchronous Thread]]--	-- Only need one for achiev.
 			}),
-			ach(10586),		-- Mass Obliteration
 			ach(7379, {		-- Pandaren Master of All
 				ach(7378),		-- Jack of All Trades
 			}),
@@ -112,7 +108,7 @@ _.Achievements =
 				crit(10),		-- Shadowlands Skinning
 				crit(11),		-- Shadowlands Tailoring
 			}),
-			ach(10588), 	-- The Shortest Distance
+			ach(10588),	-- The Shortest Distance
 			ach(6835),		-- Working For a Living
 			ach(9507),		-- Working in Draenor
 			ach(12734, {	-- Working in Kul Tiras (A)

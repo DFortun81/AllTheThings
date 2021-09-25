@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(49, {	-- Redridge Mountains
-			filter(101, {	-- Pet Battle
+		m(REDRIDGE_MOUNTAINS, {
+			filter(BATTLE_PETS, {
 				p(646, {	-- Chicken
 					["crs"] = { 62664 },	-- Chicken
 				}),
@@ -32,7 +32,7 @@ _.Zones =
 				}),
 				q(31726, {	-- Eric Davidson
 					["provider"] = { "n", 65651 },	-- Lindsay
-					["coord"] = { 33.2, 52.5, 49 },
+					["coord"] = { 33.2, 52.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31725,	-- Lindsay
 					["g"] = {
@@ -41,7 +41,7 @@ _.Zones =
 				}),
 				q(31781, {	-- Lindsay
 					["provider"] = { "n", 65651 },	-- Lindsay
-					["coord"] = { 33.2, 52.5, 49 },
+					["coord"] = { 33.2, 52.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),

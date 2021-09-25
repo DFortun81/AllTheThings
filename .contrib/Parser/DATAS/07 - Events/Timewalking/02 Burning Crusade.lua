@@ -5,19 +5,20 @@
 _.WorldEvents =
 {
 	d(24, {  -- Timewalking
-		["u"] = 42,	--  Timewalking
-		["g"] = {
-			tier(2, { 	-- Burning Crusade
-				["maps"] = { SHATTRATH_CITY },
-				["g"] = {
-					q(47523, {	-- Disturbance Detected: Black Temple
-						["provider"] = { "n", 123252 },	-- Vormu
-						["isWeekly"] = true,
-					}),
-					q(40168, {	-- The Swirling Vial
-						["provider"] = { "i", 129747 },	-- Swirling Timewarped Vial
-						["isWeekly"] = true,
-					}),
+		tier(TBC_TIER, {
+			["maps"] = { SHATTRATH_CITY },
+			["g"] = {
+				q(47523, {	-- Disturbance Detected: Black Temple
+					-- ["coord"] = { { SHATTRATH_CITY } },
+					["provider"] = { "n", 123252 },	-- Vormu
+					["isWeekly"] = true,
+					["maps"] = { SHATTRATH_CITY },
+				}),
+				q(40168, {	-- The Swirling Vial
+					["provider"] = { "i", 129747 },	-- Swirling Timewarped Vial
+					["isWeekly"] = true,
+				}),
+				n(VENDORS, {
 					n(98685, {	-- Cupri
 						-- Mounts / Pets / Toys
 						i(129923, {	-- Reins of the Eclipse Dragonhawk
@@ -150,6 +151,7 @@ _.WorldEvents =
 								{ "c", 1166, 750 },		-- 750x Timewarped Badge
 								{ "i", 33226, 250 },	-- 250x Tricky Treat
 							},
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = {
@@ -161,6 +163,7 @@ _.WorldEvents =
 								{ "i", 137642, 14 },	-- 14x  Mark of Honor
 								{ "c", 1166, 900 },		-- 900x Timewarped Badge
 							},
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(167731, {	-- Battle-Hardened Heirloom Armor Casing
 							["cost"] = {
@@ -169,6 +172,7 @@ _.WorldEvents =
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
 								{ "i", 33226, 450 },	-- 450x   Tricky Treat
 							},
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(167732, {	-- Battle-Hardened Heirloom Scabbard
 							["cost"] = {
@@ -176,15 +180,17 @@ _.WorldEvents =
 								{ "i", 37829, 500 },	-- 500x   Brewfest Prize Token
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 							},
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(122340, {	-- Timeworn Heirloom Armor Casing
 							["cost"] = {
-								{ "g", 15000000 },		-- 1,500g
+								{ "g", 10000000 },		-- 1,000g
 								{ "i", 23247, 600 },	-- 600x   Burning Blossom
 								{ "i", 21100, 75 },		-- 75x    Coin of Ancestry
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
 								{ "i", 33226, 450 },	-- 450x   Tricky Treat
 							},
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
 							["cost"] = {
@@ -193,6 +199,7 @@ _.WorldEvents =
 								{ "i", 49927, 450 },	-- 450x   Love Token
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 							},
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(151614, {	-- Weathered Heirloom Armor Casing
 							["cost"] = {
@@ -202,6 +209,7 @@ _.WorldEvents =
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
 								{ "i", 33226, 450 },	-- 450x   Tricky Treat
 							},
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
 							["cost"] = {
@@ -210,6 +218,7 @@ _.WorldEvents =
 								{ "i", 49927, 450 },	-- 450x   Love Token
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 							},
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(129948, {	-- Commendation of Honor Hold
 							["races"] = ALLIANCE_ONLY,
@@ -246,10 +255,7 @@ _.WorldEvents =
 								i(33820, {	-- Weather-Beaten Fishing Hat
 									["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 								}),
-								i(34109, {	-- Weather-Beaten Journal
-									["collectible"] = false,	-- Does not track
-									["spellID"] = 0,	-- invalidate spellID, still shows up as collectible with "false" tag
-								}),
+								i(34109),	-- Weather-Beaten Journal
 							},
 						}),
 						i(33844, {	-- Barrel of Fish
@@ -274,8 +280,8 @@ _.WorldEvents =
 							},
 						}),
 					}),
-				},
-			}),
-		},
+				}),
+			},
+		}),
 	}),
 };

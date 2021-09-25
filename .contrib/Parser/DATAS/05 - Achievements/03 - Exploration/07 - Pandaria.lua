@@ -167,8 +167,8 @@ _.Achievements =
 			}),
 			ach(6846, {	-- Fish Tales
 				crit(1),	-- Watersmithing (Jade Forest)
-				crit(2, {	-- Waterspeakers (Valley of the Four Winds)
-					["coord"] = { 61.52, 34.88, 376 },
+				crit(2, {	-- Waterspeakers
+					["coord"] = { 61.52, 34.88, VALLEY_OF_THE_FOUR_WINDS },
 				}),
 				crit(3),	-- Origins (Krasarang Wilds)
 				crit(4),	-- Role Call (Kun-Lai Summit)
@@ -248,8 +248,8 @@ _.Achievements =
 			ach(6850, {	-- Hozen in the Mist
 				crit(1),	-- Hozen Speech (Jade Forest)
 				crit(2),	-- Hozen Maturity (Krasarang Wilds)
-				crit(3, {	-- Embracing the Passions (Valley of the Four Winds)
-					["coord"] = { 83.22, 21.16, 376 },
+				crit(3, {	-- Embracing the Passions
+					["coord"] = { 83.22, 21.16, VALLEY_OF_THE_FOUR_WINDS },
 				}),
 				crit(4),	-- The Hozen Ravage (Kun-Lai Summit)
 			}),
@@ -367,25 +367,25 @@ _.Achievements =
 				crit(4),	-- The Pandaren Problem
 			}),
 			ach(6754, {	-- The Dark Heart of the Mogu
-				crit(1, {	-- Valley of the Emperors (Kun-Lai Summit)
-					["coord"] = { 53.0, 46.58, 379 },
+				crit(1, {	-- Valley of the Emperors
+					["coord"] = { 53.0, 46.58, KUN_LAI_SUMMIT },
 					["description"] = "The scroll is in the first big room."
 				}),
-				crit(2, {	-- The Lost Dynasty (Krasarang Wilds)
-					["coord"] = { 52.96, 27.42, 418 },
+				crit(2, {	-- The Lost Dynasty
+					["coord"] = { 52.96, 27.42, KRASARANG_WILDS },
 				}),
-				crit(3, {	-- Spirit Binders (Jade Forest)
-					["coord"] = { 42.26, 17.46, 371 },
+				crit(3, {	-- Spirit Binders
+					["coord"] = { 42.26, 17.46, THE_JADE_FOREST },
 				}),
-				crit(4, {	-- The Thunder King (Vale of Eternal Blossoms)
-					["coord"] = { 40.19, 75.63, 390 },
+				crit(4, {	-- The Thunder King
+					["coord"] = { 40.19, 75.63, VALE_OF_ETERNAL_BLOSSOMS },
 				}),
 			}),
 			ach(6855, {	-- The Seven Burdens of Shaohao
 				crit(1),	-- The Emperor's Burden - Part 1 (Jade Forest)
 				crit(2),	-- The Emperor's Burden - Part 2 (Kun-Lai Summit)
-				crit(3, {	-- The Emperor's Burden - Part 3 (Jade Forest)
-					["coord"] = { 55.88, 56.84, 371 },
+				crit(3, {	-- The Emperor's Burden - Part 3
+					["coord"] = { 55.88, 56.84, THE_JADE_FOREST },
 				}),
 				crit(4),	-- The Emperor's Burden - Part 4 (Krasarang Wilds)
 				crit(5),	-- The Emperor's Burden - Part 5 (Townlong Steppes)

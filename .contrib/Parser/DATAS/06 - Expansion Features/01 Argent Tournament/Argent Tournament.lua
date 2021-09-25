@@ -204,7 +204,7 @@ _.ExpansionFeatures =
 							["races"] = { BLOODELF },
 							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 						}),
-						n(-6015, {	-- Rewards
+						n(REWARDS, {
 							["description"] = "You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",
 							["sourceQuests"] = {
 								24796,	-- A Victory For The Silver Covenant [Alliance]
@@ -235,9 +235,6 @@ _.ExpansionFeatures =
 			n(QUESTS, {
 				i(45724, {	-- Champion's Purse
 					["description"] = "You get 1 Champion's Seal from these bags.",
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13741, {	-- A Blade Fit For A Champion (A)
 					["coord"] = { 76.6, 19.5, 118 },
@@ -336,7 +333,6 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(44998),	-- Argent Squire
 					},
 				}),
@@ -365,7 +361,6 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(45022),	-- Argent Gruntling
 					},
 				}),
@@ -374,18 +369,12 @@ _.ExpansionFeatures =
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14143, {	-- A Leg Up (H)
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13689, {	-- A Valiant Of Darnassus
 					["coord"] = { 76.5, 19.4, 118 },
@@ -591,7 +580,6 @@ _.ExpansionFeatures =
 						33749,	-- Undercity Champion
 					},
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 						i(45500),	-- Mark of the Champion
@@ -616,7 +604,6 @@ _.ExpansionFeatures =
 						33749,	-- Undercity Champion
 					},
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 						i(45500),	-- Mark of the Champion
@@ -682,26 +669,46 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["provider"] = { "n", 33545 },	-- Gahju
 				}),
-				q(13861, {	-- Battle Before the Citadel (A / H, non-DK)
-					["hordeQuestID"] = 13862,
+				q(13861, {	-- Battle Before the Citadel (A, non-DK)
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["coord"] = { 69.9, 23.4, 118 },
 					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
 				}),
-				q(13864, {	-- Battle Before the Citadel (A / H, DK)
-					["hordeQuestID"] = 13863,
+				q(13862, {	-- Battle Before the Citadel (H, non-DK)
+					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["coord"] = { 69.9, 23.4, 118 },
+					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
+					["g"] = {
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+					},
+				}),
+				q(13863, {	-- Battle Before the Citadel (H, DK)
 					["classes"] = { DEATHKNIGHT },
+					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["coord"] = { 73.8, 20.0, 118 },
 					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 					["g"] = {
-						currency(241),	-- Champion's Seal
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+					},
+				}),
+				q(13864, {	-- Battle Before the Citadel (A , DK)
+					["classes"] = { DEATHKNIGHT },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["coord"] = { 73.8, 20.0, 118 },
+					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
+					["g"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -718,18 +725,12 @@ _.ExpansionFeatures =
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34912 },	-- Savinia Loresong <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14092, {	-- Breakfast Of Champions (H)
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34914 },	-- Tylos Dawnrunner <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13846, {	-- Contributin' To The Cause
 					["isDaily"] = true,
@@ -740,17 +741,11 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["coord"] = { 69.4, 23.1, 118 },
 					["provider"] = { "n", 34882 },	-- High Crusader Adelard
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14101, {	-- Drottinn Hrothgar
 					["isDaily"] = true,
 					["coord"] = { 69.4, 23.1, 118 },
 					["provider"] = { "n", 34882 },	-- High Crusader Adelard
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13794, {	-- Eadric the Pure
 					["coord"] = { 69.6, 22.8, 118 },
@@ -760,27 +755,18 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["coord"] = { 69.4, 23.1, 118 },
 					["provider"] = { "n", 35094 },	-- Crusader Silverdawn
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14090, {	-- Gormok Wants His Snobolds (A)
 					["isDaily"] = true,
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34912 },	-- Savinia Loresong <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14141, {	-- Gormok Wants His Snobolds (H)
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34914 },	-- Tylos Dawnrunner <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14095, {	-- Identifying the Remains
 					["isDaily"] = true,
@@ -841,53 +827,35 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["coord"] = { 69.4, 23.1, 118 },
 					["provider"] = { "n", 34882 },	-- High Crusader Adelard
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14104, {	-- Ornolf The Scarred
 					["isDaily"] = true,
 					["coord"] = { 69.4, 23.1, 118 },
 					["provider"] = { "n", 34882 },	-- High Crusader Adelard
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14152, {	-- Rescue at Sea (A)
 					["isDaily"] = true,
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14136, {	-- Rescue at Sea (H)
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14080, {	-- Stop The Aggressors (A)
 					["isDaily"] = true,
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
-				q(14140, {	-- Stop The Aggressors
+				q(14140, {	-- Stop The Aggressors (H)
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13789, {	-- Taking Battle To The Enemy (A / H, non-DK)
 					["hordeQuestID"] = 13810,
@@ -896,7 +864,6 @@ _.ExpansionFeatures =
 					["coord"] = { 69.9, 23.4, 118 },
 					["provider"] = { "n", 33763 },	-- Cellian Daybreak <Master of Arms>
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -908,7 +875,6 @@ _.ExpansionFeatures =
 					["coord"] = { 73.8, 19.6, 118 },
 					["provider"] = { "n", 33769 },	-- Zor'be the Bloodletter <Master of Arms>
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -957,9 +923,6 @@ _.ExpansionFeatures =
 					["coord"] = { 69.4, 23.0, 118 },
 					["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 					["sourceQuest"] = 14016,	-- The Black Knight's Curse
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13663, {	-- The Black Knight's Orders
 					["coord"] = { 69.4, 23.0, 118 },
@@ -1047,9 +1010,6 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["coord"] = { 69.4, 23.1, 118 },
 					["provider"] = { "n", 35094 },	-- Crusader Silverdawn
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13665, {	-- The Grand Melee (A)
 					["coord"] = { 76.6, 19.2, 118 },
@@ -1116,18 +1076,12 @@ _.ExpansionFeatures =
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14144, {	-- The Light's Mercy
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13795, {	-- The Scourgebane
 					["coord"] = { 69.6, 22.8, 118 },
@@ -1175,7 +1129,7 @@ _.ExpansionFeatures =
 					["coord"] = { 76.6, 19.1, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
-					["sourceQuest"] = 13718 	-- The Valiant's Charge (A)
+					["sourceQuest"] = 13718	-- The Valiant's Charge (A)
 				}),
 				q(13726, {	-- The Valiant's Challenge (H)
 					["coord"] = { 76.5, 24.6, 118 },
@@ -1262,26 +1216,46 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 					["sourceQuest"] = 13643,	-- The Stories Dead Men Tell
 				}),
-				q(13682, {	-- Threat From Above (A / H, non-DK)
-					["hordeQuestID"] = 13809,
+				q(13682, {	-- Threat From Above (A, non-DK)
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 69.9, 23.4, 118 },
 					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
 				}),
-				q(13788, {	-- Threat From Above (A / H, DK)
-					["hordeQuestID"] = 13812,
+				q(13809, {	-- Threat From Above (H, non-DK)
+					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["coord"] = { 69.9, 23.4, 118 },
+					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
+					["g"] = {
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+					},
+				}),
+				q(13788, {	-- Threat From Above (A, DK)
 					["isDaily"] = true,
 					["classes"] = { DEATHKNIGHT },
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 73.8, 20.0, 118 },
 					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 					["g"] = {
-						currency(241),	-- Champion's Seal
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+					},
+				}),
+				q(13812, {	-- Threat From Above (H, DK)
+					["isDaily"] = true,
+					["classes"] = { DEATHKNIGHT },
+					["races"] = HORDE_ONLY,
+					["coord"] = { 73.8, 20.0, 118 },
+					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
+					["g"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -1374,68 +1348,62 @@ _.ExpansionFeatures =
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34912 },	-- Savinia Loresong <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14145, {	-- What Do You Feed a Yeti, Anyway? (H)
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34914 },	-- Tylos Dawnrunner <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14096, {	-- You've Really Done It This Time, Kul (A)
 					["isDaily"] = true,
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14142, {	-- You've Really Done It This Time, Kul (H)
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 			}),
+			n(REWARDS, {
+				["description"] = "These are rewarded by completing the daily quests and heroic dungeon.",
+				["groups"] = {
+					currency(241),	-- Champion's Seal
+				},
+			}),
 			n(VENDORS, {
-				n(-15, {	-- Common Vendor Items
+				n(-20, {	-- Common Vendor Items
 					i(45725, {	-- Argent Hippogryph
 						["cost"] = { { "c", 241, 150 }, },	-- 150x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(122232, {	-- Music Roll: The Argent Tournament
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					-- Alliance Only Items
@@ -1444,9 +1412,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1455,9 +1423,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 						["g"] = {
@@ -1471,9 +1439,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1482,9 +1450,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1493,9 +1461,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1504,9 +1472,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1515,9 +1483,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1526,9 +1494,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1537,9 +1505,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1548,9 +1516,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1559,9 +1527,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1570,9 +1538,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1581,9 +1549,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1592,9 +1560,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1603,9 +1571,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1614,9 +1582,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1625,9 +1593,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1636,9 +1604,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1647,9 +1615,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1658,9 +1626,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1669,9 +1637,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1679,9 +1647,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1690,498 +1658,245 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45208, {	-- Blade of the Keening Banshee
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45205, {	-- Greatsword of the Sin'dorei
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45203, {	-- Grimhorn Crusher
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45214, {	-- Scalpel of the Royal Apothecary
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45210, {	-- Sen'jin Beakblade Longrifle
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45222, {	-- Spinal Destroyer
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45212, {	-- Staff of Feral Furies
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45206, {	-- Choker of Feral Fury
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45207, {	-- Necklace of Stolen Skulls
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45213, {	-- Pendant of Emerald Crusader
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45223, {	-- Razor's Edge Pendant
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45216, {	-- Gauntlets of Mending Touch
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45217, {	-- Clinch of Savage Fury
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45215, {	-- Links of Unquenched Savagery
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45209, {	-- Sash of Trumpeted Pride
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45211, {	-- Waistguard of Equine Fury
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45218, {	-- Blood-Caked Stompers
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45220, {	-- Treads of the Earnest Squire
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45221, {	-- Treads of Whispering Dreams
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45219, {	-- Jouster's Fury
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 				}),
 				n(33602, {	-- Anuur <Jewelcrafting Supplies>
 					["coord"] = { 71.4, 20.8, 118 },
-					["g"] = {
-						i(42298, {	-- Design: Bold Dragon's Eye
-							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-						}),
-						i(41576, {	-- Design: Bold Scarlet Ruby
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(42309, {	-- Design: Brilliant Dragon's Eye
-							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-						}),
-						i(42300, {	-- Design: Brilliant Dragon's Eye
-							["spellID"] = 0,	-- This is now available via 42309, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(41704, {	-- Design: Chaotic Skyflare Diamond
-							["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-						}),
-						i(41687, {	-- Design: Deft Monarch Topaz
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(41792, {	-- Design: Design: Deft Monarch Topaz
-							["spellID"] = 0,	-- This is now available via 41687, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(42301, {	-- Design: Delicate Dragon's Eye
-							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-						}),
-						i(42299, {	-- Design: Delicate Dragon's Eye
-							["spellID"] = 0,	-- This is now available via 42301, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(41577, {	-- Design: Delicate Scarlet Ruby
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(41706, {	-- Design: Ember Skyflare Diamond
-							["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-						}),
-						i(41692, {	-- Design: Energized Forest Emerald
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(41694, {	-- Design: Energized Forest Emerald
-							["spellID"] = 0,	-- This is now available via 41692, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(42302, {	-- Design: Flashing Dragon's Eye
-							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-						}),
-						i(41578, {	-- Design: Flashing Scarlet Ruby
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(41693, {	-- Design: Forceful Forest Emerald
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(41582, {	-- Design: Glinting Twilight Opal
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(41785, {	-- Design: Glinting Twilight Opal
-							["spellID"] = 0,	-- This is now available via 41582, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(41796, {	-- Design: Glinting Twilight Opal
-							["spellID"] = 0,	-- This is now available via 41582, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(41708, {	-- Design: Insightful Earthsiege Diamond
-							["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-						}),
-						i(41709, {	-- Design: Invigorating Earthsiege Diamond
-							["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-						}),
-						i(41702, {	-- Design: Jagged Forest Emerald
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(41696, {	-- Design: Lightning Forest Emerald
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(41782, {	-- Design: Lightning Forest Emerald
-							["spellID"] = 0,	-- This is now available via 41696, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(41565, {	-- Design: Lucent Huge Citrine
-							["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-						}),
-						i(41564, {	-- Design: Lucent Huge Citrine
-							["spellID"] = 0,	-- This is now available via 41565, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(41575, {	-- Design: Mysterious Shadow Crystal
-							["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-						}),
-						i(42305, {	-- Design: Mystic Dragon's Eye
-							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-						}),
-						i(41559, {	-- Design: Mystic Sun Crystal
-							["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-						}),
-						i(41698, {	-- Design: Nimble Forest Emerald
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(41686, {	-- Design: Potent Monarch Topaz
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(42306, {	-- Design: Precise Dragon's Eye
-							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-						}),
-						i(41579, {	-- Design: Quick Autumn's Glow
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(42307, {	-- Design: Quick Dragon's Eye
-							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-						}),
-						i(41570, {	-- Design: Radiant Dark Jade
-							["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-						}),
-						i(41690, {	-- Design: Reckless Monarch Topaz
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(41689, {	-- Design: Reckless Monarch Topaz
-							["spellID"] = 0,	-- This is now available via 41690, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(41697, {	-- Design: Regal Forest Emerald
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(41703, {	-- Design: Regal Forest Emerald
-							["spellID"] = 0,	-- This is now available via 41697, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(41710, {	-- Design: Relentless Earthsiege Diamond
-							["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-						}),
-						i(41566, {	-- Design: Resplendent Huge Citrine
-							["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-						}),
-						i(41707, {	-- Design: Revitalizing Skyflare Diamond
-							["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-						}),
-						i(42308, {	-- Design: Rigid Dragon's Eye
-							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-						}),
-						i(41580, {	-- Design: Rigid Sky Sapphire
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(43317, {	-- Design: Ring of Earthen Might
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(43320, {	-- Design: Ring of Northern Tears
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(43318, {	-- Design: Ring of Scarlet Shadows
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(43497, {	-- Design: Savage Titanium Band
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(43485, {	-- Design: Savage Titanium Ring
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(41569, {	-- Design: Shattered Dark Jade
-							["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-						}),
-						i(41705, {	-- Design: Shielded Skyflare Diamond
-							["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-						}),
-						i(41747, {	-- Design: Shifting Twilight Opal
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(42310, {	-- Design: Smooth Dragon's Eye
-							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-						}),
-						i(42303, {	-- Design: Smooth Dragon's Eye
-							["spellID"] = 0,	-- This is now available via 42310, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(42311, {	-- Design: Solid Dragon's Eye
-							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-						}),
-						i(42138, {	-- Design: Solid Sky Sapphire
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(42312, {	-- Design: Sparkling Dragon's Eye
-							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-						}),
-						i(42304, {	-- Design: Sparkling Dragon's Eye
-							["spellID"] = 0,	-- This is now available via 42312, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(41581, {	-- Design: Sparkling Sky Sapphire
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(41572, {	-- Design: Steady Dark Jade
-							["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-						}),
-						i(41560, {	-- Design: Stormy Chalcedony
-							["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-						}),
-						i(42313, {	-- Design: Stormy Dragon's Eye
-							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-						}),
-						i(41719, {	-- Design: Subtle Autumn's Glow
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(41791, {	-- Design: Subtle Autumn's Glow
-							["spellID"] = 0,	-- This is now available via 41719, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(42314, {	-- Design: Subtle Dragon's Eye
-							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
-						}),
-						i(42315, {	-- Design: Subtle Dragon's Eye
-							["spellID"] = 0,	-- This is now available via 42314, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(42652, {	-- Design: Titanium Earthguard Chain
-							["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
-						}),
-						i(42649, {	-- Design: Titanium Earthguard Ring
-							["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
-						}),
-						i(43597, {	-- Design: Titanium Frostguard Ring
-							["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
-						}),
-						i(42648, {	-- Design: Titanium Impact Band
-							["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
-						}),
-						i(42651, {	-- Design: Titanium Impact Choker
-							["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
-						}),
-						i(42653, {	-- Design: Titanium Spellshock Necklace
-							["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
-						}),
-						i(42650, {	-- Design: Titanium Spellshock Ring
-							["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
-						}),
-						i(41711, {	-- Design: Trenchant Earthsiege Diamond
-							["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
-						}),
-						i(41571, {	-- Design: Turbid Dark Jade
-							["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-						}),
-						i(41573, {	-- Design: Turbid Dark Jade
-							["spellID"] = 0,	-- This is now available via 41571, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(41688, {	-- Design: Veiled Twilight Opal
-							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-						}),
-						i(41563, {	-- Design: Willful Huge Citrine
-							["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-						}),
-						i(43319, {	-- Design: Windfire Band
-							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
-						}),
-						i(42225, {	-- Dragon's Eye
-							["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-						}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 28721}, -- Tiffany Cartier <Jewelcrafting Supplies>
 					},
 				}),
 				n(35573, {	-- Arcanist Asarina <Legacy Justice Quartermaster>
 					["coord"] = { 75.2, 21.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						-- Normal items here
 						i(47732),	-- Band of the Invoker
 						i(47729),	-- Bloodshed Band
 						i(47658),	-- Brimstone Igniter
@@ -2191,86 +1906,6 @@ _.ExpansionFeatures =
 						i(47708),	-- Duskstalker Shoulderpads
 						i(47704),	-- Epaulets of the Devourer
 						i(47677),	-- Faceplate of the Honorbound
-						i(41087),	-- Furious Gladiator's Chain Armor
-						i(41143),	-- Furious Gladiator's Chain Gauntlets
-						i(41157),	-- Furious Gladiator's Chain Helm
-						i(41205),	-- Furious Gladiator's Chain Leggings
-						i(41217),	-- Furious Gladiator's Chain Spaulders
-						i(41773),	-- Furious Gladiator's Dragonhide Gloves
-						i(41678),	-- Furious Gladiator's Dragonhide Helm
-						i(41667),	-- Furious Gladiator's Dragonhide Legguards
-						i(41661),	-- Furious Gladiator's Dragonhide Robes
-						i(41715),	-- Furious Gladiator's Dragonhide Spaulders
-						i(40787),	-- Furious Gladiator's Dreadplate Chestpiece
-						i(40809),	-- Furious Gladiator's Dreadplate Gauntlets
-						i(40827),	-- Furious Gladiator's Dreadplate Helm
-						i(40848),	-- Furious Gladiator's Dreadplate Legguards
-						i(40868),	-- Furious Gladiator's Dreadplate Shoulders
-						i(42011),	-- Furious Gladiator's Felweave Amice
-						i(41993),	-- Furious Gladiator's Felweave Cowl
-						i(42017),	-- Furious Gladiator's Felweave Handguards
-						i(41998),	-- Furious Gladiator's Felweave Raiment
-						i(42005),	-- Furious Gladiator's Felweave Trousers
-						i(41287),	-- Furious Gladiator's Kodohide Gloves
-						i(41321),	-- Furious Gladiator's Kodohide Helm
-						i(41298),	-- Furious Gladiator's Kodohide Legguards
-						i(41310),	-- Furious Gladiator's Kodohide Robes
-						i(41275),	-- Furious Gladiator's Kodohide Spaulders
-						i(41767),	-- Furious Gladiator's Leather Gloves
-						i(41672),	-- Furious Gladiator's Leather Helm
-						i(41655),	-- Furious Gladiator's Leather Legguards
-						i(41683),	-- Furious Gladiator's Leather Spaulders
-						i(41650),	-- Furious Gladiator's Leather Tunic
-						i(41081),	-- Furious Gladiator's Linked Armor
-						i(41137),	-- Furious Gladiator's Linked Gauntlets
-						i(41151),	-- Furious Gladiator's Linked Helm
-						i(41199),	-- Furious Gladiator's Linked Leggings
-						i(41211),	-- Furious Gladiator's Linked Spaulders
-						i(40993),	-- Furious Gladiator's Mail Armor
-						i(41007),	-- Furious Gladiator's Mail Gauntlets
-						i(41019),	-- Furious Gladiator's Mail Helm
-						i(41033),	-- Furious Gladiator's Mail Leggings
-						i(41044),	-- Furious Gladiator's Mail Spaulders
-						i(41874),	-- Furious Gladiator's Mooncloth Gloves
-						i(41854),	-- Furious Gladiator's Mooncloth Hood
-						i(41864),	-- Furious Gladiator's Mooncloth Leggings
-						i(41869),	-- Furious Gladiator's Mooncloth Mantle
-						i(41859),	-- Furious Gladiator's Mooncloth Robe
-						i(40907),	-- Furious Gladiator's Ornamented Chestguard
-						i(40927),	-- Furious Gladiator's Ornamented Gloves
-						i(40933),	-- Furious Gladiator's Ornamented Headcover
-						i(40939),	-- Furious Gladiator's Ornamented Legplates
-						i(40963),	-- Furious Gladiator's Ornamented Spaulders
-						i(40789),	-- Furious Gladiator's Plate Chestpiece
-						i(40807),	-- Furious Gladiator's Plate Gauntlets
-						i(40826),	-- Furious Gladiator's Plate Helm
-						i(40847),	-- Furious Gladiator's Plate Legguards
-						i(40866),	-- Furious Gladiator's Plate Shoulders
-						i(40992),	-- Furious Gladiator's Ringmail Armor
-						i(41001),	-- Furious Gladiator's Ringmail Gauntlets
-						i(41013),	-- Furious Gladiator's Ringmail Helm
-						i(41027),	-- Furious Gladiator's Ringmail Leggings
-						i(41038),	-- Furious Gladiator's Ringmail Spaulders
-						i(41940),	-- Furious Gladiator's Satin Gloves
-						i(41915),	-- Furious Gladiator's Satin Hood
-						i(41927),	-- Furious Gladiator's Satin Leggings
-						i(41934),	-- Furious Gladiator's Satin Mantle
-						i(41921),	-- Furious Gladiator's Satin Robe
-						i(40788),	-- Furious Gladiator's Scaled Chestpiece
-						i(40808),	-- Furious Gladiator's Scaled Gauntlets
-						i(40828),	-- Furious Gladiator's Scaled Helm
-						i(40849),	-- Furious Gladiator's Scaled Legguards
-						i(40869),	-- Furious Gladiator's Scaled Shoulders
-						i(41965),	-- Furious Gladiator's Silk Amice
-						i(41946),	-- Furious Gladiator's Silk Cowl
-						i(41971),	-- Furious Gladiator's Silk Handguards
-						i(41953),	-- Furious Gladiator's Silk Raiment
-						i(41959),	-- Furious Gladiator's Silk Trousers
-						i(41293),	-- Furious Gladiator's Wyrmhide Gloves
-						i(41327),	-- Furious Gladiator's Wyrmhide Helm
-						i(41304),	-- Furious Gladiator's Wyrmhide Legguards
-						i(41316),	-- Furious Gladiator's Wyrmhide Robes
-						i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
 						i(47735),	-- Glyph of Indomitability
 						i(47733),	-- Heartmender Circle
 						i(47681),	-- Heaume of the Restless Watch
@@ -2291,6 +1926,13 @@ _.ExpansionFeatures =
 						i(47698),	-- Shoulderplates of Enduring Order
 						i(47712),	-- Shoulders of the Fateful Accord
 						i(48724),	-- Talisman of Resurgence
+					},
+					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold.
+					-- For sake of numbers we use Symlink on the 2nd NPC. First NPC under Outdoor>Northrend>Dalaran>Factions
+					["sym"] = {
+						{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
+						{"pop"},	-- Discard the Set header and acquire the children.
+						{"exclude", "headerID", -319, -322, -326, -328, -330, -384, -385, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},
 				}),
 				n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>
@@ -2939,6 +2581,7 @@ _.ExpansionFeatures =
 								{ "c", 1166, 750 },		-- 750x Timewarped Badge
 								{ "i", 33226, 250 },	-- 250x Tricky Treat
 							},
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = {
@@ -2950,6 +2593,7 @@ _.ExpansionFeatures =
 								{ "i", 137642, 14 },	-- 14x  Mark of Honor
 								{ "c", 1166, 900 },		-- 900x Timewarped Badge
 							},
+							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(47179,  {	-- Argent Charger (MOUNT!)
 							["cost"] = { { "c", 241, 100 }, },	-- 100x Champion's Seal
@@ -3289,6 +2933,7 @@ _.ExpansionFeatures =
 					["coord"] = { 75.2, 22.0, 118 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
+						-- Normal Items here
 						i(47732),	-- Band of the Invoker
 						i(47729),	-- Bloodshed Band
 						i(47658),	-- Brimstone Igniter
@@ -3299,86 +2944,6 @@ _.ExpansionFeatures =
 						i(47709),	-- Duskstalker Pauldrons
 						i(47710),	-- Epaulets of the Fateful Accord
 						i(47675),	-- Faceplate of Thunderous Rampage
-						i(41087),	-- Furious Gladiator's Chain Armor
-						i(41143),	-- Furious Gladiator's Chain Gauntlets
-						i(41157),	-- Furious Gladiator's Chain Helm
-						i(41205),	-- Furious Gladiator's Chain Leggings
-						i(41217),	-- Furious Gladiator's Chain Spaulders
-						i(41773),	-- Furious Gladiator's Dragonhide Gloves
-						i(41678),	-- Furious Gladiator's Dragonhide Helm
-						i(41667),	-- Furious Gladiator's Dragonhide Legguards
-						i(41661),	-- Furious Gladiator's Dragonhide Robes
-						i(41715),	-- Furious Gladiator's Dragonhide Spaulders
-						i(40787),	-- Furious Gladiator's Dreadplate Chestpiece
-						i(40809),	-- Furious Gladiator's Dreadplate Gauntlets
-						i(40827),	-- Furious Gladiator's Dreadplate Helm
-						i(40848),	-- Furious Gladiator's Dreadplate Legguards
-						i(40868),	-- Furious Gladiator's Dreadplate Shoulders
-						i(42011),	-- Furious Gladiator's Felweave Amice
-						i(41993),	-- Furious Gladiator's Felweave Cowl
-						i(42017),	-- Furious Gladiator's Felweave Handguards
-						i(41998),	-- Furious Gladiator's Felweave Raiment
-						i(42005),	-- Furious Gladiator's Felweave Trousers
-						i(41287),	-- Furious Gladiator's Kodohide Gloves
-						i(41321),	-- Furious Gladiator's Kodohide Helm
-						i(41298),	-- Furious Gladiator's Kodohide Legguards
-						i(41310),	-- Furious Gladiator's Kodohide Robes
-						i(41275),	-- Furious Gladiator's Kodohide Spaulders
-						i(41767),	-- Furious Gladiator's Leather Gloves
-						i(41672),	-- Furious Gladiator's Leather Helm
-						i(41655),	-- Furious Gladiator's Leather Legguards
-						i(41683),	-- Furious Gladiator's Leather Spaulders
-						i(41650),	-- Furious Gladiator's Leather Tunic
-						i(41081),	-- Furious Gladiator's Linked Armor
-						i(41137),	-- Furious Gladiator's Linked Gauntlets
-						i(41151),	-- Furious Gladiator's Linked Helm
-						i(41199),	-- Furious Gladiator's Linked Leggings
-						i(41211),	-- Furious Gladiator's Linked Spaulders
-						i(40993),	-- Furious Gladiator's Mail Armor
-						i(41007),	-- Furious Gladiator's Mail Gauntlets
-						i(41019),	-- Furious Gladiator's Mail Helm
-						i(41033),	-- Furious Gladiator's Mail Leggings
-						i(41044),	-- Furious Gladiator's Mail Spaulders
-						i(41874),	-- Furious Gladiator's Mooncloth Gloves
-						i(41854),	-- Furious Gladiator's Mooncloth Hood
-						i(41864),	-- Furious Gladiator's Mooncloth Leggings
-						i(41869),	-- Furious Gladiator's Mooncloth Mantle
-						i(41859),	-- Furious Gladiator's Mooncloth Robe
-						i(40907),	-- Furious Gladiator's Ornamented Chestguard
-						i(40927),	-- Furious Gladiator's Ornamented Gloves
-						i(40933),	-- Furious Gladiator's Ornamented Headcover
-						i(40939),	-- Furious Gladiator's Ornamented Legplates
-						i(40963),	-- Furious Gladiator's Ornamented Spaulders
-						i(40789),	-- Furious Gladiator's Plate Chestpiece
-						i(40807),	-- Furious Gladiator's Plate Gauntlets
-						i(40826),	-- Furious Gladiator's Plate Helm
-						i(40847),	-- Furious Gladiator's Plate Legguards
-						i(40866),	-- Furious Gladiator's Plate Shoulders
-						i(40992),	-- Furious Gladiator's Ringmail Armor
-						i(41001),	-- Furious Gladiator's Ringmail Gauntlets
-						i(41013),	-- Furious Gladiator's Ringmail Helm
-						i(41027),	-- Furious Gladiator's Ringmail Leggings
-						i(41038),	-- Furious Gladiator's Ringmail Spaulders
-						i(41940),	-- Furious Gladiator's Satin Gloves
-						i(41915),	-- Furious Gladiator's Satin Hood
-						i(41927),	-- Furious Gladiator's Satin Leggings
-						i(41934),	-- Furious Gladiator's Satin Mantle
-						i(41921),	-- Furious Gladiator's Satin Robe
-						i(40788),	-- Furious Gladiator's Scaled Chestpiece
-						i(40808),	-- Furious Gladiator's Scaled Gauntlets
-						i(40828),	-- Furious Gladiator's Scaled Helm
-						i(40849),	-- Furious Gladiator's Scaled Legguards
-						i(40869),	-- Furious Gladiator's Scaled Shoulders
-						i(41965),	-- Furious Gladiator's Silk Amice
-						i(41946),	-- Furious Gladiator's Silk Cowl
-						i(41971),	-- Furious Gladiator's Silk Handguards
-						i(41953),	-- Furious Gladiator's Silk Raiment
-						i(41959),	-- Furious Gladiator's Silk Trousers
-						i(41293),	-- Furious Gladiator's Wyrmhide Gloves
-						i(41327),	-- Furious Gladiator's Wyrmhide Helm
-						i(41304),	-- Furious Gladiator's Wyrmhide Legguards
-						i(41316),	-- Furious Gladiator's Wyrmhide Robes
-						i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
 						i(47735),	-- Glyph of Indomitability
 						i(47687),	-- Headguard of Inner Warmth
 						i(47678),	-- Headplate of the Honorbound
@@ -3398,6 +2963,13 @@ _.ExpansionFeatures =
 						i(47696),	-- Shoulderplates of Trembling Rage
 						i(47706),	-- Shoulders of the Groundbreaker
 						i(48724),	-- Talisman of Resurgence
+					},
+					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold.
+					-- For sake of numbers we use Symlink on the 2nd NPC. First NPC under Outdoor>Northrend>Dalaran>Factions
+					["sym"] = {
+						{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
+						{"pop"},	-- Discard the Set header and acquire the children.
+						{"exclude", "headerID", -319, -322, -326, -328, -330, -384, -385, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},
 				}),
 				n(33595, {	-- Mera Mistrunner <Cooking Supplies>

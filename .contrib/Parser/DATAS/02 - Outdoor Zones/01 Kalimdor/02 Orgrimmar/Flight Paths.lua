@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(85, {	-- Orgrimmar
+		m(ORGRIMMAR, {
 			n(FLIGHT_PATHS, {
 				fp(23, {	-- Orgrimmar, Durotar
-					["coord"] = { 49.4, 59.2, 85 },
+					["coord"] = { 49.4, 59.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

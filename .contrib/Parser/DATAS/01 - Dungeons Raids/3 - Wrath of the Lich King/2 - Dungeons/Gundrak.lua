@@ -2,8 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(274, { 	-- Gundrak
+_.Instances = { tier(WOTLK_TIER, {
+	inst(274, {	-- Gundrak
 		["lvl"] = 63,
 		["maps"] = { 153, 154 },
 		["g"] = {
@@ -66,7 +66,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(1, {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(35593, {	-- Steel Bear Trap Bracers
 						["crs"] = {
 							29836,	-- Drakkari Battle Rider
@@ -100,7 +100,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					}),
 				}),
-				cr(29304, e(592, { 	-- Slad'ran
+				cr(29304, e(592, {	-- Slad'ran
 					{	-- Gundrak: Slad'ran
 						["achievementID"] = 484,	-- Gundrak
 						["criteriaID"] = 1,	-- Slad'ran
@@ -127,7 +127,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37634),	-- Bracers of the Divine Elemental
 					i(37637),	-- Living Mojo Belt
 				})),
-				cr(29305, e(594, { 	-- Moorabi
+				cr(29305, e(594, {	-- Moorabi
 					{	-- Gundrak: Moorabi
 						["achievementID"] = 484,	-- Gundrak
 						["criteriaID"] = 2,	-- Moorabi
@@ -162,7 +162,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			d(2, {	-- Heroic
 				["lvl"] = 80,
 				["g"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(37646, {	-- Burning Skull Pendant
 							["crs"] = {
 								29822,	-- Drakkari Fire Weaver
@@ -211,7 +211,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							},
 						}),
 					}),
-					cr(29304, e(592, { 	-- Slad'ran
+					cr(29304, e(592, {	-- Slad'ran
 						{	-- Heroic: Gundrak: Slad'ran
 							["achievementID"] = 495,	-- Heroic: Gundrak
 							["criteriaID"] = 1,	-- Slad'ran
@@ -241,7 +241,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37634),	-- Bracers of the Divine Elemental
 						i(37637),	-- Living Mojo Belt
 					})),
-					cr(29305, e(594, { 	-- Moorabi
+					cr(29305, e(594, {	-- Moorabi
 						{	-- Less-rabi
 							["achievementID"] = 2040,	-- Less-rabi
 						},

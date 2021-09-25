@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(52, {	-- Westfall
-			filter(101, {	-- Pet Battle
+		m(WESTFALL, {
+			filter(BATTLE_PETS, {
 				p(646, {	-- Chicken
 					["crs"] = { 62664 },	-- Chicken
 				}),
@@ -31,7 +31,7 @@ _.Zones =
 				p(389, {	-- Tiny Harvester
 					["crs"] = { 61160 },	-- Tiny Harvester
 				}),
-				q(3861, { 	-- CLUCK!
+				q(3861, {	-- CLUCK!
 					["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor, Farmer Saldean, sells the Special Chicken Feed you need.",
 					["repeatable"] = true,
 					["g"] = {
@@ -40,7 +40,7 @@ _.Zones =
 				}),
 				q(31725, {	-- Lindsay
 					["provider"] = { "n", 65648 },	-- Old MacDonald
-					["coord"] = { 80.6, 18.4, 52 },
+					["coord"] = { 80.6, 18.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31724,	-- Old MacDonald
 					["g"] = {
@@ -49,7 +49,7 @@ _.Zones =
 				}),
 				q(31780, {	-- Old MacDonald
 					["provider"] = { "n", 65648 },	-- Old MacDonald
-					["coord"] = { 80.6, 18.4, 52 },
+					["coord"] = { 80.6, 18.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),

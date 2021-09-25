@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(63, {	-- Ashenvale
-			n(ZONEDROPS, {
+		m(ASHENVALE, {
+			n(ZONE_DROPS, {
 				i(78343),	-- Formula: Enchant Gloves - Herbalism
 				i(2567, {	-- Evocator's Blade
 					["crs"] = { 4802 },	-- Blackfathom Tide Priestess

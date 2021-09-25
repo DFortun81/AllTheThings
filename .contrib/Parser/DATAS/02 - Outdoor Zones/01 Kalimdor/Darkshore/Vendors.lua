@@ -4,17 +4,17 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(62, {	-- Darkshore
+		m(DARKSHORE, {
 			n(VENDORS, {
 				n(33980, {	-- Apothecary Furrows
-					["coord"] = { 57.2, 33.8, 62 },
+					["coord"] = { 57.2, 33.8, DARKSHORE },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(46325),	-- Withers
 					},
 				}),
 				n(43436, {	-- Ceriale Duskwhisper <Clothier>
-					["coord"] = { 50.6, 20.6, 62 },
+					["coord"] = { 50.6, 20.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(3428),	-- Common Grey Shirt

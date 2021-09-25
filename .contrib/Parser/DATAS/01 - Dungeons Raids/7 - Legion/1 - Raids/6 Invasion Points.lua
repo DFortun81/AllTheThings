@@ -2,9 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(7, {	-- Legion
+_.Instances = { tier(LEGION_TIER, {
 	inst(959, {	-- Invasion Points
-		["order"] = "06",
 		["isRaid"] = true,
 		["lvl"] = 110,
 		["g"] = {
@@ -190,7 +189,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				e(2012, {	-- Inquisitor Meto
-					["questID"]  = 49166,
+					["questID"] = 49166,
 					["mapID"] = 930,
 					["modelScale"] = 0.85,
 					["creatureID"] = 124592,

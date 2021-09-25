@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(77, {	-- Felwood
+		m(FELWOOD, {
 			n(ACHIEVEMENTS, {
 				ach(4931, {	-- Felwood Quests
 					crit(1, {	-- Emerald Sanctuary

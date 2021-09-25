@@ -9,20 +9,20 @@ _.Secrets =
 		["modelScale"] = .8,
 		["modelID"] = 78092,
 		["maps"] = {
-			627, 628,												-- Broken Isles Dalaran
-			42, 41, 43, 44, 45, 46,									-- Deadwind Pass
+			LEGION_DALARAN, LEGION_THE_UNDERBELLY,
+			DEADWIND_PASS, 41, 43, 44, 45, 46,						-- Deadwind Pass
 			207,													-- Deepholm
 			226, 227, 228, 229,										-- Gnomeregan
-			379, 380, 381, 382, 383, 384, 385, 386, 387, 421, 434,	-- Kun-Lai Summit
+			KUN_LAI_SUMMIT, 380, 381, 382, 383, 384, 385, 386, 387, 421, 434,	-- Kun-Lai Summit
 			319, 320, 321,											-- Temple of Ahn'Qiraj
 			148, 149, 150, 151, 152,								-- Ulduar
-			641, 642, 643, 644, 758, 868,							-- Val'sharah
+			VALSHARAH, 642, 643, 644, 758, 868,						-- Val'sharah
 		},
 		["g"] = {
 			o(270855, {	-- Step 1: Inconspicuous Note
 				["model"] = 1661948,
 				["questID"] = 47826,
-				["coord"] = { 50.6, 54.1, 627 },	-- Broken Isles Dalaran
+				["coord"] = { 50.6, 54.1, LEGION_DALARAN },
 				["description"] = "|cFFFFFFFFStep 1:|r Go to |cFFFFFFFF50.6, 54.1|r in Broken Isles Dalaran.  On the second floor of |cFFFFD700Curiosities & Moore|r you will see a table with three chairs.  An |cFFFFD700Inconspicuous Note|r will be on the table.  Click it.  The note reads...\n\n|cFFFFFFFFIt begins in the 2104059.|r\n|cFFFFFFFFWith a most pleasing sign.|r\n|cFFFFFFFF(These letters will not always rhyme.)|r\n",
 			}),
 			o(272039, {	-- Step 2: Inconspicuous Note
@@ -35,8 +35,8 @@ _.Secrets =
 			o(272046, {	-- Step 3: Mind Larva
 				["model"] = 202390,
 				["questID"] = 47840,
-				["coord"] = { 46.76, 7.53, 327 },	-- Temple of Ahn'Qiraj
-				["sourceQuest"] = 47837, 	-- Step 2: Inconspicuous Note
+				["coord"] = { 46.76, 7.53, AHNQIRAJ_THE_FALLEN_KINGDOM },	-- Temple of Ahn'Qiraj
+				["sourceQuest"] = 47837,	-- Step 2: Inconspicuous Note
 				["description"] = "|cFFFFFFFFStep 3:|r This step requires visiting |cFFFFD700Temple of Ahn'Qiraj|r. Go all the way through the instance, past |cFFFFD700C'thun|r's room into the room with three vendors.  Once you see the three vendors, go up the stairs and you will see a table that has a glowing |cFFFFD700Mind Larva|r on it.  Click the |cFFFFD700Mind Larva|r to activate a game similar to the |cFFFFD700Jewelcraft|r toy.\n\n|cffcc33ffTips: Hit Alt+Z to hide your interface and then scroll into first-person view.  You can also use the right mouse button to turn your character around for easier viewing.|r\n\nYou need to play until you can line up five brains horizontally or vertically, or until you reach an unknown point cap.  Just keep playing, and you'll eventually trigger it.|r\n",
 			}),
 			o(272061, {	-- Step 4: Inconspicuous Note
@@ -55,7 +55,7 @@ _.Secrets =
 				["sourceQuest"] = 47841,	-- Step 4: Inconspicuous Note
 				["description"] = "|cFFFFFFFFStep 5:|r First, obtain a |cFFFFD700Shadoweave Mask|r.  |cffcc33ffNote: You will need the actual item; it cannot be transmogged on your character.|r\n\nThis step requires visiting Deepholm.  Take the |cFFFFD700Therazane's Throne|r portal if it is available; otherwise, fly to |cFFFFFFFF58.3, 25.6|r and you will see a cave opening to |cFFFFD700Crumbling Depths|r.\n\nOnce you are in the cave, mount up and go past the |cFFFFD700Colossal Gyreworm|r into the next section of the cavern. Go to the big grey rock in the center of the room at |cFFFFFFFF63.7, 22.6|r and you will see a |cFFFFD700Dark Fissure|r.  Click it.  Once you click it, a warning will pop up, saying: \n\n|cffcc33ff'WARNING: you are about to fall into a dark fissure.  You may not be able to climb back out again.  Are you very sure you want to do this?'|r\n\nOnce inside the fissure, you will see a chair.  Go behind the chair and click on the |cFFFFD700Dingy Plaque|r.  The plaque reads... \r\r|cFFFFFFFFSupremacy?|r\r|cFFFFFFFFGet...|r\r|cFFFFFFFFShirk...|r\r|cFFFFFFFF...eke...|r\r\rThis will spawn a |cFFFFD700Strange Skull|r on the seat of the chair.  Equip the Shadoweave Mask and interact with the |cFFFFD700Strange Skull|r and you will see a purple explosion.|r\n",
 				["g"] = {
-					i(10025),  	-- Shadoweave Mask
+					i(10025),	-- Shadoweave Mask
 				},
 			}),
 			o(272165, {	-- Step 6: Inconspicuous Note
@@ -74,21 +74,21 @@ _.Secrets =
 			o(272181, {	-- Step 8: Inconspicuous Note
 				["model"] = 1661948,
 				["questID"] = 47863,
-				["coord"] = { 66.0, 36.5, 641 },	-- Val'sharah
+				["coord"] = { 66.0, 36.5, VALSHARAH },
 				["sourceQuest"] = 47852,	-- Step 7: Inconspicuous Note
 				["description"] = "|cFFFFFFFFStep 8:|r This step requires visiting |cFFFFD700Val'sharah|r.  Head to |cFFFFFFFF66.0, 36.5|r.  Inside the house next to |cff863325Wraithtalon|r is a |cFFFFD700Nightmare Tumor|r.  Click it to start the next puzzle.\n\n|cffcc33ffTips: Hit Alt+Z to hide your interface and then scroll into first-person view.  You can also use the right mouse button to turn your character around for easier viewing.|r\n\nThis puzzle is similar to |cFFFFD700Blingtron's Circuit Design Tutorial|r or the ley line puzzles in |cFFFFD700Nazjatar|r.\n\nThe object of the puzzle is to untangle all of the lines so that none cross each other and turn blue.  Once you complete it, another |cFFFFD700Inconspicuous Note|r will appear.  Click it.  The note reads...\r\r|cFFFFFFFFWhat you seek is buried within.|r\n",
 			}),
 			o(272220, {	-- Step 9: Inconspicuous Note
 				["model"] = 1661948,
 				["questID"] = 47881,
-				["coord"] = { 53.4, 49.0, 379 },	-- Kun-Lai Summit
+				["coord"] = { 53.4, 49.0, KUN_LAI_SUMMIT },
 				["sourceQuest"] = 47863,	-- Step 8: Inconspicuous Note
 				["description"] = "|cFFFFFFFFStep 9:|r This step requires visiting |cFFFFD700Kun-Lai Summit|r.  Head to |cFFFFFFFF53.4, 49.0|r.  This is the entrance to the |cFFFFD700Tomb of Secrets|r.  At the very back of the tomb, there will be an |cFFFFD700Urn|r at the base of a tall Mogu statue.  Click it.\r\r|cffcc33ffWARNING: You are about to consume the ashes of an evil sorcerer.  There is no way to tell what will happen.  Are you VERY sure you want to do this?|r\n\nYou will be teleported to the |cFFFFD700Endless Halls|r where you will have to figure a way out. \r\r1. (Optional) Download the addon |cFFFFFFFFLucid Nightmare Helper|r, which will help you with the endless maze by generating a map of the rooms as you go and letting you notate special things in each one.\n2. Each room in the Endless Halls is identical, but some doorways will be blocked by stones. \r3. Each room has an altar in the middle.  The runes spawn on the altar and the orbs spawn on the torches to either side. \r4. Most rooms will have unlit torches and no rune. \r5. The goal is to find a colored orb and then take the orb to the corresponding rune. \r6. The colors are |cFFFFD700Red, Blue, Green, Yellow, and Purple|r. \r\r|cffcc33ffNotes:|r\n|cffcc33ff1. Do not try this close to server reset.  It could easily take a couple of hours to complete.\n|cffcc33ff2.If you are struggling with the maze and want to reset it, you need to leave the area for one hour.|r\n\nOnce you match all the orbs and runes, walk through any doorway.  In the next room, there will be another |cFFFFD700Inconspicuous Note|r on an altar.  Click it.  After you read it, turn around and walk up the stairs to exit the maze.  The note reads...\n\n|cFFFFFFFFThe way is now open.|r\n|cFFFFFFFFTo the greatest secret never told.|r\n|cFFFFFFFFA fitting end to your journey.|r\n",
 			}),
 			o(272270, {	-- Step 10: Puzzler's Desire
 				["model"] = 942865,
 				["questID"] = 47885,
-				["coord"] = { 39.8, 73.6, 42 },	-- Deadwind Pass
+				["coord"] = { 39.8, 73.6, DEADWIND_PASS },
 				["sourceQuest"] = 47881,	-- Step 9: Inconspicuous Note
 				["description"] = "|cFFFFFFFFStep 10:|r This step requires visiting |cFFFFD700Deadwind Pass|r.  Head to |cFFFFFFFF39.8, 73.6|r, the entrance to the Forgotten Crypt.\n\nOnce inside, head down the stairs into the |cFFFFD700Well of the Forgotten|r.  Head into the |cFFFFD700Pauper's Walk|r hallway and follow it into the |cFFFFD700Forgotten Crypt.|r\n\nTake a right and then another right back into |cFFFFD700Pauper's Walk|r, then take a right at the Y and walk down the spiral, back into the |cFFFFD700Forgotten Crypt|r.\nTake a left and another left into the |cFFFFD700Tomb of the Unrepentant.|r\nOpen the gate and fall down the hole to the right (just drop down one level, not two). Walk into |cFFFFD700The Pit of Criminals|r, and |cFFFFD700Puzzler's Desire|r is on top of the bone pile.\n\n|cffcc33ffNote: If you are on the Warlock Affiction artifact quest and can't see the Puzzler's Desire, then you will have to abandon the quest to solve the phasing issue.\n\nCongratulations on your mount!|r\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r for solving yet another puzzle.\n",
 				["g"] = {

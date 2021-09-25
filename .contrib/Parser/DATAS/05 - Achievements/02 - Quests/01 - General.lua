@@ -36,7 +36,7 @@ _.Achievements =
 				ach(11130),		-- 2500 World Quests Completed
 				ach(11131),		-- 5000 World Quests Completed
 			}),
-			ach(31), 		-- A Simple Re-Quest
+			ach(31),		-- A Simple Re-Quest
 			ach(941, {		-- Hemet Nesingwary: The Collected Quests
 				ach(940),		-- The Green Hills of Stranglethorn
 				ach(939),		-- Hills Like White Elekk

@@ -2,8 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(4, {	-- Cataclysm
-	inst(68, { 	-- The Vortex Pinnacle
+_.Instances = { tier(CATA_TIER, {
+	inst(68, {	-- The Vortex Pinnacle
 		["lvl"] = 80,
 		["mapID"] = 325,
 		["coord"] = { 76.76, 84.44, 249 },	-- Vortex Pinnacle, Uldum
@@ -30,7 +30,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				}),
 			}),
 			d(1,   {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(55855, {	-- Darksky Treads
 						["crs"] = {
 							45915,	-- Armored Mistal
@@ -122,7 +122,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					n(ACHIEVEMENTS, {
 						ach(5289),	-- Extra Credit Bonus Stage
 					}),
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(55855, {	-- Darksky Treads
 							["crs"] = {
 								45915,	-- Armored Mistal

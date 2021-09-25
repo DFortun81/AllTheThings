@@ -732,3 +732,30 @@ t(184396);	-- Malfunctioning Goliath Gauntlet
 t(184435);	-- Mark of Purity
 t(184476);	-- Regenerating Slime Vial
 t(178530);	-- Wreath-A-Rang
+
+-----------------
+-- PATCH 9.1.0 --
+-----------------
+t(187417);	-- Adamant Vaults Cell
+t(187154);	-- Ancient Korthian Runes
+t(186973);	-- Anima-ted Leash
+t(183901);	-- Bonestorm Top
+t(187139);	-- Bottled Shade Heart
+t(187075);	-- Box of Rattling Chains
+t(186985);	-- Elusive Pet Treat
+t(186974);	-- Experimental Anima Cell
+t(187051);	-- Forgotten Feather
+t(187155);	-- Guise of the Changeling
+t(187416);	-- Jailer's Cage
+t(187420);	-- Maw-Ocular Viewfinder
+t(187344);	-- Offering Kit Maker
+t(186702);	-- Pallid Bone Flute
+t(186686);	-- Pallid Oracle Bones
+t(187113);	-- Personal Ball and Chain
+t(187140);	-- Ring of Duplicity
+t(187174);	-- Shaded Judgment Stone
+t(187159);	-- Shadow Slicing Shortsword
+t(187339);	-- Silver Shardhide Whistle
+t(187184);	-- Vesper of Clarity
+t(187185);	-- Vesper of Faith
+t(187176);	-- Vesper of Harmony

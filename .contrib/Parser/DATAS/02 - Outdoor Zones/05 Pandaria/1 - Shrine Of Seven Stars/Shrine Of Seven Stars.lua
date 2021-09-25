@@ -4,10 +4,9 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
+	m(PANDARIA, {
 		m(393, {	-- Shrine of Seven Stars
-			["order"] = "01",
-			["description"] = "|cff66ccffThe Shrine of Seven Stars is an ancient mogu structure located south of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. It has been claimed by the Alliance and serves as the main hub of the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.|r",
+			["lore"] = "The Shrine of Seven Stars is an ancient mogu structure located south of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. It has been claimed by the Alliance and serves as the main hub of the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.",
 			["isRaid"] = true,
 			["races"] = ALLIANCE_ONLY,
 			["icon"] = "Interface\\Icons\\achievement_doublejeopardyally",
@@ -21,6 +20,60 @@ _.Zones =
 					ach(7285),	-- Every Day I'm Pand-a-ren
 				}),
 				n(QUESTS, {
+					q(32007, {	-- A Worthy Challenge: Darkmaster Gandling
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(32005, {	-- A Worthy Challenge: Durand
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(32006, {	-- A Worthy Challenge: Flameweaver Koegler
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(32003, {	-- A Worthy Challenge: Raigonn
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(31998, {	-- A Worthy Challenge: Sha of Doubt
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(32001, {	-- A Worthy Challenge: Sha of Hatred
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(32004, {	-- A Worthy Challenge: Wing Leader Ner'onok
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(32002, {	-- A Worthy Challenge: Xin the Weaponmaster
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(32000, {	-- A Worthy Challenge: Yan-zhu the Uncasked
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(32900, {	-- Heroic Deeds
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class- and spec-specific. Not all items are available to all classes able to equip them.|r",
 						["coord"] = { 47.23, 49.71, 393 },
@@ -50,13 +103,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					]]--
-					q(31373, {	-- The Order of the Cloud Serpent
-					--	possibly removed, maybe gated behind completion of a specific quest/questline
-						["isBreadcrumb"] = true,
-						["coord"] = { 85.8, 62.2, 393 },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 64484 },	-- Instructor Windspear
-					}),
 					--[[
 					q(31386, {	-- The Shado-Pan Offensive
 						["races"] = ALLIANCE_ONLY,
@@ -1903,3 +1949,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(31373),	-- The Order of the Cloud Serpent
+	}),
+});

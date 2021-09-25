@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(89, {	-- Darnassus
-			filter(101, {	-- Pet Battle
+		m(DARNASSUS, {
+			filter(BATTLE_PETS, {
 				p(479, {	-- Elfin Rabbit
 					["crs"] = { 62178 },	-- Elfin Rabbit
 				}),

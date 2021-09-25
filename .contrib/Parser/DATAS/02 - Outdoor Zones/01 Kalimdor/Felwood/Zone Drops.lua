@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(77, {	-- Felwood
-			n(ZONEDROPS, {
+		m(FELWOOD, {
+			n(ZONE_DROPS, {
 				un(REMOVED_FROM_GAME, i(15752, {	-- Pattern: Living Leggings
 					["crs"] = { 7158 },	-- Deadwood Shaman
 				})),

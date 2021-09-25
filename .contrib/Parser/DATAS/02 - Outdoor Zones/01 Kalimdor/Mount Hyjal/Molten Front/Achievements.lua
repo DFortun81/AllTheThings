@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(198, {	-- Mount Hyjal
+		m(MOUNT_HYJAL, {
 			m(338, {	-- Molten Front
 				n(ACHIEVEMENTS, {
 					ach(5874, {	-- Death From Above  (Mount Hyjal - The Molten Front)
@@ -27,7 +27,7 @@ _.Zones =
 							},
 						}),
 						crit(4, {	-- Dorda'en Nightweaver
-							["coord"] = { 27.5, 62.5, 198 },
+							["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
 						}),
 						crit(8, {	-- General Taldris Moonfall
 							["coord"] = { 45.6, 85.6, 338 },
@@ -42,7 +42,7 @@ _.Zones =
 							["coord"] = { 47.0, 91.3, 338 },
 						}),
 						crit(2, {	-- Matoclaw
-							["coord"] = { 27.2, 62.6, 198 },
+							["coord"] = { 27.2, 62.6, MOUNT_HYJAL },
 						}),
 						crit(5, {	-- Thisalee Crow
 							["coord"] = { 42.5, 59.7, 338 },

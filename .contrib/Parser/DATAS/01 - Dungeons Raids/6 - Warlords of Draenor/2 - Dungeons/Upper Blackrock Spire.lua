@@ -2,11 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(6, {	-- Warlords of Draenor
+_.Instances = { tier(WOD_TIER, {
 	inst(559, {	-- Upper Blackrock Spire
-		["coord"] = { 78.94, 33.62, 33 },	-- Blackrock Spire, Eastern Kingdoms
-		["mapID"] = 616,
-		["maps"] = { 616, 617, 618 },
+		["coord"] = { 78.94, 33.62, BLACKROCK_MOUNTAIN },
+		["mapID"] = BLACKROCK_SPIRE,
+		["maps"] = { BLACKROCK_SPIRE, 617, 618 },
 		["lvl"] = 100,
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -488,7 +488,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109828),	-- Felflame Belt
 						i(109825),	-- Frost-Touched Cord
 						i(109839),	-- Goldsteel Belt
-						i(109840), 	-- Gutcrusher Greatbelt
+						i(109840),	-- Gutcrusher Greatbelt
 						i(109837),	-- Incarnadine Girdle
 						i(109836),	-- Lavalink Girdle
 						i(109832),	-- Leafmender Girdle
@@ -553,7 +553,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(109828),	-- Felflame Belt
 							i(109825),	-- Frost-Touched Cord
 							i(109839),	-- Goldsteel Belt
-							i(109840), 	-- Gutcrusher Greatbelt
+							i(109840),	-- Gutcrusher Greatbelt
 							i(109837),	-- Incarnadine Girdle
 							i(109836),	-- Lavalink Girdle
 							i(109832),	-- Leafmender Girdle
@@ -848,7 +848,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109828),	-- Felflame Belt
 						i(109825),	-- Frost-Touched Cord
 						i(109839),	-- Goldsteel Belt
-						i(109840), 	-- Gutcrusher Greatbelt
+						i(109840),	-- Gutcrusher Greatbelt
 						i(109837),	-- Incarnadine Girdle
 						i(109836),	-- Lavalink Girdle
 						i(109832),	-- Leafmender Girdle
@@ -1126,7 +1126,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109828),	-- Felflame Belt
 						i(109825),	-- Frost-Touched Cord
 						i(109839),	-- Goldsteel Belt
-						i(109840), 	-- Gutcrusher Greatbelt
+						i(109840),	-- Gutcrusher Greatbelt
 						i(109837),	-- Incarnadine Girdle
 						i(109836),	-- Lavalink Girdle
 						i(109832),	-- Leafmender Girdle

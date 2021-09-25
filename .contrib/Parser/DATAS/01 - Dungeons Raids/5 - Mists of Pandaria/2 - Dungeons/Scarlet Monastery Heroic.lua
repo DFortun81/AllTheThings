@@ -2,14 +2,14 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(316, { 	-- Scarlet Monastery
-		["mapID"] = 435,
+_.Instances = { tier(MOP_TIER, {
+	inst(316, {	-- Scarlet Monastery
+		["mapID"] = SCARLET_MONASTERY,
 		["maps"] = {
-			--435,	-- Scarlet Monastery: Forlorn Cloister (First Boss
+			--SCARLET_MONASTERY,	-- Scarlet Monastery: Forlorn Cloister (First Boss)
 			436,	-- Scarlet Monasatery: Crusaader's Chapel (Last two bosses)
 		},
-		["coord"] = { 69.2, 24.9, 19 },	-- Scarlet Monastery, Scarlet Monastery [Tirisfal Glades]
+		["coord"] = { 69.2, 24.9, SCARLET_MONASTERY_ENTRANCE },
 		["g"] = {
 			d(2, {		-- Heroic
 				["lvl"] = 90,

@@ -6,31 +6,31 @@ _.Achievements =
 {
 	n(-9961, {	-- Reputation
 		n(-9955, {	-- General
-			ach(12866, { 	-- 100 Exalted Reputations
+			ach(12866, {	-- 100 Exalted Reputations
 				i(163982),		-- Pureheart Courser
-				title(379), 	-- Esteemed <Name>
-				ach(12865), 	-- 90 Exalted Reputations
-				ach(12864, { 	-- 80 Exalted Reputations
-					title(380), 	-- <Name> the Admired
+				title(379),		-- Esteemed <Name>
+				ach(12865),		-- 90 Exalted Reputations
+				ach(12864, {	-- 80 Exalted Reputations
+					title(380),		-- <Name> the Admired
 				}),
-				ach(11177), 	-- 70 Exalted Reputations
-				ach(6742, { 	-- 60 Exalted Reputations
-					title(197), 	-- <Name> the Beloved
+				ach(11177),		-- 70 Exalted Reputations
+				ach(6742, {		-- 60 Exalted Reputations
+					title(197),		-- <Name> the Beloved
 				}),
-				ach(6826), 		-- 55 Exalted Reputations
-				ach(5723), 		-- 50 Exalted Reputations
-				ach(5374), 		-- 45 Exalted Reputations
+				ach(6826),		-- 55 Exalted Reputations
+				ach(5723),		-- 50 Exalted Reputations
+				ach(5374),		-- 45 Exalted Reputations
 				ach(1015, {		-- 40 Exalted Reputations
-					title(46), 		-- <Name> the Exalted
+					title(46),		-- <Name> the Exalted
 				}),
 				ach(1014),		-- 35 Exalted Reputations
-				ach(518), 		-- 30 Exalted Reputations
-				ach(519), 		-- 25 Exalted Reputations
-				ach(521), 		-- 15 Exalted Reputations
-				ach(524), 		-- 10 Exalted Reputations
-				ach(520), 		-- 20 Exalted Reputations
-				ach(523), 		-- 5 Exalted Reputations
-				ach(522), 		-- Somebody Likes Me
+				ach(518),		-- 30 Exalted Reputations
+				ach(519),		-- 25 Exalted Reputations
+				ach(521),		-- 15 Exalted Reputations
+				ach(524),		-- 10 Exalted Reputations
+				ach(520),		-- 20 Exalted Reputations
+				ach(523),		-- 5 Exalted Reputations
+				ach(522),		-- Somebody Likes Me
 			}),
 			ach(12515, {	-- Allied Races: Dark Iron Dwarf
 				["races"] = ALLIANCE_ONLY,
@@ -86,7 +86,7 @@ _.Achievements =
 				crit(2),		-- Exalted with Cenarion Expedition
 			}),
 			ach(12415, {	-- Heritage of Highmountain
-				["races"] = { HIGHMOUNTAIN },
+				["races"] = { HIGHMOUNTAIN_TAUREN },
 				["g"] = {
 					i(156668),	-- Highmountain Headdress
 					i(156669),	-- Highmountain Shoulderguards
@@ -127,7 +127,16 @@ _.Achievements =
 			}),
 			ach(12414, {	-- Heritage of the Lightforged
 				["races"] = { LIGHTFORGED },
-				--Note!! Removed the items you get since they are now linked to the quest and grants +2 rather than +3
+				["g"] = {
+					i(156699),	-- Lightforged Gorget
+					i(156700),	-- Lightforged Pauldrons
+					i(156701),	-- Lightforged Chestguard
+					i(156706),	-- Lightforged Bracers
+					i(156702),	-- Lightforged Gloves
+					i(156703),	-- Lightforged Girdle
+					i(156704),	-- Lightforged Legplates
+					i(156705),	-- Lightforged Hoofguards
+				},
 			}),
 			ach(13077, {	-- Heritage of the Mag'har
 				["races"] = { MAGHAR },
@@ -170,7 +179,6 @@ _.Achievements =
 				},
 			}),
 			ach(12413, {	-- Heritage of the Nightborne
-				["questID"] = 49784,	-- Heritage of the Nightborne
 				["races"] = { NIGHTBORNE },
 				["g"] = {
 					i(156675),	-- Shal'dorei Crown

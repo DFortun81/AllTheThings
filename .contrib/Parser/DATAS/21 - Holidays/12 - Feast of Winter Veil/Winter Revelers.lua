@@ -2,10 +2,10 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = 29},
+_.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 {
 	holiday(235485, {	-- Feast of Winter Veil
-		n(-7776, { 	-- Winter Revelers
+		n(-7776, {	-- Winter Revelers
 			["description"] = "Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",
 			["crs"] = {
 				22998,	-- Blood Elf Female Winter Reveler
@@ -57,30 +57,30 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							crit(1, {	-- Brother Nimetz in Stranglethorn Vale
-								["coord"] = { 47.25, 11.10, 50 },
+								["coord"] = { 47.25, 11.10, NORTHERN_STRANGLETHORN },
 							}),
 							crit(2, {	-- Brother Wilhelm in Goldshire
-								["coord"] = { 41.07, 65.95, 37 },
+								["coord"] = { 41.07, 65.95, ELWYNN_FOREST },
 							}),
 							crit(3, {	-- Brother Karman in Theramore
 								["description"] = "If Theramore is phased, talk to Zidormi to the west of the city.",
-								["coord"] = { 67.40, 47.41, 70 },
+								["coord"] = { 67.40, 47.41, DUSTWALLOW_MARSH },
 							}),
 							crit(4, {	-- Brother Kristoff in Stormwind
-								["coord"] = { 55.04, 54.20, 84 },
+								["coord"] = { 55.04, 54.20, STORMWIND_CITY },
 							}),
 							crit(5, {	-- Brother Joshua in Stormwind
-								["coord"] = { 49.50, 45.22, 84 },
+								["coord"] = { 49.50, 45.22, STORMWIND_CITY },
 							}),
 							crit(6, {	-- Brother Crowley in Stormwind
 								["description"] = "He is in the basement.",
-								["coord"] = { 52.60, 43.93, 84 },
+								["coord"] = { 52.60, 43.93, STORMWIND_CITY },
 							}),
 							crit(7, {	-- Brother Cassius in Stormwind
-								["coord"] = { 52.42, 45.80, 84 },
+								["coord"] = { 52.42, 45.80, STORMWIND_CITY },
 							}),
 							crit(8, {	-- Brother Benjamin in Stormwind
-								["coord"] = { 51.8, 46.8, 84 },
+								["coord"] = { 51.8, 46.8, STORMWIND_CITY },
 							}),
 						},
 					}),
@@ -88,7 +88,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							crit(1, {	-- Brother Malach in the Undercity
-								["coord"] = { 51.6, 22.6, 90 },
+								["coord"] = { 51.6, 22.6, UNDERCITY },
 							}),
 							crit(2, {	-- Durkot Wolfbrother in Warsong Hold
 								["coord"] = { 40.2, 55.0, 114 },

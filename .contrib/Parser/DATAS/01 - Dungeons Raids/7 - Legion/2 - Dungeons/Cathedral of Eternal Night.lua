@@ -2,12 +2,12 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(7, {	-- Legion
+_.Instances = { tier(LEGION_TIER, {
 	inst(900, {	-- Cathedral of Eternal Night
-		["coord"] = { 64.7, 16.6, 646 },
+		["coord"] = { 64.7, 16.6, BROKEN_SHORE },
 		["maps"] = { 845, 846, 847, 848, 849 },
 		["g"] = {
-			n(-34,	{	-- World Quests
+			n(WORLD_QUESTS, {
 				q(46867, {	-- Cathedral of Eternal Night: Fel Beast
 					["sourceQuests"] = { 46773 },	-- The Command Center
 					["isWorldQuest"] = true,
@@ -30,7 +30,55 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(2,	{	-- Heroic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
+					i(147514, {	-- Felguard Destroyer's Legplates
+						["bonusID"] = 1812,
+						["crs"] = {
+							118704,	-- Dul'zak
+							118723,	-- Gazerax
+							118705,	-- Nal'asha
+							120713,	-- Wa'glur
+							120716,	-- Dreadspeaker Serilis
+							120715,	-- Raga'yut
+							120717,	-- Mistress Dominix
+						},
+					}),
+					i(147515, {	-- Hellblaze Invader's Greaves
+						["bonusID"] = 1812,
+						["crs"] = {
+							118704,	-- Dul'zak
+							118723,	-- Gazerax
+							118705,	-- Nal'asha
+							120713,	-- Wa'glur
+							120716,	-- Dreadspeaker Serilis
+							120715,	-- Raga'yut
+							120717,	-- Mistress Dominix
+						},
+					}),
+					i(147517, {	-- Inquisitor's Battle Cowl
+						["bonusID"] = 1812,
+						["crs"] = {
+							118704,	-- Dul'zak
+							118723,	-- Gazerax
+							118705,	-- Nal'asha
+							120713,	-- Wa'glur
+							120716,	-- Dreadspeaker Serilis
+							120715,	-- Raga'yut
+							120717,	-- Mistress Dominix
+						},
+					}),
+					i(147516, {	-- Legion Stalker's Hood
+						["bonusID"] = 1812,
+						["crs"] = {
+							118704,	-- Dul'zak
+							118723,	-- Gazerax
+							118705,	-- Nal'asha
+							120713,	-- Wa'glur
+							120716,	-- Dreadspeaker Serilis
+							120715,	-- Raga'yut
+							120717,	-- Mistress Dominix
+						},
+					}),
 					i(147117, {	-- Orb of the Fel Temptress
 						["cr"] = 118714,  -- Hellblaze Temptress
 						["classes"] = { WARLOCK },
@@ -96,7 +144,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 			}),
 			d(23,	{	-- Mythic
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(147514, {	-- Felguard Destroyer's Legplates
 						["bonusID"] = 1812,
 						["crs"] = {

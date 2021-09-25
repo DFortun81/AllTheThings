@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
+_.Instances = { tier(WOTLK_TIER, {
 	inst(282, {	-- The Oculus
 		["lvl"] = 65,
 		["maps"] = { 142, 143, 144, 145, 146 },
@@ -25,19 +25,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["provider"] = { "n", 28012 },	-- Image of Belgaristrasz
 					["sourceQuest"] = 13126,
 				}),
-				q(13128, { 	-- A Wing and a Prayer
+				q(13128, {	-- A Wing and a Prayer
 					["provider"] = { "n", 28012 },	-- Image of Belgaristrasz
 					["sourceQuest"] = 13127,
 					["groups"] = {
-						i(44340), 	-- Bindings of Raelorasz
+						i(44340),	-- Bindings of Raelorasz
 						i(44341),	-- Bracers of Reverence
-						i(44338), 	-- Cuffs of Gratitude
-						i(44339), 	-- Soaring Wristwraps
+						i(44338),	-- Cuffs of Gratitude
+						i(44339),	-- Soaring Wristwraps
 					},
 				}),
 			}),
 			d(1,   {	-- Normal
-				n(ZONEDROPS, {
+				n(ZONE_DROPS, {
 					i(36977, {	-- Bindings of the Construct
 						["crs"] = {
 							27633,	-- Azure Inquisitor
@@ -166,7 +166,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
-					n(ZONEDROPS, {
+					n(ZONE_DROPS, {
 						i(37365, {	-- Bands of the Sky Ring
 							["crs"] = {
 								27633,	-- Azure Inquisitor

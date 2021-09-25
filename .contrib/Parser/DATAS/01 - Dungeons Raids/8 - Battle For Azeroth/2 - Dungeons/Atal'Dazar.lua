@@ -2,9 +2,9 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(8, {	-- Battle For Azeroth
+_.Instances = { tier(BFA_TIER, {
 	inst(968, {	-- Atal'Dazar
-		["coord"] = { 43.5, 39.4, 862 },
+		["coord"] = { 43.5, 39.4, ZULDAZAR },
 		["maps"] = {
 			934,	-- Atal'Dazar
 			935,	-- Sacrificial Pits

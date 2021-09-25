@@ -5,9 +5,16 @@ local i = function(itemID)
 	return item;
 end
 
+-- 9.1 (no unsorted yet so don't know categories)
+i(186472);	-- Wisps of Memory
+
 -- Anima Items
 i(184147);	-- Agony Enrichment Device
+i(186201);	-- Ancient Anima Vessel
+i(186204);	-- Anima-Stained Glass Shards
+i(187349);	-- Anima Laden Egg
 i(181540);	-- Animaflower Bud
+i(187517);	-- Animaswell Prism
 i(181477);	-- Ardendew Pearl
 i(184381);	-- Astral Sapwood
 i(184773);	-- Battle-Tested Armor Component
@@ -24,6 +31,7 @@ i(184766);	-- Chronicles of the Paragons
 i(181552);	-- Collected Tithe
 i(184764);	-- Colossus Actuator
 i(184148);	-- Concealed Sinvyr Flask
+i(187347);	-- Concentrated Anima
 i(181544);	-- Confessions of Misdeed
 i(184363);	-- Considerations on Courage
 i(181478);	-- Cornucopia of the Winter Court
@@ -44,6 +52,7 @@ i(184384);	-- Hibernal Sproutling
 i(181550);	-- Hopebreaker's Field Injector
 i(181621);	-- Hyper-Reactive Slime Sample
 i(181377);	-- Illustrated Combat Meditation Aid
+i(186200);	-- Infused Dendrite
 i(184774);	-- Juvenile Sporespindle
 i(184382);	-- Luminous Sylberry
 i(184307);	-- Maldraxxi Armor Scraps
@@ -68,7 +77,9 @@ i(184771);	-- Remembrance Parchment Ash
 i(183727);	-- Resonance of Conflict
 i(184772);	-- Ritual Maldracite Crystal
 i(184770);	-- Roster of the Forgotten
+i(187175);	-- Runekeeper's Ingot
 i(184293);	-- Sanctified Skylight Leaf
+i(186205);	-- Scholarly Attendant's Bangle
 i(184146);	-- Singed Soul Shackles
 i(181622);	-- Slightly Irradiated Slime Sample
 i(184389);	-- Slumbering Starseed
@@ -81,8 +92,10 @@ i(181479);	-- Starlight Catcher
 i(184519);	-- Totem of Stolen Mojo
 i(181644);	-- Unlabeled Culture Jars
 i(184776);	-- Urn of Arena Soil
+i(186206);	-- Vault Emberstone
 i(184765);	-- Vesper Strikehammer
 i(184371);	-- Vivacity of Collaboration
+i(186202);	-- Wafting Koricone
 i(181643);	-- Weeping Corpseshroom
 i(184149);	-- Widowbloom-Infused Fragrance
 i(181648);	-- Ziggurat Focusing Crystal
@@ -106,15 +119,18 @@ i(181616);	-- A Treatise on the Great Battles of Lordaeron
 i(33930);	-- Amani Charm of the Bloodletter
 i(33931);	-- Amani Charm of Mighty Mojo
 i(33932);	-- Amani Charm of the Witch Doctor
+i(33933);	-- Amani Charm of the Raging Defender
 i(139786);	-- Ancient Mana Crystal
 i(103644);	-- Blessed Bandage
 i(23123);	-- Blessed Wizard Oil
 i(18595);	-- Blood Opal ("Retrieving Data" in-game)
 i(180690);	-- Bottled Ash Cloud
 i(180715);	-- Bottled Wrath
+i(186189);	-- Cache of Armaments
 i(168124);	-- Cash of War Resources
 i(44626);	-- Cask of Aged Dalaran Red
 i(13509);	-- Clutch of Foresight
+i(187220);	-- Coalesced Power
 i(178040);	-- Condensed Stygia
 i(23122);	-- Consecrated Sharpening Stone
 i(143542);	-- Crown Co. "Kure-Everything" Tonic
@@ -136,6 +152,7 @@ i(13508);	-- Eye of Arachnida
 i(129210);	-- Fel Crystal Fragments
 i(127768);	-- Fel Petal
 i(37431);	-- Fetch Ball
+i(116984);	-- Frost Wyrm Egg
 i(139792);	-- Fruitful Bauble
 i(180874);	-- Gargon Whistle
 i(44618);	-- Glass of Aged Dalaran Red
@@ -169,6 +186,7 @@ i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
 i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
+i(43352);	-- Pet Grooming Kit
 i(180710);	-- Pocket Repair Kit
 i(180170);	-- Pulsing Animacone
 i(180377);	-- Red Rum
@@ -208,6 +226,11 @@ i(85266);	-- Winter Blossom Tree
 i(128851);	-- Roasted juicycrunch carrots
 
 
+-- "Mount Equipment"
+i(141593);	-- Dro's Key
+i(174767);	-- Mogu Relic
+
+
 -- Quest Items
 i(175154);	-- A Secret Never Spoken
 i(175152);	-- A Slime-Covered Book of Secrets
@@ -233,6 +256,7 @@ i(169391);	-- Bubble-eyed Rolly
 i(169292);	-- Charged Scale of the Blue Aspect
 i(146694);	-- Chipped Felsong Mantle
 i(163212);	-- Cleansing Thurible
+i(185916);	-- Codex of Memories
 i(146686);	-- Colorless Shroud of Xavius
 i(183042);	-- Colossal Power Core
 i(169235);	-- Confusing Spring Box
@@ -241,6 +265,7 @@ i(169250);	-- Crude Eating Utensil
 i(9265);	-- Cuergo's Hidden Treasure
 i(182955);	-- Cypher of Dampening
 i(182688);	-- Cypher of Obfuscation
+i(185963);	-- Diviner's Rune Chit
 i(169232);	-- Dud Blast Canister
 i(143656);	-- Echo of Time (N)
 i(143657);	-- Echo of Time (H)
@@ -280,6 +305,7 @@ i(169236);	-- Latch-and-Lock Trigger
 i(146952);	-- Legendary Tailor's Materials
 i(146977);	-- Legendary Tanner's Kit
 i(147209);	-- Legendary Wardenscale Supplies
+i(186157);	-- Lodestaff
 i(168280);	-- Lost Scale of the Scarlet Broodmother
 i(147582);	-- Mark of the Sentinax
 i(79269);	-- Marsh Lily
@@ -294,10 +320,14 @@ i(169231);	-- Optical Override Drive
 i(163601);	-- Overgrown Anchor Weed
 i(167830);	-- Petrified Ebony Scale
 i(169325);	-- Petrified Ebony Scale
+i(187529);	-- Phylactery Shard (N)
+i(187530);	-- Phylactery Shard (H)
+i(187531);	-- Phylactery Shard (M)
 i(171989);	-- Pouch of Spores
 i(174078);	-- Primrose's Pyrotechnic Powder
 i(169237);	-- Pulsating Marble
 i(168184);	-- Rare Metal
+i(160983);	-- Recruitment Orders
 i(169230);	-- Reflective Plating
 i(167875);	-- Reforged Dreamglow Dragonscale
 i(169252);	-- Resonant Pearl
@@ -386,7 +416,7 @@ i(137215);	-- Cut Azsunite.  You get it for a split second after completing the 
 -- Recipes (Not actual recipes)
 i(168326);	-- Eye of Theras
 i(127772);	-- Gemcutter Module: Haste
-i(171315); 	-- Reuse me (MTMM)
+i(171315);	-- Reuse me (MTMM)
 
 
 
@@ -410,6 +440,7 @@ i(181361);	-- Court Gossip
 i(173789);	-- Cross Bun
 i(179535);	-- Crumbling Pride Extractors
 i(6351);	-- Dented Crate
+i(181454);	-- Duskmire Rose
 i(173788);	-- Dusty Bun
 i(118265);	-- Echoing Betrayal
 i(2460);	-- Elixir of Tongues
@@ -445,6 +476,7 @@ i(179392);	-- Orb of Burgeoning Ambition
 i(72201);	-- Plump Intestines
 i(9316);	-- Prismatic Punch Card
 i(183987);	-- Prisoner Cage Key
+i(185615);	-- Recovered Phantasma
 i(79104);	-- Rusty Watering Can
 i(171210);	-- Satchel of Nature's Bounty
 i(139590);	-- Scroll of Teleport: Ravenholdt
@@ -452,6 +484,7 @@ i(6357);	-- Sealed Crate
 i(88496);	-- Sealed Crate
 i(179295);	-- Squeaky Bat
 i(173776);	-- Stale Loaf
+i(182186);	-- Stolen Memento
 i(67495);	-- Strange Bloated Stomach
 i(160378);	-- Strongarm Stout
 i(170379);	-- Sunwarmed Sand
@@ -482,6 +515,7 @@ i(162109);	-- [Storm Silver Spurs]
 i(162110);	-- [Disenchanting Rod]
 i(162111);	-- [Monelite Fish Finder]
 i(162111);	-- [Kaleidoscopic Lens]
+i(163826);	-- Raider's Supply Cache
 
 -- Bfa Quest Items
 i(169473);	-- Dormant Scale of the Blue Aspect
@@ -519,4 +553,5 @@ i(150750);	-- Moonkissed Antidote
 -- Miscellaneous
 i(89427);	-- Ancient Mogu Treasure
 i(85224);	-- Basic Seed Pack
+i(140360);	-- Rockwurm Barb
 i(153119);	-- Wyrmtongue Cache of Finery

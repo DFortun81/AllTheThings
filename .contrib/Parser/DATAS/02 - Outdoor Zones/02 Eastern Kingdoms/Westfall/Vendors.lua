@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(52, {	-- Westfall
+		m(WESTFALL, {
 			n(VENDORS, {
 				n(844, {	-- Antonio Perelli <Traveling Salesman>
 					["description"] = "This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest.  If you cannot find him in this zone, check one of the other three.|r",
@@ -24,7 +24,7 @@ _.Zones =
 				}),
 				n(843, {	-- Gina MacGregor <Trade Supplies>
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 57.6, 53.9, 52 },
+					["coord"] = { 57.6, 53.9, WESTFALL },
 					["g"] = {
 						i(6274, {	-- Pattern: Blue Overalls
 							["isLimited"] = true,
@@ -42,7 +42,7 @@ _.Zones =
 				}),
 				n(4305, {	-- Kriggon Talsone <Fisherman>
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 36.2, 90.0, 52 },
+					["coord"] = { 36.2, 90.0, WESTFALL },
 					["g"] = {
 						i(5528),	-- Recipe: Clam Chowder
 						i(6368),	-- Recipe: Rainbow Fin Albacore
@@ -52,7 +52,7 @@ _.Zones =
 				}),
 				n(1668, {	-- William MacGregor <Bowyer>
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 57.7, 53.7, 52 },
+					["coord"] = { 57.7, 53.7, WESTFALL },
 					["g"] = {
 						i(11304, {	-- Fine Longbow
 							["isLimited"] = true,

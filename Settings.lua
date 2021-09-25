@@ -86,6 +86,7 @@ local GeneralSettingsBase = {
 		["AccountWide:Achievements"] = true,
 		["AccountWide:AzeriteEssences"] = false,
 		-- ["AccountWide:BattlePets"] = true,
+		["AccountWide:Conduits"] = true,
 		["AccountWide:FlightPaths"] = true,
 		["AccountWide:Followers"] = true,
 		-- ["AccountWide:Heirlooms"] = true,
@@ -95,12 +96,14 @@ local GeneralSettingsBase = {
 		["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
 		["AccountWide:Reputations"] = true,
+		["AccountWide:RuneforgeLegendaries"] = true,
 		["AccountWide:Titles"] = true,
 		-- ["AccountWide:Toys"] = true,
 		-- ["AccountWide:Transmog"] = true,
 		["Thing:Achievements"] = true,
 		["Thing:AzeriteEssences"] = true,
 		["Thing:BattlePets"] = true,
+		["Thing:Conduits"] = false,
 		["Thing:FlightPaths"] = true,
 		["Thing:Followers"] = true,
 		["Thing:Heirlooms"] = true,
@@ -112,11 +115,13 @@ local GeneralSettingsBase = {
 		["Thing:QuestBreadcrumbs"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
+		["Thing:RuneforgeLegendaries"] = true,
 		["Thing:Titles"] = true,
 		["Thing:Toys"] = true,
 		["Thing:Transmog"] = true,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
+		["Skip:AutoRefresh"] = false,
 	},
 };
 local FilterSettingsBase = {
@@ -131,6 +136,7 @@ local TooltipSettingsBase = {
 		["Auto:ProfessionList"] = true,
 		["Auto:AH"] = true,
 		["Celebrate"] = true,
+		["Screenshot"] = false,
 		["Channel"] = "master",
 		["ClassRequirements"] = true,
 		["Descriptions"] = true,
@@ -146,6 +152,7 @@ local TooltipSettingsBase = {
 		["Models"] = true,
 		["LiveScan"] = false,
 		["Locations"] = 5,
+		["Lore"] = true,
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,
 		["Precision"] = 2,
@@ -164,6 +171,7 @@ local TooltipSettingsBase = {
 		["SourceLocations:Completed"] = true,
 		["SourceLocations:Creatures"] = true,
 		["SourceLocations:Things"] = true,
+		["DropChances"] = true,
 		["SpecializationRequirements"] = true,
 		["SummarizeThings"] = true,
 		["Warn:Difficulty"] = false,
@@ -203,6 +211,15 @@ settings.Initialize = function(self)
 	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase);
 	FilterSettingsBase.__index = app.Presets[app.Class] or app.Presets.ALL;
 
+	-- force re-enable of optional filters which become not optional
+	-- (any filterID's here must be 'true' in all class presets)
+	local reEnableFilters = { };
+	for _,filterID in ipairs(reEnableFilters) do
+		if not AllTheThingsSettingsPerCharacter.Filters[filterID] then
+			AllTheThingsSettingsPerCharacter.Filters[filterID] = nil;
+		end
+	end
+
 	self.ContainsSlider:SetValue(self:GetTooltipSetting("ContainsCount") or 25);
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations") or 5);
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
@@ -216,7 +233,6 @@ settings.Initialize = function(self)
 		app.Minimap:Hide();
 	end
 	OnClickForTab(self.Tabs[1]);
-	self:Refresh();
 	self:UpdateMode();
 
 	if self:GetTooltipSetting("Auto:MainList") then
@@ -236,25 +252,27 @@ settings.GetFilter = function(self, filterID)
 	return AllTheThingsSettingsPerCharacter.Filters[filterID];
 end
 settings.GetModeString = function(self)
-	local mode = L["MODE"] .. " " .. app.Version;		-- L["MODE"] = "Mode"
+	local mode = L["MODE"] .. " " .. app.Version;
 	if settings:Get("Thing:Transmog") or settings:Get("DebugMode") then
 		if self:Get("Completionist") then
-			mode = L["TITLE_COMPLETIONIST"] .. mode;	-- L["TITLE_COMPLETIONIST"] = "Completionist ";
+			mode = L["TITLE_COMPLETIONIST"] .. mode;
 		else
-			mode = L["TITLE_UNIQUE_APPEARANCE"] .. mode;		-- L["TITLE_UNIQUE_APPEARANCE"] = "Unique Appearance ";
+			mode = L["TITLE_UNIQUE_APPEARANCE"] .. mode;
 		end
 	end
 	if self:Get("DebugMode") then
-		mode = L["TITLE_DEBUG"] .. mode;		-- L["TITLE_DEBUG"] = "Debug "
+		mode = L["TITLE_DEBUG"] .. mode;
 	else
 		if self:Get("AccountMode") then
 			if self:Get("FactionMode") then
 				mode = FACTION .. " " .. mode;
 			else
-				mode = L["TITLE_ACCOUNT"] .. mode;		-- L["TITLE_ACCOUNT"] = "Account ";
+				mode = L["TITLE_ACCOUNT"] .. mode;
 			end
 		elseif self:Get("MainOnly") and not self:Get("Completionist") then
-			mode = mode .. L["TITLE_MAIN_ONLY"];		-- L["TITLE_MAIN_ONLY"] = " (Main Only)";
+			mode = app.ClassName .. " " .. mode .. L["TITLE_MAIN_ONLY"];
+		else
+			mode = app.ClassName .. " " .. mode;
 		end
 
 		local things = {};
@@ -263,26 +281,45 @@ settings.GetModeString = function(self)
 		for key,_ in pairs(GeneralSettingsBase.__index) do
 			if string.sub(key, 1, 6) == "Thing:" then
 				totalThingCount = totalThingCount + 1;
-				if settings:Get(key) then
+				if settings:Get(key) and
+					-- Quest Breadcrumbs only count when Quests are enabled
+					(key ~= "Thing:QuestBreadcrumbs" or settings:Get("Thing:Quests")) and
+					-- Heirloom Upgrades only count when Heirlooms are enabled
+					(key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
+					then
 					thingCount = thingCount + 1;
 					table.insert(things, string.sub(key, 7));
 				end
 			end
 		end
 		if thingCount == 0 then
-			mode = L["TITLE_NONE_THINGS"] .. mode;		-- L["TITLE_NONE_THINGS"] = "None of the Things ";
+			mode = L["TITLE_NONE_THINGS"] .. mode;
 		elseif thingCount == 1 then
-			mode = things[1] .. L["TITLE_ONLY"] .. mode;		-- L["TITLE_ONLY"] = " Only ";
+			mode = things[1] .. L["TITLE_ONLY"] .. mode;
 		elseif thingCount == 2 then
 			mode = things[1] .. " + " .. things[2] .. L["TITLE_ONLY"] .. mode;
 		elseif thingCount == totalThingCount then
-			mode = L["TITLE_INSANE"] .. mode;		-- L["TITLE_INSANE"] = "Insane ";
+			-- only insane if not hiding anything!
+			if
+			-- Hiding BoE's
+			(not self:Get("Filter:BoEs") and self:Get("Hide:BoEs")) or
+			-- Hiding PvP
+			self:Get("Hide:PvP")
+			then
+				-- don't add insane :)
+			else
+				mode = L["TITLE_INSANE"] .. mode;
+			end
 		elseif not settings:Get("Thing:Transmog") then
-			mode = L["TITLE_SOME_THINGS"] .. mode;		-- L["TITLE_SOME_THINGS"] = "Some of the Things ";
+			mode = L["TITLE_SOME_THINGS"] .. mode;
 		end
 	end
 	if self:Get("Filter:ByLevel") then
-		mode = L["TITLE_LEVEL"] .. app.Level .. " " .. mode;		-- L["TITLE_LEVEL"] = "Level ";
+		mode = L["TITLE_LEVEL"] .. app.Level .. " " .. mode;
+	end
+	-- Waiting on Refresh to properly show values
+	if self.NeedsRefresh then
+		mode = L["AFTER_REFRESH"] .. ": " .. mode;
 	end
 	return mode;
 end
@@ -296,7 +333,12 @@ settings.GetShortModeString = function(self)
 		for key,_ in pairs(GeneralSettingsBase.__index) do
 			if string.sub(key, 1, 6) == "Thing:" then
 				totalThingCount = totalThingCount + 1;
-				if settings:Get(key) then
+				if settings:Get(key) and
+					-- Quest Breadcrumbs only count when Quests are enabled
+					(key ~= "Thing:QuestBreadcrumbs" or settings:Get("Thing:Quests")) and
+					-- Heirloom Upgrades only count when Heirlooms are enabled
+					(key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
+					then
 					thingCount = thingCount + 1;
 					table.insert(things, string.sub(key, 7));
 				end
@@ -306,9 +348,23 @@ settings.GetShortModeString = function(self)
 		if thingCount == 0 then
 			style = "N";
 		elseif thingCount == totalThingCount then
-			style = "I";
+			-- only insane if not hiding anything!
+			if
+			-- Hiding BoE's
+			(not self:Get("Filter:BoEs") and self:Get("Hide:BoEs")) or
+			-- Hiding PvP
+			self:Get("Hide:PvP")
+			then
+				-- don't add insane :)
+			else
+				style = "I";
+			end
 		else
 			style = "";
+		end
+		-- Waiting on Refresh to properly show values
+		if self.NeedsRefresh then
+			style = "R:" .. " " .. style;
 		end
 		if self:Get("Completionist") then
 			if self:Get("AccountMode") then
@@ -351,8 +407,7 @@ settings.Set = function(self, setting, value)
 end
 settings.SetFilter = function(self, filterID, value)
 	AllTheThingsSettingsPerCharacter.Filters[filterID] = value;
-	self:Refresh();
-	app:RefreshData(nil,nil,true);
+	self:UpdateMode(1);
 end
 settings.SetTooltipSetting = function(self, setting, value)
 	AllTheThingsSettings.Tooltips[setting] = value;
@@ -364,6 +419,8 @@ settings.SetPersonal = function(self, setting, value)
 	self:Refresh();
 end
 settings.Refresh = function(self)
+	settings.SkipAutoRefreshCheckbox:OnRefresh();
+
 	for i,tab in ipairs(self.Tabs) do
 		if tab.OnRefresh then tab:OnRefresh(); end
 		for j,o in ipairs(tab.objects) do
@@ -372,11 +429,24 @@ settings.Refresh = function(self)
 	end
 end
 settings.CreateCheckBox = function(self, text, OnRefresh, OnClick)
+	if not text then
+		print("Invalid Checkbox Info");
+		text = "INVALID CHECKBOX";
+	end
 	local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, "InterfaceOptionsCheckButtonTemplate");
-	table.insert(self.MostRecentTab.objects, cb);
+	if self.MostRecentTab then table.insert(self.MostRecentTab.objects, cb); end
 	cb:SetScript("OnClick", OnClick);
 	cb.OnRefresh = OnRefresh;
 	cb.Text:SetText(text);
+	local textWidth = math.ceil(cb.Text:GetUnboundedStringWidth());
+	-- print(cb.Text,
+	-- 	cb.Text and cb.Text.GetText and cb.Text:GetText(),
+	-- 	cb.GetText and cb:GetText(),
+	-- 	cb.GetTextWidth and cb:GetTextWidth(),
+	-- 	cb.Text and cb.Text.GetWidth and cb.Text:GetWidth(),
+	-- 	cb.Text and cb.Text.GetUnboundedStringWidth and cb.Text:GetUnboundedStringWidth()
+	-- )
+	cb.Text:SetWidth(textWidth);
 	cb:SetHitRectInsets(0,0 - cb.Text:GetWidth(),0,0);
 	return cb;
 end
@@ -466,15 +536,16 @@ settings.SetAccountMode = function(self, accountMode)
 end
 settings.ToggleAccountMode = function(self)
 	self:SetAccountMode(not self:Get("AccountMode"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetCompletionistMode = function(self, completionistMode)
 	self:Set("Completionist", completionistMode);
-	self:UpdateMode();
-	wipe(ATTAccountWideData.Sources);
-	app.RefreshCollections();
+	app.DoRefreshAppearanceSources = true;
+	self:UpdateMode(1);
 end
 settings.ToggleCompletionistMode = function(self)
 	self:SetCompletionistMode(not self:Get("Completionist"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetDebugMode = function(self, debugMode)
 	self:Set("DebugMode", debugMode);
@@ -485,20 +556,17 @@ settings.SetDebugMode = function(self, debugMode)
 		settings:SetCompletedGroups(true, true);
 		settings:SetCollectedThings(true, true);
 		if not self:Get("Thing:Transmog") then
-			wipe(ATTAccountWideData.Sources);
-			app.RefreshCollections();
-			debugMode = "R";
+			app.DoRefreshAppearanceSources = true;
 		end
 	else
 		settings:SetCompletedGroups(settings:Get("Cache:CompletedGroups"), true);
 		settings:SetCollectedThings(settings:Get("Cache:CollectedThings"), true);
 	end
-	if not debugMode or debugMode ~= "R" then
-		self:UpdateMode(1);
-	end
+	self:UpdateMode(1);
 end
 settings.ToggleDebugMode = function(self)
 	self:SetDebugMode(not self:Get("DebugMode"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetFactionMode = function(self, factionMode)
 	self:Set("FactionMode", factionMode);
@@ -506,6 +574,7 @@ settings.SetFactionMode = function(self, factionMode)
 end
 settings.ToggleFactionMode = function(self)
 	self:SetFactionMode(not self:Get("FactionMode"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetMainOnlyMode = function(self, mainOnly)
 	self:Set("MainOnly", mainOnly);
@@ -513,6 +582,7 @@ settings.SetMainOnlyMode = function(self, mainOnly)
 end
 settings.ToggleMainOnlyMode = function(self)
 	self:SetMainOnlyMode(not self:Get("MainOnly"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetCompletedThings = function(self, checked)
 	self:Set("Show:CompletedGroups", checked);
@@ -523,6 +593,7 @@ settings.SetCompletedThings = function(self, checked)
 end
 settings.ToggleCompletedThings = function(self)
 	self:SetCompletedThings(not self:Get("Show:CompletedGroups"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetCompletedGroups = function(self, checked, skipRefresh)
 	self:Set("Show:CompletedGroups", checked);
@@ -531,6 +602,7 @@ end
 settings.ToggleCompletedGroups = function(self)
 	self:SetCompletedGroups(not self:Get("Show:CompletedGroups"));
 	settings:Set("Cache:CompletedGroups", self:Get("Show:CompletedGroups"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetCollectedThings = function(self, checked, skipRefresh)
 	self:Set("Show:CollectedThings", checked);
@@ -539,6 +611,7 @@ end
 settings.ToggleCollectedThings = function(self)
 	settings:SetCollectedThings(not self:Get("Show:CollectedThings"));
 	settings:Set("Cache:CollectedThings", self:Get("Show:CollectedThings"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetHideBOEItems = function(self, checked)
 	self:Set("Hide:BoEs", checked);
@@ -546,6 +619,14 @@ settings.SetHideBOEItems = function(self, checked)
 end
 settings.ToggleBOEItems = function(self)
 	self:SetHideBOEItems(not self:Get("Hide:BoEs"));
+	self:ForceRefreshFromToggle();
+end
+-- When we toggle a setting directly (keybind etc.) the refresh should always take place immediately,
+-- so force it if it is being skipped
+settings.ForceRefreshFromToggle = function(self)
+	if self:Get("Skip:AutoRefresh") then
+		self:UpdateMode("FORCE");
+	end
 end
 settings.UpdateMode = function(self, doRefresh)
 	if self:Get("Completionist") then
@@ -568,15 +649,19 @@ settings.UpdateMode = function(self, doRefresh)
 		app.SeasonalItemFilter = app.NoFilter;
 		app.UnobtainableItemFilter = app.NoFilter;
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
-		app.ShowIncompleteThings = app.NoFilter;
+		app.ShowTrackableThings = app.NoFilter;
 		app.ItemTypeFilter = app.NoFilter;
 		app.ClassRequirementFilter = app.NoFilter;
 		app.RaceRequirementFilter = app.NoFilter;
 		app.RequiredSkillFilter = app.NoFilter;
+		app.RequireFactionFilter = app.NoFilter;
+		app.RequireCustomCollectFilter = app.NoFilter;
+		app.DefaultFilter = app.NoFilter;
 
 		app.AccountWideAchievements = true;
 		app.AccountWideAzeriteEssences = true;
 		app.AccountWideBattlePets = true;
+		app.AccountWideConduits = true;
 		app.AccountWideFlightPaths = true;
 		app.AccountWideFollowers = true;
 		app.AccountWideIllusions = true;
@@ -585,6 +670,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.AccountWideQuests = true;
 		app.AccountWideRecipes = true;
 		app.AccountWideReputations = true;
+		app.AccountWideRuneforgeLegendaries = true;
 		app.AccountWideSelfieFilters = true;
 		app.AccountWideTitles = true;
 		app.AccountWideToys = true;
@@ -593,6 +679,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleAchievements = true;
 		app.CollectibleAzeriteEssences = true;
 		app.CollectibleBattlePets = true;
+		app.CollectibleConduits = true;
 		app.CollectibleFlightPaths = true;
 		app.CollectibleFollowers = true;
 		app.CollectibleHeirlooms = true;
@@ -604,6 +691,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleBreadcrumbs = true;
 		app.CollectibleRecipes = true;
 		app.CollectibleReputations = true;
+		app.CollectibleRuneforgeLegendaries = true;
 		app.CollectibleTitles = true;
 		app.CollectibleToys = true;
 		app.CollectibleTransmog = true;
@@ -613,6 +701,7 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.GroupFilter = app.FilterItemClass;
+		app.DefaultFilter = app.Filter;
 		if app.GetDataMember("FilterSeasonal") then
 			app.SeasonalItemFilter = app.FilterItemClass_SeasonalItem;
 		else
@@ -623,10 +712,10 @@ settings.UpdateMode = function(self, doRefresh)
 		else
 			app.UnobtainableItemFilter = app.NoFilter;
 		end
-		if self:Get("Show:IncompleteThings") then
-			app.ShowIncompleteThings = app.FilterItemTrackable;
+		if self:Get("Show:TrackableThings") then
+			app.ShowTrackableThings = app.FilterItemTrackable;
 		else
-			app.ShowIncompleteThings = app.Filter;
+			app.ShowTrackableThings = app.Filter;
 		end
 
 		app.AccountWideAchievements = self:Get("AccountWide:Achievements");
@@ -634,12 +723,14 @@ settings.UpdateMode = function(self, doRefresh)
 		app.AccountWideBattlePets = self:Get("AccountWide:BattlePets");
 		app.AccountWideFlightPaths = self:Get("AccountWide:FlightPaths");
 		app.AccountWideFollowers = self:Get("AccountWide:Followers");
+		app.AccountWideConduits = self:Get("AccountWide:Conduits");
 		app.AccountWideIllusions = self:Get("AccountWide:Illusions");
 		app.AccountWideMounts = self:Get("AccountWide:Mounts");
 		app.AccountWideMusicRollsAndSelfieFilters = self:Get("AccountWide:MusicRollsAndSelfieFilters");
 		app.AccountWideQuests = self:Get("AccountWide:Quests");
 		app.AccountWideRecipes = self:Get("AccountWide:Recipes");
 		app.AccountWideReputations = self:Get("AccountWide:Reputations");
+		app.AccountWideRuneforgeLegendaries = self:Get("AccountWide:RuneforgeLegendaries");
 		app.AccountWideTitles = self:Get("AccountWide:Titles");
 		app.AccountWideToys = self:Get("AccountWide:Toys");
 		app.AccountWideTransmog = self:Get("AccountWide:Transmog");
@@ -649,6 +740,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleBattlePets = self:Get("Thing:BattlePets");
 		app.CollectibleFlightPaths = self:Get("Thing:FlightPaths");
 		app.CollectibleFollowers = self:Get("Thing:Followers");
+		app.CollectibleConduits = self:Get("Thing:Conduits");
 		app.CollectibleHeirlooms = self:Get("Thing:Heirlooms");
 		app.CollectibleHeirloomUpgrades = self:Get("Thing:HeirloomUpgrades");
 		app.CollectibleIllusions = self:Get("Thing:Illusions");
@@ -658,6 +750,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleBreadcrumbs = self:Get("Thing:QuestBreadcrumbs");
 		app.CollectibleRecipes = self:Get("Thing:Recipes");
 		app.CollectibleReputations = self:Get("Thing:Reputations");
+		app.CollectibleRuneforgeLegendaries = self:Get("Thing:RuneforgeLegendaries");
 		app.CollectibleTitles = self:Get("Thing:Titles");
 		app.CollectibleToys = self:Get("Thing:Toys");
 		app.CollectibleTransmog = self:Get("Thing:Transmog");
@@ -666,6 +759,8 @@ settings.UpdateMode = function(self, doRefresh)
 			app.ItemTypeFilter = app.NoFilter;
 			app.ClassRequirementFilter = app.NoFilter;
 			app.RequiredSkillFilter = app.NoFilter;
+			app.RequireFactionFilter = app.NoFilter;
+			app.RequireCustomCollectFilter = app.NoFilter;
 			app.MODE_ACCOUNT = true;
 			if self:Get("FactionMode") then
 				app.RaceRequirementFilter = app.FilterItemClass_RequireRacesCurrentFaction;
@@ -677,12 +772,15 @@ settings.UpdateMode = function(self, doRefresh)
 			app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
 			app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
 			app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
+			app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
+			app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
 
 			app.MODE_ACCOUNT = nil;
 		end
 
 		app.MODE_DEBUG = nil;
 	end
+	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
 	if self:Get("Show:CompletedGroups") then
 		app.GroupVisibilityFilter = app.NoFilter;
 	else
@@ -708,6 +806,11 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		app.RequireBindingFilter = app.NoFilter;
 	end
+	if self:Get("Hide:PvP") then
+		app.PvPFilter = app.FilterItemClass_PvP;
+	else
+		app.PvPFilter = app.NoFilter;
+	end
 	app:UnregisterEvent("PLAYER_LEVEL_UP");
 	if self:Get("Filter:ByLevel") and not self:Get("DebugMode") then
 		app:RegisterEvent("PLAYER_LEVEL_UP");
@@ -722,8 +825,18 @@ settings.UpdateMode = function(self, doRefresh)
 
 	-- if auto-refresh
 	if doRefresh then
-		app:RefreshData(nil,nil,true);
+		self.NeedsRefresh = true;
+		if doRefresh == "FORCE" or not settings:Get("Skip:AutoRefresh") then
+			self.NeedsRefresh = nil;
+			if app.DoRefreshAppearanceSources then
+				app.RefreshAppearanceSources();
+			end
+			app:RefreshData(nil,nil,true);
+		end
 	end
+
+	-- ensure the settings pane itself is refreshed
+	self:Refresh();
 end
 
 -- The ALL THE THINGS Epic Logo!
@@ -742,6 +855,17 @@ f:SetScale(1.5);
 f:Show();
 settings.title = f;
 
+f = settings:CreateCheckBox(L["SKIP_AUTO_REFRESH"],
+function(self)
+	self:SetChecked(settings:Get("Skip:AutoRefresh"));
+end,
+function(self)
+	settings:Set("Skip:AutoRefresh", self:GetChecked());
+end);
+f:SetATTTooltip(L["SKIP_AUTO_REFRESH_TOOLTIP"]);
+f:SetPoint("TOPLEFT", settings.title, "TOPRIGHT", 4, -2);
+settings.SkipAutoRefreshCheckbox = f;
+
 f = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 f:SetPoint("TOPRIGHT", settings, "TOPRIGHT", -8, -8);
 f:SetJustifyH("RIGHT");
@@ -751,22 +875,22 @@ settings.version = f;
 
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("TOPLEFT", settings, "BOTTOMLEFT", 0, -6);
-f:SetText("https://www.twitch.tv/crieve");
+f:SetText("discord.gg/allthethings");
 f:SetWidth(230);
 f:SetHeight(30);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", settings.ShowCopyPasteDialog);
-f:SetATTTooltip(L["TWITCH_BUTTON_TOOLTIP"]);
+f:SetATTTooltip(L["DISCORD_BUTTON_TOOLTIP"]);
 settings.twitch = f;
 
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("TOPLEFT", settings.twitch, "TOPRIGHT", 4, 0);
-f:SetText("https://discord.gg/9GFDsgy");
+f:SetText("twitch.tv/crieve");
 f:SetWidth(200);
 f:SetHeight(30);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", settings.ShowCopyPasteDialog);
-f:SetATTTooltip(L["DISCORD_BUTTON_TOOLTIP"]);
+f:SetATTTooltip(L["TWITCH_BUTTON_TOOLTIP"]);
 settings.community = f;
 
 ------------------------------------------
@@ -775,7 +899,7 @@ settings.community = f;
 local line;
 (function()
 local tab = settings:CreateTab(L["GENERAL_TAB"]);
-tab:SetPoint("TOPLEFT", settings.logo, "BOTTOMRIGHT", 16, 0);
+tab:SetPoint("TOPLEFT", settings.logo, "BOTTOMRIGHT", -20, 0);
 line = settings:CreateTexture(nil, "ARTWORK");
 line:SetPoint("LEFT", settings, "LEFT", 4, 0);
 line:SetPoint("RIGHT", settings, "RIGHT", -4, 0);
@@ -792,15 +916,15 @@ ModeLabel.OnRefresh = function(self)
 	self:SetText(settings:GetModeString());
 end;
 
-local DebugModeCheckBox = settings:CreateCheckBox(L["DEBUG_MODE"],
-function(self)
-	self:SetChecked(settings:Get("DebugMode"));
-end,
-function(self)
-	settings:SetDebugMode(self:GetChecked());
-end);
-DebugModeCheckBox:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"]);
-DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -1);
+-- local DebugModeCheckBox = settings:CreateCheckBox(L["DEBUG_MODE"],
+-- function(self)
+-- 	self:SetChecked(settings:Get("DebugMode"));
+-- end,
+-- function(self)
+-- 	settings:SetDebugMode(self:GetChecked());
+-- end);
+-- DebugModeCheckBox:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"]);
+-- DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -1);
 
 local UniqueModeCheckBox = settings:CreateCheckBox(L["UNIQUE_MODE"],
 function(self)
@@ -817,7 +941,7 @@ function(self)
 	settings:SetCompletionistMode(not self:GetChecked());
 end);
 UniqueModeCheckBox:SetATTTooltip(L["UNIQUE_MODE_TOOLTIP"]);
-UniqueModeCheckBox:SetPoint("TOPLEFT", DebugModeCheckBox, "BOTTOMLEFT", 0, 4);
+UniqueModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -1);
 
 local CompletionistModeCheckBox = settings:CreateCheckBox(L["COMPLETIONIST_MODE"],
 function(self)
@@ -871,7 +995,7 @@ end);
 AccountModeCheckBox:SetATTTooltip(L["ACCOUNT_MODE_TOOLTIP"]);
 AccountModeCheckBox:SetPoint("TOPLEFT", MainOnlyModeCheckBox, "BOTTOMLEFT", -5, 4);
 
-local FactionModeCheckBox = settings:CreateCheckBox("Only Current Faction",
+local FactionModeCheckBox = settings:CreateCheckBox(L["FACTION_MODE"],
 function(self)
 	self:SetChecked(settings:Get("FactionMode"));
 	if settings:Get("DebugMode") or not settings:Get("AccountMode") then
@@ -890,7 +1014,7 @@ FactionModeCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "TOPLEFT", 170, 0);
 
 -- This creates the "Precision" slider.
 local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", settings, "OptionsSliderTemplate");
-PrecisionSlider:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
+PrecisionSlider:SetPoint("RIGHT", settings, "RIGHT", -25, 0);
 PrecisionSlider:SetPoint("TOP", ModeLabel, "BOTTOM", 0, -12);
 table.insert(settings.MostRecentTab.objects, PrecisionSlider);
 settings.PrecisionSlider = PrecisionSlider;
@@ -919,7 +1043,7 @@ end);
 -- This creates the "Minimap Button Size" slider.
 local MinimapButtonSizeSlider = CreateFrame("Slider", "ATTMinimapButtonSizeSlider", settings, "OptionsSliderTemplate");
 MinimapButtonSizeSlider:SetPoint("LEFT", PrecisionSlider, "LEFT", 0, 0);
-MinimapButtonSizeSlider:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, -24);
+MinimapButtonSizeSlider:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, -22);
 MinimapButtonSizeSlider:SetPoint("RIGHT", PrecisionSlider, "RIGHT", 0, 0);
 table.insert(settings.MostRecentTab.objects, MinimapButtonSizeSlider);
 settings.MinimapButtonSizeSlider = MinimapButtonSizeSlider;
@@ -954,7 +1078,7 @@ MinimapButtonSizeSlider.OnRefresh = function(self)
 end;
 
 local ThingsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ThingsLabel:SetPoint("TOPLEFT", AccountModeCheckBox, "BOTTOMLEFT", 0, -6);
+ThingsLabel:SetPoint("TOPLEFT", AccountModeCheckBox, "BOTTOMLEFT", 0, -3);
 ThingsLabel:SetJustifyH("LEFT");
 ThingsLabel:SetText(L["THINGS_LABEL_TEXT"]);
 ThingsLabel:Show();
@@ -1016,12 +1140,10 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Transmog", self:GetChecked());
-	settings:UpdateMode();
 	if self:GetChecked() then
-		wipe(ATTAccountWideData.Sources);
-		app.RefreshCollections();
+		app.DoRefreshAppearanceSources = true;
 	end
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 TransmogCheckBox:SetATTTooltip(L["TMOG_CHECKBOX_TOOLTIP"]);
 TransmogCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1036,42 +1158,6 @@ function(self)
 	print(L["ACCOUNT_WIDE_TRANSMOG_TOOLTIP"]);
 end);
 TransmogAccountWideCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "TOPLEFT", 220, 0);
-
-local AzeriteEssencesCheckBox = settings:CreateCheckBox(L["AZERITE_ESSENCES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:AzeriteEssences"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:AzeriteEssences", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-AzeriteEssencesCheckBox:SetATTTooltip(L["AZERITE_ESSENCES_CHECKBOX_TOOLTIP"]);
-AzeriteEssencesCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "BOTTOMLEFT", 0, 4);
-
-local AzeriteEssencesAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
-function(self)
-	self:SetChecked(settings:Get("AccountWide:AzeriteEssences"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:AzeriteEssences") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("AccountWide:AzeriteEssences", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-AzeriteEssencesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP"]);
-AzeriteEssencesAccountWideCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "TOPLEFT", 220, 0);
 
 local BattlePetsCheckBox = settings:CreateCheckBox(L["BATTLE_PETS_CHECKBOX"],
 function(self)
@@ -1089,7 +1175,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 BattlePetsCheckBox:SetATTTooltip(L["BATTLE_PETS_CHECKBOX_TOOLTIP"]);
-BattlePetsCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "BOTTOMLEFT", 0, 4);
+BattlePetsCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "BOTTOMLEFT", 0, 4);
 
 local BattlePetsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
@@ -1172,6 +1258,42 @@ end);
 FollowersAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_FOLLOWERS_TOOLTIP"]);
 FollowersAccountWideCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "TOPLEFT", 220, 0);
 
+local AzeriteEssencesCheckBox = settings:CreateCheckBox(L["AZERITE_ESSENCES_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Thing:AzeriteEssences"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:AzeriteEssences", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+AzeriteEssencesCheckBox:SetATTTooltip(L["AZERITE_ESSENCES_CHECKBOX_TOOLTIP"]);
+AzeriteEssencesCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
+
+local AzeriteEssencesAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
+function(self)
+	self:SetChecked(settings:Get("AccountWide:AzeriteEssences"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:AzeriteEssences") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:AzeriteEssences", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+AzeriteEssencesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP"]);
+AzeriteEssencesAccountWideCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "TOPLEFT", 220, 0);
+
 local HeirloomsCheckBox = settings:CreateCheckBox(L["HEIRLOOMS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Heirlooms"));
@@ -1188,7 +1310,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 HeirloomsCheckBox:SetATTTooltip(L["HEIRLOOMS_CHECKBOX_TOOLTIP"]);
-HeirloomsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
+HeirloomsCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local HeirloomUpgradesCheckBox = settings:CreateCheckBox(L["HEIRLOOMS_UPGRADES_CHECKBOX"],
 function(self)
@@ -1327,7 +1449,6 @@ function(self)
 	settings:UpdateMode(1);
 end);
 QuestsCheckBox:SetATTTooltip(L["QUESTS_CHECKBOX_TOOLTIP"]);
-QuestsCheckBox.Text:SetWidth(50);
 QuestsCheckBox:SetPoint("TOPLEFT", MusicRollsAndSelfieFiltersCheckBox, "BOTTOMLEFT", 0, 4);
 
 local QuestBreadcrumbsCheckBox = settings:CreateCheckBox(L["QUESTS_BREADCRUMBS_CHECKBOX"],
@@ -1439,6 +1560,78 @@ end);
 ReputationsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_REPUTATIONS_TOOLTIP"]);
 ReputationsAccountWideCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "TOPLEFT", 220, 0);
 
+local RuneforgeLegendariesCheckBox = settings:CreateCheckBox(L["RUNEFORGELEGENDARIES_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Thing:RuneforgeLegendaries"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:RuneforgeLegendaries", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+RuneforgeLegendariesCheckBox:SetATTTooltip(L["RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP"]);
+RuneforgeLegendariesCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local RuneforgeLegendariesAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
+function(self)
+	self:SetChecked(settings:Get("AccountWide:RuneforgeLegendaries"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:RuneforgeLegendaries") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:RuneforgeLegendaries", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+RuneforgeLegendariesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP"]);
+RuneforgeLegendariesAccountWideCheckBox:SetPoint("TOPLEFT", RuneforgeLegendariesCheckBox, "TOPLEFT", 220, 0);
+
+local SoulbindConduitsCheckBox = settings:CreateCheckBox(L["SOULBINDCONDUITS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Thing:Conduits"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Conduits", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+SoulbindConduitsCheckBox:SetATTTooltip(L["SOULBINDCONDUITS_CHECKBOX_TOOLTIP"]);
+SoulbindConduitsCheckBox:SetPoint("TOPLEFT", RuneforgeLegendariesCheckBox, "BOTTOMLEFT", 0, 4);
+
+local SoulbindConduitsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
+function(self)
+	self:SetChecked(settings:Get("AccountWide:Conduits"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Conduits") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:Conduits", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+SoulbindConduitsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP"]);
+SoulbindConduitsAccountWideCheckBox:SetPoint("TOPLEFT", SoulbindConduitsCheckBox, "TOPLEFT", 220, 0);
+
 local TitlesCheckBox = settings:CreateCheckBox(L["TITLES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Titles"));
@@ -1455,7 +1648,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 TitlesCheckBox:SetATTTooltip(L["TITLES_CHECKBOX_TOOLTIP"]);
-TitlesCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
+TitlesCheckBox:SetPoint("TOPLEFT", SoulbindConduitsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local TitlesAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
 function(self)
@@ -1516,7 +1709,8 @@ function(self)
 	end
 end);
 ShowMinimapButtonCheckBox:SetATTTooltip(L["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"]);
-ShowMinimapButtonCheckBox:SetPoint("TOPLEFT", AchievementsAccountWideCheckBox, "TOPLEFT", 160, 24);
+ShowMinimapButtonCheckBox:SetPoint("LEFT", AchievementsAccountWideCheckBox.Text, "RIGHT", 50, 0);
+ShowMinimapButtonCheckBox:SetPoint("TOP", MinimapButtonSizeSlider.Label, "BOTTOM", 0, -2);
 
 local MinimapButtonStyleCheckBox = settings:CreateCheckBox(L["MINIMAP_BUTTON_STYLE_CHECKBOX"],
 function(self)
@@ -1546,7 +1740,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 ShowCompletedGroupsCheckBox:SetATTTooltip(L["SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP"]);
-ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", MinimapButtonStyleCheckBox, "BOTTOMLEFT", -4, -2);
+ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", MinimapButtonStyleCheckBox, "BOTTOMLEFT", -4, 0);
 
 local ShowCollectedThingsCheckBox = settings:CreateCheckBox(L["SHOW_COLLECTED_THINGS_CHECKBOX"],
 function(self)
@@ -1559,9 +1753,9 @@ end);
 ShowCollectedThingsCheckBox:SetATTTooltip(L["SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP"]);
 ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", ShowCompletedGroupsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowIncompleteThingsCheckBox = settings:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
+local ShowTrackableThingsCheckBox = settings:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:Get("Show:IncompleteThings"));
+	self:SetChecked(settings:Get("Show:TrackableThings"));
 	if settings:Get("DebugMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -1571,11 +1765,11 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("Show:IncompleteThings", self:GetChecked());
+	settings:Set("Show:TrackableThings", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ShowIncompleteThingsCheckBox:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"]);
-ShowIncompleteThingsCheckBox:SetPoint("TOPLEFT", ShowCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowTrackableThingsCheckBox:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"]);
+ShowTrackableThingsCheckBox:SetPoint("TOPLEFT", ShowCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowRepeatableThingsCheckBox = settings:CreateCheckBox(L["SHOW_REPEATABLE_THINGS_CHECKBOX"],
 function(self)
@@ -1593,7 +1787,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 ShowRepeatableThingsCheckBox:SetATTTooltip(L["SHOW_REPEATABLE_THINGS_CHECKBOX_TOOLTIP"]);
-ShowRepeatableThingsCheckBox:SetPoint("TOPLEFT", ShowIncompleteThingsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowRepeatableThingsCheckBox:SetPoint("TOPLEFT", ShowTrackableThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowRepeatableThingsFirstTimeCheckBox = settings:CreateCheckBox(L["FIRST_TIME_CHECKBOX"],
 function(self)
@@ -1629,7 +1823,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 FilterThingsByLevelCheckBox:SetATTTooltip(L["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"]);
-FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", ShowRepeatableThingsFirstTimeCheckBox, "BOTTOMLEFT", -4, -2);
+FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", ShowRepeatableThingsFirstTimeCheckBox, "BOTTOMLEFT", -4, 0);
 
 local HideBoEItemsCheckBox = settings:CreateCheckBox(L["HIDE_BOE_CHECKBOX"],
 function(self)
@@ -1666,6 +1860,29 @@ end);
 IgnoreFiltersForBoEsCheckBox:SetATTTooltip(L["IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP"]);
 IgnoreFiltersForBoEsCheckBox:SetPoint("TOPLEFT", HideBoEItemsCheckBox, "BOTTOMLEFT", 0, 4);
 
+local HidePvPItemsCheckBox = settings:CreateCheckBox(L["HIDE_PVP_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Hide:PvP"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Hide:PvP", self:GetChecked());
+	-- Remove once replacing PvP flags in data
+	local val = app.GetDataMember("UnobtainableItemFilters");
+	val[12] = not self:GetChecked();
+	app.SetDataMember("UnobtainableItemFilters", val);
+
+	settings:UpdateMode(1);
+end);
+HidePvPItemsCheckBox:SetATTTooltip(L["HIDE_PVP_CHECKBOX_TOOLTIP"]);
+HidePvPItemsCheckBox:SetPoint("TOPLEFT", IgnoreFiltersForBoEsCheckBox, "BOTTOMLEFT", 0, 4);
+
 local ExpandDifficultyCheckBox = settings:CreateCheckBox(L["EXPAND_DIFFICULTY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Expand:Difficulty"));
@@ -1674,7 +1891,7 @@ function(self)
 	settings:SetTooltipSetting("Expand:Difficulty", self:GetChecked());
 end);
 ExpandDifficultyCheckBox:SetATTTooltip(L["EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP"]);
-ExpandDifficultyCheckBox:SetPoint("TOPLEFT", IgnoreFiltersForBoEsCheckBox, "BOTTOMLEFT", 0, -2);
+ExpandDifficultyCheckBox:SetPoint("TOPLEFT", HidePvPItemsCheckBox, "BOTTOMLEFT", 0, 0);
 
 local WarnDifficultyCheckBox = settings:CreateCheckBox(L["WARN_DIFFICULTY_CHECKBOX"],
 function(self)
@@ -1694,7 +1911,7 @@ function(self)
 	settings:SetTooltipSetting("Report:Collected", self:GetChecked());
 end);
 ReportCollectedThingsCheckBox:SetATTTooltip(L["REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP"]);
-ReportCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnDifficultyCheckBox, "BOTTOMLEFT", 0, -4);
+ReportCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnDifficultyCheckBox, "BOTTOMLEFT", 0, 0);
 
 local ReportCompletedQuestsCheckBox = settings:CreateCheckBox(L["REPORT_COMPLETED_QUESTS_CHECKBOX"],
 function(self)
@@ -1762,7 +1979,7 @@ local ItemFilterOnRefresh = function(self)
 		self:SetAlpha(1);
 	end
 end;
-local armorTypes = { 4, 5, 6, 7 }
+local armorTypes = { 4, 5, 6, 7 };
 for i,filterID in ipairs(armorTypes) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
@@ -1773,7 +1990,7 @@ end
 
 -- Weapons
 yoffset = -4;
-local smallWeaponTypes = { 20, 29, 28  }
+local smallWeaponTypes = { 20, 29, 28 };
 for i,filterID in ipairs(smallWeaponTypes) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
@@ -1784,7 +2001,7 @@ end
 
 -- Big Ole Boys
 yoffset = -4;
-local bigWeaponTypes = { 21, 22, 23, 24, 25, 26, 1, 8 }
+local bigWeaponTypes = { 21, 22, 23, 24, 25, 26, 1, 8 };
 for i,filterID in ipairs(bigWeaponTypes) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
@@ -1795,7 +2012,7 @@ end
 
 -- Weird Boys
 yoffset = -4;
-local miscWeaponTypes = { 50, 57, 34, 35, 27 }
+local miscWeaponTypes = { 11, 57, 34, 35, 27 };
 for i,filterID in ipairs(miscWeaponTypes) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
@@ -1806,7 +2023,7 @@ end
 
 -- Secondary Armor Classes
 last, xoffset, yoffset = ItemFiltersLabel, 120, -4;
-local miscWeaponTypes2 = { 11, 2, 3, 10, 9, 33, 32, 31 }
+local miscWeaponTypes2 = { 2, 3, 10, 9, 50, 32, 33, 31 };
 for i,filterID in ipairs(miscWeaponTypes2) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", xoffset, yoffset);
@@ -1827,7 +2044,7 @@ f:SetScript("OnClick", function(self)
 		AllTheThingsSettingsPerCharacter.Filters[key] = nil;
 	end
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 f:SetATTTooltip(L["CLASS_DEFAULTS_BUTTON_TOOLTIP"]);
 f.OnRefresh = function(self)
@@ -1881,7 +2098,7 @@ f:SetScript("OnClick", function(self)
 		AllTheThingsSettingsPerCharacter.Filters[v] = true
 	end
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 f:SetATTTooltip(L["ALL_BUTTON_TOOLTIP"]);
 f.OnRefresh = function(self)
@@ -1905,7 +2122,7 @@ f:SetScript("OnClick", function(self)
 		AllTheThingsSettingsPerCharacter.Filters[v] = false
 	end
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 f:SetATTTooltip(L["UNCHECK_ALL_BUTTON_TOOLTIP"]);
 f.OnRefresh = function(self)
@@ -1917,20 +2134,52 @@ f.OnRefresh = function(self)
 end;
 table.insert(settings.MostRecentTab.objects, f);
 
-local LegacyFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-LegacyFiltersLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -88, -8);
-LegacyFiltersLabel:SetJustifyH("LEFT");
-LegacyFiltersLabel:SetText(L["LEGACY_FILTERS_LABEL"]);
-LegacyFiltersLabel:Show();
-table.insert(settings.MostRecentTab.objects, LegacyFiltersLabel);
+-- Custom Collect filtering
+local CustomCollectFilterLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+CustomCollectFilterLabel:SetPoint("LEFT", line, "LEFT", 275, 0);
+CustomCollectFilterLabel:SetPoint("TOP", line, "BOTTOM", 0, -8);
+CustomCollectFilterLabel:SetJustifyH("LEFT");
+CustomCollectFilterLabel:SetText(L["CUSTOM_FILTERS_LABEL"]);
+CustomCollectFilterLabel:Show();
+table.insert(settings.MostRecentTab.objects, CustomCollectFilterLabel);
 
-local LegacyFiltersTempLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-LegacyFiltersTempLabel:SetPoint("TOPLEFT", LegacyFiltersLabel, "BOTTOMLEFT", 0, -8);
-LegacyFiltersTempLabel:SetPoint("TOPRIGHT", LegacyFiltersLabel, "BOTTOMRIGHT", 0, -8);
-LegacyFiltersTempLabel:SetJustifyH("LEFT");
-LegacyFiltersTempLabel:SetText(L["LEGACY_FILTERS_TEMP_LABEL"]);
-LegacyFiltersTempLabel:Show();
-table.insert(settings.MostRecentTab.objects, LegacyFiltersTempLabel);
+local CustomCollectFilterExplainLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+CustomCollectFilterExplainLabel:SetPoint("LEFT", CustomCollectFilterLabel, "LEFT", 0, 0);
+CustomCollectFilterExplainLabel:SetPoint("RIGHT", CustomCollectFilterLabel, "LEFT", 325, 0);
+CustomCollectFilterExplainLabel:SetPoint("TOP", CustomCollectFilterLabel, "BOTTOM", 0, -8);
+CustomCollectFilterExplainLabel:SetJustifyH("LEFT");
+CustomCollectFilterExplainLabel:SetText(L["CUSTOM_FILTERS_EXPLAIN_LABEL"]);
+CustomCollectFilterExplainLabel:Show();
+table.insert(settings.MostRecentTab.objects, CustomCollectFilterExplainLabel);
+
+local customCollects, ccCheckbox = L["CUSTOM_COLLECTS_REASONS"];
+local previousCheckbox = CustomCollectFilterExplainLabel;
+local xInitalOffset, yInitialOffset, inital = -5, -6, true;
+for i,cc in ipairs({"NPE","SL_SKIP","SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"}) do
+	local filterID = "CC:" .. cc;
+	local ccInfo = customCollects[cc];
+	ccCheckbox = settings:CreateCheckBox(ccInfo[1],
+	function(self)
+		self:SetChecked(settings:GetFilter(filterID));
+		self:Enable();
+		self:SetAlpha(1);
+	end,
+	function(self)
+		settings:SetFilter(filterID, self:GetChecked());
+	end);
+
+	ccCheckbox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], ccInfo[1]));
+	if inital then
+		ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", xInitalOffset, 0);
+		ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, yInitialOffset);
+		inital = nil;
+	else
+		ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", 0, 0);
+		ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, 6);
+	end
+	previousCheckbox = ccCheckbox;
+end
+
 end)();
 
 ------------------------------------------
@@ -2025,7 +2274,7 @@ function(self)
 		app.SeasonalItemFilter = app.NoFilter;
 	end
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 seasonalEnable:SetPoint("TOPLEFT", seasonalFrame, "TOPLEFT", 4, -4);
 
@@ -2034,8 +2283,8 @@ local seasonalAll = child:CreateCheckBox(L["SEASONAL_ALL"],
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("SeasonalFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-		if v[1] > 4 then
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] == 4 then
 			isTrue = isTrue and not val[k]
 		end
 	end
@@ -2050,14 +2299,14 @@ function(self)
 end,
 function(self)
 	local val = app.GetDataMember("SeasonalFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-		if v[1] > 4 then
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] == 4 then
 			val[k] = not self:GetChecked()
 		end
 	end
 	app.SetDataMember("SeasonalFilters", val);
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 seasonalAll:SetPoint("TOP", seasonalFrame, "TOP", 0, -4);
 seasonalAll:SetPoint("LEFT", seasonalFrame, "CENTER", 0, 0);
@@ -2070,8 +2319,8 @@ local last = seasonalSubFrame;
 local x = 5;
 local y = 5;
 local count = 0;
-for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-	if v[1] > 4 then
+for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	if v[1] == 4 then
 		local seasonalFilter = child:CreateCheckBox(v[3],
 		function(self)
 			self:SetChecked(not app.GetDataMember("SeasonalFilters")[k]);
@@ -2088,7 +2337,7 @@ for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 			val[k]= not self:GetChecked()
 			app.SetDataMember("SeasonalFilters", val);
 			settings:Refresh();
-			app:RefreshData(nil,nil,true);
+			settings:UpdateMode(1);
 		end);
 		seasonalFilter:SetATTTooltip(v[2]);
 		seasonalFilter:SetPoint("TOPLEFT",last,x,-y)
@@ -2129,7 +2378,7 @@ function(self)
 		app.UnobtainableItemFilter = app.NoFilter;
 	end
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 unobtainableEnable:SetPoint("TOPLEFT",unobtainable,5,-20)
 
@@ -2138,8 +2387,8 @@ local unobtainableAll = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-		if v[1] < 5 then
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] < 4 then
 			isTrue = isTrue and not val[k]
 		end
 	end
@@ -2154,14 +2403,14 @@ function(self)
 end,
 function(self)
 	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-		if v[1] < 5 then
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] < 4 then
 			val[k] = not self:GetChecked()
 		end
 	end
 	app.SetDataMember("UnobtainableItemFilters", val);
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 unobtainableAll:SetPoint("TOPLEFT",unobtainable, 300, -20)
 
@@ -2181,7 +2430,7 @@ local noChanceAll = child:CreateCheckBox(L["NO_CHANCE_ALL"],
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		if v[1] == 1 then
 			isTrue = isTrue and not val[k]
 		end
@@ -2197,14 +2446,14 @@ function(self)
 end,
 function(self)
 	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		if v[1] == 1 then
 			val[k] = not self:GetChecked()
 		end
 	end
 	app.SetDataMember("UnobtainableItemFilters", val);
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 noChanceAll:SetPoint("TOPLEFT",noChance, 300, 7)
 
@@ -2212,8 +2461,8 @@ local last = noChanceFrame;
 local x = 5;
 local y = 5;
 local count = 0;
-for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-	if v[1]  == 1 then
+for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	if v[1] == 1 then
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
 			self:SetChecked(not app.GetDataMember("UnobtainableItemFilters")[k]);
@@ -2230,7 +2479,7 @@ for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 			val[k]= not self:GetChecked()
 			app.SetDataMember("UnobtainableItemFilters", val);
 			settings:Refresh();
-			app:RefreshData(nil,nil,true);
+			settings:UpdateMode(1);
 		end);
 		filter:SetATTTooltip(v[2]);
 		filter:SetPoint("TOPLEFT",last,x,-y)
@@ -2261,10 +2510,10 @@ highChanceFrame:SetHeight(90);
 local highChanceAll = child:CreateCheckBox(L["HIGH_CHANCE_ALL"],
 function(self)
 	local isTrue = true
-	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	local val = app.GetDataMember("UnobtainableItemFilters");
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		if v[1] == 3 then
-			isTrue = isTrue and not val[k]
+			isTrue = isTrue and not val[k];
 		end
 	end
 	self:SetChecked(isTrue);
@@ -2277,23 +2526,23 @@ function(self)
 	end
 end,
 function(self)
-	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	local val = app.GetDataMember("UnobtainableItemFilters");
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		if v[1] == 3 then
-			val[k] = not self:GetChecked()
+			val[k] = not self:GetChecked();
 		end
 	end
 	app.SetDataMember("UnobtainableItemFilters", val);
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
-highChanceAll:SetPoint("TOPLEFT",highChance, 300, 7)
+highChanceAll:SetPoint("TOPLEFT",highChance, 300, 7);
 
 local last = highChanceFrame;
 local x = 5;
 local y = 5;
 local count = 0;
-for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 	if v[1] == 3 then
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
@@ -2307,22 +2556,22 @@ for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 			end
 		end,
 		function(self)
-			local val = app.GetDataMember("UnobtainableItemFilters")
-			val[k]= not self:GetChecked()
+			local val = app.GetDataMember("UnobtainableItemFilters");
+			val[k]= not self:GetChecked();
 			app.SetDataMember("UnobtainableItemFilters", val);
 			settings:Refresh();
-			app:RefreshData(nil,nil,true);
+			settings:UpdateMode(1);
 		end);
 		filter:SetATTTooltip(v[2]);
-		filter:SetPoint("TOPLEFT",last,x,-y)
-		last = filter
+		filter:SetPoint("TOPLEFT",last,x,-y);
+		last = filter;
 		x = 0;
 		y = 20;
 		count = count + 1;
 		if count == 4 then
-			x = 300
-			y = 5
-			last = highChanceFrame
+			x = 300;
+			y = 5;
+			last = highChanceFrame;
 		end
 	end
 end
@@ -2549,9 +2798,9 @@ end);
 ShowDescriptionsCheckBox:SetATTTooltip(L["DESCRIPTIONS_CHECKBOX_TOOLTIP"]);
 ShowDescriptionsCheckBox:SetPoint("TOPLEFT", ShowCoordinatesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowKnownByCheckBox = settings:CreateCheckBox(L["KNOWN_BY_CHECKBOX"],
+local ShowLoreCheckBox = settings:CreateCheckBox(L["LORE_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:GetTooltipSetting("KnownBy"));
+	self:SetChecked(settings:GetTooltipSetting("Lore"));
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -2561,10 +2810,10 @@ function(self)
 	end
 end,
 function(self)
-	settings:SetTooltipSetting("KnownBy", self:GetChecked());
+	settings:SetTooltipSetting("Lore", self:GetChecked());
 end);
-ShowKnownByCheckBox:SetATTTooltip(L["KNOWN_BY_CHECKBOX_TOOLTIP"]);
-ShowKnownByCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -8, 4);
+ShowLoreCheckBox:SetATTTooltip(L["LORE_CHECKBOX_TOOLTIP"]);
+ShowLoreCheckBox:SetPoint("TOPLEFT", ShowDescriptionsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowModelsCheckBox = settings:CreateCheckBox(L["SHOW_MODELS_CHECKBOX"],
 function(self)
@@ -2581,7 +2830,24 @@ function(self)
 	settings:SetTooltipSetting("Models", self:GetChecked());
 end);
 ShowModelsCheckBox:SetATTTooltip(L["SHOW_MODELS_CHECKBOX_TOOLTIP"]);
-ShowModelsCheckBox:SetPoint("TOPLEFT", ShowDescriptionsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowModelsCheckBox:SetPoint("TOPLEFT", ShowLoreCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ShowKnownByCheckBox = settings:CreateCheckBox(L["KNOWN_BY_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("KnownBy"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("KnownBy", self:GetChecked());
+end);
+ShowKnownByCheckBox:SetATTTooltip(L["KNOWN_BY_CHECKBOX_TOOLTIP"]);
+ShowKnownByCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -8, 4);
 
 local ShowSharedAppearancesCheckBox = settings:CreateCheckBox(L["SHARED_APPEARANCES_CHECKBOX"],
 function(self)
@@ -2705,7 +2971,7 @@ SummarizeThingsCheckBox:SetPoint("TOPLEFT", ShowSpecializationRequirementsCheckB
 
 -- This creates the "Contains Count" slider.
 local ContainsSlider = CreateFrame("Slider", "ATTSummarizeThingsSlider", settings, "OptionsSliderTemplate");
-ContainsSlider:SetPoint("TOP", SummarizeThingsCheckBox, "TOP", 0, 0);
+ContainsSlider:SetPoint("TOP", OnlyShowRelevantSharedAppearancesCheckBox, "BOTTOM", 0, 0);
 ContainsSlider:SetPoint("LEFT", DisplayInCombatCheckBox, "LEFT", 0, 0);
 table.insert(settings.MostRecentTab.objects, ContainsSlider);
 settings.ContainsSlider = ContainsSlider;
@@ -2759,7 +3025,7 @@ ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", SummarizeThingsCheckBox, "BOTTOM
 
 -- This creates the "Locations" slider.
 local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
-LocationsSlider:SetPoint("TOP", ShowSourceLocationsCheckBox, "TOP", 0, 0);
+LocationsSlider:SetPoint("TOP", ContainsSlider, "BOTTOM", 0, -8);
 LocationsSlider:SetPoint("LEFT", ContainsSlider, "LEFT", 0, 0);
 table.insert(settings.MostRecentTab.objects, LocationsSlider);
 settings.LocationsSlider = LocationsSlider;
@@ -2810,6 +3076,24 @@ function(self)
 end);
 ShowCompletedSourceLocationsForCheckBox:SetATTTooltip(L["COMPLETED_SOURCES_CHECKBOX_TOOLTIP"]);
 ShowCompletedSourceLocationsForCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsCheckBox, "BOTTOMLEFT", 8, 4);
+
+local ShowDropChancesCheckbox = settings:CreateCheckBox(L["DROP_CHANCES_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("DropChances"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("DropChances", self:GetChecked());
+end);
+ShowDropChancesCheckbox:SetATTTooltip(L["DROP_CHANCES_CHECKBOX_TOOLTIP"]);
+ShowDropChancesCheckbox:SetPoint("TOP", LocationsSlider, "BOTTOM", 0, -8);
+ShowDropChancesCheckbox:SetPoint("LEFT", ShowModelsCheckBox, "LEFT", 0, 0);
 
 local ShowSourceLocationsForCreaturesCheckBox = settings:CreateCheckBox(L["FOR_CREATURES_CHECKBOX"],
 function(self)
@@ -3020,6 +3304,16 @@ local ChangeSkipCutsceneState = function(self, checked)
 		self:UnregisterEvent("CINEMATIC_START");
 	end
 end
+local DoAdHocUpdatesCheckbox = settings:CreateCheckBox(L["ADHOC_UPDATES_CHECKBOX"] .. L["_BETA_LABEL"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Updates:AdHoc"));
+end,
+function(self)
+	settings:SetTooltipSetting("Updates:AdHoc", self:GetChecked());
+end);
+DoAdHocUpdatesCheckbox:SetATTTooltip(L["ADHOC_UPDATES_CHECKBOX_TOOLTIP"]);
+DoAdHocUpdatesCheckbox:SetPoint("TOPLEFT", ModulesLabel, "BOTTOMLEFT", 4, 0);
+
 local AutomaticallySkipCutscenesCheckBox = settings:CreateCheckBox(L["SKIP_CUTSCENES_CHECKBOX"],
 function(self)
 	local checked = settings:GetTooltipSetting("Skip:Cutscenes");
@@ -3035,7 +3329,7 @@ function(self)
 	settings:SetTooltipSetting("Skip:Cutscenes", self:GetChecked());
 end);
 AutomaticallySkipCutscenesCheckBox:SetATTTooltip(L["SKIP_CUTSCENES_CHECKBOX_TOOLTIP"]);
-AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", ModulesLabel, "BOTTOMLEFT", 4, 0);
+AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", DoAdHocUpdatesCheckbox, "BOTTOMLEFT", 0, 4);
 
 local OpenBountyListAutomatically = settings:CreateCheckBox(L["AUTO_BOUNTY_CHECKBOX"],
 function(self)
@@ -3140,7 +3434,7 @@ end);
 SortByCompletionInstead:SetATTTooltip(L["SORT_BY_PROGRESS_CHECKBOX_TOOLTIP"]);
 SortByCompletionInstead:SetPoint("TOPLEFT", ShowAuctionHouseModuleTab, "BOTTOMLEFT", 0, 4);
 
-local QuestChainRequirementsNested = settings:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"] .. L["_BETA_LABEL"],
+local QuestChainRequirementsNested = settings:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("QuestChain:Nested"));
 end,
@@ -3191,6 +3485,15 @@ end);
 WarnRemovedThingsCheckBox:SetATTTooltip(L["WARN_REMOVED_CHECKBOX_TOOLTIP"]);
 WarnRemovedThingsCheckBox:SetPoint("TOPLEFT", CelebrateCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
+local ScreenshotCollectedThingsCheckBox = settings:CreateCheckBox(L["SCREENSHOT_COLLECTED_CHECKBOX"],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Screenshot"));
+	end,
+	function(self)
+		settings:SetTooltipSetting("Screenshot", self:GetChecked());
+	end);
+ScreenshotCollectedThingsCheckBox:SetATTTooltip(L["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"]);
+ScreenshotCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnRemovedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local DebuggingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 DebuggingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -210, -8);
@@ -3198,6 +3501,17 @@ DebuggingLabel:SetJustifyH("LEFT");
 DebuggingLabel:SetText("Debugging");
 DebuggingLabel:Show();
 table.insert(settings.MostRecentTab.objects, DebuggingLabel);
+
+local DebugModeCheckBox = settings:CreateCheckBox(L["DEBUG_MODE"],
+function(self)
+	self:SetChecked(settings:Get("DebugMode"));
+end,
+function(self)
+	settings:SetDebugMode(self:GetChecked());
+end);
+DebugModeCheckBox:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"]);
+DebugModeCheckBox:SetPoint("TOPLEFT", DebuggingLabel, "BOTTOMLEFT", 0, -1);
+
 local ids = {["achievementID"] = "Achievement ID",
 	["artifactID"] = "Artifact ID",
 	["azeriteEssenceID"] = "Azerite Essence ID",
@@ -3240,7 +3554,7 @@ for _,id in pairs({"achievementID","artifactID","azeriteEssenceID","bonusID","cr
 		settings:Refresh();
 	end);
 	if not last then
-		filter:SetPoint("TOPLEFT", DebuggingLabel, "BOTTOMLEFT", 4, 0);
+		filter:SetPoint("TOPLEFT", DebugModeCheckBox, "BOTTOMLEFT", 4, 0);
 	else
 		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
 	end
@@ -3257,7 +3571,7 @@ for _,id in pairs({"illusionID","instanceID","itemID","itemString", "mapID","mod
 		settings:Refresh();
 	end);
 	if not last then
-		filter:SetPoint("TOPLEFT", DebuggingLabel, "BOTTOMLEFT", 164, 0);
+		filter:SetPoint("TOPLEFT", DebugModeCheckBox, "BOTTOMLEFT", 164, 0);
 	else
 		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
 	end

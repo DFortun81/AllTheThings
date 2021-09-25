@@ -4,12 +4,12 @@
 
 _.Zones =
 {
-	m(875, {	-- Zandalar
-		m(862, {	-- Zuldazar
+	m(ZANDALAR, {
+		m(ZULDAZAR, {
 			n(-226, {	-- World Drops
 				["maps"] = {
-					895,	-- Tiragarde Sound [During Assualts]
-					1165,	-- Dazar'alor
+					TIRAGARDE_SOUND,	-- During Assualts
+					DAZARALOR,
 				},
 				["g"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 					-- Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate

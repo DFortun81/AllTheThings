@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(15, {	-- Badlands
-			n(ZONEDROPS, {
+		m(BADLANDS, {
+			n(ZONE_DROPS, {
 				i(10822, {	-- Dark Whelpling (PET!)
 					["crs"] = {
 						46916,	-- Nyxondra's Broodling
@@ -22,7 +22,7 @@ _.Zones =
 					},
 				}),
 				n(2740, {	-- Shadowforge Darkweaver	-- Coded this way to put the red text on item.
-					un(REMOVED_FROM_GAME, i(2621)), 	-- Cowl of Necromancy
+					un(REMOVED_FROM_GAME, i(2621)),	-- Cowl of Necromancy
 				}),
 				i(9386, {	-- Excavator's Brand
 					["crs"] = { 4846 },	-- Shadowforge Digger

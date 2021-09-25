@@ -4,7 +4,7 @@
 
 _.GroupFinder =
 {
-	tier(3, {	-- Wrath of the Lich King
+	tier(WOTLK_TIER, {
 		i(156688, {	-- Icy Satchel of Helpful Goods
 			i(112348),	-- Snow-Coated Cloth Cap*
 			i(113758),	-- Snow-Coated Cloth Gloves*
@@ -47,7 +47,7 @@ _.GroupFinder =
 		}),
 		i(114634, {	-- Icy Satchel of Helpful Goods 70-74
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "|cff66ccffRewarded for completing a random Wrath of the Lich King dungeon in the level 70-74 range.|r",
+			["description"] = "Rewarded for completing a random Wrath of the Lich King dungeon in the level 70-74 range.",
 			["g"] = {
 				i(112367),	-- Snow-Coated Cloth Belt
 				i(112348),	-- Snow-Coated Cloth Cap
@@ -75,7 +75,7 @@ _.GroupFinder =
 		}),
 		i(114641, {	-- Icy Satchel of Helpful Goods 75-80
 			["u"] = REMOVED_FROM_GAME,
-			["description"] = "|cff66ccffRewarded for completing a random Wrath of the Lich King dungeon in the level 75-80 range.|r",
+			["description"] = "Rewarded for completing a random Wrath of the Lich King dungeon in the level 75-80 range.",
 			["g"] = {
 				i(113685),	-- Coldblood Longcloak
 				i(113683),	-- Coldwrap Cloak

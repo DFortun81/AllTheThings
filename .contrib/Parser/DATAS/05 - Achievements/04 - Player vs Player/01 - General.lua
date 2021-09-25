@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9958, {	-- Player vs Player
+	pvp(n(-9958, {	-- Player vs Player
 		n(-9955, {	-- General
 			ach(5363, {	-- 250000 Honorable Kills
 				title(184),		-- the Bloodthirsty
@@ -223,7 +223,7 @@ _.Achievements =
 					title(35),		-- Justicar
 					crit(1),		-- Hero of the Stormpike Guard
 					crit(2),		-- Knight of Arathor
-					crit(3),		-- 	Silverwing Sentinel
+					crit(3),		-- Silverwing Sentinel
 				},
 			}),
 			ach(604,  {	-- Wrath of the Alliance
@@ -246,5 +246,5 @@ _.Achievements =
 			}),
 			ach(231),	-- Wrecking Ball
 		}),
-	}),
+	})),
 };

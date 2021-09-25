@@ -229,3 +229,49 @@ _.GearSets =
 		},
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-211, {	-- New Characters
+			cl(DRUID, {
+				i(157669),	-- Wildshifter Headpiece
+				i(157671),	-- Wildshifter Spaulders
+			}),
+			cl(HUNTER, {
+				i(157677),	-- Heartbonded Helm (Hunter Future Boost Gear)
+				i(157679),	-- Heartbonded Spaulders (Hunter Future Boost Gear)
+			}),
+			cl(MAGE, {
+				i(157684),	-- Spellsculptor's Hood
+				i(157687),	-- Spellsculptor's Shoulderpads
+			}),
+			cl(MONK, {
+				i(157693),	-- Ascetic's Helm
+				i(157695),	-- Ascetic's Pauldrons
+			}),
+			cl(PALADIN, {
+				i(157701),	-- Lightsoul Helm
+				i(157703),	-- Lightsoul Pauldrons
+			}),
+			cl(PRIEST, {
+				i(157708),	-- Curate's Cowl
+				i(157711),	-- Curate's Mantle
+			}),
+			cl(ROGUE, {
+				i(157717),	-- Nimblefinger Hood
+				i(157719),	-- Nimblefinger Shoulders
+			}),
+			cl(SHAMAN, {
+				i(157725),	-- Totem-Caller Coif (Sham Future Boost Gear)
+				i(157727),	-- Totem-Caller Pauldrons (Sham Future Boost Gear)
+			}),
+			cl(WARLOCK, {
+				i(157732),	-- Felburner's Cowl
+				i(157735),	-- Felburner's Shoulderpads
+			}),
+			cl(WARRIOR, {
+				i(157741),	-- Warsinger's Helm
+				i(157743),	-- Warsinger's Pauldrons
+			}),
+		}),
+	}),
+});

@@ -2,11 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(8, {	-- Battle For Azeroth
+_.Instances = { tier(BFA_TIER, {
 	inst(1023, {	-- Siege of Boralus
 		["coords"] = {
-			{ 72.2, 15.5, 1161 },	-- Alliance, Boralus
-			{ 88.2, 50.9, 895 },	-- Horde, Tiragarde Sound
+			{ 72.2, 15.5, BORALUS },	-- Alliance
+			{ 88.2, 50.9, TIRAGARDE_SOUND },	-- Horde
 		},
 		["maps"] = { 1162 },	-- Siege of Boralus
 		["lvl"] = 120,

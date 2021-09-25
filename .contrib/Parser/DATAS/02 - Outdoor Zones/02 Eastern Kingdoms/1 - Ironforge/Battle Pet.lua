@@ -5,8 +5,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(87, {	-- Ironforge
-			filter(101, {	-- Pet Battle
+		m(IRONFORGE, {
+			filter(BATTLE_PETS, {
 				p(404, {	-- Long-tailed Mole
 					["crs"] = { 61317 },	-- Long-tailed Mole
 				}),

@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(424, {	-- Pandaria
-		m(390, {	-- Vale of Eternal Blossoms
-			filter(101, {	-- Pet Battle
+	m(PANDARIA, {
+		m(VALE_OF_ETERNAL_BLOSSOMS, {
+			filter(BATTLE_PETS, {
 				q(32603, {	-- Beasts of Fable
 					["g"] = {
 						i(94025),	-- Red Panda
@@ -71,20 +71,20 @@ _.Zones =
 				}),
 				q(32863, {	-- What We've Been Training For
 					["provider"] = { "n", 64582 },	-- Gentle San
-					["coord"] = { 60.8, 23.6, 390 },
+					["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["description"] = "Account-Wide Weekly Quest.|r",
 					["isWeekly"] = true,
 					["g"] = {
 						i(98095),	-- Brawler's Pet Supplies
 					},
 				}),
-				p(751), 	-- Dancing Water Skimmer
-				p(747), 	-- Effevescent Glowfly
-				p(383), 	-- Eternal Strider
-				p(748), 	-- Gilded Moth
-				p(749), 	-- Golden Civet
-				p(750), 	-- Golden Civet Kitten
-				p(752), 	-- Yellow-Bellied Bullfrog
+				p(751),	-- Dancing Water Skimmer
+				p(747),	-- Effevescent Glowfly
+				p(383),	-- Eternal Strider
+				p(748),	-- Gilded Moth
+				p(749),	-- Golden Civet
+				p(750),	-- Golden Civet Kitten
+				p(752),	-- Yellow-Bellied Bullfrog
 			}),
 		}),
 	}),

@@ -4,10 +4,10 @@
 
 _.Craftables =
 {
-	tier(5, {	-- Mists of Pandaria
+	tier(MOP_TIER, {
 		prof(ALCHEMY, {
 --[[	20.Nov.2018 - automation should handle discovery. Leaving this here in case we change our mind later
-			n(-37, {	-- Discovery
+			n(DISCOVERY, {
 				["description"] = "These recipes can be discovered randomly by crafting Mists of Pandaria potions, elixirs, flasks or transmutations.",
 				["groups"] = {
 					recipe(114774),	-- Darkwater Potion
@@ -267,32 +267,13 @@ _.Craftables =
 				i(87251),	-- Geosynchronous World Spinner*
 				i(95416),	-- Sky Golem*
 			}),
-			filter(101, {	-- Pets
+			filter(BATTLE_PETS, {
 				i(87526),	-- Mechanical Pandaren Dragonling*
 				i(94903),	-- Pierre*
 				i(100905),	-- Rascal-Bot*
 			}),
 			filter(102, {	-- Toys
-				i(87214, {	-- Blingtron 4000*
-					q(31752, { -- Blingtron 4000
-						["provider"] = { "n", 43929 },    -- Blingtron 4000
-						["isDaily"] = 1,
-						["g"] = {
-							i(86623, {	-- Blingtron 4000 Gift Package
-									i(87250),	-- Depleted-Kyparium Rocket Mount
-									i(87251),	-- Geosynchronous World Spinner Mount
-									i(41508),	-- Mechano-Hog Mount
-									i(44413),	-- Mekgineer's Chopper Mount
-									i(103670),	-- Lil' Bling Pet
-									i(15996),	-- Lifelike Mechanical Toad Pet
-									i(11826),	-- Lil' Smoky Pet
-									i(4401),	-- Mechanical Squirrel Box Pet
-									i(11825),	-- Pet Bombling
-									i(21277),	-- Tranquil Mechanical Yeti Pet
-							}),
-						},
-					}),
-				}),
+				i(87214),	-- Blingtron 4000*
 				i(87215),	-- Wormhole Generator: Pandaria*
 			}),
 			n(-319, {	-- Weapons
@@ -310,7 +291,7 @@ _.Craftables =
 				i(77539),	-- Reinforced Retinal Armor*
 				i(77538),	-- Specialized Retinal Armor*
 				-- Trinkets
-				i(77530), 	-- Ghost Iron Dragonling*
+				i(77530),	-- Ghost Iron Dragonling*
 			}),
 			filter(113, {	-- Bags
 				i(92747),	-- Advanced Refrigeration Unit*
@@ -373,7 +354,7 @@ _.Craftables =
 					}),
 				}),
 			}),
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				i(89368),	-- Chi-Ji Kite
 				i(89367),	-- Yu'lon Kite
 			}),
@@ -404,14 +385,14 @@ _.Craftables =
 			}),
 		}),
 		prof(JEWELCRAFTING, {
-			filter(100, {	-- Mount
+			filter(100, {	-- Mounts
 				i(83088),	-- Jade Panther
 				i(82453),	-- Jeweled Onyx Panther
 				i(83087),	-- Ruby Panther
 				i(83090),	-- Sapphire Panther
 				i(83089),	-- Sunstone Panther
 			}),
-			filter(101, {	-- Battle Pets
+			filter(BATTLE_PETS, {
 				i(82774),	-- Jade Owl
 				i(82775),	-- Sapphire Cub
 			}),
@@ -439,12 +420,12 @@ _.Craftables =
 			}),
 		}),
 		prof(LEATHERWORKING, {
-			n(-322, { 	-- Cloak
+			n(-322, {	-- Cloak
 				i(85851),	-- Misthide Drape
 				i(85852),	-- Quick Strike Cloak
 				i(85853),	-- Stormscale Drape
 			}),
-			n(-44, { 	-- Leather
+			n(-44, {	-- Leather
 				i(85788),	-- Chestguard of Nemeses
 				i(85797),	-- Contender's Leather Belt
 				i(85798),	-- Contender's Leather Boots
@@ -578,7 +559,7 @@ _.Craftables =
 				i(85849),	-- Wildblood Gloves
 				i(85850),	-- Wildblood Vest
 			}),
-			n(-45, { 	-- Mail
+			n(-45, {	-- Mail
 				i(85787),	-- Chestguard of Earthen Harmony
 				i(94276),	-- Cloud Serpent Helm
 				i(94275),	-- Cloud Serpent Sabatons
@@ -694,7 +675,7 @@ _.Craftables =
 			}),
 		}),
 		prof(TAILORING, {
-			filter(101, { 	-- Pet Battle
+			filter(BATTLE_PETS, {
 				i(92960, {	-- Silkworm Cocoon
 					i(90900),	-- Imperial Moth
 					i(90902),	-- Imperial Silkworm
@@ -845,3 +826,35 @@ _.Craftables =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10041, {
+		prof(BLACKSMITHING, {
+			i(93441),	-- Crafted Dreadful Gladiator's Barrier - UNUSED
+			i(93483),	-- Crafted Dreadful Gladiator's Redoubt
+			i(93614),	-- Crafted Dreadful Gladiator's Shield Wall
+		}),
+		prof(ENGINEERING, {
+			i(81143),	-- Avanced Deepdive Helmet (Mop Beta Only)
+		}),
+		prof(INSCRIPTION, {
+			i(93440),	-- Crafted Dreadful Gladiator's Endgame
+			i(93450),	-- Crafted Dreadful Gladiator's Reprieve
+		}),
+		prof(JEWELCRAFTING, {
+			i(93597),	-- Crafted Dreadful Gladiator's Fleshslicer
+			i(93599),	-- Crafted Dreadful Gladiator's Slasher
+		}),
+		prof(LEATHERWORKING, {
+			i(93508),	-- Crafted Gladiator's Ironskin Gloves
+			i(93510),	-- Crafted Gladiator's Ironskin Helm
+			i(93512),	-- Crafted Gladiator's Ironskin Legguards
+			i(93514),	-- Crafted Gladiator's Ironskin Spaulders
+			i(93516),	-- Crafted Gladiator's Ironskin Tunic
+			i(93518),	-- Crafted Gladiator's Copperskin Gloves
+			i(93520),	-- Crafted Gladiator's Copperskin Helm
+			i(93522),	-- Crafted Gladiator's Copperskin Legguards
+			i(93524),	-- Crafted Gladiator's Copperskin Spaulders
+			i(93526),	-- Crafted Gladiator's Copperskin Tunic
+		}),
+	}),
+});

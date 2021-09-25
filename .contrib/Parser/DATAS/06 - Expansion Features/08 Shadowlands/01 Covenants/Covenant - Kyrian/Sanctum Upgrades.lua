@@ -4,12 +4,12 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
-		n(-939, {	-- Covenant: Kyrian
+	tier(SL_TIER, {
+		n(-939, {	-- Kyrian
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 			["maps"] = {
-				1707,	-- Elysian Hold
-				1708,	-- Elysian Hold
+				ARCHONS_RISE,
+				SANCTUM_OF_BINDING,
 			},
 			["g"] = {
 				n(-941, {	-- Sanctum Upgrades
@@ -17,12 +17,7 @@ _.ExpansionFeatures =
 						n(-916, {	-- Tier 1: Flowing Tendrils
 							q(57901, {	-- All That Remains
 								["provider"] = { "n", 167745 },	-- Haephus
-								["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
-							}),
-							q(57903, {	-- Power in the Sky
-								["sourceQuests"] = { 57901 },	-- All That Remains
-								["provider"] = { "n", 158773 },	-- Capheus
-								["coord"] = { 37.9, 67.5, 1707 },	-- Archon's Rise
+								["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 							}),
 							o(356818, {	-- Penitence of Purity
 								["description"] = "Requires channeling anima to the Temple of Purity.  The mount is not a guaranteed drop.",
@@ -34,14 +29,69 @@ _.ExpansionFeatures =
 									i(184296),	-- Purity's Edge Greatblade
 								},
 							}),
+							q(57903, {	-- Power in the Sky
+								["sourceQuests"] = { 57901 },	-- All That Remains
+								["provider"] = { "n", 158773 },	-- Capheus
+								["coord"] = { 37.9, 67.5, ARCHONS_RISE },
+							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
-							q(61179, {    -- Forge Ahead
+							q(61193, {	-- A Light Touch
+								["isDaily"] = true,
+								["provider"] = { "n", 171671 },    -- Kofi
+								["coord"] = { 50.3, 21.4, BASTION },
+							}),
+							q(61209, {	-- A Somber Melody
+								["isDaily"] = true,
+								["provider"] = { "n", 171677 },    -- Forgelite Selene
+								["coord"] = { 50.2, 21.3, BASTION },
+							}),
+							q(61199, {	-- Arms Day
+								["isDaily"] = true,
+								["provider"] = { "n", 171671 },    -- Kofi
+								["coord"] = { 50.3, 21.4, BASTION },
+							}),
+							q(61179, {	-- Forge Ahead
 								["provider"] = { "n", 158773 },    -- Capheus
 								["coord"] = { 64.2, 20.0, BASTION },
 							}),
 							q(62280, {	-- Limbo
 								["isWorldQuest"] = true,
+							}),
+							q(61146, {	-- Manifesting Power
+								["isDaily"] = true,
+								["provider"] = { "n", 171677 },    -- Forgelite Selene
+								["coord"] = { 50.2, 21.3, BASTION },
+							}),
+							q(61182, {	-- Pollen Your Weight
+								["isDaily"] = true,
+								["provider"] = { "n", 171671 },    -- Kofi
+								["coord"] = { 50.3, 21.4, BASTION },
+							}),
+							q(61166, {	-- Reduce, Reuse, Recycle
+								["isDaily"] = true,
+								["provider"] = { "n", 171671 },    -- Kofi
+								["coord"] = { 50.3, 21.4, BASTION },
+							}),
+							q(61159, {	-- Signs of Demise
+								["isDaily"] = true,
+								["provider"] = { "n", 171676 },    -- Galakamos
+								["coord"] = { 50.4, 21.2, BASTION },
+							}),
+							q(61157, {	-- Straight to the Point
+								["isDaily"] = true,
+								["provider"] = { "n", 171676 },    -- Galakamos
+								["coord"] = { 50.4, 21.2, BASTION },
+							}),
+							q(61196, {	-- The Secret Ingredient
+								["isDaily"] = true,
+								["provider"] = { "n", 171677 },    -- Forgelite Selene
+								["coord"] = { 50.2, 21.3, BASTION },
+							}),
+							q(61156, {	-- Where There's a Quill...
+								["isDaily"] = true,
+								["provider"] = { "n", 171676 },    -- Galakamos
+								["coord"] = { 50.4, 21.2, BASTION },
 							}),
 						}),
 						n(-918, {	-- Tier 3: Flowing Power
@@ -49,34 +99,102 @@ _.ExpansionFeatures =
 					}),
 					n(-905, {	-- Command Table
 						n(-906, {	-- Tier 1: Tactical Insight
+							currency(1819, {	-- Medallion of Service
+							}),
 							q(57900, {	-- Across the Shadowlands
 								["sourceQuests"] = { 57899 },	-- More Work?
 								["provider"] = { "n", 160389 },	-- Koros
-								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								["g"] = {
 								--	follower is granted upon accepting the quest
 									follower(1259),	-- Pelagos
 								},
 							}),
-							q(60175, {    -- Adventurer: Nemea
+							q(61863, {	-- Adventurer: Apolon
+								["description"] = "Requires Renown 27.",
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 64.8, 16.4, BASTION },
-								["description"] = "Becomes available at Renown 4.",
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								["g"] = {
-								--	follower(???),	-- Nemea
+									follower(1276),	-- Apolon
+								},
+							}),
+							q(64463, {	-- Adventurer: Auric Spiritguide
+								["description"] = "Requires Renown 71.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
+								["g"] = {
+									follower(1343),	-- Auric Spiritguide
+								},
+							}),
+							q(61864, {	-- Adventurer: Bron
+								["description"] = "Requires Renown 33.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
+								["g"] = {
+									follower(1275),	-- Bron
+								},
+							}),
+							q(61862, {	-- Adventurer: Clora
+								["description"] = "Requires Renown 17.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
+								["g"] = {
+									follower(1273),	-- Clora
+								},
+							}),
+							q(64462, {	-- Adventurer: Cromas the Mystic
+								["description"] = "Requires Renown 62.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
+								["g"] = {
+									follower(1342),	-- Cromas the Mystic
+								},
+							}),
+							q(61865, {	-- Adventurer: Disciple Kosmas
+								["description"] = "Requires Renown 38.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
+								["g"] = {
+									follower(1274),	-- Disciple Kosmas
+								},
+							}),
+							q(64461, {	-- Adventurer: Hermestes
+								["description"] = "Requires Renown 44.",
+								["provider"] = { "n", 160389 },	-- Koros
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
+								["g"] = {
+									follower(1341),	-- Hermestes
+								},
+							}),
+							q(61859, {	-- Adventurer: Nemea
+								["sourceQuests"] = { 58103 },    -- Pride or Unit
+								["description"] = "Requires Renown 4. Must choose Nemea in the Pride or Unit quest to get this follower.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
+								["g"] = {
+									follower(1270),	-- Nemea
+								},
+							}),
+							q(61860, {	-- Adventurer: Pelodis
+								["sourceQuests"] = { 58103 },    -- Pride or Unit
+								["description"] = "Requires Renown 4. Must choose Pelodis in the Pride or Unit quest to get this follower.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
+								["g"] = {
+									follower(1271),	-- Pelodis
 								},
 							}),
 							q(61861, {	-- Adventurer: Sika
 								["description"] = "Requires Renown 12.",
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 43.8, 40.7, 1707 },
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								["g"] = {
 									follower(1272),	-- Sika
 								},
 							}),
 							q(57899, {	-- More Work?
 								["provider"] = { "n", 167745 },	-- Haephus
-								["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
+								["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 							}),
 							q(63068, {	-- Settling Disputes
 							--	TODO: is altQuests necessary or do they complete each other?
@@ -86,53 +204,12 @@ _.ExpansionFeatures =
 								["description"] = "Requires Renown 4.",
 								["altQuests"] = { 59674 },    -- A Friendly Rivalry
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 43.8, 40.7, 1707 },
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 							}),
 						}),
 						-- TODO: create headers for these
 						-- Tier 2: Enhanced Purification
 						-- Tier 3: Wings of Light
-						q(61863, {	-- Adventurer: Apolon
-							["provider"] = { "n", 160389 },    -- Koros
-							["coord"] = { 43.8, 40.7, 1707 },
-							["description"] = "Becomes available at Renown 27.",
-							["g"] = {
-								follower(1276),	-- Apolon
-							},
-						}),
-						q(61864, {	-- Adventurer: Bron
-							["provider"] = { "n", 160389 },    -- Koros
-							["coord"] = { 43.8, 40.7, 1707 },
-							["description"] = "Becomes available at Renown 33.",
-							["g"] = {
-								follower(1275),	-- Bron
-							},
-						}),
-						q(61862, {	-- Adventurer: Clora
-							["description"] = "Becomes available at Renown 17.",
-							["provider"] = { "n", 160389 },    -- Koros
-							["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
-							["g"] = {
-								follower(1273),	-- Clora
-							},
-						}),
-						q(61865, {	-- Adventurer: Disciple Kosmas
-							["provider"] = { "n", 160389 },    -- Koros
-							["coord"] = { 43.8, 40.7, 1707 },
-							["description"] = "Becomes available at Renown 38.",
-							["g"] = {
-								follower(1274),	-- Disciple Kosmas
-							},
-						}),
-						q(61860, {	-- Adventurer: Pelodis
-							["sourceQuests"] = { 58103 },    -- Pride or Unit
-							["provider"] = { "n", 160389 },    -- Koros
-							["coord"] = { 43.8, 40.7, 1707 },
-							["description"] = "Becomes available at Renown 4.",
-							["g"] = {
-								follower(1271),	-- Pelodis
-							},
-						}),
 					}),
 					n(-942, {	-- Path of Ascension
 						["maps"] = { 1711 },	-- Path of Ascension Coliseum
@@ -143,20 +220,7 @@ _.ExpansionFeatures =
 								ach(14851),	-- Bastion of Protection
 								ach(14856),	-- Charmed, I'm Sure
 								ach(14863),	-- Death Foursworn
-								ach(14865, {	-- Disciple of Humility
-									crit(19),	-- Defeat Thran'tiok as Pelagos
-									crit(20),	-- Defeat Thran'tiok as Kleia
-									crit(21),	-- Defeat Thran'tiok as Mikanikos
-									crit(22),	-- Defeat Mad Mortimer as Pelagos
-									crit(23),	-- Defeat Mad Mortimer as Kleia
-									crit(24),	-- Defeat Mad Mortimer as Mikanikos
-									crit(25),	-- Defeat Athanos as Pelagos
-									crit(26),	-- Defeat Athanos as Kleia
-									crit(27),	-- Defeat Athanos as Mikanikos
-									crit(28),	-- Defeat Azaruux as Pelagos
-									crit(29),	-- Defeat Azaruux as Kleia
-									crit(30),	-- Defeat Azaruux as Mikanikos
-								}),
+								ach(14865),	-- Disciple of Humility
 								ach(14859),	-- Inside the Park Home Run
 								ach(14862, {	-- It's How You Wear It
 									crit(1),	-- Herald's Footpads
@@ -174,11 +238,7 @@ _.ExpansionFeatures =
 									crit(5),	-- Ring of Warding
 									crit(6),	-- Spiritforged Aegis
 								}),
-								ach(14861, {	-- Learning from the Masters
-									crit(4),	-- Defeat Athanos as Pelagos
-									crit(5),	-- Defeat Athanos as Kleia
-									crit(6),	-- Defeat Athanos as Mikanikos
-								}),
+								ach(14861),	-- Learning from the Masters
 								ach(14866, {	-- Master of the Path
 									crit(1),	-- Kalisthene
 									crit(2),	-- Echthra
@@ -193,8 +253,7 @@ _.ExpansionFeatures =
 								}),
 								ach(14864),	-- Personal Nightmare
 								ach(14852),	-- The Hoot of the Issue
-								--[[ weird hidden tracking achievement that exists in the background but is not visible in the achievement window
-								ach(14351, {	-- The Path Towards Ascension 39
+								un(NEVER_IMPLEMENTED, ach(14351, sharedData({["u"] = NEVER_IMPLEMENTED}, {	-- The Path Towards Ascension 39
 									ach(14340),	-- The Path Towards Ascension 1
 									ach(14342),	-- The Path Towards Ascension 3
 									ach(14343),	-- The Path Towards Ascension 5
@@ -203,10 +262,9 @@ _.ExpansionFeatures =
 									ach(14346),	-- The Path Towards Ascension 16
 									ach(14348),	-- The Path Towards Ascension 20
 									ach(14349),	-- The Path Towards Ascension 24
-								}),
-								--]]
+								}))),
 							}),
-							n(-908, {	-- Rewards
+							n(REWARDS, {
 								n(172408, {	-- Alderyn [& Myn'ir]
 									["crs"] = { 172409 },	-- Myn'ir
 									["g"] = {
@@ -244,6 +302,7 @@ _.ExpansionFeatures =
 											i(180243),	-- Reverent Collector's Legguards
 											i(179972),	-- Reverent Forgelite's Breeches
 											i(178192),	-- Reverent Watcher's Legguards
+											i(184457),	-- Reverent Legguards
 										}),
 									},
 								}),
@@ -254,10 +313,32 @@ _.ExpansionFeatures =
 										}),
 									}),
 									n(-973, {	-- Loyalty
+										i(181165, {	-- Blueprint: Kyrian Smith's Kit
+											["questID"] = 61304,	-- Blueprint: Kyrian Smith's Kit
+										}),
 									}),
 									n(-974, {	-- Wisdom
+										crit(4, {	-- Defeat Athanos as Pelagos
+											["achievementID"] = 14861,	-- Learning from the Masters
+										}),
+										crit(5, {	-- Defeat Athanos as Kleia
+											["achievementID"] = 14861,	-- Learning from the Masters
+										}),
+										crit(6, {	-- Defeat Athanos as Mikanikos
+											["achievementID"] = 14861,	-- Learning from the Masters
+										}),
 									}),
 									n(-975, {	-- Humility
+										crit(25, {	-- Defeat Athanos as Pelagos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(26, {	-- Defeat Athanos as Kleia
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(27, {	-- Defeat Athanos as Mikanikos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										i(184456),	-- Reverent Chestpiece
 									}),
 								}),
 								n(172333, {	-- Azaruux
@@ -267,10 +348,22 @@ _.ExpansionFeatures =
 										}),
 									}),
 									n(-973, {	-- Loyalty
+										i(181155, {	-- Blueprint: Charm of Discord
+												["questID"] = 61272,	-- Blueprint: Charm of Discord
+											}),
 									}),
 									n(-974, {	-- Wisdom
 									}),
 									n(-975, {	-- Humility
+										crit(28, {	-- Defeat Azaruux as Pelagos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(29, {	-- Defeat Azaruux as Kleia
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(30, {	-- Defeat Azaruux as Mikanikos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
 									}),
 								}),
 								n(172412, {	-- Craven Corinth
@@ -308,6 +401,7 @@ _.ExpansionFeatures =
 										i(180242),	-- Reverent Collector's Gauntlets
 										i(179970),	-- Reverent Forgelite's Gloves
 										i(178191),	-- Reverent Watcher's Gauntlets
+										i(184454),	-- Reverent Gauntlets
 									}),
 								}),
 								n(172177, {	-- Echthra
@@ -354,6 +448,7 @@ _.ExpansionFeatures =
 										i(180245),	-- Reverent Collector's Girdle
 										i(179974),	-- Reverent Forgelite's Belt
 										i(178194),	-- Reverent Watcher's Girdle
+										i(184455),	-- Reverent Girdle
 									}),
 								}),
 								n(170654, {	-- Kalisthene
@@ -401,6 +496,7 @@ _.ExpansionFeatures =
 										i(180239),	-- Reverent Collector's Helm
 										i(177204),	-- Reverent Bearer's Helm
 										i(178188),	-- Reverent Watcher's Helm
+										i(184452),	-- Reverent Helm
 									}),
 								}),
 								n(172099, {	-- Mort
@@ -420,6 +516,16 @@ _.ExpansionFeatures =
 										n(-974, {	-- Wisdom
 										}),
 										n(-975, {	-- Humility
+											crit(22, {	-- Defeat Mad Mortimer as Pelagos
+											["achievementID"] = 14865,	-- Disciple of Humility
+											}),
+											crit(23, {	-- Defeat Mad Mortimer as Kleia
+											["achievementID"] = 14865,	-- Disciple of Humility
+											}),
+											crit(24, {	-- Defeat Mad Mortimer as Mikanikos
+											["achievementID"] = 14865,	-- Disciple of Humility
+											}),
+											i(184460),	-- Reverent Bracer
 										}),
 									},
 								}),
@@ -452,6 +558,7 @@ _.ExpansionFeatures =
 										i(180241),	-- Reverent Collector's Warboots
 										i(179969),	-- Reverent Forgelite's Boots
 										i(178190),	-- Reverent Watcher's Warboots
+										i(184459),	-- Reverent Boots
 									}),
 								}),
 								n(172682, {	-- Splinterbark Nightmare
@@ -490,6 +597,7 @@ _.ExpansionFeatures =
 										i(180244),	-- Reverent Collector's Shoulders
 										i(179973),	-- Reverent Forgelite's Spaulders
 										i(178193),	-- Reverent Watcher's Shoulders
+										i(184458),	-- Reverent Shoulders
 									}),
 								}),
 								n(172411, {	-- Thran'tiok
@@ -504,8 +612,32 @@ _.ExpansionFeatures =
 										}),
 									}),
 									n(-974, {	-- Wisdom
+										i(184462, {	-- Arsenal: Doubt's Weapon Cache
+											["g"] = {
+												i(184466),	-- Doubt Tinged Bell
+												i(184463),	-- Doubt Tinged Crossbow
+												i(184472),	-- Doubt Tinged Gavel
+												i(184467),	-- Doubt Tinged Grip
+												i(184469),	-- Doubt Tinged Greatsword
+												i(184465),	-- Doubt Tinged Longspear
+												i(184470),	-- Doubt Tinged Mallet
+												i(184468),	-- Doubt Tinged Quickblade
+												i(184473),	-- Doubt Tinged Spellblade
+												i(184464),	-- Doubt Tinged Warglaive
+											},
+										}),
 									}),
 									n(-975, {	-- Humility
+										crit(19, {	-- Defeat Thran'tiok as Pelagos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(20, {	-- Defeat Thran'tiok as Kleia
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										crit(21, {	-- Defeat Thran'tiok as Mikanikos
+											["achievementID"] = 14865,	-- Disciple of Humility
+										}),
+										i(184453),	-- Reverent Cloak
 									}),
 								}),
 								--[[
@@ -541,7 +673,7 @@ _.ExpansionFeatures =
 										-- Grants Ascension Crafting recipe: Herald's Footpads (spell 346680)
 										["sourceQuests"] = { 60496 },	-- Into the Coliseum
 										["provider"] = { "n", 168427 },	-- Artemede
-										["coord"] = { 28.2, 42.4, 1707 },	-- Archon's Rise
+										["coord"] = { 28.2, 42.4, ARCHONS_RISE },
 									}),
 									q(60974, {	-- Phial of Serenity
 										["sourceQuests"] = { 60973 },	-- Blueprint: Phial of Serenity
@@ -565,6 +697,7 @@ _.ExpansionFeatures =
 									}),
 									i(180594),	-- Calloused Bone
 									i(180478),	-- Champion's Pelt
+									i(181157),	-- Charm of Discord
 									i(181239),	-- Charm of Focus
 									i(180479),	-- Charm of Fortitude
 									i(181145),	-- Charm of Persistence
@@ -572,262 +705,398 @@ _.ExpansionFeatures =
 									i(180477),	-- Elysian Feathers
 									i(183793),	-- Empyrean Refreshment
 									i(180579),	-- Herald's Footpads
+									i(183126),	-- Kyrian Smith's Kit
 									i(180595),	-- Nightforged Steel
+									i(180445),	-- Skystrider Glider
+									i(184451),	-- Vesper of Calling
 								},
 							}),
 							n(-943, {	-- Tier 1: First Steps
-								q(62218, {	-- A Fountain for Fae
-									["sourceQuests"] = { 61361 },	-- Nuuminuuru
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-								q(60495, {	-- A Suitable Opponent
-									["sourceQuests"] = { 60494 },	-- Your Friend, Dactylis
-									["provider"] = { "n", 168485 },	-- Apolon
-									["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
-								}),
-								q(61358, {	-- Alderyn and Myn'ir
-									["sourceQuests"] = { 60498 },	-- Overcoming the Trial
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },
-								}),
-								q(61963, {	-- Called to the Hunt
-									["sourceQuests"] = { 61358 },	-- Alderyn and Myn'ir
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },
-								}),
-								q(61362, {	-- Caretaker of Faeries
-									-- Rewards spell 340388 (Trial: Nuuminuuru)
-									["sourceQuests"] = { 62219 },	-- Fanciful Distractions
-									["provider"] = { "n", 173710 },	-- Nuuminuuru
-									["coord"] = { 51.4, 33.7, ARDENWEALD },
-								}),
-								q(61369, {	-- Craven Corinth
-									["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },
-								}),
-								q(61356, {	-- Echthra, Dame of Hated
-									["sourceQuests"] = { 60498 },	-- Overcoming the Trial
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
-								}),
-								q(62219, {	-- Fanciful Distractions
-									["sourceQuests"] = { 62218 },	-- A Fountain for Fae
-									["provider"] = { "n", 173710 },	-- Nuuminuuru
-									["coord"] = { 51.4, 33.7, ARDENWEALD },
-								}),
-								q(61357, {	-- Hatred Abated
-									-- Rewards spell 337133 "Trial: Echthra"
-									["sourceQuests"] = { 61490 },	-- War of Information
-									["provider"] = { "n", 172515 },	-- Echthra
-									["coord"] = { 56.7, 11.6, MALDRAXXUS },
-								}),
-								q(60493, {	-- Humble Gatherer
-									["sourceQuests"] = { 60489 },	-- The Path of Ascension
-									["provider"] = { "n", 168485 },	-- Apolon
-									["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
-								}),
-								q(60496, {	-- Into the Coliseum
-									["sourceQuests"] = { 60495 },	-- A Suitable Opponent
-									["provider"] = { "n", 168427 },	-- Artemede
-									["coord"] = { 28.2, 42.4, 1707 },	-- Archon's Rise
-									["g"] = {
-										i(180481),	-- Curious Blueprint
-									},
-								}),
-								q(61370, {	-- No Other Way
-									-- Rewards spell 340105 (Trial: Craven Corinth)
-									["sourceQuests"] = { 61369 },	-- Craven Corinth
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-								q(61361, {	-- Nuuminuuru
-									["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-								q(61489, {	-- Of Hearsay and Heresy
-									["sourceQuests"] = { 61356 },	-- Echthre, Dame of Hatred
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-								q(60498, {	-- Overcoming the Trial
-									["sourceQuests"] = { 61473 },	-- Sourcing Your Own Materials
-									["provider"] = { "n", 168427 },	-- Artemede
-									["coord"] = { 28.2, 42.4, 1707 },	-- Archon's Rise
-								}),
-								q(61965, {	-- Piercing the Shell
-									["sourceQuests"] = { 61963 },	-- Called to the Hunt
-									["provider"] = { "n", 173402 },	-- Alderyn
-									["coord"] = { 50.6, 69.9, ARDENWEALD },
-								}),
-								q(61473, {	-- Sourcing Your Own Materials
-									["sourceQuests"] = { 60497 },	-- Herald's Footpads
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-								q(61365, {	-- Splinterbark Nightmare
-									["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-								q(61366, {	-- Tactical Operation
-									-- Rewards spell 340108 (Trial: Splinterbark Nightmare)
-									["sourceQuests"] = { 61365 },	-- Splinterbark Nightmare
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-								q(61360, {	-- The Hunt's Gratitude
-									-- Rewards: spell 339523 "Trial: Alderyn and Myn'ir"
-									["sourceQuests"] = { 61965 },	-- Piercing the Shell
-									["provider"] = { "n", 173403 },	-- Myn'ir
-									["coord"] = { 51.7, 78.8, ARDENWEALD },
-								}),
-								q(60489, {	-- The Path of Ascension
-									["provider"] = { "n", 167745 },	-- Haephus
-									["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
-								}),
-								q(61490, {	-- War of Information
-									["sourceQuests"] = { 61489 },	-- Of Hearsay and Heresy
-									["provider"] = { "n", 172515 },	-- Echthra
-									["coord"] = { 56.7, 11.6, MALDRAXXUS },
-								}),
-								q(60494, {	-- Your Friend, Dactylis
-									["sourceQuests"] = { 60493 },	-- Humble Gatherer
-									["provider"] = { "n", 168485 },	-- Apolon
-									["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
+								n(QUESTS, {
+									q(62218, {	-- A Fountain for Fae
+										["sourceQuests"] = { 61361 },	-- Nuuminuuru
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(60495, {	-- A Suitable Opponent
+										["sourceQuests"] = { 60494 },	-- Your Friend, Dactylis
+										["provider"] = { "n", 168485 },	-- Apolon
+										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
+									}),
+									q(61358, {	-- Alderyn and Myn'ir
+										["sourceQuests"] = { 60498 },	-- Overcoming the Trial
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(61963, {	-- Called to the Hunt
+										["sourceQuests"] = { 61358 },	-- Alderyn and Myn'ir
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(61362, {	-- Caretaker of Faeries
+										-- Rewards spell 340388 (Trial: Nuuminuuru)
+										["sourceQuests"] = { 62219 },	-- Fanciful Distractions
+										["provider"] = { "n", 173710 },	-- Nuuminuuru
+										["coord"] = { 51.4, 33.7, ARDENWEALD },
+									}),
+									q(61369, {	-- Craven Corinth
+										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(61356, {	-- Echthra, Dame of Hated
+										["sourceQuests"] = { 60498 },	-- Overcoming the Trial
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(62219, {	-- Fanciful Distractions
+										["sourceQuests"] = { 62218 },	-- A Fountain for Fae
+										["provider"] = { "n", 173710 },	-- Nuuminuuru
+										["coord"] = { 51.4, 33.7, ARDENWEALD },
+									}),
+									q(61357, {	-- Hatred Abated
+										-- Rewards spell 337133 "Trial: Echthra"
+										["sourceQuests"] = { 61490 },	-- War of Information
+										["provider"] = { "n", 172515 },	-- Echthra
+										["coord"] = { 56.7, 11.6, MALDRAXXUS },
+									}),
+									q(60493, {	-- Humble Gatherer
+										["sourceQuests"] = { 60489 },	-- The Path of Ascension
+										["provider"] = { "n", 168485 },	-- Apolon
+										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
+									}),
+									q(60496, {	-- Into the Coliseum
+										["sourceQuests"] = { 60495 },	-- A Suitable Opponent
+										["provider"] = { "n", 168427 },	-- Artemede
+										["coord"] = { 28.2, 42.4, ARCHONS_RISE },
+										["g"] = {
+											i(180481),	-- Curious Blueprint
+										},
+									}),
+									q(61370, {	-- No Other Way
+										-- Rewards spell 340105 (Trial: Craven Corinth)
+										["sourceQuests"] = { 61369 },	-- Craven Corinth
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(61361, {	-- Nuuminuuru
+										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(61489, {	-- Of Hearsay and Heresy
+										["sourceQuests"] = { 61356 },	-- Echthre, Dame of Hatred
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(60498, {	-- Overcoming the Trial
+										["sourceQuests"] = { 61473 },	-- Sourcing Your Own Materials
+										["provider"] = { "n", 168427 },	-- Artemede
+										["coord"] = { 28.2, 42.4, ARCHONS_RISE },
+									}),
+									q(61965, {	-- Piercing the Shell
+										["sourceQuests"] = { 61963 },	-- Called to the Hunt
+										["provider"] = { "n", 173402 },	-- Alderyn
+										["coord"] = { 50.6, 69.9, ARDENWEALD },
+									}),
+									q(61473, {	-- Sourcing Your Own Materials
+										["sourceQuests"] = { 60497 },	-- Herald's Footpads
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(61365, {	-- Splinterbark Nightmare
+										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(61366, {	-- Tactical Operation
+										-- Rewards spell 340108 (Trial: Splinterbark Nightmare)
+										["sourceQuests"] = { 61365 },	-- Splinterbark Nightmare
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(61360, {	-- The Hunt's Gratitude
+										-- Rewards: spell 339523 "Trial: Alderyn and Myn'ir"
+										["sourceQuests"] = { 61965 },	-- Piercing the Shell
+										["provider"] = { "n", 173403 },	-- Myn'ir
+										["coord"] = { 51.7, 78.8, ARDENWEALD },
+									}),
+									q(60489, {	-- The Path of Ascension
+										["provider"] = { "n", 167745 },	-- Haephus
+										["coord"] = { 42.6, 53.1, ARCHONS_RISE },
+									}),
+									q(61490, {	-- War of Information
+										["sourceQuests"] = { 61489 },	-- Of Hearsay and Heresy
+										["provider"] = { "n", 172515 },	-- Echthra
+										["coord"] = { 56.7, 11.6, MALDRAXXUS },
+									}),
+									q(60494, {	-- Your Friend, Dactylis
+										["sourceQuests"] = { 60493 },	-- Humble Gatherer
+										["provider"] = { "n", 168485 },	-- Apolon
+										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
+									}),
 								}),
 							}),
 							n(-944, {	-- Tier 2: Sacred Trials
 							--	TODO: kept descriptions for athanos/mortimer/thran'tiok although i'm not sure about them.  i *had* fulfilled all those requirements before i upgraded to tier 2, but a guide i read just said "unlocked after you upgrade to tier 2" so i'm not sure if that's the only thing necessary
-								q(61371, {	-- Athanos
-									-- TODO: not 100% sure of the requirements
-									["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-								q(61373, {	-- Azaruux, the Realm Ender
-									["description"] = "Available after defeating Athanos, Mad Mortimer, and Thran'tiok on 'Courage' difficulty.",
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-								q(61372, {	-- Back to Him
-									["sourceQuests"] = { 61478 },	-- Humble Beginnings
-									["provider"] = { "n", 175295 },	-- Forgelite Sophone
-									["coord"] = { 51.6, 80.9, BASTION },
-								}),
-								q(62052, {	-- Exiled by Paranoia
-									["sourceQuests"] = { 61367 },	-- Thran'tiok
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
-								}),
-								q(61436, {	-- Field Trip
-									["sourceQuests"] = { 61363 },	-- Mad Mortimer
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
-								}),
-								q(61368, {	-- Filching Phylacteries
-									["sourceQuests"] = { 62053 },	-- Necromantic Power
-									["provider"] = { "n", 173495 },	-- Karaxi the Defector
-									["coord"] = { 59.7, 38.0, MALDRAXXUS },
-								}),
-								q(61478, {	-- Humble Beginnings
-									["sourceQuests"] = { 61371 },	-- Athanos
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },    -- Archon's Rise
-								}),
-								q(61363, {	-- Mad Mortimer
-									-- TODO: not 100% sure of the requirements
-									["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-								q(62053, {	-- Necromantic Power
-									["sourceQuests"] = { 62052 },	-- Exiled by Paranoia
-									["provider"] = { "n", 173495 },	-- Karaxi the Defector
-									["coord"] = { 53.8, 48.8, MALDRAXXUS },
-								}),
-								q(61364, {	-- Oozing with Opportunity
-									["sourceQuests"] = { 61436 },	-- Field Trip
-									["provider"] = { "n", 172141 },	-- Mad Mortimer
-									["coord"] = { 59.2, 71.9, MALDRAXXUS },
-								}),
-								q(63174, {	-- Path of Ascension: Mad Mortimer
-									["provider"] = { "n", 168485 },	-- Apolon
-									["isWeekly"] = true,
-									["coord"] = { 28.1, 41.7, 1707 },	-- Archon's Rise
-									["g"] = {
-										i(184812),	-- Apolon's Bounty
-									},
-								}),
-								q(63172, {	-- Path of Ascension: Splinterbark Nightmare
-								--	this was the first weekly that showed up for me, as soon as i came back to turn in Oozing with Opportunity, Filching Phylacteries, and Back to Him (prior to turn-in)
-									["provider"] = { "n", 168485 },	-- Apolon
-									["isWeekly"] = true,
-									["coord"] = { 28.1, 41.7, 1707 },	-- Archon's Rise
-									["g"] = {
-										i(184812),	-- Apolon's Bounty
-									},
-								}),
-								q(61367, {	-- Thran'tiok
-									-- TODO: not 100% sure of the requirements
-									["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
-									["provider"] = { "n", 168430 },	-- Dactylis
-									["coord"] = { 29.9, 38.8, 1707 },	-- Archon's Rise
-								}),
-
-
-
-
-
-								q(63169, {	-- Path of Ascension: Alderyn and Myn'ir
-									-- ["sourceQuests"] = {  },	-- TODO: ?
-									["provider"] = { "n", 168485 },	-- Apolon
-									["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
-									["isWeekly"] = true,
-									["g"] = {
-										i(184812),	-- Apolon's Bounty
-									},
-								}),
-								q(63171, {	-- Path of Ascension: Craven Corinth
-									-- ["sourceQuests"] = {  },	-- TODO: ?
-									["provider"] = { "n", 168485 },	-- Apolon
-									["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
-									["isWeekly"] = true,
-									["g"] = {
-										i(184812),	-- Apolon's Bounty
-									},
-								}),
-								q(62951, {	-- Path of Ascension: Kleia
-									-- ["sourceQuests"] = {  },	-- TODO: ?
-									["provider"] = { "n", 168485 },	-- Apolon
-									["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
-									["isWeekly"] = true,
-									["g"] = {
-										i(184812),	-- Apolon's Bounty
-									},
-								}),
-								q(62952, {	-- Path of Ascension: Pelagos
-									-- ["sourceQuests"] = {  },	-- TODO: ?
-									["provider"] = { "n", 168485 },	-- Apolon
-									["coord"] = { 27.8, 41.7, 1707 },	-- Archon's Rise
-									["isWeekly"] = true,
-									["g"] = {
-										i(184812),	-- Apolon's Bounty
-									},
+								n(QUESTS, {
+									q(61371, {	-- Athanos
+										-- TODO: not 100% sure of the requirements
+										["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(61373, {	-- Azaruux, the Realm Ender
+										["description"] = "Available after defeating Athanos, Mad Mortimer, and Thran'tiok on 'Courage' difficulty.",
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(61372, {	-- Back to Him
+										["sourceQuests"] = { 61478 },	-- Humble Beginnings
+										["provider"] = { "n", 175295 },	-- Forgelite Sophone
+										["coord"] = { 51.6, 80.9, BASTION },
+									}),
+									q(62052, {	-- Exiled by Paranoia
+										["sourceQuests"] = { 61367 },	-- Thran'tiok
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(61436, {	-- Field Trip
+										["sourceQuests"] = { 61363 },	-- Mad Mortimer
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(61368, {	-- Filching Phylacteries
+										["sourceQuests"] = { 62053 },	-- Necromantic Power
+										["provider"] = { "n", 173495 },	-- Karaxi the Defector
+										["coord"] = { 59.7, 38.0, MALDRAXXUS },
+									}),
+									q(61478, {	-- Humble Beginnings
+										["sourceQuests"] = { 61371 },	-- Athanos
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(61363, {	-- Mad Mortimer
+										-- TODO: not 100% sure of the requirements
+										["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
+									q(62053, {	-- Necromantic Power
+										["sourceQuests"] = { 62052 },	-- Exiled by Paranoia
+										["provider"] = { "n", 173495 },	-- Karaxi the Defector
+										["coord"] = { 53.8, 48.8, MALDRAXXUS },
+									}),
+									q(61364, {	-- Oozing with Opportunity
+										["sourceQuests"] = { 61436 },	-- Field Trip
+										["provider"] = { "n", 172141 },	-- Mad Mortimer
+										["coord"] = { 59.2, 71.9, MALDRAXXUS },
+									}),
+									q(63169, {	-- Path of Ascension: Alderyn and Myn'ir
+										-- ["sourceQuests"] = {  },	-- TODO: ?
+										["provider"] = { "n", 168485 },	-- Apolon
+										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
+										["isWeekly"] = true,
+										["g"] = {
+											i(184812),	-- Apolon's Bounty
+										},
+									}),
+									q(63175, {	-- Path of Ascension: Athanos
+										["provider"] = { "n", 168485 },	-- Apolon
+										["isWeekly"] = true,
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
+										["g"] = {
+											i(184812),	-- Apolon's Bounty
+										},
+									}),
+									q(63176, {	-- Path of Ascension: Azaruux
+										["provider"] = { "n", 168485 },	-- Apolon
+										["isWeekly"] = true,
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
+										["g"] = {
+											i(184812),	-- Apolon's Bounty
+										},
+									}),
+									q(63171, {	-- Path of Ascension: Craven Corinth
+										-- ["sourceQuests"] = {  },	-- TODO: ?
+										["provider"] = { "n", 168485 },	-- Apolon
+										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
+										["isWeekly"] = true,
+										["g"] = {
+											i(184812),	-- Apolon's Bounty
+										},
+									}),
+									q(63168, {	-- Path of Ascension: Echthra
+										["provider"] = { "n", 168485 },	-- Apolon
+										["isWeekly"] = true,
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
+										["g"] = {
+											i(184812),	-- Apolon's Bounty
+										},
+									}),
+									q(62954, {	-- Path of Ascension: Kalisthene
+										["provider"] = { "n", 168485 },	-- Apolon
+										["isWeekly"] = true,
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
+										["g"] = {
+											i(184812),	-- Apolon's Bounty
+										},
+									}),
+									q(62951, {	-- Path of Ascension: Kleia
+										-- ["sourceQuests"] = {  },	-- TODO: ?
+										["provider"] = { "n", 168485 },	-- Apolon
+										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
+										["isWeekly"] = true,
+										["g"] = {
+											i(184812),	-- Apolon's Bounty
+										},
+									}),
+									q(63174, {	-- Path of Ascension: Mad Mortimer
+										["provider"] = { "n", 168485 },	-- Apolon
+										["isWeekly"] = true,
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
+										["g"] = {
+											i(184812),	-- Apolon's Bounty
+										},
+									}),
+									q(62953, {	-- Path of Ascension: Mikanikos
+										["provider"] = { "n", 168485 },	-- Apolon
+										["isWeekly"] = true,
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
+										["g"] = {
+											i(184812),	-- Apolon's Bounty
+										},
+									}),
+									q(63170, {	-- Path of Ascension: Nuuminuuru
+										["provider"] = { "n", 168485 },	-- Apolon
+										["isWeekly"] = true,
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
+										["g"] = {
+											i(184812),	-- Apolon's Bounty
+										},
+									}),
+									q(62952, {	-- Path of Ascension: Pelagos
+										-- ["sourceQuests"] = {  },	-- TODO: ?
+										["provider"] = { "n", 168485 },	-- Apolon
+										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
+										["isWeekly"] = true,
+										["g"] = {
+											i(184812),	-- Apolon's Bounty
+										},
+									}),
+									q(63172, {	-- Path of Ascension: Splinterbark Nightmare
+									--	this was the first weekly that showed up for me, as soon as i came back to turn in Oozing with Opportunity, Filching Phylacteries, and Back to Him (prior to turn-in)
+										["provider"] = { "n", 168485 },	-- Apolon
+										["isWeekly"] = true,
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
+										["g"] = {
+											i(184812),	-- Apolon's Bounty
+										},
+									}),
+									q(63173, {	-- Path of Ascension: Thran'tiok
+										["provider"] = { "n", 168485 },	-- Apolon
+										["isWeekly"] = true,
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
+										["g"] = {
+											i(184812),	-- Apolon's Bounty
+										},
+									}),
+									q(61367, {	-- Thran'tiok
+										-- TODO: not 100% sure of the requirements
+										["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
+										["provider"] = { "n", 168430 },	-- Dactylis
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+									}),
 								}),
 							}),
 							n(-945, {	-- Tier 3: Continued Training
-								n(-908, {	-- Rewards
+								n(QUESTS, {
+									q(63181, {	-- Path of Ascension: Artemede's Challenge
+										["provider"] = { "n", 168427 },	-- Artemede
+										["isWeekly"] = true,
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
+										["g"] = {
+											i(184811),	-- Artemede's Bounty
+										},
+									}),
+									q(63182, {	-- Path of Ascension: Artemede's Challenge
+										["provider"] = { "n", 168427 },	-- Artemede
+										["isWeekly"] = true,
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
+										["g"] = {
+											i(184811),	-- Artemede's Bounty
+										},
+									}),
+									q(63184, {	-- Path of Ascension: Artemede's Challenge
+										["provider"] = { "n", 168427 },	-- Artemede
+										["isWeekly"] = true,
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
+										["g"] = {
+											i(184811),	-- Artemede's Bounty
+										},
+									}),
+									q(63185, {	-- Path of Ascension: Artemede's Challenge
+										["provider"] = { "n", 168427 },	-- Artemede
+										["isWeekly"] = true,
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
+										["g"] = {
+											i(184811),	-- Artemede's Bounty
+										},
+									}),
+									q(63186, {	-- Path of Ascension: Artemede's Challenge
+										["provider"] = { "n", 168427 },	-- Artemede
+										["isWeekly"] = true,
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
+										["g"] = {
+											i(184811),	-- Artemede's Bounty
+										},
+									}),
+									q(63187, {	-- Path of Ascension: Artemede's Challenge
+										["provider"] = { "n", 168427 },	-- Artemede
+										["isWeekly"] = true,
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
+										["g"] = {
+											i(184811),	-- Artemede's Bounty
+										},
+									}),
+									q(63188, {	-- Path of Ascension: Artemede's Challenge
+										["provider"] = { "n", 168427 },	-- Artemede
+										["isWeekly"] = true,
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
+										["g"] = {
+											i(184811),	-- Artemede's Bounty
+										},
+									}),
+									q(63189, {	-- Path of Ascension: Artemede's Challenge
+										["provider"] = { "n", 168427 },	-- Artemede
+										["isWeekly"] = true,
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
+										["g"] = {
+											i(184811),	-- Artemede's Bounty
+										},
+									}),
+									q(63190, {	-- Path of Ascension: Artemede's Challenge
+										["provider"] = { "n", 168427 },	-- Artemede
+										["isWeekly"] = true,
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
+										["g"] = {
+											i(184811),	-- Artemede's Bounty
+										},
+									}),
+									q(63191, {	-- Path of Ascension: Artemede's Challenge
+										["provider"] = { "n", 168427 },	-- Artemede
+										["isWeekly"] = true,
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
+										["g"] = {
+											i(184811),	-- Artemede's Bounty
+										},
+									}),
 								}),
 							}),
 							n(-946, {	-- Tier 4: Teachings of Wisdom
-								n(-908, {	-- Rewards
-								}),
 							}),
 							n(-947, {	-- Tier 5: Trials of Humility
-								n(-908, {	-- Rewards
+								n(REWARDS, {
 								--	TODO: cloaks may need to be tagged with classes based on armor proficiency (like if leather users can't learn/use the 'cloth' set cloak)
 								--	*not sure about 3 items marked with asterisk
 									i(181287),	-- Halo of the Reverent*
@@ -849,12 +1118,14 @@ _.ExpansionFeatures =
 							}),
 							n(VENDORS, {
 								n(171973, {	-- Binkiros <Mount Vendor>
-									["coord"] = { 31.6, 48.0, 1707 },
+									["coord"] = { 31.6, 48.0, ARCHONS_RISE },
 									["g"] = {
 										i(180768, {	-- Eternal Phalynx of Humility
+											["customCollect"] = "SL_COV_KYR",	-- Kyrian
 											["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
 										}),
 										i(180767, {	-- Eternal Phalynx of Loyalty
+											["customCollect"] = "SL_COV_KYR",	-- Kyrian
 											["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
 										}),
 										i(181300, {	-- Gruesome Flayedwing
@@ -869,7 +1140,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								n(171959, {	-- Orluna <Armor Vendor>
-									["coord"] = { 27.1, 40.9, 1707 },
+									["coord"] = { 27.1, 40.9, ARCHONS_RISE },
 									["g"] = {
 										i(177222, {	-- Discordant Bearer's Cloak
 											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
@@ -951,7 +1222,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								n(171958, {	-- Phixin <Weapon Vendor>
-									["coord"] = { 30.4, 39.7, 1707 },
+									["coord"] = { 30.4, 39.7, ARCHONS_RISE },
 									["g"] = {
 									--	TODO: verify prices of items marked with * (these items are not on wowhead but were reported as coming from this vendor by nohh on discord.  i think the ability to purchase the items is unlocked via completing specific PoA achievements, so they may not be visible for all kyrians immediately)
 										i(181322, {	-- Bonebound Tome*
@@ -1095,7 +1366,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								n(171981, {	-- Zeleskos <Pet Vendor>
-									["coord"] = { 31.1, 47.3, 1707 },
+									["coord"] = { 31.1, 47.3, ARCHONS_RISE },
 									["g"] = {
 										i(181315, {	-- Bloodfeaster Spiderling
 											["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
@@ -1125,11 +1396,11 @@ _.ExpansionFeatures =
 							q(63053, {	-- At a Moment's Notice
 								["sourceQuests"] = { 63052 },	-- Step of Faith
 								["provider"] = { "n", 175907 },	-- Khamsius
-								["coord"] = { 48.9, 62.7, 1707 },	-- Archon's Rise
+								["coord"] = { 48.9, 62.7, ARCHONS_RISE },
 							}),
 							q(63052, {	-- Step of Faith
 								["provider"] = { "n", 167745 },	-- Haephus
-								["coord"] = { 42.6, 53.1, 1707 },	-- Archon's Rise
+								["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 							}),
 						}),
 						n(-3349, {	-- Tier 2: Leap of Power
@@ -1145,4 +1416,15 @@ _.ExpansionFeatures =
 			},
 		}),
 	}),
+};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(60937),	-- [DNT] Blueprint: Herald's Footpads
+		q(61265),	-- Blueprint: Charm of Alacrity
+	}),
+});
+_.HiddenQuestTriggers = {
+	q(61268),	-- Triggered from buff recieved from Kyrian Conductor Tier 3
+	q(61267),	-- Triggered from buff recieved from Kyrian Conductor Tier 3
+	q(61266),	-- Triggered from buff recieved from Kyrian Conductor Tier 3
 };

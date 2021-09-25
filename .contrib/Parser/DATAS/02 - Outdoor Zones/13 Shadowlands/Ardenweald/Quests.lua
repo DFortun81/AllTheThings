@@ -101,6 +101,11 @@ _.Zones =
 					["provider"] = { "n", 169031 },	-- Lady Moonberry
 					["coord"] = { 63.5, 36.2, ARDENWEALD },
 				}),
+				q(63638, {	-- Can't Turn Our Backs
+					["sourceQuests"] = { 63578 },	-- The Battle of Ardenweald
+					["provider"] = { "n", 177148 },	-- Lady Moonberry
+					["coord"] = { 48.7, 43.3, ARDENWEALD },
+				}),
 				q(58592, {	-- Caring for the Caretakers
 					["sourceQuests"] = { 60572 },	-- For the Sake of Spirit
 					["provider"] = { "n", 160962 },	-- Dreamweaver
@@ -188,7 +193,7 @@ _.Zones =
 				q(58022, {	-- Finish What He Started
 					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
 					["provider"] = { "n", 171099 },	-- Guardian Kota
-					["coord"] = { 62,8, 32.1, ARDENWEALD },
+					["coord"] = { 62.8, 32.1, ARDENWEALD },
 				}),
 				q(60341, {	-- First on the Agenda
 					["sourceQuests"] = { 60763 },	-- I Moustache You to Lend a Hand
@@ -339,7 +344,7 @@ _.Zones =
 				q(58023, {	-- One Big Problem
 					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
 					["provider"] = { "n", 171099 },	-- Guardian Kota
-					["coord"] = { 62,8, 32.1, ARDENWEALD },
+					["coord"] = { 62.8, 32.1, ARDENWEALD },
 				}),
 				q(60594, {	-- One Special Spirit
 					["sourceQuests"] = {
@@ -373,7 +378,6 @@ _.Zones =
 				}),
 				q(58025, {	-- Queen of the Underground
 					["sourceQuests"] = {
-						58022,	-- Finish What He Started
 						58023,	-- One Big Problem
 					},
 					["provider"] = { "n", 160155 },	-- Guardian Kota
@@ -422,6 +426,11 @@ _.Zones =
 						i(175114),	-- Renny (PET!)
 					},
 				}),
+				q(63639, {	-- Report to Oribos
+					["sourceQuests"] = { 63904 },	-- The Heart of Ardenweald
+					["provider"] = { "n", 177460 },	-- Winter Queen
+					["coord"] = { 47.1, 48.5, ARDENWEALD },
+				}),
 				q(60522, {	-- Return to Tirna Vaal
 					["sourceQuests"] = { 60632 },	-- I Know Your Face
 					["provider"] = { "n", 169935 },	-- Ara'lon
@@ -436,6 +445,11 @@ _.Zones =
 					["sourceQuests"] = { 60600 },	-- Preparing for the Winter Queen
 					["provider"] = { "n", 158487 },	-- Droman Tashmur
 					["coord"] = { 63.5, 36.2, ARDENWEALD },
+				}),
+				q(64042, {	-- Rituals of Night
+					["sourceQuests"] = { 63681 },	-- Back to The Heart
+					["provider"] = { "n", 177434 },	-- Ysera
+					["coord"] = { 48.0, 53.9, ARDENWEALD },
 				}),
 				q(60064, {	-- Save Ol' Gertie
 					["sourceQuests"] = { 60062 },	-- The Shattered Harp
@@ -517,7 +531,10 @@ _.Zones =
 					["coord"] = { 46.9, 27.6, ARDENWEALD },
 				}),
 				q(57655, {	-- Supplies Needed: More Husks!
-				--	TODO: figure out SQs.  saw after finish regular zone quest meta, while working on sojourner achievement, during 'unsafe workplace.'  but it may unlock sooner
+					["sourceQuests"] = {
+						59621,	-- Breaking a Few Eggs
+						59622,	-- Tending to the Tenders
+					},
 					["provider"] = { "o", 336415 },	-- Discarded Scroll
 					["coord"] = { 47.5, 26.2, ARDENWEALD },
 				}),
@@ -609,10 +626,21 @@ _.Zones =
 					["provider"] = { "n", 160121 },	-- Master Sha'lor
 					["coord"] = { 62.9, 36.2, ARDENWEALD },
 				}),
+				q(63904, {	-- The Heart of Ardenweald
+					["sourceQuests"] = { 63638 },	-- Can't Turn Our Backs
+					["provider"] = { "n", 177460 },	-- Winter Queen
+					["coord"] = { 47.1, 48.5, ARDENWEALD },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
 				q(60628, {	-- The Missing Hunters
 					["sourceQuests"] = { 60521 },	-- Call of the Hunt
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
 					["coord"] = { 51.3, 34.0, ARDENWEALD },
+				}),
+				q(63682, {	-- The Power of Elune
+					["sourceQuests"] = { 64042 },	-- Rituals of Night
+					["provider"] = { "n", 177434 },	-- Ysera
+					["coord"] = { 45.3, 64.8, ARDENWEALD },
 				}),
 				q(58724, {	-- The Queen's Request
 					["sourceQuests"] = { 58723 },	-- The Court of Winter
@@ -802,34 +830,118 @@ _.Zones =
 						i(175663),	-- Grove Warden's Greaves
 					},
 				}),
-				q(60840, {	-- Wild Hunt Offensive (bonus objective)
-					["isWorldQuest"] = true,	-- shows up in /attwq without this
-					["coord"] = { 64, 46, ARDENWEALD },
-				}),
 				q(60778, {	-- Wildseed Rescue
 					["sourceQuests"] = { 60341 },	-- First on the Agenda
 					["provider"] = { "n", 170175 },	-- Featherlight
 					["coord"] = { 65.0, 19.5, ARDENWEALD },
 				}),
-
-				-- Bonus Objectives
-				q(62773, {	-- Dreamshrine Basin (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				q(63683, {	-- Winter's Sigil
+					["sourceQuests"] = { 63682 },	-- The Power of Elune
+					["provider"] = { "n", 178669 },	-- Winter Queen
+					["coord"] = { 45.2, 65.1, ARDENWEALD },
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
-				q(62720, {	-- The Fallen Tree (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-				}),
-				q(62775, {	-- The Waning Grove (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-				}),
-				q(62774, {	-- Tranquil Pools (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				n(BONUS_OBJECTIVES, {
+					q(62773, {	-- Dreamshrine Basin (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(175713),	-- Sprigthistle Loop
+						},
+					}),
+					q(60840, {	-- Wild Hunt Offensive
+						["isWorldQuest"] = true,	-- shows up in /attwq without this
+						["coord"] = { 64.0, 46.0, ARDENWEALD },
+					}),
+					q(62720, {	-- The Fallen Tree (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181404),	-- Faemoss Shoes
+							i(181406),	-- Runetender Boots
+							i(181405),	-- Gormhusk Steps
+							i(181403),	-- Sapsteel Sabatons
+						},
+					}),
+					q(62775, {	-- The Waning Grove (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181415),	-- Faemoss Leggings
+							i(181417),	-- Runetender Pants
+							i(181416),	-- Gormhusk Kilt
+							i(181414),	-- Sapsteel Legplates
+						},
+					}),
+					q(62774, {	-- Tranquil Pools (pre-60)
+						["customCollect"] = "SL_SKIP",	-- SL Skip Character
+						["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+						["g"] = {
+							i(181420),	-- Faemoss Amice
+							i(181418),	-- Runetender Shoulderguards
+							i(181421),	-- Gormhusk Mantle
+							i(181419),	-- Sapsteel Pauldrons
+						},
+					}),
 				}),
 			}),
 		}),
 	}),
+};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(58772),	-- [DNT] Bonds of Depletion
+		q(61167),	-- [DNT] Delivering Hope
+		q(61149),	-- [DNT] Kivarr's Remedy
+		q(58734),	-- [PH] Get Memories from Archives
+		q(58774),	-- [REUSE AS WQ]
+		q(57466),	-- [REUSE]
+		q(58814),	-- [UNUSED]
+		q(58728),	-- A Promising Lead
+		q(58731),	-- A Shattered Vessel
+		q(58733),	-- Animamnesis
+		q(57663),	-- Blackthorn Blackout
+		q(57872),	-- Bring More Friends!
+		q(57659),	-- Bring More Friends!
+		q(58730),	-- Deep Thoughts
+		q(58729),	-- Night and Day
+		q(58735),	-- Path of Totality
+		q(57733),	-- Pocktfuls of Silk
+		q(58769),	-- REUSE ME
+		q(58736),	-- Selenis, Night Warrior
+		q(57457),	-- Shaking 'Shrooms
+		q(57658),	-- The Final Leg
+		q(58732),	-- The Stuff of Memories
+		q(58173),	-- What Are They Hiding?
+	}),
+	n(-10100, {	-- Shadowlands
+		n(-319, {	-- Weapons
+			i(176012),	-- Ardenweald Quest Mace
+			i(176013),	-- Ardenweald Quest Mace
+			i(176014),	-- Ardenweald Quest Mace
+			i(176015),	-- Ardenweald Quest Mace
+			i(176016),	-- Ardenweald Quest Mace
+			i(179503),	-- Ardenweald Quest Dagger
+			i(179504),	-- Ardenweald Quest Dagger
+			i(179505),	-- Ardenweald Quest Dagger
+			i(179506),	-- Ardenweald Quest Dagger
+			i(179507),	-- Ardenweald Quest Dagger
+			i(176042),	-- Ardenweald Quest Offhand
+			i(176043),	-- Ardenweald Quest Offhand
+			i(176044),	-- Ardenweald Quest Offhand
+			i(176045),	-- Ardenweald Quest Offhand
+			i(176046),	-- Ardenweald Quest Offhand
+			i(176841),	-- Ardenweald Quest Staff
+			i(176842),	-- Ardenweald Quest Staff
+			i(176843),	-- Ardenweald Quest Staff
+			i(176844),	-- Ardenweald Quest Staff
+			i(178117),	-- Ardenweald NPC Staff
+			i(178118),	-- Ardenweald NPC Staff
+		}),
+	}),
+});
+_.HiddenQuestTriggers = {
+	q(63427),	-- Intro Skip
+	q(63007),	-- Intro Skip
+	q(64312),	-- listening to the story time with tyrande after 9.1 campaign finish (in ardenweald)
 };

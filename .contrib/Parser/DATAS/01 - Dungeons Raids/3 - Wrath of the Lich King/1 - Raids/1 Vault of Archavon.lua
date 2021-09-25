@@ -2,9 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(753, { 	-- Vault of Archavon
-		["order"] = "01",
+_.Instances = { tier(WOTLK_TIER, {
+	inst(753, {	-- Vault of Archavon
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,
