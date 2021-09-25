@@ -21,8 +21,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				q(10944, {	-- The Secret Compromised
 					["qg"] = 22820,	-- Seer Olum
 					["sourceQuest"] = 10708,	-- Akama's Promise
-					["coord"] = { 48, 18.2, SERPENTSHRINE_CAVERN },
 					["description"] = "After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",
+					["coord"] = { 48, 18.2, SERPENTSHRINE_CAVERN },
+					["maps"] = { SHADOWMOON_VALLEY },
 				}),
 			}),
 			n(ZONE_DROPS, {
