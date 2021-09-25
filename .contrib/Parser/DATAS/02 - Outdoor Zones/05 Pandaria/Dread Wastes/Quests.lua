@@ -196,7 +196,8 @@ _.Zones =
 					["coord"] = { 48.1, 49.6, DREAD_WASTES },
 					["provider"] = { "n", 65975 },	-- Zer'ik
 					["altQuests"] = { 31089 },	-- By the Sea, Nevermore
-					["description"] = "This version is available if Kor'ik has been killed.",
+					["description"] = "This version is only available if Kor'ik has been killed & you did not complete the other version yet. If you did the alt version of this quest, there is no chance you will ever complete this quest on your current character.",
+					["DisablePartySync"] = true,
 					["sourceQuests"] = {
 						31681,	-- Better With Age
 						31680,	-- Crime and Punishment

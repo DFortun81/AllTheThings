@@ -19,6 +19,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { SHATTRATH_CITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 15, 66),
+					["groups"] = {
+						objective(1, {	-- Exarch Maladaar slain
+							["provider"] = { "n", 18373 },	-- Exarch Maladaar
+						}),
+					},
 				}),
 				q(10164, {	-- Everything Will Be Alright
 					["qg"] = 19698,	-- Greatfather Aldrimus
@@ -28,6 +33,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(64, 15, 64),
 					["groups"] = {
+						objective(1, {	-- Exarch Maladaar slain
+							["provider"] = { "n", 18373 },	-- Exarch Maladaar
+						}),
 						i(29341),	-- Auchenai Anchorite's Robe
 						i(29340),	-- Auchenai Monk's Tunic
 						i(29339),	-- Auchenai Tracker's Hauberk
@@ -47,11 +55,27 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54698,	-- Tormented Soulpriest
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(63, 15, 63),
+					["groups"] = {
+						objective(1, {	-- 0/5 Angered Skeleton slain
+							["provider"] = { "n", 18524 },	-- Angered Skeleton
+						}),
+						objective(2, {	-- 0/5 Raging Skeleton slain
+							["provider"] = { "n", 18521 },	-- Raging Skeleton
+						}),
+						objective(3, {	-- 0/3 Auchenai Necromancer slain
+							["provider"] = { "n", 18702 },	-- Auchenai Necromancer
+						}),
+					},
 				}),
 				q(29590, {	-- The Dead Watcher
 					["qg"] = 54725,	-- Draenei Spirit
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(63, 15, 63),
+					["groups"] = {
+						objective(1, {	-- Shirrak the Dead Watcher slain
+							["provider"] = { "n", 18371 },	-- Shirrak the Dead Watcher
+						}),
+					},
 				}),
 				q(29596, {	-- The End of the Exarch
 					["qg"] = 54725,	-- Draenei Spirit
@@ -59,6 +83,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(63, 15, 63),
 					["groups"] = {
+						objective(1, {	-- Exarch Maladaar slain
+							["provider"] = { "n", 18373 },	-- Exarch Maladaar
+						}),
 						i(29341),	-- Auchenai Anchorite's Robe
 						i(29340),	-- Auchenai Monk's Tunic
 						i(29339),	-- Auchenai Tracker's Hauberk
@@ -69,20 +96,20 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19412,	-- D'ore
 					["sourceQuest"] = 10167,	-- Auchindoun...
 					["coord"] = { 73.8, 57.0, 257 },
-					["cost"] = {
-						{ "i", 28283, 1 },	-- Soul Mirror
-					},
 					["maps"] = { NAGRAND },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 15, 66),
 					["groups"] = {
 						objective(1, {	-- Darkened Spirit slain
 							["provider"] = { "i", 28283 },	-- Soul Mirror
-							["description"] = "The soul mirror is located in the same chamber you pick up the quest from D'ore in Auchenai Crypts.\n\nDO NOT LEAVE WITHOUT IT.",
 							["crs"] = {
 								18688,	-- Ancient Orc Ancestor
 								19480,	-- Darkened Spirit
 							},
+						}),
+						objective(2, {	-- 0/1 Soul Mirror
+							["provider"] = { "i", 28283 },	-- Soul Mirror
+							["description"] = "The soul mirror is located in the same chamber you pick up the quest from D'ore in Auchenai Crypts.\n\nDO NOT LEAVE WITHOUT IT.",
 						}),
 					},
 				}),
