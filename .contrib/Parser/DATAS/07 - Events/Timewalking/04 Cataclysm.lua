@@ -10,6 +10,10 @@ _.WorldEvents =
 			q(47523, {	-- Disturbance Detected: Firelands
 				["provider"] = { "n", 158276 },	-- Vormu
 				["isWeekly"] = true,
+				["coords"] = {
+					{ 74.8, 18.2, STORMWIND_CITY },
+					{ 49.8, 37.6, ORGRIMMAR },
+				},
 				["maps"] = {
 					STORMWIND_CITY,
 					ORGRIMMAR,
