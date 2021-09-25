@@ -14760,12 +14760,9 @@ function app:GetDataCache()
 
 		-- Secrets
 		if app.Categories.Secrets then
-			db = {};
+			db = app.CreateNPC(-22);
 			db.g = app.Categories.Secrets;
 			db.expanded = false;
-			db.description = "Naughty secrets...";
-			db.text = L["SECRETS_HEADER"];
-			db.icon = app.asset("Category_Secrets");
 			table.insert(g, db);
 		end
 

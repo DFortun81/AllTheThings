@@ -858,6 +858,7 @@ app.L = {
 		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
 		[-20] = "Interface\\Icons\\INV_Misc_Coin_02",										-- Common Vendor Items
 		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
+		[-22] = app.asset("Category_Secrets"),												-- Secrets
 		[-26] = "Interface\\Icons\\INV_Misc_Bag_07_Green",									-- Drop
 		[-29] = "Interface\\Icons\\Inv_misc_bag_17",										-- Raid Finder Bag
 		[-31] = "Interface\\Icons\\INV_Pet_BabyMurlocs_Blue",								-- Promotion
@@ -1495,6 +1496,7 @@ app.L = {
 		[-19] = "Dragons of Nightmare",											-- Dragons of Nightmare
 		[-20] = "Common Vendor Items",											-- Common Vendor Items
 		[-21] = "Captains",
+		[-22] = "Secrets",														-- Secrets
 
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
 
@@ -2265,6 +2267,7 @@ app.L = {
 		[-1433962] = "Broken Mirror D-3",										-- Broken Mirror
 	};
 	["HEADER_DESCRIPTIONS"] = {
+		[-22] = "Naughty secrets...",
 		[-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
 		[-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
 		[-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
