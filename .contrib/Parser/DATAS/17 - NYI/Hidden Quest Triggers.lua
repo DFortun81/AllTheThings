@@ -3827,6 +3827,7 @@ _.HiddenQuestTriggers = {
 		q(61188),	-- Triggered after looting Impressionable Gorger Spawn
 		q(61843),	-- Triggered after completing Nipping at the Undergrowth (61839)
 		q(63090),	-- looting weekly chest of Sinstone Fragments next to Archivist Fane
+		q(60982),	-- After completing "A letter from Nadja"
 		-- Revendreth Rares
 		q(62464),	-- Azgar secondary quest
 		q(60581),	-- Endlurker secondary quest
