@@ -1,5 +1,5 @@
--- Localization for Chinese (Simplified, PRC) Clients.
-if GetLocale() ~= "zhCN" then return; end
+-- Localization for Chinese (Simplified, PRC) and Chinese (Traditional, Taiwan) Clients.
+if GetLocale() ~= "zhCN" and GetLocale() ~= "zhTW" then return; end
 local app = select(2, ...);
 local L = app.L;
 
@@ -26,10 +26,12 @@ local L = app.L;
 	L.RACE_LOCKED = "种族锁定";
 	L.PLEASE_REPORT_MESSAGE = ": 请把错误报告给ATT Discord的#errors! 谢谢!";
 	L.NOT_AVAILABLE_IN_PL = "在个人拾取中不可用.";
-	L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容\n(在聊天中输入'/att '然后Shift-点击链接的物品)";
+	L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容\n(在聊天中输入'/att '然后Shift-点击链接的物品)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order) may be required to register all the items correctly.|r";	-- TODO
 	--TODO: L.ITEM_GIVES_REP = "Provides Reputation with '";
 	L.COST = "花费";
 	L.COST_DESC = "这里面包含了获得或购买这个物品所需要的物品";
+	--TODO: L.SOURCES = "Source(s)";
+	--TODO: L.SOURCES_DESC = "Shows the Source of this Thing.\n\nParticularly, a specific Vendor/NPC, Quest, Encounter, etc.";
 	L.WRONG_FACTION = "可能需要在另一个阵营中查看此内容.";
 	L.ARTIFACT_INTRO_REWARD = "完成该神器的介绍任务后获得.";
 	L.WE_JUST_HATE_TIMEWALKING = "时光难度为物品创建新的源ID, 尽管它们的名称、外观和在收藏选项卡中的显示完全相同.\n\n向暴雪开发部提出请求: 请清理源码数据库让时光/泰坦造物物品使用相同的源码作为基础, 前提是外观和名称完全相同. 这不仅会让数据库变得更加干净, 而且会让完成者们对更多的时光内容的感到兴奋而不是恐惧.\n\n - Crieve, 非常苦逼的战网完成度, 本来有99%的奥杜尔完成度, 现在只有64%, 因为暴雪团队复制了源码, 而不是重复使用现有的源码.";
@@ -89,6 +91,7 @@ local L = app.L;
 	L.COMPLETED_YEARLY = "这个可以每年完成.";
 	L.COMPLETED_MULTIPLE = "这个可以重复多次.";
 	L.CRITERIA_FOR = "准则";
+	--TODO: L.CURRENCY_FOR = "Currency for";
 	--TODO: L.LOOT_TABLE_CHANCE = "Loot Table Chance";
 	--TODO: L.BEST_BONUS_ROLL_CHANCE = "Best Bonus Roll Chance";
 	--TODO: L.BEST_PERSONAL_LOOT_CHANCE = "Best Personal Loot Chance";
@@ -179,7 +182,6 @@ local L = app.L;
 	L.CHANGE_SEARCH_FILTER = "更改搜索过滤";
 	L.CHANGE_SEARCH_FILTER_DESC = "单击此按钮可更改搜索过滤.";
 	--TODO: L.REROLL_2 = "Reroll: ";
-	L.SELECT = "选择";
 	L.NOTHING_TO_SELECT_FROM = "没有什么可以随意选择的.";
 	L.NO_SEARCH_METHOD = "未指定搜索方法.";
 	L.PROFESSION_LIST = "专业列表";
@@ -188,6 +190,7 @@ local L = app.L;
 	L.CACHED_RECIPES_2 = " 已知配方!";
 	L.WORLD_QUESTS = "世界任务";
 	L.WORLD_QUESTS_DESC = "这些都是世界任务和其他有时间限制的事物, 目前可以在某个地方获得. 去得到他们!";
+	--TODO: L.QUESTS_DESC = "Shows all possible QuestID's in the game in ascending numeric order.";
 	L.UPDATE_WORLD_QUESTS = "立即更新世界任务";
 	L.UPDATE_WORLD_QUESTS_DESC = "有时世界任务API很慢或无法返回新数据. 如果希望在不更改区域的情况下强制刷新数据，请立即单击此按钮!\n\nAlt+单击以包括当前可用的事物, 可能不受时间限制";
 	L.CLEAR_WORLD_QUESTS = "清除世界任务";
@@ -203,7 +206,11 @@ local L = app.L;
 	L.AH_SCAN_SUCCESSFUL_1 = ": 成功扫描 ";
 	L.AH_SCAN_SUCCESSFUL_2 = " 物品.";
 	L.REAGENT_CACHE_OUT_OF_DATE = "缓存已过期, 打开专业界面后会重新缓存!";
-	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop."
+	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
+	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
+	--TODO: L.QUEST_OBJECTIVE_INVALID = "Invalid Quest Objective";
+	--TODO: L.REFRESHING_COLLECTION = "Refreshing collection...";
+	--TODO: L.DONE_REFRESHING = "Done refreshing collection.";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -222,8 +229,15 @@ local L = app.L;
 	L["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000提供越多信息越好，谢谢！|r"
 	L.TOP_ROW_TO_LOCK = "|cff3399ffAlt单击锁定窗口";
 	L.TOP_ROW_TO_UNLOCK = "|cffcf0000Alt单击解锁窗口";
+	--TODO: L.QUEST_ROW_INSTRUCTIONS = "Right Click to see any Quest Chain Requirements";
+	--TODO: L.QUEST_ONCE_PER_ACCOUNT = "Once-Per-Account Quest";
+	--TODO: L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Completed By: %s";
 
 -- Settings.lua
+	--TODO: L.SKIP_AUTO_REFRESH = "Do Not Auto-Refresh!";
+	--TODO: L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
+	--TODO: L.AFTER_REFRESH = "After Refresh";
+
 	-- General tab
 		-- Mod Title
 			L.MODE = "模式";
@@ -252,6 +266,7 @@ local L = app.L;
 		L.MAIN_ONLY_MODE_TOOLTIP = "如果你还想让att*假装*你赢得了所有未被其他种族或职业锁定的共享外观, 请启用此设置.\n\n例如, 如果你从ICC收集了一个仅限猎人使用的物品, 并且在没有职业/种族限制的情况下, 有一个来自副本的共享外观, 那么ATT将*假装*你也获得了该外观来源.\n\n注意: 以这种方式解锁时, 切换到其他种族/职业将错误地报告你已经获得了尚未为新角色收集的外观来源.";
 		L.ACCOUNT_MODE = "|Cff00ab00战网模式|r (所有角色)"; -- |Cff00ab00Account Mode|r (All)
 		L.ACCOUNT_MODE_TOOLTIP = "如果要追踪所有角色的所有内容, 而不考虑职业和种族筛选, 请启用此设置.\n\n不可获得过滤仍然适用.";
+		--TODO: L.FACTION_MODE = "Only Current Faction";
 		L.FACTION_MODE_TOOLTIP = "如果你想只看到你当前阵营的种族和职业的战网模式数据, 请开启此设置.";
 		L.PRECISION_SLIDER = "百分比精确度";
 		L.PRECISION_SLIDER_TOOLTIP = '使用此选项可自定义百分比计算中所需的精度级别.\n\n默认: 2';
@@ -262,7 +277,6 @@ local L = app.L;
 		L.ACHIEVEMENTS_CHECKBOX_TOOLTIP = "启用此选项可追踪成就.";
 		L.TMOG_CHECKBOX = "外观 / 幻化";
 		L.TMOG_CHECKBOX_TOOLTIP = "启用此选项可追踪外观获取.\n\n注意: 禁用此选项也会禁用所有采集逻辑, 你可以使用此切换来防止在执行重要组内容时出现延迟, 请牢记, 重新启用后将需要进行计算.\n\n默认情况下追踪战网范围.";
-		L.AZERITE_ESSENCES_CHECKBOX = "艾泽里特精华";
 		L.AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "启用此选项以追踪艾泽里特精华.\n\n默认情况下每个角色都会被追踪.";
 		L.BATTLE_PETS_CHECKBOX = "战斗宠物 / 同伴";
 		L.BATTLE_PETS_CHECKBOX_TOOLTIP = "启用此选项可追踪战斗宠物和同伴. 这些可以在开放的世界中找到, 也可以通过各种地下城和团本中的boss掉落, 以及从供应商和声望获取.\n\n认情况下追踪战网范围.";
@@ -288,6 +302,9 @@ local L = app.L;
 		L.RECIPES_CHECKBOX_TOOLTIP = "启用此选项可追踪你的专业图纸.\n\n注意: 你必须打开专业列表才能缓存这些.";
 		L.REPUTATIONS_CHECKBOX = "声望";
 		L.REPUTATIONS_CHECKBOX_TOOLTIP = "启用此选项可追踪声望.\n\n一旦你达到了有声望的尊敬或最好的朋友, 它将被标记为收藏.\n\n你可能需要手动刷新才能正确更新.";
+		--TODO: L.RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Runecarving Powers";
+		--TODO: L.RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Runecarving Powers.";
+		--TODO: L.SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Soulbind Conduits.";
 		L.TITLES_CHECKBOX = "头衔";
 		L.TITLES_CHECKBOX_TOOLTIP = "启用此选项可追踪头衔.\n\n这些可以让你的角色脱颖而出, 看起来你已经玩了一段时间. 通常只有新玩家没有称号.";
 		L.TOYS_CHECKBOX = "玩具";
@@ -310,6 +327,8 @@ local L = app.L;
 		L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "如果只想查看当前级别角色可用的事物, 请启用此设置.\n\n注意: 这对新战网特别有用.";
 		L.HIDE_BOE_CHECKBOX = "隐藏BoE/BoA物品";
 		L.HIDE_BOE_CHECKBOX_TOOLTIP = "如果要隐藏BoE/BoA物品, 请启用此设置.\n\n当你尝试为角色完成经典旧世并且不想专门用于可以在小号或拍卖行上放置的物品时, 此设置非常有用.\n\n即: 不要因为毁灭之锤而扰乱你的思绪.";
+		--TODO: L.HIDE_PVP_CHECKBOX = "Hide PvP Content";
+		--TODO: L.HIDE_PVP_CHECKBOX_TOOLTIP = "Enable this setting if you want to hide any content which 'may' require Player vs. Player interactions within the game.";
 		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "忽略BoE/BoA的筛选";
 		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "如果要忽略BOEBoE/BoA物品的装备、武器、种族、等级或职业要求, 请启用此设置.\n\n如果你正试图通过拍卖行扫描收集你的物品, 此模式可能对你有用.";
 		L.EXPAND_DIFFICULTY_CHECKBOX = "展开当前难度";
@@ -335,6 +354,8 @@ local L = app.L;
 		L.ACCOUNT_WIDE_QUESTS_TOOLTIP = "任务完成通常是每个角色的, 但是如果任何一个角色完成了特定的任务, 这个任务就会被认为是完成了.";
 		L.ACCOUNT_WIDE_RECIPES_TOOLTIP = "在暴雪的数据库中, 图纸通常不会被战网范围追踪, 但我们可以这样做.\n\n在一个角色上不可能收集到所有的东西, 所以有了这个, 你就可以赋予你的小号和他们的专业以意义.";
 		L.ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "声望的成就现在会在暴雪的数据库中追踪战网范围, 所以开启这个功能可能是个好主意.";
+		--TODO: L.ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP = "Not sure this will help at all for collection... enjoy moving at least one character of every class through every Covenant and Renown progression...";
+		--TODO: L.ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "Enable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";
 		L.ACCOUNT_WIDE_TITLES_TOOLTIP = "大多数头衔都是在战网范围内进行追踪, 但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上.\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号, 请切换此选项.";
 
 	-- Filters tab
@@ -346,8 +367,9 @@ local L = app.L;
 		L.ALL_BUTTON_TOOLTIP = "单击此按钮一次启用所有设备过滤.";
 		L.UNCHECK_ALL_BUTTON = "取消所有";
 		L.UNCHECK_ALL_BUTTON_TOOLTIP = "单击此按钮一次禁用所有设备过滤.";
-		L.LEGACY_FILTERS_LABEL = "遗留 / 不可获得过滤";
-		L.LEGACY_FILTERS_TEMP_LABEL = "|CFFFFFFFF我将完全重新设计我们的遗留、不可获得和节日过滤的工作方式.\n\n即将推出.|r";
+		--TODO: L.CUSTOM_FILTERS_LABEL = "Automatic Filters";
+		--TODO: L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|CFFFFFFFFThese filters are automatically applied based on your current character, but may be overridden by being checked, allowing you to see additional Things your character cannot currently collect.\nNone of these filters are ever enabled in Account or Debug modes regardless of the selections below.|r";
+		--TODO: L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Unobtainables tab
 		L.UNOBTAINABLES_TAB = "不可获得";
@@ -382,7 +404,9 @@ local L = app.L;
 		L.COORDINATES_CHECKBOX = "坐标";
 		L.COORDINATES_CHECKBOX_TOOLTIP = "如果你想在迷你列表中的条目上悬停时在鼠标提示中看到坐标, 请启用此选项.";
 		L.DESCRIPTIONS_CHECKBOX = "说明";
-		L.DESCRIPTIONS_CHECKBOX_TOOLTIP = "启用该选项以在鼠标提示中显示描述. 这可能包括地下城日志提供的描述性文字, 或者贡献者认为有必要添加的自定义描述.\n\n你可能想保持这个开启";
+		L.DESCRIPTIONS_CHECKBOX_TOOLTIP = "启用该选项以在鼠标提示中显示描述. 这可能包括地下城日志提供的描述性文字, 或者贡献者认为有必要添加的自定义描述.\n\n你可能想保持这个开启";	-- TODO: Part about Dungeon descriptions was removed, update it
+		--TODO: L.LORE_CHECKBOX = "Lore";
+		--TODO: L.LORE_CHECKBOX_TOOLTIP = "Enable this option to show lore within the tooltip. This may include the descriptive text supplied by the Dungeon Journal or for flavor by a Contributor.";
 		L.KNOWN_BY_CHECKBOX = "已知";
 		L.KNOWN_BY_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中看到所有知道此配方的服务器上的角色的完整列表, 请启用此选项.";
 		L.SHOW_MODELS_CHECKBOX = "模型预览";
@@ -407,6 +431,8 @@ local L = app.L;
 		L.LOCATIONS_SLIDER_TOOLTIP = '使用该功能可以自定义鼠标提示中显示的来源位置数量.\n\n注意: 这也会根据其他来源的多少来显示"X"个数量, 如果这个总数等于显示的元素总数, 那么就会简单地显示最后一个来源.\n\n默认: 5';
 		L.COMPLETED_SOURCES_CHECKBOX = "对已完成";
 		L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中看到已完成的来源位置, 请启用此选项.\n\n举个例子, 如果你在灰谷完成了任务\"巴斯兰的头发\", 当你鼠标悬停在埃凡纳·寂语身上时, 他的鼠标提示就不会再显示这个任务了.";
+		--TODO: L.DROP_CHANCES_CHECKBOX = "Show Drop Chances";
+		--TODO: L.DROP_CHANCES_CHECKBOX_TOOLTIP = "Enable this option to calculate various drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.";
 		L.FOR_CREATURES_CHECKBOX = "对生物";
 		L.FOR_CREATURES_CHECKBOX_TOOLTIP = "如果你想查看生物的来源位置, 请启用此选项.";
 		L.FOR_THINGS_CHECKBOX = "对事物";
@@ -433,6 +459,8 @@ local L = app.L;
 	-- Features tab
 		L.FEATURES_TAB = "功能";
 		L.MODULES_LABEL = "模块和迷你列表";
+		--TODO: L.ADHOC_UPDATES_CHECKBOX = "Use Ad-Hoc Window Updates";
+		--TODO: L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
 		L.SKIP_CUTSCENES_CHECKBOX = "自动跳过场景动画";
 		L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "如果想让ATT代表你自动跳过所有场景动画请启用此选项.";
 		--TODO: L.AUTO_BOUNTY_CHECKBOX = "Automatically Open the Bounty List";
@@ -447,8 +475,8 @@ local L = app.L;
 		L.AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP = "如果你想看到一个名为'团本助手'替代组/队伍/团队设置管理器请启用此选项. 每当队伍设置改变时列表会自动更新.\n\n你也可以将此设置绑定到一个键上.\n\n按键设置 -> 插件 -> ALL THE THINGS -> 打开/关闭团本助手\n\n快捷命令: /attra";
 		L.AUTO_WQ_LIST_CHECKBOX = "自动打开世界任务列表";
 		L.AUTO_WQ_LIST_CHECKBOX_TOOLTIP = "如果你想让'世界任务'列表自动出现请启用此选项. 每当你切换区域时列表将自动更新.\n\n你也可以将此设置绑定到一个键上.\n\n按键设置 -> 插件 -> ALL THE THINGS -> 打开/关闭世界任务列表\n\n快捷命令: /attwq";
-		--TODO: L.CURRENCIES_IN_WQ_CHECKBOX = "Treat Currencies as Containers";
-		--TODO: L.CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP = "Enable this option if you want to treat currencies awarded by World Quests as if all of the Things they are used to acquire counted as +1 in the list.";
+		--TODO: L.CURRENCIES_IN_WQ_CHECKBOX = "Allow Collectible Cost Groups";
+		--TODO: L.CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP = "Enable this option if you want to allow Items/Currencies which are used to purchase collectible Things to be considered collectible and show under dynamically-populated Quests.";
 		L.AUCTION_TAB_CHECKBOX = "显示拍卖行模块标签";
 		L.AUCTION_TAB_CHECKBOX_TOOLTIP = "如果你想查看ATT提供的拍卖行模块请启用此选项.\n\n一些插件很调皮会大量修改这个框架. ATT并不总是和那些玩具玩得很好.";
 		L.SORT_BY_PROGRESS_CHECKBOX = "按进度排序";
@@ -462,11 +490,13 @@ local L = app.L;
 		L.CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "如果你想在获得新的事物时听到庆祝'fanfare'效果请启用这个选项.\n\n这个功能可以极大地帮助你保持动力.";
 		L.WARN_REMOVED_CHECKBOX = "移除事物触发警告";
 		L.WARN_REMOVED_CHECKBOX_TOOLTIP = "如果你想在你不小心卖掉或交易一个给予你外观的物品从而导致收藏中失去该外观时听到警告的声音效果, 请启用这个选项.\n\n如果你的商品有购买计时这可能非常有用. 该插件会告诉你你犯了一个错误.";
+		--TODO: L.SCREENSHOT_COLLECTED_CHECKBOX = "Collected Things Trigger a Screenshot";
+		--TODO: L.SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to take a screenshot for every Thing you collect.";
 
 	-- About tab
 		L.ABOUT = "关于";
-		L.ABOUT_1 = " |CFFFFFFFF是一个收集追踪插件, 告诉你在哪里以及如何获得游戏中的所有事物! 在我们的Discord上有一个庞大的用户社区(链接在底部), 你可以在这里提出问题、提交建议以及报告错误或丢失的物品. 如果你发现了一些可收藏的事物或没有记录, 你可以在Discord上告诉我们, 或者对于更懂技术的人来说, 我们有一个Git, 你可以直接贡献给我们.\n\n虽然我们力求完美, 但每个补丁都会有很多事物加入到游戏中, 所以如果我们可能遗漏了一些事物, 请理解我们是一个试图跟上变化以及自己收集事物的小团队 :D\n\n欢迎在直播的时候向我提问, 即使不是直接与ATT相关的问题, 我也会尽力回答(常见的WoW插件编程也行).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: 下载ATT怀旧服版本!\n\n是的, 我打算玩WoW怀旧服, 但在全职工作和开发两个版本的插件, 不会有太多的时间去打团.\n\n不，ATT不是将图标放在背包图标上的插件. 那个是CanIMogIt和Caerdon Wardrobe!\n\n即将推出的比较收藏的网站.|r";
-		L.ABOUT_2 = "其他贡献者: |CFFFFFFFF(加入团队顺序)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow和其他ATT Discord的人们!\n\n特别鸣谢AmiYuy (CanIMogIt)和Caerdon (Caerdon Wardrobe).|r  ";
+		L.ABOUT_1 = " |CFFFFFFFF是一个收集追踪插件, 告诉你在哪里以及如何获得游戏中的所有事物! 在我们的Discord上有一个庞大的用户社区(链接在底部), 你可以在这里提出问题、提交建议以及报告错误或丢失的物品. 如果你发现了一些可收藏的事物或没有记录, 你可以在Discord上告诉我们, 或者对于更懂技术的人来说, 我们有一个Git, 你可以直接贡献给我们.\n\n虽然我们力求完美, 但每个补丁都会有很多事物加入到游戏中, 所以如果我们可能遗漏了一些事物, 请理解我们是一个试图跟上变化以及自己收集事物的小团队 :D\n\n欢迎在直播的时候向我提问, 即使不是直接与ATT相关的问题, 我也会尽力回答(常见的WoW插件编程也行).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: 下载ATT怀旧服版本!\n\n是的, 我打算玩WoW怀旧服, 但在全职工作和开发两个版本的插件, 不会有太多的时间去打团.\n\n不，ATT不是将图标放在背包图标上的插件. 那个是CanIMogIt和Caerdon Wardrobe!\n\n即将推出的比较收藏的网站.|r";	-- TODO: add TBC Classic here and add "For online collection comparing check out DataForAzeroth.com from shoogen!"
+		L.ABOUT_2 = "其他贡献者: |CFFFFFFFF(加入团队顺序)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal和其他ATT Discord的人们!\n\n特别鸣谢AmiYuy (CanIMogIt)和Caerdon (Caerdon Wardrobe).|r  ";	-- TODO: change to "in no particular order"
 		L.ABOUT_3 = "\n|CFFFFFFFF你绝对应该下载他们的插件，以便在你的背包里的物品上获得收集图标!|r";
 
 	-- Binding Localizations 按键设置
@@ -506,7 +536,6 @@ local L = app.L;
 		L["SPLIT"] = "Per Difficulty"
 		L["REQUIRES_LEVEL"] = "要求等级" -- Requires Level
 		L["SECRETS_HEADER"] = "解密"
-		L["SELFIE_FILTERS_HEADER"] = "自拍滤镜"
 		L["LIMITED_QUANTITY"] = "此物品有数量限制，在商人处并非总是可见。"
 		L.SOURCE_ID_MISSING = "请在#errors中向ATT Discord报告此物品及其获取地点!";
 
@@ -556,6 +585,41 @@ local L = app.L;
 		L["INCOMPLETE"] = "|T" .. app.asset("incomplete") .. ":0|t |cffff9333未完成|r" -- Acquired the colors and icon from CanIMogIt.
 		L["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |cff15abff当前角色已习得|r"
 		L["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333当前角色未习得|r"
+		--TODO: L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ffCurrency|r";
+
+local a = L.ABBREVIATIONS;
+for key,value in pairs({
+	--TODO: ["Antorus, the Burning Throne"] = "Antorus",
+	--TODO: ["Expansion Pre"] = "Pre",
+	--TODO: ["Expansion Features"] = "EF",
+	--TODO: ["Dungeons & Raids"] = "D&R",
+	--TODO: ["The Burning Crusade"] = "BC",
+	--TODO: ["Burning Crusade"] = "BC",
+	--TODO: ["The BC"] = "BC",
+	--TODO: ["Wrath of the Lich King"] = "WotLK",
+	--TODO: ["Cataclysm"] = "Cata",
+	--TODO: ["Mists of Pandaria"] = "MoP",
+	--TODO: ["Warlords of Draenor"] = "WoD",
+	--TODO: ["Battle for Azeroth"] = "BFA",
+	--TODO: ["The Shadowlands"] = "SL",
+	--TODO: ["Shadowlands"] = "SL",
+	--TODO: ["Player vs Player"] = "PvP",
+	--TODO: ["Raid Finder"] = "LFR",
+	--TODO: ["Looking For Raid"] = "LFR",
+	--TODO: ["Normal"] = "N",
+	--TODO: ["Heroic"] = "H",
+	--TODO: ["Mythic"] = "M",
+	--TODO: ["Ny'alotha, the Waking City"] = "Ny'alotha",
+	--TODO: ["10 Player"] = "10M",
+	--TODO: ["10 Player (Heroic)"] = "10M (H)",
+	--TODO: ["25 Player"] = "25M",
+	--TODO: ["25 Player (Heroic)"] = "25M (H)",
+	--TODO: ["Emissary Quests"] = "Emissary",
+	--TODO: ["World Quests"] = "WQ",
+	--TODO: ["WoW Anniversary"] = "Anniversary",
+	--TODO: ["Covenant:"] = "Cov:",
+})
+do a[key] = value; end
 
 L.CUSTOM_DIFFICULTIES[-1] = "团队查找器 (5.4)";
 L.CUSTOM_DIFFICULTIES[-2] = "弹性 (5.4)";
@@ -589,13 +653,15 @@ for key,value in pairs({
 		[-1] = BATTLE_PET_BREED_QUALITY2 .. TRANSMOG_SOURCE_1,		-- Common Boss Drop 普通首领掉落
 		--TODO: [-5] = "Prospecting",
 		[-7] = WORLD .. RAID_BOSSES,								-- World Bosses 世界首领
-		[-10] = "小队同步",											-- Party Sync
 		--TODO: [-11] = "Common Box Drops",							-- Common Box Drops
 		[-12] = DUNGEON_FLOOR_DIREMAUL5 .. " [东 - 恶魔]",			-- Warpwood Quarter [East - Demon] 扭木广场
 		[-13] = DUNGEON_FLOOR_DIREMAUL1 .. " [北 - 食人魔]",			-- Gordok Commons [North - Ogres] 戈多克议会
 		[-14] = DUNGEON_FLOOR_DIREMAUL2 .. " [西 - 精灵]",			-- Capital Gardens [West - Elves] 中心花园
-		[-15] = "常规商人物品",										-- Common Vendor Items
+		--TODO: [-15] = "Exploration",								-- Exploration
 		[-16] = "稀有",												-- Rares
+		--TODO: [-19] = "Dragons of Nightmare",						-- Dragons of Nightmare
+		[-20] = "常规商人物品",										-- Common Vendor Items
+		--TODO: [-21] = "Captains",									-- Captains
 
 		[-40] = "绝版",												-- Legacy
 		--TODO: [-41] = "Cache of Madness",
@@ -611,29 +677,27 @@ for key,value in pairs({
 		[-59] = "亡灵节",											-- Day of the Dead
 		[-61] = "冬幕节",											-- The Feast of Winter Veil
 		[-62] = "荆棘谷钓鱼大赛",									-- Stranglethorn Fishing Extravaganza
-		[-65] = "暴雪推广活动",										-- Blizzard Promotions
 		[-70] = DUNGEON_FLOOR_DESOLACE22,							-- Foulspore Cavern [Orange]
 		[-71] = DUNGEON_FLOOR_DESOLACE21,							-- The Wicked Grotto [Purple]
 		[-72] = "萨格雷战争议会",									-- Sargerei War Council
+		--TODO: [-78] = "Timed Event",
+		--TODO: [-79] = "First Chest",
+		--TODO: [-80] = "Second Chest",
+		--TODO: [-81] = "Third Chest",
+		--TODO: [-82] = "Final Chest",
 		[-85] = "墓地",												-- Graveyard
 		--TODO: [-86] = "Library",
 		--TODO: [-87] = "Armory",
 		--TODO: [-88] = "Cathedral",
 		--TODO: [-90] = ELITE,										-- Elite
-		[-93] = "希利苏斯：创伤之痕",									-- Silithus (The Wound)
-		[-94] = "黑市拍卖行",										-- Black Market Auction House
 	-- TODO: Garrison Note: These will be changed into a new class soon(TM)
 		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)),			-- Stables
 		[-99] = "建筑",												-- Buildings
-		[-101] = "追随者",											-- Followers
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
 		[-130] = "暮色森林 "..GetSpellInfo(133137),					-- Duskwood Active
 		[-131] = "辛特兰 "..GetSpellInfo(133137),					-- The Hinterlands Active
 		[-132] = "菲拉斯 "..GetSpellInfo(133137),					-- Feralas Active
 		[-133] = "暮色森林 "..GetSpellInfo(78741),					-- Duskwood Activated
-	-- Invasions TODO: what levels?
-		[-137] = "90级",												-- Level 90
-		[-138] = "100级",											-- Level 100
 	-- Class Trial Sets
 		[-140] = "共济",												-- Communal
 		[-141] = "邪魂",												-- Felsoul
@@ -647,7 +711,6 @@ for key,value in pairs({
 		[-149] = "阳魂",												-- Sunsoul
 		[-150] = "探路者",											-- Trailseeker
 		[-152] = "要塞战役",											-- Garrison Campaign
-		[-154] = "48级",												-- Level 48 (old level 110)
 		[-157] = "辛特兰 "..GetSpellInfo(78741),						-- The Hinterlands Activated
 		[-158] = "菲拉斯 "..GetSpellInfo(78741),						-- Feralas Activated
 		[-159] = "事件roll点",										-- Daily Dreamway Event Roll
@@ -656,7 +719,6 @@ for key,value in pairs({
 		--TODO: [-165] = GetItemSubClassInfo(13,1),
 		[-168] = FACTION_OTHER .. QUESTS_LABEL,						-- Other Quests
 		[-171] = "任务线",											-- Quest Chains
-		[-175] = "垃圾场匠技",										-- Junkyard Tinkering
 
 		[-206] = "典范",												-- Paragon
 		[-211] = NEW .. CHARACTER,									-- New Character 新建角色
@@ -666,45 +728,24 @@ for key,value in pairs({
 		[-218] = "鱼饵",												-- Coastal (for Fishing)
 		[-224] = "伊利达雷",											-- Illidari
 		--TODO: [-228] = GetSpellInfo(218950),						-- GetSpellInfo(218950),  -- Flight Path
-		[-236] = "联盟阵营战役",										-- Alliance War Campaign
 		--TODO: [-242] = "Unrated",									-- Unrated
 		[-243] = "赏金任务",											-- Bounty
-		[-244] = "黑铁矮人",											-- Dark Iron Dwarf
-		[-245] = "玛格汉兽人",										-- Mag'har Orc
-		[-246] = "我之蜜糖",											-- Is Another Man's Treasure
-		[-247] = "潘达利亚的财富",									-- Riches of Pandaria
-		[-251] = "赞达拉巨魔",										-- Zandalari Troll
-		[-252] = "库尔提拉斯人",										-- Kul Tiran
-		[-253] = "部落阵营战役",										-- Horde War Campaign
-		[-254] = "传承护甲",											-- Heritage Armor
-		[-255] = "狐人",												-- Vulpera
-		[-256] = "机械侏儒",											-- Mechagnome
+		[-254] = "同盟种族 & 传承护甲",										-- Allied Races & Heritage
 	-- Other
-		[-351] = "首领掉落",											-- Boss Drop
 		[-356] = "进攻黑暗之门",										-- Assault on the Dark Portal
 		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower
-		[-362] = "晴日峰",											-- Peak of Serenity
 		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
 		[-366] = "武器系列",											-- Weapons Sets
 	-- Dungeon/Raid Wing Info
 		[-379] = "垃圾场",											-- Junkyard
-		[-380] = "车间",												-- Workshop
-		[-388] = "主门",												-- Main Gate (Stratholme)
-		[-389] = "仆从入口",											-- Service Entrance (Stratholme)
-		--TODO: [-390] = "Smuggler's Den",							-- Smuggler's Den (Spires of Arak)
-		--TODO: [-391] = "Stoktron Brewery",						-- Stoktron Brewery (Spires of Arak)
-		--TODO: [-392] = "Hearthfire Tavern",						-- Hearthfire Tavern
 		[-393] = "进攻堡垒",											-- Storming the Citadel
 		[-394] = "天灾工厂",											-- The Plagueworks
-		--TODO: [-395] = "The Crimson Halls",						-- The Crimson Halls
-		[-396] = "霜翼大厅",											-- The Frostwing Halls
 		--TODO: [-397] = "Outposts",								-- Outposts
+		--TODO: [-420] = "Tier 0.5 Sets",							-- Tier 0.5 Sets
 	-- Blizzard Events and Anniversaries
 	-- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "战争宝箱",											-- Daily War Chest
-		[-489] = "周常PvP宝箱",										-- Weekly Conquest Point Cap Chest
 		[-491] = "塔罗牌",											-- Tarot Cards
-		--TODO: [-498] = "Круговерть Пустоты",						-- Twisting Nether (Demon Hunter Order Hall advancement)
 
 		[-520] = "资料片前夕",										-- Expansion Pre-Launch
 		[-521] = "燃烧的远征：Dark Portal Opens",					-- 这些谁知道官翻？
@@ -713,53 +754,47 @@ for key,value in pairs({
 		[-525] = "德拉诺之王：Iron Horde Incursion",					-- Warlords of Draenor: Iron Horde Incursion
 		[-526] = "军团再临：军团入侵",								-- Legion: Legion Invasion
 		[-527] = "争霸艾泽拉斯：荆棘之战",							-- Battle for Azeroth: War of the Thorns
-		[-528] = "破碎群岛",											-- Broken Isles [Mole Machine]
-		[-531] = "2008年竞争之魂活动",
-		[-532] = "风暴英雄推广活动",									-- Heroes of the Storm Promotion
-		[-533] = "炉石传说推广活动",									-- Hearthstone Promotion
+		[-532] = "风暴英雄推广活动",									-- Heroes of the Storm
+		[-533] = "炉石传说推广活动",									-- Hearthstone
 		[-534] = "典藏版",											-- Collector's Edition
+		--TODO: [-536] = "Hearthstone Mercenaries",					-- Hearthstone Mercenaries
 
-		[-538] = "暗黑破坏神20周年庆",								-- Diablo 20th Anniversary Promotion
+		[-537] = "暗黑破坏神20周年庆",								-- Diablo 20th Anniversary
+		--TODO: [-538] = "The Ahn'Qiraj War Effort",
 		[-539] = "流沙节杖",											-- The Scepter of the Shifting Sands
 		[-540] = "天灾入侵",											-- The Scourge Invasion
+		--TODO: [-541] = "The Silithyst Must Flow",
+		[-542] = "开启黑暗之门",									-- The Opening of the Dark Portal
 		[-543] = "军团入侵",											-- Legion Invasions
 		[-544] = "魔兽世界典藏版",									-- WoW Collector's Edition
 		[-545] = "暴雪嘉年华",										-- Blizzcon
-		--TODO: [-546] = REFER_A_FRIEND,							-- Recruit A Friend 招募战友
-		[-547] = "欧洲限定",											-- EU Only
-		[-548] = "中国限定",											-- China Only
-		[-549] = "韩国限定",											-- Korea Only
 		[-550] = "星际争霸典藏版",									-- Starcraft Collector's Edition
 		[-551] = "暗黑破坏神典藏版",									-- Diablo Collector's Edition
 		[-558] = "上海2012年战网世界锦标赛",							-- Battle.net World Championship Shanghai 2012
 
-		[-561] = "2007世界邀请赛",									-- 2007 Worldwide Invitational
-		[-562] = "2008世界邀请赛",									-- 2008 Worldwide Invitational
-		--TODO: [-563] = "Azeroth's Choppers",
 		[-564] = "星际争霸2：自由之翼",								-- Starcraft II: Wings of Liberty
 		[-565] = "星际争霸2：虫群之心",								-- Starcraft II: Heart of the Swarm
 		[-566] = "暗黑破坏神3",										-- Diablo III
-		[-567] = "炉石传说",											-- Hearthstone
 
-		[-572] = "风暴英雄",											-- Heroes of the Storm
 		[-575] = "暗黑破坏神3：夺魂之镰",								-- Diablo III: Reaper of Souls
 		[-576] = "星际争霸2：虚空之遗",								-- StarCraft II: Legacy of the Void
-		[-577] = "魔兽世界电影",										-- World of Warcraft Movie
-
-		[-650] = "任务物品",											-- Quest Items
+		[-577] = "魔兽电影",											-- Warcraft Movie
+		--TODO: [-579] = "Dark Portal Pass",
 
 	-- PvP Header
+		-- Special Season Tags
+			--TODO: [-655] = "Ensemble Gear", 						-- Ensemble Gear (PvP)
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
 			[-660] = "争斗者套装",									-- Combatant PvP Gear (WoD, Legion)
-			--TODO: [-694] = "Duelist Gear",						-- Duelist Gear (SL)
 			[-661] = "角斗士套装",									-- Gladiator PvP Gear
 			[-662] = "精锐套装",										-- Elite PvP Gear
 
 		-- Classic PvP Seasons
-			--TODO: [-663] = "Classic Pre-Season Gear",				-- Classic Pre-Season PvP Gear (need a icon)
+			--TODO: [-663] = "Classic Honor System",				-- Classic Honor System
 
 		-- The Burning Crusade PvP Seasons
+			--TODO: [-658] = "BC Pre-Season",						-- Pre-Season (PvP BC)
 			[-664] = select(2, GetAchievementInfo(2091)).."：第1赛季",	-- Gladiator: Season 1
 			[-665] = select(2, GetAchievementInfo(418)).."：第2赛季",	-- Merciless Gladiator: Season 2
 			[-666] = select(2, GetAchievementInfo(419)).."：第3赛季",	-- Vengeful Gladiator: Season 3
@@ -767,31 +802,33 @@ for key,value in pairs({
 
 		-- Wrath of the Lich-King PvP Seasons
 			[-668] = select(2, GetAchievementInfo(3336)).."第5赛季",	-- Deadly Gladiator: Season 5
+			--TODO: [-657] = "Hateful Gladiator",					-- Hateful Gladiator: Season 5 ("medium pvp gear")
 			[-669] = select(2, GetAchievementInfo(3436)).."第6赛季",	-- Furious Gladiator: Season 6
 			[-670] = select(2, GetAchievementInfo(3758)).."第7赛季",	-- Relentless Gladiator: Season 7
 			[-671] = select(2, GetAchievementInfo(4599)).."第8赛季",	-- Wrathful Gladiator: Season 8
 
 		-- Cataclysm PvP Seasons
-			[-672] = select(2, GetAchievementInfo(6002)).."第9赛季",		-- Vicious Gladiator: Season 9
+			[-672] = select(2, GetAchievementInfo(6002)).."第9赛季",	-- Vicious Gladiator: Season 9
+			--TODO: [-656] = "Honor Gear Ruthless Season",			-- Honor Gear Ruthless Season
 			[-673] = select(2, GetAchievementInfo(6124)).."第10赛季",	-- Ruthless Gladiator: Season 10
+			--TODO: [-654] = "Honor Gear Cataclysmic Season",		-- Honor Gear Cataclysmic Season
 			[-674] = select(2, GetAchievementInfo(6938)).."第11赛季",	-- Cataclysmic Gladiator: Season 11
 
 		-- Mists of Pandaria PvP Seasons
 			[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",	-- Malevolent Gladiator: Season 12
+			--TODO: [-653] = "Honor Gear Tyrannical Season",		-- Honor Gear Tyrannical Season
 			[-676] = select(2, GetAchievementInfo(8791)).."第13赛季",	-- Tyrannical Gladiator: Season 13
-
-	[-799] = "不朽之责",												-- Burden of Eternity
+			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
+			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
 
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
-		[-806] = "钟示贤德腰带",										-- Waist of Time
-		[-807] = "主脑",												-- Hivemind
-		[-808] = "被缚的影犬",										-- Bound Shadehound
+	[-806] = "钟示贤德腰带",												-- Waist of Time
 
-	-- Mechagon
+	-- Chests
 		[-850] = "机械化的宝箱",										-- Mechanized Chest
-		[-851] = "铁潮宝箱",											-- Irontide Chest
+		[-851] = "Black Empire Cache",								-- Black Empire Cache
 
-		[-852] = "艾泽里特精华",										-- Azerite Essences
+	-- 8.2 Neck Stuff
 		[-853] = "全部角色",											-- All Roles
 		--TODO: [-854] = "DPS",										-- DPS
 		[-855] = "治疗",												-- Healers
@@ -803,100 +840,85 @@ for key,value in pairs({
 		--TODO: [-861] = "Rank 4",									-- Rank 4
 
 	-- Shadowlands Header
-		[-900] = "盟约圣所",											-- Covenant Sanctum
-		--TODO: [-901] = GetSpellInfo(339041),						-- Covenant Callings
-		--[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),		-- Renown (NYI)
 		[-903] = "区域奖励",											-- Zone Rewards
-		[-904] = "典狱长之怒",										-- Wrath of the Jailer
-		[-905] = "指挥台",											-- Command Table
 		[-906] = "等级 1: 战术洞察",									-- Tier 1: Tactical Insight
 		[-907] = "死掉的布兰契",										-- Dead Blanchy
-		--TODO: [-908] = "Rewards",									-- Rewards
 		--TODO: [-909] = "Hunt: Death Elementals",					-- Hunt: Death Elementals
 		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
 		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
 		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
-		--[-913] = ,												--
+		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
 		--TODO: [-914] = "Adventures",								-- Adventures
 		[-915] = "心能导流器",										-- Anima Conductor
-		[-916] = "等级 1: 流动卷须",									-- Tier 1: Flowing Tendrils
-		[-917] = "等级 2: 涌动丝缕",									-- Tier 2: Streaming Threads
-		[-918] = "等级 3: 流动能量",									-- Tier 3: Flowing Power
-		[-919] = "梦魇骒马",											-- Night Mare
+		[-916] = string.format(COVENANT_SANCTUM_TIER, 1)..": 流动卷须",	-- Tier 1: Flowing Tendrils
+		[-917] = string.format(COVENANT_SANCTUM_TIER, 2)..": 涌动丝缕",-- Tier 2: Streaming Threads
+		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": 流动能量",	-- Tier 3: Flowing Power
+		[-977] = "游荡者梅莉",											-- Maelie the Wanderer
+		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
+		--TODO: [-980] = "Shared Treasures",						-- Shared Treasures
 
 		-- SL Maldraxxus/Necrolord
-			[-920] = "盟约: 通灵领主",								-- Covenant: Necrolord
 			--TODO: [-921] = "Sanctum Upgrades",					-- Sanctum Upgrades (Necrolord)
-			[-922] = "伤逝剧场",										-- Theater of Pain
-			[-923] = "憎恶工厂",										-- Abomination Factory (Necrolord)
 			[-924] = "传送网络",										-- Transport Network (Necrolord)
-			[-925] = "等级 1: 建造伙伴",								-- Abomination Factory (Necrolord) Tier 1
-			[-926] = "等级 2: 打造肢体",								-- Abomination Factory (Necrolord) Tier 2
-			[-927] = "等级 3: 给予生命",								-- Abomination Factory (Necrolord) Tier 3
-			[-928] = "等级 4: 铸就友谊",								-- Abomination Factory (Necrolord) Tier 4
-			[-938] = "等级 5: 永远的好魔友",							-- Abomination Factory (Necrolord) Tier 5
+			[-925] = string.format(COVENANT_SANCTUM_TIER, 1)..": 建造伙伴",	-- Abomination Factory (Necrolord) Tier 1
+			[-926] = string.format(COVENANT_SANCTUM_TIER, 2)..": 打造肢体",	-- Abomination Factory (Necrolord) Tier 2
+			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": 给予生命",	-- Abomination Factory (Necrolord) Tier 3
+			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": 铸就友谊",	-- Abomination Factory (Necrolord) Tier 4
+			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": 永远的好魔友",	-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			[-929] = "盟约: 法夜",									-- Covenant: Night Fae
-			[-930] = "女王的温室",									-- Queen's Conservatory
 			--TODO: [-931] = GetSpellInfo(7851),					-- Lesser Spirit
 			--TODO: [-932] = GetSpellInfo(172153),					-- Spirit
 			--TODO: [-933] = GetSpellInfo(13826),					-- Greater Spirit
-			--TODO: [-934] = "Star Lake Amphitheater",				-- Star Lake Amphitheater
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 			[-937] = "传送网络",										-- Transport Network (Night Fae)
 
 		-- SL Bastion/Kyrian
-			[-939] = "盟约: 格里恩",									-- Covenant: Kyrian
 			[-940] = "晋升者议会",									-- Ascended Counil
 			--TODO: [-941] = "Sanctum Upgrades",					-- Sanctum Upgrades (Kyrian)
-			[-942] = "晋升之路",										-- Path of Ascension
-			[-943] = "等级 1: 牛刀小试",								-- Tier 1: First Steps
-			[-944] = "等级 2: 神圣试炼",								-- Tier 2: Sacred Trials
-			[-945] = "等级 3: 持续训练",								-- Tier 3: Continued Teaching
-			[-946] = "等级 4: 智慧教导",								-- Tier 4: Teachings of Wisdom
-			[-947] = "等级 5: 谦逊试炼",								-- Tier 5: Trials of Humility
+			[-943] = string.format(COVENANT_SANCTUM_TIER, 1)..": 牛刀小试",	-- Tier 1: First Steps
+			[-944] = string.format(COVENANT_SANCTUM_TIER, 2)..": 神圣试炼",	-- Tier 2: Sacred Trials
+			[-945] = string.format(COVENANT_SANCTUM_TIER, 3)..": 持续训练",	-- Tier 3: Continued Teaching
+			[-946] = string.format(COVENANT_SANCTUM_TIER, 4)..": 智慧教导",	-- Tier 4: Teachings of Wisdom
+			[-947] = string.format(COVENANT_SANCTUM_TIER, 5)..": 谦逊试炼",	-- Tier 5: Trials of Humility
 			[-948] = "传送网络",										-- Transport Network (Kyrian)
-			[-3348] = "等级 1: 信仰之步",							-- Tier 1: Step of Faith
-			[-3349] = "等级 2: 力量之跃",							-- Tier 2: Leap of Power
-			[-3350] = "等级 3: 永恒之路",							-- Tier 3: Eternal Paths
+			[-3348] = string.format(COVENANT_SANCTUM_TIER, 1)..": 信仰之步",	-- Tier 1: Step of Faith
+			[-3349] = string.format(COVENANT_SANCTUM_TIER, 2)..": 力量之跃",	-- Tier 2: Leap of Power
+			[-3350] = string.format(COVENANT_SANCTUM_TIER, 3)..": 永恒之路",	-- Tier 3: Eternal Paths
 			--TODO: [-966] = "Blueprints & Crafting",				-- Blueprints (for Path of Ascension)
-			--TODO: [-972] = "Courage",								-- Courage
 			--TODO: [-973] = "Loyalty",								-- Loyalty
-			--TODO: [-974] = "Wisdom",								-- Wisdom
 			--TODO: [-975] = "Humility",							-- Humility
 
 		-- SL Revendreth/Venthyr
-			[-949] = "盟约: 温西尔",									-- Covenant: Venthyr
 			[-950] = "传送网络",										-- Transport Network
-			--TODO: [-951] = "Tier 1: Mirror Mirror",				-- Tier 1: Mirror Mirror
-			[-952] = "等级 2: 通透镜面",								-- Tier 2: Looking Glass"
-			--TODO: [-953] = "Tier 3: Mirror's Edge",				-- Tier 3: Mirror's Edge
+			[-951] = string.format(COVENANT_SANCTUM_TIER, 1)..": 魔镜",	-- Tier 1: Mirror, Mirror
+			[-952] = string.format(COVENANT_SANCTUM_TIER, 2)..": 通透镜面",	-- Tier 2: Looking Glass
+			[-953] = string.format(COVENANT_SANCTUM_TIER, 3)..": 镜之边缘",	-- Tier 3: Mirror's Edge
 			--TODO: [-954] = "Inquisitors",							-- Inquisitors
 			--TODO: [-955] = "High Inquisitors",					-- High Inquisitors
 			--TODO: [-956] = "Grand Inquisitors",					-- Grand Inquisitors
 			--TODO: [-957] = "Sanctum Upgrades",					-- Sanctum Upgrades (Venthyr)
-			[-958] = "等级 2: 犒劳盛宴",								-- Tier 2: Deserved Feast
-			[-959] = "等级 3: 超强效率",								-- Tier 3: Superior Efficiency
-			[-960] = "灰烬王庭",										-- The Ember Court
-			[-961] = "等级 1: 全新王庭",								-- Tier 1: A New Court
-			[-962] = "等级 2: 家用帮手",								-- Tier 2: Homegrown Help
-			[-963] = "等级 3: 王庭明星",								-- Tier 3: Court Influencer
-			[-964] = "等级 4: 敏锐的味觉",							-- Tier 4: Discerning Taste
-			[-965] = "等级 5: 专业人士",								-- Tier 5: The Professionals
+			[-958] = string.format(COVENANT_SANCTUM_TIER, 2)..": 犒劳盛宴",	-- Tier 2: Deserved Feast
+			[-959] = string.format(COVENANT_SANCTUM_TIER, 3)..": 超强效率",	-- Tier 3: Superior Efficiency
+			[-961] = string.format(COVENANT_SANCTUM_TIER, 1)..": 全新王庭",	-- Tier 1: A New Court
+			[-962] = string.format(COVENANT_SANCTUM_TIER, 2)..": 家用帮手",	-- Tier 2: Homegrown Help
+			[-963] = string.format(COVENANT_SANCTUM_TIER, 3)..": 王庭明星",	-- Tier 3: Court Influencer
+			[-964] = string.format(COVENANT_SANCTUM_TIER, 4)..": 敏锐的味觉",	-- Tier 4: Discerning Taste
+			[-965] = string.format(COVENANT_SANCTUM_TIER, 5)..": 专业人士",	-- Tier 5: The Professionals
 			[-967] = "破镜重圆",										-- "Mirror Restoration",
 			--TODO: [-968] = "Set A",								-- Set A
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
 
+			--TODO: [-976] = "Korthian Sets",						-- Korthian Sets
 			--TODO: [-1001] = "The Black Vault",
 
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
-		--TODO: [-2202] = "Halls of GOld and Glory",
+		--TODO: [-2202] = "Halls of Gold and Glory",
 		--TODO: [-2203] = "The Keeper's Eye",
 		--TODO: [-2204] = "First of the Val'kyr",
 		--TODO: [-2205] = "The Sealing of the Halls of Valor",
@@ -908,158 +930,15 @@ for key,value in pairs({
 		--TODO: [-2211] = "Volund's Folly",
 
 	-- Other Sets
-		[-3159] = "T6.5套装",
-		[-3160] = "T21套装",
-		[-3161] = "T20套装",
-		[-3162] = "T19套装",
-		[-3163] = "T18套装",
-		[-3164] = "T17套装",
-		[-3165] = "T16套装",
-		[-3166] = "T15套装",
-		[-3167] = "T14套装",
-		[-3168] = "T13套装",
-		[-3169] = "T12套装",
-		[-3170] = "T11套装",
-		[-3171] = "T10套装",
-		[-3172] = "T9套装",
-		[-3173] = "T8套装",
-		[-3174] = "T7套装",
-		[-3175] = "T6套装",
-		[-3176] = "T5套装",
-		[-3177] = "T4套装",
-		[-3178] = "T3.5套装",
 		[-3179] = "T3套装",
-		[-3180] = "T2.5套装",
-		--TODO: [-3181] = "Cenarion Circle Set (Ruins of Ahn'Qiraj)",
-		[-3182] = "T2套装",
-		[-3183] = "T1.5套装",
-		[-3184] = "T1套装",
-		[-3185] = "T0.5套装",
-		[-3186] = "T0套装",
-		[-3187] = "副本套装",										-- Instance Item Sets
-		--TODO: [-3188] = "Dungeon, Tier and Class Sets",
-		--TODO: [-3189] = "Fel-Touched Weapons",
 
 	-- Holiday Sets
 		[-3199] = "仲夏节套装",
-	-- Dungeon 1 Sets [Tier 0]
-		[-3200] = "虔诚",											-- Vestments of the Devout (Priest)
-		[-3201] = "博学者",											-- Magister's Regalia (Mage)
-		[-3202] = "鬼雾",											-- Dreadmist Rainment (Warlock)
-		[-3203] = "野性之心",										-- Wildheart Rainment (Druid)
-		[-3204] = "迅影",											-- Shadowcraft Armor (Rogue)
-		[-3205] = "野兽追猎者",										-- Beaststalker Armor (Hunter)
-		[-3206] = "元素",											-- The Elements (Shaman)
-		[-3207] = "光铸护甲",										-- Lightforge Armor (Paladin)
-		[-3208] = "勇气",											-- Battlegear of Valor (Warrior)
-	-- Dungeon 2 Sets [Tier 0.5]
-		[-3209] = "坚贞",											-- Vestments of the Virtuous (Priest)
-		[-3210] = "巫师",											-- Sorcerer's Regalia (Mage_
-		[-3211] = "死雾",											-- Deathmist Rainment (Warlock)
-		[-3212] = "狂野之心",										-- Feralheart Rainment (Druid)
-		[-3213] = "暗幕",											-- Darkmantle Armor (Rogue)
-		[-3214] = "兽王",											-- Beastmaster Armor (Hunter)
-		[-3215] = "五雷",											-- The Five Thunders (Shaman)
-		[-3216] = "魂铸",											-- Soulforge Armor (Paladin)
-		[-3217] = "英勇",											-- Battlegear of Heroism (Warrior)
 	-- Anti-Undead Armor Sets [Scourge Event]
 		[-3218] = "神圣的亡灵净化法衣",
 		[-3219] = "神圣的亡灵毁灭护甲",
 		[-3220] = "神圣的亡灵毁灭套装",
 		[-3221] = "神圣的亡灵毁灭战甲",
-	-- Anti-Undead Armor Sets [Vanilla Scourge Event]
-		[-3222] = "亡灵净化者",
-		[-3223] = "亡灵屠戮者的护甲",
-		[-3224] = "亡灵屠戮者的装备",
-		[-3225] = "亡灵毁灭者",
-	-- Instance Sets
-		[-3226] = "铁纹作战套装",									-- Ironweave Battlesuit (Cloth)
-		[-3227] = "邮差",											-- The Postmaster (Cloth)
-		[-3228] = "骨堆",											-- Necropile Raiment (Cloth)
-		[-3229] = "苍白",											-- Cadaverous Garb (Leather)
-		[-3230] = "血链",											-- Bloodmail Regalia (Mail)
-		[-3231] = "亡骨",											-- Deathbone Guardian (Plate)
-	-- Cenarion Circle Set (Ruins of Ahn'Qiraj")
-		[-3232] = "无尽的智慧",										-- Priest
-		[-3233] = "神秘套装",										-- Trappings of Vaulted Secrets (Mage)
-		[-3234] = "禁断的邪语",										-- Warlock
-		[-3235] = "不灭的生命",										-- Druid
-		[-3236] = "笼罩之阴影",										-- Rogue
-		[-3237] = "隐秘的通途",										-- Hunter
-		[-3238] = "聚集的风暴",										-- Shaman
-		[-3239] = "永恒的公正",										-- Paladin
-		[-3240] = "坚定的力量",										-- Warrior
-	-- Cloth WQ Gear
-		[-3241] = "焦魔套装",
-		[-3242] = "骨语套装",
-		[-3243] = "灭法者套装",
-		[-3244] = "虚空语者套装",
-		[-3245] = "暗夜追梦者套装",
-		[-3246] = "裂痕祭司套装",
-		[-3247] = "石线套装",
-		[-3248] = "海巫套装",
-		[-3249] = "霜阳套装",
-	-- Cloth WQ Gear Continued
-		[-3259] = "织恐套装",
-		[-3260] = "地窟卫士套装",
-		[-3261] = "触魔套装",
-	-- Leather WQ Gear
-		[-3262] = "剑歌者套装",
-		[-3263] = "河鬃套装",
-		--TODO: [-3264] = "Mana-Saber Set",
-		[-3265] = "魔蝠皮套装",
-		[-3266] = "白熊皮套装",
-		[-3267] = "死皮套装",
-		[-3268] = "静枝套装",
-		[-3269] = "死皮套装",
-		--TODO: [-3270] = "Steelgazer Set",
-		--TODO: [-3271] = "Brinewashed Set",
-		[-3272] = "灾月套装",
-		--TODO: [-3273] = "Fel-Treated Set",
-	-- Mail WQ Gear
-		[-3274] = "魔力龙骑兵套装",
-		--TODO: [-3275] = "Skyhorn Set",
-		[-3276] = "海行者套装",
-		[-3277] = "马顿链甲套装",
-		[-3278] = "蔑潮套装",
-		[-3279] = "邪鳞套装",
-		[-3280] = "魔爆套装",
-		[-3281] = "棘锁套装",
-		[-3282] = "魔爆套装",
-		[-3283] = "神殿毁灭者套装",
-		[-3284] = "闪耀风鳞套装",
-		[-3285] = "如果你看到这个请联系Lucetia",
-		[-3346] = "守岛人套装";
-	-- Dungeon 3 Sets [Tier 3.5]
-		[-3286] = "圣徒"	,											-- Hallowed Raiment (Priest)
-		[-3287] = "魔咒师",											-- Incanter's Regalia (Mage)
-		[-3288] = "湮灭",											-- Oblivion Raiment (Warlock)
-		[-3289] = "月光林地",										-- Moonglade Raiment (Druid)
-		[-3290] = "刺杀"	,											-- Assassination Armor (Rogue)
-		[-3291] = "巨兽之王",										-- Beast Lord Armor (Hunter)
-		[-3292] = "潮汐之怒",										-- Tidefury Raiment (Shaman)
-		[-3293] = "正义",											-- Righteous Armor (Paladin)
-		[-3294] = "鲁莽套装",										-- Bold Armor (Warrior)
-		[-3295] = "法力蚀刻魔装",									-- Mana-Etched Regalia (Cloth)
-		[-3296] = "废土行者",										-- Wastewalker Armor (Leather)
-		[-3297] = "荒芜",											-- Desolation Battlegear (Mail)
-		[-3298] = "末日板甲",										-- Doomplate Battlegear (Plate)
-	-- Plate WQ Gear
-		[-3299] = "奥术防御者套装",
-		[-3300] = "灰石套装",
-		[-3301] = "传送卫士套装",
-		[-3302] = "斯克迪尔套装",
-		[-3303] = "灭魂套装",
-		[-3304] = "魔痕套装",
-		--TODO: [-3305] = "Coral Plate Set",
-		[-3306] = "碎月套装",
-		[-3307] = "夜幕套装",
-		[-3308] = "缚石套装",
-		[-3309] = "越狱者套装",
-		[-3314] = "淬雷套装",
-	-- Garrison Mission Table Sets
-		[-3312] = "动乱套装",
-		[-3313] = "豪华套装",
 	-- Island Expedition Sets
 		[-3315] = "蜘蛛助祭",
 		[-3316] = "海达希亚",
@@ -1095,15 +974,10 @@ for key,value in pairs({
 		[-3336] = "响骨",
 		[-3337] = "暮光巨龙",
 		[-3347] = "黑齿步兵",
-	-- Chromie Scenario
 
 	-- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
-		[-4168] = "鳞族之拥",										-- The Scale's Embrace
-		[-4169] = "毒蛇的拥抱",										-- Embrace of the Viper
 		[-4189] = "PvP套装",											-- Instance Item Sets, PvP
-		[-4190] = "季前赛",											-- Pre-Season
-		[-4191] = "竞技装备",										-- Tournament
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "基础外观",									-- Base Appearance
@@ -1113,21 +987,11 @@ for key,value in pairs({
 			[-5204] = "挑战外观",									-- Challenge Appearance
 			[-5205] = "隐藏外观",									-- Hidden Appearance
 		-- Class Sets
-			--TODO: [-5349] = MAC_OPTIONS_MISC.." "..LOOT_JOURNAL_ITEM_SETS,-- Miscellaneous Item Sets
 			[-5350] = "职业试用套装",								-- Class Trial
 
-			[-5352] = "Tier套装",									-- Tier Sets / 想不到更好的翻译了
-
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
-		--TODO: [-7777] = "Timed Event",
-		--TODO: [-7778] = "First Chest",
-		--TODO: [-7779] = "Second Chest",
-		--TODO: [-7780] = "Third Chest",
-		--TODO: [-7781] = "Final Chest",
 
 	------ ACHIEVEMENT HEADER SECTION ------
-		--TODO: [-10066] = BATTLE_PET_BREED_QUALITY6,				-- Legendary
-		[-10069] = "场景战役",										-- Scenarios
 		[-10071] = "恩佐斯的幻象",									-- Visions of N'Zoth
 		[-10072] = "恩佐斯突袭",										-- N'Zoth Assault
 		[-10073] = "奥格瑞玛的惊魂幻象",								-- Horrific Vision of Orgrimmar
@@ -1137,62 +1001,13 @@ for key,value in pairs({
 		[-10077] = "突袭：战争氏族",									-- Assault: The Warring Clans
 		[-10078] = "突袭：无尽虫群",									-- Assault: The Endless Swarm
 		[-10079] = "突袭：亚基重现",									-- Assault: Aqir Unearthed
-		[-10080] = "惊魂幻象",										-- Horrific Visions
 		[-10081] = "腐化区域",										-- Corrupted Area
 		[-10082] = "失落区域",										-- Lost Area
+		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
 
 		-- Shadowlands Achievement Header
 			-- Achieve 14339 Sub-Criteira
 				[-1433901] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433902] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433903] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433904] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433905] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433906] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433907] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433908] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433909] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433910] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433911] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433912] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433913] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433914] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433915] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433916] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433917] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433918] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433919] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433920] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433921] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433922] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433923] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433924] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433925] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433926] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433927] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433928] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433929] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433930] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433931] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433932] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433933] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433934] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433935] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433936] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433937] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433938] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433939] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433940] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433941] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433942] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433943] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433944] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433945] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433946] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433947] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433948] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433949] = "心能水晶碎片",							-- Anima Crystal Shard
-				[-1433950] = "心能水晶碎片",							-- Anima Crystal Shard
 
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "残破的镜子 A-1",						-- Broken Mirror
@@ -1213,14 +1028,15 @@ do a[key] = value; end
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({
 	[-34] = "世界任务是有时间限制的任务, 可在特定地点进行, 奖励不一.\n\n一定要经常查看ATT世界任务窗口(/attwq), 看看有什么限时的东西你应该去收集!",
+	--TODO: [-169] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
 	--TODO: [-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
+	--TODO: [-903] = "These items can drop from repeatable treasure chests, wish crickets, world quests or table missions.",
 })
 do a[key] = value; end
 
-local a = L.OBJECT_ID_NAMES;
+local a = app.ObjectNames;
 for key, value in pairs({
 	[31] = "陈旧的石狮子",	-- Old Lion Statue
-	[34] = "旧罐子",	-- Old Jug
 	[55] = "被吃掉一半的尸体",	-- A half-eaten body
 	[56] = "罗尔夫的尸体",	-- Rolf's corpse
 	[61] = "破旧的坟墓",	-- A Weathered Grave
@@ -1229,7 +1045,6 @@ for key, value in pairs({
 	[261] = "破损的箱子",	-- Damaged Crate
 	[270] = "无人守卫的雷酒桶",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
 	[711] = "通缉！",	-- Wanted!	--TODO: This was taken from classic Wowhead
-	--TODO: [908] = "",	--
 	[1593] = "运尸船",	-- Corpse Laden Boat	--TODO: This was taken from classic Wowhead
 	--TODO: [1599] = "Shallow Grave",	-- Shallow Grave
 	[1627] = "达拉然板条箱",	-- Dalaran Crate
@@ -1243,19 +1058,21 @@ for key, value in pairs({
 	[2701] = "虹光水晶碎块",	-- Iridescent Shards
 	[2702] = "内禁锢之石",	-- Stone of Inner Binding
 	[2703] = "托尔贝恩的墓室",	-- Trollbane's Tomb	--TODO: This was taken from classic Wowhead
-	--TODO: [2706] = "",	--
 	[2713] = "通缉板",	-- Wanted Board
 	[2908] = "密封的补给箱",	-- Sealed Supply Crate
+	[3189] = "进攻计划：试炼谷",	-- Attack Plan: Valley of Trials
+	[3190] = "进攻计划：森金村",	-- Attack Plan: Sen'jin Village
+	[3192] = "进攻计划：奥格瑞玛",	-- Attack Plan: Orgrimmar
 	[3238] = "老陈的空酒桶",	-- Chen's Empty Keg	--TODO: This was taken from classic Wowhead
 	[3972] = "通缉",	-- WANTED
 	[4141] = "控制台",	-- Control Console
+	[5620] = "有裂痕的能量石",	-- Flawed Power Stones
 	[6751] = "奇怪的果树",	-- Strange Fruited Plant	--TODO: This was taken from classic Wowhead
 	[6752] = "奇怪的树木",	-- Strange Fronded Plant	--TODO: This was taken from classic Wowhead
 	[7510] = "发芽的树叶",	-- Sprouted Frond	--TODO: This was taken from classic Wowhead
-	--TODO: [10879] = "",	--
-	--TODO: [10880] = "",	--
-	--TODO: [10881] = "",	--
+	[19022] = "旧箱子",	-- Worn Chest
 	[19023] = "|cFFFFFFFF第7步:|r 第2351页",	-- |cFFFFFFFFStep 7:|r Page 2351
+	[19024] = "隐蔽的神龛",	-- Hidden Shrine
 	[20805] = "瑞兹尔的计划",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "松软的泥土",	-- Loose Dirt
 	[20992] = "黑色盾牌",	-- Black Shield
@@ -1280,9 +1097,7 @@ for key, value in pairs({
 	[148502] = "|cFFFFFFFF第1步:|r 第9页",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "明显的墓碑",	-- A Conspicuous Gravestone
 	[149502] = "黑龙的财宝",	-- Hoard of the Black Dragonflight	--TODO: This was taken from classic Wowhead
-	[156561] = "通缉告示",	-- Wanted Poster
 	[160836] = "古物宝库",	-- Relic Coffer
-	[160845] = "黑暗宝箱",	-- Dark Coffer
 	[161495] = "秘密保险箱",	-- Secret Safe
 	[161504] = "小背包",	-- A Small Pack	--TODO: This was taken from classic Wowhead
 	[161505] = "破碎的木筏",	-- A Wrecked Raft
@@ -1291,8 +1106,7 @@ for key, value in pairs({
 	[164820] = "黑暗守护者的标示牌",	-- Dark Keeper Nameplate
 	[164867] = "通缉",	-- WANTED
 	[164868] = "格杀勿论",	-- KILL ON SIGHT
-	[164885] = "被腐化的夜龙草",	-- Corrupted Night Dragon	--TODO: This was taken from classic Wowhead
-	[164886] = "被腐化的轻歌花",	-- Corrupted Songflower	--TODO: This was taken from classic Wowhead
+	[164869] = "鬼魂之杯",	-- The Spectral Chalice	--TODO: This was taken from classic Wowhead
 	[164887] = "被腐化的迎风花",	-- Corrupted Windblossom	--TODO: This was taken from classic Wowhead
 	[164888] = "被腐化的鞭根草",	-- Corrupted Whipper Root	--TODO: This was taken from classic Wowhead
 	[164955] = "北部水晶塔",	-- Northern Crystal Pylon
@@ -1304,7 +1118,6 @@ for key, value in pairs({
 	[174682] = "当心翼手龙",	-- Beware of Pterrordax	--TODO: This was taken from classic Wowhead
 	[175320] = "通缉：莫克迪普！",	-- WANTED: Murkdeep!	--TODO: This was taken from classic Wowhead
 	[175524] = "神秘的红色水晶",	-- Mysterious Red Crystal	--TODO: This was taken from classic Wowhead
-	[175756] = "洛丹伦的天灾",	-- The Scourge of Lordaeron
 	[175894] = "詹妮丝的包裹",	-- Janice's Parcel	--TODO: This was taken from classic Wowhead
 	[175926] = "达尔松夫人的日记",	-- Mrs. Dalson's Diary	--TODO: This was taken from classic Wowhead
 	[176090] = "人类遗骸",	-- Human Remains
@@ -1319,19 +1132,27 @@ for key, value in pairs({
 	[177787] = "拉克摩尔的日志",	-- Rackmore's Log	--TODO: This was taken from classic Wowhead
 	[177904] = "通缉：贝瑟莱斯",	-- Wanted Poster: Besseleth	--TODO: This was taken from classic Wowhead
 	[177964] = "深渊之石",	-- Fathom Stone
+	[178144] = "巨魔的箱子",	-- Troll Chest
+	[178227] = "穆戈特的图腾篮",	-- Murgut's Totem Basket
 	[179485] = "损坏的陷阱",	-- A Broken Trap
 	[179501] = "诺特·希姆加克的储物箱",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "戈多克贡品",	-- Gordok Tribute Chest
 	[179697] = "竞技场财宝箱",	-- Arena Treasure Chest
 	[179827] = "通缉/寻物/招领",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	--TODO: [179832] = "Pillaclencher's Ornate Pillow",	-- Pillaclencher's Ornate Pillow
+	[180229] = "厄运巫毒堆",	-- Jinxed Hoodoo Pile	--TODO: This was taken from classic Wowhead
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "破碎的工具箱",	-- Battered Tackle Box	--TODO: This was taken from classic Wowhead
 	[180368] = "疯狂石板",	-- Tablet of Madness	--TODO: This was taken from classic Wowhead
 	[180448] = "通缉布告：死亡弯钩",	-- Wanted Poster: Deathclasp
+	[180456] = "次级风石",	-- Lesser Wind Stone
+	[180461] = "风石",	-- Wind Stone
+	[180466] = "强力风石",	-- Greater Wind Stone
 	[180503] = "盖满沙子的烹饪书",	-- Sandy Cookbook
+	[180570] = "小桶",	-- Keg
 	[180633] = "水晶之泪",	-- Crystalline Tear
 	--TODO: [180642] = "Inconspicuous Crate",	-- Inconspicuous Crate
+	--TODO: [180652] = "Freshly Dug Dirt",	-- Freshly Dug Dirt
 	[180690] = "大型圣甲虫箱",	-- Large Scarab Coffer
 	[180691] = "圣甲虫箱",	-- Scarab Coffer
 	[180717] = "甲虫之锣",	-- The Scarab Gong	--TODO: This was taken from classic Wowhead
@@ -1343,17 +1164,14 @@ for key, value in pairs({
 	[181147] = "通缉布告",	-- Wanted Poster
 	[181150] = "布满灰尘的日记",	-- Dusty Journal
 	[181153] = "通缉布告：邪恶的克尔加什",	-- Wanted Poster: Kel'gash the Wicked
-	[181332] = "暴风城烈焰",	-- Flame of Stormwind
-	--TODO: [181333] = "Flame of Ironforge",	-- Flame of Ironforge
-	--TODO: [181334] = "Flame of Darnassus",	-- Flame of Darnassus
-	--TODO: [181335] = "Flame of the Undercity",	-- Flame of the Undercity
-	--TODO: [181336] = "Flame of Orgrimmar",	-- Flame of Orgrimmar
-	--TODO: [181337] = "Flame of Thunder Bluff",	-- Flame of Thunder Bluff
 	[181638] = "通缉布告",	-- Wanted Poster
+	[181672] = "稻草人",	-- Wickerman Effigy	--TODO: This was taken from tbc Wowhead
+	--TODO: [181698] = "Voidstone",	-- Voidstone
 	--TODO: [181748] = "Blood Crystal",	-- Blood Crystal
 	--TODO: [181756] = "Battered Ancient Book",	-- Battered Ancient Book
 	[181889] = "通缉布告",	-- Wanted Poster
 	[182032] = "加莱恩的日记",	-- Galaen's Journal
+	[182058] = "天灾战车",	-- Scourge Meat Wagon
 	[182115] = "通缉布告",	-- Wanted Poster
 	[182165] = "通缉布告",	-- Wanted Poster
 	[182392] = "加拉达尔布告牌",	-- Garadar Bulletin Board
@@ -1377,19 +1195,15 @@ for key, value in pairs({
 	[185165] = "军团联络器",	-- Legion Communicator
 	--TODO: [185166] = "Wanted Poster",	-- Wanted Poster
 	[185168] = "强化魔铁箱",	-- Reinforced Fel Iron Chest
-	[185927] = "邪能水晶棱柱",	-- Fel Crystal Prism
+	[186267] = "南瓜神龛",	-- Pumpkin Shrine
 	[186426] = "通缉布告",	-- Wanted Poster
 	--TODO: [186585] = "Dragonskin Scroll",	-- Dragonskin Scroll
-	[186648] = "哈兹莱克的箱子",	-- Hazlek's Trunk
-	[186667] = "洛尔卡尼的背包",	-- Norkani's Package
-	[186672] = "卡莎的包裹",	-- Kasha's Bag
+	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	--TODO: [186887] = "Large Jack-o'-Lantern",	-- Large Jack-o'-Lantern
-	[187021] = "巴卡祖鲁的袋子",	-- Bakkalzu's Satchel
 	[187273] = "可疑的蹄印",	-- Suspicious Hoofprint
 	[187559] = "部落篝火",	-- Horde Bonfire
 	[187564] = "联盟篝火",	-- Alliance Bonfire
 	[187565] = "长者阿特卡诺克",	-- Elder Atkanok
-	--TODO: [187674] = "Ith'rix's Hardened Carapace",	-- Ith'rix's Hardened Carapace
 	[187851] = "诅咒教徒神龛",	-- Cultist Shrine
 	[187905] = "发光的巨蛋",	-- Massive Glowing Egg
 	[187914] = "联盟篝火",	-- Alliance Bonfire
@@ -1404,8 +1218,11 @@ for key, value in pairs({
 	[187925] = "联盟篝火",	-- Alliance Bonfire
 	[187926] = "联盟篝火",	-- Alliance Bonfire
 	[187927] = "联盟篝火",	-- Alliance Bonfire
+	[187928] = "联盟篝火",	-- Alliance Bonfire
 	[187929] = "联盟篝火",	-- Alliance Bonfire
 	[187930] = "联盟篝火",	-- Alliance Bonfire
+	[187931] = "联盟篝火",	-- Alliance Bonfire
+	[187932] = "联盟篝火",	-- Alliance Bonfire
 	[187933] = "联盟篝火",	-- Alliance Bonfire
 	[187934] = "联盟篝火",	-- Alliance Bonfire
 	[187935] = "联盟篝火",	-- Alliance Bonfire
@@ -1427,6 +1244,7 @@ for key, value in pairs({
 	[187951] = "部落篝火",	-- Horde Bonfire
 	[187952] = "部落篝火",	-- Horde Bonfire
 	[187953] = "部落篝火",	-- Horde Bonfire
+	[187954] = "部落篝火",	-- Horde Bonfire
 	[187955] = "部落篝火",	-- Horde Bonfire
 	[187956] = "部落篝火",	-- Horde Bonfire
 	[187957] = "部落篝火",	-- Horde Bonfire
@@ -1445,10 +1263,10 @@ for key, value in pairs({
 	[187970] = "部落篝火",	-- Horde Bonfire
 	[187971] = "部落篝火",	-- Horde Bonfire
 	[187972] = "部落篝火",	-- Horde Bonfire
+	[187973] = "部落篝火",	-- Horde Bonfire
+	[187974] = "部落篝火",	-- Horde Bonfire
 	[187975] = "部落篝火",	-- Horde Bonfire
 	[188085] = "天灾谷物",	-- Plagued Grain
-	--TODO: [188128] = "Flame of the Exodar",	-- Flame of the Exodar
-	--TODO: [188129] = "Flame of Silvermoon",	-- Flame of Silvermoon
 	[188261] = "破碎的日记",	-- Battered Journal
 	[188364] = "被破坏的螃蟹陷阱",	-- Wrecked Crab Trap
 	[188365] = "古树精华宝石",	-- Heart of the Ancients
@@ -1460,17 +1278,6 @@ for key, value in pairs({
 	[189989] = "黑铁钻孔机残骸",	-- Dark Iron Mole Machine Wreckage
 	[189990] = "黑铁钻孔机残骸",	-- Dark Iron Mole Machine Wreckage
 	[190020] = "通缉！",	-- Wanted!
-	[190035] = "糖罐",	-- Candy Bucket
-	[190037] = "糖罐",	-- Candy Bucket
-	[190038] = "糖罐",	-- Candy Bucket
-	[190045] = "糖罐",	-- Candy Bucket
-	[190051] = "糖罐",	-- Candy Bucket
-	[190052] = "糖罐",	-- Candy Bucket
-	[190064] = "糖罐",	-- Candy Bucket
-	[190079] = "糖罐",	-- Candy Bucket
-	[190083] = "糖罐",	-- Candy Bucket
-	[190085] = "糖罐",	-- Candy Bucket
-	[190104] = "糖罐",	-- Candy Bucket
 	[190535] = "希姆埃巴",	-- Zim'Abwa
 	[190602] = "希姆托加",	-- Zim'Torga
 	[190657] = "希姆鲁克",	-- Zim'Rhuk
@@ -1540,7 +1347,6 @@ for key, value in pairs({
 	[202701] = "厕所藏匿处",	-- Outhouse Hideout
 	[202706] = "暮光熔锅",	-- Twilight Cauldron
 	[202712] = "暮光伪经",	-- The Twilight Apocrypha
-	[202741] = "富源质矿",	-- Rich Elementium Giode
 	[202776] = "高山鲑鱼群",	-- Mountain Trout School
 	[202777] = "高地孔雀鱼群",	-- Highland Guppy School
 	[202778] = "白色洞穴鱼群",	-- Albino Cavefish School
@@ -1581,7 +1387,7 @@ for key, value in pairs({
 	[205874] = "沙土覆盖的符文",	-- Sand-Covered Hieroglyphs
 	--TODO: [205875] = "Crusader's Flare",	-- Crusader's Flare
 	[206109] = "酋长的命令布告板",	-- Warchief's Command Board
-	[206116] = "酋长的命令布告板",	-- Warchief's Command Board
+	[206111] = "英雄的召唤布告牌",	-- Hero's Call Board
 	--TODO: [206293] = "A.I.D.A. Terminal",	-- A.I.D.A. Terminal
 	[206335] = "石板",	-- Stone Slab
 	[206336] = "大理石板",	-- Marble Slab
@@ -1594,18 +1400,9 @@ for key, value in pairs({
 	[207279] = "大酋长的命令布告板",	-- Warchief's Command Board
 	[207303] = "冒险看板",	-- Adventure Board
 	[207304] = "冒险看板",	-- Adventure Board
-	[207320] = "英雄的召唤布告牌",	-- Hero's Call Board
-	[207321] = "英雄的召唤布告牌",	-- Hero's Call Board
-	[207322] = "英雄的召唤布告牌",	-- Hero's Call Board
-	[207323] = "大酋长的命令布告板",	-- Warchief's Command Board
 	[207359] = "纯净的暮光龙卵",	-- Pure Twilight Egg
-	[207472] = "缚银宝箱",	-- Silverbound Treasure Chest
-	[207484] = "坚固的宝箱",	-- Sturdy Treasure Chest
 	[207496] = "黑铁宝箱",	-- Dark Iron Treasure Chest
-	[207512] = "丝制宝箱",	-- Silken Treasure Chest
-	[207520] = "枫木宝箱",	-- Maplewood Treasure Chest
-	[207533] = "符文石宝箱",	-- Runestone Treasure Chest
-	--TODO: [207724] = "Shipwreck Debris",	-- Shipwreck Debris
+	[207724] = "船只残骸",	-- Shipwreck Debris
 	[207982] = "联盟篝火",	-- Alliance Bonfire
 	[207983] = "部落篝火",	-- Horde Bonfire
 	[207984] = "联盟篝火",	-- Alliance Bonfire
@@ -1622,14 +1419,6 @@ for key, value in pairs({
 	[208090] = "部落篝火",	-- Horde Bonfire
 	[208093] = "联盟大篝火",	-- Alliance Bonfire
 	[208094] = "部落篝火",	-- Horde Bonfire
-	[208115] = "糖罐",	-- Candy Bucket
-	[208117] = "糖罐",	-- Candy Bucket
-	[208118] = "糖罐",	-- Candy Bucket
-	[208119] = "糖罐",	-- Candy Bucket
-	[208140] = "糖罐",	-- Candy Bucket
-	[208157] = "糖罐",	-- Candy Bucket
-	[208158] = "糖罐",	-- Candy Bucket
-	[208159] = "糖罐",	-- Candy Bucket
 	[208311] = "深海鼠尾鱼群",	-- Deepsea Sagefish School
 	[208316] = "英雄的召唤布告牌",	-- Hero's Call Board
 	[208317] = "大酋长的命令布告板",	-- Warchief's Command Board
@@ -1691,6 +1480,7 @@ for key, value in pairs({
 	[213972] = "毒心之刃",	-- Blade of the Poisoned Mind
 	[213973] = "卡拉克西声波传送塔",	-- Klaxxi Sonic Relay
 	[214062] = "发光的琥珀",	-- Glowing Amber
+	[214175] = "一袋悟道者补给品",	-- Bag of Wu Kao Supplies
 	[214325] = "被遗忘的锁箱",	-- Forgotten Lockbox
 	[214337] = "秘藏的宝石",	-- Stash of Gems
 	[214338] = "悼念祭品",	-- Offering of Remembrance
@@ -1721,7 +1511,6 @@ for key, value in pairs({
 	[218437] = "诅咒与沉默",	-- The Curse and the Silence
 	[218438] = "百王时代",	-- Age of a Hundred Kings
 	[218750] = "产品订单",	-- Work Orders
-	[218949] = "雷神的陪葬品",	-- Lei Shen's Burial Trove
 	--TODO: [220641] = "Thunderlord's Cache",	-- Thunderlord's Cache
 	[220820] = "|cFFFFFFFF第6步:|r 第1127页",	-- |cFFFFFFFFStep 6:|r Page 1127
 	[220821] = "|cFFFFFFFF第5步:|r 第845页",	-- |cFFFFFFFFStep 5:|r Page 845
@@ -1811,7 +1600,6 @@ for key, value in pairs({
 	--TODO: [226967] = "Lagoon Pool",	-- Lagoon Pool
 	--TODO: [226976] = "Deceptia's Smoldering Boots",	-- Deceptia's Smoldering Boots
 	[226983] = "攀岩者的宝箱",	-- Crag-Leaper's Cache
-	--TODO: [226987] = "Ricky",	-- Ricky
 	[226990] = "遗弃的补给品",	-- Supply Dump
 	--TODO: [226993] = "Survivalist's Cache",	-- Survivalist's Cache
 	[226994] = "肃霜宝箱",	-- Grimfrost Treasure
@@ -1920,21 +1708,21 @@ for key, value in pairs({
 	[233032] = "登山者的包裹",	-- Mountain Climber's Pack
 	[233033] = "热砂补给品",	-- Steamwheedle Supplies
 	[233034] = "热砂补给品",	-- Steamwheedle Supplies
+	[233048] = "闪亮的梦境花瓣",	-- Brilliant Dreampetal
 	[233052] = "热砂补给品",	-- Steamwheedle Supplies
 	[233101] = "沉没的渔船",	-- Sunken Fishing Boat
 	[233107] = "小宝箱",	-- Small Treasure Chest
 	[233113] = "战歌长矛",	-- Warsong Spear
 	[233126] = "影月宝藏",	-- Shadowmoon Treasure
+	[233132] = "淡水蛤蜊",	-- Freshwater Clam
 	[233134] = "金色卡利鸟蛋",	-- Golden Kaliri Egg
 	[233137] = "火刃宝箱",	-- Burning Blade Cache
 	[233139] = "上古泰坦宝箱",	-- Ancient Titan Chest
 	[233149] = "嘲颅包裹",	-- Laughing Skull Cache
-	--TODO: [233157] = "Abu'gar's Vitality",	-- Abu'gar's Vitality
 	[233206] = "被遗弃的货箱",	-- Abandoned Cargo
 	[233218] = "冒险者的包裹",	-- Adventurer's Pack
 	--TODO: [233241] = "Glowing Cave Mushroom",	-- Glowing Cave Mushroom
 	[233291] = "指令板",	-- Command Board
-	[233391] = "武器装配员的命令",	-- Weaponization Orders
 	[233452] = "一堆泥土",	-- A Pile of Dirt
 	[233455] = "古老的石质容器",	-- Aged Stone Container
 	[233457] = "冒险者的法杖",	-- Adventurer's Staff
@@ -1943,7 +1731,6 @@ for key, value in pairs({
 	[233501] = "神秘的石化豆荚",	-- Mysterious Petrified Pod
 	[233504] = "格里米尔·灰签的遗骸",	-- Remains of Grimnir Ashpick
 	[233505] = "未知的石化之蛋",	-- Unknown Petrified Egg
-	[233506] = "阿布加尔丢失的线轮",	-- Abu'gar's Missing Reel
 	[233507] = "被遗忘的食人魔文物",	-- Forgotten Ogre Cache
 	--TODO: [233511] = "Adventurer's Pack",	-- Adventurer's Pack
 	[233513] = "被遗忘的嘲颅文物",	-- Forgotten Skull Cache
@@ -1953,7 +1740,7 @@ for key, value in pairs({
 	[233524] = "未知的石化之蛋",	-- Unknown Petrified Egg
 	[233525] = "木精精华之种",	-- Botani Essence Seed
 	[233526] = "上古泰坦宝箱",	-- Ancient Titan Chest
-	--TODO: [233532] = "Bone-Carved Dagger",	-- Bone-Carved Dagger
+	[233532] = "骨质匕首",	-- Bone-Carved Dagger
 	--TODO: [233539] = "Genedar Debris",	-- Genedar Debris
 	--TODO: [233549] = "Genedar Debris",	-- Genedar Debris
 	[233550] = "未知的石化之蛋",	-- Unknown Petrified Egg
@@ -1973,13 +1760,14 @@ for key, value in pairs({
 	--TODO: [233623] = "Adventurer's Pouch",	-- Adventurer's Pouch
 	--TODO: [233626] = "Grizzlemaw's Bonepile",	-- Grizzlemaw's Bonepile
 	[233633] = "闲置的木材堆",	-- Unused Wood Pile
-	--TODO: [233642] = "Abu'Gar's Favorite Lure",	-- Abu'Gar's Favorite Lure
 	--TODO: [233645] = "Warsong Helm",	-- Warsong Helm
 	[233650] = "冒险者的钉锤",	-- Adventurer's Mace
 	[233651] = "遗失的吊坠",	-- Lost Pendant
 	--TODO: [233658] = "Adventurer's Pouch",	-- Adventurer's Pouch
 	[233696] = "重要的探索补给",	-- Important Exploration Supplies
 	[233697] = "刃牙虎人储物箱",	-- Saberon Stash
+	--TODO: [233715] = "Goldtoe's Plunder",	-- Goldtoe's Plunder
+	--TODO: [233768] = "Pale Elixir",	-- Pale Elixir
 	--TODO: [233773] = "Bag of Herbs",	-- Bag of Herbs
 	[233792] = "一堆碎石",	-- Pile of Rubble
 	[233917] = "稀有腿骨",	-- Femur of Improbability
@@ -1990,12 +1778,16 @@ for key, value in pairs({
 	--TODO: [234147] = "Outcast's Belongings",	-- Outcast's Belongings
 	--TODO: [234154] = "Misplaced Scrolls",	-- Misplaced Scrolls
 	--TODO: [234155] = "Relics of the Outcasts",	-- Relics of the Outcasts
+	--TODO: [234157] = "Fractured Sunstone",	-- Fractured Sunstone
+	--TODO: [234159] = "Lost Herb Satchel",	-- Lost Herb Satchel
+	--TODO: [234432] = "Ogron Plunder",	-- Ogron Plunder
 	--TODO: [234446] = "Relics of the Outcasts",	-- Relics of the Outcasts
 	--TODO: [234449] = "Relics of the Outcasts",	-- Relics of the Outcasts
 	--TODO: [234451] = "Relics of the Outcasts",	-- Relics of the Outcasts
 	--TODO: [234454] = "Relics of the Outcasts",	-- Relics of the Outcasts
 	--TODO: [234455] = "Relics of the Outcasts",	-- Relics of the Outcasts
 	--TODO: [234456] = "Shattered Hand Lockbox",	-- Shattered Hand Lockbox
+	--TODO: [234472] = "Sailor Zazzuk's 180-Proof Rum",	-- Sailor Zazzuk's 180-Proof Rum
 	--TODO: [234473] = "Campaign Contributions",	-- Campaign Contributions
 	[234474] = "刃牙虎人储物箱",	-- Saberon Stash
 	--TODO: [234618] = "Gift of Anzu",	-- Gift of Anzu
@@ -2006,6 +1798,11 @@ for key, value in pairs({
 	--TODO: [234735] = "Elixir of Shadow Sight",	-- Elixir of Shadow Sight
 	--TODO: [234736] = "Elixir of Shadow Sight",	-- Elixir of Shadow Sight
 	--TODO: [234740] = "Orchish Signaling Horn",	-- Orchish Signaling Horn
+	--TODO: [234744] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
+	--TODO: [234746] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
+	--TODO: [234748] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
+	--TODO: [235073] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
+	--TODO: [235090] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
 	--TODO: [235091] = "Lost Ring",	-- Lost Ring
 	--TODO: [235097] = "Ephial's Dark Grimoire",	-- Ephial's Dark Grimoire
 	--TODO: [235104] = "Sun-Touched Cache",	-- Sun-Touched Cache
@@ -2013,10 +1810,14 @@ for key, value in pairs({
 	[235127] = "神秘的石化豆荚",	-- Mysterious Petrified Pod
 	[235129] = "浓缩之种",	-- Enriched Seeds
 	--TODO: [235135] = "Smuggled Apexis Artifacts",	-- Smuggled Apexis Artifacts
+	--TODO: [235141] = "Iron Horde Explosives",	-- Iron Horde Explosives
 	--TODO: [235143] = "Assassin's Spear",	-- Assassin's Spear
 	--TODO: [235168] = "Outcast's Pouch",	-- Outcast's Pouch
 	--TODO: [235172] = "Outcast's Belongings",	-- Outcast's Belongings
+	--TODO: [235282] = "Sethekk Ritual Brew",	-- Sethekk Ritual Brew
 	--TODO: [235289] = "Garrison Workman's Hammer",	-- Garrison Workman's Hammer
+	--TODO: [235299] = "Coinbender's Payment",	-- Coinbender's Payment
+	--TODO: [235300] = "Mysterious Mushrooms",	-- Mysterious Mushrooms
 	--TODO: [235307] = "Watertight Bag",	-- Watertight Bag
 	--TODO: [235313] = "Abandoned Mining Pick",	-- Abandoned Mining Pick
 	[235859] = "波尔卡的袋子",	-- Brokor's Sack
@@ -2028,7 +1829,6 @@ for key, value in pairs({
 	[236099] = "日灼之矛",	-- Suntouched Spear
 	[236138] = "钢铁补给箱",	-- Iron Supply Chest
 	[236139] = "探险家罐子",	-- Explorer Canister
-	[236140] = "鬣蜥人坑洞",	-- Goren Tunnel
 	[236141] = "被遗弃的包裹",	-- Discarded Pack
 	[236147] = "守备官的战锤",	-- Vindicator's Hammer
 	[236149] = "萨莎的秘密包裹",	-- Sasha's Secret Stash
@@ -2071,6 +1871,7 @@ for key, value in pairs({
 	[236406] = "上古食人魔文物",	-- Ancient Ogre Cache
 	[236407] = "上古食人魔文物",	-- Ancient Ogre Cache
 	--TODO: [236483] = "Gift of the Ancients",	-- Gift of the Ancients
+	--TODO: [236610] = "Spirit's Gift",	-- Spirit's Gift
 	[236693] = "钢铁部落军需品",	-- Iron Horde Munitions
 	[236715] = "奇怪的颅骨",	-- Odd Skull
 	[236755] = "尘封的宝箱",	-- Dusty Lockbox
@@ -2084,6 +1885,7 @@ for key, value in pairs({
 	--TODO: [239194] = "Norana's Cache",	-- Norana's Cache
 	[239198] = "伊萨莉的宝箱",	-- Isaari's Cache
 	[239328] = "船长的矮柜",	-- Captain's Foot Locker
+	[239791] = "遗物搜索笔记",	-- Relic Hunting Notes
 	[239803] = "宝箱",	-- Treasure Chest
 	--TODO: [239828] = "Edge of Reality",	-- Edge of Reality
 	--TODO: [239901] = "Voidtalon Egg",	-- Voidtalon Egg
@@ -2092,6 +1894,7 @@ for key, value in pairs({
 	[240317] = "艾斯卡的暗影之书",	-- Iskar's Tome of Shadows
 	--TODO: [240354] = "Genuinely Unguarded Treasure",	-- Genuinely Unguarded Treasure
 	[240519] = "小宝箱",	-- Small Treasure Chest
+	[240547] = "兽人头骨",	-- Orc Skull
 	[240577] = "卡纳克之刃",	-- The Blade of Kra'nak
 	[240580] = "地狱火珠宝",	-- Jewel of Hellfire
 	[240605] = "小宝箱",	-- Small Treasure Chest
@@ -2129,7 +1932,7 @@ for key, value in pairs({
 	[240657] = "小宝箱",	-- Small Treasure Chest
 	[240690] = "宝箱",	-- Treasure Chest
 	[240855] = "隐秘之书",	-- Tome of Secrets
-	--TODO: [241128] = "Unguarded Thistleleaf Treasure",	-- Unguarded Thistleleaf Treasure
+	[241128] = "无人看守的蓟叶宝藏",	-- Unguarded Thistleleaf Treasure
 	[241146] = "宝箱",	-- Treasure Chest
 	[241147] = "小宝箱",	-- Small Treasure Chest
 	[241148] = "小宝箱",	-- Small Treasure Chest
@@ -2226,10 +2029,10 @@ for key, value in pairs({
 	--TODO: [243899] = "Broken Ley Flame Burner",	-- Broken Ley Flame Burner
 	[243911] = "雪堆",	-- Snow Mound
 	[244453] = "库伦的侦察报告",	-- Cullen's Scouting Report
-	--TODO: [244473] = "Thunder Totem Stolen Goods",	-- Thunder Totem Stolen Goods
+	[244473] = "雷霆图腾失窃货物",	-- Thunder Totem Stolen Goods
 	[244494] = "宝箱",	-- Treasure Chest
 	[244519] = "宝箱",	-- Treasure Chest
-	--TODO: [244628] = "Taurson's Prize",	-- Taurson's Prize
+	[244628] = "陶森的奖品",	-- Taurson's Prize
 	[244651] = "催人泪下的言情小说",	-- Steamy Romance Novel
 	[244678] = "|cFFFFFFFF第8步:|r 第5555页",	-- |cFFFFFFFFStep 8:|r Page 5555
 	[244689] = "小宝箱",	-- Small Treasure Chest
@@ -2253,7 +2056,6 @@ for key, value in pairs({
 	[244917] = "宝箱",	-- Treasure Chest
 	[244928] = "闪闪发光的宝箱",	-- Glimmering Treasure Chest
 	[244965] = "西德尔的箱子",	-- Sheddle's Chest
-	[244983] = "肮脏的怀表",	-- Dirty Pocketwatch
 	--TODO: [244986] = "Legion Portal",	-- Legion Portal
 	[245216] = "|cFFFFFFFF第3步:|r 第161页",	-- |cFFFFFFFFStep 3:|r Page 161
 	[245286] = "水晶猫咪雕像",	-- Crystalline Cat Figurine
@@ -2291,7 +2093,6 @@ for key, value in pairs({
 	[245602] = "宝箱",	-- Treasure Chest
 	[245603] = "小宝箱",	-- Small Treasure Chest
 	[245688] = "碎裂的骨灰坛",	-- Shattered Burial Urn
-	--TODO: [245793] = "Battered Journal",	-- Battered Journal
 	[245996] = "小宝箱",	-- Small Treasure Chest
 	[246037] = "宝箱",	-- Treasure Chest
 	[246147] = "小宝箱",	-- Small Treasure Chest
@@ -2333,15 +2134,13 @@ for key, value in pairs({
 	[250092] = "宝箱",	-- Treasure Chest
 	[250097] = "小宝箱",	-- Small Treasure Chest
 	[250098] = "小宝箱",	-- Small Treasure Chest
-	[250102] = "宝箱",	-- Treasure Chest
 	[250103] = "小宝箱",	-- Small Treasure Chest
 	[250104] = "小宝箱",	-- Small Treasure Chest
 	[250106] = "小宝箱",	-- Small Treasure Chest
 	[250107] = "闪闪发光的宝箱",	-- Glimmering Treasure Chest
 	[250108] = "小宝箱",	-- Small Treasure Chest
 	[250109] = "宝箱",	-- Treasure Chest
-	--TODO: [250383] = "Moonshade Relic",	-- Moonshade Relic
-	[250548] = "卡兹格罗斯之锤",	-- Hammer of Khaz'goroth
+	[250383] = "月影圣物",	-- Moonshade Relic
 	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "小宝箱",	-- Small Treasure Chest
 	[250985] = "宝箱",	-- Treasure Chest
@@ -2353,7 +2152,6 @@ for key, value in pairs({
 	[251416] = "远古魔力碎块",	-- Ancient Mana Chunk
 	[251552] = "小宝箱",	-- Small Treasure Chest
 	[251564] = "|cFFFFFFFF第4步:|r 第655页",	-- |cFFFFFFFFStep 4:|r Page 655
-	[251666] = "宝箱",	-- Treasure Chest
 	[251713] = "小宝箱",	-- Small Treasure Chest
 	[251714] = "小宝箱",	-- Small Treasure Chest
 	[251716] = "闪闪发光的宝箱",	-- Glimmering Treasure Chest
@@ -2377,6 +2175,7 @@ for key, value in pairs({
 	[251857] = "宝箱",	-- Treasure Chest
 	[251991] = "阿格拉玛之盾",	-- The Aegis of Aggramar
 	[252107] = "未充能的传送道标",	-- Unpowered Telemancy Beacon
+	[252232] = "奥伯妮的圣契",	-- Aponi's Libram
 	[252258] = "魔网能量",	-- Leyline Feed
 	[252259] = "魔网能量",	-- Leyline Feed
 	[252260] = "魔网能量",	-- Leyline Feed
@@ -2394,14 +2193,13 @@ for key, value in pairs({
 	--TODO: [252282] = "Sparkling Set of Keys",	-- Sparkling Set of Keys
 	--TODO: [252284] = "Pile of Sticky Bombs",	-- Pile of Sticky Bombs
 	--TODO: [252289] = "Vanishing Powder",	-- Vanishing Powder
-	[252318] = "阿曼苏尔之眼",	-- The Eye of Aman'thul
 	[252412] = "|cFFFFFFFF第2步:|r 泥土堆",	-- |cFFFFFFFFStep 2:|r Mound of Dirt
 	[252432] = "发光的远古魔力晶簇",	-- Shimmering Ancient Mana Cluster
 	[252434] = "|cFFFFFFFF第12步:|r 饥渴宝珠",	-- |cFFFFFFFFStep 12:|r Hungering Orb X
 	[252446] = "发光的远古魔力晶簇",	-- Shimmering Ancient Mana Cluster
 	[252447] = "发光的远古魔力晶簇",	-- Shimmering Ancient Mana Cluster
 	[252448] = "发光的远古魔力晶簇",	-- Shimmering Ancient Mana Cluster
-	--TODO: [252449] = "Shimmering Ancient Mana Cluster",	-- Shimmering Ancient Mana Cluster
+	[252449] = "发光的远古魔力晶簇",	-- Shimmering Ancient Mana Cluster
 	[252450] = "发光的远古魔力晶簇",	-- Shimmering Ancient Mana Cluster
 	[252557] = "|cFFFFFFFF第3步:|r 饥渴宝珠 I",	-- |cFFFFFFFFStep 3:|r Hungering Orb I
 	[252558] = "|cFFFFFFFF第4步:|r 饥渴宝珠 II",	-- |cFFFFFFFFStep 4:|r Hungering Orb II
@@ -2412,7 +2210,6 @@ for key, value in pairs({
 	[252563] = "|cFFFFFFFF第9步:|r 饥渴宝珠 VII",	-- |cFFFFFFFFStep 9:|r Hungering Orb VII
 	[252564] = "|cFFFFFFFF第10步:|r 饥渴宝珠 VIII",	-- |cFFFFFFFFStep 10:|r Hungering Orb VIII
 	[252565] = "饥渴宝珠",	-- |cFFFFFFFFStep 11:|r Hungering Orb IX
-	--TODO: [252570] = "Skyhold Chest of Riches",	-- Skyhold Chest of Riches
 	[252802] = "小宝箱",	-- Small Treasure Chest
 	[252803] = "小宝箱",	-- Small Treasure Chest
 	[252805] = "宝箱",	-- Treasure Chest
@@ -2444,7 +2241,7 @@ for key, value in pairs({
 	[252839] = "小宝箱",	-- Small Treasure Chest
 	[252840] = "小宝箱",	-- Small Treasure Chest
 	[252841] = "小宝箱",	-- Small Treasure Chest
-	[252842] = "宝箱",	-- Small Treasure Chest
+	[252842] = "宝箱",	-- Treasure Chest
 	[252844] = "宝箱",	-- Treasure Chest
 	[252850] = "小宝箱",	-- Small Treasure Chest
 	[252860] = "小宝箱",	-- Small Treasure Chest
@@ -2454,12 +2251,7 @@ for key, value in pairs({
 	[252882] = "宝箱",	-- Treasure Chest
 	[252883] = "宝箱",	-- Treasure Chest
 	[252884] = "闪闪发光的宝箱",	-- Glimmering Treasure Chest
-	[253118] = "梦境林地花蕾",	-- Dreamgrove Blossoms
-	--TODO: [253157] = "Spirit Berries",	-- Spirit Berries
 	--TODO: [253161] = "Grove Vine",	-- Grove Vine
-	[253176] = "加尼尔之花",	-- G'Hanir Blossoms
-	--TODO: [253179] = "Sunblossom",	-- Sunblossom
-	--TODO: [253181] = "Thornstalk",	-- Thornstalk
 	[253280] = "魔石矿层",	-- Leystone Seam
 	[253994] = "看似无人看守的宝藏",	-- Seemingly Unguarded Treasure
 	[254007] = "刽子手的祭坛",	-- Executioner's Altar
@@ -2467,7 +2259,6 @@ for key, value in pairs({
 	[254025] = "小宝箱",	-- Small Treasure Chest
 	[254027] = "小宝箱",	-- Small Treasure Chest
 	[254028] = "小宝箱",	-- Small Treasure Chest
-	[254087] = "恐惧之刃",	-- The Dreadblades
 	[254126] = "小宝箱",	-- Small Treasure Chest
 	[254127] = "小宝箱",	-- Small Treasure Chest
 	[254128] = "宝箱",	-- Treasure Chest
@@ -2475,11 +2266,10 @@ for key, value in pairs({
 	[255344] = "邪能页岩矿层",	-- Felslate Seam
 	[255828] = "小宝箱",	-- Small Treasure Chest
 	[255829] = "小宝箱",	-- Small Treasure Chest
-	--TODO: [257392] = "Burning Plate of the Worldbreaker",	-- Burning Plate of the Worldbreaker
 	[257393] = "宝箱",	-- Treasure Chest
 	[257545] = "宝箱",	-- Treasure Chest
 	[257546] = "宝箱",	-- Treasure Chest
-	--TODO: [257999] = "Technique: Tome of the Tranquil Mind",	-- Technique: Tome of the Tranquil Mind
+	[257999] = "工艺图：宁神书卷",	-- Technique: Tome of the Tranquil Mind
 	[258690] = "小宝箱",	-- Small Treasure Chest
 	[258978] = "浸水的书籍",	-- Waterlogged Tome
 	[258979] = "被邪能毁坏的书籍",	-- Fel-Ravaged Tome
@@ -2492,12 +2282,10 @@ for key, value in pairs({
 	[265532] = "传送道标",	-- Telemancy Beacon
 	--TODO: [266289] = "Time Lost Chest",	-- Time Lost Chest
 	[266851] = "模拟生命魔杖",	-- Wand of Simulated Life
-	--TODO: [268478] = "Battered Trinket",	-- Battered Trinket
+	[268478] = "磨损的饰品",	-- Battered Trinket
 	[268551] = "可疑的虫语者箱子",	-- Curious Wyrmtongue Cache
 	[268753] = "小宝箱",	-- Small Treasure Chest
-	[269049] = "小宝箱",	-- Small Treasure Chest
 	[269064] = "小宝箱",	-- Small Treasure Chest
-	[269071] = "小宝箱",	-- Small Treasure Chest
 	--TODO: [269830] = "|cFFFFFFFFStep 9:|r Gift of the Mind-Seekers",	-- |cFFFFFFFFStep 9:|r Gift of the Mind-Seekers
 	[270855] = "|cFFFFFFFF第1步:|r 不起眼的纸条",	-- |cFFFFFFFFStep 1:|r Inconspicuous Note
 	[270917] = "格伦布鲁克登记簿",	-- Glenbrook Register
@@ -2541,28 +2329,15 @@ for key, value in pairs({
 	[273538] = "军团战争物资",	-- Legion War Supplies
 	[273814] = "利刃护符",	-- Bladed Charm
 	[273854] = "行囊",	-- Backpack
-	[273900] = "小宝箱",	-- Small Treasure Chest
-	[273902] = "小宝箱",	-- Small Treasure Chest
-	[273903] = "小宝箱",	-- Small Treasure Chest
-	[273905] = "小宝箱",	-- Small Treasure Chest
-	[273910] = "小宝箱",	-- Small Treasure Chest
-	[273917] = "小宝箱",	-- Small Treasure Chest
-	[273918] = "小宝箱",	-- Small Treasure Chest
-	[273919] = "小宝箱",	-- Small Treasure Chest
-	--TODO: [275059] = "",	--
-	[275070] = "小宝箱",	-- Small Treasure Chest
-	[275071] = "小宝箱",	-- Small Treasure Chest
-	[275074] = "小宝箱",	-- Small Treasure Chest
-	[275076] = "小宝箱",	-- Small Treasure Chest
 	[276187] = "祖恩基",	-- Junji
 	--TODO: [276223] = "Eredar Treasure Cache",	-- Eredar Treasure Cache
-	--TODO: [276224] = "Chest of Ill-Gotten Gains",	-- Chest of Ill-Gotten Gains
+	[276224] = "来路不明的箱子",	-- Chest of Ill-Gotten Gains
 	--TODO: [276225] = "Student's Surprising Surplus",	-- Student's Surprising Surplus
 	[276226] = "虚空回荡的宝箱",	-- Void-Tinged Chest
 	--TODO: [276227] = "Augari Secret Stash",	-- Augari Secret Stash
 	--TODO: [276228] = "Desperate Eredar's Cache",	-- Desperate Eredar's Cache
 	[276229] = "房屋废墟宝箱",	-- Shattered House Chest
-	--TODO: [276230] = "Doomseeker's Treasure",	-- Doomseeker's Treasure
+	[276230] = "末日追寻者的宝藏",	-- Doomseeker's Treasure
 	[276251] = "挖掘清单",	-- Excavation Inventory
 	[276488] = "艾泽里特炮弹",	-- Azurite Cannonball
 	[276489] = "军团塔楼宝箱",	-- Legion Tower Chest
@@ -2577,12 +2352,12 @@ for key, value in pairs({
 	[277205] = "古老的军团战争储物箱",	-- Ancient Legion War Cache
 	[277206] = "邪能缠绕的宝箱",	-- Fel-Bound Chest
 	--TODO: [277207] = "Legion Treasure Hoard",	-- Legion Treasure Hoard
-	--TODO: [277208] = "Timeworn Fel Chest",	-- Timeworn Fel Chest
-	--TODO: [277327] = "Augari-Runed Chest",	-- Augari-Runed Chest
+	[277208] = "历时久远的邪能宝箱",	-- Timeworn Fel Chest
+	[277327] = "奥古雷符文宝箱",	-- Augari-Runed Chest
 	[277333] = "古代石棺",	-- Ancient Sarcophagus
 	[277340] = "隐秘奥古雷宝箱",	-- Secret Augari Chest
 	[277342] = "奥古雷货物",	-- Augari Goods
-	--TODO: [277343] = "Long-Lost Augari Treasure",	-- Long-Lost Augari Treasure
+	[277343] = "失落已久的奥古雷宝藏",	-- Long-Lost Augari Treasure
 	[277344] = "珍贵的奥古雷信物",	-- Precious Augari Keepsakes
 	[277346] = "丢失的奥古雷宝箱",	-- Missing Augari Chest
 	[277373] = "微光海草",	-- Glimmering Seaweed
@@ -2606,7 +2381,6 @@ for key, value in pairs({
 	[279253] = "幸运的霍拉斯的幸运宝箱",	-- Lucky Horace's Lucky Chest
 	[279260] = "“精心”伪装的宝箱",	-- Cleverly Disguised Chest
 	[279299] = "剧毒封印",	-- Venomous Seal
-	[279337] = "毒心魔典",	-- Heartsbane Grimoire
 	--TODO: [279609] = "Spoils of Pandaria",	-- Spoils of Pandaria
 	[279689] = "丢失的纳兹曼尼宝物",	-- Lost Nazmani Treasure
 	--TODO: [279750] = "Hay Covered Chest",	-- Hay Covered Chest
@@ -2615,18 +2389,7 @@ for key, value in pairs({
 	[280576] = "包好的卷轴",	-- Encased Scroll
 	[280619] = "古旧的缚铁宝箱",	-- Old Ironbound Chest
 	[280727] = "烧焦的笔记",	-- Charred Note
-	[280751] = "小宝箱",	-- Small Treasure Chest
 	--TODO: [280755] = "Quintin's Satchel",	-- Quintin's Satchel
-	[280815] = "|cFFFFFFFF第1步:|r 格拉汉姆女士的信 I",	-- |cFFFFFFFFStep 1:|r Letter from Ms. Graham I
-	[280836] = "|cFFFFFFFF第2步:|r 格拉汉姆女士的信 II",	-- |cFFFFFFFFStep 2:|r Letter from Ms. Graham II
-	[280837] = "|cFFFFFFFF第3步:|r 格拉汉姆女士的信 III",	-- |cFFFFFFFFStep 3:|r Letter from Ms. Graham III
-	[280838] = "|cFFFFFFFF第4步:|r 格拉汉姆女士的信 IV",	-- |cFFFFFFFFStep 4:|r Letter from Ms. Graham IV
-	[280842] = "|cFFFFFFFF第5步:|r 格拉汉姆女士的信 V",	-- |cFFFFFFFFStep 5:|r Letter from Ms. Graham V
-	[280843] = "|cFFFFFFFF第6步:|r 格拉汉姆女士的信 VI",	-- |cFFFFFFFFStep 6:|r Letter from Ms. Graham VI
-	[280844] = "|cFFFFFFFF第7步:|r 格拉汉姆女士的信 VII",	-- |cFFFFFFFFStep 7:|r Letter from Ms. Graham VII
-	--TODO: [280845] = "|cFFFFFFFFStep 8:|r Gift for Ms. Graham",	-- |cFFFFFFFFStep 8:|r Gift for Ms. Graham
-	--TODO: [280883] = "Sun-Worn Chest",	-- Sun-Worn Chest
-	--TODO: [280886] = "Star-Touched Chest",	-- Star-Touched Chest
 	[280951] = "艾什凡战利品",	-- Ashvane Spoils
 	--TODO: [280957] = "Zukashi's Satchel",	-- Zukashi's Satchel
 	[281092] = "巫医的珍藏",	-- Witch Doctor's Hoard
@@ -2644,14 +2407,12 @@ for key, value in pairs({
 	[281718] = "求助",	-- HELP WANTED
 	--TODO: [281898] = "Dazar's Forgotten Chest",	-- Dazar's Forgotten Chest
 	[282153] = "沉没的保险箱",	-- Sunken Strongbox
-	[282448] = "通缉布告",	-- Wanted Poster
 	[282457] = "棘卫图腾",	-- Brambleguard Totem
 	[282478] = "空箱子",	-- Empty Crate
 	[282498] = "沙漠之笛",	-- Desert Flute
 	--TODO: [282666] = "Urn of Agussu",	-- Urn of Agussu
 	[284426] = "埋藏的采矿机",	-- Buried Mining Machine
 	[284448] = "隐蔽的学者宝箱",	-- Hidden Scholar's Chest
-	[284454] = "大白鲨的财宝",	-- Da White Shark's Bounty
 	--TODO: [284455] = "The Exile's Lament",	-- The Exile's Lament
 	[286016] = "船只日志",	-- Ship's Log
 	[287081] = "上古石板",	-- Ancient Tablet
@@ -2671,11 +2432,9 @@ for key, value in pairs({
 	[287440] = "通缉：塔兹拉卡",	-- Wanted: Taz'raka
 	[287441] = "通缉：沙漠斥候维萨里克",	-- Wanted: Sandscout Vesarik
 	[287442] = "通缉：眼镜蛇巡游者",	-- Wanted: Cobra Excursion Participants
-	[287531] = "小宝箱",	-- Small Treasure Chest
 	[287958] = "布告牌",	-- Bulletin Board
 	[288157] = "通缉：雅塞尔古恩",	-- WANTED: Yarsel'ghun
 	[288167] = "玛丽的包裹",	-- Marie's Package
-	[288214] = "通缉布告",	-- Wanted Poster
 	[288596] = "秘密宝箱",	-- Cache of Secrets
 	[288622] = "通缉布告",	-- Wanted Poster
 	[288641] = "通缉：狮鹫窃贼",	-- WANTED: Gryphon 'Nappers
@@ -2693,35 +2452,9 @@ for key, value in pairs({
 	[290765] = "一大堆金币",	-- Large Pile of Gold
 	[290993] = "铁潮战利品",	-- Irontide Loot
 	[291143] = "雷娜的扳手",	-- Ranah's Wrench
-	[291201] = "小宝箱",	-- Small Treasure Chest
-	[291204] = "小宝箱",	-- Small Treasure Chest
-	[291211] = "小宝箱",	-- Small Treasure Chest
-	[291213] = "小宝箱",	-- Small Treasure Chest
-	[291217] = "小宝箱",	-- Small Treasure Chest
-	[291222] = "小宝箱",	-- Small Treasure Chest
-	[291223] = "小宝箱",	-- Small Treasure Chest
-	[291224] = "小宝箱",	-- Small Treasure Chest
-	[291225] = "小宝箱",	-- Small Treasure Chest
-	[291226] = "小宝箱",	-- Small Treasure Chest
-	[291227] = "小宝箱",	-- Small Treasure Chest
-	[291228] = "小宝箱",	-- Small Treasure Chest
-	[291229] = "小宝箱",	-- Small Treasure Chest
-	[291230] = "小宝箱",	-- Small Treasure Chest
 	[291233] = "巨蜥之尾",	-- Saurolisk Tail
 	[291238] = "邦桑迪之泪",	-- Bwonsamdi's Tears
 	[291241] = "多瘤之根",	-- Gnarl Root
-	[291244] = "小宝箱",	-- Small Treasure Chest
-	[291246] = "小宝箱",	-- Small Treasure Chest
-	[291254] = "小宝箱",	-- Small Treasure Chest
-	[291255] = "小宝箱",	-- Small Treasure Chest
-	[291257] = "小宝箱",	-- Small Treasure Chest
-	[291258] = "小宝箱",	-- Small Treasure Chest
-	[291259] = "小宝箱",	-- Small Treasure Chest
-	[291263] = "小宝箱",	-- Small Treasure Chest
-	[291264] = "小宝箱",	-- Small Treasure Chest
-	[291265] = "小宝箱",	-- Small Treasure Chest
-	[291266] = "小宝箱",	-- Small Treasure Chest
-	[291267] = "小宝箱",	-- Small Treasure Chest
 	[291291] = "通缉：偷猎者",	-- Wanted: Poacher
 	[292523] = "通缉布告",	-- Wanted Poster
 	[292673] = "受潮的卷轴",	-- A Damp Scroll
@@ -2732,6 +2465,7 @@ for key, value in pairs({
 	[292686] = "不祥祭坛",	-- Ominous Altar
 	[292812] = "蓝宝石阿玛莱纳",	-- Sapphire Amaraina
 	[292823] = "卡格瓦之怒",	-- Krag'wa's Ire
+	[292825] = "石花",	-- Stonebloom
 	[293349] = "被丢弃的午餐盒",	-- Discarded Lunchbox
 	[293350] = "雕纹木箱",	-- Carved Wooden Chest
 	[293568] = "通缉布告",	-- Wanted Poster
@@ -2776,7 +2510,6 @@ for key, value in pairs({
 	[294115] = "飞灰火把",	-- Ashed Torch
 	[294173] = "风险投资公司补给箱",	-- Venture Co. Supply Chest
 	[294174] = "被遗忘的宝箱",	-- Forgotten Chest
-	[294311] = "小宝箱",	-- Small Treasure Chest
 	[294312] = "格里米的好友列表",	-- Grimmy's List of Friends
 	[294314] = "格里米的敌人列表",	-- Grimmy's List of Enemies
 	[294315] = "格里米钟爱的配方",	-- Grimmy's Favorite Recipe
@@ -2817,7 +2550,6 @@ for key, value in pairs({
 	[297942] = "灰烬骑士团酒壶",	-- Order Of Embers Flask
 	[298778] = "通缉布告",	-- Wanted Poster
 	[298849] = "通缉布告",	-- Wanted Poster
-	[298858] = "通缉布告",	-- Wanted Poster
 	[298920] = "失窃的棘语者宝箱",	-- Stolen Thornspeaker Cache
 	[298921] = "上古纳兹曼尼石板",	-- Ancient Nazmani Tablet
 	[298963] = "风蚀的纳兹曼尼石板",	-- Weathered Nazmani Tablet
@@ -2894,20 +2626,25 @@ for key, value in pairs({
 	[326588] = "艾泽里特武器箱",	-- Azerite Weapons Cache
 	[327170] = "武器架",	-- Weapon Rack
 	[327230] = "蜜胶块",	-- Jelly Deposit
-	--TODO: [327407] = "Precious Ogre Stash",	-- Precious Ogre Stash
+	[327407] = "珍贵的食人魔宝物",	-- Precious Ogre Stash
 	[327548] = "能量背包图纸",	-- Powerpack Blueprints
 	[327585] = "悬赏榜",	-- Bounty Board
 	[327591] = "保存完好的日志",	-- Preserved Journal
 	[327592] = "魔力之锁",	-- Enchanted Lock
 	[327596] = "毁坏的深渊法器",	-- Broken Abyssal Focus
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
+	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
-	--TODO: [329641] = "Wanted: Junkbrat and Roadtrogg",	-- Wanted: Junkbrat and Roadtrogg
+	[329641] = "悬赏：狂小鼠和穴霸",	-- Wanted: Junkbrat and Roadtrogg
 	--TODO: [329783] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
 	--TODO: [329805] = "Strange Crystal",	-- Strange Crystal
-	--TODO: [329918] = "Quilboar Treasure",	-- Quilboar Treasure
-	--TODO: [329919] = "Stolen Supplies",	-- Stolen Supplies
-	--TODO: [330627] = "Danger Sign",	-- Danger Sign
+	[329918] = "野猪人的宝藏",	-- Quilboar Treasures
+	[329919] = "失窃的补给品",	-- Stolen Supplies
+	--TODO: [330168] = "Contained Alemental",	-- Contained Alemental
+	--TODO: [330169] = "Direbrew Cog",	-- Direbrew Cog
+	--TODO: [330170] = "Hozen Totem",	-- Hozen Totem
+	--TODO: [330183] = "Irontide Lockbox",	-- Irontide Lockbox
+	[330627] = "危险标志",	-- Danger Sign
 	--TODO: [332220] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
 	[332568] = "水晶猫咪雕像",	-- Crystalline Cat Figurine
 	[332569] = "水晶猫咪雕像",	-- Crystalline Cat Figurine
@@ -2926,7 +2663,7 @@ for key, value in pairs({
 	[339283] = "被遗忘的贵族宝箱",	-- Forgotten Noble's Chest
 	[339601] = "万世卷轴",	-- Scroll of Aeons
 	[339641] = "净化饮剂",	-- Purifying Draught
-	--TODO: [339770] = "Abandoned Treasure Chest",	-- Abandoned Treasure Chest
+	[339770] = "被丢弃的宝箱",	-- Abandoned Treasure Chest
 	[341424] = "遗忘的纪念品",	-- Forgotten Mementos
 	--TODO: [343611] = "Voidtouched Egg",	-- Voidtouched Egg
 	[344588] = "执事者的惊人炖煮",	-- Stewart's Stewpendous Stew
@@ -3011,6 +2748,7 @@ for key, value in pairs({
 	[353683] = "月光之荚",	-- Lunarlight Pod
 	[353684] = "月光之荚",	-- Lunarlight Pod
 	[353685] = "月光之荚",	-- Lunarlight Pod
+	[353686] = "月光之荚",	-- Lunarlight Pod
 	[353687] = "破损之钟",	-- Broken Bell
 	[353688] = "破损之钟",	-- Broken Bell
 	[353691] = "天空之钟",	-- Skyward Bell
@@ -3068,6 +2806,7 @@ for key, value in pairs({
 	[354650] = "梦歌之心",	-- Dreamsong Heart
 	[354651] = "魔法捕梦网",	-- Enchanted Dreamcatcher
 	[354652] = "妖精宝藏",	-- Faerie Trove
+	[354662] = "隐蔽的妖精宝箱",	-- Elusive Faerie Cache
 	[354852] = "出芽增生",	-- Sprouting Growth
 	[354853] = "出芽增生",	-- Sprouting Growth
 	[354856] = "软泥覆盖的箱子",	-- Slime-Coated Crate
@@ -3090,7 +2829,7 @@ for key, value in pairs({
 	[355947] = "格拉萨恩的宝箱",	-- Glutharn's Stash
 	[356555] = "欧律迪亚的项链",	-- Eurydea's Necklace
 	--TODO: [356693] = "Baroness Vashj's Extravagant Tribute",	-- Baroness Vashj's Extravagant Tribute
-	--TODO: [356697] = "Alexandros Mograine's Extravagant Tribute",	-- Alexandros Mograine's Extravagant Tribute
+	[356697] = "亚历山德罗斯·莫格莱尼的奢华礼品",	-- Alexandros Mograine's Extravagant Tribute
 	--TODO: [356700] = "Grandmaster Vole's Extravagant Tribute",	-- Grandmaster Vole's Extravagant Tribute
 	--TODO: [356705] = "Plague Deviser Marileth's Extravagant Tribute",	-- Plague Deviser Marileth's Extravagant Tribute
 	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
@@ -3098,13 +2837,13 @@ for key, value in pairs({
 	[356716] = "宗主艾莉奥瑟的奢华供品",	-- Droman Aliothe's Extravagant Tribute
 	--TODO: [356720] = "Choofa's Extravagant Tribute",	-- Choofa's Extravagant Tribute
 	[356725] = "文官阿得赖斯提斯的奢华供品",	-- Polemarch Adrestes' Extravagant Tribute
-	--TODO: [356728] = "Mikanikos' Extravagant Tribute",	-- Mikanikos' Extravagant Tribute
+	[356728] = "米卡尼科斯的奢华礼品",	-- Mikanikos' Extravagant Tribute
 	[356733] = "克雷雅和裴拉戈斯的奢华供品",	-- Kleia and Pelagos' Extravagant Tribute
 	[356737] = "西卡的奢华供品",	-- Sika's Extravagant Tribute
 	--TODO: [356741] = "The Countess' Extravagant Tribute",	-- The Countess' Extravagant Tribute
 	--TODO: [356744] = "Rendle and Cudgelface's Extravagant Tribute",	-- Rendle and Cudgelface's Extravagant Tribute
 	[356748] = "石首的奢华供品",	-- Stonehead's Extravagant Tribute
-	--TODO: [356752] = "Cryptkeeper Kassir's Extravagant Tribute",	-- Cryptkeeper Kassir's Extravagant Tribute
+	[356752] = "地穴看守者卡希尔的奢华礼品",	-- Cryptkeeper Kassir's Extravagant Tribute
 	[356757] = "贪婪之欲",	-- Greed's Desire
 	[356818] = "纯洁赎罪",	-- Penitence of Purity
 	[356820] = "大型月光之荚",	-- Large Lunarlight Pod
@@ -3128,19 +2867,99 @@ for key, value in pairs({
 	[357697] = "工头的宝藏",	-- Taskmaster's Trove
 	[357726] = "断裂之矛",	-- Broken Spear
 	[357758] = "魔药桶",	-- Plague Barrel
+	[357771] = "埋藏的宝箱",	-- Burried Cache
+	[357937] = "埋藏的宝箱",	-- Burried Cache
 	[358298] = "禁忌密室保险箱",	-- Forbidden Chamber Lockbox
 	[358315] = "骸骨手碎片",	-- Skeletal Hand Fragments
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
 	[358319] = "巫师的笔记",	-- Sorceror's Note
 	[358382] = "通缉：螫肢",	-- Wanted: Chelicera
+	[358531] = "巨大的史诗财宝箱",	-- Giant Cache of Epic Treasure
 	[358533] = "被遗忘的补给品",	-- Forgotten Supplies
+	[358855] = "损坏的安全降落包",	-- Damaged Safe Fall Pack
+	[360054] = "黏黏猫",	-- Sticky Cat
 	[362489] = "极乐敕令",	-- Elysian Decree
-	[363825] = "白银保险箱",	-- Silver Strongbox
+	[364483] = "空空的睡帽酒酒桶",	-- Empty Nightcap Cask
 	[364899] = "晶体冥殇",	-- Crystallized Stygia
 	[364926] = "符文熔铸镣铐",	-- Runeforged Shackles
 	[364932] = "灼光矿锭",	-- Blazing Ingot
 	[364937] = "相位虹吸仪",	-- Phasic Siphoner
 	[364987] = "掮灵日志",	-- Broker Journal
+	[368205] = "渊誓之箱",	-- Mawsworn Cache
+	[368206] = "渊誓之箱",	-- Mawsworn Cache
+	[368207] = "渊誓之箱",	-- Mawsworn Cache
+	[368208] = "渊誓之箱",	-- Mawsworn Cache
+	[368213] = "渊誓之箱",	-- Mawsworn Cache
+	[368214] = "渊誓之箱",	-- Mawsworn Cache
+	[368347] = "隙隐宝箱",	-- Rift Hidden Cache
+	[368645] = "隙隐宝箱",	-- Rift Hidden Cache
+	[368646] = "隙隐宝箱",	-- Rift Hidden Cache
+	[368648] = "隙隐宝箱",	-- Rift Hidden Cache
+	[368649] = "隙隐宝箱",	-- Rift Hidden Cache
+	[368650] = "隙隐宝箱",	-- Rift Hidden Cache
+	[368653] = "以太浮蛇囚笼",	-- Etherwyrm Cage
+	[368663] = "憎憎的右手",	-- Lil'Abom's Right Hand
+	[368665] = "憎憎的备用手臂",	-- Lil'Abom's Spare Arm
+	[368666] = "憎憎的头",	-- Lil'Abom's Head
+	[368667] = "憎憎的躯干",	-- Lil'Abom's Torso
+	[368668] = "憎憎的大腿",	-- Lil'Abom's Trunk
+	[368772] = "刻印卷轴",	-- Sigilscored Scroll
+	[368876] = "渊誓之箱",	-- Mawsworn Cache
+	[368935] = "堕罪尖啸者之笼",	-- Sinfall Screecher Cage
+	[368946] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368948] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368949] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368950] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368951] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368952] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[368953] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[369129] = "耐迦尼赫玛特的纯金指环",	-- Nilganihmaht's Gold Band
+	[369132] = "统御封印之箱",	-- Domination Sealed Chest
+	[369133] = "统御封印 #1",	-- Domination Seal #1
+	[369134] = "统御封印之笼",	-- Domination Sealed Cage
+	[369135] = "统御封印 #2",	-- Domination Seal #2
+	[369138] = "统御宝箱封印",	-- Domination Chest Seal
+	[369141] = "渊誓之箱",	-- Mawsworn Cache
+	[369143] = "四分之一枚远古戒指",	-- Quartered Ancient Ring
+	[369144] = "掠心者的钥匙链",	-- The Harrower's Key Ring
+	[369145] = "冥锋补给箱",	-- Helgarde Supply Cache
+	[369148] = "闪光的巢穴材料",	-- Glittering Nest Material
+	[369149] = "被遗忘的羽毛",	-- Forgotten Feather
+	[369172] = "失落的纪念卷轴",	-- Lost Memento
+	[369183] = "移位的巢穴",	-- Dislodged Nest
+	[369185] = "刻希亚圣物箱",	-- Korthian Relic Box
+	[369194] = "装满心能的蛋",	-- Anima Laden Egg
+	[369204] = "散失的圣物",	-- Displaced Relic
+	[369216] = "冥誓宝箱",	-- Helsworn Chest
+	[369224] = "伊瑟基尔的宝石之心",	-- Jeweled Heart of Ezekiel
+	[369225] = "孳生残迹",	-- Infested Vestige
+	[369227] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[369232] = "供品盒",	-- Offering Box
+	[369235] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[369236] = "失窃的心能容器",	-- Stolen Anima Vessel
+	[369245] = "刻希亚圣物箱",	-- Korthian Relic Box
+	[369292] = "圣物宝箱",	-- Relic Cache
+	[369296] = "碎皮贮藏",	-- Shardhide Stash
+	[369297] = "骨堆",	-- Pile of Bones
+	[369304] = "刻希亚圣物箱",	-- Korthian Relic Box
+	[369327] = "入侵的渊菇",	-- Invasive Mawshroom
+	[369329] = "入侵的渊菇",	-- Invasive Mawshroom
+	[369330] = "入侵的渊菇",	-- Invasive Mawshroom
+	[369331] = "入侵的渊菇",	-- Invasive Mawshroom
+	[369332] = "入侵的渊菇",	-- Invasive Mawshroom
+	[369333] = "异常材料之巢",	-- Nest of Unusual Materials
+	[369334] = "异常材料之巢",	-- Nest of Unusual Materials
+	[369335] = "异常材料之巢",	-- Nest of Unusual Materials
+	[369336] = "异常材料之巢",	-- Nest of Unusual Materials
+	[369337] = "异常材料之巢",	-- Nest of Unusual Materials
+	[369339] = "渊誓之箱",	-- Mawsworn Cache
+	[369340] = "刻希亚圣物箱",	-- Korthian Relic Box
+	[369341] = "渊誓之箱",	-- Mawsworn Cache
+	[369432] = "放错的温西尔书典",	-- Misplaced Venthyr Tome
+	[369437] = "隙缚宝箱",	-- Riftbound Cache
+	[369438] = "隙缚宝箱",	-- Riftbound Cache
+	[369439] = "隙缚宝箱",	-- Riftbound Cache
+	[369440] = "隙缚宝箱",	-- Riftbound Cache
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas
@@ -3166,84 +2985,9 @@ for key, value in pairs({
 	--TODO: [9999921] = "Placement",	-- Placement
 	[9999938] = "尤娜的世界旅行",	-- Uuna's World Tour
 	[9999946] = "召唤巴尔",	-- Summon Baa'l
-	[9999972] = "宝箱",	-- Treasure Chest
-	[9999973] = "宝箱",	-- Treasure Chest
-	[9999974] = "宝箱",	-- Treasure Chest
-	[9999978] = "宝箱",	-- Treasure Chest
-	[9999979] = "宝箱",	-- Treasure Chest
-	[9999980] = "宝箱",	-- Treasure Chest
-	[9999985] = "宝箱",	-- Treasure Chest
-	[9999986] = "宝箱",	-- Treasure Chest
-	[9999987] = "宝箱",	-- Treasure Chest
-	[9999988] = "宝箱",	-- Treasure Chest
-	[9999989] = "宝箱",	-- Treasure Chest
-	[9999990] = "宝箱",	-- Treasure Chest
-	[10000000] = "阿玛赛特圣箱",	-- Amathet Reliquary
-	[10000001] = "阿玛赛特圣箱",	-- Amathet Reliquary
-	[11000000] = "阿玛赛特之箱",	-- Amathet Cache
-	[11000001] = "阿玛赛特之箱",	-- Amathet Cache
-	[11000002] = "阿玛赛特之箱",	-- Amathet Cache
-	[11000003] = "阿玛赛特之箱",	-- Amathet Cache
-	[11000004] = "阿玛赛特之箱",	-- Amathet Cache
-	--TODO: [12000000] = "Black Empire Cache",	-- Black Empire Cache
-	--TODO: [12000001] = "Black Empire Cache",	-- Black Empire Cache
-	--TODO: [12000002] = "Black Empire Cache",	-- Black Empire Cache
-	--TODO: [12000003] = "Black Empire Cache",	-- Black Empire Cache
-	--TODO: [12000004] = "Black Empire Cache",	-- Black Empire Cache
-	--TODO: [12000005] = "Black Empire Cache",	-- Black Empire Cache
-	--TODO: [13000000] = "|cFFFFFFFFStep 1:|r Purchase Talisman of True Treasure Tracking",	-- |cFFFFFFFFStep 1:|r Purchase Talisman of True Treasure Tracking
-	--TODO: [13000001] = "|cFFFFFFFFStep 2:|r Equip Talisman",	-- |cFFFFFFFFStep 2:|r Equip Talisman
-	--TODO: [13000002] = "|cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion",	-- |cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion
-	--TODO: [13000003] = "Glittergill Glitter",	-- Glittergill Glitter
-	--TODO: [13000004] = "|cFFFFFFFFStep 1:|r Seashell",	-- |cFFFFFFFFStep 1:|r Seashell
-	--TODO: [13000005] = "|cFFFFFFFFStep 2:|r Cavity-Free Great Shark Tooth",	-- |cFFFFFFFFStep 2:|r Cavity-Free Great Shark Tooth
-	--TODO: [13000006] = "|cFFFFFFFFStep 3:|r Razoreel Larva",	-- |cFFFFFFFFStep 3:|r Razoreel Larva
-	--TODO: [13000007] = "|cFFFFFFFFStep 4:|r Well-Fed Doctor Fish",	-- |cFFFFFFFFStep 4:|r Well-Fed Doctor Fish
-	--TODO: [13000008] = "|cFFFFFFFFStep 5:|r Freshly Molted Crab Skin",	-- |cFFFFFFFFStep 5:|r Freshly Molted Crab Skin
-	--TODO: [13000009] = "|cFFFFFFFFStep 6:|r Glittergill Glitter",	-- |cFFFFFFFFStep 6:|r Glittergill Glitter
-	--TODO: [13000010] = "Symbiotic Plankton",	-- Symbiotic Plankton
-	--TODO: [13000011] = "|cFFFFFFFFStep 1:|r Seashell",	-- |cFFFFFFFFStep 1:|r Seashell
-	--TODO: [13000012] = "|cFFFFFFFFStep 2:|r Giant Giant Toenail Clipping",	-- |cFFFFFFFFStep 2:|r Giant Giant Toenail Clipping
-	--TODO: [13000013] = "|cFFFFFFFFStep 3:|r Makrura Eye",	-- |cFFFFFFFFStep 3:|r Makrura Eye
-	--TODO: [13000014] = "|cFFFFFFFFStep 4:|r Accidentally-Severed Seahorse Fin",	-- |cFFFFFFFFStep 4:|r Accidentally-Severed Seahorse Fin
-	[13000015] = "|cFFFFFFFF第5步:|r 闪耀的海蛇鳞",	-- |cFFFFFFFFStep 5:|r Shiny Sea Serpent Scale
-	--TODO: [13000016] = "|cFFFFFFFFStep 6:|r Symbiotic Plankton",	-- |cFFFFFFFFStep 6:|r Symbiotic Plankton
-	--TODO: [13000017] = "Scintillating Murloc Skin Lotion",	-- Scintillating Murloc Skin Lotion
-	--TODO: [13000018] = "|cFFFFFFFFItem 2:|r Potent Gastropod Gloop",	-- |cFFFFFFFFItem 2:|r Potent Gastropod Gloop
-	--TODO: [13000019] = "|cFFFFFFFFStep 1:|r Seashell",	-- |cFFFFFFFFStep 1:|r Seashell
-	--TODO: [13000020] = "|cFFFFFFFFStep 2:|r Vantus Black Squid Ink",	-- |cFFFFFFFFStep 2:|r Vantus Black Squid Ink
-	--TODO: [13000021] = "|cFFFFFFFFStep 3:|r Super Slick Eel Slime",	-- |cFFFFFFFFStep 3:|r Super Slick Eel Slime
-	--TODO: [13000022] = "|cFFFFFFFFStep 4:|r Rock-Encrusted Whelk Shell",	-- |cFFFFFFFFStep 4:|r Rock-Encrusted Whelk Shell
-	--TODO: [13000023] = "|cFFFFFFFFStep 5:|r Potent Gastropod Gloop",	-- |cFFFFFFFFStep 5:|r Potent Gastropod Gloop
-	--TODO: [13000024] = "|cFFFFFFFFItem 3:|r Captured Cavitation Bubble",	-- |cFFFFFFFFItem 3:|r Captured Cavitation Bubble
-	--TODO: [13000025] = "|cFFFFFFFFStep 1:|r Seashell",	-- |cFFFFFFFFStep 1:|r Seashell
-	--TODO: [13000026] = "|cFFFFFFFFStep 2:|r Very Pretty Coral",	-- |cFFFFFFFFStep 2:|r Very Pretty Coral
-	--TODO: [13000027] = "|cFFFFFFFFStep 3:|r Iridescent Shimmerray Skin",	-- |cFFFFFFFFStep 3:|r Iridescent Shimmerray Skin
-	--TODO: [13000028] = "|cFFFFFFFFStep 4:|r Luxurous Luxscale Scale",	-- |cFFFFFFFFStep 4:|r Luxurous Luxscale Scale
-	--TODO: [13000029] = "|cFFFFFFFFStep 5:|r Captured Cavitation Bubble",	-- |cFFFFFFFFStep 5:|r Captured Cavitation Bubble
-	--TODO: [13000030] = "Purchase Red Crystal Monocle",	-- Purchase Red Crystal Monocle
-	--TODO: [13000031] = "Red Crystal Monocle",	-- Red Crystal Monocle
-	--TODO: [13000032] = "|cFFFFFFFFStep 3:|r Pick a Monocle (Or Don't!)",	-- |cFFFFFFFFStep 3:|r Pick a Monocle (Or Don't!)
-	[1278968750] = "悬挂的锁链",	-- Hanging Chain
-	[1278968751] = "月光之荚",	-- Lunarlight Pod
-	--TODO: [1278968752] = "",	--
-	--TODO: [1278968753] = "",	--
-	--TODO: [1278968754] = "",	--
-	--TODO: [1278968755] = "",	--
-	--TODO: [1278968756] = "",	--
-	--TODO: [1278968757] = "",	--
-	--TODO: [1278968758] = "",	--
-	--TODO: [1278968759] = "",	--
-	--TODO: [1278968760] = "",	--
-	--TODO: [1278968761] = "",	--
-	--TODO: [1278968762] = "",	--
-	--TODO: [1278968763] = "",	--
-	--TODO: [1278968764] = "",	--
 	[1278968766] = "符文",	-- Rune
 	[1278968767] = "符文",	-- Rune
 	[1278968768] = "符文",	-- Rune
-	--TODO: [1278968769] = "",	--
-	--TODO: [1278968770] = "",	--
 })
 do a[key] = value; end
 
@@ -3282,52 +3026,25 @@ do a[key] = value; end
 -- TODO:
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
-	-- {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
-	{1, "|CFFFF0000This was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
-	{1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game (2)"}, -- No Hope -- 2
-	{0, "", ""}, -- 3
-	{0, "", ""}, -- 4
-	{0, "", ""}, -- 5
-	{0, "", ""}, -- 6
-	{0, "", ""}, -- 7
-	{0, "", ""}, -- 8
-	{3, "|CFFFF0000此物品的获得方式已被移除，只能从黑市拍卖行获得。|r", "黑市拍卖行 (9)"}, -- There is Hope -- 9
-	{3, "|CFFFF0000此物品通过TCG卡牌获得，卡牌不再发行，但网络上、黑市拍卖行甚至交易行仍可能出现。国服也可能有积分兑换活动。|r", "TCG卡牌 (10)"}, -- There is Hope -- 10
-	{3, "|CFFFF0000此物品拾取后绑定，但是如果你有召唤首领所需的物品仍可获得。|r", "需要召唤道具 (11)"}, -- There is Hope -- 11
-	{0, "", ""}, -- 12
-	{1, "|CFFFF0000你的追随者等级过高，奖励此物品的任务不再刷新。|r", "绝版物资 (13)"}, -- 13
-	{3, "|CFFFF0000此物品无法购买，除非你在对应赛季的PvP评分或排名达标。|r", "PvP Elite/Gladiator (14)"}, -- 14
-	{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
-	{0, "", ""}, -- 16
-	{6, "|CFF00FFDE只能在春节期间获得。|r", "春节 (17)"}, -- 17
-	{7, "|CFF00FFDE只能在情人节期间获得。|r", "情人节 (18)"}, -- 18
-	{8, "|CFF00FFDE只能在复活节期间获得。|r", "复活节 (19)"}, -- 19
-	{9, "|CFF00FFDE只能在儿童周期间获得。|r", "儿童周 (20)"}, -- 20
-	{10, "|CFF00FFDE只能在仲夏火焰节期间获得。|r", "仲夏火焰节 (21)"}, -- 21
-	{11, "", "小节日 (22)"}, -- 22 Description written on item
-	{12, "|CFF00FFDE只能在海盗日获得。|r", "海盗日 (23)"}, -- 23
-	{13, "|CFF00FFDE只能在美酒节期间获得。|r", "美酒节 (24)"}, -- 24
-	{14, "|CFF00FFDE只能在收获节期间获得。|r", "收获节 (25)"}, -- 25
-	{15, "|CFF00FFDE只能在万圣节期间获得。|r", "万圣节 (26)"}, -- 26
-	{16, "|CFF00FFDE只能在亡灵节期间获得。国服可能无法获得。|r", "亡灵节 (27)"}, -- 27
-	{17, "|CFF00FFDE只能在感恩节期间获得。|r", "感恩节 (28)"}, -- 28
-	{18, "|CFF00FFDE只能在冬幕节期间获得。|r", "冬幕节 (29)"}, -- 29
-	{19, "|CFF00FFDE只能在荆棘谷钓鱼大赛获得。|r", "荆棘谷钓鱼大赛 (30) "}, -- 30
-	{20, "|CFF00FFDE只能在魔兽世界周年庆期间获得。\n未来的周年庆中可能也可获得。|r\n", "魔兽世界周年庆 (31)"}, -- 31
-	{0, "", ""}, -- 32
-	{0, "", ""}, -- 33
-	{0, "", ""}, -- 34
-	{3, "|CFFFF0000在游戏内商城出售。|r", "游戏内商城 (35)"}, -- 35
-	{21, "|CFFFF0000只能在曾经的魔兽世界周年庆期间获得，不再可得。|r\n", "魔兽世界周年庆 [已移除] (36)"}, -- 36
-	{0, "", ""}, -- 37
-	{1, "|CFFFF0000此项只有在熊猫人之谜资料片完成了传说披风任务线的玩家才能获得。|r", "斡耳朵斯－传说披风 (38)"}, --38
-	{0, "", ""}, -- 39
-	{0, "", ""}, -- 40
-	{1, "|CFFFF0000这些外观只有完成了法师塔神器挑战，获得了基础配色的玩家才能获得。|r", "法师塔外观 (41)"}, -- 41
-	{21, "|CFFFF0000这些外观只有在对应资料片的时空漫游周才能获得。|r", "时空漫游 (42)"}, -- 42
-	{0, "", ""}, -- 43
-	{0, "", ""}, -- 44
-	{1, "|CFFFF0000暴雪在7.3.2和8.0中的拾取改动使得一些物品无法掉落。目前影响的包括格鲁尔（TBC）、怒炉将军（黑石深渊）和、特迪斯·扭木（厄运之槌西）的掉落。|r", "拾取机制损坏 (45)"}, -- 45
+	-- Seasonal Filters
+		[1000] = {4, "|CFF00FFDEThis requires the Brewfest Holiday to be Active.|r", "美酒节"},
+		[1001] = {4, "|CFF00FFDEThis requires the Children's Week Holiday to be Active.|r", "儿童周"},
+		[1012] = {4, "|CFF00FFDEThis requires the Darkmoon Faire Holiday to be Active.|r", "暗月马戏团" },
+		[1002] = {4, "|CFF00FFDEThis requires the Day of the Dead Holiday to be Active.|r", "悼念日"},
+		[1003] = {4, "|CFF00FFDEThis requires the Feast of Winter Veil Holiday to be Active.|r", "冬幕节"},
+		[1009] = {4, "|CFF00FFDEThis requires the Fireworks Celebration Holiday to be Active.|r", "烟花庆典" },
+		[1004] = {4, "|CFF00FFDEThis requires the Hallow's End Holiday to be Active.|r", "万圣节"},
+		[1005] = {4, "|CFF00FFDEThis requires the Harvest Festival Holiday to be Active.|r", "收获节"},
+		[1006] = {4, "|CFF00FFDEThis requires the Love is in the Air Holiday to be Active.|r", "情人节"},
+		[1007] = {4, "|CFF00FFDEThis requires the Lunar Festival Holiday to be Active.|r", "春节"},
+		[1014] = {4, "|CFF00FFDEThis requires a Specific Micro Holiday to be Active.|r", "Micro Holiday"},
+		[1008] = {4, "|CFF00FFDEThis requires the Midsummer Fire Festival Holiday to be Active.|r", "仲夏火焰节"},
+		[1010] = {4, "|CFF00FFDEThis requires the Noblegarden Holiday to be Active.|r", "复活节"},
+		[1013] = {4, "|CFF00FFDEThis requires the Pilgrim's Bounty Holiday to be Active.|r", "感恩节"},
+		[1011] = {4, "|CFF00FFDEThis requires the Pirates' Day Holiday to be Active.|r", "海盗日"},
+		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be active.|r", "荆棘谷钓鱼大赛"},
+		[1016] = {4, "|CFF00FFDEThis requires the Timewalking Event to be active.|r", "时间漫游"},
+		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary Event to be active.|r", "魔兽世界周年庆典"},
 })
 do a[key] = value; end
 
