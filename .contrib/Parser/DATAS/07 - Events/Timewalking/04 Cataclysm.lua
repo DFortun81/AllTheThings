@@ -7,6 +7,14 @@ _.WorldEvents =
 {
 	d(24, {  -- Timewalking
 		tier(CATA_TIER, {
+			q(47523, {	-- Disturbance Detected: Firelands
+				["provider"] = { "n", 158276 },	-- Vormu
+				["isWeekly"] = true,
+				["maps"] = {
+					STORMWIND_CITY,
+					ORGRIMMAR,
+				},
+			}),
 			q(40786, {	-- The Smoldering Ember (A)
 				["provider"] = { "i", 133378 },	-- Smoldering Timewarped Ember
 				["isWeekly"] = true,
