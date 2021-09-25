@@ -336,7 +336,6 @@ _.Instances = { tier(MOP_TIER, {
 				["questID"] = 32519,
 				["isRaid"] = true,
 				["coord"] = { 49.9, 56.8, ISLE_OF_GIANTS },
-				["maps"] = { ISLE_OF_GIANTS },
 				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
 				["cr"] = 69161,	-- Oondasta
 				["g"] = {

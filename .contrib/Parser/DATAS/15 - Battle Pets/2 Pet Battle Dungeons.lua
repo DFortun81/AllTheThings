@@ -10,7 +10,6 @@ _.BattlePets =
 			["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 			["isWeekly"] = true,
 			["maps"] = {
-				TIMELESS_ISLE,
 				571,	-- Pet Dungeon
 			},
 			["g"] = {
@@ -70,7 +69,6 @@ _.BattlePets =
 			["isWeekly"] = true,
 			["lvl"] = 120,
 			["maps"] = {
-				BLACKROCK_MOUNTAIN_LEVEL3,
 				1578,	-- Pet Dungeon
 			},
 			["g"] = {
@@ -84,7 +82,6 @@ _.BattlePets =
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
-					["maps"] = { BORALUS },
 				}),
 				q(58456, {	-- Shadowy Showdown (H)
 					["provider"] = { "n", 147641 },	-- Radek Fuselock
@@ -93,7 +90,6 @@ _.BattlePets =
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
-					["maps"] = { DAZARALOR },
 				}),
 				q(58457, {	-- Shadows of Blackrock
 					["provider"] = { "n", 161782 },	-- Burt Macklyn
@@ -138,7 +134,6 @@ _.BattlePets =
 			["isWeekly"] = true,
 			["lvl"] = 110,
 			["maps"] = {
-				WESTFALL,
 				835,	-- Pet Dungeon 1
 				836,	-- Pet Dungeon 2
 			},
@@ -150,7 +145,6 @@ _.BattlePets =
 					["provider"] = { "n", 96479 },	-- Breanni
 					["coord"] = { 58.2, 39.4, LEGION_DALARAN },
 					["lvl"] = 110,
-					["maps"] = { LEGION_DALARAN },
 				}),
 				q(46291, {	-- The Deadmines Strike Back
 					["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
@@ -203,7 +197,6 @@ _.BattlePets =
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
-					["maps"] = { BORALUS },
 				}),
 				q(54276, {	-- Trouble in Gnomeregan (H)
 					["provider"] = { "n", 147641 },	-- Radek Fuselock
@@ -211,7 +204,6 @@ _.BattlePets =
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
-					["maps"] = { DAZARALOR },
 				}),
 				q(54185, {	-- Gnomeregan's New Guardians
 					["provider"] = { "n", 147070 },	-- Micro Zoox
@@ -221,7 +213,6 @@ _.BattlePets =
 						54276,	-- Trouble in Gnomeregan (H)
 					},
 					["lvl"] = 120,
-					["maps"] = { 30 },	-- New Tinkertown [Below]
 					["g"] = {
 						spell(286079),	-- Manapoof Link: Gnomeregan
 						i(122457),	-- Ultimate Battle-Training Stone
@@ -256,7 +247,6 @@ _.BattlePets =
 			["isWeekly"] = true,
 			["lvl"] = 120,
 			["maps"] = {
-				EASTERN_PLAGUELANDS,
 				1505,	-- Pet Dungeon
 			},
 			["g"] = {
@@ -282,14 +272,12 @@ _.BattlePets =
 					["coord"] = { 50.3, 46.9, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
-					["maps"] = { BORALUS },
 				}),
 				q(56490, {	-- Restless Dead (H)
 					["provider"] = { "n", 147641 },	-- Radek Fuselock
 					["coord"] = { 56.3, 30.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
-					["maps"] = { DAZARALOR },
 				}),
 				q(56491, {	-- Tiny Terrors of Stratholme
 					["provider"] = { "n", 150987 },	-- Sean Wilkers
@@ -339,7 +327,6 @@ _.BattlePets =
 			["isWeekly"] = true,
 			["lvl"] = 110,
 			["maps"] = {
-				NORTHERN_BARRENS,
 				825,	-- Pet Dungeon
 			},
 			["g"] = {
@@ -356,7 +343,6 @@ _.BattlePets =
 						{ 58.4, 38.0, LEGION_DALARAN },	-- Serr'ah (H)
 					},
 					["lvl"] = 110,
-					["maps"] = { LEGION_DALARAN },
 				}),
 				q(45423, {	-- Wailing Critters
 					["provider"] = { "n", 116781 },	-- Muyani

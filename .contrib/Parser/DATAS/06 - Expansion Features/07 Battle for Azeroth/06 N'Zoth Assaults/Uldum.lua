@@ -1846,7 +1846,6 @@ _.ExpansionFeatures =
 						}),
 						q(56375, {	-- To Ramkahen
 							["lvl"] = 120,
-							["maps"] = { 1542 },
 							["coord"] = { 47.0, 44.6, 1542 },
 							["provider"] = { "n", 154533 },	-- Magni Bronzebeard
 							["sourceQuest"] = 56209,	-- The Halls of Origination

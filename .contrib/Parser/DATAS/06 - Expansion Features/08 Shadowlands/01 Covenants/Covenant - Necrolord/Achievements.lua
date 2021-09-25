@@ -6,8 +6,6 @@ _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
 		n(-920, {	-- Necrolord
-			["customCollect"] = "SL_COV_NEC",	-- Necrolord
-			["maps"] = { SEAT_OF_THE_PRIMUS },
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(14763),		-- Crypt Couture

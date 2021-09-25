@@ -6,12 +6,6 @@ _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
 		n(-929, {	-- Night Fae
-			["customCollect"] = "SL_COV_NFA",	-- Night Fae
-			["maps"] = {
-				THE_TRUNK,	-- Heart of the Forest
-				THE_ROOTS,	-- Heart of the Forest
-				THE_CANOPY,	-- Heart of the Forest
-			},
 			["g"] = {
 				n(-935, {	-- Sanctum Upgrades
 					n(-915, {	-- Anima Conductor

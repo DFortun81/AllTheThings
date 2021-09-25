@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-
+--[[
 _.GearSets =
 {
 	{	-- Heritage Armor
@@ -9,3 +9,4 @@ _.GearSets =
 		["icon"] = "Interface\\Icons\\achievement_level_110",
 	},
 };
+--]]

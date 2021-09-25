@@ -61,7 +61,6 @@ profession(FIRST_AID, {
 		q(6625, {	-- Alliance Trauma
 			["qg"] = 5150,	-- Nissa Firestone
 			["coord"] = { 54.8, 58.6, IRONFORGE },
-			["maps"] = { IRONFORGE },
 			-- #if BEFORE BFA
 			["requireSkill"] = FIRST_AID,
 			-- #endif
@@ -77,7 +76,6 @@ profession(FIRST_AID, {
 			["qg"] = 3373,	-- Arnok
 			["coord"] = { 34.0, 84.6, ORGRIMMAR },
 			-- #endif
-			["maps"] = { ORGRIMMAR },
 			-- #if BEFORE BFA
 			["requireSkill"] = FIRST_AID,
 			-- #endif
@@ -89,7 +87,6 @@ profession(FIRST_AID, {
 			["qg"] = 12939,	-- Doctor Gustaf VanHowzen
 			["sourceQuest"] = 6625,	-- Alliance Trauma
 			["coord"] = { 67.7, 48.9, DUSTWALLOW_MARSH },
-			["maps"] = { DUSTWALLOW_MARSH },
 			["races"] = ALLIANCE_ONLY,
 			-- #if BEFORE BFA
 			["requireSkill"] = FIRST_AID,
@@ -112,7 +109,6 @@ profession(FIRST_AID, {
 			-- #else
 			["coord"] = { 68.5, 37.8, ARATHI_HIGHLANDS },
 			-- #endif
-			["maps"] = { ARATHI_HIGHLANDS },
 			-- #if BEFORE BFA
 			["requireSkill"] = FIRST_AID,
 			-- #endif

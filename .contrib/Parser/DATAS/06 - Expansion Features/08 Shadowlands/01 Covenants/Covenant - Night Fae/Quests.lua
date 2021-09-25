@@ -6,12 +6,6 @@ _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
 		n(-929, {	-- Night Fae
-			["customCollect"] = "SL_COV_NFA",	-- Night Fae
-			["maps"] = {
-				THE_TRUNK,	-- Heart of the Forest
-				THE_ROOTS,	-- Heart of the Forest
-				THE_CANOPY,	-- Heart of the Forest
-			},
 			["g"] = {
 				n(QUESTS, sharedData({
 					["customCollect"] = { "SL_COV_NFA", },	-- Night Fae
@@ -218,7 +212,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62837 },	-- Hopeful News
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 						["coord"] = { 40.0, 68.4, ORIBOS },
-						["maps"] = { ORIBOS },
 					}),
 					q(62897, {	-- Recovered Souls
 						["sourceQuests"] = { 62894 },	-- Flutterback

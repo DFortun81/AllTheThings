@@ -6,30 +6,6 @@ _.Secrets =
 {
 	n(-806, {	-- Waist of Time
 		["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nYou will need uncommon quality Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, Frostwoven Leggings, as well as Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking later on in the secret. It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland.",
-		["maps"] = {
-			ARATHI_HIGHLANDS,
-			BADLANDS,
-			BLASTED_LANDS,
-			EASTERN_PLAGUELANDS,
-			HILLSBRAD_FOOTHILLS,
-			BLACKROCK_MOUNTAIN,
-			BURNING_STEPPES,
-			ELWYNN_FOREST,
-			DEADWIND_PASS,
-			DUSKWOOD,
-			SWAMP_OF_SORROWS,
-			DESOLACE,
-			FERALAS,
-			SHADOWMOON_VALLEY,
-			BLADES_EDGE_MOUNTAINS,
-			TEROKKAR_FOREST,
-			121,
-			125,
-			TWILIGHT_HIGHLANDS,
-			KUN_LAI_SUMMIT,
-			DRAENOR_SHADOWMOON_VALLEY,
-			SPIRES_OF_ARAK,
-		},
 		["lvl"] = 110,
 		["g"] = {
 			o(9999946, {	-- Summon Baa'l

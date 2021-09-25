@@ -8,7 +8,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			n(18728, {	-- Doom Lord Kazzak
 				["lore"] = "Originally known just as Lord Kazzak, but after he found an artifact to reopen the Dark Portal and travelled through it, he was promoted. He now commands the Legion war effort in Outland in the name of his master, Kil'jaeden. Lord Kazzak's replacement on Azeroth after the re-opening of the Dark Portal is Highlord Kruul, one of Kazzak's minions.",
 				["coord"] = { 63.2, 16.0, HELLFIRE_PENINSULA },
-				["maps"] = { HELLFIRE_PENINSULA },
 				["modelScale"] = 3.8,
 				["isRaid"] = true,
 				["groups"] = {
@@ -27,7 +26,6 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			n(17711, {	-- Doomwalker
 				["lore"] = "Doomwalker is a powerful Fel Reaver sent by Kil'jaeden to assault the gates of the Black Temple in Shadowmoon Valley.",
 				["coord"] = { 71.4, 43.8, SHADOWMOON_VALLEY },
-				["maps"] = { SHADOWMOON_VALLEY },
 				["isRaid"] = true,
 				["groups"] = {
 					i(30724),	-- Barrel-Blade Longrifle

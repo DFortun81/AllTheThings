@@ -7,13 +7,6 @@ _.Holidays = { applyholiday(PIRATES_DAY, {
 	-- #else
 	["holidayID"] = 235481,
 	-- #endif
-	["maps"] = {
-		-- #if AFTER CATA
-		THE_CAPE_OF_STRANGLETHORN,
-		-- #else
-		STRANGLETHORN_VALE,
-		-- #endif
-	},
 	["timeline"] = { "added 2.4.3.8601" },
 	["groups"] = {
 		-- #if BEFORE 6.0.2.18816

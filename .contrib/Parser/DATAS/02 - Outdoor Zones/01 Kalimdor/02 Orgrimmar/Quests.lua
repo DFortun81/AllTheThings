@@ -206,11 +206,6 @@ _.Zones =
 						{ 85.0, 14.0, UNDERCITY },	-- Kaelystia Hatebringer <Mage Trainer>
 						{ 53.0, 19.6, SILVERMOON_CITY },	-- Inethven <Mage Trainer>
 					},
-					["maps"] = {
-						THUNDER_BLUFF,
-						UNDERCITY,
-						SILVERMOON_CITY,
-					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["isBreadcrumb"] = true,
 					["classes"] = { MAGE },
@@ -349,11 +344,6 @@ _.Zones =
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
-					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -432,11 +422,6 @@ _.Zones =
 						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem <Warrior Trainer>
 						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker <Warrior Trainer>
 					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
-					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
@@ -456,11 +441,6 @@ _.Zones =
 						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem <Warrior Trainer>
 						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker <Warrior Trainer>
 					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
-					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
@@ -479,11 +459,6 @@ _.Zones =
 						{ 84.4, 28.0, SILVERMOON_CITY },	-- Zandine <Hunter Trainer>
 						{ 57.4, 89.2, THUNDER_BLUFF },	-- Holt Thunderhorn <Hunter Trainer>
 						{ 49.6, 29.0, UNDERCITY },	-- Apolos <Hunter Trainer>
-					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
 					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { HUNTER },
@@ -626,11 +601,6 @@ _.Zones =
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
-					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
@@ -649,11 +619,6 @@ _.Zones =
 						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
-					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
 					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
@@ -674,11 +639,6 @@ _.Zones =
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
-					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -697,11 +657,6 @@ _.Zones =
 						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
-					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
 					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
@@ -722,11 +677,6 @@ _.Zones =
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
-					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -745,11 +695,6 @@ _.Zones =
 						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
-					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
 					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
@@ -770,11 +715,6 @@ _.Zones =
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
-					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
@@ -793,11 +733,6 @@ _.Zones =
 						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
-					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
 					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
@@ -818,11 +753,6 @@ _.Zones =
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
-					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
@@ -842,11 +772,6 @@ _.Zones =
 						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
-					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
 					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
@@ -871,11 +796,6 @@ _.Zones =
 						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
 					},
-					["maps"] = {
-						THUNDER_BLUFF,
-						UNDERCITY,
-						SILVERMOON_CITY,
-					},
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -893,11 +813,6 @@ _.Zones =
 						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>
 						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
-					},
-					["maps"] = {
-						THUNDER_BLUFF,
-						UNDERCITY,
-						SILVERMOON_CITY,
 					},
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -982,8 +897,7 @@ _.Zones =
 					["coord"] = { 74.6, 43.5, ORGRIMMAR },	-- Feenix Arcshine
 					-- #endif
 					["timeline"] = { "added 4.0.3.13287" },
-					["maps"] = { SHADOWFANG_KEEP },
-					["cost"] = {
+					["cost"] = {	-- TODO: make these objectives
 						{ "i", 60878, 1 },	-- Silverlaine's Enchanted Crystal
 						{ "i", 60871, 5 },	-- Moontouched Wood
 						{ "i", 60875, 5 },	-- Ghostly Essence
@@ -1015,11 +929,6 @@ _.Zones =
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
-					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
@@ -1039,11 +948,6 @@ _.Zones =
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
-					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -1058,10 +962,6 @@ _.Zones =
 					["coords"] = {
 						{ 79.4, 52.0, SILVERMOON_CITY },
 						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles (Undercity)
-					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						UNDERCITY,
 					},
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -1081,11 +981,6 @@ _.Zones =
 						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem
 						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker
 					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
-					},
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1104,11 +999,6 @@ _.Zones =
 						{ 57.2, 89.0, THUNDER_BLUFF },	-- Sark Ragetotem
 						{ 47.2, 15.2, UNDERCITY },	-- Christoph Walker
 					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
-					},
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1126,11 +1016,6 @@ _.Zones =
 						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
-					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
 					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
@@ -1151,11 +1036,6 @@ _.Zones =
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
-					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
@@ -1172,10 +1052,6 @@ _.Zones =
 					["coords"] = {
 						{ 79.4, 52.0, SILVERMOON_CITY },
 						{ 84.6, 73.2, UNDERCITY },	-- Gregory Charles (Undercity)
-					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						UNDERCITY,
 					},
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -1196,11 +1072,6 @@ _.Zones =
 						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
-					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
 					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
@@ -1551,11 +1422,6 @@ _.Zones =
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
-					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
@@ -1574,11 +1440,6 @@ _.Zones =
 						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
-					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
 					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
@@ -1656,11 +1517,6 @@ _.Zones =
 						{ 84.4, 28.0, SILVERMOON_CITY },	-- Zandine <Hunter Trainer>
 						{ 57.4, 89.2, THUNDER_BLUFF },	-- Holt Thunderhorn <Hunter Trainer>
 						{ 49.6, 29.0, UNDERCITY },	-- Apolos <Hunter Trainer>
-					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
 					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { HUNTER },
@@ -1837,11 +1693,6 @@ _.Zones =
 						{ 24.8, 22.4, THUNDER_BLUFF },	-- Malakai Cross <Priest Trainer>
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
-					},
-					["maps"] = {
-						SILVERMOON_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
 					},
 					["timeline"] = { "added 4.0.3.10000" },
 					["classes"] = { PRIEST },
@@ -2182,11 +2033,6 @@ _.Zones =
 						{ 25.2, 14.4, THUNDER_BLUFF },		-- Delano Morisett <Warlock Trainer>
 						{ 86.0, 15.6, UNDERCITY },		-- Kaal Soulreaper <Warlock Trainer>
 						{ 73.2, 45.2, SILVERMOON_CITY },	-- Zanien <Warlock Trainer>
-					},
-					["maps"] = {
-						THUNDER_BLUFF,
-						UNDERCITY,
-						SILVERMOON_CITY,
 					},
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,

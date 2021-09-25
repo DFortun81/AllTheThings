@@ -8,18 +8,6 @@ _.Secrets =
 		["description"] = "This secret is a prerequisite for Baa'l.  It requires having collected |cff0070d0Uuna's Doll|r, which drops from |cff883325The Many-Faced Devourer|r, a rare elite in Antoran Wastes.",
 		["modelScale"] = 1.1,
 		--["modelID"] = 80456,
-		["maps"] = {
-			BLACKROCK_MOUNTAIN,
-			BURNING_STEPPES,
-			SHATTRATH_CITY,
-			115,
-			MOUNT_HYJAL,
-			KUN_LAI_SUMMIT,
-			VALE_OF_ETERNAL_BLOSSOMS,
-			DRAENOR_SHADOWMOON_VALLEY,
-			LEGION_DALARAN,
-			SURAMAR,
-		},
 		["g"] = {
 			q(50098, {	-- Steps 1-4: A New Friend
 				["description"] = "1. Summon Uuna and wait for her to say one of the following lines:\n'|cffffffffMama? Mama! Why is it so dark? It's scary here...|r'\n'|cffffffffCan anybody hear me?|r'\n'|cffffffffC-c-cold...|r'\n",
@@ -114,7 +102,6 @@ _.Secrets =
 						["sourceQuests"] = { 50140 },	-- Step 1: Gate of the Setting Sun
 						["name"] = "Step 2: Nighthold",
 						["coord"] = { 62.3, 83.7, SURAMAR },
-						["maps"] = { SURAMAR },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50142, {	-- Step 3: Krasus Landing, Legion Dalaran

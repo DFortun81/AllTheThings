@@ -2415,8 +2415,6 @@ profession(COOKING, {
 		["description"] = "Takes various meat, fish, and animal byproducts for Work Orders (similar to the Draenor garrison), 5 at a time. He can maintain a maximum of 24 work orders at one time.\n\nEach Work Order takes 4 hours to complete. After a Work Order (or multiple Work Orders) complete, you will receive a recipe, meat/fish, Badly Burnt Food (often), or some combination of these when you collect them from the Test Kitchen Results table.\n\nThe Work Order options that Nomi gives you are based on the materials you have in your inventory (your bags, bank, and reagent bank). You can queue up all work orders with one material, or you can use multiple different materials for any number of Work Orders, as long as the total Work Orders active is maximum 24.",
 		["maps"] = { -- Do not include 626 as that is Rogue Class Hall
 			LEGION_DALARAN,
-			LEGION_THE_UNDERBELLY,
-			629,	-- Aegwynn's Gallery [May separate out later]
 		},
 		["groups"] = {
 			i(124119, {	-- Big Gamy Ribs
@@ -2695,7 +2693,6 @@ profession(COOKING, {
 		q(384, {	-- Beer Basted Boar Ribs
 			["qg"] = 1267,	-- Ragnar Thunderbrew
 			["requireSkill"] = COOKING,
-			["maps"] = { DUN_MOROGH },
 			["races"] = ALLIANCE_ONLY,
 			-- #if AFTER CATA
 			["coord"] = { 53.9, 50.6, DUN_MOROGH },
@@ -2726,7 +2723,6 @@ profession(COOKING, {
 			-- #endif
 			["requireSkill"] = COOKING,
 			["altQuests"] = { 13825 },	-- Clamlette Surprise
-			["maps"] = { TANARIS },
 			["cost"] = {
 				{ "i", 12207, 12 },	-- Giant Egg
 				{ "i", 7974, 10 },	-- Zesty Clam Meat
@@ -2758,14 +2754,12 @@ profession(COOKING, {
 			-- #else
 			["coord"] = { 51.8, 39, SILITHUS },
 			-- #endif
-			["maps"] = { SILITHUS },
 			["lvl"] = 40,
 		}),
 		q(862, {	-- Dig Rat Stew
 			["qg"] = 3443,	-- Grub
 			["requireSkill"] = COOKING,
 			["coord"] = { 55.31, 31.79, THE_BARRENS },
-			["maps"] = { THE_BARRENS },
 			["races"] = HORDE_ONLY,
 			["cost"] = {
 				{ "i", 5051, 8 },	-- Dig Rat
@@ -2786,7 +2780,6 @@ profession(COOKING, {
 			["qg"] = 3702,	-- Alanndarian Nightsong
 			["requireSkill"] = COOKING,
 			["coord"] = { 37.7, 40.7, DARKSHORE },
-			["maps"] = { DARKSHORE },
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { "removed 4.0.3.2000" },
 			["cost"] = {
@@ -2802,7 +2795,6 @@ profession(COOKING, {
 			["qg"] = 5159,	-- Daryl Riknussun
 			["requireSkill"] = COOKING,
 			["coord"] = { 60.1, 36.5, IRONFORGE },
-			["maps"] = { IRONFORGE },
 			["timeline"] = { "removed 4.0.3.2000" },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
@@ -2817,7 +2809,6 @@ profession(COOKING, {
 			-- #else
 			["coord"] = { 51.8, 39, SILITHUS },
 			-- #endif
-			["maps"] = { SILITHUS },
 			["cost"] = {
 				{ "i", 20452, 10 },	-- Smoked Desert Dumplings
 			},
@@ -2826,7 +2817,7 @@ profession(COOKING, {
 		applyclassicphase(TBC_PHASE_ONE, q(11380, {	-- Manalicious
 			["qg"] = 24393,	-- The Rokk <Master of Cooking>
 			["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
-			["maps"] = { SHATTRATH_CITY, NETHERSTORM },
+			["maps"] = { NETHERSTORM },
 			["requireSkill"] = COOKING,
 			["isDaily"] = true,
 			["lvl"] = 70,
@@ -2847,7 +2838,6 @@ profession(COOKING, {
 			["requireSkill"] = COOKING,
 			["coord"] = { 57, 61.2, TELDRASSIL },
 			["timeline"] = { "removed 4.0.3.2000" },
-			["maps"] = { TELDRASSIL },
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
 				{ "i", 5465, 7 },	-- Small Spider Leg
@@ -2861,7 +2851,7 @@ profession(COOKING, {
 		applyclassicphase(TBC_PHASE_ONE, q(11377, {	-- Revenge is Tasty
 			["qg"] = 24393,	-- The Rokk <Master of Cooking>
 			["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
-			["maps"] = { SHATTRATH_CITY, TEROKKAR_FOREST },
+			["maps"] = { TEROKKAR_FOREST },
 			["requireSkill"] = COOKING,
 			["isDaily"] = true,
 			["lvl"] = 70,
@@ -2892,7 +2882,6 @@ profession(COOKING, {
 			-- #else
 			["coord"] = { 37.9, 45.3, SILITHUS },
 			-- #endif
-			["maps"] = { SILITHUS },
 			["cost"] = {
 				{ "i", 20467, 1 },	-- Torn Recipe Page
 			},
@@ -2905,7 +2894,6 @@ profession(COOKING, {
 			["qg"] = 2430,	-- Chef Jessen
 			["coord"] = { 51.8, 58.7, HILLSBRAD_FOOTHILLS },
 			["timeline"] = { "removed 4.0.3.2000" },
-			["maps"] = { HILLSBRAD_FOOTHILLS },
 			["requireSkill"] = COOKING,
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
@@ -2924,7 +2912,6 @@ profession(COOKING, {
 			["qg"] = 2393,	-- Christoph Jeffcoat
 			["coord"] = { 62.30, 19.05, HILLSBRAD_FOOTHILLS },
 			["timeline"] = { "removed 4.0.3.2000" },
-			["maps"] = { HILLSBRAD_FOOTHILLS },
 			["requireSkill"] = COOKING,
 			["races"] = HORDE_ONLY,
 			["cost"] = {
@@ -2942,7 +2929,7 @@ profession(COOKING, {
 		applyclassicphase(TBC_PHASE_ONE, q(11381, {	-- Soup for the Soul
 			["qg"] = 24393,	-- The Rokk <Master of Cooking>
 			["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
-			["maps"] = { SHATTRATH_CITY, NAGRAND },
+			["maps"] = { NAGRAND },
 			["requireSkill"] = COOKING,
 			["isDaily"] = true,
 			["lvl"] = 70,
@@ -2965,7 +2952,7 @@ profession(COOKING, {
 		applyclassicphase(TBC_PHASE_ONE, q(11379, {	-- Super Hot Stew
 			["qg"] = 24393,	-- The Rokk <Master of Cooking>
 			["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
-			["maps"] = { SHATTRATH_CITY, BLADES_EDGE_MOUNTAINS },
+			["maps"] = { BLADES_EDGE_MOUNTAINS },
 			["requireSkill"] = COOKING,
 			["isDaily"] = true,
 			["lvl"] = 70,
@@ -2995,7 +2982,6 @@ profession(COOKING, {
 			["coord"] = { 57.4, 53.6, ORGRIMMAR },
 			-- #endif
 			["requireSkill"] = COOKING,
-			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["lvl"] = 35,

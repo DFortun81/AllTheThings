@@ -39,7 +39,6 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 				["provider"] = { "n", 15732 },	-- Wonderform Operator
 				["coord"] = { 67.7, 71.4, STORMWIND_CITY },	-- (closest pick-up to turn-in
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { STORMWIND_CITY },
 				["u"] = FEAST_OF_WINTER_VEIL,
 			}),
 			q(7025,  {	-- Treats for Greatfather Winter

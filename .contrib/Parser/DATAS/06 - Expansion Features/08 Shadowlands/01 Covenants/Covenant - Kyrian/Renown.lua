@@ -6,11 +6,6 @@ _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
 		n(-939, {	-- Kyrian
-			["customCollect"] = "SL_COV_KYR",	-- Kyrian
-			["maps"] = {
-				ARCHONS_RISE,
-				SANCTUM_OF_BINDING,
-			},
 			["g"] = {
 				n(-902, {	-- Renown
 					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",

@@ -50,7 +50,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 47061,	-- Apocron (WQ)
 				["isRaid"] = true,
 				["coord"] = { 59.2, 62.6, BROKEN_SHORE },
-				["maps"] = { BROKEN_SHORE },
 				["cr"] = 121124,	-- Apocron
 				["g"] = {
 					crit(4, {	-- Apocron
@@ -71,7 +70,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 46947,	-- Brutallus (WQ)
 				["isRaid"] = true,
 				["coord"] = { 59.2, 28.4, BROKEN_SHORE },
-				["maps"] = { BROKEN_SHORE },
 				["cr"] = 117239,	-- Brutallus
 				["g"] = {
 					crit(1, {	-- Brutallus
@@ -93,7 +91,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 43193,	-- Calamitous Intent (WQ)
 				["isRaid"] = true,
 				["coord"] = { 37.7, 83.6, AZSUNA },
-				["maps"] = { AZSUNA },
 				["cr"] = 109331,	-- Calamir
 				["g"] = {
 					crit(9, {	-- Calamir
@@ -253,7 +250,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 46948,	-- Malificus (WQ)
 				["isRaid"] = true,
 				["coord"] = { 59.8, 27.8, BROKEN_SHORE },
-				["maps"] = { BROKEN_SHORE },
 				["cr"] = 117303,	-- Malificus
 				["g"] = {
 					crit(2, {	-- Malificus
@@ -377,7 +373,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 46945,	-- Si'vash (WQ)
 				["isRaid"] = true,
 				["coord"] = { 89.6, 33.0, BROKEN_SHORE },
-				["maps"] = { BROKEN_SHORE },
 				["cr"] = 117470,	-- Si'vash
 				["g"] = {
 					crit(3, {	-- Si'vash

@@ -5217,7 +5217,6 @@ profession(TAILORING, {
 		q(3379, {	-- Shadoweaver
 			["qg"] = 8439,	-- Nilith Lokrav
 			["coord"] = { 41.0, 75.0, SEARING_GORGE },
-			["maps"] = { SEARING_GORGE },
 			["requireSkill"] = TAILORING,
 			["lvl"] = 40,
 			["groups"] = {
@@ -5228,7 +5227,6 @@ profession(TAILORING, {
 			["qg"] = 8439,	-- Nilith Lokrav
 			["sourceQuest"] = 3379,	-- Shadoweaver
 			["coord"] = { 41.0, 75.0, SEARING_GORGE },
-			["maps"] = { SEARING_GORGE },
 			["requireSkill"] = TAILORING,
 			["cost"] = {
 				{ "i", 10467, 1 },	-- Trader's Satchel
@@ -5248,7 +5246,6 @@ profession(TAILORING, {
 			["qg"] = 8439,	-- Nilith Lokrav
 			["sourceQuest"] = 3385,	-- The Undermarket (1/2)
 			["coord"] = { 41.0, 75.0, SEARING_GORGE },
-			["maps"] = { SEARING_GORGE },
 			["requireSkill"] = TAILORING,
 			["lvl"] = 40,
 			["groups"] = {

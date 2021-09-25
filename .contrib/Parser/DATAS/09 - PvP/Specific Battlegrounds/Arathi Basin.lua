@@ -7,7 +7,6 @@ _.PVP =
 	pvp(n(-304, {	-- Battlegrounds
 		m(93, {	-- Arathi Basin
 			["maps"] = {
-				ARATHI_HIGHLANDS,
 				837,	-- Arathi Basin
 				844,	-- Arathi Basin
 				1383,	-- Arathi Basin
@@ -334,7 +333,7 @@ _.PVP =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								},
-							}),	
+							}),
 						}),
 					},
 				}),

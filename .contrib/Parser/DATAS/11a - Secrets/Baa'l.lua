@@ -8,18 +8,6 @@ _.Secrets =
 		["modelScale"] = 1.1,
 		["modelID"] = 80456,
 		["description"] = "***Quest tracking enabled is required to see all the steps.*** \n\n***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***\n\nOther things you may want to have on hand for this secret:\n-Goblin Gliders (if you don't have flying)\n-Invisibility potions\n-Underlight Angler or potions to increase your swim speed\n",
-		["maps"] = {
-			FROSTFIRE_RIDGE,
-			BROKEN_SHORE,
-			ZULDAZAR,
-			NAZMIR,
-			VOLDUN,
-			ZANDALAR,
-			TIRAGARDE_SOUND,
-			DRUSTVAR,
-			STORMSONG_VALLEY,
-			BORALUS,
-		},
 		["g"] = {
 			o(293849, {	-- Step 1: Conspicuous Note
 				["model"] = 1661948,

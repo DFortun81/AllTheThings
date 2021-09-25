@@ -53,7 +53,6 @@ _.Instances = { tier(WOD_TIER, {
 				["questID"] = 37464,
 				["isRaid"] = true,
 				["coord"] = { 37.0, 39.3, SPIRES_OF_ARAK },
-				["maps"] = { SPIRES_OF_ARAK },
 				["crs"] = {
 					87493,	-- Rukhmar (WoWHead)
 					83746,	-- Rukhmar (Crieve)
@@ -92,7 +91,6 @@ _.Instances = { tier(WOD_TIER, {
 				["questID"] = 39380,
 				["isRaid"] = true,
 				["coord"] = { 47.5, 22.1, TANAAN_JUNGLE },
-				["maps"] = { TANAAN_JUNGLE },
 				["cr"] = 94015,	-- Supreme Lord Kazzak
 				["g"] = {
 					ach(10071),	-- The Legion Will NOT Conquer All

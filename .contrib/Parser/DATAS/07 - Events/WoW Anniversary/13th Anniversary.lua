@@ -133,9 +133,6 @@ _.WorldEvents =
 						["isRaid"] = true,
 						["questID"] = 47462,
 						["isDaily"] = true,
-						["maps"] = {
-							AZSHARA,
-						},
 						["coords"] = {
 							{ 48.76, 83.82, AZSHARA },
 						},
@@ -157,7 +154,6 @@ _.WorldEvents =
 						["isRaid"] = true,
 						["questID"] = 47463,
 						["isDaily"] = true,
-						["maps"] = { DUSKWOOD },
 						["coord"] = { 46.54, 39.73, DUSKWOOD },
 						["g"] = {
 							i(150429),	-- Emerald Dragonfang
@@ -181,7 +177,6 @@ _.WorldEvents =
 						["isRaid"] = true,
 						["questID"] = 47461,
 						["isDaily"] = true,
-						["maps"] = { BLASTED_LANDS },
 						["coords"] = {
 							{ 32.42, 48.21, BLASTED_LANDS },
 						},
@@ -202,7 +197,6 @@ _.WorldEvents =
 						["isRaid"] = true,
 						["questID"] = 47463,
 						["isDaily"] = true,
-						["maps"] = { THE_HINTERLANDS },
 						["coord"] = { 62.87, 25.2, THE_HINTERLANDS },
 						["g"] = {
 							i(150429),	-- Emerald Dragonfang
@@ -226,9 +220,6 @@ _.WorldEvents =
 						["isRaid"] = true,
 						["questID"] = 47463,
 						["isDaily"] = true,
-						["maps"] = {
-							ASHENVALE,
-						},
 						["coords"] = {
 							{ 93.8, 40.8, ASHENVALE },
 						},
@@ -254,9 +245,6 @@ _.WorldEvents =
 						["isRaid"] = true,
 						["questID"] = 47463,
 						["isDaily"] = true,
-						["maps"] = {
-							FERALAS,
-						},
 						["coords"] = {
 							{ 50.93, 11.91, FERALAS },
 						},
