@@ -895,6 +895,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 						end
 					end]],
 					-- #endif
+					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(12306, {	-- Brew of the Month Club (H)
@@ -911,6 +912,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 						end
 					end]],
 					-- #endif
+					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(11117, {	-- Catch the Wild Wolpertinger! (A) [Non-EU Only!]
