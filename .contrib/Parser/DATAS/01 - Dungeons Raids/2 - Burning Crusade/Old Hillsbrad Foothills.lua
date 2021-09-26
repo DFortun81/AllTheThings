@@ -40,11 +40,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { TANARIS },
 					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["races"] = { HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME },
-					["cost"] = {
-						{ "i", 38329, 1 },	-- Don Carlos' Hat
-					},
 					["lvl"] = lvlsquish(66, 15, 66),
 					["groups"] = {
+						objective(1, {	-- 0/1 Don Carlos' Hat
+							["provider"] = { "i", 38329 },	-- Don Carlos' Hat
+						}),
 						i(38276),	-- Haliscan Brimmed Hat
 					},
 				}),
@@ -58,11 +58,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { TANARIS },
 					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["races"] = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME }, ALL_RACES),
-					["cost"] = {
-						{ "i", 38329, 1 },	-- Don Carlos' Hat
-					},
 					["lvl"] = lvlsquish(66, 15, 66),
 					["groups"] = {
+						objective(1, {	-- 0/1 Don Carlos' Hat
+							["provider"] = { "i", 38329 },	-- Don Carlos' Hat
+						}),
 						i(38276),	-- Haliscan Brimmed Hat
 					},
 				}),
@@ -80,18 +80,22 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18723,	-- Erozion
 					["sourceQuest"] = 10282,	-- Old Hillsbrad
 					["timeline"] = { "removed 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 25853, 1 },	-- Pack of Incendiary Bombs
-					},
 					["lvl"] = lvlsquish(66, 15, 66),
+					["groups"] = {
+						objective(1, {	-- Internment Lodges Set Ablaze
+							["provider"] = { "i", 25853 },	-- Pack of Incendiary Bombs
+						}),
+					},
 				}),
 				q(29598, {	-- Taretha's Diversion
 					["qg"] = 18723,	-- Erozion
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 25853, 1 },	-- Pack of Incendiary Bombs
-					},
 					["lvl"] = lvlsquish(64, 15, 64),
+					["groups"] = {
+						objective(1, {	-- Internment Lodges Set Ablaze
+							["provider"] = { "i", 25853 },	-- Pack of Incendiary Bombs
+						}),
+					},
 				}),
 				q(10285, {	-- Return to Andormu
 					["qg"] = 18723,	-- Erozion

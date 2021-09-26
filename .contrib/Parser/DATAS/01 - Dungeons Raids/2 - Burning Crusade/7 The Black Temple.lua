@@ -27,16 +27,26 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 				faction(1012),	-- Ashtongue Deathsworn
 			}),
 			n(QUESTS, {
-				q(10957, {	-- Redemption of the Ashtongue (UNTESTED, NEEDS CONFIRMATION)
+				q(10957, {	-- Redemption of the Ashtongue
 					["qg"] = 23158,	-- Seer Kanai
 					["sourceQuest"] = 10958,	-- Seek Out the Ashtongue
 					["coord"] = { 62.0, 50.2, THE_BLACK_TEMPLE },
+					["lvl"] = lvlsquish(70, 30, 70),
+					["groups"] = {
+						objective(1, {	-- Shade of Akama slain
+							["provider"] = { "n", 22841 },	-- Shade of Akama
+						}),
+					},
 				}),
-				q(10959, {	-- The Fall of the Betrayer (UNTESTED, NEEDS CONFIRMATION)
+				q(10959, {	-- The Fall of the Betrayer
 					["qg"] = 23158,	-- Seer Kanai
 					["sourceQuest"] = 10957,	-- Redemption of the Ashtongue
 					["coord"] = { 62.0, 50.2, THE_BLACK_TEMPLE },
+					["lvl"] = lvlsquish(70, 30, 70),
 					["groups"] = {
+						objective(1, {	-- Illidan Stormrage slain
+							["provider"] = { "n", 22917 },	-- Illidan Stormrage <The Betrayer>
+						}),
 						i(32757),	-- Blessed Medallion of Karabor
 					},
 				}),

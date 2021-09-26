@@ -20,6 +20,12 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(65, 15, 65),
 					["groups"] = {
+						objective(1, {	-- Darkweaver Syth slain
+							["provider"] = { "n", 18472 },	-- Darkweaver Syth
+						}),
+						objective(2, {	-- Free Lakka
+							["provider"] = { "n", 18956 },	-- Lakka
+						}),
 						i(29336),	-- Mark of the Ravenguard
 						i(29334),	-- Sethekk Oracle's Focus
 						i(29335),	-- Talon Lord's Collar
@@ -32,6 +38,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 4.3.0.14942" },
 					["lvl"] = lvlsquish(65, 15, 65),
 					["groups"] = {
+						objective(1, {	-- Free Lakka
+							["provider"] = { "n", 18956 },	-- Lakka
+						}),
 						i(29336),	-- Mark of the Ravenguard
 						i(29334),	-- Sethekk Oracle's Focus
 						i(29335),	-- Talon Lord's Collar
@@ -62,10 +71,12 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54847,	-- Dealer Vijaad
 					["description"] = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
 					["timeline"] = { "added 4.3.0.14942" },
-					["cost"] = {
-						{ "i", 72480, 3 },	-- Cobalt Eye
-					},
 					["lvl"] = lvlsquish(65, 15, 65),
+					["groups"] = {
+						objective(1, {	-- 0/3 Cobalt Eye
+							["provider"] = { "i", 72480 },	-- Cobalt Eye
+						}),
+					},
 				}),
 				q(10098, {	-- Terokk's Legacy
 					["qg"] = 18933,	-- Isfar
@@ -75,14 +86,18 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { TEROKKAR_FOREST },
 					["cost"] = {
 						{ "i", 32888, 1 },	-- The Relics of Terokk
-						{ "i", 27634, 1 },	-- The Saga of Terokk
-						{ "i", 27633, 1 },	-- Terokk's Mask
-						{ "i", 27632, 1 },	-- Terokk's Quill
 					},
 					["groups"] = {
-						i(27634, {	-- The Saga of Terokk
+						objective(1, {	-- 0/1 The Saga of Terokk
+							["provider"] = { "i", 27634 },	-- The Saga of Terokk
 							["description"] = "Found on the floor in the center of the room before Talon King Ikiss.",
 							["timeline"] = { "removed 4.3.0.14942" },
+						}),
+						objective(2, {	-- 0/1 Terokk's Mask
+							["provider"] = { "i", 27633 },	-- Terokk's Mask
+						}),
+						objective(3, {	-- 0/1 Terokk's Quill
+							["provider"] = { "i", 27632 },	-- Terokk's Quill
 						}),
 						-- #if BEFORE 4.3.0
 						i(29330),	-- The Saga of Terokk
@@ -94,12 +109,14 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29606, {	-- Terokk's Legacy
 					["qg"] = 54840,	-- Isfar
 					["timeline"] = { "added 4.3.0.14942" },
-					["cost"] = {
-						{ "i", 27633, 1 },	-- Terokk's Mask
-						{ "i", 27632, 1 },	-- Terokk's Quill
-					},
 					["lvl"] = lvlsquish(65, 15, 65),
 					["groups"] = {
+						objective(1, {	-- 0/1 Terokk's Mask
+							["provider"] = { "i", 27633 },	-- Terokk's Mask
+						}),
+						objective(2, {	-- 0/1 Terokk's Quill
+							["provider"] = { "i", 27632 },	-- Terokk's Quill
+						}),
 						i(29330),	-- The Saga of Terokk
 						i(29332),	-- Terokk's Mask
 						i(29329),	-- Terokk's Quill
@@ -114,6 +131,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["classes"] = { DRUID },
 					["lvl"] = lvlsquish(70, 30, 70),
 					["groups"] = {
+						objective(1, {	-- 0/1 Anzu slain
+							["provider"] = { "i", 32449 },	-- Essence-Infused Moonstone
+							["cr"] = 23035,	-- Anzu
+						}),
 						i(32462, {	-- Morthis' Materials
 							i(32454),	-- Arthorn's Research
 							i(32449),	-- Essence-Infused Moonstone

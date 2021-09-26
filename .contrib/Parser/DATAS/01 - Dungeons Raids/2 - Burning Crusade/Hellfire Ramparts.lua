@@ -26,38 +26,46 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29529, {	-- Demons in the Citadel [Alliance]
 					["qg"] = 54603,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 23886, 1 },	-- Omor's Hoof
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(57, 10, 57),
+					["groups"] = {
+						objective(1, {	-- 0/1 Omor's Hoof
+							["provider"] = { "i", 23886 },	-- Omor's Hoof
+						}),
+					},
 				}),
 				q(29530, {	-- Demons in the Citadel [Horde]
 					["qg"] = 54606,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 23886, 1 },	-- Omor's Hoof
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(57, 10, 57),
+					["groups"] = {
+						objective(1, {	-- 0/1 Omor's Hoof
+							["provider"] = { "i", 23886 },	-- Omor's Hoof
+						}),
+					},
 				}),
 				q(29594, {	-- Hitting Them Where It Hurts [Alliance]
 					["qg"] = 54603,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 72160, 3 },	-- Hellfire Supplies
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(57, 10, 57),
+					["groups"] = {
+						objective(1, {	-- 0/3 Hellfire Supplies
+							["provider"] = { "i", 72160 },	-- Hellfire Supplies
+						}),
+					},
 				}),
 				q(29593, {	-- Hitting Them Where It Hurts [Horde]
 					["qg"] = 54606,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 72160, 3 },	-- Hellfire Supplies
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(57, 10, 57),
+					["groups"] = {
+						objective(1, {	-- 0/3 Hellfire Supplies
+							["provider"] = { "i", 72160 },	-- Hellfire Supplies
+						}),
+					},
 				}),
 				q(29543, {	-- Invading the Citadel [Alliance]
 					["qg"] = 19309,	-- Sergeant Altumus
@@ -78,13 +86,15 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29528, {	-- War on the Ramparts [Alliance]
 					["qg"] = 54603,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 23881, 1 },	-- Gargolmar's Hand
-						{ "i", 23901, 1 },	-- Nazan's Head
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(57, 10, 57),
 					["groups"] = {
+						objective(1, {	-- 0/1 Gargolmar's Hand
+							["provider"] = { "i", 23881 },	-- Gargolmar's Hand
+						}),
+						objective(2, {	-- 0/1 Nazan's Head
+							["provider"] = { "i", 23901 },	-- Nazan's Head
+						}),
 						i(25715),	-- Jade Warrior Pauldrons
 						i(25718),	-- Mantle of Magical Might
 						i(25716),	-- Handguards of Precision
@@ -94,13 +104,15 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29527, {	-- War on the Ramparts [Horde]
 					["qg"] = 54606,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 23881, 1 },	-- Gargolmar's Hand
-						{ "i", 23901, 1 },	-- Nazan's Head
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(57, 10, 57),
 					["groups"] = {
+						objective(1, {	-- 0/1 Gargolmar's Hand
+							["provider"] = { "i", 23881 },	-- Gargolmar's Hand
+						}),
+						objective(2, {	-- 0/1 Nazan's Head
+							["provider"] = { "i", 23901 },	-- Nazan's Head
+						}),
 						i(25715),	-- Jade Warrior Pauldrons
 						i(25718),	-- Mantle of Magical Might
 						i(25716),	-- Handguards of Precision
@@ -113,14 +125,18 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 56.7, 66.3, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 23881, 1 },	-- Gargolmar's Hand
-						{ "i", 23886, 1 },	-- Omor's Hoof
-						{ "i", 23901, 1 },	-- Nazan's Head
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
 					["groups"] = {
+						objective(1, {	-- 0/1 Gargolmar's Hand
+							["provider"] = { "i", 23881 },	-- Gargolmar's Hand
+						}),
+						objective(2, {	-- 0/1 Omor's Hoof
+							["provider"] = { "i", 23886 },	-- Omor's Hoof
+						}),
+						objective(3, {	-- 0/1 Nazan's Head
+							["provider"] = { "i", 23901 },	-- Nazan's Head
+						}),
 						i(25715),	-- Jade Warrior Pauldrons
 						i(25718),	-- Mantle of Magical Might
 						i(25716),	-- Handguards of Precision
@@ -133,14 +149,18 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 55.2, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 23881, 1 },	-- Gargolmar's Hand
-						{ "i", 23886, 1 },	-- Omor's Hoof
-						{ "i", 23901, 1 },	-- Nazan's Head
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
 					["groups"] = {
+						objective(1, {	-- 0/1 Gargolmar's Hand
+							["provider"] = { "i", 23881 },	-- Gargolmar's Hand
+						}),
+						objective(2, {	-- 0/1 Omor's Hoof
+							["provider"] = { "i", 23886 },	-- Omor's Hoof
+						}),
+						objective(3, {	-- 0/1 Nazan's Head
+							["provider"] = { "i", 23901 },	-- Nazan's Head
+						}),
 						i(25715),	-- Jade Warrior Pauldrons
 						i(25718),	-- Mantle of Magical Might
 						i(25716),	-- Handguards of Precision

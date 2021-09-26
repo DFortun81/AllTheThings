@@ -16,14 +16,27 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54848,	-- Watcher Jhang
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
+					["groups"] = {
+						objective(1, {	-- Warlord Kalithresh slain
+							["provider"] = { "n", 17798 },	-- Warlord Kalithresh
+						}),
+					},
 				}),
 				q(29614, {	-- Containment is Key
 					["qg"] = 54849,	-- Naturalist Bite
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 72574, 1 },	-- Irradiated Gear
-					},
 					["lvl"] = lvlsquish(67, 20, 67),
+					["groups"] = {
+						objective(1, {	-- 0/3 Bog Overlord slain
+							["provider"] = { "n", 21694 },	-- Bog Overlord
+						}),
+						objective(2, {	-- 0/6 Coilfang Leper slain
+							["provider"] = { "n", 21338 },	-- Coilfang Leper
+						}),
+						objective(3, {	-- 0/1 Irradiated Gear
+							["provider"] = { "i", 72574 },	-- Irradiated Gear
+						}),
+					},
 				}),
 				q(9764, {	-- Orders from Lady Vashj
 					["provider"] = { "i", 24367 },	-- Orders from Lady Vashj
@@ -43,6 +56,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { ZANGARMARSH },
 					["lvl"] = lvlsquish(67, 20, 67),
 					["groups"] = {
+						objective(1, {	-- Warlord Kalithresh slain
+							["provider"] = { "n", 17798 },	-- Warlord Kalithresh
+						}),
 						i(28181),	-- Earthwarden's Coif
 						i(28182),	-- Helm of the Claw
 						i(28183),	-- Hydromancer's Headwrap
@@ -57,15 +73,22 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["maps"] = { TEROKKAR_FOREST },
-					["cost"] = {
-						{ "i", 30828, 1 },	-- Vial of Underworld Loam
-					},
 					["lvl"] = lvlsquish(67, 20, 67),
+					["groups"] = {
+						objective(1, {	-- 0/1 Vial of Underworld Loam
+							["provider"] = { "i", 30828 },	-- Vial of Underworld Loam
+						}),
+					},
 				}),
 				q(29615, {	-- Windcaller Claw and the Water Thief
 					["qg"] = 54851,	-- Windcaller Claw
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
+					["groups"] = {
+						objective(1, {	-- Hydromancer Thespia slain
+							["provider"] = { "n", 17797 },	-- Hydromancer Thespia
+						}),
+					},
 				}),
 			}),
 			n(ZONE_DROPS, {

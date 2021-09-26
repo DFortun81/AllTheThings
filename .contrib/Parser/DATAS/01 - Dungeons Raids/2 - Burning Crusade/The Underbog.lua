@@ -13,24 +13,17 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54678,	-- Naturalist Bite
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(61, 10, 61),
+					["groups"] = {
+						objective(1, {	-- Hungarfen slain
+							["provider"] = { "n", 17770 },	-- Hungarfen
+						}),
+					},
 				}),
 				q(9715, {	-- Bring Me A Shrubbery!
 					["qg"] = 17856,	-- Gzhun'tt
 					["coord"] = { 19.4, 50.0, ZANGARMARSH },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { ZANGARMARSH },
-					["cost"] = {
-						{ "i", 24246, 5 },	-- Sanguine Hibiscus
-					},
-					["lvl"] = lvlsquish(63, 10, 63),
-				}),
-				q(9714, {	-- Bring Me Another Shrubbery!
-					["qg"] = 17856,	-- Gzhun'tt
-					["sourceQuest"] = 9715,	-- Bring Me A Shrubbery!
-					["coord"] = { 19.4, 50.0, ZANGARMARSH },
-					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { ZANGARMARSH },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
 					},
@@ -43,6 +36,18 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
 					},
 					["lvl"] = lvlsquish(61, 10, 61),
+				}),
+				q(9714, {	-- Bring Me Another Shrubbery!
+					["qg"] = 17856,	-- Gzhun'tt
+					["sourceQuest"] = 9715,	-- Bring Me A Shrubbery!
+					["coord"] = { 19.4, 50.0, ZANGARMARSH },
+					["timeline"] = { "removed 4.3.0.14732" },
+					["maps"] = { ZANGARMARSH },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 24246, 5 },	-- Sanguine Hibiscus
+					},
+					["lvl"] = lvlsquish(63, 10, 63),
 				}),
 				q(29692, {	-- Bring Me Another Shrubbery!
 					["qg"] = 54674,	-- T'shu
@@ -67,15 +72,12 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 19.4, 49.8, ZANGARMARSH },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { ZANGARMARSH },
-					["cost"] = {
-						{ "i", 24247, 1 },	-- Underspore Frond
-					},
 					["lvl"] = lvlsquish(63, 10, 63),
 					["groups"] = {
-						{
-							["itemID"] = 24247,	-- Underspore Frond
+						objective(1, {	-- 0/1 Underspore Frond
+							["provider"] = { "i", 24247 },	-- Underspore Frond
 							["coord"] = { 71.5, 86.9, COILFANG_RESERVOIR_UNDERBOG },
-						},
+						}),
 						i(28111),	-- Everlasting Underspore Frond
 					},
 				}),
@@ -83,14 +85,22 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54675,	-- Watcher Jhang
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(61, 10, 61),
+					["groups"] = {
+						objective(1, {	-- Earthbinder Rayge Discovered
+							["provider"] = { "n", 17885 },	-- Earthbinder Rayge
+						}),
+						objective(2, {	-- Windcaller Claw Discovered
+							["provider"] = { "n", 17894 },	-- Windcaller Claw
+						}),
+					},
 				}),
 				q(29567, {	-- Stalk the Stalker
 					["qg"] = 54674,	-- T'shu
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 24248, 1 },	-- Brain of the Black Stalker
-					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Brain of the Black Stalker
+							["provider"] = { "i", 24248 },	-- Brain of the Black Stalker
+						}),
 						i(28109),	-- Essence Infused Mushroom
 						i(28108),	-- Power Infused Mushroom
 					},
@@ -100,11 +110,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 19.6, 49.8, ZANGARMARSH },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { ZANGARMARSH },
-					["cost"] = {
-						{ "i", 24248, 1 },	-- Brain of the Black Stalker
-					},
 					["lvl"] = lvlsquish(63, 10, 63),
 					["groups"] = {
+						objective(1, {	-- 0/1 Brain of the Black Stalker
+							["provider"] = { "i", 24248 },	-- Brain of the Black Stalker
+						}),
 						i(28109),	-- Essence Infused Mushroom
 						i(28108),	-- Power Infused Mushroom
 					},

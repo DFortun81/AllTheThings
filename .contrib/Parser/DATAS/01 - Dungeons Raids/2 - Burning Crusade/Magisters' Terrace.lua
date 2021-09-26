@@ -15,20 +15,22 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				q(29686, {	-- A Radical Notion
 					["qg"] = 55007,	-- Exarch Larethor
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 73084, 1 },	-- Volatile Essence
-					},
 					["lvl"] = lvlsquish(68, 25, 68),
+					["groups"] = {
+						objective(1, {	-- 0/1 Volatile Essence
+							["provider"] = { "i", 73084 },	-- Volatile Essence
+						}),
+					},
 				}),
 				q(11492, {	-- Hard to Kill
 					["qg"] = 24848,	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer
 					["timeline"] = { "removed 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 34157, 1 },	-- Head of Kael'thas
-					},
 					["lvl"] = lvlsquish(70, 25, 70),
 					["groups"] = {
+						objective(1, {	-- 0/1 Head of Kael'thas
+							["provider"] = { "i", 34157 },	-- Head of Kael'thas
+						}),
 						i(35487),	-- Delicate Crimson Spinel
 						i(35488),	-- Brilliant Crimson Spinel
 					},
@@ -37,11 +39,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 24848,	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 34157, 1 },	-- Head of Kael'thas
-					},
 					["lvl"] = lvlsquish(68, 25, 68),
 					["groups"] = {
+						objective(1, {	-- 0/1 Head of Kael'thas
+							["provider"] = { "i", 34157 },	-- Head of Kael'thas
+						}),
 						i(35487),	-- Delicate Crimson Spinel
 						i(35488),	-- Brilliant Crimson Spinel
 					},
@@ -82,6 +84,14 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 55007,	-- Exarch Larethor
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(68, 25, 68),
+					["groups"] = {
+						objective(1, {	-- Selin Fireheart slain
+							["provider"] = { "n", 24723 },	-- Selin Fireheart
+						}),
+						objective(2, {	-- Priestess Delrissa slain
+							["provider"] = { "n", 24560 },	-- Priestess Delrissa
+						}),
+					},
 				}),
 			}),
 			filter(200, {	-- Recipes

@@ -30,11 +30,15 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29574, {	-- Intriguing Specimens
 					["qg"] = 54694,	-- Mamdy the "Ologist"
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 72126, 1 },	-- Pandemonius' Essence
-						{ "i", 72127, 1 },	-- Tavarok's Heart
-					},
 					["lvl"] = lvlsquish(62, 15, 62),
+					["groups"] = {
+						objective(1, {	-- 0/1 Pandemonius' Essence
+							["provider"] = { "i", 72126 },	-- Pandemonius' Essence
+						}),
+						objective(2, {	-- 0/1 Tavarok's Heart
+							["provider"] = { "i", 72127 },	-- Tavarok's Heart
+						}),
+					},
 				}),
 				q(10981, {	-- Nexus-Prince Shaffar's Personal Chamber
 					["qg"] = 22919,	-- Image of Commander Ameer
@@ -58,11 +62,39 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(64, 15, 64),
+					["groups"] = {
+						objective(1, {	-- 0/10 Ethereal Crypt Raider slain
+							["provider"] = { "n", 18311 },	-- Ethereal Crypt Raider
+						}),
+						objective(2, {	-- 0/5 Nexus Stalker slain
+							["provider"] = { "n", 18314 },	-- Nexus Stalker
+						}),
+						objective(3, {	-- 0/5 Ethereal Sorcerer slain
+							["provider"] = { "n", 18313 },	-- Ethereal Sorcerer
+						}),
+						objective(4, {	-- 0/5 Ethereal Spellbinder slain
+							["provider"] = { "n", 18312 },	-- Ethereal Spellbinder
+						}),
+					},
 				}),
 				q(29573, {	-- Safety is Job One
 					["qg"] = 54692,	-- Artificer Morphalius
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(62, 15, 62),
+					["groups"] = {
+						objective(1, {	-- 0/10 Ethereal Crypt Raider slain
+							["provider"] = { "n", 18311 },	-- Ethereal Crypt Raider
+						}),
+						objective(2, {	-- 0/5 Ethereal Sorcerer slain
+							["provider"] = { "n", 18313 },	-- Ethereal Sorcerer
+						}),
+						objective(3, {	-- 0/5 Nexus Stalker slain
+							["provider"] = { "n", 18314 },	-- Nexus Stalker
+						}),
+						objective(4, {	-- 0/5 Ethereal Spellbinder slain
+							["provider"] = { "n", 18312 },	-- Ethereal Spellbinder
+						}),
+					},
 				}),
 				q(10218, bubbleDown({ ["timeline"] = { "removed 4.3.0.14732" } }, {	-- Someone Else's Hard Work Pays Off [Rewards also removed... :(]
 					["qg"] = 19671,	-- Cryo-Engineer Sha'heen
@@ -104,11 +136,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19674,	-- Nexus-Prince Haramad
 					["coord"] = { 39.4, 58.5, TEROKKAR_FOREST },
 					["maps"] = { TEROKKAR_FOREST },
-					["cost"] = {
-						{ "i", 28490, 1 },	-- Shaffar's Wrappings
-					},
 					["lvl"] = lvlsquish(64, 15, 64),
 					["groups"] = {
+						objective(1, {	-- 0/1 Shaffar's Wrappings
+							["provider"] = { "i", 28490 },	-- Shaffar's Wrappings
+						}),
 						i(29342),	-- Consortium Plated Legguards
 						i(29345),	-- Haramad's Leg Wraps
 						i(29343),	-- Haramad's Leggings of the Third Coin
@@ -122,6 +154,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						{ "i", 28490, 1 },	-- Shaffar's Wrappings
 					},
 					["lvl"] = lvlsquish(62, 15, 62),
+					["groups"] = {
+						objective(1, {	-- 0/1 Shaffar's Wrappings
+							["provider"] = { "i", 28490 },	-- Shaffar's Wrappings
+						}),
+					},
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
