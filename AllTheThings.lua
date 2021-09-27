@@ -1744,8 +1744,9 @@ local function GetGroupItemIDWithModID(t, rawItemID, rawModID, rawBonusID)
 	if t and t.itemID then
 		return t.itemID + ((t.modID or 0) / 100) + ((t.bonusID or 0) / 1000000);
 	elseif tonumber(rawItemID) then
-		-- print("modItemID-raw",rawItemID,rawModID,rawBonusID,tonumber(rawItemID) or 0 + ((tonumber(rawModID) or 0) / 100) + ((tonumber(rawBonusID) or 0) / 10000))
-		return tonumber(rawItemID) or 0 + ((tonumber(rawModID) or 0) / 100) + ((tonumber(rawBonusID) or 0) / 1000000);
+		local i, m, b = tonumber(rawItemID) or 0, tonumber(rawModID) or 0, tonumber(rawBonusID) or 0;
+		-- print("modItemID-raw",i,m,b,i + (m / 100) + (b / 1000000))
+		return i + (m / 100) + (b / 1000000);
 	end
 end
 -- Returns the ItemID, ModID, BonusID of the provided ModItemID
