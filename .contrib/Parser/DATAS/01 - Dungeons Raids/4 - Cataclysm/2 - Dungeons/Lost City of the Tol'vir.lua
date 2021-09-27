@@ -273,6 +273,7 @@ _.Instances = { tier(CATA_TIER, {
 							i(133277),	-- Zora's Ward
 							i(133259),	-- Resonant Kris	-- 8.3.7, confirmed dropping here too on 18.08.2020
 							i(133264),	-- Sand Silk Wristband
+							i(133278),	-- Evelyn's Belt	 -- 9.1, confirmed dropping here too on 27.09.2021
 						--	i(133267),	-- Sand Dune Belt (drops from Lockmaw rather than High Prophet Barim in TW, report in #errors on August 11, 2020)
 							i(133276),	-- Leggings of the Path
 							i(133279),	-- Mirage Ring
