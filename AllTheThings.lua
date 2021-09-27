@@ -9316,10 +9316,67 @@ app.ImportRawLink = function(group, rawlink)
 			group.modItemID = nil;
 			-- does this link also have a sourceID?
 			local s = GetSourceID(rawlink);
+			-- print("s",s)
 			if s then group.s = s; end
 			-- if app.DEBUG_PRINT then app.PrintTable(group) end
 		end
 	end
+end
+-- Refines a set of items down to the most-accurate match to the provided modItemID
+-- The set of items will be returned once no further refinements can be made in the order of ItemID, ModID, BonusID
+app.GetBestMatchingItems = function(items, modItemID)
+	if not items or #items == 0 then return; end
+
+	local i, m, b = GetItemIDAndModID(modItemID);
+	-- refine by itemID
+	if not i or i == 0 then return items; end
+	local refined = {};
+	for _,item in ipairs(items) do
+		if item.itemID == i then
+			tinsert(refined, item);
+		end
+	end
+	if #refined == 0 then return items; end
+
+	items = refined;
+	if m == 0 then return items; end
+	-- refine by modID
+	refined = {};
+	for _,item in ipairs(items) do
+		if item.modID == m then
+			tinsert(refined, item);
+		end
+	end
+	if #refined == 0 then return items; end
+
+	items = refined;
+	if b == 0 then return items; end
+	-- refine by bonusID
+	refined = {};
+	for _,item in ipairs(items) do
+		if item.bonusID == b then
+			tinsert(refined, item);
+		end
+	end
+	if #refined == 0 then return items; end
+	return refined;
+end
+-- Returns the depth at which a given Item matches the provided modItemID
+-- 1 = ItemID, 2 = ModID, 3 = BonusID
+app.ItemMatchDepth = function(item, modItemID)
+	if not item or not item.itemID then return; end
+	local i, m, b = GetItemIDAndModID(modItemID);
+	local depth = 0;
+	if item.itemID == i then
+		depth = depth + 1;
+		if item.modID == m then
+			depth = depth + 1;
+			if item.bonusID == b then
+				depth = depth + 1;
+			end
+		end
+	end
+	return depth;
 end
 end)();
 
