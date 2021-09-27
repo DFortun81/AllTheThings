@@ -10456,10 +10456,17 @@ app.TryPopulateQuestRewards = function(questObject)
 				if link then
 					local item = {};
 					app.ImportRawLink(item, link);
+					-- if item.itemID == 137483 then
+					-- 	app.DEBUG_PRINT = item.itemID;
+					-- 	print("item.initial parse")
+					-- 	app.PrintTable(item)
+					-- end
 					-- if app.DEBUG_PRINT then print("Parse Link", link) end
 					if item.itemID then
 						-- if app.DEBUG_PRINT then print(_, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1); end
-						local search, subItems = SearchForLink(link), {};
+						local search = SearchForLink(link);
+						-- search will either match through bonusID, modID, or itemID in that priority
+
 						-- put all the item information into a basic table
 						-- if app.DEBUG_PRINT then app.PrintTable(item) end
 						-- block the group from being collectible as a cost if the option is not enabled
@@ -10467,23 +10474,29 @@ app.TryPopulateQuestRewards = function(questObject)
 							item.collectibleAsCost = false;
 						end
 						if search then
-							-- find the specific item which the link represents
-							local modItemID, count, data = GetGroupItemIDWithModID(nil, itemID, item.modID, item.bonusID), #search;
-							-- if app.DEBUG_PRINT then print("Search for",modItemID,#search) end
-							for i=1,count,1 do
-								data = search[i];
-								-- if app.DEBUG_PRINT then print("cached",data.key,data[data.key]) end
-								-- cache record is the exact item from the WQ reward
-								if GroupMatchesParams(data, "itemID", modItemID, true) then
-									-- create the object which will be in the actual list
-									-- if app.DEBUG_PRINT then print(modItemID," ? found cached") end
-									MergeProperties(item, data, true);
-									NestObjects(item, data.g);	-- no clone since item is cloned later
+							-- if app.DEBUG_PRINT then print("Initial search",#search,link) end
+							-- find the specific item which the link represents (not sure all of this is necessary with improved search)
+							local exactItemID = GetGroupItemIDWithModID(item);
+							local modItemID = GetGroupItemIDWithModID(nil, item.itemID, item.modID);
+							-- sort the search results by how closely they match the item itself
+							local subItems, merged = {};
+							-- merge the 'most accurate' Source ATT item first
+							-- same as the search results for sourceGroup finding...
+							for i,j in ipairs(search) do
+								-- if app.DEBUG_PRINT then print("cached",j.key,j.key and j[j.key],j.modItemID,exactItemID,modItemID) end
+								if GroupMatchesParams(j, "itemID", exactItemID) or GroupMatchesParams(j, "itemID", modItemID) then
+									merged = true;
+									MergeProperties(item, j);
+									NestObjects(item, j.g);	-- no clone since item is cloned later
+									-- if app.DEBUG_PRINT then print("replace merge") app.PrintTable(item) end
+								elseif not merged and GroupMatchesParams(j, "itemID", modItemID, true) then
+									MergeProperties(item, j, true);
+									NestObjects(item, j.g);	-- no clone since item is cloned later
+									-- if app.DEBUG_PRINT then print("merge") app.PrintTable(item) end
 								else
-									tinsert(subItems, data);
+									tinsert(subItems, j);
 								end
 							end
-
 							-- then pull in any other sub-items which were not the item itself
 							NestObjects(item, subItems);	-- no clone since item is cloned later
 						end
@@ -10494,6 +10507,7 @@ app.TryPopulateQuestRewards = function(questObject)
 						item.link = nil;
 						NestObject(questObject, item, true);
 					end
+					-- if app.DEBUG_PRINT then app.DEBUG_PRINT = nil; end
 				end
 			end
 		end
