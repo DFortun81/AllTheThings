@@ -4609,12 +4609,12 @@ fieldConverters = {
 			_cache(group, questGiverID);
 		end
 	end,
-	-- ["altQuests"] = function(group, value)
-	-- 	_cache = rawget(fieldConverters, "questID");
-	-- 	for i,questID in ipairs(value) do
-	-- 		_cache(group, questID);
-	-- 	end
-	-- end,
+	["altQuests"] = function(group, value)
+		_cache = rawget(fieldConverters, "questID");
+		for i,questID in ipairs(value) do
+			_cache(group, questID);
+		end
+	end,
 	["providers"] = function(group, value)
 		for k,v in pairs(value) do
 			if v[2] > 0 then
