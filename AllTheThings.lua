@@ -4492,12 +4492,17 @@ local cacheCreatureID = function(group, value)
 		CacheField(group, "creatureID", value);
 	end
 end;
-local cacheMapID = function(group, mapID)
-	if (currentMaps[mapID] or 0) == 0 then
-		currentMaps[mapID] = 1;
+local cacheMapID = function(group, mapID, skipNest)
+	if skipNest then
 		CacheField(group, "mapID", mapID);
 	else
-		currentMaps[mapID] = currentMaps[mapID] + 1;
+		if (currentMaps[mapID] or 0) == 0 then
+			currentMaps[mapID] = 1;
+			CacheField(group, "mapID", mapID);
+		else
+			print("multi-nested map",mapID,currentMaps[mapID],group.key,group.key and group[group.key])
+			currentMaps[mapID] = currentMaps[mapID] + 1;
+		end
 	end
 end;
 local cacheObjectID = function(group, value)
@@ -4635,13 +4640,13 @@ fieldConverters = {
 	end,
 	["coord"] = function(group, value)
 		if group.key ~= "instanceID"  then
-			if value[3] then cacheMapID(group, value[3]); end
+			if value[3] then cacheMapID(group, value[3], true); end
 		end
 	end,
 	["coords"] = function(group, value)
 		if group.key ~= "instanceID"  then
 			for _,coord in ipairs(value) do
-				if coord[3] then cacheMapID(group, coord[3]); end
+				if coord[3] then cacheMapID(group, coord[3], true); end
 			end
 		end
 	end,
@@ -4686,14 +4691,6 @@ local mapKeyUncachers = {
 			uncacheMap(mapID);
 		end
 	end,
-	["coord"] = function(coord)
-		if coord[3] then uncacheMap(coord[3]); end
-	end,
-	["coords"] = function(coords)
-		for _,coord in ipairs(coords) do
-			if coord[3] then uncacheMap(coord[3]); end
-		end
-	end,
 };
 CacheFields = function(group)
 	-- apparently any 'rawset' on group will break the pairs loop on the group, so we need to copy all the keys first
@@ -4710,9 +4707,9 @@ CacheFields = function(group)
 		if _cache then
 			value = rawget(group, k);
 			_cache(group, value);
-			if rawget(mapKeyUncachers, key) then
+			if rawget(mapKeyUncachers, k) then
 				if not mapKeys then mapKeys = {}; end
-				mapKeys[key] = value;
+				mapKeys[k] = value;
 			end
 		end
 	end
