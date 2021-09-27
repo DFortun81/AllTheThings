@@ -15759,7 +15759,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			end
 			local results = SearchForField("mapID", self.mapID);
 			if results then
-				print(#results,"individual minilist results")
+				print(#results,"individual minilist results",self.mapID)
 				-- Simplify the returned groups
 				local groups, nested = {};
 				local header = app.CreateMap(self.mapID, { g = groups });
