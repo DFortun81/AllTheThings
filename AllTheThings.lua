@@ -3368,9 +3368,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Merge the source group for all matching Sources of the search results
 			local sourceGroup = {};
 			for i,j in ipairs(group.g or group) do
-				if GroupMatchesParams(j, paramA, paramB, false) then
+				if GroupMatchesParams(j, paramA, paramB) then
 					MergeProperties(sourceGroup, j);
-				elseif GroupMatchesParams(j, paramA, paramB) then
+				elseif GroupMatchesParams(j, paramA, paramB, true) then
 					MergeProperties(sourceGroup, j, true);
 				end
 			end
