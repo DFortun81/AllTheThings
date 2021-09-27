@@ -7,7 +7,7 @@ _.WorldEvents =
 {
 	d(24, {  -- Timewalking
 		tier(CATA_TIER, {
-			q(47523, {	-- Disturbance Detected: Firelands
+			q(57637, {	-- Disturbance Detected: Firelands
 				["provider"] = { "n", 158276 },	-- Vormu
 				["isWeekly"] = true,
 				["coords"] = {
