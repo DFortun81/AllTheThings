@@ -3237,26 +3237,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					group = subgroup;
 				end
 			end
-
-			if #group > 0 then
-				-- collect descriptions from all search groups and insert into the info for the search
-				if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" and paramA ~= "currencyID" then
-					local descriptions = {};
-					for i,j in ipairs(group) do
-						if (j.lore or j.description) and j[paramA] and j[paramA] == paramB then
-							-- Only add unique descriptions to the final info
-							if j.lore then descriptions[j.lore] = true; end
-							if j.description then descriptions[j.description] = true; end
-						end
-					end
-					for description,_ in pairs(descriptions) do
-						tinsert(info, 1, { left = description, wrap = true, color = "ff66ccff" });
-					end
-				end
-				insertionSort(group, function(a, b)
-					return not (a.headerID and a.headerID == -1) and b.headerID and b.headerID == -1;
-				end);
-			end
 		end
 	elseif paramA == "achievementID" then
 		local regroup = {};
