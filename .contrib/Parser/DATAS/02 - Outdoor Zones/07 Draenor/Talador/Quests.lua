@@ -1679,9 +1679,34 @@ _.Zones =
 					},
 				}),
 				n(BONUS_OBJECTIVES, {
-					-- TODO: Check SQ also probably cant do after a certain level
-					q(37636, {	-- Assault on Shattrath Harbor
+					-- TODO: Check SQ
+					q(37635, {	-- Assault on Shattrath Harbor (A)
+						["coord"] = { 44.0, 23.0, TALADOR },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(37636, {	-- Assault on Shattrath Harbor (H)
+						["coord"] = { 44.0, 23.0, TALADOR },
 						["races"] = HORDE_ONLY,
+					}),
+					q(36808, {	-- Assault on Shattrath Harbor (A)
+						["coord"] = { 44.0, 23.0, TALADOR },
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(36338, {	-- Assault on Shattrath Harbor (H)
+						["coord"] = { 44.0, 23.0, TALADOR },
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(36809, {	-- Assault on the Heart of Shattrath (A)
+						["coord"] = { 32.0, 36.0, TALADOR },
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(36807, {	-- Assault on the Heart of Shattrath (H)
+						["coord"] = { 32.0, 36.0, TALADOR },
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
 					}),
 					q(34639, {	-- Aruuna's Desolation
 						["coord"] = { 76.2, 48.9, TALADOR },

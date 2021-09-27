@@ -1460,7 +1460,63 @@ _.Zones =
 					["coord"] = { 77.4, 47.3, DRAENOR_NAGRAND },
 				}),
 				n(BONUS_OBJECTIVES, {
-					-- TODO: Check SQ also probably cant do after a certain level
+					-- TODO: Check SQ
+					q(37629, {	-- Assault on Mok'gol Watchpost (A)
+						["coord"] = { 44.0, 36.0, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(37630, {	-- Assault on Mok'gol Watchpost (H)
+						["coord"] = { 44.0, 36.0, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
+					}),
+					q(36818, {	-- Assault on Mok'gol Watchpost (A)
+						["coord"] = { 44.0, 36.0, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(36819, {	-- Assault on Mok'gol Watchpost (H)
+						["coord"] = { 44.0, 36.0, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(37627, {	-- Assault on the Broken Precipice (A)
+						["coord"] = { 39.0, 18.0, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(37628, {	-- Assault on the Broken Precipice (H)
+						["coord"] = { 39.0, 18.0, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
+					}),
+					q(36816, {	-- Assault on the Broken Precipice (A)
+						["coord"] = { 39.0, 18.0, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(36817, {	-- Assault on the Broken Precipice (H)
+						["coord"] = { 39.0, 18.0, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(36820, {	-- Assault on the Gorian Proving Grounds (A)
+						["coord"] = { 57.0, 17.0, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(36821, {	-- Assault on the Gorian Proving Grounds (H)
+						["coord"] = { 57.0, 17.0, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
+					}),
+					q(37523, {	-- Assault on the Gorian Proving Grounds (A)
+						["coord"] = { 57.0, 17.0, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+						["u"] = NEVER_IMPLEMENTED,
+					}),
+					q(37524, {	-- Assault on the Gorian Proving Grounds (H)
+						["coord"] = { 57.0, 17.0, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
+						["u"] = NEVER_IMPLEMENTED,
+					}),
 					q(35379, {	-- Hemet's Happy Hunting Grounds (bonus objective)
 						["coord"] = { 87.7, 46.8, DRAENOR_NAGRAND },
 					}),

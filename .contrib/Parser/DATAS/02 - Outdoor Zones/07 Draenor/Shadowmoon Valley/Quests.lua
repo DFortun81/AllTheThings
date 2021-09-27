@@ -1031,22 +1031,43 @@ _.Zones =
 					--["objectID"] = 233229,	-- Shadow Council Tome of Curses
 				}),
 				n(BONUS_OBJECTIVES, {
-					-- TODO: Check SQ also probably cant do after a certain level
-					i(111418),	-- Mushroom Juice (Used for the Bonus Objective). <-- Dont know about this
-					q(37633, {	-- Assault on Darktide Roost
+					-- TODO: Check SQ
+					i(111418),	-- Mushroom Juice (Used for the Bonus Objective)
+					q(37633, {	-- Assault on Darktide Roost (A)
+						["coord"] = { 60.0, 84.0, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(37631, {	-- Assault on Socrethar's Rise
+					q(37634, {	-- Assault on Darktide Roost (H)
+						["coord"] = { 60.0, 84.0, DRAENOR_SHADOWMOON_VALLEY },
+						["races"] = HORDE_ONLY,
+					}),
+					q(35974, {	-- Assault on Darktide Roost (A)
+						["coord"] = { 60.0, 84.0, DRAENOR_SHADOWMOON_VALLEY },
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(35977, {	-- Assault on Darktide Roost (H)
+						["coord"] = { 60.0, 84.0, DRAENOR_SHADOWMOON_VALLEY },
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(37631, {	-- Assault on Socrethar's Rise (A)
 						["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(36348, {	-- Assault on Socrethar's Rise
-						["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(37632, {	-- Assault on Socrethar's Rise
+					q(37632, {	-- Assault on Socrethar's Rise (H)
 						["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
+					}),
+					q(36348, {	-- Assault on Socrethar's Rise (A)
+						["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(36347, {	-- Assault on Socrethar's Rise (H)
+						["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
 					}),
 					q(34504, {	-- Bloodthorn Cave
 						["coord"] = { 79.7, 34.0, 540 },	-- Bloodthorn Cave
