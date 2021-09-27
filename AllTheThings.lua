@@ -4493,16 +4493,12 @@ local cacheCreatureID = function(group, value)
 	end
 end;
 local cacheMapID = function(group, mapID, skipNest)
-	if skipNest then
+	if (currentMaps[mapID] or 0) == 0 then
+		if not skipNest then currentMaps[mapID] = 1; end
 		CacheField(group, "mapID", mapID);
-	else
-		if (currentMaps[mapID] or 0) == 0 then
-			currentMaps[mapID] = 1;
-			CacheField(group, "mapID", mapID);
-		else
-			print("multi-nested map",mapID,currentMaps[mapID],group.key,group.key and group[group.key])
-			currentMaps[mapID] = currentMaps[mapID] + 1;
-		end
+	elseif not skipNest then
+		print("multi-nested map",mapID,currentMaps[mapID],group.key,group.key and group[group.key])
+		currentMaps[mapID] = currentMaps[mapID] + 1;
 	end
 end;
 local cacheObjectID = function(group, value)
@@ -15776,9 +15772,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					local difficultyID = not GetRelativeField(group, "headerID", -496) and GetRelativeValue(group, "difficultyID");
 
 					if group.key == "instanceID" or group.key == "mapID" or group.key == "classID" then
-						-- only if this group mapID matches the minilist mapID
-						if group.mapID == self.mapID then
-							MergeProperties(header, group);
+						-- only if this group mapID matches the minilist mapID directly or by maps
+						if group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID)) then
+							MergeProperties(header, group, true);
 							if group.g then
 								MergeObjects(groups, group.g);
 							end
