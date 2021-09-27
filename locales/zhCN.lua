@@ -651,6 +651,7 @@ for key,value in pairs({
 	-- Commonly used
 		[0] = ZONE .. BATTLE_PET_SOURCE_1,							-- Zone Drop 地区掉落
 		[-1] = BATTLE_PET_BREED_QUALITY2 .. TRANSMOG_SOURCE_1,		-- Common Boss Drop 普通首领掉落
+		[-2] = "商人",												-- Vendor	-- String in GlobalStrings.lua means slightly different thing in zhCN so translating it manually
 		--TODO: [-5] = "Prospecting",
 		[-7] = WORLD .. RAID_BOSSES,								-- World Bosses 世界首领
 		--TODO: [-11] = "Common Box Drops",							-- Common Box Drops
