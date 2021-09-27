@@ -13,6 +13,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 29667,	-- Culling the Herd
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
+					["groups"] = {
+						objective(1, {	-- Warp Splinter slain
+							["provider"] = { "n", 17977 },	-- Warp Splinter
+						}),
+					},
 				}),
 				q(10257, {	-- Capturing the Keystone
 					["qg"] = 19481,	-- Archmage Vargoth
@@ -20,9 +25,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 58.3, 86.4, NETHERSTORM },
 					["maps"] = { NETHERSTORM },
 					["lvl"] = lvlsquish(67, 25, 67),
-					["g"] = {
-						objective(1, {
-							["provider"] = { "i", 28769, 1 },	-- The Keystone
+					["groups"] = {
+						objective(1, {	-- 0/1 The Keystone
+							["provider"] = { "i", 28769 },	-- The Keystone
 						}),
 					},
 				}),
@@ -30,9 +35,18 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 29660,	-- Saving the Botanica
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
-					["g"] = {
-						objective(1, {
-							["provider"] = { "i", 72706, 1 },	-- Rapidly Evolving Frond
+					["groups"] = {
+						objective(1, {	-- 0/6 Mutate Fleshlasher slain
+							["provider"] = { "n", 19598 },	-- Mutate Fleshlasher
+						}),
+						objective(2, {	-- 0/6 Mutate Fear-Shrieker slain
+							["provider"] = { "n", 19513 },	-- Mutate Fear-Shrieker
+						}),
+						objective(3, {	-- 0/6 Mutate Horror slain
+							["provider"] = { "n", 19865 },	-- Mutate Horror
+						}),
+						objective(4, {	-- 0/1 Rapidly Evolving Frond
+							["provider"] = { "i", 72706 },	-- Rapidly Evolving Frond
 						}),
 					},
 				}),
@@ -40,6 +54,17 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["description"] = "Automatically provided upon starting the instance.",
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
+					["groups"] = {
+						objective(1, {	-- Commander Sarannis slain
+							["provider"] = { "n", 17976 },	-- Commander Sarannis
+						}),
+						objective(2, {	-- High Botanist Freywinn slain
+							["provider"] = { "n", 17975 },	-- High Botanist Freywinn
+						}),
+						objective(3, {	-- Thorngrin the Tender slain
+							["provider"] = { "n", 17978 },	-- Thorngrin the Tender
+						}),
+					},
 				}),
 			}),
 			n(ZONE_DROPS, {

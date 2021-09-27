@@ -378,7 +378,7 @@ namespace ATT
             if (File.Exists(filename))
             {
                 if (index > 0) builder.Append("\n");
-                builder.Append("(function() ").Append(ProcessContent(File.ReadAllText(filename))).Append(" end)();");
+                builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(filename))).Append("\nend)();");
             }
             else
             {

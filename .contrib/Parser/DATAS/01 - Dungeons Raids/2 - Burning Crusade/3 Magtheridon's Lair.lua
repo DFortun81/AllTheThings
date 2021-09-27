@@ -42,6 +42,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 3.0.2" },
 					["maps"] = { SHATTRATH_CITY },
 					["groups"] = {
+						objective(1, {	-- Magtheridon slain
+							["provider"] = { "n", 17257 },	-- Magtheridon
+						}),
 						i(31746),	-- Phoenix-Fire Band
 						i(31704, {	-- The Tempest Key
 							-- #if AFTER WRATH
@@ -65,6 +68,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 3.0.2" },
 					["maps"] = { SHATTRATH_CITY },
 					["groups"] = {
+						objective(1, {	-- Magtheridon slain
+							["provider"] = { "n", 17257 },	-- Magtheridon
+						}),
 						i(31746),	-- Phoenix-Fire Band
 					},
 				}),

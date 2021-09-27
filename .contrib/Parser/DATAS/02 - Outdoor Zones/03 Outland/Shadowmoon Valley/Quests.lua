@@ -951,18 +951,6 @@ _.Zones =
 					["coord"] = { 36.2, 57.0, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyclassicphase(TBC_PHASE_TWO, q(10946, {	-- Ruse of the Ashtongue
-					["qg"] = 21700,	-- Akama
-					["sourceQuest"] = 10944,	-- The Secret Compromised
-					["coord"] = { 58.0, 48.2, SHADOWMOON_VALLEY },
-					["maps"] = { TEMPEST_KEEP_THE_EYE },
-					["groups"] = {
-						objective(1, {
-							["provider"] = { "i", 31946 },	-- Ashtongue Cowl
-							["cr"] = 19514,	-- A'lar
-						}),
-					},
-				})),
 				applyclassicphase(TBC_PHASE_THREE, q(10958, {	-- Seek Out the Ashtongue
 					["provider"] = { "n", 18528 },	-- Xi'ri
 					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },

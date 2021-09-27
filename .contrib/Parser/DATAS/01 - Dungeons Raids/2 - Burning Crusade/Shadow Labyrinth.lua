@@ -18,6 +18,14 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54890,	-- Field Commander Mahfuun
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
+					["groups"] = {
+						objective(1, {	-- 0/12 Cabal Ritualist slain
+							["provider"] = { "n", 18794 },	-- Cabal Ritualist
+						}),
+						objective(2, {	-- Ambassador Hellmaw slain
+							["provider"] = { "n", 18731 },	-- Ambassador Hellmaw
+						}),
+					},
 				}),
 				q(10178, {	-- Find Spy To'gun
 					["qg"] = 19496,	-- Spy Grik'tha
@@ -37,6 +45,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "removed 4.3.0.14732" },
 					["lvl"] = lvlsquish(68, 20, 68),
 					["groups"] = {
+						objective(1, {	-- Murmur slain
+							["provider"] = { "n", 18708 },	-- Murmur
+						}),
 						i(28179),	-- Shattrath Jumpers
 						i(28178),	-- Spymistress' Boots
 						i(28177),	-- Auchenai Boots
@@ -48,6 +59,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 29643,	-- The Codex of Blood
 					["timeline"] = { "added 4.3.0.14732" },
 					["groups"] = {
+						objective(1, {	-- Murmur slain
+							["provider"] = { "n", 18708 },	-- Murmur
+						}),
 						i(28179),	-- Shattrath Jumpers
 						i(28178),	-- Spymistress' Boots
 						i(28177),	-- Auchenai Boots
@@ -58,11 +72,13 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18417,	-- Altruis
 					["sourceQuest"] = 10646,	-- Illidan's Pupil
 					["coord"] = { 27.3, 43.0, NAGRAND },
-					["cost"] = {
-						{ "i", 30808, 1 },	-- Book of Fel Names
-					},
 					["maps"] = { NAGRAND },
 					["lvl"] = lvlsquish(68, 25, 68),
+					["groups"] = {
+						objective(1, {	-- 0/1 Book of Fel Names
+							["provider"] = { "i", 30808 },	-- Book of Fel Names
+						}),
+					},
 				}),
 				q(10094, {	-- The Codex of Blood
 					["qg"] = 19542,	-- Field Commander Mahfuun
@@ -80,23 +96,24 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(10666, {	-- The Lexicon Demonica
 					["qg"] = 21465,	-- David Wayne
 					["sourceQuest"] = 10664,	-- Additional Materials
-					["description"] = "The quest item only drops on Normal Mode.",
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
-					["cost"] = {
-						{ "i", 30827, 1 },	-- Lexicon Demonica
-					},
 					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(67, 25, 67),
+					["groups"] = {
+						objective(1, {	-- 0/1 Lexicon Demonica
+							["provider"] = { "i", 30827 },	-- Lexicon Demonica
+						}),
+					},
 				}),
 				q(10091, {	-- The Soul Devices
 					["qg"] = 18891,	-- Spy To'gun
 					["sourceQuest"] = 10178,	-- Find Spy To'gun
 					["timeline"] = { "removed 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 27480, 5 },	-- Soul Device
-					},
 					["lvl"] = lvlsquish(68, 20, 68),
 					["groups"] = {
+						objective(1, {	-- 0/5 Soul Device
+							["provider"] = { "i", 27480 },	-- Soul Device
+						}),
 						i(28174),	-- Shattrath Wraps
 						i(28171),	-- Spymistress' Wristguards
 						i(28170),	-- Auchenai Bracers
@@ -107,11 +124,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18891,	-- Spy To'gun
 					["sourceQuest"] = 29640,	-- Find Spy To'gun
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 27480, 5 },	-- Soul Device
-					},
 					["lvl"] = lvlsquish(68, 20, 68),
 					["groups"] = {
+						objective(1, {	-- 0/5 Soul Device
+							["provider"] = { "i", 27480 },	-- Soul Device
+						}),
 						i(28174),	-- Shattrath Wraps
 						i(28171),	-- Spymistress' Wristguards
 						i(28170),	-- Auchenai Bracers
@@ -123,11 +140,15 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10883,	-- The Tempest Key
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
 					["maps"] = { SHATTRATH_CITY, COILFANG_RESERVOIR_STEAMVAULT },
-					["cost"] = {
-						{ "i", 31721, 1 },	-- Kalithresh's Trident
-						{ "i", 31722, 1 },	-- Murmur's Essence
-					},
 					["lvl"] = lvlsquish(70, 30, 70),
+					["groups"] = {
+						objective(1, {	-- 0/1 Kalithresh's Trident
+							["provider"] = { "i", 31721 },	-- Kalithresh's Trident
+						}),
+						objective(2, {	-- 0/1 Murmur's Essence
+							["provider"] = { "i", 31722 },	-- Murmur's Essence
+						}),
+					},
 				}),
 				q(10177, {	-- Trouble at Auchindoun
 					["qg"] = 18893,	-- Spymistress Mehlisah Highcrown

@@ -18,9 +18,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(67, 25, 67),
-					["g"] = {
-						objective(1, {
-							["provider"] = { "i", 30824, 1 },	-- Overcharged Manacell
+					["groups"] = {
+						objective(1, {	-- 0/1 Overcharged Manacell
+							["provider"] = { "i", 30824 },	-- Overcharged Manacell
 						}),
 					},
 				}),
@@ -28,9 +28,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["description"] = "Automatically provided after killing either Gatewatcher.",
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
-					["g"] = {
-						objective(1, {
-							["provider"] = { "i", 72663, 1 },	-- Blinding Fury
+					["groups"] = {
+						objective(1, {	-- 0/1 Blinding Fury
+							["provider"] = { "i", 72663 },	-- Blinding Fury
 						}),
 					},
 				}),
@@ -38,11 +38,21 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 29657,	-- With Great Power, Comes Great Responsibility
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
+					["groups"] = {
+						objective(1, {	-- Pathaleon the Calculator slain
+							["provider"] = { "n", 19220 },	-- Pathaleon the Calculator
+						}),
+					},
 				}),
 				q(29657, {	-- With Great Power, Comes Great Responsibility
 					["description"] = "Automatically provided upon starting the instance.",
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
+					["groups"] = {
+						objective(1, {	-- Mechano-Lord Capacitus slain
+							["provider"] = { "n", 19219 },	-- Mechano-Lord Capacitus
+						}),
+					},
 				}),
 			}),
 			n(ZONE_DROPS, {

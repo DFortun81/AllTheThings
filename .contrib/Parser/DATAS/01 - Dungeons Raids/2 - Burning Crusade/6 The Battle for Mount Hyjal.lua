@@ -27,8 +27,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["sourceQuest"] = 10946,	-- Ruse of the Ashtongue
 					["coord"] = { 58.0, 48.2, SHADOWMOON_VALLEY },
 					["maps"] = { SHADOWMOON_VALLEY },
-					["cost"] = {
-						{ "i", 32459, 1 },	-- Time-Phased Phylactery
+					["groups"] = {
+						objective(1, {	-- 0/1 Time-Phased Phylactery
+							["provider"] = { "i", 32459 },	-- Time-Phased Phylactery
+						}),
 					},
 				}),
 				q(11105, {	-- Champion No More

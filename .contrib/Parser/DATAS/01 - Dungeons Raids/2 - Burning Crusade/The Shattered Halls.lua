@@ -102,6 +102,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(67, 20, 67),
 					-- #if BEFORE 4.3.0.14732
 					["groups"] = {
+						objective(1, {	-- Fel Ember
+							["provider"] = { "i", 23726 },	-- Fel Ember
+						}),
 						i(25790),	-- Expedition Scout's Epaulets
 						i(25788),	-- Dauntless Handguards
 						i(25791),	-- Gloves of Preservation
@@ -143,6 +146,17 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
+					["groups"] = {
+						objective(1, {	-- 0/2 Shattered Hand Legionnaire slain
+							["provider"] = { "n", 16700 },	-- Shattered Hand Legionnaire
+						}),
+						objective(2, {	-- 0/2 Shattered Hand Centurion slain
+							["provider"] = { "n", 17465 },	-- Shattered Hand Centurion
+						}),
+						objective(3, {	-- 0/4 Shattered Hand Champion slain
+							["provider"] = { "n", 17671 },	-- Shattered Hand Champion
+						}),
+					},
 				}),
 				q(10764, bubbleDown({ ["timeline"] = { "removed 4.0.3.14732" } }, {	-- Hotter than Hell [Alliance]
 					["qg"] = 21209,	-- Dumphry <Master Blacksmithing Trainer>
@@ -206,6 +220,17 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
+					["groups"] = {
+						objective(1, {	-- 0/2 Shattered Hand Legionnaire slain
+							["provider"] = { "n", 16700 },	-- Shattered Hand Legionnaire
+						}),
+						objective(2, {	-- 0/2 Shattered Hand Centurion slain
+							["provider"] = { "n", 17465 },	-- Shattered Hand Centurion
+						}),
+						objective(3, {	-- 0/4 Shattered Hand Champion slain
+							["provider"] = { "n", 17671 },	-- Shattered Hand Champion
+						}),
+					},
 				}),
 				q(9493, {	-- Pride of the Fel Horde [Alliance]
 					["qg"] = 16830,	-- Field Commander Romus
@@ -214,6 +239,17 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
+					["groups"] = {
+						objective(1, {	-- 0/8 Shattered Hand Legionnaire slain
+							["provider"] = { "n", 16700 },	-- Shattered Hand Legionnaire
+						}),
+						objective(2, {	-- 0/4 Shattered Hand Centurion slain
+							["provider"] = { "n", 17465 },	-- Shattered Hand Centurion
+						}),
+						objective(3, {	-- 0/4 Shattered Hand Champion slain
+							["provider"] = { "n", 17671 },	-- Shattered Hand Champion
+						}),
+					},
 				}),
 				q(9496, {	-- Pride of the Fel Horde [Horde]
 					["qg"] = 16575,	-- Shadow Hunter Ty'jin <Ears of the Warchief>
@@ -222,6 +258,17 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
+					["groups"] = {
+						objective(1, {	-- 0/8 Shattered Hand Legionnaire slain
+							["provider"] = { "n", 16700 },	-- Shattered Hand Legionnaire
+						}),
+						objective(2, {	-- 0/4 Shattered Hand Centurion slain
+							["provider"] = { "n", 17465 },	-- Shattered Hand Centurion
+						}),
+						objective(3, {	-- 0/4 Shattered Hand Champion slain
+							["provider"] = { "n", 17671 },	-- Shattered Hand Champion
+						}),
+					},
 				}),
 				q(10757, {	-- Rohok's Request
 					["qg"] = 16583,	-- Rohok

@@ -49,6 +49,18 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 						i(30015),	-- The Sun King's Talisman
 					},
 				}),
+				q(10946, {	-- Ruse of the Ashtongue
+					["qg"] = 21700,	-- Akama
+					["sourceQuest"] = 10944,	-- The Secret Compromised
+					["coord"] = { 58.0, 48.2, SHADOWMOON_VALLEY },
+					["maps"] = { SHADOWMOON_VALLEY },
+					["groups"] = {
+						objective(1, {
+							["provider"] = { "i", 31946 },	-- Ashtongue Cowl
+							["cr"] = 19514,	-- A'lar
+						}),
+					},
+				}),
 			}),
 			n(ZONE_DROPS, {
 				["crs"] = {
@@ -77,7 +89,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					18805,	-- High Astromancer Solarian
 					19622,	-- Kael'thas Sunstrider
 				},
-				["g"] = {
+				["groups"] = {
 					i(30280),	-- Pattern: Belt of Blasting
 					i(30302, {	-- Pattern: Belt of Deep Shadow
 						["spellID"] = 36351,	-- Belt of Deep Shadow

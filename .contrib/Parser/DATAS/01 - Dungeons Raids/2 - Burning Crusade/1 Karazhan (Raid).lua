@@ -56,16 +56,28 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 					["maps"] = { DEADWIND_PASS },
 					["lvl"] = 70,
+					["groups"] = {
+						objective(1, {	-- Demonic Presence Destroyed
+							["provider"] = { "n", 15690 },	-- Prince Malchezaar
+						}),
+					},
 				}),
 				q(9824, {	-- Arcane Disturbances
 					["qg"] = 17613,	-- Archmage Alturus
 					["sourceQuest"] = 11216,	-- Archmage Alturus
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 					["maps"] = { DEADWIND_PASS },
-					["cost"] = {
-						{ "i", 24474, 1 },	-- Violet Scrying Crystal
-					},
 					["lvl"] = 68,
+					["groups"] = {
+						objective(1, {	-- Underground Well Reading
+							["provider"] = { "i", 24474 },	-- Violet Scrying Crystal
+							["coord"] = { 53.4, 89.4, DEADWIND_PASS },
+						}),
+						objective(2, {	-- 	Underground Pond Reading
+							["provider"] = { "i", 24474 },	-- Violet Scrying Crystal
+							["coord"] = { 43, 13, DEADWIND_PASS },
+						}),
+					},
 				}),
 				q(11216, {	-- Archmage Alturus
 					["qg"] = 23948,	-- Apprentice Tasserel
@@ -135,12 +147,10 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 					["maps"] = { DEADWIND_PASS },
-					["cost"] = {
-						{ "i", 24152, 1 },	-- Charred Bone Fragment
-					},
 					["lvl"] = 70,
 					["groups"] = {
-						i(24152, {	-- Charred Bone Fragment
+						objective(1, {	-- 0/1 Charred Bone Fragment
+							["provider"] = { "i", 24152 },	-- Charred Bone Fragment
 							["coord"] = { 45.0, 79.0, DEADWIND_PASS },
 						}),
 					},
@@ -390,10 +400,12 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9829,	-- Khadgar
 					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
 					["maps"] = { AUCHINDOUN_SHADOW_LABYRINTH, SHATTRATH_CITY },
-					["cost"] = {
-						{ "i", 24514, 1 },	-- First Key Fragment
-					},
 					["lvl"] = 68,
+					["groups"] = {
+						objective(1, {	-- 0/1 First Key Fragment
+							["provider"] = { "i", 24514 },	-- First Key Fragment
+						}),
+					},
 				}),
 				q(9638, {	-- In Good Hands
 					["qg"] = 16813,	-- Wravien <The Mage>
@@ -407,11 +419,15 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 32.2, 63.6, NETHERSTORM },
 					["maps"] = { AUCHINDOUN_SETHEKK_HALLS, HELLFIRE_CITADEL_SHATTERED_HALLS, NETHERSTORM },
-					["cost"] = {
-						{ "i", 25461, 1 },	-- Book of Forgotten Names
-						{ "i", 25462, 1 },	-- Tome of Dusk
-					},
 					["lvl"] = 70,
+					["groups"] = {
+						objective(1, {	-- 0/1 Book of Forgotten Names
+							["provider"] = { "i", 25461 },	-- Book of Forgotten Names
+						}),
+						objective(2, {	-- 0/1 Tome of Dusk
+							["provider"] = { "i", 25462 },	-- Tome of Dusk
+						}),
+					},
 				}),
 				q(9639, {	-- Kamsis
 					["qg"] = 16814,	-- Gradav <The Warlock>
@@ -423,10 +439,13 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16388,	-- Koren <The Blacksmith>
 					["sourceQuest"] = 9840,	-- Assessing the Situation
 					["timeline"] = { "removed 7.1.0.1233" },
-					["cost"] = {
-						{ "i", 24492, 1 },	-- Keanna's Log
-					},
 					["lvl"] = 70,
+					["groups"] = {
+						objective(1, {	-- 0/1 Keanna's Log
+							["provider"] = { "i", 24492 },	-- Keanna's Log
+							["description"] = "In the second room on a table in the hall leading to Maiden.",
+						}),
+					},
 				}),
 				q(9829, {	-- Khadgar
 					["qg"] = 18165,	-- Archmage Cedric
@@ -450,12 +469,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 					["maps"] = { DEADWIND_PASS, NETHERSTORM },
-					["cost"] = {
-						{ "i", 24140, 1 },	-- Blackened Urn
-						{ "i", 24139, 1 },	-- Faint Arcane Essence
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Faint Arcane Essence
+							["provider"] = { "i", 24139 },	-- Faint Arcane Essence
+						}),
 						i(31116),	-- Infused Amethyst
 						i(31118),	-- Pulsing Amethyst
 						i(31117),	-- Soothing Amethyst
@@ -548,10 +566,19 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 11216,	-- Archmage Alturus
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 					["maps"] = { DEADWIND_PASS },
-					["cost"] = {
-						{ "i", 24480, 10 },	-- Ghostly Essence
-					},
 					["lvl"] = 68,
+					["groups"] = {
+						objective(1, {	-- 0/10 Ghostly Essence
+							["provider"] = { "i", 24480 },	-- Ghostly Essence
+							["crs"] = {
+								12378,	-- Damned Soul
+								7370,	-- Restless Shade
+								12379,	-- Unliving Caretaker
+								-- 12380,	-- Unliving Resident -- NOTE: This was removed as a drop source sometime during TBC.
+								12377,	-- Wailing Spectre
+							},
+						}),
+					},
 				}),
 				q(11034, {	-- Restorer No More
 					["qg"] = 18253,	-- Archmage Leryda
@@ -575,10 +602,12 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16815,	-- Kamsis <The Conjurer>
 					["sourceQuest"] = 9640,	-- The Shade of Aran
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
-					["cost"] = {
-						{ "i", 23934, 1 },	-- Medivh's Journal
-					},
 					["lvl"] = 70,
+					["groups"] = {
+						objective(1, {	-- 	Journal Entry Read
+							["provider"] = { "i", 23934 },	-- Medivh's Journal
+						}),
+					},
 				}),
 				q(9860, {	-- The New Directive
 					["qg"] = 17613,	-- Archmage Alturus
@@ -595,20 +624,26 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9831,	-- Entry Into Karazhan
 					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
 					["maps"] = { COILFANG_RESERVOIR_STEAMVAULT, TEMPEST_KEEP_ARCATRAZ, SHATTRATH_CITY },
-					["cost"] = {
-						{ "i", 24487, 1 },	-- Second Key Fragment
-						{ "i", 24488, 1 },	-- Third Key Fragment
-					},
 					["lvl"] = 68,
+					["groups"] = {
+						objective(1, {	-- 0/1 Second Key Fragment
+							["provider"] = { "i", 24487 },	-- Second Key Fragment
+						}),
+						objective(2, {	-- 0/1 Third Key Fragment
+							["provider"] = { "i", 24488 },	-- Third Key Fragment
+						}),
+					},
 				}),
 				q(9640, {	-- The Shade of Aran
 					["qg"] = 16815,	-- Kamsis <The Conjurer>
 					["sourceQuest"] = 9639,	-- Kamsis
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
-					["cost"] = {
-						{ "i", 23933, 1 },	-- Medivh's Journal
-					},
 					["lvl"] = 70,
+					["groups"] = {
+						objective(1, {	-- 0/1 Medivh's Journal
+							["provider"] = { "i", 23933 },	-- Medivh's Journal
+						}),
+					},
 				}),
 				q(9838, {	-- The Violet Eye
 					["qg"] = 18166,	-- Khadgar <Sons of Lothar>
@@ -792,7 +827,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						},
 					}),
 					n(17521, {	-- The Big Bad Wolf [Red Riding Hood]
-						["description"] = "The Big Bad Wolf is initially a harmless Grandmother, but speaking to her will reveal the truth...\n\n\"Run away, little girl!\"",
+						["lore"] = "The Big Bad Wolf is initially a harmless Grandmother, but speaking to her will reveal the truth...\n\n\"Run away, little girl!\"",
 						["crs"] = {
 							17603,	-- Grandmother
 						},
@@ -807,7 +842,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						},
 					}),
 					n(17534, {	-- Julianne [Romulo and Julianne]
-						["description"] = "Julianne will appear first alone.  After she is defeated, Romulo will join the fight. After you dispatch, they will both rise and begin the fight again.",
+						["lore"] = "Julianne will appear first alone.  After she is defeated, Romulo will join the fight. After you dispatch, they will both rise and begin the fight again.",
 						["crs"] = {
 							17533,	-- Romulo
 						},
@@ -819,7 +854,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						},
 					}),
 					n(18168, {	-- The Crone [Wizard of Oz]
-						["description"] = "She spawns shortly after Dorothee, Dorothee's pet Tito, Roar, Strawman, and Tinhead are defeated.",
+						["lore"] = "She spawns shortly after Dorothee, Dorothee's pet Tito, Roar, Strawman, and Tinhead are defeated.",
 						["crs"] = {
 							17535,	-- Dorothee
 							17548,	-- Tito
@@ -837,12 +872,20 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 			n(17225, {	-- Nightbane
-				-- #if ANYCLASSIC
-				["description"] = "Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.\n\nHe requires a complex questline to be summoned via Blackened Urn and cannot be summoned by those who have not completed the questline. Once you have completed the chain, you can summon him on the Terrace by clicking on the Urn on the ground.",
+				["lore"] = "Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.",
+				-- #if AFTER 7.1
+				["description"] = "As of 7.1, any player can summon him on the Terrace by clicking on the Urn.",
 				-- #else
-				["description"] = "Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.\n\nAs of 7.1, any player can summon him on the Terrace by clicking on the Urn.",
-				-- #endif
 				["sourceQuest"] = 9644,	-- Nightbane
+				-- #if AFTER WRATH
+				["description"] = "Once you have completed the quest chain, you can summon him on the Terrace by clicking on the Urn on the ground.",
+				-- #else
+				["description"] = "Requires the completion of a complex questline to be summoned via the Blackened Urn.",
+				["cost"] = {
+					{ "i", 24140, 1 },	-- Blackened Urn
+				},
+				-- #endif
+				-- #endif
 				["groups"] = {
 					i(28604),	-- Nightstaff of the Everliving
 					i(28611),	-- Dragonheart Flameshield

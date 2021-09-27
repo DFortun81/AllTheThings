@@ -1375,7 +1375,7 @@ _.ExpansionFeatures =
 				},
 			}),
 			n(VENDORS, {
-				n(-20, {	-- Common Vendor Items
+				n(COMMON_VENDOR_ITEMS, {
 					i(45725, {	-- Argent Hippogryph
 						["cost"] = { { "c", 241, 150 }, },	-- 150x Champion's Seal
 						["crs"] = {

@@ -35,6 +35,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(70, 25, 70),
 					-- #endif
 					["groups"] = {
+						objective(1, {	-- Harbinger Skyriss slain
+							["provider"] = { "n", 20912 },	-- Harbinger Skyriss
+						}),
 						i(31747),	-- Potent Sha'tari Pendant
 						i(31749),	-- A'dal's Recovery Necklace
 						i(31748),	-- Shattrath Choker of Power
@@ -45,6 +48,14 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 29674,	-- Unbound Darkness
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 25, 67),
+					["groups"] = {
+						objective(1, {	-- Wrath-Scryer Soccothrates slain
+							["provider"] = { "n", 20886 },	-- Wrath-Scryer Soccothrates
+						}),
+						objective(2, {	-- Dalliah the Doomsayer slain
+							["provider"] = { "n", 20885 },	-- Dalliah the Doomsayer
+						}),
+					},
 				}),
 				q(10704, {	-- How to Break Into the Arcatraz
 					["qg"] = 18481,	-- A'dal
@@ -57,11 +68,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(70, 25, 70),
 					-- #endif
 					["groups"] = {
-						objective(1, {
-							["provider"] = { "i", 31085, 1 },	-- Top Shard of the Arcatraz Key
+						objective(1, {	-- 0/1 Top Shard of the Arcatraz Key
+							["provider"] = { "i", 31085 },	-- Top Shard of the Arcatraz Key
 						}),
-						objective(2, {
-							["provider"] = { "i", 31086, 1 },	-- Bottom Shard of the Arcatraz Key
+						objective(2, {	-- 0/1 Bottom Shard of the Arcatraz Key
+							["provider"] = { "i", 31086 },	-- Bottom Shard of the Arcatraz Key
 						}),
 						i(31084, {	-- Key to the Arcatraz
 							["timeline"] = { "removed 4.0.3.14732" },
@@ -79,6 +90,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 25, 67),
 					["groups"] = {
+						objective(1, {	-- Harbinger Skyriss slain
+							["provider"] = { "n", 20912 },	-- Harbinger Skyriss
+						}),
 						i(31749),	-- A'dal's Recovery Necklace
 						i(31747),	-- Potent Sha'tari Pendant
 						i(31748),	-- Shattrath Choker of Power
@@ -102,6 +116,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18481,	-- A'dal
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 25, 67),
+					["groups"] = {
+						objective(1, {	-- Zereketh the Unbound slain
+							["provider"] = { "n", 20870 },	-- Zereketh the Unbound
+						}),
+					},
 				}),
 			}),
 			n(ZONE_DROPS, {

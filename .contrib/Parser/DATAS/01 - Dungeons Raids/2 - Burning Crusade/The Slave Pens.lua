@@ -13,6 +13,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54668,	-- Nahuud
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(57, 10, 57),
+					["groups"] = {
+						objective(1, {	-- Mennu the Betrayer slain
+							["provider"] = { "n", 17941 },	-- Mennu the Betrayer
+						}),
+					},
 				}),
 				q(29566, {	-- Checking Up
 					["qg"] = 17841,	-- Ysiel Windsinger
@@ -120,7 +125,13 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29565, {	-- The Heart of the Matter
 					["qg"] = 54667,	-- Watcher Jhang
 					["timeline"] = { "added 4.3.0.14732" },
-					["groups"]	= {
+					["groups"]= {
+						objective(1, {	-- 0/1 The Invader's Claw
+							["provider"] = { "i", 72118 },	-- The Invader's Claw
+						}),
+						objective(2, {	-- 0/1 The Slave Master's Eye
+							["provider"] = { "i", 72119 },	-- The Slave Master's Eye
+						}),
 						i(25541),	-- Cenarion Ring of Casting
 						i(28029),	-- Goldenvine Wraps
 						i(25540),	-- Dark Cloak of the Marsh
