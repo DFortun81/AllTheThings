@@ -1340,15 +1340,17 @@ _.Zones =
 					["sourceQuests"] = { 53779 },	-- The Lies of a Loa
 				}),
 				n(BONUS_OBJECTIVES, {
-					-- TODO: Check SQ also probably cant do after a certain level
-					q(48934),	-- Mark of the Damned
-					q(47996),	-- Mawfiend Extermination
-					q(48093),	-- Nagating the Threat
-					q(48588),	-- Purge the Infection
-					q(48852),	-- Stopping Zardax
-					q(47756),	-- The Libation's Liberation
-					q(51689),	-- Tortollan Rescue
-					q(49406),	-- Zalamar Slaughter
+					["g"] = bubbleDown({ ["races"] = HORDE_ONLY }, {
+						-- TODO: Check SQ also probably cant do after a certain level
+						q(48934),	-- Mark of the Damned
+						q(47996),	-- Mawfiend Extermination
+						q(48093),	-- Nagating the Threat
+						q(48588),	-- Purge the Infection
+						q(48852),	-- Stopping Zardax
+						q(47756),	-- The Libation's Liberation
+						q(51689),	-- Tortollan Rescue
+						q(49406),	-- Zalamar Slaughter
+					}),
 				}),
 			}),
 		}),

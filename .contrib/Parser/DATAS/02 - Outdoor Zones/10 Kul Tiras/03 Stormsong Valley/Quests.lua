@@ -1697,11 +1697,11 @@ _.Zones =
 				}),
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ also probably cant do after a certain level
-					q(50779, {	-- A Clean Slate
-						["races"] = ALLIANCE_ONLY,
+					["g"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {
+						q(50779),	-- A Clean Slate
+						q(51534),	-- The Battle for Brennadam
+						q(50133),	-- Weed Whacking
 					}),
-					q(51534),	-- The Battle for Brennadam
-					q(50133),	-- Weed Whacking
 				}),
 			}),
 		}),
