@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 	inst(249, {	-- Magisters' Terrace
 		["lore"] = "Situated on a ridge in northeastern Quel'Danas, Magisters' Terrace serves as a convenient base for Kael'thas and his underlings as they assist the proceedings in the Sunwell Plateau. Kael'thas stands poised to desecrate the ancient lands of his people with an incomparable evil. Should he succeed, the Legion's darkness will rapidly spread to all corners of Azeroth, extinguishing everything in its path.",
 		["coord"] = { 61.23, 30.94, ISLE_OF_QUELDANAS },	-- Magister's Terrace, Isle of Quel'Danas
@@ -433,13 +433,13 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 			-- #endif
 		},
 	}),
-}))};
+})));
 
 -- #if AFTER 4.3.0
 -- This version of the quest never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(29683),	-- The Scryer's Scryer
 	}),
-});
+}));
 -- #endif

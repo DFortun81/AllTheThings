@@ -4,7 +4,7 @@
 local THOMAS_YANCE_GROUPS = {
 	i(25725),	-- Pattern: Riding Crop
 };
-_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(251, {	-- Old Hillsbrad Foothills
 		["lore"] = "Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",
 		["coord"] = { 26.8, 36.8, CAVERNS_OF_TIME },
@@ -342,7 +342,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 		},
 	}),
-}))};
+})));
 
 -- Add the items we didn't want to mark with a phase
 for i,o in ipairs({

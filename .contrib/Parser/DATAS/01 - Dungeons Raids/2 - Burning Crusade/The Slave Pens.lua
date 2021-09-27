@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(260, {	-- The Slave Pens
 		["lore"] = "The Slave Pens is the place where the Naga force their Broken workers to toil for resources in the darkness in order to achieve their goal of draining the marsh completely and claiming control of its water.",
 		["coord"] = { 48.95, 35.84, ZANGARMARSH },	-- The Slave Pens, Zangarmarsh
@@ -424,4 +424,4 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			-- #endif
 		},
 	}),
-}))};
+})));
