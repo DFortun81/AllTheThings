@@ -17582,6 +17582,15 @@ customWindowUpdates["Quests"] = function(self, force, got)
 end
 customWindowUpdates["Tradeskills"] = function(self, force, got)
 	if not self.initialized then
+		-- cache some common functions
+		local C_TradeSkillUI = C_TradeSkillUI;
+		local C_TradeSkillUI_GetCategoryInfo = C_TradeSkillUI.GetCategoryInfo;
+		local C_TradeSkillUI_GetRecipeInfo = C_TradeSkillUI.GetRecipeInfo;
+		local C_TradeSkillUI_GetRecipeItemLink = C_TradeSkillUI.GetRecipeItemLink;
+		local C_TradeSkillUI_GetRecipeNumReagents = C_TradeSkillUI.GetRecipeNumReagents;
+		local C_TradeSkillUI_GetRecipeReagentInfo = C_TradeSkillUI.GetRecipeReagentInfo;
+		local C_TradeSkillUI_GetRecipeReagentItemLink = C_TradeSkillUI.GetRecipeReagentItemLink;
+
 		self.initialized = true;
 		force = true;
 		self:SetMovable(false);
@@ -17619,7 +17628,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				local categoryIDs = { C_TradeSkillUI.GetCategories() };
 				for i = 1,#categoryIDs do
 					currentCategoryID = categoryIDs[i];
-					local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+					local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
 					if categoryData then
 						if not categories[currentCategoryID] then
 							rawset(AllTheThingsAD.LocalizedCategoryNames, currentCategoryID, categoryData.name);
@@ -17632,16 +17641,17 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				local learned, recipeID = {};
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
+				local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
 				local skipcaching;
 				-- print("Scanning recipes",#recipeIDs)
 				for i = 1,#recipeIDs do
-					local spellRecipeInfo = C_TradeSkillUI.GetRecipeInfo(recipeIDs[i]);
+					local spellRecipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeIDs[i]);
 					if spellRecipeInfo then
 						skipcaching = nil;
 						recipeID = spellRecipeInfo.recipeID;
 						currentCategoryID = spellRecipeInfo.categoryID;
 						if not categories[currentCategoryID] then
-							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+							local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
 							if categoryData then
 								rawset(AllTheThingsAD.LocalizedCategoryNames, currentCategoryID, categoryData.name);
 								categories[currentCategoryID] = true;
@@ -17649,18 +17659,18 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						end
 						if spellRecipeInfo.learned then
 							if spellRecipeInfo.disabled then
-								if app.CurrentCharacter.Spells[recipeID] then
-									app.CurrentCharacter.Spells[recipeID] = nil;
-									ATTAccountWideData.Spells[recipeID] = nil;
+								if charSpells[recipeID] then
+									charSpells[recipeID] = nil;
+									acctSpells[recipeID] = nil;
 								end
 							else
-								app.CurrentCharacter.Spells[recipeID] = 1;
-								if not ATTAccountWideData.Spells[recipeID] then
-									ATTAccountWideData.Spells[recipeID] = 1;
+								charSpells[recipeID] = 1;
+								if not acctSpells[recipeID] then
+									acctSpells[recipeID] = 1;
 									tinsert(learned, recipeID);
 								end
 							end
-						elseif not spellRecipeInfo.disabled and not ATTAccountWideData.Spells[recipeID] then
+						elseif not spellRecipeInfo.disabled and not acctSpells[recipeID] then
 							-- print("unlearned, enabled RecipeID",recipeID)
 							-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
 							local cachedRecipe = app.SearchForMergedObject("spellID", recipeID);
@@ -17676,13 +17686,13 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 							skillCache[recipeID] = { {} };
 						end
 
-						local recipeLink = C_TradeSkillUI.GetRecipeItemLink(recipeID);
+						local recipeLink = C_TradeSkillUI_GetRecipeItemLink(recipeID);
 						local craftedItemID = recipeLink and GetItemInfoInstant(recipeLink);
 						if craftedItemID then
 							local reagentLink, itemID, reagentCount;
-							for i=1,C_TradeSkillUI.GetRecipeNumReagents(recipeID) do
-								reagentCount = select(3, C_TradeSkillUI.GetRecipeReagentInfo(recipeID, i));
-								reagentLink = C_TradeSkillUI.GetRecipeReagentItemLink(recipeID, i);
+							for i=1,C_TradeSkillUI_GetRecipeNumReagents(recipeID) do
+								reagentCount = select(3, C_TradeSkillUI_GetRecipeReagentInfo(recipeID, i));
+								reagentLink = C_TradeSkillUI_GetRecipeReagentItemLink(recipeID, i);
 								itemID = reagentLink and GetItemInfoInstant(reagentLink);
 								-- print(recipeID, itemID, "=",reagentCount,">", craftedItemID);
 
