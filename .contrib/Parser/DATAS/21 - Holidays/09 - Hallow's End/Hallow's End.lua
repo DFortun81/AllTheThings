@@ -4398,6 +4398,9 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					["cost"] = {
 						{ "i", 128664, 1 },	-- Creepy Crawlers
 					},
+					["groups"] = {
+						ach(10365),	-- A Frightening Friend
+					},
 				}),
 			},
 		}),
