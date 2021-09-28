@@ -4383,6 +4383,22 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						i(128794),	-- Sack of Spectral Spiders (PET!)
 					},
 				}),
+				i(128874, {	-- A Tiny Scarecrow Costume
+					["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
+					["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
+					["coords"] = {
+						{ 70.71, 90.21, FROSTWALL },	-- Pepe Location [Horde]
+						{ 40.12, 70.06, LUNARFALL },	-- Pepe Location [Alliance]
+					},
+					["timeline"] = { "added 6.2.2.20395" },
+					["maps"] = {
+						FROSTWALL,
+						LUNARFALL,
+					},
+					["cost"] = {
+						{ "i", 128664, 1 },	-- Creepy Crawlers
+					},
+				}),
 			},
 		}),
 		n(REWARDS, appendGroups(MASKS_WITHOUT_COST, appendGroups(WANDS_WITHOUT_COST, {
