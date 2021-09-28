@@ -1483,4 +1483,124 @@ _.HiddenQuestTriggers = {
 	q(61268),	-- Triggered from buff recieved from Kyrian Conductor Tier 3
 	q(61267),	-- Triggered from buff recieved from Kyrian Conductor Tier 3
 	q(61266),	-- Triggered from buff recieved from Kyrian Conductor Tier 3
+
+	-- COURAGE DIFFICULTY KILL
+	q(60917),	-- Kalisthene | Courage
+	q(60918),	-- Echthra | Courage
+	q(60919),	-- Alderyn and Myn'ir | Courage
+	q(60921),	-- Nuuminuuru | Courage
+	q(60922),	-- Craven Corinth | Courage
+	q(60923),	-- Splinterbark Nightmare
+	q(60924),	-- Thran'tiok | Courage
+	q(60925),	-- Mad Mortimer | Courage
+	q(60926),	-- Athanos | Courage
+	q(60927),	-- Azaruux | Courage
+
+	-- LOYALTY DIFFICULTY KILL
+	q(61014),	-- Azaruux | Loyalty
+	q(61015),	-- Athanos | Loyalty
+	q(61016),	-- Mad Mortimer | Loyalty
+	q(61017),	-- Thran'tiok | Loyalty
+	q(61018),	-- Splinterbark Nightmare | Loyalty
+	q(61019),	-- Cravin Corinth | Loyalty
+	q(61020),	-- Nuuminuuru | Loyalty
+	q(61021),	-- Alderyn and Myn'ir | Loyalty
+	q(61022),	-- Echthra | Loyalty
+	q(61023),	-- Kalisthene | Loyalty
+
+	-- WISDOM DIFFICULTY KILL
+	q(61024),	-- Azaruux | Wisdom
+	q(61025),	-- Athanos | Wisdom
+	q(61026),	-- Mad Mortimer | Wisdom
+	q(61027),	-- Thran'tiok | Wisdom
+	q(61028),	-- Splinterbark | Wisdom
+	q(61029),	-- Craven Corinth | Wisdom
+	q(61030),	-- Nuuminuuru | Wisdom
+	q(61031),	-- Alderyn and Myn'ir | Wisdom
+	q(61032),	-- Echthra | Wisdom
+	q(61033),	-- Kalisthene | Wisdom
+
+	-- HUMILITY DIFFICULTY KILL
+	q(63102),	-- Kelisthene | Humility | Pelagos
+	q(63103),	-- Kelisthene | Humility | Kleia
+	q(63104),	-- Kelisthene | Humility | Mikanikos
+	q(63105),	-- Echthra | Humility | Pelagos
+	q(63106),	-- Echthra | Humility | Kleia
+	q(63107),	-- Echthra | Humility | Mikanikos
+	q(63108),	-- Alderyn and Myn'ir| Humility | Pelagos
+	q(63109),	-- Alderyn and Myn'ir| Humility | Kleia
+	q(63110),	-- Alderyn and Myn'ir| Humility | Mikanikos
+	q(63111),	-- Nuuminuuru | Humility | Pelagos
+	q(63112),	-- Nuuminuuru | Humility | Kleia
+	q(63113),	-- Nuuminuuru | Humility | Mikanikos
+	q(63114),	-- Craven Corinth | Humility | Pelagos
+	q(63115),	-- Craven Corinth | Humility | Kleia
+	q(63116),	-- Craven Corinth | Humility | Mikanikos
+	q(63117),	-- Splinterbark | Humility | Pelagos
+	q(63118),	-- Splinterbark | Humility | Kleia
+	q(63119),	-- Splinterbark | Humility | Mikanikos
+	q(63120),	-- Thran'tiok | Humility | Pelagos
+	q(63121),	-- Thran'tiok | Humility | Kleia
+	q(63122),	-- Thran'tiok | Humility | Mikanikos
+	q(63123),	-- Mad Mortimer | Humility | Pelagos
+	q(63124),	-- Mad Mortimer | Humility | Kleia
+	q(63125),	-- Mad Mortimer | Humility | Mikanikos
+	q(63126),	-- Athanos | Humility | Pelagos
+	q(63127),	-- Athanos | Humility | Kleia
+	q(63128),	-- Athanos | Humility | Mikanikos
+	q(63129),	-- Azaruux | Humility | Pelagos
+	q(63130),	-- Azaruux | Humility | Kleia
+	q(63131),	-- Azaruux | Humility | Mikanikos
+
+	-- HUMILITY DIFFICULTY NO CHARMS, NO ACTIVE BRAZIERS (probably only for either charms or braziers)
+	q(61034),	-- Azaruux | Humility | no charms | no active braziers
+	q(61035),	-- Arthanos | Humility | no charms | no active braziers
+	q(61036),	-- Mad Mortimer | Humility | no charms | no active braziers
+	q(61037),	-- Thran'tiok | Humility | no charms | no active braziers
+	q(61038),	-- Splinterbark | Humility | no charms | no active braziers
+	q(61039),	-- Craven Corinth | Humility | no charms | no active braziers
+	q(61040),	-- Nuuminuuru | Humility | no charms | no active braziers.
+	q(61041),	-- Alderyn and Myn'ir | Humility | no charms | no active braziers
+	q(61042),	-- Echthra | Humility | no charms | no active braziers
+	q(61043),	-- Kelisthene | Humility | no charms | no active braziers
+
+	-- HUMILITY DIFFICULTY NO CHARMS, NO ACTIVE BRAZIERS (probably only for either charms or braziers)
+	q(63138),	-- Kelisthene | Humility | no charms | no active braziers
+	q(63139),	-- Echthra | Humility | no charms | no active braziers
+	q(63143),	-- Alderyn and Myn'ir | Humility | no charms | no active braziers
+	q(63144),	-- Nuuminuuru" boss | Humility | no charms | no active braziers
+	q(63146),	-- Craven Corinth | Humility | no charms | no active braziers
+	q(63147),	-- Splinterbark | Humility | | no charms | no active braziers
+	q(63148),	-- Thran'tiok | Humility | no charms | no active braziers
+	q(63149),	-- Mad Mortimer | Humility | no charms | no active braziers
+	q(63150),	-- Athanos | Humility | no charms | no active braziers
+	q(63151),	-- Azaruux | Humility | no charms | no active braziers
+
+	-- UNKNOWN EXACT TRIGGERS (could be loyalty kills instead, but what is in loyalty kills then?)
+	--q(63074),	-- Kelisthene | Loyalty | Kleia
+	--q(63075),	-- Craven Corinth | Loyalty | Kleia
+	--q(63076),	-- ? | Loyalty | ?
+	--q(63077),	-- ? | Loyalty | ?
+	--q(63078),	-- Kalisthene | Loyalty
+	--q(63079),	-- Nuuminuuru | Loyalty
+	--q(63080),	-- Mad Mortimer | Loyalty | Pelagos
+	--q(63081),	-- ? | Loyalty | ?
+	--q(63082),	-- Thran'tiok | Loyalty | Pelagos
+	--q(63083),	-- Craven Corinth | Loyalty | Kleia
+
+	-- HQTs for It's How You Wear It achievement
+	q(63084),	-- Humility | Herald's Footpads
+	q(63085),	-- Humility | Deep Echo Trident
+	q(63086),	-- Humility | Vial of Lichfrost
+	q(63087),	-- Humility | Phial of Serenity
+	q(63088),	-- Humility | Ring of Warding
+	q(63089),	-- Humility | Spiritforged Aegis
+
+	-- I think this might be for Learning from the Masters achievement
+	--q(63093),	-- Kalisthene | Wisdom
+	--q(63094),	--
+	--q(63095),	--
+	--q(63096),	-- Athanos | Courage | Kleia
+	--q(63097),	-- Completing first 9 Path of Ascension 'Courage' challenges?
+	--q(63098),	-- Athanos | Wisdom | Mikanikos | Vial of Serenity | no charms
 };
