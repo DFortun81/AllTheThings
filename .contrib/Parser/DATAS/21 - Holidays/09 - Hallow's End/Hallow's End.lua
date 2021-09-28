@@ -1092,7 +1092,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				}),
 			}),
 			ach(10365, {	-- A Frightening Friend
-				["description"] = "Halloween Decorations must be up in a Tier 3 garrison.",
+				["description"] = "You need Tier 3 garrison for this.",
 				["coords"] = {
 					{ 40.1, 70.0, LUNARFALL },	-- Pepe Location (Alliance)
 					{ 70.7, 90.2, FROSTWALL },	-- Pepe Location (Horde)
@@ -4384,7 +4384,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					},
 				}),
 				i(128874, {	-- A Tiny Scarecrow Costume
-					["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
+					["description"] = "You need Tier 3 garrison for this.",
 					["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
 					["coords"] = {
 						{ 70.71, 90.21, FROSTWALL },	-- Pepe Location [Horde]
@@ -4394,9 +4394,6 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					["maps"] = {
 						FROSTWALL,
 						LUNARFALL,
-					},
-					["cost"] = {
-						{ "i", 128664, 1 },	-- Creepy Crawlers
 					},
 					["groups"] = {
 						ach(10365),	-- A Frightening Friend
