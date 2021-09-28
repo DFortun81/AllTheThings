@@ -4488,11 +4488,11 @@ fieldCache["spellID"] = {};
 fieldCache["tierID"] = {};
 fieldCache["titleID"] = {};
 fieldCache["toyID"] = {};
-local cacheCreatureID = function(group, value)
-	if value > 0 then
-		CacheField(group, "creatureID", value);
+local cacheCreatureID = function(group, npcID)
+	if npcID > 0 then
+		CacheField(group, "creatureID", npcID);
 	end
-end;
+end
 local cacheMapID = function(group, mapID, skipNest)
 	if (currentMaps[mapID] or 0) == 0 then
 		if not skipNest then currentMaps[mapID] = 1; end
@@ -4501,16 +4501,19 @@ local cacheMapID = function(group, mapID, skipNest)
 		print("multi-nested map",mapID,currentMaps[mapID],group.key,group.key and group[group.key])
 		currentMaps[mapID] = currentMaps[mapID] + 1;
 	end
-end;
-local cacheObjectID = function(group, value)
+end
+local cacheObjectID = function(group, objectID)
 	-- WARNING: DEV ONLY START
-	if not app.ObjectNames[value] then
-		print("Object Missing Name ", value);
-		app.ObjectNames[value] = "Object #" .. value;
+	if not app.ObjectNames[objectID] then
+		print("Object Missing Name ", objectID);
+		app.ObjectNames[objectID] = "Object #" .. objectID;
 	end
 	-- WARNING: DEV ONLY END
-	CacheField(group, "objectID", value);
-end;
+	CacheField(group, "objectID", objectID);
+end
+local cacheQuestID = function(group, questID)
+	CacheField(group, "questID", questID);
+end
 
 fieldConverters = {
 	-- Simple Converters
@@ -4574,9 +4577,7 @@ fieldConverters = {
 	["professionID"] = function(group, value)
 		CacheField(group, "professionID", value);
 	end,
-	["questID"] = function(group, value)
-		CacheField(group, "questID", value);
-	end,
+	["questID"] = cacheQuestID,
 	["requireSkill"] = function(group, value)
 		CacheField(group, "professionID", value);
 	end,
@@ -4611,9 +4612,8 @@ fieldConverters = {
 		end
 	end,
 	["altQuests"] = function(group, value)
-		_cache = rawget(fieldConverters, "questID");
-		for i,questID in ipairs(value) do
-			_cache(group, questID);
+		for _,questID in ipairs(value) do
+			cacheQuestID(group, questID);
 		end
 	end,
 	["providers"] = function(group, value)
@@ -4697,7 +4697,7 @@ local mapKeyUncachers = {
 };
 CacheFields = function(group)
 	-- apparently any 'rawset' on group will break the pairs loop on the group, so we need to copy all the keys first
-	local keys, mapKeys, key, value, hasG = {};
+	local keys, mapKeys, value, hasG = {};
 	for k,_ in pairs(group) do
 		if k == "g" then
 			hasG = true;
