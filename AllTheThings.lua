@@ -4776,6 +4776,27 @@ app.SearchForObject = function(field, id)
 		return firstMatch;
 	end
 end
+-- This method performs the SearchForField logic and returns a single version of the specific object by merging together all sources of the object
+-- NOTE: Don't use this for Items, because modIDs and bonusIDs are stupid
+app.SearchForMergedObject = function(field, id)
+	local fcache = SearchForField(field, id);
+	if fcache and #fcache > 0 then
+		-- find a filter-match object first
+		local fcacheObj, merged;
+		for i=1,#fcache,1 do
+			fcacheObj = fcache[i];
+			if fcacheObj.key == field and fcacheObj[field] == id then
+				if not merged then
+					merged = CreateObject(fcacheObj);
+				else
+					MergeProperties(merged, fcacheObj);
+				end
+			end
+		end
+		-- return the merged object
+		return merged;
+	end
+end
 
 -- Item Information Lib
 local function SearchForRelativeItems(group, listing)
@@ -17611,9 +17632,12 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				local learned, recipeID = {};
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
+				local skipcaching;
+				-- print("Scanning recipes",#recipeIDs)
 				for i = 1,#recipeIDs do
 					local spellRecipeInfo = C_TradeSkillUI.GetRecipeInfo(recipeIDs[i]);
 					if spellRecipeInfo then
+						skipcaching = nil;
 						recipeID = spellRecipeInfo.recipeID;
 						currentCategoryID = spellRecipeInfo.categoryID;
 						if not categories[currentCategoryID] then
@@ -17636,7 +17660,17 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 									tinsert(learned, recipeID);
 								end
 							end
+						elseif not spellRecipeInfo.disabled and not ATTAccountWideData.Spells[recipeID] then
+							-- print("unlearned, enabled RecipeID",recipeID)
+							-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
+							local cachedRecipe = app.SearchForMergedObject("spellID", recipeID);
+							-- verify the merged cached version is not 'super' unobtainable
+							if cachedRecipe and cachedRecipe.u and cachedRecipe.u < 3 then
+								-- print("Ignoring Unobtainable RecipeID",recipeID,cachedRecipe.u)
+								skipcaching = true;
+							end
 						end
+
 						if not skillCache[recipeID] then
 							--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
 							skillCache[recipeID] = { {} };
@@ -17657,10 +17691,19 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 								-- Index 2: The Crafted Item IDs => reagentCount
 								-- TODO: potentially re-design this structure
 								if itemID then
-									if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
-									reagentCache[itemID][1][recipeID] = { craftedItemID, reagentCount };
-									-- if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
-									reagentCache[itemID][2][craftedItemID] = reagentCount;
+									if skipcaching then
+										-- remove any existing cached recipes
+										if reagentCache[itemID] then
+											-- print("removing reagent cache info", itemID,recipeID,craftedItemID)
+											reagentCache[itemID][1][recipeID] = nil;
+											reagentCache[itemID][2][craftedItemID] = nil;
+										end
+									else
+										if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+										reagentCache[itemID][1][recipeID] = { craftedItemID, reagentCount };
+										-- if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+										reagentCache[itemID][2][craftedItemID] = reagentCount;
+									end
 								end
 							end
 						-- else
