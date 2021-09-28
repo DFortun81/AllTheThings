@@ -4970,7 +4970,7 @@ app.SearchForLink = SearchForLink;
 -- Map Information Lib
 local function AddTomTomWaypoint(group, auto, recur)
 	if TomTom
-		-- only plot visible things or if being
+		-- only plot visible things or if auto
 		and (group.visible or auto)
 		-- which aren't saved, unless this is the Thing that was directly clicked
 		and (not recur or not group.saved)
@@ -4997,7 +4997,7 @@ local function AddTomTomWaypoint(group, auto, recur)
 				opt.worldmap_icon = group.icon;
 			end
 			if group.coords then
-				for i, coord in ipairs(group.coords) do
+				for _,coord in ipairs(group.coords) do
 					TomTom:AddWaypoint(coord[3] or defaultMapID, coord[1] / 100, coord[2] / 100, opt);
 				end
 			end
@@ -5008,11 +5008,14 @@ local function AddTomTomWaypoint(group, auto, recur)
 		if group.g then
 			-- if plotting waypoints of a 'repeated' object, inherently plot the contained object waypoints even when not visible
 			local auto = group.objectID and not group.coord and not group.coords;
-			for i,subgroup in ipairs(group.g) do
+			for _,o in ipairs(group.g) do
 				-- only automatically plot subGroups if they are not quests with incomplete source quests
 				-- TODO: use 'isLockedBy' property for quests
-				if not subgroup.sourceQuests or subgroup.sourceQuestsCompleted then
-					AddTomTomWaypoint(subgroup, auto, true);
+				if not o.sourceQuests or o.sourceQuestsCompleted then
+					-- don't plot waypoints for quests currently in the log
+					if not o.questID or not C_QuestLog.IsOnQuest(o.questID) then
+						AddTomTomWaypoint(o, auto, true);
+					end
 				end
 			end
 		end
