@@ -1969,11 +1969,13 @@ _.Zones =
 				}),
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ also probably cant do after a certain level
-					q(47527),	-- Rituals of Heresy
-					q(47797),	-- Occupation Hazard
-					q(49315),	-- Dreadpearl Collusion
-					q(49918),	-- Gorilla Gorge
-					q(50178),	-- Trouble in the Rootway
+					["g"] = bubbleDown({ ["races"] = HORDE_ONLY }, {
+						q(47527),	-- Rituals of Heresy
+						q(47797),	-- Occupation Hazard
+						q(49315),	-- Dreadpearl Collusion
+						q(49918),	-- Gorilla Gorge
+						q(50178),	-- Trouble in the Rootway
+					}),
 				}),
 			}),
 		}),

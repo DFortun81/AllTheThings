@@ -1744,8 +1744,9 @@ local function GetGroupItemIDWithModID(t, rawItemID, rawModID, rawBonusID)
 	if t and t.itemID then
 		return t.itemID + ((t.modID or 0) / 100) + ((t.bonusID or 0) / 1000000);
 	elseif tonumber(rawItemID) then
-		-- print("modItemID-raw",rawItemID,rawModID,rawBonusID,tonumber(rawItemID) or 0 + ((tonumber(rawModID) or 0) / 100) + ((tonumber(rawBonusID) or 0) / 10000))
-		return tonumber(rawItemID) or 0 + ((tonumber(rawModID) or 0) / 100) + ((tonumber(rawBonusID) or 0) / 1000000);
+		local i, m, b = tonumber(rawItemID) or 0, tonumber(rawModID) or 0, tonumber(rawBonusID) or 0;
+		-- print("modItemID-raw",i,m,b,i + (m / 100) + (b / 1000000))
+		return i + (m / 100) + (b / 1000000);
 	end
 end
 -- Returns the ItemID, ModID, BonusID of the provided ModItemID
@@ -3367,9 +3368,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Merge the source group for all matching Sources of the search results
 			local sourceGroup = {};
 			for i,j in ipairs(group.g or group) do
-				if GroupMatchesParams(j, paramA, paramB, false) then
+				if GroupMatchesParams(j, paramA, paramB) then
 					MergeProperties(sourceGroup, j);
-				elseif GroupMatchesParams(j, paramA, paramB) then
+				elseif GroupMatchesParams(j, paramA, paramB, true) then
 					MergeProperties(sourceGroup, j, true);
 				end
 			end
@@ -4609,6 +4610,12 @@ fieldConverters = {
 			cacheCreatureID(group, questGiverID);
 		end
 	end,
+	["altQuests"] = function(group, value)
+		_cache = rawget(fieldConverters, "questID");
+		for i,questID in ipairs(value) do
+			_cache(group, questID);
+		end
+	end,
 	["providers"] = function(group, value)
 		for _,v in pairs(value) do
 			if v[2] > 0 then
@@ -4818,15 +4825,18 @@ local function SearchForLink(link)
 				itemID = tonumber(itemID) or 0;
 				-- Don't use SourceID for artifact searches since they contain many SourceIDs
 				local sourceID = select(3, GetItemInfo(link)) ~= 6 and GetSourceID(link);
-				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID, bonusID1);
+				local exactItemID = GetGroupItemIDWithModID(nil, itemID, modID, bonusID1);
+				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 				if sourceID then
 					-- Search for the Source ID. (an appearance)
 					_ = SearchForField("s", sourceID);
 					-- print("SEARCHING FOR ITEM LINK WITH S ", link, itemID, sourceID, _ and #_);
 				else
 					-- Search for the Item ID. (an item without an appearance)
-					_ = (modItemID ~= itemID) and SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
-					-- print("SEARCHING FOR ITEM LINK ", link, modItemID, itemID, _ and #_);
+					_ = ((exactItemID ~= itemID) and SearchForField("itemID", exactItemID)) or
+						((modItemID ~= itemID) and SearchForField("itemID", modItemID)) or
+						SearchForField("itemID", itemID);
+					-- print("SEARCHING FOR ITEM LINK ", link, exactItemID, modItemID, itemID, _ and #_);
 				end
 				return _;
 			end
@@ -9329,10 +9339,67 @@ app.ImportRawLink = function(group, rawlink)
 			group.modItemID = nil;
 			-- does this link also have a sourceID?
 			local s = GetSourceID(rawlink);
+			-- print("s",s)
 			if s then group.s = s; end
 			-- if app.DEBUG_PRINT then app.PrintTable(group) end
 		end
 	end
+end
+-- Refines a set of items down to the most-accurate match to the provided modItemID
+-- The set of items will be returned once no further refinements can be made in the order of ItemID, ModID, BonusID
+app.GetBestMatchingItems = function(items, modItemID)
+	if not items or #items == 0 then return; end
+
+	local i, m, b = GetItemIDAndModID(modItemID);
+	-- refine by itemID
+	if not i or i == 0 then return items; end
+	local refined = {};
+	for _,item in ipairs(items) do
+		if item.itemID == i then
+			tinsert(refined, item);
+		end
+	end
+	if #refined == 0 then return items; end
+
+	items = refined;
+	if m == 0 then return items; end
+	-- refine by modID
+	refined = {};
+	for _,item in ipairs(items) do
+		if item.modID == m then
+			tinsert(refined, item);
+		end
+	end
+	if #refined == 0 then return items; end
+
+	items = refined;
+	if b == 0 then return items; end
+	-- refine by bonusID
+	refined = {};
+	for _,item in ipairs(items) do
+		if item.bonusID == b then
+			tinsert(refined, item);
+		end
+	end
+	if #refined == 0 then return items; end
+	return refined;
+end
+-- Returns the depth at which a given Item matches the provided modItemID
+-- 1 = ItemID, 2 = ModID, 3 = BonusID
+app.ItemMatchDepth = function(item, modItemID)
+	if not item or not item.itemID then return; end
+	local i, m, b = GetItemIDAndModID(modItemID);
+	local depth = 0;
+	if item.itemID == i then
+		depth = depth + 1;
+		if item.modID == m then
+			depth = depth + 1;
+			if item.bonusID == b then
+				depth = depth + 1;
+			end
+		end
+	end
+	return depth;
 end
 end)();
 
@@ -10409,10 +10476,17 @@ app.TryPopulateQuestRewards = function(questObject)
 				if link then
 					local item = {};
 					app.ImportRawLink(item, link);
+					-- if item.itemID == 137483 then
+					-- 	app.DEBUG_PRINT = item.itemID;
+					-- 	print("item.initial parse")
+					-- 	app.PrintTable(item)
+					-- end
 					-- if app.DEBUG_PRINT then print("Parse Link", link) end
 					if item.itemID then
 						-- if app.DEBUG_PRINT then print(_, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1); end
-						local search, subItems = SearchForLink(link), {};
+						local search = SearchForLink(link);
+						-- search will either match through bonusID, modID, or itemID in that priority
+
 						-- put all the item information into a basic table
 						-- if app.DEBUG_PRINT then app.PrintTable(item) end
 						-- block the group from being collectible as a cost if the option is not enabled
@@ -10420,23 +10494,29 @@ app.TryPopulateQuestRewards = function(questObject)
 							item.collectibleAsCost = false;
 						end
 						if search then
-							-- find the specific item which the link represents
-							local modItemID, count, data = GetGroupItemIDWithModID(nil, itemID, item.modID, item.bonusID), #search;
-							-- if app.DEBUG_PRINT then print("Search for",modItemID,#search) end
-							for i=1,count,1 do
-								data = search[i];
-								-- if app.DEBUG_PRINT then print("cached",data.key,data[data.key]) end
-								-- cache record is the exact item from the WQ reward
-								if GroupMatchesParams(data, "itemID", modItemID, true) then
-									-- create the object which will be in the actual list
-									-- if app.DEBUG_PRINT then print(modItemID," ? found cached") end
-									MergeProperties(item, data, true);
-									NestObjects(item, data.g);	-- no clone since item is cloned later
+							-- if app.DEBUG_PRINT then print("Initial search",#search,link) end
+							-- find the specific item which the link represents (not sure all of this is necessary with improved search)
+							local exactItemID = GetGroupItemIDWithModID(item);
+							local modItemID = GetGroupItemIDWithModID(nil, item.itemID, item.modID);
+							-- sort the search results by how closely they match the item itself
+							local subItems, merged = {};
+							-- merge the 'most accurate' Source ATT item first
+							-- same as the search results for sourceGroup finding...
+							for i,j in ipairs(search) do
+								-- if app.DEBUG_PRINT then print("cached",j.key,j.key and j[j.key],j.modItemID,exactItemID,modItemID) end
+								if GroupMatchesParams(j, "itemID", exactItemID) or GroupMatchesParams(j, "itemID", modItemID) then
+									merged = true;
+									MergeProperties(item, j);
+									NestObjects(item, j.g);	-- no clone since item is cloned later
+									-- if app.DEBUG_PRINT then print("replace merge") app.PrintTable(item) end
+								elseif not merged and GroupMatchesParams(j, "itemID", modItemID, true) then
+									MergeProperties(item, j, true);
+									NestObjects(item, j.g);	-- no clone since item is cloned later
+									-- if app.DEBUG_PRINT then print("merge") app.PrintTable(item) end
 								else
-									tinsert(subItems, data);
+									tinsert(subItems, j);
 								end
 							end
-
 							-- then pull in any other sub-items which were not the item itself
 							NestObjects(item, subItems);	-- no clone since item is cloned later
 						end
@@ -10447,6 +10527,7 @@ app.TryPopulateQuestRewards = function(questObject)
 						item.link = nil;
 						NestObject(questObject, item, true);
 					end
+					-- if app.DEBUG_PRINT then app.DEBUG_PRINT = nil; end
 				end
 			end
 		end

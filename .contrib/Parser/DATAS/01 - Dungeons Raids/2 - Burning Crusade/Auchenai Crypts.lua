@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(247, {	-- Auchenai Crypts
 		["lore"] = "Auchenai Crypts is the main seat of power for the Auchenai - a renegade religious sect of draenei led by the Exarch Maladaar. The crypts are populated by these draenei and the unliving creatures they have summoned. The most important remains interred within the crypt are those of D'ore, one of the naaru. D'ore perished in the collision that brought Oshu'gun (and the draenei) to Draenor. In death, D'ore entered its void stage. The dark energies exuded by this phenomenon resulted, directly or indirectly, in the evils that have since befallen the crypts.",
 		["coord"] = { 34.34, 65.61, TEROKKAR_FOREST },	-- Auchenai Crypts, Terokkar Forest
@@ -274,13 +274,13 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 		},
 	}),
-}))};
+})));
 
 -- #if AFTER 4.3.0
 -- This version of the quest never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(29597),	-- The End of the Exarch
 	}),
-});
+}));
 -- #endif

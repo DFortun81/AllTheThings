@@ -1249,7 +1249,32 @@ _.Zones =
 					["provider"] = { "n", 80740 },	-- Ravenspeaker Sekara
 				}),
 				n(BONUS_OBJECTIVES, {
-					-- TODO: Check SQ also probably cant do after a certain level
+					-- TODO: Check SQ
+					q(36860, {	-- Assault on Lost Veil Anzu
+						["coord"] = { 73.0, 43.0, SPIRES_OF_ARAK },
+						-- This is the only bonus objective without A/H difference
+						["isRepeatable"] = true,
+					}),
+					q(36490, {	-- Assault on Pillars of Fate (A)
+						["coord"] = { 72.0, 26.0, SPIRES_OF_ARAK },
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(36491, {	-- Assault on Pillars of Fate (H)
+						["coord"] = { 72.0, 26.0, SPIRES_OF_ARAK },
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(36069, {	-- Assault on Skettis (A)
+						["coord"] = { 56.0, 10.0, SPIRES_OF_ARAK },
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(36070, {	-- Assault on Skettis (H)
+						["coord"] = { 56.0, 10.0, SPIRES_OF_ARAK },
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
+					}),
 					q(36792, {	-- Bladefist Hold
 						["coord"] = { 29.2, 30.0, SPIRES_OF_ARAK },
 					}),

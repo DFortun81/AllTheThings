@@ -375,7 +375,15 @@ namespace ATT
         static void ProcessImportCommand(string[] command, StringBuilder builder, string content, ref int index, int length)
         {
             string filename = "..\\..\\..\\..\\..\\..\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\" + string.Join(" ", command.Skip(1));
-            if (File.Exists(filename))
+            if(Directory.Exists(filename))
+            {
+                foreach(var file in Directory.GetFiles(filename, "*.lua", SearchOption.AllDirectories))
+                {
+                    if (index > 0) builder.Append("\n");
+                    builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(file))).Append("\nend)();");
+                }
+            }
+            else if (File.Exists(filename))
             {
                 if (index > 0) builder.Append("\n");
                 builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(filename))).Append("\nend)();");

@@ -86,16 +86,6 @@ _.Zones =
 					["provider"] = { "n", 77998 },	-- Molthron
 					["coord"] = { 43.5, 15.5, FROSTFIRE_RIDGE },
 				}),
-				q(35641, {	-- Assault on Stonefury Cliffs
-					["provider"] = { "i", 122405 },	-- Scouting Missive: Stonefury Cliffs
-					["coord"] = { 44.0, 20.0, FROSTFIRE_RIDGE },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(35641, {	-- Assault on Stonefury Cliffs
-					["coord"] = { 44.0, 20.0, FROSTFIRE_RIDGE },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(34070, {	-- At the End of Your Rope
 					["provider"] = { "n", 77210 },	-- Scout Ruk'Gan
 					["coord"] = { 82.6, 69.8, FROSTFIRE_RIDGE },
@@ -1247,12 +1237,61 @@ _.Zones =
 					["sourceQuest"] = 33468,	-- Save Wolf Home
 				}),
 				n(BONUS_OBJECTIVES, {
-					-- TODO: Check SQ also probably cant do after a certain level
-					q(37623, {	-- Assault on Stonefury Cliffs
+					-- TODO: Check SQ
+					q(37625, {	-- Assault on Magnarok (A)
+						["coord"] = { 70.0, 30.0, FROSTFIRE_RIDGE },
+						["races"] = ALLIANCE_ONLY,
+						["u"] = NEVER_IMPLEMENTED,
+					}),
+					q(37626, {	-- Assault on Magnarok (H)
+						["coord"] = { 70.0, 30.0, FROSTFIRE_RIDGE },
+						["races"] = HORDE_ONLY,
+					}),
+					q(36826, {	-- Assault on Magnarok (A)
+						["coord"] = { 70.0, 30.0, FROSTFIRE_RIDGE },
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(36827, {	-- Assault on Magnarok (H)
+						["coord"] = { 70.0, 30.0, FROSTFIRE_RIDGE },
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(37623, {	-- Assault on Stonefury Cliffs (A)
+						["coord"] = { 44.0, 18.0, FROSTFIRE_RIDGE },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(37622, {	-- Assault on the Iron Siegeworks
+					q(37624, {	-- Assault on Stonefury Cliffs (H)
+						["coord"] = { 44.0, 18.0, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,
+					}),
+					q(35637, {	-- Assault on Stonefury Cliffs (A)
+						["coord"] = { 44.0, 18.0, FROSTFIRE_RIDGE },
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(35641, {	-- Assault on Stonefury Cliffs (H)
+						["coord"] = { 44.0, 18.0, FROSTFIRE_RIDGE },
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(37585, {	-- Assault on the Iron Siegeworks (A)
+						["coord"] = { 85.0, 52.0, FROSTFIRE_RIDGE },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(37622, {	-- Assault on the Iron Siegeworks (H)
+						["coord"] = { 85.0, 52.0, FROSTFIRE_RIDGE },
+						["races"] = HORDE_ONLY,
+					}),
+					q(36822, {	-- Assault on the Iron Siegeworks (A)
+						["coord"] = { 85.0, 52.0, FROSTFIRE_RIDGE },
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(36823, {	-- Assault on the Iron Siegeworks (H)
+						["coord"] = { 85.0, 52.0, FROSTFIRE_RIDGE },
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
 					}),
 					q(34505, {	-- Forbidden Glacier
 						["coord"] = { 25.5, 55.0, FROSTFIRE_RIDGE },
@@ -1308,6 +1347,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 });
 _.HiddenQuestTriggers = {
-	q(37585),	-- Completing "These Look Familiar"
 	q(36904),	-- Actived Ogre Waygate at 59.6, 47.5
 };

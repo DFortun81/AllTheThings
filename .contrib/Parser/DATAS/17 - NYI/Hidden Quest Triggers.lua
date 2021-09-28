@@ -1730,15 +1730,10 @@ _.HiddenQuestTriggers = {
 		q(37197),	-- See Rexxar Quest Giver 002 (Garrison Campaign for Darktide Roost)
 
 		-- ASSAULTS
-		q(36808),	-- Missive completion: Assault on Shattrath Harbour (Alliance)
-		q(36338),	-- Missive completion: Assault on Shattrath Harbour (Horde)
-		q(37635),	-- Missive completion: Assault on Shattrath Harbour (Alliance - Removed)
-		q(36809),	-- Missive completion: Assault on the Heart of Shattrath
 		q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36664),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Alliance character)
-		q(36807),	-- Assault on the Heart of Shattrath (When completing the criteria for Assault on the Hearth of Shattrath on Horde character)
 		q(36537),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
 		q(36558),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
 		q(36532),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
@@ -1757,8 +1752,6 @@ _.HiddenQuestTriggers = {
 		q(36553),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
 		q(36541),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
 		q(36554),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
-		q(37634),	-- Assault on Darktide Roost (Removed from game, Horde)
-		q(36821),	-- Assault on the Gorian Proving Grounds (Removed from game, Horde)
 		q(37646),	-- See New Brightstone, See Wolfed Out Thorn (Garrison Attack?)
 
 		-- GARRISON COMMAND TABLE

@@ -497,6 +497,12 @@ _.ExpansionFeatures =
 								["questID"] = 38179,
 								["repeatable"] = true,
 							}),
+							i(122419, {	-- Scouting Missive: Gorian Proving Grounds
+								["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+								["questID"] = 38202,
+								["repeatable"] = true,
+								["u"] = NEVER_IMPLEMENTED,
+							}),
 							i(122402, {	-- Scouting Missive: Iron Siegeworks
 								["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
 								["questID"] = 38178,

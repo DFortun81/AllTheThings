@@ -1533,7 +1533,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 			})),
 			i(169448, {	-- Bottomless Brewfest Stein
 				-- #if AFTER TRANSMOG
-				["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
+				["description"] = "Fill up the stein with one brew, unequip and re-equip the filled stein, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
 				-- #endif
 				["timeline"] = { "added 8.0.1" },
 				["groups"] = {

@@ -1516,26 +1516,16 @@ _.Zones =
 				}),
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ also probably cant do after a certain level
-					q(48525, {	-- Break Them to Splinters
-						["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
-					}),
-					q(48474, {	-- Crypt Keepers
-						["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
-					}),
-					q(47969, {	-- Fallhaven's Curse
-						["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
-					}),
-					q(48181),	-- Nooooope
-					q(48680, {	-- Not the Bees!
-						["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
-					}),
-					q(50959),	-- Plundering Pirates
-					q(50448, {	-- Reclaiming Corlain
-						["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
-					}),
-					q(45972),	-- The Accursed Thicket
-					q(50091, {	-- Village Repair
-						["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
+					["g"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {
+						q(48525),	-- Break Them to Splinters
+						q(48474),	-- Crypt Keepers
+						q(47969),	-- Fallhaven's Curse
+						q(48181),	-- Nooooope
+						q(48680),	-- Not the Bees!
+						q(50959),	-- Plundering Pirates
+						q(50448),	-- Reclaiming Corlain
+						q(45972),	-- The Accursed Thicket
+						q(50091),	-- Village Repair
 					}),
 				}),
 --[[	raw quest list to check against
