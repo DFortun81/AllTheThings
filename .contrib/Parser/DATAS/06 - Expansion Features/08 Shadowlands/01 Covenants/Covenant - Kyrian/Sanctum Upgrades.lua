@@ -657,13 +657,33 @@ _.ExpansionFeatures =
 								["description"] = "Blueprints teach Dactylis recipes that allow you to craft gear for your Aspirants to use in the Path of Ascension battles.",
 								["crs"] = { 168430 },	-- Dactylis
 								["g"] = {
+									i(184578, {	-- Artisan Tool Belt
+										["cost"] = {
+											{ "i", 180594, 8 },	-- Calloused Bone
+											{ "i", 180478, 10 },	-- Champion's Pelt
+											{ "i", 180477, 8 },	-- Elysian Feathers
+											{ "i", 180595, 6 },	-- Nightforged Steel
+										},
+									}),
 									q(62976, {	-- Artisan Tool Belt
 										["sourceQuests"] = { 62981 },	-- Blueprint: Artisan Tool Belt
 										["provider"] = { "i", 184578 },	-- Artisan Tool Belt
 									}),
+									i(181499, {	-- Deep Echo Trident
+										["cost"] = {
+											{ "i", 180594, 6 },	-- Calloused Bone
+											{ "i", 180595, 8 },	-- Nightforged Steel
+										},
+									}),
 									q(60945, {	-- Deep Echo Trident
 										["sourceQuests"] = { 60946 },	-- Blueprint: Deep Echo Trident
 										["provider"] = { "i", 181499 },	-- Deep Echo Trident
+									}),
+									i(184580, {	-- Gilded Abacus
+										["cost"] = {
+											{ "i", 180594, 12 },	-- Calloused Bone
+											{ "i", 180595, 16 },	-- Nightforged Steel
+										},
 									}),
 									q(61714, {	-- Gilded Abacus
 										["sourceQuests"] = { 62971 },	-- Blueprint: Gilded Abacus
@@ -675,21 +695,57 @@ _.ExpansionFeatures =
 										["provider"] = { "n", 168427 },	-- Artemede
 										["coord"] = { 28.2, 42.4, ARCHONS_RISE },
 									}),
+									i(184478, {	-- Phial of Serenity
+										["cost"] = {
+											{ "i", 180594, 2 },	-- Calloused Bone
+											{ "i", 180478, 2 },	-- Champion's Pelt
+											{ "i", 180477, 12 },	-- Elysian Feathers
+											{ "i", 180595, 2 },	-- Nightforged Steel
+										},
+									}),
 									q(60974, {	-- Phial of Serenity
 										["sourceQuests"] = { 60973 },	-- Blueprint: Phial of Serenity
 										["provider"] = { "i", 184478 },	-- Phial of Serenity
+									}),
+									i(184481, {	-- Ring of Warding
+										["cost"] = {
+											{ "i", 180594, 8 },	-- Calloused Bone
+											{ "i", 180478, 8 },	-- Champion's Pelt
+											{ "i", 180595, 6 },	-- Nightforged Steel
+										},
 									}),
 									q(62998, {	-- Ring of Warding
 										["sourceQuests"] = { 62928 },	-- Blueprint: Ring of Warding
 										["provider"] = { "i", 184481 },	-- Ring of Warding
 									}),
+									i(184475, {	-- Spiritforged Aegis
+										["cost"] = {
+											{ "i", 180594, 2 },	-- Calloused Bone
+											{ "i", 180478, 2 },	-- Champion's Pelt
+											{ "i", 180477, 10 },	-- Elysian Feathers
+											{ "i", 180595, 6 },	-- Nightforged Steel
+										},
+									}),
 									q(62995, {	-- Spiritforged Aegis
 										["sourceQuests"] = { 60975 },	-- Blueprint: Spiritforged Aegis
 										["provider"] = { "i", 184475 },	-- Spiritforged Aegis
 									}),
+									i(184577, {	-- Steward Mail Pouch
+										["cost"] = {
+											{ "i", 180478, 20 },	-- Champion's Pelt
+											{ "i", 180477, 12 },	-- Elysian Feathers
+										},
+									}),
 									q(62483, {	-- Steward Mail Pouch
 										["sourceQuests"] = { 62970 },	-- Blueprint: Steward Mail Pouch
 										["provider"] = { "i", 184577 },	-- Steward Mail Pouch
+									}),
+									i(184477, {	-- Vial of Lichfrost
+										["cost"] = {
+											{ "i", 180594, 8 },	-- Calloused Bone
+											{ "i", 180478, 2 },	-- Champion's Pelt
+											{ "i", 180595, 2 },	-- Nightforged Steel
+										},
 									}),
 									q(62996, {	-- Vial of Lichfrost
 										["sourceQuests"] = { 62997 },	-- Blueprint: Vial of Lichfrost
