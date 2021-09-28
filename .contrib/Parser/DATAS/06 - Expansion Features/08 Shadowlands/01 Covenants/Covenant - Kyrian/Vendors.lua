@@ -849,6 +849,21 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),
+					n(174582, {	-- Caretaker Caryn
+						["coord"] = { 26.4, 33.8, ARCHONS_RISE },
+						["g"] = {
+							i(184444, {	-- Supplies for the Path
+								["description"] = "Contains around 15-20 of each rare-quality crafting material for Path of Ascension crafting.",
+								["cost"] = { { "c", 1819, 5 } },	-- 5x Medallion of Service
+								["g"] = {
+									i(180594),	-- Calloused Bone
+									i(180478),	-- Champion's Pelt
+									i(180477),	-- Elysian Feathers
+									i(180595),	-- Nightforged Steel
+								},
+							}),
+						},
+					}),
 					n(175823, {	-- Forgelite Neptira <Kyrian Armorsmith>
 						["coord"] = { 56.9, 30.9, SANCTUM_OF_BINDING },
 						["g"] = {

@@ -234,6 +234,7 @@ _.Zones =
 				n(177829, {	-- Ko'tul <Exchange Specialist>
 					["coord"] = { 63.8, 36.0, ORIBOS },
 					["g"] = {
+						i(187817),	-- Korthite Crystal Geode
 						i(187222),	-- Stygic Singularity
 						i(187221),	-- Soul Ash Cache
 						i(187254),	-- Arrangement of Anima
