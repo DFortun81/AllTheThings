@@ -1247,7 +1247,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 						}),
 						q(54164, {	-- The King's Death
-							["sourceQuests"] = { 54282 },	-- Battle of Dazar'alor
+						-- ["sourceQuests"] = { 54282 },	-- Battle of Dazar'alor 	-- Confirmed as not a prerequisite
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
@@ -1526,7 +1526,7 @@ _.ExpansionFeatures =
 
 						-- Escape of Saurfang
 						q(54097, {	-- The Dark Lady Calls
-						--	["sourceQuests"] = { 53981 },	-- The Day is Won		-- TODO: need to be confirmed
+							["sourceQuests"] = { 54165 }, 	-- The Return of Derek Proudmoore
 							["provider"] = { "n", 146013 },	-- Dark Ranger Alina
 							["coord"] = { 58.4, 62.7, ZULDAZAR },
 							["races"] = HORDE_ONLY,
