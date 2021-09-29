@@ -820,9 +820,9 @@ for key,value in pairs({
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Malignos para siempre",	-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			--TODO: [-931] = GetSpellInfo(7851),					-- Lesser Spirit
-			--TODO: [-932] = GetSpellInfo(172153),					-- Spirit
-			--TODO: [-933] = GetSpellInfo(13826),					-- Greater Spirit
+			[-931] = GetSpellInfo(172153),							-- Spirit
+			[-932] = GetSpellInfo(13826),							-- Greater Spirit
+			[-933] = "Espíritu divino",								-- Divine Spirit
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 			--TODO: [-937] = "Transport Network",					-- Transport Network (Night Fae)

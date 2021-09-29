@@ -439,7 +439,7 @@ _.ExpansionFeatures =
 							}),
 							-- Spirits/Transmog
 							-- TODO: do these all need their own 'tier' of seed sub-header? they're already split by the minimum Spirit item required...
-							n(-931, {	-- Lesser Spirit
+							n(-931, {	-- Spirit
 								["description"] = "Requires minimum |cFFFFD7001x|r Wildseed Root Grain. It's possible to receive rewards from higher quality spirits of the same type as well.",
 								["g"] = {
 									i(178881, {	--	Dutiful Spirit (Uncommon) [Bastion]
@@ -475,7 +475,7 @@ _.ExpansionFeatures =
 									}),
 								},
 							}),
-							n(-932, {	-- Spirit
+							n(-932, {	-- Greater Spirit
 								["description"] = "Requires minimum |cFFFFD7002x|r Wildseed Root Grain. It's possible to receive rewards from lower & higher quality spirits of the same type as well.",
 								["g"] = {
 									i(178880, {	--	Divine Dutiful Spirit (Rare)
@@ -525,7 +525,7 @@ _.ExpansionFeatures =
 									}),
 								},
 							}),
-							n(-933, {	-- Greater Spirit
+							n(-933, {	-- Divine Spirit
 								["description"] = "Requires minimum |cFFFFD7004x|r Wildseed Root Grain. It's possible to receive rewards from lower quality spirits of the same type as well.",
 								["g"] = {
 									i(178879, {	--	Greater Dutiful Spirit (Epic)
