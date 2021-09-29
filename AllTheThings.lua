@@ -3923,8 +3923,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					left = group.text or RETRIEVING_DATA;
 					if not working and (left == RETRIEVING_DATA or left:find("%[]")) then working = true; end
 
-					-- If this group has a specific Class requirement, tack that on as well
-					if group.c and #group.c == 1 then
+					-- If this group has a specific Class requirement and is not itself a 'Class' header, tack that on as well
+					if group.c and group.key ~= "classID" and #group.c == 1 then
 						local class = GetClassInfo(group.c[1]);
 						left = left .. " [" .. app.TryColorizeName(group, class) .. "]";
 					end
