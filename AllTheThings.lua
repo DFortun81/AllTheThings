@@ -3158,7 +3158,7 @@ local function FillPurchases(group, depth)
 		local rawParent = rawget(group, "parent");
 		if rawParent and rawParent.saved then return; end
 	end
-	-- print("FillPurchases",group.itemID,group.currencyID,depth)
+	-- if app.DEBUG_PRINT then print("FillPurchases",group.modItemID,group.currencyID,depth) end
 
 	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles or group.costCollectibles);
 	if collectibles and #collectibles > 0 then
@@ -3166,7 +3166,7 @@ local function FillPurchases(group, depth)
 		local usedToBuy = app.CreateNPC(-2, { ["text"] = L["CURRENCY_FOR"] } );
 		NestObject(group, usedToBuy);
 		PriorityNestObjects(usedToBuy, collectibles, true, app.RecursiveGroupRequirementsFilter);
-		-- print("Filled",#collectibles,"under",group.key,group.key and group[group.key],"as",#usedToBuy.g,"unique groups")
+		-- if app.DEBUG_PRINT then print("Filled",#collectibles,"under",group.key,group.key and group[group.key],"as",#usedToBuy.g,"unique groups") end
 		-- reduce the depth by one since a cost has been filled
 		depth = depth - 1;
 		-- mark this group as no-longer collectible as a cost since its collectible contents have been filled under itself
@@ -3701,33 +3701,77 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		local root;
 		local nested = {};
 		-- print("Find Root for",paramA,paramB);
-		for i,o in ipairs(group) do
-			-- If the obj "is" the root obj
-			-- print(o.key,o[o.key],"=parent>",o.parent and o.parent.key,o.parent and o.parent[o.parent.key]);
-			if GroupMatchesParams(o, paramA, paramB) or not root and GroupMatchesParams(o, paramA, paramB, true) then
-				-- object meets filter criteria and is exactly what is being searched
-				if app.RecursiveGroupRequirementsFilter(o) then
-					-- print("Create Filtered root",o.key,o[o.key],o.modItemID,paramB);
-					if root then
-						local otherRoot = root;
-						-- print("Replace root",otherRoot.key,otherRoot[otherRoot.key]);
-						root = o;
-						MergeProperties(root, otherRoot);
-						-- previous root content will be nested after
-						if otherRoot.g then
-							MergeObjects(nested, otherRoot.g);
+		-- check for Item groups in a special way to account for extra ID's
+		if paramA == "itemID" then
+			local refinedMatches = app.GroupBestMatchingItems(group, paramB);
+			if refinedMatches then
+				-- move from depth 3 to depth 1 to find the set of items which best matches for the root
+				for depth=3,1,-1 do
+					if refinedMatches[depth] then
+						-- print("refined",depth,#refinedMatches[depth])
+						if not root then
+							for _,o in ipairs(refinedMatches[depth]) do
+								-- object meets filter criteria and is exactly what is being searched
+								if app.RecursiveGroupRequirementsFilter(o) then
+									-- print("filtered root");
+									if root then
+										local otherRoot = root;
+										-- print("replace root",otherRoot.key,otherRoot[otherRoot.key]);
+										root = o;
+										MergeProperties(root, otherRoot);
+										-- previous root content will be nested after
+										if otherRoot.g then
+											MergeObjects(nested, otherRoot.g);
+										end
+									else
+										root = o;
+									end
+								else
+									-- print("unfiltered root",o.key,o[o.key],o.modItemID,paramB);
+									if root then MergeProperties(root, o, true);
+									else root = o; end
+								end
+							end
+						else
+							for _,o in ipairs(refinedMatches[depth]) do
+								-- Not accurate matched enough to be the root, so it will be nested
+								-- print("nested")
+								tinsert(nested, o);
+							end
+						end
+					end
+				end
+			end
+		else
+			for _,o in ipairs(group) do
+				-- If the obj "is" the root obj
+				-- print(o.key,o[o.key],o.modItemID,"=parent>",o.parent and o.parent.key,o.parent and o.parent.key and o.parent[o.parent.key]);
+				if GroupMatchesParams(o, paramA, paramB) then
+					-- object meets filter criteria and is exactly what is being searched
+					if app.RecursiveGroupRequirementsFilter(o) then
+						-- print("filtered root");
+						if root then
+							local otherRoot = root;
+							-- print("replace root",otherRoot.key,otherRoot[otherRoot.key]);
+							root = o;
+							MergeProperties(root, otherRoot);
+							-- previous root content will be nested after
+							if otherRoot.g then
+								MergeObjects(nested, otherRoot.g);
+							end
+						else
+							root = o;
 						end
 					else
-						root = o;
+						-- print("unfiltered root",o.key,o[o.key],o.modItemID,paramB);
+						if root then MergeProperties(root, o, true);
+						else root = o; end
 					end
 				else
-					-- print("Create Unfiltered root",o.key,o[o.key],o.modItemID,paramB);
-					if root then MergeProperties(root, o, true);
-					else root = o; end
+					-- Not the root, so it will be nested
+					-- print("nested")
+					tinsert(nested, o);
 				end
-			else
-				-- Not the root, so it will be nested
-				tinsert(nested, o);
 			end
 		end
 		if not root then
@@ -3996,7 +4040,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	group.working = working;
 	cache[2] = (working and 0.01) or 100000000;
 	-- if working then print("still working...")
-	-- else print("Cached Search",search,paramA,paramB,#group.tooltipInfo); end
+	-- else print("Cached Search",search,paramA,paramB,group.tooltipInfo and #group.tooltipInfo); end
 	cache[3] = group;
 
 	-- Check if finally leaving the top-level search
@@ -8476,7 +8520,7 @@ local function default_link(t)
 		elseif bonusID then
 			itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
 		elseif modID then
-			itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, modID);
+			itemLink = string.format("item:%d:::::::::::%d::", itemLink, modID);
 		else
 			itemLink = string.format("item:%d:::::::::::::", itemLink);
 		end
@@ -9335,7 +9379,7 @@ app.ImportRawLink = function(group, rawlink)
 		group.rawlink = rawlink;
 		local _, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", rawlink);
 		if linkItemID then
-			-- print("ImportRawLink",rawlink)
+			-- print("ImportRawLink",rawlink,linkItemID,modID,bonusCount,bonusID1)
 			-- set raw fields in the group based on the link
 			group.itemID = tonumber(linkItemID);
 			group.modID = modID and tonumber(modID);
@@ -9352,44 +9396,23 @@ app.ImportRawLink = function(group, rawlink)
 		end
 	end
 end
--- Refines a set of items down to the most-accurate match to the provided modItemID
--- The set of items will be returned once no further refinements can be made in the order of ItemID, ModID, BonusID
-app.GetBestMatchingItems = function(items, modItemID)
+-- Refines a set of items down to the most-accurate matches to the provided modItemID
+-- The sets of items will be returned based on their respective match depth to the given modItemID
+-- Ex: { [1] = { { ItemID }, { ItemID2 } }, [2] = { { ModID } }, [3] = { { BonusID } } }
+app.GroupBestMatchingItems = function(items, modItemID)
 	if not items or #items == 0 then return; end
-
-	local i, m, b = GetItemIDAndModID(modItemID);
-	-- refine by itemID
-	if not i or i == 0 then return items; end
-	local refined = {};
+	-- print("refining",#items,"by depth to",modItemID)
+	-- local i, m, b = GetItemIDAndModID(modItemID);
+	local refinedBuckets, GetDepth, depth = {}, app.ItemMatchDepth;
 	for _,item in ipairs(items) do
-		if item.itemID == i then
-			tinsert(refined, item);
+		depth = GetDepth(item, modItemID);
+		if depth then
+			-- print("added refined item",depth,item.modItemID,item.key,item.key and item[item.key])
+			if refinedBuckets[depth] then tinsert(refinedBuckets[depth], item)
+			else refinedBuckets[depth] = { item }; end
 		end
 	end
-	if #refined == 0 then return items; end
-
-	items = refined;
-	if m == 0 then return items; end
-	-- refine by modID
-	refined = {};
-	for _,item in ipairs(items) do
-		if item.modID == m then
-			tinsert(refined, item);
-		end
-	end
-	if #refined == 0 then return items; end
-
-	items = refined;
-	if b == 0 then return items; end
-	-- refine by bonusID
-	refined = {};
-	for _,item in ipairs(items) do
-		if item.bonusID == b then
-			tinsert(refined, item);
-		end
-	end
-	if #refined == 0 then return items; end
-	return refined;
+	return refinedBuckets;
 end
 -- Returns the depth at which a given Item matches the provided modItemID
 -- 1 = ItemID, 2 = ModID, 3 = BonusID
