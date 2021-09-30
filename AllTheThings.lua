@@ -5567,42 +5567,47 @@ local function GetGroupSortValue(group)
 	end
 	return -3;
 end
-local function SortGroup(group, sortType, row, recur)
-	if group.visible and group.g then
-		if sortType == "name" then
-			local txtA, txtB;
-			insertionSort(group.g, function(a, b)
-				txtA = a and string.lower(tostring(a.name or a.text)) or "";
-				txtB = b and string.lower(tostring(b.name or b.text)) or "";
-				if txtA then
-					if txtB then return txtA < txtB; end
-					return true;
-				end
-				return false;
-			end);
-		elseif sortType == "progress" then
-			local progA, progB;
-			insertionSort(group.g, function(a, b)
-				progA = GetGroupSortValue(a);
-				progB = GetGroupSortValue(b);
-				if progA then
-					if progB then return progA > progB; end
-					return true;
-				end
-				return false;
-			end);
-		else
-			local sortA, sortB;
-			insertionSort(group.g, function(a, b)
-				sortA = a and tostring(a[sortType]);
-				sortB = b and tostring(b[sortType]);
-				return sortA < sortB;
-			end);
+-- Sorts a group using the provided sortType, whether to recurse through nested groups, and whether sorting should only take place given the group having a conditional field
+local function SortGroup(group, sortType, row, recur, conditionField)
+	if group.g then
+		-- either sort visible groups or by conditional
+		if (not conditionField and group.visible) or (conditionField and group[conditionField]) then
+			-- print("sorting",group.key,group.key and group[group.key],"by",sortType,"recur",recur,"condition",conditionField)
+			if sortType == "name" then
+				local txtA, txtB;
+				insertionSort(group.g, function(a, b)
+					txtA = a and string.lower(tostring(a.name or a.text)) or "";
+					txtB = b and string.lower(tostring(b.name or b.text)) or "";
+					if txtA then
+						if txtB then return txtA < txtB; end
+						return true;
+					end
+					return false;
+				end);
+			elseif sortType == "progress" then
+				local progA, progB;
+				insertionSort(group.g, function(a, b)
+					progA = GetGroupSortValue(a);
+					progB = GetGroupSortValue(b);
+					if progA then
+						if progB then return progA > progB; end
+						return true;
+					end
+					return false;
+				end);
+			else
+				local sortA, sortB;
+				insertionSort(group.g, function(a, b)
+					sortA = a and tostring(a[sortType]);
+					sortB = b and tostring(b[sortType]);
+					return sortA < sortB;
+				end);
+			end
 		end
 		-- TODO: Add more sort types?
 		if recur then
-			for i,o in ipairs(group.g) do
-				SortGroup(o, sortType, nil, recur);
+			for _,o in ipairs(group.g) do
+				SortGroup(o, sortType, nil, recur, conditionField);
 			end
 		end
 	end
@@ -15860,6 +15865,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		local topHeaders = {
 		-- ACHIEVEMENTS = -4
 			[-4] = true,
+		-- BUILDINGS = -99;
+			[-99] = true,
 		-- COMMON_BOSS_DROPS = -1;
 			[-1] = true,
 		-- FACTIONS = -6013;
@@ -15881,6 +15888,11 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		-- ZONE_DROPS = 0;
 			[0] = true,
 		};
+		-- Headers possible in a hierarchy that should just be ignored
+		local ignoredHeaders = {
+		-- GARRISONS
+			[-9966] = true,
+		};
 		self.Rebuild = function(self)
 			-- print("Rebuild",self.mapID);
 			-- check if this is the same 'map' for data purposes
@@ -15894,7 +15906,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- Simplify the returned groups
 				local groups, nested = {};
 				local header = app.CreateMap(self.mapID, { g = groups });
-				for i, group in ipairs(results) do
+				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
 					group = CreateObject(group);
 					nested = nil;
@@ -15919,7 +15931,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						-- Pre-nest some groups based on their type after grabbing the parent
 						-- Achievements / Achievement / Criteria
 						if group.key == "criteriaID" and group.achievementID then
-							group = app.CreateAchievement(group.achievementID, { ["collectible"] = false, g = { group } });
+							group = app.CreateAchievement(group.achievementID, { ["collectible"] = false, g = { group }, ["sort"] = true });
 						end
 
 						while nextParent do
@@ -15929,18 +15941,18 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 								if topHeaders[headerID] then
 									-- already found a matching header, then nest it before switching
 									if topHeader then
-										group = app.CreateNPC(topHeader, { g = { group } });
+										group = app.CreateNPC(topHeader, { g = { group }, ["sort"] = true });
 									end
 									topHeader = headerID;
-								else
-									group = app.CreateNPC(headerID, { g = { group } });
+								elseif not ignoredHeaders[headerID] then
+									group = app.CreateNPC(headerID, { g = { group }, ["sort"] = true });
 									nested = true;
 								end
 							else
 								for hkey,hf in pairs(subGroupKeys) do
 									if nextParent[hkey] then
 										-- create the specified group Type header
-										group = hf(nextParent[hkey], { g = { group } });
+										group = hf(nextParent[hkey], { g = { group }, ["sort"] = true });
 										nested = true;
 										break;
 									end
@@ -15950,7 +15962,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						end
 						-- Create/match the header chain for the zone list assuming it matches one of the allowed top headers
 						if topHeader then
-							group = app.CreateNPC(topHeader, { g = { group } });
+							group = app.CreateNPC(topHeader, { g = { group }, ["sort"] = true });
 							nested = true;
 						end
 					end
@@ -15958,14 +15970,15 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					-- couldn't nest this thing using custom headers, try to use the keys to figure it out
 					if not nested and group then
 						if group.key == "speciesID" then
-							group = app.CreateFilter(101, { g = { group } });
+							group = app.CreateFilter(101, { g = { group }, ["sort"] = true });
 						elseif group.key == "questID" then
-							group = app.CreateNPC(-17, { g = { group } });
+							group = app.CreateNPC(-17, { g = { group }, ["sort"] = true });
 						elseif group.key == "criteriaID" and group.achievementID then
 							-- Achievements / Achievement / Criteria
-							group = app.CreateNPC(-4, { g = { app.CreateAchievement(group.achievementID, { ["collectible"] = false, g = { group } }) } });
+							group = app.CreateNPC(-4, { g = { app.CreateAchievement(group.achievementID, { ["collectible"] = false, g = { group }, ["sort"] = true }) }, ["sort"] = true });
 						end
-						-- otherwise the group itself will be the topHeader in the minilist
+						-- otherwise the group itself will be the topHeader in the minilist, and its content will be sorted since it may be merging with an existing group
+						group.sort = true;
 						nested = true;
 					end
 
@@ -15977,7 +15990,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				end
 
 				-- Check for timewalking difficulty objects
-				for i, group in ipairs(groups) do
+				for _,group in ipairs(groups) do
 					if group.difficultyID then
 						if group.difficultyID == 24 and group.g then
 							-- Look for a Common Boss Drop header.
@@ -16011,13 +16024,12 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					end
 				end
 
-				-- Swap out the map data for the header.
-				results = header;
-
 				if self.data then wipe(self.data); end
-				self.data = results;
+				-- Swap out the map data for the header.
+				self.data = header;
 				self.data.u = nil;
 				self.data.mapID = self.mapID;
+				self.data.visible = true;
 				setmetatable(self.data,
 					self.data.instanceID and app.BaseInstance
 					or self.data.classID and app.BaseCharacterClass
@@ -16025,11 +16037,12 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 
 				-- sort only the top layer of groups if not in an instance, force visible so sort goes through
 				-- print(GetInstanceInfo());
-				-- sort by name if not in an instance
+				-- sort top level by name if not in an instance
 				if not self.data.instanceID then
-					self.data.visible = true;
-					SortGroup(self.data, "name", nil, false);
+					SortGroup(self.data, "name");
 				end
+				-- and conditionally sort the entire list (sort groups which contain 'mapped' content)
+				SortGroup(self.data, "name", nil, true, "sort");
 
 				-- Move all "isRaid" entries to the top of the list.
 				if results.g then
@@ -16041,7 +16054,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 							table.insert(top, o);
 						end
 					end
-					for i,o in ipairs(top) do
+					for _,o in ipairs(top) do
 						table.insert(results.g, 1, o);
 					end
 				end
@@ -16062,7 +16075,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				local difficultyID = select(3, GetInstanceInfo());
 				if app.Settings:GetTooltipSetting("Expand:Difficulty") then
 					if difficultyID and difficultyID > 0 and self.data.g then
-						for _, row in ipairs(self.data.g) do
+						for _,row in ipairs(self.data.g) do
 							if row.difficultyID or row.difficulties then
 								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
 									if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
@@ -16076,7 +16089,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				if app.Settings:GetTooltipSetting("Warn:Difficulty") then
 					if difficultyID and difficultyID > 0 and self.data.g then
 						local completed,other = true, nil;
-						for _, row in ipairs(self.data.g) do
+						for _,row in ipairs(self.data.g) do
 							if row.difficultyID or row.difficulties then
 								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
 									if row.total and row.progress < row.total then
@@ -16101,10 +16114,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				if not expanded and not self.fullCollapsed then
 					self.ExpandInfo = { Expand = true };
 				end
-			end
-
-			-- If we don't have any data cached for this mapID and it exists in game, report it to the chat window.
-			if not results then
+			else
+				-- If we don't have any data cached for this mapID and it exists in game, report it to the chat window.
 				local mapID = self.mapID;
 				local mapInfo = C_Map_GetMapInfo(mapID);
 				if mapInfo then
