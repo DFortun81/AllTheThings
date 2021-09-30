@@ -198,12 +198,12 @@ _.Titles =
 		}),
 		-- DH-login
 		title(344, {	-- Illidari <Name>
-			["classes"] = { DEMON_HUNTER },
+			["classes"] = { DEMONHUNTER },
 		}),
 		-- Legion Class Hall
 		title(320, {	-- Slayer <Name>
 			["sourceQuest"] = 43186,	-- I Am the Slayer!
-			["classes"] = { DEMON_HUNTER },
+			["classes"] = { DEMONHUNTER },
 		}),
 		title(345, {	-- Highlord <Name>
 			["sourceQuest"] = 43697,	-- Warriors of Light
@@ -215,7 +215,7 @@ _.Titles =
 		}),
 		title(328, {	-- Deathlord <Name>
 			["sourceQuest"] = 43686,	-- The Fourth Horseman
-			["classes"] = { DEATH_KNIGHT },
+			["classes"] = { DEATHKNIGHT },
 		}),
 		title(329, {	-- Grandmaster <Name>
 			["sourceQuest"] = 41087,	-- Storm Brew
