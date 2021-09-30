@@ -5,7 +5,6 @@
 _.Instances = { tier(WOD_TIER, {
 	inst(559, {	-- Upper Blackrock Spire
 		["coord"] = { 78.94, 33.62, BLACKROCK_MOUNTAIN },
-		["mapID"] = BLACKROCK_SPIRE,
 		["maps"] = { BLACKROCK_SPIRE, 617, 618 },
 		["lvl"] = 100,
 		["g"] = {

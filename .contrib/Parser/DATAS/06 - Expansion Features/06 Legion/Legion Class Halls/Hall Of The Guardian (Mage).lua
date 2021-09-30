@@ -505,7 +505,6 @@ _.ExpansionFeatures =
 						}),
 						q(46782, {	-- Further Advancement
 							["lvl"] = 110,
-							["maps"] = { 734 },
 							["coord"] = { 80.8, 63.0, 734 },
 							["classes"] = { MAGE },
 							["provider"] = { "n", 108515 },	-- Archmage Melis

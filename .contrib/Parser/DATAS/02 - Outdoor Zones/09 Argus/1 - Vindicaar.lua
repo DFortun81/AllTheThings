@@ -12,7 +12,7 @@ _.Zones =
 				832,	-- Lower Deck [The Vindicaar: Krokuun]
 				883,	-- Upper Deck [The Vindicaar: Mac'Aree]
 				884,	-- Lower Deck [The Vindicaar: Mac'Aree]
-				886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+				-- 886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
 				887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
 			},
 			["lvl"] = 110,

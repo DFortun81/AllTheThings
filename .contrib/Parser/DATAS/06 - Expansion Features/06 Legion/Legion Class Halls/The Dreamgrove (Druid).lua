@@ -352,7 +352,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 106250 },	-- Keeper Remulos
 							["coord"] = { 60.5, 23.6, 747 },
 							["sourceQuests"] = { 42046 },	-- A New Beginning
-							["maps"] = { 747 },	-- The Dreamgrove
 						}),
 						q(40834, {	-- Following the Curse
 							["sourceQuests"] = { 40785 },	-- A Foe in the Dark
@@ -366,7 +365,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 98002 },	-- Skylord Omnuron
 							["coord"] = { 52.6, 51.4, 747 },
 							["sourceQuests"] = { 46044 },	-- Champion: Thisalee Crow
-							["maps"] = { 747 }
 						}),
 						q(46154, {	-- Furthering Knowledge
 							["u"] = REMOVED_FROM_GAME,
@@ -547,7 +545,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 106250 },	-- Keeper Remulos
 							["coord"] = { 60.5, 23.6, 747 },
 							["sourceQuests"] = { 42046 },	-- A New Beginning
-							["maps"] = { 747 },	-- The Dreamway
 						}),
 						q(46677, {	-- Prick of a Thistle
 							["classes"] = { DRUID },
@@ -755,7 +752,6 @@ _.ExpansionFeatures =
 							["coord"] = { 44.6, 50.0, 747 },
 							["sourceQuests"] = { 42036 },	-- Idol of the Wilds
 							["description"] = "Feral stone: Shapeshift into cat form and use Prowl.\nRestoration stone: Heal the sampling infront of the stone.\nBalance stone: Target the candles and use Moonfire.\nGuardian stone: Just be a Bear.",
-							["maps"] = { 747 },	-- The Dreamway
 						}),
 						q(40783, {	-- The Scythe of Elune
 							["provider"] = { "n", 103778 },	-- Naralex
@@ -805,7 +801,6 @@ _.ExpansionFeatures =
 							["classes"] = { DRUID },
 							["provider"] = { "n", 103832 },	-- Keeper Remulos
 							["coord"] = { 44.6, 50.0, 747 },
-							["maps"] = { 747 },	-- The Dreamway
 						}),
 						q(46924, {	-- The Wolf's Tale
 							["classes"] = { DRUID },

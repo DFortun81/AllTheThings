@@ -850,7 +850,6 @@ _.Zones =
 					},
 					["coord"] = { 39.4, 13.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
-					["maps"] = { HALL_OF_CHRONICLERS },
 				}),
 				q(46957, {	-- Welcome to Zuldazar
 					["provider"] = { "n", 132332 },	-- Princess Talanji

@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 				249,	-- Uldum (pre-120, funky map changes forces us to put the old map here too)
 				1540,	-- Halls of Origination (storyline version)
 				1541,	-- Halls of Origination (Investigating the Halls scenario)
-				1542,	-- Halls of Origination (storyline version, floor 3)
+				-- 1542,	-- Halls of Origination (storyline version, floor 3)
 				1571,	-- Uldum (dark vision)
 			},
 			["g"] = {

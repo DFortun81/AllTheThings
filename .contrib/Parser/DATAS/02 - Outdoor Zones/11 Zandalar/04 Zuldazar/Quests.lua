@@ -1448,7 +1448,7 @@ _.Zones =
 						VOLDUN,
 						TIRAGARDE_SOUND,
 						STORMSONG_VALLEY,
-						ZULDAZAR,
+						-- ZULDAZAR,
 						DRUSTVAR,
 					},
 				}),
