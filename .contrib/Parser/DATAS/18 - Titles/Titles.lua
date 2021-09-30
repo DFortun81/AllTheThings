@@ -227,7 +227,7 @@ _.Titles =
 		}),
 		title(41),	-- Battlemaster <Name>
 		title(50),	-- Arena Master <Name>
-		title(220),	-- <Name> Khan
+		title(220),	-- <Name>, Khan
 		title(229),	-- Gorgeous <Name>
 		-- HK
 		title(94, {	-- <Name> of the Alliance
@@ -497,7 +497,7 @@ _.Titles =
 					"removed 7.0.3",
 				},
 			}),
-			title(206, {	-- <Name>, Legend of Pandaria
+			title(306, {	-- <Name>, Legend of Pandaria
 				["timeline"] = {
 					"added 5.4.0",
 					"removed 6.0.3",
