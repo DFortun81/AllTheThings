@@ -820,8 +820,8 @@ for key,value in pairs({
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Fürchterliche Freunde für immer",	-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			[-931] = GetSpellInfo(172153),							-- Spirit
-			[-932] = GetSpellInfo(13826),							-- Greater Spirit
+			[-931] = "Geist",										-- Spirit
+			[-932] = "Großer Geist",								-- Greater Spirit
 			[-933] = "Göttlicher Geist",							-- Divine Spirit
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)

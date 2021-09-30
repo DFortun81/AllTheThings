@@ -868,9 +868,9 @@ for key,value in pairs({
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": 永远的好魔友",	-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			--TODO: [-931] = GetSpellInfo(7851),					-- Spirit
-			--TODO: [-932] = GetSpellInfo(172153),					-- Greater Spirit
-			--TODO: [-933] = GetSpellInfo(13826),					-- Divine Spirit
+			[-931] = "精魂",											-- Spirit
+			[-932] = "伟大精魂",										-- Greater Spirit
+			[-933] = "神圣精魂",										-- Divine Spirit
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 			[-937] = "传送网络",										-- Transport Network (Night Fae)
