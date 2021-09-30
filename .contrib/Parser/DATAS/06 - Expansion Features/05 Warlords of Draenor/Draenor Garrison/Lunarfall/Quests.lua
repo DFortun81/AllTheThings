@@ -937,13 +937,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 77209 },	-- Baros Alexston
 							["races"] = ALLIANCE_ONLY,
 						}),
-						q(34194, {	-- Looking For Help
-							["requireSkill"] = FISHING,
-							["sourceQuest"] = 36592,	-- Bigger is Better
-							["provider"] = { "n", 77733 },	-- Ron Ashton
-							["coord"] = { 53.9, 13.4, LUNARFALL },	-- lvl 2 garrison
-							["races"] = ALLIANCE_ONLY,
-						}),
 						q(34584, {	-- Looking for Lumber
 							["sourceQuests"] = { 34583 },	-- For the Alliance!
 							["coord"] = { 32.5, 34.2, LUNARFALL },
