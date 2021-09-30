@@ -32,6 +32,16 @@ _.Titles =
 		title(301),	-- <Name> Ironbane
 		title(304),	-- <Name>, Empire's Twilight
 		title(319),	-- <Name>, Defiler's End
+		title(341),	-- <Name> the Dreamer
+		title(342),	-- <Name>, Vengeance Incarnate
+		title(357),	-- <Name> the Darkener
+		title(364),	-- Titanslayer <Name>
+		title(381),	-- <Name> the Purifier
+		title(386),	-- <Name>, Hero of Dazar'alor
+		title(404),	-- <Name> the Eternal
+		title(417),	-- <Name> the Uncorrputed
+		title(432),	-- Sinbreakre <Name>
+		title(447),	-- <Name>, Breaker of Chains
 	}),
 	n(ACHIEVEMENTS, {
 		title(47),	-- <Name> the Explorer
@@ -117,7 +127,65 @@ _.Titles =
 		title(307),	-- Field Photographer <Name>
 		title(317),	-- Captain <Name>
 		title(318),	-- <Name> of the Jungle
-		
+		title(59),	-- Predator <Name>
+		title(331),	-- <Name>, Lord of the Reins
+		title(334),	-- <Name> the Fabulous
+		title(356),	-- Stylist <Name>
+		title(362),	-- <Name>, the Tomb Raider
+		title(366),	-- <Name>, the Lightbringer
+		title(367),	-- Demonslayer <Name>
+		title(372),	-- Postmaster <Name>
+		title(378),	-- Inquisitor <Name>
+		title(382),	-- Expedition Leader <Name>
+		title(403),	-- Junkyard <Name>
+		title(405),	-- <Name> of the Deeps
+		title(412),	-- <Name>, Veteran of the Fourth War
+		title(415),	-- <Name>, Minion of Mayhem (PB Creating Carpal)/PB dungeon BRD Talk to Tasha
+		title(423),	-- Cryptkeeper <Name>
+		title(425, {	-- <Name>, Hand of the Archon
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+		}),
+		title(426, {	-- Baron <Name>
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+		}),
+		title(427, {	-- Baroness <Name>
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+		}),
+		title(428, {	-- <Name>,  Winter's Envoy
+			["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+		}),
+		title(429, {	-- Count <Name>
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+		}),
+		title(430, {	-- Countess <Name>
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+		}),
+		title(433,	{	-- <Name>, the Party Herald
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+		}),
+		title(435, {	-- Fun Guy/Gal <Name>
+			["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+		}),
+		title(437, {	-- Abominable <Name>
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+		}),
+		title(438),	-- Spirestalker <Name>
+		title(439,	{	-- <Name> the Ascended
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+		}),
+		title(445,	{	-- <Name>, Disciple of Devotion
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+		}),
+		title(443, {	-- <Name>, Sword of the Primus
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+		}),
+		title(442, {	-- <Name>, Protector of the Weald
+			["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+		}),
+		title(444,	{	-- Sin Eater <Name>
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+		}),
+		title(446),	-- <Name> the Tormented
 	}),
 	n(QUESTS, {
 		title(38, {	-- <Name> of the Shattered Sun
@@ -127,6 +195,69 @@ _.Titles =
 		title(93),	-- Loremaster <Name>
 		title(261, {	-- Blood Champion <Name>
 			["sourceQuest"] = 36222,	-- The Champion of Blood
+		}),
+		-- DH-login
+		title(344, {	-- Illidari <Name>
+			["classes"] = { DEMON_HUNTER },
+		}),
+		-- Legion Class Hall
+		title(320, {	-- Slayer <Name>
+			["sourceQuest"] = 43186,	-- I Am the Slayer!
+			["classes"] = { DEMON_HUNTER },
+		}),
+		title(345, {	-- Highlord <Name>
+			["sourceQuest"] = 43697,	-- Warriors of Light
+			["classes"] = { PALADIN },
+		}),
+		title(327, {	-- Archdruid <Name>
+			["sourceQuest"] = 42055,	-- The Demi-God's Return
+			["classes"] = { DRUID },
+		}),
+		title(328, {	-- Deathlord <Name>
+			["sourceQuest"] = 43686,	-- The Fourth Horseman
+			["classes"] = { DEATH_KNIGHT },
+		}),
+		title(329, {	-- Grandmaster <Name>
+			["sourceQuest"] = 41087,	-- Storm Brew
+			["classes"] = { MONK },
+		}),
+		title(335, {	-- Huntmaster <Name>
+			["sourceQuest"] = 42659,	-- In Defense of Dalaran
+			["classes"] = { HUNTER },
+		}),
+		title(336, {	-- Farseer <Name>
+			["sourceQuest"] = 41888,	-- Allegiance of Flame
+			["classes"] = { SHAMAN },
+		}),
+		title(337, {	-- Netherlord <Name>
+			["sourceQuest"] = 41796,	-- Selecting a Sixth
+			["classes"] = { WARLOCK },
+		}),
+		title(338, {	-- Shadowblade <Name>
+			["sourceQuest"] = 37689,	-- The Imposter
+			["classes"] = { ROGUE },
+		}),
+		title(339, {	-- High Priest <Name>
+			["sourceQuest"] = 43402,	-- High Priest of Netherlight
+			["classes"] = { PRIEST },
+		}),
+		title(62, {	-- Battlelord <Name>
+			["sourceQuest"] = 42974,	-- The Fate of Hodir
+			["classes"] = { WARRIOR },
+		}),
+		title(61, {	-- Archmage <Name>
+			["sourceQuest"] = 42734,	-- Into the Oculus
+			["classes"] = { MAGE },
+		}),
+		title(332, {	-- <Name>, Guardian of G'Hanir
+			["sourceQuest"] = 41689,	-- Cleansing the Mother Tree
+			["classes"] = { DRUID },
+		}),
+		title(343, {	-- <Name> the Gullible
+			["sourceQuest"] = 43331,	-- Time to Collect
+		}),
+		title(324, {	-- Trashmaster <Name>
+			["sourceQuest"] = 56250,	-- I Am the Trashmaster
 		}),
 	}),
 	n(-3,  {	-- Holiday
@@ -195,14 +326,24 @@ _.Titles =
 		title(288, {	-- Peacekeeper <Name>
 			["races"] = ALLIANCE_ONLY,
 		}),
-		
+		title(361),	-- Timelord <Name>
+		title(379),	-- Esteemed <Name>
+		title(380),	-- <Name> the Admired
+		title(436),	-- <Name< the Avowed
 	}),
 	pvp(n(-9, {	-- PvP
+		-- Honor Ranks
+		title(321),	-- The Honorable <Name>
+		title(322),	-- The Prestigious <Name>
+		title(354),	-- <Name> the Unstoppable Force
+		title(325),	-- The Unrelenting <Name>
+		title(369),	-- <Name> the Tactician
 		-- Arean Ranks
 		title(29),	-- Gladiator <Name>
 		title(30),	-- Duelist <Name>
 		title(31),	-- Rival <Name>
 		title(32),	-- Challenger <Name>
+		title(441),	-- Unchained Gladiator <Name>
 		-- Battleground Ranks
 		title(78),	-- Combatant <Name>
 		-- BG Wins
@@ -218,7 +359,7 @@ _.Titles =
 		title(144, {	-- Warbringer <Name>
 			["races"] = HORDE_ONLY,
 		}),
-		-- Battleground/Arena Meta
+		-- Battleground/Arena/World Meta
 		title(34, {	-- Conqueror <Name>
 			["races"] = HORDE_ONLY,
 		}),
@@ -229,6 +370,9 @@ _.Titles =
 		title(50),	-- Arena Master <Name>
 		title(220),	-- <Name>, Khan
 		title(229),	-- Gorgeous <Name>
+		title(373),	-- Prospector <Name>
+		title(377),	-- <Name>, Conqueror of Azeroth
+		title(424),	-- Deathbringer <Name>
 		-- HK
 		title(94, {	-- <Name> of the Alliance
 			["races"] = ALLIANCE_ONLY,
@@ -407,6 +551,16 @@ _.Titles =
 		title(251),	-- Fire-Watcher <Name>
 		title(302),	-- <Name>, Lord of War
 		title(303),	-- <Name>, Lady of War
+		title(375, {	-- <Name>, the Horde Slayer
+			["races"] = ALLIANCE_ONLY,
+			["sourceQuest"] = 52784,	-- The Horde Slayer
+		}),
+		title(376, {	-- <Name>, the Alliance Slayer
+			["races"] = HORDE_ONLY,
+			["sourceQuest"] = 52786,	-- The Alliance Slayer
+		}),
+		title(383),	-- Contender <Name>
+		title(414),	-- <Name>, Servant of N'Zoth
 	})),
 	n(PROFESSIONS, {
 		title(51),	-- Salty <Name>
@@ -417,8 +571,25 @@ _.Titles =
 		title(202),	-- <Name>, Master of the Ways
 		title(208),	-- <Name>, Seeker of Knowledge
 		title(305),	-- Artisan <Name>
+		title(333),	-- <Name> the Groundbreaker
+		title(348),	-- Headmaster/Headmistress <Name>
+	}),
+	n(-31, {	-- Promotion
+		title(410, {	--	Renowned Explorer <Name>
+			["u"] = BLIZZARD_BALANCE,
+		}),
 	}),
 	n(-40, {	-- Legacy
+		title(340, {	-- Field Medic <Name>
+			["timeline"] = {
+				"added 7.0.3",
+				"removed 8.0.1",
+			},
+		}),
+		title(326, {	-- <Name>, Patron of War
+			["description"] = "Connect Twitch and Battle.net accounts and watch tournament streams",
+			["u"] = REMOVED_FROM_GAME,
+		}),
 		n(ACHIEVEMENTS, {
 			title(108, {	-- <Name> the Immortal
 				["timeline"] = {
@@ -503,7 +674,37 @@ _.Titles =
 					"removed 6.0.3",
 				},
 			}),
-		}),
+			title(347, {	-- <Name> the Chosen
+				["timeline"] = {
+					"added 7.2.0",
+					"removed 8.0.1",
+				},
+			}),
+			title(407, {	-- <Name>, Azeroth's Champion
+				["timeline"] = {
+					"added 8.2.0",
+					"removed 9.0.1",
+				},
+			}),
+			title(418, {	-- <Name> the Awakened
+				["timeline"] = {
+					"added 8.3.0",
+					"removed 9.0.1",
+				},
+			}),
+			title(419, {	-- <Name> the Faceless One
+				["timeline"] = {
+					"added 8.3.0",
+					"removed 9.0.1",
+				},
+			}),
+			title(431, {	-- <Name> the Proud
+				["timeline"] = {
+					"added 9.0.1",
+					"removed 9.1.0",
+				},
+			}),
+		}), 
 		n(ACHIEVEMENTS, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, { -- Realm Best Time Challenge Mode
 			title(241),	-- <Name>, Defender of the Wall
 			title(242),	-- Mogu-Slayer <Name>
@@ -532,6 +733,18 @@ _.Titles =
 			title(124),	-- <Name>, Death's Demise
 			title(125),	-- <Name> the Celestial Defender
 			title(135),	-- Grand Crusader <Name>
+			title(374),	-- <Name>, Famed Slayer of G'huun
+			title(384, {	-- <Name>, Famed Conqueror of Dazar'alor
+				["races"] = ALLIANCE_ONLY,
+			}),
+			title(385, {	-- <Name>, Famed Defender of Dazar'alor
+				["races"] = HORDE_ONLY,
+			}),
+			title(400),	-- <Name>, Famed Slayer of the Harbinger
+			title(409),	-- <Name>, Famed Slayer of Azshara
+			title(416),	-- <Name>, Famed Slayer of N'Zoth
+			title(440),	-- <Name>, Famed Slayer of Denathrius
+			title(448),	-- <Name>, Famed Bane of the Banshee Queen
 		})),
 		n(QUESTS, {
 			title(33, {	-- Scarab Lord <Name>
@@ -684,29 +897,132 @@ _.Titles =
 					"removed 3.0.2",
 				},
 			}),
-			
-			--157,Deadly Gladiator %s,Deadly Gladiator %s,56,0
-			--167,Furious Gladiator %s,Furious Gladiator %s,132,0
-			--169,Relentless Gladiator %s,Relentless Gladiator %s,134,0
-			--177,Wrathful Gladiator %s,Wrathful Gladiator %s,142,0
-			--279,Vicious Gladiator %s,Vicious Gladiator %s,191,0
-			--280,Ruthless Gladiator %s,Ruthless Gladiator %s,192,0
-			--281,Cataclysmic Gladiator %s,Cataclysmic Gladiator %s,193,0
-			--343,Malevolent Gladiator %s,Malevolent Gladiator %s,223,0
-			--388,Tyrannical Gladiator %s,Tyrannical Gladiator %s,225,0
-			--378,Grievous Gladiator %s,Grievous Gladiator %s,253,0
-			--379,Prideful Gladiator %s,Prideful Gladiator %s,254,0
-			--446,Primal Gladiator %s,Primal Gladiator %s,308,0
-			--453,Wild Gladiator %s,Wild Gladiator %s,315,0
-			--454,Warmongering Gladiator %s,Warmongering Gladiator %s,316,0
-			--502,Vindictive Gladiator %s,Vindictive Gladiator %s,353,0
-			--504,Fearless Gladiator %s,Fearless Gladiator %s,355,0
-			--508,Cruel Gladiator %s,Cruel Gladiator %s,359,0
-			--509,Ferocious Gladiator %s,Ferocious Gladiator %s,360,0
-			--512,Fierce Gladiator %s,Fierce Gladiator %s,363,0
-			--517,Dominant Gladiator %s,Dominant Gladiator %s,368,0
-			--519,Demonic Gladiator %s,Demonic Gladiator %s,370,0
-			
+			title(56, {	-- Deadly Gladiator <Name>
+				["timeline"] = {
+					"added 3.0.2",
+					"removed 3.1.1",
+				},
+			}),
+			title(132, {	-- Furious Gladiator <Name>
+				["timeline"] = {
+					"added 3.1.1",
+					"removed 3.2.0",
+				},
+			}),
+			title(134, {	-- Relentless Gladiator <Name>
+				["timeline"] = {
+					"added 3.2.0",
+					"removed 3.3.3",
+				},
+			}),
+			title(142, {	-- Wrathful Gladiator <Name>
+				["timeline"] = {
+					"added 3.3.3",
+					"removed 4.0.3",
+				},
+			}),
+			title(191, {	-- Vicious Gladiator <Name>
+				["timeline"] = {
+					"added 4.0.3",
+					"removed 4.2.0",
+				},
+			}),
+			title(192, {	-- Ruthless Gladiator <Name>
+				["timeline"] = {
+					"added 4.2.0",
+					"removed 4.3.0",
+				},
+			}),
+			title(193, {	-- Cataclysmic Gladiator <Name>
+				["timeline"] = {
+					"added 4.3.0",
+					"removed 5.0.4",
+				},
+			}),
+			title(223, {	-- Malevolent Gladiator <Name>
+				["timeline"] = {
+					"added 5.0.4",
+					"removed 5.1.0",
+				},
+			}),
+			title(225, {	-- Tyrannical Gladiator <Name>
+				["timeline"] = {
+					"added 5.1.0",
+					"removed 5.2.0",
+				},
+			}),
+			title(253, {	-- Grievous Gladiator <Name>
+				["timeline"] = {
+					"added 5.2.0",
+					"removed 5.4.0",
+				},
+			}),
+			title(254, {	-- Prideful Gladiator <Name>
+				["timeline"] = {
+					"added 5.4.0",
+					"removed 6.0.3",
+				},
+			}),
+			title(308, {	-- Primal Gladiator <Name>
+				["timeline"] = {
+					"added 6.0.3",
+					"removed 6.1.0",
+				},
+			}),
+			title(315, {	-- Wild Gladiator <Name>
+				["timeline"] = {
+					"added 6.1.0",
+					"removed 6.2.0",
+				},
+			}),
+			title(316, {	-- Warmongering Gladiator <Name>
+				["timeline"] = {
+					"added 6.2.0",
+					"removed 7.0.3",
+				},
+			}),
+			title(353, {	-- Vindictive Gladiator <Name>
+				["timeline"] = {
+					"added 7.0.3",
+					"removed 7.1.0",
+				},
+			}),
+			title(355, {	-- Fearless Gladiator <Name>
+				["timeline"] = {
+					"added 7.1.0",
+					"removed 6.2.0",
+				},
+			}),
+			title(359, {	-- Cruel Gladiator <Name>
+				["timeline"] = {
+					"added 7.1.0",
+					"removed 7.2.0",
+				},
+			}),
+			title(360, {	-- Ferocious Gladiator <Name>
+				["timeline"] = {
+					"added 7.2.0",
+					"removed 7.3.0",
+				},
+			}),
+			title(363, {	-- Fierce Gladiator <Name>
+				["timeline"] = {
+					"added 7.3.0",
+					"removed 8.0.1",
+				},
+			}),
+			title(368, {	-- Dominant Gladiator <Name>
+				["timeline"] = {
+					"added 7.3.0",
+					"removed 8.0.1",
+				},
+			}),
+			title(370, {	-- Demonic Gladiator <Name>
+				["timeline"] = {
+					"added 7.3.0",
+					"removed 8.0.1",
+				},
+			}),
 			title(79, {	-- Dread Gladiator <Name>
 				["timeline"] = {
 					"added 8.0.1",
@@ -720,10 +1036,24 @@ _.Titles =
 				},
 			}),
 			
-			--654,Notorious Gladiator %s,Notorious Gladiator %s,402,
-			--665,Corrupted Gladiator %s,Corrupted Gladiator %s,411,0
-			--688,Sinful Gladiator %s,Sinful Gladiator %s,434,0
-			--698,Unchained Gladiator %s,Unchained Gladiator %s,441,0
+			title(402, {	-- Notorious Gladiator <Name>
+				["timeline"] = {
+					"added 8.2.0",
+					"removed 8.3.0",
+				},
+			}),
+			title(411, {	-- Corrupted Gladiator <Name>
+				["timeline"] = {
+					"added 8.3.0",
+					"removed 9.0.1",
+				},
+			}),
+			title(434, {	-- Sinful Gladiator <Name>
+				["timeline"] = {
+					"added 9.0.2",
+					"removed 9.1.0",
+				},
+			}),
 			-- RBG titles
 			title(309, {	-- <Name> Guardian of the Alliance
 				["races"] = ALLIANCE_ONLY,
@@ -774,75 +1104,51 @@ _.Titles =
 					"removed 3.1.0",
 				},
 			}),
+			title(128, {	-- Vanquisher <Name>
+				["description"] = "Obtainable if you participate in Arena Tournament 2013",
+				["u"] = REMOVED_FROM_GAME,
+			}),
 		})),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	f(110, {	-- Titles
+		title(54),	-- <Name> of the Ten Storms
+		title(55),	-- <Name> of the Emerald Dream
+		title(57),	-- Prophet <Name>
+		title(58),	-- <Name> the Malefic
+		title(60),	-- <Name> of the Ebon Blade
+		title(63),	-- Assassin <Name>
+		title(64),	-- Grand Master Alchemist <Name>
+		title(65),	-- Grand Master Blacksmith <Name>
+		title(66),	-- Iron Chef <Name>
+		title(67),	-- Grand Master Enchanter <Name>
+		title(68),	-- Grand Master Engineer <Name>
+		title(69),	-- Doctor <Name>
+		title(70),	-- Grand Master Angler <Name>
+		title(71),	-- Grand Master Herbalist <Name>
+		title(72),	-- Grand Master Scribe <Name>
+		title(73),	-- Grand Master Jewelcrafter <Name>
+		title(74),	-- Grand Master Leatherworker <Name>
+		title(75),	-- Grand Master Miner <Name>
+		title(76),	-- Grand Master Skinner <Name>
+		title(77),	-- Grand Master Tailor <Name>
+		title(82),	-- <Name> the Lion Hearted
+		title(83),	-- <Name>, Champion of Elune
+		title(84),	-- <Name>, Hero of Orgrimmar
+		title(85),	-- Plainsrunner <Name>
+		title(86),	-- <Name> of the Darkspear
+		title(87),	-- <Name> the Forsaken
+		title(91),	-- <Name>, Hero of Northrend
+		title(330),	-- Master Assassin <Name>
+		title(406),	-- Sparking <Name>
+		title(408),	-- Pilgrim <Name> the Mallet Bearer
+		
+	}),
+});
 --[[
 ID,Name_lang,Name1_lang,Mask_ID,Flags
-
-
-458,Illidari %s,Illidari %s,344,0
-462,Highlord %s,Highlord %s,345,0
-463,Slayer %s,Slayer %s,320,0
-464,The Honorable %s,The Honorable %s,321,0
-465,The Prestigious %s,The Prestigious %s,322,0
-466,The Unrelenting %s,The Unrelenting %s,323,0
-468,"%s, Bound by Honor","%s, Bound by Honor",325,0
-469,"%s, Patron of War","%s, Patron of War",326,0
-470,Archdruid %s,Archdruid %s,327,0
-471,Deathlord %s,Deathlord %s,328,0
-472,Grandmaster %s,Grandmaster %s,329,0
-473,Master Assassin %s,Master Assassin %s,330,0
-474,"%s, Lord of the Reins","%s, Lord of the Reins",331,0
-475,"%s, Guardian of G'Hanir","%s, Guardian of G'Hanir",332,0
-476,%s the Groundbreaker,%s the Groundbreaker,333,0
-477,%s the Fabulous,%s the Fabulous,334,0
-478,Huntmaster %s,Huntmaster %s,335,0
-479,Farseer %s,Farseer %s,336,0
-480,Netherlord %s,Netherlord %s,337,0
-481,Shadowblade %s,Shadowblade %s,338,0
-482,High Priest %s,High Priest %s,339,0
-483,Field Medic %s,Field Medic %s,340,0
-484,%s the Dreamer,%s the Dreamer,341,0
-485,"%s, Vengeance Incarnate","%s, Vengeance Incarnate",342,0
-486,%s the Gullible,%s the Gullible,343,0
-489,"%s, Talon's Vengeance","%s, Talon's Vengeance",346,4
-493,%s the Chosen,%s the Chosen,347,0
-494,Headmaster %s,Headmistress %s,348,2
-
-503,%s the Unstoppable Force,%s the Unstoppable Force,354,0
-
-505,Stylist %s,Stylist %s,356,0
-506,%s the Darkener,%s the Darkener,357,0
-507,"%s, Adventuring Instructor","%s, Adventuring Instructor",358,4
-
-
-510,Timelord %s,Timelord %s,361,0
-511,"%s, the Tomb Raider","%s, the Tomb Raider",362,0
-
-513,Titanslayer %s,Titanslayer %s,364,0
-514,%s the Collector,%s the Collector,365,4
-515,"%s, the Lightbringer","%s, the Lightbringer",366,0
-516,Demonslayer %s,Demonslayer %s,367,0
-
-518,%s the Tactician,%s the Tactician,369,0
-
-520,"%s, No Good, Dirty, Rotten, Candy Stealer!","%s, No Good, Dirty, Rotten, Candy Stealer!",371,0
-521,Postmaster %s,Postmaster %s,372,0
-522,Prospector %s,Prospector %s,373,0
-524,"%s, Famed Slayer of G'huun","%s, Famed Slayer of G'huun",374,0
-625,"%s, the Horde Slayer","%s, the Horde Slayer",375,0
-626,"%s, the Alliance Slayer","%s, the Alliance Slayer",376,0
-627,"%s, Conqueror of Azeroth","%s, Conqueror of Azeroth",377,0
-628,Inquisitor %s,Inquisitor %s,378,0
-629,Esteemed %s,Esteemed %s,379,0
-630,%s the Admired,%s the Admired,380,0
-631,%s the Purifier,%s the Purifier,381,0
-632,Expedition Leader %s,Expedition Leader %s,382,0
-633,Contender %s,Contender %s,383,0
-634,"%s, Famed Conqueror of Dazar'alor","%s, Famed Conqueror of Dazar'alor",384,0
-635,"%s, Famed Defender of Dazar'alor","%s, Famed Defender of Dazar'alor",385,0
-636,"%s, Hero of Dazar'alor","%s, Hero of Dazar'alor",386,0
+-- Hmm Reset every season
 637,%s the Elite Death Knight,%s the Elite Death Knight,387,0
 638,%s the Elite Demon Hunter,%s the Elite Demon Hunter,388,0
 639,%s the Elite Druid,%s the Elite Druid,389,0
@@ -855,88 +1161,8 @@ ID,Name_lang,Name1_lang,Mask_ID,Flags
 646,%s the Elite Shaman,%s the Elite Shaman,396,0
 647,%s the Elite Warlock,%s the Elite Warlock,397,0
 648,%s the Elite Warrior,%s the Elite Warrior,398,0
-649,%s the T-Shirt Enthusiast,%s the T-Shirt Enthusiast,399,0
-650,Trashmaster %s,Trashmaster %s,324,0
-651,"%s, Famed Slayer of the Harbinger","%s, Famed Slayer of the Harbinger",400,0
-
-655,Junkyard %s,Junkyard %s,403,0
-656,%s the Eternal,%s the Eternal,404,0
-657,%s of the Deeps,%s of the Deeps,405,0
-658,Sparking %s,Sparking %s,406,0
-659,"%s, Azeroth's Champion","%s, Azeroth's Champion",407,0
-660,Pilgrim %s the Mallet Bearer,Pilgrim %s the Mallet Bearer,408,0
-661,"%s, Famed Slayer of Azshara","%s, Famed Slayer of Azshara",409,0
-662,Renowned Explorer %s,Renowned Explorer %s,410,0
-664,"%s, Veteran of the Fourth War","%s, Veteran of the Fourth War",412,0
-
-666,"%s, As Themselves","%s, As Themselves",413,0
-667,"%s, Servant of N'Zoth","%s, Servant of N'Zoth",414,0
-668,"%s, Minion of Mayhem","%s, Minion of Mayhem",415,0
-669,"%s, Famed Slayer of N'Zoth","%s, Famed Slayer of N'Zoth",416,0
-670,%s the Uncorrupted,%s the Uncorrupted,417,0
-671,%s the Awakened,%s the Awakened,418,0
-672,%s the Faceless One,%s the Faceless One,419,0
-676,Cryptkeeper %s,Cryptkeeper %s,423,0
-678,"%s, Hand of the Archon","%s, Hand of the Archon",425,0
-679,Baron %s,Baron %s,426,0
-680,Baroness %s,Baroness %s,427,0
-681,"%s, Winter's Envoy","%s, Winter's Envoy",428,0
-682,Count %s,Count %s,429,0
-683,Countess %s,Countess %s,430,0
-684,Deathbringer %s,Deathbringer %s,424,0
-685,%s the Proud,%s the Proud,431,0
-686,Sinbreaker %s,Sinbreaker %s,432,0
-687,"%s, the Party Herald","%s, the Party Herald",433,0
-
-689,Fun Guy %s,Fun Gal %s,435,0
-690,%s the Avowed,%s the Avowed,436,0
-691,Abominable %s,Abominable %s,437,0
-692,Spirestalker %s,Spirestalker %s,438,0
-693,%s the Ascended,%s the Ascended,439,0
-694,"%s, Famed Slayer of Denathrius","%s, Famed Slayer of Denathrius",440,0
-
-699,"%s, Protector of the Weald","%s, Protector of the Weald",442,0
-700,"%s, Sword of the Primus","%s, Sword of the Primus",443,0
-701,Sin Eater %s,Sin Eater %s,444,0
-702,"%s, Disciple of Devotion","%s, Disciple of Devotion",445,0
-703,%s the Tormented,%s the Tormented,446,0
-704,"%s, Breaker of Chains","%s, Breaker of Chains",447,0
-705,"%s, Famed Bane of the Banshee Queen","%s, Famed Bane of the Banshee Queen",448,0
--- NYI
-86,%s of the Ten Storms,%s of the Ten Storms,54,0
-87,%s of the Emerald Dream,%s of the Emerald Dream,55,0
-89,Prophet %s,Prophet %s,57,0
-90,%s the Malefic,%s the Malefic,58,0
-91,Predator %s,Predator %s,59,0
-92,%s of the Ebon Blade,%s of the Ebon Blade,60,0
-93,Archmage %s,Archmage %s,61,0
-94,Battlelord %s,Battlelord %s,62,0
-95,Assassin %s,Assassin %s,63,0
-96,Grand Master Alchemist %s,Grand Master Alchemist %s,64,0
-97,Grand Master Blacksmith %s,Grand Master Blacksmith %s,65,0
-98,Iron Chef %s,Iron Chef %s,66,0
-99,Grand Master Enchanter %s,Grand Master Enchanter %s,67,0
-100,Grand Master Engineer %s,Grand Master Engineer %s,68,0
-101,Doctor %s,Doctor %s,69,0
-102,Grand Master Angler %s,Grand Master Angler %s,70,0
-103,Grand Master Herbalist %s,Grand Master Herbalist %s,71,0
-104,Grand Master Scribe %s,Grand Master Scribe %s,72,0
-105,Grand Master Jewelcrafter %s,Grand Master Jewelcrafter %s,73,0
-106,Grand Master Leatherworker %s,Grand Master Leatherworker %s,74,0
-107,Grand Master Miner %s,Grand Master Miner %s,75,0
-108,Grand Master Skinner %s,Grand Master Skinner %s,76,0
-109,Grand Master Tailor %s,Grand Master Tailor %s,77,0
-114,%s the Lion Hearted,%s the Lion Hearted,82,0
-115,"%s, Champion of Elune","%s, Champion of Elune",83,0
-116,"%s, Hero of Orgrimmar","%s, Hero of Orgrimmar",84,0
-117,Plainsrunner %s,Plainsrunner %s,85,0
-118,%s of the Darkspear,%s of the Darkspear,86,0
-119,%s the Forsaken,%s the Forsaken,87,0
-123,"%s, Hero of Northrend","%s, Hero of Northrend",91,0
-
--- FoS
-163,Vanquisher %s,Vanquisher %s,128,2
--- BRD Repeatable
+-- Repeatable
+-- BRD
 188,"%s, Slayer of Stupid, Incompetent and Disappointing Minions","%s, Slayer of Stupid, Incompetent and Disappointing Minions",147,0
 -- SoO
 354,%s the Poisoned Mind,%s the Poisoned Mind,231,0
@@ -953,5 +1179,16 @@ ID,Name_lang,Name1_lang,Mask_ID,Flags
 --Scenario
 344,Gob Squad Recruit %s,Gob Squad Recruit %s,224,4
 347,Gob Squad Commando %s,Gob Squad Commando %s,226,4
-
+-- while holding item
+489,"%s, Talon's Vengeance","%s, Talon's Vengeance",346,4
+-- micro hoilday moomkin
+507,"%s, Adventuring Instructor","%s, Adventuring Instructor",358,4
+-- Toy
+514,%s the Collector,%s the Collector,365,4
+-- Food
+520,"%s, No Good, Dirty, Rotten, Candy Stealer!","%s, No Good, Dirty, Rotten, Candy Stealer!",371,0
+-- micro hoilday t-shirt
+649,%s the T-Shirt Enthusiast,%s the T-Shirt Enthusiast,399,0
+-- during quest 58157
+666,"%s, As Themselves","%s, As Themselves",413,0
 --]]
