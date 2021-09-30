@@ -10306,7 +10306,7 @@ local questFields = {
 		end
 	end,
 	["link"] = function(t)
-		return "quest:" .. t.questID;
+		return GetQuestLink(t.questID) or "quest:" .. t.questID;
 	end,
 	["repeatable"] = function(t)
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
