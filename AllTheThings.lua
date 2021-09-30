@@ -3917,6 +3917,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- print("#entries",#entries);
 				tinsert(info, { left = L["CONTAINS"] });
 				local containCount, item, group = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
+				local RecursiveParentField, SearchForObject, Filter = app.RecursiveFirstParentWithField, app.SearchForObject, app.GroupFilter;
 				for i=1,containCount do
 					item = entries[i];
 					group = item.group;
@@ -3952,19 +3953,38 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						local field, id;
 						for _,v in ipairs({"professionID","mapID","maps","instanceID","npcID","questID"}) do
 							if not field then
-								id = app.RecursiveFirstParentWithField(group, v);
+								id = RecursiveParentField(group, v);
 								-- print("check",v,id)
 								if id then field = v; end
 							end
 						end
-						-- convert maps to a MapID
+						local locationGroup, locationName;
+						-- convert maps
 						if field == "maps" then
-							field = "mapID";
-							-- app.PrintTable(id);
-							id = id[1];
+							-- if only a few maps, list them all
+							local count = #id;
+							if count == 1 then
+								id = id[1];
+								locationGroup = C_Map_GetMapInfo(id);
+								locationName = locationGroup and (locationGroup.name or locationGroup.text);
+							elseif count < 4 then
+								local mapsConcat = {};
+								for i=1,count,1 do
+									tinsert(mapsConcat, C_Map_GetMapInfo(id[i]).name);
+								end
+								locationName = table.concat(mapsConcat, "/");
+							else
+								local mapsConcat = {};
+								for i=1,3,1 do
+									tinsert(mapsConcat, C_Map_GetMapInfo(id[i]).name);
+								end
+								tinsert(mapsConcat, "+++");
+								locationName = table.concat(mapsConcat, "/");
+							end
+						else
+							locationGroup = SearchForObject(field, id) or (id and field == "mapID" and C_Map_GetMapInfo(id));
+							locationName = locationGroup and (locationGroup.name or locationGroup.text);
 						end
-						local locationGroup = app.SearchForObject(field, id) or (id and field == "mapID" and C_Map_GetMapInfo(id));
-						local locationName = locationGroup and (locationGroup.name or locationGroup.text);
 						-- print("contains info",group.itemID,field,id,locationGroup,locationName)
 						if locationName then
 							-- Add the immediate parent group Vendor name
@@ -3983,7 +4003,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if group.criteriaID and group.achievementID then
 						local rawParent = rawget(group, "parent");
 						if not rawParent or rawParent.achievementID ~= group.achievementID then
-							local critAch = app.SearchForObject("achievementID", group.achievementID);
+							local critAch = SearchForObject("achievementID", group.achievementID);
 							left = left .. " > " .. critAch.text;
 						end
 					end
