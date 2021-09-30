@@ -690,10 +690,10 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is automatically offered after you find your second Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
 					["sourceQuests"] = { 
-						42454	-- The Hammer of Khaz'goroth
-						40072	-- Halls of Valor: Securing the Aegis
-						42213	-- Eye of Azshara: The Tidestone of Golganneth
-						40890	-- The Tears of Elune
+						42454,	-- The Hammer of Khaz'goroth
+						43349,	-- The Aegis of Aggramar
+						42213,	-- Eye of Azshara: The Tidestone of Golganneth
+						40890,	-- The Tears of Elune
 					},
 				}),
 				q(45906, {	-- Jarod's Gift
@@ -769,10 +769,10 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is automatically offered after you find your fourth Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
 					["sourceQuests"] = { 
-						42454	-- The Hammer of Khaz'goroth
-						40072	-- Halls of Valor: Securing the Aegis
-						42213	-- Eye of Azshara: The Tidestone of Golganneth
-						40890	-- The Tears of Elune
+						42454,	-- The Hammer of Khaz'goroth
+						43349,	-- The Aegis of Aggramar
+						42213,	-- Eye of Azshara: The Tidestone of Golganneth
+						40890,	-- The Tears of Elune
 					},
 				}),
 				q(45185, {	-- Message from the Shadows
@@ -832,10 +832,10 @@ _.Zones =
 				q(44545, {	-- Pressing the Assault
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 
-						42454	-- The Hammer of Khaz'goroth
-						40072	-- Halls of Valor: Securing the Aegis
-						42213	-- Eye of Azshara: The Tidestone of Golganneth
-						40890	-- The Tears of Elune
+						42454,	-- The Hammer of Khaz'goroth
+						43349,	-- The Aegis of Aggramar
+						42213,	-- Eye of Azshara: The Tidestone of Golganneth
+						40890,	-- The Tears of Elune
 					},	
 					["description"] = "This quest is automatically offered after you find your first Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
 				}),
@@ -923,10 +923,10 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is automatically offered after you find your third Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
 					["sourceQuests"] = { 
-						42454	-- The Hammer of Khaz'goroth
-						40072	-- Halls of Valor: Securing the Aegis
-						42213	-- Eye of Azshara: The Tidestone of Golganneth
-						40890	-- The Tears of Elune
+						42454,	-- The Hammer of Khaz'goroth
+						43349,	-- The Aegis of Aggramar
+						42213,	-- Eye of Azshara: The Tidestone of Golganneth
+						40890,	-- The Tears of Elune
 					},
 				}),
 				q(47864, {	-- Sealing Fate: Additional Marks of Honor
