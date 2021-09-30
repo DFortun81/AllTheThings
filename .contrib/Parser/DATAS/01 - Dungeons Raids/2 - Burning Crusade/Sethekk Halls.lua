@@ -140,7 +140,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(32449),	-- Essence-Infused Moonstone
 						}),
 						-- #if BEFORE 4.0.1
-						recipe(40123),	-- Swift Flight Form
+						recipe(40120),	-- Swift Flight Form
 						-- #endif
 						i(32387),	-- Idol of the Raven Goddess
 					},
