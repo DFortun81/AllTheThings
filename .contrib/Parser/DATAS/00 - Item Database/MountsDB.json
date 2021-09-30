@@ -3314,7 +3314,7 @@
         "name": "Fel Bat (Test)",
         "mountID": 215545,
         "creatureId": 110479,
-        "itemId": 138386,
+        "itemId": 186479,
         "qualityId": 4,
         "icon": "inv_spidermount",
         "isGround": true,

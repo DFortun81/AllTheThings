@@ -1939,9 +1939,9 @@ app.L = {
 	-- SL Ardenweald/Night Fae
 		[-929] = GetSpellInfo(321077),											-- Night Fae
 		[-930] = COVENANT_SANCTUM_FEATURE_NIGHT_FAE,							-- Queen's Conservatory
-		[-931] = GetSpellInfo(7851),											-- Lesser Spirit
-		[-932] = GetSpellInfo(172153),											-- Spirit
-		[-933] = GetSpellInfo(13826),											-- Greater Spirit
+		[-931] = GetSpellInfo(172153),											-- Spirit
+		[-932] = GetSpellInfo(13826),											-- Greater Spirit
+		[-933] = "Divine Spirit",												-- Divine Spirit
 		[-934] = C_Map.GetAreaInfo(12840),										-- Star Lake Amphitheater
 		[-935] = "Sanctum Upgrades",											-- Sanctum Upgrades (Night Fae)
 		[-936] = "Soulshape Forms",												-- Soulshape Forms (Night Fae)

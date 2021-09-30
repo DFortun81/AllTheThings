@@ -228,7 +228,6 @@ i(128851);	-- Roasted juicycrunch carrots
 
 -- "Mount Equipment"
 i(141593);	-- Dro's Key
-i(174767);	-- Mogu Relic
 
 
 -- Quest Items

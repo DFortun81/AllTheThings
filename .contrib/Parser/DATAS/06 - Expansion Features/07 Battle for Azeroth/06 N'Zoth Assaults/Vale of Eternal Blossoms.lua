@@ -431,6 +431,9 @@ _.ExpansionFeatures =
 						i(170553, {	-- Void Focus Splinter
 							["description"] = "The fastest way is to farm them inside Lesser Vision.",
 						}),
+						i(174768, {	-- Cursed Relic
+							["cost"] = { { "i", 174758, 6 } },	-- 6x Voidwarped Relic Fragment
+						}),
 						i(174758),	-- Voidwarped Relic Fragment
 					}),
 				}),
@@ -794,6 +797,9 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(ZONE_DROPS, {
+						i(174767, {	-- Mogu Relic
+							["cost"] = { { "i", 174759, 6 } },	-- 6x Mogu Relic Fragment
+						}),
 						i(174759),	-- Mogu Relic Fragment
 					}),
 				}),
@@ -1130,6 +1136,9 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(ZONE_DROPS, {
+						i(174766, {	-- Mantid Relic
+							["cost"] = { { "i", 174760, 6 } },	-- 6x Mantid Relic Fragment
+						}),
 						i(174760),	-- Mantid Relic Fragment
 					}),
 				}),
@@ -1507,6 +1516,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(ZONE_DROPS, {
+						i(174365),	-- Design: Unbound Leviathan's Eye Loop
 						i(174368),	-- Pattern: Unsettling Cragscale Boots
 						i(174369),	-- Pattern: Unsettling Cragscale Greaves
 						i(174366),	-- Pattern: Unsettling Dredged Leather Boots

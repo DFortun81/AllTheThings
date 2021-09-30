@@ -129,9 +129,6 @@ _.ExpansionFeatures =
 							un(REMOVED_FROM_GAME, q(44917, {	-- Return to Karazhan: The Tower of Power (No Tag but Mythic)
 								un(REMOVED_FROM_GAME, i(142342)),	-- Glittering Pack (No Tag but Mythic)
 							})),
-							q(44548, {	-- Scouring What Remains
-								["isBreadcrumb"] = true,
-							}),
 							q(39735, {	-- Stormheim (A)
 								["races"] = ALLIANCE_ONLY,
 								["altQuests"] = { 44700 },	-- Stormheim (A) from Archmage Landon in Stormheim
