@@ -13949,6 +13949,7 @@ RowOnEnter = function (self)
 			elseif ATTAccountWideData.OneTimeQuests[reference.questID] == false then
 				GameTooltip:AddLine("|cffcf271b" .. L["QUEST_ONCE_PER_ACCOUNT"] .. "|r");
 			end
+			AttachTooltipSearchResults(GameTooltip, "quest:"..reference.questID, SearchForField, "questID", reference.questID);
 		end
 		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
 			if app.Settings:GetTooltipSetting("creatureID") then
@@ -19430,26 +19431,35 @@ end
 -- Clickable ATT Chat Link Handling
 (function()
 	hooksecurefunc("SetItemRef", function(link, text)
-		-- print("Chat Link Click",link,text)
+		-- print("Chat Link Click",link,string.gsub(text, "\|","&"));
 		-- if IsShiftKeyDown() then
 		-- 	ChatEdit_InsertLink(text);
 		-- else
-		if (string.sub(link, 1, 15) == "garrmission:ATT") then
-			local op = string.sub(link, 17)
+		local type, info, data1, data2, data3 = strsplit(":", link);
+		-- print(type, info, data1, data2, data3)
+		if type == "garrmission" and info == "ATT" then
+			-- local op = string.sub(link, 17)
 			-- print("ATT Link",op)
-			local type, paramA, paramB = strsplit(":", op);
+			-- local type, paramA, paramB = strsplit(":", data);
 			-- print(type,paramA,paramB)
-			if type == "search" then
-				local cmd = paramA .. ":" .. paramB;
+			if data1 == "search" then
+				local cmd = data2 .. ":" .. data3;
 				app.SetSkipPurchases(2);
 				local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
 				app.SetSkipPurchases(0);
 				app:CreateMiniListForGroup(group);
 				return true;
-			elseif type == "dialog" then
-				return app:TriggerReportDialog(paramA);
+			elseif data1 == "dialog" then
+				return app:TriggerReportDialog(data2);
 			-- elseif type == "nav" then
 			-- 	print(type,paramA,paramB)
+			end
+		elseif type == "quest" then
+			-- Attach Quest info to Quest links in chat
+			if ItemRefTooltip then
+				-- print("show quest info",info)
+				AttachTooltipSearchResults(ItemRefTooltip, "quest:"..info, SearchForField, "questID", info);
+				ItemRefTooltip:Show();
 			end
 		end
 	end);
