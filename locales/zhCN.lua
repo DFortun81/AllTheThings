@@ -870,7 +870,11 @@ for key,value in pairs({
 		-- SL Ardenweald/Night Fae
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
-			[-937] = "传送网络",										-- Transport Network (Night Fae)
+			[-937] = "传送网络",									-- Transport Network (Night Fae)
+			[-1002] = "尽职精魂",									-- Dutiful Spirit
+			[-1003] = "尚武精魂",									-- Martial Spirit
+			[-1004] = "骄傲精魂",									-- Prideful Spirit
+			[-1005] = "狂野精魂",									-- Untamed Spirit
 
 		-- SL Bastion/Kyrian
 			[-940] = "晋升者议会",									-- Ascended Counil

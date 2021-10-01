@@ -806,6 +806,10 @@ for key,value in pairs({
 			[-935] = "Улучшения для обители",						-- Sanctum Upgrades (Night Fae)
 			[-936] = "Формы души",									-- Soulshape Forms (Night Fae)
 			[-937] = "Транспортная сеть",							-- Transport Network (Night Fae)
+			[-1002] = "Дух служения",								-- Dutiful Spirit
+			[-1003] = "Воинственный дух",							-- Martial Spirit
+			[-1004] = "Дух гордыни",								-- Prideful Spirit
+			[-1005] = "Неукрощенный дух",							-- Untamed Spirit
 
 		-- SL Bastion/Kyrian
 			[-940] = "Совет перерожденных",							-- Ascended Counil

@@ -822,6 +822,10 @@ for key,value in pairs({
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 			--TODO: [-937] = "Transport Network",					-- Transport Network (Night Fae)
+			[-1002] = "충직한 영혼",								-- Dutiful Spirit
+			[-1003] = "무예의 영혼",								-- Martial Spirit
+			[-1004] = "긍지 높은 영혼",								-- Prideful Spirit
+			[-1005] = "야생의 영혼",								-- Untamed Spirit
 
 		-- SL Bastion/Kyrian
 			[-940] = "승천자 의회",										-- Ascended Counil

@@ -822,6 +822,10 @@ for key,value in pairs({
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 			--TODO: [-937] = "Transport Network",					-- Transport Network (Night Fae)
+			[-1002] = "Esprit dévoué",								-- Dutiful Spirit
+			[-1003] = "Esprit martial",								-- Martial Spirit
+			[-1004] = "Esprit orgueilleux",							-- Prideful Spirit
+			[-1005] = "Esprit indompté",							-- Untamed Spirit
 
 		-- SL Bastion/Kyrian
 			[-940] = "Conseil des transcendés",						-- Ascended Counil

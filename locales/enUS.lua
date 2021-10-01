@@ -1945,10 +1945,10 @@ app.L = {
 		[-936] = "Soulshape Forms",												-- Soulshape Forms (Night Fae)
 		[-937] = "Transport Network",											-- Transport Network (Night Fae)
 		--[-938] is stolen for Necrolord because I ran out of numbers
-		[-1002] = select(1, GetItemInfo(178881)),								-- Dutiful Spirit
-		[-1003] = select(1, GetItemInfo(178874)),								-- Martial Spirit
-		[-1004] = select(1, GetItemInfo(178882)),								-- Prideful Spirit
-		[-1005] = select(1, GetItemInfo(177698)),								-- Untamed Spirit
+		[-1002] = "Dutiful Spirit",												-- Dutiful Spirit
+		[-1003] = "Martial Spirit",												-- Martial Spirit
+		[-1004] = "Prideful Spirit",											-- Prideful Spirit
+		[-1005] = "Untamed Spirit",												-- Untamed Spirit
 
 	-- SL Bastion/Kyrian
 		[-939] = GetSpellInfo(321076),											-- Kyrian
