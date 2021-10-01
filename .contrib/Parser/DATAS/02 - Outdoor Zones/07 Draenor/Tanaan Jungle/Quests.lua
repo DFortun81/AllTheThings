@@ -60,200 +60,6 @@ _.Zones =
 					["provider"] = { "n", 90584 },	-- Goi'orsh
 					["coord"] = { 44.2, 41.5, TANAAN_JUNGLE },
 				}),
-				q(37940, {	-- Assault on Ironhold Harbor
-					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						crit(1, {
-							["achievementID"] = 10075,	-- Draenor's Last Stand
-						}),
-					},
-				}),
-				q(37891, {	-- Assault on Ironhold Harbor
-					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						crit(1, {
-							["achievementID"] = 10068,	-- Draenor's Last Stand
-						}),
-					},
-				}),
-				q(39451 , {	-- Assault on Ironhold Harbor [Bonus Objective]
-					["isDaily"] = true,
-					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
-				}),
-				q(38441, {	-- Assault on The Fel Forge
-					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						crit(4, {
-							["achievementID"] = 10075,	-- Draenor's Last Stand
-						}),
-					},
-				}),
-				q(38440, {	-- Assault on The Fel Forge
-					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						crit(4, {
-							["achievementID"] = 10068,	-- Draenor's Last Stand
-						}),
-					},
-				}),
-				q(38439, {	-- Assault on The Fel Forge [Bonus Objective]
-					["isDaily"] = true,
-					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(38252, {	-- Assault on the Ruins of Kra'nak
-					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						crit(2, {
-							["achievementID"] = 10075,	-- Draenor's Last Stand
-						}),
-					},
-				}),
-				q(38250, {	-- Assault on the Ruins of Kra'nak
-					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						crit(2, {
-							["achievementID"] = 10068,	-- Draenor's Last Stand
-						}),
-					},
-				}),
-				q(39447 , {	-- Assault on the Ruins of Kra'nak [Bonus Objective]
-					["isDaily"] = true,
-					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(38449, {	-- Assault on the Temple of Sha'naar
-					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						crit(3, {
-							["achievementID"] = 10075,	-- Draenor's Last Stand
-						}),
-					},
-				}),
-				q(37968, {	-- Assault on the Temple of Sha'naar
-					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						crit(3, {
-							["achievementID"] = 10068,	-- Draenor's Last Stand
-						}),
-					},
-				}),
-				q(39449, {	-- Assault on the Temple of Sha'naar [Bonus Objective]
-					["isDaily"] = true,
-					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(38586, {	-- Assault on the Throne of Kil'jaeden
-					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						crit(6, {
-							["achievementID"] = 10075,	-- Draenor's Last Stand
-						}),
-					},
-				}),
-				q(38585, {	-- Assault on the Throne of Kil'jaeden
-					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						crit(6, {
-							["achievementID"] = 10068,	-- Draenor's Last Stand
-						}),
-					},
-				}),
-				q(38439 , {	-- Assault on the Throne of Kil'jaeden [Bonus Objective]
-					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(38047, {	-- Battle At The Iron Front
-					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						crit(5, {
-							["achievementID"] = 10075,	-- Draenor's Last Stand
-						}),
-					},
-				}),
-				q(38866, {	-- Battle At The Iron Front
-					["hordeQuestID"] = 38865,
-					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
-					["sourceQuests"] = {
-						38445,	-- The Assault Base (alliance)
-						37935,	-- The Assault Base (horde)
-					},
-				}),
-				q(39443, {	-- Battle At The Iron Front [Bonus Objective]
-					["isDaily"] = true,
-					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
-					["sourceQuests"] = {
-						38445,	-- The Assault Base (alliance)
-						37935,	-- The Assault Base (horde)
-					},
-				}),
-				q(38046, {	-- Battle At The Iron Front
-					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						crit(5, {
-							["achievementID"] = 10068,	-- Draenor's Last Stand
-						}),
-					},
-				}),
-				q(38044, {	-- Bleeding the Bleeding Hollow
-					["sourceQuest"] = 38453,
-					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						crit(7, {
-							["achievementID"] = 10075,	-- Draenor's Last Stand
-						}),
-					},
-				}),
-				q(38871,  {	-- Bleeding the Bleeding Hollow [Bonus Objective]
-					["sourceQuests"] = { 38453 },	-- Garrison Campaign: The Bane of the Bleeding Hollow
-					--["isDaily"] = true, Maybe not according to wowhead comments
-					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
-					["races"] = HORDE_ONLY,
-				}),
-				q(39441, {	-- Bleeding the Bleeding Hollow [Bonus Objective]
-					["sourceQuests"] = { 38560 },	-- Garrison Campaign: The Bane of the Bleeding Hollow
-					["isDaily"] = true,
-					["coord"] = { 61.5, 45.9, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(38045, {	-- Bleeding the Bleeding Hollow
-					["sourceQuest"] = 38560,
-					["coord"] = { 58.5, 60.4, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						crit(7, {
-							["achievementID"] = 10068,	-- Draenor's Last Stand
-						}),
-					},
-				}),
 				q(39511, {	-- Blood of Fallen Brothers
 					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
 					["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
@@ -577,6 +383,335 @@ _.Zones =
 						{ 57.9, 59.3, TANAAN_JUNGLE },	-- alliance
 						{ 60.4, 46.6, TANAAN_JUNGLE },	-- horde
 					},
+				}),
+				n(BONUS_OBJECTIVES, {
+					-- TODO: Check SQ
+					q(37891, {	-- Assault on Ironhold Harbor (A)
+						["coord"] = { 58.4, 60.2, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							crit(1, {
+								["achievementID"] = 10068,	-- Draenor's Last Stand
+							}),
+						},
+					}),
+					q(37940, {	-- Assault on Ironhold Harbor (H)
+						["coord"] = { 61.4, 45.8, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							crit(1, {
+								["achievementID"] = 10075,	-- Draenor's Last Stand
+							}),
+						},
+					}),
+					q(37865, {	-- Assault on Ironhold Harbor (H)
+						["coord"] = { 39.0, 38.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(37866, {	-- Assault on Ironhold Harbor (A)
+						["coord"] = { 39.0, 38.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(39451, {	-- Assault on Ironhold Harbor (A)
+						["coord"] = { 39.0, 38.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(39452, {	-- Assault on Ironhold Harbor (H)
+						["coord"] = { 39.0, 38.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(38877, {	-- Assault on the Fel Forge (A)
+						["coord"] = { 50.0, 44.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(38876, {	-- Assault on the Fel Forge (H)
+						["coord"] = { 50.0, 44.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+					}),
+					--[[
+					q(38439, {	-- Assault on the Fel Forge (A)
+						["coord"] = { ?, ?, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(37970, {	-- Assault on the Fel Forge (H)
+						["coord"] = { ?, ?, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(38440, {	-- Assault on the Fel Forge (A)
+						["coord"] = { ?, ?, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							crit(4, {
+								["achievementID"] = 10068,	-- Draenor's Last Stand
+							}),
+						},
+					}),
+					q(38441, {	-- Assault on the Fel Forge (H)
+						["coord"] = { ?, ?, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							crit(4, {
+								["achievementID"] = 10075,	-- Draenor's Last Stand
+							}),
+						},
+					}),
+					]]--
+					q(39445, {	-- Assault on the Fel Forge (A)
+						["coord"] = { 50.0, 44.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(39446, {	-- Assault on the Fel Forge (H)
+						["coord"] = { 50.0, 44.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(38868, {	-- Assault on the Ruins of Kra'nak (A)
+						["coord"] = { 23.0, 37.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(38869, {	-- Assault on the Ruins of Kra'nak (H)
+						["coord"] = { 23.0, 37.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+					}),
+					q(38250, {	-- Assault on the Ruins of Kra'nak (A)
+						["coord"] = { 58.4, 60.2, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							crit(2, {
+								["achievementID"] = 10068,	-- Draenor's Last Stand
+							}),
+						},
+					}),
+					--[[
+					q(38252, {	-- Assault on the Ruins of Kra'nak (H)
+						["coord"] = { ?, ?, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							crit(2, {
+								["achievementID"] = 10075,	-- Draenor's Last Stand
+							}),
+						},
+					}),
+					]]--
+					q(37938, {	-- Assault on the Ruins of Kra'nak (A)
+						["coord"] = { 23.0, 37.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					}),
+					--[[
+					q(38009, {	-- Assault on the Ruins of Kra'nak (H)
+						["coord"] = { ?, ?, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
+					]]--
+					q(39447, {	-- Assault on the Ruins of Kra'nak (A)
+						["coord"] = { 23.0, 37.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(39448, {	-- Assault on the Ruins of Kra'nak (H)
+						["coord"] = { 23.0, 37.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(37968, {	-- Assault on the Temple of Sha'naar (A)
+						["coord"] = { 58.4, 60.2, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							crit(3, {
+								["achievementID"] = 10068,	-- Draenor's Last Stand
+							}),
+						},
+					}),
+					q(38449, {	-- Assault on the Temple of Sha'naar (H)
+						["coord"] = { 61.4, 45.8, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							crit(3, {
+								["achievementID"] = 10075,	-- Draenor's Last Stand
+							}),
+						},
+					}),
+					q(37966, {	-- Assault on the Temple of Sha'naar (A)
+						["coord"] = { 30.0, 71.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(38020, {	-- Assault on the Temple of Sha'naar (H)
+						["coord"] = { 30.0, 71.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(39449, {	-- Assault on the Temple of Sha'naar (A)
+						["coord"] = { 30.0, 71.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(39450, {	-- Assault on the Temple of Sha'naar (H)
+						["coord"] = { 30.0, 71.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(38585, {	-- Assault on the Throne of Kil'jaeden (A)
+						["coord"] = { 58.4, 60.2, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							crit(6, {
+								["achievementID"] = 10068,	-- Draenor's Last Stand
+							}),
+						},
+					}),
+					q(38586, {	-- Assault on the Throne of Kil'jaeden (H)
+						["coord"] = { 61.4, 45.8, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							crit(6, {
+								["achievementID"] = 10075,	-- Draenor's Last Stand
+							}),
+						},
+					}),
+					q(38587, {	-- Assault on the Throne of Kil'jaeden (A)
+						["coord"] = { 54.0, 25.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(38588, {	-- Assault on the Throne of Kil'jaeden (H)
+						["coord"] = { 54.0, 25.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(39453, {	-- Assault on the Throne of Kil'jaeden (A)
+						["coord"] = { 54.0, 25.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(39454, {	-- Assault on the Throne of Kil'jaeden (H)
+						["coord"] = { 54.0, 25.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(38866, {	-- Battle At The Iron Front (A)
+						["coord"] = { 14.0, 57.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						--["sourceQuest"] = 38445,	-- The Assault Base (A)
+					}),
+					q(38865, {	-- Battle At The Iron Front (H)
+						["coord"] = { 14.0, 57.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						--["sourceQuest"] = 37935,	-- The Assault Base (H)
+					}),
+					q(38046, {	-- Battle At The Iron Front (A)
+						["coord"] = { 58.4, 60.2, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							crit(5, {
+								["achievementID"] = 10068,	-- Draenor's Last Stand
+							}),
+						},
+					}),
+					q(38047, {	-- Battle At The Iron Front (H)
+						["coord"] = { 61.4, 45.8, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							crit(5, {
+								["achievementID"] = 10075,	-- Draenor's Last Stand
+							}),
+						},
+					}),
+					q(38051, {	-- Battle At The Iron Front (A)
+						["coord"] = { 14.0, 57.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(38054, {	-- Battle At The Iron Front (H)
+						["coord"] = { 14.0, 57.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(39443, {	-- Battle At The Iron Front (A)
+						["coord"] = { 14.0, 57.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						--["sourceQuest"] = 38445,	-- The Assault Base (A)
+					}),
+					q(39444, {	-- Battle At The Iron Front (H)
+						["coord"] = { 14.0, 57.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						--["sourceQuest"] = 37935,	-- The Assault Base (H)
+					}),
+					q(38870, {	-- Bleeding the Bleeding Hollow (A)
+						["coord"] = { 22.0, 50.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						--["sourceQuest"] = 38560,	-- Garrison Campaign: The Bane of the Bleeding Hollow
+					}),
+					q(38871, {	-- Bleeding the Bleeding Hollow (H)
+						["coord"] = { 22.0, 50.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						--["sourceQuest"] = 38453,	-- Garrison Campaign: The Bane of the Bleeding Hollow
+					}),
+					q(38045, {	-- Bleeding the Bleeding Hollow (A)
+						["coord"] = { 58.4, 60.2, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							crit(7, {
+								["achievementID"] = 10068,	-- Draenor's Last Stand
+							}),
+						},
+					}),
+					q(38044, {	-- Bleeding the Bleeding Hollow (H)
+						["coord"] = { 61.4, 45.8, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							crit(7, {
+								["achievementID"] = 10075,	-- Draenor's Last Stand
+							}),
+						},
+					}),
+					q(38043, {	-- Bleeding the Bleeding Hollow (A)
+						["coord"] = { 22.0, 50.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(38040, {	-- Bleeding the Bleeding Hollow (H)
+						["coord"] = { 22.0, 50.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(39441, {	-- Bleeding the Bleeding Hollow (A)
+						["coord"] = { 22.0, 50.0, TANAAN_JUNGLE },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						--["sourceQuest"] = 38560,	-- Garrison Campaign: The Bane of the Bleeding Hollow
+					}),
+					q(39442, {	-- Bleeding the Bleeding Hollow (H)
+						["coord"] = { 22.0, 50.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						--["sourceQuest"] = 38453,	-- Garrison Campaign: The Bane of the Bleeding Hollow
+					}),
 				}),
 			}),
 		}),
