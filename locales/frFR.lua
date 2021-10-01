@@ -819,7 +819,6 @@ for key,value in pairs({
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Meilleurs amis pour la vie",	-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			[-933] = "Esprit divin",								-- Divine Spirit
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 			--TODO: [-937] = "Transport Network",					-- Transport Network (Night Fae)

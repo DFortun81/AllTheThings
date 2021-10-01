@@ -1195,9 +1195,10 @@ app.L = {
 		[-928] = "Interface\\Icons\\ui_sigil_necrolord",									-- Abomination Factory (Necrolord) Tier 4
 		[-929] = "Interface\\Icons\\ui_sigil_nightfae",										-- Covenant: Night Fae
 		[-930] = 136059,																	-- Queen's Conservatory
-		[-931] = 636334,																	-- Lesser Spirit
-		[-932] = 636335,																	-- Spirit
-		[-933] = 2451604,																	-- Greater Spirit
+		[-1002] = 3528288,																	-- Dutiful Spirit
+		[-1003] = 3528296,																	-- Martial Spirit
+		[-1004] = 3528312,																	-- Prideful Spirit
+		[-1005] = 3528280,																	-- Untamed Spirit
 		[-935] = "Interface\\Icons\\ui_sigil_nightfae",										-- Sanctum Upgrades (Night Fae)
 		[-936] = "Interface\\Icons\\ui_sigil_nightfae",										-- Soulshape Forms (Night Fae)
 		[-937] = "Interface\\Icons\\ui_sigil_nightfae",										-- Transport Network (Night Fae)
@@ -1939,14 +1940,15 @@ app.L = {
 	-- SL Ardenweald/Night Fae
 		[-929] = GetSpellInfo(321077),											-- Night Fae
 		[-930] = COVENANT_SANCTUM_FEATURE_NIGHT_FAE,							-- Queen's Conservatory
-		[-931] = GetSpellInfo(172153),											-- Spirit
-		[-932] = GetSpellInfo(13826),											-- Greater Spirit
-		[-933] = "Divine Spirit",												-- Divine Spirit
 		[-934] = C_Map.GetAreaInfo(12840),										-- Star Lake Amphitheater
 		[-935] = "Sanctum Upgrades",											-- Sanctum Upgrades (Night Fae)
 		[-936] = "Soulshape Forms",												-- Soulshape Forms (Night Fae)
 		[-937] = "Transport Network",											-- Transport Network (Night Fae)
 		--[-938] is stolen for Necrolord because I ran out of numbers
+		[-1002] = select(1, GetItemInfo(178881)),								-- Dutiful Spirit
+		[-1003] = select(1, GetItemInfo(178874)),								-- Martial Spirit
+		[-1004] = select(1, GetItemInfo(178882)),								-- Prideful Spirit
+		[-1005] = select(1, GetItemInfo(177698)),								-- Untamed Spirit
 
 	-- SL Bastion/Kyrian
 		[-939] = GetSpellInfo(321076),											-- Kyrian

@@ -819,9 +819,6 @@ for key,value in pairs({
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": 우정은 영원히",	-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			[-931] = "영혼",									-- Spirit
-			[-932] = "상급 영혼",										-- Greater Spirit
-			[-933] = "신성한 영혼",										-- Divine Spirit
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 			--TODO: [-937] = "Transport Network",					-- Transport Network (Night Fae)

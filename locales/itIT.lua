@@ -819,7 +819,6 @@ for key,value in pairs({
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Un abominio è per sempre",	-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			[-933] = "Spirito Divino",								-- Divine Spirit
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 			--TODO: [-937] = "Transport Network",					-- Transport Network (Night Fae)
