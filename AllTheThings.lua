@@ -3205,8 +3205,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	-- Call to the method to search the database.
 	local rawlink;
 	-- Store the raw search link if no paramB
-	if not paramB then rawlink = paramA; end
+	if paramB then paramB = tonumber(paramB);
+	else rawlink = paramA; end
 	local group, a, b = method(paramA, paramB, ...);
+	-- print("Raw Search",search,a,b,group and #group, ...);
 	if not group then group = {}; end
 	if a then paramA = a; end
 	if b then paramB = b; end
