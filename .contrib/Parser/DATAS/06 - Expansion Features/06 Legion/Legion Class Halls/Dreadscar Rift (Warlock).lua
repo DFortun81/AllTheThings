@@ -659,6 +659,7 @@ _.ExpansionFeatures =
 						}),
 						q(41796, {	-- Selecting a Sixth
 							i(139767),	-- Robes of the Black Harvest
+							title(337),	-- Netherlord <Name>
 						}),
 						--[[ Artifact Appearance  Quests Commented Out For Now
 						q(43414, {	-- A Hero's Weapon

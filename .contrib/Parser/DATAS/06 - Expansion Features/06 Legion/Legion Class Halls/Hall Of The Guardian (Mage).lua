@@ -564,6 +564,7 @@ _.ExpansionFeatures =
 							},
 							["g"] = {
 								i(139751),	-- Robes of Tirisgarde
+								title(61),	-- Archmage <Name>
 							},
 						}),
 						q(45998, {	-- Investigate the Broken Shore

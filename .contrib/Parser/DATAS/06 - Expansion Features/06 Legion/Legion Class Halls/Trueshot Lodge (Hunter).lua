@@ -349,6 +349,7 @@ _.ExpansionFeatures =
 							["coord"] = { 43.4, 26.4, 739 },
 							["g"] = {
 								i(139707),	-- Hauberk of the Unseen Path
+								title(335),	-- Huntmaster <Name>
 							},
 						}),
 						q(42405, {	-- Informing Our Allies

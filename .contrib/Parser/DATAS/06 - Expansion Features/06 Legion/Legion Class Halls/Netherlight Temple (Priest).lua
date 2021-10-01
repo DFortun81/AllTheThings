@@ -392,6 +392,7 @@ _.ExpansionFeatures =
 							["classes"] = { PRIEST },
 							["g"] = {
 								i(139759),	-- Robes of the High Priest
+								title(339),	-- High Priest <Name>
 							},
 						}),
 						q(43884, {	-- Hitting the Books
