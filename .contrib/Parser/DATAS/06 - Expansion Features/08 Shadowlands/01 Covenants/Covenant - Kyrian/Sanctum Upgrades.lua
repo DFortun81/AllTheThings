@@ -1485,33 +1485,33 @@ _.HiddenQuestTriggers = {
 	q(61266),	-- Triggered from buff recieved from Kyrian Conductor Tier 3
 
 	-- COURAGE DIFFICULTY KILL
-	q(60917),	-- Kalisthene | Courage
-	q(60918),	-- Echthra | Courage
-	q(60919),	-- Alderyn and Myn'ir | Courage
-	q(60921),	-- Nuuminuuru | Courage
-	q(60922),	-- Craven Corinth | Courage
-	q(60923),	-- Splinterbark Nightmare
-	q(60924),	-- Thran'tiok | Courage
-	q(60925),	-- Mad Mortimer | Courage
-	q(60926),	-- Athanos | Courage
-	q(60927),	-- Azaruux | Courage
-
+	q(60917),	-- Kalisthene | Courage - CONFIRMED
+	q(60918),	-- Echthra | Courage - CONFIRMED
+	q(60919),	-- Alderyn and Myn'ir | Courage - CONFIRMED
+	q(60921),	-- Nuuminuuru | Courage - CONFIRMED
+	q(60922),	-- Craven Corinth | Courage - CONFIRMED
+	q(60923),	-- Splinterbark Nightmare - CONFIRMED
+	q(60924),	-- Thran'tiok | Courage - CONFIRMED
+	q(60925),	-- Mad Mortimer | Courage - CONFIRMED
+	q(60926),	-- Athanos | Courage - CONFIRMED
+	q(60927),	-- Azaruux | Courage - CONFIRMED
+	
 	-- LOYALTY DIFFICULTY KILL
-	q(61014),	-- Azaruux | Loyalty
-	q(61015),	-- Athanos | Loyalty
-	q(61016),	-- Mad Mortimer | Loyalty
-	q(61017),	-- Thran'tiok | Loyalty
-	q(61018),	-- Splinterbark Nightmare | Loyalty
-	q(61019),	-- Cravin Corinth | Loyalty
-	q(61020),	-- Nuuminuuru | Loyalty
-	q(61021),	-- Alderyn and Myn'ir | Loyalty
-	q(61022),	-- Echthra | Loyalty
-	q(61023),	-- Kalisthene | Loyalty
-
+	q(61014),	-- Azaruux | Loyalty - CONFIRMED
+	q(61015),	-- Athanos | Loyalty - CONFIRMED
+	q(61016),	-- Mad Mortimer | Loyalty - CONFIRMED
+	q(61017),	-- Thran'tiok | Loyalty - CONFIRMED
+	q(61018),	-- Splinterbark Nightmare | Loyalty - CONFIRMED
+	q(61019),	-- Cravin Corinth | Loyalty - CONFIRMED
+	q(61020),	-- Nuuminuuru | Loyalty - CONFIRMED
+	q(61021),	-- Alderyn and Myn'ir | Loyalty - CONFIRMED
+	q(61022),	-- Echthra | Loyalty - CONFIRMED
+	q(61023),	-- Kalisthene | Loyalty - CONFIRMED
+	
 	-- WISDOM DIFFICULTY KILL
 	q(61024),	-- Azaruux | Wisdom
 	q(61025),	-- Athanos | Wisdom
-	q(61026),	-- Mad Mortimer | Wisdom
+	q(61026),	-- Mad Mortimer | Wisdom 
 	q(61027),	-- Thran'tiok | Wisdom
 	q(61028),	-- Splinterbark | Wisdom
 	q(61029),	-- Craven Corinth | Wisdom
@@ -1519,11 +1519,11 @@ _.HiddenQuestTriggers = {
 	q(61031),	-- Alderyn and Myn'ir | Wisdom
 	q(61032),	-- Echthra | Wisdom
 	q(61033),	-- Kalisthene | Wisdom
-
+	
 	-- HUMILITY DIFFICULTY KILL
-	q(63102),	-- Kelisthene | Humility | Pelagos
-	q(63103),	-- Kelisthene | Humility | Kleia
-	q(63104),	-- Kelisthene | Humility | Mikanikos
+	q(63102),	-- Kalisthene | Humility | Pelagos
+	q(63103),	-- Kalisthene | Humility | Kleia
+	q(63104),	-- Kalisthene | Humility | Mikanikos
 	q(63105),	-- Echthra | Humility | Pelagos
 	q(63106),	-- Echthra | Humility | Kleia
 	q(63107),	-- Echthra | Humility | Mikanikos
@@ -1551,7 +1551,7 @@ _.HiddenQuestTriggers = {
 	q(63129),	-- Azaruux | Humility | Pelagos
 	q(63130),	-- Azaruux | Humility | Kleia
 	q(63131),	-- Azaruux | Humility | Mikanikos
-
+	
 	-- HUMILITY DIFFICULTY NO CHARMS, NO ACTIVE BRAZIERS (probably only for either charms or braziers)
 	q(61034),	-- Azaruux | Humility | no charms | no active braziers
 	q(61035),	-- Arthanos | Humility | no charms | no active braziers
@@ -1562,10 +1562,10 @@ _.HiddenQuestTriggers = {
 	q(61040),	-- Nuuminuuru | Humility | no charms | no active braziers.
 	q(61041),	-- Alderyn and Myn'ir | Humility | no charms | no active braziers
 	q(61042),	-- Echthra | Humility | no charms | no active braziers
-	q(61043),	-- Kelisthene | Humility | no charms | no active braziers
-
+	q(61043),	-- Kalisthene | Humility | no charms | no active braziers
+	
 	-- HUMILITY DIFFICULTY NO CHARMS, NO ACTIVE BRAZIERS (probably only for either charms or braziers)
-	q(63138),	-- Kelisthene | Humility | no charms | no active braziers
+	q(63138),	-- Kalisthene | Humility | no charms | no active braziers
 	q(63139),	-- Echthra | Humility | no charms | no active braziers
 	q(63143),	-- Alderyn and Myn'ir | Humility | no charms | no active braziers
 	q(63144),	-- Nuuminuuru" boss | Humility | no charms | no active braziers
@@ -1575,19 +1575,21 @@ _.HiddenQuestTriggers = {
 	q(63149),	-- Mad Mortimer | Humility | no charms | no active braziers
 	q(63150),	-- Athanos | Humility | no charms | no active braziers
 	q(63151),	-- Azaruux | Humility | no charms | no active braziers
-
+	
 	-- UNKNOWN EXACT TRIGGERS (could be loyalty kills instead, but what is in loyalty kills then?)
 	--q(63074),	-- Kelisthene | Loyalty | Kleia
 	--q(63075),	-- Craven Corinth | Loyalty | Kleia
-	--q(63076),	-- ? | Loyalty | ?
-	--q(63077),	-- ? | Loyalty | ?
-	--q(63078),	-- Kalisthene | Loyalty
-	--q(63079),	-- Nuuminuuru | Loyalty
+	--q(63076),	-- ?
+	--q(63077),	-- ?
+	--q(63078),	-- Kalisthene | Loyalty | Pelagos | before loot | 1 brazier - CONFIRMED
+	--q(63079),	-- Echthra | Loyalty | Pelagos | after loot | no brazier - CONFIRMED
 	--q(63080),	-- Mad Mortimer | Loyalty | Pelagos
-	--q(63081),	-- ? | Loyalty | ?
+	--q(63081),	-- ?
 	--q(63082),	-- Thran'tiok | Loyalty | Pelagos
+	--q(63082),	-- Azaruux | Loyalty | Pelagos | after loot | 1 brazier - CONFIRMED
 	--q(63083),	-- Craven Corinth | Loyalty | Kleia
-
+	--q(63083),	-- Splinterbark Nightmare | Loyalty | Pelagos | before loot | 1 brazier - CONFIRMED
+	
 	-- HQTs for It's How You Wear It achievement
 	q(63084),	-- Humility | Herald's Footpads
 	q(63085),	-- Humility | Deep Echo Trident
@@ -1595,12 +1597,19 @@ _.HiddenQuestTriggers = {
 	q(63087),	-- Humility | Phial of Serenity
 	q(63088),	-- Humility | Ring of Warding
 	q(63089),	-- Humility | Spiritforged Aegis
-
+	
 	-- I think this might be for Learning from the Masters achievement
 	--q(63093),	-- Kalisthene | Wisdom
 	--q(63094),	--
 	--q(63095),	--
 	--q(63096),	-- Athanos | Courage | Kleia
-	--q(63097),	-- Completing first 9 Path of Ascension 'Courage' challenges?
+	q(63097),	-- Athanos | Courage | Pelagos | Completing first 9 Path of Ascension 'Courage' challenges?
 	--q(63098),	-- Athanos | Wisdom | Mikanikos | Vial of Serenity | no charms
+	
+	-- LOYALTY BRAZIERS | WILL UNFLAG IF BRAZIER IS USED AGAIN
+	q(62770),	-- Loyalty | no brazier #1 - CONFIRMED
+	q(62771),	-- Loyalty | no brazier #2 - CONFIRMED
+	
+	q(63165),	-- after earning To the Moon achievement
+	q(62989),	-- Arsenal: Doubt's Weapon Cache
 };
