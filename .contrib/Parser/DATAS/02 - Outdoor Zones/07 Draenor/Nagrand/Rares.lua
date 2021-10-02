@@ -103,7 +103,6 @@ _.Zones =
 				}),
 				n(80122, {	-- Gaz'orda
 					["questID"] = 34725,
-					["isDaily"] = true,
 					["coord"] = { 42.1, 78.8, DRAENOR_NAGRAND },	-- cave
 					["g"] = {
 						i(116798),	-- Gaz'orda's Grim Gaze
@@ -349,7 +348,6 @@ _.Zones =
 				}),
 				n(80057, {	-- Soulfang
 					["questID"] = 36128,
-					["isDaily"] = true,
 					["coord"] = { 75.6, 65.2, DRAENOR_NAGRAND },
 					["g"] = {
 						i(116806),	-- Soul Fang

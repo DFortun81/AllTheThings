@@ -330,7 +330,6 @@ _.Zones =
 				}),
 				n(79104, {	-- Ug'lok the Frozen
 					["questID"] = 34522,
-					["isDaily"] = true,
 					["coord"] = { 40.4, 12.6, FROSTFIRE_RIDGE },
 					["g"] = {
 						un(NEVER_IMPLEMENTED, i(119409, {	-- Icebound Bloodmaul Spire

@@ -406,14 +406,14 @@ _.Zones =
 							}),
 						},
 					}),
-					q(37865, {	-- Assault on Ironhold Harbor (H)
-						["coord"] = { 39.0, 38.0, TANAAN_JUNGLE },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-					}),
 					q(37866, {	-- Assault on Ironhold Harbor (A)
 						["coord"] = { 39.0, 38.0, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(37865, {	-- Assault on Ironhold Harbor (H)
+						["coord"] = { 39.0, 38.0, TANAAN_JUNGLE },
+						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(39451, {	-- Assault on Ironhold Harbor (A)
