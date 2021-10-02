@@ -31,6 +31,11 @@ _.Titles =
 			title(396),	-- <Name> the Elite Shaman
 			title(397),	-- <Name> the Elite Warlock
 			title(398),	-- <Name> the Elite Warrior
+			title(29),	-- Gladiator <Name>
+			title(30),	-- Duelist <Name>
+			title(31),	-- Rival <Name>
+			title(32),	-- Challenger <Name>
+			title(78),	-- Combatant <Name>
 			-- Misc
 			title(145),	-- <Name>, Blessed Defender of Nordrassil
 			title(224),	-- Gob Squad Recruit <Name>

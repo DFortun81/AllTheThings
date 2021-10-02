@@ -573,7 +573,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		title(406),	-- Sparking <Name>
 		title(408),	-- Pilgrim <Name> the Mallet Bearer
 		title(424),	-- Deathbringer <Name>
-		title(436),	-- <Name< the Avowed
+		title(436),	-- <Name> the Avowed
 		
 	}),
 });

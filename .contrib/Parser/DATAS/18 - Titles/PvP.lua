@@ -11,14 +11,8 @@ _.Titles =
 		title(354),	-- <Name> the Unstoppable Force
 		title(325),	-- The Unrelenting <Name>
 		title(369),	-- <Name> the Tactician
-		-- Arean Ranks
-		title(29),	-- Gladiator <Name>
-		title(30),	-- Duelist <Name>
-		title(31),	-- Rival <Name>
-		title(32),	-- Challenger <Name>
+		-- Arean Seasonal
 		title(441),	-- Unchained Gladiator <Name>
-		-- Battleground Ranks
-		title(78),	-- Combatant <Name>
 		-- BG Wins
 		title(152, {	-- <Name>, Veteran of the Alliance
 			["races"] = ALLIANCE_ONLY,
