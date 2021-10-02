@@ -23,6 +23,9 @@ _.GearSets =
 		i(77949, {	-- Golad, Twilight of Aspects
 			["classes"] = { ROGUE }
 		}),
+		i(186414, {	-- Rae'shalare, Death's Whisper
+			["classes"] = { HUNTER },
+		}),
 		i(49623, {	-- Shadowmourne
 			["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT }
 		}),

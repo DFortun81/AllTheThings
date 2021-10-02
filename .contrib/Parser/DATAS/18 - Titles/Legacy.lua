@@ -294,6 +294,12 @@ _.Titles =
 				["timeline"] = { "removed 2.0.1" },
 			}),
 			-- Arena Titles
+			title(50, {	-- Arena Master <Name>
+				["timeline"] = {
+					"added 3.0.2",
+					"removed 7.0.3",
+				},
+			}),
 			title(37, {	-- Merciless Gladiator <Name>
 				["timeline"] = {
 					"added 2.1.2",
@@ -514,6 +520,8 @@ _.Titles =
 			}),
 			-- Misc
 			title(96, {	-- <Name> the Flawless Victor
+				["description"] = "This title is obtained by completing hot hot hot streak achievement. In patch 3.1.0 blizzard removed the title from anyone that had earned it",
+				["collectible"] = false,
 				["timeline"] = {
 					"added 3.0.2",
 					"removed 3.1.0",
@@ -565,7 +573,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 });
 --[[
 
--- Needs Sources Hall of Fame, Guardian etc.. pvp achievements. 
+-- Needs Sources Hall of Fame. 
 ID,Name_lang,Name1_lang,Mask_ID,Flags
 -- Hmm Reset every season
 637,%s the Elite Death Knight,%s the Elite Death Knight,387,0

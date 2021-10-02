@@ -40,7 +40,6 @@ _.Titles =
 			["races"] = ALLIANCE_ONLY,
 		}),
 		title(41),	-- Battlemaster <Name>
-		title(50),	-- Arena Master <Name>
 		title(220),	-- <Name>, Khan
 		title(229),	-- Gorgeous <Name>
 		title(373),	-- Prospector <Name>
