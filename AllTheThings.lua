@@ -14927,6 +14927,7 @@ function app:GetDataCache()
 		if app.Categories.Titles then
 			db = {};
 			db.g = app.Categories.Titles;
+			db.icon = app.asset("Category_Titles");
 			db.expanded = false;
 			db.text = "Titles";
 			db.sourceIgnored = true;
