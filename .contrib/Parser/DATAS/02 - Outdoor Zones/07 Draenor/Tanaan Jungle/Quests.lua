@@ -440,11 +440,13 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
+					]]--
 					q(37970, {	-- Assault on the Fel Forge (H)
-						["coord"] = { ?, ?, TANAAN_JUNGLE },
+						["coord"] = { 50.0, 44.0, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
+					--[[
 					q(38440, {	-- Assault on the Fel Forge (A)
 						["coord"] = { ?, ?, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
@@ -455,8 +457,9 @@ _.Zones =
 							}),
 						},
 					}),
+					]]--
 					q(38441, {	-- Assault on the Fel Forge (H)
-						["coord"] = { ?, ?, TANAAN_JUNGLE },
+						["coord"] = { 61.4, 45.8, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["g"] = {
@@ -465,7 +468,6 @@ _.Zones =
 							}),
 						},
 					}),
-					]]--
 					q(39445, {	-- Assault on the Fel Forge (A)
 						["coord"] = { 50.0, 44.0, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
