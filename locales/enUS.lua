@@ -634,6 +634,7 @@ app.L = {
 		["Heroic"] = "H",
 		["Mythic"] = "M",
 		["Ny'alotha, the Waking City"] = "Ny'alotha",
+		["Tazavesh, the Veiled Market"] = "Tazavesh",
 		["10 Player"] = "10M",
 		["10 Player (Heroic)"] = "10M (H)",
 		["25 Player"] = "25M",
@@ -2068,6 +2069,9 @@ app.L = {
 		[-3338] = ISLANDS_HEADER,												-- Island Expeditions
 		[-3339] = LOOT_JOURNAL_ITEM_SETS,										-- Item Sets
 		[-3347] = "Black Tooth Grunt",
+		--[-3348] = string.format(COVENANT_SANCTUM_TIER, 1)..": Step of Faith",	-- Listed under 950//SL Bastion/Kyrian
+		--[-3349] = string.format(COVENANT_SANCTUM_TIER, 2)..": Leap of Power",	-- Listed under 950//SL Bastion/Kyrian
+		--[-3350] = string.format(COVENANT_SANCTUM_TIER, 3)..": Eternal Paths",	-- Listed under 950//SL Bastion/Kyrian
 
 -- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
