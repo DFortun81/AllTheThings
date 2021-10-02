@@ -2,28 +2,27 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = LOVE_IS_IN_THE_AIR}, {
+local BOUQUET_RED = un(LOVE_IS_IN_THE_AIR, i(22206));
+local BOUQUET_EBON = un(LOVE_IS_IN_THE_AIR, i(44731));
+
+_.Holidays = {
 	holiday(235468, {	-- Love is in the Air
 		n(-139, {	-- Bosses
-			n(36296, {	-- Apothecary Hummel
+			n(36296, bubbleDown({["u"] = LOVE_IS_IN_THE_AIR}, {	-- Apothecary Hummel
 				i(147907, {	-- Heart-Shaped Carton
-					["g"] = {
-						i(49715),	-- Forever-Lovely Rose
-						i(50446),	-- Toxic Wasteling
-						i(50741),	-- Vile Fumigator's Mask
-						i(50471),	-- The Heartbreaker
-					},
+					i(49715),	-- Forever-Lovely Rose
+					i(50446),	-- Toxic Wasteling
+					i(50741),	-- Vile Fumigator's Mask
+					i(50471),	-- The Heartbreaker
 				}),
 				i(54537, {	-- Heart-Shaped Box
-					["g"] = {
-						i(49715),	-- Forever-Lovely Rose
-						i(50446),	-- Toxic Wasteling
-						i(50741),	-- Vile Fumigator's Mask
-						i(50471),	-- The Heartbreaker
-						i(50250, {	-- Big Love Rocket
-							ach(4627),	-- Big Love Rocket
-						}),
-					},
+					i(49715),	-- Forever-Lovely Rose
+					i(50446),	-- Toxic Wasteling
+					i(50741),	-- Vile Fumigator's Mask
+					i(50471),	-- The Heartbreaker
+					i(50250, {	-- Big Love Rocket
+						ach(4627),	-- Big Love Rocket
+					}),
 				}),
 
 				un(REMOVED_FROM_GAME, i(51808)),	-- Choker of the Pure Heart [Level 80]
@@ -58,19 +57,19 @@ _.Holidays = bubbleDown({["u"] = LOVE_IS_IN_THE_AIR}, {
 				i(21813),	-- Bag of Heart Candies
 				i(49909),	-- Box of Chocolates
 				i(34258),	-- Love Rocket
-			}),
+			})),
 			tier(WOTLK_TIER, {
 				inst(277, {	-- Halls of Stone
 					d(2, {	-- Heroic
 						n(27975, {	-- Maiden of Grief
-							i(44731),	-- Bouquet of Ebon Roses
+							BOUQUET_EBON
 						}),
 					}),
 				}),
 				inst(285, {	-- Utgarde Keep
 					d(1, {	-- Normal
 						n(23953, {	-- Prince Keleseth
-							i(22206),	-- Bouquet of Red Roses
+							BOUQUET_RED,
 						}),
 					}),
 				}),
@@ -79,69 +78,69 @@ _.Holidays = bubbleDown({["u"] = LOVE_IS_IN_THE_AIR}, {
 				inst(66, {	-- Blackrock Caverns
 					d(1, {	-- Normal
 						n(39679, {	-- Corla, Herald of Twilight
-							i(22206),	-- Bouquet of Red Roses
+							BOUQUET_RED,
 						}),
 					}),
 					d(2, {	-- Heroic
 						n(39679, {	-- Corla, Herald of Twilight
-							i(22206),	-- Bouquet of Red Roses
+							BOUQUET_RED,
 						}),
 					}),
 				}),
 				inst(184, {	-- End Time
 					d(2, {	-- Heroic
 						n(54445, {	-- Echo of Jaina
-							i(22206),	-- Bouquet of Red Roses
+							BOUQUET_RED,
 						}),
 						n(54123, {	-- Echo of Sylvanas
-							i(44731),	-- Bouquet of Ebon Roses
+							BOUQUET_EBON
 						}),
 					}),
 				}),
 				inst(71, {	-- Grim Batol
 					d(1, {	-- Normal
 						n(40319, {	-- Drahga Shadowburner
-							i(22206),	-- Bouquet of Red Roses
+							BOUQUET_RED,
 						}),
 					}),
 					d(2, {	-- Heroic
 						n(40319, {	-- Drahga Shadowburner
-							i(22206),	-- Bouquet of Red Roses
+							BOUQUET_RED,
 						}),
 					}),
 				}),
 				inst(186, {	-- Hour of Twilight
 					d(2, {	-- Heroic
 						n(54968, {	-- Asira Dawnslayer
-							i(22206),	-- Bouquet of Red Roses
+							BOUQUET_RED,
 						}),
 					}),
 				}),
 				inst(64, {	-- Shadowfang Keep
 					d(2, {	-- Heroic
 						n(46964, {	-- Lord Godfrey
-							i(44731),	-- Bouquet of Ebon Roses
-							i(22206),	-- Bouquet of Red Roses
+							BOUQUET_EBON,
+							BOUQUET_RED,
 						}),
 					}),
 				}),
 				inst(63, {	-- The Deadmines
 					d(2, {	-- Heroic
 						n(47626, {	-- Admiral Ripsnarl
-							i(44731),	-- Bouquet of Ebon Roses
-							i(22206),	-- Bouquet of Red Roses
+							BOUQUET_EBON,
+							BOUQUET_RED,
 						}),
 					}),
 				}),
 				inst(67, {	-- The Stonecore
 					d(1, {	-- Normal
 						n(42333, {	-- High Priestess Azil
-							i(22206),	-- Bouquet of Red Roses
+							BOUQUET_RED,
 						}),
 					}),
 					d(2, {	-- Heroic
 						n(42333, {	-- High Priestess Azil
-							i(22206),	-- Bouquet of Red Roses
+							BOUQUET_RED,
 						}),
 					}),
 				}),
@@ -150,16 +149,16 @@ _.Holidays = bubbleDown({["u"] = LOVE_IS_IN_THE_AIR}, {
 				inst(537, {	-- Shadowmoon Burial Grounds
 					d(1, {	-- Normal
 						cr(75509, e(1139, {	-- Sadana Bloodfury
-							i(44731),	-- Bouquet of Ebon Roses
+							BOUQUET_EBON
 						})),
 					}),
 					--[[d(23, {	-- Mythic
 						cr(75509, e(1139, {	-- Sadana Bloodfury
-							i(44731),	-- Bouquet of Ebon Roses
+							BOUQUET_EBON
 						})),
 					}),]]--
 				}),
 			}),
 		}),
 	}),
-});
+};
