@@ -225,6 +225,11 @@ _.Titles =
 			["sourceQuest"] = 52786,	-- The Alliance Slayer
 		}),
 		title(383),	-- Contender <Name>
-		title(414),	-- <Name>, Servant of N'Zoth
+		title(414, {	-- <Name>, Servant of N'Zoth
+			["timeline"] = {
+				"added 8.3.0",
+				"removed 9.0.1",
+			},
+		}),
 	})),
 };
