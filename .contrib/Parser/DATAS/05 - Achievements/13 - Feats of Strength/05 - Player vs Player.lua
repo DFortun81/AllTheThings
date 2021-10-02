@@ -151,6 +151,7 @@ _.Achievements =
 					["g"] = {
 						title(310, {	-- <Name> Defender of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -163,6 +164,7 @@ _.Achievements =
 					["g"] = {
 						title(313, {	-- <Name> Defender of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -177,6 +179,7 @@ _.Achievements =
 					["g"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -189,6 +192,7 @@ _.Achievements =
 					["g"] = {
 						title(312, {	-- <Name> Guardian of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -219,6 +223,7 @@ _.Achievements =
 					["g"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -231,6 +236,7 @@ _.Achievements =
 					["g"] = {
 						title(314, {	-- <Name> Soldier of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -246,6 +252,7 @@ _.Achievements =
 					["g"] = {
 						title(310, {	-- <Name> Defender of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -258,6 +265,7 @@ _.Achievements =
 					["g"] = {
 						title(313, {	-- <Name> Defender of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -272,6 +280,7 @@ _.Achievements =
 					["g"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -284,6 +293,7 @@ _.Achievements =
 					["g"] = {
 						title(312, {	-- <Name> Guardian of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -303,6 +313,7 @@ _.Achievements =
 					["g"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -315,6 +326,7 @@ _.Achievements =
 					["g"] = {
 						title(314, {	-- <Name> Soldier of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -341,6 +353,7 @@ _.Achievements =
 					["g"] = {
 						title(310, {	-- <Name> Defender of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -353,6 +366,7 @@ _.Achievements =
 					["g"] = {
 						title(313, {	-- <Name> Defender of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -367,6 +381,7 @@ _.Achievements =
 					["g"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -379,6 +394,7 @@ _.Achievements =
 					["g"] = {
 						title(312, {	-- <Name> Guardian of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -398,6 +414,7 @@ _.Achievements =
 					["g"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -410,6 +427,7 @@ _.Achievements =
 					["g"] = {
 						title(314, {	-- <Name> Soldier of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -436,6 +454,7 @@ _.Achievements =
 					["g"] = {
 						title(310, {	-- <Name> Defender of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -448,6 +467,7 @@ _.Achievements =
 					["g"] = {
 						title(313, {	-- <Name> Defender of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -463,6 +483,7 @@ _.Achievements =
 					["g"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -475,6 +496,7 @@ _.Achievements =
 					["g"] = {
 						title(312, {	-- <Name> Guardian of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -493,6 +515,7 @@ _.Achievements =
 					["g"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -505,6 +528,7 @@ _.Achievements =
 					["g"] = {
 						title(314, {	-- <Name> Soldier of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -533,6 +557,7 @@ _.Achievements =
 					["g"] = {
 						title(310, {	-- <Name> Defender of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -545,6 +570,7 @@ _.Achievements =
 					["g"] = {
 						title(313, {	-- <Name> Defender of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -571,6 +597,7 @@ _.Achievements =
 					["g"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -583,6 +610,7 @@ _.Achievements =
 					["g"] = {
 						title(312, {	-- <Name> Guardian of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -601,6 +629,7 @@ _.Achievements =
 					["g"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -613,6 +642,7 @@ _.Achievements =
 					["g"] = {
 						title(314, {	-- <Name> Soldier of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -641,6 +671,7 @@ _.Achievements =
 					["g"] = {
 						title(310, {	-- <Name> Defender of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -653,6 +684,7 @@ _.Achievements =
 					["g"] = {
 						title(313, {	-- <Name> Defender of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -667,6 +699,7 @@ _.Achievements =
 					["g"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -679,6 +712,7 @@ _.Achievements =
 					["g"] = {
 						title(312, {	-- <Name> Guardian of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -697,6 +731,7 @@ _.Achievements =
 					["g"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -709,6 +744,7 @@ _.Achievements =
 					["g"] = {
 						title(314, {	-- <Name> Soldier of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -725,6 +761,7 @@ _.Achievements =
 					["g"] = {
 						title(310, {	-- <Name> Defender of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -737,6 +774,7 @@ _.Achievements =
 					["g"] = {
 						title(313, {	-- <Name> Defender of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -762,6 +800,7 @@ _.Achievements =
 					["g"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -774,6 +813,7 @@ _.Achievements =
 					["g"] = {
 						title(312, {	-- <Name> Guardian of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -793,6 +833,7 @@ _.Achievements =
 					["g"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -805,6 +846,7 @@ _.Achievements =
 					["g"] = {
 						title(314, {	-- <Name> Soldier of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -821,6 +863,7 @@ _.Achievements =
 					["g"] = {
 						title(310, {	-- <Name> Defender of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -833,6 +876,7 @@ _.Achievements =
 					["g"] = {
 						title(313, {	-- <Name> Defender of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -858,6 +902,7 @@ _.Achievements =
 					["g"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -870,6 +915,7 @@ _.Achievements =
 					["g"] = {
 						title(312, {	-- <Name> Guardian of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -889,6 +935,7 @@ _.Achievements =
 					["g"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -901,6 +948,7 @@ _.Achievements =
 					["g"] = {
 						title(314, {	-- <Name> Soldier of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -917,6 +965,7 @@ _.Achievements =
 					["g"] = {
 						title(310, {	-- <Name> Defender of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -929,6 +978,7 @@ _.Achievements =
 					["g"] = {
 						title(313, {	-- <Name> Defender of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -954,6 +1004,7 @@ _.Achievements =
 					["g"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -966,6 +1017,7 @@ _.Achievements =
 					["g"] = {
 						title(312, {	-- <Name> Guardian of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -985,6 +1037,7 @@ _.Achievements =
 					["g"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -997,6 +1050,7 @@ _.Achievements =
 					["g"] = {
 						title(314, {	-- <Name> Soldier of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -1013,6 +1067,7 @@ _.Achievements =
 					["g"] = {
 						title(310, {	-- <Name> Defender of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -1025,6 +1080,7 @@ _.Achievements =
 					["g"] = {
 						title(313, {	-- <Name> Defender of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -1050,6 +1106,7 @@ _.Achievements =
 					["g"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -1062,6 +1119,7 @@ _.Achievements =
 					["g"] = {
 						title(312, {	-- <Name> Guardian of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -1082,6 +1140,7 @@ _.Achievements =
 					["g"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",
@@ -1094,6 +1153,7 @@ _.Achievements =
 					["g"] = {
 						title(314, {	-- <Name> Soldier of the Horde
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
 							["timeline"] = {
 								"added 6.0.3",
 								"removed 8.0.1",

@@ -120,7 +120,7 @@ _.Titles =
 				},
 			}),
 		}), 
-		n(ACHIEVEMENTS, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, { -- Realm Best Time Challenge Mode
+		n(ACHIEVEMENTS, bubbleDown({ ["u"] = REMOVED_FROM_GAME, ["collectible"] = false, }, { -- Realm Best Time Challenge Mode (Blizzard removed these from players)
 			title(241),	-- <Name>, Defender of the Wall
 			title(242),	-- Mogu-Slayer <Name>
 			title(243),	-- Flameweaver <Name>
@@ -478,6 +478,7 @@ _.Titles =
 			-- RBG titles
 			title(309, {	-- <Name> Guardian of the Alliance
 				["races"] = ALLIANCE_ONLY,
+				["collectible"] = false,	-- Blizzard....
 				["timeline"] = {
 					"added 6.0.3",
 					"removed 8.0.1",
@@ -485,6 +486,7 @@ _.Titles =
 			}),
 			title(310, {	-- <Name> Defender of the Alliance
 				["races"] = ALLIANCE_ONLY,
+				["collectible"] = false,	-- Blizzard....
 				["timeline"] = {
 					"added 6.0.3",
 					"removed 8.0.1",
@@ -492,6 +494,7 @@ _.Titles =
 			}),
 			title(311, {	-- <Name> Soldier of the Alliance
 				["races"] = ALLIANCE_ONLY,
+				["collectible"] = false,	-- Blizzard....
 				["timeline"] = {
 					"added 6.0.3",
 					"removed 8.0.1",
@@ -499,6 +502,7 @@ _.Titles =
 			}),
 			title(312, {	-- <Name> Guardian of the Horde
 				["races"] = HORDE_ONLY,
+				["collectible"] = false,	-- Blizzard....
 				["timeline"] = {
 					"added 6.0.3",
 					"removed 8.0.1",
@@ -506,6 +510,7 @@ _.Titles =
 			}),
 			title(313, {	-- <Name> Defender of the Horde
 				["races"] = HORDE_ONLY,
+				["collectible"] = false,	-- Blizzard....
 				["timeline"] = {
 					"added 6.0.3",
 					"removed 8.0.1",
@@ -513,6 +518,7 @@ _.Titles =
 			}),
 			title(314, {	-- <Name> Soldier of the Horde
 				["races"] = HORDE_ONLY,
+				["collectible"] = false,	-- Blizzard....
 				["timeline"] = {
 					"added 6.0.3",
 					"removed 8.0.1",
@@ -571,51 +577,3 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		
 	}),
 });
---[[
-
--- Needs Sources Hall of Fame. 
-ID,Name_lang,Name1_lang,Mask_ID,Flags
--- Hmm Reset every season
-637,%s the Elite Death Knight,%s the Elite Death Knight,387,0
-638,%s the Elite Demon Hunter,%s the Elite Demon Hunter,388,0
-639,%s the Elite Druid,%s the Elite Druid,389,0
-640,%s the Elite Hunter,%s the Elite Hunter,390,0
-641,%s the Elite Mage,%s the Elite Mage,391,0
-642,%s the Elite Monk,%s the Elite Monk,392,0
-643,%s the Elite Paladin,%s the Elite Paladin,393,0
-644,%s the Elite Priest,%s the Elite Priest,394,0
-645,%s the Elite Rogue,%s the Elite Rogue,395,0
-646,%s the Elite Shaman,%s the Elite Shaman,396,0
-647,%s the Elite Warlock,%s the Elite Warlock,397,0
-648,%s the Elite Warrior,%s the Elite Warrior,398,0
--- Repeatable
--- BRD
-188,"%s, Slayer of Stupid, Incompetent and Disappointing Minions","%s, Slayer of Stupid, Incompetent and Disappointing Minions",147,0
--- SoO
-354,%s the Poisoned Mind,%s the Poisoned Mind,231,0
-355,%s the Bloodseeker,%s the Bloodseeker,232,0
-356,%s the Locust,%s the Locust,233,0
-357,%s the Swarmkeeper,%s the Swarmkeeper,234,0
-358,%s the Prime,%s the Prime,235,0
-359,%s the Manipulator,%s the Manipulator,236,0
-360,%s the Dissector,%s the Dissector,237,0
-361,%s the Lucid,%s the Lucid,238,0
-362,%s the Wind-Reaver,%s the Wind-Reaver,239,0
--- Leggo quest
-266,"%s, Blessed Defender of Nordrassil","%s, Blessed Defender of Nordrassil",146,0
--- Scenario
-344,Gob Squad Recruit %s,Gob Squad Recruit %s,224,4
-347,Gob Squad Commando %s,Gob Squad Commando %s,226,4
--- while holding item
-489,"%s, Talon's Vengeance","%s, Talon's Vengeance",346,4
--- micro hoilday moomkin
-507,"%s, Adventuring Instructor","%s, Adventuring Instructor",358,4
--- Toy
-514,%s the Collector,%s the Collector,365,4
--- Food
-520,"%s, No Good, Dirty, Rotten, Candy Stealer!","%s, No Good, Dirty, Rotten, Candy Stealer!",371,0
--- micro hoilday t-shirt
-649,%s the T-Shirt Enthusiast,%s the T-Shirt Enthusiast,399,0
--- during quest 58157
-666,"%s, As Themselves","%s, As Themselves",413,0
---]]
