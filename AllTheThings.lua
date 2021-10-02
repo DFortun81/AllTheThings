@@ -11238,7 +11238,7 @@ local fields = {
 		return 110;
 	end,
 	["icon"] = function(t)
-		return "Interface\\Icons\\Achievement_Guild_DoctorIsIn";
+		return app.asset("Category_Titles");
 	end,
 	["description"] = function(t)
 		return L["TITLES_DESC"];
