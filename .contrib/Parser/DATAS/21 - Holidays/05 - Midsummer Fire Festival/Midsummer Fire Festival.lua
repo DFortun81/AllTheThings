@@ -201,6 +201,8 @@ local MERCHANT_GROUPS = {
 	}),
 };
 
+local HUGE_SNOWBALL = i(35557);	-- Huge Snowball
+
 _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 	-- #if ANYCLASSIC
 	["npcID"] = -53,
@@ -374,6 +376,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(35495, {	-- The Frost Lord's War Cloak [Level 70]
 					["timeline"] = { "removed 3.3.3.11723" },
 				}),
+				HUGE_SNOWBALL,
 			},
 		}),
 		-- #if AFTER WRATH
@@ -4379,3 +4382,6 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 		}),
 	},
 })};
+
+-- Remove the holiday flag.
+HUGE_SNOWBALL.u = nil;
