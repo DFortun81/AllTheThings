@@ -71,7 +71,7 @@ _.Titles =
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			title(298, {	-- <Name> of the Iron Vanguard
+			title(289, {	-- <Name> of the Iron Vanguard
 				["timeline"] = {
 					"added 6.0.2",
 					"removed 6.0.3.19116",

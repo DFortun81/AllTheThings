@@ -9,7 +9,8 @@ _.Titles =
 		title(321),	-- The Honorable <Name>
 		title(322),	-- The Prestigious <Name>
 		title(354),	-- <Name> the Unstoppable Force
-		title(325),	-- The Unrelenting <Name>
+		title(323),	-- The Unrelenting <Name>
+		title(325),	-- <Name>, Bound by Honor
 		title(369),	-- <Name> the Tactician
 		-- Arean Seasonal
 		title(441),	-- Unchained Gladiator <Name>

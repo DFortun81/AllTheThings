@@ -37,7 +37,7 @@ _.Titles =
 			title(32),	-- Challenger <Name>
 			title(78),	-- Combatant <Name>
 			-- Misc
-			title(145),	-- <Name>, Blessed Defender of Nordrassil
+			title(146),	-- <Name>, Blessed Defender of Nordrassil
 			title(224),	-- Gob Squad Recruit <Name>
 			title(226),	-- Gob Squad Commando <Name>
 			title(346),	-- <Name>, Talon's Vengeance
