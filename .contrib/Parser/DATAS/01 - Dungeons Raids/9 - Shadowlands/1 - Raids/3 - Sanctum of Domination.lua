@@ -441,7 +441,11 @@ _.Instances = { tier(SL_TIER, {
 								i(187542),	-- Jaithys, the Prison Blade
 								i(186410),	-- Jaithys, the Prison Blade
 								i(186406),	-- Maledict Opus
-								i(187056),	-- The Devouring Cold
+								i(187056, {	-- The Devouring Cold
+									i(187056, {	-- The Devouring Cold
+										["bonusID"] = 7723,	-- Adjusted weapon [LFR]
+									}),
+								}),
 								i(186350),	-- Valorous Visage of Krexus
 								i(186379),	-- Interplanar Keystone
 								i(186324),	-- Frame of the False Margrave
@@ -701,7 +705,11 @@ _.Instances = { tier(SL_TIER, {
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410),	-- Jaithys, the Prison Blade
 						i(186406),	-- Maledict Opus
-						i(187056),	-- The Devouring Cold
+						i(187056, {	-- The Devouring Cold
+							i(187056, {	-- The Devouring Cold
+								["bonusID"] = 7720,	-- Adjusted weapon [Normal]
+							}),
+						}),
 						i(186350),	-- Valorous Visage of Krexus
 						i(186379),	-- Interplanar Keystone
 						i(186324),	-- Frame of the False Margrave
@@ -958,7 +966,11 @@ _.Instances = { tier(SL_TIER, {
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410),	-- Jaithys, the Prison Blade
 						i(186406),	-- Maledict Opus
-						i(187056),	-- The Devouring Cold
+						i(187056, {	-- The Devouring Cold
+							i(187056, {	-- The Devouring Cold
+								["bonusID"] = 7724,	-- Adjusted weapon [Heroic]
+							}),
+						}),
 						i(186350),	-- Valorous Visage of Krexus
 						i(186379),	-- Interplanar Keystone
 						i(186324),	-- Frame of the False Margrave
@@ -1199,7 +1211,11 @@ _.Instances = { tier(SL_TIER, {
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410),	-- Jaithys, the Prison Blade
 						i(186406),	-- Maledict Opus
-						i(187056),	-- The Devouring Cold
+						i(187056, {	-- The Devouring Cold
+							i(187056, {	-- The Devouring Cold
+								["bonusID"] = 7725,	-- Adjusted weapon [Mythic]
+							}),
+						}),
 						i(186350),	-- Valorous Visage of Krexus
 						i(186379),	-- Interplanar Keystone
 						i(186324),	-- Frame of the False Margrave

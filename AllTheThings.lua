@@ -1745,6 +1745,8 @@ local function GetGroupItemIDWithModID(t, rawItemID, rawModID, rawBonusID)
 		return t.itemID + ((t.modID or 0) / 100) + ((t.bonusID or 0) / 1000000);
 	elseif tonumber(rawItemID) then
 		local i, m, b = tonumber(rawItemID) or 0, tonumber(rawModID) or 0, tonumber(rawBonusID) or 0;
+		-- Ignore bonusID 3524 as added to all ATT item links with a ModID
+		if b == 3524 then b = 0; end
 		-- print("modItemID-raw",i,m,b,i + (m / 100) + (b / 1000000))
 		return i + (m / 100) + (b / 1000000);
 	end
@@ -3370,9 +3372,15 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Merge the source group for all matching Sources of the search results
 			local sourceGroup = {};
 			for i,j in ipairs(group.g or group) do
-				if GroupMatchesParams(j, paramA, paramB) then
+				-- print("sourceGroup?",j.key,j.key and j[j.key],j.modItemID)
+				if sourceID and GroupMatchesParams(j, "s", sourceID) then
+					-- print("sourceID match",sourceID)
 					MergeProperties(sourceGroup, j);
+				elseif GroupMatchesParams(j, paramA, paramB) then
+					-- print("exact match",paramA,paramB)
+					MergeProperties(sourceGroup, j, true);
 				elseif GroupMatchesParams(j, paramA, paramB, true) then
+					-- print("match",paramA,paramB)
 					MergeProperties(sourceGroup, j, true);
 				end
 			end
@@ -8491,8 +8499,8 @@ local function RawSetItemInfoFromLink(t, link)
 	local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(link);
 	if link then
 		--[[ -- Debug Prints
-		-- local _t, id = GetCached(t);
-		-- print("rawset item",id)
+		local _t, id = cache.GetCached(t);
+		print("rawset item info",id,link,name,quality,b)
 		--]]
 		t = cache.GetCached(t);
 		rawset(t, "retries", nil);
@@ -8526,11 +8534,12 @@ local function default_link(t)
 			modID = nil;
 		end
 		if bonusID and modID then
-			itemLink = string.format("item:%d:::::::::::%d:1:%d", itemLink, modID, bonusID);
+			itemLink = string.format("item:%d:::::::::::%d:1:%d:", itemLink, modID, bonusID);
 		elseif bonusID then
-			itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
+			itemLink = string.format("item:%d::::::::::::1:%d:", itemLink, bonusID);
 		elseif modID then
-			itemLink = string.format("item:%d:::::::::::%d::", itemLink, modID);
+			-- bonusID 3524 seems to imply "use ModID to determine SourceID" since without it, everything with ModID resolves as the base SourceID from links
+			itemLink = string.format("item:%d:::::::::::%d:1:3524:", itemLink, modID);
 		else
 			itemLink = string.format("item:%d:::::::::::::", itemLink);
 		end
@@ -9395,7 +9404,11 @@ app.ImportRawLink = function(group, rawlink)
 			group.modID = modID and tonumber(modID);
 			-- only set the bonusID if there is actually bonusIDs indicated
 			if (tonumber(bonusCount) or 0) > 0 then
-				group.bonusID = bonusID1 and tonumber(bonusID1);
+				-- Don't use bonusID 3524 as an actual bonusID
+				local b = bonusID1 and tonumber(bonusID1);
+				if b ~= 3524 then
+					group.bonusID = b;
+				end
 			end
 			group.modItemID = nil;
 			-- does this link also have a sourceID?
