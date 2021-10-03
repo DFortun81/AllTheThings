@@ -566,6 +566,7 @@ _.Zones =
 				q(60501, {	-- Redemption for the Redeemer
 					["description"] = "Defeat Sire Denathrius on any difficulty in Castle Nathria to start this quest.",
 					["provider"] = { "i", 179358 },	-- Remornia
+					["altQuests"] = { 63645 },	-- The Dawnkeep Prisoner
 				}),
 				q(57694, {	-- Refuge of Revendreth
 					["sourceQuests"] = { 57693 },	-- Torghast, Tower of the Damned
@@ -961,14 +962,12 @@ _.Zones =
 						i(177665),	-- Spectral Hankerchief
 					},
 				}),
-
 				q(63645, {	-- The Dawnkeep Prisoner
-				--	i think this is only for characters who haven't already killed Denathrius, so will have to find a way to check it off for characters who aren't eligible
 					["sourceQuests"] = { 63644 },	-- Dread Tidings
+					["altQuests"] = { 60501 },	-- Redemption for the Redeemer
 					["provider"] = { "n", 168898 },	-- Prince Renathal
 					["coord"] = { 22.9, 43.7, REVENDRETH },
 				}),
-
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check Rewards they are true for Druid and Monk atm.
 					q(57177, {	-- A Fresh Start

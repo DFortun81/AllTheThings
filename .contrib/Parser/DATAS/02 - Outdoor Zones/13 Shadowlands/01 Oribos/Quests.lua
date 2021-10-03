@@ -172,6 +172,7 @@ _.Zones =
 					["sourceQuests"] = {
 						60501,	-- Redemption for the Redeemer
 						60146,	-- Torment Chamber: Thrall
+						-- 63645,	-- The Dawnkeep Prisoner	-- TODO: confirm
 					},
 				}),
 				q(60149, {	-- Audience with the Arbiter
