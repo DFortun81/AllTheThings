@@ -6203,6 +6203,12 @@ end
 end)();
 
 -- Lib Helpers
+(function()
+-- Represents non-nil default values which are valid for all Objects
+local ObjectDefaults = {
+	["progress"] = 0,
+	["total"] = 0,
+};
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 app.BaseObjectFields = function(fields, type)
 	return {
@@ -6211,9 +6217,10 @@ app.BaseObjectFields = function(fields, type)
 		-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
 		if not _cache then
 			-- special re-direct keys possible for 'any' Type of object
-			if key == "parent" then return t.sourceParent;
-			elseif key == "__type" then return type;
-			end
+			if key == "parent" then return t.sourceParent; end
+			if key == "__type" then return type; end
+			-- use default key value if existing
+			return ObjectDefaults[key];
 		end
 		return _cache and _cache(t);
 	end
@@ -6338,6 +6345,7 @@ app.CheckCollectible = function(t, ref, cache)
 	end
 	return false;
 end
+end)();
 
 -- Achievement Lib
 (function()
@@ -11254,19 +11262,20 @@ local fields = {
 	["playerTitle"] = function(t)
 		local name = t.name;
 		if name then
+			local me = UnitName("player");
 			local style = t.style;
 			if style == 0 then
 				-- Prefix
-				return name .. UnitName("player");
+				return name .. me;
 			elseif style == 1 then
 				-- Player Name First
-				return UnitName("player") .. name;
+				return me .. name;
 			elseif style == 2 then
 				-- Player Name First (with space)
-				return UnitName("player") .. " " .. name;
+				return me .. " " .. name;
 			elseif style == 3 then
 				-- Comma Separated
-				return UnitName("player") .. ", " .. name;
+				return me .. ", " .. name;
 			end
 		end
 	end,
@@ -12068,7 +12077,7 @@ UpdateGroup = function(parent, group, window)
 	if valid then
 		-- if app.DEBUG_PRINT then print("UpdateGroup.GroupRequirementsFilter",group.key,group.key and group[group.key],group.__type) end
 		-- if app.DEBUG_PRINT then print("UpdateGroup.GroupFilter",group.key,group.key and group[group.key],group.__type) end
-		-- Set total/progress for this object using it's cost information if any
+		-- Set total/progress for this object using its cost information if any
 		group.total = group.costTotal or 0;
 		group.progress = group.total > 0 and group.costProgress or 0
 
@@ -12120,15 +12129,13 @@ UpdateGroups = function(parent, g, window)
 				if not group:OnUpdate() then
 					UpdateGroup(parent, group, window);
 				elseif group.visible then
-					group.total = 0;
-					group.progress = 0;
+					group.total = nil;
+					group.progress = nil;
 					UpdateGroups(group, group.g, window);
 				end
 				-- some objects are able to populate themselves via OnUpdate and track if needing to do another update via 'doUpdate'
 				if window and group.doUpdate then window.doUpdate = true; end
 			else
-				group.total = 0;
-				group.progress = 0;
 				UpdateGroup(parent, group, window);
 			end
 		end
