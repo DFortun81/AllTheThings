@@ -110,7 +110,11 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	local now = time();
 	local y = date("*t").year;
 	local start = time({day=20,month=9,year=y});
+-- #if BEFORE 3.0.0
 	local ends = time({day=6,month=10,year=y});
+-- #else
+	local ends = time({day=4,month=10,year=y});
+-- #endif
 	if now > start and now < ends then
 		local totalDays = math.ceil((ends - start) / (24 * 60 * 60));
 		local m = 60 + (25 * totalDays);
@@ -149,8 +153,8 @@ _.Holidays = { applyholiday(BREWFEST, {
 			}),
 			ach(2796, {	-- Brew of the Month
 				["providers"] = {
-					{ "i", 37571 },	-- "Brew of the Month" Club Membership Form
-					{ "i", 37599 },	-- "Brew of the Month" Club Membership Form
+					{ "i", 37571 },	-- "Brew of the Month" Club Membership Form (newer)
+					{ "i", 37599 },	-- "Brew of the Month" Club Membership Form (newer)
 				},
 			}),
 			ach(1183, {	-- Brew of the Year
@@ -322,6 +326,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 			["questID"] = 12062,	-- Insult Coren Direbrew
 			["maps"] = { BLACKROCK_DEPTHS },
 			-- #endif
+			["isDaily"] = true,
 			-- #if AFTER SHADOWLANDS
 			["lvl"] = 20,
 			-- #elseif AFTER WRATH
@@ -882,7 +887,11 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["isDaily"] = true,
 				}),
 				q(12278, {	-- Brew of the Month Club (A)
-					["provider"] = { "i", 37571 },    -- "Brew of the Month" Club Membership Form
+					-- #if AFTER 3.0.0
+					["provider"] = { "i", 37571 },    -- "Brew of the Month" Club Membership Form (current)
+					-- #else
+					["provider"] = { "i", 37736 },    -- "Brew of the Month" Club Membership Form (original)
+					-- #endif
 					["altQuests"] = { 12420 },	-- Brew of the Month Club (A) [???]
 					["timeline"] = { "added 2.2.2" },	-- Originally added 3.0.2, but in TBC Classic?!
 					-- #if AFTER WRATH
@@ -897,9 +906,16 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #endif
 					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
+					-- #if BEFORE 3.0.0
+					["isYearly"] = true,
+					-- #endif
 				}),
 				q(12306, {	-- Brew of the Month Club (H)
-					["provider"] = { "i", 37599 },    -- "Brew of the Month" Club Membership Form
+					-- #if AFTER 3.0.0
+					["provider"] = { "i", 37599 },    -- "Brew of the Month" Club Membership Form (current)
+					-- #else
+					["provider"] = { "i", 37737 },    -- "Brew of the Month" Club Membership Form (original)
+					-- #endif
 					["altQuests"] = { 12421 },	-- Brew of the Month Club (H) [???]
 					["timeline"] = { "added 2.2.2" },	-- Originally added 3.0.2, but in TBC Classic?!
 					-- #if AFTER WRATH
@@ -914,6 +930,9 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #endif
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
+					-- #if BEFORE 3.0.0
+					["isYearly"] = true,
+					-- #endif
 				}),
 				q(11117, {	-- Catch the Wild Wolpertinger! (A) [Non-EU Only!]
 					["qg"] = 23486,	-- Goldark Snipehunter
@@ -1658,8 +1677,13 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(BREWFEST_REGALIA, {
-						i(37571, {	-- "Brew of the Month" Club Membership Form
-							["timeline"] = { "added 2.2.2" },
+						i(37571, {	-- "Brew of the Month" Club Membership Form (current)
+							["timeline"] = { "created 2.2.2", "added 3.0.0" },	-- NOTE: Not used in 2007
+							["cost"] = BREWFEST_TOKEN_COST(200),
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(37736, {	-- "Brew of the Month" Club Membership Form (original)
+							["timeline"] = { "added 2.2.2", "removed 3.0.0" },
 							["cost"] = BREWFEST_TOKEN_COST(200),
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -1809,8 +1833,13 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(BREWFEST_REGALIA, {
-						i(37599, {	-- "Brew of the Month" Club Membership Form
-							["timeline"] = { "added 2.2.2" },
+						i(37599, {	-- "Brew of the Month" Club Membership Form (current)
+							["timeline"] = { "created 2.2.2", "added 3.0.0" },	-- NOTE: Not used in 2007
+							["cost"] = BREWFEST_TOKEN_COST(200),
+							["races"] = HORDE_ONLY,
+						}),
+						i(37737, {	-- "Brew of the Month" Club Membership Form (original)
+							["timeline"] = { "added 2.2.2", "removed 3.0.0" },
 							["cost"] = BREWFEST_TOKEN_COST(200),
 							["races"] = HORDE_ONLY,
 						}),
