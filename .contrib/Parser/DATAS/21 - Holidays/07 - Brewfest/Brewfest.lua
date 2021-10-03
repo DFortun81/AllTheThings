@@ -107,24 +107,26 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	GameTooltip:AddLine(" ");
 	GameTooltip:AddDoubleLine("Currently", GetItemCount(itemID, true) .. "x " .. icon .. " " .. item.link);
 	
-	local now = time();
-	local y = date("*t").year;
-	local start = time({day=20,month=9,year=y});
--- #if BEFORE 3.0.0
-	local ends = time({day=6,month=10,year=y});
+	local today = date("*t");
+	local start = time({day=20,month=9,year=today.year,hour=0,min=0,sec=0});
+-- #if AFTER 3.0.0
+	local ends = time({day=6,month=10,year=today.year,hour=0,min=0,sec=0});
 -- #else
-	local ends = time({day=4,month=10,year=y});
+	local ends = time({day=4,month=10,year=today.year,hour=0,min=0,sec=0});
 -- #endif
-	if now > start and now < ends then
-		local totalDays = math.ceil((ends - start) / (24 * 60 * 60));
+	local now = time({day=today.day,month=today.month,year=today.year,hour=0,min=0,sec=0});
+	if now >= start and now <= ends then
+		local secondsPerDay = 86400;
+		local totalDays = math.floor(difftime(ends, start) / secondsPerDay);
 		local m = 60 + (25 * totalDays);
 		GameTooltip:AddDoubleLine("Total Possible*", m .. " - " .. (m + (22 * totalDays)) .. "x " .. icon .. " " .. item.link);
 		
-		local remaining = math.ceil((ends - now) / (24 * 60 * 60)) - 1;
+		local remaining = math.floor(difftime(ends, now) / secondsPerDay);
 		if remaining <= 1 then
+			local baseAmount = (not barked and 15 or 0) + (not invasion and 10 or 0);
 			GameTooltip:AddDoubleLine("Total Remaining*", baseAmount .. " - " .. (baseAmount + 22) .. "x " .. icon .. " " .. item.link);
 		else
-			local baseAmount = (barked and 0 or 15) + (invasion and 0 or 10) + (25 * remaining);
+			local baseAmount = (not barked and 15 or 0) + (not invasion and 10 or 0) + (25 * remaining);
 			GameTooltip:AddDoubleLine("Total Remaining*", baseAmount .. " - " .. (baseAmount + (22 * remaining)) .. "x " .. icon .. " " .. item.link);
 		end
 	end
@@ -907,7 +909,8 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 3.0.0
-					["isYearly"] = true,
+					["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
+					["repeatable"] = true,
 					-- #endif
 				}),
 				q(12306, {	-- Brew of the Month Club (H)
@@ -931,7 +934,8 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					-- #if BEFORE 3.0.0
-					["isYearly"] = true,
+					["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
+					["repeatable"] = true,
 					-- #endif
 				}),
 				q(11117, {	-- Catch the Wild Wolpertinger! (A) [Non-EU Only!]
