@@ -715,3 +715,6 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	--q(33069),	-- REUSEME. User:Went from Tanaan to Stormshield via portal at Lions Rest.. Contrib: Seems to be an id around Timeless Isle
+};

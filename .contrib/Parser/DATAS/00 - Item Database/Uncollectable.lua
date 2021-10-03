@@ -409,6 +409,7 @@ i(135511);	-- Thick Slab of Bacon. You get it for a split second after completin
 i(137212);	-- Cut Skystone. You get it for a split second after completing the jewelcrafter daily
 i(137214);	-- Cut Deep Amber. You get it for a split second after completing the jewelcrafter daily
 i(137215);	-- Cut Azsunite.  You get it for a split second after completing the jewelcrafter daily
+i(31279);	-- Enchanted Illidari Tabard [Temp Quest Item]
 
 
 

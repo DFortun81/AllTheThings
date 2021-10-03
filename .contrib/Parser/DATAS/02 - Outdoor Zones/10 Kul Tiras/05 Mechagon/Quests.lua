@@ -1660,4 +1660,5 @@ _.HiddenQuestTriggers = {
 	--q(56360),	-- Vinyl:Depths of Ulduar?
 	--q(56742),	-- Blueprint: Black Market Radio?
 	--q(55417),	-- Paint vial: Bronze/Red or Blueprint: Gramophone or Mining in Mechagon
+	q(55261),	-- Building "Lightning Zap 5000" as a result of the WQ "Toys For Destruction" (ID: 54090).
 };

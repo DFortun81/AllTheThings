@@ -259,6 +259,7 @@ _.Zones =
 							["achievementID"] = 14310,	-- Adventurer of Revendreth
 						}),
 						i(180587),	-- Animated Tome (PET!)
+						i(180694),	-- Tome of Power
 					},
 				}),
 				n(162481, {	-- Sinstone Hoarder

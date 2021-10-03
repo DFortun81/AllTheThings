@@ -561,9 +561,9 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 				}),
-				q(13790, {	-- Among the Champions (A / H, non-DK)
-					["hordeQuestID"] = 13811,
+				q(13790, {	-- Among the Champions (A, non-DK)
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["coord"] = { 69.8, 23.3, 118 },
 					["provider"] = { "n", 33771 },	-- Luuri
@@ -572,10 +572,24 @@ _.ExpansionFeatures =
 						33739,	-- Exodar Champion
 						33740,	-- Gnomeregan Champion
 						33743,	-- Ironforge Champion
+						33747,	-- Stormwind Champion
+					},
+					["g"] = {
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+						i(45500),	-- Mark of the Champion
+					},
+				}),
+				q(13811, {	-- Among the Champions (H, non-DK)
+					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["coord"] = { 69.8, 23.3, 118 },
+					["provider"] = { "n", 33771 },	-- Luuri
+					["crs"] = {
 						33744,	-- Orgrimmar Champion
 						33745,	-- Sen'jin Champion
 						33746,	-- Silvermoon Champion
-						33747,	-- Stormwind Champion
 						33748,	-- Thunder Bluff Champion
 						33749,	-- Undercity Champion
 					},
@@ -585,9 +599,9 @@ _.ExpansionFeatures =
 						i(45500),	-- Mark of the Champion
 					},
 				}),
-				q(13793, {	-- Among the Champions (A / H, DK)
-					["hordeQuestID"] = 13814,
+				q(13793, {	-- Among the Champions (A , DK)
 					["classes"] = { DEATHKNIGHT },
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["coord"] = { 73.6, 20.0, 118 },
 					["provider"] = { "n", 33770 },	-- Illyrie Nightfall <Mistress of Horses>
@@ -596,10 +610,24 @@ _.ExpansionFeatures =
 						33739,	-- Exodar Champion
 						33740,	-- Gnomeregan Champion
 						33743,	-- Ironforge Champion
+						33747,	-- Stormwind Champion
+					},
+					["g"] = {
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+						i(45500),	-- Mark of the Champion
+					},
+				}),
+				q(13814, {	-- Among the Champions (H , DK)
+					["classes"] = { DEATHKNIGHT },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["coord"] = { 73.6, 20.0, 118 },
+					["provider"] = { "n", 33770 },	-- Illyrie Nightfall <Mistress of Horses>
+					["crs"] = {
 						33744,	-- Orgrimmar Champion
 						33745,	-- Sen'jin Champion
 						33746,	-- Silvermoon Champion
-						33747,	-- Stormwind Champion
 						33748,	-- Thunder Bluff Champion
 						33749,	-- Undercity Champion
 					},
@@ -857,9 +885,9 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
 				}),
-				q(13789, {	-- Taking Battle To The Enemy (A / H, non-DK)
-					["hordeQuestID"] = 13810,
+				q(13789, {	-- Taking Battle To The Enemy (A , non-DK)
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["coord"] = { 69.9, 23.4, 118 },
 					["provider"] = { "n", 33763 },	-- Cellian Daybreak <Master of Arms>
@@ -868,9 +896,31 @@ _.ExpansionFeatures =
 						i(45724),	-- Champion's Purse
 					},
 				}),
-				q(13791, {	-- Taking Battle To The Enemy (A / H, DK)
-					["hordeQuestID"] = 13813,
+				q(13810, {	-- Taking Battle To The Enemy (H , non-DK)
+					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["coord"] = { 69.9, 23.4, 118 },
+					["provider"] = { "n", 33763 },	-- Cellian Daybreak <Master of Arms>
+					["g"] = {
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+					},
+				}),
+				q(13791, {	-- Taking Battle To The Enemy (A , DK)
 					["classes"] = { DEATHKNIGHT },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["coord"] = { 73.8, 19.6, 118 },
+					["provider"] = { "n", 33769 },	-- Zor'be the Bloodletter <Master of Arms>
+					["g"] = {
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+					},
+				}),
+				q(13813, {	-- Taking Battle To The Enemy (H , DK)
+					["classes"] = { DEATHKNIGHT },
+					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["coord"] = { 73.8, 19.6, 118 },
 					["provider"] = { "n", 33769 },	-- Zor'be the Bloodletter <Master of Arms>
