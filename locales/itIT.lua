@@ -2591,7 +2591,7 @@ for key,value in pairs({
 	[329805] = "Cristallo Strano",	-- Strange Crystal
 	[329918] = "Tesori dei Verrospino",	-- Quilboar Treasures
 	[329919] = "Rifornimenti Rubati",	-- Stolen Supplies
-	--TODO: [330168] = "Contained Alemental",	-- Contained Alemental
+	[330168] = "Elementale Alcolico Contenuto",	-- Contained Alemental
 	--TODO: [330169] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [330170] = "Hozen Totem",	-- Hozen Totem
 	[330183] = "Scrigno dei Marferreo",	-- Irontide Lockbox

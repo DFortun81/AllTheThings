@@ -2594,7 +2594,7 @@ for key,value in pairs({
 	[329919] = "Suprimentos Roubados",	-- Stolen Supplies
 	--TODO: [330168] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [330169] = "Direbrew Cog",	-- Direbrew Cog
-	--TODO: [330170] = "Hozen Totem",	-- Hozen Totem
+	[330170] = "Totem Hozen",	-- Hozen Totem
 	[330183] = "Arca Maré-férrea",	-- Irontide Lockbox
 	[330627] = "Placa de Perigo",	-- Danger Sign
 	--TODO: [332220] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk
