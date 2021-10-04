@@ -11417,13 +11417,13 @@ local fields = {
 	end,
 	-- use cost to track opposite gendered title in account/debug
 	["customTotal"] = function(t)
-		if t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
+		if app.CollectibleTitles and t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
 			-- print("title.total",t.titleID)
 			return 1;
 		end
 	end,
 	["customProgress"] = function(t)
-		if t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
+		if app.CollectibleTitles and t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
 			-- print("title.progress",t.titleID)
 			local acctTitles, charTitles = ATTAccountWideData.Titles, app.CurrentCharacter.Titles;
 			local ids = t.titleIDs;
