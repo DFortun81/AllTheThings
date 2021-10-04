@@ -28,4 +28,5 @@ Some of them were classified as quests, some of them were just tracked in the ba
 - Quest groups linked into chat will use a proper link when the character is currently on the quest.
 - Quest groups will now show their ATT Source.
 - Quest links clicked from chat will now show the corresponding ATT Source location for the Quest.
+- Fixed NPC's or Headers being considered 'saved' when they weren't if 'Only First Time' (Quests) was enabled with collectible repeatable quests.
 - Various fixes.
