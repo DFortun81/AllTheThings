@@ -1245,7 +1245,7 @@ namespace ATT
                             oldList.Add(index);
                         }
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         Trace.WriteLine("WHAT IS THIS");
                         Trace.WriteLine(field);
@@ -1255,8 +1255,9 @@ namespace ATT
                     }
                 }
 
-                // Sort the old list to ensure that the order is consistent.
-                oldList.Sort();
+                // Sort the old list to ensure that the order is consistent, but not for titleIDs
+                if (field != "titleIDs")
+                    oldList.Sort();
 
                 if (oldList.Count == 0)
                 {
@@ -1554,7 +1555,7 @@ namespace ATT
                                 Console.WriteLine("Ignoring 'sym' with improper format.");
                                 Console.WriteLine(MiniJSON.Json.Serialize(value));
                                 Console.ReadLine();
-                                foreach(var sublist in newListOfLists)
+                                foreach (var sublist in newListOfLists)
                                 {
                                     if (sublist is List<object>) continue;
                                     Console.WriteLine("Ignoring 'sym' with improper format.");
@@ -1920,7 +1921,7 @@ namespace ATT
                     {
                         data.Remove(dropObj.ToString());
                         //if (data.Remove(dropObj.ToString()))
-                            //Trace.WriteLine("Removed key: " + dropObj.ToString() + " from: " + MiniJSON.Json.Serialize(data));
+                        //Trace.WriteLine("Removed key: " + dropObj.ToString() + " from: " + MiniJSON.Json.Serialize(data));
                     }
                 }
                 else
