@@ -5486,9 +5486,20 @@ local function RefreshCollections()
 		coroutine.yield();
 
 		-- Harvest Title Collections
-		local collectedTitles = app.CurrentCharacter.Titles;
+		-- TODO: once profiles and re-calculating account-wide data exist, can redesign this
+		local acctTitles, charTitles, charGuid = ATTAccountWideData.Titles, app.CurrentCharacter.Titles, app.GUID;
 		for i=1,GetNumTitles(),1 do
-			if IsTitleKnown(i) then rawset(collectedTitles, i, 1); end
+			if IsTitleKnown(i) then
+				rawset(acctTitles, i, charGuid);
+				rawset(charTitles, i, 1);
+			-- make sure to remove titles which this character does NOT know currently
+			else
+				charTitles[i] = nil;
+				-- this is the character tied to an account-learned title or it was marked in the old way, then clear it
+				if acctTitles[i] == charGuid or acctTitles[i] == 1 then
+					acctTitles[i] = nil;
+				end
+			end
 		end
 		coroutine.yield();
 
@@ -11255,6 +11266,21 @@ end)();
 
 -- Title Lib
 (function()
+local function StylizePlayerTitle(title, style, me)
+	if style == 0 then
+		-- Prefix
+		return title .. me;
+	elseif style == 1 then
+		-- Player Name First
+		return me .. title;
+	elseif style == 2 then
+		-- Player Name First (with space)
+		return me .. " " .. title;
+	elseif style == 3 then
+		-- Comma Separated
+		return me .. ", " .. title;
+	end
+end
 local fields = {
 	["key"] = function(t)
 		return "titleID";
@@ -11276,24 +11302,27 @@ local fields = {
 			return name;
 		end
 	end,
+	["title"] = function(t)
+		if t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
+			if rawget(t, "_title") then return rawget(t, "_title") end
+			local ids = t.titleIDs;
+			local m, f = ids[1], ids[2];
+			local acctTitles = ATTAccountWideData.Titles;
+			local player = "("..CALENDAR_PLAYER_NAME..")";
+			local mt = StylizePlayerTitle(GetTitleName(m),t.style,player);
+			local ft = StylizePlayerTitle(GetTitleName(f),t.style,player);
+			local complete, missing = GetProgressColor(1), GetProgressColor(0);
+			local acctTitleInfo = "|c"..
+				(acctTitles[m] and complete or missing)..mt.."|r // |c"..
+				(acctTitles[f] and complete or missing)..ft.."|r";
+			rawset(t, "_title", acctTitleInfo);
+			return rawget(t, "_title");
+		end
+	end,
 	["playerTitle"] = function(t)
 		local name = t.name;
 		if name then
-			local me = UnitName("player");
-			local style = t.style;
-			if style == 0 then
-				-- Prefix
-				return name .. me;
-			elseif style == 1 then
-				-- Player Name First
-				return me .. name;
-			elseif style == 2 then
-				-- Player Name First (with space)
-				return me .. " " .. name;
-			elseif style == 3 then
-				-- Comma Separated
-				return me .. ", " .. name;
-			end
+			return StylizePlayerTitle(name, t.style, UnitName("player"));
 		end
 	end,
 	["style"] = function(t)
@@ -11310,7 +11339,7 @@ local fields = {
 				end
 
 				-- Player Name First
-					rawset(t, "style", 1);
+				rawset(t, "style", 1);
 				return 1;
 			else
 				local last = string.sub(name, -1);
@@ -11356,29 +11385,62 @@ local fields = {
 		if app.AccountWideTitles and ATTAccountWideData.Titles[t.titleID] then return 2; end
 	end,
 	["saved"] = function(t)
-		local id, charTitles = t.titleID, app.CurrentCharacter.Titles;
+		local id, charTitles, acctTitles = t.titleID, app.CurrentCharacter.Titles, ATTAccountWideData.Titles;
 		if t.titleIDs then
 			local ids = t.titleIDs;
 			local m, f = ids[1], ids[2];
-			-- combo-id is already saved
-			if ATTAccountWideData.Titles[id] then
-				if charTitles[m] or charTitles[f] then return true; end
+			-- combo-id is already saved and m/f cached for the current character
+			if acctTitles[id] and (charTitles[m] or charTitles[f]) then
+				return true;
 			-- otherwise verify both titles for players with one already saved
-			elseif IsTitleKnown(m) or IsTitleKnown(f) then
+			elseif IsTitleKnown(m) then
 				charTitles[m] = 1;
-				charTitles[f] = 1;
-				ATTAccountWideData.Titles[m] = 1;
-				ATTAccountWideData.Titles[f] = 1;
+				acctTitles[m] = app.GUID;
 				-- the shared arbitrary ID can be used for account-wide checks
-				ATTAccountWideData.Titles[id] = 1;
+				acctTitles[id] = 1;
+				return true;
+			elseif IsTitleKnown(f) then
+				charTitles[f] = 1;
+				acctTitles[f] = app.GUID;
+				-- the shared arbitrary ID can be used for account-wide checks
+				acctTitles[id] = 1;
+				return true;
 			end
 		else
 			if charTitles[id] then return true; end
 			if IsTitleKnown(id) then
 				charTitles[id] = 1;
-				ATTAccountWideData.Titles[id] = 1;
+				acctTitles[id] = app.GUID;
 				return true;
 			end
+		end
+	end,
+	-- use cost to track opposite gendered title in account/debug
+	["customTotal"] = function(t)
+		if t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
+			-- print("title.total",t.titleID)
+			return 1;
+		end
+	end,
+	["customProgress"] = function(t)
+		if t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
+			-- print("title.progress",t.titleID)
+			local acctTitles, charTitles = ATTAccountWideData.Titles, app.CurrentCharacter.Titles;
+			local ids = t.titleIDs;
+			local m, f = ids[1], ids[2];
+			local am, af = acctTitles[m], acctTitles[f];
+			-- both titles account-collected
+			if am and af then
+				return 1;
+			-- neither title collected
+			elseif not am and not af then
+				return 0;
+			-- only the available title is collected
+			elseif charTitles[m] or charTitles[f] then
+				return 0;
+			end
+			-- otherwise, unavailable title is collected
+			return 1;
 		end
 	end,
 };
@@ -12095,8 +12157,8 @@ UpdateGroup = function(parent, group, window)
 		-- if app.DEBUG_PRINT then print("UpdateGroup.GroupRequirementsFilter",group.key,group.key and group[group.key],group.__type) end
 		-- if app.DEBUG_PRINT then print("UpdateGroup.GroupFilter",group.key,group.key and group[group.key],group.__type) end
 		-- Set total/progress for this object using its cost information if any
-		group.total = group.costTotal or 0;
-		group.progress = group.total > 0 and group.costProgress or 0
+		group.total = (group.costTotal or 0) + (group.customTotal or 0);
+		group.progress = group.total > 0 and ((group.costProgress or 0) + (group.customProgress or 0)) or 0;
 
 		-- if app.DEBUG_PRINT then print("UpdateGroup.Initial",group.key,group.key and group[group.key],group.progress,group.total,group.__type) end
 
