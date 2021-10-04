@@ -8,7 +8,7 @@ _.Instances = { tier(WOTLK_TIER, {
 		["lvl"] = 80,
 		["mapID"] = 147,
 		["maps"] = { 148, 149, 150, 151, 152 },
-		["coord"] = { 41.5, 17.9, 120 },	-- Ulduar, The Storm Peaks
+		["coord"] = { 41.5, 17.9, THE_STORM_PEAKS },
 		["g"] = {
 			n(-10066, {	-- Legendary Questline
 				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",

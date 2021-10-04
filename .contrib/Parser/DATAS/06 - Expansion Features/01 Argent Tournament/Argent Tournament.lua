@@ -5,14 +5,14 @@
 _.ExpansionFeatures =
 {
 	n(-363, {	-- The Argent Tournament
-		["maps"] = { 118 },	-- Icecrown
+		["maps"] = { ICECROWN },
 		["lvl"] = 67,
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(4596, {	-- The Sword in the Skull
 					["description"] = "This is the quest chain for obtaining an epic Quel'Delar weapon.\n\nNOTE: A Warrior can learn all of the weapon appearances.",
 					["maps"] = {
-						125,	-- Dalaran (Northrend)
+						NORTHREND_DALARAN,
 						183,	-- The Forge of Souls
 						184,	-- Pit of Saron
 						185,	-- Halls of Reflection
@@ -229,7 +229,7 @@ _.ExpansionFeatures =
 			}),
 			n(FLIGHT_PATHS, {
 				fp(340, {	-- Argent Tournament Grounds, Icecrown
-					["coord"] = { 72.6, 22.6, 118 },
+					["coord"] = { 72.6, 22.6, ICECROWN },
 				}),
 			}),
 			n(QUESTS, {
@@ -237,99 +237,99 @@ _.ExpansionFeatures =
 					["description"] = "You get 1 Champion's Seal from these bags.",
 				}),
 				q(13741, {	-- A Blade Fit For A Champion (A)
-					["coord"] = { 76.6, 19.5, 118 },
+					["coord"] = { 76.6, 19.5, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33312 },	-- Lana Stouthammer
 				}),
 				q(13666, {	-- A Blade Fit For A Champion (A)
-					["coord"] = { 76.5, 19.4, 118 },
+					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33625 },	-- Arcanist Taelis
 				}),
 				q(13746, {	-- A Blade Fit For A Champion (A)
-					["coord"] = { 76.5, 19.8, 118 },
+					["coord"] = { 76.5, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 				}),
 				q(13603, {	-- A Blade Fit For A Champion (A)
-					["coord"] = { 76.6, 19.1, 118 },
+					["coord"] = { 76.6, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 				}),
 				q(13752, {	-- A Blade Fit For A Champion (A)
-					["coord"] = { 76.1, 19.1, 118 },
+					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33593 },	-- Colosos
 				}),
 				q(13757, {	-- A Blade Fit For A Champion (A)
-					["coord"] = { 76.3, 19.0, 118 },
+					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 				}),
 				q(13773, {	-- A Blade Fit For A Champion (H)
-					["coord"] = { 76.2, 24.6, 118 },
+					["coord"] = { 76.2, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33403 },	-- Runok Wildmane
 				}),
 				q(13778, {	-- A Blade Fit For A Champion (H)
-					["coord"] = { 76.5, 24.2, 118 },
+					["coord"] = { 76.5, 24.2, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 				}),
 				q(13768, {	-- A Blade Fit For A Champion (H)
-					["coord"] = { 76.0, 24.5, 118 },
+					["coord"] = { 76.0, 24.5, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33372 },	-- Zul'tore
 				}),
 				q(13783, {	-- A Blade Fit For A Champion (H)
-					["coord"] = { 76.5, 23.9, 118 },
+					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 				}),
 				q(13762, {	-- A Blade Fit For A Champion (H)
-					["coord"] = { 76.5, 24.6, 118 },
+					["coord"] = { 76.5, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 				}),
 				q(13673, {	-- A Blade Fit For A Champion (H)
-					["coord"] = { 76.3, 24.4, 118 },
+					["coord"] = { 76.3, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 				}),
 				q(13732, {	-- A Champion Rises (A)
-					["coord"] = { 76.6, 19.5, 118 },
+					["coord"] = { 76.6, 19.5, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33312 },	-- Lana Stouthammer
 				}),
 				q(13735, {	-- A Champion Rises (A)
-					["coord"] = { 76.3, 19.0, 118 },
+					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 				}),
 				q(13733, {	-- A Champion Rises (A)
-					["coord"] = { 76.5, 19.8, 118 },
+					["coord"] = { 76.5, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 				}),
 				q(13734, {	-- A Champion Rises (A)
-					["coord"] = { 76.1, 19.1, 118 },
+					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33593 },	-- Colosos
 				}),
 				q(13702, {	-- A Champion Rises (A)
-					["coord"] = { 76.6, 19.1, 118 },
+					["coord"] = { 76.6, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 					["g"] = {
@@ -337,27 +337,27 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(13737, {	-- A Champion Rises (H)
-					["coord"] = { 76.0, 24.5, 118 },
+					["coord"] = { 76.0, 24.5, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33372 },	-- Zul'tore
 				}),
 				q(13740, {	-- A Champion Rises (H)
-					["coord"] = { 76.5, 23.9, 118 },
+					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 				}),
 				q(13739, {	-- A Champion Rises (H)
-					["coord"] = { 76.5, 24.2, 118 },
+					["coord"] = { 76.5, 24.2, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 				}),
 				q(13738, {	-- A Champion Rises (H)
-					["coord"] = { 76.2, 24.6, 118 },
+					["coord"] = { 76.2, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33403 },	-- Runok Wildmane
 				}),
 				q(13736, {	-- A Champion Rises (H)
-					["coord"] = { 76.5, 24.6, 118 },
+					["coord"] = { 76.5, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 					["g"] = {
@@ -366,48 +366,48 @@ _.ExpansionFeatures =
 				}),
 				q(14074, {	-- A Leg Up (A)
 					["isDaily"] = true,
-					["coord"] = { 76.2, 19.6, 118 },
+					["coord"] = { 76.2, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
 				}),
 				q(14143, {	-- A Leg Up (H)
 					["isDaily"] = true,
-					["coord"] = { 76.1, 24.0, 118 },
+					["coord"] = { 76.1, 24.0, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
 				}),
 				q(13689, {	-- A Valiant Of Darnassus
-					["coord"] = { 76.5, 19.4, 118 },
+					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = { NIGHTELF },
 					["provider"] = { "n", 33625 },	-- Arcanist Taelis
 				}),
 				q(13688, {	-- A Valiant Of Gnomeregan
-					["coord"] = { 76.5, 19.4, 118 },
+					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = { GNOME },
 					["provider"] = { "n", 33625 },	-- Arcanist Taelis
 				}),
 				q(13685, {	-- A Valiant Of Ironforge
-					["coord"] = { 76.5, 19.4, 118 },
+					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = { DWARF },
 					["provider"] = { "n", 33625 },	-- Arcanist Taelis
 				}),
 				q(13691, {	-- A Valiant Of Orgrimmar
-					["coord"] = { 76.3, 24.4, 118 },
+					["coord"] = { 76.3, 24.4, ICECROWN },
 					["races"] = { ORC },
 					["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 				}),
 				q(13693, {	-- A Valiant Of Sen'jin
-					["coord"] = { 76.3, 24.4, 118 },
+					["coord"] = { 76.3, 24.4, ICECROWN },
 					["races"] = { TROLL },
 					["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 				}),
 				q(13696, {	-- A Valiant Of Silvermoon
-					["coord"] = { 76.3, 24.4, 118 },
+					["coord"] = { 76.3, 24.4, ICECROWN },
 					["races"] = { BLOODELF },
 					["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 				}),
 				q(13684, {	-- A Valiant Of Stormwind
-					["coord"] = { 76.5, 19.4, 118 },
+					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = { HUMAN },
 					["altQuests"] = {
 						13690,	-- A Valiant Of The Exodar
@@ -415,167 +415,181 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 33625 },	-- Arcanist Taelis
 				}),
 				q(13690, {	-- A Valiant Of The Exodar
-					["coord"] = { 76.5, 19.4, 118 },
+					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = { DRAENEI },
 					["provider"] = { "n", 33625 },	-- Arcanist Taelis
 				}),
 				q(13694, {	-- A Valiant Of Thunder Bluff
-					["coord"] = { 76.3, 24.4, 118 },
+					["coord"] = { 76.3, 24.4, ICECROWN },
 					["races"] = { TAUREN },
 					["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 				}),
 				q(13695, {	-- A Valiant Of Undercity
-					["coord"] = { 76.3, 24.4, 118 },
+					["coord"] = { 76.3, 24.4, ICECROWN },
 					["races"] = { UNDEAD },
 					["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 				}),
 				q(13749, {	-- A Valiant's Field Training (A)
-					["coord"] = { 76.6, 19.8, 118 },
+					["coord"] = { 76.6, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33648 },	-- Tickin Gearspanner
 				}),
 				q(13755, {	-- A Valiant's Field Training (A)
-					["coord"] = { 76.1, 19.2, 118 },
+					["coord"] = { 76.1, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33655 },	-- Saandos
 				}),
 				q(13760, {	-- A Valiant's Field Training (A)
-					["coord"] = { 76.3, 19.0, 118 },
+					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33652 },	-- Illestria Bladesinger
 				}),
 				q(13744, {	-- A Valiant's Field Training (A)
-					["coord"] = { 76.7, 19.4, 118 },
+					["coord"] = { 76.7, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33315 },	-- Rollo Sureshot
 				}),
 				q(13592, {	-- A Valiant's Field Training (A)
-					["coord"] = { 76.5, 19.1, 118 },
+					["coord"] = { 76.5, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33222 },	-- Sir Marcus Barlowe
 				}),
 				q(13781, {	-- A Valiant's Field Training (H)
-					["coord"] = { 76.6, 24.1, 118 },
+					["coord"] = { 76.6, 24.1, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33541 },	-- Sarah Chalke
 				}),
 				q(13776, {	-- A Valiant's Field Training (H)
-					["coord"] = { 76.3, 24.7, 118 },
+					["coord"] = { 76.3, 24.7, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33539 },	-- Dern Ragetotem
 				}),
 				q(13765, {	-- A Valiant's Field Training (H)
-					["coord"] = { 76.5, 24.5, 118 },
+					["coord"] = { 76.5, 24.5, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33405 },	-- Akinos
 				}),
 				q(13786, {	-- A Valiant's Field Training (H)
-					["coord"] = { 76.4, 23.8, 118 },
+					["coord"] = { 76.4, 23.8, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33538 },	-- Kethiel Sunlance
 				}),
 				q(13771, {	-- A Valiant's Field Training (H)
-					["coord"] = { 76.0, 24.6, 118 },
+					["coord"] = { 76.0, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33540 },	-- Shadow Hunter Mezil-kree
 				}),
 				q(13600, {	-- A Worthy Weapon (A)
-					["coord"] = { 76.6, 19.1, 118 },
+					["coord"] = { 76.6, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 				}),
 				q(13742, {	-- A Worthy Weapon (A)
-					["coord"] = { 76.6, 19.5, 118 },
+					["coord"] = { 76.6, 19.5, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33312 },	-- Lana Stouthammer
 				}),
 				q(13758, {	-- A Worthy Weapon (A)
-					["coord"] = { 76.3, 19.0, 118 },
+					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 				}),
 				q(13669, {	-- A Worthy Weapon (A)
-					["coord"] = { 76.5, 19.4, 118 },
+					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33625 },	-- Arcanist Taelis
 				}),
 				q(13747, {	-- A Worthy Weapon (A)
-					["coord"] = { 76.5, 19.8, 118 },
+					["coord"] = { 76.5, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 				}),
 				q(13753, {	-- A Worthy Weapon (A)
-					["coord"] = { 76.1, 19.1, 118 },
+					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33593 },	-- Colosos
 				}),
 				q(13769, {	-- A Worthy Weapon (H)
-					["coord"] = { 76.0, 24.5, 118 },
+					["coord"] = { 76.0, 24.5, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33372 },	-- Zul'tore
 				}),
 				q(13674, {	-- A Worthy Weapon (H)
-					["coord"] = { 76.3, 24.4, 118 },
+					["coord"] = { 76.3, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 				}),
 				q(13784, {	-- A Worthy Weapon (H)
-					["coord"] = { 76.5, 23.9, 118 },
+					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 				}),
 				q(13774, {	-- A Worthy Weapon (H)
-					["coord"] = { 76.2, 24.6, 118 },
+					["coord"] = { 76.2, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33403 },	-- Runok Wildmane
 				}),
 				q(13763, {	-- A Worthy Weapon (H)
-					["coord"] = { 76.5, 24.6, 118 },
+					["coord"] = { 76.5, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 				}),
 				q(13779, {	-- A Worthy Weapon (H)
-					["coord"] = { 76.5, 24.2, 118 },
+					["coord"] = { 76.5, 24.2, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 				}),
-				q(13790, {	-- Among the Champions (A / H, non-DK)
-					["hordeQuestID"] = 13811,
+				q(13790, {	-- Among the Champions (A, non-DK)
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["coord"] = { 69.8, 23.3, 118 },
+					["coord"] = { 69.8, 23.3, ICECROWN },
 					["provider"] = { "n", 33771 },	-- Luuri
 					["crs"] = {
 						33738,	-- Darnassus Champion
 						33739,	-- Exodar Champion
 						33740,	-- Gnomeregan Champion
 						33743,	-- Ironforge Champion
+						33747,	-- Stormwind Champion
+					},
+					["g"] = {
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+						i(45500),	-- Mark of the Champion
+					},
+				}),
+				q(13811, {	-- Among the Champions (H, non-DK)
+					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["coord"] = { 69.8, 23.3, ICECROWN },
+					["provider"] = { "n", 33771 },	-- Luuri
+					["crs"] = {
 						33744,	-- Orgrimmar Champion
 						33745,	-- Sen'jin Champion
 						33746,	-- Silvermoon Champion
-						33747,	-- Stormwind Champion
 						33748,	-- Thunder Bluff Champion
 						33749,	-- Undercity Champion
 					},
@@ -585,21 +599,35 @@ _.ExpansionFeatures =
 						i(45500),	-- Mark of the Champion
 					},
 				}),
-				q(13793, {	-- Among the Champions (A / H, DK)
-					["hordeQuestID"] = 13814,
+				q(13793, {	-- Among the Champions (A , DK)
 					["classes"] = { DEATHKNIGHT },
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["coord"] = { 73.6, 20.0, 118 },
+					["coord"] = { 73.6, 20.0, ICECROWN },
 					["provider"] = { "n", 33770 },	-- Illyrie Nightfall <Mistress of Horses>
 					["crs"] = {
 						33738,	-- Darnassus Champion
 						33739,	-- Exodar Champion
 						33740,	-- Gnomeregan Champion
 						33743,	-- Ironforge Champion
+						33747,	-- Stormwind Champion
+					},
+					["g"] = {
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+						i(45500),	-- Mark of the Champion
+					},
+				}),
+				q(13814, {	-- Among the Champions (H , DK)
+					["classes"] = { DEATHKNIGHT },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["coord"] = { 73.6, 20.0, ICECROWN },
+					["provider"] = { "n", 33770 },	-- Illyrie Nightfall <Mistress of Horses>
+					["crs"] = {
 						33744,	-- Orgrimmar Champion
 						33745,	-- Sen'jin Champion
 						33746,	-- Silvermoon Champion
-						33747,	-- Stormwind Champion
 						33748,	-- Thunder Bluff Champion
 						33749,	-- Undercity Champion
 					},
@@ -610,61 +638,61 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(13852, {	-- At The Enemy's Gates (A)
-					["coord"] = { 76.5, 19.9, 118 },
+					["coord"] = { 76.5, 19.9, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33649 },	-- Flickin Gearspanner
 				}),
 				q(13851, {	-- At The Enemy's Gates (A)
-					["coord"] = { 76.6, 19.6, 118 },
+					["coord"] = { 76.6, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33309 },	-- Clara Tumblebrew
 				}),
 				q(13854, {	-- At The Enemy's Gates (A)
-					["coord"] = { 76.1, 19.1, 118 },
+					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33656 },	-- Ranii
 				}),
 				q(13855, {	-- At The Enemy's Gates (A)
-					["coord"] = { 76.4, 19.0, 118 },
+					["coord"] = { 76.4, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33654 },	-- Airae Starseeker
 				}),
 				q(13847, {	-- At The Enemy's Gates (A)
-					["coord"] = { 76.6, 19.2, 118 },
+					["coord"] = { 76.6, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33223 },	-- Captain Joseph Holley
 				}),
 				q(13858, {	-- At The Enemy's Gates (H)
-					["coord"] = { 76.1, 24.6, 118 },
+					["coord"] = { 76.1, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33549 },	-- Anka Clawhoof
 				}),
 				q(13856, {	-- At The Enemy's Gates (H)
-					["coord"] = { 76.4, 24.6, 118 },
+					["coord"] = { 76.4, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33544 },	-- Morah Worgsister
 				}),
 				q(13860, {	-- At The Enemy's Gates (H)
-					["coord"] = { 76.5, 24.3, 118 },
+					["coord"] = { 76.5, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33547 },	-- Handler Dretch
 				}),
 				q(13859, {	-- At The Enemy's Gates (H)
-					["coord"] = { 76.5, 23.9, 118 },
+					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33548 },	-- Aneera Thuron
 				}),
 				q(13857, {	-- At The Enemy's Gates (H)
-					["coord"] = { 75.9, 24.4, 118 },
+					["coord"] = { 75.9, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33545 },	-- Gahju
@@ -673,7 +701,7 @@ _.ExpansionFeatures =
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["coord"] = { 69.9, 23.4, 118 },
+					["coord"] = { 69.9, 23.4, ICECROWN },
 					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 					["g"] = {
 						i(46114),	-- Champion's Writ
@@ -684,7 +712,7 @@ _.ExpansionFeatures =
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["coord"] = { 69.9, 23.4, 118 },
+					["coord"] = { 69.9, 23.4, ICECROWN },
 					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 					["g"] = {
 						i(46114),	-- Champion's Writ
@@ -695,7 +723,7 @@ _.ExpansionFeatures =
 					["classes"] = { DEATHKNIGHT },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["coord"] = { 73.8, 20.0, 118 },
+					["coord"] = { 73.8, 20.0, ICECROWN },
 					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 					["g"] = {
 						i(46114),	-- Champion's Writ
@@ -706,7 +734,7 @@ _.ExpansionFeatures =
 					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["coord"] = { 73.8, 20.0, 118 },
+					["coord"] = { 73.8, 20.0, ICECROWN },
 					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 					["g"] = {
 						i(46114),	-- Champion's Writ
@@ -722,49 +750,49 @@ _.ExpansionFeatures =
 				}),
 				q(14076, {	-- Breakfast Of Champions (A)
 					["isDaily"] = true,
-					["coord"] = { 76.2, 19.6, 118 },
+					["coord"] = { 76.2, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34912 },	-- Savinia Loresong <The Silver Covenant>
 				}),
 				q(14092, {	-- Breakfast Of Champions (H)
 					["isDaily"] = true,
-					["coord"] = { 76.1, 24.0, 118 },
+					["coord"] = { 76.1, 24.0, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34914 },	-- Tylos Dawnrunner <The Sunreavers>
 				}),
 				q(13846, {	-- Contributin' To The Cause
 					["isDaily"] = true,
-					["coord"] = { 69.5, 22.4, 118 },
+					["coord"] = { 69.5, 22.4, ICECROWN },
 					["provider"] = { "n", 34210 },	-- Squire Artie
 				}),
 				q(14105, {	-- Deathspeaker Kharos
 					["isDaily"] = true,
-					["coord"] = { 69.4, 23.1, 118 },
+					["coord"] = { 69.4, 23.1, ICECROWN },
 					["provider"] = { "n", 34882 },	-- High Crusader Adelard
 				}),
 				q(14101, {	-- Drottinn Hrothgar
 					["isDaily"] = true,
-					["coord"] = { 69.4, 23.1, 118 },
+					["coord"] = { 69.4, 23.1, ICECROWN },
 					["provider"] = { "n", 34882 },	-- High Crusader Adelard
 				}),
 				q(13794, {	-- Eadric the Pure
-					["coord"] = { 69.6, 22.8, 118 },
+					["coord"] = { 69.6, 22.8, ICECROWN },
 					["provider"] = { "n", 33817 },	-- Justicar Mariel Trueheart
 				}),
 				q(14108, {	-- Get Kraken!
 					["isDaily"] = true,
-					["coord"] = { 69.4, 23.1, 118 },
+					["coord"] = { 69.4, 23.1, ICECROWN },
 					["provider"] = { "n", 35094 },	-- Crusader Silverdawn
 				}),
 				q(14090, {	-- Gormok Wants His Snobolds (A)
 					["isDaily"] = true,
-					["coord"] = { 76.2, 19.6, 118 },
+					["coord"] = { 76.2, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34912 },	-- Savinia Loresong <The Silver Covenant>
 				}),
 				q(14141, {	-- Gormok Wants His Snobolds (H)
 					["isDaily"] = true,
-					["coord"] = { 76.1, 24.0, 118 },
+					["coord"] = { 76.1, 24.0, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34914 },	-- Tylos Dawnrunner <The Sunreavers>
 				}),
@@ -774,13 +802,13 @@ _.ExpansionFeatures =
 					["description"] = "Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",
 				}),
 				q(13625, {	-- Learning The Reins (A)
-					["coord"] = { 76.5, 19.5, 118 },
+					["coord"] = { 76.5, 19.5, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33647 },	-- Scout Shalyndria
 				}),
 				q(13677, {	-- Learning The Reins (H)
-					["coord"] = { 76.2, 24.4, 118 },
+					["coord"] = { 76.2, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33659 },	-- Galathia Brightdawn
@@ -791,88 +819,110 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(13828, {	-- Mastery Of Melee (A)
-					["coord"] = { 76.5, 19.4, 118 },
+					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33625 },	-- Arcanist Taelis
 				}),
 				q(13829, {	-- Mastery Of Melee (H)
-					["coord"] = { 76.2, 24.3, 118 },
+					["coord"] = { 76.2, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					["sourceQuest"] = 13668,	-- The Argent Tournament
 				}),
 				q(13837, {	-- Mastery Of The Charge (A)
-					["coord"] = { 76.4, 19.4, 118 },
+					["coord"] = { 76.4, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33646 },	-- Avareth Swiftstrike
 				}),
 				q(13839, {	-- Mastery Of The Charge (H)
-					["coord"] = { 76.3, 24.3, 118 },
+					["coord"] = { 76.3, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33658 },	-- Amariel Sunsworn
 					["sourceQuest"] = 13668,	-- The Argent Tournament
 				}),
 				q(13835, {	-- Mastery Of The Shield-Breaker (A)
-					["coord"] = { 76.5, 19.5, 118 },
+					["coord"] = { 76.5, 19.5, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33647 },	-- Scout Shalyndria
 				}),
 				q(13838, {	-- Mastery Of The Shield-Breaker (H)
-					["coord"] = { 76.2, 24.4, 118 },
+					["coord"] = { 76.2, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33659 },	-- Galathia Brightdawn
 					["sourceQuest"] = 13668,	-- The Argent Tournament
 				}),
 				q(14102, {	-- Mistcaller Yngvar
 					["isDaily"] = true,
-					["coord"] = { 69.4, 23.1, 118 },
+					["coord"] = { 69.4, 23.1, ICECROWN },
 					["provider"] = { "n", 34882 },	-- High Crusader Adelard
 				}),
 				q(14104, {	-- Ornolf The Scarred
 					["isDaily"] = true,
-					["coord"] = { 69.4, 23.1, 118 },
+					["coord"] = { 69.4, 23.1, ICECROWN },
 					["provider"] = { "n", 34882 },	-- High Crusader Adelard
 				}),
 				q(14152, {	-- Rescue at Sea (A)
 					["isDaily"] = true,
-					["coord"] = { 76.2, 19.6, 118 },
+					["coord"] = { 76.2, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
 				}),
 				q(14136, {	-- Rescue at Sea (H)
 					["isDaily"] = true,
-					["coord"] = { 76.1, 24.0, 118 },
+					["coord"] = { 76.1, 24.0, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
 				}),
 				q(14080, {	-- Stop The Aggressors (A)
 					["isDaily"] = true,
-					["coord"] = { 76.2, 19.6, 118 },
+					["coord"] = { 76.2, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
 				}),
 				q(14140, {	-- Stop The Aggressors (H)
 					["isDaily"] = true,
-					["coord"] = { 76.1, 24.0, 118 },
+					["coord"] = { 76.1, 24.0, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
 				}),
-				q(13789, {	-- Taking Battle To The Enemy (A / H, non-DK)
-					["hordeQuestID"] = 13810,
+				q(13789, {	-- Taking Battle To The Enemy (A , non-DK)
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["coord"] = { 69.9, 23.4, 118 },
+					["coord"] = { 69.9, 23.4, ICECROWN },
 					["provider"] = { "n", 33763 },	-- Cellian Daybreak <Master of Arms>
 					["g"] = {
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
 				}),
-				q(13791, {	-- Taking Battle To The Enemy (A / H, DK)
-					["hordeQuestID"] = 13813,
-					["classes"] = { DEATHKNIGHT },
+				q(13810, {	-- Taking Battle To The Enemy (H , non-DK)
+					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["coord"] = { 73.8, 19.6, 118 },
+					["coord"] = { 69.9, 23.4, ICECROWN },
+					["provider"] = { "n", 33763 },	-- Cellian Daybreak <Master of Arms>
+					["g"] = {
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+					},
+				}),
+				q(13791, {	-- Taking Battle To The Enemy (A , DK)
+					["classes"] = { DEATHKNIGHT },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["coord"] = { 73.8, 19.6, ICECROWN },
+					["provider"] = { "n", 33769 },	-- Zor'be the Bloodletter <Master of Arms>
+					["g"] = {
+						i(46114),	-- Champion's Writ
+						i(45724),	-- Champion's Purse
+					},
+				}),
+				q(13813, {	-- Taking Battle To The Enemy (H , DK)
+					["classes"] = { DEATHKNIGHT },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["coord"] = { 73.8, 19.6, ICECROWN },
 					["provider"] = { "n", 33769 },	-- Zor'be the Bloodletter <Master of Arms>
 					["g"] = {
 						i(46114),	-- Champion's Writ
@@ -880,93 +930,93 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(13667, {	-- The Argent Tournament
-					["coord"] = { 69.6, 22.8, 118 },
+					["coord"] = { 69.6, 22.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33817 },	-- Justicar Mariel Trueheart
 				}),
 				q(13668, {	-- The Argent Tournament
-					["coord"] = { 69.6, 22.8, 118 },
+					["coord"] = { 69.6, 22.8, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33817 },	-- Justicar Mariel Trueheart
 				}),
 				q(13679, {	-- The Aspirant's Challenge (A)
-					["coord"] = { 76.5, 19.4, 118 },
+					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33625 },	-- Arcanist Taelis
 				}),
 				q(13680, {	-- The Aspirant's Challenge (H)
-					["coord"] = { 76.3, 24.4, 118 },
+					["coord"] = { 76.3, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 				}),
 				q(13634, {	-- The Black Knight of Silverpine?
-					["coord"] = { 69.4, 23.0, 118 },
+					["coord"] = { 69.4, 23.0, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 				}),
 				q(13633, {	-- The Black Knight of Westfall?
-					["coord"] = { 69.4, 23.0, 118 },
+					["coord"] = { 69.4, 23.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 				}),
 				q(14016, {	-- The Black Knight's Curse
-					["coord"] = { 69.4, 23.0, 118 },
+					["coord"] = { 69.4, 23.0, ICECROWN },
 					["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 					["sourceQuest"] = 13664,	-- The Black Knight's Fall
 				}),
 				q(13664, {	-- The Black Knight's Fall
-					["coord"] = { 69.4, 23.0, 118 },
+					["coord"] = { 69.4, 23.0, ICECROWN },
 					["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 					["sourceQuest"] = 13663,	-- The Black Knight's Orders
 				}),
 				q(14017, {	-- The Black Knight's Fate
-					["coord"] = { 69.4, 23.0, 118 },
+					["coord"] = { 69.4, 23.0, ICECROWN },
 					["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 					["sourceQuest"] = 14016,	-- The Black Knight's Curse
 				}),
 				q(13663, {	-- The Black Knight's Orders
-					["coord"] = { 69.4, 23.0, 118 },
+					["coord"] = { 69.4, 23.0, ICECROWN },
 					["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 					["sourceQuest"] = 13654,	-- There's Something About the Squire
 				}),
 				q(13754, {	-- The Edge Of Winter (A)
-					["coord"] = { 76.1, 19.1, 118 },
+					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33593 },	-- Colosos
 				}),
 				q(13748, {	-- The Edge Of Winter (A)
-					["coord"] = { 76.5, 19.8, 118 },
+					["coord"] = { 76.5, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 				}),
 				q(13670, {	-- The Edge Of Winter (A)
-					["coord"] = { 76.5, 19.4, 118 },
+					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33625 },	-- Arcanist Taelis
 				}),
 				q(13759, {	-- The Edge Of Winter (A)
-					["coord"] = { 76.3, 19.0, 118 },
+					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 				}),
 				q(13743, {	-- The Edge Of Winter (A)
-					["coord"] = { 76.6, 19.5, 118 },
+					["coord"] = { 76.6, 19.5, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33312 },	-- Lana Stouthammer
 				}),
 				q(13616, {	-- The Edge Of Winter (A)
-					["coord"] = { 76.6, 19.1, 118 },
+					["coord"] = { 76.6, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 				}),
 				q(13675, {	-- The Edge Of Winter (H)
-					["coord"] = { 76.2, 24.3, 118 },
+					["coord"] = { 76.2, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
@@ -977,119 +1027,119 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(13770, {	-- The Edge Of Winter (H)
-					["coord"] = { 76.0, 24.5, 118 },
+					["coord"] = { 76.0, 24.5, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33372 },	-- Zul'tore
 				}),
 				q(13780, {	-- The Edge Of Winter (H)
-					["coord"] = { 76.5, 24.2, 118 },
+					["coord"] = { 76.5, 24.2, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 				}),
 				q(13764, {	-- The Edge Of Winter (H)
-					["coord"] = { 76.5, 24.6, 118 },
+					["coord"] = { 76.5, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 				}),
 				q(13785, {	-- The Edge Of Winter (H)
-					["coord"] = { 76.5, 23.9, 118 },
+					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 				}),
 				q(13775, {	-- The Edge Of Winter (H)
-					["coord"] = { 76.2, 24.6, 118 },
+					["coord"] = { 76.2, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33403 },	-- Runok Wildmane
 				}),
 				q(14107, {	-- The Fate of the Fallen
 					["isDaily"] = true,
-					["coord"] = { 69.4, 23.1, 118 },
+					["coord"] = { 69.4, 23.1, ICECROWN },
 					["provider"] = { "n", 35094 },	-- Crusader Silverdawn
 				}),
 				q(13665, {	-- The Grand Melee (A)
-					["coord"] = { 76.6, 19.2, 118 },
+					["coord"] = { 76.6, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33223 },	-- Captain Joseph Holley
 				}),
 				q(13750, {	-- The Grand Melee (A)
-					["coord"] = { 76.5, 19.9, 118 },
+					["coord"] = { 76.5, 19.9, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33649 },	-- Flickin Gearspanner
 				}),
 				q(13756, {	-- The Grand Melee (A)
-					["coord"] = { 76.1, 19.1, 118 },
+					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33656 },	-- Ranii
 				}),
 				q(13761, {	-- The Grand Melee (A)
-					["coord"] = { 76.4, 19.0, 118 },
+					["coord"] = { 76.4, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33654 },	-- Airae Starseeker
 				}),
 				q(13745, {	-- The Grand Melee (A)
-					["coord"] = { 76.6, 19.6, 118 },
+					["coord"] = { 76.6, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33309 },	-- Clara Tumblebrew
 				}),
 				q(13767, {	-- The Grand Melee (H)
-					["coord"] = { 76.4, 24.6, 118 },
+					["coord"] = { 76.4, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33544 },	-- Morah Worgsister
 				}),
 				q(13772, {	-- The Grand Melee (H)
-					["coord"] = { 75.9, 24.4, 118 },
+					["coord"] = { 75.9, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33545 },	-- Gahju
 				}),
 				q(13787, {	-- The Grand Melee (H)
-					["coord"] = { 76.5, 23.9, 118 },
+					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33548 },	-- Aneera Thuron
 				}),
 				q(13777, {	-- The Grand Melee (H)
-					["coord"] = { 76.1, 24.6, 118 },
+					["coord"] = { 76.1, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33549 },	-- Anka Clawhoof
 				}),
 				q(13782, {	-- The Grand Melee (H)
-					["coord"] = { 76.5, 24.3, 118 },
+					["coord"] = { 76.5, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33547 },	-- Handler Dretch
 				}),
 				q(14077, {	-- The Light's Mercy
 					["isDaily"] = true,
-					["coord"] = { 76.2, 19.6, 118 },
+					["coord"] = { 76.2, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
 				}),
 				q(14144, {	-- The Light's Mercy
 					["isDaily"] = true,
-					["coord"] = { 76.1, 24.0, 118 },
+					["coord"] = { 76.1, 24.0, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
 				}),
 				q(13795, {	-- The Scourgebane
-					["coord"] = { 69.6, 22.8, 118 },
+					["coord"] = { 69.6, 22.8, ICECROWN },
 					["classes"] = { DEATHKNIGHT },
 					["provider"] = { "n", 33817 },	-- Justicar Mariel Trueheart
 				}),
 				q(13641, {	-- The Seer's Crystal
-					["coord"] = { 69.4, 23.0, 118 },
+					["coord"] = { 69.4, 23.0, ICECROWN },
 					["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 					["sourceQuests"] = {
 						13633,	-- The Black Knight of Westfall? (A)
@@ -1097,122 +1147,122 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(13643, {	-- The Stories Dead Men Tell
-					["coord"] = { 69.4, 23.0, 118 },
+					["coord"] = { 69.4, 23.0, ICECROWN },
 					["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 					["sourceQuest"] = 13641,	-- The Seer's Crystal
 				}),
 				q(13725, {	-- The Valiant's Challenge (A)
-					["coord"] = { 76.3, 19.0, 118 },
+					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 					["sourceQuest"] = 13717,	-- The Valiant's Charge (A)
 				}),
 				q(13723, {	-- The Valiant's Challenge (A)
-					["coord"] = { 76.5, 19.8, 118 },
+					["coord"] = { 76.5, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 					["sourceQuest"] = 13715,	-- The Valiant's Charge (A)
 				}),
 				q(13713, {	-- The Valiant's Challenge (A)
-					["coord"] = { 76.6, 19.5, 118 },
+					["coord"] = { 76.6, 19.5, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33312 },	-- Lana Stouthammer
 					["sourceQuest"] = 13714,	-- The Valiant's Charge (A)
 				}),
 				q(13724, {	-- The Valiant's Challenge (A)
-					["coord"] = { 76.1, 19.1, 118 },
+					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33593 },	-- Colosos
 					["sourceQuest"] = 13716,	-- The Valiant's Charge (A)
 				}),
 				q(13699, {	-- The Valiant's Challenge (A)
-					["coord"] = { 76.6, 19.1, 118 },
+					["coord"] = { 76.6, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 					["sourceQuest"] = 13718	-- The Valiant's Charge (A)
 				}),
 				q(13726, {	-- The Valiant's Challenge (H)
-					["coord"] = { 76.5, 24.6, 118 },
+					["coord"] = { 76.5, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 					["sourceQuest"] = 13697,	-- The Valiant's Charge (H)
 				}),
 				q(13728, {	-- The Valiant's Challenge (H)
-					["coord"] = { 76.2, 24.6, 118 },
+					["coord"] = { 76.2, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33403 },	-- Runok Wildmane
 					["sourceQuest"] = 13720,	-- The Valiant's Charge (H)
 				}),
 				q(13729, {	-- The Valiant's Challenge (H)
-					["coord"] = { 76.5, 24.2, 118 },
+					["coord"] = { 76.5, 24.2, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 					["sourceQuest"] = 13721,	-- The Valiant's Charge (H)
 				}),
 				q(13731, {	-- The Valiant's Challenge (H)
-					["coord"] = { 76.5, 23.9, 118 },
+					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 					["sourceQuest"] = 13722,	-- The Valiant's Charge (H)
 				}),
 				q(13727, {	-- The Valiant's Challenge (H)
-					["coord"] = { 76.0, 24.5, 118 },
+					["coord"] = { 76.0, 24.5, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33372 },	-- Zul'tore
 					["sourceQuest"] = 13719,	-- The Valiant's Charge (H)
 				}),
 				q(13714, {	-- The Valiant's Charge (A)
-					["coord"] = { 76.6, 19.5, 118 },
+					["coord"] = { 76.6, 19.5, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33312 },	-- Lana Stouthammer
 				}),
 				q(13718, {	-- The Valiant's Charge (A)
-					["coord"] = { 76.6, 19.1, 118 },
+					["coord"] = { 76.6, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 				}),
 				q(13717, {	-- The Valiant's Charge (A)
-					["coord"] = { 76.3, 19.0, 118 },
+					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 				}),
 				q(13716, {	-- The Valiant's Charge (A)
-					["coord"] = { 76.1, 19.1, 118 },
+					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33593 },	-- Colosos
 				}),
 				q(13715, {	-- The Valiant's Charge (A)
-					["coord"] = { 76.5, 19.8, 118 },
+					["coord"] = { 76.5, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 				}),
 				q(13721, {	-- The Valiant's Charge (H)
-					["coord"] = { 76.5, 24.2, 118 },
+					["coord"] = { 76.5, 24.2, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 				}),
 				q(13722, {	-- The Valiant's Charge (H)
-					["coord"] = { 76.5, 23.9, 118 },
+					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 				}),
 				q(13697, {	-- The Valiant's Charge (H)
-					["coord"] = { 76.5, 24.6, 118 },
+					["coord"] = { 76.5, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 				}),
 				q(13720, {	-- The Valiant's Charge (H)
-					["coord"] = { 76.2, 24.6, 118 },
+					["coord"] = { 76.2, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33403 },	-- Runok Wildmane
 				}),
 				q(13719, {	-- The Valiant's Charge (H)
-					["coord"] = { 76.0, 24.5, 118 },
+					["coord"] = { 76.0, 24.5, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33372 },	-- Zul'tore
 				}),
 				q(13654, {	-- There's Something About the Squire
-					["coord"] = { 69.4, 23.0, 118 },
+					["coord"] = { 69.4, 23.0, ICECROWN },
 					["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 					["sourceQuest"] = 13643,	-- The Stories Dead Men Tell
 				}),
@@ -1220,7 +1270,7 @@ _.ExpansionFeatures =
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 69.9, 23.4, 118 },
+					["coord"] = { 69.9, 23.4, ICECROWN },
 					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 					["g"] = {
 						i(46114),	-- Champion's Writ
@@ -1231,7 +1281,7 @@ _.ExpansionFeatures =
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-					["coord"] = { 69.9, 23.4, 118 },
+					["coord"] = { 69.9, 23.4, ICECROWN },
 					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 					["g"] = {
 						i(46114),	-- Champion's Writ
@@ -1242,7 +1292,7 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 73.8, 20.0, 118 },
+					["coord"] = { 73.8, 20.0, ICECROWN },
 					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 					["g"] = {
 						i(46114),	-- Champion's Writ
@@ -1253,7 +1303,7 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["classes"] = { DEATHKNIGHT },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 73.8, 20.0, 118 },
+					["coord"] = { 73.8, 20.0, ICECROWN },
 					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 					["g"] = {
 						i(46114),	-- Champion's Writ
@@ -1261,13 +1311,13 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(13671, {	-- Training In The Field (A)
-					["coord"] = { 76.4, 19.4, 118 },
+					["coord"] = { 76.4, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33646 },	-- Avareth Swiftstrike
 				}),
 				q(13676, {	-- Training In The Field (H)
-					["coord"] = { 76.3, 24.3, 118 },
+					["coord"] = { 76.3, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 33658 },	-- Amariel Sunsworn
@@ -1278,12 +1328,12 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(13672, {	-- Up To The Challenge (A)
-					["coord"] = { 76.5, 19.4, 118 },
+					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33625 },	-- Arcanist Taelis
 				}),
 				q(13678, {	-- Up To The Challenge (H)
-					["coord"] = { 76.2, 24.3, 118 },
+					["coord"] = { 76.2, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					["sourceQuests"] = {
@@ -1294,76 +1344,76 @@ _.ExpansionFeatures =
 				}),
 				-- TODO: verify if these are available to allied races or not
 				q(13706, {	-- Valiant Of Darnassus
-					["coord"] = { 76.3, 19.0, 118 },
+					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = exclude(NIGHTELF, ALLIANCE_ONLY),
 					["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 				}),
 				q(13704, {	-- Valiant Of Gnomeregan
-					["coord"] = { 76.5, 19.8, 118 },
+					["coord"] = { 76.5, 19.8, ICECROWN },
 					["races"] = exclude(GNOME, ALLIANCE_ONLY),
 					["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 				}),
 				q(13703, {	-- Valiant Of Ironforge
-					["coord"] = { 76.6, 19.5, 118 },
+					["coord"] = { 76.6, 19.5, ICECROWN },
 					["races"] = exclude(DWARF, ALLIANCE_ONLY),
 					["provider"] = { "n", 33312 },	-- Lana Stouthammer
 				}),
 				q(13707, {	-- Valiant Of Orgrimmar
-					["coord"] = { 76.5, 24.6, 118 },
+					["coord"] = { 76.5, 24.6, ICECROWN },
 					["races"] = exclude(ORC, HORDE_ONLY),
 					["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 				}),
 				q(13708, {	-- Valiant Of Sen'jin
-					["coord"] = { 76.0, 24.5, 118 },
+					["coord"] = { 76.0, 24.5, ICECROWN },
 					["races"] = exclude({ TROLL, ZANDALARI }, HORDE_ONLY),
 					["provider"] = { "n", 33372 },	-- Zul'tore
 				}),
 				q(13711, {	-- Valiant Of Silvermoon
-					["coord"] = { 76.5, 23.9, 118 },
+					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
 					["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 				}),
 				q(13593, {	-- Valiant Of Stormwind
-					["coord"] = { 76.6, 19.1, 118 },
+					["coord"] = { 76.6, 19.1, ICECROWN },
 					["races"] = exclude(HUMAN, ALLIANCE_ONLY),
 					["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 				}),
 				q(13705, {	-- Valiant Of The Exodar
-					["coord"] = { 76.1, 19.1, 118 },
+					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
 					["provider"] = { "n", 33593 },	-- Colosos
 				}),
 				q(13709, {	-- Valiant Of Thunder Bluff
-					["coord"] = { 76.2, 24.6, 118 },
+					["coord"] = { 76.2, 24.6, ICECROWN },
 					["races"] = exclude(TAUREN, HORDE_ONLY),
 					["provider"] = { "n", 33403 },	-- Runok Wildmane
 				}),
 				q(13710, {	-- Valiant Of Undercity
-					["coord"] = { 76.5, 24.2, 118 },
+					["coord"] = { 76.5, 24.2, ICECROWN },
 					["races"] = exclude(UNDEAD, HORDE_ONLY),
 					["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 				}),
 				q(14112, {	-- What Do You Feed a Yeti, Anyway? (A)
 					["isDaily"] = true,
-					["coord"] = { 76.2, 19.6, 118 },
+					["coord"] = { 76.2, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34912 },	-- Savinia Loresong <The Silver Covenant>
 				}),
 				q(14145, {	-- What Do You Feed a Yeti, Anyway? (H)
 					["isDaily"] = true,
-					["coord"] = { 76.1, 24.0, 118 },
+					["coord"] = { 76.1, 24.0, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34914 },	-- Tylos Dawnrunner <The Sunreavers>
 				}),
 				q(14096, {	-- You've Really Done It This Time, Kul (A)
 					["isDaily"] = true,
-					["coord"] = { 76.2, 19.6, 118 },
+					["coord"] = { 76.2, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
 				}),
 				q(14142, {	-- You've Really Done It This Time, Kul (H)
 					["isDaily"] = true,
-					["coord"] = { 76.1, 24.0, 118 },
+					["coord"] = { 76.1, 24.0, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
 				}),
@@ -1887,13 +1937,13 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(33602, {	-- Anuur <Jewelcrafting Supplies>
-					["coord"] = { 71.4, 20.8, 118 },
+					["coord"] = { 71.4, 20.8, ICECROWN },
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 28721}, -- Tiffany Cartier <Jewelcrafting Supplies>
 					},
 				}),
 				n(35573, {	-- Arcanist Asarina <Legacy Justice Quartermaster>
-					["coord"] = { 75.2, 21.6, 118 },
+					["coord"] = { 75.2, 21.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						-- Normal items here
@@ -1936,7 +1986,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>
-					["coord"] = { 75.4, 21.6, 118 },
+					["coord"] = { 75.4, 21.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r"}, {
 						gs(674, {	-- Kel'Thuzad's Regalia
@@ -2057,7 +2107,7 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(35580, {	-- Aspirant Naradiel <Triumphant Armor Vendor>
-					["coord"] = { 75.4, 22.0, 118 },
+					["coord"] = { 75.4, 22.0, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
 						gs(691, {	-- Garona's Battlegear
@@ -2178,7 +2228,7 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(33853, {	-- Broxel Goldgrasp <Souvenirs>
-					["coord"] = { 73.0, 23.0, 118 },
+					["coord"] = { 73.0, 23.0, ICECROWN },
 					["g"] = {
 						i(45670),	-- Darnassus Doublet
 						i(45668),	-- Exodar Doublet
@@ -2193,7 +2243,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(35576, {	-- Champion Faesrol <Triumphant Armor Vendor>
-					["coord"] = { 75.2, 22.0, 118 },
+					["coord"] = { 75.2, 22.0, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
 						un(REMOVED_FROM_GAME, i(47557, {	-- Regalia of the Grand Conqueror
@@ -2316,7 +2366,7 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(35575, {	-- Champion Isimode <Triumphant Armor Vendor>
-					["coord"] = { 75.2, 21.6, 118 },
+					["coord"] = { 75.2, 21.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r"}, {
 						un(REMOVED_FROM_GAME, i(47557, {	-- Regalia of the Grand Conqueror
@@ -2440,7 +2490,7 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(33307, {	-- Corporal Arthur Flew <Stormwind Quartermaster>
-					["coord"] = { 76.4, 19.2, 118 },
+					["coord"] = { 76.4, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(45574),	-- Stormwind Tabard
@@ -2467,7 +2517,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(173791, {	-- Crusader Adevald Ironbeard
-					["coord"] = { 69.4, 23.3, 118 },
+					["coord"] = { 69.4, 23.3, ICECROWN },
 					["description"] = "Sells gear from the Shadowlands Pre-Launch event but you must have leftover tokens from the event to buy them.",
 					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["cost"] = { { "c", 1754, 15 } }}, {
 						-- Alliance items
@@ -2568,7 +2618,7 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(34885, {	-- Dame Evniki Kapsalis <Crusader's Quartermaster>
-					["coord"] = { 69.4, 23.1, 118 },
+					["coord"] = { 69.4, 23.1, ICECROWN },
 					["g"] = {
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
@@ -2790,7 +2840,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(33310, {	-- Derrick Brindlebeard <Ironforge Quartermaster>
-					["coord"] = { 76.4, 19.4, 118 },
+					["coord"] = { 76.4, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(44970, {	-- Dun Morogh Cub (PET!)
@@ -2817,7 +2867,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(33556, {	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-					["coord"] = { 76.2, 24.4, 118 },
+					["coord"] = { 76.2, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(46755),	-- Great Golden Kodo (MOUNT!)
@@ -2837,7 +2887,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(33555, {	-- Eliza Killian <Undercity Quartermaster>
-					["coord"] = { 76.4, 24.0, 118 },
+					["coord"] = { 76.4, 24.0, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(45597, {	-- Forsaken Warhorse (MOUNT!)
@@ -2857,7 +2907,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(33594, {	-- Fizzix Blastbolt <Engineering Supplies>
-					["coord"] = { 72.2, 20.8, 118 },
+					["coord"] = { 72.2, 20.8, ICECROWN },
 					["g"] = {
 						i(23817, {	-- Schematic: Titanium Toolbox
 							["isLimited"] = true,
@@ -2865,7 +2915,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(33553, {	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-					["coord"] = { 76.4, 24.2, 118 },
+					["coord"] = { 76.4, 24.2, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(44973, {	-- Durotar Scorpion (PET!)
@@ -2887,7 +2937,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(34881, {	-- Hiren Loresong <Silver Covenant Quartermaster>
-					["coord"] = { 76.2, 19.6, 118 },
+					["coord"] = { 76.2, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(46815, {	-- Quel'dorei Steed
@@ -2905,7 +2955,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(33657, {	-- Irisee <Exodar Quartermaster>
-					["coord"] = { 76.2, 19.2, 118 },
+					["coord"] = { 76.2, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(44984, {	-- Ammen Vale Lashling (PET!)
@@ -2930,7 +2980,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(35574, {	-- Magistrix Iruvia <Legacy Justice Quartermaster>
-					["coord"] = { 75.2, 22.0, 118 },
+					["coord"] = { 75.2, 22.0, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						-- Normal Items here
@@ -2973,7 +3023,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(33595, {	-- Mera Mistrunner <Cooking Supplies>
-					["coord"] = { 72.4, 20.8, 118 },
+					["coord"] = { 72.4, 20.8, ICECROWN },
 					["g"] = {
 						i(134020, {	-- Chef's Hat
 							["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
@@ -3056,7 +3106,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(33650, {	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-					["coord"] = { 76.4, 19.6, 118 },
+					["coord"] = { 76.4, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(45019, {	-- Gnomeregan Banner (TOY!)
@@ -3083,7 +3133,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(33653, {	-- Rook Hawkfist <Darnassus Quartermaster>
-					["coord"] = { 76.2, 19.2, 118 },
+					["coord"] = { 76.2, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(45591, {	-- Darnassian Nightsaber (MOUNT!)
@@ -3110,7 +3160,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(33554, {	-- Samamba <Sen'jin Quartermaster>
-					["coord"] = { 76.0, 24.4, 118 },
+					["coord"] = { 76.0, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(45593, {	-- Darkspear Raptor (MOUNT!)
@@ -3132,7 +3182,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(33557, {	-- Trellis Morningsun <Silvermoon Quartermaster>
-					["coord"] = { 76.2, 23.8, 118 },
+					["coord"] = { 76.2, 23.8, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(44982, {	-- Enchanted Broom (PET!)
@@ -3159,7 +3209,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(35578, {	-- Valiant Bressia <Triumphant Armor Vendor>
-					["coord"] = { 75.4, 22.0, 118 },
+					["coord"] = { 75.4, 22.0, ICECROWN },
 					["maps"] = {
 						172,	-- Trial of the Grand Crusader
 						173,	-- Trial of the Grand Crusader
@@ -3474,7 +3524,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(35577, {	-- Valiant Laradia <Triumphant Armor Vendor>
-					["coord"] = { 75.4, 21.6, 118 },
+					["coord"] = { 75.4, 21.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = {
 						172,	-- Trial of the Grand Crusader
@@ -3789,7 +3839,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(34772, {	-- Vasarin Redmorn <Sunreavers Quartermaster>
-					["coord"] = { 76.2, 24.0, 118 },
+					["coord"] = { 76.2, 24.0, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(46821, {	-- Shimmering Wyrmling

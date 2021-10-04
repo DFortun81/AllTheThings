@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(118, {	-- Icecrown
+	m(NORTHREND, {
+		m(ICECROWN, {
 			n(QUESTS, {
 				q(13286, {	-- ...All the Help We Can Get.
 					["races"] = ALLIANCE_ONLY,
@@ -14,37 +14,37 @@ _.Zones =
 					["sourceQuest"] = 13231,	-- The Broken Front
 				}),
 				q(13070, {	-- A Cold Front Approaches
-					["coord"] = { 87.4, 75.8, 118 },
+					["coord"] = { 87.4, 75.8, ICECROWN },
 					["provider"] = { "n", 28179 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13045,	-- Into The Wild Green Yonder
 				}),
 				q(13072, {	-- A Hero Remains
 					["lvl"] = 67,
-					["coord"] = { 79.8, 30.8, 118 },
+					["coord"] = { 79.8, 30.8, ICECROWN },
 					["provider"] = { "n", 30562 },	-- Crusader Bridenbrad
 					["sourceQuest"] = 13068,	-- A Tale of Valor
 				}),
 				q(13389, {	-- A Short Fuse (A)
-					["coord"] = { 54.3, 86.3, 118 },
+					["coord"] = { 54.3, 86.3, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 193400 },	-- Saronite Bomb Stack
 					["sourceQuest"] = 13388,	-- Set It Off!
 				}),
 				q(13263, {	-- A Short Fuse (H)
-					["coord"] = { 54.3, 86.2, 118 },
+					["coord"] = { 54.3, 86.2, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 193400 },	-- Saronite Bomb Stack
 					["sourceQuest"] = 13262,	-- Blow it Up!
 				}),
 				q(13068, {	-- A Tale of Valor
 					["lvl"] = 67,
-					["coord"] = { 79.7, 71.7, 118 },
+					["coord"] = { 79.7, 71.7, ICECROWN },
 					["provider"] = { "n", 31044 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13141,	-- The Battle For Crusaders' Pinnacle
 					["description"] = "For those that didn't know, this quest line was a dedication to a one Brad Bridenbecker, brother to Rob Bridenbecker VP of Online Technologies. Brad had suffered from cancer and was an avid WoW player. His brother requested some memorial be set up for his brother and Chris Metzen, along with others, thought up this quest line to immortalize his battle with cancer within our beloved fantasy realm.\n\nHats off to you, Blizzard, Chris Metzen, and the whole Bridenbecker family. As a childhood cancer survivor myself, you have my utmost respect and loyalty to your honor and vision. You've truly epitomized the struggle of one going through the sickness, the battle, in the most accurate way possible, and bring honor to all of us who have suffered, and have watched those who have suffered, the same battle.\n\nLok'tar, brother Brad. Lok'tar.\n\n—Fellwing on Wowhead",
 				}),
 				q(13152, {	-- A Visit to the Doctor
-					["coord"] = { 35.3, 66.3, 118 },
+					["coord"] = { 35.3, 66.3, ICECROWN },
 					["provider"] = { "n", 30631 },	-- Darkrider Arly
 					["sourceQuests"] = {
 						13138,	-- I'm Smelting... Smelting!
@@ -53,13 +53,13 @@ _.Zones =
 					},
 				}),
 				q(13390, {	-- A Voice in the Dark (A)
-					["coord"] = { 53.9, 87.2, 118 },
+					["coord"] = { 53.9, 87.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 193195 },	-- Pulsing Crystal
 					["sourceQuest"] = 13389,	-- A Short Fuse
 				}),
 				q(13271, {	-- A Voice in the Dark (H)
-					["coord"] = { 53.9, 87.2, 118 },
+					["coord"] = { 53.9, 87.2, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 193195 },	-- Pulsing Crystal
 					["sourceQuest"] = 13263,	-- A Short Fuse
@@ -77,7 +77,7 @@ _.Zones =
 					["sourceQuest"] = 13237,	-- Poke and Prod
 				}),
 				q(13174, {	-- Amidst the Confusion
-					["coord"] = { 44.0, 24.5, 118 },
+					["coord"] = { 44.0, 24.5, ICECROWN },
 					["provider"] = { "n", 30946 },	-- Keritose Bloodblade
 					["sourceQuests"] = {
 						13169,	-- An Undead's Best Friend
@@ -87,12 +87,12 @@ _.Zones =
 				}),
 				q(13374, {	-- Amped for Revolt!
 					["u"] = REMOVED_FROM_GAME,
-					["coord"] = { 54.0, 36.9, 118 },
+					["coord"] = { 54.0, 36.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 32430 },	-- Fringe Engineer Tezzla
 				}),
 				q(13169, {	-- An Undead's Best Friend
-					["coord"] = { 44.0, 24.5, 118 },
+					["coord"] = { 44.0, 24.5, ICECROWN },
 					["provider"] = { "n", 30946 },	-- Keritose Bloodblade
 					["sourceQuest"] = 13168,	-- Parting Gifts
 				}),
@@ -103,53 +103,53 @@ _.Zones =
 					["sourceQuest"] = 13362,	-- Knowledge is a Terrible Burden
 				}),
 				q(13395, {	-- Army of the Damned (A)
-					["coord"] = { 64.5, 43.9, 118 },
+					["coord"] = { 64.5, 43.9, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 32404 },	-- Matthias Lehner
 					["sourceQuest"] = 13394,	-- Do Your Worst
 				}),
 				q(13236, {	-- Army of the Damned (H)
-					["coord"] = { 64.5, 43.9, 118 },
+					["coord"] = { 64.5, 43.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 32404 },	-- Matthias Lehner
 					["sourceQuest"] = 13305,	-- Do Your Worst
 				}),
 				q(13309, {	-- Assault by Air (A)
-					["coord"] = { 62.5, 51.3, 118 },
+					["coord"] = { 62.5, 51.3, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 31808 },	-- Ground Commander Koup
 					["sourceQuest"] = 13341,	-- Joining the Assault
 				}),
 				q(13310, {	-- Assault by Air (H)
-					["coord"] = { 58.3, 45.9, 118 },
+					["coord"] = { 58.3, 45.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 31834 },	-- Ground Commander Xutjja
 					["sourceQuest"] = 13340,	-- Joining the Assault
 				}),
 				q(13284, {	-- Assault by Ground (A)
-					["coord"] = { 62.5, 51.1, 118 },
+					["coord"] = { 62.5, 51.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 31737 },	-- Skybreaker Squad Leader
 					["sourceQuest"] = 13341,	-- Joining the Assault
 				}),
 				q(13301, {	-- Assault by Ground (H)
-					["coord"] = { 58.3, 46.1, 118 },
+					["coord"] = { 58.3, 46.1, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 31833 },	-- Kor'kron Squad Leader
 					["sourceQuest"] = 13340,	-- Joining the Assault
 				}),
 				q(13230, {	-- Avenge Me!
-					["coord"] = { 68.3, 67.5, 118 },
+					["coord"] = { 68.3, 67.5, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 31273 },	-- Dying Berserker
 					["sourceQuest"] = 13228,	-- The Broken Front
 				}),
 				q(13142, {	-- Banshee's Revenge
-					["coord"] = { 32.4, 42.9, 118 },
+					["coord"] = { 32.4, 42.9, ICECROWN },
 					["provider"] = { "n", 30232 },	-- The Bone Witch
 					["sourceQuest"] = 13137,	-- Not-So-Honorable Combat
 					["g"] = {
@@ -183,22 +183,22 @@ _.Zones =
 					},
 				}),
 				q(13213, {	-- Battle at Valhalas
-					["coord"] = { 32.4, 42.9, 118 },
+					["coord"] = { 32.4, 42.9, ICECROWN },
 					["provider"] = { "n", 30232 },	-- The Bone Witch
 					["sourceQuest"] = 13142,	-- Banshee's Revenge
 				}),
 				q(13217, {	-- Battle at Valhalas: Carnage!
-					["coord"] = { 30.7, 28.9, 118 },
+					["coord"] = { 30.7, 28.9, ICECROWN },
 					["provider"] = { "n", 31135 },	-- Geirrvif
 					["sourceQuest"] = 13216,	-- Battle at Valhalas: The Return of Sigrid Iceborn
 				}),
 				q(13214, {	-- Battle at Valhalas: Fallen Heroes
-					["coord"] = { 30.7, 28.9, 118 },
+					["coord"] = { 30.7, 28.9, ICECROWN },
 					["provider"] = { "n", 31135 },	-- Geirrvif
 					["sourceQuest"] = 13213,	-- Battle at Valhalas
 				}),
 				q(13219, {	-- Battle at Valhalas: Final Challenge
-					["coord"] = { 30.7, 28.9, 118 },
+					["coord"] = { 30.7, 28.9, ICECROWN },
 					["provider"] = { "n", 31135 },	-- Geirrvif
 					["sourceQuest"] = 13218,	-- Battle at Valhalas: Thane Deathblow
 					["g"] = {
@@ -209,17 +209,17 @@ _.Zones =
 					},
 				}),
 				q(13215, {	-- Battle at Valhalas: Khit'rix the Dark Master
-					["coord"] = { 30.7, 28.9, 118 },
+					["coord"] = { 30.7, 28.9, ICECROWN },
 					["provider"] = { "n", 31135 },	-- Geirrvif
 					["sourceQuest"] = 13214,	-- Battle at Valhalas: Fallen Heroes
 				}),
 				q(13218, {	-- Battle at Valhalas: Thane Deathblow
-					["coord"] = { 30.7, 28.9, 118 },
+					["coord"] = { 30.7, 28.9, ICECROWN },
 					["provider"] = { "n", 31135 },	-- Geirrvif
 					["sourceQuest"] = 13217,	-- Battle at Valhalas: Carnage!
 				}),
 				q(13216, {	-- Battle at Valhalas: The Return of Sigrid Iceborn
-					["coord"] = { 30.7, 28.9, 118 },
+					["coord"] = { 30.7, 28.9, ICECROWN },
 					["provider"] = { "n", 31135 },	-- Geirrvif
 					["sourceQuest"] = 13215,	-- Battle at Valhalas: Khit'rix the Dark Master
 				}),
@@ -236,7 +236,7 @@ _.Zones =
 					["sourceQuest"] = 13312,	-- The Ironwall Rampart
 				}),
 				q(13106, {	-- Blackwatch
-					["coord"] = { 42.8, 24.9, 118 },
+					["coord"] = { 42.8, 24.9, ICECROWN },
 					["provider"] = { "n", 29343 },	-- Baron Sliver
 					["sourceQuest"] = 12897,	-- If He Cannot Be Turned
 					["isBreadcrumb"] = true,
@@ -248,7 +248,7 @@ _.Zones =
 					["sourceQuest"] = 13306,	-- Raise the Barricades
 				}),
 				q(12810, {	-- Blood in the Water
-					["coord"] = { 19.5, 48.1, 118 },
+					["coord"] = { 19.5, 48.1, ICECROWN },
 					["provider"] = { "n", 29344 },	-- Lord-Commander Arete
 					["sourceQuest"] = 12807,	-- The Story Thus Far...
 				}),
@@ -279,7 +279,7 @@ _.Zones =
 					["sourceQuest"] = 13306,	-- Raise the Barricades
 				}),
 				q(13262, {	-- Blow it Up!
-					["coord"] = { 54.9, 84.1, 118 },
+					["coord"] = { 54.9, 84.1, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 31440 },	-- Sergeant Kregga
 					["sourceQuest"] = 13259,	-- Establishing Superiority
@@ -297,7 +297,7 @@ _.Zones =
 					},
 				}),
 				q(13211, {	-- By Fire Be Purged
-					["coord"] = { 35.4, 66.4, 118 },
+					["coord"] = { 35.4, 66.4, ICECROWN },
 					["provider"] = { "n", 30708 },	-- Crusader Olakin Sainrith
 					["sourceQuests"] = {
 						13138,	-- I'm Smelting... Smelting!
@@ -386,7 +386,7 @@ _.Zones =
 					},
 				}),
 				q(12992, {	-- Crush Dem Vrykuls!
-					["coord"] = { 43.4, 24.5, 118 },
+					["coord"] = { 43.4, 24.5, ICECROWN },
 					["provider"] = { "n", 30216 },	-- Vile
 					["sourceQuest"] = 12951,	-- Let the Baron Know
 					["g"] = {
@@ -398,28 +398,28 @@ _.Zones =
 					},
 				}),
 				q(13040, {	-- Curing The Incurable
-					["coord"] = { 86.8, 76.6, 118 },
+					["coord"] = { 86.8, 76.6, ICECROWN },
 					["provider"] = { "n", 30226 },	-- Father Gustav
 					["sourceQuest"] = 13036,	-- Honor Above All Else
 				}),
 				q(13078, {	-- Dahlia's Tears
-					["maps"] = { 115 },	-- Dragonblight
-					["coord"] = { 59.8, 54.7, 115 },
+					["maps"] = { DRAGONBLIGHT },
+					["coord"] = { 59.8, 54.7, DRAGONBLIGHT },
 					["provider"] = { "n", 26917 },	-- Alexstrasza the Life-Binder
 					["sourceQuest"] = 13077,	-- The Touch of an Aspect
 				}),
 				q(13120, {	-- Death's Gaze
-					["coord"] = { 35.3, 66.3, 118 },
+					["coord"] = { 35.3, 66.3, ICECROWN },
 					["provider"] = { "n", 30631 },	-- Darkrider Arly
 					["sourceQuest"] = 13117,	-- Where Are They Coming From?
 				}),
 				q(13042, {	-- Deep in the Bowels of The Underhalls
-					["coord"] = { 32.5, 42.9, 118 },
+					["coord"] = { 32.5, 42.9, ICECROWN },
 					["provider"] = { "n", 30232 },	-- The Bone Witch
 					["sourceQuest"] = 12999,	-- The Bone Witch
 				}),
 				q(13039, {	-- Defending The Vanguard
-					["coord"] = { 86.0, 75.7, 118 },
+					["coord"] = { 86.0, 75.7, ICECROWN },
 					["provider"] = { "n", 30224 },	-- Crusader Lord Dalfors
 					["sourceQuest"] = 13036,	-- Honor Above All Else
 					["g"] = {
@@ -430,12 +430,12 @@ _.Zones =
 					},
 				}),
 				q(13119, {	-- Destroying the Altars
-					["coord"] = { 35.3, 66.3, 118 },
+					["coord"] = { 35.3, 66.3, ICECROWN },
 					["provider"] = { "n", 30631 },	-- Darkrider Arly
 					["sourceQuest"] = 13117,	-- Where Are They Coming From?
 				}),
 				q(13394, {	-- Do Your Worst (A)
-					["coord"] = { 68.0, 51.5, 118 },
+					["coord"] = { 68.0, 51.5, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 32408 },	-- Matthias Lehner
 					["sourceQuest"] = 13393,	-- Field Repairs
@@ -448,7 +448,7 @@ _.Zones =
 					},
 				}),
 				q(13305, {	-- Do Your Worst (H)
-					["coord"] = { 68.0, 51.5, 118 },
+					["coord"] = { 68.0, 51.5, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 32408 },	-- Mathias Lehner
 					["sourceQuest"] = 13304,	-- Field Repairs
@@ -491,7 +491,7 @@ _.Zones =
 					["sourceQuest"] = 13352,	-- Drag and Drop
 				}),
 				q(12982, {	-- Ebon Blade Prisoners
-					["coord"] = { 43.1, 21.0, 118 },
+					["coord"] = { 43.1, 21.0, ICECROWN },
 					["provider"] = { "n", 30218 },	-- Vaelen the Flayed
 					["sourceQuest"] = 13085,	-- Vaelen Has Returned
 					["g"] = {
@@ -502,7 +502,7 @@ _.Zones =
 					},
 				}),
 				q(12955, {	-- Eliminate the Competition
-					["coord"] = { 43.4, 25.0, 118 },
+					["coord"] = { 43.4, 25.0, ICECROWN },
 					["provider"] = { "n", 30074 },	-- The Leaper
 					["sourceQuest"] = 12938,	-- The Duke
 					["g"] = {
@@ -514,7 +514,7 @@ _.Zones =
 					},
 				}),
 				q(13259, {	-- Establishing Superiority
-					["coord"] = { 54.9, 84.1, 118 },
+					["coord"] = { 54.9, 84.1, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 31440 },	-- Sergeant Kregga
 					["sourceQuest"] = 13258,	-- Opportunity
@@ -544,18 +544,18 @@ _.Zones =
 					["sourceQuest"] = 13282,	-- Return to the Surface
 				}),
 				q(13133, {	-- Find the Ancient Hero
-					["coord"] = { 32.4, 42.9, 118 },
+					["coord"] = { 32.4, 42.9, ICECROWN },
 					["provider"] = { "n", 30232 },	-- The Bone Witch
 					["sourceQuest"] = 13121,	-- Through the Eye
 				}),
 				q(13232, {	-- Finish Me!
-					["coord"] = { 68.7, 64.5, 118 },
+					["coord"] = { 68.7, 64.5, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 31304 },	-- Dying Soldier
 					["sourceQuest"] = 13231,	-- The Broken Front
 				}),
 				q(12893, {	-- Free Your Mind
-					["coord"] = { 44.1, 24.6, 118 },
+					["coord"] = { 44.1, 24.6, ICECROWN },
 					["provider"] = { "n", 29804 },	-- Baron Sliver
 					["sourceQuest"] = 12891,	-- I Have an Idea, But First...
 					["g"] = {
@@ -571,35 +571,35 @@ _.Zones =
 					["provider"] = { "n", 32430 },	-- Fringe Engineer Tezzla
 				}),
 				q(12813, {	-- From Their Corpses, Rise!
-					["coord"] = { 19.6, 48.3, 118 },
+					["coord"] = { 19.6, 48.3, ICECROWN },
 					["isDaily"] = true,
 					["provider"] = { "n", 29396 },	-- Setaal Darkmender
 					["sourceQuest"] = 12807,	-- The Story Thus Far...
 				}),
 				q(13171, {	-- From Whence They Came
-					["coord"] = { 44.0, 24.5, 118 },
+					["coord"] = { 44.0, 24.5, ICECROWN },
 					["provider"] = { "n", 30946 },	-- Keritose Bloodblade
 					["sourceQuest"] = 13168,	-- Parting Gifts
 				}),
 				q(13396, {	-- Futility (A)
-					["coord"] = { 64.5, 43.9, 118 },
+					["coord"] = { 64.5, 43.9, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 32404 },	-- Matthias Lehner
 					["sourceQuest"] = 13395,	-- Army of the Damned
 				}),
 				q(13348, {	-- Futility (H)
-					["coord"] = { 64.5, 43.9, 118 },
+					["coord"] = { 64.5, 43.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 32404 },	-- Matthias Lehner
 					["sourceQuest"] = 13236,	-- Army of the Damned
 				}),
 				q(13146, {	-- Generosity Abounds
-					["coord"] = { 54.1, 71.1, 118 },
+					["coord"] = { 54.1, 71.1, ICECROWN },
 					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["sourceQuest"] = 13145,	-- The Vile Hold
 				}),
 				q(12949, {	-- Get the Key
-					["coord"] = { 41.0, 23.8, 118 },
+					["coord"] = { 41.0, 23.8, ICECROWN },
 					["provider"] = { "n", 30056 },	-- Vaelen the Flayed
 					["sourceQuest"] = 12939,	-- Honor Challenge
 				}),
@@ -636,12 +636,12 @@ _.Zones =
 					["provider"] = { "n", 30825 },	-- Chief Engineer Copperclaw
 				}),
 				q(13212, {	-- He's Gone to Pieces
-					["coord"] = { 35.3, 66.3, 118 },
+					["coord"] = { 35.3, 66.3, ICECROWN },
 					["provider"] = { "n", 30631 },	-- Darkrider Arly
 					["sourceQuest"] = 13144,	-- Killing Two Scourge With One Skeleton
 				}),
 				q(13036, {	-- Honor Above All Else
-					["coord"] = { 69.4, 47.0, 118 },
+					["coord"] = { 69.4, 47.0, ICECROWN },
 					["provider"] = { "n", 28179 },	-- Highlord Tirion Fordring
 					["sourceQuests"] = {
 						13226,	-- Judgment Day Comes (A)
@@ -649,12 +649,12 @@ _.Zones =
 					},
 				}),
 				q(12939, {	-- Honor Challenge
-					["coord"] = { 44.6, 20.3, 118 },
+					["coord"] = { 44.6, 20.3, ICECROWN },
 					["provider"] = { "n", 30002 },	-- Duke Lankral
 					["sourceQuest"] = 12938,	-- The Duke
 				}),
 				q(13170, {	-- Honor is for the Weak
-					["coord"] = { 44.0, 24.5, 118 },
+					["coord"] = { 44.0, 24.5, ICECROWN },
 					["provider"] = { "n", 30946 },	-- Keritose Bloodblade
 					["sourceQuest"] = 13168,	-- Parting Gifts
 				}),
@@ -671,7 +671,7 @@ _.Zones =
 					["sourceQuest"] = 13079,	-- The Boon of Alexstrasza
 				}),
 				q(12891, {	-- I Have an Idea, But First...
-					["coord"] = { 44.1, 24.6, 118 },
+					["coord"] = { 44.1, 24.6, ICECROWN },
 					["provider"] = { "n", 29804 },	-- Baron Sliver
 					["sourceQuests"] = {
 						12887,	-- It's All Fun and Games (A)
@@ -679,7 +679,7 @@ _.Zones =
 					},
 				}),
 				q(13221, {	-- I'm Not Dead Yet! (A)
-					["coord"] = { 31.7, 64.7, 118 },
+					["coord"] = { 31.7, 64.7, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 31279 },	-- Father Kamaros
 					["sourceQuests"] = {
@@ -688,7 +688,7 @@ _.Zones =
 					},
 				}),
 				q(13229, {	-- I'm Not Dead Yet! (H)
-					["coord"] = { 31.7, 64.7, 118 },
+					["coord"] = { 31.7, 64.7, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 31279 },	-- Father Kamaros
 					["sourceQuests"] = {
@@ -697,24 +697,24 @@ _.Zones =
 					},
 				}),
 				q(13138, {	-- I'm Smelting... Smelting!
-					["coord"] = { 35.4, 66.4, 118 },
+					["coord"] = { 35.4, 66.4, ICECROWN },
 					["provider"] = { "n", 30708 },	-- Crusader Olakin Sainrith
 					["sourceQuest"] = 13136,	-- Jagged Shards
 				}),
 				q(12896, {	-- If He Cannot Be Turned (A)
-					["coord"] = { 44.1, 24.6, 118 },
+					["coord"] = { 44.1, 24.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 29804 },	-- Baron Sliver
 					["sourceQuest"] = 12893,	-- Free Your Mind
 				}),
 				q(12897, {	-- If He Cannot Be Turned (H)
-					["coord"] = { 44.1, 24.6, 118 },
+					["coord"] = { 44.1, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 29804 },	-- Baron Sliver
 					["sourceQuest"] = 12893,	-- Free Your Mind
 				}),
 				q(13044, {	-- If There Are Survivors...
-					["coord"] = { 87.0, 75.8, 118 },
+					["coord"] = { 87.0, 75.8, ICECROWN },
 					["provider"] = { "n", 30223 },	-- Crusade Commander Entari
 					["sourceQuests"] = {
 						13040,	-- Curing The Incurable
@@ -723,7 +723,7 @@ _.Zones =
 					},
 				}),
 				q(12840, {	-- In Strict Confidence
-					["coord"] = { 19.5, 48.1, 118 },
+					["coord"] = { 19.5, 48.1, ICECROWN },
 					["provider"] = { "n", 29344 },	-- Lord-Commander Arete
 					["sourceQuest"] = 12839,	-- The Grand (Admiral's) Plan
 					["g"] = {
@@ -735,13 +735,13 @@ _.Zones =
 					},
 				}),
 				q(12838, {	-- Intelligence Gathering
-					["coord"] = { 20.0, 47.9, 118 },
+					["coord"] = { 20.0, 47.9, ICECROWN },
 					["isDaily"] = true,
 					["provider"] = { "n", 29456 },	-- Aurochs Grimbane
 					["sourceQuest"] = 12807,	-- The Story Thus Far...
 				}),
 				q(13139, {	-- Into The Frozen Heart Of Northrend
-					["coord"] = { 82.8, 72.7, 118 },
+					["coord"] = { 82.8, 72.7, ICECROWN },
 					["provider"] = { "n", 30683 },	-- Father Gustav
 					["sourceQuests"] = {
 						13125,	-- The Air Stands Still
@@ -751,12 +751,12 @@ _.Zones =
 					},
 				}),
 				q(13045, {	-- Into The Wild Green Yonder
-					["coord"] = { 87.0, 79.0, 118 },
+					["coord"] = { 87.0, 79.0, ICECROWN },
 					["provider"] = { "n", 30227 },	-- Penumbrius
 					["sourceQuest"] = 13044,	-- If There Are Survivors...
 				}),
 				q(13135, {	-- It Could Kill Us All
-					["coord"] = { 82.9, 73.0, 118 },
+					["coord"] = { 82.9, 73.0, ICECROWN },
 					["provider"] = { "n", 30714 },	-- Crusade Engineer Spitzpatrick
 					["sourceQuests"] = {
 						13104,	-- Once More Unto The Breach, Hero (Non-DK)
@@ -813,7 +813,7 @@ _.Zones =
 					["sourceQuest"] = 13313,	-- Blinding the Eyes in the Sky
 				}),
 				q(13144, {	-- Killing Two Scourge With One Skeleton
-					["coord"] = { 35.3, 66.3, 118 },
+					["coord"] = { 35.3, 66.3, ICECROWN },
 					["provider"] = { "n", 30631 },	-- Darkrider Arly
 					["sourceQuests"] = {
 						13152,	-- A Visit to the Doctor
@@ -837,44 +837,44 @@ _.Zones =
 					["provider"] = { "n", 32444 },	-- Kibli Killohertz
 				}),
 				q(13280, {	-- King of the Mountain (A)
-					["coord"] = { 62.8, 50.5, 118 },
+					["coord"] = { 62.8, 50.5, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 30345 },	-- Chief Engineer Boltwrench
 					["sourceQuest"] = 13296,	-- Get to Ymirheim!
 				}),
 				q(13283, {	-- King of the Mountain (H)
-					["coord"] = { 51.9, 57.5, 118 },
+					["coord"] = { 51.9, 57.5, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 31781 },	-- Blast Thunderbomb
 					["sourceQuest"] = 13293,	-- Get to Ymirheim!
 				}),
 				q(13401, {	-- Knowledge is a Terrible Burden (A)
-					["coord"] = { 49.1, 73.1, 118 },
+					["coord"] = { 49.1, 73.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 32497 },	-- Matthias Lehner
 					["sourceQuest"] = 13400,	-- The Hunter and the Prince
 				}),
 				q(13362, {	-- Knowledge is a Terrible Burden (H)
-					["coord"] = { 49.1, 73.1, 118 },
+					["coord"] = { 49.1, 73.1, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 32497 },	-- Matthias Lehner
 					["sourceQuest"] = 13361,	-- The Hunter and the Prince
 				}),
 				q(12995, {	-- Leave Our Mark
-					["coord"] = { 42.8, 25.0, 118 },
+					["coord"] = { 42.8, 25.0, ICECROWN },
 					["isDaily"] = true,
 					["provider"] = { "n", 29343 },	-- Baron Sliver
 					["sourceQuest"] = 12951,	-- Let the Baron Know
 				}),
 				q(12951, {	-- Let the Baron Know
-					["coord"] = { 41.0, 23.8, 118 },
+					["coord"] = { 41.0, 23.8, ICECROWN },
 					["provider"] = { "n", 30056 },	-- Vaelen the Flayed
 					["sourceQuest"] = 12949,	-- Get the Key
 				}),
 				q(13482, {	-- Let's Get Out of Here! (A)
-					["coord"] = { 31.7, 64.7, 118 },
+					["coord"] = { 31.7, 64.7, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 31279 },	-- Father Kamaros
 					["sourceQuests"] = {
@@ -883,7 +883,7 @@ _.Zones =
 					},
 				}),
 				q(13481, {	-- Let's Get Out of Here! (H)
-					["coord"] = { 31.8, 64.8, 118 },
+					["coord"] = { 31.8, 64.8, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 32800 },	-- Father Kamaros
 					["sourceQuests"] = {
@@ -914,12 +914,12 @@ _.Zones =
 					},
 				}),
 				q(13147, {	-- Matchmaker
-					["coord"] = { 54.1, 71.1, 118 },
+					["coord"] = { 54.1, 71.1, ICECROWN },
 					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["sourceQuest"] = 13145,	-- The Vile Hold
 				}),
 				q(13308, {	-- Mind Tricks
-					["coord"] = { 54.4, 59.2, 118 },
+					["coord"] = { 54.4, 59.2, ICECROWN },
 					["provider"] = { "n", 31892 },	-- Darkspeaker R'khem
 					["sourceQuests"] = {
 						13224,	-- Orgrim's Hammer (H)
@@ -959,12 +959,12 @@ _.Zones =
 					["sourceQuest"] = 13279,	-- Basic Chemistry
 				}),
 				q(13143, {	-- New Recruit
-					["coord"] = { 54.1, 71.1, 118 },
+					["coord"] = { 54.1, 71.1, ICECROWN },
 					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["sourceQuest"] = 13155,	-- Vereth the Cunning
 				}),
 				q(12815, {	-- No Fly Zone
-					["coord"] = { 19.6, 47.7, 118 },
+					["coord"] = { 19.6, 47.7, ICECROWN },
 					["isDaily"] = true,
 					["provider"] = { "n", 29405 },	-- Uzo Deathcaller
 					["sourceQuest"] = 12814,	-- You'll Need a Gryphon
@@ -1052,7 +1052,7 @@ _.Zones =
 					["sourceQuest"] = 13358,	-- Not a Bug
 				}),
 				q(13137, {	-- Not-So-Honorable Combat
-					["coord"] = { 32.4, 42.9, 118 },
+					["coord"] = { 32.4, 42.9, ICECROWN },
 					["provider"] = { "n", 30232 },	-- The Bone Witch
 					["sourceQuest"] = 13133,	-- Find the Ancient Hero
 					["g"] = {
@@ -1063,25 +1063,25 @@ _.Zones =
 					},
 				}),
 				q(13104, {	-- Once More Unto The Breach, Hero (non-DK)
-					["coord"] = { 86.0, 75.7, 118 },
+					["coord"] = { 86.0, 75.7, ICECROWN },
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["provider"] = { "n", 30677 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13086,	-- The Last Line Of Defense
 				}),
 				q(13105, {	-- Once More Unto The Breach, Hero (DK)
-					["coord"] = { 86.0, 75.7, 118 },
+					["coord"] = { 86.0, 75.7, ICECROWN },
 					["classes"] = { DEATHKNIGHT },
 					["provider"] = { "n", 30677 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13086,	-- The Last Line of Defense
 				}),
 				q(13258, {	-- Opportunity
-					["coord"] = { 65.9, 49.8, 118 },
+					["coord"] = { 65.9, 49.8, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 29795 },	-- Koltira Deathweaver
 					["sourceQuest"] = 12899,	-- The Shadow Vault
 				}),
 				q(13224, {	-- Orgrim's Hammer
-					["coord"] = { 79.4, 72.7, 118 },
+					["coord"] = { 79.4, 72.7, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 31240 },	-- Warlord Hork Strongbrow
 					["sourceQuest"] = 13157,	-- The Crusaders' Pinnacle
@@ -1090,7 +1090,7 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(13168, {	-- Parting Gifts
-					["coord"] = { 44.0, 24.5, 118 },
+					["coord"] = { 44.0, 24.5, ICECROWN },
 					["provider"] = { "n", 30946 },	-- Keritose Bloodblade
 					["sourceQuests"] = {
 						-- TODO: need to verify this. May also require some progress in the shadow vault
@@ -1124,13 +1124,13 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(13220, {	-- Putting Olakin Back Together Again
-					["coord"] = { 35.3, 66.3, 118 },
+					["coord"] = { 35.3, 66.3, ICECROWN },
 					["provider"] = { "n", 30631 },	-- Darkrider Arly
 					["sourceQuest"] = 13212,	-- He's Gone to Pieces
 				}),
 				q(13382, {	-- Putting the Hertz: The Valley of Lost Hope
 					["u"] = REMOVED_FROM_GAME,
-					["coord"] = { 54.0, 42.8, 118 },
+					["coord"] = { 54.0, 42.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 32444 },	-- Kibli Killohertz
@@ -1149,12 +1149,12 @@ _.Zones =
 					["sourceQuest"] = 13366,	-- Need More Info
 				}),
 				q(13092, {	-- Reading the Bones
-					["coord"] = { 32.5, 42.9, 118 },
+					["coord"] = { 32.5, 42.9, ICECROWN },
 					["provider"] = { "n", 30232 },	-- The Bone Witch
 					["sourceQuest"] = 12999,	-- The Bone Witch
 				}),
 				q(13093, {	-- Reading the Bones (repeatable)
-					["coord"] = { 32.5, 42.9, 118 },
+					["coord"] = { 32.5, 42.9, ICECROWN },
 					["provider"] = { "n", 30232 },	-- The Bone Witch
 					["repeatable"] = true,
 					["sourceQuest"] = 13092,	-- Reading the Bones
@@ -1201,19 +1201,19 @@ _.Zones =
 					["sourceQuest"] = 13356,	-- Retest Now
 				}),
 				q(13392, {	-- Return to the Surface (A)
-					["coord"] = { 53.8, 86.9, 118 },
+					["coord"] = { 53.8, 86.9, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 31237 },	-- Matthias Lehner
 					["sourceQuest"] = 13391,	-- Time to Hide
 				}),
 				q(13282, {	-- Return to the Surface (H)
-					["coord"] = { 53.8, 86.9, 118 },
+					["coord"] = { 53.8, 86.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 31237 },	-- Matthias Lehner
 					["sourceQuest"] = 13275,	-- Time to Hide
 				}),
 				q(13059, {	-- Revenge for the Vargul
-					["coord"] = { 36.1, 33.0, 118 },
+					["coord"] = { 36.1, 33.0, ICECROWN },
 					["provider"] = { "n", 30406 },	-- Bethod Feigr
 					["sourceQuest"] = 12999,	-- The Bone Witch
 					["g"] = {
@@ -1225,17 +1225,17 @@ _.Zones =
 					},
 				}),
 				q(13008, {	-- Scourge Tactics
-					["coord"] = { 87.0, 75.8, 118 },
+					["coord"] = { 87.0, 75.8, ICECROWN },
 					["provider"] = { "n", 30223 },	-- Crusade Commander Entari
 					["sourceQuest"] = 13036,	-- Honor Above All Else
 				}),
 				q(12847, {	-- Second Chances
-					["coord"] = { 19.5, 48.1, 118 },
+					["coord"] = { 19.5, 48.1, ICECROWN },
 					["provider"] = { "n", 29344 },	-- Lord-Commander Arete
 					["sourceQuest"] = 12840,	-- In Strict Confidence
 				}),
 				q(13387, {	-- Securing the Perimeter
-					["coord"] = { 51.7, 86.6, 118 },
+					["coord"] = { 51.7, 86.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 31444 },	-- Captain Kendall
 					["sourceQuest"] = 13386,	-- Exploiting an Opening
@@ -1247,7 +1247,7 @@ _.Zones =
 					},
 				}),
 				q(13172, {	-- Seeds of Chaos
-					["coord"] = { 44.0, 24.5, 118 },
+					["coord"] = { 44.0, 24.5, ICECROWN },
 					["provider"] = { "n", 30946 },	-- Keritose Bloodblade
 					["sourceQuests"] = {
 						13169,	-- An Undead's Best Friend
@@ -1263,13 +1263,13 @@ _.Zones =
 					},
 				}),
 				q(13388, {	-- Set it Off!
-					["coord"] = { 51.7, 86.6, 118 },
+					["coord"] = { 51.7, 86.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 31444 },	-- Captain Kendall
 					["sourceQuest"] = 13387,	-- Securing the Perimeter
 				}),
 				q(12943, {	-- Shadow Vault Decree
-					["coord"] = { 44.6, 20.3, 118 },
+					["coord"] = { 44.6, 20.3, ICECROWN },
 					["provider"] = { "n", 30002 },	-- Duke Lankral
 					["sourceQuest"] = 12939,	-- Honor Challenge
 					["g"] = {
@@ -1292,7 +1292,7 @@ _.Zones =
 					["sourceQuest"] = 13329,	-- Before the Gate of Horror
 				}),
 				q(13069, {	-- Shoot 'Em Up
-					["coord"] = { 43.5, 25.1, 118 },
+					["coord"] = { 43.5, 25.1, ICECROWN },
 					["isDaily"] = true,
 					["provider"] = { "n", 30074 },	-- The Leaper
 					["sourceQuest"] = 12982,	-- Ebon Blade Prisoners
@@ -1337,7 +1337,7 @@ _.Zones =
 					["sourceQuest"] = 13264,	-- That's Abominable!
 				}),
 				q(13134, {	-- Spill Their Blood
-					["coord"] = { 35.3, 66.3, 118 },
+					["coord"] = { 35.3, 66.3, ICECROWN },
 					["provider"] = { "n", 30631 },	-- Darkrider Arly
 					["sourceQuests"] = {
 						13120,	-- Death's Gaze
@@ -1345,7 +1345,7 @@ _.Zones =
 					},
 				}),
 				q(13160, {	-- Stunning View
-					["coord"] = { 54.1, 71.1, 118 },
+					["coord"] = { 54.1, 71.1, ICECROWN },
 					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["sourceQuest"] = 13145,	-- The Vile Hold
 				}),
@@ -1405,7 +1405,7 @@ _.Zones =
 					["sourceQuest"] = 13264,	-- That's Abominable!
 				}),
 				q(12852, {	-- The Admiral Revealed
-					["coord"] = { 9.5, 47.3, 118 },
+					["coord"] = { 9.5, 47.3, ICECROWN },
 					["provider"] = { "n", 29560 },	-- Lord-Commander Arete
 					["sourceQuest"] = 12847,	-- Second Chances
 					["g"] = {
@@ -1416,7 +1416,7 @@ _.Zones =
 					},
 				}),
 				q(13125, {	-- The Air Stands Still
-					["coord"] = { 83.0, 72.9, 118 },
+					["coord"] = { 83.0, 72.9, ICECROWN },
 					["provider"] = { "n", 30596 },	-- The Ebon Watcher
 					["sourceQuests"] = {
 						13118,	-- The Purging Of Scourgeholme
@@ -1430,7 +1430,7 @@ _.Zones =
 					},
 				}),
 				q(13091, {	-- The Art of Being a Water Terror
-					["coord"] = { 32.4, 42.9, 118 },
+					["coord"] = { 32.4, 42.9, ICECROWN },
 					["provider"] = { "n", 30232 },	-- The Bone Witch
 					["sourceQuest"] = 13043,	-- The Sum is Greater than the Parts
 					["g"] = {
@@ -1441,24 +1441,24 @@ _.Zones =
 					},
 				}),
 				q(13141, {	-- The Battle For Crusaders' Pinnacle
-					["coord"] = { 86.0, 75.7, 118 },
+					["coord"] = { 86.0, 75.7, ICECROWN },
 					["provider"] = { "n", 30677 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13139,	-- Into The Frozen Heart of Northrend
 				}),
 				q(12999, {	-- The Bone Witch
-					["coord"] = { 43.4, 25.0, 118 },
+					["coord"] = { 43.4, 25.0, ICECROWN },
 					["provider"] = { "n", 30074 },	-- The Leaper
 					["sourceQuest"] = 12955,	-- Eliminate the Competition
 				}),
 				q(13082, {	-- The Boon of A'dal
 					["maps"] = { SHATTRATH_CITY },
-					["coord"] = { 53.9, 44.7, MOONGLADE },
+					["coord"] = { 53.9, 44.7, ICECROWN },
 					["provider"] = { "n", 18481 },	-- A'dal
 					["sourceQuest"] = 13081,	-- The Will of the Naaru
 				}),
 				q(13079, {	-- The Boon of Alexstrasza
-					["maps"] = { 115 },	-- Dragonblight
-					["coord"] = { 59.8, 54.7, 115 },
+					["maps"] = { DRAGONBLIGHT },
+					["coord"] = { 59.8, 54.7, DRAGONBLIGHT },
 					["provider"] = { "n", 26917 },	-- Alexstrasza the Life-Binder
 					["sourceQuest"] = 13078,	-- Dahlia's Tears
 				}),
@@ -1482,7 +1482,7 @@ _.Zones =
 					["description"] = "On Orgrim's Hammer.",
 				}),
 				q(13157, {	-- The Crusaders' Pinnacle
-					["coord"] = { 82.8, 72.7, 118 },
+					["coord"] = { 82.8, 72.7, ICECROWN },
 					["provider"] = { "n", 30683 },	-- Father Gustav
 					["sourceQuest"] = 13141,	-- The Battle For Crusaders' Pinnacle
 					["g"] = {
@@ -1495,14 +1495,14 @@ _.Zones =
 				}),
 				q(12938, {	-- The Duke
 					["provider"] = { "n", 29343 },	-- Baron Sliver
-					["coord"] = { 44.1, 24.7, 118 },
+					["coord"] = { 44.1, 24.7, ICECROWN },
 					["sourceQuests"] = {
 						12898,	-- The Shadow Vault (alliance)
 						12899,	-- The Shadow Vault (horde)
 					},
 				}),
 				q(13164, {	-- The Fate of Bloodbane
-					["coord"] = { 54.1, 71.1, 118 },
+					["coord"] = { 54.1, 71.1, ICECROWN },
 					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["sourceQuests"] = {
 						13163,	-- The Rider of Blood
@@ -1517,7 +1517,7 @@ _.Zones =
 					},
 				}),
 				q(13235, {	-- The Flesh Giant Champion
-					["coord"] = { 35.3, 66.3, 118 },
+					["coord"] = { 35.3, 66.3, ICECROWN },
 					["provider"] = { "n", 30631 },	-- Darkrider Arly
 					["sourceQuest"] = 13220,	-- Putting Olakin Back Together Again
 					["g"] = {
@@ -1528,7 +1528,7 @@ _.Zones =
 					},
 				}),
 				q(12839, {	-- The Grand (Admiral's) Plan
-					["coord"] = { 9.2, 41.0, 118 },
+					["coord"] = { 9.2, 41.0, ICECROWN },
 					["provider"] = { "i", 40666 },	-- Note from the Grand Admiral
 					["description"] = "Must be in |cFFFFD700Intelligence Gathering|r to loot the quest item from a chest.",
 					["sourceQuest"] = 12838,	-- Intelligence Gathering -- NOTE: this isn't actually a sourceQuest, but you must have it to start this one
@@ -1546,7 +1546,7 @@ _.Zones =
 					["sourceQuest"] = 13329,	-- Before the Gate of Horror
 				}),
 				q(13400, {	-- The Hunter and the Prince (A)
-					["coord"] = { 49.1, 73.1, 118 },
+					["coord"] = { 49.1, 73.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 32497 },	-- Matthias Lehner
 					["sourceQuest"] = 13399,	-- Time for Answers
@@ -1558,7 +1558,7 @@ _.Zones =
 					},
 				}),
 				q(13361, {	-- The Hunter and the Prince (H)
-					["coord"] = { 49.1, 73.1, 118 },
+					["coord"] = { 49.1, 73.1, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 32497 },	-- Matthias Lehner
 					["sourceQuest"] = 13360,	-- Time for Answers
@@ -1583,12 +1583,12 @@ _.Zones =
 				}),
 				q(13073, {	-- The Keeper's Favor
 					["lvl"] = 67,
-					["coord"] = { 79.7, 71.7, 118 },
+					["coord"] = { 79.7, 71.7, ICECROWN },
 					["provider"] = { "n", 31044 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13072,	-- A Hero Remains
 				}),
 				q(13086, {	-- The Last Line Of Defense
-					["coord"] = { 85.6, 76.0, 118 },
+					["coord"] = { 85.6, 76.0, ICECROWN },
 					["provider"] = { "n", 30657 },	-- Siegemaster Fezzik
 					["sourceQuest"] = 13070,	-- A Cold Front Approaches
 					["g"] = {
@@ -1598,7 +1598,7 @@ _.Zones =
 					},
 				}),
 				q(13118, {	-- The Purging Of Scourgeholme
-					["coord"] = { 83.0, 72.9, 118 },
+					["coord"] = { 83.0, 72.9, ICECROWN },
 					["provider"] = { "n", 30596 },	-- The Ebon Watcher
 					["sourceQuests"] = {
 						13104,	-- Once More Unto The Breach, Hero (Non-DK)
@@ -1606,7 +1606,7 @@ _.Zones =
 					},
 				}),
 				q(13110, {	-- The Restless Dead
-					["coord"] = { 82.8, 72.7, 118 },
+					["coord"] = { 82.8, 72.7, ICECROWN },
 					["provider"] = { "n", 30683 },	-- Father Gustav
 					["sourceQuests"] = {
 						13104,	-- Once More Unto The Breach, Hero (Non-DK)
@@ -1620,7 +1620,7 @@ _.Zones =
 					},
 				}),
 				q(13163, {	-- The Rider of Blood
-					["coord"] = { 54.1, 71.1, 118 },
+					["coord"] = { 54.1, 71.1, ICECROWN },
 					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["sourceQuests"] = {
 						13146,	-- Generosity Abounds
@@ -1635,7 +1635,7 @@ _.Zones =
 					},
 				}),
 				q(13162, {	-- The Rider of Frost
-					["coord"] = { 54.1, 71.1, 118 },
+					["coord"] = { 54.1, 71.1, ICECROWN },
 					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["sourceQuests"] = {
 						13146,	-- Generosity Abounds
@@ -1650,7 +1650,7 @@ _.Zones =
 					},
 				}),
 				q(13161, {	-- The Rider of the Unholy
-					["coord"] = { 54.1, 71.1, 118 },
+					["coord"] = { 54.1, 71.1, ICECROWN },
 					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["sourceQuests"] = {
 						13146,	-- Generosity Abounds
@@ -1665,12 +1665,12 @@ _.Zones =
 					},
 				}),
 				q(13140, {	-- The Runesmiths of Malykriss
-					["coord"] = { 35.4, 66.4, 118 },
+					["coord"] = { 35.4, 66.4, ICECROWN },
 					["provider"] = { "n", 30708 },	-- Crusader Olakin Sainrith
 					["sourceQuest"] = 13136,	-- Jagged Shards
 				}),
 				q(13122, {	-- The Scourgestone
-					["coord"] = { 83.0, 72.9, 118 },
+					["coord"] = { 83.0, 72.9, ICECROWN },
 					["provider"] = { "n", 30596 },	-- The Ebon Watcher
 					["sourceQuests"] = {
 						13104,	-- Once More Unto The Breach, Hero (Non-DK)
@@ -1700,7 +1700,7 @@ _.Zones =
 					},
 				}),
 				q(13225, {	-- The Skybreaker
-					["coord"] = { 79.3, 72.8, 118 },
+					["coord"] = { 79.3, 72.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 31241 },	-- Marshal Ivalius
 					["sourceQuest"] = 13157,	-- The Crusaders' Pinnacle
@@ -1713,7 +1713,7 @@ _.Zones =
 					["sourceQuest"] = 13291,	-- Borrowed Technology
 				}),
 				q(13130, {	-- The Stone That Started A Revolution
-					["coord"] = { 83.0, 73.0, 118 },
+					["coord"] = { 83.0, 73.0, ICECROWN },
 					["provider"] = { "n", 30686 },	-- Crusade Architect Silas
 					["sourceQuests"] = {
 						13104,	-- Once More Unto The Breach, Hero (Non-DK)
@@ -1727,13 +1727,13 @@ _.Zones =
 					},
 				}),
 				q(12807, {	-- The Story Thus Far...
-					["coord"] = { 19.5, 48.1, 118 },
+					["coord"] = { 19.5, 48.1, ICECROWN },
 					["provider"] = { "n", 29344 },	-- Lord-Commander Arete
 					["sourceQuest"] = 12806,	-- To the Rise with all Due haste!
 				}),
 				q(13043, {	-- The Sum is Greater than the Parts
 					["cr"] = 30409,	-- Apprentice Osterkilgr
-					["coord"] = { 34.0, 36.3, 118 },
+					["coord"] = { 34.0, 36.3, ICECROWN },
 					["provider"] = { "i", 42772 },	-- Dr. Terrible's "Building a Better Flesh Giant"
 					["sourceQuest"] = 12999,	-- The Bone Witch
 					["g"] = {
@@ -1749,7 +1749,7 @@ _.Zones =
 					["sourceQuest"] = 13076,	-- Time Yet Remains
 				}),
 				q(13145, {	-- The Vile Hold
-					["coord"] = { 54.1, 71.1, 118 },
+					["coord"] = { 54.1, 71.1, ICECROWN },
 					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["sourceQuest"] = 13143,	-- New Recruit
 					["g"] = {
@@ -1760,29 +1760,29 @@ _.Zones =
 					},
 				}),
 				q(13081, {	-- The Will of the Naaru
-					["coord"] = { 79.7, 71.7, MOONGLADE },
+					["coord"] = { 79.7, 71.7, ICECROWN },
 					["provider"] = { "n", 31044 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13080,	-- Hope Yet Remains
 				}),
 				q(13121, {	-- Through the Eye
-					["coord"] = { 32.5, 42.9, 118 },
+					["coord"] = { 32.5, 42.9, ICECROWN },
 					["provider"] = { "n", 30232 },	-- The Bone Witch
 					["sourceQuest"] = 13091,	-- The Art of Being a Water Terror
 				}),
 				q(13399, {	-- Time for Answers (A)
-					["coord"] = { 71.5, 37.6, 118 },
+					["coord"] = { 71.5, 37.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 32423 },	-- Matthias Lehner
 					["sourceQuest"] = 13398,	-- Where Dragons Fell
 				}),
 				q(13360, {	-- Time for Answers (H)
-					["coord"] = { 71.5, 37.6, 118 },
+					["coord"] = { 71.5, 37.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 32423 },	-- Matthias Lehner
 					["sourceQuest"] = 13359,	-- Where Dragons Fell
 				}),
 				q(13391, {	-- Time to Hide (A)
-					["coord"] = { 53.8, 86.9, 118 },
+					["coord"] = { 53.8, 86.9, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 31237 },	-- Matthias Lehner
 					["sourceQuest"] = 13390,	-- A Voice in the Dark
@@ -1796,7 +1796,7 @@ _.Zones =
 					},
 				}),
 				q(13275, {	-- Time to Hide (H)
-					["coord"] = { 53.8, 86.9, 118 },
+					["coord"] = { 53.8, 86.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 31237 },	-- Matthias Lehner
 					["sourceQuest"] = 13271,	-- A Voice in the Dark
@@ -1815,7 +1815,7 @@ _.Zones =
 					["sourceQuest"] = 13075,	-- The Boon of Remulos
 				}),
 				q(13403, {	-- Tirion's Gambit (A)
-					["coord"] = { 79.7, 71.7, 118 },
+					["coord"] = { 79.7, 71.7, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 31044 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13402,	-- Tirion's Help
@@ -1827,7 +1827,7 @@ _.Zones =
 					},
 				}),
 				q(13364, {	-- Tirion's Gambit (H)
-					["coord"] = { 79.7, 71.7, 118 },
+					["coord"] = { 79.7, 71.7, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 31044 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13363,	-- Argent Aid
@@ -1845,31 +1845,31 @@ _.Zones =
 					["sourceQuest"] = 13401,	-- Knowledge is a Terrible Burden
 				}),
 				q(12806, {	-- To the Rise with all Due Haste!
-					["coord"] = { 42.8, 24.9, 118 },
+					["coord"] = { 42.8, 24.9, ICECROWN },
 					["provider"] = { "n", 29343 },	-- Baron Sliver
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 12982,	-- Ebon Blade Prisoners
 				}),
 				q(13376, {	-- Total Ohmage: The Valley of Lost Hope!
 					["u"] = REMOVED_FROM_GAME,
-					["coord"] = { 54.0, 36.9, 118 },
+					["coord"] = { 54.0, 36.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 32430 },	-- Fringe Engineer Tezzla
 					["sourceQuest"] = 13374,	-- Amped for Revolt!
 				}),
 				q(13085, {	-- Vaelen Has Returned
-					["coord"] = { 42.8, 25.0, 118 },
+					["coord"] = { 42.8, 25.0, ICECROWN },
 					["provider"] = { "n", 29343 },	-- Baron Sliver
 					["sourceQuest"] = 12951,	-- Let the Baron Know
 				}),
 				q(13084, {	-- Vandalizing Jotunheim
-					["coord"] = { 44.6, 20.4, 118 },
+					["coord"] = { 44.6, 20.4, ICECROWN },
 					["provider"] = { "n", 30002 },	-- Duke Lankral
 					["sourceQuest"] = 12951,	-- Let the Baron Know
 				}),
 				q(13155, {	-- Vereth the Cunning
-					["coord"] = { 44.0, 24.5, 118 },
+					["coord"] = { 44.0, 24.5, ICECROWN },
 					["provider"] = { "n", 30946 },	-- Keritose Bloodblade
 					["sourceQuests"] = {
 						13174,	-- Amidst the Confusion
@@ -1877,7 +1877,7 @@ _.Zones =
 					},
 				}),
 				q(13071, {	-- Vile Like Fire!
-					["coord"] = { 42.9, 25.5, 118 },
+					["coord"] = { 42.9, 25.5, ICECROWN },
 					["isDaily"] = true,
 					["provider"] = { "n", 30216 },	-- Vile
 					["sourceQuest"] = 12992,	-- Crush Dem Vrykuls!
@@ -1903,12 +1903,12 @@ _.Zones =
 				}),
 				q(13381, {	-- Watts My Target
 					["u"] = REMOVED_FROM_GAME,
-					["coord"] = { 54.0, 42.8, 118 },
+					["coord"] = { 54.0, 42.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 32444 },	-- Kibli Killohertz
 				}),
 				q(13117, {	-- Where Are They Coming From?
-					["coord"] = { 35.3, 66.3, 118 },
+					["coord"] = { 35.3, 66.3, ICECROWN },
 					["provider"] = { "n", 30631 },	-- Darkrider Arly
 					["sourceQuests"] = {
 						13106,	-- Blackwatch
@@ -1916,19 +1916,19 @@ _.Zones =
 					}
 				}),
 				q(13398, {	-- Where Dragons Fell (A)
-					["coord"] = { 71.5, 37.6, 118 },
+					["coord"] = { 71.5, 37.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 32423 },	-- Matthias Lehner
 					["sourceQuest"] = 13396,	-- Futility
 				}),
 				q(13359, {	-- Where Dragons Fell (H)
-					["coord"] = { 71.5, 37.6, 118 },
+					["coord"] = { 71.5, 37.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 32423 },	-- Matthias Lehner
 					["sourceQuest"] = 13348,	-- Futility
 				}),
 				q(12814, {	-- You'll Need a Gryphon
-					["coord"] = { 19.5, 48.1, 118 },
+					["coord"] = { 19.5, 48.1, ICECROWN },
 					["provider"] = { "n", 29344 },	-- Lord-Commander Arete
 					["sourceQuest"] = 12810,	-- Blood in the Water
 					["g"] = {

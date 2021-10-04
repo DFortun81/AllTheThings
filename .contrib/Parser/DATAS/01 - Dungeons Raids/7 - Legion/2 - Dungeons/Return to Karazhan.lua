@@ -376,6 +376,9 @@ _.Instances = { tier(LEGION_TIER, {
 						i(143526),	-- Searing Cinder
 						i(143529),	-- Star of Hollow Spite
 						i(143523),	-- Talisman of the Violet Eye
+						i(141592, {	-- Technique: Codex of the Tranquil Mind (Rank 3)
+							["description"] = "During Legion, this item dropped from dungeon bosses as well as emissary chests, but since then it has only been seen in emissary chests. Only recently on the 01.10.2021 it was confirmed to drop from Nightbane (Mythic).",
+						}),
 					},
 				}),
 				e(1836,   {	-- The Curator

@@ -1055,8 +1055,9 @@ _.HiddenQuestTriggers = {
 	q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
 	--q(62572),	-- Created "Marz" as the 2nd construct, to finish "build one more" / Faction flag kit
 	q(61512),	-- Completing Something Old, Something Used first time. Confirmed first time 30.09.2021
-	q(63099 ),	-- Opening 184589, Bag of Potions from Atticus
+	q(63099),	-- Opening 184589, Bag of Potions from Atticus
 	--q(62535),	-- Unknown doing dailies from abom
+	q(60873),	-- Buying Bag of Sin Stones (180442) from Atticus
 
 -- Stitched Abom Set (armor-type agnostic it seems by slot rewarded)
 	q(63392),	-- Gloves (182502) / Stranglers (182493)

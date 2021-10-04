@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(125, {	-- Dalaran: Northrend
+	m(NORTHREND, {
+		m(NORTHREND_DALARAN, {
 			n(-213, {	-- The Underbelly
 				n(QUESTS, {
 					q(13571, {	-- Fletcher's Lost and Found

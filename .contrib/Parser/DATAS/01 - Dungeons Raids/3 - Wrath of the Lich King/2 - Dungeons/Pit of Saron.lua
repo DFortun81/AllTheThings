@@ -5,7 +5,7 @@
 _.Instances = { tier(WOTLK_TIER, {
 	inst(278, {	-- Pit of Saron
 		["mapID"] = 184,
-		["coord"] = { 52.3, 89.3, 118 },
+		["coord"] = { 52.3, 89.3, ICECROWN },
 		["maps"] = { 823 },
 		["lvl"] = 78,
 		["g"] = {

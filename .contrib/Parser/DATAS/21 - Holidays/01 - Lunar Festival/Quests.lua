@@ -113,7 +113,7 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 					SILVERMOON_CITY,
 					THE_EXODAR,
 					SHATTRATH_CITY,
-					125,	-- Dalaran: Northrend
+					NORTHREND_DALARAN,
 					VALE_OF_ETERNAL_BLOSSOMS,
 				},
 				["g"] = {
@@ -185,7 +185,7 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 					SILVERMOON_CITY,
 					THE_EXODAR,
 					SHATTRATH_CITY,
-					125,	-- Dalaran: Northrend
+					NORTHREND_DALARAN,
 					VALE_OF_ETERNAL_BLOSSOMS,
 				},
 			}),
@@ -719,8 +719,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13033, {	-- Arp the Elder
 				["provider"] = { "n", 30364 },	-- Elder Arp
 				["isYearly"] = true,
-				["coord"] = { 57.3, 43.7, 114 },
-				["maps"] = { 114 },	-- Borean Tundra
+				["coord"] = { 57.3, 43.7, BOREAN_TUNDRA },
+				["maps"] = { BOREAN_TUNDRA },
 				["g"] = {
 					crit(5, {	-- Elder Arp in D.E.H.T.A
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -730,8 +730,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13013, {	-- Beldak the Elder
 				["provider"] = { "n", 30357 },	-- Elder Beldak
 				["isYearly"] = true,
-				["coord"] = { 60.5, 27.7, 116 },
-				["maps"] = { 116 },	-- Grizzly Hills
+				["coord"] = { 60.5, 27.7, GRIZZLY_HILLS },
+				["maps"] = { GRIZZLY_HILLS },
 				["g"] = {
 					crit(2, {	-- Elder Beldak
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -741,8 +741,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13026, {	-- Bluewolf the Elder
 				["provider"] = { "n", 30368 },	-- Elder Bluewolf
 				["isYearly"] = true,
-				["coord"] = { 49.0, 14.0, 123 },
-				["maps"] = { 123 },	-- Wintergrasp
+				["coord"] = { 49.0, 14.0, WINTERGRASP },
+				["maps"] = { WINTERGRASP },
 				["g"] = {
 					crit(10, {	-- Elder Bluewolf in Wintergrasp
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -752,8 +752,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13015, {	-- Fargal the Elder
 				["provider"] = { "n", 30359 },	-- Elder Fargal
 				["isYearly"] = true,
-				["coord"] = { 28.9, 73.7, 120 },
-				["maps"] = { 120 },	-- The Storm Peaks
+				["coord"] = { 28.9, 73.7, THE_STORM_PEAKS },
+				["maps"] = { THE_STORM_PEAKS },
 				["g"] = {
 					crit(4, {	-- Elder Fargal in Frosthold
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -763,8 +763,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13028, {	-- Graymane the Elder
 				["provider"] = { "n", 30370 },	-- Elder Graymane
 				["isYearly"] = true,
-				["coord"] = { 41.1, 84.7, 120 },
-				["maps"] = { 120 },	-- The Storm Peaks
+				["coord"] = { 41.1, 84.7, THE_STORM_PEAKS },
+				["maps"] = { THE_STORM_PEAKS },
 				["g"] = {
 					crit(13, {	-- Elder Graymane in K3
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -774,8 +774,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13025, {	-- Lunaro the Elder
 				["provider"] = { "n", 30367 },	-- Elder Lunaro
 				["isYearly"] = true,
-				["coord"] = { 80.4, 37.1, 116 },
-				["maps"] = { 116 },	-- Grizzly Hills
+				["coord"] = { 80.4, 37.1, GRIZZLY_HILLS },
+				["maps"] = { GRIZZLY_HILLS },
 				["g"] = {
 					crit(9, {	-- Elder Lunaro in Ruins of Tethys
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -785,8 +785,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13014, {	-- Morthie the Elder
 				["provider"] = { "n", 30358 },	-- Elder Morthie
 				["isYearly"] = true,
-				["coord"] = { 29.7, 55.9, 115 },
-				["maps"] = { 115 },	-- Dragonblight
+				["coord"] = { 29.7, 55.9, DRAGONBLIGHT },
+				["maps"] = { DRAGONBLIGHT },
 				["g"] = {
 					crit(3, {	-- Elder Morthie in Star's Rest
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -796,8 +796,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13032, {	-- Muraco the Elder
 				["provider"] = { "n", 30374 },	-- Elder Muraco
 				["isYearly"] = true,
-				["coord"] = { 64.6, 51.3, 120 },
-				["maps"] = { 120 },	-- The Storm Peaks
+				["coord"] = { 64.6, 51.3, THE_STORM_PEAKS },
+				["maps"] = { THE_STORM_PEAKS },
 				["g"] = {
 					crit(18, {	-- Elder Muraco in Camp Tunka'lo
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -807,8 +807,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13016, {	-- Northal the Elder
 				["provider"] = { "n", 30360 },	-- Elder Northal
 				["isYearly"] = true,
-				["coord"] = { 33.7, 34.3, 114 },
-				["maps"] = { 114 },	-- Borean Tundra
+				["coord"] = { 33.7, 34.3, BOREAN_TUNDRA },
+				["maps"] = { BOREAN_TUNDRA },
 				["g"] = {
 					crit(6, {	-- Elder Northal in Transitus Shield
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -818,8 +818,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13029, {	-- Pamuya the Elder
 				["provider"] = { "n", 30371 },	-- Elder Pamuya
 				["isYearly"] = true,
-				["coord"] = { 42.9, 49.5, 114 },
-				["maps"] = { 114 },	-- Borean Tundra
+				["coord"] = { 42.9, 49.5, BOREAN_TUNDRA },
+				["maps"] = { BOREAN_TUNDRA },
 				["g"] = {
 					crit(15, {	-- Elder Pamuya in Warsong Hold
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -829,8 +829,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13018, {	-- Sandrene the Elder
 				["provider"] = { "n", 30362 },	-- Elder Sandrene
 				["isYearly"] = true,
-				["coord"] = { 49.7, 63.5, 119 },
-				["maps"] = { 119 },	-- Sholazar Basin
+				["coord"] = { 49.7, 63.5, SHOLAZAR_BASIN },
+				["maps"] = { SHOLAZAR_BASIN },
 				["g"] = {
 					crit(7, {	-- Elder Sandrene in Lakeside Landing
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -840,8 +840,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13012, {	-- Sardis the Elder
 				["provider"] = { "n", 30348 },	-- Elder Sardis
 				["isYearly"] = true,
-				["coord"] = { 59.0, 65.5, 114 },
-				["maps"] = { 114 },	-- Borean Tundra
+				["coord"] = { 59.0, 65.5, BOREAN_TUNDRA },
+				["maps"] = { BOREAN_TUNDRA },
 				["g"] = {
 					crit(1, {	-- Elder Sardis in Valiance Keep
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -851,8 +851,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13031, {	-- Skywarden the Elder
 				["provider"] = { "n", 30373 },	-- Elder Skywarden
 				["isYearly"] = true,
-				["coord"] = { 35.1, 48.3, 115 },
-				["maps"] = { 115 },	-- Dragonblight
+				["coord"] = { 35.1, 48.3, DRAGONBLIGHT },
+				["maps"] = { DRAGONBLIGHT },
 				["g"] = {
 					crit(17, {	-- Elder Skywarden in Agmar's Hammer
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -862,8 +862,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13020, {	-- Stonebeard the Elder
 				["provider"] = { "n", 30375 },	-- Elder Stonebeard
 				["isYearly"] = true,
-				["coord"] = { 31.2, 37.6, 120 },
-				["maps"] = { 120 },	-- The Storm Peaks
+				["coord"] = { 31.2, 37.6, THE_STORM_PEAKS },
+				["maps"] = { THE_STORM_PEAKS },
 				["g"] = {
 					crit(14, {	-- Elder Stonebeard in Bouldercrag's Refuge
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -873,8 +873,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13027, {	-- Tauros the Elder
 				["provider"] = { "n", 30369 },	-- Elder Tauros
 				["isYearly"] = true,
-				["coord"] = { 58.9, 56.0, 121 },
-				["maps"] = { 121 },	-- Zul'Drak
+				["coord"] = { 58.9, 56.0, ZULDRAK },
+				["maps"] = { ZULDRAK },
 				["g"] = {
 					crit(11, {	-- Elder Tauros in Zim'Torga
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -884,8 +884,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13019, {	-- Thoim the Elder
 				["provider"] = { "n", 30363 },	-- Elder Thoim
 				["isYearly"] = true,
-				["coord"] = { 48.7, 78.1, 115 },
-				["maps"] = { 115 },	-- Dragonblight
+				["coord"] = { 48.7, 78.1, DRAGONBLIGHT },
+				["maps"] = { DRAGONBLIGHT },
 				["g"] = {
 					crit(12, {	-- Elder Thoim in Moa'ki Harbor
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -895,8 +895,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13024, {	-- Wanikaya the Elder
 				["provider"] = { "n", 30365 },	-- Elder Wanikaya
 				["isYearly"] = true,
-				["coord"] = { 63.8, 49.0, 119 },
-				["maps"] = { 119 },	-- Sholazar Basin
+				["coord"] = { 63.8, 49.0, SHOLAZAR_BASIN },
+				["maps"] = { SHOLAZAR_BASIN },
 				["g"] = {
 					crit(8, {	-- Elder Wanikaya in Rainspeaker Rapids
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -906,8 +906,8 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 			q(13030, {	-- Whurain the Elder
 				["provider"] = { "n", 30372 },	-- Elder Whurain
 				["isYearly"] = true,
-				["coord"] = { 64.2, 47.0, 116 },
-				["maps"] = { 116 },	-- Grizzly Hills
+				["coord"] = { 64.2, 47.0, GRIZZLY_HILLS },
+				["maps"] = { GRIZZLY_HILLS },
 				["g"] = {
 					crit(16, {	-- Elder Whurain in Camp Oneqwah
 						["achievementID"] = 1396,	-- Elders of Northrend
@@ -955,9 +955,9 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 				["description"] = "After defeating Skadi, the Elder is underneath the staircase before you enter the Ruined Court.",
 				["provider"] = { "n", 30538 },	-- Elder Chogan'gada
 				["isYearly"] = true,
-				["coord"] = { 57.2, 46.6, 117 },	-- Utgarde Pinnacle entrance
+				["coord"] = { 57.2, 46.6, HOWLING_FJORD },	-- Utgarde Pinnacle entrance
 				["maps"] = {
-					117,	-- Howling Fjord
+					HOWLING_FJORD,
 					136,	-- Utgarde Pinnacle
 				},
 				["g"] = {
@@ -985,9 +985,9 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 				["description"] = "When you enter the Nexus, turn right and loop around the Singing Grove.  The Elder is just before you reach Ormorok's platform.",
 				["provider"] = { "n", 30536 },	-- Elder Igasho
 				["isYearly"] = true,
-				["coord"] = { 27.5, 26.0, 114 },	-- The Nexus entrance
+				["coord"] = { 27.5, 26.0, BOREAN_TUNDRA },	-- The Nexus entrance
 				["maps"] = {
-					114,	-- Borean Tundra
+					BOREAN_TUNDRA,
 					129,	-- The Nexus
 				},
 				["g"] = {
@@ -1000,9 +1000,9 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 				["description"] = "After defeating Keleseth, continue through the mining tunnel.  Before heading up the stairs to the next boss, turn left to find the Elder.",
 				["provider"] = { "n", 30531 },	-- Elder Jarten
 				["isYearly"] = true,
-				["coord"] = { 57.9, 50.0, 117 },	-- Utgarde Keep entrance path
+				["coord"] = { 57.9, 50.0, HOWLING_FJORD },	-- Utgarde Keep entrance path
 				["maps"] = {
-					117,	-- Howling Fjord
+					HOWLING_FJORD,
 					133,	-- Utgarde Keep
 				},
 				["g"] = {
@@ -1015,9 +1015,9 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 				["description"] = "The Elder is just inside the Raptor Pens, near King Dred.",
 				["provider"] = { "n", 30534 },	-- Elder Kilias
 				["isYearly"] = true,
-				["coord"] = { 28.5, 86.9, 121 },	-- Drak'Tharon Keep entrance
+				["coord"] = { 28.5, 86.9, ZULDRAK },	-- Drak'Tharon Keep entrance
 				["maps"] = {
-					121,	-- Zul'Drak
+					ZULDRAK,
 					160,	-- Drak'Tharon Keep
 				},
 				["g"] = {
@@ -1045,9 +1045,9 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 				["description"] = "After defeating Hadronox, jump to the lower level of the dungeon.  The Elder is on the north side of the room where you land.",
 				["provider"] = { "n", 30533 },	-- Elder Nurgen
 				["isYearly"] = true,
-				["coord"] = { 26.0, 50.7, 115 },	-- Azjol-Nerub entrance
+				["coord"] = { 26.0, 50.7, DRAGONBLIGHT },	-- Azjol-Nerub entrance
 				["maps"] = {
-					115,	-- Dragonblight
+					DRAGONBLIGHT,
 					157,	-- Azjol-Nerub
 				},
 				["g"] = {
@@ -1060,9 +1060,9 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 				["description"] = "The Elder is on the platform behind the second boss in the dungeon, Drakkari Colossus.",
 				["provider"] = { "n", 30537 },	-- Elder Ohanzee
 				["isYearly"] = true,
-				["coord"] = { 76.2, 21.1, 121 },	-- Gundrak entrance
+				["coord"] = { 76.2, 21.1, ZULDRAK },	-- Gundrak entrance
 				["maps"] = {
-					121,	-- Zul'Drak
+					ZULDRAK,
 					153,	-- Gundrak
 				},
 				["g"] = {
@@ -1135,9 +1135,9 @@ _.Holidays = bubbleDown({["u"] = LUNAR_FESTIVAL},
 				["description"] = "The Elder is on the western side of the Crystalline Quarry inside Halls of Stone.",
 				["provider"] = { "n", 30535 },	-- Elder Yurauk
 				["isYearly"] = true,
-				["coord"] = { 39.6, 26.9, 120 },	-- Halls of Stone entrance
+				["coord"] = { 39.6, 26.9, THE_STORM_PEAKS },	-- Halls of Stone entrance
 				["maps"] = {
-					120,	-- The Storm Peaks
+					THE_STORM_PEAKS,
 					140,	-- Halls of Stone
 				},
 				["g"] = {

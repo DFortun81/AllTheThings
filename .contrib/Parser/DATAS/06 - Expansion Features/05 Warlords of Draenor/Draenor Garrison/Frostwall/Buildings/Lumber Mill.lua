@@ -40,12 +40,14 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(36449, {	-- Reduction in Force
+									["sourceQuests"] = { 36427 },	-- The Rise and Fall of Barov Industries: Alexi Barov
 									["provider"] = { "n", 85414 },	-- Alexi Barov <Barov Industries>
 									["g"] = {
 										i(116154),	-- Barov Lumberjack Caller
 									},
 								}),
 								q(36142, {	-- Sharper Blades, Bigger Timber
+									["description"] = "Requires Lumber Mill level 2",
 									["provider"] = { "n", 84247 },	-- Lumber Lord Oktron <Work Orders>
 								}),
 								q(36813, {	-- Subversive Infestation

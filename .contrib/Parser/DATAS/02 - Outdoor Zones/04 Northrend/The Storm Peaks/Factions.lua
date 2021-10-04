@@ -4,14 +4,14 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(120, {	-- The Storm Peaks
+	m(NORTHREND, {
+		m(THE_STORM_PEAKS, {
 			n(FACTIONS, {
 				faction(1119, {	-- The Sons of Hodir
 					["crs"] = { 30105 },	-- King Jokkum
 					["g"] = {
 						n(32540, {	-- Lillehoff <The Sons of Hodir Quartermaster>
-							["coord"] = { 66.1, 61.4, 120 },
+							["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
 							["g"] = {
 								i(44193),	-- Broken Stalactite
 								i(41720),	-- Design: Smooth Autumn's Glow
@@ -86,19 +86,19 @@ _.Zones =
 						}),
 						q(13559, {	-- Hodir's Tribute
 							["provider"] = { "n", 32540 },	-- Lillehoff
-							["coord"] = { 66.1, 61.4, 120 },
+							["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
 							["repeatable"] = true,
 						}),
 						q(13011, {	-- Jormuttar is Soo Fat...
 							["minReputation"] = { 1119, FRIENDLY },
-							["coord"] = { 65.3, 60.1, 120 },
+							["coord"] = { 65.3, 60.1, THE_STORM_PEAKS },
 							["provider"] = { "n", 30105 },	-- King Jokkum
 						}),
 						q(13006, {	-- Polishing the Helm
 						--	["minReputation"] = -- Unknown reputation requirement
 							["sourceQuests"] = { 12987 },	-- Mounting Hodir's Helm
 							["isDaily"]	= true,
-							["coord"] = { 64.2, 59.6, 120 },
+							["coord"] = { 64.2, 59.6, THE_STORM_PEAKS },
 							["icon"] = "Interface\\Icons\\INV_Helmet_110",
 						}),
 						q(13420, {	-- Everfrost
@@ -107,7 +107,7 @@ _.Zones =
 							["description"] = "You can obtain these by looting Everfrost Chips in the environment.",
 						}),
 						q(13421, {	-- Remember Everfrost!
-							["coord"] = { 67.0, 60.8, 120 },	-- needs verification, taken from wowhead.  there's some contention as to whether this quest is offered by an NPC or if the "qg" is just the turn-in NPC
+							["coord"] = { 67.0, 60.8, THE_STORM_PEAKS },	-- needs verification, taken from wowhead.  there's some contention as to whether this quest is offered by an NPC or if the "qg" is just the turn-in NPC
 							["provider"] = { "n", 32594 },	-- Calder <Blacksmithing Supplies>
 							["sourceQuests"] = { 13420 },	-- Source Quest: Everfrost
 							["repeatable"]	= true,
@@ -116,33 +116,33 @@ _.Zones =
 						--	["minReputation"] = ,	-- unsure of reputation requirement
 							["sourceQuests"] = { 12976 },	-- A Monument to the Fallen
 							["isDaily"]	= true,
-							["coord"] = { 64.1, 64.7, 120 },
+							["coord"] = { 64.1, 64.7, THE_STORM_PEAKS },
 							["icon"] = "Interface\\Icons\\INV_Misc_Horn_03",
 						}),
 						q(13046, {	-- Feeding Arngrim
 							["minReputation"] = { 1119, REVERED },
 							["isDaily"]	= true,
-							["coord"] = { 67.5, 60.0, 120 },
+							["coord"] = { 67.5, 60.0, THE_STORM_PEAKS },
 							["icon"] = "Interface\\Icons\\Achievement_Dungeon_FrozenThrone",
 						}),
 						q(12981, {	-- Hot and Cold
 						--	["minReputation"] = ,	-- unknown reputation requirement.
 							["sourceQuests"] = { 12967 },	-- Battling the Elements
 							["isDaily"]	= true,
-							["coord"] = { 63.2, 63.0, 120 },
+							["coord"] = { 63.2, 63.0, THE_STORM_PEAKS },
 							["icon"] = "Interface\\Icons\\INV_BLACKSMITH_ANVIL",
 						}),
 						q(12994, {	-- Spy Hunter
 							["minReputation"] = { 1119, HONORED },
 							["isDaily"]	= true,
-							["coord"] = { 63.5, 59.7, 120 },
+							["coord"] = { 63.5, 59.7, THE_STORM_PEAKS },
 							["provider"] = { "n", 30294 },		-- Quest Giver: Frostworg Denmother
 						}),
 						q(13003, {	-- Thrusting Hodir's Spear
 							["minReputation"] = { 1119, HONORED },
 							["sourceQuests"] = { 13001 },	-- Raising Hodir's Spear
 							["isDaily"]	= true,
-							["coord"] = { 65.0, 60.9, 120 },
+							["coord"] = { 65.0, 60.9, THE_STORM_PEAKS },
 							["icon"] = "Interface\\Icons\\INV_Spear_04",
 						}),
 					},

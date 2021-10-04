@@ -6,7 +6,7 @@ _.Instances = { tier(WOTLK_TIER, {
 	inst(271, {	-- Ahn'kahet: The Old Kingdom
 		["lvl"] = 61,
 		["mapID"] = 132,
-		["coord"] = { 28.3, 51.6, 115 },
+		["coord"] = { 28.3, 51.6, DRAGONBLIGHT },
 		["groups"] = {
 			n(QUESTS, {
 				q(13204, {	-- Funky Fungi

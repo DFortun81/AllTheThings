@@ -7,7 +7,7 @@ _.Holidays =
 	holiday(1572472, {	-- March of the Tadpoles
 		["u"] = MICRO_HOLIDAY,
 		["maps"] = {
-			114,	-- Borean Tundra
+			BOREAN_TUNDRA,
 		},
 	}),
 };

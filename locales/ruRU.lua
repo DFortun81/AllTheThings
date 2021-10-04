@@ -24,7 +24,7 @@ local L = app.L;
 	--TODO: L.RACE_LOCKED = "Race Locked";
 	L.PLEASE_REPORT_MESSAGE = ": Пожалуйста, сообщите об этом на Discord-сервере ATT в канале #errors! Спасибо!";
 	L.NOT_AVAILABLE_IN_PL = "Недоступно в Персональной добыче.";
-	L.MARKS_OF_HONOR_DESC = "Почётные знаки должны быть рассмотрены во всплывающем окне, чтобы видеть всё их 'Содержимое'\n(Введите '/att' в чат и затем Shift+Клик для ссылки на предмет)\n\n|cFFfe040fПосле покупки и использования Набора может потребоваться полностью выйти из игры и вручную обновить коллекцию (в таком порядке), чтобы корректно зарегистрировать все предметы.|r";
+	L.MARKS_OF_HONOR_DESC = "Почётные знаки должны быть рассмотрены во всплывающем окне, чтобы видеть всё их 'Содержимое'.\n(Введите '/att' в чат и затем Shift+Клик для ссылки на предмет)\n\n|cFFfe040fПосле покупки и использования Набора может потребоваться полностью выйти из игры и вручную обновить коллекцию (в таком порядке),\nчтобы корректно зарегистрировать все предметы.|r";
 	L.ITEM_GIVES_REP = "Улучшает Репутацию с '";
 	L.COST = "Стоимость";
 	L.COST_DESC = "Содержит визуальную справку о предметах, необходимых для покупки или получения данной Штучки";
@@ -561,7 +561,7 @@ for key,value in pairs({
 	["Обычный"] = "О";
 	["Героический"] = "Г";
 	["Эпохальный"] = "Э";
-	["Ny'alotha, the Waking City"] = "Ни'алота";
+	["Тайный рынок Тазавеш"] = "Тазавеш";							-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 	["10 игроков"] = "10";
 	["25 игроков"] = "25";
 	["героич."] = "гер.";
@@ -803,12 +803,13 @@ for key,value in pairs({
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Лучшие друзья навсегда",	-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			[-931] = "Малый дух",									-- Spirit
-			[-932] = "Могучий дух",									-- Greater Spirit
-			[-933] = "Божественный дух",							-- Divine Spirit
 			[-935] = "Улучшения для обители",						-- Sanctum Upgrades (Night Fae)
 			[-936] = "Формы души",									-- Soulshape Forms (Night Fae)
 			[-937] = "Транспортная сеть",							-- Transport Network (Night Fae)
+			[-1002] = "Дух служения",								-- Dutiful Spirit
+			[-1003] = "Воинственный дух",							-- Martial Spirit
+			[-1004] = "Дух гордыни",								-- Prideful Spirit
+			[-1005] = "Неукрощенный дух",							-- Untamed Spirit
 
 		-- SL Bastion/Kyrian
 			[-940] = "Совет перерожденных",							-- Ascended Counil
@@ -2570,16 +2571,16 @@ for key,value in pairs({
 	[327592] = "Зачарованный замок",	-- Enchanted Lock
 	[327596] = "Расколотый глубинный кристалл",	-- Broken Abyssal Focus
 	[327669] = "Заключенный хмелементаль",	-- Contained Alemental
-	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
-	[328413] = "Тотем хозенов",	-- Hozen Totem	--TODO: This was manually translated
+	[328343] = "Шестеренка Худовара",	-- Direbrew Cog
+	[328413] = "Тотем хозенов",	-- Hozen Totem
 	[329641] = "Разыскиваются: Крысанчик и Турботрогг",	-- Wanted: Junkbrat and Roadtrogg
 	[329783] = "Светящийся чародейский сундук",	-- Glowing Arcane Trunk
 	[329805] = "Странный кристалл",	-- Strange Crystal
 	[329918] = "Сокровища свинобразов",	-- Quilboar Treasures
 	[329919] = "Украденные припасы",	-- Stolen Supplies
-	--TODO: [330168] = "Contained Alemental",	-- Contained Alemental
-	--TODO: [330169] = "Direbrew Cog",	-- Direbrew Cog
-	--TODO: [330170] = "Hozen Totem",	-- Hozen Totem
+	[330168] = "Заключенный хмелементаль",	-- Contained Alemental
+	[330169] = "Шестеренка Худовара",	-- Direbrew Cog
+	[330170] = "Тотем хозенов",	-- Hozen Totem
 	[330183] = "Сейф братства Стальных Волн",	-- Irontide Lockbox
 	[330627] = "Знак \"Опасность!\"",	-- Danger Sign
 	[332220] = "Светящийся чародейский сундук",	-- Glowing Arcane Trunk

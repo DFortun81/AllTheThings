@@ -1082,6 +1082,9 @@ _.Zones =
 					["provider"] = { "n", 84784 },	-- Wodin the Troll-Servant
 					["coord"] = { 56.8, 13.0, DRAENOR_NAGRAND },
 					["sourceQuest"] = 36221,	-- Entry Fee
+					["g"] = {
+						title(261),	-- Blood Champion <Name>
+					},
 				}),
 				q(35396, {	-- The Dark Heart of Oshu'gun
 					["provider"] = { "n", 82181 },	-- Vindicator Nobundo

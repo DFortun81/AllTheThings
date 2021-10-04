@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(125, {	-- Dalaran: Northrend
+	m(NORTHREND, {
+		m(NORTHREND_DALARAN, {
 			n(-213, {	-- The Underbelly
 				prof(FISHING, {
 					i(43698),	-- Giant Sewer Rat

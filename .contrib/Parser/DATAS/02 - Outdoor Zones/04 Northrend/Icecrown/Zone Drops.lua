@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(118, {	-- Icecrown
+	m(NORTHREND, {
+		m(ICECROWN, {
 			n(ZONE_DROPS, {
 				i(50379),	-- Battered Hilt (Alliance) - These are dropping zone-wide during Shadowlands Prepatch Event; remains to be seen whether they will permanently drop from here.
 				i(50380),	-- Battered Hilt (Horde)

@@ -950,6 +950,7 @@ _.HiddenQuestTriggers = {
 
 --	Unknown
 	q(60773),	-- Renown 30/Channeling anima
+	--q(60873),	-- Flying around in necrolord base
 
 --	Unity Transmog
 	q(63407),	-- Leather Chest

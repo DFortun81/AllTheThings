@@ -225,10 +225,10 @@ _.ExpansionFeatures =
 							["maps"] = { DEADWIND_PASS },
 						}),
 						q(46812, {	-- Draconic Secrets
-							["coord"] = { 44.7, 4.4, 118 },	-- Icecrown
+							["coord"] = { 44.7, 4.4, ICECROWN },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 46720, -- Frozen Memories
-							["maps"] = { 118 },	-- Icecrown
+							["maps"] = { ICECROWN },
 						}),
 						q(44282, {	-- Eye of Azshara: The Frozen Soul
 							["provider"] = { "n", 93555 }, -- Amal'thazad

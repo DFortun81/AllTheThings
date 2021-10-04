@@ -113,7 +113,7 @@ _.Holidays =
 					},
 				}),
 				n(150946, {	-- Shuurt the Clothripper
-					["coord"] = { 49.8, 51.5, 116 },
+					["coord"] = { 49.8, 51.5, GRIZZLY_HILLS },
 					["groups"] = {
 						i(167212),	-- Shuurt's Precious
 					},

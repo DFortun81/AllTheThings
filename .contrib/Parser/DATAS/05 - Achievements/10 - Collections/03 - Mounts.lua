@@ -42,12 +42,14 @@ _.Achievements =
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(87776),	-- Heavenly Azure Cloud Serpent
+					title(331),	-- <Name>, Lord of the Reins
 				},
 			}),
 			ach(10355, {	-- Lord of the Reins (H, 300 mounts)
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(87776),	-- Heavenly Azure Cloud Serpent
+					title(331),	-- <Name>, Lord of the Reins
 				},
 			}),
 			ach(9598,  {	-- Mountacular (A, 250 mounts)

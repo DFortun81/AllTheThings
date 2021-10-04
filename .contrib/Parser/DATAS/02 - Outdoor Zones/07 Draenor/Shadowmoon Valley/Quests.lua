@@ -1112,3 +1112,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(36493),	-- Tracking Quest: Can Open Othaar's Door
+};

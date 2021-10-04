@@ -6,7 +6,7 @@ _.Instances = { tier(WOTLK_TIER, {
 	inst(757, {	-- Trial of the Crusader
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		["coord"] = { 75.0, 21.8, 118 },	-- Trial of the Crusader, Icecrown (Argent Tournament Grounds)
+		["coord"] = { 75.0, 21.8, ICECROWN },	-- Trial of the Crusader (Argent Tournament Grounds)
 		["mapID"] = 172,
 		["maps"] = { 173 },
 		["lvl"] = 80,

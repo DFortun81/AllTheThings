@@ -20,7 +20,7 @@ _.ExpansionFeatures =
 									LEGION_DALARAN,
 									LEGION_THE_UNDERBELLY,
 									629,		-- Aegwynn's Gallery (Dalaran)
-									115,		-- New Hearthglen in Northrend
+									DRAGONBLIGHT,	-- New Hearthglen
 									SCARLET_MONASTERY,	-- Scarlet Halls
 									SCHOLOMANCE,
 									477,		-- Scholomance
@@ -55,8 +55,8 @@ _.ExpansionFeatures =
 										["description"] = "Book is on top of a bookshelf on the left side of the cloister, on the ground floor.\n\nWorld Spawn - might be on cooldown (60-minute respawn).",
 										["icon"] = "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",
 										["coords"] = {
-											{ 72.2, 73.4, 115 },	-- Entrance to cloister
-											{ 73.2, 72.9, 115 },	-- Actual book
+											{ 72.2, 73.4, DRAGONBLIGHT },	-- Entrance to cloister
+											{ 73.2, 72.9, DRAGONBLIGHT },	-- Actual book
 										},
 									}),
 									q(44344, {	-- Volume IV
@@ -136,7 +136,7 @@ _.ExpansionFeatures =
 						q(41627, {	-- A Forgotten Enemy
 							["sourceQuests"] = { 41626 },	-- A New Threat
 							["classes"] = { PRIEST },
-							["coord"] = { 56.7, 69.1, 115 },
+							["coord"] = { 56.7, 69.1, DRAGONBLIGHT },
 							["model"] = 192568,
 							["provider"] = { "o", 248398 },	-- Ethereal Communication Device
 						}),
@@ -211,7 +211,7 @@ _.ExpansionFeatures =
 						q(43388, {	-- Apostate Liberation
 							["sourceQuests"] = { 43387 },	-- Scarlet Redemption
 							["classes"] = { PRIEST },
-							["coord"] = { 71.4, 71.8, 115 },
+							["coord"] = { 71.4, 71.8, DRAGONBLIGHT },
 							["provider"] = { "n", 110683 },	-- Mariella the Heretic
 						}),
 						q(43383, {	-- Awakening the Light
@@ -392,6 +392,7 @@ _.ExpansionFeatures =
 							["classes"] = { PRIEST },
 							["g"] = {
 								i(139759),	-- Robes of the High Priest
+								title(339),	-- High Priest <Name>
 							},
 						}),
 						q(43884, {	-- Hitting the Books
@@ -552,7 +553,7 @@ _.ExpansionFeatures =
 						q(43387, {	-- Scarlet Redemption
 							["sourceQuests"] = { 43386 },	-- Onslaught Envoy
 							["classes"] = { PRIEST },
-							["coord"] = { 71.4, 71.8, 115 },
+							["coord"] = { 71.4, 71.8, DRAGONBLIGHT },
 							["provider"] = { "n", 110683 },	-- Mariella the Heretic
 						}),
 						q(43391, {	-- Secrets of the Void

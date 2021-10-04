@@ -1745,6 +1745,8 @@ local function GetGroupItemIDWithModID(t, rawItemID, rawModID, rawBonusID)
 		return t.itemID + ((t.modID or 0) / 100) + ((t.bonusID or 0) / 1000000);
 	elseif tonumber(rawItemID) then
 		local i, m, b = tonumber(rawItemID) or 0, tonumber(rawModID) or 0, tonumber(rawBonusID) or 0;
+		-- Ignore bonusID 3524 as added to all ATT item links with a ModID
+		if b == 3524 then b = 0; end
 		-- print("modItemID-raw",i,m,b,i + (m / 100) + (b / 1000000))
 		return i + (m / 100) + (b / 1000000);
 	end
@@ -3205,8 +3207,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	-- Call to the method to search the database.
 	local rawlink;
 	-- Store the raw search link if no paramB
-	if not paramB then rawlink = paramA; end
+	if paramB then paramB = tonumber(paramB);
+	else rawlink = paramA; end
 	local group, a, b = method(paramA, paramB, ...);
+	-- print("Raw Search",search,a,b,group and #group, ...);
 	if not group then group = {}; end
 	if a then paramA = a; end
 	if b then paramB = b; end
@@ -3368,9 +3372,15 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Merge the source group for all matching Sources of the search results
 			local sourceGroup = {};
 			for i,j in ipairs(group.g or group) do
-				if GroupMatchesParams(j, paramA, paramB) then
+				-- print("sourceGroup?",j.key,j.key and j[j.key],j.modItemID)
+				if sourceID and GroupMatchesParams(j, "s", sourceID) then
+					-- print("sourceID match",sourceID)
 					MergeProperties(sourceGroup, j);
+				elseif GroupMatchesParams(j, paramA, paramB) then
+					-- print("exact match",paramA,paramB)
+					MergeProperties(sourceGroup, j, true);
 				elseif GroupMatchesParams(j, paramA, paramB, true) then
+					-- print("match",paramA,paramB)
 					MergeProperties(sourceGroup, j, true);
 				end
 			end
@@ -4680,6 +4690,12 @@ fieldConverters = {
 			cacheQuestID(group, questID);
 		end
 	end,
+	["titleIDs"] = function(group, value)
+		_cache = rawget(fieldConverters, "titleID");
+		for i,titleID in ipairs(value) do
+			_cache(group, titleID);
+		end
+	end,
 	["providers"] = function(group, value)
 		for _,v in pairs(value) do
 			if v[2] > 0 then
@@ -5148,10 +5164,11 @@ local function PopulateQuestObject(questObject)
 	-- cannot do anything on a missing object or questID
 	if not questObject or not questObject.questID then return; end
 
+	local questID = questObject.questID;
 	-- Check for a Task-specific icon
-	local info = C_QuestLog.GetQuestTagInfo(questObject.questID);
+	local info = C_QuestLog.GetQuestTagInfo(questID);
 	-- if info then
-		-- print("WQ info:",questObject.questID);
+		-- print("WQ info:",questID);
 		-- for k,v in pairs(info) do
 			-- print(k,v);
 		-- end
@@ -5187,11 +5204,11 @@ local function PopulateQuestObject(questObject)
 	end
 
 	-- Update Quest info from cache
-	_cache = SearchForField("questID",questObject.questID);
+	_cache = SearchForField("questID",questID);
 	if _cache then
 		for _,data in ipairs(_cache) do
 			-- only merge into the quest object properties from an object in cache with this questID
-			if data.questID == questObject.questID then
+			if data.questID == questID then
 				MergeProperties(questObject, data, true);
 				-- merge in sourced things under this quest object if it is not a raw quest
 				if data.key ~= "questID" then
@@ -5218,20 +5235,17 @@ local function PopulateQuestObject(questObject)
 	end
 
 	-- Get time remaining info (only works for World Quests)
-	local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questObject.questID);
+	local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questID);
 	if timeRemaining and timeRemaining > 0 then
-		questObject.timeRemaining = timeRemaining;
 		local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeRemaining * 60));
 		if timeRemaining < 30 then
 			description = "|cFFFF0000" .. description .. "|r";
-		elseif timeRemaining < 60 then
+		elseif timeRemaining < 120 then
 			description = "|cFFFFFF00" .. description .. "|r";
-		end
-		if questObject.description then
-			questObject.description = questObject.description .. "\n\n" .. description;
 		else
-			questObject.description = description;
+			description = "|cFF008000" .. description .. "|r";
 		end
+		questObject.timeRemaining = description;
 	end
 
 	-- If this is not a metatable yet, create a raw repeatable value for use prior to that
@@ -5512,9 +5526,20 @@ local function RefreshCollections()
 		coroutine.yield();
 
 		-- Harvest Title Collections
-		local collectedTitles = app.CurrentCharacter.Titles;
+		-- TODO: once profiles and re-calculating account-wide data exist, can redesign this
+		local acctTitles, charTitles, charGuid = ATTAccountWideData.Titles, app.CurrentCharacter.Titles, app.GUID;
 		for i=1,GetNumTitles(),1 do
-			if IsTitleKnown(i) then rawset(collectedTitles, i, 1); end
+			if IsTitleKnown(i) then
+				rawset(acctTitles, i, charGuid);
+				rawset(charTitles, i, 1);
+			-- make sure to remove titles which this character does NOT know currently
+			else
+				charTitles[i] = nil;
+				-- this is the character tied to an account-learned title or it was marked in the old way, then clear it
+				if acctTitles[i] == charGuid or acctTitles[i] == 1 then
+					acctTitles[i] = nil;
+				end
+			end
 		end
 		coroutine.yield();
 
@@ -6246,6 +6271,12 @@ end
 end)();
 
 -- Lib Helpers
+(function()
+-- Represents non-nil default values which are valid for all Objects
+local ObjectDefaults = {
+	["progress"] = 0,
+	["total"] = 0,
+};
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 app.BaseObjectFields = function(fields, type)
 	return {
@@ -6254,9 +6285,10 @@ app.BaseObjectFields = function(fields, type)
 		-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
 		if not _cache then
 			-- special re-direct keys possible for 'any' Type of object
-			if key == "parent" then return t.sourceParent;
-			elseif key == "__type" then return type;
-			end
+			if key == "parent" then return t.sourceParent; end
+			if key == "__type" then return type; end
+			-- use default key value if existing
+			return ObjectDefaults[key];
 		end
 		return _cache and _cache(t);
 	end
@@ -6381,6 +6413,7 @@ app.CheckCollectible = function(t, ref, cache)
 	end
 	return false;
 end
+end)();
 
 -- Achievement Lib
 (function()
@@ -8526,8 +8559,8 @@ local function RawSetItemInfoFromLink(t, link)
 	local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(link);
 	if link then
 		--[[ -- Debug Prints
-		-- local _t, id = GetCached(t);
-		-- print("rawset item",id)
+		local _t, id = cache.GetCached(t);
+		print("rawset item info",id,link,name,quality,b)
 		--]]
 		t = cache.GetCached(t);
 		rawset(t, "retries", nil);
@@ -8561,11 +8594,12 @@ local function default_link(t)
 			modID = nil;
 		end
 		if bonusID and modID then
-			itemLink = string.format("item:%d:::::::::::%d:1:%d", itemLink, modID, bonusID);
+			itemLink = string.format("item:%d:::::::::::%d:1:%d:", itemLink, modID, bonusID);
 		elseif bonusID then
-			itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
+			itemLink = string.format("item:%d::::::::::::1:%d:", itemLink, bonusID);
 		elseif modID then
-			itemLink = string.format("item:%d:::::::::::%d::", itemLink, modID);
+			-- bonusID 3524 seems to imply "use ModID to determine SourceID" since without it, everything with ModID resolves as the base SourceID from links
+			itemLink = string.format("item:%d:::::::::::%d:1:3524:", itemLink, modID);
 		else
 			itemLink = string.format("item:%d:::::::::::::", itemLink);
 		end
@@ -9430,7 +9464,11 @@ app.ImportRawLink = function(group, rawlink)
 			group.modID = modID and tonumber(modID);
 			-- only set the bonusID if there is actually bonusIDs indicated
 			if (tonumber(bonusCount) or 0) > 0 then
-				group.bonusID = bonusID1 and tonumber(bonusID1);
+				-- Don't use bonusID 3524 as an actual bonusID
+				local b = bonusID1 and tonumber(bonusID1);
+				if b ~= 3524 then
+					group.bonusID = b;
+				end
 			end
 			group.modItemID = nil;
 			-- does this link also have a sourceID?
@@ -9873,7 +9911,7 @@ local npcFields = {
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
 	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
@@ -9944,7 +9982,7 @@ local headerFields = {
 		return GetAchievementLink(t.achievementID);
 	end,
 	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 };
@@ -10351,7 +10389,7 @@ local questFields = {
 		end
 	end,
 	["link"] = function(t)
-		return "quest:" .. t.questID;
+		return GetQuestLink(t.questID) or "quest:" .. t.questID;
 	end,
 	["repeatable"] = function(t)
 		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
@@ -11273,6 +11311,21 @@ end)();
 
 -- Title Lib
 (function()
+local function StylizePlayerTitle(title, style, me)
+	if style == 0 then
+		-- Prefix
+		return title .. me;
+	elseif style == 1 then
+		-- Player Name First
+		return me .. title;
+	elseif style == 2 then
+		-- Player Name First (with space)
+		return me .. " " .. title;
+	elseif style == 3 then
+		-- Comma Separated
+		return me .. ", " .. title;
+	end
+end
 local fields = {
 	["key"] = function(t)
 		return "titleID";
@@ -11281,7 +11334,7 @@ local fields = {
 		return 110;
 	end,
 	["icon"] = function(t)
-		return "Interface\\Icons\\Achievement_Guild_DoctorIsIn";
+		return app.asset("Category_Titles");
 	end,
 	["description"] = function(t)
 		return L["TITLES_DESC"];
@@ -11294,23 +11347,27 @@ local fields = {
 			return name;
 		end
 	end,
+	["title"] = function(t)
+		if t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
+			if rawget(t, "_title") then return rawget(t, "_title") end
+			local ids = t.titleIDs;
+			local m, f = ids[1], ids[2];
+			local acctTitles = ATTAccountWideData.Titles;
+			local player = "("..CALENDAR_PLAYER_NAME..")";
+			local mt = StylizePlayerTitle(GetTitleName(m),t.style,player);
+			local ft = StylizePlayerTitle(GetTitleName(f),t.style,player);
+			local complete, missing = GetProgressColor(1), GetProgressColor(0);
+			local acctTitleInfo = "|c"..
+				(acctTitles[m] and complete or missing)..mt.."|r // |c"..
+				(acctTitles[f] and complete or missing)..ft.."|r";
+			rawset(t, "_title", acctTitleInfo);
+			return rawget(t, "_title");
+		end
+	end,
 	["playerTitle"] = function(t)
 		local name = t.name;
 		if name then
-			local style = t.style;
-			if style == 0 then
-				-- Prefix
-				return name .. UnitName("player");
-			elseif style == 1 then
-				-- Player Name First
-				return UnitName("player") .. name;
-			elseif style == 2 then
-				-- Player Name First (with space)
-				return UnitName("player") .. " " .. name;
-			elseif style == 3 then
-				-- Comma Separated
-				return UnitName("player") .. ", " .. name;
-			end
+			return StylizePlayerTitle(name, t.style, UnitName("player"));
 		end
 	end,
 	["style"] = function(t)
@@ -11327,7 +11384,7 @@ local fields = {
 				end
 
 				-- Player Name First
-					rawset(t, "style", 1);
+				rawset(t, "style", 1);
 				return 1;
 			else
 				local last = string.sub(name, -1);
@@ -11373,29 +11430,62 @@ local fields = {
 		if app.AccountWideTitles and ATTAccountWideData.Titles[t.titleID] then return 2; end
 	end,
 	["saved"] = function(t)
-		local id, charTitles = t.titleID, app.CurrentCharacter.Titles;
+		local id, charTitles, acctTitles = t.titleID, app.CurrentCharacter.Titles, ATTAccountWideData.Titles;
 		if t.titleIDs then
 			local ids = t.titleIDs;
 			local m, f = ids[1], ids[2];
-			-- combo-id is already saved
-			if ATTAccountWideData.Titles[id] then
-				if charTitles[m] or charTitles[f] then return true; end
+			-- combo-id is already saved and m/f cached for the current character
+			if acctTitles[id] and (charTitles[m] or charTitles[f]) then
+				return true;
 			-- otherwise verify both titles for players with one already saved
-			elseif IsTitleKnown(m) or IsTitleKnown(f) then
+			elseif IsTitleKnown(m) then
 				charTitles[m] = 1;
-				charTitles[f] = 1;
-				ATTAccountWideData.Titles[m] = 1;
-				ATTAccountWideData.Titles[f] = 1;
+				acctTitles[m] = app.GUID;
 				-- the shared arbitrary ID can be used for account-wide checks
-				ATTAccountWideData.Titles[id] = 1;
+				acctTitles[id] = 1;
+				return true;
+			elseif IsTitleKnown(f) then
+				charTitles[f] = 1;
+				acctTitles[f] = app.GUID;
+				-- the shared arbitrary ID can be used for account-wide checks
+				acctTitles[id] = 1;
+				return true;
 			end
 		else
 			if charTitles[id] then return true; end
 			if IsTitleKnown(id) then
 				charTitles[id] = 1;
-				ATTAccountWideData.Titles[id] = 1;
+				acctTitles[id] = app.GUID;
 				return true;
 			end
+		end
+	end,
+	-- use cost to track opposite gendered title in account/debug
+	["customTotal"] = function(t)
+		if app.CollectibleTitles and t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
+			-- print("title.total",t.titleID)
+			return 1;
+		end
+	end,
+	["customProgress"] = function(t)
+		if app.CollectibleTitles and t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
+			-- print("title.progress",t.titleID)
+			local acctTitles, charTitles = ATTAccountWideData.Titles, app.CurrentCharacter.Titles;
+			local ids = t.titleIDs;
+			local m, f = ids[1], ids[2];
+			local am, af = acctTitles[m], acctTitles[f];
+			-- both titles account-collected
+			if am and af then
+				return 1;
+			-- neither title collected
+			elseif not am and not af then
+				return 0;
+			-- only the available title is collected
+			elseif charTitles[m] or charTitles[f] then
+				return 0;
+			end
+			-- otherwise, unavailable title is collected
+			return 1;
 		end
 	end,
 };
@@ -12111,9 +12201,9 @@ UpdateGroup = function(parent, group, window)
 	if valid then
 		-- if app.DEBUG_PRINT then print("UpdateGroup.GroupRequirementsFilter",group.key,group.key and group[group.key],group.__type) end
 		-- if app.DEBUG_PRINT then print("UpdateGroup.GroupFilter",group.key,group.key and group[group.key],group.__type) end
-		-- Set total/progress for this object using it's cost information if any
-		group.total = group.costTotal or 0;
-		group.progress = group.total > 0 and group.costProgress or 0
+		-- Set total/progress for this object using its cost information if any
+		group.total = (group.costTotal or 0) + (group.customTotal or 0);
+		group.progress = group.total > 0 and ((group.costProgress or 0) + (group.customProgress or 0)) or 0;
 
 		-- if app.DEBUG_PRINT then print("UpdateGroup.Initial",group.key,group.key and group[group.key],group.progress,group.total,group.__type) end
 
@@ -12163,15 +12253,13 @@ UpdateGroups = function(parent, g, window)
 				if not group:OnUpdate() then
 					UpdateGroup(parent, group, window);
 				elseif group.visible then
-					group.total = 0;
-					group.progress = 0;
+					group.total = nil;
+					group.progress = nil;
 					UpdateGroups(group, group.g, window);
 				end
 				-- some objects are able to populate themselves via OnUpdate and track if needing to do another update via 'doUpdate'
 				if window and group.doUpdate then window.doUpdate = true; end
 			else
-				group.total = 0;
-				group.progress = 0;
 				UpdateGroup(parent, group, window);
 			end
 		end
@@ -13994,6 +14082,7 @@ RowOnEnter = function (self)
 			elseif ATTAccountWideData.OneTimeQuests[reference.questID] == false then
 				GameTooltip:AddLine("|cffcf271b" .. L["QUEST_ONCE_PER_ACCOUNT"] .. "|r");
 			end
+			AttachTooltipSearchResults(GameTooltip, "quest:"..reference.questID, SearchForField, "questID", reference.questID);
 		end
 		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
 			if app.Settings:GetTooltipSetting("creatureID") then
@@ -14150,6 +14239,11 @@ RowOnEnter = function (self)
 				-- TODO: probably re-design this once it's no longer considered an unobtainable filter completely
 				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][12][2], 1, 1, 1, 1, true);
 			end
+		end
+
+		-- Further conditional texts that can be displayed
+		if reference.timeRemaining then
+			GameTooltip:AddLine(reference.timeRemaining);
 		end
 
 		-- Calculate Best Drop Percentage. (Legacy Loot Mode)
@@ -14969,6 +15063,7 @@ function app:GetDataCache()
 		if app.Categories.Titles then
 			db = {};
 			db.g = app.Categories.Titles;
+			db.icon = app.asset("Category_Titles");
 			db.expanded = false;
 			db.text = "Titles";
 			db.sourceIgnored = true;
@@ -19426,26 +19521,35 @@ end
 -- Clickable ATT Chat Link Handling
 (function()
 	hooksecurefunc("SetItemRef", function(link, text)
-		-- print("Chat Link Click",link,text)
+		-- print("Chat Link Click",link,string.gsub(text, "\|","&"));
 		-- if IsShiftKeyDown() then
 		-- 	ChatEdit_InsertLink(text);
 		-- else
-		if (string.sub(link, 1, 15) == "garrmission:ATT") then
-			local op = string.sub(link, 17)
+		local type, info, data1, data2, data3 = strsplit(":", link);
+		-- print(type, info, data1, data2, data3)
+		if type == "garrmission" and info == "ATT" then
+			-- local op = string.sub(link, 17)
 			-- print("ATT Link",op)
-			local type, paramA, paramB = strsplit(":", op);
+			-- local type, paramA, paramB = strsplit(":", data);
 			-- print(type,paramA,paramB)
-			if type == "search" then
-				local cmd = paramA .. ":" .. paramB;
+			if data1 == "search" then
+				local cmd = data2 .. ":" .. data3;
 				app.SetSkipPurchases(2);
 				local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
 				app.SetSkipPurchases(0);
 				app:CreateMiniListForGroup(group);
 				return true;
-			elseif type == "dialog" then
-				return app:TriggerReportDialog(paramA);
+			elseif data1 == "dialog" then
+				return app:TriggerReportDialog(data2);
 			-- elseif type == "nav" then
 			-- 	print(type,paramA,paramB)
+			end
+		elseif type == "quest" then
+			-- Attach Quest info to Quest links in chat
+			if ItemRefTooltip then
+				-- print("show quest info",info)
+				AttachTooltipSearchResults(ItemRefTooltip, "quest:"..info, SearchForField, "questID", info);
+				ItemRefTooltip:Show();
 			end
 		end
 	end);

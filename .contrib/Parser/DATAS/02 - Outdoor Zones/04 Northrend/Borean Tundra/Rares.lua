@@ -4,14 +4,14 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(114, {	-- Borean Tundra
+	m(NORTHREND, {
+		m(BOREAN_TUNDRA, {
 			n(RARES, {
 				n(32358, {	-- Fumblub Gearwind
 					["coords"] = {
-						{ 67.0, 23.0, 114 },
-						{ 63.6, 28.4, 114 },
-						{ 69.6, 31.4, 114 },
+						{ 67.0, 23.0, BOREAN_TUNDRA },
+						{ 63.6, 28.4, BOREAN_TUNDRA },
+						{ 69.6, 31.4, BOREAN_TUNDRA },
 					},
 					["g"] = {
 						crit(5, {	-- Fumblub Gearwind
@@ -23,12 +23,12 @@ _.Zones =
 				}),
 				n(32361, {	-- Icehorn
 					["coords"] = {
-						{ 81.4, 31.4, 114 },
-						{ 91.6, 32.6, 114 },
-						{ 85.8, 34.6, 114 },
-						{ 88.6, 39.8, 114 },
-						{ 80.6, 46.2, 114 },
-						{ 84.6, 46.8, 114 },
+						{ 81.4, 31.4, BOREAN_TUNDRA },
+						{ 91.6, 32.6, BOREAN_TUNDRA },
+						{ 85.8, 34.6, BOREAN_TUNDRA },
+						{ 88.6, 39.8, BOREAN_TUNDRA },
+						{ 80.6, 46.2, BOREAN_TUNDRA },
+						{ 84.6, 46.8, BOREAN_TUNDRA },
 					},
 					["g"] = {
 						crit(6, {	-- Icehorn
@@ -39,7 +39,7 @@ _.Zones =
 					},
 				}),
 				n(32357, {	-- Old Crystalbark
-					["coord"] = { 33.8, 30.8, 114 },
+					["coord"] = { 33.8, 30.8, BOREAN_TUNDRA },
 					["g"] = {
 						crit(4, {	-- Old Crystalbark
 							["achievementID"] = 2257,	-- Frostbitten

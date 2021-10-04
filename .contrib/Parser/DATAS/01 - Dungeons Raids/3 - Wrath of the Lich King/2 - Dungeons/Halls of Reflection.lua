@@ -5,7 +5,7 @@
 _.Instances = { tier(WOTLK_TIER, {
 	inst(276, {	-- Halls of Reflection
 		["mapID"] = 185,
-		["coord"] = { 52.3, 89.3, 118 },
+		["coord"] = { 52.3, 89.3, ICECROWN },
 		["lvl"] = 78,
 		["g"] = {
 			n(QUESTS, {

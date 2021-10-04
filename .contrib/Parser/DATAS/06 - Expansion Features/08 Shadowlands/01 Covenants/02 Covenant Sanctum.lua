@@ -324,11 +324,4 @@ _.HiddenQuestTriggers = {
 
 	-- RENOWN TRIGGERS
 	q(64082),	-- Renown 73 (WQ Reward increase)
-
-	q(63165),	-- after earning To the Moon achievement
-	q(62989),	-- Arsenal: Doubt's Weapon Cache
-
-	-- Unflagged
-	--q(62770)
-	--q(62771)
 };

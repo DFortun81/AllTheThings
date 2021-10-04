@@ -57,9 +57,9 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					{ "n", 19173 },	-- Night Elf Commoner
 				},
 				["coords"] = {
-					{ 33.19, 52.65, 126 },	-- Dalaran: Northrend [Goblin]
-					{ 44.16, 58.93, 125 },	-- Dalaran: Northrend [Human]
-					{ 46.31, 72.73, 125 },	-- Dalaran: Northrend [Human]
+					{ 33.19, 52.65, NORTHREND_THE_UNDERBELLY },	-- Goblin
+					{ 44.16, 58.93, NORTHREND_DALARAN },	-- Human
+					{ 46.31, 72.73, NORTHREND_DALARAN },	-- Human
 					{ 44.74, 52.77, DARNASSUS },	-- Night Elf
 					{ 30.85, 72.17, IRONFORGE },	-- Dwarf
 					{ 58.14, 49.35, IRONFORGE },	-- Gnome
@@ -88,15 +88,15 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					{ 40.54, 68.28, THE_CAPE_OF_STRANGLETHORN },	-- Goblin
 					{ 41.68, 74.18, THE_CAPE_OF_STRANGLETHORN },	-- Goblin
 					{ 51.87, 42.59, THE_EXODAR },	-- Draenei
-					{ 40.77, 84.45, 120 },	-- The Storm Peaks [Goblin]
+					{ 40.77, 84.45, THE_STORM_PEAKS },	-- Goblin
 					{ 58.75, 48.42, WINTERSPRING },	-- Goblin
 					{ 59.77, 49.67, WINTERSPRING },	-- Goblin
 					{ 59.91, 50.89, WINTERSPRING },	-- Goblin
 					{ 61.06, 48.84, WINTERSPRING },	-- Goblin
 				},
 				["maps"] = {
-					125,	-- Dalaran: Northrend
-					126,	-- Dalaran: Northrend
+					NORTHREND_DALARAN,
+					NORTHREND_THE_UNDERBELLY,
 					DARNASSUS,
 					IRONFORGE,
 					NETHERSTORM,
@@ -105,7 +105,7 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					TANARIS,
 					THE_CAPE_OF_STRANGLETHORN,
 					THE_EXODAR,
-					120,	-- The Storm Peaks
+					THE_STORM_PEAKS,
 					WINTERSPRING,
 				},
 			}),
@@ -121,9 +121,9 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					{ "n", 19177 },	-- Troll Commoner
 				},
 				["coords"] = {
-					{ 33.19, 52.65, 126 },	-- Dalaran: Northrend [Goblin]
-					{ 50.79, 22.37, 125 },	-- Dalaran: Northrend [Blood Elf]
-					{ 62.62, 30.34, 125 },	-- Dalaran: Northrend [Blood Elf]
+					{ 33.19, 52.65, NORTHREND_THE_UNDERBELLY },	-- Goblin
+					{ 50.79, 22.37, NORTHREND_DALARAN },	-- Blood Elf
+					{ 62.62, 30.34, NORTHREND_DALARAN },	-- Blood Elf
 					{ 32.29, 64.81, NETHERSTORM },	-- Goblin
 					{ 32.92, 66.71, NETHERSTORM },	-- Goblin
 					{ 33.83, 64.11, NETHERSTORM },	-- Goblin
@@ -155,7 +155,7 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					{ 40.53, 73.11, THE_CAPE_OF_STRANGLETHORN },	-- Goblin
 					{ 40.54, 68.28, THE_CAPE_OF_STRANGLETHORN },	-- Goblin
 					{ 41.68, 74.18, THE_CAPE_OF_STRANGLETHORN },	-- Goblin
-					{ 40.77, 84.45, 120 },	-- The Storm Peaks [Goblin]
+					{ 40.77, 84.45, THE_STORM_PEAKS },	-- Goblin
 					{ 40.82, 56.05, THUNDER_BLUFF },	-- Tauren
 					{ 63.22, 47.55, UNDERCITY },	-- Forsaken
 					{ 67.75, 39.25, UNDERCITY },	-- Forsaken
@@ -165,8 +165,8 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					{ 61.06, 48.84, WINTERSPRING },	-- Goblin
 				},
 				["maps"] = {
-					125,	-- Dalaran: Northrend
-					126,	-- Dalaran: Northrend
+					NORTHREND_DALARAN,
+					NORTHREND_THE_UNDERBELLY,
 					NETHERSTORM,
 					NORTHERN_BARRENS,
 					ORGRIMMAR,
@@ -175,7 +175,7 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					SILVERMOON_CITY,
 					TANARIS,
 					THE_CAPE_OF_STRANGLETHORN,
-					120,	-- The Storm Peaks
+					THE_STORM_PEAKS,
 					THUNDER_BLUFF,
 					UNDERCITY,
 					WINTERSPRING,

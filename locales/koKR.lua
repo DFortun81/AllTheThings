@@ -24,7 +24,7 @@ local L = app.L;
 	--TODO: L.RACE_LOCKED = "Race Locked";
 	--TODO: L.PLEASE_REPORT_MESSAGE = ": Please report this to the ATT Discord in #errors! Thanks!";
 	--TODO: L.NOT_AVAILABLE_IN_PL = "Not available in Personal Loot.";
-	--TODO: L.MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content\n(Type '/att ' in chat then Shift-Click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order) may be required to register all the items correctly.|r";
+	--TODO: L.MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then Shift-Click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
 	--TODO: L.ITEM_GIVES_REP = "Provides Reputation with '";
 	--TODO: L.COST = "Cost";
 	--TODO: L.COST_DESC = "This contains the visual breakdown of what is required to obtain or purchase this Thing";
@@ -576,7 +576,8 @@ for key,value in pairs({
 		--TODO: ["Normal"] = "N",
 		--TODO: ["Heroic"] = "H",
 		--TODO: ["Mythic"] = "M",
-		--TODO: ["Ny'alotha, the Waking City"] = "Ny'alotha",
+		["깨어난 도시 나이알로사"] = "나이알로사",									-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+		["미지의 시장 타자베쉬"] = "타자베쉬",									-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 		--TODO: ["10 Player"] = "10M",
 		--TODO: ["10 Player (Heroic)"] = "10M (H)",
 		--TODO: ["25 Player"] = "25M",
@@ -819,12 +820,13 @@ for key,value in pairs({
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": 우정은 영원히",	-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			--TODO: [-931] = GetSpellInfo(7851),					-- Spirit
-			--TODO: [-932] = GetSpellInfo(172153),					-- Greater Spirit
-			--TODO: [-933] = GetSpellInfo(13826),					-- Divine Spirit
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 			--TODO: [-937] = "Transport Network",					-- Transport Network (Night Fae)
+			[-1002] = "충직한 영혼",								-- Dutiful Spirit
+			[-1003] = "무예의 영혼",								-- Martial Spirit
+			[-1004] = "긍지 높은 영혼",								-- Prideful Spirit
+			[-1005] = "야생의 영혼",								-- Untamed Spirit
 
 		-- SL Bastion/Kyrian
 			[-940] = "승천자 의회",										-- Ascended Counil

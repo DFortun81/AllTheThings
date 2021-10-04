@@ -8,7 +8,7 @@ _.Instances = { tier(WOTLK_TIER, {
 		["sharedLockout"] = 1,
 		["lvl"] = 80,
 		["mapID"] = 200,
-		["coord"] = { 61.2, 52.7, 115 },	-- The Ruby Sanctum, Dragonblight
+		["coord"] = { 61.2, 52.7, DRAGONBLIGHT },
 		["groups"] = {
 			n(39751, {	-- Baltharus the Warborn
 				["description"] = "Must be killed before you can fight General Zarithrian or talk to the quest giver.",

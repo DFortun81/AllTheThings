@@ -4,15 +4,15 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(117, {	-- Howling Fjord
+	m(NORTHREND, {
+		m(HOWLING_FJORD, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
 					["g"] = {
 						crit(3, {	-- Beegle Blastfuse
-							["coord"] = { 28.6, 33.8, 117 },
+							["coord"] = { 28.6, 33.8, HOWLING_FJORD },
 							["cr"] = 66635,	-- Beegle Blastfuse <Master Pet Tamer>
 						}),
 					},

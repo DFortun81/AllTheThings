@@ -332,7 +332,7 @@ _.Holidays = { applyholiday(PILGRIMS_BOUNTY, {
 					THE_EXODAR,
 					NETHERSTORM,
 					SHATTRATH_CITY,
-					120,	-- The Storm Peaks
+					THE_STORM_PEAKS,
 					THE_CAPE_OF_STRANGLETHORN,
 					ISLE_OF_THUNDER,
 				},
@@ -358,8 +358,8 @@ _.Holidays = { applyholiday(PILGRIMS_BOUNTY, {
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
-					120,	-- The Storm Peaks
-					125,	-- Dalaran (Northrend)
+					THE_STORM_PEAKS,
+					NORTHREND_DALARAN,
 					THE_CAPE_OF_STRANGLETHORN,
 				},
 				["races"] = HORDE_ONLY,

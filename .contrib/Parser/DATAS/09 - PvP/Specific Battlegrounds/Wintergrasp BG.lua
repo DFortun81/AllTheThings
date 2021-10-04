@@ -78,7 +78,7 @@ _.PVP =
 				n(VENDORS, {
 					n(39173, {	-- Champion Ros'slai <Wintergrasp Quartermaster>
 						["itemID"] = 137642,	-- Mark of Honor
-						["coord"] = { 51.8, 17.4, 123 },
+						["coord"] = { 51.8, 17.4, WINTERGRASP },
 						["races"] = HORDE_ONLY,
 						["g"] = pvp({
 							i(41742, {	-- Design: Enigmatic Skyflare Diamond
@@ -380,7 +380,7 @@ _.PVP =
 						}),
 					}),
 					n(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
-						["coord"] = { 51.6, 17.6, 123 },
+						["coord"] = { 51.6, 17.6, WINTERGRASP },
 						["itemID"] = 137642,	-- Mark of Honor
 						["races"] = ALLIANCE_ONLY,
 						["g"] = pvp({
@@ -599,7 +599,7 @@ _.PVP =
 					}),
 					n(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
 						["itemID"] = 137642,	-- Mark of Honor
-						["coord"] = { 51.6, 17.6, 123 },
+						["coord"] = { 51.6, 17.6, WINTERGRASP },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = pvp({
 							i(48974, {	-- Titan-Forged Armwraps of Dominance
@@ -702,7 +702,7 @@ _.PVP =
 					}),
 					n(30489, {	-- Morgan Day <Jewelcrafter>
 						["itemID"] = 137642,	-- Mark of Honor
-						["coord"] = { 48.8, 17.6, 123 },
+						["coord"] = { 48.8, 17.6, WINTERGRASP },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = pvp({
 							i(41742, {	-- Design: Enigmatic Skyflare Diamond
@@ -779,7 +779,7 @@ _.PVP =
 						}),
 					}),
 					n(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
-						["coord"] = { 51.6, 17.6, 123 },
+						["coord"] = { 51.6, 17.6, WINTERGRASP },
 						["itemID"] = 137642,	-- Mark of Honor
 						["races"] = HORDE_ONLY,
 						["g"] = pvp({
@@ -977,7 +977,7 @@ _.PVP =
 						}),
 					}),
 					n(31101, {	-- Hoodoo Master Fu'jin
-						["coord"] = { 51.6, 21.0, 123 },
+						["coord"] = { 51.6, 21.0, WINTERGRASP },
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(44067, {	-- Inscription of Triumph
@@ -989,7 +989,7 @@ _.PVP =
 						},
 					}),
 					n(31051, {	-- Sorceress Kaylana
-						["coord"] = { 48.4, 21.08, 123 },
+						["coord"] = { 48.4, 21.08, WINTERGRASP },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(44067, {	-- Inscription of Triumph

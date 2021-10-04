@@ -21,13 +21,19 @@ _.Achievements =
 				ach(397),	-- Step Into the Arena [1]
 			}),
 			ach(2090, {	-- Challenger
-				title(32),	-- Challenger
+				title(32, {	-- Challenger
+					["collectible"] = false,
+				}),
 			}),
 			ach(2092, {	-- Duelist
-				title(30),	-- Duelist
+				title(30, {	-- Duelist
+					["collectible"] = false,
+				}),
 			}),
 			ach(2091, {	-- Gladiator
-				title(29),	-- Gladiator
+				title(29, {	-- Gladiator
+					["collectible"] = false,
+				}),
 			}),
 			ach(408),	-- Hot Streak
 			ach(1162),	-- Hotter Streak
@@ -37,7 +43,9 @@ _.Achievements =
 				ach(399),	-- Just the Two of Us: 1550
 			}),
 			ach(2093, {	-- Rival
-				title(31),	-- Rival
+				title(31, {	-- Rival
+					["collectible"] = false,
+				}),
 			}),
 			ach(5267, {	-- Three's Company: 2700
 				ach(5266),	-- Three's Company: 2400

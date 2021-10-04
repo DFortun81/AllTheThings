@@ -1,21 +1,32 @@
 # AllTheThings
 
-## [SL-2.4.6](https://github.com/DFortun81/AllTheThings/tree/SL-2.4.6) (2021-09-25)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.4.5...SL-2.4.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.4.7](https://github.com/DFortun81/AllTheThings/tree/SL-2.4.7) (2021-10-04)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.4.6...SL-2.4.7) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
-### Highlights of this update
+### Highlights of this update ❕👑
 
-- Containers like Tribute of the Ambitious once again show their contents.
-- All newly added Cataclysm Timewalking recipes are marked as available now (some were marked as removed from the game in previous release). Go buy them while you still can before reset!
+#### Bonus Objectives ❕
+Some of them were classified as quests, some of them were just tracked in the background but invisible in ATT lists. Now most of them should be listed under Bonus Objectives header in their respective zone lists.
+#### Titles 👑
+- Categorized and sourced Titles
+- Added some missed ones
+- New shiny icon for titles 👑
+- Gender-based Titles will now count as 2 Titles in Account/Debug, to accurately reflect needing to collect both raw TitleID's for proper Account-wide collecting
+- Gender-based Titles will show an extra tooltip line in Account/Debug indicating the two variations of the Title, and which are collected on your account
 
 ### Notable changes:
 
-- Fixed items having too many filters on them. Example: heirloom tokens that can be bought with PvP/holiday currencies had PvP and holiday filters applied to them. Due to this fix Items might show up in places they were previously being filtered due to never being tagged correctly for that specific Source of an Item. Just report it in discord.gg/allthethings #errors and it will be addressed. Thanks.
-- Moved around and added/fixed some stuff in Legion and Battle for Azeroth including zone drops/rares/questlines.
-- Battle Pet/Mount flavor text is now considered "Lore". You can disable lore descriptions in ATT Settings->Interface->Lore.
-- More things should have PvP filter now.
-- Once again fixed duplicate descriptions/lore/etc. sometimes showing for tooltips of ATT windows (hopefully permanently). (This was fixed twice since last release 🤭)
-- Fixed some crafted tooltips showing completed Things when 'Show Completed Groups' is enabled.
-- The generic 'Type' categories will no longer show in tooltips as 'Sources' for: Battle Pets/Mounts/Titles/Toys (i.e. ATT > Mounts > etc.).
-- Mage Tower and The Deaths of Chromie moved to Expansion Features.
+- Queen's Conservatory was reorganized, check it out, fellow Night Fae!
+- Quests waypoints will now be skipped if they are already active in your quest log, unless directly clicked.
+- Once again fixed duplicated descriptions on creatures + Legion Invasions.
+- Lots of small quest fixes and improvemements in various expansions.
+- Even more syncing with Classic versions of addon, look out for any potential errors in TBC dungeons and raids and holidays.
+- Some fixes for Argus rares/World Quests.
+- Updated icons for Brewfest 🍺, Love is in the Air 💖, Midsummer Fire Festival 🔥 and Hallow's End 🎃
+- Fixes for some quirky items with bonusIDs/ weird sourceIDs/etc.
+- More fixes for `/attwq`, including remaining time for WQs (and it's no longer mushed into the description).
+- Quest groups linked into chat will use a proper link when the character is currently on the quest.
+- Quest groups will now show their ATT Source.
+- Quest links clicked from chat will now show the corresponding ATT Source location for the Quest.
+- Fixed NPC's or Headers being considered 'saved' when they weren't if 'Only First Time' (Quests) was enabled with collectible repeatable quests.
 - Various fixes.

@@ -65,16 +65,106 @@ _.Achievements =
 			ach(6181, {								-- Fangs of the Father
 				["classes"] = { ROGUE },
 			}),
+			ach(12542, {							-- Hall of Fame: G'huun (Alliance)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["g"] = {
+					title(374),	-- <Name>, Famed Slayer of G'huun
+				},
+			}),
+			ach(12543, {							-- Hall of Fame: G'huun (Horde)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["g"] = {
+					title(374),	-- <Name>, Famed Slayer of G'huun
+				},
+			}),
+			ach(13326, {							-- Hall of Fame: Lady Jaina Proudmoore (Alliance)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["g"] = {
+					title(384, {	-- <Name>, Famed Conqueror of Dazar'alor
+						["races"] = ALLIANCE_ONLY,
+					}),
+				},
+			}),
+			ach(13327, {							-- Hall of Fame: Lady Jaina Proudmoore (Horde)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["g"] = {
+					title(385, {	-- <Name>, Famed Defender of Dazar'alor
+						["races"] = HORDE_ONLY,
+					}),
+				},
+			}),
+			ach(14071, {							-- Hall of Fame: N'Zoth the Corruptor (Alliance)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["g"] = {
+					title(416),	-- <Name>, Famed Slayer of N'Zoth
+				},
+			}),
+			ach(14072, {							-- Hall of Fame: N'Zoth the Corruptor (Horde)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["g"] = {
+					title(416),	-- <Name>, Famed Slayer of N'Zoth
+				},
+			}),
+			ach(13787, {							-- Hall of Fame: Queen Azshara (Alliance)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["g"] = {
+					title(409),	-- <Name>, Famed Slayer of Azshara
+				},
+			}),
+			ach(13788, {							-- Hall of Fame: Queen Azshara (Horde)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["g"] = {
+					title(409),	-- <Name>, Famed Slayer of Azshara
+				},
+			}),
+			ach(14649, {							-- Hall of Fame: Sire Denathrius (Alliance)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["g"] = {
+					title(440),	-- <Name>, Famed Slayer of Denathrius
+				},
+			}),
+			ach(14650, {							-- Hall of Fame: Sire Denathrius (Horde)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["g"] = {
+					title(440),	-- <Name>, Famed Slayer of Denathrius
+				},
+			}),
 			ach(15197, {							-- Hall of Fame: Sylvanas (Alliance)
 				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					title(448),	-- <Name>, Famed Bane of the Banshee Queen
 				},
 			}),
 			ach(15196, {							-- Hall of Fame: Sylvanas (Horde)
 				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					title(448),	-- <Name>, Famed Bane of the Banshee Queen
+				},
+			}),
+			ach(13423, {							-- Hall of Fame: Uu'nat, Harbinger of the Void (Alliance)
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["g"] = {
+					title(400),	-- <Name>, Famed Slayer of the Harbinger
+				},
+			}),
+			ach(13424, {							-- Hall of Fame: Uu'nat, Harbinger of the Void (Horde)
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["g"] = {
+					title(400),	-- <Name>, Famed Slayer of the Harbinger
 				},
 			}),
 			un(REMOVED_FROM_GAME, ach(3004)),		-- He Feeds On Your Tears (10 player)

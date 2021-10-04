@@ -4,12 +4,12 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(125, {	-- Dalaran: Northrend
+	m(NORTHREND, {
+		m(NORTHREND_DALARAN, {
 			n(-213, {	-- The Underbelly
 				n(VENDORS, {
 					n(30885, {	-- Blazik Fireclaw <Hateful Gladiator>
-						["coord"] = { 59.5, 57.9, 126 },
+						["coord"] = { 59.5, 57.9, NORTHREND_THE_UNDERBELLY },
 						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
 							n(-319, {	-- Weapons
@@ -639,7 +639,7 @@ _.Zones =
 					}),
 					n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 						["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
-						["coord"] = { 47.0, 28.1, 126 },
+						["coord"] = { 47.0, 28.1, NORTHREND_THE_UNDERBELLY },
 						["g"] = {
 							i(136803, {	-- Dirty Tricks, Vol 1: Detection
 								--["spellID"] = 210108,	-- Detection
@@ -652,13 +652,13 @@ _.Zones =
 						},
 					}),
 					n(29537, {	-- Darahir <Reagents & Magical Goods>
-						["coord"] = { 63.4, 16.2, 126 },
+						["coord"] = { 63.4, 16.2, NORTHREND_THE_UNDERBELLY },
 						["g"] = {
 							i(39973),	-- Ghostly Skull (PET!)
 						},
 					}),
 					n(69321, {	-- Herwin Steampop <Deadly Gladiator>
-						["coord"] = { 59.4, 57.8, 126 },
+						["coord"] = { 59.4, 57.8, NORTHREND_THE_UNDERBELLY },
 						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
 							n(-319, {	-- Weapons
@@ -1287,7 +1287,7 @@ _.Zones =
 						},
 					}),
 					n(29538, {	-- Hexil Garrot <Tools of the Trade>
-						["coord"] = { 60.6, 11.9, 126 },
+						["coord"] = { 60.6, 11.9, NORTHREND_THE_UNDERBELLY },
 						["g"] = {
 							i(40739),	-- Bands of the Great Tree
 							i(50994),	-- Belt of Petrified Ivy
@@ -1312,7 +1312,7 @@ _.Zones =
 						},
 					}),
 					n(69318, {	-- Kylo Kelwin <Furious Gladiator>
-						["coord"] = { 59.0, 57.6, 126 },
+						["coord"] = { 59.0, 57.6, NORTHREND_THE_UNDERBELLY },
 						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
 							n(-319, {	-- Weapons
@@ -2056,7 +2056,7 @@ _.Zones =
 						},
 					}),
 					n(40212, {	-- Trapjaw Rix <Savage Gladiator>
-						["coord"] = { 59.3, 57.3, 126 },
+						["coord"] = { 59.3, 57.3, NORTHREND_THE_UNDERBELLY },
 						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
 							n(-319, {	-- Weapons
@@ -2437,7 +2437,7 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					n(69971, {	-- Xazi Smolderpipe <Wrathful Gladiator>
-						["coord"] = { 58.5, 58.3, 126 },
+						["coord"] = { 58.5, 58.3, NORTHREND_THE_UNDERBELLY },
 						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
 							n(-319, {	-- Weapons
@@ -3080,7 +3080,7 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					n(69973, {	-- Zom Bocom <Relentless Gladiator>
-						["coord"] = { 59.0, 58.8, 126 },
+						["coord"] = { 59.0, 58.8, NORTHREND_THE_UNDERBELLY },
 						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
 							n(-319, {	-- Weapons

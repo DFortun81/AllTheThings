@@ -6,9 +6,9 @@ _.Achievements =
 {
 	n(-10055, {	-- Expansion Features
 		n(-363, {	-- Argent Tournament{
-			["maps"] = { 118, },	-- Icecrown
+			["maps"] = { ICECROWN },
 			["g"] = sharedData({
-					-- ["maps"] = { 118, },	-- Icecrown
+					-- ["maps"] = { ICECROWN },
 				}, {
 				a(ach(3676)),	-- A Silver Confidant (Alliance)
 				ach(2758, {		-- Argent Valor

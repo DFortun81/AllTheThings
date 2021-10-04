@@ -305,8 +305,8 @@ _.ExpansionFeatures =
 					["maps"] = {
 						469,	-- New Tinkertown [Above]
 						1380,	-- GnomereganC
-						114,	-- Borean Tundra
-						120,	-- The Storm Peaks
+						BOREAN_TUNDRA,
+						THE_STORM_PEAKS,
 						1375,	-- Halls of Stone (Scenario)
 					},
 					["races"] = { GNOME },
@@ -332,37 +332,37 @@ _.ExpansionFeatures =
 						}),
 						q(54581, {	-- Now With More Mechanical Fowl
 							["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
-							["coord"] = { 55.3, 18.9, 114 },
+							["coord"] = { 55.3, 18.9, BOREAN_TUNDRA },
 							["sourceQuest"] = 54580, -- A Tundra Conundrum
 						}),
 						q(54582, {	-- Smarter Than Your Average Trogg
 							["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
-							["coord"] = { 55.3, 18.9, 114 },
+							["coord"] = { 55.3, 18.9, BOREAN_TUNDRA },
 							["sourceQuest"] = 54581, -- Now With More Mechanical Fowl
 						}),
 						q(54579, {	-- The Gnome Behind the Trogg
 							["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
-							["coord"] = { 55.3, 18.9, 114 },
+							["coord"] = { 55.3, 18.9, BOREAN_TUNDRA },
 							["sourceQuest"] = 54582, -- Smarter Than Your Average Trogg
 						}),
 						q(54639, {	-- A Signal in Storm Peaks
 							["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
-							["coord"] = { 55.3, 18.9, 114 },
+							["coord"] = { 55.3, 18.9, BOREAN_TUNDRA },
 							["sourceQuest"] = 54579, -- The Gnome Behind the Trogg
 						}),
 						q(54640, {	-- Gnomercy!
 							["provider"] = { "n", 147950 },	-- Cog Captain Winklespring
-							["coord"] = { 37.6, 60.3, 120 },
+							["coord"] = { 37.6, 60.3, THE_STORM_PEAKS },
 							["sourceQuest"] = 54639, -- A Signal in Storm Peaks
 						}),
 						q(54850, {	-- Operation: Troggageddon
 							["provider"] = { "n", 147950 },	-- Cog Captain Winklespring
-							["coord"] = { 56.1, 51.4, 120 },
+							["coord"] = { 56.1, 51.4, THE_STORM_PEAKS },
 							["sourceQuest"] = 54640, -- Gnomercy!
 						}),
 						q(54641, {	-- For Gnomeregan!
 							["provider"] = { "n", 149503 },	-- Cog Captain Winklespring
-							["coord"] = { 39.4, 26.8, 120 },
+							["coord"] = { 39.4, 26.8, THE_STORM_PEAKS },
 							["sourceQuest"] = 54850, -- Operation: Troggageddon
 						}),
 						q(54642, {	-- G.E.A.R. Up

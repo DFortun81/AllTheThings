@@ -17,7 +17,7 @@ _.Instances = { tier(WOD_TIER, {
 						["crs"] = { 95068 },	-- Hellfire Assault
 					}),
 					ach(10057, {	-- Turning the Tide
-						["description"] = "When the boss casts Barrage, simply stand at the North or South walls and try to get at least 2-3 Guardians within the frontal cone to kill them. There are 5 Guardians at each wall, 10 Guardians in all, very easy to solo at 120.",
+						["description"] = "When the boss casts Barrage, simply stand at the North or South walls and try to get at least 2-3 Guardians within the frontal cone to kill them. There are 5 Guardians at each wall, 10 Guardians in all, very easy to solo at max level.",
 						["crs"] = { 90284 },	-- Iron Reaver
 					}),
 					ach(10013, {	-- Waves Came Crashing Down All Around

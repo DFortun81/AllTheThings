@@ -148,17 +148,57 @@ _.Achievements =
 				ach(9242),	-- Challenger: Warlords of Draenor Season 1
 				ach(9996, {	-- Defender of the Alliance: Warlords of Draenor Season 1
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(10001, {	-- Defender of the Horde: Warlords of Draenor Season 1
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(9240),	-- Duelist: Warlords of Draenor Season 1
 				ach(9239),	-- Gladiator: Warlords of Draenor Season 1	-- Mount is listed under FoS>Mounts.
 				ach(9997, {	-- Guardian of the Alliance: Warlords of Draenor Season 1
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(10000, {	-- Guardian of the Horde: Warlords of Draenor Season 1
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(9230, {	-- Hero of the Alliance: Primal
 					["races"] = ALLIANCE_ONLY,
@@ -180,26 +220,86 @@ _.Achievements =
 				ach(9241),	-- Rival: Warlords of Draenor Season 1
 				ach(9995, {	-- Soldier of the Alliance: Warlords of Draenor Season 1
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(9998, {	-- Soldier of the Horde: Warlords of Draenor Season 1
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 			})),
 			n(-680, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Wild Gladiator: Warlords of Draenor Season 2
 				ach(10101),	-- Challenger: Warlords of Draenor Season 2
 				ach(10106, {	-- Defender of the Alliance: Warlords of Draenor Season 2
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(10107, {	-- Defender of the Horde: Warlords of Draenor Season 2
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(10099),	-- Duelist: Warlords of Draenor Season 2
 				ach(10098),	-- Gladiator: Warlords of Draenor Season 2	-- Mount is listed under FoS>Mounts.
 				ach(10108, {	-- Guardian of the Alliance: Warlords of Draenor Season 2
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(10109, {	-- Guardian of the Horde: Warlords of Draenor Season 2
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(10102, {	-- Hero of the Alliance: Wild
 					["races"] = ALLIANCE_ONLY,
@@ -210,9 +310,29 @@ _.Achievements =
 				ach(10100),	-- Rival: Warlords of Draenor Season 2
 				ach(10104, {	-- Soldier of the Alliance: Warlords of Draenor Season 2
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(10105, {	-- Soldier of the Horde: Warlords of Draenor Season 2
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
@@ -230,17 +350,57 @@ _.Achievements =
 				ach(10113),	-- Challenger: Warlords of Draenor Season 3
 				ach(10118, {	-- Defender of the Alliance: Warlords of Draenor Season 3
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(10119, {	-- Defender of the Horde: Warlords of Draenor Season 3
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(10111),	-- Duelist: Warlords of Draenor Season 3
 				ach(10110),	-- Gladiator: Warlords of Draenor Season 3	-- Mount is listed under FoS>Mounts.
 				ach(10116, {	-- Guardian of the Alliance: Warlords of Draenor Season 3
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(10117, {	-- Guardian of the Horde: Warlords of Draenor Season 3
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(10114, {	-- Hero of the Alliance: Warmongering
 					["races"] = ALLIANCE_ONLY,
@@ -251,9 +411,29 @@ _.Achievements =
 				ach(10112),	-- Rival: Warlords of Draenor Season 3
 				ach(10120, {	-- Soldier of the Alliance: Warlords of Draenor Season 3
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(10121, {	-- Soldier of the Horde: Warlords of Draenor Season 3
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
@@ -271,18 +451,58 @@ _.Achievements =
 				ach(11017),	-- Challenger: Legion Season 1
 				ach(11022, {	-- Defender of the Alliance: Legion Season 1
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11023, {	-- Defender of the Horde: Legion Season 1
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11015, {	-- Duelist: Legion Season 1
 				}),
 				ach(11011),	-- Gladiator: Legion Season 1	-- Mount is listed under FoS>Mounts.
 				ach(11020, {	-- Guardian of the Alliance: Legion Season 1
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11021, {	-- Guardian of the Horde: Legion Season 1
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11018, {	-- Hero of the Alliance: Vindictive
 					["races"] = ALLIANCE_ONLY,
@@ -292,9 +512,29 @@ _.Achievements =
 				}),
 				ach(11036, {	-- Soldier of the Alliance: Legion Season 1
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
-				ach(11025, {	-- Soldier  of the Horde: Legion Season 1
+				ach(11025, {	-- Soldier of the Horde: Legion Season 1
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11016),	-- Rival: Legion Season 1
 				-- Sometimes under Legacy, sometimes under FoS.
@@ -314,9 +554,29 @@ _.Achievements =
 				ach(11028),	-- Challenger: Legion Season 2
 				ach(11034, {	-- Defender of the Alliance: Legion Season 2
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11033, {	-- Defender of the Horde: Legion Season 2
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11026),	-- Duelist: Legion Season 2
 				-- Sometimes under Legacy, sometimes under FoS.
@@ -334,9 +594,29 @@ _.Achievements =
 				ach(11013),	-- Gladiator: Legion Season 2	-- Mount is listed under FoS>Mounts.
 				ach(11032, {	-- Guardian of the Alliance: Legion Season 2
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11031, {	-- Guardian of the Horde: Legion Season 2
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11030, {	-- Hero of the Alliance: Fearless
 					["races"] = ALLIANCE_ONLY,
@@ -346,9 +626,29 @@ _.Achievements =
 				}),
 				ach(11036, {	-- Soldier of the Alliance: Legion Season 2
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
-				ach(11035, {	-- Soldier  of the Horde: Legion Season 2
+				ach(11035, {	-- Soldier of the Horde: Legion Season 2
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11027),	-- Rival: Legion Season 2
 			})),
@@ -368,17 +668,57 @@ _.Achievements =
 				}),
 				ach(11045, {	-- Defender of the Alliance: Legion Season 3
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11044, {	-- Defender of the Horde: Legion Season 3
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11041),	-- Duelist: Legion Season 3
 				ach(11038),	-- Gladiator: Legion Season 3	-- Mount is listed under FoS>Mounts.
 				ach(11047, {	-- Guardian of the Alliance: Legion Season 3
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11046, {	-- Guardian of the Horde: Legion Season 3
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11043, {	-- Hero of the Alliance: Cruel
 					["races"] = ALLIANCE_ONLY,
@@ -388,9 +728,29 @@ _.Achievements =
 				}),
 				ach(11049, {	-- Soldier of the Alliance: Legion Season 3
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
-				ach(11048, {	-- Soldier  of the Horde: Legion Season 3
+				ach(11048, {	-- Soldier of the Horde: Legion Season 3
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11040),	-- Rival: Legion Season 3
 			})),
@@ -398,9 +758,29 @@ _.Achievements =
 				ach(11060),	-- Challenger: Legion Season 4
 				ach(11054, {	-- Defender of the Alliance: Legion Season 4
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11055, {	-- Defender of the Horde: Legion Season 4
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11058),	-- Duelist: Legion Season 4
 				-- Sometimes under Legacy, sometimes under FoS.
@@ -417,9 +797,29 @@ _.Achievements =
 				}),
 				ach(11052, {	-- Guardian of the Alliance: Legion Season 4
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11053, {	-- Guardian of the Horde: Legion Season 4
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11061),	-- Gladiator: Legion Season 4	-- Mount is listed under FoS>Mounts.
 				ach(11056, {	-- Hero of the Alliance: Ferocious
@@ -430,9 +830,29 @@ _.Achievements =
 				}),
 				ach(11050, {	-- Soldier of the Alliance: Legion Season 4
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
-				ach(11051, {	-- Soldier  of the Horde: Legion Season 4
+				ach(11051, {	-- Soldier of the Horde: Legion Season 4
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(11059),	-- Rival: Legion Season 4
 			})),
@@ -440,9 +860,29 @@ _.Achievements =
 				ach(12036),	-- Challenger: Legion Season 5
 				ach(12039, {	-- Defender of the Alliance: Legion Season 5
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(12043, {	-- Defender of the Horde: Legion Season 5
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(12034),	-- Duelist: Legion Season 5
 				-- Sometimes under Legacy, sometimes under FoS.
@@ -459,9 +899,29 @@ _.Achievements =
 				}),
 				ach(12038, {	-- Guardian of the Alliance: Legion Season 5
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(12042, {	-- Guardian of the Horde: Legion Season 5
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(12045),	-- Gladiator: Legion Season 5	-- Mount is listed under FoS>Mounts.
 				ach(12037, {	-- Hero of the Alliance: Fierce
@@ -472,9 +932,29 @@ _.Achievements =
 				}),
 				ach(12040, {	-- Soldier of the Alliance: Legion Season 5
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
-				ach(12044, {	-- Soldier  of the Horde: Legion Season 5
+				ach(12044, {	-- Soldier of the Horde: Legion Season 5
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(12035),	-- Rival: Legion Season 5
 			})),
@@ -482,9 +962,29 @@ _.Achievements =
 				ach(12169),	-- Challenger: Legion Season 6
 				ach(12175, {	-- Defender of the Alliance: Legion Season 6
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(12174, {	-- Defender of the Horde: Legion Season 6
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
@@ -501,9 +1001,29 @@ _.Achievements =
 				ach(12171),	-- Duelist: Legion Season 6
 				ach(12177, {	-- Guardian of the Alliance: Legion Season 6
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(12176, {	-- Guardian of the Horde: Legion Season 6
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(12167),	-- Gladiator: Legion Season 6	-- Mount is listed under FoS>Mounts.
 				ach(12173, {	-- Hero of the Alliance: Dominant
@@ -514,9 +1034,29 @@ _.Achievements =
 				}),
 				ach(12179, {	-- Soldier of the Alliance: Legion Season 6
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
-				ach(12178, {	-- Soldier  of the Horde: Legion Season 6
+				ach(12178, {	-- Soldier of the Horde: Legion Season 6
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(12170),	-- Rival: Legion Season 6
 			})),
@@ -524,9 +1064,29 @@ _.Achievements =
 				ach(12187),	-- Challenger: Legion Season 7
 				ach(12195, {	-- Defender of the Alliance: Legion Season 7
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(12194, {	-- Defender of the Horde: Legion Season 7
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
@@ -543,9 +1103,29 @@ _.Achievements =
 				ach(12186),	-- Duelist: Legion Season 7
 				ach(12191, {	-- Guardian of the Alliance: Legion Season 7
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(12192, {	-- Guardian of the Horde: Legion Season 7
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 				ach(12168),	-- Gladiator: Legion Season 7	-- Mount is listed under FoS>Mounts.
 				ach(12197, {	-- Hero of the Alliance: Demonic
@@ -557,9 +1137,29 @@ _.Achievements =
 				ach(12188),	-- Rival: Legion Season 7
 				ach(12189, {	-- Soldier of the Alliance: Legion Season 7
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
-				ach(12190, {	-- Soldier  of the Horde: Legion Season 7
+				ach(12190, {	-- Soldier of the Horde: Legion Season 7
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,	-- Blizzard....
+							["timeline"] = {
+								"added 6.0.3",
+								"removed 8.0.1",
+							},
+						}),
+					},
 				}),
 			})),
 			n(-689, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Dread Gladiator: Battle for Azeroth Season 1
@@ -662,7 +1262,9 @@ _.Achievements =
 			n(-693, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Sinful Gladiator: Shadowlands Season 1
 				ach(14686),		-- Challenger: Shadowlands Season 1
 				ach(14685, {	-- Combatant: Shadowlands Season 1
-					title(78),	-- Combatant <Name>
+					title(78, {	-- Combatant <Name>
+						["collectible"] = false,
+					}),
 				}),
 				ach(14688, {	-- Duelist: Shadowlands Season 1
 					illusion(6266),	-- Sinful Flame
@@ -685,7 +1287,11 @@ _.Achievements =
 			})),
 			n(-694, {	-- Unchained Gladiator: Shadowlands Season 2
 				ach(14969),		-- Challenger: Shadowlands Season 2
-				ach(14968),		-- Combatant: Shadowlands Season 2
+				ach(14968, {		-- Combatant: Shadowlands Season 2
+					title(78, {	-- Combatant <Name>
+						["collectible"] = false,
+					}),
+				}),
 				ach(14971, {	-- Duelist: Shadowlands Season 2
 					i(185302),	-- Unchained Gladiator's Prestigious Cloak
 					illusion(6344),	-- Unchained Fury

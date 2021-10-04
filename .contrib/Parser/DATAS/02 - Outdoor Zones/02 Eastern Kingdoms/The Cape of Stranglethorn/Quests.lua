@@ -385,7 +385,7 @@ _.Zones =
 					["sourceQuest"] = 26533,	-- Zanzil's Secret
 				}),
 				q(26630, {	-- Looks Like a Tauren Pirate to Me
-					["description"] = "This is a sub-quest of Seeing Where Your Loyalties Lie.",
+					["description"] = "Will never show completed due Blizzard. This is a sub-quest of Seeing Where Your Loyalties Lie.",
 					["collectible"] = false,	-- this quest doesn't permanently collect for god knows what stupid blizzard reason
 					["coord"] = { 41.0, 73.2, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2487 },	-- Fleet Master Seahorn

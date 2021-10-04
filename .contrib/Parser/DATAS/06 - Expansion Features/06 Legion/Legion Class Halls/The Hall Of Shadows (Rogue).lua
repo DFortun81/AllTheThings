@@ -733,6 +733,7 @@ _.ExpansionFeatures =
 							["lvl"] = 98,
 							["g"] = {
 								i(139739),	-- Chestguard of the Uncrowned
+								title(338),	-- Shadowblade <Name>
 							},
 						}),
 						q(47603, {	-- The Mysterious, Magnificent Al'Abas

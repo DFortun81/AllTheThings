@@ -4,13 +4,13 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(116, {	-- Grizzly Hills
+	m(NORTHREND, {
+		m(GRIZZLY_HILLS, {
 			n(VENDORS, {
 				["description"] = "The PVP vendors in this zone (Grizzly D. Adams and Purkom) are only visible while your faction controls Venture Bay.",
 				["g"] = {
 					n(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>
-						["coord"] = { 13.8, 86.4, 116 },
+						["coord"] = { 13.8, 86.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = pvp({
 							i(38358, {	-- Arcane Revitalizer
@@ -34,7 +34,7 @@ _.Zones =
 						}),
 					}),
 					n(26868, {	-- Provisioner Lorkran <General Goods>
-						["coord"] = { 22.6, 66.0, 116 },
+						["coord"] = { 22.6, 66.0, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(21219),	-- Recipe: Sagefish Delight
@@ -42,7 +42,7 @@ _.Zones =
 						},
 					}),
 					n(27730, {	-- Purkom <Venture Coin Vendor>
-						["coord"] = { 13.8, 86.2, 116 },
+						["coord"] = { 13.8, 86.2, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["g"] = pvp({
 							i(38358, {	-- Arcane Revitalizer

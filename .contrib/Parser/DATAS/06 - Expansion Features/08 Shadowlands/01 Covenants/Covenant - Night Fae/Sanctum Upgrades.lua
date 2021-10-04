@@ -205,35 +205,371 @@ _.ExpansionFeatures =
 								ach(14670),	-- That's the Spirit
 							}),
 							o(350978, {	-- Queen's Conservatory Cache
-								filter(100, {	-- Mounts
-									["coord"] = { 43.4, 33.6, ARDENWEALD },
-									-- TODO: let's break this description up into each Mount, along with minimum 'cost' on the required Catalysts/Seeds perhaps?
-									["description"] = "Each mount requires a combination of Wildseed Root Grain & Spirits bought from Gardentaur. Once the seeds are planted, you need to wait |cFFFFD7003|r days for the incubation.\n\nOnce the Wildseed of Regrowth is fully incubated, you can loot it. Cache.\n\n|cffcc33ffDauntless Duskrunner|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff3349ffDivine Dutiful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffEnchanted Wakener's Runestag|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearb.\n\n|cffcc33ffGruesome Flayedwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff0a9708Divine Martial Spirit |r on a Wildseed of Regrowth.\n\n|cffcc33ffPale Acidmaw|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots nearby. \n\n|cffcc33ffSilvertip Dredwing|r: Use |cFFFFD7004x|r |cffd05f10Wildseed Root Grain|r on |cFFFFD7004x|r Anima Catalyst Plots & use |cffff3933Divine Prideful Spirit|r on Wildseed of Regrowth with |cFFFFD7004x|r Anima Catalyst Plots near 43.4, 33.6.\n\n|cffcc33ffWakener's Runestag|r: Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
+								n(-1002, {		-- Dutiful
+									["description"] = "Spirit quality affects loot chance.",
+									["cost"] = {
+										{ "i", 178881, 1 },	-- Dutiful Spirit (Uncommon) x1
+										{ "i", 178880, 1 },	-- Greater Dutiful Spirit (Rare) x1
+										{ "i", 178879, 1 },	-- Divine Dutiful Spirit (Epic) x1
+									},							
 									["g"] = {
-										i(181317),	-- Dauntless Duskrunner
-										i(180723),	-- Enchanted Wakener's Runestag
-										i(181300),	-- Gruesome Flayedwing
-										i(180726),	-- Pale Acidmaw
-										i(181316),	-- Silvertip Dredwing
-										i(180414, {	-- Wakener's Runestag
-											["description"] = "Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
-											--["cost"] = {	-- TODO: waiting to verify...
-											--	{ "i", 177699, 1 },	-- Divine Untamed Spirit Ardenweald
-											--	{ "i", 176832, 2 },	-- Wildseed Root Grain
-											--},
+											i(181225, {		-- Crossbow of Contemplative Calm
+												["cost"] = {
+													{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+												}
+											}),
+											i(181226, {		-- Bronze Dual-Bladed Glaive
+												["cost"] = {
+													{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+												}
+											}),		
+											i(181232, {		-- Cupbearer's Claymore
+												["cost"] = {
+													{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+												}
+											}),		
+											i(181234, {		-- Dutybound Spellblade
+												["cost"] = {
+													{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+												}
+											}),		
+											i(181228, {		-- Temple Guard's Partisan
+												["cost"] = {
+													{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+												}
+											}),
+											i(181229, {		-- Tranquil's Censer
+												["cost"] = {
+													{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+												}
+											}),
+											i(181230, {		-- Pugilist's Chakram
+												["cost"] = {
+													{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+												}
+											}),
+											i(181233, {		-- Bellringer's Hammer
+												["cost"] = {
+													{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+												}
+											}),
+											i(180814, {		-- Sable
+												["cost"] = {
+													{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+												}
+											}),
+											i(180815, {		-- Brightscale Hatchling
+												["cost"] = {
+													{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+												}
+											}),
+											i(181227, {		-- Bronze Ceremonial Targe
+												["cost"] = {
+													{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+												}
+											}),
+											i(181231, {		-- Broadbladed Severer
+												["cost"] = {
+													{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+												}
+											}),
+											i(181235, {		-- Final Arbiter's Gavel
+												["cost"] = {
+													{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+												}
+											}),
+											i(181317, {		-- Dauntless Duskrunner
+												["cost"] = {
+													{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+												}
+											}),
+											i(181310, {		-- Spirit Tender's Pack
+												["cost"] = {
+													{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+												}
+											}),
+									},
+								}),
+								n(-1003, {		-- Martial
+									["description"] = "Spirit quality affects loot chance.",
+									["cost"] = {
+										{ "i", 178874, 1 },	-- Martial Spirit (Uncommon) x1
+										{ "i", 178877, 1 },	-- Greater Martial Spirit (Rare) x1
+										{ "i", 178878, 1 },	-- Divine Martial Spirit (Epic) x1
+									},
+									["g"] = {
+										i(181329, {		-- Marrowfused Claymore
+											["cost"] = {
+												{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+											}
+										}),
+										i(181321, {		-- Gem-Crowned Wand
+											["cost"] = {
+												{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+											}
+										}),
+										i(181327, {		-- Spineforged Tenderizer
+											["cost"] = {
+												{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+											}
+										}),
+										i(181330, {		-- Marrowfused Warglaive
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(181325, {		-- Marrowfused Dagger
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(181328, {		-- Marrowfused Sword
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(181331, {		-- Marrowfused Shield
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(181326, {		-- Bloodstained Hacksaw
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(181323, {		-- Blightclutched Greatstaff
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(181264, {		-- Plaguelouse Larva
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(181168, {		-- Corpulent Bonetusk
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(181320, {		-- Bonejowl Ballista
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
+										}),
+										i(181322, {		-- Bonebound Tome
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
+										}),
+										i(181300, {		-- Gruesome Flayedwing
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
+										}),
+										i(181310, {		-- Spirit Tender's Pack
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
 										}),
 									},
 								}),
-								i(181315),	-- Bloodfeaster Spiderling
-								i(180815),	-- Brightscale Hatchling
-								i(181168),	-- Corpulent Bonetusk
-								i(180639),	-- Dusty Sporeflutterer
-								i(180628),	-- Pearlwing Heron
-								i(181264),	-- Plaguelouse Larva
-								i(181302),	-- Spirit Tender's Branches
-								i(181306),	-- Spirit Tender's Bulb
-								i(181310),	-- Spirit Tender's Pack
-								i(180603),	-- Violet Dredwing Pup
+								n(-1004, {		-- Prideful
+									["description"] = "Spirit quality affects loot chance.",
+									["cost"] = {
+										{ "i", 178882, 1 },	-- Prideful Spirit (Uncommon) x1
+										{ "i", 178883, 1 },	-- Greater Prideful Spirit (Rare) x1
+										{ "i", 178884, 1 },	-- Divine Prideful Spirit (Epic) x1
+									},
+									["g"] = {
+										i(180955, {		-- Stonewing Halberd
+											["cost"] = {
+												{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+											}
+										}),
+										i(180956, {		-- Axeblade Blunderbuss
+											["cost"] = {
+												{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+											}
+										}),
+										i(180957, {		-- Batwing Glaive
+											["cost"] = {
+												{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+											}
+										}),
+										i(180963, {		-- Crypt Keeper's Vessel
+											["cost"] = {
+												{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+											}
+										}),
+										i(180954, {		-- Crypt Watcher's Spire
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(180959, {		-- Dredger Anklebiter
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(180960, {		-- Shiny-Metal Topped Basher
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(180964, {		-- Ember Court Barrier
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(180603, {		-- Violet Dredwing Pup
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(181315, {		-- Bloodfeaster Spiderling
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(180958, {		-- Redelev House Foil
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
+										}),
+										i(180961, {		-- Silver-Bladed Ritual Dagger
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
+										}),
+										i(180962, {		-- Sterling-Silver Cudgel
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
+										}),
+										i(181316, {		-- Silvertip Dredwing
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
+										}),
+										i(181310, {		-- Spirit Tender's Pack
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
+										}),
+									},
+								}),
+								n(-1005, {		-- Untamed
+									["description"] = "Spirit quality affects loot chance.",
+									["cost"] = {
+										{ "i", 177698, 1 },	-- Untamed Spirit (Uncommon) x1
+										{ "i", 177699, 1 },	-- Greater Untamed Spirit (Rare) x1
+										{ "i", 177700, 1 },	-- Divine Untamed Spirit (Epic) x1
+									},
+									["g"] = {
+										i(179548, {		-- Elderwood Gavel
+											["cost"] = {
+												{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+											}
+										}),
+										i(179563, {		-- Heartwood Stem
+											["cost"] = {
+												{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+											}
+										}),
+										i(181313, {		-- Snapper Soul
+											["cost"] = {
+												{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+											}
+										}),
+										i(181314, {		-- Gulper Soul
+											["cost"] = {
+												{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+											}
+										}),
+										i(181302, {		-- Spirit Tender's Branches
+											["cost"] = {
+												{ "i", 176832, 1 },	-- Wildseed Root Grain x1
+											}
+										}),
+										i(179499, {		-- Nightwillow Barb
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(179538, {		-- Grove Warden's Maul
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(179605, {		-- Elderwood Barrier
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(179514, {		-- Ripvine Saber
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(179585, {		-- Nightwillow Shortbow 
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),													
+										i(181306, {		-- Spirit Tender's Bulb
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(180628, {		-- Pearlwing Heron
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),	
+										i(180639, {		-- Dusty Sporeflutterer
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(180414, {		-- Wakener's Runestag
+											["cost"] = {
+												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
+											}
+										}),
+										i(179509, {		-- Grove Warden's Edge
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
+										}),
+										i(179516, {		-- Songwood Staff
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
+										}),
+										i(179533, {		-- Grove Warden's Harvester
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
+										}),
+										i(180726, {		-- Pale Acidmaw
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
+										}),
+										i(180723, {		-- Enchanted Wakener's Runestag
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
+										}),
+										i(181310, {		-- Spirit Tender's Pack
+											["cost"] = {
+												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											}
+										}),
+									},
+								}),
 							}),
 							n(QUESTS, {
 								q(62447, {	-- A Rare and Unusual Spirit (1)
@@ -430,134 +766,6 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 173171 },	-- Conservator Starry Night
 									["coord"] = { 56.0, 68.2, THE_ROOTS },
 								}),
-							}),
-							-- Spirits/Transmog
-							-- TODO: do these all need their own 'tier' of seed sub-header? they're already split by the minimum Spirit item required...
-							n(-931, {	-- Spirit
-								["description"] = "Requires minimum |cFFFFD7001x|r Wildseed Root Grain. It's possible to receive rewards from higher quality spirits of the same type as well.",
-								["g"] = {
-									i(178881, {	--	Dutiful Spirit (Uncommon) [Bastion]
-										["g"] = sharedData({["cost"] = {{ "i", 176832, 1 }}}, {
-											i(181225),		-- Crossbow of Contemplative Calm
-											i(181226),		-- Bronze Dual-Bladed Glaive
-											i(181232),		-- Cupbearer's Claymore
-											i(181234),		-- Dutybound Spellblade
-										}),
-									}),
-									i(178874, {	--	Martial Spirit (Uncommon) [Maldraxxus]
-										["g"] = sharedData({["cost"] = {{ "i", 176832, 1 }}}, {
-											i(181329),		-- Marrowfused Claymore
-											i(181321),		-- Gem-Crowned Wand
-											i(181327),		-- Spineforged Tenderizer
-										}),
-									}),
-									i(178882, {	--	Prideful Spirit (Uncommon) [Revendreth]
-										["g"] = sharedData({["cost"] = {{ "i", 176832, 1 }}}, {
-											i(180955),		-- Stonewing Halberd
-											i(180956),		-- Axeblade Blunderbuss
-											i(180957),		-- Batwing Glaive
-											i(180963),		-- Crypt Keeper's Vessel
-										}),
-									}),
-									i(177698, {	--	Untamed Spirit (Uncommon) [Ardenweald]
-										["g"] = sharedData({["cost"] = {{ "i", 176832, 1 }}}, {
-											i(179548),		-- Elderwood Gavel
-											i(179563),		-- Heartwood Stem
-											i(181313),		-- Snapper Soul
-											i(181314),		-- Gulper Soul
-										}),
-									}),
-								},
-							}),
-							n(-932, {	-- Greater Spirit
-								["description"] = "Requires minimum |cFFFFD7002x|r Wildseed Root Grain. It's possible to receive rewards from lower & higher quality spirits of the same type as well.",
-								["g"] = {
-									i(178880, {	--	Divine Dutiful Spirit (Rare)
-										["sym"] = { { "select", "itemID", 178881 } },	-- Dutiful Spirit Bastion (Uncommon)
-										["g"] = sharedData({["cost"] = {{ "i", 176832, 2 }}}, {
-											i(181228),		-- Temple Guard's Partisan
-											i(181229),		-- Tranquil's Censer
-											i(181230),		-- Pugilist's Chakram
-											i(181233),		-- Bellringer's Hammer
-											i(181317),		-- Dauntless Duskrunner
-										}),
-									}),
-									i(178877, {	--	Divine Martial Spirit (Rare)
-										["sym"] = { { "select", "itemID", 178874 } },	-- Martial Spirit Maldraxxus (Uncommon)
-										["g"] = sharedData({["cost"] = {{ "i", 176832, 2 }}}, {
-											i(181330),		-- Marrowfused Warglaive
-											i(181325),		-- Marrowfused Dagger
-											i(181328),		-- Marrowfused Sword
-											i(181331),		-- Marrowfused Shield
-											i(181300),		-- Gruesome Flayedwing
-											i(181326),		-- Bloodstained Hacksaw
-											i(181323),		-- Blightclutched Greatstaff
-										}),
-									}),
-									i(178883, {	--	Divine Prideful Spirit (Rare)
-										["sym"] = { { "select", "itemID", 178882 } },	-- Prideful Spirit Revendreth (Uncommon)
-										["g"] = sharedData({["cost"] = {{ "i", 176832, 2 }}}, {
-											i(180954),		-- Crypt Watcher's Spire
-											i(180959),		-- Dredger Anklebiter
-											i(180960),		-- Shiny-Metal Topped Basher
-											i(180954),		-- Ember Court Barrier
-											i(181316),		-- Silvertip Dredwing
-										}),
-									}),
-									i(177699, {	--	Divine Untamed Spirit Ardenweald (Rare)
-										["sym"] = { { "select", "itemID", 177698 } },	-- Untamed Spirit Ardenweald (Uncommon)
-										["g"] = sharedData({["cost"] = {{ "i", 176832, 2 }}}, {
-											i(179499),		-- Nightwillow Barb
-											i(179538),		-- Grove Warden's Maul
-											i(179605),		-- Elderwood Barrier
-											i(179514),		-- Ripvine Saber
-											i(179585),		-- Nightwillow Shortbow
-											i(180726),		-- Pale Acidmaw
-											i(180723),		-- Enchanted Wakener's Runestag
-											i(180414),		-- Wakener's Runestag
-										}),
-									}),
-								},
-							}),
-							n(-933, {	-- Divine Spirit
-								["description"] = "Requires minimum |cFFFFD7004x|r Wildseed Root Grain. It's possible to receive rewards from lower quality spirits of the same type as well.",
-								["g"] = {
-									i(178879, {	--	Greater Dutiful Spirit (Epic)
-										["sym"] = { { "select", "itemID", 178880 } },	-- Divine Dutiful Spirit (Rare)
-										["g"] = sharedData({["cost"] = {{ "i", 176832, 4 }}}, {
-											i(181227),		-- Bronze Ceremonial Targe
-											i(181231),		-- Broadbladed Severer
-											i(181235),		-- Final Arbiter's Gavel
-											--i(181227),	-- Backpack (Spirit Tender's Pack)
-										}),
-									}),
-									i(178878, {	--	Greater Martial Spirit (Epic)
-										["sym"] = { { "select", "itemID", 178877 } },	-- Divine Martial Spirit (Rare)
-										["g"] = sharedData({["cost"] = {{ "i", 176832, 4 }}}, {
-											i(181320),		-- Bonejowl Ballista
-											i(181322),		-- Bonebound Tome
-											--i(181317),	-- Backpack (Spirit Tender's Pack)
-										}),
-									}),
-									i(178884, {	--	Greater Prideful Spirit (Epic)
-										["sym"] = { { "select", "itemID", 178883 } },	-- Divine Prideful Spirit (Rare)
-										["g"] = sharedData({["cost"] = {{ "i", 176832, 4 }}}, {
-											i(180958),		-- Redelev House Foil
-											i(180961),		-- Silver-Bladed Ritual Dagger
-											i(180962),		-- Sterling-Silver Cudgel
-											--i(181317),	-- Backpack (Spirit Tender's Pack)
-										}),
-									}),
-									i(177700, {	--	Greater Untamed Spirit Ardenweald (Epic)
-										["sym"] = { { "select", "itemID", 177699 } },	-- Divine Untamed Spirit Ardenweald (Rare)
-										["g"] = sharedData({["cost"] = {{ "i", 176832, 4 }}}, {
-											i(179509),		-- Grove Warden's Edge
-											i(179516),		-- Songwood Staff
-											i(179533),		-- Grove Warden's Harvester
-											--i(181225),	-- Backpack (Spirit Tender's Pack)
-										}),
-									}),
-								},
 							}),
 						},
 					}),

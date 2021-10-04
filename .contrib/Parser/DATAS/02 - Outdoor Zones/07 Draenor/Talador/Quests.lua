@@ -1463,7 +1463,7 @@ _.Zones =
 					},
 				}),
 				q(36843, {	-- They Came From Above
-					-- TODO: ["sourceQuests"] = { },
+					["sourceQuests"] = { 34579 },	-- Gas Guzzlers
 					["provider"] = { "n", 86522 },	-- Akhan
 					["coord"] = { 67.4, 42.2, TALADOR },
 					["isBreadcrumb"] = true,

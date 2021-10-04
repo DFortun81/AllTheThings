@@ -2654,6 +2654,7 @@ _.HiddenQuestTriggers = {
 			q(61936),	-- Triggered after Restock: Surveillance
 			--q(61825),	-- During Ember Court after finishin Glimpse of the Wilds Niya's minigame
 			q(59691),	-- "The Party Herald"
+			q(61931),	-- Restocked Ember Court security/Killing house Iremoore Assassin (npcid:173098)
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

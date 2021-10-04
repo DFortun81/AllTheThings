@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(119, {	-- Sholazar Basin
+	m(NORTHREND, {
+		m(SHOLAZAR_BASIN, {
 			filter(BATTLE_PETS, {
 				p(649, { -- Biletoad
 					["crs"] = { 62815 },	-- Biletoad

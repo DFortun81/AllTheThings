@@ -343,8 +343,8 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 41782 },	-- To The Hills
 							["provider"] = { "n", 104535 },	-- Lea Stonepaw
 							["classes"] = { DRUID },
-							["coord"] = { 51.3, 36.8, 116 },
-							["maps"] = { 116 },	-- Grizzly Hills
+							["coord"] = { 51.3, 36.8, GRIZZLY_HILLS },
+							["maps"] = { GRIZZLY_HILLS },
 							["u"] = REMOVED_FROM_GAME,	-- was not part of the questline as of 12/12/20
 						}),
 						q(42365, {	-- Focusing the Energies
@@ -666,14 +666,15 @@ _.ExpansionFeatures =
 							["maps"] = { 760 },	-- Moonglade
 							["g"] = {
 								i(139723),	-- Robes of the Dreamgrove
+								title(327),	-- Archdruid <Name>
 							},
 						}),
 						q(41918, {	-- The Dreamer Returns
 							["sourceQuests"] = { 40647 },	-- When Dreams Become Nightmares
 							["provider"] = { "n", 104535 },	-- Lea Stonepaw
 							["classes"] = { DRUID },
-							["coord"] = { 51.3, 36.8, 116 },
-							["maps"] = { 116 },	-- Grizzly Hills
+							["coord"] = { 51.3, 36.8, GRIZZLY_HILLS },
+							["maps"] = { GRIZZLY_HILLS },
 						}),
 						q(40644, {	-- The Dreamway
 							["sourceQuests"] = { 41106 },	-- Call of the Wilds
@@ -719,8 +720,8 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 41782 },	-- To The Hills
 							["provider"] = { "n", 104385 },	-- Ursol
 							["classes"] = { DRUID },
-							["coord"] = { 50.5, 37.6, 116 },
-							["maps"] = { 116 },	-- Grizzly Hills
+							["coord"] = { 50.5, 37.6, GRIZZLY_HILLS },
+							["maps"] = { GRIZZLY_HILLS },
 						}),
 						q(44232, {	-- The Grove Provides
 						--	this is now available to level 45 characters (was previously 110).  unsure if it has any specific SQs or if it's just "hey, congratulations for hitting this level!"
@@ -762,8 +763,8 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 41790 },	-- The First Trial of Ursol
 							["provider"] = { "n", 104385 },	-- Ursol
 							["classes"] = { DRUID },
-							["coord"] = { 50.5, 37.6, 116 },
-							["maps"] = { 116 },	-- Grizzly Hills
+							["coord"] = { 50.5, 37.6, GRIZZLY_HILLS },
+							["maps"] = { GRIZZLY_HILLS },
 						}),
 						q(40651, {	-- The Seed of Ages
 							["u"] = REMOVED_FROM_GAME,
@@ -787,8 +788,8 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 41791 },	-- The Second Trial of Ursol
 							["provider"] = { "n", 104385 },	-- Ursol
 							["classes"] = { DRUID },
-							["coord"] = { 50.5, 37.6, 116 },
-							["maps"] = { 116 },	-- Grizzly Hills
+							["coord"] = { 50.5, 37.6, GRIZZLY_HILLS },
+							["maps"] = { GRIZZLY_HILLS },
 						}),
 						q(42053, {	-- The War of Ancients
 							["classes"] = { DRUID },
@@ -864,9 +865,9 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 41792 },	-- The Third Trial of Ursol
 							["provider"] = { "n", 104535 },	-- Lea Stonepaw
 							["classes"] = { DRUID },
-							["coord"] = { 51.3, 36.8, 116 },
+							["coord"] = { 51.3, 36.8, GRIZZLY_HILLS },
 							["maps"] = {
-								116,	-- Grizzly Hills
+								GRIZZLY_HILLS,
 								757,	-- Ursoc's Lair
 							},
 							["g"] = {

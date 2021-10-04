@@ -24,7 +24,7 @@ _.Holidays = { applyholiday(DAY_OF_THE_DEAD, {
 				["coords"] = {
 					{ 47.8, 55.9, AZUREMYST_ISLE },
 					{ 33.9, 39.3, LEGION_DALARAN },
-					{ 34.4, 39.1, 125 },	-- Dalaran: Northrend
+					{ 34.4, 39.1, NORTHREND_DALARAN },
 					{ 69.4, 40.5, DARNASSUS },
 					{ 61.0, 36.9, DUN_MOROGH },
 					{ 47.2, 17.8, DUROTAR },	-- Org
@@ -37,7 +37,7 @@ _.Holidays = { applyholiday(DAY_OF_THE_DEAD, {
 				["maps"] = {
 					AZUREMYST_ISLE,
 					LEGION_DALARAN,
-					125,	-- Dalaran: Northrend
+					NORTHREND_DALARAN,
 					DARNASSUS,
 					DUN_MOROGH,
 					DUROTAR,
@@ -75,7 +75,7 @@ _.Holidays = { applyholiday(DAY_OF_THE_DEAD, {
 					["timeline"] = { "added 3.2.2.10505" },
 				}),
 			},
-		}, {	
+		}, {
 			q(14169, {	-- The Grateful Dead — Azuremyst Isle, Draenei
 				["qg"] = 34484,	-- Cheerful Draenei Spirit
 				["coord"] = { 47.6, 55.8, AZUREMYST_ISLE },
@@ -85,12 +85,12 @@ _.Holidays = { applyholiday(DAY_OF_THE_DEAD, {
 			q(14166, {	-- The Grateful Dead — Dalaran, all
 				["qg"] = 35256,	-- Cheerful Dalaran Spirit
 				["coords"] = {
-					{ 34.4, 38.1, 125 },	-- Dalaran: Northrend
+					{ 34.4, 38.1, NORTHREND_DALARAN },
 					{ 33.8, 38.3, LEGION_DALARAN },
 				},
 				["maps"] = {
 					625,	-- Dalaran: Broken Isles
-					125,	-- Dalaran: Northrend
+					NORTHREND_DALARAN,
 				},
 			}),
 			q(14170, {	-- The Grateful Dead — Darnassus, Night Elf / Void Elf
@@ -179,7 +179,7 @@ _.Holidays = { applyholiday(DAY_OF_THE_DEAD, {
 				["coords"] = {
 					{ 47.8, 55.9, AZUREMYST_ISLE },
 					{ 33.9, 39.3, LEGION_DALARAN },
-					{ 34.4, 39.1, 125 },	-- Dalaran: Northrend
+					{ 34.4, 39.1, NORTHREND_DALARAN },
 					{ 69.4, 40.5, DARNASSUS },
 					{ 61.0, 36.9, DUN_MOROGH },
 					{ 47.2, 17.8, DUROTAR },
@@ -193,7 +193,7 @@ _.Holidays = { applyholiday(DAY_OF_THE_DEAD, {
 				["maps"] = {
 					AZUREMYST_ISLE,
 					LEGION_DALARAN,
-					125,	-- Dalaran: Northrend
+					NORTHREND_DALARAN,
 					DARNASSUS,
 					DUN_MOROGH,
 					DUROTAR,

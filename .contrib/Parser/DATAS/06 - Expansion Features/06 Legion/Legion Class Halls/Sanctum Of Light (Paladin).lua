@@ -286,7 +286,8 @@ _.ExpansionFeatures =
 							--["races"] = { BLOODELF, DARKIRONDWARF }, -- Might need confirmation
 							["sourceQuests"] = { 43486 },	-- Cracking the Codex
 							["coord"] = { 48.4, 72.8, 24 },
-							["description"] = "Complete Cracking the Codex (43486) and don't accept the next quest. Go back to Aponi instead."
+							["description"] = "Complete Cracking the Codex (43486) and don't accept the next quest. Go back to Aponi instead.",
+							["isBreadcrumb"] = true,
 						}),
 						q(45149, {	-- Ending the Crescent Curse
 							["sourceQuests"] = { 45147 },	-- Felstone Destruction
@@ -525,8 +526,8 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 42002 }, -- To Northrend
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 105724 },	-- Orik Trueheart
-							["coord"] = { 56.8, 78.7, 117 },	-- Howling Fjord
-							["maps"] = { 117 },	-- Howling Fjord
+							["coord"] = { 56.8, 78.7, HOWLING_FJORD },
+							["maps"] = { HOWLING_FJORD },
 						}),
 						q(46071, {	-- The Hammer of Dalaran
 							["sourceQuests"] = { 46070 },	-- Preparations Underway

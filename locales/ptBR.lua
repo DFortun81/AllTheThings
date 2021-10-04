@@ -24,7 +24,7 @@ local L = app.L;
 	--TODO: L.RACE_LOCKED = "Race Locked";
 	--TODO: L.PLEASE_REPORT_MESSAGE = ": Please report this to the ATT Discord in #errors! Thanks!";
 	--TODO: L.NOT_AVAILABLE_IN_PL = "Not available in Personal Loot.";
-	--TODO: L.MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content\n(Type '/att ' in chat then Shift-Click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order) may be required to register all the items correctly.|r";
+	--TODO: L.MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then Shift-Click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
 	--TODO: L.ITEM_GIVES_REP = "Provides Reputation with '";
 	--TODO: L.COST = "Cost";
 	--TODO: L.COST_DESC = "This contains the visual breakdown of what is required to obtain or purchase this Thing";
@@ -576,7 +576,8 @@ for key,value in pairs({
 		--TODO: ["Normal"] = "N",
 		--TODO: ["Heroic"] = "H",
 		--TODO: ["Mythic"] = "M",
-		--TODO: ["Ny'alotha, the Waking City"] = "Ny'alotha",
+		["Ny'alotha, a Cidade Desperta"] = "Ny'alotha",				-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+		["Tazavesh, o Mercado Oculto"] = "Tazavesh",				-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 		--TODO: ["10 Player"] = "10M",
 		--TODO: ["10 Player (Heroic)"] = "10M (H)",
 		--TODO: ["25 Player"] = "25M",
@@ -820,12 +821,13 @@ for key,value in pairs({
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Amigo Bom pra Diabo",	-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			[-931] = GetSpellInfo(172153),							-- Spirit
-			[-932] = GetSpellInfo(13826),							-- Greater Spirit
-			[-933] = "Espírito Divino",								-- Divine Spirit
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 			--TODO: [-937] = "Transport Network",					-- Transport Network (Night Fae)
+			[-1002] = "Espírito Obediente",							-- Dutiful Spirit
+			[-1003] = "Espírito Marcial",							-- Martial Spirit
+			[-1004] = "Espírito Orgulhoso",							-- Prideful Spirit
+			[-1005] = "Espírito Indomado",							-- Untamed Spirit
 
 		-- SL Bastion/Kyrian
 			[-940] = "Conselho dos Ascendidos",						-- Ascended Counil
@@ -2592,7 +2594,7 @@ for key,value in pairs({
 	[329919] = "Suprimentos Roubados",	-- Stolen Supplies
 	--TODO: [330168] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [330169] = "Direbrew Cog",	-- Direbrew Cog
-	--TODO: [330170] = "Hozen Totem",	-- Hozen Totem
+	[330170] = "Totem Hozen",	-- Hozen Totem
 	[330183] = "Arca Maré-férrea",	-- Irontide Lockbox
 	[330627] = "Placa de Perigo",	-- Danger Sign
 	--TODO: [332220] = "Glowing Arcane Trunk",	-- Glowing Arcane Trunk

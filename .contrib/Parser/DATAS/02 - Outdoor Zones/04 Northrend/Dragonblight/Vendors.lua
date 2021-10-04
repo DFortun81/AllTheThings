@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(115, {	-- Dragonblight
+	m(NORTHREND, {
+		m(DRAGONBLIGHT, {
 			n(VENDORS, {
 				n(26569, {	-- Alys Vol'tyr <Reagents & Enchanting Supplies>
-					["coord"] = { 36.2, 46.6, 115 },
+					["coord"] = { 36.2, 46.6, DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -18,7 +18,7 @@ _.Zones =
 					},
 				}),
 				n(27030, {	-- Bradley Towns <Reagents & Enchanting Supplies>
-					["coord"] = { 76.8, 62.2, 115 },
+					["coord"] = { 76.8, 62.2, DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -28,7 +28,7 @@ _.Zones =
 					},
 				}),
 				n(27054, {	-- Modoru <Reagents & Enchanting Supplies>
-					["coord"] = { 28.8, 55.8, 115 },
+					["coord"] = { 28.8, 55.8, DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil

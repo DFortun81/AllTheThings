@@ -4,14 +4,14 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(114, {	-- Borean Tundra
+	m(NORTHREND, {
+		m(BOREAN_TUNDRA, {
 			n(FACTIONS, {
 				faction(1037, {	-- Alliance Vanguard
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(32564, {	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
-							["coord"] = { 57.7, 66.4, 114 },
+							["coord"] = { 57.7, 66.4, BOREAN_TUNDRA },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(38464),	-- Gnomish Magician's Quill
@@ -30,7 +30,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								q(13088, {	-- Northern Cooking
-									["coord"] = { 57.93, 71.54, 114 },
+									["coord"] = { 57.93, 71.54, BOREAN_TUNDRA },
 									["races"] = ALLIANCE_ONLY,
 									["provider"] = { "n", 26989 },		-- Quest Giver: Rollick MacKreel <Cooking Trainer>
 									["g"] = {
@@ -38,7 +38,7 @@ _.Zones =
 									},
 								}),
 								n(35131, {	-- Durgan Thunderbeak <Gryphon Keeper>
-									["coord"] = { 58.9, 68.1, 114 },
+									["coord"] = { 58.9, 68.1, BOREAN_TUNDRA },
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										i(25471),	-- Ebon Gryphon Mount
@@ -58,7 +58,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(32565, {	-- Gara Skullcrush <Horde Expedition Quartermaster>
-							["coord"] = { 41.4, 53.7, 114 },
+							["coord"] = { 41.4, 53.7, BOREAN_TUNDRA },
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(38452),	-- Bulwark of the Warchief
@@ -77,7 +77,7 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								q(13090, {	-- Northern Cooking
-									["coord"] = { 42.0, 54.1, 114 },
+									["coord"] = { 42.0, 54.1, BOREAN_TUNDRA },
 									["races"] = HORDE_ONLY,
 									["provider"] = { "n", 26972 },	-- Orn Tenderhoof <Cooking Trainer>
 									["g"] = {
@@ -85,7 +85,7 @@ _.Zones =
 									},
 								}),
 								n(35132, {	-- Tohfo Skyhoof <Wind Rider Keeper>
-									["coord"] = { 42.2, 55.4, 114 },
+									["coord"] = { 42.2, 55.4, BOREAN_TUNDRA },
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										i(25475),	-- Blue Wind Rider
@@ -106,7 +106,7 @@ _.Zones =
 					["g"] = {
 						q(11945, {	-- Preparing for the Worst
 							["isDaily"] = true,
-							["coord"] = { 64.0, 45.7, 114 },
+							["coord"] = { 64.0, 45.7, BOREAN_TUNDRA },
 							["provider"] = { "n", 26213 },	-- Utaik
 						}),
 					},

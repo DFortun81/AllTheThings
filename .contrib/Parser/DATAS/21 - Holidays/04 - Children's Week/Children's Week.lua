@@ -93,7 +93,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 						["criteriaID"] = 6,	-- Dalaran Brownie
 						["cost"] = { { "i", 42431, 1 } },	-- Dalaran Brownie
 						["maps"] = {
-							125,	-- Dalaran
+							NORTHREND_DALARAN,
 							LEGION_DALARAN,
 						},
 					},
@@ -102,7 +102,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 						["criteriaID"] = 7,	-- Dalaran Doughnut
 						["cost"] = { { "i", 42430, 1 } },	-- Dalaran Doughnut
 						["maps"] = {
-							125,	-- Dalaran
+							NORTHREND_DALARAN,
 							LEGION_DALARAN,
 						},
 					},
@@ -111,7 +111,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 						["criteriaID"] = 4,	-- Delicious Chocolate Cake
 						["cost"] = { { "i", 33924, 1 } },	-- Delicious Chocolate Cake
 						["maps"] = {
-							125,	-- Dalaran
+							NORTHREND_DALARAN,
 							LEGION_DALARAN,
 						},
 					},
@@ -122,7 +122,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 						["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
 						["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
 						["maps"] = {
-							125,	-- Dalaran
+							NORTHREND_DALARAN,
 							LEGION_DALARAN,
 							393,	-- Shrine of Seven Stars
 						},
@@ -134,7 +134,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 						["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
 						["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
 						["maps"] = {
-							125,	-- Dalaran
+							NORTHREND_DALARAN,
 							LEGION_DALARAN,
 							393,	-- Shrine of Seven Stars
 						},
@@ -286,11 +286,11 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 3.0.1" },
 				-- #if AFTER 7.0.3.22290
 				["coords"] = {
-					{ 44.86, 45.57, 125 },	-- Jepetto Joybuzz
+					{ 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
 					{ 43.61, 45.13, 625 },	-- Jepetto Joybuzz
 				},
 				["maps"] = {
-					125,	-- Dalaran [Northrend]
+					NORTHREND_DALARAN,
 					625,	-- Dalaran [Broken Isles]
 				},
 				["crs"] = {
@@ -298,8 +298,8 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					96483,	-- Jeppetto Joybuzz
 				},
 				-- #else
-				["coord"] = { 44.86, 45.57, 125 },	-- Jepetto Joybuzz
-				["maps"] = { 125 },	-- Dalaran [Northrend]
+				["coord"] = { 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
+				["maps"] = { NORTHREND_DALARAN },
 				["cr"] = 29478,	-- Jeppetto Joybuzz
 				-- #endif
 				["isYearly"] = true,
@@ -317,11 +317,11 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 3.0.1" },
 				-- #if AFTER 7.0.3.22290
 				["coords"] = {
-					{ 44.86, 45.57, 125 },	-- Jepetto Joybuzz
+					{ 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
 					{ 43.61, 45.13, 625 },	-- Jepetto Joybuzz
 				},
 				["maps"] = {
-					125,	-- Dalaran [Northrend]
+					NORTHREND_DALARAN,
 					625,	-- Dalaran [Broken Isles]
 				},
 				["crs"] = {
@@ -329,8 +329,8 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					96483,	-- Jeppetto Joybuzz
 				},
 				-- #else
-				["coord"] = { 44.86, 45.57, 125 },	-- Jepetto Joybuzz
-				["maps"] = { 125 },	-- Dalaran [Northrend]
+				["coord"] = { 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
+				["maps"] = { NORTHREND_DALARAN },
 				["cr"] = 29478,	-- Jeppetto Joybuzz
 				-- #endif
 				["isYearly"] = true,
@@ -467,9 +467,9 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ "n", 33533 },	-- Oracle Orphan
 				},
 				["sourceQuest"] = 13937,	-- A Trip To The Wonderworks
-				["coord"] = { 49.37, 63.26, 125 },	-- Orphan Matron Aria
+				["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = { 125 },	-- Dalaran (Northrend)
+				["maps"] = { NORTHREND_DALARAN },
 				["cr"] = 34365,	-- Orphan Matron Aria
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
@@ -487,10 +487,10 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ "n", 33532 },	-- Wolvar Orphan
 				},
 				["sourceQuest"] = 13938,	-- A Trip To The Wonderworks
-				["coord"] = { 49.37, 63.26, 125 },	-- Orphan Matron Aria
+				["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = {
-					125,	-- Dalaran (Northrend)
+					NORTHREND_DALARAN,
 				},
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
@@ -722,14 +722,14 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["sourceQuest"] = 13927,	-- Little Orphan Kekek Of The Wolvar
 				["coords"] = {
-					{ 52.93, 44.93, 116 },	-- Path to Grizzlemaw
-					{ 51.69, 40.74, 116 },	-- Kekek taken to Grizzlemaw
-					{ 50.71, 42.75, 116 },	-- Kekek taken to Grizzlemaw
+					{ 52.93, 44.93, GRIZZLY_HILLS },	-- Path to Grizzlemaw
+					{ 51.69, 40.74, GRIZZLY_HILLS },	-- Kekek taken to Grizzlemaw
+					{ 50.71, 42.75, GRIZZLY_HILLS },	-- Kekek taken to Grizzlemaw
 				},
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = {
-					116,	-- Grizzly Hills
-					125,	-- Dalaran (Northrend)
+					GRIZZLY_HILLS,
+					NORTHREND_DALARAN,
 				},
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
@@ -877,17 +877,17 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 			}),
 			q(13927, {	-- Little Orphan Kekek Of The Wolvar [Neutral - Wolvar - START]
 				["qg"] = 34365,	-- Orphan Matron Aria
-				["coord"] = { 49.37, 63.26, 125 },	-- Orphan Matron Aria
+				["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = { 125 },	-- Dalaran (Northrend)
+				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 			}),
 			q(13926, {	-- Little Orphan Roo Of The Oracles [Neutral - Oracles - START]
 				["qg"] = 34365,	-- Orphan Matron Aria
-				["coord"] = { 49.37, 63.26, 125 },	-- Orphan Matron Aria
+				["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = { 125 },	-- Dalaran (Northrend)
+				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 			}),
@@ -956,15 +956,15 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					13934,	-- The Bronze Dragonshrine
 				},
 				["coords"] = {
-					{ 40.01, 82.05, 119 },	-- Waygate Entrance
-					{ 40.66, 84.18, 119 },	-- Waygate Entrance
+					{ 40.01, 82.05, SHOLAZAR_BASIN },	-- Waygate Entrance
+					{ 40.66, 84.18, SHOLAZAR_BASIN },	-- Waygate Entrance
 					{ 47.56, 09.17, UNGORO_CRATER },	-- The Etymidian
 				},
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = {
 					UNGORO_CRATER,
-					119,	-- Sholazar Basin
-					125,	-- Dalaran (Northrend)
+					SHOLAZAR_BASIN,
+					NORTHREND_DALARAN,
 				},
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
@@ -1009,14 +1009,14 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["sourceQuest"] = 13926,	-- Little Orphan Roo Of The Oracles
 				["coords"] = {
-					{ 43.87, 12.06, 114 },	-- Path starts
-					{ 42.06, 11.26, 114 },	-- Path branches
-					{ 42.68, 12.61, 114 },	-- Roo visits Winterfin
+					{ 43.87, 12.06, BOREAN_TUNDRA },	-- Path starts
+					{ 42.06, 11.26, BOREAN_TUNDRA },	-- Path branches
+					{ 42.68, 12.61, BOREAN_TUNDRA },	-- Roo visits Winterfin
 				},
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = {
-					114,	-- Borean Tundra
-					125,	-- Dalaran (Northrend)
+					BOREAN_TUNDRA,
+					NORTHREND_DALARAN,
 				},
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
@@ -1027,11 +1027,11 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ "n", 33532 },	-- Wolvar Orphan
 				},
 				["sourceQuest"] = 13927,	-- Little Orphan Kekek Of The Wolvar
-				["coord"] = { 46.38, 67.79, 115 },	-- Kekek taken to Snowfall Glade
+				["coord"] = { 46.38, 67.79, DRAGONBLIGHT },	-- Kekek taken to Snowfall Glade
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = {
-					115,	-- Dragonblight
-					125,	-- Dalaran (Northrend)
+					DRAGONBLIGHT,
+					NORTHREND_DALARAN,
 				},
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
@@ -1191,14 +1191,14 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["sourceQuest"] = 13926,	-- Little Orphan Roo Of The Oracles
 				["coords"] = {
-					{ 52.93, 44.93, 116 },	-- Path to Grizzlemaw
-					{ 51.69, 40.74, 116 },	-- Roo taken to Grizzlemaw
-					{ 50.71, 42.75, 116 },	-- Roo taken to Grizzlemaw
+					{ 52.93, 44.93, GRIZZLY_HILLS },	-- Path to Grizzlemaw
+					{ 51.69, 40.74, GRIZZLY_HILLS },	-- Roo taken to Grizzlemaw
+					{ 50.71, 42.75, GRIZZLY_HILLS },	-- Roo taken to Grizzlemaw
 				},
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = {
-					116,	-- Grizzly Hills
-					125,	-- Dalaran (Northrend)
+					GRIZZLY_HILLS,
+					NORTHREND_DALARAN,
 				},
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
@@ -1225,13 +1225,13 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["sourceQuest"] = 13926,	-- Little Orphan Roo Of The Oracles
 				["coords"] = {
-					{ 69.66, 46.25, 115 },	-- Path Starts
-					{ 71.25, 40.81, 115 },	-- Roo taken to Bronze Dragonshrine
+					{ 69.66, 46.25, DRAGONBLIGHT },	-- Path Starts
+					{ 71.25, 40.81, DRAGONBLIGHT },	-- Roo taken to Bronze Dragonshrine
 				},
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = {
-					115,	-- Dragonblight
-					125,	-- Dalaran (Northrend)
+					DRAGONBLIGHT,
+					NORTHREND_DALARAN,
 				},
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
@@ -1243,13 +1243,13 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["sourceQuest"] = 13927,	-- Little Orphan Kekek Of The Wolvar
 				["coords"] = {
-					{ 69.66, 46.25, 115 },	-- Path Starts
-					{ 71.25, 40.81, 115 },	-- Roo taken to Bronze Dragonshrine
+					{ 69.66, 46.25, DRAGONBLIGHT },	-- Path Starts
+					{ 71.25, 40.81, DRAGONBLIGHT },	-- Roo taken to Bronze Dragonshrine
 				},
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = {
-					115,	-- Dragonblight
-					125,	-- Dalaran (Northrend)
+					DRAGONBLIGHT,
+					NORTHREND_DALARAN,
 				},
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
@@ -1264,11 +1264,11 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					13929,	-- The Biggest Tree Ever!
 					13934,	-- The Bronze Dragonshrine
 				},
-				["coord"] = { 59.81, 54.45, 115 },	-- Meet Alexstraza
+				["coord"] = { 59.81, 54.45, DRAGONBLIGHT },	-- Meet Alexstraza
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = {
-					115,	-- Dragonblight
-					125,	-- Dalaran (Northrend)
+					DRAGONBLIGHT,
+					NORTHREND_DALARAN,
 				},
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
@@ -1283,11 +1283,11 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					13951,	-- Playmates!
 					13934,	-- The Bronze Dragonshrine
 				},
-				["coord"] = { 59.81, 54.45, 115 },	-- Meet Alexstraza
+				["coord"] = { 59.81, 54.45, DRAGONBLIGHT },	-- Meet Alexstraza
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = {
-					115,	-- Dragonblight
-					125,	-- Dalaran (Northrend)
+					DRAGONBLIGHT,
+					NORTHREND_DALARAN,
 				},
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
@@ -1341,11 +1341,11 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					13951,	-- Playmates!
 					13934,	-- The Bronze Dragonshrine
 				},
-				["coord"] = { 27.11, 58.73, 119 },	-- Meet Hemest Nesingwary
+				["coord"] = { 27.11, 58.73, SHOLAZAR_BASIN },	-- Meet Hemest Nesingwary
 				["timeline"] = { "added 3.0.1" },
 				["maps"] = {
-					119,	-- Sholazar Basin
-					125,	-- Dalaran (Northrend)
+					SHOLAZAR_BASIN,
+					NORTHREND_DALARAN,
 				},
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),

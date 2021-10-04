@@ -26,7 +26,7 @@ local L = app.L;
 	L.RACE_LOCKED = "种族锁定";
 	L.PLEASE_REPORT_MESSAGE = ": 请把错误报告给ATT Discord的#errors! 谢谢!";
 	L.NOT_AVAILABLE_IN_PL = "在个人拾取中不可用.";
-	L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容\n(在聊天中输入'/att '然后Shift-点击链接的物品)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order) may be required to register all the items correctly.|r";	-- TODO
+	L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容.\n(在聊天中输入'/att '然后Shift-点击链接的物品)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";	-- TODO
 	--TODO: L.ITEM_GIVES_REP = "Provides Reputation with '";
 	L.COST = "花费";
 	L.COST_DESC = "这里面包含了获得或购买这个物品所需要的物品";
@@ -609,7 +609,8 @@ for key,value in pairs({
 	--TODO: ["Normal"] = "N",
 	--TODO: ["Heroic"] = "H",
 	--TODO: ["Mythic"] = "M",
-	--TODO: ["Ny'alotha, the Waking City"] = "Ny'alotha",
+	["尼奥罗萨，觉醒之城"] = "尼奥罗萨",											-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+	["塔扎维什，帷纱集市"] = "塔扎维什",											-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 	--TODO: ["10 Player"] = "10M",
 	--TODO: ["10 Player (Heroic)"] = "10M (H)",
 	--TODO: ["25 Player"] = "25M",
@@ -620,6 +621,10 @@ for key,value in pairs({
 	--TODO: ["Covenant:"] = "Cov:",
 })
 do a[key] = value; end
+if GetLocale() == "zhTW" then
+	a["奈奧羅薩，甦醒之城"] = "奈奧羅薩"											-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+	a["『帷幕市集』塔札維許"] = "塔札維許"										-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+end
 
 L.CUSTOM_DIFFICULTIES[-1] = "团队查找器 (5.4)";
 L.CUSTOM_DIFFICULTIES[-2] = "弹性 (5.4)";
@@ -868,12 +873,13 @@ for key,value in pairs({
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": 永远的好魔友",	-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			--TODO: [-931] = GetSpellInfo(7851),					-- Spirit
-			--TODO: [-932] = GetSpellInfo(172153),					-- Greater Spirit
-			--TODO: [-933] = GetSpellInfo(13826),					-- Divine Spirit
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
-			[-937] = "传送网络",										-- Transport Network (Night Fae)
+			[-937] = "传送网络",									-- Transport Network (Night Fae)
+			[-1002] = "尽职精魂",									-- Dutiful Spirit
+			[-1003] = "尚武精魂",									-- Martial Spirit
+			[-1004] = "骄傲精魂",									-- Prideful Spirit
+			[-1005] = "狂野精魂",									-- Untamed Spirit
 
 		-- SL Bastion/Kyrian
 			[-940] = "晋升者议会",									-- Ascended Counil

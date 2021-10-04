@@ -201,6 +201,8 @@ local MERCHANT_GROUPS = {
 	}),
 };
 
+local HUGE_SNOWBALL = i(35557);	-- Huge Snowball
+
 _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 	-- #if ANYCLASSIC
 	["npcID"] = -53,
@@ -374,6 +376,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(35495, {	-- The Frost Lord's War Cloak [Level 70]
 					["timeline"] = { "removed 3.3.3.11723" },
 				}),
+				HUGE_SNOWBALL,
 			},
 		}),
 		-- #if AFTER WRATH
@@ -589,44 +592,44 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = {
 									crit(1, {	-- Dragonblight
-										["coord"] = { 75.0, 44.0, 115 },
+										["coord"] = { 75.0, 44.0, DRAGONBLIGHT },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 115 },	-- Dragonblight
+										["maps"] = { DRAGONBLIGHT },
 									}),
 									crit(2, {	-- Crystalsong Forest
-										["coord"] = { 78.0, 75.0, 127 },
+										["coord"] = { 78.0, 75.0, CRYSTALSONG_FOREST },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 127 },	-- Crystalsong Forest
+										["maps"] = { CRYSTALSONG_FOREST },
 									}),
 									crit(3, {	-- Howling Fjord
-										["coord"] = { 58.0, 16.0, 117 },
+										["coord"] = { 58.0, 16.0, HOWLING_FJORD },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 117 },	-- Howling Fjord
+										["maps"] = { HOWLING_FJORD },
 									}),
 									crit(4, {	-- Sholazar Basin
-										["coord"] = { 47.0, 66.0, 119 },
+										["coord"] = { 47.0, 66.0, SHOLAZAR_BASIN },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 119 },	-- Sholazar Basin
+										["maps"] = { SHOLAZAR_BASIN },
 									}),
 									crit(5, {	-- Storm Peaks
-										["coord"] = { 42.0, 87.0, 120 },
+										["coord"] = { 42.0, 87.0, THE_STORM_PEAKS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 120 },	-- Storm Peaks
+										["maps"] = { THE_STORM_PEAKS },
 									}),
 									crit(6, {	-- Zul'Drak
-										["coord"] = { 41.0, 61.0, 121 },
+										["coord"] = { 41.0, 61.0, ZULDRAK },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 121 },	-- Zul'Drak
+										["maps"] = { ZULDRAK },
 									}),
 									crit(7, {	-- Grizzly Hills
-										["coord"] = { 34.0, 61.0, 116 },
+										["coord"] = { 34.0, 61.0, GRIZZLY_HILLS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 116 },	-- Grizzly Hills
+										["maps"] = { GRIZZLY_HILLS },
 									}),
 									crit(8, {	-- Borean Tundra
-										["coord"] = { 55.0, 20.0, 114 },
+										["coord"] = { 55.0, 20.0, BOREAN_TUNDRA },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 114 },	-- Borean Tundra
+										["maps"] = { BOREAN_TUNDRA },
 									}),
 								},
 							}),
@@ -859,44 +862,44 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = {
 									crit(1, {	-- Borean Tundra
-										["coord"] = { 51.1, 11.9, 114 },
+										["coord"] = { 51.1, 11.9, BOREAN_TUNDRA },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 114 },	-- Borean Tundra
+										["maps"] = { BOREAN_TUNDRA },
 									}),
 									crit(2, {	-- Storm Peaks
-										["coord"] = { 40.3, 85.6, 120 },
+										["coord"] = { 40.3, 85.6, THE_STORM_PEAKS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 120 },	-- Storm Peaks
+										["maps"] = { THE_STORM_PEAKS },
 									}),
 									crit(3, {	-- Zul'Drak
-										["coord"] = { 43.2, 71.4, 121 },
+										["coord"] = { 43.2, 71.4, ZULDRAK },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 121 },	-- Zul'Drak
+										["maps"] = { ZULDRAK },
 									}),
 									crit(4, {	-- Grizzly Hills
-										["coord"] = { 19.1, 61.3, 116 },
+										["coord"] = { 19.1, 61.3, GRIZZLY_HILLS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 116 },	-- Grizzly Hills
+										["maps"] = { GRIZZLY_HILLS },
 									}),
 									crit(5, {	-- Howling Fjord
-										["coord"] = { 48.4, 13.5, 117 },
+										["coord"] = { 48.4, 13.5, HOWLING_FJORD },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 117 },	-- Howling Fjord
+										["maps"] = { HOWLING_FJORD },
 									}),
 									crit(6, {	-- Crystalsong Forest
-										["coord"] = { 80.5, 53.0, 127 },
+										["coord"] = { 80.5, 53.0, CRYSTALSONG_FOREST },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 127 },	-- Crystalsong Forest
+										["maps"] = { CRYSTALSONG_FOREST },
 									}),
 									crit(7, {	-- Sholazar Basin
-										["coord"] = { 47.3, 61.7, 119 },
+										["coord"] = { 47.3, 61.7, SHOLAZAR_BASIN },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 119 },	-- Sholazar Basin
+										["maps"] = { SHOLAZAR_BASIN },
 									}),
 									crit(8, {	-- Dragonblight
-										["coord"] = { 38.5, 48.4, 115 },
+										["coord"] = { 38.5, 48.4, DRAGONBLIGHT },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 115 },	-- Dragonblight
+										["maps"] = { DRAGONBLIGHT },
 									}),
 								},
 							}),
@@ -925,7 +928,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["sourceQuests"] = { 9365, 9339 },	-- A Thief's Reward (A, H)
 					}),
 					ach(272,  {	-- Torch Juggler
-						["maps"] = { 125 },	-- Dalaran (Northrend)
+						["maps"] = { NORTHREND_DALARAN },
 					}),
 				},
 			}),
@@ -1285,44 +1288,44 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 								["races"] = HORDE_ONLY,
 								["groups"] = {
 									crit(1, {	-- Dragonblight
-										["coord"] = { 39.0, 48.0, 115 },
+										["coord"] = { 39.0, 48.0, DRAGONBLIGHT },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 115 },	-- Dragonblight
+										["maps"] = { DRAGONBLIGHT },
 									}),
 									crit(2, {	-- Borean Tundra
-										["coord"] = { 51.0, 12.0, 114 },
+										["coord"] = { 51.0, 12.0, BOREAN_TUNDRA },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 114 },	-- Borean Tundra
+										["maps"] = { BOREAN_TUNDRA },
 									}),
 									crit(3, {	-- Howling Fjord
-										["coord"] = { 48.0, 13.0, 117 },
+										["coord"] = { 48.0, 13.0, HOWLING_FJORD },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 117 },	-- Howling Fjord
+										["maps"] = { HOWLING_FJORD },
 									}),
 									crit(4, {	-- Sholazar Basin
-										["coord"] = { 47.0, 62.0, 119 },
+										["coord"] = { 47.0, 62.0, SHOLAZAR_BASIN },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 119 },	-- Sholazar Basin
+										["maps"] = { SHOLAZAR_BASIN },
 									}),
 									crit(5, {	-- Storm Peaks
-										["coord"] = { 40.0, 86.0, 120 },
+										["coord"] = { 40.0, 86.0, THE_STORM_PEAKS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 120 },	-- Storm Peaks
+										["maps"] = { THE_STORM_PEAKS },
 									}),
 									crit(6, {	-- Zul'Drak
-										["coord"] = { 43.0, 71.0, 121 },
+										["coord"] = { 43.0, 71.0, ZULDRAK },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 121 },	-- Zul'Drak
+										["maps"] = { ZULDRAK },
 									}),
 									crit(7, {	-- Grizzly Hills
-										["coord"] = { 19.0, 61.0, 116 },
+										["coord"] = { 19.0, 61.0, GRIZZLY_HILLS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 116 },	-- Grizzly Hills
+										["maps"] = { GRIZZLY_HILLS },
 									}),
 									crit(8, {	-- Crystalsong Forest
-										["coord"] = { 80.0, 53.0, 127 },
+										["coord"] = { 80.0, 53.0, CRYSTALSONG_FOREST },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 127 },	-- Crystalsong Forest
+										["maps"] = { CRYSTALSONG_FOREST },
 									}),
 								},
 							}),
@@ -1565,44 +1568,44 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 								["races"] = HORDE_ONLY,
 								["groups"] = {
 									crit(1, {	-- Dragonblight
-										["coord"] = { 75.1, 43.7, 115 },
+										["coord"] = { 75.1, 43.7, DRAGONBLIGHT },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 115 },	-- Dragonblight
+										["maps"] = { DRAGONBLIGHT },
 									}),
 									crit(2, {	-- Borean Tundra
-										["coord"] = { 55.1, 20.2, 114 },
+										["coord"] = { 55.1, 20.2, BOREAN_TUNDRA },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 114 },	-- Borean Tundra
+										["maps"] = { BOREAN_TUNDRA },
 									}),
 									crit(3, {	-- Howling Fjord
-										["coord"] = { 57.7, 15.7, 117 },
+										["coord"] = { 57.7, 15.7, HOWLING_FJORD },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 117 },	-- Howling Fjord
+										["maps"] = { HOWLING_FJORD },
 									}),
 									crit(4, {	-- Sholazar Basin
-										["coord"] = { 47.9, 66.0, 119 },
+										["coord"] = { 47.9, 66.0, SHOLAZAR_BASIN },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 119 },	-- Sholazar Basin
+										["maps"] = { SHOLAZAR_BASIN },
 									}),
 									crit(5, {	-- Storm Peaks
-										["coord"] = { 41.4, 87.0, 120 },
+										["coord"] = { 41.4, 87.0, THE_STORM_PEAKS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 120 },	-- Storm Peaks
+										["maps"] = { THE_STORM_PEAKS },
 									}),
 									crit(6, {	-- Zul'Drak
-										["coord"] = { 40.4, 61.0, 121 },
+										["coord"] = { 40.4, 61.0, ZULDRAK },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 121 },	-- Zul'Drak
+										["maps"] = { ZULDRAK },
 									}),
 									crit(7, {	-- Grizzly Hills
-										["coord"] = { 34.1, 60.7, 116 },
+										["coord"] = { 34.1, 60.7, GRIZZLY_HILLS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 116 },	-- Grizzly Hills
+										["maps"] = { GRIZZLY_HILLS },
 									}),
 									crit(8, {	-- Crystalsong Forest
-										["coord"] = { 77.7, 74.9, 127 },
+										["coord"] = { 77.7, 74.9, CRYSTALSONG_FOREST },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 127 },	-- Crystalsong Forest
+										["maps"] = { CRYSTALSONG_FOREST },
 									}),
 								},
 							}),
@@ -1631,7 +1634,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["sourceQuests"] = { 9365, 9339 },	-- A Thief's Reward (A, H)
 					}),
 					ach(272, {	-- Torch Juggler
-						["maps"] = { 125, },	-- Dalaran (Northrend)
+						["maps"] = { NORTHREND_DALARAN },
 					}),
 				},
 			}),
@@ -2618,8 +2621,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					THE_CAPE_OF_STRANGLETHORN,
 					-- #endif
 					-- #if AFTER WRATH
-					120,	-- The Storm Peaks
-					125,	-- Dalaran (Northrend)
+					THE_STORM_PEAKS,
+					NORTHREND_DALARAN,
 					-- #endif
 					-- #if AFTER MOP
 					ISLE_OF_THUNDER,
@@ -2659,8 +2662,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					THE_CAPE_OF_STRANGLETHORN,
 					-- #endif
 					-- #if AFTER WRATH
-					120,	-- The Storm Peaks
-					125,	-- Dalaran (Northrend)
+					THE_STORM_PEAKS,
+					NORTHREND_DALARAN,
 					-- #endif
 					-- #if AFTER MOP
 					ISLE_OF_THUNDER,
@@ -2920,9 +2923,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13441, {	-- Desecrate this Fire! — Borean Tundra
 						["provider"] = { "o", 194033 },	-- Horde Bonfire
-						["coord"] = { 51.1, 11.9, 114 },
+						["coord"] = { 51.1, 11.9, BOREAN_TUNDRA },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 114 },	-- Borean Tundra
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					q(11768, {	-- Desecrate this Fire! — Burning Steppes
 						["provider"] = { "o", 187956 },	-- Horde Bonfire
@@ -2935,9 +2938,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13457, {	-- Desecrate this Fire! — Crystalsong Forest
 						["provider"] = { "o", 194046 },	-- Horde Bonfire
-						["coord"] = { 80.5, 53.0, 127 },
+						["coord"] = { 80.5, 53.0, CRYSTALSONG_FOREST },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 127 },	-- Crystalsong Forest
+						["maps"] = { CRYSTALSONG_FOREST },
 					}),
 					q(11769, {	-- Desecrate this Fire! — Desolace
 						["provider"] = { "o", 187957 },	-- Horde Bonfire
@@ -2946,9 +2949,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13451, {	-- Desecrate this Fire! — Dragonblight
 						["provider"] = { "o", 194037 },	-- Horde Bonfire
-						["coord"] = { 38.5, 48.4, 115 },
+						["coord"] = { 38.5, 48.4, DRAGONBLIGHT },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 115 },	-- Dragonblight
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					q(11770, {	-- Desecrate this Fire! — Durotar
 						["provider"] = { "o", 187958 },	-- Horde Bonfire
@@ -2983,9 +2986,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13454, {	-- Desecrate this Fire! — Grizzly Hills
 						["provider"] = { "o", 194042 },	-- Horde Bonfire
-						["coord"] = { 19.1, 61.3, 116 },
+						["coord"] = { 19.1, 61.3, GRIZZLY_HILLS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 116 },	-- Grizzly Hills
+						["maps"] = { GRIZZLY_HILLS },
 					}),
 					q(11775, {	-- Desecrate this Fire! — Hellfire Peninsula
 						["provider"] = { "o", 187963 },	-- Horde Bonfire
@@ -3003,9 +3006,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13453, {	-- Desecrate this Fire! — Howling Fjord
 						["provider"] = { "o", 194039 },	-- Horde Bonfire
-						["coord"] = { 48.4, 13.5, 117 },
+						["coord"] = { 48.4, 13.5, HOWLING_FJORD },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 117 },	-- Howling Fjord
+						["maps"] = { HOWLING_FJORD },
 					}),
 					q(11777, {	-- Desecrate this Fire! — Mulgore
 						["provider"] = { "o", 187965 },	-- Horde Bonfire
@@ -3051,9 +3054,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13450, {	-- Desecrate this Fire! — Sholazar Basin
 						["provider"] = { "o", 194034 },	-- Horde Bonfire
-						["coord"] = { 47.3, 61.7, 119 },
+						["coord"] = { 47.3, 61.7, SHOLAZAR_BASIN },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 119 },	-- Sholazar Basin
+						["maps"] = { SHOLAZAR_BASIN },
 					}),
 					q(11800, {	-- Desecrate this Fire! — Silithus
 						["provider"] = { "o", 187950 },	-- Horde Bonfire
@@ -3086,9 +3089,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13455, {	-- Desecrate this Fire! — Storm Peaks
 						["provider"] = { "o", 194043 },	-- Horde Bonfire
-						["coord"] = { 40.3, 85.6, 120 },
+						["coord"] = { 40.3, 85.6, THE_STORM_PEAKS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 120 },	-- Storm Peaks
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					q(44627, {	-- Desecrate this Fire! — Suramar
 						["provider"] = { "o", 259926 },	-- Horde Bonfire
@@ -3203,9 +3206,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13458, {	-- Desecrate this Fire! — Zul'Drak
 						["provider"] = { "o", 194048 },	-- Horde Bonfire
-						["coord"] = { 43.2, 71.4, 121 },
+						["coord"] = { 43.2, 71.4, ZULDRAK },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 121 },	-- Zul'Drak
+						["maps"] = { ZULDRAK },
 					}),
 					q(11804, {	-- Honor the Flame — Arathi Highlands
 						["qg"] = 25887,	-- Arathi Flame Warden
@@ -3261,9 +3264,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13485, {	-- Honor the Flame — Borean Tundra
 						["qg"] = 32801,	-- Borean Tundra Flame Warden
-						["coord"] = { 55.0, 20.0, 114 },
+						["coord"] = { 55.0, 20.0, BOREAN_TUNDRA },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 114 },	-- Borean Tundra
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					q(11810, {	-- Honor the Flame — Burning Steppes
 						["qg"] = 25892,	-- Burning Steppes Flame Warden
@@ -3276,9 +3279,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13491, {	-- Honor the Flame — Crystalsong Forest
 						["qg"] = 32807,	-- Crystalsong Forest Flame Warden
-						["coord"] = { 78.0, 75.0, 127 },
+						["coord"] = { 78.0, 75.0, CRYSTALSONG_FOREST },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 127 },	-- Crystalsong Forest
+						["maps"] = { CRYSTALSONG_FOREST },
 					}),
 					q(11811, {	-- Honor the Flame — Darkshore
 						["qg"] = 25893,	-- Darkshore Flame Warden
@@ -3306,9 +3309,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13487, {	-- Honor the Flame — Dragonblight
 						["qg"] = 32803,	-- Dragonblight Flame Warden
-						["coord"] = { 75.0, 44.0, 115 },
+						["coord"] = { 75.0, 44.0, DRAGONBLIGHT },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 115 },	-- Dragonblight
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					q(54743, {	-- Honor the Flame — Drustvar
 						["qg"] = 148934,	-- Drustvar Flame Warden
@@ -3355,9 +3358,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13489, {	-- Honor the Flame — Grizzly Hills
 						["qg"] = 32805,	-- Grizzly Hills Flame Warden
-						["coord"] = { 34.0, 61.0, 116 },
+						["coord"] = { 34.0, 61.0, GRIZZLY_HILLS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 116 },	-- Grizzly Hills
+						["maps"] = { GRIZZLY_HILLS },
 					}),
 					q(11818, {	-- Honor the Flame — Hellfire Peninsula
 						["qg"] = 25900,	-- Hellfire Peninsula Flame Warden
@@ -3372,9 +3375,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13488, {	-- Honor the Flame — Howling Fjord
 						["qg"] = 32804,	-- Howling Fjord Flame Warden
-						["coord"] = { 58.0, 16.0, 117 },
+						["coord"] = { 58.0, 16.0, HOWLING_FJORD },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 117 },	-- Howling Fjord
+						["maps"] = { HOWLING_FJORD },
 					}),
 					q(29030, {	-- Honor the Flame — Hyjal
 						["qg"] = 51682,	-- Hyjal Flame Guardian
@@ -3429,9 +3432,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13486, {	-- Honor the Flame — Sholazar Basin
 						["qg"] = 32802,	-- Sholazar Basin Flame Warden
-						["coord"] = { 47.0, 66.0, 119 },
+						["coord"] = { 47.0, 66.0, SHOLAZAR_BASIN },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 119 },	-- Sholazar Basin
+						["maps"] = { SHOLAZAR_BASIN },
 					}),
 					q(11831, {	-- Honor the Flame — Silithus
 						["qg"] = 25914,	-- Silithus Flame Warden
@@ -3456,9 +3459,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13490, {	-- Honor the Flame — Storm Peaks
 						["qg"] = 32806,	-- Storm Peaks Flame Warden
-						["coord"] = { 42.0, 87.0, 120 },
+						["coord"] = { 42.0, 87.0, THE_STORM_PEAKS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 120 },	-- Storm Peaks
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					q(54741, {	-- Honor the Flame — Stormsong Valley
 						["qg"] = 148932,	-- Stormsong Valley Flame Warden
@@ -3592,9 +3595,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13492, {	-- Honor the Flame — Zul'Drak
 						["qg"] = 32808,	-- Zul'Drak Flame Warden
-						["coord"] = { 41.0, 61.0, 121 },
+						["coord"] = { 41.0, 61.0, ZULDRAK },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 121 },	-- Zul'Drak
+						["maps"] = { ZULDRAK },
 					}),
 				}),
 			}),
@@ -3652,9 +3655,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13440, {	-- Desecrate this Fire! — Borean Tundra
 						["provider"] = { "o", 194032 },	-- Alliance Bonfire
-						["coord"] = { 55.1, 20.2, 114 },
+						["coord"] = { 55.1, 20.2, BOREAN_TUNDRA },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 114 },	-- Borean Tundra
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					q(11739, {	-- Desecrate this Fire! — Burning Steppes
 						["provider"] = { "o", 187922 },	-- Alliance Bonfire
@@ -3667,9 +3670,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13447, {	-- Desecrate this Fire! — Crystalsong Forest
 						["provider"] = { "o", 194045 },	-- Alliance Bonfire
-						["coord"] = { 77.7, 74.9, 127 },
+						["coord"] = { 77.7, 74.9, CRYSTALSONG_FOREST },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 127 },	-- Crystalsong Forest
+						["maps"] = { CRYSTALSONG_FOREST },
 					}),
 					q(11740, {	-- Desecrate this Fire! — Darkshore
 						["provider"] = { "o", 187923 },	-- Alliance Bonfire
@@ -3687,9 +3690,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13443, {	-- Desecrate this Fire! — Dragonblight
 						["provider"] = { "o", 194036 },	-- Alliance Bonfire
-						["coord"] = { 75.1, 43.7, 115 },
+						["coord"] = { 75.1, 43.7, DRAGONBLIGHT },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 115 },	-- Dragonblight
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					q(54742, {	-- Desecrate this Fire! — Drustvar
 						["provider"] = { "o", 316793 },	-- Alliance Bonfire
@@ -3732,9 +3735,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13445, {	-- Desecrate this Fire! — Grizzly Hills
 						["provider"] = { "o", 194040 },	-- Alliance Bonfire
-						["coord"] = { 34.1, 60.7, 116 },
+						["coord"] = { 34.1, 60.7, GRIZZLY_HILLS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 116 },	-- Grizzly Hills
+						["maps"] = { GRIZZLY_HILLS },
 					}),
 					q(11747, {	-- Desecrate this Fire! — Hellfire Peninsula
 						["provider"] = { "o", 187930 },	-- Alliance Bonfire
@@ -3749,9 +3752,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13444, {	-- Desecrate this Fire! — Howling Fjord
 						["provider"] = { "o", 194038 },	-- Alliance Bonfire
-						["coord"] = { 57.7, 15.7, 117 },
+						["coord"] = { 57.7, 15.7, HOWLING_FJORD },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 117 },	-- Howling Fjord
+						["maps"] = { HOWLING_FJORD },
 					}),
 					q(11749, {	-- Desecrate this Fire! — Loch Modan
 						["provider"] = { "o", 187932 },	-- Alliance Bonfire
@@ -3800,9 +3803,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13442, {	-- Desecrate this Fire! — Sholazar Basin
 						["provider"] = { "o", 194035 },	-- Alliance Bonfire
-						["coord"] = { 47.9, 66.0, 119 },
+						["coord"] = { 47.9, 66.0, SHOLAZAR_BASIN },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 119 },	-- Sholazar Basin
+						["maps"] = { SHOLAZAR_BASIN },
 					}),
 					q(11760, {	-- Desecrate this Fire! — Silithus
 						["provider"] = { "o", 187943 },	-- Alliance Bonfire
@@ -3827,9 +3830,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13446, {	-- Desecrate this Fire! — Storm Peaks
 						["provider"] = { "o", 194044 },	-- Alliance Bonfire
-						["coord"] = { 41.4, 87.0, 120 },
+						["coord"] = { 41.4, 87.0, THE_STORM_PEAKS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 120 },	-- Storm Peaks
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					q(54739, {	-- Desecrate this Fire! — Stormsong Valley
 						["provider"] = { "o", 316791 },	-- Alliance Bonfire
@@ -3954,9 +3957,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13449, {	-- Desecrate this Fire! — Zul'Drak
 						["provider"] = { "o", 194049 },	-- Alliance Bonfire
-						["coord"] = { 40.4, 61.0, 121 },
+						["coord"] = { 40.4, 61.0, ZULDRAK },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 121 },	-- Zul'Drak
+						["maps"] = { ZULDRAK },
 					}),
 					q(11840, {	-- Honor the Flame — Arathi Highlands
 						["qg"] = 25923,	-- Arathi Flame Keeper
@@ -4004,9 +4007,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13493, {	-- Honor the Flame — Borean Tundra
 						["qg"] = 32809,	-- Borean Tundra Flame Keeper
-						["coord"] = { 51.0, 12.0, 114 },
+						["coord"] = { 51.0, 12.0, BOREAN_TUNDRA },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 114 },	-- Borean Tundra
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					q(11844, {	-- Honor the Flame — Burning Steppes
 						["qg"] = 25927,	-- Burning Steppes Flame Keeper
@@ -4019,9 +4022,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13499, {	-- Honor the Flame — Crystalsong Forest
 						["qg"] = 32815,	-- Crystalsong Forest Flame Keeper
-						["coord"] = { 80.0, 53.0, 127 },
+						["coord"] = { 80.0, 53.0, CRYSTALSONG_FOREST },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 127 },	-- Crystalsong Forest
+						["maps"] = { CRYSTALSONG_FOREST },
 					}),
 					q(29036, {	-- Honor the Flame — Deepholm
 						["qg"] = 51698,	-- Deepholm Flame Guardian
@@ -4036,9 +4039,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13495, {	-- Honor the Flame — Dragonblight
 						["qg"] = 32811,	-- Dragonblight Flame Keeper
-						["coord"] = { 39.0, 48.0, 115 },
+						["coord"] = { 39.0, 48.0, DRAGONBLIGHT },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 115 },	-- Dragonblight
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					q(11846, {	-- Honor the Flame — Durotar
 						["qg"] = 25929,	-- Durotar Flame Keeper
@@ -4081,9 +4084,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13497, {	-- Honor the Flame — Grizzly Hills
 						["qg"] = 32813,	-- Grizzly Hills Flame Keeper
-						["coord"] = { 19.0, 61.0, 116 },
+						["coord"] = { 19.0, 61.0, GRIZZLY_HILLS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 116 },	-- Grizzly Hills
+						["maps"] = { GRIZZLY_HILLS },
 					}),
 					q(11851, {	-- Honor the Flame — Hellfire Peninsula
 						["qg"] = 25934,	-- Hellfire Peninsula Flame Keeper
@@ -4105,9 +4108,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13496, {	-- Honor the Flame — Howling Fjord
 						["qg"] = 32812,	-- Howling Fjord Flame Keeper
-						["coord"] = { 48.0, 13.0, 117 },
+						["coord"] = { 48.0, 13.0, HOWLING_FJORD },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 117 },	-- Howling Fjord
+						["maps"] = { HOWLING_FJORD },
 					}),
 					q(29030, {	-- Honor the Flame — Hyjal
 						["qg"] = 51682,	-- Hyjal Flame Guardian
@@ -4160,9 +4163,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13494, {	-- Honor the Flame — Sholazar Basin
 						["qg"] = 32810,	-- Sholazar Basin Flame Keeper
-						["coord"] = { 47.0, 62.0, 119 },
+						["coord"] = { 47.0, 62.0, SHOLAZAR_BASIN },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 119 },	-- Sholazar Basin
+						["maps"] = { SHOLAZAR_BASIN },
 					}),
 					q(11836, {	-- Honor the Flame — Silithus
 						["qg"] = 25919,	-- Silithus Flame Keeper
@@ -4195,9 +4198,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13498, {	-- Honor the Flame — Storm Peaks
 						["qg"] = 32814,	-- Storm Peaks Flame Keeper
-						["coord"] = { 40.0, 86.0, 120 },
+						["coord"] = { 40.0, 86.0, THE_STORM_PEAKS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 120 },	-- Storm Peaks
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					q(44614, {	-- Honor the Flame — Suramar
 						["qg"] = 114518,	-- Suramar Flame Keeper
@@ -4319,9 +4322,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 					}),
 					q(13500, {	-- Honor the Flame — Zul'Drak
 						["qg"] = 32816,	-- Zul'Drak Flame Keeper
-						["coord"] = { 43.0, 71.0, 121 },
+						["coord"] = { 43.0, 71.0, ZULDRAK },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 121 },	-- Zul'Drak
+						["maps"] = { ZULDRAK },
 					}),
 				}),
 			}),
@@ -4379,3 +4382,6 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 		}),
 	},
 })};
+
+-- Remove the holiday flag.
+HUGE_SNOWBALL.u = nil;
