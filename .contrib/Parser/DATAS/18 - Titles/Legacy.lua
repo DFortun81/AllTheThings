@@ -119,7 +119,7 @@ _.Titles =
 					"removed 9.1.0",
 				},
 			}),
-		}), 
+		}),
 		n(ACHIEVEMENTS, bubbleDown({ ["u"] = REMOVED_FROM_GAME, ["collectible"] = false, }, { -- Realm Best Time Challenge Mode (Blizzard removed these from players)
 			title(241),	-- <Name>, Defender of the Wall
 			title(242),	-- Mogu-Slayer <Name>
@@ -455,7 +455,6 @@ _.Titles =
 					"removed 8.2.0",
 				},
 			}),
-			
 			title(402, {	-- Notorious Gladiator <Name>
 				["timeline"] = {
 					"added 8.2.0",
@@ -525,7 +524,7 @@ _.Titles =
 			}),
 			-- Misc
 			title(96, {	-- <Name> the Flawless Victor
-				["description"] = "This title is obtained by completing hot hot hot streak achievement. In patch 3.1.0 blizzard removed the title from anyone that had earned it",
+				["description"] = "This title is obtained by completing Hot Hot Hot Streak achievement. In patch 3.1.0 blizzard removed the title from anyone that had earned it.",
 				["collectible"] = false,
 				["timeline"] = {
 					"added 3.0.2",
@@ -573,6 +572,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		title(408),	-- Pilgrim <Name> the Mallet Bearer
 		title(424),	-- Deathbringer <Name>
 		title(436),	-- <Name> the Avowed
-		
 	}),
 });
