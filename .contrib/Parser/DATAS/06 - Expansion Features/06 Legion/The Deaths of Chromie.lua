@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 			["lvl"] = 110,
 			["achievementID"] = 11941,
 			["description"] = "The Chromie Scenario sends you through multiple timeways to defeat Chromie's attackers. As you gain reputation with Chromie by killing mobs in the scenario, you will unlock more powerful abilities for Chromie to help speed up your run. Unlike past solo scenarios like Withered Army Training, you do not need to worry about gearing up--your gear is scaled up to 1000 and your player level is increased as well to 112. You can also fly inside this scenario--unusual for instanced content.\n\nEach scenario attempt lasts 15 minutes and the ultimate goal is to defeat 8 timeways in one attempt. Progress can be speed up through obtaining items that grant extra time, buffs from Chromie, and items which auto-complete a timeway threat.",
-			["maps"] = { 115, 898, 899, 900, 901, 902 },	-- Dragonblight / Scenario
+			["maps"] = { DRAGONBLIGHT, 898, 899, 900, 901, 902 },	-- Dragonblight / Scenario
 			["g"] = {
 				n(124764, {	-- Azure Dragonshrine Area
 					n(QUESTS, {
@@ -257,7 +257,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(47904, {	-- Preserve the True Future
-						["coord"] = { 60.0, 54.5, 115 },
+						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["provider"] = { "n", 27856 },	-- Chromie
 						["sourceQuest"] = 47550,	-- The Many Advantages of Being a Time Dragon
 						["g"] = {
@@ -265,7 +265,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(47545, {	-- Rewind
-						["coord"] = { 60.0, 54.5, 115 },
+						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["provider"] = { "n", 27856 },	-- Chromie
 						["sourceQuest"] = 47543,	-- The Day That Chromie Dies
 						["g"] = {
@@ -273,7 +273,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(47543, {	-- The Day That Chromie Dies
-						["coord"] = { 60.0, 54.5, 115 },
+						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["provider"] = { "n", 27856 },	-- Chromie
 						["g"] = {
 							currency(1166),	-- Timewarped Badge x50
@@ -288,7 +288,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(47550, {	-- The Many Advantages of Being a Time Dragon
-						["coord"] = { 60.0, 54.5, 115 },
+						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["provider"] = { "n", 27856 },	-- Chromie
 						["sourceQuest"] = 47545,	-- Rewind
 						["g"] = {
@@ -309,7 +309,7 @@ _.ExpansionFeatures =
 						title(361),		-- Title: Timelord
 					}),
 					q(47906, {	-- The Deaths of Chromie
-						["coord"] = { 60.0, 54.5, 115 },
+						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["provider"] = { "n", 27856 },	-- Chromie
 						["g"] = {
 							i(151692, { -- Ensemble: Chronoscryer's Finery

@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(120, {	-- The Storm Peaks
+	m(NORTHREND, {
+		m(THE_STORM_PEAKS, {
 			n(ZONE_DROPS, {
 				i(41820, {	-- Design: Defender's Twilight Opal
 					["crs"] = {

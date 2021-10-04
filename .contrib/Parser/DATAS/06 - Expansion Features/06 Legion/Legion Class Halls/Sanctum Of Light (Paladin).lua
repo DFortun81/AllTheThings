@@ -526,8 +526,8 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 42002 }, -- To Northrend
 							["classes"] = { PALADIN },
 							["provider"] = { "n", 105724 },	-- Orik Trueheart
-							["coord"] = { 56.8, 78.7, 117 },	-- Howling Fjord
-							["maps"] = { 117 },	-- Howling Fjord
+							["coord"] = { 56.8, 78.7, HOWLING_FJORD },
+							["maps"] = { HOWLING_FJORD },
 						}),
 						q(46071, {	-- The Hammer of Dalaran
 							["sourceQuests"] = { 46070 },	-- Preparations Underway

@@ -4,15 +4,15 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(118, {	-- Icecrown
+	m(NORTHREND, {
+		m(ICECROWN, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
 					["g"] = {
 						crit(23, {	-- Major Payne
-							["coord"] = { 77.4, 19.6, 118 },
+							["coord"] = { 77.4, 19.6, ICECROWN },
 							["cr"] = 66675,	-- Major Payne
 						}),
 					},

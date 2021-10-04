@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(127, {	-- Crystalsong Forest
+	m(NORTHREND, {
+		m(CRYSTALSONG_FOREST, {
 			filter(BATTLE_PETS, {
 				p(385, {	-- Mouse
 					["crs"] = { 61143 },	-- Mouse
@@ -22,7 +22,7 @@ _.Zones =
 				q(31932, {	-- Nearly Headless Jacob
 					["provider"] = { "n", 66636 },	-- Nearly Headless Jacob
 					["isDaily"] = true,
-					["coord"] = { 50.2, 59.0, 127 },
+					["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
 				}),
 			}),
 		}),

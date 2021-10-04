@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
+	m(NORTHREND, {
 		m(1602, {	-- Icecrown (DK starting zone)
 			n(QUESTS, {
 				q(58877, {	-- Death's Power Grows

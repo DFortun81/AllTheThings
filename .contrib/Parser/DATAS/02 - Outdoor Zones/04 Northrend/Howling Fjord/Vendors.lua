@@ -4,17 +4,17 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(117, {	-- Howling Fjord
+	m(NORTHREND, {
+		m(HOWLING_FJORD, {
 			n(VENDORS, {
 				n(24539, {	-- "Silvermoon" Harry
-					["coord"] = { 35.0, 80.8, 117 },
+					["coord"] = { 35.0, 80.8, HOWLING_FJORD },
 					["g"] = {
 						i(6097),	-- Acolyte's Shirt
 					},
 				}),
 				n(32773, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
-					["coord"] = { 59.6, 63.8, 117 },
+					["coord"] = { 59.6, 63.8, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(38464),	-- Gnomish Magician's Quill
@@ -29,7 +29,7 @@ _.Zones =
 					},
 				}),
 				n(32774, {	-- Sebastian Crane <Horde Expedition Quartermaster>
-					["coord"] = { 79.6, 30.6, 117 },
+					["coord"] = { 79.6, 30.6, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(38452),	-- Bulwark of the Warchief
@@ -44,7 +44,7 @@ _.Zones =
 					},
 				}),
 				n(24028, {	-- Talu Frosthoof <Bowyer>
-					["coord"] = { 48.2, 11.0, 117 },
+					["coord"] = { 48.2, 11.0, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11307, {	-- Massive Longbow

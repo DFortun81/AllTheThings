@@ -23,8 +23,8 @@ _.Secrets =
 			SHADOWMOON_VALLEY,
 			BLADES_EDGE_MOUNTAINS,
 			TEROKKAR_FOREST,
-			121,
-			125,
+			ZULDRAK,
+			NORTHREND_DALARAN,
 			TWILIGHT_HIGHLANDS,
 			KUN_LAI_SUMMIT,
 			DRAENOR_SHADOWMOON_VALLEY,
@@ -170,7 +170,7 @@ _.Secrets =
 				["questID"] = 52912,
 				["sourceQuests"] = { 52911 },
 				["description"] = "Northrend Dalaran\n\nIn front of the left planter.\n\nThe Leafy Leaf reads:\n\n\"<Something is written here.>\n\nPhantasmal Hosts?\"",  -- Punctured Pelt purchase while on this?
-				["coord"] = { 42.75, 20.18, 125 },	-- Leafy Leaf
+				["coord"] = { 42.75, 20.18, NORTHREND_DALARAN },	-- Leafy Leaf
 			}),
 			o(294113, {	-- Musty Cloth
 				["model"] = 1360796,
@@ -236,7 +236,7 @@ _.Secrets =
 				["questID"] = 52824,
 				["sourceQuests"] = { 52918 },
 				["description"] = "Zul'drak\n\n/cheer",
-				["coord"] = { 40.6, 68.7, 121 },	-- Noggra <General Goods>
+				["coord"] = { 40.6, 68.7, ZULDRAK },	-- Noggra <General Goods>
 			}),
 			n(62877, {	-- Stained Mug <Innkeeper>
 				["questID"] = 52826,

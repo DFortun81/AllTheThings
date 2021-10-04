@@ -10,7 +10,7 @@ _.Factions =
 			{ 69.8, 43.7, UNDERCITY },	-- Kim Horn
 			{ 56.8, 88.6, ORGRIMMAR },		-- Kim Horn
 			{ 78.3, 85.2, SILVERMOON_CITY },	-- Larissia
-			{ 52.5, 54.9, 125 },	-- Mirla Silverblaze [Dalaran: Northrend]
+			{ 52.5, 54.9, NORTHREND_DALARAN },	-- Mirla Silverblaze
 			{ 53.6, 69.6, THE_EXODAR },	-- Nuri
 			{ 70.2, 14.7, BORALUS },	-- Perry Charlton
 			{ 37.1, 63.3, THUNDER_BLUFF },		-- Randah Songhorn
@@ -22,7 +22,7 @@ _.Factions =
 		},
 		["maps"] = {
 			DARNASSUS,
-			125,	-- Dalaran: Northrend
+			NORTHREND_DALARAN,
 			IRONFORGE,
 			1361,	-- Old Ironforge
 			ORGRIMMAR,

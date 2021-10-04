@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(125, {	-- Dalaran: Northrend
+	m(NORTHREND, {
+		m(NORTHREND_DALARAN, {
 			n(QUESTS, {
 				q(32413, {	-- A Return to Krasarang
 					["provider"] = { "n", 68586 },	-- Grand Magister Rommath
@@ -25,7 +25,7 @@ _.Zones =
 					["provider"] = { "n", 35471 },	-- Sorn Proudmane
 				}),
 				q(24580, {	-- Anub'Rekhan Must Die!
-					["coord"] = { 57.3, 66.7, 125 },
+					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
 				}),
@@ -51,7 +51,7 @@ _.Zones =
 					},
 				}),
 				q(13833, {	-- Blood Is Thicker
-					["coord"] = { 53.0, 64.9, 125 },
+					["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
 					["isDaily"] = true,
 					["provider"] = { "n", 28742 },	-- Marcia Chase
 					["requireSkill"] = FISHING,
@@ -64,7 +64,7 @@ _.Zones =
 				}),
 				q(14151, {	-- Cardinal Ruby
 					["provider"] = { "n", 28703 },	-- Quest Giver: Linzy Blackbolt <Alchemy Trainer>
-					["coord"] = { 42.4, 32.0, 125 },
+					["coord"] = { 42.4, 32.0, NORTHREND_DALARAN },
 					["repeatable"] = true,
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
@@ -73,7 +73,7 @@ _.Zones =
 				}),
 				q(13272, {	-- Cloth Scavenging (Neutral)
 					["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable.
-					["coord"] = { 36.1, 33.5, 125 },
+					["coord"] = { 36.1, 33.5, NORTHREND_DALARAN },
 					["provider"] = { "n", 28699 },	-- Charles Worth
 					["requireSkill"] = TAILORING,
 					["g"] = {
@@ -92,7 +92,7 @@ _.Zones =
 					},
 				}),
 				q(13834, {	-- Dangerously Delicious
-					["coord"] = { 53.0, 64.9, 125 },
+					["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
 					["isDaily"] = true,
 					["provider"] = { "n", 28742 },	-- Marcia Chase
 					["requireSkill"] = FISHING,
@@ -104,7 +104,7 @@ _.Zones =
 					},
 				}),
 				q(13836, {	-- Disarmed!
-					["coord"] = { 53.0, 64.9, 125 },
+					["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
 					["isDaily"] = true,
 					["provider"] = { "n", 28742 },	-- Marcia Chase
 					["requireSkill"] = FISHING,
@@ -120,12 +120,12 @@ _.Zones =
 					["provider"] = { "n", 16128 },	-- Rhonin
 				}),
 				q(29829, {	-- Discretion is Key
-					["coord"] = { 30.6, 48.6, 125 },
+					["coord"] = { 30.6, 48.6, NORTHREND_DALARAN },
 					["provider"] = { "n", 16128 },	-- Rhonin
 					["isBreadcrumb"] = true,
 				}),
 				q(13041, {	-- Finish the Shipment
-					["coord"] = { 40.7, 35.4, 125 },
+					["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 					["provider"] = { "n", 28701 },	-- Timothy Jones
 					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
@@ -133,7 +133,7 @@ _.Zones =
 					},
 				}),
 				q(24585, {	-- Flame Leviathan Must Die!
-					["coord"] = { 57.3, 66.7, 125 },
+					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
 				}),
@@ -143,7 +143,7 @@ _.Zones =
 				}),
 				--]]
 				q(24587, {	-- Ignis the Furnace Master Must Die!
-					["coord"] = { 57.3, 66.7, 125 },
+					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
 				}),
@@ -158,7 +158,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(24582, {	-- Instructor Razuvious Must Die!
-					["coord"] = { 57.3, 66.7, 125 },
+					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
 				}),
@@ -168,7 +168,7 @@ _.Zones =
 				}),
 				]]--
 				q(13832, {	-- Jewel Of The Sewers
-					["coord"] = { 53.0, 64.9, 125 },
+					["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
 					["isDaily"] = true,
 					["provider"] = { "n", 28742 },	-- Marcia Chase
 					["requireSkill"] = FISHING,
@@ -185,7 +185,7 @@ _.Zones =
 				}),
 				--]]
 				q(12790, {	-- Learning to Leave and Return: the Magical Way
-					["coord"] = { 56.3, 46.7, 125 },
+					["coord"] = { 56.3, 46.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 29156 },	-- Archmage Celindra
 					["sourceQuests"] = {
 						12791,	-- The Magical Kingdom of Dalaran (Horde only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
@@ -195,18 +195,18 @@ _.Zones =
 					},
 				}),
 				q(24589, {	-- Lord Jaraxxus Must Die!
-					["coord"] = { 57.3, 66.7, 125 },
+					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
 				}),
 				q(24590, {	-- Lord Marrowgar Must Die!
-					["coord"] = { 57.3, 66.7, 125 },
+					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
 				}),
 				q(12853, {	-- Luxurious Getaway!
 					["provider"] = { "n", 30490 },	-- Rin Duoctane
-					["coord"] = { 31.2, 49.6, 126 },
+					["coord"] = { 31.2, 49.6, NORTHREND_THE_UNDERBELLY },
 					["sourceQuests"] = {
 						49554,	-- Hero's Call: Storm Peaks!
 						49536,	-- Warchief's Command: Storm Peaks!
@@ -223,12 +223,12 @@ _.Zones =
 					["provider"] = { "o", 208316 },	-- Hero's Call Board
 				}),
 				q(24584, {	-- Malygos Must Die!
-					["coord"] = { 57.3, 66.7, 125 },
+					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
 				}),
 				q(24581, {	-- Noth the Plaguebringer Must Die!
-					["coord"] = { 57.3, 66.7, 125 },
+					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
 				}),
@@ -238,29 +238,29 @@ _.Zones =
 				}),
 				]]--
 				q(24583, {	-- Patchwerk Must Die!
-					["coord"] = { 57.3, 66.7, 125 },
+					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
 				}),
 				q(13418, {	-- Preparations for War
-					["coord"] = { 67.7, 47.2, 125 },
+					["coord"] = { 67.7, 47.2, NORTHREND_DALARAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 31081 },	-- Officer Van Rossem
 					["sourceQuests"] = { 49555 }	-- Hero's Call: Icecrown!
 				}),
 				q(13419, {	-- Preparations for War
-					["coord"] = { 69.4, 40.7, 125 },
+					["coord"] = { 69.4, 40.7, NORTHREND_DALARAN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 31085 },	-- Sky-Reaver Klum
 					["sourceQuests"] = { 49537 }	-- Warchief's Command: Icecrown!
 				}),
 				q(24586, {	-- Razorscale Must Die!
-					["coord"] = { 57.3, 66.7, 125 },
+					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
 				}),
 				q(24579, {	-- Sartharion Must Die!
-					["coord"] = { 57.3, 66.7, 125 },
+					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
 				}),
@@ -270,7 +270,7 @@ _.Zones =
 					["requireSkill"] = FISHING,
 				}),
 				q(12958, {	-- Shipment: Blood Jade Amulet
-					["coord"] = { 40.7, 35.4, 125 },
+					["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 					["isDaily"] = true,
 					["provider"] = { "n", 28701 },	-- Timothy Jones
 					["requireSkill"] = JEWELCRAFTING,
@@ -279,7 +279,7 @@ _.Zones =
 					},
 				}),
 				q(12962, {	-- Shipment: Bright Armor Relic
-					["coord"] = { 40.7, 35.4, 125 },
+					["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 					["isDaily"] = true,
 					["provider"] = { "n", 28701 },	-- Timothy Jones
 					["requireSkill"] = JEWELCRAFTING,
@@ -288,7 +288,7 @@ _.Zones =
 					},
 				}),
 				q(12959, {	-- Shipment: Glowing Ivory Figurine
-					["coord"] = { 40.7, 35.4, 125 },
+					["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 					["isDaily"] = true,
 					["provider"] = { "n", 28701 },	-- Timothy Jones
 					["requireSkill"] = JEWELCRAFTING,
@@ -297,7 +297,7 @@ _.Zones =
 					},
 				}),
 				q(12961, {	-- Shipment: Intricate Bone Figurine
-					["coord"] = { 40.7, 35.4, 125 },
+					["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 					["isDaily"] = true,
 					["provider"] = { "n", 28701 },	-- Timothy Jones
 					["requireSkill"] = JEWELCRAFTING,
@@ -306,7 +306,7 @@ _.Zones =
 					},
 				}),
 				q(12963, {	-- Shipment: Shifting Sun Curio
-					["coord"] = { 40.7, 35.4, 125 },
+					["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 					["isDaily"] = true,
 					["provider"] = { "n", 28701 },	-- Timothy Jones
 					["requireSkill"] = JEWELCRAFTING,
@@ -315,7 +315,7 @@ _.Zones =
 					},
 				}),
 				q(12960, {	-- Shipment: Wicked Sun Brooch
-					["coord"] = { 40.7, 35.4, 125 },
+					["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 					["isDaily"] = true,
 					["provider"] = { "n", 28701 },	-- Timothy Jones
 					["requireSkill"] = JEWELCRAFTING,
@@ -330,13 +330,13 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(12974, {	-- The Champion's Call!
-					["coord"] = { 49.3, 45.9, 125 },
+					["coord"] = { 49.3, 45.9, NORTHREND_DALARAN },
 					["provider"] = { "n", 30137 },	-- Shifty Vickers
 					["description"] = "Patrols the center area of Underbelly.",
 					["isBreadcrumb"] = true,
 				}),
 				q(13830, {	-- The Ghostfish
-					["coord"] = { 53.0, 64.9, 125 },
+					["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
 					["isDaily"] = true,
 					["provider"] = { "n", 28742 },	-- Marcia Chase
 					["requireSkill"] = FISHING,
@@ -362,7 +362,7 @@ _.Zones =
 				}),
 				]]--
 				q(14103, {	-- Titanium Powder
-					["coord"] = { 40.7, 35.4, 125 },
+					["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 					["provider"] = { "n", 28701 },	-- Timothy Jones
 					["repeatable"] = true,
 					["requireSkill"] = JEWELCRAFTING,
@@ -371,7 +371,7 @@ _.Zones =
 					},
 				}),
 				q(26012, {	-- Trouble at Wyrmrest
-					["coord"] = { 30.6, 48.6, 125 },
+					["coord"] = { 30.6, 48.6, NORTHREND_DALARAN },
 					["provider"] = { "n", 16128 },	-- Rhonin
 				}),
 				--[[
@@ -389,7 +389,7 @@ _.Zones =
 					},
 				}),
 				q(12521, {	-- Where in the World is Hemet Nesingwary?
-					["coord"] = { 68.5, 42.0, 125 },
+					["coord"] = { 68.5, 42.0, NORTHREND_DALARAN },
 					["provider"] = { "n", 28160 },	-- Achmage Pentarus
 					["sourceQuests"] = {
 						49553,	-- Hero's Call: Sholazar Basin!
@@ -402,7 +402,7 @@ _.Zones =
 					["requireSkill"] = JEWELCRAFTING,
 				}),
 				q(24588, {	-- XT-002 Deconstructor Must Die!
-					["coord"] = { 57.3, 66.7, 125 },
+					["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
 					["isWeekly"] = true,
 				}),

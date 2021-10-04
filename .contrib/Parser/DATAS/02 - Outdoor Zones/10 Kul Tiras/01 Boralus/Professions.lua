@@ -750,14 +750,14 @@ _.Zones =
 					}),
 					q(53869, {	-- Killing Time
 						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-						["coord"] = { 71.6, 39.8, 115 },
+						["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
 						["sourceQuest"] = 53868,	-- Saving Nine
 						["requireSkill"] = TAILORING,
 						["lvl"] = 120,
 					}),
 					q(53881, {	-- Cut from the Same Cloth (A)
 						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-						["coord"] = { 71.6, 39.8, 115 },
+						["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
 						["sourceQuest"] = 53869,	-- Killing Time
 						["requireSkill"] = TAILORING,
 						["races"] = ALLIANCE_ONLY,

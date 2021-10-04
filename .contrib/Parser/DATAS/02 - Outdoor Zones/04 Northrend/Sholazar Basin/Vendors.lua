@@ -4,12 +4,12 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(119, {	-- Sholazar Basin
+	m(NORTHREND, {
+		m(SHOLAZAR_BASIN, {
 			n(VENDORS, {
 				n(28040, {	-- Mardan Thunderhoof <Gunsmith>
 					["classes"] = { HUNTER },
-					["coord"] = { 27.2, 59.6, 119 },
+					["coord"] = { 27.2, 59.6, SHOLAZAR_BASIN },
 					["g"] = {
 						i(136855),	-- Hunter's Call
 						i(136781, {	-- Pet Training Manual: Fetch

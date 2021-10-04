@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(117, {	-- Howling Fjord
+	m(NORTHREND, {
+		m(HOWLING_FJORD, {
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					o(192049, {	-- Fangtooth Herring School

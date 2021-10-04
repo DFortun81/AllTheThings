@@ -1180,95 +1180,95 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					crit(1, {	-- Borean Tundra, Fizzcrank Airstrip
-						["coord"] = { 57.1, 18.8, 114 },
-						["maps"] = { 114 },	-- Borean Tundra
+						["coord"] = { 57.1, 18.8, BOREAN_TUNDRA },
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					crit(2, {	-- Borean Tundra, Unu'pe
-						["coord"] = { 78.4, 49.2, 114 },
-						["maps"] = { 114 },	-- Borean Tundra
+						["coord"] = { 78.4, 49.2, BOREAN_TUNDRA },
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					crit(3, {	-- Borean Tundra, Valiance Keep
-						["coord"] = { 58.5, 67.9, 114 },
-						["maps"] = { 114 },	-- Borean Tundra
+						["coord"] = { 58.5, 67.9, BOREAN_TUNDRA },
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					crit(4, {	-- Dalaran, The Legerdemain Lounge
-						["coord"] = { 48.3, 40.8, 125 },
-						["maps"] = { 125 },	-- Dalaran
+						["coord"] = { 48.3, 40.8, NORTHREND_DALARAN },
+						["maps"] = { NORTHREND_DALARAN },
 					}),
 					crit(5, {	-- Dalaran, Silver Enclave
-						["coord"] = { 42.5, 63.5, 125 },
-						["maps"] = { 125 },	-- Dalaran
+						["coord"] = { 42.5, 63.5, NORTHREND_DALARAN },
+						["maps"] = { NORTHREND_DALARAN },
 					}),
 					crit(6, {	-- Dalaran, The Underbelly
-						["coord"] = { 27.2, 41.4, 126 },
+						["coord"] = { 27.2, 41.4, NORTHREND_THE_UNDERBELLY },
 						["maps"] = {
-							125,	-- Dalaran, upper level
-							126,	-- Dalaran, Underbelly
+							NORTHREND_DALARAN,
+							NORTHREND_THE_UNDERBELLY,
 						},
 					}),
 					crit(7, {	-- Dragonblight, Moa'ki Harbor
-						["coord"] = { 48.2, 74.7, 115 },
-						["maps"] = { 115 },	-- Dragonblight
+						["coord"] = { 48.2, 74.7, DRAGONBLIGHT },
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					crit(8, {	-- Dragonblight, Stars' Rest
-						["coord"] = { 29.0, 56.2, 115 },
-						["maps"] = { 115 },	-- Dragonblight
+						["coord"] = { 29.0, 56.2, DRAGONBLIGHT },
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					crit(9, {	-- Dragonblight, Wintergarde Keep
-						["coord"] = { 77.5, 51.3, 115 },
-						["maps"] = { 115 },	-- Dragonblight
+						["coord"] = { 77.5, 51.3, DRAGONBLIGHT },
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					crit(10, {	-- Dragonblight, Wyrmrest Temple
-						["coord"] = { 60.1, 53.5, 115 },
-						["maps"] = { 115 },	-- Dragonblight
+						["coord"] = { 60.1, 53.5, DRAGONBLIGHT },
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					crit(11, {	-- Grizzly Hills, Amberpine Lodge
-						["coord"] = { 32.0, 60.2, 116 },
-						["maps"] = { 116 },	-- Grizzly Hills
+						["coord"] = { 32.0, 60.2, GRIZZLY_HILLS },
+						["maps"] = { GRIZZLY_HILLS },
 					}),
 					crit(12, {	-- Grizzly Hills, Westfall Brigade
-						["coord"] = { 59.6, 26.4, 116 },
-						["maps"] = { 116 },	-- Grizzly Hills
+						["coord"] = { 59.6, 26.4, GRIZZLY_HILLS },
+						["maps"] = { GRIZZLY_HILLS },
 					}),
 					crit(13, {	-- Howling Fjord, Fort Wildevar
-						["coord"] = { 60.5, 15.9, 117 },
-						["maps"] = { 117 },	-- Howling Fjord
+						["coord"] = { 60.5, 15.9, HOWLING_FJORD },
+						["maps"] = { HOWLING_FJORD },
 					}),
 					crit(14, {	-- Howling Fjord, Kamagua
-						["coord"] = { 25.4, 59.8, 117 },
-						["maps"] = { 117 },	-- Howling Fjord
+						["coord"] = { 25.4, 59.8, HOWLING_FJORD },
+						["maps"] = { HOWLING_FJORD },
 					}),
 					crit(15, {	-- Howling Fjord, Valgarde
-						["coord"] = { 58.4, 62.8, 117 },
-						["maps"] = { 117 },	-- Howling Fjord
+						["coord"] = { 58.4, 62.8, HOWLING_FJORD },
+						["maps"] = { HOWLING_FJORD },
 					}),
 					crit(16, {	-- Howling Fjord, Westguard Keep
-						["coord"] = { 30.8, 41.5, 117 },
-						["maps"] = { 117 },	-- Howling Fjord
+						["coord"] = { 30.8, 41.5, HOWLING_FJORD },
+						["maps"] = { HOWLING_FJORD },
 					}),
 					crit(17, {	-- Sholazar Basin, Nesingwary Base Camp
-						["coord"] = { 26.7, 59.2, 119 },
-						["maps"] = { 119 },	-- Sholazar Basin
+						["coord"] = { 26.7, 59.2, SHOLAZAR_BASIN },
+						["maps"] = { SHOLAZAR_BASIN },
 					}),
 					crit(18, {	-- Storm Peaks, Bouldercrag's Refuge
-						["coord"] = { 30.9, 37.2, 120 },
-						["maps"] = { 120 },	-- The Storm Peaks
+						["coord"] = { 30.9, 37.2, THE_STORM_PEAKS },
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					crit(19, {	-- Storm Peaks, Frosthold
-						["coord"] = { 28.7, 74.3, 120 },
-						["maps"] = { 120 },	-- The Storm Peaks
+						["coord"] = { 28.7, 74.3, THE_STORM_PEAKS },
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					crit(20, {	-- Storm Peaks, K3
-						["coord"] = { 41.1, 85.9, 120 },
-						["maps"] = { 120 },	-- The Storm Peaks
+						["coord"] = { 41.1, 85.9, THE_STORM_PEAKS },
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					crit(21, {	-- Zul'Drak, The Argent Stand
-						["coord"] = { 40.8, 66.0, 121 },
-						["maps"] = { 121 },	-- Zul'Drak
+						["coord"] = { 40.8, 66.0, ZULDRAK },
+						["maps"] = { ZULDRAK },
 					}),
 					crit(22, {	-- Zul'Drak, Zim'Torga
-						["coord"] = { 59.3, 57.2, 121 },
-						["maps"] = { 121 },	-- Zul'Drak
+						["coord"] = { 59.3, 57.2, ZULDRAK },
+						["maps"] = { ZULDRAK },
 					}),
 				},
 			}),
@@ -1276,103 +1276,103 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
 				["groups"] = {
 					crit(1, {	-- Borean Tundra, Bor'gorok Outpost
-						["coord"] = { 49.7, 10.0, 114 },
-						["maps"] = { 114 },	-- Borean Tundra
+						["coord"] = { 49.7, 10.0, BOREAN_TUNDRA },
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					crit(2, {	-- Borean Tundra, Taunka'le Village
-						["coord"] = { 76.7, 37.4, 114 },
-						["maps"] = { 114 },	-- Borean Tundra
+						["coord"] = { 76.7, 37.4, BOREAN_TUNDRA },
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					crit(3, {	-- Borean Tundra, Unu'pe
-						["coord"] = { 78.4, 49.2, 114 },
-						["maps"] = { 114 },	-- Borean Tundra
+						["coord"] = { 78.4, 49.2, BOREAN_TUNDRA },
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					crit(4, {	-- Borean Tundra, Warsong Hold
-						["coord"] = { 41.8, 54.4, 114 },
-						["maps"] = { 114 },	-- Borean Tundra
+						["coord"] = { 41.8, 54.4, BOREAN_TUNDRA },
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					crit(5, {	-- Dalaran, The Legerdemain Lounge
-						["coord"] = { 48.3, 40.8, 125 },
-						["maps"] = { 125 },	-- Dalaran
+						["coord"] = { 48.3, 40.8, NORTHREND_DALARAN },
+						["maps"] = { NORTHREND_DALARAN },
 					}),
 					crit(6, {	-- Dalaran, Sunreaver's Sanctuary
-						["coord"] = { 66.6, 30.1, 125 },
-						["maps"] = { 125 },	-- Dalaran
+						["coord"] = { 66.6, 30.1, NORTHREND_DALARAN },
+						["maps"] = { NORTHREND_DALARAN },
 					}),
 					crit(7, {	-- Dalaran, The Underbelly
-						["coord"] = { 27.2, 41.4, 126 },
+						["coord"] = { 27.2, 41.4, NORTHREND_THE_UNDERBELLY },
 						["maps"] = {
-							125,	-- Dalaran, upper
-							126,	-- Dalaran, Underbelly
+							NORTHREND_DALARAN,
+							NORTHREND_THE_UNDERBELLY,
 						},
 					}),
 					crit(8, {	-- Dragonblight, Agmar's Hammer
-						["coord"] = { 37.8, 46.4, 115 },
-						["maps"] = { 115 },	-- Dragonblight
+						["coord"] = { 37.8, 46.4, DRAGONBLIGHT },
+						["maps"] = { DRAGONBLIGHT }
 					}),
 					crit(9, {	-- Dragonblight, Moa'ki Harbor
-						["coord"] = { 48.2, 74.7, 115 },
-						["maps"] = { 115 },	-- Dragonblight
+						["coord"] = { 48.2, 74.7, DRAGONBLIGHT },
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					crit(10, {	-- Dragonblight, Venomspite
-						["coord"] = { 76.8, 63.2, 115 },
-						["maps"] = { 115 },	-- Dragonblight
+						["coord"] = { 76.8, 63.2, DRAGONBLIGHT },
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					crit(11, {	-- Dragonblight, Wyrmrest Temple
-						["coord"] = { 60.1, 53.5, 115 },
-						["maps"] = { 115 },	-- Dragonblight
+						["coord"] = { 60.1, 53.5, DRAGONBLIGHT },
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					crit(12, {	-- Grizzly Hills, Camp Oneqwah
-						["coord"] = { 65.4, 47.0, 116 },
-						["maps"] = { 116 },	-- Grizzly Hills
+						["coord"] = { 65.4, 47.0, GRIZZLY_HILLS },
+						["maps"] = { GRIZZLY_HILLS },
 					}),
 					crit(13, {	-- Grizzly Hills, Conquest Hold
-						["coord"] = { 20.9, 64.7, 116 },
-						["maps"] = { 116 },	-- Grizzly Hills
+						["coord"] = { 20.9, 64.7, GRIZZLY_HILLS },
+						["maps"] = { GRIZZLY_HILLS },
 					}),
 					crit(14, {	-- Howling Fjord, Camp Winterhoof
-						["coord"] = { 49.5, 10.8, 117 },
-						["maps"] = { 117 },	-- Howling Fjord
+						["coord"] = { 49.5, 10.8, HOWLING_FJORD },
+						["maps"] = { HOWLING_FJORD },
 					}),
 					crit(15, {	-- Howling Fjord, Kamagua
-						["coord"] = { 25.4, 59.8, 117 },
-						["maps"] = { 117 },	-- Howling Fjord
+						["coord"] = { 25.4, 59.8, HOWLING_FJORD },
+						["maps"] = { HOWLING_FJORD },
 					}),
 					crit(16, {	-- Howling Fjord, New Agamand
-						["coord"] = { 52.1, 66.2, 117 },
-						["maps"] = { 117 },	-- Howling Fjord
+						["coord"] = { 52.1, 66.2, HOWLING_FJORD },
+						["maps"] = { HOWLING_FJORD },
 					}),
 					crit(17, {	-- Howling Fjord, Vengeance Landing
-						["coord"] = { 79.2, 30.6, 117 },
-						["maps"] = { 117 },	-- Howling Fjord
+						["coord"] = { 79.2, 30.6, HOWLING_FJORD },
+						["maps"] = { HOWLING_FJORD },
 					}),
 					crit(18, {	-- Sholazar Basin, Nesingwary Base Camp
-						["coord"] = { 26.7, 59.2, 119 },
-						["maps"] = { 119 },	-- Sholazar Basin
+						["coord"] = { 26.7, 59.2, SHOLAZAR_BASIN },
+						["maps"] = { SHOLAZAR_BASIN },
 					}),
 					crit(19, {	-- Storm Peaks, Bouldercrag's Refuge
-						["coord"] = { 30.9, 37.2, 120 },
-						["maps"] = { 120 },	-- The Storm Peaks
+						["coord"] = { 30.9, 37.2, THE_STORM_PEAKS },
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					crit(20, {	-- Storm Peaks, Camp Tunka'lo
-						["coord"] = { 67.6, 50.6, 120 },
-						["maps"] = { 120 },	-- The Storm Peaks
+						["coord"] = { 67.6, 50.6, THE_STORM_PEAKS },
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					crit(21, {	-- Storm Peaks, Grom'arsh Crash Site
-						["coord"] = { 37.1, 49.6, 120 },
-						["maps"] = { 120 },	-- The Storm Peaks
+						["coord"] = { 37.1, 49.6, THE_STORM_PEAKS },
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					crit(22, {	-- Storm Peaks, K3
-						["coord"] = { 41.1, 85.9, 120 },
-						["maps"] = { 120 },	-- The Storm Peaks
+						["coord"] = { 41.1, 85.9, THE_STORM_PEAKS },
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					crit(23, {	-- Zul'Drak, The Argent Stand
-						["coord"] = { 40.8, 66.0, 121 },
-						["maps"] = { 121 },	-- Zul'Drak
+						["coord"] = { 40.8, 66.0, ZULDRAK },
+						["maps"] = { ZULDRAK },
 					}),
 					crit(24, {	-- Zul'Drak, Zim'Torga
-						["coord"] = { 59.3, 57.2, 121 },
-						["maps"] = { 121 },	-- Zul'Drak
+						["coord"] = { 59.3, 57.2, ZULDRAK },
+						["maps"] = { ZULDRAK },
 					}),
 				},
 			}),
@@ -2099,9 +2099,9 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					THE_EXODAR,
 					NETHERSTORM,
 					SHATTRATH_CITY,
-					120,	-- The Storm Peaks
+					THE_STORM_PEAKS,
 					THE_CAPE_OF_STRANGLETHORN,
-					125,	-- Dalaran: Northrend
+					NORTHREND_DALARAN,
 				},
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
@@ -2126,9 +2126,9 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
-					120,	-- The Storm Peaks
+					THE_STORM_PEAKS,
 					THE_CAPE_OF_STRANGLETHORN,
-					125,	-- Dalaran: Northrend
+					NORTHREND_DALARAN,
 				},
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
@@ -2153,9 +2153,9 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
-					120,	-- The Storm Peaks
+					THE_STORM_PEAKS,
 					THE_CAPE_OF_STRANGLETHORN,
-					125,	-- Dalaran: Northrend
+					NORTHREND_DALARAN,
 				},
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
@@ -2342,8 +2342,8 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					THE_BARRENS,
 					-- #endif
 					-- #if AFTER WRATH
-					120,	-- The Storm Peaks
-					125,	-- Dalaran: Northrend
+					THE_STORM_PEAKS,
+					NORTHREND_DALARAN,
 					-- #endif
 				},
 				["races"] = ALLIANCE_ONLY,
@@ -2753,8 +2753,8 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					STRANGLETHORN_VALE,
 					-- #endif
 					-- #if AFTER WRATH
-					125,	-- Dalaran: Northrend
-					120,	-- The Storm Peaks
+					NORTHREND_DALARAN,
+					THE_STORM_PEAKS,
 					-- #endif
 				},
 				["races"] = HORDE_ONLY,
@@ -3253,9 +3253,9 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { BLADES_EDGE_MOUNTAINS },
 					}),
 					q(13460, {	-- Candy Bucket — Borean Tundra, Unu'pe, Neutral
-						["coord"] = { 78.4, 49.2, 114 },
+						["coord"] = { 78.4, 49.2, BOREAN_TUNDRA },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 114 },	-- Borean Tundra
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					q(12397, {	-- Candy Bucket — Cape of Stranglethorn, Booty Bay, Neutral
 						["coord"] = { 40.9, 73.8, THE_CAPE_OF_STRANGLETHORN },
@@ -3268,16 +3268,16 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { LEGION_DALARAN },
 					}),
 					q(13463, {	-- Candy Bucket — Dalaran : Northrend, Legerdemain Lounge, Neutral
-						["coord"] = { 48.3, 40.8, 125 },
+						["coord"] = { 48.3, 40.8, NORTHREND_DALARAN },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 125 },	-- Dalaran : Northrend
+						["maps"] = { NORTHREND_DALARAN },
 					}),
 					q(13472, {	-- Candy Bucket — Dalaran : Northrend, Underbelly, Neutral
-						["coord"] = { 27.2, 41.4, 126 },
+						["coord"] = { 27.2, 41.4, NORTHREND_THE_UNDERBELLY },
 						["timeline"] = { "added 3.0.1" },
 						["maps"] = {
-							125,	-- Dalaran : Northrend, upper level
-							126,	-- Dalaran : Northrend, Underbelly
+							NORTHREND_DALARAN,
+							NORTHREND_THE_UNDERBELLY,
 						},
 					}),
 					q(28993, {	-- Candy Bucket — Desolace, Karnum's Glade, Neutral
@@ -3295,14 +3295,14 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						},
 					}),
 					q(13459, {	-- Candy Bucket — Dragonblight, Moa'ki Harbor, Neutral
-						["coord"] = { 48.2, 74.7, 115 },
+						["coord"] = { 48.2, 74.7, DRAGONBLIGHT },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 115 },	-- Dragonblight
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					q(13456, {	-- Candy Bucket — Dragonblight, Wyrmrest Temple, Neutral
-						["coord"] = { 60.1, 53.5, 115 },
+						["coord"] = { 60.1, 53.5, DRAGONBLIGHT },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 115 },	-- Dragonblight
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					q(32024, {	-- Candy Bucket — Dread Wastes, Klaxxi'vess, Neutral
 						["coord"] = { 55.9, 32.3, DREAD_WASTES },
@@ -3330,9 +3330,9 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { FELWOOD },
 					}),
 					q(13452, {	-- Candy Bucket — Howling Fjord, Kamagua, Neutral
-						["coord"] = { 25.4, 59.8, 117 },
+						["coord"] = { 25.4, 59.8, HOWLING_FJORD },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 117 },	-- Howling Fjord
+						["maps"] = { HOWLING_FJORD },
 					}),
 					q(32027, {	-- Candy Bucket — Jade Forest, Dawn's Blossom, Neutral
 						["coord"] = { 45.7, 43.6, THE_JADE_FOREST },
@@ -3446,9 +3446,9 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { SHATTRATH_CITY },
 					}),
 					q(12950, {	-- Candy Bucket — Sholazar, Nesingwary Base Camp, Neutral
-						["coord"] = { 26.7, 59.2, 119 },
+						["coord"] = { 26.7, 59.2, SHOLAZAR_BASIN },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 119 },	-- Sholazar Basin
+						["maps"] = { SHOLAZAR_BASIN },
 					}),
 					q(12401, {	-- Candy Bucket — Silithus, Cenarion Hold, Neutral
 						["coord"] = { 55.5, 36.7, SILITHUS },
@@ -3456,14 +3456,14 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { SILITHUS },
 					}),
 					q(13462, {	-- Candy Bucket — Storm Peaks, Bouldercrag's Refuge, Neutral
-						["coord"] = { 30.9, 37.2, 120 },
+						["coord"] = { 30.9, 37.2, THE_STORM_PEAKS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 120 },	-- The Storm Peaks
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					q(13461, {	-- Candy Bucket — Storm Peaks, K3, Neutral
-						["coord"] = { 41.1, 85.9, 120 },
+						["coord"] = { 41.1, 85.9, THE_STORM_PEAKS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 120 },	-- The Storm Peaks
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					q(28967, {	-- Candy Bucket — Swamp of Sorrows, Bogpaddle, Neutral
 						["coord"] = { 71.7, 14.0, SWAMP_OF_SORROWS },
@@ -3541,14 +3541,14 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { ZANGARMARSH },
 					}),
 					q(12941, {	-- Candy Bucket — Zul'Drak, The Argent Stand, Neutral
-						["coord"] = { 40.8, 66.0, 121 },
+						["coord"] = { 40.8, 66.0, ZULDRAK },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 121 },	-- Zul'Drak
+						["maps"] = { ZULDRAK },
 					}),
 					q(12940, {	-- Candy Bucket — Zul'Drak, Zim'Torga, Neutral
-						["coord"] = { 59.3, 57.2, 121 },
+						["coord"] = { 59.3, 57.2, ZULDRAK },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 121 },	-- Zul'Drak
+						["maps"] = { ZULDRAK },
 					}),
 				}),
 			}),
@@ -3602,14 +3602,14 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { BLOODMYST_ISLE },
 					}),
 					q(13437, {	-- Candy Bucket — Borean Tundra, Fizzcrank Airstrip, Alliance
-						["coord"] = { 57.1, 18.8, 114 },
+						["coord"] = { 57.1, 18.8, BOREAN_TUNDRA },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 114 },	-- Borean Tundra
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					q(13436, {	-- Candy Bucket — Borean Tundra, Valiance Keep, Alliance
-						["coord"] = { 58.5, 67.9, 114 },
+						["coord"] = { 58.5, 67.9, BOREAN_TUNDRA },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 114 },	-- Borean Tundra
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					q(43056, {	-- Candy Bucket — Dalaran : Broken Shores, Silver Enclave, Alliance
 						["coord"] = { 41.8, 64.1, LEGION_DALARAN },
@@ -3617,9 +3617,9 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { LEGION_DALARAN },
 					}),
 					q(13473, {	-- Candy Bucket — Dalaran : Northrend, Silver Enclave, Alliance
-						["coord"] = { 42.5, 63.5, 125 },
+						["coord"] = { 42.5, 63.5, NORTHREND_DALARAN },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 125 },	-- Dalaran : Northrend
+						["maps"] = { NORTHREND_DALARAN },
 					}),
 					q(12338, {	-- Candy Bucket — Darkshore, Auberdine, Alliance
 						["coord"] = { 37.0, 44.0, DARKSHORE },
@@ -3647,14 +3647,14 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13438, {	-- Candy Bucket — Dragonblight, Stars' Rest, Alliance
-						["coord"] = { 29.0, 56.2, 115 },
+						["coord"] = { 29.0, 56.2, DRAGONBLIGHT },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 115 },	-- Dragonblight
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					q(13439, {	-- Candy Bucket — Dragonblight, Wintergarde Keep, Alliance
-						["coord"] = { 77.5, 51.3, 115 },
+						["coord"] = { 77.5, 51.3, DRAGONBLIGHT },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 115 },	-- Dragonblight
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					q(12332, {	-- Candy Bucket — Dun Morogh, Kharanos, Alliance
 						["coord"] = { 54.5, 50.7, DUN_MOROGH },
@@ -3701,14 +3701,14 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { FERALAS },
 					}),
 					q(12944, {	-- Candy Bucket — Grizzly Hills, Amberpine Lodge, Alliance
-						["coord"] = { 32.0, 60.2, 116 },
+						["coord"] = { 32.0, 60.2, GRIZZLY_HILLS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 116 },	-- Grizzly Hills
+						["maps"] = { GRIZZLY_HILLS },
 					}),
 					q(12945, {	-- Candy Bucket — Grizzly Hills, Westfall Brigade, Alliance
-						["coord"] = { 59.6, 26.4, 116 },
+						["coord"] = { 59.6, 26.4, GRIZZLY_HILLS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 116 },	-- Grizzly Hills
+						["maps"] = { GRIZZLY_HILLS },
 					}),
 					q(12352, {	-- Candy Bucket — Hellfire Peninsula, Honor Hold, Alliance
 						["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
@@ -3731,19 +3731,19 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { THE_HINTERLANDS },
 					}),
 					q(13435, {	-- Candy Bucket — Howling Fjord, Fort Wildervar, Alliance
-						["coord"] = { 60.5, 15.9, 117 },
+						["coord"] = { 60.5, 15.9, HOWLING_FJORD },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 117 },	-- Howling Fjord
+						["maps"] = { HOWLING_FJORD },
 					}),
 					q(13433, {	-- Candy Bucket — Howling Fjord, Valgarde, Alliance
-						["coord"] = { 58.4, 62.8, 117 },
+						["coord"] = { 58.4, 62.8, HOWLING_FJORD },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 117 },	-- Howling Fjord
+						["maps"] = { HOWLING_FJORD },
 					}),
 					q(13434, {	-- Candy Bucket — Howling Fjord, Westguard Keep, Alliance
-						["coord"] = { 30.8, 41.5, 117 },
+						["coord"] = { 30.8, 41.5, HOWLING_FJORD },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 117 },	-- Howling Fjord
+						["maps"] = { HOWLING_FJORD },
 					}),
 					q(12335, {	-- Candy Bucket — Ironforge, The Commons, Alliance
 						["coord"] = { 18.6, 51.3, IRONFORGE },
@@ -3836,9 +3836,9 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { STONETALON_MOUNTAINS },
 					}),
 					q(13448, {	-- Candy Bucket — Storm Peaks, Frosthold, Alliance
-						["coord"] = { 28.7, 74.3, 120 },
+						["coord"] = { 28.7, 74.3, THE_STORM_PEAKS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 120 },	-- The Storm Peaks
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					q(12336, {	-- Candy Bucket — Stormwind, The Trade District, Alliance
 						["coord"] = { 60.5, 75.2, STORMWIND_CITY },
@@ -3997,19 +3997,19 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { BLASTED_LANDS },
 					}),
 					q(13501, {	-- Candy Bucket — Borean Tundra, Bor'gorok Outpost, Horde
-						["coord"] = { 49.7, 10.0, 114 },
+						["coord"] = { 49.7, 10.0, BOREAN_TUNDRA },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 114 },	-- Borean Tundra
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					q(13467, {	-- Candy Bucket — Borean Tundra, Taunka'le Village, Horde
-						["coord"] = { 76.7, 37.4, 114 },
+						["coord"] = { 76.7, 37.4, BOREAN_TUNDRA },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 114 },	-- Borean Tundra
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					q(13468, {	-- Candy Bucket — Borean Tundra, Warsong Hold, Horde
-						["coord"] = { 41.8, 54.4, 114 },
+						["coord"] = { 41.8, 54.4, BOREAN_TUNDRA },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 114 },	-- Borean Tundra
+						["maps"] = { BOREAN_TUNDRA },
 					}),
 					q(28969, {	-- Candy Bucket — Cape of Stranglethorn, Hardwrench Hideaway, Horde
 						["coord"] = { 35.1, 27.2, THE_CAPE_OF_STRANGLETHORN },
@@ -4022,9 +4022,9 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { LEGION_DALARAN },
 					}),
 					q(13474, {	-- Candy Bucket — Dalaran : Northrend, Sunreaver's Sanctuary, Horde
-						["coord"] = { 66.6, 30.1, 125 },
+						["coord"] = { 66.6, 30.1, NORTHREND_DALARAN },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 125 },	-- Dalaran : Northrend
+						["maps"] = { NORTHREND_DALARAN },
 					}),
 					q(29019, {	-- Candy Bucket — Deepholm, Temple of Earth, Horde
 						["coord"] = { 51.2, 50.0, 207 },
@@ -4037,14 +4037,14 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { DESOLACE },
 					}),
 					q(13469, {	-- Candy Bucket — Dragonblight, Agmar's Hammer, Horde
-						["coord"] = { 37.8, 46.4, 115 },
+						["coord"] = { 37.8, 46.4, DRAGONBLIGHT },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 115 },	-- Dragonblight
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					q(13470, {	-- Candy Bucket — Dragonblight, Venomspite, Horde
-						["coord"] = { 76.8, 63.2, 115 },
+						["coord"] = { 76.8, 63.2, DRAGONBLIGHT },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 115 },	-- Dragonblight
+						["maps"] = { DRAGONBLIGHT },
 					}),
 					q(12361, {	-- Candy Bucket — Durotar, Razor Hill, Horde
 						["coord"] = { 51.6, 41.7, DUROTAR },
@@ -4087,14 +4087,14 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { GHOSTLANDS },
 					}),
 					q(12947, {	-- Candy Bucket — Grizzly Hills, Camp Oneqwah, Horde
-						["coord"] = { 65.4, 47.0, 116 },
+						["coord"] = { 65.4, 47.0, GRIZZLY_HILLS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 116 },	-- Grizzly Hills
+						["maps"] = { GRIZZLY_HILLS },
 					}),
 					q(12946, {	-- Candy Bucket — Grizzly Hills, Conquest Hold, Horde
-						["coord"] = { 20.9, 64.7, 116 },
+						["coord"] = { 20.9, 64.7, GRIZZLY_HILLS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 116 },	-- Grizzly Hills
+						["maps"] = { GRIZZLY_HILLS },
 					}),
 					q(12389, {	-- Candy Bucket — Hellfire Peninsula, Falcon Watch, Horde
 						["coord"] = { 26.9, 59.6, HELLFIRE_PENINSULA },
@@ -4127,19 +4127,19 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { THE_HINTERLANDS },
 					}),
 					q(13464, {	-- Candy Bucket — Howling Fjord, Camp Winterhoof, Horde
-						["coord"] = { 49.5, 10.8, 117 },
+						["coord"] = { 49.5, 10.8, HOWLING_FJORD },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 117 },	-- Howling Fjord
+						["maps"] = { HOWLING_FJORD },
 					}),
 					q(13465, {	-- Candy Bucket — Howling Fjord, New Agamand, Horde
-						["coord"] = { 52.1, 66.2, 117 },
+						["coord"] = { 52.1, 66.2, HOWLING_FJORD },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 117 },	-- Howling Fjord
+						["maps"] = { HOWLING_FJORD },
 					}),
 					q(13466, {	-- Candy Bucket — Howling Fjord, Vengeance Landing, Horde
-						["coord"] = { 79.2, 30.6, 117 },
+						["coord"] = { 79.2, 30.6, HOWLING_FJORD },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 117 },	-- Howling Fjord
+						["maps"] = { HOWLING_FJORD },
 					}),
 					q(32028, {	-- Candy Bucket — Jade Forest, Grookin Hill, Horde
 						["coord"] = { 28.0, 47.4, THE_JADE_FOREST },
@@ -4259,14 +4259,14 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["maps"] = { STONETALON_MOUNTAINS },
 					}),
 					q(13471, {	-- Candy Bucket — Storm Peaks, Camp Tunka'lo, Horde
-						["coord"] = { 67.6, 50.6, 120 },
+						["coord"] = { 67.6, 50.6, THE_STORM_PEAKS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 120 },	-- The Storm Peaks
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					q(13548, {	-- Candy Bucket — Storm Peaks, Grom'arsh Crash Site, Horde
-						["coord"] = { 37.1, 49.6, 120 },
+						["coord"] = { 37.1, 49.6, THE_STORM_PEAKS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { 120 },	-- The Storm Peaks
+						["maps"] = { THE_STORM_PEAKS },
 					}),
 					q(12384, {	-- Candy Bucket — Swamp of Sorrows, Stonard, Horde
 						["coord"] = { 46.9, 56.7, SWAMP_OF_SORROWS },

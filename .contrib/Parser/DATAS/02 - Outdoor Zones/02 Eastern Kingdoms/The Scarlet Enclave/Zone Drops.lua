@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(EASTERN_PLAGUELANDS, {
-			m(124, {	-- The Scarlet Enclave
+			m(THE_SCARLET_ENCLAVE, {
 				n(ZONE_DROPS, {
 					i(16252, {	-- Formula: Enchant Weapon - Crusader
 						["crs"] = { 9451 },	-- Scarlet Archmage

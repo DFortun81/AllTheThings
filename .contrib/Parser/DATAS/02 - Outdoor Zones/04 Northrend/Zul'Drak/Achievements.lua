@@ -4,15 +4,15 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(121, {	-- Zul'Drak
+	m(NORTHREND, {
+		m(ZULDRAK, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
 					["g"] = {
 						crit(18, {	-- Gutretch
-							["coord"] = { 13.2, 66.8, 121 },
+							["coord"] = { 13.2, 66.8, ZULDRAK },
 							["cr"] = 66639,	-- Gutretch <Master Pet Tamer>
 						}),
 					},

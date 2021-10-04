@@ -4,15 +4,15 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(118, {	-- Icecrown
+	m(NORTHREND, {
+		m(ICECROWN, {
 			n(FACTIONS, {
 				faction(1106, {	-- Argent Crusade
 					ach(945, {	-- The Argent Champion
 						title(99),	-- %s the Argent Champion
 					}),
 					n(30431, {	-- Veteran Crusader Aliocha Segard <Argent Crusade Quartermaster>
-						["coord"] = { 87.6, 75.6, 118 },
+						["coord"] = { 87.6, 75.6, ICECROWN },
 						["g"] = {
 							i(44244),	-- Argent Skeleton Crusher
 							i(44248),	-- Battle Mender's Helm
@@ -34,7 +34,7 @@ _.Zones =
 				}),
 				faction(1098, {	-- Knights of the Ebon Blade
 					n(32538, {	-- Duchess Mynx <Ebon Blade Quartermaster>
-						["coord"] = { 43.4, 20.6, 118 },
+						["coord"] = { 43.4, 20.6, ICECROWN },
 						["g"] = {
 							i(44302),	-- Belt of Dark Mending
 							i(44242),	-- Dark Soldier Cape

@@ -48,10 +48,10 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 							["coord"] = { 51.6, 22.6, UNDERCITY },
 						}),
 						crit(2, {	-- Durkot Wolfbrother in Warsong Hold
-							["coord"] = { 40.2, 55.0, 114 },
+							["coord"] = { 40.2, 55.0, BOREAN_TUNDRA },
 						}),
 						crit(3, {	-- Brother Keltan in Icecrown
-							["coord"] = { 69.4, 42.4, 118 },
+							["coord"] = { 69.4, 42.4, ICECROWN },
 						}),
 					},
 				}),

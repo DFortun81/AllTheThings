@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(114, {	-- Borean Tundra
+	m(NORTHREND, {
+		m(BOREAN_TUNDRA, {
 			n(ACHIEVEMENTS, {
 				ach(561, {	-- D.E.H.T.A's Little P.I.T.A.
 					["sourceQuest"] = 11892,	-- The Assassination of Harold Lane

@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(120, {	-- The Storm Peaks
+	m(NORTHREND, {
+		m(THE_STORM_PEAKS, {
 			n(ACHIEVEMENTS, {
 				ach(1428),	-- Mine Sweeper
 				ach(38, {	-- The Summit of Storm Peaks

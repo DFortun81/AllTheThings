@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(116, {	-- Grizzly Hills
+	m(NORTHREND, {
+		m(GRIZZLY_HILLS, {
 			filter(BATTLE_PETS, {
 				p(647, {	-- Grizzly Squirrel
 					["crs"] = { 62818 },	-- Grizzly Squirrel

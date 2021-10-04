@@ -9,7 +9,7 @@ _.Instances = { tier(WOTLK_TIER, {
 		["lvl"] = 80,
 		["mapID"] = 162,
 		["maps"] = { 163, 164, 165, 166, 167 },
-		["coord"] = { 87.4, 51.1, 115 },	-- Naxxramas, Dragonblight
+		["coord"] = { 87.4, 51.1, DRAGONBLIGHT },
 		["groups"] = {
 			d(3, {	-- 10-Man
 				ach(578),	-- The Dedicated Few (10 player)

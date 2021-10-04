@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(125, {	-- Dalaran: Northrend
+	m(NORTHREND, {
+		m(NORTHREND_DALARAN, {
 			n(FACTIONS, {
 				faction(1090, {	-- Kirin Tor
-					["coord"] = { 25.2, 47.8, 125 },
+					["coord"] = { 25.2, 47.8, NORTHREND_DALARAN },
 					["g"] = {
 						n(32287, {	-- Archmage Alvareaux <Kirin Tor Quartermaster>
 							i(44182),	-- Boots of Twinkling Stars
@@ -35,7 +35,7 @@ _.Zones =
 					["g"] = {
 						n(31579, {	-- Arcanist Adurin <Legacy Justice Quartermaster>
 							["races"] = ALLIANCE_ONLY,
-							["coord"] = { 37.2, 54.5, 125 },
+							["coord"] = { 37.2, 54.5, NORTHREND_DALARAN },
 							["g"] = {
 								i(40736),	-- Armguard of the Tower Archer
 								i(40719),	-- Band of Channeled Magic
@@ -198,7 +198,7 @@ _.Zones =
 						}),
 						n(33964, {	-- Arcanist Firael <Legacy Justice Quartermaster>
 							["races"] = ALLIANCE_ONLY,
-							["coord"] = { 38.7, 55.1, 125 },
+							["coord"] = { 38.7, 55.1, NORTHREND_DALARAN },
 							["g"] = {
 								i(45827),	-- Belt of the Ardent Marksman
 								i(45830),	-- Belt of the Living Thicket
@@ -365,7 +365,7 @@ _.Zones =
 						}),
 						n(31580, {	-- Arcanist Ivrenne <Legacy Justice Quartermaster>
 							["races"] = ALLIANCE_ONLY,
-							["coord"] = { 36.9, 55.0, 125 },
+							["coord"] = { 36.9, 55.0, NORTHREND_DALARAN },
 							["g"] = {
 								i(40693),	-- Beadwork Belt of Shamanic Vision
 								i(40679),	-- Chained Military Gorget
@@ -527,7 +527,7 @@ _.Zones =
 						}),
 						n(35494, {	-- Arcanist Miluria <Legacy Justice Quartermaster>
 							["races"] = ALLIANCE_ONLY,
-							["coord"] = { 37.9, 54.3, 125 },
+							["coord"] = { 37.9, 54.3, NORTHREND_DALARAN },
 							["g"] = {
 								i(47732),	-- Band of the Invoker
 								i(47729),	-- Bloodshed Band
@@ -642,7 +642,7 @@ _.Zones =
 						}),
 						n(37942, {	-- Arcanist Uovril <Legacy Justice Quartermaster>
 							["races"] = ALLIANCE_ONLY,
-							["coord"] = { 38.3, 54.4, 125 },
+							["coord"] = { 38.3, 54.4, NORTHREND_DALARAN },
 							["g"] = {
 								i(50993),	-- Band of the Night Raven
 								i(50996),	-- Belt of Omission
@@ -765,7 +765,7 @@ _.Zones =
 						}),
 						n(31032, {	-- Derek Odds <Cooking Supplies>
 							["races"] = ALLIANCE_ONLY,
-							["coord"] = { 40.7, 65.9, 125 },
+							["coord"] = { 40.7, 65.9, NORTHREND_DALARAN },
 							["g"] = {
 								i(134020, {	-- Chef's Hat
 									["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
@@ -850,11 +850,11 @@ _.Zones =
 						n(28705, {	-- Katherine Lee
 							["description"] = "All dailies offered by this questgiver award at least one Epicurean's Award and a Small Spice Bag, which can contain the recipes for Captain Rumsey's Lager, Delicious Chocolate Cake, and Stormchops.",
 							["races"] = ALLIANCE_ONLY,
-							["coord"] = { 40.6, 64.9, 125 },
+							["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 							["g"] = {
 								q(13103, {	-- Cheese for Glowergold
 									["provider"] = { "n", 28705 },	-- Katherine Lee
-									["coord"] = { 40.6, 64.9, 125 },
+									["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										crit(4, {	-- Cheese for Glowergold
@@ -865,7 +865,7 @@ _.Zones =
 								}),
 								q(13101, {	-- Convention at the Legerdemain
 									["provider"] = { "n", 28705 },	-- Katherine Lee
-									["coord"] = { 40.6, 64.9, 125 },
+									["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										crit(2, {	-- Convention at the Legerdemain
@@ -876,7 +876,7 @@ _.Zones =
 								}),
 								q(13100, {	-- Infused Mushroom Meatloaf
 									["provider"] = { "n", 28705 },	-- Katherine Lee
-									["coord"] = { 40.6, 64.9, 125 },
+									["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										crit(1, {	-- Infused Mushroom Meatloaf
@@ -887,7 +887,7 @@ _.Zones =
 								}),
 								q(13107, {	-- Mustard Dogs!
 									["provider"] = { "n", 28705 },	-- Katherine Lee
-									["coord"] = { 40.6, 64.9, 125 },
+									["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										crit(5, {	-- Mustard Dogs!
@@ -898,7 +898,7 @@ _.Zones =
 								}),
 								q(13102, {	-- Sewer Stew
 									["provider"] = { "n", 28705 },	-- Katherine Lee
-									["coord"] = { 40.6, 64.9, 125 },
+									["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										crit(3, {	-- Sewer Stew
@@ -918,11 +918,11 @@ _.Zones =
 						n(29631, {	-- Awilo Longomba
 							["description"] = "All dailies offered by this questgiver award at least one Epicurean's Award and a Small Spice Bag, which can contain the recipes for Captain Rumsey's Lager, Delicious Chocolate Cake, and Stormchops.",
 							["races"] = HORDE_ONLY,
-							["coord"] = { 70.0, 39.0, 125 },
+							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 							["g"] = {
 								q(13115, {	-- Cheese for Glowergold
 									["provider"] = { "n", 29631 },	-- Awilo Longomba
-									["coord"] = { 70.0, 39.0, 125 },
+									["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										crit(4, {	-- Cheese for Glowergold
@@ -933,7 +933,7 @@ _.Zones =
 								}),
 								q(13113, {	-- Convention at the Legerdemain
 									["provider"] = { "n", 29631 },	-- Awilo Longomba
-									["coord"] = { 70.0, 39.0, 125 },
+									["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										crit(2, {	-- Convention at the Legerdemain
@@ -944,7 +944,7 @@ _.Zones =
 								}),
 								q(13112, {	-- Infused Mushroom Meatloaf
 									["provider"] = { "n", 29631 },	-- Awilo Longomba
-									["coord"] = { 70.0, 39.0, 125 },
+									["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										crit(1, {	-- Infused Mushroom Meatloaf
@@ -955,7 +955,7 @@ _.Zones =
 								}),
 								q(13116, {	-- Mustard Dogs!
 									["provider"] = { "n", 29631 },	-- Awilo Longomba
-									["coord"] = { 70.0, 39.0, 125 },
+									["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										crit(5, {	-- Mustard Dogs!
@@ -966,7 +966,7 @@ _.Zones =
 								}),
 								q(13114, {	-- Sewer Stew
 									["provider"] = { "n", 29631 },	-- Awilo Longomba
-									["coord"] = { 70.0, 39.0, 125 },
+									["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										crit(3, {	-- Sewer Stew
@@ -979,7 +979,7 @@ _.Zones =
 						}),
 						n(37941, {	-- Magister Arlan <Legacy Justice Quartermaster>
 							["races"] = HORDE_ONLY,
-							["coord"] = { 65.9, 22.9, 125 },
+							["coord"] = { 65.9, 22.9, NORTHREND_DALARAN },
 							["g"] = {
 								i(50993),	-- Band of the Night Raven
 								i(50996),	-- Belt of Omission
@@ -1102,7 +1102,7 @@ _.Zones =
 						}),
 						n(31581, {	-- Magister Brasael <Legacy Justice Quartermaster>
 							["races"] = HORDE_ONLY,
-							["coord"] = { 66.1, 23.4, 125 },
+							["coord"] = { 66.1, 23.4, NORTHREND_DALARAN },
 							["g"] = {
 								i(40736),	-- Armguard of the Tower Archer
 								i(40719),	-- Band of Channeled Magic
@@ -1265,7 +1265,7 @@ _.Zones =
 						}),
 						n(33963, {	-- Magister Sarien <Legacy Justice Quartermaster>
 							["races"] = HORDE_ONLY,
-							["coord"] = { 65.7, 24.4, 125 },
+							["coord"] = { 65.7, 24.4, NORTHREND_DALARAN },
 							["g"] = {
 								i(45827),	-- Belt of the Ardent Marksman
 								i(45830),	-- Belt of the Living Thicket
@@ -1432,7 +1432,7 @@ _.Zones =
 						}),
 						n(31582, {	-- Magistrix Lambriesse <Legacy Justice Quartermaster>
 							["races"] = HORDE_ONLY,
-							["coord"] = { 65.6, 22.7, 125 },
+							["coord"] = { 65.6, 22.7, NORTHREND_DALARAN },
 							["g"] = {
 								i(40693),	-- Beadwork Belt of Shamanic Vision
 								i(40679),	-- Chained Military Gorget
@@ -1594,7 +1594,7 @@ _.Zones =
 						}),
 						n(35495, {	-- Magistrix Vesara <Legacy Justice Quartermaster>
 							["races"] = HORDE_ONLY,
-							["coord"] = { 65.0, 23.0, 125 },
+							["coord"] = { 65.0, 23.0, NORTHREND_DALARAN },
 							["g"] = {
 								i(47732),	-- Band of the Invoker
 								i(47729),	-- Bloodshed Band
@@ -1709,7 +1709,7 @@ _.Zones =
 						}),
 						n(31031, {	-- Misensi <Cooking Supplies>
 							["races"] = HORDE_ONLY,
-							["coord"] = { 70.0, 38.6, 125 },
+							["coord"] = { 70.0, 38.6, NORTHREND_DALARAN },
 							["g"] = {
 								i(134020, {	-- Chef's Hat
 									["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award

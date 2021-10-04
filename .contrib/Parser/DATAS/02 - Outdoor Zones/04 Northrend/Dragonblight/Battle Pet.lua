@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(115, {	-- Dragonblight
+	m(NORTHREND, {
+		m(DRAGONBLIGHT, {
 			filter(BATTLE_PETS, {
 				p(641, {	-- Arctic Hare
 					["crs"] = { 62693 },
@@ -20,7 +20,7 @@ _.Zones =
 					["crs"] = { 71163 },
 				}),
 				q(31933, {	-- Okrut Dragonwaste
-					["coord"] = { 59.0, 77.0, 115 },
+					["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
 					["provider"] = { "n", 66638 },	-- Okrut Dragonwaste
 					["isDaily"] = true,
 				}),

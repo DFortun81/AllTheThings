@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(117, {	-- Howling Fjord
+	m(NORTHREND, {
+		m(HOWLING_FJORD, {
 			filter(BATTLE_PETS, {
 				p(646, {	-- Chicken
 					["crs"] = { 62664 },	-- Chicken
@@ -57,7 +57,7 @@ _.Zones =
 				}),
 				q(31931, {	--  Beegle Blastfuse
 					["provider"] = { "n", 66635 },	-- Beegle Blastfuse
-					["coord"] = { 28.6, 33.8, 117 },
+					["coord"] = { 28.6, 33.8, HOWLING_FJORD },
 					["repeatable"] = true,
 				}),
 			}),

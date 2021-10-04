@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(119, {	-- Sholazar Basin
+	m(NORTHREND, {
+		m(SHOLAZAR_BASIN, {
 			n(QUESTS, {
 				q(12581, {	-- A Hero's Burden
-					["coord"] = { 74.1, 50.7, 119 },
+					["coord"] = { 74.1, 50.7, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28122 },	-- Moodle
 					["sourceQuests"] = {
 						12579,	-- Lifeblood of the Mosswalker Shrine
@@ -22,7 +22,7 @@ _.Zones =
 					},
 				}),
 				q(12607, {	-- A Mammoth Undertaking
-					["coord"] = { 42.1, 28.8, 119 },
+					["coord"] = { 42.1, 28.8, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28374 },	-- Zootfizzle
 					["sourceQuests"] = {
 						12605,	-- Securing the Bait
@@ -30,7 +30,7 @@ _.Zones =
 					},
 				}),
 				q(12536, {	-- A Rough Ride
-					["coord"] = { 54.9, 69.1, 119 },
+					["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28082 },	-- High-Shaman Rakjak
 					["sourceQuests"] = {
 						12535,	-- Mischief in the Making
@@ -38,12 +38,12 @@ _.Zones =
 					},
 				}),
 				q(12804, {	-- A Steak Fit for a Hunter
-					["coord"] = { 26.7, 59.5, 119 },
+					["coord"] = { 26.7, 59.5, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28046 },	-- Korg the Cleaver
 					["sourceQuest"] = 12520,	-- Rhino Mastery: The Test
 				}),
 				q(12691, {  -- A Timeworn Coffer
-					["coord"] = { 80.4, 55.8, 119 },
+					["coord"] = { 80.4, 55.8, SHOLAZAR_BASIN },
 					["provider"] = { "o", 190768 },	-- Timeworn Coffer
 					["g"] = {
 						i(39348),	-- Aged Watcher's Legwraps
@@ -53,7 +53,7 @@ _.Zones =
 					},
 				}),
 				q(12696, {	-- Aerial Surveillance
-					["coord"] = { 25.4, 58.4, 119 },
+					["coord"] = { 25.4, 58.4, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28266 },	-- Professor Calvert
 					["sourceQuest"] = 12523,	-- Have a Part, Give a Part
 				}),
@@ -61,12 +61,12 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(12699, {	-- An Embarrassing Incident
-					["coord"] = { 49.9, 61.5, 119 },
+					["coord"] = { 49.9, 61.5, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28746 },	-- Pilot Vic
 					["sourceQuest"] = 12523,	-- Have a Part, Give a Part
 				}),
 				q(12561, {  -- An Issue of Trust
-					["coord"] = { 64.5, 48.6, 119 },
+					["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27801 },	-- Avatar of Freya
 					["sourceQuest"] = 12803,	-- Force of Nature
 					["g"] = {
@@ -77,12 +77,12 @@ _.Zones =
 					},
 				}),
 				q(12543, {	-- An Offering for Soo-rahm
-					["coord"] = { 25.5, 66.5, 119 },
+					["coord"] = { 25.5, 66.5, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28191 },	-- Oracle Soo-rahm
 					["sourceQuest"] = 12526,	-- Rhino Mastery: The Chase
 				}),
 				q(12574, {	-- Back So Soon?
-					["coord"] = { 54.5, 56.3, 119 },
+					["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28027 },	-- High-Oracle Soo-say
 					["sourceQuests"] = {
 						12572,	-- Gods like Shiny Things
@@ -97,11 +97,11 @@ _.Zones =
 					["sourceQuest"] = 12547,	-- The Activation Rune
 				}),
 				q(12683, {	-- Burning to Help
-					["coord"] = { 42.0, 28.6, 119 },
+					["coord"] = { 42.0, 28.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28771 },	-- Colvin Norrington
 				}),
 				q(12569, {  -- Crocolisk Mastery: The Ambush
-					["coord"] = { 27.2, 59.8, 119 },
+					["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28032 },	-- Debaar
 					["sourceQuest"] = 12560,	-- Crocolisk Mastery: The Plan
 					["g"] = {
@@ -112,12 +112,12 @@ _.Zones =
 					},
 				}),
 				q(12560, {	-- Crocolisk Mastery: The Plan
-					["coord"] = { 27.2, 59.8, 119 },
+					["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28032 },	-- Debaar
 					["sourceQuest"] = 12551,	-- Crocolisk Mastery: The Trial
 				}),
 				q(12551, {	-- Crocolisk Mastery: The Trial
-					["coord"] = { 27.2, 59.8, 119 },
+					["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28032 },	-- Debaar
 					["sourceQuests"] = {
 						12549,	-- Dreadsaber Mastery: Becoming a Predator
@@ -125,12 +125,12 @@ _.Zones =
 					},
 				}),
 				q(12608, {	-- Cultist Incursion
-					["coord"] = { 65.0, 60.3, 119 },
+					["coord"] = { 65.0, 60.3, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28464 },	-- Cultist Corpse
 					["sourceQuest"] = 12612,	-- The Fallen Pillar
 				}),
 				q(12549, {	-- Dreadsaber Mastery: Becoming a Predator
-					["coord"] = { 26.6, 59.0, 119 },
+					["coord"] = { 26.6, 59.0, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28031 },	-- Buck Cantwell
 					["sourceQuests"] = {
 						12523,	-- Have a Part, Give a Part
@@ -138,7 +138,7 @@ _.Zones =
 					},
 				}),
 				q(12558, {  -- Dreadsaber Mastery: Ready to Pounce
-					["coord"] = { 26.6, 59.0, 119 },
+					["coord"] = { 26.6, 59.0, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28031 },	-- Buck Cantwell
 					["sourceQuest"] = 12550,	-- Dreadsaber Mastery: Stalking the Prey
 					["g"] = {
@@ -150,16 +150,16 @@ _.Zones =
 					},
 				}),
 				q(12550, {	-- Dreadsaber Mastery: Stalking the Prey
-					["coord"] = { 26.6, 59.0, 119 },
+					["coord"] = { 26.6, 59.0, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28031 },	-- Buck Cantwell
 					["sourceQuest"] = 12549,	-- Dreadsaber Mastery: Becoming a Predator
 				}),
 				q(12688, {	-- Engineering a Disaster
-					["coord"] = { 35.5, 47.4, 119 },
+					["coord"] = { 35.5, 47.4, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28787 },	-- Engineer Helice
 				}),
 				q(12617, {  -- Exterminate the Intruders
-					["coord"] = { 64.5, 48.6, 119 },
+					["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27801 },	-- Avatar of Freya
 					["sourceQuest"] = 12608,	-- Cultist Incursion
 					["g"] = {
@@ -170,7 +170,7 @@ _.Zones =
 					},
 				}),
 				q(12532, {  -- Flown the Coop!
-					["coord"] = { 55.4, 69.6, 119 },
+					["coord"] = { 55.4, 69.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28138 },	-- Elder Harkek
 					["sourceQuests"] = {
 						12534,	-- The Sapphire Queen
@@ -184,17 +184,17 @@ _.Zones =
 					},
 				}),
 				q(12803, {	-- Force of Nature
-					["coord"] = { 49.9, 61.5, 119 },
+					["coord"] = { 49.9, 61.5, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28746 },	-- Pilot Vic
 					["isBreadcrumb"] = true,
 				}),
 				q(12576, {	-- Forced Hand
-					["coord"] = { 42.1, 38.6, 119 },
+					["coord"] = { 42.1, 38.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28114 },	-- Mistcaller Soo-gan
 					["sourceQuest"] = 12574,	-- Back So Soon?
 				}),
 				q(12570, {  -- Fortunate Misunderstandings
-					["coord"] = { 56.6, 62.4, 119 },
+					["coord"] = { 56.6, 62.4, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28217 },	-- Injured Rainspeaker Oracle
 					["sourceQuest"] = 12540,	-- Just Following Orders
 					["g"] = {
@@ -205,22 +205,22 @@ _.Zones =
 					},
 				}),
 				q(12621, {	-- Freya's Pact
-					["coord"] = { 64.5, 48.6, 119 },
+					["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27801 },	-- Avatar of Freya
 					["sourceQuest"] = 12620,	-- The Lifewarden's Wrath
 				}),
 				q(12572, {	-- Gods like Shiny Things
-					["coord"] = { 54.4, 56.3, 119 },
+					["coord"] = { 54.4, 56.3, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28120 },	-- Lafoo
 					["sourceQuest"] = 12570,	-- Fortunate Misunderstandings
 				}),
 				q(12523, {	-- Have a Part, Give a Part
-					["coord"] = { 25.3, 58.4, 119 },
+					["coord"] = { 25.3, 58.4, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28033 },	-- Weslex Quickwrench
 					["sourceQuest"] = 12522,	-- Need an Engine, Take an Engine
 				}),
 				q(12577, {	-- Home Time!
-					["coord"] = { 42.1, 38.6, 119 },
+					["coord"] = { 42.1, 38.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28114 },	-- Mistcaller Soon-gan
 					["sourceQuests"] = {
 						12576,	-- Forced Hand
@@ -228,7 +228,7 @@ _.Zones =
 					},
 				}),
 				q(12539, {	-- Hoofing It
-					["coord"] = { 46.2, 39.4, 119 },
+					["coord"] = { 46.2, 39.4, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28216 },	-- Zepik the Gorloc Hunter
 					["sourceQuests"] = {
 						12537,	-- Lightning Definitely Strikes Twice
@@ -236,7 +236,7 @@ _.Zones =
 					},
 				}),
 				q(12595, {	-- In Search of Bigger Game
-					["coord"] = { 27.0, 58.6, 119 },
+					["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27986 },	-- Hemet Nesingwary
 					["sourceQuests"] = {
 						12569,	-- Crocolisk Mastery: The Ambush
@@ -245,7 +245,7 @@ _.Zones =
 					},
 				}),
 				q(12624, {  -- It Could Be Anywhere!
-					["coord"] = { 26.8, 58.9, 119 },
+					["coord"] = { 26.8, 58.9, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28497 },	-- Chad
 					["g"] = {
 						i(39479),	-- Cloak of Renewed Hope
@@ -255,12 +255,12 @@ _.Zones =
 					},
 				}),
 				q(12540, {	-- Just Following Orders
-					["coord"] = { 54.9, 69.1, 119 },
+					["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28082 },	-- High-Shaman Rakjak
 					["sourceQuest"] = 12539,	-- Hoofing It
 				}),
 				q(12589, {	-- Kick, What Kick?
-					["coord"] = { 27.0, 59.8, 119 },
+					["coord"] = { 27.0, 59.8, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28328 },	-- Drostan
 					["sourceQuests"] = {
 						12523,	-- Have a Part, Give a Part
@@ -268,7 +268,7 @@ _.Zones =
 					},
 				}),
 				q(12651, {	-- Lakeside Landing
-					["coord"] = { 27.0, 58.6, 119 },
+					["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27986 },	-- Hemet Nesingwary
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
@@ -277,12 +277,12 @@ _.Zones =
 					},
 				}),
 				q(12579, {	-- Lifeblood of the Mosswalker Shrine
-					["coord"] = { 74.1, 50.7, 119 },
+					["coord"] = { 74.1, 50.7, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28122 },	-- Moodle
 					["sourceQuest"] = 12578,	-- The Angry Gorloc
 				}),
 				q(12537, {  -- Lightning Definitely Strikes Twice
-					["coord"] = { 46.2, 39.4, 119 },
+					["coord"] = { 46.2, 39.4, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28216 },	-- Zepik the Gorloc Hunter
 					["sourceQuest"] = 12536,	-- A Rough Ride
 					["g"] = {
@@ -296,12 +296,12 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(12571, {	-- Make the Bad Snake Go Away
-					["coord"] = { 54.5, 56.3, 119 },
+					["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28027 },	-- High-Oracle Soo-say
 					["sourceQuest"] = 12570,	-- Fortunate Misunderstandings
 				}),
 				q(12573, {  -- Making Peace
-					["coord"] = { 54.5, 56.3, 119 },
+					["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28027 },	-- High-Oracle Soo-say
 					["sourceQuest"] = 12571,	-- Make the Bad Snake Go Away
 					["g"] = {
@@ -312,12 +312,12 @@ _.Zones =
 					},
 				}),
 				q(12535, {	-- Mischief in the Making
-					["coord"] = { 54.9, 69.1, 119 },
+					["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28082 },	-- High-Shaman Rakjak
 					["sourceQuest"] = 12532,	-- Flown the Coop!
 				}),
 				q(12658, {	-- My Pet Roc
-					["coord"] = { 42.1, 28.8, 119 },
+					["coord"] = { 42.1, 28.8, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28374 },	-- Zootfizzle
 					["sourceQuests"] = {
 						12605,	-- Securing the Bait
@@ -325,16 +325,16 @@ _.Zones =
 					},
 				}),
 				q(12522, {	-- Need an Engine, Take an Engine
-					["coord"] = { 25.3, 58.4, 119 },
+					["coord"] = { 25.3, 58.4, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28033 },	-- Weslex Quickwrench
 				}),
 				q(12528, {	-- Playing Along
-					["coord"] = { 50.5, 76.5, 119 },
+					["coord"] = { 50.5, 76.5, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28095 },	-- Tracker Gekgek
 					["description"] = "Available after you kill |cFFFFD700Pitch|r.",
 				}),
 				q(12614, {  -- Post-partum Aggression
-					["coord"] = { 42.3, 28.7, 119 },
+					["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28376 },	-- Dorian Drakestalker
 					["sourceQuest"] = 12607,	-- A Mammoth Undertaking
 					["g"] = {
@@ -346,17 +346,17 @@ _.Zones =
 					},
 				}),
 				q(12613, {	-- Powering the Waygate - The Makers' Overlook
-					["coord"] = { 64.6, 48.7, 119 },
+					["coord"] = { 64.6, 48.7, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27801 },	-- Avatar of Freya
 					["sourceQuest"] = 12559,	-- Powering the Waygate - The Makers' Perch
 				}),
 				q(12559, {	-- Powering the Waygate - The Makers' Perch
-					["coord"] = { 64.5, 48.6, 119 },
+					["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27801 },	-- Avatar of Freya
 					["sourceQuest"] = 12621,	-- Freya's Pact
 				}),
 				q(12681, {  -- Reagent Agent
-					["coord"] = { 42.0, 28.6, 119 },
+					["coord"] = { 42.0, 28.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28771 },	-- Colvin Norrington
 					["sourceQuests"] = {
 						12605,	-- Securing the Bait
@@ -370,7 +370,7 @@ _.Zones =
 					},
 				}),
 				q(12546, {  -- Reclamation
-					["coord"] = { 64.6, 48.7, 119 },
+					["coord"] = { 64.6, 48.7, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27801 },	-- Avatar of Freya
 					["sourceQuest"] = 12797,	-- Back Through the Waygate
 					["g"] = {
@@ -382,7 +382,7 @@ _.Zones =
 					},
 				}),
 				q(12671, {	-- Reconnaissance Flight
-					["coord"] = { 49.9, 61.5, 119 },
+					["coord"] = { 49.9, 61.5, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28746 },	-- Pilot Vic
 					["sourceQuests"] = {
 						12696,	-- Aerial Surveillance
@@ -390,7 +390,7 @@ _.Zones =
 					},
 				}),
 				q(12611, {  -- Returned Sevenfold
-					["coord"] = { 64.5, 48.5, 119 },
+					["coord"] = { 64.5, 48.5, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27801 },	-- Avatar of Freya
 					["sourceQuest"] = 12561,	-- An Issue of Trust
 					["g"] = {
@@ -402,12 +402,12 @@ _.Zones =
 					},
 				}),
 				q(12526, {	-- Rhino Mastery: The Chase
-					["coord"] = { 27.0, 58.6, 119 },
+					["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27986 },	-- Hemet Nesingwary
 					["sourceQuest"] = 12520,	-- Rhino Mastery: The Test
 				}),
 				q(12556, {  -- Rhino Mastery: The Kill
-					["coord"] = { 27.0, 58.6, 119 },
+					["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27986 },	-- Hemet Nesingwary
 					["sourceQuest"] = 12544,	-- The Bones of Nozroon
 					["g"] = {
@@ -418,7 +418,7 @@ _.Zones =
 					},
 				}),
 				q(12520, {	-- Rhino Mastery: The Test
-					["coord"] = { 27.0, 58.6, 119 },
+					["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27986 },	-- Hemet Nesingwary
 					["sourceQuests"] = {
 						12523,	-- Have a Part, Give a Part
@@ -429,12 +429,12 @@ _.Zones =
 					},
 				}),
 				q(12805, {	-- Salvaging Life's Strength
-					["coord"] = { 64.5, 48.5, 119 },
+					["coord"] = { 64.5, 48.5, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27801 },	-- Avatar of Freya
 					["sourceQuest"] = 12611,	-- Returned Sevenfold
 				}),
 				q(12605, {	-- Securing the Bait
-					["coord"] = { 42.3, 28.7, 119 },
+					["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28376 },	-- Dorian Drakestalker
 					["sourceQuests"] = {
 						12569,	-- Crocolisk Mastery: The Ambush
@@ -443,7 +443,7 @@ _.Zones =
 					},
 				}),
 				q(12603, {	-- Sharpening Your Talons
-					["coord"] = { 42.3, 28.7, 119 },
+					["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28376 },	-- Dorian Drakestalker
 					["sourceQuests"] = {
 						12569,	-- Crocolisk Mastery: The Ambush
@@ -452,7 +452,7 @@ _.Zones =
 					},
 				}),
 				q(12634, {	-- Some Make Lemonade, Some Make Liquor
-					["coord"] = { 26.7, 60.0, 119 },
+					["coord"] = { 26.7, 60.0, SHOLAZAR_BASIN },
 					["provider"] = { "n", 29157 },	-- Grimbooze Thunderbrew
 					["sourceQuests"] = {
 						12549,	-- Dreadsaber Matery: Becoming a Predator
@@ -460,7 +460,7 @@ _.Zones =
 					},
 				}),
 				q(12644, {	-- Still At It
-					["coord"] = { 26.7, 60.0, 119 },
+					["coord"] = { 26.7, 60.0, SHOLAZAR_BASIN },
 					["provider"] = { "n", 29157 },	-- Grimbooze Thunderbrew
 					["sourceQuest"] = 12634,	-- Some Make Lemonade, Some Make Liquor
 				}),
@@ -478,32 +478,32 @@ _.Zones =
 					},
 				}),
 				q(12578, {	-- The Angry Gorloc
-					["coord"] = { 54.5, 56.3, 119 },
+					["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28027 },	-- High-Oracle Soo-say
 					["sourceQuest"] = 12577,	-- Home Time!
 				}),
 				q(12529, {	-- The Ape Hunter's Slave
-					["coord"] = { 54.9, 69.1, 119 },
+					["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28082 },	-- High-Shaman Rakjak
 					["sourceQuest"] = 12528,	-- Playing Along
 				}),
 				q(12544, {	-- The Bones of Nozronn
-					["coord"] = { 25.5, 66.5, 119 },
+					["coord"] = { 25.5, 66.5, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28191 },	-- Oracle Soo-rahm
 					["sourceQuest"] = 12543,	-- An Offering for Soo-rahm
 				}),
 				q(12548, {	-- The Etymidian
-					["coord"] = { 64.6, 48.7, 119 },
+					["coord"] = { 64.6, 48.7, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27801 },	-- Avatar of Freya
 					["sourceQuest"] = 12613,	-- Powering the Waygate - The Makers' Overlook
 				}),
 				q(12612, {	-- The Fallen Pillar
-					["coord"] = { 64.5, 48.5, 119 },
+					["coord"] = { 64.5, 48.5, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27801 },	-- Avatar of Freya
 					["sourceQuest"] = 12611,	-- Returned Sevenfold
 				}),
 				q(12592, {  -- The Great Hunter's Challenge
-					["coord"] = { 27.0, 59.9, 119 },
+					["coord"] = { 27.0, 59.9, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28328 },	-- Drostan
 					["sourceQuest"] = 12589,	-- Kick, What Kick?
 					["g"] = {
@@ -514,7 +514,7 @@ _.Zones =
 					},
 				}),
 				q(12620, {	-- The Lifewarden's Wrath
-					["coord"] = { 64.5, 48.6, 119 },
+					["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27801 },	-- Avatar of Freya
 					["sourceQuests"] = {
 						12617,	-- Exterminate the Intruders
@@ -522,7 +522,7 @@ _.Zones =
 					},
 				}),
 				q(12575, {  -- The Lost Mistwhisper Treasure
-					["coord"] = { 42.1, 38.6, 119 },
+					["coord"] = { 42.1, 38.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28114 },	-- Mistcaller Soo-gan
 					["sourceQuest"] = 12574,	-- Back So Soon?
 					["g"] = {
@@ -533,22 +533,22 @@ _.Zones =
 					},
 				}),
 				q(12538, {	-- The Mist Isn't Listening
-					["coord"] = { 46.2, 39.4, 119 },
+					["coord"] = { 46.2, 39.4, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28216 },	-- Zepik the Gorloc Hunter
 					["sourceQuest"] = 12536,	-- A Rough Ride
 				}),
 				q(12580, {	-- The Mosswalker Savior
-					["coord"] = { 74.1, 50.7, 119 },
+					["coord"] = { 74.1, 50.7, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28122 },	-- Moodle
 					["sourceQuest"] = 12578,	-- The Angry Gorloc
 				}),
 				q(12654, {	-- The Part-time Hunter
-					["coord"] = { 50.4, 62.1, 119 },
+					["coord"] = { 50.4, 62.1, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28568 },	-- Tamara Wobblesprocket
 					["sourceQuest"] = 12651,	-- Lakeside Landing
 				}),
 				q(12534, {  -- The Sapphire Queen
-					["coord"] = { 55.5, 69.6, 119 },
+					["coord"] = { 55.5, 69.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28138 },	-- Elder Harkek
 					["sourceQuests"] = {
 						12529,	-- The Ape Hunter's Slave
@@ -562,17 +562,17 @@ _.Zones =
 					},
 				}),
 				q(12645, {	-- The Taste Test
-					["coord"] = { 26.7, 60.0, 119 },
+					["coord"] = { 26.7, 60.0, SHOLAZAR_BASIN },
 					["provider"] = { "n", 29157 },	-- Crimbooze Thunderbrew
 					["sourceQuest"] = 12644,	-- Still At It
 				}),
 				q(12531, {	-- The Underground Menace
-					["coord"] = { 55.4, 69.6, 119 },
+					["coord"] = { 55.4, 69.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28138 },	-- Elder Harkek
 					["sourceQuest"] = 12532,	-- Flown the Coop!
 				}),
 				q(12533, {	-- The Wasp Hunter's Apprentice
-					["coord"] = { 54.9, 69.1, 119 },
+					["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28082 },	-- High-Shaman Rakjak
 					["sourceQuests"] = {
 						12529,	-- The Ape Hunter's Slave
@@ -580,17 +580,17 @@ _.Zones =
 					}
 				}),
 				q(12530, {	-- Tormenting the Softknuckles
-					["coord"] = { 55.0, 69.1, 119 },
+					["coord"] = { 55.0, 69.1, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28214 },	-- Goregek the Gorilla Hunter
 					["sourceQuest"] = 12528,	-- Playing Along
 				}),
 				q(12660, {	-- Weapons of Destruction
-					["coord"] = { 64.5, 48.6, 119 },
+					["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27801 },	-- Avatar of Freya
 					["sourceQuest"] = 12608,	-- Cultist Incursion
 				}),
 				q(12489, {	-- Welcome to Sholazar Basin
-					["coord"] = { 39.7, 58.7, 119 },
+					["coord"] = { 39.7, 58.7, SHOLAZAR_BASIN },
 					["provider"] = { "n", 27987 },	-- Monte Muzzleshot
 					["sourceQuests"] = {
 						39209,	-- Sholazar Basin
@@ -599,12 +599,12 @@ _.Zones =
 					},
 				}),
 				q(12524, {	-- Venture Co. Misadventure
-					["coord"] = { 27.2, 59.8, 119 },
+					["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28032 },	-- Debaar
 					["sourceQuest"] = 12489,	-- Welcome to Scholazar Basin
 				}),
 				q(12525, {	-- Wipe That Grin Off His Face
-					["coord"] = { 27.2, 59.8, 119 },
+					["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 					["provider"] = { "n", 28032 },	-- Debaar
 					["sourceQuest"] = 12524,	-- Venture Co. Misadventure
 					["g"] = {

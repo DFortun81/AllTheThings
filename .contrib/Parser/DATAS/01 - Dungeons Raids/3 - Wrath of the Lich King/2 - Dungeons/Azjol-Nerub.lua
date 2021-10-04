@@ -6,7 +6,7 @@ _.Instances = { tier(WOTLK_TIER, {
 	inst(272, {	-- Azjol-Nerub
 		["lvl"] = 60,
 		["mapID"] = 157,
-		["coord"] = { 26.0, 50.6, 115 },
+		["coord"] = { 26.0, 50.6, DRAGONBLIGHT },
 		["maps"] = { 158, 159 },
 		["groups"] = {
 			n(QUESTS, {

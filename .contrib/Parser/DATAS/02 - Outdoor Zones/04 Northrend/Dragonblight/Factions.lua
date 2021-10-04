@@ -4,12 +4,12 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(115, {	-- Dragonblight
+	m(NORTHREND, {
+		m(DRAGONBLIGHT, {
 			n(FACTIONS, {
 				faction(1073, {	-- The Kalu'ak
 					n(32763, {	-- Sairuk <Kalu'ak Quartermaster>
-						["coord"] = { 48.6, 75.6, 115 },
+						["coord"] = { 48.6, 75.6, DRAGONBLIGHT },
 						["g"] = {
 							i(44059),	-- Cuttlefish Scale Breastplate
 							i(44060),	-- Cuttlefish Tooth Ringmail
@@ -31,7 +31,7 @@ _.Zones =
 						},
 					}),
 					q(11960, {	-- Planning for the Future
-						["coord"] = { 48.2, 74.3, 115 },
+						["coord"] = { 48.2, 74.3, DRAGONBLIGHT },
 						["isDaily"] = true,
 						["provider"] = { "n", 26228 },	-- Trapper Mau'i
 					}),
@@ -42,7 +42,7 @@ _.Zones =
 				}),
 				faction(1091, {	-- The Wyrmrest Accord
 					n(32533, {	-- Cielstrasza <Wyrmrest Accord Quartermaster>
-						["coord"] = { 59.8, 53.0, 115 },
+						["coord"] = { 59.8, 53.0, DRAGONBLIGHT },
 						["g"] = {
 							i(44200),	-- Ancestral Sinew Wristguards
 							i(44197),	-- Bracers of Accorded Courtesy

@@ -5,7 +5,7 @@
 _.Instances = { tier(WOTLK_TIER, {
 	inst(280, {	-- The Forge of Souls
 		["mapID"] = 183,
-		["coord"] = { 52.3, 89.3, 118 },
+		["coord"] = { 52.3, 89.3, ICECROWN },
 		["lvl"] = 75,
 		["g"] = {
 			n(QUESTS, {

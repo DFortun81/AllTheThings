@@ -780,30 +780,30 @@ _.ExpansionFeatures =
 						}),
 						q(54915, {	-- Telemetry Online
 							["provider"] = { "n", 149736 },	-- Image of Mimiron
-							["coord"] = { 37.5, 46.5, 120 },
+							["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
 							["sourceQuests"] = {
 								54913,	-- Spark of Genius (H)
 								55516,	-- Spark of Genius (A)
 							},
 							["classes"] = { HUNTER },
 							["lvl"] = 120,
-							["maps"] = { 120 },	-- The Storm Peaks
+							["maps"] = { THE_STORM_PEAKS },
 						}),
 						q(54916, {	-- The Huntsman's Creed
 							["provider"] = { "n", 149736 },	-- Image of Mimiron
-							["coord"] = { 37.5, 46.5, 120 },
+							["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
 							["sourceQuest"] = 54915,	-- Telemetry Online
 							["classes"] = { HUNTER },
 							["lvl"] = 120,
-							["maps"] = { 120 },	-- The Storm Peaks
+							["maps"] = { THE_STORM_PEAKS },
 						}),
 						q(54917, {	-- Paid in Blood
 							["provider"] = { "n", 149870 },	-- Grif Wildheart
-							["coord"] = { 33.6, 58.6, 120 },
+							["coord"] = { 33.6, 58.6, THE_STORM_PEAKS },
 							["sourceQuest"] = 54916,	-- The Huntsman's Creed
 							["classes"] = { HUNTER },
 							["lvl"] = 120,
-							["maps"] = { 120 },	-- The Storm Peaks
+							["maps"] = { THE_STORM_PEAKS },
 						}),
 						q(54918, {	-- Spark of Imagination
 							["provider"] = { "n", 150391 },	-- Image of Mimiron
@@ -834,11 +834,11 @@ _.ExpansionFeatures =
 						}),
 						q(55195, {	-- Reverberation
 							["provider"] = { "n", 29445 },	-- Thorim
-							["coord"] = { 33.4, 58.0, 120 },
+							["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
 							["sourceQuest"] = 54920,	-- Homeward Bound
 							["classes"] = { HUNTER },
 							["lvl"] = 120,
-							["maps"] = { 120 },	-- The Storm Peaks
+							["maps"] = { THE_STORM_PEAKS },
 						}),
 						q(46940, {	-- Using Lost Knowledge
 							["classes"] = { HUNTER },

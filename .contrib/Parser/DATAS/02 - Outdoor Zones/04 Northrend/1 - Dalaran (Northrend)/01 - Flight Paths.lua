@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(125, {	-- Dalaran: Northrend
+	m(NORTHREND, {
+		m(NORTHREND_DALARAN, {
 			n(FLIGHT_PATHS, {
 				fp(310, {	-- Dalaran
-					["coord"] = { 72.1, 45.7, 125 },
+					["coord"] = { 72.1, 45.7, NORTHREND_DALARAN },
 				}),
 			}),
 		}),

@@ -230,7 +230,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163474, {	-- Icetusk Fur Cloak
-					["coord"] = { 48.0, 76.0, 115 },
+					["coord"] = { 48.0, 76.0, DRAGONBLIGHT },
 					["g"] = {
 						q(53167, {	-- Icetusk Fur Cloak
 							["provider"] = { "n", 26245 },	-- Tua'kea
@@ -347,7 +347,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163484, {	-- Vorus'arak's Carapace
-					["coord"] = { 26.2, 50.6, 115 },
+					["coord"] = { 26.2, 50.6, DRAGONBLIGHT },
 					["cr"] = 139889,	-- Vorus'arak
 					["g"] = {
 						q(53180, {	-- Vorus'arak's Carapace

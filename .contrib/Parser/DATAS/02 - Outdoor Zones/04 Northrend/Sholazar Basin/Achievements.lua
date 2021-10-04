@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(119, {	-- Sholazar Basin
+	m(NORTHREND, {
+		m(SHOLAZAR_BASIN, {
 			n(ACHIEVEMENTS, {
 				ach(961),	-- Honorary Frenzyheart
 				ach(39, {	-- Into the Basin

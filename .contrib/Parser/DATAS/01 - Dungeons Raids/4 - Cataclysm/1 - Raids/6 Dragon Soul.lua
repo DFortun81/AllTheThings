@@ -36,7 +36,7 @@ _.Instances = { tier(CATA_TIER, {
 					86,	-- Orgrimmar: The Drag
 					129,	-- The Nexus
 					MOUNT_HYJAL,
-					114,	-- Borean Tundra
+					BOREAN_TUNDRA,
 					DEADWIND_PASS,
 				},
 				["groups"] = bubbleDown({ ["classes"] = { ROGUE } }, {
