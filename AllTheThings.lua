@@ -5124,10 +5124,11 @@ local function PopulateQuestObject(questObject)
 	-- cannot do anything on a missing object or questID
 	if not questObject or not questObject.questID then return; end
 
+	local questID = questObject.questID;
 	-- Check for a Task-specific icon
-	local info = C_QuestLog.GetQuestTagInfo(questObject.questID);
+	local info = C_QuestLog.GetQuestTagInfo(questID);
 	-- if info then
-		-- print("WQ info:",questObject.questID);
+		-- print("WQ info:",questID);
 		-- for k,v in pairs(info) do
 			-- print(k,v);
 		-- end
@@ -5163,11 +5164,11 @@ local function PopulateQuestObject(questObject)
 	end
 
 	-- Update Quest info from cache
-	_cache = SearchForField("questID",questObject.questID);
+	_cache = SearchForField("questID",questID);
 	if _cache then
 		for _,data in ipairs(_cache) do
 			-- only merge into the quest object properties from an object in cache with this questID
-			if data.questID == questObject.questID then
+			if data.questID == questID then
 				MergeProperties(questObject, data, true);
 				-- merge in sourced things under this quest object if it is not a raw quest
 				if data.key ~= "questID" then
@@ -5194,20 +5195,17 @@ local function PopulateQuestObject(questObject)
 	end
 
 	-- Get time remaining info (only works for World Quests)
-	local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questObject.questID);
+	local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questID);
 	if timeRemaining and timeRemaining > 0 then
-		questObject.timeRemaining = timeRemaining;
 		local description = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(timeRemaining * 60));
 		if timeRemaining < 30 then
 			description = "|cFFFF0000" .. description .. "|r";
-		elseif timeRemaining < 60 then
+		elseif timeRemaining < 120 then
 			description = "|cFFFFFF00" .. description .. "|r";
-		end
-		if questObject.description then
-			questObject.description = questObject.description .. "\n\n" .. description;
 		else
-			questObject.description = description;
+			description = "|cFF008000" .. description .. "|r";
 		end
+		questObject.timeRemaining = description;
 	end
 
 	-- If this is not a metatable yet, create a raw repeatable value for use prior to that
@@ -14134,6 +14132,11 @@ RowOnEnter = function (self)
 				-- TODO: probably re-design this once it's no longer considered an unobtainable filter completely
 				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][12][2], 1, 1, 1, 1, true);
 			end
+		end
+
+		-- Further conditional texts that can be displayed
+		if reference.timeRemaining then
+			GameTooltip:AddLine(reference.timeRemaining);
 		end
 
 		-- Calculate Best Drop Percentage. (Legacy Loot Mode)

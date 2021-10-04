@@ -37,15 +37,10 @@ _.Achievements =
 				crit(14),		-- Championing Our Cause
 				crit(15),		-- Strike Them Down
 			}),
-			ach(11846),		-- Champions of Legionfall (Broken Shore)
-			ach(11681),		-- Crate Expectations (Broken Shore)
-			ach(11544, {	-- Defender of the Broken Isles
-				crit(1),		-- Battle for Azsuna
-				crit(2),		-- Battle for Highmountain
-				crit(3),		-- Battle for Stormheim
-				crit(4),		-- Battle for Val'sharah
-			}),
-			ach(10398),		-- Drum Circle (Highmountain)
+			ach(11846),	-- Champions of Legionfall (Broken Shore)
+			ach(11681),	-- Crate Expectations (Broken Shore)
+			ach(11544),	-- Defender of the Broken Isles
+			ach(10398),	-- Drum Circle (Highmountain)
 			ach(11240, {	-- Harbinger
 				crit(1),		-- Waterlogged Tome (Deadwind Pass - near Karazhan - Master's Cellar)
 				crit(2),		-- Fel-Ravaged Tome (Vault of the Wardens)
