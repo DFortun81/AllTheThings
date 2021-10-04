@@ -9866,7 +9866,7 @@ local npcFields = {
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
 	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
@@ -9937,7 +9937,7 @@ local headerFields = {
 		return GetAchievementLink(t.achievementID);
 	end,
 	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 };
