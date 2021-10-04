@@ -4670,6 +4670,12 @@ fieldConverters = {
 			_cache(group, questID);
 		end
 	end,
+	["titleIDs"] = function(group, value)
+		_cache = rawget(fieldConverters, "titleID");
+		for i,titleID in ipairs(value) do
+			_cache(group, titleID);
+		end
+	end,
 	["providers"] = function(group, value)
 		for k,v in pairs(value) do
 			if v[2] > 0 then

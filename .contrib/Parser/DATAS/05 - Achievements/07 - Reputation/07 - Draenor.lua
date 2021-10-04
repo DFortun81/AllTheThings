@@ -40,8 +40,7 @@ _.Achievements =
 				},
 			}),
 			ach(9072, {		-- Mantle of the Talon King
-				title(278),		-- Talon King (Male only)
-				title(279),		-- Talon Queen (Female only)
+				title_gendered(278, 279),	-- Talon King / Talon Queen
 				follower(224),	-- Talon Guard Kurekk
 			}),
 			ach(9478, {		-- Savage Friends (A)
