@@ -7663,6 +7663,9 @@ local fields = {
 		end
 		return 8;
 	end,
+	["sortProgress"] = function(t)
+		return ((t.reputation or -42000) + 42000) / 84000;
+	end,
 };
 app.BaseFaction = app.BaseObjectFields(fields);
 app.CreateFaction = function(id, t)
