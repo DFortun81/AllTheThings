@@ -277,12 +277,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 26042,	-- Breaking the Keystone
+					["isBreadcrumb"] = true,
 				}),
 				q(26911, {	-- Myzrael's Tale (H)
 					["coord"] = { 30.0, 58.9, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 26042,	-- Breaking the Keystone
+					["isBreadcrumb"] = true,
 				}),
 				q(26093, {	-- Northfold Manor
 					["provider"] = { "n", 2700 },	-- Captain Nials

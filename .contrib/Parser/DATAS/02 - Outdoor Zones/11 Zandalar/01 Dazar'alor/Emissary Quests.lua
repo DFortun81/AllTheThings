@@ -13,6 +13,26 @@ _.Zones =
 					["coord"] = { 58.0, 62.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
+					["g"] = {
+						i(165871, {	-- Honorbound Equipment Cache (awarded for all incursions)
+							["description"] = "This cache is awarded for completing any incursion on a Horde character.",
+							["sym"] = {
+								{"select", "headerID", -10057},	-- War Effort
+								{"pop"},	-- Discard the War Effort Header and acquire the children.
+								{"where", "mapID", ARATHI_HIGHLANDS },
+								{"pop"},	-- Discard the Map Header and acquire the children.
+								{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
+								{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
+								{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
+								{"modID", 5},	-- iLvl 340
+							},
+						}),
+						i(163857, {	-- Azerite Armor Cache
+							["sym"] = {
+								{"sub", "bfa_azerite_armor_chest" },
+							},
+						}),
+					},
 				}),
 				q(54455, {	-- Supplies from the Honorbound
 					["provider"] = { "n", 135447 },	-- Ransa Greyfeather
@@ -45,6 +65,35 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 67.07, 71.44, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(165866, {	-- Zandalari Empire Equipment Cache
+							["sym"] = {
+								-- Include the one extra.
+								{"select", "mapID", ZULDAZAR},
+								{"pop"},	-- Discard the Map Header and acquire the children.
+								{"where", "headerID", ZONE_REWARDS },
+								{"pop"},	-- Discard the Zone Rewards Header and acquire the children.
+								{"is", "itemID" },	-- Select the Items.
+								{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_CLOAK", },	-- Only include a couple of inventory types.
+							},
+						}),
+						i(165863, {	-- Zandalari Weapons Cache
+							["sym"] = {
+								{"select", "mapID", ZANDALAR},
+								{"pop"},	-- Discard the Map Header and acquire the children.
+								{"where", "headerID", ZONE_REWARDS },
+								{"pop"},	-- Discard the Zone Rewards Header and acquire the children.
+								{"is", "itemID" },	-- Select the Items.
+								{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
+								{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
+							},
+						}),
+						i(163857, {	-- Azerite Armor Cache
+							["sym"] = {
+								{"sub", "bfa_azerite_armor_chest" },
+							},
+						}),
+					},
 				}),
 			}),
 		}),

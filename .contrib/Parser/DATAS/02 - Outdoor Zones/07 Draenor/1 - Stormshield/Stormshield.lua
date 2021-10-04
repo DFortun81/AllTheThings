@@ -1524,7 +1524,7 @@ _.Zones =
 						n(88155, {	-- Challenger Savina
 							["description"] = "You can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",
 							["coord"] = { 52.0, 63.6, STORMSHIELD },
-							["g"] = {
+							["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {
 								i(118401, {	-- Arcana Shard Spire
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -1733,7 +1733,7 @@ _.Zones =
 										un(REMOVED_FROM_GAME, i(119021)),	-- Stonebinder Shield
 									},
 								})),
-							},
+							}),
 						}),
 						n(128756, {	-- Crafticus Mindbender
 							["coord"] = { 54.8, 16.8, STORMSHIELD },

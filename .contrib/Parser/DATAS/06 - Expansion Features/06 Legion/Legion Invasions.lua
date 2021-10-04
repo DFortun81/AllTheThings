@@ -6,17 +6,30 @@ _.ExpansionFeatures =
 {
 	tier(LEGION_TIER, {
 		n(-543, {	-- Broken Isles: Legion Invasions
-			["achievementID"] = 11544,	-- Defender of the Broken Isles
 			["description"] = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
-			["maps"] = { VALSHARAH, HIGHMOUNTAIN, STORMHEIM, AZSUNA },
-			["questID"] = 47063,	-- Tracking Quest
-			["isWorldQuest"] = true,
 			["maps"] = {
+				VALSHARAH,
+				HIGHMOUNTAIN,
+				STORMHEIM,
+				AZSUNA,
 				BROKEN_ISLES,	-- Stormheim Invasion Scenario
 				865,	-- Stormheim Invasion Scenario: Upper Ship Floor
 				866,	-- Stormheim Invasion Scenario: Lower Ship Floor
 			},
+			["questID"] = 47063,	-- Tracking Quest
+			["isWorldQuest"] = true,
 			["groups"] = {
+				n(ACHIEVEMENTS, {
+					ach(11544, {	-- Defender of the Broken Isles
+						["collectible"] = false,
+						["g"] = {
+							crit(1),	-- Battle for Azsuna
+							crit(2),	-- Battle for Highmountain
+							crit(3),	-- Battle for Stormheim
+							crit(4),	-- Battle for Val'sharah
+						},
+					}),
+				}),
 				n(REWARDS, {
 					["crs"] = {
 						118180,	-- Dread Vizier Gra'tork <Legion Commander>

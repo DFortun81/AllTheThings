@@ -2,10 +2,8 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
-{
+_.Holidays = {
 	holiday(235485, {	-- Feast of Winter Veil
-		-- TODO: These are temporarily here.  They trigger Crieve to be in unsorted.  Will fix more when I revamp it - Luce.
 		n(-139, {	-- Bosses
 			tier(WOTLK_TIER, {
 				inst(282, {	-- The Oculus
@@ -288,4 +286,4 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 			}),
 		}),
 	}),
-});
+};

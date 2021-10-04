@@ -62,6 +62,16 @@ profession(JUNKYARD_TINKERING, {
 							},
 						},
 					},]]
+					{
+						["categoryID"] = 1282,	-- "***[UNAUTHORIZED ACCESS]***"
+						["g"] = {
+							recipe(298141, {	-- Subroutine: Optimization
+								-- only available while wearing a specific trinket with specific card socket
+								-- becomes removed when interacting with the NPC when not wearing the trinket
+								["collectible"] = false,
+							}),
+						}
+					},
 					un(15, spell(291789)),	-- Rustbolt Gramophone
 					un(15, spell(295288)),	-- Rustbolt Kegerator
 				}

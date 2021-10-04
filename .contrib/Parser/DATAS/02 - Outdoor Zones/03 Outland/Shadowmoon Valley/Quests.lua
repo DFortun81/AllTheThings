@@ -951,11 +951,6 @@ _.Zones =
 					["coord"] = { 36.2, 57.0, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyclassicphase(TBC_PHASE_THREE, q(10946, {	-- Ruse of the Ashtongue
-					["sourceQuests"] = { 10944 },	-- The Secret Compromised
-					["provider"] = { "n", 21700 },	-- Akama
-					["coord"] = { 58.0, 48.2, SHADOWMOON_VALLEY },
-				})),
 				applyclassicphase(TBC_PHASE_THREE, q(10958, {	-- Seek Out the Ashtongue
 					["provider"] = { "n", 18528 },	-- Xi'ri
 					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },

@@ -1920,7 +1920,7 @@ _.Zones =
 						i(63913),	-- Twilight-Heart Shoulderplates
 						i(63912),	-- Twilight Mirrorshield
 						i(63915),	-- Vision-Tainted Treads
-						i(63917),	-- Truthbreaker Shield [Not listed, but awards on completing quest]
+						-- i(63917),	-- Truthbreaker Shield [Not listed, but awards on completing quest] [9.1: was NOT received when completed. 2021-09-25]
 					},
 				}),
 				q(28475, {	-- Twilight Scheming

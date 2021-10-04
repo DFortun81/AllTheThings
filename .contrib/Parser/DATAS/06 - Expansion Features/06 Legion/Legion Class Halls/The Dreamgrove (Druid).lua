@@ -669,6 +669,7 @@ _.ExpansionFeatures =
 							["maps"] = { 760 },	-- Moonglade
 							["g"] = {
 								i(139723),	-- Robes of the Dreamgrove
+								title(327),	-- Archdruid <Name>
 							},
 						}),
 						q(41918, {	-- The Dreamer Returns

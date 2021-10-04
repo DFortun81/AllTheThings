@@ -1357,7 +1357,6 @@ _.NeverImplemented =
 			i(168023),	-- dnt smashed transporter relay
 			i(168030),	-- dnt hyperbolic circuit
 			i(168031),	-- dnt transference disc
-			i(31279),	-- Enchanted Illidari Tabard [Temp Quest Item]
 		}),
 		-- M+ PTR Testing
 		i(181850),	-- Set Keystone Map: Plaguefall

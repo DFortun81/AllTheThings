@@ -1536,8 +1536,10 @@ _.Zones =
 				}),
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ also probably cant do after a certain level
-					q(47647),	-- Monsters of Zem'lan
-					q(50805),	-- Skycaller Shutdown
+					["g"] = bubbleDown({ ["races"] = HORDE_ONLY }, {
+						q(47647),	-- Monsters of Zem'lan
+						q(50805),	-- Skycaller Shutdown
+					}),
 				}),
 			}),
 		}),

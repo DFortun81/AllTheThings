@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(247, {	-- Auchenai Crypts
 		["lore"] = "Auchenai Crypts is the main seat of power for the Auchenai - a renegade religious sect of draenei led by the Exarch Maladaar. The crypts are populated by these draenei and the unliving creatures they have summoned. The most important remains interred within the crypt are those of D'ore, one of the naaru. D'ore perished in the collision that brought Oshu'gun (and the draenei) to Draenor. In death, D'ore entered its void stage. The dark energies exuded by this phenomenon resulted, directly or indirectly, in the evils that have since befallen the crypts.",
 		["coord"] = { 34.34, 65.61, TEROKKAR_FOREST },	-- Auchenai Crypts, Terokkar Forest
@@ -19,6 +19,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { SHATTRATH_CITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 15, 66),
+					["groups"] = {
+						objective(1, {	-- Exarch Maladaar slain
+							["provider"] = { "n", 18373 },	-- Exarch Maladaar
+						}),
+					},
 				}),
 				q(10164, {	-- Everything Will Be Alright
 					["qg"] = 19698,	-- Greatfather Aldrimus
@@ -28,6 +33,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(64, 15, 64),
 					["groups"] = {
+						objective(1, {	-- Exarch Maladaar slain
+							["provider"] = { "n", 18373 },	-- Exarch Maladaar
+						}),
 						i(29341),	-- Auchenai Anchorite's Robe
 						i(29340),	-- Auchenai Monk's Tunic
 						i(29339),	-- Auchenai Tracker's Hauberk
@@ -47,11 +55,27 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54698,	-- Tormented Soulpriest
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(63, 15, 63),
+					["groups"] = {
+						objective(1, {	-- 0/5 Angered Skeleton slain
+							["provider"] = { "n", 18524 },	-- Angered Skeleton
+						}),
+						objective(2, {	-- 0/5 Raging Skeleton slain
+							["provider"] = { "n", 18521 },	-- Raging Skeleton
+						}),
+						objective(3, {	-- 0/3 Auchenai Necromancer slain
+							["provider"] = { "n", 18702 },	-- Auchenai Necromancer
+						}),
+					},
 				}),
 				q(29590, {	-- The Dead Watcher
 					["qg"] = 54725,	-- Draenei Spirit
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(63, 15, 63),
+					["groups"] = {
+						objective(1, {	-- Shirrak the Dead Watcher slain
+							["provider"] = { "n", 18371 },	-- Shirrak the Dead Watcher
+						}),
+					},
 				}),
 				q(29596, {	-- The End of the Exarch
 					["qg"] = 54725,	-- Draenei Spirit
@@ -59,6 +83,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(63, 15, 63),
 					["groups"] = {
+						objective(1, {	-- Exarch Maladaar slain
+							["provider"] = { "n", 18373 },	-- Exarch Maladaar
+						}),
 						i(29341),	-- Auchenai Anchorite's Robe
 						i(29340),	-- Auchenai Monk's Tunic
 						i(29339),	-- Auchenai Tracker's Hauberk
@@ -69,20 +96,20 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19412,	-- D'ore
 					["sourceQuest"] = 10167,	-- Auchindoun...
 					["coord"] = { 73.8, 57.0, 257 },
-					["cost"] = {
-						{ "i", 28283, 1 },	-- Soul Mirror
-					},
 					["maps"] = { NAGRAND },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 15, 66),
 					["groups"] = {
 						objective(1, {	-- Darkened Spirit slain
 							["provider"] = { "i", 28283 },	-- Soul Mirror
-							["description"] = "The soul mirror is located in the same chamber you pick up the quest from D'ore in Auchenai Crypts.\n\nDO NOT LEAVE WITHOUT IT.",
 							["crs"] = {
 								18688,	-- Ancient Orc Ancestor
 								19480,	-- Darkened Spirit
 							},
+						}),
+						objective(2, {	-- 0/1 Soul Mirror
+							["provider"] = { "i", 28283 },	-- Soul Mirror
+							["description"] = "The soul mirror is located in the same chamber you pick up the quest from D'ore in Auchenai Crypts.\n\nDO NOT LEAVE WITHOUT IT.",
 						}),
 					},
 				}),
@@ -247,13 +274,13 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 		},
 	}),
-}))};
+})));
 
 -- #if AFTER 4.3.0
 -- This version of the quest never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(29597),	-- The End of the Exarch
 	}),
-});
+}));
 -- #endif

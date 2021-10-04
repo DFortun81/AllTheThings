@@ -399,6 +399,7 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 ACHIEVEMENTS = -4;
 BONUS_OBJECTIVES = -221;
 COMMON_BOSS_DROPS = -1;
+COMMON_VENDOR_ITEMS = -20;
 CONDUITS = -981;
 DISCOVERY = -37;
 EMISSARY_QUESTS = -169;
@@ -1215,6 +1216,26 @@ race = function(id, t)									-- Create a RACE Object
 end
 recipe = function(id, t)								-- Create a RECIPE Object
 	return struct("recipeID", id, t);
+end
+root = function(category, g)							-- Create a ROOT CATEGORY Object
+	local o = _[category];
+	if not o then
+		if #g > 0 and g[1] then
+			o = g;
+		else
+			o = { g };
+		end
+		_[category] = o;
+	else
+		if #g > 0 and g[1] then
+			for i,t in ipairs(g) do
+				table.insert(o, t);
+			end
+		else
+			table.insert(o, g);
+		end
+	end
+	return o;
 end
 --[[rf = function(id, t)									-- Create a RUNEFORGE LENDGARY Object
 	return struct("runeforgePowerID", id, t);

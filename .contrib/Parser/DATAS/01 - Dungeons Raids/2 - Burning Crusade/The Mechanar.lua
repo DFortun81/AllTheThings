@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(258, {	-- The Mechanar
 		["lore"] = "Among the satellites of Tempest Keep, the Mechanar has been chosen by Kael'thas to be a factory to create large amounts of power. Mechano-Lord Capacitus appears to be the one creating it using the naaru-technology found in Tempest Keep, and the power is stored in manacells which piles up into walls and heaps inside the satellite. The large amount of manacells are smuggled by ethereals to the Sunwell where Kael'thas plans to use them to power up the summoning of Kil'jaeden.",
 		["coord"] = { 70.61, 69.75, NETHERSTORM },	-- The Mechanar, Netherstorm
@@ -18,9 +18,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(67, 25, 67),
-					["g"] = {
-						objective(1, {
-							["provider"] = { "i", 30824, 1 },	-- Overcharged Manacell
+					["groups"] = {
+						objective(1, {	-- 0/1 Overcharged Manacell
+							["provider"] = { "i", 30824 },	-- Overcharged Manacell
 						}),
 					},
 				}),
@@ -28,9 +28,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["description"] = "Automatically provided after killing either Gatewatcher.",
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
-					["g"] = {
-						objective(1, {
-							["provider"] = { "i", 72663, 1 },	-- Blinding Fury
+					["groups"] = {
+						objective(1, {	-- 0/1 Blinding Fury
+							["provider"] = { "i", 72663 },	-- Blinding Fury
 						}),
 					},
 				}),
@@ -38,11 +38,21 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 29657,	-- With Great Power, Comes Great Responsibility
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
+					["groups"] = {
+						objective(1, {	-- Pathaleon the Calculator slain
+							["provider"] = { "n", 19220 },	-- Pathaleon the Calculator
+						}),
+					},
 				}),
 				q(29657, {	-- With Great Power, Comes Great Responsibility
 					["description"] = "Automatically provided upon starting the instance.",
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(67, 20, 67),
+					["groups"] = {
+						objective(1, {	-- Mechano-Lord Capacitus slain
+							["provider"] = { "n", 19219 },	-- Mechano-Lord Capacitus
+						}),
+					},
 				}),
 			}),
 			n(ZONE_DROPS, {
@@ -253,4 +263,4 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 		},
 	}),
-}))};
+})));

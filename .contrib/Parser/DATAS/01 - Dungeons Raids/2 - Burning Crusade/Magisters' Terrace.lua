@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 	inst(249, {	-- Magisters' Terrace
 		["lore"] = "Situated on a ridge in northeastern Quel'Danas, Magisters' Terrace serves as a convenient base for Kael'thas and his underlings as they assist the proceedings in the Sunwell Plateau. Kael'thas stands poised to desecrate the ancient lands of his people with an incomparable evil. Should he succeed, the Legion's darkness will rapidly spread to all corners of Azeroth, extinguishing everything in its path.",
 		["coord"] = { 61.23, 30.94, ISLE_OF_QUELDANAS },	-- Magister's Terrace, Isle of Quel'Danas
@@ -15,20 +15,22 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				q(29686, {	-- A Radical Notion
 					["qg"] = 55007,	-- Exarch Larethor
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 73084, 1 },	-- Volatile Essence
-					},
 					["lvl"] = lvlsquish(68, 25, 68),
+					["groups"] = {
+						objective(1, {	-- 0/1 Volatile Essence
+							["provider"] = { "i", 73084 },	-- Volatile Essence
+						}),
+					},
 				}),
 				q(11492, {	-- Hard to Kill
 					["qg"] = 24848,	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer
 					["timeline"] = { "removed 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 34157, 1 },	-- Head of Kael'thas
-					},
 					["lvl"] = lvlsquish(70, 25, 70),
 					["groups"] = {
+						objective(1, {	-- 0/1 Head of Kael'thas
+							["provider"] = { "i", 34157 },	-- Head of Kael'thas
+						}),
 						i(35487),	-- Delicate Crimson Spinel
 						i(35488),	-- Brilliant Crimson Spinel
 					},
@@ -37,11 +39,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 24848,	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 34157, 1 },	-- Head of Kael'thas
-					},
 					["lvl"] = lvlsquish(68, 25, 68),
 					["groups"] = {
+						objective(1, {	-- 0/1 Head of Kael'thas
+							["provider"] = { "i", 34157 },	-- Head of Kael'thas
+						}),
 						i(35487),	-- Delicate Crimson Spinel
 						i(35488),	-- Brilliant Crimson Spinel
 					},
@@ -82,6 +84,14 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 55007,	-- Exarch Larethor
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(68, 25, 68),
+					["groups"] = {
+						objective(1, {	-- Selin Fireheart slain
+							["provider"] = { "n", 24723 },	-- Selin Fireheart
+						}),
+						objective(2, {	-- Priestess Delrissa slain
+							["provider"] = { "n", 24560 },	-- Priestess Delrissa
+						}),
+					},
 				}),
 			}),
 			filter(200, {	-- Recipes
@@ -423,13 +433,13 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 			-- #endif
 		},
 	}),
-}))};
+})));
 
 -- #if AFTER 4.3.0
 -- This version of the quest never made it in.
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(29683),	-- The Scryer's Scryer
 	}),
-});
+}));
 -- #endif

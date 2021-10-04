@@ -1432,10 +1432,12 @@ _.Zones =
 				}),
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ also probably cant do after a certain level
-					q(49300),	-- Creature Corruption
-					q(49739),	-- Enemies at the Gate
-					q(50009),	-- Shipwreck Recovery Crew
-					q(49529),	-- Spring Cleaning
+					["g"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {
+						q(49300),	-- Creature Corruption
+						q(49739),	-- Enemies at the Gate
+						q(50009),	-- Shipwreck Recovery Crew
+						q(49529),	-- Spring Cleaning
+					}),
 				}),
 				-- Want to see q49310 The Prophet's Ploy? Its under Boralus>Quests
 --[[	raw quest list to check against

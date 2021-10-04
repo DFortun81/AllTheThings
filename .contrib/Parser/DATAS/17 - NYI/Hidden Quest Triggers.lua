@@ -1595,17 +1595,8 @@ _.HiddenQuestTriggers = {
 		q(37864),	-- Voidtalon (Pops after the player leaves the scenario.)
 
 		--	TANAAN JUNGLE
-		q(37938),	-- Tanaan Jungle - Assault on the Ruins of Kra'nak - criteria complete
-		q(38009),	-- Tanaan Jungle - Assault on the Ruins of Kra'nak - criteria complete
-		q(37969),	-- Tanaan Jungle - Vol'mar built
-		q(38433),	-- Tanaan Jungle - lion's watch built
-		q(39306),	-- Tanaan Jungle - Call to Arms chosen during "Bring the Reinforcements"
-		q(38836),	-- Tanaan Jungle - Aktar's Post visited
-		q(37887),	-- Tanaan Jungle - Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE [A]
-		q(37892),	-- Tanaan Jungle - Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE [H]
-		q(38583),	-- Tanaan Jungle - Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden [A]
-		q(38584),	-- Tanaan Jungle - Max-level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden [H]
-		q(38587),	-- Tanaan Jungle - Assault on the Throne of Kil'jaeden - criteria complete
+		q(38836),	-- Aktar's Post (Aktar's Post visited)
+		q(39306),	-- Call to Arms (chosen during "Bring the Reinforcements")
 		q(39157),	-- Fel Legendary Pet Tracking Quest 1 — Felsworn Sentry
 		q(39160),	-- Fel Legendary Pet Tracking Quest 2 — Corrupted Thundertail
 		q(39161),	-- Fel Legendary Pet Tracking Quest 3 — Chaos Pup
@@ -1621,15 +1612,29 @@ _.HiddenQuestTriggers = {
 		q(39171),	-- Fel Legendary Pet Tracking Quest 13 — Netherfist
 		q(39172),	-- Fel Legendary Pet Tracking Quest 14 — Skrillix
 		q(39173),	-- Fel Legendary Pet Tracking Quest 15 — Defiled Earth
-		q(39184),	-- learning Immaculate Haste Taladite at an Apexis Gemcutter
-		q(39187),	-- learning Immaculate Stamina Taladite
-		q(37967),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar
-		q(38021),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar
-		q(38437),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge
-		q(38438),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge
-		q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol
-		q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol
-		q(38876),	-- Assault on the Fel Forge (auto-accept bonus objective)
+		q(39183),	-- FLAG - Immaculate Critical Strike Taladite (learning Immaculate Critical Strike Taladite at an Apexis Gemcutter)
+		q(39184),	-- FLAG - Immaculate Haste Taladite (learning Immaculate Haste Taladite at an Apexis Gemcutter)
+		q(39185),	-- FLAG - Immaculate Mastery Taladite (learning Immaculate Mastery Taladite at an Apexis Gemcutter)
+		q(39186),	-- FLAG - Immaculate Multistrike Taladite (learning Immaculate Multistrike Taladite at an Apexis Gemcutter)
+		q(39187),	-- FLAG - Immaculate Stamina Taladite (learning Immaculate Stamina Taladite at an Apexis Gemcutter)
+		q(37886),	-- Max-level Choice Tracker: Tanaan 6.2 - Ironhold (A)
+		q(37946),	-- Max-level Choice Tracker: Tanaan 6.2 - Ironhold (H)
+		q(38583),	-- Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden (A)
+		q(38584),	-- Max-level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden (H)
+		q(37939),	-- Max-level Choice Tracker: Tanaan 6.2 - Ruins of Kra'nak (A)
+		q(38010),	-- Max-level Choice Tracker: Tanaan 6.2 - Ruins of Kra'nak (H)
+		q(37967),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar (A)
+		q(38021),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar (H)
+		q(38438),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge (A)
+		q(38437),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge (H)
+		q(38039),	-- Max-level CHoice Tracker: Tanaan 6.2 - The Iron Front (A)
+		q(38038),	-- Max-level Choice Tracker: Tanaan 6.2 - The Iron Front (H)
+		q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (A)
+		q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (H)
+		q(37887),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (A)
+		q(37892),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (H)
+		q(37969),	-- Tanaan Jungle - Tracking Quest - Vol'mar Built - JMC
+		q(38433),	-- Tanaan Jungle - Tracking Quest - Lion's Watch Built - JMC
 
 		--	DUNGEONS & RAIDS
 		q(35960),	-- Auchindoun Reward Quest
@@ -1730,15 +1735,10 @@ _.HiddenQuestTriggers = {
 		q(37197),	-- See Rexxar Quest Giver 002 (Garrison Campaign for Darktide Roost)
 
 		-- ASSAULTS
-		q(36808),	-- Missive completion: Assault on Shattrath Harbour (Alliance)
-		q(36338),	-- Missive completion: Assault on Shattrath Harbour (Horde)
-		q(37635),	-- Missive completion: Assault on Shattrath Harbour (Alliance - Removed)
-		q(36809),	-- Missive completion: Assault on the Heart of Shattrath
 		q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36664),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Alliance character)
-		q(36807),	-- Assault on the Heart of Shattrath (When completing the criteria for Assault on the Hearth of Shattrath on Horde character)
 		q(36537),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
 		q(36558),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
 		q(36532),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
@@ -1757,8 +1757,6 @@ _.HiddenQuestTriggers = {
 		q(36553),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
 		q(36541),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
 		q(36554),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
-		q(37634),	-- Assault on Darktide Roost (Removed from game, Horde)
-		q(36821),	-- Assault on the Gorian Proving Grounds (Removed from game, Horde)
 		q(37646),	-- See New Brightstone, See Wolfed Out Thorn (Garrison Attack?)
 
 		-- GARRISON COMMAND TABLE
@@ -3827,6 +3825,7 @@ _.HiddenQuestTriggers = {
 		q(61188),	-- Triggered after looting Impressionable Gorger Spawn
 		q(61843),	-- Triggered after completing Nipping at the Undergrowth (61839)
 		q(63090),	-- looting weekly chest of Sinstone Fragments next to Archivist Fane
+		q(60982),	-- After completing "A letter from Nadja"
 		-- Revendreth Rares
 		q(62464),	-- Azgar secondary quest
 		q(60581),	-- Endlurker secondary quest

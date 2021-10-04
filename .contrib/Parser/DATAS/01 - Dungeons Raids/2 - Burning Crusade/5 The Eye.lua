@@ -27,7 +27,7 @@ local legendary = function(itemID, creatureID)
 	end
 end;
 -- #endif
-_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 	inst(749, {	-- The Eye
 		["lore"] = "With Outland serving as the strategic battlefront in the ongoing Burning Crusade, the Naaru used Tempest Keep to reach the shattered land. However, when the Naaru set out from their stronghold, Prince Kael'thas and his blood elves quickly raided the dimensional fortress and assumed control over its satellite structures. Guided by some unknown purpose, Kael'thas manipulates the keep’s otherworldly technologies, using them to harness the chaotic energies of the Netherstorm itself.",
 		["coord"] = { 73.73, 63.71, NETHERSTORM },	-- The Eye, Netherstorm
@@ -47,6 +47,18 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 						i(30017),	-- Telonicus' Pendant of Mayhem
 						i(30007),	-- The Darkener's Grasp
 						i(30015),	-- The Sun King's Talisman
+					},
+				}),
+				q(10946, {	-- Ruse of the Ashtongue
+					["qg"] = 21700,	-- Akama
+					["sourceQuest"] = 10944,	-- The Secret Compromised
+					["coord"] = { 58.0, 48.2, SHADOWMOON_VALLEY },
+					["maps"] = { SHADOWMOON_VALLEY },
+					["groups"] = {
+						objective(1, {
+							["provider"] = { "i", 31946 },	-- Ashtongue Cowl
+							["cr"] = 19514,	-- A'lar
+						}),
 					},
 				}),
 			}),
@@ -77,7 +89,7 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					18805,	-- High Astromancer Solarian
 					19622,	-- Kael'thas Sunstrider
 				},
-				["g"] = {
+				["groups"] = {
 					i(30280),	-- Pattern: Belt of Blasting
 					i(30302, {	-- Pattern: Belt of Deep Shadow
 						["spellID"] = 36351,	-- Belt of Deep Shadow
@@ -268,4 +280,4 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			}),
 		},
 	}),
-}))};
+})));

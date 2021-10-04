@@ -130,9 +130,17 @@ _.Zones =
 					["g"] = {
 						i(89196, {	-- Theramore Tabard
 							["races"] = ALLIANCE_ONLY,
+							["timeline"] = {
+								"added 5.0.1",
+								"removed 6.1",
+							},
 						}),
 						i(89205, {	-- Mini Mana Bomb (TOY!)
 							["races"] = HORDE_ONLY,
+							["timeline"] = {
+								"added 5.0.1",
+								"removed 6.1",
+							},
 						}),
 					},
 				}),

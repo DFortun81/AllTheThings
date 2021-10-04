@@ -2070,16 +2070,26 @@ _.Zones =
 					["sourceQuest"] = 35041,	-- Xuk It!
 				}),
 				n(BONUS_OBJECTIVES, {
-					-- TODO: Check SQ also probably cant do after a certain level
-					q(36383, {	-- Assault on the Pit (A)
-						["isDaily"] = true,
+					-- TODO: Check SQ
+					q(36815, {	-- Assault on the Everbloom Wilds (A)
+						["coord"] = { 64.0, 40.0, GORGROND },
 						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(36814, {	-- Assault on the Everbloom Wilds (H)
+						["coord"] = { 64.0, 40.0, GORGROND },
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
+					}),
+					q(36383, {	-- Assault on the Pit (A)
 						["coord"] = { 48.4, 25.8, GORGROND },
+						["races"] = ALLIANCE_ONLY,
+						["isRepeatable"] = true,
 					}),
 					q(36489, {	-- Assault on the Pit (H)
-						["isDaily"] = true,
-						["races"] = HORDE_ONLY,
 						["coord"] = { 48.4, 25.8, GORGROND },
+						["races"] = HORDE_ONLY,
+						["isRepeatable"] = true,
 					}),
 					q(36603, {	-- Brimstone Springs
 						["coord"] = { 40.4, 54.6, GORGROND },

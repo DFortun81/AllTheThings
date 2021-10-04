@@ -688,6 +688,13 @@ _.Zones =
 				}),
 				q(44547, {	-- Isle Hopping
 					["isBreadcrumb"] = true,
+					["description"] = "This quest is automatically offered after you find your second Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
+					["sourceQuests"] = { 
+						42454,	-- The Hammer of Khaz'goroth
+						43349,	-- The Aegis of Aggramar
+						42213,	-- Eye of Azshara: The Tidestone of Golganneth
+						40890,	-- The Tears of Elune
+					},
 				}),
 				q(45906, {	-- Jarod's Gift
 					["sourceQuests"] = { 46035 },	-- End of the Risen Threat
@@ -758,6 +765,16 @@ _.Zones =
 						"removed 9.1",
 					},
 				}),
+				q(44549, {	-- Master of the Isles
+					["isBreadcrumb"] = true,
+					["description"] = "This quest is automatically offered after you find your fourth Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
+					["sourceQuests"] = { 
+						42454,	-- The Hammer of Khaz'goroth
+						43349,	-- The Aegis of Aggramar
+						42213,	-- Eye of Azshara: The Tidestone of Golganneth
+						40890,	-- The Tears of Elune
+					},
+				}),
 				q(45185, {	-- Message from the Shadows
 					["sourceQuests"] = {
 						47041,	-- Affliction: The Twisted Twin
@@ -814,7 +831,13 @@ _.Zones =
 				}),
 				q(44545, {	-- Pressing the Assault
 					["isBreadcrumb"] = true,
-					["description"] = "This quest is automatically offered after you find your first Pillar of Creation.",
+					["sourceQuests"] = { 
+						42454,	-- The Hammer of Khaz'goroth
+						43349,	-- The Aegis of Aggramar
+						42213,	-- Eye of Azshara: The Tidestone of Golganneth
+						40890,	-- The Tears of Elune
+					},	
+					["description"] = "This quest is automatically offered after you find your first Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
 				}),
 				q(48375, {	-- Primal Obliterum
 					["sourceQuests"] = { 41778 },	-- Firing Up the Forge
@@ -895,6 +918,16 @@ _.Zones =
 				q(45238, {	-- Return to Karazhan: Cubic Cynosure
 					["sourceQuests"] = { 45160 },	-- Cubic Currents
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
+				}),
+				q(44548, {	-- Scouring What Remains
+					["isBreadcrumb"] = true,
+					["description"] = "This quest is automatically offered after you find your third Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
+					["sourceQuests"] = { 
+						42454,	-- The Hammer of Khaz'goroth
+						43349,	-- The Aegis of Aggramar
+						42213,	-- Eye of Azshara: The Tidestone of Golganneth
+						40890,	-- The Tears of Elune
+					},
 				}),
 				q(47864, {	-- Sealing Fate: Additional Marks of Honor
 					["isWeekly"] = true,

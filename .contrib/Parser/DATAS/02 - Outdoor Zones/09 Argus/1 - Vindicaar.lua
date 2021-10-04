@@ -137,28 +137,26 @@ _.Zones =
 							})),
 						},
 					}),
-					n(-206, {	-- Paragon
-						q(48976, {	-- Supplies From the Argussian Reach
-							["provider"] = { "n", 127151 },	-- Toraan the Revered
-							["repeatable"] = true,
-							["g"] = {
-								i(152922, {	-- Brittle Krokul Chest
-									i(153127),	-- Cube of Discovery
-								}),
-							},
-						}),
-						q(48977, {	-- Supplies From the Army of the Light
-							["repeatable"] = true,
-							["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
-							["g"] = {
-								i(152923, {	-- Gleaming Footlocker
-									i(153044),	-- Avenging Felcrusher (MOUNT!)
-									i(153043),	-- Blessed Felcrusher (MOUNT!)
-									i(153042),	-- Glorious Felcrusher (MOUNT!)
-									i(153182),	-- Holy Lightsphere (TOY!)
-								}),
-							},
-						}),
+					q(48976, {	-- Supplies From the Argussian Reach
+						["provider"] = { "n", 127151 },	-- Toraan the Revered
+						["repeatable"] = true,
+						["g"] = {
+							i(152922, {	-- Brittle Krokul Chest
+								i(153127),	-- Cube of Discovery
+							}),
+						},
+					}),
+					q(48977, {	-- Supplies From the Army of the Light
+						["repeatable"] = true,
+						["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
+						["g"] = {
+							i(152923, {	-- Gleaming Footlocker
+								i(153044),	-- Avenging Felcrusher (MOUNT!)
+								i(153043),	-- Blessed Felcrusher (MOUNT!)
+								i(153042),	-- Glorious Felcrusher (MOUNT!)
+								i(153182),	-- Holy Lightsphere (TOY!)
+							}),
+						},
 					}),
 				}),
 				n(FLIGHT_PATHS, {

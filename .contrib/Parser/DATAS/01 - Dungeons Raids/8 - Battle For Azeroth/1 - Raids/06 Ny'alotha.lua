@@ -987,9 +987,9 @@ _.Instances = { tier(BFA_TIER, {
 							un(REMOVED_FROM_GAME, i(174863)),	-- Spawn of Vexiona
 						})),
 						un(REMOVED_FROM_GAME, ach(14069)),	-- Cutting Edge: N'Zoth, the Corruptor
-						un(REMOVED_FROM_GAME, ach(14055, {	-- Mythic: N'Zoth, the Corruptor
-							un(REMOVED_FROM_GAME, title(417)),	-- the Uncorrupted
-						})),
+						ach(14055, {	-- Mythic: N'Zoth, the Corruptor
+							title(417),	-- the Uncorrupted
+						}),
 						ach(14148),	-- Peer Pressure
 						i(173886, {	-- Bursting Void Droplet
 							["u"] = REMOVED_FROM_GAME,

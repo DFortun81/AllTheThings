@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(256, {	-- The Blood Furnace
 		["lore"] = "The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",
 		["coord"] = { 46.06, 51.74, HELLFIRE_PENINSULA },	-- The Blood Furnace, Hellfire Peninsula
@@ -64,22 +64,30 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29538, {	-- Make Them Bleed [Alliance]
 					["qg"] = 54629,	-- Gunny
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 23894, 10 },	-- Fel Orc Blood Vial
-						{ "i", 73200, 1 },	-- Fel Infusion Rod
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
+					["groups"] = {
+						objective(1, {	-- 0/10 Fel Orc Blood Vial
+							["provider"] = { "i", 23894 },	-- Fel Orc Blood Vial
+						}),
+						objective(2, {	-- 0/1 Fel Infusion Rod
+							["provider"] = { "i", 73200 },	-- Fel Infusion Rod
+						}),
+					},
 				}),
 				q(29535, {	-- Make Them Bleed [Horde]
 					["qg"] = 54636,	-- Caza'rez
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 23894, 10 },	-- Fel Orc Blood Vial
-						{ "i", 73200, 1 },	-- Fel Infusion Rod
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
+					["groups"] = {
+						objective(1, {	-- 0/10 Fel Orc Blood Vial
+							["provider"] = { "i", 23894 },	-- Fel Orc Blood Vial
+						}),
+						objective(2, {	-- 0/1 Fel Infusion Rod
+							["provider"] = { "i", 73200 },	-- Fel Infusion Rod
+						}),
+					},
 				}),
 				q(29537, {	-- Mind the Gap
 					["qg"] = 54636,	-- Caza'rez
@@ -87,6 +95,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
 					["groups"] = {
+						objective(1, {	-- Keli'dan the Breaker slain
+							["provider"] = { "n", 17377 },	-- Keli'dan the Breaker
+						}),
 						i(25701),	-- Breastplate of Retribution
 						i(25711),	-- Deadly Borer Leggings
 						i(25710),	-- Moonkin Headdress
@@ -99,19 +110,19 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 56.4, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 23894, 10 },	-- Fel Orc Blood Vial
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
-					-- #if BEFORE 4.3.0.14732
-					["groups"] = { -- NOTE: rewards are available in a different quest
+					["groups"] = {
+						objective(1, {	-- 0/10 Fel Orc Blood Vial
+							["provider"] = { "i", 23894 },	-- Fel Orc Blood Vial
+						}),
+						-- #if BEFORE 4.3.0.14732
 						i(25701),	-- Breastplate of Retribution
 						i(25711),	-- Deadly Borer Leggings
 						i(25710),	-- Moonkin Headdress
 						i(25702),	-- Scaled Legs of Ruination
+						-- #endif
 					},
-					-- #endif
 				}),
 				q(9590,  {	-- The Blood is Life [Horde]
 					["qg"] = 17558,	-- Caza'rez
@@ -119,19 +130,19 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 54.9, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 23894, 10 },	-- Fel Orc Blood Vial
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
-					-- #if BEFORE 4.3.0.14732
-					["groups"] = { -- NOTE: rewards are available in a different quest
+					["groups"] = {
+						objective(1, {	-- 0/10 Fel Orc Blood Vial
+							["provider"] = { "i", 23894 },	-- Fel Orc Blood Vial
+						}),
+						-- #if BEFORE 4.3.0.14732
 						i(25701),	-- Breastplate of Retribution
 						i(25711),	-- Deadly Borer Leggings
 						i(25710),	-- Moonkin Headdress
 						i(25702),	-- Scaled Legs of Ruination
+						-- #endif
 					},
-					-- #endif
 				}),
 				q(29540, {	-- The Breaker
 					["qg"] = 54629,	-- Gunny
@@ -139,6 +150,9 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
 					["groups"] = {
+						objective(1, {	-- Keli'dan the Breaker slain
+							["provider"] = { "n", 17377 },	-- Keli'dan the Breaker
+						}),
 						i(25701),	-- Breastplate of Retribution
 						i(25711),	-- Deadly Borer Leggings
 						i(25710),	-- Moonkin Headdress
@@ -360,10 +374,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 		},
 	}),
-}))};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+})));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(29544),	-- The Blood Furnace
 		q(29545),	-- The Blood Furnace
 	}),
-});
+}));

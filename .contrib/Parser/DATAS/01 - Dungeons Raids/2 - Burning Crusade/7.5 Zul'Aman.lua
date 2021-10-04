@@ -18,7 +18,7 @@ local FOREST_FROG = n(24396, {	-- Forest Frog
 		i(33932),	-- Amani Charm of the Witch Doctor
 	},
 });
-_.Instances = { tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
+root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 	inst(77, {	-- Zul'Aman
 		["lore"] = "When the high elves were first exiled and landed in Lordaeron, they met violent clashes with the forest trolls, who viewed them as defiling their homeland. At the time of the founding of Quel'Thalas, the Amani Empire was the most powerful empire in the Eastern Kingdoms; they still held much of northern Lordaeron in their territorial grasp.\n\nEventually, the high elves joined with the humans of Arathor and defeated the forest trolls in an immense battle that signaled the end of the forest trolls' empire. The Amani would never recover enough to extend their land beyond their home province of Zul'Aman, but they continued to be an enemy of humans and elves for thousands of years.\n\nZul'jin, planning to take revenge against Quel'Thalas, saw the opportunity when most of the blood elves and Horde were busy fighting on Outland. He had his champions harness the power of the loa with the help of the cunning Hex Lord Malacrass.",
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
@@ -34,19 +34,15 @@ _.Instances = { tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["qg"] = 23761,	-- Prigmon
 						["sourceQuest"] = 11164,	-- Tuskin' Raiders
 						["coord"] = { 71.0, 68.9, GHOSTLANDS },
-						-- #if BEFORE CATA
 						["maps"] = { GHOSTLANDS },
-						-- #endif
-						-- #if BEFORE SHADOWLANDS
+						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif
 					}),
 					q(11178, {	-- Blood of the Warlord
 						["provider"] = { "i", 33102 },	-- Blood of Zul'jin
-						-- #if BEFORE CATA
 						["maps"] = { GHOSTLANDS },
-						-- #endif
-						-- #if BEFORE SHADOWLANDS
+						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif
 					}),
@@ -54,29 +50,28 @@ _.Instances = { tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["qg"] = 23559,	-- Budd
 						["sourceQuest"] = 11166,	-- X Marks... Your Doom!
 						["coord"] = { 70.3, 67.8, GHOSTLANDS },
-						-- #if BEFORE CATA
 						["maps"] = { GHOSTLANDS },
-						-- #endif
-						-- #if BEFORE SHADOWLANDS
+						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif
-						-- #if BEFORE CATA
 						["groups"] = {
+							objective(1, {	-- Hex Lord Malacrass slain
+								["provider"] = { "n", 24239 },	-- Hex Lord Malacrass
+							}),
+							-- #if BEFORE CATA
 							BADGE_OF_JUSTICE,	-- Badge of Justice x5
+							-- #endif
 						},
-						-- #endif
 					}),
 					q(11130, {	-- Oooh, Shinies!
 						["qg"] = 19227,	-- Griftah (Shattrath)
 						["coord"] = { 65.6, 68.8, SHATTRATH_CITY },
-						-- #if BEFORE CATA
 						["maps"] = { SHATTRATH_CITY },
-						-- #endif
 						["cost"] = {
 							{ "i", 33010, 1 },	-- Griftah's Note
 						},
 						["isBreadcrumb"] = true,
-						-- #if BEFORE SHADOWLANDS
+						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif
 					}),
@@ -85,9 +80,10 @@ _.Instances = { tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["sourceQuest"] = 11165,	-- A Troll Among Trolls
 						["coord"] = { 59.3, 36.6, ZULAMAN },
 						["cost"] = {
+							{ "i", 33865, 1 },	-- Amani Hex Stick
 							{ "i", 33107, 1 },	-- Tattered Voodoo Doll
 						},
-						-- #if BEFORE SHADOWLANDS
+						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif
 						["groups"] = {
@@ -98,16 +94,15 @@ _.Instances = { tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["qg"] = 23559,	-- Budd
 						["sourceQuest"] = 11130,	-- Oooh, Shinies!
 						["coord"] = { 70.3, 67.8, GHOSTLANDS },
-						-- #if BEFORE CATA
 						["maps"] = { GHOSTLANDS },
-						-- #endif
-						["cost"] = {
-							{ "i", 33013, 1 },	-- Budd's Map of Zul'Aman
-						},
-						-- #if BEFORE SHADOWLANDS
+						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif
 						["groups"] = {
+							objective(1, {	-- 0/1 Budd's Map of Zul'Aman
+								["provider"] = { "i", 33013 },	-- Budd's Map of Zul'Aman
+								["description"] = "Right side before bear boss.",
+							}),
 							i(34067),	-- Tattered Hexcloth Sack
 						},
 					}),
@@ -115,43 +110,52 @@ _.Instances = { tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["qg"] = 23761,	-- Prigmon
 						["sourceQuest"] = 11130,	-- Oooh, Shinies!
 						["coord"] = { 71.0, 68.9, GHOSTLANDS },
-						-- #if BEFORE CATA
 						["maps"] = { GHOSTLANDS },
-						-- #endif
-						["cost"] = {
-							{ "i", 33106, 10 },	-- Forest Troll Tusk
-						},
-						-- #if BEFORE SHADOWLANDS
+						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif
+						["groups"] = {
+							objective(1, {	-- 0/10 Forest Troll Tusk
+								["provider"] = { "i", 33106 },	-- Forest Troll Tusk
+								["crs"] = {
+									23542,	-- Amani'shi Axe Thrower
+									24059,	-- Amani'shi Beast Tamer
+									24374,	-- Amani'shi Berserker
+									23596,	-- Amani'shi Flame Caster
+									23581,	-- Amani'shi Medicine Man
+									24180,	-- Amani'shi Protector
+									24549,	-- Amani'shi Tempest
+									23774,	-- Amani'shi Trainer
+									23582,	-- Amani'shi Tribesman
+									23580,	-- Amani'shi Warbringer
+									24179,	-- Amani'shi Wind Walker
+									33107,	-- Tattered Voodoo Doll
+								},
+							}),
+						},
 					}),
 					q(11163, {	-- Undercover Sister
 						["qg"] = 23858,	-- Donna Brascoe
 						["sourceQuest"] = 11178,	-- Blood of the Warlord
 						["coord"] = { 70.5, 68.3, GHOSTLANDS },
-						-- #if BEFORE CATA
 						["maps"] = { GHOSTLANDS },
-						-- #endif
-						-- #if BEFORE SHADOWLANDS
+						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif
-						-- #if BEFORE CATA
 						["groups"] = {
+							-- #if BEFORE CATA
 							BADGE_OF_JUSTICE,	-- Badge of Justice x10
+							-- #endif
 						},
-						-- #endif
 					}),
 					q(11166, {	-- X Marks... Your Doom!
 						["qg"] = 23559,	-- Budd
 						["sourceQuest"] = 11132,	-- Promises, Promises...
 						["coord"] = { 70.3, 67.8, GHOSTLANDS },
-						-- #if BEFORE CATA
 						["maps"] = { GHOSTLANDS },
-						-- #endif
-						-- #if BEFORE SHADOWLANDS
+						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif
-						-- #if BEFORE CATA
 						["groups"] = {
 							objective(1, {	-- Examine Halazzi's chamber
 								["coord"] = { 52.2, 21.3, ZULAMAN },
@@ -163,12 +167,10 @@ _.Instances = { tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 								["coord"] = { 27.3, 25.1, ZULAMAN },
 							}),
 						},
-						-- #endif
 					}),
 				}),
 				n(ZONE_DROPS, {
 					AMANI_HEX_STICK,
-					i(33106),	-- Forest Troll Tusk
 				}),
 				n(COMMON_BOSS_DROPS, {
 					EXECUTIONER_RECIPE,
@@ -310,7 +312,7 @@ _.Instances = { tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 			-- #endif
 		},
 	}),
-}))};
+})));
 
 -- #if NOT ANYCLASSIC
 -- These are still used in Retail and aren't removed from game.

@@ -228,7 +228,6 @@ i(128851);	-- Roasted juicycrunch carrots
 
 -- "Mount Equipment"
 i(141593);	-- Dro's Key
-i(174767);	-- Mogu Relic
 
 
 -- Quest Items
@@ -410,6 +409,7 @@ i(135511);	-- Thick Slab of Bacon. You get it for a split second after completin
 i(137212);	-- Cut Skystone. You get it for a split second after completing the jewelcrafter daily
 i(137214);	-- Cut Deep Amber. You get it for a split second after completing the jewelcrafter daily
 i(137215);	-- Cut Azsunite.  You get it for a split second after completing the jewelcrafter daily
+i(31279);	-- Enchanted Illidari Tabard [Temp Quest Item]
 
 
 

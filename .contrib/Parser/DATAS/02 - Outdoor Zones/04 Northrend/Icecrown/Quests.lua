@@ -1452,7 +1452,7 @@ _.Zones =
 				}),
 				q(13082, {	-- The Boon of A'dal
 					["maps"] = { SHATTRATH_CITY },
-					["coord"] = { 53.9, 44.7, MOONGLADE },
+					["coord"] = { 53.9, 44.7, 118 },
 					["provider"] = { "n", 18481 },	-- A'dal
 					["sourceQuest"] = 13081,	-- The Will of the Naaru
 				}),
@@ -1760,7 +1760,7 @@ _.Zones =
 					},
 				}),
 				q(13081, {	-- The Will of the Naaru
-					["coord"] = { 79.7, 71.7, MOONGLADE },
+					["coord"] = { 79.7, 71.7, 118 },
 					["provider"] = { "n", 31044 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13080,	-- Hope Yet Remains
 				}),

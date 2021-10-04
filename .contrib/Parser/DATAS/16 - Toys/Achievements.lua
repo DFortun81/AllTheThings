@@ -69,7 +69,8 @@ _.Toys =
 					{ 70.71, 90.21, FROSTWALL },	-- Pepe Location [Horde]
 					{ 40.12, 70.06, LUNARFALL },	-- Pepe Location [Alliance]
 				},
-				["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
+				["description"] = "You need Tier 3 garrison for this.",
+				["u"] = HALLOWS_END,
 			}),
 			i(127865, {	-- A Tiny Viking Helmet
 				["questID"] = 39265,	-- Pepe can be sometimes be summoned with this mask

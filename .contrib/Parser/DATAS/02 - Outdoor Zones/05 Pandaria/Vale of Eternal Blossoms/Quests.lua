@@ -118,14 +118,25 @@ _.Zones =
 					["provider"] = { "i", 83770 },	-- Hozen in the Mist
 				}),
 				q(33231, {	-- Journey to the Timeless Isle
-					["hordeQuestID"] = 33232,	-- Journey to the Timeless Isle
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
 					["isBreadcrumb"] = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
+					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
-						33229,	-- A Flash of Bronze...
-						33230,	-- A Flash of Bronze...
-						37188,	-- A Flash of Bronze...
-						37194,	-- A Flash of Bronze...
+						33229,	-- A Flash of Bronze...	(Alliance)
+						33230,	-- A Flash of Bronze...	(Horde)
+						37188,	-- A Flash of Bronze...	(Removed)
+						37194,	-- A Flash of Bronze...	(Removed)
+					},
+				}),
+				q(33232, {	-- Journey to the Timeless Isle
+					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
+					["isBreadcrumb"] = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						33229,	-- A Flash of Bronze...	(Alliance)
+						33230,	-- A Flash of Bronze...	(Horde)
+						37188,	-- A Flash of Bronze...	(Removed)
+						37194,	-- A Flash of Bronze...	(Removed)
 					},
 				}),
 				q(30243, {	-- Mantid Under Fire

@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(260, {	-- The Slave Pens
 		["lore"] = "The Slave Pens is the place where the Naga force their Broken workers to toil for resources in the darkness in order to achieve their goal of draining the marsh completely and claiming control of its water.",
 		["coord"] = { 48.95, 35.84, ZANGARMARSH },	-- The Slave Pens, Zangarmarsh
@@ -13,6 +13,11 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 54668,	-- Nahuud
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(57, 10, 57),
+					["groups"] = {
+						objective(1, {	-- Mennu the Betrayer slain
+							["provider"] = { "n", 17941 },	-- Mennu the Betrayer
+						}),
+					},
 				}),
 				q(29566, {	-- Checking Up
 					["qg"] = 17841,	-- Ysiel Windsinger
@@ -120,7 +125,13 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29565, {	-- The Heart of the Matter
 					["qg"] = 54667,	-- Watcher Jhang
 					["timeline"] = { "added 4.3.0.14732" },
-					["groups"]	= {
+					["groups"]= {
+						objective(1, {	-- 0/1 The Invader's Claw
+							["provider"] = { "i", 72118 },	-- The Invader's Claw
+						}),
+						objective(2, {	-- 0/1 The Slave Master's Eye
+							["provider"] = { "i", 72119 },	-- The Slave Master's Eye
+						}),
 						i(25541),	-- Cenarion Ring of Casting
 						i(28029),	-- Goldenvine Wraps
 						i(25540),	-- Dark Cloak of the Marsh
@@ -413,4 +424,4 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			-- #endif
 		},
 	}),
-}))};
+})));

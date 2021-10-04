@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-_.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 	inst(751, {	-- The Black Temple
 		["lore"] = "When Illidan the Betrayer fled to Outland after the Third War, he ousted the Temple's ruler - the pit lord Magtheridon - and claimed his throne as the lord of the blasted world. Following his defeat at the hands of Arthas Menethil, Illidan returned to the Black Temple where he resides to this day. Neither his activities nor mental state are known at this time. While Malfurion has stated that Illidan has become mad and delusional, believing that he killed Arthas and accomplished the mission Kil'jaeden had sent him on.\n\nDespite the bitter retribution of his enemies, Illidan has begun to tighten his grip on Outland from within the profaned sanctum, where he awaits any and all who would challenge his rule.",
 		["coord"] = { 71.0, 46.5, SHADOWMOON_VALLEY },	-- Black Temple, Shadowmoon Valley
@@ -27,16 +27,26 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 				faction(1012),	-- Ashtongue Deathsworn
 			}),
 			n(QUESTS, {
-				q(10957, {	-- Redemption of the Ashtongue (UNTESTED, NEEDS CONFIRMATION)
+				q(10957, {	-- Redemption of the Ashtongue
 					["qg"] = 23158,	-- Seer Kanai
 					["sourceQuest"] = 10958,	-- Seek Out the Ashtongue
 					["coord"] = { 62.0, 50.2, THE_BLACK_TEMPLE },
+					["lvl"] = lvlsquish(70, 30, 70),
+					["groups"] = {
+						objective(1, {	-- Shade of Akama slain
+							["provider"] = { "n", 22841 },	-- Shade of Akama
+						}),
+					},
 				}),
-				q(10959, {	-- The Fall of the Betrayer (UNTESTED, NEEDS CONFIRMATION)
+				q(10959, {	-- The Fall of the Betrayer
 					["qg"] = 23158,	-- Seer Kanai
 					["sourceQuest"] = 10957,	-- Redemption of the Ashtongue
 					["coord"] = { 62.0, 50.2, THE_BLACK_TEMPLE },
+					["lvl"] = lvlsquish(70, 30, 70),
 					["groups"] = {
+						objective(1, {	-- Illidan Stormrage slain
+							["provider"] = { "n", 22917 },	-- Illidan Stormrage <The Betrayer>
+						}),
 						i(32757),	-- Blessed Medallion of Karabor
 					},
 				}),
@@ -581,4 +591,4 @@ _.Instances = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 			-- #endif
 		},
 	}),
-}))};
+})));

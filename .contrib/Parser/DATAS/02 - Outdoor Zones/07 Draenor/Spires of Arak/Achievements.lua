@@ -120,12 +120,9 @@ _.Zones =
 				}),
 				ach(9072,  {	-- Mantle of the Talon King
 					["sourceQuest"] = 37177,	-- Call of the Talon King
-					--[[	-- Apparently blizzard doesn't like these titles
 					["g"] = {
-						title(415),	-- Talon King
-						title(416),	-- Talon Queen
+						title_gendered(278, 279),	-- Talon King / Talon Queen
 					},
-					]]--
 				}),
 				ach(9434),		-- One of Us! One of Us! (Shadowmoon Enclave)
 				ach(9564,  {	-- Securing Draenor (Alliance)
