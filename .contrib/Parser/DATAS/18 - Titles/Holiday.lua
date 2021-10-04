@@ -28,10 +28,7 @@ _.Titles =
 		title(103, {	-- <Name> the Love Fool
 			["u"] = LOVE_IS_IN_THE_AIR,
 		}),
-		title(104, {	-- Matron <Name>
-			["u"] = CHILDRENS_WEEK,
-		}),
-		title(105, {	-- Patron <Name>
+		title_gendered(105, 104, {	-- Patron <Name> / Matron <Name>
 			["u"] = CHILDRENS_WEEK,
 		}),
 		title(122, {	-- <Name> the Noble

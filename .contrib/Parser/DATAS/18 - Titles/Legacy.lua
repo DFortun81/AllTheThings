@@ -136,8 +136,7 @@ _.Titles =
 			title(293),	-- <Name> the Soul Preserver
 			title(294),	-- <Name>, Scion of Rukhmar
 			title(295),	-- Spiritwalker <Name>
-			title(296),	-- <Name>, Lord of Blackrock
-			title(297),	-- <Name>, Lady of Blackrock
+			title_gendered(296, 297),	-- <Name>, Lord of Blackrock / Lady of Blackrock
 			title(298),	-- <Name> the Violet Guardian
 			title(299),	-- <Name> the Grimrail Suplexer
 		})),

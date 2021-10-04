@@ -68,8 +68,7 @@ _.Titles =
 		title(218),	-- <Name> the Wakener
 		title(221),	-- <Name> the Stormbreaker
 		title(227),	-- Trainer <Name> (PB)
-		title(240),	-- <Name> the Crazy Cat Lady (PB)
-		title(252),	-- <Name> the Crazy Cat Man (PB)
+		title_gendered(252, 240),	-- the Crazy Cat Man (PB) / the Crazy Cat Lady (PB)
 		title(215),	-- <Name> the Proven Assailant
 		title(216),	-- <Name> the Proven Defender
 		title(219),	-- <Name> the Proven Healer
@@ -82,8 +81,7 @@ _.Titles =
 		}),
 		title(260),	-- Architect <Name>
 		title(277),	-- Stable Master <Name>
-		title(278),	-- Talon King
-		title(279),	-- Talon Queen
+		title_gendered(278, 279),	-- Talon King <Name> / Talon Queen <Name>
 		title(300),	-- <Name> the Savage Hero
 		title(307),	-- Field Photographer <Name>
 		title(317),	-- Captain <Name>
@@ -106,19 +104,13 @@ _.Titles =
 		title(425, {	-- <Name>, Hand of the Archon
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
 		}),
-		title(426, {	-- Baron <Name>
-			["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
-		}),
-		title(427, {	-- Baroness <Name>
+		title_gendered(426, 427, {	-- Baron <Name>/ Baroness <Name>
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 		}),
 		title(428, {	-- <Name>,  Winter's Envoy
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
 		}),
-		title(429, {	-- Count <Name>
-			["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-		}),
-		title(430, {	-- Countess <Name>
+		title_gendered(429, 430, {	-- Count <Name> / Countess <Name>
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
 		}),
 		title(433,	{	-- <Name>, the Party Herald

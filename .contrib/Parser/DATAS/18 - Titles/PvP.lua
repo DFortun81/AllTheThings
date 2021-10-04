@@ -215,8 +215,7 @@ _.Titles =
 		title(269),	-- <Name>, Warlord of Draenor
 		-- Misc
 		title(251),	-- Fire-Watcher <Name>
-		title(302),	-- <Name>, Lord of War
-		title(303),	-- <Name>, Lady of War
+		title_gendered(302, 303),	-- <Name>, Lord of War / <Name>, Lady of War
 		title(375, {	-- <Name>, the Horde Slayer
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 52784,	-- The Horde Slayer
