@@ -129,7 +129,12 @@ _.Zones =
 					["provider"] = { "n", 45675 },	-- Garona Halforcen
 					["coord"] = { 36.3, 65.9, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27798,	-- Water of Life
+					["sourceQuests"] = {
+						27798,	-- Water of Life
+						27703,	-- Coup de Grace
+						27659,	-- Portal Overload
+						27662,	-- Unbinding
+					},
 					["isBreadcrumb"] = true,
 				}),
 				q(28041, {	-- Bait and Throttle
