@@ -5422,21 +5422,20 @@ local function RefreshAppearanceSources()
 		app.MaxSourceID = maxSourceID;
 		-- print("MaxSourceID",maxSourceID)
 	end
-	-- Then evaluate all SourceIDs under the maximum based on mode
-	if app.Settings:Get("Completionist") then
-		for s=1,app.MaxSourceID do
-			-- don't need to check for existing value... everything is cleared beforehand
-			if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
-				rawset(collectedSources, s, 1);
-			end
+	-- Then evaluate all SourceIDs under the maximum which are known explicitly
+	-- print("Completionist Refresh")
+	for s=1,app.MaxSourceID do
+		-- don't need to check for existing value... everything is cleared beforehand
+		if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
+			rawset(collectedSources, s, 1);
 		end
-	else
+	end
+	-- print("Completionist Refresh done")
+	-- Additionally, for Unique Mode we can grant collection of Appearances which match the Visual of explicitly known SourceIDs if other criteria (Race/Faction/Class) match as well using ATT info
+	if not app.Settings:Get("Completionist") then
 		-- print("Unique Refresh")
 		for s=1,app.MaxSourceID do
-			-- don't need to check for existing value... everything is cleared beforehand
-			if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
-				rawset(collectedSources, s, 1);
-			else
+			if not rawget(collectedSources, s) then
 				_cache = C_TransmogCollection_GetSourceInfo(s);
 				if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
 					rawset(collectedSources, s, 2);
