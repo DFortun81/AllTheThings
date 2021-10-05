@@ -184,8 +184,7 @@ local function StartCoroutine(name, method, delaySec)
 			-- print("coroutine starting",name);
 			Push(app, name, pushCo);
 		end
-	-- else
-		-- print("skipped coroutine",name);/
+	-- else print("skipped coroutine",name);
 	end
 end
 -- Triggers a timer callback method to run on the next game frame with the provided params; the method can only be set to run once per frame
@@ -5412,64 +5411,39 @@ local function RefreshAppearanceSources()
 	wipe(ATTAccountWideData.Sources);
 	local collectedSources = ATTAccountWideData.Sources;
 	-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
-	app.MaxSourceID = app.MaxSourceID or 0;
-	-- process through all known ATT SourceIDs if not yet processed
-	if app.MaxSourceID == 0 then
-		if app.Settings:Get("Completionist") then
-			-- Completionist Mode can simply use the *fast* blizzard API.
-			for id,_ in pairs(fieldCache["s"]) do
-				if rawget(collectedSources, id) ~= 1 then
-					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						rawset(collectedSources, id, 1);
-					end
-				end
-				-- track the max sourceID so we can evaluate sources not in ATT as well
-				if id > app.MaxSourceID then app.MaxSourceID = id; end
-			end
-		else
-			-- Unique Mode requires a lot more calculation.
-			for id,_ in pairs(fieldCache["s"]) do
-				if not rawget(collectedSources, id) then
-					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-						rawset(collectedSources, id, 1);
-					else
-						_cache = C_TransmogCollection_GetSourceInfo(id);
-						if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
-							rawset(collectedSources, id, 2);
-						end
-					end
-				end
-				-- track the max sourceID so we can evaluate sources not in ATT as well
-				if id > app.MaxSourceID then app.MaxSourceID = id; end
-			end
+	-- Simply determine the max known SourceID from ATT cached sources
+	if not app.MaxSourceID then
+		-- print("Initial Session Refresh")
+		local maxSourceID = 0;
+		for id,_ in pairs(fieldCache["s"]) do
+			-- track the max sourceID so we can evaluate sources not in ATT as well
+			if id > maxSourceID then maxSourceID = id; end
 		end
-		-- print("Max SourceID",app.MaxSourceID);
+		app.MaxSourceID = maxSourceID;
+		-- print("MaxSourceID",maxSourceID)
 	end
-	if app.MaxSourceID > 0 then
-		-- Otherwise evaluate all SourceIDs under the maximum
-		if app.Settings:Get("Completionist") then
-			for s=1,app.MaxSourceID do
-				if rawget(collectedSources, s) ~= 1 then
-					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
-						rawset(collectedSources, s, 1);
-					end
-				end
+	-- Then evaluate all SourceIDs under the maximum based on mode
+	if app.Settings:Get("Completionist") then
+		for s=1,app.MaxSourceID do
+			-- don't need to check for existing value... everything is cleared beforehand
+			if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
+				rawset(collectedSources, s, 1);
 			end
-		else
-			for s=1,app.MaxSourceID do
-				if not rawget(collectedSources, s) then
-					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
-						rawset(collectedSources, s, 1);
-					else
-						_cache = C_TransmogCollection_GetSourceInfo(s);
-						if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
-							rawset(collectedSources, s, 2);
-						end
-					end
+		end
+	else
+		-- print("Unique Refresh")
+		for s=1,app.MaxSourceID do
+			-- don't need to check for existing value... everything is cleared beforehand
+			if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
+				rawset(collectedSources, s, 1);
+			else
+				_cache = C_TransmogCollection_GetSourceInfo(s);
+				if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
+					rawset(collectedSources, s, 2);
 				end
 			end
 		end
-		-- print("Finished SourceID",app.MaxSourceID);
+		-- print("Unique Refresh done")
 	end
 end
 app.RefreshAppearanceSources = RefreshAppearanceSources;
@@ -19963,7 +19937,6 @@ app.events.VARIABLES_LOADED = function()
 		"Position",
 		"RandomSearchFilter",
 		"Reagents",
-		"RefreshedCollectionsAlready",
 		"SeasonalFilters",
 		"UnobtainableItemFilters",
 	}) do
@@ -20243,16 +20216,10 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("LOOT_OPENED");
 
 		local needRefresh;
-
 		-- NOTE: The auto refresh only happens once per version
-		if not app.autoRefreshedCollections then
-			app.autoRefreshedCollections = true;
-			local lastTime = GetDataMember("RefreshedCollectionsAlready");
-			if not lastTime or (lastTime ~= app.Version) then
-				SetDataMember("RefreshedCollectionsAlready", app.Version);
-				wipe(accountWideData.Sources);	-- This option causes a caching issue, so we have to purge the Source ID data cache.
-				needRefresh = true;
-			end
+		if not accountWideData.LastAutoRefresh or (accountWideData.LastAutoRefresh ~= app.Version) then
+			accountWideData.LastAutoRefresh = app.Version;
+			needRefresh = true;
 		end
 
 		-- check if we are in a Party Sync session when loading in
