@@ -936,7 +936,7 @@ _.HiddenQuestTriggers = {
 	q(64514),	-- triggered while doing The Battle of Ardenweald scenario
 	q(64515),	-- triggered while doing The Battle of Ardenweald scenario
 	q(63416),	-- triggers when accepting the first of your 'Zone Meta Quests' on a Skip Character
-	q(64782),	-- Occurred when joining Night Fae in the initial Thread of Fate quest 62000
+	q(64782),	-- Occurred when joining Night Fae/Kyrian in the initial Thread of Fate quest 62000
 	--q(62370),	-- Swapping Cov to NF with NF already R40
 	--q(62384),	-- Swapping Cov to NF with NF already R40
 };

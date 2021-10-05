@@ -1714,13 +1714,22 @@ _.Zones =
 					},
 				}),
 				q(34410, {	-- The Beating Heart
-					["hordeQuestID"] = 34341,
 					["provider"] = { "n", 78251 },	-- Thisalee Crow
 					["sourceQuests"] = {
 						34339,	-- A Goren's Feast
 						34340,	-- Heating Up
 						34338,	-- The Descent
 					},
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(34341, {	-- The Beating Heart
+					["provider"] = { "n", 78251 },	-- Thisalee Crow
+					["sourceQuests"] = {
+						34339,	-- A Goren's Feast
+						34340,	-- Heating Up
+						34338,	-- The Descent
+					},
+					["races"] = HORDE_ONLY,
 				}),
 				q(34338, {	-- The Descent
 					["provider"] = { "n", 78251 },	-- Thisalee Crow

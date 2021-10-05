@@ -1866,6 +1866,12 @@ _.Zones =
 				["provider"] = { "o", 327170 },	-- Weapon Rack
 				["sourceQuest"] = 56047,	-- We Can't Have Dull Weapons
 			}),
+			q(56075, {	-- Stolen Power
+				["provider"] = { "i", 154064 },	-- Axol Darksea
+				["coord"] = { 59.0, 19.0, 1355 },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+			}),
 			q(56239, {	-- Strange Silver Knife (A)
 				["description"] = "Obtained from the first Arcane Chest you find.",
 				["provider"] = { "i", 169215 },	-- Silver Knife
@@ -2638,6 +2644,7 @@ _.HiddenQuestTriggers = {
 	q(56695),	-- "Dani is great!  She wrangles all of our snapdragons, even the most difficult and ornery ones."
 	q(56696),	-- "Have you ever swooped on a ray?  It's out-ray-geous!"
 	q(56697),	-- "We have so many free people in Newhome that we need to gather more food!  This is great!"
+	q(56698),	-- "As a wee sprog. I was told that the Shirakess created our nightmares. I thought that was a myth... until I saw this place for myself."
 --	Vim
 	q(56665),	-- "It's brave to sacrifice yourself to save others.  It's craven to sacrifice others to serve yourself.  And Azshara is anything but brave."
 	q(56672),	-- "One person's pride destroyed so many lives."
@@ -2690,4 +2697,5 @@ _.HiddenQuestTriggers = {
 	q(56480),	-- Killed Zomera
 	q(56723),	-- Killed Zomera
 	q(56721),	-- Killed Osgen
+	q(56727),	-- Killed Ungormath
 };
