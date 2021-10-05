@@ -2636,9 +2636,11 @@ _.HiddenQuestTriggers = {
 			q(61499),	-- using Stock: Anima Samples
 			q(61500),	-- using Stock: Comfy Chairs
 			q(61497),	-- using Stock: Greeting Kits
+			q(59688),	-- triggered when using "Dredger Party Supplies" (177237)
 			q(59690),	-- triggered when using "Racing Permit," reward from "It's Race Day in the Ramparts!" WQ
 			q(59693),	-- triggered when using "Kyrian Arsenal"
 			q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
+			q(61453),	-- triggered when using "Training Dummies" (181437)
 
 		-- Misson Table
 			q(60635),	-- Unknown
@@ -2647,7 +2649,7 @@ _.HiddenQuestTriggers = {
 			q(61919),	-- unflagged when completing Restock: Exploratory Meals (62094)
 			q(62524),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)
 			q(62525),	-- completed 'Relaxing' criteria for It's Certainly Never Boring
-			q(62526),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)
+			q(62526),	-- completed 'Exciting' criteria for It's Certainly Never Boring
 			-- q(59689),	-- Completed at the end, was unlocking Generous Gift and Protective Braziers for the Court Favors achievement.
 
 			--q(61918),	-- unflagged when doing restock quest (62078)
