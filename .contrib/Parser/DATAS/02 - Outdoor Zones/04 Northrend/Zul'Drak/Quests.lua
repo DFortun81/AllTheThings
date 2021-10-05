@@ -4,16 +4,16 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(121, {	-- Zul'Drak
+	m(NORTHREND, {
+		m(ZULDRAK, {
 			n(QUESTS, {
 				q(12912, {	-- A Great Storm Approaches
-					["coord"] = { 19.7, 56.3, 121 },
+					["coord"] = { 19.7, 56.3, ZULDRAK },
 					["provider"] = { "n", 29647 },	-- Gymer
 					["sourceQuest"] = 12894,	-- Crusader Forward Camp
 				}),
 				q(12555, {	-- A Tangled Skein
-					["coord"] = { 58.2, 72.0, 121 },
+					["coord"] = { 58.2, 72.0, ZULDRAK },
 					["provider"] = { "n", 28284 },	-- Specialist Cogwheel
 					["sourceQuest"] = 12583,	-- Crashed Sprayer
 					["g"] = {
@@ -26,7 +26,7 @@ _.Zones =
 					},
 				}),
 				q(12647, {	-- An End to the Suffering
-					["coord"] = { 53.4, 39.0, 121 },
+					["coord"] = { 53.4, 39.0, ZULDRAK },
 					["provider"] = { "n", 28561 },	-- Spirit of Rhunok
 					["sourceQuest"] = 12646,	-- My Prophet, My Enemy
 					["g"] = {
@@ -42,7 +42,7 @@ _.Zones =
 					["altQuests"] = { 12633 },	-- Darkness Calling (Available if you DO complete "Cleansing Drak'Tharon")
 				}),
 				q(12504, {	-- Argent Crusade, We Are Leaving!
-					["coord"] = { 40.4, 48.1, 121 },
+					["coord"] = { 40.4, 48.1, ZULDRAK },
 					["provider"] = { "n", 28056 },	-- Sergeant Stackhammer
 					["sourceQuest"] = 12505,	-- New Orders for Sergeant Stackhammer
 					["g"] = {
@@ -53,12 +53,12 @@ _.Zones =
 					},
 				}),
 				q(12653, {	-- Back to Har'koa
-					["coord"] = { 53.4, 39.0, 121 },
+					["coord"] = { 53.4, 39.0, ZULDRAK },
 					["provider"] = { "n", 28561 },	-- Spirit of Rhunok
 					["sourceQuest"] = 12647,	-- An End to the Suffering
 				}),
 				q(12713, {	-- Betrayal
-					["coord"] = { 28.4, 44.9, 121 }, -- technically, this can be done any at the Reliquary of Pain
+					["coord"] = { 28.4, 44.9, ZULDRAK },	-- technically, this can be done any at the Reliquary of Pain
 					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["sourceQuest"] = 12676,	-- Sabotage
 					["g"] = {
@@ -68,35 +68,35 @@ _.Zones =
 					},
 				}),
 				q(12567, {	-- Blessing of Zim'Abwa
-					["coord"] = { 36.7, 72.6, 121 },
+					["coord"] = { 36.7, 72.6, ZULDRAK },
 					["provider"] = { "o", 190535 },	-- Zim'Abwa
 					["repeatable"] = true,
 					["sourceQuest"] = 125565,	-- The Blessing of Zim'Abwa
 				}),
 				q(12656, {	-- Blessing of Zim'Rhuk
-					["coord"] = { 59.2, 44.7, 121 },
+					["coord"] = { 59.2, 44.7, ZULDRAK },
 					["provider"] = { "o", 190657 },	-- Zim'Rhuk
 					["repeatable"] = true,
 					["sourceQuest"] = 12655,	-- The Blessing of Zim'Rhuk
 				}),
 				q(12618, {	-- Blessing of Zim'Torga
-					["coord"] = { 59.4, 57.2, 121 },
+					["coord"] = { 59.4, 57.2, ZULDRAK },
 					["provider"] = { "o", 190602 },	-- Zim'Torga
 					["repeatable"] = true,
 					["sourceQuest"] = 12615,	-- The Blessing of Zim'Torga
 				}),
 				q(12684, {	-- Blood of a Dead God
-					["coord"] = { 63.6, 70.3, 121 },
+					["coord"] = { 63.6, 70.3, ZULDRAK },
 					["provider"] = { "n", 28401 },	-- Har'koa
 					["sourceQuest"] = 12675,	-- One Last Thing
 				}),
 				q(12627, {	-- Breaking Through Jin'Alai
-					["coord"] = { 59.5, 58.0, 121 },
+					["coord"] = { 59.5, 58.0, ZULDRAK },
 					["provider"] = { "n", 28479 },	-- Witch Doctor Khufu
 					["sourceQuest"] = 12623,	-- To the Witch Doctor
 				}),
 				q(12662, {	-- Bringing Down Heb'Jin
-					["coord"] = { 59.3, 56.4, 121 },
+					["coord"] = { 59.3, 56.4, ZULDRAK },
 					["provider"] = { "n", 28480 },	-- Element-Tamer Dagoda
 					["sourceQuests"] = {
 						12640,	-- Sealing the Rifts
@@ -110,7 +110,7 @@ _.Zones =
 					},
 				}),
 				q(12632, {	-- But First My Offspring
-					["coord"] = { 63.6, 70.3, 121 },
+					["coord"] = { 63.6, 70.3, ZULDRAK },
 					["provider"] = { "n", 28401 },	-- Har'koa
 					["sourceQuest"] = 12628,	-- To Speak With Har'koa
 					["g"] = {
@@ -121,7 +121,7 @@ _.Zones =
 					},
 				}),
 				q(12610, {	-- Clipping Their Wings
-					["coord"] = { 35.6, 52.2, 121 },
+					["coord"] = { 35.6, 52.2, ZULDRAK },
 					["provider"] = { "n", 28045 },	-- Captain Arnath
 					["sourceQuest"] = 12799,	-- Siphoning the Spirits
 					["g"] = {
@@ -132,19 +132,19 @@ _.Zones =
 					},
 				}),
 				q(12638, {	-- Close Call
-					["coord"] = { 14.0, 73.8, 121 },
+					["coord"] = { 14.0, 73.8, ZULDRAK },
 					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["altQuests"] = { 12637 },	-- Near Miss (Available if you DON'T complete "Cleansing Drak'Tharon")
 					["sourceQuest"] = 12633,	-- Darkness Calling
 				}),
 				q(12606, {	-- Cocooned!
-					["coord"] = { 58.0, 72.4, 121 },
+					["coord"] = { 58.0, 72.4, ZULDRAK },
 					["provider"] = { "n", 28044 },	-- Captain Rupert
 					["sourceQuest"] = 12598,	-- Throwing Down
 				}),
 				q(12604, {	-- Congratulations!
 					-- TODO: based on speed completion of "Troll Patrol" daily. Determine condition and add as description
-					["coord"] = { 40.2, 66.6, 121 },
+					["coord"] = { 40.2, 66.6, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 28039 },	-- Commander Kunz
 					["g"] = {
@@ -160,7 +160,7 @@ _.Zones =
 					},
 				}),
 				q(12730, {	-- Convocation at Zol'Heb
-					["coord"] = { 60.2, 57.7, 121 },
+					["coord"] = { 60.2, 57.7, ZULDRAK },
 					["provider"] = { "n", 28401 },	-- Har'koa
 					["sourceQuest"] = 12729,	-- The Gods Have Spoken
 					["g"] = {
@@ -171,23 +171,23 @@ _.Zones =
 					},
 				}),
 				q(12583, {	-- Crashed Sprayer
-					["coord"] = { 58.2, 72.0, 121 },
+					["coord"] = { 58.2, 72.0, ZULDRAK },
 					["provider"] = { "n", 28284 },	-- Specialist Cogwheel
 					["sourceQuest"] = 12553,	-- Skimmer Spinnerets
 				}),
 				q(12599, {	-- Creature Comforts
-					["coord"] = { 48.1, 63.8, 121 },
+					["coord"] = { 48.1, 63.8, ZULDRAK },
 					["provider"] = { "n", 28043 },	-- Captain Grondel
 					["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
 					["description"] = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
 				}),
 				q(12894, {	-- Crusader Forward Camp
-					["coord"] = { 32.1, 75.1, 121 },
+					["coord"] = { 32.1, 75.1, ZULDRAK },
 					["provider"] = { "n", 29687 },	-- Crusader Lord Lantinga
 					["sourceQuest"] = 12883,	-- Orders From Drakuru
 				}),
 				q(12664, {	-- Dark Horizon
-					["coord"] = { 27.0, 46.1, 121 },
+					["coord"] = { 27.0, 46.1, ZULDRAK },
 					["provider"] = { "n", 28503 },	-- Overlord Drakuru
 					["altQuests"] = { 12663 },	-- Reunited (Available if you DO complete "Cleansing Drak'Tharon")
 					["description"] = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
@@ -199,37 +199,37 @@ _.Zones =
 					["altQuests"] = { 12631 },	-- An Invitation, of Sorts... (Available if you DON'T complete "Cleansing Drak'Tharon")
 				}),
 				q(12552, {	-- Death to the Necromagi
-					["coord"] = { 58.0, 72.0, 121 },
+					["coord"] = { 58.0, 72.0, ZULDRAK },
 					["provider"] = { "n", 28283 },	-- Sergeant Moonshard
 					["sourceQuest"] = 12598,	-- Throwing Down
 				}),
 				q(12503, {	-- Defend the Stand -- aa
-					["coord"] = { 39.4, 66.9, 121 },
+					["coord"] = { 39.4, 66.9, ZULDRAK },
 					["provider"] = { "n", 28059 },	-- Commander Falstaav
 					["sourceQuest"] = 12795,	-- Taking a Stand
 				}),
 				q(12710, {	-- Disclosure
-					["coord"] = { 27.0, 46.1, 121 },
+					["coord"] = { 27.0, 46.1, ZULDRAK },
 					["provider"] = { "n", 28503 },	-- Overlord Drakuru
 					["sourceQuest"] = 12690,	-- Fuel for the Fire
 				}),
 				q(12648, {	-- Dressing Down
-					["coord"] = { 14.0, 73.8, 121 },
+					["coord"] = { 14.0, 73.8, ZULDRAK },
 					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["altQuests"] = { 12649 },	-- Suit Up! (Available if you DO complete "Cleansing Drak'Tharon")
 					["sourceQuest"] = 12629,	-- You Can Run, But You Can't Hide
 				}),
 				q(13556, {	-- Eggs for Dubra'Jin -- aa
-					["coord"] = { 69.9, 20.9, 121 },
+					["coord"] = { 69.9, 20.9, ZULDRAK },
 					["provider"] = { "n", 33025 },	-- Ha'wana
 				}),
 				q(12708, {	-- Enchanted Tiki Warriors
-					["coord"] = { 59.3, 56.4, 121 },
+					["coord"] = { 59.3, 56.4, ZULDRAK },
 					["provider"] = { "n", 28480 },	-- Element-Tamer Dagoda
 					["sourceQuest"] = 12685,	-- You Reap What You Sow
 				}),
 				q(12652, {	-- Feedin' Da Goolz
-					["coord"] = { 19.8, 75.4, 121 },
+					["coord"] = { 19.8, 75.4, ZULDRAK },
 					["provider"] = { "n", 28589 },	-- Gristlegut
 					["sourceQuest"] = 12643,	-- Silver Lining
 					["description"] = "Must be on |cFFFFD700Suit Up!|r to see this quest.",
@@ -242,16 +242,16 @@ _.Zones =
 					},
 				}),
 				q(12792, {	-- First Things First
-					["coord"] = { 40.2, 66.6, 121 },
+					["coord"] = { 40.2, 66.6, ZULDRAK },
 					["provider"] = { "n", 28039 },	-- Commander Kunz
 				}),
 				q(12668, {	-- Foundation for Revenge
-					["coord"] = { 75.3, 58.6, 121 },
+					["coord"] = { 75.3, 58.6, ZULDRAK },
 					["provider"] = { "n", 28030 },	-- Quetz'lun's Spirit
 					["sourceQuest"] = 12672,	-- Setting the Stage
 				}),
 				q(12690, {	-- Fuel for the Fire
-					["coord"] = { 27.0, 46.1, 121 },
+					["coord"] = { 27.0, 46.1, ZULDRAK },
 					["provider"] = { "n", 28503 },	-- Overlord Drakuru
 					["description"] = "Must be on |cFFFFD700Sabotage|r to see this quest.",
 					["sourceQuest"] = 12677,	-- Hazardous Materials
@@ -277,22 +277,22 @@ _.Zones =
 					},
 				}),
 				q(12527, {	-- Gluttonous Lurkers
-					["coord"] = { 41.3, 65.1, 121 },
+					["coord"] = { 41.3, 65.1, ZULDRAK },
 					["provider"] = { "n", 28204 },	-- Apprentice Pestlepot
 					["sourceQuest"] = 12510,	-- Precious Elemental Fluids
 				}),
 				q(12914, {	-- Gymer's Salvation
-					["coord"] = { 25.2, 63.8, 121 },
+					["coord"] = { 25.2, 63.8, ZULDRAK },
 					["provider"] = { "n", 29688 },	-- Engineer Reed
 					["sourceQuest"] = 12912,	-- A Great Storm Approaches
 				}),
 				q(12677, {	-- Hazardous Materials
-					["coord"] = { 28.4, 44.9, 121 }, -- technically, this can be done any at the Reliquary of Pain
+					["coord"] = { 28.4, 44.9, ZULDRAK },	-- technically, this can be done any at the Reliquary of Pain
 					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["sourceQuest"] = 12669,	-- So Far, So Bad
 				}),
 				q(12674, {	-- Hell Hath a Fury
-					["coord"] = { 75.3, 58.6, 121 },
+					["coord"] = { 75.3, 58.6, ZULDRAK },
 					["provider"] = { "n", 28030 },	-- Quetz'lun's Spirit
 					["sourceQuest"] = 12668,	-- Foundation for Revenge
 					["g"] = {
@@ -303,7 +303,7 @@ _.Zones =
 					},
 				}),
 				q(12709, {	-- Hexed Caches
-					["coord"] = { 59.9, 57.9, 121 },
+					["coord"] = { 59.9, 57.9, ZULDRAK },
 					["provider"] = { "n", 28527 },	-- Chronicler To'kini
 					["sourceQuest"] = 12685,	-- You Reap What You Sow
 					["g"] = {
@@ -314,12 +314,12 @@ _.Zones =
 					},
 				}),
 				q(12665, {	-- I Sense a Disturbance
-					["coord"] = { 63.6, 70.3, 121 },
+					["coord"] = { 63.6, 70.3, ZULDRAK },
 					["provider"] = { "n", 28401 },	-- Har'koa
 					["sourceQuest"] = 12653,	-- Back to Har'koa
 				}),
 				q(12902, {	-- In Search Of Answers -- aa
-					["coord"] = { 32.1, 75.7, 121 },
+					["coord"] = { 32.1, 75.7, ZULDRAK },
 					["provider"] = { "n", 29687 },	-- Crusader Lord Lantinga
 					["sourceQuests"] = {
 						49534,	-- Warchief's Command: Zul'Drak!
@@ -327,7 +327,7 @@ _.Zones =
 					},
 				}),
 				q(12661, {	-- Infiltrating Voltarus
-					["coord"] = { 14.0, 73.7, 121 },
+					["coord"] = { 14.0, 73.7, ZULDRAK },
 					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["sourceQuests"] = {
 						12648,	-- Dressing Down (Available if you DON'T complete "Cleansing Drak'Tharon")
@@ -342,7 +342,7 @@ _.Zones =
 					},
 				}),
 				q(12673, {	-- It Rolls Downhill
-					["coord"] = { 27.0, 46.1, 121 },
+					["coord"] = { 27.0, 46.1, ZULDRAK },
 					["provider"] = { "n", 28503 },	-- Overlord Drakuru
 					["description"] = "Must be on |cFFFFD700So Far, So Bad|r to see this quest.",
 					["sourceQuest"] = 12661,	-- Infiltrating Voltarus
@@ -352,23 +352,23 @@ _.Zones =
 					["provider"] = { "n", 28527 },	-- Chronicler To'kini
 				}),
 				q(29836, {	-- Just Checkin' -- aa
-					["coord"] = { 59.9, 57.9, 121 },
+					["coord"] = { 59.9, 57.9, ZULDRAK },
 					["provider"] = { "n", 28527 },	-- Chronicler To'kini
 					["altQuests"] = { 29833 },	-- Unfinished Business
 				}),
 				q(12630, {	-- Kickin' Nass and Takin' Manes
-					["coord"] = { 14.0, 73.8, 121 },
+					["coord"] = { 14.0, 73.8, ZULDRAK },
 					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["sourceQuest"] = 12884,	-- The Ebon Watch
 				}),
 				q(12557, {	-- Lab Work
-					["coord"] = { 35.0, 52.1, 121 },
+					["coord"] = { 35.0, 52.1, ZULDRAK },
 					["provider"] = { "n", 28205 },	-- Alchemist Finklestein
 					["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
 					["description"] = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
 				}),
 				q(12512, {	-- Leave No One Behind -- aa
-					["coord"] = { 58.6, 72.4, 121 },
+					["coord"] = { 58.6, 72.4, ZULDRAK },
 					["provider"] = { "n", 28125 },	-- Dr. Rogers
 					["g"] = {
 						i(39807),	-- Rescuer's Cloak
@@ -378,17 +378,17 @@ _.Zones =
 					},
 				}),
 				q(12904, {	-- Light Won't Grant Me Vengeance
-					["coord"] = { 17.6, 57.5, 121 },
+					["coord"] = { 17.6, 57.5, ZULDRAK },
 					["provider"] = { "n", 29455 },	-- Gerk
 					["sourceQuest"] = 12894,	-- Crusader Forward Camp
 				}),
 				q(12901, {	-- Making Something Out Of Nothing
-					["coord"] = { 25.2, 63.8, 121 },
+					["coord"] = { 25.2, 63.8, ZULDRAK },
 					["provider"] = { "n", 29688 },	-- Engineer Reed
 					["sourceQuest"] = 12894,	-- Crusader Forward Camp
 				}),
 				q(12554, {	-- Malas the Corrupter
-					["coord"] = { 58.0, 72.0, 121 },
+					["coord"] = { 58.0, 72.0, ZULDRAK },
 					["provider"] = { "n", 28283 },	-- Sergeant Moonshard
 					["sourceQuest"] = 12552,	-- Death to the Necromagi
 					["g"] = {
@@ -399,33 +399,33 @@ _.Zones =
 					},
 				}),
 				q(12508, {	-- Mopping Up
-					["coord"] = { 40.3, 48.2, 121 },
+					["coord"] = { 40.3, 48.2, ZULDRAK },
 					["provider"] = { "n", 28099 },	-- Corporal Maga
 					["sourceQuest"] = 125055,	-- New Orders for Sergeant Stackhammer
 				}),
 				q(12514, {	-- Mushroom Mixer
-					["coord"] = { 40.5, 65.6, 121 },
+					["coord"] = { 40.5, 65.6, ZULDRAK },
 					["provider"] = { "n", 28062 },	-- Hexxer Ubungo
 					["sourceQuest"] = 12510,	-- Precious Elemental Fluids
 				}),
 				q(12646, {	-- My Prophet, My Enemy
-					["coord"] = { 53.4, 39.0, 121 },
+					["coord"] = { 53.4, 39.0, ZULDRAK },
 					["provider"] = { "n", 28561 },	-- Spirit of Rhunok
 					["sourceQuest"] = 12642,	-- Spirit of Rhunok
 				}),
 				q(12637, {	-- Near Miss
-					["coord"] = { 14.0, 73.8, 121 },
+					["coord"] = { 14.0, 73.8, ZULDRAK },
 					["altQuests"] = { 12638 },	-- Close Call (Available if you DO complete "Cleansing Drak'Tharon")
 					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["sourceQuest"] = 12631,	-- An Invitation, of Sorts...
 				}),
 				q(12505, {	-- New Orders for Sergeant Stackhammer
-					["coord"] = { 40.2, 66.6, 121 },
+					["coord"] = { 40.2, 66.6, ZULDRAK },
 					["provider"] = { "n", 28039 },	-- Commander Kunz
 					["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
 				}),
 				q(12675, {	-- One Last Thing
-					["coord"] = { 75.3, 58.6, 121 },
+					["coord"] = { 75.3, 58.6, ZULDRAK },
 					["provider"] = { "n", 28030 },	-- Quetz'lun's Spirit
 					["sourceQuest"] = 12674,	-- Hell Hath a Fury
 				}),
@@ -441,17 +441,17 @@ _.Zones =
 					},
 				}),
 				q(12883, {	-- Orders From Drakuru
-					["coord"] = { 34.9, 83.9, 121 },
+					["coord"] = { 34.9, 83.9, ZULDRAK },
 					["provider"] = { "o", 191766 },	-- Orders From Drakuru
 					["sourceQuest"] = 12902,	-- In Search Of Answers
 				}),
 				q(12916, {	-- Our Only Hope
-					["coord"] = { 25.2, 63.8, 121 },
+					["coord"] = { 25.2, 63.8, ZULDRAK },
 					["provider"] = { "n", 29688 },	-- Engineer Reed
 					["sourceQuest"] = 12914,	-- Gymer's Salvation
 				}),
 				q(12596, {	-- Pa'Troll
-					["coord"] = { 40.2, 66.6, 121 },
+					["coord"] = { 40.2, 66.6, ZULDRAK },
 					["provider"] = { "n", 28039 },	-- Commander Kunz
 					["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
 					["g"] = {
@@ -463,7 +463,7 @@ _.Zones =
 					},
 				}),
 				q(12740, {	-- Parachutes for the Argent Crusade -- aa
-					["coord"] = { 39.4, 66.9, 121 },
+					["coord"] = { 39.4, 66.9, ZULDRAK },
 					["provider"] = { "n", 28059 },	-- Commander Falstaav
 					["g"] = {
 						i(39779),	-- Crusader's Ripcord
@@ -474,12 +474,12 @@ _.Zones =
 					},
 				}),
 				q(12650, {	-- Plundering Their Own
-					["coord"] = { 59.9, 57.9, 121 },
+					["coord"] = { 59.9, 57.9, ZULDRAK },
 					["provider"] = { "n", 28527 },	-- Chronicler To'kini
 					["sourceQuest"] = 12635,	-- Relics of the Snow Leopard Goddess
 				}),
 				q(12510, {	-- Precious Elemental Fluids
-					["coord"] = { 40.5, 65.6, 121 },
+					["coord"] = { 40.5, 65.6, ZULDRAK },
 					["provider"] = { "n", 28062 },	-- Hexxer Ubungo
 					["sourceQuest"] = 12507,	-- Strange Mojo
 					["g"] = {
@@ -490,12 +490,12 @@ _.Zones =
 					},
 				}),
 				q(12666, {	-- Preparations for the Underworld
-					["coord"] = { 63.6, 70.3, 121 },
+					["coord"] = { 63.6, 70.3, ZULDRAK },
 					["provider"] = { "n", 28401 },	-- Har'koa
 					["sourceQuest"] = 12665,	-- I Sense a Disturbance
 				}),
 				q(12584, {	-- Pure Evil
-					["coord"] = { 58.0, 72.4, 121 },
+					["coord"] = { 58.0, 72.4, ZULDRAK },
 					["provider"] = { "n", 28044 },	-- Captain Rupert
 					["sourceQuest"] = 12552,	-- Death to the Necromagi
 					["g"] = {
@@ -506,7 +506,7 @@ _.Zones =
 					},
 				}),
 				q(12721, {	-- Rampage
-					["coord"] = { 60.2, 57.7, 121 },
+					["coord"] = { 60.2, 57.7, ZULDRAK },
 					["provider"] = { "n", 28401 },	-- Har'koa
 					["sourceQuest"] = 12712,	-- The Key of Warlord Zol'Maz
 					["g"] = {
@@ -517,19 +517,19 @@ _.Zones =
 					},
 				}),
 				q(12635, {	-- Relics of the Snow Leopard Goddess
-					["coord"] = { 59.9, 57.9, 121 },
+					["coord"] = { 59.9, 57.9, ZULDRAK },
 					["provider"] = { "n", 28527 },	-- Chronicler To'kini
 					["sourceQuest"] = 12627,	-- Breaking Through Jin'Alai
 				}),
 				q(12663, {	-- Reunited
-					["coord"] = { 27.0, 46.1, 121 },
+					["coord"] = { 27.0, 46.1, ZULDRAK },
 					["provider"] = { "n", 28503 },	-- Overlord Drakuru
 					["altQuests"] = { 12664 },	-- Dark Horizon (Available if you DON'T complete "Cleansing Drak'Tharon")
 					["description"] = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
 					["sourceQuest"] = 12649,	-- Suit Up!
 				}),
 				q(12676, {	-- Sabotage
-					["coord"] = { 28.4, 44.9, 121 }, -- technically, this can be done any at the Reliquary of Pain
+					["coord"] = { 28.4, 44.9, ZULDRAK },	-- technically, this can be done any at the Reliquary of Pain
 					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["sourceQuest"] = 12677,	-- Hazardous Materials
 					["g"] = {
@@ -540,7 +540,7 @@ _.Zones =
 					},
 				}),
 				q(12659, {	-- Scalps!
-					["coord"] = { 59.1, 56.2, 121 },
+					["coord"] = { 59.1, 56.2, ZULDRAK },
 					["provider"] = { "n", 28484 },	-- Scalper Ahunae
 					["sourceQuests"] = {
 						12640,	-- Sealing the Rifts
@@ -548,39 +548,39 @@ _.Zones =
 					},
 				}),
 				q(12640, {	-- Sealing the Rifts
-					["coord"] = { 59.1, 56.2, 121 },
+					["coord"] = { 59.1, 56.2, ZULDRAK },
 					["provider"] = { "n", 28484 },	-- Scalper Ahunae
 					["sourceQuest"] = 12622,	-- The Leaders at Jin'Alai
 				}),
 				q(12667, {	-- Seek the Wind Serpent Goddess
-					["coord"] = { 63.6, 70.3, 121 },
+					["coord"] = { 63.6, 70.3, ZULDRAK },
 					["provider"] = { "n", 28401 },	-- Har'koa
 					["sourceQuest"] = 12666,	-- Preparations for the Underworld
 				}),
 				q(12672, {	-- Setting the Stage
-					["coord"] = { 75.3, 58.6, 121 },
+					["coord"] = { 75.3, 58.6, ZULDRAK },
 					["provider"] = { "n", 28030 },	-- Quetz'lun's Spirit
 					["sourceQuest"] = 12667,	-- Seek the Wind Serpent Goddess
 				}),
 				q(12643, {	-- Silver Lining
 					["altQuests"] = { 12629 },	-- You Can Run, But You Can't Hide (Available if you DO NOT complete "Cleansing Drak'Tharon")
-					["coord"] = { 14.0, 73.7, 121 },
+					["coord"] = { 14.0, 73.7, ZULDRAK },
 					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["sourceQuest"] = 12638,	-- Close Call
 				}),
 				q(12799, {	-- Siphoning the Spirits -- aa
-					["coord"] = { 35.6, 52.2, 121 },
+					["coord"] = { 35.6, 52.2, ZULDRAK },
 					["provider"] = { "n", 28045 },	-- Captain Arnath
 				}),
 				q(12553, {	-- Skimmer Spinnerets
-					["coord"] = { 58.2, 72.0, 121 },
+					["coord"] = { 58.2, 72.0, ZULDRAK },
 					["provider"] = { "n", 28284 },	-- Specialist Cogwheel
 					["sourceQuest"] = 12598,	-- Throwing Down
 				}),
 				q(12793, {	-- Smoke on the Horizon -- completes along with 12763, 12770, 12789, 12792 (probably a breadcrumb)
 				}),
 				q(12669, {	-- So Far, So Bad
-					["coord"] = { 28.4, 44.9, 121 }, -- technically, this can be done any at the Reliquary of Pain
+					["coord"] = { 28.4, 44.9, ZULDRAK },	-- technically, this can be done any at the Reliquary of Pain
 					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["sourceQuest"] = 12661,	-- Infiltrating Voltarus
 					["g"] = {
@@ -591,18 +591,18 @@ _.Zones =
 					},
 				}),
 				q(12597, {	-- Something for the Pain
-					["coord"] = { 48.7, 78.8, 121 },
+					["coord"] = { 48.7, 78.8, ZULDRAK },
 					["provider"] = { "n", 28042 },	-- Captain Brandon
 					["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
 					["description"] = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
 				}),
 				q(12642, {	-- Spirit of Rhunok
-					["coord"] = { 63.6, 70.3, 121 },
+					["coord"] = { 63.6, 70.3, ZULDRAK },
 					["provider"] = { "n", 28401 },	-- Har'koa
 					["sourceQuest"] = 12632,	-- But First My Offspring
 				}),
 				q(12609, {	-- Stocking the Shelves
-					["coord"] = { 35.6, 52.2, 121 },
+					["coord"] = { 35.6, 52.2, ZULDRAK },
 					["provider"] = { "n", 28045 },	-- Captain Arnath
 					["sourceQuest"] = 12799,	-- Siphoning the Spirits
 					["g"] = {
@@ -622,24 +622,24 @@ _.Zones =
 					["provider"] = { "i", 38321 },	-- Strange Mojo
 				}),
 				q(12649, {	-- Suit Up!
-					["coord"] = { 14.0, 73.7, 121 },
+					["coord"] = { 14.0, 73.7, ZULDRAK },
 					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["altQuests"] = { 12648 },	-- Dressing Down (Available if you DON'T complete "Cleansing Drak'Tharon")
 					["sourceQuest"] = 12643,	-- Silver Lining
 				}),
 				q(13549, {	-- Tails Up
-					["coord"] = { 59.9, 57.9, 121 },
+					["coord"] = { 59.9, 57.9, ZULDRAK },
 					["provider"] = { "n", 28527 },	-- Chronicler To'kini
 					["sourceQuest"] = 12635,	-- Relics of the Snow Leopard Goddess
 				}),
 				q(12795, {	-- Taking a Stand
-					["coord"] = { 14.2, 74.0, 121 },
+					["coord"] = { 14.2, 74.0, ZULDRAK },
 					["provider"] = { "n", 28532 },	-- Bloodrose Datura
 					["sourceQuest"] = 12630,	-- Kickin' Nass and Takin' Manes
 					["isBreadcrumb"] = true,
 				}),
 				q(12903, {	-- That's What Friends Are For...
-					["coord"] = { 25.2, 63.9, 121 },
+					["coord"] = { 25.2, 63.9, ZULDRAK },
 					["provider"] = { "n", 29689 },	-- Crusader MacKellar
 					["sourceQuest"] = 12894,	-- Crusader Forward Camp
 					["g"] = {
@@ -650,27 +650,27 @@ _.Zones =
 					},
 				}),
 				q(12934, {	-- The Amphitheater of Anguish: From Beyond!
-					["coord"] = { 48.4, 56.3, 121 },
+					["coord"] = { 48.4, 56.3, ZULDRAK },
 					["provider"] = { "n", 30007 },	-- Gurgthock
 					["sourceQuest"] = 12933,	-- The Amphitheater of Anguish: Magnataur!
 				}),
 				q(12936, {	-- The Amphitheater of Anguish: Korrak the Bloodrager!
-					["coord"] = { 48.4, 56.3, 121 },
+					["coord"] = { 48.4, 56.3, ZULDRAK },
 					["provider"] = { "n", 30007 },	-- Gurgthock
 					["sourceQuest"] = 12935,	-- The Amphitheater of Anguish: Tuskarrmageddon!
 				}),
 				q(12933, {	-- The Amphitheater of Anguish: Magnataur!
-					["coord"] = { 48.4, 56.3, 121 },
+					["coord"] = { 48.4, 56.3, ZULDRAK },
 					["provider"] = { "n", 30007 },	-- Gurgthock
 					["sourceQuest"] = 12932,	-- The Amphitheater of Anguish: Yggdras!
 				}),
 				q(12935, {	-- The Amphitheater of Anguish: Tuskarrmageddon!
-					["coord"] = { 48.4, 56.3, 121 },
+					["coord"] = { 48.4, 56.3, ZULDRAK },
 					["provider"] = { "n", 30007 },	-- Gurgthock
 					["sourceQuest"] = 12934,	-- The Amphitheater of Anguish: From Beyond!
 				}),
 				q(12932, {	-- The Amphitheater of Anguish: Yggdras! -- aa
-					["coord"] = { 48.4, 56.3, 121 },
+					["coord"] = { 48.4, 56.3, ZULDRAK },
 					["provider"] = { "n", 30007 },	-- Gurgthock
 					["sourceQuest"] = 12974,	-- The Champion's Call
 				}),
@@ -678,21 +678,21 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(12565, {	-- The Blessing of Zim'Abwa -- aa
-					["coord"] = { 40.5, 65.6, 121 },
+					["coord"] = { 40.5, 65.6, ZULDRAK },
 					["provider"] = { "n", 28062 },	-- Hexer Ubungo
 				}),
 				q(12655, {	-- The Blessing of Zim'Rhuk
-					["coord"] = { 59.5, 58.0, 121 },
+					["coord"] = { 59.5, 58.0, ZULDRAK },
 					["provider"] = { "n", 28479 },	-- Witch Doctor Khufu
 					["sourceQuest"] = 12632,	-- But First My Offspring -- TODO: verify
 				}),
 				q(12615, {	-- The Blessing of Zim'Torga
-					["coord"] = { 59.5, 58.0, 121 },
+					["coord"] = { 59.5, 58.0, ZULDRAK },
 					["provider"] = { "n", 28479 },	-- Witch Doctor Khufu
 					["sourceQuest"] = 12516,	-- Too Much of a Good Thing
 				}),
 				q(12948, {	-- The Champion of Anguish
-					["coord"] = { 48.4, 56.3, 121 },
+					["coord"] = { 48.4, 56.3, ZULDRAK },
 					["provider"] = { "n", 30007 },	-- Gurgthock
 					["sourceQuest"] = 12936,	-- The Amphitheater of Anguish: Korrak the Bloodrager!
 					["g"] = {
@@ -705,17 +705,17 @@ _.Zones =
 					},
 				}),
 				q(12562, {	-- The Drakkari Do Not Need Water Elementals!
-					["coord"] = { 40.1, 68.9, 121 },
+					["coord"] = { 40.1, 68.9, ZULDRAK },
 					["provider"] = { "n", 28309 },	-- Sub-Lieutenant Jax
 					["sourceQuest"] = 12507,	-- Strange Mojo
 				}),
 				q(12884, {	-- The Ebon Watch
-					["coord"] = { 32.1, 75.1, 121 },
+					["coord"] = { 32.1, 75.1, ZULDRAK },
 					["provider"] = { "n", 29687 },	-- Crusader Lord Lantinga
 					["sourceQuest"] = 12883,	-- Orders From Drakuru
 				}),
 				q(12639, {	-- The Frozen Earth
-					["coord"] = { 59.3, 56.4, 121 },
+					["coord"] = { 59.3, 56.4, ZULDRAK },
 					["provider"] = { "n", 28480 },	-- Element-Tamer Dagoda
 					["sourceQuest"] = 12622,	-- The Leaders at Jin'Alai
 					["g"] = {
@@ -726,17 +726,17 @@ _.Zones =
 					},
 				}),
 				q(12729, {	-- The Gods Have Spoken
-					["coord"] = { 59.5, 58.0, 121 },
+					["coord"] = { 59.5, 58.0, ZULDRAK },
 					["provider"] = { "n", 28479 },	-- Witch Doctor Khufu
 					["sourceQuest"] = 12721,	-- Rampage
 				}),
 				q(12712, {	-- The Key of Warlord Zol'Maz
-					["coord"] = { 60.2, 57.7, 121 },
+					["coord"] = { 60.2, 57.7, ZULDRAK },
 					["provider"] = { "n", 28401 },	-- Har'koa
 					["sourceQuest"] = 12685,	-- You Reap What You Sow
 				}),
 				q(12622, {	-- The Leaders at Jin'Alai
-					["coord"] = { 59.1, 56.2, 121 },
+					["coord"] = { 59.1, 56.2, ZULDRAK },
 					["provider"] = { "n", 28484 },	-- Scalper Ahunae
 					["sourceQuest"] = 12623,	-- To the Witch Doctor
 					["g"] = {
@@ -747,12 +747,12 @@ _.Zones =
 					},
 				}),
 				q(12796, {	-- The Magical Kingdom of Dalaran -- aa
-					["coord"] = { 40.6, 66.9, 121 },
+					["coord"] = { 40.6, 66.9, ZULDRAK },
 					["provider"] = { "n", 29169 },	-- Magister Teronus III
 					["isBreadcrumb"] = true,
 				}),
 				q(12919, {	-- The Storm King's Vengeance
-					["coord"] = { 19.7, 56.3, 121 },
+					["coord"] = { 19.7, 56.3, ZULDRAK },
 					["provider"] = { "n", 29647 },	-- Gymer
 					["sourceQuest"] = 12916,	-- Our Only Hope
 					["g"] = {
@@ -764,7 +764,7 @@ _.Zones =
 					},
 				}),
 				q(12859, {	-- This Just In: Fire Still Hot! -- aa
-					["coord"] = { 32.0, 75.5, 121 },
+					["coord"] = { 32.0, 75.5, ZULDRAK },
 					["provider"] = { "n", 29733 },	-- Elder Shaman Moky
 					["g"] = {
 						i(41755, {	-- The Fire Extinguisher
@@ -773,23 +773,23 @@ _.Zones =
 					},
 				}),
 				q(12598, {	-- Throwing Down
-					["coord"] = { 58.0, 72.4, 121 },
+					["coord"] = { 58.0, 72.4, ZULDRAK },
 					["provider"] = { "n", 28044 },	-- Captain Rupert
 					["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
 					["description"] = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
 				}),
 				q(12628, {	-- To Speak With Har'koa
-					["coord"] = { 59.5, 58.0, 121 },
+					["coord"] = { 59.5, 58.0, ZULDRAK },
 					["provider"] = { "n", 28479 },	-- Witch Doctor Khufu
 					["sourceQuest"] = 12627,	-- Breaking Through Jin'Alai
 				}),
 				q(12623, {	-- To the Witch Doctor
-					["coord"] = { 40.5, 65.6, 121 },
+					["coord"] = { 40.5, 65.6, ZULDRAK },
 					["provider"] = { "n", 28062 },	-- Hexxer Ubungo
 					["sourceQuest"] = 12516,	-- Too Much of a Good Thing
 				}),
 				q(12516, {	-- Too Much of a Good Thing
-					["coord"] = { 40.5, 65.6, 121 },
+					["coord"] = { 40.5, 65.6, ZULDRAK },
 					["provider"] = { "n", 28062 },	-- Hexxer Ubungo
 					["sourceQuest"] = 12514,	-- Mushroom Mixer
 					["g"] = {
@@ -801,14 +801,14 @@ _.Zones =
 				}),
 				q(12501, {	-- Troll Patrol
 					-- confirmed available 14.October.2019 by Pr3vention
-					["coord"] = { 40.2, 66.6, 121 },
+					["coord"] = { 40.2, 66.6, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 28039 },	-- Commander Kunz
 					["sourceQuest"] = 12596,	-- Pa'Troll
 				}),
 				q(12563, {	-- Troll Patrol
 					-- confirmed available 26.June.2021 by Darkal
-					["coord"] = { 40.2, 66.6, 121 },
+					["coord"] = { 40.2, 66.6, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 28039 },	-- Commander Kunz
 					["sourceQuest"] = 12596,	-- Pa'Troll
@@ -816,73 +816,73 @@ _.Zones =
 				q(12587, {	-- Troll Patrol
 					-- almost certainly the removed version
 					["u"] = REMOVED_FROM_GAME,
-					["coord"] = { 40.2, 66.6, 121 },
+					["coord"] = { 40.2, 66.6, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 28039 },	-- Commander Kunz
 					["sourceQuest"] = 12596,	-- Pa'Troll
 				}),
 				q(12588, {	-- Troll Patrol: Can You Dig It?
-					["coord"] = { 48.7, 78.8, 121 },
+					["coord"] = { 48.7, 78.8, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 28042 },	-- Captain Brandon
 					["sourceQuest"] = 12596,	-- Pa'Troll
 				}),
 				q(12594, {	-- Troll Patrol: Couldn't Care Less
-					["coord"] = { 48.1, 63.8, 121 },
+					["coord"] = { 48.1, 63.8, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 28043 },	-- Captain Grondel
 					["sourceQuest"] = 12596,	-- Pa'Troll
 				}),
 				q(12585, {	-- Troll Patrol: Creature Comforts
-					["coord"] = { 48.1, 63.8, 121 },
+					["coord"] = { 48.1, 63.8, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 28043 },	-- Captain Grondel
 					["sourceQuest"] = 12596,	-- Pa'Troll
 				}),
 				q(12568, {	-- Troll Patrol: Done to Death
-					["coord"] = { 58.0, 72.4, 121 },
+					["coord"] = { 58.0, 72.4, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 28044 },	-- Captain Rupert
 					["sourceQuest"] = 12596,	-- Pa'Troll
 				}),
 				q(12502, {	-- Troll Patrol: High Standards
-					["coord"] = { 48.7, 78.8, 121 },
+					["coord"] = { 48.7, 78.8, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 28042 },	-- Captain Brandon
 					["sourceQuest"] = 12596,	-- Pa'Troll
 				}),
 				q(12509, {	-- Troll Patrol: Intestinal Fortitude
-					["coord"] = { 58.0, 72.4, 121 },
+					["coord"] = { 58.0, 72.4, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 28044 },	-- Captain Rupert
 					["sourceQuest"] = 12596,	-- Pa'Troll
 				}),
 				q(12564, {	-- Troll Patrol: Something for the Pain
-					["coord"] = { 48.7, 78.8, 121 },
+					["coord"] = { 48.7, 78.8, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 28042 },	-- Captain Brandon
 					["sourceQuest"] = 12596,	-- Pa'Troll
 				}),
 				q(12541, {	-- Troll Patrol: The Alchemist's Apprentice
-					["coord"] = { 35.0, 52.1, 121 },
+					["coord"] = { 35.0, 52.1, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 28205 },	-- Alchemist Finklestein
 					["sourceQuest"] = 12596,	-- Pa'Troll
 				}),
 				q(12591, {	-- Troll Patrol: Throwing Down
-					["coord"] = { 58.0, 72.4, 121 },
+					["coord"] = { 58.0, 72.4, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 28044 },	-- Captain Rupert
 					["sourceQuest"] = 12596,	-- Pa'Troll
 				}),
 				q(12519, {	-- Troll Patrol: Whatdya Want, a Medal?
-					["coord"] = { 48.1, 63.8, 121 },
+					["coord"] = { 48.1, 63.8, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 28043 },	-- Captain Grondel
 					["sourceQuest"] = 12596,	-- Pa'Troll
 				}),
 				q(12861, {	-- Trolls Is Gone Crazy! -- aa
-					["coord"] = { 32.1, 75.6, 121 },
+					["coord"] = { 32.1, 75.6, ZULDRAK },
 					["provider"] = { "n", 29690 },	-- Chief Rageclaw
 					["g"] = {
 						i(41760),	-- Emancipator's Robes
@@ -892,18 +892,18 @@ _.Zones =
 					},
 				}),
 				q(12506, {	-- Trouble at the Altar of Sseratus
-					["coord"] = { 40.5, 65.6, 121 },
+					["coord"] = { 40.5, 65.6, ZULDRAK },
 					["provider"] = { "n", 28062 },	-- Hexer Ubungo
 					["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
 				}),
 				q(29833, {	-- Unfinished Business
-					["coord"] = { 60.2, 57.7, 121 },
+					["coord"] = { 60.2, 57.7, ZULDRAK },
 					["provider"] = { "n", 28401 },	-- Har'koa
 					["sourceQuest"] = 12730,	-- Convocation at Zol'Heb -- TODO: verify
 					["altQuests"] = { 29836 },	-- Just Checkin'
 				}),
 				q(12857, {	-- Wanted: Ragemane's Flipper
-					["coord"] = { 32.2, 75.6, 121 },
+					["coord"] = { 32.2, 75.6, ZULDRAK },
 					["model"] = 199475,
 					["provider"] = { "o", 191728 },	-- Wanted!
 					["g"] = {
@@ -914,7 +914,7 @@ _.Zones =
 					},
 				}),
 				q(12707, {	-- Wooly Justice
-					["coord"] = { 59.1, 56.2, 121 },
+					["coord"] = { 59.1, 56.2, ZULDRAK },
 					["provider"] = { "n", 28484 },	-- Scalper Ahunae
 					["sourceQuest"] = 12685,	-- You Reap What You Sow
 					["g"] = {
@@ -926,13 +926,13 @@ _.Zones =
 					},
 				}),
 				q(12629, {	-- You Can Run, But You Can't Hide
-					["coord"] = { 14.0, 73.8, 121 },
+					["coord"] = { 14.0, 73.8, ZULDRAK },
 					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["altQuests"] = { 12643 },	-- Silver Lining (Available if you DO complete "Cleansing Drak'Tharon")
 					["sourceQuest"] = 12637,	-- Near Miss
 				}),
 				q(12685, {	-- You Reap What You Sow
-					["coord"] = { 63.6, 70.3, 121 },
+					["coord"] = { 63.6, 70.3, ZULDRAK },
 					["provider"] = { "n", 28401 },	-- Har'koa
 					["sourceQuest"] = 12684,	-- Blood of a Dead God
 					["g"] = {
@@ -944,7 +944,7 @@ _.Zones =
 					},
 				}),
 				q(12686, {	-- Zero Tolerance
-					["coord"] = { 27.0, 46.1, 121 },
+					["coord"] = { 27.0, 46.1, ZULDRAK },
 					["provider"] = { "n", 28503 },	-- Overlord Drakuru
 					["description"] = "Must be on |cFFFFD700Hazardous Materials|r to see this quest.",
 					["sourceQuest"] = 12669,	-- So Far, So Bad

@@ -9,7 +9,7 @@ _.Instances = { tier(WOTLK_TIER, {
 		["lvl"] = 80,
 		["mapID"] = 186,
 		["maps"] = { 187, 188, 189, 190, 191, 192, 193, 699, 1359 },	-- 1359 may be a specific scenario map - it was reported as missing in early 2019, but i couldn't find context for it
-		["coord"] = { 53.7, 87.0, 118 },	-- Icecrown Citadel, Icecrown
+		["coord"] = { 53.7, 87.0, ICECROWN },
 		["g"] = {
 			faction(1156, {	-- The Ashen Verdict
 				["achievementID"] = 4598,	-- The Ashen Verdict (Achievement)

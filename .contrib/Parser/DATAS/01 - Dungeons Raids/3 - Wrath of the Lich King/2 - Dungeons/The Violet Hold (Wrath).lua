@@ -6,7 +6,7 @@ _.Instances = { tier(WOTLK_TIER, {
 	inst(283, {	-- The Violet Hold (Wrath)
 		["lvl"] = 62,
 		["mapID"] = 168,
-		["coord"] = { 66.6, 67.9, 125 },
+		["coord"] = { 66.6, 67.9, NORTHREND_DALARAN },
 		["groups"] = {
 			n(QUESTS, {
 				q(29830,{	-- Containment

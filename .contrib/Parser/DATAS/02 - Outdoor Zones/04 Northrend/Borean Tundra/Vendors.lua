@@ -4,11 +4,11 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(114, {	-- Borean Tundra
+	m(NORTHREND, {
+		m(BOREAN_TUNDRA, {
 			n(VENDORS, {
 				n(25206, {	-- Ahlurglgr <Clam Vendor>
-					["coord"] = { 43.0, 13.8, 114 },
+					["coord"] = { 43.0, 13.8, BOREAN_TUNDRA },
 					["g"] = {
 						i(37462, {	-- Sea King's Crown
 							["cost"] = { { "i", 34597, 30 }, },	-- 30x Winterfin Clam
@@ -26,7 +26,7 @@ _.Zones =
 					},
 				}),
 				n(27147, {	-- Librarian Erickson <Enchanting Supplies>
-					["coord"] = { 46.7, 32.5, 114 },
+					["coord"] = { 46.7, 32.5, BOREAN_TUNDRA },
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil

@@ -16,7 +16,7 @@ _.WorldEvents =
 			}),
 			n(VENDORS, {
 				n(98690, {	-- Auzin <Timewalking Vendor>
-					["maps"] = { 125 },	-- Dalaran: Northrend
+					["maps"] = { NORTHREND_DALARAN },
 					["g"] = {
 						-- Mounts / Pets / Toys
 						i(129922, {	-- Bridle of the Ironbound Wraithcharger (MOUNT!)

@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(121, {	-- Zul'Drak
+	m(NORTHREND, {
+		m(ZULDRAK, {
 			filter(BATTLE_PETS, {
 				p(641, {	-- Arctic Hare
 					["crs"] = { 62693 },
@@ -23,7 +23,7 @@ _.Zones =
 					["crs"] = { 62820 },
 				}),
 				q(31934, {	-- Gutretch
-					["coord"] = { 13.2, 66.7, 121 },
+					["coord"] = { 13.2, 66.7, ZULDRAK },
 					["isDaily"] = true,
 					["provider"] = { "n", 66639 },
 				}),

@@ -23,7 +23,7 @@ _.Achievements =
 					--["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				crit(3,  {	-- Chittermaw
-					--["coord"] = { 28.6, 33.8, 117 },
+					--["coord"] = { 28.6, 33.8, HOWLING_FJORD },
 				}),
 				crit(4,  {	-- Mistwing
 					--["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
@@ -56,7 +56,7 @@ _.Achievements =
 					["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				crit(3,  {	-- Beegle Blastfuse (Howling Fjord)
-					["coord"] = { 28.6, 33.8, 117 },
+					["coord"] = { 28.6, 33.8, HOWLING_FJORD },
 				}),
 				crit(4,  {	-- Blingtron 4000 (Celestial Tournament)
 					["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
@@ -100,8 +100,8 @@ _.Achievements =
 				crit(17, {	-- Goz Banefury
 					["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
 				}),
-				crit(18, {	-- Gutretch (Zul'Drak)
-					["coord"] = { 13.2, 66.8, 121 },
+				crit(18, {	-- Gutretch
+					["coord"] = { 13.2, 66.8, ZULDRAK },
 				}),
 				crit(19, {	-- Hyuna of the Shrines
 					["coord"] = { 48.0, 54.0, THE_JADE_FOREST },
@@ -115,8 +115,8 @@ _.Achievements =
 				crit(22, {	-- Lydia Accoste
 					["coord"] = { 40.2, 76.6, DEADWIND_PASS },
 				}),
-				crit(23, {	-- Major Payne (Icecrown)
-					["coord"] = { 77.4, 19.6, 118 },
+				crit(23, {	-- Major Payne
+					["coord"] = { 77.4, 19.6, ICECROWN },
 				}),
 				crit(24, {	-- Mo'ruk
 					["coord"] = { 65.0, 42.7, KRASARANG_WILDS },
@@ -127,8 +127,8 @@ _.Achievements =
 				crit(26, {	-- Narrok (Outland)
 					["coord"] = { 61.0, 49.4, NAGRAND },
 				}),
-				crit(27, {	-- Nearly Headless Jacob (Crystalsong Forest)
-					["coord"] = { 50.2, 59.0, 127 },
+				crit(27, {	-- Nearly Headless Jacob
+					["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
 				}),
 				crit(28, {	-- Nicki Tinytech
 					["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
@@ -136,8 +136,8 @@ _.Achievements =
 				crit(29, {	-- Obalis (Uldum)
 					["coord"] = { 56.6, 41.8, 249 },
 				}),
-				crit(30, {	-- Okrut Dragonwaste (Dragonblight)
-					["coord"] = { 59.0, 77.0, 115 },
+				crit(30, {	-- Okrut Dragonwaste
+					["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
 				}),
 				crit(31, {	-- Ras'an
 					["coord"] = { 17.2, 50.6, ZANGARMARSH },

@@ -4,15 +4,15 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(115, {	-- Dragonblight
+	m(NORTHREND, {
+		m(DRAGONBLIGHT, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
 					["g"] = {
 						crit(30, {	-- Okrut Dragonwaste
-							["coord"] = { 59.0, 77.0, 115 },
+							["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
 							["cr"] = 66638,	-- Okrut Dragonwaste <Master Pet Tamer>
 						}),
 					},

@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(123, {	-- Wintergrasp
+	m(NORTHREND, {
+		m(WINTERGRASP, {
 			pvp(n(ACHIEVEMENTS, {
 				ach(1752, {	-- Master of Wintergrasp
 					ach(2080),	-- Black War Mammoth

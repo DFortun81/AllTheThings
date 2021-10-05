@@ -8,7 +8,7 @@ _.Instances = { tier(WOTLK_TIER, {
 		["sharedLockout"] = 1,
 		["lvl"] = 80,
 		["mapID"] = 156,
-		["coord"] = { 50.0, 11.9, 123 },	-- Vault of Archavon, Wintergrasp
+		["coord"] = { 50.0, 11.9, WINTERGRASP },
 		["groups"] = {
 			n(COMMON_BOSS_DROPS, {
 				["description"] = "These can drop from any of the bosses on any difficulty.",

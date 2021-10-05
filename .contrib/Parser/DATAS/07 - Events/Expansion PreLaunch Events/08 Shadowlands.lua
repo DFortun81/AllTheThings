@@ -12,7 +12,7 @@ _.WorldEvents =
 						["u"] = REMOVED_FROM_GAME,
 						["sourceQuests"] = { 60871, 60869 },	-- With Hope in Hand (A, H)
 						["maps"] = {
-							118,	-- Icecrown (achievement pops in your capital, but all the SQs are in Icecrown so it's probably helpful to see it there
+							ICECROWN,	-- achievement pops in your capital, but all the SQs are in Icecrown so it's probably helpful to see it there
 							ORGRIMMAR,
 							STORMWIND_CITY,
 						},
@@ -152,8 +152,8 @@ _.WorldEvents =
 					}),
 					q(60169, {	-- Securing the Area
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 22.0, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 71.0, 22.0, ICECROWN },
 						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
 						["sourceQuests"] = {
 							59877,	-- A Message from Icecrown (A)
@@ -163,24 +163,24 @@ _.WorldEvents =
 					}),
 					q(60003, {	-- A Valiant Effort (A)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 22.0, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 71.0, 22.0, ICECROWN },
 						["provider"] = { "n", 168123 },	-- Crusader Renn
 						["sourceQuest"] = 59877,	-- A Message from Icecrown (A)
 						["lvl"] = { 50 },
 					}),
 					q(60004, {	-- A Valiant Effort (H)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 22.0, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 71.0, 22.0, ICECROWN },
 						["provider"] = { "n", 168123 },	-- Crusader Renn
 						["sourceQuest"] = 60727,	-- A Message from Icecrown (H)
 						["lvl"] = { 50 },
 					}),
 					q(62157, {	-- Scouting from a Safe Distance
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 22.0, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 71.0, 22.0, ICECROWN },
 						["provider"] = { "n", 168123 },	-- Crusader Renn
 						["sourceQuests"] = {
 							60003,	-- A Valiant Effort (A)
@@ -191,8 +191,8 @@ _.WorldEvents =
 					}),
 					q(60827, {	-- Advancing the Effort
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 22.0, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 71.0, 22.0, ICECROWN },
 						["provider"] = { "n", 168123 },	-- Crusader Renn
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
@@ -200,64 +200,64 @@ _.WorldEvents =
 					-------------------------- Dailies --------------------------
 					q(59863, {	-- Combat Nullifier 07-X
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 73.1, 35.6, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 73.1, 35.6, ICECROWN },
 						["provider"] = { "n", 173124 },	-- Binkie Brightgear
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					q(59783, {	-- Cultist Captors
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 66.0, 21.9, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 66.0, 21.9, ICECROWN },
 						["provider"] = { "n", 168880 },	-- Sentry Joren
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					q(62553, {	-- Delaying Their Efforts
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 21.9, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 71.0, 21.9, ICECROWN },
 						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					q(60841, {	-- Evacuation Effort
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 21.9, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 71.0, 21.9, ICECROWN },
 						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					q(62262, {	-- Fungal Feeding
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.6, 21.0, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 71.6, 21.0, ICECROWN },
 						["provider"] = { "n", 167572 },	-- Crystal Brightspark
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					q(59782, {	-- The Deathspeaker's Devout
 						["u"] = REMOVED_FROM_GAME,
-						["coord"] = { 66.0, 21.9, 118 },
+						["coord"] = { 66.0, 21.9, ICECROWN },
 						["provider"] = { "n", 168880 },	-- Sentry Joren
-						["maps"] = { 118 },	-- Icecrown
+						["maps"] = { ICECROWN },
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					q(59878, {	-- Too Many Whelps
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 21.9, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 71.0, 21.9, ICECROWN },
 						["provider"] = { "n", 167045 },	-- Justicar Mariel Trueheart
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
 					}),
 					q(59839, {	-- WARNING: This is Only a Test!
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 66.0, 22.4, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 66.0, 22.4, ICECROWN },
 						["provider"] = { "n", 172905 },	-- Fizzix Blastbolt
 						["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
 						["lvl"] = { 50 },
@@ -305,8 +305,8 @@ _.WorldEvents =
 					}),
 					q(60828, {	-- A New Foothold
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 22.0, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 71.0, 22.0, ICECROWN },
 						["provider"] = { "n", 168123 },	-- Crusader Renn
 						["sourceQuests"] = {
 							62162,	-- A Message from the Justicar (A)
@@ -317,24 +317,24 @@ _.WorldEvents =
 					}),
 					q(60843, {	-- Cult Couture
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 44.9, 44.7, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 44.9, 44.7, ICECROWN },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60828,	-- A New Foothold
 						["lvl"] = { 50 },
 					}),
 					q(62185, {	-- Fighting for Attention
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 44.9, 44.7, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 44.9, 44.7, ICECROWN },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60828,	-- A New Foothold
 						["lvl"] = { 50 },
 					}),
 					q(60861, {	-- Secrets in Shadows
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 44.9, 44.7, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 44.9, 44.7, ICECROWN },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuests"] = {
 							60843,	-- Cult Couture
@@ -344,40 +344,40 @@ _.WorldEvents =
 					}),
 					q(62225, {	-- Bursting the Bubble
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },
-						["coord"] = { 61.4, 63.8, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 61.4, 63.8, ICECROWN },
 						["provider"] = { "o", 357758 },	-- Plague Barrel
 						["sourceQuest"] = 60861,	-- Secrets in Shadows
 						["lvl"] = { 50 },
 					}),
 					q(60867, {	-- A Message from Above
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 44.9, 44.7, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 44.9, 44.7, ICECROWN },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 62225,	-- Bursting the Bubble
 						["lvl"] = { 50 },
 					}),
 					q(60932, {	-- Only Shadows Remain
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 44.9, 44.7, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 44.9, 44.7, ICECROWN },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60867,	-- A Message from Above
 						["lvl"] = { 50 },
 					}),
 					q(60871, {	-- With Hope in Hand (A)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 44.9, 44.7, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 44.9, 44.7, ICECROWN },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
 					}),
 					q(60869, {	-- With Hope in Hand (H)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 44.9, 44.7, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 44.9, 44.7, ICECROWN },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
@@ -385,40 +385,40 @@ _.WorldEvents =
 					-------------------------- Dailies --------------------------
 					q(62365, {	-- Careful Creations
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 35.3, 66.3, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 35.3, 66.3, ICECROWN },
 						["provider"] = { "n", 173997 },	-- Darkrider Arly
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
 					}),
 					q(62295, {	-- Cleaning Out the Vault
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 42.8, 29.9, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 42.8, 29.9, ICECROWN },
 						["provider"] = { "n", 173869 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
 					}),
 					q(59847, {	-- Defending the Rampart
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 44.9, 44.7, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 44.9, 44.7, ICECROWN },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
 					}),
 					q(62584, {	-- Frontline Resupply
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 44.9, 44.7, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 44.9, 44.7, ICECROWN },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
 					}),
 					q(59851, {	-- Frozen Solid
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 44.9, 44.7, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 44.9, 44.7, ICECROWN },
 						["provider"] = { "n", 170467 },	-- Crusader Renn
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
@@ -428,30 +428,30 @@ _.WorldEvents =
 						-- i know i picked it up in this area, but not sure about the provider.  didn't realize it wasn't added until i turned it in
 						["sourceQuests"] = { 60932 },	-- Only Shadows Remain
 						["provider"] = { "n", 170467 },	-- Crusader Renn
-						["coord"] = { 44.9, 44.7, 118 },
-						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 44.9, 44.7, ICECROWN },
+						["maps"] = { ICECROWN },
 						["lvl"] = { 50 },
 					}),
 					q(59838, {	-- Scourge War Machines
 						["u"] = REMOVED_FROM_GAME,
 						["sourceQuests"] = { 60932 },	-- Only Shadows Remain
 						["provider"] = { "n", 170467 },	-- Crusader Renn
-						["coord"] = { 44.9, 44.7, 118 },
-						["maps"] = { 118 },	-- Icecrown
+						["coord"] = { 44.9, 44.7, ICECROWN },
+						["maps"] = { ICECROWN },
 						["lvl"] = { 50 },
 					}),
 					q(62484, {	-- Werk In Progress
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 35.3, 66.3, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 35.3, 66.3, ICECROWN },
 						["provider"] = { "n", 173997 },	-- Darkrider Arly
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
 					}),
 					q(62473, {	-- What's Old is New
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 72.08, 20.72, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 72.08, 20.72, ICECROWN },
 						["provider"] = { "n", 167577 },	-- Brollen Wheatbeard
 						["sourceQuest"] = 60932,	-- Only Shadows Remain
 						["lvl"] = { 50 },
@@ -459,8 +459,8 @@ _.WorldEvents =
 					-- repeatables below
 					q(62401, {	-- Strange Scourgestones
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 21.6, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 71.0, 21.6, ICECROWN },
 						["provider"] = { "n", 169718 },	-- Veteran Crusader Aliocha Segard
 						["groups"] = {
 							i(12844),	-- Argent Dawn Valor Token
@@ -469,8 +469,8 @@ _.WorldEvents =
 					}),
 					q(62293, {	-- Darkened Scourgestones
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 21.6, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 71.0, 21.6, ICECROWN },
 						["provider"] = { "n", 169718 },	-- Veteran Crusader Aliocha Segard
 						["repeatable"] = true,
 						["sourceQuest"] = 62401,	-- Strange Scourgestones
@@ -482,8 +482,8 @@ _.WorldEvents =
 					}),
 					q(62292, {	-- Pitch Black Scourgestones
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 71.0, 21.6, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 71.0, 21.6, ICECROWN },
 						["provider"] = { "n", 169718 },	-- Veteran Crusader Aliocha Segard
 						["repeatable"] = true,
 						["sourceQuest"] = 62401,	-- Strange Scourgestones
@@ -516,8 +516,8 @@ _.WorldEvents =
 					}),
 					-- rares spawn every 20 minutes
 					n(174065, {	-- Blood Queen Lana'thel (6)
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 49.6, 32.3, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 49.6, 32.3, ICECROWN },
 						["questID"] = 62343,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -529,8 +529,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174058, {	-- Bronjahm (13)
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 70.6, 38.5, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 70.6, 38.5, ICECROWN },
 						["questID"] = 62336,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -543,8 +543,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174048, {	-- Elder Nadox (3)
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 44.2, 49.2, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 44.2, 49.2, ICECROWN },
 						["questID"] = 62326,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -556,8 +556,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174054, {	-- Falric (17)
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 50.2, 88.1, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 50.2, 88.1, ICECROWN },
 						["questID"] = 62332,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -569,8 +569,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174056, {	-- Forgemaster Garfrost (15)
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 59.1, 72.5, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 59.1, 72.5, ICECROWN },
 						["questID"] = 62334,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -582,8 +582,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174061, {	-- Ingvar the Plunderer (10)
-						["maps"] = { 118 }, -- Icecrown
-						["coord"] = { 52.3, 52.6, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 52.3, 52.6, ICECROWN },
 						["questID"] = 62339,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -595,8 +595,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174050, {	-- Krik'thir the Gatewatcher (1)
-						["maps"] = { 118 }, -- Icecrown
-						["coord"] = { 67.5, 58.2, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 67.5, 58.2, ICECROWN },
 						["questID"] = 62328,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -608,8 +608,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174063, {	-- Lady Deathwhisper (8)
-						["maps"] = { 118 }, -- Icecrown
-						["coord"] = { 51.2, 78.6, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 51.2, 78.6, ICECROWN },
 						["questID"] = 62341,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -621,8 +621,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174055, {	-- Marwyn (16)
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 58.2, 83.5, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 58.2, 83.5, ICECROWN },
 						["questID"] = 62333,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -634,8 +634,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174067, {	-- Noth the Plaguebringer (4)
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 31.5, 70.4, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 31.5, 70.4, ICECROWN },
 						["questID"] = 62345,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -647,8 +647,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174052, {	-- Novos the Summoner (19)
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 77.9, 66.2, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 77.9, 66.2, ICECROWN },
 						["questID"] = 62330,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -660,8 +660,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174066, {	-- Patchwerk (5)
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 36.5, 67.7, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 36.5, 67.7, ICECROWN },
 						["questID"] = 62344,
 						["isRepeatable"] = true,
 						["description"] = "Inside the Sanctum of Reanimation at the Fleshworks.",
@@ -674,8 +674,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174060, {	-- Prince Keleseth (11)
-						["maps"] = { 118 }, -- Icecrown
-						["coord"] = { 53.9, 44.7, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 53.9, 44.7, ICECROWN },
 						["questID"] = 62338,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -687,8 +687,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174049, {	-- Prince Taldaram (2)
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 30.0, 62.4, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 30.0, 62.4, ICECROWN },
 						["questID"] = 62327,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -700,8 +700,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174064, {	-- Professor Putricide (7)
-						["maps"] = { 118 },
-						["coord"] = { 57.1, 30.5, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 57.1, 30.5, ICECROWN },
 						["questID"] = 62342,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -713,8 +713,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174057, {	-- Scourgelord Tyrannus (14)
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 47.1, 66.0, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 47.1, 66.0, ICECROWN },
 						["questID"] = 62335,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -726,8 +726,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174062, {	-- Skadi the Ruthless (9)
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 57.7, 56.0, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 57.7, 56.0, ICECROWN },
 						["questID"] = 62340,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -748,8 +748,8 @@ _.WorldEvents =
 						},
 					}),
 					n(174059, {	-- The Black Knight (12)
-						["maps"] = { 118 }, -- Icecrown
-						["coord"] = { 64.9, 22.1, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 64.9, 22.1, ICECROWN },
 						["questID"] = 62337,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -761,8 +761,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174053, {	-- The Prophet Tharon'ja (18)
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 80.3, 61.4, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 80.3, 61.4, ICECROWN },
 						["questID"] = 62331,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -774,8 +774,8 @@ _.WorldEvents =
 						}),
 					}),
 					n(174051, {	-- Trollgore (20)
-						["maps"] = { 118 },	-- Icecrown
-						["coord"] = { 58.3, 39.3, 118 },
+						["maps"] = { ICECROWN },
+						["coord"] = { 58.3, 39.3, ICECROWN },
 						["questID"] = 62329,
 						["isRepeatable"] = true,
 						["u"] = REMOVED_FROM_GAME,
@@ -845,9 +845,9 @@ _.WorldEvents =
 						}),
 					}),
 					n(169718, {	-- Veteran Crusader Aliocha Segard
-						["coord"] = { 71.04, 21.66, 118 },
+						["coord"] = { 71.04, 21.66, ICECROWN },
 						["maps"] = {
-							118,	-- Icecrown
+							ICECROWN,
 						},
 						["groups"] = bubbleDown({["cost"] = { { "c", 1754, 15 } }}, {
 							-- Alliance items

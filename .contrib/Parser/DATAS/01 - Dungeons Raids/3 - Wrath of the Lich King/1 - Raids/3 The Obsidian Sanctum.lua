@@ -8,7 +8,7 @@ _.Instances = { tier(WOTLK_TIER, {
 		["sharedLockout"] = 1,
 		["lvl"] = 80,
 		["mapID"] = 155,
-		["coord"] = { 60.0, 56.7, 115 },	-- The Obsidian Sanctum, Dragonblight
+		["coord"] = { 60.0, 56.7, DRAGONBLIGHT },
 		["groups"] = {
 			d(3, {	-- 10-Player
 				cr(28860, e(1616, {	-- Sartharion

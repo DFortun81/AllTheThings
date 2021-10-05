@@ -83,17 +83,17 @@ _.Zones =
 					["g"] = {
 						q(53586, {	-- Argent Tournament Grounds
 							["name"] = "Argent Tournament Grounds",
-							["coord"] = { 76.97, 18.68, 118 },
+							["coord"] = { 76.97, 18.68, ICECROWN },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 118 },	-- Icecrown
+							["maps"] = { ICECROWN },
 						}),
 						q(53596, {	-- Ruby Dragonshrine
 							["name"] = "Ruby Dragonshrine",
-							["coord"] = { 45.34, 49.92, 115 },
+							["coord"] = { 45.34, 49.92, DRAGONBLIGHT },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 115 },	-- Dragonblight
+							["maps"] = { DRAGONBLIGHT },
 						}),
 					},
 				}),

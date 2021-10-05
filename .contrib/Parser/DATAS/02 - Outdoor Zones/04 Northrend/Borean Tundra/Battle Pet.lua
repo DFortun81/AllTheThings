@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(114, {	-- Borean Tundra
+	m(NORTHREND, {
+		m(BOREAN_TUNDRA, {
 			filter(BATTLE_PETS, {
 				p(641, {	-- Arctic Hare
 					["crs"] = { 62693 },
@@ -23,7 +23,7 @@ _.Zones =
 					["crs"] = { 61158 },
 				}),
 				i(22780, {	-- White Murloc Egg (Terky)
-					["coord"] = { 56.0, 88.0, 114 },
+					["coord"] = { 56.0, 88.0, BOREAN_TUNDRA },
 					["description"] = "In a hidden cave in a glacier contained in the White Murloc Egg at the back of the room, not the table.",
 				}),
 				p(536, {	-- Tundra Penguin

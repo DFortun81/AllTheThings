@@ -164,7 +164,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 			q(8827,  {	-- Winter's Presents (Alliance)
 				["provider"] = { "n", 15732 },	-- Wonderform Operator <Smokywood Pastures>
 				["maps"] = {
-					125,	-- Dalaran (Northrend) (couldn't find it in Legion)
+					NORTHREND_DALARAN,	-- couldn't find it in Legion
 					DUN_MOROGH,
 					TANARIS,	-- Gadgetzan
 					STORMWIND_CITY,
@@ -326,7 +326,7 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 			q(8828,  {	-- Winter's Presents (Horde)
 				["provider"] = { "n", 15732 },	-- Wonderform Operator <Smokywood Pastures>
 				["maps"] = {
-					125,	-- Dalaran (Northrend) (couldn't find it in Legion)
+					NORTHREND_DALARAN,	-- couldn't find it in Legion
 					DUN_MOROGH,
 					TANARIS,	-- Gadgetzan
 					STORMWIND_CITY,

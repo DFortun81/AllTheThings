@@ -4,14 +4,14 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(117, {	-- Howling Fjord
+	m(NORTHREND, {
+		m(HOWLING_FJORD, {
 			n(FACTIONS, {
 				faction(1073, {	-- The Kalu'ak
 					["collectible"] = false,	-- Collectible in Dragonblight
 					["g"] = {
 						n(31916, {	-- Tanaika <Kalu'ak Quartermaster>
-							["coord"] = { 25.4, 58.6, 117 },
+							["coord"] = { 25.4, 58.6, HOWLING_FJORD },
 							["g"] = {
 								i(44059),	-- Cuttlefish Scale Breastplate
 								i(44060),	-- Cuttlefish Tooth Ringmail

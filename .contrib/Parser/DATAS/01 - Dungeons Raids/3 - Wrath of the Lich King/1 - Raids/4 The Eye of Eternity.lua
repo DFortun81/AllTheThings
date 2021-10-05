@@ -8,7 +8,7 @@ _.Instances = { tier(WOTLK_TIER, {
 		["sharedLockout"] = 1,
 		["lvl"] = 80,
 		["mapID"] = 141,
-		["coord"] = { 27.5, 26.6, 114 },	-- The Eye of Eternity, Borean Tundra (Coldarra)
+		["coord"] = { 27.5, 26.6, BOREAN_TUNDRA },	-- The Eye of Eternity (Coldarra)
 		["groups"] = {
 			d(3, {	-- 10-Player
 				cr(28859, e(1617, {	-- Malygos

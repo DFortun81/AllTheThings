@@ -3992,6 +3992,7 @@ _.HiddenQuestTriggers = {
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
 		q(61502),	-- when using Invitation: Choofa
 		q(62533),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
+		q(62534),	-- when completing 'Sootible Hat: Pink Party Hat' (62556) (2nd time)
 		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(62531),	-- when completing 'Sootible Hat: Crown of the Righteous' (62559)
 		q(63356),	-- when completing 'Sootible Hat: Crown of the Righteous' (62559)

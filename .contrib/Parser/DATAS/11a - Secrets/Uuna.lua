@@ -12,7 +12,7 @@ _.Secrets =
 			BLACKROCK_MOUNTAIN,
 			BURNING_STEPPES,
 			SHATTRATH_CITY,
-			115,
+			DRAGONBLIGHT,
 			MOUNT_HYJAL,
 			KUN_LAI_SUMMIT,
 			VALE_OF_ETERNAL_BLOSSOMS,
@@ -97,7 +97,7 @@ _.Secrets =
 				["sourceQuests"] = { 50108 },	-- Step 11: Spirit Healer
 				["description"] = "Click on the Shadow Tear in Dragonblight's Emerald Dragonshrine to look for Uuna in the spirit realm.  Once inside, do the following:\n\n1. |cffffffff/cheer|r at Uuna.\n2. Place a |cffffffffCooking Fire|r next to her.\n3. Survive the gauntlet for 3 minutes, running into the |cff883325Soul-Eaters|r to scare them away.\n4. When Uuna wraps her arms around herself and cries, |cffffffff/hug|r her.",
 				["name"] = "Step 12: A Dark Place",
-				["coord"] = { 66.1, 74.5, 115 },
+				["coord"] = { 66.1, 74.5, DRAGONBLIGHT },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
 			o(9999938, {	-- Uuna's World Tour
@@ -126,7 +126,7 @@ _.Secrets =
 					q(50143, {	-- Step 4: Dragonblight
 						["sourceQuests"] = { 50142 },	-- Step 3: Krasus Landing, Legion Dalaran
 						["name"] = "Step 4: Dragonblight",
-						["coord"] = { 57.8, 54.6, 115 },
+						["coord"] = { 57.8, 54.6, DRAGONBLIGHT },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50144, {	-- Step 5: Mount Hyjal

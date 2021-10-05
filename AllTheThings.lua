@@ -7663,6 +7663,9 @@ local fields = {
 		end
 		return 8;
 	end,
+	["sortProgress"] = function(t)
+		return ((t.reputation or -42000) + 42000) / 84000;
+	end,
 };
 app.BaseFaction = app.BaseObjectFields(fields);
 app.CreateFaction = function(id, t)
@@ -9866,7 +9869,7 @@ local npcFields = {
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
 	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
@@ -9937,7 +9940,7 @@ local headerFields = {
 		return GetAchievementLink(t.achievementID);
 	end,
 	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 };
@@ -11417,13 +11420,13 @@ local fields = {
 	end,
 	-- use cost to track opposite gendered title in account/debug
 	["customTotal"] = function(t)
-		if t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
+		if app.CollectibleTitles and t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
 			-- print("title.total",t.titleID)
 			return 1;
 		end
 	end,
 	["customProgress"] = function(t)
-		if t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
+		if app.CollectibleTitles and t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
 			-- print("title.progress",t.titleID)
 			local acctTitles, charTitles = ATTAccountWideData.Titles, app.CurrentCharacter.Titles;
 			local ids = t.titleIDs;

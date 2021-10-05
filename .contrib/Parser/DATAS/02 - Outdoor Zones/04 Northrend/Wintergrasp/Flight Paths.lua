@@ -4,14 +4,14 @@
 
 _.Zones =
 {
-	m(113, {	-- Northrend
-		m(123, {	-- Wintergrasp
+	m(NORTHREND, {
+		m(WINTERGRASP, {
 			n(FLIGHT_PATHS, {
-				fp(303, {	-- Valiance Landing Camp, Wintergrasp
-					["coord"] = { 72.0, 31.0, 123 },
+				fp(303, {	-- Valiance Landing Camp
+					["coord"] = { 72.0, 31.0, WINTERGRASP },
 				}),
-				fp(332, {	-- Warsong Camp, Wintergrasp
-					["coord"] = { 21.6, 34.8, 123 },
+				fp(332, {	-- Warsong Camp
+					["coord"] = { 21.6, 34.8, WINTERGRASP },
 				}),
 			}),
 		}),

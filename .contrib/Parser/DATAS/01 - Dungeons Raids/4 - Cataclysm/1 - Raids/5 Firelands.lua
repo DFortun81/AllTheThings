@@ -25,7 +25,7 @@ _.Instances = { tier(CATA_TIER, {
 					86,		-- Orgrimmar: The Drag
 					129,	-- The Nexus
 					MOUNT_HYJAL,
-					114,	-- Borean Tundra
+					BOREAN_TUNDRA,
 				},
 				["g"] = sharedData({["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID }},{
 					a(q(29453, {	-- Your Time Has Come [A]

@@ -160,8 +160,8 @@ _.ExpansionFeatures =
 						}),
 						q(42007, {	-- A Forgotten Enemy
 							["lvl"] = 98,
-							["maps"] = { 115 },
-							["coord"] = { 56.7, 69.1, 115 },
+							["maps"] = { DRAGONBLIGHT },
+							["coord"] = { 56.7, 69.1, DRAGONBLIGHT },
 							["model"] = 192568,
 							["classes"] = { MAGE },
 							["provider"] = { "o", 248398 },	-- Ethereal Communication Device
@@ -256,8 +256,8 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 42696,	-- Tech It Up a Notch
 						}),
 						q(42010, {	-- Arcane Unleashed
-							["maps"] = { 114 },
-							["coord"] = { 27.8, 26.7, 114 },
+							["maps"] = { BOREAN_TUNDRA },
+							["coord"] = { 27.8, 26.7, BOREAN_TUNDRA },
 							["classes"] = { MAGE },
 							["provider"] = { "n", 105917 },	-- Image of Kalec
 							["sourceQuest"] = 42009,	-- Harnessing the Arcane
@@ -458,8 +458,8 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 42520,	-- A Terrible Loss
 						}),
 						q(42008, {	-- Eyes of the Dragon
-							["maps"] = { 115 },
-							["coord"] = { 56.6, 69.1, 115 },
+							["maps"] = { DRAGONBLIGHT },
+							["coord"] = { 56.6, 69.1, DRAGONBLIGHT },
 							["classes"] = { MAGE },
 							["provider"] = { "n", 105917 },	-- Image of Kalec
 							["sourceQuest"] = 42007,	-- A Forgotten Enemy
@@ -524,8 +524,8 @@ _.ExpansionFeatures =
 							["isBreadcrumb"] = true,
 						}),
 						q(42009, {	-- Harnessing the Arcane
-							["maps"] = { 114 },
-							["coord"] = { 27.8, 26.7, 114 },
+							["maps"] = { BOREAN_TUNDRA },
+							["coord"] = { 27.8, 26.7, BOREAN_TUNDRA },
 							["classes"] = { MAGE },
 							["provider"] = { "n", 105917 },	-- Image of Kalec
 							["sourceQuest"] = 42008,	-- Eyes of the Dragon
@@ -827,10 +827,10 @@ _.ExpansionFeatures =
 						}),
 						q(42011, {	-- The Nexus Vault
 							["maps"] = {
-								114,	-- Borean Tundra
+								BOREAN_TUNDRA,
 								736,	-- The Nexus (Scenario)
 							},
-							["coord"] = { 27.8, 26.7, 114 },
+							["coord"] = { 27.8, 26.7, BOREAN_TUNDRA },
 							["classes"] = { MAGE },
 							["provider"] = { "n", 105917 },	-- Image of Kalec
 							["sourceQuest"] = 42010,	-- Arcane Unleashed

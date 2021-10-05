@@ -12,8 +12,8 @@ _.Secrets =
 		["maps"] = {
 			DUSKWOOD,
 			THOUSAND_NEEDLES,
-			114,
-			118,
+			BOREAN_TUNDRA,
+			ICECROWN,
 			MOUNT_HYJAL,
 			201,
 			204,
@@ -78,7 +78,7 @@ _.Secrets =
 							o(280843, {	-- Letter 6: Ironwall Dam, Icecrown
 								["model"] = 1661948,
 								["questID"] = 40288,
-								["coord"] = { 70.8, 73.3, 118 },	-- Icecrown
+								["coord"] = { 70.8, 73.3, ICECROWN },
 								["sourceQuest"] = 40293,	-- Letter 5: Shrine of Aviana, Mount Hyjal
 								["description"] = "|cFFFFFFFFLetter 6:|r Go to |cFFFFFFFF70.8, 73.3|r in |cFFFFD700Icecrown|r. The next |cFFFFD700Letter from Ms. Graham|r is on top of a spike at the dam. Click it. The note reads...\r\r|cFFFFFFFFRe: Codex of mastering Sine waves.|r\n",
 							}),
@@ -91,7 +91,7 @@ _.Secrets =
 							}),
 							o(280845, {	-- Gift from Ms. Graham
 								["questID"] = 50181,
-								["coord"] = { 27.6, 27.1, 114 },	-- Borean Tundra
+								["coord"] = { 27.6, 27.1, BOREAN_TUNDRA },
 								["sourceQuest"] = 50187,	-- Letter 7: Niuzao Temple, Townlong Steppes
 								["description"] = "|cFFFFFFFFThe Gift:|r Go to |cFFFFFFFF27.6, 27.1|r in |cFFFFD700Coldarra, Borean Tundra|r. The |cFFFFFFFFBlue Crystal Monocle|r is in a container on the highest Nexus ring.\n",
 								["g"] = {
