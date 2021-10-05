@@ -1011,7 +1011,6 @@ _.Achievements =
 					["crs"] = {
 						134729,	-- Crimper Mirjam
 						143246,	-- Garrett Elmendorf
-						123639,	-- Harold Atkey
 						137040,	-- Linda Deepwater
 						129044,	-- Martha Mae
 						142189,	-- Ruddy the Rat
@@ -1110,7 +1109,6 @@ _.Achievements =
 						141853,	-- Rebecca Barnes
 						138905,	-- Rusty Blade Waitress
 						136459,	-- Terry Rigglesmith
-						135153,	-- Wesley Rockhold
 					},
 					["maps"] = {
 						BORALUS,
