@@ -943,7 +943,7 @@ app.L = {
 		[-168] = "Interface\\Icons\\Achievement_Quests_Completed_04",						-- Other Quests
 		[-169] = app.asset("Interface_Emissary_Callings"),								    -- Emissary Quests
 		[-170] = "Interface\\Icons\\spell_shaman_maelstromweapon",							-- Balance of Power
-		[-171] = "Interface\\Icons\\Achievement_Quests_Completed_07",						-- Quest Chains
+
 		[-173] = "Interface\\Icons\\spell_holy_borrowedtime",								-- Timewalking
 		[-174] = "Interface\\Icons\\INV_DARKMOON_EYE",										-- Darkmoon Faire
 		[-176] = 3753381,																	-- Weekly Holidays
@@ -963,7 +963,7 @@ app.L = {
 		[-211] = 1530081,																	-- New Characters
 		[-212] = app.asset("Interface_Tchest"),									            -- Treasure Chest
 		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",								-- The Underbelly
-		[-214] = "Interface\\Icons\\achievement_alliedrace_nightborne",						-- Nightborne
+
 		[-215] = "Interface\\Icons\\INV_Pet_Naaru",											-- Vindicaar
 		[-216] = "Interface\\Icons\\ability_rogue_combatreadiness",							-- Prestige
 		[-217] = "Interface\\Icons\\INV_Fishing_Lure_Worm",									-- Lures (for Fishing)
@@ -1031,7 +1031,7 @@ app.L = {
 		[-363] = "Interface\\Icons\\achievement_reputation_argentchampion",					-- The Argent Tournament
 		[-364] = 236215,																	-- Legendaries
 		[-365] = 135360,																	-- Heirlooms
-		[-366] = 132349,																	-- Weapon Sets
+
 		[-367] = "Interface\\Icons\\ability_rogue_deviouspoisons",							-- The Construct Quarter
 		[-368] = "Interface\\Icons\\inv_trinket_naxxramas04",								-- The Arachnid Quarter
 		[-369] = "Interface\\Icons\\spell_deathknight_classicon",							-- The Military Quarter
@@ -1107,7 +1107,7 @@ app.L = {
 		[-652] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Honor Gear Grievous (S14)
 		[-653] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Honor Gear Tyrannical (S13)
 		[-654] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Honor Gear Cataclysmic (S11)
-		[-655] = 1596892, 																	-- Ensemble Gear (PvP)
+		--[-655] = 1596892, 																	-- Ensemble Gear (PvP)
 		[-656] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Honor Gear Ruthless (S10)
 		[-657] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",							-- Hateful Gladiator: Season 5 (Medium Gear)
 		[-658] = app.asset("Expansion_TBC"),												-- Pre-Season BC
@@ -1246,9 +1246,7 @@ app.L = {
 		[-973] = 3536186,																	-- Loyalty
 		[-974] = 3536184,																	-- Wisdom
 		[-975] = 3536187,																	-- Humility
-		[-976] = 4076799,																	-- Korthian Sets
 		[-978] = 651097,																	-- The Rift
-		[-980] = 133650,																	-- Shared Treasures
 		[-981] = 3601566,																	-- Conduits
 		[-982] = 2178518,																	-- Skoldus Hall
 		[-983] = 1392920,																	-- Fracture Chambers
@@ -1594,7 +1592,7 @@ app.L = {
 		[-168] = FACTION_OTHER .. " " ..QUESTS_LABEL,							-- Other Quests
 		[-169] = BOUNTY_BOARD_LOCKED_TITLE,										-- Emissary Quests
 		[-170] = GetSpellInfo(41341),											-- Balance of Power
-		[-171] = "Quest Chains",
+		
 		[-173] = PLAYER_DIFFICULTY_TIMEWALKER,									-- Timewalking
 		[-174] = CALENDAR_FILTER_DARKMOON,										-- Darkmoon Faire
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
@@ -1602,7 +1600,7 @@ app.L = {
 		[-211] = NEW.." "..CHARACTER,											-- New Character
 		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest
 		[-213] = DUNGEON_FLOOR_DALARAN2,										-- The Underbelly
-		[-214] = GetSpellInfo(262061).." "..HOME,								-- Nightborne Home
+
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
 		[-217] = "Lures",														-- Lures (for Fishing)
 		[-218] = "Coastal",														-- Coastal (for Fishing)
@@ -1673,7 +1671,7 @@ app.L = {
 		[-363] = select(1,GetCategoryInfo(14941)),								-- The Argent Tournament
 		[-364] = LOOT_JOURNAL_LEGENDARIES,										-- Legendaries
 		[-365] = HEIRLOOMS,														-- Heirlooms
-		[-366] = WEAPON.." "..WARDROBE_SETS,									-- Weapons Sets
+
 -- Dungeon/Raid Wing Info
 		[-367] = DUNGEON_FLOOR_NAXXRAMAS1,										-- The Construct Quarter
 		[-368] = DUNGEON_FLOOR_NAXXRAMAS2,										-- The Arachnid Quarter
@@ -1705,27 +1703,11 @@ app.L = {
 		[-494] = MAC_OPTIONS_MISC, 												-- Miscellaneous
 		[-496] = DUNGEON_FLOOR_DEEPRUNTRAM2,									-- Bizmo's Brawlpub
 		[-498] = C_Map.GetAreaInfo(7576),										-- Twisting Nether (Demon Hunter Order Hall advancement)
-		-- Dark Iron Dwarves Mole Machine
-		[-501] = C_Map.GetAreaInfo(5039),										-- Sulfuron Spire
-		[-502] = C_Map.GetAreaInfo(348),										-- Aerie Peak
-		[-503] = C_Map.GetAreaInfo(8771),										-- Honor's Stand
-		[-504] = C_Map.GetAreaInfo(537),										-- Fire Plume Ridge
-		[-505] = C_Map.GetAreaInfo(1584),										-- Blackrock Depths
-		[-506] = C_Map.GetAreaInfo(1438),										-- Nethergarde Keep
-		[-507] = C_Map.GetAreaInfo(3746),										-- The Hand of Gul'dan [Outlands]
-		[-508] = C_Map.GetAreaInfo(3866),										-- Skald [Outlands]
-		[-509] = C_Map.GetAreaInfo(4168),										-- Ruby Dragonshrine
-		[-510] = C_Map.GetAreaInfo(4658),										-- Argent Tournament Grounds
-		[-511] = C_Map.GetAreaInfo(5963),										-- Stormstout Brewery
-		[-512] = C_Map.GetAreaInfo(6085),										-- One Keg
-		[-513] = C_Map.GetAreaInfo(6766),										-- The Pit
-		[-514] = C_Map.GetAreaInfo(7139),										-- Elemental Plateau
-		[-515] = C_Map.GetAreaInfo(8648),										-- Aalgen Point
-		[-516] = C_Map.GetAreaInfo(7806),										-- Neltharion's Vault
+	
 		[-517] = GetSpellInfo(265225),											-- Mole Machine
 
 		[-520] = "Expansion Pre-Launch",
-		[-521] = EXPANSION_NAME1..": Dark Portal Opens",
+		
 		[-522] = EXPANSION_NAME2..": Zombie Infestation",
 		[-523] = EXPANSION_NAME3..": Elemental Unrest",
 		[-525] = EXPANSION_NAME5..": Iron Horde Incursion",
@@ -1797,7 +1779,7 @@ app.L = {
 		--[-652] = "Honor Gear Grievous Season",								-- Listed under MoP PvP Seasons
 		--[-653] = "Honor Gear Tyrannical Season",								-- Listed under MoP PvP Seasons
 		--[-654] = "Honor Gear Cataclysmic Season",								-- Listed under Cata PvP Seasons
-		[-655] = "Ensemble Gear", 												-- Ensemble Gear (PvP)
+		--[-655] = "Ensemble Gear", 												-- Ensemble Gear (PvP)
 		--[-656] = "Honor Gear Ruthless Season",								-- Listed under Cata PvP Seasons
 		--[-657] = "Hateful Gladiator",											-- Listed under WOTLK PvP Seasons
 		--[-658] = "BC Pre-Season",												-- Listed under BC PvP Seasons
@@ -1923,7 +1905,6 @@ app.L = {
 		[-977] = "Maelie the Wanderer",											-- Maelie the Wanderer
 		[-978] = select(1, GetSpellInfo(354778)),								-- The Rift
 		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
-		[-980] = "Shared Treasures",											-- Shared Treasures
 		[-981] = GetSpellInfo(348869),											-- Conduits
 
 	-- SL Maldraxxus/Necrolord
@@ -2003,7 +1984,7 @@ app.L = {
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 
 
-		[-976] = "Korthian Sets",												-- Korthian Sets
+
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
 
