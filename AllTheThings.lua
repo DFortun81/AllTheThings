@@ -15322,11 +15322,12 @@ function app:BuildSearchResponse(groups, field, value)
 				response = app:BuildSearchResponse(group.g, field, value);
 				if response then
 					local groupCopy = {};
-					-- set the same metatable
-					setmetatable(groupCopy, getmetatable(group));
 					-- copy direct group values only
 					MergeProperties(groupCopy, group);
+					-- no need to clone response, since it is already cloned above
 					groupCopy.g = response;
+					-- if the group itself does not meet the field/value expectation, force it to be uncollectible
+					if groupCopy.field ~= value then groupCopy.collectible = false; end
 					if t then tinsert(t, groupCopy);
 					else t = { groupCopy }; end
 				end
