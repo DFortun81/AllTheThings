@@ -63,7 +63,6 @@ _.Zones =
 							}),
 							q(12692, {	-- Return of the Lich Hunter
 								["coord"] = { 71.9, 57.0, SHOLAZAR_BASIN },
-								["isDaily"] = true,
 								["provider"] = { "n", 28668 },		-- Zepik the Gorloc Hunter
 								["sourceQuest"] = 12582,	-- Frenzyheart Champion
 							}),
@@ -189,7 +188,6 @@ _.Zones =
 							}),
 							q(12695, {	-- Return of the Friendly Dryskin
 								["coord"] = { 72.5, 57.5, SHOLAZAR_BASIN },
-								["isDaily"] = true,
 								["provider"] = { "n", 28667 },		-- Jaloot
 								["sourceQuest"] = 12689,	-- Hand of the Oracles
 							}),
