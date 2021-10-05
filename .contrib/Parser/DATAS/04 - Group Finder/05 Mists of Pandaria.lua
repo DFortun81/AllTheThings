@@ -103,6 +103,10 @@ _.GroupFinder =
 		}),
 		i(98133, {	-- Greater Cache of Treasures
 			["description"] = "Rewarded for completing a random Mists of Pandaria normal scenario (unknown level bracket).",
+			["timeline"] = {
+				"added 5.3.0.16781",
+				"removed 9.0",	-- no longer available to queue random scenarios post 9.0 squish
+			},
 			["g"] = {
 				i(92821),	-- Bladesnap Breastplate
 				i(92881),	-- Bladesnap Drape
@@ -469,6 +473,10 @@ _.GroupFinder =
 		}),
 		i(98134, {	-- Heroic Cache of Treasures
 			["description"] = "Rewarded for completing a random Mists of Pandaria heroic scenario.",
+			["timeline"] = {
+				"added 5.3.0.16781",
+				"removed 9.0",	-- no longer available to queue random scenarios post 9.0 squish
+			},
 			["g"] = {
 				i(98209),	-- Ale-Boiled Bindings
 				i(98203),	-- Ale-Boiled Boots

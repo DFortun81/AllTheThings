@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(EASTERN_KINGDOM, {
+	m(EASTERN_KINGDOMS, {
 		m(971, {	-- Telogrus Rift
 			["maps"] = { 972 },	-- Telogrus Rift
 			["races"] = { VOIDELF },
