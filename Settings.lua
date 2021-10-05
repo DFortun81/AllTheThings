@@ -2253,7 +2253,7 @@ end
 -- seasonal
 local seasonal = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 seasonal:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-seasonal:SetText(L["SEASONAL"]);
+seasonal:SetText(L["SEASONAL_LABEL"]);
 
 local seasonalFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 seasonalFrame:SetPoint("TOP", seasonal, "BOTTOM", 0, -4);
