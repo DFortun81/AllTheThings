@@ -921,7 +921,6 @@ app.L = {
 		[-101] = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",					-- Followers
 		[-136] = "Interface\\Icons\\achievement_bg_defendxtowers_av",						-- Garrison Invasion
 		[-139] = app.asset("Interface_World_boss"),											-- Raid Bosses
-		
 		[-141] = "Interface\\Icons\\ClassIcon_Warlock",										-- Warlock
 		[-142] = "Interface\\Icons\\ClassIcon_DeathKnight",									-- Death Knight
 		[-143] = "Interface\\Icons\\ClassIcon_Rogue",										-- Rogue
@@ -1167,7 +1166,7 @@ app.L = {
 		[-860] = "Interface\\Icons\\inv_smallazeriteshard",									-- Rank 3
 		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
 		[-862] = "Interface\\Icons\\inv_heartofazeroth",									-- Heart of Azeroth
-		[-900] = 3675495,																	-- Covenant Sanctum
+		[-900] = 3675495,																	-- Covenant Sanctums
 		[-901] = 3726261,																	-- Covenant Callings
 		[-902] = 3726261,																	-- Renown
 		[-903] = "Interface\\Icons\\buff_feltreasures",										-- Zone Rewards
@@ -1407,7 +1406,6 @@ app.L = {
 		[-10043] = app.asset("Category_D&R"),										-- Dungeons
 		[-10044] = app.asset("Category_D&R"),										-- Raids
 		[-10045] = "Interface\\Icons\\Paladin_Protection",							-- Currencies
-		
 		[-10047] = app.asset("Category_Event"),										-- Events
 		[-10048] = "Interface\\Icons\\buff_feltreasures",							-- Mage Tower
 		[-10049] = "Interface\\Icons\\buff_forcesoforder",							-- Command Center
@@ -1438,23 +1436,17 @@ app.L = {
 		[-10081] = "Interface\\Icons\\spell_shadow_shadowmend",						-- Corrupted Area (Vision Scenario)
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
 		[-10083] = "236373",														-- Covenant Assaults
-
 		[-10100] = app.asset("Expansion_SL"),										-- Shadowlands
 		[-10101] = app.asset("Expansion_SL"),										-- Shadowlands Dungeon
 		[-10102] = app.asset("Expansion_SL"),										-- Shadowlands Raid
 		[-10103] = "Interface\\Icons\\Paladin_Protection",							-- The Maw and Torghast
-		
 		[-10105] = 236373,															-- Covenant Assaults
-
-
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101503] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101504] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
-
 		-- Achieve 14339 Sub-Criteira
 		[-1433901] = 3528288,															-- Anima Crystal Shard
-
 	--	hopefully temp custom NPCs, these objects do not have data on wowhead atm
 		[-1433951] = "3854020",															-- Broken Mirror
 		[-1433952] = "3854020",															-- Broken Mirror
@@ -1494,15 +1486,11 @@ app.L = {
 		[-22] = "Secrets",														-- Secrets
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
-
 		[-31] = select(1,GetCategoryInfo(15268)),								-- Promotions
-
 		[-34] = TRACKER_HEADER_WORLD_QUESTS,									-- World Quests
-
 		[-36] = BATTLE_PET_SOURCE_10,											-- In-Game Shop
 		[-37] = BATTLE_PET_SOURCE_11,											-- Discovery
 		[-38] = TRADE_SKILLS,													-- Professions
-
 		[-40] = LFG_LIST_LEGACY,												-- Legacy
 		[-41] = "Cache of Madness",
 -- Armor Types
@@ -1558,7 +1546,6 @@ app.L = {
 		[-138] = string.format(SPELLBOOK_AVAILABLE_AT, 100),					-- Level 100
 		[-139] = RAID_BOSSES,													-- Bosses
 -- Class Trial Sets
-		[-140] = "Communal",
 		[-141] = "Felsoul",
 		[-142] = "Heart-Lesion",
 		[-143] = "Lightdrinker",
@@ -1868,7 +1855,6 @@ app.L = {
 		[-860] = string.format(AZERITE_ESSENCE_RANK, 3),						-- Rank 3
 		[-861] = string.format(AZERITE_ESSENCE_RANK, 4),						-- Rank 4
 		[-862] = GetSpellInfo(275825),											-- Heart of Azeroth
-
 	-- Shadowlands Header
 		[-900] = select(1,GetCategoryInfo(15441)),								-- Covenant Sanctums
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
@@ -2177,7 +2163,6 @@ app.L = {
 		[-10043] = select(1,GetCategoryInfo(15272)),							-- Dungeons
 		[-10044] = select(1,GetCategoryInfo(15271)),							-- Raids
 		[-10045] = select(1,GetCategoryInfo(15280)),							-- Currencies
-		
 		[-10047] = select(1,GetCategoryInfo(15274)),							-- Events
 		[-10048] = BROKENSHORE_BUILDING_MAGETOWER,								-- Mage Tower
 		[-10049] = BROKENSHORE_BUILDING_COMMANDCENTER,							-- Command Center
@@ -2212,17 +2197,13 @@ app.L = {
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
 		[-10083] = "Covenant Assaults",											-- Covenant Assaults
-
 	-- Shadowlands Achievement Header
 		[-10100] = select(1,GetCategoryInfo(15422)),							-- Shadowlands
 		[-10101] = select(1,GetCategoryInfo(15428)),							-- Shadowlands Dungeon
 		[-10102] = select(1,GetCategoryInfo(15438)),							-- Shadowlands Raids
 		[-10103] = select(1,GetCategoryInfo(15440)),							-- The Maw and Torghast
-		[-10104] = select(1,GetCategoryInfo(15441)),							-- Covenant Sanctums
-
 		-- Achieve 14339 Sub-Criteira
 		[-1433901] = "Anima Crystal Shard",										-- Anima Crystal Shard
-
 	--	hopefully temp objects, these currently do not have accessible object data on wowhead
 		[-1433951] = "Broken Mirror A-1",										-- Broken Mirror
 		[-1433952] = "Broken Mirror A-2",										-- Broken Mirror

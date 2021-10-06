@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-900, {	-- Covenant Sanctum
+		n(-900, {	-- Covenant Sanctums
 			["description"] = "These rewards are shared across Covenants.",
 			["g"] = {
 				n(ACHIEVEMENTS, {

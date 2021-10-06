@@ -612,8 +612,7 @@ for key,value in pairs({
 		[-20] = "Обычные предметы у Торговцев",					-- Common Vendor Items
 		[-21] = "Капитаны",										-- Captains
 		[-22] = "Секреты",										-- Secrets
-
-		--[-40] = LFG_LIST_LEGACY,								-- Legacy (TODO: probably need to translate)
+		[-23] = "Обычная добыча с боссов",						-- WoD Common Dungeon Drop
 		[-41] = "Тайник Безумия",
 	-- Armor Types
 		[-43] = "Тканевые доспехи",								-- Cloth
@@ -645,7 +644,6 @@ for key,value in pairs({
 		[-132] = "Фералас - активен",								-- Feralas Active
 		[-133] = "Сумеречный лес - активирован",					-- Duskwood Activated
 	-- Class Trial Sets
-		[-140] = "Общинные",
 		[-141] = "Оскверненная душа",
 		[-142] = "Раненное сердце",
 		[-143] = "Поглощающий свет",
@@ -766,7 +764,6 @@ for key,value in pairs({
 		[-859] = "Ранг 2",											-- Rank 2
 		[-860] = "Ранг 3",											-- Rank 3
 		[-861] = "Ранг 4",											-- Rank 4
-
 	-- Shadowlands Header
 		[-903] = "Добыча локации",									-- Zone Rewards
 		[-906] = "1-й уровень: Тактическое мышление",				-- Tier 1: Tactical Insight
