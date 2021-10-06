@@ -1492,10 +1492,10 @@ app.L = {
 		[-20] = "Common Vendor Items",											-- Common Vendor Items
 		[-21] = "Captains",
 		[-22] = "Secrets",														-- Secrets
-
+		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
 
-		[-31] = BATTLE_PET_SOURCE_8,											-- Promotion
+		[-31] = select(1,GetCategoryInfo(15268)),								-- Promotions
 
 		[-34] = TRACKER_HEADER_WORLD_QUESTS,									-- World Quests
 
@@ -1870,7 +1870,7 @@ app.L = {
 		[-862] = GetSpellInfo(275825),											-- Heart of Azeroth
 
 	-- Shadowlands Header
-		[-900] = GARRISON_TYPE_9_0_LANDING_PAGE_TITLE,							-- Covenant Sanctum
+		[-900] =  select(1,GetCategoryInfo(15441)),								-- Covenant Sanctums
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
 		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
 		[-903] = "Zone Rewards",												-- Zone Rewards
@@ -2177,7 +2177,7 @@ app.L = {
 		[-10043] = select(1,GetCategoryInfo(15272)),							-- Dungeons
 		[-10044] = select(1,GetCategoryInfo(15271)),							-- Raids
 		[-10045] = select(1,GetCategoryInfo(15280)),							-- Currencies
-		[-10046] = select(1,GetCategoryInfo(15268)),							-- Promotions
+		
 		[-10047] = select(1,GetCategoryInfo(15274)),							-- Events
 		[-10048] = BROKENSHORE_BUILDING_MAGETOWER,								-- Mage Tower
 		[-10049] = BROKENSHORE_BUILDING_COMMANDCENTER,							-- Command Center
