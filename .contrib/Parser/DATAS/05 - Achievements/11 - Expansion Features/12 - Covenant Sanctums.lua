@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(-10055, {	-- Expansion Features
-		n(-10104, {	-- Covenant Sanctums
+		n(-900, {	-- Covenant Sanctum
 			n(-9955, {	-- General
 				-- These are available to all players regardless of covenant
 				ach(14835),		-- A Resolute Bond

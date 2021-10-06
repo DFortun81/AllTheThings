@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(-9969, {	-- Feats of Strength
-		n(-10046, {	-- Promotions
+		n(-31, {	-- Promotion
 			un(REMOVED_FROM_GAME, ach(415)),		-- Big Blizzard Bear
 			un(REMOVED_FROM_GAME, ach(11064)),		-- Collector's Edition: Baby Winston
 			un(REMOVED_FROM_GAME, ach(7842)),		-- Collector's Edition: Baneling
