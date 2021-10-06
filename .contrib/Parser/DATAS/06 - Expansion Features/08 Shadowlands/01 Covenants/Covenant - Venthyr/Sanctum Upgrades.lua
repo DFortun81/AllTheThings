@@ -2641,6 +2641,7 @@ _.HiddenQuestTriggers = {
 			q(59693),	-- triggered when using "Kyrian Arsenal"
 			q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 			q(61453),	-- triggered when using "Training Dummies" (181437)
+			q(61456),	-- triggered when using "Slippery Muck" (181440)
 
 		-- Misson Table
 			q(60635),	-- Unknown
