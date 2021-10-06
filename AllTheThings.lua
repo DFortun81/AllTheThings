@@ -4879,6 +4879,8 @@ local function SearchForRelativeItems(group, listing)
 		end
 	end
 end
+-- Returns the first found cached group for a given SourceID
+-- NOTE: Do not use this function when the results are being passed into an Update afterward
 local function SearchForSourceIDQuickly(sourceID)
 	if sourceID and sourceID > 0 and app:GetDataCache() then
 		local group = rawget(rawget(fieldCache, "s"),sourceID);
@@ -8763,7 +8765,7 @@ local fields = RawCloneData(itemFields);
 fields.key = function(t) return "s"; end;
 fields.collectible = itemFields.collectibleAsTransmog;
 fields.collected = itemFields.collectedAsTransmog;
-app.BaseItemSource = app.BaseObjectFields(fields);
+app.BaseItemSource = app.BaseObjectFields(fields, "BaseItemSource");
 
 app.CreateItemSource = function(sourceID, itemID, t)
 	t = setmetatable(constructor(sourceID, t, "s"), app.BaseItemSource);
@@ -12740,15 +12742,14 @@ function app:CreateMiniListForGroup(group)
 				local g = {};
 
 				-- Go through all of the shared appearances and see if we've "unlocked" any of them.
-				for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+				for _,otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 					-- If this isn't the source we already did work on and we haven't already completed it
 					if otherSourceID ~= group.s then
-						local attSearch = SearchForSourceIDQuickly(otherSourceID);
-						if attSearch then
-							attSearch = CloneData(attSearch);
-							attSearch.collectible = true;
-							attSearch.hideText = true;
-							tinsert(g, attSearch);
+						local shared = app.SearchForObject("s", otherSourceID);
+						if shared then
+							shared = CreateObject(shared);
+							shared.hideText = true;
+							tinsert(g, shared);
 						else
 							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 							if otherSourceInfo and (otherSourceInfo.quality or 0) > 1 then
@@ -12780,8 +12781,8 @@ function app:CreateMiniListForGroup(group)
 					};
 				end
 				-- add the group showing the Appearance information for this popout
-				if not group.g then group.g = { appearanceGroup }
-				else tinsert(group.g, appearanceGroup) end
+				if group.g then tinsert(group.g, appearanceGroup)
+				else group.g = { appearanceGroup } end
 			end
 
 			-- Determine if this source is part of a set or two.
@@ -12821,13 +12822,12 @@ function app:CreateMiniListForGroup(group)
 				for setID,value in pairs(data) do
 					g = {};
 					setID = tonumber(setID);
-					for i,sourceID in ipairs(allSets[setID]) do
-						local attSearch = SearchForSourceIDQuickly(sourceID);
-						if attSearch then
-							attSearch = CloneData(attSearch);
-							attSearch.collectible = true;
-							attSearch.hideText = true;
-							tinsert(g, attSearch);
+					for _,sourceID in ipairs(allSets[setID]) do
+						local search = app.SearchForObject("s", sourceID);
+						if search then
+							search = CreateObject(search);
+							search.hideText = true;
+							tinsert(g, search);
 						else
 							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 							if otherSourceInfo and (otherSourceInfo.quality or 0) > 1 then
@@ -14308,25 +14308,22 @@ RowOnEnter = function (self)
 			end
 		end
 
-		-- DEBUGGING
-		-- GameTooltip:AddDoubleLine("LUA .sourceParent Table ID",tostring(reference.sourceParent));
-		-- GameTooltip:AddDoubleLine("LUA .parent Table ID",tostring(reference.parent));
-		-- GameTooltip:AddDoubleLine("LUA Table ID",tostring(reference));
-		-- GameTooltip:AddDoubleLine(".sourceParent Text",tostring(reference.sourceParent and reference.sourceParent.text));
-		-- GameTooltip:AddDoubleLine(".parent Text",tostring(reference.parent and reference.parent.text));
+		-- ROW DEBUGGING
+		-- local fields = {
+		-- 	"__type",
+
+		-- 	"collectible",
+		-- 	"collected",
+		-- 	"collectibleAsCost",
+		-- 	"collectedAsCost",
+		-- 	"nmc",
+		-- 	"nmr",
+		-- };
+
+		-- for _,key in ipairs(fields) do
+		-- 	GameTooltip:AddDoubleLine(key,tostring(reference[key]));
+		-- end
 		-- GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
-		-- GameTooltip:AddDoubleLine("Completed AltQuest ID",tostring(reference.altcompleted));
-		-- GameTooltip:AddDoubleLine("Breadcrumb Locking QuestID",tostring(reference.breadcrumbLockedBy));
-		-- GameTooltip:AddDoubleLine("Completed All SourceQuests",tostring(reference.sourceQuestsCompleted));
-		-- GameTooltip:AddDoubleLine(".collectible",tostring(reference.collectible));
-		-- GameTooltip:AddDoubleLine(".collected",tostring(reference.collected));
-		-- GameTooltip:AddDoubleLine(".collectibleAsCost",tostring(reference.collectibleAsCost));
-		-- GameTooltip:AddDoubleLine(".collectedAsCost",tostring(reference.collectedAsCost));
-		-- GameTooltip:AddDoubleLine(".costTotal",tostring(reference.costTotal));
-		-- GameTooltip:AddDoubleLine(".costProgress",tostring(reference.costProgress));
-		-- GameTooltip:AddDoubleLine(".retries",tostring(reference.retries));
-		-- GameTooltip:AddDoubleLine(".__type",tostring(reference.__type));
-		-- GameTooltip:AddDoubleLine("#.costCollectibles",tostring(reference.costCollectibles and #reference.costCollectibles));
 
 		-- print("OnRowEnter-Show");
 		GameTooltip.MiscFieldsComplete = true;
