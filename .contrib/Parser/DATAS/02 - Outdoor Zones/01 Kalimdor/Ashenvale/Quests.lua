@@ -2811,7 +2811,7 @@ _.Zones =
 					},
 					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000", } },{
 						objective(1, {	-- 0/1 Logging Rope
-							["provider"] =  { "i", 16743 },	-- Logging Rope
+							["provider"] = { "i", 16743 },	-- Logging Rope
 						}),
 						objective(2, {	-- 0/1 Warsong Axe Shipment
 							["provider"] = { "i", 16745 },	-- Warsong Axe Shipment

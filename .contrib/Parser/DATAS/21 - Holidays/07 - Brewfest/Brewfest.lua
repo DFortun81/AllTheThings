@@ -1090,7 +1090,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["isYearly"] = true,
 					["groups"] = {
 						i(32912, {	-- Yellow Brewfest Stein
-							["timeline"] =  { "added 2.0.1", "removed 2.4.3" },
+							["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 						}),
 					},
 				}),
@@ -1113,7 +1113,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["isYearly"] = true,
 					["groups"] = {
 						i(32912, {	-- Yellow Brewfest Stein
-							["timeline"] =  { "added 2.0.1", "removed 2.4.3" },
+							["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 						}),
 					},
 				}),

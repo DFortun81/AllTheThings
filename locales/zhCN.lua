@@ -669,7 +669,7 @@ for key,value in pairs({
 		[-20] = "常规商人物品",										-- Common Vendor Items
 		--TODO: [-21] = "Captains",									-- Captains
 		--TODO: [-22] = "Secrets",									-- Secrets
-
+		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
 		[-40] = "绝版",												-- Legacy
 		--TODO: [-41] = "Cache of Madness",
 	-- Armor Types
@@ -706,7 +706,6 @@ for key,value in pairs({
 		[-132] = "菲拉斯 "..GetSpellInfo(133137),					-- Feralas Active
 		[-133] = "暮色森林 "..GetSpellInfo(78741),					-- Duskwood Activated
 	-- Class Trial Sets
-		[-140] = "共济",												-- Communal
 		[-141] = "邪魂",												-- Felsoul
 		[-142] = "摧心",												-- Heart-Lesion
 		[-143] = "浅酌者",											-- Lightdrinker
@@ -836,7 +835,6 @@ for key,value in pairs({
 		--TODO: [-859] = "Rank 2",									-- Rank 2
 		--TODO: [-860] = "Rank 3",									-- Rank 3
 		--TODO: [-861] = "Rank 4",									-- Rank 4
-
 	-- Shadowlands Header
 		[-903] = "区域奖励",											-- Zone Rewards
 		[-906] = "等级 1: 战术洞察",									-- Tier 1: Tactical Insight
