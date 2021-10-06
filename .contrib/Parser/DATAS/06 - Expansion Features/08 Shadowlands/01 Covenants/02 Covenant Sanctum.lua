@@ -324,4 +324,5 @@ _.HiddenQuestTriggers = {
 
 	-- RENOWN TRIGGERS
 	q(64082),	-- Renown 73 (WQ Reward increase)
+	q(64069),	-- Renown 75 (WQ Reward increase)
 };
