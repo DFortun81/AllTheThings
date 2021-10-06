@@ -682,11 +682,8 @@ for key,value in pairs({
 		--TODO: [-163] = RESISTANCE0_NAME,							-- Armor
 		--TODO: [-165] = GetItemSubClassInfo(13,1),
 		--TODO: [-168] = FACTION_OTHER .. " " ..QUESTS_LABEL,		-- Other Quests
-		--TODO: [-171] = "Quest Chains",
-
 		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
 		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
-		--TODO: [-214] = GetSpellInfo(262061).." "..HOME,			-- Nightborne Home
 		--TODO: [-217] = "Lures",									-- Lures (for Fishing)
 		--TODO: [-218] = "Coastal",									-- Coastal (for Fishing)
 		--TODO: [-224] = "Illidari",								-- Illidari
@@ -694,24 +691,19 @@ for key,value in pairs({
 		--TODO: [-242] = "Unrated",									-- Unrated
 		--TODO: [-243] = "Bounty",									-- Bounty
 		[-254] = "Verbündete Völker & Traditionsrüstung",			-- Allied Races & Heritage
-	-- Other
 		--TODO: [-356] = "Assault on the Dark Portal",
 		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower
 		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
-		--TODO: [-366] = WEAPON.." "..WARDROBE_SETS,				-- Weapons Sets
 	-- Dungeon/Raid Wing Info
 		--TODO: [-379] = "Junkyard",								-- Junkyard
 		--TODO: [-393] = "Storming the Citadel",					-- Storming the Citadel
 		--TODO: [-394] = "The Plagueworks",							-- The Plagueworks
 		--TODO: [-397] = "Outposts",								-- Outposts
 		--TODO: [-420] = "Tier 0.5 Sets",							-- Tier 0.5 Sets
-	-- Blizzard Events and Anniversaries
-	-- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		--TODO: [-488] = "War Chest",								-- Daily War Chest
 		--TODO: [-491] = "Tarot Cards",
-
+	-- Blizzard Events and Anniversaries
 		--TODO: [-520] = "Expansion Pre-Launch",
-		--TODO: [-521] = EXPANSION_NAME1..": Dark Portal Opens",
 		--TODO: [-522] = EXPANSION_NAME2..": Zombie Infestation",
 		--TODO: [-523] = EXPANSION_NAME3..": Elemental Unrest",
 		--TODO: [-525] = EXPANSION_NAME5..": Iron Horde Incursion",
@@ -809,7 +801,6 @@ for key,value in pairs({
 		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": Strahlender Strom",	-- Tier 3: Flowing Power
 		[-977] = "Maelie die Wanderin",								-- Maelie the Wanderer
 		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
-		--TODO: [-980] = "Shared Treasures",						-- Shared Treasures
 
 		-- SL Maldraxxus/Necrolord
 			--TODO: [-921] = "Sanctum Upgrades",					-- Sanctum Upgrades (Necrolord)
@@ -867,7 +858,6 @@ for key,value in pairs({
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
 
-			--TODO: [-976] = "Korthian Sets",						-- Korthian Sets
 			--TODO: [-1001] = "The Black Vault",
 
 	-- Warrior order hall lore items

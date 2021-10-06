@@ -664,11 +664,8 @@ for key,value in pairs({
 		[-163] = "Доспехи",											-- Armor
 		[-165] = "Сундучки",
 		[-168] = "Другие Задания",									-- Other Quests
-		[-171] = "Цепочки заданий",
-
 		[-211] = "Новый персонаж",									-- New Character
 		[-212] = "Сундук с сокровищами",							-- Treasure Chest
-		[-214] = "Дом Ночнорожденных",								-- Nightborne Home
 		[-217] = "Наживки",											-- Lures (for Fishing)
 		[-218] = "Побережье",										-- Coastal (for Fishing)
 		[-224] = "Иллидари",										-- Illidari
@@ -676,24 +673,19 @@ for key,value in pairs({
 		[-242] = "Нерейтинговые",									-- Unrated
 		[-243] = "Премия",											-- Bounty
 		[-254] = "Союзные расы & Традиционные доспехи",				-- Allied Races & Heritage
-	-- Other
 		[-356] = "Атака на Темный портал",
 		[-361] = "Артиллерийная башня",								-- Artillery Tower
 		[-364] = "Легендарные предметы",							-- Legendaries
-		[-366] = "Наборы оружия",									-- Weapons Sets
 	-- Dungeon/Raid Wing Info
 		[-379] = "Свалка",											-- Junkyard
 		[-393] = "Штурм цитадели",									-- Storming the Citadel
 		[-394] = "Чумодельня",										-- The Plagueworks
 		[-397] = "Аванпосты",										-- Outposts
 		[-420] = "Комплекты T0.5",									-- Tier 0.5 Sets
-	-- Blizzard Events and Anniversaries
-	-- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "Трофейный сундук",								-- Daily War Chest
 		[-491] = "Карты таро",
-
+	-- Blizzard Events and Anniversaries
 		[-520] = "Препатч",
-		[-521] = "Burning Crusade: Открытие Темного портала",
 		[-522] = "Wrath of the Lich King: Нашествие зомби",
 		[-523] = "Cataclysm: Бейство элементалей",
 		[-525] = "Warlords of Draenor: Вторжение Железной Орды",
@@ -791,7 +783,6 @@ for key,value in pairs({
 		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": Текущая энергия",	-- Tier 3: Flowing Power
 		[-977] = "Маэли Странница",									-- Maelie the Wanderer
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
-		[-980] = "Общие Сокровища",									-- Shared Treasures
 
 		-- SL Maldraxxus/Necrolord
 			[-921] = "Улучшения для Обители",						-- Sanctum Upgrades (Necrolord)
@@ -849,7 +840,6 @@ for key,value in pairs({
 			[-970] = "Набор C",										-- Set C
 			[-971] = "Набор D",										-- Set D
 
-			[-976] = "Комплекты Кортии",							-- Korthian Sets
 			[-1001] = "Черный ящик",
 
 	-- Warrior order hall lore items TODO: localize

@@ -943,7 +943,6 @@ app.L = {
 		[-168] = "Interface\\Icons\\Achievement_Quests_Completed_04",						-- Other Quests
 		[-169] = app.asset("Interface_Emissary_Callings"),								    -- Emissary Quests
 		[-170] = "Interface\\Icons\\spell_shaman_maelstromweapon",							-- Balance of Power
-
 		[-173] = "Interface\\Icons\\spell_holy_borrowedtime",								-- Timewalking
 		[-174] = "Interface\\Icons\\INV_DARKMOON_EYE",										-- Darkmoon Faire
 		[-176] = 3753381,																	-- Weekly Holidays
@@ -959,11 +958,9 @@ app.L = {
 		[-202] = "Interface\\Icons\\ClassIcon_Paladin",										-- Paladin
 		[-203] = "Interface\\Icons\\ClassIcon_Warrior",										-- Warrior
 		[-204] = "Interface\\Icons\\ClassIcon_DeathKnight",									-- Death Knight
-
 		[-211] = 1530081,																	-- New Characters
 		[-212] = app.asset("Interface_Tchest"),									            -- Treasure Chest
 		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",								-- The Underbelly
-
 		[-215] = "Interface\\Icons\\INV_Pet_Naaru",											-- Vindicaar
 		[-216] = "Interface\\Icons\\ability_rogue_combatreadiness",							-- Prestige
 		[-217] = "Interface\\Icons\\INV_Fishing_Lure_Worm",									-- Lures (for Fishing)
@@ -975,7 +972,6 @@ app.L = {
 		[-223] = "Interface\\Icons\\achievement_quests_completed_daily_07",					-- Daily
 		[-224] = "Interface\\Icons\\ClassIcon_DemonHunter",									-- Demon Hunter
 		[-225] = "Interface\\Icons\\spell_lightning_lightningbolt01",						-- Elemental Bonds
-
 		[-227] = "Interface\\ICONS\\spell_holy_divinepurpose",								-- Victory
 		[-228] = app.asset("Category_FlightPaths"),											-- Flight Paths
 		[-231] = "Interface\\Icons\\Spell_Shadow_DeathScream",
@@ -1031,7 +1027,6 @@ app.L = {
 		[-363] = "Interface\\Icons\\achievement_reputation_argentchampion",					-- The Argent Tournament
 		[-364] = 236215,																	-- Legendaries
 		[-365] = 135360,																	-- Heirlooms
-
 		[-367] = "Interface\\Icons\\ability_rogue_deviouspoisons",							-- The Construct Quarter
 		[-368] = "Interface\\Icons\\inv_trinket_naxxramas04",								-- The Arachnid Quarter
 		[-369] = "Interface\\Icons\\spell_deathknight_classicon",							-- The Military Quarter
@@ -1592,15 +1587,12 @@ app.L = {
 		[-168] = FACTION_OTHER .. " " ..QUESTS_LABEL,							-- Other Quests
 		[-169] = BOUNTY_BOARD_LOCKED_TITLE,										-- Emissary Quests
 		[-170] = GetSpellInfo(41341),											-- Balance of Power
-		
 		[-173] = PLAYER_DIFFICULTY_TIMEWALKER,									-- Timewalking
 		[-174] = CALENDAR_FILTER_DARKMOON,										-- Darkmoon Faire
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
-
 		[-211] = NEW.." "..CHARACTER,											-- New Character
 		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest
 		[-213] = DUNGEON_FLOOR_DALARAN2,										-- The Underbelly
-
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
 		[-217] = "Lures",														-- Lures (for Fishing)
 		[-218] = "Coastal",														-- Coastal (for Fishing)
@@ -1608,7 +1600,6 @@ app.L = {
 		[-221] = TRACKER_HEADER_BONUS_OBJECTIVES,								-- Bonus Objectives
 		[-222] = select(2, GetAchievementInfo(9726)),							-- Treasure Hunter
 		[-224] = "Illidari",													-- Illidari
-
 		[-227] = GetSpellInfo(109382),											-- Victory
 		[-228] = GetSpellInfo(218950),											-- Flight Path
 		[-229] = CALENDAR_REPEAT_WEEKLY,										-- Weekly
@@ -1623,7 +1614,6 @@ app.L = {
 		[-247] = select(2, GetAchievementInfo(7997)),							-- Riches of Pandaria
 		[-253] = C_Map.GetAreaInfo(9664),										-- War Campaign - Horde
 		[-254] = "Allied Races & Heritage",										-- Allied Races & Heritage
--- Other
 		[-297] = MINIMAP_TRACKING_MAILBOX,										-- Mailbox
 		[-299] = GARRISON_MISSIONS,												-- Missions
 		[-302] = BATTLEFIELD_LEVEL.." 80-84",									-- Level Range 80-84
@@ -1671,7 +1661,6 @@ app.L = {
 		[-363] = select(1,GetCategoryInfo(14941)),								-- The Argent Tournament
 		[-364] = LOOT_JOURNAL_LEGENDARIES,										-- Legendaries
 		[-365] = HEIRLOOMS,														-- Heirlooms
-
 -- Dungeon/Raid Wing Info
 		[-367] = DUNGEON_FLOOR_NAXXRAMAS1,										-- The Construct Quarter
 		[-368] = DUNGEON_FLOOR_NAXXRAMAS2,										-- The Arachnid Quarter
@@ -1697,17 +1686,14 @@ app.L = {
 		[-396] = C_Map.GetAreaInfo(7932),										-- The Frostwing Halls
 		[-397] = "Outposts",													-- Outposts
 		[-420] = "Tier 0.5 Sets",												-- Tier 0.5 Sets
--- Blizzard Events and Anniversaries
 		[-488] = "War Chest",													-- Daily War Chest
 		[-491] = "Tarot Cards",
 		[-494] = MAC_OPTIONS_MISC, 												-- Miscellaneous
 		[-496] = DUNGEON_FLOOR_DEEPRUNTRAM2,									-- Bizmo's Brawlpub
 		[-498] = C_Map.GetAreaInfo(7576),										-- Twisting Nether (Demon Hunter Order Hall advancement)
-	
 		[-517] = GetSpellInfo(265225),											-- Mole Machine
-
+	-- Blizzard Events and Anniversaries
 		[-520] = "Expansion Pre-Launch",
-		
 		[-522] = EXPANSION_NAME2..": Zombie Infestation",
 		[-523] = EXPANSION_NAME3..": Elemental Unrest",
 		[-525] = EXPANSION_NAME5..": Iron Horde Incursion",
@@ -1982,8 +1968,6 @@ app.L = {
 		[-985] = select(2, GetAchievementInfo(14483)),							-- Coldheart Interstitia
 		[-986] = select(2, GetAchievementInfo(14488)),							-- Mort'regar
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
-
-
 
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",

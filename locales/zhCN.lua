@@ -725,11 +725,8 @@ for key,value in pairs({
 		--TODO: [-163] = RESISTANCE0_NAME,							-- Armor
 		--TODO: [-165] = GetItemSubClassInfo(13,1),
 		[-168] = FACTION_OTHER .. QUESTS_LABEL,						-- Other Quests
-		[-171] = "任务线",											-- Quest Chains
-
 		[-211] = NEW .. CHARACTER,									-- New Character 新建角色
 		[-212] = "宝箱",												-- Treasure Chest
-		[-214] = "夜之子",											-- Nightborne Home
 		--TODO: [-217] = "Lures",									-- Lures (for Fishing)
 		[-218] = "鱼饵",												-- Coastal (for Fishing)
 		[-224] = "伊利达雷",											-- Illidari
@@ -737,24 +734,19 @@ for key,value in pairs({
 		--TODO: [-242] = "Unrated",									-- Unrated
 		[-243] = "赏金任务",											-- Bounty
 		[-254] = "同盟种族 & 传承护甲",										-- Allied Races & Heritage
-	-- Other
 		[-356] = "进攻黑暗之门",										-- Assault on the Dark Portal
 		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower
 		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
-		[-366] = "武器系列",											-- Weapons Sets
 	-- Dungeon/Raid Wing Info
 		[-379] = "垃圾场",											-- Junkyard
 		[-393] = "进攻堡垒",											-- Storming the Citadel
 		[-394] = "天灾工厂",											-- The Plagueworks
 		--TODO: [-397] = "Outposts",								-- Outposts
 		--TODO: [-420] = "Tier 0.5 Sets",							-- Tier 0.5 Sets
-	-- Blizzard Events and Anniversaries
-	-- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "战争宝箱",											-- Daily War Chest
 		[-491] = "塔罗牌",											-- Tarot Cards
-
+	-- Blizzard Events and Anniversaries
 		[-520] = "资料片前夕",										-- Expansion Pre-Launch
-		[-521] = "燃烧的远征：Dark Portal Opens",					-- 这些谁知道官翻？
 		[-522] = "巫妖王之怒：Zombie Infestation",					-- Wrath of the Lich King: Zombie Infestation
 		[-523] = "大地的裂变：Elemental Unrest",						-- Cataclysm: Elemental Unrest
 		[-525] = "德拉诺之王：Iron Horde Incursion",					-- Warlords of Draenor: Iron Horde Incursion
@@ -861,7 +853,6 @@ for key,value in pairs({
 		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": 流动能量",	-- Tier 3: Flowing Power
 		[-977] = "游荡者梅莉",											-- Maelie the Wanderer
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
-		--TODO: [-980] = "Shared Treasures",						-- Shared Treasures
 
 		-- SL Maldraxxus/Necrolord
 			--TODO: [-921] = "Sanctum Upgrades",					-- Sanctum Upgrades (Necrolord)
@@ -919,7 +910,6 @@ for key,value in pairs({
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
 
-			--TODO: [-976] = "Korthian Sets",						-- Korthian Sets
 			--TODO: [-1001] = "The Black Vault",
 
 	-- Warrior order hall lore items
