@@ -1870,7 +1870,7 @@ app.L = {
 		[-862] = GetSpellInfo(275825),											-- Heart of Azeroth
 
 	-- Shadowlands Header
-		[-900] =  select(1,GetCategoryInfo(15441)),								-- Covenant Sanctums
+		[-900] = select(1,GetCategoryInfo(15441)),								-- Covenant Sanctums
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
 		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
 		[-903] = "Zone Rewards",												-- Zone Rewards
