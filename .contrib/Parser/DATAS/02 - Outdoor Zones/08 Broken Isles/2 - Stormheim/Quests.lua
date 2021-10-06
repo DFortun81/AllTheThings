@@ -1078,7 +1078,6 @@ _.Zones =
 				q(46110),	-- Battle for Stormheim
 				q(40857),	-- Bits and Pieces
 				q(40867),	-- Bubble Baubles
-				q(41788),	-- Coercing a Confession
 				q(40540),	-- Come at Me, Brul
 				q(41169),	-- Darkheart Thicket: Through the Fog
 				q(47767),	-- Death Metal Knight
@@ -1090,7 +1089,6 @@ _.Zones =
 				q(40543),	-- Eyes of Nashal
 				q(45527),	-- Eyir's Forgiveness
 				q(41167),	-- Fel Fragments
-				q(41785),	-- Finding Fizzlebang
 				q(41158),	-- Fragments of the Fjords
 				q(38607),	-- Gates of Valhallas
 				q(38670),	-- Goredome 2
@@ -1103,7 +1101,6 @@ _.Zones =
 				q(40166),	-- Leying with Murlocs
 				q(38785),	-- Living Leystone Sample
 				q(38774),	-- Lost Ettin
-				q(41793),	-- Lulubelle on Loan
 				q(38422),	-- Makrura Wave Event
 				q(42735),	-- Malace in Vrykul Land
 				q(40613),	-- Maw of Souls: Retrieving the Svalnguard
@@ -1122,7 +1119,6 @@ _.Zones =
 				q(40603),	-- Seeking the Valkyra
 				q(40146),	-- Seymour and Agnes
 				q(40404),	-- Show Legion Portal
-				q(41787),	-- Someone Else's Mess
 				q(40131),	-- Stonehide Leather Sample
 				q(41163),	-- The Apocalypse Bringer
 				q(40541),	-- The Charge Within
