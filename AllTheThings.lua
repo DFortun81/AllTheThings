@@ -5446,11 +5446,10 @@ local function RefreshAppearanceSources()
 	if not app.Settings:Get("Completionist") then
 		-- print("Unique Refresh")
 		for s=1,app.MaxSourceID do
-			if not rawget(collectedSources, s) then
-				_cache = C_TransmogCollection_GetSourceInfo(s);
-				if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
-					rawset(collectedSources, s, 2);
-				end
+			-- for each known source
+			if rawget(collectedSources, s) == 1 then
+				-- collect shared visual sources
+				app.MarkUniqueCollectedSourcesBySource(s);
 			end
 		end
 		-- print("Unique Refresh done")
@@ -11709,6 +11708,89 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 			end
 		end
 		return false;
+	end
+end
+-- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
+function app.MarkUniqueCollectedSourcesBySource(knownSourceID)
+	-- Find this source in ATT
+	local knownItem = SearchForSourceIDQuickly(knownSourceID);
+	if knownItem then
+		local knownSource = C_TransmogCollection_GetSourceInfo(knownSourceID);
+		local acctSources = ATTAccountWideData.Sources;
+		local checkItem, checkSource, valid;
+		local knownRaces, knownClasses, knownFaction = knownItem.races, knownItem.c, knownItem.r;
+		-- For each shared Visual SourceID
+		for _,sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID)) do
+			-- If it is not currently marked collected on the account
+			if not rawget(acctSources, sourceID) then
+				-- Find the check Source in ATT
+				checkItem = SearchForSourceIDQuickly(sourceID);
+				if checkItem then
+					-- filter matches or one item is Cosmetic
+					if checkItem.f == knownItem.f or checkItem.f == 2 or knownItem.f == 2 then
+						valid = true;
+						-- verify all possible restrictions that the known source may have against restrictions on the source in question
+						-- if known source has no equivalent restrictions, then restrictions on the source are irrelevant
+						-- Races
+						if knownRaces then
+							if checkItem.races then
+								-- the known source has a race restriction that is not shared by the source in question
+								if not containsAny(checkItem.races, knownRaces) then valid = nil; end
+							else
+								valid = nil;
+							end
+						end
+						-- Classes
+						if valid and knownClasses then
+							if checkItem.c then
+								-- the known source has a class restriction that is not shared by the source in question
+								if not containsAny(checkItem.c, knownClasses) then valid = nil; end
+							else
+								valid = nil;
+							end
+						end
+						-- Faction
+						if valid and knownFaction then
+							if checkItem.r then
+								-- the known source has a faction restriction that is not shared by the source or source races in question
+								if knownFaction ~= checkItem.r or (checkItem.races and not containsAny(app.FACTION_RACES[knownFaction], checkItem.races)) then valid = nil; end
+							else
+								valid = nil;
+							end
+						end
+
+						-- found a known item which meets all the criteria to grant credit for the source in question
+						if valid then
+							checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
+							-- both sources are the same category (Equip-Type)
+							if knownSource.categoryID == checkSource.categoryID
+								-- and same Inventory Type
+								and (knownSource.invType == checkSource.invType
+									or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
+									or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
+							then
+								rawset(acctSources, sourceID, 2);
+							-- else print("sources share visual and filters but different equips",item.s,sourceID)
+							end
+						end
+					end
+				else
+					-- OH NOES! It doesn't exist!
+					checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
+					-- both sources are the same category (Equip-Type)
+					if checkSource.categoryID == knownSource.categoryID
+						-- and same Inventory Type
+						and (checkSource.invType == knownSource.invType
+							or knownSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
+							or app.SlotByInventoryType[checkSource.invType] == app.SlotByInventoryType[knownSource.invType])
+					then
+						-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
+						rawset(acctSources, sourceID, 2);
+					-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
+					end
+				end
+			end
+		end
 	end
 end
 function app.FilterItemTrackable(group)
