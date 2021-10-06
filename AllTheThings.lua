@@ -5445,11 +5445,12 @@ local function RefreshAppearanceSources()
 	-- Additionally, for Unique Mode we can grant collection of Appearances which match the Visual of explicitly known SourceIDs if other criteria (Race/Faction/Class) match as well using ATT info
 	if not app.Settings:Get("Completionist") then
 		-- print("Unique Refresh")
+		local currentCharacterOnly = app.Settings:Get("MainOnly");
 		for s=1,app.MaxSourceID do
 			-- for each known source
 			if rawget(collectedSources, s) == 1 then
 				-- collect shared visual sources
-				app.MarkUniqueCollectedSourcesBySource(s);
+				app.MarkUniqueCollectedSourcesBySource(s, currentCharacterOnly);
 			end
 		end
 		-- print("Unique Refresh done")
@@ -11711,7 +11712,7 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 	end
 end
 -- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
-function app.MarkUniqueCollectedSourcesBySource(knownSourceID)
+function app.MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly)
 	-- Find this source in ATT
 	local knownItem = SearchForSourceIDQuickly(knownSourceID);
 	if knownItem then
@@ -11728,49 +11729,54 @@ function app.MarkUniqueCollectedSourcesBySource(knownSourceID)
 				if checkItem then
 					-- filter matches or one item is Cosmetic
 					if checkItem.f == knownItem.f or checkItem.f == 2 or knownItem.f == 2 then
-						valid = true;
-						-- verify all possible restrictions that the known source may have against restrictions on the source in question
-						-- if known source has no equivalent restrictions, then restrictions on the source are irrelevant
-						-- Races
-						if knownRaces then
-							if checkItem.races then
-								-- the known source has a race restriction that is not shared by the source in question
-								if not containsAny(checkItem.races, knownRaces) then valid = nil; end
-							else
-								valid = nil;
+						-- for current character only, all we care is that the checkItem is not exclusive to another race/class to consider it 'collected'
+						if currentCharacterOnly and not checkItem.nmc and not checkItem.nmr then
+							rawset(acctSources, sourceID, 2);
+						else
+							valid = true;
+							-- verify all possible restrictions that the known source may have against restrictions on the source in question
+							-- if known source has no equivalent restrictions, then restrictions on the source are irrelevant
+							-- Races
+							if knownRaces then
+								if checkItem.races then
+									-- the known source has a race restriction that is not shared by the source in question
+									if not containsAny(checkItem.races, knownRaces) then valid = nil; end
+								else
+									valid = nil;
+								end
 							end
-						end
-						-- Classes
-						if valid and knownClasses then
-							if checkItem.c then
-								-- the known source has a class restriction that is not shared by the source in question
-								if not containsAny(checkItem.c, knownClasses) then valid = nil; end
-							else
-								valid = nil;
+							-- Classes
+							if valid and knownClasses then
+								if checkItem.c then
+									-- the known source has a class restriction that is not shared by the source in question
+									if not containsAny(checkItem.c, knownClasses) then valid = nil; end
+								else
+									valid = nil;
+								end
 							end
-						end
-						-- Faction
-						if valid and knownFaction then
-							if checkItem.r then
-								-- the known source has a faction restriction that is not shared by the source or source races in question
-								if knownFaction ~= checkItem.r or (checkItem.races and not containsAny(app.FACTION_RACES[knownFaction], checkItem.races)) then valid = nil; end
-							else
-								valid = nil;
+							-- Faction
+							if valid and knownFaction then
+								if checkItem.r then
+									-- the known source has a faction restriction that is not shared by the source or source races in question
+									if knownFaction ~= checkItem.r or (checkItem.races and not containsAny(app.FACTION_RACES[knownFaction], checkItem.races)) then valid = nil; end
+								else
+									valid = nil;
+								end
 							end
-						end
 
-						-- found a known item which meets all the criteria to grant credit for the source in question
-						if valid then
-							checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							-- both sources are the same category (Equip-Type)
-							if knownSource.categoryID == checkSource.categoryID
-								-- and same Inventory Type
-								and (knownSource.invType == checkSource.invType
-									or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
-									or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
-							then
-								rawset(acctSources, sourceID, 2);
-							-- else print("sources share visual and filters but different equips",item.s,sourceID)
+							-- found a known item which meets all the criteria to grant credit for the source in question
+							if valid then
+								checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
+								-- both sources are the same category (Equip-Type)
+								if knownSource.categoryID == checkSource.categoryID
+									-- and same Inventory Type
+									and (knownSource.invType == checkSource.invType
+										or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
+										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
+								then
+									rawset(acctSources, sourceID, 2);
+								-- else print("sources share visual and filters but different equips",item.s,sourceID)
+								end
 							end
 						end
 					end
