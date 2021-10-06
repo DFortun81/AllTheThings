@@ -94,21 +94,18 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(140590, {	-- Large Crate of Salvage
-								n(-140, {	-- Communal
-									["classes"] = { PRIEST },
-									["g"] = {
-										i(119689),	-- Communal Bindings
-										i(119682),	-- Communal Boots
-										i(119684),	-- Communal Cowl
-										i(119683),	-- Communal Gloves
-										i(119687),	-- Communal Mantle
-										i(119685),	-- Communal Pants
-										i(119686),	-- Communal Robe
-										i(119688),	-- Communal Sash
-										i(119680),	-- Communal Staff
-										i(119690),	-- Communal Stave
-										i(119665),	-- Communal Wand
-									},
+								cl(PRIEST, {
+									i(119689),	-- Communal Bindings
+									i(119682),	-- Communal Boots
+									i(119684),	-- Communal Cowl
+									i(119683),	-- Communal Gloves
+									i(119687),	-- Communal Mantle
+									i(119685),	-- Communal Pants
+									i(119686),	-- Communal Robe
+									i(119688),	-- Communal Sash
+									i(119680),	-- Communal Staff
+									i(119690),	-- Communal Stave
+									i(119665),	-- Communal Wand
 								}),
 								n(-141, {	-- Felsoul
 									["classes"] = { WARLOCK },

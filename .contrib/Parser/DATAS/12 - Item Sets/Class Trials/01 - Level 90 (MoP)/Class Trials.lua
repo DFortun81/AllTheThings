@@ -11,45 +11,42 @@ _.GearSets =
 			["lvl"] = 90,
 			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 				n(-9980, {	-- Mists of Pandaria. This gear was awarded if you used your Lv90 boost before 6.0.1
-					n(-140, {	-- Communal
-						["classes"] = { PRIEST },
-						["groups"] = {
-							i(101172),	-- Communal Wand
-							n(-9915, {	-- Disc / Holy
-								i(101187),	-- Communal Staff
-								i(101176),	-- Communal Hood
-								i(101178),	-- Communal Necklace
-								i(101173),	-- Communal Cloak of Wisdom
-								i(101184),	-- Communal Shoulderpads
-								i(101182),	-- Communal Vestments
-								i(101186),	-- Communal Wristwraps
-								i(101175),	-- Communal Handwraps
-								i(101185),	-- Communal Cord
-								i(101177),	-- Communal Leggings
-								i(101174),	-- Communal Sandals
-								i(101180),	-- Communal Band of Wisdom
-								i(101181),	-- Communal Ring of Wisdom
-								i(101179),	-- Communal Idol of Wisdom
-								i(101183),	-- Communal Stone of Wisdom
-							}),
-							n(-9917, {	-- Shadow
-								i(101197),	-- Communal Stave
-								i(101191),	-- Communal Cowl
-								i(101167),	-- Communal Medallion
-								i(101188),	-- Communal Cloak of Destruction
-								i(101194),	-- Communal Mantle
-								i(101193),	-- Communal Robe
-								i(101196),	-- Communal Bindings
-								i(101190),	-- Communal Gloves
-								i(101195),	-- Communal Sash
-								i(101192),	-- Communal Pants
-								i(101189),	-- Communal Boots
-								i(101169),	-- Communal Band of Destruction
-								i(101170),	-- Communal Ring of Destruction
-								i(101168),	-- Communal Idol of Destruction
-								i(101171),	-- Communal Stone of Destruction
-							}),
-						},
+					cl(PRIEST, {
+						i(101172),	-- Communal Wand
+						n(-9915, {	-- Disc / Holy
+							i(101187),	-- Communal Staff
+							i(101176),	-- Communal Hood
+							i(101178),	-- Communal Necklace
+							i(101173),	-- Communal Cloak of Wisdom
+							i(101184),	-- Communal Shoulderpads
+							i(101182),	-- Communal Vestments
+							i(101186),	-- Communal Wristwraps
+							i(101175),	-- Communal Handwraps
+							i(101185),	-- Communal Cord
+							i(101177),	-- Communal Leggings
+							i(101174),	-- Communal Sandals
+							i(101180),	-- Communal Band of Wisdom
+							i(101181),	-- Communal Ring of Wisdom
+							i(101179),	-- Communal Idol of Wisdom
+							i(101183),	-- Communal Stone of Wisdom
+						}),
+						n(-9917, {	-- Shadow
+							i(101197),	-- Communal Stave
+							i(101191),	-- Communal Cowl
+							i(101167),	-- Communal Medallion
+							i(101188),	-- Communal Cloak of Destruction
+							i(101194),	-- Communal Mantle
+							i(101193),	-- Communal Robe
+							i(101196),	-- Communal Bindings
+							i(101190),	-- Communal Gloves
+							i(101195),	-- Communal Sash
+							i(101192),	-- Communal Pants
+							i(101189),	-- Communal Boots
+							i(101169),	-- Communal Band of Destruction
+							i(101170),	-- Communal Ring of Destruction
+							i(101168),	-- Communal Idol of Destruction
+							i(101171),	-- Communal Stone of Destruction
+						}),
 					}),
 					n(-145, {	-- Mountainsage
 						["classes"] = { MAGE },
@@ -437,45 +434,42 @@ _.GearSets =
 					}),
 				}),
 				n(-9981, {	-- Warlords of Draenor. This gear is awarded if you use your lv90 boost after 6.0.1
-					n(-140, {	-- Communal
-						["classes"] = { PRIEST },
-						["groups"] = {
-							n(-9915, {	-- Disc / Holy
-								i(117230),	-- Communal Staff
-								i(117219),	-- Communal Hood
-								i(117221),	-- Communal Necklace
-								i(117216),	-- Communal Cloak of Wisdom
-								i(117227),	-- Communal Shoulderpads
-								i(117225),	-- Communal Vestments
-								i(117229),	-- Communal Wristwraps
-								i(117218),	-- Communal Handwraps
-								i(117228),	-- Communal Cord
-								i(117220),	-- Communal Leggings
-								i(117217),	-- Communal Sandals
-								i(117223),	-- Communal Band of Wisdom
-								i(117224),	-- Communal Ring of Wisdom
-								i(117222),	-- Communal Idol of Wisdom
-								i(117226),	-- Communal Stone of Wisdom
-							}),
-							n(-9917, {	-- Shadow
-								i(117240),	-- Communal Stave
-								i(117215),	-- Communal Wand
-								i(117234),	-- Communal Cowl
-								i(117210),	-- Communal Medallion
-								i(117231),	-- Communal Cloak of Destruction
-								i(117237),	-- Communal Mantle
-								i(117236),	-- Communal Robe
-								i(117239),	-- Communal Bindings
-								i(117233),	-- Communal Gloves
-								i(117238),	-- Communal Sash
-								i(117235),	-- Communal Pants
-								i(117232),	-- Communal Boots
-								i(117212),	-- Communal Band of Destruction
-								i(117213),	-- Communal Ring of Destruction
-								i(117211),	-- Communal Idol of Destruction
-								i(117214),	-- Communal Stone of Destruction
-							}),
-						},
+					cl(PRIEST, {
+						n(-9915, {	-- Disc / Holy
+							i(117230),	-- Communal Staff
+							i(117219),	-- Communal Hood
+							i(117221),	-- Communal Necklace
+							i(117216),	-- Communal Cloak of Wisdom
+							i(117227),	-- Communal Shoulderpads
+							i(117225),	-- Communal Vestments
+							i(117229),	-- Communal Wristwraps
+							i(117218),	-- Communal Handwraps
+							i(117228),	-- Communal Cord
+							i(117220),	-- Communal Leggings
+							i(117217),	-- Communal Sandals
+							i(117223),	-- Communal Band of Wisdom
+							i(117224),	-- Communal Ring of Wisdom
+							i(117222),	-- Communal Idol of Wisdom
+							i(117226),	-- Communal Stone of Wisdom
+						}),
+						n(-9917, {	-- Shadow
+							i(117240),	-- Communal Stave
+							i(117215),	-- Communal Wand
+							i(117234),	-- Communal Cowl
+							i(117210),	-- Communal Medallion
+							i(117231),	-- Communal Cloak of Destruction
+							i(117237),	-- Communal Mantle
+							i(117236),	-- Communal Robe
+							i(117239),	-- Communal Bindings
+							i(117233),	-- Communal Gloves
+							i(117238),	-- Communal Sash
+							i(117235),	-- Communal Pants
+							i(117232),	-- Communal Boots
+							i(117212),	-- Communal Band of Destruction
+							i(117213),	-- Communal Ring of Destruction
+							i(117211),	-- Communal Idol of Destruction
+							i(117214),	-- Communal Stone of Destruction
+						}),
 					}),
 					n(-145, {	-- Mountainsage
 						["classes"] = { MAGE },
@@ -873,31 +867,28 @@ _.GearSets =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9981, {	-- Draenor
 		n(-5350, {	-- Class Trial Item Sets
-			n(-140, {	-- Communal
-				["classes"] = { PRIEST },
-				["groups"] = {
-					-- added 6.0.2/No Info
-					i(119667),	-- Communal Sandals
-					i(119668),	-- Communal Handwraps
-					i(119669),	-- Communal Hood
-					i(119670),	-- Communal Leggings
-					i(119675),	-- Communal Vestments
-					i(119677),	-- Communal Shoulderpads
-					i(119678),	-- Communal Cord
-					i(119679),	-- Communal Wristwraps
-					i(119661),	-- Communal Idol of Destruction
-					i(119664),	-- Communal Stone of Destruction
-					i(119672),	-- Communal Idol of Wisdom
-					i(119676),	-- Communal Stone of Wisdom
-					i(119666),	-- Communal Cloak of Wisdom
-					i(119681),	-- Communal Cloak of Destruction
-					i(119660),	-- Communal Medallion
-					i(119671),	-- Communal Necklace
-					i(119662),	-- Communal Band of Destruction
-					i(119663),	-- Communal Ring of Destruction
-					i(119673),	-- Communal Band of Wisdom
-					i(119674),	-- Communal Ring of Wisdom
-				},
+			cl(PRIEST, {
+				-- added 6.0.2/No Info
+				i(119667),	-- Communal Sandals
+				i(119668),	-- Communal Handwraps
+				i(119669),	-- Communal Hood
+				i(119670),	-- Communal Leggings
+				i(119675),	-- Communal Vestments
+				i(119677),	-- Communal Shoulderpads
+				i(119678),	-- Communal Cord
+				i(119679),	-- Communal Wristwraps
+				i(119661),	-- Communal Idol of Destruction
+				i(119664),	-- Communal Stone of Destruction
+				i(119672),	-- Communal Idol of Wisdom
+				i(119676),	-- Communal Stone of Wisdom
+				i(119666),	-- Communal Cloak of Wisdom
+				i(119681),	-- Communal Cloak of Destruction
+				i(119660),	-- Communal Medallion
+				i(119671),	-- Communal Necklace
+				i(119662),	-- Communal Band of Destruction
+				i(119663),	-- Communal Ring of Destruction
+				i(119673),	-- Communal Band of Wisdom
+				i(119674),	-- Communal Ring of Wisdom
 			}),
 			n(-145, {	-- Mountainsage
 				["classes"] = { MAGE },
