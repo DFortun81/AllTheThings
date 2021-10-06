@@ -37,47 +37,15 @@ _.Instances = { tier(WOD_TIER, {
 				e(1214, {	-- Witherbark
 					["crs"] = { 81522 },	-- Witherbark
 					["sym"] = {
-						{"select", "itemID", 109912},	-- Bloody-Blade Drape
-						{"select", "itemID", 109911},	-- Cloak of Annealing Flesh
-						{"select", "itemID", 109908},	-- Cloak of Arcane Mysteries
-						{"select", "itemID", 109904},	-- Cloak of Cascading Blades
-						{"select", "itemID", 109910},	-- Cloak of Mending Magics
-						{"select", "itemID", 109929},	-- Cloak of Steeled Nerves
-						{"select", "itemID", 109906},	-- Cloak of Violent Harmony
-						{"select", "itemID", 109905},	-- Deadshot Greatcloak
-						{"select", "itemID", 109914},	-- Drape of Dripping Runnels
-						{"select", "itemID", 109926},	-- Drape of Frozen Dreams
-						{"select", "itemID", 109909},	-- Drape of Iron Sutures
-						{"select", "itemID", 109916},	-- Drape of Swirling Deflection
-						{"select", "itemID", 109907},	-- Felbone Drape
-						{"select", "itemID", 109925},	-- Forgeflame Greatcloak
-						{"select", "itemID", 109913},	-- Headscythe Greatcloak
-						{"select", "itemID", 109927},	-- Mistwoven Windcloak
-						{"select", "itemID", 109915},	-- Rigid Scale Cloak
-						{"select", "itemID", 109928},	-- Skullcracker Cloak
-						{"select", "itemID", 109918},	-- Soot-Scarred Longcloak
-						{"select", "itemID", 109917},	-- Three-Clefthoof Cape
-						{"select", "itemID", 109862},	-- Blackwater Grips
-						{"select", "itemID", 109849},	-- Bloodfeather Grips
-						{"select", "itemID", 109850},	-- Crystalbinder Gloves
-						{"select", "itemID", 109861},	-- Felflame Grips
-						{"select", "itemID", 109845},	-- Frost-Touched Gloves
-						{"select", "itemID", 109848},	-- Gauntlets of Burning Focus
-						{"select", "itemID", 109844},	-- Gloves of Arcane Mystery
-						{"select", "itemID", 109846},	-- Gloves of Swirling Light
-						{"select", "itemID", 109858},	-- Goldsteel Gloves
-						{"select", "itemID", 109859},	-- Gutcrusher Gauntlets
-						{"select", "itemID", 109856},	-- Incarnadine Gauntlets
-						{"select", "itemID", 109855},	-- Lavalink Grips
-						{"select", "itemID", 109851},	-- Leafmender Grips
-						{"select", "itemID", 109847},	-- Lightbinder Gloves
-						{"select", "itemID", 109863},	-- Morningscale Gauntlet
-						{"select", "itemID", 109860},	-- Rivet-Sealed Crushers
-						{"select", "itemID", 109854},	-- Rockhide Gloves
-						{"select", "itemID", 109853},	-- Sharpeye Gauntlets
-						{"select", "itemID", 109852},	-- Streamslither Gauntlets
-						{"select", "itemID", 109857},	-- Verdant Plate Grips
-						},
+						{"select", "headerID", -23},	-- CDD
+						{"pop"},
+						{"where", "difficultyID", 1},	-- Normal
+						{"pop"},
+						{"where", "headerID", -43},	-- Cloth
+						{"pop"},
+						{"where", "headerID", -327},	-- Hands
+						{"pop"},
+					},
 					["g"] = {
 						i(119175),	-- Leafhide Penetrator
 						--[[
@@ -602,6 +570,16 @@ _.Instances = { tier(WOD_TIER, {
 				}),
 				e(1214, {	-- Witherbark
 					["crs"] = { 81522 },	-- Witherbark
+					["sym"] = {
+						{"select", "headerID", -23},	-- CDD
+						{"pop"},
+						{"where", "difficultyID", 2},	-- Heroic
+						{"pop"},
+						{"where", "headerID", -43},	-- Cloth
+						{"pop"},
+						{"where", "headerID", -327},	-- Hands
+						{"pop"},
+					},
 					["g"] = {
 						ach(9017),	-- Water Management
 						i(119175),	-- Leafhide Penetrator
@@ -878,6 +856,16 @@ _.Instances = { tier(WOD_TIER, {
 			d(23, {	-- Mythic
 				e(1214, {	-- Witherbark
 					["crs"] = { 81522 },	-- Witherbark
+					["sym"] = {
+						{"select", "headerID", -23},	-- CDD
+						{"pop"},
+						{"where", "difficultyID", 23},	-- Mythic
+						{"pop"},
+						{"where", "headerID", -43},	-- Cloth
+						{"pop"},
+						{"where", "headerID", -327},	-- Hands
+						{"pop"},
+					},
 					["g"] = {
 						i(119175),	-- Leafhide Penetrator
 						--[[
