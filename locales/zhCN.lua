@@ -1102,7 +1102,7 @@ for key, value in pairs({
 	[164820] = "黑暗守护者的标示牌",	-- Dark Keeper Nameplate
 	[164867] = "通缉",	-- WANTED
 	[164868] = "格杀勿论",	-- KILL ON SIGHT
-	[164869] = "鬼魂之杯",	-- The Spectral Chalice	--TODO: This was taken from classic Wowhead
+	[164869] = "鬼魂之杯",	-- Spectral Chalice	--TODO: This was taken from classic Wowhead
 	[164887] = "被腐化的迎风花",	-- Corrupted Windblossom	--TODO: This was taken from classic Wowhead
 	[164888] = "被腐化的鞭根草",	-- Corrupted Whipper Root	--TODO: This was taken from classic Wowhead
 	[164955] = "北部水晶塔",	-- Northern Crystal Pylon
@@ -1163,7 +1163,7 @@ for key, value in pairs({
 	[181638] = "通缉布告",	-- Wanted Poster
 	[181672] = "稻草人",	-- Wickerman Effigy	--TODO: This was taken from tbc Wowhead
 	--TODO: [181698] = "Voidstone",	-- Voidstone
-	--TODO: [181748] = "Blood Crystal",	-- Blood Crystal
+	[181748] = "血水晶",	-- Blood Crystal	--TODO: This was taken from tbc Wowhead
 	--TODO: [181756] = "Battered Ancient Book",	-- Battered Ancient Book
 	[181889] = "通缉布告",	-- Wanted Poster
 	[182032] = "加莱恩的日记",	-- Galaen's Journal
@@ -1171,14 +1171,14 @@ for key, value in pairs({
 	[182115] = "通缉布告",	-- Wanted Poster
 	[182165] = "通缉布告",	-- Wanted Poster
 	[182392] = "加拉达尔布告牌",	-- Garadar Bulletin Board
-	--TODO: [182393] = "Telaar Bulletin Board",	-- Telaar Bulletin Board
+	[182393] = "塔拉布告牌",	-- Telaar Bulletin Board	--TODO: This was taken from tbc Wowhead
 	[182549] = "邪兽人的计划",	-- Fel Orc Plans
 	[182587] = "通缉布告",	-- Wanted Poster
 	[182588] = "通缉布告",	-- Wanted Poster
 	[182947] = "鲜血法典",	-- The Codex of Blood
 	[182952] = "蒸汽泵废料",	-- Steam Pump Flotsam
 	[183284] = "通缉布告",	-- Wanted Poster
-	--TODO: [183770] = "B'naar Control Console",	-- B'naar Control Console
+	[183770] = "布纳尔控制台",	-- B'naar Control Console	--TODO: This was taken from tbc Wowhead
 	[183811] = "通缉布告",	-- Wanted Poster
 	[184300] = "Necromantic Focus",	-- Necromantic Focus
 	[184465] = "军团宝箱",	-- Cache of the Legion
@@ -1187,9 +1187,9 @@ for key, value in pairs({
 	[184945] = "通缉布告",	-- Wanted Poster
 	[184946] = "通缉布告",	-- Wanted Poster
 	[185035] = "通缉布告",	-- Wanted Poster
-	--TODO: [185126] = "Crystal Prison",	-- Crystal Prison
+	[185126] = "水晶监牢",	-- Crystal Prison	--TODO: This was taken from tbc Wowhead
 	[185165] = "军团联络器",	-- Legion Communicator
-	--TODO: [185166] = "Wanted Poster",	-- Wanted Poster
+	[185166] = "通缉布告",	-- Wanted Poster	--TODO: This was taken from tbc Wowhead
 	[185168] = "强化魔铁箱",	-- Reinforced Fel Iron Chest
 	[186267] = "南瓜神龛",	-- Pumpkin Shrine
 	[186426] = "通缉布告",	-- Wanted Poster
