@@ -221,7 +221,6 @@ _.BattlePets =
 						54276,	-- Trouble in Gnomeregan (H)
 					},
 					["lvl"] = 120,
-					["maps"] = { 30 },	-- New Tinkertown [Below]
 					["g"] = {
 						spell(286079),	-- Manapoof Link: Gnomeregan
 						i(122457),	-- Ultimate Battle-Training Stone

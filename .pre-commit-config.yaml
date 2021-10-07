@@ -11,10 +11,10 @@ repos:
     - id: black
 
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v2.27.0
+    rev: v2.29.0
     hooks:
     - id: pyupgrade
-      args: ["--py39-plus"]
+      args: ["--py310-plus"]
 
 -   repo: https://github.com/pycqa/flake8
     rev: 3.9.2

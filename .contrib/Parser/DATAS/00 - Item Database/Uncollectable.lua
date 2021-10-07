@@ -486,7 +486,7 @@ i(179295);	-- Squeaky Bat
 i(173776);	-- Stale Loaf
 i(182186);	-- Stolen Memento
 i(67495);	-- Strange Bloated Stomach
-i(160378);	-- Strongarm Stout
+i(173775);	-- Strongarm Stout
 i(170379);	-- Sunwarmed Sand
 i(178150);	-- Tasty Purian
 i(184759);	-- Tasty Purian

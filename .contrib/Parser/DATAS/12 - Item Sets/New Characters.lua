@@ -102,6 +102,7 @@ _.GearSets =
 					i(123959),	-- Demon Trophy
 					i(123960),	-- Charm of Demonic
 					i(123958),	-- Demon Hide Satchel
+					title(344)	-- Illidari <Name>
 				},
 			}),
 			cl(HUNTER, {

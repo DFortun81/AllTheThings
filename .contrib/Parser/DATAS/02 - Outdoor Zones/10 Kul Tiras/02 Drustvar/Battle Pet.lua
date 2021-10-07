@@ -38,28 +38,13 @@ _.Zones =
 						}),
 					},
 				}),
-				p(2411, {	-- Wicker Pup
-					["description"] = "You must find each of the four parts and combine them to form this battle pet.  Coordinates for each chest are listed in the coordinate section.",
-					["coords"] = {
-						{ 18.50, 51.30, DRUSTVAR },	-- Bundle of Wicker Sticks
-						{ 67.70, 73.70, DRUSTVAR },	-- Miniature Stag Skull
-						{ 55.60, 51.80, DRUSTVAR },	-- Spooky Incantation
-						{ 25.20, 24.20, DRUSTVAR },	-- Wolf Pup Spine
-					},
-					["g"] = {
-						i(163789, {	-- Bundle of Wicker Sticks
-							["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
-						}),
-						i(163791, {	-- Miniature Stag Skull
-							["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
-						}),
-						i(163790, {	-- Spooky Incantation
-							["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
-						}),
-						i(163796, {	-- Wolf Pup Spine
-							["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
-						}),
-						i(163497),	-- Spooky Bundle of Sticks (this item actually gives the pet)
+				i(163497, {	-- Wicker Pup
+					["description"] = "You must find each of the four parts from various treasures in the Zone and combine them to form this battle pet.\nRight-Click for more information.",
+					["cost"] = {
+						{ "i", 163790, 1 },	-- Spooky Incantation
+						{ "i", 163796, 1 },	-- Wolf Pup Spine
+						{ "i", 163791, 1 },	-- Miniature Stag Skull
+						{ "i", 163789, 1 },	-- Bundle of Wicker Stick
 					},
 				}),
 			}),

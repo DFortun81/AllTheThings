@@ -84,6 +84,7 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	local itemID = 37829;
 	local item = _.SearchForField("itemID", itemID)[1];
 	local icon = "|T" .. item.icon .. ":0|t";
+	local link = item.link or RETRIEVING_DATA;
 	GameTooltip:AddLine(" ");
 	GameTooltip:AddLine("One-Time Quests:");
 	local coren = C_QuestLog.IsQuestFlaggedCompleted(12491);
@@ -104,8 +105,6 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for Dark Iron Invasion", _.L[invasion and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
 	GameTooltip:AddLine(" " .. icon .. " 0-22 for Ram Racing Dialog** (every 18 hours)");
 	GameTooltip:AddLine("** Log out in a rested location and it will be reset after 8 hours.");
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Currently", GetItemCount(itemID, true) .. "x " .. icon .. " " .. item.link);
 
 	local today = date("*t");
 	local start = time({day=20,month=9,year=today.year,hour=0,min=0,sec=0});
@@ -119,18 +118,20 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 		local secondsPerDay = 86400;
 		local totalDays = math.floor(difftime(ends, start) / secondsPerDay);
 		local m = 60 + (25 * totalDays);
-		GameTooltip:AddDoubleLine("Total Possible*", m .. " - " .. (m + (22 * totalDays)) .. "x " .. icon .. " " .. item.link);
+		GameTooltip:AddLine(" ");
+		GameTooltip:AddDoubleLine("Currently", GetItemCount(itemID, true) .. "x " .. icon .. " " .. link);
+		GameTooltip:AddDoubleLine("Total Possible*", m .. " - " .. (m + (22 * totalDays)) .. "x " .. icon .. " " .. link);
 
 		local remaining = math.floor(difftime(ends, now) / secondsPerDay);
 		if remaining <= 1 then
 			local baseAmount = (not barked and 15 or 0) + (not invasion and 10 or 0);
-			GameTooltip:AddDoubleLine("Total Remaining*", baseAmount .. " - " .. (baseAmount + 22) .. "x " .. icon .. " " .. item.link);
+			GameTooltip:AddDoubleLine("Total Remaining*", baseAmount .. " - " .. (baseAmount + 22) .. "x " .. icon .. " " .. link);
 		else
 			local baseAmount = (not barked and 15 or 0) + (not invasion and 10 or 0) + (25 * remaining);
-			GameTooltip:AddDoubleLine("Total Remaining*", baseAmount .. " - " .. (baseAmount + (22 * remaining)) .. "x " .. icon .. " " .. item.link);
+			GameTooltip:AddDoubleLine("Total Remaining*", baseAmount .. " - " .. (baseAmount + (22 * remaining)) .. "x " .. icon .. " " .. link);
 		end
+		GameTooltip:AddLine("* Based on if you didn't miss a single day and only whole days count.");
 	end
-	GameTooltip:AddLine("* Based on if you didn't miss a single day and only whole days count.");
 end]];
 
 _.Holidays = { applyholiday(BREWFEST, {
@@ -1089,7 +1090,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["isYearly"] = true,
 					["groups"] = {
 						i(32912, {	-- Yellow Brewfest Stein
-							["timeline"] =  { "added 2.0.1", "removed 2.4.3" },
+							["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 						}),
 					},
 				}),
@@ -1112,7 +1113,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["isYearly"] = true,
 					["groups"] = {
 						i(32912, {	-- Yellow Brewfest Stein
-							["timeline"] =  { "added 2.0.1", "removed 2.4.3" },
+							["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 						}),
 					},
 				}),

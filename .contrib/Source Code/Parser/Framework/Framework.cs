@@ -94,7 +94,7 @@ namespace ATT
             { "WOD", new int[] { 6, 2, 4, 21345 } },
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
             { "BFA", new int[] { 8, 3, 7, 35249 } },
-            { "SHADOWLANDS", new int[] { 9, 1, 0, 40120 } },
+            { "SHADOWLANDS", new int[] { 9, 1, 0, 40443 } },
         };
 
         public static readonly string CURRENT_RELEASE_PHASE_NAME =
@@ -1135,6 +1135,13 @@ namespace ATT
             {
                 var item = Items.GetNull(pair.Key);
                 if (item != null) Items.MergeInto(pair.Key, pair.Value, item);
+            }
+
+            // Go through and merge all of the toy data into the item containers.
+            foreach (var pair in Items.AllToys)
+            {
+                var item = Items.GetNull(pair.Key);
+                if (item != null) Items.MergeInto(pair.Key, new Dictionary<string, object> { { "isToy", pair.Value } }, item);
             }
 
             // Go through all of the items in the database and calculate the Filter ID
@@ -2254,7 +2261,7 @@ namespace ATT
                         }
                     case "ItemSpeciesDB":
                         {
-                            // The format of the Item DB is a dictionary of item ID -> Values.
+                            // The format of the Item Species DB is a dictionary of item ID -> Values.
                             // This is slightly more annoying to parse, but it works okay.
                             if (pair.Value is Dictionary<long, object> itemDB)
                             {
@@ -2276,6 +2283,33 @@ namespace ATT
                             else
                             {
                                 Console.WriteLine("ItemSpeciesDB not in the correct format!");
+                                Console.ReadLine();
+                            }
+                            break;
+                        }
+                    case "ItemToyDB":
+                        {
+                            // The format of the Item Toy DB is a dictionary of item ID -> True.
+                            // This is slightly more annoying to parse, but it works okay.
+                            if (pair.Value is Dictionary<long, object> itemToyDB)
+                            {
+                                foreach (var itemValuePair in itemToyDB)
+                                {
+                                    if (itemValuePair.Value is object o)
+                                    {
+                                        Items.SetIsToy(itemValuePair.Key, Convert.ToBoolean(o));
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("ItemToyDB not in the correct format!");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(itemValuePair.Value));
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("ItemToyDB not in the correct format!");
                                 Console.ReadLine();
                             }
                             break;

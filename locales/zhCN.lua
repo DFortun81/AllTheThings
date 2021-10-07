@@ -669,7 +669,7 @@ for key,value in pairs({
 		[-20] = "常规商人物品",										-- Common Vendor Items
 		--TODO: [-21] = "Captains",									-- Captains
 		--TODO: [-22] = "Secrets",									-- Secrets
-
+		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
 		[-40] = "绝版",												-- Legacy
 		--TODO: [-41] = "Cache of Madness",
 	-- Armor Types
@@ -706,7 +706,6 @@ for key,value in pairs({
 		[-132] = "菲拉斯 "..GetSpellInfo(133137),					-- Feralas Active
 		[-133] = "暮色森林 "..GetSpellInfo(78741),					-- Duskwood Activated
 	-- Class Trial Sets
-		[-140] = "共济",												-- Communal
 		[-141] = "邪魂",												-- Felsoul
 		[-142] = "摧心",												-- Heart-Lesion
 		[-143] = "浅酌者",											-- Lightdrinker
@@ -725,11 +724,8 @@ for key,value in pairs({
 		--TODO: [-163] = RESISTANCE0_NAME,							-- Armor
 		--TODO: [-165] = GetItemSubClassInfo(13,1),
 		[-168] = FACTION_OTHER .. QUESTS_LABEL,						-- Other Quests
-		[-171] = "任务线",											-- Quest Chains
-
 		[-211] = NEW .. CHARACTER,									-- New Character 新建角色
 		[-212] = "宝箱",												-- Treasure Chest
-		[-214] = "夜之子",											-- Nightborne Home
 		--TODO: [-217] = "Lures",									-- Lures (for Fishing)
 		[-218] = "鱼饵",												-- Coastal (for Fishing)
 		[-224] = "伊利达雷",											-- Illidari
@@ -737,24 +733,19 @@ for key,value in pairs({
 		--TODO: [-242] = "Unrated",									-- Unrated
 		[-243] = "赏金任务",											-- Bounty
 		[-254] = "同盟种族 & 传承护甲",										-- Allied Races & Heritage
-	-- Other
 		[-356] = "进攻黑暗之门",										-- Assault on the Dark Portal
 		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower
 		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
-		[-366] = "武器系列",											-- Weapons Sets
 	-- Dungeon/Raid Wing Info
 		[-379] = "垃圾场",											-- Junkyard
 		[-393] = "进攻堡垒",											-- Storming the Citadel
 		[-394] = "天灾工厂",											-- The Plagueworks
 		--TODO: [-397] = "Outposts",								-- Outposts
 		--TODO: [-420] = "Tier 0.5 Sets",							-- Tier 0.5 Sets
-	-- Blizzard Events and Anniversaries
-	-- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "战争宝箱",											-- Daily War Chest
 		[-491] = "塔罗牌",											-- Tarot Cards
-
+	-- Blizzard Events and Anniversaries
 		[-520] = "资料片前夕",										-- Expansion Pre-Launch
-		[-521] = "燃烧的远征：Dark Portal Opens",					-- 这些谁知道官翻？
 		[-522] = "巫妖王之怒：Zombie Infestation",					-- Wrath of the Lich King: Zombie Infestation
 		[-523] = "大地的裂变：Elemental Unrest",						-- Cataclysm: Elemental Unrest
 		[-525] = "德拉诺之王：Iron Horde Incursion",					-- Warlords of Draenor: Iron Horde Incursion
@@ -844,7 +835,6 @@ for key,value in pairs({
 		--TODO: [-859] = "Rank 2",									-- Rank 2
 		--TODO: [-860] = "Rank 3",									-- Rank 3
 		--TODO: [-861] = "Rank 4",									-- Rank 4
-
 	-- Shadowlands Header
 		[-903] = "区域奖励",											-- Zone Rewards
 		[-906] = "等级 1: 战术洞察",									-- Tier 1: Tactical Insight
@@ -861,7 +851,6 @@ for key,value in pairs({
 		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": 流动能量",	-- Tier 3: Flowing Power
 		[-977] = "游荡者梅莉",											-- Maelie the Wanderer
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
-		--TODO: [-980] = "Shared Treasures",						-- Shared Treasures
 
 		-- SL Maldraxxus/Necrolord
 			[-921] = "圣所升级",					-- Sanctum Upgrades (Necrolord)
@@ -919,7 +908,6 @@ for key,value in pairs({
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
 
-			--TODO: [-976] = "Korthian Sets",						-- Korthian Sets
 			--TODO: [-1001] = "The Black Vault",
 
 	-- Warrior order hall lore items
@@ -1114,7 +1102,7 @@ for key, value in pairs({
 	[164820] = "黑暗守护者的标示牌",	-- Dark Keeper Nameplate
 	[164867] = "通缉",	-- WANTED
 	[164868] = "格杀勿论",	-- KILL ON SIGHT
-	[164869] = "鬼魂之杯",	-- The Spectral Chalice	--TODO: This was taken from classic Wowhead
+	[164869] = "鬼魂之杯",	-- Spectral Chalice	--TODO: This was taken from classic Wowhead
 	[164887] = "被腐化的迎风花",	-- Corrupted Windblossom	--TODO: This was taken from classic Wowhead
 	[164888] = "被腐化的鞭根草",	-- Corrupted Whipper Root	--TODO: This was taken from classic Wowhead
 	[164955] = "北部水晶塔",	-- Northern Crystal Pylon
@@ -1175,7 +1163,7 @@ for key, value in pairs({
 	[181638] = "通缉布告",	-- Wanted Poster
 	[181672] = "稻草人",	-- Wickerman Effigy	--TODO: This was taken from tbc Wowhead
 	--TODO: [181698] = "Voidstone",	-- Voidstone
-	[181748] = "血水晶",	-- Blood Crystal
+	[181748] = "血水晶",	-- Blood Crystal	--TODO: This was taken from tbc Wowhead
 	--TODO: [181756] = "Battered Ancient Book",	-- Battered Ancient Book
 	[181889] = "通缉布告",	-- Wanted Poster
 	[182032] = "加莱恩的日记",	-- Galaen's Journal
@@ -1183,14 +1171,14 @@ for key, value in pairs({
 	[182115] = "通缉布告",	-- Wanted Poster
 	[182165] = "通缉布告",	-- Wanted Poster
 	[182392] = "加拉达尔布告牌",	-- Garadar Bulletin Board
-	[182393] = "塔拉布告牌",	-- Telaar Bulletin Board
+	[182393] = "塔拉布告牌",	-- Telaar Bulletin Board	--TODO: This was taken from tbc Wowhead
 	[182549] = "邪兽人的计划",	-- Fel Orc Plans
 	[182587] = "通缉布告",	-- Wanted Poster
 	[182588] = "通缉布告",	-- Wanted Poster
 	[182947] = "鲜血法典",	-- The Codex of Blood
 	[182952] = "蒸汽泵废料",	-- Steam Pump Flotsam
 	[183284] = "通缉布告",	-- Wanted Poster
-	[183770] = "布纳尔控制台",	-- B'naar Control Console
+	[183770] = "布纳尔控制台",	-- B'naar Control Console	--TODO: This was taken from tbc Wowhead
 	[183811] = "通缉布告",	-- Wanted Poster
 	[184300] = "Necromantic Focus",	-- Necromantic Focus
 	[184465] = "军团宝箱",	-- Cache of the Legion
@@ -1199,9 +1187,9 @@ for key, value in pairs({
 	[184945] = "通缉布告",	-- Wanted Poster
 	[184946] = "通缉布告",	-- Wanted Poster
 	[185035] = "通缉布告",	-- Wanted Poster
-	[185126] = "水晶监牢",	-- Crystal Prison
+	[185126] = "水晶监牢",	-- Crystal Prison	--TODO: This was taken from tbc Wowhead
 	[185165] = "军团联络器",	-- Legion Communicator
-	[185166] = "通缉布告",	-- Wanted Poster
+	[185166] = "通缉布告",	-- Wanted Poster	--TODO: This was taken from tbc Wowhead
 	[185168] = "强化魔铁箱",	-- Reinforced Fel Iron Chest
 	[186267] = "南瓜神龛",	-- Pumpkin Shrine
 	[186426] = "通缉布告",	-- Wanted Poster
