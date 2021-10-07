@@ -950,7 +950,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["description"] = "If you are a miner, speak with Gloom'rel to have him summon the Spectral Chalice.\n\nAfter you deposit the required items, speak to Gloom'rel again to learn how to smelt Dark Iron Ore.",
 					["g"] = {
 						q(4083, {	-- The Spectral Chalice
-							["provider"] = { "o", 164869 },	-- The Spectral Chalice
+							["provider"] = { "o", 164869 },	-- Spectral Chalice
 							["icon"] = "Interface\\Icons\\INV_Misc_Bowl_01",
 							["cost"] = {
 								{ "i", 3577, 20 },	-- 20x Gold Bar

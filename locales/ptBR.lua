@@ -1044,7 +1044,7 @@ for key,value in pairs({
 	[164820] = "Placa de Identificação do Guardião Sombrio",	-- Dark Keeper Nameplate
 	[164867] = "PROCURA-SE",	-- WANTED
 	[164868] = "SE VIR, MATE",	-- KILL ON SIGHT
-	[164869] = "Cálice Espectral",	-- The Spectral Chalice
+	[164869] = "Cálice Espectral",	-- Spectral Chalice
 	[164887] = "Botão Selvagem Corrompido",	-- Corrupted Windblossom	--TODO: This was taken from classic Wowhead
 	[164888] = "Raiz-açoite Corrompida",	-- Corrupted Whipper Root	--TODO: This was taken from classic Wowhead
 	[164955] = "Torre de Cristal Norte",	-- Northern Crystal Pylon
