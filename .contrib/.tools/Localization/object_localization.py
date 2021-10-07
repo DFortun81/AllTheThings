@@ -89,8 +89,8 @@ def get_todo_lines(lines: list[str]):
                         logging.error(f"Couldn't find id in line {ind}: {line}")
                         ind += 1
                         continue
-                    obj_id: int = cast(re.Match, match).group()
-                    if int(obj_id) > CUSTOM_OBJECTS_CONST:  # custom objects
+                    obj_id = int(match.group())
+                    if obj_id > CUSTOM_OBJECTS_CONST:  # custom objects
                         ind += 1
                         continue
                     todo_dict[ind] = obj_id
