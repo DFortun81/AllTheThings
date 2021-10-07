@@ -931,14 +931,18 @@ app.L = {
 		[-101] = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",					-- Followers
 		[-136] = "Interface\\Icons\\achievement_bg_defendxtowers_av",						-- Garrison Invasion
 		[-139] = app.asset("Interface_World_boss"),											-- Raid Bosses
-		[-143] = "Interface\\Icons\\ClassIcon_Rogue",										-- Rogue
-		[-144] = "Interface\\Icons\\ClassIcon_Monk",										-- Monk
-		[-145] = "Interface\\Icons\\ClassIcon_Mage",										-- Mage
-		[-146] = "Interface\\Icons\\ClassIcon_Warrior",										-- Warrior
-		[-147] = "Interface\\Icons\\ClassIcon_Druid",										-- Druid
-		[-148] = "Interface\\Icons\\ClassIcon_Shaman",										-- Shaman
-		[-149] = "Interface\\Icons\\ClassIcon_Paladin",										-- Paladin
-		[-150] = "Interface\\Icons\\ClassIcon_Hunter",										-- Hunter
+		
+-- WoD Dungeons(Fake npcid)
+		[-140] = select(6, EJ_GetInstanceInfo(547)),										-- Auchindoun
+		[-141] = select(6, EJ_GetInstanceInfo(385)),										-- Bloodmaul Slag Mines
+		[-142] = select(6, EJ_GetInstanceInfo(536)),										-- Grimrail Depot
+		[-143] = select(6, EJ_GetInstanceInfo(558)),										-- Iron Docks
+		[-144] = select(6, EJ_GetInstanceInfo(537)),										-- Shadowmoon Burial Grounds
+		[-145] = select(6, EJ_GetInstanceInfo(476)),										-- Skyreach
+		[-146] = select(6, EJ_GetInstanceInfo(556)),										-- The Everbloom
+		[-147] = select(6, EJ_GetInstanceInfo(559)),										-- Upper Blackrock Spire
+		
+		
 		[-152] = "Interface\\Icons\\achievement_zone_draenor_01",							-- Garrison Campaign
 		[-153] = 1103070,																	-- Work Orders (Inv_icon_mission_complete_order)
 	--	[-155] = 236566,																	-- Level 48 (old Level 110)
@@ -1564,15 +1568,16 @@ app.L = {
 		[-137] = string.format(SPELLBOOK_AVAILABLE_AT, 90),						-- Level 90
 		[-138] = string.format(SPELLBOOK_AVAILABLE_AT, 100),					-- Level 100
 		[-139] = RAID_BOSSES,													-- Bosses
--- Class Trial Sets
-		[-143] = "Lightdrinker",
-		[-144] = "Mistdancer",
-		[-145] = "Mountainsage",
-		[-146] = "Oathsworn",
-		[-147] = "Springrain",
-		[-148] = "Streamtalker",
-		[-149] = "Sunsoul",
-		[-150] = "Trailseeker",
+-- WoD Dungeons(Fake npcid)
+		[-140] = select(2, GetAchievementInfo(9039)),							-- Auchindoun
+		[-141] = select(2, GetAchievementInfo(9037)),							-- Bloodmaul Slag Mines
+		[-142] = select(2, GetAchievementInfo(9043)),							-- Grimrail Depot
+		[-143] = select(2, GetAchievementInfo(9038)),							-- Iron Docks
+		[-144] = select(2, GetAchievementInfo(9041)),							-- Shadowmoon Burial Grounds
+		[-145] = select(2, GetAchievementInfo(8843)),							-- Skyreach
+		[-146] = select(2, GetAchievementInfo(9044)),							-- The Everbloom
+		[-147] = select(2, GetAchievementInfo(9042)),							-- Upper Blackrock Spire
+
 		[-152] = "Garrison Campaign",
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
 		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48 (old level 110)
