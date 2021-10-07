@@ -91,4 +91,5 @@ _.HiddenQuestTriggers = {
 	q(64308),	-- hitting Renown 63
 	q(64447),	-- hitting Renown 67
 	q(63628),	-- learning Ensemble: Initiate's Necromantle Vestments (Renown reward)
+	q(64448),	-- Renown 76
 };

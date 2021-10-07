@@ -94,4 +94,5 @@ _.HiddenQuestTriggers = {
 	q(64372),	-- hitting Renown 60
 	q(64444),	-- hitting Renown 67
 	q(63601),	-- learning Ensemble: Aspiring Aspirant
+	q(64445),	-- Renown 76
 };
