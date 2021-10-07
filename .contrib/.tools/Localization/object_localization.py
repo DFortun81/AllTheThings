@@ -356,16 +356,16 @@ async def sync_objects(
             new_tail = True
             break
         localized_obj_id = localized_objects[localized_ind].id
+        if obj_id > localized_obj_id:  # deleted object
+            while obj_id > localized_obj_id:
+                logging.info(f"Deleted object {localized_obj_id}")
+                del localized_objects[localized_ind]
+                localized_obj_id = localized_objects[localized_ind].id
         if obj_id < localized_obj_id:  # new object
             new_object = await get_new_object_line(session, obj_id, obj_name, lang_code)
             localized_objects.insert(
                 localized_ind, Object(obj_id, obj_name, new_object)
             )
-        elif obj_id > localized_obj_id:  # deleted object
-            while obj_id > localized_obj_id:
-                logging.info(f"Deleted object {localized_obj_id}")
-                del localized_objects[localized_ind]
-                localized_obj_id = localized_objects[localized_ind].id
         localized_ind += 1
 
     if new_tail:
