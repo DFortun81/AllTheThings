@@ -2762,6 +2762,17 @@ subroutines = {
 			{"is", "itemID"},	-- Only Items
 		}
 	end,
+	-- Wod Dungeon
+	["common_wod_dungeon_drop"] = function(difficultyID, headerID)
+		return {
+			{"select", "headerID", -23},				-- Common Dungeon Drops
+			{"pop"},									-- Discard the Header and acquire all of their children.
+			{"where", "difficultyID", difficultyID},	-- Normal/Heroic/Mythic/Timewalking
+			{"pop"},									-- Discard the Diffculty Header and acquire all of their children.
+			{"where", "headerID", headerID},			-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
+			{"pop"},									-- Discard the Header and acquire all of their children.
+		}
+	end,
 };
 local function Resolve_Extract(results, group, field)
 	if group.g then
