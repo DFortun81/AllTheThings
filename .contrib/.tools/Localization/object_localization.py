@@ -2,16 +2,16 @@
 Functions used for object localization (all TODOs and simple sync when adding/removing objects in enUS).
 """
 
+import asyncio
 import fileinput
 import logging
 import re
 import sys
 from enum import Enum
-from typing import NamedTuple, cast
+from typing import Coroutine, NamedTuple
 
-import requests
+from aiohttp.client import ClientSession
 from bs4 import BeautifulSoup
-from bs4.element import Tag
 
 logging.basicConfig(
     format="%(levelname)s:%(message)s", stream=sys.stdout, level=logging.INFO
@@ -39,48 +39,57 @@ class GameFlavor(Enum):
     TBC = "tbc"
 
 
-def get_localized_obj_name_flavor(
+async def get_localized_obj_name_flavor(
+    session: ClientSession,
     obj_id: int,
     lang_code: LangCode = LangCode.ENGLISH,
     game_flavor: GameFlavor = GameFlavor.RETAIL,
-) -> str:
+):
     url = "https://"
     if lang_code != LangCode.ENGLISH:
         url += f"{lang_code.value}."
     if game_flavor != GameFlavor.RETAIL:
         url += f"{game_flavor.value}."
     url += f"wowhead.com/object={obj_id}"
+    try:
+        async with session.get(url=url) as response:
+            if "ptr" in response.url.human_repr():
+                logging.warning(f"{url} redirects to {response.url.human_repr()}")
+                return ""
+            resp = await response.read()
+            soup = BeautifulSoup(resp, "html.parser")
+            not_found = soup.find(
+                "div", class_="database-detail-page-not-found-message"
+            )
+            if not_found is not None:
+                logging.info(f"Can't find object {obj_id} at {url}!")
+                return ""
 
-    page = requests.get(url)
-    if "notFound" in page.url:
-        logging.warning(f"Can't find {obj_id} at {url}!")
-        return ""
-    if "ptr" in page.url:
-        logging.warning(f"{url} redirects to {url.replace(lang_code.value, 'ptr')}")
-        return ""
-    soup = BeautifulSoup(page.content, "html.parser")
-    heading = soup.find("h1", class_="heading-size-1")
-    if heading is None:
-        logging.warning(f"Can't find heading-size-1 for {obj_id} on Wowhead!")
-        return ""
-    text = cast(Tag, heading).text
-    # not localized names look like [en_obj_name] on Wowhead
-    if text.startswith("["):
-        logging.info(f"No localization for {obj_id}: {text}")
-        return ""
-    if '"' in text:
-        return text.replace('"', '\\"')
-    return text
+            heading = soup.find("h1", class_="heading-size-1")
+            if heading is None:
+                logging.warning(f"Can't find heading-size-1 for {obj_id} at {url}!")
+                return ""
+            text = heading.text
+            # not localized names look like [en_obj_name] on Wowhead
+            if text.startswith("["):
+                logging.info(f"No localization for {obj_id}: {text}")
+                return ""
+            if '"' in text:
+                return text.replace('"', '\\"')
+            return text
+    except Exception as e:
+        print(f"Unable to get url {url} due to {e.__class__}.")
+    return ""
 
 
-def get_localized_obj_name(
-    obj_id: int, lang_code: LangCode = LangCode.ENGLISH
+async def get_localized_obj_name(
+    session: ClientSession, obj_id: int, lang_code: LangCode = LangCode.ENGLISH
 ) -> tuple[str, GameFlavor]:
     game_flavor = GameFlavor.RETAIL
     localized_obj_name = ""
     for game_flavor in GameFlavor:
-        localized_obj_name = get_localized_obj_name_flavor(
-            obj_id, lang_code, game_flavor
+        localized_obj_name = await get_localized_obj_name_flavor(
+            session, obj_id, lang_code, game_flavor
         )
         if localized_obj_name != "":
             break
@@ -113,23 +122,39 @@ def get_todo_lines(lines: list[str]):
     return todo_dict
 
 
-def get_localized_names(todo_dict: dict[int, int], lang_code: LangCode):
+async def attach_line_ind(
+    localized_object: Coroutine[int, LangCode, tuple[str, GameFlavor]], line_ind: int
+) -> tuple[str, GameFlavor, int]:
+    return *(await localized_object), line_ind
+
+
+async def get_localized_names(
+    session: ClientSession, todo_dict: dict[int, int], lang_code: LangCode
+):
     localized_dict: dict[int, tuple[str, GameFlavor]] = {}
-    for obj_line_ind, obj_id in todo_dict.items():
-        localized_obj_name, game_flavor = get_localized_obj_name(obj_id, lang_code)
-
+    localized_objects = await asyncio.gather(
+        *[
+            attach_line_ind(
+                get_localized_obj_name(session, obj_id, lang_code), line_ind
+            )
+            for line_ind, obj_id in todo_dict.items()
+        ]
+    )
+    for localized_object in localized_objects:
+        name, game_flavor, line_ind = localized_object
         # no obj_id found, no heading found or no localization
-        if localized_obj_name == "":
+        if not name:
             continue
-
-        localized_dict[obj_line_ind] = (localized_obj_name, game_flavor)
-        logging.info(f"{obj_id}: {localized_obj_name}")
+        localized_dict[line_ind] = (name, game_flavor)
 
     return localized_dict
 
 
-def localize_objects(
-    filename: str, lang_code: LangCode, original_obj_names: dict[int, str] = {}
+async def localize_objects(
+    session: ClientSession,
+    filename: str,
+    lang_code: LangCode,
+    original_obj_names: dict[int, str] = {},
 ):
     logging.info(f"Starting {lang_code}!")
     file = open(filename)
@@ -139,15 +164,18 @@ def localize_objects(
 
     logging.info(f"Names to localize: {len(todo_dict)}")
 
-    localized_dict = get_localized_names(todo_dict, lang_code)
+    localized_dict = await get_localized_names(session, todo_dict, lang_code)
 
     for line in fileinput.input(filename, inplace=True):
+        old_line = line
         line_ind = fileinput.filelineno() - 1  # filelineno() indexing starts from 1
         if line_ind in localized_dict:
             obj_id = todo_dict[line_ind]
             # have to get name from Wowhead cause it might be name from non retail in this line
             if obj_id not in original_obj_names:
-                original_obj_names[obj_id] = get_localized_obj_name_flavor(obj_id)
+                original_obj_names[obj_id] = await get_localized_obj_name_flavor(
+                    session, obj_id
+                )
             original_obj_name = original_obj_names[obj_id]
             obj_name, game_flavor = localized_dict[line_ind]
             line = f'\t[{obj_id}] = "{obj_name}",\t-- {original_obj_name}\n'
@@ -158,6 +186,8 @@ def localize_objects(
                     line,
                 )
         print(line, end="")  # this writes to file
+        if old_line != line:
+            logging.info(line)
 
     return original_obj_names
 
@@ -191,8 +221,8 @@ def sort_objects(filename: str):
                     logging.error(f"Couldn't find id in line {ind}: {line}")
                     ind += 1
                     continue
-                obj_id: int = cast(re.Match, match).group()
-                todo_dict[ind] = int(obj_id)
+                obj_id = int(match.group())
+                todo_dict[ind] = obj_id
                 ind += 1
             break
     if first_obj_line == -1:
@@ -226,7 +256,7 @@ class ObjectsInfo(NamedTuple):
     last_line: int
 
 
-def get_objects_info(filename: str):
+async def get_objects_info(session: ClientSession, filename: str):
     sort_objects(filename)
     file = open(filename)
     lines = file.readlines()
@@ -252,19 +282,23 @@ def get_objects_info(filename: str):
                     break
 
                 match = re.search(r"\d+", line)
-                obj_id: int = cast(re.Match, match).group()
+                if match is None:
+                    logging.error(f"Couldn't find id in line {ind}: {line}")
+                    ind += 1
+                    continue
+                obj_id = int(match.group())
 
                 if "GetSpellInfo" in line:  # skip GetSpellInfo lines
                     ind += 1
-                    objects.append(Object(int(obj_id), "GetSpellInfo", line))
+                    objects.append(Object(obj_id, "GetSpellInfo", line))
                     continue
                 obj_name = re.findall('"([^"]*)"', line)[0]
                 # new entry, need to get the name, this only happens in enUS
-                if len(obj_name) == 0 and int(obj_id) < CUSTOM_OBJECTS_CONST:
-                    obj_name = get_localized_obj_name_flavor(obj_id)
+                if len(obj_name) == 0 and obj_id < CUSTOM_OBJECTS_CONST:
+                    obj_name = await get_localized_obj_name_flavor(session, obj_id)
                     line = re.sub('".*"', f'"{obj_name}"', line)
                     logging.info(f"New object {obj_id}: {obj_name}")
-                objects.append(Object(int(obj_id), obj_name, line))
+                objects.append(Object(obj_id, obj_name, line))
                 ind += 1
             break
 
@@ -280,10 +314,14 @@ def get_objects_info(filename: str):
     return ObjectsInfo(objects, first_obj_line, last_obj_line)
 
 
-def get_new_object_line(obj_id: int, obj_name: str, lang_code: LangCode):
+async def get_new_object_line(
+    session: ClientSession, obj_id: int, obj_name: str, lang_code: LangCode
+):
     logging.info(f"New object {obj_id}: {obj_name}")
 
-    localized_obj_name, game_flavor = get_localized_obj_name(obj_id, lang_code)
+    localized_obj_name, game_flavor = await get_localized_obj_name(
+        session, obj_id, lang_code
+    )
 
     if obj_name == "":  # those weird objects that don't have page even in enUS
         new_object = f'\t--TODO: [{obj_id}] = "",\t--\n'
@@ -302,9 +340,13 @@ def get_new_object_line(obj_id: int, obj_name: str, lang_code: LangCode):
     return new_object
 
 
-def sync_objects(objects: list[Object], filename: str, lang_code: LangCode):
+async def sync_objects(
+    session: ClientSession, objects: list[Object], filename: str, lang_code: LangCode
+):
     logging.info(f"Syncing {lang_code}!")
-    localized_objects, first_obj_line, last_obj_line = get_objects_info(filename)
+    localized_objects, first_obj_line, last_obj_line = await get_objects_info(
+        session, filename
+    )
 
     new_tail = False
     localized_ind = 0
@@ -315,7 +357,7 @@ def sync_objects(objects: list[Object], filename: str, lang_code: LangCode):
             break
         localized_obj_id = localized_objects[localized_ind].id
         if obj_id < localized_obj_id:  # new object
-            new_object = get_new_object_line(obj_id, obj_name, lang_code)
+            new_object = await get_new_object_line(session, obj_id, obj_name, lang_code)
             localized_objects.insert(
                 localized_ind, Object(obj_id, obj_name, new_object)
             )
@@ -329,7 +371,7 @@ def sync_objects(objects: list[Object], filename: str, lang_code: LangCode):
     if new_tail:
         for i in range(ind, len(objects)):
             obj_id, obj_name, _ = objects[i]
-            new_object = get_new_object_line(obj_id, obj_name, lang_code)
+            new_object = await get_new_object_line(session, obj_id, obj_name, lang_code)
             localized_objects.append(Object(obj_id, obj_name, new_object))
             localized_ind += 1
     if localized_ind < len(localized_objects):  # we need to delete objects in tail
