@@ -69,26 +69,23 @@ _.GearSets =
 							i(101072),	-- Mountainsage Stone of Destruction
 						},
 					}),
-					n(-141, {	-- Felsoul
-						["classes"] = { WARLOCK },
-						["groups"] = {
-							i(101277),	-- Felsoul Staff
-							i(101275),	-- Felsoul Wand
-							i(101269),	-- Felsoul Cowl
-							i(101262),	-- Felsoul Medallion
-							i(101276),	-- Felsoul Cloak of Destruction
-							i(101272),	-- Felsoul Shoulderpads
-							i(101271),	-- Felsoul Robe
-							i(101274),	-- Felsoul Wristwraps
-							i(101268),	-- Felsoul Handwraps
-							i(101273),	-- Felsoul Cord
-							i(101270),	-- Felsoul Leggings
-							i(101267),	-- Felsoul Sandals
-							i(101264),	-- Felsoul Band of Destruction
-							i(101265),	-- Felsoul Ring of Destruction
-							i(101263),	-- Felsoul Idol of Destruction
-							i(101266),	-- Felsoul Stone of Destruction
-						},
+					cl(WARLOCK, {
+						i(101277),	-- Felsoul Staff
+						i(101275),	-- Felsoul Wand
+						i(101269),	-- Felsoul Cowl
+						i(101262),	-- Felsoul Medallion
+						i(101276),	-- Felsoul Cloak of Destruction
+						i(101272),	-- Felsoul Shoulderpads
+						i(101271),	-- Felsoul Robe
+						i(101274),	-- Felsoul Wristwraps
+						i(101268),	-- Felsoul Handwraps
+						i(101273),	-- Felsoul Cord
+						i(101270),	-- Felsoul Leggings
+						i(101267),	-- Felsoul Sandals
+						i(101264),	-- Felsoul Band of Destruction
+						i(101265),	-- Felsoul Ring of Destruction
+						i(101263),	-- Felsoul Idol of Destruction
+						i(101266),	-- Felsoul Stone of Destruction
 					}),
 					n(-147, {	-- Springrain
 						["classes"] = { DRUID },
@@ -392,45 +389,42 @@ _.GearSets =
 							}),
 						},
 					}),
-					n(-142, {	-- Heart-Lesion
-						["classes"] = { DEATHKNIGHT },
-						["groups"] = {
-							i(100976),	-- Heart-Lesion Maul
-							i(101006),	-- Heart-Lesion Hammer
-							n(-9949, {	-- Frost / Unholy
-								i(100985),	-- Heart-Lesion Blade
-								i(100980),	-- Heart-Lesion Helm
-								i(100987),	-- Heart-Lesion Pendant
-								i(100986),	-- Heart-Lesion Cloak of Battle
-								i(100982),	-- Heart-Lesion Pauldrons
-								i(100977),	-- Heart-Lesion Breastplate
-								i(100984),	-- Heart-Lesion Vambraces
-								i(100979),	-- Heart-Lesion Gauntlets
-								i(100983),	-- Heart-Lesion Girdle
-								i(100981),	-- Heart-Lesion Legplates
-								i(100978),	-- Heart-Lesion Sabatons
-								i(100989),	-- Heart-Lesion Band of Might
-								i(100988),	-- Heart-Lesion Ring of Might
-								i(100991),	-- Heart-Lesion Idol of Battle
-								i(100990),	-- Heart-Lesion Stone of Battle
-							}),
-							n(-9948, {	-- Blood DK
-								i(100996),	-- Heart-Lesion Faceguard
-								i(100998),	-- Heart-Lesion Amulet
-								i(100993),	-- Heart-Lesion of Stoicism
-								i(101003),	-- Heart-Lesion Shoulderguards
-								i(100992),	-- Heart-Lesion Chestguard
-								i(101005),	-- Heart-Lesion Armguards
-								i(100995),	-- Heart-Lesion Handguards
-								i(101004),	-- Heart-Lesion Waistband
-								i(100997),	-- Heart-Lesion Legguards
-								i(100994),	-- Heart-Lesion Greaves
-								i(101001),	-- Heart-Lesion Band of Stoicism
-								i(101000),	-- Heart-Lesion Ring of Stoicism
-								i(100999),	-- Heart-Lesion Defender Idol
-								i(101002),	-- Heart-Lesion Defender Stone
-							}),
-						},
+					cl(DEATHKNIGHT, {
+						i(100976),	-- Heart-Lesion Maul
+						i(101006),	-- Heart-Lesion Hammer
+						n(-9949, {	-- Frost / Unholy
+							i(100985),	-- Heart-Lesion Blade
+							i(100980),	-- Heart-Lesion Helm
+							i(100987),	-- Heart-Lesion Pendant
+							i(100986),	-- Heart-Lesion Cloak of Battle
+							i(100982),	-- Heart-Lesion Pauldrons
+							i(100977),	-- Heart-Lesion Breastplate
+							i(100984),	-- Heart-Lesion Vambraces
+							i(100979),	-- Heart-Lesion Gauntlets
+							i(100983),	-- Heart-Lesion Girdle
+							i(100981),	-- Heart-Lesion Legplates
+							i(100978),	-- Heart-Lesion Sabatons
+							i(100989),	-- Heart-Lesion Band of Might
+							i(100988),	-- Heart-Lesion Ring of Might
+							i(100991),	-- Heart-Lesion Idol of Battle
+							i(100990),	-- Heart-Lesion Stone of Battle
+						}),
+						n(-9948, {	-- Blood DK
+							i(100996),	-- Heart-Lesion Faceguard
+							i(100998),	-- Heart-Lesion Amulet
+							i(100993),	-- Heart-Lesion of Stoicism
+							i(101003),	-- Heart-Lesion Shoulderguards
+							i(100992),	-- Heart-Lesion Chestguard
+							i(101005),	-- Heart-Lesion Armguards
+							i(100995),	-- Heart-Lesion Handguards
+							i(101004),	-- Heart-Lesion Waistband
+							i(100997),	-- Heart-Lesion Legguards
+							i(100994),	-- Heart-Lesion Greaves
+							i(101001),	-- Heart-Lesion Band of Stoicism
+							i(101000),	-- Heart-Lesion Ring of Stoicism
+							i(100999),	-- Heart-Lesion Defender Idol
+							i(101002),	-- Heart-Lesion Defender Stone
+						}),
 					}),
 				}),
 				n(-9981, {	-- Warlords of Draenor. This gear is awarded if you use your lv90 boost after 6.0.1
@@ -492,26 +486,23 @@ _.GearSets =
 							i(117115),	-- Mountainsage Stone of Destruction
 						},
 					}),
-					n(-141, {	-- Felsoul
-						["classes"] = { WARLOCK },
-						["groups"] = {
-							i(117320),	-- Felsoul Staff
-							i(117318),	-- Felsoul Wand
-							i(117312),	-- Felsoul Cowl
-							i(117305),	-- Felsoul Medallion
-							i(117319),	-- Felsoul Cloak of Destruction
-							i(117315),	-- Felsoul Shoulderpads
-							i(117314),	-- Felsoul Robe
-							i(117317),	-- Felsoul Wristwraps
-							i(117311),	-- Felsoul Handwraps
-							i(117316),	-- Felsoul Cord
-							i(117313),	-- Felsoul Leggings
-							i(117310),	-- Felsoul Sandals
-							i(117307),	-- Felsoul Band of Destruction
-							i(117308),	-- Felsoul Ring of Destruction
-							i(117306),	-- Felsoul Idol of Destruction
-							i(117309),	-- Felsoul Stone of Destruction
-						},
+					cl(WARLOCK, {
+						i(117320),	-- Felsoul Staff
+						i(117318),	-- Felsoul Wand
+						i(117312),	-- Felsoul Cowl
+						i(117305),	-- Felsoul Medallion
+						i(117319),	-- Felsoul Cloak of Destruction
+						i(117315),	-- Felsoul Shoulderpads
+						i(117314),	-- Felsoul Robe
+						i(117317),	-- Felsoul Wristwraps
+						i(117311),	-- Felsoul Handwraps
+						i(117316),	-- Felsoul Cord
+						i(117313),	-- Felsoul Leggings
+						i(117310),	-- Felsoul Sandals
+						i(117307),	-- Felsoul Band of Destruction
+						i(117308),	-- Felsoul Ring of Destruction
+						i(117306),	-- Felsoul Idol of Destruction
+						i(117309),	-- Felsoul Stone of Destruction
 					}),
 					n(-147, {	-- Springrain
 						["classes"] = { DRUID },
@@ -819,45 +810,42 @@ _.GearSets =
 							}),
 						},
 					}),
-					n(-142, {	-- Heart-Lesion
-						["classes"] = { DEATHKNIGHT },
-						["groups"] = {
-							i(117019),	-- Heart-Lesion Greatsword
-							i(117049),	-- Heart-Lesion Runeblade
-							n(-9949, {	-- Frost / Unholy
-								i(117028),	-- Heart-Lesion Blade
-								i(117023),	-- Heart-Lesion Helm
-								i(117030),	-- Heart-Lesion Pendant
-								i(117029),	-- Heart-Lesion Cloak of Battle
-								i(117025),	-- Heart-Lesion Pauldrons
-								i(117020),	-- Heart-Lesion Breastplate
-								i(117027),	-- Heart-Lesion Vambraces
-								i(117022),	-- Heart-Lesion Gauntlets
-								i(117026),	-- Heart-Lesion Girdle
-								i(117024),	-- Heart-Lesion Legplates
-								i(117021),	-- Heart-Lesion Sabatons
-								i(117032),	-- Heart-Lesion Band of Might
-								i(117031),	-- Heart-Lesion Ring of Might
-								i(117034),	-- Heart-Lesion Idol of Battle
-								i(117033),	-- Heart-Lesion Stone of Battle
-							}),
-							n(-9948, {	-- Blood DK
-								i(117039),	-- Heart-Lesion Faceguard
-								i(117041),	-- Heart-Lesion Amulet
-								i(117036),	-- Heart-Lesion of Stoicism
-								i(117046),	-- Heart-Lesion Shoulderguards
-								i(117035),	-- Heart-Lesion Chestguard
-								i(117048),	-- Heart-Lesion Armguards
-								i(117038),	-- Heart-Lesion Handguards
-								i(117047),	-- Heart-Lesion Waistband
-								i(117040),	-- Heart-Lesion Legguards
-								i(117037),	-- Heart-Lesion Greaves
-								i(117044),	-- Heart-Lesion Band of Stoicism
-								i(117043),	-- Heart-Lesion Ring of Stoicism
-								i(117042),	-- Heart-Lesion Defender Idol
-								i(117045),	-- Heart-Lesion Defender Stone
-							}),
-						},
+					cl(DEATHKNIGHT, {
+						i(117019),	-- Heart-Lesion Greatsword
+						i(117049),	-- Heart-Lesion Runeblade
+						n(-9949, {	-- Frost / Unholy
+							i(117028),	-- Heart-Lesion Blade
+							i(117023),	-- Heart-Lesion Helm
+							i(117030),	-- Heart-Lesion Pendant
+							i(117029),	-- Heart-Lesion Cloak of Battle
+							i(117025),	-- Heart-Lesion Pauldrons
+							i(117020),	-- Heart-Lesion Breastplate
+							i(117027),	-- Heart-Lesion Vambraces
+							i(117022),	-- Heart-Lesion Gauntlets
+							i(117026),	-- Heart-Lesion Girdle
+							i(117024),	-- Heart-Lesion Legplates
+							i(117021),	-- Heart-Lesion Sabatons
+							i(117032),	-- Heart-Lesion Band of Might
+							i(117031),	-- Heart-Lesion Ring of Might
+							i(117034),	-- Heart-Lesion Idol of Battle
+							i(117033),	-- Heart-Lesion Stone of Battle
+						}),
+						n(-9948, {	-- Blood DK
+							i(117039),	-- Heart-Lesion Faceguard
+							i(117041),	-- Heart-Lesion Amulet
+							i(117036),	-- Heart-Lesion of Stoicism
+							i(117046),	-- Heart-Lesion Shoulderguards
+							i(117035),	-- Heart-Lesion Chestguard
+							i(117048),	-- Heart-Lesion Armguards
+							i(117038),	-- Heart-Lesion Handguards
+							i(117047),	-- Heart-Lesion Waistband
+							i(117040),	-- Heart-Lesion Legguards
+							i(117037),	-- Heart-Lesion Greaves
+							i(117044),	-- Heart-Lesion Band of Stoicism
+							i(117043),	-- Heart-Lesion Ring of Stoicism
+							i(117042),	-- Heart-Lesion Defender Idol
+							i(117045),	-- Heart-Lesion Defender Stone
+						}),
 					}),
 				}),
 			}),
@@ -902,17 +890,14 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(119564),	-- Mountainsage Ring of Destruction
 				},
 			}),
-			n(-141, {	-- Felsoul
-				["classes"] = { WARLOCK },
-				["groups"] = {
-					-- added 6.0.2/No Info
-					i(119756),	-- Felsoul Idol of Destruction
-					i(119759),	-- Felsoul Stone of Destruction
-					i(119769),	-- Felsoul Cloak of Destruction
-					i(119755),	-- Felsoul Medallion
-					i(119757),	-- Felsoul Band of Destruction
-					i(119758),	-- Felsoul Ring of Destruction
-				},
+			cl(WARLOCK, {
+				-- added 6.0.2/No Info
+				i(119756),	-- Felsoul Idol of Destruction
+				i(119759),	-- Felsoul Stone of Destruction
+				i(119769),	-- Felsoul Cloak of Destruction
+				i(119755),	-- Felsoul Medallion
+				i(119757),	-- Felsoul Band of Destruction
+				i(119758),	-- Felsoul Ring of Destruction
 			}),
 			n(-147, {	-- Springrain
 				["classes"] = { DRUID },
@@ -1101,32 +1086,29 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(119798),	-- Oathsworn Ring of Stoicism
 				},
 			}),
-			n(-142, {	-- Heart-Lesion
-				["classes"] = { DEATHKNIGHT },
-				["groups"] = {
-					-- added 6.0.2/Confirmed
-					i(119485),	-- Heart-Lesion Chestguard
-					i(119487),	-- Heart-Lesion Greaves
-					i(119488),	-- Heart-Lesion Handguards
-					i(119489),	-- Heart-Lesion Faceguard
-					i(119490),	-- Heart-Lesion Legguards
-					i(119496),	-- Heart-Lesion Shoulderguards
-					i(119497),	-- Heart-Lesion Waistband
-					i(119498),	-- Heart-Lesion Armguards
-					-- added 6.0.2/No Info
-					i(119483),	-- Heart-Lesion Stone of Battle
-					i(119484),	-- Heart-Lesion Idol of Battle
-					i(119492),	-- Heart-Lesion Defender Idol
-					i(119495),	-- Heart-Lesion Defender Stone
-					i(119479),	-- Heart-Lesion Cloak of Battle
-					i(119486),	-- Heart-Lesion Cloak of Stoicism
-					i(119480),	-- Heart-Lesion Pendant
-					i(119491),	-- Heart-Lesion Amulet
-					i(119481),	-- Heart-Lesion Ring of Might
-					i(119482),	-- Heart-Lesion Band of Might
-					i(119493),	-- Heart-Lesion Ring of Stoicism
-					i(119494),	-- Heart-Lesion Band of Stoicism
-				},
+			cl(DEATHKNIGHT, {
+				-- added 6.0.2/Confirmed
+				i(119485),	-- Heart-Lesion Chestguard
+				i(119487),	-- Heart-Lesion Greaves
+				i(119488),	-- Heart-Lesion Handguards
+				i(119489),	-- Heart-Lesion Faceguard
+				i(119490),	-- Heart-Lesion Legguards
+				i(119496),	-- Heart-Lesion Shoulderguards
+				i(119497),	-- Heart-Lesion Waistband
+				i(119498),	-- Heart-Lesion Armguards
+				-- added 6.0.2/No Info
+				i(119483),	-- Heart-Lesion Stone of Battle
+				i(119484),	-- Heart-Lesion Idol of Battle
+				i(119492),	-- Heart-Lesion Defender Idol
+				i(119495),	-- Heart-Lesion Defender Stone
+				i(119479),	-- Heart-Lesion Cloak of Battle
+				i(119486),	-- Heart-Lesion Cloak of Stoicism
+				i(119480),	-- Heart-Lesion Pendant
+				i(119491),	-- Heart-Lesion Amulet
+				i(119481),	-- Heart-Lesion Ring of Might
+				i(119482),	-- Heart-Lesion Band of Might
+				i(119493),	-- Heart-Lesion Ring of Stoicism
+				i(119494),	-- Heart-Lesion Band of Stoicism
 			}),
 		}),
 	}),

@@ -860,22 +860,31 @@ app.L = {
 		[-20] = "Interface\\Icons\\INV_Misc_Coin_02",										-- Common Vendor Items
 		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
 		[-22] = app.asset("Category_Secrets"),												-- Secrets
+		[-23] = "Interface\\Icons\\item_maldraxxus_paragonchest_01",						-- WoD Common Dungeon Drop
+		
+		
 		[-26] = app.asset("Category_WorldDrops"),											-- Drop
-		[-29] = "Interface\\Icons\\Inv_misc_bag_17",										-- Raid Finder Bag
+		
+		
 		[-31] = app.asset("Category_Promo"),												-- Promotion
-		[-33] = "Interface\\Icons\\trade_fishing",											-- Fishing
+
+
 		[-34] = app.asset("Interface_WorldQuest"),							            	-- World Quests
 		[-36] = app.asset("Category_InGameShop"),											-- In-Game Shop
 		[-37] = "Interface\\Icons\\Garrison_Building_MageTower",							-- Discovery
 		[-38] = app.asset("Category_Professions"),											-- Professions
-		[-39] = "Interface\\Icons\\Inv_misc_book_17",
+
 		[-40] = "Interface\\Icons\\Inv_misc_book_17",										-- Legacy
 		[-41] = "Interface\\Icons\\TRADE_ARCHAEOLOGY",										-- Cache of Madness
+-- Armor Types
 		[-43] = "Interface\\Icons\\inv_chest_cloth_21",										-- Cloth Armor
 		[-44] = "Interface\\Icons\\inv_chest_leather_09",									-- Leather Armor
 		[-45] = "Interface\\Icons\\inv_chest_chain_05",										-- Mail Armor
 		[-46] = "Interface\\Icons\\inv_chest_plate01",										-- Plate Armor
+-- World Events
 		[-47] = "Interface\\Icons\\achievement_worldevent_lunar",							-- Lunar Festival
+		
+		
 		[-52] = "Interface\\Icons\\inv_misc_toy_04",										-- Children's Week
 		[-53] = "Interface\\Icons\\inv_summerfest_symbol_high",								-- Midsummer Fire Festival
 		[-54] = "Interface\\Icons\\inv_summerfest_symbol_low",								-- Unused (Previously: Midsummer Fire Festival [Horde])
@@ -887,13 +896,13 @@ app.L = {
 		[-60] = "Interface\\Icons\\inv_thanksgiving_turkey",								-- Pilgrim's Bounty
 		[-61] = "Interface\\Icons\\achievement_worldevent_merrymaker",						-- The Feast of Winter Veil
 		[-62] = "Interface\\Icons\\inv_misc_fish_06",										-- Stranglethorn Fishing Extravaganza
-		[-63] = "Interface\\Calendar\\Holidays\\calendar_transmogpopularityconteststart",	-- Trial of Style
-		[-64] = "Interface\\Icons\\inv_misc_book_07",										-- Main Questline
-		[-66] = "Interface\\Icons\\PetJournalPortrait ",									-- Pet Battle
+		
+		
 		[-68] = "Interface\\Icons\\spell_arcane_portalshattrath",							-- The Emerald Dream
 		[-69] = "Interface\\Icons\\spell_arcane_portalironforge",							-- Maraudon Purple
 		[-70] = "Interface\\Icons\\INV_Jewelcrafting_ArgusGemUncut_Orange_MiscIcons",		-- Orange
 		[-71] = "Interface\\Icons\\INV_Jewelcrafting_ArgusGemUncut_Purple_MiscIcons",		-- Purple
+		--[-72] Used for rare in Talador													-- Sargerei War Council
 		[-73] = "Interface\\Icons\\achievement_zone_silithus_01",							-- Call of the Scarab
 		[-75] = "Interface\\Icons\\Achievement_Zone_Blackrock_01",							-- Detention Block
 		[-76] = "Interface\\Icons\\Achievement_Zone_Blackrock_01",							-- Shadowforge City
@@ -910,10 +919,11 @@ app.L = {
 		[-87] = "Interface\\Icons\\Garrison_Building_Armory",								-- Armory (SM)
 		[-88] = "Interface\\Icons\\Ability_Paladin_GaurdedbytheLight",						-- Cathedral (SM)
 		[-90] = "Interface\\Icons\\INV_Misc_Bone_Skull_01",									-- Elite
-		[-91] = "Interface\\Icons\\INV_Misc_Dust_02",										-- Deprecated
-		[-92] = "Interface\\Icons\\inv_misc_head_gnoll_01",									-- Meatball Instructions
+
+		
 		[-93] = "Interface\\Icons\\Achievement_zone_silithus_01",							-- Silithus (The Wound)
 		[-94] = "Interface\\Icons\\inv_misc_lockbox_1",										-- Black Market AH
+		
 		[-96] = "Interface\\Icons\\Achievement_Quests_Completed_08",						-- Quest NPCs
 		[-97] = "Interface\\Icons\\ability_rogue_dirtydeeds",								-- Never Implemented
 		[-98] = "Interface\\Icons\\inv_garrison_resource",									-- Garrisons
@@ -921,8 +931,6 @@ app.L = {
 		[-101] = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",					-- Followers
 		[-136] = "Interface\\Icons\\achievement_bg_defendxtowers_av",						-- Garrison Invasion
 		[-139] = app.asset("Interface_World_boss"),											-- Raid Bosses
-		[-141] = "Interface\\Icons\\ClassIcon_Warlock",										-- Warlock
-		[-142] = "Interface\\Icons\\ClassIcon_DeathKnight",									-- Death Knight
 		[-143] = "Interface\\Icons\\ClassIcon_Rogue",										-- Rogue
 		[-144] = "Interface\\Icons\\ClassIcon_Monk",										-- Monk
 		[-145] = "Interface\\Icons\\ClassIcon_Mage",										-- Mage
@@ -1468,7 +1476,7 @@ app.L = {
 		[-2] = TUTORIAL_TITLE20,												-- Vendors
 		[-3] = GetItemSubClassInfo(15,3),										-- World Event
 		[-4] = ACHIEVEMENTS,													-- Achievements
-		[-5] = "Prospecting",
+		[-5] = "Prospecting",													-- Prospecting
 		[-7] = WORLD.." "..RAID_BOSSES,											-- World Bosses
 		[-9] = GDAPI_REALMTYPE_PVP,												-- PvP
 		[-10] = SPLASH_BATTLEFORAZEROTH_8_2_5_FEATURE1_TITLE,					-- Party Sync
@@ -1485,14 +1493,21 @@ app.L = {
 		[-21] = "Captains",
 		[-22] = "Secrets",														-- Secrets
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
+		
+		
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
+		
+
 		[-31] = select(1,GetCategoryInfo(15268)),								-- Promotions
+
+
 		[-34] = TRACKER_HEADER_WORLD_QUESTS,									-- World Quests
 		[-36] = BATTLE_PET_SOURCE_10,											-- In-Game Shop
 		[-37] = BATTLE_PET_SOURCE_11,											-- Discovery
 		[-38] = TRADE_SKILLS,													-- Professions
+
 		[-40] = LFG_LIST_LEGACY,												-- Legacy
-		[-41] = "Cache of Madness",
+		[-41] = "Cache of Madness",												-- Cache of Madness
 -- Armor Types
 		[-43] = GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME,				-- Cloth
 		[-44] = GetItemSubClassInfo(4,2).." "..RESISTANCE0_NAME,				-- Leather
@@ -1500,21 +1515,24 @@ app.L = {
 		[-46] = GetItemSubClassInfo(4,4).." "..RESISTANCE0_NAME,				-- Plate
 -- World Events
 		[-47] = select(1,GetCategoryInfo(160)),									-- Lunar Festival
-		[-48] = MINIMAP_TRACKING_STABLEMASTER,									-- Stable Master
+
+
 		[-52] = select(1,GetCategoryInfo(163)),									-- Children's Week
 		[-53] = "Midsummer Fire Festival",										-- Midsummer Fire Festival
-		[-55] = "Pirates' Day",
+		[-55] = "Pirates' Day",													-- Pirates' Day
 		[-56] = select(1,GetCategoryInfo(162)),									-- Brewfest
 		[-58] = select(1,GetCategoryInfo(158)),									-- Hallow's End
-		[-59] = "Day of the Dead",
+		[-59] = "Day of the Dead",												-- Day of the Dead
 		[-60] = select(1,GetCategoryInfo(14981)),								-- Pilgrim's Bounty
 		[-61] = GetSpellInfo(21953),											-- The Feast of Winter Veil
 		[-62] = "Stranglethorn Fishing Extravaganza",
+		
+		
 		[-68] = DUNGEON_FLOOR_NIGHTMARERAID13,									-- The Emerald Dream
 		[-69] = GetSpellInfo(21127),											-- Maraudon Portal
 		[-70] = DUNGEON_FLOOR_DESOLACE22.." - "..GetSpellInfo(251097),			-- Foulspore Cavern [Orange]
 		[-71] = DUNGEON_FLOOR_DESOLACE21.." - "..GetSpellInfo(251095),			-- The Wicked Grotto [Purple]
-		[-72] = "Sargerei War Council",
+		[-72] = "Sargerei War Council",											-- Sargerei War Council
 		[-75] = DUNGEON_FLOOR_BLACKROCKDEPTHS1,									-- Detention Block
 		[-76] = DUNGEON_FLOOR_BLACKROCKDEPTHS2,									-- Shadowforge City
 		[-77] = SPECIAL,														-- Special
@@ -1529,6 +1547,7 @@ app.L = {
 		[-87] = "Armory",
 		[-88] = "Cathedral",
 		[-90] = ELITE,															-- Elite
+	
 		[-93] = C_Map.GetAreaInfo(9310),										-- Silithus: The Wound
 		[-94] = BLACK_MARKET_AUCTION_HOUSE,										-- Black Market Auction House
 -- TODO: Garrison Note: These will be changed into a new class soon(TM)
@@ -1546,8 +1565,6 @@ app.L = {
 		[-138] = string.format(SPELLBOOK_AVAILABLE_AT, 100),					-- Level 100
 		[-139] = RAID_BOSSES,													-- Bosses
 -- Class Trial Sets
-		[-141] = "Felsoul",
-		[-142] = "Heart-Lesion",
 		[-143] = "Lightdrinker",
 		[-144] = "Mistdancer",
 		[-145] = "Mountainsage",

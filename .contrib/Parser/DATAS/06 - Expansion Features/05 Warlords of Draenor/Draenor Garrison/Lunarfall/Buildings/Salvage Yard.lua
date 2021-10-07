@@ -107,36 +107,30 @@ _.ExpansionFeatures =
 									i(119690),	-- Communal Stave
 									i(119665),	-- Communal Wand
 								}),
-								n(-141, {	-- Felsoul
-									["classes"] = { WARLOCK },
-									["g"] = {
-										i(119762),	-- Felsoul Cowl
-										i(119766),	-- Felsoul Cord
-										i(119761),	-- Felsoul Handwraps
-										i(119763),	-- Felsoul Leggings
-										i(119764),	-- Felsoul Robe
-										i(119760),	-- Felsoul Sandals
-										i(119765),	-- Felsoul Shoulderpads
-										i(119770),	-- Felsoul Staff
-										i(119768),	-- Felsoul Wand
-										i(119767),	-- Felsoul Wristwraps
-									},
+								cl(WARLOCK, {
+									i(119762),	-- Felsoul Cowl
+									i(119766),	-- Felsoul Cord
+									i(119761),	-- Felsoul Handwraps
+									i(119763),	-- Felsoul Leggings
+									i(119764),	-- Felsoul Robe
+									i(119760),	-- Felsoul Sandals
+									i(119765),	-- Felsoul Shoulderpads
+									i(119770),	-- Felsoul Staff
+									i(119768),	-- Felsoul Wand
+									i(119767),	-- Felsoul Wristwraps
 								}),
-								n(-142, {	-- Heart-Lesion
-									["classes"] = { DEATHKNIGHT },
-									["g"] = {
-										i(119478),	-- Heart-Lesion Blade
-										i(119470),	-- Heart-Lesion Breastplate
-										i(119472),	-- Heart-Lesion Gauntlets
-										i(119476),	-- Heart-Lesion Girdle
-										i(119469),	-- Heart-Lesion Greatsword
-										i(119473),	-- Heart-Lesion Helm
-										i(119474),	-- Heart-Lesion Legplates
-										i(119475),	-- Heart-Lesion Pauldrons
-										i(119499),	-- Heart-Lesion Runeblade
-										i(119471),	-- Heart-Lesion Sabatons
-										i(119477),	-- Heart-Lesion Vambraces
-									},
+								cl(DEATHKNIGHT, {
+									i(119478),	-- Heart-Lesion Blade
+									i(119470),	-- Heart-Lesion Breastplate
+									i(119472),	-- Heart-Lesion Gauntlets
+									i(119476),	-- Heart-Lesion Girdle
+									i(119469),	-- Heart-Lesion Greatsword
+									i(119473),	-- Heart-Lesion Helm
+									i(119474),	-- Heart-Lesion Legplates
+									i(119475),	-- Heart-Lesion Pauldrons
+									i(119499),	-- Heart-Lesion Runeblade
+									i(119471),	-- Heart-Lesion Sabatons
+									i(119477),	-- Heart-Lesion Vambraces
 								}),
 								n(-143, {	-- Lightdrinker
 									["classes"] = { ROGUE },
