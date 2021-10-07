@@ -736,6 +736,13 @@ _.Zones =
 						}),
 					},
 				}),
+				q(64554, {	-- Venthyr Assault (as reported via the world quest API, sometimes?)
+					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
+					["altQuests"] = { 63822 },	-- Venthyr Assault
+					["provider"] = { "n", 178006 },	-- Prince Renathal
+					["isWeekly"] = true,
+					["coord"] = { 29.9, 17.1, THE_MAW },
+				}),
 				q(63822, {	-- Venthyr Assault
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["altQuests"] = { 64554 },	-- Venthyr Assault (as reported via the world quest API)
