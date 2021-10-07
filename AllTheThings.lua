@@ -2148,12 +2148,12 @@ local keysByPriority = {	-- Sorted by frequency of use.
 	"headerID"
 };
 local function GetKey(t)
-	for i,key in ipairs(keysByPriority) do
+	for _,key in ipairs(keysByPriority) do
 		if rawget(t, key) then
 			return key;
 		end
 	end
-	for i,key in ipairs(keysByPriority) do
+	for _,key in ipairs(keysByPriority) do
 		if t[key] then	-- This goes a bit deeper.
 			return key;
 		end
@@ -2212,17 +2212,14 @@ local function CreateHash(t)
 		return hash;
 	end
 end
-local function GetHash(t)
-	return t.hash or CreateHash(t);
-end
-app.GetHash = GetHash;
+app.CreateHash = CreateHash;
 MergeObject = function(g, t, index, newCreate)
 	if g and t then
-		local hash = GetHash(t);
+		local hash = t.hash;
 		-- print("_",hash);
 		if hash then
 			for i,o in ipairs(g) do
-				if GetHash(o) == hash then
+				if o.hash == hash then
 					MergeProperties(o, t, true);
 					NestObjects(o, t.g, newCreate);
 					return o;
@@ -2251,7 +2248,7 @@ MergeObjects = function(g, g2, newCreate)
 	if g2 and #g2 > 25 then
 		local hashTable,t = {};
 		for i,o in ipairs(g) do
-			local hash = GetHash(o);
+			local hash = o.hash;
 			if hash then
 				hashTable[hash] = o;
 			end
@@ -2259,7 +2256,7 @@ MergeObjects = function(g, g2, newCreate)
 		local hash;
 		if newCreate then
 			for i,o in ipairs(g2) do
-				hash = GetHash(o);
+				hash = o.hash;
 				-- print("_",hash);
 				if hash then
 					t = hashTable[hash];
@@ -2277,7 +2274,7 @@ MergeObjects = function(g, g2, newCreate)
 			end
 		else
 			for i,o in ipairs(g2) do
-				hash = GetHash(o);
+				hash = o.hash;
 				-- print("_",hash);
 				if hash then
 					t = hashTable[hash];
@@ -6238,6 +6235,7 @@ app.BaseObjectFields = function(fields, type)
 		if not _cache then
 			-- special re-direct keys possible for 'any' Type of object
 			if key == "parent" then return t.sourceParent; end
+			if key == "hash" then return app.CreateHash(t); end
 			if key == "__type" then return type; end
 			-- use default key value if existing
 			return ObjectDefaults[key];
@@ -10818,7 +10816,7 @@ end
 -- Vignettes copy Quest fields
 local fields = RawCloneData(questFields);
 local function BuildTextFromNPCIDs(t, npcIDs)
-	if not npcIDs or #npcIDs == 0 then app.report("Invalid Vignette! "..(app.GetHash(t) or "[NOHASH]")) end
+	if not npcIDs or #npcIDs == 0 then app.report("Invalid Vignette! "..(t.hash or "[NOHASH]")) end
 	local retry, name;
 	local textTbl = {};
 	for i,npcID in ipairs(npcIDs) do
@@ -19433,7 +19431,7 @@ end
 	-- local function GetNavPath(group)
 	-- 	local current, nav, hash = group;
 	-- 	repeat
-	-- 		hash = app.GetHash(current);
+	-- 		hash = current.hash;
 	-- 		if hash then
 	-- 			if nav then
 	-- 				nav = hash .. ">" .. nav;
