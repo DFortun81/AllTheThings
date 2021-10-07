@@ -589,7 +589,7 @@ local L = app.L;
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
-	["Antorus, the Burning Throne"] = "安托鲁斯",	-- ["Antorus, the Burning Throne"] = "Antorus"
+	["安托鲁斯，燃烧王座"] = "安托鲁斯",	-- ["Antorus, the Burning Throne"] = "Antorus"
 	["Expansion Pre"] = "前夕",	-- ["Expansion Pre"] = "Pre"
 	--TODO: ["Expansion Features"] = "EF",
 	["Dungeons & Raids"] = "地下城和团本",	-- ["Dungeons & Raids"] = "D&R"
@@ -609,8 +609,8 @@ for key,value in pairs({
 	--TODO: ["Normal"] = "N",
 	--TODO: ["Heroic"] = "H",
 	--TODO: ["Mythic"] = "M",
-	["尼奥罗萨，觉醒之城"] = "尼奥罗萨",											-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
-	["塔扎维什，帷纱集市"] = "塔扎维什",											-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+	["尼奥罗萨，觉醒之城"] = "尼奥罗萨",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+	["塔扎维什，帷纱集市"] = "塔扎维什",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 	--TODO: ["10 Player"] = "10M",
 	--TODO: ["10 Player (Heroic)"] = "10M (H)",
 	--TODO: ["25 Player"] = "25M",
@@ -622,8 +622,9 @@ for key,value in pairs({
 })
 do a[key] = value; end
 if GetLocale() == "zhTW" then
-	a["奈奧羅薩，甦醒之城"] = "奈奧羅薩"											-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
-	a["『帷幕市集』塔札維許"] = "塔札維許"										-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+	["安托洛斯，燃燒王座"] = "安托洛斯"	-- ["Antorus, the Burning Throne"] = "Antorus"
+	a["奈奧羅薩，甦醒之城"] = "奈奧羅薩"	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+	a["『帷幕市集』塔札維許"] = "塔札維許"	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 end
 
 L.CUSTOM_DIFFICULTIES[-1] = "团队查找器 (5.4)";

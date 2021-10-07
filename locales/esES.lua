@@ -556,7 +556,7 @@ local L = app.L;
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
-		--TODO: ["Antorus, the Burning Throne"] = "Antorus",
+		["Antorus, el Trono Ardiente"] = "Antorus",	-- ["Antorus, the Burning Throne"] = "Antorus"
 		--TODO: ["Expansion Pre"] = "Pre",
 		--TODO: ["Expansion Features"] = "EF",
 		--TODO: ["Dungeons & Raids"] = "D&R",
@@ -576,8 +576,8 @@ for key,value in pairs({
 		--TODO: ["Normal"] = "N",
 		--TODO: ["Heroic"] = "H",
 		--TODO: ["Mythic"] = "M",
-		["Ny'alotha, Ciudad del Despertar"] = "Ny'alotha",			-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
-		["Tazavesh, el Mercado Velado"] = "Tazavesh",				-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+		["Ny'alotha, Ciudad del Despertar"] = "Ny'alotha",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+		["Tazavesh, el Mercado Velado"] = "Tazavesh",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 		--TODO: ["10 Player"] = "10M",
 		--TODO: ["10 Player (Heroic)"] = "10M (H)",
 		--TODO: ["25 Player"] = "25M",
@@ -589,7 +589,8 @@ for key,value in pairs({
 })
 do a[key] = value; end
 if GetLocale() == "esMX" then
-	a["Ny'alotha, la Ciudad Despierta"] = "Ny'alotha"				-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+	["Antorus, el Trono ardiente"] = "Antorus"	-- ["Antorus, the Burning Throne"] = "Antorus"
+	a["Ny'alotha, la Ciudad Despierta"] = "Ny'alotha"	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
 end
 
 --TODO: L.CUSTOM_DIFFICULTIES[-1] = "Raid Finder (5.4)";

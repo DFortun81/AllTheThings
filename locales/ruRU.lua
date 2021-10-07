@@ -550,7 +550,7 @@ local L = app.L;
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
-	["Анторус, Пылающий Трон"] = "Анторус";
+	["Анторус, Пылающий Трон"] = "Анторус";	-- ["Antorus, the Burning Throne"] = "Antorus"
 	["Expansion Pre"] = "Препатч";
 	["Особый контент"] = "ОК";
 	["Подземелья и рейды"] = "П и Р";
@@ -561,7 +561,7 @@ for key,value in pairs({
 	["Обычный"] = "О";
 	["Героический"] = "Г";
 	["Эпохальный"] = "Э";
-	["Тайный рынок Тазавеш"] = "Тазавеш";							-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+	["Тайный рынок Тазавеш"] = "Тазавеш";	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 	["10 игроков"] = "10";
 	["25 игроков"] = "25";
 	["героич."] = "гер.";

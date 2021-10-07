@@ -556,7 +556,7 @@ local L = app.L;
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
-		--TODO: ["Antorus, the Burning Throne"] = "Antorus",
+		["Antorus, o Trono Ardente"] = "Antorus",	-- ["Antorus, the Burning Throne"] = "Antorus"
 		--TODO: ["Expansion Pre"] = "Pre",
 		--TODO: ["Expansion Features"] = "EF",
 		--TODO: ["Dungeons & Raids"] = "D&R",
@@ -576,8 +576,8 @@ for key,value in pairs({
 		--TODO: ["Normal"] = "N",
 		--TODO: ["Heroic"] = "H",
 		--TODO: ["Mythic"] = "M",
-		["Ny'alotha, a Cidade Desperta"] = "Ny'alotha",				-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
-		["Tazavesh, o Mercado Oculto"] = "Tazavesh",				-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+		["Ny'alotha, a Cidade Desperta"] = "Ny'alotha",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+		["Tazavesh, o Mercado Oculto"] = "Tazavesh",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 		--TODO: ["10 Player"] = "10M",
 		--TODO: ["10 Player (Heroic)"] = "10M (H)",
 		--TODO: ["25 Player"] = "25M",
