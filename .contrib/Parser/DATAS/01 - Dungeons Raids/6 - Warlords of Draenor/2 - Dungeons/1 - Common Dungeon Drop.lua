@@ -16,9 +16,11 @@ _.Instances = {
 		n(-23, {
 			["description"] = "tbd",
 			["g"] = {
-				i(141643),	-- Technique: Codex of the Clear Mind
+				i(141643, {	-- Technique: Codex of the Clear Mind
+					["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS },
+				}),
 				d(1, {	-- Normal
-					n(HANDS, bubbleDown({ ["crs"] = { BLOOM }, },{
+					n(HANDS, bubbleDown({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109861),	-- Felflame Grips
 						i(109845),	-- Frost-Touched Gloves
 						i(109847),	-- Lightbinder Gloves
@@ -62,7 +64,7 @@ _.Instances = {
 							i(109857),	-- Verdant Plate Grips
 						})),
 					})),
-					n(WAIST, bubbleDown({ ["crs"] = { BLOOM }, },{
+					n(WAIST, bubbleDown({ ["crs"] = { AUCH, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109828),	-- Felflame Belt
 						i(109825),	-- Frost-Touched Cord
 						i(109827),	-- Lightbinder Girdle
@@ -106,7 +108,7 @@ _.Instances = {
 							i(109838),	-- Verdant Plate Belt
 						})),
 					})),
-					n(LEGS, bubbleDown({ ["crs"] = { BLOOM }, },{
+					n(LEGS, bubbleDown({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SKY, BLOOM, UBRS }, },{
 						i(109808),	-- Felflame Legwraps
 						i(109805),	-- Frost-Touched Legwraps
 						i(109807),	-- Lightbinder Leggings
@@ -150,7 +152,7 @@ _.Instances = {
 							i(109819),	-- Verdant Plate Legguards
 						})),
 					})),
-					n(CHEST, bubbleDown({ ["crs"] = { BLOOM }, },{
+					n(CHEST, bubbleDown({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, BLOOM, UBRS }, },{
 						i(109903),	-- Felflame Robes
 						i(109900),	-- Frost-Touched Robes
 						i(109902),	-- Lightbinder Robes
@@ -194,7 +196,7 @@ _.Instances = {
 							i(109893),	-- Verdant Plate Chest
 						})),
 					})),
-					n(FEET, bubbleDown({ ["crs"] = { BLOOM }, },{
+					n(FEET, bubbleDown({ ["crs"] = { AUCH, BSM, SBG, SKY, BLOOM, UBRS }, },{
 						i(109797),	-- Felflame Sandals
 						i(109785),	-- Frost-Touched Boots
 						i(109796),	-- Lightbinder Treads
@@ -238,7 +240,7 @@ _.Instances = {
 							i(109794),	-- Verdant Plate Treads
 						})),
 					})),
-					n(HEAD, bubbleDown({ ["crs"] = { BLOOM }, },{
+					n(HEAD, bubbleDown({ ["crs"] = { BSM, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109974),	-- Felflame Hood
 						i(109971),	-- Frost-Touched Hood
 						i(109973),	-- Lightbinder Cover
@@ -282,7 +284,7 @@ _.Instances = {
 							i(109986),	-- Verdant Plate Crown
 						})),
 					})),
-					n(WRIST, bubbleDown({ ["crs"] = { BLOOM }, },{
+					n(WRIST, bubbleDown({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109881),	-- Felflame Bracers
 						i(109865),	-- Frost-Touched Wristwraps
 						i(109867),	-- Lightbinder Wristwraps
@@ -326,7 +328,7 @@ _.Instances = {
 							i(109877),	-- Verdant Plate Wristguards
 						})),
 					})),
-					n(SHOULDER, bubbleDown({ ["crs"] = { BLOOM }, },{
+					n(SHOULDER, bubbleDown({ ["crs"] = { BSM, DOCKS, SKY, BLOOM, UBRS }, },{
 						i(109948),	-- Felflame Spaulders
 						i(109931),	-- Frost-Touched Shoulderpads
 						i(109933),	-- Lightbinder Shoulderpads
@@ -370,7 +372,7 @@ _.Instances = {
 							i(109944),	-- Verdant Plate Spaulders
 						})),
 					})),
-					n(CLOAK, bubbleDown({ ["crs"] = { BLOOM }, },{
+					n(CLOAK, bubbleDown({ ["crs"] = { AUCH, BSM, SBG, BLOOM, UBRS }, },{
 						i(109912),	-- Bloody-Blade Drape
 						i(109911),	-- Cloak of Annealing Flesh
 						i(109908),	-- Cloak of Arcane Mysteries
@@ -414,7 +416,7 @@ _.Instances = {
 							i(109917),	-- Three-Clefthoof Cape
 						})),
 					})),
-					n(NECK, bubbleDown({ ["crs"] = { BLOOM }, },{
+					n(NECK, bubbleDown({ ["crs"] = { AUCH, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109957),	-- Alc's Pendant of Fiery Dreams
 						i(109962),	-- Bloodmist Pendant
 						i(109959),	-- Chain of Soothing Light
@@ -458,7 +460,7 @@ _.Instances = {
 							i(109953),	-- Windseal Necklace
 						})),
 					})),
-					n(FINGER, bubbleDown({ ["crs"] = { BLOOM }, },{
+					n(FINGER, bubbleDown({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109779),	-- Ancient Draenic Loop
 						i(109768),	-- Band of Growing Leaves
 						i(109773),	-- Band of Iron Scale
@@ -514,7 +516,7 @@ _.Instances = {
 					})),
 				}),
 				d(2, {	-- Heroic
-					n(HANDS, sharedData({ ["crs"] = { BLOOM }, },{
+					n(HANDS, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109861),	-- Felflame Grips
 						i(109845),	-- Frost-Touched Gloves
 						i(109847),	-- Lightbinder Gloves
@@ -536,7 +538,7 @@ _.Instances = {
 						i(109860),	-- Rivet-Sealed Crushers
 						i(109857),	-- Verdant Plate Grips
 					})),
-					n(WAIST, sharedData({ ["crs"] = { BLOOM }, },{
+					n(WAIST, sharedData({ ["crs"] = { AUCH, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109828),	-- Felflame Belt
 						i(109825),	-- Frost-Touched Cord
 						i(109827),	-- Lightbinder Girdle
@@ -558,7 +560,7 @@ _.Instances = {
 						i(109841),	-- Rivet-Sealed Waistplate
 						i(109838),	-- Verdant Plate Belt
 					})),
-					n(LEGS, sharedData({ ["crs"] = { BLOOM }, },{
+					n(LEGS, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SKY, BLOOM, UBRS }, },{
 						i(109808),	-- Felflame Legwraps
 						i(109805),	-- Frost-Touched Legwraps
 						i(109807),	-- Lightbinder Leggings
@@ -580,7 +582,7 @@ _.Instances = {
 						i(109822),	-- Rivet-Sealed Legplates
 						i(109819),	-- Verdant Plate Legguards
 					})),
-					n(CHEST, sharedData({ ["crs"] = { BLOOM }, },{
+					n(CHEST, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, BLOOM, UBRS }, },{
 						i(109903),	-- Felflame Robes
 						i(109900),	-- Frost-Touched Robes
 						i(109902),	-- Lightbinder Robes
@@ -602,7 +604,7 @@ _.Instances = {
 						i(109896),	-- Rivet-Sealed Breastplate
 						i(109893),	-- Verdant Plate Chest
 					})),
-					n(FEET, sharedData({ ["crs"] = { BLOOM }, },{
+					n(FEET, sharedData({ ["crs"] = { AUCH, BSM, SBG, SKY, BLOOM, UBRS }, },{
 						i(109797),	-- Felflame Sandals
 						i(109785),	-- Frost-Touched Boots
 						i(109796),	-- Lightbinder Treads
@@ -624,7 +626,7 @@ _.Instances = {
 						i(109803),	-- Rivet-Sealed Treads
 						i(109794),	-- Verdant Plate Treads
 					})),
-					n(HEAD, sharedData({ ["crs"] = { BLOOM }, },{
+					n(HEAD, sharedData({ ["crs"] = { BSM, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109974),	-- Felflame Hood
 						i(109971),	-- Frost-Touched Hood
 						i(109973),	-- Lightbinder Cover
@@ -646,7 +648,7 @@ _.Instances = {
 						i(109989),	-- Rivet-Sealed Casque
 						i(109986),	-- Verdant Plate Crown
 					})),
-					n(WRIST, sharedData({ ["crs"] = { BLOOM }, },{
+					n(WRIST, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109881),	-- Felflame Bracers
 						i(109865),	-- Frost-Touched Wristwraps
 						i(109867),	-- Lightbinder Wristwraps
@@ -668,7 +670,7 @@ _.Instances = {
 						i(109880),	-- Rivet-Sealed Bracers
 						i(109877),	-- Verdant Plate Wristguards
 					})),
-					n(SHOULDER, sharedData({ ["crs"] = { BLOOM }, },{
+					n(SHOULDER, sharedData({ ["crs"] = { BSM, DOCKS, SKY, BLOOM, UBRS }, },{
 						i(109948),	-- Felflame Spaulders
 						i(109931),	-- Frost-Touched Shoulderpads
 						i(109933),	-- Lightbinder Shoulderpads
@@ -690,7 +692,7 @@ _.Instances = {
 						i(109947),	-- Rivet-Sealed Shoulderplates
 						i(109944),	-- Verdant Plate Spaulders
 					})),
-					n(CLOAK, sharedData({ ["crs"] = { BLOOM }, },{
+					n(CLOAK, sharedData({ ["crs"] = { AUCH, BSM, SBG, BLOOM, UBRS }, },{
 						i(109912),	-- Bloody-Blade Drape
 						i(109911),	-- Cloak of Annealing Flesh
 						i(109908),	-- Cloak of Arcane Mysteries
@@ -712,7 +714,7 @@ _.Instances = {
 						i(109918),	-- Soot-Scarred Longcloak
 						i(109917),	-- Three-Clefthoof Cape
 					})),
-					n(NECK, sharedData({ ["crs"] = { BLOOM }, },{
+					n(NECK, sharedData({ ["crs"] = { AUCH, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109957),	-- Alc's Pendant of Fiery Dreams
 						i(109962),	-- Bloodmist Pendant
 						i(109959),	-- Chain of Soothing Light
@@ -734,7 +736,7 @@ _.Instances = {
 						i(109960),	-- Wavesurge Choker
 						i(109953),	-- Windseal Necklace
 					})),
-					n(FINGER, sharedData({ ["crs"] = { BLOOM }, },{
+					n(FINGER, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109779),	-- Ancient Draenic Loop
 						i(109768),	-- Band of Growing Leaves
 						i(109773),	-- Band of Iron Scale
@@ -763,7 +765,7 @@ _.Instances = {
 					})),
 				}),
 				d(23, {	-- Mythic
-					n(HANDS, sharedData({ ["crs"] = { BLOOM }, },{
+					n(HANDS, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109861),	-- Felflame Grips
 						i(109845),	-- Frost-Touched Gloves
 						i(109847),	-- Lightbinder Gloves
@@ -785,7 +787,7 @@ _.Instances = {
 						i(109860),	-- Rivet-Sealed Crushers
 						i(109857),	-- Verdant Plate Grips
 					})),
-					n(WAIST, sharedData({ ["crs"] = { BLOOM }, },{
+					n(WAIST, sharedData({ ["crs"] = { AUCH, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109828),	-- Felflame Belt
 						i(109825),	-- Frost-Touched Cord
 						i(109827),	-- Lightbinder Girdle
@@ -807,7 +809,7 @@ _.Instances = {
 						i(109841),	-- Rivet-Sealed Waistplate
 						i(109838),	-- Verdant Plate Belt
 					})),
-					n(LEGS, sharedData({ ["crs"] = { BLOOM }, },{
+					n(LEGS, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SKY, BLOOM, UBRS }, },{
 						i(109808),	-- Felflame Legwraps
 						i(109805),	-- Frost-Touched Legwraps
 						i(109807),	-- Lightbinder Leggings
@@ -829,7 +831,7 @@ _.Instances = {
 						i(109822),	-- Rivet-Sealed Legplates
 						i(109819),	-- Verdant Plate Legguards
 					})),
-					n(CHEST, sharedData({ ["crs"] = { BLOOM }, },{
+					n(CHEST, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, BLOOM, UBRS }, },{
 						i(109903),	-- Felflame Robes
 						i(109900),	-- Frost-Touched Robes
 						i(109902),	-- Lightbinder Robes
@@ -851,7 +853,7 @@ _.Instances = {
 						i(109896),	-- Rivet-Sealed Breastplate
 						i(109893),	-- Verdant Plate Chest
 					})),
-					n(FEET, sharedData({ ["crs"] = { BLOOM }, },{
+					n(FEET, sharedData({ ["crs"] = { AUCH, BSM, SBG, SKY, BLOOM, UBRS }, },{
 						i(109797),	-- Felflame Sandals
 						i(109785),	-- Frost-Touched Boots
 						i(109796),	-- Lightbinder Treads
@@ -873,7 +875,7 @@ _.Instances = {
 						i(109803),	-- Rivet-Sealed Treads
 						i(109794),	-- Verdant Plate Treads
 					})),
-					n(HEAD, sharedData({ ["crs"] = { BLOOM }, },{
+					n(HEAD, sharedData({ ["crs"] = { BSM, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109974),	-- Felflame Hood
 						i(109971),	-- Frost-Touched Hood
 						i(109973),	-- Lightbinder Cover
@@ -895,7 +897,7 @@ _.Instances = {
 						i(109989),	-- Rivet-Sealed Casque
 						i(109986),	-- Verdant Plate Crown
 					})),
-					n(WRIST, sharedData({ ["crs"] = { BLOOM }, },{
+					n(WRIST, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109881),	-- Felflame Bracers
 						i(109865),	-- Frost-Touched Wristwraps
 						i(109867),	-- Lightbinder Wristwraps
@@ -917,7 +919,7 @@ _.Instances = {
 						i(109880),	-- Rivet-Sealed Bracers
 						i(109877),	-- Verdant Plate Wristguards
 					})),
-					n(SHOULDER, sharedData({ ["crs"] = { BLOOM }, },{
+					n(SHOULDER, sharedData({ ["crs"] = { BSM, DOCKS, SKY, BLOOM, UBRS }, },{
 						i(109948),	-- Felflame Spaulders
 						i(109931),	-- Frost-Touched Shoulderpads
 						i(109933),	-- Lightbinder Shoulderpads
@@ -939,7 +941,7 @@ _.Instances = {
 						i(109947),	-- Rivet-Sealed Shoulderplates
 						i(109944),	-- Verdant Plate Spaulders
 					})),
-					n(CLOAK, sharedData({ ["crs"] = { BLOOM }, },{
+					n(CLOAK, sharedData({ ["crs"] = { AUCH, BSM, SBG, BLOOM, UBRS }, },{
 						i(109912),	-- Bloody-Blade Drape
 						i(109911),	-- Cloak of Annealing Flesh
 						i(109908),	-- Cloak of Arcane Mysteries
@@ -961,7 +963,7 @@ _.Instances = {
 						i(109918),	-- Soot-Scarred Longcloak
 						i(109917),	-- Three-Clefthoof Cape
 					})),
-					n(NECK, sharedData({ ["crs"] = { BLOOM }, },{
+					n(NECK, sharedData({ ["crs"] = { AUCH, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109957),	-- Alc's Pendant of Fiery Dreams
 						i(109962),	-- Bloodmist Pendant
 						i(109959),	-- Chain of Soothing Light
@@ -983,7 +985,7 @@ _.Instances = {
 						i(109960),	-- Wavesurge Choker
 						i(109953),	-- Windseal Necklace
 					})),
-					n(FINGER, sharedData({ ["crs"] = { BLOOM }, },{
+					n(FINGER, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109779),	-- Ancient Draenic Loop
 						i(109768),	-- Band of Growing Leaves
 						i(109773),	-- Band of Iron Scale
@@ -1012,7 +1014,7 @@ _.Instances = {
 					})),
 				}),
 				d(24, {	-- Timewalking
-					n(HANDS, sharedData({ ["crs"] = { BLOOM }, },{
+					n(HANDS, sharedData({ ["crs"] = { AUCH, BSM, DOCKS, SBG, SKY, BLOOM }, },{
 						i(109861),	-- Felflame Grips
 						i(109845),	-- Frost-Touched Gloves
 						i(109847),	-- Lightbinder Gloves
@@ -1034,7 +1036,7 @@ _.Instances = {
 						i(109860),	-- Rivet-Sealed Crushers
 						i(109857),	-- Verdant Plate Grips
 					})),
-					n(WAIST, sharedData({ ["crs"] = { BLOOM }, },{
+					n(WAIST, sharedData({ ["crs"] = { AUCH, DOCKS, SBG, SKY, BLOOM }, },{
 						i(109828),	-- Felflame Belt
 						i(109825),	-- Frost-Touched Cord
 						i(109827),	-- Lightbinder Girdle
@@ -1056,7 +1058,7 @@ _.Instances = {
 						i(109841),	-- Rivet-Sealed Waistplate
 						i(109838),	-- Verdant Plate Belt
 					})),
-					n(LEGS, sharedData({ ["crs"] = { BLOOM }, },{
+					n(LEGS, sharedData({ ["crs"] = { AUCH, BSM, DOCKS, SKY, BLOOM }, },{
 						i(109808),	-- Felflame Legwraps
 						i(109805),	-- Frost-Touched Legwraps
 						i(109807),	-- Lightbinder Leggings
@@ -1078,7 +1080,7 @@ _.Instances = {
 						i(109822),	-- Rivet-Sealed Legplates
 						i(109819),	-- Verdant Plate Legguards
 					})),
-					n(CHEST, sharedData({ ["crs"] = { BLOOM }, },{
+					n(CHEST, sharedData({ ["crs"] = { AUCH, BSM, DOCKS, SBG, BLOOM }, },{
 						i(109903),	-- Felflame Robes
 						i(109900),	-- Frost-Touched Robes
 						i(109902),	-- Lightbinder Robes
@@ -1100,7 +1102,7 @@ _.Instances = {
 						i(109896),	-- Rivet-Sealed Breastplate
 						i(109893),	-- Verdant Plate Chest
 					})),
-					n(FEET, sharedData({ ["crs"] = { BLOOM }, },{
+					n(FEET, sharedData({ ["crs"] = { AUCH, BSM, SBG, SKY, BLOOM }, },{
 						i(109797),	-- Felflame Sandals
 						i(109785),	-- Frost-Touched Boots
 						i(109796),	-- Lightbinder Treads
@@ -1122,7 +1124,7 @@ _.Instances = {
 						i(109803),	-- Rivet-Sealed Treads
 						i(109794),	-- Verdant Plate Treads
 					})),
-					n(HEAD, sharedData({ ["crs"] = { BLOOM }, },{
+					n(HEAD, sharedData({ ["crs"] = { BSM, DOCKS, SBG, SKY, BLOOM }, },{
 						i(109974),	-- Felflame Hood
 						i(109971),	-- Frost-Touched Hood
 						i(109973),	-- Lightbinder Cover
@@ -1144,7 +1146,7 @@ _.Instances = {
 						i(109989),	-- Rivet-Sealed Casque
 						i(109986),	-- Verdant Plate Crown
 					})),
-					n(WRIST, sharedData({ ["crs"] = { BLOOM }, },{
+					n(WRIST, sharedData({ ["crs"] = { AUCH, BSM, DOCKS, SBG, SKY, BLOOM }, },{
 						i(109881),	-- Felflame Bracers
 						i(109865),	-- Frost-Touched Wristwraps
 						i(109867),	-- Lightbinder Wristwraps
@@ -1166,7 +1168,7 @@ _.Instances = {
 						i(109880),	-- Rivet-Sealed Bracers
 						i(109877),	-- Verdant Plate Wristguards
 					})),
-					n(SHOULDER, sharedData({ ["crs"] = { BLOOM }, },{
+					n(SHOULDER, sharedData({ ["crs"] = { BSM, DOCKS, SKY, BLOOM }, },{
 						i(109948),	-- Felflame Spaulders
 						i(109931),	-- Frost-Touched Shoulderpads
 						i(109933),	-- Lightbinder Shoulderpads
@@ -1188,7 +1190,7 @@ _.Instances = {
 						i(109947),	-- Rivet-Sealed Shoulderplates
 						i(109944),	-- Verdant Plate Spaulders
 					})),
-					n(CLOAK, sharedData({ ["crs"] = { BLOOM }, },{
+					n(CLOAK, sharedData({ ["crs"] = { BSM, AUCH, SBG, BLOOM }, },{
 						i(109912),	-- Bloody-Blade Drape
 						i(109911),	-- Cloak of Annealing Flesh
 						i(109908),	-- Cloak of Arcane Mysteries
@@ -1210,7 +1212,7 @@ _.Instances = {
 						i(109918),	-- Soot-Scarred Longcloak
 						i(109917),	-- Three-Clefthoof Cape
 					})),
-					n(NECK, sharedData({ ["crs"] = { BLOOM }, },{
+					n(NECK, sharedData({ ["crs"] = { AUCH, DOCKS, SBG, SKY, BLOOM }, },{
 						i(109957),	-- Alc's Pendant of Fiery Dreams
 						i(109962),	-- Bloodmist Pendant
 						i(109959),	-- Chain of Soothing Light
@@ -1232,7 +1234,7 @@ _.Instances = {
 						i(109960),	-- Wavesurge Choker
 						i(109953),	-- Windseal Necklace
 					})),
-					n(FINGER, sharedData({ ["crs"] = { BLOOM }, },{
+					n(FINGER, sharedData({ ["crs"] = { BSM, AUCH, DOCKS, SBG, SKY, BLOOM }, },{
 						i(109779),	-- Ancient Draenic Loop
 						i(109768),	-- Band of Growing Leaves
 						i(109773),	-- Band of Iron Scale
