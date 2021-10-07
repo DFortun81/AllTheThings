@@ -463,7 +463,7 @@ local L = app.L;
 		L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "如果你想只更新可见的ATT窗口请启用此选项.\n\n这可以大大减少加载时间并防止在某些情况下出现疯狂掉帧.";
 		L.SKIP_CUTSCENES_CHECKBOX = "自动跳过场景动画";
 		L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "如果想让ATT代表你自动跳过所有场景动画请启用此选项.";
-		--TODO: L.AUTO_BOUNTY_CHECKBOX = "自动打开奖励列表";
+		L.AUTO_BOUNTY_CHECKBOX = "自动打开奖励列表";
 		--TODO: L.AUTO_BOUNTY__CHECKBOX_TOOLTIP = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
 		L.AUTO_MAIN_LIST_CHECKBOX = "自动打开主列表";
 		L.AUTO_MAIN_LIST_CHECKBOX_TOOLTIP = "如果你想在登录时自动打开主列表请启用此选项.\n\n你也可以将此设置绑定到一个键上:\n\n按键设置 -> 插件 -> ALL THE THINGS -> 打开/关闭主列表\n\n快捷命令: /att";
@@ -589,10 +589,10 @@ local L = app.L;
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
-	["Antorus, the Burning Throne"] = "安托鲁斯",
-	["Expansion Pre"] = "前夕",
+	["Antorus, the Burning Throne"] = "安托鲁斯",	-- ["Antorus, the Burning Throne"] = "Antorus"
+	["Expansion Pre"] = "前夕",	-- ["Expansion Pre"] = "Pre"
 	--TODO: ["Expansion Features"] = "EF",
-	["Dungeons & Raids"] = "地下城和团本",
+	["Dungeons & Raids"] = "地下城和团本",	-- ["Dungeons & Raids"] = "D&R"
 	--TODO: ["The Burning Crusade"] = "BC",
 	--TODO: ["Burning Crusade"] = "BC",
 	--TODO: ["The BC"] = "BC",
@@ -616,9 +616,9 @@ for key,value in pairs({
 	--TODO: ["25 Player"] = "25M",
 	--TODO: ["25 Player (Heroic)"] = "25M (H)",
 	--TODO: ["Emissary Quests"] = "Emissary",
-	["World Quests"] = "世界任务",
+	["World Quests"] = "世界任务",	-- ["World Quests"] = "WQ"
 	--TODO: ["WoW Anniversary"] = "Anniversary",
-	["Covenant:"] = "盟约:",
+	["Covenant:"] = "盟约:",	-- ["Covenant:"] = "Cov:"
 })
 do a[key] = value; end
 if GetLocale() == "zhTW" then
@@ -839,11 +839,11 @@ for key,value in pairs({
 		[-903] = "区域奖励",											-- Zone Rewards
 		[-906] = "等级 1: 战术洞察",									-- Tier 1: Tactical Insight
 		[-907] = "死掉的布兰契",										-- Dead Blanchy
-		[-909] = "狩猎: 死亡元素",					-- Hunt: Death Elementals
-		[-910] = "狩猎: 噬魂者",					-- Hunt: Alpha Devourers
-		[-911] = "狩猎: 影犬",						-- Hunt: Shadehounds
-		[-912] = "狩猎: 飞翼噬魂者",				-- Hunt: Winged Soul Eaters
-		[-913] = "托加斯特的折磨者",					-- Tormentors of Torghast
+		[-909] = "狩猎: 死亡元素",										-- Hunt: Death Elementals
+		[-910] = "狩猎: 噬魂者",											-- Hunt: Alpha Devourers
+		[-911] = "狩猎: 影犬",											-- Hunt: Shadehounds
+		[-912] = "狩猎: 飞翼噬魂者",										-- Hunt: Winged Soul Eaters
+		[-913] = "托加斯特的折磨者",										-- Tormentors of Torghast
 		--TODO: [-914] = "Adventures",								-- Adventures
 		[-915] = "心能导流器",										-- Anima Conductor
 		[-916] = string.format(COVENANT_SANCTUM_TIER, 1)..": 流动卷须",	-- Tier 1: Flowing Tendrils
@@ -853,7 +853,7 @@ for key,value in pairs({
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 
 		-- SL Maldraxxus/Necrolord
-			[-921] = "圣所升级",					-- Sanctum Upgrades (Necrolord)
+			[-921] = "圣所升级",										-- Sanctum Upgrades (Necrolord)
 			[-924] = "传送网络",										-- Transport Network (Necrolord)
 			[-925] = string.format(COVENANT_SANCTUM_TIER, 1)..": 建造伙伴",	-- Abomination Factory (Necrolord) Tier 1
 			[-926] = string.format(COVENANT_SANCTUM_TIER, 2)..": 打造肢体",	-- Abomination Factory (Necrolord) Tier 2
@@ -862,8 +862,8 @@ for key,value in pairs({
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": 永远的好魔友",	-- Abomination Factory (Necrolord) Tier 5
 
 		-- SL Ardenweald/Night Fae
-			[-935] = "圣所升级",					-- Sanctum Upgrades (Night Fae)
-			[-936] = "灵魂变形形态",						-- Soulshape Forms (Night Fae)
+			[-935] = "圣所升级",										-- Sanctum Upgrades (Night Fae)
+			[-936] = "灵魂变形形态",										-- Soulshape Forms (Night Fae)
 			[-937] = "传送网络",									-- Transport Network (Night Fae)
 			[-1002] = "尽职精魂",									-- Dutiful Spirit
 			[-1003] = "尚武精魂",									-- Martial Spirit
@@ -872,7 +872,7 @@ for key,value in pairs({
 
 		-- SL Bastion/Kyrian
 			[-940] = "晋升者议会",									-- Ascended Counil
-			[-941] = "圣所升级",					-- Sanctum Upgrades (Kyrian)
+			[-941] = "圣所升级",										-- Sanctum Upgrades (Kyrian)
 			[-943] = string.format(COVENANT_SANCTUM_TIER, 1)..": 牛刀小试",	-- Tier 1: First Steps
 			[-944] = string.format(COVENANT_SANCTUM_TIER, 2)..": 神圣试炼",	-- Tier 2: Sacred Trials
 			[-945] = string.format(COVENANT_SANCTUM_TIER, 3)..": 持续训练",	-- Tier 3: Continued Teaching
@@ -1154,7 +1154,7 @@ for key, value in pairs({
 	[180717] = "甲虫之锣",	-- The Scarab Gong	--TODO: This was taken from classic Wowhead
 	[180794] = "詹迪斯·巴罗夫的日记",	-- Journal of Jandice Barov	--TODO: This was taken from classic Wowhead
 	[180918] = "通缉：饥饿者泰里斯",	-- Wanted: Thaelis the Hungerer
-	[181011] = "魔导师达斯维瑟的日记",	-- Magister Duskwither's Journal
+	[181011] = "魔导师达斯维瑟的日记",	-- Magister Duskwither's Journal	--TODO: This was manually translated
 	[181074] = "竞技场的泥土",	-- Arena Spoils	--TODO: This was taken from classic Wowhead
 	--TODO: [181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms
 	[181147] = "通缉布告",	-- Wanted Poster
@@ -1195,7 +1195,7 @@ for key, value in pairs({
 	[186426] = "通缉布告",	-- Wanted Poster
 	--TODO: [186585] = "Dragonskin Scroll",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
-	[186887] = "巨大的南瓜灯",	-- Large Jack-o'-Lantern
+	[186887] = "巨大的南瓜灯",	-- Large Jack-o'-Lantern	--TODO: This was manually translated
 	[187273] = "可疑的蹄印",	-- Suspicious Hoofprint
 	[187559] = "部落篝火",	-- Horde Bonfire
 	[187564] = "联盟篝火",	-- Alliance Bonfire
@@ -1285,7 +1285,7 @@ for key, value in pairs({
 	[191761] = "原型机控制台",	-- Prototype Console
 	[191766] = "达库鲁的命令",	-- Orders From Drakuru
 	[192049] = "利齿青鱼群",	-- Fangtooth Herring School
-	[192060] = "弗约恩之砧",	-- Fjorn's Anvil
+	[192060] = "弗约恩之砧",	-- Fjorn's Anvil	--TODO: This was manually translated
 	[192072] = "鱼叉箱",	-- Harpoon Crate
 	[192833] = "布雷登布莱德的物品",	-- Bridenbrad's Possessions
 	[193195] = "脉动的水晶",	-- Pulsing Crystal
@@ -1320,8 +1320,8 @@ for key, value in pairs({
 	[195433] = "上古石板碎片",	-- Ancient Tablets
 	[195435] = "武器柜",	-- Weapons Cabinet
 	[195438] = "艾露恩之杯",	-- Cup of Elune
-	[195445] = "上古漩涡符石",	-- Ancient Vortex Runestone
-	[195497] = "艾露恩的火盆",	-- Elune's Brazier
+	[195445] = "上古漩涡符石",	-- Ancient Vortex Runestone	--TODO: This was manually translated
+	[195497] = "艾露恩的火盆",	-- Elune's Brazier	--TODO: This was manually translated
 	[195517] = "艾露恩的侍女像",	-- Elune's Handmaiden
 	[195600] = "燃烧之石",	-- Smouldering Stone
 	[195642] = "纳迦能量石",	-- Naga Power Stone
@@ -1388,7 +1388,7 @@ for key, value in pairs({
 	[206335] = "石板",	-- Stone Slab
 	[206336] = "大理石板",	-- Marble Slab
 	--TODO: [206374] = "Trove of the Watchers",	-- Trove of the Watchers
-	[206569] = "暮光之眼",	-- Eye of Twilight
+	[206569] = "暮光之眼",	-- Eye of Twilight	--TODO: This was manually translated
 	[206585] = "卢姆波的图腾",	-- Totem of Ruumbo
 	[206944] = "铁铲",	-- Shovel
 	[207104] = "主控泵",	-- Master Control Pump
@@ -1419,7 +1419,7 @@ for key, value in pairs({
 	[208316] = "英雄的召唤布告牌",	-- Hero's Call Board
 	[208317] = "大酋长的命令布告板",	-- Warchief's Command Board
 	--TODO: [208365] = "Recently Disturbed Dirt Mound",	-- Recently Disturbed Dirt Mound
-	[208535] = "干橡子",	-- Dried Acorn
+	[208535] = "干橡子",	-- Dried Acorn	--TODO: This was manually translated
 	[209072] = "失窃的箱子",	-- Stolen Crate
 	[209076] = "安森的箱子",	-- Anson's Crate
 	[209094] = "失窃的箱子",	-- Stolen Crate
@@ -1432,7 +1432,7 @@ for key, value in pairs({
 	[211754] = "奇怪的文字",	-- Curious Text
 	--TODO: [211807] = "Mogu Chest",	-- Mogu Chest
 	[212181] = "古代雕像",	-- Ancient Statute
-	[212389] = "预言之卷",	-- Scroll of Auspice
+	[212389] = "预言之卷",	-- Scroll of Auspice	--TODO: This was manually translated
 	[213362] = "船载储物箱",	-- Ship's Locker
 	[213363] = "武丁的螳螂刀",	-- Wodin's Mantid Shanker
 	[213364] = "古代熊猫人矿镐",	-- Ancient Pandaren Mining Pick
@@ -1441,10 +1441,10 @@ for key, value in pairs({
 	[213649] = "一箱被偷的货物",	-- Cache of Pilfered Goods
 	[213650] = "兔妖宝箱",	-- Virmen Treasure Cache
 	--TODO: [213651] = "Equipment Locker",	-- Equipment Locker
-	[213653] = "熊猫人鱼叉",	-- Pandaren Fishing Spear
+	[213653] = "熊猫人鱼叉",	-- Pandaren Fishing Spear	--TODO: This was manually translated
 	[213741] = "远古锦鱼人法杖",	-- Ancient Jinyu Staff
 	[213742] = "十雷之锤",	-- Hammer of Ten Thunders
-	[213743] = "镶玉之刃",	-- Jade Infused Blade
+	[213743] = "镶玉之刃",	-- Jade Infused Blade	--TODO: This was manually translated
 	[213748] = "熊猫人仪式石",	-- Pandaren Ritual Stone
 	[213749] = "隐秘大师之杖",	-- Staff of the Hidden Master
 	[213750] = "蜥蜴人石板",	-- Saurok Stone Tablet
@@ -1454,7 +1454,7 @@ for key, value in pairs({
 	[213768] = "猢狲战士长矛",	-- Hozen Warrior Spear
 	[213769] = "猢狲宝箱",	-- Hozen Treasure Cache
 	[213770] = "失窃的林精宝藏",	-- Stolen Sprite Treasure
-	[213771] = "雪怒雕像",	-- Statue of Xuen
+	[213771] = "雪怒雕像",	-- Statue of Xuen	--TODO: This was manually translated
 	[213774] = "失踪探险者的随身物品",	-- Lost Adventurer's Belongings
 	[213782] = "陶俑头颅",	-- Terracotta Head
 	[213793] = "里克提克的小箱子",	-- Rikktik's Tiny Chest
@@ -1482,7 +1482,7 @@ for key, value in pairs({
 	[214338] = "悼念祭品",	-- Offering of Remembrance
 	[214339] = "一箱补给",	-- Chest of Supplies
 	[214340] = "造船说明",	-- Boat-Building Instructions
-	[214403] = "一叠纸张",	-- Stack of Papers
+	[214403] = "一叠纸张",	-- Stack of Papers	--TODO: This was manually translated
 	[214407] = "墨墨的宝箱",	-- Mo-Mo's Treasure Chest
 	[214438] = "古代魔古石板",	-- Ancient Mogu Tablet
 	--TODO: [214439] = "Barrel of Banana Infused Rum",	-- Barrel of Banana Infused Rum
@@ -1580,34 +1580,34 @@ for key, value in pairs({
 	[224780] = "影月祭祀匕首",	-- Shadowmoon Sacrificial Dagger
 	[224781] = "腐朽的篮子",	-- Rotting Basket
 	--TODO: [224783] = "False-Bottomed Jar",	-- False-Bottomed Jar
-	[224784] = "守备官宝箱",	-- Vindicator's Cache
+	[224784] = "守备官宝箱",	-- Vindicator's Cache	--TODO: This was manually translated
 	--TODO: [224785] = "Demonic Cache",	-- Demonic Cache
 	[225501] = "和平祭礼",	-- Peaceful Offering
 	[225502] = "和平祭礼",	-- Peaceful Offering
 	[225503] = "和平祭礼",	-- Peaceful Offering
-	[226831] = "占星家的盒子",	-- Astrologer's Box
+	[226831] = "占星家的盒子",	-- Astrologer's Box	--TODO: This was manually translated
 	[226854] = "装甲雷象獠牙",	-- Armored Elekk Tusk
 	[226861] = "罗诺克的物品",	-- Ronokk's Belongings
 	[226862] = "巨型月柳球果",	-- Giant Moonwillow Cone
 	--TODO: [226865] = "Cargo of the Raven Queen",	-- Cargo of the Raven Queen
-	[226955] = "竞技场大师的作战号角",	-- Arena Master's War Horn
+	[226955] = "竞技场大师的作战号角",	-- Arena Master's War Horn	--TODO: This was manually translated
 	[226956] = "神秘水果盆",	-- Mysterious Fruit Pile
 	[226961] = "悬赏榜",	-- Bounty Board
 	--TODO: [226967] = "Lagoon Pool",	-- Lagoon Pool
-	[226976] = "德塞普提亚的冒烟靴子",	-- Deceptia's Smoldering Boots
+	[226976] = "德塞普提亚的冒烟靴子",	-- Deceptia's Smoldering Boots	--TODO: This was manually translated
 	[226983] = "攀岩者的宝箱",	-- Crag-Leaper's Cache
 	[226990] = "遗弃的补给品",	-- Supply Dump
 	--TODO: [226993] = "Survivalist's Cache",	-- Survivalist's Cache
 	[226994] = "肃霜宝箱",	-- Grimfrost Treasure
 	[226996] = "鬣蜥人残渣",	-- Goren Leftovers
 	--TODO: [227134] = "Iron Horde Cargo Shipment",	-- Iron Horde Cargo Shipment
-	[227504] = "带刺的雷神长矛",	-- Barbed Thunderlord Spear
+	[227504] = "带刺的雷神长矛",	-- Barbed Thunderlord Spear	--TODO: This was manually translated
 	[227527] = "圣光使者",	-- Lightbearer
 	--TODO: [227587] = "Yuuri's Gift",	-- Yuuri's Gift
 	--TODO: [227654] = "Bonechewer Spear",	-- Bonechewer Spear
 	--TODO: [227743] = "Fantastic Fish",	-- Fantastic Fish
 	--TODO: [227793] = "Aarko's Family Treasure",	-- Aarko's Family Treasure
-	[227806] = "饱经战火的霜狼军旗",	-- Battle-Worn Frostwolf Banner
+	[227806] = "饱经战火的霜狼军旗",	-- Battle-Worn Frostwolf Banner	--TODO: This was manually translated
 	--TODO: [227859] = "Hope",	-- Hope
 	--TODO: [227868] = "Sparkling Pool",	-- Sparkling Pool
 	--TODO: [227951] = "Rook's Tacklebox",	-- Rook's Tacklebox
@@ -1615,7 +1615,7 @@ for key, value in pairs({
 	--TODO: [227954] = "Luminous Shell",	-- Luminous Shell
 	[227955] = "艾米瑟尔水晶",	-- Amethyl Crystal
 	[227956] = "工头的午餐盒",	-- Foreman's Lunchbox
-	[227996] = "古怪的逝网蛛卵",	-- Curious Deathweb Egg
+	[227996] = "古怪的逝网蛛卵",	-- Curious Deathweb Egg	--TODO: This was manually translated
 	[227998] = "奥卡巴的包裹",	-- Ockbar's Pack
 	[228012] = "烧焦的长剑",	-- Charred Sword
 	--TODO: [228013] = "Farmer's Bounty",	-- Farmer's Bounty
@@ -1635,9 +1635,9 @@ for key, value in pairs({
 	--TODO: [228483] = "Rusted Lockbox",	-- Rusted Lockbox
 	--TODO: [228570] = "Ketya's Stash",	-- Ketya's Stash
 	[229328] = "特使的袋子",	-- Envoy's Satchel
-	[229330] = "神秘的戒指",	-- Mysterious Ring
-	[229333] = "神秘的长靴",	-- Mysterious Boots
-	[229354] = "闪亮硬币",	-- Bright Coin
+	[229330] = "神秘的戒指",	-- Mysterious Ring	--TODO: This was manually translated
+	[229333] = "神秘的长靴",	-- Mysterious Boots	--TODO: This was manually translated
+	[229354] = "闪亮硬币",	-- Bright Coin	--TODO: This was manually translated
 	[229367] = "冰封的兽人骷髅",	-- Frozen Orc Skeleton
 	[229640] = "冰封的霜狼战斧",	-- Frozen Frostwolf Axe
 	[230252] = "燃烧的珍珠",	-- Burning Pearl
@@ -1674,7 +1674,7 @@ for key, value in pairs({
 	--TODO: [232397] = "Bulletin Board",	-- Bulletin Board
 	[232406] = "冒险者的包裹",	-- Adventurer's Pack
 	[232416] = "指令板",	-- Command Board
-	[232492] = "末日之击",	-- Doomshot
+	[232492] = "末日之击",	-- Doomshot	--TODO: This was manually translated
 	[232494] = "长满蘑菇的宝箱",	-- Mushroom-Covered Chest
 	[232507] = "坠月鸟蛋",	-- Lunarfall Egg
 	[232546] = "食人魔战利品",	-- Ogre Booty
@@ -1747,7 +1747,7 @@ for key, value in pairs({
 	[233558] = "神秘的石化豆荚",	-- Mysterious Petrified Pod
 	[233559] = "被遗忘的嘲颅文物",	-- Forgotten Skull Cache
 	--TODO: [233560] = "Fragment of Oshu'gun",	-- Fragment of Oshu'gun
-	[233561] = "波卡尔的第十三把斧子",	-- Pokkar's Thirteenth Axe
+	[233561] = "波卡尔的第十三把斧子",	-- Pokkar's Thirteenth Axe	--TODO: This was manually translated
 	[233593] = "抛光的刃牙虎人颅骨",	-- Polished Saberon Skull
 	--TODO: [233598] = "Elemental Shackles",	-- Elemental Shackles
 	[233611] = "悬槌大锤",	-- Highmaul Sledge
@@ -1774,7 +1774,7 @@ for key, value in pairs({
 	--TODO: [234147] = "Outcast's Belongings",	-- Outcast's Belongings
 	--TODO: [234154] = "Misplaced Scrolls",	-- Misplaced Scrolls
 	--TODO: [234155] = "Relics of the Outcasts",	-- Relics of the Outcasts
-	[234157] = "龟裂的日长石",	-- Fractured Sunstone
+	[234157] = "龟裂的日长石",	-- Fractured Sunstone	--TODO: This was manually translated
 	--TODO: [234159] = "Lost Herb Satchel",	-- Lost Herb Satchel
 	--TODO: [234432] = "Ogron Plunder",	-- Ogron Plunder
 	--TODO: [234446] = "Relics of the Outcasts",	-- Relics of the Outcasts
@@ -1783,16 +1783,16 @@ for key, value in pairs({
 	--TODO: [234454] = "Relics of the Outcasts",	-- Relics of the Outcasts
 	--TODO: [234455] = "Relics of the Outcasts",	-- Relics of the Outcasts
 	--TODO: [234456] = "Shattered Hand Lockbox",	-- Shattered Hand Lockbox
-	[234472] = "水手扎祖克的高纯度朗姆酒",	-- Sailor Zazzuk's 180-Proof Rum
+	[234472] = "水手扎祖克的高纯度朗姆酒",	-- Sailor Zazzuk's 180-Proof Rum	--TODO: This was manually translated
 	--TODO: [234473] = "Campaign Contributions",	-- Campaign Contributions
 	[234474] = "刃牙虎人储物箱",	-- Saberon Stash
 	--TODO: [234618] = "Gift of Anzu",	-- Gift of Anzu
-	[234703] = "暗影视觉药剂",	-- Elixir of Shadow Sight
-	[234704] = "暗影视觉药剂",	-- Elixir of Shadow Sight
-	[234705] = "暗影视觉药剂",	-- Elixir of Shadow Sight
-	[234734] = "暗影视觉药剂",	-- Elixir of Shadow Sight
-	[234735] = "暗影视觉药剂",	-- Elixir of Shadow Sight
-	[234736] = "暗影视觉药剂",	-- Elixir of Shadow Sight
+	[234703] = "暗影视觉药剂",	-- Elixir of Shadow Sight	--TODO: This was manually translated
+	[234704] = "暗影视觉药剂",	-- Elixir of Shadow Sight	--TODO: This was manually translated
+	[234705] = "暗影视觉药剂",	-- Elixir of Shadow Sight	--TODO: This was manually translated
+	[234734] = "暗影视觉药剂",	-- Elixir of Shadow Sight	--TODO: This was manually translated
+	[234735] = "暗影视觉药剂",	-- Elixir of Shadow Sight	--TODO: This was manually translated
+	[234736] = "暗影视觉药剂",	-- Elixir of Shadow Sight	--TODO: This was manually translated
 	--TODO: [234740] = "Orchish Signaling Horn",	-- Orchish Signaling Horn
 	--TODO: [234744] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
 	--TODO: [234746] = "Offering to the Raven Mother",	-- Offering to the Raven Mother
@@ -1807,11 +1807,11 @@ for key, value in pairs({
 	[235129] = "浓缩之种",	-- Enriched Seeds
 	--TODO: [235135] = "Smuggled Apexis Artifacts",	-- Smuggled Apexis Artifacts
 	--TODO: [235141] = "Iron Horde Explosives",	-- Iron Horde Explosives
-	[235143] = "刺客的长矛",	-- Assassin's Spear
+	[235143] = "刺客的长矛",	-- Assassin's Spear	--TODO: This was manually translated
 	--TODO: [235168] = "Outcast's Pouch",	-- Outcast's Pouch
 	--TODO: [235172] = "Outcast's Belongings",	-- Outcast's Belongings
 	--TODO: [235282] = "Sethekk Ritual Brew",	-- Sethekk Ritual Brew
-	[235289] = "要塞工匠的锤子",	-- Garrison Workman's Hammer
+	[235289] = "要塞工匠的锤子",	-- Garrison Workman's Hammer	--TODO: This was manually translated
 	--TODO: [235299] = "Coinbender's Payment",	-- Coinbender's Payment
 	--TODO: [235300] = "Mysterious Mushrooms",	-- Mysterious Mushrooms
 	--TODO: [235307] = "Watertight Bag",	-- Watertight Bag
@@ -1884,7 +1884,7 @@ for key, value in pairs({
 	[239791] = "遗物搜索笔记",	-- Relic Hunting Notes
 	[239803] = "宝箱",	-- Treasure Chest
 	--TODO: [239828] = "Edge of Reality",	-- Edge of Reality
-	[239901] = "灵爪鹰蛋",	-- Voidtalon Egg
+	[239901] = "灵爪鹰蛋",	-- Voidtalon Egg	--TODO: This was manually translated
 	[240003] = "古怪的蓝宝石",	-- Strange Sapphire
 	[240289] = "风化的斧子",	-- Weathered Axe
 	[240317] = "艾斯卡的暗影之书",	-- Iskar's Tome of Shadows
@@ -2113,8 +2113,8 @@ for key, value in pairs({
 	[246562] = "小宝箱",	-- Small Treasure Chest
 	[247694] = "凯尔丹纳斯的背包",	-- Kel'danath's Knapsack
 	[247797] = "遗失的邮件",	-- Lost Mail
-	[248398] = "虚灵通讯装置",	-- Ethereal Communication Device
-	[248534] = "艾露恩之泪",	-- Tears of Elune
+	[248398] = "虚灵通讯装置",	-- Ethereal Communication Device	--TODO: This was manually translated
+	[248534] = "艾露恩之泪",	-- Tears of Elune	--TODO: This was manually translated
 	[248854] = "戴斯蒙德的保险箱",	-- Desmond's Lockbox
 	[249211] = "撕破的夏多雷丝绸",	-- Torn Shaldorei Silk
 	[249997] = "小宝箱",	-- Small Treasure Chest
@@ -2180,12 +2180,12 @@ for key, value in pairs({
 	[252263] = "魔网能量",	-- Leyline Feed
 	[252264] = "魔网能量",	-- Leyline Feed
 	--TODO: [252267] = "Large Plundered Sack",	-- Large Plundered Sack
-	[252269] = "一袋战斗药水",	-- Pack of Battle Potions
+	[252269] = "一袋战斗药水",	-- Pack of Battle Potions	--TODO: This was manually translated
 	--TODO: [252270] = "Mysterious Crate",	-- Mysterious Crate
-	[252272] = "冒烟的靴子",	-- Smoky Boots
+	[252272] = "冒烟的靴子",	-- Smoky Boots	--TODO: This was manually translated
 	--TODO: [252273] = "Box of Throwing Daggers",	-- Box of Throwing Daggers
-	[252277] = "菊花茶",	-- Thistle Tea
-	[252279] = "失窃的神器传说大典",	-- Stolen Tome of Artifact Lore
+	[252277] = "菊花茶",	-- Thistle Tea	--TODO: This was manually translated
+	[252279] = "失窃的神器传说大典",	-- Stolen Tome of Artifact Lore	--TODO: This was manually translated
 	--TODO: [252282] = "Sparkling Set of Keys",	-- Sparkling Set of Keys
 	--TODO: [252284] = "Pile of Sticky Bombs",	-- Pile of Sticky Bombs
 	--TODO: [252289] = "Vanishing Powder",	-- Vanishing Powder
@@ -2269,7 +2269,7 @@ for key, value in pairs({
 	[258690] = "小宝箱",	-- Small Treasure Chest
 	[258978] = "浸水的书籍",	-- Waterlogged Tome
 	[258979] = "被邪能毁坏的书籍",	-- Fel-Ravaged Tome
-	[258980] = "被诅咒的书籍",	-- Cursed Tome
+	[258980] = "被诅咒的书籍",	-- Cursed Tome	--TODO: This was manually translated
 	[259806] = "爱情药水配方",	-- Love Potion Recipe
 	[259870] = "部落篝火",	-- Horde Bonfire
 	[259871] = "联盟篝火",	-- Alliance Bonfire
@@ -2282,8 +2282,8 @@ for key, value in pairs({
 	[268551] = "可疑的虫语者箱子",	-- Curious Wyrmtongue Cache
 	[268753] = "小宝箱",	-- Small Treasure Chest
 	[269064] = "小宝箱",	-- Small Treasure Chest
-	[269830] = "|cFFFFFFFF第9步:|r 寻心者的礼物",	-- |cFFFFFFFFStep 9:|r Gift of the Mind-Seekers
-	[270855] = "|cFFFFFFFF第1步:|r 不起眼的纸条",	-- |cFFFFFFFFStep 1:|r Inconspicuous Note
+	[269830] = "|cFFFFFFFF第9步:|r 寻心者的礼物",	-- |cFFFFFFFFStep 9:|r Gift of the Mind-Seekers	--TODO: This was manually translated
+	[270855] = "|cFFFFFFFF第1步:|r 不起眼的纸条",	-- |cFFFFFFFFStep 1:|r Inconspicuous Note	--TODO: This was manually translated
 	[270917] = "格伦布鲁克登记簿",	-- Glenbrook Register
 	[271103] = "祈祷者雕像",	-- Prayer Effigy
 	[271706] = "猎人的看板",	-- Hunters' Board
@@ -2298,7 +2298,7 @@ for key, value in pairs({
 	[272179] = "镇长公告板",	-- Mayor's Bulletin
 	[272181] = "|cFFFFFFFF第8步:|r 不起眼的纸条",	-- |cFFFFFFFFStep 8:|r Inconspicuous Note
 	[272220] = "|cFFFFFFFF第9步:|r 不起眼的纸条",	-- |cFFFFFFFFStep 9:|r Inconspicuous Note
-	[272270] = "|cFFFFFFFF第10步:|r 解谜者的愿望",	-- |cFFFFFFFFStep 10:|r Puzzler's Desire
+	[272270] = "|cFFFFFFFF第10步:|r 解谜者的愿望",	-- |cFFFFFFFFStep 10:|r Puzzler's Desire	--TODO: This was manually translated
 	[272422] = "金特尔的法术书",	-- Gentle's Spellbook
 	[272455] = "艾瑞达战争物资",	-- Eredar War Supplies
 	[272456] = "艾瑞达战争物资",	-- Eredar War Supplies
@@ -2372,7 +2372,7 @@ for key, value in pairs({
 	[278570] = "古代日志",	-- Ancient Journal
 	[278577] = "被撕碎的部落信函",	-- Torn Horde Missive
 	[278669] = "萧湾镇账本",	-- Fallhaven Ledger
-	[278675] = "被诅咒的雕像",	-- Cursed Effigy
+	[278675] = "被诅咒的雕像",	-- Cursed Effigy	--TODO: This was manually translated
 	[279042] = "走私者的藏品",	-- Smuggler's Stash
 	[279253] = "幸运的霍拉斯的幸运宝箱",	-- Lucky Horace's Lucky Chest
 	[279260] = "“精心”伪装的宝箱",	-- Cleverly Disguised Chest
@@ -2394,7 +2394,7 @@ for key, value in pairs({
 	--TODO: [281397] = "Cutwater Treasure Chest",	-- Cutwater Treasure Chest
 	[281494] = "冰霜宝箱",	-- Frosty Treasure Chest
 	[281551] = "求助布告",	-- Help Wanted Poster
-	[281583] = "古代圣物",	-- Ancient Reliquary
+	[281583] = "古代圣物",	-- Ancient Reliquary	--TODO: This was manually translated
 	[281639] = "崩解的雕像",	-- Crumbling Statue
 	[281646] = "蜂蜜大桶",	-- Honey Vat
 	[281647] = "张贴的布告",	-- Posted Notice
@@ -2515,7 +2515,7 @@ for key, value in pairs({
 	[294335] = "腐烂的土豆",	-- Rotten Potato
 	--TODO: [294703] = "Grimmy's Rusty Lockbox",	-- Grimmy's Rusty Lockbox
 	[296479] = "海军统帅的提箱",	-- Lord Admiral's Footlocker
-	[296536] = "沾血的哨兵战刃",	-- Bloodied Sentinel's Glaive
+	[296536] = "沾血的哨兵战刃",	-- Bloodied Sentinel's Glaive	--TODO: This was manually translated
 	[296915] = "德鲁斯特石碑：法阵",	-- Drust Stele: The Circle
 	[296916] = "德鲁斯特石碑：仪式",	-- Drust Stele: The Ritual
 	[296917] = "德鲁斯特石碑：巨树",	-- Drust Stele: The Tree
@@ -2555,7 +2555,7 @@ for key, value in pairs({
 	[303017] = "|cFFFFFFFF第13步:|r 普通的卵石 XII",	-- |cFFFFFFFFStep 13:|r Ordinary Pebble XII
 	[303018] = "|cFFFFFFFF第12步:|r 普通的卵石 XI",	-- |cFFFFFFFFStep 12:|r Ordinary Pebble XI
 	[307265] = "通缉布告",	-- Wanted Poster
-	[307277] = "旧酒壶",	-- Old Jug
+	[307277] = "旧酒壶",	-- Old Jug	--TODO: This was manually translated
 	[307307] = "破损的桶",	-- Broken Barrel
 	[307325] = "通缉布告",	-- Wanted Poster
 	--TODO: [307330] = "Captain's Footlocker",	-- Captain's Footlocker
@@ -2661,7 +2661,7 @@ for key, value in pairs({
 	[339641] = "净化饮剂",	-- Purifying Draught
 	[339770] = "被丢弃的宝箱",	-- Abandoned Treasure Chest
 	[341424] = "遗忘的纪念品",	-- Forgotten Mementos
-	[343611] = "虚触之卵",	-- Voidtouched Egg
+	[343611] = "虚触之卵",	-- Voidtouched Egg	--TODO: This was manually translated
 	[344588] = "执事者的惊人炖煮",	-- Stewart's Stewpendous Stew
 	[344726] = "黑暗布道",	-- Dark Sermon
 	[345446] = "符文牡鹿的巨角",	-- Great Horn of the Runestag
@@ -3044,7 +3044,6 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
--- TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { "|cff5bc41d新玩家体验|r", "只有新角色可以收集这个" },
