@@ -1043,7 +1043,7 @@ for key,value in pairs({
 	[164820] = "Targa del Guardiano Oscuro",	-- Dark Keeper Nameplate
 	[164867] = "RICERCATO",	-- WANTED
 	[164868] = "UCCIDERE A VISTA",	-- KILL ON SIGHT
-	[164869] = "Calice Spettrale",	-- The Spectral Chalice
+	[164869] = "Calice Spettrale",	-- Spectral Chalice
 	[164887] = "Corrupted Windblossom",	-- Corrupted Windblossom	--TODO: This was taken from classic Wowhead
 	[164888] = "Corrupted Whipper Root",	-- Corrupted Whipper Root	--TODO: This was taken from classic Wowhead
 	[164955] = "Pilastro di Cristallo Settentrionale",	-- Northern Crystal Pylon
