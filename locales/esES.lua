@@ -589,7 +589,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 if GetLocale() == "esMX" then
-	["Antorus, el Trono ardiente"] = "Antorus"	-- ["Antorus, the Burning Throne"] = "Antorus"
+	a["Antorus, el Trono ardiente"] = "Antorus"	-- ["Antorus, the Burning Throne"] = "Antorus"
 	a["Ny'alotha, la Ciudad Despierta"] = "Ny'alotha"	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
 end
 
