@@ -834,14 +834,16 @@ app.L = {
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
 		--[-] = "Interface\\Icons\\",														--
+-- Commonly used
 		[0] = "Interface\\Icons\\INV_TreasureChest_FelfireCitadel",							-- Zone Drop
 		[-1] = "Interface\\Icons\\Achievement_Garrison_Horde_PVE",							-- Common Boss Drop
 		[-2] = "Interface\\Icons\\INV_Misc_Coin_02",										-- Vendors
 		[-3] = app.asset("Category_Holidays"),												-- Holidays
 		[-4] = app.asset("Category_Achievements"),											-- Achievement
-		[-5] = "Interface\\Icons\\inv_misc_gem_bloodgem_01",								-- Prospecting
+		
+		
 		[-7] = app.asset("Interface_World_boss"),				                            -- World Bosses (Achievement_Boss_ShadeOfEranikus)
-		[-8] = "Interface\\Icons\\ability_monk_dragonkick",									-- PvE
+
 		[-9] = app.asset("Category_PvP"),													-- PvP
 		[-10] = "Interface\\Icons\\achievement_reputation_05",								-- Party Sync
 		[-11] = "Interface\\Icons\\inv_misc_crate04horde",									-- Common Box Drops
@@ -897,40 +899,54 @@ app.L = {
 		[-61] = "Interface\\Icons\\achievement_worldevent_merrymaker",						-- The Feast of Winter Veil
 		[-62] = "Interface\\Icons\\inv_misc_fish_06",										-- Stranglethorn Fishing Extravaganza
 		
-		
+-- Emerald Nightmare
 		[-68] = "Interface\\Icons\\spell_arcane_portalshattrath",							-- The Emerald Dream
+-- Maraudon
 		[-69] = "Interface\\Icons\\spell_arcane_portalironforge",							-- Maraudon Purple
 		[-70] = "Interface\\Icons\\INV_Jewelcrafting_ArgusGemUncut_Orange_MiscIcons",		-- Orange
 		[-71] = "Interface\\Icons\\INV_Jewelcrafting_ArgusGemUncut_Purple_MiscIcons",		-- Purple
-		--[-72] Used for rare in Talador													-- Sargerei War Council
+		
 		[-73] = "Interface\\Icons\\achievement_zone_silithus_01",							-- Call of the Scarab
 		[-75] = "Interface\\Icons\\Achievement_Zone_Blackrock_01",							-- Detention Block
 		[-76] = "Interface\\Icons\\Achievement_Zone_Blackrock_01",							-- Shadowforge City
 		[-77] = "Interface\\Icons\\Inv_archaeology_70_starlightbeacon",						-- Special
+-- Zul'Aman
 		[-78] = "Interface\\Icons\\INV_Misc_Basket_05",										-- Timed Event
 		[-79] = "Interface\\Icons\\INV_Misc_Bag_28_Halloween",								-- First Chest
 		[-80] = "Interface\\Icons\\inv_misc_treasurechest03a",								-- Second Chest
 		[-81] = "Interface\\Icons\\INV_Misc_Bag_10",										-- Third Chest
 		[-82] = "Interface\\Icons\\INV_Box_01",												-- Final Chest
 
-
+-- SM
 		[-85] = "Interface\\Icons\\Achievement_BG_Xkills_AVgraveyard",						-- Graveyard (SM)
 		[-86] = "Interface\\Icons\\INV_Misc_Book_13",										-- Library (SM)
 		[-87] = "Interface\\Icons\\Garrison_Building_Armory",								-- Armory (SM)
 		[-88] = "Interface\\Icons\\Ability_Paladin_GaurdedbytheLight",						-- Cathedral (SM)
+		
+-- Terrace of Endless Spring loot
 		[-90] = "Interface\\Icons\\INV_Misc_Bone_Skull_01",									-- Elite
 
 		
 		[-93] = "Interface\\Icons\\Achievement_zone_silithus_01",							-- Silithus (The Wound)
 		[-94] = "Interface\\Icons\\inv_misc_lockbox_1",										-- Black Market AH
 		
-		[-96] = "Interface\\Icons\\Achievement_Quests_Completed_08",						-- Quest NPCs
-		[-97] = "Interface\\Icons\\ability_rogue_dirtydeeds",								-- Never Implemented
-		[-98] = "Interface\\Icons\\inv_garrison_resource",									-- Garrisons
+-- Garrisons
 		[-99] = "Interface\\Icons\\inv_garrison_resource",									-- Buildings
 		[-101] = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",					-- Followers
+		
+-- Druid Feral Druid Hidden Artifact Appearance
+		[-130] = "Interface\\Icons\\achievement_zone_duskwood",								-- Duskwood Active
+		[-131] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Active
+		[-132] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Active
+		[-133] = "Interface\\Icons\\achievement_zone_duskwood",								-- Duskwood Activated
+		
+-- Garrisons Invasions TODO: what levels?
 		[-136] = "Interface\\Icons\\achievement_bg_defendxtowers_av",						-- Garrison Invasion
-		[-139] = app.asset("Interface_World_boss"),											-- Raid Bosses
+-- Class Trial
+		[-137] = "Interface\\Icons\\achievement_level_90",									-- Level 90
+		[-138] = "Interface\\Icons\\achievement_level_100",									-- Level 100
+--
+		[-139] = app.asset("Interface_World_boss"),											-- Bosses
 		
 -- WoD Dungeons(Fake npcid)
 		[-140] = select(6, EJ_GetInstanceInfo(547)),										-- Auchindoun
@@ -941,38 +957,51 @@ app.L = {
 		[-145] = select(6, EJ_GetInstanceInfo(476)),										-- Skyreach
 		[-146] = select(6, EJ_GetInstanceInfo(556)),										-- The Everbloom
 		[-147] = select(6, EJ_GetInstanceInfo(559)),										-- Upper Blackrock Spire
+
 		
-		
+-- Garrison		
 		[-152] = "Interface\\Icons\\achievement_zone_draenor_01",							-- Garrison Campaign
-		[-153] = 1103070,																	-- Work Orders (Inv_icon_mission_complete_order)
-	--	[-155] = 236566,																	-- Level 48 (old Level 110)
+		[-153] = 1103070,																	-- Work Orders
+-- Class Trial
+		[-155] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Level 48 (old level 110)																	-- Level 48 (old Level 110)
 		[-155] = 236566,																	-- Level 50 (old Level 120)
+		
+-- Druid Feral Druid Hidden Artifact Appearance
+		[-157] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Activated
+		[-158] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Activated
+-- Class Hall /Artifact
+		-- [-159] = Uses different icons													-- Daily Dreamway Event Roll
+-- Collections
 		[-160] = app.asset("Category_Mounts"),												-- Mounts
 		[-161] = app.asset("Category_ToyBox"),												-- Toy
 		[-162] = "Interface\\Icons\\inv_box_petcarrier_01",									-- Pets
+-- Armor
 		[-163] = "Interface\\Icons\\garrison_purplearmor",									-- Armor
-		[-168] = "Interface\\Icons\\Achievement_Quests_Completed_04",						-- Other Quests
+
+-- Junkboxes
+		[-165] = "Interface\\Icons\\inv_box_01",											-- Junkboxes
+		
+-- Emissary
 		[-169] = app.asset("Interface_Emissary_Callings"),								    -- Emissary Quests
+-- Legion Artifact Questline
 		[-170] = "Interface\\Icons\\spell_shaman_maelstromweapon",							-- Balance of Power
+		
+		
+-- Events
 		[-173] = "Interface\\Icons\\spell_holy_borrowedtime",								-- Timewalking
-		[-174] = "Interface\\Icons\\INV_DARKMOON_EYE",										-- Darkmoon Faire
+
+
 		[-176] = 3753381,																	-- Weekly Holidays
-		[-178] = "Interface\\Icons\\Creatureportrait_Goblin_Rocket",						-- Goblin Engineering
-		[-179] = "Interface\\Icons\\INV_Gnomish_XRAY_Specs",								-- Gnomish Engineering
-		[-195] = "Interface\\Icons\\ClassIcon_Priest",										-- Priest
-		[-196] = "Interface\\Icons\\ClassIcon_Mage",										-- Mage
-		[-197] = "Interface\\Icons\\ClassIcon_Warlock",										-- Warlock
-		[-198] = "Interface\\Icons\\ClassIcon_Druid",										-- Druid
-		[-199] = "Interface\\Icons\\ClassIcon_Rogue",										-- Rogue
-		[-200] = "Interface\\Icons\\ClassIcon_Hunter",										-- Hunter
-		[-201] = "Interface\\Icons\\ClassIcon_Shaman",										-- Shaman
-		[-202] = "Interface\\Icons\\ClassIcon_Paladin",										-- Paladin
-		[-203] = "Interface\\Icons\\ClassIcon_Warrior",										-- Warrior
-		[-204] = "Interface\\Icons\\ClassIcon_DeathKnight",									-- Death Knight
+
+-- Item Sets
 		[-211] = 1530081,																	-- New Characters
+-- Treasure Chest
 		[-212] = app.asset("Interface_Tchest"),									            -- Treasure Chest
+-- Dalaran Sub-Zone
 		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",								-- The Underbelly
-		[-215] = "Interface\\Icons\\INV_Pet_Naaru",											-- Vindicaar
+		
+		
+
 		[-216] = "Interface\\Icons\\ability_rogue_combatreadiness",							-- Prestige
 		[-217] = "Interface\\Icons\\INV_Fishing_Lure_Worm",									-- Lures (for Fishing)
 		[-218] = "Interface\\Icons\\Achievement_Profession_Fishing_NorthrendAngler",		-- Coastal (for Fishing)
@@ -1480,8 +1509,10 @@ app.L = {
 		[-2] = TUTORIAL_TITLE20,												-- Vendors
 		[-3] = GetItemSubClassInfo(15,3),										-- World Event
 		[-4] = ACHIEVEMENTS,													-- Achievements
-		[-5] = "Prospecting",													-- Prospecting
+		
+		
 		[-7] = WORLD.." "..RAID_BOSSES,											-- World Bosses
+		
 		[-9] = GDAPI_REALMTYPE_PVP,												-- PvP
 		[-10] = SPLASH_BATTLEFORAZEROTH_8_2_5_FEATURE1_TITLE,					-- Party Sync
 		[-11] = "Common Box Drops",												-- Common Box Drops
@@ -1536,38 +1567,46 @@ app.L = {
 		[-69] = GetSpellInfo(21127),											-- Maraudon Portal
 		[-70] = DUNGEON_FLOOR_DESOLACE22.." - "..GetSpellInfo(251097),			-- Foulspore Cavern [Orange]
 		[-71] = DUNGEON_FLOOR_DESOLACE21.." - "..GetSpellInfo(251095),			-- The Wicked Grotto [Purple]
-		[-72] = "Sargerei War Council",											-- Sargerei War Council
+	
 		[-75] = DUNGEON_FLOOR_BLACKROCKDEPTHS1,									-- Detention Block
 		[-76] = DUNGEON_FLOOR_BLACKROCKDEPTHS2,									-- Shadowforge City
 		[-77] = SPECIAL,														-- Special
+-- Zul'Aman
 		[-78] = "Timed Event",
 		[-79] = "First Chest",
 		[-80] = "Second Chest",
 		[-81] = "Third Chest",
 		[-82] = "Final Chest",
-
+		
+-- SM
 		[-85] = "Graveyard",
 		[-86] = "Library",
 		[-87] = "Armory",
 		[-88] = "Cathedral",
+		
+-- Terrace of Endless Spring loot		
 		[-90] = ELITE,															-- Elite
 	
 		[-93] = C_Map.GetAreaInfo(9310),										-- Silithus: The Wound
 		[-94] = BLACK_MARKET_AUCTION_HOUSE,										-- Black Market Auction House
--- TODO: Garrison Note: These will be changed into a new class soon(TM)
-		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)),						-- Stables
+-- Garrisons
 		[-99] = "Buildings",
 		[-101] = GARRISON_FOLLOWERS,											-- Followers
--- Alliance [Swaps based on faction ONLY after a reloadui]
+		
+-- Druid Feral Druid Hidden Artifact Appearance
 		[-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),		-- Duskwood Active
 		[-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),		-- The Hinterlands Active
 		[-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),		-- Feralas Active
 		[-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),		-- Duskwood Activated
--- Invasions TODO: what levels?
+		
+-- Garrisons Invasions TODO: what levels?
 		[-136] = GARRISON_LANDING_INVASION,										-- Garrison Invasion
+-- Class Trial
 		[-137] = string.format(SPELLBOOK_AVAILABLE_AT, 90),						-- Level 90
 		[-138] = string.format(SPELLBOOK_AVAILABLE_AT, 100),					-- Level 100
+--
 		[-139] = RAID_BOSSES,													-- Bosses
+		
 -- WoD Dungeons(Fake npcid)
 		[-140] = select(2, GetAchievementInfo(9039)),							-- Auchindoun
 		[-141] = select(2, GetAchievementInfo(9037)),							-- Bloodmaul Slag Mines
@@ -1578,30 +1617,48 @@ app.L = {
 		[-146] = select(2, GetAchievementInfo(9044)),							-- The Everbloom
 		[-147] = select(2, GetAchievementInfo(9042)),							-- Upper Blackrock Spire
 
-		[-152] = "Garrison Campaign",
+-- Garrison
+		[-152] = "Garrison Campaign",											-- Garrison Campaign
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
+-- Class Trial
 		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48 (old level 110)
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50),						-- Level 50 (old Level 120)
+		
+-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),		-- The Hinterlands Activated
 		[-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),		-- Feralas Activated
+-- Class Hall /Artifact	
 		[-159] = "Event Roll",													-- Daily Dreamway Event Roll
--- Expansions
+-- Collections
 		[-160] = TUTORIAL_TITLE53,												-- Mounts
--- Other
 		[-161] = TOY,															-- Toy
 		[-162] = PETS,															-- Pets
+-- Armor
 		[-163] = RESISTANCE0_NAME,												-- Armor
-		[-165] = GetItemSubClassInfo(13,1),										-- Lockpick
-		[-167] = GetSpellInfo(7738),											-- Fishing Poles
-		[-168] = FACTION_OTHER .. " " ..QUESTS_LABEL,							-- Other Quests
+
+-- Junkboxes
+		[-165] = GetItemSubClassInfo(13,1),										-- Junkboxes
+
+-- Emissary
 		[-169] = BOUNTY_BOARD_LOCKED_TITLE,										-- Emissary Quests
+-- Legion Artifact Questline
 		[-170] = GetSpellInfo(41341),											-- Balance of Power
+		
+		
+-- Events
 		[-173] = PLAYER_DIFFICULTY_TIMEWALKER,									-- Timewalking
-		[-174] = CALENDAR_FILTER_DARKMOON,										-- Darkmoon Faire
+
+
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
+
+
+-- Item Sets
 		[-211] = NEW.." "..CHARACTER,											-- New Character
+-- Treasure Chest
 		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest
+-- Dalaran Sub-Zone
 		[-213] = DUNGEON_FLOOR_DALARAN2,										-- The Underbelly
+		
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
 		[-217] = "Lures",														-- Lures (for Fishing)
 		[-218] = "Coastal",														-- Coastal (for Fishing)

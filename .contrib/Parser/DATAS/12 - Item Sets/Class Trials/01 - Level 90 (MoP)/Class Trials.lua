@@ -7,7 +7,6 @@ _.GearSets =
 	n(-5350, {	-- Class Trial Item Sets
 		n(-137, {	-- Level 90
 			["description"] = "These were obtained by creating a Level 90 Class Trial (MoP) for each class and specialization.",
-			["icon"] = "Interface\\Icons\\achievement_level_90",
 			["lvl"] = 90,
 			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 				n(-9980, {	-- Mists of Pandaria. This gear was awarded if you used your Lv90 boost before 6.0.1
