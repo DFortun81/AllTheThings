@@ -1001,25 +1001,38 @@ app.L = {
 		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",								-- The Underbelly
 		
 		
-
+-- PvP
 		[-216] = "Interface\\Icons\\ability_rogue_combatreadiness",							-- Prestige
+-- Fishing
 		[-217] = "Interface\\Icons\\INV_Fishing_Lure_Worm",									-- Lures (for Fishing)
 		[-218] = "Interface\\Icons\\Achievement_Profession_Fishing_NorthrendAngler",		-- Coastal (for Fishing)
-		[-219] = "Interface\\MINIMAP\\TRACKING\\Profession",								-- Profession Trainers
+		
+-- Class
 		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",										-- Class
+-- Bonus Objectives
 		[-221] = 237387,																	-- Bonus Objectives
-		[-222] = "Interface\\Icons\\inv_misc_coin_01",										-- Treasure Hunter
-		[-223] = "Interface\\Icons\\achievement_quests_completed_daily_07",					-- Daily
-		[-224] = "Interface\\Icons\\ClassIcon_DemonHunter",									-- Demon Hunter
-		[-225] = "Interface\\Icons\\spell_lightning_lightningbolt01",						-- Elemental Bonds
+
+-- Misc Victory (Used in many Places)
 		[-227] = "Interface\\ICONS\\spell_holy_divinepurpose",								-- Victory
+-- Flight Path
 		[-228] = app.asset("Category_FlightPaths"),											-- Flight Paths
-		[-231] = "Interface\\Icons\\Spell_Shadow_DeathScream",
-		[-232] = "Interface\\Icons\\Spell_Shadow_DeathScream",
+-- Misc Weekly (Used in Many Places)
+		[-229] = "Interface\\Icons\\Achievement_Quests_Completed_Daily_04",					-- Weekly
+		
+		
+-- Warfronts
 		[-233] = "Interface\\Icons\\achievement_zone_arathihighlands_01",					-- Warfront: The Battle for Stromgarde
-		[-235] = "Interface\\Icons\\inv_scroll_05",
+		
+		
+-- Recipes (Only used in BMAH atm)
+		[-235] = "Interface\\Icons\\inv_scroll_05",											-- Recipes
+-- War Campaign
 		[-236] = "Interface\\Icons\\ui_alliance_7legionmedal",								-- Alliance War Campaign
+-- Warfront
 		[-237] = "Interface\\Icons\\achievement_zone_darkshore_01",							-- Warfront: The Battle for Darkshore
+
+
+-- PvP
 		[-243] = "Interface\\Icons\\ability_hunter_markedfordeath",							-- Bounty
 		[-246] = "Interface\\Icons\\inv_misc_ornatebox",									-- Is Another Man's Treasure
 		[-247] = "Interface\\Icons\\racial_dwarf_findtreasure",								-- Riches of Pandaria
@@ -1659,20 +1672,37 @@ app.L = {
 -- Dalaran Sub-Zone
 		[-213] = DUNGEON_FLOOR_DALARAN2,										-- The Underbelly
 		
+-- PvP
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
+-- Fishing
 		[-217] = "Lures",														-- Lures (for Fishing)
 		[-218] = "Coastal",														-- Coastal (for Fishing)
+		
+-- Class
 		[-220] = CLASS,															-- Class
+-- Bonus Objectives
 		[-221] = TRACKER_HEADER_BONUS_OBJECTIVES,								-- Bonus Objectives
-		[-222] = select(2, GetAchievementInfo(9726)),							-- Treasure Hunter
-		[-224] = "Illidari",													-- Illidari
+
+
+-- Misc Victory (Used in many places)
 		[-227] = GetSpellInfo(109382),											-- Victory
+-- Flight Path
 		[-228] = GetSpellInfo(218950),											-- Flight Path
+-- Misc Weekly (Used in Many Places)
 		[-229] = CALENDAR_REPEAT_WEEKLY,										-- Weekly
+		
+		
+-- Warfronts
 		[-233] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde
+-- Recipes (Only used in BMAH atm)
 		[-235] = AUCTION_CATEGORY_RECIPES,										-- Recipes
+-- War Campaign
 		[-236] = C_Map.GetAreaInfo(9663),										-- War Campaign - Alliance
+-- Warfront
 		[-237] = GetSpellInfo(290253),											-- Warfront: The Battle for Darkshore
+		
+
+-- PvP
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-242] = "Unrated",														-- Unrated
 		[-243] = "Bounty",														-- Bounty
