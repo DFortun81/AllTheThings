@@ -7,6 +7,7 @@ _.Zones =
 	m(905, {	-- Argus
 		m(886, {	-- Vindicaar
 			["icon"] = "Interface\\Icons\\inv_lightforgedmechsuit",
+			["lore"] = "For untold millennia, the Army of the Light waged war against the Burning Legion throughout the Twisting Nether. The draenei most committed to their long crusade would undergo a ritual to become Lightforged, infusing their bodies with the very essence of the Holy Light. After finally achieving victory on Argus, the Lightforged draenei have undertaken a new mission: protecting Azeroth from rising threats and helping the Alliance push back against Horde aggression.",
 			["maps"] = {
 				831,	-- Upper Deck [The Vindicaar: Krokuun]
 				832,	-- Lower Deck [The Vindicaar: Krokuun]
@@ -14,8 +15,10 @@ _.Zones =
 				884,	-- Lower Deck [The Vindicaar: Mac'Aree]
 				-- 886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
 				887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
+				940,	-- Upper Deck [The Vindicaar: LFD]
+				941,	-- Lower Deck [The Vindicaar: LFD]
 			},
-			["lvl"] = 110,
+			["lvl"] = lvlsquish(10, 110, 10),
 			["isRaid"] = true,
 			["g"] = {
 				n(ACHIEVEMENTS, {

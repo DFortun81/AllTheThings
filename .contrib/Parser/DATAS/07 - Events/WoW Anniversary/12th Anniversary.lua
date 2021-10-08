@@ -18,15 +18,15 @@ _.WorldEvents =
 			n(MAILBOX, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {
 				i(139284, {	-- Anniversary Gift
 					i(139285),	-- Celebration Package
-					i(139410, {	-- Letter from the Timewalker [Horde]
-						["isYearly"] = true,	 -- Resets each year even if you did it.
-						["questID"] = 43472,	-- The Historians
+					q(43472, {	-- The Historians
+						["provider"] = { "i", 139410 },	-- Letter from the Timewalker [Horde]
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					}),
-					i(139409, {	-- Letter from the Timewalker [Alliance]
-						["isYearly"] = true,	 -- Resets each year even if you did it.
-						["questID"] = 43471,	-- The Historians
+					q(43471, {	-- The Historians
+						["provider"] = { "i", 139409 },	-- Letter from the Timewalker [Alliance]
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					}),
 				}),
 			})),

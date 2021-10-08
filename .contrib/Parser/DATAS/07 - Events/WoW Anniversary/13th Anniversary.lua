@@ -18,23 +18,25 @@ _.WorldEvents =
 			n(MAILBOX, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {
 				i(147876, {	-- Anniversary Gift
 					i(147877),	-- Celebration Package
-					i(147881, {	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
-						["questID"] = 47251,	-- Interesting Things
+					q(47251, {	-- Interesting Things
+						["provider"] = { "i", 147881 },	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					}),
-					i(147880, {	-- A Slightly More Urgent Letter from the Timewalkers [Alliance]
-						["questID"] = 47252,	-- Interesting Things
+					q(47252, {	-- Interesting Things
+						["provider"] = { "i", 147880 },	-- A Slightly More Urgent Letter from the Timewalkers [Alliance]
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					}),
-					i(139410, {	-- Letter from the Timewalker [Horde]
-						["questID"] = 43472,	-- The Historians
+					q(43472, {	-- The Historians
+						["provider"] = { "i", 139410 },	-- Letter from the Timewalker [Horde]
 						["races"] = HORDE_ONLY,
-						["isYearly"] = true,	 -- Resets each year even if you did it.
+						["isYearly"] = true,
 					}),
-					i(139409, {	-- Letter from the Timewalker [Alliance]
-						["questID"] = 43471,	-- The Historians
+					q(43471, {	-- The Historians
+						["provider"] = { "i", 139409 },	-- Letter from the Timewalker [Alliance]
 						["races"] = ALLIANCE_ONLY,
-						["isYearly"] = true,	 -- Resets each year even if you did it.
+						["isYearly"] = true,
 					}),
 				}),
 			})),

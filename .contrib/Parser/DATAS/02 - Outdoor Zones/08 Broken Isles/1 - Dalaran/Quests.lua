@@ -791,7 +791,6 @@ _.Zones =
 						PRIEST,		-- Shadow
 						WARLOCK,	-- Affliction
 					},
-					["lvl"] = 110,
 				}),
 				q(47005, {	-- Mistweaver: The Bradensbrook Investigation
 					["sourceQuests"] = {

@@ -37,7 +37,7 @@ _.PVP =
 				i(134675),	-- Rookie's Gloves*
 				i(134677),	-- Rookie's Legguards*
 				i(134678),	-- Rookie's Shoulders*
-				i(134681),	-- Greenhorn's Legguards
+				i(134681),	-- Greenhorn's Legguards	-- Confirmed 21 Nov 2020
 				i(134654),	-- Greenhorn's Armbands
 				i(134651),	-- Greenhorn's Armor
 				i(134652),	-- Greenhorn's Footguards
@@ -62,7 +62,7 @@ _.PVP =
 				i(134646),	-- Recruit's Mageblade*
 				i(135481),	-- Recruit's Quickblade*
 				i(134662),	-- Recruit's Redoubt*
-				i(134638),	-- Recruit's Rifle
+				i(134638),	-- Recruit's Rifle			-- Confirmed 21 Nov 2020
 				i(134663),	-- Recruit's Slicer*
 				i(134639),	-- Recruit's Staff*
 				i(134661),	-- Recruit's Signet			//** 4/21/19

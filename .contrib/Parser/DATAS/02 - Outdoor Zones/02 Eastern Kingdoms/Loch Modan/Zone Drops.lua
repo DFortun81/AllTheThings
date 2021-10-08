@@ -31,9 +31,9 @@ _.Zones =
 				un(REMOVED_FROM_GAME, n(1202, {	-- Tunnel Rat Kobold
 					un(REMOVED_FROM_GAME, i(2281)),	-- Rodentia Flint Axe (NOTE: No indication that these are dropping again, but if they do we can set them back to obtainable.)
 				})),
-				un(REMOVED_FROM_GAME, n(1177, {	-- Tunnel Rat Surveyor
+				n(1177, {	-- Tunnel Rat Surveyor
 					un(REMOVED_FROM_GAME, i(2283)),	-- Rat CLoth Belt (NOTE: No indication that these are dropping again, but if they do we can set them back to obtainable.)
-				})),
+				}),
 			}),
 		}),
 	}),

@@ -52,10 +52,3 @@ _.GearSets =
 		}),
 	}),
 };
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9982, {	-- Legion
-		n(LEGENDARIES, {
-			i(138489),	-- Kargath's Sacrified Hands
-		}),
-	}),
-});

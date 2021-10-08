@@ -36,6 +36,11 @@ namespace ATT
             private static IDictionary<long, Dictionary<string, object>> ITEMS_WITH_SPECIES = new ConcurrentDictionary<long, Dictionary<string, object>>();
 
             /// <summary>
+            /// All of the items with species data that have been parsed sorted by Item ID.
+            /// </summary>
+            private static IDictionary<long, bool> TOYS = new ConcurrentDictionary<long, bool>();
+
+            /// <summary>
             /// A list of fields that have already warned the programmer.
             /// </summary>
             private static IDictionary<string, bool> WARNED_FIELDS = new ConcurrentDictionary<string, bool>();
@@ -94,6 +99,19 @@ namespace ATT
                 get
                 {
                     return ITEMS_WITH_SPECIES;
+                }
+            }
+
+
+
+            /// <summary>
+            /// All of the toys that are in the database.
+            /// </summary>
+            public static IDictionary<long, bool> AllToys
+            {
+                get
+                {
+                    return TOYS;
                 }
             }
 
@@ -195,6 +213,17 @@ namespace ATT
 
                 // Create a new item dictionary.
                 return ITEMS_WITH_SPECIES[itemID] = new Dictionary<string, object>();
+            }
+
+            /// <summary>
+            /// Set whether or not the item is a Toy.
+            /// </summary>
+            /// <param name="itemID">The Item ID.</param>
+            /// <param name="isToy">Whether the item is a toy or not.</param>
+            public static void SetIsToy(long itemID, bool isToy)
+            {
+                if (isToy) TOYS[itemID] = true;
+                else TOYS.Remove(itemID);
             }
 
             /// <summary>

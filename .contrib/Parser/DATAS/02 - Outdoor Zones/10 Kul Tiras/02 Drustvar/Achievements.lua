@@ -489,9 +489,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 55.60, 51.80, DRUSTVAR },
 						["g"] = {
-							i(163790, {	-- Spooky Incantation
-								["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
-							}),
+							i(163790),	-- Spooky Incantation
 						},
 					}),
 					o(297881, {	-- Enchanted Chest
@@ -500,9 +498,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 25.50, 24.20, DRUSTVAR },
 						["g"] = {
-							i(163796, {	-- Wolf Pup Spine
-								["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
-							}),
+							i(163796),	-- Wolf Pup Spine
 						},
 					}),
 					o(297880, {	-- Ensorcelled Chest
@@ -510,9 +506,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 67.70, 73.70, DRUSTVAR },
 						["g"] = {
-							i(163791, {	-- Miniature Stag Skull
-								["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
-							}),
+							i(163791),	-- Miniature Stag Skull
 						},
 					}),
 					o(297878, {	-- Hexed Chest
@@ -521,9 +515,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 18.50, 51.30, DRUSTVAR },
 						["g"] = {
-							i(163789, {	-- Bundle of Wicker Stick
-								["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
-							}),
+							i(163789),	-- Bundle of Wicker Stick
 						},
 					}),
 					o(297828, {	-- Merchant's Chest
@@ -586,4 +578,8 @@ _.Zones =
 			}),
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(53448),	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
 };

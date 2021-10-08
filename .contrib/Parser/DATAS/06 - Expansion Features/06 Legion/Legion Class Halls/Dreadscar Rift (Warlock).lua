@@ -75,6 +75,12 @@ _.ExpansionFeatures =
 							["coord"] = { 37.6, 31.9, 717 },
 							["provider"] = { "n", 101097 },	-- Calydus
 						}),
+						q(43414, {	-- A Hero's Weapon
+							["sourceQuests"] = { 41796 },	-- Selecting the Sixth
+							["classes"] = { WARLOCK },
+							["coord"] = { 36.3, 30.8, 717 },
+							["provider"] = { "n", 110488 },	-- Ritssyn Flamescowl
+						}),
 						q(44099, {	-- A Mutual Friend
 							["sourceQuests"] = { 40823 },	-- Rebuilding the Council
 							["classes"] = { WARLOCK },
@@ -97,7 +103,7 @@ _.ExpansionFeatures =
 							["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 						}),
 						q(45021, {	-- Answers Unknown
-							--["sourceQuests"] = {  },	--
+							["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 							["classes"] = { WARLOCK },
 							["coord"] = { 57.4, 38.0, 717 },
 							["provider"] = { "n", 105926 },	-- Shinfel Blightsworn
@@ -143,9 +149,9 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(41756, {	-- Champion: Eredar Twins
-							--["sourceQuests"] = {  },
+							["sourceQuests"] = { 41795 },	-- Summoning the Sisters
 							["classes"] = { WARLOCK },
-							--["coord"] = { , 717 },
+							["coord"] = { 58.3, 40.8, 717 },
 							["provider"] = { "n", 106228 },	-- Grand Warlock Alythess
 							["g"] = {
 								follower(621),	-- Eredar Twins
@@ -178,9 +184,9 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(41755, {	-- Champion: Lulubelle Fizzlebang
-							--["sourceQuests"] = {  },
+							["sourceQuests"] = { 41793 },	-- Lulubelle on Loan
 							["classes"] = { WARLOCK },
-							--["coord"] = { , 717 },
+							["coord"] = { 54.4, 39.3, 717 },
 							["provider"] = { "n", 105928 },	-- Lulubelle Fizzlebang
 							["g"] = {
 								follower(590),	-- Lulubelle Fizzlebang
@@ -212,6 +218,13 @@ _.ExpansionFeatures =
 							["g"] = {
 								follower(618),	-- Zinnin Smythe
 							},
+						}),
+						q(41788, {	-- Coercing a Confession
+							["sourceQuests"] = { 41785 },	-- Finding Fizzlebang
+							["classes"] = { WARLOCK },
+							["coord"] = { 39.3, 42.2, STORMHEIM },
+							["provider"] = { "n", 104855 },	-- Lulubelle Fizzlebang
+							["maps"] = { STORMHEIM },
 						}),
 						q(46020, {	-- Crystal Containment
 							["sourceQuests"] = { 45028 },	-- The Fate of Kanrethad
@@ -280,6 +293,12 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 35.3, 38.5, 717 },
 							["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
+						}),
+						q(41785, {	-- Finding Fizzlebang
+							["sourceQuests"] = { 42660 },	-- Vault of the Wardens: Matters of the Heart
+							["classes"] = { WARLOCK },
+							["coord"] = { 53.9, 36.2, 717 },
+							["provider"] = { "n", 105102 },	-- Ritssyn Flamescowl
 						}),
 						q(43100, {	-- Finding the Scepter
 							["sourceQuests"] = {
@@ -378,6 +397,16 @@ _.ExpansionFeatures =
 							["coord"] = { 54.0, 47.0, LEGION_DALARAN },
 							["provider"] = { "n", 106610 },	-- Calydus
 						}),
+						q(41793, {	-- Lulubelle on Loan
+							["sourceQuests"] = {
+								41787, -- Someone Else's Mess
+								41788, -- Coercing a Confession
+							},
+							["classes"] = { WARLOCK },
+							["coord"] = { 39.3, 42.2, STORMHEIM },
+							["provider"] = { "n", 104855 },	-- Lulubelle Fizzlebang
+							["maps"] = { STORMHEIM },
+						}),
 						q(41769, {	-- Mad Ernie the Alchemist
 							["sourceQuests"] = { 41768 },	-- Soul Beacon
 							["classes"] = { WARLOCK },
@@ -454,6 +483,23 @@ _.ExpansionFeatures =
 							["coord"] = { 65.6, 47.2, 717 },
 							["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 						}),
+						q(41796, {	-- Selecting a Sixth
+							["sourceQuests"] = { 41795 },	-- Summoning the Sisters
+							["classes"] = { WARLOCK },
+							["coord"] = { 55.0, 37.4, 717 },
+							["provider"] = { "n", 105951 },	-- Ritssyn Flamescowl
+							["g"] = {
+								i(139767),	-- Robes of the Black Harvest
+								title(337),	-- Netherlord <Name>
+							},
+						}),
+						q(41787, {	-- Someone Else's Mess
+							["sourceQuests"] = { 41785 },	-- Finding Fizzlebang
+							["classes"] = { WARLOCK },
+							["coord"] = { 39.3, 42.2, STORMHEIM },
+							["provider"] = { "n", 104855 },	-- Lulubelle Fizzlebang
+							["maps"] = { STORMHEIM },
+						}),
 						q(41768, {	-- Soul Beacon
 							["sourceQuests"] = { 42100 },	-- Empowering the Soul
 							["classes"] = { WARLOCK },
@@ -466,6 +512,12 @@ _.ExpansionFeatures =
 							["coord"] = { 30.4, 44.6, AZSUNA },
 							["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 							["maps"] = { AZSUNA },
+						}),
+						q(41795, {	-- Summoning the Sisters
+							["sourceQuests"] = { 41755 },	-- Champion: Lulubelle Fizzlebang
+							["classes"] = { WARLOCK },
+							["coord"] = { 55.0, 37.4, 717 },
+							["provider"] = { "n", 105815 },	-- Ritssyn Flamescowl
 						}),
 						q(42601, {	-- Tech It Up A Notch
 							["sourceQuests"] = { 42602 },	-- Troops in the Field
@@ -642,24 +694,15 @@ _.ExpansionFeatures =
 	--]]
 
 					--	TODO: not organized/sourced yet.
-						q(43414),	-- A Hero's Weapon
 						q(44228),	-- Champion Armaments
-						q(41785),	-- Finding Fizzlebang
-						q(41793),	-- Lulubelle on Loan
 						q(43895),	-- Sealing Fate: Gold
-						q(41795),	-- Summoning the Sisters
 						q(41155),	-- The Dark Riders
 						q(41156),	-- The Power Possessed
 						q(44227, {	-- Unleashing our Wrath
 							["u"] = REMOVED_FROM_GAME,
 						}),
-						q(44682),	-- Unparalleled Power
 						q(44254, {	-- Gazing Into Oblivion
 							i(139765),	-- Visage of the Black Harvest
-						}),
-						q(41796, {	-- Selecting a Sixth
-							i(139767),	-- Robes of the Black Harvest
-							title(337),	-- Netherlord <Name>
 						}),
 						--[[ Artifact Appearance  Quests Commented Out For Now
 						q(43414, {	-- A Hero's Weapon
@@ -733,6 +776,8 @@ _.ExpansionFeatures =
 _.HiddenQuestTriggers = {
 	q(40514),	-- Warlock Order Hall - Revil convinced
 	q(40686),	-- Warlock Order Hall - Affliction chosen first
+	q(42084),	-- Selecting a Sixth: Kira
+	q(42085),	-- Selecting a Sixth: Lulubelle
 	q(43982),	-- Warlock Order Hall - Demonology chosen second
 	q(44389),	-- Warlock Order Hall - Affliction chosen third
 	q(44628),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 1

@@ -387,3 +387,6 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(47920),	-- Ensemble: Timewarden's Plate
+};

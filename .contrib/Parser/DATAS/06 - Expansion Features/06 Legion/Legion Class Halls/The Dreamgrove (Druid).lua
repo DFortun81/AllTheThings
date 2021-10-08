@@ -1027,7 +1027,6 @@ _.ExpansionFeatures =
 										["isBreadcrumb"] = true,
 										["questID"] = 44329,	-- Owlcat Stone Activate [Duskwood]
 										["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
-										["icon"] = "Interface\\Icons\\achievement_zone_duskwood",
 										["coords"] = {
 											{ 42.0, 38.0, DUSKWOOD },
 											{ 43.0, 38.0, DUSKWOOD },
@@ -1053,7 +1052,6 @@ _.ExpansionFeatures =
 										["isBreadcrumb"] = true,
 										["questID"] = 44327,	-- Owlcat Stone Activate [Feralas]
 										["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
-										["icon"] = "Interface\\Icons\\achievement_zone_feralas",
 										["coords"] = {
 											{ 48.0, 6.0, FERALAS },
 											{ 48.0, 10.0, FERALAS },
@@ -1084,7 +1082,6 @@ _.ExpansionFeatures =
 										["isBreadcrumb"] = true,
 										["questID"] = 44328,	-- Owlcat Stone Activate [Hinterlands]
 										["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
-										["icon"] = "Interface\\Icons\\achievement_zone_hinterlands_01",
 										["coords"] = {
 											{ 57.0, 34.0, THE_HINTERLANDS },
 											{ 58.1, 18.1, THE_HINTERLANDS },
@@ -1113,19 +1110,16 @@ _.ExpansionFeatures =
 							n(-133, {	-- Duskwood Activated
 								["questID"] = 44330,	-- Owlcat Stone Touched [Duskwood]
 								["description"] = "This quest indicates if you have activated the Duskwood Owlcat Stone.",
-								["icon"] = "Interface\\Icons\\achievement_zone_duskwood",
 								["sourceQuests"] = { 44329 },	-- Owlcat Stone Activate [Duskwood]
 							}),
 							n(-158, {	-- Feralas Activated
 								["questID"] = 44331,	-- Owlcat Stone Touched [Feralas]
 								["description"] = "This quest indicates if you have activated the Feralas Owlcat Stone.",
-								["icon"] = "Interface\\Icons\\achievement_zone_feralas",
 								["sourceQuests"] = { 44327 },	-- Owlcat Stone Activate [Feralas]
 							}),
 							n(-157, {	-- The Hinterlands Activated
 								["questID"] = 44332,	-- Owlcat Stone Touched [Hinterlands]
 								["description"] = "This quest indicates if you have activated the Hinterlands Owlcat Stone.",
-								["icon"] = "Interface\\Icons\\achievement_zone_hinterlands_01",
 								["sourceQuests"] = { 44328 },	-- Owlcat Stone Activate [Hinterlands]
 							}),
 							n(113663, {	-- Ela'lothen <The Moonspirit>

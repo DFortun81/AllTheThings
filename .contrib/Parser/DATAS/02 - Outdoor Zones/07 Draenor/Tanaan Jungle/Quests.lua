@@ -492,9 +492,8 @@ _.Zones =
 							}),
 						},
 					}),
-					--[[
 					q(38252, {	-- Assault on the Ruins of Kra'nak (H)
-						["coord"] = { ?, ?, TANAAN_JUNGLE },
+						["coord"] = { 61.4, 45.8, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["g"] = {
@@ -503,19 +502,16 @@ _.Zones =
 							}),
 						},
 					}),
-					]]--
 					q(37938, {	-- Assault on the Ruins of Kra'nak (A)
 						["coord"] = { 23.0, 37.0, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
-					--[[
 					q(38009, {	-- Assault on the Ruins of Kra'nak (H)
-						["coord"] = { ?, ?, TANAAN_JUNGLE },
+						["coord"] = { 23.0, 37.0, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
-					]]--
 					q(39447, {	-- Assault on the Ruins of Kra'nak (A)
 						["coord"] = { 23.0, 37.0, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,

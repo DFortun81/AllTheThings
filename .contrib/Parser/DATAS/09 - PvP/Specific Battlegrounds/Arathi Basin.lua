@@ -78,7 +78,11 @@ _.PVP =
 							}),
 						}),
 						n(VENDORS, {
+							-- #if BEFORE BFA
 							n(15126, {	-- Rutherford Twing
+							-- #else
+							n(144064, {	-- Rutherford Twing
+							-- #endif
 								["itemID"] = 137642,	-- Mark of Honor
 								["races"] = HORDE_ONLY,	-- to hide it in Mark of Honor list
 								["coord"] = { 68.4, 30.6, ARATHI_HIGHLANDS },

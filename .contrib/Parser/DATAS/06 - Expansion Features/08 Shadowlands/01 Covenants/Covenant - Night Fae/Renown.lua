@@ -85,4 +85,5 @@ _.HiddenQuestTriggers = {
 	q(64374),	-- hitting Renown 60
 	q(64450),	-- hitting Renown 67
 	q(63598),	-- learning Ensemble: Garb of Pure Spirit (Renown reward)
+	q(64451),	-- Renown 76
 };

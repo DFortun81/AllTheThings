@@ -803,6 +803,11 @@ _.HiddenQuestTriggers = {
 		q(63549),	-- Sinister Gladiator's Arsenal (Horde)
 		q(63550),	-- Sinister Aspirant's Arsenal (Alliance)
 		q(63551),	-- Sinister Aspirant's Arsenal (Horde)
+		
+		-- PvP Assassin
+		q(63389),	-- Killed and looted Horde Assasin(as Alliance obviously)
+		q(63390),	-- Killed and looted Horde Assasin(as Alliance obviously)
+		q(63391),	-- Killed and looted Horde Assasin(as Alliance obviously)
 
 		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
 		q(47956),	-- Tracking Quest (triggered when using "To Modernize the Provisioning of Azeroth" toy to unlock EK flight paths)

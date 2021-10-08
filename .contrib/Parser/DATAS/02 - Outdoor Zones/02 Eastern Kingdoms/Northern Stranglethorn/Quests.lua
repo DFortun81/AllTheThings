@@ -879,6 +879,7 @@ _.Zones =
 					["provider"] = { "n", 17094 },	-- Nemeth Hawkeye
 					["coord"] = { 38.1, 50.0, NORTHERN_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 9457 },	-- An Unusual Patron
 					["isBreadcrumb"] = true,
 				}),
 				q(29115, {	-- The Hunter's Revenge (A)

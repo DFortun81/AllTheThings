@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(KUN_LAI_SUMMIT, {
-			n(-222, {	-- Treasure Hunter
+			n(TREASURES, {
 				o(214407, {	-- Mo-Mo's Treasure Chest
 					["questID"] = 31868,
 					["coord"] = { 47.8, 73.5, KUN_LAI_SUMMIT },

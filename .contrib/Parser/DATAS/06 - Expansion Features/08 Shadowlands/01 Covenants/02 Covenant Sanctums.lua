@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
-		n(-900, {	-- Covenant Sanctum
+		n(-900, {	-- Covenant Sanctums
 			["description"] = "These rewards are shared across Covenants.",
 			["g"] = {
 				n(ACHIEVEMENTS, {
@@ -324,4 +324,5 @@ _.HiddenQuestTriggers = {
 
 	-- RENOWN TRIGGERS
 	q(64082),	-- Renown 73 (WQ Reward increase)
+	q(64069),	-- Renown 75 (WQ Reward increase)
 };

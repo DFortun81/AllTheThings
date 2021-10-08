@@ -251,7 +251,7 @@ _.Promotions =
 				["timeline"] = { "added 4.3.0.15005" },
 			}),
 			i(38578, {	-- The Flag of Ownership
-				["timeline"] = { "added 3.0.2.9056" },
+				["timeline"] = { "added 2.5.1" },
 			}),
 			i(69215, {	-- War Party Hitching Post
 				["timeline"] = { "added 4.1.0.13682" },

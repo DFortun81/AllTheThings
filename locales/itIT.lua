@@ -556,7 +556,7 @@ local L = app.L;
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
-		--TODO: ["Antorus, the Burning Throne"] = "Antorus",
+		["Antorus, il Trono Infuocato"] = "Antorus",	-- ["Antorus, the Burning Throne"] = "Antorus"
 		--TODO: ["Expansion Pre"] = "Pre",
 		--TODO: ["Expansion Features"] = "EF",
 		--TODO: ["Dungeons & Raids"] = "D&R",
@@ -576,8 +576,8 @@ for key,value in pairs({
 		--TODO: ["Normal"] = "N",
 		--TODO: ["Heroic"] = "H",
 		--TODO: ["Mythic"] = "M",
-		["Ny'alotha, la Città Risvegliata"] = "Ny'alotha",			-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
-		["Tazavesh, il Bazar Celato"] = "Tazavesh",					-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+		["Ny'alotha, la Città Risvegliata"] = "Ny'alotha",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+		["Tazavesh, il Bazar Celato"] = "Tazavesh",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 		--TODO: ["10 Player"] = "10M",
 		--TODO: ["10 Player (Heroic)"] = "10M (H)",
 		--TODO: ["25 Player"] = "25M",
@@ -625,13 +625,11 @@ for key,value in pairs({
 		--TODO: [-13] = DUNGEON_FLOOR_DIREMAUL1.." [North - Ogres]",-- Gordok Commons [North - Ogres]
 		--TODO: [-14] = DUNGEON_FLOOR_DIREMAUL2.." [West - Elves]",	-- Capital Gardens [West - Elves]
 		--TODO: [-15] = "Exploration",								-- Exploration
-		--TODO: [-16] = BATTLE_PET_BREED_QUALITY4,					-- Rares
 		--TODO: [-19] = "Dragons of Nightmare",						-- Dragons of Nightmare
 		--TODO: [-20] = "Common Vendor Items",						-- Common Vendor Items
 		--TODO: [-21] = "Captains",									-- Captains
 		--TODO: [-22] = "Secrets",									-- Secrets
-
-		--TODO: [-40] = LFG_LIST_LEGACY,							-- Legacy
+		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
 		--TODO: [-41] = "Cache of Madness",
 	-- Armor Types
 		--TODO: [-43] = GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME,-- Cloth
@@ -663,7 +661,6 @@ for key,value in pairs({
 		--TODO: [-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),	-- Feralas Active
 		--TODO: [-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),	-- Duskwood Activated
 	-- Class Trial Sets
-		--TODO: [-140] = "Communal",
 		--TODO: [-141] = "Felsoul",
 		--TODO: [-142] = "Heart-Lesion",
 		--TODO: [-143] = "Lightdrinker",
@@ -682,11 +679,8 @@ for key,value in pairs({
 		--TODO: [-163] = RESISTANCE0_NAME,							-- Armor
 		--TODO: [-165] = GetItemSubClassInfo(13,1),
 		--TODO: [-168] = FACTION_OTHER .. " " ..QUESTS_LABEL,		-- Other Quests
-		--TODO: [-171] = "Quest Chains",
-
 		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
 		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
-		--TODO: [-214] = GetSpellInfo(262061).." "..HOME,			-- Nightborne Home
 		--TODO: [-217] = "Lures",									-- Lures (for Fishing)
 		--TODO: [-218] = "Coastal",									-- Coastal (for Fishing)
 		--TODO: [-224] = "Illidari",								-- Illidari
@@ -694,24 +688,19 @@ for key,value in pairs({
 		--TODO: [-242] = "Unrated",									-- Unrated
 		--TODO: [-243] = "Bounty",									-- Bounty
 		[-254] = "Razze Alleate & Armatura Retaggio",				-- Allied Races & Heritage
-	-- Other
 		--TODO: [-356] = "Assault on the Dark Portal",
 		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower
 		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
-		--TODO: [-366] = WEAPON.." "..WARDROBE_SETS,				-- Weapons Sets
 	-- Dungeon/Raid Wing Info
 		--TODO: [-379] = "Junkyard",								-- Junkyard
 		--TODO: [-393] = "Storming the Citadel",					-- Storming the Citadel
 		--TODO: [-394] = "The Plagueworks",							-- The Plagueworks
 		--TODO: [-397] = "Outposts",								-- Outposts
 		--TODO: [-420] = "Tier 0.5 Sets",							-- Tier 0.5 Sets
-	-- Blizzard Events and Anniversaries
-	-- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		--TODO: [-488] = "War Chest",								-- Daily War Chest
 		--TODO: [-491] = "Tarot Cards",
-
+	-- Blizzard Events and Anniversaries
 		--TODO: [-520] = "Expansion Pre-Launch",
-		--TODO: [-521] = EXPANSION_NAME1..": Dark Portal Opens",
 		--TODO: [-522] = EXPANSION_NAME2..": Zombie Infestation",
 		--TODO: [-523] = EXPANSION_NAME3..": Elemental Unrest",
 		--TODO: [-525] = EXPANSION_NAME5..": Iron Horde Incursion",
@@ -791,7 +780,6 @@ for key,value in pairs({
 		--TODO: [-859] = "Rank 2",									-- Rank 2
 		--TODO: [-860] = "Rank 3",									-- Rank 3
 		--TODO: [-861] = "Rank 4",									-- Rank 4
-
 	-- Shadowlands Header
 		--TODO: [-903] = "Zone Rewards",							-- Zone Rewards
 		--TODO: [-906] = "Tier 1: Tactical Insight",				-- Tier 1: Tactical Insight
@@ -808,7 +796,6 @@ for key,value in pairs({
 		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": Potere Fluente",	-- Tier 3: Flowing Power
 		[-977] = "Maelie la Girovaga",								-- Maelie the Wanderer
 		[-979] = "Alienatore Ve'ken & Alienatore Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
-		--TODO: [-980] = "Shared Treasures",						-- Shared Treasures
 
 		-- SL Maldraxxus/Necrolord
 			--TODO: [-921] = "Sanctum Upgrades",					-- Sanctum Upgrades (Necrolord)
@@ -866,7 +853,6 @@ for key,value in pairs({
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
 
-			--TODO: [-976] = "Korthian Sets",						-- Korthian Sets
 			--TODO: [-1001] = "The Black Vault",
 
 	-- Warrior order hall lore items
@@ -1057,7 +1043,7 @@ for key,value in pairs({
 	[164820] = "Targa del Guardiano Oscuro",	-- Dark Keeper Nameplate
 	[164867] = "RICERCATO",	-- WANTED
 	[164868] = "UCCIDERE A VISTA",	-- KILL ON SIGHT
-	[164869] = "Calice Spettrale",	-- The Spectral Chalice
+	[164869] = "Calice Spettrale",	-- Spectral Chalice
 	[164887] = "Corrupted Windblossom",	-- Corrupted Windblossom	--TODO: This was taken from classic Wowhead
 	[164888] = "Corrupted Whipper Root",	-- Corrupted Whipper Root	--TODO: This was taken from classic Wowhead
 	[164955] = "Pilastro di Cristallo Settentrionale",	-- Northern Crystal Pylon

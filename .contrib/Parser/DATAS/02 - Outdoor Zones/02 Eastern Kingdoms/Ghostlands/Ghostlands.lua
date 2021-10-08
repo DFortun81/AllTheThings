@@ -936,7 +936,10 @@ _.Zones =
 					}),
 					q(9151, {	-- The Sanctum of the Sun
 						["qg"] = 16199,	-- Magister Darenis
-						["sourceQuest"] = 9169,	-- Deactivate An'owyn
+						["sourceQuests"] = {
+							9169,	-- Deactivate An'owyn
+							9140,	-- Windrunner Village
+						},
 						["coord"] = { 46.0, 31.9, GHOSTLANDS },
 						["races"] = HORDE_ONLY,
 						-- #if BEFORE BFA

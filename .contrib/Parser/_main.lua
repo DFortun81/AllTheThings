@@ -441,6 +441,19 @@ FACTION_HEADER_HORDE = -9913;
 	BUILDINGS = -99;
 
 
+-- Slot Categories
+HEAD = -320;
+SHOULDER = -321;
+CLOAK = -322;
+CHEST = -323;
+WRIST = -326;
+HANDS =	-327;
+WAIST =	-328;
+LEGS = -329;
+FEET = -330;
+NECK = -384;
+FINGER = -385;
+
 -- Filters
 BATTLE_PETS = 101;
 
