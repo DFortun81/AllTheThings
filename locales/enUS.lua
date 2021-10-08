@@ -253,9 +253,12 @@ app.L = {
 			-- Mode Title
 				["MODE"] = "Mode";
 				["TITLE_COMPLETIONIST"] = "Completionist ";
-				["TITLE_UNIQUE_APPEARANCE"] = "Unique Appearance ";
+				["TITLE_UNIQUE_APPEARANCE"] = "Unique ";
 				["TITLE_DEBUG"] = "Debug ";
-				["TITLE_ACCOUNT"] = "Account ";
+				["TITLE_ACCOUNT"] = "|Cff00AB00Account|R ";
+				["TITLE_ALLIANCE"] = "|cff407FBFAlliance|R";
+				["TITLE_HORDE"] = "|cffCC6666BFHorde|R";
+				["TITLE_NEUTRAL"] = "Neutral";
 				["TITLE_MAIN_ONLY"] = " (Main Only)";
 				["TITLE_NONE_THINGS"] = "None of the Things ";
 				["TITLE_ONLY"] = " Only ";
@@ -263,7 +266,6 @@ app.L = {
 				["TITLE_SOME_THINGS"] = "Some of the Things ";
 				["TITLE_LEVEL"] = "Level ";
 				["_BETA_LABEL"] = " |CFF4AA7FF[Beta]|R";
-
 
 	["GENERAL_TAB"] = "General";
 	["TWITCH_BUTTON_TOOLTIP"] = "Click this button to copy the url to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
@@ -276,7 +278,7 @@ app.L = {
 	["COMPLETIONIST_MODE_TOOLTIP"] = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "Main Only|r";
 	["MAIN_ONLY_MODE_TOOLTIP"] = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
-	["ACCOUNT_MODE"] = "Account Mode";
+	["ACCOUNT_MODE"] = "|Cff00AB00Account Mode";
 	["ACCOUNT_MODE_TOOLTIP"] = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.";
 	["FACTION_MODE"] = "Faction Only";
 	["FACTION_MODE_TOOLTIP"] = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
@@ -337,12 +339,12 @@ app.L = {
 	["SHOW_REPEATABLE_THINGS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to treat repeatable daily, weekly, and yearly quests as collectible. They will appear in the list like a regular collectible quest.\n\nNOTE: This is NOT intended to be used all the time, but if you're doing a set of dailies in a zone you've otherwise completed and need to be reminded of what is there, you can use this to see them.";
 	["FIRST_TIME_CHECKBOX"] = "Only first time";
 	["FIRST_TIME_CHECKBOX_TOOLTIP"] = "Enable this option if you want to treat repeatable daily, weekly, yearly and world quests as collected if completed at least once, ignoring quest previously completed that has been reset.\n\nNOTE: Previously completed repeatable quest are only stored if you completed the quest with the addon active and that data will be lost if removed the addon data from WTF folder.";
-	["FILTER_THINGS_BY_LEVEL_CHECKBOX"] = "Filter Things By Level";
-	["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"] = "Enable this setting if you only want to see content available to your current level character.\n\nNOTE: This is especially useful on Starter Accounts.";
-	["HIDE_BOE_CHECKBOX"] = "Hide BoE/BoA Items";
-	["HIDE_BOE_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to hide Bind-on-Equip/Account items.\n\nThis setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.";
-	["HIDE_PVP_CHECKBOX"] = "Hide PvP Content";
-	["HIDE_PVP_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to hide any content which 'may' require Player vs. Player interactions within the game.";
+	["FILTER_THINGS_BY_LEVEL_CHECKBOX"] = "No Level Restrictions";
+	["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to see content available regardless of player level.\n\nNOTE: Disabling this is especially useful on Starter Accounts.";
+	["HIDE_BOE_CHECKBOX"] = "BoE/BoA Items";
+	["HIDE_BOE_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to show Bind-on-Equip/Account items.\n\nDisabling this setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.";
+	["HIDE_PVP_CHECKBOX"] = "PvP Content";
+	["HIDE_PVP_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to show content which 'may' require Player vs. Player interactions within the game.";
 	["IGNORE_FILTERS_FOR_BOES_CHECKBOX"] = "Ignore BoE/BoA Item Filters";
 	["IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to ignore armor, weapon, race, class, or profession requirements for BoE/BoA items.\n\nIf you are trying to collect things for your alts via Auction House scanning, this mode may be useful to you.";
 	["EXPAND_DIFFICULTY_CHECKBOX"] = "Expand Current Difficulty";
@@ -375,15 +377,17 @@ app.L = {
 
 	-- Filters tab
 	["FILTERS_TAB"] = "Filters";
-	["ITEM_FILTER_LABEL"] = "Armor / Weapon Filters";
+	["ITEM_FILTER_LABEL"] = "Weapons & Armor";
+	["GENERAL_FILTERS_LABEL"] = "General";
+	["UNCOLLECTABLE_FILTERS_LABEL"] = "Uncollectable";
 	["CLASS_DEFAULTS_BUTTON"] = "Class Defaults";
 	["CLASS_DEFAULTS_BUTTON_TOOLTIP"] = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";
 	["ALL_BUTTON"] = "All";
-	["ALL_BUTTON_TOOLTIP"] = "Click this button to enable all equipment filters at once.";
-	["UNCHECK_ALL_BUTTON"] = "Uncheck All";
-	["UNCHECK_ALL_BUTTON_TOOLTIP"] = "Click this button to disable all equipment filters at once.";
-	["CUSTOM_FILTERS_LABEL"] = "Automatic Filters";
-	["CUSTOM_FILTERS_EXPLAIN_LABEL"] = "|CFFFFFFFFThese filters are automatically applied based on your current character, but may be overridden by being checked, allowing you to see additional Things your character cannot currently collect.\nNone of these filters are ever enabled in Account or Debug modes regardless of the selections below.|r";
+	["ALL_BUTTON_TOOLTIP"] = "Click this button to enable all options at once.";
+	["UNCHECK_ALL_BUTTON"] = "None";
+	["UNCHECK_ALL_BUTTON_TOOLTIP"] = "Click this button to disable all options at once.";
+	["CUSTOM_FILTERS_LABEL"] = "Automated";
+	["CUSTOM_FILTERS_EXPLAIN_LABEL"] = "|CFFFFFFFFThese filters are automatically applied, but their contents can be shown by enabling the options below.|r";
 	["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"] = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Unobtainables tab
