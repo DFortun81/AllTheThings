@@ -15828,6 +15828,11 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			self:SetVisible(true);
 			self:Update();
 		end
+		-- Returns the consolidated data format for the next header level
+		-- Headers are forced not collectible, and will have their content sorted
+		local function CreateHeaderData(group)
+			return { g = { group }, ["sort"] = true, ["collectible"] = false, };
+		end
 		-- set of keys for headers which can be nested in the minilist automatically, but not as a direct top header
 		local subGroupKeys = {
 			["raceID"] = app.CreateRace,
@@ -15904,9 +15909,11 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						-- Pre-nest some groups based on their type after grabbing the parent
 						-- Achievements / Achievement / Criteria
 						if group.key == "criteriaID" and group.achievementID then
-							group = app.CreateAchievement(group.achievementID, { ["collectible"] = false, g = { group }, ["sort"] = true });
+							print("pre-nest achieve",group.criteriaID, group.achievementID)
+							group = app.CreateAchievement(group.achievementID, CreateHeaderData(group));
 						end
 
+						-- Building the header chain for each mapped Thing
 						while nextParent do
 							headerID = nextParent.headerID;
 							if headerID then
@@ -15914,18 +15921,18 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 								if topHeaders[headerID] then
 									-- already found a matching header, then nest it before switching
 									if topHeader then
-										group = app.CreateNPC(topHeader, { g = { group }, ["sort"] = true });
+										group = app.CreateNPC(topHeader, CreateHeaderData(group));
 									end
 									topHeader = headerID;
 								elseif not ignoredHeaders[headerID] then
-									group = app.CreateNPC(headerID, { g = { group }, ["sort"] = true });
+									group = app.CreateNPC(headerID, CreateHeaderData(group));
 									nested = true;
 								end
 							else
 								for hkey,hf in pairs(subGroupKeys) do
 									if nextParent[hkey] then
 										-- create the specified group Type header
-										group = hf(nextParent[hkey], { g = { group }, ["sort"] = true });
+										group = hf(nextParent[hkey], CreateHeaderData(group));
 										nested = true;
 										break;
 									end
@@ -15935,20 +15942,24 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						end
 						-- Create/match the header chain for the zone list assuming it matches one of the allowed top headers
 						if topHeader then
-							group = app.CreateNPC(topHeader, { g = { group }, ["sort"] = true });
+							group = app.CreateNPC(topHeader, CreateHeaderData(group));
 							nested = true;
 						end
 					end
 
 					-- couldn't nest this thing using custom headers, try to use the keys to figure it out
 					if not nested and group then
+						print("manual nest by type",group.key,group.key and group[group.key])
 						if group.key == "speciesID" then
-							group = app.CreateFilter(101, { g = { group }, ["sort"] = true });
+							group = app.CreateFilter(101, CreateHeaderData(group));
 						elseif group.key == "questID" then
-							group = app.CreateNPC(-17, { g = { group }, ["sort"] = true });
+							group = app.CreateNPC(-17, CreateHeaderData(group));
 						elseif group.key == "criteriaID" and group.achievementID then
 							-- Achievements / Achievement / Criteria
-							group = app.CreateNPC(-4, { g = { app.CreateAchievement(group.achievementID, { ["collectible"] = false, g = { group }, ["sort"] = true }) }, ["sort"] = true });
+							-- Nest under the parent Achievement
+							group = app.CreateAchievement(group.achievementID, CreateHeaderData(group));
+							-- Nest under the root Achievement header
+							group = app.CreateNPC(-4, CreateHeaderData(group));
 						end
 						-- otherwise the group itself will be the topHeader in the minilist, and its content will be sorted since it may be merging with an existing group
 						group.sort = true;
