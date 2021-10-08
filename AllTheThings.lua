@@ -15881,6 +15881,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
 					group = CreateObject(group);
+					print(group.key,group.key and group[group.key],group.text)
 					nested = nil;
 
 					-- Cache the difficultyID, if there is one. Also, ignore the event tag for anything that isn't Bizmo's Brawlpub.
