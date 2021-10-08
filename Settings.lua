@@ -940,26 +940,6 @@ end);
 AccountModeCheckBox:SetATTTooltip(L["ACCOUNT_MODE_TOOLTIP"]);
 AccountModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", -2, 0);
 
-local MainOnlyModeCheckBox = settings:CreateCheckBox(L["I_ONLY_CARE_ABOUT_MY_MAIN"],
-function(self)
-	local className, classFilename = UnitClass("player")
-	local rPerc, gPerc, bPerc = GetClassColor(classFilename)
-	self.Text:SetTextColor(rPerc, gPerc, bPerc, 1);
-	self:SetChecked(settings:Get("MainOnly"));
-	if settings:Get("Completionist") or settings:Get("AccountMode") or settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetMainOnlyMode(self:GetChecked());
-end);
-MainOnlyModeCheckBox:SetATTTooltip(L["MAIN_ONLY_MODE_TOOLTIP"]);
-MainOnlyModeCheckBox:SetPoint("LEFT", AccountModeCheckBox.Text, "RIGHT", 4, 0);
-
 local FactionModeCheckBox = settings:CreateCheckBox(L["FACTION_MODE"],
 function(self)
 	local englishFaction = UnitFactionGroup("player")
@@ -983,7 +963,8 @@ function(self)
 	settings:SetFactionMode(self:GetChecked());
 end);
 FactionModeCheckBox:SetATTTooltip(L["FACTION_MODE_TOOLTIP"]);
-FactionModeCheckBox:SetPoint("LEFT", MainOnlyModeCheckBox.Text, "RIGHT", 4, 0);
+FactionModeCheckBox:SetPoint("TOP", AccountModeCheckBox, "TOP", 0, 0);
+FactionModeCheckBox:SetPoint("LEFT", AccountModeCheckBox.Text, "RIGHT", 4, 0);
 
 -- local ThingsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 -- ThingsLabel:SetPoint("TOPLEFT", AccountModeCheckBox, "BOTTOMLEFT", 0, -3);
@@ -1099,7 +1080,29 @@ function(self)
 	settings:SetCompletionistMode(not self:GetChecked());
 end);
 UniqueModeCheckBox:SetATTTooltip(L["UNIQUE_MODE_TOOLTIP"]);
+UniqueModeCheckBox:SetPoint("TOP", CompletionistModeCheckBox, "TOP", 0, 0);
 UniqueModeCheckBox:SetPoint("LEFT", CompletionistModeCheckBox.Text, "RIGHT", 4, 0);
+
+local MainOnlyModeCheckBox = settings:CreateCheckBox(L["I_ONLY_CARE_ABOUT_MY_MAIN"],
+function(self)
+	local className, classFilename = UnitClass("player")
+	local rPerc, gPerc, bPerc = GetClassColor(classFilename)
+	self.Text:SetTextColor(rPerc, gPerc, bPerc, 1);
+	self:SetChecked(settings:Get("MainOnly"));
+	if settings:Get("Completionist") or settings:Get("AccountMode") or settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetMainOnlyMode(self:GetChecked());
+end);
+MainOnlyModeCheckBox:SetATTTooltip(L["MAIN_ONLY_MODE_TOOLTIP"]);
+MainOnlyModeCheckBox:SetPoint("TOP", UniqueModeCheckBox, "TOP", 0, 0);
+MainOnlyModeCheckBox:SetPoint("LEFT", UniqueModeCheckBox.Text, "RIGHT", 4, 0);
 
 local BattlePetsCheckBox = settings:CreateCheckBox(L["BATTLE_PETS_CHECKBOX"],
 function(self)
@@ -3066,6 +3069,7 @@ function(self)
 	settings:SetTooltipSetting("SharedAppearances", self:GetChecked());
 end);
 ShowSharedAppearancesCheckBox:SetATTTooltip(L["SHARED_APPEARANCES_CHECKBOX_TOOLTIP"]);
+ShowSharedAppearancesCheckBox:SetPoint("TOP", ShowCollectionProgressCheckBox, "TOP", 0, 0);
 ShowSharedAppearancesCheckBox:SetPoint("LEFT", ShowCollectionProgressCheckBox.Text, "RIGHT", 4, 0);
 
 local IncludeOriginalSourceCheckBox = settings:CreateCheckBox(L["INCLUDE_ORIGINAL_CHECKBOX"],
