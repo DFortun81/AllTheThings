@@ -2993,30 +2993,6 @@ do a[key] = value; end
 -- didn't use the same localization for the instance. Sorry.
 local a = L.SAVED_TO_DJ_INSTANCES;
 for key,value in pairs({
-	["The Escape from Durnholde"] = "旧希尔斯布莱德丘陵";
-	["Opening of the Dark Portal"] = "黑色沼泽";
-	["Auchindoun: Auchenai Crypts"] = "奥金尼地穴";
-	["Auchindoun: Mana-Tombs"] = "法力陵墓";
-	["Auchindoun: Sethekk Halls"] = "塞泰克大厅";
-	["Auchindoun: Shadow Labyrinth"] = "暗影迷宫";
-	["Coilfang: Serpentshrine Cavern"] = "毒蛇神殿";
-	["Coilfang: The Slave Pens"] = "奴隶围栏";
-	["Coilfang: The Steamvault"] = "蒸汽地窟";
-	["Coilfang: The Underbog"] = "幽暗沼泽";
-	["Hellfire Citadel: Ramparts"] = "地狱火城墙";
-	["Hellfire Citadel: The Blood Furnace"] = "鲜血熔炉";
-	["Hellfire Citadel: The Shattered Halls"] = "破碎大厅";
-	["Tempest Keep: The Arcatraz"] = "禁魔监狱";
-	["Tempest Keep: The Botanica"] = "生态船";
-	["Tempest Keep: The Mechanar"] = "能源舰";
-	["Stormwind Stockade"] = "监狱";
-	["Ahn'Qiraj Temple"] = "安其拉";
-	--TODO: ["Sunken Temple"] = "The Temple of Atal'hakkar";
-	["The Sunwell"] = "太阳之井高地";
-	["Tempest Keep"] = "风暴要塞";
-	["The Violet Hold"] = "紫罗兰监狱";
-	["Magister's Terrace"] = "魔导师平台";
-	["Violet Hold"] = "紫罗兰监狱";
 })
 do a[key] = value; end
 

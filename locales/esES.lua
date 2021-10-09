@@ -2938,30 +2938,6 @@ do a[key] = value; end
 -- didn't use the same localization for the instance. Sorry.
 local a = L.SAVED_TO_DJ_INSTANCES;
 for key,value in pairs({
-	--TODO: ["The Escape from Durnholde"] = "Old Hillsbrad Foothills";
-	--TODO: ["Opening of the Dark Portal"] = "The Black Morass";
-	--TODO: ["Auchindoun: Auchenai Crypts"] = "Auchenai Crypts";
-	--TODO: ["Auchindoun: Mana-Tombs"] = "Mana-Tombs";
-	--TODO: ["Auchindoun: Sethekk Halls"] = "Sethekk Halls";
-	--TODO: ["Auchindoun: Shadow Labyrinth"] = "Shadow Labyrinth";
-	--TODO: ["Coilfang: Serpentshrine Cavern"] = "Serpentshrine Cavern";
-	--TODO: ["Coilfang: The Slave Pens"] = "The Slave Pens";
-	--TODO: ["Coilfang: The Steamvault"] = "The Steamvault";
-	--TODO: ["Coilfang: The Underbog"] = "The Underbog";
-	--TODO: ["Hellfire Citadel: Ramparts"] = "Hellfire Ramparts";
-	--TODO: ["Hellfire Citadel: The Blood Furnace"] = "The Blood Furnace";
-	--TODO: ["Hellfire Citadel: The Shattered Halls"] = "The Shattered Halls";
-	--TODO: ["Tempest Keep: The Arcatraz"] = "The Arcatraz";
-	--TODO: ["Tempest Keep: The Botanica"] = "The Botanica";
-	--TODO: ["Tempest Keep: The Mechanar"] = "The Mechanar";
-	--TODO: ["Stormwind Stockade"] = "The Stockade";
-	--TODO: ["Ahn'Qiraj Temple"] = "Temple of Ahn'Qiraj";
-	--TODO: ["Sunken Temple"] = "The Temple of Atal'hakkar";
-	--TODO: ["The Sunwell"] = "Sunwell Plateau";
-	--TODO: ["Tempest Keep"] = "The Eye";
-	--TODO: ["The Violet Hold"] = "Violet Hold";
-	--TODO: ["Magister's Terrace"] = "Magisters' Terrace";
-	--TODO: ["Violet Hold"] = "The Violet Hold";
 })
 do a[key] = value; end
 

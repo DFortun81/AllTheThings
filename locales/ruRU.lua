@@ -2921,30 +2921,6 @@ do a[key] = value; end
 -- didn't use the same localization for the instance. Sorry.
 local a = L.SAVED_TO_DJ_INSTANCES;
 for key,value in pairs({
-	["The Escape from Durnholde"] = "Старые Предгорья Хилсбрада";
-	["Opening of the Dark Portal"] = "Черные Топи";
-	["Auchindoun: Auchenai Crypts"] = "Аукенайские Гробницы";
-	["Auchindoun: Mana-Tombs"] = "Гробницы Маны";
-	["Auchindoun: Sethekk Halls"] = "Сетеккские Залы";
-	["Auchindoun: Shadow Labyrinth"] = "Темный Лабиринт";
-	["Coilfang: Serpentshrine Cavern"] = "Змеиное Святилище";
-	["Coilfang: The Slave Pens"] = "Узилище";
-	["Coilfang: The Steamvault"] = "Паровое Подземелье";
-	["Coilfang: The Underbog"] = "Нижетопь";
-	["Hellfire Citadel: Ramparts"] = "Бастионы Адского Пламени";
-	["Hellfire Citadel: The Blood Furnace"] = "Кузня Крови";
-	["Hellfire Citadel: The Shattered Halls"] = "Разрушенные Залы";
-	["Tempest Keep: The Arcatraz"] = "Аркатрац";
-	["Tempest Keep: The Botanica"] = "Ботаника";
-	["Tempest Keep: The Mechanar"] = "Механар";
-	["Stormwind Stockade"] = "Тюрьма";
-	["Ahn'Qiraj Temple"] = "Храм Ан'Киража";
-	["Sunken Temple"] = "Храм Атал'Хаккар";
-	["The Sunwell"] = "Плато Солнечного Колодца";
-	["Tempest Keep"] = "Око";
-	["The Violet Hold"] = "Аметистовая Крепость";
-	["Magister's Terrace"] = "Терасса Магистров";
-	["Violet Hold"] = "Аметистовая Крепость";
 })
 do a[key] = value; end
 
