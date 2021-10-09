@@ -6,6 +6,15 @@ _.Secrets =
 {
 	n(-808, {	-- Bound Shadehound
 		["description"] = "Requires |cFF006812Appreciative|r reputation with Ve'nari and a total of 3,500 Stygia.\n\nEnable quest tracking to see all the steps.",
+		["modelScale"] = 1.1,
+		["modelID"] = 92632,
+		["maps"] = {	-- all Maw maps (if any of these wind up being specific scenario maps, remove them!)
+			THE_MAW,
+			1820,	-- Pit of Anguish
+			1821,	-- Pit of Anguish
+			1822,	-- Maw Micro Tremaculum
+			1823,	-- Altar of Domination
+		},
 		["g"] = {
 			n(177073, {	-- Runed Chest
 				["description"] = "Purchase a |cFF0070ddStygia Dowser|r from Ve'nari for 1,500 Stygia.  Throughout the secret, harvest every Stygia Nexus you find, as you will eventually need 200 |cFF1eff00Stygia Dust|r and |cFF1eff00Stygia Slivers|r.\n\nClick the first grapple point at |cFFFFFFFF23.1, 68.3|r and the next grapple point at |cFFFFFFFF23.7, 75.3|r.\n\nUse your |cFF0070ddStygia Dowser|r when you are on the platform covered with green fog, and you will be transformed into a spirit.\n\nEach of the spikes on the platform is topped with a glowing rune.  To open the chest, match the runes in the puzzle to the positioning of the runes atop the spikes.  With your back to the grapple point, start with the rune to your left and continue, moving clockwise.\n\n|cffde1c1cIf you match the runes incorrectly, you will die and get a debuff that prevents you from trying the puzzle again for 2 hours.|r",

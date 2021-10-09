@@ -6412,6 +6412,27 @@ end)();
 
 -- Achievement Lib
 (function()
+local cache = app.CreateCache("achievementID");
+local function CacheInfo(t)
+	local t, id = cache.GetCached(t);
+	--local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(t.achievementID);
+	local _, name, _, _, _, _, _, _, _, icon = GetAchievementInfo(id);
+	t.link = GetAchievementLink(id);
+	t.name = name or ("Achievement #"..id);
+	t.icon = icon or QUESTION_MARK_ICON;
+end
+local function default_name(t)
+	CacheInfo(t);
+	return cache.GetCachedField(t, "name");
+end
+local function default_link(t)
+	CacheInfo(t);
+	return cache.GetCachedField(t, "link");
+end
+local function default_icon(t)
+	CacheInfo(t);
+	return cache.GetCachedField(t, "icon");
+end
 app.AchievementFilter = 4;
 app.AchievementCharCompletedIndex = 13;
 local fields = {
@@ -6426,14 +6447,16 @@ local fields = {
 		end
 	end,
 	["text"] = function(t)
-		--local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(t.achievementID);
-		return GetAchievementLink(t.achievementID) or select(2, GetAchievementInfo(t.achievementID)) or ("Achievement #" .. t.achievementID);
+		return t.link or t.name;
 	end,
 	["link"] = function(t)
-		return GetAchievementLink(t.achievementID);
+		return cache.GetCachedField(t, "link", default_link);
+	end,
+	["name"] = function(t)
+		return cache.GetCachedField(t, "name", default_name);
 	end,
 	["icon"] = function(t)
-		return select(10, GetAchievementInfo(t.achievementID));
+		return cache.GetCachedField(t, "icon", default_icon);
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleAchievements;

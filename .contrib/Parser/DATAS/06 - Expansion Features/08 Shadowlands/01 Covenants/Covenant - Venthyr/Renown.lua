@@ -91,4 +91,5 @@ _.HiddenQuestTriggers = {
 	q(63637),	-- learning Ensemble: Sinful Inquisitor's Vestments (Renown reward)
 
 	q(64578),	-- triggered after watching Kael'thas/The Accuser RP
+	q(64454),	-- Renown 76
 };
