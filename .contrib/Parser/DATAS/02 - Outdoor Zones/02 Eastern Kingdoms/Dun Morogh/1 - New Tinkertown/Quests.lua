@@ -287,7 +287,6 @@ _.Zones =
 							["provider"] = { "n", 124280 },	-- Mina Gleespanner
 							["coord"] = { 36.4, 36.4, 469 },
 							["races"] = { GNOME },
-							["isYearly"] = true,
 						}),
 						q(27674, {	-- To the Surface
 							["sourceQuests"] = { 27635 },	-- Decontamination
