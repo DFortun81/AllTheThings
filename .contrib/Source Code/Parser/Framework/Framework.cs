@@ -595,17 +595,17 @@ namespace ATT
             {
                 DuplicateDataIntoGroups(data, items, "item");
                 data.Remove("_items");
-                cloned = true;
+                //cloned = true;
             }
             else if (data.TryGetValue("_npcs", out object npcs))
             {
                 DuplicateDataIntoGroups(data, npcs, "npc");
                 data.Remove("_npcs");
-                cloned = true;
+                //cloned = true;
             }
 
-            // data that is cloned to another location in the addon should not be maintained where it was cloned from
-            if (cloned)
+            // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
+            if (cloned && data.ContainsKey("criteriaID"))
                 return false;
 
             // Throw away automatic Spell ID assignments for certain filter types.
