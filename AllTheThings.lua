@@ -15841,25 +15841,25 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		-- Keep a static collection of top-level groups in the list so they can just be referenced for adding new
 		local topHeaders = {
 		-- ACHIEVEMENTS = -4
-			[-4] = true,
+			[-4] = "achievementID",
 		-- BUILDINGS = -99;
 			[-99] = true,
 		-- COMMON_BOSS_DROPS = -1;
 			[-1] = true,
 		-- FACTIONS = -6013;
-			[-6013] = true,
+			[-6013] = "factionID",
 		-- FLIGHT_PATHS = -228;
-			[-228] = true,
+			[-228] = "flightPathID",
 		-- HOLIDAY = -3;
-			[-3] = true,
+			[-3] = "holidayID",
 		-- QUESTS = -17;
-			[-17] = true,
+			[-17] = "questID",
 		-- RARES = -16;
 			[-16] = true,
 		-- SECRETS = -22;
 			[-22] = true,
 		-- TREASURES = -212;
-			[-212] = true,
+			[-212] = "objectID",
 		-- VENDORS = -2;
 			[-2] = true,
 		-- ZONE_DROPS = 0;
@@ -15879,14 +15879,14 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			end
 			local results = SearchForField("mapID", self.mapID);
 			if results then
-				print(#results,"individual minilist results",self.mapID)
+				-- print(#results,"individual minilist results",self.mapID)
 				-- Simplify the returned groups
 				local groups, nested = {};
 				local header = app.CreateMap(self.mapID, { g = groups });
 				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
 					group = CreateObject(group);
-					print(group.key,group.key and group[group.key],group.text)
+					-- print(group.key,group.key and group[group.key],group.text)
 					nested = nil;
 
 					-- Cache the difficultyID, if there is one. Also, ignore the event tag for anything that isn't Bizmo's Brawlpub.
@@ -15909,7 +15909,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						-- Pre-nest some groups based on their type after grabbing the parent
 						-- Achievements / Achievement / Criteria
 						if group.key == "criteriaID" and group.achievementID then
-							print("pre-nest achieve",group.criteriaID, group.achievementID)
+							-- print("pre-nest achieve",group.criteriaID, group.achievementID)
 							group = app.CreateAchievement(group.achievementID, CreateHeaderData(group));
 						end
 
@@ -15947,19 +15947,22 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						end
 					end
 
-					-- couldn't nest this thing using custom headers, try to use the keys to figure it out
+					-- couldn't nest this thing using custom headers, try to use the key of the group to figure it out
 					if not nested and group then
-						print("manual nest by type",group.key,group.key and group[group.key])
-						if group.key == "speciesID" then
+						local groupKey = group.key;
+						-- print("manual nest by type",group.key,group.key and group[group.key])
+						for headerID,key in pairs(topHeaders) do
+							if groupKey == key then
+								-- print("nest as",headerID)
+								group = app.CreateNPC(headerID, CreateHeaderData(group));
+								nested = true;
+								break;
+							end
+						end
+						-- really really special cases...
+						-- Battle Pets get a raw Filter group
+						if not nested and groupKey == "speciesID" then
 							group = app.CreateFilter(101, CreateHeaderData(group));
-						elseif group.key == "questID" then
-							group = app.CreateNPC(-17, CreateHeaderData(group));
-						elseif group.key == "criteriaID" and group.achievementID then
-							-- Achievements / Achievement / Criteria
-							-- Nest under the parent Achievement
-							group = app.CreateAchievement(group.achievementID, CreateHeaderData(group));
-							-- Nest under the root Achievement header
-							group = app.CreateNPC(-4, CreateHeaderData(group));
 						end
 						-- otherwise the group itself will be the topHeader in the minilist, and its content will be sorted since it may be merging with an existing group
 						group.sort = true;

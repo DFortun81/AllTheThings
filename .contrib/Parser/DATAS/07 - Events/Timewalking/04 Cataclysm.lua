@@ -14,10 +14,6 @@ _.WorldEvents =
 					{ 74.8, 18.2, STORMWIND_CITY },
 					{ 49.8, 37.6, ORGRIMMAR },
 				},
-				["maps"] = {
-					STORMWIND_CITY,
-					ORGRIMMAR,
-				},
 			}),
 			q(40786, {	-- The Smoldering Ember (A)
 				["provider"] = { "i", 133378 },	-- Smoldering Timewarped Ember
