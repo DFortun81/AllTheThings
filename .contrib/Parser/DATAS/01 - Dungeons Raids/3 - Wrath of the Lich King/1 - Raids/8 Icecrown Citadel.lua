@@ -1206,7 +1206,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					["sym"] = {
 						{"sub", "pvp_gear_base", -10014, -670, -661 },	-- Relentless Gladiator: Season 7 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", -384, -385, -386, -322, -326, -328, -330, -319 },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
+						{"exclude", "headerID", NECK, FINGER, -386, BACK, WRIST, WAIST, FEET, -319 },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
 					},
 				}),
 				n(38181, {	-- Haragg the Unseen <Warlock Armor>

@@ -405,7 +405,7 @@ _.Zones =
 								["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
 							}),
 						}),
-						n(-322, {	-- Cloak
+						n(BACK, {
 							i(185240, {	-- Unchained Aspirant's Cape
 								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
@@ -617,7 +617,7 @@ _.Zones =
 							}),
 						}),
 					--	Accessories
-						n(-384, {	-- Neck
+						n(NECK, {
 							i(185239, {	-- Unchained Aspirant's Choker
 								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
@@ -628,7 +628,7 @@ _.Zones =
 								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
 						}),
-						n(-385, {	-- Finger
+						n(FINGER, {
 							i(185233, {	-- Unchained Aspirant's Band
 								["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 							}),
@@ -979,7 +979,7 @@ _.Zones =
 							}),
 						}),
 					--	Apparel
-						n(-322, {	-- Cloak
+						n(BACK, {
 							i(185164, {	-- Unchained Gladiator's Cloak
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),
@@ -1194,7 +1194,7 @@ _.Zones =
 							}),
 						}),
 					--	Accessories
-						n(-384, {	-- Neck
+						n(NECK, {
 							i(185283, {	-- Unchained Gladiator's Amulet
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),
@@ -1205,7 +1205,7 @@ _.Zones =
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),
 						}),
-						n(-385, {	-- Finger
+						n(FINGER, {
 							i(185273, {	-- Unchained Gladiator's Band
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),

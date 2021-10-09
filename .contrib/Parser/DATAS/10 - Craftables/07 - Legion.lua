@@ -137,37 +137,37 @@ _.Craftables =
 				i(136684),	-- Gleaming Iron Spike
 				i(136683),	-- Terrorspike
 			}),
-			n(-320, {		-- Head
+			n(HEAD, {
 				i(123913),	-- Demonsteel Helm
 				i(123894),	-- Leystone Helm
 			}),
-			n(-321, {		-- Shoulders
+			n(SHOULDER, {
 				i(123915),	-- Demonsteel Pauldrons
 				i(123896),	-- Leystone Pauldrons
 			}),
-			n(-323, {		-- Chest
+			n(CHEST, {
 				i(123910),	-- Demonsteel Breastplate
 				i(151576),	-- Empyrial Breastplate
 				i(123891),	-- Leystone Breastplate
 			}),
-			n(-327, {		-- Hands
+			n(HANDS, {
 				i(123912),	-- Demonsteel Gauntlets
 				i(123893),	-- Leystone Gauntlets
 			}),
-			n(-326, {		-- Wrist
+			n(WRIST, {
 				i(123917),	-- Demonsteel Armguards
 				i(123898),	-- Leystone Armguards
 			}),
-			n(-328, {		-- Waist
+			n(WAIST, {
 				i(123916),	-- Demonsteel Waistguard
 				i(123897),	-- Leystone Waistguard
 				i(146667),	-- Rethu's Incessant Courage
 			}),
-			n(-329, {		-- Legs
+			n(LEGS, {
 				i(123914),	-- Demonsteel Greaves
 				i(123895),	-- Leystone Greaves
 			}),
-			n(-330, {		-- Feet
+			n(FEET, {
 				i(123911),	-- Demonsteel Boots
 				i(123892),	-- Leystone Boots
 			}),
@@ -310,7 +310,7 @@ _.Craftables =
 				i(130254),	-- Chatterstone
 				i(130251),	-- JewelCraft
 			}),
-			n(-320, {		-- Head
+			n(HEAD, {
 				i(151587),	-- Empyrial Cosmic Crown
 				i(151588),	-- Empyrial Deep Crown
 				i(151589),	-- Empyrial Elemental Crown
@@ -431,7 +431,7 @@ _.Craftables =
 				i(142075),	-- Imbued Silkweave Bag
 				i(127035),	-- Silkweave Satchel
 			}),
-			n(-322, {	-- Cloak
+			n(BACK, {
 				i(127019),	-- Imbued Silkweave Cover
 				i(127020),	-- Imbued Silkweave Drape
 				i(127034),	-- Imbued Silkweave Flourish

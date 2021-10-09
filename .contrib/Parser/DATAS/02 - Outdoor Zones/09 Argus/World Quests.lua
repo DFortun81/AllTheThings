@@ -8,7 +8,7 @@ _.Zones =
 		n(WORLD_QUESTS, {
 			["lvl"] = 110,
 			["groups"] = {
-				n(-322, {	-- Cloak
+				n(BACK, {
 					i(150988),	-- Twisted-Ritualist's Shawl
 				}),
 				n(-43, {	-- Cloth
@@ -51,7 +51,7 @@ _.Zones =
 					i(150956),	-- Garothi Greaves
 					i(150963),	-- Garothi Sabatons
 				}),
-				n(-384, {	-- Neck
+				n(NECK, {
 					i(150990),	-- Krokul-Bone Pendant
 					i(136733),	-- Warden Pendant
 				}),
@@ -59,7 +59,7 @@ _.Zones =
 				n(-386,  {	-- Trinkets
 				}),
 				]]--
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(150989),	-- Foul-Sadist's Seal
 				}),
 				n(-387, {	-- Relic

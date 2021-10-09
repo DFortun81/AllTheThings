@@ -6,7 +6,7 @@ _.WorldDrops =
 {
 	tier(CLASSIC_TIER, {
 		n(-318, {	-- Armor
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(13102),	-- Cassandra's Grace
 				i(3020),	-- Enduring Cap
 				i(3075),	-- Eye of Flame
@@ -64,7 +64,7 @@ _.WorldDrops =
 				i(12024),	-- Vanadium Talisman
 				i(12027),	-- Vermilion Necklace
 			}),
-			n(-321, {	-- Shoulder
+			n(SHOULDER, {
 				i(13133),	-- Drakesfire Epaulets
 				i(13013),	-- Elder Wizard's Mantle
 				i(2278),	-- Forest Tracker Epaulets
@@ -77,7 +77,7 @@ _.WorldDrops =
 				i(14552),	-- Stockade Pauldrons
 				i(13066),	-- Wyrmslayer Spaulders
 			}),
-			n(-322, {	-- Back
+			n(BACK, {
 				i(9938),	-- Abjurer's Cloak
 				i(10258),	-- Adventurer's Cape
 				i(13005),	-- Amy's Blanket
@@ -267,7 +267,7 @@ _.WorldDrops =
 				i(15371),	-- Wolf Rider's Cloak
 				i(15333),	-- Wrangler's Cloak
 			}),
-			n(-323, {	-- Chest
+			n(CHEST, {
 				i(2800),	-- Black Velvet Robes
 				un(REMOVED_FROM_GAME, i(54784, {	-- Burnished Tunic
 					["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
@@ -294,7 +294,7 @@ _.WorldDrops =
 			}),
 			n(-324, {	-- Shirt
 			}),
-			n(-326, {	-- Wrist
+			n(WRIST, {
 				i(13199),	-- Crushridge Bindings
 				i(13120),	-- Deepfury Bracers
 				i(12999),	-- Drakewing Bands
@@ -306,7 +306,7 @@ _.WorldDrops =
 				i(13107),	-- Magiskull Cuffs
 				i(13012),	-- Yorgen Bracers
 			}),
-			n(-327, {	-- Hands
+			n(HANDS, {
 				i(13126),	-- Battlecaller Gauntlets
 				i(720),		-- Brawler Gloves
 				i(14551),	-- Edgemaster's Handguards
@@ -320,7 +320,7 @@ _.WorldDrops =
 				i(17007),	-- Stonerender Gauntlets
 				i(12994),	-- Thorbia's Gauntlets
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				i(13134),	-- Belt of the Gladiator
 				i(13145),	-- Enormous Ogre Belt
 				i(9405),	-- Girdle of Golem Strength
@@ -334,7 +334,7 @@ _.WorldDrops =
 				i(12978),	-- Stormbringer Belt
 				i(13105),	-- Sutarn's Ring
 			}),
-			n(-329, {	-- Legs
+			n(LEGS, {
 				i(1718),	-- Basilisk Hide Pants
 				i(14554),	-- Cloudkeeper Legplates
 				i(13008),	-- Dalewind Trousers
@@ -349,7 +349,7 @@ _.WorldDrops =
 				i(13114),	-- Troll's Bane Leggings
 				i(13130),	-- Windrunner Legguards
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(14549),	-- Boots of Avoidance
 				i(13125),	-- Elven Chain Boots
 				i(1121),	-- Feet of the Lynx

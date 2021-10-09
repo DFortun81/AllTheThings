@@ -9,7 +9,7 @@ _.Craftables =
 {
 	tier(SL_TIER, {
 		prof(INSCRIPTION, {
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(180755),	-- Fae Revel Masque
 			}),
 			filter(1, {	-- Off-hand

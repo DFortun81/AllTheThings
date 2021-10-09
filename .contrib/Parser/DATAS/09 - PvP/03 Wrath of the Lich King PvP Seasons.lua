@@ -911,7 +911,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(42057, {	-- Hateful Gladiator's Cloak of Ascendancy
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -934,7 +934,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(41638, {	-- Hateful Gladiator's Armwraps of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -972,7 +972,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(41628, {	-- Hateful Gladiator's Belt of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -1010,7 +1010,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(41633, {	-- Hateful Gladiator's Boots of Dominance
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -1048,7 +1048,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				n(-384,	{	-- Neck
+				n(NECK, {
 					un(REMOVED_FROM_GAME, i(42024)),	-- Hateful Gladiator's Pendant of Ascendance
 					un(REMOVED_FROM_GAME, i(42025)),	-- Hateful Gladiator's Pendant of Deliverance
 					un(REMOVED_FROM_GAME, i(42022)),	-- Hateful Gladiator's Pendant of Dominance
@@ -1057,7 +1057,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(42020)),	-- Hateful Gladiator's Pendant of Triumph
 					un(REMOVED_FROM_GAME, i(42021)),	-- Hateful Gladiator's Pendant of Victory
 				}),
-				n(-385,	{	-- Finger
+				n(FINGER, {
 					un(REMOVED_FROM_GAME, i(42110)),	-- Hateful Gladiator's Band of Dominance
 					un(REMOVED_FROM_GAME, i(42112)),	-- Hateful Gladiator's Band of Triumph
 				}),
@@ -1583,7 +1583,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(42064, {	-- Deadly Gladiator's Cloak of Ascendancy
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -1606,7 +1606,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(41639, {	-- Deadly Gladiator's Armwraps of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -1644,7 +1644,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(41629, {	-- Deadly Gladiator's Belt of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -1682,7 +1682,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(41634, {	-- Deadly Gladiator's Boots of Dominance
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -1720,7 +1720,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				n(-384,	{	-- Neck
+				n(NECK, {
 					i(42030),	-- Deadly Gladiator's Pendant of Ascendancy
 					i(42032),	-- Deadly Gladiator's Pendant of Deliverance
 					i(42029),	-- Deadly Gladiator's Pendant of Dominance
@@ -1729,7 +1729,7 @@ _.PVP =
 					i(42027),	-- Deadly Gladiator's Pendant of Triumph
 					i(42028),	-- Deadly Gladiator's Pendant of Victory
 				}),
-				n(-385,	{	-- Finger
+				n(FINGER, {
 					i(42114),	-- Deadly Gladiator's Band of Ascendancy
 					i(42115),	-- Deadly Gladiator's Band of Victory
 				}),
@@ -2265,7 +2265,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(42071, {	-- Furious Gladiator's Cloak of Ascendancy
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -2288,7 +2288,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(41640, {	-- Furious Gladiator's Armwraps of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -2326,7 +2326,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(41630, {	-- Furious Gladiator's Belt of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -2364,7 +2364,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(41635, {	-- Furious Gladiator's Boots of Dominance
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -2402,7 +2402,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				n(-384,	{	-- Neck
+				n(NECK, {
 					i(42037),	-- Furious Gladiator's Pendant of Ascendancy
 					i(42039),	-- Furious Gladiator's Pendant of Deliverance
 					i(42036),	-- Furious Gladiator's Pendant of Dominance
@@ -2412,7 +2412,7 @@ _.PVP =
 					i(42034),	-- Furious Gladiator's Pendant of Triumph
 					i(42035)	-- Furious Gladiator's Pendant of Victory
 				}),
-				n(-385,	{	-- Finger
+				n(FINGER, {
 					i(42116),	-- Furious Gladiator's Band of Dominance
 					i(42117),	-- Furious Gladiator's Band of Triumph
 				}),
@@ -2990,7 +2990,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(42078, {	-- Relentless Gladiator's Cloak of Ascendancy
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3013,7 +3013,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(41641, {	-- Relentless Gladiator's Armwraps of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3054,7 +3054,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(41631, {	-- Relentless Gladiator's Belt of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3092,7 +3092,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(41636, {	-- Relentless Gladiator's Boots of Dominance
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -3130,7 +3130,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				n(-384,	{	-- Neck
+				n(NECK, {
 					i(42044),	-- Relentless Gladiator's Pendant of Ascendancy
 					i(42046),	-- Relentless Gladiator's Pendant of Deliverance
 					i(42043),	-- Relentless Gladiator's Pendant of Dominance
@@ -3140,7 +3140,7 @@ _.PVP =
 					i(42041),	-- Relentless Gladiator's Pendant of Triumph
 					i(42042),	-- Relentless Gladiator's Pendant of Victory
 				}),
-				n(-385,	{	-- Finger
+				n(FINGER, {
 					i(42118),	-- Relentless Gladiator's Band of Ascendancy
 					i(42119),	-- Relentless Gladiator's Band of Victory
 				}),
@@ -3719,7 +3719,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(51334, {	-- Wrathful Gladiator's Cloak of Ascendancy
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3742,7 +3742,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(51345, {	-- Wrathful Gladiator's Armwraps of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3783,7 +3783,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(51343, {	-- Wrathful Gladiator's Belt of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3824,7 +3824,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(51344, {	-- Wrathful Gladiator's Boots of Dominance
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -3859,7 +3859,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				n(-384,	{	-- Neck
+				n(NECK, {
 					i(51335),	-- Wrathful Gladiator's Pendant of Ascendancy
 					i(51349),	-- Wrathful Gladiator's Pendant of Deliverance
 					i(51331),	-- Wrathful Gladiator's Pendant of Dominance
@@ -3869,7 +3869,7 @@ _.PVP =
 					i(51355),	-- Wrathful Gladiator's Pendant of Triumph
 					i(51357),	-- Wrathful Gladiator's Pendant of Victory
 				}),
-				n(-385,	{	-- Finger
+				n(FINGER, {
 					i(51336),	-- Wrathful Gladiator's Band of Dominance
 					i(51358),	-- Wrathful Gladiator's Band of Triumph
 				}),

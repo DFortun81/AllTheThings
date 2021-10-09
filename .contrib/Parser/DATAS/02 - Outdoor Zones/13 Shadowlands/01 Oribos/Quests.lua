@@ -1012,7 +1012,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(175645),	-- Oribos Quest Plate Waist
 				i(175646),	-- Oribos Quest Plate Wrist
 			}),
-			n(-322, {	-- Cloaks
+			n(BACK, {
 				i(179612),	-- Oribos Quest Cloth Cloak
 				i(179614),	-- Oribos Quest Leather Cloak
 				i(179615),	-- Oribos Quest Mail Cloak

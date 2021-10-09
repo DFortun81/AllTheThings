@@ -115,7 +115,7 @@ _.PVP =
 					i(162953),	-- Dread Aspirant's Plate Pauldrons (H)
 					i(162937),	-- Dread Aspirant's Plate Warboots (H)
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(163724, {	-- Dread Aspirant's Cape (A, plate)
 						["description"] = "This item is only obtainable via the Dread Aspirant's Plate Ensemble.",
 					}),
@@ -141,7 +141,7 @@ _.PVP =
 						["description"] = "This item is only obtainable via the Dread Aspirant's Leather Ensemble.",
 					}),
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					un(REMOVED_FROM_GAME, i(162896)),	-- Dread Aspirant's Band
 					un(REMOVED_FROM_GAME, i(162865)),	-- Dread Aspirant's Ring
 					un(REMOVED_FROM_GAME, i(162965)),	-- Dread Aspirant's Seal
@@ -327,7 +327,7 @@ _.PVP =
 					i(161770),	-- Dread Gladiator's Plate Vambraces (H)
 					i(161637),	-- Dread Gladiator's Plate Warboots (H)
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(163732, {	-- Dread Gladiator's Cape (A)
 						["description"] = "This item is only obtainable via the Dread Gladiator's Plate Ensemble.",
 					}),
@@ -353,7 +353,7 @@ _.PVP =
 						["description"] = "This item is only obtainable via the Dread Gladiator's Cloth Ensemble.",
 					}),
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					un(REMOVED_FROM_GAME, i(161672)),	-- Dread Gladiator's Band
 					un(REMOVED_FROM_GAME, i(161671)),	-- Dread Gladiator's Ring
 					un(REMOVED_FROM_GAME, i(161899)),	-- Dread Gladiator's Seal
@@ -487,7 +487,7 @@ _.PVP =
 					i(165090),	-- Sinister Aspirant's Plate Pauldrons (H)
 					i(165087),	-- Sinister Aspirant's Plate Warboots (H)
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(165216, {	-- Sinister Aspirant's Cape (A)
 						["description"] = "This item is only obtainable via the Sinister Aspirant's Plate Ensemble.",
 					}),
@@ -513,7 +513,7 @@ _.PVP =
 						["description"] = "This item is only obtainable via the Sinister Aspirant's Cloth Ensemble.",
 					}),
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					un(REMOVED_FROM_GAME, i(165219)),	-- Sinister Aspirant's Band
 					un(REMOVED_FROM_GAME, i(165217)),	-- Sinister Aspirant's Ring
 				}),
@@ -735,7 +735,7 @@ _.PVP =
 					i(164805),	-- Sinister Gladiator's Plate Warboots (H)
 					i(166593),	-- Sinister Gladiator's Plate Warhelm (H)
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(165051, {	-- Sinister Gladiator's Cape (A)
 						["description"] = "This item is only obtainable via the Sinister Gladiator's Plate Ensemble.",
 					}),
@@ -761,7 +761,7 @@ _.PVP =
 						["description"] = "This item is only obtainable via the Sinister Gladiator's Cloth Ensemble.",
 					}),
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					un(REMOVED_FROM_GAME, i(165053)),	-- Sinister Gladiator's Band
 					un(REMOVED_FROM_GAME, i(165052)),	-- Sinister Gladiator's Ring
 					un(REMOVED_FROM_GAME, i(165054)),	-- Sinister Gladiator's Signet
@@ -902,7 +902,7 @@ _.PVP =
 					i(167486),	-- Notorious Aspirant's Plate Pauldrons (H)
 					i(167483),	-- Notorious Aspirant's Plate Warboots (H)
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(167536, {	-- Notorious Aspirant's Cape (A)
 						["description"] = "This item is only obtainable via the Notorious Aspirant's Plate Ensemble.",
 					}),
@@ -928,7 +928,7 @@ _.PVP =
 						["description"] = "This item is only obtainable via the Notorious Aspirant's Cloth Ensemble.",
 					}),
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					un(REMOVED_FROM_GAME, i(167523)),	-- Notorious Aspirant's Ring
 					un(REMOVED_FROM_GAME, i(167524)),	-- Notorious Aspirant's Band
 				}),
@@ -1184,7 +1184,7 @@ _.PVP =
 					i(167388),	-- Notorious Gladiator's Plate Warhelm (H)
 					i(167452),	-- Notorious Gladiator's Shoulderplates (H)
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(167373, {	-- Notorious Gladiator's Cape (A)
 						["description"] = "This item is only obtainable via the Notorious Gladiator's Plate Ensemble.",
 					}),
@@ -1210,7 +1210,7 @@ _.PVP =
 						["description"] = "This item is only obtainable via the Notorious Gladiator's Leather Ensemble.",
 					}),
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					un(REMOVED_FROM_GAME, i(167375)),	-- Notorious Gladiator's Band
 					un(REMOVED_FROM_GAME, i(167374)),	-- Notorious Gladiator's Ring
 					un(REMOVED_FROM_GAME, i(167376)),	-- Notorious Gladiator's Signet
@@ -1361,7 +1361,7 @@ _.PVP =
 					i(172809),	-- Corrupted Aspirant's Plate Pauldrons (H)
 					i(172806),	-- Corrupted Aspirant's Plate Warboots (H)
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(172857),	-- Corrupted Aspirant's Cape (A)
 					i(172856),	-- Corrupted Aspirant's Drape (A)
 					i(172854),	-- Corrupted Aspirant's Shawl (A)
@@ -1369,7 +1369,7 @@ _.PVP =
 					i(172852),	-- Corrupted Aspirant's Drape (H)
 					i(172850),	-- Corrupted Aspirant's Shawl (H)
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(172845),	-- Corrupted Aspirant's Band
 					i(172844),	-- Corrupted Aspirant's Ring
 				}),
@@ -1608,11 +1608,11 @@ _.PVP =
 					i(172677),	-- Corrupted Gladiator's Plate Warhelm (H)
 				}),
 				-- Only via the Duelist Achievement obtainable.
-				--[[n(-322, {	-- Back
+				--[[n(BACK, {
 					i(172671),	-- Corrupted Gladiator's Cloak (A)
 					i(172670),	-- Corrupted Gladiator's Cloak (H)
 				}),--]]
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(172664),	-- Corrupted Gladiator's Band
 					i(172663),	-- Corrupted Gladiator's Ring
 					i(172665),	-- Corrupted Gladiator's Signet
@@ -1823,7 +1823,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(172693),	-- Corrupted Gladiator's Plate Skullguard (H)
 					i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
 				}),
-				n(-322, {	-- Cloaks
+				n(BACK, {
 					i(172655),	-- Corrupted Gladiator's Shawl
 					i(172656),	-- Corrupted Gladiator's Greatcloak
 					i(172657),	-- Corrupted Gladiator's Drape

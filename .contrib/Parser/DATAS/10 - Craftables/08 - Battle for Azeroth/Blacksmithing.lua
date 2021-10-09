@@ -94,19 +94,19 @@ _.Craftables =
 				i(170364),	-- Uncanny Combatant's Shield [Alliance]
 				i(170365),	-- Uncanny Combatant's Shield [Horde]
 			}),
-			n(-320, {		-- Head
+			n(HEAD, {
 				i(161883),	-- Monel-Hardened Helm [Alliance]
 				i(152805),	-- Monel-Hardened Helm [Horde]
 			}),
-			n(-321, {		-- Shoulders
+			n(SHOULDER, {
 				i(161885),	-- Monel-Hardened Pauldrons [Alliance]
 				i(152807),	-- Monel-Hardened Pauldrons [Horde]
 			}),
-			n(-323, {		-- Chest
+			n(CHEST, {
 				i(161880),	-- Monel-Hardened Breastplate [Alliance]
 				i(152802),	-- Monel-Hardened Breastplate [Horde]
 			}),
-			n(-327, {		-- Hands
+			n(HANDS, {
 				i(161894),	-- Honorable Combatant's Plate Gauntlets [Alliance]
 				i(159861),	-- Honorable Combatant's Plate Gauntlets [Horde]
 				i(161882),	-- Monel-Hardened Gauntlets [Alliance]
@@ -118,7 +118,7 @@ _.Craftables =
 				i(170297),	-- Uncanny Combatant's Plate Gauntlets [Alliance]
 				i(170286),	-- Uncanny Combatant's Plate Gauntlets [Horde]
 			}),
-			n(-326, {		-- Wrist
+			n(WRIST, {
 				i(161897),	-- Honorable Combatant's Plate Armguards [Alliance]
 				i(159866),	-- Honorable Combatant's Plate Armguards [Horde]
 				i(161887),	-- Monel-Hardened Armguards [Alliance]
@@ -130,7 +130,7 @@ _.Craftables =
 				i(170289),	-- Uncanny Combatant's Plate Armguards [Alliance]
 				i(170301),	-- Uncanny Combatant's Plate Armguards [Horde]
 			}),
-			n(-328, {		-- Waist
+			n(WAIST, {
 				i(168682),	-- Banded Osmenite Girdle [Alliance]
 				i(168688),	-- Banded Osmenite Girdle [Horde]
 				i(170391),	-- Eldritch Osmenite Girdle
@@ -175,7 +175,7 @@ _.Craftables =
 					i(171108),	-- Plans: Maddening Osmenite Girdle
 				}),
 			}),
-			n(-329, {		-- Legs
+			n(LEGS, {
 				i(168679),	-- Banded Osmenite Legguards [Alliance]
 				i(168685),	-- Banded Osmenite Legguards [Horde]
 				i(170388),	-- Eldritch Osmenite Legguards
@@ -220,7 +220,7 @@ _.Craftables =
 					i(171110),	-- Plans: Maddening Osmenite Legguards
 				}),
 			}),
-			n(-330, {		-- Feet
+			n(FEET, {
 				i(161893),	-- Honorable Combatant's Plate Boots [Alliance]
 				i(159860),	-- Honorable Combatant's Plate Boots [Horde]
 				i(161881),	-- Monel-Hardened Boots [Alliance]

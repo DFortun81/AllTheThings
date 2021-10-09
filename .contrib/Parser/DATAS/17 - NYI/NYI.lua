@@ -1026,7 +1026,7 @@ _.NeverImplemented =
 			i(167133),	-- QA Combat Test Plate Legs 1
 			i(167134),	-- QA Combat Test Plate Boots
 		}),
-		n(-322, {	-- Cloaks
+		n(BACK, {
 			-- Load In Game
 			-- TBC
 			i(28045),	-- Cloak of the Demon Stalker (Patch 3.3.3?)

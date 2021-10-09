@@ -73,10 +73,10 @@ _.Zones =
 				i(121278),	-- Wracksoul Girdle
 				i(121280),	-- Wracksoul Legplates
 				i(121282),	-- Wracksoul Stompers
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(139065),	-- Dreamwalker's Band
 				}),
-				n(-384, {	-- Neck
+				n(NECK, {
 					i(121284),	-- Nightmare Pendant
 				}),
 				n(-386,  {	-- Trinkets

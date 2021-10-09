@@ -258,7 +258,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177111),	-- Honorbound Centurion's Gauntlets
 					i(177112),	-- Honorbound Centurion's Greaves
 				}),
-				n(-322, {	-- Cloaks
+				n(BACK, {
 					i(163245),	-- 7th Legionnaire's Satin Cloak
 					i(163311),	-- 7th Legionnaire's Shroud
 					i(163312),	-- 7th Legionnaire's Shawl

@@ -587,7 +587,7 @@ _.Zones =
 									{"pop"},	-- Discard the Map Headers and acquire all of their children.
 									{"where", "headerID", WORLD_QUESTS },
 									{"pop"},	-- Discard the World Quest Headers and acquire all of their children.
-									{"where", "headerID", -385},	-- Select only the Finger Header
+									{"where", "headerID", FINGER},	-- Select only the Finger Header
 									{"pop"},	-- Discard the item set Headers and acquire all of their children.
 								},
 							}),

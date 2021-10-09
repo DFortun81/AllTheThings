@@ -21,7 +21,7 @@ _.Instances = { tier(WOD_TIER, {
 					["crs"] = { 75509 },
 					["sym"] = {
 						{"sub", "common_wod_dungeon_drop", 1, NECK},
-						{"sub", "common_wod_dungeon_drop", 1, CLOAK},
+						{"sub", "common_wod_dungeon_drop", 1, BACK},
 					},
 					["g"] = {
 						i(110035),	-- Sadana's Grisly Visage
@@ -92,7 +92,7 @@ _.Instances = { tier(WOD_TIER, {
 					["crs"] = { 75509 },
 					["sym"] = {
 						{"sub", "common_wod_dungeon_drop", 2, NECK},
-						{"sub", "common_wod_dungeon_drop", 2, CLOAK},
+						{"sub", "common_wod_dungeon_drop", 2, BACK},
 					},
 					["g"] = {
 						ach(9018),	-- What's Your Sign?
@@ -143,7 +143,7 @@ _.Instances = { tier(WOD_TIER, {
 					["crs"] = { 75509 },
 					["sym"] = {
 						{"sub", "common_wod_dungeon_drop", 23, NECK},
-						{"sub", "common_wod_dungeon_drop", 23, CLOAK},
+						{"sub", "common_wod_dungeon_drop", 23, BACK},
 					},
 					["g"] = {
 						i(110035),	-- Sadana's Grisly Visage
@@ -193,7 +193,7 @@ _.Instances = { tier(WOD_TIER, {
 						["crs"] = { 75509 },
 						["sym"] = {
 							{"sub", "common_wod_dungeon_drop", 24, NECK},
-							{"sub", "common_wod_dungeon_drop", 24, CLOAK},
+							{"sub", "common_wod_dungeon_drop", 24, BACK},
 						},
 						["g"] = {
 							i(110035),	-- Sadana's Grisly Visage

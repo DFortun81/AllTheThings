@@ -1075,7 +1075,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(64706, {	-- Bloodthirsty Gladiator's Cape of Cruelty
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -1098,7 +1098,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(64681, {	-- Bloodthirsty Gladiator's Armbands of Meditation
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -1145,7 +1145,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(64696, {	-- Bloodthirsty Gladiator's Belt of Cruelty
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -1192,7 +1192,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(64702, {	-- Bloodthirsty Gladiator's Boots of Alacrity
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -1790,7 +1790,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(60783, {	-- Vicious Gladiator's Cape of Cruelty
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -1813,7 +1813,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(60535, {	-- Vicious Gladiator's Armbands of Meditation
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -1872,7 +1872,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(60556)),	-- Vicious Gladiator's Wristguards of Triumph
 					un(REMOVED_FROM_GAME, i(60560)),	-- Vicious Gladiator's Wristguards of Triumph
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(60583, {	-- Vicious Gladiator's Belt of Cruelty
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -1934,7 +1934,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(60558)),	-- Vicious Gladiator's Waistguard of Triumph
 					un(REMOVED_FROM_GAME, i(60561)),	-- Vicious Gladiator's Waistguard of Triumph
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(60593, {	-- Vicious Gladiator's Boots of Alacrity
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -2188,7 +2188,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(65581)),	-- Vicious Gladiator's Plate Legguards
 					un(REMOVED_FROM_GAME, i(65580)),	-- Vicious Gladiator's Plate Shoulders
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					un(REMOVED_FROM_GAME, i(65610)),	-- Vicious Gladiator's Boots of Alacrity
 					un(REMOVED_FROM_GAME, i(65609)),	-- Vicious Gladiator's Boots of Cruelty
 					un(REMOVED_FROM_GAME, i(65602)),	-- Vicious Gladiator's Footguard of Alacrity
@@ -2311,7 +2311,7 @@ _.PVP =
 					i(70626),	-- Vicious Gladiator's Plate Legguards
 					i(70627),	-- Vicious Gladiator's Plate Shoulders
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(70511),	-- Vicious Gladiator's Armbands of Meditation
 					i(70512),	-- Vicious Gladiator's Armbands of Prowess
 					i(70513),	-- Vicious Gladiator's Armplates of Alacrity
@@ -2334,7 +2334,7 @@ _.PVP =
 					i(70669),	-- Vicious Gladiator's Wristguards of Accuracy
 					i(70670),	-- Vicious Gladiator's Wristguards of Alacrity
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(70523),	-- Vicious Gladiator's Belt of Cruelty
 					i(70524),	-- Vicious Gladiator's Belt of Meditation
 					i(70540),	-- Vicious Gladiator's Clasp of Cruelty
@@ -2357,7 +2357,7 @@ _.PVP =
 					i(70665),	-- Vicious Gladiator's Waistguard of Cruelty
 					i(70666),	-- Vicious Gladiator's Waistguard of Meditation
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(70527),	-- Vicious Gladiator's Boots of Alacrity
 					i(70528),	-- Vicious Gladiator's Boots of Cruelty
 					i(70571),	-- Vicious Gladiator's Footguards of Alacrity
@@ -2380,7 +2380,7 @@ _.PVP =
 					i(70667),	-- Vicious Gladiator's Warboots of Alacrity
 					i(70668),	-- Vicious Gladiator's Warboots of Cruelty
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					un(REMOVED_FROM_GAME, i(70531)),	-- Vicious Gladiator's Cape of Cruelty
 					un(REMOVED_FROM_GAME, i(70532)),	-- Vicious Gladiator's Cape of Prowess
 					un(REMOVED_FROM_GAME, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
@@ -3193,7 +3193,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(70386, {	-- Ruthless Gladiator's Cape of Cruelty
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3216,7 +3216,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(70330, {	-- Ruthless Gladiator's Armbands of Meditation
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3263,7 +3263,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(70346, {	-- Ruthless Gladiator's Belt of Cruelty
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3310,7 +3310,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(70351, {	-- Ruthless Gladiator's Boots of Alacrity
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -3544,7 +3544,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70478)),	-- Ruthless Gladiator's Plate Legguards
 					un(REMOVED_FROM_GAME, i(70477)),	-- Ruthless Gladiator's Plate Shoulders
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					un(REMOVED_FROM_GAME, i(70507)),	-- Ruthless Gladiator's Boots of Alacrity
 					un(REMOVED_FROM_GAME, i(70506)),	-- Ruthless Gladiator's Boots of Cruelty
 					un(REMOVED_FROM_GAME, i(70499)),	-- Ruthless Gladiator's Footguards of Alacrity
@@ -3670,7 +3670,7 @@ _.PVP =
 						i(72467),	-- Ruthless Gladiator's Plate Legguards
 						i(72468),	-- Ruthless Gladiator's Plate Shoulders
 					}),
-					n(-326, {	-- Wrists
+					n(WRIST, {
 						i(72431),	-- Ruthless Gladiator's Armbands of Meditation
 						i(72430),	-- Ruthless Gladiator's Armbands of Prowess
 						i(72399),	-- Ruthless Gladiator's Armplates of Alacrity
@@ -3687,7 +3687,7 @@ _.PVP =
 						i(72367),	-- Ruthless Gladiator's Wristguards of Accuracy
 						i(72366),	-- Ruthless Gladiator's Wristguards of Alacrity
 					}),
-					n(-328, {	-- Waist
+					n(WAIST, {
 						i(72350),	-- Ruthless Gladiator's Belt of Cruelty
 						i(72342),	-- Ruthless Gladiator's Belt of Meditation
 						i(72383),	-- Ruthless Gladiator's Clasp of Cruelty
@@ -3704,7 +3704,7 @@ _.PVP =
 						i(72442),	-- Ruthless Gladiator's Waistguard of Cruelty
 						i(72427),	-- Ruthless Gladiator's Waistguard of Meditation
 					}),
-					n(-330, {	-- Feet
+					n(FEET, {
 						i(72419),	-- Ruthless Gladiator's Boots of Alacrity
 						i(72418),	-- Ruthless Gladiator's Boots of Cruelty
 						i(72351),	-- Ruthless Gladiator's Footguards of Alacrity
@@ -3721,7 +3721,7 @@ _.PVP =
 						i(72396),	-- Ruthless Gladiator's Warboots of Cruelty
 						i(72397),	-- Ruthless Gladiator's Warboots of Alacrity
 					}),
-					n(-322, {	-- Back
+					n(BACK, {
 						un(REMOVED_FROM_GAME, i(72305)),	-- Ruthless Gladiator's Cape of Cruelty
 						un(REMOVED_FROM_GAME, i(72306)),	-- Ruthless Gladiator's Cape of Prowess
 						un(REMOVED_FROM_GAME, i(72451)),	-- Ruthless Gladiator's Cloak of Alacrity
@@ -4278,7 +4278,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(73647, {	-- Cataclysmic Gladiator's Cape of Cruelty
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -4301,7 +4301,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(73518, {	-- Cataclysmic Gladiator's Armbands of Meditation
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -4348,7 +4348,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(73602, {	-- Cataclysmic Gladiator's Belt of Cruelty
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -4395,7 +4395,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(73530, {	-- Cataclysmic Gladiator's Boots of Alacrity
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -4629,7 +4629,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73652)),	-- Cataclysmic Gladiator's Plate Legguards
 					un(REMOVED_FROM_GAME, i(73651)),	-- Cataclysmic Gladiator's Plate Soulders
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					un(REMOVED_FROM_GAME, i(73683)),	-- Cataclysmic Gladiator's Boots of Alacrity
 					un(REMOVED_FROM_GAME, i(73684)),	-- Cataclysmic Gladiator's Boots of Cruelty
 					un(REMOVED_FROM_GAME, i(73726)),	-- Cataclysmic Gladiator's Footguards of Alacrity
@@ -4794,23 +4794,23 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(64946),	-- Gladiator's Plate Gauntlets
 				i(64947),	-- Gladiator's Plate Chestpiece
 			}),
-			n(-322, {	-- Back
+			n(BACK, {
 				i(60782),	-- Vicious Gladiator's Cloak of Conquest
 				i(60784),	-- Vicious Gladiator's Cloak of Dominance
 				i(60785),	-- Vicious Gladiator's Cloak of Dominance
 			}),
-			n(-326, {	-- Wrist
+			n(WRIST, {
 				i(60585),	-- Vicious Gladiator's Armwraps of Dominance
 				i(60608),	-- Vicious Gladiator's Armwraps of Dominance
 				i(60588),	-- Vicious Gladiator's Armwraps of Triumph
 				i(60597),	-- Vicious Gladiator's Armwraps of Triumph
 				i(60598),	-- Vicious Gladiator's Armwraps of Triumph
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				i(60606),	-- Vicious Gladiator's Belt of Dominance
 				i(60609),	-- Vicious Gladiator's Belt of Dominance
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(60584),	-- Vicious Gladiator's Boots of Dominance
 				i(60590),	-- Vicious Gladiator's Boots of Triumph
 				i(60610),	-- Vicious Gladiator's Boots of Dominance

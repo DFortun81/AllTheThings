@@ -443,7 +443,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(84345, {	-- Dreadful Gladiator's Cape of Cruelty
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -466,7 +466,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(84471, {	-- Dreadful  Gladiator's Armbands of Meditation
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -513,7 +513,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(84390, {	-- Dreadful Gladiator's Belt of Cruelty
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -560,7 +560,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(84459, {	-- Dreadful Gladiator's Boots of Alacrity
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -1476,7 +1476,7 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-322, {	-- Back
+					n(BACK, {
 						-- From Sha of Anger
 						i(84804),	-- Malevolent Gladiator's Cape of Cruelty
 						i(84805),	-- Malevolent Gladiator's Cape of Prowess
@@ -1486,7 +1486,7 @@ _.PVP =
 						i(84802),	-- Malevolent Gladiator's Drape of Meditation
 						i(84803),	-- Malevolent Gladiator's Drape of Prowess
 					}),
-					n(-326, {	-- Wrists
+					n(WRIST, {
 						-- From Sha of Anger
 						i(84984),	-- Malevolent Gladiator's Armbands of Meditation
 						i(84983),	-- Malevolent Gladiator's Armbands of Prowess
@@ -1504,7 +1504,7 @@ _.PVP =
 						i(84981),	-- Malevolent Gladiator's Wristguards of Accuracy
 						i(84980),	-- Malevolent Gladiator's Wristguards of Alacrity
 					}),
-					n(-328, {	-- Waist
+					n(WAIST, {
 						-- From Sha of Anger
 						i(84960),	-- Malevolent Gladiator's Belt of Cruelty
 						i(84953),	-- Malevolent Gladiator's Belt of Meditation
@@ -1526,7 +1526,7 @@ _.PVP =
 						un(NEVER_IMPLEMENTED, i(97840)),	-- Malevolent Gladiator's Cord of Accuracy
 						un(NEVER_IMPLEMENTED, i(97523)),	-- Malevolent Gladiator's Cord of Cruelty
 					}),
-					n(-330, {	-- Feet
+					n(FEET, {
 						-- From Sha of Anger
 						i(84809),	-- Malevolent Gladiator's Boots of Alacrity
 						i(84808),	-- Malevolent Gladiator's Boots of Cruelty
@@ -1750,7 +1750,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(85063)),	-- Malevolent Gladiator's Plate Legguards
 					un(REMOVED_FROM_GAME, i(85077)),	-- Malevolent Gladiator's Plate Shoulders
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					un(REMOVED_FROM_GAME, i(85098)),	-- Malevolent Gladiator's Belt of Cruelty
 					un(REMOVED_FROM_GAME, i(85106)),	-- Malevolent Gladiator's Belt of Meditation
 					un(REMOVED_FROM_GAME, i(85104)),	-- Malevolent Gladiator's Clasp of Cruelty
@@ -1767,7 +1767,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(85097)),	-- Malevolent Gladiator's Waistguard of Cruelty
 					un(REMOVED_FROM_GAME, i(85099)),	-- Malevolent Gladiator's Waistguard of Meditation
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					un(REMOVED_FROM_GAME, i(85010)),	-- Malevolent Gladiator's Boots of Alacrity
 					un(REMOVED_FROM_GAME, i(85009)),	-- Malevolent Gladiator's Boots of Cruelty
 					un(REMOVED_FROM_GAME, i(84996)),	-- Malevolent Gladiator's Footguards of Alacrity (Leather)
@@ -2160,7 +2160,7 @@ _.PVP =
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
 					}),
-					n(-322, {	-- Back
+					n(BACK, {
 						i(91453, {	-- Malevolent Gladiator's Cape of Cruelty
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
@@ -2183,7 +2183,7 @@ _.PVP =
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
 					}),
-					n(-326, {	-- Wrists
+					n(WRIST, {
 						i(91710, {	-- Malevolent Gladiator's Armbands of Meditation
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
@@ -2230,7 +2230,7 @@ _.PVP =
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
 					}),
-					n(-328, {	-- Waist
+					n(WAIST, {
 						i(91537, {	-- Malevolent Gladiator's Belt of Cruelty
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
@@ -2277,7 +2277,7 @@ _.PVP =
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
 					}),
-					n(-330, {	-- Feet
+					n(FEET, {
 						i(91597, {	-- Malevolent Gladiator's Boots of Alacrity
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
@@ -3166,7 +3166,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							-- From Nalak
 							i(91100),	-- Tyrannical Gladiator's Cape of Cruelty
 							i(91101),	-- Tyrannical Gladiator's Cape of Prowess
@@ -3176,7 +3176,7 @@ _.PVP =
 							i(91126),	-- Tyrannical Gladiator's Drape of Meditation
 							i(91125),	-- Tyrannical Gladiator's Drape of Prowess
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							-- From Nalak
 							i(91357),	-- Tyrannical Gladiator's Armbands of Meditation
 							i(91356),	-- Tyrannical Gladiator's Armbands of Prowess
@@ -3194,7 +3194,7 @@ _.PVP =
 							i(91221),	-- Tyrannical Gladiator's Wristguards of Accuracy
 							i(91220),	-- Tyrannical Gladiator's Wristguards of Alacrity
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							-- From Nalak
 							i(91184),	-- Tyrannical Gladiator's Belt of Cruelty
 							i(91167),	-- Tyrannical Gladiator's Belt of Meditation
@@ -3212,7 +3212,7 @@ _.PVP =
 							i(91378),	-- Tyrannical Gladiator's Waistguard of Cruelty
 							i(91350),	-- Tyrannical Gladiator's Waistguard of Meditation
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							-- From Nalak
 							i(91244),	-- Tyrannical Gladiator's Boots of Alacrity
 							i(91337),	-- Tyrannical Gladiator's Boots of Cruelty
@@ -3629,7 +3629,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(99773, {	-- Tyrannical Gladiator's Cape of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -3652,7 +3652,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(99915, {	-- Tyrannical Gladiator's Armbands of Meditation
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -3699,7 +3699,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(99825, {	-- Tyrannical Gladiator's Belt of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -3746,7 +3746,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(99858, {	-- Tyrannical Gladiator's Boots of Alacrity
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
@@ -4631,7 +4631,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							-- From Nalak
 							i(94421),	-- Tyrannical Gladiator's Cape of Cruelty
 							i(94355),	-- Tyrannical Gladiator's Cape of Prowess
@@ -4641,7 +4641,7 @@ _.PVP =
 							i(94472),	-- Tyrannical Gladiator's Drape of Meditation
 							i(94488),	-- Tyrannical Gladiator's Drape of Prowess
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							-- From Nalak
 							i(94337),	-- Tyrannical Gladiator's Armbands of Meditation
 							i(94379),	-- Tyrannical Gladiator's Armbands of Prowess
@@ -4659,7 +4659,7 @@ _.PVP =
 							i(94469),	-- Tyrannical Gladiator's Wristguards of Accuracy
 							i(94404),	-- Tyrannical Gladiator's Wristguards of Alacrity
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							-- From Nalak
 							i(94410),	-- Tyrannical Gladiator's Belt of Cruelty
 							i(94491),	-- Tyrannical Gladiator's Belt of Meditation
@@ -4677,7 +4677,7 @@ _.PVP =
 							i(94393),	-- Tyrannical Gladiator's Waistguard of Cruelty
 							i(94382),	-- Tyrannical Gladiator's Waistguard of Meditation
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							-- From Nalak
 							i(94432),	-- Tyrannical Gladiator's Boots of Alacrity
 							i(94374),	-- Tyrannical Gladiator's Boots of Cruelty
@@ -5094,7 +5094,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(100091, {	-- Tyrannical Gladiator's Cape of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -5117,7 +5117,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(100004, {	-- Tyrannical Gladiator's Armbands of Meditation
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -5164,7 +5164,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(100080, {	-- Tyrannical Gladiator's Belt of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -5211,7 +5211,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(100102, {	-- Tyrannical Gladiator's Boots of Alacrity
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
@@ -5441,7 +5441,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(91437)),	-- Tyrannical Gladiator's Plate Legguards
 					un(REMOVED_FROM_GAME, i(91439)),	-- Tyrannical Gladiator's Plate Shoulders
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					un(REMOVED_FROM_GAME, i(91185)),	-- Tyrannical Gladiator's Belt of Cruelty
 					un(REMOVED_FROM_GAME, i(91168)),	-- Tyrannical Gladiator's Belt of Meditation
 					un(REMOVED_FROM_GAME, i(91278)),	-- Tyrannical Gladiator's Clasp of Cruelty
@@ -5458,7 +5458,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(91379)),	-- Tyrannical Gladiator's Waistguard of Cruelty
 					un(REMOVED_FROM_GAME, i(91351)),	-- Tyrannical Gladiator's Waistguard of Meditation
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					un(REMOVED_FROM_GAME, i(91245)),	-- Tyrannical Gladiator's Boots of Alacrity
 					un(REMOVED_FROM_GAME, i(91338)),	-- Tyrannical Gladiator's Boots of Cruelty
 					un(REMOVED_FROM_GAME, i(91187)),	-- Tyrannical Gladiator's Footguards of Alacrity (Leather)
@@ -5475,7 +5475,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(91304)),	-- Tyrannical Gladiator's Warboots of Alacrity
 					un(REMOVED_FROM_GAME, i(91302)),	-- Tyrannical Gladiator's Warboots of Cruelty
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					un(REMOVED_FROM_GAME, i(98336)), -- Tyrannical Gladiator's Greatcloak
 				}),
 				n(-325, {	-- Tabards
@@ -6303,7 +6303,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							un(REMOVED_FROM_GAME, i(100196)),	-- Grievous Gladiator's Cape of Cruelty
 							un(REMOVED_FROM_GAME, i(100197)),	-- Grievous Gladiator's Cape of Prowess
 							un(REMOVED_FROM_GAME, i(100501)),	-- Grievous Gladiator's Cloak of Alacrity
@@ -6312,7 +6312,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(100222)),	-- Grievous Gladiator's Drape of Meditation
 							un(REMOVED_FROM_GAME, i(100221)),	-- Grievous Gladiator's Drape of Prowess
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(100447),	-- Grievous Gladiator's Armbands of Meditation
 							i(100446),	-- Grievous Gladiator's Armbands of Prowess
 							i(100402),	-- Grievous Gladiator's Armplates of Alacrity
@@ -6329,7 +6329,7 @@ _.PVP =
 							i(100317),	-- Grievous Gladiator's Wristguards of Accuracy
 							i(100316),	-- Grievous Gladiator's Wristguards of Alacrity
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(100280),	-- Grievous Gladiator's Belt of Cruelty
 							i(100263),	-- Grievous Gladiator's Belt of Meditation
 							i(100373),	-- Grievous Gladiator's Clasp of Cruelty
@@ -6352,7 +6352,7 @@ _.PVP =
 							i(100468),	-- Grievous Gladiator's Waistguard of Cruelty
 							i(100440),	-- Grievous Gladiator's Waistguard of Meditation
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(100340),	-- Grievous Gladiator's Boots of Alacrity
 							i(100427),	-- Grievous Gladiator's Boots of Cruelty
 							i(100282),	-- Grievous Gladiator's Footguards of Alacrity (Leather)
@@ -6783,7 +6783,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(103146, {	-- Grievous Gladiator's Cape of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -6806,7 +6806,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(103287, {	-- Grievous Gladiator's Armbands of Meditation
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -6853,7 +6853,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(103198, {	-- Grievous Gladiator's Belt of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -6900,7 +6900,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(103230, {	-- Grievous Gladiator's Boots of Alacrity
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
@@ -7798,7 +7798,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							un(REMOVED_FROM_GAME, i(100651)),	-- Grievous Gladiator's Cape of Cruelty
 							un(REMOVED_FROM_GAME, i(100585)),	-- Grievous Gladiator's Cape of Prowess
 							un(REMOVED_FROM_GAME, i(100715)),	-- Grievous Gladiator's Cloak of Alacrity
@@ -7807,7 +7807,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(100702)),	-- Grievous Gladiator's Drape of Meditation
 							un(REMOVED_FROM_GAME, i(100718)),	-- Grievous Gladiator's Drape of Prowess
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(100567),	-- Grievous Gladiator's Armbands of Meditation
 							i(100609),	-- Grievous Gladiator's Armbands of Prowess
 							i(100717),	-- Grievous Gladiator's Armplates of Alacrity
@@ -7824,7 +7824,7 @@ _.PVP =
 							i(100699),	-- Grievous Gladiator's Wristguards of Accuracy
 							i(100634),	-- Grievous Gladiator's Wristguards of Alacrity
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(100640),	-- Grievous Gladiator's Belt of Cruelty
 							i(100721),	-- Grievous Gladiator's Belt of Meditation
 							i(100710),	-- Grievous Gladiator's Clasp of Cruelty
@@ -7847,7 +7847,7 @@ _.PVP =
 							i(100623),	-- Grievous Gladiator's Waistguard of Cruelty
 							i(100612),	-- Grievous Gladiator's Waistguard of Meditation
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(100662),	-- Grievous Gladiator's Boots of Alacrity
 							i(100604),	-- Grievous Gladiator's Boots of Cruelty
 							i(100574),	-- Grievous Gladiator's Footguards of Alacrity (Leather)
@@ -8278,7 +8278,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(102902, {	-- Grievous Gladiator's Cape of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -8301,7 +8301,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(102821, {	-- Grievous Gladiator's Armbands of Meditation
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -8348,7 +8348,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(102891, {	-- Grievous Gladiator's Belt of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -8395,7 +8395,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(102913, {	-- Grievous Gladiator's Boots of Alacrity
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
@@ -8657,7 +8657,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(100396)),	-- Grievous Gladiator's Plate Girdle
 					un(REMOVED_FROM_GAME, i(100398)),	-- Grievous Gladiator's Plate Warboots
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					un(REMOVED_FROM_GAME, i(101698)), -- Grievous Gladiator's Greatcloak
 				}),
 				n(-325, {	-- Tabards
@@ -9195,7 +9195,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							-- From Celestials/Vendor
 							i(102705, {	-- Prideful Gladiator's Cape of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -9219,7 +9219,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							-- From Celestials/Vendor
 							i(102624, {	-- Prideful Gladiator's Armbands of Meditation
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -9270,7 +9270,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							-- From Celestials/Vendor
 							i(102694, {	-- Prideful Gladiator's Belt of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -9318,7 +9318,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							-- From Celestials/Vendor
 							i(102716, {	-- Prideful Gladiator's Boots of Alacrity
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
@@ -9933,7 +9933,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							-- From Celestials/Vendor
 							i(103343, {	-- Prideful Gladiator's Cape of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -9957,7 +9957,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							-- From Celestials/Vendor
 							i(103484, {	-- Prideful Gladiator's Armbands of Meditation
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -10005,7 +10005,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							-- From Celestials/Vendor
 							i(103395, {	-- Prideful Gladiator's Belt of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -10057,7 +10057,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							-- From Celestials/Vendor
 							i(103427, {	-- Prideful Gladiator's Boots of Alacrity
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
@@ -10322,7 +10322,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(103074)),	-- Prideful Gladiator's Plate Girdle
 					un(REMOVED_FROM_GAME, i(103075)),	-- Prideful Gladiator's Plate Warboots
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					un(REMOVED_FROM_GAME, i(103635)), -- Prideful Gladiator's Greatcloak
 				}),
 				n(-325, {	-- Tabards
@@ -10374,7 +10374,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(97527),	-- Dreadful Gladiator's Band of Meditation
 				i(97529),	-- Dreadful Gladiator's Band of Meditation
 			}),
-			n(-322, {	-- Back
+			n(BACK, {
 				i(97518),	-- Dreadful Gladiator's Drape of Prowess
 			}),
 			f(51, {	-- Neck
@@ -10522,20 +10522,20 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(88234),	-- Gladiator's Plate Legguards
 				i(88235),	-- Gladiator's Plate Shoulders
 			}),
-			n(-322, {	-- Back
+			n(BACK, {
 				i(97926),	-- Malevolent Gladiator's Drape of Prowess
 				i(97836),	-- Malevolent Gladiator's Drape of Prowess
 			}),
-			n(-326, {	-- Wrist
+			n(WRIST, {
 				i(97838),	-- Malevolent Gladiator's Cuffs of Accuracy
 				i(97521),	-- Malevolent Gladiator's Cuffs of Meditation
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				i(97930),	-- Malevolent Gladiator's Cord of Accuracy
 				i(97840),	-- Malevolent Gladiator's Cord of Accuracy
 				i(97523),	-- Malevolent Gladiator's Cord of Cruelty
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(97526),	-- Malevolent Gladiator's Treads of Alacrity
 				i(97842),	-- Malevolent Gladiator's Treads of Cruelty
 				i(97932),	-- Malevolent Gladiator's Treads of Cruelty

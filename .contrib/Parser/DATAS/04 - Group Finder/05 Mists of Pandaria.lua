@@ -745,7 +745,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(93120),	-- Lightning Rod Pauldrons
 				i(93121),	-- Lightning Rod Girdle
 			}),
-			n(-322, {	-- Cloak
+			n(BACK, {
 				i(93113),	-- Lightning Rod Drape
 			}),
 			n(-319, {	-- Weapons

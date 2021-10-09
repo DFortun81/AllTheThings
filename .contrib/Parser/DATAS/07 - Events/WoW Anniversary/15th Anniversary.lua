@@ -237,7 +237,7 @@ _.WorldEvents =
 							["coord"] = { 58.1, 33.6, HILLSBRAD_FOOTHILLS },
 							["races"] = HORDE_ONLY,
 							["g"] = {
-								n(-322, {	-- Cloaks
+								n(BACK, {
 									i(172100, {	-- Frostwolf Advisor's Cloak
 										["cost"] = {
 											{ "i", 137642, 1 },	-- 1x  Mark of Honor
@@ -451,7 +451,7 @@ _.WorldEvents =
 							["coord"] = { 44.7, 46.4, HILLSBRAD_FOOTHILLS },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
-								n(-322, {	-- Cloaks
+								n(BACK, {
 									i(172101, {	-- Stormpike Sage's Cloak
 										["cost"] = {
 											{ "i", 137642, 1 },	-- 1x  Mark of Honor

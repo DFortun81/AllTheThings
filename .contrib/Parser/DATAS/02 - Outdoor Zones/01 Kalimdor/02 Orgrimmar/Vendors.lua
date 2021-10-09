@@ -183,7 +183,7 @@ _.Zones =
 									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 								}),
 							}),
-							n(-385, {	-- Finger
+							n(FINGER, {
 								i(172845, {	-- Corrupted Aspirant's Band
 									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 								}),
@@ -251,7 +251,7 @@ _.Zones =
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -673, -661 },
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(54659,  {	-- Blood Guard Zar'shi Original CATA S10 ELITE VENDOR
@@ -403,7 +403,7 @@ _.Zones =
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -661 },	-- Vicious Gladiator: Season 9 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 						{"finalize"},	-- Push the Set items to the finalized list.
 					},
 				}),
@@ -3266,7 +3266,7 @@ _.Zones =
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -674, -661 },	-- Cataclysmic Gladiator: Season 11 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(3333,   {	-- Shankys <Fishing Supplies>
