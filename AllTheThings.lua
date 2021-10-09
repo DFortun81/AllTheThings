@@ -5717,11 +5717,14 @@ local function AttachTooltipRawSearchResults(self, group)
 	end
 end
 local function AttachTooltipSearchResults(self, search, method, paramA, paramB, ...)
-	-- tooltips can skip to level 1
-	app.SetSkipPurchases(1);
-	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
-	app.SetSkipPurchases(0);
-	self.HasATTSearchResults = true;
+	-- Don't attach tooltip results multiple times
+	if not self.HasATTSearchResults then
+		-- tooltips can skip to level 1
+		app.SetSkipPurchases(1);
+		AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
+		app.SetSkipPurchases(0);
+		self.HasATTSearchResults = true;
+	end
 end
 
 local npcQuestsCache = {}
