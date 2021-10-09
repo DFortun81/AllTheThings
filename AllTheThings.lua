@@ -4045,15 +4045,15 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 	end
 
-	-- If the user wants to show the progress of this search result, do so.
-	if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
+	-- If the user wants to show the progress of this search result and it's not being tracked as a spell, do so.
+	if group.key ~= "spellID" and app.Settings:GetTooltipSetting("Progress") then
 		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
 	end
 
 	-- If there was any informational text generated, then attach that info.
 	if #info > 0 then
 		group.tooltipInfo = info;
-		for i,item in ipairs(info) do
+		for _,item in ipairs(info) do
 			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 		end
 	end
