@@ -660,20 +660,12 @@ for key,value in pairs({
 		--TODO: [-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),	-- The Hinterlands Active
 		--TODO: [-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),	-- Feralas Active
 		--TODO: [-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),	-- Duskwood Activated
-	-- Class Trial Sets
-		--TODO: [-141] = "Felsoul",
-		--TODO: [-142] = "Heart-Lesion",
-		--TODO: [-143] = "Lightdrinker",
-		--TODO: [-144] = "Mistdancer",
-		--TODO: [-145] = "Mountainsage",
-		--TODO: [-146] = "Oathsworn",
-		--TODO: [-147] = "Springrain",
-		--TODO: [-148] = "Streamtalker",
-		--TODO: [-149] = "Sunsoul",
-		--TODO: [-150] = "Trailseeker",
+	-- Garrison
 		--TODO: [-152] = "Garrison Campaign",
+	-- Druid Feral Druid Hidden Artifact Appearance
 		--TODO: [-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),	-- The Hinterlands Activated
 		--TODO: [-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),	-- Feralas Activated
+	-- Class Hall /Artifact
 		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
 	-- Other
 		--TODO: [-163] = RESISTANCE0_NAME,							-- Armor

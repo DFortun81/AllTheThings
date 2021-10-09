@@ -706,20 +706,12 @@ for key,value in pairs({
 		[-131] = "辛特兰 "..GetSpellInfo(133137),					-- The Hinterlands Active
 		[-132] = "菲拉斯 "..GetSpellInfo(133137),					-- Feralas Active
 		[-133] = "暮色森林 "..GetSpellInfo(78741),					-- Duskwood Activated
-	-- Class Trial Sets
-		[-141] = "邪魂",												-- Felsoul
-		[-142] = "摧心",												-- Heart-Lesion
-		[-143] = "浅酌者",											-- Lightdrinker
-		[-144] = "烟舞者",											-- Mistdancer
-		[-145] = "山岳贤者",											-- Mountainsage
-		[-146] = "誓约者",											-- Oathsworn
-		[-147] = "春雨",												-- Springrain
-		[-148] = "溪语者",											-- Streamtalker
-		[-149] = "阳魂",												-- Sunsoul
-		[-150] = "探路者",											-- Trailseeker
+	-- Garrison
 		[-152] = "要塞战役",											-- Garrison Campaign
+	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = "辛特兰 "..GetSpellInfo(78741),						-- The Hinterlands Activated
 		[-158] = "菲拉斯 "..GetSpellInfo(78741),						-- Feralas Activated
+	-- Class Hall /Artifact
 		[-159] = "事件roll点",										-- Daily Dreamway Event Roll
 	-- Other
 		--TODO: [-163] = RESISTANCE0_NAME,							-- Armor
