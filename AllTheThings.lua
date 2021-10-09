@@ -15892,7 +15892,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					-- Cache the difficultyID, if there is one. Also, ignore the event tag for anything that isn't Bizmo's Brawlpub.
 					local difficultyID = not GetRelativeField(group, "headerID", -496) and GetRelativeValue(group, "difficultyID");
 
-					if group.key == "instanceID" or group.key == "mapID" or group.key == "classID" then
+					if group.instanceID or group.mapID or group.key == "classID" then
 						-- only if this group mapID matches the minilist mapID directly or by maps
 						if group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID)) then
 							MergeProperties(header, group, true);
