@@ -658,7 +658,6 @@ for key,value in pairs({
 		[0] = ZONE .. BATTLE_PET_SOURCE_1,							-- Zone Drop 地区掉落
 		[-1] = BATTLE_PET_BREED_QUALITY2 .. TRANSMOG_SOURCE_1,		-- Common Boss Drop 普通首领掉落
 		[-2] = "商人",												-- Vendor	-- String in GlobalStrings.lua means slightly different thing in zhCN so translating it manually
-		--TODO: [-5] = "Prospecting",
 		[-7] = WORLD .. RAID_BOSSES,								-- World Bosses 世界首领
 		--TODO: [-11] = "Common Box Drops",							-- Common Box Drops
 		[-12] = DUNGEON_FLOOR_DIREMAUL5 .. " [东 - 恶魔]",			-- Warpwood Quarter [East - Demon] 扭木广场
@@ -685,19 +684,17 @@ for key,value in pairs({
 		[-59] = "亡灵节",											-- Day of the Dead
 		[-61] = "冬幕节",											-- The Feast of Winter Veil
 		[-62] = "荆棘谷钓鱼大赛",									-- Stranglethorn Fishing Extravaganza
-		[-70] = DUNGEON_FLOOR_DESOLACE22,							-- Foulspore Cavern [Orange]
-		[-71] = DUNGEON_FLOOR_DESOLACE21,							-- The Wicked Grotto [Purple]
-		[-72] = "萨格雷战争议会",									-- Sargerei War Council
+	-- Zul'Aman
 		--TODO: [-78] = "Timed Event",
 		--TODO: [-79] = "First Chest",
 		--TODO: [-80] = "Second Chest",
 		--TODO: [-81] = "Third Chest",
 		--TODO: [-82] = "Final Chest",
+	-- SM
 		[-85] = "墓地",												-- Graveyard
 		--TODO: [-86] = "Library",
 		--TODO: [-87] = "Armory",
 		--TODO: [-88] = "Cathedral",
-		--TODO: [-90] = ELITE,										-- Elite
 	-- TODO: Garrison Note: These will be changed into a new class soon(TM)
 		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)),			-- Stables
 		[-99] = "建筑",												-- Buildings
@@ -714,15 +711,11 @@ for key,value in pairs({
 	-- Class Hall /Artifact
 		[-159] = "事件roll点",										-- Daily Dreamway Event Roll
 	-- Other
-		--TODO: [-163] = RESISTANCE0_NAME,							-- Armor
-		--TODO: [-165] = GetItemSubClassInfo(13,1),
-		[-168] = FACTION_OTHER .. QUESTS_LABEL,						-- Other Quests
 		[-211] = NEW .. CHARACTER,									-- New Character 新建角色
 		[-212] = "宝箱",												-- Treasure Chest
+	-- Fishing
 		--TODO: [-217] = "Lures",									-- Lures (for Fishing)
 		[-218] = "鱼饵",												-- Coastal (for Fishing)
-		[-224] = "伊利达雷",											-- Illidari
-		--TODO: [-228] = GetSpellInfo(218950),						-- GetSpellInfo(218950),  -- Flight Path
 		--TODO: [-242] = "Unrated",									-- Unrated
 		[-243] = "赏金任务",											-- Bounty
 		[-254] = "同盟种族 & 传承护甲",										-- Allied Races & Heritage
