@@ -572,6 +572,7 @@ namespace ATT
                 }
             }
 
+            bool cloned = false;
             // Mark the quest as referenced
             if (data.TryGetValue("questID", out long questID))
             {
@@ -588,17 +589,24 @@ namespace ATT
             {
                 DuplicateDataIntoGroups(data, quests, "quest");
                 data.Remove("_quests");
+                cloned = true;
             }
             else if (data.TryGetValue("_items", out object items))
             {
                 DuplicateDataIntoGroups(data, items, "item");
                 data.Remove("_items");
+                cloned = true;
             }
             else if (data.TryGetValue("_npcs", out object npcs))
             {
                 DuplicateDataIntoGroups(data, npcs, "npc");
                 data.Remove("_npcs");
+                cloned = true;
             }
+
+            // data that is cloned to another location in the addon should not be maintained where it was cloned from
+            if (cloned)
+                return false;
 
             // Throw away automatic Spell ID assignments for certain filter types.
             if (data.TryGetValue("spellID", out f))
