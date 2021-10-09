@@ -590,9 +590,9 @@ local L = app.L;
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
 	["安托鲁斯，燃烧王座"] = "安托鲁斯",	-- ["Antorus, the Burning Throne"] = "Antorus"
-	["Expansion Pre"] = "前夕",	-- ["Expansion Pre"] = "Pre"
+	["资料片前夕"] = "前夕",	-- ["Expansion Pre"] = "Pre"
 	--TODO: ["Expansion Features"] = "EF",
-	["Dungeons & Raids"] = "地下城和团本",	-- ["Dungeons & Raids"] = "D&R"
+	[GROUP_FINDER] = "地下城和团本",	-- ["Dungeons & Raids"] = "D&R"
 	--TODO: ["The Burning Crusade"] = "BC",
 	--TODO: ["Burning Crusade"] = "BC",
 	--TODO: ["The BC"] = "BC",
@@ -616,9 +616,9 @@ for key,value in pairs({
 	--TODO: ["25 Player"] = "25M",
 	--TODO: ["25 Player (Heroic)"] = "25M (H)",
 	--TODO: ["Emissary Quests"] = "Emissary",
-	["World Quests"] = "世界任务",	-- ["World Quests"] = "WQ"
+	["世界任务"] = "世界任务",	-- ["World Quests"] = "WQ"	-- TODO: they are the same, so can be removed or shortened to WQ?
 	--TODO: ["WoW Anniversary"] = "Anniversary",
-	["Covenant:"] = "盟约:",	-- ["Covenant:"] = "Cov:"
+	["盟约:"] = "盟约:",	-- ["Covenant:"] = "Cov:"	-- TODO: they are the same, so can be removed or shortened to WQ?
 })
 do a[key] = value; end
 if GetLocale() == "zhTW" then
