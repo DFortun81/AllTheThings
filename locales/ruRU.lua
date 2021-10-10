@@ -622,7 +622,7 @@ for key,value in pairs({
 		[-53] = "Огненный Солнцеворот",							-- Midsummer Fire Festival
 		[-55] = "День пирата",
 		[-59] = "День мертвых",
-		[-62] = "Рыбомания Тернистой долины",
+		[-62] = "Рыбомания Тернистой долины",					-- Stranglethorn Fishing Extravaganza
 	-- Zul'Aman
 		[-78] = "Временное Событие",
 		[-79] = "Первый Сундук",
@@ -660,43 +660,48 @@ for key,value in pairs({
 		[-228] = "Точка полета",									-- GetSpellInfo(218950),  -- Flight Path
 		[-242] = "Нерейтинговые",									-- Unrated
 		[-243] = "Премия",											-- Bounty
+	-- Allied Races
 		[-254] = "Союзные расы & Традиционные доспехи",				-- Allied Races & Heritage
-		[-356] = "Атака на Темный портал",
+	-- First Questline Draenor
+		[-356] = "Атака на Темный портал",							-- Assault on the Dark Portal
+	-- Outposts in Draenor
 		[-361] = "Артиллерийная башня",								-- Artillery Tower
+	-- Legendaries
 		[-364] = "Легендарные предметы",							-- Legendaries
-	-- Dungeon/Raid Wing Info
+	-- Operation: Mechagon
 		[-379] = "Свалка",											-- Junkyard
+	-- Icecrown Citadel
 		[-393] = "Штурм цитадели",									-- Storming the Citadel
 		[-394] = "Чумодельня",										-- The Plagueworks
+	-- BFA Outposts
 		[-397] = "Аванпосты",										-- Outposts
+	-- T0.5
 		[-420] = "Комплекты T0.5",									-- Tier 0.5 Sets
+	-- BFA War Chest
 		[-488] = "Трофейный сундук",								-- Daily War Chest
-		[-491] = "Карты таро",
+	-- Tarot Cards
+		[-491] = "Карты таро",										-- Tarot Cards
 	-- Blizzard Events and Anniversaries
-		[-520] = "Препатч",
-		[-522] = "Wrath of the Lich King: Нашествие зомби",
-		[-523] = "Cataclysm: Бейство элементалей",
-		[-525] = "Warlords of Draenor: Вторжение Железной Орды",
-		[-526] = "Legion: Вторжение Легиона",
-		[-527] = "Battle for Azeroth: Война Шипов",
-		[-532] = "Heroes of the Storm",
-		[-533] = "Hearthstone",
-		[-534] = "Коллекционное издание",
-		[-536] = "Hearthstone Наемники",
-
-		[-537] = "20-ая годовщина Diablo",
-		[-538] = "Война в Ан'Кираже",
-		[-539] = "Скипетр Зыбучих песков",
-		[-540] = "Вторжение Плети",
-		--TODO: [-541] = "The Silithyst Must Flow",
-		[-542] = "Открытие Темного портала",
-		[-543] = "Вторжение Легиона",
-		[-544] = "Коллекционное издание WoW",
-		[-550] = "Коллекционное издание Starcraft",
-		[-551] = "Коллекционное издание Diablo",
-		[-556] = "Турнир Арены",
-		[-579] = "Пропуск Темного портала",
-
+		[-520] = "Препатч",											-- Expansion Pre-Launch
+		[-522] = "Wrath of the Lich King: Нашествие зомби",			-- Wrath of the Lich King: Zombie Infestation
+		[-523] = "Cataclysm: Бейство элементалей",					-- Cataclysm: Elemental Unrest
+		[-525] = "Warlords of Draenor: Вторжение Железной Орды",	-- Warlords of Draenor: Iron Horde Incursion
+		[-526] = "Legion: Вторжение Легиона",						-- Legion: Legion Invasion
+		[-527] = "Battle for Azeroth: Война Шипов",					-- Battle for Azeroth: War of the Thorns
+		[-534] = "Коллекционное издание",							-- Collector's Edition
+		[-536] = "Hearthstone Наемники",							-- Hearthstone Mercenaries
+		[-537] = "20-ая годовщина Diablo",							-- Diablo 20th Anniversary
+		[-538] = "Война в Ан'Кираже",								-- The Ahn'Qiraj War Effort
+		[-539] = "Скипетр Зыбучих песков",							-- The Scepter of the Shifting Sands
+		[-540] = "Вторжение Плети",									-- The Scourge Invasion
+		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
+		[-542] = "Открытие Темного портала",						-- The Opening of the Dark Portal
+		[-543] = "Вторжение Легиона",								-- Legion Invasions
+		[-544] = "Коллекционное издание WoW",						-- WoW Collector's Edition
+		[-550] = "Коллекционное издание Starcraft",					-- Starcraft Collector's Edition
+		[-551] = "Коллекционное издание Diablo",					-- Diablo Collector's Edition
+		[-556] = "Турнир Арены",									-- Arena Tournament
+		[-579] = "Пропуск Темного портала",							-- Dark Portal Pass
 	-- PvP Header
 		-- Special Season Tags
 			[-655] = "Комплекты", 									-- Ensemble Gear (PvP)
@@ -705,46 +710,38 @@ for key,value in pairs({
 			[-660] = "Доспехи Бойца",								-- Combatant PvP Gear (WoD, Legion)
 			[-661] = "Доспехи Гладиатора",							-- Gladiator PvP Gear
 			[-662] = "Элитные доспехи",								-- Elite PvP Gear
-
 		-- Classic PvP Seasons
 			[-663] = "Система Чести Классика",						-- Classic Honor System
-
 		-- The Burning Crusade PvP Seasons
 			[-658] = "BC Предсезон",								-- Pre-Season (PvP BC)
 			[-664] = select(2, GetAchievementInfo(2091))..": Сезон 1",	-- Gladiator: Season 1
 			[-665] = select(2, GetAchievementInfo(418))..": Сезон 2",	-- Merciless Gladiator: Season 2
 			[-666] = select(2, GetAchievementInfo(419))..": Сезон 3",	-- Vengeful Gladiator: Season 3
 			[-667] = select(2, GetAchievementInfo(420))..": Сезон 4",	-- Brutal Gladiator: Season 4
-
 		-- Wrath of the Lich-King PvP Seasons
 			[-668] = select(2, GetAchievementInfo(3336))..": Сезон 5",	-- Deadly Gladiator: Season 5
 			[-657] = "Злобный гладиатор",								-- Hateful Gladiator
 			[-669] = select(2, GetAchievementInfo(3436))..": Сезон 6",	-- Furious Gladiator: Season 6
 			[-670] = select(2, GetAchievementInfo(3758))..": Сезон 7",	-- Relentless Gladiator: Season 7
 			[-671] = select(2, GetAchievementInfo(4599))..": Сезон 8",	-- Wrathful Gladiator: Season 8
-
 		-- Cataclysm PvP Seasons
 			[-672] = select(2, GetAchievementInfo(6002))..": Сезон 9",	-- Vicious Gladiator: Season 9
 			[-656] = "Доспехи Беспощадного гладиатора за очки чести",	-- Honor Gear Ruthless Season
 			[-673] = select(2, GetAchievementInfo(6124))..": Сезон 10",	-- Ruthless Gladiator: Season 10
 			[-654] = "Доспехи Гладиатора Катаклизма за очки чести",		-- Honor Gear Cataclysmic Season
 			[-674] = select(2, GetAchievementInfo(6938))..": Сезон 11",	-- Cataclysmic Gladiator: Season 11
-
 		-- Mists of Pandaria PvP Seasons
 			[-675] = select(2, GetAchievementInfo(8214))..": Сезон 12",	-- Malevolent Gladiator: Season 12
 			[-653] = "Доспехи Деспотичного гладиатора за очки чести",	-- Honor Gear Tyrannical Season
 			[-676] = select(2, GetAchievementInfo(8791))..": Сезон 13",	-- Tyrannical Gladiator: Season 13
 			[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
 			[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
-
-	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
-	[-806] = "Часовой пояс",									-- Waist of Time
-
+	-- Secret Header
+		[-806] = "Часовой пояс",									-- Waist of Time
 	-- Chests
 		[-850] = "Механизированный сундук",							-- Mechanized Chest
 		[-851] = "Тайник Темной Империи",							-- Black Empire Cache
-
-	-- 8.2 Neck Stuff
+	-- Heart of Azeroth
 		[-853] = "Все роли",										-- All Roles
 		[-854] = "Боец",											-- DPS
 		[-855] = "Лекарь",											-- Healers
@@ -770,7 +767,6 @@ for key,value in pairs({
 		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": Текущая энергия",	-- Tier 3: Flowing Power
 		[-977] = "Маэли Странница",									-- Maelie the Wanderer
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
-
 		-- SL Maldraxxus/Necrolord
 			[-921] = "Улучшения для Обители",						-- Sanctum Upgrades (Necrolord)
 			[-924] = "Транспортная Сеть",							-- Transport Network (Necrolord)
@@ -779,7 +775,6 @@ for key,value in pairs({
 			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": Встань и живи",	-- Abomination Factory (Necrolord) Tier 3
 			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": Кованые друзья",	-- Abomination Factory (Necrolord) Tier 4
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Лучшие друзья навсегда",	-- Abomination Factory (Necrolord) Tier 5
-
 		-- SL Ardenweald/Night Fae
 			[-935] = "Улучшения для обители",						-- Sanctum Upgrades (Night Fae)
 			[-936] = "Формы души",									-- Soulshape Forms (Night Fae)
@@ -788,7 +783,6 @@ for key,value in pairs({
 			[-1003] = "Воинственный дух",							-- Martial Spirit
 			[-1004] = "Дух гордыни",								-- Prideful Spirit
 			[-1005] = "Неукрощенный дух",							-- Untamed Spirit
-
 		-- SL Bastion/Kyrian
 			[-940] = "Совет перерожденных",							-- Ascended Counil
 			[-941] = "Улучшения для обители",						-- Sanctum Upgrades (Kyrian)
@@ -804,7 +798,6 @@ for key,value in pairs({
 			[-966] = "Чертежи и Создание",							-- "Blueprints & Crafting"
 			[-973] = "Верность",									-- Loyalty
 			[-975] = "Смирение",									-- Humility
-
 		-- SL Revendreth/Venthyr
 			[-950] = "Транспортная сеть",							-- Transport Network
 			[-951] = string.format(COVENANT_SANCTUM_TIER, 1)..": Зеркало, зеркало",	-- Tier 1: Mirror, Mirror
@@ -826,10 +819,9 @@ for key,value in pairs({
 			[-969] = "Набор B",										-- Set B
 			[-970] = "Набор C",										-- Set C
 			[-971] = "Набор D",										-- Set D
-
+		-- Black Vault
 			[-1001] = "Черный ящик",
-
-	-- Warrior order hall lore items TODO: localize
+	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",
 		[-2202] = "Чертоги золота и славы",
@@ -842,17 +834,8 @@ for key,value in pairs({
 		[-2209] = "Пророчество Райтаса Провидца",					-- The Prophecy of Rythas the Oracle
 		[-2210] = "Уроки Черного Кулака",							-- The Lessons of the Blacklist
 		[-2211] = "Безрассудный Волунд",							-- Volund's Folly
-
-	-- Other Sets
+	-- T3
 		[-3179] = "Комплект 3-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
-
-	-- Holiday Sets
-		[-3199] = "Наряд гуляки Огненного Солнцеворота",
-	-- Anti-Undead Armor Sets [Scourge Event]
-		[-3218] = "Благословенные регалии искоренения нежити",
-		[-3219] = "Благословенная броня убийцы нежити",
-		[-3220] = "Благословенное облачение убийцы нежити",
-		[-3221] = "Благословенное снаряжение истребителя нежити",
 	-- Island Expedition Sets
 		[-3315] = "Паук-послушник",
 		[-3316] = "Гидраксианский",
@@ -861,7 +844,6 @@ for key,value in pairs({
 		[-3319] = "Злобный рой",
 		[-3340] = "Темный воскреситель",
 		[-3341] = "Темная Гавань",
-
 		[-3343] = "Удушающая Зима",
 		[-3342] = "Падший повелитель рун",
 		[-3320] = "Призрачная ветвь",
@@ -870,7 +852,6 @@ for key,value in pairs({
 		[-3323] = "Танцующий дервиш",
 		[-3324] = "Прочная кора",
 		[-3325] = "Живой огонь",
-
 		[-3344] = "Морозная Клятва",
 		[-3326] = "Лихой мародер",
 		[-3327] = "Наездник на драконе",
@@ -878,7 +859,6 @@ for key,value in pairs({
 		[-3329] = "Мррглурггльский",
 		[-3330] = "Собиратель голов",
 		[-3331] = "Охотник вуду",
-
 		[-3332] = "Пляшущие камни",
 		[-3333] = "Острый плавник",
 		[-3345] = "Освященный повелитель Плети",
@@ -887,7 +867,6 @@ for key,value in pairs({
 		[-3336] = "Гремящие кости",
 		[-3337] = "Сумеречный дракон",
 		[-3347] = "Рубака Черного Зуба",
-
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "Основной облик",
@@ -900,11 +879,9 @@ for key,value in pairs({
 			[-5350] = "Комплекты Пробных персонажей",				-- Class Trial
 
 		[-7776] = "Гуляка Зимнего Покрова",							-- Winter Revelers (for Winter Veil)
-
 	-- Classes
 		[-9951] = GetSpellInfo(148462).." и "..GetSpellInfo(137031),	-- Discipline / Holy Priest Spec
 		[-9952] = GetSpellInfo(234890).." и "..GetSpellInfo(137011), 	-- Guardian / Feral Druid Spec
-
 	------ ACHIEVEMENT HEADER SECTION ------
 		[-10071] = "Видения Н'Зота",
 		[-10072] = "Нападение Н'Зота",
@@ -918,11 +895,9 @@ for key,value in pairs({
 		[-10081] = "Заражённая область",
 		[-10082] = "Захваченная область",
 		[-10083] = "Нападения Ковенантов",							-- Covenant Assaults
-
 		-- Shadowlands Achievement Header
 			-- Achieve 14339 Sub-Criteira
 				[-1433901] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Разбитое зеркало A-1",				-- Broken Mirror
 				[-1433952] = "Разбитое зеркало A-2",				-- Broken Mirror
