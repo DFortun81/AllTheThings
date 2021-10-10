@@ -2245,7 +2245,7 @@ for key, value in pairs({
 	[268753] = "小宝箱",	-- Small Treasure Chest
 	[269064] = "小宝箱",	-- Small Treasure Chest
 	[269830] = "|cFFFFFFFF第9步:|r 寻心者的礼物",	-- |cFFFFFFFFStep 9:|r Gift of the Mind-Seekers	--TODO: This was manually translated
-	[270855] = "|cFFFFFFFF第1步:|r 不起眼的纸条",	-- |cFFFFFFFFStep 1:|r Inconspicuous Note	--TODO: This was manually translated
+	[270855] = "|cFFFFFFFF第1步:|r 不起眼的纸条",	-- |cFFFFFFFFStep 1:|r Inconspicuous Note
 	[270917] = "格伦布鲁克登记簿",	-- Glenbrook Register
 	[271103] = "祈祷者雕像",	-- Prayer Effigy
 	[271706] = "猎人的看板",	-- Hunters' Board
