@@ -8,15 +8,15 @@
 #### Icon updates
 - Small color tweaks to WoD, MoP and TBC icons.
 - Faction flag updated to a banner.
-- Updated World drops icon nothing big just a better looking icon
-- New Icons for Zone drops, Rewards, Vendor and weapon types including Heirloom, Artifact and Legendary
+- Updated World drops icon nothing big just a better looking icon.
+- New Icons for Zone drops, Rewards, Vendor and weapon types including Heirloom, Artifact and Legendary.
 
 #### WoD deduplication
 Started work on WoD dungeons clean up. Instead of listing the same gear piece in every dungeon we now have Common Dungeon Drop header. If you want to know where the particular piece drops, Right click it in the list to see new window with the Sources header. To see the particular dungeon with unique + common drops you can Right click it too.
 
 ### Notable changes:
 
-- Did you know you can sort your ATT lists? Shift+Right click will sort them alphabetically by default and if you turn on Settings->Features->Sort By Progress it will uhm sort by progress. Sorting Factions now sorts based on current reputation level when not yet Exalted.
+- Did you know you can sort your ATT lists? Shift+Right click will sort them alphabetically by default and if you turn on Settings->Features->Sort By Progress it will 👀 sort by progress. Sorting Factions now sorts based on current reputation level when not yet Exalted.
 - Improved performance for refreshing appearances after a new ATT version release or force refresh (Shift+Click).
 - Revised the Unique collection logic.
 
