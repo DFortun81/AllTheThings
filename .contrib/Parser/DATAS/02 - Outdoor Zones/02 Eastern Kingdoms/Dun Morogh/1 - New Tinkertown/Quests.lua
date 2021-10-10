@@ -286,6 +286,7 @@ _.Zones =
 						q(47709, {	-- The Great Gnomeregan Race
 							["provider"] = { "n", 124280 },	-- Mina Gleespanner
 							["coord"] = { 36.3, 36.5, 469 },
+							["u"] = MICRO_HOLIDAY,
 						}),
 						q(27674, {	-- To the Surface
 							["sourceQuests"] = { 27635 },	-- Decontamination
