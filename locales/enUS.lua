@@ -835,9 +835,9 @@ app.L = {
 	["HEADER_ICONS"] = {
 		--[-] = "Interface\\Icons\\",														--
 	-- Commonly used
-		[0] = "Interface\\Icons\\INV_TreasureChest_FelfireCitadel",							-- Zone Drop
+		[0] = app.asset("Interface_Zone_drop"),						                    	-- Zone Drop
 		[-1] = "Interface\\Icons\\Achievement_Garrison_Horde_PVE",							-- Common Boss Drop
-		[-2] = "Interface\\Icons\\INV_Misc_Coin_02",										-- Vendors
+		[-2] = app.asset("Interface_Vendor"),		        								-- Vendors
 		[-3] = app.asset("Category_Holidays"),												-- Holidays
 		[-4] = app.asset("Category_Achievements"),											-- Achievement
 		[-7] = app.asset("Interface_World_boss"),				                            -- World Bosses (Achievement_Boss_ShadeOfEranikus)
@@ -851,9 +851,9 @@ app.L = {
 		[-16] = app.asset("Interface_Rare"),												-- Rare
 		[-17] = app.asset("Interface_Quest_header"),										-- Quests
 		-- #if BEFORE WOD
-		[-18] = "Interface\\Icons\\INV_Misc_Bag_13", 										-- Rewards
+		[-18] = app.asset("Interface_Rewards"), 									    	-- Rewards
 		-- #else
-		[-18] = "Interface\\Icons\\inv_misc_coinbag_special", 								-- Rewards
+		[-18] = app.asset("Interface_Rewards"), 							            	-- Rewards
 		-- #endif
 		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
 		[-20] = "Interface\\Icons\\INV_Misc_Coin_02",										-- Common Vendor Items
@@ -1057,9 +1057,9 @@ app.L = {
 	-- Pre Class Hall Monk
 		[-362] = "Interface\\Icons\\ability_monk_legacyoftheemperor",						-- Peak of Serenity
 	-- Legendaries
-		[-364] = 236215,																	-- Legendaries
+		[-364] = app.asset("Weapon_Type_Legendary"),										-- Legendaries
 	-- Heirlooms
-		[-365] = 135360,																	-- Heirlooms
+		[-365] = app.asset("Weapon_Type_Heirloom"),											-- Heirlooms
 	-- Naxxramas
 		[-367] = "Interface\\Icons\\ability_rogue_deviouspoisons",							-- The Construct Quarter
 		[-368] = "Interface\\Icons\\inv_trinket_naxxramas04",								-- The Arachnid Quarter
@@ -1507,7 +1507,7 @@ app.L = {
 		[-10059] = "Interface\\Icons\\Paladin_Protection",							-- Pandaria Scenarios
 		[-10061] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
 		[-10067] = "Interface\\Icons\\inv_artifact_tome01",							-- AK Research Book
-		[-10067] = 1309100,															-- Artifacts
+		[-10067] = app.asset("Weapon_Type_Artifact"),								-- Artifacts
 		[-10070] = "Interface\\Icons\\Paladin_Protection",							--
 		[-10071] = "Interface\\Icons\\Paladin_Protection",							--
 		[-10072] = "Interface\\Icons\\ability_deathwing_assualtaspects",			-- N'Zoth Assault
