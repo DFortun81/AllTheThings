@@ -181,7 +181,6 @@ _.PVP =
 			["g"] = {
 				n(-302, {	-- Level 80-84 before 9.0
 					["description"] = "Rewarded for winning a random battleground in the level 80-84 range before 9.0.",
-					["icon"] = "Interface\\Icons\\expansionicon_cataclysm",
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(134616)),	-- Inflammatory Cord*
 						un(REMOVED_FROM_GAME, i(134615)),	-- Inflammatory Hood*
@@ -212,7 +211,6 @@ _.PVP =
 				}),
 				n(-303, {	-- Level 85-89 before 9.0
 					["description"] = "Rewarded for winning a random battleground in the level 85-89 range before 9.0.",
-					["icon"] = "Interface\\Icons\\expansionicon_mistsofpandaria",
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(134754)),	-- Veiled Cuffs*
 						un(REMOVED_FROM_GAME, i(134752)),	-- Veiled Leggings*

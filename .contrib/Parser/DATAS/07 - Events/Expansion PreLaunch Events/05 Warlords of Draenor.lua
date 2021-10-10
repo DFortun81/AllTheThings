@@ -5,14 +5,10 @@
 _.WorldEvents =
 {
 	n(-520, {	-- Expansion Prelaunch Events
-		["icon"] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",
-		["groups"] = {
-			n(-525, {	-- Warlords of Draenor
-				["icon"] = "Interface\\Icons\\Achievement_Boss_Blackhand",
-				["lvl"] = 90,
-				["groups"] = {
-				},
-			}),
-		},
+		n(-525, {	-- Warlords of Draenor
+			["lvl"] = 90,
+			["groups"] = {
+			},
+		}),
 	}),
 };

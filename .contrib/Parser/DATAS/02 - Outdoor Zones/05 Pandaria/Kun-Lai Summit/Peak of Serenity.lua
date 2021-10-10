@@ -9,7 +9,6 @@ _.Zones =
 			n(-362, {	-- Peak of Serenity
 				["description"] = "This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.|r",
 				["classes"] = { MONK },
-				["icon"] = "Interface\\Icons\\ability_monk_legacyoftheemperor",
 				["g"] = {
 					n(QUESTS, {
 						q(31834, {	-- Begin Your Training: Master Cheng - Monk Only

@@ -26,6 +26,7 @@ _.Instances = { tier(BFA_TIER, {
 				i(165693),	-- Vantus Rune Technique: Battle of Dazar'alor Rank1
 				i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor Rank2
 				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor Rank3
+				i(165703),	-- Breath of Bwonsamdi
 			}),
 			d(17, bubbleDown({["modID"] = 4}, {	-- LFR
 				n(ZONE_DROPS, {
@@ -38,9 +39,6 @@ _.Instances = { tier(BFA_TIER, {
 					i(165547),	-- City Crusher Sabatons
 					i(165563),	-- Boots of the Dark Iron Raider
 					i(165925),	-- Drape of Valiant Defense
-				}),
-				n(-351, {	-- Boss Drop
-					i(165703),	-- Breath of Bwonsamdi
 				}),
 				ach(13286, 13289, {	-- Siege of Dazar'alor (A) / Defense of Dazar'alor (H)
 					["collectible"] = false,
@@ -349,9 +347,6 @@ _.Instances = { tier(BFA_TIER, {
 					i(165563),	-- Boots of the Dark Iron Raider
 					i(165925),	-- Drape of Valiant Defense
 				}),
-				n(-351, {	-- Boss Drop
-					i(165703),	-- Breath of Bwonsamdi
-				}),
 				ach(13315, {	-- Glory of the Dazar'alor Raider
 					i(166539),	-- Dazar'alor Windreaver
 				}),
@@ -643,9 +638,6 @@ _.Instances = { tier(BFA_TIER, {
 					i(165547),	-- City Crusher Sabatons
 					i(165563),	-- Boots of the Dark Iron Raider
 					i(165925),	-- Drape of Valiant Defense
-				}),
-				n(-351, {	-- Boss Drop
-					i(165703),	-- Breath of Bwonsamdi
 				}),
 				ach(13315, {	-- Glory of the Dazar'alor Raider
 					i(166539),	-- Dazar'alor Windreaver
@@ -939,9 +931,6 @@ _.Instances = { tier(BFA_TIER, {
 					i(165547),	-- City Crusher Sabatons
 					i(165563),	-- Boots of the Dark Iron Raider
 					i(165925),	-- Drape of Valiant Defense
-				}),
-				n(-351, {	-- Boss Drop
-					i(165703),	-- Breath of Bwonsamdi
 				}),
 				ach(13315, {	-- Glory of the Dazar'alor Raider
 					i(166539),	-- Dazar'alor Windreaver
