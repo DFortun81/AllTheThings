@@ -1415,9 +1415,9 @@ app.L = {
 		[-9952] = "Interface\\Icons\\ClassIcon_Druid",								-- Guardian / Feral Spec
 	------ ACHIEVEMENT HEADER SECTION ------
 		[-9955] = "Interface\\Icons\\achievement_general",							-- General
-		
+
 		[-9957] = "Interface\\Icons\\inv_misc_map02",								-- Exploration
-		
+
 		[-9959] = app.asset("Category_D&R"),										-- Dungeons & Raids
 		[-9960] = app.asset("Category_Professions"),								-- Professions
 		[-9961] = app.asset("Category_Factions"),									-- Reputation
@@ -1469,13 +1469,13 @@ app.L = {
 		[-10012] = app.asset("Expansion_LEGION"),									-- Legion Dungeon
 		[-10013] = app.asset("Expansion_LEGION"),									-- Legion Raid
 		[-10014] = app.asset("Expansion_WOTLK"),									-- Wrath of the Lich King
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
 		[-10025] = app.asset("Event_dmf"),											-- Darkmoon Faire
 		[-10026] = "Interface\\Icons\\spell_holy_fistofjustice",					-- Brawler's Guild
 		[-10027] = "Interface\\Icons\\Paladin_Protection",							-- Collect
@@ -1765,7 +1765,7 @@ app.L = {
 		[-369] = DUNGEON_FLOOR_NAXXRAMAS3,										-- The Military Quarter
 		[-370] = DUNGEON_FLOOR_NAXXRAMAS4,										-- The Plague Quarter
 		[-371] = DUNGEON_FLOOR_NAXXRAMAS6, 										-- The Upper Necropolis
-	-- Operation:Mechagon
+	-- Operation: Mechagon
 		[-379] = "Junkyard",													-- Junkyard
 		[-380] = GetSpellInfo(251998),											-- Workshop
 	-- Misc Armor Slots
@@ -1802,11 +1802,11 @@ app.L = {
 		[-517] = GetSpellInfo(265225),											-- Mole Machine
 	-- Blizzard Events and Anniversaries
 		[-520] = "Expansion Pre-Launch",										-- Expansion Pre-Launch
-		[-522] = EXPANSION_NAME2..": Zombie Infestation",						-- Wotlk: Zombie Infestation
+		[-522] = EXPANSION_NAME2..": Zombie Infestation",						-- Wrath of the Lich King: Zombie Infestation
 		[-523] = EXPANSION_NAME3..": Elemental Unrest",							-- Cataclysm: Elemental Unrest
-		[-525] = EXPANSION_NAME5..": Iron Horde Incursion",						-- WoD: Iron Horde Incursion
+		[-525] = EXPANSION_NAME5..": Iron Horde Incursion",						-- Warlords of Draenor: Iron Horde Incursion
 		[-526] = EXPANSION_NAME6..": Legion Invasion",							-- Legion: Legion Invasion
-		[-527] = EXPANSION_NAME7..": War of the Thorns",						-- BFA: War of the Thorns
+		[-527] = EXPANSION_NAME7..": War of the Thorns",						-- Battle for Azeroth: War of the Thorns
 		[-528] = POSTMASTER_PIPE_BROKEN_ISLES,									-- Broken Isles [Mole Machine]
 		[-531] = C_PetJournal.GetPetInfoBySpeciesID(179),						-- Spirit of Competition
 		[-532] = "Heroes of the Storm",											-- Heroes of the Storm
@@ -2171,9 +2171,9 @@ app.L = {
 		[-9952] = GetSpellInfo(234890).." & "..GetSpellInfo(137011), 			-- Guardian / Feral Druid Spec
 	------ ACHIEVEMENT HEADER SECTION ------
 		[-9955] = STAT_CATEGORY_GENERAL,										-- General
-		
+
 		[-9957] = select(1,GetCategoryInfo(97)),								-- Exploration
-		
+
 		[-9959] = GROUP_FINDER,													-- Dungeons & Raids
 		[-9960] = TRADE_SKILLS,													-- Professions
 		[-9961] = TUTORIAL_TITLE16,												-- Reputation
@@ -2225,13 +2225,13 @@ app.L = {
 		[-10012] = select(1,GetCategoryInfo(15254)),							-- Legion Dungeon
 		[-10013] = select(1,GetCategoryInfo(15255)),							-- Legion Raid
 		[-10014] = select(1,GetCategoryInfo(14823)),							-- Wrath of the Lich King
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
 		[-10025] = select(1,GetCategoryInfo(15101)),							-- Darkmoon Faire
 		[-10026] = select(1,GetCategoryInfo(15282)),							-- Brawler's Guild
 		[-10027] = select(1,GetCategoryInfo(15118)),							-- Collect
