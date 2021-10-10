@@ -28,7 +28,7 @@ _.Zones =
 				n(84216, {	-- Talgaiir the Ironrender
 					["description"] = "This vendor is only available at lower levels before he becomes phased out. Items are also available from Big Zokk Torquewrench in Area 52. Items require Legionnaire/Knight-Captain or higher to purchase. |r",
 					["coord"] = { 45.6, 38.6, TALADOR },
-					["g"] = {
+					["g"] = pvp({
 						-- Note: don't mark these as unobtainable here because they are obtainable from Big Zokk in Netherstorm.
 						a(i(77596)),	-- Replica Grand Marshal's Aegis
 						a(i(77563)),	-- Replica Grand Marshal's Battle Hammer
@@ -70,7 +70,7 @@ _.Zones =
 						h(i(77593)),	-- Replica High Warlord's Tome of Destruction
 						h(i(77592)),	-- Replica High Warlord's Tome of Mending
 						h(i(77581)),	-- Replica High Warlord's War Staff
-					},
+					}),
 				}),
 				n(80765, {	-- Wixxa the Sapper <Explosives>
 					["coord"] = { 71.6, 30.2, TALADOR },
