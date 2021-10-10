@@ -590,7 +590,7 @@ _.PVP =
 							q(7141,  {	-- The Battle of Alterac
 								["provider"] = { "n", 13816 },	-- Prospecter Stonehewer
 								["races"] = ALLIANCE_ONLY,
-                                ["lvl"] = 51,
+								["lvl"] = 51,
 								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
 							q(56256, {	-- The Battle for Alterac (A)
