@@ -285,8 +285,7 @@ _.Zones =
 						}),
 						q(47709, {	-- The Great Gnomeregan Race
 							["provider"] = { "n", 124280 },	-- Mina Gleespanner
-							["coord"] = { 36.4, 36.4, 469 },
-							["races"] = { GNOME },
+							["coord"] = { 36.3, 36.5, 469 },
 						}),
 						q(27674, {	-- To the Surface
 							["sourceQuests"] = { 27635 },	-- Decontamination
