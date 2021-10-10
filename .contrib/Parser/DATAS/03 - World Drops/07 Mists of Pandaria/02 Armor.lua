@@ -6,7 +6,7 @@ _.WorldDrops =
 {
 	tier(MOP_TIER, {
 		n(-318, {	-- Armor
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(87450),	-- Hood of Alchemical Vapors
 				i(87451),	-- Helm of Elemental Binding
 				i(87452),	-- Zom's Misty Hood
@@ -26,7 +26,7 @@ _.WorldDrops =
 				i(82115),	-- Shamanic Amulet
 				i(87468),	-- Shiny Hozen Rock Holder
 			}),
-			n(-321, {	-- Shoulder
+			n(SHOULDER, {
 				i(87489),	-- Fletcher's Sharpening Shoulders
 				i(87490),	-- Orb-Bound Shoulders
 				i(87491),	-- Spaulders of Five Rings
@@ -35,7 +35,7 @@ _.WorldDrops =
 				i(87494),	-- Shoulderguards of Honest Labor
 				i(90576),	-- Spaulders of the Scorned
 			}),
-			n(-322, {	-- Back
+			n(BACK, {
 				i(82017),	-- Intricate Cloak
 				i(82061),	-- Gemmed Cloak
 				i(82116),	-- Shamanic Cloak
@@ -52,7 +52,7 @@ _.WorldDrops =
 				i(90586),	-- Dory's Pageantry
 				i(90589),	-- Dirl's Drafty Drape
 			}),
-			n(-323, {	-- Chest
+			n(CHEST, {
 				i(87424),	-- Cryptwarden's Breastplate
 				i(87425),	-- Chestguard of the Solicitious Pandaren
 				i(87426),	-- Deathspite Breastplate
@@ -62,14 +62,14 @@ _.WorldDrops =
 				i(90585),	-- Vulajin's Vicious Breastplate
 				i(90587),	-- Natli's Fireheart Robe
 			}),
-			n(-326, {	-- Wrist
+			n(WRIST, {
 				i(87517),	-- Bracers of Rolling Fields
 				i(87518),	-- Bracers of the Neux Dawn
 				i(87519),	-- Misty Morning Wristguards
 				i(87520),	-- Glowing Wind Bracers
 				i(87521),	-- Zoid's Scorched Bracers
 			}),
-			n(-327, {	-- Hands
+			n(HANDS, {
 				i(87443),	-- Syrio's Gloves of Tutelage
 				i(87444),	-- Wind-Kissed Handwraps
 				i(87445),	-- Gauntlets of Blurring Fingers
@@ -80,7 +80,7 @@ _.WorldDrops =
 				i(90574),	-- Etoshia's Elegant Gloves
 				i(90588),	-- Rittsyn's Ruinblasters
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				i(87501),	-- Unbreakable Waistplate
 				i(87502),	-- Repression Belt
 				i(87503),	-- Repin's Ammo-Laden Belt
@@ -89,7 +89,7 @@ _.WorldDrops =
 				i(87506),	-- Cheng's Irrepressible Girdle
 				i(87507),	-- Melador's Mercurial Wrap
 			}),
-			n(-329, {	-- Legs
+			n(LEGS, {
 				i(87459),	-- Dills' Primal Leggings
 				i(87460),	-- Legplates of the Wandering Warrior
 				i(87461),	-- Greatheart Pants
@@ -100,7 +100,7 @@ _.WorldDrops =
 				i(90572),	-- Kilt of Pandaren Promises
 				i(90579),	-- Legplates of Durable Dreams
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(87432),	-- Tesslah's Ticking Treads
 				i(87433),	-- Blackfooted Greatboots
 				i(87434),	-- Sandals of Sympathetic Healing

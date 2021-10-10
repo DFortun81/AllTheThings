@@ -20,7 +20,7 @@ _.Instances = { tier(WOD_TIER, {
 				e(1226,  {	-- Orebender Gor'ashan
 					["crs"] = { 76413 },	-- Orebender Gor'ashan
 					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 1, CLOAK},
+						{"sub", "common_wod_dungeon_drop", 1, BACK},
 						{"sub", "common_wod_dungeon_drop", 1, FEET},
 					},
 					["g"] = {
@@ -146,7 +146,7 @@ _.Instances = { tier(WOD_TIER, {
 				e(1226,   {	-- Orebender Gor'ashan
 					["crs"] = { 76413 },	-- Orebender Gor'ashan
 					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 2, CLOAK},
+						{"sub", "common_wod_dungeon_drop", 2, BACK},
 						{"sub", "common_wod_dungeon_drop", 2, FEET},
 					},
 					["g"] = {
@@ -223,7 +223,7 @@ _.Instances = { tier(WOD_TIER, {
 				e(1226,  {	-- Orebender Gor'ashan
 					["crs"] = { 76413 },	-- Orebender Gor'ashan
 					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, CLOAK},
+						{"sub", "common_wod_dungeon_drop", 23, BACK},
 						{"sub", "common_wod_dungeon_drop", 23, FEET},
 					},
 					["g"] = {

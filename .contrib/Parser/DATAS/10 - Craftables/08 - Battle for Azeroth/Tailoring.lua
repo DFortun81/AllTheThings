@@ -13,11 +13,11 @@ _.Craftables =
 				i(154695),	-- Deep Sea Bag
 				i(154696),	-- Embroidered Deep Sea Bag
 			}),
-			n(-323, {	-- Chest
+			n(CHEST, {
 				i(161977),	-- Tidespray Linen Robe [Alliance]
 				i(154685),	-- Tidespray Linen Robe [Horde]
 			}),
-			n(-322, {	-- Cloaks
+			n(BACK, {
 				i(161990),	-- Embroidered Deep Sea Cloak [Alliance]
 				i(154700),	-- Embroidered Deep Sea Cloak [Horde]
 				i(161998),	-- Honorable Combatant's Satin Cloak [Alliance]
@@ -31,7 +31,7 @@ _.Craftables =
 				i(170320),	-- Uncanny Combatant's Satin Cloak [Alliance]
 				i(170339),	-- Uncanny Combatant's Satin Cloak [Horde}
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(161993),	-- Honorable Combatant's Satin Boots [Alliance]
 				i(159912),	-- Honorable Combatant's Satin Boots [Horde]
 				i(167979),	-- Notorious Combatant's Satin Boots [Alliance]
@@ -43,7 +43,7 @@ _.Craftables =
 				i(170327),	-- Uncanny Combatant's Satin Boots [Alliance]
 				i(170337),	-- Uncanny Combatant's Satin Boots [Horde]
 			}),
-			n(-327, {	-- Hands
+			n(HANDS, {
 				i(168730),	-- Banded Seaweave Gloves [Alliance]
 				i(168736),	-- Banded Seaweave Gloves [Horde]
 				i(170458),	-- Eldritch Seaweave Gloves
@@ -88,11 +88,11 @@ _.Craftables =
 					i(171150),	-- Pattern: Maddening Seaweave Gloves
 				}),
 			}),
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(161980),	-- Tidespray Linen Hood [Alliance]
 				i(154688),	-- Tidespray Linen Hood [Horde]
 			}),
-			n(-329, {	-- Legs
+			n(LEGS, {
 				i(168733),	-- Banded Seaweave Breeches [Alliance]
 				i(168739),	-- Banded Seaweave Breeches [Horde]
 				i(170461),	-- Eldritch Seaweave Breeches
@@ -137,11 +137,11 @@ _.Craftables =
 					i(171148),	-- Pattern: Maddening Seaweave Breeches
 				}),
 			}),
-			n(-321, {	-- Shoulders
+			n(SHOULDER, {
 				i(161982),	-- Tidespray Linen Spaulders [Alliance]
 				i(154690),	-- Tidespray Linen Spaulders [Horde]
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				i(161996),	-- Honorable Combatant's Satin Belt [Alliance]
 				i(159915),	-- Honorable Combatant's Satin Belt [Horde]
 				i(167977),	-- Notorious Combatant's Satin Belt [Alliance]
@@ -153,7 +153,7 @@ _.Craftables =
 				i(170324),	-- Uncanny Combatant's Satin Belt [Alliance]
 				i(170332),	-- Uncanny Combatant's Satin Belt [Horde]
 			}),
-			n(-326, {	-- Wrist
+			n(WRIST, {
 				i(161997),	-- Honorable Combatant's Satin Bracers [Alliance]
 				i(159916),	-- Honorable Combatant's Satin Bracers [Horde]
 				i(167981),	-- Notorious Combatant's Satin Bracers [Alliance]

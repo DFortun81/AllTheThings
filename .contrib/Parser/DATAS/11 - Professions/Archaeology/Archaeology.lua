@@ -1361,7 +1361,7 @@ profession(ARCHAEOLOGY, {
 			i(114183),	-- Stone Manacles
 			i(114181),	-- Stonemaul Succession Stone
 		}),
-		n(-384, {	-- Neck
+		n(NECK, {
 			i(117385),	-- Sorcerer-King Toe Ring
 		}),
 		n(QUESTS, {
@@ -1648,7 +1648,7 @@ profession(ARCHAEOLOGY, {
 		filter(BATTLE_PETS, {
 			i(60847),	-- Crawling Claw
 		}),
-		n(-385,   {	-- Finger
+		n(FINGER, {
 			i(64904),	-- Ring of the Boy Emperor
 		}),
 		f(50,     {	-- Miscellaneous

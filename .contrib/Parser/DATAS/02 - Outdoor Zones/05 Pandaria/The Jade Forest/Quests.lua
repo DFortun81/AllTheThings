@@ -1833,7 +1833,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(81020),	-- Landfall Warboots
 				i(81021),	-- Landfall Plate Boots
 			}),
-			n(-322, {	-- Cloaks
+			n(BACK, {
 				i(80965),	-- Scavenger's Cape
 				i(80966),	-- Scavenger's Drape
 				i(80967),	-- Scavenger's Shawl

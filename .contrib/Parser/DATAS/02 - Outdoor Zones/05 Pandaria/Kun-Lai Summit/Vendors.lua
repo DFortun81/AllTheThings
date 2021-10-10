@@ -678,7 +678,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(102902, {	-- Grievous Gladiator's Cape of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -701,7 +701,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(102821, {	-- Grievous Gladiator's Armbands of Meditation
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -748,7 +748,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(102891, {	-- Grievous Gladiator's Belt of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -795,7 +795,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(102913, {	-- Grievous Gladiator's Boots of Alacrity
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
@@ -1672,7 +1672,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(91453, {	-- Malevolent Gladiator's Cape of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -1695,7 +1695,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(91710, {	-- Malevolent Gladiator's Armbands of Meditation
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -1742,7 +1742,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(91537, {	-- Malevolent Gladiator's Belt of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -1789,7 +1789,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(91597, {	-- Malevolent Gladiator's Boots of Alacrity
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
@@ -2273,7 +2273,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(84345, {	-- Dreadful Gladiator's Cape of Cruelty
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2296,7 +2296,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(84471, {	-- Dreadful  Gladiator's Armbands of Meditation
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2343,7 +2343,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(84390, {	-- Dreadful Gladiator's Belt of Cruelty
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2390,7 +2390,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(84459, {	-- Dreadful Gladiator's Boots of Alacrity
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -3100,7 +3100,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(100091, {	-- Tyrannical Gladiator's Cape of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -3123,7 +3123,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(100004, {	-- Tyrannical Gladiator's Armbands of Meditation
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -3170,7 +3170,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(100080, {	-- Tyrannical Gladiator's Belt of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
@@ -3217,7 +3217,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(100102, {	-- Tyrannical Gladiator's Boots of Alacrity
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
@@ -3774,7 +3774,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							-- From Celestials/Vendor
 							i(103343, {	-- Prideful Gladiator's Cape of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -3798,7 +3798,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							-- From Celestials/Vendor
 							i(103484, {	-- Prideful Gladiator's Armbands of Meditation
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -3846,7 +3846,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							-- From Celestials/Vendor
 							i(103395, {	-- Prideful Gladiator's Belt of Cruelty
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -3898,7 +3898,7 @@ _.Zones =
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							-- From Celestials/Vendor
 							i(103427, {	-- Prideful Gladiator's Boots of Alacrity
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor

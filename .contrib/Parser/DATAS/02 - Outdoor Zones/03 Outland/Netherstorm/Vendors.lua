@@ -599,7 +599,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(41591, {	-- Sergeant's Reinforced Cape
 								["cost"] = { { "i", 137642, 2 } },	-- 1x Mark of Honor
 							}),
@@ -613,7 +613,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 2 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(35166, {	-- Guardian's Chain Bracers
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -660,7 +660,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(35151, {	-- Guardian's Chain Girdle
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -707,7 +707,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(35136, {	-- Guardian's Chain Sabatons
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -1511,7 +1511,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(32809, {	-- Veteran's Chain Bracers
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -1561,7 +1561,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(32797, {	-- Veteran's Chain Girdle
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -1611,7 +1611,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(32785, {	-- Veteran's Chain Sabatons
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2197,7 +2197,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(28451, {	-- General's Chain Bracers
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2295,7 +2295,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(28450, {	-- General's Chain Girdle
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2393,7 +2393,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(28449, {	-- General's Chain Sabatons
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2494,7 +2494,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(28379, {	-- Sergeant's Heavy Cape (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -3013,7 +3013,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(33876, {	-- Vindicator's Chain Bracers
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -3063,7 +3063,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(33877, {	-- Vindicator's Chain Girdle
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -3110,7 +3110,7 @@ _.Zones =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(33878, {	-- Vindicator's Chain Sabatons
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),

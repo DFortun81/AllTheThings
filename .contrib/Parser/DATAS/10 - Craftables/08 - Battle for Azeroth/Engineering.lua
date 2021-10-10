@@ -43,7 +43,7 @@ _.Craftables =
 				i(170314),	-- Uncanny Combatant's Stormsteel Destroyer [Alliance]
 				i(170315),	-- Uncanny Combatant's Stormsteel Destroyer [Horde]
 			}),
-			n(-320,	{		-- Head
+			n(HEAD, {
 				filter(4, {	-- Cloth
 					i(168689, {	-- Abyssal Synthetic Specs
 						i(168763),	-- Schematic: A5C-3N-D3D Synthetic Specs

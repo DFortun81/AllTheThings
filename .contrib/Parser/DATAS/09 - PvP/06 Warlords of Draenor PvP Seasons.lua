@@ -95,36 +95,36 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(115266)), -- Primal Aspirant's Plate Legguards (A)
 							un(REMOVED_FROM_GAME, i(115267)), -- Primal Aspirant's Plate Shoulders (A)
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							un(REMOVED_FROM_GAME, i(115268)), -- Primal Aspirant's Cape of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115269)), -- Primal Aspirant's Drape of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115270)), -- Primal Aspirant's Drape of Meditation (A)
 							un(REMOVED_FROM_GAME, i(115271)), -- Primal Aspirant's Cloak of Cruelty (A)
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							un(REMOVED_FROM_GAME, i(115196)), -- Primal Aspirant's Cuffs of Prowess (A)
 							un(REMOVED_FROM_GAME, i(115219)), -- Primal Aspirant's Bindings of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115227)), -- Primal Aspirant's Armbands of Prowess (A)
 							un(REMOVED_FROM_GAME, i(115240)), -- Primal Aspirant's Armplates of Cruelty (A)
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							un(REMOVED_FROM_GAME, i(115194)), -- Primal Aspirant's Cord of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115217)), -- Primal Aspirant's Belt of Prowess (A)
 							un(REMOVED_FROM_GAME, i(115225)), -- Primal Aspirant's Waistguard of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115238)), -- Primal Aspirant's Girdle of Cruelty (A)
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							un(REMOVED_FROM_GAME, i(115195)), -- Primal Aspirant's Treads of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115218)), -- Primal Aspirant's Boots of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115226)), -- Primal Aspirant's Footguards of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115239)), -- Primal Aspirant's Warboots of Cruelty (A)
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(115191)), -- Primal Aspirant's Necklace of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115212)), -- Primal Aspirant's Pendant of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115256)), -- Primal Aspirant's Choker of Cruelty (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(115192)), -- Primal Aspirant's Ring of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115193)), -- Primal Aspirant's Ring of Prowess (A)
 							un(REMOVED_FROM_GAME, i(115213)), -- Primal Aspirant's Band of Cruelty (A)
@@ -547,7 +547,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(115039, {	-- Primal Combatant's Hood of Prowess (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -561,7 +561,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(115042, {	-- Primal Combatant's Amice of Prowess (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -575,7 +575,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(115183, {	-- Primal Combatant's Cape of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -601,7 +601,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(115041, {	-- Primal Combatant's Robes of Prowess (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -615,7 +615,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(115048, {	-- Primal Combatant's Cuffs of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -641,7 +641,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(115038, {	-- Primal Combatant's Gloves of Prowess (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -655,7 +655,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(115043, {	-- Primal Combatant's Cord of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -681,7 +681,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(115040, {	-- Primal Combatant's Leggings of Prowess (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -695,7 +695,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(115045, {	-- Primal Combatant's Treads of Cruelty (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -721,7 +721,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(115139)),	-- Primal Combatant's Choker of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115140)),	-- Primal Combatant's Choker of Prowess (A)
 							un(REMOVED_FROM_GAME, i(115034)),	-- Primal Combatant's Necklace of Cruelty (A)
@@ -731,7 +731,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(115073)),	-- Primal Combatant's Pendant of Meditation (A)
 							un(REMOVED_FROM_GAME, i(115072)),	-- Primal Combatant's Pendant of Prowess (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(115081)),	-- Primal Combatant's Band of Contemplation (A)
 							un(REMOVED_FROM_GAME, i(115077)),	-- Primal Combatant's Band of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115080)),	-- Primal Combatant's Band of Meditation (A)
@@ -1176,7 +1176,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(115743, {	-- Primal Gladiator's Plate Visor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -1202,7 +1202,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(115614, {	-- Primal Gladiator's Amice of Prowess
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -1228,7 +1228,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(115613, {	-- Primal Gladiator's Robes of Prowess
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -1254,7 +1254,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(115742, {	-- Primal Gladiator's Plate Grips
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -1280,7 +1280,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(115612, {	-- Primal Gladiator's Leggings of Prowess
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -1306,7 +1306,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(115651, {	-- Primal Gladiator's Drape of Cruelty
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -1335,7 +1335,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(115626, {	-- Primal Gladiator's Cuffs of Prowess
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -1373,7 +1373,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(115682, {	-- Primal Gladiator's Waistguard of Cruelty
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -1411,7 +1411,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(115623, {	-- Primal Gladiator's Treads of Cruelty
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -1449,7 +1449,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(115606)),	-- Primal Gladiator's Necklace of Cruelty
 							un(REMOVED_FROM_GAME, i(115607)),	-- Primal Gladiator's Necklace of Prowess
 							un(REMOVED_FROM_GAME, i(115655)),	-- Primal Gladiator's Pendant of Cruelty
@@ -1460,7 +1460,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(115735)),	-- Primal Gladiator's Choker of Prowess
 							un(REMOVED_FROM_GAME, i(120108)),	-- Primal Gladiator's Choker of Endurance
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(115772)),	-- Primal Gladiator's Signet of Ruthlessness
 							un(REMOVED_FROM_GAME, i(115771)),	-- Primal Gladiator's Ring of Triumph
 							un(REMOVED_FROM_GAME, i(115747)),	-- Primal Gladiator's Signet of Accuracy
@@ -1574,36 +1574,36 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(120043)), -- Primal Aspirant's Plate Legguards (H)
 							un(REMOVED_FROM_GAME, i(120044)), -- Primal Aspirant's Plate Shoulders (H)
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							un(REMOVED_FROM_GAME, i(120045)), -- Primal Aspirant's Cape of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(120046)), -- Primal Aspirant's Drape of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(120047)), -- Primal Aspirant's Drape of Meditation (H)
 							un(REMOVED_FROM_GAME, i(120048)), -- Primal Aspirant's Cloak of Cruelty (H)
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							un(REMOVED_FROM_GAME, i(119973)), -- Primal Aspirant's Cuffs of Prowess (H)
 							un(REMOVED_FROM_GAME, i(119996)), -- Primal Aspirant's Bindings of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(120004)), -- Primal Aspirant's Armbands of Prowess (H)
 							un(REMOVED_FROM_GAME, i(120017)), -- Primal Aspirant's Armplates of Cruelty (H)
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							un(REMOVED_FROM_GAME, i(119971)), -- Primal Aspirant's Cord of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119994)), -- Primal Aspirant's Belt of Prowess (H)
 							un(REMOVED_FROM_GAME, i(120002)), -- Primal Aspirant's Waistguard of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(120015)), -- Primal Aspirant's Girdle of Cruelty (H)
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							un(REMOVED_FROM_GAME, i(120003)), -- Primal Aspirant's Footguards of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119995)), -- Primal Aspirant's Boots of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(120016)), -- Primal Aspirant's Warboots of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119972)), -- Primal Aspirant's Treads of Cruelty (H)
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(119968)), -- Primal Aspirant's Necklace of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119989)), -- Primal Aspirant's Pendant of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(120033)), -- Primal Aspirant's Choker of Cruelty (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(119969)), -- Primal Aspirant's Ring of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119970)), -- Primal Aspirant's Ring of Prowess (H)
 							un(REMOVED_FROM_GAME, i(119990)), -- Primal Aspirant's Band of Cruelty (H)
@@ -2026,7 +2026,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(119829, {	-- Primal Combatant's Hood of Prowess (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2040,7 +2040,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(119832, {	-- Primal Combatant's Amice of Prowess (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2054,7 +2054,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(119960, {	-- Primal Combatant's Cape of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2080,7 +2080,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(119831, {	-- Primal Combatant's Robes of Prowess (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2094,7 +2094,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(119838, {	-- Primal Combatant's Cuffs of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2120,7 +2120,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(119828, {	-- Primal Combatant's Gloves of Prowess (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2134,7 +2134,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(119833, {	-- Primal Combatant's Cord of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2160,7 +2160,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(119830, {	-- Primal Combatant's Leggings of Prowess (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2174,7 +2174,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(119835, {	-- Primal Combatant's Treads of Cruelty (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2200,7 +2200,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(119916)),	-- Primal Combatant's Choker of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119917)),	-- Primal Combatant's Choker of Prowess (H)
 							un(REMOVED_FROM_GAME, i(119824)),	-- Primal Combatant's Necklace of Cruelty (H)
@@ -2210,7 +2210,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(119856)),	-- Primal Combatant's Pendant of Meditation (H)
 							un(REMOVED_FROM_GAME, i(119855)),	-- Primal Combatant's Pendant of Prowess (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(119864)),	-- Primal Combatant's Band of Contemplation (H)
 							un(REMOVED_FROM_GAME, i(119860)),	-- Primal Combatant's Band of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119863)),	-- Primal Combatant's Band of Meditation (H)
@@ -2655,7 +2655,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(111205, {	-- Primal Gladiator's Cloak of Cruelty
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2684,7 +2684,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(111216, {	-- Primal Gladiator's Plate Visor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2710,7 +2710,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(111218, {	-- Primal Gladiator's Plate Pauldrons
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2736,7 +2736,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(111214, {	-- Primal Gladiator's Plate Chestguard
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2762,7 +2762,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(111083, {	-- Primal Gladiator's Gloves of Prowess
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2788,7 +2788,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(111180, {	-- Primal Gladiator's Armplates of Cruelty
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2826,7 +2826,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(111141, {	-- Primal Gladiator's Belt of Prowess
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2864,7 +2864,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(111276, {	-- Primal Gladiator's Legguards
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2890,7 +2890,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(111144, {	-- Primal Gladiator's Boots of Cruelty
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2928,7 +2928,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(111079)),	-- Primal Gladiator's Necklace of Cruelty
 							un(REMOVED_FROM_GAME, i(111080)),	-- Primal Gladiator's Necklace of Prowess
 							un(REMOVED_FROM_GAME, i(111128)),	-- Primal Gladiator's Pendant of Cruelty
@@ -2939,7 +2939,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(111208)),	-- Primal Gladiator's Choker of Prowess
 							un(REMOVED_FROM_GAME, i(120107)),	-- Primal Gladiator's Choker of Endurance
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(111081)),	-- Primal Gladiator's Ring of Cruelty
 							un(REMOVED_FROM_GAME, i(111082)),	-- Primal Gladiator's Ring of Prowess
 							un(REMOVED_FROM_GAME, i(111134)),	-- Primal Gladiator's Band of Cruelty
@@ -3240,39 +3240,39 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125152)),	-- Wild Aspirant's Plate Legguards (A)
 							un(REMOVED_FROM_GAME, i(125153)),	-- Wild Aspirant's Plate Shoulders (A)
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							un(REMOVED_FROM_GAME, i(125063)),	-- Wild Aspirant's Cape of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125085)),	-- Wild Aspirant's Drape of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125086)),	-- Wild Aspirant's Drape of Meditation (A)
 							un(REMOVED_FROM_GAME, i(125132)),	-- Wild Aspirant's Cloak of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125135)),	-- Wild Aspirant's Cloak of Endurance (A)
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							un(REMOVED_FROM_GAME, i(125069)),	-- Wild Aspirant's Cuffs of Prowess (A)
 							un(REMOVED_FROM_GAME, i(125095)),	-- Wild Aspirant's Bindings of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125103)),	-- Wild Aspirant's Armbands of Prowess (A)
 							un(REMOVED_FROM_GAME, i(125116)),	-- Wild Aspirant's Armplates of Cruelty (A)
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							un(REMOVED_FROM_GAME, i(125067)),	-- Wild Aspirant's Cord of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125093)),	-- Wild Aspirant's Belt of Prowess (A)
 							un(REMOVED_FROM_GAME, i(125101)),	-- Wild Aspirant's Waistguard of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125114)),	-- Wild Aspirant's Girdle of Cruelty (A)
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							un(REMOVED_FROM_GAME, i(125068)),	-- Wild Aspirant's Treads of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125094)),	-- Wild Aspirant's Boots of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125102)),	-- Wild Aspirant's Footguards of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125115)),	-- Wild Aspirant's Warboots of Cruelty (A)
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(125087)),	-- Wild Aspirant's Pendant of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125064)),	-- Wild Aspirant's Necklace of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125136)),	-- Wild Aspirant's Choker of Endurance (A)
 							un(REMOVED_FROM_GAME, i(125133)),	-- Wild Aspirant's Choker of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125088)),	-- Wild Aspirant's Pendant of Meditation (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(125091)),	-- Wild Aspirant's Band of Meditation (A)
 							un(REMOVED_FROM_GAME, i(125090)),	-- Wild Aspirant's Band of Prowess (A)
 							un(REMOVED_FROM_GAME, i(125092)),	-- Wild Aspirant's Band of Contemplation (A)
@@ -3768,7 +3768,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(124895, {	-- Wild Combatant's Cape of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -3797,7 +3797,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(124907, {	-- Wild Combatant's Cuffs of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -3823,7 +3823,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(124902, {	-- Wild Combatant's Cord of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -3849,7 +3849,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(124904, {	-- Wild Combatant's Treads of Cruelty (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -3875,7 +3875,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(125024)),	-- Wild Combatant's Choker of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125050)),	-- Wild Combatant's Choker of Prowess (A)
 							un(REMOVED_FROM_GAME, i(125025)),	-- Wild Combatant's Choker of Endurance (A)
@@ -3886,7 +3886,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(124941)),	-- Wild Combatant's Pendant of Meditation (A)
 							un(REMOVED_FROM_GAME, i(124940)),	-- Wild Combatant's Pendant of Prowess (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(124949)),	-- Wild Combatant's Band of Contemplation (A)
 							un(REMOVED_FROM_GAME, i(124945)),	-- Wild Combatant's Band of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(124948)),	-- Wild Combatant's Band of Meditation (A)
@@ -4343,7 +4343,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(124702, {	-- Wild Gladiator's Hood of Prowess (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -4369,7 +4369,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(124705, {	-- Wild Gladiator's Amice of Prowess (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -4395,7 +4395,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(124685, {	-- Wild Gladiator's Cape of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -4424,7 +4424,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(124704, {	-- Wild Gladiator's Robes of Prowess (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -4450,7 +4450,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(124699, {	-- Wild Gladiator's Cuffs of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -4491,7 +4491,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(124701, {	-- Wild Gladiator's Gloves of Prowess (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -4517,7 +4517,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(124692, {	-- Wild Gladiator's Cord of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -4555,7 +4555,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(124703, {	-- Wild Gladiator's Leggings of Prowess (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -4581,7 +4581,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(124753, {	-- Wild Gladiator's Boots of Cruelty (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -4619,7 +4619,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(124846)),	-- Wild Gladiator's Choker of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(124847)),	-- Wild Gladiator's Choker of Prowess (A)
 							un(REMOVED_FROM_GAME, i(124853)),	-- Wild Gladiator's Choker of Endurance (A)
@@ -4630,7 +4630,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(124739)),	-- Wild Gladiator's Pendant of Meditation (A)
 							un(REMOVED_FROM_GAME, i(124738)),	-- Wild Gladiator's Pendant of Prowess (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(124747)),	-- Wild Gladiator's Band of Contemplation (A)
 							un(REMOVED_FROM_GAME, i(124743)),	-- Wild Gladiator's Band of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(124746)),	-- Wild Gladiator's Band of Meditation (A)
@@ -4745,39 +4745,39 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125629)),	-- Wild Aspirant's Plate Legguards (H)
 							un(REMOVED_FROM_GAME, i(125630)),	-- Wild Aspirant's Plate Shoulders (H)
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							un(REMOVED_FROM_GAME, i(125540)),	-- Wild Aspirant's Cape of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125562)),	-- Wild Aspirant's Drape of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125563)),	-- Wild Aspirant's Drape of Meditation (H)
 							un(REMOVED_FROM_GAME, i(125609)),	-- Wild Aspirant's Cloak of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125612)),	-- Wild Aspirant's Cloak of Endurance (H)
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							un(REMOVED_FROM_GAME, i(125546)),	-- Wild Aspirant's Cuffs of Prowess (H)
 							un(REMOVED_FROM_GAME, i(125572)),	-- Wild Aspirant's Bindings of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125580)),	-- Wild Aspirant's Armbands of Prowess (H)
 							un(REMOVED_FROM_GAME, i(125593)),	-- Wild Aspirant's Armplates of Cruelty (H)
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							un(REMOVED_FROM_GAME, i(125544)),	-- Wild Aspirant's Cord of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125570)),	-- Wild Aspirant's Belt of Prowess (H)
 							un(REMOVED_FROM_GAME, i(125578)),	-- Wild Aspirant's Waistguard of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125591)),	-- Wild Aspirant's Girdle of Cruelty (H)
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							un(REMOVED_FROM_GAME, i(125545)),	-- Wild Aspirant's Treads of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125571)),	-- Wild Aspirant's Boots of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125579)),	-- Wild Aspirant's Footguards of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125592)),	-- Wild Aspirant's Warboots of Cruelty (H)
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(125613)),	-- Wild Aspirant's Choker of Endurance (H)
 							un(REMOVED_FROM_GAME, i(125565)),	-- Wild Aspirant's Pendant of Meditation (H)
 							un(REMOVED_FROM_GAME, i(125610)),	-- Wild Aspirant's Choker of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125541)),	-- Wild Aspirant's Necklace of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125564)),	-- Wild Aspirant's Pendant of Cruelty (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(125615)),	-- Wild Aspirant's Signet of Endurance (H)
 							un(REMOVED_FROM_GAME, i(125614)),	-- Wild Aspirant's Signet of Dedication (H)
 							un(REMOVED_FROM_GAME, i(125611)),	-- Wild Aspirant's Signet of Cruelty (H)
@@ -5273,7 +5273,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(125372, {	-- Wild Combatant's Cape of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -5302,7 +5302,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(125384, {	-- Wild Combatant's Cuffs of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -5328,7 +5328,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(125379, {	-- Wild Combatant's Cord of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -5354,7 +5354,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(125381, {	-- Wild Combatant's Treads of Cruelty (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -5380,7 +5380,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(125501)),	-- Wild Combatant's Choker of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125502)),	-- Wild Combatant's Choker of Prowess (H)
 							un(REMOVED_FROM_GAME, i(125527)),	-- Wild Combatant's Choker of Endurance (H)
@@ -5391,7 +5391,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125418)),	-- Wild Combatant's Pendant of Meditation (H)
 							un(REMOVED_FROM_GAME, i(125417)),	-- Wild Combatant's Pendant of Prowess (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(125426)),	-- Wild Combatant's Band of Contemplation (H)
 							un(REMOVED_FROM_GAME, i(125422)),	-- Wild Combatant's Band of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125425)),	-- Wild Combatant's Band of Meditation (H)
@@ -5848,7 +5848,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(125181, {	-- Wild Gladiator's Hood of Prowess (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -5874,7 +5874,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(125184, {	-- Wild Gladiator's Amice of Prowess (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -5900,7 +5900,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(125164, {	-- Wild Gladiator's Cape of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -5929,7 +5929,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(125183, {	-- Wild Gladiator's Robes of Prowess (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -5955,7 +5955,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(125178, {	-- Wild Gladiator's Cuffs of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -5996,7 +5996,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(125180, {	-- Wild Gladiator's Gloves of Prowess (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -6022,7 +6022,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(125171, {	-- Wild Gladiator's Cord of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -6060,7 +6060,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(125182, {	-- Wild Gladiator's Leggings of Prowess (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -6086,7 +6086,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(125232, {	-- Wild Gladiator's Boots of Cruelty (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -6124,7 +6124,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(125325)),	-- Wild Gladiator's Choker of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125326)),	-- Wild Gladiator's Choker of Prowess (H)
 							un(REMOVED_FROM_GAME, i(125332)),	-- Wild Gladiator's Choker of Endurance (H)
@@ -6135,7 +6135,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125218)),	-- Wild Gladiator's Pendant of Meditation (H)
 							un(REMOVED_FROM_GAME, i(125217)),	-- Wild Gladiator's Pendant of Prowess (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(125226)),	-- Wild Gladiator's Band of Contemplation (H)
 							un(REMOVED_FROM_GAME, i(125222)),	-- Wild Gladiator's Band of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125225)),	-- Wild Gladiator's Band of Meditation (H)
@@ -6441,39 +6441,39 @@ _.PVP =
 							i(126266),	-- Warmongering Aspirant's Plate Legguards (A)
 							i(126267),	-- Warmongering Aspirant's Plate Shoulders (A)
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(126177),	-- Warmongering Aspirant's Cape of Cruelty (A)
 							i(126246),	-- Warmongering Aspirant's Cloak of Cruelty (A)
 							i(126249),	-- Warmongering Aspirant's Cloak of Endurance (A)
 							i(126199),	-- Warmongering Aspirant's Drape of Cruelty (A)
 							i(126200),	-- Warmongering Aspirant's Drape of Meditation (A)
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(126217),	-- Warmongering Aspirant's Armbands of Prowess (A)
 							i(126230),	-- Warmongering Aspirant's Armplates of Cruelty (A)
 							i(126209),	-- Warmongering Aspirant's Bindings of Cruelty (A)
 							i(126183),	-- Warmongering Aspirant's Cuffs of Prowess (A)
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(126207),	-- Warmongering Aspirant's Belt of Prowess (A)
 							i(126181),	-- Warmongering Aspirant's Cord of Cruelty (A)
 							i(126228),	-- Warmongering Aspirant's Girdle of Cruelty (A)
 							i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty (A)
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(126208),	-- Warmongering Aspirant's Boots of Cruelty (A)
 							i(126216),	-- Warmongering Aspirant's Footguards of Cruelty (A)
 							i(126182),	-- Warmongering Aspirant's Treads of Cruelty (A)
 							i(126229),	-- Warmongering Aspirant's Warboots of Cruelty (A)
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							i(126247),	-- Warmongering Aspirant's Choker of Cruelty (A)
 							i(126250),	-- Warmongering Aspirant's Choker of Endurance (A)
 							i(126178),	-- Warmongering Aspirant's Necklace of Cruelty (A)
 							i(126201),	-- Warmongering Aspirant's Pendant of Cruelty (A)
 							i(126202),	-- Warmongering Aspirant's Pendant of Meditation (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							i(126206),	-- Warmongering Aspirant's Band of Contemplation (A)
 							i(126203),	-- Warmongering Aspirant's Band of Cruelty (A)
 							i(126205),	-- Warmongering Aspirant's Band of Meditation (A)
@@ -6969,7 +6969,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(126009, {	-- Warmongering Combatant's Cape of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 5x Mark of Honor
 							}),
@@ -6998,7 +6998,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 5x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(126021, {	-- Warmongering Combatant's Cuffs of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -7024,7 +7024,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(126016, {	-- Warmongering Combatant's Cord of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -7050,7 +7050,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(126018, {	-- Warmongering Combatant's Treads of Cruelty (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -7076,7 +7076,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							i(126138),	-- Warmongering Combatant's Choker of Cruelty (A)
 							i(126164),	-- Warmongering Combatant's Choker of Endurance (A)
 							i(126139),	-- Warmongering Combatant's Choker of Prowess (A)
@@ -7087,7 +7087,7 @@ _.PVP =
 							i(126055),	-- Warmongering Combatant's Pendant of Meditation (A)
 							i(126054),	-- Warmongering Combatant's Pendant of Prowess (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							i(126063),	-- Warmongering Combatant's Band of Contemplation (A)
 							i(126059),	-- Warmongering Combatant's Band of Cruelty (A)
 							i(126062),	-- Warmongering Combatant's Band of Meditation (A)
@@ -7546,7 +7546,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(125821, {	-- Warmongering Gladiator's Cowl of Cruelty (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -7572,7 +7572,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(125819, {	-- Warmongering Gladiator's Amice of Prowess (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -7598,7 +7598,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(125799, {	-- Warmongering Gladiator's Cape of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -7627,7 +7627,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(125823, {	-- Warmongering Gladiator's Raiment of Cruelty (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -7653,7 +7653,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(125813, {	-- Warmongering Gladiator's Cuffs of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -7694,7 +7694,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(125815, {	-- Warmongering Gladiator's Gloves of Prowess (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -7720,7 +7720,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(125806, {	-- Warmongering Gladiator's Cord of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -7758,7 +7758,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(125817, {	-- Warmongering Gladiator's Leggings of Prowess (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -7784,7 +7784,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(125809, {	-- Warmongering Gladiator's Treads of Cruelty (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -7822,7 +7822,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							i(125960),	-- Warmongering Gladiator's Choker of Cruelty (A)
 							i(125967),	-- Warmongering Gladiator's Choker of Endurance (A)
 							i(125961),	-- Warmongering Gladiator's Choker of Prowess (A)
@@ -7833,7 +7833,7 @@ _.PVP =
 							i(125853),	-- Warmongering Gladiator's Pendant of Meditation (A)
 							i(125852),	-- Warmongering Gladiator's Pendant of Prowess (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							i(125861),	-- Warmongering Gladiator's Band of Contemplation (A)
 							i(125857),	-- Warmongering Gladiator's Band of Cruelty (A)
 							i(125860),	-- Warmongering Gladiator's Band of Meditation (A)
@@ -7953,39 +7953,39 @@ _.PVP =
 							i(126743),	-- Warmongering Aspirant's Plate Legguards (H)
 							i(126744),	-- Warmongering Aspirant's Plate Shoulders (H)
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(126654),	-- Warmongering Aspirant's Cape of Cruelty (H)
 							i(126723),	-- Warmongering Aspirant's Cloak of Cruelty (H)
 							i(126726),	-- Warmongering Aspirant's Cloak of Endurance (H)
 							i(126676),	-- Warmongering Aspirant's Drape of Cruelty (H)
 							i(126677),	-- Warmongering Aspirant's Drape of Meditation (H)
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(126694),	-- Warmongering Aspirant's Armbands of Prowess (H)
 							i(126707),	-- Warmongering Aspirant's Armplates of Cruelty (H)
 							i(126686),	-- Warmongering Aspirant's Bindings of Cruelty (H)
 							i(126660),	-- Warmongering Aspirant's Cuffs of Prowess (H)
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(126684),	-- Warmongering Aspirant's Belt of Prowess (H)
 							i(126658),	-- Warmongering Aspirant's Cord of Cruelty (H)
 							i(126705),	-- Warmongering Aspirant's Girdle of Cruelty (H)
 							i(126692),	-- Warmongering Aspirant's Waistguard of Cruelty (H)
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(126685),	-- Warmongering Aspirant's Boots of Cruelty (H)
 							i(126693),	-- Warmongering Aspirant's Footguards of Cruelty (H)
 							i(126659),	-- Warmongering Aspirant's Treads of Cruelty (H)
 							i(126706),	-- Warmongering Aspirant's Warboots of Cruelty (H)
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							i(126724),	-- Warmongering Aspirant's Choker of Cruelty (H)
 							i(126727),	-- Warmongering Aspirant's Choker of Endurance (H)
 							i(126655),	-- Warmongering Aspirant's Necklace of Cruelty (H)
 							i(126678),	-- Warmongering Aspirant's Pendant of Cruelty (H)
 							i(126679),	-- Warmongering Aspirant's Pendant of Meditation (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							i(126683),	-- Warmongering Aspirant's Band of Contemplation (H)
 							i(126680),	-- Warmongering Aspirant's Band of Cruelty (H)
 							i(126682),	-- Warmongering Aspirant's Band of Meditation (H)
@@ -8481,7 +8481,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(126486, {	-- Warmongering Combatant's Cape of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -8510,7 +8510,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(126498, {	-- Warmongering Combatant's Cuffs of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -8536,7 +8536,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(126493, {	-- Warmongering Combatant's Cord of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -8562,7 +8562,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(126495, {	-- Warmongering Combatant's Treads of Cruelty (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -8588,7 +8588,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							i(126615),	-- Warmongering Combatant's Choker of Cruelty (H)
 							i(126641),	-- Warmongering Combatant's Choker of Endurance (H)
 							i(126616),	-- Warmongering Combatant's Choker of Prowess (H)
@@ -8599,7 +8599,7 @@ _.PVP =
 							i(126532),	-- Warmongering Combatant's Pendant of Meditation (H)
 							i(126531),	-- Warmongering Combatant's Pendant of Prowess (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							i(126540),	-- Warmongering Combatant's Band of Contemplation (H)
 							i(126536),	-- Warmongering Combatant's Band of Cruelty (H)
 							i(126539),	-- Warmongering Combatant's Band of Meditation (H)
@@ -9058,7 +9058,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(126300, {	-- Warmongering Gladiator's Cowl of Cruelty (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -9084,7 +9084,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(126298, {	-- Warmongering Gladiator's Amice of Prowess (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -9110,7 +9110,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(126278, {	-- Warmongering Gladiator's Cape of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -9139,7 +9139,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(126302, {	-- Warmongering Gladiator's Raiment of Cruelty (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -9165,7 +9165,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(126292, {	-- Warmongering Gladiator's Cuffs of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -9206,7 +9206,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(126294, {	-- Warmongering Gladiator's Gloves of Prowess (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -9232,7 +9232,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(126285, {	-- Warmongering Gladiator's Cord of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -9270,7 +9270,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(126296, {	-- Warmongering Gladiator's Leggings of Prowess (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -9296,7 +9296,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(126288, {	-- Warmongering Gladiator's Treads of Cruelty (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -9334,7 +9334,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							i(126439),	-- Warmongering Gladiator's Choker of Cruelty (H)
 							i(126446),	-- Warmongering Gladiator's Choker of Endurance (H)
 							i(126440),	-- Warmongering Gladiator's Choker of Prowess (H)
@@ -9345,7 +9345,7 @@ _.PVP =
 							i(126332),	-- Warmongering Gladiator's Pendant of Meditation (H)
 							i(126331),	-- Warmongering Gladiator's Pendant of Prowess (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							i(126340),	-- Warmongering Gladiator's Band of Contemplation (H)
 							i(126336),	-- Warmongering Gladiator's Band of Cruelty (H)
 							i(126339),	-- Warmongering Gladiator's Band of Meditation (H)

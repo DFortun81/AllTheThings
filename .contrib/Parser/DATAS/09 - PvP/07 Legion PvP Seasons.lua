@@ -380,12 +380,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(135907)),	-- Vindictive Combatant Necklace (A)
 						un(REMOVED_FROM_GAME, i(135911)),	-- Vindictive Combatant Pendant (A)
 						un(REMOVED_FROM_GAME, i(135915)),	-- Vindictive Combatant Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(135912)),	-- Vindictive Combatant's Band (A)
 						un(REMOVED_FROM_GAME, i(135908)),	-- Vindictive Combatant's Ring (A)
 						un(REMOVED_FROM_GAME, i(135916)),	-- Vindictive Combatant's Signet (A)
@@ -779,12 +779,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(135681)),	-- Vindictive Gladiator's Necklace (A)
 						un(REMOVED_FROM_GAME, i(135685)),	-- Vindictive Gladiator's Pendant (A)
 						un(REMOVED_FROM_GAME, i(135689)),	-- Vindictive Gladiator's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(135686)),	-- Vindictive Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(135682)),	-- Vindictive Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(135690)),	-- Vindictive Gladiator's Signet (A)
@@ -1178,12 +1178,12 @@ _.PVP =
 							},
 						})),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(136133)),	-- Vindictive Gladiator's Necklace (A)
 						un(REMOVED_FROM_GAME, i(136137)),	-- Vindictive Gladiator's Pendant (A)
 						un(REMOVED_FROM_GAME, i(136141)),	-- Vindictive Gladiator's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(136138)),	-- Vindictive Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(136134)),	-- Vindictive Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(136142)),	-- Vindictive Gladiator's Signet (A)
@@ -1579,12 +1579,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(136020)),	-- Vindictive Combatant Necklace (H)
 						un(REMOVED_FROM_GAME, i(136024)),	-- Vindictive Combatant Pendant (H)
 						un(REMOVED_FROM_GAME, i(136028)),	-- Vindictive Combatant Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(136025)),	-- Vindictive Combatant's Band (H)
 						un(REMOVED_FROM_GAME, i(136021)),	-- Vindictive Combatant's Ring (H)
 						un(REMOVED_FROM_GAME, i(136029)),	-- Vindictive Combatant's Signet (H)
@@ -1978,12 +1978,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(135794)),	-- Vindictive Gladiator's Necklace (H)
 						un(REMOVED_FROM_GAME, i(135798)),	-- Vindictive Gladiator's Pendant (H)
 						un(REMOVED_FROM_GAME, i(135802)),	-- Vindictive Gladiator's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(135799)),	-- Vindictive Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(135795)),	-- Vindictive Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(135803)),	-- Vindictive Gladiator's Signet (H)
@@ -2378,12 +2378,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(136246)),	-- Vindictive Gladiator's Necklace (H)
 						un(REMOVED_FROM_GAME, i(136250)),	-- Vindictive Gladiator's Pendant (H)
 						un(REMOVED_FROM_GAME, i(136254)),	-- Vindictive Gladiator's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(136251)),	-- Vindictive Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(136247)),	-- Vindictive Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(136255)),	-- Vindictive Gladiator's Signet (H)
@@ -2541,12 +2541,12 @@ _.PVP =
 						i(142867),	-- Fearless Combatant's Plate Warboots (A)
 						i(142873),	-- Fearless Combatant's Plate Wristplates (A)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(142876)),	-- Fearless Combatant Necklace (A)
 						un(REMOVED_FROM_GAME, i(142880)),	-- Fearless Combatant Pendant (A)
 						un(REMOVED_FROM_GAME, i(142884)),	-- Fearless Combatant Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(142877)),	-- Fearless Combatant's Ring (A)
 						un(REMOVED_FROM_GAME, i(142881)),	-- Fearless Combatant's Band (A)
 						un(REMOVED_FROM_GAME, i(142885)),	-- Fearless Combatant's Signet (A)
@@ -2700,12 +2700,12 @@ _.PVP =
 						i(142641),	-- Fearless Gladiator's Plate Warboots (A)
 						i(142647),	-- Fearless Gladiator's Plate Wristplates (A)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(142650)),	-- Fearless Gladiator's Necklace (A)
 						un(REMOVED_FROM_GAME, i(142654)),	-- Fearless Gladiator's Pendant (A)
 						un(REMOVED_FROM_GAME, i(142658)),	-- Fearless Gladiator's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(142651)),	-- Fearless Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(142655)),	-- Fearless Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(142659)),	-- Fearless Gladiator's Signet (A)
@@ -2859,12 +2859,12 @@ _.PVP =
 						un(14, i(143093)),	-- Fearless Gladiator's Plate Warboots (A)
 						un(14, i(143099)),	-- Fearless Gladiator's Plate Wristplates (A)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(143102)),	-- Fearless Gladiator's Necklace (A)
 						un(REMOVED_FROM_GAME, i(143106)),	-- Fearless Gladiator's Pendant (A)
 						un(REMOVED_FROM_GAME, i(143110)),	-- Fearless Gladiator's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(143103)),	-- Fearless Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(143107)),	-- Fearless Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(143111)),	-- Fearless Gladiator's Signet (A)
@@ -3020,12 +3020,12 @@ _.PVP =
 						i(142980),	-- Fearless Combatant's Plate Warboots (H)
 						i(142986),	-- Fearless Combatant's Plate Wristplates (H)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(142989)),	-- Fearless Combatant Necklace (H)
 						un(REMOVED_FROM_GAME, i(142993)),	-- Fearless Combatant Pendant (H)
 						un(REMOVED_FROM_GAME, i(142997)),	-- Fearless Combatant Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(142990)),	-- Fearless Combatant's Ring (H)
 						un(REMOVED_FROM_GAME, i(142994)),	-- Fearless Combatant's Band (H)
 						un(REMOVED_FROM_GAME, i(142998)),	-- Fearless Combatant's Signet (H)
@@ -3179,12 +3179,12 @@ _.PVP =
 						i(142754),	-- Fearless Gladiator's Plate Warboots (H)
 						i(142760),	-- Fearless Gladiator's Plate Wristplates (H)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(142763)),	-- Fearless Gladiator's Necklace (H)
 						un(REMOVED_FROM_GAME, i(142767)),	-- Fearless Gladiator's Pendant (H)
 						un(REMOVED_FROM_GAME, i(142771)),	-- Fearless Gladiator's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(142764)),	-- Fearless Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(142768)),	-- Fearless Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(142772)),	-- Fearless Gladiator's Signet (H)
@@ -3338,12 +3338,12 @@ _.PVP =
 						un(14, i(143206)),	-- Fearless Gladiator's Plate Warboots (H)
 						un(14, i(143212)),	-- Fearless Gladiator's Plate Wristplates (H)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(143215)),	-- Fearless Gladiator's Necklace (H)
 						un(REMOVED_FROM_GAME, i(143219)),	-- Fearless Gladiator's Pendant (H)
 						un(REMOVED_FROM_GAME, i(143223)),	-- Fearless Gladiator's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(143216)),	-- Fearless Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(143220)),	-- Fearless Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(143224)),	-- Fearless Gladiator's Signet (H)
@@ -3741,12 +3741,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(145146)),	-- Cruel Combatant Necklace (A)
 						un(REMOVED_FROM_GAME, i(145148)),	-- Cruel Combatant Pendant (A)
 						un(REMOVED_FROM_GAME, i(145150)),	-- Cruel Combatant Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(145184)),	-- Cruel Combatant's Ring (A)
 						un(REMOVED_FROM_GAME, i(145186)),	-- Cruel Combatant's Band (A)
 						un(REMOVED_FROM_GAME, i(145188)),	-- Cruel Combatant's Signet (A)
@@ -4168,12 +4168,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(144654)),	-- Cruel Gladiator's Necklace (A)
 						un(REMOVED_FROM_GAME, i(144656)),	-- Cruel Gladiator's Pendant (A)
 						un(REMOVED_FROM_GAME, i(144658)),	-- Cruel Gladiator's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(144692)),	-- Cruel Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(144694)),	-- Cruel Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(144696)),	-- Cruel Gladiator's Signet (A)
@@ -4565,12 +4565,12 @@ _.PVP =
 							},
 						})),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(144900)),	-- Cruel Gladiator's Necklace (A)
 						un(REMOVED_FROM_GAME, i(144902)),	-- Cruel Gladiator's Pendant (A)
 						un(REMOVED_FROM_GAME, i(144904)),	-- Cruel Gladiator's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(144938)),	-- Cruel Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(144940)),	-- Cruel Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(144942)),	-- Cruel Gladiator's Signet (A)
@@ -4962,12 +4962,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(145147)),	-- Cruel Combatant Necklace (H)
 						un(REMOVED_FROM_GAME, i(145149)),	-- Cruel Combatant Pendant (H)
 						un(REMOVED_FROM_GAME, i(145151)),	-- Cruel Combatant Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(145185)),	-- Cruel Combatant's Ring (H)
 						un(REMOVED_FROM_GAME, i(145187)),	-- Cruel Combatant's Band (H)
 						un(REMOVED_FROM_GAME, i(145189)),	-- Cruel Combatant's Signet (H)
@@ -5389,12 +5389,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(144655)),	-- Cruel Gladiator's Necklace (H)
 						un(REMOVED_FROM_GAME, i(144657)),	-- Cruel Gladiator's Pendant (H)
 						un(REMOVED_FROM_GAME, i(144659)),	-- Cruel Gladiator's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(144693)),	-- Cruel Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(144695)),	-- Cruel Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(144697)),	-- Cruel Gladiator's Signet (H)
@@ -5786,12 +5786,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(144901)),	-- Cruel Gladiator's Necklace (H)
 						un(REMOVED_FROM_GAME, i(144903)),	-- Cruel Gladiator's Pendant (H)
 						un(REMOVED_FROM_GAME, i(144905)),	-- Cruel Gladiator's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(144939)),	-- Cruel Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(144941)),	-- Cruel Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(144943)),	-- Cruel Gladiator's Signet (H)
@@ -5945,12 +5945,12 @@ _.PVP =
 						i(146100),	-- Ferocious Combatant's Plate Warboots (A)
 						i(146112),	-- Ferocious Combatant's Plate Wristplates (A)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(145988)),	-- Ferocious Combatant Necklace (A)
 						un(REMOVED_FROM_GAME, i(145990)),	-- Ferocious Combatant Pendant (A)
 						un(REMOVED_FROM_GAME, i(145992)),	-- Ferocious Combatant Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(146026)), -- Ferocious Combatant's Ring (A)
 						un(REMOVED_FROM_GAME, i(146028)), -- Ferocious Combatant's Band (A)
 						un(REMOVED_FROM_GAME, i(146030)), -- Ferocious Combatant's Signet (A)
@@ -6132,12 +6132,12 @@ _.PVP =
 						i(145608),	-- Ferocious Gladiator's Plate Warboots (A)
 						i(145620),	-- Ferocious Gladiator's Plate Wristplates (A)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(145496)),	-- Ferocious Gladiator's Necklace (A)
 						un(REMOVED_FROM_GAME, i(145498)),	-- Ferocious Gladiator's Pendant (A)
 						un(REMOVED_FROM_GAME, i(145500)),	-- Ferocious Gladiator's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(145534)), -- Ferocious Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(145536)), -- Ferocious Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(145538)), -- Ferocious Gladiator's Signet (A)
@@ -6321,12 +6321,12 @@ _.PVP =
 						un(14, i(145854)),	-- Ferocious Gladiator's Plate Warboots (A)
 						un(14, i(145866)),	-- Ferocious Gladiator's Plate Wristplates (A)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(145742)),	-- Ferocious Gladiator's Necklace (A)
 						un(REMOVED_FROM_GAME, i(145744)),	-- Ferocious Gladiator's Pendant (A)
 						un(REMOVED_FROM_GAME, i(145746)),	-- Ferocious Gladiator's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(145780)), -- Ferocious Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(145782)), -- Ferocious Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(145784)), -- Ferocious Gladiator's Signet (A)
@@ -6478,12 +6478,12 @@ _.PVP =
 						i(146101),	-- Ferocious Combatant's Plate Warboots (H)
 						i(146113),	-- Ferocious Combatant's Plate Wristplates (H)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(145989)),	-- Ferocious Combatant Necklace (H)
 						un(REMOVED_FROM_GAME, i(145991)),	-- Ferocious Combatant Pendant (H)
 						un(REMOVED_FROM_GAME, i(145993)),	-- Ferocious Combatant Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(146027)), -- Ferocious Combatant's Ring (H)
 						un(REMOVED_FROM_GAME, i(146029)), -- Ferocious Combatant's Band (H)
 						un(REMOVED_FROM_GAME, i(146031)), -- Ferocious Combatant's Signet (H)
@@ -6665,12 +6665,12 @@ _.PVP =
 						i(145609),	-- Ferocious Gladiator's Plate Warboots (H)
 						i(145621),	-- Ferocious Gladiator's Plate Wristplates (H)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(145497)),	-- Ferocious Gladiator's Necklace (H)
 						un(REMOVED_FROM_GAME, i(145499)),	-- Ferocious Gladiator's Pendant (H)
 						un(REMOVED_FROM_GAME, i(145501)),	-- Ferocious Gladiator's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(145535)), -- Ferocious Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(145537)), -- Ferocious Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(145539)), -- Ferocious Gladiator's Signet (H)
@@ -6854,12 +6854,12 @@ _.PVP =
 						un(14, i(145855)),	-- Ferocious Gladiator's Plate Warboots (H)
 						un(14, i(145867)),	-- Ferocious Gladiator's Plate Wristplates (H)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(145743)),	-- Ferocious Gladiator's Necklace (H)
 						un(REMOVED_FROM_GAME, i(145745)),	-- Ferocious Gladiator's Pendant (H)
 						un(REMOVED_FROM_GAME, i(145747)),	-- Ferocious Gladiator's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(145781)), -- Ferocious Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(145783)), -- Ferocious Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(145785)), -- Ferocious Gladiator's Signet (H)
@@ -7373,12 +7373,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(149626)),	-- Fierce Combatant Necklace (A)
 						un(REMOVED_FROM_GAME, i(149628)),	-- Fierce Combatant Pendant (A)
 						un(REMOVED_FROM_GAME, i(149630)),	-- Fierce Combatant Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(149664)), -- Fierce Combatant's Ring (A)
 						un(REMOVED_FROM_GAME, i(149666)), -- Fierce Combatant's Band (A)
 						un(REMOVED_FROM_GAME, i(149668)), -- Fierce Combatant's Signet (A)
@@ -7920,12 +7920,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(148029)),	-- Fierce Gladiator's Necklace (A)
 						un(REMOVED_FROM_GAME, i(148031)),	-- Fierce Gladiator's Pendant (A)
 						un(REMOVED_FROM_GAME, i(148033)),	-- Fierce Gladiator's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(148067)), -- Fierce Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(148069)), -- Fierce Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(148071)), -- Fierce Gladiator's Signet (A)
@@ -8437,12 +8437,12 @@ _.PVP =
 							},
 						})),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(148275)),	-- Fierce Gladiator's Necklace (A)
 						un(REMOVED_FROM_GAME, i(148277)),	-- Fierce Gladiator's Pendant (A)
 						un(REMOVED_FROM_GAME, i(148279)),	-- Fierce Gladiator's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(148313)), -- Fierce Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(148315)), -- Fierce Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(148317)), -- Fierce Gladiator's Signet (A)
@@ -8954,12 +8954,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(149627)),	-- Fierce Combatant Necklace (H)
 						un(REMOVED_FROM_GAME, i(149629)),	-- Fierce Combatant Pendant (H)
 						un(REMOVED_FROM_GAME, i(149631)),	-- Fierce Combatant Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(149665)), -- Fierce Combatant's Ring (H)
 						un(REMOVED_FROM_GAME, i(149667)), -- Fierce Combatant's Band (H)
 						un(REMOVED_FROM_GAME, i(149669)), -- Fierce Combatant's Signet (H)
@@ -9501,12 +9501,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(148030)),	-- Fierce Gladiator's Necklace (H)
 						un(REMOVED_FROM_GAME, i(148032)),	-- Fierce Gladiator's Pendant (H)
 						un(REMOVED_FROM_GAME, i(148034)),	-- Fierce Gladiator's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(148068)), -- Fierce Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(148070)), -- Fierce Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(148072)), -- Fierce Gladiator's Signet (H)
@@ -10018,12 +10018,12 @@ _.PVP =
 							},
 						}),
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(148276)),	-- Fierce Gladiator's Necklace (H)
 						un(REMOVED_FROM_GAME, i(148278)),	-- Fierce Gladiator's Pendant (H)
 						un(REMOVED_FROM_GAME, i(148280)),	-- Fierce Gladiator's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(148314)), -- Fierce Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(148316)), -- Fierce Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(148318)), -- Fierce Gladiator's Signet (H)
@@ -10177,12 +10177,12 @@ _.PVP =
 						i(150000),	-- Dominant Combatant's Plate Wristplates (A)
 						i(149778),	-- Dominant Combatant's Cloak of Battle (A)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(149876)), -- Dominant Combatant's Necklace (A)
 						un(REMOVED_FROM_GAME, i(149878)), -- Dominant Combatant's Pendant (A)
 						un(REMOVED_FROM_GAME, i(149880)), -- Dominant Combatant's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(149914)), -- Dominant Combatant's Ring (A)
 						un(REMOVED_FROM_GAME, i(149916)), -- Dominant Combatant's Band (A)
 						un(REMOVED_FROM_GAME, i(149918)), -- Dominant Combatant's Signet (A)
@@ -10364,12 +10364,12 @@ _.PVP =
 						i(148634),	-- Dominant Gladiator's Plate Warboots (A)
 						i(148646),	-- Dominant Gladiator's Plate Wristplates (A)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(148522)), -- Dominant Gladiator's Necklace (A)
 						un(REMOVED_FROM_GAME, i(148524)), -- Dominant Gladiator's Pendant (A)
 						un(REMOVED_FROM_GAME, i(148526)), -- Dominant Gladiator's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(148560)), -- Dominant Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(148562)), -- Dominant Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(148564)), -- Dominant Gladiator's Signet (A)
@@ -10553,12 +10553,12 @@ _.PVP =
 						un(14, i(148880)),	-- Dominant Gladiator's Plate Warboots (A)
 						un(14, i(148892)),	-- Dominant Gladiator's Plate Wristplates (A)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(148768)), -- Dominant Gladiator's Necklace (A)
 						un(REMOVED_FROM_GAME, i(148770)), -- Dominant Gladiator's Pendant (A)
 						un(REMOVED_FROM_GAME, i(148772)), -- Dominant Gladiator's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(148806)), -- Dominant Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(148808)), -- Dominant Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(148810)), -- Dominant Gladiator's Signet (A)
@@ -10742,12 +10742,12 @@ _.PVP =
 						i(149989),	-- Dominant Combatant's Plate Warboots (H)
 						i(150001),	-- Dominant Combatant's Plate Wristplates (H)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(149877)), -- Dominant Combatant's Necklace (H)
 						un(REMOVED_FROM_GAME, i(149879)), -- Dominant Combatant's Pendant (H)
 						un(REMOVED_FROM_GAME, i(149881)), -- Dominant Combatant's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(149915)), -- Dominant Combatant's Ring (H)
 						un(REMOVED_FROM_GAME, i(149917)), -- Dominant Combatant's Band (H)
 						un(REMOVED_FROM_GAME, i(149919)), -- Dominant Combatant's Signet (H)
@@ -10929,12 +10929,12 @@ _.PVP =
 						i(148635),	-- Dominant Gladiator's Plate Warboots (H)
 						i(148647),	-- Dominant Gladiator's Plate Wristplates (H)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(148523)), -- Dominant Gladiator's Necklace (H)
 						un(REMOVED_FROM_GAME, i(148525)), -- Dominant Gladiator's Pendant (H)
 						un(REMOVED_FROM_GAME, i(148527)), -- Dominant Gladiator's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(148561)), -- Dominant Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(148563)), -- Dominant Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(148565)), -- Dominant Gladiator's Signet (H)
@@ -11118,12 +11118,12 @@ _.PVP =
 						un(14, i(148881)),	-- Dominant Gladiator's Plate Warboots (H)
 						un(14, i(148893)),	-- Dominant Gladiator's Plate Wristplates (H)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(148769)), -- Dominant Gladiator's Necklace (H)
 						un(REMOVED_FROM_GAME, i(148771)), -- Dominant Gladiator's Pendant (H)
 						un(REMOVED_FROM_GAME, i(148773)), -- Dominant Gladiator's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(148807)), -- Dominant Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(148809)), -- Dominant Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(148811)), -- Dominant Gladiator's Signet (H)
@@ -11309,12 +11309,12 @@ _.PVP =
 						i(150234),	-- Demonic Combatant's Plate Warboots (A)
 						i(150246),	-- Demonic Combatant's Plate Wristplates (A)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						i(150122),	-- Demonic Combatant's Necklace (A)
 						i(150124),	-- Demonic Combatant's Pendant (A)
 						i(150126),	-- Demonic Combatant's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						i(150160),	-- Demonic Combatant's Ring (A)
 						i(150162),	-- Demonic Combatant's Band (A)
 						i(150164),	-- Demonic Combatant's Signet (A)
@@ -11496,12 +11496,12 @@ _.PVP =
 						i(149126),	-- Demonic Gladiator's Plate Warboots
 						i(149138),	-- Demonic Gladiator's Plate Wristplates
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						i(149014), -- Demonic Gladiator's Necklace (A)
 						i(149016), -- Demonic Gladiator's Pendant (A)
 						i(149018), -- Demonic Gladiator's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						i(149052), -- Demonic Gladiator's Ring (A)
 						i(149054), -- Demonic Gladiator's Band (A)
 						i(149056), -- Demonic Gladiator's Signet (A)
@@ -11685,12 +11685,12 @@ _.PVP =
 						un(14, i(149372)),	-- Demonic Gladiator's Plate Warboots
 						un(14, i(149384)),	-- Demonic Gladiator's Plate Wristplates
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(149260)), -- Demonic Gladiator's Necklace (A)
 						un(REMOVED_FROM_GAME, i(149262)), -- Demonic Gladiator's Pendant (A)
 						un(REMOVED_FROM_GAME, i(149264)), -- Demonic Gladiator's Choker (A)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(149298)), -- Demonic Gladiator's Ring (A)
 						un(REMOVED_FROM_GAME, i(149300)), -- Demonic Gladiator's Band (A)
 						un(REMOVED_FROM_GAME, i(149302)), -- Demonic Gladiator's Signet (A)
@@ -11874,12 +11874,12 @@ _.PVP =
 						i(150235),	-- Demonic Combatant's Plate Warboots (H)
 						i(150247),	-- Demonic Combatant's Plate Wristplates (H)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						i(150123),	-- Demonic Combatant's Necklace (H)
 						i(150125),	-- Demonic Combatant's Pendant (H)
 						i(150127),	-- Demonic Combatant's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						i(150161),	-- Demonic Combatant's Ring (H)
 						i(150163),	-- Demonic Combatant's Band (H)
 						i(150165),	-- Demonic Combatant's Signet (H)
@@ -12061,12 +12061,12 @@ _.PVP =
 						i(149127),	-- Demonic Gladiator's Plate Warboots (H)
 						i(149139),	-- Demonic Gladiator's Plate Wristplates (H)
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						i(149015), -- Demonic Gladiator's Necklace (H)
 						i(149017), -- Demonic Gladiator's Pendant (H)
 						i(149019), -- Demonic Gladiator's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						i(149053), -- Demonic Gladiator's Ring (H)
 						i(149055), -- Demonic Gladiator's Band (H)
 						i(149057), -- Demonic Gladiator's Signet (H)
@@ -12250,12 +12250,12 @@ _.PVP =
 						un(14, i(149373)),	-- Demonic Gladiator's Plate Warboots
 						un(14, i(149385)),	-- Demonic Gladiator's Plate Wristplates
 					}),
-					n(-384,	{	-- Neck
+					n(NECK, {
 						un(REMOVED_FROM_GAME, i(149261)), -- Demonic Gladiator's Necklace (H)
 						un(REMOVED_FROM_GAME, i(149263)), -- Demonic Gladiator's Pendant (H)
 						un(REMOVED_FROM_GAME, i(149265)), -- Demonic Gladiator's Choker (H)
 					}),
-					n(-385,	{	-- Finger
+					n(FINGER, {
 						un(REMOVED_FROM_GAME, i(149299)), -- Demonic Gladiator's Ring (H)
 						un(REMOVED_FROM_GAME, i(149301)), -- Demonic Gladiator's Band (H)
 						un(REMOVED_FROM_GAME, i(149303)), -- Demonic Gladiator's Signet (H)

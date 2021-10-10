@@ -559,7 +559,7 @@ for key,value in pairs({
 		["Antorus, der Brennende Thron"] = "Antorus",	-- ["Antorus, the Burning Throne"] = "Antorus"
 		--TODO: ["Expansion Pre"] = "Pre",
 		--TODO: ["Expansion Features"] = "EF",
-		--TODO: ["Dungeons & Raids"] = "D&R",
+		--TODO: [GROUP_FINDER] = "D&R",	-- ["Dungeons & Raids"] = "D&R"
 		--TODO: ["The Burning Crusade"] = "BC",
 		--TODO: ["Burning Crusade"] = "BC",
 		--TODO: ["The BC"] = "BC",
@@ -618,7 +618,6 @@ for key,value in pairs({
 	-- Commonly used
 		--TODO: [0] = ZONE.." "..BATTLE_PET_SOURCE_1,				-- Zone Drop
 		[-1] = "Gemeinsame Bossbeute",								-- Common Boss Drop
-		--TODO: [-5] = "Prospecting",
 		--TODO: [-7] = WORLD.." "..RAID_BOSSES,						-- World Bosses
 		--TODO: [-11] = "Common Box Drops",							-- Common Box Drops
 		--TODO: [-12] = DUNGEON_FLOOR_DIREMAUL5.." [East - Demons]",-- Warpwood Quarter [East - Demon]
@@ -641,17 +640,17 @@ for key,value in pairs({
 		--TODO: [-55] = "Pirates' Day",
 		--TODO: [-59] = "Day of the Dead",
 		--TODO: [-62] = "Stranglethorn Fishing Extravaganza",
-		--TODO: [-72] = "Sargerei War Council",
+	-- Zul'Aman
 		--TODO: [-78] = "Timed Event",
 		--TODO: [-79] = "First Chest",
 		--TODO: [-80] = "Second Chest",
 		--TODO: [-81] = "Third Chest",
 		--TODO: [-82] = "Final Chest",
+	-- SM
 		--TODO: [-85] = "Graveyard",
 		--TODO: [-86] = "Library",
 		--TODO: [-87] = "Armory",
 		--TODO: [-88] = "Cathedral",
-		--TODO: [-90] = ELITE,										-- Elite
 	-- TODO: Garrison Note: These will be changed into a new class soon(TM)
 		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)),			-- Stables
 		--TODO: [-99] = "Buildings",
@@ -660,31 +659,19 @@ for key,value in pairs({
 		--TODO: [-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),	-- The Hinterlands Active
 		--TODO: [-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),	-- Feralas Active
 		--TODO: [-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),	-- Duskwood Activated
-	-- Class Trial Sets
-		--TODO: [-141] = "Felsoul",
-		--TODO: [-142] = "Heart-Lesion",
-		--TODO: [-143] = "Lightdrinker",
-		--TODO: [-144] = "Mistdancer",
-		--TODO: [-145] = "Mountainsage",
-		--TODO: [-146] = "Oathsworn",
-		--TODO: [-147] = "Springrain",
-		--TODO: [-148] = "Streamtalker",
-		--TODO: [-149] = "Sunsoul",
-		--TODO: [-150] = "Trailseeker",
+	-- Garrison
 		--TODO: [-152] = "Garrison Campaign",
+	-- Druid Feral Druid Hidden Artifact Appearance
 		--TODO: [-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),	-- The Hinterlands Activated
 		--TODO: [-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),	-- Feralas Activated
+	-- Class Hall /Artifact
 		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
 	-- Other
-		--TODO: [-163] = RESISTANCE0_NAME,							-- Armor
-		--TODO: [-165] = GetItemSubClassInfo(13,1),
-		--TODO: [-168] = FACTION_OTHER .. " " ..QUESTS_LABEL,		-- Other Quests
 		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
 		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
+	-- Fishing
 		--TODO: [-217] = "Lures",									-- Lures (for Fishing)
 		--TODO: [-218] = "Coastal",									-- Coastal (for Fishing)
-		--TODO: [-224] = "Illidari",								-- Illidari
-		--TODO: [-228] = GetSpellInfo(218950),						-- GetSpellInfo(218950),  -- Flight Path
 		--TODO: [-242] = "Unrated",									-- Unrated
 		--TODO: [-243] = "Bounty",									-- Bounty
 		[-254] = "Verbündete Völker & Traditionsrüstung",			-- Allied Races & Heritage
@@ -2328,6 +2315,17 @@ for key,value in pairs({
 	[280619] = "Alte eisenbeschlagene Truhe",	-- Old Ironbound Chest
 	[280727] = "Verkohlte Nachricht",	-- Charred Note
 	[280755] = "Quintins Beutel",	-- Quintin's Satchel
+	[280815] = "|cFFFFFFFFSchritt 1:|r Brief von Frau Graham I",	-- |cFFFFFFFFStep 1:|r Letter from Ms. Graham I
+	[280836] = "|cFFFFFFFFSchritt 2:|r Brief von Frau Graham II",	-- |cFFFFFFFFStep 2:|r Letter from Ms. Graham II
+	[280837] = "|cFFFFFFFFSchritt 3:|r Brief von Frau Graham III",	-- |cFFFFFFFFStep 3:|r Letter from Ms. Graham III
+	[280838] = "|cFFFFFFFFSchritt 4:|r Brief von Frau Graham IV",	-- |cFFFFFFFFStep 4:|r Letter from Ms. Graham IV
+	[280842] = "|cFFFFFFFFSchritt 5:|r Brief von Frau Graham V",	-- |cFFFFFFFFStep 5:|r Letter from Ms. Graham V
+	[280843] = "|cFFFFFFFFSchritt 6:|r Brief von Frau Graham VI",	-- |cFFFFFFFFStep 6:|r Letter from Ms. Graham VI
+	[280844] = "|cFFFFFFFFSchritt 7:|r Brief von Frau Graham VII",	-- |cFFFFFFFFStep 7:|r Letter from Ms. Graham VII
+	[280845] = "|cFFFFFFFFSchritt 8:|r Geschenk von Frau Graham",	-- |cFFFFFFFFStep 8:|r Gift for Ms. Graham
+	[280883] = "Sonnengebleichte Truhe",	-- Sun-Worn Chest
+	[280886] = "Sternenberührte Truhe",	-- Star-Touched Chest
+	[280903] = "Verlorenes Katzenspielzeug",	-- Lost Cat Toy
 	[280951] = "Aschenwindschätze",	-- Ashvane Spoils
 	[280957] = "Zukashis Säckchen",	-- Zukashi's Satchel
 	[281092] = "Schatz des Hexendoktors",	-- Witch Doctor's Hoard
@@ -2923,6 +2921,44 @@ for key,value in pairs({
 	--TODO: [9999921] = "Placement",	-- Placement
 	--TODO: [9999938] = "Uuna's World Tour",	-- Uuna's World Tour
 	--TODO: [9999946] = "Summon Baa'l",	-- Summon Baa'l
+	--TODO: [13000000] = "|cFFFFFFFFStep 1:|r Purchase Talisman of True Treasure Tracking",	-- |cFFFFFFFFStep 1:|r Purchase Talisman of True Treasure Tracking
+	--TODO: [13000001] = "|cFFFFFFFFStep 2:|r Equip Talisman",	-- |cFFFFFFFFStep 2:|r Equip Talisman
+	--TODO: [13000002] = "|cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion",	-- |cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion
+	--TODO: [13000003] = "Glittergill Glitter",	-- Glittergill Glitter
+	--TODO: [13000004] = "|cFFFFFFFFStep 1:|r Seashell",	-- |cFFFFFFFFStep 1:|r Seashell
+	--TODO: [13000005] = "|cFFFFFFFFStep 2:|r Cavity-Free Great Shark Tooth",	-- |cFFFFFFFFStep 2:|r Cavity-Free Great Shark Tooth
+	--TODO: [13000006] = "|cFFFFFFFFStep 3:|r Razoreel Larva",	-- |cFFFFFFFFStep 3:|r Razoreel Larva
+	--TODO: [13000007] = "|cFFFFFFFFStep 4:|r Well-Fed Doctor Fish",	-- |cFFFFFFFFStep 4:|r Well-Fed Doctor Fish
+	--TODO: [13000008] = "|cFFFFFFFFStep 5:|r Freshly Molted Crab Skin",	-- |cFFFFFFFFStep 5:|r Freshly Molted Crab Skin
+	--TODO: [13000009] = "|cFFFFFFFFStep 6:|r Glittergill Glitter",	-- |cFFFFFFFFStep 6:|r Glittergill Glitter
+	--TODO: [13000010] = "Symbiotic Plankton",	-- Symbiotic Plankton
+	--TODO: [13000011] = "|cFFFFFFFFStep 1:|r Seashell",	-- |cFFFFFFFFStep 1:|r Seashell
+	--TODO: [13000012] = "|cFFFFFFFFStep 2:|r Giant Giant Toenail Clipping",	-- |cFFFFFFFFStep 2:|r Giant Giant Toenail Clipping
+	--TODO: [13000013] = "|cFFFFFFFFStep 3:|r Makrura Eye",	-- |cFFFFFFFFStep 3:|r Makrura Eye
+	--TODO: [13000014] = "|cFFFFFFFFStep 4:|r Accidentally-Severed Seahorse Fin",	-- |cFFFFFFFFStep 4:|r Accidentally-Severed Seahorse Fin
+	--TODO: [13000015] = "|cFFFFFFFFStep 5:|r Shiny Sea Serpent Scale",	-- |cFFFFFFFFStep 5:|r Shiny Sea Serpent Scale
+	--TODO: [13000016] = "|cFFFFFFFFStep 6:|r Symbiotic Plankton",	-- |cFFFFFFFFStep 6:|r Symbiotic Plankton
+	--TODO: [13000017] = "Scintillating Murloc Skin Lotion",	-- Scintillating Murloc Skin Lotion
+	--TODO: [13000018] = "|cFFFFFFFFItem 2:|r Potent Gastropod Gloop",	-- |cFFFFFFFFItem 2:|r Potent Gastropod Gloop
+	--TODO: [13000019] = "|cFFFFFFFFStep 1:|r Seashell",	-- |cFFFFFFFFStep 1:|r Seashell
+	--TODO: [13000020] = "|cFFFFFFFFStep 2:|r Vantus Black Squid Ink",	-- |cFFFFFFFFStep 2:|r Vantus Black Squid Ink
+	--TODO: [13000021] = "|cFFFFFFFFStep 3:|r Super Slick Eel Slime",	-- |cFFFFFFFFStep 3:|r Super Slick Eel Slime
+	--TODO: [13000022] = "|cFFFFFFFFStep 4:|r Rock-Encrusted Whelk Shell",	-- |cFFFFFFFFStep 4:|r Rock-Encrusted Whelk Shell
+	--TODO: [13000023] = "|cFFFFFFFFStep 5:|r Potent Gastropod Gloop",	-- |cFFFFFFFFStep 5:|r Potent Gastropod Gloop
+	--TODO: [13000024] = "|cFFFFFFFFItem 3:|r Captured Cavitation Bubble",	-- |cFFFFFFFFItem 3:|r Captured Cavitation Bubble
+	--TODO: [13000025] = "|cFFFFFFFFStep 1:|r Seashell",	-- |cFFFFFFFFStep 1:|r Seashell
+	--TODO: [13000026] = "|cFFFFFFFFStep 2:|r Very Pretty Coral",	-- |cFFFFFFFFStep 2:|r Very Pretty Coral
+	--TODO: [13000027] = "|cFFFFFFFFStep 3:|r Iridescent Shimmerray Skin",	-- |cFFFFFFFFStep 3:|r Iridescent Shimmerray Skin
+	--TODO: [13000028] = "|cFFFFFFFFStep 4:|r Luxurous Luxscale Scale",	-- |cFFFFFFFFStep 4:|r Luxurous Luxscale Scale
+	--TODO: [13000029] = "|cFFFFFFFFStep 5:|r Captured Cavitation Bubble",	-- |cFFFFFFFFStep 5:|r Captured Cavitation Bubble
+	--TODO: [13000030] = "Purchase Red Crystal Monocle",	-- Purchase Red Crystal Monocle
+	--TODO: [13000031] = "Red Crystal Monocle",	-- Red Crystal Monocle
+	--TODO: [13000032] = "|cFFFFFFFFStep 3:|r Pick a Monocle (Or Don't!)",	-- |cFFFFFFFFStep 3:|r Pick a Monocle (Or Don't!)
+	--TODO: [13000033] = "|cFFFFFFFFStep 4:|r Suramar Beams",	-- |cFFFFFFFFStep 4:|r Suramar Beams
+	--TODO: [13000034] = "|cFFFFFFFFStep 5:|r Cat Code",	-- |cFFFFFFFFStep 5:|r Cat Code
+	--TODO: [13000035] = "|cFFFFFFFFStep 6:|r Jumping Puzzle",	-- |cFFFFFFFFStep 6:|r Jumping Puzzle
+	--TODO: [13000036] = "|cFFFFFFFFStep 7:|r Arcane Lava",	-- |cFFFFFFFFStep 7:|r Arcane Lava
+	--TODO: [13000037] = "|cFFFFFFFFStep 8:|r Hivemind",	-- |cFFFFFFFFStep 8:|r Hivemind
 	--TODO: [1278968766] = "Rune",	-- Rune
 	--TODO: [1278968767] = "Rune",	-- Rune
 	--TODO: [1278968768] = "Rune",	-- Rune
@@ -2932,43 +2968,17 @@ do a[key] = value; end
 -- Saved Instance Name => Dungeon Journal Instance Name Converter
 -- If your saves aren't lining up, it's probably because Blizzard
 -- didn't use the same localization for the instance. Sorry.
-
--- Old chunk that was here before. I'm not sure if keys should be in English or target language?
-L.SAVED_TO_DJ_INSTANCES["Violette Festung"] = "Die Violette Festung";
-L.SAVED_TO_DJ_INSTANCES["Geschmolzener Kern"] = "Der Geschmolzene Kern";
-L.SAVED_TO_DJ_INSTANCES["Echsenkessel: Höhle des Schlangenschreins"] = "Höhle des Schlangenschreins";
-L.SAVED_TO_DJ_INSTANCES["Festung der Stürme"] = "Das Auge";
-L.SAVED_TO_DJ_INSTANCES["Der Sonnenbrunnen"] = "Sonnenbrunnenplateau";
-L.SAVED_TO_DJ_INSTANCES["Eiskronenzitadelle"] = "Die Eiskronenzitadelle";
-L.SAVED_TO_DJ_INSTANCES["Rubinsanktum"] = "Das Rubinsanktum";
-L.SAVED_TO_DJ_INSTANCES["Terrasse des Endlosen Frühlings"] = "Terrasse d. Endlosen Frühlings";
-L.SAVED_TO_DJ_INSTANCES["Herz der Angst"] = "Das Herz der Angst";
 local a = L.SAVED_TO_DJ_INSTANCES;
 for key,value in pairs({
-	--TODO: ["The Escape from Durnholde"] = "Old Hillsbrad Foothills";
-	--TODO: ["Opening of the Dark Portal"] = "The Black Morass";
-	--TODO: ["Auchindoun: Auchenai Crypts"] = "Auchenai Crypts";
-	--TODO: ["Auchindoun: Mana-Tombs"] = "Mana-Tombs";
-	--TODO: ["Auchindoun: Sethekk Halls"] = "Sethekk Halls";
-	--TODO: ["Auchindoun: Shadow Labyrinth"] = "Shadow Labyrinth";
-	--TODO: ["Coilfang: Serpentshrine Cavern"] = "Serpentshrine Cavern";
-	--TODO: ["Coilfang: The Slave Pens"] = "The Slave Pens";
-	--TODO: ["Coilfang: The Steamvault"] = "The Steamvault";
-	--TODO: ["Coilfang: The Underbog"] = "The Underbog";
-	--TODO: ["Hellfire Citadel: Ramparts"] = "Hellfire Ramparts";
-	--TODO: ["Hellfire Citadel: The Blood Furnace"] = "The Blood Furnace";
-	--TODO: ["Hellfire Citadel: The Shattered Halls"] = "The Shattered Halls";
-	--TODO: ["Tempest Keep: The Arcatraz"] = "The Arcatraz";
-	--TODO: ["Tempest Keep: The Botanica"] = "The Botanica";
-	--TODO: ["Tempest Keep: The Mechanar"] = "The Mechanar";
-	--TODO: ["Stormwind Stockade"] = "The Stockade";
-	--TODO: ["Ahn'Qiraj Temple"] = "Temple of Ahn'Qiraj";
-	--TODO: ["Sunken Temple"] = "The Temple of Atal'hakkar";
-	--TODO: ["The Sunwell"] = "Sunwell Plateau";
-	--TODO: ["Tempest Keep"] = "The Eye";
-	--TODO: ["The Violet Hold"] = "Violet Hold";
-	--TODO: ["Magister's Terrace"] = "Magisters' Terrace";
-	--TODO: ["Violet Hold"] = "The Violet Hold";
+	["Violette Festung"] = "Die Violette Festung";	-- The Violet Hold
+	["Geschmolzener Kern"] = "Der Geschmolzene Kern";	-- Molten Core
+	["Echsenkessel: Höhle des Schlangenschreins"] = "Höhle des Schlangenschreins";	-- Serpentshrine Cavern
+	["Festung der Stürme"] = "Das Auge";	-- The Eye
+	["Der Sonnenbrunnen"] = "Sonnenbrunnenplateau";	-- Sunwell Plateau
+	["Eiskronenzitadelle"] = "Die Eiskronenzitadelle";	-- Icecrown Citadel
+	["Rubinsanktum"] = "Das Rubinsanktum";	-- The Ruby Sanctum
+	["Terrasse des Endlosen Frühlings"] = "Terrasse d. Endlosen Frühlings";	-- Terrace of Endless Spring
+	["Herz der Angst"] = "Das Herz der Angst";	-- 	Heart of Fear
 })
 do a[key] = value; end
 

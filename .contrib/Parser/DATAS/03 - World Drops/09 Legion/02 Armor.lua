@@ -6,7 +6,7 @@ _.WorldDrops =
 {
 	tier(LEGION_TIER, {
 		n(-318, {	-- Armor
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(141566),	-- Serrinne's Maleficent Habit
 				i(141575),	-- Gorrog's Serene Gaze
 				i(141579),	-- Welded Hardskin Helmet
@@ -14,11 +14,11 @@ _.WorldDrops =
 			f(51,   {	-- Neck
 				i(141588),	-- Talisman of Jaimil Lightheart
 			}),
-			n(-321, {	-- Shoulder
+			n(SHOULDER, {
 				i(141567),	-- Cyno's Mantle of Sin
 				i(141568),	-- Boughs of Archdruid Van-Yali
 			}),
-			n(-322, {	-- Back
+			n(BACK, {
 				i(121012),	-- Azurewing Defender's Drape
 				i(121067, {	-- Thunder Totem Cloak
 					["bonusID"] = 1812,
@@ -38,30 +38,30 @@ _.WorldDrops =
 					["bonusID"] = 1812,
 				}),
 			}),
-			n(-323, {	-- Chest
+			n(CHEST, {
 				i(141570),	-- Cainen's Preeminent Chestguard
 				i(141576),	-- Aethrynn's Everwarm Chestplate
 			}),
-			n(-326, {	-- Wrist
+			n(WRIST, {
 				i(141571),	-- Mavanah's Shifting Wristguards
 			}),
-			n(-327, {	-- Hands
+			n(HANDS, {
 				i(141565),	-- Mir's Enthralling Grasp
 				i(141577),	-- Fists of Thane Kray-Tan
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				i(141564),	-- Telubis' Binding of Patience
 				i(141573),	-- Shokell's Grim Cinch
 			}),
-			n(-329, {	-- Legs
+			n(LEGS, {
 				i(141569),	-- Samnoh's Exceptional Leggings
 				i(141574),	-- Ulfgor's Greaves of Bravery
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(141572),	-- Geta of Tay'Shute
 				i(141578),	-- Claud's War-Ravaged Boots
 			}),
-			n(-385, {	-- Finger
+			n(FINGER, {
 				i(141581),	-- Demar's Band of Amore
 				i(141582),	-- Fran's Intractable Loop
 				i(141583),	-- Sameed's Vision Ring

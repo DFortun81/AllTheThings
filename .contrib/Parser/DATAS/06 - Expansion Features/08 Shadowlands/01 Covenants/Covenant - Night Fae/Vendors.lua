@@ -1926,7 +1926,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179885),	-- Ardenweald Covenant Plate Feet
 					i(179886),	-- Ardenweald Covenant Plate Chest
 				}),
-				n(-322, {	-- Cloaks
+				n(BACK, {
 					i(179621),	-- Ardenweald Covenant Mail Cloak
 					i(179630),	-- Ardenweald Covenant Mail Cloak
 					i(179631),	-- Ardenweald Covenant Mail Cloak

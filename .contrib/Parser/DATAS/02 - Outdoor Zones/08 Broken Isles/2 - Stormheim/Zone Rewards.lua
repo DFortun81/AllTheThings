@@ -40,10 +40,10 @@ _.Zones =
 				i(134181),	-- Skoldiir Waistplate
 				i(134183),	-- Skoldiir Legguards
 				i(134185),	-- Skoldiir Sabatons
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(134191),	-- Rough-Hammered Silver Ring
 				}),
-				n(-384, {	-- Neck
+				n(NECK, {
 					i(134187),	-- Rough-Hammered Silver Necklace
 				}),
 				n(-386,  {	-- Trinkets

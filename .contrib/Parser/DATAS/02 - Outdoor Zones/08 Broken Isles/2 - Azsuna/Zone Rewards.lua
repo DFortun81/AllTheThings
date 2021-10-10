@@ -71,10 +71,10 @@ _.Zones =
 				i(134313),	-- Ley-Scarred Waistplate
 				i(134315),	-- Ley-Scarred Greaves
 				i(134317),	-- Ley-Scarred Sabatons
-				n(-384, {	-- Neck
+				n(NECK, {
 					i(134319),	-- Depleted Mana Crystal Pendant
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(134245),	-- Nazjatar Manapearl Ring
 					i(134323),	-- Glinting Quartz Ring
 				}),

@@ -6,7 +6,7 @@ _.WorldDrops =
 {
 	tier(CATA_TIER, {
 		n(-318, {	-- Armor
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(66931),	-- Mercury-Coated Hood
 				i(66955),	-- Scentsniffer Hood
 				i(66975),	-- Hood of the Crying Rogue
@@ -27,7 +27,7 @@ _.WorldDrops =
 				i(55400),	-- Sishir Amulet
 				i(55399),	-- Swamplight Amulet
 			}),
-			n(-321, {	-- Shoulder
+			n(SHOULDER, {
 				i(66882),	-- Skeletalized Shoulderpads
 				i(66959),	-- Toraelian Spaulders
 				i(66976),	-- Spaulders of the Savage Beast
@@ -36,7 +36,7 @@ _.WorldDrops =
 				i(67117),	-- Woundsealer Spaulders
 				i(67144),	-- Pauldrons of Edward the Odd
 			}),
-			n(-322, {	-- Back
+			n(BACK, {
 				i(55308),	-- Moonbrook Cloak
 				i(55309),	-- Swamplight Cloak
 				i(55310),	-- Sishir Cloak
@@ -55,7 +55,7 @@ _.WorldDrops =
 				i(67140),	-- Drape of Inimitable Fate
 				i(67142),	-- Zom's Electrostatic Cloak
 			}),
-			n(-323, {	-- Chest
+			n(CHEST, {
 				i(66919),	-- Robes of Whispering Sands
 				i(66992),	-- Harbinger's Breastplate
 				i(67024),	-- Breastplate of Solemn Vows
@@ -65,7 +65,7 @@ _.WorldDrops =
 				i(67135),	-- Morrie's Waywalker Wrap
 				i(67143),	-- Icebone Hauberk
 			}),
-			n(-326, {	-- Wrist
+			n(WRIST, {
 				i(66954),	-- Knife-Concealing Bracers
 				i(66958),	-- Bracers of Razor Fletching
 				i(66979),	-- Bracers of Bloody Business
@@ -73,7 +73,7 @@ _.WorldDrops =
 				i(67115),	-- Soulheart Bindings
 				i(67127),	-- Bracers of Caustic Purification
 			}),
-			n(-327, {	-- Hands
+			n(HANDS, {
 				i(66641),	-- Vonica's Gauntlets
 				i(66970),	-- Safecracker's Gloves
 				i(66989),	-- Endwyn's Flickering Gauntlets
@@ -84,7 +84,7 @@ _.WorldDrops =
 				i(67132),	-- Grips of the Failed Immortal
 				i(67146),	-- Woundsplicer Handwraps
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				i(66941),	-- Triple-Loop Belt
 				i(66966),	-- Elekk-Horn Waistguard
 				i(66980),	-- Girdle of Heated Deeds
@@ -93,7 +93,7 @@ _.WorldDrops =
 				i(67103),	-- Belt of Redeemed Fate
 				i(67114),	-- Girdle of Chained Thunder
 			}),
-			n(-329, {	-- Legs
+			n(LEGS, {
 				i(66904),	-- Gartic's Resplendent Leggings
 				i(66962),	-- Shadowskulk Leggings
 				i(66971),	-- Highland Padded Leggings
@@ -104,7 +104,7 @@ _.WorldDrops =
 				i(67148),	-- Kilt of Trollish Dreams
 				i(67150),	-- Arrowsinger Legguards
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(55855),	-- Darksky Treads
 				i(66963),	-- Treads of the Wyrmhunter
 				i(66967),	-- Camelhide Treads

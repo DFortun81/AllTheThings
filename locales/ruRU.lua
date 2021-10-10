@@ -600,7 +600,6 @@ for key,value in pairs({
 	-- Commonly used
 		[0] = "Добыча локации",									-- Zone Drop
 		[-1] = "Общая добыча с боссов",							-- Common Boss Drop
-		[-5] = "Просеивание",
 		[-7] = "Мировые Боссы",									-- World Bosses
 		[-11] = "Обычная добыча из Сундуков",					-- Common Box Drops
 		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [Восток - Демоны]",	-- Warpwood Quarter [East - Demon]
@@ -624,12 +623,13 @@ for key,value in pairs({
 		[-55] = "День пирата",
 		[-59] = "День мертвых",
 		[-62] = "Рыбомания Тернистой долины",
-		[-72] = "Саргерайский военный совет",
+	-- Zul'Aman
 		[-78] = "Временное Событие",
 		[-79] = "Первый Сундук",
 		[-80] = "Второй Сундук",
 		[-81] = "Третий Сундук",
 		[-82] = "Последний Сундук",
+	-- SM
 		[-85] = "Кладбище",
 		[-86] = "Библиотека",
 		[-87] = "Оружейная",
@@ -643,30 +643,20 @@ for key,value in pairs({
 		[-131] = "Внутренние земли - активен",						-- The Hinterlands Active
 		[-132] = "Фералас - активен",								-- Feralas Active
 		[-133] = "Сумеречный лес - активирован",					-- Duskwood Activated
-	-- Class Trial Sets
-		[-141] = "Оскверненная душа",
-		[-142] = "Раненное сердце",
-		[-143] = "Поглощающий свет",
-		[-144] = "Танцующий в тумане",
-		[-145] = "Горное сердце",
-		[-146] = "Принесенная клятва",
-		[-147] = "Весенний дождь",
-		[-148] = "Говорящий с родником",
-		[-149] = "Солнечная душа",
-		[-150] = "Искатель троп",
+	-- Garrison
 		[-152] = "Гарнизонная кампания",
+	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = "Внутренние земли - активирован",					-- The Hinterlands Activated
 		[-158] = "Фералас - активирован",							-- Feralas Activated
+	-- Class Hall /Artifact
 		[-159] = "Ролл События",									-- Daily Dreamway Event Roll
 	-- Other
 		[-163] = "Доспехи",											-- Armor
-		[-165] = "Сундучки",
-		[-168] = "Другие Задания",									-- Other Quests
 		[-211] = "Новый персонаж",									-- New Character
 		[-212] = "Сундук с сокровищами",							-- Treasure Chest
+	-- Fishing
 		[-217] = "Наживки",											-- Lures (for Fishing)
 		[-218] = "Побережье",										-- Coastal (for Fishing)
-		[-224] = "Иллидари",										-- Illidari
 		[-228] = "Точка полета",									-- GetSpellInfo(218950),  -- Flight Path
 		[-242] = "Нерейтинговые",									-- Unrated
 		[-243] = "Премия",											-- Bounty
@@ -2315,6 +2305,17 @@ for key,value in pairs({
 	[280619] = "Старый обитый железом сундук",	-- Old Ironbound Chest
 	[280727] = "Обгоревшая записка",	-- Charred Note
 	[280755] = "Сумка Квентина",	-- Quintin's Satchel
+	[280815] = "|cFFFFFFFFStep 1:|r Письмо от мисс Грэхэм I",	-- |cFFFFFFFFStep 1:|r Letter from Ms. Graham I
+	[280836] = "|cFFFFFFFFStep 2:|r Письмо от мисс Грэхэм II",	-- |cFFFFFFFFStep 2:|r Letter from Ms. Graham II
+	[280837] = "|cFFFFFFFFStep 3:|r Письмо от мисс Грэхэм III",	-- |cFFFFFFFFStep 3:|r Letter from Ms. Graham III
+	[280838] = "|cFFFFFFFFStep 4:|r Письмо от мисс Грэхэм IV",	-- |cFFFFFFFFStep 4:|r Letter from Ms. Graham IV
+	[280842] = "|cFFFFFFFFStep 5:|r Письмо от мисс Грэхэм V",	-- |cFFFFFFFFStep 5:|r Letter from Ms. Graham V
+	[280843] = "|cFFFFFFFFStep 6:|r Письмо от мисс Грэхэм VI",	-- |cFFFFFFFFStep 6:|r Letter from Ms. Graham VI
+	[280844] = "|cFFFFFFFFStep 7:|r Письмо от мисс Грэхэм VII",	-- |cFFFFFFFFStep 7:|r Letter from Ms. Graham VII
+	[280845] = "|cFFFFFFFFStep 8:|r Письмо от мисс Грэхэм",	-- |cFFFFFFFFStep 8:|r Gift for Ms. Graham
+	[280883] = "Рассохшийся под солнцем сундук",	-- Sun-Worn Chest
+	[280886] = "Залитый звездным светом сундук",	-- Star-Touched Chest
+	[280903] = "Потерянная кошачья игрушка",	-- Lost Cat Toy
 	[280951] = "Трофеи Эшвейнов",	-- Ashvane Spoils
 	[280957] = "Сумка Зукаши",	-- Zukashi's Satchel
 	[281092] = "Схрон знахаря",	-- Witch Doctor's Hoard
@@ -2910,6 +2911,44 @@ for key,value in pairs({
 	[9999921] = "Расположение",	-- Placement
 	[9999938] = "Приключения с Ууной",	-- Uuna's World Tour
 	[9999946] = "Призовите Бее'ла",	-- Summon Baa'l
+	[13000000] = "|cFFFFFFFFШаг 1:|r Купите Талисман поиска Истинных Сокровищ",	-- |cFFFFFFFFStep 1:|r Purchase Talisman of True Treasure Tracking
+	[13000001] = "|cFFFFFFFFШаг 2:|r Наденьте Талисман",	-- |cFFFFFFFFStep 2:|r Equip Talisman
+	[13000002] = "|cFFFFFFFFПредмет 1:|r Искрящийся мурлочий лосьон для для кожи",	-- |cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion
+	[13000003] = "Чешуйка сверкающего окуня",	-- Glittergill Glitter
+	[13000004] = "|cFFFFFFFFШаг 1:|r Морская ракушка",	-- |cFFFFFFFFStep 1:|r Seashell
+	[13000005] = "|cFFFFFFFFШаг 2:|r Здоровый зуб большой акулы",	-- |cFFFFFFFFStep 2:|r Cavity-Free Great Shark Tooth
+	[13000006] = "|cFFFFFFFFШаг 3:|r Малек бритвенного угря",	-- |cFFFFFFFFStep 3:|r Razoreel Larva
+	[13000007] = "|cFFFFFFFFШаг 4:|r Откормленная рыба-доктор",	-- |cFFFFFFFFStep 4:|r Well-Fed Doctor Fish
+	[13000008] = "|cFFFFFFFFШаг 5:|r Недавно сброшенный панцирь краба",	-- |cFFFFFFFFStep 5:|r Freshly Molted Crab Skin
+	[13000009] = "|cFFFFFFFFШаг 6:|r Чешуйка сверкающего окуня",	-- |cFFFFFFFFStep 6:|r Glittergill Glitter
+	[13000010] = "Планктон-симбионт",	-- Symbiotic Plankton
+	[13000011] = "|cFFFFFFFFШаг 1:|r Морская ракушка",	-- |cFFFFFFFFStep 1:|r Seashell
+	[13000012] = "|cFFFFFFFFШаг 2:|r Гигантский кусок ногтя гиганта",	-- |cFFFFFFFFStep 2:|r Giant Giant Toenail Clipping
+	[13000013] = "|cFFFFFFFFШаг 3:|r Глаз макруры",	-- |cFFFFFFFFStep 3:|r Makrura Eye
+	[13000014] = "|cFFFFFFFFШаг 4:|r Случайно отрезанный плавник морского конька",	-- |cFFFFFFFFStep 4:|r Accidentally-Severed Seahorse Fin
+	[13000015] = "|cFFFFFFFFШаг 5:|r Яркая чешуя морского змея",	-- |cFFFFFFFFStep 5:|r Shiny Sea Serpent Scale
+	[13000016] = "|cFFFFFFFFШаг 6:|r Планктон-симбионт",	-- |cFFFFFFFFStep 6:|r Symbiotic Plankton
+	[13000017] = "Искрящийся мурлочий лосьон для для кожи",	-- Scintillating Murloc Skin Lotion
+	[13000018] = "|cFFFFFFFFПредмет 2:|r Сочные выделения брюхонога",	-- |cFFFFFFFFItem 2:|r Potent Gastropod Gloop
+	[13000019] = "|cFFFFFFFFШаг 1:|r Морская ракушка",	-- |cFFFFFFFFStep 1:|r Seashell
+	[13000020] = "|cFFFFFFFFШаг 2:|r Непроглядно черное чернило кальмара",	-- |cFFFFFFFFStep 2:|r Vantus Black Squid Ink
+	[13000021] = "|cFFFFFFFFШаг 3:|r Крайне скользкая слизь угря",	-- |cFFFFFFFFStep 3:|r Super Slick Eel Slime
+	[13000022] = "|cFFFFFFFFШаг 4:|r Обросшая камнями раковина моллюска",	-- |cFFFFFFFFStep 4:|r Rock-Encrusted Whelk Shell
+	[13000023] = "|cFFFFFFFFШаг 5:|r Сочные выделения брюхонога",	-- |cFFFFFFFFStep 5:|r Potent Gastropod Gloop
+	[13000024] = "|cFFFFFFFFПредмет 3:|r Пойманный кавитационный пузырек",	-- |cFFFFFFFFItem 3:|r Captured Cavitation Bubble
+	[13000025] = "|cFFFFFFFFШаг 1:|r Морская ракушка",	-- |cFFFFFFFFStep 1:|r Seashell
+	[13000026] = "|cFFFFFFFFШаг 2:|r Очень красивый коралл",	-- |cFFFFFFFFStep 2:|r Very Pretty Coral
+	[13000027] = "|cFFFFFFFFШаг 3:|r Переливающаяся кожа мерцающего ската",	-- |cFFFFFFFFStep 3:|r Iridescent Shimmerray Skin
+	[13000028] = "|cFFFFFFFFШаг 4:|r Сверкающий фрагмент светящейся чешуи",	-- |cFFFFFFFFStep 4:|r Luxurous Luxscale Scale
+	[13000029] = "|cFFFFFFFFШаг 5:|r Пойманный кавитационный пузырек",	-- |cFFFFFFFFStep 5:|r Captured Cavitation Bubble
+	[13000030] = "Купите Монокль из красного кристалла",	-- Purchase Red Crystal Monocle
+	[13000031] = "Монокль из красного кристалла",	-- Red Crystal Monocle
+	[13000032] = "|cFFFFFFFFШаг 3:|r Возьмите Монокль (или не берите!)",	-- |cFFFFFFFFStep 3:|r Pick a Monocle (Or Don't!)
+	[13000033] = "|cFFFFFFFFШаг 4:|r Лучи Сурамара",	-- |cFFFFFFFFStep 4:|r Suramar Beams
+	[13000034] = "|cFFFFFFFFШаг 5:|r Кошачий Код",	-- |cFFFFFFFFStep 5:|r Cat Code
+	[13000035] = "|cFFFFFFFFШаг 6:|r Прыгучий паззл",	-- |cFFFFFFFFStep 6:|r Jumping Puzzle
+	[13000036] = "|cFFFFFFFFШаг 7:|r Пол — это (магическая) лава!",	-- |cFFFFFFFFStep 7:|r Arcane Lava
+	[13000037] = "|cFFFFFFFFШаг 8:|r Коллективный разум",	-- |cFFFFFFFFStep 8:|r Hivemind
 	[1278968766] = "Руна",	-- Rune
 	[1278968767] = "Руна",	-- Rune
 	[1278968768] = "Руна",	-- Rune
@@ -2921,30 +2960,6 @@ do a[key] = value; end
 -- didn't use the same localization for the instance. Sorry.
 local a = L.SAVED_TO_DJ_INSTANCES;
 for key,value in pairs({
-	["The Escape from Durnholde"] = "Старые Предгорья Хилсбрада";
-	["Opening of the Dark Portal"] = "Черные Топи";
-	["Auchindoun: Auchenai Crypts"] = "Аукенайские Гробницы";
-	["Auchindoun: Mana-Tombs"] = "Гробницы Маны";
-	["Auchindoun: Sethekk Halls"] = "Сетеккские Залы";
-	["Auchindoun: Shadow Labyrinth"] = "Темный Лабиринт";
-	["Coilfang: Serpentshrine Cavern"] = "Змеиное Святилище";
-	["Coilfang: The Slave Pens"] = "Узилище";
-	["Coilfang: The Steamvault"] = "Паровое Подземелье";
-	["Coilfang: The Underbog"] = "Нижетопь";
-	["Hellfire Citadel: Ramparts"] = "Бастионы Адского Пламени";
-	["Hellfire Citadel: The Blood Furnace"] = "Кузня Крови";
-	["Hellfire Citadel: The Shattered Halls"] = "Разрушенные Залы";
-	["Tempest Keep: The Arcatraz"] = "Аркатрац";
-	["Tempest Keep: The Botanica"] = "Ботаника";
-	["Tempest Keep: The Mechanar"] = "Механар";
-	["Stormwind Stockade"] = "Тюрьма";
-	["Ahn'Qiraj Temple"] = "Храм Ан'Киража";
-	["Sunken Temple"] = "Храм Атал'Хаккар";
-	["The Sunwell"] = "Плато Солнечного Колодца";
-	["Tempest Keep"] = "Око";
-	["The Violet Hold"] = "Аметистовая Крепость";
-	["Magister's Terrace"] = "Терасса Магистров";
-	["Violet Hold"] = "Аметистовая Крепость";
 })
 do a[key] = value; end
 

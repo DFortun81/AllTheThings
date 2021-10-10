@@ -1982,7 +1982,7 @@ _.ExpansionFeatures =
 					["sym"] = {
 						{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", -319, -322, -326, -328, -330, -384, -385, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
+						{"exclude", "headerID", -319, BACK, WRIST, WAIST, FEET, NECK, FINGER, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},
 				}),
 				n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>
@@ -3019,7 +3019,7 @@ _.ExpansionFeatures =
 					["sym"] = {
 						{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", -319, -322, -326, -328, -330, -384, -385, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
+						{"exclude", "headerID", -319, BACK, WRIST, WAIST, FEET, NECK, FINGER, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},
 				}),
 				n(33595, {	-- Mera Mistrunner <Cooking Supplies>

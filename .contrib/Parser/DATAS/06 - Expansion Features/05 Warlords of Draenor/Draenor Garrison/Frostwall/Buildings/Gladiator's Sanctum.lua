@@ -199,39 +199,39 @@ _.ExpansionFeatures =
 												i(126743),	-- Warmongering Aspirant's Plate Legguards (H)
 												i(126744),	-- Warmongering Aspirant's Plate Shoulders (H)
 											}),
-											n(-322, {	-- Back
+											n(BACK, {
 												i(126654),	-- Warmongering Aspirant's Cape of Cruelty (H)
 												i(126723),	-- Warmongering Aspirant's Cloak of Cruelty (H)
 												i(126726),	-- Warmongering Aspirant's Cloak of Endurance (H)
 												i(126676),	-- Warmongering Aspirant's Drape of Cruelty (H)
 												i(126677),	-- Warmongering Aspirant's Drape of Meditation (H)
 											}),
-											n(-326, {	-- Wrists
+											n(WRIST, {
 												i(126694),	-- Warmongering Aspirant's Armbands of Prowess (H)
 												i(126707),	-- Warmongering Aspirant's Armplates of Cruelty (H)
 												i(126686),	-- Warmongering Aspirant's Bindings of Cruelty (H)
 												i(126660),	-- Warmongering Aspirant's Cuffs of Prowess (H)
 											}),
-											n(-328, {	-- Waist
+											n(WAIST, {
 												i(126684),	-- Warmongering Aspirant's Belt of Prowess (H)
 												i(126658),	-- Warmongering Aspirant's Cord of Cruelty (H)
 												i(126705),	-- Warmongering Aspirant's Girdle of Cruelty (H)
 												i(126692),	-- Warmongering Aspirant's Waistguard of Cruelty (H)
 											}),
-											n(-330, {	-- Feet
+											n(FEET, {
 												i(126685),	-- Warmongering Aspirant's Boots of Cruelty (H)
 												i(126693),	-- Warmongering Aspirant's Footguards of Cruelty (H)
 												i(126659),	-- Warmongering Aspirant's Treads of Cruelty (H)
 												i(126706),	-- Warmongering Aspirant's Warboots of Cruelty (H)
 											}),
-											n(-384,	{	-- Neck
+											n(NECK, {
 												i(126724),	-- Warmongering Aspirant's Choker of Cruelty (H)
 												i(126727),	-- Warmongering Aspirant's Choker of Endurance (H)
 												i(126655),	-- Warmongering Aspirant's Necklace of Cruelty (H)
 												i(126678),	-- Warmongering Aspirant's Pendant of Cruelty (H)
 												i(126679),	-- Warmongering Aspirant's Pendant of Meditation (H)
 											}),
-											n(-385,	{	-- Finger
+											n(FINGER, {
 												i(126683),	-- Warmongering Aspirant's Band of Contemplation (H)
 												i(126680),	-- Warmongering Aspirant's Band of Cruelty (H)
 												i(126682),	-- Warmongering Aspirant's Band of Meditation (H)
@@ -327,39 +327,39 @@ _.ExpansionFeatures =
 												i(126266),	-- Warmongering Aspirant's Plate Legguards (A)
 												i(126267),	-- Warmongering Aspirant's Plate Shoulders (A)
 											}),
-											n(-322, {	-- Back
+											n(BACK, {
 												i(126177),	-- Warmongering Aspirant's Cape of Cruelty (A)
 												i(126246),	-- Warmongering Aspirant's Cloak of Cruelty (A)
 												i(126249),	-- Warmongering Aspirant's Cloak of Endurance (A)
 												i(126199),	-- Warmongering Aspirant's Drape of Cruelty (A)
 												i(126200),	-- Warmongering Aspirant's Drape of Meditation (A)
 											}),
-											n(-326, {	-- Wrists
+											n(WRIST, {
 												i(126217),	-- Warmongering Aspirant's Armbands of Prowess (A)
 												i(126230),	-- Warmongering Aspirant's Armplates of Cruelty (A)
 												i(126209),	-- Warmongering Aspirant's Bindings of Cruelty (A)
 												i(126183),	-- Warmongering Aspirant's Cuffs of Prowess (A)
 											}),
-											n(-328, {	-- Waist
+											n(WAIST, {
 												i(126207),	-- Warmongering Aspirant's Belt of Prowess (A)
 												i(126181),	-- Warmongering Aspirant's Cord of Cruelty (A)
 												i(126228),	-- Warmongering Aspirant's Girdle of Cruelty (A)
 												i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty (A)
 											}),
-											n(-330, {	-- Feet
+											n(FEET, {
 												i(126208),	-- Warmongering Aspirant's Boots of Cruelty (A)
 												i(126216),	-- Warmongering Aspirant's Footguards of Cruelty (A)
 												i(126182),	-- Warmongering Aspirant's Treads of Cruelty (A)
 												i(126229),	-- Warmongering Aspirant's Warboots of Cruelty (A)
 											}),
-											n(-384,	{	-- Neck
+											n(NECK, {
 												i(126247),	-- Warmongering Aspirant's Choker of Cruelty (A)
 												i(126250),	-- Warmongering Aspirant's Choker of Endurance (A)
 												i(126178),	-- Warmongering Aspirant's Necklace of Cruelty (A)
 												i(126201),	-- Warmongering Aspirant's Pendant of Cruelty (A)
 												i(126202),	-- Warmongering Aspirant's Pendant of Meditation (A)
 											}),
-											n(-385,	{	-- Finger
+											n(FINGER, {
 												i(126206),	-- Warmongering Aspirant's Band of Contemplation (A)
 												i(126203),	-- Warmongering Aspirant's Band of Cruelty (A)
 												i(126205),	-- Warmongering Aspirant's Band of Meditation (A)

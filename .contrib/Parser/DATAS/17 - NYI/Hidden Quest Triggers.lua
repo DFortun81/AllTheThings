@@ -1640,6 +1640,9 @@ _.HiddenQuestTriggers = {
 		q(37892),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (H)
 		q(37969),	-- Tanaan Jungle - Tracking Quest - Vol'mar Built - JMC
 		q(38433),	-- Tanaan Jungle - Tracking Quest - Lion's Watch Built - JMC
+		q(38760),	-- Treasure: Captain's Booty 1
+		q(38761),	-- Treasure: Captain's Booty 2
+		q(38762),	-- Treasure: Captain's Booty 3
 
 		--	DUNGEONS & RAIDS
 		q(35960),	-- Auchindoun Reward Quest

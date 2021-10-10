@@ -474,7 +474,7 @@ _.Zones =
 							},
 							]]--
 							["g"] = {
-								n(-320, {	-- Head
+								n(HEAD, {
 									i(164367),	-- Plundered Blue Captain's Hat
 									i(164368),	-- Plundered Crimson Captain's Hat
 									i(164369),	-- Plundered Pirate Admiral's Bicorne
@@ -746,7 +746,7 @@ _.Zones =
 							},
 							]]--
 							["g"] = {
-								n(-320, {	-- Head
+								n(HEAD, {
 									i(164367),	-- Plundered Blue Captain's Hat
 									i(164368),	-- Plundered Crimson Captain's Hat
 									i(164369),	-- Plundered Pirate Admiral's Bicorne

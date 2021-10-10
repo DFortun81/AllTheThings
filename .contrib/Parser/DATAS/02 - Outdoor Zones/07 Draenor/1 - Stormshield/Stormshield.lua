@@ -623,7 +623,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-320, {	-- Head
+								n(HEAD, {
 									i(124702, {	-- Wild Gladiator's Hood of Prowess (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -649,7 +649,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-321, {	-- Shoulders
+								n(SHOULDER, {
 									i(124705, {	-- Wild Gladiator's Amice of Prowess (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -675,7 +675,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-322, {	-- Back
+								n(BACK, {
 									i(124685, {	-- Wild Gladiator's Cape of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -704,7 +704,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-323, {	-- Chest
+								n(CHEST, {
 									i(124704, {	-- Wild Gladiator's Robes of Prowess (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -730,7 +730,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-326, {	-- Wrists
+								n(WRIST, {
 									i(124699, {	-- Wild Gladiator's Cuffs of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -771,7 +771,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-327, {	-- Hands
+								n(HANDS, {
 									i(124701, {	-- Wild Gladiator's Gloves of Prowess (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -797,7 +797,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-328, {	-- Waist
+								n(WAIST, {
 									i(124692, {	-- Wild Gladiator's Cord of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -835,7 +835,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-329, {	-- Legs
+								n(LEGS, {
 									i(124703, {	-- Wild Gladiator's Leggings of Prowess (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -861,7 +861,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-330, {	-- Feet
+								n(FEET, {
 									i(124753, {	-- Wild Gladiator's Boots of Cruelty (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -1345,7 +1345,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-320, {	-- Head
+								n(HEAD, {
 									i(115039, {	-- Primal Combatant's Hood of Prowess (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -1359,7 +1359,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-321, {	-- Shoulders
+								n(SHOULDER, {
 									i(115042, {	-- Primal Combatant's Amice of Prowess (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -1373,7 +1373,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-322, {	-- Back
+								n(BACK, {
 									i(115183, {	-- Primal Combatant's Cape of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -1399,7 +1399,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-323, {	-- Chest
+								n(CHEST, {
 									i(115041, {	-- Primal Combatant's Robes of Prowess (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -1413,7 +1413,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-326, {	-- Wrists
+								n(WRIST, {
 									i(115048, {	-- Primal Combatant's Cuffs of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -1439,7 +1439,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-327, {	-- Hands
+								n(HANDS, {
 									i(115038, {	-- Primal Combatant's Gloves of Prowess (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -1453,7 +1453,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-328, {	-- Waist
+								n(WAIST, {
 									i(115043, {	-- Primal Combatant's Cord of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -1479,7 +1479,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-329, {	-- Legs
+								n(LEGS, {
 									i(115040, {	-- Primal Combatant's Leggings of Prowess (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -1493,7 +1493,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-330, {	-- Feet
+								n(FEET, {
 									i(115045, {	-- Primal Combatant's Treads of Cruelty (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -2643,7 +2643,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-320, {	-- Head
+								n(HEAD, {
 									i(125821, {	-- Warmongering Gladiator's Cowl of Cruelty (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -2669,7 +2669,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-321, {	-- Shoulders
+								n(SHOULDER, {
 									i(125819, {	-- Warmongering Gladiator's Amice of Prowess (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -2695,7 +2695,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-322, {	-- Back
+								n(BACK, {
 									i(125799, {	-- Warmongering Gladiator's Cape of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -2724,7 +2724,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-323, {	-- Chest
+								n(CHEST, {
 									i(125823, {	-- Warmongering Gladiator's Raiment of Cruelty (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -2750,7 +2750,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-326, {	-- Wrists
+								n(WRIST, {
 									i(125813, {	-- Warmongering Gladiator's Cuffs of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -2791,7 +2791,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-327, {	-- Hands
+								n(HANDS, {
 									i(125815, {	-- Warmongering Gladiator's Gloves of Prowess (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -2817,7 +2817,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-328, {	-- Waist
+								n(WAIST, {
 									i(125806, {	-- Warmongering Gladiator's Cord of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -2855,7 +2855,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-329, {	-- Legs
+								n(LEGS, {
 									i(125817, {	-- Warmongering Gladiator's Leggings of Prowess (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -2881,7 +2881,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-330, {	-- Feet
+								n(FEET, {
 									i(125809, {	-- Warmongering Gladiator's Treads of Cruelty (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -3312,7 +3312,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-320, {	-- Head
+								n(HEAD, {
 									i(115743, {	-- Primal Gladiator's Plate Visor
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -3338,7 +3338,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-321, {	-- Shoulders
+								n(SHOULDER, {
 									i(115614, {	-- Primal Gladiator's Amice of Prowess
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -3364,7 +3364,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-323, {	-- Chest
+								n(CHEST, {
 									i(115613, {	-- Primal Gladiator's Robes of Prowess
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -3390,7 +3390,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-327, {	-- Hands
+								n(HANDS, {
 									i(115742, {	-- Primal Gladiator's Plate Grips
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -3416,7 +3416,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-329, {	-- Legs
+								n(LEGS, {
 									i(115612, {	-- Primal Gladiator's Leggings of Prowess
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -3442,7 +3442,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-322, {	-- Back
+								n(BACK, {
 									i(115651, {	-- Primal Gladiator's Drape of Cruelty
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -3471,7 +3471,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-326, {	-- Wrists
+								n(WRIST, {
 									i(115626, {	-- Primal Gladiator's Cuffs of Prowess
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -3509,7 +3509,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-328, {	-- Waist
+								n(WAIST, {
 									i(115682, {	-- Primal Gladiator's Waistguard of Cruelty
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -3547,7 +3547,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-330, {	-- Feet
+								n(FEET, {
 									i(115623, {	-- Primal Gladiator's Treads of Cruelty
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -4140,19 +4140,19 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-320, {	-- Head
+								n(HEAD, {
 									i(126023),	-- Warmongering Combatant's Hood of Prowess (A)
 									i(126074),	-- Warmongering Combatant's Helm (A)
 									i(126090),	-- Warmongering Combatant's Helm (A)
 									i(126111),	-- Warmongering Combatant's Plate Helmet (A)
 								}),
-								n(-321, {	-- Shoulders
+								n(SHOULDER, {
 									i(126026),	-- Warmongering Combatant's Amice of Prowess (A)
 									i(126076),	-- Warmongering Combatant's Spaulders (A)
 									i(126092),	-- Warmongering Combatant's Spaulders (A)
 									i(126113),	-- Warmongering Combatant's Shoulderplates (A)
 								}),
-								n(-322, {	-- Back
+								n(BACK, {
 									i(126009, {	-- Warmongering Combatant's Cape of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 5x Mark of Honor
 									}),
@@ -4181,13 +4181,13 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 5x Mark of Honor
 									}),
 								}),
-								n(-323, {	-- Chest
+								n(CHEST, {
 									i(126025),	-- Warmongering Combatant's Robes of Prowess (A)
 									i(126072),	-- Warmongering Combatant's Tunic (A)
 									i(126088),	-- Warmongering Combatant's Armor (A)
 									i(126109),	-- Warmongering Combatant's Plate Breastplate (A)
 								}),
-								n(-326, {	-- Wrists
+								n(WRIST, {
 									i(126021, {	-- Warmongering Combatant's Cuffs of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -4213,13 +4213,13 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-327, {	-- Hands
+								n(HANDS, {
 									i(126022),	-- Warmongering Combatant's Gloves of Prowess (A)
 									i(126073),	-- Warmongering Combatant's Gloves (A)
 									i(126089),	-- Warmongering Combatant's Gauntlets (A)
 									i(126110),	-- Warmongering Combatant's Plate Gloves (A)
 								}),
-								n(-328, {	-- Waist
+								n(WAIST, {
 									i(126016, {	-- Warmongering Combatant's Cord of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -4245,13 +4245,13 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-329, {	-- Legs
+								n(LEGS, {
 									i(126024),	-- Warmongering Combatant's Leggings of Prowess (A)
 									i(126075),	-- Warmongering Combatant's Legguards (A)
 									i(126091),	-- Warmongering Combatant's Leggings (A)
 									i(126112),	-- Warmongering Combatant's Legplates (A)
 								}),
-								n(-330, {	-- Feet
+								n(FEET, {
 									i(126018, {	-- Warmongering Combatant's Treads of Cruelty (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -4794,7 +4794,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-320, {	-- Head
+								n(HEAD, {
 									i(124909, {	-- Wild Combatant's Hood of Prowess (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -4808,7 +4808,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-321, {	-- Shoulders
+								n(SHOULDER, {
 									i(124912, {	-- Wild Combatant's Amice of Prowess (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -4822,7 +4822,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-322, {	-- Back
+								n(BACK, {
 									i(124895, {	-- Wild Combatant's Cape of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -4851,7 +4851,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-323, {	-- Chest
+								n(CHEST, {
 									i(124911, {	-- Wild Combatant's Robes of Prowess (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -4865,7 +4865,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-326, {	-- Wrists
+								n(WRIST, {
 									i(124907, {	-- Wild Combatant's Cuffs of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -4891,7 +4891,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-327, {	-- Hands
+								n(HANDS, {
 									i(124908, {	-- Wild Combatant's Gloves of Prowess (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -4905,7 +4905,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-								n(-328, {	-- Waist
+								n(WAIST, {
 									i(124902, {	-- Wild Combatant's Cord of Cruelty (A)
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
@@ -4931,7 +4931,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								}),
-								n(-329, {	-- Legs
+								n(LEGS, {
 									i(124910, {	-- Wild Combatant's Leggings of Prowess (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -4945,7 +4945,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
-								n(-330, {	-- Feet
+								n(FEET, {
 									i(124904, {	-- Wild Combatant's Treads of Cruelty (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),

@@ -498,7 +498,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 								}),
 							}),
-							n(-322, {	-- Back
+							n(BACK, {
 								i(42057, {	-- Hateful Gladiator's Cloak of Ascendancy
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -521,7 +521,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-326, {	-- Wrists
+							n(WRIST, {
 								i(41638, {	-- Hateful Gladiator's Armwraps of Dominance
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -559,7 +559,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-328, {	-- Waist
+							n(WAIST, {
 								i(41628, {	-- Hateful Gladiator's Belt of Dominance
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -597,7 +597,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-330, {	-- Feet
+							n(FEET, {
 								i(41633, {	-- Hateful Gladiator's Boots of Dominance
 									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 								}),
@@ -1147,7 +1147,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 								}),
 							}),
-							n(-322, {	-- Back
+							n(BACK, {
 								i(42064, {	-- Deadly Gladiator's Cloak of Ascendancy
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -1170,7 +1170,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-326, {	-- Wrists
+							n(WRIST, {
 								i(41639, {	-- Deadly Gladiator's Armwraps of Dominance
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -1208,7 +1208,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-328, {	-- Waist
+							n(WAIST, {
 								i(41629, {	-- Deadly Gladiator's Belt of Dominance
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -1246,7 +1246,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-330, {	-- Feet
+							n(FEET, {
 								i(41634, {	-- Deadly Gladiator's Boots of Dominance
 									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 								}),
@@ -1799,7 +1799,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 								}),
 							}),
-							n(-322, {	-- Back
+							n(BACK, {
 								i(42071, {	-- Furious Gladiator's Cloak of Ascendancy
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -1822,7 +1822,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-326, {	-- Wrists
+							n(WRIST, {
 								i(41640, {	-- Furious Gladiator's Armwraps of Dominance
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -1860,7 +1860,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-328, {	-- Waist
+							n(WAIST, {
 								i(41630, {	-- Furious Gladiator's Belt of Dominance
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -1898,7 +1898,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-330, {	-- Feet
+							n(FEET, {
 								i(41635, {	-- Furious Gladiator's Boots of Dominance
 									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 								}),
@@ -2934,7 +2934,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 								}),
 							}),
-							n(-322, {	-- Back
+							n(BACK, {
 								i(51334, {	-- Wrathful Gladiator's Cloak of Ascendancy
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -2957,7 +2957,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-326, {	-- Wrists
+							n(WRIST, {
 								i(51345, {	-- Wrathful Gladiator's Armwraps of Dominance
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -2998,7 +2998,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-328, {	-- Waist
+							n(WAIST, {
 								i(51343, {	-- Wrathful Gladiator's Belt of Dominance
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -3039,7 +3039,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-330, {	-- Feet
+							n(FEET, {
 								i(51344, {	-- Wrathful Gladiator's Boots of Dominance
 									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 								}),
@@ -3576,7 +3576,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 								}),
 							}),
-							n(-322, {	-- Back
+							n(BACK, {
 								i(42078, {	-- Relentless Gladiator's Cloak of Ascendancy
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -3599,7 +3599,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-326, {	-- Wrists
+							n(WRIST, {
 								i(41641, {	-- Relentless Gladiator's Armwraps of Dominance
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -3640,7 +3640,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-328, {	-- Waist
+							n(WAIST, {
 								i(41631, {	-- Relentless Gladiator's Belt of Dominance
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
@@ -3678,7 +3678,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 								}),
 							}),
-							n(-330, {	-- Feet
+							n(FEET, {
 								i(41636, {	-- Relentless Gladiator's Boots of Dominance
 									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 								}),

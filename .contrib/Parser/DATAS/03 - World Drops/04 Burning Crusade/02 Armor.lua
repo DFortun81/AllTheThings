@@ -6,7 +6,7 @@ _.WorldDrops =
 {
 	tier(TBC_TIER, {
 		n(-318, {	-- Armor
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(31145),	-- Headdress of the Sleeper
 				i(31222),	-- Headdress of Inner Rage
 				i(31272),	-- Crown of Endless Knowledge
@@ -36,13 +36,13 @@ _.WorldDrops =
 				i(25065),	-- Turquoise Brooch
 				i(25062),	-- Zircon Amulet
 			}),
-			n(-321, {	-- Shoulder
+			n(SHOULDER, {
 				i(24820),	-- Felstone Spaulders
 				i(31148),	-- Demon Hide Spaulders
 				i(31190),	-- The Dreamer's Shoulderpads
 				i(31294),	-- Pauldrons of Surging Mana
 			}),
-			n(-322, {	-- Back
+			n(BACK, {
 				i(25030),	-- Silky Velvet Cloak
 				i(25031),	-- Silvermoon Royal Cloak
 				i(25032),	-- Hellfire Cloak
@@ -62,7 +62,7 @@ _.WorldDrops =
 				i(31255),	-- Cloak of the Craft
 				i(31329),	-- Lifegiving Cloak
 			}),
-			n(-323, {	-- Chest
+			n(CHEST, {
 				i(24808),	-- Unyielding Chain Vest
 				i(31127),	-- Hauberk of Totemic Rage
 				i(31136),	-- Breastplate of Blade Turning
@@ -75,12 +75,12 @@ _.WorldDrops =
 				i(31320),	-- Chestguard of Exile
 				i(31340),	-- Will of Edward the Odd
 			}),
-			n(-326, {	-- Wrist
+			n(WRIST, {
 				i(24901),	-- Tortured Bracer
 				i(31175),	-- Blade Dancer's Wristguards
 				i(31284),	-- Bracers of Recklessness
 			}),
-			n(-327, {	-- Hands
+			n(HANDS, {
 				i(31137),	-- Gauntlets of Purification
 				i(31126),	-- Gloves of Ferocity
 				i(31149),	-- Gloves of Pandemonium
@@ -88,7 +88,7 @@ _.WorldDrops =
 				i(31180),	-- Gauntlets of the Skullsplitter
 				i(31280),	-- Thundercaller's Gauntlets
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				i(31131),	-- Sash of Silent Blades
 				i(31138),	-- Storm Lord's Girdle
 				i(31151),	-- Girdle of Siege
@@ -97,7 +97,7 @@ _.WorldDrops =
 				i(31293),	-- Girdle of Gale Force
 				i(24886),	-- Skettis Belt
 			}),
-			n(-329, {	-- Legs
+			n(LEGS, {
 				i(31133),	-- Leggings of Concentrated Darkness
 				i(31226),	-- Leggings of the Sly
 				i(31237),	-- Elekk Hide Leggings
@@ -108,7 +108,7 @@ _.WorldDrops =
 				i(31335),	-- Kilt of Living Growth
 				i(31343),	-- Kamaei's Cerulean Skirt
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(31125),	-- Boots of the Decimator
 				i(31173),	-- Boots of Savagery
 				i(31187),	-- Boots of the Pathfinder

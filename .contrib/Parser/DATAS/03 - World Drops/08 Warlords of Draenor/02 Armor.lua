@@ -6,7 +6,7 @@ _.WorldDrops =
 {
 	tier(WOD_TIER, {
 		n(-318, {	-- Armor
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(118857),	-- Casque of Defiance
 				i(118896),	-- Helmet of Vile Indignation
 				i(118893),	-- Lylirra's Shining Circlet
@@ -28,7 +28,7 @@ _.WorldDrops =
 				i(116683),	-- Sunsworn Amulet
 				i(116681),	-- Zangarra Amulet
 			}),
-			n(-321, {	-- Shoulder
+			n(SHOULDER, {
 				i(118831),	-- Arentios' Amice of Alacrity
 				i(118892),	-- Botani-Barbed Pauldrons
 				i(118891),	-- Dunestalker's Mantle
@@ -38,7 +38,7 @@ _.WorldDrops =
 				i(118859),	-- Mantle of Moriccalas
 				i(118890),	-- Studded Frostboar Leather Spaulders
 			}),
-			n(-322, {	-- Back
+			n(BACK, {
 				i(116720),	-- Ancestral Cloak
 				i(118814),	-- Berserker's Windwrap
 				i(116693),	-- Coldsinger Cloak
@@ -61,24 +61,24 @@ _.WorldDrops =
 				i(118813),	-- Tarred Greatcloak
 				i(116705),	-- Zangarra Cloak
 			}),
-			n(-323, {	-- Chest
+			n(CHEST, {
 				i(118819),	-- Ariya's Auspicious Robe
 				i(118855),	-- Chyler's Charming Chestguard
 				i(118827),	-- Thrice-Tanned Tunic
 			}),
-			n(-326, {	-- Wrist
+			n(WRIST, {
 				i(118860),	-- Bolt-Bound Bracers
 				i(118839),	-- Bonechain Bracers
 				i(118824),	-- Noxiia's Shackles
 				i(118832),	-- Wodin's Weary Wristguards
 			}),
-			n(-327, {	-- Hands
+			n(HANDS, {
 				i(118828),	-- Amienne's Velvety Touch
 				i(118820),	-- Anruin's Grips of Agony
 				i(118856),	-- Cydil's Coiled Grasp
 				i(118835),	-- Kiraser's Gloves of Precision
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				i(118888),	-- Ashelia's Adorned Waistguard
 				i(118833),	-- Chain Links of Pea'dexx
 				i(118887),	-- Cloudcaller's Linked Belt
@@ -88,13 +88,13 @@ _.WorldDrops =
 				i(118886),	-- Waistgirdle of the Mountain
 				i(118825),	-- Windswept Leather Waistguard
 			}),
-			n(-329, {	-- Legs
+			n(LEGS, {
 				i(118858),	-- Fobbly's Fabulous Legplates
 				i(118830),	-- Fur-Padded Driftwaders
 				i(118822),	-- Kitsy's Knickers
 				i(118837),	-- Puu'sey's Pantaloons
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(118826),	-- Cadi's Grass Stained Slippers
 				i(122240, {	-- Footwraps of the Frostweaver
 					["description"] = "Yes, they're a world drop, and yes, they're BoP.  We're as perplexed as you are.",

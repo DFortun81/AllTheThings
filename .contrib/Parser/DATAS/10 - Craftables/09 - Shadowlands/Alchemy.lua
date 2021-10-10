@@ -6,7 +6,7 @@ _.Craftables =
 {
 	tier(SL_TIER, {
 		prof(ALCHEMY, {
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(180751),	-- Red Noggin Candle
 			}),
 			filter(53, {	-- Trinkets
