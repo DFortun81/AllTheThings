@@ -2007,7 +2007,7 @@ for key,value in pairs({
 	[246269] = "작은 보물 상자",	-- Small Treasure Chest
 	[246309] = "작은 보물 상자",	-- Small Treasure Chest
 	[246353] = "작은 보물 상자",	-- Small Treasure Chest
-	--TODO: [246438] = "Blingtron Circuit Design",	-- Blingtron Circuit Design
+	[246438] = "블링트론 회로 설계",	-- Blingtron Circuit Design
 	[246524] = "작은 보물 상자",	-- Small Treasure Chest
 	[246555] = "작은 보물 상자",	-- Small Treasure Chest
 	[246556] = "작은 보물 상자",	-- Small Treasure Chest
