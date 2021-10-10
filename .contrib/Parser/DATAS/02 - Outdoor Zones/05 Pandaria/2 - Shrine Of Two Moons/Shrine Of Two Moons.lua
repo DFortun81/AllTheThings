@@ -77,21 +77,6 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 					}),
 				--	q(31279),	-- Everything I Know About Cooking
-					q(32901, {	-- Heroic Deeds
-						["coord"] = { 46.6, 56.5, 392 },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 66998 },	-- Jinho the Wind Breaker
-						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
-						["lvl"] = 90,
-						["g"] = {
-							i(98546,  {  -- Bulging Heroic Cache of Treasures
-								["sym"] = {
-									{"select", "itemID", 98134},	-- Heroic Cache of Treasures
-									{"pop"},
-								},
-							}),
-						},
-					}),
 					q(33249, {	-- Proving Grounds
 						["coord"] = { 46.6, 56.5, 392 },
 						["races"] = HORDE_ONLY,

@@ -1092,6 +1092,7 @@ _.Zones =
 						i(165840, {	-- Interdimensional Pet Portal
 							["questID"] = 54264,
 							["cost"] = { { "i", 163036, 1000 }, },	-- 1,000x Polished Pet Charm
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(163502, {	-- Lil' Ben'fon (PET!)
 							["sourceQuests"] = { 50297 },	-- The Head of Her Enemy
@@ -1106,6 +1107,7 @@ _.Zones =
 						i(139003, {	-- Pocket Pet Portal
 							["questID"] = 43016,
 							["cost"] = { { "i", 163036, 1000 }, },	-- 1,000x Polished Pet Charm
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(163499, {	-- Raptor Containment Crate (PET!)
 							["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm

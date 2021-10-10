@@ -288,6 +288,7 @@ _.Achievements =
 			ach(10876, {	-- Battle on the Broken Isles
 				i(139003, {	-- Pocket Pet Portal
 					["questID"] = 43016,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				crit(1, {	-- Size Doesn't Matter (Azsuna)
 					["_quests"] = { 42063 },

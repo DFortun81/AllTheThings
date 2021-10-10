@@ -136,5 +136,177 @@ _.Titles =
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
 		}),
 		title(446),	-- <Name> the Tormented
+		title(371, {	-- <Name>, No Good, Dirty, Rotten, Candy Stealer!
+			["collectible"] = false,
+		}),
+		title(108, {	-- <Name> the Immortal
+			["timeline"] = {
+				"added 3.0.2",
+				"removed 4.0.3",
+			},
+		}),
+		title(109, {	-- <Name> the Undying
+			["timeline"] = {
+				"added 3.0.2",
+				"removed 4.0.3",
+			},
+		}),
+		title(126, {	-- <Name>, Conqueror of Ulduar
+			["timeline"] = {
+				"added 3.1.0",
+				"removed 4.0.3",
+			},
+		}),
+		title(127, {	-- <Name>, Champion of Ulduar
+			["timeline"] = {
+				"added 3.1.0",
+				"removed 4.0.3",
+			},
+		}),
+		title(136, {	-- <Name> the Argent Defender
+			["timeline"] = {
+				"added 3.2.0",
+				"removed 4.0.3",
+			},
+		}),
+		title(201, {	-- <Name> the Undaunted
+			["timeline"] = {
+				"added 5.0.4",
+				"removed 6.0.2",
+			},
+		}),
+		title(228, {	-- Darkspear Revolutionary <Name>
+			["races"] = HORDE_ONLY,
+			["timeline"] = {
+				"added 5.3.0",
+				"removed 5.4.0",
+			},
+		}),
+		title(230, {	-- <Name> the Hordebreaker
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = {
+				"added 5.3.0",
+				"removed 5.4.0",
+			},
+		}),
+		title(256, {	-- <Name> of the Black Harvest
+			["classes"] = { WARLOCK },
+			["timeline"] = {
+				"added 5.2.0",
+				"removed 6.0.3",
+			},
+		}),
+		title(280, {	-- <Name>, Tarren Mill Terror
+			["races"] = ALLIANCE_ONLY,
+			["u"] = REMOVED_FROM_GAME,
+		}),
+		title(281, {	-- <Name>, Southshore Slayer
+			["races"] = HORDE_ONLY,
+			["u"] = REMOVED_FROM_GAME,
+		}),
+		title(289, {	-- <Name> of the Iron Vanguard
+			["timeline"] = {
+				"added 6.0.2",
+				"removed 6.0.3.19116",
+			},
+		}),
+		title(290, {	-- <Name> the Indomitable
+			["timeline"] = {
+				"added 6.0.3",
+				"removed 7.0.3",
+			},
+		}),
+		title(306, {	-- <Name>, Legend of Pandaria
+			["timeline"] = {
+				"added 5.4.0",
+				"removed 6.0.3",
+			},
+		}),
+		title(347, {	-- <Name> the Chosen
+			["timeline"] = {
+				"added 7.2.0",
+				"removed 8.0.1",
+			},
+		}),
+		title(407, {	-- <Name>, Azeroth's Champion
+			["timeline"] = {
+				"added 8.2.0",
+				"removed 9.0.1",
+			},
+		}),
+		title(418, {	-- <Name> the Awakened
+			["timeline"] = {
+				"added 8.3.0",
+				"removed 9.0.1",
+			},
+		}),
+		title(419, {	-- <Name> the Faceless One
+			["timeline"] = {
+				"added 8.3.0",
+				"removed 9.0.1",
+			},
+		}),
+		title(431, {	-- <Name> the Proud
+			["timeline"] = {
+				"added 9.0.1",
+				"removed 9.1.0",
+			},
+		}),
 	}),
+	n(ACHIEVEMENTS, bubbleDown({ ["u"] = REMOVED_FROM_GAME, ["collectible"] = false, }, { -- Realm Best Time Challenge Mode (Blizzard removed these from players)
+		title(241),	-- <Name>, Defender of the Wall
+		title(242),	-- Mogu-Slayer <Name>
+		title(243),	-- Flameweaver <Name>
+		title(244),	-- Scarlet Commander <Name>
+		title(245),	-- Darkmaster <Name>
+		title(246),	-- Purified Defender <Name>
+		title(247),	-- Siegebreaker <Name>
+		title(248),	-- Stormbrewer <Name>
+		title(249),	-- Jade Protector <Name>
+		title(255),	-- Mistwalker <Name>
+		title(291),	-- <Name> the Mine Master
+		title(292),	-- Dockmaster <Name>
+		title(293),	-- <Name> the Soul Preserver
+		title(294),	-- <Name>, Scion of Rukhmar
+		title(295),	-- Spiritwalker <Name>
+		title_gendered(296, 297),	-- <Name>, Lord of Blackrock / Lady of Blackrock
+		title(298),	-- <Name> the Violet Guardian
+		title(299),	-- <Name> the Grimrail Suplexer
+	})),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	f(110, {	-- Titles
+		title(54),	-- <Name> of the Ten Storms
+		title(55),	-- <Name> of the Emerald Dream
+		title(57),	-- Prophet <Name>
+		title(58),	-- <Name> the Malefic
+		title(60),	-- <Name> of the Ebon Blade
+		title(63),	-- Assassin <Name>
+		title(64),	-- Grand Master Alchemist <Name>
+		title(65),	-- Grand Master Blacksmith <Name>
+		title(66),	-- Iron Chef <Name>
+		title(67),	-- Grand Master Enchanter <Name>
+		title(68),	-- Grand Master Engineer <Name>
+		title(69),	-- Doctor <Name>
+		title(70),	-- Grand Master Angler <Name>
+		title(71),	-- Grand Master Herbalist <Name>
+		title(72),	-- Grand Master Scribe <Name>
+		title(73),	-- Grand Master Jewelcrafter <Name>
+		title(74),	-- Grand Master Leatherworker <Name>
+		title(75),	-- Grand Master Miner <Name>
+		title(76),	-- Grand Master Skinner <Name>
+		title(77),	-- Grand Master Tailor <Name>
+		title(82),	-- <Name> the Lion Hearted
+		title(83),	-- <Name>, Champion of Elune
+		title(84),	-- <Name>, Hero of Orgrimmar
+		title(85),	-- Plainsrunner <Name>
+		title(86),	-- <Name> of the Darkspear
+		title(87),	-- <Name> the Forsaken
+		title(91),	-- <Name>, Hero of Northrend
+		title(330),	-- Master Assassin <Name>
+		title(406),	-- Sparking <Name>
+		title(408),	-- Pilgrim <Name> the Mallet Bearer
+		title(424),	-- Deathbringer <Name>
+		title(436),	-- <Name> the Avowed
+	}),
+});

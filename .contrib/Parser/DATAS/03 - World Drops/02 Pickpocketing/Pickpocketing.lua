@@ -44,11 +44,6 @@ _.WorldDrops =
 			i(151147),	-- Charmed Pendant	10
 			i(151146),	-- Charmed Band
 		}),
-		n(-10100, {	-- Shadowlands
-			i(180868, {	-- Fear's Heartpiercer
-				["description"] = "Can be pickpocketed from Venthyr in Revendreth.",
-			}),
-		}),
 		n(-161,  {	-- Toys
 			i(36863, {	-- Decahedral Dwarven Dice
 				["description"] = "Can be pickpocketed from Northrend humanoids.",
