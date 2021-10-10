@@ -878,7 +878,7 @@ namespace ATT
             {
                 // Assign the model and then inform the engineer.
                 OBJECT_MODELS[objectID] = model;
-                Trace.Write("OBJECT ICON MISSING FOR ");
+                Trace.Write("OBJECT MODEL MISSING FOR ");
                 Trace.Write(objectID);
                 Trace.Write(": ASSIGNED ");
                 Trace.Write(model);
