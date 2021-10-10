@@ -26,7 +26,7 @@ _.Zones =
 
 					-- for "how to train your direhorn," i never got the version of "away from the herd" that is questID #55249, just #55244.  figure out if 55249 is used/unused and if/when it appears.
 
-				n(-9, {		-- PvP
+				n(PVP, {
 					["lvl"] = 120,	-- Don't become available until this level.
 					["g"] = {
 						n(-852, {	-- Azerite Essences

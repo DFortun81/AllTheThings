@@ -7,7 +7,7 @@ _.Zones =
 	m(KULTIRAS, {
 		m(BORALUS, {
 			n(QUESTS, {
-				n(-9, {	-- PvP
+				n(PVP, {
 					n(-852, {	-- Azerite Essences
 						i(169902, {	-- Finger-Bone Trophy of Battle (Rank 1)
 							["description"] = "Requires earning 500 Conquest and opening your weekly chest.\n",

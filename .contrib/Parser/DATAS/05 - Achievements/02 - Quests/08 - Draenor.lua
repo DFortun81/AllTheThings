@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9956, {	-- Quests
+	n(QUESTS, {
 		n(-9981, {	-- Draenor
 			ach(9437),		-- A Demidos of Reality (Socrethar's Rise)
 			ach(9433),		-- A-VOID-ance (Shadowmoon Enclave)

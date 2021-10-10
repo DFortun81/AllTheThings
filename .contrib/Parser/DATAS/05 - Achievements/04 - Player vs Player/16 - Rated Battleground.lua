@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(-9958, {	-- Player vs Player
+	pvp(n(PVP, {
 		n(-9999, {	-- Rated Battleground
 			ach(5351, {	-- Blood Guard
 				["races"] = HORDE_ONLY,

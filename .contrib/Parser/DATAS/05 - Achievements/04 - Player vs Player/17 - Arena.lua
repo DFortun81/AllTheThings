@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(-9958, {	-- Player vs Player
+	pvp(n(PVP, {
 		n(-10000, {	-- Arena
 			ach(876, {	-- Brutally Dedicated
 				i(43349),	-- Tabard of Brute Force

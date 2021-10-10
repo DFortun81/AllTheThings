@@ -835,13 +835,13 @@ app.L = {
 	["HEADER_ICONS"] = {
 		--[-] = "Interface\\Icons\\",														--
 	-- Commonly used
-		[0] = app.asset("Interface_Zone_drop"),						                    	-- Zone Drop
+		[0] = app.asset("Interface_Zone_drop"),												-- Zone Drop
 		[-1] = "Interface\\Icons\\Achievement_Garrison_Horde_PVE",							-- Common Boss Drop
-		[-2] = app.asset("Interface_Vendor"),		        								-- Vendors
+		[-2] = app.asset("Interface_Vendor"),												-- Vendors
 		[-3] = app.asset("Category_Holidays"),												-- Holidays
 		[-4] = app.asset("Category_Achievements"),											-- Achievement
 		[-7] = app.asset("Interface_World_boss"),				                            -- World Bosses (Achievement_Boss_ShadeOfEranikus)
-		[-9] = app.asset("Category_PvP"),													-- PvP
+		[-9] = app.asset("Category_PvP"),													-- Player vs. Player
 		[-10] = "Interface\\Icons\\achievement_reputation_05",								-- Party Sync
 		[-11] = "Interface\\Icons\\inv_misc_crate04horde",									-- Common Box Drops
 		[-12] = "Interface\\Icons\\Ability_Warlock_DemonicEmpowerment",						-- East entrance demons
@@ -850,11 +850,8 @@ app.L = {
 		[-15] = "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02",					-- Exploration
 		[-16] = app.asset("Interface_Rare"),												-- Rare
 		[-17] = app.asset("Interface_Quest_header"),										-- Quests
-		-- #if BEFORE WOD
-		[-18] = app.asset("Interface_Rewards"), 									    	-- Rewards
-		-- #else
-		[-18] = app.asset("Interface_Rewards"), 							            	-- Rewards
-		-- #endif
+		[-18] = app.asset("Interface_Rewards"),		 										-- Rewards
+		--[-18] = "Interface\\Icons\\inv_misc_coinbag_special", 								-- Rewards
 		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
 		[-20] = "Interface\\Icons\\INV_Misc_Coin_02",										-- Common Vendor Items
 		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
@@ -873,7 +870,7 @@ app.L = {
 		[-44] = "Interface\\Icons\\inv_chest_leather_09",									-- Leather Armor
 		[-45] = "Interface\\Icons\\inv_chest_chain_05",										-- Mail Armor
 		[-46] = "Interface\\Icons\\inv_chest_plate01",										-- Plate Armor
-	-- World Events
+	-- World Events (These are used by ATT CLassic)
 		[-47] = "Interface\\Icons\\achievement_worldevent_lunar",							-- Lunar Festival
 		[-52] = "Interface\\Icons\\inv_misc_toy_04",										-- Children's Week
 		[-53] = "Interface\\Icons\\inv_summerfest_symbol_high",								-- Midsummer Fire Festival
@@ -1257,7 +1254,7 @@ app.L = {
 		[-900] = 3675495,																	-- Covenant Sanctums
 		[-901] = 3726261,																	-- Covenant Callings
 		[-902] = 3726261,																	-- Renown
-		[-903] = "Interface\\Icons\\buff_feltreasures",										-- Zone Rewards
+		[-903] = app.asset("Interface_Rewards"),											-- Zone Rewards
 		[-904] = "Interface\\Icons\\ui_torghast",											-- Wrath of the Jailer
 		[-905] = 3675495,																	-- Command Table
 		[-906] = 3675495,																	-- Tier 1: Tactical Insight
@@ -1418,9 +1415,9 @@ app.L = {
 		[-9952] = "Interface\\Icons\\ClassIcon_Druid",								-- Guardian / Feral Spec
 	------ ACHIEVEMENT HEADER SECTION ------
 		[-9955] = "Interface\\Icons\\achievement_general",							-- General
-		[-9956] = app.asset("Interface_Quest_header"),								-- Quests
+		
 		[-9957] = "Interface\\Icons\\inv_misc_map02",								-- Exploration
-		[-9958] = app.asset("Category_PvP"),										-- Player vs Player
+		
 		[-9959] = app.asset("Category_D&R"),										-- Dungeons & Raids
 		[-9960] = app.asset("Category_Professions"),								-- Professions
 		[-9961] = app.asset("Category_Factions"),									-- Reputation
@@ -1472,15 +1469,15 @@ app.L = {
 		[-10012] = app.asset("Expansion_LEGION"),									-- Legion Dungeon
 		[-10013] = app.asset("Expansion_LEGION"),									-- Legion Raid
 		[-10014] = app.asset("Expansion_WOTLK"),									-- Wrath of the Lich King
-		[-10015] = "Interface\\Icons\\Paladin_Protection",							-- Lunar Festival
-		[-10018] = "Interface\\Icons\\Paladin_Protection",							-- Children's Week
-		[-10019] = "Interface\\Icons\\Paladin_Protection",							-- Midsummer
-		[-10020] = "Interface\\Icons\\Paladin_Protection",							-- Brewfest
-		[-10021] = "Interface\\Icons\\Paladin_Protection",							-- Hallow's End
-		[-10022] = "Interface\\Icons\\Paladin_Protection",							-- Pilgrim's Bounty
-		[-10023] = "Interface\\Icons\\Paladin_Protection",							-- Winterveil
-		[-10025] = "Interface\\Icons\\Paladin_Protection",							-- Darkmoon Faire
-		[-10026] = "Interface\\Icons\\Paladin_Protection",							-- Brawler's Guild
+		
+		
+		
+		
+		
+		
+		
+		[-10025] = app.asset("Event_dmf"),											-- Darkmoon Faire
+		[-10026] = "Interface\\Icons\\spell_holy_fistofjustice",					-- Brawler's Guild
 		[-10027] = "Interface\\Icons\\Paladin_Protection",							-- Collect
 		[-10028] = "Interface\\Icons\\Paladin_Protection",							-- Battle
 		[-10029] = "Interface\\Icons\\Paladin_Protection",							-- Level
@@ -1527,11 +1524,8 @@ app.L = {
 		[-10102] = app.asset("Expansion_SL"),										-- Shadowlands Raid
 		[-10103] = "Interface\\Icons\\Paladin_Protection",							-- The Maw and Torghast
 		[-10105] = 236373,															-- Covenant Assaults
-		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
-		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
-		[-101503] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
-		[-101504] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
-		-- Achieve 14339 Sub-Criteira
+
+	-- Achieve 14339 Sub-Criteira
 		[-1433901] = 3528288,															-- Anima Crystal Shard
 	--	hopefully temp custom NPCs, these objects do not have data on wowhead atm
 		[-1433951] = "3854020",															-- Broken Mirror
@@ -1552,10 +1546,10 @@ app.L = {
 		[0] = ZONE.." "..BATTLE_PET_SOURCE_1,									-- Zone Drop
 		[-1] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,				-- Common Boss Drop
 		[-2] = TUTORIAL_TITLE20,												-- Vendors
-		[-3] = GetItemSubClassInfo(15,3),										-- World Event
+		[-3] = GetItemSubClassInfo(15,3),										-- Holiday
 		[-4] = ACHIEVEMENTS,													-- Achievements
 		[-7] = WORLD.." "..RAID_BOSSES,											-- World Bosses
-		[-9] = GDAPI_REALMTYPE_PVP,												-- PvP
+		[-9] = BUG_CATEGORY14,													-- Player vs. Player
 		[-10] = SPLASH_BATTLEFORAZEROTH_8_2_5_FEATURE1_TITLE,					-- Party Sync
 		[-11] = "Common Box Drops",												-- Common Box Drops
 		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [East - Demons]",					-- Warpwood Quarter [East - Demon]
@@ -1583,7 +1577,7 @@ app.L = {
 		[-44] = GetItemSubClassInfo(4,2).." "..RESISTANCE0_NAME,				-- Leather
 		[-45] = GetItemSubClassInfo(4,3).." "..RESISTANCE0_NAME,				-- Mail
 		[-46] = GetItemSubClassInfo(4,4).." "..RESISTANCE0_NAME,				-- Plate
-	-- World Events
+	-- World Events (These are used by ATT CLassic)
 		[-47] = select(1,GetCategoryInfo(160)),									-- Lunar Festival
 		[-52] = select(1,GetCategoryInfo(163)),									-- Children's Week
 		[-53] = "Midsummer Fire Festival",										-- Midsummer Fire Festival
@@ -1593,7 +1587,7 @@ app.L = {
 		[-59] = "Day of the Dead",												-- Day of the Dead
 		[-60] = select(1,GetCategoryInfo(14981)),								-- Pilgrim's Bounty
 		[-61] = GetSpellInfo(21953),											-- The Feast of Winter Veil
-		[-62] = "Stranglethorn Fishing Extravaganza",
+		[-62] = "Stranglethorn Fishing Extravaganza",							-- Stranglethorn Fishing Extravaganza
 
 		[-68] = DUNGEON_FLOOR_NIGHTMARERAID13,									-- The Emerald Dream
 		[-69] = GetSpellInfo(21127),											-- Maraudon Portal
@@ -2177,9 +2171,9 @@ app.L = {
 		[-9952] = GetSpellInfo(234890).." & "..GetSpellInfo(137011), 			-- Guardian / Feral Druid Spec
 	------ ACHIEVEMENT HEADER SECTION ------
 		[-9955] = STAT_CATEGORY_GENERAL,										-- General
-		[-9956] = QUESTS_LABEL,													-- Quests
+		
 		[-9957] = select(1,GetCategoryInfo(97)),								-- Exploration
-		[-9958] = BUG_CATEGORY14,												-- Player vs Player
+		
 		[-9959] = GROUP_FINDER,													-- Dungeons & Raids
 		[-9960] = TRADE_SKILLS,													-- Professions
 		[-9961] = TUTORIAL_TITLE16,												-- Reputation
@@ -2231,13 +2225,13 @@ app.L = {
 		[-10012] = select(1,GetCategoryInfo(15254)),							-- Legion Dungeon
 		[-10013] = select(1,GetCategoryInfo(15255)),							-- Legion Raid
 		[-10014] = select(1,GetCategoryInfo(14823)),							-- Wrath of the Lich King
-		[-10015] = select(1,GetCategoryInfo(160)),								-- Lunar Festival
-		[-10018] = select(1,GetCategoryInfo(163)),								-- Children's Week
-		[-10019] = select(1,GetCategoryInfo(161)),								-- Midsummer
-		[-10020] = select(1,GetCategoryInfo(162)),								-- Brewfest
-		[-10021] = select(1,GetCategoryInfo(158)),								-- Hallow's End
-		[-10022] = select(1,GetCategoryInfo(14981)),							-- Pilgrim's Bounty
-		[-10023] = select(1,GetCategoryInfo(156)),								-- Winterveil
+		
+		
+		
+		
+		
+		
+		
 		[-10025] = select(1,GetCategoryInfo(15101)),							-- Darkmoon Faire
 		[-10026] = select(1,GetCategoryInfo(15282)),							-- Brawler's Guild
 		[-10027] = select(1,GetCategoryInfo(15118)),							-- Collect

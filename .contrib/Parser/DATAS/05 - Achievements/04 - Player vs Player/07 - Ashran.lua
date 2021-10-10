@@ -5,7 +5,7 @@
 -- TODO: reformat this file
 _.Achievements =
 {
-	pvp(n(-9958, {	-- Player vs Player
+	pvp(n(PVP, {
 		n(-9997, {	-- Ashran
 			ach(9102),	-- Ashran Victory
 			ach(9104, {	-- Bounty Hunter (A)

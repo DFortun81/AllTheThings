@@ -5,7 +5,7 @@
 _.Mounts =
 {
 	n(-40, {
-		n(-9958, {	-- PvP
+		n(PVP, {
 			un(REMOVED_FROM_GAME, ach(886, {	-- Swift Nether Drake
 				un(REMOVED_FROM_GAME, i(30609)),	-- Swift Nether Drake
 			})),

@@ -177,7 +177,7 @@ _.Titles =
 				},
 			}),
 		}),
-		pvp(n(-9, {	-- PvP
+		pvp(n(PVP, {
 			-- Classic Allaince Ranks
 			title(1, {	-- Private <Name>
 				["races"] = ALLIANCE_ONLY,

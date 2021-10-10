@@ -4,7 +4,7 @@
 
 _.Titles =
 {
-	pvp(n(-9, {	-- PvP
+	pvp(n(PVP, {
 		-- Honor Ranks
 		title(321),	-- The Honorable <Name>
 		title(322),	-- The Prestigious <Name>

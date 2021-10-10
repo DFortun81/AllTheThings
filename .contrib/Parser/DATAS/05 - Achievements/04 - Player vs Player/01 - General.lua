@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(-9958, {	-- Player vs Player
+	pvp(n(PVP, {
 		n(-9955, {	-- General
 			ach(5363, {	-- 250000 Honorable Kills
 				title(184),		-- the Bloodthirsty
