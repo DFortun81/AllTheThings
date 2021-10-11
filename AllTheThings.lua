@@ -3201,7 +3201,7 @@ local function FillPurchases(group, depth)
 	return group;
 end
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
-	if not search then return nil; end
+	if not search or search:find("%[]") then return; end
 	local now = time();
 	local cache = searchCache[search];
 	if cache and (now - cache[1]) < cache[2] then return cache[3]; end
@@ -5714,16 +5714,18 @@ local function AttachTooltipRawSearchResults(self, group)
 		end
 
 		self.AttachComplete = not group.working;
+		self.HasATTSearchResults = true;
 	end
 end
 local function AttachTooltipSearchResults(self, search, method, paramA, paramB, ...)
 	-- Don't attach tooltip results multiple times
 	if not self.HasATTSearchResults then
+		-- print("build tooltip search",self.HasATTSearchResults,search)
 		-- tooltips can skip to level 1
 		app.SetSkipPurchases(1);
 		AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 		app.SetSkipPurchases(0);
-		self.HasATTSearchResults = true;
+	-- else print("skip tooltip search",self.HasATTSearchResults,search)
 	end
 end
 
@@ -5753,6 +5755,7 @@ end
 
 local function AttachTooltip(self)
 	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
+	-- print("AttachTooltip",self:GetItem(),"_",self:GetUnit(),"_",self:GetSpell())
 	local numLines = self:NumLines();
 	if numLines < 1 then
 		return false
@@ -5780,7 +5783,7 @@ local function AttachTooltip(self)
 	if CanAttachTooltips() then
 		-- check what this tooltip is currently displaying, and keep that reference
 		local link, target, spellID = select(2, self:GetItem());
-		if link then
+		if link and not link:find("%[]") then
 			if self.AllTheThingsProcessing and self.AllTheThingsProcessing == link then
 				return true;
 			else
@@ -18852,9 +18855,9 @@ hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
 		end
 	end
 end)
-hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, itemID, reagentID, ...)
+hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, recipeID, reagentID, ...)
 	if CanAttachTooltips() then
-		local link = C_TradeSkillUI.GetRecipeReagentItemLink(itemID, reagentID);
+		local link = C_TradeSkillUI.GetRecipeReagentItemLink(recipeID, reagentID);
 		if link then
 			AttachTooltipSearchResults(self, link, SearchForLink, link);
 			self:Show();
