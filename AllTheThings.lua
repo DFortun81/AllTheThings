@@ -321,6 +321,22 @@ local insertionSort = function(t, compare)
 		end
 	end
 end
+-- Performs table.concat(tbl, sep, i, j) on the given table, but uses the specified field of table values if provided,
+-- with a default fallback value if the field does not exist on the table entry
+app.TableConcat = function (tbl, field, def, sep, i, j)
+	if tbl then
+		if field then
+			local tblvals, tinsert = {}, tinsert;
+			for _,val in ipairs(tbl) do
+				tinsert(tblvals, val[field] or def);
+			end
+			return table.concat(tblvals, sep, i, j);
+		else
+			return table.concat(tbl, sep, i, j);
+		end
+	end
+	return "";
+end
 
 -- Data Lib
 local attData;
@@ -4046,12 +4062,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		local knownBy = {};
 		for guid,character in pairs(ATTCharacterData) do
 			if character.Spells and character.Spells[group.spellID] then
-				table.insert(knownBy, character.text or "???");
+				table.insert(knownBy, character);
 			end
 		end
 		if #knownBy > 0 then
-			insertionSort(knownBy, function(a, b) return a < b; end);
-			local desc = L["KNOWN_BY"] .. table.concat(knownBy, ", ");
+			insertionSort(knownBy, function(a, b) return a.name < b.name; end);
+			local desc = L["KNOWN_BY"] .. app.TableConcat(knownBy, "text", "??", ", ");
 			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
 		end
 	end
