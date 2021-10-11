@@ -1159,8 +1159,8 @@ local function GetProgressTextForRow(data)
 		if data.g and not data.expanded and #data.g > 0 then
 			return "+++";
 		end
+		return "---";
 	end
-	return "---";
 end
 local function GetProgressTextForTooltip(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
@@ -13290,7 +13290,7 @@ local function SetRowData(self, row, data)
 			relative = "RIGHT";
 			x = rowPad / 2;
 		end
-		local summary = GetProgressTextForRow(data);
+		local summary = GetProgressTextForRow(data) or "---";
 		local iconAdjust = summary and string.find(summary, "|T") and -1 or 0;
 		local specs = data.specs;
 		if specs and #specs > 0 then
