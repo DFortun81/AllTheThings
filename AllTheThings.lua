@@ -3584,6 +3584,23 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 
+					-- Special case to double-check VisualID collection in Unique/Main modes because blizzard doesn't return consistent data
+					-- non-collected SourceID, non-collected* for Account, and in Unique Mode
+					if not sourceInfo.isCollected and not rawget(ATTAccountWideData.Sources, sourceID) and not app.Settings:Get("Completionist") then
+						local collected = app.ItemSourceFilter(sourceInfo);
+						if collected then
+							-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
+							-- does not return this SourceID, so it doesn't get flagged by the refresh logic and we need to track it manually for
+							-- this Account as being 'collected'
+							tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], "ffe35832") });
+							-- if the tooltip immediately refreshes for whatever reason the
+							-- store this SourceID as being collected* so it can be properly collected* during force refreshes in the future without requiring a tooltip search
+							if not ATTAccountWideData.BrokenUniqueSources then ATTAccountWideData.BrokenUniqueSources = {}; end
+							local uniqueSources = ATTAccountWideData.BrokenUniqueSources;
+							rawset(uniqueSources, sourceID, 1);
+						end
+					end
+
 					if app.IsReady and sourceGroup.missing then
 						tinsert(info, { left = Colorize("Item Source not found in the " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], "ffff0000") });	-- Do not localize first part of the message, it is for contribs
 						tinsert(info, { left = Colorize(sourceID .. ":" .. tostring(sourceInfo.visualID), "ffe35832") });
@@ -5429,8 +5446,8 @@ local function RefreshSaves()
 end
 local function RefreshAppearanceSources()
 	app.DoRefreshAppearanceSources = nil;
-	wipe(ATTAccountWideData.Sources);
-	local collectedSources = ATTAccountWideData.Sources;
+	local collectedSources, brokenUniqueSources = ATTAccountWideData.Sources, ATTAccountWideData.BrokenUniqueSources;
+	wipe(collectedSources);
 	-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
 	-- Simply determine the max known SourceID from ATT cached sources
 	if not app.MaxSourceID then
@@ -5461,6 +5478,16 @@ local function RefreshAppearanceSources()
 			if rawget(collectedSources, s) == 1 then
 				-- collect shared visual sources
 				app.MarkUniqueCollectedSourcesBySource(s, currentCharacterOnly);
+			elseif brokenUniqueSources then
+				-- special reverse-check-logic for unknown SourceID's whose VisualID does not return the SourceID from C_TransmogCollection_GetAllAppearanceSources(VisualID)
+				-- and haven't already been marked as unique-collected
+				if rawget(brokenUniqueSources, s) and not rawget(collectedSources, s) then
+					local sInfo = C_TransmogCollection_GetSourceInfo(s);
+					if app.ItemSourceFilter(sInfo) then
+						-- print("Fixed Unique SourceID Collected",s)
+						rawset(collectedSources, s, 2);
+					end
+				end
 			end
 		end
 		-- print("Unique Refresh done")
@@ -12182,7 +12209,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 	-- Get the source info for this source ID.
 	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 	if sourceInfo then
-		-- Go through all of the shared appearances and see if we're "unlocked" any of them.
+		-- Go through all of the shared appearances and see if we've "unlocked" any of them.
 		local unlockedSourceIDs, allSources = { sourceID }, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID);
 		for _,otherSourceID in ipairs(allSources) do
 			-- If this isn't the source we already did work on and we haven't already completed it

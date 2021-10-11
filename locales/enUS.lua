@@ -222,6 +222,7 @@ app.L = {
 	["QUEST_OBJECTIVE_INVALID"] = "Invalid Quest Objective";
 	["REFRESHING_COLLECTION"] = "Refreshing collection...";
 	["DONE_REFRESHING"] = "Done refreshing collection.";
+	["ADHOC_UNIQUE_COLLECTED_INFO"] = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";
