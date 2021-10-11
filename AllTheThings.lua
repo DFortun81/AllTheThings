@@ -4046,18 +4046,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		local knownBy = {};
 		for guid,character in pairs(ATTCharacterData) do
 			if character.Spells and character.Spells[group.spellID] then
-				table.insert(knownBy, character);
+				table.insert(knownBy, character.text or "???");
 			end
 		end
 		if #knownBy > 0 then
-			insertionSort(knownBy, function(a, b)
-				return a.text < b.text;
-			end);
-			local desc = L["KNOWN_BY"];
-			for i,character in ipairs(knownBy) do
-				if i > 1 then desc = desc .. ", "; end
-				desc = desc .. (character.text or "???");
-			end
+			insertionSort(knownBy, function(a, b) return a < b; end);
+			local desc = L["KNOWN_BY"] .. table.concat(knownBy, ", ");
 			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
 		end
 	end
