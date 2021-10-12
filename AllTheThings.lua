@@ -14132,7 +14132,81 @@ RowOnEnter = function (self)
 			if numSpecializations and numSpecializations > 0 then
 				local encounterID = GetRelativeValue(reference.parent, "encounterID");
 				if encounterID then
-					local difficultyID = GetRelativeValue(reference.parent, "difficultyID");
+					-- TODO: revise in 9.1.5 when 'bonus drops' might be able to be identified via API calls (don't attribute to drop chance)
+					-- Why is Encounter Journal so weird? none of the API calls work unless the EJ is actually open... something is missing...
+
+					-- difficulty 0 seems to default to the lowest valid difficulty in the EJ
+					-- local tierID = GetRelativeValue(reference.parent, "tierID") or 0;
+					-- local instanceID = GetRelativeValue(reference.parent, "instanceID") or 0;
+					local difficultyID = GetRelativeValue(reference.parent, "difficultyID") or 0;
+					-- -- local funcs
+					-- local EJ_SetLootFilter, EJ_GetNumLoot = EJ_SetLootFilter, EJ_GetNumLoot;
+					-- local legacyLoot = C_Loot.IsLegacyLootModeEnabled();
+					-- print("tier/instance/encounter/difficulty",tierID,instanceID,encounterID,difficultyID)
+					-- EJ_SelectTier(tierID);
+					-- EJ_SelectInstance(instanceID);
+					-- EJ_SelectEncounter(encounterID);
+					-- EJ_SetDifficulty(difficultyID);
+					-- -- get total items
+					-- EJ_SetLootFilter(0, 0);
+					-- local totalItems = EJ_GetNumLoot() or 0;
+					-- print("diff/filter/items",EJ_GetDifficulty(),"/",EJ_GetLootFilter(),"/",totalItems)
+					-- -- Legacy Loot is simply 1 / total items chance since spec has no relevance to drops, i.e. this one item / total items in drop table
+					-- if totalItems > 0 then
+					-- 	GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], GetNumberWithZeros(100 / totalItems, 2) .. "%");
+					-- else
+					-- 	GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "N/A");
+					-- end
+
+					-- -- see what specs this reference item will drop for
+					-- local specs = reference.specs;
+					-- if specs then
+					-- 	local class, specItems, min, count = app.ClassIndex, {}, 100;
+					-- 	-- get items per spec and min items
+					-- 	for _,specID in pairs(specs) do
+					-- 		EJ_SetLootFilter(class, specID);
+					-- 		-- items for this spec
+					-- 		count = EJ_GetNumLoot() or 100;
+					-- 		print("class/spec/diff/filter/items",class,"/",specID,"/",EJ_GetDifficulty(),"/",EJ_GetLootFilter(),"/",count)
+					-- 		if count < min and count > 0 then
+					-- 			min = count;
+					-- 		end
+					-- 		specItems[specID] = count;
+					-- 	end
+					-- 	local chance = 100 / min;
+					-- 	local bestSpecs = {};
+					-- 	-- define the best specs based on min
+					-- 	for specID,count in pairs(specItems) do
+					-- 		if count == min then
+					-- 			tinsert(bestSpecs, specID);
+					-- 		end
+					-- 	end
+					-- 	-- print out the specs with min items
+					-- 	local specString = GetSpecsString(bestSpecs, true, true) or "???";
+					-- 	GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  GetNumberWithZeros(chance, 2).."% ("..GetNumberWithZeros(chance / 5, 2).."%) "..specString);
+					-- elseif legacyLoot then
+					-- 	-- Not available at all, best loot spec is the one with the most number of items in it.
+					-- 	print("legacy loot?")
+					-- 	-- local most, bestSpecID = 0;
+					-- 	-- for i=1,numSpecializations,1 do
+					-- 	-- 	local id = GetSpecializationInfo(i);
+					-- 	-- 	local specHit = specHits[id] or 0;
+					-- 	-- 	if specHit > most then
+					-- 	-- 		most = specHit;
+					-- 	-- 		bestSpecID = i;
+					-- 	-- 	end
+					-- 	-- end
+					-- 	-- if bestSpecID then
+					-- 	-- 	local id, name, description, icon = GetSpecializationInfo(bestSpecID);
+					-- 	-- 	if totalItems > 0 then
+					-- 	-- 		GameTooltip:AddDoubleLine(L["BONUS_ROLL"], GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
+					-- 	-- 	else
+					-- 	-- 		GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "N/A");
+					-- 	-- 	end
+					-- 	-- end
+					-- end
+
+
 					local encounterCache = fieldCache["encounterID"][encounterID];
 					if encounterCache then
 						local itemList = {};
@@ -14142,7 +14216,7 @@ RowOnEnter = function (self)
 							end
 						end
 						local specHits = {};
-						for i,item in ipairs(itemList) do
+						for _,item in ipairs(itemList) do
 							local specs = item.specs;
 							if specs then
 								for j,spec in ipairs(specs) do
@@ -14151,42 +14225,45 @@ RowOnEnter = function (self)
 							end
 						end
 
-						local totalItems = #itemList or 1; -- if somehow encounter drops 0 items but an item still references the encounter
+						local totalItems = #itemList; -- if somehow encounter drops 0 items but an item still references the encounter
+						local chance, color;
 						local legacyLoot = C_Loot.IsLegacyLootModeEnabled();
 
 						-- Legacy Loot is simply 1 / total items chance since spec has no relevance to drops, i.e. this one item / total items in drop table
 						if totalItems > 0 then
-							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], GetNumberWithZeros(100 / totalItems, 2) .. "%");
+							chance = 100 / totalItems;
+							color = GetProgressColor(chance / 100);
+							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "|c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
 						else
 							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "N/A");
 						end
 
 						local specs = reference.specs;
 						if specs and #specs > 0 then
-							local mySpecs = {};
-							for i=1,numSpecializations,1 do
-								mySpecs[select(1, GetSpecializationInfo(i))] = true;
-							end
-
 							-- Available for one or more loot specialization.
-							local least, bestSpecID = 99999999;
-							local matchingSpecs = {};
-							for i,spec in ipairs(specs) do
+							local least, bestSpecs = 999, {};
+							for _,spec in ipairs(specs) do
 								local specHit = specHits[spec] or 0;
-								if mySpecs[spec] then
-									matchingSpecs[spec] = true;
-
-									-- For Personal Loot!
-									if specHit > 0 and specHit < least then
-										least = specHit;
-										bestSpecID = spec;
-									end
+								-- For Personal Loot!
+								if specHit > 0 and specHit <= least then
+									least = specHit;
+									bestSpecs[spec] = specHit;
 								end
 							end
-							if bestSpecID then
-								local chance = (1 / specHits[bestSpecID]) * 100;
-								local id, name, description, icon = GetSpecializationInfoByID(bestSpecID);
-								GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  GetNumberWithZeros(chance, 2) .. "% (" .. GetNumberWithZeros(chance / 5, 2) .. "%) |T" .. icon .. ":0|t " .. name);
+							-- something has a best spec
+							if least < 999 then
+								-- define the best specs based on min
+								local rollSpec = {};
+								for specID,count in pairs(bestSpecs) do
+									if count == least then
+										tinsert(rollSpec, specID);
+									end
+								end
+								chance = 100 / least;
+								color = GetProgressColor(chance / 100);
+								-- print out the specs with min items
+								local specString = GetSpecsString(rollSpec, true, true) or "???";
+								GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  specString.."  |c"..color..GetNumberWithZeros(chance, 1).."%|r");
 							end
 						elseif legacyLoot then
 							-- Not available at all, best loot spec is the one with the most number of items in it.
@@ -14202,7 +14279,9 @@ RowOnEnter = function (self)
 							if bestSpecID then
 								local id, name, description, icon = GetSpecializationInfo(bestSpecID);
 								if totalItems > 0 then
-									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
+									chance = 100 / (totalItems - specHits[id]);
+									color = GetProgressColor(chance / 100);
+									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "|T" .. icon .. ":0|t " .. name .. " |c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
 								else
 									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "N/A");
 								end
