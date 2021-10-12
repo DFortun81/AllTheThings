@@ -12,10 +12,10 @@ _.Promotions =
 		},
 	}),
 	n(-536, { 	-- Hearthstone Mercenaries Promotion
-		["description"] = "Complete a bounty in Hearthstone's new Mercenaries Mode in order to receive this new mount.",
+		["description"] = "Complete Hearthstone's new Mercenaries Modes tutorial and send your party on a mission in order to receive this new mount.",
 		["timeline"] = { "added 9.1.0" },
 		["groups"] = {
-			--i(),	-- Sarge
+			mount(356488),	-- Sarge's Tale
 		},
 	}),
 };
