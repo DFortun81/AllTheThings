@@ -211,6 +211,7 @@ local L = app.L;
 	L.QUEST_OBJECTIVE_INVALID = "无效的任务目标";
 	L.REFRESHING_COLLECTION = "刷新收集...";
 	L.DONE_REFRESHING = "刷新收集完成.";
+	--TODO: L.ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "物品过滤";

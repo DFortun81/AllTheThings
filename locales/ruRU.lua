@@ -209,6 +209,7 @@ local L = app.L;
 	L.QUEST_OBJECTIVE_INVALID = "Недействительная Цель Задания";
 	L.REFRESHING_COLLECTION = "Обновление коллекции...";
 	L.DONE_REFRESHING = "Коллекция обновлена.";
+	L.ADHOC_UNIQUE_COLLECTED_INFO = "Этот Предмет сломан в ATT из-за отсутствующей информации от Blizzard. Можно поправить, если вручную обновить коллекцию (Shift+Клик на окне ATT).";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";
