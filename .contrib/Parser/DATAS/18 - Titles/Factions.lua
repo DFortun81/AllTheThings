@@ -4,7 +4,7 @@
 
 _.Titles =
 {
-	n(-6013, {	-- Factions
+	n(FACTIONS, {
 		title(46),	-- <Name> the Exalted
 		title(48),	-- <Name> the Diplomat
 		title(98),	-- Ambassador <Name>

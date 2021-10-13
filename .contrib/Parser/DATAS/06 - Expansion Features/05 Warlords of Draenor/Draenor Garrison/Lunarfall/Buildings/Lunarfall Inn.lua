@@ -472,7 +472,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(37161, {	-- Family Traditions
-									["provider"] = { "n", 88000 },	--  Finkle Einhorn
+									["provider"] = { "n", 88000 },	--  Pip Quickwit
 									["g"] = {
 										i(118926),	-- Huge Pile of Skins
 									},
@@ -575,7 +575,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(37236, {	-- Like Father, Like Son
-									["provider"] = { "n", 88000 },	--  Finkle Einhorn
+									["provider"] = { "n", 88000 },	--  Pip Quickwit
 									["sourceQuests"] = { 37161 },	-- Family Traditions
 									-- ["modID"] = 2,
 									["repeatable"] = true,

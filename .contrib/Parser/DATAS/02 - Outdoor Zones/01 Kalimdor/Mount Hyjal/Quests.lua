@@ -1214,7 +1214,7 @@ _.Zones =
 					["sourceQuest"] = 25584,	-- The Return of the Ancients
 				}),
 				q(28732, {	-- This Can Only Mean One Thing...
-					["provider"] = { "n", 49444 },	-- Finkle Einhorn
+					["provider"] = { "n", 49444 },	-- Pip Quickwit
 					["coord"] = { 42.6, 28.1, MOUNT_HYJAL },
 					["isBreadcrumb"] = true,
 				}),

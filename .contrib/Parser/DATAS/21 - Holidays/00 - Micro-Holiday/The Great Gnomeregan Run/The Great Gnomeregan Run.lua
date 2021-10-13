@@ -7,4 +7,3 @@ _.Holidays = { applyholiday(MICRO_HOLIDAY, holiday(1671627, {	-- The Great Gnome
 		["coord"] = { 36.3, 36.5, 469 },
 	}),
 }))};
-	
