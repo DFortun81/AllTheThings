@@ -1443,8 +1443,6 @@ CreateObject = function(t)
 			t = app.CreateAchievement(t.achID or t.achievementID, t);
 		elseif t.recipeID then
 			t = app.CreateRecipe(t.recipeID, t);
-		elseif t.spellID then
-			t = app.CreateRecipe(t.spellID, t);
 		elseif t.itemID then
 			if t.isToy then
 				t = app.CreateToy(t.itemID, t);
@@ -1471,6 +1469,8 @@ CreateObject = function(t)
 			t = app.CreateTier(t.tierID, t);
 		elseif t.unit then
 			t = app.CreateUnit(t.unit, t);
+		elseif t.spellID then
+			t = app.CreateSpell(t.spellID, t);
 		else
 			-- if app.DEBUG_PRINT then print("CreateObject by value, no specific object type"); app.PrintTable(t); end
 			t = setmetatable({}, { __index = t });
@@ -3248,7 +3248,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if not group then group = {}; end
 	if a then paramA = a; end
 	if b then paramB = b; end
-	-- print("Raw Search", paramA, paramB, #group, ...);
 
 	-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 	if paramA == "creatureID" or paramA == "encounterID" then
@@ -3836,7 +3835,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		if not root then
-			-- print("Create New Root")
+			-- print("Create New Root",paramA,paramB)
 			root = CreateObject({ [paramA] = paramB });
 		end
 		-- If rawLink exists, import it into the root
@@ -4073,7 +4072,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 
 	-- If the user wants to show the progress of this search result, do so
-	if app.Settings:GetTooltipSetting("Progress") then
+	if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
 		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
 	end
 
@@ -11244,7 +11243,7 @@ local fields = {
 		return t.requireSkill;
 	end,
 };
-app.BaseSpell = app.BaseObjectFields(fields);
+app.BaseSpell = app.BaseObjectFields(fields, "BaseSpell");
 app.CreateSpell = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
 end
