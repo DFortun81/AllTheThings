@@ -2051,7 +2051,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(69785)),	-- Vicious Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				-- Original Sources are:
 				-- n51255 Lieutenant Tristia <Glorious Conquest Quartermaster> in Stormwind (Alliance)
 				-- n46593 Doris Volanthius <Glorious Conquest Quartermaster> in Orgrimmar (Horde)
@@ -3407,7 +3407,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70413)),	-- Ruthless Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				-- Original Sources are:
 				-- n40606 Knight-Lieutenant T'Maire Sydes in Stormwind (Alliance)
 				-- n54659 Blood Guard Zar'shi in Orgrimmar (Horde)
@@ -4492,7 +4492,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73500)),	-- Cataclysmic Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				-- Original Sources are: Unknown. Presumably:
 				-- n00000 (7 different ID's exist) Captain Dirgehammer in Stormwind (Alliance)
 				-- n00000 (7 different ID's exist) Sergeant Thunderhorn in Orgrimmar (Horde)
@@ -4846,7 +4846,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 		n(-673, {	-- Ruthless Gladiator: Season 10
-			n(-662, {	-- Elite
+			n(PVP_ELITE, {
 				i(146483),	-- Ensemble: Elite Ruthless Gladiator's Dreadplate Armor
 				i(146481),	-- Ensemble: Elite Ruthless Gladiator's Dragonhide Armor
 				i(146479),	-- Ensemble: Elite Ruthless Gladiator's Chain Armor
@@ -4860,7 +4860,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 		n(-674, {	-- Cataclysmic Gladiator: Season 11
-			n(-662, {	-- Elite
+			n(PVP_ELITE, {
 				i(146463),	-- Ensemble: Elite Cataclysmic Gladiator's Dreadplate Armor
 				i(146461),	-- Ensemble: Elite Cataclysmic Gladiator's Dragonhide Armor
 				i(146459),	-- Ensemble: Elite Cataclysmic Gladiator's Chain Armor

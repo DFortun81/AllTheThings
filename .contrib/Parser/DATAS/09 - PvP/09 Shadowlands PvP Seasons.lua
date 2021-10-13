@@ -253,7 +253,7 @@ _.PVP =
 					})),
 				}),
 			}),
-			n(-662, bubbleDown({["modID"] = 45}, {	-- Elite Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
+			n(PVP_ELITE, bubbleDown({["modID"] = 45}, {	-- Elite Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
 				n(-319, {	-- Weapons
 					n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }}, {	-- Kyrian
 						i(177851),	-- Sinful Gladiator's Ceremonial Sword
@@ -668,7 +668,7 @@ _.PVP =
 					i(185315),	-- Unchained Gladiator's Xiphos
 				}),
 			}),
-			n(-662, bubbleDown({["modID"] = 14, ["bonusID"] = 7309}, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
+			n(PVP_ELITE, bubbleDown({["modID"] = 14, ["bonusID"] = 7309}, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
 				n(BACK, {
 					i(185164),	-- Unchained Gladiator's Cloak
 					i(185245),	-- Unchained Gladiator's Drape

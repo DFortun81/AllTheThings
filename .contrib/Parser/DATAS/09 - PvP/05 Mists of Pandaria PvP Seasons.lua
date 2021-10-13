@@ -1602,7 +1602,7 @@ _.PVP =
 					}),
 				},
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				-- Original Sources are:
 				-- n65514 Ethan Natice in Valley of the Four Winds (Alliance)
 				-- n65515 Acon Deathwielder in Area Kun-Lai Summit (Horde)
@@ -5293,7 +5293,7 @@ _.PVP =
 					}),
 				},
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				-- Original Sources are:
 				-- n70101 Armsmaster Holinka in Valley of the Four Winds (Alliance)
 				-- n70108 Roo Desvin in Area Kun-Lai Summit (Horde)
@@ -8477,7 +8477,7 @@ _.PVP =
 					}),
 				},
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				-- Original Sources are:
 				-- n00000 Unknown in Valley of the Four Winds (Alliance)
 				-- n00000 Unknown in Area Kun-Lai Summit (Horde)
@@ -10142,7 +10142,7 @@ _.PVP =
 					}),
 				},
 			}),
-			n(-662, {	-- Elite PvP Gear -- TODO: Enchant reminder - Enchanter's Illusion - Glorious Tyranny Gold can maybe add? https://www.wowhead.com/item=120286/enchanters-illusion-glorious-tyranny
+			n(PVP_ELITE, {	-- TODO: Enchant reminder - Enchanter's Illusion - Glorious Tyranny Gold can maybe add? https://www.wowhead.com/item=120286/enchanters-illusion-glorious-tyranny
 				-- Original Sources are:
 				-- n73147 Ethan Natice in Valley of the Four Winds (Alliance)
 				-- n73145 Acon Deathwielder in Area Kun-Lai Summit (Horde)

@@ -2433,7 +2433,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(42126)), -- (H) Medallion of the Horde
 				}),
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				-- Original Sources are:
 				-- n34087 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
 				-- n34089 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
@@ -3164,7 +3164,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(42135)), -- Battlemaster's Vivacity
 				}),
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				-- Original Sources are:
 				-- n34092 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
 				-- n34091 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
@@ -3890,7 +3890,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(51378)), -- (H) Medallion of the Horde
 				}),
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				-- Original Sources are:
 				-- n34095 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
 				-- n34094 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
