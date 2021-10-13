@@ -13,7 +13,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9956, {	-- Quests
+	n(QUESTS, {
 		n(-10052, {	-- Battle for Azeroth
 			a(ach(13026, {	-- 7th Legion Spycatcher
 				["_quests"] = { 50899 },	-- Don't Stalk Me, Troll (A)

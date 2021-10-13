@@ -4,12 +4,11 @@
 
 _.WorldEvents =
 {
-	n(-496, {	-- Bizmo's Brawlpub
+	m(500, {	-- Bizmo's Brawlpub
 		["races"] = ALLIANCE_ONLY,
 		["lvl"] = 120,
 		["maps"] = {
 			DEEPRUN_TRAM,
-			500,	-- Bizmo's Brawlpub
 		},
 		["u"] = REMOVED_FROM_GAME,
 		["icon"] = "Interface\\Icons\\ability_warrior_secondwind",

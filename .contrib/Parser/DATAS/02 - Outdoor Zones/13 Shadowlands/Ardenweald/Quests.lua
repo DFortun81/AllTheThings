@@ -915,7 +915,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(58173),	-- What Are They Hiding?
 	}),
 	n(-10100, {	-- Shadowlands
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(176012),	-- Ardenweald Quest Mace
 			i(176013),	-- Ardenweald Quest Mace
 			i(176014),	-- Ardenweald Quest Mace

@@ -341,7 +341,7 @@ _.WorldEvents =
 										},
 									}),
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(172122, {	-- Bloodseeker
 										["cost"] = {
 											{ "i", 137642, 2 },	-- 2x  Mark of Honor
@@ -555,7 +555,7 @@ _.WorldEvents =
 										},
 									}),
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(172122, {	-- Bloodseeker
 										["cost"] = {
 											{ "i", 137642, 2 },	-- 2x  Mark of Honor
@@ -693,7 +693,7 @@ _.WorldEvents =
 									}),
 								},
 							}),
-							n(-10003, {	-- The Burning Crusade
+							n(TBC_HEADER, {
 								e(1572, {	-- Lady Vashj — items available outside of anniversary event
 									["cr"] = 21212,	-- Lady Vashj
 									["g"] = {

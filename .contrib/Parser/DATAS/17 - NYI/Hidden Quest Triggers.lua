@@ -941,6 +941,7 @@ _.HiddenQuestTriggers = {
 		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success"
 		q(26136),	-- FLAG - Rigor Mortis Removed. Triggered on a fresh lvl 1 warlock undead on login
 		q(24644),	-- Troll Introduction Complete
+		q(26741),	-- REUSE - Northern Stranglethorn - triggered after completing "The Hunt" (questID 26340)
 		q(236),		-- Fueling the Demolishers (auto-completed removed quest)
 
 		--	DUNGEONS
@@ -1636,6 +1637,7 @@ _.HiddenQuestTriggers = {
 		q(38038),	-- Max-level Choice Tracker: Tanaan 6.2 - The Iron Front (H)
 		q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (A)
 		q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (H)
+		--q(33069),	-- REUSEME (after killing Supreme Lord Kazzak?) - questID is too low for Tanaan Jungle, it has to be something else
 		q(37887),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (A)
 		q(37892),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (H)
 		q(37969),	-- Tanaan Jungle - Tracking Quest - Vol'mar Built - JMC

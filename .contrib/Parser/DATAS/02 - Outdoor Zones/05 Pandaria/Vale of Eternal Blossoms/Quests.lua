@@ -225,17 +225,6 @@ _.Zones =
 					["isWeekly"] = true,
 					["coord"] = { 82.0, 29.4, VALE_OF_ETERNAL_BLOSSOMS },
 				}),
-				q(32806, {	-- The King and the Council
-					["providers"] = {
-						{ "n", 61962 },	-- Lorewalker Cho
-						{ "n", 63577 },	-- Lorewalker Cho
-					},
-					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
-					["maps"] = { 523 },	-- Dun Morogh (Blood in the Snow scenario)
-					["g"] = {
-						i(98133),	-- Greater Cache of Treasures
-					},
-				}),
 				q(31390, {	-- The Klaxxi (A)
 					["coord"] = { 84.4, 61.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
@@ -276,15 +265,6 @@ _.Zones =
 					["coord"] = { 21.4, 71.5, VALE_OF_ETERNAL_BLOSSOMS },
 					["isDaily"] = true,
 					["provider"] = { "n", 58919 },	-- Anji Autumnlight
-				}),
-				q(32807, {	-- The Warchief and the Darkness
-					["sourceQuests"] = { 32806 },	-- The King and the Council
-					["provider"] = { "n", 61962 },	-- Lorewalker Cho
-					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
-					["maps"] = { 520, 521 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
-					["g"] = {
-						i(98133),	-- Greater Cache of Treasures
-					},
 				}),
 				q(32679, {	-- Thunder Calls (A)
 					["races"] = ALLIANCE_ONLY,

@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9961, {	-- Reputation
-		n(-10003, {	-- The Burning Crusade
+		n(TBC_HEADER, {
 			ach(896),		-- A Quest a  Day Keeps the Ogres at Bay
 			ach(893, {		-- Cenarion War Hippogryph
 				i(33999),		-- Cenarion War Hippogryph

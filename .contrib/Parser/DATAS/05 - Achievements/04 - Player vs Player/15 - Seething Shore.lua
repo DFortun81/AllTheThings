@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(-9958, {	-- Player vs Player
+	pvp(n(PVP, {
 		n(-10001, {	-- Seething Shore
 			["maps"] = {
 				907,	-- Seething Shore

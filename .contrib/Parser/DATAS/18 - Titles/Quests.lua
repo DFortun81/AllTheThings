@@ -77,5 +77,24 @@ _.Titles =
 		title(324, {	-- Trashmaster <Name>
 			["sourceQuest"] = 56250,	-- I Am the Trashmaster
 		}),
+		title(33, {	-- Scarab Lord <Name>
+			["u"] = REMOVED_FROM_GAME,
+		}),
+		title(36, {	-- <Name>, Champion of the Naaru
+			["timeline"] = {
+				"added 2.0.1",
+				"removed 3.0.2",
+			},
+		}),
+		title(39, {	-- <Name>, Hand of A'dal
+			["timeline"] = {
+				"added 2.4.0",
+				"removed 3.0.2",
+			},
+		}),
 	}),
+	n(QUESTS, bubbleDown({ ["collectible"] = false, },{
+		title(146),	-- <Name>, Blessed Defender of Nordrassil
+		title(413),	-- <Name>, As Themselves
+	})),
 };

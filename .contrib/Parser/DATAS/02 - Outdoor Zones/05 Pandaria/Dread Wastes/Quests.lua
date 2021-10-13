@@ -1161,7 +1161,7 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10041, {	-- Mists of Pandaria
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(84085),	-- Dreadwaste Meditation Staff
 			i(84086),	-- Dreadwaste Diviner's Rod
 		}),

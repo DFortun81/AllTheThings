@@ -276,7 +276,7 @@ _.Craftables =
 				i(87214),	-- Blingtron 4000*
 				i(87215),	-- Wormhole Generator: Pandaria*
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(77527),	-- Big Game Hunter*
 				i(77528),	-- Long-Range Trillium Sniper*
 			}),

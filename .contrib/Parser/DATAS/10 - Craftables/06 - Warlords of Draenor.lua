@@ -63,7 +63,7 @@ _.Craftables =
 				i(109183),	-- World Shrinker*
 				i(112059),	-- Wormhole Centrifuge*
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(109168, {	-- Shrediron's Shredder
 					-- ["description"] = "",	-- TODO how to obtain this base version?!
 				}),

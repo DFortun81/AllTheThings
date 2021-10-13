@@ -124,7 +124,7 @@ _.ExpansionFeatures =
 							n(-153, {	-- Work Orders
 								n(86639, {	-- Altar of Bones
 									i(118043, {	-- Broken Bones
-										n(-659, {	-- Aspirant PvP Gear
+										n(PVP_ASPIRANT, {
 											cl(DEATHKNIGHT, {
 												i(126661),	-- Warmongering Aspirant's Dreadplate Chestpiece (H)
 												i(126662),	-- Warmongering Aspirant's Dreadplate Gauntlets (H)

@@ -3027,7 +3027,7 @@ _.NeverImplemented =
 		i(166364),	-- Song of the Fallen (TW Vendor?)
 		i(161118),	-- Marrow Shatter (TW Vendor/Tw drop?)
 	}),
-	n(-319, {	-- Weapons
+	n(WEAPONS, {
 		n(-346, {	-- Bows
 			-- Load In Game
 			i(5748),	-- Centaur Longbow

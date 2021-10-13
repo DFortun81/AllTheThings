@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(TBC_TIER, {
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			n(-334, {	-- 1H Axes
 				i(25198),	-- Karaborian Battle Axe
 				i(25199),	-- Knight's War Axe

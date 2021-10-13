@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	pvp(n(-9958, {	-- Player vs Player
+	pvp(n(PVP, {
 		n(-10058, {	-- World
 			ach(13429, {	-- Azerfighter
 				["_quests"] = {

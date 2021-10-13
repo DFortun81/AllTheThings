@@ -209,6 +209,7 @@ local L = app.L;
 	--TODO: L.QUEST_OBJECTIVE_INVALID = "Invalid Quest Objective";
 	--TODO: L.REFRESHING_COLLECTION = "Refreshing collection...";
 	--TODO: L.DONE_REFRESHING = "Done refreshing collection.";
+	--TODO: L.ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -462,7 +463,7 @@ local L = app.L;
 		--TODO: L.SKIP_CUTSCENES_CHECKBOX = "Automatically Skip Cutscenes";
 		--TODO: L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.";
 		--TODO: L.AUTO_BOUNTY_CHECKBOX = "Automatically Open the Bounty List";
-		--TODO: L.AUTO_BOUNTY__CHECKBOX_TOOLTIP = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
+		--TODO: L.AUTO_BOUNTY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
 		--TODO: L.AUTO_MAIN_LIST_CHECKBOX = "Automatically Open the Main List";
 		--TODO: L.AUTO_MAIN_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically open the Main List when you login.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\n\nShortcut Command: /att";
 		--TODO: L.AUTO_MINI_LIST_CHECKBOX = "Automatically Open the Mini List";
@@ -639,7 +640,7 @@ for key,value in pairs({
 		--TODO: [-53] = "Midsummer Fire Festival",					-- Midsummer Fire Festival
 		--TODO: [-55] = "Pirates' Day",
 		--TODO: [-59] = "Day of the Dead",
-		--TODO: [-62] = "Stranglethorn Fishing Extravaganza",
+		--TODO: [-62] = "Stranglethorn Fishing Extravaganza",		-- Stranglethorn Fishing Extravaganza
 	-- Zul'Aman
 		--TODO: [-78] = "Timed Event",
 		--TODO: [-79] = "First Chest",
@@ -674,42 +675,49 @@ for key,value in pairs({
 		--TODO: [-218] = "Coastal",									-- Coastal (for Fishing)
 		--TODO: [-242] = "Unrated",									-- Unrated
 		--TODO: [-243] = "Bounty",									-- Bounty
+	-- Allied Races
 		[-254] = "Razze Alleate & Armatura Retaggio",				-- Allied Races & Heritage
-		--TODO: [-356] = "Assault on the Dark Portal",
+	-- First Questline Draenor
+		--TODO: [-356] = "Assault on the Dark Portal",				-- Assault on the Dark Portal
+	-- Outposts in Draenor
 		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower
+	-- Legendaries
 		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
-	-- Dungeon/Raid Wing Info
+	-- Operation: Mechagon
 		--TODO: [-379] = "Junkyard",								-- Junkyard
+	-- Icecrown Citadel
 		--TODO: [-393] = "Storming the Citadel",					-- Storming the Citadel
 		--TODO: [-394] = "The Plagueworks",							-- The Plagueworks
+	-- BFA Outposts
 		--TODO: [-397] = "Outposts",								-- Outposts
+	-- T0.5
 		--TODO: [-420] = "Tier 0.5 Sets",							-- Tier 0.5 Sets
+	-- BFA War Chest
 		--TODO: [-488] = "War Chest",								-- Daily War Chest
+	-- Tarot Cards
 		--TODO: [-491] = "Tarot Cards",
 	-- Blizzard Events and Anniversaries
-		--TODO: [-520] = "Expansion Pre-Launch",
-		--TODO: [-522] = EXPANSION_NAME2..": Zombie Infestation",
-		--TODO: [-523] = EXPANSION_NAME3..": Elemental Unrest",
-		--TODO: [-525] = EXPANSION_NAME5..": Iron Horde Incursion",
-		--TODO: [-526] = EXPANSION_NAME6..": Legion Invasion",
-		--TODO: [-527] = EXPANSION_NAME7..": War of the Thorns",
-		--TODO: [-532] = "Heroes of the Storm",
-		--TODO: [-533] = "Hearthstone",
-		--TODO: [-534] = "Collector's Edition",
-		[-536] = "Hearthstone Mercenari",
-
-		--TODO: [-537] = "Diablo 20th Anniversary",
-		--TODO: [-538] = "The Ahn'Qiraj War Effort",
+		--TODO: [-520] = "Expansion Pre-Launch",					-- Expansion Pre-Launch
+		--TODO: [-522] = EXPANSION_NAME2..": Zombie Infestation",	-- Wrath of the Lich King: Zombie Infestation
+		--TODO: [-523] = EXPANSION_NAME3..": Elemental Unrest",		-- Cataclysm: Elemental Unrest
+		--TODO: [-525] = EXPANSION_NAME5..": Iron Horde Incursion",	-- Warlords of Draenor: Iron Horde Incursion
+		--TODO: [-526] = EXPANSION_NAME6..": Legion Invasion",		-- Legion: Legion Invasion
+		--TODO: [-527] = EXPANSION_NAME7..": War of the Thorns",	-- Battle for Azeroth: War of the Thorns
+		--TODO: [-532] = "Heroes of the Storm",						-- Heroes of the Storm
+		--TODO: [-533] = "Hearthstone",								-- Hearthstone
+		--TODO: [-534] = "Collector's Edition",						-- Collector's Edition
+		[-536] = "Hearthstone Mercenari",							-- Hearthstone Mercenaries
+		--TODO: [-537] = "Diablo 20th Anniversary",					-- Diablo 20th Anniversary
+		--TODO: [-538] = "The Ahn'Qiraj War Effort",				-- The Ahn'Qiraj War Effort
 		[-539] = "Scettro delle Sabbie Mutevoli",					-- The Scepter of the Shifting Sands
-		--TODO: [-540] = "The Scourge Invasion",
-		--TODO: [-541] = "The Silithyst Must Flow",
-		[-542] = "L'apertura del Portale Oscuro",
-		--TODO: [-543] = "Legion Invasions",
-		--TODO: [-544] = "WoW Collector's Edition",
-		--TODO: [-550] = "Starcraft Collector's Edition",
-		--TODO: [-551] = "Diablo Collector's Edition",
-		--TODO: [-556] = "Arena Tournament",
-
+		--TODO: [-540] = "The Scourge Invasion",					-- The Scourge Invasion
+		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
+		[-542] = "L'apertura del Portale Oscuro",					-- The Opening of the Dark Portal
+		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
+		--TODO: [-544] = "WoW Collector's Edition",					-- WoW Collector's Edition
+		--TODO: [-550] = "Starcraft Collector's Edition",			-- Starcraft Collector's Edition
+		--TODO: [-551] = "Diablo Collector's Edition",				-- Diablo Collector's Edition
+		--TODO: [-556] = "Arena Tournament",						-- Arena Tournament
 	-- PvP Header
 		-- Special Season Tags
 			--TODO: [-655] = "Ensemble Gear", 						-- Ensemble Gear (PvP)
@@ -718,46 +726,38 @@ for key,value in pairs({
 			--TODO: [-660] = "Combatant Gear",						-- Combatant PvP Gear (WoD, Legion)
 			--TODO: [-661] = "Gladiator Gear",						-- Gladiator PvP Gear
 			--TODO: [-662] = "Elite Gear",							-- Elite PvP Gear
-
 		-- Classic PvP Seasons
 			--TODO: [-663] = "Classic Honor System",				-- Classic Honor System
-
 		-- The Burning Crusade PvP Seasons
 			--TODO: [-658] = "BC Pre-Season",						-- Pre-Season (PvP BC)
 			--TODO: [-664] = select(2, GetAchievementInfo(2091))..": Season 1",-- Gladiator: Season 1
 			--TODO: [-665] = select(2, GetAchievementInfo(418))..": Season 2",-- Merciless Gladiator: Season 2
 			--TODO: [-666] = select(2, GetAchievementInfo(419))..": Season 3",-- Vengeful Gladiator: Season 3
 			--TODO: [-667] = select(2, GetAchievementInfo(420))..": Season 4",-- Brutal Gladiator: Season 4
-
 		-- Wrath of the Lich-King PvP Seasons
 			--TODO: [-668] = select(2, GetAchievementInfo(3336))..": Season 5",-- Deadly Gladiator: Season 5
 			--TODO: [-657] = "Hateful Gladiator",					-- Hateful Gladiator: Season 5 ("medium pvp gear")
 			--TODO: [-669] = select(2, GetAchievementInfo(3436))..": Season 6",-- Furious Gladiator: Season 6
 			--TODO: [-670] = select(2, GetAchievementInfo(3758))..": Season 7",-- Relentless Gladiator: Season 7
 			--TODO: [-671] = select(2, GetAchievementInfo(4599))..": Season 8",-- Wrathful Gladiator: Season 8
-
 		-- Cataclysm PvP Seasons
 			--TODO: [-672] = select(2, GetAchievementInfo(6002))..": Season 9",-- Vicious Gladiator: Season 9
 			--TODO: [-656] = "Honor Gear Ruthless Season",			-- Honor Gear Ruthless Season
 			--TODO: [-673] = select(2, GetAchievementInfo(6124))..": Season 10",-- Ruthless Gladiator: Season 10
 			--TODO: [-654] = "Honor Gear Cataclysmic Season",		-- Honor Gear Cataclysmic Season
 			--TODO: [-674] = select(2, GetAchievementInfo(6938))..": Season 11",-- Cataclysmic Gladiator: Season 11
-
 		-- Mists of Pandaria PvP Seasons
 			--TODO: [-675] = select(2, GetAchievementInfo(8214))..": Season 12",-- Malevolent Gladiator: Season 12
 			--TODO: [-653] = "Honor Gear Tyrannical Season",		-- Honor Gear Tyrannical Season
 			--TODO: [-676] = select(2, GetAchievementInfo(8791))..": Season 13",-- Tyrannical Gladiator: Season 13
 			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
 			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
-
-	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
+	-- Secret Header
 		[-806] = "Cinta del Perditempo",							-- Waist of Time
-
 	-- Chests
 		[-850] = "Forziere Meccanizzato",							-- Mechanized Chest
 		[-851] = "Cassa dell'Impero Nero",							-- Black Empire Cache
-
-	-- 8.2 Neck Stuff
+	-- Heart of Azeroth
 		--TODO: [-853] = "All Roles",								-- All Roles
 		--TODO: [-854] = "DPS",										-- DPS
 		--TODO: [-855] = "Healers",									-- Healers
@@ -783,7 +783,6 @@ for key,value in pairs({
 		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": Potere Fluente",	-- Tier 3: Flowing Power
 		[-977] = "Maelie la Girovaga",								-- Maelie the Wanderer
 		[-979] = "Alienatore Ve'ken & Alienatore Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
-
 		-- SL Maldraxxus/Necrolord
 			--TODO: [-921] = "Sanctum Upgrades",					-- Sanctum Upgrades (Necrolord)
 			--TODO: [-924] = "Transport Network",					-- Transport Network (Necrolord)
@@ -792,7 +791,6 @@ for key,value in pairs({
 			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": Portare in Vita",	-- Abomination Factory (Necrolord) Tier 3
 			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": Amici Plasmati",	-- Abomination Factory (Necrolord) Tier 4
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Un abominio è per sempre",	-- Abomination Factory (Necrolord) Tier 5
-
 		-- SL Ardenweald/Night Fae
 			--TODO: [-935] = "Sanctum Upgrades",					-- Sanctum Upgrades (Night Fae)
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
@@ -801,7 +799,6 @@ for key,value in pairs({
 			[-1003] = "Spirito Marziale",							-- Martial Spirit
 			[-1004] = "Spirito Orgoglioso",							-- Prideful Spirit
 			[-1005] = "Spirito Indomito",							-- Untamed Spirit
-
 		-- SL Bastion/Kyrian
 			[-940] = "Concilio degli Ascesi",						-- Ascended Counil
 			--TODO: [-941] = "Sanctum Upgrades",					-- Sanctum Upgrades (Kyrian)
@@ -817,7 +814,6 @@ for key,value in pairs({
 			--TODO: [-966] = "Blueprints & Crafting",				-- Blueprints (for Path of Ascension)
 			--TODO: [-973] = "Loyalty",								-- Loyalty
 			--TODO: [-975] = "Humility",							-- Humility
-
 		-- SL Revendreth/Venthyr
 			--TODO: [-950] = "Transport Network",					-- Transport Network
 			[-951] = string.format(COVENANT_SANCTUM_TIER, 1)..": Specchio, Specchio...",	-- Tier 1: Mirror, Mirror
@@ -839,9 +835,8 @@ for key,value in pairs({
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
-
+		-- Black Vault
 			--TODO: [-1001] = "The Black Vault",
-
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -855,17 +850,8 @@ for key,value in pairs({
 		--TODO: [-2209] = "The Prophecy of Rythas the Oracle",
 		--TODO: [-2210] = "The Lessons of the Blacklist",
 		--TODO: [-2211] = "Volund's Folly",
-
-	-- Other Sets
+	-- T3
 		--TODO: [-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
-
-	-- Holiday Sets
-		--TODO: [-3199] = "Midsummer Reveler Set",
-	-- Anti-Undead Armor Sets [Scourge Event]
-		[-3218] = "Vessillo Benedetto dell'Epuratore di Non Morti",
-		[-3219] = "Armatura Benedetta del Cacciatore di Non Morti",
-		[-3220] = "Abiti Benedetti del Cacciatore di Non Morti",
-		[-3221] = "Tenuta Feroce Benedetta del Cacciatore di Non Morti",
 	-- Island Expedition Sets
 		--TODO: [-3315] = "Spider Acolyte",
 		--TODO: [-3316] = "Hydraxian",
@@ -874,7 +860,6 @@ for key,value in pairs({
 		--TODO: [-3319] = "Swarmfury",
 		--TODO: [-3340] = "Dark Animator",
 		--TODO: [-3341] = "Duskhaven",
-
 		--TODO: [-3343] = "Choking Winter",
 		--TODO: [-3342] = "Fallen Runelord",
 		--TODO: [-3320] = "Spiritbough",
@@ -883,7 +868,6 @@ for key,value in pairs({
 		--TODO: [-3323] = "Whirling Dervish",
 		--TODO: [-3324] = "Feralbark",
 		--TODO: [-3325] = "Firekin",
-
 		--TODO: [-3344] = "Frostsworn",
 		--TODO: [-3326] = "Wild Marauder",
 		--TODO: [-3327] = "Dragonrider",
@@ -891,7 +875,6 @@ for key,value in pairs({
 		--TODO: [-3329] = "Mrrglurggl",
 		--TODO: [-3330] = "Headshrinker",
 		--TODO: [-3331] = "Voodoo Stalker",
-
 		--TODO: [-3332] = "Geocrag",
 		--TODO: [-3333] = "Razorfin",
 		--TODO: [-3345] = "Sanctified Scourgelord",
@@ -900,7 +883,6 @@ for key,value in pairs({
 		--TODO: [-3336] = "Rattling Bone",
 		--TODO: [-3337] = "Twilight Dragon",
 		--TODO: [-3347] = "Black Tooth Grunt",
-
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			--TODO: [-5200] = "Base Appearance",
@@ -913,7 +895,6 @@ for key,value in pairs({
 			--TODO: [-5350] = "Class Trial Item Sets",				-- Class Trial
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
-
 	------ ACHIEVEMENT HEADER SECTION ------
 		--TODO: [-10071] = "Visions of N'Zoth",
 		--TODO: [-10072] = "N'Zoth Assault",
@@ -927,11 +908,9 @@ for key,value in pairs({
 		--TODO: [-10081] = "Corrupted Area",
 		--TODO: [-10082] = "Lost Area",
 		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
-
 		-- Shadowlands Achievement Header
 			-- Achieve 14339 Sub-Criteira
 				[-1433901] = "Frammento di Cristallo d'Animum",		-- Anima Crystal Shard
-
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Specchio Rotto A-1",					-- Broken Mirror
 				[-1433952] = "Specchio Rotto A-2",					-- Broken Mirror

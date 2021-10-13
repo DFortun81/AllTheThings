@@ -544,7 +544,7 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9979, {	-- Cataclysm
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(52969),	-- Heartache Dagger	-- 52965 got added
 		}),
 	}),

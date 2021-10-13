@@ -8,7 +8,7 @@ _.GearSets =
 		["g"] = {
 			i(120968),	-- Chauffeured Chopper
 			i(122703),	-- Chauffeured Chopper
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				un(REMOVED_FROM_GAME, i(42944)),	-- Balanced Heartseeker
 				i(122350, {	-- Balanced Heartseeker
 					["cost"] = {

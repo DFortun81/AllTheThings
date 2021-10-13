@@ -4,7 +4,7 @@
 
 _.Titles =
 {
-	n(-31, {	-- Promotions
+	n(PROMOTIONS, {
 		title(410, {	--	Renowned Explorer <Name>
 			["u"] = BLIZZARD_BALANCE,
 		}),

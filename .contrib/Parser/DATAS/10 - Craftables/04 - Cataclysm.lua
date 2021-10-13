@@ -237,7 +237,7 @@ _.Craftables =
 				i(40727),	-- Gnomish Gravity Well*
 				i(60854),	-- Loot-A-Rang*
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(71077),	-- Extreme-Impact Hole Puncher*
 				i(59598),	-- Finely-Tuned Throat Needler*
 				i(59367),	-- Kickback 5000*

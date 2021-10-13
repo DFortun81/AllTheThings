@@ -39,43 +39,33 @@ _.Instances = { tier(BFA_TIER, {
 						}),
 						n(-583, {	-- Power Increased to Level 1
 							["questID"] = 53571,	-- Stack #1
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
 						}),
 						n(-584, {	-- Power Increased to Level 2
 							["questID"] = 53572,	-- Stack #2
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
 						}),
 						n(-585, {	-- Power Increased to Level 3
 							["questID"] = 53573,	-- Stack #3
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
 						}),
 						n(-586, {	-- Power Increased to Level 4
 							["questID"] = 53574,	-- Stack #4
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
 						}),
 						n(-587, {	-- Power Increased to Level 5
 							["questID"] = 53575,	-- Stack #5
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
 						}),
 						n(-588, {	-- Power Increased to Level 6
 							["questID"] = 53576,	-- Stack #6
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
 						}),
 						n(-589, {	-- Power Increased to Level 7
 							["questID"] = 53577,	-- Stack #7
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
 						}),
 						n(-590, {	-- Power Increased to Level 8
 							["questID"] = 53578,	-- Stack #8
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
 						}),
 						n(-591, {	-- Power Increased to Level 9
 							["questID"] = 53579,	-- Stack #9
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
 						}),
 						n(-592, {	-- Power Increased to Level 10
 							["questID"] = 53580,	-- Stack #10	gonna assume this is actually 53580, completed on main
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",	-- Reorigination Array Icon
 						}),
 					},
 				}),

@@ -4,7 +4,7 @@
 
 _.Titles =
 {
-	n(-3,  {	-- Holiday
+	n(-3, {	-- Holiday
 		title(43, {	-- Elder <Name>
 			["u"] = LUNAR_FESTIVAL,
 		}),
@@ -36,6 +36,12 @@ _.Titles =
 		}),
 		title(133, {	-- <Name> the Pilgrim
 			["u"] = PILGRIMS_BOUNTY,
+		}),
+		title(358, {	-- <Name>, Adventuring Instructor
+			["collectible"] = false,
+		}),
+		title(399, {	-- <Name> the T-Shirt Enthusiast
+			["collectible"] = false,
 		}),
 	}),
 };

@@ -6,7 +6,7 @@
 _.Achievements =
 {
 	n(-9968, {	-- Legacy
-		n(-9958, {	-- Player vs Player
+		n(PVP, {
 			un(REMOVED_FROM_GAME, ach(11468)),		-- Alive for Five
 			un(REMOVED_FROM_GAME, ach(2191)),		-- Ancient Courtyard Protector
 			un(REMOVED_FROM_GAME, ach(1766)),		-- Ancient Protector

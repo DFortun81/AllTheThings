@@ -107,12 +107,12 @@ _.PVP =
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 7142 },	-- The Battle for Alterac
 								["g"] = {
-									i(19107),	-- Bloodseeker
-									i(19106),	-- Ice Barbed Spear
-									i(19108),	-- Wand of Biting Cold
-									i(20648),	-- Cold Forged Hammer
+									un(REMOVED_FROM_GAME, i(19107)),	-- Bloodseeker (inaccessible since 15th Anniversary event)
+									un(REMOVED_FROM_GAME, i(19106)),	-- Ice Barbed Spear (inaccessible since 15th Anniversary event)
+									un(REMOVED_FROM_GAME, i(19108)),	-- Wand of Biting Cold (inaccessible since 15th Anniversary event)
+									un(REMOVED_FROM_GAME, i(20648)),	-- Cold Forged Hammer (inaccessible since 15th Anniversary event)
 								},
-								["lvl"] = 51,
+								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
 							q(7164,  {	-- Honored Amongst the Clan
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
@@ -200,6 +200,7 @@ _.PVP =
 								["coord"] = { 58.6, 34.2, HILLSBRAD_FOOTHILLS },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
+								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
 							q(56257, {	-- The Battle for Alterac (H)
 								["provider"] = { "n", 154473 },	-- Voggah Deathgrip
@@ -484,12 +485,12 @@ _.PVP =
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 7141 },	-- The Battle of Alterac
 								["g"] = {
-									i(19107),	-- Bloodseeker
-									i(19106),	-- Ice Barbed Spear
-									i(19108),	-- Wand of Biting Cold
-									i(20648),	-- Cold Forged Hammer
+									un(REMOVED_FROM_GAME, i(19107)),	-- Bloodseeker (inaccessible since 15th Anniversary event)
+									un(REMOVED_FROM_GAME, i(19106)),	-- Ice Barbed Spear (inaccessible since 15th Anniversary event)
+									un(REMOVED_FROM_GAME, i(19108)),	-- Wand of Biting Cold (inaccessible since 15th Anniversary event)
+									un(REMOVED_FROM_GAME, i(20648)),	-- Cold Forged Hammer (inaccessible since 15th Anniversary event)
 								},
-								["lvl"] = 51,
+								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
 							q(7169,  {	-- Honored Amongst the Guard
 								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
@@ -588,7 +589,8 @@ _.PVP =
 							q(7141,  {	-- The Battle of Alterac
 								["provider"] = { "n", 13816 },	-- Prospecter Stonehewer
 								["races"] = ALLIANCE_ONLY,
-                                ["lvl"] = 51,
+								["lvl"] = 51,
+								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
 							}),
 							q(56256, {	-- The Battle for Alterac (A)
 								["provider"] = { "n", 154478 },	-- Prospector Stonehewer

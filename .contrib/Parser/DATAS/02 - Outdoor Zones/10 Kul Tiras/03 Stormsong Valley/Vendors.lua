@@ -151,10 +151,12 @@ _.Zones =
 						i(165840, {	-- Interdimensional Pet Portal
 							["questID"] = 54264,
 							["cost"] = { { "i", 163036, 1000 }, },	-- 1,000x Polished Pet Charm
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(139003, {	-- Pocket Pet Portal
 							["questID"] = 43016,
 							["cost"] = { { "i", 163036, 1000 }, },	-- 1,000x Polished Pet Charm
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(163512, {	-- Sandstinger Wasp (PET!)
 							["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm

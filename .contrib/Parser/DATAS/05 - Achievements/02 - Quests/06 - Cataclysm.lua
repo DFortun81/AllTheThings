@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9956, {	-- Quests
+	n(QUESTS, {
 		n(-9979, {	-- Cataclysm
 			a(ach(5318)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Alliance)
 			h(ach(5319)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Horde)

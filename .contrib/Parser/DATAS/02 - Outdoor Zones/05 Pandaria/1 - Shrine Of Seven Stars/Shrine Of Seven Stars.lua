@@ -74,20 +74,6 @@ _.Zones =
 						["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					q(32900, {	-- Heroic Deeds
-						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class- and spec-specific. Not all items are available to all classes able to equip them.|r",
-						["coord"] = { 47.23, 49.71, 393 },
-						["lvl"] = 90,
-						["provider"] = { "n", 64101 },	-- Taijin the Cyclone
-						["g"] = {
-							i(98546,  {  -- Bulging Heroic Cache of Treasures
-								["sym"] = {
-									{"select", "itemID", 98134},	-- Heroic Cache of Treasures
-									{"pop"},
-								},
-							}),
-						},
-					}),
 					q(33248, {	-- Proving Grounds
 						["coord"] = { 47.23, 49.71, 393 },
 						["races"] = ALLIANCE_ONLY,

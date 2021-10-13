@@ -12,7 +12,7 @@ _.PVP =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						-- Original Classic Gear, only collectable with the original title.
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(18825, {	-- Grand Marshal's Aegis
 								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 								["u"] = 14,
@@ -602,7 +602,7 @@ _.PVP =
 				n(FACTION_HEADER_HORDE, {
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(18831, {	-- High Warlord's Battle Axe
 								["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
 								["u"] = 14,
@@ -1069,7 +1069,7 @@ _.PVP =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10002, {	-- Classic
 		n(-663, {	-- Classic Alliance Honor System
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(77559),	-- Replica Grand Marshal's left Hand Blade
 				i(77583),	-- Replica High Warlords Left Claw
 				i(77588),	-- Replica High Warlord's Quickblade

@@ -17,6 +17,10 @@ namespace ATT
             // Setup tracing to the console.
             Tracer.OnWrite += Console.Write;
 
+#if DEBUG
+            Framework.DebugMode = true;
+#endif
+
             // Determine if running in Debug Mode or not.
             if (args != null && args.Length > 0)
             {
@@ -125,7 +129,10 @@ namespace ATT
                 Trace.WriteLine("Parsing LUA files...");
                 foreach (var fileName in luaFiles)
                 {
+                    if (Framework.DebugMode)
+                        Trace.WriteLine("Parsing: " + fileName);
                     ParseLUAFile(lua, fileName);
+
                 }
                 Trace.WriteLine("Done parsing LUA files.");
                 Framework.Objects.ProcessingSourceData = false;

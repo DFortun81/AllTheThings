@@ -33,11 +33,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144246, {	-- Arsenal: Tyrannical Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661 },
+									{"sub", "pvp_weapons_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
 									{"select", "itemID", 99794 },	-- Tyrannical Gladiator's Barrier
 									{"select", "itemID", 99796 },	-- Tyrannical Gladiator's Battle Staff
 									{"select", "itemID", 99941 },	-- Tyrannical Gladiator's Bonecracker
@@ -138,7 +138,7 @@ _.Zones =
 							i(138683, {	-- Ensemble: Tyrannical Gladiator's Dreadplate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661, 6 },
+									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 6 },
 									{"select", "itemID", 91306 },	-- Tyrannical Gladiator's Armplates of Alacrity
 									{"select", "itemID", 91297 },	-- Tyrannical Gladiator's Girdle of Accuracy
 									{"select", "itemID", 91303 },	-- Tyrannical Gladiator's Warboots of Alacrity
@@ -173,7 +173,7 @@ _.Zones =
 							i(138691, {	-- Ensemble: Tyrannical Gladiator's Dragonhide Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661, 11 },
+									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 11 },
 									{"select", "itemID", 91171 },	-- Tyrannical Gladiator's Bindings of Meditation
 									{"select", "itemID", 91188 },	-- Tyrannical Gladiator's Bindings of Prowess
 									{"select", "itemID", 91184 },	-- Tyrannical Gladiator's Belt of Cruelty
@@ -254,7 +254,7 @@ _.Zones =
 							i(138689, {	-- Ensemble: Tyrannical Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 3 },
 									{"select", "itemID", 91221 },	-- Tyrannical Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 91220 },	-- Tyrannical Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 91214 },	-- Tyrannical Gladiator's Links of Accuracy
@@ -295,7 +295,7 @@ _.Zones =
 							i(138697, {	-- Ensemble: Tyrannical Gladiator's Silk Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661, 8 },
+									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 8 },
 									{"select", "itemID", 91122 },	-- Tyrannical Gladiator's Cuffs of Prowess
 									{"select", "itemID", 91109 },	-- Tyrannical Gladiator's Cord of Cruelty
 									{"select", "itemID", 91115 },	-- Tyrannical Gladiator's Treads of Cruelty
@@ -330,7 +330,7 @@ _.Zones =
 							i(138693, {	-- Ensemble: Tyrannical Gladiator's Ironskin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661, 10 },
+									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 10 },
 									{"select", "itemID", 91246 },	-- Tyrannical Gladiator's Armwraps of Accuracy
 									{"select", "itemID", 91242 },	-- Tyrannical Gladiator's Waistband of Cruelty
 									{"select", "itemID", 91337 },	-- Tyrannical Gladiator's Boots of Alacrity
@@ -385,7 +385,7 @@ _.Zones =
 							i(138685, {	-- Ensemble: Tyrannical Gladiator's Scaled Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661, 2 },
+									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 2 },
 									{"select", "itemID", 91286 },	-- Tyrannical Gladiator's Bracers of Meditation
 									{"select", "itemID", 91285 },	-- Tyrannical Gladiator's Bracers of Prowess
 									{"select", "itemID", 91277 },	-- Tyrannical Gladiator's Clasp of Cruelty
@@ -446,7 +446,7 @@ _.Zones =
 							i(138699, {	-- Ensemble: Tyrannical Gladiator's Satin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661, 5 },
+									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 5 },
 									{"select", "itemID", 91123 },	-- Tyrannical Gladiator's Cuffs of Meditation
 									{"select", "itemID", 91113 },	-- Tyrannical Gladiator's Cord of Meditation
 									{"select", "itemID", 91119 },	-- Tyrannical Gladiator's Treads of Meditation
@@ -501,7 +501,7 @@ _.Zones =
 							i(138695, {	-- Ensemble: Tyrannical Gladiator's Leather Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661, 4 },
+									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 4 },
 									{"select", "itemID", 91339 },	-- Tyrannical Gladiator's Armwraps of Alacrity
 									{"select", "itemID", 91335 },	-- Tyrannical Gladiator's Waistband of Accuracy
 									{"select", "itemID", 91337 },	-- Tyrannical Gladiator's Boots of Cruelty
@@ -536,7 +536,7 @@ _.Zones =
 							i(138687, {	-- Ensemble: Tyrannical Gladiator's Ringmail Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661, 7 },
+									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 7 },
 									{"select", "itemID", 91357 },	-- Tyrannical Gladiator's Armbands of Meditation
 									{"select", "itemID", 91356 },	-- Tyrannical Gladiator's Armbands of Prowess
 									{"select", "itemID", 91378 },	-- Tyrannical Gladiator's Waistguard of Cruelty
@@ -617,7 +617,7 @@ _.Zones =
 							i(138701, {	-- Ensemble: Tyrannical Gladiator's Felweave Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661, 9 },
+									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 9 },
 									{"select", "itemID", 91121 },	-- Tyrannical Gladiator's Cuffs of Accuracy
 									{"select", "itemID", 91111 },	-- Tyrannical Gladiator's Cord of Accuracy
 									{"select", "itemID", 91117 },	-- Tyrannical Gladiator's Treads of Alacrity
@@ -652,7 +652,7 @@ _.Zones =
 							i(138681, {	-- Ensemble: Tyrannical Gladiator's Plate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661, 1 },
+									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 1 },
 									{"select", "itemID", 91305 },	-- Tyrannical Gladiator's Armplates of Proficiency
 									{"select", "itemID", 91299 },	-- Tyrannical Gladiator's Girdle of Prowess
 									{"select", "itemID", 91301 },	-- Tyrannical Gladiator's Warboots of Cruelty
@@ -989,11 +989,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144252, {	-- Arsenal: Grievous Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, -661 },
+									{"sub", "pvp_weapons_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
 									{"select", "itemID", 103167 },	-- Grievous Gladiator's Barrier
 									{"select", "itemID", 103310 },	-- Grievous Gladiator's Baton of Light
 									{"select", "itemID", 103169 },	-- Grievous Gladiator's Battle Staff
@@ -1106,7 +1106,7 @@ _.Zones =
 							i(138661, {	-- Ensemble: Grievous Gladiator's Dreadplate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, -661, 6 },
+									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 6 },
 									{"select", "itemID", 100402 },	-- Grievous Gladiator's Armplates of Alacrity
 									{"select", "itemID", 100393 },	-- Grievous Gladiator's Girdle of Accuracy
 									{"select", "itemID", 100399 },	-- Grievous Gladiator's Warboots of Alacrity
@@ -1141,7 +1141,7 @@ _.Zones =
 							i(138669, {	-- Ensemble: Grievous Gladiator's Dragonhide Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, -661, 11 },
+									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 11 },
 									{"select", "itemID", 100267 },	-- Grievous Gladiator's Bindings of Meditation
 									{"select", "itemID", 100284 },	-- Grievous Gladiator's Bindings of Prowess
 									{"select", "itemID", 100280 },	-- Grievous Gladiator's Belt of Cruelty
@@ -1222,7 +1222,7 @@ _.Zones =
 							i(138667, {	-- Ensemble: Grievous Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, -661, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 3 },
 									{"select", "itemID", 100317 },	-- Grievous Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 100316 },	-- Grievous Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 100310 },	-- Grievous Gladiator's Links of Accuracy
@@ -1263,7 +1263,7 @@ _.Zones =
 							i(138675, {	-- Ensemble: Grievous Gladiator's Silk Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, -661, 8 },
+									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 8 },
 									{"select", "itemID", 100218 },	-- Grievous Gladiator's Cuffs of Prowess
 									{"select", "itemID", 100205 },	-- Grievous Gladiator's Cord of Cruelty
 									{"select", "itemID", 100211 },	-- Grievous Gladiator's Treads of Cruelty
@@ -1298,7 +1298,7 @@ _.Zones =
 							i(138671, {	-- Ensemble: Grievous Gladiator's Ironskin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, -661, 10 },
+									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 10 },
 									{"select", "itemID", 100342 },	-- Grievous Gladiator's Armwraps of Accuracy
 									{"select", "itemID", 100338 },	-- Grievous Gladiator's Waistband of Cruelty
 									{"select", "itemID", 100340 },	-- Grievous Gladiator's Boots of Alacrity
@@ -1353,7 +1353,7 @@ _.Zones =
 							i(138663, {	-- Ensemble: Grievous Gladiator's Scaled Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, -661, 2 },
+									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 2 },
 									{"select", "itemID", 100382 },	-- Grievous Gladiator's Bracers of Meditation
 									{"select", "itemID", 100381 },	-- Grievous Gladiator's Bracers of Prowess
 									{"select", "itemID", 100373 },	-- Grievous Gladiator's Clasp of Cruelty
@@ -1414,7 +1414,7 @@ _.Zones =
 							i(138677, {	-- Ensemble: Grievous Gladiator's Satin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, -661, 5 },
+									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 5 },
 									{"select", "itemID", 100219 },	-- Grievous Gladiator's Cuffs of Meditation
 									{"select", "itemID", 100209 },	-- Grievous Gladiator's Cord of Meditation
 									{"select", "itemID", 100215 },	-- Grievous Gladiator's Treads of Meditation
@@ -1469,7 +1469,7 @@ _.Zones =
 							i(138673, {	-- Ensemble: Grievous Gladiator's Leather Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, -661, 4 },
+									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 4 },
 									{"select", "itemID", 100342 },	-- Grievous Gladiator's Armwraps of Alacrity
 									{"select", "itemID", 100425 },	-- Grievous Gladiator's Waistband of Accuracy
 									{"select", "itemID", 100427 },	-- Grievous Gladiator's Boots of Cruelty
@@ -1504,7 +1504,7 @@ _.Zones =
 							i(138665, {	-- Ensemble: Grievous Gladiator's Ringmail Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, -661, 7 },
+									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 7 },
 									{"select", "itemID", 100447 },	-- Grievous Gladiator's Armbands of Meditation
 									{"select", "itemID", 100446 },	-- Grievous Gladiator's Armbands of Prowess
 									{"select", "itemID", 100468 },	-- Grievous Gladiator's Waistguard of Cruelty
@@ -1585,7 +1585,7 @@ _.Zones =
 							i(138679, {	-- Ensemble: Grievous Gladiator's Felweave Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, -661, 9 },
+									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 9 },
 									{"select", "itemID", 100217 },	-- Grievous Gladiator's Cuffs of Accuracy
 									{"select", "itemID", 100207 },	-- Grievous Gladiator's Cord of Accuracy
 									{"select", "itemID", 100213 },	-- Grievous Gladiator's Treads of Alacrity
@@ -1620,7 +1620,7 @@ _.Zones =
 							i(138659, {	-- Ensemble: Grievous Gladiator's Plate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, -661, 1 },
+									{"sub", "pvp_set_ensemble", -10041, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 1 },
 									{"select", "itemID", 100401 },	-- Grievous Gladiator's Armplates of Proficiency
 									{"select", "itemID", 100395 },	-- Grievous Gladiator's Girdle of Prowess
 									{"select", "itemID", 100397 },	-- Grievous Gladiator's Warboots of Cruelty
@@ -2496,11 +2496,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144243, {	-- Arsenal: Malevolent Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_ensemble", -10041, -675, -661 },
+									{"sub", "pvp_weapons_ensemble", -10041, -675, PVP_GLADIATOR },
 									{"exclude", "itemID", 84911 },	-- Malevolent Gladiator's Barrier
 									{"exclude", "itemID", 84787 },	-- Malevolent Gladiator's Battle Staff
 									{"exclude", "itemID", 84970 },	-- Malevolent Gladiator's Bonecracker
@@ -2641,7 +2641,7 @@ _.Zones =
 							i(138704, {	-- Ensemble: Malevolent Gladiator's Dreadplate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -675, -661, 6 },
+									{"sub", "pvp_set_ensemble", -10041, -675, PVP_GLADIATOR, 6 },
 									{"select", "itemID", 84985 },	-- Malevolent Gladiator's Armplates of Proficiency
 									{"select", "itemID", 84949 },	-- Malevolent Gladiator's Girdle of Accuracy
 									{"select", "itemID", 84810 },	-- Malevolent Gladiator's Warboots of Cruelty
@@ -2683,7 +2683,7 @@ _.Zones =
 							i(138708, {	-- Ensemble: Malevolent Gladiator's Dragonhide Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -675, -661, 11 },
+									{"sub", "pvp_set_ensemble", -10041, -675, PVP_GLADIATOR, 11 },
 									{"select", "itemID", 84976 },	-- Malevolent Gladiator's Bindings of Meditation
 									{"select", "itemID", 84982 },	-- Malevolent Gladiator's Bindings of Prowess
 									{"select", "itemID", 84960 },	-- Malevolent Gladiator's Belt of Cruelty
@@ -2781,7 +2781,7 @@ _.Zones =
 							i(138707, {	-- Ensemble: Malevolent Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -675, -661, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -675, PVP_GLADIATOR, 3 },
 									{"select", "itemID", 84981 },	-- Malevolent Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 84980 },	-- Malevolent Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 84957 },	-- Malevolent Gladiator's Links of Accuracy
@@ -2829,7 +2829,7 @@ _.Zones =
 							i(138711, {	-- Ensemble: Malevolent Gladiator's Silk Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -675, -661, 8 },
+									{"sub", "pvp_set_ensemble", -10041, -675, PVP_GLADIATOR, 8 },
 									{"select", "itemID", 84978 },	-- Malevolent Gladiator's Cuffs of Prowess
 									{"select", "itemID", 84954 },	-- Malevolent Gladiator's Cord of Cruelty
 									{"select", "itemID", 84814 },	-- Malevolent Gladiator's Treads of Cruelty
@@ -2881,7 +2881,7 @@ _.Zones =
 							i(138709, {	-- Ensemble: Malevolent Gladiator's Ironskin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -675, -661, 10 },
+									{"sub", "pvp_set_ensemble", -10041, -675, PVP_GLADIATOR, 10 },
 									{"select", "itemID", 84973 },	-- Malevolent Gladiator's Armwraps of Accuracy
 									{"select", "itemID", 84947 },	-- Malevolent Gladiator's Waistband of Cruelty
 									{"select", "itemID", 84809 },	-- Malevolent Gladiator's Boots of Alacrity
@@ -2948,7 +2948,7 @@ _.Zones =
 							i(138705, {	-- Ensemble: Malevolent Gladiator's Scaled Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -675, -661, 2 },
+									{"sub", "pvp_set_ensemble", -10041, -675, PVP_GLADIATOR, 2 },
 									{"select", "itemID", 84975 },	-- Malevolent Gladiator's Bracers of Meditation
 									{"select", "itemID", 84974 },	-- Malevolent Gladiator's Bracers of Prowess
 									{"select", "itemID", 84952 },	-- Malevolent Gladiator's Clasp of Cruelty
@@ -3021,7 +3021,7 @@ _.Zones =
 							i(138712, {	-- Ensemble: Malevolent Gladiator's Satin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -675, -661, 5 },
+									{"sub", "pvp_set_ensemble", -10041, -675, PVP_GLADIATOR, 5 },
 									{"select", "itemID", 84979 },	-- Malevolent Gladiator's Cuffs of Meditation
 									{"select", "itemID", 84956 },	-- Malevolent Gladiator's Cord of Meditation
 									{"select", "itemID", 84816 },	-- Malevolent Gladiator's Treads of Meditation
@@ -3093,7 +3093,7 @@ _.Zones =
 							i(138710, {	-- Ensemble: Malevolent Gladiator's Leather Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -675, -661, 4 },
+									{"sub", "pvp_set_ensemble", -10041, -675, PVP_GLADIATOR, 4 },
 									{"select", "itemID", 84972 },	-- Malevolent Gladiator's Armwraps of Alacrity
 									{"select", "itemID", 84948 },	-- Malevolent Gladiator's Waistband of Accuracy
 									{"select", "itemID", 84808 },	-- Malevolent Gladiator's Boots of Cruelty
@@ -3135,7 +3135,7 @@ _.Zones =
 							i(138706, {	-- Ensemble: Malevolent Gladiator's Ringmail Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -675, -661, 7 },
+									{"sub", "pvp_set_ensemble", -10041, -675, PVP_GLADIATOR, 7 },
 									{"select", "itemID", 84984 },	-- Malevolent Gladiator's Armbands of Meditation
 									{"select", "itemID", 84983 },	-- Malevolent Gladiator's Armbands of Prowess
 									{"select", "itemID", 84959 },	-- Malevolent Gladiator's Waistguard of Cruelty
@@ -3233,7 +3233,7 @@ _.Zones =
 							i(138713, {	-- Ensemble: Malevolent Gladiator's Felweave Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -675, -661, 9 },
+									{"sub", "pvp_set_ensemble", -10041, -675, PVP_GLADIATOR, 9 },
 									{"select", "itemID", 84977 },	-- Malevolent Gladiator's Cuffs of Accuracy
 									{"select", "itemID", 84955 },	-- Malevolent Gladiator's Cord of Accuracy
 									{"select", "itemID", 84815 },	-- Malevolent Gladiator's Treads of Alacrity
@@ -3275,7 +3275,7 @@ _.Zones =
 							i(138703, {	-- Ensemble: Malevolent Gladiator's Plate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -675, -661, 1 },
+									{"sub", "pvp_set_ensemble", -10041, -675, PVP_GLADIATOR, 1 },
 									{"select", "itemID", 84985 },	-- Malevolent Gladiator's Armplates of Alacrity
 									{"select", "itemID", 84950 },	-- Malevolent Gladiator's Girdle of Prowess
 									{"select", "itemID", 84822 },	-- Malevolent Gladiator's Warboots of Alacrity
@@ -3567,11 +3567,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144248, {	-- Arsenal: Prideful Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, -661 },
+									{"sub", "pvp_weapons_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
 									{"exclude", "itemID", 144248 },	-- Exclude itself to stop duplicating
 								},
 							}),
@@ -3658,7 +3658,7 @@ _.Zones =
 							i(138639, {	-- Ensemble: Prideful Gladiator's Dreadplate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, -661, 6 },
+									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 6 },
 									{"select", "itemID", 102771 },	-- Prideful Gladiator's Armplates of Alacrity
 									{"select", "itemID", 102640 },	-- Prideful Gladiator's Girdle of Accuracy
 									{"select", "itemID", 102745 },	-- Prideful Gladiator's Warboots of Alacrity
@@ -3685,7 +3685,7 @@ _.Zones =
 							i(138647, {	-- Ensemble: Prideful Gladiator's Dragonhide Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, -661, 11 },
+									{"sub", "pvp_set_ensemble", -10041, -676, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 11 },
 									{"select", "itemID", 102691 },	-- Prideful Gladiator's Bindings of Meditation
 									{"select", "itemID", 102723 },	-- Prideful Gladiator's Bindings of Prowess
 									{"select", "itemID", 102694 },	-- Prideful Gladiator's Belt of Cruelty
@@ -3745,7 +3745,7 @@ _.Zones =
 							i(138645, {	-- Ensemble: Prideful Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, -661, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 3 },
 									{"select", "itemID", 102753 },	-- Prideful Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 102688 },	-- Prideful Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 102645 },	-- Prideful Gladiator's Links of Accuracy
@@ -3775,7 +3775,7 @@ _.Zones =
 							i(138653, {	-- Ensemble: Prideful Gladiator's Silk Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, -661, 8 },
+									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 8 },
 									{"select", "itemID", 102733 },	-- Prideful Gladiator's Cuffs of Prowess
 									{"select", "itemID", 102684 },	-- Prideful Gladiator's Cord of Cruelty
 									{"select", "itemID", 102686 },	-- Prideful Gladiator's Treads of Cruelty
@@ -3802,7 +3802,7 @@ _.Zones =
 							i(138649, {	-- Ensemble: Prideful Gladiator's Ironskin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, -661, 10 },
+									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 10 },
 									{"select", "itemID", 102711 },	-- Prideful Gladiator's Armwraps of Accuracy
 									{"select", "itemID", 102647 },	-- Prideful Gladiator's Waistband of Cruelty
 									{"select", "itemID", 102716 },	-- Prideful Gladiator's Boots of Alacrity
@@ -3844,7 +3844,7 @@ _.Zones =
 							i(138641, {	-- Ensemble: Prideful Gladiator's Scaled Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, -661, 2 },
+									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 2 },
 									{"select", "itemID", 102765 },	-- Prideful Gladiator's Bracers of Meditation
 									{"select", "itemID", 102695 },	-- Prideful Gladiator's Bracers of Prowess
 									{"select", "itemID", 102764 },	-- Prideful Gladiator's Clasp of Cruelty
@@ -3889,7 +3889,7 @@ _.Zones =
 							i(138655, {	-- Ensemble: Prideful Gladiator's Satin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, -661, 5 },
+									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 5 },
 									{"select", "itemID", 102666 },	-- Prideful Gladiator's Cuffs of Meditation
 									{"select", "itemID", 102709 },	-- Prideful Gladiator's Cord of Meditation
 									{"select", "itemID", 102752 },	-- Prideful Gladiator's Treads of Meditation
@@ -3931,7 +3931,7 @@ _.Zones =
 							i(138651, {	-- Ensemble: Prideful Gladiator's Leather Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, -661, 4 },
+									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 4 },
 									{"select", "itemID", 102754 },	-- Prideful Gladiator's Armwraps of Alacrity
 									{"select", "itemID", 102708 },	-- Prideful Gladiator's Waistband of Accuracy
 									{"select", "itemID", 102660 },	-- Prideful Gladiator's Boots of Cruelty
@@ -3958,7 +3958,7 @@ _.Zones =
 							i(138643, {	-- Ensemble: Prideful Gladiator's Ringmail Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, -661, 7 },
+									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 7 },
 									{"select", "itemID", 102624 },	-- Prideful Gladiator's Armbands of Meditation
 									{"select", "itemID", 102665 },	-- Prideful Gladiator's Armbands of Prowess
 									{"select", "itemID", 102677 },	-- Prideful Gladiator's Waistguard of Cruelty
@@ -4018,7 +4018,7 @@ _.Zones =
 							i(138657, {	-- Ensemble: Prideful Gladiator's Felweave Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, -661, 9 },
+									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 9 },
 									{"select", "itemID", 102687 },	-- Prideful Gladiator's Cuffs of Accuracy
 									{"select", "itemID", 102662 },	-- Prideful Gladiator's Cord of Accuracy
 									{"select", "itemID", 102620 },	-- Prideful Gladiator's Treads of Alacrity
@@ -4045,7 +4045,7 @@ _.Zones =
 							i(138637, {	-- Ensemble: Prideful Gladiator's Plate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, -661, 1 },
+									{"sub", "pvp_set_ensemble", -10041, -678, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 1 },
 									{"select", "itemID", 102702 },	-- Prideful Gladiator's Armplates of Proficiency
 									{"select", "itemID", 102724 },	-- Prideful Gladiator's Girdle of Prowess
 									{"select", "itemID", 102698 },	-- Prideful Gladiator's Warboots of Cruelty

@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(CATA_TIER, {
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			n(-334, {	-- 1H Axes
 				i(55283),	-- Angerfang Axe
 				i(66981),	-- Axe of the Deadly Price

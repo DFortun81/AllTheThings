@@ -7,7 +7,7 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(ORIBOS, {
 			n(QUESTS, {
-				pvp(n(-9, {	-- PvP
+				pvp(n(PVP, {
 					q(62910, {	-- Against Overwhelming Odds
 						["provider"] = { "n", 168011 },	-- Zo'sorg
 						["isWeekly"] = true,

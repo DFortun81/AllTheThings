@@ -1076,7 +1076,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(178073),	-- Stoneforged Helm
 			}),
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(184325),	-- Sinfall Quickblade
 			i(184514),	-- Sinfall Spellbinder's Kris
 			i(184330),	-- Sinfall Enchanted Elixir Bottle

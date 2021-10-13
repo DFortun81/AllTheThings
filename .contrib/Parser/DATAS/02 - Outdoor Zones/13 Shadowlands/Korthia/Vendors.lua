@@ -157,7 +157,7 @@ _.Zones =
 							["description"] = "These items can also drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.\n\nKorthian Armaments also have a chance to drop from Korthia rares and treasures.",
 							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
 							["g"] = {	-- * are next to ones i have seen (there are a couple sets so not sure if both exist)
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(185889),	-- Gromit Tendon Longbow
 									i(186762),	-- Korthian Anima Slicer
 									i(186759),	-- Korthian Anima Vessel*

@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(SL_TIER, {
-		n(-319, {	-- Weapons [Epic -- No adjustments]
+		n(WEAPONS, {	-- [Epic -- No adjustments]
 			i(184805),	-- Ballista of Buried Kings
 			i(184803),	-- Halberd of Agthia
 			i(184798),	-- Hishtar's Severe Stiletto

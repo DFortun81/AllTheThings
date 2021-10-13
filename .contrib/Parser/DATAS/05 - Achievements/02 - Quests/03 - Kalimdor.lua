@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9956, {	-- Quests
+	n(QUESTS, {
 		n(-9976, {	-- Kalimdor
 			ach(5443, {		-- E'ko Madness (Winterspring)
 				crit(1),		-- Winterspring Furbolg

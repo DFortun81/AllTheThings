@@ -39,5 +39,8 @@ _.Titles =
 		title(435, {	-- Fun Guy/Gal <Name>
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
 		}),
+		title(346, {	-- <Name>, Talon's Vengeance
+			["collectible"] = false,
+		}),
 	}),
 };

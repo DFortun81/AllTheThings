@@ -390,7 +390,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(30542),	-- Dimensional Ripper - Area 52*
 			i(30544),	-- Ultrasafe Transporter: Toshley's Station*
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			-- Guns
 			i(23746),	-- Adamantite Rifle*
 			i(23742),	-- Fel Iron Musket*

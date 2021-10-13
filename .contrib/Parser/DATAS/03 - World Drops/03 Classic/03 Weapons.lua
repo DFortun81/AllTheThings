@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(CLASSIC_TIER, {
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			n(-334, {	-- 1H Axes
 				i(13014),	-- Axe of Rin'ji
 				i(811),		-- Axe of the Deep Woods

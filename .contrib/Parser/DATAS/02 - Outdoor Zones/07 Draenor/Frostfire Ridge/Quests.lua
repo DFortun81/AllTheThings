@@ -1341,7 +1341,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(106147),	-- Forstwolf Stalwart Chestpiece (beta only)
 			}),
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(118186),	-- Frostwolf Wisdom Stick
 		}),
 	}),
