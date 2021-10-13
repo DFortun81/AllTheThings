@@ -13,7 +13,6 @@ _.Instances = { tier(MOP_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 60.0, 37.7, ISLE_OF_THUNDER },
 				["maps"] = {	-- all Isle of Thunder maps
-					ISLE_OF_THUNDER,
 					505,	-- Lightning Vein Mine
 					506,	-- The Swollen Vault
 					516,	-- Scenario [Phase 1]
@@ -417,7 +416,6 @@ _.Instances = { tier(MOP_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 54.9, 17.3, TIMELESS_ISLE },
 				["maps"] = {	-- all Timeless Isle maps
-					TIMELESS_ISLE,
 					555,	-- Cavern of Lost Spirits
 				},
 				["lvl"] = 80,	-- Confirmed by Lucetia November 5, 2018
@@ -519,7 +517,6 @@ _.Instances = { tier(MOP_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 70.79, 63.51, VALLEY_OF_THE_FOUR_WINDS },
 				["maps"] = {	-- all Valley of the Four Winds maps
-					VALLEY_OF_THE_FOUR_WINDS,
 					377,	-- Cavern of Endless Echoes
 				},
 				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
@@ -645,7 +642,6 @@ _.Instances = { tier(MOP_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 53.53, 65.26, KUN_LAI_SUMMIT },
 				["maps"] = {	-- all Kun-Lai Summit maps
-					KUN_LAI_SUMMIT,
 					380,	-- Howlingwind Cavern
 					381,	-- Pranksters' Hollow
 					382,	-- Knucklethump Hole
@@ -875,7 +871,6 @@ _.Instances = { tier(MOP_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 33117,
 				["maps"] = {	-- all Timeless Isle maps
-					TIMELESS_ISLE,
 					555,	-- Cavern of Lost Spirits
 				},
 				["isRaid"] = true,

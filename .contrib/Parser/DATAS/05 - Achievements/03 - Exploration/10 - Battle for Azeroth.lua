@@ -1052,11 +1052,6 @@ _.Achievements =
 						129044,	-- Martha Mae
 						135153,	-- Wesley Rockhold
 					},
-					["maps"] = {
-						BORALUS,
-						DRUSTVAR,
-						TIRAGARDE_SOUND,
-					},
 					["coords"] = {
 						{ 74.25, 17.76, BORALUS },	-- Allison Weber
 						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
@@ -1081,12 +1076,6 @@ _.Achievements =
 						137040,	-- Linda Deepwater
 						129044,	-- Martha Mae
 					},
-					["maps"] = {
-						BORALUS,
-						HALL_OF_CHRONICLERS,
-						DRUSTVAR,
-						TIRAGARDE_SOUND,
-					},
 					["coords"] = {
 						{ 74.25, 17.76, BORALUS },	-- Allison Weber
 						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
@@ -1110,11 +1099,6 @@ _.Achievements =
 						138905,	-- Rusty Blade Waitress
 						136459,	-- Terry Rigglesmith
 					},
-					["maps"] = {
-						BORALUS,
-						STORMSONG_VALLEY,
-						TIRAGARDE_SOUND,
-					},
 					["coords"] = {
 						{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
 						{ 74.25, 17.76, BORALUS },	-- Allison Weber
@@ -1131,9 +1115,6 @@ _.Achievements =
 					["crs"] = {
 						143487,	-- Nicolas Moal
 					},
-					["maps"] = {
-						BORALUS,
-					},
 					["coords"] = {
 						{ 58.17, 70.32, BORALUS },	-- Nicolas Moal
 					},
@@ -1144,11 +1125,6 @@ _.Achievements =
 						129376,	-- Lenne
 						141853,	-- Rebecca Barnes
 						138905,	-- Rusty Blade Waitress
-					},
-					["maps"] = {
-						BORALUS,
-						DAZARALOR,
-						STORMSONG_VALLEY,
 					},
 					["coords"] = {
 						{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
@@ -1175,11 +1151,6 @@ _.Achievements =
 						135153,	-- Wesley Rockhold
 						131781,	-- Zuaba Sonja
 					},
-					["maps"] = {
-						BORALUS,
-						DAZARALOR,
-						TIRAGARDE_SOUND,
-					},
 					["coords"] = {
 						{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
 						{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
@@ -1201,9 +1172,6 @@ _.Achievements =
 				i(158927, {	-- Foaming Turtle Broth
 					["crs"] = {
 						135600,	-- Emma Haribull
-					},
-					["maps"] = {
-						STORMSONG_VALLEY,
 					},
 					["coords"] = {
 						{ 44.47, 54.21, STORMSONG_VALLEY },	-- Emma Haribull
@@ -1228,10 +1196,6 @@ _.Achievements =
 						126601,	-- Sarella Griffin
 						143244,	-- Victor Esquivias
 						135153,	-- Wesley Rockhold
-					},
-					["maps"] = {
-						BORALUS,
-						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
@@ -1266,11 +1230,6 @@ _.Achievements =
 						143244,	-- Victor Esquivias
 						135153,	-- Wesley Rockhold
 					},
-					["maps"] = {
-						BORALUS,
-						DRUSTVAR,
-						TIRAGARDE_SOUND,
-					},
 					["coords"] = {
 						{ 74.25, 17.76, BORALUS },	-- Allison Weber
 						{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
@@ -1293,11 +1252,6 @@ _.Achievements =
 						126601,	-- Sarella Griffin
 						143244,	-- Victor Esquivias
 					},
-					["maps"] = {
-						BORALUS,
-						DRUSTVAR,
-						TIRAGARDE_SOUND,
-					},
 					["coords"] = {
 						{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
 						{ 53.99, 75.22, BORALUS },	-- Bored Barkeep
@@ -1311,10 +1265,6 @@ _.Achievements =
 					-- ["provider"] = { "n", 140055 },	-- First Mate Grogtok -- Why is this here...
 					["crs"] = {
 						137040,	-- Linda Deepwater
-					},
-					["maps"] = {
-						STORMSONG_VALLEY,
-						DRUSTVAR,
 					},
 					["coords"] = {
 						{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
@@ -1337,12 +1287,6 @@ _.Achievements =
 						137455,	-- Quartermaster Rickard
 						138905,	-- Rusty Blade Waitress
 						136465,	-- Tom Fishbury
-					},
-					["maps"] = {
-						BORALUS,
-						DRUSTVAR,
-						STORMSONG_VALLEY,
-						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
@@ -1373,9 +1317,6 @@ _.Achievements =
 						142759,	-- Monica Winters
 						142189,	-- Ruddy the Rat
 					},
-					["maps"] = {
-						BORALUS,
-					},
 					["coords"] = {
 						{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
 						{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
@@ -1403,11 +1344,6 @@ _.Achievements =
 						143244,	-- Victor Esquivias
 						131781,	-- Zuaba Sonja
 					},
-					["maps"] = {
-						BORALUS,
-						DAZARALOR,
-						TIRAGARDE_SOUND,
-					},
 					["coords"] = {
 						{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
 						{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
@@ -1427,9 +1363,6 @@ _.Achievements =
 					["crs"] = {
 						139638,	-- Barkeep Cotner
 					},
-					["maps"] = {
-						DRUSTVAR,
-					},
 					["coords"] = {
 						{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
 					},
@@ -1446,10 +1379,6 @@ _.Achievements =
 						142770,	-- Kevin Tack
 						142759,	-- Monica Winters
 						142189,	-- Ruddy the Rat
-					},
-					["maps"] = {
-						BORALUS,
-						DRUSTVAR,
 					},
 					["coords"] = {
 						{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
@@ -1470,10 +1399,6 @@ _.Achievements =
 						137411,	-- Joseph Stephens
 						137040,	-- Linda Deepwater
 					},
-					["maps"] = {
-						BORALUS,
-						DRUSTVAR,
-					},
 					["coords"] = {
 						{ 74.25, 17.76, BORALUS },	-- Allison Weber
 						{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
@@ -1493,11 +1418,6 @@ _.Achievements =
 						142189,	-- Ruddy the Rat
 						126601,	-- Sarella Griffin
 						143244,	-- Victor Esquivias
-					},
-					["maps"] = {
-						BORALUS,
-						DRUSTVAR,
-						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
@@ -1530,12 +1450,6 @@ _.Achievements =
 						137040,	-- Linda Deepwater
 						142189,	-- Ruddy the Rat
 						135153,	-- Wesley Rockhold
-					},
-					["maps"] = {
-						BORALUS,
-						DRUSTVAR,
-						STORMSONG_VALLEY,
-						TIRAGARDE_SOUND,
 					},
 					["coords"] = {
 						{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
