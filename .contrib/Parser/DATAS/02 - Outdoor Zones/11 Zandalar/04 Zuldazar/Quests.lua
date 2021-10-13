@@ -2022,7 +2022,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(161254),	-- Rastari Pants
 			}),
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(154985),	-- Golden Protectorate
 			i(158576),	-- Golden Protectorate
 			i(154976),	-- Necropolis Sentry's Sword

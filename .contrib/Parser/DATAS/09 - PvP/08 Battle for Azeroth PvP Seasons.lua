@@ -7,7 +7,7 @@ _.PVP =
 	pvp(n(-10052, {	-- Battle for Azeroth
 		n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
 			n(PVP_ASPIRANT, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(162885),	-- Dread Aspirant's Barrier (A)
 					i(162890),	-- Dread Aspirant's Bonegrinder (A)
 					i(166729),	-- Dread Aspirant's Cleaver (A)
@@ -155,7 +155,7 @@ _.PVP =
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(161698),	-- Dread Gladiator's Barrier (A)
 					i(161703),	-- Dread Gladiator's Bonegrinder (A)
 					i(166334),	-- Dread Gladiator's Cleaver (A)
@@ -389,7 +389,7 @@ _.PVP =
 		}),
 		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
 			n(PVP_ASPIRANT, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(165206),	-- Sinister Aspirant's Bonecracker (A)
 					i(166478),	-- Sinister Aspirant's Greatsword (A)
 					i(165208),	-- Sinister Aspirant's Longbow (A)
@@ -525,7 +525,7 @@ _.PVP =
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(165041),	-- Sinister Gladiator's Bonecracker (A)
 					i(166479),	-- Sinister Gladiator's Greatsword (A)
 					i(165043),	-- Sinister Gladiator's Longbow (A)
@@ -798,7 +798,7 @@ _.PVP =
 		}),
 		n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
 			n(PVP_ASPIRANT, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(169756),	-- Notorious Aspirant's Blade (A)
 					i(169754),	-- Notorious Aspirant's Cutter (A)
 					i(169748),	-- Notorious Aspirant's Gavel (A)
@@ -940,7 +940,7 @@ _.PVP =
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(169720),	-- Notorious Gladiator's Bonegrinder (A)
 					i(169712),	-- Notorious Gladiator's Chopper (A)
 					i(171160),	-- Notorious Gladiator's Claw (A)
@@ -1247,7 +1247,7 @@ _.PVP =
 		}),
 		n(-692, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
 			n(PVP_ASPIRANT, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(172880),	-- Corrupted Aspirant's Chopper (A)
 					i(174013),	-- Corrupted Aspirant's Claw (A)
 					i(172878),	-- Corrupted Aspirant's Cleaver (A)
@@ -1381,7 +1381,7 @@ _.PVP =
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(172754),	-- Corrupted Gladiator's Chopper (A)
 					i(172778),	-- Corrupted Gladiator's Claw (A)
 					i(172770),	-- Corrupted Gladiator's Cleaver (A)
@@ -1730,7 +1730,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(166969),	-- Dread Gladiator's Plate Armguards
 				}),
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(159894),	-- Honorable Combatant's Striker
 				i(159895),	-- Honorable Combatant's Cestus
 				i(161973),	-- Honorable Combatant's Striker
@@ -1742,7 +1742,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(165036),	-- Sinister Gladiator's Halberd (A)
 				i(165201),	-- Sinister Aspirant's Halberd (A)
 			}),
@@ -1782,7 +1782,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 		n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(167522),	-- Notorious Aspirant's Shield Wall (A)
 				i(167521),	-- Notorious Aspirant's Shield Wall (H)
 				i(169725),	-- Notorious Gladiator's Bonegrinder (A)

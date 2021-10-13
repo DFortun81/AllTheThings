@@ -33,7 +33,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144246, {	-- Arsenal: Tyrannical Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -989,7 +989,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144252, {	-- Arsenal: Grievous Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -2496,7 +2496,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144243, {	-- Arsenal: Malevolent Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -3567,7 +3567,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144248, {	-- Arsenal: Prideful Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {

@@ -29,7 +29,7 @@ _.Zones =
 					["g"] = {
 					--[[	-- Items are commented out to reduce bloat.
 						un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard
-						n(-319, {	-- Weapon
+						n(WEAPONS, {
 							un(REMOVED_FROM_GAME, i(45954)),	-- Furious Gladiator's Acute Staff
 							un(REMOVED_FROM_GAME, i(45968)),	-- Furious Gladiator's Claw
 							un(REMOVED_FROM_GAME, i(45950)),	-- Furious Gladiator's Claymore
@@ -66,7 +66,7 @@ _.Zones =
 					["g"] = {
 					--[[	-- Items are commented out to reduce bloat.
 						un(REMOVED_FROM_GAME, i(49086)),	-- Relentless Gladiator's Tabard
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							un(REMOVED_FROM_GAME, i(48412)),	-- Relentless Gladiator's Acute Staff
 							un(REMOVED_FROM_GAME, i(49191)),	-- Relentless Gladiator's Blade of Celerity
 							un(REMOVED_FROM_GAME, i(48444)),	-- Relentless Gladiator's Claw (wrong itemtag from blizzard)
@@ -139,7 +139,7 @@ _.Zones =
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, TANARIS },
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(146641, {	--  Arsenal: Vicious Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -794,7 +794,7 @@ _.Zones =
 					["coord"] = { 51.6, 28.0, TANARIS },
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -1494,7 +1494,7 @@ _.Zones =
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, TANARIS },
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {

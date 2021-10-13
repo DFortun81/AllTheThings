@@ -8,17 +8,17 @@ _.Achievements =
 	-- Exception: Combatant (Listed 5 times)
 	n(-9969, {	-- Feats of Strength
 		pvp(n(PVP, {
-			n(-665, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Merciless Gladiator: Burning Crusade Season 2
+			n(SEASON_MERCILESS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Merciless Gladiator: Burning Crusade Season 2
 				ach(418, {	-- Merciless Gladiator: Burning Crusade Season 2
 					title(37),	-- Merciless Gladiator <Name>
 				}),
 			})),
-			n(-666, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Vengeful Gladiator: Burning Crusade Season 3
+			n(SEASON_VENGEFUL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Vengeful Gladiator: Burning Crusade Season 3
 				ach(419, {	-- Vengeful Gladiator: Burning Crusade Season 3
 					title(40),	-- Vengeful Gladiator <Name>
 				}),
 			})),
-			n(-667, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Brutal Gladiator: Burning Crusade Season 4
+			n(SEASON_BRUTAL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Brutal Gladiator: Burning Crusade Season 4
 				ach(420, {	-- Brutal Gladiator: Burning Crusade Season 4
 					title(49),	-- Brutal Gladiator <Name>
 				}),

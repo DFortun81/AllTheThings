@@ -68,7 +68,7 @@ _.PVP =
 					i(184053),	-- Sinful Aspirant's Relentless Brooch
 					i(184054),	-- Sinful Aspirant's Sigil of Adaptation
 				}),
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(178490),	-- Sinful Aspirant's Barrier
 					i(178468),	-- Sinful Aspirant's Battleaxe
 					i(183433),	-- Sinful Aspirant's Blackjack
@@ -188,7 +188,7 @@ _.PVP =
 					i(181335),	-- Sinful Gladiator's Relentless Brooch
 					i(181816),	-- Sinful Gladiator's Sigil of Adaptation
 				}),
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }}, {	-- Kyrian
 						i(177851),	-- Sinful Gladiator's Ceremonial Sword
 						i(177866),	-- Sinful Gladiator's Chalice
@@ -254,7 +254,7 @@ _.PVP =
 				}),
 			}),
 			n(PVP_ELITE, bubbleDown({["modID"] = 45}, {	-- Elite Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }}, {	-- Kyrian
 						i(177851),	-- Sinful Gladiator's Ceremonial Sword
 						--i(177866)),	-- Sinful Gladiator's Chalice (Not ingame // Shared with Normal Pvp Gear // Gold 16.04.2021)
@@ -533,7 +533,7 @@ _.PVP =
 					i(185310),	-- Unchained Aspirant's Relentless Brooch
 					i(185311),	-- Unchained Aspirant's Sigil of Adaptation
 				}),
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(185295),	-- Unchained Aspirant's Barrier
 					i(185284),	-- Unchained Aspirant's Battleaxe
 					i(185307),	-- Unchained Aspirant's Blackjack
@@ -651,7 +651,7 @@ _.PVP =
 					i(185305),	-- Unchained Gladiator's Relentless Brooch
 					i(185306),	-- Unchained Gladiator's Sigil of Adaptation
 				}),
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(185200),	-- Unchained Gladiator's Ceremonial Sword
 					i(185203),	-- Unchained Gladiator's Chalice
 					i(185317),	-- Unchained Gladiator's Dory
@@ -765,7 +765,7 @@ _.PVP =
 					i(185305),	-- Unchained Gladiator's Relentless Brooch
 					i(185306),	-- Unchained Gladiator's Sigil of Adaptation
 				}),
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(185200),	-- Unchained Gladiator's Ceremonial Sword
 					i(185203),	-- Unchained Gladiator's Chalice
 					i(185317),	-- Unchained Gladiator's Dory
@@ -800,7 +800,7 @@ _.PVP =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10100, {	-- Shadowlands
 		n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(183432),	-- Sinful Aspirant's Reaver
 				i(178469),	-- Sinful Aspirant's Bow
 				i(178671),	-- Sinful Aspirant's Broadsword

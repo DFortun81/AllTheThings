@@ -16,7 +16,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144251, {	-- Arsenal: Grievous Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -855,7 +855,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144243, {	-- Arsenal: Malevolent Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -2450,7 +2450,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144245, {	-- Arsenal: Tyrannical Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -3272,7 +3272,7 @@ _.Zones =
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
 						un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144250, {	-- Arsenal: Prideful Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {

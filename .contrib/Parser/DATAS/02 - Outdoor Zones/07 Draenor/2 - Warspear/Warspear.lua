@@ -212,7 +212,7 @@ _.Zones =
 							["coord"] = { 48.5, 57.6, WARSPEAR },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(138632, {	-- Arsenal: Primal Gladiator's Weapons
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
@@ -1095,7 +1095,7 @@ _.Zones =
 							["coord"] = { 49.3, 56.7, WARSPEAR },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(138634, {	-- Arsenal: Wild Gladiator's Weapons (H)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
@@ -2210,7 +2210,7 @@ _.Zones =
 							["coord"] = { 49.1, 56.4, WARSPEAR },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(138629, {	-- Arsenal: Wild Combatant's Weapons (H)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
@@ -2941,7 +2941,7 @@ _.Zones =
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 48.9, 57.3, WARSPEAR },
 							["g"] = {
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(138636, {	-- Arsenal: Warmongering Gladiator's Weapons (H)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
@@ -3849,7 +3849,7 @@ _.Zones =
 							["coord"] = { 48.3, 57.5, WARSPEAR },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(138626, {	-- Arsenal: Primal Combatant's Weapons (H)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
@@ -4339,7 +4339,7 @@ _.Zones =
 							["coord"] = { 49.2, 57.1, WARSPEAR },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(138627, {	-- Arsenal: Warmongering Combatant's Weapons (H)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {

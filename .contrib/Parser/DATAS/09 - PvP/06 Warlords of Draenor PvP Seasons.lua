@@ -136,7 +136,7 @@ _.PVP =
 						}),
 					}),
 					n(PVP_COMBATANT, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(138625, {	-- Arsenal: Primal Combatant's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -762,7 +762,7 @@ _.PVP =
 						}),
 					}),
 					n(PVP_GLADIATOR, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(138631, {	-- Arsenal: Primal Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -1615,7 +1615,7 @@ _.PVP =
 						}),
 					}),
 					n(PVP_COMBATANT, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(138626, {	-- Arsenal: Primal Combatant's Weapons (H)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -2241,7 +2241,7 @@ _.PVP =
 						}),
 					}),
 					n(PVP_GLADIATOR, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(138632, {	-- Arsenal: Primal Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -2975,7 +2975,7 @@ _.PVP =
 			n(PVP_ELITE, {
 				un(REMOVED_FROM_GAME, i(115979)),	-- Primal Gladiator's Greatcloak
 				un(REMOVED_FROM_GAME, i(115972)),	-- Primal Gladiator's Tabard
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(115948)),	-- Primal Gladiator's Ripper
 					un(REMOVED_FROM_GAME, i(115949)),	-- Primal Gladiator's Render
 					un(REMOVED_FROM_GAME, i(115818)),	-- Primal Gladiator's Bonegrinder
@@ -3293,7 +3293,7 @@ _.PVP =
 						}),
 					}),
 					n(PVP_COMBATANT, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(138630, {	-- Arsenal: Wild Combatant's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -3919,7 +3919,7 @@ _.PVP =
 						}),
 					}),
 					n(PVP_GLADIATOR, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(138633, {	-- Arsenal: Wild Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -4798,7 +4798,7 @@ _.PVP =
 						}),
 					}),
 					n(PVP_COMBATANT, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(138629, {	-- Arsenal: Wild Combatant's Weapons (H)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -5424,7 +5424,7 @@ _.PVP =
 						}),
 					}),
 					n(PVP_GLADIATOR, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(138634, {	-- Arsenal: Wild Gladiator's Weapons (H)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -6174,7 +6174,7 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(127366)),	-- Wild Gladiator's Tabard A
 				un(REMOVED_FROM_GAME, i(127374)),	-- Wild Gladiator's Greatcloak H
 				un(REMOVED_FROM_GAME, i(127365)),	-- Wild Gladiator's Tabard H
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(125762)),	-- Wild Gladiator's Ripper
 					un(REMOVED_FROM_GAME, i(125763)),	-- Wild Gladiator's Render
 					un(REMOVED_FROM_GAME, i(125632)),	-- Wild Gladiator's Bonegrinder
@@ -6494,7 +6494,7 @@ _.PVP =
 						}),
 					}),
 					n(PVP_COMBATANT, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(138628, {	-- Arsenal: Warmongering Combatant's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -7125,7 +7125,7 @@ _.PVP =
 						}),
 					}),
 					n(PVP_GLADIATOR, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(138635, {	-- Arsenal: Warmongering Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -8006,7 +8006,7 @@ _.PVP =
 						}),
 					}),
 					n(PVP_COMBATANT, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(138627, {	-- Arsenal: Warmongering Combatant's Weapons (H)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -8637,7 +8637,7 @@ _.PVP =
 						}),
 					}),
 					n(PVP_GLADIATOR, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(138636, {	-- Arsenal: Warmongering Gladiator's Weapons (H)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -9389,7 +9389,7 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(127371)),	-- Warmongering Gladiator's Tabard (H)
 				un(REMOVED_FROM_GAME, i(127377)),	-- Warmongering Gladiator's Greatcloak (A)
 				un(REMOVED_FROM_GAME, i(127369)),	-- Warmongering Gladiator's Tabard (A)
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(126876)),	-- Warmongering Gladiator's Ripper
 					un(REMOVED_FROM_GAME, i(126877)),	-- Warmongering Gladiator's Render
 					un(REMOVED_FROM_GAME, i(126746)),	-- Warmongering Gladiator's Bonegrinder
@@ -9578,7 +9578,7 @@ _.PVP =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9981, {	-- Draenor
 		n(-679, {	-- Primal Gladiator: Warlords Season 1
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(180460),	-- Primal Combatant's Decapitator
 				i(111076),	-- Primal Gladiator's Staff (H), none elite
 				i(115603),	-- Primal Gladiator's Staff (A), none elite

@@ -32,7 +32,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(PVP_ASPIRANT, {
-							n(-319, {	-- Weapons
+							n(WEAPONS, {
 								i(172880, {	-- Corrupted Aspirant's Chopper (A)
 									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
 								}),

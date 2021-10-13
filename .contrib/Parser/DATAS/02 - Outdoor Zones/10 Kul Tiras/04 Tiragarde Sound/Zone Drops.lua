@@ -34,7 +34,7 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10052, {	-- Battle for Azeroth
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(159538),	-- Coldscale Cudgel
 			i(159498),	-- Coldscale Pistol
 			i(159586),	-- Coralshell Blade

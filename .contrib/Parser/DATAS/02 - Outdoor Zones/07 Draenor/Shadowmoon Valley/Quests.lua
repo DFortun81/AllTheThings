@@ -1106,7 +1106,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(106155),	-- Karabor Honor Guard Wristwraps (green version, beta only)
 			}),
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(117994),	-- RENAME Karabor Honor Guard Axe
 			i(117993),	-- RENAME Rangari Boot Knife
 		}),

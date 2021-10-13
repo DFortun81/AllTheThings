@@ -1206,7 +1206,7 @@ _.Instances = { tier(WOTLK_TIER, {
 					["sym"] = {
 						{"sub", "pvp_gear_base", -10014, -670, PVP_GLADIATOR },	-- Relentless Gladiator: Season 7 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386, BACK, WRIST, WAIST, FEET, -319 },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
+						{"exclude", "headerID", NECK, FINGER, -386, BACK, WRIST, WAIST, FEET, WEAPONS },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
 					},
 				}),
 				n(38181, {	-- Haragg the Unseen <Warlock Armor>
@@ -4022,7 +4022,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(81707),	-- Ymirjar Lord's Legplates
 				i(81708),	-- Ymirjar Lord's Shoulderplates
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(50251),	-- Shadow's Edge One-Hander
 			}),
 		}),

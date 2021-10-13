@@ -213,7 +213,7 @@ _.Craftables =
 				i(41146),	-- Sun Scope
 				i(41167),	-- Heartseeker Scope
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				-- Guns
 				i(41168),	-- Armor Plated Combat Shotgun*
 				i(39688),	-- Mark "S" Boomstick*

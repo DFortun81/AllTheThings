@@ -355,7 +355,7 @@ _.WorldEvents =
 				i(32566),	-- Picnic Basket
 				i(38578),	-- The Flag of Ownership
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				un(NEVER_IMPLEMENTED, i(110591)),	-- Flintlocke's Blasthammer
 				i(39769),	-- Arcanite Ripper
 				i(90176),	-- Flintlocke's Blasthammer

@@ -7,7 +7,7 @@ _.PVP =
 	pvp(n(-10014, {	-- Wrath of the Lich King
 		n(-668, {	-- Deadly Gladiator: Season 5
 			n(-9983, {	-- Honor Gear // Savage Gladiator
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(146647, {	-- Arsenal: Savage Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
@@ -403,7 +403,7 @@ _.PVP =
 				}),
 			}),
 			n(-657, {	-- Hateful Gladiator
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(146646, {	-- Arsenal: Hateful Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
@@ -1075,7 +1075,7 @@ _.PVP =
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(146645, {	-- Arsenal: Deadly Gladiator's Weapon
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
@@ -1759,7 +1759,7 @@ _.PVP =
 		}),
 		n(-669, {	-- Furious Gladiator: Season 6
 			n(PVP_GLADIATOR, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(146644, {	-- Arsenal: Furious Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
@@ -2439,7 +2439,7 @@ _.PVP =
 				-- n34089 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
 				-- n34088 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
 				un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard
-				n(-319, {	-- Weapon
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(45954)),	-- Furious Gladiator's Acute Staff
 					un(REMOVED_FROM_GAME, i(45968)),	-- Furious Gladiator's Claw
 					un(REMOVED_FROM_GAME, i(45950)),	-- Furious Gladiator's Claymore
@@ -2472,7 +2472,7 @@ _.PVP =
 		}),
 		n(-670, {	-- Relentless Gladiator: Season 7
 			n(PVP_GLADIATOR, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(146643, {	-- Arsenal: Relentless Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
@@ -3170,7 +3170,7 @@ _.PVP =
 				-- n34091 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
 				-- n34090 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
 				un(REMOVED_FROM_GAME, i(49086)),	-- Relentless Gladiator's Tabard
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(48412)),	-- Relentless Gladiator's Acute Staff
 					un(REMOVED_FROM_GAME, i(49191)),	-- Relentless Gladiator's Blade of Celerity
 					un(REMOVED_FROM_GAME, i(48406)),	-- Relentless Gladiator's Claymore
@@ -3203,7 +3203,7 @@ _.PVP =
 		}),
 		n(-671, {	-- Wrathful Gladiator: Season 8
 			n(PVP_GLADIATOR, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(146642, {	-- Arsenal: Wrathful Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
@@ -3896,7 +3896,7 @@ _.PVP =
 				-- n34094 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
 				-- n34093 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
 				un(REMOVED_FROM_GAME, i(51534)),	-- Wrathful Gladiator's Tabard
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(51403)),	-- Wrathful Gladiator's Acute Staff
 					un(REMOVED_FROM_GAME, i(51398)),	-- Wrathful Gladiator's Blade of Celerity
 					un(REMOVED_FROM_GAME, i(51393)),	-- Wrathful Gladiator's Claymore
@@ -3933,7 +3933,7 @@ _.PVP =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10014, {	-- Wrath of the Lich King
 		n(-668, {	-- Deadly Gladiator: Season 5
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(42214),	-- Savage Gladiator's Waraxe
 				i(42523),	-- Savage Gladiator's Endgame
 				i(42529),	-- Savage Gladiator's Reprieve

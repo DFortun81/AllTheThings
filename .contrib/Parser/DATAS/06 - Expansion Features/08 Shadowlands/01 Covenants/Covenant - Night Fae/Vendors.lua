@@ -1959,7 +1959,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(181884),	-- Ardenweald Covenant Mail D_02 Cloak
 				}),
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(177719),	-- Ardenweald Covenant Dagger
 				i(177720),	-- Ardenweald Covenant Dagger
 				i(177721),	-- Ardenweald Covenant Dagger

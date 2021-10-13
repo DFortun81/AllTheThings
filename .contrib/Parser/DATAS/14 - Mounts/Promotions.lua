@@ -4,7 +4,7 @@
 
 _.Mounts =
 {
-	n(-31, {	-- Promotions
+	n(PROMOTIONS, {
 		un(REMOVED_FROM_GAME, i(43599)),	-- Big Blizzard Bear
 		un(REMOVED_FROM_GAME, i(118515)),	-- Cindermane Charger
 		un(REMOVED_FROM_GAME, i(109013)),	-- Dread Raven

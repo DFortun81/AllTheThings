@@ -17,7 +17,7 @@ _.Zones =
 					["coord"] = { 37.5, 71.4, ORGRIMMAR },
 					["g"] = {
 						n(PVP_ASPIRANT, {
-							n(-319, {	-- Weapons
+							n(WEAPONS, {
 								i(172881, {	-- Corrupted Aspirant's Chopper (H)
 									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
 								}),

@@ -349,7 +349,7 @@ _.Zones =
 							["classes"] = { DRUID },
 						}),
 					--	Shadowlands S2
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(185295, {	-- Unchained Aspirant's Barrier
 								["cost"] = { { "c", 1792, 425 } },	-- 425x Honor
 							}),
@@ -934,7 +934,7 @@ _.Zones =
 					["g"] = {
 					--	Shadowlands S2
 					--	Weapons (putting first for now in case they add covenant-locked stuff later)
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(185200, {	-- Unchained Gladiator's Ceremonial Sword
 								["cost"] = { { "c", 1602, 1350 } },	-- 1,350x Conquest
 							}),

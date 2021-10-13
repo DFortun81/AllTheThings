@@ -223,7 +223,7 @@ _.Zones =
 							["coord"] = { 54.8, 17.0, STORMSHIELD },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(138633, {	-- Arsenal: Wild Gladiator's Weapons (A)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
@@ -958,7 +958,7 @@ _.Zones =
 						n(86175, {	-- Bregg Coppercast <Primal Combatant>
 							["coord"] = { 56.2, 20.0, STORMSHIELD },
 							["g"] = {
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(138625, {	-- Arsenal: Primal Combatant's Weapons (A)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
@@ -2247,7 +2247,7 @@ _.Zones =
 								un(14, i(120287, {	-- Enchanter's Illusion - Primal Victory
 									["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 								})),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(138635, {	-- Arsenal: Warmongering Gladiator's Weapons (A)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
@@ -2925,7 +2925,7 @@ _.Zones =
 							["coord"] = { 55.0, 19.4, STORMSHIELD },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(138631, {	-- Arsenal: Primal Gladiator's Weapons
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
@@ -3744,7 +3744,7 @@ _.Zones =
 							["coord"] = { 54.8, 18.8, STORMSHIELD },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(138628, {	-- Arsenal: Warmongering Combatant's Weapons (A)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
@@ -4398,7 +4398,7 @@ _.Zones =
 							["coord"] = { 54.6, 17.6, STORMSHIELD },
 							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(138630, {	-- Arsenal: Wild Combatant's Weapons (A)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {

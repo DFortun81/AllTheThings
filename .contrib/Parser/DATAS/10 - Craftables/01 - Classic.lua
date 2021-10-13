@@ -663,7 +663,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(18986),	-- Ultrasafe Transporter: Gadgetzan*
 			i(18660),	-- World Enlarger*
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			-- Guns
 			i(18282),	-- Core Marksman Rifle*
 			i(16004),	-- Dark Iron Rifle*

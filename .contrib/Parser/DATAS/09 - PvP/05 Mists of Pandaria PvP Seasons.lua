@@ -646,7 +646,7 @@ _.PVP =
 			n(PVP_GLADIATOR, {
 			--	["description"] = "These items are available from Malevolent Gladiator: Season 12 class ensembles only",
 				["g"] = {
-					n(-319, {	-- Weapons
+					n(WEAPONS, {
 						i(144243, {	-- Arsenal: Malevolent Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["sym"] = {
@@ -1606,7 +1606,7 @@ _.PVP =
 				-- Original Sources are:
 				-- n65514 Ethan Natice in Valley of the Four Winds (Alliance)
 				-- n65515 Acon Deathwielder in Area Kun-Lai Summit (Horde)
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(85125)),	-- Malevolent Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(85122)),	-- Malevolent Gladiator's Baton of Light
 					un(REMOVED_FROM_GAME, i(85109)),	-- Malevolent Gladiator's Battle Staff
@@ -1788,7 +1788,7 @@ _.PVP =
 			n(-653, {	-- Honor Gear Tyrannical Season
 				["description"] = "These items are available from Malevolent Gladiator: Season 12 Vendor.",
 				["g"] = {
-					n(-319, {	-- Weapons
+					n(WEAPONS, {
 						i(91482, {	-- Malevolent Gladiator's Barrier
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
@@ -2367,7 +2367,7 @@ _.PVP =
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					n(PVP_GLADIATOR, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144246, {	-- Arsenal: Tyrannical Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -3266,7 +3266,7 @@ _.PVP =
 						}),
 					}),
 					n(-652, {	-- Honor Gear Grievous Season
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(99794, {	-- Tyrannical Gladiator's Barrier
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
@@ -3832,7 +3832,7 @@ _.PVP =
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					n(PVP_GLADIATOR, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144245, {	-- Arsenal: Tyrannical Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -4731,7 +4731,7 @@ _.PVP =
 						}),
 					}),
 					n(-652, {	-- Honor Gear Grievous Season
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(100171, {	-- Tyrannical Gladiator's Barrier
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
@@ -5297,7 +5297,7 @@ _.PVP =
 				-- Original Sources are:
 				-- n70101 Armsmaster Holinka in Valley of the Four Winds (Alliance)
 				-- n70108 Roo Desvin in Area Kun-Lai Summit (Horde)
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(91130)),	-- Tyrannical Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(91403)),	-- Tyrannical Gladiator's Baton of Light
 					un(REMOVED_FROM_GAME, i(91134)),	-- Tyrannical Gladiator's Battle Staff
@@ -5488,7 +5488,7 @@ _.PVP =
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					n(PVP_GLADIATOR, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144252, {	-- Arsenal: Grievous Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -6411,7 +6411,7 @@ _.PVP =
 						}),
 					}),
 					n(-651, {	-- Honor Gear Prideful (S15)
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(103167, {	-- Grievous Gladiator's Barrier
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
@@ -6986,7 +6986,7 @@ _.PVP =
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					n(PVP_GLADIATOR, {
-						n(-319,  {	-- Weapons
+						n(WEAPONS,  {
 							i(144251, {	-- Arsenal: Grievous Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -7906,7 +7906,7 @@ _.PVP =
 						}),
 					}),
 					n(-651, {	-- Honor Gear Prideful (S15)
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(102982, {	-- Grievous Gladiator's Barrier
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
@@ -8481,7 +8481,7 @@ _.PVP =
 				-- Original Sources are:
 				-- n00000 Unknown in Valley of the Four Winds (Alliance)
 				-- n00000 Unknown in Area Kun-Lai Summit (Horde)
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(100226)),	-- Grievous Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(100493)),	-- Grievous Gladiator's Baton of Light
 					un(REMOVED_FROM_GAME, i(100230)),	-- Grievous Gladiator's Battle Staff
@@ -8670,7 +8670,7 @@ _.PVP =
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					n(PVP_GLADIATOR, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144248, {	-- Arsenal: Prideful Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -9407,7 +9407,7 @@ _.PVP =
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					n(PVP_GLADIATOR, {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(144250, {	-- Arsenal: Prideful Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
@@ -10146,7 +10146,7 @@ _.PVP =
 				-- Original Sources are:
 				-- n73147 Ethan Natice in Valley of the Four Winds (Alliance)
 				-- n73145 Acon Deathwielder in Area Kun-Lai Summit (Horde)
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(102998)),	-- Prideful Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(103118)),	-- Prideful Gladiator's Baton of Light
 					un(REMOVED_FROM_GAME, i(103000)),	-- Prideful Gladiator's Battle Staff
@@ -10337,7 +10337,7 @@ _.PVP =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10041, {	-- Mists of Pandaria
 		n(-675, {	-- Malevolent Gladiator: Season 12
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(84714),	-- Dreadful Gladiator's Barrier
 				i(84704),	-- Dreadful Gladiator's Baton of Light
 				i(84723),	-- Dreadful Gladiator's Battle Staff
@@ -10380,7 +10380,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			f(51, {	-- Neck
 				i(97516),	-- Dreadful Gladiator's Pendant of Meditation
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(84899),	-- Malevolent Gladiator's Baton of Light
 				i(84897),	-- Malevolent Gladiator's Heavy Crossbow
 				i(85118),	-- Malevolent Gladiator's Shiv
@@ -10560,7 +10560,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 		n(-676, {	-- Tyrannical Gladiator: Season 13
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(91089),	-- Tyrannical Gladiator's Bonegrinder
 				i(91394),	-- Tyrannical Gladiator's Fleshslicer
 				i(91107),	-- Tyrannical Gladiator's Longbow
@@ -10608,7 +10608,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 		n(-677, {	-- Grievous Gladiator: Season 14
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(100185),	-- Grievous Gladiator's Bonegrinder
 				i(100241),	-- Grievous Gladiator's Heavy Crossbow
 				i(100278),	-- Grievous Gladiator's Staff
@@ -10629,7 +10629,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 		n(-678, {	-- Prideful Gladiator: Season 15
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(102611),	-- Prideful Gladiator's Bonegrinder
 				i(102613),	-- Prideful Gladiator's Heavy Crossbow
 				i(102595),	-- Prideful Gladiator's Staff

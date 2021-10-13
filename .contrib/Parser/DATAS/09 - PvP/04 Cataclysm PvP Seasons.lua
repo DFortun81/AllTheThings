@@ -11,7 +11,7 @@ _.PVP =
 				n(FACTION_HEADER_ALLIANCE, {
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(77549),	-- Replica Grand Marshal's Demolisher
 							i(77550),	-- Replica Grand Marshal's Swiftblade
 							i(77551),	-- Replica Grand Marshal's Dirk
@@ -216,7 +216,7 @@ _.PVP =
 				n(FACTION_HEADER_HORDE, {
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-319, {	-- Weapons
+						n(WEAPONS, {
 							i(77567),	-- Replica High Warlord's Battle Mace
 							i(77568),	-- Replica High Warlord's Spellblade
 							i(77569),	-- Replica High Warlord's Quickblade
@@ -1291,7 +1291,7 @@ _.PVP =
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(146641, {	--  Arsenal: Vicious Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
@@ -2055,7 +2055,7 @@ _.PVP =
 				-- Original Sources are:
 				-- n51255 Lieutenant Tristia <Glorious Conquest Quartermaster> in Stormwind (Alliance)
 				-- n46593 Doris Volanthius <Glorious Conquest Quartermaster> in Orgrimmar (Horde)
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(67476)),	-- Vicious Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(67464)),	-- Vicious Gladiator's Baton of Light
 					un(REMOVED_FROM_GAME, i(67450)),	-- Vicious Gladiator's Battle Staff
@@ -2434,7 +2434,7 @@ _.PVP =
 		}),
 		n(-673, {	-- Ruthless Gladiator: Season 10
 			n(PVP_GLADIATOR, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
@@ -3411,7 +3411,7 @@ _.PVP =
 				-- Original Sources are:
 				-- n40606 Knight-Lieutenant T'Maire Sydes in Stormwind (Alliance)
 				-- n54659 Blood Guard Zar'shi in Orgrimmar (Horde)
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(70207)),	-- Ruthless Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(70195)),	-- Ruthless Gladiator's Baton of Light
 					un(REMOVED_FROM_GAME, i(70181)),	-- Ruthless Gladiator's Battle Staff
@@ -3776,7 +3776,7 @@ _.PVP =
 		}),
 		n(-674, {	-- Cataclysmic Gladiator: Season 11
 			n(PVP_GLADIATOR, {
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
@@ -4496,7 +4496,7 @@ _.PVP =
 				-- Original Sources are: Unknown. Presumably:
 				-- n00000 (7 different ID's exist) Captain Dirgehammer in Stormwind (Alliance)
 				-- n00000 (7 different ID's exist) Sergeant Thunderhorn in Orgrimmar (Horde)
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(73435)),	-- Cataclysmic Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(73417)),	-- Cataclysmic Gladiator's Baton of Light
 					un(REMOVED_FROM_GAME, i(73433)),	-- Cataclysmic Gladiator's Battle Staff
@@ -4661,7 +4661,7 @@ _.PVP =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9979, {	-- Cataclysm
 		n(-672, {	-- Vicious Gladiator: Season 9
-			n(-319, { -- Weapons
+			n(WEAPONS, {
 				i(64693),	-- Bloodthirsty Gladiator's Barrier
 				i(64694),	-- Bloodthirsty Gladiator's Baton of Light
 				i(64695),	-- Bloodthirsty Gladiator's Battle Staff (Epic BG Item, never made it out of beta)

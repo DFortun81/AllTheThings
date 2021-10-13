@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(BFA_TIER, {
-		n(-319, {	-- Weapons [Epic -- No adjustments]
+		n(WEAPONS, {	-- [Epic -- No adjustments]
 			i(163969),	-- Ameelton's Shot-Thrower
 			i(163957),	-- Carmodius Crystalline Stylus
 			i(163962),	-- Decapitator of Alireza
@@ -24,7 +24,7 @@ _.WorldDrops =
 			i(163956),	-- Treiya's Shining Pillar
 			i(163968),	-- Yang's Other Recurve
 		}),
-		n(-319, {	-- Weapons [Uncommon -- needs ID's]
+		n(WEAPONS, {	-- [Uncommon -- needs ID's]
 			["groups"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 110}, {
 				i(159545),	-- Bleached Bone Club
 				i(159595),	-- Bleached Bone Cutlass

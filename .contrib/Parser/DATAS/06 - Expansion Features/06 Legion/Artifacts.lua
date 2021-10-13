@@ -2346,7 +2346,7 @@ _.ExpansionFeatures =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9982, {	-- Legion
 		n(-10067, {	-- Artifacts
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(137661),	-- Truthguard
 				i(136593),	-- Doomhammer Offhand Appearance Record (referenced by actual item)
 				i(134562),	-- Odyns Fury

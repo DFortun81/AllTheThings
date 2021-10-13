@@ -1862,7 +1862,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(80964),	-- Scavenger's Insignia
 			}),
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(80982),	-- Scavenger's Shield
 			i(80985),	-- Scavenger's Barrier
 			i(90331),	-- Face Smasher Warhammer
