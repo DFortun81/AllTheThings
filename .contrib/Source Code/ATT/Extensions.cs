@@ -198,6 +198,46 @@ namespace ATT
         }
 
         /// <summary>
+        /// Performs the expected .Contains logic for the provided object on a list containing objects,
+        /// but attempts to verify matching objects even when there are slightly different underlying Types
+        /// and passes-out the proper Typed-value if it is found in the List
+        /// </summary>
+        /// <param name="list"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static bool TrySmartContains(this List<object> list, object value, out object typedValue)
+        {
+            // if the types are already matching
+            if (list.Contains(value))
+            {
+                typedValue = value;
+                return true;
+            }
+
+            // otherwise attempt conversions
+            // float
+            try
+            {
+                Type listType = null;
+                foreach (object item in list)
+                {
+                    try
+                    {
+                        typedValue = Convert.ChangeType(value, listType ?? (listType = item.GetType()));
+                        if (Equals(item, typedValue))
+                            return true;
+                    }
+                    // either all objects in the list convert, or none do
+                    catch { break; }
+                }
+            }
+            catch { }
+
+            typedValue = null;
+            return false;
+        }
+
+        /// <summary>
         /// Try to get a dictionary from the dictionary.
         /// </summary>
         /// <param name="dict">The dictionary.</param>

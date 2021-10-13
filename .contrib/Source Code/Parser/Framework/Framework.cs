@@ -809,6 +809,37 @@ namespace ATT
                 }
             }
 
+            // notify about redundant tags on groups
+
+            // maps & coords
+            if (data.TryGetValue("maps", out object maps) && maps is List<object> mapsList)
+            {
+                // 'coord' is converted to 'coords' already
+                if (data.TryGetValue("coords", out object coords) && coords is List<object> coordsList)
+                {
+                    bool redundant = false;
+                    // check if any coord has a mapID which matches a maps mapID
+                    foreach (object coord in coordsList)
+                    {
+                        if (coord is List<object> coordList && coordList.Count > 2)
+                        {
+                            var coordMapID = coordList[2];
+                            if (mapsList.TrySmartContains(coordMapID, out object mapsValue))
+                            {
+                                mapsList.Remove(mapsValue);
+                                redundant = true;
+                            }
+                        }
+                    }
+                    // remove the key itself if no mapID values remain
+                    if (mapsList.Count == 0)
+                        data.Remove("maps");
+
+                    if (redundant)
+                        Trace.WriteLine($"Redundant 'maps' removed from: {MiniJSON.Json.Serialize(data)}");
+                }
+            }
+
             // clean up any metadata tags
             List<string> keys = data.Keys.ToList();
             for (int i = 0; i < data.Count; i++)
