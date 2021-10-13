@@ -169,7 +169,7 @@ _.Zones =
 							["sym"] = {
 							{"select", "headerID", -692},	-- BFA Season 4
 							{"pop"},	-- Discard the header and acquire the children.
-							{"where", "headerID", -661},	-- Gladiator Gear
+							{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
 							{"pop"},	-- Discard the header and acquire the children.
 						},
 						}),

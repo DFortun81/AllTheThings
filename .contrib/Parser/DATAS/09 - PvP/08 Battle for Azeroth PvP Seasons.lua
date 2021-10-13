@@ -6,7 +6,7 @@ _.PVP =
 {
 	pvp(n(-10052, {	-- Battle for Azeroth
 		n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
-			n(-659, {	-- Aspirant PvP Gear
+			n(PVP_ASPIRANT, {
 				n(-319, {	-- Weapons
 					i(162885),	-- Dread Aspirant's Barrier (A)
 					i(162890),	-- Dread Aspirant's Bonegrinder (A)
@@ -154,7 +154,7 @@ _.PVP =
 					i(162897),	-- Dread Aspirant's Medallion
 				}),
 			}),
-			n(-661, {	-- Gladiator PvP Gear
+			n(PVP_GLADIATOR, {
 				n(-319, {	-- Weapons
 					i(161698),	-- Dread Gladiator's Barrier (A)
 					i(161703),	-- Dread Gladiator's Bonegrinder (A)
@@ -388,7 +388,7 @@ _.PVP =
 			}),
 		}),
 		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
-			n(-659, {	-- Aspirant PvP Gear
+			n(PVP_ASPIRANT, {
 				n(-319, {	-- Weapons
 					i(165206),	-- Sinister Aspirant's Bonecracker (A)
 					i(166478),	-- Sinister Aspirant's Greatsword (A)
@@ -524,7 +524,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(165223)),	-- Sinister Aspirant's Badge
 				}),
 			}),
-			n(-661, {	-- Gladiator PvP Gear
+			n(PVP_GLADIATOR, {
 				n(-319, {	-- Weapons
 					i(165041),	-- Sinister Gladiator's Bonecracker (A)
 					i(166479),	-- Sinister Gladiator's Greatsword (A)
@@ -797,7 +797,7 @@ _.PVP =
 			}),
 		}),
 		n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
-			n(-659, {	-- Aspirant PvP Gear
+			n(PVP_ASPIRANT, {
 				n(-319, {	-- Weapons
 					i(169756),	-- Notorious Aspirant's Blade (A)
 					i(169754),	-- Notorious Aspirant's Cutter (A)
@@ -939,7 +939,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(167525)),	-- Notorious Aspirant's Medallion
 				}),
 			}),
-			n(-661, {	-- Gladiator PvP Gear
+			n(PVP_GLADIATOR, {
 				n(-319, {	-- Weapons
 					i(169720),	-- Notorious Gladiator's Bonegrinder (A)
 					i(169712),	-- Notorious Gladiator's Chopper (A)
@@ -1246,7 +1246,7 @@ _.PVP =
 			}),
 		}),
 		n(-692, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
-			n(-659, {	-- Aspirant PvP Gear
+			n(PVP_ASPIRANT, {
 				n(-319, {	-- Weapons
 					i(172880),	-- Corrupted Aspirant's Chopper (A)
 					i(174013),	-- Corrupted Aspirant's Claw (A)
@@ -1380,7 +1380,7 @@ _.PVP =
 					i(172846),	-- Corrupted Aspirant's Medallion
 				}),
 			}),
-			n(-661, {	-- Gladiator PvP Gear
+			n(PVP_GLADIATOR, {
 				n(-319, {	-- Weapons
 					i(172754),	-- Corrupted Gladiator's Chopper (A)
 					i(172778),	-- Corrupted Gladiator's Claw (A)

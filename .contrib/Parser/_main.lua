@@ -451,6 +451,11 @@ FEET = -330;
 NECK = -384;
 FINGER = -385;
 
+-- PvP Headers
+PVP_ASPIRANT = -659;
+PVP_COMBATANT = -660;
+PVP_GLADIATOR = -661;
+
 -- Filters
 BATTLE_PETS = 101;
 

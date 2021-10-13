@@ -6,7 +6,7 @@ _.PVP =
 {
 	pvp(n(-10100, {	-- Shadowlands
 		n(-693, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Sinful Gladiator: Shadowlands Season 1
-			n(-659, {	-- Aspirant Gear
+			n(PVP_ASPIRANT, {
 				n(BACK, {
 					i(178301),	-- Sinful Aspirant's Cape
 					i(175851),	-- Sinful Aspirant's Cloak
@@ -91,7 +91,7 @@ _.PVP =
 					i(178479),	-- Sinful Aspirant's Warglaive
 				}),
 			}),
-			n(-661, {	-- Gladiator Gear
+			n(PVP_GLADIATOR, {
 				n(BACK, {
 					i(175888),	-- Sinful Gladiator's Cloak
 					i(178353),	-- Sinful Gladiator's Drape
@@ -437,7 +437,7 @@ _.PVP =
 			}),
 		})),
 		n(-694, {	-- Unchained Gladiator: Shadowlands Season 2
-			n(-659, {	-- Aspirant Gear
+			n(PVP_ASPIRANT, {
 				n(BACK, {
 					i(185240),	-- Unchained Aspirant's Cape
 					i(185128),	-- Unchained Aspirant's Cloak
@@ -554,7 +554,7 @@ _.PVP =
 					i(185293),	-- Unchained Aspirant's Warglaive
 				}),
 			}),
-			n(-661, {	-- Gladiator Gear
+			n(PVP_GLADIATOR, {
 				n(BACK, {
 					i(185164),	-- Unchained Gladiator's Cloak
 					i(185245),	-- Unchained Gladiator's Drape

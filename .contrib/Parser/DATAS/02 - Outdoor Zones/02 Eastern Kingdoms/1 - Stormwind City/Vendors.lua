@@ -31,7 +31,7 @@ _.Zones =
 					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-659, {	-- Aspirant PvP Gear
+						n(PVP_ASPIRANT, {
 							n(-319, {	-- Weapons
 								i(172880, {	-- Corrupted Aspirant's Chopper (A)
 									["cost"] = { { "c", 1792, 875 } },	-- 875x Honor
@@ -334,7 +334,7 @@ _.Zones =
 					["coord"] = { 75.0, 67.5, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", -9979, -674, -661 },	-- Cataclysmic Gladiator: Season 11 Gladiator Gear
+						{"sub", "pvp_gear_base", -9979, -674, PVP_GLADIATOR },	-- Cataclysmic Gladiator: Season 11 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
@@ -1863,7 +1863,7 @@ _.Zones =
 					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", -9979, -673, -661 },
+						{"sub", "pvp_gear_base", -9979, -673, PVP_GLADIATOR },
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
@@ -2001,7 +2001,7 @@ _.Zones =
 					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", -9979, -672, -661 },	-- Vicious Gladiator: Season 9 Gladiator Gear
+						{"sub", "pvp_gear_base", -9979, -672, PVP_GLADIATOR },	-- Vicious Gladiator: Season 9 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 						{"finalize"},	-- Push the Set items to the finalized list.

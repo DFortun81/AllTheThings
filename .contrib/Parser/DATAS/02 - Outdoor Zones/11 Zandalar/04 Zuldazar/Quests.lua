@@ -67,7 +67,7 @@ _.Zones =
 							["g"] = {
 								i(167744, {	-- Aspirant's Equipment Cache
 									["sym"] = {
-										{ "sub", "pvp_gear_base", -10052, -692, -659 },	-- BFA header > Season 4 header > Aspirant gear header
+										{ "sub", "pvp_gear_base", -10052, -692, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
 										{ "pop" },	-- discard Aspirant / Combatant Gear header
 										{ "pop" },	-- discard item type headers
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
@@ -85,7 +85,7 @@ _.Zones =
 							["g"] = {
 								i(167744, {	-- Aspirant's Equipment Cache
 									["sym"] = {
-										{ "sub", "pvp_gear_base", -10052, -692, -659 },	-- BFA header > Season 4 header > Aspirant gear header
+										{ "sub", "pvp_gear_base", -10052, -692, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
 										{ "pop" },	-- discard Aspirant / Combatant Gear header
 										{ "pop" },	-- discard item type headers
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
@@ -104,7 +104,7 @@ _.Zones =
 							["g"] = {
 								i(167744, {	-- Aspirant's Equipment Cache
 									["sym"] = {
-										{ "sub", "pvp_gear_base", -10052, -692, -659 },	-- BFA header > Season 4 header > Aspirant gear header
+										{ "sub", "pvp_gear_base", -10052, -692, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
 										{ "pop" },	-- discard Aspirant / Combatant Gear header
 										{ "pop" },	-- discard item type headers
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
@@ -122,7 +122,7 @@ _.Zones =
 							["g"] = {
 								i(167744, {	-- Aspirant's Equipment Cache
 									["sym"] = {
-										{ "sub", "pvp_gear_base", -10052, -692, -659 },	-- BFA header > Season 4 header > Aspirant gear header
+										{ "sub", "pvp_gear_base", -10052, -692, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
 										{ "pop" },	-- discard Aspirant / Combatant Gear header
 										{ "pop" },	-- discard item type headers
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
@@ -140,7 +140,7 @@ _.Zones =
 							["g"] = {
 								i(167744, {	-- Aspirant's Equipment Cache
 									["sym"] = {
-										{ "sub", "pvp_gear_base", -10052, -692, -659 },	-- BFA header > Season 4 header > Aspirant gear header
+										{ "sub", "pvp_gear_base", -10052, -692, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
 										{ "pop" },	-- discard Aspirant / Combatant Gear header
 										{ "pop" },	-- discard item type headers
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
@@ -158,7 +158,7 @@ _.Zones =
 							["g"] = {
 								i(167744, {	-- Aspirant's Equipment Cache
 									["sym"] = {
-										{ "sub", "pvp_gear_base", -10052, -692, -659 },	-- BFA header > Season 4 header > Aspirant gear header
+										{ "sub", "pvp_gear_base", -10052, -692, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
 										{ "pop" },	-- discard Aspirant / Combatant Gear header
 										{ "pop" },	-- discard item type headers
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
@@ -176,7 +176,7 @@ _.Zones =
 							["g"] = {
 								i(167744, {	-- Aspirant's Equipment Cache
 									["sym"] = {
-										{ "sub", "pvp_gear_base", -10052, -692, -659 },	-- BFA header > Season 4 header > Aspirant gear header
+										{ "sub", "pvp_gear_base", -10052, -692, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
 										{ "pop" },	-- discard Aspirant / Combatant Gear header
 										{ "pop" },	-- discard item type headers
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
@@ -194,7 +194,7 @@ _.Zones =
 							["g"] = {
 								i(167744, {	-- Aspirant's Equipment Cache
 									["sym"] = {
-										{ "sub", "pvp_gear_base", -10052, -692, -659 },	-- BFA header > Season 4 header > Aspirant gear header
+										{ "sub", "pvp_gear_base", -10052, -692, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
 										{ "pop" },	-- discard Aspirant / Combatant Gear header
 										{ "pop" },	-- discard item type headers
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
@@ -212,7 +212,7 @@ _.Zones =
 							["g"] = {
 								i(167744, {	-- Aspirant's Equipment Cache
 									["sym"] = {
-										{ "sub", "pvp_gear_base", -10052, -692, -659 },	-- BFA header > Season 4 header > Aspirant gear header
+										{ "sub", "pvp_gear_base", -10052, -692, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
 										{ "pop" },	-- discard Aspirant / Combatant Gear header
 										{ "pop" },	-- discard item type headers
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
@@ -230,7 +230,7 @@ _.Zones =
 							["g"] = {
 								i(167744, {	-- Aspirant's Equipment Cache
 									["sym"] = {
-										{ "sub", "pvp_gear_base", -10052, -692, -659 },	-- BFA header > Season 4 header > Aspirant gear header
+										{ "sub", "pvp_gear_base", -10052, -692, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
 										{ "pop" },	-- discard Aspirant / Combatant Gear header
 										{ "pop" },	-- discard item type headers
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
