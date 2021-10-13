@@ -178,6 +178,26 @@ namespace ATT
         }
 
         /// <summary>
+        /// Returns if the dictionary contains any of the provided keys
+        /// </summary>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <param name="dict"></param>
+        /// <param name="keys"></param>
+        /// <returns></returns>
+        public static bool ContainsAnyKey<TKey, TValue>(this IDictionary<TKey, TValue> dict, IEnumerable<TKey> keys)
+        {
+            if (keys == null || dict == null || !keys.Any())
+                return false;
+
+            foreach (TKey key in keys)
+                if (dict.ContainsKey(key))
+                    return true;
+
+            return false;
+        }
+
+        /// <summary>
         /// Try to get a dictionary from the dictionary.
         /// </summary>
         /// <param name="dict">The dictionary.</param>

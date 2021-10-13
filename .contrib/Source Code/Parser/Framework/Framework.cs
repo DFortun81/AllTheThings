@@ -331,7 +331,11 @@ namespace ATT
 
             // Merge all relevant Item Data into the data container.
             if (!MergeItemData)
+            {
                 Items.MergeInto(data);
+                foreach (string key in Objects.MergeObjectFields.Keys)
+                    Objects.MergeInto(key, data);
+            }
 
 #if RETAIL
             // Retail has no reason to include Objective groups since the in-game Quest system does not warrant ATT including all this extra information
