@@ -8,7 +8,6 @@ _.ExpansionFeatures =
 		n(-9965, {	-- Legion Class Hall
 			cl(HUNTER, {
 				["classes"] = { HUNTER },
-				["lvl"] = 98,
 				["mapID"] = 739,
 				["g"] = {
 					n(FLIGHT_PATHS, {
@@ -401,7 +400,10 @@ _.ExpansionFeatures =
 							["coord"] = { 42.9, 46.9, 739 },
 						}),
 						q(42657, {	-- Meeting in Moonclaw Vale
-							["sourceQuests"] = { 42656 },	-- Azure Weaponry
+							["sourceQuests"] = {
+								42656,	-- Azure Weaponry
+								42408,	-- Required Reagents
+							},
 							["classes"] = { HUNTER },
 							["provider"] = { "n", 108455 },	-- Shandris Feathermoon
 							["coord"] = { 46.4, 34.8, 739 },
@@ -447,8 +449,9 @@ _.ExpansionFeatures =
 							["coord"] = { 43.4, 26.4, 739 },
 						}),
 						q(44366, {	-- One Last Adventure
+							["sourceQuests"] = { 40419 },	-- Rescue Mission
 							["classes"] = { HUNTER },
-							["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
+							["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
 							["coord"] = { 43.4, 26.4, 739 },
 						}),
 						q(42655, {	-- Ore Under the Sea
@@ -462,6 +465,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 113327 },	-- Snowfeather
 						}),
 						q(41542, {	-- Preparation for the Hunt
+							["sourceQuests"] = { 44366 },	-- One Last Adventure
 							["classes"] = { HUNTER },
 							["providers"] = {
 								{ "n", 102478 },	-- Emmarel Shadewarden
@@ -580,7 +584,7 @@ _.ExpansionFeatures =
 						q(42395, {	-- Signaling Trouble
 							["sourceQuests"] = { 42393 },	-- Homecoming
 							["classes"] = { HUNTER },
-							["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
+							["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
 							["coord"] = { 43.4, 26.4, 739 },
 						}),
 						q(42928, {	-- Silkweave Bandages
