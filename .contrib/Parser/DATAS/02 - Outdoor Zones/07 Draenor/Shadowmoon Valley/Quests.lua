@@ -1092,20 +1092,6 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9981, {	-- Draenor
-		n(-163, {	-- Armor
-			n(-43, {	-- Cloth
-				i(106165),	-- Karabor Sage Wristwraps
-			}),
-			n(-44, {	-- Leather
-				i(106144),	-- Karabor Skirmisher Wristwraps
-			}),
-			n(-45, {	-- Mail
-				i(106178),	-- Rangari Initiate Wristwraps (Beta only), Probably from other quest
-			}),
-			n(-46, {	-- Plate
-				i(106155),	-- Karabor Honor Guard Wristwraps (green version, beta only)
-			}),
-		}),
 		n(WEAPONS, {
 			i(117994),	-- RENAME Karabor Honor Guard Axe
 			i(117993),	-- RENAME Rangari Boot Knife
