@@ -13,7 +13,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17479,	-- Gunny
 					["coord"] = { 56.4, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
 					-- #if BEFORE 4.3.0.14732
@@ -28,7 +27,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17558,	-- Caza'rez
 					["coord"] = { 54.9, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
 					-- #if BEFORE 4.3.0.14732
@@ -109,7 +107,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9587,	-- Dark Tidings [Alliance]
 					["coord"] = { 56.4, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
 					["groups"] = {
@@ -129,7 +126,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9588,	-- Dark Tidings [Horde]
 					["coord"] = { 54.9, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
 					["groups"] = {

@@ -42,14 +42,12 @@ _.ExpansionFeatures =
 								42042,	-- Teensy Weensies!
 								42043,	-- Cleaning Up
 							},
-							["maps"] = { 715 },	-- The Dreamway
 						}),
 						q(40785, {	-- A Foe of the Dark
 							["sourceQuests"] = { 40784 },	-- Its Rightful Place
 							["provider"] = { "n", 101651 },	-- Belysra Starbreeze
 							["classes"] = { DRUID },
 							["coord"] = { 48.8, 34.2, DUSKWOOD },
-							["maps"] = { DUSKWOOD },
 						}),
 						q(42586, {	-- A Glade Defense
 							["sourceQuests"] = { 42585 },	-- Recruiting the Troops
@@ -71,7 +69,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 106250 },	-- Keeper Remulos
 							["coord"] = { 60.5, 23.6, MOUNT_HYJAL },
 							["sourceQuests"] = { 42045 },	-- Communing with Malorne
-							["maps"] = { MOUNT_HYJAL },
 							["g"] = {
 								i(139730),	-- Bracers of the Dreamgrove
 							},
@@ -87,7 +84,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 107392 },	-- Delandros Shimmermoon
 							["classes"] = { DRUID },
 							["coord"] = { 70.4, 46.7, VALSHARAH },
-							["maps"] = { VALSHARAH },
 						}),
 						q(46026, {	-- An Urgent Warning
 							["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
@@ -103,7 +99,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 107212 },	-- Skylord Omnuron
 							["coord"] = { 53.7, 33.9, 760 },
 							["sourceQuests"] = { 42053 },	-- The War of the Ancients
-							["maps"] = { 760 },
 						}),
 						q(41332, {	-- Ascending The Circle
 							["sourceQuests"] = { 41255 },	-- Sowing The Seed
@@ -119,7 +114,6 @@ _.ExpansionFeatures =
 							},
 							["coord"] = { 40.9, 42.6, MOUNT_HYJAL },
 							["sourceQuest"]	= 44869,	-- Talon Terror
-							["maps"] = { MOUNT_HYJAL },	-- Shrine of Aviana
 						}),
 						q(44888, {	-- Aviana's Grace
 							["classes"] = { DRUID },
@@ -132,7 +126,6 @@ _.ExpansionFeatures =
 								44877,	-- Attack on the Roost
 								45532,	-- Mother's Orders
 							},
-							["maps"] = { MOUNT_HYJAL },	-- Shrine of Aviana
 					}),
 						q(42588, {	-- Branching Out
 							["classes"] = { DRUID },
@@ -145,7 +138,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 101064 },	-- Archdruid Hamuul Runetotem
 							["classes"] = { DRUID },
 							["coord"] = { 56.2, 32.0, MOONGLADE },
-							["maps"] = { MOONGLADE },
 						}),
 						q(43368, {	-- Champion: Brightwing
 							["classes"] = { DRUID },
@@ -156,7 +148,6 @@ _.ExpansionFeatures =
 								43365,	-- The Cycle Continues
 								42129,	-- The Pendant of Starlight
 							},
-							["maps"] = { 715 },	-- The Dreamway
 							["g"] = {
 								follower(645),	-- Brightwing
 							},
@@ -242,7 +233,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
 							["coord"] = { 43.4, 30.6, 715 },
 							["sourceQuests"] = { 42040 },	-- The Way to Nordrassil
-							["maps"] = { 715 },	-- The Dreamway
 						}),
 						q(41689, {	-- Cleansing the Mother Tree
 							["sourceQuests"] = { 41690 },	-- Reconvene
@@ -261,7 +251,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
 							["coord"] = { 43.4, 30.6, 715 },
 							["sourceQuests"] = { 42044 },	-- A Dying Dream
-							["maps"] = { 715 },	-- The Dreamway
 						}),
 						q(44076, {	-- Darkheart Thicket: Essence of Regrowth
 							["classes"] = { DRUID },
@@ -269,21 +258,18 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 112549 },	-- Glimmer of Aessina
 							["coord"] = { 40.9, 59.0, 715 },
 							["sourceQuests"] = { 43991 },	-- The Protectors
-							["maps"] = { 715 },	-- The Dreamway
 						}),
 						q(42050, {	-- Defenders of the Dream
 							["classes"] = { DRUID },
 							["provider"] = { "n", 107163 },	-- Archdruid Hamuul Runetotem
 							["coord"] = { 61.2, 65.2, 760 },
 							["sourceQuests"] = { 42051 },	-- Enter Nightmare
-							["maps"] = { 760 },	-- The Dreamway
 						}),
 						q(43403, {	-- Defending the Isles
 							["classes"] = { DRUID },
 							["provider"] = { "n", 106250 },	-- Keeper Remulos
 							["coord"] = { 60.5, 23.6, MOUNT_HYJAL },
 							["sourceQuests"] = { 42046 },	-- A New Beginning
-							["maps"] = { MOUNT_HYJAL },	-- The Dreamway
 						}),
 						q(42031, {	-- Dire Growth
 							["classes"] = { DRUID },
@@ -296,7 +282,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 100729 },	-- Revil Kost
 							["classes"] = { DRUID },
 							["coord"] = { 52.4, 34.4, DEADWIND_PASS },
-							["maps"] = { DEADWIND_PASS },
 						}),
 						q(40654, {	-- Druids of the Claw
 							["classes"] = { DRUID },
@@ -310,7 +295,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
 							["coord"] = { 43.4, 30.6, 715 },
 							["sourceQuests"] = { 42040 },	-- The Way to Nordrassil
-							["maps"] = { 715 },	-- The Dreamway
 						}),
 						q(42051, {	-- Enter Nightmare
 							["classes"] = { DRUID },
@@ -329,7 +313,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 98008 },	-- Brightwing
 							["coord"] = { 39.6, 45.5, 715 },
 							["sourceQuests"] = { 42045 },	-- Communing with Malorne
-							["maps"] = { 715 },	-- The Dreamway
 						}),
 						q(44077, {	-- Eye of Azshara: Essence of Balance
 							["classes"] = { DRUID },
@@ -337,14 +320,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 112548 },	-- Keeper Remulos
 							["coord"] = { 30.7, 50.8, 715 },
 							["sourceQuests"] = { 43991 },	-- The Protectors
-							["maps"] = { 715 },	-- The Dreamway
 						}),
 						q(41783, {	-- Fallen Offerings
 							["sourceQuests"] = { 41782 },	-- To The Hills
 							["provider"] = { "n", 104535 },	-- Lea Stonepaw
 							["classes"] = { DRUID },
 							["coord"] = { 51.3, 36.8, GRIZZLY_HILLS },
-							["maps"] = { GRIZZLY_HILLS },
 							["u"] = REMOVED_FROM_GAME,	-- was not part of the questline as of 12/12/20
 						}),
 						q(42365, {	-- Focusing the Energies
@@ -352,21 +333,18 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 106250 },	-- Keeper Remulos
 							["coord"] = { 60.5, 23.6, 747 },
 							["sourceQuests"] = { 42046 },	-- A New Beginning
-							["maps"] = { 747 },	-- The Dreamgrove
 						}),
 						q(40834, {	-- Following the Curse
 							["sourceQuests"] = { 40785 },	-- A Foe in the Dark
 							["provider"] = { "n", 100323 },	-- Revil Kost
 							["classes"] = { DRUID },
 							["coord"] = { 77.4, 36.3, DUSKWOOD },
-							["maps"] = { DUSKWOOD },
 						}),
 						q(46786, {	-- Further Advancement
 							["classes"] = { DRUID },
 							["provider"] = { "n", 98002 },	-- Skylord Omnuron
 							["coord"] = { 52.6, 51.4, 747 },
 							["sourceQuests"] = { 46044 },	-- Champion: Thisalee Crow
-							["maps"] = { 747 }
 						}),
 						q(46154, {	-- Furthering Knowledge
 							["u"] = REMOVED_FROM_GAME,
@@ -385,7 +363,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 105903 },	-- Broll Bearmantle
 							["coord"] = { 57.2, 71.3, VALSHARAH },
 							["sourceQuests"] = { 42033 },	-- Malorne's Refuge
-							["maps"] = { VALSHARAH },
 						}),
 						q(45425, {	-- Grovebound
 							["classes"] = { DRUID },
@@ -409,7 +386,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 112544 },	-- Keeper Remulos
 							["coord"] = { 31.1, 36.5, 715 },
 							["sourceQuests"] = { 43991 },	-- The Protectors
-							["maps"] = { 715 },	-- The Dreamway
 						}),
 						q(43879, {	-- Hitting the Books
 							["u"] = REMOVED_FROM_GAME,
@@ -420,7 +396,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 106883 },	-- Sylendra Gladesong
 							["coord"] = { 59.8, 75.2, VALSHARAH },
 							["sourceQuests"] = { 42035 },	-- Tracking the Enemy
-							["maps"] = { VALSHARAH },
 							["g"] = {
 								ach(10461, crit(3)),	-- Fighting with Style: Classic / Complete the first order campaign effort.
 							},
@@ -443,7 +418,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 101656 },	-- Valorn Stillbough
 							["classes"] = { DRUID },
 							["coord"] = { 48.9, 34.3, DUSKWOOD },
-							["maps"] = { DUSKWOOD },
 						}),
 						q(41449, {	-- Join the Dreamer
 							["sourceQuests"] = { 41422 },	-- Necessary Preparations
@@ -463,14 +437,12 @@ _.ExpansionFeatures =
 								{ "n", 120032 },	-- Thisalee Crow
 								{ "n", 120041 },	-- Druid of the Talon
 							},
-							["maps"] = { MOONGLADE },
 						}),
 						q(44921, {	-- Lone Wolf
 							["classes"] = { DRUID },
 							["provider"] = { "n", 115749 },	-- Aviana
 							["coord"] = { 44.3, 48.0, MOUNT_HYJAL },
 							["sourceQuest"]	= 44888,	-- Aviana's Grace
-							["maps"] = { MOUNT_HYJAL },
 						}),
 						q(42033, {	-- Malorne's Refuge
 							["classes"] = { DRUID },
@@ -509,14 +481,12 @@ _.ExpansionFeatures =
 							},
 							["coord"] = { 40.9, 42.6, MOUNT_HYJAL },
 							["sourceQuest"]	= 44869,	-- Talon Terror
-							["maps"] = { MOUNT_HYJAL },	-- Shrine of Aviana
 						}),
 						q(45426, {	-- Nature's Advance
 							["classes"] = { DRUID },
 							["provider"] = { "n", 115750 },	-- Goldrinn <Ancient>
 							["coord"] = { 68.1, 55.3, MOONGLADE },
 							["sourceQuests"] = { 46924 },	-- The Wolf's Tale
-							["maps"] = { MOONGLADE },
 						}),
 						q(46676, {	-- Nature's Touch
 							["classes"] = { DRUID },
@@ -526,7 +496,6 @@ _.ExpansionFeatures =
 							},
 							["coord"] = { 43.5, 58.3, BROKEN_SHORE },
 							["sourceQuests"] = { 46674 },	-- The Preservation of Nature
-							["maps"] = { BROKEN_SHORE },
 						}),
 						q(41422, {	-- Necessary Preparations
 							["sourceQuests"] = { 40649 },	-- Meet with Mylune
@@ -540,14 +509,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 112546 },	-- Keeper Remulos
 							["coord"] = { 34.7, 62.5, 715 },
 							["sourceQuests"] = { 43991 },	-- The Protectors
-							["maps"] = { 715 },	-- The Dreamway
 						}),
 						q(42049, {	-- Powering the Portal
 							["classes"] = { DRUID },
 							["provider"] = { "n", 106250 },	-- Keeper Remulos
 							["coord"] = { 60.5, 23.6, 747 },
 							["sourceQuests"] = { 42046 },	-- A New Beginning
-							["maps"] = { 747 },	-- The Dreamway
 						}),
 						q(46677, {	-- Prick of a Thistle
 							["classes"] = { DRUID },
@@ -591,7 +558,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 107392 },	-- Delandros Shimmermoon
 							["classes"] = { DRUID },
 							["coord"] = { 70.4, 46.7, VALSHARAH },
-							["maps"] = { VALSHARAH },
 						}),
 						q(42584, {	-- Sister Lilith
 							["sourceQuests"] = { 42583 },	-- Rise, Champions
@@ -616,7 +582,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
 							["coord"] = { 43.4, 30.6, 715 },
 							["sourceQuests"] = { 42040 },	-- The Way to Nordrassil
-							["maps"] = { 715 },	-- The Dreamway
 						}),
 						q(45528, {	-- The Befouled Barrows
 							["classes"] = { DRUID },
@@ -626,28 +591,24 @@ _.ExpansionFeatures =
 								{ "n", 120032 },	-- Thisalee Crow
 								{ "n", 120041 },	-- Druid of the Talon
 							},
-							["maps"] = { MOONGLADE },
 						}),
 						q(40900, {	-- The Burden Borne
 							["sourceQuests"] = { 40838 },	-- The Dark Riders
 							["provider"] = { "n", 101282 },	-- Revil Kost
 							["classes"] = { DRUID },
 							["coord"] = { 68.3, 27.1, 46 },
-							["maps"] = { 46 },	-- Deadwind Pass (Karazhan Catacombs)
 						}),
 						q(43365, {	-- The Cycle Continues
 							["classes"] = { DRUID },
 							["provider"] = { "n", 98008 },	-- Brightwing
 							["coord"] = { 39.6, 45.5, 715 },
 							["sourceQuests"] = { 42045 },	-- Communing with Malorne
-							["maps"] = { 715 },	-- The Dreamway
 						}),
 						q(40838, {	-- The Dark Riders
 							["sourceQuests"] = { 40837 },	-- The Deadwind Hunt
 							["provider"] = { "n", 100812 },	-- Revil Kost
 							["classes"] = { DRUID },
 							["coord"] = { 46.9, 69.5, DEADWIND_PASS },
-							["maps"] = { DEADWIND_PASS },
 							["g"] = {
 								i(128858, {	-- Scythe of Elune
 									artifact(244),	-- Standard Appearance
@@ -659,14 +620,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 100729 },	-- Revil Kost
 							["classes"] = { DRUID },
 							["coord"] = { 52.4, 34.4, DEADWIND_PASS },
-							["maps"] = { DEADWIND_PASS },
 						}),
 						q(42055, {	-- The Demi-God's Return
 							["classes"] = { DRUID },
 							["provider"] = { "n", 106905 },	-- Malorne
 							["coord"] = { 66.1, 66.8, 760 },
 							["sourceQuests"] = { 42054 },	-- Call of the Wilds
-							["maps"] = { 760 },	-- Moonglade
 							["g"] = {
 								i(139723),	-- Robes of the Dreamgrove
 								title(327),	-- Archdruid <Name>
@@ -677,14 +636,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 104535 },	-- Lea Stonepaw
 							["classes"] = { DRUID },
 							["coord"] = { 51.3, 36.8, GRIZZLY_HILLS },
-							["maps"] = { GRIZZLY_HILLS },
 						}),
 						q(40644, {	-- The Dreamway
 							["sourceQuests"] = { 41106 },	-- Call of the Wilds
 							["provider"] = { "n", 101064 },	-- Archdruid Hamuul Runetotem
 							["classes"] = { DRUID },
 							["coord"] = { 56.2, 32.0, MOONGLADE },
-							["maps"] = { MOONGLADE },
 						}),
 						q(42432, {	-- The Emerald Nightmare: The Emerald Nightmare
 							["classes"] = { DRUID },
@@ -697,7 +654,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 107392 },	-- Delandros Shimmermoon
 							["classes"] = { DRUID },
 							["coord"] = { 73.8, 38.4, VALSHARAH },
-							["maps"] = { VALSHARAH },
 							["g"] = {
 								i(128860, {	-- Fangs of Ashamane
 									artifact(426, {	-- Standard Troll
@@ -724,7 +680,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 104385 },	-- Ursol
 							["classes"] = { DRUID },
 							["coord"] = { 50.5, 37.6, GRIZZLY_HILLS },
-							["maps"] = { GRIZZLY_HILLS },
 						}),
 						q(44232, {	-- The Grove Provides
 						--	this is now available to level 45 characters (was previously 110).  unsure if it has any specific SQs or if it's just "hey, congratulations for hitting this level!"
@@ -741,7 +696,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 98008 },	-- Brightwing
 							["coord"] = { 39.6, 45.5, 715 },
 							["sourceQuests"] = { 42045 },	-- Communing with Malorne
-							["maps"] = { 715 },	-- The Dreamway
 						}),
 						q(46674, {	-- The Preservation of Nature
 							["classes"] = { DRUID },
@@ -756,7 +710,6 @@ _.ExpansionFeatures =
 							["coord"] = { 44.6, 50.0, 747 },
 							["sourceQuests"] = { 42036 },	-- Idol of the Wilds
 							["description"] = "Feral stone: Shapeshift into cat form and use Prowl.\nRestoration stone: Heal the sampling infront of the stone.\nBalance stone: Target the candles and use Moonfire.\nGuardian stone: Just be a Bear.",
-							["maps"] = { 747 },	-- The Dreamway
 						}),
 						q(40783, {	-- The Scythe of Elune
 							["provider"] = { "n", 103778 },	-- Naralex
@@ -768,7 +721,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 104385 },	-- Ursol
 							["classes"] = { DRUID },
 							["coord"] = { 50.5, 37.6, GRIZZLY_HILLS },
-							["maps"] = { GRIZZLY_HILLS },
 						}),
 						q(40651, {	-- The Seed of Ages
 							["u"] = REMOVED_FROM_GAME,
@@ -786,27 +738,23 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 107392 },	-- Delandros Shimmermoon
 							["classes"] = { DRUID },
 							["coord"] = { 73.2, 42.6, VALSHARAH },
-							["maps"] = { VALSHARAH },
 						}),
 						q(41792, {	-- The Third Trial of Ursol
 							["sourceQuests"] = { 41791 },	-- The Second Trial of Ursol
 							["provider"] = { "n", 104385 },	-- Ursol
 							["classes"] = { DRUID },
 							["coord"] = { 50.5, 37.6, GRIZZLY_HILLS },
-							["maps"] = { GRIZZLY_HILLS },
 						}),
 						q(42053, {	-- The War of Ancients
 							["classes"] = { DRUID },
 							["provider"] = { "n", 107132 },	-- Keeper Remulos
 							["coord"] = { 61.4, 65.6, 760 },
 							["sourceQuests"] = { 42050 },	-- Defenders of the Dream
-							["maps"] = { 760 },	-- The Dreamway
 						}),
 						q(42040, {	-- The Way to Nordrassil
 							["classes"] = { DRUID },
 							["provider"] = { "n", 103832 },	-- Keeper Remulos
 							["coord"] = { 44.6, 50.0, 747 },
-							["maps"] = { 747 },	-- The Dreamway
 						}),
 						q(46924, {	-- The Wolf's Tale
 							["classes"] = { DRUID },
@@ -825,7 +773,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 103875 },	-- Malfurion Stormrage
 							["classes"] = { DRUID },
 							["coord"] = { 66.8, 60.4, MOONGLADE },
-							["maps"] = { MOONGLADE },
 						}),
 						q(41782, {	-- To The Hills
 							["classes"] = { DRUID },
@@ -841,7 +788,6 @@ _.ExpansionFeatures =
 							},
 							["coord"] = { 43.5, 58.3, BROKEN_SHORE },
 							["sourceQuests"] = { 46674 },	-- The Preservation of Nature
-							["maps"] = { BROKEN_SHORE },
 						}),
 						q(42035, {	-- Tracking the Enemy
 							["classes"] = { DRUID },
@@ -849,7 +795,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 105948 },	-- Sylendra Gladesong
 							["coord"] = { 56.8, 71.5, VALSHARAH },
 							["sourceQuests"] = { 42034 },	-- Grip of Nightmare
-							["maps"] = { VALSHARAH },
 						}),
 						q(46940, {	-- Using Lost Knowledge
 							["u"] = REMOVED_FROM_GAME,
@@ -872,7 +817,6 @@ _.ExpansionFeatures =
 							["classes"] = { DRUID },
 							["coord"] = { 51.3, 36.8, GRIZZLY_HILLS },
 							["maps"] = {
-								GRIZZLY_HILLS,
 								757,	-- Ursoc's Lair
 							},
 							["g"] = {
@@ -904,7 +848,6 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
 								["coord"] = { 43.6, 63.6, BROKEN_SHORE },
 								["sourceQuests"] = { 46246 },	-- Strike Them Down
-								["maps"] = { BROKEN_SHORE },
 							}),
 							q(46318, {	-- Defense of Aviana
 								["provider"] = { "n", 106299 },	-- Thisalee Crow

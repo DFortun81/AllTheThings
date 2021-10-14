@@ -6,16 +6,6 @@ _.WorldEvents =
 {
 	n(-94, bubbleDown({["u"] = 9}, {	-- Black Market AH
 		["description"] = "This list is close to what you can expect to find on the Black Market Auction House, but keep in mind other items could pop up.",
-		["maps"] = {
-			BORALUS,
-			626,	-- Dalaran: Rogue Class Hall	-- Still works in 9.0.2
-			ZULDAZAR,
-			REVENDRETH,
-			--625,	-- Dalaran: Broken Isles -- Option to interact with this Version removed in 9.0.2
-			--LEGION_THE_UNDERBELLY,	-- Option to interact with this Version removed in 9.0.2
-			--FROSTWALL,
-			--LUNARFALL,
-		},
 		["crs"] = {
 			142062,	-- Madam Gosu [Boralus - Alliance]
 			103791,	-- Madam Gosu [Rogue Class Hall]

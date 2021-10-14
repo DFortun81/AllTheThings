@@ -49,7 +49,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9832,	-- The Second and Third Fragments
 					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
 					["timeline"] = { "removed 7.1.0.1233" },
-					["maps"] = { SHATTRATH_CITY },
 					["cost"] = {
 						{ "i", 24489, 1 },	-- Restored Apprentice's Key
 					},

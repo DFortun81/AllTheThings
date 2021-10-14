@@ -204,7 +204,6 @@ profession(20222, {	-- Goblin Engineering
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 54.4, 27.2, TANARIS },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { TANARIS },
 			["cost"] = { { "g", 20000 } },	-- 2g
 			["timeline"] = { "removed 4.0.3.2000" },
 			["repeatable"] = true,
@@ -219,7 +218,6 @@ profession(20222, {	-- Goblin Engineering
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 62.6, 36.2, THE_BARRENS },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { THE_BARRENS },
 			["cost"] = { { "g", 20000 } },	-- 2g
 			["timeline"] = { "removed 4.0.3.2000" },
 			["repeatable"] = true,
@@ -238,7 +236,6 @@ profession(20222, {	-- Goblin Engineering
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 54.4, 27.2, TANARIS },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { TANARIS },
 			["timeline"] = { "removed 4.0.3.2000" },
 			["cost"] = {
 				{ "i", 4392, 2 },	-- Advanced Target Dummy
@@ -262,7 +259,6 @@ profession(20222, {	-- Goblin Engineering
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 54.4, 27.2, TANARIS },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { TANARIS },
 			["timeline"] = { "removed 4.0.3.2000" },
 			["cost"] = {
 				{ "i", 10792, 1 },	-- Nixx's Pledge of Secrecy

@@ -40,7 +40,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["coord"] = { 54.2, 44.4, SHATTRATH_CITY },
 					["timeline"] = { "removed 3.0.2" },
-					["maps"] = { SHATTRATH_CITY },
 					["groups"] = {
 						objective(1, {	-- Magtheridon slain
 							["provider"] = { "n", 17257 },	-- Magtheridon
@@ -66,7 +65,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)
 					["coord"] = { 54.2, 44.4, SHATTRATH_CITY },
 					["timeline"] = { "added 3.0.2" },
-					["maps"] = { SHATTRATH_CITY },
 					["groups"] = {
 						objective(1, {	-- Magtheridon slain
 							["provider"] = { "n", 17257 },	-- Magtheridon

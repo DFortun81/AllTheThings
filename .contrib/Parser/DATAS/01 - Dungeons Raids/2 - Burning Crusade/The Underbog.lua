@@ -23,7 +23,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17856,	-- Gzhun'tt
 					["coord"] = { 19.4, 50.0, ZANGARMARSH },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { ZANGARMARSH },
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
 					},
@@ -42,7 +41,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9715,	-- Bring Me A Shrubbery!
 					["coord"] = { 19.4, 50.0, ZANGARMARSH },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { ZANGARMARSH },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
@@ -63,7 +61,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18074,	-- Elementalist Morgh <The Earthen Ring>
 					["coord"] = { 60.6, 22.4, NAGRAND },
 					["timeline"] = { "added 4.3.0.14732" },
-					["maps"] = { NAGRAND },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(63, 10, 63),
 				}),
@@ -71,7 +68,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17857,	-- T'shu
 					["coord"] = { 19.4, 49.8, ZANGARMARSH },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { ZANGARMARSH },
 					["lvl"] = lvlsquish(63, 10, 63),
 					["groups"] = {
 						objective(1, {	-- 0/1 Underspore Frond
@@ -109,7 +105,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17866,	-- Khn'nix
 					["coord"] = { 19.6, 49.8, ZANGARMARSH },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { ZANGARMARSH },
 					["lvl"] = lvlsquish(63, 10, 63),
 					["groups"] = {
 						objective(1, {	-- 0/1 Brain of the Black Stalker

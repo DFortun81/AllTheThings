@@ -6,11 +6,6 @@ _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
 		n(-949, {	-- Venthyr
-			["customCollect"] = "SL_COV_VEN",	-- Venthyr
-			["maps"] = {
-				SINFALL_REACHES,
-				SINFALL_DEPTHS,
-			},
 			["g"] = {
 				n(-902, {	-- Renown
 					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",

@@ -403,7 +403,6 @@ _.Zones =
 					["sourceQuest"] = 13036,	-- Honor Above All Else
 				}),
 				q(13078, {	-- Dahlia's Tears
-					["maps"] = { DRAGONBLIGHT },
 					["coord"] = { 59.8, 54.7, DRAGONBLIGHT },
 					["provider"] = { "n", 26917 },	-- Alexstrasza the Life-Binder
 					["sourceQuest"] = 13077,	-- The Touch of an Aspect
@@ -660,7 +659,6 @@ _.Zones =
 				}),
 				q(13074, {	-- Hope Within the Emerald Nightmare
 					["lvl"] = 67,
-					["maps"] = { MOONGLADE },
 					["coord"] = { 36.2, 41.8, MOONGLADE },
 					["provider"] = { "n", 11832 },	-- Keeper Remulos
 					["sourceQuest"] = 13073,	-- The Keeper's Favor
@@ -1457,14 +1455,12 @@ _.Zones =
 					["sourceQuest"] = 13081,	-- The Will of the Naaru
 				}),
 				q(13079, {	-- The Boon of Alexstrasza
-					["maps"] = { DRAGONBLIGHT },
 					["coord"] = { 59.8, 54.7, DRAGONBLIGHT },
 					["provider"] = { "n", 26917 },	-- Alexstrasza the Life-Binder
 					["sourceQuest"] = 13078,	-- Dahlia's Tears
 				}),
 				q(13075, {	-- The Boon of Remulos
 					["lvl"] = 67,
-					["maps"] = { MOONGLADE },
 					["coord"] = { 36.2, 41.8, MOONGLADE },
 					["provider"] = { "n", 11832 },	-- Keeper Remulos
 					["sourceQuest"] = 13074,	-- Hope Within the Emerald Nightmare

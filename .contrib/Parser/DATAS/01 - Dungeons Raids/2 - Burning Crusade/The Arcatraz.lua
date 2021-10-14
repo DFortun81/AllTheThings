@@ -28,7 +28,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { SHATTRATH_CITY },
 					-- #if AFTER WRATH
 					["lvl"] = lvlsquish(67, 25, 67),
 					-- #else
@@ -61,7 +60,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10280,	-- Special Delivery to Shattrath City
 					["coord"] = { 53.7, 44.6, SHATTRATH_CITY },
-					["maps"] = { SHATTRATH_CITY, TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
+					["maps"] = { TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
 					-- #if AFTER WRATH
 					["lvl"] = lvlsquish(67, 25, 67),
 					-- #else
@@ -102,14 +101,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 21700,	-- Akama
 					["sourceQuest"] = 10628,	-- Akama
 					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
-					["maps"] = { SHADOWMOON_VALLEY },
 					["lvl"] = lvlsquish(68, 25, 68),
 				}),
 				q(10886, {	-- Trial of the Naaru: Tenacity
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10883,	-- The Tempest Key
 					["coord"] = { 53.7, 44.6, SHATTRATH_CITY },
-					["maps"] = { SHATTRATH_CITY },
 					["lvl"] = lvlsquish(70, 25, 70),
 				}),
 				q(29674, {	-- Unbound Darkness

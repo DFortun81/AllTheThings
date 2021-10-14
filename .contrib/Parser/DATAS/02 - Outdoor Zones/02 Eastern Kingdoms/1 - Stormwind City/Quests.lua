@@ -105,10 +105,6 @@ _.Zones =
 						{ 56.4, 46.2, DARNASSUS },	-- Arias'ta Bladesinger
 						{ 56.4, 46.2, THE_EXODAR },	-- Behomat
 					},
-					["maps"] = {
-						DARNASSUS,
-						THE_EXODAR,
-					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,

@@ -14,7 +14,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 31.0, 65.5, SURAMAR },
 				["maps"] = {	-- all Suramar maps
-					SURAMAR,
 					681,	-- The Arcway Vaults #1
 					682,	-- Felsoul Hold
 					683,	-- The Arcway Vaults #2
@@ -26,8 +25,6 @@ _.Instances = { tier(LEGION_TIER, {
 					689,	-- Ley Station Moonfall
 					690,	-- Ley Station Aethenar
 					691,	-- Nyell's Workshop
-					692,	-- Falanaar Arcway
-					693,	-- Falanaar Arcway
 					798,	-- The Arcway
 				},
 				["cr"] = 109943,	-- Ana-Mouz
@@ -50,7 +47,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 47061,	-- Apocron (WQ)
 				["isRaid"] = true,
 				["coord"] = { 59.2, 62.6, BROKEN_SHORE },
-				["maps"] = { BROKEN_SHORE },
 				["cr"] = 121124,	-- Apocron
 				["g"] = {
 					crit(4, {	-- Apocron
@@ -71,7 +67,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 46947,	-- Brutallus (WQ)
 				["isRaid"] = true,
 				["coord"] = { 59.2, 28.4, BROKEN_SHORE },
-				["maps"] = { BROKEN_SHORE },
 				["cr"] = 117239,	-- Brutallus
 				["g"] = {
 					crit(1, {	-- Brutallus
@@ -93,7 +88,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 43193,	-- Calamitous Intent (WQ)
 				["isRaid"] = true,
 				["coord"] = { 37.7, 83.6, AZSUNA },
-				["maps"] = { AZSUNA },
 				["cr"] = 109331,	-- Calamir
 				["g"] = {
 					crit(9, {	-- Calamir
@@ -115,7 +109,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 58.4, 72.6, HIGHMOUNTAIN },
 				["maps"] = {	-- all Highmountain maps
-					HIGHMOUNTAIN,
 					651,	-- Bitestone Enclave
 					652,	-- Thunder Totem
 					653,	-- Cave of the Blood Trial
@@ -152,7 +145,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 49.2, 7.60, HIGHMOUNTAIN },
 				["maps"] = {	-- all Highmountain maps
-					HIGHMOUNTAIN,
 					651,	-- Bitestone Enclave
 					652,	-- Thunder Totem
 					653,	-- Cave of the Blood Trial
@@ -191,7 +183,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 24.6, 69.6, VALSHARAH },
 				["maps"] = {	-- all Val'sharah maps
-					VALSHARAH,
 					642,	-- Darkpens
 					643,	-- Sleeper's Barrow
 					644,	-- Sleeper's Barrow #2
@@ -224,7 +215,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 43.0, 67.6, AZSUNA },
 				["maps"] = {	-- all Azsuna maps
-					AZSUNA,
 					631,	-- Nar'thalas Academy
 					632,	-- Oceanus Cove
 					633,	-- Temple of a Thousand Lights
@@ -253,7 +243,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 46948,	-- Malificus (WQ)
 				["isRaid"] = true,
 				["coord"] = { 59.8, 27.8, BROKEN_SHORE },
-				["maps"] = { BROKEN_SHORE },
 				["cr"] = 117303,	-- Malificus
 				["g"] = {
 					crit(2, {	-- Malificus
@@ -275,22 +264,19 @@ _.Instances = { tier(LEGION_TIER, {
 				["isWeekly"] = true,
 				["questID"] = 43513,	-- Na'zak the Fiend(WQ)
 				["isRaid"] = true,
-				["coord"] = { 36.0, 66.4, 685 },
+				["coord"] = { 36.0, 66.4, 685 },	-- Shattered Locus (Floor #2)
 				["maps"] = {	-- all Suramar maps
 					SURAMAR,
 					681,	-- The Arcway Vaults #1
 					682,	-- Felsoul Hold
 					683,	-- The Arcway Vaults #2
 					684,	-- Shattered Locus (Floor #1)
-					685,	-- Shattered Locus (Floor #2)
 					686,	-- Elor'shan
 					687,	-- Kel'balor
 					688,	-- Ley Station Anora
 					689,	-- Ley Station Moonfall
 					690,	-- Ley Station Aethenar
 					691,	-- Nyell's Workshop
-					692,	-- Falanaar Arcway
-					693,	-- Falanaar Arcway
 					798,	-- The Arcway
 				},
 				["cr"] = 110321,	-- Na'zak the Fiend
@@ -314,7 +300,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 46.6, 30.0, STORMHEIM },
 				["maps"] = {	-- all Stormheim maps
-					STORMHEIM,
 					635,	-- Shield's Rest
 					636,	-- Stormscale Cavern
 					637,	-- Thorignir Refuge
@@ -350,7 +335,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 55.6, 43.2, VALSHARAH },
 				["maps"] = {	-- all Val'sharah maps
-					VALSHARAH,
 					642,	-- Darkpens
 					643,	-- Sleeper's Barrow
 					644,	-- Sleeper's Barrow #2
@@ -377,7 +361,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 46945,	-- Si'vash (WQ)
 				["isRaid"] = true,
 				["coord"] = { 89.6, 33.0, BROKEN_SHORE },
-				["maps"] = { BROKEN_SHORE },
 				["cr"] = 117470,	-- Si'vash
 				["g"] = {
 					crit(3, {	-- Si'vash
@@ -400,7 +383,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 78.2, 8.60, STORMHEIM },
 				["maps"] = {	-- all Stormheim maps
-					STORMHEIM,
 					635,	-- Shield's Rest
 					636,	-- Stormscale Cavern
 					637,	-- Thorignir Refuge
@@ -441,7 +423,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 52.6, 80.8, AZSUNA },
 				["maps"] = {	-- all Azsuna maps
-					AZSUNA,
 					631,	-- Nar'thalas Academy
 					632,	-- Oceanus Cove
 					633,	-- Temple of a Thousand Lights

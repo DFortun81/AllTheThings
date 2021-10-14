@@ -33,24 +33,20 @@ _.Instances = { tier(LEGION_TIER, {
 					["provider"] = { "n", 123668 },	-- Captain Fareeya <The Crescent Glaive>
 					["sourceQuest"] = 48230,	-- Fragment of the Past
 					["coord"] = { 62.6, 39.4, 882 },
-					["maps"] = { 882 },	-- Mac'Aree
 				}),
 				q(48271, {	-- Recovering the Pieces
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, 830 },
-					["maps"] = { 830 },	-- Krokuun
 					["sourceQuest"] = 48864,	-- The Broken Blacksmith
 				}),
 				q(48803, {	-- The Power to Reforge
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, 830 },
-					["maps"] = { 830 },	-- Krokuun
 					["sourceQuest"] = 48864,	-- The Broken Blacksmith
 				}),
 				q(48261, {	-- Forging a Key to the Past
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, 830 },
-					["maps"] = { 830 },	-- Krokuun
 					["sourceQuests"] = {
 						48271,	-- Recovering the Pieces
 						48803,	-- The Power to Reforge
@@ -59,7 +55,6 @@ _.Instances = { tier(LEGION_TIER, {
 				q(48231, {	-- The Seat of the Triumvirate: Armor of the Triumvirate
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, 830 },
-					["maps"] = { 830 },	-- Krokuun
 					["g"] = {
 						i(152241, { -- Ensemble: Light-Woven Triumvirate Regalia
 							i(151337),	-- Head

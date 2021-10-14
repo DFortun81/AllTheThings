@@ -34,19 +34,6 @@ _.Holidays = { applyholiday(DAY_OF_THE_DEAD, {
 					{ 39.9, 21.8, TEROKKAR_FOREST },
 					{ 62.2, 67.4, TIRISFAL_GLADES },	-- Undercity
 				},
-				["maps"] = {
-					AZUREMYST_ISLE,
-					LEGION_DALARAN,
-					NORTHREND_DALARAN,
-					DARNASSUS,
-					DUN_MOROGH,
-					DUROTAR,
-					EVERSONG_WOODS,
-					STORMWIND_CITY,
-					THUNDER_BLUFF,
-					TEROKKAR_FOREST,
-					TIRISFAL_GLADES,
-				},
 			}),
 			ach(9426, {	-- To The Afterlife
 				["providers"] = COSTUME_PROVIDERS,
@@ -79,7 +66,6 @@ _.Holidays = { applyholiday(DAY_OF_THE_DEAD, {
 			q(14169, {	-- The Grateful Dead — Azuremyst Isle, Draenei
 				["qg"] = 34484,	-- Cheerful Draenei Spirit
 				["coord"] = { 47.6, 55.8, AZUREMYST_ISLE },
-				["maps"] = { AZUREMYST_ISLE },
 				["races"] = { DRAENEI },
 			}),
 			q(14166, {	-- The Grateful Dead — Dalaran, all
@@ -88,89 +74,72 @@ _.Holidays = { applyholiday(DAY_OF_THE_DEAD, {
 					{ 34.4, 38.1, NORTHREND_DALARAN },
 					{ 33.8, 38.3, LEGION_DALARAN },
 				},
-				["maps"] = {
-					625,	-- Dalaran: Broken Isles
-					NORTHREND_DALARAN,
-				},
 			}),
 			q(14170, {	-- The Grateful Dead — Darnassus, Night Elf / Void Elf
 				["qg"] = 34479,	-- Cheerful Night Elf Spirit
 				["coord"] = { 68.6, 40.6, DARNASSUS },
-				["maps"] = { DARNASSUS },
 				["races"] = { NIGHTELF, VOIDELF },
 			}),
 			q(27846, {	-- The Grateful Dead — Darnassus, Worgen
 				["qg"] = 46908,	-- Cheerful Worgen Spirit
 				["coord"] = { 68.6, 40.6, DARNASSUS },
 				["timeline"] = { "added 4.0.3.13277" },
-				["maps"] = { DARNASSUS },
 				["races"] = { WORGEN },
 			}),
 			q(14167, {	-- The Grateful Dead — Dun Morogh, Dwarf
 				["qg"] = 34478,	-- Cheerful Dwarf Spirit
 				["coord"] = { 61.6, 37.4, DUN_MOROGH },
-				["maps"] = { DUN_MOROGH },
 				["races"] = { DWARF },
 			}),
 			q(14168, {	-- The Grateful Dead — Dun Morogh, Gnome
 				["qg"] = 34481,	-- Cheerful Gnome Spirit
 				["coord"] = { 61.6, 37.4, DUN_MOROGH },
-				["maps"] = { DUN_MOROGH },
 				["races"] = { GNOME },
 			}),
 			q(27841, {	-- The Grateful Dead — Durotar, Goblin
 				["qg"] = 46901,	-- Cheerful Goblin Spirit
 				["coord"] = { 47.4, 17.6, DUROTAR },
 				["timeline"] = { "added 4.0.3.13277" },
-				["maps"] = { DUROTAR },
 				["races"] = { GOBLIN },
 			}),
 			q(14175, {	-- The Grateful Dead — Durotar, Orc
 				["qg"] = 34477,	-- Cheerful Orc Spirit
 				["coord"] = { 47.4, 17.6, DUROTAR },
-				["maps"] = { DUROTAR },
 				["races"] = { ORC },
 			}),
 			q(14177, {	-- The Grateful Dead — Durotar, Troll
 				["qg"] = 34482,	-- Cheerful Troll Spirit
 				["coord"] = { 47.4, 17.6, DUROTAR },
-				["maps"] = { DUROTAR },
 				["races"] = { TROLL },
 			}),
 			q(14171, {	-- The Grateful Dead — Silvermoon City, Blood Elf / Nightborne
 				["qg"] = 34483,	-- Cheerful Blood Elf Spirit
 				["coord"] = { 47.9, 49.4, EVERSONG_WOODS },
-				["maps"] = { EVERSONG_WOODS },
 				["races"] = { BLOODELF, NIGHTBORNE },
 			}),
 			q(13952, {	-- The Grateful Dead — Stormwind City, Human
 				["qg"] = 34435,	-- Cheerful Human Spirit
 				["coord"] = { 47.6, 26.6, STORMWIND_CITY },
-				["maps"] = { STORMWIND_CITY },
 				["races"] = { HUMAN },
 			}),
 			q(14172, {	-- The Grateful Dead — Terokkar Forest, Aldor, all
 				["qg"] = 35260,	-- Cheerful Aldor Spirit
 				["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 				["coord"] = { 40.1, 22.2, TEROKKAR_FOREST },
-				["maps"] = { TEROKKAR_FOREST },
 			}),
 			q(14173, {	-- The Grateful Dead — Terokkar Forest, Scryer, all
 				["qg"] = 35261,	-- Cheerful Aldor Spirit
 				["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 				["coord"] = { 40.1, 22.2, TEROKKAR_FOREST },
-				["maps"] = { TEROKKAR_FOREST },
 			}),
 			q(14174, {	-- The Grateful Dead — Tirisfal Glades, Undead
 				["qg"] = 34476,	-- Cheerful Undead Spirit
 				["coord"] = { 62.3, 68.3, TIRISFAL_GLADES },
-				["maps"] = { TIRISFAL_GLADES },
 				["races"] = { UNDEAD },
 			}),
 			q(14176, {	-- The Grateful Dead — Thunder Bluff, Tauren / Highmountain Tauren
 				["qg"] = 34480,	-- Cheerful Tauren Spirit
 				["coord"] = { 56.8, 17.6, THUNDER_BLUFF },
-				["maps"] = { THUNDER_BLUFF },
 				["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
 			}),
 		})),
@@ -190,19 +159,6 @@ _.Holidays = { applyholiday(DAY_OF_THE_DEAD, {
 					{ 62.2, 67.4, TIRISFAL_GLADES },
 				},
 				["timeline"] = { "added 3.2.2.10505" },
-				["maps"] = {
-					AZUREMYST_ISLE,
-					LEGION_DALARAN,
-					NORTHREND_DALARAN,
-					DARNASSUS,
-					DUN_MOROGH,
-					DUROTAR,
-					EVERSONG_WOODS,
-					STORMWIND_CITY,
-					THUNDER_BLUFF,
-					TEROKKAR_FOREST,
-					TIRISFAL_GLADES,
-				},
 				["groups"] = {
 					i(116856, {	-- "Blooming Rose" Contender's Costume
 						["timeline"] = { "added 6.0.1.18594" },

@@ -59,13 +59,8 @@ _.Zones =
 				q(6625, {	-- Alliance Trauma
 					["qg"] = 5150,	-- Nissa Firestone
 					["coord"] = { 54.8, 58.6, IRONFORGE },
-					["maps"] = { IRONFORGE },
 					["description"] = "Needs a minimum of lvl 225 tailoring/first aid",
-					-- #if BEFORE BFA
-					["requireSkill"] = FIRST_AID,
-					-- #else
 					["requireSkill"] = TAILORING,
-					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(35, 10, 35),

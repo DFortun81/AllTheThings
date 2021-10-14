@@ -264,7 +264,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 63592 },	-- A New Path
 						["provider"] = { "n", 179379 },	-- Polemarch Adrestes
 						["coord"] = { 46.0, 58.0, 2018 },	-- Spires of Ascension (scenario)
-						["maps"] = { 2018 },	-- Spires of Ascension (scenario)
 					}),
 					q(63652, {	-- The "Unwelcome" Guests
 						["sourceQuests"] = { 63650 },	-- De-Infiltration
@@ -276,7 +275,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 180189 },	-- Polemarch Kalisthene
 						["coord"] = { 55.8, 29.9, 2017 },
 						["_drop"] = { "g" },	-- drop anima trash
-						["maps"] = { 2017, 2018 },	-- Spires of Ascension (scenario)
+						["maps"] = { 2018 },	-- Spires of Ascension (scenario)
 					}),
 					q(63653, {	-- The Power of a Crown
 						["sourceQuests"] = {

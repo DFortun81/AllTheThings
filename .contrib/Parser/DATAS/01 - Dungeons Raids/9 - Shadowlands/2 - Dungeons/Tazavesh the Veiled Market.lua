@@ -14,7 +14,6 @@ _.Instances = { tier(SL_TIER, {
 			TAZAVESH_STORMHEIM,
 			TAZAVESH_BORALUS_HARBOR,
 			TAZAVESH_AGGRAMARS_VAULT,
-			TAZAVESH_THE_VEILED_MARKET_WORLD,
 		},
 		["lvl"] = { 60 },
 		["g"] = {

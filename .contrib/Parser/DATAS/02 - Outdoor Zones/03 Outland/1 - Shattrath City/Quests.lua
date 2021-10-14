@@ -542,10 +542,6 @@ _.Zones =
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12784,	-- Desperate Research
 				}),
-				q(10886, {	-- Trial of the Naaru: Tenacity
-					["provider"] = { "n", 18481 },	-- A'dal
-					["sourceQuests"] = { 10883 },	-- The Tempest Key
-				}),
 				q(11369, {	-- Wanted: A Black Stalker Egg
 					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
 					["coord"] = { 75, 37, SHATTRATH_CITY },

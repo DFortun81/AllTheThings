@@ -152,7 +152,6 @@ _.WorldEvents =
 					["sourceQuest"] = 55021,	-- A Clue from Area 52
 					["coord"] = { 31.1, 66.5, NETHERSTORM },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { NETHERSTORM },
 					["lvl"] = 120,
 					["g"] = {
 						i(166724),	-- Bruce (MOUNT!)

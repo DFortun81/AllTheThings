@@ -29,7 +29,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16819,	-- Force Commander Danath Trollbane
 					["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
 					["timeline"] = { "added 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
 				}),
@@ -37,7 +36,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16575,	-- Shadow Hunter Ty'jin
 					["coord"] = { 55.0, 36.3, HELLFIRE_PENINSULA },
 					["timeline"] = { "added 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
 				}),
@@ -46,7 +44,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10762,	-- Grand Master Dumphry
 					["coord"] = { 51.1, 60.3, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
 					["groups"] = {
@@ -97,7 +94,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16829,	-- Magus Zabraxis <Reagents>
 					["coord"] = { 53.9, 65.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(67, 20, 67),
 					-- #if BEFORE 4.3.0.14732
@@ -118,7 +114,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10754,	-- Entry Into the Citadel [Alliance]
 					["coord"] = { 56.6, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
 					["groups"] = {
@@ -132,7 +127,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10755,	-- Entry Into the Citadel [Horde]
 					["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
 					["groups"] = {
@@ -162,7 +156,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 21209,	-- Dumphry <Master Blacksmithing Trainer>
 					["sourceQuest"] = 10763,	-- Dumphry's Request
 					["coord"] = { 51.1, 60.3, HELLFIRE_PENINSULA },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
 					["groups"] = {
@@ -177,7 +170,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16583,	-- Rohok
 					["sourceQuest"] = 10757,	-- Rohok's Request
 					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
 					["groups"] = {
@@ -236,7 +228,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16830,	-- Field Commander Romus
 					["coord"] = { 56.8, 62.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
 					["groups"] = {
@@ -255,7 +246,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16575,	-- Shadow Hunter Ty'jin <Ears of the Warchief>
 					["coord"] = { 55.0, 36.3, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
 					["groups"] = {
@@ -275,7 +265,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10756,	-- Grand Master Rohok
 					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
 					["groups"] = {
@@ -297,7 +286,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						10666,	-- The Lexicon Demonica
 					},
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
-					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(67, 25, 67),
 					["groups"] = {
 						objective(1, {	-- Tear of the Earthmother
@@ -309,7 +297,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 3230,	-- Nazgrel <Advisor to Thrall>
 					["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(67, 20, 67),
 					-- #if BEFORE 4.3.0.14732
@@ -343,7 +330,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10883,	-- The Tempest Key
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
-					["maps"] = { SHATTRATH_CITY },
 					["lvl"] = lvlsquish(70, 20, 70),
 					["groups"] = {
 						objective(1, {	-- Unused Axe of the Executioner
@@ -355,7 +341,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16819,	-- Force Commander Danath Trollbane <Sons of Lothar>
 					["coord"] = { 56.6, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(67, 20, 67),
 					-- #if BEFORE 4.3.0.14732

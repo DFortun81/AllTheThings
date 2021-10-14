@@ -289,7 +289,7 @@ local constructor = function(id, t, typeID)
 	end
 end
 local contains = function(arr, value)
-	for i,value2 in ipairs(arr) do
+	for _,value2 in ipairs(arr) do
 		if value2 == value then return true; end
 	end
 end
@@ -3977,6 +3977,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- print("#entries",#entries);
 				tinsert(info, { left = L["CONTAINS"] });
 				local containCount, item, group = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
+				local RecursiveParentField, SearchForObject, Filter = app.RecursiveFirstParentWithField, app.SearchForObject, app.GroupFilter;
 				for i=1,containCount do
 					item = entries[i];
 					group = item.group;
@@ -4012,19 +4013,38 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						local field, id;
 						for _,v in ipairs({"professionID","mapID","maps","instanceID","npcID","questID"}) do
 							if not field then
-								id = app.RecursiveFirstParentWithField(group, v);
+								id = RecursiveParentField(group, v);
 								-- print("check",v,id)
 								if id then field = v; end
 							end
 						end
-						-- convert maps to a MapID
+						local locationGroup, locationName;
+						-- convert maps
 						if field == "maps" then
-							field = "mapID";
-							-- app.PrintTable(id);
-							id = id[1];
+							-- if only a few maps, list them all
+							local count = #id;
+							if count == 1 then
+								id = id[1];
+								locationGroup = C_Map_GetMapInfo(id);
+								locationName = locationGroup and (locationGroup.name or locationGroup.text);
+							elseif count < 4 then
+								local mapsConcat = {};
+								for i=1,count,1 do
+									tinsert(mapsConcat, C_Map_GetMapInfo(id[i]).name);
+								end
+								locationName = table.concat(mapsConcat, "/");
+							else
+								local mapsConcat = {};
+								for i=1,3,1 do
+									tinsert(mapsConcat, C_Map_GetMapInfo(id[i]).name);
+								end
+								tinsert(mapsConcat, "+++");
+								locationName = table.concat(mapsConcat, "/");
+							end
+						else
+							locationGroup = SearchForObject(field, id) or (id and field == "mapID" and C_Map_GetMapInfo(id));
+							locationName = locationGroup and (locationGroup.name or locationGroup.text);
 						end
-						local locationGroup = app.SearchForObject(field, id) or (id and field == "mapID" and C_Map_GetMapInfo(id));
-						local locationName = locationGroup and (locationGroup.name or locationGroup.text);
 						-- print("contains info",group.itemID,field,id,locationGroup,locationName)
 						if locationName then
 							-- Add the immediate parent group Vendor name
@@ -4043,7 +4063,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if group.criteriaID and group.achievementID then
 						local rawParent = rawget(group, "parent");
 						if not rawParent or rawParent.achievementID ~= group.achievementID then
-							local critAch = app.SearchForObject("achievementID", group.achievementID);
+							local critAch = SearchForObject("achievementID", group.achievementID);
 							left = left .. " > " .. critAch.text;
 						end
 					end
@@ -4547,6 +4567,7 @@ local fieldCache = {};
 local CacheFields;
 local _cache;
 (function()
+local currentMaps = {};
 local fieldCache_g,fieldCache_f, fieldConverters;
 local function CacheField(group, field, value)
 	fieldCache_g = rawget(fieldCache, field);
@@ -4585,6 +4606,33 @@ fieldCache["spellID"] = {};
 fieldCache["tierID"] = {};
 fieldCache["titleID"] = {};
 fieldCache["toyID"] = {};
+local cacheCreatureID = function(group, npcID)
+	if npcID > 0 then
+		CacheField(group, "creatureID", npcID);
+	end
+end
+local cacheMapID = function(group, mapID, skipNest)
+	if (currentMaps[mapID] or 0) == 0 then
+		if not skipNest then currentMaps[mapID] = 1; end
+		CacheField(group, "mapID", mapID);
+	elseif not skipNest then
+		print("multi-nested map",mapID,currentMaps[mapID],group.key,group.key and group[group.key])
+		currentMaps[mapID] = currentMaps[mapID] + 1;
+	end
+end
+local cacheObjectID = function(group, objectID)
+	-- WARNING: DEV ONLY START
+	if not app.ObjectNames[objectID] then
+		print("Object Missing Name ", objectID);
+		app.ObjectNames[objectID] = "Object #" .. objectID;
+	end
+	-- WARNING: DEV ONLY END
+	CacheField(group, "objectID", objectID);
+end
+local cacheQuestID = function(group, questID)
+	CacheField(group, "questID", questID);
+end
+
 fieldConverters = {
 	-- Simple Converters
 	["achievementID"] = function(group, value)
@@ -4602,11 +4650,7 @@ fieldConverters = {
 	["azeriteEssenceID"] = function(group, value)
 		CacheField(group, "azeriteEssenceID", value);
 	end,
-	["creatureID"] = function(group, value)
-		if value > 0 then
-			CacheField(group, "creatureID", value);
-		end
-	end,
+	["creatureID"] = cacheCreatureID,
 	["currencyID"] = function(group, value)
 		CacheField(group, "currencyID", value);
 	end,
@@ -4645,29 +4689,13 @@ fieldConverters = {
 		-- always cache the plain ItemID as a fallback for items which generate in-game with unaccounted-for modIDs (M+, etc.)
 		CacheField(group, "itemID", value);
 	end,
-	["mapID"] = function(group, value)
-		CacheField(group, "mapID", value);
-	end,
-	["npcID"] = function(group, value)
-		if value > 0 then
-			CacheField(group, "creatureID", value);
-		end
-	end,
-	["objectID"] = function(group, value)
-		-- WARNING: DEV ONLY START
-		if not app.ObjectNames[value] then
-			print("Object Missing Name ", value);
-			app.ObjectNames[value] = "Object #" .. value;
-		end
-		-- WARNING: DEV ONLY END
-		CacheField(group, "objectID", value);
-	end,
+	["mapID"] = cacheMapID,
+	["npcID"] = cacheCreatureID,
+	["objectID"] = cacheObjectID,
 	["professionID"] = function(group, value)
 		CacheField(group, "professionID", value);
 	end,
-	["questID"] = function(group, value)
-		CacheField(group, "questID", value);
-	end,
+	["questID"] = cacheQuestID,
 	["requireSkill"] = function(group, value)
 		CacheField(group, "professionID", value);
 	end,
@@ -4691,27 +4719,19 @@ fieldConverters = {
 	end,
 
 	-- Complex Converters
-	["g"] = function(group, value)
-		for i,subgroup in ipairs(value) do
-			CacheFields(subgroup);
-		end
-	end,
 	["crs"] = function(group, value)
-		_cache = rawget(fieldConverters, "creatureID");
-		for i,creatureID in ipairs(value) do
-			_cache(group, creatureID);
+		for _,creatureID in ipairs(value) do
+			cacheCreatureID(group, creatureID);
 		end
 	end,
 	["qgs"] = function(group, value)
-		_cache = rawget(fieldConverters, "creatureID");
-		for i,questGiverID in ipairs(value) do
-			_cache(group, questGiverID);
+		for _,questGiverID in ipairs(value) do
+			cacheCreatureID(group, questGiverID);
 		end
 	end,
 	["altQuests"] = function(group, value)
-		_cache = rawget(fieldConverters, "questID");
-		for i,questID in ipairs(value) do
-			_cache(group, questID);
+		for _,questID in ipairs(value) do
+			cacheQuestID(group, questID);
 		end
 	end,
 	["titleIDs"] = function(group, value)
@@ -4721,67 +4741,53 @@ fieldConverters = {
 		end
 	end,
 	["providers"] = function(group, value)
-		for k,v in pairs(value) do
+		for _,v in pairs(value) do
 			if v[2] > 0 then
 				if v[1] == "n" then
-					rawget(fieldConverters, "creatureID")(group, v[2]);
+					cacheCreatureID(group, v[2]);
 				elseif v[1] == "i" then
 					CacheField(group, "itemIDAsCost", v[2]);
 				elseif v[1] == "c" then
 					CacheField(group, "currencyIDAsCost", v[2]);
 				elseif v[1] == "o" then
-					-- WARNING: DEV ONLY START
-					if not app.ObjectNames[v[2]] then
-						print("Object Missing Name ", v[2]);
-						app.ObjectNames[v[2]] = "Object #" .. v[2];
-					end
-					-- WARNING: DEV ONLY END
-					rawget(fieldConverters, "objectID")(group, v[2]);
+					cacheObjectID(group, v[2]);
 				end
 			end
 		end
 	end,
 	["maps"] = function(group, value)
-		_cache = rawget(fieldConverters, "mapID");
-		for i,mapID in ipairs(value) do
-			_cache(group, mapID);
+		for _,mapID in ipairs(value) do
+			cacheMapID(group, mapID);
 		end
 	end,
 	["nextQuests"] = function(group, value)
-		for i,questID in ipairs(value) do
+		for _,questID in ipairs(value) do
 			CacheField(group, "nextQuests", questID);
 		end
 	end,
-	--[[
-	-- TODO: Mark coordinates in a special way.
 	["coord"] = function(group, value)
-		if value[3] then
-			rawget(fieldConverters, "mapID")(group, value[3]);
+		if group.key ~= "instanceID"  then
+			if value[3] then cacheMapID(group, value[3], true); end
 		end
 	end,
-	]]--
-	-- ["coords"] = function(group, value)
-	-- 	-- Don't cache by coords if 'maps' is used at or above this group already
-	-- 	if GetRelativeValue(group, "maps") then return; end
-	-- 	local relMapID, refText = GetRelativeValue(group, "mapID"), group.text;
-	-- 	_cache = rawget(fieldConverters, "mapID");
-	-- 	for i,coord in ipairs(value) do
-	-- 		-- Don't cache by coord mapID if this group is already under an object using that mapID
-	-- 		if coord[3] and coord[3] ~= relMapID then
-	-- 			print("Cached Group for MapID",relMapID,coord[3],refText)
-	-- 			_cache(group, coord[3]);
-	-- 		end
-	-- 	end
-	-- end,
+	["coords"] = function(group, value)
+		if group.key ~= "instanceID"  then
+			for _,coord in ipairs(value) do
+				if coord[3] then cacheMapID(group, coord[3], true); end
+			end
+		end
+	end,
 	["cost"] = function(group, value)
 		if type(value) == "number" then
 			return;
 		else
-			for k,v in pairs(value) do
+			for _,v in pairs(value) do
 				if v[1] == "i" and v[2] > 0 then
 					CacheField(group, "itemIDAsCost", v[2]);
 				elseif v[1] == "c" and v[2] > 0 then
 					CacheField(group, "currencyIDAsCost", v[2]);
+				elseif v[1] == "o" and v[2] > 0 then
+					cacheObjectID(group, v[2]);
 				end
 			end
 		end
@@ -4802,15 +4808,49 @@ fieldConverters = {
 		end
 	end,
 };
+local uncacheMap = function(mapID)
+	currentMaps[mapID] = (currentMaps[mapID] or 0) - 1;
+end;
+local mapKeyUncachers = {
+	["mapID"] = uncacheMap,
+	["maps"] = function(maps)
+		for _,mapID in ipairs(maps) do
+			uncacheMap(mapID);
+		end
+	end,
+};
 CacheFields = function(group)
 	-- apparently any 'rawset' on group will break the pairs loop on the group, so we need to copy all the keys first
-	local keys = {};
-	for key,_ in pairs(group) do
-		table.insert(keys, key);
+	local keys, mapKeys, value, hasG = {};
+	for k,_ in pairs(group) do
+		if k == "g" then
+			hasG = true;
+		else
+			tinsert(keys, k);
+		end
 	end
-	for _,key in ipairs(keys) do
-		_cache = rawget(fieldConverters, key);
-		if _cache then _cache(group, rawget(group,key)); end
+	for _,k in ipairs(keys) do
+		_cache = rawget(fieldConverters, k);
+		if _cache then
+			value = rawget(group, k);
+			_cache(group, value);
+			if rawget(mapKeyUncachers, k) then
+				if not mapKeys then mapKeys = {}; end
+				mapKeys[k] = value;
+			end
+		end
+	end
+	-- do sub-groups last
+	if hasG then
+		for _,subgroup in ipairs(rawget(group, "g")) do
+			CacheFields(subgroup);
+		end
+	end
+	-- clear currentMapIDs used by this group
+	if mapKeys then
+		for key,value in pairs(mapKeys) do
+			rawget(mapKeyUncachers, key)(value);
+		end
 	end
 end
 end)();
@@ -5602,42 +5642,47 @@ local function GetGroupSortValue(group)
 	end
 	return -3;
 end
-local function SortGroup(group, sortType, row, recur)
-	if group.visible and group.g then
-		if sortType == "name" then
-			local txtA, txtB;
-			insertionSort(group.g, function(a, b)
-				txtA = a and string.lower(tostring(a.name or a.text)) or "";
-				txtB = b and string.lower(tostring(b.name or b.text)) or "";
-				if txtA then
-					if txtB then return txtA < txtB; end
-					return true;
-				end
-				return false;
-			end);
-		elseif sortType == "progress" then
-			local progA, progB;
-			insertionSort(group.g, function(a, b)
-				progA = GetGroupSortValue(a);
-				progB = GetGroupSortValue(b);
-				if progA then
-					if progB then return progA > progB; end
-					return true;
-				end
-				return false;
-			end);
-		else
-			local sortA, sortB;
-			insertionSort(group.g, function(a, b)
-				sortA = a and tostring(a[sortType]);
-				sortB = b and tostring(b[sortType]);
-				return sortA < sortB;
-			end);
+-- Sorts a group using the provided sortType, whether to recurse through nested groups, and whether sorting should only take place given the group having a conditional field
+local function SortGroup(group, sortType, row, recur, conditionField)
+	if group.g then
+		-- either sort visible groups or by conditional
+		if (not conditionField and group.visible) or (conditionField and group[conditionField]) then
+			-- print("sorting",group.key,group.key and group[group.key],"by",sortType,"recur",recur,"condition",conditionField)
+			if sortType == "name" then
+				local txtA, txtB;
+				insertionSort(group.g, function(a, b)
+					txtA = a and string.lower(tostring(a.name or a.text)) or "";
+					txtB = b and string.lower(tostring(b.name or b.text)) or "";
+					if txtA then
+						if txtB then return txtA < txtB; end
+						return true;
+					end
+					return false;
+				end);
+			elseif sortType == "progress" then
+				local progA, progB;
+				insertionSort(group.g, function(a, b)
+					progA = GetGroupSortValue(a);
+					progB = GetGroupSortValue(b);
+					if progA then
+						if progB then return progA > progB; end
+						return true;
+					end
+					return false;
+				end);
+			else
+				local sortA, sortB;
+				insertionSort(group.g, function(a, b)
+					sortA = a and tostring(a[sortType]);
+					sortB = b and tostring(b[sortType]);
+					return sortA < sortB;
+				end);
+			end
 		end
 		-- TODO: Add more sort types?
 		if recur then
-			for i,o in ipairs(group.g) do
-				SortGroup(o, sortType, nil, recur);
+			for _,o in ipairs(group.g) do
+				SortGroup(o, sortType, nil, recur, conditionField);
 			end
 		end
 	end
@@ -15927,6 +15972,48 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			self:SetVisible(true);
 			self:Update();
 		end
+		-- Returns the consolidated data format for the next header level
+		-- Headers are forced not collectible, and will have their content sorted
+		local function CreateHeaderData(group)
+			return { g = { group }, ["sort"] = true, ["collectible"] = false, };
+		end
+		-- set of keys for headers which can be nested in the minilist automatically, but not as a direct top header
+		local subGroupKeys = {
+			["raceID"] = app.CreateRace,
+			["holidayID"] = app.CreateHoliday,
+		};
+		-- Keep a static collection of top-level groups in the list so they can just be referenced for adding new
+		local topHeaders = {
+		-- ACHIEVEMENTS = -4
+			[-4] = "achievementID",
+		-- BUILDINGS = -99;
+			[-99] = true,
+		-- COMMON_BOSS_DROPS = -1;
+			[-1] = true,
+		-- FACTIONS = -6013;
+			[-6013] = "factionID",
+		-- FLIGHT_PATHS = -228;
+			[-228] = "flightPathID",
+		-- HOLIDAY = -3;
+			[-3] = "holidayID",
+		-- QUESTS = -17;
+			[-17] = "questID",
+		-- RARES = -16;
+			[-16] = true,
+		-- SECRETS = -22;
+			[-22] = true,
+		-- TREASURES = -212;
+			[-212] = "objectID",
+		-- VENDORS = -2;
+			[-2] = true,
+		-- ZONE_DROPS = 0;
+			[0] = true,
+		};
+		-- Headers possible in a hierarchy that should just be ignored
+		local ignoredHeaders = {
+		-- GARRISONS
+			[-9966] = true,
+		};
 		self.Rebuild = function(self)
 			-- print("Rebuild",self.mapID);
 			-- check if this is the same 'map' for data purposes
@@ -15934,181 +16021,107 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				self.data.mapID = self.mapID;
 				return;
 			end
-
 			local results = SearchForField("mapID", self.mapID);
 			if results then
+				-- print(#results,"individual minilist results",self.mapID)
 				-- Simplify the returned groups
-				local groups, holiday = {}, {};
+				local groups, nested = {};
 				local header = app.CreateMap(self.mapID, { g = groups });
-				for i, group in ipairs(results) do
-					group = CloneData(group);
+				for _,group in ipairs(results) do
+					-- do not use any raw Source groups in the final list
+					group = CreateObject(group);
+					-- print(group.key,group.key and group[group.key],group.text)
+					nested = nil;
 
 					-- Cache the difficultyID, if there is one. Also, ignore the event tag for anything that isn't Bizmo's Brawlpub.
 					local difficultyID = not GetRelativeField(group, "headerID", -496) and GetRelativeValue(group, "difficultyID");
 
-					-- can probably re-factor this logic at some point to implicitly merge into the proper existing group instead of
-					-- ALWAYS creating the shared group, and then merging into the entire set of groups...
-
-					-- If this is relative to a holiday, let's do something special
-					if GetRelativeField(group, "headerID", -3) then
-						if group.achievementID then
-							if group.criteriaID then
-								if group.parent.achievementID then
-									local parent = group.parent;
-									group = app.CreateAchievement(parent.achievementID,
-										{ g = { group }, total = group.total, progress = group.progress,
-											u = parent.u, races = parent.races, r = group.r, c = parent.c, nmc = parent.nmc, nmr = parent.nmr });
-								else
-									group = app.CreateAchievement(group.achievementID,
-										{ g = { group }, total = group.total, progress = group.progress,
-											u = group.u, races = group.races, r = group.r, c = group.c, nmc = group.nmc, nmr = group.nmr });
-								end
-							end
-						elseif group.criteriaID and group.parent.achievementID then
-							local parent = group.parent;
-							group = app.CreateAchievement(parent.achievementID, { g = { group }, total = group.total, progress = group.progress,
-								u = parent.u, races = parent.races, r = group.r, c = parent.c, nmc = parent.nmc, nmr = parent.nmr });
-						end
-
-						-- Common Custom NPCs used for headers
-						-- not sure why we can't use the constants in here...
-						-- ACHIEVEMENTS = -4
-						-- COMMON_BOSS_DROPS = -1;
-						-- FACTIONS = -6013;
-						-- QUESTS = -17;
-						-- RARES = -16;
-						-- TREASURES = -212;
-						-- VENDORS = -2;
-						-- ZONE_DROPS = 0;
-
-						-- TODO: Maybe generically just find creature headers < 1 instead of checking specific ones...
-
-						local holidayID = GetRelativeValue(group, "holidayID");
-						local u = group.u or GetRelativeValue(group, "u");
-						if group.key == "npcID" or group.key == "headerID" then
-							if GetRelativeField(group, "headerID", -4) then	-- It's an Achievement. (non-Holiday)
-								if group.headerID ~= -4 then group = app.CreateNPC(-4, { g = { group }, u = u }); end
-							elseif GetRelativeField(group, "headerID", -2) or GetRelativeField(group, "headerID", -173) then	-- It's a Vendor. (or a timewalking vendor)
-								if group.headerID ~= -2 then group = app.CreateNPC(-2, { g = { group }, u = u }); end
-							elseif GetRelativeField(group, "headerID", -17) then	-- It's a Quest.
-								if group.headerID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
-							elseif GetRelativeField(group, "headerID", -16) then	-- It's a Rare.
-								if group.headerID ~= -16 then group = app.CreateNPC(-16, { g = { group }, u = u  }); end
-							elseif GetRelativeField(group, "headerID", -212) then	-- It's a Treasure.
-								if group.headerID ~= -212 then group = app.CreateNPC(-212, { g = { group }, u = u  }); end
-							elseif GetRelativeField(group, "headerID", -6013) then	-- It's a Faction.
-								if group.headerID ~= -6013 then group = app.CreateNPC(-6013, { g = { group }, u = u  }); end
-							end
-						elseif group.key == "questID" then
-							if group.headerID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
-						end
-						if holidayID then group = app.CreateHoliday(holidayID, { g = { group }, u = u }); end
-						MergeObject(holiday, group);
-					else
-						-- TODO: Maybe generically just find creature headers < 1 instead of checking specific ones...
-						-- Check if any top-level group in the mapped-groups matches the mapped-group (or its parent) being pulled in
-						-- if so, merge the categorized group into the matching topGroup instead of directly at the zone-level
-						-- Source:
-						-- Category > Divider? > Mapped-Thing
-						-- Zone:
-						-- Divider? > Category > Mapped-Thing
-						-- if group.headerID then
-						-- 	for i,topGroup in ipairs(groups) do
-						-- 		if topGroup.headerID
-						-- 		and (topGroup.headerID == group.headerID
-						-- 			or (group.parent and topGroup.headerID == group.parent.headerID)) then
-						-- 			if not topGroup.g then
-						-- 				topGroup.g = {};
-						-- 			end
-						-- 			mergeGroups = topGroup.g;
-						-- 		end
-						-- 	end
-						-- end
-
-						if group.key == "instanceID" or group.key == "mapID" or group.key == "classID" then
+					if group.instanceID or group.mapID or group.key == "classID" then
+						-- only if this group mapID matches the minilist mapID directly or by maps
+						if group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID)) then
 							MergeProperties(header, group, true);
 							if group.g then
 								MergeObjects(groups, group.g);
 							end
 							group = nil;
-						elseif group.key == "speciesID" then
-							group = app.CreateFilter(101, { g = { group } });
-						elseif group.key == "questID" then
-							group = app.CreateNPC(-17, { g = { group } });
-						elseif group.key == "criteriaID" and group.achievementID then
-							-- Achievements / Achievement / Criteria
-							group = app.CreateNPC(-4, { g = { app.CreateAchievement(group.achievementID, { ["collectible"] = false, g = { group } }) } });
-						else
-							-- special cases to source the mapped-categories
-							if GetRelativeField(group, "headerID", -4) then	-- It's an Achievement. (non-Holiday)
-								if group.headerID ~= -4 then group = app.CreateNPC(-4, { g = { group } }); end
-							elseif GetRelativeField(group, "headerID", -2) or GetRelativeField(group, "headerID", -173) then	-- It's a Vendor. (or a timewalking vendor)
-								if group.headerID ~= -2 then group = app.CreateNPC(-2, { g = { group } }); end
-							elseif GetRelativeField(group, "headerID", -17) then	-- It's a Quest.
-								if group.headerID ~= -17 then group = app.CreateNPC(-17, { g = { group } }); end
-							elseif GetRelativeField(group, "headerID", -16) then	-- It's a Rare.
-								if group.headerID ~= -16 then group = app.CreateNPC(-16, { g = { group } }); end
-							elseif GetRelativeField(group, "headerID", -212) then	-- It's a Treasure.
-								if group.headerID ~= -212 then group = app.CreateNPC(-212, { g = { group } }); end
-							elseif GetRelativeField(group, "headerID", -6013) then	-- It's a Faction.
-								if group.headerID ~= -6013 then group = app.CreateNPC(-6013, { g = { group } }); end
-							end
+						end
+					else
+						-- Get the header chain for the group
+						local topHeader;
+						local nextParent, headerID = group.parent;
+
+						-- Pre-nest some groups based on their type after grabbing the parent
+						-- Achievements / Achievement / Criteria
+						if group.key == "criteriaID" and group.achievementID then
+							-- print("pre-nest achieve",group.criteriaID, group.achievementID)
+							group = app.CreateAchievement(group.achievementID, CreateHeaderData(group));
 						end
 
-						-- If relative to a difficultyID, then merge it into one.
-						if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
-						if group then
-							MergeObject(groups, group);
-						end
-					end
-				end
-
-				if #holiday > 0 then
-					-- Search for Holiday entries that are not within a holidayID and attempt to find the appropriate group for them.
-					local holidays, unlinked = {}, {};
-					for i=#holiday,1,-1 do
-						local group = holiday[i];
-						if group.holidayID then
-							if group.u then holidays[group.u] = group; end
-						elseif group.u then
-							local temp = unlinked[group.u];
-							if not temp then
-								temp = {};
-								unlinked[group.u] = temp;
-							end
-							table.insert(temp, group);
-							table.remove(holiday, i);
-						end
-					end
-					for u,temp in pairs(unlinked) do
-						local h = holidays[u];
-						if h then
-							NestObjects(h, temp);
-						else
-							-- Attempt to scan for the main holiday header.
-							local done = false;
-							for j,o in ipairs(SearchForField("headerID", -3)) do
-								if o.g and #o.g > 5 and o.g[1].holidayID then
-									for k,group in ipairs(o.g) do
-										if group.holidayID and group.u == u then
-											MergeObject(holiday, app.CreateHoliday(group.holidayID, { g = temp, u = u }));
-											done = true;
-										end
+						-- Building the header chain for each mapped Thing
+						while nextParent do
+							headerID = nextParent.headerID;
+							if headerID then
+								-- This matches a top-level header, track that top-level header at the highest point
+								if topHeaders[headerID] then
+									-- already found a matching header, then nest it before switching
+									if topHeader then
+										group = app.CreateNPC(topHeader, CreateHeaderData(group));
 									end
-									break;
+									topHeader = headerID;
+								elseif not ignoredHeaders[headerID] then
+									group = app.CreateNPC(headerID, CreateHeaderData(group));
+									nested = true;
+								end
+							else
+								for hkey,hf in pairs(subGroupKeys) do
+									if nextParent[hkey] then
+										-- create the specified group Type header
+										group = hf(nextParent[hkey], CreateHeaderData(group));
+										nested = true;
+										break;
+									end
 								end
 							end
-							if not done then
-								MergeObjects(holiday, temp);
-							end
+							nextParent = nextParent.parent;
+						end
+						-- Create/match the header chain for the zone list assuming it matches one of the allowed top headers
+						if topHeader then
+							group = app.CreateNPC(topHeader, CreateHeaderData(group));
+							nested = true;
 						end
 					end
 
-					tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = L["HOLYDAY_DESC"] }));
+					-- couldn't nest this thing using custom headers, try to use the key of the group to figure it out
+					if not nested and group then
+						local groupKey = group.key;
+						-- print("manual nest by type",group.key,group.key and group[group.key])
+						for headerID,key in pairs(topHeaders) do
+							if groupKey == key then
+								-- print("nest as",headerID)
+								group = app.CreateNPC(headerID, CreateHeaderData(group));
+								nested = true;
+								break;
+							end
+						end
+						-- really really special cases...
+						-- Battle Pets get a raw Filter group
+						if not nested and groupKey == "speciesID" then
+							group = app.CreateFilter(101, CreateHeaderData(group));
+						end
+						-- otherwise the group itself will be the topHeader in the minilist, and its content will be sorted since it may be merging with an existing group
+						group.sort = true;
+						nested = true;
+					end
+
+					-- If relative to a difficultyID, then merge it into one.
+					if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
+					if group then
+						MergeObject(groups, group);
+					end
 				end
 
 				-- Check for timewalking difficulty objects
-				for i, group in ipairs(groups) do
+				for _,group in ipairs(groups) do
 					if group.difficultyID then
 						if group.difficultyID == 24 and group.g then
 							-- Look for a Common Boss Drop header.
@@ -16142,13 +16155,12 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					end
 				end
 
-				-- Swap out the map data for the header.
-				results = header;
-
 				if self.data then wipe(self.data); end
-				self.data = results;
+				-- Swap out the map data for the header.
+				self.data = header;
 				self.data.u = nil;
 				self.data.mapID = self.mapID;
+				self.data.visible = true;
 				setmetatable(self.data,
 					self.data.instanceID and app.BaseInstance
 					or self.data.classID and app.BaseCharacterClass
@@ -16156,11 +16168,12 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 
 				-- sort only the top layer of groups if not in an instance, force visible so sort goes through
 				-- print(GetInstanceInfo());
-				-- sort by name if not in an instance
+				-- sort top level by name if not in an instance
 				if not self.data.instanceID then
-					self.data.visible = true;
-					SortGroup(self.data, "name", nil, false);
+					SortGroup(self.data, "name");
 				end
+				-- and conditionally sort the entire list (sort groups which contain 'mapped' content)
+				SortGroup(self.data, "name", nil, true, "sort");
 
 				-- Move all "isRaid" entries to the top of the list.
 				if results.g then
@@ -16172,7 +16185,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 							table.insert(top, o);
 						end
 					end
-					for i,o in ipairs(top) do
+					for _,o in ipairs(top) do
 						table.insert(results.g, 1, o);
 					end
 				end
@@ -16193,7 +16206,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				local difficultyID = select(3, GetInstanceInfo());
 				if app.Settings:GetTooltipSetting("Expand:Difficulty") then
 					if difficultyID and difficultyID > 0 and self.data.g then
-						for _, row in ipairs(self.data.g) do
+						for _,row in ipairs(self.data.g) do
 							if row.difficultyID or row.difficulties then
 								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
 									if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
@@ -16207,7 +16220,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				if app.Settings:GetTooltipSetting("Warn:Difficulty") then
 					if difficultyID and difficultyID > 0 and self.data.g then
 						local completed,other = true, nil;
-						for _, row in ipairs(self.data.g) do
+						for _,row in ipairs(self.data.g) do
 							if row.difficultyID or row.difficulties then
 								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
 									if row.total and row.progress < row.total then
@@ -16232,10 +16245,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				if not expanded and not self.fullCollapsed then
 					self.ExpandInfo = { Expand = true };
 				end
-			end
-
-			-- If we don't have any data cached for this mapID and it exists in game, report it to the chat window.
-			if not results then
+			else
+				-- If we don't have any data cached for this mapID and it exists in game, report it to the chat window.
 				local mapID = self.mapID;
 				local mapInfo = C_Map_GetMapInfo(mapID);
 				if mapInfo then

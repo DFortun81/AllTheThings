@@ -164,7 +164,6 @@ _.Zones =
 						["coord"] = { 48.6, 71.0, ORGRIMMAR },
 						-- #endif
 						["sourceQuest"] = 9626,	-- Meeting the Orcs
-						["maps"] = { ORGRIMMAR },
 						["races"] = { BLOODELF },
 						["lvl"] = lvlsquish(15, 1, 15),
 					}),
@@ -222,7 +221,7 @@ _.Zones =
 						["qg"] = 10181,	-- Lady Sylvanas Windrunner <Warchief>
 						["sourceQuest"] = 9621,	-- Envoy to the Horde [Blood Elf Only]
 						["coord"] = { 57.8, 91.6, UNDERCITY },
-						["maps"] = { UNDERCITY, ORGRIMMAR },
+						["maps"] = { ORGRIMMAR },
 						["cost"] = {
 							{ "i", 23930, 1 },	-- Letter Sealed by Sylvanas
 						},
@@ -233,7 +232,7 @@ _.Zones =
 						["qg"] = 10181,	-- Lady Sylvanas Windrunner <Warchief>
 						["sourceQuest"] = 9812,	-- Envoy to the Horde [Non-Blood Elf Only]
 						["coord"] = { 57.8, 91.6, UNDERCITY },
-						["maps"] = { UNDERCITY, ORGRIMMAR },
+						["maps"] = { ORGRIMMAR },
 						["cost"] = {
 							{ "i", 23930, 1 },	-- Letter Sealed by Sylvanas
 						},
@@ -267,10 +266,6 @@ _.Zones =
 						["coords"] = {
 							{ 48.2, 45.3, ORGRIMMAR },	-- Gan'rul Bloodeye
 							{ 85.1, 26.0, UNDERCITY },	-- Carendin Halgar
-						},
-						["maps"] = {
-							ORGRIMMAR,
-							UNDERCITY,
 						},
 						["timeline"] = { "removed 4.0.3.10000" },
 						["races"] = { BLOODELF },
@@ -375,7 +370,6 @@ _.Zones =
 						["sourceQuest"] = 9529,	-- The Stone
 						["coord"] = { 42.6, 15.7, GHOSTLANDS },
 						["timeline"] = { "removed 4.0.3.10000" },
-						["maps"] = { GHOSTLANDS },
 						["races"] = { BLOODELF },
 						["classes"] = { WARLOCK },
 						["lvl"] = lvlsquish(10, 1, 10),

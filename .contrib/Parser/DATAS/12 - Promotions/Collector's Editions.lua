@@ -5,7 +5,7 @@ _.Promotions =
 {
 	n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collector's Edition
 		tier(CLASSIC_TIER, {
-			["description"] = "These rewards were made available to anyone that purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+			["description"] = "These rewards were made available to anyone that purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
 			["groups"] = {
 				n(QUESTS, {
 					q(8547, {	-- Welcome! (Blood Elf)
@@ -242,7 +242,7 @@ _.Promotions =
 				-- #endif
 			},
 		})),
-		
+
 		-- Other Blizzard Games
 		n(-566, {	-- Diablo III
 			["description"] = "These rewards were made available to anyone that purchased the original Diablo III Collector's Edition.",
@@ -252,7 +252,7 @@ _.Promotions =
 				i(76062),	-- Fetish Shaman's Spear (Fetish Shaman)
 			},
 		}),
-		
+
 		n(-575, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Diablo III: Reaper of Souls
 			["description"] = "These rewards are available to anyone that purchases the Diablo III: Reaper of Souls Collector's Edition.",
 			["timeline"] = { "added 5.4.2.17585" },

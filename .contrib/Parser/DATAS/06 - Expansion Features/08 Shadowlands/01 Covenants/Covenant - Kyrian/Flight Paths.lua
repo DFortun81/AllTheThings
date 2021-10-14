@@ -9,10 +9,6 @@ _.ExpansionFeatures =
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 		},{
 		n(-939, {	-- Kyrian
-			["maps"] = {
-				ARCHONS_RISE,
-				SANCTUM_OF_BINDING,
-			},
 			["g"] = {
 				n(FLIGHT_PATHS, {
 					fp(2528, {	-- Bastion, Elysian Hold

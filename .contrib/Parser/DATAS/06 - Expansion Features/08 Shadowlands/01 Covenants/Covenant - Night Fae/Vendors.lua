@@ -220,7 +220,6 @@ _.ExpansionFeatures =
 					}),
 					n(174766, {	-- Cortinarius <Marasmius Quartermaster>
 						["coord"] = { 56.1, 51.3, 1819 },	-- The Ring
-						["maps"] = { 1819 },
 						["g"] = {
 							i(180724, {	-- Enchanted Winterborn Runestag (MOUNT)
 								["cost"] = { { "c", 1813, 5000 } },

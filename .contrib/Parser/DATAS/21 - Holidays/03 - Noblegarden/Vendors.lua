@@ -12,12 +12,6 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					{ 47.64, 47.31, EVERSONG_WOODS },	-- Falconwing Square
 					{ 51.91, 41.87, DUROTAR },	-- Razor Hill
 				},
-				["maps"] = {
-					DUROTAR,
-					MULGORE,
-					TIRISFAL_GLADES,
-					EVERSONG_WOODS,
-				},
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					-- Mounts
@@ -88,12 +82,6 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					{ 55.72, 51.31, TELDRASSIL },	-- Dolanaar
 					{ 43.03, 65.32, ELWYNN_FOREST },	-- Goldshire
 					{ 54.11, 50.81, DUN_MOROGH },	-- Kharanos
-				},
-				["maps"] = {
-					DUN_MOROGH,
-					ELWYNN_FOREST,
-					TELDRASSIL,
-					AZUREMYST_ISLE,
 				},
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {

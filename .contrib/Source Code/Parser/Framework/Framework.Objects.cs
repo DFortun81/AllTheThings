@@ -447,8 +447,8 @@ namespace ATT
                             typeObjects.Add(keyValue, merged);
                         }
 
-                        if (DebugMode)
-                            Trace.WriteLine($"Merge>{key}:{keyValue} = {MiniJSON.Json.Serialize(data)}");
+                        //if (DebugMode)
+                        //    Trace.WriteLine($"Merge>{key}:{keyValue} = {MiniJSON.Json.Serialize(data)}");
 
                         // merge the allowed fields by the key into the merged object
                         foreach (string field in MergeObjectFields[key])

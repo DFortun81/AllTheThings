@@ -203,7 +203,6 @@ profession(20219, {	-- Gnomish Engineering
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { STRANGLETHORN_VALE },
 			["cost"] = { { "g", 20000 } },	-- 2g
 			["timeline"] = { "removed 4.0.3.2000" },
 			["races"] = HORDE_ONLY,
@@ -219,7 +218,6 @@ profession(20219, {	-- Gnomish Engineering
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 69.8, 50.2, IRONFORGE },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { IRONFORGE },
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = { { "g", 20000 } },	-- 2g
 			["timeline"] = { "removed 4.0.3.2000" },
@@ -236,7 +234,6 @@ profession(20219, {	-- Gnomish Engineering
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["requireSkill"] = ENGINEERING,
 			["coord"] = { 69.8, 50.2, IRONFORGE },
-			["maps"] = { IRONFORGE },
 			["timeline"] = { "removed 4.0.3.2000" },
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
@@ -256,7 +253,6 @@ profession(20219, {	-- Gnomish Engineering
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { STRANGLETHORN_VALE },
 			["races"] = HORDE_ONLY,
 			["timeline"] = { "removed 4.0.3.2000" },
 			["cost"] = {
@@ -280,7 +276,6 @@ profession(20219, {	-- Gnomish Engineering
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 69.8, 50.2, IRONFORGE },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { IRONFORGE },
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { "removed 4.0.3.2000" },
 			["cost"] = {
@@ -303,7 +298,6 @@ profession(20219, {	-- Gnomish Engineering
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { STRANGLETHORN_VALE },
 			["timeline"] = { "removed 4.0.3.2000" },
 			["races"] = HORDE_ONLY,
 			["cost"] = {

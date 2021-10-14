@@ -905,7 +905,6 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(36567, {	-- Bigger is Better
-							["maps"] = { FROSTWALL },
 							["coord"] = { 52.4, 53.3, FROSTWALL },	-- lvl 1
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 78466 },	-- Gazlowe

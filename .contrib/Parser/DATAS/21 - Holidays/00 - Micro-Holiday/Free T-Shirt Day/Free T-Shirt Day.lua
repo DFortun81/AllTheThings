@@ -84,49 +84,42 @@ _.Holidays =
 			n(VENDORS, {
 				n(150948, {	-- Gild Crewneck
 					["coord"] = { 60.3, 52.5, STORMHEIM },
-					["maps"] = { STORMHEIM },
 					["groups"] = {
 						i(167226),	-- Gild's Crewneck
 					},
 				}),
 				n(146961, {	-- Jade Lovelyshirts
 					["coord"] = { 61.9, 58.8, VALLEY_OF_THE_FOUR_WINDS },
-					["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = {
 						i(167207),	-- Jade's Lovely Shirt
 					},
 				}),
 				n(150904, {	-- Melvin Shirtson
 					["coord"] = { 74.3, 53.0, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS },
 					["groups"] = {
 						i(167220),	-- Threads of Tirion
 					},
 				}),
 				n(150945, {	-- Selis Silksong
 					["coord"] = { 67.7, 27.7, SHATTRATH_CITY },
-					["maps"] = { SHATTRATH_CITY },
 					["groups"] = {
 						i(167222),	-- Selis' Silk Shirt
 					},
 				}),
 				n(150905, {	-- Shirtsi Clothpatch
 					["coord"] = { 59.6, 50.3, WINTERSPRING },
-					["maps"] = { WINTERSPRING },
 					["groups"] = {
 						i(167229),	-- Shirtsi's Cloth Shirt
 					},
 				}),
 				n(150946, {	-- Shuurt the Clothripper
 					["coord"] = { 49.8, 51.5, GRIZZLY_HILLS },
-					["maps"] = { GRIZZLY_HILLS },
 					["groups"] = {
 						i(167212),	-- Shuurt's Precious
 					},
 				}),
 				n(150950, {	-- Tia Shortsleeve
 					["coord"] = { 84.4, 30.9, TALADOR },
-					["maps"] = { TALADOR },
 					["groups"] = {
 						i(167215),	-- Tia Shortsleeve's Short Sleeve Shirt
 					},

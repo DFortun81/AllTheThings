@@ -855,7 +855,6 @@ _.Zones =
 						["qg"] = 17219,	-- Sulaa <Shaman Trainer>
 						["coord"] = { 32.3, 23.9, THE_EXODAR },
 						["timeline"] = { "removed 4.0.3.10000" },
-						["maps"] = { THE_EXODAR },
 						["classes"] = { SHAMAN },
 						["races"] = { DRAENEI },
 						["isBreadcrumb"] = true,
@@ -929,7 +928,6 @@ _.Zones =
 						["qg"] = 17468,	-- Prophet Velen
 						["sourceQuest"] = 9461,	-- Call of Fire (6/4)
 						["coord"] = { 32.9, 54.5, THE_EXODAR },
-						["maps"] = { THE_EXODAR },
 						["timeline"] = { "removed 4.0.3.10000" },
 						["classes"] = { SHAMAN },
 						["races"] = { DRAENEI },
@@ -1021,7 +1019,6 @@ _.Zones =
 						-- #else
 						["coord"] = { 35.3, 43.1, AZUREMYST_ISLE },
 						-- #endif
-						["maps"] = { THE_EXODAR },
 						["races"] = ALLIANCE_ONLY,
 						--["isBreadcrumb"] = true,	-- TODO: Double check this is actually a breadcrumb. If you finish Alien Predators, does this diappear?
 						["lvl"] = lvlsquish(10, 1, 10),

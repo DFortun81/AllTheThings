@@ -59,7 +59,6 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 131290 },	-- Flynn
 					["coord"] = { 66.6, 35.5, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { BORALUS },
 					["g"] = {
 						i(168615, {	-- Volatile Worldvein (Rank 1)
 							az(4, 1),	-- Worldvein Resonance (Rank 1)
@@ -107,7 +106,6 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 123000 },	-- Captain Rez'okun
 					["races"] = HORDE_ONLY,
 					["coord"] = { 44.60, 95.40, THE_GREAT_SEAL },
-					["maps"] = { THE_GREAT_SEAL },
 					["g"] = {
 						i(168615, {	-- Volatile Worldvein (Rank 1)
 							az(4, 1),	-- Worldvein Resonance (Rank 1)

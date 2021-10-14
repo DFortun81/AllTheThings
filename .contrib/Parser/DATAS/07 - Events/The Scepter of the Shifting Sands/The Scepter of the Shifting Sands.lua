@@ -16,7 +16,6 @@ _.WorldEvents = { n(-539,	-- The Scepter of the Shifting Sands
 					["sourceQuest"] = 8305,	-- Long Forgotten Memories
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 28.7, 89.1, SILITHUS },
-					["maps"] = { SILITHUS },
 					["lvl"] = 60,
 				}),
 				q(8303, {	-- Anachronos
@@ -24,7 +23,6 @@ _.WorldEvents = { n(-539,	-- The Scepter of the Shifting Sands
 					["sourceQuest"] = 8301,	-- The Path of the Righteous
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
-					["maps"] = { SILITHUS },
 					["cost"] = {
 						{ "i", 20415, 1 },	-- The War of the Shifting Sands
 					},
@@ -35,14 +33,12 @@ _.WorldEvents = { n(-539,	-- The Scepter of the Shifting Sands
 					["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
 					["qg"] = 15481,	-- Spirit of Azuregos
 					["coord"] = { 57.0, 85.6, AZSHARA },
-					["maps"] = { AZSHARA },
 					["lvl"] = 60,
 				}),
 				applyclassicphase(PHASE_FIVE_GONG, q(8743, {	-- Bang a Gong!
 					["provider"] = { "o", 180717 },	-- The Scarab Gong
 					["sourceQuest"] = 8742,	-- The Might of Kalimdor
 					["coord"] = { 25.7, 90.9, SILITHUS },
-					["maps"] = { SILITHUS },
 					["cost"] = {
 						{ "i", 21175, 1 },	-- The Scepter of the Shifting Sands
 					},
@@ -150,7 +146,7 @@ _.WorldEvents = { n(-539,	-- The Scepter of the Shifting Sands
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["sourceQuest"] = 8286,	-- What Tomorrow Brings
 					["coord"] = { 49.5, 36.4, SILITHUS },
-					["maps"] = { BLACKWING_LAIR, SILITHUS },
+					["maps"] = { BLACKWING_LAIR },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of the Broodlord Lashlayer
@@ -183,7 +179,7 @@ _.WorldEvents = { n(-539,	-- The Scepter of the Shifting Sands
 					["sourceQuest"] = 8577,	-- Stewvul, Ex-B.F.F.
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu
 					["coord"] = { 46.2, 86.7, SILVERPINE_FOREST },
-					["maps"] = { MOLTEN_CORE, SILVERPINE_FOREST },
+					["maps"] = { MOLTEN_CORE },
 					["cost"] = {
 						{ "i", 20951, 1 },	-- Narain's Scrying Goggles
 					},
@@ -201,7 +197,6 @@ _.WorldEvents = { n(-539,	-- The Scepter of the Shifting Sands
 					["sourceQuest"] = 8736,	-- The Nightmare Manifests
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 36.18, 41.79, MOONGLADE },
-					["maps"] = { MOONGLADE },
 					["cost"] = {
 						{ "i", 21139, 1 },	-- Green Scepter Shard
 					},
@@ -234,7 +229,6 @@ _.WorldEvents = { n(-539,	-- The Scepter of the Shifting Sands
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["sourceQuest"] = 8301,	-- The Path of the Righteous
 					["coord"] = { 49.5, 36.4, SILITHUS },
-					["maps"] = { SILITHUS },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 20384, 200 },	-- Silithid Carapace Fragment
@@ -280,7 +274,6 @@ _.WorldEvents = { n(-539,	-- The Scepter of the Shifting Sands
 					["description"] = "You do NOT want to kill Eranikus or allow Remulos to die.",
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 36.18, 41.79, MOONGLADE },
-					["maps"] = { MOONGLADE },
 					["lvl"] = 60,
 					["groups"] = {
 						i(21531),	-- Drake Tooth Necklace
@@ -292,7 +285,7 @@ _.WorldEvents = { n(-539,	-- The Scepter of the Shifting Sands
 					["sourceQuest"] = 8734,	-- Tyrande and Remulos
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 36.18, 41.79, MOONGLADE },
-					["maps"] = { MOONGLADE, ASHENVALE, DUSKWOOD, FERALAS, THE_HINTERLANDS },
+					["maps"] = { ASHENVALE, DUSKWOOD, FERALAS, THE_HINTERLANDS },
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Fragment of the Nightmare's Corruption (Ashenvale)
@@ -414,7 +407,6 @@ _.WorldEvents = { n(-539,	-- The Scepter of the Shifting Sands
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["sourceQuest"] = 8288,	-- Only One May Rise
 					["coord"] = { 49.5, 36.4, SILITHUS },
-					["maps"] = { SILITHUS },
 					["cost"] = {
 						{ "i", 20402, 1 },	-- Agent of Nozdormu
 						{ "i", 20384, 200 },	-- Silithid Carapace Fragment
@@ -454,7 +446,6 @@ _.WorldEvents = { n(-539,	-- The Scepter of the Shifting Sands
 					["qg"] = 15693,	-- Jonathan the Revelator
 					["sourceQuest"] = 8742,	-- The Might of Kalimdor
 					["coord"] = { 25.9, 91.0, SILITHUS },
-					["maps"] = { SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
 						ach(5533, {	-- Veteran of the Shifting Sands
@@ -471,14 +462,12 @@ _.WorldEvents = { n(-539,	-- The Scepter of the Shifting Sands
 					["sourceQuest"] = 8733,	-- Eranikus, Tyrant of the Dream
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 37.5, 47.9, TELDRASSIL },
-					["maps"] = { TELDRASSIL },
 					["lvl"] = 60,
 				}),
 				q(8286, {	-- What Tomorrow Brings
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["description"] = "This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",
 					["coord"] = { 49.5, 36.4, SILITHUS },
-					["maps"] = { SILITHUS },
 					["lvl"] = 60,
 				}),
 			}),

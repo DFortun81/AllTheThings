@@ -17,7 +17,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10180,	-- Can't Stay Away
 					["coord"] = { 44.1, 65.0, TEROKKAR_FOREST },
 					["timeline"] = { "removed 4.3.0.14942" },
-					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(65, 15, 65),
 					["groups"] = {
 						objective(1, {	-- Darkweaver Syth slain
@@ -50,7 +49,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(10180, {	-- Can't Stay Away
 					["qg"] = 19045,	-- Oloraak
 					["coord"] = { 58.0, 15.2, SHATTRATH_CITY },
-					["maps"] = { SHATTRATH_CITY },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(65, 15, 65),
 				}),
@@ -59,7 +57,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 11001,	-- Vanquish the Raven God
 					["coord"] = { 80.2, 65.2, ZANGARMARSH },
 					["timeline"] = { "removed 4.0.1" },
-					["maps"] = { ZANGARMARSH },
 					["classes"] = { DRUID },
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(70, 30, 70),
@@ -83,7 +80,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10180,	-- Can't Stay Away
 					["coord"] = { 44.1, 65.0, TEROKKAR_FOREST },
 					["timeline"] = { "removed 4.3.0.14942" },
-					["maps"] = { TEROKKAR_FOREST },
 					["cost"] = {
 						{ "i", 32888, 1 },	-- The Relics of Terokk
 					},
@@ -127,7 +123,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10994,	-- Chasing the Moonstone
 					["coord"] = { 80.2, 65.2, ZANGARMARSH },
 					["timeline"] = { "removed 4.0.1" },
-					["maps"] = { ZANGARMARSH },
 					["classes"] = { DRUID },
 					["lvl"] = lvlsquish(70, 30, 70),
 					["groups"] = {

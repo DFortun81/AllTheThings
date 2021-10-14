@@ -93,7 +93,6 @@ _.Instances = { tier(SL_TIER, {
 				["questID"] = 61816,	-- Mortanis (WQ)
 				["isRaid"] = true,
 				["coord"] = { 32.1, 67.3, MALDRAXXUS },
-				["maps"] = { MALDRAXXUS },
 				["cr"] = 167525,	-- Mortanis
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183341),	-- Memory of a Guile Charm
@@ -112,7 +111,6 @@ _.Instances = { tier(SL_TIER, {
 				["questID"] = 61814,	-- Nurgash Muckformed (WQ)
 				["isRaid"] = true,
 				["coord"] = { 27.2, 14.9, REVENDRETH },
-				["maps"] = { REVENDRETH },
 				["cr"] = 167526,	-- Nurgash Muckformed
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(182638),	-- Memory of a Frenzied Monstrosity
@@ -131,7 +129,6 @@ _.Instances = { tier(SL_TIER, {
 				["questID"] = 61815,	-- Oranomonos the Everbranching (WQ)
 				["isRaid"] = true,
 				["coord"] = { 20.2, 63.6, ARDENWEALD },
-				["maps"] = { ARDENWEALD },
 				["cr"] = 167527,	-- Oranomonos the Everbranching
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183274),	-- Memory of a Fevered Incantation
@@ -150,7 +147,6 @@ _.Instances = { tier(SL_TIER, {
 				["questID"] = 61813,	-- Valinor, the Light of Eons (WQ)
 				["isRaid"] = true,
 				["coord"] = { 26.3, 22.4, BASTION },
-				["maps"] = { BASTION },
 				["cr"] = 167524,	-- Valinor, the Light of Eons
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183325),	-- Memory of Archbishop Benedictus

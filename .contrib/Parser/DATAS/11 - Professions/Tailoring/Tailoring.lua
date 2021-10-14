@@ -5151,7 +5151,7 @@ profession(TAILORING, {
 			["requireSkill"] = TAILORING,
 			["description"] = "Upon finishing this quest, you will become a Mooncloth Tailor.",
 			["coord"] = { 66.5, 69.3, SHATTRATH_CITY },
-			["maps"] = { SHATTRATH_CITY, ZANGARMARSH },
+			["maps"] = { ZANGARMARSH },
 			["altQuests"] = {
 				10831,	-- Becoming a Mooncloth Tailor
 				10833,	-- Becoming a Shadoweave Tailor
@@ -5178,7 +5178,7 @@ profession(TAILORING, {
 			["requireSkill"] = TAILORING,
 			["description"] = "Upon finishing this quest, you will become a Shadoweave Tailor.",
 			["coord"] = { 66.6, 68.2, SHATTRATH_CITY },
-			["maps"] = { SHATTRATH_CITY, SHADOWMOON_VALLEY },
+			["maps"] = { SHADOWMOON_VALLEY },
 			["altQuests"] = {
 				10831,	-- Becoming a Mooncloth Tailor
 				10833,	-- Becoming a Shadoweave Tailor
@@ -5197,7 +5197,7 @@ profession(TAILORING, {
 			["requireSkill"] = TAILORING,
 			["description"] = "Upon finishing this quest, you will become a Spellfire Tailor.",
 			["coord"] = { 66.6, 68.4, SHATTRATH_CITY },
-			["maps"] = { SHATTRATH_CITY, NETHERSTORM },
+			["maps"] = { NETHERSTORM },
 			["altQuests"] = {
 				10831,	-- Becoming a Mooncloth Tailor
 				10833,	-- Becoming a Shadoweave Tailor
@@ -5217,7 +5217,6 @@ profession(TAILORING, {
 		q(3379, {	-- Shadoweaver
 			["qg"] = 8439,	-- Nilith Lokrav
 			["coord"] = { 41.0, 75.0, SEARING_GORGE },
-			["maps"] = { SEARING_GORGE },
 			["requireSkill"] = TAILORING,
 			["lvl"] = 40,
 			["groups"] = {
@@ -5228,7 +5227,6 @@ profession(TAILORING, {
 			["qg"] = 8439,	-- Nilith Lokrav
 			["sourceQuest"] = 3379,	-- Shadoweaver
 			["coord"] = { 41.0, 75.0, SEARING_GORGE },
-			["maps"] = { SEARING_GORGE },
 			["requireSkill"] = TAILORING,
 			["cost"] = {
 				{ "i", 10467, 1 },	-- Trader's Satchel
@@ -5248,7 +5246,6 @@ profession(TAILORING, {
 			["qg"] = 8439,	-- Nilith Lokrav
 			["sourceQuest"] = 3385,	-- The Undermarket (1/2)
 			["coord"] = { 41.0, 75.0, SEARING_GORGE },
-			["maps"] = { SEARING_GORGE },
 			["requireSkill"] = TAILORING,
 			["lvl"] = 40,
 			["groups"] = {

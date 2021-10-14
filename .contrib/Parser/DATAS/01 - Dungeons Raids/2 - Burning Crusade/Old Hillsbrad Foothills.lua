@@ -37,7 +37,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					-- #else
 					["coord"] = { 53.9, 28.9, TANARIS },
 					-- #endif
-					["maps"] = { TANARIS },
 					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["races"] = { HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME },
 					["lvl"] = lvlsquish(66, 15, 66),
@@ -55,7 +54,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					-- #else
 					["coord"] = { 53.9, 28.9, TANARIS },
 					-- #endif
-					["maps"] = { TANARIS },
 					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["races"] = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME }, ALL_RACES),
 					["lvl"] = lvlsquish(66, 15, 66),

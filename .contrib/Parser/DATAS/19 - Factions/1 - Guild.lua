@@ -6,33 +6,19 @@ _.Factions =
 {
 	faction(1168, {	-- Your Guild (Faction) <Guild Vendor>
 		["coords"] = {
-			{ 48.4, 75.5, ORGRIMMAR },		-- Goram
+			{ 48.4, 75.5, ORGRIMMAR },	-- Goram
 			{ 69.8, 43.7, UNDERCITY },	-- Kim Horn
-			{ 56.8, 88.6, ORGRIMMAR },		-- Kim Horn
+			{ 56.8, 88.6, ORGRIMMAR },	-- Kim Horn
 			{ 78.3, 85.2, SILVERMOON_CITY },	-- Larissia
 			{ 52.5, 54.9, NORTHREND_DALARAN },	-- Mirla Silverblaze
 			{ 53.6, 69.6, THE_EXODAR },	-- Nuri
 			{ 70.2, 14.7, BORALUS },	-- Perry Charlton
-			{ 37.1, 63.3, THUNDER_BLUFF },		-- Randah Songhorn
+			{ 37.1, 63.3, THUNDER_BLUFF },	-- Randah Songhorn
 			{ 58.7, 46.4, SHATTRATH_CITY },	-- Riha
 			{ 64.1, 77.0, STORMWIND_CITY },	-- Shay Pressler
 			{ 36.3, 85.7, IRONFORGE },	-- Steeg Haskell
 			{ 64.7, 37.6, DARNASSUS },	-- Velia Moonbow
 			{ 58.0, 43.6, THE_GREAT_SEAL },	-- Ulla Skycloven [Dazar'alor]
-		},
-		["maps"] = {
-			DARNASSUS,
-			NORTHREND_DALARAN,
-			IRONFORGE,
-			1361,	-- Old Ironforge
-			ORGRIMMAR,
-			86,		-- Orgrimmar: The Drag
-			THE_EXODAR,
-			SHATTRATH_CITY,
-			SILVERMOON_CITY,
-			STORMWIND_CITY,
-			THUNDER_BLUFF,
-			UNDERCITY,
 		},
 		["crs"] = {
 			46572,	-- Goram (Orgrimmar)

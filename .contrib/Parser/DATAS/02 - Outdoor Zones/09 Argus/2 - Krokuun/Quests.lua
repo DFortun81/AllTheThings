@@ -111,11 +111,10 @@ _.Zones =
 					q(48440, {	-- Into the Night
 						["sourceQuests"] = { 47224 },	-- The Vidicaar
 						["provider"] = { "n", 120977 },	-- Prophet Velen
-						["coord"] = { 39.5, 76.8, 893 },
+						["coord"] = { 39.5, 76.8, 893 },	-- The Vindicaar (introductory scenario)
 						["maps"] = {
 							891,	-- Azuremyst Isle (introductory scenario)
 							892,	-- The Exodar (introductory scenario)
-							893,	-- The Vindicaar (introductory scenario)
 							894,	-- The Vindicaar (introductory scenario)
 						},
 						["lvl"] = 110,
@@ -128,9 +127,8 @@ _.Zones =
 					q(47223, {	-- Light's Exodus
 						["sourceQuests"] = { 47222 },	-- Two If By Sea
 						["provider"] = { "n", 121756 },	-- Vindicator Boros
-						["coord"] = { 20.6, 53.1, 891 },
+						["coord"] = { 20.6, 53.1, 891 },	-- Azuremyst Isle (introductory scenario)
 						["maps"] = {
-							891,	-- Azuremyst Isle (introductory scenario)
 							892,	-- The Exodar (introductory scenario)
 							893,	-- The Vindicaar (introductory scenario)
 							894,	-- The Vindicaar (introductory scenario)
@@ -241,9 +239,8 @@ _.Zones =
 					q(47224, {	-- The Vindicaar
 						["sourceQuests"] = { 47223 },	-- Light's Exodus
 						["provider"] = { "n", 120977 },	-- Prophet Velen
-						["coord"] = { 34.0, 65.1, 891 },
+						["coord"] = { 34.0, 65.1, 891 },	-- Azuremyst Isle (introductory scenario)
 						["maps"] = {
-							891,	-- Azuremyst Isle (introductory scenario)
 							892,	-- The Exodar (introductory scenario)
 							893,	-- The Vindicaar (introductory scenario)
 							894,	-- The Vindicaar (introductory scenario)

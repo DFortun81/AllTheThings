@@ -31,7 +31,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19496,	-- Spy Grik'tha
 					["coord"] = { 39.9, 72.3, TEROKKAR_FOREST },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(68, 20, 68),
 				}),
 				q(29640, {	-- Find Spy To'gun
@@ -72,7 +71,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18417,	-- Altruis
 					["sourceQuest"] = 10646,	-- Illidan's Pupil
 					["coord"] = { 27.3, 43.0, NAGRAND },
-					["maps"] = { NAGRAND },
 					["lvl"] = lvlsquish(68, 25, 68),
 					["groups"] = {
 						objective(1, {	-- 0/1 Book of Fel Names
@@ -97,7 +95,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 21465,	-- David Wayne
 					["sourceQuest"] = 10664,	-- Additional Materials
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
-					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(67, 25, 67),
 					["groups"] = {
 						objective(1, {	-- 0/1 Lexicon Demonica
@@ -139,7 +136,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10883,	-- The Tempest Key
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
-					["maps"] = { SHATTRATH_CITY, COILFANG_RESERVOIR_STEAMVAULT },
+					["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
 					["lvl"] = lvlsquish(70, 30, 70),
 					["groups"] = {
 						objective(1, {	-- 0/1 Kalithresh's Trident
@@ -154,7 +151,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 					["coord"] = { 50.2, 45.4, SHATTRATH_CITY },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { SHATTRATH_CITY },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(68, 20, 68),
 				}),
@@ -162,7 +158,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 					["coord"] = { 50.2, 45.4, SHATTRATH_CITY },
 					["timeline"] = { "added 4.3.0.14732" },
-					["maps"] = { SHATTRATH_CITY },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(68, 20, 68),
 					["altQuests"] = {

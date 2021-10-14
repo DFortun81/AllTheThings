@@ -27,24 +27,11 @@ _.Instances = { tier(CATA_TIER, {
 				["classes"] = { ROGUE },
 				["isRaid"] = true,
 				["lvl"] = 85,
-				["maps"] = {
-					HILLSBRAD_FOOTHILLS,	-- maybe needs specific rogue building id
-					74,	-- Tanaris: Caverns of Time Entrance
-					CAVERNS_OF_TIME,	-- Tanaris: Caverns of Time
-					STORMWIND_CITY,
-					ORGRIMMAR,
-					86,	-- Orgrimmar: The Drag
-					129,	-- The Nexus
-					MOUNT_HYJAL,
-					BOREAN_TUNDRA,
-					DEADWIND_PASS,
-				},
 				["groups"] = bubbleDown({ ["classes"] = { ROGUE } }, {
 					q(29802, {	-- A Hidden Message
 						["qg"] = 55476,	-- Lord Afrasastrasz
 						["sourceQuest"] = 29801,	-- Proving Your Worth
 						["coord"] = { 50.2, 59.6, 409 },	-- Dragon Soul
-						-- ["maps"] = { TWILIGHT_HIGHLANDS },
 						["cost"] = {
 							{ "i", 74752, 1 },	-- Solved Cipher
 						},
@@ -83,14 +70,12 @@ _.Instances = { tier(CATA_TIER, {
 						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["coord"] = { 70.0, 40.8, RUINS_OF_GILNEAS },
 						["sourceQuest"] = 30092,	-- Our Man in Gilneas
-						--["maps"] = { RUINS_OF_GILNEAS },
 						["cr"] = 57802,	-- Lord Hiram Creed <Warlord of the Blackhowl>
 					}),
 					q(30109, {	-- Blood of the Betrayer
 						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["sourceQuest"] = 30108,	-- Our Man in Karazhan
 						["coord"] = { 52.6, 77.6, DEADWIND_PASS },
-						--["maps"] = { DEADWIND_PASS },
 						["cost"] = {
 							{ "i", 77954, 1 },	-- Vial of Black Dragonsblood
 						},
@@ -99,7 +84,6 @@ _.Instances = { tier(CATA_TIER, {
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["sourceQuest"] = 30106,	-- The Deed is Done
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
-						--["maps"] = { HILLSBRAD_FOOTHILLS },
 						["cost"] = {
 							{ "i", 77951, 333 },	-- Shadowy Gem
 						},
@@ -108,19 +92,16 @@ _.Instances = { tier(CATA_TIER, {
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["sourceQuest"] = 29847,	-- To Catch a Thief
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
-						--["maps"] = { HILLSBRAD_FOOTHILLS },
 					}),
 					q(30108, {	-- Our Man in Karazhan
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["sourceQuest"] = 30107,	-- Cluster Clutch
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
-						--["maps"] = { HILLSBRAD_FOOTHILLS, DEADWIND_PASS },
 					}),
 					q(30118, {	-- Patricide
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["sourceQuest"] = 30116,	-- Sharpening Your Fangs
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
-						--["maps"] = { HILLSBRAD_FOOTHILLS },
 						["cost"] = {
 							{ "i", 78352, 1 },	-- Fragment of Deathwing's Jaw
 							{ "i", 77947, 1 },	-- The Sleeper
@@ -159,19 +140,16 @@ _.Instances = { tier(CATA_TIER, {
 						["qg"] = 56375,	-- Mostrasz
 						["coord"] = { 67.8, 45.2, HILLSBRAD_FOOTHILLS },
 						["sourceQuest"] = 29934,	-- To Ravenholdt
-						-- ["maps"] = { HILLSBRAD_FOOTHILLS },
 					}),
 					q(29934, {	-- To Ravenholdt
 						["qg"] = 55488,	-- Corastrasza
 						["sourceQuest"] = 29802,	-- A Hidden Message
 						["coord"] = { 29.0, 25.0, TWILIGHT_HIGHLANDS },
-						-- ["maps"] = { TWILIGHT_HIGHLANDS },
 					}),
 					q(30113, {	-- Victory in the Depths
 						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["sourceQuest"] = 30109,	-- Blood of the Betrayer
 						["coord"] = { 52.6, 77.6, DEADWIND_PASS },
-						--["maps"] = { DEADWIND_PASS },
 						["cost"] = {
 							{ "i", 77954, 1 },	-- Vial of Black Dragonsblood
 							{ "i", 77945, 1 },	-- Fear

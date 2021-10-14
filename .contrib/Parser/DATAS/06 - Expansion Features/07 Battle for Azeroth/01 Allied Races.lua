@@ -6,10 +6,10 @@ _.ExpansionFeatures =
 {
 	tier(BFA_TIER, {
 		n(-254, {	-- Allied Races
-			["maps"] = {
-				STORMWIND_CITY,
-				ORGRIMMAR,
-			},
+			-- ["maps"] = {
+			-- 	STORMWIND_CITY,
+			-- 	ORGRIMMAR,
+			-- },
 			["isRaid"] = true,
 			["g"] = {
 				q(50239, {	-- A Choice of Allies (A)

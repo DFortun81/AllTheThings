@@ -82,7 +82,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 93775 },	-- Eitrigg
 						}),
 						q(45128, {	-- A Glorious Reunion
-							["maps"] = { HELHEIM },
 							["coord"] = { 34.3, 28.5, HELHEIM },
 							["classes"] = { WARRIOR },
 							["provider"] = { "n", 116193 },	-- Aerylia
@@ -93,7 +92,6 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(46208, {	-- A Godly Invitation
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 43.6, 63.1, BROKEN_SHORE },
 							["classes"] = { WARRIOR },
 							["provider"] = { "n", 119527 },	-- Valarjar Warsinger
@@ -123,7 +121,6 @@ _.ExpansionFeatures =
 							["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 						}),
 						q(44850, {	-- Arming the Army
-							["maps"] = { HELHEIM },
 							["coord"] = { 34.3, 28.5, HELHEIM },
 							["classes"] = { WARRIOR },
 							["provider"] = { "n", 116193 },	-- Aerylia
@@ -148,7 +145,6 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(42650, {	-- Break the Bonds
-							["maps"] = { STORMHEIM },
 							["coord"] = { 63.8, 47.2, STORMHEIM },
 							["classes"] = { WARRIOR },
 							["provider"] = { "n", 106720 },	-- Svergan Stormcloak
@@ -278,7 +274,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 46142,	-- Knowledge is Power
 						}),
 						q(45118, {	-- Helya's Horn
-							["maps"] = { HELHEIM },
 							["coord"] = { 34.3, 28.5, HELHEIM },
 							["classes"] = { WARRIOR },
 							["provider"] = { "n", 116193 },	-- Aerylia
@@ -298,7 +293,6 @@ _.ExpansionFeatures =
 							["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 						}),
 						q(42204, {	-- Jorhuttam
-							["maps"] = { HIGHMOUNTAIN },
 							["coord"] = { 53.8, 87.8, HIGHMOUNTAIN },
 							["classes"] = { WARRIOR },
 							["provider"] = { "n", 106271 },	-- Jarum Skymane
@@ -318,7 +312,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 43888,	-- Hitting the Books
 						}),
 						q(45634, {	-- Kvaldir on Call
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 69.8, 34.7, BROKEN_SHORE },
 							["classes"] = { WARRIOR },
 							["sourceQuest"] = 44889,	-- Resource Management
@@ -352,7 +345,6 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(45649, {	-- Mission: Search and Rescue (A)
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 73.7, 31.2, BROKEN_SHORE },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { WARRIOR },
@@ -360,7 +352,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 45648,	-- Missing in Action: Lord Darius Crowley
 						}),
 						q(45647, {	-- Mission: Search and Rescue (H)
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 73.7, 31.2, BROKEN_SHORE },
 							["races"] = HORDE_ONLY,
 							["classes"] = { WARRIOR },
@@ -368,14 +359,12 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 45632,	-- Missing in Action: Eitrigg
 						}),
 						q(45632, {	-- Missing in Action: Eitrigg
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 69.8, 34.7, BROKEN_SHORE },
 							["races"] = HORDE_ONLY,
 							["classes"] = { WARRIOR },
 							["sourceQuest"] = 44889,	-- Resource Management
 						}),
 						q(45648, {	-- Missing in Action: Lord Darius Crowley
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 69.8, 34.7, BROKEN_SHORE },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { WARRIOR },
@@ -415,7 +404,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 96469 },	-- Odyn
 						}),
 						q(45650, {	-- Operation Felrage (A)
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 73.7, 31.2, BROKEN_SHORE },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { WARRIOR },
@@ -423,7 +411,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 45648,	-- Missing in Action: Lord Darius Crowley
 						}),
 						q(45633, {	-- Operation Felrage (H)
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 73.7, 31.2, BROKEN_SHORE },
 							["races"] = HORDE_ONLY,
 							["classes"] = { WARRIOR },
@@ -461,7 +448,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 45128,	-- A Glorious Reunion
 						}),
 						q(46267, {	-- Return of the Battlelord
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 69.8, 34.7, BROKEN_SHORE },
 							["classes"] = { WARRIOR },
 							["provider"] = { "n", 116858 },	-- Danica the Reclaimer
@@ -481,7 +467,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 42814,	-- An Important Mission
 						}),
 						q(38904, {	-- Return to the Broken Shore (H)
-							["maps"] = { LEGION_DALARAN },
 							["coord"] = { 75.0, 46.2, LEGION_DALARAN },
 							["races"] = HORDE_ONLY,
 							["classes"] = { WARRIOR },
@@ -489,7 +474,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 41052,	-- A Desperate Plea
 						}),
 						q(42202, {	-- Revenge, Served Cold
-							["maps"] = { HIGHMOUNTAIN },
 							["coord"] = { 53.8, 87.8, HIGHMOUNTAIN },
 							["classes"] = { WARRIOR },
 							["provider"] = { "n", 106271 },	-- Jarum Skymane
@@ -506,21 +490,18 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(42194, {	-- Stolen Honor
-							["maps"] = { STORMHEIM },
 							["coord"] = { 63.8, 47.2, STORMHEIM },
 							["classes"] = { WARRIOR },
 							["provider"] = { "n", 106720 },	-- Svergan Stormcloak
 							["sourceQuest"] = 42193,	-- The Gjallarhorn
 						}),
 						q(45834, {	-- Stolen Souls
-							["maps"] = { HELHEIM },
 							["coord"] = { 34.3, 28.5, HELHEIM },
 							["classes"] = { WARRIOR },
 							["provider"] = { "n", 116193 },	-- Aerylia
 							["sourceQuest"] = 44849,	-- Recruitment Drive
 						}),
 						q(42651, {	-- Svergan's Promise
-							["maps"] = { STORMHEIM },
 							["coord"] = { 70.8, 38.1, STORMHEIM },
 							["classes"] = { WARRIOR },
 							["provider"] = { "n", 106720 },	-- Svergan Stormcloak

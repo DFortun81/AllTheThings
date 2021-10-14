@@ -22,7 +22,7 @@ _.Holidays = { applyholiday(HARVEST_FESTIVAL, {
 				-- #else
 				["coord"] = { 52.6, 36.0, DUN_MOROGH },
 				-- #endif
-				["maps"] = { DUN_MOROGH, WESTERN_PLAGUELANDS },
+				["maps"] = { WESTERN_PLAGUELANDS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(30, 1, 30),
@@ -41,7 +41,7 @@ _.Holidays = { applyholiday(HARVEST_FESTIVAL, {
 				-- #else
 				["coord"] = { 46.0, 13.6, DUROTAR },
 				-- #endif
-				["maps"] = { DUROTAR, ASHENVALE },
+				["maps"] = { ASHENVALE },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(30, 1, 30),

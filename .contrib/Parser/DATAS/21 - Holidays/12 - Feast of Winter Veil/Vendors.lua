@@ -175,10 +175,6 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 					{ 47.33, 38.47, FROSTWALL },
 					{ 44.29, 51.05, LUNARFALL },
 				},
-				["maps"] = {
-					FROSTWALL,
-					LUNARFALL,
-				},
 				["g"] = {
 					i(128659, {	-- Merry Supplies
 						i(128665, {	-- Ball of Tangled Lights

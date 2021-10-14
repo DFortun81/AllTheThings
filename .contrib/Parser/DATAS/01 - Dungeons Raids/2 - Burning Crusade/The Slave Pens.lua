@@ -23,7 +23,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17841,	-- Ysiel Windsinger
 					["coord"] = { 78.4, 62.0, ZANGARMARSH },
 					["timeline"] = { "added 4.3.0.14732" },
-					["maps"] = { ZANGARMARSH },
 					["lvl"] = lvlsquish(62, 10, 62),
 				}),
 				q(9876,  {	-- Failed Incursion
@@ -31,7 +30,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9732,	-- Return to the Marsh
 					["coord"] = { 78.4, 62.0, ZANGARMARSH },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { ZANGARMARSH },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(62, 10, 62),
 				}),
@@ -39,7 +37,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17884,	-- Watcher Jhang
 					["sourceQuest"] = 9876,	-- Failed Incursion
 					["coord"] = { 52.3, 36.0, ZANGARMARSH },
-					["maps"] = { COILFANG_RESERVOIR_UNDERBOG, ZANGARMARSH },
+					["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["lvl"] = lvlsquish(62, 10, 62),
 					-- #if BEFORE 4.3.0.14732

@@ -1448,7 +1448,7 @@ _.Zones =
 						VOLDUN,
 						TIRAGARDE_SOUND,
 						STORMSONG_VALLEY,
-						ZULDAZAR,
+						-- ZULDAZAR,
 						DRUSTVAR,
 					},
 				}),
@@ -1758,7 +1758,6 @@ _.Zones =
 					["provider"] = { "n", 129589 },	-- The Monkey King
 					["coord"] = { 47.0, 88.4, DAZARALOR },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { DAZARALOR },
 				}),
 				q(50044, {	-- Archaeological Efficiency (A)
 					["coord"] = { 44.4, 73.4, ZULDAZAR },
@@ -1822,7 +1821,6 @@ _.Zones =
 					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
 					["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
-					["maps"] = { HALL_OF_CHRONICLERS },
 				}),
 				q(49059, {	-- The Bones of Xibala (A)
 				--	["coord"] = { 40.0, 76.5, ZULDAZAR },

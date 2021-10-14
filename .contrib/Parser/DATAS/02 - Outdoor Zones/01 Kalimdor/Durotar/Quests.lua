@@ -82,7 +82,6 @@ _.Zones =
 					["qg"] = 3216,	-- Neeru Fireblade
 					["sourceQuest"] = 829,	-- Neeru Fireblade
 					["coord"] = { 49.6, 50.4, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 					["timeline"] = {
@@ -388,7 +387,6 @@ _.Zones =
 					["qg"] = 3337,	-- Kargal Battlescar
 					["sourceQuest"] = 840,	-- Conscript of the Horde
 					["coord"] = { 62.26, 19.37, THE_BARRENS },
-					["maps"] = { DUROTAR, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["timeline"] = {
@@ -606,7 +604,6 @@ _.Zones =
 				q(813, {	-- Finding the Antidote
 					["qg"] = 3189,	-- Kor'ghan
 					["coord"] = { 47, 53.4, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 7,
@@ -1558,7 +1555,6 @@ _.Zones =
 						{ 39, 86, ORGRIMMAR },
 						{ 25, 20.6, THUNDER_BLUFF },
 					},
-					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },
 					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
 					["altQuests"] = {
@@ -1808,7 +1804,6 @@ _.Zones =
 					["qg"] = 3521,	-- Ak'Zeloth
 					["sourceQuest"] = 809,	-- Ak'Zeloth
 					["coord"] = { 62.4, 20, THE_BARRENS },
-					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["timeline"] = {
@@ -1835,7 +1830,6 @@ _.Zones =
 				q(6068, {	-- The Hunter's Path
 					["qg"] = 3407,	-- Sian'dur <Hunter Trainer>
 					["coord"] = { 67.8, 17.8, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
@@ -1860,7 +1854,6 @@ _.Zones =
 				q(6070, {	-- The Hunter's Path
 					["qg"] = 3038,	-- Kary Thunderhorn <Hunter Trainer>
 					["coord"] = { 58.4, 88, THUNDER_BLUFF },
-					["maps"] = { THUNDER_BLUFF },
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,

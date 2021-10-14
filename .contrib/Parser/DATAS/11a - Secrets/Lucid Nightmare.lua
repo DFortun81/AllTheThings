@@ -4,20 +4,11 @@
 
 _.Secrets =
 {
+	-- TODO: missing coords... anyone not finished this?
 	n(-800, {	-- Lucid Nightmare
 		["description"] = "***Quest tracking enabled is required to see all the steps.***",
 		["modelScale"] = .8,
 		["modelID"] = 78092,
-		["maps"] = {
-			LEGION_DALARAN, LEGION_THE_UNDERBELLY,
-			DEADWIND_PASS, 41, 43, 44, 45, 46,						-- Deadwind Pass
-			207,													-- Deepholm
-			226, 227, 228, 229,										-- Gnomeregan
-			KUN_LAI_SUMMIT, 380, 381, 382, 383, 384, 385, 386, 387, 421, 434,	-- Kun-Lai Summit
-			319, 320, 321,											-- Temple of Ahn'Qiraj
-			148, 149, 150, 151, 152,								-- Ulduar
-			VALSHARAH, 642, 643, 644, 758, 868,						-- Val'sharah
-		},
 		["g"] = {
 			o(270855, {	-- Step 1: Inconspicuous Note
 				["model"] = 1661948,

@@ -5,7 +5,7 @@
 _.ExpansionFeatures =
 {
 	tier(WOD_TIER, {
-		n(-9966, {	-- Draenor Garrions
+		n(GARRISONS, {
 			m(FROSTWALL, {
 				["lvl"] = 90,
 				["maps"] = {

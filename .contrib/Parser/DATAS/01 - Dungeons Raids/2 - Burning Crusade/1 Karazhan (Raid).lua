@@ -44,7 +44,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9680,	-- Digging Up the Past
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["maps"] = { NETHERSTORM, DEADWIND_PASS },
+					["maps"] = { NETHERSTORM },
 					["cost"] = {
 						{ "i", 24152, 1 },	-- Charred Bone Fragment
 					},
@@ -54,7 +54,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17613,	-- Archmage Alturus
 					["sourceQuest"] = 9843,	-- Keanna's Log
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["lvl"] = 70,
 					["groups"] = {
 						objective(1, {	-- Demonic Presence Destroyed
@@ -66,7 +65,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17613,	-- Archmage Alturus
 					["sourceQuest"] = 11216,	-- Archmage Alturus
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["lvl"] = 68,
 					["groups"] = {
 						objective(1, {	-- Underground Well Reading
@@ -82,7 +80,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(11216, {	-- Archmage Alturus
 					["qg"] = 23948,	-- Apprentice Tasserel
 					["coord"] = { 75.0, 33.2, SHATTRATH_CITY },
-					["maps"] = { DEADWIND_PASS, SHATTRATH_CITY },
+					["maps"] = { DEADWIND_PASS },
 					["isBreadcrumb"] = true,
 					["lvl"] = 68,
 				}),
@@ -91,7 +89,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10725,	-- Eminence Among the Violet Eye [Mage]
 					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 29287, 1 },	-- Violet Signet of the Archmage
@@ -109,7 +106,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10727,	-- Eminence Among the Violet Eye [Assassin]
 					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 29283, 1 },	-- Violet Signet of the Master Assassin
@@ -125,7 +121,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17613,	-- Archmage Alturus
 					["sourceQuest"] = 9838,	-- The Violet Eye
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["lvl"] = 69,
 				}),
 				q(9826, {	-- Contact from Dalaran
@@ -135,7 +130,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						9825,	-- Restless Activity
 					},
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["cost"] = {
 						{ "i", 24482, 1 },	-- Alturus's Report
 					},
@@ -146,7 +140,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9645,	-- The Master's Terrace
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["lvl"] = 70,
 					["groups"] = {
 						objective(1, {	-- 0/1 Charred Bone Fragment
@@ -160,7 +153,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10735,	-- Down the Violet Path [Assassin]
 					["minReputation"] = { 967, REVERED },	-- The Violet Eye, Revered.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						--10740,	-- Distinguished Service [Assassin]
 						10738,	-- Distinguished Service [Mage]
@@ -180,7 +172,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10733,	-- Down the Violet Path [Mage]
 					["minReputation"] = { 967, REVERED },	-- The Violet Eye, Revered.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						10740,	-- Distinguished Service [Assassin]
 						--10738,	-- Distinguished Service [Mage]
@@ -200,7 +191,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10736,	-- Down the Violet Path [Protector]
 					["minReputation"] = { 967, REVERED },	-- The Violet Eye, Revered.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						10740,	-- Distinguished Service [Assassin]
 						10738,	-- Distinguished Service [Mage]
@@ -220,7 +210,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10734,	-- Down the Violet Path [Restorer]
 					["minReputation"] = { 967, REVERED },	-- The Violet Eye, Revered.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						10740,	-- Distinguished Service [Assassin]
 						10738,	-- Distinguished Service [Mage]
@@ -240,7 +229,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10731,	-- Path of the Violet Assassin
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						--10735,	-- Down the Violet Path [Assassin]
 						10733,	-- Down the Violet Path [Mage]
@@ -260,7 +248,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10729,	-- Path of the Violet Mage
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						10735,	-- Down the Violet Path [Assassin]
 						--10733,	-- Down the Violet Path [Mage]
@@ -280,7 +267,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10732,	-- Path of the Violet Protector
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						10735,	-- Down the Violet Path [Assassin]
 						10733,	-- Down the Violet Path [Mage]
@@ -300,7 +286,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10730,	-- Path of the Violet Restorer
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						10735,	-- Down the Violet Path [Assassin]
 						10733,	-- Down the Violet Path [Mage]
@@ -320,7 +305,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10740,	-- Distinguished Service [Assassin]
 					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						--10727,	-- Eminence Among the Violet Eye [Assassin]
 						10725,	-- Eminence Among the Violet Eye [Mage]
@@ -340,7 +324,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10738,	-- Distinguished Service [Mage]
 					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						10727,	-- Eminence Among the Violet Eye [Assassin]
 						--10725,	-- Eminence Among the Violet Eye [Mage]
@@ -360,7 +343,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10741,	-- Distinguished Service [Protector]
 					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						10727,	-- Eminence Among the Violet Eye [Assassin]
 						10725,	-- Eminence Among the Violet Eye [Mage]
@@ -380,7 +362,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10739,	-- Distinguished Service [Restorer]
 					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						10727,	-- Eminence Among the Violet Eye [Assassin]
 						10725,	-- Eminence Among the Violet Eye [Mage]
@@ -399,7 +380,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18166,	-- Khadgar <Sons of Lothar>
 					["sourceQuest"] = 9829,	-- Khadgar
 					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
-					["maps"] = { AUCHINDOUN_SHADOW_LABYRINTH, SHATTRATH_CITY },
+					["maps"] = { AUCHINDOUN_SHADOW_LABYRINTH },
 					["lvl"] = 68,
 					["groups"] = {
 						objective(1, {	-- 0/1 First Key Fragment
@@ -418,7 +399,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9631,	-- A Colleague's Aid
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 32.2, 63.6, NETHERSTORM },
-					["maps"] = { AUCHINDOUN_SETHEKK_HALLS, HELLFIRE_CITADEL_SHATTERED_HALLS, NETHERSTORM },
+					["maps"] = { AUCHINDOUN_SETHEKK_HALLS, HELLFIRE_CITADEL_SHATTERED_HALLS },
 					["lvl"] = 70,
 					["groups"] = {
 						objective(1, {	-- 0/1 Book of Forgotten Names
@@ -452,7 +433,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9826,	-- Contact from Dalaran
 					-- #if TBC
 					["coord"] = { 15.6, 54.6, ALTERAC_MOUNTAINS },
-					["maps"] = { ALTERAC_MOUNTAINS },
 					-- #endif
 					["lvl"] = 68,
 				}),
@@ -460,7 +440,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17613,	-- Archmage Alturus
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
-					["maps"] = { DEADWIND_PASS },
 					["lvl"] = 70,
 				}),
 				q(9644, {	-- Nightbane
@@ -468,7 +447,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9637,	-- Kalynna's Request
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS, NETHERSTORM },
+					["maps"] = { NETHERSTORM },
 					["lvl"] = 70,
 					["groups"] = {
 						objective(1, {	-- 0/1 Faint Arcane Essence
@@ -483,7 +462,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18253,	-- Archmage Leryda
 					["minReputation"] = { 967, FRIENDLY },	-- The Violet Eye, Friendly.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						--10731,	-- Path of the Violet Assassin [Assassin]
 						10729,	-- Path of the Violet Mage [Mage]
@@ -499,7 +477,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18253,	-- Archmage Leryda
 					["minReputation"] = { 967, FRIENDLY },	-- The Violet Eye, Friendly.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						10731,	-- Path of the Violet Assassin [Assassin]
 						--10729,	-- Path of the Violet Mage [Mage]
@@ -515,7 +492,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18253,	-- Archmage Leryda
 					["minReputation"] = { 967, FRIENDLY },	-- The Violet Eye, Friendly.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						10731,	-- Path of the Violet Assassin [Assassin]
 						10729,	-- Path of the Violet Mage [Mage]
@@ -531,7 +507,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18253,	-- Archmage Leryda
 					["minReputation"] = { 967, FRIENDLY },	-- The Violet Eye, Friendly.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["altQuests"] = {
 						10731,	-- Path of the Violet Assassin [Assassin]
 						10729,	-- Path of the Violet Mage [Mage]
@@ -548,7 +523,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10728,	-- Eminence Among the Violet Eye [Protector]
 					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 29279, 1 },	-- Violet Signet of the Great Protector
@@ -565,7 +539,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17613,	-- Archmage Alturus
 					["sourceQuest"] = 11216,	-- Archmage Alturus
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["lvl"] = 68,
 					["groups"] = {
 						objective(1, {	-- 0/10 Ghostly Essence
@@ -585,7 +558,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10726,	-- Eminence Among the Violet Eye [Restorer]
 					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 29290, 1 },	-- Violet Signet of the Grand Restorer
@@ -613,7 +585,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17613,	-- Archmage Alturus
 					["sourceQuest"] = 9844,	-- A Demonic Presence
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["maps"] = { DEADWIND_PASS },
 					["lvl"] = 70,
 					["groups"] = {
 						i(31113),	-- Violet Badge
@@ -623,7 +594,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18166,	-- Khadgar <Sons of Lothar>
 					["sourceQuest"] = 9831,	-- Entry Into Karazhan
 					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
-					["maps"] = { COILFANG_RESERVOIR_STEAMVAULT, TEMPEST_KEEP_ARCATRAZ, SHATTRATH_CITY },
+					["maps"] = { COILFANG_RESERVOIR_STEAMVAULT, TEMPEST_KEEP_ARCATRAZ },
 					["lvl"] = 68,
 					["groups"] = {
 						objective(1, {	-- 0/1 Second Key Fragment
@@ -649,7 +620,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18166,	-- Khadgar <Sons of Lothar>
 					["sourceQuest"] = 9837,	-- Return to Khadgar
 					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
-					["maps"] = { DEADWIND_PASS, SHATTRATH_CITY },
+					["maps"] = { DEADWIND_PASS },
 					["lvl"] = 69,
 				}),
 			})),

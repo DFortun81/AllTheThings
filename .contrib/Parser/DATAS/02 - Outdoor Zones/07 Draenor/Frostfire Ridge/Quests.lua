@@ -146,7 +146,6 @@ _.Zones =
 					},
 				}),
 				q(34461, {	-- Build Your Barracks
-					["maps"] = { FROSTWALL },
 					["coord"] = { 52.4, 53.3, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78466 },	-- Gazlowe
@@ -498,7 +497,6 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(34775, {	-- Mission Probable
-					["maps"] = { FROSTWALL },
 					["coord"] = { 53.9, 54.9, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 79740 },	-- Warmaster Zog
@@ -933,7 +931,6 @@ _.Zones =
 					["sourceQuest"] = 34446,	-- The Home Stretch
 				}),
 				q(33010, {	-- The Iron Wolf
-					["maps"] = { FROSTWALL },
 					["coord"] = { 50.1, 37.9, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 74163 },	-- Durotar
@@ -977,7 +974,6 @@ _.Zones =
 					},
 				}),
 				q(34823, {	-- The Ogron Live?
-					["maps"] = { FROSTWALL },
 					["coord"] = { 51.2, 51.4, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78487 },	-- Rokhan
@@ -1084,7 +1080,6 @@ _.Zones =
 				q(37291, {	-- Thunderlord Invasion
 					["description"] = "This cannot be acquired with a Level 3 Garrison.",
 					["isBreadcrumb"] = true,
-					["maps"] = { FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36567,	-- Bigger is Better
 					["providers"] = {
@@ -1162,7 +1157,6 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(34861, {	-- We Need An Army
-					["maps"] = { FROSTWALL },
 					["coord"] = { 57.4, 48.3, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78466 },	-- Gazlowe
@@ -1175,14 +1169,12 @@ _.Zones =
 					["sourceQuest"] = 34216,	-- Safe Passage
 				}),
 				q(34824, {	-- What We Got
-					["maps"] = { FROSTWALL },
 					["coord"] = { 52.4, 53.3, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78466 },	-- Gazlowe
 					["sourceQuest"] = 34378,	-- Establish Your Garrison
 				}),
 				q(34822, {	-- What We Need
-					["maps"] = { FROSTWALL },
 					["coord"] = { 52.4, 53.3, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78466 },	-- Gazlowe
@@ -1195,7 +1187,6 @@ _.Zones =
 					["sourceQuest"] = 32993,	-- The Strength of Our Bonds
 				}),
 				q(34462, {	-- Winds of Change
-					["maps"] = { FROSTWALL },
 					["coord"] = { 53.9, 54.9, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 79740 },	-- Warmaster Zog

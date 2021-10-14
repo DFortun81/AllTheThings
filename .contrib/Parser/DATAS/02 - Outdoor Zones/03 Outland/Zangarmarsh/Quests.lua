@@ -563,7 +563,6 @@ _.Zones =
 					["qg"] = 16885,	-- Amythiel Mistwalker
 					["sourceQuest"] = 9724,	-- Warning the Cenarion Circle
 					["coord"] = { 16.0, 52.1, HELLFIRE_PENINSULA },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["lvl"] = lvlsquish(60, 10, 60),
 					["groups"] = {
 						i(25524),	-- Cenarion Expedition Boots
@@ -665,7 +664,6 @@ _.Zones =
 				q(9912, {	-- The Cenarion Expedition
 					["qg"] = 16885,	-- Amythiel Mistwalker
 					["coord"] = { 16.0, 52.1, HELLFIRE_PENINSULA },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(61, 10, 61),
 				}),

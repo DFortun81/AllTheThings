@@ -576,6 +576,7 @@ namespace ATT
                 }
             }
 
+            bool cloned = false;
             // Mark the quest as referenced
             if (data.TryGetValue("questID", out long questID))
             {
@@ -592,17 +593,24 @@ namespace ATT
             {
                 DuplicateDataIntoGroups(data, quests, "quest");
                 data.Remove("_quests");
+                cloned = true;
             }
             else if (data.TryGetValue("_items", out object items))
             {
                 DuplicateDataIntoGroups(data, items, "item");
                 data.Remove("_items");
+                //cloned = true;
             }
             else if (data.TryGetValue("_npcs", out object npcs))
             {
                 DuplicateDataIntoGroups(data, npcs, "npc");
                 data.Remove("_npcs");
+                //cloned = true;
             }
+
+            // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
+            if (cloned && data.ContainsKey("criteriaID"))
+                return false;
 
             // Throw away automatic Spell ID assignments for certain filter types.
             if (data.TryGetValue("spellID", out f))
@@ -798,6 +806,37 @@ namespace ATT
                     {
                         data.Remove("name");
                     }
+                }
+            }
+
+            // notify about redundant tags on groups
+
+            // maps & coords
+            if (data.TryGetValue("maps", out object maps) && maps is List<object> mapsList)
+            {
+                // 'coord' is converted to 'coords' already
+                if (data.TryGetValue("coords", out object coords) && coords is List<object> coordsList)
+                {
+                    bool redundant = false;
+                    // check if any coord has a mapID which matches a maps mapID
+                    foreach (object coord in coordsList)
+                    {
+                        if (coord is List<object> coordList && coordList.Count > 2)
+                        {
+                            var coordMapID = coordList[2];
+                            if (mapsList.TrySmartContains(coordMapID, out object mapsValue))
+                            {
+                                mapsList.Remove(mapsValue);
+                                redundant = true;
+                            }
+                        }
+                    }
+                    // remove the key itself if no mapID values remain
+                    if (mapsList.Count == 0)
+                        data.Remove("maps");
+
+                    if (redundant)
+                        Trace.WriteLine($"Redundant 'maps' removed from: {MiniJSON.Json.Serialize(data)}");
                 }
             }
 

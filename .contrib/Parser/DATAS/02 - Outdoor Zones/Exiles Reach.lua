@@ -11,8 +11,6 @@ _.Zones =
 		["maps"] = {
 			1726,	-- North Sea (Alliance)
 			1727,	-- North Sea (Horde)
-		--	1609,	-- Darkmaul Citadel (dungeon scenario)
-		--	1610,	-- Darkmaul Citadel upper floor (dungeon scenario)
 		},
 		["g"] = {
 			--[[

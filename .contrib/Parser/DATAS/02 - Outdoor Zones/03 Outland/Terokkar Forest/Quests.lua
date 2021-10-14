@@ -227,7 +227,6 @@ _.Zones =
 				}),
 				q(10112, {	-- A Personal Favor
 					["provider"] = { "n", 18484 },	-- Wind Trader Lathrai
-					["maps"] = { SHATTRATH_CITY },
 					["coord"] = { 72.2, 30.7, SHATTRATH_CITY },
 					["sourceQuest"] = 9979,	-- Wind Trader Lathrai
 					["groups"] = {
@@ -382,7 +381,6 @@ _.Zones =
 				}),
 				q(9990, {	-- Investigate Tuurem
 					["provider"] = { "n", 18484 },	-- Wind Trader Lathrai
-					["maps"] = { SHATTRATH_CITY },
 					["coord"] = { 72.2, 30.7, SHATTRATH_CITY },
 					["sourceQuest"] = 10112,	-- A Personal Favor
 				}),
@@ -634,7 +632,6 @@ _.Zones =
 				}),
 				q(10847, {	-- The Eyes of Skettis -- aa
 					["provider"] = { "n", 22292 },	-- Rilak the Redeemed
-					["maps"] = { SHATTRATH_CITY },
 					["coord"] = { 52.6, 21.0, SHATTRATH_CITY },
 					["sourceQuests"] = {
 						10863,	-- Secrets of the Arakkoa
@@ -708,7 +705,6 @@ _.Zones =
 				q(10879, {	-- The Skettis Offensive
 					["provider"] = { "n", 22373 },	-- Defender Grashna
 					["coord"] = { 51.8, 20.8, SHATTRATH_CITY },
-					["maps"] = { SHATTRATH_CITY },
 					["sourceQuest"] = 10889,	-- Return to Shattrath
 					["groups"] = {
 						i(31727),	-- Choker of Bloodied Feathers
@@ -885,7 +881,6 @@ _.Zones =
 				q(9957, {	-- What's Wrong at Cenarion Thicket?
 					["qg"] = 17834,	-- Lethyn Moonfire
 					["coord"] = { 78.6, 63.0, ZANGARMARSH },
-					["maps"] = { ZANGARMARSH },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(62, 10, 62),
 				}),

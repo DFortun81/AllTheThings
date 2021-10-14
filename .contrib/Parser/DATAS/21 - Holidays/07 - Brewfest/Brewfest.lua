@@ -554,7 +554,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 46.4, 40.3, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 4.0.1" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -575,7 +574,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 46.3, 14.8, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 4.0.1" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -599,7 +597,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["description"] = "This quest was only available during the 2009 & 2010 Brewfest. We are unsure if it will be returning during TBC Classic.",
 					-- #endif
 					["timeline"] = { "added 3.0.1", "removed 4.0.1" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -623,7 +620,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["description"] = "This quest was only available during the 2009 & 2010 Brewfest. We are unsure if it will be returning during TBC Classic.",
 					-- #endif
 					["timeline"] = { "added 3.0.1", "removed 4.0.1" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -651,7 +647,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 49.0, 39.8, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
@@ -675,7 +670,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 44.4, 17.9, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
@@ -699,7 +693,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 49.5, 38.7, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
@@ -723,7 +716,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 44.4, 17.9, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["groups"] = BREWFEST_TOKEN,
@@ -811,7 +803,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["qg"] = 153574,	-- Britta Steinheart
 					["coord"] = { 54.8, 38.6, DUN_MOROGH },
 					["timeline"] = { "added 8.2.0.31478" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
@@ -825,7 +816,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["qg"] = 155133,	-- Etga
 					["coord"] = { 42.3, 18.4, DUROTAR },
 					["timeline"] = { "added 8.2.0.31478" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
@@ -866,7 +856,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 46.6, 40.3, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 4.2.0.14288" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
@@ -882,7 +871,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 46.3, 14.8, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 4.2.0.14288" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
@@ -951,7 +939,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #else
 					["timeline"] = { "added 2.2.2" },
 					-- #endif
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -982,7 +969,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #else
 					["timeline"] = { "added 2.2.2" },
 					-- #endif
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -1013,7 +999,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 47.5, 39.8, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
@@ -1035,7 +1020,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 45.3, 17.3, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
@@ -1054,7 +1038,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					},
 					["coord"] = { 55.5, 37.7, DUN_MOROGH },
 					["timeline"] = { "added 8.2.0.30918" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
@@ -1067,7 +1050,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					},
 					["coord"] = { 41.0, 17.8, DUROTAR },
 					["timeline"] = { "added 8.2.0.30918" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
@@ -1082,7 +1064,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["description"] = "This quest was only available during the 2007 Brewfest.",
 					-- #endif
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -1105,7 +1086,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["description"] = "This quest was only available during the 2007 Brewfest.",
 					-- #endif
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -1154,7 +1134,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					},
 					["coord"] = { 55.5, 37.7, DUN_MOROGH },
 					["timeline"] = { "added 8.2.0.30918" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
@@ -1167,7 +1146,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					},
 					["coord"] = { 41.0, 17.8, DUROTAR },
 					["timeline"] = { "added 8.2.0.30918" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
@@ -1180,7 +1158,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					},
 					["coord"] = { 55.5, 37.7, DUN_MOROGH },
 					["timeline"] = { "added 8.2.0.30918" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
@@ -1193,7 +1170,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					},
 					["coord"] = { 41.0, 17.8, DUROTAR },
 					["timeline"] = { "added 8.2.0.30918" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
@@ -1217,7 +1193,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 46.6, 40.3, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
@@ -1236,7 +1211,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 46.3, 14.8, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
@@ -1255,7 +1229,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #else
 					["timeline"] = { "added 2.2.2" },
 					-- #endif
-					["maps"] = { DUN_MOROGH, AZUREMYST_ISLE, THE_EXODAR, ELWYNN_FOREST, TELDRASSIL },
+					["maps"] = { AZUREMYST_ISLE, THE_EXODAR, ELWYNN_FOREST, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 3.2.0.10314
 					["cost"] = { { "i", 46735, 1 } },	-- Synthebrew Goggles
@@ -1288,7 +1262,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #else
 					["timeline"] = { "added 2.2.2" },
 					-- #endif
-					["maps"] = { DUROTAR, EVERSONG_WOODS, MULGORE, TIRISFAL_GLADES },
+					["maps"] = { EVERSONG_WOODS, MULGORE, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					-- #if AFTER 3.2.0.10314
 					["cost"] = { { "i", 46735, 1 } },	-- Synthebrew Goggles
@@ -1325,10 +1299,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 						{ 47.9, 26.9, DUROTAR },
 					},
 					["timeline"] = { "added 2.4.3", "removed 3.3.3" },
-					["maps"] = {
-						DUN_MOROGH,
-						DUROTAR,
-					},
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(65, 10, 65),
 				}),
@@ -1340,7 +1310,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 46.4, 40.3, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 2.0.1", "removed 3.0.1" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -1360,7 +1329,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 46.3, 14.8, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 2.0.1", "removed 3.0.1" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
@@ -1379,11 +1347,7 @@ _.Holidays = { applyholiday(BREWFEST, {
 						{ 48.1, 39.1, DUN_MOROGH },
 					},
 					["timeline"] = { "added 2.0.1", "removed 2.4.3" },
-					["maps"] = {
-						DUROTAR,
-						DUN_MOROGH,
-						BLACKROCK_DEPTHS,
-					},
+					["maps"] = { BLACKROCK_DEPTHS },
 					["lvl"] = lvlsquish(48, 48, 48),
 				}),
 				q(11486, {	-- The Best of Brews (A)
@@ -1421,7 +1385,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 46.6, 40.3, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
@@ -1438,7 +1401,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 46.3, 14.8, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
@@ -1454,7 +1416,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 47.5, 39.8, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 2.2.2", "removed 8.2.0" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
@@ -1471,7 +1432,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 40.7, 17.4, DUROTAR },	-- TODO: Get accurate coordinates for TBC
 					-- #endif
 					["timeline"] = { "added 2.2.2", "removed 8.2.0" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["groups"] = appendGroups(BREWFEST_TOKEN, {
@@ -1492,7 +1452,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 48.0, 39.8, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -1524,7 +1483,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 						11447,	-- Welcome to Brewfest! (H)
 					},
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -1611,7 +1569,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 43.9, 17.9, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(34065, {	-- Spiced Onion Cheese
@@ -1622,7 +1579,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 				n(23521,  {	-- Anne Summers <Cheese Vendor>
 					["coord"] = { 56.4, 37.6, DUN_MOROGH },
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(34065, {	-- Spiced Onion Cheese
@@ -1637,7 +1593,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 48.5, 40.0, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(33043, {	-- The Essential Brewfest Pretzel
@@ -1652,7 +1607,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 48.9, 39.8, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(33030, {	-- Barleybrew Clear
@@ -1679,7 +1633,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 49.3, 39.6, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(BREWFEST_REGALIA, {
 						i(37571, {	-- "Brew of the Month" Club Membership Form (current)
@@ -1798,7 +1751,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 44.4, 16.6, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(34063, {	-- Dried Sausage
@@ -1835,7 +1787,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 44.1, 18.0, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(BREWFEST_REGALIA, {
 						i(37599, {	-- "Brew of the Month" Club Membership Form (current)
@@ -1950,7 +1901,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 				n(153574, {	-- Britta Steinheart <Chowdown Organizer>
 					["coord"] = { 54.8, 38.6, DUN_MOROGH },
 					["timeline"] = { "added 8.2.0.30918" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(169865, {	-- Brewfest Chowdown Trophy
@@ -1982,7 +1932,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 44.3, 18.0, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(34018, {	-- Long Stride Brew
@@ -2005,7 +1954,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 				n(155133, {	-- Etga <Chowdown Organizer>
 					["coord"] = { 42.2, 18.5, DUROTAR },
 					["timeline"] = { "added 8.2.0.30918" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(169865, {	-- Brewfest Chowdown Trophy
@@ -2025,10 +1973,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 						-- #endif
 					},
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = {
-						DUN_MOROGH,
-						DUROTAR,
-					},
 					["groups"] = {
 						i(46403, {	-- Chuganpug's Delight
 							["timeline"] = { "added 3.2.0.10314" },
@@ -2054,7 +1998,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 48.9, 38.1, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(34063, {	-- Dried Sausage
@@ -2093,7 +2036,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					-- #else
 					["coord"] = { 46.4, 40.3, DUN_MOROGH },
 					-- #endif
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(33977, {	-- Swift Brewfest Ram
@@ -2109,7 +2051,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 				n(23533,  {	-- T'chali's Voodoo Brewery Apprentice <Voodoo Brew Vendor>
 					["coord"] = { 40.3, 16.9, DUROTAR },
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(34021, {	-- Brewdoo Magic
@@ -2132,7 +2073,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 				n(23510,  {	-- Thunderbrew Apprentice <Thunderbrew Brew Vendor>
 					["coord"] = { 56.6, 37.0, DUN_MOROGH },
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(138871, {	-- Storming Saison
@@ -2159,7 +2099,6 @@ _.Holidays = { applyholiday(BREWFEST, {
 					["coord"] = { 44.8, 17.5, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(33043, {	-- The Essential Brewfest Pretzel

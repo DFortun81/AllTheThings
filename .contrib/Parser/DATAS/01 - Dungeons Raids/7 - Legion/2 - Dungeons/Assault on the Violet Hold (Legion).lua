@@ -7,9 +7,6 @@ _.Instances = { tier(LEGION_TIER, {
 		["lvl"] = 105,
 		["mapID"] = 732,
 		["coord"] = { 66.2, 68.3, LEGION_DALARAN },
-		["maps"] = {
-			723,	-- The Violet Hold (used in Demon Hunter Artifact questline)
-		},
 		["g"] = {
 			n(QUESTS, {
 				q(39247,  {	-- The Hunt

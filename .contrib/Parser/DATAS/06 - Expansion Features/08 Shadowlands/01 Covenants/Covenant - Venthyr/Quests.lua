@@ -6,14 +6,9 @@ _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
 		n(-949, {	-- Venthyr
-			["customCollect"] = "SL_COV_VEN",	-- Venthyr
 			--	TODO: quest through as Venthyr and unlock Adventures Scouting Map first instead of Mirror Network to test alternative version of "Our True Purpose"
 			-- "Our True Purpose" 59324 no longer shows as a 'valid Quest' from the server (2020-12-04), meaning likely no character has acquired it this week (2) of the expac?
 			-- But it is complete for my main, as well as 62921... /shrug
-			["maps"] = {
-				SINFALL_REACHES,
-				SINFALL_DEPTHS,
-			},
 			["g"] = {
 				n(QUESTS, sharedData({
 					["customCollect"] = { "SL_COV_VEN", },	-- Venthyr
@@ -477,7 +472,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
 						["provider"] = { "n", 159478 },	-- Tal-Inara
 						["coord"] = { 39.2, 69.7, ORIBOS },
-						["maps"] = { ORIBOS },
 					}),
 					q(58444, {	-- Return to Sinfall
 						["sourceQuests"] = { 58440 },	-- Mirror, Mirror...
@@ -505,7 +499,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 63215 },	-- Report to Draven
 						["provider"] = { "n", 171589 },	-- General Draven
 						["coord"] = { 44.8, 68.9, ORIBOS },
-						["maps"] = { ORIBOS },
 					}),
 					q(63341, {	-- Sinfall Tactician
 						-- TODO: Assumed SQ... double check by skipping to Renown 22
@@ -547,7 +540,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62837 },	-- Hopeful News
 						["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 						["coord"] = { 40.0, 68.3, ORIBOS },
-						["maps"] = { ORIBOS },
 						["g"] = {
 						--	TODO: verify mail reward.  Fearstalker's Ebony Gauntlets is not recorded in API as a reward, but it'd be weird if it wasn't one and all the other armor types got a piece from the quest
 							i(180909),	-- Ebony Death Shroud Gloves

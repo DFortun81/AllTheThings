@@ -23,7 +23,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19481,	-- Archmage Vargoth
 					["sourceQuest"] = 10256,	-- Finding the Keymaster
 					["coord"] = { 58.3, 86.4, NETHERSTORM },
-					["maps"] = { NETHERSTORM },
 					["lvl"] = lvlsquish(67, 25, 67),
 					["groups"] = {
 						objective(1, {	-- 0/1 The Keystone

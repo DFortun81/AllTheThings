@@ -6,11 +6,6 @@ _.ExpansionFeatures =
 {
 	tier(SL_TIER, {
 		n(-939, {	-- Kyrian
-			["customCollect"] = "SL_COV_KYR",	-- Kyrian
-			["maps"] = {
-				ARCHONS_RISE,
-				SANCTUM_OF_BINDING,
-			},
 			["g"] = {
 				n(VENDORS, {
 					n(174937, {	-- Adjutant Galos <Renown Quartermaster>

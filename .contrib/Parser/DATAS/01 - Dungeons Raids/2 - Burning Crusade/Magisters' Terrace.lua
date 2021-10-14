@@ -53,7 +53,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					["sourceQuest"] = 11481,	-- Crisis at the Sunwell
 					["coord"] = { 47.4, 30.7, ISLE_OF_QUELDANAS },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { ISLE_OF_QUELDANAS },
 					["lvl"] = lvlsquish(70, 25, 70),
 				}),
 				q(29682, {	-- Magisters' Terrace
@@ -61,7 +60,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					["sourceQuest"] = 11481,	-- Crisis at the Sunwell
 					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
 					["timeline"] = { "added 4.3.0.14732" },
-					["maps"] = { ISLE_OF_QUELDANAS },
 					["lvl"] = lvlsquish(68, 25, 68),
 				}),
 				q(29684, {	-- Severed Communications

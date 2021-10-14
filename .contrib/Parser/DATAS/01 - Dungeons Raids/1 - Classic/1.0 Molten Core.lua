@@ -20,7 +20,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 				faction(749, {	-- Hydraxian Waterlords
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
-					["maps"] = { AZSHARA },
 				}),
 			}),
 			n(QUESTS, {
@@ -28,7 +27,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuest"] = 6824,	-- Hands of the Enemy
 					["coord"] = { 79.2, 73.6, AZSHARA },
-					["maps"] = { AZSHARA },
 					["lvl"] = 55,
 					["groups"] = {
 						i(18399),	-- Ocean's Breeze
@@ -40,14 +38,12 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["sourceQuest"] = 6822,	-- The Molten Core
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["minReputation"] = { 749, HONORED },	-- Hydraxian Waterlords, Honored.
-					["maps"] = { AZSHARA },
 					["lvl"] = 55,
 				})),
 				q(7633, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- An Introduction
 					["qg"] = 14524,	-- Vartrus the Ancient
 					["sourceQuest"] = 7632,	-- The Ancient Leaf
 					["coord"] = { 47, 24.48, FELWOOD },
-					["maps"] = { FELWOOD },
 					["classes"] = { HUNTER },
 					["lvl"] = 60,
 				})),
@@ -60,10 +56,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["description"] = "This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
 					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
 					-- #endif
-					["maps"] = {
-						BLACKROCK_DEPTHS,
-						BLACKROCK_MOUNTAIN,
-					},
+					["maps"] = { BLACKROCK_DEPTHS },
 					["cost"] = {
 						{ "i", 18412, 1 },	-- Core Fragment
 					},
@@ -79,7 +72,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					-- #else
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					-- #endif
-					["maps"] = { SILITHUS },
 					["lvl"] = 60,
 					["cost"] = {
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
@@ -93,7 +85,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 						6805,	-- Stormers and Rumblers
 					},
 					["coord"] = { 79.2, 73.6, AZSHARA },
-					["maps"] = { AZSHARA, BLACKROCK_SPIRE },
+					["maps"] = { BLACKROCK_SPIRE },
 					["cost"] = {
 						{ "i", 17322, 1 },	-- Eye of the Emberseer
 					},
@@ -103,7 +95,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuest"] = 6823,	-- Agent of Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
-					["maps"] = { AZSHARA },
 					["cost"] = {
 						{ "i", 17331, 1 },	-- Hand of Gehennas
 						{ "i", 17329, 1 },	-- Hand of Lucifron
@@ -115,7 +106,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 				q(6804, bubbleDown({ ["timeline"] = REMOVED_WITH_WRATH }, {	-- Poisoned Water
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
-					["maps"] = { AZSHARA, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
 					["cost"] = {
 						{ "i", 17310, 1 },	-- Aspect of Neptulon
 						{ "i", 17309, 12 },	-- Discordant Bracers
@@ -128,7 +119,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
 					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					["coord"] = { 21.7, 8.6, SILITHUS },
-					["maps"] = { SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
 						ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
@@ -140,14 +130,13 @@ _.Instances = { tier(CLASSIC_TIER, {
 				q(6805, bubbleDown({ ["timeline"] = REMOVED_WITH_WRATH }, {	-- Stormers and Rumblers
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
-					["maps"] = { AZSHARA, SILITHUS },
+					["maps"] = { SILITHUS },
 					["lvl"] = 55,
 				})),
 				q(7632, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- The Ancient Leaf
 					["qg"] = 14524,	-- Vartrus the Ancient
 					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
 					["coord"] = { 47, 24.48, FELWOOD },
-					["maps"] = { FELWOOD },
 					["classes"] = { HUNTER },
 					["cost"] = {
 						{ "i", 18703, 1 },	-- Ancient Petrified Leaf
@@ -158,7 +147,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuest"] = 6821,	-- Eye of the Emberseer
 					["coord"] = { 79.2, 73.6, AZSHARA },
-					["maps"] = { AZSHARA },
 					["lvl"] = 55,
 				})),
 				q(7786, {	-- Thunderaan the Windseeker
@@ -170,7 +158,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					-- #else
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					-- #endif
-					["maps"] = { SILITHUS },
 					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					["cost"] = {
 						{ "i", 17771, 10 },	-- Elementium Bar x10

@@ -5,7 +5,6 @@ profession(ENGINEERING, {
 			["sourceQuest"] = 705,	-- Pearl Diving
 			["coord"] = { 42.39, 52.93, BADLANDS },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { BADLANDS },
 			["timeline"] = { "removed 4.0.3.2000" },
 			["lvl"] = 30,
 			["groups"] = {
@@ -23,7 +22,6 @@ profession(ENGINEERING, {
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 55.0, 8.6, STORMWIND_CITY },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { STORMWIND_CITY },
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
@@ -47,7 +45,6 @@ profession(ENGINEERING, {
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 68.8, 45.2, IRONFORGE },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { IRONFORGE },
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 30,
@@ -71,7 +68,6 @@ profession(ENGINEERING, {
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 62.6, 36.2, THE_BARRENS },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { THE_BARRENS },
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
@@ -95,7 +91,6 @@ profession(ENGINEERING, {
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 75.6, 74.6, UNDERCITY },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { UNDERCITY },
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = HORDE_ONLY,
 			["cost"] = {
@@ -108,7 +103,6 @@ profession(ENGINEERING, {
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 62.6, 36.2, THE_BARRENS },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { THE_BARRENS },
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = HORDE_ONLY,
 			["altQuests"] = {
@@ -153,11 +147,6 @@ profession(ENGINEERING, {
 				{ 68.8, 45.2, IRONFORGE },	-- Springspindle Fizzlegear
 				{ 56.8, 56.4, ORGRIMMAR },	-- Roxxik
 				{ 36.8, 59.6, THUNDER_BLUFF },	-- Engineer Palehoof
-			},
-			["maps"] = {
-				STORMWIND_CITY,
-				IRONFORGE,
-				ORGRIMMAR,
 			},
 			["cost"] = {
 				{ "i", 10559, 6 },	-- Mithril Tube
@@ -220,7 +209,6 @@ profession(ENGINEERING, {
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 75.6, 74.6, UNDERCITY },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { UNDERCITY },
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = HORDE_ONLY,
 			["cost"] = {
@@ -244,7 +232,6 @@ profession(ENGINEERING, {
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 55.0, 8.6, STORMWIND_CITY },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { STORMWIND_CITY },
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
@@ -268,7 +255,6 @@ profession(ENGINEERING, {
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 62.6, 36.2, THE_BARRENS },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { THE_BARRENS },
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = HORDE_ONLY,
 			["cost"] = {
@@ -292,7 +278,6 @@ profession(ENGINEERING, {
 			["description"] = "Requires 200 Engineering to start this quest.",
 			["coord"] = { 68.8, 45.2, IRONFORGE },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { IRONFORGE },
 			["timeline"] = { "removed 4.0.1.2000" },
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
@@ -305,7 +290,6 @@ profession(ENGINEERING, {
 			["altQuests"] = { 9635 },	-- The Zapthrottle Mote Extractor! [H]
 			["coord"] = { 68.6, 50.2, ZANGARMARSH },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { ZANGARMARSH },
 			["races"] = ALLIANCE_ONLY,
 			-- #if BEFORE WRATH
 			["u"] = TBC_PHASE_ONE,
@@ -322,7 +306,6 @@ profession(ENGINEERING, {
 			["altQuests"] = { 9636 },	-- The Zapthrottle Mote Extractor! [A]
 			["coord"] = { 34, 51, ZANGARMARSH },
 			["requireSkill"] = ENGINEERING,
-			["maps"] = { ZANGARMARSH },
 			["races"] = HORDE_ONLY,
 			-- #if BEFORE WRATH
 			["u"] = TBC_PHASE_ONE,

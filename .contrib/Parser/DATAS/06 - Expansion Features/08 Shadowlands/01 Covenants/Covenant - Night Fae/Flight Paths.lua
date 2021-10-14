@@ -9,11 +9,6 @@ _.ExpansionFeatures =
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 		},{
 		n(-929, {	-- Night Fae
-			["maps"] = {
-				THE_TRUNK,	-- Heart of the Forest
-				THE_ROOTS,	-- Heart of the Forest
-				THE_CANOPY,	-- Heart of the Forest
-			},
 			["g"] = {
 				n(FLIGHT_PATHS, {
 					fp(2587, {	-- Ardenweald, Heart of the Forest

@@ -23,7 +23,6 @@ _.ExpansionFeatures =
 							["coord"] = { 52.3, 34.5, DEADWIND_PASS },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 40932,	-- Disturbing the Past
-							["maps"] = { DEADWIND_PASS },
 						}),
 						q(43407, {	-- A Hero's Weapon
 							["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
@@ -78,7 +77,6 @@ _.ExpansionFeatures =
 						q(46719, {	-- Amal'thazad's Message
 							["provider"] = { "n", 117573 }, -- Dread Commander Thalanor
 							["coord"] = { 43.4, 62.7, BROKEN_SHORE },
-							["maps"] = { BROKEN_SHORE },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 46246, -- Strike Them Down
 						}),
@@ -215,20 +213,17 @@ _.ExpansionFeatures =
 							["coord"] = { 19.4, 67.3, ARATHI_HIGHLANDS },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 42533, -- The Ruined Kingdom
-							["maps"] = { ARATHI_HIGHLANDS },
 						}),
 						q(40932, {	-- Disturbing the Past
 							["provider"] = { "n", 100729 },	-- Revil Kost
 							["coord"] = { 52.3, 34.5, DEADWIND_PASS },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 40931,	-- Following the Curse
-							["maps"] = { DEADWIND_PASS },
 						}),
 						q(46812, {	-- Draconic Secrets
 							["coord"] = { 44.7, 4.4, ICECROWN },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 46720, -- Frozen Memories
-							["maps"] = { ICECROWN },
 						}),
 						q(44282, {	-- Eye of Azshara: The Frozen Soul
 							["provider"] = { "n", 93555 }, -- Amal'thazad
@@ -241,12 +236,10 @@ _.ExpansionFeatures =
 							["coord"] = { 77.4, 36.2, DUSKWOOD },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 40930,	-- Apocalypse
-							["maps"] = { DUSKWOOD },
 						}),
 						q(44783, {	-- From Bones They Rise
 							["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
 							["coord"] = { 51.3, 84.3, STORMHEIM },
-							["maps"] = { STORMHEIM },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 44775, -- The Peak of Bones
 						}),
@@ -269,7 +262,6 @@ _.ExpansionFeatures =
 						q(45398, {	-- Harnessing Power
 							["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
 							["coord"] = { 47.8, 19.2, 823 },
-							["maps"] = { 823 },	-- Pit of Saron
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 45240, -- Making Preparations
 						}),
@@ -330,7 +322,6 @@ _.ExpansionFeatures =
 							["coord"] = { 19.4, 67.3, ARATHI_HIGHLANDS },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 42533, -- The Ruined Kingdom
-							["maps"] = { ARATHI_HIGHLANDS },
 						}),
 						q(39832, {	-- Plans and Preparations
 							["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
@@ -358,7 +349,6 @@ _.ExpansionFeatures =
 								42535, -- Death... and Decay
 								42534, -- Our Oldest Enemies
 							},
-							["maps"] = { ARATHI_HIGHLANDS },
 						}),
 						q(42449, {	-- Return of the Four Horsemen
 							["provider"] = { "n", 93658 }, -- Highlord Darion Mograine
@@ -369,7 +359,6 @@ _.ExpansionFeatures =
 						q(45331, {	-- Return to Acherus
 							["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
 							["coord"] = { 47.8, 19.2, 823 },
-							["maps"] = { 823 },	-- Pit of Saron
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuests"] = {
 								45398, -- Harnessing Power
@@ -394,7 +383,6 @@ _.ExpansionFeatures =
 						q(45399, {	-- Severing the Sveldrek
 							["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
 							["coord"] = { 47.8, 19.2, 823 },
-							["maps"] = { 823 },	-- Pit of Saron
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 45240, -- Making Preparations
 						}),
@@ -458,7 +446,6 @@ _.ExpansionFeatures =
 							["coord"] = { 68.4, 27.0, DEADWIND_PASS },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 40934, -- The Dark Riders
-							["maps"] = { DEADWIND_PASS },
 						}),
 						q(40714, {	-- The Call To War
 							["description"] = "Automatically given to you when you arrive in Dalaran.",
@@ -470,7 +457,6 @@ _.ExpansionFeatures =
 							["coord"] = { 49.4, 74.6, DEADWIND_PASS },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 40933, -- A Grisly Task
-							["maps"] = { DEADWIND_PASS },
 							["g"] = {
 								i(128403), -- Apocalypse (Artifact)
 							},
@@ -490,7 +476,6 @@ _.ExpansionFeatures =
 							["coord"] = { 47.3, 17.7, DUROTAR },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 42449, -- Return of the Four Horsemen
-							["maps"] = { DUROTAR },
 						}),
 						q(43686, {	-- The Fourth Horseman
 							["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
@@ -507,7 +492,6 @@ _.ExpansionFeatures =
 							["coord"] = { 23.4, 61.4, ARATHI_HIGHLANDS },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 42536, -- Regicide
-							["maps"] = { ARATHI_HIGHLANDS },
 						}),
 						q(46813, {	-- The Lost Glacier
 							["provider"] = { "n", 121752 },	-- Slimy
@@ -552,7 +536,7 @@ _.ExpansionFeatures =
 						q(42882, {	-- The Scarlet Massacre
 							["provider"] = { "n", 109221 }, -- Thassarian
 							["coord"] = { 72.0, 48.0, 804 },
-							["maps"] = { 804, 805 },	-- Scarlet Monastery: Death Knight Campaign
+							["maps"] = { 805 },	-- Scarlet Monastery: Death Knight Campaign
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 42818,	-- The Scarlet Assault
 						}),
@@ -565,7 +549,6 @@ _.ExpansionFeatures =
 						q(46305, {	-- Thorim's Flame
 							["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
 							["coord"] = { 51.3, 84.3, STORMHEIM },
-							["maps"] = { STORMHEIM },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 44775,	-- The Peak of Bones
 						}),
@@ -592,7 +575,6 @@ _.ExpansionFeatures =
 						q(45103, {	-- We Ride!
 							["provider"] = { "n", 116128 },	-- Highlord Darion Mograine
 							["coord"] = { 51.6, 21.8, BROKEN_SHORE },
-							["maps"] = { BROKEN_SHORE },
 							["classes"] = { DEATHKNIGHT },
 							["sourceQuest"] = 45243,	-- On Daumyr's Wings
 						}),

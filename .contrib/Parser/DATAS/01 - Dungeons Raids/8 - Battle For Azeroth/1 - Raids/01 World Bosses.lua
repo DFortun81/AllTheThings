@@ -14,7 +14,6 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 62.0, 24.0, TIRAGARDE_SOUND },
 				["maps"] = {	-- all Tiragarde Sound maps
-					TIRAGARDE_SOUND,
 					1171,	-- Gol Thovas (lower)
 					1172,	-- Gol Thovas (upper)
 					1184,	-- Winterchill Mine (lower)
@@ -44,7 +43,6 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 37.8, 40.2, ARATHI_HIGHLANDS },
-				["maps"] = { ARATHI_HIGHLANDS },
 				["cr"] = 138122,	-- Doom's Howl
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(163195),	-- Schematic: Makeshift Azerite Detector (confirmed drop by Crieve on stream 11.23.18)
@@ -70,7 +68,6 @@ _.Instances = { tier(BFA_TIER, {
 				["coord"] = { 44.3, 55.5, VOLDUN },
 				["lvl"] = { 50 },
 				["maps"] = {	-- all Vol'dun maps
-					VOLDUN,
 					1009,	-- Atul'Aman: The Blood Font
 				},
 				["cr"] = 138794,	-- Dunegorger Kraulok
@@ -96,7 +93,6 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["cr"] = 154638,
 				["coord"] = { 5.9, 56.4, 1530 },
-				["maps"] = { 1530 },	-- Vale of Eternal Blossoms
 				["g"] = {
 					i(174243),	-- Guise of the Voracious Prowler
 					i(174234),	-- Maniacal Speaker's Cover
@@ -114,7 +110,6 @@ _.Instances = { tier(BFA_TIER, {
 					{ 31.8, 66.9, DRUSTVAR },	-- west road
 					{ 49.2, 74.6, DRUSTVAR },	-- actual boss
 				},
-				["maps"] = { DRUSTVAR },
 				["cr"] = 140252,	-- Hailstone Construct
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(2, {	-- Hailstone
@@ -140,7 +135,6 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 41.47, 35.97, DARKSHORE },
-				["maps"] = { DARKSHORE },
 				["lvl"] = { 50 },
 				["cr"] = 148295,	-- Ivus the Decayed
 				["g"] = bubbleDown({["modID"] = 3}, {
@@ -164,7 +158,6 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
 				["coord"] = { 41.4, 35.9, DARKSHORE },
-				["maps"] = { DARKSHORE },
 				["lvl"] = { 50 },
 				["cr"] = 144946,	-- Ivus the Forest Lord
 				["g"] = bubbleDown({["modID"] = 3}, {
@@ -189,7 +182,6 @@ _.Instances = { tier(BFA_TIER, {
 				["coord"] = { 69.0, 31.0, ZULDAZAR },
 				["lvl"] = { 50 },
 				["maps"] = {	-- all Zuldazar maps
-					ZULDAZAR,
 					1166,	-- Zanchul
 					1167,	-- Zanchul 2
 					1176,	-- Breath of Pa'ku, middle level
@@ -218,7 +210,6 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 35.6, 33.6, NAZMIR },
 				["lvl"] = { 50 },
-				["maps"] = { NAZMIR },
 				["cr"] = 132701,	-- T'zane <Tehe Soul Terror>
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(3, {	-- T'zane
@@ -243,7 +234,6 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
 				["coord"] = { 35.5, 38.9, ARATHI_HIGHLANDS },
-				["maps"] = { ARATHI_HIGHLANDS },
 				["cr"] = 137374,	-- The Lion's Roar
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(163829),	-- Toy War Machine
@@ -266,7 +256,6 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 84.2, 35.9, 1355 },
 				["maps"] = {	-- all Nazjatar maps
-					1355,	-- Nazjatar
 					1499,	--
 					1500,	-- Chitterspine Grotto
 					1524,	-- Deepsea Slave Pen
@@ -299,7 +288,6 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["cr"] = 160970,
 				["coord"] = { 45.7, 16.1, 1527 },
-				["maps"] = { 1527 },	-- Uldum
 				["g"] = {
 					i(174258),	-- Greathelm of Indiscriminate Brutality
 					i(174250),	-- Psyche Tormentor's Visage
@@ -316,7 +304,6 @@ _.Instances = { tier(BFA_TIER, {
 				["coord"] = { 83.2, 49.6, STORMSONG_VALLEY },
 				["lvl"] = { 50 },
 				["maps"] = {	-- all Stormsong Valley maps
-					STORMSONG_VALLEY,
 					1179,	-- Abyssal Melody
 					1182,	-- Saltstone Mine
 					1183,	-- Thornheart
@@ -343,7 +330,6 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 42.8, 77.9, 1355 },
 				["maps"] = {	-- all Nazjatar maps
-					1355,	-- Nazjatar
 					1499,	--
 					1500,	-- Chitterspine Grotto
 					1524,	-- Deepsea Slave Pen

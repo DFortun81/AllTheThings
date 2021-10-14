@@ -115,7 +115,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 120170 },	-- Nathanos Blightcaller
 							["coord"] = { 40.1, 69.4, HALL_OF_CHRONICLERS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { HALL_OF_CHRONICLERS },
 						}),
 						q(52746, {	-- The War Cache
 							["sourceQuests"] = { 52749 },	-- The War Campaign
@@ -202,35 +201,30 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 136725 },	-- Eitrigg
 							["coord"] = { 20.8, 43.8, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 						}),
 						q(51231, {	-- Wiccaphobia
 							["sourceQuests"] = { 51224 },	-- Profit and Reconnaissance
 							["provider"] = { "n", 136725 },	-- Eitrigg
 							["coord"] = { 32.3, 54.6, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 						}),
 						q(51233, {	-- I Hope There's No Witches in the Mountains
 							["sourceQuests"] = { 51231 },	-- Wiccaphobia
 							["provider"] = { "n", 136683 },	-- Trade Prince Gallywix
 							["coord"] = { 32.4, 54.6, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 						}),
 						q(51234, {	-- Krazzlefrazz Outpost
 							["sourceQuests"] = { 51233 },	-- I Hope There's No Witches in the Mountains
 							["provider"] = { "n", 137613 },	-- Hobart Grapplehammer
 							["coord"] = { 36.9, 27.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 						}),
 						q(51987, {	-- Champion: Hobart Grapplehammer
 							["sourceQuests"] = { 51234 },	-- Krazzlefrazz Outpost
 							["provider"] = { "n", 137613 },	-- Hobart Grapplehammer
 							["coord"] = { 33.6, 37.8, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 							["g"] = {
 								follower(1068),	-- Hobart Grapplehammer
 							},
@@ -240,7 +234,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 136683 },	-- Trade Prince Gallywix
 							["coord"] = { 37.2, 27.0, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 						}),
 						-- Stormsong Valley Foothold
 						q(51802, {	-- Foothold: Stormsong Valley
@@ -259,49 +252,42 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 138365 },	-- High Warlord Cromush
 							["coord"] = { 51.1, 21.1, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51643, {	-- A Wall of Iron
 							["sourceQuests"] = { 51532 },	-- Storming In
 							["provider"] = { "n", 138365 },	-- High Warlord Cromush
 							["coord"] = { 51.1, 21.1, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51536, {	-- On the Hunt
 							["sourceQuests"] = { 51643 },	-- A Wall of Iron
 							["provider"] = { "n", 138365 },	-- High Warlord Cromush
 							["coord"] = { 51.1, 21.1, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51587, {	-- Onward!
 							["sourceQuests"] = { 51536 },	-- On the Hunt
 							["provider"] = { "n", 138131 },	-- Rexxar
 							["coord"] = { 50.4, 26.2, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51674, {	-- Douse the Flames
 							["sourceQuests"] = { 51587 },	-- Onward!
 							["provider"] = { "n", 138677 },	-- Rexxar
 							["coord"] = { 51.7, 29.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51675, {	-- Hunt Them Down
 							["sourceQuests"] = { 51587 },	-- Onward!
 							["provider"] = { "n", 138688 },	-- Centurion Kaga Warmstone
 							["coord"] = { 51.7, 29.8, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51691, {	-- Almost Worth Saving
 							["sourceQuests"] = { 51587 },	-- Onward!
 							["provider"] = { "n", 138365 },	-- Centurion Kaga Warmstone
 							["coord"] = { 51.7, 29.8, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51696, {	-- Reclaiming What's Ours
 							["sourceQuests"] = {
@@ -312,14 +298,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 138867 },	-- Rexxar
 							["coord"] = { 49.3, 34.3, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51753, {	-- Champion: Rexxar
 							["sourceQuests"] = { 51696 },	-- Reclaiming What's Ours
 							["provider"] = { "n", 138876 },	-- Rexxar
 							["coord"] = { 52.1, 33.7, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 							["g"] = {
 								follower(1069),	-- Rexxar
 							},
@@ -329,7 +313,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 138876 },	-- Rexxar
 							["coord"] = { 52.1, 33.7, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						-- Tiragarde Sound Foothold
 						q(51800, {	-- Foothold: Tiragarde Sound
@@ -342,35 +325,30 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51435, {	-- Swashbuckling in Style
 							["sourceQuests"] = { 51421 },	-- Shiver Me Timbers
 							["provider"] = { "n", 137675 },	-- Shadow Hunter Ty'jin
 							["coord"] = { 89.3, 53.4, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51436, {	-- Parleyin' Wit Pirates
 							["sourceQuests"] = { 51435 },	-- Swashbuckling in Style
 							["provider"] = { "n", 137675 },	-- Shadow Hunter Ty'jin
 							["coord"] = { 89.3, 53.4, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51437, {	-- Spike the Punch
 							["sourceQuests"] = { 51436 },	-- Parleyin' Wit Pirates
 							["provider"] = { "n", 137727 },	-- First Mate Owings
 							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51439, {	-- Cannonball Collection
 							["sourceQuests"] = { 51436 },	-- Parleyin' Wit Pirates
 							["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
 							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51440, {	-- A Change in Direction
 							["sourceQuests"] = {
@@ -380,7 +358,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 137727 },	-- First Mate Owings
 							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51441, {	-- Thar She Blows!
 							["sourceQuests"] = {
@@ -390,7 +367,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
 							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51442, {	-- I'm the Captain Now
 							["sourceQuests"] = {
@@ -400,21 +376,18 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 137727 },	-- First Mate Owings
 							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51438, {	-- Marking Our Territory
 							["sourceQuests"] = { 51442 },	-- I'm the Captain Now
 							["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
 							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51975, {	-- Champion: Shadow Hunter Ty'jin
 							["sourceQuests"] = { 51438 },	-- Marking Our Territory
 							["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
 							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 							["g"] = {
 								follower(1072),	-- Shadow Hunter Ty'jin
 							},
@@ -424,7 +397,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
 							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						-- Unlocking the Worldquests
 						q(53064, {	-- A Mission of Unity
@@ -482,28 +454,24 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 138285 },	-- Nathanos Blightcaller
 							["coord"] = { 87.0, 50.5, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51591, {	-- Our Mountain Now
 							["sourceQuests"] = { 51590 },	-- Into the Heart of Tiragarde
 							["provider"] = { "n", 138285 },	-- Nathanos Blightcaller
 							["coord"] = { 72.0, 51.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51592, {	-- Making Ourselves at Home
 							["sourceQuests"] = { 51591 },	-- Our Mountain Now
 							["provider"] = { "n", 138285 },	-- Nathanos Blightcaller
 							["coord"] = { 72.0, 51.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51593, {	-- Bridgeport Investigation
 							["sourceQuests"] = { 51591 },	-- Our Mountain Now
 							["provider"] = { "n", 138287 },	-- Lilian Voss
 							["coord"] = { 72.0, 51.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51594, {	-- Explosives in the Foundry
 							["sourceQuests"] = {
@@ -513,35 +481,30 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 138287 },	-- Lilian Voss
 							["coord"] = { 72.0, 51.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51595, {	-- Explosivity
 							["sourceQuests"] = { 51594 },	-- Explosives in the Foundry
 							["provider"] = { "n", 138287 },	-- Lilian Voss
 							["coord"] = { 77.5, 49.9, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51596, {	-- Ammunition Acquisition
 							["sourceQuests"] = { 51595 },	-- Explosivity
 							["provider"] = { "n", 138287 },	-- Lilian Voss
 							["coord"] = { 77.5, 49.9, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51597, {	-- Gunpowder Research
 							["sourceQuests"] = { 51595 },	-- Explosivity
 							["provider"] = { "n", 138287 },	-- Lilian Voss
 							["coord"] = { 77.5, 49.9, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51598, {	-- A Bit of Chaos
 							["sourceQuests"] = { 51595 },	-- Explosivity
 							["provider"] = { "n", 138287 },	-- Lilian Voss
 							["coord"] = { 77.5, 49.9, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51599, {	-- Death Trap
 							["sourceQuests"] = {
@@ -552,14 +515,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 138287 },	-- Lilian Voss
 							["coord"] = { 77.5, 49.9, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(51601, {	-- The Bridgeport Ride
 							["sourceQuests"] = { 51599 },	-- Death Trap
 							["provider"] = { "n", 138287 },	-- Lilian Voss
 							["coord"] = { 77.0, 49.2, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						-- The Marshal's Grave
 						q(53065, {	-- Operation: Grave Digger
@@ -576,28 +537,24 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 						}),
 						q(51785, {	-- Examining the Epitaphs
 							["sourceQuests"] = { 51784 },	-- A Stroll Through a Cemetery
 							["provider"] = { "n", 139061 },	-- Nathanos Blightcaller
 							["coord"] = { 61.4, 51.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 						}),
 						q(51786, {	-- State of Unrest
 							["sourceQuests"] = { 51784 },	-- A Stroll Through a Cemetery
 							["provider"] = { "n", 139061 },	-- Nathanos Blightcaller
 							["coord"] = { 61.4, 51.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 						}),
 						q(51787, {	-- Our Lot in Life
 							["sourceQuests"] = { 51784 },	-- A Stroll Through a Cemetery
 							["provider"] = { "n", 139062 },	-- Lilian Voss
 							["coord"] = { 61.3, 51.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 						}),
 						q(51788, {	-- The Crypt Keeper
 							["sourceQuests"] = {
@@ -608,14 +565,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 61.4, 51.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 						}),
 						q(51789, {	-- What Remains of Marshal M. Valentine
 							["sourceQuests"] = { 51788 },	-- The Crypt Keeper
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 61.4, 51.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 						}),
 						-- Death of a Tidesage
 						q(53066, {	-- Operation: Water Wise
@@ -638,28 +593,24 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 138876 },	-- Rexxar
 							["coord"] = { 52.1, 33.7, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51805, {	-- They Will Know Fear
 							["sourceQuests"] = { 51798 },	-- No Price Too High
 							["provider"] = { "n", 139101 },	-- Lilian Voss
 							["coord"] = { 62.6, 31.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51818, {	-- Commander and Captain
 							["sourceQuests"] = { 51798 },	-- No Price Too High
 							["provider"] = { "n", 139098 },	-- Thomas Zelling
 							["coord"] = { 62.6, 31.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51819, {	-- Scattering Our Enemies
 							["sourceQuests"] = { 51798 },	-- No Price Too High
 							["provider"] = { "n", 139102 },	-- Rexxar
 							["coord"] = { 62.7, 31.8, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51830, {	-- Zelling's Potential
 							["sourceQuests"] = {
@@ -670,21 +621,18 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 139098 },	-- Thomas Zelling
 							["coord"] = { 62.6, 31.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(51837, {	-- Whatever Will Be
 							["sourceQuests"] = { 51830 },	-- Zelling's Potential
 							["provider"] = { "n", 139101 },	-- Lilian Voss
 							["coord"] = { 62.6, 31.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(52122, {	-- To Be Forsaken
 							["sourceQuests"] = { 51837 },	-- Whatever Will Be
 							["provider"] = { "n", 139101 },	-- Lilian Voss
 							["coord"] = { 62.6, 31.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						-- At the Bottom of the Sea
 						q(53067, {	-- Operation: Bottom Feeder
@@ -701,21 +649,18 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1157 },	-- The Great Sea
 						}),
 						q(52765, {	-- Deep Dive
 							["sourceQuests"] = { 52764 },	-- Journey to the Middle of Nowhere
 							["provider"] = { "n", 141644 },	-- Nathanos Blightcaller
 							["coord"] = { 40.4, 67.2, 1157 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1157 },	-- The Great Sea
 						}),
 						q(52766, {	-- Seafloor Shipwreck
 							["sourceQuests"] = { 52765 },	-- Deep Dive
 							["provider"] = { "n", 141645 },	-- Hobart Grapplehammer
 							["coord"] = { 41.6, 67.4, 1157 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1157 },	-- The Great Sea
 						}),
 						q(52767, {	-- Checking Dog Tags
 							["sourceQuests"] = { 52766 },	-- Seafloor Shipwreck
@@ -761,7 +706,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 141645 },	-- Hobart Grapplehammer
 							["coord"] = { 41.6, 67.4, 1157 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1157 },	-- The Great Sea
 						}),
 						q(53121, {	-- Siege of Boralus
 							["sourceQuests"] = { 52774 },	-- Grab and Go
@@ -769,14 +713,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 141654 },	-- Lilian Voss
 							["coord"] = { 41.4, 66.6, 1157 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1157 },	-- The Great Sea
 						}),
 						q(52978, {	-- With Prince in Tow
 							["sourceQuests"] = { 52774 },	-- Grab and Go
 							["provider"] = { "n", 141644 },	-- Nathanos Blightcaller
 							["coord"] = { 40.4, 67.2, 1157 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1157 },	-- The Great Sea
 						}),
 						q(53068, {	-- Operation: Hook and Line
 							["sourceQuests"] = { 52978 },	-- With Prince in Tow
@@ -798,14 +740,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 140485 },	-- Nathanos Blightcaller
 							["coord"] = { 86.9, 53.1, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(52187, {	-- Old Colleagues
 							["sourceQuests"] = { 52183 },	-- When a Plan Comes Together
 							["provider"] = { "n", 140484 },	-- Captain Amalia Stone
 							["coord"] = { 87.0, 53.1, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(52185, {	-- A Well Placed Portal
 							["sourceQuests"] = {
@@ -815,28 +755,24 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 140485 },	-- Nathanos Blightcaller
 							["coord"] = { 86.9, 53.1, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(52184, {	-- Relics of Ritual
 							["sourceQuests"] = { 52185 },	-- A Well Placed Portal
 							["provider"] = { "n", 140487 },	-- Thomas Zelling
 							["coord"] = { 71.0, 84.8, BORALUS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { BORALUS },
 						}),
 						q(52188, {	-- Tidesage Teachings
 							["sourceQuests"] = { 52185 },	-- A Well Placed Portal
 							["provider"] = { "n", 140487 },	-- Thomas Zelling
 							["coord"] = { 71.0, 84.8, BORALUS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { BORALUS },
 						}),
 						q(52189, {	-- Forfeit Souls
 							["sourceQuests"] = { 52185 },	-- A Well Placed Portal
 							["provider"] = { "n", 140487 },	-- Thomas Zelling
 							["coord"] = { 71.0, 84.8, BORALUS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { BORALUS },
 						}),
 						q(52190, {	-- Gaining the Upper Hand
 							["sourceQuests"] = {
@@ -847,7 +783,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 140487 },	-- Thomas Zelling
 							["coord"] = { 71.0, 84.8, BORALUS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { BORALUS },
 						}),
 						q(52990, {	-- Return to the Harbor
 							["sourceQuests"] = { 52190 },	-- Gaining the Upper Hand
@@ -860,14 +795,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 140485 },	-- Nathanos Blightcaller
 							["coord"] = { 86.9, 53.1, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { BORALUS },
 						}),
 						q(52192, {	-- The Aid of the Tides
 							["sourceQuests"] = { 52191 },	-- Life Held Hostage
 							["provider"] = { "n", 140485 },	-- Nathanos Blightcaller
 							["coord"] = { 86.9, 53.1, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(52861, {	-- Champion: Lilian Voss
 							["sourceQuests"] = { 52192 },	-- The Aid of the Tides
@@ -890,7 +823,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 134711 },	-- Lady Sylvanas Windrunner
 							["coord"] = { 48.4, 71.4, ORGRIMMAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { ORGRIMMAR },
 						}),
 						q(53851, {	-- Our War Continues
 							["sourceQuests"] = { 53003 },	-- A Cycle of Hatred
@@ -906,14 +838,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(53856, {	-- The Fury of the Horde
 							["sourceQuests"] = { 53852 },	-- Azerite Denied
 							["provider"] = { "n", 145422 },	-- Rexxar
 							["coord"] = { 47.5, 21.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(53879, {	-- Cleaning Out the Estate
 							["sourceQuests"] = { 53856 },	-- The Fury of the Horde
@@ -923,7 +853,6 @@ _.ExpansionFeatures =
 							},
 							["coord"] = { 48.9, 25.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(53880, {	-- Machines of War and Azerite
 							["sourceQuests"] = { 53856 },	-- The Fury of the Horde
@@ -933,7 +862,6 @@ _.ExpansionFeatures =
 							},
 							["coord"] = { 48.9, 25.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(53913, {	-- With Honor
 							["sourceQuests"] = {
@@ -955,14 +883,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 145422 },	-- Rexxar
 							["coord"] = { 53.0, 30.5, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(53981, {	-- The Day is Won
 							["sourceQuests"] = { 53973 },	-- Ride Out to Meet Them
 							["provider"] = { "n", 145422 },	-- Rexxar
 							["coord"] = { 47.4, 21.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(53941, {	-- A Mech for a Goblin
 							["sourceQuests"] = { 53981 },	-- The Day is Won
@@ -990,42 +916,36 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 145751 },	-- Trade Prince Gallywix
 							["coord"] = { 36.2, 72.0, ZULDAZAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 						}),
 						q(54128, {	-- Necessary Precautions
 							["sourceQuests"] = { 53942 },	-- The Right Mech for the Job
 							["provider"] = { "n", 145816 },	-- G.M.O.D.
 							["coord"] = { 37.3, 26.0, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 						}),
 						q(54004, {	-- Test Case #1; Mech vs. Mekkatorque
 							["sourceQuests"] = { 54128 },	-- Necessary Precautions
 							["provider"] = { "n", 145816 },	-- G.M.O.D.
 							["coord"] = { 37.3, 26.0, DRUSTVAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DRUSTVAR },
 						}),
 						q(54007, {	-- Insurance Policy
 							["sourceQuests"] = { 54004 },	-- Test Case #1; Mech vs. Mekkatorque
 							["provider"] = { "n", 146073 },	-- Trade Prince Gallywix
 							["coord"] = { 54.6, 64.6, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54008, {	-- Insurance Renewal
 							["sourceQuests"] = { 54007 },	-- Insurance Policy
 							["provider"] = { "n", 146073 },	-- Trade Prince Gallywix
 							["coord"] = { 54.6, 64.6, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54009, {	-- Killing on the Side
 							["sourceQuests"] = { 54007 },	-- Insurance Policy
 							["provider"] = { "n", 146073 },	-- Trade Prince Gallywix
 							["coord"] = { 54.6, 64.6, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54022, {	-- Mekkatorque's Battle Plans
 							["sourceQuests"] = { 54007 },	-- Insurance Policy
@@ -1042,42 +962,36 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 146073 },	-- Trade Prince Gallywix
 							["coord"] = { 54.6, 64.6, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54094, {	-- A Goblin's Definition of Success
 							["sourceQuests"] = { 54028 },	-- Mech versus Airship
 							["provider"] = { "n", 146623 },	-- G.M.O.D.
 							["coord"] = { 87.6, 53.5, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54121, {	-- Breaking Out Ashvane
 							["sourceQuests"] = { 54094 },	-- A Goblin's Definition of Success
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54175, {	-- Face Your Enemy
 							["sourceQuests"] = { 54121 },	-- Breaking Out Ashvane
 							["provider"] = { "n", 147088 },	-- Arcanist Valtrois
 							["coord"] = { 82.9, 49.5, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54176, {	-- Be More Uniform
 							["sourceQuests"] = { 54121 },	-- Breaking Out Ashvane
 							["provider"] = { "n", 147088 },	-- Arcanist Valtrois
 							["coord"] = { 82.9, 49.5, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54177, {	-- A Brilliant Distraction
 							["sourceQuests"] = { 54121 },	-- Breaking Out Ashvane
 							["provider"] = { "n", 146931 },	-- Rexxar
 							["coord"] = { 83.0, 49.6, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54178, {	-- Catching a Ride
 							["sourceQuests"] = {
@@ -1088,7 +1002,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 147088 },	-- Arcanist Valtrois
 							["coord"] = { 82.9, 49.5, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54179, {	-- Through the Front Door
 							-- Need to check for Leather rewards
@@ -1098,7 +1011,6 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["modID"] = 5,
 							["maps"] = {
-								TIRAGARDE_SOUND,
 								1349,	-- Tol Dagor (Scenario)
 								1350,	-- Tol Dagor (Scenario)
 								1351,	-- Tol Dagor (Scenario)
@@ -1161,14 +1073,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 147155 },	-- Patch
 							["coord"] = { 50.3, 78.4, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { NAZMIR },
 						}),
 						q(54212, {	-- Re-rebuilding the A.F.M.O.D.
 							["sourceQuests"] = { 54207 },	-- Retaking the Outpost
 							["provider"] = { "n", 147155 },	-- Patch
 							["coord"] = { 50.3, 78.4, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { NAZMIR },
 						}),
 						q(54213, {	-- It's Alive!
 							["sourceQuests"] = {
@@ -1178,42 +1088,36 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 147155 },	-- Patch
 							["coord"] = { 50.3, 78.4, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { NAZMIR },
 						}),
 						q(54224, {	-- The Battle of Zul'jan Ruins
 							["sourceQuests"] = { 54213 },	-- It's Alive!
 							["provider"] = { "n", 146921 },	-- Princess Talanji
 							["coord"] = { 50.4, 78.5, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { NAZMIR },
 						}),
 						q(54244, {	-- We Have Them Cornered
 							["sourceQuests"] = { 54224 },	-- The Battle of Zul'jan Ruins
 							["provider"] = { "n", 146921 },	-- Princess Talanji
 							["coord"] = { 39.3, 78.2, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { NAZMIR },
 						}),
 						q(54249, {	-- Zandalari Justice
 							["sourceQuests"] = { 54244 },	-- We Have Them Cornered
 							["provider"] = { "n", 146921 },	-- Princess Talanji
 							["coord"] = { 30.9, 51.9, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { NAZMIR },
 						}),
 						q(54269, {	-- None Shall Escape
 							["sourceQuests"] = { 54244 },	-- We Have Them Cornered
 							["provider"] = { "n", 147075 },	-- General Rakera
 							["coord"] = { 30.8, 51.8, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { NAZMIR },
 						}),
 						q(54270, {	-- Breaking Mirrors
 							["sourceQuests"] = { 54244 },	-- We Have Them Cornered
 							["provider"] = { "n", 147075 },	-- General Rakera
 							["coord"] = { 30.8, 51.8, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { NAZMIR },
 						}),
 						q(54271, {	-- Telaamon's Purge
 							["sourceQuests"] = {
@@ -1224,21 +1128,18 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 147233 },	-- Rokhan
 							["coord"] = { 31.2, 46.8, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { NAZMIR },
 						}),
 						q(54275, {	-- Parting Mists
 							["sourceQuests"] = { 54271 },	-- Telaamon's Purge
 							["provider"] = { "n", 147233 },	-- Rokhan
 							["coord"] = { 31.2, 46.8, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { NAZMIR },
 						}),
 						q(54280, {	-- Fly Out to Meet Them
 							["sourceQuests"] = { 54271 },	-- Telaamon's Purge
 							["provider"] = { "n", 147075 },	-- General Rakera
 							["coord"] = { 31.4, 32.0, NAZMIR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { NAZMIR },
 						}),
 						q(54282, {	-- Battle of Dazar'alor
 							["sourceQuests"] = { 54280 },	-- Fly Out to Meet Them
@@ -1289,21 +1190,18 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 150309 },	-- Baine Bloodhoof
 							["coord"] = { 87.3, 49.6, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54959, {	-- Under Lock and Keys
 							["sourceQuests"] = { 54958 },	-- Ships in the Night
 							["provider"] = { "n", 149842 },	-- Baine Bloodhoof
 							["coord"] = { 85.8, 45.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54997, {	-- Dead in the Water
 							["sourceQuests"] = { 54958 },	-- Ships in the Night
 							["provider"] = { "n", 149842 },	-- Baine Bloodhoof
 							["coord"] = { 85.8, 45.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54960, {	-- A Bitter Reunion
 							["sourceQuests"] = {
@@ -1313,7 +1211,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 149842 },	-- Baine Bloodhoof
 							["coord"] = { 85.8, 45.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
-							["maps"] = { TIRAGARDE_SOUND },
 						}),
 						q(54999, {	-- Under False Colors
 							["sourceQuests"] = { 54960 },	-- A Bitter Reunion
@@ -1321,7 +1218,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 150311 },	-- Thomas Zelling
 							["coord"] = { 76.3, 42.7, DUSTWALLOW_MARSH },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DUSTWALLOW_MARSH },
 						}),
 						q(55034, {	-- Under False Colors (Sylvanas Version)
 							["sourceQuests"] = {
@@ -1332,7 +1228,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 150311 },	-- Thomas Zelling
 							["coord"] = { 76.3, 42.7, DUSTWALLOW_MARSH },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DUSTWALLOW_MARSH },
 						}),
 						-- The Warfang Event (Baine's imprisoning)
 						q(55047, {	-- Securing Warfang Hold
@@ -1357,7 +1252,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 150690 },	-- Boss Mida
 							["coord"] = { 51.0, 32.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(55049, {	-- Communication Breakdown
 							["sourceQuests"] = {
@@ -1367,7 +1261,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 150690 },	-- Boss Mida
 							["coord"] = { 51.0, 32.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(55050, {	-- Tickets, Please?
 							["sourceQuests"] = {
@@ -1377,7 +1270,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 150691 },	-- Kazit
 							["coord"] = { 51.0, 32.8, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						q(55051, {	-- A Display of Power
 							["sourceQuests"] = {
@@ -1388,7 +1280,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 150690 },	-- Boss Mida
 							["coord"] = { 51.0, 32.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
-							["maps"] = { STORMSONG_VALLEY },
 						}),
 						-- Baine's Rescue
 						q(55778, {	-- Visions of Danger
@@ -1396,7 +1287,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 151848 },	-- Lor'themar Theron
 							["coord"] = { 48.5, 62.1, 1355 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1355 },	-- Nazjatar
 						}),
 						q(55781, {	-- Old Allies
 							["sourceQuests"] = { 55778 },	-- Visions of Danger
@@ -1404,7 +1294,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 151848 },	-- Lor'themar Theron
 							["coord"] = { 48.5, 62.1, 1355 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1355 },	-- Nazjatar
 						}),
 						q(55780, {	-- Old Allies (Sylvanas Version)
 							["sourceQuests"] = {
@@ -1415,7 +1304,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 151848 },	-- Lor'themar Theron
 							["coord"] = { 48.5, 62.1, 1355 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1355 },	-- Nazjatar
 						}),
 						q(55779, {	-- Stay of Execution
 							["sourceQuests"] = { 55781 },	-- Old Allies
@@ -1448,35 +1336,30 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 155789 },	-- Lor'themar Theron
 							["coord"] = { 50.2, 96.0, DAZARALOR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DAZARALOR },
 						}),
 						q(57088, {	-- This Ain't Mine
 							["sourceQuests"] = { 56496 },	-- The Eve of Battle
 							["provider"] = { "n", 155786 },	-- Varok Saurfang
 							["coord"] = { 54.1, 42.4, DUROTAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { DUROTAR },
 						}),
 						q(57090, {	-- Saving the Siege
 							["sourceQuests"] = { 57088 },	-- This Ain't Mine
 							["provider"] = { "n", 155786 },	-- Varok Saurfang
 							["coord"] = { 41.7, 55.7, 1535 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1535 },	-- Durotar (Scenario)
 						}),
 						q(57091, {	-- Already Among Us
 							["sourceQuests"] = { 57088 },	-- This Ain't Mine
 							["provider"] = { "n", 155786 },	-- Varok Saurfang
 							["coord"] = { 41.7, 55.7, 1535 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1535 },	-- Durotar (Scenario)
 						}),
 						q(57092, {	-- Strategic Deployment
 							["sourceQuests"] = { 57088 },	-- This Ain't Mine
 							["provider"] = { "n", 155786 },	-- Varok Saurfang
 							["coord"] = { 41.7, 55.7, 1535 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1535 },	-- Durotar (Scenario)
 						}),
 						q(57093, {	-- Before the Gates of Orgrimmar
 							["sourceQuests"] = {
@@ -1487,39 +1370,44 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 155786 },	-- Varok Saurfang
 							["coord"] = { 41.7, 55.7, 1535 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1535 },	-- Durotar (Scenario)
 						}),
 						q(57094, {	-- The Price of Victory
 							["sourceQuests"] = { 57093 },	-- Before the Gates of Orgrimmar
 							["provider"] = { "n", 155789 },	-- Lor'themar Theron
 							["coord"] = { 36.1, 64.1, 1535 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1535 },	-- Durotar (Scenario)
 						}),
 						q(57095, {	-- Old Soldier
 							["sourceQuests"] = { 57094 },	-- The Price of Victory
 							["altQuests"] = { 57152 },	-- Most Loyal (Sylvanas Version)
 							["provider"] = { "n", 155789 },	-- Lor'themar Theron
-							["coord"] = { 34.9, 60.1, 1535 },
+							["coord"] = { 34.9, 60.1, 1535 },	-- Durotar (Scenario)
 							["races"] = HORDE_ONLY,
 							["maps"] = {
 								1534,	-- Orgrimmar (Scenario)
-								1535,	-- Durotar (Scenario)
 							},
 						}),
-						q(57152, {	-- Most Loyal (Sylvanas Version)
-							["sourceQuests"] = {
-								57094,	-- The Price of Victory
-								55782,	-- Stay of Execution (Sylvanas Version)
-							},
-							["altQuests"] = { 57095 },	-- Old Soldier
-						--	["provider"] = { "n", 155789 },	-- Lor'themar Theron
-						--	["coord"] = { 34.9, 60.1, 1535 },
+						-- TODO: this ID is wrong...
+						-- q(57152, {	-- Most Loyal (Sylvanas Version)
+						-- 	["sourceQuests"] = {
+						-- 		57094,	-- The Price of Victory
+						-- 		55782,	-- Stay of Execution (Sylvanas Version)
+						-- 	},
+						-- 	["altQuests"] = { 57095 },	-- Old Soldier
+						-- --	["provider"] = { "n", 155789 },	-- Lor'themar Theron
+						-- --	["coord"] = { 34.9, 60.1, 1535 },
+						-- 	["races"] = HORDE_ONLY,
+						-- 	["maps"] = {
+						-- 		1534,	-- Orgrimmar (Scenario)
+						-- 		1535,	-- Durotar (Scenario)
+						-- 	},
+						-- }),
+						q(57152, {	-- Most Loyal
+							["altQuests"] = { 54109 },	-- Queen's Favor
+							["sourceQuests"] = { 57151 },	-- A Line in the Sand
+							["provider"] = { "n", 156425 },	-- Dark Ranger Lenara
+							["coord"] = { 50, 91.3, 1534 },
 							["races"] = HORDE_ONLY,
-							["maps"] = {
-								1534,	-- Orgrimmar (Scenario)
-								1535,	-- Durotar (Scenario)
-							},
 						}),
 
 						--	unsorted below this point
@@ -1536,28 +1424,24 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 146654 },	-- Lady Sylvanas Windrunner
 							["coord"] = { 48.3, 71.2, ORGRIMMAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { ORGRIMMAR },
 						}),
 						q(54100, {	-- A Way Out
 							["sourceQuests"] = { 54099 },	-- The High Overlord
 							["provider"] = { "n", 146654 },	-- Lady Sylvanas Windrunner
 							["coord"] = { 48.3, 71.0, ORGRIMMAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { ORGRIMMAR },
 						}),
 						q(54101, {	-- On Track
 							["sourceQuests"] = { 54100 },	-- A Way Out
 							["provider"] = { "n", 146010 },	-- Dark Ranger Lyana
 							["coord"] = { 30.5, 57.6, ELWYNN_FOREST },
 							["races"] = HORDE_ONLY,
-							["maps"] = { ELWYNN_FOREST },
 						}),
 						q(54102, {	-- Eastern Escape
 							["sourceQuests"] = { 54101 },	-- On Track
 							["provider"] = { "n", 146791 },	-- Dark Ranger
 							["coord"] = { 34.5, 63.3, ELWYNN_FOREST },
 							["races"] = HORDE_ONLY,
-							["maps"] = { ELWYNN_FOREST },
 						}),
 						q(54103, {	-- Corner Crossing
 							["sourceQuests"] = { 54102 },	-- Eastern Escape
@@ -1570,21 +1454,18 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 146937 },	-- Dark Ranger
 							["coord"] = { 25.9, 39.8, REDRIDGE_MOUNTAINS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { REDRIDGE_MOUNTAINS },
 						}),
 						q(54105, {	-- Ever Eastward
 							["sourceQuests"] = { 54104 },	-- Signs of Saurfang
 							["provider"] = { "n", 146937 },	-- Dark Ranger
 							["coord"] = { 29.0, 68.1, REDRIDGE_MOUNTAINS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { REDRIDGE_MOUNTAINS },
 						}),
 						q(54106, {	-- Tracking Tipoff
 							["sourceQuests"] = { 54105 },	-- Ever Eastward
 							["provider"] = { "n", 147210 },	-- Dark Ranger Lyana
 							["coord"] = { 80.6, 46.9, REDRIDGE_MOUNTAINS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { REDRIDGE_MOUNTAINS },
 						}),
 						q(54755, {	-- Not My Table
 							["sourceQuests"] = { 54106 },	-- Tracking Tipoff
@@ -1598,7 +1479,6 @@ _.ExpansionFeatures =
 							["altQuests"] = { 54107 },  -- Grim Tidings
 							["coord"] = { 81.4, 52.4, REDRIDGE_MOUNTAINS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { REDRIDGE_MOUNTAINS },
 						}),
 						q(54107, {	-- Grim Tidings
 							["sourceQuests"] = { 54106 },	-- Tracking Tipoff
@@ -1607,7 +1487,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 146012 },	-- Zekhan
 							["coord"] = { 81.4, 52.4, REDRIDGE_MOUNTAINS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { REDRIDGE_MOUNTAINS },
 						}),
 						q(54108, {	-- A Warrior's Death
 							["sourceQuests"] = { 54107 },	-- Grim Tidings
@@ -1615,7 +1494,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 147297 },	-- Zekhan
 							["coord"] = { 79.7, 74.7, SWAMP_OF_SORROWS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { SWAMP_OF_SORROWS },
 							["g"] = {
 								i(165791),	-- Worn Cloak
 							},
@@ -1626,7 +1504,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 146011 },	-- Varok Saurfang
 							["coord"] = { 80.8, 78.7, SWAMP_OF_SORROWS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { SWAMP_OF_SORROWS },
 						}),
 					--	TODO: Sylvanas Loyalist questline reported by Niixten in #errors, all needs to be completed - apparently there are various quests you can get based on choices you make along the way
 					--	all needs to be altQuested to the 'choice' quest since only one version of the campaign questline can be completed per character.  not sure if 'queen's favor' is the best quest to set as altQuests or if it should be an earlier one (i haven't done the campaign in a while)
@@ -1636,7 +1513,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.7, ZULDAZAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { ZULDAZAR },
 						}),
 						q(56833, {	-- Leaders of the Horde
 							["altQuests"] = { 54109 },	-- Queen's Favor
@@ -1644,7 +1520,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 156423 },	-- Lady Sylvanas Windrunner
 							["coord"] = { 48.5, 70.8, 1534 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1534 },
 						}),
 						q(57130, {	-- Traitors in Our Midst
 							["altQuests"] = { 54109 },	-- Queen's Favor
@@ -1652,7 +1527,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 156124 },	-- Eitrigg
 							["coord"] = { 74.1, 46.1, 1534 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1534 },
 						}),
 						q(57148, {	-- Siegebreakers
 							["altQuests"] = { 54109 },	-- Queen's Favor
@@ -1660,7 +1534,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 156440 },	-- Nathanos Blightcaller
 							["coord"] = { 50.4, 76.1, 1534 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1534 },
 						}),
 						q(57149, {	-- Propaganda Takedown
 							["altQuests"] = { 54109 },	-- Queen's Favor
@@ -1668,7 +1541,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 156440 },	-- Nathanos Blightcaller
 							["coord"] = { 50.4, 76.1, 1534 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1534 },
 						}),
 						q(57150, {	-- Militia
 							["altQuests"] = { 54109 },	-- Queen's Favor
@@ -1676,7 +1548,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 156440 },	-- Nathanos Blightcaller
 							["coord"] = { 50.4, 76.1, 1534 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1534 },
 						}),
 						q(57151, {	-- A Line in the Sand
 							["altQuests"] = { 54109 },	-- Queen's Favor
@@ -1688,15 +1559,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 156440 },	-- Nathanos Blightcaller
 							["coord"] = { 50.1, 91.3, 1534 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1534 },
-						}),
-						q(57152, {	-- Most Loyal
-							["altQuests"] = { 54109 },	-- Queen's Favor
-							["sourceQuests"] = { 57151 },	-- A Line in the Sand
-							["provider"] = { "n", 156425 },	-- Dark Ranger Lenara
-							["coord"] = { 50, 91.3, 1534 },
-							["races"] = HORDE_ONLY,
-							["maps"] = { 1534 },
 						}),
 						q(57147, {	-- Not My Warchief
 							["description"] = "Have to be Sylvanas Loyalist that escapes with Eitrigg",
@@ -1704,7 +1566,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 156124 },	-- Eitrigg
 							["coord"] = { 74.0,  46.0, 1534 },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1534 },
 						}),
 					}),
 				},
