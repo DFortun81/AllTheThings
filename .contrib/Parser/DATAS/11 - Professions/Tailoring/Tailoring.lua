@@ -5151,7 +5151,7 @@ profession(TAILORING, {
 			["requireSkill"] = TAILORING,
 			["description"] = "Upon finishing this quest, you will become a Mooncloth Tailor.",
 			["coord"] = { 66.5, 69.3, SHATTRATH_CITY },
-			["maps"] = { SHATTRATH_CITY, ZANGARMARSH },
+			["maps"] = { ZANGARMARSH },
 			["altQuests"] = {
 				10831,	-- Becoming a Mooncloth Tailor
 				10833,	-- Becoming a Shadoweave Tailor
@@ -5178,7 +5178,7 @@ profession(TAILORING, {
 			["requireSkill"] = TAILORING,
 			["description"] = "Upon finishing this quest, you will become a Shadoweave Tailor.",
 			["coord"] = { 66.6, 68.2, SHATTRATH_CITY },
-			["maps"] = { SHATTRATH_CITY, SHADOWMOON_VALLEY },
+			["maps"] = { SHADOWMOON_VALLEY },
 			["altQuests"] = {
 				10831,	-- Becoming a Mooncloth Tailor
 				10833,	-- Becoming a Shadoweave Tailor
@@ -5197,7 +5197,7 @@ profession(TAILORING, {
 			["requireSkill"] = TAILORING,
 			["description"] = "Upon finishing this quest, you will become a Spellfire Tailor.",
 			["coord"] = { 66.6, 68.4, SHATTRATH_CITY },
-			["maps"] = { SHATTRATH_CITY, NETHERSTORM },
+			["maps"] = { NETHERSTORM },
 			["altQuests"] = {
 				10831,	-- Becoming a Mooncloth Tailor
 				10833,	-- Becoming a Shadoweave Tailor

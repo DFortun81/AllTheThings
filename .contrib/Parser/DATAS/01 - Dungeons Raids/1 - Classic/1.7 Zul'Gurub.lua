@@ -31,7 +31,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19722, 1 },	-- Primal Hakkari Tabard
 						},
@@ -43,7 +42,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
 						},
@@ -55,7 +53,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19720, 1 },	-- Primal Hakkari Sash
 						},
@@ -67,7 +64,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19610),	-- Enchanted South Seas Kelp
 						},
@@ -77,7 +73,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8110,	-- Enchanted South Seas Kelp [Friendly]
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19611),	-- Enchanted South Seas Kelp
 						},
@@ -87,7 +82,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8111,	-- Enchanted South Seas Kelp [Honored]
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19612),	-- Enchanted South Seas Kelp
 						},
@@ -97,7 +91,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8112,	-- Enchanted South Seas Kelp [Revered]
 						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19613),	-- Pristine Enchanted South Seas Kelp
 						},
@@ -119,7 +112,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14905,		-- Falthir the Sightless
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19724, 1 },	-- Primal Hakkari Aegis
 						},
@@ -131,7 +123,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14905,		-- Falthir the Sightless
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19716, 1 },	-- Primal Hakkari Bindings
 						},
@@ -143,7 +134,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14905,		-- Falthir the Sightless
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19721, 1 },	-- Primal Hakkari Shawl
 						},
@@ -155,7 +145,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14905,		-- Falthir the Sightless
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19618),	-- Maelstrom's Tendril
 						},
@@ -165,7 +154,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8145,	-- The Maelstrom's Tendril [Friendly]
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19619),	-- Maelstrom's Tendril
 						},
@@ -175,7 +163,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8146,	-- The Maelstrom's Tendril [Honored]
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19620),	-- Maelstrom's Tendril
 						},
@@ -185,7 +172,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8147,	-- The Maelstrom's Tendril [Revered]
 						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19621),	-- Maelstrom's Wrath
 						},
@@ -207,7 +193,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19721, 1 },	-- Primal Hakkari Shawl
 						},
@@ -219,7 +204,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19723, 1 },	-- Primal Hakkari Kossack
 						},
@@ -231,7 +215,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19716, 1 },	-- Primal Hakkari Bindings
 						},
@@ -243,7 +226,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19598),	-- Pebble of Kajaro
 						},
@@ -253,7 +235,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8101,	-- The Pebble of Kajaro [Friendly]
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19599),	-- Pebble of Kajaro
 						},
@@ -263,7 +244,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8102,	-- The Pebble of Kajaro [Honored]
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19600),	-- Pebble of Kajaro
 						},
@@ -273,7 +253,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8103,	-- The Pebble of Kajaro [Revered]
 						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19601),	-- Jewel of Kajaro
 						},
@@ -295,7 +274,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19722, 1 },	-- Primal Hakkari Tabard
 						},
@@ -307,7 +285,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19716, 1 },	-- Primal Hakkari Bindings
 						},
@@ -319,7 +296,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19721, 1 },	-- Primal Hakkari Shawl
 						},
@@ -331,7 +307,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19579),	-- Heathen's Brand
 						},
@@ -341,7 +316,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8045,	-- The Heathen's Brand [Friendly]
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19585),	-- Heathen's Brand
 						},
@@ -351,7 +325,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8046,	-- The Heathen's Brand [Honored]
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19586),	-- Heathen's Brand
 						},
@@ -361,7 +334,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8047,	-- The Heathen's Brand [Revered]
 						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19588),	-- Hero's Brand
 						},
@@ -383,7 +355,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19724, 1 },	-- Primal Hakkari Aegis
 						},
@@ -395,7 +366,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
 						},
@@ -407,7 +377,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19720, 1 },	-- Primal Hakkari Sash
 						},
@@ -419,7 +388,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19591),	-- The Eye of Zuldazar
 						},
@@ -429,7 +397,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8049,	-- The Eye of Zuldazar [Friendly]
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19592),	-- The Eye of Zuldazar
 						},
@@ -439,7 +406,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8050,	-- The Eye of Zuldazar [Honored]
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19593),	-- The Eye of Zuldazar
 						},
@@ -449,7 +415,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8051,	-- The Eye of Zuldazar [Revered]
 						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19594),	-- The All-Seeing Eye of Zuldazar
 						},
@@ -471,7 +436,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14905,		-- Falthir the Sightless
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19719, 1 },	-- Primal Hakkari Girdle
 						},
@@ -483,7 +447,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14905,		-- Falthir the Sightless
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19724, 1 },	-- Primal Hakkari Aegis
 						},
@@ -495,7 +458,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14905,		-- Falthir the Sightless
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
 						},
@@ -507,7 +469,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14905,		-- Falthir the Sightless
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19614),	-- Zandalrian Shadow Talisman
 						},
@@ -517,7 +478,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8141,	-- Zandalrian Shadow Talisman [Friendly]
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19615),	-- Zandalrian Shadow Talisman
 						},
@@ -527,7 +487,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8142,	-- Zandalrian Shadow Talisman [Honored]
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19616),	-- Zandalrian Shadow Talisman
 						},
@@ -537,7 +496,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8143,	-- Zandalrian Shadow Talisman [Revered]
 						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19617),	-- Zandalrian Shadow Mastery Talisman
 						},
@@ -559,7 +517,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19722, 1 },	-- Primal Hakkari Tabard
 						},
@@ -571,7 +528,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
 						},
@@ -583,7 +539,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19719, 1 },	-- Primal Hakkari Girdle
 						},
@@ -595,7 +550,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19606),	-- Vision of Voodress
 						},
@@ -605,7 +559,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8116,	-- Vision of Voodress [Friendly]
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19607),	-- Vision of Voodress
 						},
@@ -615,7 +568,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8117,	-- Vision of Voodress [Honored]
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19608),	-- Vision of Voodress
 						},
@@ -625,7 +577,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8118,	-- Vision of Voodress [Revered]
 						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19609),	-- Unmarred Vision of Voodress
 						},
@@ -647,7 +598,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19720, 1 },	-- Primal Hakkari Sash
 						},
@@ -659,7 +609,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19723, 1 },	-- Primal Hakkari Kossack
 						},
@@ -671,7 +620,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
 						},
@@ -683,7 +631,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19602),	-- Kezan's Taint
 						},
@@ -693,7 +640,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8106,	-- Kezan's Taint [Friendly]
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19603),	-- Kezan's Taint
 						},
@@ -703,7 +649,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8107,	-- Kezan's Taint [Honored]
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19604),	-- Kezan's Taint
 						},
@@ -713,7 +658,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8108,	-- Kezan's Taint [Revered]
 						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19605),	-- Kezan's Unstoppable Taint
 						},
@@ -735,7 +679,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19723, 1 },	-- Primal Hakkari Kossack
 						},
@@ -747,7 +690,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
 						},
@@ -759,7 +701,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["cost"] = {
 							{ "i", 19719, 1 },	-- Primal Hakkari Girdle
 						},
@@ -771,7 +712,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["minReputation"] = { 270, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19574),	-- Strength of Mugamba
 						},
@@ -781,7 +721,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8041,	-- Strength of Mount Mugamba [Friendly]
 						["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19575),	-- Strength of Mugamba
 						},
@@ -791,7 +730,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8042,	-- Strength of Mount Mugamba [Honored]
 						["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19576),	-- Strength of Mugamba
 						},
@@ -801,7 +739,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 						["sourceQuest"] = 8043,	-- Strength of Mount Mugamba [Revered]
 						["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe, Exalted.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
-						["maps"] = { STRANGLETHORN_VALE },
 						["groups"] = {
 							i(19577),	-- Rage of Mugamba
 						},
@@ -811,7 +748,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 					["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
 					["description"] = "Costs 1 bijou of any color per turn in. There are 9 colors and 8 (+1 for Shaman/Paladin) classes in the game, as such, some guilds assign specific classes specific color bijous and treat one as a wild card.",
 					["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
-					["maps"] = { STRANGLETHORN_VALE },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19708, 1 },	-- Blue Hakkari Bijou
@@ -832,7 +768,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 				q(8201, {	-- A Collection of Heads
 					["qg"] = 14910,	-- Exzhal <Servitor of Rastakhan>
 					["coord"] = { 15.3, 15.5, STRANGLETHORN_VALE },
-					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gurubashi Head Collection
@@ -853,7 +788,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 					["minReputation"] = { 270, HONORED },	-- Zandalari Tribe, Honored.
 					["description"] = "No. Stop. WHAT ARE YOU DOING! Do not waste your token on this FOR THE LOVE OF GOD!\n - Crieve",
 					["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
-					["maps"] = { STRANGLETHORN_VALE },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19858, 1 },	-- Zandalar Honor Token
@@ -866,7 +800,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 				q(8238, {	-- Gurubashi, Vilebranch, and Witherbark Coins
 					["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
 					["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
-					["maps"] = { STRANGLETHORN_VALE },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19701, 1 },	-- Gurubashi Coin
@@ -881,7 +814,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 				q(8239, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
 					["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
 					["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
-					["maps"] = { STRANGLETHORN_VALE },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19704, 1 },	-- Sandfury Coin
@@ -897,7 +829,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 					["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 					["minReputation"] = { 270, EXALTED },	-- Zandalari Tribe
 					["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
-					["maps"] = { STRANGLETHORN_VALE },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19858, 15 },	-- Zandalar Honor Token
@@ -957,7 +888,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 					["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 					["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
 					["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
-					["maps"] = { STRANGLETHORN_VALE },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19858, 1 },	-- Zandalar Honor Token
@@ -972,7 +902,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 				q(8195, {	-- Zulian, Razzashi, and Hakkari Coins
 					["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
 					["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
-					["maps"] = { STRANGLETHORN_VALE },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19698, 1 },	-- Zulian Coin
@@ -988,7 +917,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FOUR, {
 			n(VENDORS, {
 				n(14921, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 					["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
-					["maps"] = { STRANGLETHORN_VALE },
 					["groups"] = {
 						applyclassicphase(PHASE_FIVE, i(20757)),	-- Formula: Brilliant Mana Oil
 						applyclassicphase(PHASE_FIVE, i(20756)),	-- Formula: Brilliant Wizard Oil

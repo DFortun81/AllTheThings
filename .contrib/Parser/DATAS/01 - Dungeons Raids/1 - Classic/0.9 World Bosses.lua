@@ -9,7 +9,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 		["groups"] = {
 			n(6109, {	-- Azuregos
 				["coord"] = { 53.3, 80.4, AZSHARA },
-				["maps"] = { AZSHARA },
 				["isRaid"] = true,
 				-- #if ANYCLASSIC
 				["modelScale"] = 6.0,
@@ -40,12 +39,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 					{ 45.4, 39.6, DUSKWOOD },
 					{ 94.2, 35.7, ASHENVALE },
 				},
-				["maps"] = {
-					ASHENVALE,
-					DUSKWOOD,
-					FERALAS,
-					THE_HINTERLANDS,
-				},
 				["crs"] = {
 					14889,	-- Emeriss
 					14888,	-- Lethon
@@ -67,7 +60,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 							["qg"] = 11832,	-- Keeper Remulos
 							["sourceQuest"] = 8446,	-- Shrouded in Nightmare
 							["coord"] = { 36.18, 41.79, MOONGLADE },
-							["maps"] = { MOONGLADE },
 							["lvl"] = 60,
 							["groups"] = {
 								i(20600),	-- Malfurion's Signet Ring
@@ -160,7 +152,6 @@ _.Instances = { tier(CLASSIC_TIER, {
 				["crs"] = { 12397 },	-- Lord Kazzak
 				-- #endif
 				["coord"] = { 36.6, 75.8, BLASTED_LANDS },
-				["maps"] = { BLASTED_LANDS },
 				["modelScale"] = 6.0,
 				["isRaid"] = true,
 				-- #if ANYCLASSIC

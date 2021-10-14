@@ -73,7 +73,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 117305 },	-- Brewer Almai
 							["classes"] = { MONK },
 							["coord"] = { 53.6, 53.3, BROKEN_SHORE },
-							["maps"] = { BROKEN_SHORE },
 						}),
 						q(41911, {	-- Amaranthine Hops
 							["sourceQuests"] = { 41039 },	-- Stolen Knowledge
@@ -218,14 +217,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 104784 },	-- Taran Zhu
 							["classes"] = { MONK },
 							["coord"] = { 38.9, 25.1, THE_JADE_FOREST },
-							["maps"] = { THE_JADE_FOREST },
 						}),
 						q(45574, {	-- Fel Ingredients
 							["sourceQuests"] = { 45459 },	-- Storming the Legion
 							["provider"] = { "n", 117305 },	-- Brewmaster Almai
 							["classes"] = { MONK },
 							["coord"] = { 53.6, 53.3, BROKEN_SHORE },
-							["maps"] = { BROKEN_SHORE },
 						}),
 						q(41910, {	-- Freya's Spring
 							["sourceQuests"] = { 41039 },	-- Stolen Knowledge
@@ -286,7 +283,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 117305 },	-- Brewer Almai
 							["classes"] = { MONK },
 							["coord"] = { 53.6, 53.4, BROKEN_SHORE },
-							["maps"] = { BROKEN_SHORE },
 						}),
 						q(32442, {	-- Impending Danger
 							["sourceQuests"] = {
@@ -313,7 +309,6 @@ _.ExpansionFeatures =
 							["classes"] = { MONK },
 							["coord"] = { 54.9, 32.8, 249 },	-- Uldum
 							["maps"] = {
-								249,	-- Uldum
 								716,	-- Skywall (The Thundering Heavens scenario)
 							},
 							["g"] = {
@@ -360,7 +355,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 118214 },	-- Yiska
 							["classes"] = { MONK },
 							["coord"] = { 44.9, 62.0, BROKEN_SHORE },
-							["maps"] = { BROKEN_SHORE },
 						}),
 						q(44238, {	-- Meditations on Fate
 							["provider"] = { "n", 110817 },	-- Yushi
@@ -371,7 +365,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 105072 },	-- Angus Ironfist
 							["classes"] = { MONK },
 							["coord"] = { 64.2, 57.0, STORMHEIM },	--(approx location based on where previous quest is turned in)
-							["maps"] = { STORMHEIM },
 						}),
 						q(45442, {	-- Not Felling Well
 							["sourceQuests"] = { 46320 },	-- Hope For a Cure
@@ -407,7 +400,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 105088 },	-- Sylara Steelsong
 							["classes"] = { MONK },
 							["coord"] = { 64.2, 57.0, STORMHEIM },	--(approx location based on where previous quest is turned in)
-							["maps"] = { STORMHEIM },
 						}),
 						q(41733, {	-- Rebuilding the Order
 						--	TODO: gives crit 3 of achievementID 10461, figure out best way to display this achievement.  some order halls have the crit as a reward but that's not how we would typically display achieve criteria granted by quests (would normally be in achievement header linked via SQs) - but since this is a shared achievement with different SQs for each class, maybe an exception to the rule is okay?  shrug emoji
@@ -415,7 +407,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 104744 },	-- High Elder Cloudfall
 							["classes"] = { MONK },
 							["coord"] = { 45.4, 25.0, THE_JADE_FOREST },
-							["maps"] = { THE_JADE_FOREST },
 						}),
 						q(41905, {	-- Report from Tian Monastery
 							["sourceQuests"] = { 42191 }, -- Tech It Up a Notch
@@ -458,7 +449,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 104745 },	-- Instructor Myang
 							["classes"] = { MONK },
 							["coord"] = { 38.3, 25.8, THE_JADE_FOREST },
-							["maps"] = { THE_JADE_FOREST },
 						}),
 						q(46344, {	-- Smelly's Luckydo
 							["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
@@ -478,7 +468,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 102843 },	-- Aegira
 							["classes"] = { MONK },
 							["coord"] = { 62.1, 20.2, STORMHEIM },
-							["maps"] = { STORMHEIM },
 						}),
 						q(41087, {	-- Storm Brew
 							["sourceQuests"] = { 32442 },	-- Impending Danger
@@ -505,7 +494,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 104784 },	-- Taran Zhu
 							["classes"] = { MONK },
 							["coord"] = { 38.9, 25.1, THE_JADE_FOREST },
-							["maps"] = { THE_JADE_FOREST },
 						}),
 						q(45459, {	-- Storming the Legion
 							["sourceQuests"] = { 45404 },	-- Panic at the Brewery
@@ -556,7 +544,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 104850 },	-- The Monkey King
 							["classes"] = { MONK },
 							["coord"] = { 42.0, 25.5, THE_JADE_FOREST },
-							["maps"] = { THE_JADE_FOREST },
 						}),
 						q(41849, {	-- The Iron Fist
 							["sourceQuests"] = { 43054 },	-- An Ample Stockpile
@@ -575,7 +562,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 105045 },	-- Angus Ironfist
 							["classes"] = { MONK },
 							["coord"] = { 62.9, 59.5, STORMHEIM },
-							["maps"] = { STORMHEIM },
 						}),
 						q(41038, {	-- The Mead Master
 							["sourceQuests"] = {
@@ -592,28 +578,24 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 109187 },	-- The Monkey King
 							["classes"] = { MONK },
 							["coord"] = { 55.3, 58.1, THE_JADE_FOREST },
-							["maps"] = { THE_JADE_FOREST },
 						}),
 						q(42768, {	-- The Riddle of Purity
 							["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
 							["provider"] = { "n", 108700 },	-- The Monkey King
 							["classes"] = { MONK },
 							["coord"] = { 41.6, 27.4, THE_JADE_FOREST },
-							["maps"] = { THE_JADE_FOREST },
 						}),
 						q(42766, {	-- The Riddle of the Barrel
 							["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
 							["provider"] = { "n", 108700 },	-- The Monkey King
 							["classes"] = { MONK },
 							["coord"] = { 41.6, 27.4, THE_JADE_FOREST },
-							["maps"] = { THE_JADE_FOREST },
 						}),
 						q(42767, {	-- The Riddle of the Land
 							["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
 							["provider"] = { "n", 108700 },	-- The Monkey King
 							["classes"] = { MONK },
 							["coord"] = { 41.6, 27.4, THE_JADE_FOREST },
-							["maps"] = { THE_JADE_FOREST },
 						}),
 						q(46348, {	-- The River to Ban-Lu
 							["sourceQuests"] = { 46347 },	-- Clean-up on Aisle Sha
@@ -645,7 +627,6 @@ _.ExpansionFeatures =
 							["classes"] = { MONK },
 							["coord"] = { 55.4, 58.3, THE_JADE_FOREST },
 							["maps"] = {
-								THE_JADE_FOREST,
 								791,	-- Temple of the Jade Serpent (Crisis in the Temple scenario)
 								792,	-- The Scrollkeeper's Sanctum (Crisis in the Temple scenario)
 							},
@@ -685,7 +666,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 47684 },	-- King Phaoris
 							["classes"] = { MONK },
 							["coord"] = { 54.9, 32.8, 249 },
-							["maps"] = { 249 },	-- Uldum
 						}),
 						q(41945, {	-- Tianji of the Ox
 							["sourceQuests"] = {	-- technically "Rise, Champions" but you have to do li li/chen to turn in rise, and li li/chen have rise as a SQ
@@ -716,7 +696,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 105072 },	-- Angus Ironfist
 							["classes"] = { MONK },
 							["coord"] = { 64.2, 57.0, STORMHEIM },	--(approx location based on where previous quest is turned in)
-							["maps"] = { STORMHEIM },
 						}),
 
 						--[[

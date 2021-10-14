@@ -34,7 +34,6 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["qg"] = 23761,	-- Prigmon
 						["sourceQuest"] = 11164,	-- Tuskin' Raiders
 						["coord"] = { 71.0, 68.9, GHOSTLANDS },
-						["maps"] = { GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif
@@ -50,7 +49,6 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["qg"] = 23559,	-- Budd
 						["sourceQuest"] = 11166,	-- X Marks... Your Doom!
 						["coord"] = { 70.3, 67.8, GHOSTLANDS },
-						["maps"] = { GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif
@@ -66,7 +64,6 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 					q(11130, {	-- Oooh, Shinies!
 						["qg"] = 19227,	-- Griftah (Shattrath)
 						["coord"] = { 65.6, 68.8, SHATTRATH_CITY },
-						["maps"] = { SHATTRATH_CITY },
 						["cost"] = {
 							{ "i", 33010, 1 },	-- Griftah's Note
 						},
@@ -94,7 +91,6 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["qg"] = 23559,	-- Budd
 						["sourceQuest"] = 11130,	-- Oooh, Shinies!
 						["coord"] = { 70.3, 67.8, GHOSTLANDS },
-						["maps"] = { GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif
@@ -110,7 +106,6 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["qg"] = 23761,	-- Prigmon
 						["sourceQuest"] = 11130,	-- Oooh, Shinies!
 						["coord"] = { 71.0, 68.9, GHOSTLANDS },
-						["maps"] = { GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif
@@ -138,7 +133,6 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["qg"] = 23858,	-- Donna Brascoe
 						["sourceQuest"] = 11178,	-- Blood of the Warlord
 						["coord"] = { 70.5, 68.3, GHOSTLANDS },
-						["maps"] = { GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif
@@ -152,7 +146,6 @@ root("Instances", tier(TBC_TIER, applylegacyclassicphase(TBC_PHASE_FOUR, {
 						["qg"] = 23559,	-- Budd
 						["sourceQuest"] = 11132,	-- Promises, Promises...
 						["coord"] = { 70.3, 67.8, GHOSTLANDS },
-						["maps"] = { GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
 						-- #endif

@@ -841,7 +841,6 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 52490 },	-- Behind Enemy Boats
 							["coord"] = { 36.8, 52.4, 1156 },	-- The Great Sea
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1156 },	-- The Great Sea (scenario map)
 						}),
 						q(52492, {	-- The Wildhammer Specialty
 							["sourceQuests"] = {
@@ -862,14 +861,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 142228 },	-- Shandris Feathermoon
 							["coord"] = { 41.7, 56.9, 1156 },	-- The Great Sea
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1156 },	-- The Great Sea (scenario map)
 						}),
 						q(52494, {	-- Foul Crystals for Foul People
 							["sourceQuests"] = { 52492 },	-- The Wildhammer Specialty
 							["provider"] = { "n", 142228 },	-- Shandris Feathermoon
 							["coord"] = { 41.7, 56.9, 1156 },	-- The Great Sea
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1156 },	-- The Great Sea (scenario map)
 						}),
 						q(52495, {	-- Ending the San'layn Threat
 							["sourceQuests"] = {
@@ -879,7 +876,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 142232 },	-- Shandris Feathermoon
 							["coord"] = { 41.6, 55.3, 1156 },	-- The Great Sea
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1156 },	-- The Great Sea (scenario map)
 						}),
 						q(52496, {	-- A Clean Escape
 							["sourceQuests"] = { 52495 },	-- Ending the San'layn Threat
@@ -995,8 +991,6 @@ _.ExpansionFeatures =
 						q(53098, {	-- Champion: Shandris Feathermoon
 							["provider"] = { "n", 141291 },	-- Shandris Feathermoon
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { STORMWIND_CITY },
-							-- ^This puts just this quest in SW.  It looks weird without context, but the only alternative I can think of is attaching the SW map at the very beginning of the achievement with the Boralus map, which would list the entirety of Ready for War in SW, which doesn't make much sense.
 							["coord"] = { 85.7, 31.7, STORMWIND_CITY },
 							["sourceQuests"] = { 52790 },	-- An End to the Killing
 							["lvl"] = 120,
@@ -1505,7 +1499,6 @@ _.ExpansionFeatures =
 							},
 							["coord"] = { 40.2, 55.2, 1355 },	-- Nazjatar
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1355 },	-- Nazjatar
 							["lvl"] = 120,
 							["provider"] = { "n", 150101 },	-- Lady Jaina Proudmoore
 						}),
@@ -1514,7 +1507,6 @@ _.ExpansionFeatures =
 							["coord"] = { 85.7, 31.7, STORMWIND_CITY },
 							["races"] = ALLIANCE_ONLY,
 							["maps"] = {
-								STORMWIND_CITY,
 								1479,	-- Baine Rescue (Scenario)
 							},
 							["lvl"] = 120,
@@ -1526,7 +1518,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 135614 },	-- Master Mathias Shaw
 							["coord"] = { 70.5, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { BORALUS },
 							["lvl"] = 120,
 						}),
 						q(56719, {	-- This Ain't Mine
@@ -1534,7 +1525,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 155784 },	-- Anduin Wrynn
 							["coord"] = { 54.0, 42.6, DUROTAR },
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { DUROTAR },
 							["lvl"] = 120,
 						}),
 						q(56979, {	-- Saving the Siege
@@ -1542,7 +1532,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 155784 },	-- Anduin Wrynn
 							["coord"] = { 41.7, 56.2, 1535 },	-- Durotar (instanced version)
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1535 },	-- Durotar (instanced version)
 							["lvl"] = 120,
 						}),
 						q(56980, {	-- Already Among Us
@@ -1550,7 +1539,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 155784 },	-- Anduin Wrynn
 							["coord"] = { 41.7, 56.2, 1535 },	-- Durotar (instanced version)
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1535 },	-- Durotar (instanced version)
 							["lvl"] = 120,
 						}),
 						q(56981, {	-- Strategic Deployment
@@ -1558,7 +1546,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 155784 },	-- Anduin Wrynn
 							["coord"] = { 41.7, 56.2, 1535 },	-- Durotar (instanced version)
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1535 },	-- Durotar (instanced version)
 							["lvl"] = 120,
 						}),
 						q(56982, {	-- Before the Gates of Orgrimmar
@@ -1570,7 +1557,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 155784 },	-- Anduin Wrynn
 							["coord"] = { 41.7, 56.2, 1535 },	-- Durotar (instanced version)
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1535 },	-- Durotar (instanced version)
 							["lvl"] = 120,
 						}),
 						q(56993, {	-- The Price of Victory
@@ -1578,7 +1564,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 155785 },	-- Lady Jaina Proudmoore
 							["coord"] = { 36.0, 64.0, 1535 },	-- Durotar (instanced version)
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1535 },	-- Durotar (instanced version)
 							["lvl"] = 120,
 						}),
 						q(57002, {	-- Old Soldier
@@ -1586,7 +1571,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 155785 },	-- Lady Jaina Proudmoore
 							["coord"] = { 36.0, 64.0, 1535 },	-- Durotar (instanced version)
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1535 },	-- Durotar (instanced version)
 							["lvl"] = 120,
 							["g"] = {
 								title(412),	-- Veteran of the Fourth War

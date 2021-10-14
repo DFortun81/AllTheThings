@@ -47,13 +47,11 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17841,	-- Ysiel Windsinger
 					["coord"] = { 78.4, 62, ZANGARMARSH },
 					["timeline"] = { "added 4.3.0.14732" },
-					["maps"] = { ZANGARMARSH },
 					["lvl"] = lvlsquish(67, 20, 67),
 				}),
 				q(9763, bubbleDown({ ["timeline"] = { "removed 4.3.0.14732" } }, {	-- The Warlord's Hideout
 					["qg"] = 17884,	-- Watcher Jhang
 					["coord"] = { 52.3, 36.0, ZANGARMARSH },
-					["maps"] = { ZANGARMARSH },
 					["lvl"] = lvlsquish(67, 20, 67),
 					["groups"] = {
 						objective(1, {	-- Warlord Kalithresh slain
@@ -72,7 +70,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						10666,	-- The Lexicon Demonica
 					},
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
-					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(67, 20, 67),
 					["groups"] = {
 						objective(1, {	-- 0/1 Vial of Underworld Loam
