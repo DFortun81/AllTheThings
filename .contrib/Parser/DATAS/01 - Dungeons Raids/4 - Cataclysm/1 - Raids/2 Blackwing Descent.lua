@@ -111,7 +111,7 @@ _.Instances = { tier(CATA_TIER, {
 						["creatureID"] = 43296,
 						["groups"] = {
 							ach(5309),	-- Full of Sound and Fury
-							i(59314),	-- Finkle's Mixer Upper
+							i(59314),	-- Pip's Solution Agitator
 							i(59311),	-- Burden of Mortality
 							i(59310),	-- Chaos Beast Bracers
 							i(59355),	-- Chimaeron Armguards
@@ -119,7 +119,7 @@ _.Instances = { tier(CATA_TIER, {
 							i(59313),	-- Brackish Gloves
 							i(59223),	-- Double Attack Handguards
 							i(59225),	-- Plated Fists of Provocation
-							i(59234),	-- Einhorn's Galoshes
+							i(59234),	-- Quickstep Galoshes
 							i(59221),	-- Massacre Treads
 							i(59233),	-- Bile-O-Tron Nut
 							i(59224),	-- Heart of Rage
@@ -244,7 +244,7 @@ _.Instances = { tier(CATA_TIER, {
 						["groups"] = {
 							ach(5115),	-- Heroic: Chimaeron
 							ach(5309),	-- Full of Sound and Fury
-							i(65064),	-- Finkle's Mixer Upper
+							i(65064),	-- Pip's Solution Agitator
 							i(65067),	-- Burden of Mortality
 							i(65068),	-- Chaos Beast Bracers
 							i(65028),	-- Chimaeron Armguards
@@ -252,7 +252,7 @@ _.Instances = { tier(CATA_TIER, {
 							i(65065),	-- Brackish Gloves
 							i(65073),	-- Double Attack Handguards
 							i(65071),	-- Plated Fists of Provocation
-							i(65069),	-- Einhorn's Galoshes
+							i(65069),	-- Quickstep Galoshes
 							i(65075),	-- Massacre Treads
 							i(65070),	-- Bile-O-Tron Nut
 							i(65072),	-- Heart of Rage

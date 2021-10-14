@@ -587,7 +587,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 						["timeline"] = REMOVED_WITH_CATA,
 						["classes"] = { PRIEST },
 					}),
-					i(18803),	-- Finkle's Lava Dredger
+					i(18803),	-- Hyperthermically Insulated Lava Dredger
 					i(18805),	-- Core Hound Tooth
 					i(19139),	-- Fireguard Shoulders
 					i(18810),	-- Wild Growth Spaulders

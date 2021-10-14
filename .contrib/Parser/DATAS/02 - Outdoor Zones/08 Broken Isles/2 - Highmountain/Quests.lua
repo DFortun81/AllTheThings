@@ -1063,7 +1063,6 @@ _.Zones =
 				q(38787),	-- The Legend of Rethu Ironhorn
 				q(44671),	-- The Muscle
 				q(41192),	-- The Right Path
-				q(42401),	-- The Scent of Magic
 				q(44055),	-- They Have A Pitlord
 				q(42110),	-- To the Summit!
 				q(44035),	-- Torrentius

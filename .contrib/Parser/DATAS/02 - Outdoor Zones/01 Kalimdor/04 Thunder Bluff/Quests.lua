@@ -335,6 +335,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(26397, {	-- Walk With The Earth Mother
+					["sourceQuests"] = { 24540 },	-- War Dance
 					["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
 					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
 					["races"] = { TAUREN },

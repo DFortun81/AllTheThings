@@ -120,7 +120,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 						}),
 						q(46237, {	-- Bloodbringer's Missive
-							["sourceQuests"] = { 46253 },	-- Pillars of Creation
+							["sourceQuests"] = { 46246 },	-- Strike Them Down
 							["classes"] = { WARLOCK },
 							["coord"] = { 43.9, 63.2, BROKEN_SHORE },
 							["provider"] = { "n", 117622 },	-- Elithys Firestorm
