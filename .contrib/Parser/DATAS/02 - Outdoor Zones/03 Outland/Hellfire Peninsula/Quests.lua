@@ -677,7 +677,6 @@ _.Zones =
 					["sourceQuest"] = 9438,	-- Messenger to Thrall
 					["coord"] = { 31.6, 37.8, ORGRIMMAR },
 					["timeline"] = { "removed 4.0.3.10000" },
-					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(60, 10, 60),
 					-- #if BEFORE 4.0.3.10000
@@ -2156,7 +2155,6 @@ _.Zones =
 					["qg"] = 16841,	-- Watch Commander Relthorn Netherwane
 					["coord"] = { 54.7, 50.5, BLASTED_LANDS },
 					["timeline"] = { "removed 6.0.3.10000" },
-					["maps"] = { BLASTED_LANDS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(58, 10, 58),

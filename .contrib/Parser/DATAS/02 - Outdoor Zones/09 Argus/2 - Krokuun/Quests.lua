@@ -239,9 +239,8 @@ _.Zones =
 					q(47224, {	-- The Vindicaar
 						["sourceQuests"] = { 47223 },	-- Light's Exodus
 						["provider"] = { "n", 120977 },	-- Prophet Velen
-						["coord"] = { 34.0, 65.1, 891 },
+						["coord"] = { 34.0, 65.1, 891 },	-- Azuremyst Isle (introductory scenario)
 						["maps"] = {
-							891,	-- Azuremyst Isle (introductory scenario)
 							892,	-- The Exodar (introductory scenario)
 							893,	-- The Vindicaar (introductory scenario)
 							894,	-- The Vindicaar (introductory scenario)

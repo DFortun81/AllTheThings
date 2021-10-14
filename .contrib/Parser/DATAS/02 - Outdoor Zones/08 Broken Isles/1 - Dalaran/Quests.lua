@@ -413,7 +413,6 @@ _.Zones =
 						{ 52.2, 19.6, LEGION_DALARAN },
 						{ 85.2, 50.1, HELLFIRE_PENINSULA },
 					},
-					["maps"] = { HELLFIRE_PENINSULA },
 					["classes"] = {
 						DEATHKNIGHT,	-- Blood
 						DEMONHUNTER,	-- Vengeance
@@ -689,7 +688,7 @@ _.Zones =
 				q(44547, {	-- Isle Hopping
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is automatically offered after you find your second Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
 						43349,	-- The Aegis of Aggramar
 						42213,	-- Eye of Azshara: The Tidestone of Golganneth
@@ -768,7 +767,7 @@ _.Zones =
 				q(44549, {	-- Master of the Isles
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is automatically offered after you find your fourth Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
 						43349,	-- The Aegis of Aggramar
 						42213,	-- Eye of Azshara: The Tidestone of Golganneth
@@ -830,12 +829,12 @@ _.Zones =
 				}),
 				q(44545, {	-- Pressing the Assault
 					["isBreadcrumb"] = true,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
 						43349,	-- The Aegis of Aggramar
 						42213,	-- Eye of Azshara: The Tidestone of Golganneth
 						40890,	-- The Tears of Elune
-					},	
+					},
 					["description"] = "This quest is automatically offered after you find your first Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
 				}),
 				q(48375, {	-- Primal Obliterum
@@ -921,7 +920,7 @@ _.Zones =
 				q(44548, {	-- Scouring What Remains
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is automatically offered after you find your third Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
 						43349,	-- The Aegis of Aggramar
 						42213,	-- Eye of Azshara: The Tidestone of Golganneth

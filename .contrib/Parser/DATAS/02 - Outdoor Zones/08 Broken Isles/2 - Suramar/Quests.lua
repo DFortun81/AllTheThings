@@ -1815,7 +1815,6 @@ _.Zones =
 					["sourceQuest"] = 45265,	-- Feeding the Rebellion
 				}),
 				q(44874, {	-- Unbeleyvable
-					["maps"] = { AZSUNA },
 					["coord"] = { 59.8, 14.0, AZSUNA },
 					["provider"] = { "n", 115693 },	-- Arcanist Valtrois
 					["sourceQuest"] = 44873,	-- Oculeth Ex Machina
