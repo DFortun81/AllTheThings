@@ -125,7 +125,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 44215,	-- One More Thing...
 						}),
 						q(41920, {	-- A Matter of Finesse
-							["maps"] = { LEGION_DALARAN },
 							["coord"] = { 51.6, 70.4, LEGION_DALARAN },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 98102 },	-- Valeera Sanguinar
@@ -288,7 +287,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 42503,	-- Codebreaker
 						}),
 						q(41921, {	-- Closing In
-							["maps"] = { LEGION_THE_UNDERBELLY },
 							["coord"] = { 67.9, 63.1, LEGION_THE_UNDERBELLY },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 98102 },	-- Valeera Sanguinar
@@ -327,7 +325,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 44177,	-- Dark Secrets and Shady Deals
 						}),
 						q(44177, {	-- Dark Secrets and Shady Deals
-							["maps"] = { STORMHEIM },
 							["coord"] = { 77.2, 55.0, STORMHEIM },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
@@ -352,14 +349,12 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 40950,	-- Honoring Success
 						}),
 						q(46103, {	-- Dread Infiltrators
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 45.0, 64.0, BROKEN_SHORE },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 119259 },	-- Apothecary Keever
 							["sourceQuest"] = 46246,	-- Strike Them Down
 						}),
 						q(45835, {	-- False Orders (A)
-							["maps"] = { AZSUNA },
 							["coord"] = { 57.7, 63.5, AZSUNA },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 119821 },	-- Tess Graymane
@@ -367,7 +362,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 45833,	-- The Pirate's Bay
 						}),
 						q(46324, {	-- False Orders (H)
-							--TBD: ["maps"] = { },
 							--TBD: ["coord"] = { },
 							["classes"] = { ROGUE },
 							--TBD: ["provider"] = { "n", xxxxx },
@@ -381,7 +375,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 43841,	-- Convincin' Old Yancey
 						}),
 						q(41924, {	-- Fangs of the Devourer
-							["maps"] = { LEGION_THE_UNDERBELLY },
 							["coord"] = { 67.9, 63.1, LEGION_THE_UNDERBELLY },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 105464 },	-- Val'zuun
@@ -395,7 +388,6 @@ _.ExpansionFeatures =
 						}),
 						q(45848, {	-- Fit For a Pirate
 							["coord"] = { 57.7, 63.5, AZSUNA },
-							["maps"] = { AZSUNA },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 118126 },	-- Crackers
 							["sourceQuests"] = {
@@ -508,7 +500,6 @@ _.ExpansionFeatures =
 							["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 						}),
 						q(45836, {	-- Jorach's Calling (A)
-							["maps"] = { AZSUNA },
 							["classes"] = { ROGUE },
 							["coord"] = { 57.6, 63.4, AZSUNA },
 							["races"] = ALLIANCE_ONLY,
@@ -516,7 +507,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 45848,	-- Fit For a Pirate
 						}),
 						q(46326, {	-- Jorach's Calling (H)
-							["maps"] = { AZSUNA },
 							["classes"] = { ROGUE },
 							["coord"] = { 57.6, 63.4, AZSUNA },
 							["races"] = HORDE_ONLY,
@@ -533,7 +523,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 40996,	-- Delegation
 						}),
 						q(45073, {	-- Loot and Plunder!
-							["maps"] = { AZSUNA },
 							["coord"] = { 57.7, 63.6, AZSUNA },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 118125 },	-- Fleet Admiral Tethys
@@ -559,7 +548,6 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(46260, {	-- Meld Into the Shadows (A)
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 76.9, 39.8, BROKEN_SHORE },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { ROGUE },
@@ -567,7 +555,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 45628,	-- This Time, Leave a Trail
 						}),
 						q(46827, {	-- Meld Into the Shadows (H)
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 76.9, 39.8, BROKEN_SHORE },
 							["races"] = HORDE_ONLY,
 							["classes"] = { ROGUE },
@@ -605,7 +592,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 37689,	-- The Imposter
 						}),
 						q(37666, {	-- Picking a Fight
-							["maps"] = { SURAMAR },
 							["coord"] = { 27.0, 89.1, SURAMAR },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 110793 },	-- Taoshi
@@ -643,7 +629,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 43007,	-- Return to the Chamber of Shadows
 						}),
 						q(45573, {	-- Rise Up (A)
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 70.1, 47.0, BROKEN_SHORE },
 							["classes"] = { ROGUE },
 							["races"] = ALLIANCE_ONLY,
@@ -651,7 +636,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 45571,	-- A Bit of Espionage
 						}),
 						q(45576, {	-- Rise Up (H)
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 70.1, 47.0, BROKEN_SHORE },
 							["classes"] = { ROGUE },
 							["races"] = HORDE_ONLY,
@@ -664,7 +648,6 @@ _.ExpansionFeatures =
 							["description"] = "Only available if you you have the |cFFFFD700Plunder|r order hall upgrade.",
 						}),
 						q(44155, {	-- Searching For Clues
-							["maps"] = { STORMHEIM },
 							["coord"] = { 77.2, 55.0, STORMHEIM },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
@@ -703,7 +686,6 @@ _.ExpansionFeatures =
 						}),
 						q(40849, {	-- The Dreadblades
 							["lvl"] = 98,
-							["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 							["coord"] = { 40.6, 69.2, THE_CAPE_OF_STRANGLETHORN },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 102120 },	-- Fleet Admiral Tethys
@@ -729,7 +711,6 @@ _.ExpansionFeatures =
 							["coord"] = { 35.6, 60.0, STORMWIND_CITY },
 							["sourceQuests"] = { 37494 },	-- Under Cover of Darkness
 							["classes"] = { ROGUE },	-- Rogue
-							["maps"] = { STORMWIND_CITY },
 							["lvl"] = 98,
 							["g"] = {
 								i(139739),	-- Chestguard of the Uncrowned
@@ -777,7 +758,6 @@ _.ExpansionFeatures =
 						q(42504, {	-- The Unseen Blade (A)
 							["coord"] = { 36.8, 52.6, ELWYNN_FOREST },
 							["lvl"] = 100,
-							["maps"] = { ELWYNN_FOREST },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 107979 },	-- Garona Halforcen
@@ -790,7 +770,6 @@ _.ExpansionFeatures =
 						q(42627, {	-- The Unseen Blade (H)
 							["coord"] = { 36.8, 52.6, ELWYNN_FOREST },
 							["lvl"] = 100,
-							["maps"] = { ELWYNN_FOREST },
 							["races"] = HORDE_ONLY,
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 107979 },	-- Garona Halforcen
@@ -806,7 +785,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 98100 },	-- Taoshi
 						}),
 						q(45628, {	-- This Time, Leave a Trail (A)
-							["maps"] = { BROKEN_SHORE },
 							["coord"] = { 71.6, 41.9, BROKEN_SHORE },
 							["classes"] = { ROGUE },
 							["races"] = ALLIANCE_ONLY,
@@ -826,14 +804,12 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
 						}),
 						q(44117, {	-- Time Flies When Yer Havin' Rum!
-							["maps"] = { STORMHEIM },
 							["coord"] = { 77.2, 55.0, STORMHEIM },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
 							["sourceQuest"] = 44116,	-- Mystery at Citrine Bay
 						}),
 						q(41922, {	-- Traitor!
-							["maps"] = { LEGION_DALARAN },
 							["coord"] = { 49.4, 41.2, LEGION_DALARAN },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 98102 },	-- Valeera Sanguinar
@@ -860,7 +836,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 43014,	-- The Big Bad Wolfe
 						}),
 						q(44758, {	-- What's the Cache? (A)
-							["maps"] = { AZSUNA },
 							["coord"] = { 57.7, 63.5, AZSUNA },
 							["classes"] = { ROGUE },
 							["provider"] = { "n", 119821 },	-- Tess Graymane
@@ -868,7 +843,6 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 45833,	-- The Pirate's Bay
 						}),
 						q(46323, {	-- What's the Cache? (H)
-							--TBD: ["maps"] = { },
 							--TBD: ["coord"] = { },
 							["classes"] = { ROGUE },
 							--TBD: ["provider"] = { "n", xxxxx },

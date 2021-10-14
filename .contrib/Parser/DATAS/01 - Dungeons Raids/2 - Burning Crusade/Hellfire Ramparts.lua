@@ -71,7 +71,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19309,	-- Sergeant Altumus
 					["coord"] = { 61.6, 60.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "added 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
 				}),
@@ -79,7 +78,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19256,	-- Sergeant Shatterskull
 					["coord"] = { 58.0, 41.2, HELLFIRE_PENINSULA },
 					["timeline"] = { "added 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
 				}),
@@ -124,7 +122,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10142,	-- The Path of Anguish
 					["coord"] = { 56.7, 66.3, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
 					["groups"] = {
@@ -148,7 +145,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
 					["coord"] = { 55.2, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(59, 10, 59),
 					["groups"] = {

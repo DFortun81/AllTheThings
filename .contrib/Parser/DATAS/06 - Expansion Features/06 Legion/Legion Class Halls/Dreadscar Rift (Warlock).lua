@@ -8,8 +8,10 @@ _.ExpansionFeatures =
 		n(-9965, {	-- Legion Class Hall
 			cl(WARLOCK, {
 				["classes"] = { WARLOCK },
-				["mapID"] = 717,	-- Dreadscar Rift (Warlock)
-				["maps"] = { 718 },	-- Dreadscar Rift (scenario version at the beginning of class campaign)
+				["maps"] = {
+					717,	-- Dreadscar Rift (Warlock)
+					718,	-- Dreadscar Rift (scenario version at the beginning of class campaign)
+				},
 				["g"] = {
 					gt(366, {	-- Demonic Offering Class Hall Ability
 						["description"] = "This class hall ability allows you and two other members to summon a demon that you must kill. As part of the ritual, one of your party members (or you) will be sacrificed, so make sure to Soulstone yourself prior to summoning. Upon killing them they have a chance of dropping these items. This also has a chance to drop the destruction Hidden Appearance item.",
@@ -121,7 +123,6 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 46253 },	-- Pillars of Creation
 							["classes"] = { WARLOCK },
 							["coord"] = { 43.9, 63.2, BROKEN_SHORE },
-							["maps"] = { BROKEN_SHORE },
 							["provider"] = { "n", 117622 },	-- Elithys Firestorm
 						}),
 						q(39179, {	-- Bloodstone Bandit
@@ -224,21 +225,18 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 39.3, 42.2, STORMHEIM },
 							["provider"] = { "n", 104855 },	-- Lulubelle Fizzlebang
-							["maps"] = { STORMHEIM },
 						}),
 						q(46020, {	-- Crystal Containment
 							["sourceQuests"] = { 45028 },	-- The Fate of Kanrethad
 							["classes"] = { WARLOCK },
 							["coord"] = { 78.1, 39.7, BROKEN_SHORE },
 							["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
-							["maps"] = { BROKEN_SHORE },
 						}),
 						q(45024, {	-- Cult Culling
 							["sourceQuests"] = { 45021 },	-- Answers Unknown
 							["classes"] = { WARLOCK },
 							["coord"] = { 30.4, 44.6, AZSUNA },
 							["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
-							["maps"] = { AZSUNA },
 						}),
 						q(42125, {	-- Dark Whispers
 							["sourceQuests"] = {
@@ -261,7 +259,6 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 52.3, 34.5, DEADWIND_PASS },
 							["provider"] = { "n", 100729 },	-- Revil Kost
-							["maps"] = { DEADWIND_PASS },
 						}),
 						q(41780, {	-- Doom and Gloom
 							["sourceQuest"] = 41781,	-- Herding Goats
@@ -286,7 +283,6 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 30.4, 44.6, AZSUNA },
 							["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
-							["maps"] = { AZSUNA },
 						}),
 						q(46239, {	-- Fel to the Core
 							["sourceQuest"] = 46237,	-- Bloodbringer's Missive
@@ -315,7 +311,6 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 77.4, 36.1, DUSKWOOD },
 							["provider"] = { "n", 100323 },	-- Revil Kost
-							["maps"] = { DUSKWOOD },
 						}),
 						q(46784, {	-- Further Advancement
 							["sourceQuest"] = 46047,	-- Champion: Kanrethad Ebonlocke
@@ -368,7 +363,6 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 30.4, 44.6, AZSUNA },
 							["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
-							["maps"] = { AZSUNA },
 						}),
 						q(45990, {	-- Investigate the Broken Shore
 							["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
@@ -405,7 +399,6 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 39.3, 42.2, STORMHEIM },
 							["provider"] = { "n", 104855 },	-- Lulubelle Fizzlebang
-							["maps"] = { STORMHEIM },
 						}),
 						q(41769, {	-- Mad Ernie the Alchemist
 							["sourceQuests"] = { 41768 },	-- Soul Beacon
@@ -498,7 +491,6 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 39.3, 42.2, STORMHEIM },
 							["provider"] = { "n", 104855 },	-- Lulubelle Fizzlebang
-							["maps"] = { STORMHEIM },
 						}),
 						q(41768, {	-- Soul Beacon
 							["sourceQuests"] = { 42100 },	-- Empowering the Soul
@@ -511,7 +503,6 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 30.4, 44.6, AZSUNA },
 							["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
-							["maps"] = { AZSUNA },
 						}),
 						q(41795, {	-- Summoning the Sisters
 							["sourceQuests"] = { 41755 },	-- Champion: Lulubelle Fizzlebang
@@ -536,7 +527,6 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["provider"] = { "n", 100812 },	-- Revil Kost
-							["maps"] = { DEADWIND_PASS },
 							["altQuests"] = { 41155 },	-- The Dark Riders
 						}),
 						q(46242, {	-- The Dreadlord's Calling
@@ -549,7 +539,6 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 52.3, 34.4, DEADWIND_PASS },
 							["provider"] = { "n", 100729 },	-- Revil Kost
-							["maps"] = { DEADWIND_PASS },
 							["altQuests"] = { 41154 },
 						}),
 						q(45028, {	-- The Fate of Kanrethad
@@ -557,7 +546,6 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 81.1, 49.6, BROKEN_SHORE },
 							["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
-							["maps"] = { BROKEN_SHORE },
 						}),
 						q(40731, {	-- The Heart of the Dreadscar
 							["sourceQuests"] = {
@@ -568,7 +556,6 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 56.4, 65.0, LEGION_THE_UNDERBELLY },
 							["provider"] = { "n", 101097 },	-- Calydus
-							["maps"] = { LEGION_THE_UNDERBELLY },
 						}),
 						q(46241, {	-- The Minions of Hel'nurath
 							["sourceQuests"] = {
@@ -585,7 +572,6 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 57.3, 60.8, LEGION_THE_UNDERBELLY },
 							["provider"] = { "n", 101456 },	-- Ritssyn Flamescowl
-							["maps"] = { LEGION_THE_UNDERBELLY },
 						}),
 						q(40824, {	-- The Path of the Dreadscar
 							["sourceQuests"] = { 40823 },	-- Rebuilding the Council
@@ -603,7 +589,6 @@ _.ExpansionFeatures =
 							["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
 							["provider"] = { "n", 101282 },	-- Revil Kost
 							["altQuests"] = { 41156 },	-- The Power Possessed
-							["maps"] = { 46 },
 						}),
 						q(40716, {	-- The Sixth
 							["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
@@ -616,7 +601,6 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 56.3, 65.0, LEGION_THE_UNDERBELLY },
 							["provider"] = { "n", 101097 },	-- Calydus
-							["maps"] = { LEGION_THE_UNDERBELLY },
 						}),
 						q(43984, {	-- The Tome Opens Again
 							["sourceQuests"] = { 44099 },	-- A Mutual Friend
@@ -638,7 +622,6 @@ _.ExpansionFeatures =
 							["classes"] = { WARLOCK },
 							["coord"] = { 52.3, 33.9, DEADWIND_PASS },
 							["icon"] = "Interface\\Icons\\inv_offhand_1h_draenorcrafted_d_02a",
-							["maps"] = { DEADWIND_PASS },
 						}),
 						q(45027, {	-- To the Broken Shore
 							["sourceQuests"] = { 45794 },	-- Informing the Council

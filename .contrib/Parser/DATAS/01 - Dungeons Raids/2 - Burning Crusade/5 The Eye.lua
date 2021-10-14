@@ -53,7 +53,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					["qg"] = 21700,	-- Akama
 					["sourceQuest"] = 10944,	-- The Secret Compromised
 					["coord"] = { 58.0, 48.2, SHADOWMOON_VALLEY },
-					["maps"] = { SHADOWMOON_VALLEY },
 					["groups"] = {
 						objective(1, {
 							["provider"] = { "i", 31946 },	-- Ashtongue Cowl

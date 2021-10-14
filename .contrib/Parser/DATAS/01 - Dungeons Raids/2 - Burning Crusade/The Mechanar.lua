@@ -16,7 +16,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 21465,	-- David Wayne
 					["sourceQuest"] = 10664,	-- Additional Materials
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
-					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(67, 25, 67),
 					["groups"] = {
 						objective(1, {	-- 0/1 Overcharged Manacell

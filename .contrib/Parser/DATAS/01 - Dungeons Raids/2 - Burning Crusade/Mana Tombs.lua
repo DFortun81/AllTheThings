@@ -13,7 +13,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 21400,	-- Eckert
 					["coord"] = { 57.6, 53.6, TEROKKAR_FOREST },
 					["timeline"] = { "added 4.3.0.14732" },
-					["maps"] = { TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(64, 15, 64),
@@ -22,7 +21,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19606,	-- Grek
 					["coord"] = { 49.8, 45.3, TEROKKAR_FOREST },
 					["timeline"] = { "added 4.3.0.14732" },
-					["maps"] = { TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(64, 15, 64),
@@ -46,7 +44,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["minReputation"] = { 933, REVERED },	-- The Consortium, Revered.
 					["maxReputation"] = { 933, EXALTED },	-- The Consortium, Exalted.
-					["maps"] = { BLADES_EDGE_MOUNTAINS },
 					["cost"] = {
 						{ "i", 31941, 1 },	-- Mark of the Nexus-King
 					},
@@ -60,7 +57,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 19670,	-- Artificer Morphalius
 					["coord"] = { 39.4, 58.5, TEROKKAR_FOREST },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(64, 15, 64),
 					["groups"] = {
 						objective(1, {	-- 0/10 Ethereal Crypt Raider slain
@@ -112,7 +108,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 22919,	-- Image of Commander Ameer
 					["sourceQuest"] = 10976,	-- The Mark of the Nexus-King
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
-					["maps"] = { BLADES_EDGE_MOUNTAINS },
 					["lvl"] = lvlsquish(70, 25, 70),
 					["groups"] = {
 						objective(1, {	--	Mana-Tombs Stasis Chamber Investigated
@@ -126,7 +121,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10977,	-- Stasis Chambers of the Mana-Tombs
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["minReputation"] = { 933, EXALTED },	-- The Consortium, Exalted.
-					["maps"] = { BLADES_EDGE_MOUNTAINS },
 					["lvl"] = lvlsquish(70, 25, 70),
 					["groups"] = {
 						i(32092),	-- The Eye of Haramad
@@ -135,7 +129,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(10165, bubbleDown({ ["timeline"] = { "removed 4.3.0.14732" } }, {	-- Undercutting the Competition [Rewards also removed... :(]
 					["qg"] = 19674,	-- Nexus-Prince Haramad
 					["coord"] = { 39.4, 58.5, TEROKKAR_FOREST },
-					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(64, 15, 64),
 					["groups"] = {
 						objective(1, {	-- 0/1 Shaffar's Wrappings
