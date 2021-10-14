@@ -1087,10 +1087,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 37.43, 54.32, 1361 },	-- Magni [Old Ironforge]
 				},
 				["timeline"] = { "added 4.0.1" },
-				["maps"] = {
-					STORMWIND_CITY,
-					1361,	-- Old Ironforge
-				},
+				["maps"] = { STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),

@@ -15,12 +15,6 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					{ 43.03, 65.32, ELWYNN_FOREST },	-- Goldshire
 					{ 54.11, 50.81, DUN_MOROGH },	-- Kharanos
 				},
-				["maps"] = {
-					DUN_MOROGH,
-					ELWYNN_FOREST,
-					TELDRASSIL,
-					AZUREMYST_ISLE,
-				},
 				["g"] = {
 					i(45067),	-- Egg Basket
 				},
@@ -34,12 +28,6 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					{ 61.35, 52.98, TIRISFAL_GLADES },	-- Brill
 					{ 47.64, 47.31, EVERSONG_WOODS },	-- Falconwing Square
 					{ 51.91, 41.87, DUROTAR },	-- Razor Hill
-				},
-				["maps"] = {
-					DUROTAR,
-					MULGORE,
-					TIRISFAL_GLADES,
-					EVERSONG_WOODS,
 				},
 				["g"] = {
 					i(45067),	-- Egg Basket
@@ -93,20 +81,6 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					{ 59.77, 49.67, WINTERSPRING },	-- Goblin
 					{ 59.91, 50.89, WINTERSPRING },	-- Goblin
 					{ 61.06, 48.84, WINTERSPRING },	-- Goblin
-				},
-				["maps"] = {
-					NORTHREND_DALARAN,
-					NORTHREND_THE_UNDERBELLY,
-					DARNASSUS,
-					IRONFORGE,
-					NETHERSTORM,
-					NORTHERN_BARRENS,
-					SHATTRATH_CITY,
-					TANARIS,
-					THE_CAPE_OF_STRANGLETHORN,
-					THE_EXODAR,
-					THE_STORM_PEAKS,
-					WINTERSPRING,
 				},
 			}),
 			q(13483, {	--	Spring Gathers [Horde]
@@ -165,20 +139,7 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					{ 61.06, 48.84, WINTERSPRING },	-- Goblin
 				},
 				["maps"] = {
-					NORTHREND_DALARAN,
-					NORTHREND_THE_UNDERBELLY,
-					NETHERSTORM,
-					NORTHERN_BARRENS,
-					ORGRIMMAR,
 					86,		-- Orgrimmar
-					SHATTRATH_CITY,
-					SILVERMOON_CITY,
-					TANARIS,
-					THE_CAPE_OF_STRANGLETHORN,
-					THE_STORM_PEAKS,
-					THUNDER_BLUFF,
-					UNDERCITY,
-					WINTERSPRING,
 				},
 			}),
 			q(13480, {	--	The Great Egg Hunt [Alliance]
@@ -190,12 +151,6 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					{ 55.59, 51.36, TELDRASSIL },	-- Dolanaar
 					{ 42.98, 65.40, ELWYNN_FOREST },	-- Goldshire
 					{ 53.99, 50.70, DUN_MOROGH },	-- Kharanos
-				},
-				["maps"] = {
-					DUN_MOROGH,
-					ELWYNN_FOREST,
-					TELDRASSIL,
-					AZUREMYST_ISLE,
 				},
 				["g"] = {
 					i(44792, {	-- Blossoming Branch
@@ -212,12 +167,6 @@ _.Holidays = bubbleDown({ ["u"] = NOBLEGARDEN }, {
 					{ 61.63, 53.12, TIRISFAL_GLADES },	-- Brill
 					{ 47.77, 47.12, EVERSONG_WOODS },	-- Falconwing Square
 					{ 51.82, 42.06, DUROTAR },	-- Razor Hill
-				},
-				["maps"] = {
-					DUROTAR,
-					MULGORE,
-					TIRISFAL_GLADES,
-					EVERSONG_WOODS,
 				},
 				["g"] = {
 					i(44792, {	-- Blossoming Branch
