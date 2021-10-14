@@ -10437,23 +10437,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(97837),	-- Malevolent Gladiator's Silk Robe
 				i(97931),	-- Malevolent Gladiator's Silk Trousers
 				i(97841),	-- Malevolent Gladiator's Silk Trousers
-				i(88251),	-- Gladiator's Silk Amice
-				i(88252),	-- Gladiator's Silk Cowl
-				i(88253),	-- Gladiator's Silk Handguards
-				i(88254),	-- Gladiator's Silk Robe
-				i(88255),	-- Gladiator's Silk Trousers
-			}),
-			cl(MONK, {
-				i(88171),	-- Gladiator's Ironskin Gloves
-				i(88172),	-- Gladiator's Ironskin Helm
-				i(88173),	-- Gladiator's Ironskin Legguards
-				i(88174),	-- Gladiator's Ironskin Tunic
-				i(88175),	-- Gladiator's Ironskin Spaulders
-				i(88176),	-- Gladiator's Copperskin Gloves
-				i(88177),	-- Gladiator's Copperskin Helm
-				i(88178),	-- Gladiator's Copperskin Legguards
-				i(88179),	-- Gladiator's Copperskin Tunic
-				i(88180),	-- Gladiator's Copperskin Spaulders
 			}),
 			cl(PALADIN, {
 				i(88226),	-- Gladiator's Ornamented Chestguard

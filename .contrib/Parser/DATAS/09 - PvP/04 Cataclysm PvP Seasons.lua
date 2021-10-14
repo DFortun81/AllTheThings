@@ -669,6 +669,11 @@ _.PVP =
 							i(70547),	-- Vicious Gladiator's Cuffs of Accuracy
 							i(70545),	-- Vicious Gladiator's Cord of Cruelty
 							i(70661),	-- Vicious Gladiator's Treads of Cruelty
+							i(88251),	-- Gladiator's Silk Amice  - confirmed 14/10/21
+							i(88252),	-- Gladiator's Silk Cowl  - confirmed 14/10/21
+							i(88253),	-- Gladiator's Silk Handguards  - confirmed 14/10/21
+							i(88254),	-- Gladiator's Silk Robe  - confirmed 14/10/21
+							i(88255),	-- Gladiator's Silk Trousers  - confirmed 14/10/21
 						},
 					}),
 				}),
@@ -2686,6 +2691,26 @@ _.PVP =
 							i(72342),	-- Ruthless Gladiator's Belt of Meditation
 							i(72351),	-- Ruthless Gladiator's Footguards of Alacrity
 							i(72343),	-- Ruthless Gladiator's Footguards of Meditation
+							i(88171),	-- Gladiator's Ironskin Gloves - confirmed 14/10/21
+							i(88172),	-- Gladiator's Ironskin Helm  - confirmed 14/10/21
+							i(88173),	-- Gladiator's Ironskin Legguards  - confirmed 14/10/21
+							i(88174),	-- Gladiator's Ironskin Tunic  - confirmed 14/10/21
+							i(88175),	-- Gladiator's Ironskin Spaulders  - confirmed 14/10/21
+							i(88176),	-- Gladiator's Copperskin Gloves  - confirmed 14/10/21
+							i(88177),	-- Gladiator's Copperskin Helm  - confirmed 14/10/21
+							i(88178),	-- Gladiator's Copperskin Legguards  - confirmed 14/10/21
+							i(88179),	-- Gladiator's Copperskin Tunic  - confirmed 14/10/21
+							i(88180),	-- Gladiator's Copperskin Spaulders  - confirmed 14/10/21
+							i(93508),	-- Crafted Gladiator's Ironskin Gloves  - confirmed 14/10/21
+							i(93510),	-- Crafted Gladiator's Ironskin Helm  - confirmed 14/10/21
+							i(93512),	-- Crafted Gladiator's Ironskin Legguards  - confirmed 14/10/21
+							i(93514),	-- Crafted Gladiator's Ironskin Spaulders  - confirmed 14/10/21
+							i(93516),	-- Crafted Gladiator's Ironskin Tunic  - confirmed 14/10/21
+							i(93518),	-- Crafted Gladiator's Copperskin Gloves  - confirmed 14/10/21
+							i(93520),	-- Crafted Gladiator's Copperskin Helm  - confirmed 14/10/21
+							i(93522),	-- Crafted Gladiator's Copperskin Legguards  - confirmed 14/10/21
+							i(93524),	-- Crafted Gladiator's Copperskin Spaulders  - confirmed 14/10/21
+							i(93526),	-- Crafted Gladiator's Copperskin Tunic  - confirmed 14/10/21
 						},
 					}),
 				}),
