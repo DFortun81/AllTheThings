@@ -9,7 +9,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8905,	{	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16714, 1 },	-- Wildheart Bracers
@@ -25,7 +25,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8913,	{	-- An Earnest Proposition [HORDE]
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, SILITHUS, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16714, 1 },	-- Wildheart Bracers
@@ -42,7 +42,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
 					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -62,7 +62,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
 					["classes"] = { DRUID },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -82,7 +82,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
 					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -99,7 +99,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 16716, 1 },	-- Wildheart Belt
 						{ "i", 16717, 1 },	-- Wildheart Gloves
@@ -116,7 +116,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16720, 1 },	-- Wildheart Cowl
 						{ "i", 16706, 1 },	-- Wildheart Vest
@@ -133,7 +133,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16720, 1 },	-- Wildheart Cowl
 						{ "i", 16706, 1 },	-- Wildheart Vest
@@ -151,7 +151,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8906,	{	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, WINTERSPRING, BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = { WINTERSPRING, BLACKROCK_SPIRE, STRATHOLME },
 					["cost"] = {
 						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16681, 1 },	-- Beaststalker's Bindings
@@ -167,7 +167,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8914, {	-- An Earnest Proposition [HORDE]
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, SILITHUS, BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = { SILITHUS, BLACKROCK_SPIRE, STRATHOLME },
 					["cost"] = {
 						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16681, 1 },	-- Beaststalker's Bindings
@@ -184,7 +184,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
 					["classes"] = { HUNTER },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -204,7 +204,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -224,7 +224,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE },
+					["maps"] = { BLACKROCK_SPIRE },
 					["classes"] = { HUNTER },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -241,7 +241,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE },
+					["maps"] = { BLACKROCK_SPIRE },
 					["cost"] = {
 						{ "i", 16680, 1 },	-- Beaststalker's Belt
 						{ "i", 16676, 1 },	-- Beaststalker's Gloves
@@ -258,7 +258,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16677, 1 },	-- Beaststalker's Cap
 						{ "i", 16674, 1 },	-- Beaststalker's Tunic
@@ -275,7 +275,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16677, 1 },	-- Beaststalker's Cap
 						{ "i", 16674, 1 },	-- Beaststalker's Tunic
@@ -293,7 +293,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8907, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, WINTERSPRING, BLACKROCK_SPIRE },
+					["maps"] = { WINTERSPRING, BLACKROCK_SPIRE },
 					["cost"] = {
 						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16683, 1 },	-- Magister's Bindings
@@ -309,7 +309,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8915,	{	-- An Earnest Proposition [HORDE]
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, SILITHUS, BLACKROCK_SPIRE },
+					["maps"] = { SILITHUS, BLACKROCK_SPIRE },
 					["cost"] = {
 						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16683, 1 },	-- Magister's Bindings
@@ -326,7 +326,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -346,7 +346,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -366,7 +366,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
 					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -383,7 +383,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 16685, 1 },	-- Magister's Belt
 						{ "i", 16684, 1 },	-- Magister's Gloves
@@ -400,7 +400,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16686, 1 },	-- Magister's Crown
 						{ "i", 16688, 1 },	-- Magister's Robes
@@ -417,7 +417,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16686, 1 },	-- Magister's Crown
 						{ "i", 16688, 1 },	-- Magister's Robes
@@ -435,7 +435,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8908, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, WINTERSPRING, SCHOLOMANCE },
+					["maps"] = { WINTERSPRING, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16722, 1 },	-- Lightforge Bracers
@@ -451,7 +451,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(10493, {	-- An Earnest Proposition [HORDE]
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, SILITHUS, BLACKROCK_SPIRE },
+					["maps"] = { SILITHUS, BLACKROCK_SPIRE },
 					["cost"] = {
 						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16722, 1 },	-- Lightforge Bracers
@@ -471,7 +471,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -491,7 +491,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -514,7 +514,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_DEPTHS, STRATHOLME },
+					["maps"] = { BLACKROCK_DEPTHS, STRATHOLME },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -531,7 +531,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 16723, 1 },	-- Lightforge Belt
 						{ "i", 16724, 1 },	-- Lightforge Gauntlets
@@ -551,7 +551,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16727, 1 },	-- Lightforge Helm
 						{ "i", 16726, 1 },	-- Lightforge Breastplate
@@ -568,7 +568,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16727, 1 },	-- Lightforge Helm
 						{ "i", 16726, 1 },	-- Lightforge Breastplate
@@ -586,7 +586,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8909, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, WINTERSPRING, STRATHOLME },
+					["maps"] = { WINTERSPRING, STRATHOLME },
 					["cost"] = {
 						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16697, 1 },	-- Devout Bracers
@@ -602,7 +602,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8916, {	-- An Earnest Proposition [HORDE]
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, SILITHUS, STRATHOLME },
+					["maps"] = { SILITHUS, STRATHOLME },
 					["cost"] = {
 						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16697, 1 },	-- Devout Bracers
@@ -619,7 +619,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -639,7 +639,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
 					["classes"] = { PRIEST },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -659,7 +659,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -676,7 +676,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
 					["cost"] = {
 						{ "i", 16696, 1 },	-- Devout Belt
 						{ "i", 16692, 1 },	-- Devout Gloves
@@ -693,7 +693,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16693, 1 },	-- Devout Crown
 						{ "i", 16690, 1 },	-- Devout Robe
@@ -710,7 +710,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16693, 1 },	-- Devout Crown
 						{ "i", 16690, 1 },	-- Devout Robe
@@ -728,7 +728,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8910, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16710, 1 },	-- Shadowcraft Bracers
@@ -744,7 +744,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8917,	{	-- An Earnest Proposition [HORDE]
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, SILITHUS, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16710, 1 },	-- Shadowcraft Bracers
@@ -761,7 +761,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -781,7 +781,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -801,7 +801,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE },
+					["maps"] = { BLACKROCK_SPIRE },
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -818,7 +818,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE },
+					["maps"] = { BLACKROCK_SPIRE },
 					["cost"] = {
 						{ "i", 16713, 1 },	-- Shadowcraft Belt
 						{ "i", 16712, 1 },	-- Shadowcraft Gloves
@@ -835,7 +835,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16707, 1 },	-- Shadowcraft Cap
 						{ "i", 16721, 1 },	-- Shadowcraft Tunic
@@ -852,7 +852,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16707, 1 },	-- Shadowcraft Cap
 						{ "i", 16721, 1 },	-- Shadowcraft Tunic
@@ -870,7 +870,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(10492, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16671, 1 },	-- Bindings of Elements
@@ -889,7 +889,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8918,	{	-- An Earnest Proposition [HORDE]
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, SILITHUS, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16671, 1 },	-- Bindings of Elements
@@ -906,7 +906,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -929,7 +929,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -949,7 +949,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE },
+					["maps"] = { BLACKROCK_SPIRE },
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -969,7 +969,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE },
+					["maps"] = { BLACKROCK_SPIRE },
 					["cost"] = {
 						{ "i", 16673, 1 },	-- Cord of Elements
 						{ "i", 16672, 1 },	-- Gauntlets of Elements
@@ -986,7 +986,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16667, 1 },	-- Coif of Elements
 						{ "i", 16666, 1 },	-- Vest of Elements
@@ -1006,7 +1006,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16667, 1 },	-- Coif of Elements
 						{ "i", 16666, 1 },	-- Vest of Elements
@@ -1024,7 +1024,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8911, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, WINTERSPRING, BLACKROCK_SPIRE },
+					["maps"] = { WINTERSPRING, BLACKROCK_SPIRE },
 					["cost"] = {
 						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16703, 1 },	-- Dreadmist Bracers
@@ -1040,7 +1040,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8919,	{	-- An Earnest Proposition [HORDE]
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, SILITHUS, BLACKROCK_SPIRE },
+					["maps"] = { SILITHUS, BLACKROCK_SPIRE },
 					["cost"] = {
 						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16703, 1 },	-- Dreadmist Bracers
@@ -1057,7 +1057,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -1077,7 +1077,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -1097,7 +1097,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -1114,7 +1114,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 16702, 1 },	-- Dreadmist Belt
 						{ "i", 16705, 1 },	-- Dreadmist Wraps
@@ -1131,7 +1131,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16698, 1 },	-- Dreadmist Mask
 						{ "i", 16700, 1 },	-- Dreadmist Robe
@@ -1148,7 +1148,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16698, 1 },	-- Dreadmist Mask
 						{ "i", 16700, 1 },	-- Dreadmist Robe
@@ -1166,7 +1166,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8912, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, WINTERSPRING, BLACKROCK_SPIRE },
+					["maps"] = { WINTERSPRING, BLACKROCK_SPIRE },
 					["cost"] = {
 						{ "i", 21928, 15 },	-- Winterspring Blood Sample
 						{ "i", 16735, 1 },	-- Bracers of Valor
@@ -1182,7 +1182,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 				q(8920,	{	-- An Earnest Proposition [HORDE]
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, SILITHUS, BLACKROCK_SPIRE },
+					["maps"] = { SILITHUS, BLACKROCK_SPIRE },
 					["cost"] = {
 						{ "i", 22381, 15 },	-- Silithus Venom Sample
 						{ "i", 16735, 1 },	-- Bracers of Valor
@@ -1199,7 +1199,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME  },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME  },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -1219,7 +1219,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -1239,7 +1239,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -1256,7 +1256,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
 					["cost"] = {
 						{ "i", 16736, 1 },	-- Belt of Valor
 						{ "i", 16737, 1 },	-- Gauntlets of Valor
@@ -1273,7 +1273,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16731, 1 },	-- Helm of Valor
 						{ "i", 16730, 1 },	-- Breastplate of Valor
@@ -1290,7 +1290,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 16731, 1 },	-- Helm of Valor
 						{ "i", 16730, 1 },	-- Breastplate of Valor
@@ -1309,7 +1309,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8924,	-- Hunting for Ectoplasm
 					["coord"] = { 52.4, 27.2, TANARIS },
-					["maps"] = { TANARIS, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
 					["cost"] = {
 						{ "i", 21938, 1 },	-- Magma Core
 					},
@@ -1327,7 +1327,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8925,	-- A Portable Power Source
 					["coord"] = { 52.4, 27.2, TANARIS },
-					["maps"] = { TANARIS, WINTERSPRING },
+					["maps"] = { WINTERSPRING },
 					["cost"] = {
 						{ "i", 21939, 1 },	-- Fel Elemental Rod
 					},
@@ -1347,7 +1347,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 						8912,	-- An Earnest Proposition [WARRIOR]
 					},
 					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { IRONFORGE, TANARIS },
+					["maps"] = { TANARIS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 21985, 1 },	-- Sealed Blood Container
@@ -1368,7 +1368,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 						8920,	-- An Earnest Proposition [WARRIOR]
 					},
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, TANARIS },
+					["maps"] = { TANARIS },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 22382, 1 },	-- Sealed Venom Container
@@ -1379,7 +1379,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 8947,	-- Anthion's Strange Request
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, DIRE_MAUL },
+					["maps"] = { DIRE_MAUL },
 					["cost"] = {
 						{ "i", 21983, 1 },	-- Incomplete Banner of Provocation
 					},
@@ -1389,7 +1389,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 8946,	-- Proof of Life
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS },
 					["cost"] = {
 						{ "i", 11371, 3 },	-- Dark Iron Bar
 						{ "i", 12810, 20 },	-- Enchanted Leather
@@ -1427,7 +1426,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					},
 					["description"] = "Bodley is standing right outside the entrance to Blackrock Spire.",
 					["coord"] = { 43.53, 52.64, IRONFORGE },
-					["maps"] = { IRONFORGE, BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
+					["maps"] = { BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1448,7 +1447,6 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 						10496,	-- Anthion's Parting Words [ALLIANCE]
 					},
 					["coord"] = { 43.53, 52.64, IRONFORGE },
-					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 58,
@@ -1468,7 +1466,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					},
 					["description"] = "Bodley is standing right outside the entrance to Blackrock Spire.",
 					["coord"] = { 34.95, 38.29, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
+					["maps"] = { BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1526,7 +1524,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 						8930,	-- In Search of Anthion [HORDE]
 					},
 					["coord"] = { 30.85, 16.75, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME },
+					["maps"] = { STRATHOLME },
 					["lvl"] = 58,
 					["groups"] = {
 						i(22137),	-- Ysida's Satchel
@@ -1565,7 +1563,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8921,	-- The Ectoplasmic Distiller
 					["coord"] = { 52.4, 27.2, TANARIS },
-					["maps"] = { TANARIS, EASTERN_PLAGUELANDS, SILITHUS, WINTERSPRING },
+					["maps"] = { EASTERN_PLAGUELANDS, SILITHUS, WINTERSPRING },
 					["cost"] = {
 						{ "i", 21946, 1 },	-- Ectoplasmic Distiller
 						{ "i", 21936, 12 },	-- Frozen Ectoplasm
@@ -1601,7 +1599,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 						10494,	-- Just Compensation [ALLIANCE]
 					},
 					["coord"] = { 43.53, 52.64, IRONFORGE },
-					["maps"] = { IRONFORGE, EASTERN_PLAGUELANDS, STRATHOLME },
+					["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1621,7 +1619,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 						10495,	-- Just Compensation [HORDE]
 					},
 					["coord"] = { 34.95, 38.29, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR, EASTERN_PLAGUELANDS, STRATHOLME },
+					["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1725,7 +1723,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8928,	-- A Shifty Merchant
 					["coord"] = { 52.4, 27.2, TANARIS },
-					["maps"] = { TANARIS, IRONFORGE },
+					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1736,7 +1734,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8928,	-- A Shifty Merchant
 					["coord"] = { 52.4, 27.2, TANARIS },
-					["maps"] = { TANARIS, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1765,7 +1763,7 @@ _.Instances = { tier(CLASSIC_TIER, applylegacyclassicphase(PHASE_FIVE, {
 						8923,	-- A Supernatural Device [HORDE]
 					},
 					["coord"] = { 52.4, 27.2, TANARIS },
-					["maps"] = { TANARIS, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
 					["cost"] = {
 						{ "i", 16006, 1 },	-- Delicate Arcanite Converter
 						{ "i", 16203, 4 },	-- Greater Eternal Essence

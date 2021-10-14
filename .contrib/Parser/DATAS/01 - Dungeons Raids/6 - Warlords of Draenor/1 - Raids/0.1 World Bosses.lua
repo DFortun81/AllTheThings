@@ -13,7 +13,6 @@ _.Instances = { tier(WOD_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 44.1, 39.9, GORGROND },
 				["maps"] = {	-- all Gorgrond maps
-					GORGROND,
 					544,	-- Moira's Reach
 					545,	-- Moira's Reach
 					546,	-- Fissure of Fury
@@ -118,7 +117,6 @@ _.Instances = { tier(WOD_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 47.0, 86.7, GORGROND },
 				["maps"] = {	-- all Gorgrond maps
-					GORGROND,
 					544,	-- Moira's Reach
 					545,	-- Moira's Reach
 					546,	-- Fissure of Fury

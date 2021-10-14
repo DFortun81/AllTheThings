@@ -14,7 +14,6 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 62.0, 24.0, TIRAGARDE_SOUND },
 				["maps"] = {	-- all Tiragarde Sound maps
-					TIRAGARDE_SOUND,
 					1171,	-- Gol Thovas (lower)
 					1172,	-- Gol Thovas (upper)
 					1184,	-- Winterchill Mine (lower)
@@ -69,7 +68,6 @@ _.Instances = { tier(BFA_TIER, {
 				["coord"] = { 44.3, 55.5, VOLDUN },
 				["lvl"] = { 50 },
 				["maps"] = {	-- all Vol'dun maps
-					VOLDUN,
 					1009,	-- Atul'Aman: The Blood Font
 				},
 				["cr"] = 138794,	-- Dunegorger Kraulok
@@ -184,7 +182,6 @@ _.Instances = { tier(BFA_TIER, {
 				["coord"] = { 69.0, 31.0, ZULDAZAR },
 				["lvl"] = { 50 },
 				["maps"] = {	-- all Zuldazar maps
-					ZULDAZAR,
 					1166,	-- Zanchul
 					1167,	-- Zanchul 2
 					1176,	-- Breath of Pa'ku, middle level
@@ -259,7 +256,6 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 84.2, 35.9, 1355 },
 				["maps"] = {	-- all Nazjatar maps
-					1355,	-- Nazjatar
 					1499,	--
 					1500,	-- Chitterspine Grotto
 					1524,	-- Deepsea Slave Pen
@@ -308,7 +304,6 @@ _.Instances = { tier(BFA_TIER, {
 				["coord"] = { 83.2, 49.6, STORMSONG_VALLEY },
 				["lvl"] = { 50 },
 				["maps"] = {	-- all Stormsong Valley maps
-					STORMSONG_VALLEY,
 					1179,	-- Abyssal Melody
 					1182,	-- Saltstone Mine
 					1183,	-- Thornheart
@@ -335,7 +330,6 @@ _.Instances = { tier(BFA_TIER, {
 				["isRaid"] = true,
 				["coord"] = { 42.8, 77.9, 1355 },
 				["maps"] = {	-- all Nazjatar maps
-					1355,	-- Nazjatar
 					1499,	--
 					1500,	-- Chitterspine Grotto
 					1524,	-- Deepsea Slave Pen
