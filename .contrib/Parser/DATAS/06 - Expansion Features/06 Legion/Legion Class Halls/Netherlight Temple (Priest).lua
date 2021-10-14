@@ -14,23 +14,23 @@ _.ExpansionFeatures =
 						n(-10067, {	-- Artifact Quests
 							i(141332, {	-- The Annals of Light and Shadow
 								["description"] = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\nStart with Volume VI and Archivist Inkforge in your Order Hall.",
-								["maps"] = {
-									AZSUNA,
-									751,		-- Black Rook Hold
-									LEGION_DALARAN,
-									LEGION_THE_UNDERBELLY,
-									629,		-- Aegwynn's Gallery (Dalaran)
-									DRAGONBLIGHT,	-- New Hearthglen
-									SCARLET_MONASTERY,	-- Scarlet Halls
-									SCHOLOMANCE,
-									477,		-- Scholomance
-									478,		-- Scholomance
-									479,		-- Scholomance
-									STORMHEIM,
-									SURAMAR,
-									431, 432,	-- Scarlet Halls
-									KARAZHAN, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366,	-- Karazhan
-								},
+								-- ["maps"] = {	-- TODO: review
+								-- 	AZSUNA,
+								-- 	751,		-- Black Rook Hold
+								-- 	LEGION_DALARAN,
+								-- 	LEGION_THE_UNDERBELLY,
+								-- 	629,		-- Aegwynn's Gallery (Dalaran)
+								-- 	DRAGONBLIGHT,	-- New Hearthglen
+								-- 	SCARLET_MONASTERY,	-- Scarlet Halls
+								-- 	SCHOLOMANCE,
+								-- 	477,		-- Scholomance
+								-- 	478,		-- Scholomance
+								-- 	479,		-- Scholomance
+								-- 	STORMHEIM,
+								-- 	SURAMAR,
+								-- 	431, 432,	-- Scarlet Halls
+								-- 	KARAZHAN, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366,	-- Karazhan
+								-- },
 								["g"] = {
 									q(44342, {	-- Volume VI
 										["name"] = "|cFFFFFFFFVolume VI|r | Archivist Inkforge in the class order hall.",
@@ -167,7 +167,6 @@ _.ExpansionFeatures =
 							["classes"] = { PRIEST },
 							["coord"] = { 28.7, 49.9, LEGION_DALARAN },
 							["provider"] = { "n", 105081 },	-- Archmage Kalec
-							["maps"] = { LEGION_DALARAN },
 						}),
 						q(43935, {	-- A Second Legend
 							["sourceQuests"] = { 41019 },	-- Actions on Azeroth
@@ -196,13 +195,11 @@ _.ExpansionFeatures =
 							["classes"] = { PRIEST },
 							["provider"] = { "n", 110969 },	-- Aponi Brightmane
 							["coord"] = { 48.9, 63.6, 748 },
-							["maps"] = { 748 },
 						}),
 						q(43375, {	-- An Ample Supply
 							["sourceQuests"] = { 43374 },	-- Murloc Mind Control (must pick up for this quest to be available)
 							["classes"] = { PRIEST },
 							["coord"] = { 58.5, 37.2, AZSUNA },
-							["maps"] = { AZSUNA },
 							["provider"] = { "n", 110686 },	-- Zabra Hexx
 						}),
 						n(46028, {	-- An Urgent Warning
@@ -299,7 +296,6 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 43376 },	-- Problem Salver
 							["classes"] = { PRIEST },
 							["coord"] = { 47.1, 43.9, AZSUNA },
-							["maps"] = { AZSUNA },
 							["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
 							["g"] = {
 								follower(871),	-- Yalia Sagewhisper
@@ -309,7 +305,6 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 43376 },	-- Problem Salver
 							["classes"] = { PRIEST },
 							["coord"] = { 47.1, 43.9, AZSUNA },
-							["maps"] = { AZSUNA },
 							["provider"] = { "n", 110686 },	-- Zabra Hexx
 							["g"] = {
 								follower(870),	-- Zabra Hexx
@@ -354,7 +349,6 @@ _.ExpansionFeatures =
 							["classes"] = { PRIEST },
 							["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
 							["coord"] = { 47.1, 43.9, AZSUNA },
-							["maps"] = { AZSUNA },
 						}),
 						q(41628, {	-- Eyes of the Dragon
 							["sourceQuests"] = { 41626 },	-- A Forgotten Enemy
@@ -444,7 +438,6 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 43372 },	-- The Best and Brightest
 							["classes"] = { PRIEST },
 							["coord"] = { 58.5, 37.2, AZSUNA },
-							["maps"] = { AZSUNA },
 							["provider"] = { "n", 110686 },	-- Zabra Hexx
 						}),
 						q(43386, {	-- Onslaught Envoy
@@ -484,7 +477,6 @@ _.ExpansionFeatures =
 							},
 							["classes"] = { PRIEST },
 							["coord"] = { 58.5, 37.2, AZSUNA },
-							["maps"] = { AZSUNA },
 							["provider"] = { "n", 112487 },	-- Yalia Sagewhisper
 						}),
 						q(44100, {	-- Proper Introductions
@@ -544,7 +536,6 @@ _.ExpansionFeatures =
 							["classes"] = { PRIEST },
 							["provider"] = { "n", 105684 },	-- Alora
 							["coord"] = { 34.0, 33.9, BROKEN_SHORE },
-							["maps"] = { BROKEN_SHORE },
 						}),
 						q(45344, {	-- Sampling the Source
 							-- TBD: fill in other fields
@@ -618,7 +609,6 @@ _.ExpansionFeatures =
 							["classes"] = { PRIEST },
 							["provider"] = { "n", 110969 },	-- Aponi Brightmane
 							["coord"] = { 48.9, 63.6, 748 },
-							["maps"] = { 748 },
 						}),
 						q(41631, {	-- The Nexus Vault
 							["sourceQuests"] = { 41630 },	-- Unleashing Judgment

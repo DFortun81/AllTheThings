@@ -729,7 +729,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8756,	-- The Qiraji Conqueror
 					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 21205, 1 },	-- Signet Ring of the Bronze Dragonflight
@@ -748,7 +747,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8761,	-- The Grand Invoker
 					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 21210, 1 },	-- Signet Ring of the Bronze Dragonflight
@@ -767,7 +765,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8751,	-- The Protector of Kalimdor
 					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 21200, 1 },	-- Signet Ring of the Bronze Dragonflight
@@ -786,7 +783,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8760,	-- The Path of the Invoker (4/4)
 					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8756,	-- The Qiraji Conqueror
 						8751,	-- The Protector of Kalimdor
@@ -803,7 +799,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["qg"] = 15192,	-- Anachronos
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8757,	-- The Path of the Invoker (1/4)
 						8747,	-- The Path of the Protector (1/4)
@@ -818,7 +813,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8752,	-- The Path of the Conqueror (1/4)
 					["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8758,	-- The Path of the Invoker (2/4)
 						8748,	-- The Path of the Protector (2/4)
@@ -836,7 +830,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8753,	-- The Path of the Conqueror (2/4)
 					["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8759,	-- The Path of the Invoker (3/4)
 						8749,	-- The Path of the Protector (3/4)
@@ -854,7 +847,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8754,	-- The Path of the Conqueror (3/4)
 					["minReputation"] = { 910, REVERED },	-- Brood of Nozdormu, Revered.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8760,	-- The Path of the Invoker (4/4)
 						8750,	-- The Path of the Protector (4/4)
@@ -871,7 +863,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["qg"] = 15192,	-- Anachronos
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8752,	-- The Path of the Conqueror (1/4)
 						8747,	-- The Path of the Protector (1/4)
@@ -886,7 +877,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8757,	-- The Path of the Invoker (1/4)
 					["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8753,	-- The Path of the Conqueror (2/4)
 						8748,	-- The Path of the Protector (2/4)
@@ -904,7 +894,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8758,	-- The Path of the Invoker (2/4)
 					["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8754,	-- The Path of the Conqueror (3/4)
 						8749,	-- The Path of the Protector (3/4)
@@ -922,7 +911,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8759,	-- The Path of the Invoker (3/4)
 					["minReputation"] = { 910, REVERED },	-- Brood of Nozdormu, Revered.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8755,	-- The Path of the Conqueror (4/4)
 						8750,	-- The Path of the Protector (4/4)
@@ -939,7 +927,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["qg"] = 15192,	-- Anachronos
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8752,	-- The Path of the Conqueror (1/4)
 						8757,	-- The Path of the Invoker (1/4)
@@ -954,7 +941,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8747,	-- The Path of the Protector (1/4)
 					["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8753,	-- The Path of the Conqueror (2/4)
 						8758,	-- The Path of the Invoker (2/4)
@@ -972,7 +958,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8748,	-- The Path of the Protector (2/4)
 					["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8754,	-- The Path of the Conqueror (3/4)
 						8759,	-- The Path of the Invoker (3/4)
@@ -990,7 +975,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8749,	-- The Path of the Protector (3/4)
 					["minReputation"] = { 910, REVERED },	-- Brood of Nozdormu, Revered.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8755,	-- The Path of the Conqueror (4/4)
 						8760,	-- The Path of the Invoker (4/4)
@@ -1008,7 +992,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8750,	-- The Path of the Protector (4/4)
 					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8761,	-- The Grand Invoker
 						8756,	-- The Qiraji Conqueror
@@ -1026,7 +1009,6 @@ _.Instances = { tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8755,	-- The Path of the Conqueror (4/4)
 					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["coord"] = ANACHRONOS_COORD,
-					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						8761,	-- The Grand Invoker
 						8751,	-- The Protector of Kalimdor
