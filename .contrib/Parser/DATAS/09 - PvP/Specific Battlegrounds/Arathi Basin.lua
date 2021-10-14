@@ -2,6 +2,12 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
+-- #if BEFORE BFA
+local RUTHERFORD_TWING = 15126;
+-- #else
+local RUTHERFORD_TWING = 144064;
+-- #endif
+
 _.PVP =
 {
 	pvp(n(-304, {	-- Battlegrounds
@@ -79,11 +85,7 @@ _.PVP =
 							}),
 						}),
 						n(VENDORS, {
-							-- #if BEFORE BFA
-							n(15126, {	-- Rutherford Twing
-							-- #else
-							n(144064, {	-- Rutherford Twing
-							-- #endif
+							n(RUTHERFORD_TWING, {	-- Rutherford Twing
 								["itemID"] = 137642,	-- Mark of Honor
 								["races"] = HORDE_ONLY,	-- to hide it in Mark of Honor list
 								["coord"] = { 68.4, 30.6, ARATHI_HIGHLANDS },
@@ -338,7 +340,7 @@ _.PVP =
 										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 									}),
 								},
-							}),	
+							}),
 						}),
 					},
 				}),
