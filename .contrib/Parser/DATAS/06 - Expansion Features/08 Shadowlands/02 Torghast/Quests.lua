@@ -40,8 +40,7 @@ _.ExpansionFeatures =
 					["coord"] = { 42.9, 68.2, 1967 },	-- TG106_Floor (scenario)
 					["maps"] = {	-- TODO: not sure if these are strictly scenario maps or if they are additions to Torghast overall.  adding them in the order i went through the floors for the quest
 						1968,	-- TG107_Floor
-						1967,	-- TG106_Floor
-						-- 1969,	-- TG108_Floor
+						1969,	-- TG108_Floor
 					},
 				}),
 				q(62719, {	-- The Final Pieces

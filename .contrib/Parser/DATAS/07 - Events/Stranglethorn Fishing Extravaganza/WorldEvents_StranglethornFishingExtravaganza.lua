@@ -8,7 +8,6 @@ _.WorldEvents =
 		["description"] = "Winners all get Master Angler of Azeroth which is needed for the meta-achievement Accomplished Angler.\n\nAll winners can choose between any of the prizes. The fishing rod and toy no longer seem to be limited to the First Place winner in Patch 7.1.5.",
 		["achievementID"] = 306,	-- Master Angler of Azeroth
 		["coord"] = { 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
-		["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 		["u"] = STRANGLETHORN_FISHING_EXTRAVAGANZA,
 		["g"] = {
 			q(44765, {	-- Stranglethorn Fishing Extravaganza

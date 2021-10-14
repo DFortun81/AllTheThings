@@ -16,7 +16,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10102,	-- A Secret Revealed
 					["coord"] = { 53.9, 44.8, SHATTRATH_CITY },
-					["maps"] = { SHATTRATH_CITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 15, 66),
 					["groups"] = {
@@ -30,7 +29,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10253,	-- Levixus the Soul Caller
 					["coord"] = { 35.1, 65.2, TEROKKAR_FOREST },
 					["timeline"] = { "removed 4.3.0.14732" },
-					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(64, 15, 64),
 					["groups"] = {
 						objective(1, {	-- Exarch Maladaar slain
@@ -47,7 +45,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10253,	-- Levixus the Soul Caller
 					["coord"] = { 35.0, 65.2, TEROKKAR_FOREST },
 					["timeline"] = { "added 4.3.0.14732" },
-					["maps"] = { TEROKKAR_FOREST },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(64, 15, 64),
 				}),

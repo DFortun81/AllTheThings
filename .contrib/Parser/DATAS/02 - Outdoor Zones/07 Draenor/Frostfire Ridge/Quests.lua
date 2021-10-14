@@ -146,7 +146,6 @@ _.Zones =
 					},
 				}),
 				q(34461, {	-- Build Your Barracks
-					["maps"] = { FROSTWALL },
 					["coord"] = { 52.4, 53.3, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78466 },	-- Gazlowe
@@ -498,7 +497,6 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(34775, {	-- Mission Probable
-					["maps"] = { FROSTWALL },
 					["coord"] = { 53.9, 54.9, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 79740 },	-- Warmaster Zog

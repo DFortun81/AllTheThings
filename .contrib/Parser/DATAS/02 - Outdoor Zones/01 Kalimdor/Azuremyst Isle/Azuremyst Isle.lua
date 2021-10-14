@@ -855,7 +855,6 @@ _.Zones =
 						["qg"] = 17219,	-- Sulaa <Shaman Trainer>
 						["coord"] = { 32.3, 23.9, THE_EXODAR },
 						["timeline"] = { "removed 4.0.3.10000" },
-						["maps"] = { THE_EXODAR },
 						["classes"] = { SHAMAN },
 						["races"] = { DRAENEI },
 						["isBreadcrumb"] = true,

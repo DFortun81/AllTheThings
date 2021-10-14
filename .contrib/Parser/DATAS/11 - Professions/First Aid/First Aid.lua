@@ -61,9 +61,7 @@ profession(FIRST_AID, {
 		q(6625, {	-- Alliance Trauma
 			["qg"] = 5150,	-- Nissa Firestone
 			["coord"] = { 54.8, 58.6, IRONFORGE },
-			-- #if BEFORE BFA
 			["requireSkill"] = FIRST_AID,
-			-- #endif
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["lvl"] = lvlsquish(35, 10, 35),
@@ -76,9 +74,7 @@ profession(FIRST_AID, {
 			["qg"] = 3373,	-- Arnok
 			["coord"] = { 34.0, 84.6, ORGRIMMAR },
 			-- #endif
-			-- #if BEFORE BFA
 			["requireSkill"] = FIRST_AID,
-			-- #endif
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["lvl"] = lvlsquish(35, 10, 35),
@@ -88,9 +84,7 @@ profession(FIRST_AID, {
 			["sourceQuest"] = 6625,	-- Alliance Trauma
 			["coord"] = { 67.7, 48.9, DUSTWALLOW_MARSH },
 			["races"] = ALLIANCE_ONLY,
-			-- #if BEFORE BFA
 			["requireSkill"] = FIRST_AID,
-			-- #endif
 			["cost"] = {
 				{ "i", 16991, 1 },	-- Triage Bandage
 			},
@@ -109,9 +103,7 @@ profession(FIRST_AID, {
 			-- #else
 			["coord"] = { 68.5, 37.8, ARATHI_HIGHLANDS },
 			-- #endif
-			-- #if BEFORE BFA
 			["requireSkill"] = FIRST_AID,
-			-- #endif
 			["races"] = HORDE_ONLY,
 			["cost"] = {
 				{ "i", 16991, 1 },	-- Triage Bandage

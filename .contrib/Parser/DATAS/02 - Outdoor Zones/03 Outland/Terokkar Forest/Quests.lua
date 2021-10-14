@@ -382,7 +382,6 @@ _.Zones =
 				}),
 				q(9990, {	-- Investigate Tuurem
 					["provider"] = { "n", 18484 },	-- Wind Trader Lathrai
-					["maps"] = { SHATTRATH_CITY },
 					["coord"] = { 72.2, 30.7, SHATTRATH_CITY },
 					["sourceQuest"] = 10112,	-- A Personal Favor
 				}),

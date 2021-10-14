@@ -874,7 +874,6 @@ _.Zones =
 						["altQuests"] = { 9672 },	-- The Bloodcurse Legacy [Mailbox]
 						["description"] = "This quest is offered to you if you don't receive the 'A Letter from the Admiral' in the mail or you destroy it and abandon the quest.",
 						["coord"] = { 47.0, 70.2, AZUREMYST_ISLE },
-						["maps"] = { AZUREMYST_ISLE },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(15, 1, 15),
 					}),
@@ -1015,7 +1014,6 @@ _.Zones =
 							{ 54.0, 55.4, BLOODMYST_ISLE },
 							{ 32.6, 54.2, THE_EXODAR },
 						},
-						["maps"] = { THE_EXODAR },
 						["races"] = { DRAENEI },
 						["lvl"] = lvlsquish(18, 1, 18),
 						["groups"] = {
@@ -1029,7 +1027,7 @@ _.Zones =
 						["sourceQuest"] = 9632,	-- Newfound Allies
 						["coord"] = { 54.6, 53.9, AZUREMYST_ISLE },
 						["timeline"] = { "removed 4.0.3.10000" },
-						["maps"] = { AZUREMYST_ISLE, DARKSHORE },
+						["maps"] = { DARKSHORE },
 						["cost"] = { { "i", 23937, 1 } },	-- Letter of Introduction
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(15, 1, 15),
@@ -1061,7 +1059,6 @@ _.Zones =
 						["sourceQuest"] = 9698,	-- Audience with the Prophet
 						["coord"] = { 32.6, 54.2, THE_EXODAR },
 						["cost"] = { { "i", 24230, 1 } },	-- Velen's Orders
-						["maps"] = { THE_EXODAR },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(14, 1, 14),
 					}),

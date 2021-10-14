@@ -342,25 +342,21 @@ _.Zones =
 					["sourceQuests"] = { 39983 },	-- Huln's War: The Arrival
 					["provider"] = { "n", 97891 },	-- Unng Ak
 					["coord"] = { 29.5, 39.2, 697 },	-- Azshara (scenario)
-					["maps"] = { 697 },	-- Azshara (scenario)
 				}),
 				q(39990, {	-- Huln's War - Reinforcements
 					["sourceQuests"] = { 39988 },	-- Huln's War - Stormrage
 					["provider"] = { "n", 97892 },	-- Malfurion Stormrage
 					["coord"] = { 27.8, 51.6, 697 },	-- Azshara (scenario)
-					["maps"] = { 697 },	-- Azshara (scenario)
 				}),
 				q(40388, {	-- Huln's War - Shadowsong
 					["sourceQuests"] = { 39990 },	-- Huln's War - Reinforcements
 					["provider"] = { "n", 97892 },	-- Malfurion Stormrage
 					["coord"] = { 27.8, 51.7, 697 },	-- Azshara (scenario)
-					["maps"] = { 697 },	-- Azshara (scenario)
 				}),
 				q(39988, {	-- Huln's War - Stormrage
 					["sourceQuests"] = { 40112 },	-- Huln's War - Malorne's Favored
 					["provider"] = { "n", 98794 },	-- Eche'ro
 					["coord"] = { 27.9, 47.2, 697 },	-- Azshara (scenario)
-					["maps"] = { 697 },	-- Azshara (scenario)
 				}),
 				q(39983, {	-- Huln's War - The Arrival
 					["sourceQuests"] = { 40520 },	-- To See the Past
@@ -371,8 +367,7 @@ _.Zones =
 				q(39992, {	-- Huln's War - The Nathrezim
 					["sourceQuests"] = { 40388 },	-- Huln's War - Shadowsong
 					["provider"] = { "n", 97903 },	-- Jarod Shadowsong
-					["coord"] = { 31.2, 52.4, 697 },
-					["maps"] = { 697 },	-- Azshara (Scenario)
+					["coord"] = { 31.2, 52.4, 697 },	-- Azshara (Scenario)
 					["g"] = {
 						i(130282),	-- Highmountain Trueshot Cape
 						i(130309),	-- Band of Malorne's Chosen

@@ -41,14 +41,6 @@ _.Zones =
 				{ 52.1, 41.1, TALADOR },
 				{ 52.3, 25.8, TALADOR },
 			},
-			["maps"] = {
-				FROSTFIRE_RIDGE,
-				GORGROND,
-				DRAENOR_NAGRAND,
-				DRAENOR_SHADOWMOON_VALLEY,
-				SPIRES_OF_ARAK,
-				TALADOR,
-			},
 			["g"] = {
 				o(239901, {	-- Voidtalon Egg
 					["modelScale"] = 2,

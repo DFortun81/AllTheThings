@@ -230,7 +230,6 @@ _.ExpansionFeatures =
 				}),
 				n(QUESTS, {
 					q(48021, {	-- Chromie
-						["maps"] = { LEGION_DALARAN },
 						["coord"] = { 26.4, 44.6, LEGION_DALARAN },
 						["providers"] = {
 							{ "n", 90417 },	-- Archmage Khadgar

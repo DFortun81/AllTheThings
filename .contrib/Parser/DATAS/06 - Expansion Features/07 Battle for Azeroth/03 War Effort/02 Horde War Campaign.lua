@@ -1381,26 +1381,33 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 57094 },	-- The Price of Victory
 							["altQuests"] = { 57152 },	-- Most Loyal (Sylvanas Version)
 							["provider"] = { "n", 155789 },	-- Lor'themar Theron
-							["coord"] = { 34.9, 60.1, 1535 },
+							["coord"] = { 34.9, 60.1, 1535 },	-- Durotar (Scenario)
 							["races"] = HORDE_ONLY,
 							["maps"] = {
 								1534,	-- Orgrimmar (Scenario)
-								1535,	-- Durotar (Scenario)
 							},
 						}),
-						q(57152, {	-- Most Loyal (Sylvanas Version)
-							["sourceQuests"] = {
-								57094,	-- The Price of Victory
-								55782,	-- Stay of Execution (Sylvanas Version)
-							},
-							["altQuests"] = { 57095 },	-- Old Soldier
-						--	["provider"] = { "n", 155789 },	-- Lor'themar Theron
-						--	["coord"] = { 34.9, 60.1, 1535 },
+						-- TODO: this ID is wrong...
+						-- q(57152, {	-- Most Loyal (Sylvanas Version)
+						-- 	["sourceQuests"] = {
+						-- 		57094,	-- The Price of Victory
+						-- 		55782,	-- Stay of Execution (Sylvanas Version)
+						-- 	},
+						-- 	["altQuests"] = { 57095 },	-- Old Soldier
+						-- --	["provider"] = { "n", 155789 },	-- Lor'themar Theron
+						-- --	["coord"] = { 34.9, 60.1, 1535 },
+						-- 	["races"] = HORDE_ONLY,
+						-- 	["maps"] = {
+						-- 		1534,	-- Orgrimmar (Scenario)
+						-- 		1535,	-- Durotar (Scenario)
+						-- 	},
+						-- }),
+						q(57152, {	-- Most Loyal
+							["altQuests"] = { 54109 },	-- Queen's Favor
+							["sourceQuests"] = { 57151 },	-- A Line in the Sand
+							["provider"] = { "n", 156425 },	-- Dark Ranger Lenara
+							["coord"] = { 50, 91.3, 1534 },
 							["races"] = HORDE_ONLY,
-							["maps"] = {
-								1534,	-- Orgrimmar (Scenario)
-								1535,	-- Durotar (Scenario)
-							},
 						}),
 
 						--	unsorted below this point
@@ -1551,13 +1558,6 @@ _.ExpansionFeatures =
 							},
 							["provider"] = { "n", 156440 },	-- Nathanos Blightcaller
 							["coord"] = { 50.1, 91.3, 1534 },
-							["races"] = HORDE_ONLY,
-						}),
-						q(57152, {	-- Most Loyal
-							["altQuests"] = { 54109 },	-- Queen's Favor
-							["sourceQuests"] = { 57151 },	-- A Line in the Sand
-							["provider"] = { "n", 156425 },	-- Dark Ranger Lenara
-							["coord"] = { 50, 91.3, 1534 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(57147, {	-- Not My Warchief

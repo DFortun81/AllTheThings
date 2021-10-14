@@ -99,7 +99,6 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(40247, {	-- Asking a Favor (Kayn)
-							["maps"] = { LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 74.5, 48.7, LEGION_DALARAN },
 							["sourceQuests"] = {
@@ -119,7 +118,6 @@ _.ExpansionFeatures =
 							["lvl"] = 110,
 						}),
 						q(41804, {	-- Ask and You Shall Receive
-							["maps"] = { LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 28.5, 48.3, LEGION_DALARAN },
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
@@ -146,14 +144,12 @@ _.ExpansionFeatures =
 							["lvl"] = 101,
 						}),
 						q(41121, {	-- By Any Means
-							["maps"] = { LEGION_DALARAN },
 							["coord"] = { 65.6, 67.2, LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["provider"] = { "n", 103156 },	-- Altruis the Sufferer
 							["sourceQuest"] = 41120,	-- Making Arrangements
 						}),
 						q(39051, {	-- By Any Means
-							["maps"] = { LEGION_DALARAN },
 							["coord"] = { 65.3, 66.9, LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["provider"] = { "n", 94902 },	-- Kayn Sunfury
@@ -335,7 +331,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 116448 },	-- Kor'vas Bloodthorn
 							["coord"] = { 74.2, 41.7, 719 },
 							["maps"] = {
-								719,	-- Mardum, the Shattered Abyss
 								879,	-- Mardum, the Shattered Abyss (on the Fel Hammer)
 								880,	-- Mardum, the Shattered Abyss (on the Fel Hammer)
 							},
@@ -360,14 +355,12 @@ _.ExpansionFeatures =
 							["coord"] = { 59.5, 58.0, 720 },
 						}),
 						q(41807, {	-- Establishing a Connection
-							["maps"] = { LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 74.4, 51.2, LEGION_DALARAN },
 							["provider"] = { "n", 99262 },	-- Jace Darkweaver
 							["sourceQuests"] = { 41806 },	-- Return to Jace
 						}),
 						q(42869, {	-- Eternal Vigil
-							["maps"] = { LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 74.3, 46.2, LEGION_DALARAN },
 							["sourceQuests"] = { 39247, 41119 },	-- The Hunt
@@ -501,7 +494,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 118316 },	-- Illidari Enforcer
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 44.0, 62.7, BROKEN_SHORE },
-							["maps"] = { BROKEN_SHORE },
 						}),
 						q(42681, {	-- Loramus, Is That You?
 							["classes"] = { DEMONHUNTER },
@@ -511,7 +503,6 @@ _.ExpansionFeatures =
 							["lvl"] = 101,
 						}),
 						q(40819, {	-- Making Arrangements (Kayn)
-							["maps"] = { LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 74.5, 48.7, LEGION_DALARAN },
 							["sourceQuests"] = {
@@ -524,7 +515,6 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(41120, {	-- Making Arrangements (Altruis)
-							["maps"] = { LEGION_DALARAN },
 							["coord"] = { 74.9, 48.9, LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["sourceQuests"] = {
@@ -543,7 +533,6 @@ _.ExpansionFeatures =
 							["lvl"] = 110,
 						}),
 						q(42594, {	-- Move Like No Other
-							["maps"] = { LEGION_DALARAN },
 							["sourceQuests"] = { 42593 },	-- The Arcane Way
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 26.0, 52.0, LEGION_DALARAN },
@@ -570,7 +559,6 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 45301 },	-- Taking Charge
 							["provider"] = { "n", 116448 },	-- Kor'vas Bloodthorn
 							["coord"] = { 74.2, 41.7, 719 },
-							["maps"] = { 719 },	-- Mardum, the Shattered Abyss
 							["lvl"] = 110,
 						}),
 						q(46725, {	-- Power Outage
@@ -578,7 +566,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 117709 },	-- Lady S'theno
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 52.1, 21.3, BROKEN_SHORE },
-							["maps"] = { BROKEN_SHORE },
 						}),
 						q(42669, {	-- Preparations for Invasion
 							["classes"] = { DEMONHUNTER },
@@ -592,7 +579,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 117709 },	-- Lady S'theno
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 52.1, 21.3, BROKEN_SHORE },
-							["maps"] = { BROKEN_SHORE },
 						}),
 						q(46266, {	-- Return of the Slayer
 							["sourceQuests"] = {
@@ -603,24 +589,20 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 117709 },	-- Lady S'theno
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 52.1, 21.3, BROKEN_SHORE },
-							["maps"] = { BROKEN_SHORE },
 						}),
 						q(41806, {	-- Return to Jace
-							["maps"] = { LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 28.8, 48.6, LEGION_DALARAN },
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
 							["sourceQuests"] = { 41804 },	-- Ask and You Shall Receive
 						}),
 						q(41033, {	-- Return to Mardum (Altruis)
-							["maps"] = { LEGION_DALARAN },
 							["coord"] = { 94.9, 66.5, LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["provider"] = { "n", 109295 },	-- Matron Mother Malevolence
 							["sourceQuest"] = 42872,	-- Securing the Way
 						}),
 						q(41221, {	-- Return to Mardum (Kayn)
-							["maps"] = { LEGION_DALARAN },
 							["coord"] = { 95.0, 65.7, LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["provider"] = { "n", 109295 },	-- Matron Mother Malevolence
@@ -665,7 +647,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 108576 },	-- Malace Shade
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 64.9, 59.0, STORMHEIM },
-							["maps"] = { STORMHEIM },
 							["lvl"] = 110,
 						}),
 						q(42738, {	-- Rune Ruination: Runelord Ragnar
@@ -673,7 +654,6 @@ _.ExpansionFeatures =
 							["provider"] = { "o", 251220 },	-- Ragnar's Runestone
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 64.9, 58.9, STORMHEIM },
-							["maps"] = { STORMHEIM },
 							["lvl"] = 110,
 						}),
 						q(42739, {	-- Rune Ruination: Runesage Floki
@@ -681,7 +661,6 @@ _.ExpansionFeatures =
 							["provider"] = { "o", 251221 },	-- Floki's Runestone
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 64.9, 58.9, STORMHEIM },
-							["maps"] = { STORMHEIM },
 							["lvl"] = 110,
 						}),
 						q(42737, {	-- Rune Ruination: Runeskeld Rollo
@@ -690,7 +669,6 @@ _.ExpansionFeatures =
 							["provider"] = { "o", 251218 },	-- Rollo's Runestone
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 64.9, 58.9, STORMHEIM },
-							["maps"] = { STORMHEIM },
 							["lvl"] = 110,
 						}),
 						q(45330, {	-- Scouting Party
@@ -698,7 +676,6 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 45301 },	-- Taking Charge
 							["provider"] = { "n", 116448 },	-- Kor'vas Bloodthorn
 							["coord"] = { 74.2, 41.7, 719 },
-							["maps"] = { 719 },	-- Mardum, the Shattered Abyss
 							["lvl"] = 110,
 						}),
 						q(42802, {	-- Securing Mardum
@@ -712,7 +689,6 @@ _.ExpansionFeatures =
 							["lvl"] = 103,
 						}),
 						q(42872, {	-- Securing the Way
-							["maps"] = { LEGION_DALARAN },
 							["coord"] = { 95.3, 65.1, LEGION_DALARAN },
 							["provider"] = { "n", 109196 },	-- Jace Darkweaver
 							["classes"] = { DEMONHUNTER },
@@ -739,7 +715,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 108576 },	-- Malace Shade
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 64.9, 58.9, STORMHEIM },
-							["maps"] = { STORMHEIM },
 							["lvl"] = 110,
 						}),
 						q(45301, {	-- Taking Charge
@@ -803,14 +778,12 @@ _.ExpansionFeatures =
 							["lvl"] = 110,
 						}),
 						q(40816, {	-- The Power to Survive (Altruis)
-							["maps"] = { LEGION_DALARAN },
 							["coord"] = { 74.9, 48.9, LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["provider"] = { "n", 99254 },	-- Altruis the Sufferer
 							["sourceQuests"] = { 39047 },	-- Call of the Illidari
 						}),
 						q(40814, {	-- The Power to Survive (Kayn)
-							["maps"] = { LEGION_DALARAN },
 							["coord"] = { 74.9, 48.9, LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["provider"] = { "n", 99247 },	-- Kayn Sunfury
@@ -920,14 +893,12 @@ _.ExpansionFeatures =
 							["lvl"] = 110,
 						}),
 						q(41863, {	-- Vengeance Will Be Ours (Altruis)
-							["maps"] = { LEGION_DALARAN },
 							["coord"] = { 74.9, 49.0, LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["provider"] = { "n", 99254 },	-- Altruis the Sufferer
 							["sourceQuests"] = { 41807 },	-- Establishing a Connection
 						}),
 						q(40249, {	-- Vengeance Will Be Ours (Kayn)
-							["maps"] = { LEGION_DALARAN },
 							["coord"] = { 74.9, 49.0, LEGION_DALARAN },
 							["classes"] = { DEMONHUNTER },
 							["provider"] = { "n", 99247 },	-- Kayn Sunfury
@@ -938,7 +909,6 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 117709 },	-- Lady S'theno
 							["classes"] = { DEMONHUNTER },
 							["coord"] = { 52.1, 21.3, BROKEN_SHORE },
-							["maps"] = { BROKEN_SHORE },
 						}),
 						q(45385, {	-- We Must be Prepared!
 							["classes"] = { DEMONHUNTER },

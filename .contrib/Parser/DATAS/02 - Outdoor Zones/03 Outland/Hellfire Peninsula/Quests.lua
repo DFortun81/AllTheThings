@@ -2165,7 +2165,6 @@ _.Zones =
 					["qg"] = 19254,	-- Warlord Dar'toon
 					["coord"] = { 54.4, 50.5, BLASTED_LANDS },
 					["timeline"] = { "removed 6.0.3.10000" },
-					["maps"] = { BLASTED_LANDS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(58, 10, 58),

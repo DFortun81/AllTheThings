@@ -58,7 +58,6 @@ _.WorldEvents = { n(-540, -- The Scourge Invasion
 					["cost"] = {
 						{ "i", 22484, 30 },	-- Necrotic Rune
 					},
-					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(23084),	-- Gloves of Undead Cleansing
@@ -104,7 +103,6 @@ _.WorldEvents = { n(-540, -- The Scourge Invasion
 					["cost"] = {
 						{ "i", 22484, 8 },	-- Necrotic Rune
 					},
-					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(23123),	-- Blessed Wizard Oil
@@ -147,7 +145,6 @@ _.WorldEvents = { n(-540, -- The Scourge Invasion
 					["cost"] = {
 						{ "i", 22484, 8 },	-- Necrotic Rune
 					},
-					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(23122),	-- Consecrated Sharpening Stone
@@ -200,7 +197,7 @@ _.WorldEvents = { n(-540, -- The Scourge Invasion
 				q(9262, {	-- Investigate the Scourge of Darnassus
 					["qg"] = 16495,	-- Lieutenant Beitha <The Argent Dawn>
 					["coord"] = { 77.7, 42.7, DARNASSUS },
-					["maps"] = { DARNASSUS, TELDRASSIL },
+					["maps"] = { TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["cost"] = {
@@ -217,7 +214,7 @@ _.WorldEvents = { n(-540, -- The Scourge Invasion
 				q(9261, {	-- Investigate the Scourge of Ironforge
 					["qg"] = 16484,	-- Lieutenant Nevell <The Argent Dawn>
 					["coord"] = { 53.2, 35.0, DUN_MOROGH },
-					["maps"] = { DUN_MOROGH, IRONFORGE },
+					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["cost"] = {
@@ -234,7 +231,7 @@ _.WorldEvents = { n(-540, -- The Scourge Invasion
 				q(9263, {	-- Investigate the Scourge of Orgrimmar
 					["qg"] = 16493,	-- Lieutenant Dagel <The Argent Dawn>
 					["coord"] = { 51.7, 83.3, ORGRIMMAR },
-					["maps"] = { DUROTAR, ORGRIMMAR },
+					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["cost"] = {
@@ -251,7 +248,7 @@ _.WorldEvents = { n(-540, -- The Scourge Invasion
 				q(9260, {	-- Investigate the Scourge of Stormwind
 					["qg"] = 16478,	-- Lieutenant Orrin <The Argent Dawn>
 					["coord"] = { 63.8, 75.5, STORMWIND_CITY },
-					["maps"] = { ELWYNN_FOREST, STORMWIND_CITY },
+					["maps"] = { ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["cost"] = {
@@ -268,7 +265,7 @@ _.WorldEvents = { n(-540, -- The Scourge Invasion
 				q(9265, {	-- Investigate the Scourge of the Undercity
 					["qg"] = 16494,	-- Lieutenant Rukag <The Argent Dawn>
 					["coord"] = { 66.2, 21.4, UNDERCITY },
-					["maps"] = { TIRISFAL_GLADES, UNDERCITY },
+					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["cost"] = {
@@ -285,7 +282,7 @@ _.WorldEvents = { n(-540, -- The Scourge Invasion
 				q(9264, {	-- Investigate the Scourge of Thunder Bluff
 					["qg"] = 16490,	-- Lieutenant Lisande <The Argent Dawn>
 					["coord"] = { 33.1, 59.9, THUNDER_BLUFF },
-					["maps"] = { MULGORE, THUNDER_BLUFF },
+					["maps"] = { MULGORE },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["cost"] = {
@@ -314,7 +311,7 @@ _.WorldEvents = { n(-540, -- The Scourge Invasion
 					["coords"] = {
 						{ 64.5, 44.2, DARNASSUS },
 						{ 77.3, 42.8, DARNASSUS },
-						{ 53.1, 35.0, DUN_MOGORH },
+						{ 53.1, 35.0, DUN_MOROGH },
 						{ 35.3, 68.7, IRONFORGE },
 						{ 53.1, 73.6, ORGRIMMAR },
 						{ 51.7, 83.6, ORGRIMMAR },
@@ -324,15 +321,6 @@ _.WorldEvents = { n(-540, -- The Scourge Invasion
 						{ 43.5, 53.2, THUNDER_BLUFF },
 						{ 49.5, 32.1, UNDERCITY },
 						{ 65.9, 21.4, UNDERCITY },
-					},
-					["maps"] = {
-						DARNASSUS,
-						DUN_MOGORH,
-						IRONFORGE,
-						ORGRIMMAR,
-						STORMWIND_CITY,
-						THUNDER_BLUFF,
-						UNDERCITY,
 					},
 					["cost"] = {
 						{ "i", 22595, 1 },	-- Call to Arms Announcement

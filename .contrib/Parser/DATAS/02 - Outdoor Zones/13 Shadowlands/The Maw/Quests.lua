@@ -40,14 +40,12 @@ _.Zones =
 				q(59755, {	-- A Flight from Darkness
 					["sourceQuests"] = { 59754 },	-- On Blackened Wings
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
-					["coord"] = { 23.1, 31.6, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 23.1, 31.6, 1648 },	-- pre-SL scenario
 				}),
 				q(59752, {	-- A Fractured Blade
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
-					["coord"] = { 19.2, 57.0, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 19.2, 57.0, 1648 },	-- pre-SL scenario
 				}),
 				q(59766, {	-- A Good Axe
 					["sourceQuests"] = { 59762 },	-- By and Down the River
@@ -55,8 +53,7 @@ _.Zones =
 						{ "n", 166981 },	-- Thrall, pre-pickup
 						{ "n", 167827 },	-- Thrall, post-pickup
 					},
-					["coord"] = { 29.6, 43.6, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 29.6, 43.6, 1648 },	-- pre-SL scenario
 				}),
 				q(60271, {	-- A Grave Chance
 					["sourceQuests"] = { 60270 },	-- A Damned Pact
@@ -67,7 +64,6 @@ _.Zones =
 					["sourceQuests"] = { 63764 },	-- Claim the Sky
 					["provider"] = { "n", 177603 },	-- Danica the Reclaimer
 					["coord"] = { 58.0, 58.8, 1971 },	-- Skyhold (scenario)
-					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 				q(63616, {	-- A Job Done Right
 					["sourceQuests"] = {
@@ -80,8 +76,7 @@ _.Zones =
 				q(59756, {	-- A Moment's Respite
 					["sourceQuests"] = { 59755 },	-- A Flight from Darkness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
-					["coord"] = { 24.4, 36.2, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 24.4, 36.2, 1648 },	-- pre-SL scenario
 				}),
 				q(63039, {	-- A Monument to Vengeance
 					["provider"] = { "n", 175807 },	-- Knight of the Ebon Blade
@@ -138,8 +133,7 @@ _.Zones =
 				q(59761, {	-- An Undeserved Fate
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
-					["coord"] = { 25.0, 13.3, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 25.0, 13.3, 1648 },	-- pre-SL scenario
 				}),
 				q(63867, {	-- Anger Management
 					["sourceQuests"] = { 64014 },	-- Mawsplaining
@@ -159,8 +153,7 @@ _.Zones =
 				q(59762, {	-- By and Down the River
 					["sourceQuests"] = { 59776 },	-- From the Mouths of Madness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
-					["coord"] = { 24.4, 37.0, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 24.4, 37.0, 1648 },	-- pre-SL scenario
 				}),
 				q(57690, {	-- Cages For All Occasions
 					["sourceQuests"] = { 57689 },	-- Prince Renathal
@@ -230,8 +223,7 @@ _.Zones =
 						59753,	-- Ruiner's End
 					},
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
-					["coord"] = { 21.5, 41.7, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 21.5, 41.7, 1648 },	-- pre-SL scenario
 				}),
 				q(63045, {	-- Feed Your Soul
 					-- ["sourceQuests"] = {
@@ -244,8 +236,7 @@ _.Zones =
 				q(59757, {	-- Field Seance
 					["sourceQuests"] = { 59756 },	-- A Moment's Respite
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
-					["coord"] = { 24.4, 35.9, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 24.4, 35.9, 1648 },	-- pre-SL scenario
 				}),
 				q(63901, {	-- Focusing the Eye
 					["sourceQuests"] = {
@@ -272,14 +263,12 @@ _.Zones =
 						59761,	-- An Undeserved Fate
 					},
 					["provider"] = { "n", 167826 },	-- Lady Jaina Proudmoore
-					["coord"] = { 25.0, 13.4, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 25.0, 13.4, 1648 },	-- pre-SL scenario
 				}),
 				q(63831, {	-- Fury Given Voice
 					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
 					["provider"] = { "n", 177726 },	-- Odyn
 					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
-					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 				q(63613, {	-- Gates of the Damned
 					["sourceQuests"] = { 63612 },	-- The Chains of Command
@@ -360,13 +349,11 @@ _.Zones =
 					["sourceQuests"] = { 63845 },	-- Wrath of Odyn
 					["provider"] = { "n", 177726 },	-- Odyn
 					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
-					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 				q(59907, {	-- Mawsworn Menace
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
-					["coord"] = { 19.2, 57.0, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 19.2, 57.0, 1648 },	-- pre-SL scenario
 				}),
 				q(63100, {	-- Misery's Company
 					["provider"] = { "n", 176069 },	-- Hopeless Vessel
@@ -386,8 +373,7 @@ _.Zones =
 				q(59754, {	-- On Blackened Wings
 					["sourceQuests"] = { 59914 },	-- Fear to Tread
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
-					["coord"] = { 22.2, 33.0, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 22.2, 33.0, 1648 },	-- pre-SL scenario
 				}),
 				q(62234, {	-- Power of the Colossus
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -402,8 +388,7 @@ _.Zones =
 				q(59753, {	-- Ruiner's End
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 170624 },	-- Wilona Thorne
-					["coord"] = { 22.7, 51.9, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 22.7, 51.9, 1648 },	-- pre-SL scenario
 				}),
 				q(60287, {	-- Rule 1: Have an Escape Plan
 					["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
@@ -493,8 +478,7 @@ _.Zones =
 				q(59770, {	-- Stand as One
 					["sourceQuests"] = { 59767 },	-- The Path to Salvation
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
-					["coord"] = { 42.3, 42.1, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 42.3, 42.1, 1648 },	-- pre-SL scenario
 				}),
 				q(63043, {	-- Sundered Souls
 					["provider"] = { "n", 175813 },	-- Trapped Soul
@@ -509,8 +493,7 @@ _.Zones =
 				q(59760, {	-- The Afflictor's Key
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
-					["coord"] = { 25.0, 13.3, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 25.0, 13.3, 1648 },	-- pre-SL scenario
 				}),
 				q(59959, {	-- The Brand Holds the Key
 					["sourceQuests"] = { 59960 },	-- A Cooling Trail
@@ -526,7 +509,6 @@ _.Zones =
 					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
 					["provider"] = { "n", 177726 },	-- Odyn
 					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
-					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 				q(64541, {	-- The Cost of Death
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -547,14 +529,12 @@ _.Zones =
 				q(59759, {	-- The Lion's Cage
 					["sourceQuests"] = { 59915 },	-- Soul in Hand
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
-					["coord"] = { 24.4, 36.2, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 24.4, 36.2, 1648 },	-- pre-SL scenario
 				}),
 				q(59767, {	-- The Path to Salvation
 					["sourceQuests"] = { 60644 },	-- Draw Out the Darkness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
-					["coord"] = { 29.4, 44.0, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 29.4, 44.0, 1648 },	-- pre-SL scenario
 				}),
 				q(61099, {	-- The Search for Baine
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -633,8 +613,7 @@ _.Zones =
 						{ "n", 166981 },	-- Thrall, pre-pickup
 						{ "n", 167827 },	-- Thrall, post-pickup
 					},
-					["coord"] = { 29.6, 43.6, 1648 },
-					["maps"] = { 1648 },	-- pre-SL scenario
+					["coord"] = { 29.6, 43.6, 1648 },	-- pre-SL scenario
 				}),
 				q(63845, {	-- Wrath of Odyn
 					["sourceQuests"] = {
@@ -643,7 +622,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 177726 },	-- Odyn
 					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
-					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 
 				-- End PTR quests

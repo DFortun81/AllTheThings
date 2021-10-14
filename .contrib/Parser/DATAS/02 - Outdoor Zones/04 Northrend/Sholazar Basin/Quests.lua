@@ -91,7 +91,6 @@ _.Zones =
 				}),
 				q(12797, {	-- Back Through the Waygate
 					["lvl"] = 66,
-					["maps"] = { UNGORO_CRATER },
 					["coord"] = { 47.4, 9.2, UNGORO_CRATER },
 					["provider"] = { "n", 28092 },	-- The Etymidian
 					["sourceQuest"] = 12547,	-- The Activation Rune
@@ -466,7 +465,6 @@ _.Zones =
 				}),
 				q(12547, {	-- The Activation Rune
 					["lvl"] = 66,
-					["maps"] = { UNGORO_CRATER },
 					["coord"] = { 47.4, 9.2, UNGORO_CRATER },
 					["provider"] = { "n", 28092 },	-- The Etymidian
 					["sourceQuest"] = 12548,	-- The Etymidian

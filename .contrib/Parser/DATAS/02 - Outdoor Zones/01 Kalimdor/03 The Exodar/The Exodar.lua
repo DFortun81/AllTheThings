@@ -128,7 +128,6 @@ _.Zones =
 						["qg"] = 17483,	-- Tullas <Paladin Trainer>
 						["coord"] = { 48.4, 49.6, AZUREMYST_ISLE },
 						["timeline"] = { "removed 4.0.3" },
-						["maps"] = { AZUREMYST_ISLE },
 						["classes"] = { PALADIN },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(12, 10, 12),

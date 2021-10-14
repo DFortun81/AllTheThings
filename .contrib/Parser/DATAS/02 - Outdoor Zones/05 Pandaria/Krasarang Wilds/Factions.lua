@@ -1115,7 +1115,6 @@ _.Zones =
 								["provider"] = { "n", 68526 },	-- Barkeep Townsley
 								["coord"] = { 67.4, 47.1, 500 },	-- Bizmo's Brawlpub
 								["races"] = ALLIANCE_ONLY,
-								["maps"] = { 500 },	-- Bizmo's Brawlpub
 							}),
 							q(32150, {	-- Supply Block
 								["sourceQuests"] = { 32109 },	-- Lion's Landing
@@ -1274,7 +1273,6 @@ _.Zones =
 								["provider"] = { "n", 68526 },	-- Barkeep Townsley
 								["coord"] = { 67.4, 47.1, 500 },	-- Bizmo's Brawlpub
 								["races"] = ALLIANCE_ONLY,
-								["maps"] = { 500 },	-- Bizmo's Brawlpub
 							}),
 							q(32193, {	-- To Mogujia
 								["minReputation"] = { 1376, HONORED+6800 },

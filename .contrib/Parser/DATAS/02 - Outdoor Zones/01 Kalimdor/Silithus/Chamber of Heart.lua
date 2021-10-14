@@ -131,9 +131,8 @@ _.Zones =
 						}),
 						q(55497, {	-- A Friendly Face
 							["provider"] = { "n", 152385 },	-- Highmountain Shaman (Ebonhorn)
-							["coord"] = { 18.9, 58.0, 1472 },
+							["coord"] = { 18.9, 58.0, 1472 },	-- The Dragon's Spine
 							["sourceQuest"] = 55425,	-- Dominating the Indomitable
-							["maps"] = { 1472 },	-- The Dragon's Spine
 						}),
 						q(56374, {	-- A Titanic Problem
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
@@ -158,9 +157,8 @@ _.Zones =
 						}),
 						q(55737, {	-- At the Azerite Time
 							["provider"] = { "n", 152815 },	-- Magni Bronzebeard
-							["coord"] = { 33.7, 54.6, 1474 },
+							["coord"] = { 33.7, 54.6, 1474 },	-- Maelstrom (Scenario)
 							["sourceQuest"] = 55735,	--	Defending the Maelstrom
-							["maps"] = { 1474 },	-- Maelstrom (Scenario)
 						}),
 						q(56162, {	-- Back Out to Sea (A)
 							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
@@ -180,7 +178,6 @@ _.Zones =
 							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { BORALUS },
 						}),
 						q(55739, {	-- Back to the Chamber (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian
@@ -188,13 +185,11 @@ _.Zones =
 							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
-							["maps"] = { DAZARALOR },
 						}),
 						q(55397, {	-- Before I Wake
 							["provider"] = { "n", 151825 },	-- Merithra of the Dream
-							["coord"] = { 46.5, 39.7, 1475 },
+							["coord"] = { 46.5, 39.7, 1475 },	-- The Emerald Dream
 							["sourceQuest"] = 55465,	-- We Must Go Deeper
-							["maps"] = { 1475 },	-- The Emerald Dream
 						}),
 						q(57290, {	-- Beginning the Descent
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
@@ -211,14 +206,12 @@ _.Zones =
 							["provider"] = { "n", 154500 },	-- Left
 							["coord"] = { 54.5, 72.5, THE_VEILED_STAIR },
 							["sourceQuest"] = 56186,	-- Spies to the Left and Right
-							["maps"] = { THE_VEILED_STAIR },
 							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
 						}),
 						q(55407, {	-- Calming the Spine
 							["provider"] = { "n", 151695 },	-- Spiritwalker Ebonhorn
-							["coord"] = { 27.0, 45.9, 1472 },
+							["coord"] = { 27.0, 45.9, 1472 },	-- The Dragon's Spine
 							["sourceQuest"] = 55400,	-- Take My Hand
-							["maps"] = { 1472 },	-- The Dragon's Spine
 						}),
 						q(58991, {	-- Curious Corruption
 							["description"] = "Automatically granted when you get your first corrupted item.",
@@ -232,9 +225,8 @@ _.Zones =
 						}),
 						q(55735, {	-- Defending the Maelstrom
 							["provider"] = { "n", 152815 },	-- Magni Bronzebeard
-							["coord"] = { 33.7, 54.6, 1474 },
+							["coord"] = { 33.7, 54.6, 1474 },	-- Maelstrom (Scenario)
 							["sourceQuest"] = 55732,	-- An Old Scar
-							["maps"] = { 1474 },	-- Maelstrom (Scenario)
 						}),
 						q(57373, {	-- Descending Into Madness
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
@@ -257,19 +249,16 @@ _.Zones =
 							["provider"] = { "n", 152095 },	-- Magni Bronzebeard
 							["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
 							["sourceQuest"] = 55520,	-- Healing Nordrassil
-							["maps"] = { MOUNT_HYJAL },
 						}),
 						q(55425, {	-- Dominating the Indomitable
 							["provider"] = { "n", 152385 },	-- Spiritwalker Ebonhorn
-							["coord"] = { 17.5, 62.1, 1472 },
+							["coord"] = { 17.5, 62.1, 1472 },	-- The Dragon's Spine
 							["sourceQuest"] = 55407,	-- Calming the Spine
-							["maps"] = { 1472 },	-- The Dragon's Spine
 						}),
 						q(55395, {	-- Don't Close Your Eyes
 							["provider"] = { "n", 151704 },	-- Valithria Dreamwalker
-							["coord"] = { 27.1, 55.9, 1471 },
+							["coord"] = { 27.1, 55.9, 1471 },	-- Emerald Dreamway
 							["sourceQuest"] = 55392,	-- Enter the Dreamway
-							["maps"] = { 1471 },	-- Emerald Dreamway
 						}),
 						q(59000, {	-- Elements of Corruption
 							["sourceQuests"] = { 56377 },    -- Forging Onward
@@ -292,7 +281,6 @@ _.Zones =
 							["provider"] = { "n", 152095 },	-- Magni Bronzebeard
 							["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
 							["sourceQuest"] = 55519,	-- A Fresh Trauma
-							["maps"] = { MOUNT_HYJAL },
 						}),
 						q(55390, {	-- In Darkness, I Dream
 							["provider"] = { "n", 152365 },	-- Kalecgos
@@ -304,7 +292,6 @@ _.Zones =
 							["coord"] = { 36.0, 50.5, TWILIGHT_HIGHLANDS },
 							["sourceQuest"] = 56167,	-- Investigating the Highlands
 							["maps"] = {
-								TWILIGHT_HIGHLANDS,
 								1476,	-- Twilight Highlands (Szenario)
 							},
 							["g"] = {
@@ -395,9 +382,8 @@ _.Zones =
 						}),
 						q(55393, {	-- Null the Void
 							["provider"] = { "n", 151693 },	-- Merithra of the Dream
-							["coord"] = { 44.1, 30.7, 1471 },
+							["coord"] = { 44.1, 30.7, 1471 },	-- Emerald Dreamway
 							["sourceQuest"] = 55392,	-- Enter the Dreamway
-							["maps"] = { 1471 },	-- Emerald Dreamway
 						}),
 						q(58632, {	-- Ny'alotha, the Waking City: The Corruptor's End
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
@@ -408,7 +394,6 @@ _.Zones =
 							["provider"] = { "n", 154870 },	-- Slain Blacktalon Lookout
 							["coord"] = { 47.0, 69.2, DEADWIND_PASS },
 							["sourceQuest"] = 56188,	-- To the Catacombs!
-							["maps"] = { DEADWIND_PASS },
 							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
 						}),
 						q(58634, {	-- Opening the Gateway
@@ -540,7 +525,6 @@ _.Zones =
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { BORALUS },
 						}),
 						q(55522, {	-- Return to the Heart (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian <Messenger of the Speaker>
@@ -548,20 +532,17 @@ _.Zones =
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
-							["maps"] = { DAZARALOR },
 						}),
 						q(56190, {	-- Save Ebonhorn
 							["provider"] = { "n", 155191 },	-- Potion of Mental Clarity
-							["coord"] = { 69.5, 16.5, 46 },
+							["coord"] = { 69.5, 16.5, 46 },	-- Karazhan Catacombs
 							["sourceQuest"] = 56189,	-- On the Trail of the Black Prince
-							["maps"] = { 46 },	-- Karazhan Catacombs
 							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
 						}),
 						q(55394, {	-- Shards of Emerald
 							["provider"] = { "n", 151693 },	-- Merithra of the Dream
-							["coord"] = { 44.1, 30.7, 1471 },
+							["coord"] = { 44.1, 30.7, 1471 },	-- Emerald Dreamway
 							["sourceQuest"] = 55392,	-- Enter the Dreamway
-							["maps"] = { 1471 },	-- Emerald Dreamway
 						}),
 						q(56186, {	-- Spies to the Left and Right
 							["provider"] = { "n", 152365 },	-- Kalecgos
@@ -588,7 +569,6 @@ _.Zones =
 							["provider"] = { "n", 151641 },	-- Spiritwalker Ebonhorn
 							["coord"] = { 49.4, 68.3, HIGHMOUNTAIN },
 							["sourceQuest"] = 55374,	-- A Disurbance Beneath the Earth
-							["maps"] = { HIGHMOUNTAIN },
 						}),
 						q(55618, {	-- The Heart Forge
 							["provider"] = { "n", 152194 },	-- MOTHER
@@ -602,12 +582,10 @@ _.Zones =
 						}),
 						q(55398, {	-- The Long Awake
 							["provider"] = { "n", 151887 },	-- Merithra of the Dream
-							["coord"] = { 46.5, 39.7, 1475 },
+							["coord"] = { 46.5, 39.7, 1475 },	-- The Emerald Dream
 							["sourceQuest"] = 55396,	-- The Stuff Dreams Are Made Of
-							["maps"] = { 1475 },	-- The Emerald Dream
 						}),
 						q(56537, {	-- The Mysterious Sigil
-							["maps"] = { KUN_LAI_SUMMIT },
 							["coord"] = { 59.6, 39.1, KUN_LAI_SUMMIT },
 							["provider"] = { "n", 155336 },	-- Mogu Warrior
 							["sourceQuest"] = 56536,	-- It's Never Easy
@@ -629,9 +607,8 @@ _.Zones =
 						}),
 						q(55396, {	-- The Stuff Dreams Are Made Of
 							["provider"] = { "n", 151825 },	-- Merithra of the Dream
-							["coord"] = { 46.5, 39.7, 1475 },
+							["coord"] = { 46.5, 39.7, 1475 },	-- The Emerald Dream
 							["sourceQuest"] = 55397,	-- Before I Wake
-							["maps"] = { 1475 },	-- The Emerald Dream
 							["g"] = {
 								i(168612, {	-- Dreamglow Dragonscale
 									az(12, 2),	-- The Crucible of Flame (Rank 2)
@@ -662,7 +639,6 @@ _.Zones =
 							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { BORALUS },
 						}),
 						q(56260, {	-- Unlocking the Power (H)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
@@ -670,12 +646,10 @@ _.Zones =
 							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
-							["maps"] = { DAZARALOR },
 						}),
 						o(324407, {	-- Void Roots
 							["questID"] = 55467,
-							["coord"] = { 61.9, 94.6, 1475 },
-							["maps"] = { 1475 },	-- The Emerald Dream
+							["coord"] = { 61.9, 94.6, 1475 },	-- The Emerald Dream
 							["collectible"] = false,
 							["g"] = {
 								i(167873),	-- Remnant of the Void
@@ -695,14 +669,13 @@ _.Zones =
 						}),
 						q(55465, {	-- We Must Go Deeper
 							["provider"] = { "n", 151693 },	-- Merithra of the Dream
-							["coord"] = { 44.1, 30.7, 1471 },
+							["coord"] = { 44.1, 30.7, 1471 },	-- Emerald Dreamway
 							["sourceQuests"] = {
 								55393,	-- Null the Void
 								55394,	-- Shards of Emerald
 								55395,	-- Don't Close Your Eyes
 							},
 							["maps"] = {
-								1471,	-- Emerald Dreamway
 								1475,	-- The Emerald Dream
 							},
 						}),
@@ -725,7 +698,6 @@ _.Zones =
 							["sourceQuest"] = 57002,	-- Old Soldier
 							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { BORALUS },
 							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
 						}),
 						q(56267, {	-- Whispers of N'zoth (H)
@@ -737,7 +709,6 @@ _.Zones =
 							},
 							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
 							["races"] = HORDE_ONLY,
-							["maps"] = { DAZARALOR },
 							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
 						}),
 						q(56504, {	-- Wrathion's Journal

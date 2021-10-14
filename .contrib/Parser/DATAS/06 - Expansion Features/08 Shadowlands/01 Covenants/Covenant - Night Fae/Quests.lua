@@ -375,7 +375,6 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 59809 },	-- On De Other Side
 						["provider"] = { "n", 166281 },	-- Bwonsamdi
 						["coord"] = { 50.4, 25.3, 1917 },	-- De Other Side (scenario)
-						["maps"] = { 1917 },	-- De Other Side (scenario)
 					}),
 					q(59812, {	-- Following the Trail
 						["sourceQuests"] = { 59811 },	-- Taking Inventory
