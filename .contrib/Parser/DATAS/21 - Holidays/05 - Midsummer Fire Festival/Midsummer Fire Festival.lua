@@ -3314,7 +3314,6 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["qg"] = 32814,	-- Storm Peaks Flame Keeper
 						["coord"] = { 40.0, 86.0, THE_STORM_PEAKS },
 						["timeline"] = { "added 3.0.1" },
-						["maps"] = { THE_STORM_PEAKS },
 					}),
 					q(44614, {	-- Honor the Flame — Suramar
 						["qg"] = 114518,	-- Suramar Flame Keeper

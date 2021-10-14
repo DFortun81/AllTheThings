@@ -124,7 +124,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 						["maps"] = {
 							NORTHREND_DALARAN,
 							LEGION_DALARAN,
-							393,	-- Shrine of Seven Stars
 						},
 					},
 					{	-- Red Velvet Cupcake
@@ -136,7 +135,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 						["maps"] = {
 							NORTHREND_DALARAN,
 							LEGION_DALARAN,
-							393,	-- Shrine of Seven Stars
 						},
 					},
 					{	-- Tasty Cupcake
@@ -166,11 +164,8 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 							{ 53.66, 53.01, ORGRIMMAR },	-- Snack-O-Matic IV
 						},
 						["maps"] = {
-							THOUSAND_NEEDLES,
 							STORMWIND_CITY,
-							ORGRIMMAR,
 							86,	-- Orgrimmar
-							NAGRAND,
 						},
 					},
 				}),
@@ -250,10 +245,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 10943,	-- Children's Week
 				["coord"] = { 88.56, 50.23, HELLFIRE_PENINSULA },
 				["timeline"] = { "added 2.0.1" },
-				["maps"] = {
-					HELLFIRE_PENINSULA,
-					SHATTRATH_CITY,
-				},
+				["maps"] = { SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -266,10 +258,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 10942,	-- Children's Week
 				["coord"] = { 88.56, 50.23, HELLFIRE_PENINSULA },
 				["timeline"] = { "added 2.0.1" },
-				["maps"] = {
-					HELLFIRE_PENINSULA,
-					SHATTRATH_CITY,
-				},
+				["maps"] = { SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -289,17 +278,12 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
 					{ 43.61, 45.13, 625 },	-- Jepetto Joybuzz
 				},
-				["maps"] = {
-					NORTHREND_DALARAN,
-					625,	-- Dalaran [Broken Isles]
-				},
 				["crs"] = {
 					29478,	-- Jeppetto Joybuzz
 					96483,	-- Jeppetto Joybuzz
 				},
 				-- #else
 				["coord"] = { 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
-				["maps"] = { NORTHREND_DALARAN },
 				["cr"] = 29478,	-- Jeppetto Joybuzz
 				-- #endif
 				["isYearly"] = true,
@@ -320,17 +304,12 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
 					{ 43.61, 45.13, 625 },	-- Jepetto Joybuzz
 				},
-				["maps"] = {
-					NORTHREND_DALARAN,
-					625,	-- Dalaran [Broken Isles]
-				},
 				["crs"] = {
 					29478,	-- Jeppetto Joybuzz
 					96483,	-- Jeppetto Joybuzz
 				},
 				-- #else
 				["coord"] = { 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
-				["maps"] = { NORTHREND_DALARAN },
 				["cr"] = 29478,	-- Jeppetto Joybuzz
 				-- #endif
 				["isYearly"] = true,
@@ -355,7 +334,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				-- #else
 				["coord"] = { 47.2, 38.4, STORMWIND_CITY },	-- Orphan Matron Nightingale
 				-- #endif
-				["maps"] = { STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
@@ -385,12 +363,10 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				-- #if AFTER CATA
 				["coord"] = { 57.93, 57.63, ORGRIMMAR },	-- Orphan Matron Battlewail
 				["maps"] = {
-					ORGRIMMAR,
 					86,	-- Orgrimmar: The Drag
 				},
 				-- #else
 				["coord"] = { 70.8, 25.6, ORGRIMMAR },	-- Orphan Matron Battlewail
-				["maps"] = { ORGRIMMAR },
 				-- #endif
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -417,10 +393,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 39.57, 64.41, TEROKKAR_FOREST },	-- Dornaa taken to Ring of Observance
 				},
 				["timeline"] = { "added 2.0.1" },
-				["maps"] = {
-					TEROKKAR_FOREST,
-					SHATTRATH_CITY,
-				},
+				["maps"] = { SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -434,7 +407,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 10968,	-- Call on the Farseer
 				["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
 				["timeline"] = { "added 2.0.1" },
-				["maps"] = { SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -455,7 +427,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
 				["timeline"] = { "added 2.0.1" },
-				["maps"] = { SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -469,7 +440,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 13937,	-- A Trip To The Wonderworks
 				["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = { NORTHREND_DALARAN },
 				["cr"] = 34365,	-- Orphan Matron Aria
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
@@ -489,9 +459,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 13938,	-- A Trip To The Wonderworks
 				["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = {
-					NORTHREND_DALARAN,
-				},
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 				["groups"] = {
@@ -514,10 +481,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["coord"] = { 36.25, 51.08, DRUSTVAR },	-- Birdfeather's Statue
 				["timeline"] = { "added 8.0.1" },
-				["maps"] = {
-					DRUSTVAR,
-					BORALUS,
-				},
+				["maps"] = { BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(110, 10, 110),
@@ -558,10 +522,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 31.30, 27.65, THE_EXODAR },	-- Speak to Farseer Nobundo
 				},
 				["timeline"] = { "added 2.0.1" },
-				["maps"] = {
-					THE_EXODAR,
-					SHATTRATH_CITY,
-				},
+				["maps"] = { SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -570,7 +531,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["qg"] = 22819,	-- Orphan Matron Mercy
 				["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
 				["timeline"] = { "added 2.0.1" },
-				["maps"] = { SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -587,7 +547,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["coord"] = { 47.4, 38.6, STORMWIND_CITY },	-- Orphan Matron Nightingale
 				-- #endif
 				-- #endif
-				["maps"] = { STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
@@ -599,7 +558,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 48.01, 40.28, BORALUS },	-- Orphan Matron Westerson
 				},
 				["timeline"] = { "added 8.0.1" },
-				["maps"] = { BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(110, 10, 110),
@@ -608,7 +566,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["qg"] = 22819,	-- Orphan Matron Mercy
 				["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
 				["timeline"] = { "added 2.0.1" },
-				["maps"] = { SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -618,13 +575,11 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["qg"] = 51989,	-- Orphan Matron Battlewall
 				["coord"] = { 57.93, 57.63, ORGRIMMAR },	-- Orphan Matron Battlewail
 				["maps"] = {
-					ORGRIMMAR,
 					86,	-- Orgrimmar: The Drag
 				},
 				-- #else
 				["qg"] = 14451,	-- Orphan Matron Battlewall
 				["coord"] = { 70.8, 25.6, ORGRIMMAR },	-- Orphan Matron Battlewail
-				["maps"] = { ORGRIMMAR },
 				-- #endif
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -640,7 +595,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["maps"] = {
 					THE_GREAT_SEAL,	-- Dazar'alor
 					HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
-					DAZARALOR,
 				},
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -657,10 +611,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 57.78, 53.06, WESTFALL },	-- Rental Chopper
 				},
 				["timeline"] = { "added 4.0.1" },
-				["maps"] = {
-					WESTFALL,
-					STORMWIND_CITY,
-				},
+				["maps"] = { STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
@@ -707,10 +658,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 19.28, 51.34, ZANGARMARSH },	-- Speak to Hch'uu
 				},
 				["timeline"] = { "added 2.0.1" },
-				["maps"] = {
-					ZANGARMARSH,
-					SHATTRATH_CITY,
-				},
+				["maps"] = { SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -727,10 +675,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 50.71, 42.75, GRIZZLY_HILLS },	-- Kekek taken to Grizzlemaw
 				},
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = {
-					GRIZZLY_HILLS,
-					NORTHREND_DALARAN,
-				},
+				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 			}),
@@ -747,7 +692,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["coord"] = { 28.91, 88.76, VOLDUN },	-- The Golden Isle
 				["timeline"] = { "added 8.0.1" },
 				["maps"] = {
-					VOLDUN,
 					THE_GREAT_SEAL,	-- Dazar'alor
 					HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 					DAZARALOR,
@@ -788,10 +732,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 31.49, 57.61, NAGRAND },	-- Speak to Jheel
 				},
 				["timeline"] = { "added 2.0.1" },
-				["maps"] = {
-					NAGRAND,
-					SHATTRATH_CITY,
-				},
+				["maps"] = { SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -831,7 +772,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 66.61, 64.43, STORMWIND_CITY },	-- Craggle Wobbletop Path
 				},
 				["timeline"] = { "added 4.0.1" },
-				["maps"] = { STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
@@ -868,7 +808,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["timeline"] = { "added 4.0.1" },
 				["maps"] = {
-					ORGRIMMAR,	-- Orgrimmar
 					86,	-- Orgrimmar: The Drag
 				},
 				["races"] = HORDE_ONLY,
@@ -879,7 +818,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["qg"] = 34365,	-- Orphan Matron Aria
 				["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 			}),
@@ -887,7 +825,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["qg"] = 34365,	-- Orphan Matron Aria
 				["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 			}),
@@ -937,10 +874,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
 				["coord"] = { 44.1, 79.9, DARNASSUS },
 				["timeline"] = { "added 4.0.1", "removed 8.0.1" },
-				["maps"] = {
-					STORMWIND_CITY,
-					DARNASSUS,
-				},
+				["maps"] = { STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
@@ -961,11 +895,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 47.56, 09.17, UNGORO_CRATER },	-- The Etymidian
 				},
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = {
-					UNGORO_CRATER,
-					SHOLAZAR_BASIN,
-					NORTHREND_DALARAN,
-				},
+				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 			}),
@@ -981,10 +911,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["coord"] = { 76.61, 81.23, SILVERMOON_CITY },
 				["timeline"] = { "added 2.4.0" },
-				["maps"] = {
-					SILVERMOON_CITY,
-					SHATTRATH_CITY,
-				},
+				["maps"] = { SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -997,7 +924,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
 				["coord"] = { 53.28, 15.25, STORMWIND_CITY },	-- Stormwind Embassy
 				["timeline"] = { "added 8.0.1" },
-				["maps"] = { STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
@@ -1014,10 +940,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 42.68, 12.61, BOREAN_TUNDRA },	-- Roo visits Winterfin
 				},
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = {
-					BOREAN_TUNDRA,
-					NORTHREND_DALARAN,
-				},
+				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 			}),
@@ -1029,10 +952,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 13927,	-- Little Orphan Kekek Of The Wolvar
 				["coord"] = { 46.38, 67.79, DRAGONBLIGHT },	-- Kekek taken to Snowfall Glade
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = {
-					DRAGONBLIGHT,
-					NORTHREND_DALARAN,
-				},
+				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 			}),
@@ -1050,7 +970,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["maps"] = {
 					THE_GREAT_SEAL,	-- Dazar'alor
 					HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
-					DAZARALOR,
 				},
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -1068,7 +987,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["coord"] = { 48.01, 40.28, BORALUS },	-- Orphan Matron Westerson
 				["timeline"] = { "added 8.0.1" },
-				["maps"] = { BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(110, 10, 110),
@@ -1083,7 +1001,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["coord"] = { 50.71, 73.94, AZSHARA },	-- Redhound Two-Seater
 				["timeline"] = { "added 4.0.1" },
 				["maps"] = {
-					AZSHARA,
 					ORGRIMMAR,
 					86,	-- Orgrimmar: The Drag
 				},
@@ -1107,10 +1024,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 46.32, 44.53, DRUSTVAR },	-- Ulfar's Den
 				},
 				["timeline"] = { "added 8.0.1" },
-				["maps"] = {
-					DRUSTVAR,
-					BORALUS,
-				},
+				["maps"] = { BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(110, 10, 110),
@@ -1139,7 +1053,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["coord"] = { 39.68, 78.68, ORGRIMMAR },	-- Orgimmar Embassy
 				["timeline"] = { "added 8.0.1" },
 				["maps"] = {
-					ORGRIMMAR,	-- Orgrimmar
 					86,	-- Orgrimmar: The Drag
 				},
 				["races"] = HORDE_ONLY,
@@ -1157,7 +1070,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["maps"] = {
 					ORGRIMMAR,
 					86,	-- Orgrimmar: The Drag
-					UNDERCITY,
 				},
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -1177,7 +1089,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 4.0.1" },
 				["maps"] = {
 					STORMWIND_CITY,
-					IRONFORGE,
 					1361,	-- Old Ironforge
 				},
 				["races"] = ALLIANCE_ONLY,
@@ -1196,10 +1107,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 50.71, 42.75, GRIZZLY_HILLS },	-- Roo taken to Grizzlemaw
 				},
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = {
-					GRIZZLY_HILLS,
-					NORTHREND_DALARAN,
-				},
+				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 			}),
@@ -1229,10 +1137,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 71.25, 40.81, DRAGONBLIGHT },	-- Roo taken to Bronze Dragonshrine
 				},
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = {
-					DRAGONBLIGHT,
-					NORTHREND_DALARAN,
-				},
+				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 			}),
@@ -1247,10 +1152,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 71.25, 40.81, DRAGONBLIGHT },	-- Roo taken to Bronze Dragonshrine
 				},
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = {
-					DRAGONBLIGHT,
-					NORTHREND_DALARAN,
-				},
+				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 			}),
@@ -1266,10 +1168,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["coord"] = { 59.81, 54.45, DRAGONBLIGHT },	-- Meet Alexstraza
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = {
-					DRAGONBLIGHT,
-					NORTHREND_DALARAN,
-				},
+				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 			}),
@@ -1285,10 +1184,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["coord"] = { 59.81, 54.45, DRAGONBLIGHT },	-- Meet Alexstraza
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = {
-					DRAGONBLIGHT,
-					NORTHREND_DALARAN,
-				},
+				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 			}),
@@ -1301,7 +1197,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["coord"] = { 60.74, 22.92, MULGORE },	-- Fallen Chieftain
 				["timeline"] = { "added 4.0.1" },
 				["maps"] = {
-					MULGORE,
 					ORGRIMMAR,
 					86,	-- Orgrimmar: The Drag
 					THUNDER_BLUFF,
@@ -1322,7 +1217,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["timeline"] = { "added 8.0.1" },
 				["maps"] = {
-					NAZMIR,
 					THE_GREAT_SEAL,	-- Dazar'alor
 					HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 					DAZARALOR,
@@ -1343,10 +1237,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["coord"] = { 27.11, 58.73, SHOLAZAR_BASIN },	-- Meet Hemest Nesingwary
 				["timeline"] = { "added 3.0.1" },
-				["maps"] = {
-					SHOLAZAR_BASIN,
-					NORTHREND_DALARAN,
-				},
+				["maps"] = { NORTHREND_DALARAN },
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(72, 10, 72),
 			}),
@@ -1358,10 +1249,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 53811,	-- Children's Week [Alliance - Kul Tiran]
 				["coord"] = { 42.47, 22.71, TIRAGARDE_SOUND },	-- Mountain Folk
 				["timeline"] = { "added 8.0.1" },
-				["maps"] = {
-					BORALUS,
-					TIRAGARDE_SOUND,
-				},
+				["maps"] = { BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(110, 10, 110),
@@ -1381,10 +1269,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 58.04, 41.50, THE_EXODAR },	-- Speak to O'ros
 				},
 				["timeline"] = { "added 2.0.1" },
-				["maps"] = {
-					THE_EXODAR,
-					SHATTRATH_CITY,
-				},
+				["maps"] = { SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -1406,7 +1291,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["timeline"] = { "added 8.0.1" },
 				["maps"] = {
-					VOLDUN,
 					THE_GREAT_SEAL,	-- Dazar'alor
 					HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 					DAZARALOR,
@@ -1427,7 +1311,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["timeline"] = { "added 8.0.1" },
 				["maps"] = {
-					ZULDAZAR,
 					THE_GREAT_SEAL,	-- Dazar'alor
 					HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 					DAZARALOR,
@@ -1459,10 +1342,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 53811,	-- Children's Week [Alliance - Kul Tiran]
 				["coord"] = { 72.57, 49.94, STORMSONG_VALLEY },	-- Shrine of the Storm View
 				["timeline"] = { "added 8.0.1" },
-				["maps"] = {
-					BORALUS,
-					STORMSONG_VALLEY,
-				},
+				["maps"] = { BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(110, 10, 110),
@@ -1483,7 +1363,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 64.76, 50.01, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
 				},
 				["timeline"] = { "added 2.0.1" },
-				["maps"] = { TANARIS, CAVERNS_OF_TIME, SHATTRATH_CITY },
+				["maps"] = { TANARIS, SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -1504,7 +1384,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 64.76, 50.01, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
 				},
 				["timeline"] = { "added 2.0.1" },
-				["maps"] = { TANARIS, CAVERNS_OF_TIME, SHATTRATH_CITY },
+				["maps"] = { TANARIS, SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -1523,10 +1403,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 60.65, 22.11, NAGRAND },	-- Speak to Elementalist Sharvak
 				},
 				["timeline"] = { "added 2.0.1" },
-				["maps"] = {
-					NAGRAND,
-					SHATTRATH_CITY,
-				},
+				["maps"] = { SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -1543,10 +1420,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["coord"] = { 76.61, 81.23, SILVERMOON_CITY },
 				["timeline"] = { "added 2.0.1", "added 2.4.0" },
-				["maps"] = {
-					SILVERMOON_CITY,
-					SHATTRATH_CITY,
-				},
+				["maps"] = { SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(60, 10, 60),
@@ -1559,10 +1433,7 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				["sourceQuest"] = 53811,	-- Children's Week [Alliance - Kul Tiran]
 				["coord"] = { 79.83, 82.51, TIRAGARDE_SOUND },	-- Meet with Pirates
 				["timeline"] = { "added 8.0.1" },
-				["maps"] = {
-					BORALUS,
-					TIRAGARDE_SOUND,
-				},
+				["maps"] = { BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = lvlsquish(110, 10, 110),
@@ -1698,7 +1569,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 				},
 				["timeline"] = { "added 4.1.0.13682" },
 				["maps"] = {
-					ORGRIMMAR,
 					86,	-- Ogrimmar: The Drag
 				},
 				["races"] = HORDE_ONLY,
@@ -1733,7 +1603,6 @@ _.Holidays = { applyholiday(CHILDRENS_WEEK, {
 					{ 66.61, 64.43, STORMWIND_CITY },
 				},
 				["timeline"] = { "added 4.1.0.13682" },
-				["maps"] = { STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					applyholiday(CHILDRENS_WEEK, i(69895, {	-- Green Balloon
