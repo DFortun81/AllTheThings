@@ -137,6 +137,7 @@ _.ExpansionFeatures =
 				1911,	-- Torghast Entrance
 				--
 				1986,	-- Uknown floor(Probably Mort-regar)
+				1980,	-- (Was just a normal floor, forgot the tower... maybe Fracture Chambers)
 			},
 		}),
 	}),

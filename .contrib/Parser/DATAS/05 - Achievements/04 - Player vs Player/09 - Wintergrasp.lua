@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	pvp(n(-9958, {	-- Player vs Player
+	pvp(n(PVP, {
 		n(-9995, {	-- Wintergrasp
 			ach(1752, {	-- Master of Wintergrasp
 				ach(1722),	-- Archavon the Stone Watcher [10 Man]

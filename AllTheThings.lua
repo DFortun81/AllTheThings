@@ -321,6 +321,22 @@ local insertionSort = function(t, compare)
 		end
 	end
 end
+-- Performs table.concat(tbl, sep, i, j) on the given table, but uses the specified field of table values if provided,
+-- with a default fallback value if the field does not exist on the table entry
+app.TableConcat = function (tbl, field, def, sep, i, j)
+	if tbl then
+		if field then
+			local tblvals, tinsert = {}, tinsert;
+			for _,val in ipairs(tbl) do
+				tinsert(tblvals, val[field] or def);
+			end
+			return table.concat(tblvals, sep, i, j);
+		else
+			return table.concat(tbl, sep, i, j);
+		end
+	end
+	return "";
+end
 
 -- Data Lib
 local attData;
@@ -1159,8 +1175,8 @@ local function GetProgressTextForRow(data)
 		if data.g and not data.expanded and #data.g > 0 then
 			return "+++";
 		end
+		return "---";
 	end
-	return "---";
 end
 local function GetProgressTextForTooltip(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
@@ -1427,8 +1443,6 @@ CreateObject = function(t)
 			t = app.CreateAchievement(t.achID or t.achievementID, t);
 		elseif t.recipeID then
 			t = app.CreateRecipe(t.recipeID, t);
-		elseif t.spellID then
-			t = app.CreateRecipe(t.spellID, t);
 		elseif t.itemID then
 			if t.isToy then
 				t = app.CreateToy(t.itemID, t);
@@ -1455,6 +1469,8 @@ CreateObject = function(t)
 			t = app.CreateTier(t.tierID, t);
 		elseif t.unit then
 			t = app.CreateUnit(t.unit, t);
+		elseif t.spellID then
+			t = app.CreateSpell(t.spellID, t);
 		else
 			-- if app.DEBUG_PRINT then print("CreateObject by value, no specific object type"); app.PrintTable(t); end
 			t = setmetatable({}, { __index = t });
@@ -3201,7 +3217,7 @@ local function FillPurchases(group, depth)
 	return group;
 end
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
-	if not search then return nil; end
+	if not search or search:find("%[]") then return; end
 	local now = time();
 	local cache = searchCache[search];
 	if cache and (now - cache[1]) < cache[2] then return cache[3]; end
@@ -3232,7 +3248,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if not group then group = {}; end
 	if a then paramA = a; end
 	if b then paramB = b; end
-	-- print("Raw Search", paramA, paramB, #group, ...);
 
 	-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 	if paramA == "creatureID" or paramA == "encounterID" then
@@ -3584,6 +3599,23 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 
+					-- Special case to double-check VisualID collection in Unique/Main modes because blizzard doesn't return consistent data
+					-- non-collected SourceID, non-collected* for Account, and in Unique Mode
+					if not sourceInfo.isCollected and not rawget(ATTAccountWideData.Sources, sourceID) and not app.Settings:Get("Completionist") then
+						local collected = app.ItemSourceFilter(sourceInfo);
+						if collected then
+							-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
+							-- does not return this SourceID, so it doesn't get flagged by the refresh logic and we need to track it manually for
+							-- this Account as being 'collected'
+							tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], "ffe35832") });
+							-- if the tooltip immediately refreshes for whatever reason the
+							-- store this SourceID as being collected* so it can be properly collected* during force refreshes in the future without requiring a tooltip search
+							if not ATTAccountWideData.BrokenUniqueSources then ATTAccountWideData.BrokenUniqueSources = {}; end
+							local uniqueSources = ATTAccountWideData.BrokenUniqueSources;
+							rawset(uniqueSources, sourceID, 1);
+						end
+					end
+
 					if app.IsReady and sourceGroup.missing then
 						tinsert(info, { left = Colorize("Item Source not found in the " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], "ffff0000") });	-- Do not localize first part of the message, it is for contribs
 						tinsert(info, { left = Colorize(sourceID .. ":" .. tostring(sourceInfo.visualID), "ffe35832") });
@@ -3803,7 +3835,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		if not root then
-			-- print("Create New Root")
+			-- print("Create New Root",paramA,paramB)
 			root = CreateObject({ [paramA] = paramB });
 		end
 		-- If rawLink exists, import it into the root
@@ -4033,27 +4065,21 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		if #knownBy > 0 then
-			insertionSort(knownBy, function(a, b)
-				return a.text < b.text;
-			end);
-			local desc = L["KNOWN_BY"];
-			for i,character in ipairs(knownBy) do
-				if i > 1 then desc = desc .. ", "; end
-				desc = desc .. (character.text or "???");
-			end
+			insertionSort(knownBy, function(a, b) return (a.name or "") < (b.name or ""); end);
+			local desc = L["KNOWN_BY"] .. app.TableConcat(knownBy, "text", "??", ", ");
 			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
 		end
 	end
 
-	-- If the user wants to show the progress of this search result, do so.
-	if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
+	-- If the user wants to show the progress of this search result, do so
+	if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
 		group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
 	end
 
 	-- If there was any informational text generated, then attach that info.
 	if #info > 0 then
 		group.tooltipInfo = info;
-		for i,item in ipairs(info) do
+		for _,item in ipairs(info) do
 			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 		end
 	end
@@ -5429,8 +5455,8 @@ local function RefreshSaves()
 end
 local function RefreshAppearanceSources()
 	app.DoRefreshAppearanceSources = nil;
-	wipe(ATTAccountWideData.Sources);
-	local collectedSources = ATTAccountWideData.Sources;
+	local collectedSources, brokenUniqueSources = ATTAccountWideData.Sources, ATTAccountWideData.BrokenUniqueSources;
+	wipe(collectedSources);
 	-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
 	-- Simply determine the max known SourceID from ATT cached sources
 	if not app.MaxSourceID then
@@ -5461,6 +5487,16 @@ local function RefreshAppearanceSources()
 			if rawget(collectedSources, s) == 1 then
 				-- collect shared visual sources
 				app.MarkUniqueCollectedSourcesBySource(s, currentCharacterOnly);
+			elseif brokenUniqueSources then
+				-- special reverse-check-logic for unknown SourceID's whose VisualID does not return the SourceID from C_TransmogCollection_GetAllAppearanceSources(VisualID)
+				-- and haven't already been marked as unique-collected
+				if rawget(brokenUniqueSources, s) and not rawget(collectedSources, s) then
+					local sInfo = C_TransmogCollection_GetSourceInfo(s);
+					if app.ItemSourceFilter(sInfo) then
+						-- print("Fixed Unique SourceID Collected",s)
+						rawset(collectedSources, s, 2);
+					end
+				end
 			end
 		end
 		-- print("Unique Refresh done")
@@ -5714,14 +5750,19 @@ local function AttachTooltipRawSearchResults(self, group)
 		end
 
 		self.AttachComplete = not group.working;
+		self.HasATTSearchResults = true;
 	end
 end
 local function AttachTooltipSearchResults(self, search, method, paramA, paramB, ...)
-	-- tooltips can skip to level 1
-	app.SetSkipPurchases(1);
-	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
-	app.SetSkipPurchases(0);
-	self.HasATTSearchResults = true;
+	-- Don't attach tooltip results multiple times
+	if not self.HasATTSearchResults then
+		-- print("build tooltip search",self.HasATTSearchResults,search)
+		-- tooltips can skip to level 1
+		app.SetSkipPurchases(1);
+		AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
+		app.SetSkipPurchases(0);
+	-- else print("skip tooltip search",self.HasATTSearchResults,search)
+	end
 end
 
 local npcQuestsCache = {}
@@ -5750,6 +5791,7 @@ end
 
 local function AttachTooltip(self)
 	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
+	-- print("AttachTooltip",self:GetItem(),"_",self:GetUnit(),"_",self:GetSpell())
 	local numLines = self:NumLines();
 	if numLines < 1 then
 		return false
@@ -5777,7 +5819,7 @@ local function AttachTooltip(self)
 	if CanAttachTooltips() then
 		-- check what this tooltip is currently displaying, and keep that reference
 		local link, target, spellID = select(2, self:GetItem());
-		if link then
+		if link and not link:find("%[]") then
 			if self.AllTheThingsProcessing and self.AllTheThingsProcessing == link then
 				return true;
 			else
@@ -6367,6 +6409,27 @@ end)();
 
 -- Achievement Lib
 (function()
+local cache = app.CreateCache("achievementID");
+local function CacheInfo(t)
+	local t, id = cache.GetCached(t);
+	--local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(t.achievementID);
+	local _, name, _, _, _, _, _, _, _, icon = GetAchievementInfo(id);
+	t.link = GetAchievementLink(id);
+	t.name = name or ("Achievement #"..id);
+	t.icon = icon or QUESTION_MARK_ICON;
+end
+local function default_name(t)
+	CacheInfo(t);
+	return cache.GetCachedField(t, "name");
+end
+local function default_link(t)
+	CacheInfo(t);
+	return cache.GetCachedField(t, "link");
+end
+local function default_icon(t)
+	CacheInfo(t);
+	return cache.GetCachedField(t, "icon");
+end
 app.AchievementFilter = 4;
 app.AchievementCharCompletedIndex = 13;
 local fields = {
@@ -6381,14 +6444,16 @@ local fields = {
 		end
 	end,
 	["text"] = function(t)
-		--local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(t.achievementID);
-		return GetAchievementLink(t.achievementID) or select(2, GetAchievementInfo(t.achievementID)) or ("Achievement #" .. t.achievementID);
+		return t.link or t.name;
 	end,
 	["link"] = function(t)
-		return GetAchievementLink(t.achievementID);
+		return cache.GetCachedField(t, "link", default_link);
+	end,
+	["name"] = function(t)
+		return cache.GetCachedField(t, "name", default_name);
 	end,
 	["icon"] = function(t)
-		return select(10, GetAchievementInfo(t.achievementID));
+		return cache.GetCachedField(t, "icon", default_icon);
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleAchievements;
@@ -11178,7 +11243,7 @@ local fields = {
 		return t.requireSkill;
 	end,
 };
-app.BaseSpell = app.BaseObjectFields(fields);
+app.BaseSpell = app.BaseObjectFields(fields, "BaseSpell");
 app.CreateSpell = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
 end
@@ -12153,7 +12218,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 	-- Get the source info for this source ID.
 	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 	if sourceInfo then
-		-- Go through all of the shared appearances and see if we're "unlocked" any of them.
+		-- Go through all of the shared appearances and see if we've "unlocked" any of them.
 		local unlockedSourceIDs, allSources = { sourceID }, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID);
 		for _,otherSourceID in ipairs(allSources) do
 			-- If this isn't the source we already did work on and we haven't already completed it
@@ -13234,7 +13299,7 @@ local function SetRowData(self, row, data)
 			relative = "RIGHT";
 			x = rowPad / 2;
 		end
-		local summary = GetProgressTextForRow(data);
+		local summary = GetProgressTextForRow(data) or "---";
 		local iconAdjust = summary and string.find(summary, "|T") and -1 or 0;
 		local specs = data.specs;
 		if specs and #specs > 0 then
@@ -14066,7 +14131,81 @@ RowOnEnter = function (self)
 			if numSpecializations and numSpecializations > 0 then
 				local encounterID = GetRelativeValue(reference.parent, "encounterID");
 				if encounterID then
-					local difficultyID = GetRelativeValue(reference.parent, "difficultyID");
+					-- TODO: revise in 9.1.5 when 'bonus drops' might be able to be identified via API calls (don't attribute to drop chance)
+					-- Why is Encounter Journal so weird? none of the API calls work unless the EJ is actually open... something is missing...
+
+					-- difficulty 0 seems to default to the lowest valid difficulty in the EJ
+					-- local tierID = GetRelativeValue(reference.parent, "tierID") or 0;
+					-- local instanceID = GetRelativeValue(reference.parent, "instanceID") or 0;
+					local difficultyID = GetRelativeValue(reference.parent, "difficultyID") or 0;
+					-- -- local funcs
+					-- local EJ_SetLootFilter, EJ_GetNumLoot = EJ_SetLootFilter, EJ_GetNumLoot;
+					-- local legacyLoot = C_Loot.IsLegacyLootModeEnabled();
+					-- print("tier/instance/encounter/difficulty",tierID,instanceID,encounterID,difficultyID)
+					-- EJ_SelectTier(tierID);
+					-- EJ_SelectInstance(instanceID);
+					-- EJ_SelectEncounter(encounterID);
+					-- EJ_SetDifficulty(difficultyID);
+					-- -- get total items
+					-- EJ_SetLootFilter(0, 0);
+					-- local totalItems = EJ_GetNumLoot() or 0;
+					-- print("diff/filter/items",EJ_GetDifficulty(),"/",EJ_GetLootFilter(),"/",totalItems)
+					-- -- Legacy Loot is simply 1 / total items chance since spec has no relevance to drops, i.e. this one item / total items in drop table
+					-- if totalItems > 0 then
+					-- 	GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], GetNumberWithZeros(100 / totalItems, 2) .. "%");
+					-- else
+					-- 	GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "N/A");
+					-- end
+
+					-- -- see what specs this reference item will drop for
+					-- local specs = reference.specs;
+					-- if specs then
+					-- 	local class, specItems, min, count = app.ClassIndex, {}, 100;
+					-- 	-- get items per spec and min items
+					-- 	for _,specID in pairs(specs) do
+					-- 		EJ_SetLootFilter(class, specID);
+					-- 		-- items for this spec
+					-- 		count = EJ_GetNumLoot() or 100;
+					-- 		print("class/spec/diff/filter/items",class,"/",specID,"/",EJ_GetDifficulty(),"/",EJ_GetLootFilter(),"/",count)
+					-- 		if count < min and count > 0 then
+					-- 			min = count;
+					-- 		end
+					-- 		specItems[specID] = count;
+					-- 	end
+					-- 	local chance = 100 / min;
+					-- 	local bestSpecs = {};
+					-- 	-- define the best specs based on min
+					-- 	for specID,count in pairs(specItems) do
+					-- 		if count == min then
+					-- 			tinsert(bestSpecs, specID);
+					-- 		end
+					-- 	end
+					-- 	-- print out the specs with min items
+					-- 	local specString = GetSpecsString(bestSpecs, true, true) or "???";
+					-- 	GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  GetNumberWithZeros(chance, 2).."% ("..GetNumberWithZeros(chance / 5, 2).."%) "..specString);
+					-- elseif legacyLoot then
+					-- 	-- Not available at all, best loot spec is the one with the most number of items in it.
+					-- 	print("legacy loot?")
+					-- 	-- local most, bestSpecID = 0;
+					-- 	-- for i=1,numSpecializations,1 do
+					-- 	-- 	local id = GetSpecializationInfo(i);
+					-- 	-- 	local specHit = specHits[id] or 0;
+					-- 	-- 	if specHit > most then
+					-- 	-- 		most = specHit;
+					-- 	-- 		bestSpecID = i;
+					-- 	-- 	end
+					-- 	-- end
+					-- 	-- if bestSpecID then
+					-- 	-- 	local id, name, description, icon = GetSpecializationInfo(bestSpecID);
+					-- 	-- 	if totalItems > 0 then
+					-- 	-- 		GameTooltip:AddDoubleLine(L["BONUS_ROLL"], GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
+					-- 	-- 	else
+					-- 	-- 		GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "N/A");
+					-- 	-- 	end
+					-- 	-- end
+					-- end
+
+
 					local encounterCache = fieldCache["encounterID"][encounterID];
 					if encounterCache then
 						local itemList = {};
@@ -14076,7 +14215,7 @@ RowOnEnter = function (self)
 							end
 						end
 						local specHits = {};
-						for i,item in ipairs(itemList) do
+						for _,item in ipairs(itemList) do
 							local specs = item.specs;
 							if specs then
 								for j,spec in ipairs(specs) do
@@ -14085,42 +14224,45 @@ RowOnEnter = function (self)
 							end
 						end
 
-						local totalItems = #itemList or 1; -- if somehow encounter drops 0 items but an item still references the encounter
+						local totalItems = #itemList; -- if somehow encounter drops 0 items but an item still references the encounter
+						local chance, color;
 						local legacyLoot = C_Loot.IsLegacyLootModeEnabled();
 
 						-- Legacy Loot is simply 1 / total items chance since spec has no relevance to drops, i.e. this one item / total items in drop table
 						if totalItems > 0 then
-							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], GetNumberWithZeros(100 / totalItems, 2) .. "%");
+							chance = 100 / totalItems;
+							color = GetProgressColor(chance / 100);
+							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "|c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
 						else
 							GameTooltip:AddDoubleLine(L["LOOT_TABLE_CHANCE"], "N/A");
 						end
 
 						local specs = reference.specs;
 						if specs and #specs > 0 then
-							local mySpecs = {};
-							for i=1,numSpecializations,1 do
-								mySpecs[select(1, GetSpecializationInfo(i))] = true;
-							end
-
 							-- Available for one or more loot specialization.
-							local least, bestSpecID = 99999999;
-							local matchingSpecs = {};
-							for i,spec in ipairs(specs) do
+							local least, bestSpecs = 999, {};
+							for _,spec in ipairs(specs) do
 								local specHit = specHits[spec] or 0;
-								if mySpecs[spec] then
-									matchingSpecs[spec] = true;
-
-									-- For Personal Loot!
-									if specHit > 0 and specHit < least then
-										least = specHit;
-										bestSpecID = spec;
-									end
+								-- For Personal Loot!
+								if specHit > 0 and specHit <= least then
+									least = specHit;
+									bestSpecs[spec] = specHit;
 								end
 							end
-							if bestSpecID then
-								local chance = (1 / specHits[bestSpecID]) * 100;
-								local id, name, description, icon = GetSpecializationInfoByID(bestSpecID);
-								GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  GetNumberWithZeros(chance, 2) .. "% (" .. GetNumberWithZeros(chance / 5, 2) .. "%) |T" .. icon .. ":0|t " .. name);
+							-- something has a best spec
+							if least < 999 then
+								-- define the best specs based on min
+								local rollSpec = {};
+								for specID,count in pairs(bestSpecs) do
+									if count == least then
+										tinsert(rollSpec, specID);
+									end
+								end
+								chance = 100 / least;
+								color = GetProgressColor(chance / 100);
+								-- print out the specs with min items
+								local specString = GetSpecsString(rollSpec, true, true) or "???";
+								GameTooltip:AddDoubleLine(legacyLoot and L["BEST_BONUS_ROLL_CHANCE"] or L["BEST_PERSONAL_LOOT_CHANCE"],  specString.."  |c"..color..GetNumberWithZeros(chance, 1).."%|r");
 							end
 						elseif legacyLoot then
 							-- Not available at all, best loot spec is the one with the most number of items in it.
@@ -14136,7 +14278,9 @@ RowOnEnter = function (self)
 							if bestSpecID then
 								local id, name, description, icon = GetSpecializationInfo(bestSpecID);
 								if totalItems > 0 then
-									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
+									chance = 100 / (totalItems - specHits[id]);
+									color = GetProgressColor(chance / 100);
+									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "|T" .. icon .. ":0|t " .. name .. " |c"..color..GetNumberWithZeros(chance, 1) .. "%|r");
 								else
 									GameTooltip:AddDoubleLine(L["BONUS_ROLL"], "N/A");
 								end
@@ -18826,9 +18970,9 @@ hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
 		end
 	end
 end)
-hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, itemID, reagentID, ...)
+hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, recipeID, reagentID, ...)
 	if CanAttachTooltips() then
-		local link = C_TradeSkillUI.GetRecipeReagentItemLink(itemID, reagentID);
+		local link = C_TradeSkillUI.GetRecipeReagentItemLink(recipeID, reagentID);
 		if link then
 			AttachTooltipSearchResults(self, link, SearchForLink, link);
 			self:Show();

@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(-9958, {	-- Player vs Player
+	pvp(n(PVP, {
 		n(-9983, {	-- Honor
 			ach(13703, {	-- Battlefield Master
 				ach(13701),	-- Battlefield Brawler

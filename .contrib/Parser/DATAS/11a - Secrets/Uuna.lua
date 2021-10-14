@@ -7,7 +7,7 @@ _.Secrets =
 	n(-804, {	-- Uuna
 		["description"] = "This secret is a prerequisite for Baa'l.  It requires having collected |cff0070d0Uuna's Doll|r, which drops from |cff883325The Many-Faced Devourer|r, a rare elite in Antoran Wastes.",
 		["modelScale"] = 1.1,
-		--["modelID"] = 80456,
+		["modelID"] = 76829,
 		["maps"] = {
 			BLACKROCK_MOUNTAIN,
 			BURNING_STEPPES,

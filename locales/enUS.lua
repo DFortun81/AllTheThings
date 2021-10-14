@@ -222,6 +222,7 @@ app.L = {
 	["QUEST_OBJECTIVE_INVALID"] = "Invalid Quest Objective";
 	["REFRESHING_COLLECTION"] = "Refreshing collection...";
 	["DONE_REFRESHING"] = "Done refreshing collection.";
+	["ADHOC_UNIQUE_COLLECTED_INFO"] = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";
@@ -486,7 +487,7 @@ app.L = {
 	["SKIP_CUTSCENES_CHECKBOX"] = "Automatically Skip Cutscenes";
 	["SKIP_CUTSCENES_CHECKBOX_TOOLTIP"] = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.";
 	["AUTO_BOUNTY_CHECKBOX"] = "Automatically Open the Bounty List";
-	["AUTO_BOUNTY__CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
+	["AUTO_BOUNTY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
 	["AUTO_MAIN_LIST_CHECKBOX"] = "Automatically Open the Main List";
 	["AUTO_MAIN_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want to automatically open the Main List when you login.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\n\nShortcut Command: /att";
 	["AUTO_MINI_LIST_CHECKBOX"] = "Automatically Open the Mini List";
@@ -829,7 +830,7 @@ app.L = {
 		[1572472] = app.asset("Holiday_Marchofmurloc"),	-- March of the Tadpoles
 		-- [1671628] = app.asset("TODO"),	-- Moonkin Festival
 		-- [1572475] = app.asset("TODO"),	-- Spring Balloon Festival
-		-- [1671627] = app.asset("TODO"),	-- The Great Gnomeregan Run
+		[1671627] = 236445,					-- The Great Gnomeregan Run
 		-- [1572478] = app.asset("TODO"),	-- Thousand Boat Bash
 		[1671631] = app.asset("Holiday_Trialofstyle"),	-- Trial of Style
 		-- [1574970] = app.asset("TODO"),	-- Un'Goro Madness
@@ -842,15 +843,14 @@ app.L = {
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
 		--[-] = "Interface\\Icons\\",														--
-		[0] = "Interface\\Icons\\INV_TreasureChest_FelfireCitadel",							-- Zone Drop
+	-- Commonly used
+		[0] = app.asset("Interface_Zone_drop"),												-- Zone Drop
 		[-1] = "Interface\\Icons\\Achievement_Garrison_Horde_PVE",							-- Common Boss Drop
-		[-2] = "Interface\\Icons\\INV_Misc_Coin_02",										-- Vendors
+		[-2] = app.asset("Interface_Vendor"),												-- Vendors
 		[-3] = app.asset("Category_Holidays"),												-- Holidays
 		[-4] = app.asset("Category_Achievements"),											-- Achievement
-		[-5] = "Interface\\Icons\\inv_misc_gem_bloodgem_01",								-- Prospecting
 		[-7] = app.asset("Interface_World_boss"),				                            -- World Bosses (Achievement_Boss_ShadeOfEranikus)
-		[-8] = "Interface\\Icons\\ability_monk_dragonkick",									-- PvE
-		[-9] = app.asset("Category_PvP"),													-- PvP
+		[-9] = app.asset("Category_PvP"),													-- Player vs. Player
 		[-10] = "Interface\\Icons\\achievement_reputation_05",								-- Party Sync
 		[-11] = "Interface\\Icons\\inv_misc_crate04horde",									-- Common Box Drops
 		[-12] = "Interface\\Icons\\Ability_Warlock_DemonicEmpowerment",						-- East entrance demons
@@ -859,40 +859,28 @@ app.L = {
 		[-15] = "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02",					-- Exploration
 		[-16] = app.asset("Interface_Rare"),												-- Rare
 		[-17] = app.asset("Interface_Quest_header"),										-- Quests
-		-- #if BEFORE WOD
-		[-18] = "Interface\\Icons\\INV_Misc_Bag_13", 										-- Rewards
-		-- #else
-		[-18] = "Interface\\Icons\\inv_misc_coinbag_special", 								-- Rewards
-		-- #endif
+		[-18] = app.asset("Interface_Rewards"),		 										-- Rewards
+		--[-18] = "Interface\\Icons\\inv_misc_coinbag_special", 								-- Rewards
 		[-19] = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",								-- Dragons of Nightmare
 		[-20] = "Interface\\Icons\\INV_Misc_Coin_02",										-- Common Vendor Items
 		[-21] = "Interface\\Icons\\achievement_pvp_h_12",									-- Captains
 		[-22] = app.asset("Category_Secrets"),												-- Secrets
 		[-23] = "Interface\\Icons\\item_maldraxxus_paragonchest_01",						-- WoD Common Dungeon Drop
-		
-		
 		[-26] = app.asset("Category_WorldDrops"),											-- Drop
-		
-		
-		[-31] = app.asset("Category_Promo"),												-- Promotion
-
-
+		[-31] = app.asset("Category_Promo"),												-- Promotions
 		[-34] = app.asset("Interface_WorldQuest"),							            	-- World Quests
 		[-36] = app.asset("Category_InGameShop"),											-- In-Game Shop
 		[-37] = "Interface\\Icons\\Garrison_Building_MageTower",							-- Discovery
 		[-38] = app.asset("Category_Professions"),											-- Professions
-
 		[-40] = "Interface\\Icons\\Inv_misc_book_17",										-- Legacy
 		[-41] = "Interface\\Icons\\TRADE_ARCHAEOLOGY",										-- Cache of Madness
--- Armor Types
+	-- Armor Types
 		[-43] = "Interface\\Icons\\inv_chest_cloth_21",										-- Cloth Armor
 		[-44] = "Interface\\Icons\\inv_chest_leather_09",									-- Leather Armor
 		[-45] = "Interface\\Icons\\inv_chest_chain_05",										-- Mail Armor
 		[-46] = "Interface\\Icons\\inv_chest_plate01",										-- Plate Armor
--- World Events
+	-- World Events (These are used by ATT CLassic)
 		[-47] = "Interface\\Icons\\achievement_worldevent_lunar",							-- Lunar Festival
-		
-		
 		[-52] = "Interface\\Icons\\inv_misc_toy_04",										-- Children's Week
 		[-53] = "Interface\\Icons\\inv_summerfest_symbol_high",								-- Midsummer Fire Festival
 		[-54] = "Interface\\Icons\\inv_summerfest_symbol_low",								-- Unused (Previously: Midsummer Fire Festival [Horde])
@@ -904,43 +892,50 @@ app.L = {
 		[-60] = "Interface\\Icons\\inv_thanksgiving_turkey",								-- Pilgrim's Bounty
 		[-61] = "Interface\\Icons\\achievement_worldevent_merrymaker",						-- The Feast of Winter Veil
 		[-62] = "Interface\\Icons\\inv_misc_fish_06",										-- Stranglethorn Fishing Extravaganza
-		
-		
+	-- Emerald Nightmare
 		[-68] = "Interface\\Icons\\spell_arcane_portalshattrath",							-- The Emerald Dream
+	-- Maraudon
 		[-69] = "Interface\\Icons\\spell_arcane_portalironforge",							-- Maraudon Purple
 		[-70] = "Interface\\Icons\\INV_Jewelcrafting_ArgusGemUncut_Orange_MiscIcons",		-- Orange
 		[-71] = "Interface\\Icons\\INV_Jewelcrafting_ArgusGemUncut_Purple_MiscIcons",		-- Purple
-		--[-72] Used for rare in Talador													-- Sargerei War Council
+
 		[-73] = "Interface\\Icons\\achievement_zone_silithus_01",							-- Call of the Scarab
 		[-75] = "Interface\\Icons\\Achievement_Zone_Blackrock_01",							-- Detention Block
 		[-76] = "Interface\\Icons\\Achievement_Zone_Blackrock_01",							-- Shadowforge City
 		[-77] = "Interface\\Icons\\Inv_archaeology_70_starlightbeacon",						-- Special
+	-- Zul'Aman
 		[-78] = "Interface\\Icons\\INV_Misc_Basket_05",										-- Timed Event
 		[-79] = "Interface\\Icons\\INV_Misc_Bag_28_Halloween",								-- First Chest
 		[-80] = "Interface\\Icons\\inv_misc_treasurechest03a",								-- Second Chest
 		[-81] = "Interface\\Icons\\INV_Misc_Bag_10",										-- Third Chest
 		[-82] = "Interface\\Icons\\INV_Box_01",												-- Final Chest
 
-
+	-- SM
 		[-85] = "Interface\\Icons\\Achievement_BG_Xkills_AVgraveyard",						-- Graveyard (SM)
 		[-86] = "Interface\\Icons\\INV_Misc_Book_13",										-- Library (SM)
 		[-87] = "Interface\\Icons\\Garrison_Building_Armory",								-- Armory (SM)
 		[-88] = "Interface\\Icons\\Ability_Paladin_GaurdedbytheLight",						-- Cathedral (SM)
+	-- Terrace of Endless Spring loot
 		[-90] = "Interface\\Icons\\INV_Misc_Bone_Skull_01",									-- Elite
 
-		
 		[-93] = "Interface\\Icons\\Achievement_zone_silithus_01",							-- Silithus (The Wound)
 		[-94] = "Interface\\Icons\\inv_misc_lockbox_1",										-- Black Market AH
-		
-		[-96] = "Interface\\Icons\\Achievement_Quests_Completed_08",						-- Quest NPCs
-		[-97] = "Interface\\Icons\\ability_rogue_dirtydeeds",								-- Never Implemented
-		[-98] = "Interface\\Icons\\inv_garrison_resource",									-- Garrisons
+	-- Garrisons
 		[-99] = "Interface\\Icons\\inv_garrison_resource",									-- Buildings
 		[-101] = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",					-- Followers
+	-- Druid Feral Druid Hidden Artifact Appearance
+		[-130] = "Interface\\Icons\\achievement_zone_duskwood",								-- Duskwood Active
+		[-131] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Active
+		[-132] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Active
+		[-133] = "Interface\\Icons\\achievement_zone_duskwood",								-- Duskwood Activated
+	-- Garrisons Invasions TODO: what levels?
 		[-136] = "Interface\\Icons\\achievement_bg_defendxtowers_av",						-- Garrison Invasion
-		[-139] = app.asset("Interface_World_boss"),											-- Raid Bosses
-		
--- WoD Dungeons(Fake npcid)
+	-- Class Trial
+		[-137] = "Interface\\Icons\\achievement_level_90",									-- Level 90
+		[-138] = "Interface\\Icons\\achievement_level_100",									-- Level 100
+	--
+		[-139] = app.asset("Interface_World_boss"),											-- Bosses
+	-- WoD Dungeons(Fake npcid)
 		[-140] = select(6, EJ_GetInstanceInfo(547)),										-- Auchindoun
 		[-141] = select(6, EJ_GetInstanceInfo(385)),										-- Bloodmaul Slag Mines
 		[-142] = select(6, EJ_GetInstanceInfo(536)),										-- Grimrail Depot
@@ -949,66 +944,81 @@ app.L = {
 		[-145] = select(6, EJ_GetInstanceInfo(476)),										-- Skyreach
 		[-146] = select(6, EJ_GetInstanceInfo(556)),										-- The Everbloom
 		[-147] = select(6, EJ_GetInstanceInfo(559)),										-- Upper Blackrock Spire
-		
-		
+	-- Garrison
 		[-152] = "Interface\\Icons\\achievement_zone_draenor_01",							-- Garrison Campaign
-		[-153] = 1103070,																	-- Work Orders (Inv_icon_mission_complete_order)
-	--	[-155] = 236566,																	-- Level 48 (old Level 110)
+		[-153] = 1103070,																	-- Work Orders
+	-- Class Trial
+		[-155] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Level 48 (old level 110)																	-- Level 48 (old Level 110)
 		[-155] = 236566,																	-- Level 50 (old Level 120)
+	-- Druid Feral Druid Hidden Artifact Appearance
+		[-157] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Activated
+		[-158] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Activated
+	-- Class Hall /Artifact
+		-- [-159] = Uses different icons													-- Daily Dreamway Event Roll
+	-- Collections
 		[-160] = app.asset("Category_Mounts"),												-- Mounts
 		[-161] = app.asset("Category_ToyBox"),												-- Toy
 		[-162] = "Interface\\Icons\\inv_box_petcarrier_01",									-- Pets
+	-- Armor
 		[-163] = "Interface\\Icons\\garrison_purplearmor",									-- Armor
-		[-168] = "Interface\\Icons\\Achievement_Quests_Completed_04",						-- Other Quests
+	-- Junkboxes
+		[-165] = "Interface\\Icons\\inv_box_01",											-- Junkboxes
+	-- Emissary
 		[-169] = app.asset("Interface_Emissary_Callings"),								    -- Emissary Quests
+	-- Legion Artifact Questline
 		[-170] = "Interface\\Icons\\spell_shaman_maelstromweapon",							-- Balance of Power
+	-- Events
 		[-173] = "Interface\\Icons\\spell_holy_borrowedtime",								-- Timewalking
-		[-174] = "Interface\\Icons\\INV_DARKMOON_EYE",										-- Darkmoon Faire
 		[-176] = 3753381,																	-- Weekly Holidays
-		[-178] = "Interface\\Icons\\Creatureportrait_Goblin_Rocket",						-- Goblin Engineering
-		[-179] = "Interface\\Icons\\INV_Gnomish_XRAY_Specs",								-- Gnomish Engineering
-		[-195] = "Interface\\Icons\\ClassIcon_Priest",										-- Priest
-		[-196] = "Interface\\Icons\\ClassIcon_Mage",										-- Mage
-		[-197] = "Interface\\Icons\\ClassIcon_Warlock",										-- Warlock
-		[-198] = "Interface\\Icons\\ClassIcon_Druid",										-- Druid
-		[-199] = "Interface\\Icons\\ClassIcon_Rogue",										-- Rogue
-		[-200] = "Interface\\Icons\\ClassIcon_Hunter",										-- Hunter
-		[-201] = "Interface\\Icons\\ClassIcon_Shaman",										-- Shaman
-		[-202] = "Interface\\Icons\\ClassIcon_Paladin",										-- Paladin
-		[-203] = "Interface\\Icons\\ClassIcon_Warrior",										-- Warrior
-		[-204] = "Interface\\Icons\\ClassIcon_DeathKnight",									-- Death Knight
+	-- Item Sets
 		[-211] = 1530081,																	-- New Characters
+	-- Treasure Chest
 		[-212] = app.asset("Interface_Tchest"),									            -- Treasure Chest
+	-- Dalaran Sub-Zone
 		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",								-- The Underbelly
-		[-215] = "Interface\\Icons\\INV_Pet_Naaru",											-- Vindicaar
+	-- PvP
 		[-216] = "Interface\\Icons\\ability_rogue_combatreadiness",							-- Prestige
+	-- Fishing
 		[-217] = "Interface\\Icons\\INV_Fishing_Lure_Worm",									-- Lures (for Fishing)
 		[-218] = "Interface\\Icons\\Achievement_Profession_Fishing_NorthrendAngler",		-- Coastal (for Fishing)
-		[-219] = "Interface\\MINIMAP\\TRACKING\\Profession",								-- Profession Trainers
+	-- Class
 		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",										-- Class
+	-- Bonus Objectives
 		[-221] = 237387,																	-- Bonus Objectives
-		[-222] = "Interface\\Icons\\inv_misc_coin_01",										-- Treasure Hunter
-		[-223] = "Interface\\Icons\\achievement_quests_completed_daily_07",					-- Daily
-		[-224] = "Interface\\Icons\\ClassIcon_DemonHunter",									-- Demon Hunter
-		[-225] = "Interface\\Icons\\spell_lightning_lightningbolt01",						-- Elemental Bonds
+	-- Misc Victory (Used in many Places)
 		[-227] = "Interface\\ICONS\\spell_holy_divinepurpose",								-- Victory
+	-- Flight Path
 		[-228] = app.asset("Category_FlightPaths"),											-- Flight Paths
-		[-231] = "Interface\\Icons\\Spell_Shadow_DeathScream",
-		[-232] = "Interface\\Icons\\Spell_Shadow_DeathScream",
+	-- Misc Weekly (Used in Many Places)
+		[-229] = "Interface\\Icons\\Achievement_Quests_Completed_Daily_04",					-- Weekly
+	-- Warfronts
 		[-233] = "Interface\\Icons\\achievement_zone_arathihighlands_01",					-- Warfront: The Battle for Stromgarde
-		[-235] = "Interface\\Icons\\inv_scroll_05",
+	-- Recipes (Only used in BMAH atm)
+		[-235] = "Interface\\Icons\\inv_scroll_05",											-- Recipes
+	-- War Campaign
 		[-236] = "Interface\\Icons\\ui_alliance_7legionmedal",								-- Alliance War Campaign
+	-- Warfront
 		[-237] = "Interface\\Icons\\achievement_zone_darkshore_01",							-- Warfront: The Battle for Darkshore
+	-- PvP
+		[-240] = "Interface\\Icons\\Achievement_BG_KillXEnemies_GeneralsRoom",				-- Rated
+		[-242] = "Interface\\Icons\\Achievement_BG_KillXEnemies_GeneralsRoom",				-- Unrated
 		[-243] = "Interface\\Icons\\ability_hunter_markedfordeath",							-- Bounty
-		[-246] = "Interface\\Icons\\inv_misc_ornatebox",									-- Is Another Man's Treasure
-		[-247] = "Interface\\Icons\\racial_dwarf_findtreasure",								-- Riches of Pandaria
+	-- War Campaign
 		[-253] = "Interface\\Icons\\ui_horde_honorboundmedal",								-- Horde War Campaign
+	-- Allied Races
 		[-254] = "Interface\\Icons\\FactionChange",											-- Allied Races & Heritage
+	-- Mailbox
 		[-297] = "Interface\\Icons\\inv_letter_17",											-- Mailbox
+	-- Garrison Missons
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000",						-- Missions
+	-- PvP
+		[-302] = "Interface\\Icons\\expansionicon_cataclysm",								-- Level Range 80-84
+		[-303] = "Interface\\Icons\\expansionicon_mistsofpandaria",							-- Level Range 85-89
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",										-- Battlegrounds
+	-- Meta Armor/Weapon
 		[-318] = "Interface\\Icons\\garrison_purplearmor",									-- Armor
 		[-319] = "Interface\\Icons\\garrison_purpleweapon",									-- Weapons
+	-- Armor Slots
 		[-320] = "Interface\\Icons\\inv_helmet_03",											-- Head
 		[-321] = "Interface\\Icons\\inv_shoulder_05",										-- Shoulder
 		[-322] = "Interface\\Icons\\inv_misc_cape_11",										-- Back
@@ -1020,6 +1030,7 @@ app.L = {
 		[-328] = "Interface\\Icons\\inv_belt_24",											-- Waist
 		[-329] = "Interface\\Icons\\inv_pants_09",											-- Legs
 		[-330] = "Interface\\Icons\\inv_boots_09",											-- Feet
+	-- Weapon Slots
 		[-331] = "Interface\\Icons\\inv_misc_orb_01",										-- Held in Off-hand
 		[-332] = "Interface\\Icons\\inv_shield_06",											-- Shield
 		[-333] = "Interface\\Icons\\inv_weapon_shortblade_01",								-- Daggers
@@ -1037,43 +1048,72 @@ app.L = {
 		[-346] = "Interface\\Icons\\inv_weapon_bow_05",										-- Bows
 		[-347] = "Interface\\Icons\\inv_weapon_crossbow_01",								-- Crossbows
 		[-348] = "Interface\\Icons\\inv_misc_monsterclaw_02",								-- Fist Weapons
+	-- Cosmetic
 		[-349] = "Interface\\Icons\\Ability_Mage_IceForm",									-- Cosmetic
-		[-351] = "Interface\\Icons\\Achievement_Garrison_Horde_PVE",						-- Boss Drop
+	-- Titanforged/Warforged
 		[-355] = "Interface\\Icons\\misc_arrowlup",											-- Titanforged
+	-- First Questline Draenor
 		[-356] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Assault on the Dark Portal
+	-- Outposts in Draenor
 		[-357] = "Interface\\Icons\\garrison_building_sparringarena",						-- Sparring Arena Outpost (Gorgond)
 		[-358] = "Interface\\Icons\\garrison_building_lumbermill",							-- Lumber Mill Outpost (Gorgrond)
+		[-360] = "Interface\\Icons\\inv_misc_runedorb_01",									-- Arcane Sanctum
+		[-361] = "Interface\\Icons\\ability_vehicle_siegeenginecannon",						-- Artillery Tower
 		[-363] = "Interface\\Icons\\achievement_reputation_argentchampion",					-- The Argent Tournament
-		[-364] = 236215,																	-- Legendaries
-		[-365] = 135360,																	-- Heirlooms
+	-- Pre Class Hall Monk
+		[-362] = "Interface\\Icons\\ability_monk_legacyoftheemperor",						-- Peak of Serenity
+	-- Legendaries
+		[-364] = app.asset("Weapon_Type_Legendary"),										-- Legendaries
+	-- Heirlooms
+		[-365] = app.asset("Weapon_Type_Heirloom"),											-- Heirlooms
+	-- Naxxramas
 		[-367] = "Interface\\Icons\\ability_rogue_deviouspoisons",							-- The Construct Quarter
 		[-368] = "Interface\\Icons\\inv_trinket_naxxramas04",								-- The Arachnid Quarter
 		[-369] = "Interface\\Icons\\spell_deathknight_classicon",							-- The Military Quarter
 		[-370] = "Interface\\Icons\\inv_misc_cauldron_nature",								-- The Plague Quarter
 		[-371] = "Interface\\Icons\\inv_misc_head_dragon_blue",								-- The Upper Necropolis
+	-- Operation:Mechagon
 		[-379] = "Interface\\Icons\\inv_misc_blizzcon09_graphicscard",						-- Junkyard
 		[-380] = "Interface\\Icons\\inv_misc_key_06",										-- Workshop
-		[-382] = "Interface\\FriendsFrame\\Battlenet-Battleneticon.blp",					-- BattleTag
+	-- Misc Armor Slots
 		[-383] = "Interface\\Icons\\inv_misc_gem_variety_02",								-- Miscellaneous
 		[-384] = "Interface\\Icons\\inv_jewelcrafting_70_maxlvlneck_green",					-- Neck
 		[-385] = "Interface\\Icons\\inv_70_dungeon_ring5a",									-- Finger
 		[-386] = "Interface\\Icons\\inv_qirajidol_obsidian",								-- Trinket
 		[-387] = "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",							-- Relic
+	-- Stratholme
 		[-388] = "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",							-- Main Gate (Stratholme)
 		[-389] = "Interface\\Icons\\INV_MISC_KEY_13",										-- Service Entrance (Stratholme)
-		[-390] = "Interface\\Icons\\inv_misc_coinbag_special",								-- Smuggling Run!
+	-- Draenor Outposts
+		[-390] = "Interface\\Icons\\inv_misc_coinbag_special",								-- Smuggler's Den
 		[-391] = "Interface\\Icons\\achievement_guildperk_hastyhearth",						-- Stoktron Brewery (alliance)
 		[-392] = "Interface\\Icons\\achievement_guildperk_hastyhearth",						-- Hearthfire Tavern (horde)
+	-- Icecrown Citadel
 		[-393] = "Interface\\Icons\\achievement_dungeon_icecrown_icecrownentrance",			-- Storming the Citadel
 		[-394] = "Interface\\Icons\\achievement_dungeon_plaguewing",						-- The Plagueworks
 		[-395] = "Interface\\Icons\\achievement_dungeon_crimsonhall",						-- The Crimson Halls
 		[-396] = "Interface\\Icons\\achievement_dungeon_icecrown_frostwinghalls",			-- The Frostwing Halls
+	-- BFA Outposts
 		[-397] = "Interface\\Icons\\inv_icon_daily_mission_scroll",							-- Outposts
+	-- T0.5
 		[-420] = "Interface\\Icons\\INV_Chest_Plate03",										-- Tier 0.5 Sets
+	-- BFA War Chest
+		[-488] = "Interface\\Icons\\inv_misc_treasurechest04b",								-- Daily War Chest
+	-- Tarot Cards
 		[-491] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",							-- Tarot Cards
+	-- Misc
 		[-494] = "Interface\\Icons\\Ability_Shaman_Ascendance",								-- Miscellaneous
+	-- Class Hall Demon Hunter
 		[-498] = "Interface\\Icons\\inv_offhand_hyjal_d_01",								-- Twisting Nether (Demon Hunter Order Hall advancement)
-		[-500] = "Interface\\Icons\\inv_misc_celebrationcake_01",							-- WoW Anniversary
+		-- Mole Machine
+		[-517] = "Interface\\Icons\\ability_racial_molemachine",							-- Mole Machine
+	-- Blizzard Events and Anniversaries
+		[-520] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",					-- Expansion Pre-Launch
+		[-522] = "Interface\\Icons\\expansionicon_wrathofthelichking",						-- Wotlk: Zombie Infestation
+		[-523] = "Interface\\Icons\\expansionicon_cataclysm",								-- Cataclysm: Elemental Unrest
+		[-525] = "Interface\\Icons\\Achievement_Boss_Blackhand",							-- WoD: Iron Horde Incursion
+		[-526] = "Interface\\Icons\\inv_legionadventure",									-- Legion: Legion Invasion
+		[-527] = "Interface\\Icons\\Spell_Shaman_StormEarthFire",							-- BFA: War of the Thorns
 		[-531] = "Interface\\Icons\\inv_jewelry_amulet_03",									-- Spirit of Competition
 		[-532] = "Interface\\Icons\\ability_shaman_stormstrike",							-- Heroes of the Storm
 		[-533] = "Interface\\Icons\\Inv_misc_rune_01",										-- Hearthstone
@@ -1111,10 +1151,26 @@ app.L = {
 		[-577] = "Interface\\Icons\\INV_MISC_FILM_01",										-- Warcraft Movie
 		[-578] = app.asset("Expansion_CLASSIC"),											-- World of Warcraft 15th Anniversary
 		[-579] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Dark Portal Pass
+	-- Raid Buff Stack Size in Uldir
+		[-583] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 1
+		[-584] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 2
+		[-585] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 3
+		[-586] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 4
+		[-587] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 5
+		[-588] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 6
+		[-589] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 7
+		[-590] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 8
+		[-591] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 9
+		[-592] = "Interface\\Icons\\inv_trinket_80_titan02c",								-- Power Increased to Level 10
 		[-593] = "Interface\\Icons\\70_inscription_deck_Hellfire",							-- Kill Credit 1
 		[-594] = "Interface\\Icons\\70_inscription_deck_Hellfire_2",						-- Kill Credit 2
 		[-595] = "Interface\\Icons\\70_inscription_deck_Hellfire_3",						-- Kill Credit 3
-		[-650] = 1455894,																	-- Rated Battlegrounds
+	-- Need these spells here because if we use them in the file it won't allow the quest to mark as complete due to it not being designed that way.
+	-- This is the workaround.
+	-- Quest Items - Used in NYI
+		--[-600] = Doesnt need icon															-- Quest Items
+	-- PvP Headers
+		--[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
 		--[-652] = "Interface\\Worldmap\\GlowSkull_64",										-- Not used yet. Future PvP Icons if needed
 		[-651] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Honor Gear Prideful (S15)
@@ -1125,29 +1181,36 @@ app.L = {
 		[-656] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Honor Gear Ruthless (S10)
 		[-657] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",							-- Hateful Gladiator: Season 5 (Medium Gear)
 		[-658] = app.asset("Expansion_TBC"),												-- Pre-Season BC
+	-- PvP Set Names
 		[-659] = "Interface\\Worldmap\\GlowSkull_64Green",									-- Aspirant PvP Gear
 		[-660] = "Interface\\Worldmap\\GlowSkull_64Blue",									-- Combatant PvP Gear
 		[-661] = "Interface\\Worldmap\\GlowSkull_64Purple",									-- Gladator PvP Gear
 		[-662] = "Interface\\Worldmap\\GlowSkull_64Red",									-- Elite PvP Gear
+	-- The Burning Crusade PvP Seasons
 		[-663] = 463450,																	-- Classic Honor System
 		[-664] = "Interface\\Icons\\achievement_featsofstrength_gladiator_01",				-- Gladiator: Season 1
 		[-665] = "Interface\\Icons\\achievement_featsofstrength_gladiator_01",				-- Merciless Gladiator: Season 2
 		[-666] = "Interface\\Icons\\achievement_featsofstrength_gladiator_02",				-- Vengeful Gladiator: Season 3
 		[-667] = "Interface\\Icons\\achievement_featsofstrength_gladiator_03",				-- Brutal Gladiator: Season 4
+	-- Wrath of the Lich-King PvP Seasons
 		[-668] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",							-- Deadly Gladiator: Season 5
 		[-669] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",							-- Furious Gladiator: Season 6
 		[-670] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",							-- Relentless Gladiator: Season 7
 		[-671] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",							-- Wrathful Gladiator: Season 8
+	-- Cataclysm PvP Seasons
 		[-672] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Vicious Gladiator: Season 9
 		[-673] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Ruthless Gladiator: Season 10
 		[-674] = 236235,																	-- Cataclysmic Gladiator: Season 11
+	-- Mists of Pandaria PvP Seasons
 		[-675] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Malevolent Gladiator: Season 12
 		[-676] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Tyrannical Gladiator: Season 13
 		[-677] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Grievous Gladiator: Season 14
 		[-678] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Prideful Gladiator: Season 15
+	-- Warlords of Dreanor PvP Seasons
 		[-679] = "Interface\\Icons\\inv_fellessergronnmount",								-- Primal Gladiator: Warlords Season 1
 		[-680] = "Interface\\Icons\\inv_fellessergronnmount_pale",							-- Wild Gladiator: Warlords Season 2
 		[-681] = "Interface\\Icons\\inv_fellessergronnmount_dark",							-- Warmongering Gladiator: Warlords Season 3
+	-- Legion PvP Seasons
 		[-682] = "Interface\\Icons\\inv_stormdragonmount2",									-- Vindictive Gladiator: Legion Season 1
 		[-683] = "Interface\\Icons\\inv_stormdragonmount2blue",								-- Fearless Gladiator: Legion Season 2
 		[-684] = "Interface\\Icons\\inv_stormdragonmount2dark",								-- Cruel Gladiator: Legion Season 3
@@ -1155,16 +1218,23 @@ app.L = {
 		[-686] = "Interface\\Icons\\inv_stormdragonmount2light",							-- Fierce Gladiator: Legion Season 5
 		[-687] = "Interface\\Icons\\inv_stormdragonmount2yellow",							-- Dominant Gladiator: Legion Season 6
 		[-688] = "Interface\\Icons\\inv_stormdragonmount2_fel",								-- Demonic Gladiator: Legion Season 7
+	-- Battle for Azeroth PvP Seasons
 		[-689] = "Interface\\Icons\\inv_protodrakegladiatormount_gold",						-- Dread Gladiator: Battle for Azeroth Season 1
 		[-690] = "Interface\\Icons\\inv_protodrakegladiatormount_blue",						-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-691] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",					-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = "Interface\\Icons\\inv_protodrakegladiatormount_black",					-- Corrupted Gladiator: Battle for Azeroth Season 4
+	-- Shadowlands PvP Seasons
 		[-693] = "Interface\\Icons\\inv_shadebeastmount",									-- Sinful Gladiator: Shadowlands Season 1
 		[-694] = 3949827,																	-- Unchained Gladiator: Shadowlands Season 2
+	-- More PvP Seasons are likely to come dont use IDs here
+	-- Pets
 		[-796] = app.asset("Category_PetBattles"),											-- Battle
 		[-797] = 631719,																	-- Journal
+	-- Toys
 		[-798] = app.asset("Category_SelfieFilters"),										-- Selfie Filter
+	-- Timeless Isle
 		[-799] = "775461",																	-- Burden of Eternity
+	-- Secret Header
 		[-800] = "Interface\\Icons\\inv_horse2purple",										-- Lucid Nightmare
 		[-801] = "Interface\\Icons\\inv_serpentmount_darkblue",								-- Riddler's Mind-Worm
 		[-802] = "Interface\\Icons\\inv_faeriedragon2_orange",								-- Sun Darter Hatchling
@@ -1173,8 +1243,11 @@ app.L = {
 		[-806] = "Interface\\Icons\\inv_belt_armor_waistoftime_d_01",						-- Waist of Time
 		[-807] = "Interface\\Icons\\inv_hivemind",											-- Hivemind
 		[-808] = 2998185,																	-- Bound Shadehound
+	-- More Secrets are likely to come dont use IDs here
+	-- Chests
 		[-850] = "Interface\\Icons\\INV_Eng_Crate2",										-- Mechanized Chest
 		[-851] = "Interface\\Icons\\INV_Eng_Crate2",										-- Irontide Lockbox
+	-- Heart of Azeroth
 		[-852] = "Interface\\Icons\\inv_heartofazeroth",									-- Azerite Essences
 		[-853] = "Interface\\Icons\\inv_azeritedebuff",										-- All Roles
 		[-854] = "Interface\\Icons\\spell_fire_twilightpyroblast",							-- DPS
@@ -1186,15 +1259,15 @@ app.L = {
 		[-860] = "Interface\\Icons\\inv_smallazeriteshard",									-- Rank 3
 		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
 		[-862] = "Interface\\Icons\\inv_heartofazeroth",									-- Heart of Azeroth
+	-- SL Headers
 		[-900] = 3675495,																	-- Covenant Sanctums
 		[-901] = 3726261,																	-- Covenant Callings
 		[-902] = 3726261,																	-- Renown
-		[-903] = "Interface\\Icons\\buff_feltreasures",										-- Zone Rewards
+		[-903] = app.asset("Interface_Rewards"),											-- Zone Rewards
 		[-904] = "Interface\\Icons\\ui_torghast",											-- Wrath of the Jailer
 		[-905] = 3675495,																	-- Command Table
 		[-906] = 3675495,																	-- Tier 1: Tactical Insight
 		[-913] = "Interface\\Icons\\ui_torghast",											-- Tormentors of Torghast
-
 		[-915] = "Interface\\Icons\\sanctum_features_animadiversion",						-- Anima Conductor
 		[-916] = "Interface\\Icons\\sanctum_features_animadiversion",						-- Tier 1: Flowing Tendrils
 		[-917] = "Interface\\Icons\\sanctum_features_animadiversion",						-- Tier 2: Streaming Threads
@@ -1231,9 +1304,6 @@ app.L = {
 		[-3349] = 3854018,																	-- Tier 2: Leap of Power
 		[-3350] = 3854018,																	-- Tier 3: Eternal Paths
 		[-949] = "Interface\\Icons\\ui_sigil_venthyr",										-- Covenant: Venthyr
-
-
-
 		[-950] = 3854020,																	-- Transport Network
 		[-951] = 3854020,																	-- Tier 1: Mirror Mirror
 		[-952] = 3854020,																	-- Tier 2: Looking Glass
@@ -1268,8 +1338,12 @@ app.L = {
 		[-985] = 1392911,																	-- Coldheart Interstitia
 		[-986] = 2178500,																	-- Mort'regar
 		[-987] = 2178509,																	-- The Upper Reaches
+		--
+	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
+	-- Black Vault
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
+	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2202] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1282,10 +1356,9 @@ app.L = {
 		[-2209] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2210] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2211] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+	-- T3
 		[-3179] = "Interface\\Icons\\achievement_dungeon_naxxramas",						-- Tier 3 Sets
-		[-3198] = "Interface\\Icons\\inv_misc_beer_01",										-- Brewfest Garb
-		[-3199] = "Interface\\Icons\\ability_mage_firestarter",								-- Midsummer Reveler Set
-		-- Island Expeditions
+	-- Island Expeditions Sets
 		[-3315] = "Interface\\Icons\\Inv_helm_robe_raidwarlock_j_01",						-- Spider Acolyte
 		[-3316] = "Interface\\Icons\\inv_helmet_robe_raidpriest_j_01",						-- Hydraxian
 		[-3317] = "Interface\\Icons\\Inv_helmet_robe_raidmage_j_01",						-- Frostwind
@@ -1315,21 +1388,19 @@ app.L = {
 		[-3342] = "Interface\\Icons\\inv_helm_cloth_vrykulcaster_b_01",						-- Fallen Runelord
 		[-3343] = "Interface\\Icons\\inv_helmet_153",										-- Choking Winter
 		[-3344] = "Interface\\Icons\\inv_helmet_157",										-- Frostsworn
-		[-3345] = "Interface\\Icons\\Inv_helmet_151",
+		[-3345] = "Interface\\Icons\\Inv_helmet_151",										-- Sanctified Scourgelord
 		[-3347] = "Interface\\Icons\\inv_plate_draenorlfr_c_01helm",						-- Black Tooth Grunt
-
 		[-4189] = "Interface\\Icons\\achievement_legionpvptier4",							-- Instance Item Sets, PvP
 		[-4191] = "Interface\\Icons\\Achievement_PVP_Legion08",
-
 		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Class Trial Item Sets
 		[-6013] = app.asset("Category_Factions"),											-- Faction
 		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",							-- Cities
-
 		[-7776] = "Interface\\Icons\\INV_Helm_Cloth_Holiday_Christmas_A_03",				-- Winter Revelers (for Winter Veil)
-
+	-- Horde/Alliance/Neutral
 		[-9912] = "Interface\\FriendsFrame\\PlusManz-PlusManz",						-- Neutral
 		[-9913] = "Interface\\FriendsFrame\\PlusManz-Horde",						-- Horde
 		[-9914] = "Interface\\FriendsFrame\\PlusManz-Alliance",						-- Alliance
+	-- Specs
 		[-9915] = "Interface\\Icons\\spell_holy_wordfortitude",						-- Discipline Priest Spec
 		[-9917] = "Interface\\Icons\\spell_shadow_shadowwordpain",					-- Shadow Priest Spec
 		[-9924] = "Interface\\Icons\\TalentSpec_Druid_Feral_Bear",					-- Guardian Druid Spec
@@ -1351,10 +1422,11 @@ app.L = {
 		[-9949] = "Interface\\Icons\\Spell_Deathknight_FrostPresence",				-- Frost Death Knight Spec
 		[-9951] = "Interface\\Icons\\ClassIcon_Priest",								-- Discipline / Holy Spec
 		[-9952] = "Interface\\Icons\\ClassIcon_Druid",								-- Guardian / Feral Spec
+	------ ACHIEVEMENT HEADER SECTION ------
 		[-9955] = "Interface\\Icons\\achievement_general",							-- General
-		[-9956] = app.asset("Interface_Quest_header"),								-- Quests
+
 		[-9957] = "Interface\\Icons\\inv_misc_map02",								-- Exploration
-		[-9958] = app.asset("Category_PvP"),										-- Player vs Player
+
 		[-9959] = app.asset("Category_D&R"),										-- Dungeons & Raids
 		[-9960] = app.asset("Category_Professions"),								-- Professions
 		[-9961] = app.asset("Category_Factions"),									-- Reputation
@@ -1406,15 +1478,15 @@ app.L = {
 		[-10012] = app.asset("Expansion_LEGION"),									-- Legion Dungeon
 		[-10013] = app.asset("Expansion_LEGION"),									-- Legion Raid
 		[-10014] = app.asset("Expansion_WOTLK"),									-- Wrath of the Lich King
-		[-10015] = "Interface\\Icons\\Paladin_Protection",							-- Lunar Festival
-		[-10018] = "Interface\\Icons\\Paladin_Protection",							-- Children's Week
-		[-10019] = "Interface\\Icons\\Paladin_Protection",							-- Midsummer
-		[-10020] = "Interface\\Icons\\Paladin_Protection",							-- Brewfest
-		[-10021] = "Interface\\Icons\\Paladin_Protection",							-- Hallow's End
-		[-10022] = "Interface\\Icons\\Paladin_Protection",							-- Pilgrim's Bounty
-		[-10023] = "Interface\\Icons\\Paladin_Protection",							-- Winterveil
-		[-10025] = "Interface\\Icons\\Paladin_Protection",							-- Darkmoon Faire
-		[-10026] = "Interface\\Icons\\Paladin_Protection",							-- Brawler's Guild
+
+
+
+
+
+
+
+		[-10025] = app.asset("Event_dmf"),											-- Darkmoon Faire
+		[-10026] = "Interface\\Icons\\spell_holy_fistofjustice",					-- Brawler's Guild
 		[-10027] = "Interface\\Icons\\Paladin_Protection",							-- Collect
 		[-10028] = "Interface\\Icons\\Paladin_Protection",							-- Battle
 		[-10029] = "Interface\\Icons\\Paladin_Protection",							-- Level
@@ -1438,10 +1510,10 @@ app.L = {
 		[-10056] = "Interface\\Icons\\Paladin_Protection",							--
 		[-10057] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",				-- War Effort
 		[-10058] = "Interface\\Icons\\Paladin_Protection",							--
-		[-10059] = "Interface\\Icons\\Paladin_Protection",							-- Pandaria Scenarios
+		[-10059] = "Interface\\Icons\\pandarenracial_innerpeace",					-- Pandaria Scenarios
 		[-10061] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
 		[-10067] = "Interface\\Icons\\inv_artifact_tome01",							-- AK Research Book
-		[-10067] = 1309100,															-- Artifacts
+		[-10067] = app.asset("Weapon_Type_Artifact"),								-- Artifacts
 		[-10070] = "Interface\\Icons\\Paladin_Protection",							--
 		[-10071] = "Interface\\Icons\\Paladin_Protection",							--
 		[-10072] = "Interface\\Icons\\ability_deathwing_assualtaspects",			-- N'Zoth Assault
@@ -1461,11 +1533,8 @@ app.L = {
 		[-10102] = app.asset("Expansion_SL"),										-- Shadowlands Raid
 		[-10103] = "Interface\\Icons\\Paladin_Protection",							-- The Maw and Torghast
 		[-10105] = 236373,															-- Covenant Assaults
-		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
-		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
-		[-101503] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
-		[-101504] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
-		-- Achieve 14339 Sub-Criteira
+
+	-- Achieve 14339 Sub-Criteira
 		[-1433901] = 3528288,															-- Anima Crystal Shard
 	--	hopefully temp custom NPCs, these objects do not have data on wowhead atm
 		[-1433951] = "3854020",															-- Broken Mirror
@@ -1482,15 +1551,14 @@ app.L = {
 		[-1433962] = "3854020",															-- Broken Mirror
 	};
 	["HEADER_NAMES"] = {
--- Commonly used
+	-- Commonly used
 		[0] = ZONE.." "..BATTLE_PET_SOURCE_1,									-- Zone Drop
 		[-1] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,				-- Common Boss Drop
 		[-2] = TUTORIAL_TITLE20,												-- Vendors
-		[-3] = GetItemSubClassInfo(15,3),										-- World Event
+		[-3] = GetItemSubClassInfo(15,3),										-- Holiday
 		[-4] = ACHIEVEMENTS,													-- Achievements
-		[-5] = "Prospecting",													-- Prospecting
 		[-7] = WORLD.." "..RAID_BOSSES,											-- World Bosses
-		[-9] = GDAPI_REALMTYPE_PVP,												-- PvP
+		[-9] = BUG_CATEGORY14,													-- Player vs. Player
 		[-10] = SPLASH_BATTLEFORAZEROTH_8_2_5_FEATURE1_TITLE,					-- Party Sync
 		[-11] = "Common Box Drops",												-- Common Box Drops
 		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [East - Demons]",					-- Warpwood Quarter [East - Demon]
@@ -1505,30 +1573,21 @@ app.L = {
 		[-21] = "Captains",
 		[-22] = "Secrets",														-- Secrets
 		[-23] = "Common Dungeon Drop",											-- WoD Common Dungeon Drop
-		
-		
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
-		
-
 		[-31] = select(1,GetCategoryInfo(15268)),								-- Promotions
-
-
 		[-34] = TRACKER_HEADER_WORLD_QUESTS,									-- World Quests
 		[-36] = BATTLE_PET_SOURCE_10,											-- In-Game Shop
 		[-37] = BATTLE_PET_SOURCE_11,											-- Discovery
 		[-38] = TRADE_SKILLS,													-- Professions
-
 		[-40] = LFG_LIST_LEGACY,												-- Legacy
 		[-41] = "Cache of Madness",												-- Cache of Madness
--- Armor Types
+	-- Armor Types
 		[-43] = GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME,				-- Cloth
 		[-44] = GetItemSubClassInfo(4,2).." "..RESISTANCE0_NAME,				-- Leather
 		[-45] = GetItemSubClassInfo(4,3).." "..RESISTANCE0_NAME,				-- Mail
 		[-46] = GetItemSubClassInfo(4,4).." "..RESISTANCE0_NAME,				-- Plate
--- World Events
+	-- World Events (These are used by ATT CLassic)
 		[-47] = select(1,GetCategoryInfo(160)),									-- Lunar Festival
-
-
 		[-52] = select(1,GetCategoryInfo(163)),									-- Children's Week
 		[-53] = "Midsummer Fire Festival",										-- Midsummer Fire Festival
 		[-55] = "Pirates' Day",													-- Pirates' Day
@@ -1537,46 +1596,47 @@ app.L = {
 		[-59] = "Day of the Dead",												-- Day of the Dead
 		[-60] = select(1,GetCategoryInfo(14981)),								-- Pilgrim's Bounty
 		[-61] = GetSpellInfo(21953),											-- The Feast of Winter Veil
-		[-62] = "Stranglethorn Fishing Extravaganza",
-		
-		
+		[-62] = "Stranglethorn Fishing Extravaganza",							-- Stranglethorn Fishing Extravaganza
+
 		[-68] = DUNGEON_FLOOR_NIGHTMARERAID13,									-- The Emerald Dream
 		[-69] = GetSpellInfo(21127),											-- Maraudon Portal
 		[-70] = DUNGEON_FLOOR_DESOLACE22.." - "..GetSpellInfo(251097),			-- Foulspore Cavern [Orange]
 		[-71] = DUNGEON_FLOOR_DESOLACE21.." - "..GetSpellInfo(251095),			-- The Wicked Grotto [Purple]
-		[-72] = "Sargerei War Council",											-- Sargerei War Council
 		[-75] = DUNGEON_FLOOR_BLACKROCKDEPTHS1,									-- Detention Block
 		[-76] = DUNGEON_FLOOR_BLACKROCKDEPTHS2,									-- Shadowforge City
 		[-77] = SPECIAL,														-- Special
+	-- Zul'Aman
 		[-78] = "Timed Event",
 		[-79] = "First Chest",
 		[-80] = "Second Chest",
 		[-81] = "Third Chest",
 		[-82] = "Final Chest",
-
+	-- SM
 		[-85] = "Graveyard",
 		[-86] = "Library",
 		[-87] = "Armory",
 		[-88] = "Cathedral",
+	-- Terrace of Endless Spring loot
 		[-90] = ELITE,															-- Elite
-	
+
 		[-93] = C_Map.GetAreaInfo(9310),										-- Silithus: The Wound
 		[-94] = BLACK_MARKET_AUCTION_HOUSE,										-- Black Market Auction House
--- TODO: Garrison Note: These will be changed into a new class soon(TM)
-		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)),						-- Stables
+	-- Garrisons
 		[-99] = "Buildings",
 		[-101] = GARRISON_FOLLOWERS,											-- Followers
--- Alliance [Swaps based on faction ONLY after a reloadui]
+	-- Druid Feral Druid Hidden Artifact Appearance
 		[-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),		-- Duskwood Active
 		[-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),		-- The Hinterlands Active
 		[-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),		-- Feralas Active
 		[-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),		-- Duskwood Activated
--- Invasions TODO: what levels?
+	-- Garrisons Invasions TODO: what levels?
 		[-136] = GARRISON_LANDING_INVASION,										-- Garrison Invasion
+	-- Class Trial
 		[-137] = string.format(SPELLBOOK_AVAILABLE_AT, 90),						-- Level 90
 		[-138] = string.format(SPELLBOOK_AVAILABLE_AT, 100),					-- Level 100
+	--
 		[-139] = RAID_BOSSES,													-- Bosses
--- WoD Dungeons(Fake npcid)
+	-- WoD Dungeons(Fake npcid)
 		[-140] = select(2, GetAchievementInfo(9039)),							-- Auchindoun
 		[-141] = select(2, GetAchievementInfo(9037)),							-- Bloodmaul Slag Mines
 		[-142] = select(2, GetAchievementInfo(9043)),							-- Grimrail Depot
@@ -1585,62 +1645,84 @@ app.L = {
 		[-145] = select(2, GetAchievementInfo(8843)),							-- Skyreach
 		[-146] = select(2, GetAchievementInfo(9044)),							-- The Everbloom
 		[-147] = select(2, GetAchievementInfo(9042)),							-- Upper Blackrock Spire
-
-		[-152] = "Garrison Campaign",
+	-- Garrison
+		[-152] = "Garrison Campaign",											-- Garrison Campaign
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
+	-- Class Trial
 		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48 (old level 110)
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50),						-- Level 50 (old Level 120)
+	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),		-- The Hinterlands Activated
 		[-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),		-- Feralas Activated
+	-- Class Hall /Artifact
 		[-159] = "Event Roll",													-- Daily Dreamway Event Roll
--- Expansions
+	-- Collections
 		[-160] = TUTORIAL_TITLE53,												-- Mounts
--- Other
 		[-161] = TOY,															-- Toy
 		[-162] = PETS,															-- Pets
+	-- Armor
 		[-163] = RESISTANCE0_NAME,												-- Armor
-		[-165] = GetItemSubClassInfo(13,1),										-- Lockpick
-		[-167] = GetSpellInfo(7738),											-- Fishing Poles
-		[-168] = FACTION_OTHER .. " " ..QUESTS_LABEL,							-- Other Quests
+	-- Junkboxes
+		[-165] = GetItemSubClassInfo(13,1),										-- Junkboxes
+	-- Emissary
 		[-169] = BOUNTY_BOARD_LOCKED_TITLE,										-- Emissary Quests
+	-- Legion Artifact Questline
 		[-170] = GetSpellInfo(41341),											-- Balance of Power
+	-- Events
 		[-173] = PLAYER_DIFFICULTY_TIMEWALKER,									-- Timewalking
-		[-174] = CALENDAR_FILTER_DARKMOON,										-- Darkmoon Faire
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
+	-- Item Sets
 		[-211] = NEW.." "..CHARACTER,											-- New Character
+	-- Treasure Chest
 		[-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),				-- Treasure Chest
+	-- Dalaran Sub-Zone
 		[-213] = DUNGEON_FLOOR_DALARAN2,										-- The Underbelly
+	-- PvP
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
+	-- Fishing
 		[-217] = "Lures",														-- Lures (for Fishing)
 		[-218] = "Coastal",														-- Coastal (for Fishing)
+	-- Class
 		[-220] = CLASS,															-- Class
+	-- Bonus Objectives
 		[-221] = TRACKER_HEADER_BONUS_OBJECTIVES,								-- Bonus Objectives
-		[-222] = select(2, GetAchievementInfo(9726)),							-- Treasure Hunter
-		[-224] = "Illidari",													-- Illidari
+	-- Misc Victory (Used in many places)
 		[-227] = GetSpellInfo(109382),											-- Victory
+	-- Flight Path
 		[-228] = GetSpellInfo(218950),											-- Flight Path
+	-- Misc Weekly (Used in Many Places)
 		[-229] = CALENDAR_REPEAT_WEEKLY,										-- Weekly
+	-- Warfronts
 		[-233] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde
+	-- Recipes (Only used in BMAH atm)
 		[-235] = AUCTION_CATEGORY_RECIPES,										-- Recipes
+	-- War Campaign
 		[-236] = C_Map.GetAreaInfo(9663),										-- War Campaign - Alliance
+	-- Warfront
 		[-237] = GetSpellInfo(290253),											-- Warfront: The Battle for Darkshore
+	-- PvP
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-242] = "Unrated",														-- Unrated
 		[-243] = "Bounty",														-- Bounty
-		[-246] = select(2, GetAchievementInfo(7284)),							-- Is Another Man's Treasure
-		[-247] = select(2, GetAchievementInfo(7997)),							-- Riches of Pandaria
+	-- War Campaign
 		[-253] = C_Map.GetAreaInfo(9664),										-- War Campaign - Horde
+	-- Allied Races
 		[-254] = "Allied Races & Heritage",										-- Allied Races & Heritage
+	-- Mailbox
 		[-297] = MINIMAP_TRACKING_MAILBOX,										-- Mailbox
+	-- Garrison Missions
 		[-299] = GARRISON_MISSIONS,												-- Missions
+	-- PvP
 		[-302] = BATTLEFIELD_LEVEL.." 80-84",									-- Level Range 80-84
 		[-303] = BATTLEFIELD_LEVEL.." 85-89",									-- Level Range 85-89
 		[-304] = BATTLEGROUNDS,													-- Battlegrounds
+	-- Meta Armor/Weapon
 		[-318] = ARMOR,															-- Armor
 		[-319] = AUCTION_CATEGORY_WEAPONS,										-- Weapons
+	-- Armor Slots
 		[-320] = INVTYPE_HEAD,													-- Head
 		[-321] = INVTYPE_SHOULDER,												-- Shoulder
-		[-322] = GetItemSubClassInfo(8,3),										-- Back
+		[-322] = INVTYPE_CLOAK,													-- Back
 		[-323] = INVTYPE_CHEST,													-- Chest
 		[-324] = INVTYPE_BODY,													-- Shirt
 		[-325] = INVTYPE_TABARD,												-- Tabard
@@ -1649,6 +1731,7 @@ app.L = {
 		[-328] = INVTYPE_WAIST,													-- Waist
 		[-329] = INVTYPE_LEGS,													-- Legs
 		[-330] = INVTYPE_FEET,													-- Feet
+	-- Weapon Slots
 		[-331] = INVTYPE_HOLDABLE,												-- Held in Off-hand
 		[-332] = GetItemSubClassInfo(4,6),										-- Shield
 		[-333] = GetItemSubClassInfo(2,15),										-- Daggers
@@ -1666,98 +1749,112 @@ app.L = {
 		[-346] = GetItemSubClassInfo(2,2),										-- Bows
 		[-347] = GetItemSubClassInfo(2,18),										-- Crossbows
 		[-348] = GetItemSubClassInfo(2,13),										-- Fist Weapons
+	-- Cosmetic
 		[-349] = GetItemSubClassInfo(4,5),										-- Cosmetic
-		[-351] = TRANSMOG_SOURCE_1,												-- Boss Drop
+	-- Titanforged/Warforged
 		[-355] = GetSpellInfo(257215),											-- Titanforged
-		[-356] = "Assault on the Dark Portal",
+	-- First Questline Draenor
+		[-356] = "Assault on the Dark Portal",									-- Assault on the Dark Portal
+	-- Outposts in Draenor
 		[-357] = GetSpellInfo(171866),											-- Sparring Arena Outpost
 		[-358] = GetSpellInfo(164028),											-- Lumber Mill Outpost
 		[-360] = select(2,GetAchievementInfo(8987)),							-- Arcane Sanctum
 		[-361] = GetSpellInfo(182108).." Tower",								-- Artillery Tower
+	-- Pre Class Hall Monk
 		[-362] = DUNGEON_FLOOR_KUNLAISUMMITSCENARIO0,							-- Peak of Serenity
+	-- Argent Tournament
 		[-363] = select(1,GetCategoryInfo(14941)),								-- The Argent Tournament
+	-- Legendaries
 		[-364] = LOOT_JOURNAL_LEGENDARIES,										-- Legendaries
+	-- Heirlooms
 		[-365] = HEIRLOOMS,														-- Heirlooms
--- Dungeon/Raid Wing Info
+	-- Naxxramas
 		[-367] = DUNGEON_FLOOR_NAXXRAMAS1,										-- The Construct Quarter
 		[-368] = DUNGEON_FLOOR_NAXXRAMAS2,										-- The Arachnid Quarter
 		[-369] = DUNGEON_FLOOR_NAXXRAMAS3,										-- The Military Quarter
 		[-370] = DUNGEON_FLOOR_NAXXRAMAS4,										-- The Plague Quarter
 		[-371] = DUNGEON_FLOOR_NAXXRAMAS6, 										-- The Upper Necropolis
+	-- Operation: Mechagon
 		[-379] = "Junkyard",													-- Junkyard
 		[-380] = GetSpellInfo(251998),											-- Workshop
-		[-382] = BATTLETAG,														-- BattleTag
+	-- Misc Armor Slots
 		[-383] = GetItemSubClassInfo(2,14),										-- Miscellaneous
 		[-384] = GetItemSubClassInfo(8,1),										-- Neck
 		[-385] = GetItemSubClassInfo(8,10),										-- Finger
 		[-386] = INVTYPE_TRINKET,												-- Trinket
 		[-387] = GetItemSubClassInfo(3,11),										-- Relic
+	-- Stratholme
 		[-388] = C_Map.GetAreaInfo(5916),										-- Stratholme - Main Gate
 		[-389] = C_Map.GetAreaInfo(5917),										-- Stratholme - Service Entrance
+	-- Draenor Outposts
 		[-390] = C_Map.GetAreaInfo(7288),										-- Smuggler's Den (Spires of Arak)
 		[-391] = C_Map.GetAreaInfo(7291),										-- Stoktron Brewery (Spires of Arak)
 		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
+	-- Icecrown Citadel
 		[-393] = "Storming the Citadel",										-- Storming the Citadel
 		[-394] = "The Plagueworks",												-- The Plagueworks
 		[-395] = C_Map.GetAreaInfo(4892),										-- The Crimson Hall
 		[-396] = C_Map.GetAreaInfo(7932),										-- The Frostwing Halls
+	-- BFA Outposts
 		[-397] = "Outposts",													-- Outposts
+	-- T0.5
 		[-420] = "Tier 0.5 Sets",												-- Tier 0.5 Sets
+	-- BFA War Chest
 		[-488] = "War Chest",													-- Daily War Chest
-		[-491] = "Tarot Cards",
+	-- Tarot Cards
+		[-491] = "Tarot Cards",													-- Tarot Cards
+	-- Misc
 		[-494] = MAC_OPTIONS_MISC, 												-- Miscellaneous
-		[-496] = DUNGEON_FLOOR_DEEPRUNTRAM2,									-- Bizmo's Brawlpub
+	-- Class Hall Demon Hunter
 		[-498] = C_Map.GetAreaInfo(7576),										-- Twisting Nether (Demon Hunter Order Hall advancement)
+	-- Mole Machine
 		[-517] = GetSpellInfo(265225),											-- Mole Machine
 	-- Blizzard Events and Anniversaries
-		[-520] = "Expansion Pre-Launch",
-		[-522] = EXPANSION_NAME2..": Zombie Infestation",
-		[-523] = EXPANSION_NAME3..": Elemental Unrest",
-		[-525] = EXPANSION_NAME5..": Iron Horde Incursion",
-		[-526] = EXPANSION_NAME6..": Legion Invasion",
-		[-527] = EXPANSION_NAME7..": War of the Thorns",
+		[-520] = "Expansion Pre-Launch",										-- Expansion Pre-Launch
+		[-522] = EXPANSION_NAME2..": Zombie Infestation",						-- Wrath of the Lich King: Zombie Infestation
+		[-523] = EXPANSION_NAME3..": Elemental Unrest",							-- Cataclysm: Elemental Unrest
+		[-525] = EXPANSION_NAME5..": Iron Horde Incursion",						-- Warlords of Draenor: Iron Horde Incursion
+		[-526] = EXPANSION_NAME6..": Legion Invasion",							-- Legion: Legion Invasion
+		[-527] = EXPANSION_NAME7..": War of the Thorns",						-- Battle for Azeroth: War of the Thorns
 		[-528] = POSTMASTER_PIPE_BROKEN_ISLES,									-- Broken Isles [Mole Machine]
 		[-531] = C_PetJournal.GetPetInfoBySpeciesID(179),						-- Spirit of Competition
-		[-532] = "Heroes of the Storm",
-		[-533] = "Hearthstone",
-		[-534] = "Collector's Edition",
+		[-532] = "Heroes of the Storm",											-- Heroes of the Storm
+		[-533] = "Hearthstone",													-- Hearthstone
+		[-534] = "Collector's Edition",											-- Collector's Edition
 		[-535] = BATTLE_PET_SOURCE_9,											-- Trading Card Game
-		[-536] = "Hearthstone Mercenaries",
-		[-537] = "Diablo 20th Anniversary",
-		[-538] = "The Ahn'Qiraj War Effort",
-		[-539] = "The Scepter of the Shifting Sands",
-		[-540] = "The Scourge Invasion",
-		[-541] = "The Silithyst Must Flow",
-		[-542] = "The Opening of the Dark Portal",
-		[-543] = "Legion Invasions",
-		[-544] = "WoW Collector's Edition",
-		[-545] = "Blizzcon",
+		[-536] = "Hearthstone Mercenaries",										-- Hearthstone Mercenaries
+		[-537] = "Diablo 20th Anniversary",										-- Diablo 20th Anniversary
+		[-538] = "The Ahn'Qiraj War Effort",									-- The Ahn'Qiraj War Effort
+		[-539] = "The Scepter of the Shifting Sands",							-- The Scepter of the Shifting Sands
+		[-540] = "The Scourge Invasion",										-- The Scourge Invasion
+		[-541] = "The Silithyst Must Flow",										-- The Silithyst Must Flow
+		[-542] = "The Opening of the Dark Portal",								-- The Opening of the Dark Portal
+		[-543] = "Legion Invasions",											-- Legion Invasions
+		[-544] = "WoW Collector's Edition",										-- WoW Collector's Edition
+		[-545] = "Blizzcon",													-- Blizzcon
 		[-546] = REFER_A_FRIEND,												-- Recruit A Friend
-		[-550] = "Starcraft Collector's Edition",
-		[-551] = "Diablo Collector's Edition",
-		[-552] = "Warcraft 3 Spoils of War Edition",
-		[-553] = "iCoke",
-		[-554] = "EU Fansite Promotion",
-		[-555] = "Korean Promotional Event",
-		[-556] = "Arena Tournament",
-		[-557] = "Korea World Event",
-		[-558] = "Battle.net World Championship Shanghai 2012",
-
-		[-564] = "Starcraft II: Wings of Liberty",
-		[-565] = "Starcraft II: Heart of the Swarm",
-		[-566] = "Diablo III",
-		[-568] = "Overwatch: Origins",
-		[-569] = "Azeroth Academy Mentor Recruitment Promotion",
-
+		[-550] = "Starcraft Collector's Edition",								-- Starcraft Collector's Edition
+		[-551] = "Diablo Collector's Edition",									-- Diablo Collector's Edition
+		[-552] = "Warcraft 3 Spoils of War Edition",							-- Warcraft 3 Spoils of War Edition
+		[-553] = "iCoke",														-- iCoke
+		[-554] = "EU Fansite Promotion",										-- EU Fansite Promotion
+		[-555] = "Korean Promotional Event",									-- Korean Promotional Event
+		[-556] = "Arena Tournament",											-- Arena Tournament
+		[-557] = "Korea World Event",											-- Korea World Event
+		[-558] = "Battle.net World Championship Shanghai 2012",					-- Battle.net World Championship Shanghai 2012
+		[-564] = "Starcraft II: Wings of Liberty",								-- Starcraft II: Wings of Liberty
+		[-565] = "Starcraft II: Heart of the Swarm",							-- Starcraft II: Heart of the Swarm
+		[-566] = "Diablo III",													-- Diablo III
+		[-568] = "Overwatch: Origins",											-- Overwatch: Origins
+		[-569] = "Azeroth Academy Mentor Recruitment Promotion",				-- Azeroth Academy Mentor Recruitment Promotion (China Only)
 		[-573] = SCROLL_OF_RESURRECTION,										-- Scroll of Resurrection
-		[-574] = "Diablo III Annual Pass",
-		[-575] = "Diablo III: Reaper of Souls",
-		[-576] = "StarCraft II: Legacy of the Void",
-		[-577] = "Warcraft Movie",
+		[-574] = "Diablo III Annual Pass",										-- Diablo III Annual Pass
+		[-575] = "Diablo III: Reaper of Souls",									-- Diablo III: Reaper of Souls
+		[-576] = "StarCraft II: Legacy of the Void",							-- StarCraft II: Legacy of the Void
+		[-577] = "Warcraft Movie",												-- Warcraft Movie
 		[-578] = select(2, GetAchievementInfo(13917)),							-- WoW's 15th Anniversary
-		[-579] = "Dark Portal Pass",
-
--- Raid Buff Stack Size
+		[-579] = "Dark Portal Pass",											-- Dark Portal Pass
+	-- Raid Buff Stack Size in Uldir
 		[-583] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 1),				-- Power Increased to Level 1
 		[-584] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 2),				-- Power Increased to Level 2
 		[-585] = string.format(AZERITE_ITEM_LEVELED_UP_TOAST, 3),				-- Power Increased to Level 3
@@ -1771,12 +1868,11 @@ app.L = {
 		[-593] = GetSpellInfo(228357).." 1",									-- Kill Credit 1
 		[-594] = GetSpellInfo(228357).." 2",									-- Kill Credit 2
 		[-595] = GetSpellInfo(228357).." 3",									-- Kill Credit 3
-		-- Need these spells here because if we use them in the file it won't allow the quest to mark as complete due to it not being designed that way.
-		-- This is the workaround.
+	-- Need these spells here because if we use them in the file it won't allow the quest to mark as complete due to it not being designed that way.
+	-- This is the workaround.
 		[-600] = AUCTION_CATEGORY_QUEST_ITEMS,									-- Quest Items
-
--- PvP Header
-	-- Special Season Tags
+	-- PvP Header
+		-- Special Season Tags
 		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons
 		--[-651] = "Honor Gear Prideful Season",								-- Listed under MoP PvP Seasons
 		--[-652] = "Honor Gear Grievous Season",								-- Listed under MoP PvP Seasons
@@ -1786,29 +1882,25 @@ app.L = {
 		--[-656] = "Honor Gear Ruthless Season",								-- Listed under Cata PvP Seasons
 		--[-657] = "Hateful Gladiator",											-- Listed under WOTLK PvP Seasons
 		--[-658] = "BC Pre-Season",												-- Listed under BC PvP Seasons
-	-- PvP Set Names
+		-- PvP Set Names
 		[-659] = "Aspirant Gear",												-- Aspirant PvP Gear (WoD, BfA)
 		[-660] = "Combatant Gear",												-- Combatant PvP Gear (WoD, Legion)
 		[-661] = "Gladiator Gear",												-- Gladiator PvP Gear
 		[-662] = "Elite Gear",													-- Elite PvP Gear
-
 	-- Classic PvP Seasons
 		[-663] = "Classic Honor System",										-- Classic Honor System
-
 	-- The Burning Crusade PvP Seasons
 		[-658] = "BC Pre-Season",												-- Pre-Season (PvP BC)
 		[-664] = select(2, GetAchievementInfo(2091))..": Season 1",				-- Gladiator: Season 1
 		[-665] = select(2, GetAchievementInfo(418))..": Season 2",				-- Merciless Gladiator: Season 2
 		[-666] = select(2, GetAchievementInfo(419))..": Season 3",				-- Vengeful Gladiator: Season 3
 		[-667] = select(2, GetAchievementInfo(420))..": Season 4",				-- Brutal Gladiator: Season 4
-
 	-- Wrath of the Lich-King PvP Seasons
 		[-668] = select(2, GetAchievementInfo(3336))..": Season 5",				-- Deadly Gladiator: Season 5
 		[-657] = "Hateful Gladiator",											-- Hateful Gladiator: Season 5 ("medium pvp gear")
 		[-669] = select(2, GetAchievementInfo(3436))..": Season 6",				-- Furious Gladiator: Season 6
 		[-670] = select(2, GetAchievementInfo(3758))..": Season 7",				-- Relentless Gladiator: Season 7
 		[-671] = select(2, GetAchievementInfo(4599))..": Season 8",				-- Wrathful Gladiator: Season 8
-
 	-- Cataclysm PvP Seasons
 		[-650] = PVP_RATED_BATTLEGROUND,										-- Rated Battleground
 		[-672] = select(2, GetAchievementInfo(6002))..": Season 9",				-- Vicious Gladiator: Season 9
@@ -1816,7 +1908,6 @@ app.L = {
 		[-673] = select(2, GetAchievementInfo(6124))..": Season 10",			-- Ruthless Gladiator: Season 10
 		[-654] = "Honor Gear Cataclysmic Season",								-- Honor Gear Cataclysmic (S11)
 		[-674] = select(2, GetAchievementInfo(6938))..": Season 11",			-- Cataclysmic Gladiator: Season 11
-
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214))..": Season 12",			-- Malevolent Gladiator: Season 12
 		[-653] = "Honor Gear Tyrannical Season",								-- Honor Gear Tyrannical (S13)
@@ -1825,12 +1916,10 @@ app.L = {
 		[-677] = select(2, GetAchievementInfo(8643)),							-- Grievous Gladiator: Season 14
 		[-651] = "Honor Gear Prideful Season",									-- Honor Gear Prideful (S15)
 		[-678] = select(2, GetAchievementInfo(8666)),							-- Prideful Gladiator: Season 15
-
 	-- Warlords of Dreanor PvP Seasons
 		[-679] = select(2, GetAchievementInfo(9232)),							-- Primal Gladiator: Warlords Season 1
 		[-680] = select(2, GetAchievementInfo(10096)),							-- Wild Gladiator: Warlords Season 2
 		[-681] = select(2, GetAchievementInfo(10097)),							-- Warmongering Gladiator: Warlords Season 3
-
 	-- Legion PvP Seasons
 		[-682] = select(2, GetAchievementInfo(11012)),							-- Vindictive Gladiator: Legion Season 1
 		[-683] = select(2, GetAchievementInfo(11014)),							-- Fearless Gladiator: Legion Season 2
@@ -1839,27 +1928,23 @@ app.L = {
 		[-686] = select(2, GetAchievementInfo(12010)),							-- Fierce Gladiator: Legion Season 5
 		[-687] = select(2, GetAchievementInfo(12134)),							-- Dominant Gladiator: Legion Season 6
 		[-688] = select(2, GetAchievementInfo(12185)),							-- Demonic Gladiator: Legion Season 7
-
 	-- Battle for Azeroth PvP Seasons
 		[-689] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth Season 1
 		[-690] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-691] = select(2, GetAchievementInfo(13630)),							-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = select(2, GetAchievementInfo(13957)),							-- Corrupted Gladiator: Battle for Azeroth Season 4
-
 	-- Shadowlands PvP Seasons
 		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
 		[-694] = select(2, GetAchievementInfo(14973)),							-- Unchained Gladiator: Shadowlands Season 2
-
+	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
 		[-796] = BATTLE_PET_SOURCE_5,											-- Pet Battle
 		[-797] = PET_JOURNAL,													-- Pet Journal
-
 	-- Toys
 		[-798] = GetSpellInfo(181765),											-- S.E.L.F.I.E. Camera
-
+	-- Timeless Isle
 		[-799] = GetSpellInfo(147343),											-- Burden of Eternity
-
-	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
+	-- Secret Header
 		[-800] = GetSpellInfo(247402), 											-- Lucid Nightmare
 		[-801] = GetSpellInfo(243025),											-- Riddler's Mind-Worm
 		[-802] = GetSpellInfo(231215),											-- Sun Darter Hatchling
@@ -1868,12 +1953,11 @@ app.L = {
 		[-806] = "Waist of Time",												-- Waist of Time
 		[-807] = GetSpellInfo(261395),											-- The Hivemind
 		[-808] = GetSpellInfo(344577),											-- Bound Shadehound
-
+	-- More Secrets are likely to come dont use IDs here
 	-- Chests
 		[-850] = "Mechanized Chest",											-- Mechanized Chest
 		[-851] = "Black Empire Cache",											-- Black Empire Cache
-
-	-- 8.2 Neck Stuff
+	-- Heart of Azeroth
 		[-852] = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE,					-- Heart of Azeroth Essences
 		[-853] = "All Roles",													-- All Roles
 		[-854] = "DPS",															-- DPS
@@ -1908,8 +1992,7 @@ app.L = {
 		[-978] = select(1, GetSpellInfo(354778)),								-- The Rift
 		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
 		[-981] = GetSpellInfo(348869),											-- Conduits
-
-	-- SL Maldraxxus/Necrolord
+		-- SL Maldraxxus/Necrolord
 		[-920] = GetSpellInfo(321078),											-- Necrolord
 		[-921] = "Sanctum Upgrades",											-- Sanctum Upgrades (Necrolord)
 		[-922] = C_Map.GetAreaInfo(11465),										-- Theater of Pain
@@ -1920,8 +2003,7 @@ app.L = {
 		[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": Bring Them to Life",	-- Abomination Factory (Necrolord) Tier 3
 		[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": Forged Friends",	-- Abomination Factory (Necrolord) Tier 4
 		[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Best Fiends Forever",	-- Abomination Factory (Necrolord) Tier 5
-
-	-- SL Ardenweald/Night Fae
+		-- SL Ardenweald/Night Fae
 		[-929] = GetSpellInfo(321077),											-- Night Fae
 		[-930] = COVENANT_SANCTUM_FEATURE_NIGHT_FAE,							-- Queen's Conservatory
 		[-934] = C_Map.GetAreaInfo(12840),										-- Star Lake Amphitheater
@@ -1933,8 +2015,7 @@ app.L = {
 		[-1003] = "Martial Spirit",												-- Martial Spirit
 		[-1004] = "Prideful Spirit",											-- Prideful Spirit
 		[-1005] = "Untamed Spirit",												-- Untamed Spirit
-
-	-- SL Bastion/Kyrian
+		-- SL Bastion/Kyrian
 		[-939] = GetSpellInfo(321076),											-- Kyrian
 		[-940] = "Ascended Council",											-- Ascended Counil
 		[-941] = "Sanctum Upgrades",											-- Sanctum Upgrades (Kyrian)
@@ -1953,8 +2034,7 @@ app.L = {
 		[-973] = "Loyalty",														-- Loyalty
 		[-974] = GetSpellInfo(3166),											-- Wisdom
 		[-975] = "Humility",													-- Humility
-
-	-- SL Revendreth/Venthyr
+		-- SL Revendreth/Venthyr
 		[-949] = GetSpellInfo(321079),											-- Venthyr
 		[-950] = "Transport Network",											-- Transport Network
 		[-951] = string.format(COVENANT_SANCTUM_TIER, 1)..": Mirror, Mirror",	-- Tier 1: Mirror, Mirror
@@ -1977,17 +2057,17 @@ app.L = {
 		[-969] = "Set B",														-- Set B
 		[-970] = "Set C",														-- Set C
 		[-971] = "Set D",														-- Set D
-	-- SL Torghast
+		-- SL Torghast
 		[-982] = select(2, GetAchievementInfo(14463)),							-- Skoldus Hall
 		[-983] = select(2, GetAchievementInfo(14473)),							-- Fracture Chambers
 		[-984] = select(2, GetAchievementInfo(14478)),							-- The Soulforges
 		[-985] = select(2, GetAchievementInfo(14483)),							-- Coldheart Interstitia
 		[-986] = select(2, GetAchievementInfo(14488)),							-- Mort'regar
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
-
+	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
+	-- Black Vault
 		[-1001] = "The Black Vault",
-
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",
@@ -2001,19 +2081,8 @@ app.L = {
 		[-2209] = "The Prophecy of Rythas the Oracle",
 		[-2210] = "The Lessons of the Blacklist",
 		[-2211] = "Volund's Folly",
-
-	-- Other Sets
+	-- T3
 		[-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),	-- Tier 3 Sets
-
-	-- Holiday Sets
-		[-3198] = GetSpellInfo(55005),											-- Brewfest Garb
-		[-3199] = "Midsummer Reveler Set",
-	-- Anti-Undead Armor Sets [Scourge Event]
-		[-3218] = "Blessed Regalia of Undead Cleansing",
-		[-3219] = "Undead Slayer's Blessed Armor",
-		[-3220] = "Blessed Garb of the Undead Slayer",
-		[-3221] = "Blessed Battlegear of the Undead Slaying",
-
 	-- Island Expedition Sets
 		[-3315] = "Spider Acolyte",
 		[-3316] = "Hydraxian",
@@ -2022,7 +2091,6 @@ app.L = {
 		[-3319] = "Swarmfury",
 		[-3340] = "Dark Animator",
 		[-3341] = "Duskhaven",
-
 		[-3343] = "Choking Winter",
 		[-3342] = "Fallen Runelord",
 		[-3320] = "Spiritbough",
@@ -2031,7 +2099,6 @@ app.L = {
 		[-3323] = "Whirling Dervish",
 		[-3324] = "Feralbark",
 		[-3325] = "Firekin",
-
 		[-3344] = "Frostsworn",
 		[-3326] = "Wild Marauder",
 		[-3327] = "Dragonrider",
@@ -2039,7 +2106,6 @@ app.L = {
 		[-3329] = "Mrrglurggl",
 		[-3330] = "Headshrinker",
 		[-3331] = "Voodoo Stalker",
-
 		[-3332] = "Geocrag",
 		[-3333] = "Razorfin",
 		[-3345] = "Sanctified Scourgelord",
@@ -2053,22 +2119,20 @@ app.L = {
 		--[-3348] = string.format(COVENANT_SANCTUM_TIER, 1)..": Step of Faith",	-- Listed under 950//SL Bastion/Kyrian
 		--[-3349] = string.format(COVENANT_SANCTUM_TIER, 2)..": Leap of Power",	-- Listed under 950//SL Bastion/Kyrian
 		--[-3350] = string.format(COVENANT_SANCTUM_TIER, 3)..": Eternal Paths",	-- Listed under 950//SL Bastion/Kyrian
-
--- PvP Sets
+	-- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
 		[-4189] = CALENDAR_TYPE_PVP.." "..LOOT_JOURNAL_ITEM_SETS, 				-- Instance Item Sets, PvP
 		[-4191] = ITEM_TOURNAMENT_GEAR,											-- Tournament Gear
--- Tier/Dungeon/Event/Holiday Sets
-	-- Artifact Strings
+	-- Tier/Dungeon/Event/Holiday Sets
+		-- Artifact Strings
 		[-5200] = "Base Appearance",
 		[-5201] = "Class Hall Campaign",
 		[-5202] = "Balance of Power",
 		[-5203] = "Prestige Rewards",
 		[-5204] = "Challenge Appearance",
 		[-5205] = "Hidden Appearance",
-	-- Class Sets
+		-- Class Sets
 		[-5350] = "Class Trial Item Sets",										-- Class Trial
-
 		--Note!! We are localizing them here so when we filter the achievement we don't filter the entire section which is bad!
 		[-5353] = select(2,GetAchievementInfo(2398)),	-- 4th Anniversary
 		[-5354] = select(2,GetAchievementInfo(4400)),	-- 5th Anniversary
@@ -2088,14 +2152,11 @@ app.L = {
 		[-6014] = BUG_CATEGORY4,												-- Cities
 
 		[-7776] = "Winter Revelers",											-- Winter Revelers (for Winter Veil)
-
 	-- Factions
 		[-9912] = COMBATLOG_FILTER_STRING_NEUTRAL_UNITS,						-- Neutral
 		[-9913] = FACTION_HORDE, 												-- Horde
 		[-9914] = FACTION_ALLIANCE, 											-- Alliance
-
-
-	-- Classes
+	-- Specs
 		[-9915] = GetSpellInfo(137032),											-- Discipline Priest Spec
 		[-9917] = GetSpellInfo(137033),											-- Shadow Priest Spec
 		[-9924] = GetSpellInfo(137010),											-- Guardian Druid Spec
@@ -2119,9 +2180,9 @@ app.L = {
 		[-9952] = GetSpellInfo(234890).." & "..GetSpellInfo(137011), 			-- Guardian / Feral Druid Spec
 	------ ACHIEVEMENT HEADER SECTION ------
 		[-9955] = STAT_CATEGORY_GENERAL,										-- General
-		[-9956] = QUESTS_LABEL,													-- Quests
+
 		[-9957] = select(1,GetCategoryInfo(97)),								-- Exploration
-		[-9958] = BUG_CATEGORY14,												-- Player vs Player
+
 		[-9959] = GROUP_FINDER,													-- Dungeons & Raids
 		[-9960] = TRADE_SKILLS,													-- Professions
 		[-9961] = TUTORIAL_TITLE16,												-- Reputation
@@ -2173,13 +2234,13 @@ app.L = {
 		[-10012] = select(1,GetCategoryInfo(15254)),							-- Legion Dungeon
 		[-10013] = select(1,GetCategoryInfo(15255)),							-- Legion Raid
 		[-10014] = select(1,GetCategoryInfo(14823)),							-- Wrath of the Lich King
-		[-10015] = select(1,GetCategoryInfo(160)),								-- Lunar Festival
-		[-10018] = select(1,GetCategoryInfo(163)),								-- Children's Week
-		[-10019] = select(1,GetCategoryInfo(161)),								-- Midsummer
-		[-10020] = select(1,GetCategoryInfo(162)),								-- Brewfest
-		[-10021] = select(1,GetCategoryInfo(158)),								-- Hallow's End
-		[-10022] = select(1,GetCategoryInfo(14981)),							-- Pilgrim's Bounty
-		[-10023] = select(1,GetCategoryInfo(156)),								-- Winterveil
+
+
+
+
+
+
+
 		[-10025] = select(1,GetCategoryInfo(15101)),							-- Darkmoon Faire
 		[-10026] = select(1,GetCategoryInfo(15282)),							-- Brawler's Guild
 		[-10027] = select(1,GetCategoryInfo(15118)),							-- Collect
@@ -2207,9 +2268,9 @@ app.L = {
 		[-10058] = select(1,GetCategoryInfo(15283)),							-- World
 		[-10059] = select(1,GetCategoryInfo(15302)),							-- Pandaria Scenarios
 		[-10061] = select(2,GetAchievementInfo(7333)),							-- The Four Celestials
---[[	-- If we ever need them they need a new number
-		[-10061] = BATTLE_PET_BREED_QUALITY1,									-- "Poor";
-]]--	-- 8.3
+		-- If we ever need them they need a new number
+		--[-10061] = BATTLE_PET_BREED_QUALITY1,									-- "Poor";
+	-- 8.3
 		[-10066] = BATTLE_PET_BREED_QUALITY6,									-- "Legendary";
 		[-10067] = ITEM_QUALITY6_DESC, 											-- Artifact
 		[-10069] = SCENARIOS,													-- Scenarios

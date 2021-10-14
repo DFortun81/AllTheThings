@@ -263,7 +263,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		filter(8, {		-- Shield
 			i(22198),	-- Jagged Obsidian Shield
 		}),
-		n(-320, {		-- Head
+		n(HEAD, {
 			i(7915),	-- Barbaric Iron Helm
 			i(19148),	-- Dark Iron Helm
 			i(20551),	-- Darkrune Helm
@@ -286,7 +286,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(12410),	-- Thorium Helm
 			i(12633),	-- Whitesoul Helm
 		}),
-		n(-321, {		-- Shoulders
+		n(SHOULDER, {
 			i(7913),	-- Barbaric Iron Shoulders
 			i(19691, {	-- Bloodsoul Shoulders
 				["u"] = REMOVED_FROM_GAME,
@@ -309,7 +309,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(12610),	-- Runic Plate Shoulders
 			i(3481),	-- Silvered Bronze Shoulders
 		}),
-		n(-323, {		-- Chest
+		n(CHEST, {
 			i(7914),	-- Barbaric Iron Breastplate
 			i(163964),	-- Barbaric Iron Hauberk
 			i(19690, {	-- Bloodsoul Breastplate
@@ -358,7 +358,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			}),
 			i(12624),	-- Wildthorn Mail
 		}),
-		n(-327, {		-- Hands
+		n(HANDS, {
 			i(7917),	-- Barbaric Iron Gloves
 			i(22194),	-- Black Grasp of the Destroyer
 			i(19692, {	-- Bloodsoul Gauntlets
@@ -392,7 +392,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				["u"] = REMOVED_FROM_GAME,
 			}),
 		}),
-		n(-326, {		-- Wrist
+		n(WRIST, {
 			i(17014),	-- Dark Iron Bracers
 			i(6040),	-- Golden Scale Bracers
 			i(3835),	-- Green Iron Bracers
@@ -405,7 +405,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(2854),	-- Runed Copper Bracers
 			i(12408),	-- Thorium Bracers
 		}),
-		n(-328, {		-- Waist
+		n(WAIST, {
 			i(16989),	-- Fiery Chain Girdle
 			i(19051),	-- Girdle of the Dawn
 			i(22197),	-- Heavy Obsidian Belt
@@ -417,7 +417,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(2857),	-- Runed Copper Belt
 			i(12406),	-- Thorium Belt
 		}),
-		n(-329, {		-- Legs
+		n(LEGS, {
 			i(17013),	-- Dark Iron Leggings
 			i(19694, {	-- Darksoul Leggings
 				["u"] = REMOVED_FROM_GAME,
@@ -444,7 +444,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(12414),	-- Thorium Leggings
 			i(22385),	-- Titanic Leggings
 		}),
-		n(-330, {		-- Feet
+		n(FEET, {
 			i(7916),	-- Barbaric Iron Boots
 			i(20039),	-- Dark Iron Boots
 			i(3847),	-- Golden Scale Boots
@@ -663,7 +663,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(18986),	-- Ultrasafe Transporter: Gadgetzan*
 			i(18660),	-- World Enlarger*
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			-- Guns
 			i(18282),	-- Core Marksman Rifle*
 			i(16004),	-- Dark Iron Rifle*
@@ -972,7 +972,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		filter(34, {	-- Fist Weapons
 			i(20954),	-- Heavy Iron Knuckles
 		}),
-		n(-320, {		-- Head
+		n(HEAD, {
 			i(21774),	-- Emerald Crown of Destruction
 			i(20832),	-- Moonsoul Crown
 			i(20969),	-- Ruby Crown of Restoration
@@ -1053,7 +1053,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			un(REMOVED_FROM_GAME, i(8217)),	-- Quickdraw Quiver
 			un(REMOVED_FROM_GAME, i(8218)),	-- Thick Leather Ammo Pouch
 		}),
-		n(-322, {	-- Cloak
+		n(BACK, {
 			un(REMOVED_FROM_GAME, i(18509)),	-- Chromatic Cloak
 			un(REMOVED_FROM_GAME, i(6466)),		-- Deviate Scale Cloak
 			un(REMOVED_FROM_GAME, i(18510)),	-- Hide of the Wild
@@ -1070,7 +1070,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(15138),	-- Onyxia Scale Cloak
 		}),
 		n(-44, {	-- Leather
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(22759),	-- Bramblewood Helm
 				i(16983),	-- Molten Helm
 				i(15094),	-- Runic Leather Headband (Trainable now, old Pattern id 15756 used to teach this.)
@@ -1082,7 +1082,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(8176),	-- Nightscape Headband
 				i(8174),	-- Comfortable Leather Hat
 			}),
-			n(-321, {	-- Shoulder
+			n(SHOULDER, {
 				un(REMOVED_FROM_GAME, i(19689)),	-- Blood Tiger Shoulders
 				i(15058),	-- Stormshroud Shoulders
 				i(15055),	-- Volcanic Shoulders
@@ -1097,7 +1097,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(7352),	-- Earthen Leather Shoulders
 				i(4251),	-- Hillman's Shoulders
 			}),
-			n(-323, {	-- Chest
+			n(CHEST, {
 				un(REMOVED_FROM_GAME, i(22661)),	-- Polar Tunic
 				un(REMOVED_FROM_GAME, i(19688)),	-- Blood Tiger Breastplate
 				un(REMOVED_FROM_GAME, i(19685)),	-- Primal Batskin Jerkin
@@ -1131,7 +1131,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(2311),	-- White Leather Jerkin
 				i(2300),	-- Embossed Leather Vest
 			}),
-			n(-326, {	-- Wrists
+			n(WRIST, {
 				un(REMOVED_FROM_GAME, i(22663)),	-- Polar Bracers
 				un(REMOVED_FROM_GAME, i(19687)),	-- Primal Batskin Bracers
 				i(15092),	-- Runic Leather Bracers (Trainable now, old Pattern id 15739 used to teach this.)
@@ -1144,7 +1144,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(18948),	-- Barbaric Bracers
 				i(7281),	-- Light Leather Bracers
 			}),
-			n(-327, {	-- Hands
+			n(HANDS, {
 				i(19049),	-- Timbermaw Brawlers
 				un(REMOVED_FROM_GAME, i(22662)),	-- Polar Gloves
 				un(REMOVED_FROM_GAME, i(19686)),	-- Primal Batskin Gloves
@@ -1171,7 +1171,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(2312),	-- Fine Leather Gloves
 				i(4239),	-- Embossed Leather Gloves
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				un(REMOVED_FROM_GAME, i(18504)),	-- Girdle of Insight
 					i(22761),	-- Bramblewood Belt
 					i(19163),	-- Molten Belt
@@ -1192,7 +1192,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 					i(5780),	-- Murloc Scale Belt
 					i(4246),	-- Fine Leather Belt
 				}),
-			n(-329, {	-- Legs
+			n(LEGS, {
 				i(15095),	-- Runic Leather Pants (Trainable now, old Pattern id 15765 used to teach this.)
 				i(15062),	-- Devilsaur Leggings
 				un(REMOVED_FROM_GAME, i(15069)),	-- Frostsaber Leggings
@@ -1217,7 +1217,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 					["timeline"] = { "added 2.0.1.6180" },
 				}),
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(22760),	-- Bramblewood Boots
 				i(16982),	-- Corehound Boots
 				un(REMOVED_FROM_GAME, i(18506)),	-- Mongoose Boots
@@ -1234,18 +1234,18 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			}),
 		}),
 		n(-45, {	-- Mail
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(15080),	-- Heavy Scorpid Helm
 				i(8208),	-- Tough Scorpid Helm
 				i(8191),	-- Turtle Scale Helm
 			}),
-			n(-321, {	-- Shoulder
+			n(SHOULDER, {
 				un(REMOVED_FROM_GAME, i(15049)),	-- Blue Dragonscale Shoulders
 				i(15051),	-- Black Dragonscale Shoulders
 				un(REMOVED_FROM_GAME, i(15081)),	-- Heavy Scorpid Shoulders
 				i(8207),	-- Tough Scorpid Shoulders
 			}),
-			n(-323, {	-- Chest
+			n(CHEST, {
 				un(NEVER_IMPLEMENTED, i(15141)),	-- Onyxia Scale Breastplate (never made it out of Beta)
 				i(20479),	-- Spitfire Breastplate
 				i(20478),	-- Sandstalker Breastplate
@@ -1262,7 +1262,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(8203),	-- Tough Scorpid Breastplate
 				i(8189),	-- Turtle Scale Breastplate
 			}),
-			n(-326, {	-- Wrists
+			n(WRIST, {
 				un(REMOVED_FROM_GAME, i(22665)),	-- Icy Scale Bracers
 				un(REMOVED_FROM_GAME, i(18508)),	-- Swift Flight Bracers
 				i(20481),	-- Spitfire Bracers
@@ -1271,7 +1271,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(8205),	-- Tough Scorpid Bracers
 				i(8198),	-- Turtle Scale Bracers
 			}),
-			n(-327, {	-- Hands
+			n(HANDS, {
 				i(19157),	-- Chromatic Gauntlets
 				un(REMOVED_FROM_GAME, i(22666)),	-- Icy Scale Gauntlets
 				i(20480),	-- Spitfire Gauntlets
@@ -1283,10 +1283,10 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(8187),	-- Turtle Scale Gloves
 				i(7348),	-- Fletcher's Gloves
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				i(15082),	-- Heavy Scorpid Belt
 			}),
-			n(-329, {	-- Legs
+			n(LEGS, {
 				i(15052),	-- Black Dragonscale Leggings
 				i(20295),	-- Blue Dragonscale Leggings
 				un(REMOVED_FROM_GAME, i(15079)),	-- Heavy Scorpid Leggings
@@ -1294,7 +1294,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(8206),	-- Tough Scorpid Leggings
 				i(8185),	-- Turtle Scale Leggings
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(16984),	-- Black Dragonscale Boots
 				i(8209),	-- Tough Scorpid Boots
 			}),
@@ -1322,7 +1322,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(21340),	-- Soul Pouch
 			i(4240),	-- Woolen Bag
 		}),
-		n(-323, {	-- Chest
+		n(CHEST, {
 			un(REMOVED_FROM_GAME, i(19682)),	-- Bloodvine Vest
 			un(REMOVED_FROM_GAME, i(22652)),	-- Glacial Vest
 			i(14153, {	-- Robe of the Void
@@ -1373,7 +1373,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(6241),	-- White Linen Robe
 			i(14128),	-- Wizardweave Robe
 		}),
-		n(-322, {	-- Cloaks
+		n(BACK, {
 			un(REMOVED_FROM_GAME, i(22658)),	-- Glacial Cloak
 			i(7053),	-- Azure Silk Cloak
 			i(14103),	-- Brightcloth Cloak
@@ -1389,7 +1389,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(2580),	-- Reinforced Linen Cape
 			i(13860),	-- Runecloth Cloak
 		}),
-		n(-330, {	-- Feet
+		n(FEET, {
 			un(REMOVED_FROM_GAME, i(19684)),	-- Bloodvine Boots
 			i(19056),	-- Argent Boots
 			i(10026),	-- Black Mageweave Boots
@@ -1407,7 +1407,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(4320),	-- Spidersilk Boots
 			i(2583),	-- Woolen Boots
 		}),
-		n(-327, {	-- Hands
+		n(HANDS, {
 			un(REMOVED_FROM_GAME, i(22654)),	-- Glacial Gloves
 			i(4319),	-- Azure Silk Gloves
 			i(10003),	-- Black Mageweave Gloves
@@ -1432,7 +1432,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10023),	-- Shadoweave Gloves
 			i(7049),	-- Truefaith Gloves
 		}),
-		n(-320, {	-- Head
+		n(HEAD, {
 			i(10030),	-- Admiral's Hat
 			i(7048),	-- Azure Silk Hood
 			i(10024),	-- Black Mageweave Headband
@@ -1451,7 +1451,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10008),	-- White Bandit Mask
 			i(14130),	-- Wizardweave Turban
 		}),
-		n(-329, {	-- Legs
+		n(LEGS, {
 			un(REMOVED_FROM_GAME, i(19683)),	-- Bloodvine Leggings
 			i(7046),	-- Azure Silk Pants
 			i(9999),	-- Black Mageweave Leggings
@@ -1499,7 +1499,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(2576),	-- White Linen Shirt
 			i(6795),	-- White Swashbuckler's Shirt
 		}),
-		n(-321, {	-- Shoulders
+		n(SHOULDER, {
 			i(19059),	-- Argent Shoulders
 			i(7060),	-- Azure Shoulders
 			i(10027),	-- Black Mageweave Shoulders
@@ -1516,7 +1516,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10028),	-- Shadoweave Shoulders
 			i(22758),	-- Sylvan Shoulders
 		}),
-		n(-328, {	-- Waist
+		n(WAIST, {
 			i(7052),	-- Azure Silk Belt
 			i(18405),	-- Belt of the Archmage
 			i(7055),	-- Crimson Silk Belt
@@ -1528,7 +1528,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(4329),	-- Star Belt
 			i(19047),	-- Wisdom of the Timbermaw
 		}),
-		n(-326, {	-- Wrist
+		n(WRIST, {
 			un(REMOVED_FROM_GAME, i(22655)),	-- Glacial Wrists
 			i(18263),	-- Flarecore Wraps
 			i(4308),	-- Green Linen Bracers

@@ -4,7 +4,7 @@
 
 _.Titles =
 {
-	n(-139, { -- Bosses
+	n(-10044, { -- Raids
 		title(89),	-- Twilight Vanquisher <Name>
 		title(107),	-- <Name> of the Nightfall
 		title(129),	-- Starcaller <Name>
@@ -43,4 +43,40 @@ _.Titles =
 		title(432),	-- Sinbreakre <Name>
 		title(447),	-- <Name>, Breaker of Chains
 	}),
+	n(-10044, bubbleDown({ ["collectible"] = false, },{ -- Raids
+		title(147),	-- <Name>, Slayer of Stupid, Incompetent and Disappointing Minions
+		title(231),	-- <Name> the Poisoned Mind
+		title(232),	-- <Name> the Bloodseeker
+		title(233),	-- <Name> the Locust
+		title(234),	-- <Name> the Swarmkeeper
+		title(235),	-- <Name> the Prime
+		title(236),	-- <Name> the Manipulator
+		title(237),	-- <Name> the Dissector
+		title(238),	-- <Name> the Lucid
+		title(239),	-- <Name> the Wind-Reaver
+		-- Dungeon
+		title(224),	-- Gob Squad Recruit <Name>
+		title(226),	-- Gob Squad Commando <Name>
+		title(365),	-- <Name> the Collector
+	})),
+	n(-10044, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, { -- Raids
+		title(88),	-- <Name> the Magic Seeker
+		title(90),	-- <Name>, Conqueror of Naxxramas
+		title(106),	-- Obsidian Slayer <Name>
+		title(124),	-- <Name>, Death's Demise
+		title(125),	-- <Name> the Celestial Defender
+		title(135),	-- Grand Crusader <Name>
+		title(374),	-- <Name>, Famed Slayer of G'huun
+		title(384, {	-- <Name>, Famed Conqueror of Dazar'alor
+			["races"] = ALLIANCE_ONLY,
+		}),
+		title(385, {	-- <Name>, Famed Defender of Dazar'alor
+			["races"] = HORDE_ONLY,
+		}),
+		title(400),	-- <Name>, Famed Slayer of the Harbinger
+		title(409),	-- <Name>, Famed Slayer of Azshara
+		title(416),	-- <Name>, Famed Slayer of N'Zoth
+		title(440),	-- <Name>, Famed Slayer of Denathrius
+		title(448),	-- <Name>, Famed Bane of the Banshee Queen
+	})),
 };

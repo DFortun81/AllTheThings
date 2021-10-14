@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9956, {	-- Quests
+	n(QUESTS, {
 		n(-10100, {	-- Shadowlands
 			ach(14672, {	-- A Bit of This, A Bit of That
 			--	["_quests"] = { 60475 },	-- We'll Workshop It

@@ -11,7 +11,7 @@ _.Instances = { tier(CATA_TIER, {
 		["groups"] = {
 			n(QUESTS, {
 				q(28741, { -- Ascendant Lord Obsidius
-					["provider"] = { "n", 49476 },	-- Finkle Einhorn
+					["provider"] = { "n", 49476 },	-- Pip Quickwit
 					["sourceQuest"] = 28738,	-- The Twilight Forge
 					["groups"] = {
 						i(66886),	-- Acid-Eaten Vest
@@ -20,24 +20,24 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 				q(28740, { -- Do My Eyes Deceive Me?
-					["provider"] = { "n", 49476 },	-- Finkle Einhorn
+					["provider"] = { "n", 49476 },	-- Pip Quickwit
 					["sourceQuest"] = 28738,	-- The Twilight Forge
 					["groups"] = {
 						i(66889),	-- Beauty's Cootie-Ridden Blankie
 						i(66887),	-- Beauty Jr.'s Collar
-						i(66890),	-- Finkle's Twinkle
+						i(66890),	-- Auto-Decoding Band
 					},
 				}),
 				q(28738, { -- The Twilight Forge
-					["provider"] = { "n", 49476 },	-- Finkle Einhorn
+					["provider"] = { "n", 49476 },	-- Pip Quickwit
 					["sourceQuest"] = 28737,	-- What Is This Place?
 				}),
 				q(28735, { -- To the Chamber of Incineration!
-					["provider"] = { "n", 49476 },	-- Finkle Einhorn
+					["provider"] = { "n", 49476 },	-- Pip Quickwit
 					["sourceQuest"] = 28732,	-- This Can Only Mean One Thing...
 				}),
 				q(28737, { -- What Is This Place?
-					["provider"] = { "n", 49476 },	-- Finkle Einhorn
+					["provider"] = { "n", 49476 },	-- Pip Quickwit
 					["sourceQuest"] = 28735,	-- To the Chamber of Incineration!
 				}),
 			}),

@@ -69,7 +69,7 @@ _.Craftables =
 				i(41117),	-- Saronite Protector
 				i(42508),	-- Titansteel Shield Wall
 			}),
-			n(-320, {		-- Head
+			n(HEAD, {
 				i(43870),	-- Brilliant Saronite Helm
 				i(41388),	-- Brilliant Titansteel Helm
 				i(39084),	-- Cobalt Helm
@@ -83,7 +83,7 @@ _.Craftables =
 				i(40673),	-- Tempered Saronite Helm
 				i(41387),	-- Tempered Titansteel Helm
 			}),
-			n(-321, {		-- Shoulders
+			n(SHOULDER, {
 				i(43865),	-- Brilliant Saronite Pauldrons
 				i(39083),	-- Cobalt Shoulders
 				i(42727),	-- Ornate Saronite Pauldrons
@@ -92,7 +92,7 @@ _.Craftables =
 				i(40950),	-- Spiked Cobalt Shoulders
 				i(40675),	-- Tempered Saronite Shoulders
 			}),
-			n(-323, {		-- Chest
+			n(CHEST, {
 				i(47591),	-- Breastplate of the White Knight
 				i(47592),	-- Breastplate of the White Knight
 				i(41129),	-- Brilliant Saronite Breastplate
@@ -114,7 +114,7 @@ _.Craftables =
 				i(47589),	-- Titanium Razorplate
 				i(47590),	-- Titanium Razorplate
 			}),
-			n(-327, {		-- Hands
+			n(HANDS, {
 				i(41127),	-- Brilliant Saronite Gauntlets
 				i(41975),	-- Cobalt Gauntlets
 				i(41357),	-- Daunting Handguards
@@ -124,7 +124,7 @@ _.Craftables =
 				i(40952),	-- Spiked Cobalt Gauntlets
 				i(41114),	-- Tempered Saronite Gauntlets
 			}),
-			n(-326, {		-- Wrist
+			n(WRIST, {
 				i(43864),	-- Brilliant Saronite Bracers
 				i(41974),	-- Cobalt Bracers
 				i(42723),	-- Ornate Saronite Bracers
@@ -139,7 +139,7 @@ _.Craftables =
 				i(47573),	-- Titanium Spikeguards
 				i(41355),	-- Vengeance Bindings
 			}),
-			n(-328, {		-- Waist
+			n(WAIST, {
 				i(45550),	-- Belt of the Titans
 				i(43860),	-- Brilliant Saronite Belt
 				i(39087),	-- Cobalt Belt
@@ -151,7 +151,7 @@ _.Craftables =
 				i(40953),	-- Spiked Cobalt Belt
 				i(40669),	-- Tempered Saronite Belt
 			}),
-			n(-329, {		-- Legs
+			n(LEGS, {
 				i(41126),	-- Brilliant Saronite Legplates
 				i(39086),	-- Cobalt Legplates
 				i(41345),	-- Daunting Legplates
@@ -172,7 +172,7 @@ _.Craftables =
 				i(40943),	-- Spiked Cobalt Legplates
 				i(40674),	-- Tempered Saronite Legplates
 			}),
-			n(-330, {		-- Feet
+			n(FEET, {
 				i(45559),	-- Battlelord's Plate Boots
 				i(49907),	-- Boots of Kingly Upheaval
 				i(41128),	-- Brilliant Saronite Boots
@@ -213,7 +213,7 @@ _.Craftables =
 				i(41146),	-- Sun Scope
 				i(41167),	-- Heartseeker Scope
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				-- Guns
 				i(41168),	-- Armor Plated Combat Shotgun*
 				i(39688),	-- Mark "S" Boomstick*
@@ -365,7 +365,7 @@ _.Craftables =
 				i(38374),	-- Icescale Leg Armor
 				i(44963),	-- Earthen Leg Armor
 			}),
-			n(-322, {	-- Cloak
+			n(BACK, {
 				i(38441),	-- Cloak of Harsh Winds
 				i(41238),	-- Cloak of Tormented Skies
 				i(43565),	-- Durable Nerubhide Cape
@@ -524,7 +524,7 @@ _.Craftables =
 				i(41603),	-- Azure Spellthread
 				i(41604),	-- Sapphire Spellthread
 			}),
-			n(-323, {	-- Chest
+			n(CHEST, {
 				i(41554),	-- Black Duskweave Robe
 				i(41549),	-- Duskweave Robe
 				i(42101),	-- Ebonweave Robe
@@ -539,7 +539,7 @@ _.Craftables =
 				i(47606),	-- Royal Moonshroud Robe (horde)
 				i(42102),	-- Spellweave Robe
 			}),
-			n(-322, {	-- Cloaks
+			n(BACK, {
 				i(45810),	-- Cloak of Crimson Snow
 				i(41608),	-- Cloak of Frozen Spirits
 				i(41607),	-- Cloak of the Moon
@@ -548,7 +548,7 @@ _.Craftables =
 				i(45626),	-- Spidersilk Drape
 				i(41609),	-- Wispcloak
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(42096),	-- Aurora Slippers
 				i(49890),	-- Deathfrost Boots
 				i(41544),	-- Duskweave Boots
@@ -560,7 +560,7 @@ _.Craftables =
 				i(41985),	-- Silky Iceshard Boots
 				i(45566),	-- Spellslinger's Slippers
 			}),
-			n(-327, {	-- Hands
+			n(HANDS, {
 				i(41545),	-- Duskweave Gloves
 				i(42111),	-- Ebonweave Gloves
 				i(41516),	-- Frostsavage Gloves
@@ -569,13 +569,13 @@ _.Craftables =
 				i(42103),	-- Moonshroud Gloves
 				i(42113),	-- Spellweave Gloves
 			}),
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(41546),	-- Duskweave Cowl
 				i(43971),	-- Frostsavage Cowl
 				i(41521),	-- Frostwoven Cowl
 				i(41984),	-- Hat of Wintry Doom
 			}),
-			n(-329, {	-- Legs
+			n(LEGS, {
 				i(41553),	-- Black Duskweave Leggings
 				i(41548),	-- Duskweave Leggings
 				i(42093),	-- Frostmoon Pants
@@ -589,7 +589,7 @@ _.Craftables =
 				i(54797),	-- Frosty Flying Carpet
 				i(44558),	-- Magnificent Flying Carpet
 			}),
-			n(-321, {	-- Shoulders
+			n(SHOULDER, {
 				i(41550),	-- Duskweave Shoulders
 				i(43973),	-- Frostsavage Shoulders
 				i(41513),	-- Frostwoven Shoulders
@@ -605,7 +605,7 @@ _.Craftables =
 				i(41254),	-- Rustic Workman's Shirt
 				i(41251),	-- Yellow Lumberjack Shirt
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				i(45558),	-- Cord of the White Dawn
 				i(41986),	-- Deep Frozen Cord
 				i(41543),	-- Duskweave Belt
@@ -614,7 +614,7 @@ _.Craftables =
 				i(43584),	-- Glacial Waistband
 				i(45557),	-- Sash of Ancient Power
 			}),
-			n(-326, {	-- Wrist
+			n(WRIST, {
 				i(47585),	-- Bejeweled Wizard's Bracers (alliance)
 				i(47586),	-- Bejeweled Wizard's Bracers (horde)
 				i(41555),	-- Black Duskweave Wristwraps

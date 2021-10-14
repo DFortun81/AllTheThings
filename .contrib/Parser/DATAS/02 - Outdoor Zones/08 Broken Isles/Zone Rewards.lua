@@ -73,7 +73,7 @@ _.Zones =
 			i(134334, {	-- Disgraced Court Cloak
 				["bonusID"] = 1812,
 			}),
-			n(-384, {	-- Neck
+			n(NECK, {
 				i(139101),	-- An'she's Pendant
 				i(134161),	-- Brulstone Pendant
 				i(139063),	-- Dreamwalker's Pendant
@@ -81,7 +81,7 @@ _.Zones =
 				i(146776),	-- Manastalker Collar
 				i(121796),	-- Pendant of the Kaldorei
 			}),
-			n(-385, {	-- Finger
+			n(FINGER, {
 				i(134367),	-- Legionnaire's Band
 				i(146858),	-- Malefic Inquisitor's Ring
 				i(134279),	-- Nightborne Signet Ring

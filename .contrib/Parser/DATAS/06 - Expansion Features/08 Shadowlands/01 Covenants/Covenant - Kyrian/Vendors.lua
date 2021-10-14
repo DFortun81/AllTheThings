@@ -1579,7 +1579,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177690),	-- 9.0 Covenant - Bastion - Plate - Waist
 					i(177691),	-- 9.0 Covenant - Bastion - Plate - Wrists
 				}),
-				n(-322, {	-- Cloaks
+				n(BACK, {
 					i(177692),	-- 9.0 Covenant - Bastion - Plate - Base - Cloak
 					i(179402),	-- 9.0 Covenant - Bastion - Mail - Base - Cloak
 				}),

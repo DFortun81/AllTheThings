@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9962, bubbleDown({["u"] = MIDSUMMER_FIRE_FESTIVAL}, {	-- World Events
-		n(-10019, {	-- Midsummer
+		holiday(235474, {	-- Midsummer
 			ach(271),	-- Burning Hot Pole Dance
 			ach(1037,  {	-- Desecration of the Alliance
 				["races"] = HORDE_ONLY,

@@ -1584,7 +1584,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(155489),	-- Waycrest Militia Belt
 			}),
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(161296),	-- Autumnvale Hunting Rifle
 		}),
 	}),

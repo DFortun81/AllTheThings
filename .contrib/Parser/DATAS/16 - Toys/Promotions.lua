@@ -4,7 +4,7 @@
 
 _.Toys =
 {
-	n(-31, {	-- Promotions
+	n(PROMOTIONS, {
 		un(REMOVED_FROM_GAME, i(54653)),	-- Darkspear Pride (Horde) No Longer Available
 		un(REMOVED_FROM_GAME, i(172179)),	-- Eternal Traveler's Hearthstone
 		un(REMOVED_FROM_GAME, i(54651)),	-- Gnomeregan Pride (Alliance) No Longer Available

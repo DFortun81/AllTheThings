@@ -17,7 +17,7 @@ _.PVP =
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					n(-659, {	-- Aspirant PvP Gear
+					n(PVP_ASPIRANT, {
 						cl(DEATHKNIGHT, {
 							un(REMOVED_FROM_GAME, i(115197)), -- Primal Aspirant's Dreadplate Chestpiece (A)
 							un(REMOVED_FROM_GAME, i(115198)), -- Primal Aspirant's Dreadplate Gauntlets (A)
@@ -95,36 +95,36 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(115266)), -- Primal Aspirant's Plate Legguards (A)
 							un(REMOVED_FROM_GAME, i(115267)), -- Primal Aspirant's Plate Shoulders (A)
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							un(REMOVED_FROM_GAME, i(115268)), -- Primal Aspirant's Cape of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115269)), -- Primal Aspirant's Drape of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115270)), -- Primal Aspirant's Drape of Meditation (A)
 							un(REMOVED_FROM_GAME, i(115271)), -- Primal Aspirant's Cloak of Cruelty (A)
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							un(REMOVED_FROM_GAME, i(115196)), -- Primal Aspirant's Cuffs of Prowess (A)
 							un(REMOVED_FROM_GAME, i(115219)), -- Primal Aspirant's Bindings of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115227)), -- Primal Aspirant's Armbands of Prowess (A)
 							un(REMOVED_FROM_GAME, i(115240)), -- Primal Aspirant's Armplates of Cruelty (A)
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							un(REMOVED_FROM_GAME, i(115194)), -- Primal Aspirant's Cord of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115217)), -- Primal Aspirant's Belt of Prowess (A)
 							un(REMOVED_FROM_GAME, i(115225)), -- Primal Aspirant's Waistguard of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115238)), -- Primal Aspirant's Girdle of Cruelty (A)
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							un(REMOVED_FROM_GAME, i(115195)), -- Primal Aspirant's Treads of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115218)), -- Primal Aspirant's Boots of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115226)), -- Primal Aspirant's Footguards of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115239)), -- Primal Aspirant's Warboots of Cruelty (A)
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(115191)), -- Primal Aspirant's Necklace of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115212)), -- Primal Aspirant's Pendant of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115256)), -- Primal Aspirant's Choker of Cruelty (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(115192)), -- Primal Aspirant's Ring of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115193)), -- Primal Aspirant's Ring of Prowess (A)
 							un(REMOVED_FROM_GAME, i(115213)), -- Primal Aspirant's Band of Cruelty (A)
@@ -135,12 +135,12 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(127116)), -- Primal Aspirant's Signet of Accuracy (A)
 						}),
 					}),
-					n(-660, {	-- Combatant PvP Gear
-						n(-319, {	-- Weapons
+					n(PVP_COMBATANT, {
+						n(WEAPONS, {
 							i(138625, {	-- Arsenal: Primal Combatant's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -660 },
+									{"sub", "pvp_weapons_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_COMBATANT },
 									{"exclude", "itemID", 138625 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -232,7 +232,7 @@ _.PVP =
 							i(138613, {	-- Ensemble: Primal Combatant's Dreadplate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -660, 6 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 6 },
 									{"select", "itemID", 115115 },	-- Primal Combatant's Armplates of Cruelty (A)
 									{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)
@@ -261,7 +261,7 @@ _.PVP =
 							i(138617, {	-- Ensemble: Primal Combatant's Dragonhide Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -660, 11 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 11 },
 									{"select", "itemID", 115088 },	-- Primal Combatant's Bindings of Cruelty (A)
 									{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
@@ -290,7 +290,7 @@ _.PVP =
 							i(138579, {	-- Ensemble: Primal Combatant's Chain Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -660, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 3 },
 									{"select", "itemID", 115100 },	-- Primal Combatant's Armbands of Cruelty (A)
 									{"select", "itemID", 115095 },	-- Primal Combatant's Waistguard of Cruelty (A)
 									{"select", "itemID", 115097 },	-- Primal Combatant's Footguards of Cruelty (A)
@@ -319,7 +319,7 @@ _.PVP =
 							i(138581, {	-- Ensemble: Primal Combatant's Silk Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -660, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 8 },
 									{"select", "itemID", 115048 },	-- Primal Combatant's Cuffs of Cruelty (A)
 									{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
@@ -348,7 +348,7 @@ _.PVP =
 							i(138619, {	-- Ensemble: Primal Combatant's Ironskin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -660, 10 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 10 },
 									{"select", "itemID", 115088 },	-- Primal Combatant's Bindings of Cruelty (A)
 									{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
@@ -377,7 +377,7 @@ _.PVP =
 							i(138615, {	-- Ensemble: Primal Combatant's Scaled Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -660, 2 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 2 },
 									{"select", "itemID", 115115 },	-- Primal Combatant's Armplates of Cruelty (A)
 									{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)
@@ -406,7 +406,7 @@ _.PVP =
 							i(138583, {	-- Ensemble: Primal Combatant's Satin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -660, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 8 },
 									{"select", "itemID", 115048 },	-- Primal Combatant's Cuffs of Cruelty (A)
 									{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
@@ -435,7 +435,7 @@ _.PVP =
 							i(138621, {	-- Ensemble: Primal Combatant's Leather Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -660, 4 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 4 },
 									{"select", "itemID", 115088 },	-- Primal Combatant's Bindings of Cruelty (A)
 									{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
@@ -464,7 +464,7 @@ _.PVP =
 							i(138577, {	-- Ensemble: Primal Combatant's Ringmail Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -660, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 3 },
 									{"select", "itemID", 115100 },	-- Primal Combatant's Armbands of Cruelty (A)
 									{"select", "itemID", 115095 },	-- Primal Combatant's Waistguard of Cruelty (A)
 									{"select", "itemID", 115097 },	-- Primal Combatant's Footguards of Cruelty (A)
@@ -493,7 +493,7 @@ _.PVP =
 							i(138585, {	-- Ensemble: Primal Combatant's Felweave Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -660, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 8 },
 									{"select", "itemID", 115048 },	-- Primal Combatant's Cuffs of Cruelty (A)
 									{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
@@ -522,7 +522,7 @@ _.PVP =
 							i(138611, {	-- Ensemble: Primal Combatant's Plate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -660, 1 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 1 },
 									{"select", "itemID", 115115 },	-- Primal Combatant's Armplates of Cruelty (A)
 									{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)
@@ -547,7 +547,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(115039, {	-- Primal Combatant's Hood of Prowess (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -561,7 +561,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(115042, {	-- Primal Combatant's Amice of Prowess (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -575,7 +575,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(115183, {	-- Primal Combatant's Cape of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -601,7 +601,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(115041, {	-- Primal Combatant's Robes of Prowess (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -615,7 +615,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(115048, {	-- Primal Combatant's Cuffs of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -641,7 +641,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(115038, {	-- Primal Combatant's Gloves of Prowess (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -655,7 +655,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(115043, {	-- Primal Combatant's Cord of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -681,7 +681,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(115040, {	-- Primal Combatant's Leggings of Prowess (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -695,7 +695,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(115045, {	-- Primal Combatant's Treads of Cruelty (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -721,7 +721,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(115139)),	-- Primal Combatant's Choker of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115140)),	-- Primal Combatant's Choker of Prowess (A)
 							un(REMOVED_FROM_GAME, i(115034)),	-- Primal Combatant's Necklace of Cruelty (A)
@@ -731,7 +731,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(115073)),	-- Primal Combatant's Pendant of Meditation (A)
 							un(REMOVED_FROM_GAME, i(115072)),	-- Primal Combatant's Pendant of Prowess (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(115081)),	-- Primal Combatant's Band of Contemplation (A)
 							un(REMOVED_FROM_GAME, i(115077)),	-- Primal Combatant's Band of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115080)),	-- Primal Combatant's Band of Meditation (A)
@@ -761,12 +761,12 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(115157)),	-- Primal Combatant's Medallion of Tenacity (A)
 						}),
 					}),
-					n(-661, {	-- Gladiator PvP Gear
-						n(-319, {	-- Weapons
+					n(PVP_GLADIATOR, {
+						n(WEAPONS, {
 							i(138631, {	-- Arsenal: Primal Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -661 },
+									{"sub", "pvp_weapons_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
 									{"exclude", "itemID", 138631 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -858,7 +858,7 @@ _.PVP =
 							i(138557, {	-- Ensemble: Primal Gladiator's Dreadplate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -661, 6 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 6 },
 									{"select", "itemID", 115707 },	-- Primal Gladiator's Armplates of Cruelty (A)
 									{"select", "itemID", 115701 },	-- Primal Gladiator's Girdle of Cruelty (A)
 									{"select", "itemID", 115706 },	-- Primal Gladiator's Warboots of Victory (A)
@@ -887,7 +887,7 @@ _.PVP =
 							i(138565, {	-- Ensemble: Primal Gladiator's Dragonhide Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -661, 11 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 11 },
 									{"select", "itemID", 115676 },	-- Primal Gladiator's Bindings of Victory (A)
 									{"select", "itemID", 115670 },	-- Primal Gladiator's Belt of Victory (A)
 									{"select", "itemID", 115672 },	-- Primal Gladiator's Boots of Prowess (A)
@@ -916,7 +916,7 @@ _.PVP =
 							i(138563, {	-- Ensemble: Primal Gladiator's Chain Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -661, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 3 },
 									{"select", "itemID", 115689 },	-- Primal Gladiator's Armbands of Cruelty (A)
 									{"select", "itemID", 115690 },	-- Primal Gladiator's Armbands of Victory (A)
 									{"select", "itemID", 115682 },	-- Primal Gladiator's Waistguard of Cruelty (A)
@@ -947,7 +947,7 @@ _.PVP =
 							i(138571, {	-- Ensemble: Primal Gladiator's Silk Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -661, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 8 },
 									{"select", "itemID", 115626 },	-- Primal Gladiator's Cuffs of Prowess (A)
 									{"select", "itemID", 115620 },	-- Primal Gladiator's Cord of Cruelty (A)
 									{"select", "itemID", 115624 },	-- Primal Gladiator's Treads of Prowess (A)
@@ -976,7 +976,7 @@ _.PVP =
 							i(138567, {	-- Ensemble: Primal Gladiator's Ironskin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -661, 10 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 10 },
 									{"select", "itemID", 115674 },	-- Primal Gladiator's Bindings of Cruelty (A)
 									{"select", "itemID", 115668 },	-- Primal Gladiator's Belt of Prowess (A)
 									{"select", "itemID", 115673 },	-- Primal Gladiator's Boots of Victory (A)
@@ -1005,7 +1005,7 @@ _.PVP =
 							i(138559, {	-- Ensemble: Primal Gladiator's Scaled Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -661, 2 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 2 },
 									{"select", "itemID", 115709 },	-- Primal Gladiator's Armplates of Victory (A)
 									{"select", "itemID", 115703 },	-- Primal Gladiator's Girdle of Victory (A)
 									{"select", "itemID", 115705 },	-- Primal Gladiator's Warboots of Prowess (A)
@@ -1034,7 +1034,7 @@ _.PVP =
 							i(138573, {	-- Ensemble: Primal Gladiator's Satin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -661, 5 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 5 },
 									{"select", "itemID", 115628 },	-- Primal Gladiator's Cuffs of Victory (A)
 									{"select", "itemID", 115622 },	-- Primal Gladiator's Cord of Victory (A)
 									{"select", "itemID", 115623 },	-- Primal Gladiator's Treads of Cruelty (A)
@@ -1063,7 +1063,7 @@ _.PVP =
 							i(138569, {	-- Ensemble: Primal Gladiator's Leather Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -661, 4 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 4 },
 									{"select", "itemID", 115675 },	-- Primal Gladiator's Bindings of Prowess (A)
 									{"select", "itemID", 115669 },	-- Primal Gladiator's Belt of Cruelty (A)
 									{"select", "itemID", 115671 },	-- Primal Gladiator's Boots of Cruelty (A)
@@ -1092,7 +1092,7 @@ _.PVP =
 							i(138561, {	-- Ensemble: Primal Gladiator's Ringmail Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -661, 7 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 7 },
 									{"select", "itemID", 115688 },	-- Primal Gladiator's Armbands of Prowess (A)
 									{"select", "itemID", 115683 },	-- Primal Gladiator's Waistguard of Prowess (A)
 									{"select", "itemID", 115685 },	-- Primal Gladiator's Footguards of Cruelty (A)
@@ -1122,7 +1122,7 @@ _.PVP =
 							i(138575, {	-- Ensemble: Primal Gladiator's Felweave Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -661, 9 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 9 },
 									{"select", "itemID", 115627 },	-- Primal Gladiator's Cuffs of Cruelty (A)
 									{"select", "itemID", 115621 },	-- Primal Gladiator's Cord of Prowess (A)
 									{"select", "itemID", 115625 },	-- Primal Gladiator's Treads of Victory (A)
@@ -1151,7 +1151,7 @@ _.PVP =
 							i(138555, {	-- Ensemble: Primal Gladiator's Plate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, -661, 1 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 1 },
 									{"select", "itemID", 115708 },	-- Primal Gladiator's Armplates of Prowess (A)
 									{"select", "itemID", 115702 },	-- Primal Gladiator's Girdle of Prowess (A)
 									{"select", "itemID", 115704 },	-- Primal Gladiator's Warboots of Cruelty (A)
@@ -1176,7 +1176,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(115743, {	-- Primal Gladiator's Plate Visor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -1202,7 +1202,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(115614, {	-- Primal Gladiator's Amice of Prowess
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -1228,7 +1228,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(115613, {	-- Primal Gladiator's Robes of Prowess
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -1254,7 +1254,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(115742, {	-- Primal Gladiator's Plate Grips
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -1280,7 +1280,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(115612, {	-- Primal Gladiator's Leggings of Prowess
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -1306,7 +1306,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(115651, {	-- Primal Gladiator's Drape of Cruelty
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -1335,7 +1335,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(115626, {	-- Primal Gladiator's Cuffs of Prowess
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -1373,7 +1373,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(115682, {	-- Primal Gladiator's Waistguard of Cruelty
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -1411,7 +1411,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(115623, {	-- Primal Gladiator's Treads of Cruelty
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -1449,7 +1449,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(115606)),	-- Primal Gladiator's Necklace of Cruelty
 							un(REMOVED_FROM_GAME, i(115607)),	-- Primal Gladiator's Necklace of Prowess
 							un(REMOVED_FROM_GAME, i(115655)),	-- Primal Gladiator's Pendant of Cruelty
@@ -1460,7 +1460,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(115735)),	-- Primal Gladiator's Choker of Prowess
 							un(REMOVED_FROM_GAME, i(120108)),	-- Primal Gladiator's Choker of Endurance
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(115772)),	-- Primal Gladiator's Signet of Ruthlessness
 							un(REMOVED_FROM_GAME, i(115771)),	-- Primal Gladiator's Ring of Triumph
 							un(REMOVED_FROM_GAME, i(115747)),	-- Primal Gladiator's Signet of Accuracy
@@ -1496,7 +1496,7 @@ _.PVP =
 			n(FACTION_HEADER_HORDE, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					n(-659, {	-- Aspirant PvP Gear
+					n(PVP_ASPIRANT, {
 						cl(DEATHKNIGHT, {
 							un(REMOVED_FROM_GAME, i(119974)), -- Primal Aspirant's Dreadplate Chestpiece (H)
 							un(REMOVED_FROM_GAME, i(119975)), -- Primal Aspirant's Dreadplate Gauntlets (H)
@@ -1574,36 +1574,36 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(120043)), -- Primal Aspirant's Plate Legguards (H)
 							un(REMOVED_FROM_GAME, i(120044)), -- Primal Aspirant's Plate Shoulders (H)
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							un(REMOVED_FROM_GAME, i(120045)), -- Primal Aspirant's Cape of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(120046)), -- Primal Aspirant's Drape of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(120047)), -- Primal Aspirant's Drape of Meditation (H)
 							un(REMOVED_FROM_GAME, i(120048)), -- Primal Aspirant's Cloak of Cruelty (H)
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							un(REMOVED_FROM_GAME, i(119973)), -- Primal Aspirant's Cuffs of Prowess (H)
 							un(REMOVED_FROM_GAME, i(119996)), -- Primal Aspirant's Bindings of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(120004)), -- Primal Aspirant's Armbands of Prowess (H)
 							un(REMOVED_FROM_GAME, i(120017)), -- Primal Aspirant's Armplates of Cruelty (H)
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							un(REMOVED_FROM_GAME, i(119971)), -- Primal Aspirant's Cord of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119994)), -- Primal Aspirant's Belt of Prowess (H)
 							un(REMOVED_FROM_GAME, i(120002)), -- Primal Aspirant's Waistguard of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(120015)), -- Primal Aspirant's Girdle of Cruelty (H)
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							un(REMOVED_FROM_GAME, i(120003)), -- Primal Aspirant's Footguards of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119995)), -- Primal Aspirant's Boots of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(120016)), -- Primal Aspirant's Warboots of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119972)), -- Primal Aspirant's Treads of Cruelty (H)
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(119968)), -- Primal Aspirant's Necklace of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119989)), -- Primal Aspirant's Pendant of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(120033)), -- Primal Aspirant's Choker of Cruelty (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(119969)), -- Primal Aspirant's Ring of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119970)), -- Primal Aspirant's Ring of Prowess (H)
 							un(REMOVED_FROM_GAME, i(119990)), -- Primal Aspirant's Band of Cruelty (H)
@@ -1614,12 +1614,12 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(127117)), -- Primal Aspirant's Signet of Accuracy (H)
 						}),
 					}),
-					n(-660, {	-- Combatant PvP Gear
-						n(-319, {	-- Weapons
+					n(PVP_COMBATANT, {
+						n(WEAPONS, {
 							i(138626, {	-- Arsenal: Primal Combatant's Weapons (H)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -660 },
+									{"sub", "pvp_weapons_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_COMBATANT },
 									{"exclude", "itemID", 138626 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -1711,7 +1711,7 @@ _.PVP =
 							i(138614, {	-- Ensemble: Primal Combatant's Dreadplate Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -660, 6 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_COMBATANT, 6 },
 									{"select", "itemID", 119898 },	-- Primal Combatant's Armplates of Cruelty (H)
 									{"select", "itemID", 119894 },	-- Primal Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 119896 },	-- Primal Combatant's Warboots of Cruelty (H)
@@ -1740,7 +1740,7 @@ _.PVP =
 							i(138618, {	-- Ensemble: Primal Combatant's Dragonhide Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -660, 11 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_COMBATANT, 11 },
 									{"select", "itemID", 119871 },	-- Primal Combatant's Bindings of Cruelty (H)
 									{"select", "itemID", 119868 },	-- Primal Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 119869 },	-- Primal Combatant's Boots of Cruelty (H)
@@ -1769,7 +1769,7 @@ _.PVP =
 							i(138580, {	-- Ensemble: Primal Combatant's Chain Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -660, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_COMBATANT, 3 },
 									{"select", "itemID", 119883 },	-- Primal Combatant's Armbands of Cruelty (H)
 									{"select", "itemID", 119878 },	-- Primal Combatant's Waistguard of Cruelty (H)
 									{"select", "itemID", 119880 },	-- Primal Combatant's Footguards of Cruelty (H)
@@ -1798,7 +1798,7 @@ _.PVP =
 							i(138582, {	-- Ensemble: Primal Combatant's Silk Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -660, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_COMBATANT, 8 },
 									{"select", "itemID", 119838 },	-- Primal Combatant's Cuffs of Cruelty (H)
 									{"select", "itemID", 119833 },	-- Primal Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 119835 },	-- Primal Combatant's Treads of Cruelty (H)
@@ -1827,7 +1827,7 @@ _.PVP =
 							i(138620, {	-- Ensemble: Primal Combatant's Ironskin Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -660, 10 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_COMBATANT, 10 },
 									{"select", "itemID", 119871 },	-- Primal Combatant's Bindings of Cruelty (H)
 									{"select", "itemID", 119868 },	-- Primal Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 119869 },	-- Primal Combatant's Boots of Cruelty (H)
@@ -1856,7 +1856,7 @@ _.PVP =
 							i(138616, {	-- Ensemble: Primal Combatant's Scaled Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -660, 2 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_COMBATANT, 2 },
 									{"select", "itemID", 119898 },	-- Primal Combatant's Armplates of Cruelty (H)
 									{"select", "itemID", 119894 },	-- Primal Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 119896 },	-- Primal Combatant's Warboots of Cruelty (H)
@@ -1885,7 +1885,7 @@ _.PVP =
 							i(138584, {	-- Ensemble: Primal Combatant's Satin Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -660, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_COMBATANT, 8 },
 									{"select", "itemID", 119838 },	-- Primal Combatant's Cuffs of Cruelty (H)
 									{"select", "itemID", 119833 },	-- Primal Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 119835 },	-- Primal Combatant's Treads of Cruelty (H)
@@ -1914,7 +1914,7 @@ _.PVP =
 							i(138622, {	-- Ensemble: Primal Combatant's Leather Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -660, 4 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_COMBATANT, 4 },
 									{"select", "itemID", 119871 },	-- Primal Combatant's Bindings of Cruelty (H)
 									{"select", "itemID", 119868 },	-- Primal Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 119869 },	-- Primal Combatant's Boots of Cruelty (H)
@@ -1943,7 +1943,7 @@ _.PVP =
 							i(138578, {	-- Ensemble: Primal Combatant's Ringmail Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -660, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_COMBATANT, 3 },
 									{"select", "itemID", 119883 },	-- Primal Combatant's Armbands of Cruelty (H)
 									{"select", "itemID", 119878 },	-- Primal Combatant's Waistguard of Cruelty (H)
 									{"select", "itemID", 119880 },	-- Primal Combatant's Footguards of Cruelty (H)
@@ -1972,7 +1972,7 @@ _.PVP =
 							i(138586, {	-- Ensemble: Primal Combatant's Felweave Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -660, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_COMBATANT, 8 },
 									{"select", "itemID", 119838 },	-- Primal Combatant's Cuffs of Cruelty (H)
 									{"select", "itemID", 119833 },	-- Primal Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 119835 },	-- Primal Combatant's Treads of Cruelty (H)
@@ -2001,7 +2001,7 @@ _.PVP =
 							i(138612, {	-- Ensemble: Primal Combatant's Plate Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -660, 1 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_COMBATANT, 1 },
 									{"select", "itemID", 119898 },	-- Primal Combatant's Armplates of Cruelty (H)
 									{"select", "itemID", 119894 },	-- Primal Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 119896 },	-- Primal Combatant's Warboots of Cruelty (H)
@@ -2026,7 +2026,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(119829, {	-- Primal Combatant's Hood of Prowess (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2040,7 +2040,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(119832, {	-- Primal Combatant's Amice of Prowess (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2054,7 +2054,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(119960, {	-- Primal Combatant's Cape of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2080,7 +2080,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(119831, {	-- Primal Combatant's Robes of Prowess (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2094,7 +2094,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(119838, {	-- Primal Combatant's Cuffs of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2120,7 +2120,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(119828, {	-- Primal Combatant's Gloves of Prowess (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2134,7 +2134,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(119833, {	-- Primal Combatant's Cord of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2160,7 +2160,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(119830, {	-- Primal Combatant's Leggings of Prowess (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2174,7 +2174,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(119835, {	-- Primal Combatant's Treads of Cruelty (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2200,7 +2200,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(119916)),	-- Primal Combatant's Choker of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119917)),	-- Primal Combatant's Choker of Prowess (H)
 							un(REMOVED_FROM_GAME, i(119824)),	-- Primal Combatant's Necklace of Cruelty (H)
@@ -2210,7 +2210,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(119856)),	-- Primal Combatant's Pendant of Meditation (H)
 							un(REMOVED_FROM_GAME, i(119855)),	-- Primal Combatant's Pendant of Prowess (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(119864)),	-- Primal Combatant's Band of Contemplation (H)
 							un(REMOVED_FROM_GAME, i(119860)),	-- Primal Combatant's Band of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119863)),	-- Primal Combatant's Band of Meditation (H)
@@ -2240,12 +2240,12 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(119934)),	-- Primal Combatant's Medallion of Tenacity (H)
 						}),
 					}),
-					n(-661, {	-- Gladiator PvP Gear
-						n(-319, {	-- Weapons
+					n(PVP_GLADIATOR, {
+						n(WEAPONS, {
 							i(138632, {	-- Arsenal: Primal Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -661 },
+									{"sub", "pvp_weapons_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_GLADIATOR },
 									{"exclude", "itemID", 138632 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -2337,7 +2337,7 @@ _.PVP =
 							i(138558, {	-- Ensemble: Primal Gladiator's Dreadplate Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -661, 6 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_GLADIATOR, 6 },
 									{"select", "itemID", 111180 },	-- Primal Gladiator's Armplates of Cruelty (H)
 									{"select", "itemID", 111174 },	-- Primal Gladiator's Girdle of Cruelty (H)
 									{"select", "itemID", 111179 },	-- Primal Gladiator's Warboots of Victory (H)
@@ -2366,7 +2366,7 @@ _.PVP =
 							i(138566, {	-- Ensemble: Primal Gladiator's Dragonhide Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -661, 11 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_GLADIATOR, 11 },
 									{"select", "itemID", 111149 },	-- Primal Gladiator's Bindings of Victory (H)
 									{"select", "itemID", 111143 },	-- Primal Gladiator's Belt of Victory (H)
 									{"select", "itemID", 111145 },	-- Primal Gladiator's Boots of Prowess (H)
@@ -2395,7 +2395,7 @@ _.PVP =
 							i(138564, {	-- Ensemble: Primal Gladiator's Chain Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -661, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_GLADIATOR, 3 },
 									{"select", "itemID", 111162 },	-- Primal Gladiator's Armbands of Cruelty (H)
 									{"select", "itemID", 111163 },	-- Primal Gladiator's Armbands of Victory (H)
 									{"select", "itemID", 111155 },	-- Primal Gladiator's Waistguard of Cruelty (H)
@@ -2426,7 +2426,7 @@ _.PVP =
 							i(138572, {	-- Ensemble: Primal Gladiator's Silk Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -661, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_GLADIATOR, 8 },
 									{"select", "itemID", 111099 },	-- Primal Gladiator's Cuffs of Prowess (H)
 									{"select", "itemID", 111093 },	-- Primal Gladiator's Cord of Cruelty (H)
 									{"select", "itemID", 111097 },	-- Primal Gladiator's Treads of Prowess (H)
@@ -2455,7 +2455,7 @@ _.PVP =
 							i(138568, {	-- Ensemble: Primal Gladiator's Ironskin Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -661, 10 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_GLADIATOR, 10 },
 									{"select", "itemID", 111147 },	-- Primal Gladiator's Bindings of Cruelty (H)
 									{"select", "itemID", 111141 },	-- Primal Gladiator's Belt of Prowess (H)
 									{"select", "itemID", 111146 },	-- Primal Gladiator's Boots of Victory (H)
@@ -2484,7 +2484,7 @@ _.PVP =
 							i(138560, {	-- Ensemble: Primal Gladiator's Scaled Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -661, 2 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_GLADIATOR, 2 },
 									{"select", "itemID", 111182 },	-- Primal Gladiator's Armplates of Victory (H)
 									{"select", "itemID", 111176 },	-- Primal Gladiator's Girdle of Victory (H)
 									{"select", "itemID", 111178 },	-- Primal Gladiator's Warboots of Prowess (H)
@@ -2513,7 +2513,7 @@ _.PVP =
 							i(138574, {	-- Ensemble: Primal Gladiator's Satin Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -661, 5 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_GLADIATOR, 5 },
 									{"select", "itemID", 111101 },	-- Primal Gladiator's Cuffs of Victory (H)
 									{"select", "itemID", 111095 },	-- Primal Gladiator's Cord of Victory (H)
 									{"select", "itemID", 111096 },	-- Primal Gladiator's Treads of Cruelty (H)
@@ -2542,7 +2542,7 @@ _.PVP =
 							i(138570, {	-- Ensemble: Primal Gladiator's Leather Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -661, 4 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_GLADIATOR, 4 },
 									{"select", "itemID", 111148 },	-- Primal Gladiator's Bindings of Prowess (H)
 									{"select", "itemID", 111142 },	-- Primal Gladiator's Belt of Cruelty (H)
 									{"select", "itemID", 111144 },	-- Primal Gladiator's Boots of Cruelty (H)
@@ -2571,7 +2571,7 @@ _.PVP =
 							i(138562, {	-- Ensemble: Primal Gladiator's Ringmail Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -661, 7 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_GLADIATOR, 7 },
 									{"select", "itemID", 111161 },	-- Primal Gladiator's Armbands of Prowess (H)
 									{"select", "itemID", 111156 },	-- Primal Gladiator's Waistguard of Prowess (H)
 									{"select", "itemID", 111158 },	-- Primal Gladiator's Footguards of Cruelty (H)
@@ -2601,7 +2601,7 @@ _.PVP =
 							i(138576, {	-- Ensemble: Primal Gladiator's Felweave Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -661, 9 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_GLADIATOR, 9 },
 									{"select", "itemID", 111100 },	-- Primal Gladiator's Cuffs of Cruelty (H)
 									{"select", "itemID", 111094 },	-- Primal Gladiator's Cord of Prowess (H)
 									{"select", "itemID", 111098 },	-- Primal Gladiator's Treads of Victory (H)
@@ -2630,7 +2630,7 @@ _.PVP =
 							i(138556, {	-- Ensemble: Primal Gladiator's Plate Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, -661, 1 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, FACTION_HEADER_HORDE, PVP_GLADIATOR, 1 },
 									{"select", "itemID", 111181 },	-- Primal Gladiator's Armplates of Prowess (H)
 									{"select", "itemID", 111175 },	-- Primal Gladiator's Girdle of Prowess (H)
 									{"select", "itemID", 111177 },	-- Primal Gladiator's Warboots of Cruelty (H)
@@ -2655,7 +2655,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(111205, {	-- Primal Gladiator's Cloak of Cruelty
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2684,7 +2684,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(111216, {	-- Primal Gladiator's Plate Visor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2710,7 +2710,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(111218, {	-- Primal Gladiator's Plate Pauldrons
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2736,7 +2736,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(111214, {	-- Primal Gladiator's Plate Chestguard
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2762,7 +2762,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(111083, {	-- Primal Gladiator's Gloves of Prowess
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2788,7 +2788,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(111180, {	-- Primal Gladiator's Armplates of Cruelty
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2826,7 +2826,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(111141, {	-- Primal Gladiator's Belt of Prowess
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -2864,7 +2864,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(111276, {	-- Primal Gladiator's Legguards
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2890,7 +2890,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(111144, {	-- Primal Gladiator's Boots of Cruelty
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -2928,7 +2928,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(111079)),	-- Primal Gladiator's Necklace of Cruelty
 							un(REMOVED_FROM_GAME, i(111080)),	-- Primal Gladiator's Necklace of Prowess
 							un(REMOVED_FROM_GAME, i(111128)),	-- Primal Gladiator's Pendant of Cruelty
@@ -2939,7 +2939,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(111208)),	-- Primal Gladiator's Choker of Prowess
 							un(REMOVED_FROM_GAME, i(120107)),	-- Primal Gladiator's Choker of Endurance
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(111081)),	-- Primal Gladiator's Ring of Cruelty
 							un(REMOVED_FROM_GAME, i(111082)),	-- Primal Gladiator's Ring of Prowess
 							un(REMOVED_FROM_GAME, i(111134)),	-- Primal Gladiator's Band of Cruelty
@@ -2972,10 +2972,10 @@ _.PVP =
 					}),
 				},
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				un(REMOVED_FROM_GAME, i(115979)),	-- Primal Gladiator's Greatcloak
 				un(REMOVED_FROM_GAME, i(115972)),	-- Primal Gladiator's Tabard
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(115948)),	-- Primal Gladiator's Ripper
 					un(REMOVED_FROM_GAME, i(115949)),	-- Primal Gladiator's Render
 					un(REMOVED_FROM_GAME, i(115818)),	-- Primal Gladiator's Bonegrinder
@@ -3162,7 +3162,7 @@ _.PVP =
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					n(-659, {	-- Aspirant PvP Gear
+					n(PVP_ASPIRANT, {
 						cl(DEATHKNIGHT, {
 							un(REMOVED_FROM_GAME, i(125070)),	-- Wild Aspirant's Dreadplate Chestpiece (A)
 							un(REMOVED_FROM_GAME, i(125071)),	-- Wild Aspirant's Dreadplate Gauntlets (A)
@@ -3240,39 +3240,39 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125152)),	-- Wild Aspirant's Plate Legguards (A)
 							un(REMOVED_FROM_GAME, i(125153)),	-- Wild Aspirant's Plate Shoulders (A)
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							un(REMOVED_FROM_GAME, i(125063)),	-- Wild Aspirant's Cape of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125085)),	-- Wild Aspirant's Drape of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125086)),	-- Wild Aspirant's Drape of Meditation (A)
 							un(REMOVED_FROM_GAME, i(125132)),	-- Wild Aspirant's Cloak of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125135)),	-- Wild Aspirant's Cloak of Endurance (A)
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							un(REMOVED_FROM_GAME, i(125069)),	-- Wild Aspirant's Cuffs of Prowess (A)
 							un(REMOVED_FROM_GAME, i(125095)),	-- Wild Aspirant's Bindings of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125103)),	-- Wild Aspirant's Armbands of Prowess (A)
 							un(REMOVED_FROM_GAME, i(125116)),	-- Wild Aspirant's Armplates of Cruelty (A)
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							un(REMOVED_FROM_GAME, i(125067)),	-- Wild Aspirant's Cord of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125093)),	-- Wild Aspirant's Belt of Prowess (A)
 							un(REMOVED_FROM_GAME, i(125101)),	-- Wild Aspirant's Waistguard of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125114)),	-- Wild Aspirant's Girdle of Cruelty (A)
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							un(REMOVED_FROM_GAME, i(125068)),	-- Wild Aspirant's Treads of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125094)),	-- Wild Aspirant's Boots of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125102)),	-- Wild Aspirant's Footguards of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125115)),	-- Wild Aspirant's Warboots of Cruelty (A)
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(125087)),	-- Wild Aspirant's Pendant of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125064)),	-- Wild Aspirant's Necklace of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125136)),	-- Wild Aspirant's Choker of Endurance (A)
 							un(REMOVED_FROM_GAME, i(125133)),	-- Wild Aspirant's Choker of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125088)),	-- Wild Aspirant's Pendant of Meditation (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(125091)),	-- Wild Aspirant's Band of Meditation (A)
 							un(REMOVED_FROM_GAME, i(125090)),	-- Wild Aspirant's Band of Prowess (A)
 							un(REMOVED_FROM_GAME, i(125092)),	-- Wild Aspirant's Band of Contemplation (A)
@@ -3292,12 +3292,12 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125143)),	-- Wild Aspirant's Accolade of Endurance (A)
 						}),
 					}),
-					n(-660, {	-- Combatant PvP Gear
-						n(-319, {	-- Weapons
+					n(PVP_COMBATANT, {
+						n(WEAPONS, {
 							i(138630, {	-- Arsenal: Wild Combatant's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -660 },
+									{"sub", "pvp_weapons_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_COMBATANT },
 									{"exclude", "itemID", 138630 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -3398,7 +3398,7 @@ _.PVP =
 							i(138601, {	-- Ensemble: Wild Combatant's Dreadplate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -660, 6 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 6 },
 									{"select", "itemID", 124993 },	-- Wild Combatant's Armplates of Cruelty (A)
 									{"select", "itemID", 124989 },	-- Wild Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 124991 },	-- Wild Combatant's Warboots of Cruelty (A)
@@ -3432,7 +3432,7 @@ _.PVP =
 							i(138605, {	-- Ensemble: Wild Combatant's Dragonhide Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -660, 11 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 11 },
 									{"select", "itemID", 124956 },	-- Wild Combatant's Bindings of Cruelty (A)
 									{"select", "itemID", 124953 },	-- Wild Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 124954 },	-- Wild Combatant's Boots of Cruelty (A)
@@ -3466,7 +3466,7 @@ _.PVP =
 							i(138547, {	-- Ensemble: Wild Combatant's Chain Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -660, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 3 },
 									{"select", "itemID", 124973 },	-- Wild Combatant's Armbands of Cruelty (A)
 									{"select", "itemID", 124968 },	-- Wild Combatant's Waistguard of Cruelty (A)
 									{"select", "itemID", 124970 },	-- Wild Combatant's Footguards of Cruelty (A)
@@ -3500,7 +3500,7 @@ _.PVP =
 							i(138549, {	-- Ensemble: Wild Combatant's Silk Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -660, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 8 },
 									{"select", "itemID", 124907 },	-- Wild Combatant's Cuffs of Cruelty (A)
 									{"select", "itemID", 124902 },	-- Wild Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 124904 },	-- Wild Combatant's Treads of Cruelty (A)
@@ -3534,7 +3534,7 @@ _.PVP =
 							i(138607, {	-- Ensemble: Wild Combatant's Ironskin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -660, 10 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 10 },
 									{"select", "itemID", 124956 },	-- Wild Combatant's Bindings of Cruelty (A)
 									{"select", "itemID", 124953 },	-- Wild Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 124954 },	-- Wild Combatant's Boots of Cruelty (A)
@@ -3568,7 +3568,7 @@ _.PVP =
 							i(138603, {	-- Ensemble: Wild Combatant's Scaled Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -660, 2 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 2 },
 									{"select", "itemID", 124993 },	-- Wild Combatant's Armplates of Cruelty (A)
 									{"select", "itemID", 124989 },	-- Wild Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 124991 },	-- Wild Combatant's Warboots of Cruelty (A)
@@ -3602,7 +3602,7 @@ _.PVP =
 							i(138551, {	-- Ensemble: Wild Combatant's Satin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -660, 5 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 5 },
 									{"select", "itemID", 124907 },	-- Wild Combatant's Cuffs of Cruelty (A)
 									{"select", "itemID", 124902 },	-- Wild Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 124904 },	-- Wild Combatant's Treads of Cruelty (A)
@@ -3636,7 +3636,7 @@ _.PVP =
 							i(138609, {	-- Ensemble: Wild Combatant's Leather Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -660, 4 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 4 },
 									{"select", "itemID", 124956 },	-- Wild Combatant's Bindings of Cruelty (A)
 									{"select", "itemID", 124953 },	-- Wild Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 124954 },	-- Wild Combatant's Boots of Cruelty (A)
@@ -3670,7 +3670,7 @@ _.PVP =
 							i(138545, {	-- Ensemble: Wild Combatant's Ringmail Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -660, 7 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 7 },
 									{"select", "itemID", 124973 },	-- Wild Combatant's Armbands of Cruelty (A)
 									{"select", "itemID", 124968 },	-- Wild Combatant's Waistguard of Cruelty (A)
 									{"select", "itemID", 124970 },	-- Wild Combatant's Footguards of Cruelty  (A)
@@ -3704,7 +3704,7 @@ _.PVP =
 							i(138553, {	-- Ensemble: Wild Combatant's Felweave Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -660, 9 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 9 },
 									{"select", "itemID", 124907 },	-- Wild Combatant's Cuffs of Cruelty (A)
 									{"select", "itemID", 124902 },	-- Wild Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 124904 },	-- Wild Combatant's Treads of Cruelty (A)
@@ -3738,7 +3738,7 @@ _.PVP =
 							i(138599, {	-- Ensemble: Wild Combatant's Plate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -660, 1 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 1 },
 									{"select", "itemID", 124993 },	-- Wild Combatant's Armplates of Cruelty (A)
 									{"select", "itemID", 124989 },	-- Wild Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 124991 },	-- Wild Combatant's Warboots of Cruelty (A)
@@ -3768,7 +3768,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(124895, {	-- Wild Combatant's Cape of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -3797,7 +3797,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(124907, {	-- Wild Combatant's Cuffs of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -3823,7 +3823,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(124902, {	-- Wild Combatant's Cord of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -3849,7 +3849,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(124904, {	-- Wild Combatant's Treads of Cruelty (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -3875,7 +3875,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(125024)),	-- Wild Combatant's Choker of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(125050)),	-- Wild Combatant's Choker of Prowess (A)
 							un(REMOVED_FROM_GAME, i(125025)),	-- Wild Combatant's Choker of Endurance (A)
@@ -3886,7 +3886,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(124941)),	-- Wild Combatant's Pendant of Meditation (A)
 							un(REMOVED_FROM_GAME, i(124940)),	-- Wild Combatant's Pendant of Prowess (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(124949)),	-- Wild Combatant's Band of Contemplation (A)
 							un(REMOVED_FROM_GAME, i(124945)),	-- Wild Combatant's Band of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(124948)),	-- Wild Combatant's Band of Meditation (A)
@@ -3918,12 +3918,12 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125039)),	-- Wild Combatant's Medallion of Tenacity (A)
 						}),
 					}),
-					n(-661, {	-- Gladiator PvP Gear
-						n(-319, {	-- Weapons
+					n(PVP_GLADIATOR, {
+						n(WEAPONS, {
 							i(138633, {	-- Arsenal: Wild Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -661 },
+									{"sub", "pvp_weapons_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
 									{"exclude", "itemID", 138633 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -4024,7 +4024,7 @@ _.PVP =
 							i(138515, {	-- Ensemble: Wild Gladiator's Dreadplate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -661, 6 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 6 },
 									{"select", "itemID", 124809 },	-- Wild Gladiator's Armplates of Cruelty (A)
 									{"select", "itemID", 124803 },	-- Wild Gladiator's Girdle of Cruelty (A)
 									{"select", "itemID", 124808 },	-- Wild Gladiator's Warboots of Victory (A)
@@ -4053,7 +4053,7 @@ _.PVP =
 							i(138523, {	-- Ensemble: Wild Gladiator's Dragonhide Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -661, 11 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 11 },
 									{"select", "itemID", 124758 },	-- Wild Gladiator's Bindings of Victory (A)
 									{"select", "itemID", 124752 },	-- Wild Gladiator's Belt of Victory (A)
 									{"select", "itemID", 124754 },	-- Wild Gladiator's Boots of Prowess (A)
@@ -4082,7 +4082,7 @@ _.PVP =
 							i(138521, {	-- Ensemble: Wild Gladiator's Chain Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -661, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 3 },
 									{"select", "itemID", 124781 },	-- Wild Gladiator's Armbands of Cruelty (A)
 									{"select", "itemID", 124782 },	-- Wild Gladiator's Armbands of Victory (A)
 									{"select", "itemID", 124780 },	-- Wild Gladiator's Armbands of Prowess (A)
@@ -4114,7 +4114,7 @@ _.PVP =
 							i(138529, {	-- Ensemble: Wild Gladiator's Silk Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -661, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 8 },
 									{"select", "itemID", 124698 },	-- Wild Gladiator's Cuffs of Prowess (A)
 									{"select", "itemID", 124692 },	-- Wild Gladiator's Cord of Cruelty (A)
 									{"select", "itemID", 124696 },	-- Wild Gladiator's Treads of Prowess (A)
@@ -4143,7 +4143,7 @@ _.PVP =
 							i(138525, {	-- Ensemble: Wild Gladiator's Ironskin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -661, 10 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 10 },
 									{"select", "itemID", 124756 },	-- Wild Gladiator's Bindings of Cruelty (A)
 									{"select", "itemID", 124750 },	-- Wild Gladiator's Belt of Prowess (A)
 									{"select", "itemID", 124755 },	-- Wild Gladiator's Boots of Victory (A)
@@ -4172,7 +4172,7 @@ _.PVP =
 							i(138517, {	-- Ensemble: Wild Gladiator's Scaled Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -661, 2 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 2 },
 									{"select", "itemID", 124811 },	-- Wild Gladiator's Armplates of Victory (A)
 									{"select", "itemID", 124805 },	-- Wild Gladiator's Girdle of Victory (A)
 									{"select", "itemID", 124807 },	-- Wild Gladiator's Warboots of Prowess (A)
@@ -4201,7 +4201,7 @@ _.PVP =
 							i(138531, {	-- Ensemble: Wild Gladiator's Satin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -661, 5 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 5 },
 									{"select", "itemID", 124700 },	-- Wild Gladiator's Cuffs of Victory (A)
 									{"select", "itemID", 124694 },	-- Wild Gladiator's Cord of Victory (A)
 									{"select", "itemID", 124695 },	-- Wild Gladiator's Treads of Cruelty (A)
@@ -4230,7 +4230,7 @@ _.PVP =
 							i(138527, {	-- Ensemble: Wild Gladiator's Leather Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -661, 4 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 4 },
 									{"select", "itemID", 124757 },	-- Wild Gladiator's Bindings of Prowess (A)
 									{"select", "itemID", 124751 },	-- Wild Gladiator's Belt of Cruelty (A)
 									{"select", "itemID", 124753 },	-- Wild Gladiator's Boots of Cruelty (A)
@@ -4259,7 +4259,7 @@ _.PVP =
 							i(138519, {	-- Ensemble: Wild Gladiator's Ringmail Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -661, 7 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 7 },
 									{"select", "itemID", 139015 },	-- Wild Gladiator's Armbands of Alacrity (A)
 									{"select", "itemID", 124775 },	-- Wild Gladiator's Waistguard of Prowess (A)
 									{"select", "itemID", 124777 },	-- Wild Gladiator's Footguards of Cruelty (A)
@@ -4289,7 +4289,7 @@ _.PVP =
 							i(138533, {	-- Ensemble: Wild Gladiator's Felweave Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -661, 9 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 9 },
 									{"select", "itemID", 124699 },	-- Wild Gladiator's Cuffs of Cruelty (A)
 									{"select", "itemID", 124693 },	-- Wild Gladiator's Cord of Prowess (A)
 									{"select", "itemID", 124697 },	-- Wild Gladiator's Treads of Victory (A)
@@ -4318,7 +4318,7 @@ _.PVP =
 							i(138513, {	-- Ensemble: Wild Gladiator's Plate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, -661, 1 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 1 },
 									{"select", "itemID", 124810 },	-- Wild Gladiator's Armplates of Prowess (A)
 									{"select", "itemID", 124804 },	-- Wild Gladiator's Girdle of Prowess (A)
 									{"select", "itemID", 124806 },	-- Wild Gladiator's Warboots of Cruelty (A)
@@ -4343,7 +4343,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(124702, {	-- Wild Gladiator's Hood of Prowess (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -4369,7 +4369,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(124705, {	-- Wild Gladiator's Amice of Prowess (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -4395,7 +4395,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(124685, {	-- Wild Gladiator's Cape of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -4424,7 +4424,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(124704, {	-- Wild Gladiator's Robes of Prowess (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -4450,7 +4450,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(124699, {	-- Wild Gladiator's Cuffs of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -4491,7 +4491,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(124701, {	-- Wild Gladiator's Gloves of Prowess (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -4517,7 +4517,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(124692, {	-- Wild Gladiator's Cord of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -4555,7 +4555,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(124703, {	-- Wild Gladiator's Leggings of Prowess (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -4581,7 +4581,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(124753, {	-- Wild Gladiator's Boots of Cruelty (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -4619,7 +4619,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(124846)),	-- Wild Gladiator's Choker of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(124847)),	-- Wild Gladiator's Choker of Prowess (A)
 							un(REMOVED_FROM_GAME, i(124853)),	-- Wild Gladiator's Choker of Endurance (A)
@@ -4630,7 +4630,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(124739)),	-- Wild Gladiator's Pendant of Meditation (A)
 							un(REMOVED_FROM_GAME, i(124738)),	-- Wild Gladiator's Pendant of Prowess (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(124747)),	-- Wild Gladiator's Band of Contemplation (A)
 							un(REMOVED_FROM_GAME, i(124743)),	-- Wild Gladiator's Band of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(124746)),	-- Wild Gladiator's Band of Meditation (A)
@@ -4667,7 +4667,7 @@ _.PVP =
 			n(FACTION_HEADER_HORDE, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					n(-659, {	-- Aspirant PvP Gear
+					n(PVP_ASPIRANT, {
 						cl(DEATHKNIGHT, {
 							un(REMOVED_FROM_GAME, i(125547)),	-- Wild Aspirant's Dreadplate Chestpiece (H)
 							un(REMOVED_FROM_GAME, i(125548)),	-- Wild Aspirant's Dreadplate Gauntlets (H)
@@ -4745,39 +4745,39 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125629)),	-- Wild Aspirant's Plate Legguards (H)
 							un(REMOVED_FROM_GAME, i(125630)),	-- Wild Aspirant's Plate Shoulders (H)
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							un(REMOVED_FROM_GAME, i(125540)),	-- Wild Aspirant's Cape of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125562)),	-- Wild Aspirant's Drape of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125563)),	-- Wild Aspirant's Drape of Meditation (H)
 							un(REMOVED_FROM_GAME, i(125609)),	-- Wild Aspirant's Cloak of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125612)),	-- Wild Aspirant's Cloak of Endurance (H)
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							un(REMOVED_FROM_GAME, i(125546)),	-- Wild Aspirant's Cuffs of Prowess (H)
 							un(REMOVED_FROM_GAME, i(125572)),	-- Wild Aspirant's Bindings of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125580)),	-- Wild Aspirant's Armbands of Prowess (H)
 							un(REMOVED_FROM_GAME, i(125593)),	-- Wild Aspirant's Armplates of Cruelty (H)
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							un(REMOVED_FROM_GAME, i(125544)),	-- Wild Aspirant's Cord of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125570)),	-- Wild Aspirant's Belt of Prowess (H)
 							un(REMOVED_FROM_GAME, i(125578)),	-- Wild Aspirant's Waistguard of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125591)),	-- Wild Aspirant's Girdle of Cruelty (H)
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							un(REMOVED_FROM_GAME, i(125545)),	-- Wild Aspirant's Treads of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125571)),	-- Wild Aspirant's Boots of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125579)),	-- Wild Aspirant's Footguards of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125592)),	-- Wild Aspirant's Warboots of Cruelty (H)
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(125613)),	-- Wild Aspirant's Choker of Endurance (H)
 							un(REMOVED_FROM_GAME, i(125565)),	-- Wild Aspirant's Pendant of Meditation (H)
 							un(REMOVED_FROM_GAME, i(125610)),	-- Wild Aspirant's Choker of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125541)),	-- Wild Aspirant's Necklace of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125564)),	-- Wild Aspirant's Pendant of Cruelty (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(125615)),	-- Wild Aspirant's Signet of Endurance (H)
 							un(REMOVED_FROM_GAME, i(125614)),	-- Wild Aspirant's Signet of Dedication (H)
 							un(REMOVED_FROM_GAME, i(125611)),	-- Wild Aspirant's Signet of Cruelty (H)
@@ -4797,12 +4797,12 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125620)),	-- Wild Aspirant's Accolade of Endurance (H)
 						}),
 					}),
-					n(-660, {	-- Combatant PvP Gear
-						n(-319, {	-- Weapons
+					n(PVP_COMBATANT, {
+						n(WEAPONS, {
 							i(138629, {	-- Arsenal: Wild Combatant's Weapons (H)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -660 },
+									{"sub", "pvp_weapons_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_COMBATANT },
 									{"exclude", "itemID", 138629 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -4903,7 +4903,7 @@ _.PVP =
 							i(138602, {	-- Ensemble: Wild Combatant's Dreadplate Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -660, 6 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_COMBATANT, 6 },
 									{"select", "itemID", 125470 },	-- Wild Combatant's Armplates of Cruelty (H)
 									{"select", "itemID", 125466 },	-- Wild Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 125468 },	-- Wild Combatant's Warboots of Cruelty (H)
@@ -4937,7 +4937,7 @@ _.PVP =
 							i(138606, {	-- Ensemble: Wild Combatant's Dragonhide Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -660, 11 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_COMBATANT, 11 },
 									{"select", "itemID", 125433 },	-- Wild Combatant's Bindings of Cruelty (H)
 									{"select", "itemID", 125430 },	-- Wild Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 125431 },	-- Wild Combatant's Boots of Cruelty (H)
@@ -4971,7 +4971,7 @@ _.PVP =
 							i(138548, {	-- Ensemble: Wild Combatant's Chain Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -660, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_COMBATANT, 3 },
 									{"select", "itemID", 125450 },	-- Wild Combatant's Armbands of Cruelty (H)
 									{"select", "itemID", 125445 },	-- Wild Combatant's Waistguard of Cruelty (H)
 									{"select", "itemID", 125448 },	-- Wild Combatant's Footguards of Cruelty (H)
@@ -5005,7 +5005,7 @@ _.PVP =
 							i(138550, {	-- Ensemble: Wild Combatant's Silk Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -660, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_COMBATANT, 8 },
 									{"select", "itemID", 125384 },	-- Wild Combatant's Cuffs of Cruelty (H)
 									{"select", "itemID", 125379 },	-- Wild Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 125381 },	-- Wild Combatant's Treads of Cruelty (H)
@@ -5039,7 +5039,7 @@ _.PVP =
 							i(138608, {	-- Ensemble: Wild Combatant's Ironskin Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -660, 10 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_COMBATANT, 10 },
 									{"select", "itemID", 125433 },	-- Wild Combatant's Bindings of Cruelty (H)
 									{"select", "itemID", 125430 },	-- Wild Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 125431 },	-- Wild Combatant's Boots of Cruelty (H)
@@ -5073,7 +5073,7 @@ _.PVP =
 							i(138604, {	-- Ensemble: Wild Combatant's Scaled Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -660, 2 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_COMBATANT, 2 },
 									{"select", "itemID", 125450 },	-- Wild Combatant's Armplates of Cruelty (H)
 									{"select", "itemID", 125466 },	-- Wild Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 125468 },	-- Wild Combatant's Warboots of Cruelty (H)
@@ -5107,7 +5107,7 @@ _.PVP =
 							i(138552, {	-- Ensemble: Wild Combatant's Satin Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -660, 5 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_COMBATANT, 5 },
 									{"select", "itemID", 125384 },	-- Wild Combatant's Cuffs of Cruelty (H)
 									{"select", "itemID", 125379 },	-- Wild Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 125381 },	-- Wild Combatant's Treads of Cruelty (H)
@@ -5141,7 +5141,7 @@ _.PVP =
 							i(138610, {	-- Ensemble: Wild Combatant's Leather Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -660, 4 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_COMBATANT, 4 },
 									{"select", "itemID", 125433 },	-- Wild Combatant's Bindings of Cruelty (H)
 									{"select", "itemID", 125430 },	-- Wild Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 125431 },	-- Wild Combatant's Boots of Cruelty (H)
@@ -5175,7 +5175,7 @@ _.PVP =
 							i(138546, {	-- Ensemble: Wild Combatant's Ringmail Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -660, 7 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_COMBATANT, 7 },
 									{"select", "itemID", 125450 },	-- Wild Combatant's Armbands of Cruelty (H)
 									{"select", "itemID", 125445 },	-- Wild Combatant's Waistguard of Cruelty (H)
 									{"select", "itemID", 125447 },	-- Wild Combatant's Footguards of Cruelty (H)
@@ -5209,7 +5209,7 @@ _.PVP =
 							i(138554, {	-- Ensemble: Wild Combatant's Felweave Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -660, 9 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_COMBATANT, 9 },
 									{"select", "itemID", 119838 },	-- Wild Combatant's Cuffs of Cruelty (H)
 									{"select", "itemID", 119833 },	-- Wild Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 119835 },	-- Wild Combatant's Treads of Cruelty (H)
@@ -5243,7 +5243,7 @@ _.PVP =
 							i(138600, {	-- Ensemble: Wild Combatant's Plate Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -660, 1 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_COMBATANT, 1 },
 									{"select", "itemID", 125470 },	-- Wild Combatant's Armplates of Cruelty (H)
 									{"select", "itemID", 125466 },	-- Wild Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 125468 },	-- Wild Combatant's Warboots of Cruelty (H)
@@ -5273,7 +5273,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(125372, {	-- Wild Combatant's Cape of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -5302,7 +5302,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(125384, {	-- Wild Combatant's Cuffs of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -5328,7 +5328,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(125379, {	-- Wild Combatant's Cord of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -5354,7 +5354,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(125381, {	-- Wild Combatant's Treads of Cruelty (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -5380,7 +5380,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(125501)),	-- Wild Combatant's Choker of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125502)),	-- Wild Combatant's Choker of Prowess (H)
 							un(REMOVED_FROM_GAME, i(125527)),	-- Wild Combatant's Choker of Endurance (H)
@@ -5391,7 +5391,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125418)),	-- Wild Combatant's Pendant of Meditation (H)
 							un(REMOVED_FROM_GAME, i(125417)),	-- Wild Combatant's Pendant of Prowess (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(125426)),	-- Wild Combatant's Band of Contemplation (H)
 							un(REMOVED_FROM_GAME, i(125422)),	-- Wild Combatant's Band of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125425)),	-- Wild Combatant's Band of Meditation (H)
@@ -5423,12 +5423,12 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125516)),	-- Wild Combatant's Medallion of Tenacity (H)
 						}),
 					}),
-					n(-661, {	-- Gladiator PvP Gear
-						n(-319, {	-- Weapons
+					n(PVP_GLADIATOR, {
+						n(WEAPONS, {
 							i(138634, {	-- Arsenal: Wild Gladiator's Weapons (H)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -661 },
+									{"sub", "pvp_weapons_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_GLADIATOR },
 									{"exclude", "itemID", 138634 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -5529,7 +5529,7 @@ _.PVP =
 							i(138516, {	-- Ensemble: Wild Gladiator's Dreadplate Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -661, 6 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_GLADIATOR, 6 },
 									{"select", "itemID", 125288 },	-- Wild Gladiator's Armplates of Cruelty (H)
 									{"select", "itemID", 125282 },	-- Wild Gladiator's Girdle of Cruelty (H)
 									{"select", "itemID", 125287 },	-- Wild Gladiator's Warboots of Victory (H)
@@ -5558,7 +5558,7 @@ _.PVP =
 							i(138524, {	-- Ensemble: Wild Gladiator's Dragonhide Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -661, 11 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_GLADIATOR, 11 },
 									{"select", "itemID", 125237 },	-- Wild Gladiator's Bindings of Victory (H)
 									{"select", "itemID", 125231 },	-- Wild Gladiator's Belt of Victory (H)
 									{"select", "itemID", 125233 },	-- Wild Gladiator's Boots of Prowess (H)
@@ -5587,7 +5587,7 @@ _.PVP =
 							i(138522, {	-- Ensemble: Wild Gladiator's Chain Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -661, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_GLADIATOR, 3 },
 									{"select", "itemID", 125260 },	-- Wild Gladiator's Armbands of Cruelty (H)
 									{"select", "itemID", 125261 },	-- Wild Gladiator's Armbands of Victory (H)
 									{"select", "itemID", 125259 },	-- Wild Gladiator's Armbands of Prowess (H)
@@ -5619,7 +5619,7 @@ _.PVP =
 							i(138530, {	-- Ensemble: Wild Gladiator's Silk Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -661, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_GLADIATOR, 8 },
 									{"select", "itemID", 125177 },	-- Wild Gladiator's Cuffs of Prowess (H)
 									{"select", "itemID", 125171 },	-- Wild Gladiator's Cord of Cruelty (H)
 									{"select", "itemID", 125175 },	-- Wild Gladiator's Treads of Prowess (H)
@@ -5648,7 +5648,7 @@ _.PVP =
 							i(138526, {	-- Ensemble: Wild Gladiator's Ironskin Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -661, 10 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_GLADIATOR, 10 },
 									{"select", "itemID", 125235 },	-- Wild Gladiator's Bindings of Cruelty (H)
 									{"select", "itemID", 125229 },	-- Wild Gladiator's Belt of Prowess (H)
 									{"select", "itemID", 125234 },	-- Wild Gladiator's Boots of Victory (H)
@@ -5677,7 +5677,7 @@ _.PVP =
 							i(138518, {	-- Ensemble: Wild Gladiator's Scaled Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -661, 2 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_GLADIATOR, 2 },
 									{"select", "itemID", 125290 },	-- Wild Gladiator's Armplates of Victory (H)
 									{"select", "itemID", 125284 },	-- Wild Gladiator's Girdle of Victory (H)
 									{"select", "itemID", 125286 },	-- Wild Gladiator's Warboots of Prowess (H)
@@ -5706,7 +5706,7 @@ _.PVP =
 							i(138532, {	-- Ensemble: Wild Gladiator's Satin Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -661, 5 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_GLADIATOR, 5 },
 									{"select", "itemID", 125179 },	-- Wild Gladiator's Cuffs of Victory (H)
 									{"select", "itemID", 125173 },	-- Wild Gladiator's Cord of Victory (H)
 									{"select", "itemID", 125174 },	-- Wild Gladiator's Treads of Cruelty (H)
@@ -5735,7 +5735,7 @@ _.PVP =
 							i(138528, {	-- Ensemble: Wild Gladiator's Leather Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -661, 4 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_GLADIATOR, 4 },
 									{"select", "itemID", 125236 },	-- Wild Gladiator's Bindings of Prowess (H)
 									{"select", "itemID", 125230 },	-- Wild Gladiator's Belt of Cruelty (H)
 									{"select", "itemID", 125232 },	-- Wild Gladiator's Boots of Cruelty (H)
@@ -5764,7 +5764,7 @@ _.PVP =
 							i(138520, {	-- Ensemble: Wild Gladiator's Ringmail Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -661, 7 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_GLADIATOR, 7 },
 									{"select", "itemID", 139016 },	-- Wild Gladiator's Armbands of Alacrity (H)
 									{"select", "itemID", 125254 },	-- Wild Gladiator's Waistguard of Prowess (H)
 									{"select", "itemID", 125256 },	-- Wild Gladiator's Footguards of Cruelty (H)
@@ -5794,7 +5794,7 @@ _.PVP =
 							i(138534, {	-- Ensemble: Wild Gladiator's Felweave Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -661, 9 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_GLADIATOR, 9 },
 									{"select", "itemID", 125178 },	-- Wild Gladiator's Cuffs of Cruelty (H)
 									{"select", "itemID", 125172 },	-- Wild Gladiator's Cord of Prowess (H)
 									{"select", "itemID", 125176 },	-- Wild Gladiator's Treads of Victory (H)
@@ -5823,7 +5823,7 @@ _.PVP =
 							i(138514, {	-- Ensemble: Wild Gladiator's Plate Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, -661, 1 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, FACTION_HEADER_HORDE, PVP_GLADIATOR, 1 },
 									{"select", "itemID", 125289 },	-- Wild Gladiator's Armplates of Prowess (H)
 									{"select", "itemID", 125283 },	-- Wild Gladiator's Girdle of Prowess (H)
 									{"select", "itemID", 125285 },	-- Wild Gladiator's Warboots of Cruelty (H)
@@ -5848,7 +5848,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(125181, {	-- Wild Gladiator's Hood of Prowess (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -5874,7 +5874,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(125184, {	-- Wild Gladiator's Amice of Prowess (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -5900,7 +5900,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(125164, {	-- Wild Gladiator's Cape of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -5929,7 +5929,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(125183, {	-- Wild Gladiator's Robes of Prowess (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -5955,7 +5955,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(125178, {	-- Wild Gladiator's Cuffs of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -5996,7 +5996,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(125180, {	-- Wild Gladiator's Gloves of Prowess (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -6022,7 +6022,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(125171, {	-- Wild Gladiator's Cord of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -6060,7 +6060,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(125182, {	-- Wild Gladiator's Leggings of Prowess (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -6086,7 +6086,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(125232, {	-- Wild Gladiator's Boots of Cruelty (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -6124,7 +6124,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							un(REMOVED_FROM_GAME, i(125325)),	-- Wild Gladiator's Choker of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125326)),	-- Wild Gladiator's Choker of Prowess (H)
 							un(REMOVED_FROM_GAME, i(125332)),	-- Wild Gladiator's Choker of Endurance (H)
@@ -6135,7 +6135,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125218)),	-- Wild Gladiator's Pendant of Meditation (H)
 							un(REMOVED_FROM_GAME, i(125217)),	-- Wild Gladiator's Pendant of Prowess (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							un(REMOVED_FROM_GAME, i(125226)),	-- Wild Gladiator's Band of Contemplation (H)
 							un(REMOVED_FROM_GAME, i(125222)),	-- Wild Gladiator's Band of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(125225)),	-- Wild Gladiator's Band of Meditation (H)
@@ -6169,12 +6169,12 @@ _.PVP =
 					}),
 				},
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				un(REMOVED_FROM_GAME, i(127375)),	-- Wild Gladiator's Greatcloak A
 				un(REMOVED_FROM_GAME, i(127366)),	-- Wild Gladiator's Tabard A
 				un(REMOVED_FROM_GAME, i(127374)),	-- Wild Gladiator's Greatcloak H
 				un(REMOVED_FROM_GAME, i(127365)),	-- Wild Gladiator's Tabard H
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(125762)),	-- Wild Gladiator's Ripper
 					un(REMOVED_FROM_GAME, i(125763)),	-- Wild Gladiator's Render
 					un(REMOVED_FROM_GAME, i(125632)),	-- Wild Gladiator's Bonegrinder
@@ -6363,7 +6363,7 @@ _.PVP =
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					n(-659, {	-- Aspirant PvP Gear
+					n(PVP_ASPIRANT, {
 						cl(DEATHKNIGHT, {
 							i(126184),	-- Warmongering Aspirant's Dreadplate Chestpiece (A)
 							i(126185),	-- Warmongering Aspirant's Dreadplate Gauntlets (A)
@@ -6441,39 +6441,39 @@ _.PVP =
 							i(126266),	-- Warmongering Aspirant's Plate Legguards (A)
 							i(126267),	-- Warmongering Aspirant's Plate Shoulders (A)
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(126177),	-- Warmongering Aspirant's Cape of Cruelty (A)
 							i(126246),	-- Warmongering Aspirant's Cloak of Cruelty (A)
 							i(126249),	-- Warmongering Aspirant's Cloak of Endurance (A)
 							i(126199),	-- Warmongering Aspirant's Drape of Cruelty (A)
 							i(126200),	-- Warmongering Aspirant's Drape of Meditation (A)
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(126217),	-- Warmongering Aspirant's Armbands of Prowess (A)
 							i(126230),	-- Warmongering Aspirant's Armplates of Cruelty (A)
 							i(126209),	-- Warmongering Aspirant's Bindings of Cruelty (A)
 							i(126183),	-- Warmongering Aspirant's Cuffs of Prowess (A)
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(126207),	-- Warmongering Aspirant's Belt of Prowess (A)
 							i(126181),	-- Warmongering Aspirant's Cord of Cruelty (A)
 							i(126228),	-- Warmongering Aspirant's Girdle of Cruelty (A)
 							i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty (A)
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(126208),	-- Warmongering Aspirant's Boots of Cruelty (A)
 							i(126216),	-- Warmongering Aspirant's Footguards of Cruelty (A)
 							i(126182),	-- Warmongering Aspirant's Treads of Cruelty (A)
 							i(126229),	-- Warmongering Aspirant's Warboots of Cruelty (A)
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							i(126247),	-- Warmongering Aspirant's Choker of Cruelty (A)
 							i(126250),	-- Warmongering Aspirant's Choker of Endurance (A)
 							i(126178),	-- Warmongering Aspirant's Necklace of Cruelty (A)
 							i(126201),	-- Warmongering Aspirant's Pendant of Cruelty (A)
 							i(126202),	-- Warmongering Aspirant's Pendant of Meditation (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							i(126206),	-- Warmongering Aspirant's Band of Contemplation (A)
 							i(126203),	-- Warmongering Aspirant's Band of Cruelty (A)
 							i(126205),	-- Warmongering Aspirant's Band of Meditation (A)
@@ -6493,12 +6493,12 @@ _.PVP =
 							i(126255),	-- Warmongering Aspirant's Accolade of Victory (A)
 						}),
 					}),
-					n(-660, {	-- Combatant PvP Gear
-						n(-319, {	-- Weapons
+					n(PVP_COMBATANT, {
+						n(WEAPONS, {
 							i(138628, {	-- Arsenal: Warmongering Combatant's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -660 },
+									{"sub", "pvp_weapons_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT },
 									{"exclude", "itemID", 138628 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -6599,7 +6599,7 @@ _.PVP =
 							i(138589, {	-- Ensemble: Warmongering Combatant's Dreadplate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -660, 6 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 6 },
 									{"select", "itemID", 126107 },	-- Warmongering Combatant's Armplates of Cruelty (A)
 									{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 126105 },	-- Warmongering Combatant's Warboots of Cruelty (A)
@@ -6633,7 +6633,7 @@ _.PVP =
 							i(138593, {	-- Ensemble: Warmongering Combatant's Dragonhide Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -660, 11 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 11 },
 									{"select", "itemID", 126070 },	-- Warmongering Combatant's Bindings of Cruelty (A)
 									{"select", "itemID", 126067 },	-- Warmongering Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 126068 },	-- Warmongering Combatant's Boots of Cruelty (A)
@@ -6667,7 +6667,7 @@ _.PVP =
 							i(138537, {	-- Ensemble: Warmongering Combatant's Chain Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -660, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 3 },
 									{"select", "itemID", 126107 },	-- Warmongering Combatant's Armbands of Cruelty (A)
 									{"select", "itemID", 126082 },	-- Warmongering Combatant's Waistguard of Cruelty (A)
 									{"select", "itemID", 126084 },	-- Warmongering Combatant's Footguards of Cruelty (A)
@@ -6701,7 +6701,7 @@ _.PVP =
 							i(138539, {	-- Ensemble: Warmongering Combatant's Silk Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -660, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 8 },
 									{"select", "itemID", 126021 },	-- Warmongering Combatant's Cuffs of Cruelty (A)
 									{"select", "itemID", 126016 },	-- Warmongering Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 126018 },	-- Warmongering Combatant's Treads of Cruelty (A)
@@ -6735,7 +6735,7 @@ _.PVP =
 							i(138595, {	-- Ensemble: Warmongering Combatant's Ironskin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -660, 10 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 10 },
 									{"select", "itemID", 126070 },	-- Warmongering Combatant's Bindings of Cruelty (A)
 									{"select", "itemID", 126067 },	-- Warmongering Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 126068 },	-- Warmongering Combatant's Boots of Cruelty (A)
@@ -6769,7 +6769,7 @@ _.PVP =
 							i(138591, {	-- Ensemble: Warmongering Combatant's Scaled Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -660, 2 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 2 },
 									{"select", "itemID", 126107 },	-- Warmongering Combatant's Armplates of Cruelty (A)
 									{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 126105 },	-- Warmongering Combatant's Warboots of Cruelty (A)
@@ -6803,7 +6803,7 @@ _.PVP =
 							i(138541, {	-- Ensemble: Warmongering Combatant's Satin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -660, 5 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 5 },
 									{"select", "itemID", 126021 },	-- Warmongering Combatant's Cuffs of Cruelty (A)
 									{"select", "itemID", 126016 },	-- Warmongering Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 126068 },	-- Warmongering Combatant's Treads of Cruelty (A)
@@ -6837,7 +6837,7 @@ _.PVP =
 							i(138597, {	-- Ensemble: Warmongering Combatant's Leather Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -660, 4 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 4 },
 									{"select", "itemID", 126070 },	-- Warmongering Combatant's Bindings of Cruelty (A)
 									{"select", "itemID", 126067 },	-- Warmongering Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 126068 },	-- Warmongering Combatant's Boots of Cruelty (A)
@@ -6871,7 +6871,7 @@ _.PVP =
 							i(138535, {	-- Ensemble: Warmongering Combatant's Ringmail Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -660, 7 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 7 },
 									{"select", "itemID", 126087 },	-- Warmongering Combatant's Armbands of Cruelty (A)
 									{"select", "itemID", 126083 },	-- Warmongering Combatant's Waistguard of Cruelty (A)
 									{"select", "itemID", 126084 },	-- Warmongering Combatant's Footguards of Cruelty  (A)
@@ -6905,7 +6905,7 @@ _.PVP =
 							i(138543, {	-- Ensemble: Warmongering Combatant's Felweave Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -660, 9 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 9 },
 									{"select", "itemID", 126021 },	-- Warmongering Combatant's Cuffs of Cruelty (A)
 									{"select", "itemID", 126016 },	-- Warmongering Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 126068 },	-- Warmongering Combatant's Treads of Cruelty (A)
@@ -6939,7 +6939,7 @@ _.PVP =
 							i(138587, {	-- Ensemble: Warmongering Combatant's Plate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -660, 1 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, 1 },
 									{"select", "itemID", 126107 },	-- Warmongering Combatant's Armplates of Cruelty (A)
 									{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 126105 },	-- Warmongering Combatant's Warboots of Cruelty (A)
@@ -6969,7 +6969,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(126009, {	-- Warmongering Combatant's Cape of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 5x Mark of Honor
 							}),
@@ -6998,7 +6998,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 5x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(126021, {	-- Warmongering Combatant's Cuffs of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -7024,7 +7024,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(126016, {	-- Warmongering Combatant's Cord of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -7050,7 +7050,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(126018, {	-- Warmongering Combatant's Treads of Cruelty (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -7076,7 +7076,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							i(126138),	-- Warmongering Combatant's Choker of Cruelty (A)
 							i(126164),	-- Warmongering Combatant's Choker of Endurance (A)
 							i(126139),	-- Warmongering Combatant's Choker of Prowess (A)
@@ -7087,7 +7087,7 @@ _.PVP =
 							i(126055),	-- Warmongering Combatant's Pendant of Meditation (A)
 							i(126054),	-- Warmongering Combatant's Pendant of Prowess (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							i(126063),	-- Warmongering Combatant's Band of Contemplation (A)
 							i(126059),	-- Warmongering Combatant's Band of Cruelty (A)
 							i(126062),	-- Warmongering Combatant's Band of Meditation (A)
@@ -7124,12 +7124,12 @@ _.PVP =
 							i(126153),	-- Warmongering Combatant's Medallion of Tenacity (A)
 						}),
 					}),
-					n(-661, {	-- Gladiator PvP Gear
-						n(-319, {	-- Weapons
+					n(PVP_GLADIATOR, {
+						n(WEAPONS, {
 							i(138635, {	-- Arsenal: Warmongering Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -661 },
+									{"sub", "pvp_weapons_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
 									{"exclude", "itemID", 138635 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -7227,7 +7227,7 @@ _.PVP =
 							i(138493, {	-- Ensemble: Warmongering Gladiator's Dreadplate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -661, 6 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 6 },
 									{"select", "itemID", 125923 },	-- Warmongering Gladiator's Armplates of Cruelty (A)
 									{"select", "itemID", 125917 },	-- Warmongering Gladiator's Girdle of Cruelty (A)
 									{"select", "itemID", 125922 },	-- Warmongering Gladiator's Warboots of Victory (A)
@@ -7256,7 +7256,7 @@ _.PVP =
 							i(138501, {	-- Ensemble: Warmongering Gladiator's Dragonhide Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -661, 11 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 11 },
 									{"select", "itemID", 125872 },	-- Warmongering Gladiator's Bindings of Victory (A)
 									{"select", "itemID", 125866 },	-- Warmongering Gladiator's Belt of Victory (A)
 									{"select", "itemID", 125868 },	-- Warmongering Gladiator's Boots of Prowess (A)
@@ -7285,7 +7285,7 @@ _.PVP =
 							i(138499, {	-- Ensemble: Warmongering Gladiator's Chain Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -661, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 3 },
 									{"select", "itemID", 125895 },	-- Warmongering Gladiator's Armbands of Cruelty (A)
 									{"select", "itemID", 125896 },	-- Warmongering Gladiator's Armbands of Victory (A)
 									{"select", "itemID", 125894 },	-- Warmongering Gladiator's Armbands of Prowess (A)
@@ -7317,7 +7317,7 @@ _.PVP =
 							i(138507, {	-- Ensemble: Warmongering Gladiator's Silk Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -661, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 8 },
 									{"select", "itemID", 125812 },	-- Warmongering Gladiator's Cuffs of Prowess (A)
 									{"select", "itemID", 125806 },	-- Warmongering Gladiator's Cord of Cruelty (A)
 									{"select", "itemID", 125810 },	-- Warmongering Gladiator's Treads of Prowess (A)
@@ -7346,7 +7346,7 @@ _.PVP =
 							i(138503, {	-- Ensemble: Warmongering Gladiator's Ironskin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -661, 10 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 10 },
 									{"select", "itemID", 125870 },	-- Warmongering Gladiator's Bindings of Cruelty (A)
 									{"select", "itemID", 125864 },	-- Warmongering Gladiator's Belt of Prowess (A)
 									{"select", "itemID", 125869 },	-- Warmongering Gladiator's Boots of Victory (A)
@@ -7375,7 +7375,7 @@ _.PVP =
 							i(138495, {	-- Ensemble: Warmongering Gladiator's Scaled Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -661, 2 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 2 },
 									{"select", "itemID", 125925 },	-- Warmongering Gladiator's Armplates of Victory (A)
 									{"select", "itemID", 125919 },	-- Warmongering Gladiator's Girdle of Victory (A)
 									{"select", "itemID", 125921 },	-- Warmongering Gladiator's Warboots of Prowess (A)
@@ -7404,7 +7404,7 @@ _.PVP =
 							i(138509, {	-- Ensemble: Warmongering Gladiator's Satin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -661, 5 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 5 },
 									{"select", "itemID", 125814 },	-- Warmongering Gladiator's Cuffs of Victory (A)
 									{"select", "itemID", 125808 },	-- Warmongering Gladiator's Cord of Victory (A)
 									{"select", "itemID", 125809 },	-- Warmongering Gladiator's Treads of Cruelty (A)
@@ -7433,7 +7433,7 @@ _.PVP =
 							i(138505, {	-- Ensemble: Warmongering Gladiator's Leather Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -661, 4 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 4 },
 									{"select", "itemID", 125871 },	-- Warmongering Gladiator's Bindings of Prowess (A)
 									{"select", "itemID", 125865 },	-- Warmongering Gladiator's Belt of Cruelty (A)
 									{"select", "itemID", 125867 },	-- Warmongering Gladiator's Boots of Cruelty (A)
@@ -7462,7 +7462,7 @@ _.PVP =
 							i(138497, {	-- Ensemble: Warmongering Gladiator's Ringmail Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -661, 7 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 7 },
 									{"select", "itemID", 139031 },	-- Warmongering Gladiator's Armbands of Alacrity (A)
 									{"select", "itemID", 125889 },	-- Warmongering Gladiator's Waistguard of Prowess (A)
 									{"select", "itemID", 125891 },	-- Warmongering Gladiator's Footguards of Cruelty (A)
@@ -7492,7 +7492,7 @@ _.PVP =
 							i(138511, {	-- Ensemble: Warmongering Gladiator's Felweave Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -661, 9 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 9 },
 									{"select", "itemID", 125813 },	-- Warmongering Gladiator's Cuffs of Cruelty (A)
 									{"select", "itemID", 125807 },	-- Warmongering Gladiator's Cord of Prowess (A)
 									{"select", "itemID", 125811 },	-- Warmongering Gladiator's Treads of Victory (A)
@@ -7521,7 +7521,7 @@ _.PVP =
 							i(138491, {	-- Ensemble: Warmongering Gladiator's Plate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, -661, 1 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, 1 },
 									{"select", "itemID", 125924 },	-- Warmongering Gladiator's Armplates of Prowess (A)
 									{"select", "itemID", 125918 },	-- Warmongering Gladiator's Girdle of Prowess (A)
 									{"select", "itemID", 125920 },	-- Warmongering Gladiator's Warboots of Cruelty (A)
@@ -7546,7 +7546,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(125821, {	-- Warmongering Gladiator's Cowl of Cruelty (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -7572,7 +7572,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(125819, {	-- Warmongering Gladiator's Amice of Prowess (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -7598,7 +7598,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(125799, {	-- Warmongering Gladiator's Cape of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -7627,7 +7627,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(125823, {	-- Warmongering Gladiator's Raiment of Cruelty (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -7653,7 +7653,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(125813, {	-- Warmongering Gladiator's Cuffs of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -7694,7 +7694,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(125815, {	-- Warmongering Gladiator's Gloves of Prowess (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -7720,7 +7720,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(125806, {	-- Warmongering Gladiator's Cord of Cruelty (A)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -7758,7 +7758,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(125817, {	-- Warmongering Gladiator's Leggings of Prowess (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -7784,7 +7784,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(125809, {	-- Warmongering Gladiator's Treads of Cruelty (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -7822,7 +7822,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							i(125960),	-- Warmongering Gladiator's Choker of Cruelty (A)
 							i(125967),	-- Warmongering Gladiator's Choker of Endurance (A)
 							i(125961),	-- Warmongering Gladiator's Choker of Prowess (A)
@@ -7833,7 +7833,7 @@ _.PVP =
 							i(125853),	-- Warmongering Gladiator's Pendant of Meditation (A)
 							i(125852),	-- Warmongering Gladiator's Pendant of Prowess (A)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							i(125861),	-- Warmongering Gladiator's Band of Contemplation (A)
 							i(125857),	-- Warmongering Gladiator's Band of Cruelty (A)
 							i(125860),	-- Warmongering Gladiator's Band of Meditation (A)
@@ -7875,7 +7875,7 @@ _.PVP =
 			n(FACTION_HEADER_HORDE, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					n(-659, {	-- Aspirant PvP Gear
+					n(PVP_ASPIRANT, {
 						cl(DEATHKNIGHT, {
 							i(126661),	-- Warmongering Aspirant's Dreadplate Chestpiece (H)
 							i(126662),	-- Warmongering Aspirant's Dreadplate Gauntlets (H)
@@ -7953,39 +7953,39 @@ _.PVP =
 							i(126743),	-- Warmongering Aspirant's Plate Legguards (H)
 							i(126744),	-- Warmongering Aspirant's Plate Shoulders (H)
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(126654),	-- Warmongering Aspirant's Cape of Cruelty (H)
 							i(126723),	-- Warmongering Aspirant's Cloak of Cruelty (H)
 							i(126726),	-- Warmongering Aspirant's Cloak of Endurance (H)
 							i(126676),	-- Warmongering Aspirant's Drape of Cruelty (H)
 							i(126677),	-- Warmongering Aspirant's Drape of Meditation (H)
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(126694),	-- Warmongering Aspirant's Armbands of Prowess (H)
 							i(126707),	-- Warmongering Aspirant's Armplates of Cruelty (H)
 							i(126686),	-- Warmongering Aspirant's Bindings of Cruelty (H)
 							i(126660),	-- Warmongering Aspirant's Cuffs of Prowess (H)
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(126684),	-- Warmongering Aspirant's Belt of Prowess (H)
 							i(126658),	-- Warmongering Aspirant's Cord of Cruelty (H)
 							i(126705),	-- Warmongering Aspirant's Girdle of Cruelty (H)
 							i(126692),	-- Warmongering Aspirant's Waistguard of Cruelty (H)
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(126685),	-- Warmongering Aspirant's Boots of Cruelty (H)
 							i(126693),	-- Warmongering Aspirant's Footguards of Cruelty (H)
 							i(126659),	-- Warmongering Aspirant's Treads of Cruelty (H)
 							i(126706),	-- Warmongering Aspirant's Warboots of Cruelty (H)
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							i(126724),	-- Warmongering Aspirant's Choker of Cruelty (H)
 							i(126727),	-- Warmongering Aspirant's Choker of Endurance (H)
 							i(126655),	-- Warmongering Aspirant's Necklace of Cruelty (H)
 							i(126678),	-- Warmongering Aspirant's Pendant of Cruelty (H)
 							i(126679),	-- Warmongering Aspirant's Pendant of Meditation (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							i(126683),	-- Warmongering Aspirant's Band of Contemplation (H)
 							i(126680),	-- Warmongering Aspirant's Band of Cruelty (H)
 							i(126682),	-- Warmongering Aspirant's Band of Meditation (H)
@@ -8005,12 +8005,12 @@ _.PVP =
 							i(126732),	-- Warmongering Aspirant's Accolade of Victory (H)
 						}),
 					}),
-					n(-660, {	-- Combatant PvP Gear
-						n(-319, {	-- Weapons
+					n(PVP_COMBATANT, {
+						n(WEAPONS, {
 							i(138627, {	-- Arsenal: Warmongering Combatant's Weapons (H)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -660 },
+									{"sub", "pvp_weapons_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_COMBATANT },
 									{"exclude", "itemID", 138627 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -8111,7 +8111,7 @@ _.PVP =
 							i(138590, {	-- Ensemble: Warmongering Combatant's Dreadplate Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -660, 6 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_COMBATANT, 6 },
 									{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
 									{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
@@ -8145,7 +8145,7 @@ _.PVP =
 							i(138594, {	-- Ensemble: Warmongering Combatant's Dragonhide Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -660, 11 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_COMBATANT, 11 },
 									{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
 									{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
@@ -8179,7 +8179,7 @@ _.PVP =
 							i(138538, {	-- Ensemble: Warmongering Combatant's Chain Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -660, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_COMBATANT, 3 },
 									{"select", "itemID", 126564 },	-- Warmongering Combatant's Armbands of Cruelty (H)
 									{"select", "itemID", 126559 },	-- Warmongering Combatant's Waistguard of Cruelty (H)
 									{"select", "itemID", 126561 },	-- Warmongering Combatant's Footguards of Cruelty (H)
@@ -8213,7 +8213,7 @@ _.PVP =
 							i(138540, {	-- Ensemble: Warmongering Combatant's Silk Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -660, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_COMBATANT, 8 },
 									{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
 									{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 126495 },	-- Warmongering Combatant's Treads of Cruelty (H)
@@ -8247,7 +8247,7 @@ _.PVP =
 							i(138596, {	-- Ensemble: Warmongering Combatant's Ironskin Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -660, 10 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_COMBATANT, 10 },
 									{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
 									{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
@@ -8281,7 +8281,7 @@ _.PVP =
 							i(138592, {	-- Ensemble: Warmongering Combatant's Scaled Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -660, 2 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_COMBATANT, 2 },
 									{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
 									{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
@@ -8315,7 +8315,7 @@ _.PVP =
 							i(138542, {	-- Ensemble: Warmongering Combatant's Satin Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -660, 5 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_COMBATANT, 5 },
 									{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
 									{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 126495 },	-- Warmongering Combatant's Treads of Cruelty (H)
@@ -8349,7 +8349,7 @@ _.PVP =
 							i(138598, {	-- Ensemble: Warmongering Combatant's Leather Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -660, 4 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_COMBATANT, 4 },
 									{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
 									{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
@@ -8383,7 +8383,7 @@ _.PVP =
 							i(138536, {	-- Ensemble: Warmongering Combatant's Ringmail Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -660, 7 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_COMBATANT, 7 },
 									{"select", "itemID", 126564 },	-- Warmongering Combatant's Armbands of Cruelty (H)
 									{"select", "itemID", 126559 },	-- Warmongering Combatant's Waistguard of Cruelty (H)
 									{"select", "itemID", 126561 },	-- Warmongering Combatant's Footguards of Cruelty (H)
@@ -8417,7 +8417,7 @@ _.PVP =
 							i(138544, {	-- Ensemble: Warmongering Combatant's Felweave Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -660, 9 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_COMBATANT, 9 },
 									{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
 									{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 126495 },	-- Warmongering Combatant's Treads of Cruelty (H)
@@ -8451,7 +8451,7 @@ _.PVP =
 							i(138588, {	-- Ensemble: Warmongering Combatant's Plate Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -660, 1 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_COMBATANT, 1 },
 									{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
 									{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
@@ -8481,7 +8481,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(126486, {	-- Warmongering Combatant's Cape of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -8510,7 +8510,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(126498, {	-- Warmongering Combatant's Cuffs of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -8536,7 +8536,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(126493, {	-- Warmongering Combatant's Cord of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -8562,7 +8562,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(126495, {	-- Warmongering Combatant's Treads of Cruelty (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -8588,7 +8588,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							i(126615),	-- Warmongering Combatant's Choker of Cruelty (H)
 							i(126641),	-- Warmongering Combatant's Choker of Endurance (H)
 							i(126616),	-- Warmongering Combatant's Choker of Prowess (H)
@@ -8599,7 +8599,7 @@ _.PVP =
 							i(126532),	-- Warmongering Combatant's Pendant of Meditation (H)
 							i(126531),	-- Warmongering Combatant's Pendant of Prowess (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							i(126540),	-- Warmongering Combatant's Band of Contemplation (H)
 							i(126536),	-- Warmongering Combatant's Band of Cruelty (H)
 							i(126539),	-- Warmongering Combatant's Band of Meditation (H)
@@ -8636,12 +8636,12 @@ _.PVP =
 							i(126630),	-- Warmongering Combatant's Medallion of Tenacity (H)
 						}),
 					}),
-					n(-661, {	-- Gladiator PvP Gear
-						n(-319, {	-- Weapons
+					n(PVP_GLADIATOR, {
+						n(WEAPONS, {
 							i(138636, {	-- Arsenal: Warmongering Gladiator's Weapons (H)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -661 },
+									{"sub", "pvp_weapons_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_GLADIATOR },
 									{"exclude", "itemID", 138636 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -8739,7 +8739,7 @@ _.PVP =
 							i(138494, {	-- Ensemble: Warmongering Gladiator's Dreadplate Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -661, 6 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_GLADIATOR, 6 },
 									{"select", "itemID", 126402 },	-- Warmongering Gladiator's Armplates of Cruelty (H)
 									{"select", "itemID", 126396 },	-- Warmongering Gladiator's Girdle of Cruelty (H)
 									{"select", "itemID", 126401 },	-- Warmongering Gladiator's Warboots of Victory (H)
@@ -8768,7 +8768,7 @@ _.PVP =
 							i(138502, {	-- Ensemble: Warmongering Gladiator's Dragonhide Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -661, 11 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_GLADIATOR, 11 },
 									{"select", "itemID", 126351 },	-- Warmongering Gladiator's Bindings of Victory (H)
 									{"select", "itemID", 126345 },	-- Warmongering Gladiator's Belt of Victory (H)
 									{"select", "itemID", 126347 },	-- Warmongering Gladiator's Boots of Prowess (H)
@@ -8797,7 +8797,7 @@ _.PVP =
 							i(138500, {	-- Ensemble: Warmongering Gladiator's Chain Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -661, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_GLADIATOR, 3 },
 									{"select", "itemID", 126374 },	-- Warmongering Gladiator's Armbands of Cruelty (H)
 									{"select", "itemID", 126375 },	-- Warmongering Gladiator's Armbands of Victory (H)
 									{"select", "itemID", 126373 },	-- Warmongering Gladiator's Armbands of Prowess (H)
@@ -8829,7 +8829,7 @@ _.PVP =
 							i(138508, {	-- Ensemble: Warmongering Gladiator's Silk Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -661, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_GLADIATOR, 8 },
 									{"select", "itemID", 126291 },	-- Warmongering Gladiator's Cuffs of Prowess (H)
 									{"select", "itemID", 126285 },	-- Warmongering Gladiator's Cord of Cruelty (H)
 									{"select", "itemID", 126289 },	-- Warmongering Gladiator's Treads of Prowess (H)
@@ -8858,7 +8858,7 @@ _.PVP =
 							i(138504, {	-- Ensemble: Warmongering Gladiator's Ironskin Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -661, 10 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_GLADIATOR, 10 },
 									{"select", "itemID", 126349 },	-- Warmongering Gladiator's Bindings of Cruelty (H)
 									{"select", "itemID", 126343 },	-- Warmongering Gladiator's Belt of Prowess (H)
 									{"select", "itemID", 126348 },	-- Warmongering Gladiator's Boots of Victory (H)
@@ -8887,7 +8887,7 @@ _.PVP =
 							i(138496, {	-- Ensemble: Warmongering Gladiator's Scaled Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -661, 2 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_GLADIATOR, 2 },
 									{"select", "itemID", 126404 },	-- Warmongering Gladiator's Armplates of Victory (H)
 									{"select", "itemID", 126398 },	-- Warmongering Gladiator's Girdle of Victory (H)
 									{"select", "itemID", 126400 },	-- Warmongering Gladiator's Warboots of Prowess (H)
@@ -8916,7 +8916,7 @@ _.PVP =
 							i(138510, {	-- Ensemble: Warmongering Gladiator's Satin Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -661, 5 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_GLADIATOR, 5 },
 									{"select", "itemID", 126293 },	-- Warmongering Gladiator's Cuffs of Victory (H)
 									{"select", "itemID", 126287 },	-- Warmongering Gladiator's Cord of Victory (H)
 									{"select", "itemID", 126288 },	-- Warmongering Gladiator's Treads of Cruelty (H)
@@ -8945,7 +8945,7 @@ _.PVP =
 							i(138506, {	-- Ensemble: Warmongering Gladiator's Leather Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -661, 4 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_GLADIATOR, 4 },
 									{"select", "itemID", 126350 },	-- Warmongering Gladiator's Bindings of Prowess (H)
 									{"select", "itemID", 126344 },	-- Warmongering Gladiator's Belt of Cruelty (H)
 									{"select", "itemID", 126346 },	-- Warmongering Gladiator's Boots of Cruelty (H)
@@ -8974,7 +8974,7 @@ _.PVP =
 							i(138498, {	-- Ensemble: Warmongering Gladiator's Ringmail Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -661, 7 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_GLADIATOR, 7 },
 									{"select", "itemID", 139030 },	-- Warmongering Gladiator's Armbands of Alacrity (H)
 									{"select", "itemID", 126368 },	-- Warmongering Gladiator's Waistguard of Prowess (H)
 									{"select", "itemID", 126370 },	-- Warmongering Gladiator's Footguards of Cruelty (H)
@@ -9004,7 +9004,7 @@ _.PVP =
 							i(138512, {	-- Ensemble: Warmongering Gladiator's Felweave Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -661, 9 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_GLADIATOR, 9 },
 									{"select", "itemID", 126292 },	-- Warmongering Gladiator's Cuffs of Cruelty (H)
 									{"select", "itemID", 126286 },	-- Warmongering Gladiator's Cord of Prowess (H)
 									{"select", "itemID", 126290 },	-- Warmongering Gladiator's Treads of Victory (H)
@@ -9033,7 +9033,7 @@ _.PVP =
 							i(138492, {	-- Ensemble: Warmongering Gladiator's Plate Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, -661, 1 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, FACTION_HEADER_HORDE, PVP_GLADIATOR, 1 },
 									{"select", "itemID", 126403 },	-- Warmongering Gladiator's Armplates of Prowess (H)
 									{"select", "itemID", 126397 },	-- Warmongering Gladiator's Girdle of Prowess (H)
 									{"select", "itemID", 126399 },	-- Warmongering Gladiator's Warboots of Cruelty (H)
@@ -9058,7 +9058,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-320, {	-- Head
+						n(HEAD, {
 							i(126300, {	-- Warmongering Gladiator's Cowl of Cruelty (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -9084,7 +9084,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-321, {	-- Shoulders
+						n(SHOULDER, {
 							i(126298, {	-- Warmongering Gladiator's Amice of Prowess (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -9110,7 +9110,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-322, {	-- Back
+						n(BACK, {
 							i(126278, {	-- Warmongering Gladiator's Cape of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -9139,7 +9139,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-323, {	-- Chest
+						n(CHEST, {
 							i(126302, {	-- Warmongering Gladiator's Raiment of Cruelty (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -9165,7 +9165,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-326, {	-- Wrists
+						n(WRIST, {
 							i(126292, {	-- Warmongering Gladiator's Cuffs of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -9206,7 +9206,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-327, {	-- Hands
+						n(HANDS, {
 							i(126294, {	-- Warmongering Gladiator's Gloves of Prowess (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -9232,7 +9232,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-328, {	-- Waist
+						n(WAIST, {
 							i(126285, {	-- Warmongering Gladiator's Cord of Cruelty (H)
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
@@ -9270,7 +9270,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
 						}),
-						n(-329, {	-- Legs
+						n(LEGS, {
 							i(126296, {	-- Warmongering Gladiator's Leggings of Prowess (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -9296,7 +9296,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						}),
-						n(-330, {	-- Feet
+						n(FEET, {
 							i(126288, {	-- Warmongering Gladiator's Treads of Cruelty (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -9334,7 +9334,7 @@ _.PVP =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
-						n(-384,	{	-- Neck
+						n(NECK, {
 							i(126439),	-- Warmongering Gladiator's Choker of Cruelty (H)
 							i(126446),	-- Warmongering Gladiator's Choker of Endurance (H)
 							i(126440),	-- Warmongering Gladiator's Choker of Prowess (H)
@@ -9345,7 +9345,7 @@ _.PVP =
 							i(126332),	-- Warmongering Gladiator's Pendant of Meditation (H)
 							i(126331),	-- Warmongering Gladiator's Pendant of Prowess (H)
 						}),
-						n(-385,	{	-- Finger
+						n(FINGER, {
 							i(126340),	-- Warmongering Gladiator's Band of Contemplation (H)
 							i(126336),	-- Warmongering Gladiator's Band of Cruelty (H)
 							i(126339),	-- Warmongering Gladiator's Band of Meditation (H)
@@ -9384,12 +9384,12 @@ _.PVP =
 					}),
 				},
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				un(REMOVED_FROM_GAME, i(127376)),	-- Warmongering Gladiator's Greatcloak (H)
 				un(REMOVED_FROM_GAME, i(127371)),	-- Warmongering Gladiator's Tabard (H)
 				un(REMOVED_FROM_GAME, i(127377)),	-- Warmongering Gladiator's Greatcloak (A)
 				un(REMOVED_FROM_GAME, i(127369)),	-- Warmongering Gladiator's Tabard (A)
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(126876)),	-- Warmongering Gladiator's Ripper
 					un(REMOVED_FROM_GAME, i(126877)),	-- Warmongering Gladiator's Render
 					un(REMOVED_FROM_GAME, i(126746)),	-- Warmongering Gladiator's Bonegrinder
@@ -9578,7 +9578,7 @@ _.PVP =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9981, {	-- Draenor
 		n(-679, {	-- Primal Gladiator: Warlords Season 1
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(180460),	-- Primal Combatant's Decapitator
 				i(111076),	-- Primal Gladiator's Staff (H), none elite
 				i(115603),	-- Primal Gladiator's Staff (A), none elite

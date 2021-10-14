@@ -1101,7 +1101,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(178957),	-- Judicious Aspirant's Gloves
 			}),
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(184471),	-- Guidenote Dagger
 			i(184529),	-- Elysian Ceremonial Dagger
 			i(184532),	-- Silver-Edged Elysian Dirk

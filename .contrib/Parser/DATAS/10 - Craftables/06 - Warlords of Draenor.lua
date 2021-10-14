@@ -63,7 +63,7 @@ _.Craftables =
 				i(109183),	-- World Shrinker*
 				i(112059),	-- Wormhole Centrifuge*
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(109168, {	-- Shrediron's Shredder
 					-- ["description"] = "",	-- TODO how to obtain this base version?!
 				}),
@@ -151,7 +151,7 @@ _.Craftables =
 				i(116259),	-- Burnished Leather Bag
 				i(116260),	-- Burnished Mining Bag
 			}),
-			n(-322, {	-- Cloak
+			n(BACK, {
 				WOD_CRAFTED_ITEM(116175, 128014),	-- Brilliant Burnished Cloak + Burnished Essence
 				WOD_CRAFTED_ITEM(116174, 128014),	-- Nimble Burnished Cloak + Burnished Essence
 				WOD_CRAFTED_ITEM(116171, 128014),	-- Powerful Burnished Cloak + Burnished Essence
@@ -187,7 +187,7 @@ _.Craftables =
 			filter(113, {	-- Bags
 				i(114821),	-- Hexweave Bag
 			}),
-			n(-322, {	-- Cloak
+			n(BACK, {
 				WOD_CRAFTED_ITEM(114819, 128012),	-- Brilliant Hexweave Cloak + Hexweave Essence
 				WOD_CRAFTED_ITEM(114818, 128012),	-- Nimble Hexweave Cloak + Hexweave Essence
 				WOD_CRAFTED_ITEM(114817, 128012),	-- Powerful Hexweave Cloak + Hexweave Essence

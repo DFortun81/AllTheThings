@@ -63,6 +63,20 @@ namespace ATT
             public static IDictionary<object, List<Tuple<string, long>>> AllRecipes { get; } = new Dictionary<object, List<Tuple<string, long>>>();
 
             /// <summary>
+            /// All of the Merged Objects (non-Items) that are in the database. This is used to ensure that various information is synced across all Sources of a given object as necessary
+            /// Stored by key -> key-value -> object
+            /// </summary>
+            public static IDictionary<string, Dictionary<object, Dictionary<string, object>>> MergedObjects { get; } = new Dictionary<string, Dictionary<object, Dictionary<string, object>>>();
+
+            /// <summary>
+            /// The keys which should be merged based on a given merge object key
+            /// </summary>
+            public static IDictionary<string, string[]> MergeObjectFields { get; } = new Dictionary<string, string[]>()
+            {
+                {  "recipeID" , new string[] { "u", "requireSkill" } },
+            };
+
+            /// <summary>
             /// All of the SourceID's harvested for Legion Artifacts
             /// </summary>
             public static IDictionary<long, Dictionary<string, long>> ArtifactSources { get; } = new Dictionary<long, Dictionary<string, long>>();
@@ -404,6 +418,69 @@ namespace ATT
 
                 // Everything else is unknown
                 return Filters.Invalid;
+            }
+
+            /// <summary>
+            /// Merges data for a given object based on the key from the Source object into a common storage for that keyed-object
+            /// </summary>
+            /// <param name="v"></param>
+            /// <param name="data"></param>
+            internal static void Merge(string key, Dictionary<string, object> data)
+            {
+                // only bother creating a merge container if the data contains a merging key
+                if (data.ContainsAnyKey(MergeObjectFields[key]))
+                {
+                    // does this data contain the key?
+                    if (data.TryGetValue(key, out object keyValue))
+                    {
+                        // get the container for objects of this key
+                        if (!MergedObjects.TryGetValue(key, out Dictionary<object, Dictionary<string, object>> typeObjects))
+                        {
+                            typeObjects = new Dictionary<object, Dictionary<string, object>>();
+                            MergedObjects.Add(key, typeObjects);
+                        }
+
+                        // get the specific merged object
+                        if (!typeObjects.TryGetValue(keyValue, out Dictionary<string, object> merged))
+                        {
+                            merged = new Dictionary<string, object>();
+                            typeObjects.Add(keyValue, merged);
+                        }
+
+                        if (DebugMode)
+                            Trace.WriteLine($"Merge>{key}:{keyValue} = {MiniJSON.Json.Serialize(data)}");
+
+                        // merge the allowed fields by the key into the merged object
+                        foreach (string field in MergeObjectFields[key])
+                            if (data.TryGetValue(field, out object val))
+                                merged[field] = val;
+                    }
+                }
+            }
+
+            /// <summary>
+            /// Merges data for a given object based on the key from the common storage for that keyed-object into the Source object
+            /// </summary>
+            /// <param name="v"></param>
+            /// <param name="data"></param>
+            internal static void MergeInto(string key, Dictionary<string, object> data)
+            {
+                // does this data contain the key?
+                if (data.TryGetValue(key, out object keyValue))
+                {
+                    // get the container for objects of this key
+                    if (MergedObjects.TryGetValue(key, out Dictionary<object, Dictionary<string, object>> typeObjects))
+                    {
+                        // get the specific merged object
+                        if (typeObjects.TryGetValue(keyValue, out Dictionary<string, object> merged))
+                        {
+                            // merge the allowed fields by the key into the data object
+                            foreach (string field in MergeObjectFields[key])
+                                if (merged.TryGetValue(field, out object val))
+                                    data[field] = val;
+                        }
+                    }
+                }
             }
 
             /// <summary>
@@ -2164,6 +2241,9 @@ namespace ATT
                 // Merge the entry with the data.
                 PreMerge(entry, data2);
                 Merge(entry, data2);
+                // Merge any common merge objects
+                foreach (string key in MergeObjectFields.Keys)
+                    Merge(key, entry);
 
                 // Add quest entry to AllQuest collection
                 if (entry.TryGetValue("questID", out long questID))

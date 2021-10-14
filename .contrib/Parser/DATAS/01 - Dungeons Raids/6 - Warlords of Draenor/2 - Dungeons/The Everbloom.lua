@@ -25,7 +25,7 @@ _.Instances = { tier(WOD_TIER, {
 				e(1214, {	-- Witherbark
 					["crs"] = { 81522 },	-- Witherbark
 					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 1, CLOAK},
+						{"sub", "common_wod_dungeon_drop", 1, BACK},
 						{"sub", "common_wod_dungeon_drop", 1, HANDS},
 					},
 					["g"] = {
@@ -116,7 +116,7 @@ _.Instances = { tier(WOD_TIER, {
 				e(1214, {	-- Witherbark
 					["crs"] = { 81522 },	-- Witherbark
 					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 2, CLOAK},
+						{"sub", "common_wod_dungeon_drop", 2, BACK},
 						{"sub", "common_wod_dungeon_drop", 2, HANDS},
 					},
 					["g"] = {
@@ -186,7 +186,7 @@ _.Instances = { tier(WOD_TIER, {
 				e(1214, {	-- Witherbark
 					["crs"] = { 81522 },	-- Witherbark
 					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, CLOAK},
+						{"sub", "common_wod_dungeon_drop", 23, BACK},
 						{"sub", "common_wod_dungeon_drop", 23, HANDS},
 					},
 					["g"] = {
@@ -255,7 +255,7 @@ _.Instances = { tier(WOD_TIER, {
 					e(1214, {	-- Witherbark
 						["crs"] = { 81522 },	-- Witherbark
 						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, CLOAK},
+							{"sub", "common_wod_dungeon_drop", 24, BACK},
 							{"sub", "common_wod_dungeon_drop", 24, HANDS},
 						},
 						["g"] = {

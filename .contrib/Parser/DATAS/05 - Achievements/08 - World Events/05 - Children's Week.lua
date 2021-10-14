@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9962, bubbleDown({["u"] = CHILDRENS_WEEK}, {	-- World Events
-		n(-10018, {	-- Children's Week
+		holiday(235445, {	-- Children's Week
 			ach(1792),	-- Aw, Isn't It Cute?
 			ach(1788, {	-- Bad Example
 				crit(1),	-- Tigule's Strawberry Ice Cream

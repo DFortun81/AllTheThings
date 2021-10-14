@@ -101,7 +101,7 @@ _.Craftables =
 				i(82969),	-- Masterwork Spiritguard Shield
 				i(82962),	-- Spiritguard Shield
 			}),
-			n(-320, {		-- Head
+			n(HEAD, {
 				i(82943),	-- Contender's Revenant Helm
 				i(82951),	-- Contender's Spirit Helm
 				i(93455),	-- Crafted Dreadful Gladiator's Dreadplate Helm
@@ -119,7 +119,7 @@ _.Craftables =
 				i(94268),	-- Haunted Steel Headguard
 				i(82919),	-- Masterwork Spiritguard Helm
 			}),
-			n(-321, {		-- Shoulders
+			n(SHOULDER, {
 				i(82944),	-- Contender's Revenant Shoulders
 				i(82952),	-- Contender's Spirit Shoulders
 				i(93457),	-- Crafted Dreadful Gladiator's Dreadplate Shoulders
@@ -134,7 +134,7 @@ _.Craftables =
 				i(82928),	-- Ghost-Forged Shoulders
 				i(82920),	-- Masterwork Spiritguard Shoulders
 			}),
-			n(-323, {		-- Chest
+			n(CHEST, {
 				i(82979),	-- Breastplate of Ancient Steel
 				i(87403),	-- Chestplate of Limitless Faith
 				i(82945),	-- Contender's Revenant Breastplate
@@ -155,7 +155,7 @@ _.Craftables =
 				i(87402),	-- Ornate Battleplate of the Master
 				i(87405),	-- Unyielding Bloodplate
 			}),
-			n(-327, {		-- Hands
+			n(HANDS, {
 				i(87407),	-- Bloodforged Warfists
 				i(82946),	-- Contender's Revenant Gauntlets
 				i(82954),	-- Contender's Spirit Gauntlets
@@ -176,7 +176,7 @@ _.Craftables =
 				i(82978),	-- Living Steel Gauntlets
 				i(82922),	-- Masterwork Spiritguard Gauntlets
 			}),
-			n(-326, {		-- Wrist
+			n(WRIST, {
 				i(82948),	-- Contender's Revenant Bracers
 				i(82956),	-- Contender's Spirit Bracers
 				i(93548),	-- Crafted Dreadful Gladiator's Armplates of Alacrity
@@ -193,7 +193,7 @@ _.Craftables =
 				i(82924),	-- Masterwork Spiritguard Bracers
 				i(82900),	-- Spiritguard Bracers
 			}),
-			n(-328, {		-- Waist
+			n(WAIST, {
 				i(98616),	-- Avenger's Trillium Waistplate
 				i(98611),	-- Blessed Trillium Belt
 				i(82950),	-- Contender's Revenant Belt
@@ -211,7 +211,7 @@ _.Craftables =
 				i(82926),	-- Masterwork Spiritguard Belt
 				i(98615),	-- Protector's Trillium Waistguard
 			}),
-			n(-329, {		-- Legs
+			n(LEGS, {
 				i(98607),	-- Avenger's Trillium Legplates
 				i(98602),	-- Blessed Trillium Greaves
 				i(82947),	-- Contender's Revenant Legplates
@@ -229,7 +229,7 @@ _.Craftables =
 				i(82923),	-- Masterwork Spiritguard Legplates
 				i(98606),	-- Protector's Trillium Legguards
 			}),
-			n(-330, {		-- Feet
+			n(FEET, {
 				i(82949),	-- Contender's Revenant Boots
 				i(82957),	-- Contender's Spirit Boots
 				i(93534),	-- Crafted Dreadful Gladiator's Greaves of Alacrity
@@ -276,7 +276,7 @@ _.Craftables =
 				i(87214),	-- Blingtron 4000*
 				i(87215),	-- Wormhole Generator: Pandaria*
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(77527),	-- Big Game Hunter*
 				i(77528),	-- Long-Range Trillium Sniper*
 			}),
@@ -420,7 +420,7 @@ _.Craftables =
 			}),
 		}),
 		prof(LEATHERWORKING, {
-			n(-322, {	-- Cloak
+			n(BACK, {
 				i(85851),	-- Misthide Drape
 				i(85852),	-- Quick Strike Cloak
 				i(85853),	-- Stormscale Drape
@@ -684,7 +684,7 @@ _.Craftables =
 			filter(113, {	-- Bags
 				i(82446),	-- Royal Satchel
 			}),
-			n(-323, {	-- Chest
+			n(CHEST, {
 				i(82431),	-- Contender's Satin Raiment
 				i(82423),	-- Contender's Silk Raiment
 				i(93618),	-- Crafted Dreadful Gladiator's Felweave Raiment
@@ -702,7 +702,7 @@ _.Craftables =
 				i(90477),	-- Windwool Tunic
 				i(82399),	-- Windwool Tunic
 			}),
-			n(-322, {	-- Cloaks
+			n(BACK, {
 				i(93420),	-- Crafted Dreadful Gladiator's Cape of Cruelty
 				i(93421),	-- Crafted Dreadful Gladiator's Cape of Prowess
 				i(93607),	-- Crafted Dreadful Gladiator's Cloak of Alacrity
@@ -718,7 +718,7 @@ _.Craftables =
 				i(98774),	-- Crafted Malevolent Gladiator's Drape of Meditation
 				i(98773),	-- Crafted Malevolent Gladiator's Drape of Prowess
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(82435),	-- Contender's Satin Footwraps
 				i(82427),	-- Contender's Silk Footwraps
 				i(93432),	-- Crafted Dreadful Gladiator's Treads of Alacrity
@@ -732,7 +732,7 @@ _.Craftables =
 				i(90473),	-- Windwool Boots
 				i(82403),	-- Windwool Boots
 			}),
-			n(-327, {	-- Hands
+			n(HANDS, {
 				i(92726),	-- Bipsi's Gloves
 				i(82432),	-- Contender's Satin Handwraps
 				i(82424),	-- Contender's Silk Handwraps
@@ -751,7 +751,7 @@ _.Craftables =
 				i(90476),	-- Windwool Gloves
 				i(82400),	-- Windwool Gloves
 			}),
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(82429),	-- Contender's Satin Cowl
 				i(82421),	-- Contender's Silk Cowl
 				i(93616),	-- Crafted Dreadful Gladiator's Felweave Cowl
@@ -767,7 +767,7 @@ _.Craftables =
 				i(90479),	-- Windwool Hood
 				i(82397),	-- Windwool Hood
 			}),
-			n(-329, {	-- Legs
+			n(LEGS, {
 				i(82433),	-- Contender's Satin Pants
 				i(82425),	-- Contender's Silk Pants
 				i(93617),	-- Crafted Dreadful Gladiator's Felweave Trousers
@@ -783,7 +783,7 @@ _.Craftables =
 				i(90475),	-- Windwool Pants
 				i(82401),	-- Windwool Pants
 			}),
-			n(-321, {	-- Shoulders
+			n(SHOULDER, {
 				i(82430),	-- Contender's Satin Amice
 				i(82422),	-- Contender's Silk Amice
 				i(93619),	-- Crafted Dreadful Gladiator's Felweave Amice
@@ -797,7 +797,7 @@ _.Craftables =
 				i(90478),	-- Windwool Shoulders
 				i(82398),	-- Windwool Shoulders
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				i(98612),	-- Belt of the Night Sky
 				i(82436),	-- Contender's Satin Belt
 				i(82428),	-- Contender's Silk Belt
@@ -811,7 +811,7 @@ _.Craftables =
 				i(90472),	-- Windwool Belt
 				i(82404),	-- Windwool Belt
 			}),
-			n(-326, {	-- Wrist
+			n(WRIST, {
 				i(82434),	-- Contender's Satin Cuffs
 				i(82426),	-- Contender's Silk Cuffs
 				i(93434),	-- Crafted Dreadful Gladiator's Cuffs of Accuracy
@@ -843,18 +843,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		prof(JEWELCRAFTING, {
 			i(93597),	-- Crafted Dreadful Gladiator's Fleshslicer
 			i(93599),	-- Crafted Dreadful Gladiator's Slasher
-		}),
-		prof(LEATHERWORKING, {
-			i(93508),	-- Crafted Gladiator's Ironskin Gloves
-			i(93510),	-- Crafted Gladiator's Ironskin Helm
-			i(93512),	-- Crafted Gladiator's Ironskin Legguards
-			i(93514),	-- Crafted Gladiator's Ironskin Spaulders
-			i(93516),	-- Crafted Gladiator's Ironskin Tunic
-			i(93518),	-- Crafted Gladiator's Copperskin Gloves
-			i(93520),	-- Crafted Gladiator's Copperskin Helm
-			i(93522),	-- Crafted Gladiator's Copperskin Legguards
-			i(93524),	-- Crafted Gladiator's Copperskin Spaulders
-			i(93526),	-- Crafted Gladiator's Copperskin Tunic
 		}),
 	}),
 });

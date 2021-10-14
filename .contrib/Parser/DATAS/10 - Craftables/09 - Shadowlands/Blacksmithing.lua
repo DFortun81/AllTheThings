@@ -37,42 +37,42 @@ _.Craftables =
 			filter(8, {		-- Shield
 				i(171391),	-- Ceremonious Shield
 			}),
-			n(-320, {		-- Head
+			n(HEAD, {
 				i(171415),	-- Shadowghast Helm
 				i(171445),	-- Shadowsteel Helm
 				i(171377),	-- Ceremonious Helm
 			}),
-			n(-321, {		-- Shoulders
+			n(SHOULDER, {
 				i(171417),	-- Shadowghast Pauldrons
 				i(171447),	-- Shadowsteel Pauldrons
 				i(171379),	-- Ceremonious Pauldrons
 			}),
-			n(-323, {		-- Chest
+			n(CHEST, {
 				i(171412),	-- Shadowghast Breastplate
 				i(171442),	-- Shadowsteel Breastplate
 				i(171374),	-- Ceremonious Breastplate
 			}),
-			n(-327, {		-- Hands
+			n(HANDS, {
 				i(171414),	-- Shadowghast Gauntlets
 				i(171444),	-- Shadowsteel Gauntlets
 				i(171376),	-- Ceremonious Gauntlets
 			}),
-			n(-326, {		-- Wrist
+			n(WRIST, {
 				i(171419),	-- Shadowghast Armguards
 				i(171449),	-- Shadowsteel Armguards
 				i(171381),	-- Ceremonious Armguards
 			}),
-			n(-328, {		-- Waist
+			n(WAIST, {
 				i(171418),	-- Shadowghast Waistguard
 				i(171448),	-- Shadowsteel Waistguard
 				i(171380),	-- Ceremonious Waistguard
 			}),
-			n(-329, {		-- Legs
+			n(LEGS, {
 				i(171416),	-- Shadowghast Greaves
 				i(171446),	-- Shadowsteel Greaves
 				i(171378),	-- Ceremonious Greaves
 			}),
-			n(-330, {		-- Feet
+			n(FEET, {
 				i(171413),	-- Shadowghast Sabatons
 				i(171443),	-- Shadowsteel Sabatons
 				i(171375),	-- Ceremonious Sabatons

@@ -22,7 +22,7 @@ _.WorldDrops =
 			i(184795),	-- Tharatos' Charred Chestplate
 			i(184794),	-- Viller's Traveling Chain
 		}),
-		n(-385, {	-- Finger
+		n(FINGER, {
 			i(184783),	-- Muirnne's Stormforged Signet
 			i(184784),	-- Punishing Loop
 		}),

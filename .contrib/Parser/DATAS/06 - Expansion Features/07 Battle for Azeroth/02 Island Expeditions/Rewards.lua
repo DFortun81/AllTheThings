@@ -402,7 +402,7 @@ _.ExpansionFeatures =
 						i(163795),	-- Oomgut Ritual Drum
 						i(163924),	-- Whiskerwax Candle
 					}),
-					n(-319, {	-- Weapons
+					n(WEAPONS, {
 						i(168644),	-- Converted Carrot Carbine
 						i(163927),	-- Brinebeard's Shanker
 						i(163925),	-- Old Jon's Left Hand

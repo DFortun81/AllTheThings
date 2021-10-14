@@ -91,6 +91,7 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 43100,	-- Finding the Scepter
 							["classes"] = { WARLOCK },
 							["coord"] = { 69.2, 79.0, WESTERN_PLAGUELANDS },
+							["maps"] = { WESTERN_PLAGUELANDS },
 							["provider"] = { "n", 109698 },	-- Calydus
 						}),
 						q(41759, {	-- An Unlikely Ally
@@ -118,7 +119,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 						}),
 						q(46237, {	-- Bloodbringer's Missive
-							["sourceQuests"] = { 46253 },	-- Pillars of Creation
+							["sourceQuests"] = { 46246 },	-- Strike Them Down
 							["classes"] = { WARLOCK },
 							["coord"] = { 43.9, 63.2, BROKEN_SHORE },
 							["maps"] = { BROKEN_SHORE },

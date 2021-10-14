@@ -4,7 +4,7 @@
 
 _.Titles =
 {
-	n(-6013, {	-- Factions
+	n(FACTIONS, {
 		title(46),	-- <Name> the Exalted
 		title(48),	-- <Name> the Diplomat
 		title(98),	-- Ambassador <Name>
@@ -38,6 +38,9 @@ _.Titles =
 		title(380),	-- <Name> the Admired
 		title(435, {	-- Fun Guy/Gal <Name>
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+		}),
+		title(346, {	-- <Name>, Talon's Vengeance
+			["collectible"] = false,
 		}),
 	}),
 };

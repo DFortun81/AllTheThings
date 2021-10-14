@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(MOP_TIER, {
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			n(-334, {	-- 1H Axes
 				i(82020),	-- Polished Axe
 				i(82045),	-- Bronzed Axe

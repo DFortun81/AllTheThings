@@ -211,6 +211,7 @@ local L = app.L;
 	L.QUEST_OBJECTIVE_INVALID = "无效的任务目标";
 	L.REFRESHING_COLLECTION = "刷新收集...";
 	L.DONE_REFRESHING = "刷新收集完成.";
+	--TODO: L.ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "物品过滤";
@@ -464,7 +465,7 @@ local L = app.L;
 		L.SKIP_CUTSCENES_CHECKBOX = "自动跳过场景动画";
 		L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "如果想让ATT代表你自动跳过所有场景动画请启用此选项.";
 		L.AUTO_BOUNTY_CHECKBOX = "自动打开奖励列表";
-		--TODO: L.AUTO_BOUNTY__CHECKBOX_TOOLTIP = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
+		--TODO: L.AUTO_BOUNTY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
 		L.AUTO_MAIN_LIST_CHECKBOX = "自动打开主列表";
 		L.AUTO_MAIN_LIST_CHECKBOX_TOOLTIP = "如果你想在登录时自动打开主列表请启用此选项.\n\n你也可以将此设置绑定到一个键上:\n\n按键设置 -> 插件 -> ALL THE THINGS -> 打开/关闭主列表\n\n快捷命令: /att";
 		L.AUTO_MINI_LIST_CHECKBOX = "自动打开迷你列表";
@@ -590,9 +591,9 @@ local L = app.L;
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
 	["安托鲁斯，燃烧王座"] = "安托鲁斯",	-- ["Antorus, the Burning Throne"] = "Antorus"
-	["Expansion Pre"] = "前夕",	-- ["Expansion Pre"] = "Pre"
+	["资料片前夕"] = "前夕",	-- ["Expansion Pre"] = "Pre"
 	--TODO: ["Expansion Features"] = "EF",
-	["Dungeons & Raids"] = "地下城和团本",	-- ["Dungeons & Raids"] = "D&R"
+	[GROUP_FINDER] = "地下城和团本",	-- ["Dungeons & Raids"] = "D&R"
 	--TODO: ["The Burning Crusade"] = "BC",
 	--TODO: ["Burning Crusade"] = "BC",
 	--TODO: ["The BC"] = "BC",
@@ -616,9 +617,9 @@ for key,value in pairs({
 	--TODO: ["25 Player"] = "25M",
 	--TODO: ["25 Player (Heroic)"] = "25M (H)",
 	--TODO: ["Emissary Quests"] = "Emissary",
-	["World Quests"] = "世界任务",	-- ["World Quests"] = "WQ"
+	["世界任务"] = "世界任务",	-- ["World Quests"] = "WQ"	-- TODO: they are the same, so can be removed or shortened to WQ?
 	--TODO: ["WoW Anniversary"] = "Anniversary",
-	["Covenant:"] = "盟约:",	-- ["Covenant:"] = "Cov:"
+	["盟约:"] = "盟约:",	-- ["Covenant:"] = "Cov:"	-- TODO: they are the same, so can be removed or shortened to WQ?
 })
 do a[key] = value; end
 if GetLocale() == "zhTW" then
@@ -658,7 +659,6 @@ for key,value in pairs({
 		[0] = ZONE .. BATTLE_PET_SOURCE_1,							-- Zone Drop 地区掉落
 		[-1] = BATTLE_PET_BREED_QUALITY2 .. TRANSMOG_SOURCE_1,		-- Common Boss Drop 普通首领掉落
 		[-2] = "商人",												-- Vendor	-- String in GlobalStrings.lua means slightly different thing in zhCN so translating it manually
-		--TODO: [-5] = "Prospecting",
 		[-7] = WORLD .. RAID_BOSSES,								-- World Bosses 世界首领
 		--TODO: [-11] = "Common Box Drops",							-- Common Box Drops
 		[-12] = DUNGEON_FLOOR_DIREMAUL5 .. " [东 - 恶魔]",			-- Warpwood Quarter [East - Demon] 扭木广场
@@ -685,19 +685,17 @@ for key,value in pairs({
 		[-59] = "亡灵节",											-- Day of the Dead
 		[-61] = "冬幕节",											-- The Feast of Winter Veil
 		[-62] = "荆棘谷钓鱼大赛",									-- Stranglethorn Fishing Extravaganza
-		[-70] = DUNGEON_FLOOR_DESOLACE22,							-- Foulspore Cavern [Orange]
-		[-71] = DUNGEON_FLOOR_DESOLACE21,							-- The Wicked Grotto [Purple]
-		[-72] = "萨格雷战争议会",									-- Sargerei War Council
+	-- Zul'Aman
 		--TODO: [-78] = "Timed Event",
 		--TODO: [-79] = "First Chest",
 		--TODO: [-80] = "Second Chest",
 		--TODO: [-81] = "Third Chest",
 		--TODO: [-82] = "Final Chest",
+	-- SM
 		[-85] = "墓地",												-- Graveyard
 		--TODO: [-86] = "Library",
 		--TODO: [-87] = "Armory",
 		--TODO: [-88] = "Cathedral",
-		--TODO: [-90] = ELITE,										-- Elite
 	-- TODO: Garrison Note: These will be changed into a new class soon(TM)
 		--[-99] = select(2,C_Garrison.GetBuildingInfo(65)),			-- Stables
 		[-99] = "建筑",												-- Buildings
@@ -706,44 +704,41 @@ for key,value in pairs({
 		[-131] = "辛特兰 "..GetSpellInfo(133137),					-- The Hinterlands Active
 		[-132] = "菲拉斯 "..GetSpellInfo(133137),					-- Feralas Active
 		[-133] = "暮色森林 "..GetSpellInfo(78741),					-- Duskwood Activated
-	-- Class Trial Sets
-		[-141] = "邪魂",												-- Felsoul
-		[-142] = "摧心",												-- Heart-Lesion
-		[-143] = "浅酌者",											-- Lightdrinker
-		[-144] = "烟舞者",											-- Mistdancer
-		[-145] = "山岳贤者",											-- Mountainsage
-		[-146] = "誓约者",											-- Oathsworn
-		[-147] = "春雨",												-- Springrain
-		[-148] = "溪语者",											-- Streamtalker
-		[-149] = "阳魂",												-- Sunsoul
-		[-150] = "探路者",											-- Trailseeker
+	-- Garrison
 		[-152] = "要塞战役",											-- Garrison Campaign
+	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = "辛特兰 "..GetSpellInfo(78741),						-- The Hinterlands Activated
 		[-158] = "菲拉斯 "..GetSpellInfo(78741),						-- Feralas Activated
+	-- Class Hall /Artifact
 		[-159] = "事件roll点",										-- Daily Dreamway Event Roll
 	-- Other
-		--TODO: [-163] = RESISTANCE0_NAME,							-- Armor
-		--TODO: [-165] = GetItemSubClassInfo(13,1),
-		[-168] = FACTION_OTHER .. QUESTS_LABEL,						-- Other Quests
 		[-211] = NEW .. CHARACTER,									-- New Character 新建角色
 		[-212] = "宝箱",												-- Treasure Chest
+	-- Fishing
 		--TODO: [-217] = "Lures",									-- Lures (for Fishing)
 		[-218] = "鱼饵",												-- Coastal (for Fishing)
-		[-224] = "伊利达雷",											-- Illidari
-		--TODO: [-228] = GetSpellInfo(218950),						-- GetSpellInfo(218950),  -- Flight Path
 		--TODO: [-242] = "Unrated",									-- Unrated
 		[-243] = "赏金任务",											-- Bounty
+	-- Allied Races
 		[-254] = "同盟种族 & 传承护甲",										-- Allied Races & Heritage
+	-- First Questline Draenor
 		[-356] = "进攻黑暗之门",										-- Assault on the Dark Portal
+	-- Outposts in Draenor
 		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower
+	-- Legendaries
 		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
-	-- Dungeon/Raid Wing Info
+	-- Operation: Mechagon
 		[-379] = "垃圾场",											-- Junkyard
+	-- Icecrown Citadel
 		[-393] = "进攻堡垒",											-- Storming the Citadel
 		[-394] = "天灾工厂",											-- The Plagueworks
+	-- BFA Outposts
 		--TODO: [-397] = "Outposts",								-- Outposts
+	-- T0.5
 		--TODO: [-420] = "Tier 0.5 Sets",							-- Tier 0.5 Sets
+	-- BFA War Chest
 		[-488] = "战争宝箱",											-- Daily War Chest
+	-- Tarot Cards
 		[-491] = "塔罗牌",											-- Tarot Cards
 	-- Blizzard Events and Anniversaries
 		[-520] = "资料片前夕",										-- Expansion Pre-Launch
@@ -756,12 +751,11 @@ for key,value in pairs({
 		[-533] = "炉石传说推广活动",									-- Hearthstone
 		[-534] = "典藏版",											-- Collector's Edition
 		--TODO: [-536] = "Hearthstone Mercenaries",					-- Hearthstone Mercenaries
-
 		[-537] = "暗黑破坏神20周年庆",								-- Diablo 20th Anniversary
-		--TODO: [-538] = "The Ahn'Qiraj War Effort",
+		--TODO: [-538] = "The Ahn'Qiraj War Effort",				-- The Ahn'Qiraj War Effort
 		[-539] = "流沙节杖",											-- The Scepter of the Shifting Sands
 		[-540] = "天灾入侵",											-- The Scourge Invasion
-		--TODO: [-541] = "The Silithyst Must Flow",
+		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
 		[-542] = "开启黑暗之门",									-- The Opening of the Dark Portal
 		[-543] = "军团入侵",											-- Legion Invasions
 		[-544] = "魔兽世界典藏版",									-- WoW Collector's Edition
@@ -769,16 +763,13 @@ for key,value in pairs({
 		[-550] = "星际争霸典藏版",									-- Starcraft Collector's Edition
 		[-551] = "暗黑破坏神典藏版",									-- Diablo Collector's Edition
 		[-558] = "上海2012年战网世界锦标赛",							-- Battle.net World Championship Shanghai 2012
-
 		[-564] = "星际争霸2：自由之翼",								-- Starcraft II: Wings of Liberty
 		[-565] = "星际争霸2：虫群之心",								-- Starcraft II: Heart of the Swarm
 		[-566] = "暗黑破坏神3",										-- Diablo III
-
 		[-575] = "暗黑破坏神3：夺魂之镰",								-- Diablo III: Reaper of Souls
 		[-576] = "星际争霸2：虚空之遗",								-- StarCraft II: Legacy of the Void
 		[-577] = "魔兽电影",											-- Warcraft Movie
 		--TODO: [-579] = "Dark Portal Pass",
-
 	-- PvP Header
 		-- Special Season Tags
 			--TODO: [-655] = "Ensemble Gear", 						-- Ensemble Gear (PvP)
@@ -787,46 +778,38 @@ for key,value in pairs({
 			[-660] = "争斗者套装",									-- Combatant PvP Gear (WoD, Legion)
 			[-661] = "角斗士套装",									-- Gladiator PvP Gear
 			[-662] = "精锐套装",										-- Elite PvP Gear
-
 		-- Classic PvP Seasons
 			--TODO: [-663] = "Classic Honor System",				-- Classic Honor System
-
 		-- The Burning Crusade PvP Seasons
 			--TODO: [-658] = "BC Pre-Season",						-- Pre-Season (PvP BC)
 			[-664] = select(2, GetAchievementInfo(2091)).."：第1赛季",	-- Gladiator: Season 1
 			[-665] = select(2, GetAchievementInfo(418)).."：第2赛季",	-- Merciless Gladiator: Season 2
 			[-666] = select(2, GetAchievementInfo(419)).."：第3赛季",	-- Vengeful Gladiator: Season 3
 			[-667] = select(2, GetAchievementInfo(420)).."：第4赛季",	-- Brutal Gladiator: Season 4
-
 		-- Wrath of the Lich-King PvP Seasons
 			[-668] = select(2, GetAchievementInfo(3336)).."第5赛季",	-- Deadly Gladiator: Season 5
 			--TODO: [-657] = "Hateful Gladiator",					-- Hateful Gladiator: Season 5 ("medium pvp gear")
 			[-669] = select(2, GetAchievementInfo(3436)).."第6赛季",	-- Furious Gladiator: Season 6
 			[-670] = select(2, GetAchievementInfo(3758)).."第7赛季",	-- Relentless Gladiator: Season 7
 			[-671] = select(2, GetAchievementInfo(4599)).."第8赛季",	-- Wrathful Gladiator: Season 8
-
 		-- Cataclysm PvP Seasons
 			[-672] = select(2, GetAchievementInfo(6002)).."第9赛季",	-- Vicious Gladiator: Season 9
 			--TODO: [-656] = "Honor Gear Ruthless Season",			-- Honor Gear Ruthless Season
 			[-673] = select(2, GetAchievementInfo(6124)).."第10赛季",	-- Ruthless Gladiator: Season 10
 			--TODO: [-654] = "Honor Gear Cataclysmic Season",		-- Honor Gear Cataclysmic Season
 			[-674] = select(2, GetAchievementInfo(6938)).."第11赛季",	-- Cataclysmic Gladiator: Season 11
-
 		-- Mists of Pandaria PvP Seasons
 			[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",	-- Malevolent Gladiator: Season 12
 			--TODO: [-653] = "Honor Gear Tyrannical Season",		-- Honor Gear Tyrannical Season
 			[-676] = select(2, GetAchievementInfo(8791)).."第13赛季",	-- Tyrannical Gladiator: Season 13
 			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
 			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
-
-	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
-	[-806] = "钟示贤德腰带",												-- Waist of Time
-
+	-- Secret Header
+		[-806] = "钟示贤德腰带",												-- Waist of Time
 	-- Chests
 		[-850] = "机械化的宝箱",										-- Mechanized Chest
 		[-851] = "Black Empire Cache",								-- Black Empire Cache
-
-	-- 8.2 Neck Stuff
+	-- Heart of Azeroth
 		[-853] = "全部角色",											-- All Roles
 		--TODO: [-854] = "DPS",										-- DPS
 		[-855] = "治疗",												-- Healers
@@ -852,7 +835,6 @@ for key,value in pairs({
 		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": 流动能量",	-- Tier 3: Flowing Power
 		[-977] = "游荡者梅莉",											-- Maelie the Wanderer
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
-
 		-- SL Maldraxxus/Necrolord
 			[-921] = "圣所升级",										-- Sanctum Upgrades (Necrolord)
 			[-924] = "传送网络",										-- Transport Network (Necrolord)
@@ -861,7 +843,6 @@ for key,value in pairs({
 			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": 给予生命",	-- Abomination Factory (Necrolord) Tier 3
 			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": 铸就友谊",	-- Abomination Factory (Necrolord) Tier 4
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": 永远的好魔友",	-- Abomination Factory (Necrolord) Tier 5
-
 		-- SL Ardenweald/Night Fae
 			[-935] = "圣所升级",										-- Sanctum Upgrades (Night Fae)
 			[-936] = "灵魂变形形态",										-- Soulshape Forms (Night Fae)
@@ -870,7 +851,6 @@ for key,value in pairs({
 			[-1003] = "尚武精魂",									-- Martial Spirit
 			[-1004] = "骄傲精魂",									-- Prideful Spirit
 			[-1005] = "狂野精魂",									-- Untamed Spirit
-
 		-- SL Bastion/Kyrian
 			[-940] = "晋升者议会",									-- Ascended Counil
 			[-941] = "圣所升级",										-- Sanctum Upgrades (Kyrian)
@@ -886,7 +866,6 @@ for key,value in pairs({
 			--TODO: [-966] = "Blueprints & Crafting",				-- Blueprints (for Path of Ascension)
 			--TODO: [-973] = "Loyalty",								-- Loyalty
 			--TODO: [-975] = "Humility",							-- Humility
-
 		-- SL Revendreth/Venthyr
 			[-950] = "传送网络",										-- Transport Network
 			[-951] = string.format(COVENANT_SANCTUM_TIER, 1)..": 魔镜",	-- Tier 1: Mirror, Mirror
@@ -908,9 +887,8 @@ for key,value in pairs({
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
-
+		-- Black Vault
 			--TODO: [-1001] = "The Black Vault",
-
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -924,17 +902,8 @@ for key,value in pairs({
 		--TODO: [-2209] = "The Prophecy of Rythas the Oracle",
 		--TODO: [-2210] = "The Lessons of the Blacklist",
 		--TODO: [-2211] = "Volund's Folly",
-
-	-- Other Sets
+	-- T3
 		[-3179] = "T3套装",
-
-	-- Holiday Sets
-		[-3199] = "仲夏节套装",
-	-- Anti-Undead Armor Sets [Scourge Event]
-		[-3218] = "神圣的亡灵净化法衣",
-		[-3219] = "神圣的亡灵毁灭护甲",
-		[-3220] = "神圣的亡灵毁灭套装",
-		[-3221] = "神圣的亡灵毁灭战甲",
 	-- Island Expedition Sets
 		[-3315] = "蜘蛛助祭",
 		[-3316] = "海达希亚",
@@ -943,7 +912,6 @@ for key,value in pairs({
 		[-3319] = "虫群之怒",
 		[-3340] = "黑暗活化者",
 		[-3341] = "暮湾镇",
-
 		--TODO: [-3343] = "Choking Winter",
 		[-3342] = "阵亡符文领主",
 		[-3320] = "灵枝",
@@ -952,7 +920,6 @@ for key,value in pairs({
 		--TODO: [-3323] = "Whirling Dervish",
 		[-3324] = "荒野树皮",
 		[-3325] = "焰鬼",
-
 		--TODO: [-3344] = "Frostsworn",
 		[-3326] = "狂野劫掠者",
 		[-3327] = "驭龙者",
@@ -960,7 +927,6 @@ for key,value in pairs({
 		[-3329] = "姆格姆格",
 		[-3330] = "藏头者",
 		[-3331] = "巫毒猎手",
-
 		[-3332] = "土岩",
 		[-3333] = "刀鳍",
 		[-3339] = "套装",											-- Item Sets
@@ -970,7 +936,6 @@ for key,value in pairs({
 		[-3336] = "响骨",
 		[-3337] = "暮光巨龙",
 		[-3347] = "黑齿步兵",
-
 	-- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
 		[-4189] = "PvP套装",											-- Instance Item Sets, PvP
@@ -986,7 +951,6 @@ for key,value in pairs({
 			[-5350] = "职业试用套装",								-- Class Trial
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
-
 	------ ACHIEVEMENT HEADER SECTION ------
 		[-10071] = "恩佐斯的幻象",									-- Visions of N'Zoth
 		[-10072] = "恩佐斯突袭",										-- N'Zoth Assault
@@ -1000,11 +964,9 @@ for key,value in pairs({
 		[-10081] = "腐化区域",										-- Corrupted Area
 		[-10082] = "失落区域",										-- Lost Area
 		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
-
 		-- Shadowlands Achievement Header
 			-- Achieve 14339 Sub-Criteira
 				[-1433901] = "心能水晶碎片",							-- Anima Crystal Shard
-
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "残破的镜子 A-1",						-- Broken Mirror
 				[-1433952] = "残破的镜子 A-2",						-- Broken Mirror
@@ -2284,7 +2246,7 @@ for key, value in pairs({
 	[268753] = "小宝箱",	-- Small Treasure Chest
 	[269064] = "小宝箱",	-- Small Treasure Chest
 	[269830] = "|cFFFFFFFF第9步:|r 寻心者的礼物",	-- |cFFFFFFFFStep 9:|r Gift of the Mind-Seekers	--TODO: This was manually translated
-	[270855] = "|cFFFFFFFF第1步:|r 不起眼的纸条",	-- |cFFFFFFFFStep 1:|r Inconspicuous Note	--TODO: This was manually translated
+	[270855] = "|cFFFFFFFF第1步:|r 不起眼的纸条",	-- |cFFFFFFFFStep 1:|r Inconspicuous Note
 	[270917] = "格伦布鲁克登记簿",	-- Glenbrook Register
 	[271103] = "祈祷者雕像",	-- Prayer Effigy
 	[271706] = "猎人的看板",	-- Hunters' Board
@@ -2387,6 +2349,17 @@ for key, value in pairs({
 	[280619] = "古旧的缚铁宝箱",	-- Old Ironbound Chest
 	[280727] = "烧焦的笔记",	-- Charred Note
 	--TODO: [280755] = "Quintin's Satchel",	-- Quintin's Satchel
+	[280815] = "|cFFFFFFFFStep 1:|r 格拉汉姆女士的信 I",	-- |cFFFFFFFFStep 1:|r Letter from Ms. Graham I
+	[280836] = "|cFFFFFFFFStep 2:|r 格拉汉姆女士的信 II",	-- |cFFFFFFFFStep 2:|r Letter from Ms. Graham II
+	[280837] = "|cFFFFFFFFStep 3:|r 格拉汉姆女士的信 III",	-- |cFFFFFFFFStep 3:|r Letter from Ms. Graham III
+	[280838] = "|cFFFFFFFFStep 4:|r 格拉汉姆女士的信 IV",	-- |cFFFFFFFFStep 4:|r Letter from Ms. Graham IV
+	[280842] = "|cFFFFFFFFStep 5:|r 格拉汉姆女士的信 V",	-- |cFFFFFFFFStep 5:|r Letter from Ms. Graham V
+	[280843] = "|cFFFFFFFFStep 6:|r 格拉汉姆女士的信 VI",	-- |cFFFFFFFFStep 6:|r Letter from Ms. Graham VI
+	[280844] = "|cFFFFFFFFStep 7:|r 格拉汉姆女士的信 VII",	-- |cFFFFFFFFStep 7:|r Letter from Ms. Graham VII
+	--TODO: [280845] = "|cFFFFFFFFStep 8:|r Gift for Ms. Graham",	-- |cFFFFFFFFStep 8:|r Gift for Ms. Graham
+	--TODO: [280883] = "Sun-Worn Chest",	-- Sun-Worn Chest
+	--TODO: [280886] = "Star-Touched Chest",	-- Star-Touched Chest
+	--TODO: [280903] = "Lost Cat Toy",	-- Lost Cat Toy
 	[280951] = "艾什凡战利品",	-- Ashvane Spoils
 	--TODO: [280957] = "Zukashi's Satchel",	-- Zukashi's Satchel
 	[281092] = "巫医的珍藏",	-- Witch Doctor's Hoard
@@ -2982,6 +2955,44 @@ for key, value in pairs({
 	--TODO: [9999921] = "Placement",	-- Placement
 	[9999938] = "尤娜的世界旅行",	-- Uuna's World Tour
 	[9999946] = "召唤巴尔",	-- Summon Baa'l
+	--TODO: [13000000] = "|cFFFFFFFFStep 1:|r Purchase Talisman of True Treasure Tracking",	-- |cFFFFFFFFStep 1:|r Purchase Talisman of True Treasure Tracking
+	--TODO: [13000001] = "|cFFFFFFFFStep 2:|r Equip Talisman",	-- |cFFFFFFFFStep 2:|r Equip Talisman
+	--TODO: [13000002] = "|cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion",	-- |cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion
+	--TODO: [13000003] = "Glittergill Glitter",	-- Glittergill Glitter
+	--TODO: [13000004] = "|cFFFFFFFFStep 1:|r Seashell",	-- |cFFFFFFFFStep 1:|r Seashell
+	--TODO: [13000005] = "|cFFFFFFFFStep 2:|r Cavity-Free Great Shark Tooth",	-- |cFFFFFFFFStep 2:|r Cavity-Free Great Shark Tooth
+	--TODO: [13000006] = "|cFFFFFFFFStep 3:|r Razoreel Larva",	-- |cFFFFFFFFStep 3:|r Razoreel Larva
+	--TODO: [13000007] = "|cFFFFFFFFStep 4:|r Well-Fed Doctor Fish",	-- |cFFFFFFFFStep 4:|r Well-Fed Doctor Fish
+	--TODO: [13000008] = "|cFFFFFFFFStep 5:|r Freshly Molted Crab Skin",	-- |cFFFFFFFFStep 5:|r Freshly Molted Crab Skin
+	--TODO: [13000009] = "|cFFFFFFFFStep 6:|r Glittergill Glitter",	-- |cFFFFFFFFStep 6:|r Glittergill Glitter
+	--TODO: [13000010] = "Symbiotic Plankton",	-- Symbiotic Plankton
+	--TODO: [13000011] = "|cFFFFFFFFStep 1:|r Seashell",	-- |cFFFFFFFFStep 1:|r Seashell
+	--TODO: [13000012] = "|cFFFFFFFFStep 2:|r Giant Giant Toenail Clipping",	-- |cFFFFFFFFStep 2:|r Giant Giant Toenail Clipping
+	--TODO: [13000013] = "|cFFFFFFFFStep 3:|r Makrura Eye",	-- |cFFFFFFFFStep 3:|r Makrura Eye
+	--TODO: [13000014] = "|cFFFFFFFFStep 4:|r Accidentally-Severed Seahorse Fin",	-- |cFFFFFFFFStep 4:|r Accidentally-Severed Seahorse Fin
+	--TODO: [13000015] = "|cFFFFFFFFStep 5:|r Shiny Sea Serpent Scale",	-- |cFFFFFFFFStep 5:|r Shiny Sea Serpent Scale
+	--TODO: [13000016] = "|cFFFFFFFFStep 6:|r Symbiotic Plankton",	-- |cFFFFFFFFStep 6:|r Symbiotic Plankton
+	--TODO: [13000017] = "Scintillating Murloc Skin Lotion",	-- Scintillating Murloc Skin Lotion
+	--TODO: [13000018] = "|cFFFFFFFFItem 2:|r Potent Gastropod Gloop",	-- |cFFFFFFFFItem 2:|r Potent Gastropod Gloop
+	--TODO: [13000019] = "|cFFFFFFFFStep 1:|r Seashell",	-- |cFFFFFFFFStep 1:|r Seashell
+	--TODO: [13000020] = "|cFFFFFFFFStep 2:|r Vantus Black Squid Ink",	-- |cFFFFFFFFStep 2:|r Vantus Black Squid Ink
+	--TODO: [13000021] = "|cFFFFFFFFStep 3:|r Super Slick Eel Slime",	-- |cFFFFFFFFStep 3:|r Super Slick Eel Slime
+	--TODO: [13000022] = "|cFFFFFFFFStep 4:|r Rock-Encrusted Whelk Shell",	-- |cFFFFFFFFStep 4:|r Rock-Encrusted Whelk Shell
+	--TODO: [13000023] = "|cFFFFFFFFStep 5:|r Potent Gastropod Gloop",	-- |cFFFFFFFFStep 5:|r Potent Gastropod Gloop
+	--TODO: [13000024] = "|cFFFFFFFFItem 3:|r Captured Cavitation Bubble",	-- |cFFFFFFFFItem 3:|r Captured Cavitation Bubble
+	--TODO: [13000025] = "|cFFFFFFFFStep 1:|r Seashell",	-- |cFFFFFFFFStep 1:|r Seashell
+	--TODO: [13000026] = "|cFFFFFFFFStep 2:|r Very Pretty Coral",	-- |cFFFFFFFFStep 2:|r Very Pretty Coral
+	--TODO: [13000027] = "|cFFFFFFFFStep 3:|r Iridescent Shimmerray Skin",	-- |cFFFFFFFFStep 3:|r Iridescent Shimmerray Skin
+	--TODO: [13000028] = "|cFFFFFFFFStep 4:|r Luxurous Luxscale Scale",	-- |cFFFFFFFFStep 4:|r Luxurous Luxscale Scale
+	--TODO: [13000029] = "|cFFFFFFFFStep 5:|r Captured Cavitation Bubble",	-- |cFFFFFFFFStep 5:|r Captured Cavitation Bubble
+	--TODO: [13000030] = "Purchase Red Crystal Monocle",	-- Purchase Red Crystal Monocle
+	--TODO: [13000031] = "Red Crystal Monocle",	-- Red Crystal Monocle
+	--TODO: [13000032] = "|cFFFFFFFFStep 3:|r Pick a Monocle (Or Don't!)",	-- |cFFFFFFFFStep 3:|r Pick a Monocle (Or Don't!)
+	--TODO: [13000033] = "|cFFFFFFFFStep 4:|r Suramar Beams",	-- |cFFFFFFFFStep 4:|r Suramar Beams
+	--TODO: [13000034] = "|cFFFFFFFFStep 5:|r Cat Code",	-- |cFFFFFFFFStep 5:|r Cat Code
+	--TODO: [13000035] = "|cFFFFFFFFStep 6:|r Jumping Puzzle",	-- |cFFFFFFFFStep 6:|r Jumping Puzzle
+	--TODO: [13000036] = "|cFFFFFFFFStep 7:|r Arcane Lava",	-- |cFFFFFFFFStep 7:|r Arcane Lava
+	--TODO: [13000037] = "|cFFFFFFFFStep 8:|r Hivemind",	-- |cFFFFFFFFStep 8:|r Hivemind
 	[1278968766] = "符文",	-- Rune
 	[1278968767] = "符文",	-- Rune
 	[1278968768] = "符文",	-- Rune
@@ -2993,30 +3004,6 @@ do a[key] = value; end
 -- didn't use the same localization for the instance. Sorry.
 local a = L.SAVED_TO_DJ_INSTANCES;
 for key,value in pairs({
-	["The Escape from Durnholde"] = "旧希尔斯布莱德丘陵";
-	["Opening of the Dark Portal"] = "黑色沼泽";
-	["Auchindoun: Auchenai Crypts"] = "奥金尼地穴";
-	["Auchindoun: Mana-Tombs"] = "法力陵墓";
-	["Auchindoun: Sethekk Halls"] = "塞泰克大厅";
-	["Auchindoun: Shadow Labyrinth"] = "暗影迷宫";
-	["Coilfang: Serpentshrine Cavern"] = "毒蛇神殿";
-	["Coilfang: The Slave Pens"] = "奴隶围栏";
-	["Coilfang: The Steamvault"] = "蒸汽地窟";
-	["Coilfang: The Underbog"] = "幽暗沼泽";
-	["Hellfire Citadel: Ramparts"] = "地狱火城墙";
-	["Hellfire Citadel: The Blood Furnace"] = "鲜血熔炉";
-	["Hellfire Citadel: The Shattered Halls"] = "破碎大厅";
-	["Tempest Keep: The Arcatraz"] = "禁魔监狱";
-	["Tempest Keep: The Botanica"] = "生态船";
-	["Tempest Keep: The Mechanar"] = "能源舰";
-	["Stormwind Stockade"] = "监狱";
-	["Ahn'Qiraj Temple"] = "安其拉";
-	--TODO: ["Sunken Temple"] = "The Temple of Atal'hakkar";
-	["The Sunwell"] = "太阳之井高地";
-	["Tempest Keep"] = "风暴要塞";
-	["The Violet Hold"] = "紫罗兰监狱";
-	["Magister's Terrace"] = "魔导师平台";
-	["Violet Hold"] = "紫罗兰监狱";
 })
 do a[key] = value; end
 

@@ -148,7 +148,7 @@ profession(ARCHAEOLOGY, {
 				},
 			}),
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(117382),	-- Beakbreaker of Terokk
 		}),
 	}),
@@ -761,7 +761,7 @@ profession(ARCHAEOLOGY, {
 			i(64373),	-- Chalice of the Mountain Kings
 			i(64488),	-- The Innkeeper's Daughter
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(64489),	-- Staff of Sorcerer-Thane Thaurissan
 		}),
 	}),
@@ -1171,7 +1171,7 @@ profession(ARCHAEOLOGY, {
 				},
 			}),
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(95391),	-- Mantid Sky Reaver
 			i(95392),	-- Sonic Pulse Generator
 		}),
@@ -1361,7 +1361,7 @@ profession(ARCHAEOLOGY, {
 			i(114183),	-- Stone Manacles
 			i(114181),	-- Stonemaul Succession Stone
 		}),
-		n(-384, {	-- Neck
+		n(NECK, {
 			i(117385),	-- Sorcerer-King Toe Ring
 		}),
 		n(QUESTS, {
@@ -1496,7 +1496,7 @@ profession(ARCHAEOLOGY, {
 				},
 			}),
 		}),
-		n(-319, {	-- Weapon
+		n(WEAPONS, {
 			i(117384),	-- Warmaul of the Warmaul Chieftain
 		}),
 	}),
@@ -1631,7 +1631,7 @@ profession(ARCHAEOLOGY, {
 				},
 			}),
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(89685),	-- Spear of Xuen
 			i(89684),	-- Umbrella of Chi-Ji
 		}),
@@ -1648,7 +1648,7 @@ profession(ARCHAEOLOGY, {
 		filter(BATTLE_PETS, {
 			i(60847),	-- Crawling Claw
 		}),
-		n(-385,   {	-- Finger
+		n(FINGER, {
 			i(64904),	-- Ring of the Boy Emperor
 		}),
 		f(50,     {	-- Miscellaneous
@@ -1667,7 +1667,7 @@ profession(ARCHAEOLOGY, {
 		n(-161,   {	-- Toys
 			i(64881),	-- Pendant of the Scarab Storm
 		}),
-		n(-319,   {	-- Weapons
+		n(WEAPONS, {
 			i(64885),	-- Scimitar of the Sirocco
 			i(64880),	-- Staff of Ammunae
 		}),
@@ -1695,7 +1695,7 @@ profession(ARCHAEOLOGY, {
 		n(-161, {	-- Toys
 			i(69777),	-- Haunted War Drum
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(64377),	-- Zin'rokh, Destroyer of Worlds
 		}),
 	}),
@@ -1710,7 +1710,7 @@ profession(ARCHAEOLOGY, {
 		n(-161, {	-- Toys
 			i(69775),	-- Vrykul Drinking Horn
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(64460),	-- Nifflevar Bearded Axe
 		}),
 	}),

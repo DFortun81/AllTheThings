@@ -6,8 +6,8 @@ _.PVP =
 {
 	pvp(n(-10100, {	-- Shadowlands
 		n(-693, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Sinful Gladiator: Shadowlands Season 1
-			n(-659, {	-- Aspirant Gear
-				n(-322, {	-- Cloak
+			n(PVP_ASPIRANT, {
+				n(BACK, {
 					i(178301),	-- Sinful Aspirant's Cape
 					i(175851),	-- Sinful Aspirant's Cloak
 					i(178265),	-- Sinful Aspirant's Drape
@@ -21,7 +21,7 @@ _.PVP =
 					i(175857),	-- Sinful Aspirant's Silk Treads
 					i(175880),	-- Sinful Aspirant's Silk Wristwraps
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(178293),	-- Sinful Aspirant's Band
 					i(175879),	-- Sinful Aspirant's Ring
 					i(178329),	-- Sinful Aspirant's Signet
@@ -46,7 +46,7 @@ _.PVP =
 					i(175854),	-- Sinful Aspirant's Chain Vest
 					i(175882),	-- Sinful Aspirant's Chain Wristwraps
 				}),
-				n(-384, {	-- Neck
+				n(NECK, {
 					i(178299),	-- Sinful Aspirant's Choker
 					i(175885),	-- Sinful Aspirant's Necklace
 					i(178335),	-- Sinful Aspirant's Pendant
@@ -68,7 +68,7 @@ _.PVP =
 					i(184053),	-- Sinful Aspirant's Relentless Brooch
 					i(184054),	-- Sinful Aspirant's Sigil of Adaptation
 				}),
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(178490),	-- Sinful Aspirant's Barrier
 					i(178468),	-- Sinful Aspirant's Battleaxe
 					i(183433),	-- Sinful Aspirant's Blackjack
@@ -91,8 +91,8 @@ _.PVP =
 					i(178479),	-- Sinful Aspirant's Warglaive
 				}),
 			}),
-			n(-661, {	-- Gladiator Gear
-				n(-322, {	-- Cloak
+			n(PVP_GLADIATOR, {
+				n(BACK, {
 					i(175888),	-- Sinful Gladiator's Cloak
 					i(178353),	-- Sinful Gladiator's Drape
 					i(184311),	-- Sinful Gladiator's Greatcloak
@@ -116,7 +116,7 @@ _.PVP =
 					i(178354),	-- Sinful Gladiator's Silk Vestments
 					i(175917),	-- Sinful Gladiator's Silk Wristwraps
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(178381),	-- Sinful Gladiator's Band
 					i(175916),	-- Sinful Gladiator's Ring
 					i(178442),	-- Sinful Gladiator's Signet
@@ -157,7 +157,7 @@ _.PVP =
 					i(175891),	-- Sinful Gladiator's Chain Vest
 					i(175919),	-- Sinful Gladiator's Chain Wristguards
 				}),
-				n(-384, {	-- Neck
+				n(NECK, {
 					i(178448),	-- Sinful Gladiator's Amulet
 					i(175922),	-- Sinful Gladiator's Necklace
 					i(178387),	-- Sinful Gladiator's Pendant
@@ -188,7 +188,7 @@ _.PVP =
 					i(181335),	-- Sinful Gladiator's Relentless Brooch
 					i(181816),	-- Sinful Gladiator's Sigil of Adaptation
 				}),
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }}, {	-- Kyrian
 						i(177851),	-- Sinful Gladiator's Ceremonial Sword
 						i(177866),	-- Sinful Gladiator's Chalice
@@ -253,8 +253,8 @@ _.PVP =
 					})),
 				}),
 			}),
-			n(-662, bubbleDown({["modID"] = 45}, {	-- Elite Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
-				n(-319, {	-- Weapons
+			n(PVP_ELITE, bubbleDown({["modID"] = 45}, {	-- Elite Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
+				n(WEAPONS, {
 					n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }}, {	-- Kyrian
 						i(177851),	-- Sinful Gladiator's Ceremonial Sword
 						--i(177866)),	-- Sinful Gladiator's Chalice (Not ingame // Shared with Normal Pvp Gear // Gold 16.04.2021)
@@ -318,7 +318,7 @@ _.PVP =
 						i(182410),	-- Sinful Gladiator's Wingglaive
 					})),
 				}),
-				n(-322, {	-- Cloak
+				n(BACK, {
 					i(175888),	-- Sinful Gladiator's Cloak
 					i(178353),	-- Sinful Gladiator's Drape
 					i(184311),	-- Sinful Gladiator's Greatcloak
@@ -342,7 +342,7 @@ _.PVP =
 					i(178354),	-- Sinful Gladiator's Silk Vestments
 					i(175917),	-- Sinful Gladiator's Silk Wristwraps
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(178381),	-- Sinful Gladiator's Band
 					i(175916),	-- Sinful Gladiator's Ring
 					i(178442),	-- Sinful Gladiator's Signet
@@ -383,7 +383,7 @@ _.PVP =
 					i(175891),	-- Sinful Gladiator's Chain Vest
 					i(175919),	-- Sinful Gladiator's Chain Wristguards
 				}),
-				n(-384, {	-- Neck
+				n(NECK, {
 					i(178448),	-- Sinful Gladiator's Amulet
 					i(175922),	-- Sinful Gladiator's Necklace
 					i(178387),	-- Sinful Gladiator's Pendant
@@ -437,8 +437,8 @@ _.PVP =
 			}),
 		})),
 		n(-694, {	-- Unchained Gladiator: Shadowlands Season 2
-			n(-659, {	-- Aspirant Gear
-				n(-322, {	-- Cloak
+			n(PVP_ASPIRANT, {
+				n(BACK, {
 					i(185240),	-- Unchained Aspirant's Cape
 					i(185128),	-- Unchained Aspirant's Cloak
 					i(185205),	-- Unchained Aspirant's Drape
@@ -461,7 +461,7 @@ _.PVP =
 					i(185134),	-- Unchained Aspirant's Silk Treads
 					i(185157),	-- Unchained Aspirant's Silk Wristwraps
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(185233),	-- Unchained Aspirant's Band
 					i(185156),	-- Unchained Aspirant's Ring
 					i(185241),	-- Unchained Aspirant's Signet
@@ -502,7 +502,7 @@ _.PVP =
 					i(185223),	-- Unchained Aspirant's Chain Wargreaves
 					i(185159),	-- Unchained Aspirant's Chain Wristwraps
 				}),
-				n(-384, {	-- Neck
+				n(NECK, {
 					i(185239),	-- Unchained Aspirant's Choker
 					i(185162),	-- Unchained Aspirant's Necklace
 					i(185243),	-- Unchained Aspirant's Pendant
@@ -533,7 +533,7 @@ _.PVP =
 					i(185310),	-- Unchained Aspirant's Relentless Brooch
 					i(185311),	-- Unchained Aspirant's Sigil of Adaptation
 				}),
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(185295),	-- Unchained Aspirant's Barrier
 					i(185284),	-- Unchained Aspirant's Battleaxe
 					i(185307),	-- Unchained Aspirant's Blackjack
@@ -554,8 +554,8 @@ _.PVP =
 					i(185293),	-- Unchained Aspirant's Warglaive
 				}),
 			}),
-			n(-661, {	-- Gladiator Gear
-				n(-322, {	-- Cloak
+			n(PVP_GLADIATOR, {
+				n(BACK, {
 					i(185164),	-- Unchained Gladiator's Cloak
 					i(185245),	-- Unchained Gladiator's Drape
 					i(185313),	-- Unchained Gladiator's Greatcloak
@@ -579,7 +579,7 @@ _.PVP =
 					i(185246),	-- Unchained Gladiator's Silk Vestments
 					i(185193),	-- Unchained Gladiator's Silk Wristwraps
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(185273),	-- Unchained Gladiator's Band
 					i(185192),	-- Unchained Gladiator's Ring
 					i(185281),	-- Unchained Gladiator's Signet
@@ -620,7 +620,7 @@ _.PVP =
 					i(185167),	-- Unchained Gladiator's Chain Vest
 					i(185195),	-- Unchained Gladiator's Chain Wristguards
 				}),
-				n(-384, {	-- Neck
+				n(NECK, {
 					i(185283),	-- Unchained Gladiator's Amulet
 					i(185198),	-- Unchained Gladiator's Necklace
 					i(185279),	-- Unchained Gladiator's Pendant
@@ -651,7 +651,7 @@ _.PVP =
 					i(185305),	-- Unchained Gladiator's Relentless Brooch
 					i(185306),	-- Unchained Gladiator's Sigil of Adaptation
 				}),
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(185200),	-- Unchained Gladiator's Ceremonial Sword
 					i(185203),	-- Unchained Gladiator's Chalice
 					i(185317),	-- Unchained Gladiator's Dory
@@ -668,8 +668,8 @@ _.PVP =
 					i(185315),	-- Unchained Gladiator's Xiphos
 				}),
 			}),
-			n(-662, bubbleDown({["modID"] = 14, ["bonusID"] = 7309}, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
-				n(-322, {	-- Cloak
+			n(PVP_ELITE, bubbleDown({["modID"] = 14, ["bonusID"] = 7309}, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
+				n(BACK, {
 					i(185164),	-- Unchained Gladiator's Cloak
 					i(185245),	-- Unchained Gladiator's Drape
 					i(185313),	-- Unchained Gladiator's Greatcloak
@@ -693,7 +693,7 @@ _.PVP =
 					i(185246),	-- Unchained Gladiator's Silk Vestments
 					i(185193),	-- Unchained Gladiator's Silk Wristwraps
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(185273),	-- Unchained Gladiator's Band
 					i(185192),	-- Unchained Gladiator's Ring
 					i(185281),	-- Unchained Gladiator's Signet
@@ -734,7 +734,7 @@ _.PVP =
 					i(185167),	-- Unchained Gladiator's Chain Vest
 					i(185195),	-- Unchained Gladiator's Chain Wristguards
 				}),
-				n(-384, {	-- Neck
+				n(NECK, {
 					i(185283),	-- Unchained Gladiator's Amulet
 					i(185198),	-- Unchained Gladiator's Necklace
 					i(185279),	-- Unchained Gladiator's Pendant
@@ -765,7 +765,7 @@ _.PVP =
 					i(185305),	-- Unchained Gladiator's Relentless Brooch
 					i(185306),	-- Unchained Gladiator's Sigil of Adaptation
 				}),
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(185200),	-- Unchained Gladiator's Ceremonial Sword
 					i(185203),	-- Unchained Gladiator's Chalice
 					i(185317),	-- Unchained Gladiator's Dory
@@ -800,7 +800,7 @@ _.PVP =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10100, {	-- Shadowlands
 		n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(183432),	-- Sinful Aspirant's Reaver
 				i(178469),	-- Sinful Aspirant's Bow
 				i(178671),	-- Sinful Aspirant's Broadsword
@@ -895,13 +895,13 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(178331),	-- Sinful Aspirant's Plate Chain
 				}),
 			}),
-			n(-322, {	-- Back
+			n(BACK, {
 				i(180425),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 02
 				i(180426),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 03
 				i(180427),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 04
 				i(180428),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 05
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(180650),	-- Shadowlandy Gladiator's Stompers
 			}),
 			n(-386, {	-- Trinkets

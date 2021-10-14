@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9956, {	-- Quests
+	n(QUESTS, {
 		n(-9982, {	-- Legion
 			ach(11732, {	-- A Magnificent Contribution (Broken Shore)
 				ach(11731),		-- A Magic Contribution

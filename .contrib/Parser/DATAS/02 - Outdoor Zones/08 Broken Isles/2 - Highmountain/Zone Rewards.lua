@@ -73,10 +73,10 @@ _.Zones =
 				i(134137),	-- Rockbound Girdle
 				i(134139),	-- Rockbound Legguards
 				i(134141),	-- Rockbound Sabatons
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(139103),	-- An'she's Band
 				}),
-				n(-384, {	-- Neck
+				n(NECK, {
 				}),
 				n(-386,  {	-- Trinkets
 					i(139114),	-- An'she's Infusion of Light

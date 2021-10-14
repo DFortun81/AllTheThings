@@ -21,7 +21,7 @@ _.Instances = { tier(WOD_TIER, {
 				e(1226,  {	-- Orebender Gor'ashan
 					["crs"] = { 76413 },	-- Orebender Gor'ashan
 					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 1, CLOAK},
+						{"sub", "common_wod_dungeon_drop", 1, BACK},
 						{"sub", "common_wod_dungeon_drop", 1, FEET},
 					},
 					["g"] = {
@@ -46,15 +46,15 @@ _.Instances = { tier(WOD_TIER, {
 						{"sub", "common_wod_dungeon_drop", 1, FINGER},
 					},
 					["g"] = {
-						i(118724),	-- Finkle's Flenser
+						i(118724),	-- Pip's Flenser
 						i(110018),	-- Kyrak's Vileblood Serum
 						un(REMOVED_FROM_GAME, i(118748)),	-- Fallbrush Gauntlets [Only available during pre WoD level 90 version]
-						un(REMOVED_FROM_GAME, i(118756)),	-- Finkle's Shanker [Only available during pre WoD level 90 version]
+						un(REMOVED_FROM_GAME, i(118756)),	-- Pip's Shanker [Only available during pre WoD level 90 version]
 						un(REMOVED_FROM_GAME, i(118747)),	-- Grips of Power [Only available during pre WoD level 90 version]
 						un(REMOVED_FROM_GAME, i(118750)),	-- Reiver Gauntlets [Only available during pre WoD level 90 version]
 						un(REMOVED_FROM_GAME, i(118749)),	-- Trueaim Grips [Only available during pre WoD level 90 version]
 						n(-355, bubbleDown({["bonusID"] = 4746 }, {	-- Warforged
-							i(118724),	-- Finkle's Flenser
+							i(118724),	-- Pip's Flenser
 							i(110018),	-- Kyrak's Vileblood Serum
 						})),
 					},
@@ -147,7 +147,7 @@ _.Instances = { tier(WOD_TIER, {
 				e(1226,   {	-- Orebender Gor'ashan
 					["crs"] = { 76413 },	-- Orebender Gor'ashan
 					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 2, CLOAK},
+						{"sub", "common_wod_dungeon_drop", 2, BACK},
 						{"sub", "common_wod_dungeon_drop", 2, FEET},
 					},
 					["g"] = {
@@ -163,7 +163,7 @@ _.Instances = { tier(WOD_TIER, {
 						{"sub", "common_wod_dungeon_drop", 2, FINGER},
 					},
 					["g"] = {
-						i(118724),	-- Finkle's Flenser
+						i(118724),	-- Pip's Flenser
 						i(110018),	-- Kyrak's Vileblood Serum
 					},
 				}),
@@ -224,7 +224,7 @@ _.Instances = { tier(WOD_TIER, {
 				e(1226,  {	-- Orebender Gor'ashan
 					["crs"] = { 76413 },	-- Orebender Gor'ashan
 					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, CLOAK},
+						{"sub", "common_wod_dungeon_drop", 23, BACK},
 						{"sub", "common_wod_dungeon_drop", 23, FEET},
 					},
 					["g"] = {
@@ -239,7 +239,7 @@ _.Instances = { tier(WOD_TIER, {
 						{"sub", "common_wod_dungeon_drop", 23, FINGER},
 					},
 					["g"] = {
-						i(118724),	-- Finkle's Flenser
+						i(118724),	-- Pip's Flenser
 						i(110018),	-- Kyrak's Vileblood Serum
 					},
 				}),

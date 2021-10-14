@@ -209,6 +209,7 @@ local L = app.L;
 	L.QUEST_OBJECTIVE_INVALID = "Недействительная Цель Задания";
 	L.REFRESHING_COLLECTION = "Обновление коллекции...";
 	L.DONE_REFRESHING = "Коллекция обновлена.";
+	L.ADHOC_UNIQUE_COLLECTED_INFO = "Этот Предмет сломан в ATT из-за отсутствующей информации от Blizzard. Можно поправить, если вручную обновить коллекцию (Shift+Клик на окне ATT).";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";
@@ -462,7 +463,7 @@ local L = app.L;
 		L.SKIP_CUTSCENES_CHECKBOX = "Авто Пропуск Сцен";
 		L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT автоматичски пропускал все внутриигровые сцены.";
 		L.AUTO_BOUNTY_CHECKBOX = "Авто Открывать Список Пропаж";
-		L.AUTO_BOUNTY__CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT автоматически открывал список предметов, которые считаются крайне важными для нахождения. Если у Вас получится стащить один из перечисленных здесь предметов, Вы можете сделать получить хорошую сумку золотых.\n\nБыстрая Команда: /attbounty";
+		L.AUTO_BOUNTY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT автоматически открывал список предметов, которые считаются крайне важными для нахождения. Если у Вас получится стащить один из перечисленных здесь предметов, Вы можете сделать получить хорошую сумку золотых.\n\nБыстрая Команда: /attbounty";
 		L.AUTO_MAIN_LIST_CHECKBOX = "Авто Открывать Основной Список";
 		L.AUTO_MAIN_LIST_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT автоматически открывал Основной Список при входе в игру.\n\nВы также можете назначить клавишу для данной настройки:\n\nНазначение Клавиш -> Модификации -> ALL THE THINGS -> Переключить Основной Список\n\nБыстрая Команда: /att";
 		L.AUTO_MINI_LIST_CHECKBOX = "Авто Открывать Мини Список";
@@ -600,7 +601,6 @@ for key,value in pairs({
 	-- Commonly used
 		[0] = "Добыча локации",									-- Zone Drop
 		[-1] = "Общая добыча с боссов",							-- Common Boss Drop
-		[-5] = "Просеивание",
 		[-7] = "Мировые Боссы",									-- World Bosses
 		[-11] = "Обычная добыча из Сундуков",					-- Common Box Drops
 		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [Восток - Демоны]",	-- Warpwood Quarter [East - Demon]
@@ -623,13 +623,14 @@ for key,value in pairs({
 		[-53] = "Огненный Солнцеворот",							-- Midsummer Fire Festival
 		[-55] = "День пирата",
 		[-59] = "День мертвых",
-		[-62] = "Рыбомания Тернистой долины",
-		[-72] = "Саргерайский военный совет",
+		[-62] = "Рыбомания Тернистой долины",					-- Stranglethorn Fishing Extravaganza
+	-- Zul'Aman
 		[-78] = "Временное Событие",
 		[-79] = "Первый Сундук",
 		[-80] = "Второй Сундук",
 		[-81] = "Третий Сундук",
 		[-82] = "Последний Сундук",
+	-- SM
 		[-85] = "Кладбище",
 		[-86] = "Библиотека",
 		[-87] = "Оружейная",
@@ -643,70 +644,65 @@ for key,value in pairs({
 		[-131] = "Внутренние земли - активен",						-- The Hinterlands Active
 		[-132] = "Фералас - активен",								-- Feralas Active
 		[-133] = "Сумеречный лес - активирован",					-- Duskwood Activated
-	-- Class Trial Sets
-		[-141] = "Оскверненная душа",
-		[-142] = "Раненное сердце",
-		[-143] = "Поглощающий свет",
-		[-144] = "Танцующий в тумане",
-		[-145] = "Горное сердце",
-		[-146] = "Принесенная клятва",
-		[-147] = "Весенний дождь",
-		[-148] = "Говорящий с родником",
-		[-149] = "Солнечная душа",
-		[-150] = "Искатель троп",
+	-- Garrison
 		[-152] = "Гарнизонная кампания",
+	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = "Внутренние земли - активирован",					-- The Hinterlands Activated
 		[-158] = "Фералас - активирован",							-- Feralas Activated
+	-- Class Hall /Artifact
 		[-159] = "Ролл События",									-- Daily Dreamway Event Roll
 	-- Other
 		[-163] = "Доспехи",											-- Armor
-		[-165] = "Сундучки",
-		[-168] = "Другие Задания",									-- Other Quests
 		[-211] = "Новый персонаж",									-- New Character
 		[-212] = "Сундук с сокровищами",							-- Treasure Chest
+	-- Fishing
 		[-217] = "Наживки",											-- Lures (for Fishing)
 		[-218] = "Побережье",										-- Coastal (for Fishing)
-		[-224] = "Иллидари",										-- Illidari
 		[-228] = "Точка полета",									-- GetSpellInfo(218950),  -- Flight Path
 		[-242] = "Нерейтинговые",									-- Unrated
 		[-243] = "Премия",											-- Bounty
+	-- Allied Races
 		[-254] = "Союзные расы & Традиционные доспехи",				-- Allied Races & Heritage
-		[-356] = "Атака на Темный портал",
+	-- First Questline Draenor
+		[-356] = "Атака на Темный портал",							-- Assault on the Dark Portal
+	-- Outposts in Draenor
 		[-361] = "Артиллерийная башня",								-- Artillery Tower
+	-- Legendaries
 		[-364] = "Легендарные предметы",							-- Legendaries
-	-- Dungeon/Raid Wing Info
+	-- Operation: Mechagon
 		[-379] = "Свалка",											-- Junkyard
+	-- Icecrown Citadel
 		[-393] = "Штурм цитадели",									-- Storming the Citadel
 		[-394] = "Чумодельня",										-- The Plagueworks
+	-- BFA Outposts
 		[-397] = "Аванпосты",										-- Outposts
+	-- T0.5
 		[-420] = "Комплекты T0.5",									-- Tier 0.5 Sets
+	-- BFA War Chest
 		[-488] = "Трофейный сундук",								-- Daily War Chest
-		[-491] = "Карты таро",
+	-- Tarot Cards
+		[-491] = "Карты таро",										-- Tarot Cards
 	-- Blizzard Events and Anniversaries
-		[-520] = "Препатч",
-		[-522] = "Wrath of the Lich King: Нашествие зомби",
-		[-523] = "Cataclysm: Бейство элементалей",
-		[-525] = "Warlords of Draenor: Вторжение Железной Орды",
-		[-526] = "Legion: Вторжение Легиона",
-		[-527] = "Battle for Azeroth: Война Шипов",
-		[-532] = "Heroes of the Storm",
-		[-533] = "Hearthstone",
-		[-534] = "Коллекционное издание",
-		[-536] = "Hearthstone Наемники",
-
-		[-537] = "20-ая годовщина Diablo",
-		[-538] = "Война в Ан'Кираже",
-		[-539] = "Скипетр Зыбучих песков",
-		[-540] = "Вторжение Плети",
-		--TODO: [-541] = "The Silithyst Must Flow",
-		[-542] = "Открытие Темного портала",
-		[-543] = "Вторжение Легиона",
-		[-544] = "Коллекционное издание WoW",
-		[-550] = "Коллекционное издание Starcraft",
-		[-551] = "Коллекционное издание Diablo",
-		[-556] = "Турнир Арены",
-		[-579] = "Пропуск Темного портала",
-
+		[-520] = "Препатч",											-- Expansion Pre-Launch
+		[-522] = "Wrath of the Lich King: Нашествие зомби",			-- Wrath of the Lich King: Zombie Infestation
+		[-523] = "Cataclysm: Бейство элементалей",					-- Cataclysm: Elemental Unrest
+		[-525] = "Warlords of Draenor: Вторжение Железной Орды",	-- Warlords of Draenor: Iron Horde Incursion
+		[-526] = "Legion: Вторжение Легиона",						-- Legion: Legion Invasion
+		[-527] = "Battle for Azeroth: Война Шипов",					-- Battle for Azeroth: War of the Thorns
+		[-534] = "Коллекционное издание",							-- Collector's Edition
+		[-536] = "Hearthstone Наемники",							-- Hearthstone Mercenaries
+		[-537] = "20-ая годовщина Diablo",							-- Diablo 20th Anniversary
+		[-538] = "Война в Ан'Кираже",								-- The Ahn'Qiraj War Effort
+		[-539] = "Скипетр Зыбучих песков",							-- The Scepter of the Shifting Sands
+		[-540] = "Вторжение Плети",									-- The Scourge Invasion
+		--TODO: [-541] = "The Silithyst Must Flow",					-- The Silithyst Must Flow
+		[-542] = "Открытие Темного портала",						-- The Opening of the Dark Portal
+		[-543] = "Вторжение Легиона",								-- Legion Invasions
+		[-544] = "Коллекционное издание WoW",						-- WoW Collector's Edition
+		[-550] = "Коллекционное издание Starcraft",					-- Starcraft Collector's Edition
+		[-551] = "Коллекционное издание Diablo",					-- Diablo Collector's Edition
+		[-556] = "Турнир Арены",									-- Arena Tournament
+		[-579] = "Пропуск Темного портала",							-- Dark Portal Pass
 	-- PvP Header
 		-- Special Season Tags
 			[-655] = "Комплекты", 									-- Ensemble Gear (PvP)
@@ -715,46 +711,38 @@ for key,value in pairs({
 			[-660] = "Доспехи Бойца",								-- Combatant PvP Gear (WoD, Legion)
 			[-661] = "Доспехи Гладиатора",							-- Gladiator PvP Gear
 			[-662] = "Элитные доспехи",								-- Elite PvP Gear
-
 		-- Classic PvP Seasons
 			[-663] = "Система Чести Классика",						-- Classic Honor System
-
 		-- The Burning Crusade PvP Seasons
 			[-658] = "BC Предсезон",								-- Pre-Season (PvP BC)
 			[-664] = select(2, GetAchievementInfo(2091))..": Сезон 1",	-- Gladiator: Season 1
 			[-665] = select(2, GetAchievementInfo(418))..": Сезон 2",	-- Merciless Gladiator: Season 2
 			[-666] = select(2, GetAchievementInfo(419))..": Сезон 3",	-- Vengeful Gladiator: Season 3
 			[-667] = select(2, GetAchievementInfo(420))..": Сезон 4",	-- Brutal Gladiator: Season 4
-
 		-- Wrath of the Lich-King PvP Seasons
 			[-668] = select(2, GetAchievementInfo(3336))..": Сезон 5",	-- Deadly Gladiator: Season 5
 			[-657] = "Злобный гладиатор",								-- Hateful Gladiator
 			[-669] = select(2, GetAchievementInfo(3436))..": Сезон 6",	-- Furious Gladiator: Season 6
 			[-670] = select(2, GetAchievementInfo(3758))..": Сезон 7",	-- Relentless Gladiator: Season 7
 			[-671] = select(2, GetAchievementInfo(4599))..": Сезон 8",	-- Wrathful Gladiator: Season 8
-
 		-- Cataclysm PvP Seasons
 			[-672] = select(2, GetAchievementInfo(6002))..": Сезон 9",	-- Vicious Gladiator: Season 9
 			[-656] = "Доспехи Беспощадного гладиатора за очки чести",	-- Honor Gear Ruthless Season
 			[-673] = select(2, GetAchievementInfo(6124))..": Сезон 10",	-- Ruthless Gladiator: Season 10
 			[-654] = "Доспехи Гладиатора Катаклизма за очки чести",		-- Honor Gear Cataclysmic Season
 			[-674] = select(2, GetAchievementInfo(6938))..": Сезон 11",	-- Cataclysmic Gladiator: Season 11
-
 		-- Mists of Pandaria PvP Seasons
 			[-675] = select(2, GetAchievementInfo(8214))..": Сезон 12",	-- Malevolent Gladiator: Season 12
 			[-653] = "Доспехи Деспотичного гладиатора за очки чести",	-- Honor Gear Tyrannical Season
 			[-676] = select(2, GetAchievementInfo(8791))..": Сезон 13",	-- Tyrannical Gladiator: Season 13
 			[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
 			[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
-
-	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
-	[-806] = "Часовой пояс",									-- Waist of Time
-
+	-- Secret Header
+		[-806] = "Часовой пояс",									-- Waist of Time
 	-- Chests
 		[-850] = "Механизированный сундук",							-- Mechanized Chest
 		[-851] = "Тайник Темной Империи",							-- Black Empire Cache
-
-	-- 8.2 Neck Stuff
+	-- Heart of Azeroth
 		[-853] = "Все роли",										-- All Roles
 		[-854] = "Боец",											-- DPS
 		[-855] = "Лекарь",											-- Healers
@@ -780,7 +768,6 @@ for key,value in pairs({
 		[-918] = string.format(COVENANT_SANCTUM_TIER, 3)..": Текущая энергия",	-- Tier 3: Flowing Power
 		[-977] = "Маэли Странница",									-- Maelie the Wanderer
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
-
 		-- SL Maldraxxus/Necrolord
 			[-921] = "Улучшения для Обители",						-- Sanctum Upgrades (Necrolord)
 			[-924] = "Транспортная Сеть",							-- Transport Network (Necrolord)
@@ -789,7 +776,6 @@ for key,value in pairs({
 			[-927] = string.format(COVENANT_SANCTUM_TIER, 3)..": Встань и живи",	-- Abomination Factory (Necrolord) Tier 3
 			[-928] = string.format(COVENANT_SANCTUM_TIER, 4)..": Кованые друзья",	-- Abomination Factory (Necrolord) Tier 4
 			[-938] = string.format(COVENANT_SANCTUM_TIER, 5)..": Лучшие друзья навсегда",	-- Abomination Factory (Necrolord) Tier 5
-
 		-- SL Ardenweald/Night Fae
 			[-935] = "Улучшения для обители",						-- Sanctum Upgrades (Night Fae)
 			[-936] = "Формы души",									-- Soulshape Forms (Night Fae)
@@ -798,7 +784,6 @@ for key,value in pairs({
 			[-1003] = "Воинственный дух",							-- Martial Spirit
 			[-1004] = "Дух гордыни",								-- Prideful Spirit
 			[-1005] = "Неукрощенный дух",							-- Untamed Spirit
-
 		-- SL Bastion/Kyrian
 			[-940] = "Совет перерожденных",							-- Ascended Counil
 			[-941] = "Улучшения для обители",						-- Sanctum Upgrades (Kyrian)
@@ -814,7 +799,6 @@ for key,value in pairs({
 			[-966] = "Чертежи и Создание",							-- "Blueprints & Crafting"
 			[-973] = "Верность",									-- Loyalty
 			[-975] = "Смирение",									-- Humility
-
 		-- SL Revendreth/Venthyr
 			[-950] = "Транспортная сеть",							-- Transport Network
 			[-951] = string.format(COVENANT_SANCTUM_TIER, 1)..": Зеркало, зеркало",	-- Tier 1: Mirror, Mirror
@@ -836,10 +820,9 @@ for key,value in pairs({
 			[-969] = "Набор B",										-- Set B
 			[-970] = "Набор C",										-- Set C
 			[-971] = "Набор D",										-- Set D
-
+		-- Black Vault
 			[-1001] = "Черный ящик",
-
-	-- Warrior order hall lore items TODO: localize
+	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",
 		[-2202] = "Чертоги золота и славы",
@@ -852,17 +835,8 @@ for key,value in pairs({
 		[-2209] = "Пророчество Райтаса Провидца",					-- The Prophecy of Rythas the Oracle
 		[-2210] = "Уроки Черного Кулака",							-- The Lessons of the Blacklist
 		[-2211] = "Безрассудный Волунд",							-- Volund's Folly
-
-	-- Other Sets
+	-- T3
 		[-3179] = "Комплект 3-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
-
-	-- Holiday Sets
-		[-3199] = "Наряд гуляки Огненного Солнцеворота",
-	-- Anti-Undead Armor Sets [Scourge Event]
-		[-3218] = "Благословенные регалии искоренения нежити",
-		[-3219] = "Благословенная броня убийцы нежити",
-		[-3220] = "Благословенное облачение убийцы нежити",
-		[-3221] = "Благословенное снаряжение истребителя нежити",
 	-- Island Expedition Sets
 		[-3315] = "Паук-послушник",
 		[-3316] = "Гидраксианский",
@@ -871,7 +845,6 @@ for key,value in pairs({
 		[-3319] = "Злобный рой",
 		[-3340] = "Темный воскреситель",
 		[-3341] = "Темная Гавань",
-
 		[-3343] = "Удушающая Зима",
 		[-3342] = "Падший повелитель рун",
 		[-3320] = "Призрачная ветвь",
@@ -880,7 +853,6 @@ for key,value in pairs({
 		[-3323] = "Танцующий дервиш",
 		[-3324] = "Прочная кора",
 		[-3325] = "Живой огонь",
-
 		[-3344] = "Морозная Клятва",
 		[-3326] = "Лихой мародер",
 		[-3327] = "Наездник на драконе",
@@ -888,7 +860,6 @@ for key,value in pairs({
 		[-3329] = "Мррглурггльский",
 		[-3330] = "Собиратель голов",
 		[-3331] = "Охотник вуду",
-
 		[-3332] = "Пляшущие камни",
 		[-3333] = "Острый плавник",
 		[-3345] = "Освященный повелитель Плети",
@@ -897,7 +868,6 @@ for key,value in pairs({
 		[-3336] = "Гремящие кости",
 		[-3337] = "Сумеречный дракон",
 		[-3347] = "Рубака Черного Зуба",
-
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "Основной облик",
@@ -910,11 +880,9 @@ for key,value in pairs({
 			[-5350] = "Комплекты Пробных персонажей",				-- Class Trial
 
 		[-7776] = "Гуляка Зимнего Покрова",							-- Winter Revelers (for Winter Veil)
-
 	-- Classes
 		[-9951] = GetSpellInfo(148462).." и "..GetSpellInfo(137031),	-- Discipline / Holy Priest Spec
 		[-9952] = GetSpellInfo(234890).." и "..GetSpellInfo(137011), 	-- Guardian / Feral Druid Spec
-
 	------ ACHIEVEMENT HEADER SECTION ------
 		[-10071] = "Видения Н'Зота",
 		[-10072] = "Нападение Н'Зота",
@@ -928,11 +896,9 @@ for key,value in pairs({
 		[-10081] = "Заражённая область",
 		[-10082] = "Захваченная область",
 		[-10083] = "Нападения Ковенантов",							-- Covenant Assaults
-
 		-- Shadowlands Achievement Header
 			-- Achieve 14339 Sub-Criteira
 				[-1433901] = "Осколок кристалла анимы",				-- Anima Crystal Shard
-
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Разбитое зеркало A-1",				-- Broken Mirror
 				[-1433952] = "Разбитое зеркало A-2",				-- Broken Mirror
@@ -2315,6 +2281,17 @@ for key,value in pairs({
 	[280619] = "Старый обитый железом сундук",	-- Old Ironbound Chest
 	[280727] = "Обгоревшая записка",	-- Charred Note
 	[280755] = "Сумка Квентина",	-- Quintin's Satchel
+	[280815] = "|cFFFFFFFFStep 1:|r Письмо от мисс Грэхэм I",	-- |cFFFFFFFFStep 1:|r Letter from Ms. Graham I
+	[280836] = "|cFFFFFFFFStep 2:|r Письмо от мисс Грэхэм II",	-- |cFFFFFFFFStep 2:|r Letter from Ms. Graham II
+	[280837] = "|cFFFFFFFFStep 3:|r Письмо от мисс Грэхэм III",	-- |cFFFFFFFFStep 3:|r Letter from Ms. Graham III
+	[280838] = "|cFFFFFFFFStep 4:|r Письмо от мисс Грэхэм IV",	-- |cFFFFFFFFStep 4:|r Letter from Ms. Graham IV
+	[280842] = "|cFFFFFFFFStep 5:|r Письмо от мисс Грэхэм V",	-- |cFFFFFFFFStep 5:|r Letter from Ms. Graham V
+	[280843] = "|cFFFFFFFFStep 6:|r Письмо от мисс Грэхэм VI",	-- |cFFFFFFFFStep 6:|r Letter from Ms. Graham VI
+	[280844] = "|cFFFFFFFFStep 7:|r Письмо от мисс Грэхэм VII",	-- |cFFFFFFFFStep 7:|r Letter from Ms. Graham VII
+	[280845] = "|cFFFFFFFFStep 8:|r Письмо от мисс Грэхэм",	-- |cFFFFFFFFStep 8:|r Gift for Ms. Graham
+	[280883] = "Рассохшийся под солнцем сундук",	-- Sun-Worn Chest
+	[280886] = "Залитый звездным светом сундук",	-- Star-Touched Chest
+	[280903] = "Потерянная кошачья игрушка",	-- Lost Cat Toy
 	[280951] = "Трофеи Эшвейнов",	-- Ashvane Spoils
 	[280957] = "Сумка Зукаши",	-- Zukashi's Satchel
 	[281092] = "Схрон знахаря",	-- Witch Doctor's Hoard
@@ -2910,6 +2887,44 @@ for key,value in pairs({
 	[9999921] = "Расположение",	-- Placement
 	[9999938] = "Приключения с Ууной",	-- Uuna's World Tour
 	[9999946] = "Призовите Бее'ла",	-- Summon Baa'l
+	[13000000] = "|cFFFFFFFFШаг 1:|r Купите Талисман поиска Истинных Сокровищ",	-- |cFFFFFFFFStep 1:|r Purchase Talisman of True Treasure Tracking
+	[13000001] = "|cFFFFFFFFШаг 2:|r Наденьте Талисман",	-- |cFFFFFFFFStep 2:|r Equip Talisman
+	[13000002] = "|cFFFFFFFFПредмет 1:|r Искрящийся мурлочий лосьон для для кожи",	-- |cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion
+	[13000003] = "Чешуйка сверкающего окуня",	-- Glittergill Glitter
+	[13000004] = "|cFFFFFFFFШаг 1:|r Морская ракушка",	-- |cFFFFFFFFStep 1:|r Seashell
+	[13000005] = "|cFFFFFFFFШаг 2:|r Здоровый зуб большой акулы",	-- |cFFFFFFFFStep 2:|r Cavity-Free Great Shark Tooth
+	[13000006] = "|cFFFFFFFFШаг 3:|r Малек бритвенного угря",	-- |cFFFFFFFFStep 3:|r Razoreel Larva
+	[13000007] = "|cFFFFFFFFШаг 4:|r Откормленная рыба-доктор",	-- |cFFFFFFFFStep 4:|r Well-Fed Doctor Fish
+	[13000008] = "|cFFFFFFFFШаг 5:|r Недавно сброшенный панцирь краба",	-- |cFFFFFFFFStep 5:|r Freshly Molted Crab Skin
+	[13000009] = "|cFFFFFFFFШаг 6:|r Чешуйка сверкающего окуня",	-- |cFFFFFFFFStep 6:|r Glittergill Glitter
+	[13000010] = "Планктон-симбионт",	-- Symbiotic Plankton
+	[13000011] = "|cFFFFFFFFШаг 1:|r Морская ракушка",	-- |cFFFFFFFFStep 1:|r Seashell
+	[13000012] = "|cFFFFFFFFШаг 2:|r Гигантский кусок ногтя гиганта",	-- |cFFFFFFFFStep 2:|r Giant Giant Toenail Clipping
+	[13000013] = "|cFFFFFFFFШаг 3:|r Глаз макруры",	-- |cFFFFFFFFStep 3:|r Makrura Eye
+	[13000014] = "|cFFFFFFFFШаг 4:|r Случайно отрезанный плавник морского конька",	-- |cFFFFFFFFStep 4:|r Accidentally-Severed Seahorse Fin
+	[13000015] = "|cFFFFFFFFШаг 5:|r Яркая чешуя морского змея",	-- |cFFFFFFFFStep 5:|r Shiny Sea Serpent Scale
+	[13000016] = "|cFFFFFFFFШаг 6:|r Планктон-симбионт",	-- |cFFFFFFFFStep 6:|r Symbiotic Plankton
+	[13000017] = "Искрящийся мурлочий лосьон для для кожи",	-- Scintillating Murloc Skin Lotion
+	[13000018] = "|cFFFFFFFFПредмет 2:|r Сочные выделения брюхонога",	-- |cFFFFFFFFItem 2:|r Potent Gastropod Gloop
+	[13000019] = "|cFFFFFFFFШаг 1:|r Морская ракушка",	-- |cFFFFFFFFStep 1:|r Seashell
+	[13000020] = "|cFFFFFFFFШаг 2:|r Непроглядно черное чернило кальмара",	-- |cFFFFFFFFStep 2:|r Vantus Black Squid Ink
+	[13000021] = "|cFFFFFFFFШаг 3:|r Крайне скользкая слизь угря",	-- |cFFFFFFFFStep 3:|r Super Slick Eel Slime
+	[13000022] = "|cFFFFFFFFШаг 4:|r Обросшая камнями раковина моллюска",	-- |cFFFFFFFFStep 4:|r Rock-Encrusted Whelk Shell
+	[13000023] = "|cFFFFFFFFШаг 5:|r Сочные выделения брюхонога",	-- |cFFFFFFFFStep 5:|r Potent Gastropod Gloop
+	[13000024] = "|cFFFFFFFFПредмет 3:|r Пойманный кавитационный пузырек",	-- |cFFFFFFFFItem 3:|r Captured Cavitation Bubble
+	[13000025] = "|cFFFFFFFFШаг 1:|r Морская ракушка",	-- |cFFFFFFFFStep 1:|r Seashell
+	[13000026] = "|cFFFFFFFFШаг 2:|r Очень красивый коралл",	-- |cFFFFFFFFStep 2:|r Very Pretty Coral
+	[13000027] = "|cFFFFFFFFШаг 3:|r Переливающаяся кожа мерцающего ската",	-- |cFFFFFFFFStep 3:|r Iridescent Shimmerray Skin
+	[13000028] = "|cFFFFFFFFШаг 4:|r Сверкающий фрагмент светящейся чешуи",	-- |cFFFFFFFFStep 4:|r Luxurous Luxscale Scale
+	[13000029] = "|cFFFFFFFFШаг 5:|r Пойманный кавитационный пузырек",	-- |cFFFFFFFFStep 5:|r Captured Cavitation Bubble
+	[13000030] = "Купите Монокль из красного кристалла",	-- Purchase Red Crystal Monocle
+	[13000031] = "Монокль из красного кристалла",	-- Red Crystal Monocle
+	[13000032] = "|cFFFFFFFFШаг 3:|r Возьмите Монокль (или не берите!)",	-- |cFFFFFFFFStep 3:|r Pick a Monocle (Or Don't!)
+	[13000033] = "|cFFFFFFFFШаг 4:|r Лучи Сурамара",	-- |cFFFFFFFFStep 4:|r Suramar Beams
+	[13000034] = "|cFFFFFFFFШаг 5:|r Кошачий Код",	-- |cFFFFFFFFStep 5:|r Cat Code
+	[13000035] = "|cFFFFFFFFШаг 6:|r Прыгучий паззл",	-- |cFFFFFFFFStep 6:|r Jumping Puzzle
+	[13000036] = "|cFFFFFFFFШаг 7:|r Пол — это (магическая) лава!",	-- |cFFFFFFFFStep 7:|r Arcane Lava
+	[13000037] = "|cFFFFFFFFШаг 8:|r Коллективный разум",	-- |cFFFFFFFFStep 8:|r Hivemind
 	[1278968766] = "Руна",	-- Rune
 	[1278968767] = "Руна",	-- Rune
 	[1278968768] = "Руна",	-- Rune
@@ -2921,30 +2936,6 @@ do a[key] = value; end
 -- didn't use the same localization for the instance. Sorry.
 local a = L.SAVED_TO_DJ_INSTANCES;
 for key,value in pairs({
-	["The Escape from Durnholde"] = "Старые Предгорья Хилсбрада";
-	["Opening of the Dark Portal"] = "Черные Топи";
-	["Auchindoun: Auchenai Crypts"] = "Аукенайские Гробницы";
-	["Auchindoun: Mana-Tombs"] = "Гробницы Маны";
-	["Auchindoun: Sethekk Halls"] = "Сетеккские Залы";
-	["Auchindoun: Shadow Labyrinth"] = "Темный Лабиринт";
-	["Coilfang: Serpentshrine Cavern"] = "Змеиное Святилище";
-	["Coilfang: The Slave Pens"] = "Узилище";
-	["Coilfang: The Steamvault"] = "Паровое Подземелье";
-	["Coilfang: The Underbog"] = "Нижетопь";
-	["Hellfire Citadel: Ramparts"] = "Бастионы Адского Пламени";
-	["Hellfire Citadel: The Blood Furnace"] = "Кузня Крови";
-	["Hellfire Citadel: The Shattered Halls"] = "Разрушенные Залы";
-	["Tempest Keep: The Arcatraz"] = "Аркатрац";
-	["Tempest Keep: The Botanica"] = "Ботаника";
-	["Tempest Keep: The Mechanar"] = "Механар";
-	["Stormwind Stockade"] = "Тюрьма";
-	["Ahn'Qiraj Temple"] = "Храм Ан'Киража";
-	["Sunken Temple"] = "Храм Атал'Хаккар";
-	["The Sunwell"] = "Плато Солнечного Колодца";
-	["Tempest Keep"] = "Око";
-	["The Violet Hold"] = "Аметистовая Крепость";
-	["Magister's Terrace"] = "Терасса Магистров";
-	["Violet Hold"] = "Аметистовая Крепость";
 })
 do a[key] = value; end
 

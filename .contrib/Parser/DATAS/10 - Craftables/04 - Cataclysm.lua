@@ -75,7 +75,7 @@ _.Craftables =
 				i(55041),	-- Hardened Obsidium Shield
 				i(55042),	-- Stormforged Shield
 			}),
-			n(-320, {		-- Head
+			n(HEAD, {
 				un(REMOVED_FROM_GAME, i(55077)),	-- Bloodied Pyrium Helm
 				un(REMOVED_FROM_GAME, i(70015)),	-- Bloodthirsty Ornate Pyrium Helm
 				un(REMOVED_FROM_GAME, i(70007)),	-- Bloodthirsty Pyrium Helm
@@ -86,7 +86,7 @@ _.Craftables =
 				i(75129),	-- Vicious Ornate Pyrium Helm
 				i(75126),	-- Vicious Pyrium Helm
 			}),
-			n(-321, {		-- Shoulders
+			n(SHOULDER, {
 				un(REMOVED_FROM_GAME, i(55075)),	-- Bloodied Pyrium Shoulders
 				un(REMOVED_FROM_GAME, i(70017)),	-- Bloodthirsty Ornate Pyrium Shoulders
 				un(REMOVED_FROM_GAME, i(70009)),	-- Bloodthirsty Pyrium Shoulders
@@ -97,7 +97,7 @@ _.Craftables =
 				i(75134),	-- Vicious Ornate Pyrium Shoulders
 				i(75119),	-- Vicious Pyrium Shoulders
 			}),
-			n(-323, {		-- Chest
+			n(CHEST, {
 				un(REMOVED_FROM_GAME, i(55078)),	-- Bloodied Pyrium Breastplate
 				un(REMOVED_FROM_GAME, i(70012)),	-- Bloodthirsty Ornate Pyrium Breastplate
 				un(REMOVED_FROM_GAME, i(70004)),	-- Bloodthirsty Pyrium Breastplate
@@ -111,7 +111,7 @@ _.Craftables =
 				i(75128),	-- Vicious Ornate Pyrium Breastplate
 				i(75135),	-- Vicious Pyrium Breastplate
 			}),
-			n(-327, {		-- Hands
+			n(HANDS, {
 				un(REMOVED_FROM_GAME, i(55072)),	-- Bloodied Pyrium Gauntlets
 				un(REMOVED_FROM_GAME, i(70014)),	-- Bloodthirsty Ornate Pyrium Gauntlets
 				un(REMOVED_FROM_GAME, i(70006)),	-- Bloodthirsty Pyrium Gauntlets
@@ -125,7 +125,7 @@ _.Craftables =
 				i(75121),	-- Vicious Ornate Pyrium Gauntlets
 				i(75122),	-- Vicious Pyrium Gauntlets
 			}),
-			n(-326, {		-- Wrist
+			n(WRIST, {
 				un(REMOVED_FROM_GAME, i(55071)),	-- Bloodied Pyrium Bracers
 				un(REMOVED_FROM_GAME, i(70019)),	-- Bloodthirsty Ornate Pyrium Bracers
 				un(REMOVED_FROM_GAME, i(70011)),	-- Bloodthirsty Pyrium Bracers
@@ -139,7 +139,7 @@ _.Craftables =
 				i(75125),	-- Vicious Ornate Pyrium Bracers
 				i(75124),	-- Vicious Pyrium Bracers
 			}),
-			n(-328, {		-- Waist
+			n(WAIST, {
 				un(REMOVED_FROM_GAME, i(55073)),	-- Bloodied Pyrium Belt
 				un(REMOVED_FROM_GAME, i(70018)),	-- Bloodthirsty Ornate Pyrium Belt
 				un(REMOVED_FROM_GAME, i(70010)),	-- Bloodthirsty Pyrium Belt
@@ -153,7 +153,7 @@ _.Craftables =
 				i(75118),	-- Vicious Ornate Pyrium Belt
 				i(75123),	-- Vicious Pyrium Belt
 			}),
-			n(-329, {		-- Legs
+			n(LEGS, {
 				un(REMOVED_FROM_GAME, i(55076)),	-- Bloodied Pyrium Legguards
 				un(REMOVED_FROM_GAME, i(70016)),	-- Bloodthirsty Ornate Pyrium Legguards
 				un(REMOVED_FROM_GAME, i(70008)),	-- Bloodthirsty Pyrium Legguards
@@ -167,7 +167,7 @@ _.Craftables =
 				i(75133),	-- Vicious Ornate Pyrium Legguards
 				i(75136),	-- Vicious Pyrium Legguards
 			}),
-			n(-330, {		-- Feet
+			n(FEET, {
 				un(REMOVED_FROM_GAME, i(55074)),	-- Bloodied Pyrium Boots
 				un(REMOVED_FROM_GAME, i(70013)),	-- Bloodthirsty Ornate Pyrium Boots
 				un(REMOVED_FROM_GAME, i(70005)),	-- Bloodthirsty Pyrium Boots
@@ -237,7 +237,7 @@ _.Craftables =
 				i(40727),	-- Gnomish Gravity Well*
 				i(60854),	-- Loot-A-Rang*
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(71077),	-- Extreme-Impact Hole Puncher*
 				i(59598),	-- Finely-Tuned Throat Needler*
 				i(59367),	-- Kickback 5000*
@@ -314,7 +314,7 @@ _.Craftables =
 				i(52492),	-- Carnelian Spikes
 				i(52493),	-- The Perforator
 			}),
-			n(-320, {		-- Head
+			n(HEAD, {
 				i(52487, {	-- Jeweler's Amber Monocle
 					["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 				}),
@@ -374,7 +374,7 @@ _.Craftables =
 				i(56503),	-- Twilight Leg Armor
 				i(56517),	-- Heavy Savage Armor Kit
 			}),
-			n(-322, {	-- Cloak
+			n(BACK, {
 				un(REMOVED_FROM_GAME, i(70068)),	-- Bloodthirsty Fur Cloak
 				un(REMOVED_FROM_GAME, i(70069)),	-- Bloodthirsty Hide Cloak
 				i(56518),	-- Cloak of Beasts
@@ -539,7 +539,7 @@ _.Craftables =
 				i(54447),	-- Enchanted Spellthread
 				i(54449),	-- Ghostly Spellthread
 			}),
-			n(-323, {		-- Chest
+			n(CHEST, {
 				un(REMOVED_FROM_GAME, i(70060)),	-- Bloodthirsty Embersilk Robe
 				un(REMOVED_FROM_GAME, i(70058)),	-- Bloodthirsty Fireweave Robe
 				i(54475),			-- Deathsilk Robe
@@ -549,11 +549,11 @@ _.Craftables =
 				i(75093),			-- Vicious Embersilk Robe
 				i(75088),			-- Vicious Fireweave Robe
 			}),
-			n(-322, {		-- Cloaks
+			n(BACK, {
 				un(REMOVED_FROM_GAME, i(70070)),	-- Bloodthirsty Embersilk Cape
 				i(75065),			-- Vicious Embersilk Cape
 			}),
-			n(-330, {		-- Feet
+			n(FEET, {
 				i(69954),	-- Boots of the Black Flame
 				un(REMOVED_FROM_GAME, i(70061)),	-- Bloodthirsty Embersilk Boots
 				un(REMOVED_FROM_GAME, i(70053)),	-- Bloodthirsty Fireweave Boots
@@ -565,7 +565,7 @@ _.Craftables =
 				i(75095),			-- Vicious Embersilk Boots
 				i(75087),			-- Vicious Fireweave Boots
 			}),
-			n(-327, {		-- Hands
+			n(HANDS, {
 				un(REMOVED_FROM_GAME, i(70065)),	-- Bloodthirsty Embersilk Gloves
 				un(REMOVED_FROM_GAME, i(70056)),	-- Bloodthirsty Fireweave Gloves
 				i(54478),			-- Deathsilk Gloves
@@ -577,7 +577,7 @@ _.Craftables =
 				i(75070),			-- Vicious Embersilk Gloves
 				i(75063),			-- Vicious Fireweave Gloves
 			}),
-			n(-320, {		-- Head
+			n(HEAD, {
 				un(REMOVED_FROM_GAME, i(70067)),	-- Bloodthirsty Embersilk Cowl
 				un(REMOVED_FROM_GAME, i(70055)),	-- Bloodthirsty Fireweave Cowl
 				i(54476),			-- Deathsilk Cowl
@@ -587,7 +587,7 @@ _.Craftables =
 				i(75073),			-- Vicious Embersilk Cowl
 				i(75062),			-- Vicious Fireweave Cowl
 			}),
-			n(-329, {		-- Legs
+			n(LEGS, {
 				un(REMOVED_FROM_GAME, i(70066)),	-- Bloodthirsty Embersilk Pants
 				un(REMOVED_FROM_GAME, i(70057)),	-- Bloodthirsty Fireweave Pants
 				i(54505),			-- Breeches of Mended Nightmares
@@ -601,7 +601,7 @@ _.Craftables =
 				i(75082),			-- Vicious Fireweave Pants
 				i(71981),			-- World Mender's Pants
 			}),
-			n(-321, {		-- Shoulders
+			n(SHOULDER, {
 				un(REMOVED_FROM_GAME, i(70064)),	-- Bloodthirsty Embersilk Shoulders
 				un(REMOVED_FROM_GAME, i(70059)),	-- Bloodthirsty Fireweave Shoulders
 				i(54474),			-- Deathsilk Shoulders
@@ -611,7 +611,7 @@ _.Craftables =
 				i(75064),			-- Vicious Embersilk Shoulders
 				i(75091),			-- Vicious Fireweave Shoulders
 			}),
-			n(-328, {		-- Waist
+			n(WAIST, {
 				i(54504),			-- Belt of the Depths
 				un(REMOVED_FROM_GAME, i(70062)),	-- Bloodthirsty Embersilk Belt
 				un(REMOVED_FROM_GAME, i(70052)),	-- Bloodthirsty Fireweave Belt
@@ -623,7 +623,7 @@ _.Craftables =
 				i(75096),			-- Vicious Embersilk Belt
 				i(75086),			-- Vicious Fireweave Belt
 			}),
-			n(-326, {		-- Wrist
+			n(WRIST, {
 				un(REMOVED_FROM_GAME, i(70063)),	-- Bloodthirsty Embersilk Bracers
 				un(REMOVED_FROM_GAME, i(70054)),	-- Bloodthirsty Fireweave Bracers
 				i(71989),			-- Bracers of Unconquered Power

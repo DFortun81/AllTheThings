@@ -335,7 +335,7 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9981, {	-- Draenor
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(107644),	-- Napmaster's Sleep Mask
 		}),
 	}),

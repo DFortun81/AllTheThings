@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9956, {	-- Quests
+	n(QUESTS, {
 		n(-9978, {	-- Northrend
 			ach(561),		-- D.E.H.T.A's Little P.I.T.A. (Borean Tundra)
 			ach(1596, {		-- Guru of Drakuru

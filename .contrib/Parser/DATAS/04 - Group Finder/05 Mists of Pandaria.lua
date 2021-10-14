@@ -102,7 +102,7 @@ _.GroupFinder =
 			},
 		}),
 		i(98133, {	-- Greater Cache of Treasures
-			["description"] = "Rewarded for completing a random Mists of Pandaria normal scenario (unknown level bracket).",
+			--["description"] = "Rewarded for completing a random Mists of Pandaria normal scenario (unknown level bracket).",
 			["timeline"] = {
 				"added 5.3.0.16781",
 				"removed 9.0",	-- no longer available to queue random scenarios post 9.0 squish
@@ -745,10 +745,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(93120),	-- Lightning Rod Pauldrons
 				i(93121),	-- Lightning Rod Girdle
 			}),
-			n(-322, {	-- Cloak
+			n(BACK, {
 				i(93113),	-- Lightning Rod Drape
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(93145),	-- Scavenged Pandaren Sword
 			}),
 		}),

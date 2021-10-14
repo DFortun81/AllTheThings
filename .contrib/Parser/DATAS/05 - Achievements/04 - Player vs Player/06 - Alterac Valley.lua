@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(-9958, {	-- Player vs Player
+	pvp(n(PVP, {
 		n(-9987, {	-- Alterac Valley
 			["maps"] = { 91 },	-- Alterac Valley
 			["g"] = {

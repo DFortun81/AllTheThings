@@ -6,8 +6,8 @@ _.PVP =
 {
 	pvp(n(-10052, {	-- Battle for Azeroth
 		n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
-			n(-659, {	-- Aspirant PvP Gear
-				n(-319, {	-- Weapons
+			n(PVP_ASPIRANT, {
+				n(WEAPONS, {
 					i(162885),	-- Dread Aspirant's Barrier (A)
 					i(162890),	-- Dread Aspirant's Bonegrinder (A)
 					i(166729),	-- Dread Aspirant's Cleaver (A)
@@ -115,7 +115,7 @@ _.PVP =
 					i(162953),	-- Dread Aspirant's Plate Pauldrons (H)
 					i(162937),	-- Dread Aspirant's Plate Warboots (H)
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(163724, {	-- Dread Aspirant's Cape (A, plate)
 						["description"] = "This item is only obtainable via the Dread Aspirant's Plate Ensemble.",
 					}),
@@ -141,7 +141,7 @@ _.PVP =
 						["description"] = "This item is only obtainable via the Dread Aspirant's Leather Ensemble.",
 					}),
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					un(REMOVED_FROM_GAME, i(162896)),	-- Dread Aspirant's Band
 					un(REMOVED_FROM_GAME, i(162865)),	-- Dread Aspirant's Ring
 					un(REMOVED_FROM_GAME, i(162965)),	-- Dread Aspirant's Seal
@@ -154,8 +154,8 @@ _.PVP =
 					i(162897),	-- Dread Aspirant's Medallion
 				}),
 			}),
-			n(-661, {	-- Gladiator PvP Gear
-				n(-319, {	-- Weapons
+			n(PVP_GLADIATOR, {
+				n(WEAPONS, {
 					i(161698),	-- Dread Gladiator's Barrier (A)
 					i(161703),	-- Dread Gladiator's Bonegrinder (A)
 					i(166334),	-- Dread Gladiator's Cleaver (A)
@@ -327,7 +327,7 @@ _.PVP =
 					i(161770),	-- Dread Gladiator's Plate Vambraces (H)
 					i(161637),	-- Dread Gladiator's Plate Warboots (H)
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(163732, {	-- Dread Gladiator's Cape (A)
 						["description"] = "This item is only obtainable via the Dread Gladiator's Plate Ensemble.",
 					}),
@@ -353,7 +353,7 @@ _.PVP =
 						["description"] = "This item is only obtainable via the Dread Gladiator's Cloth Ensemble.",
 					}),
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					un(REMOVED_FROM_GAME, i(161672)),	-- Dread Gladiator's Band
 					un(REMOVED_FROM_GAME, i(161671)),	-- Dread Gladiator's Ring
 					un(REMOVED_FROM_GAME, i(161899)),	-- Dread Gladiator's Seal
@@ -388,8 +388,8 @@ _.PVP =
 			}),
 		}),
 		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
-			n(-659, {	-- Aspirant PvP Gear
-				n(-319, {	-- Weapons
+			n(PVP_ASPIRANT, {
+				n(WEAPONS, {
 					i(165206),	-- Sinister Aspirant's Bonecracker (A)
 					i(166478),	-- Sinister Aspirant's Greatsword (A)
 					i(165208),	-- Sinister Aspirant's Longbow (A)
@@ -487,7 +487,7 @@ _.PVP =
 					i(165090),	-- Sinister Aspirant's Plate Pauldrons (H)
 					i(165087),	-- Sinister Aspirant's Plate Warboots (H)
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(165216, {	-- Sinister Aspirant's Cape (A)
 						["description"] = "This item is only obtainable via the Sinister Aspirant's Plate Ensemble.",
 					}),
@@ -513,7 +513,7 @@ _.PVP =
 						["description"] = "This item is only obtainable via the Sinister Aspirant's Cloth Ensemble.",
 					}),
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					un(REMOVED_FROM_GAME, i(165219)),	-- Sinister Aspirant's Band
 					un(REMOVED_FROM_GAME, i(165217)),	-- Sinister Aspirant's Ring
 				}),
@@ -524,8 +524,8 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(165223)),	-- Sinister Aspirant's Badge
 				}),
 			}),
-			n(-661, {	-- Gladiator PvP Gear
-				n(-319, {	-- Weapons
+			n(PVP_GLADIATOR, {
+				n(WEAPONS, {
 					i(165041),	-- Sinister Gladiator's Bonecracker (A)
 					i(166479),	-- Sinister Gladiator's Greatsword (A)
 					i(165043),	-- Sinister Gladiator's Longbow (A)
@@ -735,7 +735,7 @@ _.PVP =
 					i(164805),	-- Sinister Gladiator's Plate Warboots (H)
 					i(166593),	-- Sinister Gladiator's Plate Warhelm (H)
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(165051, {	-- Sinister Gladiator's Cape (A)
 						["description"] = "This item is only obtainable via the Sinister Gladiator's Plate Ensemble.",
 					}),
@@ -761,7 +761,7 @@ _.PVP =
 						["description"] = "This item is only obtainable via the Sinister Gladiator's Cloth Ensemble.",
 					}),
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					un(REMOVED_FROM_GAME, i(165053)),	-- Sinister Gladiator's Band
 					un(REMOVED_FROM_GAME, i(165052)),	-- Sinister Gladiator's Ring
 					un(REMOVED_FROM_GAME, i(165054)),	-- Sinister Gladiator's Signet
@@ -797,8 +797,8 @@ _.PVP =
 			}),
 		}),
 		n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
-			n(-659, {	-- Aspirant PvP Gear
-				n(-319, {	-- Weapons
+			n(PVP_ASPIRANT, {
+				n(WEAPONS, {
 					i(169756),	-- Notorious Aspirant's Blade (A)
 					i(169754),	-- Notorious Aspirant's Cutter (A)
 					i(169748),	-- Notorious Aspirant's Gavel (A)
@@ -902,7 +902,7 @@ _.PVP =
 					i(167486),	-- Notorious Aspirant's Plate Pauldrons (H)
 					i(167483),	-- Notorious Aspirant's Plate Warboots (H)
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(167536, {	-- Notorious Aspirant's Cape (A)
 						["description"] = "This item is only obtainable via the Notorious Aspirant's Plate Ensemble.",
 					}),
@@ -928,7 +928,7 @@ _.PVP =
 						["description"] = "This item is only obtainable via the Notorious Aspirant's Cloth Ensemble.",
 					}),
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					un(REMOVED_FROM_GAME, i(167523)),	-- Notorious Aspirant's Ring
 					un(REMOVED_FROM_GAME, i(167524)),	-- Notorious Aspirant's Band
 				}),
@@ -939,8 +939,8 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(167525)),	-- Notorious Aspirant's Medallion
 				}),
 			}),
-			n(-661, {	-- Gladiator PvP Gear
-				n(-319, {	-- Weapons
+			n(PVP_GLADIATOR, {
+				n(WEAPONS, {
 					i(169720),	-- Notorious Gladiator's Bonegrinder (A)
 					i(169712),	-- Notorious Gladiator's Chopper (A)
 					i(171160),	-- Notorious Gladiator's Claw (A)
@@ -1184,7 +1184,7 @@ _.PVP =
 					i(167388),	-- Notorious Gladiator's Plate Warhelm (H)
 					i(167452),	-- Notorious Gladiator's Shoulderplates (H)
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(167373, {	-- Notorious Gladiator's Cape (A)
 						["description"] = "This item is only obtainable via the Notorious Gladiator's Plate Ensemble.",
 					}),
@@ -1210,7 +1210,7 @@ _.PVP =
 						["description"] = "This item is only obtainable via the Notorious Gladiator's Leather Ensemble.",
 					}),
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					un(REMOVED_FROM_GAME, i(167375)),	-- Notorious Gladiator's Band
 					un(REMOVED_FROM_GAME, i(167374)),	-- Notorious Gladiator's Ring
 					un(REMOVED_FROM_GAME, i(167376)),	-- Notorious Gladiator's Signet
@@ -1246,8 +1246,8 @@ _.PVP =
 			}),
 		}),
 		n(-692, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
-			n(-659, {	-- Aspirant PvP Gear
-				n(-319, {	-- Weapons
+			n(PVP_ASPIRANT, {
+				n(WEAPONS, {
 					i(172880),	-- Corrupted Aspirant's Chopper (A)
 					i(174013),	-- Corrupted Aspirant's Claw (A)
 					i(172878),	-- Corrupted Aspirant's Cleaver (A)
@@ -1361,7 +1361,7 @@ _.PVP =
 					i(172809),	-- Corrupted Aspirant's Plate Pauldrons (H)
 					i(172806),	-- Corrupted Aspirant's Plate Warboots (H)
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(172857),	-- Corrupted Aspirant's Cape (A)
 					i(172856),	-- Corrupted Aspirant's Drape (A)
 					i(172854),	-- Corrupted Aspirant's Shawl (A)
@@ -1369,7 +1369,7 @@ _.PVP =
 					i(172852),	-- Corrupted Aspirant's Drape (H)
 					i(172850),	-- Corrupted Aspirant's Shawl (H)
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(172845),	-- Corrupted Aspirant's Band
 					i(172844),	-- Corrupted Aspirant's Ring
 				}),
@@ -1380,8 +1380,8 @@ _.PVP =
 					i(172846),	-- Corrupted Aspirant's Medallion
 				}),
 			}),
-			n(-661, {	-- Gladiator PvP Gear
-				n(-319, {	-- Weapons
+			n(PVP_GLADIATOR, {
+				n(WEAPONS, {
 					i(172754),	-- Corrupted Gladiator's Chopper (A)
 					i(172778),	-- Corrupted Gladiator's Claw (A)
 					i(172770),	-- Corrupted Gladiator's Cleaver (A)
@@ -1608,11 +1608,11 @@ _.PVP =
 					i(172677),	-- Corrupted Gladiator's Plate Warhelm (H)
 				}),
 				-- Only via the Duelist Achievement obtainable.
-				--[[n(-322, {	-- Back
+				--[[n(BACK, {
 					i(172671),	-- Corrupted Gladiator's Cloak (A)
 					i(172670),	-- Corrupted Gladiator's Cloak (H)
 				}),--]]
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(172664),	-- Corrupted Gladiator's Band
 					i(172663),	-- Corrupted Gladiator's Ring
 					i(172665),	-- Corrupted Gladiator's Signet
@@ -1730,7 +1730,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(166969),	-- Dread Gladiator's Plate Armguards
 				}),
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(159894),	-- Honorable Combatant's Striker
 				i(159895),	-- Honorable Combatant's Cestus
 				i(161973),	-- Honorable Combatant's Striker
@@ -1742,7 +1742,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(165036),	-- Sinister Gladiator's Halberd (A)
 				i(165201),	-- Sinister Aspirant's Halberd (A)
 			}),
@@ -1782,7 +1782,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 		n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(167522),	-- Notorious Aspirant's Shield Wall (A)
 				i(167521),	-- Notorious Aspirant's Shield Wall (H)
 				i(169725),	-- Notorious Gladiator's Bonegrinder (A)
@@ -1823,7 +1823,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(172693),	-- Corrupted Gladiator's Plate Skullguard (H)
 					i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
 				}),
-				n(-322, {	-- Cloaks
+				n(BACK, {
 					i(172655),	-- Corrupted Gladiator's Shawl
 					i(172656),	-- Corrupted Gladiator's Greatcloak
 					i(172657),	-- Corrupted Gladiator's Drape

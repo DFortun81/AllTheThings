@@ -4,7 +4,7 @@
 
 _.Mounts =
 {
-	n(-31, {	-- Promotions
+	n(PROMOTIONS, {
 		un(REMOVED_FROM_GAME, i(43599)),	-- Big Blizzard Bear
 		un(REMOVED_FROM_GAME, i(118515)),	-- Cindermane Charger
 		un(REMOVED_FROM_GAME, i(109013)),	-- Dread Raven
@@ -13,13 +13,14 @@ _.Mounts =
 		un(BLIZZARD_BALANCE, i(173297)),	-- Explorer's Dunetrekker
 		un(BLIZZARD_BALANCE, i(173299)),	-- Explorer's Jungle Hopper
 		un(BLIZZARD_BALANCE, i(153540)),	-- Gilded Ravasaur
-		i(98618),			-- Hearthsteed
+		i(98618),							-- Hearthsteed
 		un(REMOVED_FROM_GAME, i(83086)),	-- Heart of the Nightwing
 		un(BLIZZARD_BALANCE, i(128425)),	-- Illidari Felstalker
 		un(BLIZZARD_BALANCE, i(85870)),		-- Imperial Quilen
 		un(BLIZZARD_BALANCE, i(164571)),	-- Meat Wagon
 		un(REMOVED_FROM_GAME, i(151617)),	-- Orgrimmar Interceptor Mount
 		un(REMOVED_FROM_GAME, i(143631)),	-- Primal Flamesaber
+		mount(356488),						-- Sarge's Tale
 		un(BLIZZARD_BALANCE, i(153539)),	-- Seabraid Stallion
 		un(BLIZZARD_BALANCE, mount(341821)),	-- Snowstorm
 		un(REMOVED_FROM_GAME, i(76889)),	-- Spectral Gryphon

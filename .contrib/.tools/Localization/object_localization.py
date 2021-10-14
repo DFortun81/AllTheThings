@@ -85,6 +85,8 @@ async def get_localized_obj_name_flavor(
 async def get_localized_obj_name(
     session: ClientSession, obj_id: int, lang_code: LangCode = LangCode.ENGLISH
 ) -> tuple[str, GameFlavor]:
+    if obj_id >= CUSTOM_OBJECTS_CONST:
+        return "", GameFlavor.RETAIL
     game_flavor = GameFlavor.RETAIL
     localized_obj_name = ""
     for game_flavor in GameFlavor:
@@ -113,9 +115,6 @@ def get_todo_lines(lines: list[str]):
                         ind += 1
                         continue
                     obj_id = int(match.group())
-                    if obj_id > CUSTOM_OBJECTS_CONST:  # custom objects
-                        ind += 1
-                        continue
                     todo_dict[ind] = obj_id
                 ind += 1
             break
@@ -294,7 +293,7 @@ async def get_objects_info(session: ClientSession, filename: str):
                     continue
                 obj_name = re.findall('"([^"]*)"', line)[0]
                 # new entry, need to get the name, this only happens in enUS
-                if len(obj_name) == 0 and obj_id < CUSTOM_OBJECTS_CONST:
+                if len(obj_name) == 0:
                     obj_name = await get_localized_obj_name_flavor(session, obj_id)
                     line = re.sub('".*"', f'"{obj_name}"', line)
                     logging.info(f"New object {obj_id}: {obj_name}")

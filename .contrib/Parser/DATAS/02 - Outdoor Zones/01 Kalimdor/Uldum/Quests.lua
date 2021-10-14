@@ -902,7 +902,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(28255),	-- Vhat's Next?
 	}),
 	n(-9979, {	-- Cataclysm
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(65878),	-- Charbelching Wand
 		}),
 	}),

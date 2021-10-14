@@ -198,11 +198,6 @@ _.Zones =
 					},
 				}),
 			}),
-			n(-222, {	-- Treasure Hunter
-				o(226956, {	-- Mysterious Fruit Pile
-					i(110505),	-- Mesmerizing Fruit Hat [Not a toy, but should be.]
-				}),
-			}),
 		}),
 	}),
 };

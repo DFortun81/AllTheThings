@@ -42,10 +42,10 @@ _.Zones =
 				i(134269),	-- Arcane Defender's Belt
 				i(134271),	-- Arcane Defender's Pants
 				i(134273),	-- Arcane Defender's Boots
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(140024),	-- Ley-Charged Band
 				}),
-				n(-384, {	-- Neck
+				n(NECK, {
 					i(139990),	-- Inspector's Pendant
 					i(134275),	-- Nightborne's Jeweled Necklace
 				}),

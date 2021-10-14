@@ -474,7 +474,7 @@ _.Zones =
 							},
 							]]--
 							["g"] = {
-								n(-320, {	-- Head
+								n(HEAD, {
 									i(164367),	-- Plundered Blue Captain's Hat
 									i(164368),	-- Plundered Crimson Captain's Hat
 									i(164369),	-- Plundered Pirate Admiral's Bicorne
@@ -514,7 +514,7 @@ _.Zones =
 									i(163800),	-- Poro
 									i(163807),	-- Tinder Pup — may need to be moved to CBD section
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(163925),	-- Old Jon's Left Hand
 									i(169290),	-- Plundered Black Tooth Face-Splitter
 									i(164334),	-- Plundered Blade of Northern Kings
@@ -579,7 +579,7 @@ _.Zones =
 									i(164282),	-- Plundered Jadefury Shield
 									i(164266),	-- Plundered Totem Barrier
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(164337),	-- Plundered Amber Slinger
 									i(164267),	-- Plundered Biting Shot Longbow
 									i(164269),	-- Plundered Death Chatter Wand
@@ -643,7 +643,7 @@ _.Zones =
 									i(166488),	-- Rotting Ghoul
 									i(163797),	-- Scuttle
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(163927),	-- Brinebeard's Shanker — may need to be moved to CBD section
 									i(164364),	-- Plundered Carapace Linked Longsword
 									i(164366),	-- Plundered Codex of Otherworldly Vision
@@ -720,7 +720,7 @@ _.Zones =
 									i(166499),	-- Thunderscale Whelpling
 									i(163807),	-- Tinder Pup — may need to be moved to CBD section
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(163927),	-- Brinebeard's Shanker — may need to be moved to CBD section
 									i(169290),	-- Plundered Black Tooth Face-Splitter
 									i(164334),	-- Plundered Blade of Northern Kings
@@ -746,7 +746,7 @@ _.Zones =
 							},
 							]]--
 							["g"] = {
-								n(-320, {	-- Head
+								n(HEAD, {
 									i(164367),	-- Plundered Blue Captain's Hat
 									i(164368),	-- Plundered Crimson Captain's Hat
 									i(164369),	-- Plundered Pirate Admiral's Bicorne
@@ -782,7 +782,7 @@ _.Zones =
 									i(163799),	-- Barnaby
 									i(163798),	-- Captain Nibs
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(163927),	-- Brinebeard's Shanker — may need to be moved to CBD section
 									i(169290),	-- Plundered Black Tooth Face-Splitter
 									i(164334),	-- Plundered Blade of Northern Kings
@@ -878,7 +878,7 @@ _.Zones =
 								n(-332, {	-- Shields
 									i(164282),	-- Plundered Jadefury Shield
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(168644),	-- Converted Carrot Carbine
 									i(164337),	-- Plundered Amber Slinger
 									i(164338),	-- Plundered Ambershaper's Egg
@@ -952,7 +952,7 @@ _.Zones =
 									i(164297),	-- Plundered Beacon-Light Bulwark
 									i(164271),	-- Plundered Torga Blessed Bulwark
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(164301),	-- Plundered Barb-Edged Dagger
 									i(164270),	-- Plundered Berserker's Poleaxe
 									i(164364),	-- Plundered Carapace Linked Longsword
@@ -1011,7 +1011,7 @@ _.Zones =
 									i(164374),	-- Magic Monkey Banana
 									i(163795),	-- Oomgut Ritual Drum
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(164267),	-- Plundered Biting Shot Longbow
 									i(164307),	-- Plundered Crag Basher
 									i(164314),	-- Plundered Hozen Chieftain's Stave
@@ -1058,7 +1058,7 @@ _.Zones =
 								n(-160, {	-- Mounts
 									i(163585),	-- Surf Jelly
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(163927),	-- Brinebeard's Shanker — may need to be moved to CBD section
 									i(164320),	-- Plundered Bear-Carved Fists
 									i(164319),	-- Plundered Keeper's Stave
@@ -1098,7 +1098,7 @@ _.Zones =
 									i(163823),	-- Coldlight Surfrunner
 									i(163821),	-- Juvenile Brineshell
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(164329),	-- Plundered Coilpoint Scepter
 									i(164331),	-- Plundered Coral-Scale Claw
 									i(164327),	-- Plundered Fury-Fin Axe
@@ -1172,7 +1172,7 @@ _.Zones =
 									i(163813),	-- Playful Frostkin
 									i(166488),	-- Rotting Ghoul
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(164341),	-- Plundered Firegeode Mace
 									i(164340),	-- Plundered Embercrystal Staff
 									i(164346),	-- Plundered Frost Scepter
@@ -1210,7 +1210,7 @@ _.Zones =
 								n(-332, {	-- Shields
 									i(164282),	-- Plundered Jadefury Shield
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(164337),	-- Plundered Amber Slinger
 									i(164267),	-- Plundered Biting Shot Longbow
 									i(164307),	-- Plundered Crag Basher

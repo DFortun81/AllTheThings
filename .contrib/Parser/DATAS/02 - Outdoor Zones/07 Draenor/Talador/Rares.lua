@@ -294,9 +294,8 @@ _.Zones =
 						i(116112),	-- Ra'kahn's Bite
 					},
 				}),
-				n(-72,   {	-- Sargerei War Council
+				v(37337,   {	-- Sargerei War Council
 					["description"] = "Patrols the area in roughly a circle.",
-					["questID"] = 37337,
 					["isDaily"] = true,
 					["crs"] = {
 						88071,	-- Strategist Ankor

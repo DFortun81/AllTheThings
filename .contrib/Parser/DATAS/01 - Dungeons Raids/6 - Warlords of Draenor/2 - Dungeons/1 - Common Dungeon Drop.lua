@@ -11,7 +11,7 @@ local SKY = -145;
 local BLOOM = -146;
 local UBRS = -147;
 
-_.Instances = { 
+_.Instances = {
 	tier(WOD_TIER, {
 		n(-23, {
 			["description"] = "tbd",
@@ -75,7 +75,7 @@ _.Instances = {
 						i(109830),	-- Bloodfeather Girdle
 						i(109831),	-- Crystalbinder Belt
 						i(109832),	-- Leafmender Girdle
-						i(109836),	-- Lavalink Girdle							
+						i(109836),	-- Lavalink Girdle
 						i(109843),	-- Morningscale Waistguard
 						i(109835),	-- Rockhide Links
 						i(109834),	-- Sharpeye Belt
@@ -96,7 +96,7 @@ _.Instances = {
 							i(109830),	-- Bloodfeather Girdle
 							i(109831),	-- Crystalbinder Belt
 							i(109832),	-- Leafmender Girdle
-							i(109836),	-- Lavalink Girdle							
+							i(109836),	-- Lavalink Girdle
 							i(109843),	-- Morningscale Waistguard
 							i(109835),	-- Rockhide Links
 							i(109834),	-- Sharpeye Belt
@@ -119,7 +119,7 @@ _.Instances = {
 						i(109810),	-- Bloodfeather Leggings
 						i(109811),	-- Crystalbinder Legwraps
 						i(109812),	-- Leafmender Legwraps
-						i(109816),	-- Lavalink Legguards							
+						i(109816),	-- Lavalink Legguards
 						i(109817),	-- Morningscale Leggings
 						i(109815),	-- Rockhide Leggings
 						i(109814),	-- Sharpeye Legguards
@@ -140,7 +140,7 @@ _.Instances = {
 							i(109810),	-- Bloodfeather Leggings
 							i(109811),	-- Crystalbinder Legwraps
 							i(109812),	-- Leafmender Legwraps
-							i(109816),	-- Lavalink Legguards							
+							i(109816),	-- Lavalink Legguards
 							i(109817),	-- Morningscale Leggings
 							i(109815),	-- Rockhide Leggings
 							i(109814),	-- Sharpeye Legguards
@@ -163,7 +163,7 @@ _.Instances = {
 						i(109885),	-- Bloodfeather Chestwrap
 						i(109886),	-- Crystalbinder Chestguard
 						i(109897),	-- Leafmender Robes
-						i(109890),	-- Lavalink Ringmail							
+						i(109890),	-- Lavalink Ringmail
 						i(109891),	-- Morningscale Chestguard
 						i(109889),	-- Rockhide Ringmail
 						i(109888),	-- Sharpeye Chestguard
@@ -184,7 +184,7 @@ _.Instances = {
 							i(109885),	-- Bloodfeather Chestwrap
 							i(109886),	-- Crystalbinder Chestguard
 							i(109897),	-- Leafmender Robes
-							i(109890),	-- Lavalink Ringmail							
+							i(109890),	-- Lavalink Ringmail
 							i(109891),	-- Morningscale Chestguard
 							i(109889),	-- Rockhide Ringmail
 							i(109888),	-- Sharpeye Chestguard
@@ -207,7 +207,7 @@ _.Instances = {
 						i(109788),	-- Bloodfeather Treads
 						i(109789),	-- Crystalbinder Sandals
 						i(109798),	-- Leafmender Sandals
-						i(109800),	-- Lavalink Stompers							
+						i(109800),	-- Lavalink Stompers
 						i(109801),	-- Morningscale Treads
 						i(109792),	-- Rockhide Treads
 						i(109791),	-- Sharpeye Greaves
@@ -228,7 +228,7 @@ _.Instances = {
 							i(109788),	-- Bloodfeather Treads
 							i(109789),	-- Crystalbinder Sandals
 							i(109798),	-- Leafmender Sandals
-							i(109800),	-- Lavalink Stompers							
+							i(109800),	-- Lavalink Stompers
 							i(109801),	-- Morningscale Treads
 							i(109792),	-- Rockhide Treads
 							i(109791),	-- Sharpeye Greaves
@@ -251,7 +251,7 @@ _.Instances = {
 						i(109976),	-- Bloodfeather Cowl
 						i(109977),	-- Crystalbinder Helm
 						i(109978),	-- Leafmender Hood
-						i(109983),	-- Lavalink Helm							
+						i(109983),	-- Lavalink Helm
 						i(109984),	-- Morningscale Cowl
 						i(109982),	-- Rockhide Casque
 						i(109981),	-- Sharpeye Gleam
@@ -272,7 +272,7 @@ _.Instances = {
 							i(109976),	-- Bloodfeather Cowl
 							i(109977),	-- Crystalbinder Helm
 							i(109978),	-- Leafmender Hood
-							i(109983),	-- Lavalink Helm							
+							i(109983),	-- Lavalink Helm
 							i(109984),	-- Morningscale Cowl
 							i(109982),	-- Rockhide Casque
 							i(109981),	-- Sharpeye Gleam
@@ -295,7 +295,7 @@ _.Instances = {
 						i(109869),	-- Bloodfeather Bracers
 						i(109870),	-- Crystalbinder Wristguards
 						i(109871),	-- Leafmender Wraps
-						i(109983),	-- Lavalink Helm							
+						i(109875),	-- Lavalink Bracers
 						i(109883),	-- Morningscale Bracers
 						i(109874),	-- Rockhide Wristguards
 						i(109873),	-- Sharpeye Bracers
@@ -316,7 +316,7 @@ _.Instances = {
 							i(109869),	-- Bloodfeather Bracers
 							i(109870),	-- Crystalbinder Wristguards
 							i(109871),	-- Leafmender Wraps
-							i(109983),	-- Lavalink Helm							
+							i(109875),	-- Lavalink Bracers
 							i(109883),	-- Morningscale Bracers
 							i(109874),	-- Rockhide Wristguards
 							i(109873),	-- Sharpeye Bracers
@@ -339,7 +339,7 @@ _.Instances = {
 						i(109935),	-- Bloodfeather Spaulders
 						i(109936),	-- Crystalbinder Shoulderpads
 						i(109937),	-- Leafmender Mantle
-						i(109942),	-- Lavalink Spaulders							
+						i(109942),	-- Lavalink Spaulders
 						i(109949),	-- Morningscale Spaulders
 						i(109941),	-- Rockhide Shoulderguards
 						i(109940),	-- Sharpeye Shoulderguards
@@ -360,7 +360,7 @@ _.Instances = {
 							i(109935),	-- Bloodfeather Spaulders
 							i(109936),	-- Crystalbinder Shoulderpads
 							i(109937),	-- Leafmender Mantle
-							i(109942),	-- Lavalink Spaulders							
+							i(109942),	-- Lavalink Spaulders
 							i(109949),	-- Morningscale Spaulders
 							i(109941),	-- Rockhide Shoulderguards
 							i(109940),	-- Sharpeye Shoulderguards
@@ -372,7 +372,7 @@ _.Instances = {
 							i(109944),	-- Verdant Plate Spaulders
 						})),
 					})),
-					n(CLOAK, bubbleDown({ ["crs"] = { AUCH, BSM, SBG, BLOOM, UBRS }, },{
+					n(BACK, bubbleDown({ ["crs"] = { AUCH, BSM, SBG, BLOOM, UBRS }, },{
 						i(109912),	-- Bloody-Blade Drape
 						i(109911),	-- Cloak of Annealing Flesh
 						i(109908),	-- Cloak of Arcane Mysteries
@@ -549,7 +549,7 @@ _.Instances = {
 						i(109830),	-- Bloodfeather Girdle
 						i(109831),	-- Crystalbinder Belt
 						i(109832),	-- Leafmender Girdle
-						i(109836),	-- Lavalink Girdle							
+						i(109836),	-- Lavalink Girdle
 						i(109843),	-- Morningscale Waistguard
 						i(109835),	-- Rockhide Links
 						i(109834),	-- Sharpeye Belt
@@ -571,7 +571,7 @@ _.Instances = {
 						i(109810),	-- Bloodfeather Leggings
 						i(109811),	-- Crystalbinder Legwraps
 						i(109812),	-- Leafmender Legwraps
-						i(109816),	-- Lavalink Legguards							
+						i(109816),	-- Lavalink Legguards
 						i(109817),	-- Morningscale Leggings
 						i(109815),	-- Rockhide Leggings
 						i(109814),	-- Sharpeye Legguards
@@ -593,7 +593,7 @@ _.Instances = {
 						i(109885),	-- Bloodfeather Chestwrap
 						i(109886),	-- Crystalbinder Chestguard
 						i(109897),	-- Leafmender Robes
-						i(109890),	-- Lavalink Ringmail							
+						i(109890),	-- Lavalink Ringmail
 						i(109891),	-- Morningscale Chestguard
 						i(109889),	-- Rockhide Ringmail
 						i(109888),	-- Sharpeye Chestguard
@@ -615,7 +615,7 @@ _.Instances = {
 						i(109788),	-- Bloodfeather Treads
 						i(109789),	-- Crystalbinder Sandals
 						i(109798),	-- Leafmender Sandals
-						i(109800),	-- Lavalink Stompers							
+						i(109800),	-- Lavalink Stompers
 						i(109801),	-- Morningscale Treads
 						i(109792),	-- Rockhide Treads
 						i(109791),	-- Sharpeye Greaves
@@ -637,7 +637,7 @@ _.Instances = {
 						i(109976),	-- Bloodfeather Cowl
 						i(109977),	-- Crystalbinder Helm
 						i(109978),	-- Leafmender Hood
-						i(109983),	-- Lavalink Helm							
+						i(109983),	-- Lavalink Helm
 						i(109984),	-- Morningscale Cowl
 						i(109982),	-- Rockhide Casque
 						i(109981),	-- Sharpeye Gleam
@@ -659,7 +659,7 @@ _.Instances = {
 						i(109869),	-- Bloodfeather Bracers
 						i(109870),	-- Crystalbinder Wristguards
 						i(109871),	-- Leafmender Wraps
-						i(109983),	-- Lavalink Helm							
+						i(109983),	-- Lavalink Helm
 						i(109883),	-- Morningscale Bracers
 						i(109874),	-- Rockhide Wristguards
 						i(109873),	-- Sharpeye Bracers
@@ -681,7 +681,7 @@ _.Instances = {
 						i(109935),	-- Bloodfeather Spaulders
 						i(109936),	-- Crystalbinder Shoulderpads
 						i(109937),	-- Leafmender Mantle
-						i(109942),	-- Lavalink Spaulders							
+						i(109942),	-- Lavalink Spaulders
 						i(109949),	-- Morningscale Spaulders
 						i(109941),	-- Rockhide Shoulderguards
 						i(109940),	-- Sharpeye Shoulderguards
@@ -692,7 +692,7 @@ _.Instances = {
 						i(109947),	-- Rivet-Sealed Shoulderplates
 						i(109944),	-- Verdant Plate Spaulders
 					})),
-					n(CLOAK, sharedData({ ["crs"] = { AUCH, BSM, SBG, BLOOM, UBRS }, },{
+					n(BACK, sharedData({ ["crs"] = { AUCH, BSM, SBG, BLOOM, UBRS }, },{
 						i(109912),	-- Bloody-Blade Drape
 						i(109911),	-- Cloak of Annealing Flesh
 						i(109908),	-- Cloak of Arcane Mysteries
@@ -798,7 +798,7 @@ _.Instances = {
 						i(109830),	-- Bloodfeather Girdle
 						i(109831),	-- Crystalbinder Belt
 						i(109832),	-- Leafmender Girdle
-						i(109836),	-- Lavalink Girdle							
+						i(109836),	-- Lavalink Girdle
 						i(109843),	-- Morningscale Waistguard
 						i(109835),	-- Rockhide Links
 						i(109834),	-- Sharpeye Belt
@@ -820,7 +820,7 @@ _.Instances = {
 						i(109810),	-- Bloodfeather Leggings
 						i(109811),	-- Crystalbinder Legwraps
 						i(109812),	-- Leafmender Legwraps
-						i(109816),	-- Lavalink Legguards							
+						i(109816),	-- Lavalink Legguards
 						i(109817),	-- Morningscale Leggings
 						i(109815),	-- Rockhide Leggings
 						i(109814),	-- Sharpeye Legguards
@@ -842,7 +842,7 @@ _.Instances = {
 						i(109885),	-- Bloodfeather Chestwrap
 						i(109886),	-- Crystalbinder Chestguard
 						i(109897),	-- Leafmender Robes
-						i(109890),	-- Lavalink Ringmail							
+						i(109890),	-- Lavalink Ringmail
 						i(109891),	-- Morningscale Chestguard
 						i(109889),	-- Rockhide Ringmail
 						i(109888),	-- Sharpeye Chestguard
@@ -864,7 +864,7 @@ _.Instances = {
 						i(109788),	-- Bloodfeather Treads
 						i(109789),	-- Crystalbinder Sandals
 						i(109798),	-- Leafmender Sandals
-						i(109800),	-- Lavalink Stompers							
+						i(109800),	-- Lavalink Stompers
 						i(109801),	-- Morningscale Treads
 						i(109792),	-- Rockhide Treads
 						i(109791),	-- Sharpeye Greaves
@@ -886,7 +886,7 @@ _.Instances = {
 						i(109976),	-- Bloodfeather Cowl
 						i(109977),	-- Crystalbinder Helm
 						i(109978),	-- Leafmender Hood
-						i(109983),	-- Lavalink Helm							
+						i(109983),	-- Lavalink Helm
 						i(109984),	-- Morningscale Cowl
 						i(109982),	-- Rockhide Casque
 						i(109981),	-- Sharpeye Gleam
@@ -908,7 +908,7 @@ _.Instances = {
 						i(109869),	-- Bloodfeather Bracers
 						i(109870),	-- Crystalbinder Wristguards
 						i(109871),	-- Leafmender Wraps
-						i(109983),	-- Lavalink Helm							
+						i(109983),	-- Lavalink Helm
 						i(109883),	-- Morningscale Bracers
 						i(109874),	-- Rockhide Wristguards
 						i(109873),	-- Sharpeye Bracers
@@ -930,7 +930,7 @@ _.Instances = {
 						i(109935),	-- Bloodfeather Spaulders
 						i(109936),	-- Crystalbinder Shoulderpads
 						i(109937),	-- Leafmender Mantle
-						i(109942),	-- Lavalink Spaulders							
+						i(109942),	-- Lavalink Spaulders
 						i(109949),	-- Morningscale Spaulders
 						i(109941),	-- Rockhide Shoulderguards
 						i(109940),	-- Sharpeye Shoulderguards
@@ -941,7 +941,7 @@ _.Instances = {
 						i(109947),	-- Rivet-Sealed Shoulderplates
 						i(109944),	-- Verdant Plate Spaulders
 					})),
-					n(CLOAK, sharedData({ ["crs"] = { AUCH, BSM, SBG, BLOOM, UBRS }, },{
+					n(BACK, sharedData({ ["crs"] = { AUCH, BSM, SBG, BLOOM, UBRS }, },{
 						i(109912),	-- Bloody-Blade Drape
 						i(109911),	-- Cloak of Annealing Flesh
 						i(109908),	-- Cloak of Arcane Mysteries
@@ -1047,7 +1047,7 @@ _.Instances = {
 						i(109830),	-- Bloodfeather Girdle
 						i(109831),	-- Crystalbinder Belt
 						i(109832),	-- Leafmender Girdle
-						i(109836),	-- Lavalink Girdle							
+						i(109836),	-- Lavalink Girdle
 						i(109843),	-- Morningscale Waistguard
 						i(109835),	-- Rockhide Links
 						i(109834),	-- Sharpeye Belt
@@ -1069,7 +1069,7 @@ _.Instances = {
 						i(109810),	-- Bloodfeather Leggings
 						i(109811),	-- Crystalbinder Legwraps
 						i(109812),	-- Leafmender Legwraps
-						i(109816),	-- Lavalink Legguards							
+						i(109816),	-- Lavalink Legguards
 						i(109817),	-- Morningscale Leggings
 						i(109815),	-- Rockhide Leggings
 						i(109814),	-- Sharpeye Legguards
@@ -1091,7 +1091,7 @@ _.Instances = {
 						i(109885),	-- Bloodfeather Chestwrap
 						i(109886),	-- Crystalbinder Chestguard
 						i(109897),	-- Leafmender Robes
-						i(109890),	-- Lavalink Ringmail							
+						i(109890),	-- Lavalink Ringmail
 						i(109891),	-- Morningscale Chestguard
 						i(109889),	-- Rockhide Ringmail
 						i(109888),	-- Sharpeye Chestguard
@@ -1113,7 +1113,7 @@ _.Instances = {
 						i(109788),	-- Bloodfeather Treads
 						i(109789),	-- Crystalbinder Sandals
 						i(109798),	-- Leafmender Sandals
-						i(109800),	-- Lavalink Stompers							
+						i(109800),	-- Lavalink Stompers
 						i(109801),	-- Morningscale Treads
 						i(109792),	-- Rockhide Treads
 						i(109791),	-- Sharpeye Greaves
@@ -1135,7 +1135,7 @@ _.Instances = {
 						i(109976),	-- Bloodfeather Cowl
 						i(109977),	-- Crystalbinder Helm
 						i(109978),	-- Leafmender Hood
-						i(109983),	-- Lavalink Helm							
+						i(109983),	-- Lavalink Helm
 						i(109984),	-- Morningscale Cowl
 						i(109982),	-- Rockhide Casque
 						i(109981),	-- Sharpeye Gleam
@@ -1157,7 +1157,7 @@ _.Instances = {
 						i(109869),	-- Bloodfeather Bracers
 						i(109870),	-- Crystalbinder Wristguards
 						i(109871),	-- Leafmender Wraps
-						i(109983),	-- Lavalink Helm							
+						i(109983),	-- Lavalink Helm
 						i(109883),	-- Morningscale Bracers
 						i(109874),	-- Rockhide Wristguards
 						i(109873),	-- Sharpeye Bracers
@@ -1179,7 +1179,7 @@ _.Instances = {
 						i(109935),	-- Bloodfeather Spaulders
 						i(109936),	-- Crystalbinder Shoulderpads
 						i(109937),	-- Leafmender Mantle
-						i(109942),	-- Lavalink Spaulders							
+						i(109942),	-- Lavalink Spaulders
 						i(109949),	-- Morningscale Spaulders
 						i(109941),	-- Rockhide Shoulderguards
 						i(109940),	-- Sharpeye Shoulderguards
@@ -1190,7 +1190,7 @@ _.Instances = {
 						i(109947),	-- Rivet-Sealed Shoulderplates
 						i(109944),	-- Verdant Plate Spaulders
 					})),
-					n(CLOAK, sharedData({ ["crs"] = { BSM, AUCH, SBG, BLOOM }, },{
+					n(BACK, sharedData({ ["crs"] = { BSM, AUCH, SBG, BLOOM }, },{
 						i(109912),	-- Bloody-Blade Drape
 						i(109911),	-- Cloak of Annealing Flesh
 						i(109908),	-- Cloak of Arcane Mysteries

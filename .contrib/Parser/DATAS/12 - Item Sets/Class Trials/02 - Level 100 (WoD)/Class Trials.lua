@@ -7,7 +7,6 @@ _.GearSets =
 	n(-5350, {	-- Class Trial Item Sets
 		n(-138, {	-- Level 100
 			["description"] = "These were obtained by creating a Level 100 Class Trial (WoD) for each class and specialization.",
-			["icon"] = "Interface\\Icons\\achievement_level_100",
 			["lvl"] = 100,
 			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 				cl(PRIEST, {

@@ -8,7 +8,7 @@ _.GearSets =
 		["g"] = {
 			i(120968),	-- Chauffeured Chopper
 			i(122703),	-- Chauffeured Chopper
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				un(REMOVED_FROM_GAME, i(42944)),	-- Balanced Heartseeker
 				i(122350, {	-- Balanced Heartseeker
 					["cost"] = {
@@ -180,7 +180,7 @@ _.GearSets =
 				}),
 			}),
 			n(-318, {	-- Armor
-				n(-322, {	-- Back
+				n(BACK, {
 					un(REMOVED_FROM_GAME, i(62040)),	-- Ancient Bloodmoon Cloak
 					i(122262),	-- Ancient Bloodmoon Cloak
 					i(166770),	-- Banded Gilnean Cloak
@@ -380,7 +380,7 @@ _.GearSets =
 				}),
 			}),
 			n(-383, {	-- Miscellaneous
-				n(-384, {	-- Necklace
+				n(NECK, {
 					i(122663),	-- Eternal Amulet of the Redeemed
 					i(122667),	-- Eternal Emberfury Talisman
 					i(122664),	-- Eternal Horizon Choker
@@ -389,7 +389,7 @@ _.GearSets =
 					i(122666),	-- Eternal Woven Ivy Necklace
 					i(153130),	-- Man'ari Training Amulet
 				}),
-				n(-385, {	-- Finger
+				n(FINGER, {
 					i(128173),	-- Admiral Taylor's Loyalty Ring
 					i(128172),	-- Captain Sander's Returned Band
 					un(REMOVED_FROM_GAME, i(50255)),	-- Dread Pirate Ring

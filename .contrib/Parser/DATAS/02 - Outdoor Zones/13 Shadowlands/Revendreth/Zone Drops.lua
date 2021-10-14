@@ -10,6 +10,7 @@ _.Zones =
 				spell(921, {	-- Pickpocketing
 				--	TODO: this currently has one pure non-pickpocketing drop listed on wowhead.  it's 1/4484, which is quite low, so it could be a fluke.  check back and see if this could be moved to overall zone drop section rather than a specific pickpocketing subsection.
 					i(180870),	-- Shadow's Bite
+					i(180868),	-- Fear's Heartpiercer
 				}),
 				i(179311),	-- Oxxein Lockbox
 				i(172957, {	-- Atonement Crypt Key

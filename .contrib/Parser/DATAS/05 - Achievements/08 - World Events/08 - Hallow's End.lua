@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9962, bubbleDown({["u"] = HALLOWS_END}, {	-- World Events
-		n(-10021, {	-- Hallow's End
+		holiday(235462, {	-- Hallow's End
 			ach(10365),	-- A Frightening Friend
 			ach(284,  {	-- A Mask for All Occasions
 				crit(1),	-- Blood Elf Female Mask

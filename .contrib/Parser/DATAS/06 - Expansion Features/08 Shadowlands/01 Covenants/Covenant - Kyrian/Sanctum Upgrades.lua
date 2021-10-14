@@ -640,18 +640,6 @@ _.ExpansionFeatures =
 										i(184453),	-- Reverent Cloak
 									}),
 								}),
-								--[[
-								n(, {	--
-									n(-972, {	-- Courage
-									}),
-									n(-973, {	-- Loyalty
-									}),
-									n(-974, {	-- Wisdom
-									}),
-									n(-975, {	-- Humility
-									}),
-								}),
-								--]]
 							}),
 							n(-966, {	-- Blueprints & Crafting
 								["description"] = "Blueprints teach Dactylis recipes that allow you to craft gear for your Aspirants to use in the Path of Ascension battles.",

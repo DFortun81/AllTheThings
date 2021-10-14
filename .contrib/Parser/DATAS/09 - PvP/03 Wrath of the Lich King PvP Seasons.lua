@@ -7,7 +7,7 @@ _.PVP =
 	pvp(n(-10014, {	-- Wrath of the Lich King
 		n(-668, {	-- Deadly Gladiator: Season 5
 			n(-9983, {	-- Honor Gear // Savage Gladiator
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(146647, {	-- Arsenal: Savage Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
@@ -403,7 +403,7 @@ _.PVP =
 				}),
 			}),
 			n(-657, {	-- Hateful Gladiator
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					i(146646, {	-- Arsenal: Hateful Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
@@ -911,7 +911,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(42057, {	-- Hateful Gladiator's Cloak of Ascendancy
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -934,7 +934,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(41638, {	-- Hateful Gladiator's Armwraps of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -972,7 +972,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(41628, {	-- Hateful Gladiator's Belt of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -1010,7 +1010,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(41633, {	-- Hateful Gladiator's Boots of Dominance
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -1048,7 +1048,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				n(-384,	{	-- Neck
+				n(NECK, {
 					un(REMOVED_FROM_GAME, i(42024)),	-- Hateful Gladiator's Pendant of Ascendance
 					un(REMOVED_FROM_GAME, i(42025)),	-- Hateful Gladiator's Pendant of Deliverance
 					un(REMOVED_FROM_GAME, i(42022)),	-- Hateful Gladiator's Pendant of Dominance
@@ -1057,7 +1057,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(42020)),	-- Hateful Gladiator's Pendant of Triumph
 					un(REMOVED_FROM_GAME, i(42021)),	-- Hateful Gladiator's Pendant of Victory
 				}),
-				n(-385,	{	-- Finger
+				n(FINGER, {
 					un(REMOVED_FROM_GAME, i(42110)),	-- Hateful Gladiator's Band of Dominance
 					un(REMOVED_FROM_GAME, i(42112)),	-- Hateful Gladiator's Band of Triumph
 				}),
@@ -1074,12 +1074,12 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(42449)), -- Hateful Gladiator's War Edge (Throw Wep)
 				}),
 			}),
-			n(-661, {	-- Gladiator PvP Gear
-				n(-319, {	-- Weapons
+			n(PVP_GLADIATOR, {
+				n(WEAPONS, {
 					i(146645, {	-- Arsenal: Deadly Gladiator's Weapon
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_weapons_ensemble", -10014, -668, -661 },
+							{"sub", "pvp_weapons_ensemble", -10014, -668, PVP_GLADIATOR },
 							{"exclude", "itemID", 146645 },	-- Exclude itself to stop duplicating
 						},
 						["g"] = {
@@ -1201,7 +1201,7 @@ _.PVP =
 					i(146540, {	-- Ensemble: Deadly Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -668, -661, 6 },
+							{"sub", "pvp_set_ensemble", -10014, -668, PVP_GLADIATOR, 6 },
 							{"select", "itemID", 147589 },	-- Deadly Gladiator's Bracers of Victory
 							{"select", "itemID", 147590 },	-- Deadly Gladiator's Girdle of Victory
 							{"select", "itemID", 147591 },	-- Deadly Gladiator's Greaves of Victory
@@ -1230,7 +1230,7 @@ _.PVP =
 					i(146539, {	-- Ensemble: Deadly Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -668, -661, 11 },
+							{"sub", "pvp_set_ensemble", -10014, -668, PVP_GLADIATOR, 11 },
 							{"select", "itemID", 41639 },	-- Deadly Gladiator's Armwraps of Dominance
 							{"select", "itemID", 41629 },	-- Deadly Gladiator's Belt of Dominance
 							{"select", "itemID", 41634 },	-- Deadly Gladiator's Boots of Dominance
@@ -1292,7 +1292,7 @@ _.PVP =
 					i(146538, {	-- Ensemble: Deadly Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -668, -661, 3 },
+							{"sub", "pvp_set_ensemble", -10014, -668, PVP_GLADIATOR, 3 },
 							{"select", "itemID", 41224 },	-- Deadly Gladiator's Wristguards of Triumph
 							{"select", "itemID", 41234 },	-- Deadly Gladiator's Waistguard of Triumph
 							{"select", "itemID", 41229 },	-- Deadly Gladiator's Sabatons of Triumph
@@ -1321,7 +1321,7 @@ _.PVP =
 					i(146547, {	-- Ensemble: Deadly Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -668, -661, 8 },
+							{"sub", "pvp_set_ensemble", -10014, -668, PVP_GLADIATOR, 8 },
 							{"select", "itemID", 41908 },	-- Deadly Gladiator's Cuffs of Dominance
 							{"select", "itemID", 41897 },	-- Deadly Gladiator's Cord of Dominance
 							{"select", "itemID", 41902 },	-- Deadly Gladiator's Treads of Dominance
@@ -1350,7 +1350,7 @@ _.PVP =
 					i(146546, {	-- Ensemble: Deadly Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -668, -661, 2 },
+							{"sub", "pvp_set_ensemble", -10014, -668, PVP_GLADIATOR, 2 },
 							{"select", "itemID", 40982 },	-- Deadly Gladiator's Bracers of Salvation
 							{"select", "itemID", 40974 },	-- Deadly Gladiator's Girdle of Salvation
 							{"select", "itemID", 40975 },	-- Deadly Gladiator's Greaves of Salvation
@@ -1394,7 +1394,7 @@ _.PVP =
 					i(146545, {	-- Ensemble: Deadly Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -668, -661, 5 },
+							{"sub", "pvp_set_ensemble", -10014, -668, PVP_GLADIATOR, 5 },
 							{"select", "itemID", 41892 },	-- Deadly Gladiator's Cuffs of Salvation
 							{"select", "itemID", 41880 },	-- Deadly Gladiator's Cord of Salvation
 							{"select", "itemID", 41884 },	-- Deadly Gladiator's Treads of Salvation
@@ -1438,7 +1438,7 @@ _.PVP =
 					i(146542, {	-- Ensemble: Deadly Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -668, -661, 4 },
+							{"sub", "pvp_set_ensemble", -10014, -668, PVP_GLADIATOR, 4 },
 							{"select", "itemID", 41839 },	-- Deadly Gladiator's Armwraps of Triumph
 							{"select", "itemID", 41831 },	-- Deadly Gladiator's Belt of Triumph
 							{"select", "itemID", 41835 },	-- Deadly Gladiator's Boots of Triumph
@@ -1467,7 +1467,7 @@ _.PVP =
 					i(146544, {	-- Ensemble: Deadly Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -668, -661, 7 },
+							{"sub", "pvp_set_ensemble", -10014, -668, PVP_GLADIATOR, 7 },
 							{"select", "itemID", 41064 },	-- Deadly Gladiator's Wristguards of Dominance
 							{"select", "itemID", 41069 },	-- Deadly Gladiator's Waistguard of Dominance
 							{"select", "itemID", 41074 },	-- Deadly Gladiator's Sabatons of Dominance
@@ -1529,7 +1529,7 @@ _.PVP =
 					i(146541, {	-- Ensemble: Deadly Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -668, -661, 9 },
+							{"sub", "pvp_set_ensemble", -10014, -668, PVP_GLADIATOR, 9 },
 							{"select", "itemID", 147592 },	-- Deadly Gladiator's Cuffs of Ascendancy
 							{"select", "itemID", 147593 },	-- Deadly Gladiator's Cord of Ascendancy
 							{"select", "itemID", 147594 },	-- Deadly Gladiator's Treads of Ascendancy
@@ -1558,7 +1558,7 @@ _.PVP =
 					i(146543, {	-- Ensemble: Deadly Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -668, -661, 1 },
+							{"sub", "pvp_set_ensemble", -10014, -668, PVP_GLADIATOR, 1 },
 							{"select", "itemID", 40888 },	-- Deadly Gladiator's Bracers of Triumph
 							{"select", "itemID", 40879 },	-- Deadly Gladiator's Girdle of Triumph
 							{"select", "itemID", 40880 },	-- Deadly Gladiator's Greaves of Triumph
@@ -1583,7 +1583,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(42064, {	-- Deadly Gladiator's Cloak of Ascendancy
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -1606,7 +1606,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(41639, {	-- Deadly Gladiator's Armwraps of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -1644,7 +1644,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(41629, {	-- Deadly Gladiator's Belt of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -1682,7 +1682,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(41634, {	-- Deadly Gladiator's Boots of Dominance
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -1720,7 +1720,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				n(-384,	{	-- Neck
+				n(NECK, {
 					i(42030),	-- Deadly Gladiator's Pendant of Ascendancy
 					i(42032),	-- Deadly Gladiator's Pendant of Deliverance
 					i(42029),	-- Deadly Gladiator's Pendant of Dominance
@@ -1729,7 +1729,7 @@ _.PVP =
 					i(42027),	-- Deadly Gladiator's Pendant of Triumph
 					i(42028),	-- Deadly Gladiator's Pendant of Victory
 				}),
-				n(-385,	{	-- Finger
+				n(FINGER, {
 					i(42114),	-- Deadly Gladiator's Band of Ascendancy
 					i(42115),	-- Deadly Gladiator's Band of Victory
 				}),
@@ -1758,12 +1758,12 @@ _.PVP =
 			}),
 		}),
 		n(-669, {	-- Furious Gladiator: Season 6
-			n(-661, {	-- Gladiator PvP Gear
-				n(-319, {	-- Weapons
+			n(PVP_GLADIATOR, {
+				n(WEAPONS, {
 					i(146644, {	-- Arsenal: Furious Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_weapons_ensemble", -10014, -669, -661 },
+							{"sub", "pvp_weapons_ensemble", -10014, -669, PVP_GLADIATOR },
 							{"exclude", "itemID", 146644 },	-- Exclude itself to stop duplicating
 						},
 						["g"] = {
@@ -1883,7 +1883,7 @@ _.PVP =
 					i(146550, {	-- Ensemble: Furious Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -669, -661, 6 },
+							{"sub", "pvp_set_ensemble", -10014, -669, PVP_GLADIATOR, 6 },
 							{"select", "itemID", 40889 },	-- Furious Gladiator's Bracers of Triumph
 							{"select", "itemID", 40881 },	-- Furious Gladiator's Girdle of Triumph
 							{"select", "itemID", 40882 },	-- Furious Gladiator's Greaves of Triumph
@@ -1912,7 +1912,7 @@ _.PVP =
 					i(146549, {	-- Ensemble: Furious Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -669, -661, 11 },
+							{"sub", "pvp_set_ensemble", -10014, -669, PVP_GLADIATOR, 11 },
 							{"select", "itemID", 41640 },	-- Furious Gladiator's Armwraps of Dominance
 							{"select", "itemID", 41630 },	-- Furious Gladiator's Belt of Dominance
 							{"select", "itemID", 41635 },	-- Furious Gladiator's Boots of Dominance
@@ -1974,7 +1974,7 @@ _.PVP =
 					i(146548, {	-- Ensemble: Furious Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -669, -661, 3 },
+							{"sub", "pvp_set_ensemble", -10014, -669, PVP_GLADIATOR, 3 },
 							{"select", "itemID", 41225 },	-- Furious Gladiator's Wristguards of Triumph
 							{"select", "itemID", 41235 },	-- Furious Gladiator's Waistguard of Triumph
 							{"select", "itemID", 41230 },	-- Furious Gladiator's Sabatons of Triumph
@@ -2003,7 +2003,7 @@ _.PVP =
 					i(146557, {	-- Ensemble: Furious Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -669, -661, 8 },
+							{"sub", "pvp_set_ensemble", -10014, -669, PVP_GLADIATOR, 8 },
 							{"select", "itemID", 147595 },	-- Furious Gladiator's Cuffs of Ascendancy
 							{"select", "itemID", 147596 },	-- Furious Gladiator's Cord of Ascendancy
 							{"select", "itemID", 147597 },	-- Furious Gladiator's Slippers of Ascendancy
@@ -2032,7 +2032,7 @@ _.PVP =
 					i(146556, {	-- Ensemble: Furious Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -669, -661, 2 },
+							{"sub", "pvp_set_ensemble", -10014, -669, PVP_GLADIATOR, 2 },
 							{"select", "itemID", 40983 },	-- Furious Gladiator's Bracers of Salvation
 							{"select", "itemID", 40976 },	-- Furious Gladiator's Girdle of Salvation
 							{"select", "itemID", 40977 },	-- Furious Gladiator's Greaves of Salvation
@@ -2076,7 +2076,7 @@ _.PVP =
 					i(146555, {	-- Ensemble: Furious Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -669, -661, 5 },
+							{"sub", "pvp_set_ensemble", -10014, -669, PVP_GLADIATOR, 5 },
 							{"select", "itemID", 41893 },	-- Furious Gladiator's Cuffs of Salvation
 							{"select", "itemID", 41881 },	-- Furious Gladiator's Cord of Salvation
 							{"select", "itemID", 41885 },	-- Furious Gladiator's Treads of Salvation
@@ -2120,7 +2120,7 @@ _.PVP =
 					i(146552, {	-- Ensemble: Furious Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -669, -661, 4 },
+							{"sub", "pvp_set_ensemble", -10014, -669, PVP_GLADIATOR, 4 },
 							{"select", "itemID", 41840 },	-- Furious Gladiator's Armwraps of Triumph
 							{"select", "itemID", 41832 },	-- Furious Gladiator's Belt of Triumph
 							{"select", "itemID", 41836 },	-- Furious Gladiator's Boots of Triumph
@@ -2149,7 +2149,7 @@ _.PVP =
 					i(146554, {	-- Ensemble: Furious Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -669, -661, 7 },
+							{"sub", "pvp_set_ensemble", -10014, -669, PVP_GLADIATOR, 7 },
 							{"select", "itemID", 41065 },	-- Furious Gladiator's Wristguards of Dominance
 							{"select", "itemID", 41070 },	-- Furious Gladiator's Waistguard of Dominance
 							{"select", "itemID", 41075 },	-- Furious Gladiator's Sabatons of Dominance
@@ -2211,7 +2211,7 @@ _.PVP =
 					i(146551, {	-- Ensemble: Furious Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -669, -661, 9 },
+							{"sub", "pvp_set_ensemble", -10014, -669, PVP_GLADIATOR, 9 },
 							{"select", "itemID", 41909 },	-- Furious Gladiator's Cuffs of Dominance
 							{"select", "itemID", 41898 },	-- Furious Gladiator's Cord of Dominance
 							{"select", "itemID", 41903 },	-- Furious Gladiator's Slippers of Dominance
@@ -2240,7 +2240,7 @@ _.PVP =
 					i(146553, {	-- Ensemble: Furious Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -669, -661, 1 },
+							{"sub", "pvp_set_ensemble", -10014, -669, PVP_GLADIATOR, 1 },
 							{"select", "itemID", 147598 },	-- Furious Gladiator's Bracers of Victory
 							{"select", "itemID", 147599 },	-- Furious Gladiator's Girdle of Victory
 							{"select", "itemID", 147600 },	-- Furious Gladiator's Greaves of Victory
@@ -2265,7 +2265,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(42071, {	-- Furious Gladiator's Cloak of Ascendancy
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -2288,7 +2288,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(41640, {	-- Furious Gladiator's Armwraps of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -2326,7 +2326,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(41630, {	-- Furious Gladiator's Belt of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -2364,7 +2364,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(41635, {	-- Furious Gladiator's Boots of Dominance
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -2402,7 +2402,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				n(-384,	{	-- Neck
+				n(NECK, {
 					i(42037),	-- Furious Gladiator's Pendant of Ascendancy
 					i(42039),	-- Furious Gladiator's Pendant of Deliverance
 					i(42036),	-- Furious Gladiator's Pendant of Dominance
@@ -2412,7 +2412,7 @@ _.PVP =
 					i(42034),	-- Furious Gladiator's Pendant of Triumph
 					i(42035)	-- Furious Gladiator's Pendant of Victory
 				}),
-				n(-385,	{	-- Finger
+				n(FINGER, {
 					i(42116),	-- Furious Gladiator's Band of Dominance
 					i(42117),	-- Furious Gladiator's Band of Triumph
 				}),
@@ -2433,13 +2433,13 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(42126)), -- (H) Medallion of the Horde
 				}),
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				-- Original Sources are:
 				-- n34087 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
 				-- n34089 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
 				-- n34088 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
 				un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard
-				n(-319, {	-- Weapon
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(45954)),	-- Furious Gladiator's Acute Staff
 					un(REMOVED_FROM_GAME, i(45968)),	-- Furious Gladiator's Claw
 					un(REMOVED_FROM_GAME, i(45950)),	-- Furious Gladiator's Claymore
@@ -2471,12 +2471,12 @@ _.PVP =
 			}),
 		}),
 		n(-670, {	-- Relentless Gladiator: Season 7
-			n(-661, {	-- Gladiator PvP Gear
-				n(-319, {	-- Weapons
+			n(PVP_GLADIATOR, {
+				n(WEAPONS, {
 					i(146643, {	-- Arsenal: Relentless Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_weapons_ensemble", -10014, -670, -661 },
+							{"sub", "pvp_weapons_ensemble", -10014, -670, PVP_GLADIATOR },
 							{"exclude", "itemID", 146643 },	-- Exclude itself to stop duplicating
 						},
 						["g"] = {
@@ -2607,7 +2607,7 @@ _.PVP =
 					i(146570, {	-- Ensemble: Relentless Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -670, -661, 6 },
+							{"sub", "pvp_set_ensemble", -10014, -670, PVP_GLADIATOR, 6 },
 							{"select", "itemID", 40890 },	-- Relentless Gladiator's Bracers of Triumph
 							{"select", "itemID", 40883 },	-- Relentless Gladiator's Girdle of Triumph
 							{"select", "itemID", 147601 },	-- Relentless Gladiator's Greaves of Victory
@@ -2636,7 +2636,7 @@ _.PVP =
 					i(146569, {	-- Ensemble: Relentless Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -670, -661, 11 },
+							{"sub", "pvp_set_ensemble", -10014, -670, PVP_GLADIATOR, 11 },
 							{"select", "itemID", 41641 },	-- Relentless Gladiator's Armwraps of Dominance
 							{"select", "itemID", 41631 },	-- Relentless Gladiator's Belt of Dominance
 							{"select", "itemID", 41636 },	-- Relentless Gladiator's Boots of Dominance
@@ -2698,7 +2698,7 @@ _.PVP =
 					i(146568, {	-- Ensemble: Relentless Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -670, -661, 3 },
+							{"sub", "pvp_set_ensemble", -10014, -670, PVP_GLADIATOR, 3 },
 							{"select", "itemID", 41226 },	-- Relentless Gladiator's Wristguards of Triumph
 							{"select", "itemID", 41236 },	-- Relentless Gladiator's Waistguard of Triumph
 							{"select", "itemID", 41231 },	-- Relentless Gladiator's Sabatons of Triumph
@@ -2727,7 +2727,7 @@ _.PVP =
 					i(146577, {	-- Ensemble: Relentless Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -670, -661, 8 },
+							{"sub", "pvp_set_ensemble", -10014, -670, PVP_GLADIATOR, 8 },
 							{"select", "itemID", 41910 },	-- Relentless Gladiator's Cuffs of Dominance
 							{"select", "itemID", 41899 },	-- Relentless Gladiator's Cord of Dominance
 							{"select", "itemID", 41904 },	-- Relentless Gladiator's Treads of Dominance
@@ -2757,7 +2757,7 @@ _.PVP =
 					i(146576, {	-- Ensemble: Relentless Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -670, -661, 2 },
+							{"sub", "pvp_set_ensemble", -10014, -670, PVP_GLADIATOR, 2 },
 							{"select", "itemID", 40984 },	-- Relentless Gladiator's Bracers of Salvation
 							{"select", "itemID", 40978 },	-- Relentless Gladiator's Girdle of Salvation
 							{"select", "itemID", 40979 },	-- Relentless Gladiator's Greaves of Salvation
@@ -2801,7 +2801,7 @@ _.PVP =
 					i(146575, {	-- Ensemble: Relentless Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -670, -661, 5 },
+							{"sub", "pvp_set_ensemble", -10014, -670, PVP_GLADIATOR, 5 },
 							{"select", "itemID", 41894 },	-- Relentless Gladiator's Cuffs of Salvation
 							{"select", "itemID", 41882 },	-- Relentless Gladiator's Cord of Salvation
 							{"select", "itemID", 41886 },	-- Relentless Gladiator's Treads of Salvation
@@ -2846,7 +2846,7 @@ _.PVP =
 					i(146572, {	-- Ensemble: Relentless Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -670, -661, 4 },
+							{"sub", "pvp_set_ensemble", -10014, -670, PVP_GLADIATOR, 4 },
 							{"select", "itemID", 41841 },	-- Relentless Gladiator's Armwraps of Triumph
 							{"select", "itemID", 41833 },	-- Relentless Gladiator's Belt of Triumph
 							{"select", "itemID", 41837 },	-- Relentless Gladiator's Boots of Triumph
@@ -2875,7 +2875,7 @@ _.PVP =
 					i(146574, {	-- Ensemble: Relentless Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -670, -661, 7 },
+							{"sub", "pvp_set_ensemble", -10014, -670, PVP_GLADIATOR, 7 },
 							{"select", "itemID", 41066 },	-- Relentless Gladiator's Wristguards of Dominance
 							{"select", "itemID", 41071 },	-- Relentless Gladiator's Waistguard of Dominance
 							{"select", "itemID", 41076 },	-- Relentless Gladiator's Sabatons of Dominance
@@ -2937,7 +2937,7 @@ _.PVP =
 					i(146571, {	-- Ensemble: Relentless Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -670, -661, 9 },
+							{"sub", "pvp_set_ensemble", -10014, -670, PVP_GLADIATOR, 9 },
 							{"select", "itemID", 147602 },	-- Relentless Gladiator's Cuffs of Ascendancy
 							{"select", "itemID", 49183 },	-- Relentless Gladiator's Treads of Alacrity
 							{"exclude", "itemID", 146571 },	-- Exclude itself to stop duplicating
@@ -2965,7 +2965,7 @@ _.PVP =
 					i(146573, {	-- Ensemble: Relentless Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -670, -661, 1 },
+							{"sub", "pvp_set_ensemble", -10014, -670, PVP_GLADIATOR, 1 },
 							{"select", "itemID", 147603 },	-- Relentless Gladiator's Bracers of Victory
 							{"select", "itemID", 147604 },	-- Relentless Gladiator's Girdle of Victory
 							{"select", "itemID", 40884 },	-- Relentless Gladiator's Greaves of Triumph
@@ -2990,7 +2990,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(42078, {	-- Relentless Gladiator's Cloak of Ascendancy
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3013,7 +3013,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(41641, {	-- Relentless Gladiator's Armwraps of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3054,7 +3054,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(41631, {	-- Relentless Gladiator's Belt of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3092,7 +3092,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(41636, {	-- Relentless Gladiator's Boots of Dominance
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -3130,7 +3130,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				n(-384,	{	-- Neck
+				n(NECK, {
 					i(42044),	-- Relentless Gladiator's Pendant of Ascendancy
 					i(42046),	-- Relentless Gladiator's Pendant of Deliverance
 					i(42043),	-- Relentless Gladiator's Pendant of Dominance
@@ -3140,7 +3140,7 @@ _.PVP =
 					i(42041),	-- Relentless Gladiator's Pendant of Triumph
 					i(42042),	-- Relentless Gladiator's Pendant of Victory
 				}),
-				n(-385,	{	-- Finger
+				n(FINGER, {
 					i(42118),	-- Relentless Gladiator's Band of Ascendancy
 					i(42119),	-- Relentless Gladiator's Band of Victory
 				}),
@@ -3164,13 +3164,13 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(42135)), -- Battlemaster's Vivacity
 				}),
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				-- Original Sources are:
 				-- n34092 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
 				-- n34091 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
 				-- n34090 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
 				un(REMOVED_FROM_GAME, i(49086)),	-- Relentless Gladiator's Tabard
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(48412)),	-- Relentless Gladiator's Acute Staff
 					un(REMOVED_FROM_GAME, i(49191)),	-- Relentless Gladiator's Blade of Celerity
 					un(REMOVED_FROM_GAME, i(48406)),	-- Relentless Gladiator's Claymore
@@ -3202,12 +3202,12 @@ _.PVP =
 			}),
 		}),
 		n(-671, {	-- Wrathful Gladiator: Season 8
-			n(-661, {	-- Gladiator PvP Gear
-				n(-319, {	-- Weapons
+			n(PVP_GLADIATOR, {
+				n(WEAPONS, {
 					i(146642, {	-- Arsenal: Wrathful Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_weapons_ensemble", -10014, -671, -661 },
+							{"sub", "pvp_weapons_ensemble", -10014, -671, PVP_GLADIATOR },
 							{"exclude", "itemID", 146642 },	-- Exclude itself to stop duplicating
 						},
 						["g"] = {
@@ -3335,7 +3335,7 @@ _.PVP =
 					i(146590, {	-- Ensemble: Wrathful Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -671, -661, 6 },
+							{"sub", "pvp_set_ensemble", -10014, -671, PVP_GLADIATOR, 6 },
 							{"select", "itemID", 51364 },	-- Wrathful Gladiator's Bracers of Triumph
 							{"select", "itemID", 51362 },	-- Wrathful Gladiator's Girdle of Triumph
 							{"select", "itemID", 51363 },	-- Wrathful Gladiator's Greaves of Triumph
@@ -3364,7 +3364,7 @@ _.PVP =
 					i(146589, {	-- Ensemble: Wrathful Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -671, -661, 11 },
+							{"sub", "pvp_set_ensemble", -10014, -671, PVP_GLADIATOR, 11 },
 							{"select", "itemID", 51345 },	-- Wrathful Gladiator's Armwraps of Dominance
 							{"select", "itemID", 51343 },	-- Wrathful Gladiator's Belt of Dominance
 							{"select", "itemID", 51344 },	-- Wrathful Gladiator's Boots of Dominance
@@ -3426,7 +3426,7 @@ _.PVP =
 					i(146588, {	-- Ensemble: Wrathful Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -671, -661, 3 },
+							{"sub", "pvp_set_ensemble", -10014, -671, PVP_GLADIATOR, 3 },
 							{"select", "itemID", 51352 },	-- Wrathful Gladiator's Wristguards of Triumph
 							{"select", "itemID", 51350 },	-- Wrathful Gladiator's Waistguard of Triumph
 							{"select", "itemID", 51351 },	-- Wrathful Gladiator's Sabatons of Triumph
@@ -3455,7 +3455,7 @@ _.PVP =
 					i(146597, {	-- Ensemble: Wrathful Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -671, -661, 8 },
+							{"sub", "pvp_set_ensemble", -10014, -671, PVP_GLADIATOR, 8 },
 							{"select", "itemID", 51329 },	-- Wrathful Gladiator's Cuffs of Dominance
 							{"select", "itemID", 51327 },	-- Wrathful Gladiator's Cord of Dominance
 							{"select", "itemID", 51328 },	-- Wrathful Gladiator's Treads of Dominance
@@ -3485,7 +3485,7 @@ _.PVP =
 					i(146596, {	-- Ensemble: Wrathful Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -671, -661, 2 },
+							{"sub", "pvp_set_ensemble", -10014, -671, PVP_GLADIATOR, 2 },
 							{"select", "itemID", 51361 },	-- Wrathful Gladiator's Bracers of Salvation
 							{"select", "itemID", 51359 },	-- Wrathful Gladiator's Girdle of Salvation
 							{"select", "itemID", 51360 },	-- Wrathful Gladiator's Greaves of Salvation
@@ -3529,7 +3529,7 @@ _.PVP =
 					i(146595, {	-- Ensemble: Wrathful Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -671, -661, 5 },
+							{"sub", "pvp_set_ensemble", -10014, -671, PVP_GLADIATOR, 5 },
 							{"select", "itemID", 51367 },	-- Wrathful Gladiator's Cuffs of Salvation
 							{"select", "itemID", 51365 },	-- Wrathful Gladiator's Cord of Salvation
 							{"select", "itemID", 51366 },	-- Wrathful Gladiator's Treads of Salvation
@@ -3574,7 +3574,7 @@ _.PVP =
 					i(146592, {	-- Ensemble: Wrathful Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -671, -661, 4 },
+							{"sub", "pvp_set_ensemble", -10014, -671, PVP_GLADIATOR, 4 },
 							{"select", "itemID", 51370 },	-- Wrathful Gladiator's Armwraps of Triumph
 							{"select", "itemID", 51368 },	-- Wrathful Gladiator's Belt of Triumph
 							{"select", "itemID", 51369 },	-- Wrathful Gladiator's Boots of Triumph
@@ -3603,7 +3603,7 @@ _.PVP =
 					i(146594, {	-- Ensemble: Wrathful Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -671, -661, 7 },
+							{"sub", "pvp_set_ensemble", -10014, -671, PVP_GLADIATOR, 7 },
 							{"select", "itemID", 51376 },	-- Wrathful Gladiator's Wristguards of Dominance
 							{"select", "itemID", 51374 },	-- Wrathful Gladiator's Waistguard of Dominance
 							{"select", "itemID", 51375 },	-- Wrathful Gladiator's Sabatons of Dominance
@@ -3665,7 +3665,7 @@ _.PVP =
 					i(146591, {	-- Ensemble: Wrathful Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -671, -661, 9 },
+							{"sub", "pvp_set_ensemble", -10014, -671, PVP_GLADIATOR, 9 },
 							{"select", "itemID", 147605 },	-- Wrathful Gladiator's Cuffs of Ascendancy
 							{"select", "itemID", 147606 },	-- Wrathful Gladiator's Cord of Ascendancy
 							{"select", "itemID", 51338 },	-- Wrathful Gladiator's Treads of Alacrity
@@ -3694,7 +3694,7 @@ _.PVP =
 					i(146593, {	-- Ensemble: Wrathful Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10014, -671, -661, 1 },
+							{"sub", "pvp_set_ensemble", -10014, -671, PVP_GLADIATOR, 1 },
 							{"select", "itemID", 147607 },	-- Wrathful Gladiator's Bracers of Victory
 							{"select", "itemID", 147608 },	-- Wrathful Gladiator's Girdle of Victory
 							{"select", "itemID", 51363 },	-- Wrathful Gladiator's Greaves of Triumph
@@ -3719,7 +3719,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-322, {	-- Back
+				n(BACK, {
 					i(51334, {	-- Wrathful Gladiator's Cloak of Ascendancy
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3742,7 +3742,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-326, {	-- Wrists
+				n(WRIST, {
 					i(51345, {	-- Wrathful Gladiator's Armwraps of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3783,7 +3783,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-328, {	-- Waist
+				n(WAIST, {
 					i(51343, {	-- Wrathful Gladiator's Belt of Dominance
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
@@ -3824,7 +3824,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
-				n(-330, {	-- Feet
+				n(FEET, {
 					i(51344, {	-- Wrathful Gladiator's Boots of Dominance
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -3859,7 +3859,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				n(-384,	{	-- Neck
+				n(NECK, {
 					i(51335),	-- Wrathful Gladiator's Pendant of Ascendancy
 					i(51349),	-- Wrathful Gladiator's Pendant of Deliverance
 					i(51331),	-- Wrathful Gladiator's Pendant of Dominance
@@ -3869,7 +3869,7 @@ _.PVP =
 					i(51355),	-- Wrathful Gladiator's Pendant of Triumph
 					i(51357),	-- Wrathful Gladiator's Pendant of Victory
 				}),
-				n(-385,	{	-- Finger
+				n(FINGER, {
 					i(51336),	-- Wrathful Gladiator's Band of Dominance
 					i(51358),	-- Wrathful Gladiator's Band of Triumph
 				}),
@@ -3890,13 +3890,13 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(51378)), -- (H) Medallion of the Horde
 				}),
 			}),
-			n(-662, {	-- Elite PvP Gear
+			n(PVP_ELITE, {
 				-- Original Sources are:
 				-- n34095 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
 				-- n34094 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
 				-- n34093 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
 				un(REMOVED_FROM_GAME, i(51534)),	-- Wrathful Gladiator's Tabard
-				n(-319, {	-- Weapons
+				n(WEAPONS, {
 					un(REMOVED_FROM_GAME, i(51403)),	-- Wrathful Gladiator's Acute Staff
 					un(REMOVED_FROM_GAME, i(51398)),	-- Wrathful Gladiator's Blade of Celerity
 					un(REMOVED_FROM_GAME, i(51393)),	-- Wrathful Gladiator's Claymore
@@ -3933,7 +3933,7 @@ _.PVP =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10014, {	-- Wrath of the Lich King
 		n(-668, {	-- Deadly Gladiator: Season 5
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(42214),	-- Savage Gladiator's Waraxe
 				i(42523),	-- Savage Gladiator's Endgame
 				i(42529),	-- Savage Gladiator's Reprieve

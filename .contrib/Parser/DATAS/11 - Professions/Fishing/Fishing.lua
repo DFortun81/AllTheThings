@@ -414,7 +414,7 @@ profession(FISHING, {
 			["provider"] = { "i", 49667 },	-- Waterlogged Recipe
 		}),
 	}),
-	n(-319,   {	-- Weapons
+	n(WEAPONS, {
 		i(44703),	-- Dark Herring
 		i(44505, {	-- Dustbringer
 			["description"] = "Can be caught in schools or open water in Northrend.",

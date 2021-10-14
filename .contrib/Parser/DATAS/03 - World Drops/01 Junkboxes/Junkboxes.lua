@@ -6,7 +6,6 @@ _.WorldDrops =
 {
 	n(-165, {	-- Junkboxes
 		["description"] = "These items have a small chance of dropping from junkboxes.",
-		["icon"] = "Interface\\Icons\\inv_box_01",
 		["g"] = {
 			i(169475),	-- Barnacled Lockbox
 			i(16882, {	-- Battered Junkbox

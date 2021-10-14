@@ -271,7 +271,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 							}),
 						},
 					}),
-					un(REMOVED_FROM_GAME, i(12709)),	-- Finkle's Skinner
+					un(REMOVED_FROM_GAME, i(12709)),	-- Pip's Skinner
 					un(REMOVED_FROM_GAME, i(12969)),	-- Seeping Willow
 					un(REMOVED_FROM_GAME, i(12967)),	-- Bloodmoon Cloak
 					un(REMOVED_FROM_GAME, i(12968)),	-- Frostweaver Cape

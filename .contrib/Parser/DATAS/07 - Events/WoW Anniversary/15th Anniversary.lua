@@ -237,7 +237,7 @@ _.WorldEvents =
 							["coord"] = { 58.1, 33.6, HILLSBRAD_FOOTHILLS },
 							["races"] = HORDE_ONLY,
 							["g"] = {
-								n(-322, {	-- Cloaks
+								n(BACK, {
 									i(172100, {	-- Frostwolf Advisor's Cloak
 										["cost"] = {
 											{ "i", 137642, 1 },	-- 1x  Mark of Honor
@@ -341,7 +341,7 @@ _.WorldEvents =
 										},
 									}),
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(172122, {	-- Bloodseeker
 										["cost"] = {
 											{ "i", 137642, 2 },	-- 2x  Mark of Honor
@@ -451,7 +451,7 @@ _.WorldEvents =
 							["coord"] = { 44.7, 46.4, HILLSBRAD_FOOTHILLS },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
-								n(-322, {	-- Cloaks
+								n(BACK, {
 									i(172101, {	-- Stormpike Sage's Cloak
 										["cost"] = {
 											{ "i", 137642, 1 },	-- 1x  Mark of Honor
@@ -555,7 +555,7 @@ _.WorldEvents =
 										},
 									}),
 								}),
-								n(-319, {	-- Weapons
+								n(WEAPONS, {
 									i(172122, {	-- Bloodseeker
 										["cost"] = {
 											{ "i", 137642, 2 },	-- 2x  Mark of Honor
@@ -693,7 +693,7 @@ _.WorldEvents =
 									}),
 								},
 							}),
-							n(-10003, {	-- The Burning Crusade
+							n(TBC_HEADER, {
 								e(1572, {	-- Lady Vashj — items available outside of anniversary event
 									["cr"] = 21212,	-- Lady Vashj
 									["g"] = {

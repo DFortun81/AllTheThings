@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(WOD_TIER, {
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			n(-334, {	-- 1H Axes
 				i(116457),	-- Frostbitten Axe
 				i(116474),	-- Lunarglow Axe

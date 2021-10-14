@@ -411,19 +411,16 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	DEMONHUNTER,
 };
 
--- Headers
+-------------------------------------------
+--     C U S T O M   H E A D E R S       --
+-------------------------------------------
+-- Zone Headers --
 ACHIEVEMENTS = -4;
 BONUS_OBJECTIVES = -221;
-COMMON_BOSS_DROPS = -1;
 COMMON_VENDOR_ITEMS = -20;
-CONDUITS = -981;
-DISCOVERY = -37;
 EMISSARY_QUESTS = -169;
 EXPLORATION = -15;
-FACTIONS = -6013;
 FLIGHT_PATHS = -228;
-LEGENDARIES = -364;
-MAILBOX = -297;
 QUESTS = -17;
 RARES = -16;
 REWARDS = -18;
@@ -433,6 +430,9 @@ VENDORS = -2;
 WORLD_QUESTS = -34;
 ZONE_DROPS = 0;
 ZONE_REWARDS = -903;
+
+-- Factions
+FACTIONS = -6013;
 FACTION_HEADER_NEUTRAL = -9912;
 FACTION_HEADER_ALLIANCE = -9914;
 FACTION_HEADER_HORDE = -9913;
@@ -440,21 +440,53 @@ FACTION_HEADER_HORDE = -9913;
 -- Slot Categories
 HEAD = -320;
 SHOULDER = -321;
-CLOAK = -322;
+BACK = -322;
 CHEST = -323;
 WRIST = -326;
-HANDS =	-327;
-WAIST =	-328;
+HANDS = -327;
+WAIST = -328;
 LEGS = -329;
 FEET = -330;
 NECK = -384;
 FINGER = -385;
+-- Meta Slot
+WEAPONS = -319;
+
+-- D&R
+COMMON_BOSS_DROPS = -1;
+
+-- PvP Headers
+PVP = -9;
+PVP_ASPIRANT = -659;
+PVP_COMBATANT = -660;
+PVP_GLADIATOR = -661;
+PVP_ELITE = -662;
+
+-- PvP Seasons
+PRE_SEASON = -658;
+SEASON_GLADIATOR = -664;
+SEASON_MERCILESS = -665;
+SEASON_VENGEFUL = -666;
+SEASON_BRUTAL = -667;
+
+-- Expansion Headers
+TBC_HEADER = -10003;
+
+-- Expansion Features
+CONDUITS = -981;
+LEGENDARIES = -364;
+
+-- Special
+MAILBOX = -297;
+PROMOTIONS = -31;
+-- End of Custom Headers --
 
 -- Filters
 BATTLE_PETS = 101;
 
 -- Professions
 PROFESSIONS = -38;
+DISCOVERY = -37;
 ALCHEMY = 171;
 ARCHAEOLOGY = 794;
 BLACKSMITHING = 164;

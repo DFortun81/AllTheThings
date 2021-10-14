@@ -283,12 +283,6 @@ _.Zones =
 								i(134123),	-- "Reliable" Boom-O-Tronic
 							},
 						}),
-						q(47709, {	-- The Great Gnomeregan Race
-							["provider"] = { "n", 124280 },	-- Mina Gleespanner
-							["coord"] = { 36.4, 36.4, 469 },
-							["races"] = { GNOME },
-							["isYearly"] = true,
-						}),
 						q(27674, {	-- To the Surface
 							["sourceQuests"] = { 27635 },	-- Decontamination
 							["provider"] = { "n", 46255 },	-- Technician Braggle

@@ -34,25 +34,25 @@ _.Craftables =
 				i(161969),	-- Shimmerscale Striker [Alliance]
 				i(154160),	-- Shimmerscale Striker [Horde]
 			}),
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(161941),	-- Coarse Leather Helm [Alliance]
 				i(154141),	-- Coarse Leather Helm [Horde]
 				i(161956),	-- Shimmerscale Helm [Alliance]
 				i(154149),	-- Shimmerscale Helm [Horde]
 			}),
-			n(-321, {	-- Shoulders
+			n(SHOULDER, {
 				i(161943),	-- Coarse Leather Pauldrons [Alliance]
 				i(154143),	-- Coarse Leather Pauldrons [Horde]
 				i(161958),	-- Shimmerscale Pauldrons [Alliance]
 				i(154151),	-- Shimmerscale Pauldrons [Horde]
 			}),
-			n(-323, {	-- Chest
+			n(CHEST, {
 				i(161938),	-- Coarse Leather Vest [Alliance]
 				i(154138),	-- Coarse Leather Vest [Horde]
 				i(161953),	-- Shimmerscale Vest [Alliance]
 				i(154146),	-- Shimmerscale Vest [Horde]
 			}),
-			n(-327, {	-- Hands
+			n(HANDS, {
 				i(161940),	-- Coarse Leather Gauntlets [Alliance]
 				i(154140),	-- Coarse Leather Gauntlets [Horde]
 				i(161949),	-- Honorable Combatant's Leather Gauntlets [Alliance]
@@ -74,7 +74,7 @@ _.Craftables =
 				i(170353),	-- Uncanny Combatant's Mail Gauntlets [Alliance]
 				i(170358),	-- Uncanny Combatant's Mail Gauntlets [Horde]
 			}),
-			n(-326, {	-- Wrist
+			n(WRIST, {
 				i(161945),	-- Coarse Leather Armguards [Alliance]
 				i(154145),	-- Coarse Leather Armguards [Horde]
 				i(161952),	-- Honorable Combatant's Leather Armguards [Alliance]
@@ -96,7 +96,7 @@ _.Craftables =
 				i(170352),	-- Uncanny Combatant's Mail Armguards [Alliance]
 				i(170357),	-- Uncanny Combatant's Mail Armguards [Horde]
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				i(161944),	-- Coarse Leather Waistguard [Alliance]
 				i(154144),	-- Coarse Leather Waistguard [Horde]
 				i(161951),	-- Honorable Combatant's Leather Waistguard [Alliance]
@@ -118,7 +118,7 @@ _.Craftables =
 				i(170356),	-- Uncanny Combatant's Mail Waistguard [Alliance]
 				i(170361),	-- Uncanny Combatant's Mail Waistguard [Horde]
 			}),
-			n(-329, {	-- Legs
+			n(LEGS, {
 				i(168721),	-- Banded Cragscale Greaves [Alliance]
 				i(168727),	-- Banded Cragscale Greaves [Horde]
 				i(168709),	-- Banded Dredged Leggings [Alliance]
@@ -210,7 +210,7 @@ _.Craftables =
 					i(171125),	-- Pattern: Maddening Dredged Leather Leggings
 				}),
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				i(168718),	-- Banded Cragscale Boots [Alliance]
 				i(168724),	-- Banded Cragscale Boots [Horde]
 				i(168706),	-- Banded Dredged Boots [Alliance]

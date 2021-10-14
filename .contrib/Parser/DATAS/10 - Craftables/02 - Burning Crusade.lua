@@ -200,7 +200,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 		}),
-		n(-320, {		-- Head
+		n(HEAD, {
 			i(23493),	-- Fel Iron Chain Coif
 			i(23519),	-- Felsteel Helm
 			i(23516),	-- Flamebane Helm
@@ -211,12 +211,12 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(23534),	-- Storm Helm
 			i(31368),	-- Wildguard Helm
 		}),
-		n(-321, {		-- Shoulders
+		n(SHOULDER, {
 			i(32573),	-- Dawnsteel Shoulders
 			i(33173),	-- Ragesteel Shoulders
 			i(32570),	-- Swiftsteel Shoulders
 		}),
-		n(-323, {		-- Chest
+		n(CHEST, {
 			i(23507),	-- Adamantite Breastplate
 			i(28483, {	-- Breastplate of Kings
 				["timeline"] = {
@@ -277,7 +277,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			i(31364),	-- Wildguard Breastplate
 		}),
-		n(-327, {		-- Hands
+		n(HANDS, {
 			i(23508),	-- Adamantite Plate Gloves
 			i(23491),	-- Fel Iron Chain Gloves
 			i(23482),	-- Fel Iron Plate Gloves
@@ -291,7 +291,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(34380),	-- Sunblessed Gauntlets
 			i(23526),	-- Swiftsteel Gloves
 		}),
-		n(-326, {		-- Wrist
+		n(WRIST, {
 			i(23506),	-- Adamantite Plate Bracers
 			i(23537),	-- Black Felsteel Bracers
 			i(23539),	-- Blessed Bracers
@@ -302,7 +302,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(32403),	-- Shadesteel Bracers
 			i(32568),	-- Swiftsteel Bracers
 		}),
-		n(-328, {		-- Waist
+		n(WAIST, {
 			i(30034),	-- Belt of the Guardian
 			i(23510),	-- Enchanted Adamantite Belt
 			i(23484),	-- Fel Iron Plate Belt
@@ -310,7 +310,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(30032),	-- Red Belt of Battle
 			i(32401),	-- Shadesteel Girdle
 		}),
-		n(-329, {		-- Legs
+		n(LEGS, {
 			i(30069, {	-- Earthforged Leggings
 				["timeline"] = {
 					"added 2.0.1.6180",
@@ -331,7 +331,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 		}),
-		n(-330, {		-- Feet
+		n(FEET, {
 			i(30033),	-- Boots of the Protector
 			i(23511),	-- Enchanted Adamantite Boots
 			i(23487),	-- Fel Iron Plate Boots
@@ -390,7 +390,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(30542),	-- Dimensional Ripper - Area 52*
 			i(30544),	-- Ultrasafe Transporter: Toshley's Station*
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			-- Guns
 			i(23746),	-- Adamantite Rifle*
 			i(23742),	-- Fel Iron Musket*
@@ -514,7 +514,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		}),
 	}),
 	prof(JEWELCRAFTING, {
-		n(-320, {		-- Head
+		n(HEAD, {
 			i(24123),	-- Circlet of Arcane Might
 			i(24122),	-- Coronet of Verdant Flame
 			i(32776),	-- Crown of the Sea Witch
@@ -606,7 +606,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 		}),
-		n(-322, {	-- Cloak
+		n(BACK, {
 			i(33122, {	-- Cloak of Darkness
 				["timeline"] = {
 					"added 2.2.0.6983",
@@ -836,7 +836,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(22252),	-- Satchel of Cenarius
 			i(21858),	-- Spellfire Bag
 		}),
-		n(-323, {	-- Chest
+		n(CHEST, {
 			i(21868),	-- Arcanoweave Robe
 			i(30839),	-- Flameheart Vest
 			i(21871),	-- Frozen Shadoweave Robe
@@ -850,7 +850,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(21848),	-- Spellfire Robe
 			i(34364),	-- Sunfire Robe
 		}),
-		n(-322, {	-- Cloaks
+		n(BACK, {
 			i(30831),	-- Cloak of Arcane Evasion
 			i(24253),	-- Cloak of Eternity
 			i(24252),	-- Cloak of the Black Void
@@ -860,7 +860,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(24259),	-- Vengeance Wrap
 			i(24254),	-- White Remedy Cape
 		}),
-		n(-330, {	-- Feet
+		n(FEET, {
 			i(21867),	-- Arcanoweave Boots
 			i(30037),	-- Boots of Blasting
 			i(30035),	-- Boots of the Long Road
@@ -869,7 +869,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(21853),	-- Netherweave Boots
 			i(32391),	-- Soulguard Slippers
 		}),
-		n(-327, {	-- Hands
+		n(HANDS, {
 			i(30838),	-- Flameheart Gloves
 			i(34367),	-- Hands of Eternal Light
 			i(21851),	-- Netherweave Gloves
@@ -877,12 +877,12 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(21847),	-- Spellfire Gloves
 			i(34366),	-- Sunfire Handwraps
 		}),
-		n(-320, {	-- Head
+		n(HEAD, {
 			i(24267),	-- Battlecast Hood
 			i(24266),	-- Spellstrike Hood
 			i(24264),	-- Whitemend Hood
 		}),
-		n(-329, {	-- Legs
+		n(LEGS, {
 			i(24263),	-- Battlecast Pants
 			i(21859),	-- Imbued Netherweave Pants
 			i(21852),	-- Netherweave Pants
@@ -890,14 +890,14 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(24262),	-- Spellstrike Pants
 			i(24261),	-- Whitemend Pants
 		}),
-		n(-321, {	-- Shoulders
+		n(SHOULDER, {
 			i(21869),	-- Frozen Shadoweave Shoulders
 			i(32587),	-- Mantle of Nimble Thought
 			i(21874),	-- Primal Mooncloth Shoulders
 			i(21864),	-- Soulcloth Shoulders
 			i(32585),	-- Swiftheal Mantle
 		}),
-		n(-328, {	-- Waist
+		n(WAIST, {
 			i(30038),	-- Belt of Blasting
 			i(30036),	-- Belt of the Long Road
 			i(24257),	-- Black Belt of Knowledge
@@ -908,7 +908,7 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(21846),	-- Spellfire Belt
 			i(24255),	-- Unyielding Girdle
 		}),
-		n(-326, {	-- Wrist
+		n(WRIST, {
 			i(21866),	-- Arcanoweave Bracers
 			i(24251),	-- Blackstrike Bracers
 			i(24250),	-- Bracers of Havok

@@ -66,6 +66,7 @@ _.ExpansionFeatures =
 								}),
 								q(36182, {	-- Tree-i-cide
 									["provider"] = { "n", 84247 },	-- Lumber Lord Oktron <Work Orders>
+									["description"] = "This Quest requires a Level 3 Lumber Mill.",
 								}),
 								q(36138, {	-- Turning Timber into Profit
 									["sourceQuest"] = 36137,	-- Easing into Lumberjacking

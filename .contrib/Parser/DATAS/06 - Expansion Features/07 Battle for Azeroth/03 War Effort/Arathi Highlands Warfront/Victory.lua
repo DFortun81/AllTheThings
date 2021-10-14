@@ -258,7 +258,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177111),	-- Honorbound Centurion's Gauntlets
 					i(177112),	-- Honorbound Centurion's Greaves
 				}),
-				n(-322, {	-- Cloaks
+				n(BACK, {
 					i(163245),	-- 7th Legionnaire's Satin Cloak
 					i(163311),	-- 7th Legionnaire's Shroud
 					i(163312),	-- 7th Legionnaire's Shawl
@@ -287,7 +287,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(163415),	-- 7th Legionnarie's Iron Cloak
 				}),
 			}),
-			n(-319, {	-- Weapons
+			n(WEAPONS, {
 				i(165617),	-- UNUSED - PH Horde Warfront Protectorate
 				i(177114),	-- Honorbound Longbow
 				i(177128),	-- 7th Legionnaire's Longbow

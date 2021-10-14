@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(-9962, {	-- World Events
-		n(-10022, {	-- Pilgrim's Bounty
+		holiday(235466, {	-- Pilgrim's Bounty
 			ach(3579, {	-- "FOOD FIGHT!"
 				["u"] = PILGRIMS_BOUNTY,
 			}),

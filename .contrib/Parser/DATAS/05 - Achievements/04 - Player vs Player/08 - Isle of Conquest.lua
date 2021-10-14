@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	pvp(n(-9958, {	-- Player vs Player
+	pvp(n(PVP, {
 		n(-9988, {	-- Isle of Conquest
 			["maps"] = { 169 },	-- Isle of Conquest (normal BG)
 			["g"] = {

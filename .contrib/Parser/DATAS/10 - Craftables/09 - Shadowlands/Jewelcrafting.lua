@@ -6,7 +6,7 @@ _.Craftables =
 {
 	tier(SL_TIER, {
 		prof(JEWELCRAFTING, {
-			n(-320, {	-- Head
+			n(HEAD, {
 				i(180760),	-- Crown of the Righteous
 			}),
 			filter(51, {	-- Neck

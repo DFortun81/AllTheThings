@@ -941,6 +941,7 @@ _.HiddenQuestTriggers = {
 		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success"
 		q(26136),	-- FLAG - Rigor Mortis Removed. Triggered on a fresh lvl 1 warlock undead on login
 		q(24644),	-- Troll Introduction Complete
+		q(26741),	-- REUSE - Northern Stranglethorn - triggered after completing "The Hunt" (questID 26340)
 		q(236),		-- Fueling the Demolishers (auto-completed removed quest)
 
 		--	DUNGEONS
@@ -1478,6 +1479,7 @@ _.HiddenQuestTriggers = {
 		q(34312),	-- Frostfire Ridge - The Magma Lord),	-- triggered when Molthron first appears at 43.6, 15.6
 		q(37544),	-- Frostfire Ridge - Garrison Follower: Greatmother Geyah),	-- triggers if you pick Greatmother Geyah during "The Frostwolves Stand Ready"
 		q(37545),	-- Frostfire Ridge - Garrison Follower: Kal'gor the Honorable),	-- triggers if you pick Kal'gor during "The Frostwolves Stand Ready"
+		q(34730),	-- Frostfire Ridge - Garrison Follower: Lokra),	-- triggers if you pick Lokra during "The Frostwolves Stand Ready"
 		q(34329),	-- Frostfire Ridge - Shamanstone: Buffeting Galefury selected. Only procs once
 		q(34330),	-- Frostfire Ridge - Shamanstone: Ogrish Fortitude selected. Only procs once
 		q(34456),	-- Frostfire Ridge - Shamanstone: Spirit of the Wolf. Popped when approaching the Frostwolf shamanstone
@@ -1636,10 +1638,14 @@ _.HiddenQuestTriggers = {
 		q(38038),	-- Max-level Choice Tracker: Tanaan 6.2 - The Iron Front (H)
 		q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (A)
 		q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (H)
+		--q(33069),	-- REUSEME (after killing Supreme Lord Kazzak?) - questID is too low for Tanaan Jungle, it has to be something else
 		q(37887),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (A)
 		q(37892),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (H)
 		q(37969),	-- Tanaan Jungle - Tracking Quest - Vol'mar Built - JMC
 		q(38433),	-- Tanaan Jungle - Tracking Quest - Lion's Watch Built - JMC
+		q(38760),	-- Treasure: Captain's Booty 1
+		q(38761),	-- Treasure: Captain's Booty 2
+		q(38762),	-- Treasure: Captain's Booty 3
 
 		--	DUNGEONS & RAIDS
 		q(35960),	-- Auchindoun Reward Quest

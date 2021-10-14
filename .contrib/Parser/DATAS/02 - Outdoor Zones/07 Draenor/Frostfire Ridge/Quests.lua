@@ -1049,6 +1049,10 @@ _.Zones =
 						i(106134),	-- Frostwolf Scout's Armwraps
 						i(106145),	-- Frostwolf Stalwart Bracers
 						i(106158),	-- Frostwolf Wind-Talker Cuffs
+						i(106155),	-- Karabor Honor Guard Wristwraps - confirmed 14/10/21
+						i(106165),	-- Karabor Sage Wristwraps - confirmed 14/10/21
+						i(106144),	-- Karabor Skirmisher Wristwraps - confirmed 14/10/21
+						i(106178),	-- Rangari Initiate Wristwraps - confirmed 14/10/21
 					},
 				}),
 				q(33526, {	-- These Colors Don't Run
@@ -1341,7 +1345,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(106147),	-- Forstwolf Stalwart Chestpiece (beta only)
 			}),
 		}),
-		n(-319, {	-- Weapons
+		n(WEAPONS, {
 			i(118186),	-- Frostwolf Wisdom Stick
 		}),
 	}),

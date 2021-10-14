@@ -16,7 +16,7 @@ _.Craftables =
 				i(172349),	-- Bone Bound Knuckles
 				i(172348),	-- Desolate Leather Cestus
 			}),
-			n(-320, {	-- Head
+			n(HEAD, {
 				filter(5, {	-- Leather
 					i(172317),	-- Umbrahide Helm
 					i(172253),	-- Shadebound Helm
@@ -28,7 +28,7 @@ _.Craftables =
 					i(172245),	-- Desolate Scale Helm
 				}),
 			}),
-			n(-321, {	-- Shoulders
+			n(SHOULDER, {
 				filter(5, {	-- Leather
 					i(172319),	-- Umbrahide Pauldrons
 					i(172255),	-- Shadebound Pauldrons
@@ -40,7 +40,7 @@ _.Craftables =
 					i(172247),	-- Desolate Scale Pauldrons
 				}),
 			}),
-			n(-323, {	-- Chest
+			n(CHEST, {
 				filter(5, {	-- Leather
 					i(172314),	-- Umbrahide Vest
 					i(172250),	-- Shadebound Vest
@@ -52,7 +52,7 @@ _.Craftables =
 					i(172242),	-- Desolate Scale Vest
 				}),
 			}),
-			n(-327, {	-- Hands
+			n(HANDS, {
 				filter(5, {	-- Leather
 					i(172322),	-- Umbrahide Gauntlets
 					i(172252),	-- Shadebound Gauntlets
@@ -64,7 +64,7 @@ _.Craftables =
 					i(172244),	-- Desolate Scale Gauntlets
 				}),
 			}),
-			n(-326, {	-- Wrist
+			n(WRIST, {
 				filter(5, {	-- Leather
 					i(172321),	-- Umbrahide Armguards
 					i(172257),	-- Shadebound Armguards
@@ -76,7 +76,7 @@ _.Craftables =
 					i(172249),	-- Desolate Scale Armguards
 				}),
 			}),
-			n(-328, {	-- Waist
+			n(WAIST, {
 				filter(5, {	-- Leather
 					i(172320),	-- Umbrahide Waistguard
 					i(172256),	-- Shadebound Waistguard
@@ -88,7 +88,7 @@ _.Craftables =
 					i(172248),	-- Desolate Scale Waistguard
 				}),
 			}),
-			n(-329, {	-- Legs
+			n(LEGS, {
 				filter(5, {	-- Leather
 					i(172318),	-- Umbrahide Leggings
 					i(172254),	-- Shadebound Greaves
@@ -100,7 +100,7 @@ _.Craftables =
 					i(172246),	-- Desolate Scale Greaves
 				}),
 			}),
-			n(-330, {	-- Feet
+			n(FEET, {
 				filter(5, {	-- Leather
 					i(172315),	-- Umbrahide Treads
 					i(172251),	-- Shadebound Treads

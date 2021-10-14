@@ -1851,7 +1851,7 @@ _.Zones =
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10003, {	-- The Burning Crusade
+	n(TBC_HEADER, {
 		cl(MAGE, {
 			i(47102),	-- Manaweave Robe Mage Quest reward
 		}),
