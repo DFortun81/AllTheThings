@@ -25,8 +25,6 @@ _.Instances = { tier(LEGION_TIER, {
 					689,	-- Ley Station Moonfall
 					690,	-- Ley Station Aethenar
 					691,	-- Nyell's Workshop
-					692,	-- Falanaar Arcway
-					693,	-- Falanaar Arcway
 					798,	-- The Arcway
 				},
 				["cr"] = 109943,	-- Ana-Mouz
@@ -279,8 +277,6 @@ _.Instances = { tier(LEGION_TIER, {
 					689,	-- Ley Station Moonfall
 					690,	-- Ley Station Aethenar
 					691,	-- Nyell's Workshop
-					692,	-- Falanaar Arcway
-					693,	-- Falanaar Arcway
 					798,	-- The Arcway
 				},
 				["cr"] = 110321,	-- Na'zak the Fiend

@@ -20,8 +20,8 @@ _.Zones =
 				689,	-- Ley Station Moonfall
 				690,	-- Ley Station Aethenar
 				691,	-- Nyell's Workshop
-				692,	-- Falanaar Arcway
-				693,	-- Falanaar Arcway
+				-- 692,	-- Falanaar Arcway
+				-- 693,	-- Falanaar Arcway
 				798,	-- The Arcway
 			},
 		}),
