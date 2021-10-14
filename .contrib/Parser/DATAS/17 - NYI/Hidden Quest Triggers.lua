@@ -1479,6 +1479,7 @@ _.HiddenQuestTriggers = {
 		q(34312),	-- Frostfire Ridge - The Magma Lord),	-- triggered when Molthron first appears at 43.6, 15.6
 		q(37544),	-- Frostfire Ridge - Garrison Follower: Greatmother Geyah),	-- triggers if you pick Greatmother Geyah during "The Frostwolves Stand Ready"
 		q(37545),	-- Frostfire Ridge - Garrison Follower: Kal'gor the Honorable),	-- triggers if you pick Kal'gor during "The Frostwolves Stand Ready"
+		q(34730),	-- Frostfire Ridge - Garrison Follower: Lokra),	-- triggers if you pick Lokra during "The Frostwolves Stand Ready"
 		q(34329),	-- Frostfire Ridge - Shamanstone: Buffeting Galefury selected. Only procs once
 		q(34330),	-- Frostfire Ridge - Shamanstone: Ogrish Fortitude selected. Only procs once
 		q(34456),	-- Frostfire Ridge - Shamanstone: Spirit of the Wolf. Popped when approaching the Frostwolf shamanstone
