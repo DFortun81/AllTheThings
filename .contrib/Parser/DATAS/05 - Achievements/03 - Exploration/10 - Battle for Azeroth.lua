@@ -993,11 +993,6 @@ _.Achievements =
 						137411,	-- Joseph Stephens
 						138905,	-- Rusty Blade Waitress
 					},
-					["maps"] = {
-						BORALUS,
-						STORMSONG_VALLEY,
-						TIRAGARDE_SOUND,
-					},
 					["coords"] = {
 						{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
 						{ 74.25, 17.76, BORALUS },	-- Allison Weber
@@ -1015,11 +1010,6 @@ _.Achievements =
 						129044,	-- Martha Mae
 						142189,	-- Ruddy the Rat
 					},
-					["maps"] = {
-						BORALUS,
-						DRUSTVAR,
-						TIRAGARDE_SOUND,
-					},
 					["coords"] = {
 						{ 54.99, 43.63, BORALUS },	-- Crimper Mirjam
 						{ 75.44, 18.61, BORALUS },	-- Garrett Elmendorf
@@ -1032,9 +1022,6 @@ _.Achievements =
 				i(163639, {	-- Arathor Single Cask
 					["crs"] = {
 						143487,	-- Nicolas Moal
-					},
-					["maps"] = {
-						BORALUS,
 					},
 					["coords"] = {
 						{ 58.17, 70.32, BORALUS },	-- Nicolas Moal
