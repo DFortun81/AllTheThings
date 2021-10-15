@@ -414,14 +414,14 @@ app.L = {
 	["UNOBTAINABLES_TAB"] = "Unobtainables";
 	["SEASONAL_LABEL"] = "Seasonal";
 	--["SEASONAL_ENABLE"] = "Filter Seasonal Items";
-	["SEASONAL_ALL"] = "|cffECBC21Toggle All Seasonal";
+	["SEASONAL_ALL"] = "|cffECBC21Show All Seasonal";
 	["UNOBTAINABLE_LABEL"] = "Unobtainable";
 	--["UNOBTAINABLE_ENABLE"] = "Filter Unobtainable Items";
-	["UNOBTAINABLE_ALL"] = "|cffECBC21Toggle All Unobtainable";
+	["UNOBTAINABLE_ALL"] = "|cffECBC21Show All Unobtainable";
 	--["NO_CHANCE_LABEL"] = "No Chance";
-	["NO_CHANCE_ALL"] = "|cffECBC21Toggle All \"No Chance\"";
+	["NO_CHANCE_ALL"] = "|cffECBC21Show All \"No Chance\"";
 	--["HIGH_CHANCE_LABEL"] = "High Chance";
-	["HIGH_CHANCE_ALL"] = "|cffECBC21Toggle All \"High Chance\"";
+	["HIGH_CHANCE_ALL"] = "|cffECBC21Show All \"High Chance\"";
 
 	-- Interface tab
 	["INTERFACE_TAB"] = "Interface";
