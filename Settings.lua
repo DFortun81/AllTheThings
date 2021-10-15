@@ -2576,7 +2576,7 @@ function(self)
 	local val = app.GetDataMember("SeasonalFilters")
 	for k,v in ipairs(holidayOrder) do
 		if holidayThings[v][1] == 4 then
-			isTrue = isTrue and not val[k]
+			isTrue = isTrue and not val[v]
 		end
 	end
 	self:SetChecked(not isTrue); -- 'not' = inversed :D
@@ -2592,7 +2592,7 @@ function(self)
 	local val = app.GetDataMember("SeasonalFilters")
 	for k,v in ipairs(holidayOrder) do
 		if holidayThings[v][1] == 4 then
-			val[k] = not not self:GetChecked() -- 'not' = inversed :D
+			val[v] = not not self:GetChecked() -- 'not' = inversed :D
 		end
 	end
 	app.SetDataMember("SeasonalFilters", val);
@@ -2606,11 +2606,10 @@ local x = 8;
 local y = 4;
 local count = 0;
 for k, v in ipairs(holidayOrder) do
-	--if v[1] == 4 then
 	if holidayThings[v][1] == 4 then
 		local seasonalFilter = child:CreateCheckBox(holidayThings[v][3],
 		function(self)
-			self:SetChecked(not not app.GetDataMember("SeasonalFilters")[k]); -- 'not' = inversed :D
+			self:SetChecked(not not app.GetDataMember("SeasonalFilters")[v]); -- 'not' = inversed :D
 			if not app.GetDataMember("FilterSeasonal") then -- Is disabled if I fucked up
 				self:Disable();
 				self:SetAlpha(0.2);
@@ -2621,7 +2620,7 @@ for k, v in ipairs(holidayOrder) do
 		end,
 		function(self)
 			local val = app.GetDataMember("SeasonalFilters")
-			val[k]= not not self:GetChecked() -- 'not' = inversed :D
+			val[v] = not not self:GetChecked() -- 'not' = inversed :D
 			app.SetDataMember("SeasonalFilters", val);
 			settings:Refresh();
 			settings:UpdateMode(1);
@@ -2648,7 +2647,7 @@ UnobtainableFiltersLabel:SetPoint("LEFT", GeneralFiltersLabel, "LEFT", 0, 0);
 local UnobtainableAllCheckBox = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 function(self)
 	app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
-	app.SetDataMember("FilterUnobtainableItems", true);-- Always enable Unobtainable Filter
+	app.SetDataMember("FilterUnobtainableItems", true); -- Always enable Unobtainable Filter
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
 	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
@@ -2749,8 +2748,6 @@ for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 	end
 end
 
-
--- high Everything
 local HighChanceAllCheckBox = child:CreateCheckBox(L["HIGH_CHANCE_ALL"],
 function(self)
 	local isTrue = true
