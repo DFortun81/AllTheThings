@@ -2006,7 +2006,7 @@ PrecisionSliderLabel.OnRefresh = function(self)
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
-	end	
+	end
 end;
 
 local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", child, "OptionsSliderTemplate");

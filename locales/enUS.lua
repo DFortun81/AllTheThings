@@ -409,7 +409,7 @@ app.L = {
 		["SL_COV_NFA"] = { "|T"..("Interface\\Icons\\ui_sigil_nightfae.blp")..":0|t |cffADD8E6Night Fae Covenant|r" },
 		["SL_COV_VEN"] = { "|T"..("Interface\\Icons\\ui_sigil_venthyr.blp")..":0|t |cffADD8E6Venthyr Covenant|r" },
 	};
-	-- Unobtainables tab  
+	-- Unobtainables tab
 	["UNOBTAINABLES_TAB"] = "Unobtainables";
 	["SEASONAL_LABEL"] = "Seasonal";
 	--["SEASONAL_ENABLE"] = "Filter Seasonal Items";
