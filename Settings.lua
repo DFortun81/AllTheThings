@@ -937,7 +937,7 @@ line:SetColorTexture(1, 1, 1, 0.4);
 line:SetHeight(2);
 
 local function OnScrollBarMouseWheel(self, delta)
-	self.ScrollBar:SetValue(self.ScrollBar.CurrentValue - (delta * 20)); -- Last number here controls scroll speed.
+	self.ScrollBar:SetValue(self.ScrollBar.CurrentValue - (delta * 40)); -- Last number here controls scroll speed.
 end
 local function OnScrollBarValueChanged(self, value)
 	local un = math.floor(value);
@@ -952,7 +952,7 @@ scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
 scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
 scrollbar.back:SetColorTexture(0,0,0,0.4)
 scrollbar.back:SetAllPoints(scrollbar);
-scrollbar:SetMinMaxValues(0, 12); -- Adding more max value to the scrollbar is what controls the vertical size.
+scrollbar:SetMinMaxValues(0, 21); -- Adding more max value to the scrollbar is what controls the vertical size.
 scrollbar:SetValueStep(1);
 scrollbar.CurrentValue = 0;
 scrollbar:SetWidth(16);
@@ -988,6 +988,14 @@ ModeLabel.OnRefresh = function(self)
 	self:SetText(settings:GetModeString());
 end;
 
+local ModeExplainLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+ModeExplainLabel:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -4);
+ModeExplainLabel:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
+ModeExplainLabel:SetJustifyH("LEFT");
+ModeExplainLabel:SetText(L["MODE_EXPLAIN_LABEL"]);
+ModeExplainLabel:Show();
+table.insert(settings.MostRecentTab.objects, ModeExplainLabel);
+
 local AccountModeCheckBox = child:CreateCheckBox(L["ACCOUNT_MODE"],
 function(self)
 	self:SetChecked(settings:Get("AccountMode"));
@@ -1003,7 +1011,7 @@ function(self)
 	settings:SetAccountMode(self:GetChecked());
 end);
 AccountModeCheckBox:SetATTTooltip(L["ACCOUNT_MODE_TOOLTIP"]);
-AccountModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", -2, 0);
+AccountModeCheckBox:SetPoint("TOPLEFT", ModeExplainLabel, "BOTTOMLEFT", -2, -2);
 
 local FactionModeCheckBox = child:CreateCheckBox(L["FACTION_MODE"],
 function(self)
@@ -1726,7 +1734,7 @@ RuneforgeLegendariesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_RUNEFORGEL
 RuneforgeLegendariesAccountWideCheckBox:SetPoint("RIGHT", RuneforgeLegendariesCheckBox, "LEFT", 4, 0);
 
 local ExtraThingsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ExtraThingsLabel:SetPoint("TOP", AccountModeCheckBox, "TOP", 0, 0);
+ExtraThingsLabel:SetPoint("TOP", ModeExplainLabel, "BOTTOM", 0, -2);
 ExtraThingsLabel:SetPoint("LEFT", settings, "RIGHT", -290, 0);
 ExtraThingsLabel:SetJustifyH("LEFT");
 ExtraThingsLabel:SetText(L["EXTRA_THINGS_LABEL"]);
@@ -2065,7 +2073,7 @@ tab.OnRefresh = function(self)
 	end
 end;
 local function OnScrollBarMouseWheel(self, delta)
-	self.ScrollBar:SetValue(self.ScrollBar.CurrentValue - (delta * 20)); -- Last number here controls scroll speed.
+	self.ScrollBar:SetValue(self.ScrollBar.CurrentValue - (delta * 40)); -- Last number here controls scroll speed.
 end
 local function OnScrollBarValueChanged(self, value)
 	local un = math.floor(value);
