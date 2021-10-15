@@ -252,7 +252,7 @@ settings.GetFilter = function(self, filterID)
 	return AllTheThingsSettingsPerCharacter.Filters[filterID];
 end
 settings.GetModeString = function(self)
-	local mode = L["MODE"] .. " " .. app.Version;
+	local mode = L["MODE"];
 	if settings:Get("Thing:Transmog") or settings:Get("DebugMode") then
 		if self:Get("Completionist") then
 			mode = L["TITLE_COMPLETIONIST"] .. mode;
@@ -265,7 +265,14 @@ settings.GetModeString = function(self)
 	else
 		if self:Get("AccountMode") then
 			if self:Get("FactionMode") then
-				mode = FACTION .. " " .. mode;
+				local englishFaction = UnitFactionGroup("player");
+				if englishFaction == "Alliance" then
+					mode = L["TITLE_ALLIANCE"] .. " " .. mode;
+				elseif englishFaction == "Horde" then
+					mode = L["TITLE_HORDE"] .. " " .. mode;
+				else
+					mode = L["TITLE_NEUTRAL"] .. " " .. mode;
+				end
 			else
 				mode = L["TITLE_ACCOUNT"] .. mode;
 			end
@@ -301,10 +308,8 @@ settings.GetModeString = function(self)
 		elseif thingCount == totalThingCount then
 			-- only insane if not hiding anything!
 			if
-			-- Hiding BoE's
-			(not self:Get("Filter:BoEs") and self:Get("Hide:BoEs")) or
-			-- Hiding PvP
-			self:Get("Hide:PvP")
+			-- Hiding BoE's or PvP or Covenants
+			self:Get("Hide:BoEs") or self:Get("Hide:PvP") or not self:GetFilter("CC:SL_COV_KYR") or not self:GetFilter("CC:SL_COV_NEC") or not self:GetFilter("CC:SL_COV_NFA") or not self:GetFilter("CC:SL_COV_VEN")
 			then
 				-- don't add insane :)
 			else
@@ -875,24 +880,43 @@ settings.version = f;
 
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("TOPLEFT", settings, "BOTTOMLEFT", 0, -6);
-f:SetText("discord.gg/allthethings");
-f:SetWidth(230);
-f:SetHeight(30);
+f:SetText(L["DISCORD_BUTTON_LABEL"]);
+f:SetWidth(100);
+f:SetHeight(26);
 f:RegisterForClicks("AnyUp");
-f:SetScript("OnClick", settings.ShowCopyPasteDialog);
+f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "discord.gg/allthethings", nil, 10) end);
 f:SetATTTooltip(L["DISCORD_BUTTON_TOOLTIP"]);
+settings.community = f;
+
+f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
+f:SetPoint("TOPLEFT", settings.community, "TOPRIGHT", 4, 0);
+f:SetText(L["TWITCH_BUTTON_LABEL"]);
+f:SetWidth(100);
+f:SetHeight(26);
+f:RegisterForClicks("AnyUp");
+f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "twitch.tv/crieve", nil, 10) end);
+f:SetATTTooltip(L["TWITCH_BUTTON_TOOLTIP"]);
 settings.twitch = f;
 
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("TOPLEFT", settings.twitch, "TOPRIGHT", 4, 0);
-f:SetText("twitch.tv/crieve");
-f:SetWidth(200);
-f:SetHeight(30);
+f:SetText(L["PATREON_BUTTON_LABEL"]);
+f:SetWidth(100);
+f:SetHeight(26);
 f:RegisterForClicks("AnyUp");
-f:SetScript("OnClick", settings.ShowCopyPasteDialog);
-f:SetATTTooltip(L["TWITCH_BUTTON_TOOLTIP"]);
-settings.community = f;
+f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "patreon.com/allthethings", nil, 10) end);
+f:SetATTTooltip(L["PATREON_BUTTON_TOOLTIP"]);
+settings.patreon = f;
 
+f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
+f:SetPoint("TOPLEFT", settings.patreon, "TOPRIGHT", 4, 0);
+f:SetText(L["MERCH_BUTTON_LABEL"]);
+f:SetWidth(100);
+f:SetHeight(26);
+f:RegisterForClicks("AnyUp");
+f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "designbyhumans.com/shop/allthethings", nil, 10) end);
+f:SetATTTooltip(L["MERCH_BUTTON_TOOLTIP"]);
+settings.merch = f;
 ------------------------------------------
 -- The "General" Tab.					--
 ------------------------------------------
@@ -907,8 +931,51 @@ line:SetPoint("TOP", settings.Tabs[1], "BOTTOM", 0, 0);
 line:SetColorTexture(1, 1, 1, 0.4);
 line:SetHeight(2);
 
-local ModeLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ModeLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+local function OnScrollBarMouseWheel(self, delta)
+	self.ScrollBar:SetValue(self.ScrollBar.CurrentValue - (delta * 20)); -- Last number here controls scroll speed.
+end
+local function OnScrollBarValueChanged(self, value)
+	local un = math.floor(value);
+	local up = un + 1;
+	self.CurrentValue = (up - value) > (-(un - value)) and un or up;
+	self.child:SetPoint("TOP", 0, (self.CurrentValue / 100) * 200);
+end
+local scrollbar = CreateFrame("Slider", nil, settings, "UIPanelScrollBarTemplate");
+scrollbar:SetPoint("TOP", line, "BOTTOM", -3, -16);
+scrollbar:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -3, 20);
+scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
+scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
+scrollbar.back:SetColorTexture(0,0,0,0.4)
+scrollbar.back:SetAllPoints(scrollbar);
+scrollbar:SetMinMaxValues(0, 12); -- Adding more max value to the scrollbar is what controls the vertical size.
+scrollbar:SetValueStep(1);
+scrollbar.CurrentValue = 0;
+scrollbar:SetWidth(16);
+table.insert(settings.MostRecentTab.objects, scrollbar);
+
+local scrollFrame = CreateFrame("Frame", nil, settings);
+scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, 0);
+scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
+scrollFrame:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -20, 4);
+scrollFrame:SetClipsChildren(true);
+scrollFrame:EnableMouseWheel(true);
+scrollFrame.ScrollBar = scrollbar;
+scrollFrame:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
+table.insert(settings.MostRecentTab.objects, scrollFrame);
+
+local child = CreateFrame("Frame", nil, scrollFrame);
+child:SetPoint("TOP", 0, 0);
+child:SetSize(600, 500);
+scrollbar.child = child;
+table.insert(settings.MostRecentTab.objects, child);
+child.CreateCheckBox = function(self, label, onRefresh, onClick)
+	local checkBox = settings:CreateCheckBox(label, onRefresh, onClick);
+	checkBox:SetParent(child);
+	return checkBox;
+end
+
+local ModeLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+ModeLabel:SetPoint("TOPLEFT", child, "TOPLEFT", 10, -8);
 ModeLabel:SetJustifyH("LEFT");
 ModeLabel:Show();
 table.insert(settings.MostRecentTab.objects, ModeLabel);
@@ -916,69 +983,7 @@ ModeLabel.OnRefresh = function(self)
 	self:SetText(settings:GetModeString());
 end;
 
--- local DebugModeCheckBox = settings:CreateCheckBox(L["DEBUG_MODE"],
--- function(self)
--- 	self:SetChecked(settings:Get("DebugMode"));
--- end,
--- function(self)
--- 	settings:SetDebugMode(self:GetChecked());
--- end);
--- DebugModeCheckBox:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"]);
--- DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -1);
-
-local UniqueModeCheckBox = settings:CreateCheckBox(L["UNIQUE_MODE"],
-function(self)
-	self:SetChecked(not settings:Get("Completionist"));
-	if not settings:Get("Thing:Transmog") and not settings:Get("DebugMode") and not settings:Get("AccountMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetCompletionistMode(not self:GetChecked());
-end);
-UniqueModeCheckBox:SetATTTooltip(L["UNIQUE_MODE_TOOLTIP"]);
-UniqueModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -1);
-
-local CompletionistModeCheckBox = settings:CreateCheckBox(L["COMPLETIONIST_MODE"],
-function(self)
-	self:SetChecked(settings:Get("Completionist"));
-	if not settings:Get("Thing:Transmog") and not settings:Get("DebugMode") and not settings:Get("AccountMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetCompletionistMode(self:GetChecked());
-end);
-CompletionistModeCheckBox:SetATTTooltip(L["COMPLETIONIST_MODE_TOOLTIP"]);
-CompletionistModeCheckBox:SetPoint("LEFT", UniqueModeCheckBox.Text, "RIGHT", 4, 0);
-CompletionistModeCheckBox:SetPoint("TOP", UniqueModeCheckBox, "TOP", 0, 0);
-
-local MainOnlyModeCheckBox = settings:CreateCheckBox(L["I_ONLY_CARE_ABOUT_MY_MAIN"],
-function(self)
-	self:SetChecked(settings:Get("MainOnly"));
-	if settings:Get("Completionist") or settings:Get("AccountMode") or settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetMainOnlyMode(self:GetChecked());
-end);
-MainOnlyModeCheckBox:SetATTTooltip(L["MAIN_ONLY_MODE_TOOLTIP"]);
-MainOnlyModeCheckBox:SetPoint("TOPLEFT", UniqueModeCheckBox, "BOTTOMLEFT", 4, 4);
-
-local AccountModeCheckBox = settings:CreateCheckBox(L["ACCOUNT_MODE"],
+local AccountModeCheckBox = child:CreateCheckBox(L["ACCOUNT_MODE"],
 function(self)
 	self:SetChecked(settings:Get("AccountMode"));
 	if settings:Get("DebugMode") then
@@ -993,10 +998,18 @@ function(self)
 	settings:SetAccountMode(self:GetChecked());
 end);
 AccountModeCheckBox:SetATTTooltip(L["ACCOUNT_MODE_TOOLTIP"]);
-AccountModeCheckBox:SetPoint("TOPLEFT", MainOnlyModeCheckBox, "BOTTOMLEFT", -5, 4);
+AccountModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", -2, 0);
 
-local FactionModeCheckBox = settings:CreateCheckBox(L["FACTION_MODE"],
+local FactionModeCheckBox = child:CreateCheckBox(L["FACTION_MODE"],
 function(self)
+	local englishFaction = UnitFactionGroup("player")
+	if englishFaction == "Alliance" then
+		self.Text:SetTextColor(.25, .5, .75, 1);
+	elseif englishFaction == "Horde" then
+		self.Text:SetTextColor(.8, .4, .4, 1);
+	else
+		self.Text:SetTextColor(.93, .74, .13, 1);
+	end
 	self:SetChecked(settings:Get("FactionMode"));
 	if settings:Get("DebugMode") or not settings:Get("AccountMode") then
 		self:Disable();
@@ -1010,80 +1023,17 @@ function(self)
 	settings:SetFactionMode(self:GetChecked());
 end);
 FactionModeCheckBox:SetATTTooltip(L["FACTION_MODE_TOOLTIP"]);
-FactionModeCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "TOPLEFT", 170, 0);
+FactionModeCheckBox:SetPoint("TOP", AccountModeCheckBox, "TOP", 0, 0);
+FactionModeCheckBox:SetPoint("LEFT", AccountModeCheckBox.Text, "RIGHT", 4, 0);
 
--- This creates the "Precision" slider.
-local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", settings, "OptionsSliderTemplate");
-PrecisionSlider:SetPoint("RIGHT", settings, "RIGHT", -25, 0);
-PrecisionSlider:SetPoint("TOP", ModeLabel, "BOTTOM", 0, -12);
-table.insert(settings.MostRecentTab.objects, PrecisionSlider);
-settings.PrecisionSlider = PrecisionSlider;
-PrecisionSlider.tooltipText = L["PRECISION_SLIDER_TOOLTIP"];
-PrecisionSlider:SetOrientation('HORIZONTAL');
-PrecisionSlider:SetWidth(200);
-PrecisionSlider:SetHeight(20);
-PrecisionSlider:SetValueStep(1);
-PrecisionSlider:SetMinMaxValues(0, 8);
-PrecisionSlider:SetObeyStepOnDrag(true);
-_G[PrecisionSlider:GetName() .. 'Low']:SetText('0')
-_G[PrecisionSlider:GetName() .. 'High']:SetText('8')
-_G[PrecisionSlider:GetName() .. 'Text']:SetText(L["PRECISION_SLIDER"])
-PrecisionSlider.Label = PrecisionSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
-PrecisionSlider.Label:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, 2);
-PrecisionSlider.Label:SetText(PrecisionSlider:GetValue());
-PrecisionSlider:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue);
-	if newValue == settings:GetTooltipSetting("Precision") then
-		return 1;
-	end
-	settings:SetTooltipSetting("Precision", newValue)
-	app:UpdateWindows();
-end);
-
--- This creates the "Minimap Button Size" slider.
-local MinimapButtonSizeSlider = CreateFrame("Slider", "ATTMinimapButtonSizeSlider", settings, "OptionsSliderTemplate");
-MinimapButtonSizeSlider:SetPoint("LEFT", PrecisionSlider, "LEFT", 0, 0);
-MinimapButtonSizeSlider:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, -22);
-MinimapButtonSizeSlider:SetPoint("RIGHT", PrecisionSlider, "RIGHT", 0, 0);
-table.insert(settings.MostRecentTab.objects, MinimapButtonSizeSlider);
-settings.MinimapButtonSizeSlider = MinimapButtonSizeSlider;
-MinimapButtonSizeSlider.tooltipText = L["MINIMAP_SLIDER_TOOLTIP"];
-MinimapButtonSizeSlider:SetOrientation('HORIZONTAL');
-MinimapButtonSizeSlider:SetHeight(20);
-MinimapButtonSizeSlider:SetValueStep(1);
-MinimapButtonSizeSlider:SetMinMaxValues(18, 48);
-MinimapButtonSizeSlider:SetObeyStepOnDrag(true);
-_G[MinimapButtonSizeSlider:GetName() .. 'Low']:SetText('18')
-_G[MinimapButtonSizeSlider:GetName() .. 'High']:SetText('48')
-_G[MinimapButtonSizeSlider:GetName() .. 'Text']:SetText(L["MINIMAP_SLIDER"])
-MinimapButtonSizeSlider.Label = MinimapButtonSizeSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
-MinimapButtonSizeSlider.Label:SetPoint("TOP", MinimapButtonSizeSlider, "BOTTOM", 0, 2);
-MinimapButtonSizeSlider.Label:SetText(MinimapButtonSizeSlider:GetValue());
-MinimapButtonSizeSlider:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue);
-	if newValue == settings:GetTooltipSetting("MinimapSize") then
-		return 1;
-	end
-	settings:SetTooltipSetting("MinimapSize", newValue)
-	if app.Minimap then app.Minimap:SetSize(newValue, newValue); end
-end);
-MinimapButtonSizeSlider.OnRefresh = function(self)
-	if not settings:GetTooltipSetting("MinimapButton") or settings:GetTooltipSetting("MinimapStyle") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end;
-
-local ThingsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ThingsLabel:SetPoint("TOPLEFT", AccountModeCheckBox, "BOTTOMLEFT", 0, -3);
-ThingsLabel:SetJustifyH("LEFT");
-ThingsLabel:SetText(L["THINGS_LABEL_TEXT"]);
-ThingsLabel:Show();
-table.insert(settings.MostRecentTab.objects, ThingsLabel);
-ThingsLabel.OnRefresh = function(self)
+local AccountThingsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+AccountThingsLabel:SetPoint("LEFT", ModeLabel, "LEFT", 0, 0);
+AccountThingsLabel:SetPoint("TOP", AccountModeCheckBox, "BOTTOM", 0, -3);
+AccountThingsLabel:SetJustifyH("LEFT");
+AccountThingsLabel:SetText(L["ACCOUNT_THINGS_LABEL"]);
+AccountThingsLabel:Show();
+table.insert(settings.MostRecentTab.objects, AccountThingsLabel);
+AccountThingsLabel.OnRefresh = function(self)
 	if settings:Get("DebugMode") then
 		self:SetAlpha(0.2);
 	else
@@ -1091,43 +1041,16 @@ ThingsLabel.OnRefresh = function(self)
 	end
 end;
 
-local AchievementsCheckBox = settings:CreateCheckBox(L["ACHIEVEMENTS_CHECKBOX"],
+local TransmogAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
-	self:SetChecked(settings:Get("Thing:Achievements"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Achievements", self:GetChecked());
-	settings:UpdateMode(1);
+	self:SetChecked(true);
+	self:Disable();
+	self:SetAlpha(0.2);
 end);
-AchievementsCheckBox:SetATTTooltip(L["ACHIEVEMENTS_CHECKBOX_TOOLTIP"]);
-AchievementsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -1);
+TransmogAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
+TransmogAccountWideCheckBox:SetPoint("TOPLEFT", AccountThingsLabel, "BOTTOMLEFT", -2, 0);
 
-local AchievementsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
-function(self)
-	self:SetChecked(settings:Get("AccountWide:Achievements"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Achievements") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("AccountWide:Achievements", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-AchievementsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP"]);
-AchievementsAccountWideCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "TOPLEFT", 220, 0);
-
-local TransmogCheckBox = settings:CreateCheckBox(L["TMOG_CHECKBOX"],
+local TransmogCheckBox = child:CreateCheckBox(L["TMOG_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Transmog"));
 	if settings:Get("DebugMode") then
@@ -1146,20 +1069,157 @@ function(self)
 	settings:UpdateMode(1);
 end);
 TransmogCheckBox:SetATTTooltip(L["TMOG_CHECKBOX_TOOLTIP"]);
-TransmogCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4);
+TransmogCheckBox:SetPoint("LEFT", TransmogAccountWideCheckBox, "RIGHT", -4, 0);
 
-local TransmogAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
+local CompletionistModeCheckBox = child:CreateCheckBox(L["COMPLETIONIST_MODE"],
+function(self)
+	self:SetChecked(settings:Get("Completionist"));
+	if not settings:Get("Thing:Transmog") and not settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetCompletionistMode(self:GetChecked());
+end);
+CompletionistModeCheckBox:SetATTTooltip(L["COMPLETIONIST_MODE_TOOLTIP"]);
+CompletionistModeCheckBox:SetPoint("TOP", TransmogCheckBox, "TOP", 0, 0);
+CompletionistModeCheckBox:SetPoint("LEFT", TransmogCheckBox.Text, "RIGHT", 4, 0);
+
+local MainOnlyModeCheckBox = child:CreateCheckBox(L["I_ONLY_CARE_ABOUT_MY_MAIN"],
+function(self)
+	local className, classFilename = UnitClass("player")
+	local rPerc, gPerc, bPerc = GetClassColor(classFilename)
+	self.Text:SetTextColor(rPerc, gPerc, bPerc, 1);
+	self:SetChecked(settings:Get("MainOnly"));
+	if settings:Get("Completionist") or settings:Get("AccountMode") or settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetMainOnlyMode(self:GetChecked());
+end);
+MainOnlyModeCheckBox:SetATTTooltip(L["MAIN_ONLY_MODE_TOOLTIP"]);
+MainOnlyModeCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "BOTTOMLEFT", 8, 4);
+
+local HeirloomsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
 	self:SetChecked(true);
 	self:Disable();
 	self:SetAlpha(0.2);
+end);
+HeirloomsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
+HeirloomsAccountWideCheckBox:SetPoint("TOP", MainOnlyModeCheckBox, "BOTTOM", 0, 4);
+HeirloomsAccountWideCheckBox:SetPoint("LEFT", TransmogAccountWideCheckBox, "LEFT", 0, 0);
+
+local HeirloomsCheckBox = child:CreateCheckBox(L["HEIRLOOMS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Thing:Heirlooms"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
 end,
 function(self)
-	print(L["ACCOUNT_WIDE_TRANSMOG_TOOLTIP"]);
+	settings:Set("Thing:Heirlooms", self:GetChecked());
+	settings:UpdateMode(1);
 end);
-TransmogAccountWideCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "TOPLEFT", 220, 0);
+HeirloomsCheckBox:SetATTTooltip(L["HEIRLOOMS_CHECKBOX_TOOLTIP"]);
+HeirloomsCheckBox:SetPoint("LEFT", HeirloomsAccountWideCheckBox, "RIGHT", -4, 0);
 
-local BattlePetsCheckBox = settings:CreateCheckBox(L["BATTLE_PETS_CHECKBOX"],
+local HeirloomUpgradesCheckBox = child:CreateCheckBox(L["HEIRLOOMS_UPGRADES_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Thing:HeirloomUpgrades"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Heirlooms") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:HeirloomUpgrades", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+HeirloomUpgradesCheckBox:SetATTTooltip(L["HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP"]);
+HeirloomUpgradesCheckBox:SetPoint("TOP", HeirloomsCheckBox, "TOP", 0, 0);
+HeirloomUpgradesCheckBox:SetPoint("LEFT", HeirloomsCheckBox.Text, "RIGHT", 4, 0);
+
+local IllusionsAccountWideCheckBox = child:CreateCheckBox("",
+function(self)
+	self:SetChecked(true);
+	self:Disable();
+	self:SetAlpha(0.2);
+end);
+IllusionsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
+IllusionsAccountWideCheckBox:SetPoint("TOPLEFT", HeirloomsAccountWideCheckBox, "BOTTOMLEFT", 0, 4);
+
+local IllusionsCheckBox = child:CreateCheckBox(L["ILLUSIONS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Thing:Illusions"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Illusions", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+IllusionsCheckBox:SetATTTooltip(L["ILLUSIONS_CHECKBOX_TOOLTIP"]);
+IllusionsCheckBox:SetPoint("LEFT", IllusionsAccountWideCheckBox, "RIGHT", -4, 0);
+
+local MountsAccountWideCheckBox = child:CreateCheckBox("",
+function(self)
+	self:SetChecked(true);
+	self:Disable();
+	self:SetAlpha(0.2);
+end);
+MountsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
+MountsAccountWideCheckBox:SetPoint("TOPLEFT", IllusionsAccountWideCheckBox, "BOTTOMLEFT", 0, 4);
+
+local MountsCheckBox = child:CreateCheckBox(L["MOUNTS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Thing:Mounts"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Mounts", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+MountsCheckBox:SetATTTooltip(L["MOUNTS_CHECKBOX_TOOLTIP"]);
+MountsCheckBox:SetPoint("LEFT", MountsAccountWideCheckBox, "RIGHT", -4, 0);
+
+local BattlePetsAccountWideCheckBox = child:CreateCheckBox("",
+function(self)
+	self:SetChecked(true);
+	self:Disable();
+	self:SetAlpha(0.2);
+end);
+BattlePetsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
+BattlePetsAccountWideCheckBox:SetPoint("TOPLEFT", MountsAccountWideCheckBox, "BOTTOMLEFT", 0, 4);
+
+local BattlePetsCheckBox = child:CreateCheckBox(L["BATTLE_PETS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:BattlePets"));
 	if settings:Get("DebugMode") then
@@ -1175,18 +1235,88 @@ function(self)
 	settings:UpdateMode(1);
 end);
 BattlePetsCheckBox:SetATTTooltip(L["BATTLE_PETS_CHECKBOX_TOOLTIP"]);
-BattlePetsCheckBox:SetPoint("TOPLEFT", TransmogCheckBox, "BOTTOMLEFT", 0, 4);
+BattlePetsCheckBox:SetPoint("LEFT", BattlePetsAccountWideCheckBox, "RIGHT", -4, 0);
 
-local BattlePetsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
+local ToysAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
 	self:SetChecked(true);
 	self:Disable();
 	self:SetAlpha(0.2);
-end,
-nil);
-BattlePetsAccountWideCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "TOPLEFT", 220, 0);
+end);
+ToysAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
+ToysAccountWideCheckBox:SetPoint("TOPLEFT", BattlePetsAccountWideCheckBox, "BOTTOMLEFT", 0, 4);
 
-local FlightPathsCheckBox = settings:CreateCheckBox(L["FLIGHT_PATHS_CHECKBOX"],
+local ToysCheckBox = child:CreateCheckBox(L["TOYS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Thing:Toys"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Toys", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+ToysCheckBox:SetATTTooltip(L["TOYS_CHECKBOX_TOOLTIP"]);
+ToysCheckBox:SetPoint("LEFT", ToysAccountWideCheckBox, "RIGHT", -4, 0);
+
+local GeneralThingsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+GeneralThingsLabel:SetPoint("LEFT", ModeLabel, "LEFT", 0, 0);
+GeneralThingsLabel:SetPoint("TOP", ToysAccountWideCheckBox, "BOTTOM", 0, -3);
+GeneralThingsLabel:SetJustifyH("LEFT");
+GeneralThingsLabel:SetText(L["GENERAL_THINGS_LABEL"]);
+GeneralThingsLabel:Show();
+table.insert(settings.MostRecentTab.objects, GeneralThingsLabel);
+GeneralThingsLabel.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:SetAlpha(0.2);
+	else
+		self:SetAlpha(1);
+	end
+end;
+
+local AchievementsAccountWideCheckBox = child:CreateCheckBox("",
+function(self)
+	self:SetChecked(settings:Get("AccountWide:Achievements"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Achievements") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:Achievements", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+AchievementsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
+AchievementsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP"]);
+AchievementsAccountWideCheckBox:SetPoint("TOPLEFT", GeneralThingsLabel, "BOTTOMLEFT", -2, 0);
+
+local AchievementsCheckBox = child:CreateCheckBox(L["ACHIEVEMENTS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Thing:Achievements"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Achievements", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+AchievementsCheckBox:SetATTTooltip(L["ACHIEVEMENTS_CHECKBOX_TOOLTIP"]);
+AchievementsCheckBox:SetPoint("LEFT", AchievementsAccountWideCheckBox, "RIGHT", -4, 0);
+
+local FlightPathsCheckBox = child:CreateCheckBox(L["FLIGHT_PATHS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:FlightPaths"));
 	if settings:Get("DebugMode") then
@@ -1202,9 +1332,9 @@ function(self)
 	settings:UpdateMode(1);
 end);
 FlightPathsCheckBox:SetATTTooltip(L["FLIGHT_PATHS_CHECKBOX_TOOLTIP"]);
-FlightPathsCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "BOTTOMLEFT", 0, 4);
+FlightPathsCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local FlightPathsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
+local FlightPathsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:FlightPaths"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:FlightPaths") then
@@ -1219,10 +1349,11 @@ function(self)
 	settings:Set("AccountWide:FlightPaths", self:GetChecked());
 	settings:UpdateMode(1);
 end);
+FlightPathsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
 FlightPathsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP"]);
-FlightPathsAccountWideCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "TOPLEFT", 220, 0);
+FlightPathsAccountWideCheckBox:SetPoint("RIGHT", FlightPathsCheckBox, "LEFT", 4, 0);
 
-local FollowersCheckBox = settings:CreateCheckBox(L["FOLLOWERS_CHECKBOX"],
+local FollowersCheckBox = child:CreateCheckBox(L["FOLLOWERS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Followers"));
 	if settings:Get("DebugMode") then
@@ -1240,7 +1371,7 @@ end);
 FollowersCheckBox:SetATTTooltip(L["FOLLOWERS_CHECKBOX_TOOLTIP"]);
 FollowersCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local FollowersAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
+local FollowersAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Followers"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Followers") then
@@ -1255,185 +1386,11 @@ function(self)
 	settings:Set("AccountWide:Followers", self:GetChecked());
 	settings:UpdateMode(1);
 end);
+FollowersAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
 FollowersAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_FOLLOWERS_TOOLTIP"]);
-FollowersAccountWideCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "TOPLEFT", 220, 0);
+FollowersAccountWideCheckBox:SetPoint("RIGHT", FollowersCheckBox, "LEFT", 4, 0);
 
-local AzeriteEssencesCheckBox = settings:CreateCheckBox(L["AZERITE_ESSENCES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:AzeriteEssences"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:AzeriteEssences", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-AzeriteEssencesCheckBox:SetATTTooltip(L["AZERITE_ESSENCES_CHECKBOX_TOOLTIP"]);
-AzeriteEssencesCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
-
-local AzeriteEssencesAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
-function(self)
-	self:SetChecked(settings:Get("AccountWide:AzeriteEssences"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:AzeriteEssences") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("AccountWide:AzeriteEssences", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-AzeriteEssencesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP"]);
-AzeriteEssencesAccountWideCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "TOPLEFT", 220, 0);
-
-local HeirloomsCheckBox = settings:CreateCheckBox(L["HEIRLOOMS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Heirlooms"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Heirlooms", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-HeirloomsCheckBox:SetATTTooltip(L["HEIRLOOMS_CHECKBOX_TOOLTIP"]);
-HeirloomsCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "BOTTOMLEFT", 0, 4);
-
-local HeirloomUpgradesCheckBox = settings:CreateCheckBox(L["HEIRLOOMS_UPGRADES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:HeirloomUpgrades"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Heirlooms") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:HeirloomUpgrades", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-HeirloomUpgradesCheckBox:SetATTTooltip(L["HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP"]);
-HeirloomUpgradesCheckBox:SetPoint("TOP", HeirloomsCheckBox, "TOP", 0, 0);
-HeirloomUpgradesCheckBox:SetPoint("LEFT", HeirloomsCheckBox.Text, "RIGHT", 8, 0);
-
-local HeirloomsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
-function(self)
-	self:SetChecked(true);
-	self:Disable();
-	self:SetAlpha(0.2);
-end,
-nil);
-HeirloomsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_HEIRLOOMS_TOOLTIP"]);
-HeirloomsAccountWideCheckBox:SetPoint("TOPLEFT", HeirloomsCheckBox, "TOPLEFT", 220, 0);
-
-local IllusionsCheckBox = settings:CreateCheckBox(L["ILLUSIONS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Illusions"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Illusions", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-IllusionsCheckBox:SetATTTooltip(L["ILLUSIONS_CHECKBOX_TOOLTIP"]);
-IllusionsCheckBox:SetPoint("TOPLEFT", HeirloomsCheckBox, "BOTTOMLEFT", 0, 4);
-
-local IllusionsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
-function(self)
-	self:SetChecked(settings:Get("AccountWide:Illusions"));
-	self:Disable();
-	self:SetAlpha(0.2);
-end,
-function(self)
-	settings:Set("AccountWide:Illusions", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-IllusionsAccountWideCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox, "TOPLEFT", 220, 0);
-
-local MountsCheckBox = settings:CreateCheckBox(L["MOUNTS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Mounts"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Mounts", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-MountsCheckBox:SetATTTooltip(L["MOUNTS_CHECKBOX_TOOLTIP"]);
-MountsCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox, "BOTTOMLEFT", 0, 4);
-
-local MountsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
-function(self)
-	self:SetChecked(true);
-	self:Disable();
-	self:SetAlpha(0.2);
-end);
-MountsAccountWideCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "TOPLEFT", 220, 0);
-
-local MusicRollsAndSelfieFiltersCheckBox = settings:CreateCheckBox(L["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:MusicRollsAndSelfieFilters"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:MusicRollsAndSelfieFilters", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-MusicRollsAndSelfieFiltersCheckBox:SetATTTooltip(L["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP"]);
-MusicRollsAndSelfieFiltersCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "BOTTOMLEFT", 0, 4);
-
-local MusicRollsAndSelfieFiltersAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
-function(self)
-	self:SetChecked(settings:Get("AccountWide:MusicRollsAndSelfieFilters"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:MusicRollsAndSelfieFilters") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("AccountWide:MusicRollsAndSelfieFilters", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-MusicRollsAndSelfieFiltersAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP"]);
-MusicRollsAndSelfieFiltersAccountWideCheckBox:SetPoint("TOPLEFT", MusicRollsAndSelfieFiltersCheckBox, "TOPLEFT", 220, 0);
-
-local QuestsCheckBox = settings:CreateCheckBox(L["QUESTS_CHECKBOX"],
+local QuestsCheckBox = child:CreateCheckBox(L["QUESTS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Quests"));
 	if settings:Get("DebugMode") then
@@ -1449,9 +1406,9 @@ function(self)
 	settings:UpdateMode(1);
 end);
 QuestsCheckBox:SetATTTooltip(L["QUESTS_CHECKBOX_TOOLTIP"]);
-QuestsCheckBox:SetPoint("TOPLEFT", MusicRollsAndSelfieFiltersCheckBox, "BOTTOMLEFT", 0, 4);
+QuestsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
 
-local QuestBreadcrumbsCheckBox = settings:CreateCheckBox(L["QUESTS_BREADCRUMBS_CHECKBOX"],
+local QuestBreadcrumbsCheckBox = child:CreateCheckBox(L["QUESTS_BREADCRUMBS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:QuestBreadcrumbs"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
@@ -1468,9 +1425,9 @@ function(self)
 end);
 QuestBreadcrumbsCheckBox:SetATTTooltip(L["QUESTS_BREADCRUMBS_CHECKBOX_TOOLTIP"]);
 QuestBreadcrumbsCheckBox:SetPoint("TOP", QuestsCheckBox, "TOP", 0, 0);
-QuestBreadcrumbsCheckBox:SetPoint("LEFT", QuestsCheckBox.Text, "RIGHT", 8, 0);
+QuestBreadcrumbsCheckBox:SetPoint("LEFT", QuestsCheckBox.Text, "RIGHT", 4, 0);
 
-local QuestsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
+local QuestsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Quests"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
@@ -1485,10 +1442,11 @@ function(self)
 	settings:Set("AccountWide:Quests", self:GetChecked());
 	settings:UpdateMode(1);
 end);
+QuestsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
 QuestsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_QUESTS_TOOLTIP"]);
-QuestsAccountWideCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 220, 0);
+QuestsAccountWideCheckBox:SetPoint("RIGHT", QuestsCheckBox, "LEFT", 4, 0);
 
-local RecipesCheckBox = settings:CreateCheckBox(L["RECIPES_CHECKBOX"],
+local RecipesCheckBox = child:CreateCheckBox(L["RECIPES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Recipes"));
 	if settings:Get("DebugMode") then
@@ -1506,7 +1464,7 @@ end);
 RecipesCheckBox:SetATTTooltip(L["RECIPES_CHECKBOX_TOOLTIP"]);
 RecipesCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local RecipesAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
+local RecipesAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Recipes"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Recipes") then
@@ -1521,10 +1479,11 @@ function(self)
 	settings:Set("AccountWide:Recipes", self:GetChecked());
 	settings:UpdateMode(1);
 end);
+RecipesAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
 RecipesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_RECIPES_TOOLTIP"]);
-RecipesAccountWideCheckBox:SetPoint("TOPLEFT", RecipesCheckBox, "TOPLEFT", 220, 0);
+RecipesAccountWideCheckBox:SetPoint("RIGHT", RecipesCheckBox, "LEFT", 4, 0);
 
-local ReputationsCheckBox = settings:CreateCheckBox(L["REPUTATIONS_CHECKBOX"],
+local ReputationsCheckBox = child:CreateCheckBox(L["REPUTATIONS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Reputations"));
 	if settings:Get("DebugMode") then
@@ -1542,7 +1501,7 @@ end);
 ReputationsCheckBox:SetATTTooltip(L["REPUTATIONS_CHECKBOX_TOOLTIP"]);
 ReputationsCheckBox:SetPoint("TOPLEFT", RecipesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ReputationsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
+local ReputationsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Reputations"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Reputations") then
@@ -1557,82 +1516,11 @@ function(self)
 	settings:Set("AccountWide:Reputations", self:GetChecked());
 	settings:UpdateMode(1);
 end);
+ReputationsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
 ReputationsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_REPUTATIONS_TOOLTIP"]);
-ReputationsAccountWideCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "TOPLEFT", 220, 0);
+ReputationsAccountWideCheckBox:SetPoint("RIGHT", ReputationsCheckBox, "LEFT", 4, 0);
 
-local RuneforgeLegendariesCheckBox = settings:CreateCheckBox(L["RUNEFORGELEGENDARIES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:RuneforgeLegendaries"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:RuneforgeLegendaries", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-RuneforgeLegendariesCheckBox:SetATTTooltip(L["RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP"]);
-RuneforgeLegendariesCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
-
-local RuneforgeLegendariesAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
-function(self)
-	self:SetChecked(settings:Get("AccountWide:RuneforgeLegendaries"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:RuneforgeLegendaries") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("AccountWide:RuneforgeLegendaries", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-RuneforgeLegendariesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP"]);
-RuneforgeLegendariesAccountWideCheckBox:SetPoint("TOPLEFT", RuneforgeLegendariesCheckBox, "TOPLEFT", 220, 0);
-
-local SoulbindConduitsCheckBox = settings:CreateCheckBox(L["SOULBINDCONDUITS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Thing:Conduits"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Thing:Conduits", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-SoulbindConduitsCheckBox:SetATTTooltip(L["SOULBINDCONDUITS_CHECKBOX_TOOLTIP"]);
-SoulbindConduitsCheckBox:SetPoint("TOPLEFT", RuneforgeLegendariesCheckBox, "BOTTOMLEFT", 0, 4);
-
-local SoulbindConduitsAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
-function(self)
-	self:SetChecked(settings:Get("AccountWide:Conduits"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Conduits") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("AccountWide:Conduits", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-SoulbindConduitsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP"]);
-SoulbindConduitsAccountWideCheckBox:SetPoint("TOPLEFT", SoulbindConduitsCheckBox, "TOPLEFT", 220, 0);
-
-local TitlesCheckBox = settings:CreateCheckBox(L["TITLES_CHECKBOX"],
+local TitlesCheckBox = child:CreateCheckBox(L["TITLES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Titles"));
 	if settings:Get("DebugMode") then
@@ -1648,9 +1536,9 @@ function(self)
 	settings:UpdateMode(1);
 end);
 TitlesCheckBox:SetATTTooltip(L["TITLES_CHECKBOX_TOOLTIP"]);
-TitlesCheckBox:SetPoint("TOPLEFT", SoulbindConduitsCheckBox, "BOTTOMLEFT", 0, 4);
+TitlesCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local TitlesAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
+local TitlesAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Titles"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Titles") then
@@ -1665,12 +1553,47 @@ function(self)
 	settings:Set("AccountWide:Titles", self:GetChecked());
 	settings:UpdateMode(1);
 end);
+TitlesAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
 TitlesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_TITLES_TOOLTIP"]);
-TitlesAccountWideCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "TOPLEFT", 220, 0);
+TitlesAccountWideCheckBox:SetPoint("RIGHT", TitlesCheckBox, "LEFT", 4, 0);
 
-local ToysCheckBox = settings:CreateCheckBox(L["TOYS_CHECKBOX"],
+local ExpansionThingsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+ExpansionThingsLabel:SetPoint("LEFT", ModeLabel, "LEFT", 0, 0);
+ExpansionThingsLabel:SetPoint("TOP", TitlesCheckBox, "BOTTOM", 0, -3);
+ExpansionThingsLabel:SetJustifyH("LEFT");
+ExpansionThingsLabel:SetText(L["EXPANSION_THINGS_LABEL"]);
+ExpansionThingsLabel:Show();
+table.insert(settings.MostRecentTab.objects, ExpansionThingsLabel);
+ExpansionThingsLabel.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:SetAlpha(0.2);
+	else
+		self:SetAlpha(1);
+	end
+end;
+
+local MusicRollsAndSelfieFiltersAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
-	self:SetChecked(settings:Get("Thing:Toys"));
+	self:SetChecked(settings:Get("AccountWide:MusicRollsAndSelfieFilters"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:MusicRollsAndSelfieFilters") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:MusicRollsAndSelfieFilters", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+MusicRollsAndSelfieFiltersAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
+MusicRollsAndSelfieFiltersAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP"]);
+MusicRollsAndSelfieFiltersAccountWideCheckBox:SetPoint("TOPLEFT", ExpansionThingsLabel, "BOTTOMLEFT", -2, 0);
+
+local MusicRollsAndSelfieFiltersCheckBox = child:CreateCheckBox(L["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Thing:MusicRollsAndSelfieFilters"));
 	if settings:Get("DebugMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -1680,42 +1603,16 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("Thing:Toys", self:GetChecked());
+	settings:Set("Thing:MusicRollsAndSelfieFilters", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ToysCheckBox:SetATTTooltip(L["TOYS_CHECKBOX_TOOLTIP"]);
-ToysCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "BOTTOMLEFT", 0, 4);
+MusicRollsAndSelfieFiltersCheckBox:SetATTTooltip(L["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP"]);
+MusicRollsAndSelfieFiltersCheckBox:SetPoint("LEFT", MusicRollsAndSelfieFiltersAccountWideCheckBox, "RIGHT", -4, 0);
 
-local ToysAccountWideCheckBox = settings:CreateCheckBox(L["ACCOUNT_WIDE"],
+local AzeriteEssencesCheckBox = child:CreateCheckBox(L["AZERITE_ESSENCES_CHECKBOX"],
 function(self)
-	self:SetChecked(true);
-	self:Disable();
-	self:SetAlpha(0.2);
-end);
-ToysAccountWideCheckBox:SetPoint("TOPLEFT", ToysCheckBox, "TOPLEFT", 220, 0);
-
-
-local ShowMinimapButtonCheckBox = settings:CreateCheckBox(L["MINIMAP_BUTTON_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("MinimapButton"));
-end,
-function(self)
-	settings:SetTooltipSetting("MinimapButton", self:GetChecked());
-	if self:GetChecked() then
-		if not app.Minimap then app.Minimap = app.CreateMinimapButton(); end
-		app.Minimap:Show();
-	elseif app.Minimap then
-		app.Minimap:Hide();
-	end
-end);
-ShowMinimapButtonCheckBox:SetATTTooltip(L["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"]);
-ShowMinimapButtonCheckBox:SetPoint("LEFT", AchievementsAccountWideCheckBox.Text, "RIGHT", 50, 0);
-ShowMinimapButtonCheckBox:SetPoint("TOP", MinimapButtonSizeSlider.Label, "BOTTOM", 0, -2);
-
-local MinimapButtonStyleCheckBox = settings:CreateCheckBox(L["MINIMAP_BUTTON_STYLE_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("MinimapStyle"));
-	if not settings:GetTooltipSetting("MinimapButton") then
+	self:SetChecked(settings:Get("Thing:AzeriteEssences"));
+	if settings:Get("DebugMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1724,36 +1621,124 @@ function(self)
 	end
 end,
 function(self)
-	settings:SetTooltipSetting("MinimapStyle", self:GetChecked());
-	if app.Minimap then app.Minimap:UpdateStyle(); end
-end);
-MinimapButtonStyleCheckBox:SetATTTooltip(L["MINIMAP_BUTTON_STYLE_CHECKBOX_TOOLTIP"]);
-MinimapButtonStyleCheckBox:SetPoint("TOPLEFT", ShowMinimapButtonCheckBox, "BOTTOMLEFT", 4, 4);
-
-local ShowCompletedGroupsCheckBox = settings:CreateCheckBox(L["SHOW_COMPLETED_GROUPS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Show:CompletedGroups"));
-end,
-function(self)
-	settings:SetCompletedGroups(self:GetChecked());
-	settings:Set("Cache:CompletedGroups", self:GetChecked());
+	settings:Set("Thing:AzeriteEssences", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ShowCompletedGroupsCheckBox:SetATTTooltip(L["SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP"]);
-ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", MinimapButtonStyleCheckBox, "BOTTOMLEFT", -4, 0);
+AzeriteEssencesCheckBox:SetATTTooltip(L["AZERITE_ESSENCES_CHECKBOX_TOOLTIP"]);
+AzeriteEssencesCheckBox:SetPoint("TOPLEFT", MusicRollsAndSelfieFiltersCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowCollectedThingsCheckBox = settings:CreateCheckBox(L["SHOW_COLLECTED_THINGS_CHECKBOX"],
+local AzeriteEssencesAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
-	self:SetChecked(settings:Get("Show:CollectedThings"));
+	self:SetChecked(settings:Get("AccountWide:AzeriteEssences"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:AzeriteEssences") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
 end,
 function(self)
-	settings:SetCollectedThings(self:GetChecked());
-	settings:Set("Cache:CollectedThings", self:GetChecked());
+	settings:Set("AccountWide:AzeriteEssences", self:GetChecked());
+	settings:UpdateMode(1);
 end);
-ShowCollectedThingsCheckBox:SetATTTooltip(L["SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP"]);
-ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", ShowCompletedGroupsCheckBox, "BOTTOMLEFT", 0, 4);
+AzeriteEssencesAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
+AzeriteEssencesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP"]);
+AzeriteEssencesAccountWideCheckBox:SetPoint("RIGHT", AzeriteEssencesCheckBox, "LEFT", 4, 0);
 
-local ShowTrackableThingsCheckBox = settings:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
+local SoulbindConduitsCheckBox = child:CreateCheckBox(L["SOULBINDCONDUITS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Thing:Conduits"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Conduits", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+SoulbindConduitsCheckBox:SetATTTooltip(L["SOULBINDCONDUITS_CHECKBOX_TOOLTIP"]);
+SoulbindConduitsCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "BOTTOMLEFT", 0, 4);
+
+local SoulbindConduitsAccountWideCheckBox = child:CreateCheckBox("",
+function(self)
+	self:SetChecked(settings:Get("AccountWide:Conduits"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Conduits") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:Conduits", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+SoulbindConduitsAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
+SoulbindConduitsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP"]);
+SoulbindConduitsAccountWideCheckBox:SetPoint("RIGHT", SoulbindConduitsCheckBox, "LEFT", 4, 0);
+
+local RuneforgeLegendariesCheckBox = child:CreateCheckBox(L["RUNEFORGELEGENDARIES_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Thing:RuneforgeLegendaries"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:RuneforgeLegendaries", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+RuneforgeLegendariesCheckBox:SetATTTooltip(L["RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP"]);
+RuneforgeLegendariesCheckBox:SetPoint("TOPLEFT", SoulbindConduitsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local RuneforgeLegendariesAccountWideCheckBox = child:CreateCheckBox("",
+function(self)
+	self:SetChecked(settings:Get("AccountWide:RuneforgeLegendaries"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:RuneforgeLegendaries") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:RuneforgeLegendaries", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+RuneforgeLegendariesAccountWideCheckBox:SetCheckedTexture("Interface\\AddOns\\AllTheThings\\assets\\TrackAccountWide");
+RuneforgeLegendariesAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP"]);
+RuneforgeLegendariesAccountWideCheckBox:SetPoint("RIGHT", RuneforgeLegendariesCheckBox, "LEFT", 4, 0);
+
+local ExtraThingsLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+ExtraThingsLabel:SetPoint("TOP", AccountModeCheckBox, "TOP", 0, 0);
+ExtraThingsLabel:SetPoint("LEFT", settings, "RIGHT", -290, 0);
+ExtraThingsLabel:SetJustifyH("LEFT");
+ExtraThingsLabel:SetText(L["EXTRA_THINGS_LABEL"]);
+ExtraThingsLabel:Show();
+table.insert(settings.MostRecentTab.objects, ExtraThingsLabel);
+
+local DebugModeCheckBox = child:CreateCheckBox(L["DEBUG_MODE"],
+function(self)
+	self:SetChecked(settings:Get("DebugMode"));
+end,
+function(self)
+	settings:SetDebugMode(self:GetChecked());
+end);
+DebugModeCheckBox:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"]);
+DebugModeCheckBox:SetPoint("TOPLEFT", ExtraThingsLabel, "BOTTOMLEFT", -2, 0);
+
+local ShowTrackableThingsCheckBox = child:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Show:TrackableThings"));
 	if settings:Get("DebugMode") then
@@ -1769,9 +1754,9 @@ function(self)
 	settings:UpdateMode(1);
 end);
 ShowTrackableThingsCheckBox:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"]);
-ShowTrackableThingsCheckBox:SetPoint("TOPLEFT", ShowCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowTrackableThingsCheckBox:SetPoint("TOPLEFT", DebugModeCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowRepeatableThingsCheckBox = settings:CreateCheckBox(L["SHOW_REPEATABLE_THINGS_CHECKBOX"],
+local ShowRepeatableThingsCheckBox = child:CreateCheckBox(L["SHOW_REPEATABLE_THINGS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Repeatable"));
 	if not settings:Get("Thing:Quests") then
@@ -1789,7 +1774,7 @@ end);
 ShowRepeatableThingsCheckBox:SetATTTooltip(L["SHOW_REPEATABLE_THINGS_CHECKBOX_TOOLTIP"]);
 ShowRepeatableThingsCheckBox:SetPoint("TOPLEFT", ShowTrackableThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowRepeatableThingsFirstTimeCheckBox = settings:CreateCheckBox(L["FIRST_TIME_CHECKBOX"],
+local ShowRepeatableThingsFirstTimeCheckBox = child:CreateCheckBox(L["FIRST_TIME_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("RepeatableFirstTime"));
 	if not settings:Get("Thing:Quests") or not settings:GetTooltipSetting("Repeatable") then
@@ -1805,85 +1790,132 @@ function(self)
 	settings:UpdateMode(1);
 end);
 ShowRepeatableThingsFirstTimeCheckBox:SetATTTooltip(L["FIRST_TIME_CHECKBOX_TOOLTIP"]);
-ShowRepeatableThingsFirstTimeCheckBox:SetPoint("TOPLEFT", ShowRepeatableThingsCheckBox, "BOTTOMLEFT", 4, 4);
+ShowRepeatableThingsFirstTimeCheckBox:SetPoint("TOP", ShowRepeatableThingsCheckBox, "BOTTOM", 8, 4);
 
-local FilterThingsByLevelCheckBox = settings:CreateCheckBox(L["FILTER_THINGS_BY_LEVEL_CHECKBOX"],
+local ShowCurrenciesInWorldQuestsList = child:CreateCheckBox(L["CURRENCIES_IN_WQ_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:Get("Filter:ByLevel"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
+	self:SetChecked(settings:GetTooltipSetting("WorldQuestsList:Currencies"));
 end,
 function(self)
-	settings:Set("Filter:ByLevel", self:GetChecked());
+	settings:SetTooltipSetting("WorldQuestsList:Currencies", self:GetChecked());
+end);
+ShowCurrenciesInWorldQuestsList:SetATTTooltip(L["CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP"]);
+ShowCurrenciesInWorldQuestsList:SetPoint("TOPLEFT", ShowRepeatableThingsFirstTimeCheckBox, "BOTTOMLEFT", -8, 4);
+
+local ShowCompletedGroupsCheckBox = child:CreateCheckBox(L["SHOW_COMPLETED_GROUPS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Show:CompletedGroups"));
+end,
+function(self)
+	settings:SetCompletedGroups(self:GetChecked());
+	settings:Set("Cache:CompletedGroups", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-FilterThingsByLevelCheckBox:SetATTTooltip(L["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"]);
-FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", ShowRepeatableThingsFirstTimeCheckBox, "BOTTOMLEFT", -4, 0);
+ShowCompletedGroupsCheckBox:SetATTTooltip(L["SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP"]);
+ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", ShowCurrenciesInWorldQuestsList, "BOTTOMLEFT", 0, 4);
 
-local HideBoEItemsCheckBox = settings:CreateCheckBox(L["HIDE_BOE_CHECKBOX"],
+local ShowCollectedThingsCheckBox = child:CreateCheckBox(L["SHOW_COLLECTED_THINGS_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:Get("Hide:BoEs"));
-	if settings:Get("DebugMode") or settings:Get("Filter:BoEs") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
+	self:SetChecked(settings:Get("Show:CollectedThings"));
 end,
 function(self)
-	settings:SetHideBOEItems(self:GetChecked());
+	settings:SetCollectedThings(self:GetChecked());
+	settings:Set("Cache:CollectedThings", self:GetChecked());
 end);
-HideBoEItemsCheckBox:SetATTTooltip(L["HIDE_BOE_CHECKBOX_TOOLTIP"]);
-HideBoEItemsCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEFT", 0, 4);
+ShowCollectedThingsCheckBox:SetATTTooltip(L["SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP"]);
+ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", ShowCompletedGroupsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local IgnoreFiltersForBoEsCheckBox = settings:CreateCheckBox(L["IGNORE_FILTERS_FOR_BOES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Filter:BoEs"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
+local BehaviorLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+BehaviorLabel:SetJustifyH("LEFT");
+BehaviorLabel:SetText(L["BEHAVIOR_LABEL"]);
+BehaviorLabel:Show();
+table.insert(settings.MostRecentTab.objects, BehaviorLabel);
+BehaviorLabel:SetPoint("LEFT", ExtraThingsLabel, "LEFT", 0, 0);
+BehaviorLabel:SetPoint("TOP", ShowCollectedThingsCheckBox, "BOTTOM", 0, -8);
+
+local MainListScaleSliderLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+MainListScaleSliderLabel:SetPoint("TOPLEFT", BehaviorLabel, "BOTTOMLEFT", 1, -5);
+MainListScaleSliderLabel:SetJustifyH("LEFT");
+MainListScaleSliderLabel:SetText(L["MAIN_LIST_SLIDER_LABEL"]);
+MainListScaleSliderLabel:SetTextColor(1, 1, 1, 1);
+MainListScaleSliderLabel:Show();
+table.insert(settings.MostRecentTab.objects, MainListScaleSliderLabel);
+
+local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", child, "OptionsSliderTemplate");
+MainListScaleSlider:SetPoint("CENTER", MainListScaleSliderLabel, "CENTER", 0, 0);
+--MainListScaleSlider:SetPoint("LEFT", MainListScaleSliderLabel, "RIGHT", 8, 0);
+MainListScaleSlider:SetPoint("RIGHT", settings, "RIGHT", -30, 0);
+table.insert(settings.MostRecentTab.objects, MainListScaleSlider);
+settings.MainListScaleSlider = MainListScaleSlider;
+MainListScaleSlider.tooltipText = L["MAIN_LIST_SCALE_TOOLTIP"];
+MainListScaleSlider:SetOrientation('HORIZONTAL');
+MainListScaleSlider:SetWidth(150);
+MainListScaleSlider:SetHeight(20);
+MainListScaleSlider:SetValueStep(0.1);
+MainListScaleSlider:SetMinMaxValues(0.1, 4);
+MainListScaleSlider:SetObeyStepOnDrag(true);
+_G[MainListScaleSlider:GetName() .. 'Low']:SetText('0.1')
+_G[MainListScaleSlider:GetName() .. 'High']:SetText('4')
+--_G[MainListScaleSlider:GetName() .. 'Text']:SetText(L["MAIN_LIST_SLIDER_LABEL"])
+MainListScaleSlider.Label = MainListScaleSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+MainListScaleSlider.Label:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, 0);
+MainListScaleSlider.Label:SetText(tonumber(string.format("%." .. (2) .. "f", MainListScaleSlider:GetValue())));
+MainListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(tonumber(string.format("%." .. (2) .. "f", newValue)));
+	settings:SetTooltipSetting("MainListScale", newValue)
+	app:GetWindow("Prime"):SetScale(newValue);
+end);
+
+local MiniListScaleSliderLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+MiniListScaleSliderLabel:SetPoint("TOPLEFT", MainListScaleSliderLabel, "BOTTOMLEFT", 0, -20);
+MiniListScaleSliderLabel:SetJustifyH("LEFT");
+MiniListScaleSliderLabel:SetText(L["MINI_LIST_SLIDER_LABEL"]);
+MiniListScaleSliderLabel:SetTextColor(1, 1, 1, 1);
+MiniListScaleSliderLabel:Show();
+table.insert(settings.MostRecentTab.objects, MiniListScaleSliderLabel);
+
+local MiniListScaleSlider = CreateFrame("Slider", "ATTMiniListScaleSlider", child, "OptionsSliderTemplate");
+MiniListScaleSlider:SetPoint("CENTER", MiniListScaleSliderLabel, "CENTER", 0, 0);
+--MiniListScaleSlider:SetPoint("LEFT", MiniListScaleSliderLabel, "RIGHT", 8, 0);
+MiniListScaleSlider:SetPoint("RIGHT", settings, "RIGHT", -30, 0);
+table.insert(settings.MostRecentTab.objects, MiniListScaleSlider);
+settings.MiniListScaleSlider = MiniListScaleSlider;
+MiniListScaleSlider.tooltipText = L["MINI_LIST_SCALE_TOOLTIP"];
+MiniListScaleSlider:SetOrientation('HORIZONTAL');
+MiniListScaleSlider:SetWidth(150);
+MiniListScaleSlider:SetHeight(20);
+MiniListScaleSlider:SetValueStep(0.1);
+MiniListScaleSlider:SetMinMaxValues(0.1, 4);
+MiniListScaleSlider:SetObeyStepOnDrag(true);
+_G[MiniListScaleSlider:GetName() .. 'Low']:SetText('0.1')
+_G[MiniListScaleSlider:GetName() .. 'High']:SetText('4')
+--_G[MiniListScaleSlider:GetName() .. 'Text']:SetText(L["MINI_LIST_SLIDER_LABEL"])
+MiniListScaleSlider.Label = MiniListScaleSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+MiniListScaleSlider.Label:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, 0);
+MiniListScaleSlider.Label:SetText(tonumber(string.format("%." .. (2) .. "f", MiniListScaleSlider:GetValue())));
+MiniListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(tonumber(string.format("%." .. (2) .. "f", newValue)));
+	settings:SetTooltipSetting("MiniListScale", newValue)
+	for key,window in pairs(app.Windows) do
+		if key ~= "Prime" then
+			window:SetScale(newValue);
+		end
 	end
+end);
+
+local DoAdHocUpdatesCheckbox = child:CreateCheckBox(L["ADHOC_UPDATES_CHECKBOX"] .. L["_BETA_LABEL"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Updates:AdHoc"));
 end,
 function(self)
-	settings:Set("Filter:BoEs", self:GetChecked());
-	settings:UpdateMode(1);
+	settings:SetTooltipSetting("Updates:AdHoc", self:GetChecked());
 end);
-IgnoreFiltersForBoEsCheckBox:SetATTTooltip(L["IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP"]);
-IgnoreFiltersForBoEsCheckBox:SetPoint("TOPLEFT", HideBoEItemsCheckBox, "BOTTOMLEFT", 0, 4);
+DoAdHocUpdatesCheckbox:SetATTTooltip(L["ADHOC_UPDATES_CHECKBOX_TOOLTIP"]);
+--DoAdHocUpdatesCheckbox:SetPoint("TOPLEFT", MiniListScaleSlider, "BOTTOMLEFT", -3, -15);
+DoAdHocUpdatesCheckbox:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, -8);
+DoAdHocUpdatesCheckbox:SetPoint("LEFT", DebugModeCheckBox, "LEFT", 0, 0);
 
-local HidePvPItemsCheckBox = settings:CreateCheckBox(L["HIDE_PVP_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Hide:PvP"));
-	if settings:Get("DebugMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("Hide:PvP", self:GetChecked());
-	-- Remove once replacing PvP flags in data
-	local val = app.GetDataMember("UnobtainableItemFilters");
-	val[12] = not self:GetChecked();
-	app.SetDataMember("UnobtainableItemFilters", val);
-
-	settings:UpdateMode(1);
-end);
-HidePvPItemsCheckBox:SetATTTooltip(L["HIDE_PVP_CHECKBOX_TOOLTIP"]);
-HidePvPItemsCheckBox:SetPoint("TOPLEFT", IgnoreFiltersForBoEsCheckBox, "BOTTOMLEFT", 0, 4);
-
-local ExpandDifficultyCheckBox = settings:CreateCheckBox(L["EXPAND_DIFFICULTY_CHECKBOX"],
+local ExpandDifficultyCheckBox = child:CreateCheckBox(L["EXPAND_DIFFICULTY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Expand:Difficulty"));
 end,
@@ -1891,9 +1923,9 @@ function(self)
 	settings:SetTooltipSetting("Expand:Difficulty", self:GetChecked());
 end);
 ExpandDifficultyCheckBox:SetATTTooltip(L["EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP"]);
-ExpandDifficultyCheckBox:SetPoint("TOPLEFT", HidePvPItemsCheckBox, "BOTTOMLEFT", 0, 0);
+ExpandDifficultyCheckBox:SetPoint("TOPLEFT", DoAdHocUpdatesCheckbox, "BOTTOMLEFT", 0, 0);
 
-local WarnDifficultyCheckBox = settings:CreateCheckBox(L["WARN_DIFFICULTY_CHECKBOX"],
+local WarnDifficultyCheckBox = child:CreateCheckBox(L["WARN_DIFFICULTY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Warn:Difficulty"));
 end,
@@ -1903,46 +1935,120 @@ end);
 WarnDifficultyCheckBox:SetATTTooltip(L["WARN_DIFFICULTY_CHECKBOX_TOOLTIP"]);
 WarnDifficultyCheckBox:SetPoint("TOPLEFT", ExpandDifficultyCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ReportCollectedThingsCheckBox = settings:CreateCheckBox(L["REPORT_COLLECTED_THINGS_CHECKBOX"],
+local UseMoreColorsCheckBox = child:CreateCheckBox(L["MORE_COLORS_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:GetTooltipSetting("Report:Collected"));
+	self:SetChecked(settings:GetTooltipSetting("UseMoreColors"));
 end,
 function(self)
-	settings:SetTooltipSetting("Report:Collected", self:GetChecked());
+	settings:SetTooltipSetting("UseMoreColors", self:GetChecked());
+	app:UpdateWindows();
 end);
-ReportCollectedThingsCheckBox:SetATTTooltip(L["REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP"]);
-ReportCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnDifficultyCheckBox, "BOTTOMLEFT", 0, 0);
+UseMoreColorsCheckBox:SetATTTooltip(L["MORE_COLORS_CHECKBOX_TOOLTIP"]);
+UseMoreColorsCheckBox:SetPoint("TOPLEFT", WarnDifficultyCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ReportCompletedQuestsCheckBox = settings:CreateCheckBox(L["REPORT_COMPLETED_QUESTS_CHECKBOX"],
+local QuestChainRequirementsNested = child:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:GetTooltipSetting("Report:CompletedQuests"));
+	self:SetChecked(settings:GetTooltipSetting("QuestChain:Nested"));
 end,
 function(self)
-	settings:SetTooltipSetting("Report:CompletedQuests", self:GetChecked());
+	settings:SetTooltipSetting("QuestChain:Nested", self:GetChecked());
 end);
-ReportCompletedQuestsCheckBox:SetATTTooltip(L["REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP"]);
-ReportCompletedQuestsCheckBox:SetPoint("TOPLEFT", ReportCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
+QuestChainRequirementsNested:SetATTTooltip(L["QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP"]);
+QuestChainRequirementsNested:SetPoint("TOPLEFT", UseMoreColorsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ReportUnsortedCompletedQuestsCheckBox = settings:CreateCheckBox(L["REPORT_UNSORTED_CHECKBOX"],
+local SortByCompletionInstead = child:CreateCheckBox(L["SORT_BY_PROGRESS_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:GetTooltipSetting("Report:UnsortedQuests"));
-	if not settings:GetTooltipSetting("Report:CompletedQuests") then
+	self:SetChecked(settings:GetTooltipSetting("Sort:Progress"));
+end,
+function(self)
+	settings:SetTooltipSetting("Sort:Progress", self:GetChecked());
+end);
+SortByCompletionInstead:SetATTTooltip(L["SORT_BY_PROGRESS_CHECKBOX_TOOLTIP"]);
+SortByCompletionInstead:SetPoint("TOPLEFT", QuestChainRequirementsNested, "BOTTOMLEFT", 0, 4);
+
+local ShowRemainingCheckBox = child:CreateCheckBox(L["SHOW_REMAINING_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:Remaining"));
+	if self:GetChecked() then
+		app.GetProgressText = app.GetProgressTextRemaining;
+	else
+		app.GetProgressText = app.GetProgressTextDefault;
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Show:Remaining", self:GetChecked());
+	app:UpdateWindows();
+end);
+ShowRemainingCheckBox:SetATTTooltip(L["SHOW_REMAINING_CHECKBOX_TOOLTIP"]);
+ShowRemainingCheckBox:SetPoint("TOPLEFT", SortByCompletionInstead, "BOTTOMLEFT", 0, 0);
+
+local ShowPercentagesCheckBox = child:CreateCheckBox(L["PERCENTAGES_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:Percentage"));
+end,
+function(self)
+	settings:SetTooltipSetting("Show:Percentage", self:GetChecked());
+	app:UpdateWindows();
+end);
+ShowPercentagesCheckBox:SetATTTooltip(L["PERCENTAGES_CHECKBOX_TOOLTIP"]);
+ShowPercentagesCheckBox:SetPoint("TOPLEFT", ShowRemainingCheckBox, "BOTTOMLEFT", 0, 4);
+
+local PrecisionSliderLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+PrecisionSliderLabel:SetPoint("LEFT", ShowPercentagesCheckBox, "LEFT", 10, 0);
+PrecisionSliderLabel:SetPoint("TOP", ShowPercentagesCheckBox, "BOTTOM", 0, 0);
+PrecisionSliderLabel:SetJustifyH("LEFT");
+PrecisionSliderLabel:SetText(L["PRECISION_SLIDER"]);
+PrecisionSliderLabel:SetTextColor(1, 1, 1, 1);
+PrecisionSliderLabel:Show();
+table.insert(settings.MostRecentTab.objects, PrecisionSliderLabel);
+PrecisionSliderLabel.OnRefresh = function(self)
+	if not settings:GetTooltipSetting("Show:Percentage") then
+		self:SetAlpha(0.2);
+	else
+		self:SetAlpha(1);
+	end	
+end;
+
+local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", child, "OptionsSliderTemplate");
+PrecisionSlider:SetPoint("CENTER", PrecisionSliderLabel, "CENTER", 0, 0);
+PrecisionSlider:SetPoint("RIGHT", settings, "RIGHT", -30, 0);
+table.insert(settings.MostRecentTab.objects, PrecisionSlider);
+settings.PrecisionSlider = PrecisionSlider;
+PrecisionSlider.tooltipText = L["PRECISION_SLIDER_TOOLTIP"];
+PrecisionSlider:SetOrientation('HORIZONTAL');
+PrecisionSlider:SetWidth(150);
+PrecisionSlider:SetHeight(20);
+PrecisionSlider:SetValueStep(1);
+PrecisionSlider:SetMinMaxValues(0, 8);
+PrecisionSlider:SetObeyStepOnDrag(true);
+_G[PrecisionSlider:GetName() .. 'Low']:SetText('0')
+_G[PrecisionSlider:GetName() .. 'High']:SetText('8')
+--_G[PrecisionSlider:GetName() .. 'Text']:SetText(L["PRECISION_SLIDER"])
+PrecisionSlider.Label = PrecisionSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+PrecisionSlider.Label:SetPoint("TOP", PrecisionSlider, "BOTTOM", 0, 2);
+PrecisionSlider.Label:SetText(PrecisionSlider:GetValue());
+PrecisionSlider:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(newValue);
+	if newValue == settings:GetTooltipSetting("Precision") then
+		return 1;
+	end
+	settings:SetTooltipSetting("Precision", newValue)
+	app:UpdateWindows();
+end);
+PrecisionSlider.OnRefresh = function(self)
+	if not settings:GetTooltipSetting("Show:Percentage") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
 		self:Enable();
 		self:SetAlpha(1);
 	end
-end,
-function(self)
-	settings:SetTooltipSetting("Report:UnsortedQuests", self:GetChecked());
-end);
-ReportUnsortedCompletedQuestsCheckBox:SetATTTooltip(L["REPORT_UNSORTED_CHECKBOX_TOOLTIP"]);
-ReportUnsortedCompletedQuestsCheckBox:SetPoint("TOPLEFT", ReportCompletedQuestsCheckBox, "BOTTOMLEFT", 4, 4);
+end;
+
 end)();
 
 ------------------------------------------
--- The "Filters" Tab.					--
+-- The "Filters" Tab.	--
 ------------------------------------------
 (function()
 local tab = settings:CreateTab(L["FILTERS_TAB"]);
@@ -1953,24 +2059,86 @@ tab.OnRefresh = function(self)
 		PanelTemplates_EnableTab(settings, self:GetID());
 	end
 end;
+local function OnScrollBarMouseWheel(self, delta)
+	self.ScrollBar:SetValue(self.ScrollBar.CurrentValue - (delta * 20)); -- Last number here controls scroll speed.
+end
+local function OnScrollBarValueChanged(self, value)
+	local un = math.floor(value);
+	local up = un + 1;
+	self.CurrentValue = (up - value) > (-(un - value)) and un or up;
+	self.child:SetPoint("TOP", 0, (self.CurrentValue / 100) * 200);
+end
+local scrollbar = CreateFrame("Slider", nil, settings, "UIPanelScrollBarTemplate");
+scrollbar:SetPoint("TOP", line, "BOTTOM", -3, -16);
+scrollbar:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -3, 20);
+scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
+scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
+scrollbar.back:SetColorTexture(0,0,0,0.4)
+scrollbar.back:SetAllPoints(scrollbar);
+scrollbar:SetMinMaxValues(0, 194); -- Adding more max value to the scrollbar is what controls the vertical size.
+scrollbar:SetValueStep(1);
+scrollbar.CurrentValue = 0;
+scrollbar:SetWidth(16);
+table.insert(settings.MostRecentTab.objects, scrollbar);
 
-local ItemFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ItemFiltersLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+local scrollFrame = CreateFrame("Frame", nil, settings);
+scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, 0);
+scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
+scrollFrame:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -20, 4);
+scrollFrame:SetClipsChildren(true);
+scrollFrame:EnableMouseWheel(true);
+scrollFrame.ScrollBar = scrollbar;
+scrollFrame:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
+table.insert(settings.MostRecentTab.objects, scrollFrame);
+
+local child = CreateFrame("Frame", nil, scrollFrame);
+child:SetPoint("TOP", 0, 0);
+child:SetSize(600, 500);
+scrollbar.child = child;
+table.insert(settings.MostRecentTab.objects, child);
+child.CreateCheckBox = function(self, label, onRefresh, onClick)
+	local checkBox = settings:CreateCheckBox(label, onRefresh, onClick);
+	checkBox:SetParent(child);
+	return checkBox;
+end
+
+local ItemFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 ItemFiltersLabel:SetJustifyH("LEFT");
 ItemFiltersLabel:SetText(L["ITEM_FILTER_LABEL"]);
 ItemFiltersLabel:Show();
 table.insert(settings.MostRecentTab.objects, ItemFiltersLabel);
+ItemFiltersLabel:SetPoint("TOPLEFT", child, "TOPLEFT", 10, -8);
+ItemFiltersLabel.OnRefresh = function(self)
+	if settings:Get("AccountMode") then
+		self:SetAlpha(0.2);
+	else
+		self:SetAlpha(1);
+	end
+end;
 
--- Armor
+local ItemFiltersExplainLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+ItemFiltersExplainLabel:SetPoint("TOPLEFT", ItemFiltersLabel, "BOTTOMLEFT", 0, -4);
+ItemFiltersExplainLabel:SetPoint("RIGHT", settings, "RIGHT", -310, 0);
+ItemFiltersExplainLabel:SetJustifyH("LEFT");
+ItemFiltersExplainLabel:SetText(L["ITEM_EXPLAIN_LABEL"]);
+ItemFiltersExplainLabel:Show();
+table.insert(settings.MostRecentTab.objects, ItemFiltersExplainLabel);
+ItemFiltersExplainLabel.OnRefresh = function(self)
+	if settings:Get("AccountMode") then
+		self:SetAlpha(0.2);
+	else
+		self:SetAlpha(1);
+	end
+end;
+
+-- Stuff to automatically generate the armor & weapon checkboxes
 local last, xoffset, yoffset = ItemFiltersLabel, 0, -4;
 local itemFilterNames = L["FILTER_ID_TYPES"];
-
--- Primary Armor Class
 local ItemFilterOnClick = function(self)
 	settings:SetFilter(self.filterID, self:GetChecked());
 end;
 local ItemFilterOnRefresh = function(self)
-	if settings:Get("AccountMode") or settings:Get("DebugMode") then
+	if settings:Get("AccountMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1979,83 +2147,34 @@ local ItemFilterOnRefresh = function(self)
 		self:SetAlpha(1);
 	end
 end;
-local armorTypes = { 4, 5, 6, 7 };
-for i,filterID in ipairs(armorTypes) do
-	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
-	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
-	filter.filterID = filterID;
-	last = filter;
-	yoffset = 6;
-end
 
--- Weapons
-yoffset = -4;
-local smallWeaponTypes = { 20, 29, 28 };
-for i,filterID in ipairs(smallWeaponTypes) do
-	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
-	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
-	filter.filterID = filterID;
-	last = filter;
-	yoffset = 6;
-end
-
--- Big Ole Boys
-yoffset = -4;
-local bigWeaponTypes = { 21, 22, 23, 24, 25, 26, 1, 8 };
-for i,filterID in ipairs(bigWeaponTypes) do
-	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
-	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
-	filter.filterID = filterID;
-	last = filter;
-	yoffset = 6;
-end
-
--- Weird Boys
-yoffset = -4;
-local miscWeaponTypes = { 11, 57, 34, 35, 27 };
-for i,filterID in ipairs(miscWeaponTypes) do
-	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
-	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
-	filter.filterID = filterID;
-	last = filter;
-	yoffset = 6;
-end
-
--- Secondary Armor Classes
-last, xoffset, yoffset = ItemFiltersLabel, 120, -4;
-local miscWeaponTypes2 = { 2, 3, 10, 9, 50, 32, 33, 31 };
-for i,filterID in ipairs(miscWeaponTypes2) do
-	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
-	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", xoffset, yoffset);
-	filter.filterID = filterID;
-	last = filter;
-	xoffset = 0;
-	yoffset = 6;
-end
-
-f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
-f:SetPoint("BOTTOMLEFT", settings, "BOTTOMLEFT", 8, 8);
-f:SetText(L["CLASS_DEFAULTS_BUTTON"]);
-f:SetWidth(120);
-f:SetHeight(24);
-f:RegisterForClicks("AnyUp");
-f:SetScript("OnClick", function(self)
-	for key,value in pairs(AllTheThingsSettingsPerCharacter.Filters) do
-		AllTheThingsSettingsPerCharacter.Filters[key] = nil;
-	end
-	settings:Refresh();
-	settings:UpdateMode(1);
-end);
-f:SetATTTooltip(L["CLASS_DEFAULTS_BUTTON_TOOLTIP"]);
-f.OnRefresh = function(self)
-	if settings:Get("AccountMode") or settings:Get("DebugMode") then
-		self:Disable();
+-- 1H Axes, 2H Axes, 1H Maces, 2H Maces, 1H Swords, 2H Swords + Daggers, Fist Weapons, Staves, Polearms, Warglaives + Bows, Crossbows, Guns, Wands, Shields, Off-hands
+local awColumn1 = { 21, 22, 23, 24, 25, 26, 20, 34, 28, 29, 35, 32, 33, 31, 27, 8, 1 };
+for i,filterID in ipairs(awColumn1) do
+	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
+	if filterID == 21 then
+		filter:SetPoint("TOPLEFT", ItemFiltersExplainLabel, "BOTTOMLEFT", -2, -2);
 	else
-		self:Enable();
+		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
 	end
-end;
-table.insert(settings.MostRecentTab.objects, f);
-settings.classdefaults = f;
+	filter.filterID = filterID;
+	last = filter;
+end
+
+-- Cloth, Leather, Mail, Plate + Cosmetic, Cloak, Shirt, Tabard, Artifacts, Fishing Poles
+local awColumn2 = { 4, 5, 6, 7, 2, 3, 10, 9, 11, 57 };
+for i,filterID in ipairs(awColumn2) do
+	local filter = child:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
+	if filterID == 4 then
+		filter:SetPoint("TOPLEFT", ItemFiltersExplainLabel, "BOTTOMLEFT", 170, -2);
+	elseif filterID == 2 or filterID == 11 then
+		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 0);
+	else
+		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
+	end
+	filter.filterID = filterID;
+	last = filter;
+end
 
 local allEquipmentFilters = {	-- Filter IDs
 	11,	-- Artifacts
@@ -2087,11 +2206,36 @@ local allEquipmentFilters = {	-- Filter IDs
 	29,	-- Polearms
 	28,	-- Staves
 }
-f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
-f:SetPoint("TOPLEFT", settings.classdefaults, "TOPRIGHT", 3, 0);
+
+f = CreateFrame("Button", nil, child, "OptionsButtonTemplate");
+f:SetPoint("LEFT", ItemFiltersLabel, "LEFT", 0, -426);
+f:SetText(L["CLASS_DEFAULTS_BUTTON"]);
+f:SetWidth(120);
+f:SetHeight(22);
+f:RegisterForClicks("AnyUp");
+f:SetScript("OnClick", function(self)
+	for key,value in pairs(AllTheThingsSettingsPerCharacter.Filters) do
+		AllTheThingsSettingsPerCharacter.Filters[key] = nil;
+	end
+	settings:Refresh();
+	settings:UpdateMode(1);
+end);
+f:SetATTTooltip(L["CLASS_DEFAULTS_BUTTON_TOOLTIP"]);
+f.OnRefresh = function(self)
+	if settings:Get("AccountMode") or settings:Get("DebugMode") then
+		self:Disable();
+	else
+		self:Enable();
+	end
+end;
+table.insert(settings.MostRecentTab.objects, f);
+settings.equipfilterdefault = f;
+
+f = CreateFrame("Button", nil, child, "OptionsButtonTemplate");
+f:SetPoint("TOPLEFT", settings.equipfilterdefault, "TOPRIGHT", 4, 0);
 f:SetText(L["ALL_BUTTON"]);
-f:SetWidth(80);
-f:SetHeight(24);
+f:SetWidth(70);
+f:SetHeight(22);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", function(self)
 	for k,v in pairs(allEquipmentFilters) do
@@ -2111,11 +2255,11 @@ end;
 table.insert(settings.MostRecentTab.objects, f);
 settings.equipfilterall = f
 
-f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
-f:SetPoint("TOPLEFT", settings.equipfilterall, "TOPRIGHT", 3, 0);
+f = CreateFrame("Button", nil, child, "OptionsButtonTemplate");
+f:SetPoint("TOPLEFT", settings.equipfilterall, "TOPRIGHT", 4, 0);
 f:SetText(L["UNCHECK_ALL_BUTTON"]);
-f:SetWidth(100);
-f:SetHeight(24);
+f:SetWidth(70);
+f:SetHeight(22);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", function(self)
 	for k,v in pairs(allEquipmentFilters) do
@@ -2126,7 +2270,7 @@ f:SetScript("OnClick", function(self)
 end);
 f:SetATTTooltip(L["UNCHECK_ALL_BUTTON_TOOLTIP"]);
 f.OnRefresh = function(self)
-	if settings:Get("AccountMode") or settings:Get("DebugMode") then
+	if settings:Get("AccountMode") then
 		self:Disable();
 	else
 		self:Enable();
@@ -2134,162 +2278,303 @@ f.OnRefresh = function(self)
 end;
 table.insert(settings.MostRecentTab.objects, f);
 
--- Custom Collect filtering
-local CustomCollectFilterLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-CustomCollectFilterLabel:SetPoint("LEFT", line, "LEFT", 275, 0);
-CustomCollectFilterLabel:SetPoint("TOP", line, "BOTTOM", 0, -8);
+local GeneralFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+GeneralFiltersLabel:SetPoint("TOP", ItemFiltersLabel, "TOP", 0, 0);
+GeneralFiltersLabel:SetPoint("LEFT", settings, "RIGHT", -290, 0);
+GeneralFiltersLabel:SetJustifyH("LEFT");
+GeneralFiltersLabel:SetText(L["GENERAL_FILTERS_LABEL"]);
+GeneralFiltersLabel:Show();
+table.insert(settings.MostRecentTab.objects, GeneralFiltersLabel);
+
+local HideBoEItemsCheckBox = child:CreateCheckBox(L["HIDE_BOE_CHECKBOX"],
+function(self)
+	self:SetChecked(not settings:Get("Hide:BoEs")); -- 'not' = inversed :D
+end,
+function(self)
+	settings:SetHideBOEItems(not self:GetChecked()); -- 'not' = inversed :D
+end);
+HideBoEItemsCheckBox:SetATTTooltip(L["HIDE_BOE_CHECKBOX_TOOLTIP"]);
+HideBoEItemsCheckBox:SetPoint("TOPLEFT", GeneralFiltersLabel, "BOTTOMLEFT", -2, 0);
+
+local IgnoreFiltersForBoEsCheckBox = child:CreateCheckBox(L["IGNORE_FILTERS_FOR_BOES_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Filter:BoEs"));
+	if settings:Get("Hide:BoEs") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Filter:BoEs", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+IgnoreFiltersForBoEsCheckBox:SetATTTooltip(L["IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP"]);
+IgnoreFiltersForBoEsCheckBox:SetPoint("TOPLEFT", HideBoEItemsCheckBox, "BOTTOMLEFT", 8, 4);
+
+local FilterThingsByLevelCheckBox = child:CreateCheckBox(L["FILTER_THINGS_BY_LEVEL_CHECKBOX"],
+function(self)
+	self:SetChecked(not settings:Get("Filter:ByLevel")); -- 'not' = inversed :D
+end,
+function(self)
+	settings:Set("Filter:ByLevel", not self:GetChecked()); -- 'not' = inversed :D
+	settings:UpdateMode(1);
+end);
+FilterThingsByLevelCheckBox:SetATTTooltip(L["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"]);
+FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", IgnoreFiltersForBoEsCheckBox, "BOTTOMLEFT", -8, 4);
+
+-- local FilterNewPlayerExperienceCheckBox = child:CreateCheckBox("|T"..("Interface\\Icons\\achievement_newplayerexperience.blp")..":0|t |cffADD8E6New Player Experience", -- Add locale
+-- function(self)
+-- 	self:SetChecked(settings:GetFilter("CC:NPE"));
+-- end,
+-- function(self)
+-- 	settings:SetFilter("CC:NPE", self:GetChecked());
+-- 	settings:UpdateMode(1);
+-- end);
+-- FilterNewPlayerExperienceCheckBox:SetATTTooltip(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"]);
+-- FilterNewPlayerExperienceCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEFT", 0, 4);
+
+-- local FilterShadowlandsSkipCheckBox = child:CreateCheckBox("|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6Shadowlands Skip", -- Add locale
+-- function(self)
+-- 	self:SetChecked(settings:GetFilter("CC:SL_SKIP"));
+-- end,
+-- function(self)
+-- 	settings:SetFilter("CC:SL_SKIP", self:GetChecked());
+-- 	settings:UpdateMode(1);
+-- end);
+-- FilterShadowlandsSkipCheckBox:SetATTTooltip(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"]);
+-- FilterShadowlandsSkipCheckBox:SetPoint("TOPLEFT", FilterNewPlayerExperienceCheckBox, "BOTTOMLEFT", 0, 4);
+
+-- local FilterCovenantsCheckBox = child:CreateCheckBox("|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6Covenants", -- Add locale
+-- function(self)
+-- 	self:SetChecked(settings:GetFilter("Filter:Covenants"));
+-- 	if settings:Get("AccountMode") then
+-- 		self:Disable();
+-- 		self:SetAlpha(0.2);
+-- 	else
+-- 		self:Enable();
+-- 		self:SetAlpha(1);
+-- 	end
+-- end,
+-- function(self)
+-- 	settings:SetFilter("Filter:Covenants", self:GetChecked());
+-- 	settings:UpdateMode(1);
+-- end);
+-- FilterCovenantsCheckBox:SetATTTooltip(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"]);
+-- FilterCovenantsCheckBox:SetPoint("TOPLEFT", FilterShadowlandsSkipCheckBox, "BOTTOMLEFT", 0, 4);
+
+local HidePvPItemsCheckBox = child:CreateCheckBox(L["HIDE_PVP_CHECKBOX"],
+function(self)
+	self:SetChecked(not settings:Get("Hide:PvP")); -- 'not' = inversed :D
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Hide:PvP", not self:GetChecked()); -- 'not' = inversed :D
+	-- Remove once replacing PvP flags in data
+	local val = app.GetDataMember("UnobtainableItemFilters");
+	val[12] = not self:GetChecked();
+	app.SetDataMember("UnobtainableItemFilters", val);
+
+	settings:UpdateMode(1);
+end);
+HidePvPItemsCheckBox:SetATTTooltip(L["HIDE_PVP_CHECKBOX_TOOLTIP"]);
+--HidePvPItemsCheckBox:SetPoint("TOPLEFT", FilterCovenantsCheckBox, "BOTTOMLEFT", 0, 4);
+HidePvPItemsCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEFT", 0, 4);
+
+local CustomCollectFilterLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+CustomCollectFilterLabel:SetPoint("TOP", HidePvPItemsCheckBox, "BOTTOM", 0, -8);
+CustomCollectFilterLabel:SetPoint("LEFT", GeneralFiltersLabel, "LEFT", 0, 0);
 CustomCollectFilterLabel:SetJustifyH("LEFT");
 CustomCollectFilterLabel:SetText(L["CUSTOM_FILTERS_LABEL"]);
 CustomCollectFilterLabel:Show();
 table.insert(settings.MostRecentTab.objects, CustomCollectFilterLabel);
+CustomCollectFilterLabel.OnRefresh = function(self)
+	if settings:Get("AccountMode") then
+		self:SetAlpha(0.2);
+	else
+		self:SetAlpha(1);
+	end
+end;
 
-local CustomCollectFilterExplainLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-CustomCollectFilterExplainLabel:SetPoint("LEFT", CustomCollectFilterLabel, "LEFT", 0, 0);
-CustomCollectFilterExplainLabel:SetPoint("RIGHT", CustomCollectFilterLabel, "LEFT", 325, 0);
-CustomCollectFilterExplainLabel:SetPoint("TOP", CustomCollectFilterLabel, "BOTTOM", 0, -8);
+local CustomCollectFilterExplainLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+CustomCollectFilterExplainLabel:SetPoint("TOPLEFT", CustomCollectFilterLabel, "BOTTOMLEFT", 0, -4);
+CustomCollectFilterExplainLabel:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
 CustomCollectFilterExplainLabel:SetJustifyH("LEFT");
 CustomCollectFilterExplainLabel:SetText(L["CUSTOM_FILTERS_EXPLAIN_LABEL"]);
 CustomCollectFilterExplainLabel:Show();
 table.insert(settings.MostRecentTab.objects, CustomCollectFilterExplainLabel);
+CustomCollectFilterExplainLabel.OnRefresh = function(self)
+	if settings:Get("AccountMode") then
+		self:SetAlpha(0.2);
+	else
+		self:SetAlpha(1);
+	end
+end;
 
-local customCollects, ccCheckbox = L["CUSTOM_COLLECTS_REASONS"];
-local previousCheckbox = CustomCollectFilterExplainLabel;
-local xInitalOffset, yInitialOffset, inital = -5, -6, true;
-for i,cc in ipairs({"NPE","SL_SKIP","SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"}) do
-	local filterID = "CC:" .. cc;
-	local ccInfo = customCollects[cc];
-	ccCheckbox = settings:CreateCheckBox(ccInfo[1],
-	function(self)
-		self:SetChecked(settings:GetFilter(filterID));
+local NPE_CheckBox = child:CreateCheckBox(L["SETTINGS_CUSTOM_COLLECTS_REASONS"]["NPE"][1],
+function(self)
+	self:SetChecked(settings:GetFilter("CC:NPE"));
+	if settings:Get("AccountMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
 		self:Enable();
 		self:SetAlpha(1);
-	end,
-	function(self)
-		settings:SetFilter(filterID, self:GetChecked());
-	end);
-
-	ccCheckbox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], ccInfo[1]));
-	if inital then
-		ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", xInitalOffset, 0);
-		ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, yInitialOffset);
-		inital = nil;
-	else
-		ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", 0, 0);
-		ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, 6);
 	end
-	previousCheckbox = ccCheckbox;
-end
-
-end)();
-
-------------------------------------------
--- The "Social" Tab.					--
-------------------------------------------
---[[
-(function()
-local tab = settings:CreateTab("Social");
-tab.OnRefresh = function(self)
-	-- We aren't ready yet. :(
-	PanelTemplates_DisableTab(settings, self:GetID());
-end;
-end)();
---]]
-
-------------------------------------------
--- The temporary "Unobtainables" Tab.	--
-------------------------------------------
-(function()
-local tab = settings:CreateTab(L["UNOBTAINABLES_TAB"]);
-tab.OnRefresh = function(self)
-	if settings:Get("DebugMode") then
-		PanelTemplates_DisableTab(settings, self:GetID());
-	else
-		PanelTemplates_EnableTab(settings, self:GetID());
-	end
-end;
-local function OnScrollBarMouseWheel(self, delta)
-	self.ScrollBar:SetValue(self.ScrollBar.CurrentValue - (delta * 5));
-end
-local function OnScrollBarValueChanged(self, value)
-	local un = math.floor(value);
-	local up = un + 1;
-	self.CurrentValue = (up - value) > (-(un - value)) and un or up;
-	self.child:SetPoint("TOP", 0, (self.CurrentValue / 100) * 200);
-end
-local scrollbar = CreateFrame("Slider", nil, settings, "UIPanelScrollBarTemplate");
-scrollbar:SetPoint("TOP", line, "BOTTOM", -3, -16);
-scrollbar:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -3, 20);
-scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
-scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
-scrollbar.back:SetColorTexture(0,0,0,0.4)
-scrollbar.back:SetAllPoints(scrollbar);
-scrollbar:SetMinMaxValues(0, 100);
-scrollbar:SetValueStep(1);
-scrollbar.CurrentValue = 0;
-scrollbar:SetWidth(16);
-table.insert(settings.MostRecentTab.objects, scrollbar);
-
-local scrollFrame = CreateFrame("Frame", nil, settings);
-scrollFrame:SetPoint("TOP", line, "BOTTOM", 0, -1);
-scrollFrame:SetPoint("LEFT", settings, "LEFT", 0, 0);
-scrollFrame:SetPoint("BOTTOMRIGHT", settings, "BOTTOMRIGHT", -20, 4);
-scrollFrame:SetClipsChildren(true);
-scrollFrame:EnableMouseWheel(true);
-scrollFrame.ScrollBar = scrollbar;
-scrollFrame:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
-table.insert(settings.MostRecentTab.objects, scrollFrame);
-
-local child = CreateFrame("Frame", nil, scrollFrame);
-child:SetPoint("TOP", 0, 0);
-child:SetSize(600, 2500);
-scrollbar.child = child;
-table.insert(settings.MostRecentTab.objects, child);
-child.CreateCheckBox = function(self, label, onRefresh, onClick)
-	local checkBox = settings:CreateCheckBox(label, onRefresh, onClick);
-	checkBox:SetParent(child);
-	return checkBox;
-end
-
--- seasonal
-local seasonal = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-seasonal:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-seasonal:SetText(L["SEASONAL_LABEL"]);
-
-local seasonalFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
-seasonalFrame:SetPoint("TOP", seasonal, "BOTTOM", 0, -4);
-seasonalFrame:SetPoint("LEFT", child, 4, 0);
-seasonalFrame:SetPoint("RIGHT", child, -4, 0);
-seasonalFrame:SetHeight(250);
-
--- seasonal enable
-local seasonalEnable = child:CreateCheckBox(L["SEASONAL_ENABLE"],
-function(self)
-	self:SetChecked(app.GetDataMember("FilterSeasonal"));
 end,
 function(self)
-	app.SetDataMember("FilterSeasonal", self:GetChecked());
-	if self:GetChecked() then
-		app.SeasonalItemFilter = app.FilterItemClass_SeasonalItem;
-	else
-		app.SeasonalItemFilter = app.NoFilter;
-	end
-	settings:Refresh();
+	settings:SetFilter("CC:NPE", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-seasonalEnable:SetPoint("TOPLEFT", seasonalFrame, "TOPLEFT", 4, -4);
+NPE_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], L["CUSTOM_COLLECTS_REASONS"]["NPE"][1]));
+NPE_CheckBox:SetPoint("TOPLEFT", CustomCollectFilterExplainLabel, "BOTTOMLEFT", -2, -2);
 
--- seasonal Everything
-local seasonalAll = child:CreateCheckBox(L["SEASONAL_ALL"],
+local SL_SKIP_CheckBox = child:CreateCheckBox(L["SETTINGS_CUSTOM_COLLECTS_REASONS"]["SL_SKIP"][1],
 function(self)
+	self:SetChecked(settings:GetFilter("CC:SL_SKIP"));
+	if settings:Get("AccountMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetFilter("CC:SL_SKIP", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+SL_SKIP_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], L["CUSTOM_COLLECTS_REASONS"]["SL_SKIP"][1]));
+SL_SKIP_CheckBox:SetPoint("TOPLEFT", NPE_CheckBox, "BOTTOMLEFT", 0, 4);
+
+local SL_COV_KYR_CheckBox = child:CreateCheckBox(L["SETTINGS_CUSTOM_COLLECTS_REASONS"]["SL_COV_KYR"][1],
+function(self)
+	self:SetChecked(settings:GetFilter("CC:SL_COV_KYR"));
+	if settings:Get("AccountMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetFilter("CC:SL_COV_KYR", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+SL_COV_KYR_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], L["CUSTOM_COLLECTS_REASONS"]["SL_COV_KYR"][1]));
+SL_COV_KYR_CheckBox:SetPoint("TOPLEFT", SL_SKIP_CheckBox, "BOTTOMLEFT", 0, 4);
+
+local SL_COV_NEC_CheckBox = child:CreateCheckBox(L["SETTINGS_CUSTOM_COLLECTS_REASONS"]["SL_COV_NEC"][1],
+function(self)
+	self:SetChecked(settings:GetFilter("CC:SL_COV_NEC"));
+	if settings:Get("AccountMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetFilter("CC:SL_COV_NEC", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+SL_COV_NEC_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], L["CUSTOM_COLLECTS_REASONS"]["SL_COV_NEC"][1]));
+SL_COV_NEC_CheckBox:SetPoint("TOPLEFT", SL_COV_KYR_CheckBox, "BOTTOMLEFT", 0, 4);
+
+local SL_COV_NFA_CheckBox = child:CreateCheckBox(L["SETTINGS_CUSTOM_COLLECTS_REASONS"]["SL_COV_NFA"][1],
+function(self)
+	self:SetChecked(settings:GetFilter("CC:SL_COV_NFA"));
+	if settings:Get("AccountMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetFilter("CC:SL_COV_NFA", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+SL_COV_NFA_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], L["CUSTOM_COLLECTS_REASONS"]["SL_COV_NFA"][1]));
+SL_COV_NFA_CheckBox:SetPoint("TOPLEFT", SL_COV_NEC_CheckBox, "BOTTOMLEFT", 0, 4);
+
+local SL_COV_VEN_CheckBox = child:CreateCheckBox(L["SETTINGS_CUSTOM_COLLECTS_REASONS"]["SL_COV_VEN"][1],
+function(self)
+	self:SetChecked(settings:GetFilter("CC:SL_COV_VEN"));
+	if settings:Get("AccountMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetFilter("CC:SL_COV_VEN", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+SL_COV_VEN_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], L["CUSTOM_COLLECTS_REASONS"]["SL_COV_VEN"][1]));
+SL_COV_VEN_CheckBox:SetPoint("TOPLEFT", SL_COV_NFA_CheckBox, "BOTTOMLEFT", 0, 4);
+
+-- local customCollects, ccCheckbox = L["CUSTOM_COLLECTS_REASONS"];
+-- local customLabels = L["SETTINGS_CUSTOM_COLLECTS_REASONS"];
+-- local previousCheckbox = CustomCollectFilterExplainLabel;
+-- local xInitalOffset, yInitialOffset, inital = -2, -2, true;
+-- for i,cc in ipairs({"NPE","SL_SKIP","SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"}) do
+-- 	local filterID = "CC:" .. cc;
+-- 	local ccInfo = customCollects[cc];
+-- 	local ccLabel = customLabels[cc];
+-- 	ccCheckbox = child:CreateCheckBox(ccLabel[1],
+-- 	function(self)
+-- 		self:SetChecked(settings:GetFilter(filterID));
+-- 	end,
+-- 	function(self)
+-- 		settings:SetFilter(filterID, self:GetChecked());
+-- 	end);
+-- 	ccCheckbox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], ccInfo[1]));
+-- 	if inital then
+-- 		ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", xInitalOffset, 0);
+-- 		ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, yInitialOffset);
+-- 		inital = nil;
+-- 	else
+-- 		ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", 0, 0);
+-- 		ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, 4);
+-- 	end
+-- 	previousCheckbox = ccCheckbox;
+-- end
+
+local SeasonalFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+SeasonalFiltersLabel:SetText(L["SEASONAL_LABEL"]);
+SeasonalFiltersLabel:SetPoint("LEFT", ItemFiltersLabel, "LEFT", 0, 0);
+SeasonalFiltersLabel:SetPoint("TOP", settings.equipfilterdefault, "BOTTOM", 0, -8);
+
+-- Stuff to order the Holidays manually
+local holidayThings = L["UNOBTAINABLE_ITEM_REASONS"];
+local holidayOrder = { 1012, 1016, 1015, 1014, 1007, 1006, 1010, 1001, 1008, 1005, 1011, 1000, 1004, 1002, 1017, 1013, 1003 };
+
+local SeasonalAllCheckBox = child:CreateCheckBox(L["SEASONAL_ALL"],
+function(self)
+	app.SeasonalItemFilter = app.FilterItemClass_SeasonalItem; -- Always enable Seasonal Filter
 	local isTrue = true
 	local val = app.GetDataMember("SeasonalFilters")
-	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-		if v[1] == 4 then
+	for k,v in ipairs(holidayOrder) do
+		if holidayThings[v][1] == 4 then
 			isTrue = isTrue and not val[k]
 		end
 	end
-	self:SetChecked(isTrue);
-	if not app.GetDataMember("FilterSeasonal") then
+	self:SetChecked(not isTrue); -- 'not' = inversed :D
+	if not app.GetDataMember("FilterSeasonal") then -- Is disabled if I fucked up
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -2299,32 +2584,28 @@ function(self)
 end,
 function(self)
 	local val = app.GetDataMember("SeasonalFilters")
-	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-		if v[1] == 4 then
-			val[k] = not self:GetChecked()
+	for k,v in ipairs(holidayOrder) do
+		if holidayThings[v][1] == 4 then
+			val[k] = not not self:GetChecked() -- 'not' = inversed :D
 		end
 	end
 	app.SetDataMember("SeasonalFilters", val);
 	settings:Refresh();
 	settings:UpdateMode(1);
 end);
-seasonalAll:SetPoint("TOP", seasonalFrame, "TOP", 0, -4);
-seasonalAll:SetPoint("LEFT", seasonalFrame, "CENTER", 0, 0);
+SeasonalAllCheckBox:SetPoint("TOPLEFT", SeasonalFiltersLabel, "BOTTOMLEFT", -2, 0);
 
-local seasonalSubFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
-seasonalSubFrame:SetPoint("TOPLEFT",seasonalFrame,5,-30);
-seasonalSubFrame:SetPoint("BOTTOMRIGHT", seasonalFrame, -15, 20);
-
-local last = seasonalSubFrame;
-local x = 5;
-local y = 5;
+local last = SeasonalAllCheckBox;
+local x = 8;
+local y = 4;
 local count = 0;
-for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-	if v[1] == 4 then
-		local seasonalFilter = child:CreateCheckBox(v[3],
+for k, v in ipairs(holidayOrder) do
+	--if v[1] == 4 then
+	if holidayThings[v][1] == 4 then
+		local seasonalFilter = child:CreateCheckBox(holidayThings[v][3],
 		function(self)
-			self:SetChecked(not app.GetDataMember("SeasonalFilters")[k]);
-			if not app.GetDataMember("FilterSeasonal") then
+			self:SetChecked(not not app.GetDataMember("SeasonalFilters")[k]); -- 'not' = inversed :D
+			if not app.GetDataMember("FilterSeasonal") then -- Is disabled if I fucked up
 				self:Disable();
 				self:SetAlpha(0.2);
 			else
@@ -2334,57 +2615,33 @@ for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		end,
 		function(self)
 			local val = app.GetDataMember("SeasonalFilters")
-			val[k]= not self:GetChecked()
+			val[k]= not not self:GetChecked() -- 'not' = inversed :D
 			app.SetDataMember("SeasonalFilters", val);
 			settings:Refresh();
 			settings:UpdateMode(1);
 		end);
-		seasonalFilter:SetATTTooltip(v[2]);
-		seasonalFilter:SetPoint("TOPLEFT",last,x,-y)
+		seasonalFilter:SetATTTooltip(holidayThings[v][2]);
+		seasonalFilter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", x, y)
 		last = seasonalFilter
 		x = 0;
-		y = 20;
+		y = 4;
 		count = count + 1;
-		if count == 9 then
-			x = 275
-			y = 5
-			last = seasonalSubFrame
-		end
+		-- if count == 9 then
+		-- 	x = 275
+		-- 	y = 5
+		-- 	last = seasonalSubFrame
+		-- end
 	end
 end
 
--- Unobtainable
-local unobtainable = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-unobtainable:SetPoint("TOP", seasonalFrame, "TOP", 0, -(seasonalFrame:GetHeight() + 20))
-unobtainable:SetPoint("LEFT", line, "LEFT", 8, 0);
-unobtainable:SetText(L["UNOBTAINALBE_LABEL"]);
+local UnobtainableFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+UnobtainableFiltersLabel:SetText(L["UNOBTAINABLE_LABEL"]);
+UnobtainableFiltersLabel:SetPoint("TOP", SeasonalFiltersLabel, "TOP", 0, 0);
+UnobtainableFiltersLabel:SetPoint("LEFT", GeneralFiltersLabel, "LEFT", 0, 0);
 
-local unobtainableFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
-unobtainableFrame:SetPoint("TOP",unobtainable,0,-20);
-unobtainableFrame:SetPoint("LEFT", child, 4, 0);
-unobtainableFrame:SetPoint("RIGHT", child, -4, 0);
-unobtainableFrame:SetHeight(320);
-
--- unobtainable enable
-local unobtainableEnable = child:CreateCheckBox(L["UNOBTAINABLE_ENABLE"],
+local UnobtainableAllCheckBox = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 function(self)
-	self:SetChecked(app.GetDataMember("FilterUnobtainableItems"));
-end,
-function(self)
-	app.SetDataMember("FilterUnobtainableItems", self:GetChecked());
-	if self:GetChecked() then
-		app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
-	else
-		app.UnobtainableItemFilter = app.NoFilter;
-	end
-	settings:Refresh();
-	settings:UpdateMode(1);
-end);
-unobtainableEnable:SetPoint("TOPLEFT",unobtainable,5,-20)
-
--- unobtainable Everything
-local unobtainableAll = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
-function(self)
+	app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem; -- Always enable Unobtainable Filter
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
 	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
@@ -2392,8 +2649,8 @@ function(self)
 			isTrue = isTrue and not val[k]
 		end
 	end
-	self:SetChecked(isTrue);
-	if not app.GetDataMember("FilterUnobtainableItems") then
+	self:SetChecked(not isTrue); -- 'not' = inversed :D
+	if not app.GetDataMember("FilterUnobtainableItems") then -- Is disabled if I fucked up
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -2405,28 +2662,16 @@ function(self)
 	local val = app.GetDataMember("UnobtainableItemFilters")
 	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		if v[1] < 4 then
-			val[k] = not self:GetChecked()
+			val[k] = not not self:GetChecked() -- 'not' = inversed :D
 		end
 	end
 	app.SetDataMember("UnobtainableItemFilters", val);
 	settings:Refresh();
 	settings:UpdateMode(1);
 end);
-unobtainableAll:SetPoint("TOPLEFT",unobtainable, 300, -20)
+UnobtainableAllCheckBox:SetPoint("TOPLEFT", UnobtainableFiltersLabel, "BOTTOMLEFT", -2, 0)
 
--- no chance
-local noChance = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-noChance:SetPoint("TOPLEFT", unobtainable, 10, -50)
-noChance:SetText(L["NO_CHANCE_LABEL"]);		-- L["NO_CHANCE_LABEL"] = "No Chance";
-
-local noChanceFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
-noChanceFrame:SetPoint("TOP",noChance,0,-20);
-noChanceFrame:SetPoint("LEFT", child, 4, 0);
-noChanceFrame:SetPoint("RIGHT", child, -4, 0);
-noChanceFrame:SetHeight(120);
-
--- no chance Everything
-local noChanceAll = child:CreateCheckBox(L["NO_CHANCE_ALL"],
+local NoChanceAllCheckBox = child:CreateCheckBox(L["NO_CHANCE_ALL"],
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
@@ -2435,8 +2680,8 @@ function(self)
 			isTrue = isTrue and not val[k]
 		end
 	end
-	self:SetChecked(isTrue);
-	if not app.GetDataMember("FilterUnobtainableItems") then
+	self:SetChecked(not isTrue); -- 'not' = inversed :D
+	if not app.GetDataMember("FilterUnobtainableItems") then -- Is disabled if I fucked up
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -2448,25 +2693,25 @@ function(self)
 	local val = app.GetDataMember("UnobtainableItemFilters")
 	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		if v[1] == 1 then
-			val[k] = not self:GetChecked()
+			val[k] = not not self:GetChecked() -- 'not' = inversed :D
 		end
 	end
 	app.SetDataMember("UnobtainableItemFilters", val);
 	settings:Refresh();
 	settings:UpdateMode(1);
 end);
-noChanceAll:SetPoint("TOPLEFT",noChance, 300, 7)
+NoChanceAllCheckBox:SetPoint("TOPLEFT", UnobtainableAllCheckBox, "BOTTOMLEFT", 8, 4)
 
-local last = noChanceFrame;
-local x = 5;
-local y = 5;
+local last = NoChanceAllCheckBox;
+local x = 8;
+local y = 4;
 local count = 0;
 for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 	if v[1] == 1 then
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
-			self:SetChecked(not app.GetDataMember("UnobtainableItemFilters")[k]);
-			if not app.GetDataMember("FilterUnobtainableItems") then
+			self:SetChecked(not not app.GetDataMember("UnobtainableItemFilters")[k]); -- 'not' = inversed :D
+			if not app.GetDataMember("FilterUnobtainableItems") then -- Is disabled if I fucked up
 				self:Disable();
 				self:SetAlpha(0.2);
 			else
@@ -2476,38 +2721,30 @@ for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		end,
 		function(self)
 			local val = app.GetDataMember("UnobtainableItemFilters")
-			val[k]= not self:GetChecked()
+			val[k]= not not self:GetChecked() -- 'not' = inversed :D
 			app.SetDataMember("UnobtainableItemFilters", val);
 			settings:Refresh();
 			settings:UpdateMode(1);
 		end);
 		filter:SetATTTooltip(v[2]);
-		filter:SetPoint("TOPLEFT",last,x,-y)
+		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", x, y)
 		last = filter
 		x = 0;
-		y = 20;
+		y = 4;
 		count = count + 1;
-		if count == 5 then
-			x = 300
-			y = 5
-			last = noChanceFrame
-		end
+		-- if count == 5 then
+		-- 	x = 300
+		-- 	y = 5
+		-- 	last = noChanceFrame
+		-- end
+
+		settings.NoChanceBottom = last
 	end
 end
 
--- high
-local highChance = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-highChance:SetPoint("TOPLEFT", noChance, 0, -(noChanceFrame:GetHeight() + (2*20)))
-highChance:SetText(L["HIGH_CHENCE_LABEL"]);		-- L["HIGH_CHENCE_LABEL"] = "High Chance";
-
-local highChanceFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
-highChanceFrame:SetPoint("TOP",highChance,0,-20);
-highChanceFrame:SetPoint("LEFT", child, 4, 0);
-highChanceFrame:SetPoint("RIGHT", child, -4, 0);
-highChanceFrame:SetHeight(90);
 
 -- high Everything
-local highChanceAll = child:CreateCheckBox(L["HIGH_CHANCE_ALL"],
+local HighChanceAllCheckBox = child:CreateCheckBox(L["HIGH_CHANCE_ALL"],
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters");
@@ -2516,8 +2753,8 @@ function(self)
 			isTrue = isTrue and not val[k];
 		end
 	end
-	self:SetChecked(isTrue);
-	if not app.GetDataMember("FilterUnobtainableItems") then
+	self:SetChecked(not isTrue); -- 'not' = inversed :D
+	if not app.GetDataMember("FilterUnobtainableItems") then -- Is disabled if I fucked up
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -2529,25 +2766,25 @@ function(self)
 	local val = app.GetDataMember("UnobtainableItemFilters");
 	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		if v[1] == 3 then
-			val[k] = not self:GetChecked();
+			val[k] = not not self:GetChecked(); -- 'not' = inversed :D
 		end
 	end
 	app.SetDataMember("UnobtainableItemFilters", val);
 	settings:Refresh();
 	settings:UpdateMode(1);
 end);
-highChanceAll:SetPoint("TOPLEFT",highChance, 300, 7);
+HighChanceAllCheckBox:SetPoint("TOPLEFT", settings.NoChanceBottom, "BOTTOMLEFT", -8, 4)
 
-local last = highChanceFrame;
-local x = 5;
-local y = 5;
+local last = HighChanceAllCheckBox;
+local x = 8;
+local y = 4;
 local count = 0;
 for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 	if v[1] == 3 then
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
-			self:SetChecked(not app.GetDataMember("UnobtainableItemFilters")[k]);
-			if not app.GetDataMember("FilterUnobtainableItems") then
+			self:SetChecked(not not app.GetDataMember("UnobtainableItemFilters")[k]); -- 'not' = inversed :D
+			if not app.GetDataMember("FilterUnobtainableItems") then -- Is disabled if I fucked up
 				self:Disable();
 				self:SetAlpha(0.2);
 			else
@@ -2557,24 +2794,25 @@ for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		end,
 		function(self)
 			local val = app.GetDataMember("UnobtainableItemFilters");
-			val[k]= not self:GetChecked();
+			val[k]= not not self:GetChecked(); -- 'not' = inversed :D
 			app.SetDataMember("UnobtainableItemFilters", val);
 			settings:Refresh();
 			settings:UpdateMode(1);
 		end);
 		filter:SetATTTooltip(v[2]);
-		filter:SetPoint("TOPLEFT",last,x,-y);
+		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", x, y)
 		last = filter;
 		x = 0;
-		y = 20;
+		y = 4;
 		count = count + 1;
-		if count == 4 then
-			x = 300;
-			y = 5;
-			last = highChanceFrame;
-		end
+		-- if count == 4 then
+		-- 	x = 300;
+		-- 	y = 5;
+		-- 	last = highChanceFrame;
+		-- end
 	end
 end
+
 end)();
 
 ------------------------------------------
@@ -2589,6 +2827,17 @@ TooltipLabel:SetText(L["TOOLTIP_LABEL"]);
 TooltipLabel:Show();
 table.insert(settings.MostRecentTab.objects, TooltipLabel);
 
+local ShowTooltipHelpCheckBox = settings:CreateCheckBox(L["TOOLTIP_HELP_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:TooltipHelp"));
+end,
+function(self)
+	settings:SetTooltipSetting("Show:TooltipHelp", self:GetChecked());
+	app:UpdateWindows();
+end);
+ShowTooltipHelpCheckBox:SetATTTooltip(L["TOOLTIP_HELP_CHECKBOX_TOOLTIP"]);
+ShowTooltipHelpCheckBox:SetPoint("TOPLEFT", TooltipLabel, "BOTTOMLEFT", -2, 0);
+
 local EnableTooltipInformationCheckBox = settings:CreateCheckBox(L["ENABLE_TOOLTIP_INFORMATION_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled"));
@@ -2597,32 +2846,22 @@ function(self)
 	settings:SetTooltipSetting("Enabled", self:GetChecked());
 end);
 EnableTooltipInformationCheckBox:SetATTTooltip(L["ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP"]);
-EnableTooltipInformationCheckBox:SetPoint("TOPLEFT", TooltipLabel, "BOTTOMLEFT", 4, 0);
-
-local DisplayInCombatCheckBox = settings:CreateCheckBox(L["DISPLAY_IN_COMBAT_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("DisplayInCombat"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("DisplayInCombat", self:GetChecked());
-end);
-DisplayInCombatCheckBox:SetATTTooltip(L["DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP"]);
-DisplayInCombatCheckBox:SetPoint("TOP", EnableTooltipInformationCheckBox, "TOP", 0, 0);
-DisplayInCombatCheckBox:SetPoint("LEFT", EnableTooltipInformationCheckBox.Text, "RIGHT", 8, 0);
+EnableTooltipInformationCheckBox:SetPoint("TOPLEFT", ShowTooltipHelpCheckBox, "BOTTOMLEFT", 0, 0);
 
 local TooltipModifierLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 TooltipModifierLabel:SetJustifyH("LEFT");
 TooltipModifierLabel:SetText(L["TOOLTIP_MOD_LABEL"]);
-TooltipModifierLabel:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox, "BOTTOMLEFT", 0, -2);
+TooltipModifierLabel:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox, "BOTTOMLEFT", 10, -2);
+TooltipModifierLabel:SetTextColor(1, 1, 1, 1);
 TooltipModifierLabel:Show();
 table.insert(settings.MostRecentTab.objects, TooltipModifierLabel);
+TooltipModifierLabel.OnRefresh = function(self)
+	if not settings:GetTooltipSetting("Enabled") then
+		self:SetAlpha(0.2);
+	else
+		self:SetAlpha(1);
+	end
+end;
 
 local TooltipModifierNoneCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_NONE"],
 function(self)
@@ -2646,7 +2885,7 @@ function(self)
 	end
 end);
 TooltipModifierNoneCheckBox:SetPoint("TOP", EnableTooltipInformationCheckBox, "BOTTOM", 0, 4);
-TooltipModifierNoneCheckBox:SetPoint("LEFT", TooltipModifierLabel, "RIGHT", 5, 0);
+TooltipModifierNoneCheckBox:SetPoint("LEFT", TooltipModifierLabel, "RIGHT", 4, 0);
 
 local TooltipModifierShiftCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_SHIFT"],
 function(self)
@@ -2670,7 +2909,7 @@ function(self)
 	end
 end);
 TooltipModifierShiftCheckBox:SetPoint("TOP", TooltipModifierNoneCheckBox, "TOP", 0, 0);
-TooltipModifierShiftCheckBox:SetPoint("LEFT", TooltipModifierNoneCheckBox.Text, "RIGHT", 5, 0);
+TooltipModifierShiftCheckBox:SetPoint("LEFT", TooltipModifierNoneCheckBox.Text, "RIGHT", 4, 0);
 
 local TooltipModifierCtrlCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_CTRL"],
 function(self)
@@ -2694,7 +2933,7 @@ function(self)
 	end
 end);
 TooltipModifierCtrlCheckBox:SetPoint("TOP", TooltipModifierShiftCheckBox, "TOP", 0, 0);
-TooltipModifierCtrlCheckBox:SetPoint("LEFT", TooltipModifierShiftCheckBox.Text, "RIGHT", 5, 0);
+TooltipModifierCtrlCheckBox:SetPoint("LEFT", TooltipModifierShiftCheckBox.Text, "RIGHT", 4, 0);
 
 local TooltipModifierAltCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_ALT"],
 function(self)
@@ -2718,15 +2957,93 @@ function(self)
 	end
 end);
 TooltipModifierAltCheckBox:SetPoint("TOP", TooltipModifierCtrlCheckBox, "TOP", 0, 0);
-TooltipModifierAltCheckBox:SetPoint("LEFT", TooltipModifierCtrlCheckBox.Text, "RIGHT", 5, 0);
+TooltipModifierAltCheckBox:SetPoint("LEFT", TooltipModifierCtrlCheckBox.Text, "RIGHT", 4, 0);
+
+local DisplayInCombatCheckBox = settings:CreateCheckBox(L["DISPLAY_IN_COMBAT_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("DisplayInCombat"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("DisplayInCombat", self:GetChecked());
+end);
+DisplayInCombatCheckBox:SetATTTooltip(L["DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP"]);
+DisplayInCombatCheckBox:SetPoint("LEFT", EnableTooltipInformationCheckBox, "LEFT", 8, 0);
+DisplayInCombatCheckBox:SetPoint("TOP", TooltipModifierLabel, "BOTTOM", 0, -2);
+
+local SummarizeThingsCheckBox = settings:CreateCheckBox(L["SUMMARIZE_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SummarizeThings"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SummarizeThings", self:GetChecked());
+end);
+SummarizeThingsCheckBox:SetATTTooltip(L["SUMMARIZE_CHECKBOX_TOOLTIP"]);
+SummarizeThingsCheckBox:SetPoint("TOPLEFT", DisplayInCombatCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ContainsSlider = CreateFrame("Slider", "ATTSummarizeThingsSlider", settings, "OptionsSliderTemplate");
+ContainsSlider:SetPoint("CENTER", SummarizeThingsCheckBox, "CENTER", 0, 0);
+ContainsSlider:SetPoint("LEFT", SummarizeThingsCheckBox.Text, "RIGHT", 6, 0);
+ContainsSlider:SetPoint("RIGHT", TooltipModifierAltCheckBox.Text, "RIGHT", 0, 0);
+table.insert(settings.MostRecentTab.objects, ContainsSlider);
+settings.ContainsSlider = ContainsSlider;
+ContainsSlider.tooltipText = L["CONTAINS_SLIDER_TOOLTIP"];
+ContainsSlider:SetOrientation('HORIZONTAL');
+--ContainsSlider:SetWidth(150);
+ContainsSlider:SetHeight(20);
+ContainsSlider:SetValueStep(1);
+ContainsSlider:SetMinMaxValues(1, 40);
+ContainsSlider:SetObeyStepOnDrag(true);
+_G[ContainsSlider:GetName() .. 'Low']:SetText('1')
+_G[ContainsSlider:GetName() .. 'High']:SetText('40')
+ContainsSlider.Label = ContainsSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+ContainsSlider.Label:SetPoint("TOP", ContainsSlider, "BOTTOM", 0, 2);
+ContainsSlider.Label:SetText(ContainsSlider:GetValue());
+ContainsSlider:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(newValue);
+	if newValue == settings:GetTooltipSetting("ContainsCount") then
+		return 1;
+	end
+	settings:SetTooltipSetting("ContainsCount", newValue)
+	app:UpdateWindows();
+end);
+ContainsSlider.OnRefresh = function(self)
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end;
 
 local TooltipShowLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 TooltipShowLabel:SetJustifyH("LEFT");
 TooltipShowLabel:SetText(L["TOOLTIP_SHOW_LABEL"]);
-TooltipShowLabel:SetPoint("TOP", TooltipModifierNoneCheckBox, "BOTTOM", 0, 0);
-TooltipShowLabel:SetPoint("LEFT", TooltipModifierLabel, "LEFT", 0, 0);
+TooltipShowLabel:SetPoint("TOP", ContainsSlider, "BOTTOM", 0, -6);
+TooltipShowLabel:SetPoint("LEFT", TooltipModifierLabel, "LEFT", -8, 0);
 TooltipShowLabel:Show();
 table.insert(settings.MostRecentTab.objects, TooltipShowLabel);
+TooltipShowLabel.OnRefresh = function(self)
+	if not settings:GetTooltipSetting("Enabled") then
+		self:SetAlpha(0.2);
+	else
+		self:SetAlpha(1);
+	end
+end;
 
 local ShowCollectionProgressCheckBox = settings:CreateCheckBox(L["SHOW_COLLECTION_PROGRESS_CHECKBOX"],
 function(self)
@@ -2743,7 +3060,7 @@ function(self)
 	settings:SetTooltipSetting("Progress", self:GetChecked());
 end);
 ShowCollectionProgressCheckBox:SetATTTooltip(L["SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP"]);
-ShowCollectionProgressCheckBox:SetPoint("TOPLEFT", TooltipShowLabel, "BOTTOMLEFT", 0, 0);
+ShowCollectionProgressCheckBox:SetPoint("TOPLEFT", TooltipShowLabel, "BOTTOMLEFT", 0, -2);
 
 local ShortenProgressCheckBox = settings:CreateCheckBox(L["ICON_ONLY_CHECKBOX"],
 function(self)
@@ -2762,76 +3079,6 @@ end);
 ShortenProgressCheckBox:SetATTTooltip(L["ICON_ONLY_CHECKBOX_TOOLTIP"]);
 ShortenProgressCheckBox:SetPoint("TOPLEFT", ShowCollectionProgressCheckBox, "BOTTOMLEFT", 8, 4);
 
-
-local ShowCoordinatesCheckBox = settings:CreateCheckBox(L["COORDINATES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Coordinates"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Coordinates", self:GetChecked());
-end);
-ShowCoordinatesCheckBox:SetATTTooltip(L["COORDINATES_CHECKBOX_TOOLTIP"]);
-ShowCoordinatesCheckBox:SetPoint("TOP", ShowCollectionProgressCheckBox, "TOP", 0, 0);
-ShowCoordinatesCheckBox:SetPoint("LEFT", DisplayInCombatCheckBox, "LEFT", 0, 0);
-
-local ShowDescriptionsCheckBox = settings:CreateCheckBox(L["DESCRIPTIONS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Descriptions"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Descriptions", self:GetChecked());
-end);
-ShowDescriptionsCheckBox:SetATTTooltip(L["DESCRIPTIONS_CHECKBOX_TOOLTIP"]);
-ShowDescriptionsCheckBox:SetPoint("TOPLEFT", ShowCoordinatesCheckBox, "BOTTOMLEFT", 0, 4);
-
-local ShowLoreCheckBox = settings:CreateCheckBox(L["LORE_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Lore"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Lore", self:GetChecked());
-end);
-ShowLoreCheckBox:SetATTTooltip(L["LORE_CHECKBOX_TOOLTIP"]);
-ShowLoreCheckBox:SetPoint("TOPLEFT", ShowDescriptionsCheckBox, "BOTTOMLEFT", 0, 4);
-
-local ShowModelsCheckBox = settings:CreateCheckBox(L["SHOW_MODELS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Models"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Models", self:GetChecked());
-end);
-ShowModelsCheckBox:SetATTTooltip(L["SHOW_MODELS_CHECKBOX_TOOLTIP"]);
-ShowModelsCheckBox:SetPoint("TOPLEFT", ShowLoreCheckBox, "BOTTOMLEFT", 0, 4);
-
 local ShowKnownByCheckBox = settings:CreateCheckBox(L["KNOWN_BY_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("KnownBy"));
@@ -2848,58 +3095,6 @@ function(self)
 end);
 ShowKnownByCheckBox:SetATTTooltip(L["KNOWN_BY_CHECKBOX_TOOLTIP"]);
 ShowKnownByCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -8, 4);
-
-local ShowSharedAppearancesCheckBox = settings:CreateCheckBox(L["SHARED_APPEARANCES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("SharedAppearances", self:GetChecked());
-end);
-ShowSharedAppearancesCheckBox:SetATTTooltip(L["SHARED_APPEARANCES_CHECKBOX_TOOLTIP"]);
-ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
-
-local IncludeOriginalSourceCheckBox = settings:CreateCheckBox(L["INCLUDE_ORIGINAL_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("IncludeOriginalSource"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("IncludeOriginalSource", self:GetChecked());
-end);
-IncludeOriginalSourceCheckBox:SetATTTooltip(L["INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP"]);
-IncludeOriginalSourceCheckBox:SetPoint("TOPLEFT", ShowSharedAppearancesCheckBox, "BOTTOMLEFT", 8, 4);
-
-local OnlyShowRelevantSharedAppearancesCheckBox = settings:CreateCheckBox(L["ONLY_RELEVANT_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("OnlyShowRelevantSharedAppearances", self:GetChecked());
-end);
-OnlyShowRelevantSharedAppearancesCheckBox:SetATTTooltip(L["ONLY_RELEVANT_CHECKBOX_TOOLTIP"]);
-OnlyShowRelevantSharedAppearancesCheckBox:SetPoint("TOPLEFT", IncludeOriginalSourceCheckBox, "BOTTOMLEFT", 0, 4);
-
 
 local ShowClassRequirementsCheckBox = settings:CreateCheckBox(L["CLASSES_CHECKBOX"],
 function(self)
@@ -2952,9 +3147,9 @@ end);
 ShowSpecializationRequirementsCheckBox:SetATTTooltip(L["SPEC_CHECKBOX_TOOLTIP"]);
 ShowSpecializationRequirementsCheckBox:SetPoint("TOPLEFT", ShowRaceRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local SummarizeThingsCheckBox = settings:CreateCheckBox(L["SUMMARIZE_CHECKBOX"],
+local ShowDropChancesCheckbox = settings:CreateCheckBox(L["DROP_CHANCES_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:GetTooltipSetting("SummarizeThings"));
+	self:SetChecked(settings:GetTooltipSetting("DropChances"));
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -2964,47 +3159,130 @@ function(self)
 	end
 end,
 function(self)
-	settings:SetTooltipSetting("SummarizeThings", self:GetChecked());
+	settings:SetTooltipSetting("DropChances", self:GetChecked());
 end);
-SummarizeThingsCheckBox:SetATTTooltip(L["SUMMARIZE_CHECKBOX_TOOLTIP"]);
-SummarizeThingsCheckBox:SetPoint("TOPLEFT", ShowSpecializationRequirementsCheckBox, "BOTTOMLEFT", 0, 0);
+ShowDropChancesCheckbox:SetATTTooltip(L["DROP_CHANCES_CHECKBOX_TOOLTIP"]);
+ShowDropChancesCheckbox:SetPoint("TOPLEFT", ShowSpecializationRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
 
--- This creates the "Contains Count" slider.
-local ContainsSlider = CreateFrame("Slider", "ATTSummarizeThingsSlider", settings, "OptionsSliderTemplate");
-ContainsSlider:SetPoint("TOP", OnlyShowRelevantSharedAppearancesCheckBox, "BOTTOM", 0, 0);
-ContainsSlider:SetPoint("LEFT", DisplayInCombatCheckBox, "LEFT", 0, 0);
-table.insert(settings.MostRecentTab.objects, ContainsSlider);
-settings.ContainsSlider = ContainsSlider;
-ContainsSlider.tooltipText = L["CONTAINS_SLIDER_TOOLTIP"];
-ContainsSlider:SetOrientation('HORIZONTAL');
-ContainsSlider:SetWidth(150);
-ContainsSlider:SetHeight(20);
-ContainsSlider:SetValueStep(1);
-ContainsSlider:SetMinMaxValues(1, 40);
-ContainsSlider:SetObeyStepOnDrag(true);
-_G[ContainsSlider:GetName() .. 'Low']:SetText('1')
-_G[ContainsSlider:GetName() .. 'High']:SetText('40')
-ContainsSlider.Label = ContainsSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
-ContainsSlider.Label:SetPoint("TOP", ContainsSlider, "BOTTOM", 0, 2);
-ContainsSlider.Label:SetText(ContainsSlider:GetValue());
-ContainsSlider:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue);
-	if newValue == settings:GetTooltipSetting("ContainsCount") then
-		return 1;
-	end
-	settings:SetTooltipSetting("ContainsCount", newValue)
-	app:UpdateWindows();
-end);
-ContainsSlider.OnRefresh = function(self)
-	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
+local ShowCoordinatesCheckBox = settings:CreateCheckBox(L["COORDINATES_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Coordinates"));
+	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
 		self:Enable();
 		self:SetAlpha(1);
 	end
-end;
+end,
+function(self)
+	settings:SetTooltipSetting("Coordinates", self:GetChecked());
+end);
+ShowCoordinatesCheckBox:SetATTTooltip(L["COORDINATES_CHECKBOX_TOOLTIP"]);
+ShowCoordinatesCheckBox:SetPoint("TOPLEFT", ShowDropChancesCheckbox, "BOTTOMLEFT", 0, 4);
 
+local ShowDescriptionsCheckBox = settings:CreateCheckBox(L["DESCRIPTIONS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Descriptions"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Descriptions", self:GetChecked());
+end);
+ShowDescriptionsCheckBox:SetATTTooltip(L["DESCRIPTIONS_CHECKBOX_TOOLTIP"]);
+ShowDescriptionsCheckBox:SetPoint("TOPLEFT", ShowCoordinatesCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ShowLoreCheckBox = settings:CreateCheckBox(L["LORE_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Lore"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Lore", self:GetChecked());
+end);
+ShowLoreCheckBox:SetATTTooltip(L["LORE_CHECKBOX_TOOLTIP"]);
+ShowLoreCheckBox:SetPoint("TOPLEFT", ShowDescriptionsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ShowModelsCheckBox = settings:CreateCheckBox(L["SHOW_MODELS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Models"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Models", self:GetChecked());
+end);
+ShowModelsCheckBox:SetATTTooltip(L["SHOW_MODELS_CHECKBOX_TOOLTIP"]);
+ShowModelsCheckBox:SetPoint("TOPLEFT", ShowLoreCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ShowSharedAppearancesCheckBox = settings:CreateCheckBox(L["SHARED_APPEARANCES_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SharedAppearances", self:GetChecked());
+end);
+ShowSharedAppearancesCheckBox:SetATTTooltip(L["SHARED_APPEARANCES_CHECKBOX_TOOLTIP"]);
+ShowSharedAppearancesCheckBox:SetPoint("TOP", ShowCollectionProgressCheckBox, "TOP", 0, 0);
+ShowSharedAppearancesCheckBox:SetPoint("LEFT", ShowCollectionProgressCheckBox.Text, "RIGHT", 4, 0);
+
+local IncludeOriginalSourceCheckBox = settings:CreateCheckBox(L["INCLUDE_ORIGINAL_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("IncludeOriginalSource"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SharedAppearances") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("IncludeOriginalSource", self:GetChecked());
+end);
+IncludeOriginalSourceCheckBox:SetATTTooltip(L["INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP"]);
+IncludeOriginalSourceCheckBox:SetPoint("TOPLEFT", ShowSharedAppearancesCheckBox, "BOTTOMLEFT", 8, 4);
+
+local OnlyShowRelevantSharedAppearancesCheckBox = settings:CreateCheckBox(L["ONLY_RELEVANT_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SharedAppearances") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("OnlyShowRelevantSharedAppearances", self:GetChecked());
+end);
+OnlyShowRelevantSharedAppearancesCheckBox:SetATTTooltip(L["ONLY_RELEVANT_CHECKBOX_TOOLTIP"]);
+OnlyShowRelevantSharedAppearancesCheckBox:SetPoint("TOPLEFT", IncludeOriginalSourceCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowSourceLocationsCheckBox = settings:CreateCheckBox(L["SOURCE_LOCATIONS_CHECKBOX"],
 function(self)
@@ -3021,24 +3299,23 @@ function(self)
 	settings:SetTooltipSetting("SourceLocations", self:GetChecked());
 end);
 ShowSourceLocationsCheckBox:SetATTTooltip(L["SOURCE_LOCATIONS_CHECKBOX_TOOLTIP"]);
-ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", SummarizeThingsCheckBox, "BOTTOMLEFT", 0, -2);
+ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", OnlyShowRelevantSharedAppearancesCheckBox, "BOTTOMLEFT", -8, 0);
 
--- This creates the "Locations" slider.
 local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
-LocationsSlider:SetPoint("TOP", ContainsSlider, "BOTTOM", 0, -8);
-LocationsSlider:SetPoint("LEFT", ContainsSlider, "LEFT", 0, 0);
+LocationsSlider:SetPoint("TOP", ShowSourceLocationsCheckBox, "BOTTOM", 0, 2);
+LocationsSlider:SetPoint("LEFT", ShowSourceLocationsCheckBox, "LEFT", 10, 0);
+LocationsSlider:SetPoint("RIGHT", TooltipModifierAltCheckBox.Text, "RIGHT", 0, 0);
 table.insert(settings.MostRecentTab.objects, LocationsSlider);
 settings.LocationsSlider = LocationsSlider;
 LocationsSlider.tooltipText = L["LOCATIONS_SLIDER_TOOLTIP"];
 LocationsSlider:SetOrientation('HORIZONTAL');
-LocationsSlider:SetWidth(150);
+LocationsSlider:SetWidth(120);
 LocationsSlider:SetHeight(20);
 LocationsSlider:SetValueStep(1);
 LocationsSlider:SetMinMaxValues(1, 40);
 LocationsSlider:SetObeyStepOnDrag(true);
 _G[LocationsSlider:GetName() .. 'Low']:SetText('1')
 _G[LocationsSlider:GetName() .. 'High']:SetText('40')
--- _G[LocationsSlider:GetName() .. 'Text']:SetText("Displayed Source Locations")
 LocationsSlider.Label = LocationsSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
 LocationsSlider.Label:SetPoint("TOP", LocationsSlider, "BOTTOM", 0, 2);
 LocationsSlider.Label:SetText(LocationsSlider:GetValue());
@@ -3075,25 +3352,8 @@ function(self)
 	settings:SetTooltipSetting("SourceLocations:Completed", self:GetChecked());
 end);
 ShowCompletedSourceLocationsForCheckBox:SetATTTooltip(L["COMPLETED_SOURCES_CHECKBOX_TOOLTIP"]);
-ShowCompletedSourceLocationsForCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsCheckBox, "BOTTOMLEFT", 8, 4);
-
-local ShowDropChancesCheckbox = settings:CreateCheckBox(L["DROP_CHANCES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("DropChances"));
-	if not settings:GetTooltipSetting("Enabled") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("DropChances", self:GetChecked());
-end);
-ShowDropChancesCheckbox:SetATTTooltip(L["DROP_CHANCES_CHECKBOX_TOOLTIP"]);
-ShowDropChancesCheckbox:SetPoint("TOP", LocationsSlider, "BOTTOM", 0, -8);
-ShowDropChancesCheckbox:SetPoint("LEFT", ShowModelsCheckBox, "LEFT", 0, 0);
+ShowCompletedSourceLocationsForCheckBox:SetPoint("TOP", LocationsSlider, "BOTTOM", 0, -8);
+ShowCompletedSourceLocationsForCheckBox:SetPoint("LEFT", ShowSourceLocationsCheckBox, "LEFT", 8, 4);
 
 local ShowSourceLocationsForCreaturesCheckBox = settings:CreateCheckBox(L["FOR_CREATURES_CHECKBOX"],
 function(self)
@@ -3163,123 +3423,79 @@ end);
 ShowSourceLocationsWithWrappingCheckBox:SetATTTooltip(L["WITH_WRAPPING_CHECKBOX_TOOLTIP"]);
 ShowSourceLocationsWithWrappingCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsForUnsortedCheckBox, "BOTTOMLEFT", 0, 4);
 
-local MiscLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-MiscLabel:SetPoint("TOPLEFT", ShowSourceLocationsWithWrappingCheckBox, "BOTTOMLEFT", -12, 0); -- 8,4
-MiscLabel:SetJustifyH("LEFT");
-MiscLabel:SetText(L["MISC_LABEL"]);
-MiscLabel:Show();
-table.insert(settings.MostRecentTab.objects, MiscLabel);
+local AdditionalLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+AdditionalLabel:SetPoint("TOP", TooltipLabel, "TOP", 0, 0);
+AdditionalLabel:SetPoint("LEFT", settings, "RIGHT", -290, 0);
+AdditionalLabel:SetJustifyH("LEFT");
+AdditionalLabel:SetText(L["ADDITIONAL_LABEL"]);
+AdditionalLabel:Show();
+table.insert(settings.MostRecentTab.objects, AdditionalLabel);
 
-local ShowRemainingCheckBox = settings:CreateCheckBox(L["SHOW_REMAINING_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Show:Remaining"));
-	if self:GetChecked() then
-		app.GetProgressText = app.GetProgressTextRemaining;
+local ids = {["achievementID"] = "Achievement ID",
+	["artifactID"] = "Artifact ID",
+	["azeriteEssenceID"] = "Azerite Essence ID",
+	["bonusID"] = "Bonus ID",
+	["creatureID"] = "Creature ID",
+	["creatures"] = "Creatures List",
+	["currencyID"] = "Currency ID",
+	["difficultyID"] = "Difficulty ID",
+	["displayID"] = "Display ID",
+	["encounterID"] = "Encounter ID",
+	["factionID"] = "Faction ID",
+	["filterID"] = "Filter ID",
+	["flightPathID"] = "Flight Path ID",
+	["followerID"] = "Follower ID",
+	["iconPath"] = "Icon Path",
+	["illusionID"] = "Illusion ID",
+	["instanceID"] = "Instance ID",
+	["itemID"] = "Item ID",
+	["itemString"] = "Item String",
+	["mapID"] = "Map ID",
+	["modID"] = "Mod ID",
+	["objectID"] = "Object ID",
+	["questID"] = "Quest ID",
+	["QuestGivers"] = "Quest Givers",
+	["sourceID"] = "Source ID",
+	["speciesID"] = "Species ID",
+	["spellID"] = "Spell ID",
+	["tierID"] = "Tier ID",
+	["titleID"] = "Title ID",
+	["visualID"] = "Visual ID",
+};
+local last = nil;
+for _,id in pairs({"achievementID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","filterID","flightPathID","followerID","iconPath"}) do
+	local filter = settings:CreateCheckBox(ids[id],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting(id));
+	end,
+	function(self)
+		settings:SetTooltipSetting(id, self:GetChecked());
+		settings:Refresh();
+	end);
+	if not last then
+		filter:SetPoint("TOPLEFT", AdditionalLabel, "BOTTOMLEFT", -2, 0);
 	else
-		app.GetProgressText = app.GetProgressTextDefault;
+		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
 	end
-end,
-function(self)
-	settings:SetTooltipSetting("Show:Remaining", self:GetChecked());
-	app:UpdateWindows();
-end);
-ShowRemainingCheckBox:SetATTTooltip(L["SHOW_REMAINING_CHECKBOX_TOOLTIP"]);
-ShowRemainingCheckBox:SetPoint("TOPLEFT", MiscLabel, "BOTTOMLEFT", 4, 0);
-
-local ShowPercentagesCheckBox = settings:CreateCheckBox(L["PERCENTAGES_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Show:Percentage"));
-end,
-function(self)
-	settings:SetTooltipSetting("Show:Percentage", self:GetChecked());
-	app:UpdateWindows();
-end);
-ShowPercentagesCheckBox:SetATTTooltip(L["PERCENTAGES_CHECKBOX_TOOLTIP"]);
-ShowPercentagesCheckBox:SetPoint("TOPLEFT", ShowRemainingCheckBox, "BOTTOMLEFT", 0, 4);
-
-local UseMoreColorsCheckBox = settings:CreateCheckBox(L["MORE_COLORS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("UseMoreColors"));
-end,
-function(self)
-	settings:SetTooltipSetting("UseMoreColors", self:GetChecked());
-	app:UpdateWindows();
-end);
-UseMoreColorsCheckBox:SetATTTooltip(L["MORE_COLORS_CHECKBOX_TOOLTIP"]);
-UseMoreColorsCheckBox:SetPoint("TOPLEFT", ShowPercentagesCheckBox, "BOTTOMLEFT", 0, 4);
-
-local ShowTooltipHelpCheckBox = settings:CreateCheckBox(L["TOOLTIP_HELP_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Show:TooltipHelp"));
-end,
-function(self)
-	settings:SetTooltipSetting("Show:TooltipHelp", self:GetChecked());
-	app:UpdateWindows();
-end);
-ShowTooltipHelpCheckBox:SetATTTooltip(L["TOOLTIP_HELP_CHECKBOX_TOOLTIP"]);
-ShowTooltipHelpCheckBox:SetPoint("TOPLEFT", UseMoreColorsCheckBox, "BOTTOMLEFT", 0, 4);
-
-
-local SizingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-SizingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -210, -8);
-SizingLabel:SetJustifyH("LEFT");
-SizingLabel:SetText(L["SIZING_LABEL"]);
-SizingLabel:Show();
-table.insert(settings.MostRecentTab.objects, SizingLabel);
-
--- This creates the "Main List Scale" slider.
-local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", settings, "OptionsSliderTemplate");
-MainListScaleSlider:SetPoint("LEFT", SizingLabel, "LEFT", 0, 0);
-MainListScaleSlider:SetPoint("TOP", SizingLabel, "BOTTOM", 0, -10);
-MainListScaleSlider:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
-table.insert(settings.MostRecentTab.objects, MainListScaleSlider);
-settings.MainListScaleSlider = MainListScaleSlider;
-MainListScaleSlider.tooltipText = L["MAIN_LIST_SCALE_TOOLTIP"];
-MainListScaleSlider:SetOrientation('HORIZONTAL');
-MainListScaleSlider:SetHeight(20);
-MainListScaleSlider:SetValueStep(0.1);
-MainListScaleSlider:SetMinMaxValues(0.1, 4);
-MainListScaleSlider:SetObeyStepOnDrag(true);
-_G[MainListScaleSlider:GetName() .. 'Low']:SetText('0.1')
-_G[MainListScaleSlider:GetName() .. 'High']:SetText('4')
-_G[MainListScaleSlider:GetName() .. 'Text']:SetText(L["MAIN_LIST_SLIDER_LABEL"])
-MainListScaleSlider.Label = MainListScaleSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
-MainListScaleSlider.Label:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, 0);
-MainListScaleSlider.Label:SetText(MainListScaleSlider:GetValue());
-MainListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue);
-	settings:SetTooltipSetting("MainListScale", newValue)
-	app:GetWindow("Prime"):SetScale(newValue);
-end);
-
--- This creates the "Mini List Scale" slider.
-local MiniListScaleSlider = CreateFrame("Slider", "ATTMiniListScaleSlider", settings, "OptionsSliderTemplate");
-MiniListScaleSlider:SetPoint("LEFT", MainListScaleSlider, "LEFT", 0, 0);
-MiniListScaleSlider:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, -24);
-MiniListScaleSlider:SetPoint("RIGHT", MainListScaleSlider, "RIGHT", 0, 0);
-table.insert(settings.MostRecentTab.objects, MiniListScaleSlider);
-settings.MiniListScaleSlider = MiniListScaleSlider;
-MiniListScaleSlider.tooltipText = L["MINI_LIST_SCALE_TOOLTIP"];
-MiniListScaleSlider:SetOrientation('HORIZONTAL');
-MiniListScaleSlider:SetHeight(20);
-MiniListScaleSlider:SetValueStep(0.1);
-MiniListScaleSlider:SetMinMaxValues(0.1, 4);
-MiniListScaleSlider:SetObeyStepOnDrag(true);
-_G[MiniListScaleSlider:GetName() .. 'Low']:SetText('0.1')
-_G[MiniListScaleSlider:GetName() .. 'High']:SetText('4')
-_G[MiniListScaleSlider:GetName() .. 'Text']:SetText(L["MINI_LIST_SLIDER_LABEL"])
-MiniListScaleSlider.Label = MiniListScaleSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
-MiniListScaleSlider.Label:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, 0);
-MiniListScaleSlider.Label:SetText(MiniListScaleSlider:GetValue());
-MiniListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue);
-	settings:SetTooltipSetting("MiniListScale", newValue)
-	for key,window in pairs(app.Windows) do
-		if key ~= "Prime" then
-			window:SetScale(newValue);
-		end
+	last = filter;
+end
+last = nil;
+for _,id in pairs({"illusionID","instanceID","itemID","itemString", "mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
+	local filter = settings:CreateCheckBox(ids[id],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting(id));
+	end,
+	function(self)
+		settings:SetTooltipSetting(id, self:GetChecked());
+		settings:Refresh();
+	end);
+	if not last then
+		filter:SetPoint("TOPLEFT", AdditionalLabel, "BOTTOMLEFT", 164, 0);
+	else
+		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
 	end
-end);
+	last = filter;
+end
 
 end)();
 
@@ -3288,8 +3504,105 @@ end)();
 ------------------------------------------
 (function()
 local tab = settings:CreateTab(L["FEATURES_TAB"]);
+
+local MinimapLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+MinimapLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+MinimapLabel:SetJustifyH("LEFT");
+MinimapLabel:SetText(L["MINIMAP_LABEL"]);
+MinimapLabel:Show();
+table.insert(settings.MostRecentTab.objects, MinimapLabel);
+
+local ShowMinimapButtonCheckBox = settings:CreateCheckBox(L["MINIMAP_BUTTON_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("MinimapButton"));
+end,
+function(self)
+	settings:SetTooltipSetting("MinimapButton", self:GetChecked());
+	if self:GetChecked() then
+		if not app.Minimap then app.Minimap = app.CreateMinimapButton(); end
+		app.Minimap:Show();
+	elseif app.Minimap then
+		app.Minimap:Hide();
+	end
+end);
+ShowMinimapButtonCheckBox:SetATTTooltip(L["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"]);
+ShowMinimapButtonCheckBox:SetPoint("TOPLEFT", MinimapLabel, "BOTTOMLEFT", -2, 0);
+
+local MinimapButtonStyleCheckBox = settings:CreateCheckBox(L["MINIMAP_BUTTON_STYLE_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("MinimapStyle"));
+	if not settings:GetTooltipSetting("MinimapButton") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("MinimapStyle", self:GetChecked());
+	if app.Minimap then app.Minimap:UpdateStyle(); end
+end);
+MinimapButtonStyleCheckBox:SetATTTooltip(L["MINIMAP_BUTTON_STYLE_CHECKBOX_TOOLTIP"]);
+MinimapButtonStyleCheckBox:SetPoint("TOPLEFT", ShowMinimapButtonCheckBox, "BOTTOMLEFT", 8, 4);
+
+local MinimapButtonSizeSliderLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+MinimapButtonSizeSliderLabel:SetPoint("TOPLEFT", MinimapButtonStyleCheckBox, "BOTTOMLEFT", 4, 0);
+MinimapButtonSizeSliderLabel:SetJustifyH("LEFT");
+MinimapButtonSizeSliderLabel:SetText(L["MINIMAP_SLIDER"]);
+MinimapButtonSizeSliderLabel:SetTextColor(1, 1, 1, 1);
+MinimapButtonSizeSliderLabel:Show();
+table.insert(settings.MostRecentTab.objects, MinimapButtonSizeSliderLabel);
+MinimapButtonSizeSliderLabel.OnRefresh = function(self)
+	if not settings:GetTooltipSetting("MinimapButton") or settings:GetTooltipSetting("MinimapStyle") then
+		--self:Disable();
+		self:SetAlpha(0.2);
+	else
+		--self:Enable();
+		self:SetAlpha(1);
+	end
+end;
+
+local MinimapButtonSizeSlider = CreateFrame("Slider", "ATTMinimapButtonSizeSlider", settings, "OptionsSliderTemplate");
+MinimapButtonSizeSlider:SetPoint("CENTER", MinimapButtonSizeSliderLabel, "CENTER", 0, 0);
+MinimapButtonSizeSlider:SetPoint("LEFT", MinimapButtonSizeSliderLabel, "RIGHT", 6, 0);
+MinimapButtonSizeSlider:SetPoint("RIGHT", settings, "LEFT", 300, 0);
+table.insert(settings.MostRecentTab.objects, MinimapButtonSizeSlider);
+settings.MinimapButtonSizeSlider = MinimapButtonSizeSlider;
+MinimapButtonSizeSlider.tooltipText = L["MINIMAP_SLIDER_TOOLTIP"];
+MinimapButtonSizeSlider:SetOrientation('HORIZONTAL');
+MinimapButtonSizeSlider:SetWidth(120);
+MinimapButtonSizeSlider:SetHeight(20);
+MinimapButtonSizeSlider:SetValueStep(1);
+MinimapButtonSizeSlider:SetMinMaxValues(18, 48);
+MinimapButtonSizeSlider:SetObeyStepOnDrag(true);
+_G[MinimapButtonSizeSlider:GetName() .. 'Low']:SetText('18')
+_G[MinimapButtonSizeSlider:GetName() .. 'High']:SetText('48')
+--_G[MinimapButtonSizeSlider:GetName() .. 'Text']:SetText(L["MINIMAP_SLIDER"])
+MinimapButtonSizeSlider.Label = MinimapButtonSizeSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+MinimapButtonSizeSlider.Label:SetPoint("TOP", MinimapButtonSizeSlider, "BOTTOM", 0, 2);
+MinimapButtonSizeSlider.Label:SetText(MinimapButtonSizeSlider:GetValue());
+MinimapButtonSizeSlider:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(newValue);
+	if newValue == settings:GetTooltipSetting("MinimapSize") then
+		return 1;
+	end
+	settings:SetTooltipSetting("MinimapSize", newValue)
+	if app.Minimap then app.Minimap:SetSize(newValue, newValue); end
+end);
+MinimapButtonSizeSlider.OnRefresh = function(self)
+	if not settings:GetTooltipSetting("MinimapButton") or settings:GetTooltipSetting("MinimapStyle") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end;
+
 local ModulesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ModulesLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+ModulesLabel:SetPoint("TOP", MinimapButtonSizeSliderLabel, "BOTTOM", 0, -16);
+ModulesLabel:SetPoint("LEFT", MinimapLabel, "LEFT", 0, 0);
 ModulesLabel:SetJustifyH("LEFT");
 ModulesLabel:SetText(L["MODULES_LABEL"]);
 ModulesLabel:Show();
@@ -3304,16 +3617,6 @@ local ChangeSkipCutsceneState = function(self, checked)
 		self:UnregisterEvent("CINEMATIC_START");
 	end
 end
-local DoAdHocUpdatesCheckbox = settings:CreateCheckBox(L["ADHOC_UPDATES_CHECKBOX"] .. L["_BETA_LABEL"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Updates:AdHoc"));
-end,
-function(self)
-	settings:SetTooltipSetting("Updates:AdHoc", self:GetChecked());
-end);
-DoAdHocUpdatesCheckbox:SetATTTooltip(L["ADHOC_UPDATES_CHECKBOX_TOOLTIP"]);
-DoAdHocUpdatesCheckbox:SetPoint("TOPLEFT", ModulesLabel, "BOTTOMLEFT", 4, 0);
-
 local AutomaticallySkipCutscenesCheckBox = settings:CreateCheckBox(L["SKIP_CUTSCENES_CHECKBOX"],
 function(self)
 	local checked = settings:GetTooltipSetting("Skip:Cutscenes");
@@ -3329,7 +3632,7 @@ function(self)
 	settings:SetTooltipSetting("Skip:Cutscenes", self:GetChecked());
 end);
 AutomaticallySkipCutscenesCheckBox:SetATTTooltip(L["SKIP_CUTSCENES_CHECKBOX_TOOLTIP"]);
-AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", DoAdHocUpdatesCheckbox, "BOTTOMLEFT", 0, 4);
+AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", ModulesLabel, "BOTTOMLEFT", -2, 0);
 
 local OpenBountyListAutomatically = settings:CreateCheckBox(L["AUTO_BOUNTY_CHECKBOX"],
 function(self)
@@ -3381,7 +3684,6 @@ end);
 OpenRaidAssistantAutomatically:SetATTTooltip(L["AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP"]);
 OpenRaidAssistantAutomatically:SetPoint("TOPLEFT", OpenProfessionListAutomatically, "BOTTOMLEFT", 0, 4);
 
-
 local OpenWorldQuestsListAutomatically = settings:CreateCheckBox(L["AUTO_WQ_LIST_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:WorldQuestsList"));
@@ -3391,16 +3693,6 @@ function(self)
 end);
 OpenWorldQuestsListAutomatically:SetATTTooltip(L["AUTO_WQ_LIST_CHECKBOX_TOOLTIP"]);
 OpenWorldQuestsListAutomatically:SetPoint("TOPLEFT", OpenRaidAssistantAutomatically, "BOTTOMLEFT", 0, 4);
-
-local ShowCurrenciesInWorldQuestsList = settings:CreateCheckBox(L["CURRENCIES_IN_WQ_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("WorldQuestsList:Currencies"));
-end,
-function(self)
-	settings:SetTooltipSetting("WorldQuestsList:Currencies", self:GetChecked());
-end);
-ShowCurrenciesInWorldQuestsList:SetATTTooltip(L["CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP"]);
-ShowCurrenciesInWorldQuestsList:SetPoint("TOPLEFT", OpenWorldQuestsListAutomatically, "BOTTOMLEFT", 4, 4);
 
 local ShowAuctionHouseModuleTab = settings:CreateCheckBox(L["AUCTION_TAB_CHECKBOX"],
 function(self)
@@ -3422,31 +3714,11 @@ function(self)
 	end
 end);
 ShowAuctionHouseModuleTab:SetATTTooltip(L["AUCTION_TAB_CHECKBOX_TOOLTIP"]);
-ShowAuctionHouseModuleTab:SetPoint("TOPLEFT", ShowCurrenciesInWorldQuestsList, "BOTTOMLEFT", -4, 4);
-
-local SortByCompletionInstead = settings:CreateCheckBox(L["SORT_BY_PROGRESS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Sort:Progress"));
-end,
-function(self)
-	settings:SetTooltipSetting("Sort:Progress", self:GetChecked());
-end);
-SortByCompletionInstead:SetATTTooltip(L["SORT_BY_PROGRESS_CHECKBOX_TOOLTIP"]);
-SortByCompletionInstead:SetPoint("TOPLEFT", ShowAuctionHouseModuleTab, "BOTTOMLEFT", 0, 4);
-
-local QuestChainRequirementsNested = settings:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("QuestChain:Nested"));
-end,
-function(self)
-	settings:SetTooltipSetting("QuestChain:Nested", self:GetChecked());
-end);
-QuestChainRequirementsNested:SetATTTooltip(L["QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP"]);
-QuestChainRequirementsNested:SetPoint("TOPLEFT", SortByCompletionInstead, "BOTTOMLEFT", 0, 4);
+ShowAuctionHouseModuleTab:SetPoint("TOPLEFT", OpenWorldQuestsListAutomatically, "BOTTOMLEFT", 0, 4);
 
 local CelebrationsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-CelebrationsLabel:SetPoint("TOP", QuestChainRequirementsNested, "BOTTOM", 0, -10);
-CelebrationsLabel:SetPoint("LEFT", ModulesLabel, "LEFT", 0, -10);
+CelebrationsLabel:SetPoint("TOP", ShowAuctionHouseModuleTab, "BOTTOM", 0, -4);
+CelebrationsLabel:SetPoint("LEFT", ModulesLabel, "LEFT", 0, 0);
 CelebrationsLabel:SetJustifyH("LEFT");
 CelebrationsLabel:SetText(L["CELEBRATIONS_LABEL"]);
 CelebrationsLabel:Show();
@@ -3463,7 +3735,7 @@ function(self)
 	end
 end);
 UseMasterAudioChannel:SetATTTooltip(L["MASTER_AUDIO_CHECKBOX_TOOLTIP"]);
-UseMasterAudioChannel:SetPoint("TOPLEFT", CelebrationsLabel, "BOTTOMLEFT", 4, 0);
+UseMasterAudioChannel:SetPoint("TOPLEFT", CelebrationsLabel, "BOTTOMLEFT", -2, 0);
 
 local CelebrateCollectedThingsCheckBox = settings:CreateCheckBox(L["CELEBRATE_COLLECTED_CHECKBOX"],
 function(self)
@@ -3495,88 +3767,66 @@ local ScreenshotCollectedThingsCheckBox = settings:CreateCheckBox(L["SCREENSHOT_
 ScreenshotCollectedThingsCheckBox:SetATTTooltip(L["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"]);
 ScreenshotCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnRemovedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local DebuggingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-DebuggingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -210, -8);
-DebuggingLabel:SetJustifyH("LEFT");
-DebuggingLabel:SetText("Debugging");
-DebuggingLabel:Show();
-table.insert(settings.MostRecentTab.objects, DebuggingLabel);
+local ReportingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+ReportingLabel:SetPoint("TOP", MinimapLabel, "TOP", 0, 0);
+ReportingLabel:SetPoint("LEFT", settings, "RIGHT", -290, 0);
+ReportingLabel:SetJustifyH("LEFT");
+ReportingLabel:SetText(L["REPORTING_LABEL"]);
+ReportingLabel:Show();
+table.insert(settings.MostRecentTab.objects, ReportingLabel);
 
-local DebugModeCheckBox = settings:CreateCheckBox(L["DEBUG_MODE"],
+local ReportCollectedThingsCheckBox = settings:CreateCheckBox(L["REPORT_COLLECTED_THINGS_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:Get("DebugMode"));
+	self:SetChecked(settings:GetTooltipSetting("Report:Collected"));
 end,
 function(self)
-	settings:SetDebugMode(self:GetChecked());
+	settings:SetTooltipSetting("Report:Collected", self:GetChecked());
 end);
-DebugModeCheckBox:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"]);
-DebugModeCheckBox:SetPoint("TOPLEFT", DebuggingLabel, "BOTTOMLEFT", 0, -1);
+ReportCollectedThingsCheckBox:SetATTTooltip(L["REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP"]);
+ReportCollectedThingsCheckBox:SetPoint("TOPLEFT", ReportingLabel, "BOTTOMLEFT", -2, 0);
 
-local ids = {["achievementID"] = "Achievement ID",
-	["artifactID"] = "Artifact ID",
-	["azeriteEssenceID"] = "Azerite Essence ID",
-	["bonusID"] = "Bonus ID",
-	["creatureID"] = "Creature ID",
-	["creatures"] = "Creatures List",
-	["currencyID"] = "Currency ID",
-	["difficultyID"] = "Difficulty ID",
-	["displayID"] = "Display ID",
-	["encounterID"] = "Encounter ID",
-	["factionID"] = "Faction ID",
-	["filterID"] = "Filter ID",
-	["flightPathID"] = "Flight Path ID",
-	["followerID"] = "Follower ID",
-	["iconPath"] = "Icon Path",
-	["illusionID"] = "Illusion ID",
-	["instanceID"] = "Instance ID",
-	["itemID"] = "Item ID",
-	["itemString"] = "Item String",
-	["mapID"] = "Map ID",
-	["modID"] = "Mod ID",
-	["objectID"] = "Object ID",
-	["questID"] = "Quest ID",
-	["QuestGivers"] = "Quest Givers",
-	["sourceID"] = "Source ID",
-	["speciesID"] = "Species ID",
-	["spellID"] = "Spell ID",
-	["tierID"] = "Tier ID",
-	["titleID"] = "Title ID",
-	["visualID"] = "Visual ID",
-};
-local last = nil;
-for _,id in pairs({"achievementID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","filterID","flightPathID","followerID","iconPath"}) do
-	local filter = settings:CreateCheckBox(ids[id],
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting(id));
-	end,
-	function(self)
-		settings:SetTooltipSetting(id, self:GetChecked());
-		settings:Refresh();
-	end);
-	if not last then
-		filter:SetPoint("TOPLEFT", DebugModeCheckBox, "BOTTOMLEFT", 4, 0);
+local ReportCompletedQuestsCheckBox = settings:CreateCheckBox(L["REPORT_COMPLETED_QUESTS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Report:CompletedQuests"));
+end,
+function(self)
+	settings:SetTooltipSetting("Report:CompletedQuests", self:GetChecked());
+end);
+ReportCompletedQuestsCheckBox:SetATTTooltip(L["REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP"]);
+ReportCompletedQuestsCheckBox:SetPoint("TOPLEFT", ReportCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ReportUnsortedCompletedQuestsCheckBox = settings:CreateCheckBox(L["REPORT_UNSORTED_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Report:UnsortedQuests"));
+	if not settings:GetTooltipSetting("Report:CompletedQuests") then
+		self:Disable();
+		self:SetAlpha(0.2);
 	else
-		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
+		self:Enable();
+		self:SetAlpha(1);
 	end
-	last = filter;
-end
-last = nil;
-for _,id in pairs({"illusionID","instanceID","itemID","itemString", "mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
-	local filter = settings:CreateCheckBox(ids[id],
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting(id));
-	end,
-	function(self)
-		settings:SetTooltipSetting(id, self:GetChecked());
-		settings:Refresh();
-	end);
-	if not last then
-		filter:SetPoint("TOPLEFT", DebugModeCheckBox, "BOTTOMLEFT", 164, 0);
-	else
-		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
-	end
-	last = filter;
-end
+end,
+function(self)
+	settings:SetTooltipSetting("Report:UnsortedQuests", self:GetChecked());
+end);
+ReportUnsortedCompletedQuestsCheckBox:SetATTTooltip(L["REPORT_UNSORTED_CHECKBOX_TOOLTIP"]);
+ReportUnsortedCompletedQuestsCheckBox:SetPoint("TOPLEFT", ReportCompletedQuestsCheckBox, "BOTTOMLEFT", 8, 4);
+
+local ChatCommandsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+ChatCommandsLabel:SetPoint("TOP", ReportUnsortedCompletedQuestsCheckBox, "BOTTOM", 0, -4);
+ChatCommandsLabel:SetPoint("LEFT", ReportingLabel, "LEFT", 0, 0);
+ChatCommandsLabel:SetJustifyH("LEFT");
+ChatCommandsLabel:SetText(L["CHAT_COMMANDS_LABEL"]);
+ChatCommandsLabel:Show();
+table.insert(settings.MostRecentTab.objects, ChatCommandsLabel);
+
+local ChatCommandsText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+ChatCommandsText:SetPoint("TOPLEFT", ChatCommandsLabel, "BOTTOMLEFT", 0, -4);
+ChatCommandsText:SetPoint("RIGHT", settings, "RIGHT", -20, 0);
+ChatCommandsText:SetJustifyH("LEFT");
+ChatCommandsText:SetText(L["CHAT_COMMANDS_TEXT"]);
+ChatCommandsText:Show();
+table.insert(settings.MostRecentTab.objects, ChatCommandsText);
 
 end)();
 
@@ -3584,7 +3834,7 @@ end)();
 -- The "About" Tab.				--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab(L["ABOUT"]);		-- L["ABOUT"] = "About"
+local tab = settings:CreateTab(L["ABOUT"]);
 local AboutText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 AboutText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 AboutText:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -8, -8);

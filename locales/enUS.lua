@@ -20,7 +20,6 @@ app.L = {
 	["THING_UNTIL"] = " THING UNTIL ";
 	["YOU_DID_IT"] = "YOU DID IT!|r";
 
-
 	-- Big new chunk from AllTheThings.lua
 	["PROGRESS"] = "Progress";
 	["TRACKING_PROGRESS"] = "Tracking Progress";
@@ -254,75 +253,87 @@ app.L = {
 			-- Mode Title
 				["MODE"] = "Mode";
 				["TITLE_COMPLETIONIST"] = "Completionist ";
-				["TITLE_UNIQUE_APPEARANCE"] = "Unique Appearance ";
+				["TITLE_UNIQUE_APPEARANCE"] = "Unique ";
 				["TITLE_DEBUG"] = "Debug ";
-				["TITLE_ACCOUNT"] = "Account ";
+				["TITLE_ACCOUNT"] = "|cff00AB00Account|R ";
+				["TITLE_ALLIANCE"] = "|cff407FBFAlliance|R";
+				["TITLE_HORDE"] = "|cffCC6666Horde|R";
+				["TITLE_NEUTRAL"] = "Neutral";
 				["TITLE_MAIN_ONLY"] = " (Main Only)";
 				["TITLE_NONE_THINGS"] = "None of the Things ";
 				["TITLE_ONLY"] = " Only ";
-				["TITLE_INSANE"] = "Insane ";
+				["TITLE_INSANE"] = "|cffADD8E6Insane|R ";
 				["TITLE_SOME_THINGS"] = "Some of the Things ";
 				["TITLE_LEVEL"] = "Level ";
-				["_BETA_LABEL"] = " |CFF4AA7FF[Beta]|R";
-
+				["_BETA_LABEL"] = " |cff4AA7FF[Beta]|R";
 
 	["GENERAL_TAB"] = "General";
-	["TWITCH_BUTTON_TOOLTIP"] = "Click this button to copy the url to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
-	["DISCORD_BUTTON_TOOLTIP"] = "Click this button to copy the url to get to the ALL THE THINGS Discord.\n\nYou can share your progress/frustrations with other collectors!";
-	["DEBUG_MODE"] = "|Cff15abffDebug Mode|r (Show Everything)";
+	["TWITCH_BUTTON_LABEL"] = "Twitch";
+	["DISCORD_BUTTON_LABEL"] = "Discord";
+	["PATREON_BUTTON_LABEL"] = "Patreon";
+	["MERCH_BUTTON_LABEL"] = "Merch";
+	["TWITCH_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
+	["DISCORD_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things Discord server.\n\nYou can share your progress/frustrations with other collectors!";
+	["PATREON_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
+	["MERCH_BUTTON_TOOLTIP"] = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
+	["DEBUG_MODE"] = "|Cffff0000Debug Mode|r (Show Everything)";
 	["DEBUG_MODE_TOOLTIP"] = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
-	["UNIQUE_MODE"] = "|CFFADD8E6Unique|r (Appearances)";
+	["UNIQUE_MODE"] = "Unique";
 	["UNIQUE_MODE_TOOLTIP"] = "Enable this Mode to consider all Items which share the same Appearance to be collected once that specific Appearance has been collected.\n\nItems 'Collected' through this mode will be marked with an asterisk (*). This means that you haven't collected that specific Source of the Appearance yet.";
-	["COMPLETIONIST_MODE"] = "|CFFADD8E6Completionist|r (Sources)";
+	["COMPLETIONIST_MODE"] = "+Sources";
 	["COMPLETIONIST_MODE_TOOLTIP"] = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
-	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "|cff3399ffI only care about my main.|r";
+	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "Main Only";
 	["MAIN_ONLY_MODE_TOOLTIP"] = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
-	["ACCOUNT_MODE"] = "|Cff00ab00Account Mode|r (All)";
+	["ACCOUNT_MODE"] = "|Cff00AB00Account Mode";
 	["ACCOUNT_MODE_TOOLTIP"] = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.";
-	["FACTION_MODE"] = "Only Current Faction";
+	["FACTION_MODE"] = "Faction Only";
 	["FACTION_MODE_TOOLTIP"] = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
-	["PRECISION_SLIDER"] = "Level of Precision for Percentage";
+	["PRECISION_SLIDER"] = "Precision Level";
 	["PRECISION_SLIDER_TOOLTIP"] = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
 	["MINIMAP_SLIDER"] = "Minimap Button Size";
 	["MINIMAP_SLIDER_TOOLTIP"] = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
-	["THINGS_LABEL_TEXT"] = "Which \"Things\" do you want to Collect?";
-	["ACHIEVEMENTS_CHECKBOX"] = "Achievements";
+	["ACCOUNT_THINGS_LABEL"] = "Account-wide Things";
+	["GENERAL_THINGS_LABEL"] = "General Things";
+	["EXPANSION_THINGS_LABEL"] = "Expansion Things";
+	["EXTRA_THINGS_LABEL"] = "Additional Things";
+	--["THINGS_LABEL_TEXT"] = "Which \"Things\" do you want to Collect?";
+	["ACHIEVEMENTS_CHECKBOX"] = "|cffADD8E6Achievements";
 	["ACHIEVEMENTS_CHECKBOX_TOOLTIP"] = "Enable this option to track achievements.";
-	["TMOG_CHECKBOX"] = "Appearances / Transmog";
+	["TMOG_CHECKBOX"] = "|cffADD8E6Appearances";
 	["TMOG_CHECKBOX_TOOLTIP"] = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.\n\nTracked Account Wide by Default.";
-	["AZERITE_ESSENCES_CHECKBOX"] = "|T"..app.asset("Expansion_BFA")..":0|t "..SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE;
+	["AZERITE_ESSENCES_CHECKBOX"] = "|T"..app.asset("Expansion_BFA")..":0|t |cffADD8E6"..SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE;
 	["AZERITE_ESSENCES_CHECKBOX_TOOLTIP"] = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
-	["BATTLE_PETS_CHECKBOX"] = "Battle Pets / Companions";
+	["BATTLE_PETS_CHECKBOX"] = "|cffADD8E6Pets";
 	["BATTLE_PETS_CHECKBOX_TOOLTIP"] = "Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.\n\nTracked Account Wide by Default.";
-	["FLIGHT_PATHS_CHECKBOX"] = "Flight Paths / Ferry Stations";
+	["FLIGHT_PATHS_CHECKBOX"] = "|cffADD8E6Flight Paths / Ferry Stations";
 	["FLIGHT_PATHS_CHECKBOX_TOOLTIP"] = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\nNOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.";
-	["FOLLOWERS_CHECKBOX"] = "Followers / Champions";
+	["FOLLOWERS_CHECKBOX"] = "|cffADD8E6Followers / Champions";
 	["FOLLOWERS_CHECKBOX_TOOLTIP"] = "Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, BFA Campaign Minions and SL Adventurers.";
-	["HEIRLOOMS_CHECKBOX"] = "Heirlooms";
+	["HEIRLOOMS_CHECKBOX"] = "|cffADD8E6Heirlooms";
 	["HEIRLOOMS_CHECKBOX_TOOLTIP"] = "Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.";
-	["HEIRLOOMS_UPGRADES_CHECKBOX"] = "+Upgrades";
+	["HEIRLOOMS_UPGRADES_CHECKBOX"] = "|cffADD8E6+Upgrades";
 	["HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP"] = "Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle.";
-	["ILLUSIONS_CHECKBOX"] = "Illusions";
+	["ILLUSIONS_CHECKBOX"] = "|cffADD8E6Illusions";
 	["ILLUSIONS_CHECKBOX_TOOLTIP"] = "Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.\n\nTracked Account Wide by Default.";
-	["MOUNTS_CHECKBOX"] = "Mounts";
+	["MOUNTS_CHECKBOX"] = "|cffADD8E6Mounts";
 	["MOUNTS_CHECKBOX_TOOLTIP"] = "Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!\n\nTracked Account Wide by Default.";
-	["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX"] = "Music Rolls / Selfie Filters";
+	["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX"] = "|T"..app.asset("Expansion_WOD")..":0|t |cffADD8E6Music Rolls / Selfie Filters";
 	["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP"] = "Enable this option to track music rolls and selfie filters.\n\nYou can use your Jukebox Toy to play in-game music and your Selfie Camera toy to collect filters for your selfies from certain locations.";
-	["QUESTS_CHECKBOX"] = "Quests";
+	["QUESTS_CHECKBOX"] = "|cffADD8E6Quests";
 	["QUESTS_CHECKBOX_TOOLTIP"] = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and World Quests are tracked in the Blizzard Database.";
-	["QUESTS_BREADCRUMBS_CHECKBOX"] = "+Breadcrumbs";
+	["QUESTS_BREADCRUMBS_CHECKBOX"] = "|cffADD8E6+Breadcrumbs";
 	["QUESTS_BREADCRUMBS_CHECKBOX_TOOLTIP"] = "Enable this option to specifically include tracking of Breadcrumb Quest completion.\n\nBreadcrumb Quests are technically 'optional' in that they only serve to lead the player to a different Quest, and become unavailable if they are not completed prior to completing their following Quest(s).\nThis can make obtaining Breadcrumbs very reliant on the Party Sync feature or Account-Wide Quests";
-	["RECIPES_CHECKBOX"] = "Recipes";
+	["RECIPES_CHECKBOX"] = "|cffADD8E6Recipes";
 	["RECIPES_CHECKBOX_TOOLTIP"] = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
-	["REPUTATIONS_CHECKBOX"] = "Reputations";
+	["REPUTATIONS_CHECKBOX"] = "|cffADD8E6Reputations";
 	["REPUTATIONS_CHECKBOX_TOOLTIP"] = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.";
-	["RUNEFORGELEGENDARIES_CHECKBOX"] = "|T"..app.asset("Expansion_SL")..":0|t Runecarving Powers";
+	["RUNEFORGELEGENDARIES_CHECKBOX"] = "|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6Runecarving Powers";
 	["RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP"] = "Enable this option to track Shadowlands Runecarving Powers.";
-	["SOULBINDCONDUITS_CHECKBOX"] = "|T"..app.asset("Expansion_SL")..":0|t "..GetSpellInfo(348869);
+	["SOULBINDCONDUITS_CHECKBOX"] = "|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6"..GetSpellInfo(348869);
 	["SOULBINDCONDUITS_CHECKBOX_TOOLTIP"] = "Enable this option to track Shadowlands Soulbind Conduits.";
-	["TITLES_CHECKBOX"] = "Titles";
+	["TITLES_CHECKBOX"] = "|cffADD8E6Titles";
 	["TITLES_CHECKBOX_TOOLTIP"] = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
-	["TOYS_CHECKBOX"] = "Toys";
+	["TOYS_CHECKBOX"] = "|cffADD8E6Toys";
 	["TOYS_CHECKBOX_TOOLTIP"] = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!\n\nTracked Account Wide by Default.";
 	["MINIMAP_BUTTON_CHECKBOX"] = "Show the Minimap Button";
 	["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
@@ -336,14 +347,14 @@ app.L = {
 	["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see items, objects, NPCs, and headers which can be tracked within the game without necessarily being considered 'collectible'.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.";
 	["SHOW_REPEATABLE_THINGS_CHECKBOX"] = "Collect Repeatable Quests";
 	["SHOW_REPEATABLE_THINGS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to treat repeatable daily, weekly, and yearly quests as collectible. They will appear in the list like a regular collectible quest.\n\nNOTE: This is NOT intended to be used all the time, but if you're doing a set of dailies in a zone you've otherwise completed and need to be reminded of what is there, you can use this to see them.";
-	["FIRST_TIME_CHECKBOX"] = "Only first time";
+	["FIRST_TIME_CHECKBOX"] = "First Time Only";
 	["FIRST_TIME_CHECKBOX_TOOLTIP"] = "Enable this option if you want to treat repeatable daily, weekly, yearly and world quests as collected if completed at least once, ignoring quest previously completed that has been reset.\n\nNOTE: Previously completed repeatable quest are only stored if you completed the quest with the addon active and that data will be lost if removed the addon data from WTF folder.";
-	["FILTER_THINGS_BY_LEVEL_CHECKBOX"] = "Filter Things By Level";
-	["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"] = "Enable this setting if you only want to see content available to your current level character.\n\nNOTE: This is especially useful on Starter Accounts.";
-	["HIDE_BOE_CHECKBOX"] = "Hide BoE/BoA Items";
-	["HIDE_BOE_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to hide Bind-on-Equip/Account items.\n\nThis setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.";
-	["HIDE_PVP_CHECKBOX"] = "Hide PvP Content";
-	["HIDE_PVP_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to hide any content which 'may' require Player vs. Player interactions within the game.";
+	["FILTER_THINGS_BY_LEVEL_CHECKBOX"] = "|cffADD8E6No Level Restrictions";
+	["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to see content available regardless of player level.\n\nNOTE: Disabling this is especially useful on Starter Accounts.";
+	["HIDE_BOE_CHECKBOX"] = "|cffADD8E6BoE/BoA Items";
+	["HIDE_BOE_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to show Bind-on-Equip/Account items.\n\nDisabling this setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.";
+	["HIDE_PVP_CHECKBOX"] = "|T"..app.asset("Category_PvP")..":0|t |cffADD8E6PvP Content";
+	["HIDE_PVP_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to show content which 'may' require Player vs. Player interactions within the game.";
 	["IGNORE_FILTERS_FOR_BOES_CHECKBOX"] = "Ignore BoE/BoA Item Filters";
 	["IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP"] = "Enable this setting if you want to ignore armor, weapon, race, class, or profession requirements for BoE/BoA items.\n\nIf you are trying to collect things for your alts via Auction House scanning, this mode may be useful to you.";
 	["EXPAND_DIFFICULTY_CHECKBOX"] = "Expand Current Difficulty";
@@ -356,57 +367,69 @@ app.L = {
 	["REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)";
 	["REPORT_UNSORTED_CHECKBOX"] = "Only 'Unsourced'";
 	["REPORT_UNSORTED_CHECKBOX_TOOLTIP"] = "Enable this option if you only want to see the QuestID if it isn't already Sourced.";
+	["BEHAVIOR_LABEL"] = "List Behavior";
 
 	-- Account Wide Checkboxes
-	["ACCOUNT_WIDE"] = "Account Wide";
-	["ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP"] = "Achievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
-	["ACCOUNT_WIDE_TRANSMOG_TOOLTIP"] = "Transmog appearances are only tracked account wide and cannot be disabled.";
-	["ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP"] = "Azerite Essences cannot technically be collected and used account-wide, but if you only care about collecting them on your main character then you may prefer tracking them account-wide.";
-	["ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP"] = "Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
-	["ACCOUNT_WIDE_FOLLOWERS_TOOLTIP"] = "Followers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.";
-	["ACCOUNT_WIDE_HEIRLOOMS_TOOLTIP"] = "Heirlooms are tracked account wide.";
-	["ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP"] = "Music Rolls & Selfie Filters are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You can only play Music Rolls using the Jukebox Toy or snap a selfie with your S.E.L.F.I.E Camera Toy that you have collected on your current character.";
-	["ACCOUNT_WIDE_QUESTS_TOOLTIP"] = "Quest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.";
-	["ACCOUNT_WIDE_RECIPES_TOOLTIP"] = "Recipes are not normally tracked account wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
-	["ACCOUNT_WIDE_REPUTATIONS_TOOLTIP"] = "Reputations are now tracked account wide in Blizzard's database for achievements, so turning this on may be a good idea.";
-	["ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP"] = "Not sure this will help at all for collection... enjoy moving at least one character of every class through every Covenant and Renown progression...";
-	["ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP"] = "Enable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";
-	["ACCOUNT_WIDE_TITLES_TOOLTIP"] = "Most titles are tracked account wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
+	["ACCOUNT_WIDE"] = "Account";
+	["ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nAchievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
+	--["ACCOUNT_WIDE_TRANSMOG_TOOLTIP"] = "Transmog appearances are only tracked account wide and cannot be disabled.";
+	["ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nAzerite Essences cannot technically be collected and used account-wide, but if you only care about collecting them on your main character then you may prefer tracking them account-wide.";
+	["ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nFlight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
+	["ACCOUNT_WIDE_FOLLOWERS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nFollowers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.";
+	--["ACCOUNT_WIDE_HEIRLOOMS_TOOLTIP"] = "Heirlooms are tracked account wide.";
+	["ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nMusic Rolls & Selfie Filters are not normally tracked account wide in Blizzard's database, but we can do that.\n\nNOTE: You can only play Music Rolls using the Jukebox Toy or snap a selfie with your S.E.L.F.I.E Camera Toy that you have collected on your current character.";
+	["ACCOUNT_WIDE_QUESTS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nQuest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.";
+	["ACCOUNT_WIDE_RECIPES_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nRecipes are not normally tracked account wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
+	["ACCOUNT_WIDE_REPUTATIONS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nReputations are now tracked account wide in Blizzard's database for achievements, so turning this on may be a good idea.";
+	["ACCOUNT_WIDE_RUNEFORGELEGENDARIES_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nNot sure this will help at all for collection... enjoy moving at least one character of every class through every Covenant and Renown progression...";
+	["ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nEnable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";
+	["ACCOUNT_WIDE_TITLES_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nMost titles are tracked account wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
 
 	-- Filters tab
 	["FILTERS_TAB"] = "Filters";
-	["ITEM_FILTER_LABEL"] = "Armor / Weapon Filters";
+	["ITEM_FILTER_LABEL"] = "Weapons & Armor";
+	["ITEM_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if you are in |Cff00AB00Account Mode|cffFFFFFF, even if the option is disabled.|r";
+	["GENERAL_FILTERS_LABEL"] = "General";
+	["UNCOLLECTABLE_FILTERS_LABEL"] = "Uncollectable";
 	["CLASS_DEFAULTS_BUTTON"] = "Class Defaults";
 	["CLASS_DEFAULTS_BUTTON_TOOLTIP"] = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";
 	["ALL_BUTTON"] = "All";
-	["ALL_BUTTON_TOOLTIP"] = "Click this button to enable all equipment filters at once.";
-	["UNCHECK_ALL_BUTTON"] = "Uncheck All";
-	["UNCHECK_ALL_BUTTON_TOOLTIP"] = "Click this button to disable all equipment filters at once.";
-	["CUSTOM_FILTERS_LABEL"] = "Automatic Filters";
-	["CUSTOM_FILTERS_EXPLAIN_LABEL"] = "|CFFFFFFFFThese filters are automatically applied based on your current character, but may be overridden by being checked, allowing you to see additional Things your character cannot currently collect.\nNone of these filters are ever enabled in Account or Debug modes regardless of the selections below.|r";
+	["ALL_BUTTON_TOOLTIP"] = "Click this button to enable all options at once.";
+	["UNCHECK_ALL_BUTTON"] = "None";
+	["UNCHECK_ALL_BUTTON_TOOLTIP"] = "Click this button to disable all options at once.";
+	["CUSTOM_FILTERS_LABEL"] = "Automated";
+	["CUSTOM_FILTERS_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in |Cff00AB00Account Mode|cffFFFFFF, even if the option is disabled.|r";
 	["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"] = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
-	-- Unobtainables tab
+	["SETTINGS_CUSTOM_COLLECTS_REASONS"] = {
+		["NPE"] = { "|T"..("Interface\\Icons\\achievement_newplayerexperience.blp")..":0|t New Player Experience", "Only a New Character can Collect this" },
+		["SL_SKIP"] = { "|T"..app.asset("Expansion_SL")..":0|t Threads of Fate", "Only a Character who chose to skip the Shadowlands Storyline can Collect this" },
+		["SL_COV_KYR"] = { "|T"..("Interface\\Icons\\ui_sigil_kyrian.blp")..":0|t |cffADD8E6Kyrian Covenant|r" },
+		["SL_COV_NEC"] = { "|T"..("Interface\\Icons\\ui_sigil_necrolord.blp")..":0|t |cffADD8E6Necrolord Covenant|r" },
+		["SL_COV_NFA"] = { "|T"..("Interface\\Icons\\ui_sigil_nightfae.blp")..":0|t |cffADD8E6Night Fae Covenant|r" },
+		["SL_COV_VEN"] = { "|T"..("Interface\\Icons\\ui_sigil_venthyr.blp")..":0|t |cffADD8E6Venthyr Covenant|r" },
+	};
+	-- Unobtainables tab  
 	["UNOBTAINABLES_TAB"] = "Unobtainables";
-	["SEASONAL_LABEL"] = "Seasonal (Check to hide)";
-	["SEASONAL_ENABLE"] = "Filter Seasonal Items";
-	["SEASONAL_ALL"] = "Toggle All Seasonal";
-	["UNOBTAINALBE_LABEL"] = "Unobtainable (Check to hide)";
-	["UNOBTAINABLE_ENABLE"] = "Filter Unobtainable Items";
-	["UNOBTAINABLE_ALL"] = "Toggle All Unobtainable";
-	["NO_CHANCE_LABEL"] = "No Chance";
-	["NO_CHANCE_ALL"] = "Toggle All \"No Chance\"";
-	["HIGH_CHENCE_LABEL"] = "High Chance";
-	["HIGH_CHANCE_ALL"] = "Toggle All \"High Chance\"";
+	["SEASONAL_LABEL"] = "Seasonal";
+	--["SEASONAL_ENABLE"] = "Filter Seasonal Items";
+	["SEASONAL_ALL"] = "|cffECBC21Toggle All Seasonal";
+	["UNOBTAINABLE_LABEL"] = "Unobtainable";
+	--["UNOBTAINABLE_ENABLE"] = "Filter Unobtainable Items";
+	["UNOBTAINABLE_ALL"] = "|cffECBC21Toggle All Unobtainable";
+	--["NO_CHANCE_LABEL"] = "No Chance";
+	["NO_CHANCE_ALL"] = "|cffECBC21Toggle All \"No Chance\"";
+	--["HIGH_CHANCE_LABEL"] = "High Chance";
+	["HIGH_CHANCE_ALL"] = "|cffECBC21Toggle All \"High Chance\"";
 
 	-- Interface tab
 	["INTERFACE_TAB"] = "Interface";
 	["TOOLTIP_LABEL"] = "Tooltips";
-	["ENABLE_TOOLTIP_INFORMATION_CHECKBOX"] = "|CFFADD8E6Tooltip Integrations|r";
+	["ENABLE_TOOLTIP_INFORMATION_CHECKBOX"] = "Tooltip Integrations";
 	["ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.";
 	["DISPLAY_IN_COMBAT_CHECKBOX"] = "In Combat";
 	["DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP"] = "Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.";
-	["TOOLTIP_MOD_LABEL"] = "With Modifier";
+	["TOOLTIP_MOD_LABEL"] = "Modifier";
 	["TOOLTIP_MOD_NONE"] = "None";
 	["TOOLTIP_MOD_SHIFT"] = "Shift";
 	["TOOLTIP_MOD_CTRL"] = "Ctrl";
@@ -428,7 +451,7 @@ app.L = {
 	["SHOW_MODELS_CHECKBOX_TOOLTIP"] = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
 	["SHARED_APPEARANCES_CHECKBOX"] = "Shared Appearances";
 	["SHARED_APPEARANCES_CHECKBOX_TOOLTIP"] = "Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.";
-	["INCLUDE_ORIGINAL_CHECKBOX"] = "Include Original Source";
+	["INCLUDE_ORIGINAL_CHECKBOX"] = "Original Source";
 	["INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP"] = "Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.";
 	["ONLY_RELEVANT_CHECKBOX"] = "Only Relevant";
 	["ONLY_RELEVANT_CHECKBOX_TOOLTIP"] = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
@@ -446,7 +469,7 @@ app.L = {
 	["LOCATIONS_SLIDER_TOOLTIP"] = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
 	["COMPLETED_SOURCES_CHECKBOX"] = "For Completed";
 	["COMPLETED_SOURCES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.";
-	["DROP_CHANCES_CHECKBOX"] = "Show Drop Chances";
+	["DROP_CHANCES_CHECKBOX"] = "Drop Chances";
 	["DROP_CHANCES_CHECKBOX_TOOLTIP"] = "Enable this option to calculate various drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.";
 	["FOR_CREATURES_CHECKBOX"] = "For Creatures";
 	["FOR_CREATURES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see Source Locations for Creatures.";
@@ -454,27 +477,30 @@ app.L = {
 	["FOR_THINGS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see Source Locations for Things.";
 	["FOR_UNSORTED_CHECKBOX"] = "For Unsorted";
 	["FOR_UNSORTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
-	["WITH_WRAPPING_CHECKBOX"] = "Allow Source Wrapping",
+	["WITH_WRAPPING_CHECKBOX"] = "Allow Wrapping",
 	["WITH_WRAPPING_CHECKBOX_TOOLTIP"] = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.",
-	["MISC_LABEL"] = "Miscellaneous";
+	--["MISC_LABEL"] = "Miscellaneous";
 	["SHOW_REMAINING_CHECKBOX"] = "Show Remaining Things";
 	["SHOW_REMAINING_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 	["PERCENTAGES_CHECKBOX"] = "Show Percentage Completion";
 	["PERCENTAGES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
-	["MORE_COLORS_CHECKBOX"] = "Use More Colors!";
+	["MORE_COLORS_CHECKBOX"] = "Show Colors";
 	["MORE_COLORS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see more colors utilized to help distinguish additional conditions for Things in lists (i.e. class colors, faction colors, etc.)";
 	["TOOLTIP_HELP_CHECKBOX"] = "Show Tooltip Help";
 	["TOOLTIP_HELP_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.";
-	["SIZING_LABEL"] = "Scale";
+	--["SIZING_LABEL"] = "Scale";
 	["MAIN_LIST_SLIDER_LABEL"] = "Main List Scale";
 	["MAIN_LIST_SCALE_TOOLTIP"] = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
-	["MINI_LIST_SLIDER_LABEL"] = "Mini/Other List Scale";
+	["MINI_LIST_SLIDER_LABEL"] = "Mini Lists Scale";
 	["MINI_LIST_SCALE_TOOLTIP"] = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
+	["ADDITIONAL_LABEL"] = "Additional Information";
 
 	-- Features tab
 	["FEATURES_TAB"] = "Features";
+	["MINIMAP_LABEL"] = "Minimap Button";
 	["MODULES_LABEL"] = "Modules & Mini Lists";
-	["ADHOC_UPDATES_CHECKBOX"] = "Use Ad-Hoc Window Updates";
+	["REPORTING_LABEL"] = "Reporting";
+	["ADHOC_UPDATES_CHECKBOX"] = "Ad-Hoc Window Updates";
 	["ADHOC_UPDATES_CHECKBOX_TOOLTIP"] = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
 	["SKIP_CUTSCENES_CHECKBOX"] = "Automatically Skip Cutscenes";
 	["SKIP_CUTSCENES_CHECKBOX_TOOLTIP"] = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.";
@@ -490,13 +516,13 @@ app.L = {
 	["AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra";
 	["AUTO_WQ_LIST_CHECKBOX"] = "Automatically Open the World Quests List";
 	["AUTO_WQ_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq";
-	["CURRENCIES_IN_WQ_CHECKBOX"] = "Allow Collectible Cost Groups";
+	["CURRENCIES_IN_WQ_CHECKBOX"] = "Show Collectible Cost Groups";
 	["CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP"] = "Enable this option if you want to allow Items/Currencies which are used to purchase collectible Things to be considered collectible and show under dynamically-populated Quests.";
 	["AUCTION_TAB_CHECKBOX"] = "Show the Auction House Module Tab";
 	["AUCTION_TAB_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.";
 	["SORT_BY_PROGRESS_CHECKBOX"] = "Sort By Progress";
 	["SORT_BY_PROGRESS_CHECKBOX_TOOLTIP"] = "Enable this option if you want the 'Sort' operation (Shift + Right Click) to sort by the total progress of each group (instead of by Name)";
-	["QUEST_CHAIN_NESTED_CHECKBOX"] = "Nested Quest Chain Requirements";
+	["QUEST_CHAIN_NESTED_CHECKBOX"] = "Show Nested Quest Chains";
 	["QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.";
 	["CELEBRATIONS_LABEL"] = "Celebrations & Sound Effects";
 	["MASTER_AUDIO_CHECKBOX"] = "Use the Master Audio Channel";
@@ -507,6 +533,8 @@ app.L = {
 	["WARN_REMOVED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
 	["SCREENSHOT_COLLECTED_CHECKBOX"] = "Collected Things Trigger a Screenshot";
 	["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to take a screenshot for every Thing you collect.";
+	["CHAT_COMMANDS_LABEL"] = "Chat Commands";
+	["CHAT_COMMANDS_TEXT"] = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att item:12345 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as\n|R/att quest:12345|cffFFFFFF.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att random |cffFFFFFFor|R /attrandom\n|cffFFFFFFOpens the Random List.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items that need testing.  Report it to us if they have been fixed, or send in a bug report to Blizzard if they haven't.";
 
 	-- About tab
 	["ABOUT"] = "About";
@@ -590,7 +618,6 @@ app.L = {
 	["ARTIFACT_RELIC_COMPLETION"] = "Artifact Relic Completion";
 	["NOT_TRADEABLE"] = "Not Tradeable";
 	["TRADEABLE"] = "Tradeable";
-
 
 	-- Icons and Collection Text
 	["LOGO_SMALL"] = app.asset("logo_tiny");	-- Winner of the Logo Contest (Used to be "Interface\\Icons\\INV_Axe_106.blp")
@@ -1472,11 +1499,6 @@ app.L = {
 		[-10014] = app.asset("Expansion_WOTLK"),									-- Wrath of the Lich King
 
 
-
-
-
-
-
 		[-10025] = app.asset("Event_dmf"),											-- Darkmoon Faire
 		[-10026] = "Interface\\Icons\\spell_holy_fistofjustice",					-- Brawler's Guild
 		[-10027] = "Interface\\Icons\\Paladin_Protection",							-- Collect
@@ -2228,11 +2250,6 @@ app.L = {
 		[-10014] = select(1,GetCategoryInfo(14823)),							-- Wrath of the Lich King
 
 
-
-
-
-
-
 		[-10025] = select(1,GetCategoryInfo(15101)),							-- Darkmoon Faire
 		[-10026] = select(1,GetCategoryInfo(15282)),							-- Brawler's Guild
 		[-10027] = select(1,GetCategoryInfo(15118)),							-- Collect
@@ -2398,7 +2415,7 @@ app.L = {
 
 	["CUSTOM_COLLECTS_REASONS"] = {
 		["NPE"] = { "|cff5bc41dNew Player Experience|r", "Only a New Character can Collect this" },
-		["SL_SKIP"] = { "|cff76879cShadowlands Skip|r", "Only a Character who chose to skip the Shadowlands Storyline can Collect this" },
+		["SL_SKIP"] = { "|cff76879cThreads of Fate|r", "Only a Character who chose to skip the Shadowlands Storyline can Collect this" },
 		["SL_COV_KYR"] = { "|cFF516bfeKyrian Covenant|r" },
 		["SL_COV_NEC"] = { "|cFF40bf40Necrolord Covenant|r" },
 		["SL_COV_NFA"] = { "|cFFA330C9Night Fae Covenant|r" },
