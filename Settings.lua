@@ -1903,7 +1903,7 @@ MiniListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
 	end
 end);
 
-local DoAdHocUpdatesCheckbox = child:CreateCheckBox(L["ADHOC_UPDATES_CHECKBOX"] .. L["_BETA_LABEL"],
+local DoAdHocUpdatesCheckbox = child:CreateCheckBox(L["ADHOC_UPDATES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Updates:AdHoc"));
 end,
