@@ -2571,7 +2571,7 @@ local holidayOrder = { 1012, 1016, 1015, 1014, 1007, 1006, 1010, 1001, 1008, 100
 local SeasonalAllCheckBox = child:CreateCheckBox(L["SEASONAL_ALL"],
 function(self)
 	app.SeasonalItemFilter = app.FilterItemClass_SeasonalItem;
-	app.SetDataMember("FilterSeasonal", true);	-- Always enable Seasonal Filter
+	app.SetDataMember("FilterSeasonal", true); -- Always enable Seasonal Filter
 	local isTrue = true
 	local val = app.GetDataMember("SeasonalFilters")
 	for k,v in ipairs(holidayOrder) do
@@ -2648,7 +2648,7 @@ UnobtainableFiltersLabel:SetPoint("LEFT", GeneralFiltersLabel, "LEFT", 0, 0);
 local UnobtainableAllCheckBox = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 function(self)
 	app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
-	app.SetDataMember("FilterUnobtainableItems", true); -- Always enable Unobtainable Filter
+	app.SetDataMember("FilterUnobtainableItems", true);-- Always enable Unobtainable Filter
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
 	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
