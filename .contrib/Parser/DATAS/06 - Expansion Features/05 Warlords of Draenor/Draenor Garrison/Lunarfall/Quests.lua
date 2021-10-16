@@ -521,6 +521,12 @@ _.ExpansionFeatures =
 							["coord"] = { 37.8, 36.8, LUNARFALL },
 							["provider"] = { "n", 81492 },	-- Bodrick Grey
 						}),
+						q(36951, {	-- Arakkoa Exodus
+							["sourceQuests"] = { 35554 },	-- News from Spires of Arak
+							["isBreadcrumb"] = true,
+							["coord"] = { 42.8, 45.2, LUNARFALL },
+							["provider"] = { "o", 232400 },	-- Bulletin Board
+						}),
 						q(36624, {	-- Ashran Appearance
 							["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 							["races"] = ALLIANCE_ONLY,

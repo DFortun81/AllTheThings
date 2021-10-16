@@ -31,10 +31,6 @@ _.Zones =
 					["provider"] = { "n", 78466 },	-- Gazlowe
 					["sourceQuest"] = 34364,	-- For the Horde!
 				}),
-				q(36079, {	-- A Hero's Welcome
-					["u"] = NEVER_IMPLEMENTED,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(33125, {	-- A Proper Parting
 					["provider"] = { "n", 72976 },	-- Outrider Urakag
 					["coord"] = { 66.0, 49.0, FROSTFIRE_RIDGE },
@@ -669,12 +665,6 @@ _.Zones =
 						33828,	-- The Master Siegesmith
 					},
 				}),
-				q(33380, {	-- REUSE - never used
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(33407, {	-- REUSE - never used
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(34216, {	-- Safe Passage
 					["provider"] = { "n", 72814 },	-- Cordana Felsong
 					["coord"] = { 31.4, 16.2, FROSTFIRE_RIDGE },
@@ -828,9 +818,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33010,	-- The Iron Wolf
 				}),
-				q(35251, {	-- The Bounty of Bladespire	-- never implemented
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(33410, {	-- The Butcher of Bladespire
 					["provider"] = { "n", 75186 },	-- Thrall
 					["coord"] = { 70.7, 78.5, 527 },
@@ -949,9 +936,6 @@ _.Zones =
 					["coord"] = { 54.2, 67.5, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 231100 },	-- Icevine
-				}),
-				q(34734, {	-- The Loyalty of Olin Umberhide -- never implemented
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(34102, {	-- The Mark of Defiance
 					["coord"] = { 82.6, 69.8, FROSTFIRE_RIDGE },
@@ -1199,7 +1183,7 @@ _.Zones =
 					["provider"] = { "n", 70910 },	-- Ga'nar
 					["coord"] = { 46.3, 32.1, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 32792,	-- Leave Nothing Behind!
+					["sourceQuest"] = 32929,	-- They Rely on Numbers
 				}),
 				q(35737, {	-- Writing in the Snow (A)
 					["coords"] = {
@@ -1233,14 +1217,10 @@ _.Zones =
 				}),
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ
-					q(37625, {	-- Assault on Magnarok (A)
-						["coord"] = { 70.0, 30.0, FROSTFIRE_RIDGE },
-						["races"] = ALLIANCE_ONLY,
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					q(37626, {	-- Assault on Magnarok (H)
 						["coord"] = { 70.0, 30.0, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,
+						-- Alliance version of 37626 is in NYI
 					}),
 					q(36826, {	-- Assault on Magnarok (A)
 						["coord"] = { 70.0, 30.0, FROSTFIRE_RIDGE },
@@ -1338,6 +1318,15 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 		n(WEAPONS, {
 			i(118186),	-- Frostwolf Wisdom Stick
+		}),
+		n(QUESTS, {
+			q(37625),	-- Assault on Magnarok (A)
+			-- Quests below are completable somehow (I have them all) -Darkal
+			q(36079),	-- A Hero's Welcome - TODO: figure out from where it gets completed
+			q(33380),	-- REUSE - TODO: figure out from where it gets completed
+			q(33407),	-- REUSE - TODO: figure out from where it gets completed
+			q(35251),	-- The Bounty of Bladespire	- TODO: figure out from where it gets completed
+			q(34734),	-- The Loyalty of Olin Umberhide - TODO: figure out from where it gets completed
 		}),
 	}),
 });

@@ -451,10 +451,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 35151,	-- Your Base, Your Choice
 					}),
-					q(35431,  {	-- The Best Poison
-						["u"] = NEVER_IMPLEMENTED,
-						["races"] = HORDE_ONLY,
-					}),
 					q(35214,  {	-- The Infested (A)
 						["provider"] = { "n", 81589 },	-- Rangari Kaalya
 						["coord"] = { 46.1, 76.6, GORGROND },
@@ -1484,9 +1480,6 @@ _.Zones =
 						35834,	-- Wake of the Genesaur
 					},
 				}),
-				q(34413, {	-- Lumberstruck	-- never made it live
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(35644, {	-- Mercy for the Living
 					["provider"] = { "n", 82476 },	-- Khaano
 					["coord"] = { 58.2, 59.9, GORGROND },
@@ -1652,9 +1645,6 @@ _.Zones =
 							["sourceQuest"] = 33662,	-- Beatface vs. Boulder
 						}),
 					},
-				}),
-				q(33705, {	-- Sacking the Saberon Stronghold -- never went live
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				n(85374, {	-- Sappy
 					["questID"] = 35630,
@@ -2045,9 +2035,6 @@ _.Zones =
 						i(112865),	-- Xuk's Spirit-Speaking Chain
 					},
 				}),
-				q(35653, {	-- Wood is Wood -- never went live
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(35151, {	-- Your Base, Your Choice
 					["provider"] = { "n", 74594 },	-- Durotan
 					["coord"] = { 45.8, 70.2, GORGROND },
@@ -2136,13 +2123,20 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	--q(37673),	-- Short-Supply Reward, Triggered when killing Tarlna the Ageless (side note: accompanied by Pepe
+};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9981, {	-- Draenor
 		n(WEAPONS, {
 			i(119408),	-- Foereaver Polearm [This version wasn't added]
 		}),
+		n(QUESTS, {
+			q(34413),	-- Lumberstruck
+			q(33705),	-- Sacking the Saberon Stronghold
+			-- Quests below are completable somehow (I have them all) -Darkal
+			q(35431),	-- The Best Poison - TODO: figure out from where it gets completed
+			q(35653),	-- Wood is Wood - TODO: figure out from where it gets completed
+		}),
 	}),
 });
-_.HiddenQuestTriggers = {
-	--q(37673),	-- Short-Supply Reward, Triggered when killing Tarlna the Ageless (side note: accompanied by Pepe
-};

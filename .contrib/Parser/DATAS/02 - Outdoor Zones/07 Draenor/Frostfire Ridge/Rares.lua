@@ -332,9 +332,10 @@ _.Zones =
 					["questID"] = 34522,
 					["coord"] = { 40.4, 12.6, FROSTFIRE_RIDGE },
 					["g"] = {
-						un(NEVER_IMPLEMENTED, i(119409, {	-- Icebound Bloodmaul Spire
+						i(119409, {	-- Icebound Bloodmaul Spire
+							["u"] = REMOVED_FROM_GAME,
 							["description"] = "There are reports that this drops from this rare. This rare is only lootable once, but it appears this may either not drop anymore, or you may only have the one chance per toon to loot it. Please let us know if you get this item to drop.",
-						})),
+						}),
 					},
 				}),
 				n(87357, {	-- Valkor <Might of the Mountain>

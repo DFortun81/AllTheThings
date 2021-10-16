@@ -1046,9 +1046,6 @@ _.Zones =
 						follower(218),	-- Talonpriest Ishaal
 					},
 				}),
-				q(34565, {	-- Tearing Up Talador
-					["u"] = NEVER_IMPLEMENTED,	-- triggered after turning in "Ikky" (34898) but never made it to live servers
-				}),
 				q(35895, {	-- Terokk's Fall
 					["sourceQuests"] = { 35897 },	-- The Missing Piece
 					["coord"] = { 46.6, 46.6, SPIRES_OF_ARAK },
@@ -1098,9 +1095,6 @@ _.Zones =
 					["coord"] = { 66.7, 51.6, SPIRES_OF_ARAK },
 					["provider"] = { "n", 86475 },	-- Talon Guard Kurekk
 				}),
-				q(36796, {	-- The Flock's Revenge
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(35010, {	-- The High Ravenspeaker
 					["sourceQuests"] = { 34991 },	-- To the... Rescue?
 					["coord"] = { 48.9, 49.0, SPIRES_OF_ARAK },
@@ -1149,9 +1143,10 @@ _.Zones =
 				}),
 				q(34655, {	-- The Shadows of Skettis
 					["sourceQuests"] = {
-						34653, 36951,	-- Arakkoa Exodus (two versions)
-						49566,			-- Hero's Call: Spires of Arak!
-						49548,			-- Warchief's Command: Spires of Arak!
+						34653, 	-- Arakkoa Exodus
+						36951,	-- Arakkoa Exodus
+						49566,	-- Hero's Call: Spires of Arak!
+						49548,	-- Warchief's Command: Spires of Arak!
 					},
 					["coord"] = { 37.8, 18.0, SPIRES_OF_ARAK },
 					["provider"] = { "n", 79539 },	-- Azik
@@ -1218,9 +1213,6 @@ _.Zones =
 					["coord"] = { 40.1, 43.0, SPIRES_OF_ARAK },
 					["races"] = HORDE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
-				}),
-				q(35340, {	-- What Happened Here?
-					["u"] = NEVER_IMPLEMENTED
 				}),
 				q(35295, {	-- What's Theirs is Ours
 					["sourceQuests"] = { 35277 },	-- Orders, Commander?
@@ -1292,14 +1284,20 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(36885),	-- Ogre Waygate
+	q(36364),	-- Spires - Treasure 041 - Toxicfang Venom
+};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9981, {	-- Draenor
 		n(WEAPONS, {
 			i(114946),	-- Admiral Taylor's Spellguard
 		}),
+		n(QUESTS, {
+			-- Quests below are completable somehow (I have them all) -Darkal
+			q(36796),	-- The Flock's Revenge - TODO: figure out from where it gets completed
+			q(34565),	-- Tearing Up Talador - TODO: figure out from where it gets completed
+			q(35340),	-- What Happened Here? - TODO: figure out from where it gets completed
+		}),
 	}),
 });
-_.HiddenQuestTriggers = {
-	q(36885),	-- Ogre Waygate
-	q(36364),	-- Spires - Treasure 041 - Toxicfang Venom
-};

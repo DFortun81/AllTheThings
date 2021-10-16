@@ -669,6 +669,12 @@ _.ExpansionFeatures =
 							["coord"] = { 45.6, 43.2, FROSTWALL },
 							["provider"] = { "n", 78487 },	-- Rokhan
 						}),
+						q(36951, {	-- Arakkoa Exodus
+							["sourceQuests"] = { 35554 },	-- News from Spires of Arak
+							["isBreadcrumb"] = true,
+							["coord"] = { 49.3, 41.3, FROSTWALL },
+							["provider"] = { "o", 232416 },	-- Bulletin Board
+						}),
 						q(36706, {	-- Ashran Appearance
 							["provider"] = { "n", 78466 },	-- Gazlowe
 							["coord"] = { 52.4, 53.3, FROSTWALL },

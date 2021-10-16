@@ -657,9 +657,6 @@ _.Zones =
 						33754,	-- Through the Looking Glass
 					},
 				}),
-				q(33923, {	-- Demons? In Auchindoun?
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(34092, {	-- Desperate Measures
 					["provider"] = { "n", 77799 },	-- Restalaan
 					["coord"] = { 43.4, 75.9, TALADOR },
@@ -723,9 +720,6 @@ _.Zones =
 						33871,	-- Seek Out the Seer
 						34721,	-- Seek Out the Seer
 					},
-				}),
-				q(33974, {	-- Dying Wish -- duplicate quest, different ID
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(33973, {	-- Dying Wish
 					["provider"] = { "n", 77031 },	-- Ahm
@@ -911,9 +905,6 @@ _.Zones =
 					["provider"] = { "n", 76826 },	-- Caleb
 					["coord"] = { 36.1, 65.0, TALADOR },
 				}),
-				q(34691, {	-- Just the Beginning
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(34448, {	-- Kaelynara Sunchaser
 					["provider"] = { "n", 78513 },	-- Archmage Elandra
 					["coord"] = { 51.6, 50.5, TALADOR },
@@ -1047,9 +1038,6 @@ _.Zones =
 						i(112527),	-- Talador Sentinel Breeches
 					},
 				}),
-				q(34677, {	-- NOT USED
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(35227, {	-- Ogre Diplomacy
 					["provider"] = { "n", 75392 },	-- Exarch Maladaar
 					["coord"] = { 42.9, 76.1, TALADOR },
@@ -1115,10 +1103,6 @@ _.Zones =
 						i(112529),	-- Talador Sentinel Spaulders
 					},
 				}),
-				q(36004, {	-- Power Unleashed
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 84702 },	-- Archmage Khadgar
-				}),
 				q(34458, {	-- Powering the Defenses
 					["provider"] = { "n", 81789 },	-- Vindicator Kaluud
 					["coord"] = { 55.6, 67.7, TALADOR },
@@ -1182,9 +1166,6 @@ _.Zones =
 						34092,	-- Desperate Measures
 						34122,	-- Ogre Diplomacy
 					},
-				}),
-				q(34570, {	-- REUSE
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(37191, {	-- Sanketsu, The Burning Blade
 					["provider"] = { "n", 87764 },	-- Sanketsu
@@ -1726,3 +1707,15 @@ _.HiddenQuestTriggers = {
 	q(34199),	-- Vignette: Anchorite's Sojourn
 	q(34113),	-- Vignette: Guy 2 Found (Deathweb Hallow)
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9981, {	-- Draenor
+		n(QUESTS, {
+			q(34691),	-- Just the Beginning
+			q(34677),	-- NOT USED
+			-- Quests below are completable somehow (I have them all) -Darkal
+			q(33923),	-- Demons? In Auchindoun? - TODO: figure out from where it gets completed
+			q(33974),	-- Dying Wish - TODO: figure out from where it gets completed
+			q(34570),	-- REUSE - TODO: figure out from where it gets completed
+		}),
+	}),
+});

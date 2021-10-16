@@ -898,12 +898,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34899,	-- A Choice to Make
 				}),
-				q(35389, {	-- Silence the Call (duplicate, never went live)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(35391, {	-- Silence the Call (duplicate, never went live)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(35084, {	-- Silence the Call
 					--["objectID"] = 233263,	-- Shamanstone
 					["sourceQuests"] = {
@@ -1231,9 +1225,6 @@ _.Zones =
 						34899,	-- A Choice to Make (horde)
 					},
 				}),
-				q(35392, {	-- The Nether Approaches
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(35087, {	-- The Nether Approaches
 					--["objectID"] = 233263,	-- Shamanstone
 					["coords"] = {
@@ -1332,9 +1323,6 @@ _.Zones =
 						i(116831),	-- Sporebat Tooth Ring
 					},
 				}),
-				q(35390, {	-- The Shadow Over Oshu'gun	(replaced by 35088 before going live)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(35088, {	-- The Shadow of the Void
 					--["objectID"] = 233263,	-- Shamanstone
 					["coords"] = {
@@ -1353,9 +1341,6 @@ _.Zones =
 						i(118146),	-- Stormsteppe Grips
 						i(118145),	-- Windshaper Gauntlets
 					},
-				}),
-				q(35388, {	-- The Void March (duplicate, never went live)
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(35086, {	-- The Void March
 					--["objectID"] = 233263,	-- Shamanstone
@@ -1413,9 +1398,6 @@ _.Zones =
 					["provider"] = { "n", 79312 },	-- Greezlex Fizzpinch
 					["coord"] = { 78.9, 58.8, DRAENOR_NAGRAND },
 					["sourceQuest"] = 34598,	-- The Missing Caravan
-				}),
-				q(35387, {	-- Through the Nether (duplicate, never went live)
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(35085, {	-- Through the Nether
 					--["objectID"] = 233263,	-- Shamanstone
@@ -1508,18 +1490,6 @@ _.Zones =
 						["coord"] = { 57.0, 17.0, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
 					}),
-					q(37523, {	-- Assault on the Gorian Proving Grounds (A)
-						["coord"] = { 57.0, 17.0, DRAENOR_NAGRAND },
-						["races"] = ALLIANCE_ONLY,
-						["isRepeatable"] = true,
-						["u"] = NEVER_IMPLEMENTED,
-					}),
-					q(37524, {	-- Assault on the Gorian Proving Grounds (H)
-						["coord"] = { 57.0, 17.0, DRAENOR_NAGRAND },
-						["races"] = HORDE_ONLY,
-						["isRepeatable"] = true,
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					q(35379, {	-- Hemet's Happy Hunting Grounds (bonus objective)
 						["coord"] = { 87.7, 46.8, DRAENOR_NAGRAND },
 					}),
@@ -1537,3 +1507,18 @@ _.Zones =
 _.HiddenQuestTriggers = {
 	q(36906),	-- Ogre Waygate
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9981, {	-- Draenor
+		n(QUESTS, {
+			q(37523),	-- Assault on the Gorian Proving Grounds (A)
+			q(37524),	-- Assault on the Gorian Proving Grounds (H)
+			-- Quests below are completable somehow (I have them all) -Darkal
+			q(35389),	-- Silence the Call - TODO: figure out from where it gets completed
+			q(35391),	-- Silence the Call - TODO: figure out from where it gets completed
+			q(35392),	-- The Nether Approaches - TODO: figure out from where it gets completed
+			q(35390),	-- The Shadow Over Oshu'gun	- TODO: figure out from where it gets completed
+			q(35388),	-- The Void March - TODO: figure out from where it gets completed
+			q(35387),	-- Through the Nether - TODO: figure out from where it gets completed
+		}),
+	}),
+});

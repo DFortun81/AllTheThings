@@ -200,9 +200,6 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\INV_DataCrystal11",
 					--["objectID"] = 230933,	-- Defense Pylon Central Control Console
 				}),
-				q(33267, {	-- [Deprecated}
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(34355, {	-- Dirty Rats
 					["sourceQuests"] = {
 						34353,	-- Shredder Suppressor
@@ -1095,6 +1092,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(WEAPONS, {
 			i(117994),	-- RENAME Karabor Honor Guard Axe
 			i(117993),	-- RENAME Rangari Boot Knife
+		}),
+		n(QUESTS, {
+			-- Quests below are completable somehow (I have them all) -Darkal
+			q(33267),	-- [Deprecated] - TODO: figure out from where it gets completed
 		}),
 	}),
 });

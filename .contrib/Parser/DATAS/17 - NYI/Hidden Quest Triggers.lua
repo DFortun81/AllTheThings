@@ -1818,7 +1818,6 @@ _.HiddenQuestTriggers = {
 		q(33962),	-- Shadowmoon Flowerpicker
 		q(34053),	-- SoL Conversation Tracker
 		q(36942),	-- Soulbinder Aedraa
-		q(36951),	-- Arakkoa Exodus - offered by garrison bulletin/command board. Duplicate questID
 		q(34871),	-- Supply Recovery Tracking
 		q(34984),	-- Supply Recovery Tracking
 		q(33960),	-- Talador Flowerpicker
