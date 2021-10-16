@@ -2618,7 +2618,6 @@ local holidayOrder = { 1012, 1016, 1015, 1014, 1007, 1006, 1010, 1001, 1008, 100
 
 local SeasonalAllCheckBox = child:CreateCheckBox(L["SEASONAL_ALL"],
 function(self)
-	local anyEnabled = false;
 	local anyFiltered = false;
 	for _,v in ipairs(holidayOrder) do
 		if unobtainables[v][1] == 4 then
@@ -2626,12 +2625,10 @@ function(self)
 				anyFiltered = true;
 				-- ensure the filter is specifically marked as 'false' if it's not enabled
 				settings:SetValue("Seasonal", v, false);
-			else
-				anyEnabled = true;
 			end
 		end
 	end
-	self:SetChecked(anyEnabled);
+	self:SetChecked(not anyFiltered);
 	settings:SetValue("Seasonal", "DoFiltering", anyFiltered);
 	self:Enable();
 	self:SetAlpha(1);
@@ -2684,7 +2681,6 @@ UnobtainableFiltersLabel:SetPoint("LEFT", GeneralFiltersLabel, "LEFT", 0, 0);
 
 local UnobtainableAllCheckBox = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 function(self)
-	local anyEnabled = false;
 	local anyFiltered = false;
 	for k,v in pairs(unobtainables) do
 		if v[1] < 4 then
@@ -2692,12 +2688,10 @@ function(self)
 				anyFiltered = true;
 				-- ensure the filter is specifically marked as 'false' if it's not enabled
 				settings:SetValue("Unobtainable", k, false);
-			else
-				anyEnabled = true;
 			end
 		end
 	end
-	self:SetChecked(anyEnabled);
+	self:SetChecked(not anyFiltered);
 	settings:SetValue("Unobtainable", "DoFiltering", anyFiltered);
 	self:Enable();
 	self:SetAlpha(1);
@@ -2716,14 +2710,15 @@ UnobtainableAllCheckBox:SetPoint("TOPLEFT", UnobtainableFiltersLabel, "BOTTOMLEF
 
 local NoChanceAllCheckBox = child:CreateCheckBox(L["NO_CHANCE_ALL"],
 function(self)
-	local anyEnabled = false;
+	local anyFiltered = false;
 	for k,v in pairs(unobtainables) do
 		if v[1] == 1 then
-			anyEnabled = anyEnabled or settings:GetValue("Unobtainable", k);
-			if anyEnabled then break; end
+			if not settings:GetValue("Unobtainable", k) then
+			anyFiltered = true;
+			end
 		end
 	end
-	self:SetChecked(anyEnabled);
+	self:SetChecked(not anyFiltered);
 	self:Enable();
 	self:SetAlpha(1);
 end,
@@ -2774,14 +2769,15 @@ end
 
 local HighChanceAllCheckBox = child:CreateCheckBox(L["HIGH_CHANCE_ALL"],
 function(self)
-	local anyEnabled = false;
+	local anyFiltered = false;
 	for k,v in pairs(unobtainables) do
 		if v[1] == 3 then
-			anyEnabled = anyEnabled or settings:GetValue("Unobtainable", k);
-			if anyEnabled then break; end
+			if not settings:GetValue("Unobtainable", k) then
+				anyFiltered = true;
+			end
 		end
 	end
-	self:SetChecked(anyEnabled);
+	self:SetChecked(not anyFiltered);
 	self:Enable();
 	self:SetAlpha(1);
 end,
@@ -3649,16 +3645,6 @@ end);
 AutomaticallySkipCutscenesCheckBox:SetATTTooltip(L["SKIP_CUTSCENES_CHECKBOX_TOOLTIP"]);
 AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", ModulesLabel, "BOTTOMLEFT", -2, 0);
 
-local OpenBountyListAutomatically = settings:CreateCheckBox(L["AUTO_BOUNTY_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:BountyList"));
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:BountyList", self:GetChecked());
-end);
-OpenBountyListAutomatically:SetATTTooltip(L["AUTO_BOUNTY_CHECKBOX_TOOLTIP"]);
-OpenBountyListAutomatically:SetPoint("TOPLEFT", AutomaticallySkipCutscenesCheckBox, "BOTTOMLEFT", 0, 4);
-
 local OpenMainListAutomatically = settings:CreateCheckBox(L["AUTO_MAIN_LIST_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:MainList"));
@@ -3667,7 +3653,7 @@ function(self)
 	settings:SetTooltipSetting("Auto:MainList", self:GetChecked());
 end);
 OpenMainListAutomatically:SetATTTooltip(L["AUTO_MAIN_LIST_CHECKBOX_TOOLTIP"]);
-OpenMainListAutomatically:SetPoint("TOPLEFT", OpenBountyListAutomatically, "BOTTOMLEFT", 0, 4);
+OpenMainListAutomatically:SetPoint("TOPLEFT", AutomaticallySkipCutscenesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local OpenMiniListAutomatically = settings:CreateCheckBox(L["AUTO_MINI_LIST_CHECKBOX"],
 function(self)
@@ -3679,6 +3665,16 @@ end);
 OpenMiniListAutomatically:SetATTTooltip(L["AUTO_MINI_LIST_CHECKBOX_TOOLTIP"]);
 OpenMiniListAutomatically:SetPoint("TOPLEFT", OpenMainListAutomatically, "BOTTOMLEFT", 0, 4);
 
+local OpenBountyListAutomatically = settings:CreateCheckBox(L["AUTO_BOUNTY_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:BountyList"));
+end,
+function(self)
+	settings:SetTooltipSetting("Auto:BountyList", self:GetChecked());
+end);
+OpenBountyListAutomatically:SetATTTooltip(L["AUTO_BOUNTY_CHECKBOX_TOOLTIP"]);
+OpenBountyListAutomatically:SetPoint("TOPLEFT", OpenMiniListAutomatically, "BOTTOMLEFT", 0, 4);
+
 local OpenProfessionListAutomatically = settings:CreateCheckBox(L["AUTO_PROF_LIST_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:ProfessionList"));
@@ -3687,7 +3683,7 @@ function(self)
 	settings:SetTooltipSetting("Auto:ProfessionList", self:GetChecked());
 end);
 OpenProfessionListAutomatically:SetATTTooltip(L["AUTO_PROF_LIST_CHECKBOX_TOOLTIP"]);
-OpenProfessionListAutomatically:SetPoint("TOPLEFT", OpenMiniListAutomatically, "BOTTOMLEFT", 0, 4);
+OpenProfessionListAutomatically:SetPoint("TOPLEFT", OpenBountyListAutomatically, "BOTTOMLEFT", 0, 4);
 
 local OpenRaidAssistantAutomatically = settings:CreateCheckBox(L["AUTO_RAID_ASSISTANT_CHECKBOX"],
 function(self)
