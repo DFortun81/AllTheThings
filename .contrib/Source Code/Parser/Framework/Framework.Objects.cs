@@ -1183,6 +1183,7 @@ namespace ATT
                         case "isWorldQuest":
                         case "repeatable":
                         case "pvp":
+						case "petBattle":
                         case "factionID":
                         case "requireSkill":
                         case "followerID":
@@ -1435,6 +1436,7 @@ namespace ATT
                     case "equippable":
                     case "repeatable":
                     case "pvp":
+					case "petBattle":
                     case "isBreadcrumb":
                     case "DisablePartySync":
                     case "isLimited":

@@ -2379,6 +2379,7 @@ app.L = {
 
 		-- Hidden Filter (General Tab)
 		[12] = {0, "|CFF00FFDEThis Thing requires Player vs Player activities or a currency related to those activities.|r", "Requires PvP"},
+		[16] = {0, "|CFF00FFDEThis Thing requires Pet Battle activities or a currency related to those activities.|r", "Requires Pet Battle"},
 
 		-- Arbitrary Filters
 		[9] = {3, "|CFFFF0000The original source of obtaining this has been removed and is now only available via the Black Market Auction House.|r", "Black Market AH [BMAH]"},

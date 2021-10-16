@@ -1253,6 +1253,9 @@ o_repeated = function(t)								-- Create a group which represents the shared co
 	end
 	print("Could not find a group with an objectID value");
 end
+pb = function(t)
+	return bubbleDown({["petBattle"] = true,}, t);
+end
 prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
