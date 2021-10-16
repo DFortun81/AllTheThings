@@ -440,6 +440,8 @@ settings.NonInsane = function(self)
 	or self:Get("Hide:PvP")
 	-- Hiding Pet Battles
 	or not self:Get("Show:PetBattles")
+	-- Hiding any Seasonal content
+	or self:GetValue("Seasonal", "DoFiltering")
 	-- Non-Account Mode with Covenants filtered
 	or (not self:Get("AccountMode")
 		and (not self:GetFilter("CC:SL_COV_KYR")
@@ -2647,7 +2649,7 @@ local y = 4;
 local count = 0;
 for _,v in ipairs(holidayOrder) do
 	if unobtainables[v][1] == 4 then
-		local seasonalFilter = child:CreateCheckBox(unobtainables[v][3],
+		local seasonalFilter = child:CreateCheckBox("|cffADD8E6" .. unobtainables[v][3],
 		function(self)
 			self:SetChecked(settings:GetValue("Seasonal", v));
 		end,
@@ -3002,7 +3004,8 @@ SummarizeThingsCheckBox:SetATTTooltip(L["SUMMARIZE_CHECKBOX_TOOLTIP"]);
 SummarizeThingsCheckBox:SetPoint("TOPLEFT", DisplayInCombatCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ContainsSlider = CreateFrame("Slider", "ATTSummarizeThingsSlider", settings, "OptionsSliderTemplate");
-ContainsSlider:SetPoint("TOPLEFT", SummarizeThingsCheckBox.Text, "BOTTOMLEFT", -1, -2);
+ContainsSlider:SetPoint("TOP", SummarizeThingsCheckBox.Text, "BOTTOM", 0, -4);
+ContainsSlider:SetPoint("LEFT", SummarizeThingsCheckBox, "LEFT", 10, 0);
 table.insert(settings.MostRecentTab.objects, ContainsSlider);
 settings.ContainsSlider = ContainsSlider;
 ContainsSlider.tooltipText = L["CONTAINS_SLIDER_TOOLTIP"];
@@ -3307,7 +3310,7 @@ ShowSourceLocationsCheckBox:SetATTTooltip(L["SOURCE_LOCATIONS_CHECKBOX_TOOLTIP"]
 ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", OnlyShowRelevantSharedAppearancesCheckBox, "BOTTOMLEFT", -8, 0);
 
 local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
-LocationsSlider:SetPoint("TOP", ShowSourceLocationsCheckBox, "BOTTOM", 0, 2);
+LocationsSlider:SetPoint("TOP", ShowSourceLocationsCheckBox.Text, "BOTTOM", 0, -4);
 LocationsSlider:SetPoint("LEFT", ShowSourceLocationsCheckBox, "LEFT", 10, 0);
 table.insert(settings.MostRecentTab.objects, LocationsSlider);
 settings.LocationsSlider = LocationsSlider;
