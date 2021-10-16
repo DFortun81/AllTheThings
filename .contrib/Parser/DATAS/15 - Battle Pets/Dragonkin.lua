@@ -4,7 +4,7 @@
 
 _.BattlePets =
 {
-	n(-797,	{	-- Journal
+	petbattle(n(PET_JOURNAL,	{
 		pa(245, {	-- Dragonkin
 			p(2072),	-- Ageless Bronze Drake
 			p(1385),	-- Albino Chimaeraling
@@ -89,5 +89,5 @@ _.BattlePets =
 			p(817),		-- Wild Jade Hatchling
 			p(1304),	-- Yu'la, Broodling of Yu'lon
 		}),
-	}),
+	})),
 };

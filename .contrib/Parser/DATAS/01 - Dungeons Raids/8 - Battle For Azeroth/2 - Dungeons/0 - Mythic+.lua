@@ -4,7 +4,7 @@
 
 _.Instances = { tier(BFA_TIER, {
 	n(-857, {	-- Mythic+
-		["g"] = {
+		n(-852, {	-- Azerite Essences
 			i(169491),	-- Focused Life Anima
 			i(168399, {	-- Fetish of the Dark Caverns (Rank 1)
 				["description"] = "Requires completing a +4 Mythic and looting the chest at the end of the dungeon.\n",
@@ -69,6 +69,61 @@ _.Instances = { tier(BFA_TIER, {
 					az(20, 3),	-- Life-Binder's Invocation (Rank 3)
 				},
 			}),
-		},
+		}),
+		n(ACHIEVEMENTS, {
+			ach(13078, {		-- Realm First! Battle for Azeroth Keystone Master
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			ach(13075, {		-- Battle for Azeroth Keymaster
+				["timeline"] = {
+					"added 8.0.1",
+					"removed 9.0.2",
+				},
+			}),
+			ach(13079, {		-- Battle for Azeroth Keystone Conqueror: Season One
+				["timeline"] = {
+					"added 8.0.1",
+					"removed 8.1.0",
+				},
+			}),
+			ach(13080, {		-- Battle for Azeroth Keystone Master: Season One
+				["timeline"] = {
+					"added 8.0.1",
+					"removed 8.1.0",
+				},
+			}),
+			ach(13448, {		-- Battle for Azeroth Keystone Conqueror: Season Two
+				["timeline"] = {
+					"added 8.1.0",
+					"removed 8.2.0",
+				},
+			}),
+			ach(13449, {		-- Battle for Azeroth Keystone Master: Season Two
+				["timeline"] = {
+					"added 8.1.0",
+					"removed 8.2.0",
+				},
+			}),
+			ach(13780, {		-- Battle for Azeroth Keystone Conqueror: Season Three
+				["timeline"] = {
+					"added 8.2.0",
+					"removed 8.3.0",
+				},
+			}),
+			ach(13781, {		-- Battle for Azeroth Keystone Master: Season Three
+				["timeline"] = {
+					"added 8.2.0",
+					"removed 8.3.0",
+				},
+			}),
+			bubbleDown({ ["timeline"] = { "added 8.3.0", "removed 9.0.2" } },
+				ach(14144, {		-- Battle for Azeroth Keystone Conqueror: Season Four
+					title(418),	-- "the Awakened"
+			})),
+			bubbleDown({ ["timeline"] = { "added 8.3.0", "removed 9.0.2" } },
+				ach(14145, {		-- Battle for Azeroth Keystone Master: Season Four
+					i(174836)	-- Awakened Mindborer
+			})),
+		}),
 	}),
 })};
