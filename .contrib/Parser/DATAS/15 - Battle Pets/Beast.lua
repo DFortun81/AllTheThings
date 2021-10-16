@@ -4,7 +4,7 @@
 
 _.BattlePets =
 {
-	petbattle(n(PET_JOURNAL,	{
+	n(-797,	{	-- Journal
 		pa(237, {	-- Beast
 			p(635),		-- Adder
 			p(1571),	-- Albino River Calf
@@ -311,5 +311,5 @@ _.BattlePets =
 			p(1305),	-- Zao, Calfling of Niuzao
 			p(731),		-- Zooey Snake
 		}),
-	})),
+	}),
 };

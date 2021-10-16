@@ -222,8 +222,6 @@ app.L = {
 	["REFRESHING_COLLECTION"] = "Refreshing collection...";
 	["DONE_REFRESHING"] = "Done refreshing collection.";
 	["ADHOC_UNIQUE_COLLECTED_INFO"] = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
-	["REQUIRES_PVP"] = "|CFF00FFDEThis Thing requires Player vs Player activities or a currency related to those activities.|r";
-	["REQUIRES_PETBATTLES"] = "|CFF00FFDEThis Thing requires Pet Battling.|r";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";
@@ -2378,6 +2376,9 @@ app.L = {
 		-- [id] = {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
 		[1] = {1, "|CFFFF0000This was never available to players.|r", "Never Implemented"}, -- No Hope
 		[2] = {1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game"}, -- No Hope
+
+		-- Hidden Filter (General Tab)
+		[12] = {0, "|CFF00FFDEThis Thing requires Player vs Player activities or a currency related to those activities.|r", "Requires PvP"},
 
 		-- Arbitrary Filters
 		[9] = {3, "|CFFFF0000The original source of obtaining this has been removed and is now only available via the Black Market Auction House.|r", "Black Market AH [BMAH]"},

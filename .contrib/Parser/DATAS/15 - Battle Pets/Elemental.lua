@@ -4,7 +4,7 @@
 
 _.BattlePets =
 {
-	petbattle(n(PET_JOURNAL,	{
+	n(-797,	{	-- Journal
 		pa(241, {	-- Elemental
 			p(2433),	-- Aldrusian Sproutling
 			p(2093),	-- Amalgam of Destruction
@@ -130,5 +130,5 @@ _.BattlePets =
 			p(2897),	-- Wrathling
 			p(2084),	-- Zephyrian Prince
 		}),
-	})),
+	}),
 };

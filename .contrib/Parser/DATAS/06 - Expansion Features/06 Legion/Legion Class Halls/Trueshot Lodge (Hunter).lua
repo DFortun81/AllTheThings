@@ -259,7 +259,7 @@ _.ExpansionFeatures =
 						q(45555, {	-- Felbound Beasts
 							["sourceQuests"] = { 45554 },	-- Taking Control
 							["classes"] = { HUNTER },
-							["provider"] = { "n", 117246 },	-- Nighthuntress Syrenne
+							["provider"] = { "n", 117308 },	-- Nighthuntress Syrenne
 							["coord"] = { 57.5, 44.8, SURAMAR },
 						}),
 						q(46783, {	-- Further Advancement
@@ -602,7 +602,7 @@ _.ExpansionFeatures =
 						q(45554, {	-- Taking Control
 							["sourceQuests"] = { 45553 },	-- The Nighthuntress Beckons
 							["classes"] = { HUNTER },
-							["provider"] = { "n", 117246 },	-- Nighthuntress Syrenne
+							["provider"] = { "n", 117308 },	-- Nighthuntress Syrenne
 							["coord"] = { 57.5, 44.8, SURAMAR },
 						}),
 						q(42526, {	-- Tech It Up A Notch

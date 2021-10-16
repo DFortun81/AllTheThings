@@ -4,7 +4,7 @@
 
 _.BattlePets =
 {
-	petbattle(n(PET_JOURNAL,	{
+	n(-797,	{	-- Journal
 		pa(242, {	-- Undead
 			p(2958),	-- Backbone
 			p(2456),	-- Barnaby
@@ -110,5 +110,5 @@ _.BattlePets =
 			p(2748),	-- Ziggy
 			p(1428),	-- Zomstrok
 		}),
-	})),
+	}),
 };

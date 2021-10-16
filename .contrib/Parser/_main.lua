@@ -459,10 +459,6 @@ WEAPONS = -319;
 -- D&R
 COMMON_BOSS_DROPS = -1;
 
--- Pet
-PET_BATTLE = -796;
-PET_JOURNAL = -797;
-
 -- PvP Headers
 PVP = -9;
 PVP_ASPIRANT = -659;
@@ -1256,9 +1252,6 @@ o_repeated = function(t)								-- Create a group which represents the shared co
 		end
 	end
 	print("Could not find a group with an objectID value");
-end
-petbattle = function(t)									-- Flag all nested content as requiring Pet Battle gameplay
-	return bubbleDown({["pb"] = true,}, t);
 end
 prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);

@@ -712,7 +712,6 @@ _.Zones =
 					["sourceQuests"] = { 39733 },	-- The Lone Mountain
 					["coord"] = { 69.9, 43.8, LEGION_DALARAN },
 					["provider"] = { "n", 97666 },	-- Warbrave Oro
-					["maps"] = { HIGHMOUNTAIN },
 				}),
 				q(39985, {	-- Khadgar's Discovery
 					["isBreadcrumb"] = true,	-- for "Magic Message"

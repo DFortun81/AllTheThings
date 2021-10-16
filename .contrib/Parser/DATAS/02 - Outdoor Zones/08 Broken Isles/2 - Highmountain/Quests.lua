@@ -1026,6 +1026,7 @@ _.Zones =
 				q(43957),	-- Jade Darkhaven
 				q(43815),	-- Karthax
 				q(39989),	-- Keepers of the Hammer
+				q(38907),	-- Keepers of the Hammer
 				q(41193),	-- Laying to Rest
 				q(44059),	-- Legion Attacks
 				q(38785),	-- Living Leystone Sample

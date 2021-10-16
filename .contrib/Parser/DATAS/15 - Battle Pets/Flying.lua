@@ -4,7 +4,7 @@
 
 _.BattlePets =
 {
-	petbattle(n(PET_JOURNAL,	{
+	n(-797,	{	-- Journal
 		pa(239, {	-- Flying
 			p(1708),	-- Albatross Chick
 			p(2566, {	-- Albatross Hatchling
@@ -273,5 +273,5 @@ _.BattlePets =
 			p(850),		-- Yu'lon Kite
 			p(1536),	-- Zangar Spore
 		}),
-	})),
+	}),
 };
