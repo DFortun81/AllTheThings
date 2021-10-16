@@ -32,22 +32,6 @@ _.Zones =
 				p(420, {	-- Toad
 					["crs"] = { 61369 },	-- Toad
 				}),
-				q(31854, {	-- Analynn
-					["provider"] = { "n", 66136 },	-- Analynn
-					["coord"] = { 20.2, 29.5, ASHENVALE },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["sourceQuests"] = { 31814 },	-- Analynn
-				}),
-				q(31815, {	-- Zonya the Sadist
-					["provider"] = { "n", 66136 },	-- Analynn
-					["coord"] = { 20.2, 29.5, ASHENVALE },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 31814 },	-- Analynn
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
 			}),
 		}),
 	}),

@@ -37,33 +37,6 @@ _.Zones =
 				p(546, {	-- Tol'vir Scarab
 					["crs"] = { 62899 },	-- Tol'vir Scarab
 				}),
-				q(31970, {	-- Grand Master Obalis
-					["provider"] = { "n", 66824 },	-- Obalis
-					["coord"] = { 56.6, 41.8, 249 },
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31971, {	-- Grand Master Obalis
-					["provider"] = { "n", 66824 },	-- Obalis
-					["coord"] = { 56.6, 41.8, 249 },
-					["isDaily"] = true,
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31985, {	-- The Triumphant Return
-					["provider"] = { "n", 66824 },	-- Obalis
-					["coord"] = { 56.6, 41.8, 249 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(31986, {	-- The Triumphant Return
-					["provider"] = { "n", 66824 },	-- Obalis
-					["coord"] = { 56.6, 41.8, 249 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 			}),
 		}),
 	}),

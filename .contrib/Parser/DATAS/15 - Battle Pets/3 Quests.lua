@@ -136,6 +136,36 @@ _.BattlePets = {
 				["sourceQuest"] = 31821,	-- Level Up!
 				["races"] = ALLIANCE_ONLY,
 			}),
+			q(31569, {	-- Got one!
+				["provider"] = { "n", 63077 },	-- Lehna
+				["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
+				["races"] = ALLIANCE_ONLY,
+				["sourceQuest"] = 31825,	-- Level Up!
+			}),
+			q(31555, {	-- Got one!
+				["provider"] = { "n", 63070 },	-- Valeena
+				["coord"] = { 55.2, 51.2, TELDRASSIL },
+				["races"] = ALLIANCE_ONLY,
+				["sourceQuest"] = 31826,	-- Level Up!
+			}),
+			q(31584, {	-- Got one!
+				["provider"] = { "n", 63083 },	-- Will Larsons
+				["coord"] = { 50.1, 20.2, DARKSHORE },
+				["races"] = ALLIANCE_ONLY,
+				["sourceQuest"] = 31832,	-- Level Up!
+			}),
+			q(31575, {	-- Got One!
+				["provider"] = { "n", 63067 },	-- Naleen
+				["coord"] = { 49.2, 56.1, MULGORE },
+				["races"] = HORDE_ONLY,
+				["sourceQuest"] = 31831,	-- Level Up!
+			}),
+			q(31570, {	-- Got one!
+				["provider"] = { "n", 63061 },	-- Narzak
+				["coord"] = { 52.7, 41.3, DUROTAR },
+				["races"] = HORDE_ONLY,
+				["sourceQuest"] = 31830,	-- Level Up!
+			}),
 			q(31590, {	-- Got one!
 				["provider"] = { "n", 63626 },	-- Varzok
 				["coord"] = { 52.6, 59.3, ORGRIMMAR },
@@ -153,6 +183,36 @@ _.BattlePets = {
 				["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
+			q(31556, {	-- Learning the Ropes
+				["provider"] = { "n", 63077 },	-- Lehna
+				["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
+				["races"] = ALLIANCE_ONLY,
+				["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+			}),
+			q(31552, {	-- Learning the Ropes
+				["provider"] = { "n", 63070 },	-- Valeena
+				["coord"] = { 55.2, 51.2, TELDRASSIL },
+				["races"] = ALLIANCE_ONLY,
+				["description"] = "This quest is part of a chain initiated by learning Battle Pet Training."
+			}),
+			q(31582, {	-- Learning the Ropes
+				["provider"] = { "n", 63083 },	-- Will Larsons
+				["coord"] = { 50.1, 20.2, DARKSHORE },
+				["races"] = ALLIANCE_ONLY,
+				["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+			}),
+			q(31573, {	-- Learning the Ropes
+				["provider"] = { "n", 63067 },	-- Naleen
+				["coord"] = { 49.2, 56.1, MULGORE },
+				["races"] = HORDE_ONLY,
+				["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+			}),
+			q(31571, {	-- Learning the Ropes
+				["provider"] = { "n", 63061 },	-- Narzak
+				["coord"] = { 52.7, 41.3, DUROTAR },
+				["races"] = HORDE_ONLY,
+				["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+			}),
 			q(31588, {	-- Learning the Ropes
 				["provider"] = { "n", 63626 },	-- Varzok
 				["coord"] = { 52.6, 59.3, ORGRIMMAR },
@@ -168,6 +228,36 @@ _.BattlePets = {
 				["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 				["sourceQuest"] = 31592,	-- On The Mend
 				["races"] = ALLIANCE_ONLY,
+			}),
+			q(31825, {	-- Level Up!
+				["provider"] = { "n", 63077 },	-- Lehna
+				["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
+				["races"] = ALLIANCE_ONLY,
+				["sourceQuest"] = 31568,	-- On The Mend
+			}),
+			q(31826, {	-- Level Up!
+				["provider"] = { "n", 63070 },	-- Valeena
+				["coord"] = { 55.2, 51.2, TELDRASSIL },
+				["races"] = ALLIANCE_ONLY,
+				["sourceQuest"] = 31553,	-- On The Mend
+			}),
+			q(31832, {	-- Level Up!
+				["provider"] = { "n", 63083 },	-- Will Larsons
+				["coord"] = { 50.1, 20.2, DARKSHORE },
+				["races"] = ALLIANCE_ONLY,
+				["sourceQuest"] = 31583,	-- On The Mend
+			}),
+			q(31831, {	-- Level Up!
+				["provider"] = { "n", 63067 },	-- Naleen
+				["coord"] = { 49.2, 56.1, MULGORE },
+				["races"] = HORDE_ONLY,
+				["sourceQuest"] = 31574,	-- On The Mend
+			}),
+			q(31830, {	-- Level Up!
+				["provider"] = { "n", 63061 },	-- Narzak
+				["coord"] = { 52.7, 41.3, DUROTAR },
+				["races"] = HORDE_ONLY,
+				["sourceQuest"] = 31572,	-- On The Mend
 			}),
 			q(31827, {	-- Level Up!
 				["provider"] = { "n", 63626 },	-- Varzok
@@ -187,12 +277,41 @@ _.BattlePets = {
 				["sourceQuest"] = 31591,	-- Learning the Ropes
 				["races"] = ALLIANCE_ONLY,
 			}),
+			q(31568, {	-- On The Mend
+				["provider"] = { "n", 63077 },	-- Lehna
+				["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
+				["races"] = ALLIANCE_ONLY,
+				["sourceQuest"] = 31556,	-- Learning the Ropes
+			}),
+			q(31553, {	-- On The Mend
+				["provider"] = { "n", 63070 },	-- Valeena
+				["coord"] = { 55.2, 51.2, TELDRASSIL },
+				["races"] = ALLIANCE_ONLY,
+				["sourceQuest"] = 31552,	-- Learning the Ropes
+			}),
+			q(31583, {	-- On The Mend
+				["provider"] = { "n", 63083 },	-- Will Larsons
+				["coord"] = { 50.1, 20.2, DARKSHORE },
+				["races"] = ALLIANCE_ONLY,
+				["sourceQuest"] = 31582,	-- Learning the Ropes
+			}),
+			q(31574, {	-- On The Mend
+				["provider"] = { "n", 63067 },	-- Naleen
+				["coord"] = { 49.2, 56.1, MULGORE },
+				["races"] = HORDE_ONLY,
+				["sourceQuest"] = 31573,	-- Learning the Ropes
+			}),
+			q(31572, {	-- On The Mend
+				["provider"] = { "n", 63061 },	-- Narzak
+				["coord"] = { 52.7, 41.3, DUROTAR },
+				["races"] = HORDE_ONLY,
+				["sourceQuest"] = 31571,	-- Learning the Ropes
+			}),
 			q(31589, {	-- On The Mend
 				["provider"] = { "n", 63626 },	-- Varzok
 				["coord"] = { 52.6, 59.3, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = { 31588 },	-- Learning the Ropes
-
 			}),
 			q(31586, {	-- On The Mend
 				["provider"] = { "n", 63086 },	-- Matty
@@ -340,13 +459,189 @@ _.BattlePets = {
 					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
 				},
 			}),
+			q(31813, {	-- Dagra the Fierce
+				["provider"] = { "n", 66126 },	-- Zunta
+				["coord"] = { 43.9, 28.9, DUROTAR },
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(89125),	-- Sack of Pet Supplies
+				},
+			}),
+			q(31814, {	-- Analynn
+				["provider"] = { "n", 66135 },	-- Dagra the Fierce
+				["coord"] = { 58.6, 53.0, NORTHERN_BARRENS },
+				["races"] = HORDE_ONLY,
+				["sourceQuest"] = 31813,	-- Dagra the Fierce
+				["groups"] = {
+					i(89125),	-- Sack of Pet Supplies
+				},
+			}),
+			
+			q(31815, {	-- Zonya the Sadist
+				["provider"] = { "n", 66136 },	-- Analynn
+				["coord"] = { 20.2, 29.5, ASHENVALE },
+				["races"] = HORDE_ONLY,
+				["sourceQuests"] = { 31814 },	-- Analynn
+				["g"] = {
+					i(89125),	-- Sack of Pet Supplies
+				},
+			}),
+			q(31817, {	-- Merda Stronghoof
+				["provider"] = { "n", 66137 },	-- Zonya the Sadist
+				["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(89125),	-- Sack of Pet Supplies
+				},
+			}),
+			q(31870, {	-- Cassandra Kaboom
+				["provider"] = { "n", 66372 },	-- Merda Stronghoof
+				["coord"] = { 57.2, 45.8, DESOLACE },
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(89125),	-- Sack of Pet Supplies
+				},
+			}),
+			q(31918, {	-- A Tamer's Homecoming
+				["provider"] = { "n", 66422 },	-- Cassandra Kaboom
+				["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
+				["races"] = HORDE_ONLY,
+			}),
+			q(31897, {	-- Grand Master Trixxy
+				["provider"] = { "n", 66466 },	-- Grand Master Trixxy
+				["coord"] = { 65.6, 64.5, WINTERSPRING },
+				["groups"] = {
+					i(89125),	-- Sack of Pet Supplies
+				},
+			}),
+			q(31977, {	-- The Returning Champion
+				["provider"] = { "n", 66466 },	-- Stone Cold Trixxy
+				["coord"] = { 65.6, 64.4, WINTERSPRING },
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+				["altQuests"] = { 31980 },	-- The Returning Champion (Deadwind Pass)
+			}),
+			q(31975, {	-- The Returning Champion
+				["provider"] = { "n", 66466 },	-- Stone Cold Trixxy
+				["coord"] = { 65.6, 64.4, WINTERSPRING },
+				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
+				["altQuests"] = { 31976 },	-- The Returning Champion (Deadwind Pass)
+			}),
+			
+			
+			-- Cata
+			q(31970, {	-- Grand Master Obalis
+				["provider"] = { "n", 66824 },	-- Obalis
+				["coord"] = { 56.6, 41.8, 249 },
+				["g"] = {
+					i(89125),	-- Sack of Pet Supplies
+				},
+			}),
+			q(31985, {	-- The Triumphant Return
+				["provider"] = { "n", 66824 },	-- Obalis
+				["coord"] = { 56.6, 41.8, 249 },
+				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
+			}),
+			q(31986, {	-- The Triumphant Return
+				["provider"] = { "n", 66824 },	-- Obalis
+				["coord"] = { 56.6, 41.8, 249 },
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+			}),
 			
 			
 			
-			
-			
-			
-			
+			-- Daily Quests
+			q(31854, {	-- Analynn
+				["provider"] = { "n", 66136 },	-- Analynn
+				["coord"] = { 20.2, 29.5, ASHENVALE },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+				["sourceQuests"] = { 31814 },	-- Analynn
+			}),
+			q(31904, {	-- Cassandra Kaboom
+				["provider"] = { "n", 66422 },	-- Cassandra Kaboom
+				["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+			}),
+			q(31819, {	-- Dagra the Fierce
+				["provider"] = { "n", 66135 },	-- Dagra the Fierce
+				["coord"] = { 58.6, 53.0, NORTHERN_BARRENS },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+			}),
+			q(31908, {	-- Elena Flutterfly
+				["provider"] = { "n", 66412 },	-- Elena Flutterfly
+				["coord"] = { 46.0, 60.4, MOONGLADE },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+			}),
+			q(31909, {	-- Grand Master Trixxy
+				["provider"] = { "n", 66466 },	-- Grand Master Trixxy
+				["coord"] = { 65.6, 64.5, WINTERSPRING },
+				["isDaily"] = true,
+				["groups"] = {
+					i(89125),	-- Sack of Pet Supplies
+				},
+			}),
+			q(31905, {	-- Grazzle the Great
+				["provider"] = { "n", 66436 },	-- Grazzle the Great
+				["coord"] = { 53.8, 74.8, DUSTWALLOW_MARSH },
+				["isDaily"] = true,
+			}),
+			q(31906, {	-- Kela Grimtotem
+				["provider"] = { "n", 66452 },	-- Kela Grimtotem
+				["coord"] = { 31.8, 32.8, THOUSAND_NEEDLES },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+			}),
+			q(31872, {	-- Merda Stronghoof
+				["provider"] = { "n", 66372 },	-- Merda Stronghoof
+				["coord"] = { 57.2, 45.8, DESOLACE },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+			}),
+			q(31871, {	-- Traitor Gluk
+				["provider"] = { "n", 66352 },	-- Traitor Gluk
+				["coord"] = { 59.6, 49.6, FERALAS },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+			}),
+			q(31862, {	-- Zonya the Sadist
+				["provider"] = { "n", 66137 },	-- Zonya the Sadist
+				["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+			}),
+			q(31907, {	-- Zoltan
+				["provider"] = { "n", 66442 },	-- Zoltan
+				["coord"] = { 40.0, 56.6, FELWOOD },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+			}),
+			q(31818, {	-- Zunta
+				["provider"] = { "n", 66126 },	-- Zunta
+				["coord"] = { 43.9, 28.9, DUROTAR },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+			}),
+			-- Cata
+			q(31972, {	-- Brok
+				["provider"] = { "n", 66819 },	-- Brok
+				["coord"] = { 61.4, 32.7, MOUNT_HYJAL },
+				["isDaily"] = true,
+			}),
+			q(31971, {	-- Grand Master Obalis
+				["provider"] = { "n", 66824 },	-- Obalis
+				["coord"] = { 56.6, 41.8, 249 },
+				["isDaily"] = true,
+				["g"] = {
+					i(89125),	-- Sack of Pet Supplies
+				},
+			}),
 			-- PvP Weekly
 			pvp(q(32863, {	-- What We've Been Training For
 				["provider"] = { "n", 63596 },	-- Audrey Burnhelp

@@ -23,12 +23,6 @@ _.Zones =
 					["crs"] = { 68805 },	-- Stunted Yeti
 					["description"] = "Can be found near Feral Scar Yetis south of Dire Maul.",
 				}),
-				q(31871, {	-- Traitor Gluk
-					["provider"] = { "n", 66352 },	-- Traitor Gluk
-					["coord"] = { 59.6, 49.6, FERALAS },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),

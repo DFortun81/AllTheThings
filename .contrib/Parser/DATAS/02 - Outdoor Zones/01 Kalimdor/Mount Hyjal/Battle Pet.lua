@@ -46,11 +46,6 @@ _.Zones =
 					["crs"] = { 62118 },	-- Twilight Beetle
 					["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
 				}),
-				q(31972, {	-- Brok
-					["provider"] = { "n", 66819 },	-- Brok
-					["coord"] = { 61.4, 32.7, MOUNT_HYJAL },
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),

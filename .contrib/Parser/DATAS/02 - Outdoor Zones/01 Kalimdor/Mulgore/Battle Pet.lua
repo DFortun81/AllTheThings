@@ -18,54 +18,6 @@ _.Zones =
 				p(378, {	-- Rabbit
 					["crs"] = { 61080 },	-- Rabbit
 				}),
-				n(63067, {	-- Naleen
-					["coord"] = { 49.2, 56.1, MULGORE },
-					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
-					["g"] = {
-						p(75, {	-- Black Kingsnake
-							["races"] = { ORC, TROLL },
-						}),
-						p(70, {	-- Brown Prarie Dog
-							["races"] = { TAUREN },
-						}),
-						p(142, {	-- Golden Dragonhawk Hatchling
-							["races"] = { BLOODELF },
-						}),
-						p(792, {	-- Jade Crane Chick
-							["races"] = { PANDAREN_HORDE },
-						}),
-						p(629, {	-- Shore Crawler
-							["races"] = { GOBLIN },
-						}),
-						p(55, {	-- Undercity Cockroach
-							["races"] = { UNDEAD },
-						}),
-					},
-				}),
-				q(31575, {	-- Got One!
-					["provider"] = { "n", 63067 },	-- Naleen
-					["coord"] = { 49.2, 56.1, MULGORE },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 31831,	-- Level Up!
-				}),
-				q(31573, {	-- Learning the Ropes
-					["provider"] = { "n", 63067 },	-- Naleen
-					["coord"] = { 49.2, 56.1, MULGORE },
-					["races"] = HORDE_ONLY,
-					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
-				}),
-				q(31831, {	-- Level Up!
-					["provider"] = { "n", 63067 },	-- Naleen
-					["coord"] = { 49.2, 56.1, MULGORE },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 31574,	-- On The Mend
-				}),
-				q(31574, {	-- On The Mend
-					["provider"] = { "n", 63067 },	-- Naleen
-					["coord"] = { 49.2, 56.1, MULGORE },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 31573,	-- Learning the Ropes
-				}),
 			}),
 		}),
 	}),

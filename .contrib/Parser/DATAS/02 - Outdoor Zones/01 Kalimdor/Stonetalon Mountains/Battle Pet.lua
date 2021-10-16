@@ -35,21 +35,6 @@ _.Zones =
 					["crs"] = { 62191 },	-- Venomspitter Hatchling
 					["description"] = "Can be found south of Windshear Hold in Webwinder Hollow with larger spiders.",
 				}),
-				q(31817, {	-- Merda Stronghoof
-					["provider"] = { "n", 66137 },	-- Zonya the Sadist
-					["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31862, {	-- Zonya the Sadist
-					["provider"] = { "n", 66137 },	-- Zonya the Sadist
-					["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),

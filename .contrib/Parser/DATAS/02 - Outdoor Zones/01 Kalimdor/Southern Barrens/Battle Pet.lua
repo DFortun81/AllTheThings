@@ -27,17 +27,6 @@ _.Zones =
 				p(419, {	-- Small Frog
 					["crs"] = { 61071 },	-- Small Frog
 				}),
-				q(31918, {	-- A Tamer's Homecoming
-					["provider"] = { "n", 66422 },	-- Cassandra Kaboom
-					["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
-					["races"] = HORDE_ONLY,
-				}),
-				q(31904, {	-- Cassandra Kaboom
-					["provider"] = { "n", 66422 },	-- Cassandra Kaboom
-					["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),

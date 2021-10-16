@@ -25,11 +25,6 @@ _.Zones =
 				p(420, {	-- Toad
 					["crs"] = { 61369 },	-- Toad
 				}),
-				q(31905, {	-- Grazzle the Great
-					["provider"] = { "n", 66436 },	-- Grazzle the Great
-					["coord"] = { 53.8, 74.8, DUSTWALLOW_MARSH },
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),

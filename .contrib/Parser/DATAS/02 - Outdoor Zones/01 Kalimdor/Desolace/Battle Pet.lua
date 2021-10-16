@@ -43,20 +43,6 @@ _.Zones =
 				p(480, {	-- Topaz Shale Hatchling
 					["crs"] = { 62181 },	-- Topaz Shale Hatchling
 				}),
-				q(31870, {	-- Cassandra Kaboom
-					["provider"] = { "n", 66372 },	-- Merda Stronghoof
-					["coord"] = { 57.2, 45.8, DESOLACE },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31872, {	-- Merda Stronghoof
-					["provider"] = { "n", 66372 },	-- Merda Stronghoof
-					["coord"] = { 57.2, 45.8, DESOLACE },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),
