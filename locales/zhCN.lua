@@ -212,6 +212,8 @@ local L = app.L;
 	L.REFRESHING_COLLECTION = "刷新收集...";
 	L.DONE_REFRESHING = "刷新收集完成.";
 	--TODO: L.ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
+	--TODO: L.REQUIRES_PVP = "|CFF00FFDEThis Thing requires Player vs Player activities or a currency related to those activities.|r";
+	--TODO: L.REQUIRES_PETBATTLES = "|CFF00FFDEThis Thing requires Pet Battling.|r";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "物品过滤";
@@ -243,9 +245,9 @@ local L = app.L;
 		-- Mod Title
 			L.MODE = "模式";
 			L.TITLE_COMPLETIONIST = "完美主义 ";
-			L.TITLE_UNIQUE_APPEARANCE = "独特外观 ";
+			L.TITLE_UNIQUE_APPEARANCE = "独特外观 ";	-- TODO: Unique
 			L.TITLE_DEBUG = "调试 ";
-			L.TITLE_ACCOUNT = "战网 ";
+			L.TITLE_ACCOUNT = "|cff00AB00战网|R ";
 			L.TITLE_MAIN_ONLY = " (仅自己)";
 			--TODO: L.TITLE_NONE_THINGS = "None of the Things ";
 			L.TITLE_ONLY = " 仅 ";

@@ -210,6 +210,8 @@ local L = app.L;
 	L.REFRESHING_COLLECTION = "Обновление коллекции...";
 	L.DONE_REFRESHING = "Коллекция обновлена.";
 	L.ADHOC_UNIQUE_COLLECTED_INFO = "Этот Предмет сломан в ATT из-за отсутствующей информации от Blizzard. Можно поправить, если вручную обновить коллекцию (Shift+Клик на окне ATT).";
+	L.REQUIRES_PVP = "|CFF00FFDEЭта Штучка требует участия в ПвП или ПвП валюту.|r";
+	L.REQUIRES_PETBATTLES = "|CFF00FFDEЭта Штучка требует игру с Боевыми Питомцами.|r";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";
@@ -241,9 +243,9 @@ local L = app.L;
 		-- Mod Title
 			L.MODE = "Режим";
 			L.TITLE_COMPLETIONIST = "Коллекционера ";
-			L.TITLE_UNIQUE_APPEARANCE = "Уникальных Обликов ";
+			L.TITLE_UNIQUE_APPEARANCE = "Уникальный ";
 			L.TITLE_DEBUG = "Отладки ";
-			L.TITLE_ACCOUNT = "Учётной Записи ";
+			L.TITLE_ACCOUNT = "|cff00AB00Учётной Записи|R ";
 			L.TITLE_MAIN_ONLY = " (Основного Персонажа)";
 			L.TITLE_NONE_THINGS = "Без Штучек ";
 			L.TITLE_ONLY = "";

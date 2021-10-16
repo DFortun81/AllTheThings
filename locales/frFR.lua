@@ -209,6 +209,8 @@ local L = app.L;
 	--TODO: L.REFRESHING_COLLECTION = "Refreshing collection...";
 	--TODO: L.DONE_REFRESHING = "Done refreshing collection.";
 	--TODO: L.ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
+	--TODO: L.REQUIRES_PVP = "|CFF00FFDEThis Thing requires Player vs Player activities or a currency related to those activities.|r";
+	--TODO: L.REQUIRES_PETBATTLES = "|CFF00FFDEThis Thing requires Pet Battling.|r";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -240,9 +242,9 @@ local L = app.L;
 		-- Mod Title
 			--TODO: L.MODE = "Mode";
 			--TODO: L.TITLE_COMPLETIONIST = "Completionist ";
-			--TODO: L.TITLE_UNIQUE_APPEARANCE = "Unique Appearance ";
+			--TODO: L.TITLE_UNIQUE_APPEARANCE = "Unique ";
 			--TODO: L.TITLE_DEBUG = "Debug ";
-			--TODO: L.TITLE_ACCOUNT = "Account ";
+			--TODO: L.TITLE_ACCOUNT = "|cff00AB00Account|R ";
 			--TODO: L.TITLE_MAIN_ONLY = " (Main Only)";
 			--TODO: L.TITLE_NONE_THINGS = "None of the Things ";
 			--TODO: L.TITLE_ONLY = " Only ";
