@@ -6,8 +6,8 @@ _.Achievements =
 {
 	n(-9963, {	-- Pet Battles
 		n(-10027, {	-- Collect
-			ach(7465),		-- An Uncommon Find*
-			ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)
+			petbattle(ach(7465)),		-- An Uncommon Find*
+			petbattle(ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)
 				i(163634),		-- Dreadtick Leecher
 				crit(1),		-- Shadowback Crawler
 				crit(2),		-- River Frog
@@ -36,8 +36,8 @@ _.Achievements =
 				crit(25),		-- Hermit Crab
 				crit(26),		-- Coastal Bounder
 				crit(27),		-- Honey Bee
-			}),
-			ach(11233, {	-- Broken Isles Safari*
+			})),
+			petbattle(ach(11233, {	-- Broken Isles Safari*
 				i(141352),		-- Rescued Fawn
 				crit(1),		-- Albatross Chick (Azsuna, Stormheim)
 				crit(2),		-- Fledgling Kingfeather (Azsuna)
@@ -74,21 +74,21 @@ _.Achievements =
 				crit(33),		-- Coastal Sandpiper (Azsuna, Suramar, Eye of Azshara)
 				crit(34),		-- Blind Rat (Dalaran)
 				crit(35),		-- Stormstruck Beaver (Stormheim)
-			}),
-			ach(8519, {		-- Celestial Family*
+			})),
+			petbattle(ach(8519, {		-- Celestial Family*
 				crit(1),		-- Xu-Fu, Cub of Xuen
 				crit(2),		-- Chi-Chi, Hatchling of Chi-Ji
 				crit(3),		-- Yu'la, Broodling of Yu'lon
 				crit(4),		-- Zao, Calfling of Niuzao
-			}),
-			ach(6611, {		-- Continental Tamer*
+			})),
+			petbattle(ach(6611, {		-- Continental Tamer*
 				crit(1),		-- Outland Tamer
 				crit(2),		-- Kalimdor Tamer
 				crit(3),		-- Northrend Tamer
 				crit(4),		-- Eastern Kingdoms Tamer
 				crit(5),		-- Pandaria Tamer
-			}),
-			ach(8397, {		-- Crazy for Cats* (need to add locations to comments for future use - wowhead did not link)
+			})),
+			petbattle(ach(8397, {		-- Crazy for Cats* (need to add locations to comments for future use - wowhead did not link)
 				title_gendered(252, 240),	-- the Crazy Cat Man / the Crazy Cat Lady
 				crit(1),		-- Black Tabby Cat
 				crit(2),		-- Bombay Cat
@@ -116,8 +116,8 @@ _.Achievements =
 				crit(24),		-- White Kitten
 				crit(25),		-- Winterspring Cub
 				crit(26),		-- Xu-Fu, Cub of Xuen
-			}),
-			ach(9685, {		-- Draenor Safari*
+			})),
+			petbattle(ach(9685, {		-- Draenor Safari*
 				i(111866),		-- Royal Peacock
 				crit(1),		-- Amberbarb Wasp (Gorgrond)
 				crit(2),		-- Axebeak Hatchling (Gorgrond)
@@ -144,8 +144,8 @@ _.Achievements =
 				crit(23),		-- Waterfly (Shadowmoon Valley, Talador, Spires of Arak, Tanaan Jungle)
 				crit(24),		-- Wood Wasp (Gorgrond)
 				crit(25),		-- Zangar Crawler (Shadowmoon Valley, Spires of Arak)
-			}),
-			ach(6613, {		-- Eastern Kingdoms Tamer*
+			})),
+			petbattle(ach(6613, {		-- Eastern Kingdoms Tamer*
 				crit(1),		-- Arathi Highlands
 				crit(2),		-- Badlands
 				crit(3),		-- Blasted Lands
@@ -170,8 +170,8 @@ _.Achievements =
 				crit(22),		-- Western Plaguelands
 				crit(23),		-- Westfall
 				crit(24),		-- Wetlands
-			}),
-			ach(6608, {		-- Family Reunion*
+			})),
+			petbattle(ach(6608, {		-- Family Reunion*
 				crit(1),		-- Humanoid
 				crit(2),		-- Dragonkin
 				crit(3),		-- Undead
@@ -182,9 +182,9 @@ _.Achievements =
 				crit(8),		-- Beast
 				crit(9),		-- Aquatic
 				crit(10),		-- Mechanical
-			}),
-			ach(13715),	-- From The Belly Of The Jelly
-			ach(6612, {		-- Kalimdor Tamer*
+			})),
+			petbattle(ach(13715)),	-- From The Belly Of The Jelly
+			petbattle(ach(6612, {		-- Kalimdor Tamer*
 				crit(1),		-- Ashenvale
 				crit(2),		-- Azshara
 				crit(1),		-- Blade's Edge Mountains
@@ -207,8 +207,8 @@ _.Achievements =
 				crit(19),		-- Uldum
 				crit(20),		-- Un'Goro Crater
 				crit(21),		-- Winterspring
-			}),
-			ach(12958, {	-- Master of Minions (1000) *
+			})),
+			petbattle(ach(12958, {	-- Master of Minions (1000) *
 				i(163218),		-- Hearthy
 				ach(12992, {	-- Pet Emporium
 					i(163220),		-- Rooter
@@ -240,8 +240,8 @@ _.Achievements =
 				ach(1248),		-- Plethora of Pets (25)
 				ach(15),		-- Plenty of Pets (15)
 				ach(1017),		-- Can I Keep Him? (1)
-			}),
-			ach(13693, {	-- Mecha-Safari
+			})),
+			petbattle(ach(13693, {	-- Mecha-Safari
 				crit(1),	-- Junkheap Roach
 				crit(2),	-- Fleeting Frog
 				crit(3),	-- Mechagon Marmot
@@ -254,8 +254,8 @@ _.Achievements =
 				crit(10),	-- Experimental Roach
 				crit(11),	-- Specimen 97
 				crit(12),	-- Malfunctioning Microbot
-			}),
-			ach(13694, {	-- Nazjatari Safari
+			})),
+			petbattle(ach(13694, {	-- Nazjatari Safari
 				crit(1),	-- Spireshell Snail
 				crit(2),	-- Muck Slug
 				crit(3),	-- Sandclaw Sunshell
@@ -267,8 +267,8 @@ _.Achievements =
 				crit(9),	-- Hissing Chitterspine
 				crit(10),	-- Great Sea Albatross
 				crit(11),	-- Bloodseeker
-			}),
-			ach(6615, {		-- Northrend Tamer*
+			})),
+			petbattle(ach(6615, {		-- Northrend Tamer*
 				crit(1),		-- Borean Tundra
 				crit(2),		-- Crystalsong Forest
 				crit(3),		-- Dragonblight
@@ -278,16 +278,16 @@ _.Achievements =
 				crit(7),		-- Sholazar Basin
 				crit(8),		-- The Storm Peaks
 				crit(9),		-- Zul'Drak
-			}),
-			ach(6614, {		-- Outland Tamer*
+			})),
+			petbattle(ach(6614, {		-- Outland Tamer*
 				crit(2),		-- Hellfire Peninsula
 				crit(3),		-- Nagrand
 				crit(4),		-- Netherstorm
 				crit(5),		-- Shadowmoon Valley
 				crit(6),		-- Terokkar Forest
 				crit(7),		-- Zangarmarsh
-			}),
-			ach(6616, {		-- Pandaria Tamer*
+			})),
+			petbattle(ach(6616, {		-- Pandaria Tamer*
 				crit(1),		-- Dread Wastes
 				crit(2),		-- The Jade Forest
 				crit(3),		-- Krasarang Wilds
@@ -295,11 +295,11 @@ _.Achievements =
 				crit(5),		-- Townlong Steppes
 				crit(6),		-- Vale of Eternal Blossoms
 				crit(7),		-- Valley of the Four Winds
-			}),
-			ach(7464, {		-- Quality & Quantity* (50)
+			})),
+			petbattle(ach(7464, {		-- Quality & Quantity* (50)
 				ach(7463),		-- High Quality (10)
 				ach(7462),		-- A Rare Catch (1)
-			}),
+			})),
 			ach(7934, {		-- Raiding with Leashes*
 				i(93031),		-- Mr. Bigglesworth
 				crit(1),		-- Mini Mindslayer (Temple of Ahn'Qiraj - The Prophet Skeram)
@@ -394,7 +394,7 @@ _.Achievements =
 				crit(10),	-- Living Amber			( HoF  — Amber-Shaper Un'sok )
 				crit(11),	-- Ravenous Prideling	( HoF  — Grand Empress Shek'zeer )
 			}),
-			ach(14867, {	-- Shadowlands Safari
+			petbattle(ach(14867, {	-- Shadowlands Safari
 				crit(1),		-- Animared Cruor
 				crit(2),		-- Bleak Skitterer
 				crit(3),		-- Clutch
@@ -420,9 +420,9 @@ _.Achievements =
 				crit(23),		-- Decay Grub
 				crit(24),		-- Starmoth
 				crit(25),		-- Crawbat
-			}),
-			ach(6571),		-- That Was Close!*
-			ach(6590, {		-- World Safari*
+			})),
+			petbattle(ach(6571)),		-- That Was Close!*
+			petbattle(ach(6590, {		-- World Safari*
 				title(199),		-- Zookeeper
 				ach(6586, {		-- Eastern Kingdoms Safari*
 					crit(1),		-- Adder (Northern Barrens, Southern Barrens, Durotar, Hellfire Peninsula, Nagrand (Outland), Spires of Arak, Valley of Trials, Nagrand (Draenor), Blasted Lands)
@@ -735,15 +735,15 @@ _.Achievements =
 					crit(54),		-- Yakrat (Townlong Steppes)
 					crit(55),		-- Zooey Snake (Kun-Lai Summit)
 				}),
-			}),
-			ach(7436, {		-- Zen Pet Hunter (200)*
+			})),
+			petbattle(ach(7436, {		-- Zen Pet Hunter (200)*
 				ach(6557),		-- Master Pet Hunter (100)
 				ach(6556, {		-- Going to Need More Traps (50)
 					pa(77),			-- Strong Trap
 				}),
 				ach(6555),		-- Building a Team (25)
 				ach(6554),		-- He's Mine! (10)
-			}),
+			})),
 			-- PTR - TODO: merge into regular achievement list, figure out what zone or w/e this belongs in
 			ach(15004, {	-- A Sly Fox
 				i(186539),	-- Sly

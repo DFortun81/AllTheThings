@@ -1957,6 +1957,7 @@ app.L = {
 		[-694] = select(2, GetAchievementInfo(14973)),							-- Unchained Gladiator: Shadowlands Season 2
 	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
+		[-795] = "Pet Battle Dungeons",											-- Pet Battle Dungeons
 		[-796] = BATTLE_PET_SOURCE_5,											-- Pet Battle
 		[-797] = PET_JOURNAL,													-- Pet Journal
 	-- Toys

@@ -4,7 +4,7 @@
 
 _.BattlePets =
 {
-	petbattle(n(PET_JOURNAL,	{
+	n(PET_JOURNAL,	{
 		pa(240, {	-- Aquatic
 			p(2403),	-- Abyssal Eel
 			p(2678),	-- Abyssal Slitherling
@@ -192,5 +192,5 @@ _.BattlePets =
 			p(2392),	-- Young Sand Sifteeer
 			p(1582),	-- Zangar Crawler
 		}),
-	})),
+	}),
 };

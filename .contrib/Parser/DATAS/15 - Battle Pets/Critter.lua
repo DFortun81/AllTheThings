@@ -4,7 +4,7 @@
 
 _.BattlePets =
 {
-	petbattle(n(PET_JOURNAL,	{
+	n(PET_JOURNAL,	{
 		pa(236, {	-- Critter
 			p(487),		-- Alpine Chipmunk
 			p(441),		-- Alpine Hare
@@ -227,5 +227,5 @@ _.BattlePets =
 			}),
 			p(1903),	-- Zoom
 		}),
-	})),
+	}),
 };

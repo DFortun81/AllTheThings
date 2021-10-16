@@ -5,7 +5,7 @@
 _.BattlePets =
 {
 	petbattle(n(PET_BATTLE,	{
-		n(QUESTS, {
+		n(-795, {	-- Pet Battle Dungeons
 			q(33137, {	-- The Celestial Tournament
 				["provider"] = { "n", 73082 },	-- Master Li
 				["coord"] = { 34.8, 59.6, TIMELESS_ISLE },

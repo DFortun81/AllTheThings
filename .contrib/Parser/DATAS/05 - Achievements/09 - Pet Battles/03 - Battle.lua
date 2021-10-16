@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9963, {	-- Pet Battles
-		n(-10028, {	-- Battle
+		petbattle(n(-10028, {	-- Battle
 			ach(14881, {	-- Abhorrent Adversaries of the Afterlife
 				i(184512),	-- Winterleaf Spriggan
 				crit(1,  {	-- Crystalsnap
@@ -493,18 +493,18 @@ _.Achievements =
 				crit(3),	-- Undercity
 				crit(4),	-- Silvermoon City
 			}),
-			ach(8301,  {	-- Deadly Pet Brawler (1000)
+			pvp(ach(8301,  {	-- Deadly Pet Brawler (1000)
 				title(227),	-- Trainer
 				ach(8300, {	-- Brutal Pet Brawler (250)
 					i(94191),	-- Stunted Direhorn
 				}),
 				ach(8298),	-- Vengeful Pet Brawler (50)
 				ach(8297),	-- Merciless Pet Brawler (10)
-			}),
+			})),
 			ach(9463,  {	-- Draenic Pet Battler
 				i(111999),	-- Menagerie, Level 3 [Blueprints]
 			}),
-			ach(13279, {	-- Family Battler
+			pvp(ach(13279, {	-- Family Battler
 				i(165907),	-- Wicker Wraith
 				ach(13280, {	-- Hobbyist Aquarist
 					crit(1),	-- Captain Hermes
@@ -716,7 +716,7 @@ _.Achievements =
 					crit(18),	-- Talia Sparkbrow
 					crit(19),	-- Zujai
 				}),
-			}),
+			})),
 			ach(12290, {	-- Family Brawler
 				i(156666),	-- Master Trainer's Tabard
 				ach(12279),	-- Mechanical Brawler
@@ -1875,12 +1875,12 @@ _.Achievements =
 				ach(6593),	-- Experienced Pet Battler (50)
 				ach(6594),	-- Cat Fight! (10)
 			}),
-			ach(6599, {	-- Legendary Pet Brawler (5000)
+			pvp(ach(6599, {	-- Legendary Pet Brawler (5000)
 				ach(6598),	-- Grand Master Pet Brawler (1000)
 				ach(6597),	-- Master Pet Brawler (250)
 				ach(6596),	-- Experienced Pet Brawler (50)
 				ach(6595),	-- Pet Brawler (10)
-			}),
+			})),
 			ach(13766, {	-- Malowned
 				i(170102),	-- Burnout
 			}),
@@ -1923,7 +1923,7 @@ _.Achievements =
 				crit(11),	-- Frenzied Knifefang
 				crit(12),	-- Giant Opaline Conch
 			}),
-			ach(6620),	-- No Time To Heal
+			pvp(ach(6620)),	-- No Time To Heal
 			ach(6851, {	-- Take 'Em All On!
 				crit(1),	-- Aquatic
 				crit(2),	-- Beast
@@ -2028,6 +2028,6 @@ _.Achievements =
 				ach(6559),	-- Traveling Pet Mauler (30)
 				ach(6558),	-- Local Pet Mauler (10)
 			}),
-		}),
+		})),
 	}),
 };

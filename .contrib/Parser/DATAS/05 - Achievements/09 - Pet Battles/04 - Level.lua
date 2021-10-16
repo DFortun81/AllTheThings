@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9963, {	-- Pet Battles
-		n(-10029, {	-- Level
+		petbattle(n(-10029, {	-- Level
 			ach(6570, {	-- All Growns Up! (Lvl 25)
 				ach(6569),	-- Old Timer (Lvl 20)
 				ach(6568),	-- Time for a Leash (15)
@@ -34,6 +34,6 @@ _.Achievements =
 				ach(6579),	-- Rookie Pet Group (15)
 			}),
 			ach(9070),	-- Overstuffed
-		}),
+		})),
 	}),
 };

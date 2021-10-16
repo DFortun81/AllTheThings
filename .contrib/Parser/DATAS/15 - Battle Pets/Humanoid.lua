@@ -4,7 +4,7 @@
 
 _.BattlePets =
 {
-	petbattle(n(PET_JOURNAL,	{
+	n(PET_JOURNAL,	{
 		pa(238, {	-- Humanoid
 			p(2755),	-- Adventurous Hopling
 			p(1918, {	-- Alliance Enthusiast (Alliance)
@@ -183,5 +183,5 @@ _.BattlePets =
 			p(1887),	-- Wyrmy Tunkins
 			p(2680),	-- Zanj'ir Poker
 		}),
-	})),
+	}),
 };
