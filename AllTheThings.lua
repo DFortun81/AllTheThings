@@ -3953,9 +3953,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if group.u and (not group.crs or group.itemID or group.s) then
 		tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2] });
 	end
-	-- TODO: probably re-design this once it's no longer considered an unobtainable filter completely
+	-- Pet Battles
+	if group.pb then
+		tinsert(info, { left = L["REQUIRES_PETBATTLES"] });
+	end
+	-- PvP
 	if group.pvp then
-		tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][12][2] });
+		tinsert(info, { left = L["REQUIRES_PVP"] });
 	end
 	if paramA == "itemID" and paramB == 137642 then
 		if app.Settings:GetTooltipSetting("SummarizeThings") then
@@ -14158,10 +14162,13 @@ RowOnEnter = function (self)
 			if reference.u then
 				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
 			end
+			-- Pet Battles
+			if reference.pb then
+				GameTooltip:AddLine(L["REQUIRES_PETBATTLES"], 1, 1, 1, 1, true);
+			end
 			-- PvP
 			if reference.pvp then
-				-- TODO: probably re-design this once it's no longer considered an unobtainable filter completely
-				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][12][2], 1, 1, 1, 1, true);
+				GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true);
 			end
 		end
 

@@ -458,12 +458,8 @@ namespace ATT
                     case "isToy":
                     case "ignoreBonus":
                     case "ignoreSource":
-					case "petBattle":
-						{
-                            item[field] = Convert.ToBoolean(value);
-                            break;
-                        }
                     case "pvp":
+                    case "pb":
                         {
                             item[field] = Convert.ToBoolean(value);
                             break;
