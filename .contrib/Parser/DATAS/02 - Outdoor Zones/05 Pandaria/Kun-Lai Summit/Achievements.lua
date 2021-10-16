@@ -69,11 +69,21 @@ _.Zones =
 							["coord"] = { 74.6, 74.8, 381 },
 							["icon"] = "Interface\\Icons\\inv_misc_treasurechest01a",
 							["g"] = {
-								i(86223),	-- Agile Sprite Cloak
-								i(86222),	-- Precise Sprite Cloak
-								i(86225),	-- Strong Sprite Cloak
-								i(86221),	-- Wise Sprite Cloak
-								i(86224),	-- Steadfast Sprite Cape
+								i(86223, {	-- Agile Sprite Cloak
+									["description"] = "Can only be looted with an Agility Loot Spec.",
+								}),
+								i(86222, {	-- Precise Sprite Cloak
+									["description"] = "Can only be looted as Mage or Warlock.",
+								}),
+								i(86225, {	-- Strong Sprite Cloak
+									["description"] = "Can only be looted as Plate in DPS Loot Spec.",
+								}),
+								i(86221, {	-- Wise Sprite Cloak
+									["description"] = "Can only be looted as Priest or Druid/Shaman in Balance-/Elemental- or Resto Loot Spec.",
+								}),
+								i(86224, {	-- Steadfast Sprite Cape
+									["description"] = "Can only be looted with a Tank Loot Spec.",
+								}),
 							},
 						}),
 						o(213842, {	-- Stash of Yaungol Weapons
