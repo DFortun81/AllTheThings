@@ -122,6 +122,8 @@ local GeneralSettingsBase = {
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
 		["Skip:AutoRefresh"] = false,
+		["Show:PetBattles"] = true,
+		["Hide:PvP"] = false,
 	},
 };
 local FilterSettingsBase = {};
@@ -433,9 +435,11 @@ end
 settings.NonInsane = function(self)
 	return
 	-- Hiding BoE's
-	self:Get("Hide:BoEs") or
+	self:Get("Hide:BoEs")
 	-- Hiding PvP
-	self:Get("Hide:PvP")
+	or self:Get("Hide:PvP")
+	-- Hiding Pet Battles
+	or not self:Get("Show:PetBattles")
 	-- Non-Account Mode with Covenants filtered
 	or (not self:Get("AccountMode")
 		and (not self:GetFilter("CC:SL_COV_KYR")
@@ -879,6 +883,11 @@ settings.UpdateMode = function(self, doRefresh)
 		app.PvPFilter = app.FilterItemClass_PvP;
 	else
 		app.PvPFilter = app.NoFilter;
+	end
+	if self:Get("Show:PetBattles") then
+		app.PetBattleFilter = app.NoFilter;
+	else
+		app.PetBattleFilter = app.FilterItemClass_PetBattles;
 	end
 	app:UnregisterEvent("PLAYER_LEVEL_UP");
 	if self:Get("Filter:ByLevel") and not self:Get("DebugMode") then
@@ -2397,45 +2406,23 @@ end);
 FilterThingsByLevelCheckBox:SetATTTooltip(L["FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP"]);
 FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", IgnoreFiltersForBoEsCheckBox, "BOTTOMLEFT", -8, 4);
 
--- local FilterNewPlayerExperienceCheckBox = child:CreateCheckBox("|T"..("Interface\\Icons\\achievement_newplayerexperience.blp")..":0|t |cffADD8E6New Player Experience", -- Add locale
--- function(self)
--- 	self:SetChecked(settings:GetFilter("CC:NPE"));
--- end,
--- function(self)
--- 	settings:SetFilter("CC:NPE", self:GetChecked());
--- 	settings:UpdateMode(1);
--- end);
--- FilterNewPlayerExperienceCheckBox:SetATTTooltip(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"]);
--- FilterNewPlayerExperienceCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEFT", 0, 4);
-
--- local FilterShadowlandsSkipCheckBox = child:CreateCheckBox("|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6Shadowlands Skip", -- Add locale
--- function(self)
--- 	self:SetChecked(settings:GetFilter("CC:SL_SKIP"));
--- end,
--- function(self)
--- 	settings:SetFilter("CC:SL_SKIP", self:GetChecked());
--- 	settings:UpdateMode(1);
--- end);
--- FilterShadowlandsSkipCheckBox:SetATTTooltip(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"]);
--- FilterShadowlandsSkipCheckBox:SetPoint("TOPLEFT", FilterNewPlayerExperienceCheckBox, "BOTTOMLEFT", 0, 4);
-
--- local FilterCovenantsCheckBox = child:CreateCheckBox("|T"..app.asset("Expansion_SL")..":0|t |cffADD8E6Covenants", -- Add locale
--- function(self)
--- 	self:SetChecked(settings:GetFilter("Filter:Covenants"));
--- 	if settings:Get("AccountMode") then
--- 		self:Disable();
--- 		self:SetAlpha(0.2);
--- 	else
--- 		self:Enable();
--- 		self:SetAlpha(1);
--- 	end
--- end,
--- function(self)
--- 	settings:SetFilter("Filter:Covenants", self:GetChecked());
--- 	settings:UpdateMode(1);
--- end);
--- FilterCovenantsCheckBox:SetATTTooltip(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"]);
--- FilterCovenantsCheckBox:SetPoint("TOPLEFT", FilterShadowlandsSkipCheckBox, "BOTTOMLEFT", 0, 4);
+local HidePetBattlesCheckBox = child:CreateCheckBox(L["SHOW_PET_BATTLES_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Show:PetBattles"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Show:PetBattles", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+HidePetBattlesCheckBox:SetATTTooltip(L["SHOW_PET_BATTLES_CHECKBOX_TOOLTIP"]);
+HidePetBattlesCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEFT", 0, 4);
 
 local HidePvPItemsCheckBox = child:CreateCheckBox(L["HIDE_PVP_CHECKBOX"],
 function(self)
@@ -2453,8 +2440,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 HidePvPItemsCheckBox:SetATTTooltip(L["HIDE_PVP_CHECKBOX_TOOLTIP"]);
---HidePvPItemsCheckBox:SetPoint("TOPLEFT", FilterCovenantsCheckBox, "BOTTOMLEFT", 0, 4);
-HidePvPItemsCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEFT", 0, 4);
+HidePvPItemsCheckBox:SetPoint("TOPLEFT", HidePetBattlesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local CustomCollectFilterLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 CustomCollectFilterLabel:SetPoint("TOP", HidePvPItemsCheckBox, "BOTTOM", 0, -8);

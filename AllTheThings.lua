@@ -11619,6 +11619,7 @@ function app.FilterItemClass(item)
 	if app.UnobtainableItemFilter(item)
 		and app.SeasonalItemFilter(item)
 		and app.PvPFilter(item)
+		and app.PetBattleFilter(item)
 		and app.RequireFactionFilter(item) then
 		-- BoE can skip Character trait filters
 		if app.ItemBindFilter(item) then return true; end
@@ -11637,6 +11638,7 @@ function app.FilterItemClass_IgnoreBoEFilter(item)
 	if app.UnobtainableItemFilter(item)
 		and app.SeasonalItemFilter(item)
 		and app.PvPFilter(item)
+		and app.PetBattleFilter(item)
 		and app.RequireFactionFilter(item) then
 		-- check Character trait filters
 		return app.ItemTypeFilter(item)
@@ -11701,6 +11703,13 @@ function app.FilterItemClass_RequireBinding(item)
 end
 function app.FilterItemClass_PvP(item)
 	if item.pvp then
+		return false;
+	else
+		return true;
+	end
+end
+function app.FilterItemClass_PetBattles(item)
+	if item.pb then
 		return false;
 	else
 		return true;
@@ -11951,6 +11960,7 @@ app.ClassRequirementFilter = app.NoFilter;
 app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
 app.PvPFilter = app.NoFilter;
+app.PetBattleFilter = app.NoFilter;
 app.SeasonalItemFilter = app.NoFilter;
 app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
