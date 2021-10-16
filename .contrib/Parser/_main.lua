@@ -459,6 +459,10 @@ WEAPONS = -319;
 -- D&R
 COMMON_BOSS_DROPS = -1;
 
+-- Pet
+PET_BATTLE = -796;
+PET_JOURNAL = -797;
+
 -- PvP Headers
 PVP = -9;
 PVP_ASPIRANT = -659;

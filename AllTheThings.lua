@@ -2786,6 +2786,17 @@ subroutines = {
 			{"pop"},									-- Discard the Header and acquire all of their children.
 		}
 	end,
+	-- Pet Battle Rewards
+	["common_pb_rewards"] = function(itemID)
+		return {
+			{"select", "headerID", PET_BATTLE},			-- Pet Battle
+			{"pop"},									-- Discard the Header and acquire all of their children.
+			{"where", "headerID", REWARDS},				-- REWARDS Header
+			{"pop"},									-- Discard the Header and acquire all of their children.
+			{"where", "itemID", itemID},				-- Which Container
+			{"pop"},									-- Discard the Header and acquire all of their children.
+		}
+	end,
 };
 local function Resolve_Extract(results, group, field)
 	if group.g then

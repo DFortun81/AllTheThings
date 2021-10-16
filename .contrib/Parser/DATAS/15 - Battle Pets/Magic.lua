@@ -4,7 +4,7 @@
 
 _.BattlePets =
 {
-	n(-797,	{	-- Journal
+	petbattle(n(PET_JOURNAL,	{
 		pa(243, {	-- Magic
 			p(1624),	-- Abyssius
 			p(2420),	-- Accursed Hexxer
@@ -159,5 +159,5 @@ _.BattlePets =
 			}),
 			p(2550),	-- Zur'aj the Depleted
 		}),
-	}),
+	})),
 };

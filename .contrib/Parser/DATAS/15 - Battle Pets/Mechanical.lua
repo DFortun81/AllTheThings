@@ -4,7 +4,7 @@
 
 _.BattlePets =
 {
-	n(-797,	{	-- Journal
+	petbattle(n(PET_JOURNAL,	{
 		pa(244, {	-- Mechanical
 			p(1805),	-- Alarm-o-Bot
 			p(2533),	-- Alarm-O-Dog
@@ -101,5 +101,5 @@ _.BattlePets =
 			p(2192),	-- Vengeful Chicken
 			p(227),		-- Warbot
 		}),
-	}),
+	})),
 };
