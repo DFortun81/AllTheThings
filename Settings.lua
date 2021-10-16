@@ -1020,7 +1020,7 @@ scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
 scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
 scrollbar.back:SetColorTexture(0,0,0,0.4)
 scrollbar.back:SetAllPoints(scrollbar);
-scrollbar:SetMinMaxValues(0, 21); -- Adding more max value to the scrollbar is what controls the vertical size.
+scrollbar:SetMinMaxValues(0, 40); -- Adding more max value to the scrollbar is what controls the vertical size.
 scrollbar:SetValueStep(1);
 scrollbar.CurrentValue = 0;
 scrollbar:SetWidth(16);
@@ -1923,14 +1923,12 @@ MainListScaleSliderLabel:Show();
 table.insert(settings.MostRecentTab.objects, MainListScaleSliderLabel);
 
 local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", child, "OptionsSliderTemplate");
-MainListScaleSlider:SetPoint("CENTER", MainListScaleSliderLabel, "CENTER", 0, 0);
---MainListScaleSlider:SetPoint("LEFT", MainListScaleSliderLabel, "RIGHT", 8, 0);
-MainListScaleSlider:SetPoint("RIGHT", settings, "RIGHT", -30, 0);
+MainListScaleSlider:SetPoint("TOPLEFT", MainListScaleSliderLabel, "BOTTOMLEFT", -1, -2);
 table.insert(settings.MostRecentTab.objects, MainListScaleSlider);
 settings.MainListScaleSlider = MainListScaleSlider;
 MainListScaleSlider.tooltipText = L["MAIN_LIST_SCALE_TOOLTIP"];
 MainListScaleSlider:SetOrientation('HORIZONTAL');
-MainListScaleSlider:SetWidth(150);
+MainListScaleSlider:SetWidth(200);
 MainListScaleSlider:SetHeight(20);
 MainListScaleSlider:SetValueStep(0.1);
 MainListScaleSlider:SetMinMaxValues(0.1, 4);
@@ -1948,7 +1946,7 @@ MainListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
 end);
 
 local MiniListScaleSliderLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-MiniListScaleSliderLabel:SetPoint("TOPLEFT", MainListScaleSliderLabel, "BOTTOMLEFT", 0, -20);
+MiniListScaleSliderLabel:SetPoint("TOPLEFT", MainListScaleSlider, "BOTTOMLEFT", 0, -14);
 MiniListScaleSliderLabel:SetJustifyH("LEFT");
 MiniListScaleSliderLabel:SetText(L["MINI_LIST_SLIDER_LABEL"]);
 MiniListScaleSliderLabel:SetTextColor(1, 1, 1, 1);
@@ -1956,14 +1954,12 @@ MiniListScaleSliderLabel:Show();
 table.insert(settings.MostRecentTab.objects, MiniListScaleSliderLabel);
 
 local MiniListScaleSlider = CreateFrame("Slider", "ATTMiniListScaleSlider", child, "OptionsSliderTemplate");
-MiniListScaleSlider:SetPoint("CENTER", MiniListScaleSliderLabel, "CENTER", 0, 0);
---MiniListScaleSlider:SetPoint("LEFT", MiniListScaleSliderLabel, "RIGHT", 8, 0);
-MiniListScaleSlider:SetPoint("RIGHT", settings, "RIGHT", -30, 0);
+MiniListScaleSlider:SetPoint("TOPLEFT", MiniListScaleSliderLabel, "BOTTOMLEFT", -1, -2);
 table.insert(settings.MostRecentTab.objects, MiniListScaleSlider);
 settings.MiniListScaleSlider = MiniListScaleSlider;
 MiniListScaleSlider.tooltipText = L["MINI_LIST_SCALE_TOOLTIP"];
 MiniListScaleSlider:SetOrientation('HORIZONTAL');
-MiniListScaleSlider:SetWidth(150);
+MiniListScaleSlider:SetWidth(200);
 MiniListScaleSlider:SetHeight(20);
 MiniListScaleSlider:SetValueStep(0.1);
 MiniListScaleSlider:SetMinMaxValues(0.1, 4);
@@ -2091,13 +2087,13 @@ PrecisionSliderLabel.OnRefresh = function(self)
 end;
 
 local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", child, "OptionsSliderTemplate");
-PrecisionSlider:SetPoint("CENTER", PrecisionSliderLabel, "CENTER", 0, 0);
-PrecisionSlider:SetPoint("RIGHT", settings, "RIGHT", -30, 0);
+PrecisionSlider:SetPoint("TOPLEFT", PrecisionSliderLabel, "BOTTOMLEFT", -1, -2);
+PrecisionSlider:SetPoint("RIGHT", MainListScaleSlider, "RIGHT", 0, 0);
 table.insert(settings.MostRecentTab.objects, PrecisionSlider);
 settings.PrecisionSlider = PrecisionSlider;
 PrecisionSlider.tooltipText = L["PRECISION_SLIDER_TOOLTIP"];
 PrecisionSlider:SetOrientation('HORIZONTAL');
-PrecisionSlider:SetWidth(150);
+--PrecisionSlider:SetWidth(200);
 PrecisionSlider:SetHeight(20);
 PrecisionSlider:SetValueStep(1);
 PrecisionSlider:SetMinMaxValues(0, 8);
@@ -3006,14 +3002,12 @@ SummarizeThingsCheckBox:SetATTTooltip(L["SUMMARIZE_CHECKBOX_TOOLTIP"]);
 SummarizeThingsCheckBox:SetPoint("TOPLEFT", DisplayInCombatCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ContainsSlider = CreateFrame("Slider", "ATTSummarizeThingsSlider", settings, "OptionsSliderTemplate");
-ContainsSlider:SetPoint("CENTER", SummarizeThingsCheckBox, "CENTER", 0, 0);
-ContainsSlider:SetPoint("LEFT", SummarizeThingsCheckBox.Text, "RIGHT", 6, 0);
-ContainsSlider:SetPoint("RIGHT", TooltipModifierAltCheckBox.Text, "RIGHT", 0, 0);
+ContainsSlider:SetPoint("TOPLEFT", SummarizeThingsCheckBox.Text, "BOTTOMLEFT", -1, -2);
 table.insert(settings.MostRecentTab.objects, ContainsSlider);
 settings.ContainsSlider = ContainsSlider;
 ContainsSlider.tooltipText = L["CONTAINS_SLIDER_TOOLTIP"];
 ContainsSlider:SetOrientation('HORIZONTAL');
---ContainsSlider:SetWidth(150);
+ContainsSlider:SetWidth(200);
 ContainsSlider:SetHeight(20);
 ContainsSlider:SetValueStep(1);
 ContainsSlider:SetMinMaxValues(1, 40);
@@ -3044,7 +3038,7 @@ end;
 local TooltipShowLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 TooltipShowLabel:SetJustifyH("LEFT");
 TooltipShowLabel:SetText(L["TOOLTIP_SHOW_LABEL"]);
-TooltipShowLabel:SetPoint("TOP", ContainsSlider, "BOTTOM", 0, -6);
+TooltipShowLabel:SetPoint("TOP", ContainsSlider, "BOTTOM", 0, -14);
 TooltipShowLabel:SetPoint("LEFT", TooltipModifierLabel, "LEFT", -8, 0);
 TooltipShowLabel:Show();
 table.insert(settings.MostRecentTab.objects, TooltipShowLabel);
@@ -3315,12 +3309,11 @@ ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", OnlyShowRelevantSharedAppearance
 local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
 LocationsSlider:SetPoint("TOP", ShowSourceLocationsCheckBox, "BOTTOM", 0, 2);
 LocationsSlider:SetPoint("LEFT", ShowSourceLocationsCheckBox, "LEFT", 10, 0);
-LocationsSlider:SetPoint("RIGHT", TooltipModifierAltCheckBox.Text, "RIGHT", 0, 0);
 table.insert(settings.MostRecentTab.objects, LocationsSlider);
 settings.LocationsSlider = LocationsSlider;
 LocationsSlider.tooltipText = L["LOCATIONS_SLIDER_TOOLTIP"];
 LocationsSlider:SetOrientation('HORIZONTAL');
-LocationsSlider:SetWidth(120);
+LocationsSlider:SetWidth(150);
 LocationsSlider:SetHeight(20);
 LocationsSlider:SetValueStep(1);
 LocationsSlider:SetMinMaxValues(1, 40);
@@ -3575,14 +3568,12 @@ MinimapButtonSizeSliderLabel.OnRefresh = function(self)
 end;
 
 local MinimapButtonSizeSlider = CreateFrame("Slider", "ATTMinimapButtonSizeSlider", settings, "OptionsSliderTemplate");
-MinimapButtonSizeSlider:SetPoint("CENTER", MinimapButtonSizeSliderLabel, "CENTER", 0, 0);
-MinimapButtonSizeSlider:SetPoint("LEFT", MinimapButtonSizeSliderLabel, "RIGHT", 6, 0);
-MinimapButtonSizeSlider:SetPoint("RIGHT", settings, "LEFT", 300, 0);
+MinimapButtonSizeSlider:SetPoint("TOPLEFT", MinimapButtonSizeSliderLabel, "BOTTOMLEFT", -1, -2);
 table.insert(settings.MostRecentTab.objects, MinimapButtonSizeSlider);
 settings.MinimapButtonSizeSlider = MinimapButtonSizeSlider;
 MinimapButtonSizeSlider.tooltipText = L["MINIMAP_SLIDER_TOOLTIP"];
 MinimapButtonSizeSlider:SetOrientation('HORIZONTAL');
-MinimapButtonSizeSlider:SetWidth(120);
+MinimapButtonSizeSlider:SetWidth(200);
 MinimapButtonSizeSlider:SetHeight(20);
 MinimapButtonSizeSlider:SetValueStep(1);
 MinimapButtonSizeSlider:SetMinMaxValues(18, 48);
@@ -3612,7 +3603,7 @@ MinimapButtonSizeSlider.OnRefresh = function(self)
 end;
 
 local ModulesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ModulesLabel:SetPoint("TOP", MinimapButtonSizeSliderLabel, "BOTTOM", 0, -16);
+ModulesLabel:SetPoint("TOP", MinimapButtonSizeSlider, "BOTTOM", 0, -16);
 ModulesLabel:SetPoint("LEFT", MinimapLabel, "LEFT", 0, 0);
 ModulesLabel:SetJustifyH("LEFT");
 ModulesLabel:SetText(L["MODULES_LABEL"]);
