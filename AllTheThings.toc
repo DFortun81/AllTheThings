@@ -4,7 +4,7 @@
 ## X-Wago-ID: yQKyY5K7
 ## Title: AllTheThings |TInterface\Addons\AllTheThings\assets\logo_32x32:0|t
 ## Name: AllTheThings
-## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSettings, AllTheThingsAD, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsHarvestItems, AllTheThingsArtifactsItems
+## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSettings, AllTheThingsAD, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsHarvestItems, AllTheThingsArtifactsItems, AllTheThingsProfiles
 ## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter
 ## Notes: Addon for Tracking Collections & Account Completion
 ## Version: @project-version@

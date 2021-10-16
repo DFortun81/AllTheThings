@@ -11683,20 +11683,16 @@ function app.FilterItemClass_RequireRacesCurrentFaction(item)
 	end
 end
 function app.FilterItemClass_SeasonalItem(item)
-	if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u] and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] == 4 then
-		return GetDataSubMember("SeasonalFilters", item.u);
+	-- specifically match on false for being disabled as a filter
+	if item.u and app.Settings:GetValue("Seasonal", item.u) == false then
+		return false;
 	end
 	return true;
 end
 function app.FilterItemClass_UnobtainableItem(item)
-	if item.u then
-		if L["UNOBTAINABLE_ITEM_REASONS"][item.u] then
-			if L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] < 4 then
-				return GetDataSubMember("UnobtainableItemFilters", item.u);
-			end
-		else
-			print("Invalid Unobtainable", item.key, item[item.key], item.text, item.u);
-		end
+	-- specifically match on false for being disabled as a filter
+	if item.u and app.Settings:GetValue("Unobtainable", item.u) == false then
+		return false;
 	end
 	return true;
 end
@@ -15776,12 +15772,13 @@ customWindowUpdates["AuctionData"] = function(self)
 					["visible"] = true,
 					["priority"] = 0,
 					["OnClick"] = function()
-						local val = app.GetDataMember("UnobtainableItemFilters", {})
-						if val[7] then val[7] = false else val[7] = true end
+						local show = not app.Settings:GetValue("Unobtainable", 7);
+						app.Settings:SetValue("Unobtainable", 7, show);
 						for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 							if v[1] == 1 or v[1] == 2 or v[1] == 3 then
-								if k == 7 then -- Do nothing for id 7
-								elseif val[k] then val[k] = not val[k] else val[k] = true end
+								if k ~= 7 then
+									app.Settings:SetValue("Unobtainable", k, show);
+								end
 							end
 						end
 						app.Settings:Refresh();
@@ -15789,8 +15786,7 @@ customWindowUpdates["AuctionData"] = function(self)
 					end,
 					['OnUpdate'] = function(data)
 						data.visible = true;
-						local val = app.GetDataMember("UnobtainableItemFilters", {});
-						if val[7] then
+						if app.Settings:GetValue("Unobtainable", 7) then
 							data.trackable = true;
 							data.saved = true;
 						else
@@ -19352,6 +19348,55 @@ app.OpenAuctionModule = function(self)
 	end
 end
 
+-- Creates the data structures and initial 'Default' profiles for ATT
+app.SetupProfiles = function()
+	-- base profiles containers
+	local ATTProfiles = {
+		Profiles = {
+		},
+		Assignments = {},
+	};
+	AllTheThingsProfiles = ATTProfiles;
+	local default = app.Settings:NewProfile("Default");
+	-- copy various existing settings that are now Profiled
+	if AllTheThingsSettings then
+		-- General Settings
+		if AllTheThingsSettings.General then
+			for k,v in pairs(AllTheThingsSettings.General) do
+				rawset(default.General, k, v);
+			end
+		end
+		-- Tooltip Settings
+		if AllTheThingsSettings.Tooltips then
+			for k,v in pairs(AllTheThingsSettings.Tooltips) do
+				rawset(default.Tooltips, k, v);
+			end
+		end
+		-- Seasonal Filters
+		if AllTheThingsSettings.Seasonal then
+			for k,v in pairs(AllTheThingsSettings.Seasonal) do
+				rawset(default.Seasonal, k, v);
+			end
+		end
+		-- Unobtainable Filters
+		if AllTheThingsSettings.Unobtainable then
+			for k,v in pairs(AllTheThingsSettings.Unobtainable) do
+				rawset(default.Unobtainable, k, v);
+			end
+		end
+	end
+	ATTProfiles.Profiles.Default = default;
+	app.print("Initialized ATT Profiles!");
+
+	-- delete old variables
+	AllTheThingsSettings = nil;
+	AllTheThingsAD.UnobtainableItemFilters = nil;
+	AllTheThingsAD.SeasonalFilters = nil;
+
+	-- initialize settings again due to profiles existing now
+	app.Settings:Initialize();
+end
+
 -- Slash Command List
 SLASH_AllTheThings1 = "/allthethings";
 SLASH_AllTheThings2 = "/things";
@@ -19970,19 +20015,10 @@ app.events.VARIABLES_LOADED = function()
 
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("HeirloomUpgradeLevels", {});
-	GetDataMember("SeasonalFilters", {});
-	local unobtainablesAllowed = GetDataMember("UnobtainableItemFilters", {});
-
-	-- default state filter for 12 (PvP filter)
-	if unobtainablesAllowed[12] == nil then
-		unobtainablesAllowed[12] = true;
-	end
 
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
-		"FilterSeasonal",
-		"FilterUnobtainableItems",
 		"HeirloomUpgradeLevels",
 		"LocalizedCategoryNames",
 		--"LocalizedFlightPathDB",

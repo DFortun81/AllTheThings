@@ -124,11 +124,7 @@ local GeneralSettingsBase = {
 		["Skip:AutoRefresh"] = false,
 	},
 };
-local FilterSettingsBase = {
-	__index = {
-
-	},
-};
+local FilterSettingsBase = {};
 local TooltipSettingsBase = {
 	__index = {
 		["Auto:BountyList"] = true,
@@ -178,6 +174,7 @@ local TooltipSettingsBase = {
 		["Warn:Removed"] = true,
 	},
 };
+
 local OnClickForTab = function(self)
 	local id = self:GetID();
 	local parent = self:GetParent();
@@ -195,15 +192,29 @@ local OnClickForTab = function(self)
 		end
 	end
 end;
+
+local RawSettings;
 settings.Initialize = function(self)
 	PanelTemplates_SetNumTabs(self, #self.Tabs);
 
 	-- Assign the default settings
-	if not AllTheThingsSettings then AllTheThingsSettings = {}; end
-	if not AllTheThingsSettings.General then AllTheThingsSettings.General = {}; end
-	if not AllTheThingsSettings.Tooltips then AllTheThingsSettings.Tooltips = {}; end
-	setmetatable(AllTheThingsSettings.General, GeneralSettingsBase);
-	setmetatable(AllTheThingsSettings.Tooltips, TooltipSettingsBase);
+	if AllTheThingsProfiles then
+		local key = AllTheThingsProfiles.Assignments[app.GUID] or "Default";
+		RawSettings = AllTheThingsProfiles.Profiles[key];
+		if not RawSettings then
+			RawSettings = settings:NewProfile(key);
+		end
+		app.print("Profile:",key);
+	else
+		if not AllTheThingsSettings then AllTheThingsSettings = {}; end
+		RawSettings = AllTheThingsSettings;
+		if not RawSettings.General then RawSettings.General = {}; end
+		if not RawSettings.Tooltips then RawSettings.Tooltips = {}; end
+		if not RawSettings.Seasonal then RawSettings.Seasonal = app.GetDataMember("SeasonalFilters") or {}; end
+		if not RawSettings.Unobtainable then RawSettings.Unobtainable = app.GetDataMember("UnobtainableItemFilters") or {}; end
+	end
+	setmetatable(RawSettings.General, GeneralSettingsBase);
+	setmetatable(RawSettings.Tooltips, TooltipSettingsBase);
 
 	-- Assign the preset filters for your character class as the default states
 	if not AllTheThingsSettingsPerCharacter then AllTheThingsSettingsPerCharacter = {}; end
@@ -245,8 +256,46 @@ settings.Initialize = function(self)
 		app:GetWindow("WorldQuests"):Show();
 	end
 end
-settings.Get = function(self, setting)
-	return AllTheThingsSettings and AllTheThingsSettings.General[setting];
+-- Creates, assigns, and returns a RawSettings object for a given Profile Key
+settings.NewProfile = function(self, key)
+	local raw = {
+		General = {},
+		Tooltips = {},
+		Seasonal = {},
+		Unobtainable = {},
+	};
+	AllTheThingsProfiles.Profiles[key] = raw;
+	return raw;
+end
+-- Creates, assigns, copies existing, and returns a RawSettings object for a given Profile Key
+settings.CopyProfile = function(self, key, copyKey)
+	local raw = settings:NewProfile(key);
+	local copy = AllTheThingsProfiles.Profiles[copyKey];
+	if copy then
+		for k,v in pairs(copy.General) do
+			rawset(raw.General, k, v);
+		end
+		for k,v in pairs(copy.Tooltips) do
+			rawset(raw.Tooltips, k, v);
+		end
+		for k,v in pairs(copy.Seasonal) do
+			rawset(raw.Seasonal, k, v);
+		end
+		for k,v in pairs(copy.Unobtainable) do
+			rawset(raw.Unobtainable, k, v);
+		end
+	end
+	return raw;
+end
+-- Removes a Profile
+settings.DeleteProfile = function(self, key)
+	AllTheThingsProfiles.Profiles[key] = nil;
+end
+settings.Get = function(self, setting, container)
+	return RawSettings.General[setting];
+end
+settings.GetValue = function(self, container, setting)
+	return RawSettings[container][setting];
 end
 settings.GetFilter = function(self, filterID)
 	return AllTheThingsSettingsPerCharacter.Filters[filterID];
@@ -307,15 +356,7 @@ settings.GetModeString = function(self)
 			mode = things[1] .. " + " .. things[2] .. L["TITLE_ONLY"] .. mode;
 		elseif thingCount == totalThingCount then
 			-- only insane if not hiding anything!
-			if
-			-- Hiding BoE's or PvP or Covenants
-			self:Get("Hide:BoEs")
-			or self:Get("Hide:PvP")
-			or (not self:GetFilter("CC:SL_COV_KYR") and not self:Get("AccountMode"))
-			or (not self:GetFilter("CC:SL_COV_NEC") and not self:Get("AccountMode"))
-			or (not self:GetFilter("CC:SL_COV_NFA") and not self:Get("AccountMode"))
-			or (not self:GetFilter("CC:SL_COV_VEN") and not self:Get("AccountMode"))
-			then
+			if settings:NonInsane() then
 				-- don't add insane :)
 			else
 				mode = L["TITLE_INSANE"] .. mode;
@@ -359,12 +400,7 @@ settings.GetShortModeString = function(self)
 			style = "N";
 		elseif thingCount == totalThingCount then
 			-- only insane if not hiding anything!
-			if
-			-- Hiding BoE's
-			(not self:Get("Filter:BoEs") and self:Get("Hide:BoEs")) or
-			-- Hiding PvP
-			self:Get("Hide:PvP")
-			then
+			if settings:NonInsane() then
 				-- don't add insane :)
 			else
 				style = "I";
@@ -393,17 +429,31 @@ settings.GetShortModeString = function(self)
 		end
 	end
 end
+-- Returns true if something is being hidden/filtered and removing Insane status
+settings.NonInsane = function(self)
+	return
+	-- Hiding BoE's
+	self:Get("Hide:BoEs") or
+	-- Hiding PvP
+	self:Get("Hide:PvP")
+	-- Non-Account Mode with Covenants filtered
+	or (not self:Get("AccountMode")
+		and (not self:GetFilter("CC:SL_COV_KYR")
+			or not self:GetFilter("CC:SL_COV_NEC")
+			or not self:GetFilter("CC:SL_COV_NFA")
+			or not self:GetFilter("CC:SL_COV_VEN")));
+end
 settings.GetPersonal = function(self, setting)
 	return AllTheThingsSettingsPerCharacter[setting];
 end
 settings.GetTooltipSetting = function(self, setting)
-	return AllTheThingsSettings and AllTheThingsSettings.Tooltips[setting];
+	return RawSettings.Tooltips[setting];
 end
 -- only returns 'true' for the requested TooltipSetting if the Setting's associated Modifier key is currently being pressed
 settings.GetTooltipSettingWithMod = function(self, setting)
-	local v = AllTheThingsSettings and AllTheThingsSettings.Tooltips[setting];
+	local v = RawSettings.Tooltips[setting];
 	if not v then return v; end
-	local k = AllTheThingsSettings.Tooltips[setting .. ":Mod"];
+	local k = RawSettings.Tooltips[setting .. ":Mod"];
 	if k == "None"
 		or (k == "Shift" and IsShiftKeyDown())
 		or (k == "Ctrl" and IsControlKeyDown())
@@ -412,7 +462,11 @@ settings.GetTooltipSettingWithMod = function(self, setting)
 	end
 end
 settings.Set = function(self, setting, value)
-	AllTheThingsSettings.General[setting] = value;
+	RawSettings.General[setting] = value;
+	self:Refresh();
+end
+settings.SetValue = function(self, container, setting, value)
+	RawSettings[container][setting] = value;
 	self:Refresh();
 end
 settings.SetFilter = function(self, filterID, value)
@@ -420,7 +474,7 @@ settings.SetFilter = function(self, filterID, value)
 	self:UpdateMode(1);
 end
 settings.SetTooltipSetting = function(self, setting, value)
-	AllTheThingsSettings.Tooltips[setting] = value;
+	RawSettings.Tooltips[setting] = value;
 	wipe(app.searchCache);
 	self:Refresh();
 end
@@ -429,13 +483,16 @@ settings.SetPersonal = function(self, setting, value)
 	self:Refresh();
 end
 settings.Refresh = function(self)
-	settings.SkipAutoRefreshCheckbox:OnRefresh();
-
-	for i,tab in ipairs(self.Tabs) do
-		if tab.OnRefresh then tab:OnRefresh(); end
-		for j,o in ipairs(tab.objects) do
-			if o.OnRefresh then o:OnRefresh(); end
+	if not settings._Refreshing then
+		settings._Refreshing = true;
+		settings.SkipAutoRefreshCheckbox:OnRefresh();
+		for i,tab in ipairs(self.Tabs) do
+			if tab.OnRefresh then tab:OnRefresh(); end
+			for j,o in ipairs(tab.objects) do
+				if o.OnRefresh then o:OnRefresh(); end
+			end
 		end
+		settings._Refreshing = nil;
 	end
 end
 settings.CreateCheckBox = function(self, text, OnRefresh, OnClick)
@@ -712,12 +769,14 @@ settings.UpdateMode = function(self, doRefresh)
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.GroupFilter = app.FilterItemClass;
 		app.DefaultFilter = app.Filter;
-		if app.GetDataMember("FilterSeasonal") then
+		-- specifically hiding something
+		if settings:GetValue("Seasonal", "DoFiltering") then
 			app.SeasonalItemFilter = app.FilterItemClass_SeasonalItem;
 		else
 			app.SeasonalItemFilter = app.NoFilter;
 		end
-		if app.GetDataMember("FilterUnobtainableItems") then
+		-- specifically hiding something
+		if settings:GetValue("Unobtainable", "DoFiltering") then
 			app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
 		else
 			app.UnobtainableItemFilter = app.NoFilter;
@@ -2391,11 +2450,6 @@ function(self)
 end,
 function(self)
 	settings:Set("Hide:PvP", not self:GetChecked()); -- 'not' = inversed :D
-	-- Remove once replacing PvP flags in data
-	local val = app.GetDataMember("UnobtainableItemFilters");
-	val[12] = not self:GetChecked();
-	app.SetDataMember("UnobtainableItemFilters", val);
-
 	settings:UpdateMode(1);
 end);
 HidePvPItemsCheckBox:SetATTTooltip(L["HIDE_PVP_CHECKBOX_TOOLTIP"]);
@@ -2573,37 +2627,36 @@ SeasonalFiltersLabel:SetPoint("LEFT", ItemFiltersLabel, "LEFT", 0, 0);
 SeasonalFiltersLabel:SetPoint("TOP", settings.equipfilterdefault, "BOTTOM", 0, -8);
 
 -- Stuff to order the Holidays manually
-local holidayThings = L["UNOBTAINABLE_ITEM_REASONS"];
+local unobtainables = L["UNOBTAINABLE_ITEM_REASONS"];
 local holidayOrder = { 1012, 1016, 1015, 1014, 1007, 1006, 1010, 1001, 1008, 1005, 1011, 1000, 1004, 1002, 1017, 1013, 1003 };
 
 local SeasonalAllCheckBox = child:CreateCheckBox(L["SEASONAL_ALL"],
 function(self)
-	app.SeasonalItemFilter = app.FilterItemClass_SeasonalItem;
-	app.SetDataMember("FilterSeasonal", true); -- Always enable Seasonal Filter
-	local isTrue = true
-	local val = app.GetDataMember("SeasonalFilters")
-	for k,v in ipairs(holidayOrder) do
-		if holidayThings[v][1] == 4 then
-			isTrue = isTrue and not val[v]
+	local anyEnabled = false;
+	local anyFiltered = false;
+	for _,v in ipairs(holidayOrder) do
+		if unobtainables[v][1] == 4 then
+			if not settings:GetValue("Seasonal", v) then
+				anyFiltered = true;
+				-- ensure the filter is specifically marked as 'false' if it's not enabled
+				settings:SetValue("Seasonal", v, false);
+			else
+				anyEnabled = true;
+			end
 		end
 	end
-	self:SetChecked(not isTrue); -- 'not' = inversed :D
-	if not app.GetDataMember("FilterSeasonal") then -- Is disabled if I fucked up
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
+	self:SetChecked(anyEnabled);
+	settings:SetValue("Seasonal", "DoFiltering", anyFiltered);
+	self:Enable();
+	self:SetAlpha(1);
 end,
 function(self)
-	local val = app.GetDataMember("SeasonalFilters")
-	for k,v in ipairs(holidayOrder) do
-		if holidayThings[v][1] == 4 then
-			val[v] = not not self:GetChecked() -- 'not' = inversed :D
+	local checked = self:GetChecked();
+	for _,v in ipairs(holidayOrder) do
+		if unobtainables[v][1] == 4 then
+			settings:SetValue("Seasonal", v, checked);
 		end
 	end
-	app.SetDataMember("SeasonalFilters", val);
 	settings:Refresh();
 	settings:UpdateMode(1);
 end);
@@ -2613,27 +2666,18 @@ local last = SeasonalAllCheckBox;
 local x = 8;
 local y = 4;
 local count = 0;
-for k, v in ipairs(holidayOrder) do
-	if holidayThings[v][1] == 4 then
-		local seasonalFilter = child:CreateCheckBox(holidayThings[v][3],
+for _,v in ipairs(holidayOrder) do
+	if unobtainables[v][1] == 4 then
+		local seasonalFilter = child:CreateCheckBox(unobtainables[v][3],
 		function(self)
-			self:SetChecked(not not app.GetDataMember("SeasonalFilters")[v]); -- 'not' = inversed :D
-			if not app.GetDataMember("FilterSeasonal") then -- Is disabled if I fucked up
-				self:Disable();
-				self:SetAlpha(0.2);
-			else
-				self:Enable();
-				self:SetAlpha(1);
-			end
+			self:SetChecked(settings:GetValue("Seasonal", v));
 		end,
 		function(self)
-			local val = app.GetDataMember("SeasonalFilters")
-			val[v] = not not self:GetChecked() -- 'not' = inversed :D
-			app.SetDataMember("SeasonalFilters", val);
+			settings:SetValue("Seasonal", v, self:GetChecked());
 			settings:Refresh();
 			settings:UpdateMode(1);
 		end);
-		seasonalFilter:SetATTTooltip(holidayThings[v][2]);
+		seasonalFilter:SetATTTooltip(unobtainables[v][2]);
 		seasonalFilter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", x, y)
 		last = seasonalFilter
 		x = 0;
@@ -2654,32 +2698,31 @@ UnobtainableFiltersLabel:SetPoint("LEFT", GeneralFiltersLabel, "LEFT", 0, 0);
 
 local UnobtainableAllCheckBox = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 function(self)
-	app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
-	app.SetDataMember("FilterUnobtainableItems", true); -- Always enable Unobtainable Filter
-	local isTrue = true
-	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	local anyEnabled = false;
+	local anyFiltered = false;
+	for k,v in pairs(unobtainables) do
 		if v[1] < 4 then
-			isTrue = isTrue and not val[k]
+			if not settings:GetValue("Unobtainable", k) then
+				anyFiltered = true;
+				-- ensure the filter is specifically marked as 'false' if it's not enabled
+				settings:SetValue("Unobtainable", k, false);
+			else
+				anyEnabled = true;
+			end
 		end
 	end
-	self:SetChecked(not isTrue); -- 'not' = inversed :D
-	if not app.GetDataMember("FilterUnobtainableItems") then -- Is disabled if I fucked up
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
+	self:SetChecked(anyEnabled);
+	settings:SetValue("Unobtainable", "DoFiltering", anyFiltered);
+	self:Enable();
+	self:SetAlpha(1);
 end,
 function(self)
-	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	local checked = self:GetChecked();
+	for k,v in pairs(unobtainables) do
 		if v[1] < 4 then
-			val[k] = not not self:GetChecked() -- 'not' = inversed :D
+			settings:SetValue("Unobtainable", k, checked);
 		end
 	end
-	app.SetDataMember("UnobtainableItemFilters", val);
 	settings:Refresh();
 	settings:UpdateMode(1);
 end);
@@ -2687,30 +2730,24 @@ UnobtainableAllCheckBox:SetPoint("TOPLEFT", UnobtainableFiltersLabel, "BOTTOMLEF
 
 local NoChanceAllCheckBox = child:CreateCheckBox(L["NO_CHANCE_ALL"],
 function(self)
-	local isTrue = true
-	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	local anyEnabled = false;
+	for k,v in pairs(unobtainables) do
 		if v[1] == 1 then
-			isTrue = isTrue and not val[k]
+			anyEnabled = anyEnabled or settings:GetValue("Unobtainable", k);
+			if anyEnabled then break; end
 		end
 	end
-	self:SetChecked(not isTrue); -- 'not' = inversed :D
-	if not app.GetDataMember("FilterUnobtainableItems") then -- Is disabled if I fucked up
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
+	self:SetChecked(anyEnabled);
+	self:Enable();
+	self:SetAlpha(1);
 end,
 function(self)
-	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	local checked = self:GetChecked();
+	for k,v in pairs(unobtainables) do
 		if v[1] == 1 then
-			val[k] = not not self:GetChecked() -- 'not' = inversed :D
+			settings:SetValue("Unobtainable", k, checked);
 		end
 	end
-	app.SetDataMember("UnobtainableItemFilters", val);
 	settings:Refresh();
 	settings:UpdateMode(1);
 end);
@@ -2720,23 +2757,16 @@ local last = NoChanceAllCheckBox;
 local x = 8;
 local y = 4;
 local count = 0;
-for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+for k,v in pairs(unobtainables) do
 	if v[1] == 1 then
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
-			self:SetChecked(not not app.GetDataMember("UnobtainableItemFilters")[k]); -- 'not' = inversed :D
-			if not app.GetDataMember("FilterUnobtainableItems") then -- Is disabled if I fucked up
-				self:Disable();
-				self:SetAlpha(0.2);
-			else
-				self:Enable();
-				self:SetAlpha(1);
-			end
+			self:SetChecked(settings:GetValue("Unobtainable", k));
+			self:Enable();
+			self:SetAlpha(1);
 		end,
 		function(self)
-			local val = app.GetDataMember("UnobtainableItemFilters")
-			val[k]= not not self:GetChecked() -- 'not' = inversed :D
-			app.SetDataMember("UnobtainableItemFilters", val);
+			settings:SetValue("Unobtainable", k, self:GetChecked());
 			settings:Refresh();
 			settings:UpdateMode(1);
 		end);
@@ -2758,30 +2788,24 @@ end
 
 local HighChanceAllCheckBox = child:CreateCheckBox(L["HIGH_CHANCE_ALL"],
 function(self)
-	local isTrue = true
-	local val = app.GetDataMember("UnobtainableItemFilters");
-	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	local anyEnabled = false;
+	for k,v in pairs(unobtainables) do
 		if v[1] == 3 then
-			isTrue = isTrue and not val[k];
+			anyEnabled = anyEnabled or settings:GetValue("Unobtainable", k);
+			if anyEnabled then break; end
 		end
 	end
-	self:SetChecked(not isTrue); -- 'not' = inversed :D
-	if not app.GetDataMember("FilterUnobtainableItems") then -- Is disabled if I fucked up
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
+	self:SetChecked(anyEnabled);
+	self:Enable();
+	self:SetAlpha(1);
 end,
 function(self)
-	local val = app.GetDataMember("UnobtainableItemFilters");
-	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	local checked = self:GetChecked();
+	for k,v in pairs(unobtainables) do
 		if v[1] == 3 then
-			val[k] = not not self:GetChecked(); -- 'not' = inversed :D
+			settings:SetValue("Unobtainable", k, checked);
 		end
 	end
-	app.SetDataMember("UnobtainableItemFilters", val);
 	settings:Refresh();
 	settings:UpdateMode(1);
 end);
@@ -2791,23 +2815,16 @@ local last = HighChanceAllCheckBox;
 local x = 8;
 local y = 4;
 local count = 0;
-for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+for k,v in pairs(unobtainables) do
 	if v[1] == 3 then
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
-			self:SetChecked(not not app.GetDataMember("UnobtainableItemFilters")[k]); -- 'not' = inversed :D
-			if not app.GetDataMember("FilterUnobtainableItems") then -- Is disabled if I fucked up
-				self:Disable();
-				self:SetAlpha(0.2);
-			else
-				self:Enable();
-				self:SetAlpha(1);
-			end
+			self:SetChecked(settings:GetValue("Unobtainable", k));
+			self:Enable();
+			self:SetAlpha(1);
 		end,
 		function(self)
-			local val = app.GetDataMember("UnobtainableItemFilters");
-			val[k]= not not self:GetChecked(); -- 'not' = inversed :D
-			app.SetDataMember("UnobtainableItemFilters", val);
+			settings:SetValue("Unobtainable", k, self:GetChecked());
 			settings:Refresh();
 			settings:UpdateMode(1);
 		end);
