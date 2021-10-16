@@ -459,6 +459,7 @@ namespace ATT
                     case "ignoreBonus":
                     case "ignoreSource":
                     case "pvp":
+                    case "pb":
                         {
                             item[field] = Convert.ToBoolean(value);
                             break;

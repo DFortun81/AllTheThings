@@ -69,21 +69,25 @@ _.Zones =
 							["sourceQuests"] = { 43496, 43501, 43503, 43505 },	-- The Power Within (4 versions)
 							["provider"] = { "n", 100482 },	-- Senegos
 							["coord"] = { 48.0, 25.7, AZSUNA },
+							["maps"] = { AZSUNA },
 						}),
 						q(43514, {	-- A Vainglorious Past
 							["sourceQuests"] = { 40668 },	-- Eye of Azshara: The Heart of Zin-Azshari
 							["provider"] = { "n", 100482 },	-- Senegos
 							["coord"] = { 48.0, 25.7, AZSUNA },
+							["maps"] = { AZSUNA },
 						}),
 						q(43517, {	-- Darkheart Thicket: Fallen Power
 							["sourceQuests"] = { 40668 },	-- Eye of Azshara: The Heart of Zin-Azshari
 							["provider"] = { "n", 100482 },	-- Senegos
 							["coord"] = { 48.0, 25.7, AZSUNA },
+							["maps"] = { AZSUNA },
 						}),
 						q(43518, {	-- Tempering Darkness
 							["sourceQuests"] = { 40668 },	-- Eye of Azshara: The Heart of Zin-Azshari
 							["provider"] = { "n", 110773 },	-- Archmage Kalec <Kirin Tor>
 							["coord"] = { 48.0, 25.7, AZSUNA },
+							["maps"] = { AZSUNA },
 						}),
 						q(43519, {	-- Lucid Strength
 							["sourceQuests"] = {
