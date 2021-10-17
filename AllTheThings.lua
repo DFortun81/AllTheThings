@@ -115,10 +115,17 @@ app.PrintTable = function(t,depth)
 	end
 	print(p .. tostring(t) .. " {");
 	for k,v in pairs(t) do
-		print(p .. k .. ":" .. tostring(v));
+		if k == "parent" or k == "sourceParent" then print(p,k,":",tostring(v));
+		elseif type(v) == "table" then
+			print(p,k,":");
+			app.PrintTable(v,depth + 1);
+		else
+			print(p,k,":",tostring(v))
+		end
 	end
 	print("}");
 	if getmetatable(t) then
+		print("__index:");
 		app.PrintTable(getmetatable(t).__index, depth + 1);
 	end
 	print("---")
@@ -11860,19 +11867,22 @@ function app.MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterO
 		local acctSources = ATTAccountWideData.Sources;
 		local checkItem, checkSource, valid;
 		local knownRaces, knownClasses, knownFaction = knownItem.races, knownItem.c, knownItem.r;
+		-- this source unlocks a visual that the current character may tmog, so all shared visuals should be considered 'collected' regardless of restriction
+		local currentCharacterUsable = currentCharacterOnly and not knownItem.nmc and not knownItem.nmr;
 		-- For each shared Visual SourceID
 		for _,sourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID)) do
 			-- If it is not currently marked collected on the account
 			if not rawget(acctSources, sourceID) then
-				-- Find the check Source in ATT
-				checkItem = SearchForSourceIDQuickly(sourceID);
-				if checkItem then
-					-- filter matches or one item is Cosmetic
-					if checkItem.f == knownItem.f or checkItem.f == 2 or knownItem.f == 2 then
-						-- for current character only, all we care is that the checkItem is not exclusive to another race/class to consider it 'collected'
-						if currentCharacterOnly and not checkItem.nmc and not checkItem.nmr then
-							rawset(acctSources, sourceID, 2);
-						else
+				-- for current character only, all we care is that the knownItem is not exclusive to another
+				-- race/class to consider all shared appearances as 'collected' for the current character
+				if currentCharacterUsable then
+					rawset(acctSources, sourceID, 2);
+				else
+					-- Find the check Source in ATT
+					checkItem = SearchForSourceIDQuickly(sourceID);
+					if checkItem then
+						-- filter matches or one item is Cosmetic
+						if checkItem.f == knownItem.f or checkItem.f == 2 or knownItem.f == 2 then
 							valid = true;
 							-- verify all possible restrictions that the known source may have against restrictions on the source in question
 							-- if known source has no equivalent restrictions, then restrictions on the source are irrelevant
@@ -11919,20 +11929,20 @@ function app.MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterO
 								end
 							end
 						end
-					end
-				else
-					-- OH NOES! It doesn't exist!
-					checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
-					-- both sources are the same category (Equip-Type)
-					if checkSource.categoryID == knownSource.categoryID
-						-- and same Inventory Type
-						and (checkSource.invType == knownSource.invType
-							or knownSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
-							or app.SlotByInventoryType[checkSource.invType] == app.SlotByInventoryType[knownSource.invType])
-					then
-						-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
-						rawset(acctSources, sourceID, 2);
-					-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
+					else
+						-- OH NOES! It doesn't exist!
+						checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
+						-- both sources are the same category (Equip-Type)
+						if checkSource.categoryID == knownSource.categoryID
+							-- and same Inventory Type
+							and (checkSource.invType == knownSource.invType
+								or knownSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
+								or app.SlotByInventoryType[checkSource.invType] == app.SlotByInventoryType[knownSource.invType])
+						then
+							-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
+							rawset(acctSources, sourceID, 2);
+						-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
+						end
 					end
 				end
 			end
