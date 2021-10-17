@@ -626,7 +626,6 @@ _.NeverImplemented =
 			q(36072),	-- Nagrand - Treasure 056 - Abu'Gar's Favorite Lure
 			q(35711),	-- Nagrand - Treasure 059 - Abu'gar's Tenacity
 			q(36089),	-- Nagrand - Treasure 070 - Abu'Gar's Reel
-			q(35865),	-- Nagrand - Vignette Boss 018 - Void Ooze
 			q(35623),	-- Nagrand - Vignette Boss - Explorer Rixak
 			q(33529),	-- Nightmare in the Tomb
 			q(33878),	-- No Miner Left Behind
