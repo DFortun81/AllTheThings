@@ -6,10 +6,6 @@ _.ExpansionFeatures =
 {
 	tier(BFA_TIER, {
 		n(-254, {	-- Allied Races
-			-- ["maps"] = {
-			-- 	STORMWIND_CITY,
-			-- 	ORGRIMMAR,
-			-- },
 			["isRaid"] = true,
 			["g"] = {
 				q(50239, {	-- A Choice of Allies (A)
@@ -64,13 +60,6 @@ _.ExpansionFeatures =
 				}),
 				race(BLOODELF, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Blood Elf|r with a standing of |cFFFFFFFFExalted|r with Silvermoon City.",
-					["maps"] = {
-						SILVERMOON_CITY,
-						GHOSTLANDS,
-						EVERSONG_WOODS,
-						ISLE_OF_QUELDANAS,
-						973,	-- The Sunwell: Shrine of the Eclipse (Scenario)
-					},
 					["races"] = { BLOODELF },
 					["g"] = bubbleDown({ ["races"] = { BLOODELF }, ["minReputation"] = { 911, EXALTED }, }, {
 						q(53791, {	-- The Pride of the Sin'dorei
@@ -121,6 +110,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 145793 },	-- Lady Liadrin
 							["sourceQuest"] = 53853,	-- The Setting Sun
 							["coord"] = { 48.3, 36.0, ISLE_OF_QUELDANAS },
+							["maps"] = { 973 },	-- The Sunwell: Shrine of the Eclipse (Scenario)
 							["g"] = {
 								i(166348),	-- Sin'dorei Helm
 								i(166349),	-- Sin'dorei Pauldrons
@@ -138,13 +128,6 @@ _.ExpansionFeatures =
 				}),
 				race(DARKIRON, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
-					["maps"] = {
-						1159,	-- Blackrock Depths: Dark Iron Dwarf Scenario
-						1160,	-- Blackrock Depths: Dark Iron Dwarf Scenario
-						1958,	-- Firelands: Dark Iron Dwarf Scenario
-						1959,	-- Firelands: Dark Iron Dwarf Scenario
-						1186,	-- Blackrock Depths: Shadowforge City
-					},
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(51813, {	-- Blackrock Depths
@@ -156,7 +139,8 @@ _.ExpansionFeatures =
 						q(53351, {	-- The MOTHERLODE!!: Ironfoe
 							["sourceQuests"] = { 51813 },	-- Blackrock Depths
 							["provider"] = { "n", 140309 },	-- Moira Thaurissan
-							["coord"] = { 57.0, 30.6, 1159 },
+							["coord"] = { 57.0, 30.6, 1159 },	-- Blackrock Depths: Dark Iron Dwarf Scenario
+							["maps"] = { 1160 },	-- Blackrock Depths: Dark Iron Dwarf Scenario
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(53342, {	-- Molten Core
@@ -170,6 +154,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 133197 },	-- Moira Thaurissan
 							["coord"] = { 52.0, 13.8, STORMWIND_CITY },
 							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 1958, 1959 },	-- Firelands: Dark Iron Dwarf Scenario
 						}),
 						q(51474, {	-- Forged in Fire an'Flame
 							["sourceQuests"] = { 53352 },	-- Firelands
@@ -180,7 +165,8 @@ _.ExpansionFeatures =
 						q(53566, {	-- Dark Iron Dwarves
 							["sourceQuests"] = { 51474 },	-- Forgged in Fire an'Flame
 							["provider"] = { "n", 140309 },	-- Moira Thaurissan
-							["coord"] = { 57.0, 30.6, 1159 },
+							["coord"] = { 57.0, 30.6, 1159 },	-- Blackrock Depths: Dark Iron Dwarf Scenario
+							["maps"] = { 1160 },	-- Blackrock Depths: Dark Iron Dwarf Scenario
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								ach(12515),	-- Allied Races: Dark Iron Dwarf
@@ -227,11 +213,6 @@ _.ExpansionFeatures =
 				}),
 				race(DWARF, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dwarf|r with a standing of |cFFFFFFFFExalted|r with Ironforge.",
-					["maps"] = {
-						IRONFORGE,
-						31,	-- Gol'Bolar Quarry
-						LOCH_MODAN,
-					},
 					["races"] = { DWARF },
 					["g"] = bubbleDown({ ["races"] = { DWARF }, ["minReputation"] = { 47, EXALTED }, }, {
 						q(53838, {	-- Keep Yer Feet On The Ground
@@ -302,13 +283,6 @@ _.ExpansionFeatures =
 				}),
 				race(GNOME, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Gnome|r with a standing of |cFFFFFFFFExalted|r with Gnomeregan and completed |cFFFFD700Stay of Execution|r, The 8.2 War Campaign.",
-					["maps"] = {
-						469,	-- New Tinkertown [Above]
-						1380,	-- GnomereganC
-						BOREAN_TUNDRA,
-						THE_STORM_PEAKS,
-						1375,	-- Halls of Stone (Scenario)
-					},
 					["races"] = { GNOME },
 					["g"] = bubbleDown({ ["races"] = { GNOME }, ["minReputation"] = { 54, EXALTED }, }, {
 						q(54402, {	-- Shifting Gears
@@ -319,11 +293,13 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
 							["coord"] = { 41.8, 31.7, 469 },
 							["sourceQuest"] = 54402, -- Shifting Gears
+							["maps"] = { 1380 },	-- GnomereganC
 						}),
 						q(54577, {	-- Shadowed Halls and Dusty Cogs
 							["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
 							["coord"] = { 41.8, 31.7, 469 },
 							["sourceQuest"] = 54576, -- Gnomeregan's Finest
+							["maps"] = { 1380 },	-- GnomereganC
 						}),
 						q(54580, {	-- A Tundra Conundrum
 							["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
@@ -386,11 +362,6 @@ _.ExpansionFeatures =
 				}),
 				race(GOBLIN, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Goblin|r with a standing of |cFFFFFFFFExalted|r with Bilgewater Cartel.",
-					["maps"] = {
-						THE_CAPE_OF_STRANGLETHORN,
-						1531,	-- Crapopolis
-						1532,	-- Crapopolis
-					},
 					["races"] = { GOBLIN },
 					["g"] = bubbleDown({ ["races"] = { GOBLIN }, ["minReputation"] = { 1133, EXALTED }, }, {
 						q(57043, {	-- Old Friends, New Opportunities
@@ -472,10 +443,6 @@ _.ExpansionFeatures =
 				}),
 				race(HIGHMOUNTAIN_TAUREN, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",
-					["maps"] = {
-						THUNDER_BLUFF,
-						HIGHMOUNTAIN,
-					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						q(48066, {	-- A Feast for Our Kin
@@ -627,12 +594,6 @@ _.ExpansionFeatures =
 				}),
 				race(KULTIRAN, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700A Nation United|r, The Kul Tiran Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
-					["maps"] = {
-						BORALUS,
-						STORMSONG_VALLEY,
-						TIRAGARDE_SOUND,
-						DRUSTVAR,
-					},
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(54706, {	-- Made in Kul Tiras
@@ -809,11 +770,6 @@ _.ExpansionFeatures =
 				}),
 				race(LIGHTFORGED, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
-					["maps"] = {
-						886,	-- The Vindicar
-						940,	-- The Vindicar
-						933,	-- Forge of Souls (Lightbound Draenei Scenario)
-					},
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(49698, {	-- The Lightforged
@@ -827,6 +783,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 130549 },	-- Captain Fareeya
 							["coord"] = { 44.0, 28.0, 886 },
 							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 933 },	-- Forge of Aeons (Lightbound Draenei Scenario)
 						}),
 						q(50071, {	-- For the Light!
 							["sourceQuests"] = { 49266 },	-- Forge of Aeons
@@ -878,14 +835,6 @@ _.ExpansionFeatures =
 				}),
 				race(MAGHAR, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
-					["maps"] = {
-						1185,
-						TANARIS,
-						BLASTED_LANDS,
-						GORGROND,
-						1170,
-						DUROTAR,
-					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						q(53466, {	-- Vision of Time
@@ -927,19 +876,19 @@ _.ExpansionFeatures =
 						q(52943, {	-- Calling Out the Clans
 							["sourceQuests"] = { 52942 },	-- Restoring Old Bonds
 							["provider"] = { "n", 142422 },	-- Eitrigg
-							["coord"] = { 44.8, 53.0, GORGROND },
+							["coord"] = { 44.8, 53.0, 1170 },	-- Gorgrond Scenario
 							["races"] = HORDE_ONLY,
 						}),
 						q(52945, {	-- Bonds Forged Through Battle
 							["sourceQuests"] = { 52943 },	-- Calling Out the Clans
 							["provider"] = { "n", 142275 },	-- Grommash Hellscream
-							["coord"] = { 45.2, 52.0, GORGROND },
+							["coord"] = { 45.2, 52.0, 1170 },	-- Gorgrond Scenario
 							["races"] = HORDE_ONLY,
 						}),
 						q(52955, {	-- Tyranny of the Light
 							["sourceQuests"] = { 52945 },	-- Bonds Forged Through Battle
 							["provider"] = { "n", 137837 },	-- Overlord Geya'rah
-							["coord"] = { 44.4, 71.4, GORGROND },
+							["coord"] = { 44.4, 71.4, 1170 },	-- Gorgrond Scenario
 							["races"] = HORDE_ONLY,
 						}),
 						q(51479, {	-- The Uncorrupted
@@ -1008,12 +957,6 @@ _.ExpansionFeatures =
 				}),
 				race(MECHAGNOME, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700The Mechagonian Threat|r, The Mechagon Storyline.",
-					["maps"] = {
-						MECHAGON,
-						BORALUS,
-						1574,	-- Mechagon City (Scenario)
-						1573,	-- Mechagon City
-					},
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(58214, {	-- Urgent Care
@@ -1136,10 +1079,6 @@ _.ExpansionFeatures =
 				}),
 				race(NIGHTBORNE, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Insurrection|r, The 7.2 Suramar Campaign.",
-					["maps"] = {
-						SURAMAR,
-						SILVERMOON_CITY,
-					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						q(49973, {	-- Thalyssra's Estate
@@ -1210,11 +1149,6 @@ _.ExpansionFeatures =
 				}),
 				race(TAUREN, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Tauren|r with a standing of |cFFFFFFFFExalted|r with Thunder Bluff and completed |cFFFFD700Stay of Execution|r, The 8.2 War Campaign.",
-					["maps"] = {
-						THUNDER_BLUFF,
-						462,	-- Camp Narache
-						STONETALON_MOUNTAINS,
-					},
 					["races"] = { TAUREN },
 					["g"] = bubbleDown({ ["races"] = { TAUREN }, ["minReputation"] = { 81, EXALTED }, }, {
 						q(54759, {	-- When Spririts Whisper
@@ -1273,10 +1207,6 @@ _.ExpansionFeatures =
 				}),
 				race(VOIDELF, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
-					["maps"] = {
-						971,	-- Telogrus Rift
-						972,	-- Telogrus Rift, Void Elf Scenario
-					},
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(49787, {	-- The Ghostlands
@@ -1289,6 +1219,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 49787 },	-- The Ghostlands
 							["provider"] = { "n", 130919 },	-- High Elf Ranger
 							["races"] = ALLIANCE_ONLY,
+							["maps"] = { 972 },	-- Telogrus Rift, Void Elf Scenario
 							["g"] = {
 								ach(12242),	-- Allied Races: Void Elf
 								i(156486),	-- Starcursed Voidstrider (MOUNT!)
@@ -1335,12 +1266,6 @@ _.ExpansionFeatures =
 				}),
 				race(VULPERA, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Secrets in the Sands|r, The Vol'dun Storyline.",
-					["maps"] = {
-						TWILIGHT_HIGHLANDS,
-						ZULDAZAR,
-						SURAMAR,
-						VOLDUN,
-					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						q(53870, {	-- Guests at Grommash Hold
@@ -1542,10 +1467,6 @@ _.ExpansionFeatures =
 				}),
 				race(WORGEN, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Worgen|r with a standing of |cFFFFFFFFExalted|r with Gilneas.",
-					["maps"] = {
-						DUSKWOOD,
-						1577,	-- Gilneas City (Scenario)
-					},
 					["races"] = { WORGEN },
 					["g"] = bubbleDown({ ["races"] = { WORGEN }, ["minReputation"] = { 1134, EXALTED }, }, {
 						q(54976, {	-- The Shadow of Gilneas
@@ -1585,6 +1506,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 150106 },	-- Goldrinn
 							["coord"] = { 46.6, 36.6, DUSKWOOD },
 							["sourceQuest"] = 54983, -- Waking a Dreamer
+							["maps"] = { 1577 },	-- Gilneas City (Scenario)
 						}),
 						q(54990, {	-- The New Guard
 							["provider"] = { "n", 150115 },	-- Princess Tess Greymane
@@ -1606,10 +1528,6 @@ _.ExpansionFeatures =
 				}),
 				race(ZANDALARI, {
 					["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700Zandalar Forever!|r, The Zandalari Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
-					["maps"] = {
-						THE_GREAT_SEAL,
-						DAZARALOR,
-					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						q(53831, {	-- A Royal Occasion
