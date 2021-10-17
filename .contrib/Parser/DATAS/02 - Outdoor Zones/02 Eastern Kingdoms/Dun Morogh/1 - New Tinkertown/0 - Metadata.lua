@@ -9,10 +9,7 @@ _.Zones =
 			m(469, {	-- New Tinkertown [Above]
 				["lore"] = "New Tinkertown is a small town built just outside of Gnomeregan. It is here surviving gnomes teleport to after having escaped their radiated city.",
 				["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Female",
-			}),
-			m(30,  {	-- New Tinkertown [Below]
-				["lore"] = "New Tinkertown is a small town built just outside of Gnomeregan. It is here surviving gnomes teleport to after having escaped their radiated city.",
-				["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Female",
+				["maps"] = { 30 },	-- New Tinkertown [Below]
 			}),
 		}),
 	}),

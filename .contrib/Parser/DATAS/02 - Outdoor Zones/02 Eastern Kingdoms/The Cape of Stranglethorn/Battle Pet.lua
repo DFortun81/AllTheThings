@@ -38,18 +38,6 @@ _.Zones =
 				p(410, { -- Wharf Rat
 					["crs"] = { 61323 },
 				}),
-				q(31917, {	-- A Tamer's Homecoming
-					["provider"] = { "n", 65656 },	-- Bill Buckler
-					["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 31728,	-- Bill Buckler
-				}),
-				q(31851, {	-- Bill Buckler
-					["provider"] = { "n", 65656 },	-- Bill Buckler
-					["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),

@@ -30,21 +30,6 @@ _.Zones =
 					["description"] = "Target any chicken, then use |cFFFFD700/chicken|r repeatedly until the quest becomes available.",
 					["repeatable"] = true,
 				}),
-				q(31726, {	-- Eric Davidson
-					["provider"] = { "n", 65651 },	-- Lindsay
-					["coord"] = { 33.2, 52.5, REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 31725,	-- Lindsay
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31781, {	-- Lindsay
-					["provider"] = { "n", 65651 },	-- Lindsay
-					["coord"] = { 33.2, 52.5, REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),

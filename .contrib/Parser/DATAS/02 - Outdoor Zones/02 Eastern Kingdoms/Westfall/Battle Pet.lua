@@ -38,21 +38,6 @@ _.Zones =
 						i(11110) -- Chicken Egg
 					},
 				}),
-				q(31725, {	-- Lindsay
-					["provider"] = { "n", 65648 },	-- Old MacDonald
-					["coord"] = { 80.6, 18.4, WESTFALL },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 31724,	-- Old MacDonald
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31780, {	-- Old MacDonald
-					["provider"] = { "n", 65648 },	-- Old MacDonald
-					["coord"] = { 80.6, 18.4, WESTFALL },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),

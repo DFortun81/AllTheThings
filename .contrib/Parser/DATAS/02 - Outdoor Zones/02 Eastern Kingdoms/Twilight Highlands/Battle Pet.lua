@@ -57,11 +57,6 @@ _.Zones =
 				p(549, {	-- Yellow-Bellied Marmot
 					["crs"] = { 62904 },
 				}),
-				q(31974, {	-- Goz Banefury
-					["provider"] = { "n", 66822 },	-- Goz Banefury
-					["coord"] = { 56.5, 56.7, TWILIGHT_HIGHLANDS },
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),

@@ -22,11 +22,6 @@ _.Zones =
 				p(627, {	-- Infected Squirrel
 					["crs"] = { 61828 },	-- Infected Squirrel
 				}),
-				q(31911, {	-- Deiza Plaguehorn
-					["provider"] = { "n", 66512 },	-- Deiza Plaguehorn
-					["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),

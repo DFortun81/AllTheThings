@@ -22,21 +22,6 @@ _.Zones =
 					}),
 				}),
 			}),
-			m(30,  {	-- New Tinkertown [Below]
-				filter(BATTLE_PETS, {
-					q(47895, {	-- Bert's Bots
-						["provider"] = { "n", 124617 },	-- Environeer Bert
-						["coord"] = { 42.9, 74.2, 30 },
-						["isDaily"] = true,
-						["description"] = "This pet has a chance of dropping after defeating Environeer Bert.  He is also located in Gnomeregan.",
-						["g"] = {
-							i(151638, {	-- Leprous Sack of Pet Supplies
-								i(151645),	-- Model D1-BB-L3R
-							}),
-						},
-					}),
-				}),
-			}),
 		}),
 	}),
 };

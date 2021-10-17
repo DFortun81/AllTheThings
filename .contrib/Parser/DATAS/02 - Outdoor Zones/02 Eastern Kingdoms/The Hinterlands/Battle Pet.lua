@@ -25,11 +25,6 @@ _.Zones =
 				p(417, {	-- Rat
 					["crs"] = { 61366 },	-- Rat
 				}),
-				q(31910, {	-- David Kosse
-					["provider"] = { "n", 66478 },	-- David Kosse
-					["coord"] = { 62.9, 54.5, THE_HINTERLANDS },
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),

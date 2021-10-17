@@ -19,11 +19,6 @@ _.Zones =
 				p(428, {	-- Molten Hatchling
 					["crs"] = { 61425 },	-- Molten Hatchling
 				}),
-				q(31912, {	--Kortas Darkhammer
-					["provider"] = { "n", 66515 },	-- Kortas Darkhammer
-					["coord"] = { 35.2, 27.7, SEARING_GORGE },
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),

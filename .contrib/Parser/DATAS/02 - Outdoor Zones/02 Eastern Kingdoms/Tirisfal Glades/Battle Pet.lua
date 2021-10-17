@@ -19,30 +19,6 @@ _.Zones =
 				p(417, {	-- Rat
 					["crs"] = { 61366 },
 				}),
-				n(63073, {	-- Ansel Fincap
-					["coord"] = { 60.8, 54.2, TIRISFAL_GLADES },
-					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
-					["g"] = {
-						p(75, {		-- Black Kingsnake
-							["races"] = { ORC, TROLL }
-						}),
-						p(70, {		-- Brown Prarie Dog
-							["races"] = { TAUREN },
-						}),
-						p(142, {	-- Golden Dragonhawk Hatchling
-							["races"] = { BLOODELF }
-						}),
-						p(792, {	-- Jade Crane Chick
-							["races"] = { PANDAREN_HORDE }
-						}),
-						p(629, {	-- Shore Crawler
-							["races"] = { GOBLIN }
-						}),
-						p(55, {		-- Undercity Cockroach
-							["races"] = { UNDEAD }
-						}),
-					},
-				}),
 				q(3861, {	-- CLUCK!
 					["provider"] = { "n", 620 },	-- Chicken
 					["description"] = "Target any chicken, then use |cFFFFD700/chicken|r repeatedly until the quest becomes available.",

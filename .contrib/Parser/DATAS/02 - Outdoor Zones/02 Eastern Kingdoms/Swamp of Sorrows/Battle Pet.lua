@@ -28,11 +28,6 @@ _.Zones =
 				p(418, {	-- Water Snake
 					["crs"] = { 61367 },	-- Water Snake
 				}),
-				q(31913, {	-- Everessa
-					["provider"] = { "n", 66518 },	-- Everessa
-					["coord"] = { 76.8, 41.4, SWAMP_OF_SORROWS },
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),

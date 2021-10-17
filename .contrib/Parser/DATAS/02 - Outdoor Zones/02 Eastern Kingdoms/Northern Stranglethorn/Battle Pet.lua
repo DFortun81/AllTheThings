@@ -34,20 +34,6 @@ _.Zones =
 				p(405, {	-- Tree Python
 					["crs"] = { 61318 },	-- Tree Python
 				}),
-				q(31728, {	-- Bill Buckler
-					["provider"] = { "n", 63194 },	-- Steven Lisbane
-					["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 31729,	-- Steven Lisbane
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(31852, {	-- Steven Lisbane
-					["provider"] = { "n", 63194 },	-- Steven Lisbane
-					["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),
