@@ -582,7 +582,7 @@ _.Zones =
 					},
 				}),
 				-- #if AFTER MOP
-				filter(BATTLE_PETS, {
+				petbattle(filter(BATTLE_PETS, {
 					p(464, {	-- Grey Moth
 						["crs"] = { 62050 },	-- Grey Moth
 						["maps"] = { AMMEN_VALE },
@@ -596,7 +596,7 @@ _.Zones =
 					p(379, {	-- Squirrel
 						["crs"] = { 61081 },	-- Squirrel
 					}),
-				}),
+				})),
 				-- #endif
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {

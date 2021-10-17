@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(TIRISFAL_GLADES, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(417, {	-- Bat
 					["crs"] = { 61829 },
 				}),
@@ -48,7 +48,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31576,	-- Learning the Ropes
 				}),
-			}),
+			})),
 		}),
 	}),
 };

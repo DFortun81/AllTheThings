@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(NORTHERN_BARRENS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(635, {	-- Adder
 					["crs"] = { 61325 },	-- Adder
 				}),
@@ -30,7 +30,7 @@ _.Zones =
 					["provider"] = { "n", 620 },	-- Chicken
 					["repeatable"] = true,
 				}),
-			}),
+			})),
 		}),
 	}),
 };

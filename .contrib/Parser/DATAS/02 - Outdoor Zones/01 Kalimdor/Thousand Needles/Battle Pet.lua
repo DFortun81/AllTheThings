@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(THOUSAND_NEEDLES, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(398, {	-- Black Rat
 					["crs"] = { 61257 },	-- Black Rat
 				}),
@@ -20,7 +20,7 @@ _.Zones =
 					["crs"] = { 62255 },	-- Twilight Iguana
 					["description"] = "Can be found in areas where the Twilight Hammer have set up camp, Twilight Bulwark and Twilight Withering.",
 				}),
-			}),
+			})),
 		}),
 	}),
 };

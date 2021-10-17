@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(TANARIS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(484, {	-- Desert Spider
 					["crs"] = { 62186 },	-- Desert Spider
 				}),
@@ -36,7 +36,7 @@ _.Zones =
 				p(432, {	-- Stripe-Tailed Scorpid
 					["crs"] = { 61440 },	-- Stripe-Tailed Scorpid
 				}),
-			}),
+			})),
 		}),
 	}),
 };

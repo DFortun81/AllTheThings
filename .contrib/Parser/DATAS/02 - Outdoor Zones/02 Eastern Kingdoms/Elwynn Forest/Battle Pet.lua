@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(ELWYNN_FOREST, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(374, {	-- Black Lamb
 					["crs"] = { 60649 },	-- Black Lamb
 				}),
@@ -36,7 +36,7 @@ _.Zones =
 					["description"] = "Target any chicken, then use |cFFFFD700/chicken|r repeatedly until the quest becomes available.",
 					["repeatable"] = true,
 				}),
-			}),
+			})),
 		}),
 	}),
 };

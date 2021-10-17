@@ -747,7 +747,7 @@ _.Zones =
 					},
 				}),
 				-- #if AFTER MOP
-				filter(BATTLE_PETS, {
+				petbattle(filter(BATTLE_PETS, {
 					p(459, {	-- Cat
 						["crs"] = { 62019 },	-- Cat
 						["maps"] = { SUNSTRIDER_ISLE },
@@ -764,7 +764,7 @@ _.Zones =
 					p(420, {	-- Toad
 						["crs"] = { 61369 },	-- Toad
 					}),
-				}),
+				})),
 				-- #endif
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(TWILIGHT_HIGHLANDS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(398, {	-- Black Rat
 					["crs"] = { 61257 },
 				}),
@@ -57,7 +57,7 @@ _.Zones =
 				p(549, {	-- Yellow-Bellied Marmot
 					["crs"] = { 62904 },
 				}),
-			}),
+			})),
 		}),
 	}),
 };

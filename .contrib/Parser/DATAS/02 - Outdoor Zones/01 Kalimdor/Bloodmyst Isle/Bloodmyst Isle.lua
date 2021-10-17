@@ -50,7 +50,7 @@ _.Zones =
 				}),
 				-- #endif
 				-- #if AFTER MOP
-				filter(BATTLE_PETS, {
+				petbattle(filter(BATTLE_PETS, {
 					p(628, {	-- Infected Fawn
 						["crs"] = { 61827 },	-- Infected Fawn
 					}),
@@ -66,7 +66,7 @@ _.Zones =
 					p(397, {	-- Skunk
 						["crs"] = { 61255 },	-- Skunk
 					}),
-				}),
+				})),
 				-- #endif
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {

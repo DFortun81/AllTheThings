@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(SWAMP_OF_SORROWS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(648, {	-- Huge Toad
 					["crs"] = { 61368 },	-- Huge Toad
 				}),
@@ -28,7 +28,7 @@ _.Zones =
 				p(418, {	-- Water Snake
 					["crs"] = { 61367 },	-- Water Snake
 				}),
-			}),
+			})),
 		}),
 	}),
 };

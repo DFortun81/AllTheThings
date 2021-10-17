@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(DUSKWOOD, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(398, { -- Black Rat
 					["crs"] = { 61257 },	-- Black Rat
 				}),
@@ -45,7 +45,7 @@ _.Zones =
 					["description"] = "Target any chicken, then use |cFFFFD700/chicken|r repeatedly until the quest becomes available.",
 					["repeatable"] = true,
 				}),
-			}),
+			})),
 		}),
 	}),
 };

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(WINTERSPRING, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(487, {	-- Alpine Chipmunk
 					["crs"] = { 62189 },	-- Alpine Chipmunk
 				}),
@@ -33,7 +33,7 @@ _.Zones =
 					["crs"] = { 7554 },	-- Snowy Owl
 					["description"] = "Starts spawning December 21st. Stops spawning March 20th",
 				}),
-			}),
+			})),
 		}),
 	}),
 };

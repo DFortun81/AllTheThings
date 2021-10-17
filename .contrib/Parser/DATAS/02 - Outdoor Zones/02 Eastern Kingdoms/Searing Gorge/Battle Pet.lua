@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(SEARING_GORGE, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(427, {	-- Ash Spiderling
 					["crs"] = { 61420 },	-- Ash Spiderling
 				}),
@@ -19,7 +19,7 @@ _.Zones =
 				p(428, {	-- Molten Hatchling
 					["crs"] = { 61425 },	-- Molten Hatchling
 				}),
-			}),
+			})),
 		}),
 	}),
 };

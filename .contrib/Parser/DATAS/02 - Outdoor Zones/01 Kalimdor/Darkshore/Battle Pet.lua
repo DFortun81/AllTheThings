@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(DARKSHORE, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(508, {	-- Darkshore Cub
 					["crs"] = { 62250 },	-- Darkshore Cub
 					["description"] = "Can be found in the woods west of the Grove of the Ancients, usually on the treeline just before the beach.",
@@ -23,7 +23,7 @@ _.Zones =
 				p(379, {	-- Squirrel
 					["crs"] = { 61081 },	-- Squirrel
 				}),
-			}),
+			})),
 		}),
 	}),
 };

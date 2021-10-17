@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(STONETALON_MOUNTAINS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(487, {	-- Alpine Chipmunk
 					["crs"] = { 62189 },	-- Alpine Chipmunk
 				}),
@@ -35,7 +35,7 @@ _.Zones =
 					["crs"] = { 62191 },	-- Venomspitter Hatchling
 					["description"] = "Can be found south of Windshear Hold in Webwinder Hollow with larger spiders.",
 				}),
-			}),
+			})),
 		}),
 	}),
 };

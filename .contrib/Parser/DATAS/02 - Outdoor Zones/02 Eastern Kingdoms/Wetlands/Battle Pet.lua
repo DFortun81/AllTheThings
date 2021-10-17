@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(WETLANDS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(398, {	-- Black Rat
 					["crs"] = { 61257 },	-- Black Rat
 				}),
@@ -31,7 +31,7 @@ _.Zones =
 				p(418, {	-- Water Snake
 					["crs"] = { 61367 },	-- Water Snake
 				}),
-			}),
+			})),
 		}),
 	}),
 };

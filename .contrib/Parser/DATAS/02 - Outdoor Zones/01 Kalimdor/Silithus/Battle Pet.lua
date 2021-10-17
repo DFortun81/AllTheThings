@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(SILITHUS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(406, {	-- Beetle
 					["crs"] = { 61319 },	-- Beetle
 				}),
@@ -33,7 +33,7 @@ _.Zones =
 				p(433, {	-- Spiky Lizard
 					["crs"] = { 61441 },	-- Spiky Lizard
 				}),
-			}),
+			})),
 		}),
 	}),
 };
