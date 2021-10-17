@@ -1638,7 +1638,7 @@ _.HiddenQuestTriggers = {
 		q(38038),	-- Max-level Choice Tracker: Tanaan 6.2 - The Iron Front (H)
 		q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (A)
 		q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol (H)
-		--q(33069),	-- REUSEME (after killing Supreme Lord Kazzak?) - questID is too low for Tanaan Jungle, it has to be something else
+		q(33069),	-- REUSEME (after killing Supreme Lord Kazzak and using Bonus Roll)
 		q(37887),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (A)
 		q(37892),	-- Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE (H)
 		q(37969),	-- Tanaan Jungle - Tracking Quest - Vol'mar Built - JMC

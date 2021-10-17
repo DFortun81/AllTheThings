@@ -1712,6 +1712,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(QUESTS, {
 			q(34691),	-- Just the Beginning
 			q(34677),	-- NOT USED
+			q(35161),	-- Vignette XP reward - Talador
 			-- Quests below are completable somehow (I have them all) -Darkal
 			q(33923),	-- Demons? In Auchindoun? - TODO: figure out from where it gets completed
 			q(33974),	-- Dying Wish - TODO: figure out from where it gets completed

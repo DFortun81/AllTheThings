@@ -1094,6 +1094,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(117993),	-- RENAME Rangari Boot Knife
 		}),
 		n(QUESTS, {
+			q(35618),	-- Gidwin Goldbraids
+			q(35621),	-- Tarenar Sunstrike
 			-- Quests below are completable somehow (I have them all) -Darkal
 			q(33267),	-- [Deprecated] - TODO: figure out from where it gets completed
 		}),

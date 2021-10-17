@@ -1320,7 +1320,14 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(118186),	-- Frostwolf Wisdom Stick
 		}),
 		n(QUESTS, {
+			q(35346),	-- Abatha, the Alchemist
+			q(35292),	-- Ang'kra, the Alchemist
 			q(37625),	-- Assault on Magnarok (A)
+			q(34063),	-- Enemies Above
+			q(34079),	-- Mission Successful
+			q(37062),	-- Tricks of the Trade
+			q(33562),	-- Trophy: Gorg'ak's Obsidian Spines
+			q(35057),	-- Vignette XP reward - Frostfire
 			-- Quests below are completable somehow (I have them all) -Darkal
 			q(36079),	-- A Hero's Welcome - TODO: figure out from where it gets completed
 			q(33380),	-- REUSE - TODO: figure out from where it gets completed
