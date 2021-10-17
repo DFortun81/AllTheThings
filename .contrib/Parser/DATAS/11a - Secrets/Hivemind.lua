@@ -103,7 +103,6 @@ _.Secrets =
 					}),
 					o(13000031, {	-- Red Crystal Monocle
 						["description"] = "Fish NPCs across Vashj'ir sell sea-themed currencies which need to be exchanged between the various NPCs in order to obtain the currencies required to purchase the |cFFFFD700Red Crystal Monocle|r.\n\nThe currencies expire after a period of time so it is advised that you purchase the items in the order listed.\n",
-						["icon"] = "Interface\\Icons\\inv_helmet_44",
 						["g"] = {
 							o(13000002, { -- Scintillating Murloc Skin Lotion
 								["description"] = "Exchange the following items with the NPC until you receive 5 |cFFFFD700Scintillating Murloc Skin Lotion|r.\n",
@@ -280,7 +279,7 @@ _.Secrets =
 				},
 			}),
 			o(13000035, {	-- Step 6: Jumping Puzzle
-				["description"] = "There multiple solutions to this puzzle. One of them is: First F is jumping onto the platform at the center, Directions: F = forward, L = left, R = right, B = back.\n 1 FF\n2 FLF\n1 F\n3 FFRR\n4 FL\n5 F\n2 L\n4 F\n2 L\n4 LF\n2 FL\n3 B\n5 FRRR\n3 F\n5 F\n1 RF\n3 BFR\n1 FL\n4 F\n2 BF\n5 F\n2 BF\n5 R\n3 F\n1 FR\n2 FR\n4 F\n2 LF\n4 F\n1 RF\n3 L\n4 F\n3 FF\n5 F\n1 L\n4 R\n5 L\n2 F\n4 F\n5 FF\n1 F\n3 L\n5 RF\n4 F\n1 R\n5 L\n1 F\n2 F\n3 Jump off! (leave vehicle and fall, only this person!).\n3 START AT FAR LEFT PLATFORM (Jump onto it).\n3 F\n2 F\n3 FFF\n2 B\n4 R\n5 F\n2 FRF\n3 FFFF",
+				["description"] = "There multiple solutions to this puzzle. One of them is: First F is jumping onto the platform at the center, Directions: F = forward, L = left, R = right, B = back.\n1 FF\n2 FLF\n1 F\n3 FFRR\n4 FL\n5 F\n2 L\n4 F\n2 L\n4 LF\n2 FL\n3 B\n5 FRRR\n3 F\n5 F\n1 RF\n3 BFR\n1 FL\n4 F\n2 BF\n5 F\n2 BF\n5 R\n3 F\n1 FR\n2 FR\n4 F\n2 LF\n4 F\n1 RF\n3 L\n4 F\n3 FF\n5 F\n1 L\n4 R\n5 L\n2 F\n4 F\n5 FF\n1 F\n3 L\n5 RF\n4 F\n1 R\n5 L\n1 F\n2 F\n3 Jump off! (leave vehicle and fall, only this person!).\n3 START AT FAR LEFT PLATFORM (Jump onto it).\n3 F\n2 F\n3 FFF\n2 B\n4 R\n5 F\n2 FRF\n3 FFFF",
 			}),
 			o(13000036, {	-- Step 7: Arcane Lava
 				["description"] = "First identify the 5 people in your group who can cross with whom;\nPerson A = can make it across with any duo or make it across with 1 specific trio\nPerson B = can make it across with person A in a duo or the specific trio\nSo the specific trio will be Person A, B, and either (C, D, or E) and you'll have to do some trial and error to identify who the last person is.Person C, D, E = can all can make it across with person A in a duo BUT like I said, 1 of these people will also be the last person in the specific trio (once you've identified them, just call them person C, from there person D and E don't matter)\n1. Person A, B, and C get on and go across.\n2. Person C gets off on other side, A and B go back across.\n3. Person B gets off at the start and A and D go back.\n4. Person D gets off on other side and person A and C come back to start.\n5. Person B gets on with person A and C and they travel back to the finish.\n6. Person C gets off at finish, person A and B go back to start.\n7. Person B gets off, person E gets on with person A.\n8. Person E gets off at finish, person A and C go back to the start.\n9. Person B gets on with A and C and go to finish.",
