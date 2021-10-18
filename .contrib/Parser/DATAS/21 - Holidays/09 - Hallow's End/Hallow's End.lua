@@ -3231,7 +3231,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 3.0.1" },
 					}),
 					q(12332, {	-- Candy Bucket — Dun Morogh, Kharanos, Alliance
+						-- #if AFTER CATA
 						["coord"] = { 54.5, 50.7, DUN_MOROGH },
+						-- #else
+						["coord"] = { 47.38, 52.44, DUN_MOROGH },
+						-- #endif
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(12344, {	-- Candy Bucket — Duskwood, Darkshire, Alliance
@@ -3335,7 +3339,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(12342, {	-- Candy Bucket — Redridge Mountains, Lakeshire, Alliance
+						-- #if AFTER CATA
 						["coord"] = { 26.4, 41.6, REDRIDGE_MOUNTAINS },
+						-- #else
+						["coord"] = { 27.0, 44.9, REDRIDGE_MOUNTAINS },
+						-- #endif
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(12360, {	-- Candy Bucket — Shadowmoon Valley, Wildhammer Stronghold, Alliance
