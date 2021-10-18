@@ -1972,6 +1972,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					436,	-- Scarlet Monastery, Crusader's Chapel
 				},
 				["timeline"] = { "added 2.0.1", "removed 4.0.1" },
+				["isDaily"] = true,
 				-- #if AFTER WRATH
 				["lvl"] = 75,
 				-- #elseif AFTER TBC
@@ -2954,11 +2955,19 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 5.0.1" },
 					}),
 					q(12398, {	-- Candy Bucket — Dustwallow Marsh, Mudsprocket, Neutral
+						-- #if AFTER CATA
 						["coord"] = { 41.0, 73.0, DUSTWALLOW_MARSH },
+						-- #else
+						["coord"] = { 41.86, 74.1, DUSTWALLOW_MARSH },
+						-- #endif
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(12402, {	-- Candy Bucket — Eastern Plaguelands, Light's Hope Chapel, Neutral
+						-- #if AFTER CATA
 						["coord"] = { 75.6, 52.4, EASTERN_PLAGUELANDS },
+						-- #else
+						["coord"] = { 81.7, 58.1, EASTERN_PLAGUELANDS },
+						-- #endif
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(28994, {	-- Candy Bucket — Felwood, Whisperwind Grove, Neutral
@@ -3013,6 +3022,10 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
 						["timeline"] = { "added 5.0.1" },
 					}),
+					q(29000, {	-- Candy Bucket — Mount Hyjal, Grove of Aessina, Neutral
+						["coord"] = { 18.7, 37.3, MOUNT_HYJAL },
+						["timeline"] = { "added 4.1.0.13726" },
+					}),
 					q(28999, {	-- Candy Bucket — Mount Hyjal, Nordrassil, Neutral
 						["coord"] = { 63.0, 24.1, MOUNT_HYJAL },
 						["timeline"] = { "added 4.1.0.13726" },
@@ -3043,14 +3056,10 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					}),
 					q(12409, {	-- Candy Bucket — Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars, Neutral
 						["coords"] = {
-							{ 30.3, 27.8, SHADOWMOON_VALLEY },	-- Scryer
 							{ 61.0, 28.2, SHADOWMOON_VALLEY },	-- Aldor
+							{ 56.4, 59.8, SHADOWMOON_VALLEY },	-- Scryer
 						},
 						["timeline"] = { "added 2.0.1" },
-					}),
-					q(29000, {	-- Candy Bucket — Mount Hyjal, Grove of Aessina, Neutral
-						["coord"] = { 18.7, 37.3, MOUNT_HYJAL },
-						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(12404, {	-- Candy Bucket — Shattrath City, Aldor Rise or Scryer's Tier, Neutral
 						["coords"] = {
@@ -3064,7 +3073,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 3.0.1" },
 					}),
 					q(12401, {	-- Candy Bucket — Silithus, Cenarion Hold, Neutral
+						-- #if AFTER CATA
 						["coord"] = { 55.5, 36.7, SILITHUS },
+						-- #else
+						["coord"] = { 51.8, 39.2, SILITHUS },
+						-- #endif
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(13462, {	-- Candy Bucket — Storm Peaks, Bouldercrag's Refuge, Neutral
@@ -3084,7 +3097,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(12399, {	-- Candy Bucket — Tanaris, Gadgetzan, Neutral
+						-- #if AFTER CATA
 						["coord"] = { 52.6, 27.1, TANARIS },
+						-- #else
+						["coord"] = { 52.45, 27.88, TANARIS },
+						-- #endif
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(32026, {	-- Candy Bucket — The Veiled Stair, Tavern in the Mists, Neutral
@@ -3128,7 +3145,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(12400, {	-- Candy Bucket — Winterspring, Everlook, Neutral
+						-- #if AFTER CATA
 						["coord"] = { 59.8, 51.2, WINTERSPRING },
+						-- #else
+						["coord"] = { 61.33, 38.86, WINTERSPRING },
+						-- #endif
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(12403, {	-- Candy Bucket — Zangarmarsh, Cenarion Refuge, Neutral
@@ -3210,7 +3231,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(12334, {	-- Candy Bucket — Darnassus, Craftsmen's Terrace, Alliance
+						-- #if AFTER CATA
 						["coord"] = { 62.2, 33.0, DARNASSUS },
+						-- #else
+						["coord"] = { 67.43, 16.0, DARNASSUS },
+						-- #endif
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(29020, {	-- Candy Bucket — Deepholm, Temple of Earth, Alliance
@@ -3286,8 +3311,16 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
 						["timeline"] = { "added 2.0.1" },
 					}),
+					q(12346, {	-- Candy Bucket — Hillsbrad Foothills, Southshore, Alliance
+						["coord"] = { 51.1, 59.0, HILLSBRAD_FOOTHILLS },
+						["timeline"] = { "added 2.0.1", "removed 4.0.1" },
+					}),
 					q(12351, {	-- Candy Bucket — Hinterlands, Aerie Peak, Alliance
+						-- #if AFTER CATA
 						["coord"] = { 14.2, 44.7, THE_HINTERLANDS },
+						-- #else
+						["coord"] = { 14.1, 41.5, THE_HINTERLANDS },
+						-- #endif
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(28970, {	-- Candy Bucket — Hinterlands, Stormfeather Outpost, Alliance
@@ -3371,7 +3404,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(12347, {	-- Candy Bucket — Stonetalon Mountains, Stonetalon Peak, Alliance
+						-- #if AFTER CATA
 						["coord"] = { 40.6, 17.7, STONETALON_MOUNTAINS },
+						-- #else
+						["coord"] = { 35.53, 6.4, STONETALON_MOUNTAINS },
+						-- #endif
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(29012, {	-- Candy Bucket — Stonetalon Mountains, Thal'darah Overlook, Alliance
@@ -3395,7 +3432,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(12331, {	-- Candy Bucket — Teldrassil, Dolanaar, Alliance
+						-- #if AFTER CATA
 						["coord"] = { 55.4, 52.3, TELDRASSIL },
+						-- #else
+						["coord"] = { 55.6, 59.85, TELDRASSIL },
+						-- #endif
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(12356, {	-- Candy Bucket — Terokkar Forest, Allerian Stronghold, Alliance
@@ -3885,8 +3926,10 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
 					{ "exclude", "itemID", 20413 },	-- Exclude Hallowed Wand - Random
 					{ "finalize" },	-- Push the processed items on to the finalized stack and ignore further queries on them.
+					-- #if AFTER WRATH
 					{ "select", "itemID", 33292 },	-- Hallowed Helm
 					{ "select", "itemID", 33154 },	-- Sinister Squashling (PET!)
+					-- #endif
 					{ "postprocess" },	-- Post Process the search results to ensure no duplicate keys exist.
 				},
 			}),
@@ -3901,9 +3944,9 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				-- #endif
 				["timeline"] = { "removed 3.0.1" },
 			}),
-			-- #if BEFORE 4.0.1
-			i(20390),	-- Candy Bar (Removed from this source with 4.0.1)
-			-- #endif
+			i(20390, {	-- Candy Bar
+				["timeline"] = { "removed 4.0.1" },
+			}),
 			i(20389, {	-- Candy Corn
 				["timeline"] = { "removed 4.0.1" },
 			}),
