@@ -14215,7 +14215,7 @@ RowOnEnter = function (self)
 					-- difficulty 0 seems to default to the lowest valid difficulty in the EJ
 					-- local tierID = GetRelativeValue(reference.parent, "tierID") or 0;
 					-- local instanceID = GetRelativeValue(reference.parent, "instanceID") or 0;
-					local difficultyID = GetRelativeValue(reference.parent, "difficultyID") or 0;
+					local difficultyID = GetRelativeValue(reference.parent, "difficultyID");
 					-- -- local funcs
 					-- local EJ_SetLootFilter, EJ_GetNumLoot = EJ_SetLootFilter, EJ_GetNumLoot;
 					-- local legacyLoot = C_Loot.IsLegacyLootModeEnabled();
