@@ -743,59 +743,52 @@ _.ExpansionFeatures =
 							["lvl"] = 120,
 						}),
 						q(54915, {	-- Telemetry Online
-							["provider"] = { "n", 149736 },	-- Image of Mimiron
-							["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
 							["sourceQuests"] = {
 								54913,	-- Spark of Genius (H)
 								55516,	-- Spark of Genius (A)
 							},
 							["classes"] = { HUNTER },
-							["lvl"] = 120,
+							["provider"] = { "n", 149736 },	-- Image of Mimiron
+							["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },w
 						}),
 						q(54916, {	-- The Huntsman's Creed
-							["provider"] = { "n", 149736 },	-- Image of Mimiron
-							["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
 							["sourceQuest"] = 54915,	-- Telemetry Online
 							["classes"] = { HUNTER },
-							["lvl"] = 120,
+							["provider"] = { "n", 149736 },	-- Image of Mimiron
+							["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
 						}),
 						q(54917, {	-- Paid in Blood
-							["provider"] = { "n", 149870 },	-- Grif Wildheart
-							["coord"] = { 33.6, 58.6, THE_STORM_PEAKS },
 							["sourceQuest"] = 54916,	-- The Huntsman's Creed
 							["classes"] = { HUNTER },
-							["lvl"] = 120,
+							["provider"] = { "n", 149870 },	-- Grif Wildheart
+							["coord"] = { 33.6, 58.6, THE_STORM_PEAKS },
 						}),
 						q(54918, {	-- Spark of Imagination
-							["provider"] = { "n", 150391 },	-- Image of Mimiron
-							["coord"] = { 39.3, 71.7, SILITHUS },
 							["sourceQuest"] = 54917,	-- Paid in Blood
 							["classes"] = { HUNTER },
-							["lvl"] = 120,
+							["provider"] = { "n", 150391 },	-- Image of Mimiron
+							["coord"] = { 39.3, 71.7, SILITHUS },
 						}),
 						q(54919, {	-- Bonds of Thunder
-							["provider"] = { "n", 151061 },	-- Mimiron
-							["coord"] = { 43.3, 38.8, 745 },
 							["sourceQuest"] = 54918,	-- Spark of Imagination
 							["classes"] = { HUNTER },
-							["lvl"] = 120,
+							["provider"] = { "n", 151061 },	-- Mimiron
+							["coord"] = { 43.3, 38.8, 745 },
 							["g"] = {
 								spell(292689),	-- Hati Reborn
 							},
 						}),
 						q(54920, {	-- Homeward Bound
-							["provider"] = { "n", 151061 },	-- Mimiron
-							["coord"] = { 43.3, 38.8, 745 },
 							["sourceQuest"] = 54919,	-- Bonds of Thunder
 							["classes"] = { HUNTER },
-							["lvl"] = 120,
+							["provider"] = { "n", 151061 },	-- Mimiron
+							["coord"] = { 43.3, 38.8, 745 },
 						}),
 						q(55195, {	-- Reverberation
-							["provider"] = { "n", 29445 },	-- Thorim
-							["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
 							["sourceQuest"] = 54920,	-- Homeward Bound
 							["classes"] = { HUNTER },
-							["lvl"] = 120,
+							["provider"] = { "n", 29445 },	-- Thorim
+							["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
 						}),
 						q(46940, {	-- Using Lost Knowledge
 							["classes"] = { HUNTER },

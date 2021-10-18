@@ -804,7 +804,6 @@ _.Zones =
 				}),
 		--[[ TODO: These quests will be organized soon™
 				q(43561),	-- I Believe I Can Fly!
-				q(43519),	-- Lucid Strength
 				q(40133),	-- Scrap of Pants
 				q(37660),	-- The Scythe of Souls
 				q(37930),	-- Whelp? That Happened.
