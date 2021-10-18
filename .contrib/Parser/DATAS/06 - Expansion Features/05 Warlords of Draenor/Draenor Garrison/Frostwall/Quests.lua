@@ -658,6 +658,15 @@ _.ExpansionFeatures =
 							},
 							["isDaily"] = true,
 						}),
+						q(40792, {	-- A Shattered Path Through Time
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 41.8, 46.8, FROSTWALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = {
+								i(127853),	-- Iron Fleet Treasure Chest
+							},
+						}),
 						q(38574, {	-- All Hands on Deck
 							["provider"] = { "n", 92400 },	-- Vol'jin
 							["races"] = HORDE_ONLY,

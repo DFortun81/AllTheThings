@@ -1322,8 +1322,7 @@ _.Instances = { tier(WOD_TIER, {
 				})),
 				cr(91331, e(1438, {	-- Archimonde
 					un(REMOVED_FROM_GAME, i(133762, {
-						un(REMOVED_FROM_GAME, q(40962, {
-							un(REMOVED_FROM_GAME, i(128422)),  -- Reins of the Grove Warden Mount
+						un(REMOVED_FROM_GAME, q(40904, {
 						})),
 					})),
 					i(124389),	-- Calamity's Edge

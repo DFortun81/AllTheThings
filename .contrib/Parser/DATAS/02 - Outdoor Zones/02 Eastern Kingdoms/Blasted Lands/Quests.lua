@@ -104,9 +104,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25685,	-- The First Step
 				}),
-				q(35499, {	-- Blow up towers
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(25716, {	-- Cultists at our Doorstep
 					["provider"] = { "n", 5385 },	-- Watcher Mahar Ba
 					["coord"] = { 63.1, 16.8, BLASTED_LANDS },
@@ -881,3 +878,10 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9981, {	-- Draenor
+		n(QUESTS, {
+			q(35499),	-- Blow up towers
+		}),
+	}),
+});

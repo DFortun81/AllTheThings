@@ -1205,11 +1205,11 @@ _.Zones =
 						33972,	-- Vile Defilers
 					},
 				}),
-				q(38562, {	-- Secrets of the Sargerei
+				q(38562, {	-- Secrets of the Sargerei (A)
 					["provider"] = { "n", 91751 },	-- Exarch Yrel
 					["coord"] = { 44.2, 65.4, TALADOR },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 38421,	-- Garrison Campaign: Onslaught at Auchindoun
+					["sourceQuest"] = 38421,	-- Garrison Campaign: Onslaught at Auchindoun (A)
 					["g"] = {
 						i(124552, {	-- Baleful Treads
 							i(124573),  -- Axeclaw Boots
@@ -1219,11 +1219,11 @@ _.Zones =
 						}),
 					},
 				}),
-				q(38416, {	-- Secrets of the Sargerei
+				q(38416, {	-- Secrets of the Sargerei (H)
 					["provider"] = { "n", 91750 },	-- Lady Liadrin
 					["coord"] = { 44.2, 65.2, TALADOR },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 38415,	-- Garrison Campaign: Onslaught at Auchindoun
+					["sourceQuest"] = 38415,	-- Garrison Campaign: Onslaught at Auchindoun (H)
 					["g"] = {
 						i(124552, {	-- Baleful Treads
 							i(124573),  -- Axeclaw Boots

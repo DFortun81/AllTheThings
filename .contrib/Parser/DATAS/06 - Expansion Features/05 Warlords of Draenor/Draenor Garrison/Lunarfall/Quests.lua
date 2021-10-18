@@ -500,6 +500,15 @@ _.ExpansionFeatures =
 							["provider"] = { "i", 115507 },	-- Drained Crystal Fragment
 							["requireSkill"] = JEWELCRAFTING,
 						}),
+						q(40792, {	-- A Shattered Path Through Time
+							["provider"] = { "n", 94870 },	-- Seer Kazal
+							["coord"] = { 33.4, 37.4, LUNARFALL },
+							["isWeekly"] = true,
+							["u"] = REMOVED_FROM_GAME,
+							["g"] = {
+								i(127853),	-- Iron Fleet Treasure Chest
+							},
+						}),	
 						q(38259, {	-- All Hands on Deck
 							["provider"] = { "n", 92219 },	-- King Varian Wrynn
 							["coord"] = { 32.0, 31.9, LUNARFALL },

@@ -1096,6 +1096,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(QUESTS, {
 			q(35618),	-- Gidwin Goldbraids
 			q(35621),	-- Tarenar Sunstrike
+			q(37113),	-- Thisalee Crow
 			-- Quests below are completable somehow (I have them all) -Darkal
 			q(33267),	-- [Deprecated] - TODO: figure out from where it gets completed
 		}),

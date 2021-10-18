@@ -1008,8 +1008,93 @@ _.NeverImplemented =
 			q(38157),	-- WOD 90-99
 			q(38168),	-- WOD 90-99
 			
+			-- 6.2.0
+			q(38592),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
+			q(38594),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
+			q(37888),	-- 6.2 Tanaan Max-level Choice Reward Summary: Solo
+			q(37947),	-- 6.2 Tanaan Max-level Choice Reward Summary: Solo
+			q(39147),	-- 6.2 Tanaan - PTR - Unlock Tanaan Debug
+			q(39107),	-- An Even Bigga Score
+			q(39294),	-- Ashran Dominance
+			q(39520),	-- Ashran Dominance
+			q(39522),	-- Ashran Dominance
+			q(39263),	-- Ashran Excavation
+			q(38874),	-- BAD
+			q(39264),	-- Bonus Objective: Ashran Excavation
+			q(38633),	-- Burning Importance
+			q(38924),	-- Continue the Domination
+			q(38926),	-- Continue the Domination
+			q(39521),	-- Continue the Domination
+			q(39523),	-- Continue the Domination
+			q(38707),	-- DEPRECATED
+			q(38733),	-- DEPRECATED
+			q(39076),	-- DEPRICATED
+			q(39233),	-- Don't Hate, Excavate!
+			q(37754),	-- Dungeon Active
+			q(39370),	-- Equipment Blueprint: Ammo Reserves
+			q(39369),	-- Equipment Blueprint: Automated Sky Scanner
+			q(39368),	-- Equipment Blueprint: Blast Furnace
+			q(39367),	-- Equipment Blueprint: Extra Quarters
+			q(39362),	-- Equipment Blueprint: Q-43 Noisemaker Mines
+			q(39361),	-- Equipment Blueprint: Sonic Amplification Field
+			q(39461),	-- NOT USED
+			q(39497),	-- Ogre Waygate
+			q(39002),	-- Ogres of the Deep
+			q(38214),	-- REUSE
+			q(38222),	-- REUSE
+			q(39398),	-- Short-Supply Reward
+			q(39468),	-- Short-Supply Reward
+			q(39473),	-- Short-Supply Reward
+			q(39474),	-- Short-Supply Reward
+			q(39475),	-- Short-Supply Reward
+			q(39476),	-- Short-Supply Reward
+			q(39477),	-- Short-Supply Reward
+			q(39478),	-- Short-Supply Reward
+			q(39479),	-- Short-Supply Reward
+			q(39480),	-- Short-Supply Reward
+			q(39481),	-- Short-Supply Reward
+			q(39482),	-- Short-Supply Reward
+			q(39483),	-- Short-Supply Reward
+			q(39484),	-- Short-Supply Reward
+			q(39485),	-- Short-Supply Reward
+			q(39524),	-- Slay Them All!
+			q(39525),	-- Slay Them All!
+			q(39001),	-- To Farahlon!
+			q(39727),	-- Tracking Quest
+			q(39728),	-- Tracking Quest
+			q(39740),	-- Tracking Quest
+			q(39751),	-- Tracking Quest
+			q(39752),	-- Tracking Quest
+			q(39753),	-- Tracking Quest
+			q(39036),	-- Tracking: Alliance Siegebreaker
+			q(39035),	-- Tracking: Horde Siegebreaker
+			q(39037),	-- Tracking: Iron Horde Siegebreaker
+			q(39038),	-- Tracking: Resource Rich
+			q(38280),	-- Treasure: Skragg's Buried Treasure
+			q(37749),	-- Trials of Khadgar: Iron Maidens
+			q(38221),	-- UNUSED
+			q(38261),	-- UNUSED
+			q(38022),	-- [DEPRECATED]Assault on the Temple of Sha'naar
+			
+			-- 6.2.1
+			q(39292),	-- Ashran Dominance
+			q(38260),	-- Beachhead
+			q(38575),	-- Beachhead
+			q(36593),	-- Breakers Invasion! UNUSED
+			q(38224),	-- REUSE
+			q(36572),	-- Tangleheart Return
+			q(36661),	-- The Power of the Red
+			q(38855),	-- zzDEPRECATEDzz Fighting on the Front
+			
 			-- 6.2.2
+			q(39052),	-- Blueprints Are Important
 			q(40395),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
+			q(33560),	-- Light's Rest
+			q(37924),	-- Maritime Salvage
+			q(39608),	-- Mysterious Brew Consumed
+			q(33911),	-- No Draenei Left Behind
+			q(34120),	-- The Shard of Shadows
+			q(39714),	-- Where Are the Children?
 			
 			-- 6.2.3
 			q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
