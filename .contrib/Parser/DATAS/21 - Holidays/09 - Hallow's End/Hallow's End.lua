@@ -1489,7 +1489,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					},
 					-- Minimum level this bag drops (not 100% sure)
 					-- #if AFTER 9.0.1
-					["lvl"] = 45,
+					["lvl"] = 50,
 					-- #elseif AFTER 8.0.1
 					["lvl"] = 110,
 					-- #elseif AFTER 7.2.5
