@@ -2905,7 +2905,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 3.0.1" },
 					}),
 					q(12397, {	-- Candy Bucket — Cape of Stranglethorn, Booty Bay, Neutral
+						-- #if AFTER CATA
 						["coord"] = { 40.9, 73.8, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						["coord"] = { 27.1, 77.3, STRANGLETHORN_VALE },
+						-- #endif
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(43055, {	-- Candy Bucket — Dalaran : Broken Shores, Legerdemain Lounge, Neutral
@@ -3879,7 +3883,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				},
 			}),
 			i(20393, {	-- Treat Bag
-				-- #if BEFORE TBC
+				-- #if BEFORE 3.0.1
 				["description"] = "Get this by Trick or Treating at any Innkeeper.",
 				["sym"] = {
 					{ "selectparent" },	-- Select the "Rewards" header.
@@ -3887,7 +3891,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					{ "exclude", "itemID", 20393 },	-- Treat Bag (self)
 				},
 				-- #endif
-				["timeline"] = { "removed 2.4.3.8600" },
+				["timeline"] = { "removed 3.0.1" },
 			}),
 			-- #if BEFORE 4.0.1
 			i(20390),	-- Candy Bar (Removed from this source with 4.0.1)
