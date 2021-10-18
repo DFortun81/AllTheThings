@@ -62,7 +62,7 @@ _.Zones =
 							["provider"] = { "n", 64227 },	-- Frozen Trail Packer
 						}),
 						o(213751, {	-- Sprite's Cloth Chest
-							["description"] = "Cave entrance is at 73.2, 73.6.  This chest is personal loot and focuses on your set spec, not your loot spec.",
+							["description"] = "Cave entrance is at 73.2, 73.6.  This chest is personal loot and based on your current Spec, NOT your Loot Spec.",
 							["modelScale"] = 1.5,
 							["questID"] = 31412,
 							["model"] = 446675,
@@ -70,19 +70,19 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\inv_misc_treasurechest01a",
 							["g"] = {
 								i(86223, {	-- Agile Sprite Cloak
-									["description"] = "Can only be looted with an Agility Loot Spec.",
+									["description"] = "Only lootable while in an Agility DPS Spec (Hunter/Rogue).",
 								}),
 								i(86222, {	-- Precise Sprite Cloak
-									["description"] = "Can only be looted as Mage or Warlock.",
+									["description"] = "Only lootable while in an Intellect DPS Spec (Mage/Warlock).", -- verified 2021-10-18 Mage(Frost)
 								}),
 								i(86225, {	-- Strong Sprite Cloak
-									["description"] = "Can only be looted as Plate in DPS Loot Spec.",
+									["description"] = "Only lootable while in a Strength DPS Spec.",
 								}),
 								i(86221, {	-- Wise Sprite Cloak
-									["description"] = "Can only be looted as Priest or Druid/Shaman in Balance-/Elemental- or Resto Loot Spec.",
+									["description"] = "Only lootable while in a Healer Spec.", -- verified ?? Shaman(Resto)
 								}),
 								i(86224, {	-- Steadfast Sprite Cape
-									["description"] = "Can only be looted with a Tank Loot Spec.",
+									["description"] = "Only lootable while in a Tank Spec.",
 								}),
 							},
 						}),
