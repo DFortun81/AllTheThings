@@ -658,9 +658,9 @@ _.Holidays = { applyholiday(PILGRIMS_BOUNTY, {
 				["coord"] = { 61.4, 67.4, TIRISFAL_GLADES },
 				["maps"] = { UNDERCITY },
 				["races"] = HORDE_ONLY,
-				["cr"] = 46796,	-- Bountiful Barrel <Pilgrim's Bounty Supplies>
+				["cr"] = 35341,	-- Bountiful Barrel <Pilgrim's Bounty Supplies>
 				["groups"] = {
-					i(35341),	-- Bountiful Barrel <Pilgrim's Bounty Supplies>
+					i(46796),	-- Ripe Tirisfal Pumpkin
 				},
 			}),
 			n(34682, {	-- Wilmina Holbeck <Pilgrim's Bounty Vendor>
