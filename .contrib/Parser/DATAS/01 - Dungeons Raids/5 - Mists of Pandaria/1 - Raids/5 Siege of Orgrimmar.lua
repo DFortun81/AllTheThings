@@ -1833,7 +1833,7 @@ _.Instances = { tier(MOP_TIER, {
 						-- i(113223),	-- Turtleshell Greatcloak
 						-- i(113225),	-- Kalaena's Arcane Handwraps
 						-- i(113218),	-- Seebo's Sainted Touch
-						-- i(113220),	-- Crimson Gauntlets of Death
+						i(113220),	-- Crimson Gauntlets of Death
 						-- i(113221),	-- Siid's Silent Stranglers
 						i(113222),	-- Keengrip Arrowpullers
 						-- i(113227),	-- Marco's Crackling Gloves
