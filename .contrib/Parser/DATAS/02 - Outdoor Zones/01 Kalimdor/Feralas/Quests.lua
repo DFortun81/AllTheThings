@@ -192,7 +192,7 @@ _.Zones =
 					["provider"] = { "n", 40913 },	-- Handler Jesana
 					["coord"] = { 77.0, 56.6, FERALAS },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25410,	-- Forces of Nature: Treants
+					["sourceQuest"] = 25469,	-- Forces of Nature: Mountain Giants
 				}),
 				q(25409, {	-- Forces of Nature: Hippogryphs
 					["provider"] = { "n", 40078 },	-- Handler Tessina
@@ -575,7 +575,12 @@ _.Zones =
 					["provider"] = { "n", 39725 },	-- Adella
 					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25429,	-- Spiteful Sisters
+					["sourceQuests"] = {
+						25431,	-- Stinglasher (A)
+						25433,	-- Sasquatch Sighting (A)
+						25434,	-- Taming the Tamers (A)
+						25429,	-- Zukk'ash Infestation (A)
+					},
 				}),
 				q(25465, {	-- Still With The Zapped Giants
 					["provider"] = { "n", 14637 },	-- Zorbin Fandazzle

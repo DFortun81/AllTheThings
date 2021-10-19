@@ -18,6 +18,11 @@ _.Zones =
 				}),
 				fp(2590, {	-- Ardenweald, Refugee Camp
 					["coord"] = { 92.9, 51.5, ARDENWEALD },
+					["customCollect"] = {
+						"SL_COV_NEC",	-- Necrolord
+						"SL_COV_KYR",	-- Kyrian
+						"SL_COV_VEN",	-- Venthyr
+					},
 				}),
 				fp(2588, {	-- Ardenweald, Root-Home
 					["coord"] = { 35.1, 51.7, ARDENWEALD },

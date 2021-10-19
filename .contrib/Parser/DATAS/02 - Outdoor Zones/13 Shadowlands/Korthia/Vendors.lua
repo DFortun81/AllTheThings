@@ -57,6 +57,7 @@ _.Zones =
 						}),
 						--]]
 						i(187138, {	-- Research Report: First Alloys
+							["questID"] = 64303,
 							["cost"] = { { "c", 1931, 8000 } },	-- 8,000x Catalogued Research
 						}),
 						i(187706, {	-- Treatise: Bonds of Stygia in Mortals

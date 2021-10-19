@@ -126,6 +126,14 @@ _.Zones =
 						i(131773),	-- Flamescale Mail
 					},
 				}),
+				n(101649,  {	-- Frostshard
+					["questID"] = 40773,
+					["coords"] = {
+						{ 51.0, 80.8, HIGHMOUNTAIN },
+						{ 51.8, 79.0, HIGHMOUNTAIN },
+						{ 54.6, 75.6, HIGHMOUNTAIN },
+					},
+				}),
 				n(96590,  {	-- Gurbog da Basher
 					["questID"] = 40347,
 					["coord"] = { 56.5, 60.7, HIGHMOUNTAIN },

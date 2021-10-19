@@ -2,6 +2,68 @@
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
 
+local WOD_CRAFTED_ITEM = function(id, upgradeItem)
+	return
+	i(id, {	-- Base Item 1/6
+		["bonusID"] = 525,
+		["g"] = bubbleDown({["cost"] = upgradeItem and { { "i", upgradeItem, 1 } }},{
+			i(id, {	-- Upgrade 1 2/6
+				["bonusID"] = 558,
+				["u"] = REMOVED_FROM_GAME,
+				["g"] = {
+					i(id, {	-- Upgrade 2 3/6
+						["bonusID"] = 559,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					i(id, {	-- Upgrade 2 4/6
+						["bonusID"] = 594,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					i(id, {	-- Upgrade 2 5/6
+						["bonusID"] = 619,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					i(id, {	-- Upgrade 2 6/6
+						["bonusID"] = 620,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+				},
+			}),
+		}),
+	});
+end
+
+-- this is the exact same logic, but ignores applying the SourceID's to the upgraded versions since they are identical
+-- to the base version. This prevents the unobtainable flag showing for the base version since the Item will search by
+-- SourceID in-game and combine the information from all matching sources, which would include unobtainable flags
+-- So screw it, all versions get to 'pretend' to be obtainable for the sake of the Base item which is considered identical otherwise
+-- due to the same SourceID
+local WOD_CRAFTED_IDENTICAL_ITEM = function(id, upgradeItem)
+	return
+	i(id, {	-- Base Item 1/6
+		["bonusID"] = 525,
+		["g"] = bubbleDown({["cost"] = upgradeItem and { { "i", upgradeItem, 1 } },},{
+			i(id, {	-- Upgrade 1 2/6
+				["bonusID"] = 558,
+				["g"] = {
+					i(id, {	-- Upgrade 2 3/6
+						["bonusID"] = 559,
+					}),
+					i(id, {	-- Upgrade 2 4/6
+						["bonusID"] = 594,
+					}),
+					i(id, {	-- Upgrade 2 5/6
+						["bonusID"] = 619,
+					}),
+					i(id, {	-- Upgrade 2 6/6
+						["bonusID"] = 620,
+					}),
+				},
+			}),
+		}),
+	});
+end
+
 _.Craftables =
 {
 	tier(WOD_TIER, {
@@ -70,10 +132,10 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(109168, 128017),	-- Shrediron's Shredder* + True Iron Trigger*
 			}),
 			n(-318, {	-- Armour
-				WOD_CRAFTED_ITEM(109173, 128011),	-- Cybergenetic Mechshades* + Linkgrease Locksprocket
-				WOD_CRAFTED_ITEM(109171, 128011),	-- Night-Vision Mechshades* + Linkgrease Locksprocket
-				WOD_CRAFTED_ITEM(109172, 128011),	-- Plasma Mechshades* + Linkgrease Locksprocket
-				WOD_CRAFTED_ITEM(109174, 128011),	-- Razorguard Mechshades* + Linkgrease Locksprocket
+				WOD_CRAFTED_IDENTICAL_ITEM(109173, 128011),	-- Cybergenetic Mechshades* + Linkgrease Locksprocket
+				WOD_CRAFTED_IDENTICAL_ITEM(109171, 128011),	-- Night-Vision Mechshades* + Linkgrease Locksprocket
+				WOD_CRAFTED_IDENTICAL_ITEM(109172, 128011),	-- Plasma Mechshades* + Linkgrease Locksprocket
+				WOD_CRAFTED_IDENTICAL_ITEM(109174, 128011),	-- Razorguard Mechshades* + Linkgrease Locksprocket
 			}),
 		}),
 		prof(INSCRIPTION, {

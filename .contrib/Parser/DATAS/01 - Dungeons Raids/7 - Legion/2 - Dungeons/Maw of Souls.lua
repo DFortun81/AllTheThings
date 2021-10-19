@@ -110,8 +110,8 @@ _.Instances = { tier(LEGION_TIER, {
 				--	i(137899),	-- Recipe: Dreadleather Jerkin (Rank 3) (Not confirmed)
 					i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
 					i(136696, {	-- Recipe: Terrorspike
-						["description"] = "This recipe should only drop while you're actively on |cFFFFD700Maw of Souls: Hammered By The Storm|r or after you've completed it.",
-						["sourceQuest"] = 38532,	-- Maw of Souls: Hammered By The Storm
+						-- ["description"] = "This recipe should only drop while you're actively on |cFFFFD700Maw of Souls: Hammered By The Storm|r or after you've completed it.",
+						-- ["sourceQuest"] = 38532,	-- Maw of Souls: Hammered By The Storm
 						["requireSkill"] = BLACKSMITHING,
 					}),
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
@@ -186,6 +186,10 @@ _.Instances = { tier(LEGION_TIER, {
 					i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
 					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
 					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
+					i(136696, {	-- Recipe: Terrorspike
+						-- confirmed in #errors 2021-10-15, no quest required
+						["requireSkill"] = BLACKSMITHING,
+					}),
 					i(137331),	-- Belt of Eternal Torment
 					i(134195),	-- Biornskin Gloves
 					i(134221),	-- Bonespeaker Mantle

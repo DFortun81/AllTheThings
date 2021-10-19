@@ -256,6 +256,7 @@ _.Zones =
 										i(44721),	-- Proto-Drake Whelp (PET!)
 										i(39896),	-- Tickbird Hatchling (PET!)
 										i(39899),	-- White Tickbird Hatchling (PET!)
+										i(44722),	-- Aged Yolk
 									}),
 								}),
 								i(44074),	-- Oracle Talisman of Ablution

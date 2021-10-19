@@ -990,7 +990,6 @@ _.Zones =
 				q(43961),	-- Bestrix
 				q(42417),	-- Bilebrain
 				q(39991),	-- Blessing of Cenarius
-				q(40773),	-- Bloodshard
 				q(41842),	-- Bottom of the Food Chain
 				q(40243),	-- Break Weapon Racks
 				q(40405),	-- Bristlemaul

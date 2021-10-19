@@ -1237,6 +1237,7 @@ _.Zones =
 				--	unsure if there are prerequisites for this quest.
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["coord"] = { 28.8, 48.4, LEGION_DALARAN },
+					["maps"] = { 888 },	-- Hall of Communion
 					["lvl"] = 110,
 				}),
 				q(46206, {	-- Whispers of a Frightened World

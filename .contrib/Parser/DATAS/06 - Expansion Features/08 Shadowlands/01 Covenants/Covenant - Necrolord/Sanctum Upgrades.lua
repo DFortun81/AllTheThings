@@ -1063,6 +1063,7 @@ _.HiddenQuestTriggers = {
 	q(63392),	-- Gloves (182502) / Stranglers (182493)
 	q(63394),	-- Armguards (182497)
 	q(63395),	-- Breeches (182494)
+	q(63398),	-- Chest
 	q(63400),	-- Cloak (182498)
 	q(63399),	-- Slippers (182501)
 -- Duty-Bound Wraith

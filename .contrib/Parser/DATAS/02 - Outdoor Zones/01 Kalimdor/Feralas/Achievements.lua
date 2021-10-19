@@ -20,7 +20,7 @@ _.Zones =
 							["sourceQuest"] = 26401,	-- Return to Vestia
 						}),
 						crit(4, {	-- Forces of Nature
-							["sourceQuest"] = 25469,	-- Forces of Nature: Mountain Giants
+							["sourceQuest"] = 25468,	-- Forces of Nature: Faerie Dragons
 						}),
 						crit(5, {	-- The Dragons of Nightmare
 							["sourceQuest"] = 25438,	-- Ysondre's Farewell
