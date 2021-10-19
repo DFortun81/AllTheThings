@@ -12,6 +12,30 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							n(QUESTS, {
+								q(37320, {	-- Jewelcrafting Special Order: A Fine Choker
+									["provider"] = { "n", 88545 },	-- Jewelcrafting Follower - Alliance
+									["isDaily"] = true,
+								}),
+								q(37321, {	-- Jewelcrafting Special Order: A Yellow Brighter Than Gold
+									["provider"] = { "n", 88545 },	-- Jewelcrafting Follower - Alliance
+									["isDaily"] = true,
+								}),
+								q(37323, {	-- Jewelcrafting Special Order: Blue the Shade of Sky and Sea
+									["provider"] = { "n", 88545 },	-- Jewelcrafting Follower - Alliance
+									["isDaily"] = true,
+								}),
+								q(37319, {	-- Jewelcrafting Special Order: Wedding Bands
+									["provider"] = { "n", 88545 },	-- Jewelcrafting Follower - Alliance
+									["isDaily"] = true,
+								}),
+								q(37324, {	-- Out of Stock: Blackrock Ore
+									["provider"] = { "n", 88545 },	-- Jewelcrafting Follower - Alliance
+									["isDaily"] = true,
+								}),
+								q(37325, {	-- Out of Stock: True Iron Ore
+									["provider"] = { "n", 88545 },	-- Jewelcrafting Follower - Alliance
+									["isDaily"] = true,
+								}),
 								q(36644, {	-- Your First Jewelcrafting Work Order
 									["races"] = ALLIANCE_ONLY,
 									["provider"] = { "n", 77356 },	-- Costan Highwall

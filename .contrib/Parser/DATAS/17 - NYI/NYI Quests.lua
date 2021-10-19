@@ -591,9 +591,6 @@ _.NeverImplemented =
 			q(33496),	-- Iron Horde in Karabor
 			q(35020),	-- Jared's Test Quest
 			q(35294),	-- Jasper Moves
-			q(37320),	-- Jewelcrafting Special Order: A Fine Choker
-			q(37321),	-- Jewelcrafting Special Order: A Yellow Brighter Than Gold
-			q(37319),	-- Jewelcrafting Special Order: Wedding Bands
 			q(34690),	-- Just the Beginning
 			q(33733),	-- Karmaan
 			q(34602),	-- Kill Goren
