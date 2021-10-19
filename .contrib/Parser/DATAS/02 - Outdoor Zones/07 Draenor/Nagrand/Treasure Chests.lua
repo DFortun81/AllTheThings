@@ -922,6 +922,13 @@ _.Zones =
 						i(116640),  -- Howling Staff
 					},
 				}),
+				o(233079, {	-- Appropriated Warsong Supplies
+					["questID"] = 35673,
+					["coord"] = { 73.1, 75.5, DRAENOR_NAGRAND },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(233773, {	-- Bag of Herbs
 					["questID"] = 36116,
 					["coord"] = { 62.6, 67.1, DRAENOR_NAGRAND },
@@ -1095,6 +1102,20 @@ _.Zones =
 				o(233132, {	-- Freshwater Clam
 					["questID"] = 35692,
 					["coord"] = { 73.1, 21.6, DRAENOR_NAGRAND },
+				}),
+				o(233044, {	-- Fungus-Covered Chest
+					["questID"] = 35660,
+					["coord"] = { 88.9, 18.2, DRAENOR_NAGRAND },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
+				o(233649, {	-- Gambler's Purse
+					["questID"] = 36074,
+					["coord"] = { 75.4, 47.1, DRAENOR_NAGRAND },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
 				}),
 				o(233539, {	-- Genedar Debris
 					["questID"] = 35987,
@@ -1400,6 +1421,13 @@ _.Zones =
 						i(118264),	-- Serrated Void Crystal
 					},
 				}),
+				o(233135, {	-- Warsong Cache
+					["questID"] = 35695,
+					["coord"] = { 51.7, 60.4, DRAENOR_NAGRAND },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(233645, {	-- Warsong Helm
 					["questID"] = 36073,
 					["coord"] = { 52.5, 44.5, DRAENOR_NAGRAND },
@@ -1407,11 +1435,25 @@ _.Zones =
 						i(118250),	-- Riverwashed Warsong Helm
 					},
 				}),
+				o(233103, {	-- Warsong Lockbox
+					["questID"] = 35678,
+					["coord"] = { 73.1, 70.5, DRAENOR_NAGRAND },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(233113, {	-- Warsong Spear
 					["questID"] = 35682,
 					["coord"] = { 76.1, 69.9, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118678),	-- Ceremonial Warsong Spear
+					},
+				}),
+				o(233521, {	-- Warsong Supplies
+					["questID"] = 35976,
+					["coord"] = { 89.4, 65.8, DRAENOR_NAGRAND },
+					["g"] = {
+						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(235307, {	-- Watertight Bag

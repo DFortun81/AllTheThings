@@ -1490,13 +1490,13 @@ _.Zones =
 						["coord"] = { 57.0, 17.0, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
 					}),
-					q(35379, {	-- Hemet's Happy Hunting Grounds (bonus objective)
+					q(35379, {	-- Hemet's Happy Hunting Grounds
 						["coord"] = { 87.7, 46.8, DRAENOR_NAGRAND },
 					}),
-					q(34723, {	-- Ironfist Harbor (bonus objective)
+					q(34723, {	-- Ironfist Harbor
 						["coord"] = { 40.0, 74.4, DRAENOR_NAGRAND },
 					}),
-					q(37280, {	-- Snarlpaw Ledge (bonus objective)
+					q(37280, {	-- Snarlpaw Ledge
 						["coord"] = { 79.1, 29.0, DRAENOR_NAGRAND },
 					}),
 				}),
@@ -1510,6 +1510,8 @@ _.HiddenQuestTriggers = {
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9981, {	-- Draenor
 		n(QUESTS, {
+			q(38204),	-- Assault on the Gorian Proving Grounds (A)
+			q(38205),	-- Assault on the Gorian Proving Grounds (H)
 			q(37523),	-- Assault on the Gorian Proving Grounds (A)
 			q(37524),	-- Assault on the Gorian Proving Grounds (H)
 			-- Quests below are completable somehow (I have them all) -Darkal

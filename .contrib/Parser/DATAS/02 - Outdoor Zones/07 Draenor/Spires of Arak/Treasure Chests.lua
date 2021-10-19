@@ -108,6 +108,13 @@ _.Zones =
 						i(116919),	-- Fractured Sunstone
 					},
 				}),
+				o(235103, {	-- Garrison Supplies
+					["questID"] = 36420,
+					["coord"] = { 37.2, 47.5, SPIRES_OF_ARAK },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(235289, {	-- Garrison Workman's Hammer
 					["questID"] = 36451,
 					["coord"] = { 41.8, 50.5, SPIRES_OF_ARAK },
@@ -189,6 +196,13 @@ _.Zones =
 						i(116911),	-- Outcast Decoder Ring
 					},
 				}),
+				o(235095, {	-- Misplaced Scroll
+					["questID"] = 36416,
+					["coord"] = { 52.5, 42.7, SPIRES_OF_ARAK },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(234154, {	-- Misplaced Scrolls
 					["questID"] = 36244,
 					["icon"] = "Interface\\Icons\\trade_archaeology_silverscrollcase",
@@ -200,6 +214,13 @@ _.Zones =
 				o(235300, {	-- Mysterious Mushrooms
 					["questID"] = 36454,
 					["coord"] = { 63.6, 67.4, SPIRES_OF_ARAK },
+				}),
+				o(232458, {	-- Nizzix's Chest
+					["questID"] = 35481,
+					["coord"] = { 60.9, 87.8, SPIRES_OF_ARAK },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
 				}),
 				o(234744, {	-- Offering to the Raven Mother
 					["questID"] = 36403,
@@ -675,13 +696,28 @@ _.Zones =
 						i(116887),	-- Rooby Roo's Ruby Rollar
 					},
 				}),
+				n(85206, {	-- Rukhmar's Image
+					["questID"] = 36377,
+					["coord"] = { 44.4, 12.0, SPIRES_OF_ARAK },
+				}),
 				o(234472, {	-- Sailor Zazzuk's 180-Proof Rum
 					["questID"] = 36366,
 					["coord"] = { 55.5, 90.8, SPIRES_OF_ARAK },
 				}),
+				n(85190, {	-- Sethekk Idol
+					["questID"] = 36375,
+					["coord"] = { 68.2, 38.8, SPIRES_OF_ARAK },
+				}),
 				o(235282, {	-- Sethekk Ritual Brew
 					["questID"] = 36450,
 					["coord"] = { 71.6, 48.6, SPIRES_OF_ARAK },
+				}),
+				o(234458, {	-- Shattered Hand Cache
+					["questID"] = 36362,
+					["coord"] = { 56.2, 28.8, SPIRES_OF_ARAK },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
 				}),
 				o(234456, {	-- Shattered Hand Lockbox
 					["questID"] = 36361,
@@ -750,6 +786,17 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
 					["coord"] = { 56.3, 45.3, SPIRES_OF_ARAK },
 					["description"] = "Requires archaeology.",
+				}),
+				o(234471, {	-- Spray-O-Matic 5000 XT
+					["questID"] = 36365,
+					["coord"] = { 59.7, 81.5, SPIRES_OF_ARAK },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
+				n(85165, {	-- Statue of Anzu
+					["questID"] = 36374,
+					["coord"] = { 57.8, 22.2, SPIRES_OF_ARAK },
 				}),
 				o(235104, {	-- Sun-Touched Cache
 					["questID"] = 36421,

@@ -11,55 +11,28 @@ _.NeverImplemented =
 {
 	n(QUESTS, {
 		tier(CLASSIC_TIER, { -- These Quests might be ingame, very unlikely however.
-			q(38149),	-- Classic 10-19
-			q(38160),	-- Classic 10-19
-			q(38132),	-- Classic 20-29
-			q(38150),	-- Classic 20-29
-			q(38161),	-- Classic 20-29
 			q(62300),	-- Classic 20-49
-			q(38133),	-- Classic 30-39
-			q(38151),	-- Classic 30-39
-			q(38162),	-- Classic 30-39
-			q(38134),	-- Classic 40-49
-			q(38152),	-- Classic 40-49
-			q(38163),	-- Classic 40-49
 			q(62301),	-- Classic 50
 			q(62302),	-- Classic 50
 			q(62303),	-- Classic 50
 			q(62351),	-- Classic 50
 			q(62352),	-- Classic 50
-			q(38113),	-- Classic 50-59
-			q(38124),	-- Classic 50-59
-			q(38135),	-- Classic 50-59
-			q(38153),	-- Classic 50-59
-			q(38164),	-- Classic 50-59
 			q(24881),	-- Classic Random 5-15 (1st)
 			q(24889),	-- Classic Random 5-15 (Nth)
 			q(24882),	-- LFGDungeons - Classic - Random - 1st
 			q(24890),	-- LFGDungeons - Classic - Random - Nth
-			q(38131),	-- Vanilla 10-19
 			q(42461),	-- Vanilla 10-19
 		}),
 		tier(TBC_TIER, { -- These Quests might be ingame, very unlikely however.
 			q(24922),	-- LFGDungeons - Burning Crusade - Heroic Random - 1st
 			q(24923),	-- LFGDungeons - Burning Crusade - Heroic Random - Nth
 			q(10610),	-- Prospecting Basics
-			q(38114),	-- TBC 60-69
-			q(38125),	-- TBC 60-69
-			q(38136),	-- TBC 60-69
-			q(38154),	-- TBC 60-69
-			q(38165),	-- TBC 60-69
 		}),
 		tier(WOTLK_TIER, { -- These Quests might be ingame, very unlikely however.
 			q(24790),	-- Daily Normal Random (1st)
 			q(24791),	-- Daily Normal Random (Nth)
 			q(24788),	-- LFGDungeons - Lich King - Heroic Random - 1st
 			q(24789),	-- LFGDungeons - Lich King - Heroic Random - Nth
-			q(38115),	-- WLK 70-79
-			q(38126),	-- WLK 70-79
-			q(38137),	-- WLK 70-79
-			q(38155),	-- WLK 70-79
-			q(38166),	-- WLK 70-79
 			q(25306),	-- You're In The Army Gnow!
 			q(25482),	-- LFGDungeons - Holiday Dungeon - Headless Horseman - 1st
 			q(25483),	-- LFGDungeons - Holiday Dungeon - Coren Direbrew - 1st
@@ -109,11 +82,6 @@ _.NeverImplemented =
 			q(28006),	-- Adventurers Wanted: Wailing Caverns
 			q(28037),	-- Adventurers Wanted: Zul'farrak
 			q(28036),	-- Adventurers Wanted: Zul'farrak
-			q(38116),	-- Cata/Mop 80-89
-			q(38127),	-- Cata/MoP 80-89
-			q(38138),	-- Cata/MoP 80-89
-			q(38156),	-- Cata/MoP 80-89
-			q(38167),	-- Cata/MoP 80-89
 			q(28907),	-- Daily Normal Random (1st)
 			q(28908),	-- Daily Normal Random (Nth)
 			q(29185),	-- Daily Tier 2 Heroic (1st)
@@ -138,20 +106,6 @@ _.NeverImplemented =
 			q(45536),	-- 2v2 Weekly Quest UI
 			q(45337),	-- 3v3 Weekly Quest UI
 			q(45538),	-- 10v10 Weekly Quest UI
-			q(38118),	-- Legion 100-109 A
-			q(38129),	-- Legion 100-109 A
-			q(38140),	-- Legion 100-109 A
-			q(38158),	-- Legion 100-109 A
-			q(38169),	-- Legion 100-109 A
-			q(38171),	-- Legion 100-109 A
-			q(38172),	-- Legion 100-109 A
-			q(38119),	-- Legion 100-109 H
-			q(38130),	-- Legion 100-109 H
-			q(38141),	-- Legion 100-109 H
-			q(38159),	-- Legion 100-109 H
-			q(38170),	-- Legion 100-109 H
-			q(38173),	-- Legion 100-109 H
-			q(38174),	-- Legion 100-109 H
 			q(43497),	-- Legion 110 A
 			q(43498),	-- Legion 110 A
 			q(41710, {	-- Legion 110 A
@@ -426,6 +380,7 @@ _.NeverImplemented =
 			q(36213),	-- 6.0 Tanaan - Ring Bootstrap
 			q(36212),	-- 6.0 Tanaan - Wrist Bootstrap
 			q(36358),	-- A Father and His Son
+			q(35866),	-- A Few Artifact Fragments
 			q(34944),	-- A Flock of Fledglings
 			q(34354),	-- A Good Death
 			q(33266),	-- A Light in the Dark - Tracking Quest
@@ -586,6 +541,8 @@ _.NeverImplemented =
 			q(35789),	-- Infantry Leather Cap
 			q(33638),	-- Insatiable Swarms
 			q(34509),	-- Into the Jaws of the Jungle
+			q(36123),	-- Into The Wilderness
+			q(36228),	-- Into The Wilderness
 			q(35755),	-- Intricately Carved Battle Staff
 			q(33987),	-- Intro Tracking
 			q(33496),	-- Iron Horde in Karabor
@@ -656,6 +613,8 @@ _.NeverImplemented =
 			q(33750),	-- Quest Reward Summary: Pipeworks
 			q(33749),	-- Quest Reward Summary: Train Depot
 			q(35824),	-- Renewed Band
+			q(36130),	-- Reporting For Duty
+			q(36197),	-- Reporting For Duty
 			q(35781),	-- Restored Infantry Cloak
 			q(35801),	-- Restored Lace Kerchief
 			q(35831),	-- Restored Statue
@@ -710,6 +669,8 @@ _.NeverImplemented =
 			q(33737),	-- Strike While the Iron Is Hot
 			q(37120),	-- Sunspring POI Tracking Quest
 			q(35853),	-- Super Immunoglobulin Kit
+			q(36127),	-- Survey Ashran
+			q(36226),	-- Survey Ashran
 			q(35296),	-- Tainted Garden
 			q(33656),	-- Talbuk Roundup
 			q(34366),	-- Tanaan 01: Front of the Portal
@@ -766,6 +727,8 @@ _.NeverImplemented =
 			q(36705),	-- The Ring of Blood: Mogor!
 			q(36670),	-- The Ring of Blood: Skull Chewer!
 			q(36672),	-- The Ring of Blood: Venoxis!
+			q(36125),	-- The Road of Glory
+			q(36227),	-- The Road of Glory
 			q(34064),	-- The Search For Drogguk
 			q(34121),	-- The Shard of Shadows
 			q(33781),	-- The Survivalist's Way
@@ -869,6 +832,7 @@ _.NeverImplemented =
 			q(36865),	-- UBRS Event Dungeon Reward Quest
 			q(35768),	-- Ultra Healing Potion
 			q(35777),	-- Unbendable Card
+			q(36133),	-- Uncovering the Artifact Fragments
 			q(36198),	-- Uncovering the Artifact Fragments
 			q(33509),	-- Unexpected Assault
 			q(33510),	-- Unexpected Assault
@@ -946,6 +910,8 @@ _.NeverImplemented =
 			q(34008),	-- We Are Leaving!
 			q(34844),	-- We Require More Resources
 			q(35193),	-- Weapons Of Our Enemies
+			q(36119),	-- Welcome to Ashran
+			q(36196),	-- Welcome to Ashran
 			q(35799),	-- Wooly Bedroll
 			q(33959),	-- You Sunk My Battleship!
 			q(36838),	-- Your Second Alchemy Work Order
@@ -999,11 +965,78 @@ _.NeverImplemented =
 			q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
 			
 			-- 6.1.0
+			q(35256),	-- A Heart Unbroken
+			q(37751),	-- Bounties Active
+			q(38116),	-- Cata/Mop 80-89
+			q(38127),	-- Cata/MoP 80-89
+			q(38138),	-- Cata/MoP 80-89
+			q(38156),	-- Cata/MoP 80-89
+			q(38167),	-- Cata/MoP 80-89
+			q(38149),	-- Classic 10-19
+			q(38160),	-- Classic 10-19
+			q(38132),	-- Classic 20-29
+			q(38150),	-- Classic 20-29
+			q(38161),	-- Classic 20-29
+			q(38133),	-- Classic 30-39
+			q(38151),	-- Classic 30-39
+			q(38162),	-- Classic 30-39
+			q(38134),	-- Classic 40-49
+			q(38152),	-- Classic 40-49
+			q(38163),	-- Classic 40-49
+			q(38113),	-- Classic 50-59
+			q(38124),	-- Classic 50-59
+			q(38135),	-- Classic 50-59
+			q(38153),	-- Classic 50-59
+			q(38164),	-- Classic 50-59
+			q(38005),	-- delete me
+			q(38006),	-- delete me
+			q(36293),	-- It's Gotta Work!
+			q(38118),	-- Legion 100-109 A
+			q(38129),	-- Legion 100-109 A
+			q(38140),	-- Legion 100-109 A
+			q(38158),	-- Legion 100-109 A
+			q(38169),	-- Legion 100-109 A
+			q(38171),	-- Legion 100-109 A
+			q(38172),	-- Legion 100-109 A
+			q(38119),	-- Legion 100-109 H
+			q(38130),	-- Legion 100-109 H
+			q(38141),	-- Legion 100-109 H
+			q(38159),	-- Legion 100-109 H
+			q(38170),	-- Legion 100-109 H
+			q(38173),	-- Legion 100-109 H
+			q(38174),	-- Legion 100-109 H
+			q(37752),	-- Pet Battles Active
+			q(37972),	-- Pet Battles Not Active
+			q(37974),	-- Pet Battles Not Active
+			q(37975),	-- Pet Battles Not Active
+			q(37750),	-- Professions Active
+			q(38240),	-- Raid Active
+			q(37753),	-- Relic Hunter Active
+			q(38114),	-- TBC 60-69
+			q(38125),	-- TBC 60-69
+			q(38136),	-- TBC 60-69
+			q(38154),	-- TBC 60-69
+			q(38165),	-- TBC 60-69
+			q(36496),	-- The Lumber Mill
+			q(35394),	-- The Pale Threat
+			q(37800),	-- Tracking Quest: Start the Garrison Campaign
+			q(38131),	-- Vanilla 10-19
+			q(38003),	-- Vignette: Killed Gaiju
+			q(38004),	-- Vignette: Looted Treasure
+			q(37842),	-- Vignette: Yaeger-367
+			q(38115),	-- WLK 70-79
+			q(38126),	-- WLK 70-79
+			q(38137),	-- WLK 70-79
+			q(38155),	-- WLK 70-79
+			q(38166),	-- WLK 70-79
 			q(38117),	-- WOD 90-99
 			q(38128),	-- WOD 90-99
 			q(38139),	-- WOD 90-99
 			q(38157),	-- WOD 90-99
 			q(38168),	-- WOD 90-99
+			q(38007),	-- zzOldEMPTY TEST
+			
+			-- 6.1.2 - no NYI quests
 			
 			-- 6.2.0
 			q(38592),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
