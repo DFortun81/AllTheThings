@@ -71,7 +71,9 @@ _.Zones =
 						i(187024),	-- Necromancer's Mantle
 						i(187014),	-- Shackler's Spiked Shoulders
 					--	Consumable (pale blue/special)
-						i(187351),	-- Stygic Cluster
+						i(187351, {	-- Stygic Cluster
+							currency(1767),	-- Stygia
+						}),
 					--	Blues
 						i(185902),	-- Iron Maiden's Toolkit
 					},
