@@ -770,7 +770,7 @@ namespace ATT
                     case "bonusIDs":
                         {
                             // NOTE: Bonus ID Source IDs trump all other Source ID assignments.
-                            if (data.ContainsKey("ignoreBonus")) return;
+                            if (data.ContainsKey("ignoreBonus") || data.ContainsKey("ignoreSource")) return;
 
                             // Determine which variant this data is using.
                             if (data.TryGetValue("bonusID", out object variantObj))
