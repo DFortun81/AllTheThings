@@ -3422,7 +3422,11 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 3.0.1" },
 					}),
 					q(12336, {	-- Candy Bucket — Stormwind, The Trade District, Alliance
+						-- #if AFTER CATA
 						["coord"] = { 60.5, 75.2, STORMWIND_CITY },
+						-- #else
+						["coord"] = { 52.77, 65.77, STORMWIND_CITY },
+						-- #endif
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(28968, {	-- Candy Bucket — Swamp of Sorrows, The Harborage, Alliance
