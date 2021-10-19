@@ -2843,10 +2843,6 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 						["provider"] = { "n", 109825 },	-- Aria Sorrowheart
 						["coord"] = { 34.8, 55.6, VALSHARAH },
 					}),
-					i(139133),	-- Hat of the First Sister
-					i(139134),	-- Hat of the Second Sister
-					i(139135),	-- Hat of the Third Sister
-					i(139136),	-- Hat of the Youngest Sister
 					i(139137, {	-- Hag's Belongings
 						["sym"] = {
 							{ "selectparent", 3 },	-- Select the holiday root.
@@ -2855,11 +2851,13 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 							{ "pop" },	-- Get the Rewards.
 							{ "contains", "itemID", 33226, unpack(WANDS_IDS) },	-- Tricky Treat & All the Wands
 							{ "exclude", "itemID", 20413 },	-- Exclude Hallowed Wand - Random
-							{ "select", "itemID", 139133 },	-- Hat of the First Sister
-							{ "select", "itemID", 139134 },	-- Hat of the Second Sister
-							{ "select", "itemID", 139135 },	-- Hat of the Third Sister
-							{ "select", "itemID", 139136 },	-- Hat of the Youngest Sister
 						},
+						["groups"] = {
+							i(139133),	-- Hat of the First Sister
+							i(139134),	-- Hat of the Second Sister
+							i(139135),	-- Hat of the Third Sister
+							i(139136),	-- Hat of the Youngest Sister
+						}
 					}),
 				},
 			}),

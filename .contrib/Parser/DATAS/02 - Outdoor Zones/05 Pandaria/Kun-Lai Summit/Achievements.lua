@@ -82,7 +82,7 @@ _.Zones =
 									["description"] = "Only lootable while in a Healer Spec.", -- verified ?? Shaman(Resto)
 								}),
 								i(86224, {	-- Steadfast Sprite Cape
-									["description"] = "Only lootable while in a Tank Spec.",
+									["description"] = "Only lootable while in a Tank Spec.", -- verified 2021-10-18 Paladin(Prot)
 								}),
 							},
 						}),
