@@ -234,11 +234,33 @@ _.Zones =
 				n(177829, {	-- Ko'tul <Exchange Specialist>
 					["coord"] = { 63.8, 36.0, ORIBOS },
 					["g"] = {
-						i(187817),	-- Korthite Crystal Geode
-						i(187222),	-- Stygic Singularity
-						i(187221),	-- Soul Ash Cache
-						i(187254),	-- Arrangement of Anima
-						i(187503),	-- Bundle of Archived Research
+						i(187817, {	-- Korthite Crystal Geode
+							["cost"] = { { "i", 187219, 3 } },	-- 3x Attendant's Token of Merit
+						}),
+						i(187222, {	-- Stygic Singularity
+							["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+							["g"] = {
+								currency(1767),	-- Stygia
+							},
+						}),
+						i(187221, {	-- Soul Ash Cache
+							["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+							["g"] = {
+								currency(1828),	-- Soul Ash
+							},
+						}),
+						i(187254, {	-- Arrangement of Anima
+							["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+							["g"] = {
+								currency(1813),	-- Reservoir Anima
+							},
+						}),
+						i(187503, {	-- Bundle of Archived Research
+							["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+							["g"] = {
+								currency(1931),	-- Cataloged Research
+							},
+						}),
 						i(185765),	-- Shipment of Heavy Callous Hide
 						i(185832),	-- Shipment of Elethium Ore
 						i(185833),	-- Shipment of Lightless Silk
