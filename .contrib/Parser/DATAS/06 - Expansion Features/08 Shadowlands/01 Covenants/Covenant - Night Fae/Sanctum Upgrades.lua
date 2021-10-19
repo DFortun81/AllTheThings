@@ -211,7 +211,7 @@ _.ExpansionFeatures =
 										{ "i", 178881, 1 },	-- Dutiful Spirit (Uncommon) x1
 										{ "i", 178880, 1 },	-- Greater Dutiful Spirit (Rare) x1
 										{ "i", 178879, 1 },	-- Divine Dutiful Spirit (Epic) x1
-									},							
+									},
 									["g"] = {
 											i(181225, {		-- Crossbow of Contemplative Calm
 												["cost"] = {
@@ -222,17 +222,17 @@ _.ExpansionFeatures =
 												["cost"] = {
 													{ "i", 176832, 1 },	-- Wildseed Root Grain x1
 												}
-											}),		
+											}),
 											i(181232, {		-- Cupbearer's Claymore
 												["cost"] = {
 													{ "i", 176832, 1 },	-- Wildseed Root Grain x1
 												}
-											}),		
+											}),
 											i(181234, {		-- Dutybound Spellblade
 												["cost"] = {
 													{ "i", 176832, 1 },	-- Wildseed Root Grain x1
 												}
-											}),		
+											}),
 											i(181228, {		-- Temple Guard's Partisan
 												["cost"] = {
 													{ "i", 176832, 2 },	-- Wildseed Root Grain x2
@@ -283,11 +283,11 @@ _.ExpansionFeatures =
 													{ "i", 176832, 4 },	-- Wildseed Root Grain x4
 												}
 											}),
-											i(181310, {		-- Spirit Tender's Pack
-												["cost"] = {
-													{ "i", 176832, 4 },	-- Wildseed Root Grain x4
-												}
-											}),
+											-- i(181310, {		-- Spirit Tender's Pack
+											-- 	["cost"] = {
+											-- 		{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+											-- 	}
+											-- }),
 									},
 								}),
 								n(-1003, {		-- Martial
@@ -368,11 +368,11 @@ _.ExpansionFeatures =
 												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
 											}
 										}),
-										i(181310, {		-- Spirit Tender's Pack
-											["cost"] = {
-												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
-											}
-										}),
+										-- i(181310, {		-- Spirit Tender's Pack
+										-- 	["cost"] = {
+										-- 		{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+										-- 	}
+										-- }),
 									},
 								}),
 								n(-1004, {		-- Prideful
@@ -453,11 +453,11 @@ _.ExpansionFeatures =
 												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
 											}
 										}),
-										i(181310, {		-- Spirit Tender's Pack
-											["cost"] = {
-												{ "i", 176832, 4 },	-- Wildseed Root Grain x4
-											}
-										}),
+										-- i(181310, {		-- Spirit Tender's Pack
+										-- 	["cost"] = {
+										-- 		{ "i", 176832, 4 },	-- Wildseed Root Grain x4
+										-- 	}
+										-- }),
 									},
 								}),
 								n(-1005, {		-- Untamed
@@ -513,11 +513,11 @@ _.ExpansionFeatures =
 												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
 											}
 										}),
-										i(179585, {		-- Nightwillow Shortbow 
+										i(179585, {		-- Nightwillow Shortbow
 											["cost"] = {
 												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
 											}
-										}),													
+										}),
 										i(181306, {		-- Spirit Tender's Bulb
 											["cost"] = {
 												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
@@ -527,7 +527,7 @@ _.ExpansionFeatures =
 											["cost"] = {
 												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
 											}
-										}),	
+										}),
 										i(180639, {		-- Dusty Sporeflutterer
 											["cost"] = {
 												{ "i", 176832, 2 },	-- Wildseed Root Grain x2
