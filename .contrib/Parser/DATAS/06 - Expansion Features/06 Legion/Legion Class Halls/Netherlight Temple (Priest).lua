@@ -130,8 +130,10 @@ _.ExpansionFeatures =
 							}),
 						}),
 						q(45343, {	-- A Curious Contagion
-							-- TBD: fill in other fields
+							["sourceQuests"] = { 47137 },
 							["classes"] = { PRIEST },
+							["provider"] = { "n", 110564 },	-- Alonsus Faol
+							["coord"] = { 51.0, 48.4, 702 },
 						}),
 						q(41627, {	-- A Forgotten Enemy
 							["sourceQuests"] = { 41626 },	-- A New Threat
@@ -147,8 +149,10 @@ _.ExpansionFeatures =
 							["coord"] = { 28.6, 49.9, LEGION_DALARAN },
 						}),
 						q(43420, {	-- A Hero's Weapon
-							-- TBD: fill in other fields
+							["sourceQuests"] = { 43402 },	-- High Priest of Netherlight
 							["classes"] = { PRIEST },
+							["provider"] = { "n", 110498 },	-- Alonsus Faol
+							["coord"] = { 48.5, 20.1, 702 },
 						}),
 						q(40706, {	-- A Legend You Can Hold
 							["sourceQuests"] = { 40705 },	-- Priestly Matters
@@ -157,7 +161,10 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 101314 },	-- Alonsus Faol
 						}),
 						q(43401, {	-- A Light in the Darkness
-							["sourceQuests"] = { 43832 },	-- Elixirs of Aid
+							["sourceQuests"] = {
+								43832,	-- Elixirs of Aid
+								43399,	-- Fortifying the Temple
+							},
 							["provider"] = { "n", 110564 },	-- Alonsus Faol <Bishop of Secrets>
 							["coord"] = { 51.0, 48.4, 702 },
 							["classes"] = { PRIEST },
@@ -181,8 +188,10 @@ _.ExpansionFeatures =
 							["coord"] = { 48.9, 49.1, 702 },
 						}),
 						q(45342, {	-- Administering Aid
-							-- TBD: fill in other fields
+							["sourceQuests"] = { 45349 },	-- To the Broken Shore
 							["classes"] = { PRIEST },
+							["provider"] = { "n", 118528 },	-- Aelthalyste
+							["coord"] = { 33.6, 49.7, BROKEN_SHORE },
 						}),
 						q(43797, {	-- Aiding the Conclave
 							["sourceQuests"] = { 43397 },	-- United As One
@@ -233,15 +242,19 @@ _.ExpansionFeatures =
 							["description"] = "Only available if you you have the |cFFFFD700Tithe|r order hall upgrade.",
 						}),
 						q(46034, {	-- Champion: Aelthalyste
+							["sourceQuests"] = { 46145 },	-- Sterile Surroundings
 							["classes"] = { PRIEST },
 							["provider"] = { "n", 120842 },	-- Aelthalyste
+							["coord"] = { 24.8, 40.1, 702 },
 							["g"] = {
-								follower(1002),	-- Champion: Akama
+								follower(1002),	-- Aelthalyste
 							},
 						}),
 						q(43398, {	-- Champion: Alonsus Faol
+							["sourceQuests"] = { 43401 },	-- A Light in the Darkness
 							["classes"] = { PRIEST },
 							["provider"] = { "n", 110564 },	-- Alonsus Faol <Bishop of Secrets>
+							["coord"] = { 51.0, 48.4, 702 },
 							["g"] = {
 								follower(875),	-- Alonsus Faol
 							},
@@ -316,12 +329,20 @@ _.ExpansionFeatures =
 							["classes"] = { PRIEST },
 						}),
 						q(45350, {	-- Countering the Contagion
-							-- TBD: fill in other fields
+							["sourceQuests"] = { 45349 },	-- To the Broken Shore
 							["classes"] = { PRIEST },
+							["provider"] = { "n", 118528 },	-- Aelthalyste
+							["coord"] = { 33.6, 49.7, BROKEN_SHORE },
 						}),
 						q(45347, {	-- Crafting a Cure
-							-- TBD: fill in other fields
+							["sourceQuests"] = {
+								45344,	-- Sampling the Source
+								45345,	-- Mischievous Spirites
+								45436,	-- Shambling Specimens
+							},
 							["classes"] = { PRIEST },
+							["provider"] = { "n", 118528 },	-- Aelthalyste
+							["coord"] = { 30.0, 55.9, HIGHMOUNTAIN },
 						}),
 						q(43394, {	-- Crossing Legion Lines
 							["sourceQuests"] = { 43393 },	-- Rising Shadows
@@ -383,7 +404,10 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 105917 },	-- Image of Kalec
 						}),
 						q(43402, {	-- High Priest of Netherlight
+							["sourceQuests"] = { 43398 },	-- Champion: Alonsus Faol
 							["classes"] = { PRIEST },
+							["provider"] = { "n", 110564 },	-- Alonsus Faol
+							["coord"] = { 51.0, 48.4, 702 },
 							["g"] = {
 								i(139759),	-- Robes of the High Priest
 								title(339),	-- High Priest <Name>
@@ -431,8 +455,10 @@ _.ExpansionFeatures =
 							["coord"] = { 51.5, 45.9, 702 },
 						}),
 						q(45345, {	-- Mischievous Sprites
-							-- TBD: fill in other fields
+							["sourceQuests"] = { 45343 },	-- A Curious Contagion
 							["classes"] = { PRIEST },
+							["provider"] = { "n", 118528 },	-- Aelthalyste
+							["coord"] = { 30.0, 55.9, HIGHMOUNTAIN },
 						}),
 						q(43374, {	-- Murloc Mind Control
 							["sourceQuests"] = { 43372 },	-- The Best and Brightest
@@ -528,8 +554,10 @@ _.ExpansionFeatures =
 							["coord"] = { 50.9, 46.8, 702 },
 						}),
 						q(45348, {	-- Safekeeping
-							-- TBD: fill in other fields
+							["sourceQuests"] = { 45347 },	-- Crafting a Cure
 							["classes"] = { PRIEST },
+							["provider"] = { "n", 118528 },	-- Aelthalyste
+							["coord"] = { 30.0, 55.9, HIGHMOUNTAIN },
 						}),
 						q(41993, {	-- Salvation From On High
 							["sourceQuests"] = { 41967 },	-- Out of the Darkness
@@ -538,8 +566,10 @@ _.ExpansionFeatures =
 							["coord"] = { 34.0, 33.9, BROKEN_SHORE },
 						}),
 						q(45344, {	-- Sampling the Source
-							-- TBD: fill in other fields
+							["sourceQuests"] = { 45343 },	-- A Curious Contagion
 							["classes"] = { PRIEST },
+							["provider"] = { "n", 118528 },	-- Aelthalyste
+							["coord"] = { 30.0, 55.9, HIGHMOUNTAIN },
 						}),
 						q(43387, {	-- Scarlet Redemption
 							["sourceQuests"] = { 43386 },	-- Onslaught Envoy
@@ -554,8 +584,10 @@ _.ExpansionFeatures =
 							["coord"] = { 24.2, 37.8, DUSKWOOD },
 						}),
 						q(45346, {	-- Shambling Specimens
-							-- TBD: fill in other fields
+							["sourceQuests"] = { 45343 },	-- A Curious Contagion
 							["classes"] = { PRIEST },
+							["provider"] = { "n", 118528 },	-- Aelthalyste
+							["coord"] = { 30.0, 55.9, HIGHMOUNTAIN },
 						}),
 						q(43273, {	-- Spread the Word
 							["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
@@ -571,8 +603,13 @@ _.ExpansionFeatures =
 							["coord"] = { 50.9, 46.8, 702 },
 						}),
 						q(46145, {	-- Sterile Surroundings
-							-- TBD: fill in other fields
+							["sourceQuests"] = {
+								45342,	-- Administering Aid
+								45350,	-- Countering the Contagion
+							},
 							["classes"] = { PRIEST },
+							["provider"] = { "n", 118528 },	-- Aelthalyste
+							["coord"] = { 33.6, 49.7, BROKEN_SHORE },
 						}),
 						q(43277, {	-- Tech It Up A Notch
 							["sourceQuests"] = { 43276 },	-- Troops in the Field
@@ -641,8 +678,10 @@ _.ExpansionFeatures =
 							["coord"] = { 78.9, 41.0, TIRISFAL_GLADES },
 						}),
 						q(45349, {	-- To the Broken Shore
-							-- TBD: fill in other fields
+							["sourceQuests"] = { 45348 },	-- Safekeeping
 							["classes"] = { PRIEST },
+							["coord"] = { 51.1, 48.5, 702 },
+							["provider"] = { "n", 110564 },	-- Alonsus Faol
 						}),
 						q(43276, {	-- Troops in the Field
 							["sourceQuests"] = { 43275 },	-- Recruiting the Troops
@@ -748,6 +787,7 @@ _.HiddenQuestTriggers = {
 	q(42331),	-- Priest Order Hall - Tracking Quest: Lumenstone 4
 	q(42332),	-- Priest Order Hall - Tracking Quest: Lumenstone 5
 	q(43507),	-- Priest Order Hall - Looting the priest altar
+	q(43939),	-- Priest Order Hall - Shadow chosen second
 	q(43941),	-- Priest Order Hall - Discipline chosen second
 	q(44408),	-- Priest Order Hall - Shadow chosen third
 	q(44409),	-- Priest Order Hall - Discipline chosen third
