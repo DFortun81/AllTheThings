@@ -11732,7 +11732,7 @@ end
 function app.FilterItemClass_RequireFaction(item)
 	if item.minReputation and app.IsFactionExclusive(item.minReputation[1]) then
 		if item.minReputation[2] > (select(6, GetFactionInfoByID(item.minReputation[1])) or 0) then
-			print("Filtering Out", item.key, item[item.key], item.text, item.minReputation[1], app.CreateFaction(item.minReputation[1]).text);
+			--print("Filtering Out", item.key, item[item.key], item.text, item.minReputation[1], app.CreateFaction(item.minReputation[1]).text);
 			return false;
 		else
 			return true;
