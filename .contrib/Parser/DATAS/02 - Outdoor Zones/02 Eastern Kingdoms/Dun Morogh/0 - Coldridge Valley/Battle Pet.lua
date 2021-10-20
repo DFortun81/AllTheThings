@@ -7,7 +7,7 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(DUN_MOROGH, {
 			m(427,  {	-- Coldridge Valley
-				petbattle(filter(BATTLE_PETS, {
+				filter(BATTLE_PETS, {
 					p(441, {	-- Alpine Hare
 						["crs"] = { 61690 },	-- Alpine Hare
 					}),
@@ -17,7 +17,7 @@ _.Zones =
 					p(440, {	-- Snow Cub
 						["crs"] = { 61689 },	-- Snow Cub
 					}),
-				})),
+				}),
 			}),
 		}),
 	}),

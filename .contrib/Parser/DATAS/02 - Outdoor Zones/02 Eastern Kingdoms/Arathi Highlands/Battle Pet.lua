@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(ARATHI_HIGHLANDS, {
-			petbattle(filter(BATTLE_PETS, {
+			filter(BATTLE_PETS, {
 				p(443, {	-- Grasslands Cottontail
 					["crs"] = { 61704 },	-- Grasslands Cottontail
 				}),
@@ -22,7 +22,7 @@ _.Zones =
 				p(445, {	-- Tiny Twister
 					["crs"] = { 61703 },	-- Tiny Twister
 				}),
-			})),
+			}),
 		}),
 	}),
 };

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(MOUNT_HYJAL, {
-			petbattle(filter(BATTLE_PETS, {
+			filter(BATTLE_PETS, {
 				p(487, {	-- Alpine Chipmunk
 					["crs"] = { 62189 },	-- Alpine Chipmunk
 				}),
@@ -46,7 +46,7 @@ _.Zones =
 					["crs"] = { 62118 },	-- Twilight Beetle
 					["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
 				}),
-			})),
+			}),
 		}),
 	}),
 };

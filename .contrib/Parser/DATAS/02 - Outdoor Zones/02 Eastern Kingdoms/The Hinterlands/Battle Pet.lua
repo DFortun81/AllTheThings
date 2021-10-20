@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(THE_HINTERLANDS, {
-			petbattle(filter(BATTLE_PETS, {
+			filter(BATTLE_PETS, {
 				p(449, {	-- Brown Marmot
 					["crs"] = { 61752 },	-- Brown Marmot
 				}),
@@ -25,7 +25,7 @@ _.Zones =
 				p(417, {	-- Rat
 					["crs"] = { 61366 },	-- Rat
 				}),
-			})),
+			}),
 		}),
 	}),
 };

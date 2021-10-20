@@ -6,7 +6,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(MULGORE, {
 			m(462, {	-- Camp Narache
-				petbattle(filter(BATTLE_PETS, {
+				filter(BATTLE_PETS, {
 					p(385, {	-- Mouse
 						["crs"] = { 61143 },	-- Mouse
 					}),
@@ -16,7 +16,7 @@ _.Zones =
 					p(378, {	-- Rabbit
 						["crs"] = { 61080 },	-- Rabbit
 					}),
-				})),
+				}),
 			}),
 		}),
 	}),

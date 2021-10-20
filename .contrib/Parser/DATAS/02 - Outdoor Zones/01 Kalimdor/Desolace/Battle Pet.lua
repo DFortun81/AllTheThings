@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(DESOLACE, {
-			petbattle(filter(BATTLE_PETS, {
+			filter(BATTLE_PETS, {
 				p(838, {	-- Amethyst Shale Hatchling
 					["crs"] = { 62182 },	-- Amethyst Shale Hatchling
 				}),
@@ -43,7 +43,7 @@ _.Zones =
 				p(480, {	-- Topaz Shale Hatchling
 					["crs"] = { 62181 },	-- Topaz Shale Hatchling
 				}),
-			})),
+			}),
 		}),
 	}),
 };

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(DEADWIND_PASS, {
-			petbattle(filter(BATTLE_PETS, {
+			filter(BATTLE_PETS, {
 				p(1160, {	-- Arcane Eye
 					["crs"] = { 68819 },	-- Arcane Eye
 				}),
@@ -14,7 +14,7 @@ _.Zones =
 					["crs"] = { 61375 },	-- Restless Shadeling
 					["description"] = "Spawns in |cFFFFD700The Master's Cellar|r at midnight PST for a very limited amount of time.",
 				}),
-			})),
+			}),
 		}),
 	}),
 };

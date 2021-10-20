@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(MULGORE, {
-			petbattle(filter(BATTLE_PETS, {
+			filter(BATTLE_PETS, {
 				p(477, {	-- Gazelle Fawn
 					["crs"] = { 62176 },	-- Gazelle Fawn
 				}),
@@ -18,7 +18,7 @@ _.Zones =
 				p(378, {	-- Rabbit
 					["crs"] = { 61080 },	-- Rabbit
 				}),
-			})),
+			}),
 		}),
 	}),
 };

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(WESTFALL, {
-			petbattle(filter(BATTLE_PETS, {
+			filter(BATTLE_PETS, {
 				p(646, {	-- Chicken
 					["crs"] = { 62664 },	-- Chicken
 				}),
@@ -38,7 +38,7 @@ _.Zones =
 						i(11110) -- Chicken Egg
 					},
 				}),
-			})),
+			}),
 		}),
 	}),
 };

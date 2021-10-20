@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(SILVERPINE_FOREST, {
-			petbattle(filter(BATTLE_PETS, {
+			filter(BATTLE_PETS, {
 				p(455, {	-- Blighted Squirrel
 					["crs"] = { 61890 },	-- Blighted Squirrel
 				}),
@@ -31,7 +31,7 @@ _.Zones =
 				p(420, {	-- Toad
 					["crs"] = { 61369 },	-- Toad
 				}),
-			})),
+			}),
 		}),
 	}),
 };

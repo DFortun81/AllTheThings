@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(BLASTED_LANDS, {
-			petbattle(filter(BATTLE_PETS, {
+			filter(BATTLE_PETS, {
 				p(635, {	-- Adder
 					["crs"] = { 61325 },	-- Adder
 				}),
@@ -22,7 +22,7 @@ _.Zones =
 				p(412, {	-- Spider
 					["crs"] = { 61327 },	-- Spider
 				}),
-			})),
+			}),
 		}),
 	}),
 };

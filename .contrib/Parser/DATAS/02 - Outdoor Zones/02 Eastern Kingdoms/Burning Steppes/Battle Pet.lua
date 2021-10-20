@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(BURNING_STEPPES, {
-			petbattle(filter(BATTLE_PETS, {
+			filter(BATTLE_PETS, {
 				p(425, {	-- Ash Viper
 					["crs"] = { 61385 },	-- Ash Viper
 				}),
@@ -25,7 +25,7 @@ _.Zones =
 				p(414, {	-- Scorpid
 					["crs"] = { 61326 },	-- Scorpid
 				}),
-			})),
+			}),
 		}),
 	}),
 };

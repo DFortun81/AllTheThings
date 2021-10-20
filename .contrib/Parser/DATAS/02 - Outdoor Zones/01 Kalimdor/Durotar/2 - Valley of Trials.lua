@@ -172,7 +172,7 @@ _.Zones =
 						}),
 					}),
 					-- if AFTER MOP
-					petbattle(filter(BATTLE_PETS, {
+					filter(BATTLE_PETS, {
 						p(635, {	-- Adder
 							["crs"] = { 61325 },	-- Adder
 						}),
@@ -185,7 +185,7 @@ _.Zones =
 						p(448, {	-- Hare
 							["crs"] = { 61751 },	-- Hare
 						}),
-					})),
+					}),
 					-- endif
 				},
 			}),
