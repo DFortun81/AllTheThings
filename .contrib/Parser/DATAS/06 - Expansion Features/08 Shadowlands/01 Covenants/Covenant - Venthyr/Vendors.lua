@@ -1435,6 +1435,8 @@ _.ExpansionFeatures =
 						}),
 					}),
 				}),
+				-- TODO: not sure if these should be moved into a sub-header? based on selected Soulbind/Tree
+				i(183699),	-- Exquisite Ingredients
 			},
 		}),
 	}),
