@@ -33,7 +33,7 @@ _.BattlePets = {
 				},
 			}),
 			q(31889, {	-- Battle Pet Tamers: Kalimdor (A)
-				["altQuests"] = { 31981 },
+				["altQuests"] = { 31891 },
 				["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 				["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
@@ -1267,48 +1267,58 @@ _.BattlePets = {
 				["isDaily"] = true,
 				["coord"] = { 68.5, 64.7, FROSTFIRE_RIDGE },
 				["provider"] = { "n", 87122 },	-- Gargra
-				["g"] = {
-					i(116415),	-- Shiny Pet Charm
+				["sym"] = {
+					{"select", "itemID", 116415 },	-- Shiny Pet Charm
 				},
 			}),
 			q(37201, {	-- Cymre Brightblade
 				["isDaily"] = true,
 				["coord"] = { 51.1, 70.6, GORGROND },
 				["provider"] = { "n", 83837 },	-- Cymre Brightblade
-				["g"] = {
-					i(116415),	-- Shiny Pet Charm
+				["sym"] = {
+					{"select", "itemID", 116415 },	-- Shiny Pet Charm
 				},
 			}),
 			q(37206, {	-- Tarr the Terrible
 				["provider"] = { "n", 87110 },	-- Tar the Terrible
 				["coord"] = { 56.2, 9.8, DRAENOR_NAGRAND },
 				["isDaily"] = true,
-				["g"] = {
-					i(116415),	-- Shiny Pet Charm
+				["sym"] = {
+					{"select", "itemID", 116415 },	-- Shiny Pet Charm
 				},
 			}),
 			q(37203, {	-- Ashlei
 				["isDaily"] = true,
 				["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 				["provider"] = { "n", 87124 },	-- Ashlei
-				["g"] = {
-					i(116415),	-- Shiny Pet Charm
+				["sym"] = {
+					{"select", "itemID", 116415 },	-- Shiny Pet Charm
 				},
 			}),
 			q(37207, {	-- Vesharr
 				["provider"] = { "n", 87123 },	-- Vesharr
 				["coord"] = { 46.2, 45.3, SPIRES_OF_ARAK },
 				["isDaily"] = true,
-				["g"] = {
-					i(116415),	-- Shiny Pet Charm
+				["sym"] = {
+					{"select", "itemID", 116415 },	-- Shiny Pet Charm
 				},
 			}),
 			q(37208, {	-- Taralune
 				["isDaily"] = true,
 				["coord"] = { 49.0, 80.3, TALADOR },
 				["provider"] = { "n", 87125 },	-- Taralune
-				["g"] = {
-					i(116415),	-- Shiny Pet Charm
+				["sym"] = {
+					{"select", "itemID", 116415 },	-- Shiny Pet Charm
+				},
+			}),
+			-- Legion
+			q(40310, {	-- Shipwrecked Captive
+				["description"] = "Weekly Account-Wide Pet Battle Quest. You need the toy Sternfathom's Pet Journal to summon this npc.",
+				["provider"] = { "n", 98489 },	-- Shipwrecked Captive
+				["coord"] = { 49.3, 45.4, AZSUNA },
+				["isWeekly"] = true,
+				["sym"] = {
+					{"select", "itemID", 116415 },	-- Shiny Pet Charm
 				},
 			}),
 			-- PvP Weekly

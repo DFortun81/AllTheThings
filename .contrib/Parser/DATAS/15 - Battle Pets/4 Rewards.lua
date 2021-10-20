@@ -7,6 +7,7 @@ _.BattlePets =
 	n(PET_BATTLE,	{
 		n(REWARDS, {
 			i(86143),	-- Battle Pet Bandage
+			i(116415),	-- Shiny Pet Charm
 			i(94207, {	-- Fabled Pandaren Pet Supplies
 				["crs"] = {
 					64582,	-- Gentle San

@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 	tier(WOD_TIER, {
 		n(-9966, {	-- Draenor Garrisons
 			m(FROSTWALL, {
-				filter(BATTLE_PETS, {
+				petbattle(filter(BATTLE_PETS, {
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						p(560),	-- Sea Gull
@@ -75,7 +75,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 						}),
 					},
-				}),
+				})),
 			}),
 		}),
 	}),
