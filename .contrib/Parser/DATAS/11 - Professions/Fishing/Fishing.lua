@@ -371,7 +371,7 @@ profession(FISHING, {
 			["description"] = "Caught in any waters in Kul Tiras or Zandalar, including Mechagon (but not Nazjatar).",
 		}),
 		i(152912, {	-- Pond Nettle
-			["description"] = "Caught in green water in Argus.",
+			["description"] = "Caught in green pools around Antoran Wastes.",
 		}),
 		i(23720),	-- Riding Turtle
 		i(46109, {	-- Sea Turtle Mount
