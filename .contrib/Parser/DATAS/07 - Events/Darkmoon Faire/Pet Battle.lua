@@ -19,6 +19,7 @@ _.WorldEvents =
 				["provider"] = { "n", 85519 },	-- Christoph VonFeasel
 				["coord"] = { 47.4, 62.2, 407 },
 				["isDaily"] = true,
+				["pb"] = true,
 				["g"] = {
 					i(116062, {	-- Greater Darkmoon Pet Supplies
 						currency(515),	-- Darkmoon Prize Ticket
@@ -32,6 +33,7 @@ _.WorldEvents =
 				["provider"] = { "n", 67370 },	-- Jeremy Feasel
 				["coord"] = { 47.8, 62.6, 407 },
 				["isDaily"] = true,
+				["pb"] = true,
 				["g"] = {
 					i(91086, {	-- Darkmoon Pet Supplies
 						currency(515),	-- Darkmoon Prize Ticket
