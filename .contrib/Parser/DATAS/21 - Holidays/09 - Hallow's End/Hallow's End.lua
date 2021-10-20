@@ -4013,22 +4013,18 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					i(128664, {	-- Creepy Crawlers
 						["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
 						["questID"] = 39759,
-						["repeatable"] = true,
 					}),
 					i(128660, {	-- Ghoulish Guises
 						["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
 						["questID"] = 39758,
-						["repeatable"] = true,
 					}),
 					i(128661, {	-- Hallow's Glow
 						["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
 						["questID"] = 39612,
-						["repeatable"] = true,
 					}),
 					i(128662, {	-- Seer's Invitation
 						["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
 						["questID"] = 39613,
-						["repeatable"] = true,
 					}),
 					i(33226, {	-- Tricky Treat
 						["cost"] = { { "i", 128658, 1 }, },	-- 1x Spooky Supplies
@@ -4036,7 +4032,6 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 					i(128663, {	-- Witch's Brew
 						["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
 						["questID"] = 39611,
-						["repeatable"] = true,
 					}),
 				},
 			}),
