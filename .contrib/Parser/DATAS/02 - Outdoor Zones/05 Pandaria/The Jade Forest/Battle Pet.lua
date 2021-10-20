@@ -7,25 +7,6 @@ _.Zones =
 	m(PANDARIA, {
 		m(THE_JADE_FOREST, {
 			filter(BATTLE_PETS, {
-				q(31953, {	-- Grand Master Hyuna
-					["repeatable"] = true,
-					["coord"] = { 47.9, 54.1, THE_JADE_FOREST },
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(32440, {	-- Whispering Pandaren Spirit
-					["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
-					["repeatable"] = true,
-					["coord"] = { 28.9, 36.0, THE_JADE_FOREST },
-					["g"] = {
-						i(93148, {	-- Pandaren Spirit Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-							i(92799),	-- Pandaren Air Spirit
-						})
-					},
-				}),
 				p(380),	-- Bucktooth Flapper
 				p(562),	-- Coral Adder
 				p(564),	-- Emerald Turtle

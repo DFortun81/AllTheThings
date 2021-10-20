@@ -19,11 +19,6 @@ _.Zones =
 				p(1238, {	-- Unborn Val'kyr
 					["crs"] = { 71163 },	-- Unborn Val'kyr
 				}),
-				q(31932, {	-- Nearly Headless Jacob
-					["provider"] = { "n", 66636 },	-- Nearly Headless Jacob
-					["isDaily"] = true,
-					["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
-				}),
 			}),
 		}),
 	}),

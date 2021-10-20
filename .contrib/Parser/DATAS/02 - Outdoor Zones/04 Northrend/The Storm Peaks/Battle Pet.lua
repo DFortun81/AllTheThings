@@ -25,11 +25,6 @@ _.Zones =
 				p(1238, {	-- Unborn Val'kyr
 					["crs"] = { 71163 },	-- Unborn Val'kyr
 				}),
-				ach(11320, {	-- Raiding With Leashes IV: Wrath of the Lich King
-					q(44767, {	-- A Celestial Invitation
-						i(142100),	-- Stardust
-					}),
-				}),
 			}),
 		}),
 	}),

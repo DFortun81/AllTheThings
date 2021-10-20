@@ -31,14 +31,6 @@ _.Zones =
 				p(1582, {	-- Zangar Crawler
 					["crs"] = { 88466 },	-- Zangar Crawler
 				}),
-				q(37203, {	-- Ashlei
-					["isDaily"] = true,
-					["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
-					["provider"] = { "n", 87124 },	-- Ashlei
-					["g"] = {
-						i(116415),	-- Shiny Pet Charm
-					},
-				}),
 			}),
 		}),
 	}),

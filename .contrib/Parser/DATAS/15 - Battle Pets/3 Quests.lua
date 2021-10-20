@@ -5,6 +5,13 @@
 _.BattlePets = {
 	petbattle(n(PET_BATTLE,	{
 		n(QUESTS, {
+			q(44767, {	-- A Celestial Invitation
+				["provider"] = { "i", 142210 },	-- Celestial Invitation
+				["coord"] = { 41.4, 24.4, THE_STORM_PEAKS },
+				["g"] = {
+					i(142100),	-- Stardust
+				},
+			}),
 			-- Battle Pet Tamers Quests
 			q(31902, {	-- Battle Pet Tamers: Eastern Kingdoms (A)
 				["altQuests"] = { 31903 },	-- Battle Pet Tamers: Eastern Kingdoms (Horde version, since only one can be completed per account and Blizz doesn't check it off, apparently)
@@ -49,8 +56,8 @@ _.BattlePets = {
 				["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = {
-					31975,	-- The Returning Champion
-					31976,	-- The Returning Champion
+					31975,	-- The Returning Champion (A)
+					31976,	-- The Returning Champion (A)
 				},
 				["sym"] = {
 					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
@@ -62,8 +69,8 @@ _.BattlePets = {
 				["coord"] = { 52.6, 59.3, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = {
-					31977,	-- The Returning Champion
-					31980,	-- The Returning Champion
+					31977,	-- The Returning Champion (H)
+					31980,	-- The Returning Champion (H)
 				},
 				["sym"] = {
 					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
@@ -74,7 +81,7 @@ _.BattlePets = {
 				["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 				["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
-				["sourceQuest"] = 31981,	-- Exceeding Expectations
+				["sourceQuest"] = 31981,	-- Exceeding Expectations (A)
 				["sym"] = {
 					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
 				},
@@ -84,7 +91,7 @@ _.BattlePets = {
 				["provider"] = { "n", 63626 },	-- Varzok
 				["coord"] = { 52.6, 59.3, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
-				["sourceQuest"] = 31982,	-- Exceeding Expectations
+				["sourceQuest"] = 31982,	-- Exceeding Expectations (H)
 				["sym"] = {
 					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
 				},
@@ -94,7 +101,7 @@ _.BattlePets = {
 				["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 				["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
-				["sourceQuest"] = 31984,	-- A Brief Reprieve
+				["sourceQuest"] = 31984,	-- A Brief Reprieve (A)
 				["sym"] = {
 					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
 				},
@@ -104,7 +111,7 @@ _.BattlePets = {
 				["provider"] = { "n", 63626 },	-- Varzok
 				["coord"] = { 52.6, 59.3, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
-				["sourceQuest"] = 31983,	-- A Brief Reprieve
+				["sourceQuest"] = 31983,	-- A Brief Reprieve (H)
 				["sym"] = {
 					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
 				},
@@ -114,7 +121,7 @@ _.BattlePets = {
 				["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 				["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
-				["sourceQuest"] = 31985,	-- The Triumphant Return
+				["sourceQuest"] = 31985,	-- The Triumphant Return (A)
 				["sym"] = {
 					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
 				},
@@ -124,12 +131,11 @@ _.BattlePets = {
 				["provider"] = { "n", 63626 },	-- Varzok
 				["coord"] = { 52.6, 59.3, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
-				["sourceQuest"] = 31986,	-- The Triumphant Return
+				["sourceQuest"] = 31986,	-- The Triumphant Return (H)
 				["sym"] = {
 					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
 				},
 			}),
-			
 			-- Pet Battle Starting Quests. Alliance = Audrey, Grady, Lehna, Marcus, Valeena, Will. Horde = Ansel, Jarson, Matty, Naleen, Narzak, Varzok.
 			q(31593, {	-- Got one! (Audrey)
 				["provider"] = { "n", 63596 },	-- Audrey Burnhep
@@ -408,7 +414,6 @@ _.BattlePets = {
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = { 31588 },	-- Learning the Ropes
 			}),
-			
 			-- Infamous Breadcrumbs, these are offered at the end of the training quests in each of the starter zones. Can't find any info on which one is appropriate to which map, so this is going to need to be something figured out on an entirely new account that has done none of the pet battle quests
 			q(32008, {	-- Audrey Burnhep
 				["isBreadcrumb"] = true,
@@ -513,7 +518,6 @@ _.BattlePets = {
 					32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
 				},
 			}),
-			
 			-- Alliance Questline
 			q(31316, {	-- Julia, The Pet Tamer
 				["provider"] = { "n", 63596 },	-- Audrey Burnhelp
@@ -571,7 +575,7 @@ _.BattlePets = {
 					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
 				},
 			}),
-			q(31917, {	-- A Tamer's Homecoming
+			q(31917, {	-- A Tamer's Homecoming (A)
 				["provider"] = { "n", 65656 },	-- Bill Buckler
 				["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
 				["races"] = ALLIANCE_ONLY,
@@ -634,7 +638,7 @@ _.BattlePets = {
 					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
 				},
 			}),
-			q(31918, {	-- A Tamer's Homecoming
+			q(31918, {	-- A Tamer's Homecoming (H)
 				["provider"] = { "n", 66422 },	-- Cassandra Kaboom
 				["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
 				["races"] = HORDE_ONLY,
@@ -645,22 +649,14 @@ _.BattlePets = {
 				["provider"] = { "n", 66522 },	-- Lydia Accoste
 				["coord"] = { 40.0, 76.4, DEADWIND_PASS },
 				["sourceQuests"] = {
-					31917,	-- A Tamer's Homecoming
-					31918,	-- A Tamer's Homecoming
+					31917,	-- A Tamer's Homecoming (A)
+					31918,	-- A Tamer's Homecoming (H)
 				},
 				["sym"] = {
 					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
 				},
 			}),
-			q(31980, {	-- The Returning Champion
-				["provider"] = { "n", 66522 },	-- Lydia Accoste
-				["coord"] = { 40.0, 76.4, DEADWIND_PASS },
-				["races"] = HORDE_ONLY,
-				["isBreadcrumb"] = true,
-				["sourceQuest"] = 31915,	-- Grand Master Lydia Accoste
-				["altQuests"] = { 31977 },	-- The Returning Champion (Winterspring)
-			}),
-			q(31976, {	-- The Returning Champion
+			q(31976, {	-- The Returning Champion (A)
 				["provider"] = { "n", 66522 },	-- Lydia Accoste
 				["coord"] = { 40.0, 76.4, DEADWIND_PASS },
 				["races"] = ALLIANCE_ONLY,
@@ -668,26 +664,26 @@ _.BattlePets = {
 				["sourceQuest"] = 31915,	-- Grand Master Lydia Accoste
 				["altQuests"] = { 31975 },	-- The Returning Champion (Winterspring)
 			}),
+			q(31980, {	-- The Returning Champion (H)
+				["provider"] = { "n", 66522 },	-- Lydia Accoste
+				["coord"] = { 40.0, 76.4, DEADWIND_PASS },
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+				["sourceQuest"] = 31915,	-- Grand Master Lydia Accoste
+				["altQuests"] = { 31977 },	-- The Returning Champion (Winterspring)
+			}),
 			q(31897, {	-- Grand Master Trixxy
 				["provider"] = { "n", 66466 },	-- Grand Master Trixxy
 				["coord"] = { 65.6, 64.5, WINTERSPRING },
 				["sourceQuests"] = {
-					31917,	-- A Tamer's Homecoming
-					31918,	-- A Tamer's Homecoming
+					31917,	-- A Tamer's Homecoming (A)
+					31918,	-- A Tamer's Homecoming (H)
 				},
 				["sym"] = {
 					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
 				},
 			}),
-			q(31977, {	-- The Returning Champion
-				["provider"] = { "n", 66466 },	-- Stone Cold Trixxy
-				["coord"] = { 65.6, 64.4, WINTERSPRING },
-				["races"] = HORDE_ONLY,
-				["isBreadcrumb"] = true,
-				["sourceQuest"] = 31897,	-- Grand Master Trixxy
-				["altQuests"] = { 31980 },	-- The Returning Champion (Deadwind Pass)
-			}),
-			q(31975, {	-- The Returning Champion
+			q(31975, {	-- The Returning Champion (A)
 				["provider"] = { "n", 66466 },	-- Stone Cold Trixxy
 				["coord"] = { 65.6, 64.4, WINTERSPRING },
 				["races"] = ALLIANCE_ONLY,
@@ -695,30 +691,134 @@ _.BattlePets = {
 				["sourceQuest"] = 31897,	-- Grand Master Trixxy
 				["altQuests"] = { 31976 },	-- The Returning Champion (Deadwind Pass)
 			}),
-			
-			
-			
+			q(31977, {	-- The Returning Champion (H)
+				["provider"] = { "n", 66466 },	-- Stone Cold Trixxy
+				["coord"] = { 65.6, 64.4, WINTERSPRING },
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+				["sourceQuest"] = 31897,	-- Grand Master Trixxy
+				["altQuests"] = { 31980 },	-- The Returning Champion (Deadwind Pass)
+			}),
+			-- TBC
+			q(31920, {	-- Grand Master Antari
+				["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
+				["coord"] = { 30.4, 41.8, SHADOWMOON_VALLEY },
+				["sourceQuests"] = {
+					31919,	-- Battle Pet Tamers: Outland (A)
+					31921,	-- Battle Pet Tamers: Outland (H)
+				},
+				["sym"] = {
+					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+				},
+			}),
+			q(31981, {	-- Exceeding Expectations (A)
+				["sourceQuests"] = { 31920 },	-- Grand Master Antari
+				["coord"] = { 30.4, 41.8, SHADOWMOON_VALLEY },
+				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
+				["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
+			}),
+			q(31982, {	-- Exceeding Expectations (H)
+				["sourceQuests"] = { 31920 },	-- Grand Master Antari
+				["coord"] = { 30.4, 41.8, SHADOWMOON_VALLEY },
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+				["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
+			}),
+			-- Wrath
+			q(31928, {	-- Grand Master Payne
+				["coord"] = { 77.4, 19.6, ICECROWN },
+				["provider"] = { "n", 66675 },	-- Major Payne
+				["sourceQuests"] = {
+					31927,	-- Battle Pet Tamers: Northrend (A)
+					31929,	-- Battle Pet Tamers: Northrend (H)
+				},
+				["sym"] = {
+					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+				},
+			}),
+			q(31984, {	-- A Brief Reprieve (A)
+				["sourceQuests"] = { 31928 },	-- Grand Master Payne
+				["coord"] = { 77.4, 19.6, ICECROWN },
+				["races"] = ALLIANCE_ONLY,
+				["provider"] = { "n", 66675 },	-- Major Payne
+				["isBreadcrumb"] = true,
+			}),
+			q(31983, {	-- A Brief Reprieve (H)
+				["sourceQuests"] = { 31928 },	-- Grand Master Payne
+				["coord"] = { 77.4, 19.6, ICECROWN },
+				["races"] = HORDE_ONLY,
+				["provider"] = { "n", 66675 },	-- Major Payne
+				["isBreadcrumb"] = true,
+			}),
 			-- Cata
 			q(31970, {	-- Grand Master Obalis
 				["provider"] = { "n", 66824 },	-- Obalis
 				["coord"] = { 56.6, 41.8, 249 },
-				["g"] = {
-					i(89125),	-- Sack of Pet Supplies
+				["sourceQuests"] = {
+					31966,	-- Battle Pet Tamers: Cataclysm (A)
+					31967,	-- Battle Pet Tamers: Cataclysm (H)
+				},
+				["sym"] = {
+					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
 				},
 			}),
-			q(31985, {	-- The Triumphant Return
+			q(31985, {	-- The Triumphant Return (A)
+				["sourceQuests"] = { 31970 },	-- Grand Master Obalis
 				["provider"] = { "n", 66824 },	-- Obalis
 				["coord"] = { 56.6, 41.8, 249 },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
-			q(31986, {	-- The Triumphant Return
+			q(31986, {	-- The Triumphant Return (H)
 				["provider"] = { "n", 66824 },	-- Obalis
 				["coord"] = { 56.6, 41.8, 249 },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
-			
+			-- Pandaria
+			q(31951, {	-- Grand Master Aki
+				["provider"] = { "n", 66741 },	-- Aki the Chosen
+				["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
+				["sourceQuests"] = {
+					31930,	-- Battle Pet Tamers: Pandaria (A)
+					31952,	-- Battle Pet Tamers: Pandaria (H)
+				},
+				["sym"] = {
+					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+				},
+			}),
+			q(32603, {	-- Beasts of Fable
+				["description"] = "Account-Wide Quest. Need to have completed the achievement, |cffffff00Taming The World.|r",
+				["providers"] = {
+					{ "n", 64572 },	-- Sara Finkleswitch
+					{ "n", 64582 },	-- Gentle San
+				},
+				["coords"] = {
+					{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+					{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+				},
+				["g"] = {
+					i(94025),	-- Red Panda
+				},
+			}),
+			q(32428, {	-- Pandaren Spirit Tamer
+				["description"] = "Account-Wide Quest. Need to have completed the achievement, |cffffff00Taming The World.|r These pets can be found in the Pandaren Spirit Pet Supplies received from the four Pandaren Spirit Tamers in their individual Daily Quests once you complete this quest.|r",
+				["providers"] = {
+					{ "n", 64572 },	-- Sara Finkleswitch
+					{ "n", 64582 },	-- Gentle San
+				},
+				["coords"] = {
+					{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+					{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+				},
+				["g"] = {
+					i(92799),	-- Pandaren Air Spirit
+					i(92798),	-- Pandaren Fire Spirit
+					i(92800),	-- Pandaren Earth Spirit
+					i(90173),	-- Pandaren Water Spirit
+				},
+			}),
 			-- Daily Quests
 			q(31854, {	-- Analynn
 				["provider"] = { "n", 66136 },	-- Analynn
@@ -895,6 +995,66 @@ _.BattlePets = {
 				["isDaily"] = true,
 				["sourceQuests"] = { 31812 },	-- Zunta, The Pet Tramer
 			}),
+			-- TBC
+			q(31922, {	-- Nicki Tinytech
+				["qg"] = 66550,	-- Nicki Tinytech
+				["coord"] = { 64.3, 49.3, HELLFIRE_PENINSULA },
+				["isDaily"] = true,
+			}),
+			q(31924, {	-- Narrok
+				["isDaily"] = true,
+				["coord"] = { 61.0, 49.4, NAGRAND },
+				["provider"] = { "n", 66552 },	-- Narrok <Master Pet Tamer>
+			}),
+			q(31926, {	-- Grand Master Antari
+				["sourceQuests"] = { 31920 },	-- Grand Master Antari
+				["isDaily"] = true,
+				["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
+				["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
+				["sym"] = {
+					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+				},
+			}),
+			q(31923, {	-- Ras'an
+				["isDaily"] = true,
+				["coord"] = { 17.2, 50.5, ZANGARMARSH },
+				["provider"] = { "n", 66551 },	-- Ras'an <Master Pet Tamer>
+			}),
+			q(31925, {	-- Morulu The Elder
+				["isDaily"] = true,
+				["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
+				["provider"] = { "n", 66553 },	-- Morulu The Elder
+			}),
+			-- Wrath
+			q(31932, {	-- Nearly Headless Jacob
+				["provider"] = { "n", 66636 },	-- Nearly Headless Jacob
+				["isDaily"] = true,
+				["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
+			}),
+			q(31933, {	-- Okrut Dragonwaste
+				["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
+				["provider"] = { "n", 66638 },	-- Okrut Dragonwaste
+				["isDaily"] = true,
+			}),
+			q(31931, {	-- Beegle Blastfuse
+				["provider"] = { "n", 66635 },	-- Beegle Blastfuse
+				["coord"] = { 28.6, 33.8, HOWLING_FJORD },
+				["repeatable"] = true,
+			}),
+			q(31935, {	-- Grand Master Payne
+				["sourceQuests"] = { 31928 },	-- Grand Master Payne
+				["coord"] = { 77.4, 19.6, ICECROWN },
+				["provider"] = { "n", 66675 },	-- Major Payne
+				["isDaily"] = true,
+				["sym"] = {
+					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+				},
+			}),
+			q(31934, {	-- Gutretch
+				["coord"] = { 13.2, 66.7, ZULDRAK },
+				["isDaily"] = true,
+				["provider"] = { "n", 66639 },
+			}),
 			-- Cata
 			q(31972, {	-- Brok
 				["provider"] = { "n", 66819 },	-- Brok
@@ -907,27 +1067,265 @@ _.BattlePets = {
 				["isDaily"] = true,
 			}),
 			q(31971, {	-- Grand Master Obalis
+				["sourceQuests"] = { 31970 },	-- Grand Master Obalis
 				["provider"] = { "n", 66824 },	-- Obalis
 				["coord"] = { 56.6, 41.8, 249 },
 				["isDaily"] = true,
+				["sym"] = {
+					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+				},
+			}),
+			q(31973, {	-- Bordin Steadyfist
+				["provider"] = { "n", 66815 },	-- Bordin Steadyfist
+				["coord"] = { 49.9, 57.1, 207 },
+				["repeatable"] = true,
+			}),
+			-- MoP
+			q(31957, {	-- Grand Master Shu
+				["coord"] = { 55.1, 37.6, DREAD_WASTES },
+				["isDaily"] = true,
+				["provider"] = { "n", 66739 },	-- Wastewalker Shu
+				["sym"] = {
+					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+				},
+			}),
+			q(32439, {	-- Flowing Pandaren Spirit
+				["coord"] = { 61.1, 87.5, DREAD_WASTES },
+				["isDaily"] = true,
+				["provider"] = { "n", 68462 },	-- Flowing Pandaren Spirit
+				["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
+				["sym"] = {
+					{"select", "itemID", 89139 },	-- Chain Pet Leash
+					{"select", "itemID", 44820 },	-- Red Ribbon Pet Leash
+					{"select", "itemID", 37460 },	-- Rope Pet Leash
+				},
 				["g"] = {
-					i(89125),	-- Sack of Pet Supplies
+					i(93147, {	-- Pandaren Spirit Pet Supplies
+						i(90173),	-- Pandaren Water Spirit
+					})
+				},
+			}),
+			q(31954, {	-- Grand Master Mo'ruk
+				["coord"] = { 62.6, 45.8, KRASARANG_WILDS },
+				["provider"] = { "n", 66733 },
+				["isDaily"] = true,
+				["sym"] = {
+					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+				},
+			}),
+			q(31956, {	-- Grand Master Yon
+				["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
+				["isDaily"] = true,
+				["provider"] = { "n", 66738 },	-- Courageous Yon
+				["sym"] = {
+					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+				},
+			}),
+			q(63435, {	-- Temple Throwdown
+				["timeline"] = { "added 9.1.0.39226" },
+				["provider"] = { "n", 176655 },	-- Anthea <Carefree Pet Tamer>
+				["isDaily"] = true,
+				["coord"] = { 70.4, 51.4, KUN_LAI_SUMMIT },
+				["g"] = {
+					i(184866, {	-- Grummlepouch
+						i(89587),	-- Porcupette
+						i(184867),	-- Squibbles (PET!)
+					}),
+				},
+			}),
+			q(32441, {	-- Thundering Pandaren Spirit
+				["coord"] = { 64.9, 93.8, KUN_LAI_SUMMIT },
+				["isDaily"] = true,
+				["provider"] = { "n", 68465 },	-- Thundering Pandaren Spirit
+				["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
+				["sym"] = {
+					{"select", "itemID", 89139 },	-- Chain Pet Leash
+					{"select", "itemID", 44820 },	-- Red Ribbon Pet Leash
+					{"select", "itemID", 37460 },	-- Rope Pet Leash
+				},
+				["g"] = {
+					i(93149, {	-- Pandaren Spirit Pet Supplies
+						i(92800),	-- Pandaren Earth Spirit
+					}),
+				},
+			}),
+			q(31953, {	-- Grand Master Hyuna
+				["isDaily"] = true,
+				["coord"] = { 47.9, 54.1, THE_JADE_FOREST },
+				["provider"] = { "n", 66730 },	-- Hyuna of the Shrines
+				["sym"] = {
+					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+				},
+			}),
+			q(32440, {	-- Whispering Pandaren Spirit
+				["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
+				["isDaily"] = true,
+				["provider"] = { "n", 68464 },	-- Whispering Pandaren Spirit
+				["coord"] = { 28.9, 36.0, THE_JADE_FOREST },
+				["sym"] = {
+					{"select", "itemID", 89139 },	-- Chain Pet Leash
+					{"select", "itemID", 44820 },	-- Red Ribbon Pet Leash
+					{"select", "itemID", 37460 },	-- Rope Pet Leash
+				},
+				["g"] = {
+					i(93148, {	-- Pandaren Spirit Pet Supplies
+						i(92799),	-- Pandaren Air Spirit
+					})
+				},
+			}),
+			q(31991, {	-- Grand Master Zusshi
+				["coord"] = { 36.3, 52.2, TOWNLONG_STEPPES },
+				["isDaily"] = true,
+				["provider"] = { "n", 66918 },	-- Seeker Zusshi
+				["sym"] = {
+					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+				},
+			}),
+			q(32434, {	-- Burning Pandaren Spirit
+				["coord"] = { 57.2, 42.1, TOWNLONG_STEPPES },
+				["isDaily"] = true,
+				["provider"] = { "n", 68463 },
+				["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
+				["sym"] = {
+					{"select", "itemID", 89139 },	-- Chain Pet Leash
+					{"select", "itemID", 44820 },	-- Red Ribbon Pet Leash
+					{"select", "itemID", 37460 },	-- Rope Pet Leash
+				},
+				["g"] = {
+					i(93146, {	-- Pandaren Spirit Pet Supplies
+						i(92798),	-- Pandaren Fire Spirit
+					})
+				},
+			}),
+			q(32604, {	-- Beasts of Fable Book I
+				["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
+				["isDaily"] = true,
+				["sourceQuests"] = { 32603 },	-- Beasts of Fable
+				["providers"] = {
+					{ "n", 64572 },	-- Sara Finkleswitch
+					{ "n", 64582 },	-- Gentle San
+				},
+				["coords"] = {
+					{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+					{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+				},
+				["sym"] = {
+					{"sub", "common_pb_rewards", 94207},	-- Fabled Pandaren Pet Supplies
+				},
+			}),
+			q(32868, {	-- Beasts of Fable Book II
+				["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
+				["isDaily"] = true,
+				["sourceQuests"] = { 32603 },	-- Beasts of Fable
+				["providers"] = {
+					{ "n", 64572 },	-- Sara Finkleswitch
+					{ "n", 64582 },	-- Gentle San
+				},
+				["coords"] = {
+					{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+					{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+				},
+				["sym"] = {
+					{"sub", "common_pb_rewards", 94207},	-- Fabled Pandaren Pet Supplies
+				},
+			}),
+			q(32869, {	-- Beasts of Fable Book III
+				["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
+				["isDaily"] = true,
+				["sourceQuests"] = { 32603 },	-- Beasts of Fable
+				["providers"] = {
+					{ "n", 64572 },	-- Sara Finkleswitch
+					{ "n", 64582 },	-- Gentle San
+				},
+				["coords"] = {
+					{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+					{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+				},
+				["sym"] = {
+					{"sub", "common_pb_rewards", 94207},	-- Fabled Pandaren Pet Supplies
+				},
+			}),
+			q(31958, {	-- Grand Master Aki
+				["sourceQuests"] = { 31951 },	-- Grand Master Aki
+				["provider"] = { "n", 66741 },	-- Aki the Chosen
+				["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
+				["isDaily"] = true,
+				["sym"] = {
+					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+				},
+			}),
+			q(31955, {	-- Grand Master Nishi
+				["isDaily"] = true,
+				["provider"] = { "n", 66734 },	-- Farmer Nishi
+				["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
+				["sym"] = {
+					{"sub", "common_pb_rewards", 89125},	-- Sack of Pet Supplies
+				},
+			}),
+			-- WoD
+			q(37205, {	-- Gargra
+				["isDaily"] = true,
+				["coord"] = { 68.5, 64.7, FROSTFIRE_RIDGE },
+				["provider"] = { "n", 87122 },	-- Gargra
+				["g"] = {
+					i(116415),	-- Shiny Pet Charm
+				},
+			}),
+			q(37201, {	-- Cymre Brightblade
+				["isDaily"] = true,
+				["coord"] = { 51.1, 70.6, GORGROND },
+				["provider"] = { "n", 83837 },	-- Cymre Brightblade
+				["g"] = {
+					i(116415),	-- Shiny Pet Charm
+				},
+			}),
+			q(37206, {	-- Tarr the Terrible
+				["provider"] = { "n", 87110 },	-- Tar the Terrible
+				["coord"] = { 56.2, 9.8, DRAENOR_NAGRAND },
+				["isDaily"] = true,
+				["g"] = {
+					i(116415),	-- Shiny Pet Charm
+				},
+			}),
+			q(37203, {	-- Ashlei
+				["isDaily"] = true,
+				["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
+				["provider"] = { "n", 87124 },	-- Ashlei
+				["g"] = {
+					i(116415),	-- Shiny Pet Charm
+				},
+			}),
+			q(37207, {	-- Vesharr
+				["provider"] = { "n", 87123 },	-- Vesharr
+				["coord"] = { 46.2, 45.3, SPIRES_OF_ARAK },
+				["isDaily"] = true,
+				["g"] = {
+					i(116415),	-- Shiny Pet Charm
+				},
+			}),
+			q(37208, {	-- Taralune
+				["isDaily"] = true,
+				["coord"] = { 49.0, 80.3, TALADOR },
+				["provider"] = { "n", 87125 },	-- Taralune
+				["g"] = {
+					i(116415),	-- Shiny Pet Charm
 				},
 			}),
 			-- PvP Weekly
 			pvp(q(32863, {	-- What We've Been Training For
-				["provider"] = { "n", 63596 },	-- Audrey Burnhelp
-				["coord"] = { 69.2, 25.0, STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["isWeekly"] = true,
-				["sym"] = {
-					{"sub", "common_pb_rewards", 98095},	-- Brawler's Pet Supplies
+				["description"] = "Account-Wide Weekly Quest.|r",
+				["providers"] = {
+					{ "n", 63596 },	-- Audrey Burnhelp
+					{ "n", 63626 },	-- Varzok
+					{ "n", 64572 },	-- Sara Finkleswitch
+					{ "n", 64582 },	-- Gentle San
 				},
-			})),
-			pvp(q(32863, {	-- What We've Been Training For
-				["provider"] = { "n", 63626 },	-- Varzok
-				["coord"] = { 52.6, 59.3, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
+				["coords"] = {
+					{ 69.2, 25.0, STORMWIND_CITY },
+					{ 52.6, 59.3, ORGRIMMAR },
+					{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+					{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+				},
 				["isWeekly"] = true,
 				["sym"] = {
 					{"sub", "common_pb_rewards", 98095},	-- Brawler's Pet Supplies

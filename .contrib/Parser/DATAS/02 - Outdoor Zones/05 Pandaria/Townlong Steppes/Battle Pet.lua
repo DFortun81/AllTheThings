@@ -43,27 +43,6 @@ _.Zones =
 				p(740, {	-- Yakrat
 					["cr"] = 63957,
 				}),
-				q(31991, {	-- Grand Master Zusshi
-					["coord"] = { 36.3, 52.2, TOWNLONG_STEPPES },
-					["isDaily"] = true,
-					["provider"] = { "n", 66918 },	-- Seeker Zusshi
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(32434, {	-- Burning Pandaren Spirit
-					["coord"] = { 57.2, 42.1, TOWNLONG_STEPPES },
-					["isDaily"] = true,
-					["provider"] = { "n", 68463 },
-					["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
-					["g"] = {
-						i(93146, {	-- Pandaren Spirit Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-							i(92798),	-- Pandaren Fire Spirit
-						})
-					},
-				}),
 			}),
 		}),
 	}),

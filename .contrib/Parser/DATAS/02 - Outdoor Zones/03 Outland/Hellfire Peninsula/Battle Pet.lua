@@ -13,11 +13,6 @@ _.Zones =
 				p(414, {	-- Scorpid
 					["cr"] = 61326,	-- Scorpid
 				}),
-				q(31922, {	-- Nicki Tinytech
-					["qg"] = 66550,	-- Nicki Tinytech
-					["coord"] = { 64.3, 49.3, HELLFIRE_PENINSULA },
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	})),

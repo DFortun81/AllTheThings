@@ -19,11 +19,6 @@ _.Zones =
 				p(1238, {	-- Unborn Val'kyr
 					["crs"] = { 71163 },
 				}),
-				q(31933, {	-- Okrut Dragonwaste
-					["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
-					["provider"] = { "n", 66638 },	-- Okrut Dragonwaste
-					["isDaily"] = true,
-				}),
 			}),
 		}),
 	}),

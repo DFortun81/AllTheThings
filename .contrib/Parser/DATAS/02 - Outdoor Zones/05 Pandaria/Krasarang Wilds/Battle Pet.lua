@@ -24,12 +24,6 @@ _.Zones =
 				p(1013, {	-- Wanderer's Festival Hatchling
 					["description"] = "This wild pet can be found on Turtle Beach in Krasarang Wilds. It only spawns during the Wanderer's Festival. The festival is held only on Sunday night from 9 PM to 11 PM (Pacific Standard Time, GMT-8). During the festival, floating lanterns appear on the surface of the water and Pandaren NPCs wander onto the beach to set up bonfires and shoot off fireworks. Shortly after, the Wanderer's Festival Hatchlings appear.",
 				}),
-				q(31954, {	-- Grand Master Mo'ruk
-					["repeatable"] = true,
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
 			}),
 		}),
 	}),

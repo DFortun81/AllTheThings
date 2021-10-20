@@ -16,11 +16,6 @@ _.Zones =
 				p(515, {	-- Sporeling Sprout
 					["crs"] = { 62564 },	-- Sporeling Sprout
 				}),
-				q(31923, {	-- Ras'an
-					["isDaily"] = true,
-					["coord"] = { 17.2, 50.5, ZANGARMARSH },
-					["provider"] = { "n", 66551 },	-- Ras'an <Master Pet Tamer>
-				}),
 			}),
 		}),
 	})),

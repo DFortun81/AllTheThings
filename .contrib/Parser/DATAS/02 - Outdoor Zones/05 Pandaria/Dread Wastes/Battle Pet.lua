@@ -28,27 +28,6 @@ _.Zones =
 				p(741, {	-- Silent Hedgehog
 					["cr"] = 64804,
 				}),
-				q(31957, {	-- Grand Master Shu
-					["coord"] = { 55.1, 37.6, DREAD_WASTES },
-					["isDaily"] = true,
-					["provider"] = { "n", 66739 },	-- Wastewalker Shu
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(32439, {	-- Flowing Pandaren Spirit
-					["coord"] = { 61.1, 87.5, DREAD_WASTES },
-					["isDaily"] = true,
-					["provider"] = { "n", 68462 },	-- Flowing Pandaren Spirit
-					["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
-					["g"] = {
-						i(93147, {	-- Pandaren Spirit Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(44820),	-- Red Ribbon Pet Leash
-							i(90173),	-- Pandaren Water Spirit
-						})
-					},
-				}),
 			}),
 		}),
 	}),

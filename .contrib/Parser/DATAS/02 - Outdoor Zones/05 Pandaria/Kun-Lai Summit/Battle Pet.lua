@@ -44,39 +44,6 @@ _.Zones =
 					["coord"] = { 35.2, 56.2, KUN_LAI_SUMMIT },
 					["description"] = "This pet is needed for |cFFFFD700Beasts of Fable|r quests.",
 				}),
-				q(31956, {	-- Grand Master Yon
-					["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
-					["isDaily"] = true,
-					["provider"] = { "n", 66738 },	-- Courageous Yon
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(63435, {	-- Temple Throwdown
-					["timeline"] = { "added 9.1.0.39226" },
-					["provider"] = { "n", 176655 },	-- Anthea <Carefree Pet Tamer>
-					["isDaily"] = true,
-					["coord"] = { 70.4, 51.4, KUN_LAI_SUMMIT },
-					["g"] = {
-						i(184866, {	-- Grummlepouch
-							i(89587),	-- Porcupette
-							i(184867),	-- Squibbles (PET!)
-						}),
-					},
-				}),
-				q(32441, {	-- Thundering Pandaren Spirit
-					["coord"] = { 64.9, 93.8, KUN_LAI_SUMMIT },
-					["isDaily"] = true,
-					["provider"] = { "n", 68465 },	-- Thundering Pandaren Spirit
-					["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
-					["g"] = {
-						i(93149, {	-- Pandaren Spirit Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(92800),	-- Pandaren Earth Spirit
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
-					},
-				}),
 			}),
 		}),
 	}),

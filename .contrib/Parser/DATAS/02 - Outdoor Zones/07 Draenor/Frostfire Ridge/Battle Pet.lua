@@ -28,14 +28,6 @@ _.Zones =
 				p(1464, {	-- Twilight Wasp
 					["crs"] = { 85253 },	-- Twilight Wasp
 				}),
-				q(37205, {	-- Gargra
-					["isDaily"] = true,
-					["coord"] = { 68.5, 64.7, FROSTFIRE_RIDGE },
-					["provider"] = { "n", 87122 },	-- Gargra
-					["g"] = {
-						i(116415),	-- Shiny Pet Charm x2
-					},
-				}),
 			}),
 		}),
 	}),

@@ -40,11 +40,6 @@ _.Zones =
 				p(470, {	-- Twilight Spider
 					["crs"] = { 62117 },	-- Twilight Spider
 				}),
-				q(31973, {	-- Bordin Steadyfist
-					["provider"] = { "n", 66815 },	-- Bordin Steadyfist
-					["coord"] = { 49.9, 57.1, 207 },
-					["repeatable"] = true,
-				}),
 			}),
 		}),
 	}),

@@ -65,14 +65,6 @@ _.Zones =
 				p(1582, {	-- Zangar Crawler
 					["crs"] = { 88466 },	-- Zangar Crawler
 				}),
-				q(37207, {	-- Vesharr
-					["provider"] = { "n", 87123 },	-- Vesharr
-					["coord"] = { 46.2, 45.3, SPIRES_OF_ARAK },
-					["isDaily"] = true,
-					["g"] = {
-						i(116415),	-- Shiny Pet Charm
-					},
-				}),
 			}),
 		}),
 	}),

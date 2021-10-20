@@ -16,13 +16,6 @@ _.Zones =
 				p(677),	-- Shy Bandicoon
 				p(711),	-- Sifang Otter
 				p(713),	-- Softshell Snapling
-				q(31955, {	-- Grand Master Nishi
-					["isDaily"] = true,
-					["provider"] = { "n", 66734 },	-- Farmer Nishi
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
 			}),
 		}),
 	}),

@@ -4,7 +4,7 @@
 
 _.BattlePets =
 {
-	petbattle(n(PET_BATTLE,	{
+	n(PET_BATTLE,	{
 		n(REWARDS, {
 			i(86143),	-- Battle Pet Bandage
 			i(94207, {	-- Fabled Pandaren Pet Supplies
@@ -22,22 +22,23 @@ _.BattlePets =
 					i(92678),	-- Flawless Magic Battle-Stone
 					i(92680),	-- Flawless Mechanical Battle-Stone
 					i(92681),	-- Flawless Undead Battle-Stone
-					i(89139),	-- Chain Pet Leash
+					petbattle(i(89139)),	-- Chain Pet Leash
 					i(44820),	-- Red Ribbon Pet Leash
-					i(94210),	-- Mountain Panda
-					i(94209),	-- Snowy Panda
-					i(94208),	-- Sunfur Panda
+					petbattle(i(94210)),	-- Mountain Panda
+					petbattle(i(94209)),	-- Snowy Panda
+					petbattle(i(94208)),	-- Sunfur Panda
+					i(37460),	-- Rope Pet Leash
 				},
 			}),
 			-- Both Items wont show up until I found the Quest ID
-			i(165944, {	-- A Shady Message (Ally). ItemID confirmed 16.01.2019 -Gold
+			petbattle(pvp(i(165944, {	-- A Shady Message (Ally). ItemID confirmed 16.01.2019 -Gold
 				["description"] = "Rewarded from winning PvP Pet Battles",
 				["collectible"] = false,
-			}),
-			i(166242, {	-- A Shady Message (Horde)
+			}))),
+			petbattle(pvp(i(166242, {	-- A Shady Message (Horde)
 				["description"] = "Rewarded from winning PvP Pet Battles",
 				["collectible"] = false,
-			}),
+			}))),
 			i(89125, {	-- Sack of Pet Supplies
 				["crs"] = {
 					66741,	-- Aki the Chosen
@@ -68,7 +69,7 @@ _.BattlePets =
 					66126,	-- Zunta
 				},
 				["g"] = {
-					i(89587),	-- Porcupette
+					petbattle(i(89587)),	-- Porcupette
 					i(92679),	-- Flawless Aquatic Battle-Stone
 					i(92675),	-- Flawless Beast Battle-Stone
 					i(92676),	-- Flawless Critter Battle-Stone
@@ -83,26 +84,18 @@ _.BattlePets =
 				},
 			}),
 			i(98095, {	-- Brawler's Pet Supplies
-				["crs"] = {
-					63596,	-- Audrey Burnhep
-					64582,	-- Gentle San
-					64572,	-- Sara Finkleswitch
-					63626,	-- Varzok
-				},
-				["g"] = {
-					i(92679),	-- Flawless Aquatic Battle-Stone
-					i(92675),	-- Flawless Beast Battle-Stone
-					i(92676),	-- Flawless Critter Battle-Stone
-					i(92665),	-- Flawless Elemental Battle-Stone
-					i(92677),	-- Flawless Flying Battle-Stone
-					i(92682),	-- Flawless Humanoid Battle-Stone
-					i(92678),	-- Flawless Magic Battle-Stone
-					i(92680),	-- Flawless Mechanical Battle-Stone
-					i(92681),	-- Flawless Undead Battle-Stone
-					i(89139),	-- Chain Pet Leash
-					i(44820),	-- Red Ribbon Pet Leash
-				},
+				i(92679),	-- Flawless Aquatic Battle-Stone
+				i(92675),	-- Flawless Beast Battle-Stone
+				i(92676),	-- Flawless Critter Battle-Stone
+				i(92665),	-- Flawless Elemental Battle-Stone
+				i(92677),	-- Flawless Flying Battle-Stone
+				i(92682),	-- Flawless Humanoid Battle-Stone
+				i(92678),	-- Flawless Magic Battle-Stone
+				i(92680),	-- Flawless Mechanical Battle-Stone
+				i(92681),	-- Flawless Undead Battle-Stone
+				i(89139),	-- Chain Pet Leash
+				i(44820),	-- Red Ribbon Pet Leash
 			}),
 		}),
-	})),
+	}),
 };

@@ -46,14 +46,6 @@ _.Zones =
 				p(1463, {	-- Wood Wasp
 					["crs"] = { 85254 },
 				}),
-				q(37201, {	-- Cymre Brightblade
-					["isDaily"] = true,
-					["coord"] = { 51.1, 70.6, GORGROND },
-					["provider"] = { "n", 83837 },	-- Cymre Brightblade
-					["g"] = {
-						i(116415),	-- Shiny Pet Charm x2
-					},
-				}),
 			}),
 		}),
 	}),

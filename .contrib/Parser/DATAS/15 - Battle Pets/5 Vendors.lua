@@ -45,6 +45,7 @@ _.BattlePets =
 			}),
 			n(63077, {	-- Lehna
 				["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
+				["races"] = ALLIANCE_ONLY,
 				["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 				["sym"] = {
 					{"select", "headerID", PET_BATTLE},		-- Select Pet Battle Header
@@ -57,6 +58,7 @@ _.BattlePets =
 			}),
 			n(63014, {	-- Marcus Jensen
 				["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
+				["races"] = ALLIANCE_ONLY,
 				["sym"] = {
 					{"select", "headerID", PET_BATTLE},		-- Select Pet Battle Header
 					{"pop"},								-- Discard Header and acquire all of their children.
@@ -69,6 +71,7 @@ _.BattlePets =
 			n(63070, {	-- Valeena
 				["coord"] = { 55.2, 51.2, TELDRASSIL },
 				["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
+				["races"] = ALLIANCE_ONLY,
 				["sym"] = {
 					{"select", "headerID", PET_BATTLE},		-- Select Pet Battle Header
 					{"pop"},								-- Discard Header and acquire all of their children.

@@ -80,14 +80,6 @@ _.Zones =
 				p(1593, {	--  Waterfly
 					["crs"] = { 88355 },	--  Waterfly
 				}),
-				q(37208, {	-- Taralune
-					["isDaily"] = true,
-					["coord"] = { 49.0, 80.3, TALADOR },
-					["provider"] = { "n", 87125 },	-- Taralune
-					["g"] = {
-						i(116415),	-- Shiny Pet Charm
-					},
-				}),
 			}),
 		}),
 	}),
