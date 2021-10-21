@@ -1955,8 +1955,3 @@ _.Zones =
 		}),
 	}),
 };
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(31375),	-- The Order of the Cloud Serpent
-	}),
-});

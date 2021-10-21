@@ -1476,12 +1476,6 @@ _.Zones =
 	})),
 };
 
-_.NeverImplemented = bubbleDown({["u"] = NEVER_IMPLEMENTED},{
-	n(QUESTS, {
-		q(9749),	-- They're Alive! Maybe... (duplicate, never went live)
-	}),
-});
-
 -- Add the items that aren't marked with a phase.
 appendGroups({
 	i(21219),	-- Recipe: Sagefish Delight

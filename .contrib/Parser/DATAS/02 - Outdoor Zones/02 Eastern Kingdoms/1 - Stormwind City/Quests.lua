@@ -936,12 +936,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(30988, {	-- The Alliance Way
-					["provider"] = { "n", 29611 },	-- King Varian Wrynn <King of Stormwind>
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["description"] = "While this Quest is removed, doing the Horde Version of this Quest named The Horde Way (ID:31013) will complete this quest.",
-				}),
 				q(42740, {	-- The Battle for Broken Shore
 					["sourceQuests"] = { 42782 },	-- To Be Prepared
 				--	["altQuests"] = { 43806 },	-- Scenario Skip (A)

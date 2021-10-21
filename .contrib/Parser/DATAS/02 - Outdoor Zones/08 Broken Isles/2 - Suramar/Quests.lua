@@ -1901,7 +1901,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(40725),	-- Arganax
 		q(41044),	-- Attack and Assail!
 		q(40393),	-- Axes for Arrows
-		q(45405),	-- Breaching the Sanctum
 		q(41007),	-- Building a Better Boat
 		q(40763),	-- Casual Redistribution
 		q(41005),	-- Coastal Cleanup

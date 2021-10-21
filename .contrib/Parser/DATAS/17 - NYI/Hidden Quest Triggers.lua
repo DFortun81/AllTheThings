@@ -929,6 +929,51 @@ _.HiddenQuestTriggers = {
 		q(57839),	-- Totems lvl 5
 
 		q(58572),	-- playing console game, remembthon something
+		
+		--------------------
+		--   NYI QUESTS   --
+		--------------------
+		-- NYI VERSIONS OF QUESTS WHICH ARE COMPLETED TOGETHER WITH IMPLEMENTED VERSION OF THESE QUESTS
+		-- TEMPORARY SOLUTION AS HQT FOR NOW
+		q(9734),	-- Return to the Marsh - completed with quest 9732 probably? (reported as with quest 11072)
+		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
+		q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124
+		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
+		q(10871, {	-- Ally of the Netherwingm - completed with quest 10870
+			["_drop"] = { "g" }
+		}),
+		q(10872),	-- Zuluhed the Whacked - completed with quest 144
+		q(10925),	-- Evil Draws Near - completed with quest 10923
+		q(14411),	-- The Wilds of Feralas - completed with quest 14410 & 26589
+		q(14414),	-- The Wilds of Feralas - completed with quest 14410 & 26589
+		q(25198),	-- Winnoa Pineforest - completed with quest 24807
+		q(25305),	-- Never Look Back- completed with quest 25304
+		q(26379),	-- In Aid of the Refugees - completed with quest 13601
+		q(29051),	-- Cub's First Toy - completed with quest 29040
+		q(29052),	-- A Cub's Cravings - completed with quest 29035
+		q(29053),	-- 'Borrowing' From the Winterfall - completed with quest 29037
+		q(29405),	-- The Lesson of the Iron Staff - completed with quest 30027 & 30033 & 30334 & 30335 & 30336 & 30337 & 30338
+		q(29597),	-- The End of the Exarch - completed with quest 29596
+		q(30817),	-- The Healing of Shen-zin Su - completed with quest 29799
+		q(30818),	-- A New Fate - completed with quest 29800
+		q(30988),	-- The Alliance Way - completed with quest 31013
+		q(31033),	-- Adventurers Wanted: Ragefire Chasm - completed with quest 31034 & 31036 & 31037
+		q(31373),	-- The Order of the Cloud Serpent - completed with quest 32461
+		q(31375),	-- The Order of the Cloud Serpent - completed with quest 32461
+		q(34426),	-- Yrel - completed with quest 34478 & 34427
+		q(34435),	-- Find Ga'nar - completed with quest 34434 & 34740
+		q(34438),	-- Regarding Enormous Tanks - completed with quest 34958
+		q(34817),	-- Altar Altercation - completed with quest 34423
+		q(35387),	-- Through the Nether - completed with quest 35085
+		q(35388),	-- The Void March - completed with quest 35086
+		q(35389),	-- Silence the Call - completed with quest 35084
+		q(35390),	-- The Shadow Over Oshu'gun - completed with quest 35088
+		q(35391),	-- Silence the Call - completed with quest 35083
+		q(35392),	-- The Nether Approaches - completed with quest 35087
+		q(37441),	-- Solanian's Belongings - completed with quest 37443
+		q(37667),	-- Building for Professions - completed with quest 36100 & 37669
+		q(45405),	-- Breaching the Sanctum - completed with quest 44719
+		q(51845),	-- Storm's End - completed with quest 50824
 
 		-------------------
 		---   CLASSIC   ---

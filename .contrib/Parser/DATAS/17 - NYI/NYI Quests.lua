@@ -53,7 +53,6 @@ _.NeverImplemented =
 			q(28039),	-- Adventurers Wanted: Maraudon
 			q(28077),	-- Adventurers Wanted: Northern Dire Maul
 			q(28076),	-- Adventurers Wanted: Northern Dire Maul
-			q(31033),	-- Adventurers Wanted: Ragefire Chasm - triggered when turning in "Enemies Below"
 			q(28003),	-- Adventurers Wanted: Ragefire Chasm
 			q(28025),	-- Adventurers Wanted: Razorfen Downs
 			q(28024),	-- Adventurers Wanted: Razorfen Downs

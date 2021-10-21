@@ -396,9 +396,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 				}),
-				q(25305, {	-- Never Look Back
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(25403, {	-- Ogre Abduction (A)
 					["provider"] = { "n", 40052 },	-- Estulan
 					["coord"] = { 57.0, 55.4, FERALAS },

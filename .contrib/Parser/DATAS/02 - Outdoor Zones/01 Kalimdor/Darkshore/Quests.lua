@@ -306,9 +306,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13596,	-- Twilight Plans
 				}),
-				q(26379, {	-- In Aid of the Refugees
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(13885, {	-- In Defense of Darkshore
 					["provider"] = { "n", 34301 },	-- Kathrena Winterwisp
 					["coord"] = { 45.1, 74.6, DARKSHORE },

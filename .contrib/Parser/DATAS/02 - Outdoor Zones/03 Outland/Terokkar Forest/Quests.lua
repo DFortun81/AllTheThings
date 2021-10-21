@@ -936,7 +936,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(28499),	-- Arakkoa Hunter's Supplies
 		}),
 		q(10032),	-- BETA Artifacts from Tuurem
-		q(10925),	-- BETA Evil Draws Near
 		q(9984),	-- BETA Host of the Hidden City
 		q(9985),	-- BETA Host of the Hidden City
 		q(9953),	-- BETA Lookout Nodak

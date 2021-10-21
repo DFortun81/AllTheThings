@@ -789,9 +789,6 @@ _.ExpansionFeatures =
 								}),
 							},
 						}),
-						q(37667, {	-- Building For Professions - alternate version that was never used
-							["u"] = NEVER_IMPLEMENTED,
-						}),
 						q(36100, {	-- Building For Professions
 							["provider"] = { "n", 77209 },	-- Baros Alexston
 							["races"] = ALLIANCE_ONLY,

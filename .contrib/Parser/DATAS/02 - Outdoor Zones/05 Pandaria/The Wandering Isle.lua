@@ -203,11 +203,6 @@ _.Zones =
 						["provider"] = { "n", 56418 },	-- Ji Firepaw
 						["sourceQuests"] = { 30767 },	-- Risking it All
 					}),
-					q(30817, {	-- The Healing of Shen-zin Su Removed Version
-						["provider"] = { "n", 56418 },	-- Ji Firepaw
-					--	["sourceQuests"] = { 30767 },	-- Risking it All
-						["u"] = REMOVED_FROM_GAME,
-					}),
 					q(29661, {	-- The Lesson of Dry Fur
 						["provider"] = { "n", 54975 },	-- Aysa Cloudsinger
 						["sourceQuests"] = { 29521 },	-- The Singing Pools
@@ -328,6 +323,5 @@ _.Zones =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(29407),	-- The First Sign of Winter
-		q(29405),	-- The Lesson of the Iron Staff
 	}),
 });
