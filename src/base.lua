@@ -125,7 +125,7 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 		self.editBox:SetWidth(240);
 		self.editBox:HighlightText();
 	end;
-	popup.text = msg or "Ctrl+C to Copy to your Clipboard.";
+	popup.text = (msg or "").."\n(Ctrl+C to Copy to your Clipboard)";
 	popup.callback = callback;
 	StaticPopup_Hide ("ALL_THE_THINGS_EDITBOX");
 	StaticPopup_Show ("ALL_THE_THINGS_EDITBOX");

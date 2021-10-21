@@ -1898,8 +1898,30 @@ local PrintQuestInfo = function(questID, new, info)
 			-- Linkify the output
 			local popupID = "quest-" .. id;
 			questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
+			local coord;
+			local mapID = app.GetCurrentMapID();
+			local position = C_Map.GetPlayerMapPosition(mapID, "player")
+			if position then
+				local x,y = position:GetXY();
+				x = math.floor(x * 1000) / 10;
+				y = math.floor(y * 1000) / 10;
+				coord = x..","..y;
+			end
 			app:SetupReportDialog(popupID, "Missing Quest: " .. id,
-				"missing-quest:" .. questID	-- TODO: put more info in here as it will be copy-paste into Discord
+				{
+					"**missing-quest:"..questID.."**",
+
+					"```",	-- discord fancy box
+
+					"race:"..app.RaceID,
+					"class:"..app.ClassIndex,
+					"lvl:"..app.Level,
+					"mapID:"..mapID,
+					"coord:"..coord,
+
+					"```",	-- discord fancy box
+					-- TODO: put more info in here as it will be copy-paste into Discord
+				}
 			);
 		else
 			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
@@ -19716,12 +19738,43 @@ end
 	function app:SetupReportDialog(id, reportMessage, text)
 		if not app.popups then app.popups = {}; end
 		if not app.popups[id] then
-			local popupID = { ["msg"] = reportMessage, ["text"] = text };
+			local popupID;
+			if type(text) == "table" then
+				popupID = { ["msg"] = reportMessage, ["text"] = app.TableConcat(text, nil, "", "\n") };
+			else
+				popupID = { ["msg"] = reportMessage, ["text"] = text };
+			end
 			-- print("Setup PopupID",id)
 			-- app.PrintTable(popupID);
 			app.popups[id] = popupID;
 		end
 	end
+
+	-- function app:TestReportDialog()
+	-- 	local coord;
+	-- 	local mapID = app.GetCurrentMapID();
+    -- 	local position = C_Map.GetPlayerMapPosition(mapID, "player")
+	-- 	if position then
+    --     	local x,y = position:GetXY();
+    --         x = math.floor(x * 1000) / 10;
+    --         y = math.floor(y * 1000) / 10;
+	-- 		coord = x..","..y;
+	-- 	end
+	-- 	app:SetupReportDialog("test", "TEST Report Dialog",
+	-- 				{
+	-- 					"```",	-- discord fancy box
+
+	-- 					"race:"..app.RaceID,
+	-- 					"class:"..app.ClassIndex,
+	-- 					"lvl:"..app.Level,
+	-- 					"mapID:"..app.GetCurrentMapID(),
+	-- 					"coord:"..coord,
+
+	-- 					"```",	-- discord fancy box
+	-- 				}
+	-- 				-- TODO: put more info in here as it will be copy-paste into Discord
+	-- 			);
+	-- end
 
 	-- Retrieves stored information for a report dialog and attempts to display the dialog if possible
 	function app:TriggerReportDialog(id)
