@@ -1404,7 +1404,7 @@ end
 -- The base logic for turning a Table of data into an 'object' that provides dynamic information concerning the type of object which was identified
 -- based on the priority of possible key values
 local CreateObject;
-CreateObject = function(t)
+CreateObject = function(t, rootOnly)
 	if not t then return {}; end
 
 	-- already an object, so need to create a new instance of the same data
@@ -1489,6 +1489,11 @@ CreateObject = function(t)
 			-- if app.DEBUG_PRINT then print("CreateObject by value, no specific object type"); app.PrintTable(t); end
 			t = setmetatable({}, { __index = t });
 		end
+	end
+
+	-- allows for copying an object without all of the sub-groups
+	if rootOnly then
+		t.g = nil;
 	end
 
 	-- if app.DEBUG_PRINT then print("CreateObject key/value",t.key,t[t.key]); end
@@ -16072,9 +16077,18 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			self:Update();
 		end
 		-- Returns the consolidated data format for the next header level
-		-- Headers are forced not collectible, and will have their content sorted
-		local function CreateHeaderData(group)
-			return { g = { group }, ["sort"] = true, ["collectible"] = false, };
+		-- Headers are forced not collectible, and will have their content sorted, and can be copied from the existing Source header
+		local function CreateHeaderData(group, header)
+			-- copy an uncollectible version of the existing header
+			if header then
+				header = CreateObject(header, true);
+				header.g = { group };
+				header.sort = true;
+				header.collectible = false;
+				return header;
+			else
+				return { g = { group }, ["sort"] = true, ["collectible"] = false, };
+			end
 		end
 		-- set of keys for headers which can be nested in the minilist automatically, but not as a direct top header
 		local subGroupKeys = {
@@ -16164,18 +16178,18 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 								if topHeaders[headerID] then
 									-- already found a matching header, then nest it before switching
 									if topHeader then
-										group = app.CreateNPC(topHeader, CreateHeaderData(group));
+										group = CreateHeaderData(group, topHeader);
 									end
-									topHeader = headerID;
+									topHeader = nextParent;
 								elseif not ignoredHeaders[headerID] then
-									group = app.CreateNPC(headerID, CreateHeaderData(group));
+									group = CreateHeaderData(group, nextParent);
 									nested = true;
 								end
 							else
 								for hkey,hf in pairs(subGroupKeys) do
 									if nextParent[hkey] then
 										-- create the specified group Type header
-										group = hf(nextParent[hkey], CreateHeaderData(group));
+										group = CreateHeaderData(group, nextParent);
 										nested = true;
 										break;
 									end
@@ -16185,7 +16199,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						end
 						-- Create/match the header chain for the zone list assuming it matches one of the allowed top headers
 						if topHeader then
-							group = app.CreateNPC(topHeader, CreateHeaderData(group));
+							group = CreateHeaderData(group, topHeader);
 							nested = true;
 						end
 					end
