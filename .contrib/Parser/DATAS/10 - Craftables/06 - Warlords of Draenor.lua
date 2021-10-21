@@ -127,6 +127,7 @@ _.Craftables =
 			}),
 			n(WEAPONS, {
 				i(109168, {	-- Shrediron's Shredder
+					["timeline"] = { "created 9.0" },
 					-- ["description"] = "",	-- TODO how to obtain this base version?!
 				}),
 				WOD_CRAFTED_ITEM(109168, 128017),	-- Shrediron's Shredder* + True Iron Trigger*
@@ -165,23 +166,27 @@ _.Craftables =
 			}),
 			filter(1, {	-- Off-hand
 				i(113270, {	-- Shadowtome
+					["timeline"] = { "created 9.0" },
 					-- ["description"] = "",	-- TODO how to obtain this base version?!
 				}),
 				WOD_CRAFTED_ITEM(113270),	-- Shadowtome
 			}),
 			filter(28, {	-- Staves
 				i(113134, {	-- Crystalfire Spellstaff
+					["timeline"] = { "created 9.0" },
 					-- ["description"] = "",	-- TODO how to obtain this base version?!
 				}),
 				WOD_CRAFTED_ITEM(113134),	-- Crystalfire Spellstaff
 				i(111526, {	-- Etched-Blade Warstaff
+					["timeline"] = { "created 9.0" },
 					-- ["description"] = "",	-- TODO how to obtain this base version?!
 				}),
 				WOD_CRAFTED_ITEM(111526),	-- Etched-Blade Warstaff
 			}),
 			filter(27, {	-- Wands
 				i(113131, {	-- Warmaster's Firestick
-					-- ["description"] = "",	-- TODO how to obtain this base version?!
+					["timeline"] = { "added 9.0" },
+					["description"] = "If you obtained this Item other than via the Auction House, please post in the Discord any details of how you managed this!",	-- TODO how to obtain this base version?!
 				}),
 				WOD_CRAFTED_ITEM(113131),	-- Warmaster's Firestick
 			}),

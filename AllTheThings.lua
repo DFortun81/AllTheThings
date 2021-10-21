@@ -109,26 +109,31 @@ app.PrintTable = function(t,depth)
 	if not t then print("nil"); return; end
 	if type(t) ~= "table" then print(type(t),t); return; end
 	depth = depth or 0;
+	if depth == 0 then app._PrintTable = {}; end
 	local p = "";
-	for i=0,depth,1 do
+	for i=1,depth,1 do
 		p = p .. "-";
 	end
-	print(p .. tostring(t) .. " {");
-	for k,v in pairs(t) do
-		if k == "parent" or k == "sourceParent" then print(p,k,":",tostring(v));
-		elseif type(v) == "table" then
-			print(p,k,":");
-			app.PrintTable(v,depth + 1);
-		else
-			print(p,k,":",tostring(v))
+	-- dont accidentally recursively print the same table
+	if not app._PrintTable[t] then
+		app._PrintTable[t] = true;
+		print(p,tostring(t)," {");
+		for k,v in pairs(t) do
+			if type(v) == "table" then
+				print(p,k,":");
+				app.PrintTable(v,depth + 1);
+			else
+				print(p,k,":",tostring(v))
+			end
 		end
+		if getmetatable(t) then
+			print(p,"__index:");
+			app.PrintTable(getmetatable(t).__index, depth + 1);
+		end
+		print(p,"}");
+	else
+		print(p,tostring(t),"RECURSIVE");
 	end
-	print("}");
-	if getmetatable(t) then
-		print("__index:");
-		app.PrintTable(getmetatable(t).__index, depth + 1);
-	end
-	print("---")
 end
 --[[
 app.PrintMemoryUsage = function(...)
@@ -5880,6 +5885,13 @@ local function AttachTooltip(self)
 				end
 			end
 		end
+		-- this is already covered by a default in-game tooltip line:
+		-- AUCTION_HOUSE_BUCKET_VARIATION_EQUIPMENT_TOOLTIP = "Items in this group may vary in stats and appearance. Check the auction's tooltip before buying.";
+		-- if owner.useCircularIconBorder and not self.AllTheThingsProcessing then
+		-- 	-- print("AH General Item Tooltip")
+		-- 	-- Generalized tooltip hover of a selected Auction Item -- not always accurate to the actual Items for sale
+		-- 	self:AddLine(L["AUCTION_GENERALIZED_ITEM_WARNING"]);
+		-- end
 	end
 
 	if CanAttachTooltips() then
