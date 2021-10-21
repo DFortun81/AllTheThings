@@ -1939,8 +1939,30 @@ local PrintQuestInfo = function(questID, new, info)
 				-- Linkify the output
 				local popupID = "quest-" .. id;
 				questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
+				local coord;
+				local mapID = app.GetCurrentMapID();
+				local position = C_Map.GetPlayerMapPosition(mapID, "player")
+				if position then
+					local x,y = position:GetXY();
+					x = math.floor(x * 1000) / 10;
+					y = math.floor(y * 1000) / 10;
+					coord = x..","..y;
+				end
 				app:SetupReportDialog(popupID, "NYI Quest: " .. id,
-					"nyi-quest:" .. questID	-- TODO: put more info in here as it will be copy-paste into Discord
+					{
+						"**nyi-quest:"..questID.."**",
+
+						"```",	-- discord fancy box
+
+						"race:"..app.RaceID,
+						"class:"..app.ClassIndex,
+						"lvl:"..app.Level,
+						"mapID:"..mapID,
+						"coord:"..coord,
+
+						"```",	-- discord fancy box
+						-- TODO: put more info in here as it will be copy-paste into Discord
+					}
 				);
 			else
 				-- Linkify the output
