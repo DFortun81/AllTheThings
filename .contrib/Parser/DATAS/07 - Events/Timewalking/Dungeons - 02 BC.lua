@@ -2,7 +2,7 @@
 -- #if AFTER 6.2.3.20601
 root("WorldEvents", d(24, {  -- Timewalking
 	tier(TBC_TIER, {
-		["lvl"] = 71,
+		-- ["lvl"] = 71,
 		["g"] = {
 			inst(249, {	-- Magisters' Terrace
 				n(COMMON_BOSS_DROPS, {
