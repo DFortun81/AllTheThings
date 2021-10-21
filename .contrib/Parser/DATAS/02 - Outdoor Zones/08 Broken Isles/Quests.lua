@@ -13,8 +13,9 @@ _.Zones =
 					}),
 				}),
 				n(-170, {	-- Balance of Power
-					["description"] = "The only known requirement to start this questline is the completion of your class campaign.  It may also require advancement into the Legionfall campaign.",
+					["description"] = "The only known requirement to start this questline is the completion of your class campaign.",
 					["maps"] = {
+						-- Order Halls
 						647, 648,	-- Acherus (Death Knight)
 						717,		-- Dreadscar Rift (Warlock)
 						734, 735,	-- Hall of the Guardian (Mage)
@@ -27,21 +28,6 @@ _.Zones =
 						726,		-- The Heart of Azeroth (Shaman)
 						709,		-- The Wandering Isle (Monk)
 						739,		-- Trueshot Lodge (Hunter)
-						AZSUNA,
-						SURAMAR,
-						STORMHEIM,
-						713,			-- Eye of Azshara
-						703, 704, 705,	-- Halls of Valor
-						710, 711, 712,	-- Vault of the Wardens
-						761, 762, 763,	-- Court of Stars
-						749,			-- The Arcway
-						733,			-- Darkheart Thicket
-						706, 707, 708,	-- Maw of Souls
-						731,			-- Neltharion's Lair
-						-- The Emerald Nightmare
-						777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789,
-						-- The Nighthold
-						764, 765, 766, 767, 768, 769, 770, 771, 772,
 					},
 					["g"] = {
 						q(43496, {	-- The Power Within
@@ -69,6 +55,7 @@ _.Zones =
 							["sourceQuests"] = { 43496, 43501, 43503, 43505 },	-- The Power Within (4 versions)
 							["provider"] = { "n", 100482 },	-- Senegos
 							["coord"] = { 48.0, 25.7, AZSUNA },
+							["maps"] = { 713 },	-- Eye of Azshara
 						}),
 						q(43514, {	-- A Vainglorious Past
 							["sourceQuests"] = { 40668 },	-- Eye of Azshara: The Heart of Zin-Azshari
@@ -79,6 +66,7 @@ _.Zones =
 							["sourceQuests"] = { 40668 },	-- Eye of Azshara: The Heart of Zin-Azshari
 							["provider"] = { "n", 100482 },	-- Senegos
 							["coord"] = { 48.0, 25.7, AZSUNA },
+							["maps"] = { 733, },	-- Darkheart Thicket
 						}),
 						q(43518, {	-- Tempering Darkness
 							["sourceQuests"] = { 40668 },	-- Eye of Azshara: The Heart of Zin-Azshari
@@ -108,6 +96,7 @@ _.Zones =
 							},
 							["provider"] = { "n", 110773 },	-- Archmage Kalec <Kirin Tor>
 							["coord"] = { 48.0, 25.7, AZSUNA },
+							["maps"] = { 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, },	-- The Emerald Nightmare
 						}),
 						q(43521, {	-- The Emerald Nightmare: Essence of Power
 							["sourceQuests"] = {
@@ -116,11 +105,13 @@ _.Zones =
 							},
 							["provider"] = { "n", 100482 },	-- Senegos
 							["coord"] = { 48.0, 25.7, AZSUNA },
+							["maps"] = { 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, },	-- The Emerald Nightmare
 						}),
 						q(43522, {	-- Essential Consumption
 							["sourceQuests"] = { 43520 },	-- The Emerald Nightmare: Essence of Power
 							["provider"] = { "n", 100482 },	-- Senegos
 							["coord"] = { 48.0, 25.7, AZSUNA },
+							["maps"] = { SURAMAR },
 						}),
 						q(43523, {	-- Repaid Debt
 							["description"] = "This quest is available if you *have* completed the Moonguard Stronghold quests in Suramar.",
@@ -144,16 +135,19 @@ _.Zones =
 							["sourceQuests"] = { 40673 },	-- Lost Knowledge
 							["provider"] = { "n", 101083 },	-- Thalrenus Rivertree
 							["coord"] = { 37.8, 47.3, SURAMAR },
+							["maps"] = { 710, 711, 712, },	-- Vault of the Wardens
 						}),
 						q(40675, {	-- The Arcway: Rite of the Captain
 							["sourceQuests"] = { 40673 },	-- Lost Knowledge
 							["provider"] = { "n", 101080 },	-- Syrana Starweaver
 							["coord"] = { 37.9, 47.3, SURAMAR },
+							["maps"] = { 749 },	-- The Arcway
 						}),
 						q(43524, {	-- Court of Stars: Literary Perfection
 							["sourceQuests"] = { 40673 },	-- Lost Knowledge
 							["provider"] = { "n", 101082 },	-- Lothrius Mooncaller
 							["coord"] = { 37.9, 47.4, SURAMAR },
+							["maps"] = { 761, 762, 763 },	-- Court of Stars
 						}),
 						q(40678, {	-- Twisted Power
 							["sourceQuests"] = {
@@ -173,6 +167,7 @@ _.Zones =
 							["sourceQuests"] = { 43526 },	-- A True Test
 							["provider"] = { "n", 111826 },	-- Archmage Kalec
 							["coord"] = { 37.8, 47.4, SURAMAR },
+							["maps"] = { STORMHEIM },
 						}),
 						q(40608, {	-- The Mark
 							["sourceQuest"] = 40603,	-- Seeking the Valkyra
@@ -183,16 +178,19 @@ _.Zones =
 							["sourceQuest"] = 40608,	-- The Mark
 							["provider"] = { "n", 100738 },	-- Ashildir
 							["coord"] = { 62.7, 68.1, STORMHEIM },
+							["maps"] = { 706, 707, 708 },	-- Maw of Souls
 						}),
 						q(40614, {	-- A Feast Fit for Odyn
 							["sourceQuest"] = 40613,	-- Maw of Souls: Retrieving the Svalnguard
 							["provider"] = { "n", 100738 },	-- Ashildir
 							["coord"] = { 62.7, 68.1, STORMHEIM },
+							["maps"] = { AZSUNA, HIGHMOUNTAIN },
 						}),
 						q(40672, {	-- Neltharion's Lair: Presentation is Key
 							["sourceQuest"] = 40613,	-- Maw of Souls: Retrieving the Svalnguard
 							["provider"] = { "n", 100738 },	-- Ashildir
 							["coord"] = { 62.7, 68.1, STORMHEIM },
+							["maps"] = { 731 },	-- Neltharion's Lair
 						}),
 						q(40615, {	-- Halls of Valor: Odyn's Blessing
 							["sourceQuests"] = {
@@ -201,17 +199,20 @@ _.Zones =
 							},
 							["provider"] = { "n", 100738 },	-- Ashildir
 							["coord"] = { 62.7, 68.1, STORMHEIM },
+							["maps"] = { 703, 704, 705 },	-- Halls of Valor
 						}),
 						q(43898, {	-- Preparing to Move
 							["sourceQuest"] = 40615,	-- Halls of Valor: Odyn's Blessing
 							["provider"] = { "n", 111814 },	-- Archmage Kalec
 							["coord"] = { 62.5, 68.2, STORMHEIM },
+							["maps"] = { SURAMAR },
 						}),
 						q(43528, {	-- Planning the Assault
 							-- NOTE: This quest was removed when The Nighthold opened
 							["sourceQuest"] = 43898,	-- Preparing to Move
 							["provider"] = { "n", 111814 },	-- Archmage Kalec
 							["coord"] = { 62.5, 68.2, STORMHEIM },
+							["maps"] = { SURAMAR },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43530, {	-- The Nighthold: Delusions of Grandeur
@@ -221,16 +222,19 @@ _.Zones =
 							},
 							["provider"] = { "n", 101083 },	-- Thalrenus Rivertree
 							["coord"] = { 37.8, 47.3, SURAMAR },
+							["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },	-- The Nighthold
 						}),
 						q(43531, {	-- The Nighthold: Into the Nighthold
 							["sourceQuest"] = 43898,	-- Preparing to Move
 							["provider"] = { "n", 111826 },	-- Archmage Kalec
 							["coord"] = { 37.8, 47.4, SURAMAR },
+							["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },	-- The Nighthold
 						}),
 						q(43532, {	-- The Nighthold: Darkness Calls
 							["sourceQuest"] = 43898,	-- Preparing to Move
 							["provider"] = { "n", 111826 },	-- Archmage Kalec
 							["coord"] = { 37.8, 47.4, SURAMAR },
+							["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },	-- The Nighthold
 						}),
 						q(43533, {	-- Balance of Power
 							["sourceQuests"] = {
@@ -358,12 +362,6 @@ _.Zones =
 						726,			-- The Heart of Azeroth (Shaman)
 						709,			-- The Wandering Isle (Monk)
 						739,			-- Trueshot Lodge (Hunter)
-						LEGION_DALARAN,
-						775, 776,	-- Scenario: In Defense of the Exodar
-						793,		-- Scenario: Black Rook Hold
-						703, 704, 705,	-- Halls of Valor
-						-- The Nighthold
-						764, 765, 766, 767, 768, 769, 770, 771, 772,
 					},
 					["g"] = {
 						q(44009, {	-- A Falling Star (non-Paladin)
@@ -386,6 +384,7 @@ _.Zones =
 							["description"] = "This quest sends you to a scenario involving The Exodar and Prophet Velen. Before you kill the final boss, make sure to do everything contained within!",
 							["provider"] = { "n", 112130 },	-- Archmage Khadgar
 							["coord"] = { 27.5, 35.8, 629 },	-- Aegwynn's Gallery
+							["maps"] = { 775, 776 },	-- Scenario: In Defense of the Exodar
 							["g"] = {
 								i(140614),	-- Amice of Steadfast Allies
 								i(140610),	-- Wristwraps of the Grieving Prophet
@@ -462,6 +461,7 @@ _.Zones =
 							["description"] = "This quest sends you to a scenario involving Kur'talos Ravencrest, Illidan Stormrage, and the ill-fated Moonguard. Before you kill the final boss, make sure to do everything contained within!",
 							["sourceQuest"] = 44466,	-- An Unclear Path
 							["provider"] = { "n", 113857 },	-- Light's Heart
+							["maps"] = { 793 },		-- Scenario: Black Rook Hold
 							["g"] = {
 								q(44414, {	-- Felspawns of Lothros
 									["description"] = "This quest can only be completed while in the Ravencrest's Legacy scenario.",
@@ -562,6 +562,7 @@ _.Zones =
 						q(45176, {	-- Trial of Valor: The Once and Future Lord of Shadows
 							["sourceQuest"] = 45175,	-- Soul Prism of the Illidari
 							["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+							["maps"] = { 703, 704, 705 },	-- Halls of Valor
 							["g"] = {
 								i(139988),	-- Blazing Purpose Mantle
 								i(140021),	-- Crusader's Inferno Pauldrons
@@ -576,14 +577,13 @@ _.Zones =
 						q(45177, {	-- The Nighthold
 							["sourceQuest"] = 45176,	-- Trial of Valor: The Once and Future Lord of Shadows
 							["provider"] = { "n", 113857 },	-- Light's Heart
+							["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },	-- The Nighthold
 						}),
 					},
 				}),
 				o(247797, {	-- Lost Mail
 					["maps"] = {
 						LEGION_DALARAN, LEGION_THE_UNDERBELLY, 629,	-- Dalaran
-						701,	-- Icecrown Citadel (scenario version)
-						FERALAS,
 					},
 					["g"] = {
 						q(41368, {	-- Lost Mail
@@ -607,6 +607,7 @@ _.Zones =
 						q(41367, {	-- Priority Delivery
 							["sourceQuests"] = { 41397 },	-- A Huge Package
 							["provider"] = { "n", 103976 },	-- The Postmaster
+							["maps"] = { 701 },	-- Icecrown Citadel (scenario version)
 							["cost"] = {
 								{ "i", 134857, 1 },	-- Invincible's Reins
 							},
