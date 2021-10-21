@@ -199,7 +199,7 @@ _.Zones =
 					},
 				}),
 				n(133163, {	-- Tia'Kawan
-				--	["questID"] = ,
+					["questID"] = 50263,
 					["coord"] = { 64.6, 23.6, ZULDAZAR },
 					["g"] = {
 						i(161007),	-- Direhorn Studded Britches
