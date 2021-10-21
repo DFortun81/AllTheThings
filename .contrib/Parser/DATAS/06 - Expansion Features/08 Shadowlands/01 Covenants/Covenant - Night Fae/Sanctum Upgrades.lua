@@ -767,6 +767,7 @@ _.ExpansionFeatures =
 									["coord"] = { 56.0, 68.2, THE_ROOTS },
 								}),
 							}),
+							i(184779),	-- Temporal Leaves
 						},
 					}),
 					n(-937, {	-- Transport Network

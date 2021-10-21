@@ -331,13 +331,19 @@ _.Zones =
 					["provider"] = { "n", 43157 },	-- Doran Steelwing
 					["coord"] = { 63.8, 59.8, THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 26518 },	-- Heads Up
+					["sourceQuests"] = {
+						26498,	-- Death to the Vilebranch (A)
+						26518,	-- Heads Up (A)
+					},
 				}),
 				q(26367, {	-- Ongo'longo's Revenge (H)
 					["provider"] = { "n", 42642 },	-- Primal Torntusk
 					["coord"] = { 67.8, 66.5, THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 26307 },	-- Death to the Vilebranch
+					["sourceQuests"] = {
+						26307,	-- Death to the Vilebranch (H)
+						26366,	-- Heads Up (H)
+					},
 				}),
 				q(26548, {	-- Out to the Front
 					["provider"] = { "n", 5636 },	-- Gryphon Master Talonaxe

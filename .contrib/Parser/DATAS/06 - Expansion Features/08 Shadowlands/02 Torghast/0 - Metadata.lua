@@ -53,6 +53,7 @@ _.ExpansionFeatures =
 				1793,	-- Fracture Chambers - Layer 2, Floor 4
 				--
 				1615,	-- Fracture Chambers - Layer 6, Floor 1
+				1980,	-- Fracture Chambers - Layer 6, Floor 2
 				--
 				1982,	-- Fracture Chambers - Layer 9, Floor 2
 				--
@@ -137,7 +138,6 @@ _.ExpansionFeatures =
 				1911,	-- Torghast Entrance
 				--
 				1986,	-- Uknown floor(Probably Mort-regar)
-				1980,	-- (Was just a normal floor, forgot the tower... maybe Fracture Chambers)
 			},
 		}),
 	}),

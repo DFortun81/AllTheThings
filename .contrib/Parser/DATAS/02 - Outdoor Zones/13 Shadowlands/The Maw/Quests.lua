@@ -17,6 +17,7 @@ _.Zones =
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
 					["coord"] = { 32.9, 66.4, THE_MAW },
+					["maps"] = { 1960 },	-- The Maw (scenario)
 				}),
 				q(60545, {	-- A Chilling Summons (A)
 					["races"] = ALLIANCE_ONLY,
@@ -36,6 +37,7 @@ _.Zones =
 				}),
 				q(59960, {	-- A Cooling Trail
 					["sourceQuests"] = { 60972 },	-- The Hunt for the Baron
+					["maps"] = { 1960 },	-- The Maw (scenario)
 				}),
 				q(59755, {	-- A Flight from Darkness
 					["sourceQuests"] = { 59754 },	-- On Blackened Wings
@@ -183,6 +185,7 @@ _.Zones =
 					["sourceQuests"] = { 59962 },	-- Hope Never Dies
 					["provider"] = { "n", 171770 },	-- Ve'nari
 					["coord"] = { 36.2, 55.7, THE_MAW },
+					["maps"] = { 1960 },	-- The Maw (scenario)
 				}),
 				q(60732, {	-- Disrupting the Flow
 					["provider"] = { "n", 176164 },	-- Doomed Soul
@@ -325,6 +328,7 @@ _.Zones =
 					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
 					["provider"] = { "n", 171770 },	-- Ve'nari
 					["coord"] = { 36.5, 50.7, THE_MAW },
+					["maps"] = { 1960 },	-- The Maw (scenario)
 				}),
 				q(62837, {	-- Hopeful News
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
@@ -338,6 +342,7 @@ _.Zones =
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 49.9, 41.6, THE_MAW },
+					["maps"] = { 1960 },	-- The Maw (scenario)
 					["g"] = {
 						i(175511),	-- Fallen Protector's Headguard
 						i(175525),	-- Forgotten Pursuer's Cowl
@@ -519,6 +524,7 @@ _.Zones =
 				q(60972, {	-- The Hunt for the Baron
 					["sourceQuests"] = { 59897 },	-- Seeking the Baron
 					["coord"] = { 44.9, 40.9, THE_MAW },
+					["maps"] = { 1960 },	-- The Maw (scenario)
 				}),
 				q(61079, {	-- The Jailer's Share
 				--	["sourceQuests"] = {  },	-- no clue
@@ -584,6 +590,7 @@ _.Zones =
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
 					["coord"] = { 32.9, 66.4, THE_MAW },
+					["maps"] = { 1960 },	-- The Maw (scenario)
 				}),
 				q(63614, {	-- Weapon in Hand
 					["sourceQuests"] = { 63612 },	-- The Chains of Command
