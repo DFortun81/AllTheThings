@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(UNDERCITY, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(450, {	-- Maggot
 					["crs"] = { 61753 },	-- Maggot
 				}),
@@ -16,7 +16,7 @@ _.Zones =
 				p(454, {	-- Undercity Rat
 					["crs"] = { 61889 },	-- Undercity Rat
 				}),
-			}),
+			})),
 		}),
 	}),
 };

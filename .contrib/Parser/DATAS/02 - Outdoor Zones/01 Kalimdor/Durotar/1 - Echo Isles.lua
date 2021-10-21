@@ -628,14 +628,14 @@ _.Zones =
 						},
 					}),
 					-- if AFTER MOP
-					filter(BATTLE_PETS, {
+					petbattle(filter(BATTLE_PETS, {
 						p(467, {	-- Dung Beetle
 							["crs"] = { 62115 },	-- Dung Beetle
 						}),
 						p(466, {	-- Spiny Lizard
 							["crs"] = { 62114 },	-- Spiny Lizard
 						}),
-					}),
+					})),
 					-- endif
 					n(VENDORS, {
 						n(113615, {	-- Ravika <Darkspear Quartermaster>

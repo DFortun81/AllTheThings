@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(STORMWIND_CITY, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(378, {	-- Rabbit
 					["crs"] = { 61080 },	-- Rabbit
 				}),
@@ -16,7 +16,7 @@ _.Zones =
 				p(675, {	-- Stormwind Rat
 					["crs"] = { 62954 },	-- Stormwind Rat
 				}),
-			}),
+			})),
 		}),
 	}),
 };

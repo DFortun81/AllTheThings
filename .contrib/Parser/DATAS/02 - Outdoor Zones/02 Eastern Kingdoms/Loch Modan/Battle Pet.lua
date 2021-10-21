@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(LOCH_MODAN, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(441, {	-- Alpine Hare
 					["crs"] = { 61690 },	-- Alpine Hare
 				}),
@@ -28,7 +28,7 @@ _.Zones =
 				p(379, {	-- Squirrel
 					["crs"] = { 61081 },	-- Squirrel
 				}),
-			}),
+			})),
 		}),
 	}),
 };

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(ASHENVALE, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(478, {	-- Forest Moth
 					["crs"] = { 62177 },	-- Forest Moth
 				}),
@@ -32,7 +32,7 @@ _.Zones =
 				p(420, {	-- Toad
 					["crs"] = { 61369 },	-- Toad
 				}),
-			}),
+			})),
 		}),
 	}),
 };

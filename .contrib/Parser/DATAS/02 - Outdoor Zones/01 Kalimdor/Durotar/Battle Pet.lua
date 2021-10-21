@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(DUROTAR, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(635, {	-- Adder
 					["crs"] = { 61325 },	-- Adder
 				}),
@@ -28,7 +28,7 @@ _.Zones =
 				p(418, {	-- Water Snake
 					["crs"] = { 61367 },	-- Water Snake
 				}),
-			}),
+			})),
 		}),
 	}),
 };

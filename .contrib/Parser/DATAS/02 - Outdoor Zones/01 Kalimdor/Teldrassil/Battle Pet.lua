@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(TELDRASSIL, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(507, {	-- Crested Owl
 					["crs"] = { 62242 },	-- Crested Owl
 				}),
@@ -25,7 +25,7 @@ _.Zones =
 				p(419, {	-- Small Frog
 					["crs"] = { 61071 },	-- Small Frog
 				}),
-			}),
+			})),
 		}),
 	}),
 };

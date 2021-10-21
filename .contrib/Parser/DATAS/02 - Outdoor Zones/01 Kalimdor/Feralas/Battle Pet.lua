@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(FERALAS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(557, {	-- Nether Faerie Dragon
 					["crs"] = { 62395 },	-- Nether Faerie Dragon
 					["description"] = "Can be found in the surrounding areas outside of the Dire Maul instance portals in Feralas.",
@@ -23,7 +23,7 @@ _.Zones =
 					["crs"] = { 68805 },	-- Stunted Yeti
 					["description"] = "Can be found near Feral Scar Yetis south of Dire Maul.",
 				}),
-			}),
+			})),
 		}),
 	}),
 };

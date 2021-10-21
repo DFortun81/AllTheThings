@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(AZSHARA, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(378, {	-- Rabbit
 					["crs"] = { 61080 },	-- Rabbit
 				}),
@@ -44,7 +44,7 @@ _.Zones =
 				p(470, {	-- Twilight Spider
 					["crs"] = { 62117 },	-- Twilight Spider
 				}),
-			}),
+			})),
 		}),
 	}),
 };

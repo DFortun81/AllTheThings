@@ -7,12 +7,12 @@ _.Zones =
 	m(KALIMDOR, {
 		m(TANARIS, {
 			m(CAVERNS_OF_TIME, {
-				filter(BATTLE_PETS, {
+				petbattle(filter(BATTLE_PETS, {
 					p(1161, {	-- Infinite Whelpling
 						["crs"] = { 68820 },	-- Infinite Whelpling
 						["description"] = "This pet can be found around the Caverns of Time entrance and the pathway leading to the main chamber.",
 					}),
-				}),
+				})),
 			}),
 		}),
 	}),

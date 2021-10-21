@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(BADLANDS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(406, {	-- Beetle
 					["crs"] = { 61319 },
 				}),
@@ -28,7 +28,7 @@ _.Zones =
 				p(432, {	-- Stripe-Tailed Scorpid
 					["crs"] = { 61440 },
 				}),
-			}),
+			})),
 		}),
 	}),
 };

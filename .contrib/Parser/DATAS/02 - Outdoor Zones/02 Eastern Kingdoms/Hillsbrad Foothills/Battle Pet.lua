@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(HILLSBRAD_FOOTHILLS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(646, {	-- Chicken
 					["crs"] = { 62664 },	-- Chicken
 				}),
@@ -43,7 +43,7 @@ _.Zones =
 				p(420, {	-- Toad
 					["crs"] = { 61369 },	-- Toad
 				}),
-			}),
+			})),
 		}),
 	}),
 };

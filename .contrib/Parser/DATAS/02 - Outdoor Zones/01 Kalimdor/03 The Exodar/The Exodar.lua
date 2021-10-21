@@ -25,14 +25,14 @@ _.Zones =
 			["isRaid"] = true,
 			["groups"] = {
 				-- #if AFTER MOP
-				filter(BATTLE_PETS, {
+				petbattle(filter(BATTLE_PETS, {
 					p(464, {	-- Grey Moth
 						["crs"] = { 62050 },	-- Grey Moth
 					}),
 					p(385, {	-- Mouse
 						["crs"] = { 61143 },	-- Mouse
 					}),
-				}),
+				})),
 				-- #endif
 				n(FACTIONS, {
 					faction(930, {	-- Exodar

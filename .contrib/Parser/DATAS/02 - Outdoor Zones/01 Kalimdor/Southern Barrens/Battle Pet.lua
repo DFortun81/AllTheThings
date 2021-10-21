@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(SOUTHERN_BARRENS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(635, {	-- Adder
 					["crs"] = { 61325 },	-- Adder
 				}),
@@ -27,7 +27,7 @@ _.Zones =
 				p(419, {	-- Small Frog
 					["crs"] = { 61071 },	-- Small Frog
 				}),
-			}),
+			})),
 		}),
 	}),
 };

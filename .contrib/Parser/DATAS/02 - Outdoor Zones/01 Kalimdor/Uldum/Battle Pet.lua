@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(249, {	-- Uldum
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(484, {	-- Desert Spider
 					["crs"] = { 62186 },	-- Desert Spider
 				}),
@@ -37,7 +37,7 @@ _.Zones =
 				p(546, {	-- Tol'vir Scarab
 					["crs"] = { 62899 },	-- Tol'vir Scarab
 				}),
-			}),
+			})),
 		}),
 	}),
 };

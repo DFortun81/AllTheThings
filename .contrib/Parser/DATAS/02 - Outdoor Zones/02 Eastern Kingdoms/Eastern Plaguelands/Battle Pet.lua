@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(EASTERN_PLAGUELANDS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(626, {	-- Bat
 					["crs"] = { 61829 },	-- Bat
 				}),
@@ -22,7 +22,7 @@ _.Zones =
 				p(627, {	-- Infected Squirrel
 					["crs"] = { 61828 },	-- Infected Squirrel
 				}),
-			}),
+			})),
 		}),
 	}),
 };

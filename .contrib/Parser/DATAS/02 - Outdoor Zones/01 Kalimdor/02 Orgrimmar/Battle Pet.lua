@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(ORGRIMMAR, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(467, {	-- Dung Beetle
 					["crs"] = { 62115 },	-- Dung Beetle
 				}),
@@ -22,7 +22,7 @@ _.Zones =
 				p(418, {	-- Water Snake
 					["crs"] = { 61367 },	-- Water Snake
 				}),
-			}),
+			})),
 		}),
 	}),
 };

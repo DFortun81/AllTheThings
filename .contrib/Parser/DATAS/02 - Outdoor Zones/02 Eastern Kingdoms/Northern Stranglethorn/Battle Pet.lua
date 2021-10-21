@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(NORTHERN_STRANGLETHORN, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(406, {	-- Beetle
 					["crs"] = { 61319 },	-- Beetle
 				}),
@@ -34,7 +34,7 @@ _.Zones =
 				p(405, {	-- Tree Python
 					["crs"] = { 61318 },	-- Tree Python
 				}),
-			}),
+			})),
 		}),
 	}),
 };

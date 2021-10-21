@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(DARNASSUS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(479, {	-- Elfin Rabbit
 					["crs"] = { 62178 },	-- Elfin Rabbit
 				}),
@@ -19,7 +19,7 @@ _.Zones =
 				p(419, {	-- Small Frog
 					["crs"] = { 61071 },	-- Small Frog
 				}),
-			}),
+			})),
 		}),
 	}),
 };

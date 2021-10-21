@@ -26,7 +26,7 @@ _.Zones =
 			["isRaid"] = true,
 			["groups"] = {
 				-- #if AFTER MOP
-				filter(BATTLE_PETS, {
+				petbattle(filter(BATTLE_PETS, {
 					p(459, {	-- Cat
 						["crs"] = { 62019 },	-- Cat
 					}),
@@ -36,7 +36,7 @@ _.Zones =
 					p(378, {	-- Rabbit
 						["crs"] = { 61080 },	-- Rabbit
 					}),
-				}),
+				})),
 				-- #endif
 				n(FACTIONS, {
 					faction(911, {	-- Silvermoon City

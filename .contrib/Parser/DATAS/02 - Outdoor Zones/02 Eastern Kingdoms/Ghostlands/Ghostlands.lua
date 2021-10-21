@@ -66,7 +66,7 @@ _.Zones =
 				}),
 				-- #endif
 				-- #if AFTER MOP
-				filter(BATTLE_PETS, {
+				petbattle(filter(BATTLE_PETS, {
 					p(461, {	-- Larva
 						["crs"] = { 62022 },	-- Larva
 					}),
@@ -88,7 +88,7 @@ _.Zones =
 					p(420, {	-- Toad
 						["crs"] = { 61369 },	-- Toad
 					}),
-				}),
+				})),
 				-- #endif
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {

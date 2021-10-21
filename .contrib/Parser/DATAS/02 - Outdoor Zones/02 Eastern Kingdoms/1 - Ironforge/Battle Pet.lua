@@ -6,11 +6,11 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(IRONFORGE, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(404, {	-- Long-tailed Mole
 					["crs"] = { 61317 },	-- Long-tailed Mole
 				}),
-			}),
+			})),
 		}),
 	}),
 };
