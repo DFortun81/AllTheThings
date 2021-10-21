@@ -1,0 +1,395 @@
+
+-- #if AFTER 6.2.3.20601
+root("WorldEvents", d(24, {  -- Timewalking
+	tier(TBC_TIER, {
+		["lvl"] = 71,
+		["g"] = {
+			inst(249, {	-- Magisters' Terrace
+				n(COMMON_BOSS_DROPS, {
+					i(35275, {	-- Orb of Sin'dorei
+						["crs"] = {
+							24723,	-- Selin Fireheart
+							24744,	-- Vexallus
+							24560,	-- Priestess Delrissa
+							24664,	-- Kael'thas Sunstrider
+						},
+					}),
+				}),
+				e(530, {	-- Selin Fireheart
+					["creatureID"] = 24723,
+					["groups"] = {
+						i(133467),	-- Jaded Crystal Dagger
+						i(133433),	-- Sun-Forged Cleaver
+						i(133465),	-- Shoulderplates of Everlasting Pain
+						i(133436),	-- Cloak of Swift Mending
+						i(133431),	-- Bindings of Raging Fire
+						i(133432),	-- Bracers of the Forest Stalker
+						i(133466),	-- Eversong Cuffs
+						i(133434),	-- Gauntlets of Divine Blessings
+						i(133457),	-- Gloves of Arcane Acuity
+						i(133435),	-- Leggings of the Betrayed
+						i(133454),	-- Band of Celerity
+					},
+				}),
+				e(531, {	-- Vexallus
+					["creatureID"] = 24744,
+					["groups"] = {
+						i(133471),	-- Rod of the Blazing Light
+						i(133469),	-- Edge of Oppression
+						i(133437),	-- Latro's Dancing Blade
+						i(133470),	-- Fel-Tinged Mantle
+						i(133442),	-- Cloak of the Coming Night
+						i(133468),	-- Breastplate of Fierce Survival
+						i(133478),	-- Netherforce Chestplate
+						i(133439),	-- Bracers of Divine Infusion
+						i(133441),	-- Boots of Resuscitation
+						i(133438),	-- Band of Arcane Alacrity
+						i(133440),	-- Band of Determination
+						i(133430),	-- Kharmaa's Ring of Fate
+					},
+				}),
+				e(532, {	-- Priestess Delrissa
+					["creatureID"] = 24560,
+					["groups"] = {
+						i(133446),	-- Battle-Mace of the High Priestess
+						i(133444),	-- Duskhallow Mantle
+						i(133448),	-- Cloak of the Betrayed
+						i(133445),	-- Bracers of Slaughter
+						i(133447),	-- Gauntlets of the Tranquil Waves
+						i(133458),	-- Sunrage Treads
+						i(133456),	-- Sunstrider Warboots
+						i(133464),	-- Commendation of Kael'thas
+						i(133463),	-- Shard of Contempt
+						i(133461),	-- Timbal's Focusing Crystal
+						i(133462),	-- Vial of the Sunwell
+					},
+				}),
+				e(533, {	-- Kael'thas Sunstrider
+					["creatureID"] = 24664,
+					["groups"] = {
+						i(35504),	-- Phoenix Hatchling (PET!)
+						i(35513),	-- Swift White Hawkstrider (MOUNT!)
+						i(133450),	-- Axe of Shattered Dreams
+						i(133453),	-- Sun-Infused Focus Staff
+						i(133479),	-- Breeching Comet
+						i(133474),	-- Cudgel of Consecration
+						i(133472),	-- Quickening Blade of the Prince
+						i(133451),	-- Helm of Sanctification
+						i(133476),	-- Shoulderpads of the Silvermoon Retainer
+						i(133459),	-- Cloak of Blade Turning
+						i(133455),	-- Hauberk of the War Bringer
+						i(133452),	-- Robes of Summer Flame
+						i(133473),	-- Scarlet Sin'dorei Robes
+						i(133477),	-- Tunic of the Ranger Lord
+						i(133449),	-- Cord of Reconstitution
+						i(133475),	-- Greaves of the Penitent Knight
+					},
+				}),
+			}),
+			inst(250, {	-- Mana Tombs
+				e(534, {	-- Pandemonius
+					["creatureID"] = 18341,
+					["groups"] = {
+						i(127219),	-- Creepjacker
+						i(127234),	-- Twinblade of Mastery
+						i(127236),	-- Starbolt Longbow
+						i(127216),	-- Voidfire Wand
+						i(127254),	-- Shield of the Void
+						i(127235),	-- Mindrage Pauldrons
+						i(127237),	-- Starry Robes of the Crescent
+						i(127218),	-- Faith Bearer's Gauntlets
+						i(127249),	-- Wastewalker Leggings
+						i(127233),	-- Boots of the Colossus
+						i(127217),	-- Boots of the Outlander
+					},
+				}),
+				e(535, {	-- Tavarok
+					["creatureID"] = 18343,
+					["groups"] = {
+						i(127220),	-- Shaarde the Greater
+						i(127224),	-- Staff of Polarities
+						i(127225),	-- Scimitar of the Nexus-Stalkers
+						i(127223),	-- Lightning-Rod Pauldrons
+						i(127243),	-- Mantle of the Sea Wolf
+						i(127221),	-- Cloak of Revival
+						i(127241),	-- Robe of the Great Dark Beyond
+						i(127240),	-- Shard Encrusted Breastplate
+						i(127232),	-- Gauntlets of Vindication
+						i(127242),	-- Predatory Gloves
+						i(127238),	-- Extravagant Boots of Malice
+						i(127222),	-- Nethershade Boots
+						i(127239),	-- Crystal Band of Valor
+					},
+				}),
+				e(536, {	-- Yor
+					["description"] = "Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",
+					["cost"] = {
+						{ "i", 32079, 1 },	-- Shaffar's Stasis Chamber Key
+						{ "i", 32092, 1 },	-- The Eye of Haramad
+					},
+					["creatureID"] = 22930,
+					["groups"] = {
+						i(127422),	-- Mistshroud Tunic
+						i(127421),	-- Skystalker's Tunic
+						i(127423),	-- Slatesteel Breastplate
+						i(127420),	-- Windchanneller's Tunic
+						i(127428),	-- Band of the Crystalline Void
+						i(127231),	-- Longstrider's Loop
+						i(127424),	-- Nexus-Prince's Ring of Balance
+						i(127427),	-- Ring of Conflict Survival
+						i(127425),	-- Shaffar's Band of Brutality
+						i(127426),	-- Yor's Collapsing Band
+						i(127429),	-- Yor's Revenge
+					},
+				}),
+				e(537, {	-- Nexus-Prince Shaffar
+					["creatureID"] = 18344,
+					["groups"] = {
+						i(127246),	-- Axe of the Nexus-Kings
+						i(127251),	-- Grand Scepter of the Nexus-Kings
+						i(127250),	-- Scepter of Sha'tar
+						i(127255),	-- Warp-Storm Warblade
+						i(127226),	-- Ethereal Warp-Bow
+						i(127259),	-- The Fel Barrier
+						i(127228),	-- Mask of the Howling Storm
+						i(127227),	-- Sigil of Shaffar
+						i(127247),	-- Mantle of the Unforgiven
+						i(127253),	-- Pauldrons of Swift Retribution
+						i(127256),	-- Bands of Negation
+						i(127244),	-- Lucid Dream Bracers
+						i(127229),	-- Nexus-Bracers of Vigor
+						i(127252),	-- Glyph-Lined Sash
+						i(127248),	-- Stillwater Girdle
+						i(127258),	-- Forestwalker Kilt
+						i(127230),	-- Ethereal Boots of the Skystrider
+						i(127257),	-- Cobalt Band of Tyrigosa
+						i(127245),	-- Warp-Scarab Brooch
+					},
+				}),
+			}),
+			inst(254, {	-- The Arcatraz
+				e(548, {	-- Zereketh the Unbound
+					["creatureID"] = 20870,
+					["groups"] = {
+						i(127151),	-- Cloak of Scintillating Auras
+						i(127162),	-- Gloves of the Unbound
+						i(127171),	-- Hood of Oblivion
+						i(127152),	-- Mana-Sphere Shoulderguards
+						i(127154),	-- Outland Striders
+						i(127153),	-- Rubidium War-Girdle
+					},
+				}),
+				e(549, {	-- Dalliah the Doomsayer
+					["creatureID"] = 20885,
+					["groups"] = {
+						i(127170),	-- Helm of Assassination
+						i(127172),	-- Hungering Spineripper
+						i(127156),	-- Lamp of Peaceful Repose
+						i(127155),	-- Nether Core's Control Rod
+						i(127154),	-- Outland Striders
+						i(127159),	-- Reflex Blades
+						i(127157),	-- Thatia's Self-Correcting Gauntlets
+					},
+				}),
+				e(550, {	-- Wrath-Scryer Soccothrates
+					["creatureID"] = 20886,
+					["groups"] = {
+						i(127165),	-- Doomplate Chestguard
+						i(127163),	-- Emberhawk Crossbow
+						i(127169),	-- Hallowed Crown
+						i(127161),	-- Ryngo's Band of Ingenuity
+						i(127164),	-- The Sleeper's Cord
+						i(127160),	-- Warmaul of Infused Light
+						i(127158),	-- Worldfire Chestguard
+					},
+				}),
+				e(551, {	-- Harbinger Skyriss
+					["creatureID"] = 20912,
+					["groups"] = {
+						i(127175),	-- Belt of Depravity
+						i(127177),	-- Bracers of Dignity
+						i(127149),	-- Breastplate of the Bold
+						i(127174),	-- Choker of Fluid Thought
+						i(127167),	-- Elementium Band of the Sentry
+						i(127168),	-- Lamp of Peaceful Radiance
+						i(127176),	-- Shadowstep Striders
+						i(127173),	-- Shiffar's Nexus-Horn
+						i(127166),	-- Sigil-Laced Boots
+						i(127150),	-- Tidefury Chestpiece
+						i(127178),	-- Vileblade of the Betrayer
+					},
+				}),
+			}),
+			inst(255, {	-- The Black Morass
+				e(552, {	-- Chrono Lord Deja
+					["creatureID"] = 17879,
+					["groups"] = {
+						i(127434),	-- Melmorta's Twilight Longbow
+						-- #if BEFORE 7.3.5
+						i(127456),	-- Quantum Blade (7.3.5 - Moved from Chrono Lord Deja)
+						-- #endif
+						i(127436),	-- Mask of Inner Fire
+						i(127437),	-- Mantle of Three Terrors
+						i(127438),	-- Sun-Gilded Shouldercaps
+						i(127435),	-- Burnoose of Shifting Ages
+						-- #if BEFORE 7.3.5
+						i(127430),	-- Handgrips of Assassination (7.3.5 - Moved to Temporus)
+						-- #endif
+						-- #if AFTER 7.3.5
+						i(127433),	-- Legplates of the Bold (7.3.5 - Moved from Aeonus)
+						i(127432),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
+						-- #endif
+						i(127439),	-- Ring of Spiritual Precision
+					},
+				}),
+				e(553, {	-- Temporus
+					["creatureID"] = 17880,
+					["groups"] = {
+						i(127440),	-- Epoch-Mender
+						-- #if AFTER 7.3.5
+						i(127456),	-- Quantum Blade (7.3.5 - Moved from Chrono Lord Deja)
+						-- #endif
+						i(127442),	-- Millennium Blade
+						i(127445),	-- Star-Heart Lamp
+						i(127444),	-- Laughing Skull Battle-Harness
+						-- #if AFTER 7.3.5
+						i(127430),	-- Handgrips of Assassination (7.3.5 - Moved from Chrono Lord Deja)
+						-- #endif
+						i(127443),	-- Khadgar's Kilt of Abjuration
+						i(127441),	-- Hourglass of the Unraveller
+					},
+				}),
+				e(554, {	-- Aeonus
+					["creatureID"] = 17881,
+					["groups"] = {
+						i(127446),	-- Bloodfire Greatstaff
+						i(127447),	-- Latro's Shifting Sword
+						i(127452),	-- Cowl of the Guiltless
+						i(127449),	-- Helm of Desolation
+						i(127450),	-- Mana-Etched Crown
+						i(127453),	-- Pauldrons of the Crimson Flight
+						i(127451),	-- Primal Surge Bracers
+						i(127454),	-- Girdle of the Deathdealer
+						i(127455),	-- Girdle of Valorous Deeds
+						i(127457),	-- Breeches of the Occultist
+						-- #if BEFORE 7.3.5
+						i(127433),	-- Legplates of the Bold (7.3.5 - Moved to Chrono Lord Deja)
+						-- #endif
+						i(127431),	-- Legplates of the Righteous
+						-- #if BEFORE 7.3.5
+						i(127432),	-- Moonglade Pants (7.3.5 -- Moved to Chrono Lord Deja)
+						-- #endif
+						i(127448),	-- Scarab of the Infinite Cycle
+					},
+				}),
+			}),
+			inst(259, {	-- The Shattered Halls
+				e(566, {	-- Grand Warlock Nethekurse
+					["creatureID"] = 16807,
+					["groups"] = {
+						i(123995),	-- Hortus' Seal of Brilliance
+						i(123984),	-- Greathelm of the Unbreakable
+						i(123983),	-- Cloak of Malice
+						i(123981),	-- Bands of Nethekurse
+						i(123985),	-- Telaari Hunting Girdle
+						i(123992),	-- Figurine of the Colossus
+					},
+				}),
+				e(728, {	-- Blood Guard Porung
+					["creatureID"] = 20923,
+					["groups"] = {
+						i(124015),	-- Blood Guard's Necklace of Ferocity
+						i(124000),	-- Justice Bearer's Pauldrons
+						i(124011),	-- Spaulders of Slaughter
+						i(123997),	-- Hallowed Handwraps
+						i(124013),	-- Belt of Flowing Thought
+						i(124014),	-- Pantaloons of Flaming Wrath
+						i(124012),	-- Nimble-Foot Treads
+					},
+				}),
+				e(568, {	-- Warbringer O'mrogg
+					["creatureID"] = 16809,
+					["groups"] = {
+						i(123987),	-- Firemaul of Destruction
+						i(124002),	-- Runesong Dagger
+						i(123989),	-- Skyfire Hawk-Bow
+						i(124029),	-- Forestheart Bracers
+						i(123986),	-- World's End Bracers
+						i(124027),	-- Boots of the Righteous Path
+						i(123988),	-- Jeweled Boots of Sanctification
+					},
+				}),
+				e(569, {	-- Warchief Kargath Bladefist
+					["creatureID"] = 16808,
+					["groups"] = {
+						i(123994),	-- Demonblood Eviscerator
+						i(123999),	-- Lightsworn Hammer
+						i(124030),	-- The Bladefist
+						i(124001),	-- Nexus Torch
+						i(124028),	-- Bands of Rarefied Magic
+						i(123991),	-- Gauntlets of Desolation
+						i(123996),	-- Gauntlets of the Righteous
+						i(123998),	-- Gloves of Oblivion
+						i(123993),	-- Wastewalker Gloves
+						i(123990),	-- Greaves of the Shatterer
+					},
+				}),
+			}),
+			inst(260, {	-- The Slave Pens
+				e(570, {	-- Mennu the Betrayer
+					["creatureID"] = 17941,
+					["groups"] = {
+						i(127183),	-- Spellfire Longsword
+						i(127191),	-- Starlight Dagger
+						i(127179),	-- Wastewalker Shiv
+						i(127213),	-- Adamantine Chain of the Unbroken
+						i(127193),	-- Traitor's Noose
+						i(127180),	-- Vest of Living Lightning
+						i(127189),	-- Archery Belt of the Broken
+						i(127190),	-- Cord of Belief
+						i(127182),	-- Tracker's Belt
+						i(127195),	-- Girdle of Many Blessings
+						i(127192),	-- Mennu's Scaled Leggings
+						i(127181),	-- Princely Reign Leggings
+					},
+				}),
+				e(571, {	-- Rokmar the Crackler
+					["creatureID"] = 17991,
+					["groups"] = {
+						i(127185),	-- Coilfang Hammer of Renewal
+						i(127187),	-- Calming Spore Reed
+						i(127188),	-- Coilfang Needler
+						i(127204),	-- Swamplight Lantern
+						i(127198),	-- Skeletal Necklace of Battlerage
+						i(127186),	-- Bogstrok Scale Cloak
+						i(127197),	-- Ironscale War Cloak
+						i(127194),	-- Coldwhisper Cord
+						i(127210),	-- Liar's Cord
+						i(127209),	-- Earthsoul Britches
+						i(127196),	-- Wavefury Boots
+						i(127184),	-- Runed Fungalcap
+					},
+				}),
+				e(572, {	-- Quagmirran
+					["creatureID"] = 17942,
+					["groups"] = {
+						i(127206),	-- Bleeding Hollow Warhammer
+						i(127200),	-- Phosphorescent Blade
+						i(127208),	-- Mana-Etched Spaulders
+						i(127203),	-- Pauldrons of Desolation
+						i(127215),	-- Pauldrons of Wild Magic
+						i(127211),	-- Breastplate of Righteous Fury
+						i(127202),	-- Shackles of Quagmirran
+						i(127199),	-- Girdle of the Immovable
+						i(127207),	-- Mage-Fury Girdle
+						i(127214),	-- Midnight Legguards
+						i(127212),	-- Boots of Blasphemy
+						i(127205),	-- Band of Ursol
+						i(127201),	-- Quagmirran's Eye
+					},
+				}),
+			}),
+		},
+	}),
+}));
+-- #endif

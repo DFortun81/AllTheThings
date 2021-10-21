@@ -1481,6 +1481,8 @@ CreateObject = function(t)
 			t = app.CreateTier(t.tierID, t);
 		elseif t.unit then
 			t = app.CreateUnit(t.unit, t);
+		elseif t.difficultyID then
+			t = app.CreateDifficulty(t.difficultyID, t);
 		elseif t.spellID then
 			t = app.CreateSpell(t.spellID, t);
 		else
@@ -2825,6 +2827,7 @@ local function Resolve_Extract(results, group, field)
 end
 ResolveSymbolicLink = function(o)
 	if o and o.sym then
+		-- app.DEBUG_PRINT = true;
 		local searchResults, finalized = {}, {};
 		for j,sym in ipairs(o.sym) do
 			local cmd = sym[1];
@@ -2833,7 +2836,7 @@ ResolveSymbolicLink = function(o)
 				-- Instruction to search the full database for something.
 				local cache = app.SearchForField(sym[2], sym[3]);
 				if cache then
-					for k,s in ipairs(cache) do
+					for _,s in ipairs(cache) do
 						-- if finding itself in the cache, don't try to resolve itself
 						if s ~= o and (s.key ~= o.key or s[s.key] ~= o[o.key]) then
 							tinsert(searchResults, FillSymLinks(s));
@@ -2885,6 +2888,9 @@ ResolveSymbolicLink = function(o)
 						end
 					end
 				end
+			elseif cmd == "push" then
+				-- Instruction to "push" all of the group values into an object as specified
+				searchResults = { CreateObject({[sym[2]] = sym[3], g = searchResults }) };
 			elseif cmd == "where" then
 				-- Instruction to include only search results where a key value is a value
 				local key, value = sym[2], sym[3];

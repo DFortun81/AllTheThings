@@ -248,70 +248,11 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			-- #if AFTER 6.2.3.20601
 			d(24, {	-- Timewalking
-				["lvl"] = 71,
-				["groups"] = {
-					e(552, {	-- Chrono Lord Deja
-						["creatureID"] = 17879,
-						["groups"] = {
-							i(127434),	-- Melmorta's Twilight Longbow
-							-- #if BEFORE 7.3.5
-							i(127456),	-- Quantum Blade (7.3.5 - Moved from Chrono Lord Deja)
-							-- #endif
-							i(127436),	-- Mask of Inner Fire
-							i(127437),	-- Mantle of Three Terrors
-							i(127438),	-- Sun-Gilded Shouldercaps
-							i(127435),	-- Burnoose of Shifting Ages
-							-- #if BEFORE 7.3.5
-							i(127430),	-- Handgrips of Assassination (7.3.5 - Moved to Temporus)
-							-- #endif
-							-- #if AFTER 7.3.5
-							i(127433),	-- Legplates of the Bold (7.3.5 - Moved from Aeonus)
-							i(127432),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
-							-- #endif
-							i(127439),	-- Ring of Spiritual Precision
-						},
-					}),
-					e(553, {	-- Temporus
-						["creatureID"] = 17880,
-						["groups"] = {
-							i(127440),	-- Epoch-Mender
-							-- #if AFTER 7.3.5
-							i(127456),	-- Quantum Blade (7.3.5 - Moved from Chrono Lord Deja)
-							-- #endif
-							i(127442),	-- Millennium Blade
-							i(127445),	-- Star-Heart Lamp
-							i(127444),	-- Laughing Skull Battle-Harness
-							-- #if AFTER 7.3.5
-							i(127430),	-- Handgrips of Assassination (7.3.5 - Moved from Chrono Lord Deja)
-							-- #endif
-							i(127443),	-- Khadgar's Kilt of Abjuration
-							i(127441),	-- Hourglass of the Unraveller
-						},
-					}),
-					e(554, {	-- Aeonus
-						["creatureID"] = 17881,
-						["groups"] = {
-							i(127446),	-- Bloodfire Greatstaff
-							i(127447),	-- Latro's Shifting Sword
-							i(127452),	-- Cowl of the Guiltless
-							i(127449),	-- Helm of Desolation
-							i(127450),	-- Mana-Etched Crown
-							i(127453),	-- Pauldrons of the Crimson Flight
-							i(127451),	-- Primal Surge Bracers
-							i(127454),	-- Girdle of the Deathdealer
-							i(127455),	-- Girdle of Valorous Deeds
-							i(127457),	-- Breeches of the Occultist
-							-- #if BEFORE 7.3.5
-							i(127433),	-- Legplates of the Bold (7.3.5 - Moved to Chrono Lord Deja)
-							-- #endif
-							i(127431),	-- Legplates of the Righteous
-							-- #if BEFORE 7.3.5
-							i(127432),	-- Moonglade Pants (7.3.5 -- Moved to Chrono Lord Deja)
-							-- #endif
-							i(127448),	-- Scarab of the Infinite Cycle
-						},
-					}),
-				}
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 255 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
+				},
 			}),
 			-- #endif
 		},

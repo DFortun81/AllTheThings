@@ -344,89 +344,11 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 			}),
 			-- #if AFTER 6.2.3.20601
 			d(24, {	-- Timewalking
-				["lvl"] = 71,
-				["groups"] = {
-					n(COMMON_BOSS_DROPS, {
-						i(35275, {	-- Orb of Sin'dorei
-							["crs"] = {
-								24723,	-- Selin Fireheart
-								24744,	-- Vexallus
-								24560,	-- Priestess Delrissa
-								24664,	-- Kael'thas Sunstrider
-							},
-						}),
-					}),
-					e(530, {	-- Selin Fireheart
-						["creatureID"] = 24723,
-						["groups"] = {
-							i(133467),	-- Jaded Crystal Dagger
-							i(133433),	-- Sun-Forged Cleaver
-							i(133465),	-- Shoulderplates of Everlasting Pain
-							i(133436),	-- Cloak of Swift Mending
-							i(133431),	-- Bindings of Raging Fire
-							i(133432),	-- Bracers of the Forest Stalker
-							i(133466),	-- Eversong Cuffs
-							i(133434),	-- Gauntlets of Divine Blessings
-							i(133457),	-- Gloves of Arcane Acuity
-							i(133435),	-- Leggings of the Betrayed
-							i(133454),	-- Band of Celerity
-						},
-					}),
-					e(531, {	-- Vexallus
-						["creatureID"] = 24744,
-						["groups"] = {
-							i(133471),	-- Rod of the Blazing Light
-							i(133469),	-- Edge of Oppression
-							i(133437),	-- Latro's Dancing Blade
-							i(133470),	-- Fel-Tinged Mantle
-							i(133442),	-- Cloak of the Coming Night
-							i(133468),	-- Breastplate of Fierce Survival
-							i(133478),	-- Netherforce Chestplate
-							i(133439),	-- Bracers of Divine Infusion
-							i(133441),	-- Boots of Resuscitation
-							i(133438),	-- Band of Arcane Alacrity
-							i(133440),	-- Band of Determination
-							i(133430),	-- Kharmaa's Ring of Fate
-						},
-					}),
-					e(532, {	-- Priestess Delrissa
-						["creatureID"] = 24560,
-						["groups"] = {
-							i(133446),	-- Battle-Mace of the High Priestess
-							i(133444),	-- Duskhallow Mantle
-							i(133448),	-- Cloak of the Betrayed
-							i(133445),	-- Bracers of Slaughter
-							i(133447),	-- Gauntlets of the Tranquil Waves
-							i(133458),	-- Sunrage Treads
-							i(133456),	-- Sunstrider Warboots
-							i(133464),	-- Commendation of Kael'thas
-							i(133463),	-- Shard of Contempt
-							i(133461),	-- Timbal's Focusing Crystal
-							i(133462),	-- Vial of the Sunwell
-						},
-					}),
-					e(533, {	-- Kael'thas Sunstrider
-						["creatureID"] = 24664,
-						["groups"] = {
-							i(35504),	-- Phoenix Hatchling (PET!)
-							i(35513),	-- Swift White Hawkstrider (MOUNT!)
-							i(133450),	-- Axe of Shattered Dreams
-							i(133453),	-- Sun-Infused Focus Staff
-							i(133479),	-- Breeching Comet
-							i(133474),	-- Cudgel of Consecration
-							i(133472),	-- Quickening Blade of the Prince
-							i(133451),	-- Helm of Sanctification
-							i(133476),	-- Shoulderpads of the Silvermoon Retainer
-							i(133459),	-- Cloak of Blade Turning
-							i(133455),	-- Hauberk of the War Bringer
-							i(133452),	-- Robes of Summer Flame
-							i(133473),	-- Scarlet Sin'dorei Robes
-							i(133477),	-- Tunic of the Ranger Lord
-							i(133449),	-- Cord of Reconstitution
-							i(133475),	-- Greaves of the Penitent Knight
-						},
-					})
-				}
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 249 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
+				},
 			}),
 			-- #endif
 		},

@@ -588,58 +588,10 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			-- #if AFTER 6.2.3.20601
 			d(24, {	-- Timewalking
-				["lvl"] = 71,
-				["groups"] = {
-					e(566, {	-- Grand Warlock Nethekurse
-						["creatureID"] = 16807,
-						["groups"] = {
-							i(123995),	-- Hortus' Seal of Brilliance
-							i(123984),	-- Greathelm of the Unbreakable
-							i(123983),	-- Cloak of Malice
-							i(123981),	-- Bands of Nethekurse
-							i(123985),	-- Telaari Hunting Girdle
-							i(123992),	-- Figurine of the Colossus
-						},
-					}),
-					e(728, {	-- Blood Guard Porung
-						["creatureID"] = 20923,
-						["groups"] = {
-							i(124015),	-- Blood Guard's Necklace of Ferocity
-							i(124000),	-- Justice Bearer's Pauldrons
-							i(124011),	-- Spaulders of Slaughter
-							i(123997),	-- Hallowed Handwraps
-							i(124013),	-- Belt of Flowing Thought
-							i(124014),	-- Pantaloons of Flaming Wrath
-							i(124012),	-- Nimble-Foot Treads
-						},
-					}),
-					e(568, {	-- Warbringer O'mrogg
-						["creatureID"] = 16809,
-						["groups"] = {
-							i(123987),	-- Firemaul of Destruction
-							i(124002),	-- Runesong Dagger
-							i(123989),	-- Skyfire Hawk-Bow
-							i(124029),	-- Forestheart Bracers
-							i(123986),	-- World's End Bracers
-							i(124027),	-- Boots of the Righteous Path
-							i(123988),	-- Jeweled Boots of Sanctification
-						},
-					}),
-					e(569, {	-- Warchief Kargath Bladefist
-						["creatureID"] = 16808,
-						["groups"] = {
-							i(123994),	-- Demonblood Eviscerator
-							i(123999),	-- Lightsworn Hammer
-							i(124030),	-- The Bladefist
-							i(124001),	-- Nexus Torch
-							i(124028),	-- Bands of Rarefied Magic
-							i(123991),	-- Gauntlets of Desolation
-							i(123996),	-- Gauntlets of the Righteous
-							i(123998),	-- Gloves of Oblivion
-							i(123993),	-- Wastewalker Gloves
-							i(123990),	-- Greaves of the Shatterer
-						},
-					}),
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 259 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
 				},
 			}),
 			-- #endif
