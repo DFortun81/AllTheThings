@@ -852,7 +852,6 @@ _.HiddenQuestTriggers = {
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		q(9734),	-- Return to the Marsh (NYI)
 		q(10459),	-- Revered Among the Cenarion Expedition
 		q(9733),	-- Warning the Cenarion Circle (NYI)
 	}),

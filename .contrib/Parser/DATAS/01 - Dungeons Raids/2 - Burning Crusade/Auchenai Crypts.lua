@@ -272,12 +272,3 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-
--- #if AFTER 4.3.0
--- This version of the quest never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(29597),	-- The End of the Exarch
-	}),
-}));
--- #endif

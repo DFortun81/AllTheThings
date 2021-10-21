@@ -1514,13 +1514,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			q(38205),	-- Assault on the Gorian Proving Grounds (H)
 			q(37523),	-- Assault on the Gorian Proving Grounds (A)
 			q(37524),	-- Assault on the Gorian Proving Grounds (H)
-			-- Quests below are completable somehow (I have them all) -Darkal
-			q(35389),	-- Silence the Call - TODO: figure out from where it gets completed
-			q(35391),	-- Silence the Call - TODO: figure out from where it gets completed
-			q(35392),	-- The Nether Approaches - TODO: figure out from where it gets completed
-			q(35390),	-- The Shadow Over Oshu'gun	- TODO: figure out from where it gets completed
-			q(35388),	-- The Void March - TODO: figure out from where it gets completed
-			q(35387),	-- Through the Nether - TODO: figure out from where it gets completed
 		}),
 	}),
 });

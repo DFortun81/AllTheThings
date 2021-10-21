@@ -856,8 +856,3 @@ _.Zones =
 		}),
 	}),
 };
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(25198),	-- Winnoa Pineforest
-	}),
-});

@@ -347,14 +347,3 @@ _.Zones =
 		}),
 	}),
 };
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-9981, {	-- Draenor
-		n(QUESTS, {
-			-- Quests below are completable somehow (I have them all) -Darkal
-			q(34817),	-- Altar Altercation - TODO: figure out from where it gets completed
-			q(34435),	-- Find Ga'nar - Flagged as completed when turning in "Yrel"
-			q(34438),	-- Regarding Enormous Tanks - Flagged as completed when turning in "The Shadow of the Worldbreaker"
-			q(34426),	-- Yrel - Flagged as completed when turning in "A Potential Ally"
-		}),
-	}),
-});

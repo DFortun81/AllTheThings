@@ -2440,7 +2440,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 		q(10089),	-- BETA Forge Camps of the Legion
 		q(9408),	-- BETA Forgotten Heroes
-		q(10207),	-- BETA Forward Base: Reaver's Fall REUSE
 		q(10054),	-- BETA Impending Doom
 		q(10060),	-- BETA Impending Doom
 		q(9511),	-- BETA Kargath's Battle Plans
