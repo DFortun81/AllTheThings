@@ -16,7 +16,7 @@ _.WorldEvents =
 				n(28194, {	-- Prince Tenris Mirkblood
 					un(REMOVED_FROM_GAME, ach(2456)),	-- Vampire Hunter
 					un(REMOVED_FROM_GAME, i(38658)),	-- Vampiric Batling Pet
-					un(9, i(39769)),	-- Arcanite Ripper
+					un(REMOVED_FROM_GAME, i(39769)),	-- Arcanite Ripper
 				}),
 				n(-43, sharedData({["u"] = REMOVED_FROM_GAME}, {	-- Blessed Regalia of Undead Cleansing
 					i(43074),	-- Blessed Mantle of Undead Cleansing
