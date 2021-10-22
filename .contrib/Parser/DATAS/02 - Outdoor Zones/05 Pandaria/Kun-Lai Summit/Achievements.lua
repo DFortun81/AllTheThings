@@ -70,7 +70,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\inv_misc_treasurechest01a",
 							["g"] = {
 								i(86223, {	-- Agile Sprite Cloak
-									["description"] = "Only lootable while in an Agility DPS Spec (Hunter/Rogue).",
+									["description"] = "Only lootable while in an Agility DPS Spec (Hunter/Rogue).", -- verified 2021-10-21 Hunter(Surv)
 								}),
 								i(86222, {	-- Precise Sprite Cloak
 									["description"] = "Only lootable while in an Intellect DPS Spec (Mage/Warlock).", -- verified 2021-10-18 Mage(Frost)
