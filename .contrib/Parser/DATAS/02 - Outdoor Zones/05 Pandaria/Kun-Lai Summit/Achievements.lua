@@ -76,7 +76,7 @@ _.Zones =
 									["description"] = "Only lootable while in an Intellect DPS Spec (Mage/Warlock).", -- verified 2021-10-18 Mage(Frost)
 								}),
 								i(86225, {	-- Strong Sprite Cloak
-									["description"] = "Only lootable while in a Strength DPS Spec.",
+									["description"] = "Only lootable while in a Strength DPS Spec.", -- verified 2021-10-22 DK(Unholy)
 								}),
 								i(86221, {	-- Wise Sprite Cloak
 									["description"] = "Only lootable while in a Healer Spec.", -- verified ?? Shaman(Resto)
