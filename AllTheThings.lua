@@ -12,20 +12,13 @@ local window;
 -- Performance Cache
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
 local C_ArtifactUI_GetAppearanceInfoByID = C_ArtifactUI.GetAppearanceInfoByID;
-local C_AuctionHouse_ReplicateItems = _G.C_AuctionHouse.ReplicateItems;
-local C_AuctionHouse_GetNumReplicateItems = _G.C_AuctionHouse.GetNumReplicateItems;
-local C_AuctionHouse_GetReplicateItemInfo = _G.C_AuctionHouse.GetReplicateItemInfo;
-local C_AuctionHouse_GetReplicateItemLink = _G.C_AuctionHouse.GetReplicateItemLink;
 local C_Item_IsDressableItemByID = C_Item.IsDressableItemByID;
-local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
 local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
 local C_TransmogCollection_GetIllusionSourceInfo = C_TransmogCollection.GetIllusionSourceInfo;
 local C_TransmogCollection_GetItemInfo = C_TransmogCollection.GetItemInfo;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
-local C_TransmogCollection_GetIllusions = C_TransmogCollection.GetIllusions;
 local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
-local C_ToyBox_GetToyLink = C_ToyBox.GetToyLink;
 local C_QuestLog_GetAllCompletedQuestIDs = C_QuestLog.GetAllCompletedQuestIDs
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 local SetPortraitTexture = _G["SetPortraitTexture"];
@@ -47,8 +40,8 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local GetLocale = GetLocale
-local rawget, rawset = rawget, rawset;
+local rawget, rawset, tinsert = rawget, rawset, tinsert;
+local ATTAccountWideData;
 local ALLIANCE_ONLY = {
 	1,
 	3,
@@ -166,7 +159,7 @@ local function Push(self, name, method)
 		self.__stack = {};
 	end
 	-- print("Push->" .. name);
-	table.insert(self.__stack, { method, name });
+	tinsert(self.__stack, { method, name });
 	self:SetScript("OnUpdate", OnUpdate);
 end
 local function StartCoroutine(name, method, delaySec)
@@ -2904,13 +2897,13 @@ ResolveSymbolicLink = function(o)
 						cache = cache - 1;
 					end
 					if parent then
-						table.insert(searchResults, parent);
+						tinsert(searchResults, parent);
 					else
 						print("Failed to select parent " .. sym[2] .. " levels up.");
 					end
 				else
 					-- Select the direct parent object.
-					table.insert(searchResults, o.parent);
+					tinsert(searchResults, o.parent);
 				end
 			elseif cmd == "fill" then
 				-- Instruction to fill with identical content cached elsewhere for this group
@@ -2933,7 +2926,7 @@ ResolveSymbolicLink = function(o)
 				for k,s in ipairs(orig) do
 					if s.g then
 						for l,t in ipairs(s.g) do
-							table.insert(searchResults, t);
+							tinsert(searchResults, t);
 						end
 					end
 				end
@@ -2965,7 +2958,7 @@ ResolveSymbolicLink = function(o)
 				for k=#orig,1,-1 do
 					local s = orig[k];
 					if s.g and index <= #s.g then
-						table.insert(searchResults, s.g[index]);
+						tinsert(searchResults, s.g[index]);
 					end
 				end
 			elseif cmd == "not" then
@@ -3068,13 +3061,13 @@ ResolveSymbolicLink = function(o)
 			elseif cmd == "finalize" then
 				-- Instruction to finalize the current search results and prevent additional queries from affecting this selection.
 				for k,s in ipairs(searchResults) do
-					table.insert(finalized, s);
+					tinsert(finalized, s);
 				end
 				wipe(searchResults);
 			elseif cmd == "merge" then
 				-- Instruction to take all of the finalized and non-finalized search results and merge them back in to the processing queue.
 				for k,s in ipairs(searchResults) do
-					table.insert(finalized, s);
+					tinsert(finalized, s);
 				end
 				searchResults = finalized;
 				finalized = {};
@@ -3154,7 +3147,7 @@ ResolveSymbolicLink = function(o)
 						local results = ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o}));
 						if results then
 							for k,s in ipairs(results) do
-								table.insert(searchResults, s);
+								tinsert(searchResults, s);
 							end
 						end
 					end
@@ -3177,7 +3170,7 @@ ResolveSymbolicLink = function(o)
 							local results = ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o}));
 							if results then
 								for k,s in ipairs(results) do
-									table.insert(searchResults, s);
+									tinsert(searchResults, s);
 								end
 							end
 						end
@@ -4168,7 +4161,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		local knownBy = {};
 		for guid,character in pairs(ATTCharacterData) do
 			if character.Spells and character.Spells[group.spellID] then
-				table.insert(knownBy, character);
+				tinsert(knownBy, character);
 			end
 		end
 		if #knownBy > 0 then
@@ -5115,7 +5108,7 @@ end
 local function SearchForMissingItemsRecursively(group, listing)
 	if group.visible then
 		if (group.collectible or (group.itemID and group.total and group.total > 0)) and (not app.IsBoP(group)) then
-			table.insert(listing, group);
+			tinsert(listing, group);
 		end
 		if group.g and group.expanded then
 			-- Go through the sub groups and determine if any of them have a response.
@@ -5141,7 +5134,7 @@ local function SearchForMissingItemNames(group)
 	-- Build the array of names.
 	local arr = {};
 	for key,value in pairs(uniqueNames) do
-		table.insert(arr, key);
+		tinsert(arr, key);
 	end
 	return arr;
 end
@@ -5523,14 +5516,14 @@ local function RefreshSavesCallback()
 					-- Check Encounter locks
 					for encounterIter=1,numEncounters do
 						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
-						table.insert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+						tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
 					end
 				else
 					-- Check Encounter locks
 					for encounterIter=1,numEncounters do
 						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
 						if not lock.encounters[encounterIter] then
-							table.insert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+							tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
 						elseif isKilled then
 							lock.encounters[encounterIter].isKilled = true;
 						end
@@ -5549,22 +5542,22 @@ local function RefreshSavesCallback()
 					-- Check Encounter locks
 					for encounterIter=1,numEncounters do
 						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
-						table.insert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+						tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
 
 						-- Shared Encounter is always assigned if this is the first lock seen for this instance
-						table.insert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+						tinsert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
 					end
 				else
 					-- Check Encounter locks
 					for encounterIter=1,numEncounters do
 						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
 						if not lock.encounters[encounterIter] then
-							table.insert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+							tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
 						elseif isKilled then
 							lock.encounters[encounterIter].isKilled = true;
 						end
 						if not shared.encounters[encounterIter] then
-							table.insert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+							tinsert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
 						elseif isKilled then
 							shared.encounters[encounterIter].isKilled = true;
 						end
@@ -5637,7 +5630,7 @@ local function RefreshCollections()
 
 		-- Harvest Illusion Collections
 		local collectedIllusions = ATTAccountWideData.Illusions;
-		for i,illusion in ipairs(C_TransmogCollection_GetIllusions()) do
+		for i,illusion in ipairs(C_TransmogCollection.GetIllusions()) do
 			if rawget(illusion, "isCollected") then rawset(collectedIllusions, illusion.sourceID, 1); end
 		end
 		coroutine.yield();
@@ -5662,6 +5655,7 @@ local function RefreshCollections()
 
 		-- Refresh Mounts / Pets
 		local collectedSpells = ATTAccountWideData.Spells;
+		local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
 		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
 			if spellID and isCollected then
@@ -7393,7 +7387,7 @@ local fields = {
 		local c = {};
 		for guid,character in pairs(ATTCharacterData) do
 			if character and character.Deaths and character.Deaths > 0 then
-				table.insert(c, character);
+				tinsert(c, character);
 			end
 		end
 		if #c > 0 then
@@ -9437,7 +9431,7 @@ itemTooltipHarvesterFields.text = function(t)
 								local classes = {};
 								local _,list = strsplit(":", text);
 								for i,s in ipairs({strsplit(",", list)}) do
-									table.insert(classes, app.ClassDB[strtrim(s)]);
+									tinsert(classes, app.ClassDB[strtrim(s)]);
 								end
 								if #classes > 0 then
 									t.info.classes = classes;
@@ -9448,10 +9442,10 @@ itemTooltipHarvesterFields.text = function(t)
 								for i,s in ipairs({strsplit(",", list)}) do
 									local race = app.RaceDB[strtrim(s)];
 									if type(race) == "number" then
-										table.insert(races, race);
+										tinsert(races, race);
 									else -- Pandaren
 										for _,panda in pairs(race) do
-											table.insert(races, panda);
+											tinsert(races, panda);
 										end
 									end
 								end
@@ -9790,6 +9784,7 @@ end)();
 -- Mount Lib
 (function()
 local C_MountJournal_GetMountInfoExtraByID = C_MountJournal.GetMountInfoExtraByID;
+local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
 local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
 	local allMountIDs = C_MountJournal.GetMountIDs();
 	if allMountIDs and #allMountIDs > 0 then
@@ -13227,7 +13222,7 @@ function app:CreateMiniListForGroup(group)
 						end
 						if lastprereq.g then
 							for i,data in ipairs(lastprereq.g) do
-								table.insert(g, data);
+								tinsert(g, data);
 							end
 						end
 						prereqs = g;
@@ -14479,13 +14474,13 @@ RowOnEnter = function (self)
 						end
 						if bestMatch then
 							if bestMatch.isBreadcrumb then
-								table.insert(bc, bestMatch);
+								tinsert(bc, bestMatch);
 							else
-								table.insert(prereqs, bestMatch);
+								tinsert(prereqs, bestMatch);
 							end
 						end
 					else
-						table.insert(prereqs, app.CreateQuest(sourceQuestID));
+						tinsert(prereqs, app.CreateQuest(sourceQuestID));
 					end
 				end
 			end
@@ -14532,9 +14527,9 @@ RowOnEnter = function (self)
 						nq = app.SearchForObject("questID", nextQuestID);
 						-- existing quest group
 						if nq then
-							table.insert(nextq, nq);
+							tinsert(nextq, nq);
 						else
-							table.insert(nextq, app.CreateQuest(questID));
+							tinsert(nextq, app.CreateQuest(questID));
 						end
 						if IsQuestFlaggedCompleted(nextQuestID) then
 							isBreadcrumbAvailable = false;
@@ -14657,7 +14652,7 @@ CreateRow = function(self)
 		row:SetPoint("TOPLEFT", self.rows[row.index], "BOTTOMLEFT");
 		row:SetPoint("TOPRIGHT", self.rows[row.index], "BOTTOMRIGHT");
 	end
-	table.insert(self.rows, row);
+	tinsert(self.rows, row);
 
 	-- Setup highlighting and event handling
 	row:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD");
@@ -14939,7 +14934,7 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = GROUP_FINDER;
 		db.icon = app.asset("Category_D&R");
-		table.insert(g, db);
+		tinsert(g, db);
 
 		-- Zones
 		if app.Categories.Zones then
@@ -14948,7 +14943,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = BUG_CATEGORY2;
 			db.icon = app.asset("Category_Zones")
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- World Drops / Bind on Equips
@@ -14958,7 +14953,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = TRANSMOG_SOURCE_4;
 			db.icon = app.asset("Category_WorldDrops");
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Group Finder
@@ -14968,7 +14963,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = DUNGEONS_BUTTON;
 			db.icon = app.asset("Category_GroupFinder")
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Achievements
@@ -14978,7 +14973,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = TRACKER_HEADER_ACHIEVEMENTS;
 			db.icon = app.asset("Category_Achievements")
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Expansion Features
@@ -14989,7 +14984,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = GetCategoryInfo(15301);
 			db.icon = app.asset("Category_ExpansionFeatures");
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Holidays
@@ -14999,7 +14994,7 @@ function app:GetDataCache()
 			db.icon = app.asset("Category_Holidays");
 			db.expanded = false;
 			db.text = GetItemSubClassInfo(15,3);
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Events
@@ -15010,7 +15005,7 @@ function app:GetDataCache()
 			db.icon = app.asset("Category_Event");
 			db.g = app.Categories.WorldEvents;
 			db.expanded = false;
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Promotions
@@ -15021,7 +15016,7 @@ function app:GetDataCache()
 			db.icon = app.asset("Category_Promo");
 			db.g = app.Categories.Promotions;
 			db.expanded = false;
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Factions (Dynamic)
@@ -15033,7 +15028,7 @@ function app:GetDataCache()
 		factionsCategory.expanded = false;
 		factionsCategory.icon = app.asset("Category_Factions");
 		factionsCategory.text = L["FACTIONS"];
-		table.insert(g, factionsCategory);
+		tinsert(g, factionsCategory);
 		]]--
 
 		-- Flight Paths (Dynamic)
@@ -15043,7 +15038,7 @@ function app:GetDataCache()
 		flightPathsCategory.expanded = false;
 		flightPathsCategory.icon = app.asset("Category_FlightPaths");
 		flightPathsCategory.text = L["FLIGHT_PATHS"];
-		table.insert(g, flightPathsCategory);
+		tinsert(g, flightPathsCategory);
 
 		-- Pet Battles
 		if app.Categories.PetBattles then
@@ -15053,7 +15048,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = SHOW_PET_BATTLES_ON_MAP_TEXT; -- Pet Battles
 			db.icon = app.asset("Category_PetBattles")
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- PvP
@@ -15063,7 +15058,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = STAT_CATEGORY_PVP;
 			db.icon = app.asset("Category_PvP");
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Craftables
@@ -15074,7 +15069,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
 			db.icon = app.asset("Category_Crafting");
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Professions
@@ -15085,7 +15080,7 @@ function app:GetDataCache()
 			db.text = TRADE_SKILLS;
 			db.icon = app.asset("Category_Professions");
 			db.description = "This section will only show your character's professions outside of Account and Debug Mode.";
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Secrets
@@ -15093,7 +15088,7 @@ function app:GetDataCache()
 			db = app.CreateNPC(-22);
 			db.g = app.Categories.Secrets;
 			db.expanded = false;
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Gear Sets
@@ -15103,7 +15098,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = LOOT_JOURNAL_ITEM_SETS;
 			db.icon = app.asset("Category_ItemSets");
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- In-Game Store
@@ -15113,7 +15108,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = BATTLE_PET_SOURCE_10;
 			db.icon = app.asset("Category_InGameShop");
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Illusions
@@ -15122,7 +15117,7 @@ function app:GetDataCache()
 			db.g = app.Categories.Illusions;
 			db.expanded = false;
 			db.text = "Illusions";
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Factions
@@ -15132,7 +15127,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = L["FACTIONS"];
 			db.icon = app.asset("Category_Factions");
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Mounts
@@ -15143,7 +15138,7 @@ function app:GetDataCache()
 			db.text = MOUNTS;
 			db.icon = app.asset("Category_Mounts");
 			db.sourceIgnored = true;
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Pet Journal
@@ -15160,7 +15155,7 @@ function app:GetDataCache()
 					o.sourceIgnored = true;
 				end
 			end
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Titles
@@ -15171,7 +15166,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = "Titles";
 			db.sourceIgnored = true;
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Toys
@@ -15183,7 +15178,7 @@ function app:GetDataCache()
 			db.f = 102;
 			db.text = TOY_BOX;
 			db.sourceIgnored = true;
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		--[[
@@ -15214,7 +15209,7 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = TOY_BOX;
 		db.icon = "Interface\\ICONS\\INV_Misc_Toy_10";
-		table.insert(g, db);
+		tinsert(g, db);
 		]]--
 
 		--[[
@@ -15224,7 +15219,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.g = app.Categories.NeverImplemented;
 			db.text = "Never Implemented";
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Unsorted
@@ -15233,7 +15228,7 @@ function app:GetDataCache()
 			db.g = app.Categories.Unsorted;
 			db.expanded = false;
 			db.text = "Unsorted";
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Models (Dynamic)
@@ -15250,7 +15245,7 @@ function app:GetDataCache()
 		end)());
 		db.expanded = false;
 		db.text = "Models (Dynamic)";
-		table.insert(g, db);
+		tinsert(g, db);
 		--]]
 
 		-- Illusions (Dynamic)
@@ -15279,7 +15274,7 @@ function app:GetDataCache()
 		end)();
 		db.expanded = false;
 		db.text = "Illusions (Dynamic)";
-		table.insert(g, db);
+		tinsert(g, db);
 		--]]
 		-- Items (Dynamic)
 		--[[
@@ -15297,7 +15292,7 @@ function app:GetDataCache()
 		end)();
 		db.expanded = false;
 		db.text = "All Items (Dynamic)";
-		table.insert(g, db);
+		tinsert(g, db);
 		]]--
 
 		--[[
@@ -15318,7 +15313,7 @@ function app:GetDataCache()
 		end)());
 		db.expanded = false;
 		db.text = "Artifacts (Dynamic)";
-		table.insert(g, db);
+		tinsert(g, db);
 
 		-- Titles (Dynamic)
 		db = app.CreateAchievement(2188, (function()
@@ -15336,7 +15331,7 @@ function app:GetDataCache()
 		end)());
 		db.expanded = false;
 		db.text = "Titles (Dynamic)";
-		table.insert(g, db);
+		tinsert(g, db);
 
 		-- Factions (Dynamic)
 		db = app.CreateAchievement(11177, (function()
@@ -15352,7 +15347,7 @@ function app:GetDataCache()
 		end)());
 		db.expanded = false;
 		db.text = "Factions (Dynamic)";
-		table.insert(g, db);
+		tinsert(g, db);
 		--]]
 
 
@@ -15370,7 +15365,7 @@ function app:GetDataCache()
 			if first == 0 then return a.invType < b.invType; end
 			return first < 0;
 		end
-		table.insert(g, (function()
+		tinsert(g, (function()
 			--if true then return nil; end
 			local db = GetTempDataMember("GEAR_SET_CACHE", nil);
 			if not db then
@@ -15461,10 +15456,10 @@ function app:GetDataCache()
 		--]]
 
 		-- Track Deaths!
-		table.insert(g, app:CreateDeathClass());
+		tinsert(g, app:CreateDeathClass());
 
 		-- Yourself.
-		table.insert(g, app.CreateUnit("player", {
+		tinsert(g, app.CreateUnit("player", {
 			["description"] = L["DEBUG_LOGIN"],
 			["races"] = { app.RaceIndex },
 			["c"] = { app.ClassIndex },
@@ -15518,8 +15513,8 @@ function app:GetDataCache()
 			db.g = app.Categories.NeverImplemented;
 			db.text = L["NEVER_IMPLEMENTED"];
 			db.description = L["NEVER_IMPLEMENTED_DESC"];
-			table.insert(g, db);
-			table.insert(db.g, 1, flightPathsCategory_NYI);
+			tinsert(g, db);
+			tinsert(db.g, 1, flightPathsCategory_NYI);
 		end
 
 		-- Hidden Quest Triggers
@@ -15529,7 +15524,7 @@ function app:GetDataCache()
 			db.g = app.Categories.HiddenQuestTriggers;
 			db.text = L["HIDDEN_QUEST_TRIGGERS"];
 			db.description = L["HIDDEN_QUEST_TRIGGERS_DESC"];
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 
 		-- Unsorted
@@ -15539,7 +15534,7 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = L["UNSORTED_1"];
 			db.description = L["UNSORTED_DESC_2"];
-			table.insert(g, db);
+			tinsert(g, db);
 		end
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
@@ -15734,6 +15729,7 @@ function app:CustomWindowUpdate(suffix)
 end
 customWindowUpdates["AuctionData"] = function(self)
 	if not self.initialized then
+		local C_AuctionHouse_ReplicateItems = C_AuctionHouse.ReplicateItems;
 		self.shouldFullRefresh = false;
 		self.initialized = true;
 		self.data = {
@@ -15755,7 +15751,7 @@ customWindowUpdates["AuctionData"] = function(self)
 							wipe(AllTheThingsAuctionData);
 							wipe(window.data.g);
 							for i,option in ipairs(window.data.options) do
-								table.insert(window.data.g, option);
+								tinsert(window.data.g, option);
 							end
 							window:Update();
 						end
@@ -15890,7 +15886,7 @@ customWindowUpdates["AuctionData"] = function(self)
 			["g"] = {}
 		};
 		for i,option in ipairs(self.data.options) do
-			table.insert(self.data.g, option);
+			tinsert(self.data.g, option);
 		end
 	end
 
@@ -16248,7 +16244,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 
 							-- Push the Common Boss Drop header to the top.
 							if cbdIndex > -1 then
-								table.insert(group.g, 1, table.remove(group.g, cbdIndex));
+								tinsert(group.g, 1, table.remove(group.g, cbdIndex));
 							end
 
 							-- Look for a Zone Drop header.
@@ -16262,7 +16258,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 
 							-- Push the Zone Drop header to the top.
 							if cbdIndex > -1 then
-								table.insert(group.g, 1, table.remove(group.g, cbdIndex));
+								tinsert(group.g, 1, table.remove(group.g, cbdIndex));
 							end
 						end
 					end
@@ -16295,11 +16291,11 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						local o = results.g[i];
 						if o.isRaid then
 							table.remove(results.g, i);
-							table.insert(top, o);
+							tinsert(top, o);
 						end
 					end
 					for _,o in ipairs(top) do
-						table.insert(results.g, 1, o);
+						tinsert(results.g, 1, o);
 					end
 				end
 
@@ -16499,10 +16495,10 @@ customWindowUpdates["ItemFilter"] = function(self)
 					self.dirty = nil;
 
 					local g = {};
-					table.insert(g, 1, data.setItemFilter);
+					tinsert(g, 1, data.setItemFilter);
 					if data.results and #data.results > 0 then
 						for i,result in ipairs(data.results) do
-							table.insert(g, result);
+							tinsert(g, result);
 						end
 					end
 					data.g = g;
@@ -18581,7 +18577,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						end
 						NestObject(groupFinder, header);
 					end
-					table.insert(temp, groupFinder);
+					tinsert(temp, groupFinder);
 				end
 
 				-- Put a 'Clear World Quests' click at the bottom
@@ -18879,7 +18875,7 @@ app:GetWindow("Debugger", UIParent, function(self, force)
 							end
 
 							-- Parse as an ITEM LINK.
-							table.insert(rawGroups, { ["itemID"] = tonumber(link:match("item:(%d+)")), ["rawlink"] = link, ["cost"] = cost });
+							tinsert(rawGroups, { ["itemID"] = tonumber(link:match("item:(%d+)")), ["rawlink"] = link, ["cost"] = cost });
 						end
 					end
 
@@ -18931,7 +18927,7 @@ app:GetWindow("Debugger", UIParent, function(self, force)
 								["g"] = {}
 							};
 							categories[currentCategoryID] = category;
-							table.insert(categoryList, category);
+							tinsert(categoryList, category);
 						end
 					end
 				end
@@ -18951,7 +18947,7 @@ app:GetWindow("Debugger", UIParent, function(self, force)
 									["g"] = {}
 								};
 								categories[currentCategoryID] = category;
-								table.insert(categoryList, category);
+								tinsert(categoryList, category);
 							end
 						end
 						local recipe = {
@@ -18965,7 +18961,7 @@ app:GetWindow("Debugger", UIParent, function(self, force)
 						if spellRecipeInfo.nextRecipeID then
 							recipe.nextRecipeID = spellRecipeInfo.nextRecipeID;
 						end
-						table.insert(categories[currentCategoryID].g, recipe);
+						tinsert(categories[currentCategoryID].g, recipe);
 					end
 				end
 
@@ -18976,7 +18972,7 @@ app:GetWindow("Debugger", UIParent, function(self, force)
 						local parentCategory = categories[category.parentCategoryID];
 						category.parentCategoryID = nil;
 						if parentCategory then
-							table.insert(parentCategory.g, 1, category);
+							tinsert(parentCategory.g, 1, category);
 							table.remove(categoryList, i);
 						end
 					end
@@ -18984,7 +18980,7 @@ app:GetWindow("Debugger", UIParent, function(self, force)
 
 				-- Now merge the categories into the raw groups table.
 				for i,category in ipairs(categoryList) do
-					table.insert(rawGroups, category);
+					tinsert(rawGroups, category);
 				end
 				local info = {
 					["professionID"] = tradeSkillID,
@@ -19013,21 +19009,21 @@ app:GetWindow("Debugger", UIParent, function(self, force)
 				local rawGroups = {};
 				for i=1,GetNumQuestRewards(),1 do
 					local link = GetQuestItemLink("reward", i);
-					if link then table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
+					if link then tinsert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
 				end
 				for i=1,GetNumQuestChoices(),1 do
 					local link = GetQuestItemLink("choice", i);
-					if link then table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
+					if link then tinsert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
 				end
 				for i=1,GetNumQuestLogRewardSpells(questID),1 do
 					local texture, name, isTradeskillSpell, isSpellLearned, hideSpellLearnText, isBoostSpell, garrFollowerID, genericUnlock, spellID = GetQuestLogRewardSpell(i, questID);
 					if garrFollowerID then
-						table.insert(rawGroups, { ["followerID"] = garrFollowerID, ["name"] = name });
+						tinsert(rawGroups, { ["followerID"] = garrFollowerID, ["name"] = name });
 					elseif spellID then
 						if isTradeskillSpell then
-							table.insert(rawGroups, { ["recipeID"] = spellID, ["name"] = name });
+							tinsert(rawGroups, { ["recipeID"] = spellID, ["name"] = name });
 						else
-							table.insert(rawGroups, { ["spellID"] = spellID, ["name"] = name });
+							tinsert(rawGroups, { ["spellID"] = spellID, ["name"] = name });
 						end
 					end
 				end
@@ -19087,7 +19083,7 @@ end):Show();
 
 hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
 	if CanAttachTooltips() then
-		local link = C_ToyBox_GetToyLink(itemID);
+		local link = C_ToyBox.GetToyLink(itemID);
 		if link then
 			AttachTooltipSearchResults(self, link, SearchForLink, link);
 			self:Show();
@@ -19188,7 +19184,7 @@ app.ProcessAuctionData = function()
 					data.auctions = {};
 					keys[value] = data;
 				end
-				table.insert(data.auctions, v.itemLink);
+				tinsert(data.auctions, v.itemLink);
 			end
 		end
 	end
@@ -19239,9 +19235,9 @@ app.ProcessAuctionData = function()
 				if not filterData then
 					filterData = setmetatable({ ["filterID"] = filterID, ["g"] = {} }, app.BaseFilter);
 					filteredItems[filterID] = filterData;
-					table.insert(searchResultsByKey.s, filterData);
+					tinsert(searchResultsByKey.s, filterData);
 				end
-				table.insert(filterData.g, entry);
+				tinsert(filterData.g, entry);
 			end
 		end
 		for f,entry in pairs(filteredItems) do
@@ -19264,7 +19260,7 @@ app.ProcessAuctionData = function()
 				for itemID2,count in pairs(reagentCache[itemID][2]) do
 					local searchResults = app.SearchForField("itemID", itemID2);
 					if searchResults and #searchResults > 0 then
-						table.insert(entry.g, CloneData(searchResults[1]));
+						tinsert(entry.g, CloneData(searchResults[1]));
 					end
 				end
 			else
@@ -19277,7 +19273,7 @@ app.ProcessAuctionData = function()
 	-- Insert Buttons into the groups.
 	wipe(window.data.g);
 	for i,option in ipairs(window.data.options) do
-		table.insert(window.data.g, option);
+		tinsert(window.data.g, option);
 	end
 
 	local ObjectTypeMetas = {
@@ -19342,9 +19338,9 @@ app.ProcessAuctionData = function()
 		end
 		subdata.g = {};
 		for i,j in pairs(searchResults) do
-			table.insert(subdata.g, j);
+			tinsert(subdata.g, j);
 		end
-		table.insert(window.data.g, subdata);
+		tinsert(window.data.g, subdata);
 	end
 	insertionSort(window.data.g, function(a, b)
 		return (b.priority or 0) > (a.priority or 0);
@@ -19360,6 +19356,11 @@ app.OpenAuctionModule = function(self)
 		C_Timer.After(2, function() end);
 	end
 	if app.Blizzard_AuctionHouseUILoaded then
+		-- Localize some global APIs
+		local C_AuctionHouse_GetNumReplicateItems = C_AuctionHouse.GetNumReplicateItems;
+		local C_AuctionHouse_GetReplicateItemInfo = C_AuctionHouse.GetReplicateItemInfo;
+		local C_AuctionHouse_GetReplicateItemLink = C_AuctionHouse.GetReplicateItemLink;
+
 		-- Create the Auction Tab for ATT.
 		local tabID = AuctionHouseFrame.numTabs+1;
 		local button = CreateFrame("Button", "AuctionHouseFrameTab"..tabID, AuctionHouseFrame, "AuctionHouseFrameDisplayModeTabTemplate");
@@ -19451,8 +19452,7 @@ end
 app.SetupProfiles = function()
 	-- base profiles containers
 	local ATTProfiles = {
-		Profiles = {
-		},
+		Profiles = {},
 		Assignments = {},
 	};
 	AllTheThingsProfiles = ATTProfiles;
@@ -19540,7 +19540,7 @@ SlashCmdList["AllTheThings"] = function(cmd)
 				local counts = {};
 				local items = GetDataMember("ItemDB", {});
 				for itemID=1,totalItems do
-					table.insert(counts, {itemID=itemID,retries=0});
+					tinsert(counts, {itemID=itemID,retries=0});
 				end
 				local slots = {
 					["INVTYPE_AMMO"] = INVSLOT_AMMO;
@@ -20064,11 +20064,12 @@ app.events.VARIABLES_LOADED = function()
 	end
 
 	-- Account Wide Data Storage
-	local accountWideData = ATTAccountWideData;
-	if not accountWideData then
-		accountWideData = {};
-		ATTAccountWideData = accountWideData;
+	ATTAccountWideData = _G["ATTAccountWideData"];
+	if not ATTAccountWideData then
+		ATTAccountWideData = {};
+		_G["ATTAccountWideData"] = ATTAccountWideData;
 	end
+	local accountWideData = ATTAccountWideData;
 	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
 	if not accountWideData.Artifacts then accountWideData.Artifacts = {}; end
 	if not accountWideData.AzeriteEssenceRanks then accountWideData.AzeriteEssenceRanks = {}; end
