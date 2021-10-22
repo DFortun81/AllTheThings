@@ -380,6 +380,8 @@ _.NeverImplemented =
 			q(36212),	-- 6.0 Tanaan - Wrist Bootstrap
 			q(36358),	-- A Father and His Son
 			q(35866),	-- A Few Artifact Fragments
+			q(37188),	-- A Flash of Bronze...
+			q(37194),	-- A Flash of Bronze...
 			q(34944),	-- A Flock of Fledglings
 			q(34354),	-- A Good Death
 			q(33266),	-- A Light in the Dark - Tracking Quest
@@ -774,6 +776,9 @@ _.NeverImplemented =
 			q(33995),	-- Treasure: Blasting Charges - Rubble C
 			q(33997),	-- Treasure: Blasting Charges - Rubble D
 			q(36320),	-- Treasure: Front of Saberon Cave
+			q(33925),	-- Treasure: Frostwolf Cache 01
+			q(33945),	-- Treasure: Frostwolf Cache 03
+			q(33949),	-- Treasure: Frostwolf Cache 07
 			q(33016),	-- Treasure: Frostwolf Supply Cache
 			q(34212),	-- Treasure: Gorgrond Treasure
 			q(34147),	-- Treasure: Gorgrond Treasure 01

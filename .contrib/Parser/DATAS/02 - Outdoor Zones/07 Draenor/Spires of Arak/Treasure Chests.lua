@@ -15,6 +15,15 @@ _.Zones =
 						i(116913),	-- Peon's Mining Pick
 					},
 				}),
+				o(235365, {	-- Admiral Taylor's Coffer
+					["questID"] = 36462,
+					["description"] = "The key is on a stone behind a skeleton in front of the closed mine, south of the garrison. (37.7, 56.3)",
+					["coord"] = { 36.2, 54.4, SPIRES_OF_ARAK },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+						i(119348),	-- Admiral Taylor's Garrison Log
+					},
+				}),
 				o(235143, {	-- Assassin's Spear
 					["questID"] = 36445,
 					["coord"] = { 49.2, 37.3, SPIRES_OF_ARAK },
@@ -779,6 +788,13 @@ _.Zones =
 							-- Finger
 							-- Trinket
 						}),
+					},
+				}),
+				o(235310, {	-- Shredder Parts
+					["questID"] = 36456,
+					["coord"] = { 60.9, 84.6, SPIRES_OF_ARAK },
+					["g"] = {
+						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(235135, {	-- Smuggled Apexis Artifacts

@@ -39,6 +39,7 @@ _.Zones =
 						},
 					}),
 					crit(4, {	-- Stolen Draenei Tome
+						["questID"] = 37134,
 						["coords"] = {
 							{ 45.3, 33.8, DRAENOR_NAGRAND },
 							{ 45.1, 38.2, DRAENOR_NAGRAND },
@@ -58,6 +59,7 @@ _.Zones =
 						},
 					}),
 					crit(6, {	-- Gnarled Bone
+						["questID"] = 37136,
 						["description"] = "Kill Mok'gol Wolfsong for a Wolf Totem, dig in dirt piles as a spectral wolf at a chance to find this item.",
 						["coords"] = {
 							{ 43.0, 35.6, DRAENOR_NAGRAND },
