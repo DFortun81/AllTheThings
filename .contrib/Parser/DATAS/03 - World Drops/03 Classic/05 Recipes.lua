@@ -150,7 +150,7 @@ _.WorldDrops =
 				i(6454),	-- Manual: Strong Anti-Venom
 			}),
 			-- #endif
-			prof(JEWELCRAFTING, {
+			applyclassicphase(TBC_PHASE_ONE, prof(JEWELCRAFTING, {
 				i(20976),	-- Design: Citrine Pendant of Golden Healing
 				i(21953),	-- Design: Emerald Owl
 				i(21947),	-- Design: Gem Studded Band
@@ -159,7 +159,7 @@ _.WorldDrops =
 				i(21949),	-- Design: Ruby Serpent
 				i(21945),	-- Design: The Aquamarine Ward
 				i(21944),	-- Design: Truesilver Boar
-			}),
+			})),
 			prof(LEATHERWORKING, {
 				i(4301),	-- Pattern: Barbaric Belt
 				i(4297),	-- Pattern: Barbaric Gloves
