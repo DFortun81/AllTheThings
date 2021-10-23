@@ -3,14 +3,90 @@
 ---------------------------------------------
 _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	prof(ALCHEMY, {
-		filter(53, {	-- Trinkets
+		category(632, {	-- Cauldrons
+			i(32839),	-- Cauldron of Major Arcane Protection
+			i(32849),	-- Cauldron of Major Fire Protection
+			i(32850),	-- Cauldron of Major Frost Protection
+			i(32851),	-- Cauldron of Major Nature Protection
+			i(32852),	-- Cauldron of Major Shadow Protection
+		}),
+		category(633, {	-- Potions
+			i(22839),	-- Destruction Potion
+			i(31677),	-- Fel Mana Potion
+			i(31676),	-- Fel Regeneration Potion
+			i(22838),	-- Haste Potion
+			i(22837),	-- Heroic Potion
+			i(22828),	-- Insane Strength Potion
+			i(22849),	-- Ironshield Potion
+			i(34440),	-- Mad Alchemist's Potion
+			i(22845),	-- Major Arcane Protection Potion
+			i(22836),	-- Major Dreamless Sleep Potion
+			i(22841),	-- Major Fire Protection Potion
+			i(22842),	-- Major Frost Protection Potion
+			i(22847),	-- Major Holy Protection Potion
+			i(22844),	-- Major Nature Protection Potion
+			i(22846),	-- Major Shadow Protection Potion
+			i(22871),	-- Shrouding Potion
+			i(22826),	-- Sneaking Potion
+			i(22829),	-- Super Healing Potion
+			i(22832),	-- Super Mana Potion
+			i(22850),	-- Super Rejuvenation Potion
+			i(28101),	-- Unstable Mana Potion
+			i(28100),	-- Volatile Healing Potion
+		}),
+		category(634, {	-- Elixirs
+			i(28103),	-- Adept's Elixir
+			i(32063),	-- Earthen Elixir
+			i(22823),	-- Elixir of Camouflage
+			i(32067),	-- Elixir of Draenic Wisdom
+			i(22848),	-- Elixir of Empowerment
+			i(22825),	-- Elixir of Healing Power
+			i(32068),	-- Elixir of Ironskin
+			i(22831),	-- Elixir of Major Agility
+			i(22834),	-- Elixir of Major Defense
+			i(22833),	-- Elixir of Major Firepower
+			i(32062),	-- Elixir of Major Fortitude
+			i(22827),	-- Elixir of Major Frost Power
+			i(22840),	-- Elixir of Major Mageblood
+			i(22835),	-- Elixir of Major Shadow Power
+			i(22824),	-- Elixir of Major Strength
+			i(28104),	-- Elixir of Mastery
+			i(22830),	-- Elixir of the Searching Eye
+			i(31679),	-- Fel Strength Elixir
+			i(28102),	-- Onslaught Elixir
+		}),
+		category(635, {	-- Flasks
+			i(22861),	-- Flask of Blinding Light
+			-- #if BEFORE 5.0.1.20000
+			applyclassicphase(TBC_PHASE_THREE, i(33208, {	-- Flask of Chromatic Wonder
+				["timeline"] = { "removed 5.0.1.20000" },
+			})),
+			-- #endif
+			i(22851),	-- Flask of Fortification
+			i(22853),	-- Flask of Mighty Versatility
+			i(22866),	-- Flask of Pure Death
+			i(22854),	-- Flask of Relentless Assault
+		}),
+		category(636, {	-- Transmutation
+			i(25867),	-- Earthstorm Diamond
+			i(23571),	-- Primal Might
+			i(25868),	-- Skyfire Diamond
+		}),
+		category(637, {	-- Trinkets
 			i(13503),	-- Alchemist Stone
-			i(35751),	-- Assassin's Alchemist Stone
-			i(35748),	-- Guardian's Alchemist Stone
-			i(35750),	-- Redeemer's Alchemist Stone
-			i(35749),	-- Sorcerer's Alchemist Stone
+			applyclassicphase(TBC_PHASE_FIVE, i(35751)),	-- Assassin's Alchemist Stone
+			applyclassicphase(TBC_PHASE_FIVE, i(35748)),	-- Guardian's Alchemist Stone
+			applyclassicphase(TBC_PHASE_FIVE, i(35750)),	-- Redeemer's Alchemist Stone
+			applyclassicphase(TBC_PHASE_FIVE, i(35749)),	-- Sorcerer's Alchemist Stone
+			-- #if AFTER 3.1.0
+			i(31080),	-- Mercurial Stone
+			-- #endif
+		}),
+		-- #if BEFORE 3.1.0
+		category(644, {	-- Materials
 			i(31080),	-- Mercurial Stone
 		}),
+		-- #endif
 	}),
 	prof(BLACKSMITHING, {
 		filter(20, {	-- Daggers
