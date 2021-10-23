@@ -729,12 +729,15 @@ _.Craftables = { tier(CLASSIC_TIER, {
 	}),
 	prof(FISHING, {
 		filter(23, {	-- 1H Maces
-			i(19808, {	-- Rockhide Strongfish
-				["description"] = "Can be caught in schools in The Cape of Stranglethorn or Northern Stranglethorn during the Stranglethorn Fishing Extravaganza.",
-				["u"] = STRANGLETHORN_FISHING_EXTRAVAGANZA,
-			}),
+			applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, i(19808, {	-- Rockhide Strongfish
+				["description"] = "Can be caught in schools of Tastyfish in Stranglethorn Vale during the Stranglethorn Fishing Extravaganza.",
+			})),
 			i(6360, {	-- Steelscale Crushfish
-				["description"] = "Can be caught in Darkmoon Island, Northern Stranglethorn, and Wetlands in open water.",
+				-- #if AFTER CATA
+				["description"] = "Can be caught in Darkmoon Island, Hillsbrad Foothills, Northern Stranglethorn, and Wetlands in open water.",
+				-- #else
+				["description"] = "Can be caught in Hillsbrad Foothills, Stranglethorn Vale and the Wetlands in open water.",
+				-- #endif
 			}),
 		}),
 		filter(52, {	-- Finger
@@ -798,6 +801,10 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(13891),	-- Bloated Salmon
 			i(6643),	-- Bloated Smallfish
 			i(8366),	-- Bloated Trout
+			i(6351),	-- Dented Crate
+			i(13874),	-- Heavy Crate
+			i(6357),	-- Sealed Crate
+			i(6352),	-- Waterlogged Crate
 		}),
 		-- #if AFTER TBC
 		filter(200, {	-- Recipes
@@ -806,6 +813,55 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			}),
 		}),
 		-- #endif
+	}),
+	prof(HERBALISM, {
+		["description"] = "The following items can be gathered by Herbalists out in the world.",
+		["groups"] = {
+			i(11020, {	-- Evergreen Pouch
+				["cost"] = {
+					{ "i", 11018, 2 },	-- Un'Goro Soil
+					{ "i", 11022, 1 },	-- Packet of Tharlendris Seeds
+				},
+				["groups"] = {
+					i(11024, {	-- Evergreen Herb Casing
+						i(11040),	-- Morrowgrain
+					}),
+				},
+			}),
+			i(8836),	-- Arthas' Tears [Herbalism 220]
+			i(13468),	-- Black Lotus [Herbalism 300]
+			i(8839),	-- Blindweed [Herbalism 235]
+			applyclassicphase(PHASE_FOUR, i(19726, {	-- Bloodvine [Herbalism 210] [ZG Only]
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			i(2450),	-- Briarthorn [Herbalism 70]
+			i(2453),	-- Bruiseweed [Herbalism 100]
+			i(13463),	-- Dreamfoil [Herbalism 270]
+			i(2449),	-- Earthroot [Herbalism 15]
+			i(3818),	-- Fadeleaf [Herbalism 160]
+			i(4625),	-- Firebloom [Herbalism 205]
+			i(8845),	-- Ghost Mushroom [Herbalism 245]
+			i(13464),	-- Golden Sansam [Herbalism 260]
+			i(3821),	-- Goldthorn [Herbalism 170]
+			i(3369),	-- Grave Moss [Herbalism 120]
+			i(8846),	-- Gromsblood [Herbalism 250]
+			i(13467),	-- Icecap [Herbalism 290]
+			i(3358),	-- Khadgar's Whisker [Herbalism 185]
+			i(3356),	-- Kingsblood [Herbalism 125]
+			i(3357),	-- Liferoot [Herbalism 150]
+			i(785),		-- Mageroyal [Herbalism 50]
+			i(13465),	-- Mountain Silversage [Herbalism 280]
+			i(2447),	-- Peacebloom [Herbalism 1]
+			i(13466),	-- Plaguebloom [Herbalism 285]
+			i(8831),	-- Purple Lotus [Herbalism 210]
+			i(765),		-- Silverleaf [Herbalism 1]
+			i(3820),	-- Stranglekelp [Herbalism 85]
+			i(8838),	-- Sungrass [Herbalism 230]
+			i(2452),	-- Swiftthistle [Herbalism 70]
+			i(3355),	-- Wild Steelbloom [Herbalism 115]
+			i(8153),	-- Wildvine [Herbalism 210]
+			i(3819),	-- Wintersbite [Herbalism 195]
+		},
 	}),
 	prof(INSCRIPTION, {
 		filter(111, {	-- Glyphs
@@ -1300,6 +1356,98 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			}),
 		}),
 	}),
+	prof(MINING, {
+		["description"] = "The following items can be gathered by Miners out in the world.",
+		["groups"] = {
+			spell(2656, {	-- Smelting
+				["description"] = "The following items can be smelted by Miners in a city or at the Black Forge in BRD.",
+				["groups"] = {
+					i(2841),	-- Bronze Bar
+					i(2840),	-- Copper Bar
+					i(11371),	-- Dark Iron Bar
+					i(17771),	-- Elementium Bar
+					i(3577),	-- Gold Bar
+					i(3575),	-- Iron Bar
+					i(3860),	-- Mithril Bar
+					i(2842),	-- Silver Bar
+					i(3859),	-- Steel Bar
+					i(12359),	-- Thorium Bar
+					i(3576),	-- Tin Bar
+					i(6037),	-- Truesilver Bar
+				},
+			}),
+			i(2836),	-- Coarse Stone
+			i(2770),	-- Copper Ore
+			i(11370),	-- Dark Iron Ore
+			i(12365),	-- Dense Stone
+			i(2776),	-- Gold Ore
+			i(2838),	-- Heavy Stone
+			i(2772),	-- Iron Ore
+			i(22203),	-- Large Obsidian Shard
+			i(3858),	-- Mithril Ore
+			i(2835),	-- Rough Stone
+			i(2775),	-- Silver Ore
+			i(22202),	-- Small Obsidian Shard
+			i(7912),	-- Solid Stone
+			i(10620),	-- Thorium Ore
+			i(2771),	-- Tin Ore
+			i(7911),	-- Truesilver Ore
+		},
+	}),
+	prof(SKINNING, {
+		["description"] = "The following items can be gathered by skinning creatures out in the world.",
+		["groups"] = {
+			i(15416),	-- Black Dragonscale
+			i(7286),	-- Black Whelp Scale
+			i(15415),	-- Blue Dragonscale
+			i(12607),	-- Brilliant Chromatic Scale
+			i(15423),	-- Chimera Leather
+			i(17012),	-- Core Leather
+			i(6470),	-- Deviate Scale
+			applyclassicphase(PHASE_FOUR, i(20381, {	-- Dreamscale
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			i(15417),	-- Devilsaur Leather
+			i(15422),	-- Frostsaber Leather
+			i(15412),	-- Green Dragonscale
+			i(7392),	-- Green Whelp Scale
+			i(4235),	-- Heavy Hide
+			i(4234),	-- Heavy Leather
+			i(15408),	-- Heavy Scorpid Scale
+			i(20501),	-- Heavy Silithid Carapace
+			i(783),		-- Light Hide
+			i(2318),	-- Light Leather
+			i(20500),	-- Light Silithid Carapace
+			i(4232),	-- Medium Hide
+			i(2319),	-- Medium Leather
+			i(11512),	-- Patch of Tainted Skin
+			i(6471),	-- Perfect Deviate Scale
+			applyclassicphase(PHASE_FOUR, i(19767, {	-- Primal Bat Leather
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			applyclassicphase(PHASE_FOUR, i(19768, {	-- Primal Tiger Leather
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			i(12731, {	-- Pristine Hide of the Beast
+				["timeline"] = { "removed 6.0.2" },
+			}),
+			i(15414),	-- Red Dragonscale
+			i(7287),	-- Red Whelp Scale
+			i(8171),	-- Rugged Hide
+			i(8170),	-- Rugged Leather
+			i(2934),	-- Ruined Leather Scraps
+			i(15410),	-- Scale of Onyxia
+			i(8154),	-- Scorpid Scale
+			i(7428),	-- Shadowcat Hide
+			i(20498),	-- Silithid Chitin
+			i(8169),	-- Thick Hide
+			i(4304),	-- Thick Leather
+			i(8368),	-- Thick Wolfhide
+			i(8167),	-- Turtle Scale
+			i(15419),	-- Warbear Leather
+			i(8165),	-- Worn Dragonscale
+		},
+	}),
 	prof(TAILORING, {
 		filter(113, {	-- Bags
 			i(5765),	-- Black Silk Pack
@@ -1536,12 +1684,10 @@ _.Craftables = { tier(CLASSIC_TIER, {
 	}),
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10002, {	-- Classic
-		prof(LEATHERWORKING, {
-				i(8195),	-- Nightscape Cloak	(Pattern never actually went live)
-		}),
-		prof(BLACKSMITHING, {
-			i(2867),	-- Rough Bronze Bracers (crafted by NYI pattern) (prof)
-		}),
+	prof(LEATHERWORKING, {
+		i(8195),	-- Nightscape Cloak	(Pattern never actually went live)
+	}),
+	prof(BLACKSMITHING, {
+		i(2867),	-- Rough Bronze Bracers (crafted by NYI pattern) (prof)
 	}),
 });
