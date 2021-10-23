@@ -143,6 +143,15 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137493),	-- Edge of the First Blade
 				})),
 			}),
+			-- #if AFTER 9.1.5
+			d(24, {	-- Timewalking
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 800 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
+				},
+			}),
+			-- #endif
 		},
 	}),
 })};
