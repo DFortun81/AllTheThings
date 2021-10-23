@@ -15,7 +15,7 @@ _.Zones =
 						}),
 						crit(2, {	-- "Swamp Eye" Story
 							["sourceQuests"] = {
-							--	this criteria may have other requirements.  possibly through 27190, "Cleansing Witch Hill," and/or other Theramore quests
+								27190,	-- Cleansing Witch Hill
 								27247,	-- Captain Vimes (definitely required, this is the quest wowhead has attached to the criteria)
 								27191,	-- Hungry as an Ogre! (probably required, picked up and turned in at the same time)
 								27186,	-- Jarl Needs a Blade (definitely required, this quest procced the achievement for me)
