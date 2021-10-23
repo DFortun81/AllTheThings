@@ -514,28 +514,26 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		}),
 	}),
 	prof(JEWELCRAFTING, {
-		n(HEAD, {
-			i(24123),	-- Circlet of Arcane Might
-			i(24122),	-- Coronet of Verdant Flame
-			i(32776),	-- Crown of the Sea Witch
+		category(868, {	-- Reagents
+			i(31079),	-- Mercurial Adamantite
 		}),
 		filter(51, {	-- Neck
-			i(34360),	-- Amulet of Flowing Life
+			applyclassicphase(TBC_PHASE_FIVE, i(34360)),	-- Amulet of Flowing Life
 			i(24114),	-- Braided Eternium Chain
 			i(24121),	-- Chain of the Twilight Owl
 			i(24117),	-- Embrace of the Dawn
 			i(24116),	-- Eye of the Night
-			i(34358),	-- Hard Khorium Choker
+			applyclassicphase(TBC_PHASE_FIVE, i(34358)),	-- Hard Khorium Choker
 			i(24110),	-- Living Ruby Pendant
-			i(32508),	-- Necklace of the Deep
+			applyclassicphase(TBC_PHASE_TWO, i(32508)),	-- Necklace of the Deep
 			i(24092),	-- Pendant of Frozen Flame
 			i(24097),	-- Pendant of Shadow's End
-			i(34359),	-- Pendant of Sunfire
+			applyclassicphase(TBC_PHASE_FIVE, i(34359)),	-- Pendant of Sunfire
 			i(24093),	-- Pendant of Thawing
 			i(24098),	-- Pendant of the Null Rune
+			i(24095),	-- Pendant of Withering
 			i(24077),	-- Thick Adamantite Necklace
 			i(24106),	-- Thick Felsteel Necklace
-			i(24095),	-- Pendant of Withering
 		}),
 		filter(52, {	-- Finger
 			i(24086),	-- Arcane Khorium Band
@@ -546,31 +544,42 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(24088),	-- Delicate Eternium Ring
 			i(24074),	-- Fel Iron Blood Ring
 			i(24075),	-- Golden Draenite Ring
-			i(34361),	-- Hard Khorium Band
+			applyclassicphase(TBC_PHASE_FIVE, i(34361)),	-- Hard Khorium Band
 			i(24078),	-- Heavy Adamantite Ring
 			i(24087),	-- Heavy Felsteel Ring
 			i(24080),	-- Khorium Band of Frost
 			i(24085),	-- Khorium Band of Leaves
 			i(24079),	-- Khorium Band of Shadows
 			i(24082),	-- Khorium Inferno Band
-			i(34362),	-- Loop of Forged Power
+			applyclassicphase(TBC_PHASE_FIVE, i(34362)),	-- Loop of Forged Power
 			i(30825),	-- Ring of Arcane Shielding
-			i(34363),	-- Ring of Flowing Life
+			applyclassicphase(TBC_PHASE_FIVE, i(34363)),	-- Ring of Flowing Life
 			i(32774),	-- The Black Pearl
 			i(31398),	-- The Frozen Eye
 			i(31399),	-- The Natural Ward
 		}),
-		filter(53, {	-- Trinket
-			i(35700),	-- Figurine - Crimson Serpent
+		category(869, {	-- Crowns
+			i(24123),	-- Circlet of Arcane Might
+			i(24122),	-- Coronet of Verdant Flame
+			applyclassicphase(TBC_PHASE_TWO, i(32776)),	-- Crown of the Sea Witch
+		}),
+		category(866, {	-- Trinkets
+			applyclassicphase(TBC_PHASE_FIVE, i(35700)),	-- Figurine - Crimson Serpent
 			i(24125),	-- Figurine - Dawnstone Crab
-			i(35693),	-- Figurine - Empyrean Tortoise
+			applyclassicphase(TBC_PHASE_FIVE, i(35693)),	-- Figurine - Empyrean Tortoise
 			i(24124),	-- Figurine - Felsteel Boar
-			i(35694),	-- Figurine - Khorium Boar
+			applyclassicphase(TBC_PHASE_FIVE, i(35694)),	-- Figurine - Khorium Boar
 			i(24126),	-- Figurine - Living Ruby Serpent
 			i(24128),	-- Figurine - Nightseye Panther
-			i(35703),	-- Figurine - Seaspray Albatross
-			i(35702),	-- Figurine - Shadowsong Panther
+			applyclassicphase(TBC_PHASE_FIVE, i(35703)),	-- Figurine - Seaspray Albatross
+			applyclassicphase(TBC_PHASE_FIVE, i(35702)),	-- Figurine - Shadowsong Panther
 			i(24127),	-- Figurine - Talasite Owl
+		}),
+		category(867, {	-- Prisms & Statues
+			i(35945),	-- Brilliant Glass
+			applyclassicphase(WRATH_PHASE_ONE, i(45054, {	-- Prismatic Black Diamond
+				["timeline"] = { "added 3.1.0.9626" },
+			})),
 		}),
 	}),
 	prof(LEATHERWORKING, {
