@@ -423,3 +423,8 @@ i(186178, 348770);	-- Vicious War Gorm (A)
 i(186179, 348769);	-- Vicious War Gorm (H)
 i(186000, 352441);	-- Wild Hunt Legsplitter
 i(186495, 353858);	-- Winter Wilderling
+
+-----------------
+-- PATCH 9.1.5 --
+-----------------
+i(187595, 359013);	-- Val'sharah Hippogryph

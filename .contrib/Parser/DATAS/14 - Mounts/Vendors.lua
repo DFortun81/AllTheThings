@@ -545,6 +545,7 @@ _.Mounts =
 		}),
 		i(13322),	-- Unpainted Mechanostrider
 		i(167170),	-- Unshackled Waveray
+		i(187595),	-- Val'sharah Hippogryph
 		i(183801),	-- Vibrant Flutterwing
 		i(8592),	-- Violet Raptor
 		i(161667, {	-- Voldunai Dunescraper

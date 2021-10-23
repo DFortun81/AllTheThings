@@ -64,6 +64,7 @@ _.Toys =
 			i(133511),	-- Gurboggle's Gleaming Bauble
 			i(129952),	-- Hourglass of Eternity
 			i(129926),	-- Mark of the Ashtongue
+			i(187591),	-- Nightborne Guard's Vigilance
 			i(144393),	-- Portable Yak Wash
 			i(133542),	-- Tosselwrench's Mega-Accurate Simulation Viewfinder
 			i(151184),	-- Verdant Throwing Sphere

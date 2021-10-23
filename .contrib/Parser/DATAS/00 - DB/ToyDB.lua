@@ -758,4 +758,9 @@ i(187339);	-- Silver Shardhide Whistle
 i(187184);	-- Vesper of Clarity
 i(187185);	-- Vesper of Faith
 i(187176);	-- Vesper of Harmony
+
+-----------------
+-- PATCH 9.1.5 --
+-----------------
+i(187591);
 end)();
