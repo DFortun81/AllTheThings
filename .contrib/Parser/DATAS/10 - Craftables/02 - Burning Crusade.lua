@@ -486,10 +486,10 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		i(30155),	-- Clam Bar
 		i(31673),	-- Crunchy Serpent
 		i(27662),	-- Feltail Delight
-		i(33052),	-- Fisherman's Feast
+		applyclassicphase(TBC_PHASE_TWO, i(33052)),	-- Fisherman's Feast
 		i(27666),	-- Golden Fish Sticks
 		i(27664),	-- Grilled Mudfish
-		i(33053),	-- Hot Buttered Trout
+		applyclassicphase(TBC_PHASE_TWO, i(33053)),	-- Hot Buttered Trout
 		i(33874),	-- Kibler's Bits
 		i(31672),	-- Mok'Nathal Shortribs
 		i(27665),	-- Poached Bluefish
@@ -498,86 +498,186 @@ _.Craftables = { tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		i(33825),	-- Skullfish Soup
 		i(27667),	-- Spicy Crawdad
 		i(33872),	-- Spicy Hot Talbuk
-		i(33048),	-- Stewed Trout
+		applyclassicphase(TBC_PHASE_TWO, i(33048)),	-- Stewed Trout
 		i(33866),	-- Stormchops
 		i(27660),	-- Talbuk Steak
 		i(27659),	-- Warp Burger
 	}),
 	prof(ENCHANTING, {
-		filter(103, {	-- Illusions
+		applyclassicphase(LEGION_PHASE_ONE, category(705, {	-- Illusions
 			i(138789, {	-- Tome of Illusions: Outland
 				ill(5390),	-- Battlemaster
 				ill(2674),	-- Spellsurge
 				ill(5864),	-- Netherflame
 			}),
+		})),
+		category(697, {	-- Rods
+			i(22462, {	-- Runed Adamantite Rod
+				["timeline"] = { "removed 5.0.4.10000" },
+			}),
+			i(22463, {	-- Runed Eternium Rod
+				["timeline"] = { "removed 5.0.4.10000" },
+			}),
+			i(22461, {	-- Runed Fel Iron Rod
+				["timeline"] = { "removed 5.0.4.10000" },
+			}),
+		}),
+		category(680, {	-- Reagents
+			i(22445),	-- Arcane Dust
+			i(22446),	-- Greater Planar Essence
+			i(22449),	-- Large Prismatic Shard
+			i(22447),	-- Lesser Planar Essence
+			i(22448),	-- Small Prismatic Shard
+			i(22450),	-- Void Crystal
+		}),
+		category(688, {	-- Oils
+			i(22521),	-- Superior Mana Oil
+			i(22522),	-- Superior Wizard Oil
+		}),
+		category(689, {	-- Other
+			i(22460),	-- Prismatic Sphere
+			i(22459),	-- Void Sphere
 		}),
 	}),
 	prof(ENGINEERING, {
-		filter(100, {	-- Mounts
-			i(34060),	-- Flying Machine*
-			i(34061),	-- Turbo-Charged Flying Machine*
+		prof(20219, {	-- Gnomish Engineering
+			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
+			["groups"] = {
+				category(188, {	-- Devices
+					i(23841),	-- Gnomish Flame Turret
+					i(23835),	-- Gnomish Poultryizer
+					i(23825),	-- Nigh-Invulnerability Belt
+					i(30544),	-- Ultrasafe Transporter: Toshley's Station
+				}),
+				category(185, {	-- Goggles
+					i(23829),	-- Gnomish Battle Goggles
+					i(23828),	-- Gnomish Power Goggles
+				}),
+			},
 		}),
-		filter(102, {	-- Toys
-			i(23767),	-- Crashin' Thrashin' Robot*
-			i(30542),	-- Dimensional Ripper - Area 52*
-			i(30544),	-- Ultrasafe Transporter: Toshley's Station*
+		prof(20222, {	-- Goblin Engineering
+			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
+			["groups"] = {
+				category(188, {	-- Devices
+					i(30542),	-- Dimensional Ripper - Area 52
+					i(23836),	-- Goblin Rocket Launcher
+				}),
+				category(185, {	-- Goggles
+					i(23838),	-- Foreman's Enchanted Helmet
+					i(23839),	-- Foreman's Reinforced Helmet
+				}),
+				category(184, {	-- Explosives
+					i(23827),	-- Super Sapper Charge
+					i(23826),	-- The Bigger One
+				}),
+			},
 		}),
-		n(WEAPONS, {
-			-- Guns
-			i(23746),	-- Adamantite Rifle*
-			i(23742),	-- Fel Iron Musket*
-			i(23747),	-- Felsteel Boomstick*
-			i(32756),	-- Gyro-Balanced Khorium Destroyer*
-			i(23748),	-- Ornate Khorium Rifle*
+		-- #if BEFORE 4.0.1
+		category(1, {	-- Bullets
+			applyclassicphase(TBC_PHASE_TWO, i(23773)),	-- Adamantite Shells
+			applyclassicphase(TBC_PHASE_TWO, i(33803)),	-- Adamantite Stinger
+			i(23772),	-- Fel Iron Shells
 		}),
-		n(-318, {	-- Armor
-			-- Head
-			i(34847),	-- Annihilator Holo-Gogs*
-			i(23758),	-- Cogspinner Goggles*
-			i(32478),	-- Deathblow X11 Goggles*
-			i(32494),	-- Destruction Holo-Gogs*
-			i(23838),	-- Foreman's Enchanted Helmet*
-			i(23839),	-- Foreman's Reinforced Helmet*
-			i(32461),	-- Furious Gizmatic Goggles*
-			i(32476),	-- Gadgetstorm Goggles*
-			i(23829),	-- Gnomish Battle Goggles*
-			i(23828),	-- Gnomish Power Goggles*
-			i(34357),	-- Hard Khorium Goggles*
-			i(35182),	-- Hyper-Magnified Moon Specs*
-			i(23763),	-- Hyper-Vision Goggles*
-			i(32472),	-- Justicebringer 2000 Specs*
-			i(35185),	-- Justicebringer 3000 Specs*
-			i(34355),	-- Lightning Etched Specs*
-			i(32475),	-- Living Replicator Specs*
-			i(32480),	-- Magnified Moon Specs*
-			i(34354),	-- Mayhem Projection Goggles*
-			i(23761),	-- Power Amplification Goggles*
-			i(32495),	-- Powerheal 4000 Lens*
-			i(35181),	-- Powerheal 9000 Lens*
-			i(35184),	-- Primal-Attuned Goggles*
-			i(34353),	-- Quad Deathblow X44 Goggles*
-			i(32474),	-- Surestrike Goggles v2.0*
-			i(34356),	-- Surestrike Goggles v3.0*
-			i(32473),	-- Tankatronic Goggles*
-			i(23762),	-- Ultra-Spectropic Detection Goggles*
-			i(32479),	-- Wonderheal XT40 Shades*
-			i(35183),	-- Wonderheal XT68 Shades*
-			-- Waist
-			i(23825),	-- Nigh-Invulnerability Belt*
-			-- Feet
-			i(23824),	-- Rocket Boots Xtreme*
-			i(35581),	-- Rocket Boots Xtreme Lite*
-			-- Trinket
-			i(23835),	-- Gnomish Poultryizer*
-			i(23836),	-- Goblin Rocket Launcher*
+		-- #endif
+		category(750, {	-- Reagents
+			i(23784),	-- Adamantite Frame
+			i(23781),	-- Elemental Blasting Powder
+			i(23782),	-- Fel Iron Casing
+			i(23787),	-- Felsteel Stabilizer
+			i(23783),	-- Handful of Fel Iron Bolts
+			i(23785),	-- Hardened Adamantite Tube
+			i(32423),	-- Icy Blasting Primers
+			i(23786),	-- Khorium Power Core
 		}),
-		filter(113, {	-- Bags
+		category(751, {	-- Explosives
+			i(23737),	-- Adamantite Grenade
+			i(23819),	-- Elemental Seaforium Charge
+			i(23736),	-- Fel Iron Bomb
+			i(32413),	-- Frost Grenade
+		}),
+		category(752, {	-- Goggles
+			applyclassicphase(TBC_PHASE_FIVE, i(34847)),	-- Annihilator Holo-Gogs
+			i(23758),	-- Cogspinner Goggles
+			applyclassicphase(TBC_PHASE_TWO, i(32478)),		-- Deathblow X11 Goggles
+			applyclassicphase(TBC_PHASE_TWO, i(32494)),		-- Destruction Holo-Gogs
+			applyclassicphase(TBC_PHASE_TWO, i(32461)),		-- Furious Gizmatic Goggles
+			applyclassicphase(TBC_PHASE_TWO, i(32476)),		-- Gadgetstorm Goggles
+			applyclassicphase(TBC_PHASE_FIVE, i(34357)),	-- Hard Khorium Goggles
+			applyclassicphase(TBC_PHASE_FIVE, i(35182)),	-- Hyper-Magnified Moon Specs
+			i(23763),	-- Hyper-Vision Goggles
+			applyclassicphase(TBC_PHASE_TWO, i(32472)),		-- Justicebringer 2000 Specs
+			applyclassicphase(TBC_PHASE_FIVE, i(35185)),	-- Justicebringer 3000 Specs
+			applyclassicphase(TBC_PHASE_FIVE, i(34355)),	-- Lightning Etched Specs
+			applyclassicphase(TBC_PHASE_TWO, i(32475)),		-- Living Replicator Specs
+			applyclassicphase(TBC_PHASE_TWO, i(32480)),		-- Magnified Moon Specs
+			applyclassicphase(TBC_PHASE_FIVE, i(34354)),	-- Mayhem Projection Goggles
+			i(23761),	-- Power Amplification Goggles
+			applyclassicphase(TBC_PHASE_TWO, i(32495)),		-- Powerheal 4000 Lens
+			applyclassicphase(TBC_PHASE_FIVE, i(35181)),	-- Powerheal 9000 Lens
+			applyclassicphase(TBC_PHASE_FIVE, i(35184)),	-- Primal-Attuned Goggles
+			applyclassicphase(TBC_PHASE_FIVE, i(34353)),	-- Quad Deathblow X44 Goggles
+			applyclassicphase(TBC_PHASE_TWO, i(32474)),		-- Surestrike Goggles v2.0
+			applyclassicphase(TBC_PHASE_FIVE, i(34356)),	-- Surestrike Goggles v3.0
+			applyclassicphase(TBC_PHASE_TWO, i(32473)),		-- Tankatronic Goggles
+			i(23762),	-- Ultra-Spectropic Detection Goggles
+			applyclassicphase(TBC_PHASE_TWO, i(32479)),		-- Wonderheal XT40 Shades
+			applyclassicphase(TBC_PHASE_FIVE, i(35183)),	-- Wonderheal XT68 Shades
+		}),
+		category(753, {	-- Devices
+			-- #if BEFORE 4.0.1
+			applyclassicphase(TBC_PHASE_TWO, i(20475)),	-- Adamantite Arrow Maker
+			applyclassicphase(TBC_PHASE_TWO, i(34504)),	-- Adamantite Shell Machine
+			-- #endif
+			i(23767),	-- Crashin' Thrashin' Robot
 			i(23774),	-- Fel Iron Toolbox
+			i(34113),	-- Field Repair Bot 110G
+			i(33092),	-- Healing Potion Injector
+			i(33093),	-- Mana Potion Injector
+			i(23824),	-- Rocket Boots Xtreme
+			i(35581),	-- Rocket Boots Xtreme Lite
+			i(23821),	-- Zapthrottle Mote Extractor
+		}),
+		category(754, {	-- Weapons
+			i(23746),	-- Adamantite Rifle
+			i(23742),	-- Fel Iron Musket
+			i(23747),	-- Felsteel Boomstick
+			applyclassicphase(TBC_PHASE_TWO, i(32756)),	-- Gyro-Balanced Khorium Destroyer
+			i(23748),	-- Ornate Khorium Rifle
+		}),
+		category(755, {	-- Scopes
+			i(23764),	-- Adamantite Scope
+			i(23765),	-- Khorium Scope
+			i(23766),	-- Stabilized Eternium Scope
+		}),
+		category(757, {	-- Fireworks
+			i(23771),	-- Green Smoke Flare
+			i(25886),	-- Purple Smoke Flare
+			i(23768),	-- White Smoke Flare
+		}),
+		filter(100, {	-- Mounts
+			i(34060),	-- Flying Machine
+			i(34061),	-- Turbo-Charged Flying Machine
 		}),
 	}),
 	prof(FIRST_AID, {
 		i(21990),	-- Netherweave Bandage
 		i(21991),	-- Heavy Netherweave Bandage
+	}),
+	prof(FISHING, {
+		i(27422),	-- Barbed Gill Trout
+		i(33823),	-- Bloodfin Catfish
+		i(33824),	-- Crescent-Tail Skullfish
+		i(27513),	-- Curious Crate
+		i(27516),	-- Enormous Barbed Gill Trout
+		i(27435),	-- Figluster's Mudfish
+		i(27439),	-- Furious Crawdad
+		i(27438),	-- Golden Darter
+		i(27481),	-- Heavy Supply Crate
+		i(27515),	-- Huge Spotted Feltail
+		i(27437),	-- Icefin Bluefish
+		i(27511),	-- Inscribed Scrollcase
+		i(27425),	-- Spotted Feltail
+		i(27429),	-- Zangarian Sporefish
 	}),
 	prof(HERBALISM, {
 		["description"] = "The following items can be gathered by Herbalists out in the world.",
