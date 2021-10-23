@@ -1675,6 +1675,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 	}),
 	prof(TAILORING, {
 		filter(113, {	-- Bags
+			i(22249),	-- Big Bag of Enchantment
 			i(5765),	-- Black Silk Pack
 			i(14156),	-- Bottomless Bag
 			i(22251),	-- Cenarion Herb Bag
@@ -1691,6 +1692,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10051),	-- Red Mageweave Bag
 			i(5763),	-- Red Woolen Bag
 			i(14046),	-- Runecloth Bag
+			i(22252),	-- Satchel of Cenarius
 			i(4245),	-- Small Silk Pack
 			i(21340),	-- Soul Pouch
 			i(4240),	-- Woolen Bag
