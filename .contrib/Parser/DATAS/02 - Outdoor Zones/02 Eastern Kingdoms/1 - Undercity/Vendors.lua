@@ -264,6 +264,20 @@ _.Zones =
 								{ "c", 515, 75 },	-- 75x Darkmoon Prize Ticket
 							},
 						}),
+						i(187896),	-- Scouting Map: A Stormstout's Guide to Pandaria (TOY!)
+						i(187897),	-- Scouting Map: Cataclysm's Consequences (TOY!)
+						i(187869),	-- Scouting Map: Into the Shadowlands (TOY!)
+						i(187895),	-- Scouting Map: The Dangers of Draenor (TOY!)
+						i(150745, {	-- Scouting Map: The Eastern Kingdoms Campaign (TOY!)
+							["races"] = HORDE_ONLY,
+						}),
+						i(187899),	-- Scouting Map: The Many Curiosities of Outland (TOY!)
+						i(187900),	-- Scouting Map: The Wonders of Kul Tiras and Zandalar (TOY!)
+						i(187898),	-- Scouting Map: True Cost of the Northrend Campaign (TOY!)
+						i(187875),	-- Scouting Map: United Fronts of the Broken Isles (TOY!)
+						i(150744, {	-- Scouting Map: Walking Kalimdor with the Earthmother (TOY!)
+							["races"] = HORDE_ONLY,
+						}),
 						i(122364, {	-- Sharpened Scarlet Kris
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
 						}),
@@ -300,9 +314,6 @@ _.Zones =
 								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 							},
 						}),
-						i(150745, {	-- The Azeroth Campaign (TOY!)
-							["races"] = HORDE_ONLY,
-						}),
 						i(122367, {	-- The Blessed Hammer of Grace
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
 						}),
@@ -330,9 +341,6 @@ _.Zones =
 								{ "c", 241, 25 },	-- 25x Champion's Seal
 								{ "c", 515, 50 },	-- 50x Darkmoon Prize Ticket
 							},
-						}),
-						i(150744, {	-- Walking Kalimdor with the Earthmother (TOY!)
-							["races"] = HORDE_ONLY,
 						}),
 						i(151614, {	-- Weathered Heirloom Armor Casing
 							["cost"] = {

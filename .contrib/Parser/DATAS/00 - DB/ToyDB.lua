@@ -463,7 +463,7 @@ i(45011);	-- Stormwind Banner (Alliance)
 i(144339);	-- Sturdy Love Fool
 i(95568);	-- Sunreaver Beacon (Horde)
 i(37254);	-- Super Simian Sphere
-i(150743);	-- Surviving Kalimdor (Alliance)
+i(150743);	-- Scouting Map: Surviving Kalimdor (A)
 i(139587);	-- Suspicious Crate
 i(52253);	-- Sylvanas' Music Box
 i(163738);	-- Syndicate Mask
@@ -473,7 +473,7 @@ i(116120);	-- Tasty Talador Lunch
 i(130170);	-- Tear of the Green Aspect
 i(136928);	-- Thaumaturgist's Orb
 i(130151);	-- The "Devilsaur" Lunchbox
-i(150745);	-- the Azeroth Campaign (Horde)
+i(150745);	-- Scouting Map: The Eastern Kingdoms Campaign (H)
 i(38578);	-- the Flag of Ownership
 i(80822);	-- the Golden Banana
 i(50471);	-- the Heartbreaker
@@ -492,7 +492,7 @@ i(54437);	-- Tiny Green Ragdoll
 i(163704);	-- Tiny Mechanical Mouse
 i(142497);	-- Tiny Pack
 i(44430);	-- Titanium Seal of Dalaran
-i(150746);	-- To Modernize the Provisioning of Azeroth (Alliance)
+i(150746);	-- Scouting Map: Modern Provisioning of the Eastern Kingdoms (A)
 i(63141);	-- Tol Barad Searchlight (Alliance)
 i(64997);	-- Tol Barad Searchlight (Horde)
 i(142542);	-- Tome of Town Portal
@@ -532,7 +532,7 @@ i(136937);	-- Vol'jin's Serpent Totem
 i(69775);	-- Vrykul Drinking Horn
 i(129367);	-- Vrykul Toy Boat Kit
 i(163565);	-- Vulpera Scrapper's Armor
-i(150744);	-- Walking Kalimdor with the Earthmother (Horde)
+i(150744);	-- Scouting Map: Walking Kalimdor with the Earthmother (H)
 i(143534);	-- Wand of Simulated Life
 i(69215);	-- War Party Hitching Post
 i(119219);	-- Warlord's Flag of Victory
@@ -762,5 +762,13 @@ i(187176);	-- Vesper of Harmony
 -----------------
 -- PATCH 9.1.5 --
 -----------------
-i(187591);
+i(187591);	-- Nightborne Guard's Vigilance
+i(187896);	-- Scouting Map: A Stormstout's Guide to Pandaria
+i(187897);	-- Scouting Map: Cataclysm's Consequences
+i(187869);	-- Scouting Map: Into the Shadowlands
+i(187895);	-- Scouting Map: The Dangers of Draenor
+i(187899);	-- Scouting Map: The Many Curiosities of Outland
+i(187900);	-- Scouting Map: The Wonders of Kul Tiras and Zandalar
+i(187898);	-- Scouting Map: True Cost of the Northrend Campaign
+i(187875);	-- Scouting Map: United Fronts of the Broken Isles 
 end)();
