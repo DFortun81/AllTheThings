@@ -1505,7 +1505,6 @@ app.L = {
 
 
 		[-10025] = app.asset("Event_dmf"),											-- Darkmoon Faire
-		[-10026] = "Interface\\Icons\\spell_holy_fistofjustice",					-- Brawler's Guild
 		[-10027] = "Interface\\Icons\\Paladin_Protection",							-- Collect
 		[-10028] = "Interface\\Icons\\Paladin_Protection",							-- Battle
 		[-10029] = "Interface\\Icons\\Paladin_Protection",							-- Level
@@ -2257,7 +2256,6 @@ app.L = {
 
 
 		[-10025] = select(1,GetCategoryInfo(15101)),							-- Darkmoon Faire
-		[-10026] = select(1,GetCategoryInfo(15282)),							-- Brawler's Guild
 		[-10027] = select(1,GetCategoryInfo(15118)),							-- Collect
 		[-10028] = select(1,GetCategoryInfo(15119)),							-- Battle
 		[-10029] = select(1,GetCategoryInfo(15120)),							-- Level

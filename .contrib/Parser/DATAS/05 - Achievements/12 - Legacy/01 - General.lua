@@ -29,6 +29,28 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, h(ach(9172))),	-- You Are Not Your $#*@! Legplates (Season 2)
 				un(REMOVED_FROM_GAME, h(ach(7948))),	-- The First Rule of Brawler's Guild (Season 1 or 2)
 			}))),
+			-- 9.1.5 Moved
+			un(REMOVED_FROM_GAME, ach(11570)),		-- Educated Guesser
+			un(REMOVED_FROM_GAME, ach(13194)),		-- I Am Thrall's Complete Lack Of Surprise(BFA)
+			un(REMOVED_FROM_GAME, a(ach(13191, {	-- Brawler for Azeroth (Alliance)(BFA)
+				un(REMOVED_FROM_GAME, title(209)),	-- Brawler
+				un(REMOVED_FROM_GAME, ach(13189, {	-- The Second Rule of Brawler's Guild(BFA)
+					un(REMOVED_FROM_GAME, i(93195)),-- Brawler's Pass
+				})),
+				un(REMOVED_FROM_GAME, ach(13186)),	-- You Are Not Your $#*@! Legplates(BFA)
+				un(REMOVED_FROM_GAME, ach(11558)),	-- The First Rule of Brawler's Guild
+			}))),
+			un(REMOVED_FROM_GAME, h(ach(13192, {	-- Brawler for Azeroth (Horde)(BFA)
+				un(REMOVED_FROM_GAME, title(209)),	-- Brawler
+				un(REMOVED_FROM_GAME, ach(13190, {	-- The Second Rule of Brawler's Guild(BFA)
+					un(REMOVED_FROM_GAME, i(93228)),-- Brawler's Pass
+				})),
+				un(REMOVED_FROM_GAME, ach(13188)),	-- You Are Not Your $#*@! Legplates(BFA)
+				un(REMOVED_FROM_GAME, ach(11559)),	-- The First Rule of Brawler's Guild
+			}))),
+			un(REMOVED_FROM_GAME, ach(11573)),		-- Rumble Club
+			--
+			un(REMOVED_FROM_GAME, ach(11567)),		-- You Are Not The Contents Of Your Wallet
 			un(REMOVED_FROM_GAME, ach(9640)),		-- Chapter I: Call of the Archmage
 			un(REMOVED_FROM_GAME, ach(7533)),		-- Chapter I: Trial of the Black Prince
 			un(REMOVED_FROM_GAME, ach(9641)),		-- Chapter II: Gul'dan Strikes Back

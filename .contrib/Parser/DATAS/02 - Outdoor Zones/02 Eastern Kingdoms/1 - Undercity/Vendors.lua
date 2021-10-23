@@ -167,6 +167,16 @@ _.Zones =
 						i(140773),	-- Eagletalon Spear
 						i(122663),	-- Eternal Amulet of the Redeemed
 						i(122667),	-- Eternal Emberfury Talisman
+						i(187997, {	-- Eternal Heirloom Armor Casing
+							["cost"] = {
+								{ "g", 50000000 },		-- 5000g
+							},
+						}),
+						i(187998, {	-- Eternal Heirloom Scabbard
+							["cost"] = {
+								{ "g", 75000000 },		-- 7500g
+							},
+						}),
 						i(122664),	-- Eternal Horizon Choker
 						i(122662),	-- Eternal Talisman of Evasion
 						i(122668),	-- Eternal Will of the Martyr
