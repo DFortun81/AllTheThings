@@ -566,7 +566,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(5474),	-- Roasted Kodo Meat
 			applyclassicphase(TBC_PHASE_ONE, i(24105)),	-- Roasted Moongraze Tenderloin
 			i(4594),	-- Rockscale Cod
-			applyclassicphase(PHASE_ONE_DIRE_MAUL, i(18254)),	-- Runn Tum Tuber Surprise
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18254)),	-- Runn Tum Tuber Surprise
 			i(21217),	-- Sagefish Delight
 			i(5473),	-- Scorpid Surprise
 			i(1017),	-- Seasoned Wolf Kabob
