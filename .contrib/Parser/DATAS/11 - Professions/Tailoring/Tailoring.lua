@@ -90,7 +90,7 @@ profession(TAILORING, {
 					["name"] = "Bolt of Woolen Cloth",
 					["recipeID"] = 2964
 				},
-				applyclassicphase(PHASE_ONE_DIRE_MAUL, {
+				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Gordok Ogre Suit",
 					["timeline"] = { "removed 4.0.3.10000" },
 					["recipeID"] = 22813
@@ -595,7 +595,7 @@ profession(TAILORING, {
 					["name"] = "Azure Silk Belt",
 					["recipeID"] = 8766
 				},
-				applyclassicphase(PHASE_ONE_DIRE_MAUL, {
+				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Belt of the Archmage",
 					["recipeID"] = 22866,
 				}),
@@ -665,7 +665,7 @@ profession(TAILORING, {
 					["name"] = "Dreamweave Gloves",
 					["recipeID"] = 12067
 				},
-				applyclassicphase(PHASE_ONE_DIRE_MAUL, {
+				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Felcloth Gloves",
 					["recipeID"] = 22867,
 				}),
@@ -706,11 +706,11 @@ profession(TAILORING, {
 					["name"] = "Heavy Woolen Gloves",
 					["recipeID"] = 3843
 				},
-				applyclassicphase(PHASE_ONE_DIRE_MAUL, {
+				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Inferno Gloves",
 					["recipeID"] = 22868,
 				}),
-				applyclassicphase(PHASE_ONE_DIRE_MAUL, {
+				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Mooncloth Gloves",
 					["recipeID"] = 22869,
 				}),
@@ -944,7 +944,7 @@ profession(TAILORING, {
 					["name"] = "Cloak of Fire",
 					["recipeID"] = 18422
 				},
-				applyclassicphase(PHASE_ONE_DIRE_MAUL, {
+				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Cloak of Warding",
 					["recipeID"] = 22870,
 				}),
