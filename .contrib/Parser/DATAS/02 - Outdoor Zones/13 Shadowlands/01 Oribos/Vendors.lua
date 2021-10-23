@@ -13,6 +13,8 @@ _.Zones =
 						i(180970, {	-- Teregeer Crystal
 							["description"] = "Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r.",
 						}),
+						i(186684),	-- Memories of Brigther Times
+						i(188152),	-- Gateway Control Shard
 					},
 				}),
 				n(176064, {	-- Adjutant Mikaros <Ascended Quartermaster>
@@ -84,6 +86,76 @@ _.Zones =
 								["cost"] = { { "c", 1816, 2000 } },
 							}),
 						})),
+					},
+				}),
+				n(182864, {	-- Au'Dara
+					["description"] = "Next to the flightmaster",
+					["coord"] = { 59.7, 70.6, ORIBOS },
+					["g"] = {
+						i(188198, {	-- Travlers Anima Cache
+							["description"] = "This item allow you to transfer anima between characters in a one-to-one ratio.",
+							["cost"] = {
+								{ "c", 1813, 1000 },	-- Anima
+							},
+							["g"] = {
+								currency(1813),	-- 1000xAnima
+							},
+						}),
+						i(188167, {	-- Broker Mark of Distinction
+							["cost"] = {
+								{ "g", 5000000 },	-- 500 gold
+							},
+						}),
+						i(187997, {	-- Eternal Heirloom Armor Casing
+							["cost"] = {
+								{ "g", 50000000 },		-- 5000g
+							},
+						}),
+						i(187998, {	-- Eternal Heirloom Scabbard
+							["cost"] = {
+								{ "g", 75000000 },		-- 7500g
+							},
+						}),
+						i(187869),	-- Scouting Map: Into the Shadowlands (TOY!)
+						i(188673),	-- Timebound Runimations
+						i(188174, {	-- Unchained Equipment Cache
+							["cost"] = {
+								{ "c", 1602, 375 },	-- 375xConquest
+							},
+							["sym"] = {
+								{"select", "headerID", -10100 },		-- Select Shadowlands Header
+								{"pop"},								-- Discard the Header and acquire all of the children.
+								{"where", "headerID", -694 },			-- Unchained Gladiator: Shadowlands Season 2
+								{"pop"},								-- Discard the Header and acquire all of the children.
+								{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
+								{"pop"},								-- Discard the Header and acquire all of the children.
+							},
+						}),
+						i(188173, {	-- Valorous Equipment Cache
+							["cost"] = {
+								{ "c", 1191, 500 },	-- 500xValor
+							},
+							["sym"] = {
+								-- Dungeons
+								{"select", "instanceID", 1188},			-- De Other Side
+								{"select", "instanceID", 1185},			-- Halls of Atonement
+								{"select", "instanceID", 1184},			-- Mists of Tirna Scithe
+								{"select", "instanceID", 1182},			-- Necrotic Wake
+								{"select", "instanceID", 1183},			-- Plaguefall
+								{"select", "instanceID", 1189},			-- Sanguine Depths
+								{"select", "instanceID", 1186},			-- Spires of Ascension
+								{"select", "instanceID", 1194},			-- Tazavesh, the Veiled Market
+								{"select", "instanceID", 1187},			-- Theater of Pain
+								{"select", "instanceID", 1188},			-- De Other Side
+								
+								{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+								{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
+								{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+								{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+								{"is", "itemID"},						-- Only Items!
+								{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+							},
+						}),
 					},
 				}),
 				n(176067, {	-- Dar Vattish <Undying Army Quartermaster>

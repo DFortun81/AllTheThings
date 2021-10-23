@@ -926,6 +926,17 @@ _.Zones =
 					["provider"] = { "n", 178908 },	-- Al'dalil
 					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
 				}),
+				-- PTR 9.1.5
+				q(64970, {	-- Timeworn Keystone: The Broken Isle
+					["provider"] = { "n", 178804 },	-- Ta'hsup
+					["coord"] = { 65.2, 35.1, ORIBOS },
+					["repeatable"] = true,
+				}),
+				q(64709, {	-- A Fel Path Through Time
+					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
+					["coord"] = { 65, 32.7, ORIBOS },
+					["repeatable"] = true,
+				}),
 			}),
 		}),
 	}),
