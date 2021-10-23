@@ -1232,35 +1232,8 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(43654),	-- Tome of the Dawn
 		}),
 	}),
+	-- #if AFTER TBC
 	prof(JEWELCRAFTING, {
-		filter(34, {	-- Fist Weapons
-			i(20954),	-- Heavy Iron Knuckles
-		}),
-		n(HEAD, {
-			i(21774),	-- Emerald Crown of Destruction
-			i(20832),	-- Moonsoul Crown
-			i(20969),	-- Ruby Crown of Restoration
-		}),
-		filter(51, {	-- Neck
-			i(20830),	-- Amulet of the Moon
-			i(45627),	-- Amulet of Truesight
-			i(21755),	-- Aquamarine Pendant of the Warrior
-			i(20909),	-- Barbaric Iron Collar
-			i(30419),	-- Brilliant Necklace
-			i(31154),	-- Bronze Torc
-			i(20967),	-- Citrine Pendant of Golden Healing
-			i(20831),	-- Heavy Golden Necklace of Battle
-			i(20966),	-- Jade Pendant of Blasting
-			i(21791),	-- Living Emerald Pendant
-			i(25438),	-- Malachite Pendant
-			i(21792),	-- Necklace of the Diamond Tower
-			i(21766),	-- Opal Necklace of Impact
-			i(21934),	-- Ornate Tigerseye Necklace
-			i(20950),	-- Pendant of the Agate Shield
-			i(21764),	-- Ruby Pendant of Fire
-			i(21790),	-- Sapphire Pendant of Winter Night
-			i(21933),	-- Thick Bronze Necklace
-		}),
 		filter(52, {	-- Finger
 			i(20964),	-- Aquamarine Signet
 			i(20958),	-- Blazing Citrine Ring
@@ -1297,6 +1270,39 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(20833),	-- Wicked Moonstone Ring
 			i(21931),	-- Woven Copper Ring
 		}),
+		filter(51, {	-- Neck
+			i(20830),	-- Amulet of the Moon
+			applyclassicphase(WRATH_PHASE_ONE, i(45627, {	-- Amulet of Truesight
+				["timeline"] = { "added 3.1.0.9614" },
+			})),
+			i(21755),	-- Aquamarine Pendant of the Warrior
+			i(20909),	-- Barbaric Iron Collar
+			i(30419),	-- Brilliant Necklace
+			i(31154),	-- Bronze Torc
+			i(20967),	-- Citrine Pendant of Golden Healing
+			i(20831),	-- Heavy Golden Necklace of Battle
+			i(20966),	-- Jade Pendant of Blasting
+			i(21791),	-- Living Emerald Pendant
+			i(25438),	-- Malachite Pendant
+			i(21792),	-- Necklace of the Diamond Tower
+			i(21766),	-- Opal Necklace of Impact
+			i(21934),	-- Ornate Tigerseye Necklace
+			i(20950),	-- Pendant of the Agate Shield
+			i(21764),	-- Ruby Pendant of Fire
+			i(21790),	-- Sapphire Pendant of Winter Night
+			i(21933),	-- Thick Bronze Necklace
+		}),
+		category(168, {	-- Materials
+			i(20817),	-- Bronze Setting
+			i(20816),	-- Delicate Copper Wire
+			i(20963),	-- Mithril Filigree
+			i(21752),	-- Thorium Setting
+		}),
+		category(167, {	-- Crowns
+			i(21774),	-- Emerald Crown of Destruction
+			i(20832),	-- Moonsoul Crown
+			i(20969),	-- Ruby Crown of Restoration
+		}),
 		filter(53, {	-- Trinket
 			i(21784),	-- Figurine - Black Diamond Crab
 			i(21758),	-- Figurine - Black Pearl Panther
@@ -1308,7 +1314,18 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(21763),	-- Figurine - Truesilver Boar
 			i(21760),	-- Figurine - Truesilver Crab
 		}),
+		filter(34, {	-- Fist Weapons
+			i(20954),	-- Heavy Iron Knuckles
+		}),
+		filter(50, {	-- Miscellaneous
+			i(25880),	-- Coarse Stone Statue
+			i(25883),	-- Dense Stone Statue
+			i(25881),	-- Heavy Stone Statue
+			i(25498),	-- Rough Stone Statue
+			i(25882),	-- Solid Stone Statue
+		}),
 	}),
+	-- #endif
 	prof(LEATHERWORKING, {
 		filter(113, {	-- Bags
 			un(REMOVED_FROM_GAME, i(7372)),	-- Heavy Leather Ammo Pouch
