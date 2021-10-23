@@ -672,89 +672,267 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		})),
 	}),
 	prof(ENGINEERING, {
-		filter(200, {	-- Recipes
-			i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
-				["description"] = "This recipe is crafted by Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
-			}),
-			i(10713, {	-- Plans: Inlaid Mithril Cylinder
-				["description"] = "This recipe is crafted by Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
-			}),
+		prof(20219, {	-- Gnomish Engineering
+			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
+			["groups"] = {
+				-- #if BEFORE WRATH
+				filter(BATTLE_PETS, {
+					i(11826, {	-- Lil' Smoky
+						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required, until Wrath)
+					}),
+				}),
+				-- #endif
+				category(188, {	-- Devices
+					i(18645),	-- Gnomish Alarm-o-Bot
+					i(10725, {	-- Gnomish Battle Chicken
+						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required)
+					}),
+					i(10645, {	-- Gnomish Death Ray
+						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required)
+					}),
+					i(10721),	-- Gnomish Harm Prevention Belt
+					i(10726),	-- Gnomish Mind Control Cap
+					i(10720),	-- Gnomish Net-o-Matic Projector
+					i(10724),	-- Gnomish Rocket Boots
+					i(10716),	-- Gnomish Shrink Ray
+				}),
+				category(185, {	-- Goggles
+					i(10545, {	-- Gnomish Goggles
+						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required)
+					}),
+				}),
+				category(183, {	-- Parts
+					i(10713, {	-- Plans: Inlaid Mithril Cylinder
+						["description"] = "This recipe is crafted by Gnomish Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Gnomish Engineer to craft it for you.",
+					}),
+				}),
+				filter(102, {	-- Toys
+					i(18986),	-- Ultrasafe Transporter: Gadgetzan
+					i(18660),	-- World Enlarger
+				}),
+			},
+		}),
+		prof(20222, {	-- Goblin Engineering
+			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
+			["groups"] = {
+				-- #if BEFORE WRATH
+				filter(BATTLE_PETS, {
+					i(11825, {	-- Pet Bombling
+						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required, until Wrath)
+					}),
+				}),
+				-- #endif
+				category(188, {	-- Devices
+					i(10543, {	-- Goblin Construction Helmet
+						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
+					}),
+					i(18587),	-- Goblin Jumper Cables XL
+					i(10542, {	-- Goblin Mining Helmet
+						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
+					}),
+					i(10588),	-- Goblin Rocket Helmet
+				}),
+				category(184, {	-- Explosives
+					i(10587, {	-- Goblin Bomb Dispenser
+						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
+					}),
+					i(10727, {	-- Goblin Dragon Gun
+						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
+					}),
+					i(10577),	-- Goblin Mortar
+					i(10646),	-- Goblin Sapper Charge
+					i(10586),	-- The Big One
+				}),
+				category(183, {	-- Parts
+					i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
+						["description"] = "This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",
+					}),
+				}),
+				filter(102, {	-- Toys
+					i(18984),	-- Dimensional Ripper - Everlook
+				}),
+			},
 		}),
 		filter(BATTLE_PETS, {
 			i(15996),	-- Lifelike Mechanical Toad*
-			i(11826),	-- Lil' Smoky*
+			-- #if AFTER WRATH
+			i(11826),	-- Lil' Smoky
+			-- #endif
 			i(4401),	-- Mechanical Squirrel Box*
-			i(11825),	-- Pet Bombling*
+			-- #if AFTER WRATH
+			i(11825),	-- Pet Bombling
+			-- #endif
 			i(21277),	-- Tranquil Mechanical Yeti*
 		}),
-		filter(102, {	-- Toys
-			i(18984),	-- Dimensional Ripper - Everlook*
-			i(17716),	-- Snowmaster 9000*
-			i(18986),	-- Ultrasafe Transporter: Gadgetzan*
-			i(18660),	-- World Enlarger*
+		-- #if BEFORE 4.0.1
+		category(1, {	-- Bullets
+			i(8068),	-- Crafted Heavy Shot
+			i(8067),	-- Crafted Light Shot
+			i(8069),	-- Crafted Solid Shot
+			i(10512),	-- Hi-Impact Mithril Slugs
+			i(10513),	-- Mithril Gyro-Shot
+			i(15997),	-- Thorium Shells
 		}),
-		n(WEAPONS, {
-			-- Guns
-			i(18282),	-- Core Marksman Rifle*
-			i(16004),	-- Dark Iron Rifle*
-			i(4369),	-- Deadly Blunderbuss*
-			un(REMOVED_FROM_GAME, i(16007)),	-- Flawless Arcanite Rifle
-			i(4372),	-- Lovingly Crafted Boomstick*
-			i(10508),	-- Mithril Blunderbuss*
-			i(10510),	-- Mithril Heavy-Bore Rifle*
-			i(4383),	-- Moonsight Rifle*
-			i(4362),	-- Rough Boomstick*
-			i(4379),	-- Silver-Plated Shotgun*
-			i(15995),	-- Thorium Rifle*
+		-- #endif
+		category(188, {	-- Devices
+			i(4392),	-- Advanced Target Dummy
+			i(6533),	-- Aquadynamic Fish Attractor
+			i(16022),	-- Arcanite Dragonling
+			i(4391),	-- Compact Harvest Reaper Kit
+			i(4388),	-- Discombobulator Ray
+			i(18232),	-- Field Repair Bot 74A
+			i(4376),	-- Flame Deflector
+			i(4397),	-- Gnomish Cloaking Device
+			i(7506),	-- Gnomish Universal Remote
+			i(7148),	-- Goblin Jumper Cables
+			i(7189),	-- Goblin Rocket Boots
+			i(18634),	-- Gyrofreeze Ice Reflector
+			i(45631, {	-- High-Powered Flashlight
+				["timeline"] = { "added 3.1.0.9614" },
+			}),
+			i(18638, {	-- Hyper-Radiant Flame Reflector
+				["timeline"] = { "removed 6.0.2" },
+			}),
+			i(4386),	-- Ice Deflector
+			i(18637),	-- Major Recombobulator
+			i(16023),	-- Masterwork Target Dummy
+			i(4396),	-- Mechanical Dragonling
+			i(11590),	-- Mechanical Repair Kit
+			i(4381),	-- Minor Recombobulator
+			i(10576),	-- Mithril Mechanical Dragonling
+			i(5507),	-- Ornate Spyglass
+			i(10518),	-- Parachute Cloak
+			i(6712),	-- Practice Lock
+			i(15846),	-- Salt Shaker
+			applyclassicphase(TBC_PHASE_ONE, i(22728)),	-- Steam Tonk Controller
+			i(4366),	-- Target Dummy
+			i(18639),	-- Ultra-Flash Shadow Reflector
+			i(16009),	-- Voice Amplification Modulator
 		}),
-		n(-318, {	-- Armor
-			-- Head
-			un(REMOVED_FROM_GAME, i(19999)),	-- Bloodvine Goggles
-			un(REMOVED_FROM_GAME, i(19998)),	-- Bloodvine Lens
-			i(10499),	-- Bright-Eye Goggles*
-			i(10501),	-- Catseye Ultra Goggles*
-			i(4393),	-- Craftsman's Monocle*
-			i(10506),	-- Deepdive Helmet*
-			i(10500),	-- Fire Goggles*
-			i(4368),	-- Flying Tiger Goggles*
-			i(10545),	-- Gnomish Goggles*
-			i(10726),	-- Gnomish Mind Control Cap*
-			i(10543),	-- Goblin Construction Helmet*
-			i(10542),	-- Goblin Mining Helmet*
-			i(10588),	-- Goblin Rocket Helmet*
-			i(10504),	-- Green Lens*
-			i(4385),	-- Green Tinted Goggles*
-			i(16008),	-- Master Engineer's Goggles*
-			i(10503),	-- Rose Colored Goggles*
-			i(4373),	-- Shadow Goggles*
-			i(10502),	-- Spellpower Goggles Xtreme*
-			i(15999),	-- Spellpower Goggles Xtreme Plus*
-			-- Neck
-			i(16009),	-- Voice Amplification Modulator*
-			-- Back
-			i(10518),	-- Parachute Cloak*
-			-- Waist
-			i(10721),	-- Gnomish Harm Prevention Belt*
-			-- Feet
-			i(10724),	-- Gnomish Rocket Boots*
-			i(7189),	-- Goblin Rocket Boots*
-			-- Shields
+		category(184, {	-- Explosives
+			i(16040),	-- Arcane Bomb
+			i(4380),	-- Big Bronze Bomb
+			i(4394),	-- Big Iron Bomb
+			i(4365),	-- Coarse Dynamite
+			i(16005),	-- Dark Iron Bomb
+			i(18641),	-- Dense Dynamite
+			i(4384),	-- Explosive Sheep
+			i(6714),	-- EZ-Thro Dynamite
+			i(18588),	-- EZ-Thro Dynamite II
+			i(4852),	-- Flash Bomb
+			i(4395),	-- Goblin Land Mine
+			i(4378),	-- Heavy Dynamite
+			i(10562),	-- Hi-Explosive Bomb
+			i(4390),	-- Iron Grenade
+			i(4370),	-- Large Copper Bomb
+			i(4398),	-- Large Seaforium Charge
+			i(10514),	-- Mithril Frag Bomb
+			i(4403),	-- Portable Bronze Mortar
+			i(18594),	-- Powerful Seaforium Charge
+			i(4360),	-- Rough Copper Bomb
+			i(4358),	-- Rough Dynamite
+			i(4374),	-- Small Bronze Bomb
+			i(4367),	-- Small Seaforium Charge
+			i(10507),	-- Solid Dynamite
+			i(15993),	-- Thorium Grenade
+		}),
+		category(194, {	-- Fireworks
+			i(9312),	-- Blue Firework
+			i(21571),	-- Blue Rocket Cluster
+			i(21570),	-- Cluster Launcher
+			i(21569),	-- Firework Launcher
+			i(9313),	-- Green Firework
+			i(21574),	-- Green Rocket Cluster
+			i(21589),	-- Large Blue Rocket
+			i(21714),	-- Large Blue Rocket Cluster
+			i(21590),	-- Large Green Rocket
+			i(21716),	-- Large Green Rocket Cluster
+			i(21592),	-- Large Red Rocket
+			i(21718),	-- Large Red Rocket Cluster
+			i(9318),	-- Red Firework
+			i(21576),	-- Red Rocket Cluster
+			i(21558),	-- Small Blue Rocket
+			i(21559),	-- Small Green Rocket
+			i(21557),	-- Small Red Rocket
+			i(19026),	-- Snake Burst Firework
+		}),
+		category(185, {	-- Goggles
+			applyclassicphase(PHASE_FOUR, i(19999, {	-- Bloodvine Goggles
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			applyclassicphase(PHASE_FOUR, i(19998, {	-- Bloodvine Lens
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			i(10499),	-- Bright-Eye Goggles
+			i(10501),	-- Catseye Ultra Goggles
+			i(4393),	-- Craftsman's Monocle
+			i(10506),	-- Deepdive Helmet
+			i(10500),	-- Fire Goggles
+			i(4368),	-- Flying Tiger Goggles
+			i(10504),	-- Green Lens
+			i(4385),	-- Green Tinted Goggles
+			i(16008),	-- Master Engineer's Goggles
+			i(10503),	-- Rose Colored Goggles
+			i(4373),	-- Shadow Goggles
+			i(10502),	-- Spellpower Goggles Xtreme
+			i(15999),	-- Spellpower Goggles Xtreme Plus
+		}),
+		category(189, {	-- Guns
+			i(18282),	-- Core Marksman Rifle
+			i(16004),	-- Dark Iron Rifle
+			i(4369),	-- Deadly Blunderbuss
+			i(16007, {	-- Flawless Arcanite Rifle
+				["timeline"] = { "removed 4.0.3" },
+			}),
+			i(4372),	-- Lovingly Crafted Boomstick
+			i(10508),	-- Mithril Blunderbuss
+			i(10510),	-- Mithril Heavy-Bore Rifle
+			i(4383),	-- Moonsight Rifle
+			i(4362),	-- Rough Boomstick
+			i(4379),	-- Silver-Plated Shotgun
+			i(15995),	-- Thorium Rifle
+		}),
+		category(183, {	-- Parts
+			i(4382),	-- Bronze Framework
+			i(4371),	-- Bronze Tube
+			i(4364),	-- Coarse Blasting Powder
+			i(4363),	-- Copper Modulator
+			i(4361),	-- Copper Tube
+			i(16006),	-- Delicate Arcanite Converter
+			i(15992),	-- Dense Blasting Powder
+			i(10558),	-- Gold Power Core
+			i(4389),	-- Gyrochronatom
+			i(4359),	-- Handful of Copper Bolts
+			i(4377),	-- Heavy Blasting Powder
+			i(4387),	-- Iron Strut
+			i(10561),	-- Mithril Casing
+			i(10559),	-- Mithril Tube
+			i(4357),	-- Rough Blasting Powder
+			i(4404),	-- Silver Contact
+			i(10505),	-- Solid Blasting Powder
+			i(16000),	-- Thorium Tube
+			i(15994),	-- Thorium Widget
+			i(18631),	-- Truesilver Transformer
+			i(10560),	-- Unstable Trigger
+			i(4375),	-- Whirring Bronze Gizmo
+		}),
+		category(190, {	-- Scopes
+			i(4407),	-- Accurate Scope
+			i(18283),	-- Biznicks 247x128 Accurascope
+			i(4405),	-- Crude Scope
+			i(10546),	-- Deadly Scope
+			i(10548),	-- Sniper Scope
+			i(4406),	-- Standard Scope
+		}),
+		filter(8, {		-- Shields
 			i(18168),	-- Force Reactive Disk*
-			-- Trinket
-			i(16022),	-- Arcanite Dragonling*
-			i(4397),	-- Gnomish Cloaking Device*
-			i(10720),	-- Gnomish Net-o-Matic Projector*
-			i(10716),	-- Gnomish Shrink Ray*
-			i(7506),	-- Gnomish Universal Remote*
-			i(10577),	-- Goblin Mortar*
-			i(18634),	-- Gyrofreeze Ice Reflector*
-			i(45631),	-- High-Powered Flashlight*
-			un(REMOVED_FROM_GAME, i(18638)),	-- Hyper-Radiant Flame Reflector
-			i(18637),	-- Major Recombobulator*
-			i(4396),	-- Mechanical Dragonling*
-			i(4381),	-- Minor Recombobulator*
-			i(10576),	-- Mithril Mechanical Dragonling*
-			i(18639),	-- Ultra-Flash Shadow Reflector*
+		}),
+		category(191, {	-- Tools
+			i(6219),	-- Arclight Spanner
+			i(10498),	-- Gyromatic Micro-Adjustor
+		}),
+		filter(102, {	-- Toys
+			i(17716),	-- Snowmaster 9000
 		}),
 	}),
 	prof(FISHING, {
