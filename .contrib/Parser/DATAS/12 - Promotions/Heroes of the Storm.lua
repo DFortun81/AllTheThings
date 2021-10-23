@@ -8,7 +8,7 @@ _.Promotions =
 		["timeline"] = { "added 6.0.1.18711" },
 		["groups"] = {
 			ach(9926),	-- Hero of the Storm
-			i(118518),	-- Graves
+			p(1639),	-- Graves
 			n(REWARDS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 				["description"] = "If you won 15 games of Heroes of the Storm, you received the following rewards.\n\nSadly, this is no longer available.",
 				["timeline"] = { "added 7.2.0.23801" },

@@ -2386,13 +2386,15 @@ app.L = {
 		[9] = {3, "|CFFFF0000The original source of obtaining this has been removed and is now only available via the Black Market Auction House.|r", "Black Market AH [BMAH]"},
 		[10] = {3, "|CFFFF0000Originally obtained via a TCG card that is no longer in print, but may still be available via the Black Market, In-Game, or Real Life Auction House.|r", "Trading Card Game [TCG]"},
 		[11] = {3, "|CFFFF0000This is no longer available unless you know someone that has access to the items used to summon the boss.|r", "Requires Summoning Items"},
-		[13] = {1, "|CFFFF0000Your followers are too high and the mission for the cache will no longer spawn.|r", "Legacy Cache"},
+		-- [13] = {1, "|CFFFF0000Your followers are too high and the mission for the cache will no longer spawn.|r", "Legacy Cache"}, Comment: Didnt find this filter used anywhere.
 		[14] = {3, "|CFFFF0000This can no longer be purchased or unlocked as Transmog unless you have the required PvP Title, required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator"},
 		[15] = {1, "|CFFFF0000This cannot be permanently learned or used for transmog.|r", "Unlearnable"},
 		[35] = {3, "|CFFFF0000This is locked behind a paywall, such as the In-Game Shop, another Blizzard Product, or the Recruit-A-Friend Service.|r", "Blizzard Balance"},
-		[36] = {1, "|CFFFF0000This was only obtainable during the WoW Anniversary when it was active and is no longer available.|r", "WoW Anniversary [Removed]"},	-- TODO: Remove.
+		-- [36] = {1, "|CFFFF0000This was only obtainable during the WoW Anniversary when it was active and is no longer available.|r", "WoW Anniversary [Removed]"}, Not used in Retail.
 		[38] = {1, "|CFFFF0000This is only available to players that completed the Legendary Cloak quest chain during Mists of Pandaria or via the BMAH.|r", "Ordos - Legendary Cloak"},
+		-- #if BEFORE BFA
 		--[41] = {1, "|CFFFF0000This is only available to players that completed the associated Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances"},
+		-- #endif
 		[45] = {1, "|CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nHouse of Nobles Cape/Gurubashi Empire Greatcloak (both BFA Emissary Rewards) & Ogom the Mangler\nare currently broken and need to be fixed.|r", "Broken Loot"},
 
 		-- Seasonal Filters
