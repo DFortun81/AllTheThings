@@ -1014,6 +1014,7 @@ select(2, ...).ObjectNames = {
 	[243798] = "A Steamy Jewelry Box",
 	[243899] = "Broken Ley Flame Burner",
 	[243911] = "Snow Mound",
+	[244447] = "White Murloc Egg",
 	[244453] = "Cullen's Scouting Report",
 	[244473] = "Thunder Totem Stolen Goods",
 	[244494] = "Treasure Chest",

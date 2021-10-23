@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(NORTHREND, {
 		m(BOREAN_TUNDRA, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(641, {	-- Arctic Hare
 					["crs"] = { 62693 },
 				}),
@@ -22,17 +22,13 @@ _.Zones =
 				p(388, {	-- Shore Crab
 					["crs"] = { 61158 },
 				}),
-				i(22780, {	-- White Murloc Egg (Terky)
-					["coord"] = { 56.0, 88.0, BOREAN_TUNDRA },
-					["description"] = "In a hidden cave in a glacier contained in the White Murloc Egg at the back of the room, not the table.",
-				}),
 				p(536, {	-- Tundra Penguin
 					["crs"] = { 62835 },
 				}),
 				p(1238, {	-- Unborn Val'kyr
 					["crs"] = { 71163 },
 				}),
-			}),
+			})),
 		}),
 	}),
 };

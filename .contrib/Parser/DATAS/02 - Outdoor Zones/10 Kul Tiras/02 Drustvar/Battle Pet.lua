@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(DRUSTVAR, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(2386, {	-- Coastal Scuttler
 					["crs"] = { 143045 },	-- Coastal Scuttler
 				}),
@@ -25,29 +25,7 @@ _.Zones =
 				p(2381, {	-- Shack Crab
 					["crs"] = { 143040 },	-- Shack Crab
 				}),
-				q(52061, {	-- Taptaf the Pig!
-					["provider"] = { "n", 139380 },	-- Taptaf
-					["coord"] = { 65.0, 83.2, DRUSTVAR },
-					["description"] = "Killing Idej the Wise will cause Taptaf to spawn and give you the quest.",
-					["g"] = {
-						i(161081, {	-- Taptaf
-							["crs"] = {
-								139380,	-- Taptaf
-								131735,	-- Idej the Wisee
-							},
-						}),
-					},
-				}),
-				i(163497, {	-- Wicker Pup
-					["description"] = "You must find each of the four parts from various treasures in the Zone and combine them to form this battle pet.\nRight-Click for more information.",
-					["cost"] = {
-						{ "i", 163790, 1 },	-- Spooky Incantation
-						{ "i", 163796, 1 },	-- Wolf Pup Spine
-						{ "i", 163791, 1 },	-- Miniature Stag Skull
-						{ "i", 163789, 1 },	-- Bundle of Wicker Stick
-					},
-				}),
-			}),
+			})),
 		}),
 	}),
 };

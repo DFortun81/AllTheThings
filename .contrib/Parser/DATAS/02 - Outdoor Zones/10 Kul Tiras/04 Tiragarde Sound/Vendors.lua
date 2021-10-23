@@ -7,6 +7,13 @@ _.Zones =
 	m(KULTIRAS, {
 		m(TIRAGARDE_SOUND, {
 			n(VENDORS, {
+				n(134446, {	-- Francois
+					["coord"] = { 52.8, 31.1, TIRAGARDE_SOUND },
+					["description"] = "Must have 1 million gold in your inventory before he will talk to you.  You do NOT lose any gold in this transaction.",
+					["g"] = {
+						i(158077),	-- Faberge Egg
+					},
+				}),
 				n(142838, {	-- Grumpy Grimble
 					["description"] = "When you have 150 BfA Inscription, speak to the NPC and he will teach you the technique.",
 					["coord"] = { 49.8, 36.8, TIRAGARDE_SOUND },

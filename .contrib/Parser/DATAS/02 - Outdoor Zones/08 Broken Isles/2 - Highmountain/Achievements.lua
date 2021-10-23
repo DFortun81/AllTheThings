@@ -218,6 +218,9 @@ _.Zones =
 								}),
 							},
 						}),
+						ach(10626, {	-- Zoom!
+							i(137298),		-- Zoom
+						}),
 					},
 				}),
 				un(REMOVED_FROM_GAME, ach(11139, {	-- Field Medic!

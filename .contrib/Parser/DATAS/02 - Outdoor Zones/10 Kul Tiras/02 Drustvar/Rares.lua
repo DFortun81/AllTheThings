@@ -271,6 +271,19 @@ _.Zones =
 						i(160462),	-- Hyo'gi Basket Binders
 					},
 				}),
+				n(131735, {	-- Idej the Wise
+					["coord"] = { 65.0, 83.2, DRUSTVAR },
+					["g"] = {
+						q(52061, {	-- Taptaf the Pig!
+							["provider"] = { "n", 139380 },	-- Taptaf
+							["coord"] = { 65.0, 83.2, DRUSTVAR },
+							["description"] = "Killing Idej the Wise will cause Taptaf to spawn and give you the quest.",
+							["g"] = {
+								i(161081),	-- Taptaf
+							},
+						}),
+					},
+				}),
 				n(127877, {	-- Longfang
 					["questID"] = 48981,
 					["coord"] = { 59.3, 55.2, DRUSTVAR },
