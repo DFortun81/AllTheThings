@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(KUN_LAI_SUMMIT, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(724, {	-- Alpine Foxling
 					["crs"] = { 63550 },	-- Alpine Foxling
 				}),
@@ -40,11 +40,7 @@ _.Zones =
 				p(731, {	-- Zooey Snake
 					["crs"] = { 63555 },	-- Zooey Snake
 				}),
-				n(68563, {	-- Kafi
-					["coord"] = { 35.2, 56.2, KUN_LAI_SUMMIT },
-					["description"] = "This pet is needed for |cFFFFD700Beasts of Fable|r quests.",
-				}),
-			}),
+			})),
 		}),
 	}),
 };

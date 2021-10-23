@@ -1727,7 +1727,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				}),
 			},
 		}),
-		filter(BATTLE_PETS, {
+		petbattle(filter(BATTLE_PETS, {
 			["description"] = "|cFFFFD700Ghastly Rats|r, |cFFFFD700Ghost Maggots|r, and |cFFFFD700Spectral Spinners|r are only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought for |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in the Garrison.",
 			["timeline"] = { "added 6.2.2.20395" },
 			["maps"] = {
@@ -1742,7 +1742,7 @@ _.Holidays = { applyholiday(HALLOWS_END, {
 				p(1740),	-- Ghost Maggot
 				p(1730),	-- Spectral Spinner
 			},
-		}),
+		})),
 		n(QUESTS, {
 			q(12135, {	-- "Let the Fires Come!" (Alliance)
 				["qg"] = 24519,	-- Costumed Orphan Matron

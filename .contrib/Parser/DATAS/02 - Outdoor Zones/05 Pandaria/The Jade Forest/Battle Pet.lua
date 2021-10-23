@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(THE_JADE_FOREST, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(380),	-- Bucktooth Flapper
 				p(562),	-- Coral Adder
 				p(564),	-- Emerald Turtle
@@ -30,7 +30,7 @@ _.Zones =
 				p(819),	-- Wild Crimson Hatchling
 				p(818),	-- Wild Golden Hatchling
 				p(817),	-- Wild Jade Hatchling
-			}),
+			})),
 		}),
 	}),
 };

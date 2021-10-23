@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHADOWMOON_VALLEY, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(425, {	-- Ash Viper
 					["crs"] = { 61385 },	-- Ash Viper
 				}),
@@ -19,7 +19,7 @@ _.Zones =
 				p(497, {	-- Tainted Cockroach
 					["crs"] = { 62314 },	-- Tainted Cockroach
 				}),
-			}),
+			})),
 		}),
 	})),
 };

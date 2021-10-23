@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(ZULDAZAR, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(2537, {	-- Baby Zandalari Raptor
 					["crs"] = { 148517 },	-- Baby Zandalari Raptor
 				}),
@@ -22,7 +22,7 @@ _.Zones =
 				p(2384, {	-- Shore Butterfly
 					["crs"] = { 143043 },	-- Shore Butterfly
 				}),
-			}),
+			})),
 		}),
 	}),
 };

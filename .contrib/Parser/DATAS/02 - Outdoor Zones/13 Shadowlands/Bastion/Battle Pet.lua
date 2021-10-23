@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(BASTION, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(2936,	{	-- Copperfur Kit
 					["crs"] = { 171702 },	-- Copperfur Kit
 				}),
@@ -33,7 +33,7 @@ _.Zones =
 				p(2943, {	-- Wild Etherwyrm
 					["crs"] = { 171666 },	-- Wild Etherwyrm
 				}),
-			}),
+			})),
 		}),
 	}),
 };

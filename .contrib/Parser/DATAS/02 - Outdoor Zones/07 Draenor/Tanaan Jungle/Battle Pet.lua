@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(DRAENOR, {
 		m(TANAAN_JUNGLE, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				i(127751, {	-- Fel-Touched Pet Supplies
 					["crs"] = {
 						94645,	-- Bleakclaw (15.8, 44.6)
@@ -60,7 +60,7 @@ _.Zones =
 				p(1593, {	--  Waterfly
 					["crs"] = { 88355 },	--  Waterfly
 				}),
-			}),
+			})),
 		}),
 	}),
 };

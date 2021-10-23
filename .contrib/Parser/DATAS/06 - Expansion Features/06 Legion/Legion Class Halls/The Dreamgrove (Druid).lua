@@ -23,9 +23,9 @@ _.ExpansionFeatures =
 							i(140397),	-- G'hanir's Blossom
 						},
 					}),
-					filter(BATTLE_PETS, {
+					petbattle(filter(BATTLE_PETS, {
 						p(479),	-- Elfin Rabbit
-					}),
+					})),
 					n(FLIGHT_PATHS, {
 						fp(1815, {	-- The Dreamgrove, Val'sharah
 							["creatureID"] = 107457,	-- Danise Stargazer

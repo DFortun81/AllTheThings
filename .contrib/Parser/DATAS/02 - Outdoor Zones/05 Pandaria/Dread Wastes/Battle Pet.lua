@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(DREAD_WASTES, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(732, {	-- Amber Moth
 					["cr"] = 65187,
 				}),
@@ -28,7 +28,7 @@ _.Zones =
 				p(741, {	-- Silent Hedgehog
 					["cr"] = 64804,
 				}),
-			}),
+			})),
 		}),
 	}),
 };

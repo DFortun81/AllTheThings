@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(ZANDALAR, {
 		m(NAZMIR, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(2388, {	-- Bloodfeaver Tarantula
 					["crs"] = { 143047 },	-- Bloodfeaver Tarantula
 				}),
@@ -34,7 +34,7 @@ _.Zones =
 				p(2392, {	-- Young Sand Sifter
 					["crs"] = { 143050 },	-- Young Sand Sifter
 				}),
-			}),
+			})),
 		}),
 	}),
 };

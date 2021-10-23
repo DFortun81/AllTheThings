@@ -65,9 +65,9 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(410),	-- Wharf Rat
-			}),
+			})),
 			n(QUESTS, {
 				q(28684, {	-- A Sticky Task
 					["lvl"] = 85,

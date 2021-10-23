@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(MALDRAXXUS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(3051, {	-- Animated Cruor
 					["crs"] = { 175023 },
 				}),
@@ -25,7 +25,7 @@ _.Zones =
 				p(3049,	{	-- Pulsating Maggot
 					["crs"] = { 175021 },
 				}),
-			}),
+			})),
 		}),
 	}),
 };

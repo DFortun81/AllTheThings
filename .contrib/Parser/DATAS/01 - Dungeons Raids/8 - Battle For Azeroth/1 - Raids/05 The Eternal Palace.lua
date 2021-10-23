@@ -81,7 +81,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 			}),
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(2657, {	-- Blackchasm Crawler
 					["crs"] = { 154718 },
 				}),
@@ -91,7 +91,7 @@ _.Instances = { tier(BFA_TIER, {
 				p(2659, {	-- Trench Slug
 					["crs"] = { 154722 },
 				}),
-			}),
+			})),
 			n(COMMON_BOSS_DROPS, {
 				i(169329),	-- Eternal Ornament
 				i(168625),	-- Vantus Rune Technique: The Eternal Palace (Rank 1)

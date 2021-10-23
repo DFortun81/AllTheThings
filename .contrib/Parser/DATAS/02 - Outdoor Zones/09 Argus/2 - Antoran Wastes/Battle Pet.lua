@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(905, {	-- Argus
 		m(885, {	-- Antoran Wastes
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				ach(12088, {	-- Anomalous Animals of Argus
 					["groups"] = {
 						{
@@ -402,7 +402,7 @@ _.Zones =
 				}),
 				p(2122),	-- Antoran Bile Larva
 				p(2126),	-- Antoran Bilescourge
-			}),
+			})),
 		}),
 	}),
 };

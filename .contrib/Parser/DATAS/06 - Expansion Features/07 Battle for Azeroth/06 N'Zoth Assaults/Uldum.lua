@@ -1554,10 +1554,10 @@ _.ExpansionFeatures =
 							crit(3),		-- Assault: The Black Empire
 						}),
 					}),
-					filter(BATTLE_PETS, {
+					petbattle(filter(BATTLE_PETS, {
 						pet(2863),	-- Oasis Void-Duster
 						pet(2864),	-- Void-Scarred Locust
-					}),
+					})),
 					n(PROFESSIONS,	{
 						prof(FISHING, {
 							i(174456, {	-- Bottle of Gloop (pet)

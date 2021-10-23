@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(ISLE_OF_THUNDER, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(1181, {	-- Elder Python
 					["crs"] = { 69818 },	-- Elder Python
 				}),
@@ -19,7 +19,7 @@ _.Zones =
 				p(1175, {	-- Thundertail Flapper
 					["crs"] = { 69648 },	-- Thundertail Flapper
 				}),
-			}),
+			})),
 		}),
 	}),
 };

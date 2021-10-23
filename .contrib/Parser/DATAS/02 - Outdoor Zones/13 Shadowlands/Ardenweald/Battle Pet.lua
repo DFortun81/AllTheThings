@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(3081, {	-- Decay Grub
 					["crs"] = { 176020 },	-- Decay Grub
 				}),
@@ -25,7 +25,7 @@ _.Zones =
 				p(3080, {	-- Verdant Kit
 					["crs"] = { 176019 },	-- Verdant Kit
 				}),
-			}),
+			})),
 		}),
 	}),
 };

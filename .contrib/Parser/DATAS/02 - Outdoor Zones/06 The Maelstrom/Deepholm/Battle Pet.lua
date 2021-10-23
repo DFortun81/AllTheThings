@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(948, {	-- The Maelstrom
 		m(207, {	-- Deepholm
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(838, {	-- Amethyst Shale Hatchling
 					["crs"] = { 62182 },	-- Amethyst Shale Hatchling
 				}),
@@ -40,7 +40,7 @@ _.Zones =
 				p(470, {	-- Twilight Spider
 					["crs"] = { 62117 },	-- Twilight Spider
 				}),
-			}),
+			})),
 		}),
 	}),
 };

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(ZANGARMARSH, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(419, {	-- Small Frog
 					["crs"] = { 61071 },	-- Small Frog
 				}),
@@ -16,7 +16,7 @@ _.Zones =
 				p(515, {	-- Sporeling Sprout
 					["crs"] = { 62564 },	-- Sporeling Sprout
 				}),
-			}),
+			})),
 		}),
 	})),
 };

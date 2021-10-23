@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(DRAENOR, {
 		m(GORGROND, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(1465, {	-- Amberbarb Wasp
 					["crs"] = { 85257 },
 				}),
@@ -46,7 +46,7 @@ _.Zones =
 				p(1463, {	-- Wood Wasp
 					["crs"] = { 85254 },
 				}),
-			}),
+			})),
 		}),
 	}),
 };

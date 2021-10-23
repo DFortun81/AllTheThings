@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(NORTHREND, {
 		m(CRYSTALSONG_FOREST, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(385, {	-- Mouse
 					["crs"] = { 61143 },	-- Mouse
 				}),
@@ -19,7 +19,7 @@ _.Zones =
 				p(1238, {	-- Unborn Val'kyr
 					["crs"] = { 71163 },	-- Unborn Val'kyr
 				}),
-			}),
+			})),
 		}),
 	}),
 };

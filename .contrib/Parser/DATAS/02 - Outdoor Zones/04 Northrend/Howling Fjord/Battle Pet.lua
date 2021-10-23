@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(NORTHREND, {
 		m(HOWLING_FJORD, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(646, {	-- Chicken
 					["crs"] = { 62664 },	-- Chicken
 				}),
@@ -55,7 +55,7 @@ _.Zones =
 				p(1238, {	-- Unborn Val'kyr
 					["crs"] = { 71163 },	-- Unborn Val'kyr
 				}),
-			}),
+			})),
 		}),
 	}),
 };

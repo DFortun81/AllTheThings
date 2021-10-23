@@ -14,9 +14,9 @@ _.Zones =
 						}),
 					}),
 				}),
-				filter(BATTLE_PETS, {
+				petbattle(filter(BATTLE_PETS, {
 					p(1915),	-- Blind Rat
-				}),
+				})),
 				n(VENDORS, {
 					n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 						["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",

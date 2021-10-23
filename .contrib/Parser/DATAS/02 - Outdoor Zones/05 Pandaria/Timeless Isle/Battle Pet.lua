@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(TIMELESS_ISLE, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(1324, {	-- Ashwing Moth
 					["crs"] = { 73542 },	-- Ashwing Moth
 				}),
@@ -19,7 +19,7 @@ _.Zones =
 				p(1326, {	-- Skywisp Moth
 					["crs"] = { 73368 },	-- Skywisp Moth
 				}),
-			}),
+			})),
 		}),
 	}),
 };

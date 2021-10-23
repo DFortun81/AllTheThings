@@ -29,7 +29,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 			}),
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(2672, {	-- Alloyed Alleyrat
 					["crs"] = { 154789 },
 				}),
@@ -42,7 +42,7 @@ _.Instances = { tier(BFA_TIER, {
 				p(2674, {	-- H4ND-EE
 					["crs"] = { 154794 },
 				}),
-			}),
+			})),
 			d(2,  {	-- Heroic
 				["lvl"] = 120,
 				["g"] = {

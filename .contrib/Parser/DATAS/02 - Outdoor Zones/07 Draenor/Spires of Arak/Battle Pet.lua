@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(DRAENOR, {
 		m(SPIRES_OF_ARAK, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(635,  {	-- Adder
 					["crs"] = { 61325 },	-- Adder
 				}),
@@ -65,7 +65,7 @@ _.Zones =
 				p(1582, {	-- Zangar Crawler
 					["crs"] = { 88466 },	-- Zangar Crawler
 				}),
-			}),
+			})),
 		}),
 	}),
 };

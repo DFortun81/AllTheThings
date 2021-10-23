@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(DRAENOR, {
 		m(DRAENOR_SHADOWMOON_VALLEY, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(407, {	-- Forest Spiderling
 					["crs"] = { 61320 },	-- Forest Spiderling
 				}),
@@ -31,7 +31,7 @@ _.Zones =
 				p(1582, {	-- Zangar Crawler
 					["crs"] = { 88466 },	-- Zangar Crawler
 				}),
-			}),
+			})),
 		}),
 	}),
 };

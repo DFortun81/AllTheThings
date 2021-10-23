@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(NORTHREND, {
 		m(THE_STORM_PEAKS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(558, {	-- Arctic Fox Kit
 					["crs"] = { 62864 },	-- Arctic Fox Kit
 				}),
@@ -25,7 +25,7 @@ _.Zones =
 				p(1238, {	-- Unborn Val'kyr
 					["crs"] = { 71163 },	-- Unborn Val'kyr
 				}),
-			}),
+			})),
 		}),
 	}),
 };

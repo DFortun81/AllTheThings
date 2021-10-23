@@ -1346,7 +1346,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					]]--
-					filter(BATTLE_PETS, {
+					petbattle(filter(BATTLE_PETS, {
 						p(2867, {	-- Golden Chirper
 						}),
 						p(2866, {	-- Voidglower
@@ -1354,7 +1354,7 @@ _.ExpansionFeatures =
 						}),
 						p(2865, {	-- Voidskimmer
 						}),
-					}),
+					})),
 					n(PROFESSIONS,  {
 						prof(FISHING, {
 							i(174456, {	-- Bottle of Gloop (pet)

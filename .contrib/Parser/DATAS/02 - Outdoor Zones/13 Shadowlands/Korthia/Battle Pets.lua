@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				pet(3102, {	-- Animite Broodling
 					["cr"] = 179131,	-- Animite Broodling
 				}),
@@ -27,7 +27,7 @@ _.Zones =
 				}),
 				-- chompy = visitor dailies: oozing with character & local reagents (possibly hidden reward for ooz/bloop/plaguey achievements?)
 				-- korthian specimen = no info/tooltip on mouseover in pet journal
-			}),
+			})),
 		}),
 	}),
 };

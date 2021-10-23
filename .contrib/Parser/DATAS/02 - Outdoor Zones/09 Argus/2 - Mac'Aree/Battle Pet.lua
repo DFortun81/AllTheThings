@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(905, {	-- Argus
 		m(882, {	-- Mac'Aree
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				ach(12088, {	-- Anomalous Animals of Argus
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["groups"] = {
@@ -407,7 +407,7 @@ _.Zones =
 				p(2130),	-- Void Shardling
 				p(2129),	-- Voidstalker Runt
 				p(2128),	-- Warpstalker Runt
-			}),
+			})),
 		}),
 	}),
 };

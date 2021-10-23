@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(DRAENOR, {
 		m(FROSTFIRE_RIDGE, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(1427, {	-- Frostfur Rat
 					["crs"] = { 82715 },	-- Frostfur Rat
 				}),
@@ -28,7 +28,7 @@ _.Zones =
 				p(1464, {	-- Twilight Wasp
 					["crs"] = { 85253 },	-- Twilight Wasp
 				}),
-			}),
+			})),
 		}),
 	}),
 };

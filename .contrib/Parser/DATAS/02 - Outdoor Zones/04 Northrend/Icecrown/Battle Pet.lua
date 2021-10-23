@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(NORTHREND, {
 		m(ICECROWN, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(641, {	-- Arctic Hare
 					["crs"] = { 62693 },	-- Arctic Hare
 				}),
@@ -22,7 +22,7 @@ _.Zones =
 				p(1238, {	-- Unborn Val'kyr
 					["crs"] = { 71163 },	-- Unborn Val'kyr
 				}),
-			}),
+			})),
 		}),
 	}),
 };

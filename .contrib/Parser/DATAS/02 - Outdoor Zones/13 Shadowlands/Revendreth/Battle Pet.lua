@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(REVENDRETH, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(2902, {	-- Dusky Dredwing Pup
 					["crs"] = { 171149 },	-- Dusky Dredwing Pup
 				}),
@@ -22,7 +22,7 @@ _.Zones =
 				p(3015, {	-- Withering Creeper
 					["crs"] = { 173556 },	-- Withering Creeper
 				}),
-			}),
+			})),
 		}),
 	}),
 };

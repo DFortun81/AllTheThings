@@ -6,9 +6,9 @@ _.Holidays = bubbleDown({["u"] = FEAST_OF_WINTER_VEIL},
 {
 	holiday(235485, {	-- Feast of Winter Veil
 		filter(BATTLE_PETS, {
-			un(FEAST_OF_WINTER_VEIL, p(2114, {	-- Globe Yeti
+			petbattle(un(FEAST_OF_WINTER_VEIL, p(2114, {	-- Globe Yeti
 				["description"] = "This pet spawns inside the globe located in Orgrimmar or Ironforge, and since 2019 its spawn rate has been greatly increased. Only one yeti is up at a time. When it spawns it will be a Level 1-3 Yeti by itself so be prepared. If you have a hard time competing with others for the pet you can make a macro that does the following:\n\n|cFFFFFFFF/tar globe yeti|r\n\n Spam this macro along with an |cFFFFFFFFInteract With Target|r key bind.\n\nYou can also try doing it while in War Mode since there are usually less people.",
-			})),
+			}))),
 			o(243911, {	-- Snow Mound
 				["description"] = "The pet has a chance to drop from Snow Mounds.",
 				["icon"] = "Interface\\Icons\\INV_Ammo_Snowball",

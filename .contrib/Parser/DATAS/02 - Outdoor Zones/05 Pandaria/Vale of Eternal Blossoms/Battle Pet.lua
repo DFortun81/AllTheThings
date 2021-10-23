@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(PANDARIA, {
 		m(VALE_OF_ETERNAL_BLOSSOMS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(751),	-- Dancing Water Skimmer
 				p(747),	-- Effevescent Glowfly
 				p(383),	-- Eternal Strider
@@ -14,7 +14,7 @@ _.Zones =
 				p(749),	-- Golden Civet
 				p(750),	-- Golden Civet Kitten
 				p(752),	-- Yellow-Bellied Bullfrog
-			}),
+			})),
 		}),
 	}),
 };

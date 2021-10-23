@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				pet(1708, {	-- Albatross Chick
 					["crs"] = { 97018 },	-- Albatross Chick
 				}),
@@ -142,7 +142,7 @@ _.Zones =
 						}),
 					},
 				}),
-			}),
+			})),
 		}),
 	}),
 };

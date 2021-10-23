@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(DRAENOR, {
 		m(TALADOR, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(427, {	--  Ash Spiderling
 					["crs"] = { 61420 },	--  Ash Spiderling
 				}),
@@ -80,7 +80,7 @@ _.Zones =
 				p(1593, {	--  Waterfly
 					["crs"] = { 88355 },	--  Waterfly
 				}),
-			}),
+			})),
 		}),
 	}),
 };

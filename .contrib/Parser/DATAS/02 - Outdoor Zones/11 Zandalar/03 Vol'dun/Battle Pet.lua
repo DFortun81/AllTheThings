@@ -7,15 +7,15 @@ _.Zones =
 	m(ZANDALAR, {
 		m(VOLDUN, {
 			filter(BATTLE_PETS, {
-				p(2388, {	-- Bloodfever Tarantula
+				petbattle(p(2388, {	-- Bloodfever Tarantula
 					["crs"] = { 143047 },	-- Bloodfever Tarantula
-				}),
-				p(2399, {	-- Hermit Crab
+				})),
+				petbattle(p(2399, {	-- Hermit Crab
 					["crs"] = { 143056 },	-- Hermit Crab
-				}),
-				p(2390, {	-- Leafy Flutterwing
+				})),
+				petbattle(p(2390, {	-- Leafy Flutterwing
 					["crs"] = { 143049 },	-- Leafy Flutterwing
-				}),
+				})),
 				o(311903, {	-- Loose Parts (A)
 					["repeatable"] = true,
 					["questID"] = 54272,	-- Battle Bots (Alliance)
@@ -76,9 +76,9 @@ _.Zones =
 						}),
 					},
 				}),
-				p(2392, {	-- Young Sand Sifter
+				petbattle(p(2392, {	-- Young Sand Sifter
 					["crs"] = { 143050 },	-- Young Sand Sifter
-				}),
+				})),
 			}),
 		}),
 	}),

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(NORTHREND, {
 		m(SHOLAZAR_BASIN, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(649, { -- Biletoad
 					["crs"] = { 62815 },	-- Biletoad
 				}),
@@ -25,7 +25,7 @@ _.Zones =
 				p(1238, {	-- Unborn Val'kyr
 					["crs"] = { 71163 },	-- Unborn Val'kyr
 				}),
-			}),
+			})),
 		}),
 	}),
 };

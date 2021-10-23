@@ -6,16 +6,16 @@ _.WorldEvents =
 {
 	m(407, {	-- Darkmoon Island
 		filter(BATTLE_PETS, {
-			p(1068, {	-- Crow
+			petbattle(p(1068, {	-- Crow
 				["crs"] = { 67443 },	-- Crow
-			}),
-			p(1062, {	-- Darkmoon Glowfly
+			})),
+			petbattle(p(1062, {	-- Darkmoon Glowfly
 				["crs"] = { 67329 },	-- Darkmoon Glowfly
-			}),
+			})),
 			prof(FISHING, {
 				i(73953),	-- Sea Pony
 			}),
-			q(36471, {	-- A New Darkmoon Challenger!
+			petbattle(q(36471, {	-- A New Darkmoon Challenger!
 				["provider"] = { "n", 85519 },	-- Christoph VonFeasel
 				["coord"] = { 47.4, 62.2, 407 },
 				["isDaily"] = true,
@@ -28,8 +28,8 @@ _.WorldEvents =
 						i(44820),	-- Red Ribbon Pet Leash
 					}),
 				},
-			}),
-			q(32175, {	-- Darkmoon Pet Battle!
+			})),
+			petbattle(q(32175, {	-- Darkmoon Pet Battle!
 				["provider"] = { "n", 67370 },	-- Jeremy Feasel
 				["coord"] = { 47.8, 62.6, 407 },
 				["isDaily"] = true,
@@ -42,7 +42,7 @@ _.WorldEvents =
 						i(44820),	-- Red Ribbon Pet Leash
 					}),
 				},
-			}),
+			})),
 		}),
 	}),
 };

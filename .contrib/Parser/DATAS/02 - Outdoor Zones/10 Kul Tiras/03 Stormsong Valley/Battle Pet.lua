@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(STORMSONG_VALLEY, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(2374, {	-- Freshwater Crawler
 					["crs"] = { 143033 },	-- Freshwater Crawler
 				}),
@@ -37,7 +37,7 @@ _.Zones =
 				p(2376, {	-- Valley Chicken
 					["crs"] = { 143035 },	-- Valley Chicken
 				}),
-			}),
+			})),
 		}),
 	}),
 };

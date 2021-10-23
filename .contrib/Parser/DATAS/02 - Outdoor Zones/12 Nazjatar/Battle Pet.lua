@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		filter(BATTLE_PETS, {
+		petbattle(filter(BATTLE_PETS, {
 			n(151782, {	-- Ravenous Slime
 				["description"] = "Feed the same |cFFFFD700Ravenous Slime|r a critter by using a |cFFFFD700Prismatic Crystal|r to charm them. Do this for 5 days to get a random pet from the cocoon.  You can do this for each |cFFFFD700Ravenous Slime|r. ",
 				["coords"] = {
@@ -203,6 +203,6 @@ _.Zones =
 				["coord"] = { 34.7, 27.4, 1355 },
 				["races"] = HORDE_ONLY,
 			}),
-		}),
+		})),
 	}),
 };

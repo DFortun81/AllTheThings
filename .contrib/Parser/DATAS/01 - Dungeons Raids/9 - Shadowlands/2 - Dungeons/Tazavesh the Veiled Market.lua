@@ -46,7 +46,7 @@ _.Instances = { tier(SL_TIER, {
 					}),
 				}),
 			}),
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				pet(3108, {	-- Curious Purrkin
 					["cr"] = 179164,	-- Curious Purrkin
 				}),
@@ -59,7 +59,7 @@ _.Instances = { tier(SL_TIER, {
 				pet(3109, {	-- Silver Purrkin
 					["cr"] = 179165,	-- Silver Purrkin
 				}),
-			}),
+			})),
 			n(FLIGHT_PATHS, {
 				fp(2703, {	-- 9.1, Tazavesh (Broker Dungeon)
 					["coord"] = { 91.9, 41.9, TAZAVESH_THE_VEILED_MARKET_WORLD },

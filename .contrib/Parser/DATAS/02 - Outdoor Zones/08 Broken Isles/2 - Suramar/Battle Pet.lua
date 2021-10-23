@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(425, {	-- Ash Viper
 					["crs"] = { 61385 },	-- Ash Viper
 				}),
@@ -34,7 +34,7 @@ _.Zones =
 				p(1591, {	-- Violet Firefly
 					["crs"] = { 88357 },	-- Violet Firefly
 				}),
-			}),
+			})),
 		}),
 	}),
 };

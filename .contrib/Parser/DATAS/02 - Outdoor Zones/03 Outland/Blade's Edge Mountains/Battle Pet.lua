@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(OUTLAND, {
 		m(BLADES_EDGE_MOUNTAINS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(449, {	-- Brown Marmot
 					["crs"] = { 61752 },	-- Brown Marmot
 				}),
@@ -31,7 +31,7 @@ _.Zones =
 				p(379, {	-- Squirrel
 					["crs"] = { 61081 },	-- Squirrel
 				}),
-			}),
+			})),
 		}),
 	}),
 };

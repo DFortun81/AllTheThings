@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(KULTIRAS, {
 		m(MECHAGON, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(2662, {	-- Duskytooth Snooter
 					["crs"] = { 154769 },	-- Duskytooth Snoother
 					["description"] = "Rare pet. Shares spawns with |cFFFFD700Rustyroot Snooter|r."
@@ -86,7 +86,7 @@ _.Zones =
 					["crs"] = { 154922 },	-- Gnomefeaster
 					["coord"] = { 64.7, 64.6, MECHAGON },
 				}),
-			}),
+			})),
 		}),
 	}),
 };

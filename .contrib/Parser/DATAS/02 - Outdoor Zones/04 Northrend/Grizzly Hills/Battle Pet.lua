@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(NORTHREND, {
 		m(GRIZZLY_HILLS, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(647, {	-- Grizzly Squirrel
 					["crs"] = { 62818 },	-- Grizzly Squirrel
 				}),
@@ -19,7 +19,7 @@ _.Zones =
 				p(1238, {	-- Unborn Val'kyr
 					["crs"] = { 71163 },	-- Unborn Val'kyr
 				}),
-			}),
+			})),
 		}),
 	}),
 };

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(OUTLAND, {
 		m(TEROKKAR_FOREST, {
-			filter(BATTLE_PETS, {
+			petbattle(filter(BATTLE_PETS, {
 				p(514, {	-- Flayer Youngling
 					["crs"] = { 62555 },	-- Flayer Youngling
 				}),
@@ -28,7 +28,7 @@ _.Zones =
 				p(517, {	-- Warpstalker Hatchling
 					["crs"] = { 62583 },	-- Warpstalker Hatchling
 				}),
-			}),
+			})),
 		}),
 	}),
 };
