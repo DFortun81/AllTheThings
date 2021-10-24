@@ -47,6 +47,10 @@ _.Zones =
 						160747,	-- Shimmerbough Ritualist
 					},
 				}),
+				i(187935, {	-- Technique: Mark of the Midnight Runestag
+					["description"] = "Drops from Runestags.",
+					["timeline"] = { "added 9.1.5" },
+				}),
 			}),
 		}),
 	}),

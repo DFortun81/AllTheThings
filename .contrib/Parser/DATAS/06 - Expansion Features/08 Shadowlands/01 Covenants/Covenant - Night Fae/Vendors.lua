@@ -1426,6 +1426,13 @@ _.ExpansionFeatures =
 									{ "c", 1885, 5 },
 								},
 							}),
+							i(187937, {	-- Technique: Mark of the Sable Ardenmoth
+								["cost"] = {
+									{ "c", 1813, 1000 },
+									{ "c", 1885, 5 },
+								},
+								["timeline"] = { "added 9.1.5" },
+							}),
 							i(181308, {	-- Winterwoven Bulb
 								["cost"] = {
 									{ "c", 1813, 3500 },

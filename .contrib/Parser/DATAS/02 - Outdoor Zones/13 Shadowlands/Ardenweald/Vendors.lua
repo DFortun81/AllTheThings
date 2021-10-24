@@ -57,6 +57,10 @@ _.Zones =
 						i(184754),	-- Glitterwing Scarf
 						i(184752),	-- Gormscale Leggings
 						i(184753),	-- Tree-Scaler's Britches
+						i(187883, {	-- Technique: Mark of the Twilight Runestag
+							["cost"] = 14120000,	-- 1,412g
+							["timeline"] = { "added 9.1.5" },
+						}),
 					},
 				}),
 				n(172634, {	-- Brightgleam
