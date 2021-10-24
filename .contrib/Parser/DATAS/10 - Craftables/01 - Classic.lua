@@ -991,6 +991,8 @@ _.Craftables = { tier(CLASSIC_TIER, {
 					i(10720),	-- Gnomish Net-o-Matic Projector
 					i(10724),	-- Gnomish Rocket Boots
 					i(10716),	-- Gnomish Shrink Ray
+					i(18986),	-- Ultrasafe Transporter: Gadgetzan
+					i(18660),	-- World Enlarger
 				}),
 				category(185, {	-- Goggles
 					i(10545, {	-- Gnomish Goggles
@@ -1001,10 +1003,6 @@ _.Craftables = { tier(CLASSIC_TIER, {
 					i(10713, {	-- Plans: Inlaid Mithril Cylinder
 						["description"] = "This recipe is crafted by Gnomish Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Gnomish Engineer to craft it for you.",
 					}),
-				}),
-				filter(102, {	-- Toys
-					i(18986),	-- Ultrasafe Transporter: Gadgetzan
-					i(18660),	-- World Enlarger
 				}),
 			},
 		}),
@@ -1019,6 +1017,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				category(188, {	-- Devices
+					i(18984),	-- Dimensional Ripper - Everlook
 					i(10543, {	-- Goblin Construction Helmet
 						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
 					}),
@@ -1043,9 +1042,6 @@ _.Craftables = { tier(CLASSIC_TIER, {
 					i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
 						["description"] = "This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",
 					}),
-				}),
-				filter(102, {	-- Toys
-					i(18984),	-- Dimensional Ripper - Everlook
 				}),
 			},
 		}),
