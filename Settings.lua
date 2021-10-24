@@ -2365,14 +2365,14 @@ GeneralFiltersLabel:SetText(L["GENERAL_FILTERS_LABEL"]);
 GeneralFiltersLabel:Show();
 table.insert(settings.MostRecentTab.objects, GeneralFiltersLabel);
 
-local HideBoEItemsCheckBox = child:CreateCheckBox(L["HIDE_BOE_CHECKBOX"],
+local HideBoEItemsCheckBox = child:CreateCheckBox(L["SHOW_BOE_CHECKBOX"],
 function(self)
 	self:SetChecked(not settings:Get("Hide:BoEs")); -- 'not' = inversed :D
 end,
 function(self)
 	settings:SetHideBOEItems(not self:GetChecked()); -- 'not' = inversed :D
 end);
-HideBoEItemsCheckBox:SetATTTooltip(L["HIDE_BOE_CHECKBOX_TOOLTIP"]);
+HideBoEItemsCheckBox:SetATTTooltip(L["SHOW_BOE_CHECKBOX_TOOLTIP"]);
 HideBoEItemsCheckBox:SetPoint("TOPLEFT", GeneralFiltersLabel, "BOTTOMLEFT", -2, 0);
 
 local IgnoreFiltersForBoEsCheckBox = child:CreateCheckBox(L["IGNORE_FILTERS_FOR_BOES_CHECKBOX"],
@@ -2422,7 +2422,7 @@ end);
 HidePetBattlesCheckBox:SetATTTooltip(L["SHOW_PET_BATTLES_CHECKBOX_TOOLTIP"]);
 HidePetBattlesCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEFT", 0, 4);
 
-local HidePvPItemsCheckBox = child:CreateCheckBox(L["HIDE_PVP_CHECKBOX"],
+local HidePvPItemsCheckBox = child:CreateCheckBox(L["SHOW_PVP_CHECKBOX"],
 function(self)
 	self:SetChecked(not settings:Get("Hide:PvP")); -- 'not' = inversed :D
 	if settings:Get("DebugMode") then
@@ -2437,7 +2437,7 @@ function(self)
 	settings:Set("Hide:PvP", not self:GetChecked()); -- 'not' = inversed :D
 	settings:UpdateMode(1);
 end);
-HidePvPItemsCheckBox:SetATTTooltip(L["HIDE_PVP_CHECKBOX_TOOLTIP"]);
+HidePvPItemsCheckBox:SetATTTooltip(L["SHOW_PVP_CHECKBOX_TOOLTIP"]);
 HidePvPItemsCheckBox:SetPoint("TOPLEFT", HidePetBattlesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local CustomCollectFilterLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
