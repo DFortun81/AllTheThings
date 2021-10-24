@@ -1011,11 +1011,11 @@ _.Zones =
 							i(185313, {	-- Unchained Gladiator's Greatcloak
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),
-						}),
-						n(-43,  {	-- Cloth
 							i(185280, {	-- Unchained Gladiator's Shawl
 								["cost"] = { { "c", 1602, 525 } },	-- 525x Conquest
 							}),
+						}),
+						n(-43,  {	-- Cloth
 							i(185267, {	-- Unchained Gladiator's Silk Amice
 								["cost"] = { { "c", 1602, 700 } },	-- 700x Conquest
 							}),
