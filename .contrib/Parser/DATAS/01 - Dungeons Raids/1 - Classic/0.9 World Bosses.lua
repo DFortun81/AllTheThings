@@ -8,7 +8,7 @@ local MATURE_BLUE_DRAGON_SINEW = i(18704, {	-- Mature Blue Dragon Sinew
 local THE_EYE_OF_SHADOW = i(18665, {	-- The Eye of Shadow
 	["classes"] = { PRIEST },
 });
-_.Instances = { tier(CLASSIC_TIER, {
+root("Instances", tier(CLASSIC_TIER, {
 	n(-7, {	-- World Bosses
 		["isRaid"] = true,
 		["lvl"] = 60,
@@ -163,7 +163,7 @@ _.Instances = { tier(CLASSIC_TIER, {
 			}))),
 		},
 	}),
-})};
+}));
 
 ESKHANDERS_LEFT_CLAW.u = nil;
 ESKHANDERS_LEFT_CLAW.timeline = nil;
