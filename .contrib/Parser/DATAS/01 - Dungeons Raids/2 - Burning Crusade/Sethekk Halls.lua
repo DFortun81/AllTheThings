@@ -303,9 +303,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(29249),	-- Bands of the Benevolent
 							i(29259),	-- Bracers of the Hunt
 							i(27985),	-- Deathforge Girdle
-							-- #if BEFORE 7.3.5
-							i(27936),	-- Greaves of Desolation  (7.3.5 - Moved to Anzu)
-							-- #endif
+							i(27936),	-- Greaves of Desolation (7.3.5 - Added to Anzu, but also still drops on Heroic)
 							i(27875),	-- Hallowed Trousers
 							i(27838),	-- Incanter's Trousers
 							i(27948),	-- Trousers of Oblivion
