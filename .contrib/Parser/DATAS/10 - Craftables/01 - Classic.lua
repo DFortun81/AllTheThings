@@ -935,6 +935,21 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(17716),	-- Snowmaster 9000
 		}),
 	}),
+	prof(FIRST_AID, {
+		i(1251),	-- Linen Bandage
+		i(2581),	-- Heavy Linen Bandage
+		i(6452),	-- Anti-Venom
+		i(3530),	-- Wool Bandage
+		i(3531),	-- Heavy Wool Bandage
+		i(6453),	-- Strong Anti-Venom
+		i(6450),	-- Silk Bandage
+		i(6451),	-- Heavy Silk Bandage
+		i(8544),	-- Mageweave Bandage
+		i(8545),	-- Heavy Mageweave Bandage
+		i(14529),	-- Runecloth Bandage
+		i(14530),	-- Heavy Runecloth Bandage
+		i(19440),	-- Powerful Anti-Venom
+	}),
 	prof(FISHING, {
 		filter(23, {	-- 1H Maces
 			applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, i(19808, {	-- Rockhide Strongfish
@@ -1674,14 +1689,23 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		},
 	}),
 	prof(TAILORING, {
-		filter(113, {	-- Bags
-			i(22249),	-- Big Bag of Enchantment
+		category(230, {	-- Materials
+			i(2996),	-- Bolt of Linen Cloth
+			i(4339),	-- Bolt of Mageweave
+			i(14048),	-- Bolt of Runecloth
+			i(4305),	-- Bolt of Silk Cloth
+			i(2997),	-- Bolt of Woolen Cloth
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18258)),	-- Gordok Ogre Suit
+			i(14342),	-- Mooncloth
+		}),
+		category(233, {	-- Bags
+			applyclassicphase(PHASE_FIVE, i(22249)),	-- Big Bag of Enchantment
 			i(5765),	-- Black Silk Pack
 			i(14156),	-- Bottomless Bag
-			i(22251),	-- Cenarion Herb Bag
+			applyclassicphase(PHASE_FIVE, i(22251)),	-- Cenarion Herb Bag
 			i(21342),	-- Core Felcloth Bag
 			i(22246),	-- Enchanted Mageweave Pouch
-			i(22248),	-- Enchanted Runecloth Bag
+			applyclassicphase(PHASE_FIVE, i(22248)),	-- Enchanted Runecloth Bag
 			i(21341),	-- Felcloth Bag
 			i(5764),	-- Green Silk Pack
 			i(4241),	-- Green Woolen Bag
@@ -1692,24 +1716,58 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10051),	-- Red Mageweave Bag
 			i(5763),	-- Red Woolen Bag
 			i(14046),	-- Runecloth Bag
-			i(22252),	-- Satchel of Cenarius
+			applyclassicphase(PHASE_FIVE, i(22252)),	-- Satchel of Cenarius
 			i(4245),	-- Small Silk Pack
 			i(21340),	-- Soul Pouch
 			i(4240),	-- Woolen Bag
 		}),
-		n(CHEST, {
-			un(REMOVED_FROM_GAME, i(19682)),	-- Bloodvine Vest
-			un(REMOVED_FROM_GAME, i(22652)),	-- Glacial Vest
-			i(14153, {	-- Robe of the Void
-				["timeline"] = {
-					"added 1.11.1.5462",
-					"removed 5.0.4.15890",
-				},
+		category(234, {	-- Hats & Hoods
+			i(10030),	-- Admiral's Hat
+			i(7048),	-- Azure Silk Hood
+			i(10024),	-- Black Mageweave Headband
+			i(10041),	-- Dreamweave Circlet
+			i(4322),	-- Enchanter's Cowl
+			i(14111),	-- Felcloth Hood
+			i(14140),	-- Mooncloth Circlet
+			i(10033),	-- Red Mageweave Headband
+			i(13866),	-- Runecloth Headband
+			i(4323),	-- Shadow Hood
+			i(10025, {	-- Shadoweave Mask
+				-- #if AFTER 7.3.0
+				["description"] = "Required for the |cff3399ffLucid Nightmare|r riddle mount.",
+				-- #endif
+				["timeline"] = { "removed 4.0.3", "added 7.3.0" },
 			}),
+			i(7050),	-- Silk Headband
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22757)),	-- Sylvan Crown
+			i(10008),	-- White Bandit Mask
+			i(14130),	-- Wizardweave Turban
+		}),
+		category(235, {	-- Shoulders
+			applyclassicphase(PHASE_THREE, i(19059)),	-- Argent Shoulders
+			i(7060),	-- Azure Shoulders
+			i(10027),	-- Black Mageweave Shoulders
+			i(7059),	-- Crimson Silk Shoulders
+			i(4314),	-- Double-stitched Woolen Shoulders
+			i(14112),	-- Felcloth Shoulders
+			i(16980),	-- Flarecore Mantle
+			i(7057),	-- Green Silken Shoulders
+			applyclassicphase(PHASE_THREE, i(19050)),	-- Mantle of the Timbermaw
+			i(14139),	-- Mooncloth Shoulders
+			i(10029),	-- Red Mageweave Shoulders
+			i(4315),	-- Reinforced Woolen Shoulders
+			i(13867),	-- Runecloth Shoulders
+			i(10028),	-- Shadoweave Shoulders
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22758)),	-- Sylvan Shoulders
+		}),
+		category(236, {	-- Robes & Tunics
 			i(4324),	-- Azure Silk Vest
 			i(2578),	-- Barbaric Linen Vest
 			i(10001),	-- Black Mageweave Robe
 			i(9998),	-- Black Mageweave Vest
+			applyclassicphase(PHASE_FOUR, i(19682, {	-- Bloodvine Vest
+				["timeline"] = { "removed 4.0.3" },
+			})),
 			i(6242),	-- Blue Linen Robe
 			i(6240),	-- Blue Linen Vest
 			i(6263),	-- Blue Overalls
@@ -1722,10 +1780,15 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10021),	-- Dreamweave Vest
 			i(7051),	-- Earthen Vest
 			i(14106),	-- Felcloth Robe
+			i(21154),	-- Festival Dress
+			i(21542),	-- Festival Suit
 			i(19156),	-- Flarecore Robe
 			i(13868),	-- Frostweave Robe
 			i(13869),	-- Frostweave Tunic
 			i(14141),	-- Ghostweave Vest
+			applyclassicphase(PHASE_SIX, i(22652, {	-- Glacial Vest
+				["timeline"] = { "removed 3.0.1" },
+			})),
 			i(2585),	-- Gray Woolen Robe
 			i(6264),	-- Greater Adept's Robe
 			i(7065),	-- Green Silk Armor
@@ -1738,98 +1801,89 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10007),	-- Red Mageweave Vest
 			i(7054),	-- Robe of Power
 			i(14152),	-- Robe of the Archmage
-			i(14136),	-- Robe of Winter Night
-			i(5770),	-- Robes of Arcana
+			i(14153, {	-- Robe of the Void
+				["timeline"] = { "removed 5.0.4.15890" },
+			}),
+			i(14136, {	-- Robe of Winter Night
+				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+			}),
+			i(5770, {	-- Robes of Arcana
+				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+			}),
 			i(13858),	-- Runecloth Robe
 			i(13857),	-- Runecloth Tunic
 			i(10004),	-- Shadoweave Robe
-			i(22756),	-- Sylvan Vest
+			i(10053),	-- Simple Black Dress
+			i(6786),	-- Simple Dress
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22756)),	-- Sylvan Vest
 			i(14154),	-- Truefaith Vestments
+			i(10036),	-- Tuxedo Jacket
 			i(6241),	-- White Linen Robe
+			i(10040),	-- White Wedding Dress
+			i(6787),	-- White Woolen Dress
 			i(14128),	-- Wizardweave Robe
 		}),
-		n(BACK, {
-			un(REMOVED_FROM_GAME, i(22658)),	-- Glacial Cloak
-			i(7053),	-- Azure Silk Cloak
-			i(14103),	-- Brightcloth Cloak
-			i(14044),	-- Cindercloth Cloak
-			i(14134),	-- Cloak of Fire
-			i(18413),	-- Cloak of Warding
-			i(7056),	-- Crimson Silk Cloak
-			i(22660),	-- Gaea's Embrace
-			i(4311),	-- Heavy Woolen Cloak
-			i(4327),	-- Icy Cloak
-			i(4326),	-- Long Silken Cloak
-			i(5542),	-- Pearl-Clasped Cloak
-			i(2580),	-- Reinforced Linen Cape
-			i(13860),	-- Runecloth Cloak
+		category(237, {	-- Bracers
+			i(18263),	-- Flarecore Wraps
+			applyclassicphase(PHASE_SIX, i(22655, {	-- Glacial Wrists
+				["timeline"] = { "removed 3.0.1" },
+			})),
+			i(4308),	-- Green Linen Bracers
 		}),
-		n(FEET, {
-			un(REMOVED_FROM_GAME, i(19684)),	-- Bloodvine Boots
-			i(19056),	-- Argent Boots
-			i(10026),	-- Black Mageweave Boots
-			i(4325),	-- Boots of the Enchanter
-			i(10044),	-- Cindercloth Boots
-			i(14108),	-- Felcloth Boots
-			i(2569),	-- Linen Boots
-			i(15802),	-- Mooncloth Boots
-			i(4313),	-- Red Woolen Boots
-			i(13864),	-- Runecloth Boots
-			i(20537),	-- Runed Stygian Boots
-			i(10031),	-- Shadoweave Boots
-			i(4312),	-- Soft-Soled Linen Boots
-			i(4321),	-- Spider Silk Slippers
-			i(4320),	-- Spidersilk Boots
-			i(2583),	-- Woolen Boots
-		}),
-		n(HANDS, {
-			un(REMOVED_FROM_GAME, i(22654)),	-- Glacial Gloves
+		category(239, {	-- Gloves
 			i(4319),	-- Azure Silk Gloves
 			i(10003),	-- Black Mageweave Gloves
 			i(14101),	-- Brightcloth Gloves
 			i(14043),	-- Cindercloth Gloves
 			i(7064),	-- Crimson Silk Gloves
 			i(10019),	-- Dreamweave Gloves
-			i(18407),	-- Felcloth Gloves
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18407, {	-- Felcloth Gloves
+				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+			})),
 			i(16979),	-- Flarecore Gloves
 			i(13870),	-- Frostweave Gloves
 			i(14142),	-- Ghostweave Gloves
+			applyclassicphase(PHASE_SIX, i(22654, {	-- Glacial Gloves
+				["timeline"] = { "removed 3.0.1" },
+			})),
 			i(4318),	-- Gloves of Meditation
 			i(14146),	-- Gloves of Spell Mastery
 			i(7047),	-- Hands of Darkness
 			i(4307),	-- Heavy Linen Gloves
 			i(4310),	-- Heavy Woolen Gloves
-			i(18408),	-- Inferno Gloves
-			i(18409),	-- Mooncloth Gloves
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18408, {	-- Inferno Gloves
+				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+			})),
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18409, {	-- Mooncloth Gloves
+				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+			})),
 			i(4331),	-- Phoenix Gloves
 			i(10018),	-- Red Mageweave Gloves
 			i(13863),	-- Runecloth Gloves
 			i(10023),	-- Shadoweave Gloves
 			i(7049),	-- Truefaith Gloves
 		}),
-		n(HEAD, {
-			i(10030),	-- Admiral's Hat
-			i(7048),	-- Azure Silk Hood
-			i(10024),	-- Black Mageweave Headband
-			i(10041),	-- Dreamweave Circlet
-			i(4322),	-- Enchanter's Cowl
-			i(14111),	-- Felcloth Hood
-			i(14140),	-- Mooncloth Circlet
-			i(10033),	-- Red Mageweave Headband
-			i(13866),	-- Runecloth Headband
-			i(4323),	-- Shadow Hood
-			i(10025, {	-- Shadoweave Mask
-				["description"] = "Required for the |cff3399ffLucid Nightmare|r riddle mount.",
-			}),
-			i(7050),	-- Silk Headband
-			i(22757),	-- Sylvan Crown
-			i(10008),	-- White Bandit Mask
-			i(14130),	-- Wizardweave Turban
+		category(238, {	-- Belts
+			i(7052),	-- Azure Silk Belt
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18405, {	-- Belt of the Archmage
+				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+			})),
+			i(7055),	-- Crimson Silk Belt
+			i(7061),	-- Earthen Silk Belt
+			i(14143),	-- Ghostweave Belt
+			i(7026),	-- Linen Belt
+			i(13856),	-- Runecloth Belt
+			applyclassicphase(PHASE_FOUR, i(20539)),	-- Runed Stygian Belt
+			i(4328),	-- Spider Belt
+			i(4329),	-- Star Belt
+			applyclassicphase(PHASE_THREE, i(19047)),	-- Wisdom of the Timbermaw
 		}),
-		n(LEGS, {
-			un(REMOVED_FROM_GAME, i(19683)),	-- Bloodvine Leggings
+		category(240, {	-- Pants
 			i(7046),	-- Azure Silk Pants
 			i(9999),	-- Black Mageweave Leggings
+			applyclassicphase(PHASE_FOUR, i(19683, {	-- Bloodvine Leggings
+				["timeline"] = { "removed 4.0.3" },
+			})),
 			i(14104),	-- Brightcloth Pants
 			i(4343),	-- Brown Linen Pants
 			i(14045),	-- Cindercloth Pants
@@ -1845,12 +1899,57 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(4317),	-- Phoenix Pants
 			i(10009),	-- Red Mageweave Pants
 			i(13865),	-- Runecloth Pants
-			i(20538),	-- Runed Stygian Leggings
+			applyclassicphase(PHASE_FOUR, i(20538)),	-- Runed Stygian Leggings
 			i(10002),	-- Shadoweave Pants
 			i(10047),	-- Simple Kilt
+			i(10045),	-- Simple Linen Pants
+			i(10035),	-- Tuxedo Pants
 			i(14132),	-- Wizardweave Leggings
 		}),
-		n(-324, {	-- Shirts
+		category(241, {	-- Boots
+			applyclassicphase(PHASE_THREE, i(19056)),	-- Argent Boots
+			i(10026),	-- Black Mageweave Boots
+			applyclassicphase(PHASE_FOUR, i(19684, {	-- Bloodvine Boots
+				["timeline"] = { "removed 4.0.3" },
+			})),
+			i(4325),	-- Boots of the Enchanter
+			i(10044),	-- Cindercloth Boots
+			i(14108),	-- Felcloth Boots
+			i(2569),	-- Linen Boots
+			i(15802),	-- Mooncloth Boots
+			i(4313),	-- Red Woolen Boots
+			i(13864),	-- Runecloth Boots
+			applyclassicphase(PHASE_FOUR, i(20537)),	-- Runed Stygian Boots
+			i(10031),	-- Shadoweave Boots
+			i(10046),	-- Simple Linen Boots
+			i(4312),	-- Soft-Soled Linen Boots
+			i(4321),	-- Spider Silk Slippers
+			i(4320),	-- Spidersilk Boots
+			i(2583),	-- Woolen Boots
+		}),
+		category(242, {	-- Cloaks
+			i(7053),	-- Azure Silk Cloak
+			i(14103),	-- Brightcloth Cloak
+			i(14044),	-- Cindercloth Cloak
+			i(14134),	-- Cloak of Fire
+			applyclassicphase(PHASE_ONE_DIREMAUL, i(18413, {	-- Cloak of Warding
+				["timeline"] = { "removed 4.0.3", "added 8.1.5" },
+			})),
+			i(7056),	-- Crimson Silk Cloak
+			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22660)),	-- Gaea's Embrace
+			applyclassicphase(PHASE_SIX, i(22658, {	-- Glacial Cloak
+				["timeline"] = { "removed 3.0.1" },
+			})),
+			i(4311),	-- Heavy Woolen Cloak
+			i(4327),	-- Icy Cloak
+			i(2570),	-- Linen Cloak
+			i(4326),	-- Long Silken Cloak
+			i(5542),	-- Pearl-Clasped Cloak
+			i(2580),	-- Reinforced Linen Cape
+			i(13860),	-- Runecloth Cloak
+			i(2584),	-- Woolen Cape
+		}),
+		category(243, {	-- Shirts
 			i(4336),	-- Black Swashbuckler's Shirt
 			i(2577),	-- Blue Linen Shirt
 			i(4332),	-- Bright Yellow Shirt
@@ -1873,40 +1972,6 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10034),	-- Tuxedo Shirt
 			i(2576),	-- White Linen Shirt
 			i(6795),	-- White Swashbuckler's Shirt
-		}),
-		n(SHOULDER, {
-			i(19059),	-- Argent Shoulders
-			i(7060),	-- Azure Shoulders
-			i(10027),	-- Black Mageweave Shoulders
-			i(7059),	-- Crimson Silk Shoulders
-			i(4314),	-- Double-stitched Woolen Shoulders
-			i(14112),	-- Felcloth Shoulders
-			i(16980),	-- Flarecore Mantle
-			i(7057),	-- Green Silken Shoulders
-			i(19050),	-- Mantle of the Timbermaw
-			i(14139),	-- Mooncloth Shoulders
-			i(10029),	-- Red Mageweave Shoulders
-			i(4315),	-- Reinforced Woolen Shoulders
-			i(13867),	-- Runecloth Shoulders
-			i(10028),	-- Shadoweave Shoulders
-			i(22758),	-- Sylvan Shoulders
-		}),
-		n(WAIST, {
-			i(7052),	-- Azure Silk Belt
-			i(18405),	-- Belt of the Archmage
-			i(7055),	-- Crimson Silk Belt
-			i(7061),	-- Earthen Silk Belt
-			i(14143),	-- Ghostweave Belt
-			i(13856),	-- Runecloth Belt
-			i(20539),	-- Runed Stygian Belt
-			i(4328),	-- Spider Belt
-			i(4329),	-- Star Belt
-			i(19047),	-- Wisdom of the Timbermaw
-		}),
-		n(WRIST, {
-			un(REMOVED_FROM_GAME, i(22655)),	-- Glacial Wrists
-			i(18263),	-- Flarecore Wraps
-			i(4308),	-- Green Linen Bracers
 		}),
 	}),
 })};
