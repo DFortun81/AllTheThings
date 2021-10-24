@@ -1414,6 +1414,13 @@ _.ExpansionFeatures =
 									i(179911),	-- Winterborn Vambraces
 								},
 							}),
+							i(187871, {	-- Cricket Soul
+								["cost"] = {
+									{ "c", 1813, 15000 },
+									{ "c", 1885, 25 },
+								},
+								["timeline"] = { "added 9.1.5" },
+							}),
 							i(182174, {	-- Leonine Soul
 								["cost"] = {
 									{ "c", 1813, 1500 },
@@ -1425,6 +1432,13 @@ _.ExpansionFeatures =
 									{ "c", 1813, 1500 },
 									{ "c", 1885, 5 },
 								},
+							}),
+							i(187881, {	-- Ram Soul
+								["cost"] = {
+									{ "c", 1813, 25000 },
+									{ "c", 1885, 50 },
+								},
+								["timeline"] = { "added 9.1.5" },
 							}),
 							i(187937, {	-- Technique: Mark of the Sable Ardenmoth
 								["cost"] = {

@@ -109,6 +109,87 @@ _.ExpansionFeatures =
 					q(63603, {	-- Yak Soul
 						["provider"] = { "i", 185047 },	-- Yak Soul
 					}),
+					-- PTR 9.0.5
+					-- Has no source
+					--[[
+					q(63609, {	-- Kodo Soul
+						["provider"] = { "i", 185053 },	-- Kodo Soul
+					}),
+					q(63610, {	-- Mammoth Soul
+						["provider"] = { "i", 185054 },	-- Mammoth Soul
+					}),
+					q(63604, {	-- Shoveltusk Soul
+						["provider"] = { "i", 185048 },	-- Shoveltusk Soul
+					}),
+					--]]
+					-- PTR 9.1.5
+					-- Has Source
+					q(64990, {	-- Cricket Soul
+						["provider"] = { "i", 187871 },	-- Cricket Soul
+					}),
+					q(65021, {	-- Eagle Soul
+						["provider"] = { "i", 187901 },	-- Eagle Soul
+					}),
+					q(64992, {	-- Prairie Dog Soul
+						["provider"] = { "i", 187873 },	-- Prairie Dog Soul
+					}),
+					q(65009, {	-- Ram Soul
+						["provider"] = { "i", 187881 },	-- Ram Soul
+					}),
+					-- Has no source
+					--[[
+					q(65010, {	-- Alpaca Soul
+						["provider"] = { "i", 187882 },	-- Alpaca Soul
+					}),
+					q(65025, {	-- Boar Soul
+						["provider"] = { "i", 187905 },	-- Boar Soul
+					}),
+					q(64984, {	-- Bunny Soul
+						["provider"] = { "i", 187858 },	-- Bunny Soul
+					}),
+					q(64961, {	-- Cat Soul
+						["provider"] = { "i", 187819 },	-- Cat Soul
+					}),
+					q(64941, {	-- Chicken Soul
+						["provider"] = { "i", 187813 },	-- Chicken Soul
+					}),
+					q(65024, {	-- Cloud Serpent Soul
+						["provider"] = { "i", 187904 },	-- Cloud Serpent Soul
+					}),
+					q(64994, {	-- Frog Soul
+						["provider"] = { "i", 187877 },	-- Frog Soul
+					}),
+					q(65008, {	-- Goat Soul
+						["provider"] = { "i", 187880 },	-- Goat Soul
+					}),
+					q(65023, {	-- Jormungar Soul
+						["provider"] = { "i", 187903 },	-- Jormungar Soul
+					}),
+					q(64959, {	-- Otter Soul
+						["provider"] = { "i", 187818 },	-- Otter Soul
+					}),
+					q(65026, {	-- Owl Soul
+						["provider"] = { "i", 187906 },	-- Owl Soul
+					}),
+					q(64989, {	-- Porcupine Soul
+						["provider"] = { "i", 187870 },	-- Porcupine Soul
+					}),
+					q(64985, {	-- Rat Soul
+						["provider"] = { "i", 187859 },	-- Rat Soul
+					}),
+					q(64995, {	-- Saurid Soul
+						["provider"] = { "i", 187878 },	-- Saurid Soul
+					}),
+					q(64988, {	-- Snake Soul
+						["provider"] = { "i", 187862 },	-- Snake Soul
+					}),
+					q(64993, {	-- Saurolisk Hatchling Soul
+						["provider"] = { "i", 187876 },	-- Saurolisk Hatchling Soul
+					}),
+					q(65022, {	-- Sporebat Soul
+						["provider"] = { "i", 187902 },	-- Sporebat Soul
+					}),
+					--]]
 				})),
 			},
 		}),
