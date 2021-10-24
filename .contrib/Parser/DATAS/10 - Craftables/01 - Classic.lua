@@ -1096,6 +1096,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(10518),	-- Parachute Cloak
 			i(6712),	-- Practice Lock
 			i(15846),	-- Salt Shaker
+			i(17716),	-- Snowmaster 9000
 			applyclassicphase(TBC_PHASE_ONE, i(22728)),	-- Steam Tonk Controller
 			i(4366),	-- Target Dummy
 			i(18639),	-- Ultra-Flash Shadow Reflector
@@ -1222,9 +1223,6 @@ _.Craftables = { tier(CLASSIC_TIER, {
 		category(191, {	-- Tools
 			i(6219),	-- Arclight Spanner
 			i(10498),	-- Gyromatic Micro-Adjustor
-		}),
-		filter(102, {	-- Toys
-			i(17716),	-- Snowmaster 9000
 		}),
 	}),
 	prof(FIRST_AID, {
