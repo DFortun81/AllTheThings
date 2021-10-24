@@ -126,6 +126,26 @@ _.Toys =
 		i(136927, {		-- Scarlet Confessional Book
 			["classes"] = { PRIEST },
 		}),
+		i(187896),		-- Scouting Map: A Stormstout's Guide to Pandaria (TOY!)
+		i(187897),		-- Scouting Map: Cataclysm's Consequences (TOY!)
+		i(187869),		-- Scouting Map: Into the Shadowlands (TOY!)
+		i(150746, {		-- Scouting Map: Modern Provisioning of the Eastern Kingdoms (TOY!)
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(150743, {		-- Scouting Map: Surviving Kalimdor (TOY!)
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(187895),		-- Scouting Map: The Dangers of Draenor (TOY!)
+		i(150745, {		-- Scouting Map: The Eastern Kingdoms Campaign (TOY!)
+			["races"] = HORDE_ONLY,
+		}),
+		i(187899),		-- Scouting Map: The Many Curiosities of Outland (TOY!)
+		i(187900),		-- Scouting Map: The Wonders of Kul Tiras and Zandalar (TOY!)
+		i(187898),		-- Scouting Map: True Cost of the Northrend Campaign (TOY!)
+		i(187875),		-- Scouting Map: United Fronts of the Broken Isles (TOY!)
+		i(150744, {		-- Scouting Map: Walking Kalimdor with the Earthmother (TOY!)
+			["races"] = HORDE_ONLY,
+		}),
 		i(45015),		-- Sen'jin Banner (Horde)
 		i(97942),		-- Sen'jin Spirit Drum
 		i(119421),		-- Sha'tari Defender's Medallion (Alliance)
@@ -138,7 +158,6 @@ _.Toys =
 		i(66888),		-- Stave of Fur and Claw
 		i(169297),		-- Stormpike Insignia (A)
 		i(45011),		-- Stormwind Banner (Alliance)
-		i(150743),		-- Surviving Kalimdor (Alliance)
 		i(170204),		-- Symbol of Gral
 		i(130157),		-- Syxsehnz Rod
 		i(136935, {		-- Tadpole Cloudseeder
@@ -149,11 +168,9 @@ _.Toys =
 			["classes"] = { PRIEST },
 		}),
 		i(130151),		-- The "Devilsaur" Lunchbox
-		i(150745),		-- The Azeroth Campaign (Horde)
 		i(45013),		-- Thunder Bluff Banner (Horde)
 		i(119160),		-- Tickle Totem (Horde)
 		i(163704),		-- Tiny Mechanical Mouse
-		i(150746),		-- To Modernize the Provisioning of Azeroth (Alliance)
 		i(63141),		-- Tol Barad Searchlight (Alliance)
 		i(64997),		-- Tol Barad Searchlight (Horde)
 		i(130191),		-- Trapped Treasure Chest Kit
@@ -165,7 +182,6 @@ _.Toys =
 		}),
 		i(129367),		-- Vrykul Toy Boat Kit
 		i(184218),		-- Vulgarity Arbiter
-		i(150744),		-- Walking Kalimdor with the Earthmother (Horde)
 		i(138490, {		-- Waterspeaker's Totem -- only Shaman
 			["classes"] = { SHAMAN },
 		}),

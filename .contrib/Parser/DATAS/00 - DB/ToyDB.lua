@@ -762,6 +762,8 @@ i(187176);	-- Vesper of Harmony
 -----------------
 -- PATCH 9.1.5 --
 -----------------
+i(187913);	-- Apprentice Slimemancer's Boots
+i(187705);	-- Choofa's Call
 i(187591);	-- Nightborne Guard's Vigilance
 i(187896);	-- Scouting Map: A Stormstout's Guide to Pandaria
 i(187897);	-- Scouting Map: Cataclysm's Consequences
@@ -770,5 +772,13 @@ i(187895);	-- Scouting Map: The Dangers of Draenor
 i(187899);	-- Scouting Map: The Many Curiosities of Outland
 i(187900);	-- Scouting Map: The Wonders of Kul Tiras and Zandalar
 i(187898);	-- Scouting Map: True Cost of the Northrend Campaign
-i(187875);	-- Scouting Map: United Fronts of the Broken Isles 
+i(187875);	-- Scouting Map: United Fronts of the Broken Isles
+i(187840);	-- Sparkle Wings
+i(187419);	-- Steward's First Feather
+i(187512);	-- Tome of Small Sins
+-- PvP?
+i(187958);	-- PH - Banner of the Opportune
+i(187957);	-- PH - Banner of the Opportune
+i(187959);	-- PH - Banner of the Opportune
+i(187834);	-- Tormented Banner of the Opportune
 end)();
