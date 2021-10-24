@@ -2852,6 +2852,15 @@ subroutines = {
 			{"where", "itemID", itemID},				-- Which Container
 		}
 	end,
+	-- Korthian Armaments
+	["korthian_armaments"] = function(invtyp)
+		return {
+			{"select", "itemID", 187187 },				-- Korthian Armaments
+			{"pop"},									-- Discard the Item Header and acquire all of their children.
+			{"pop"},									-- Discard the Headers and acquire all of their children.
+			{"invtype", invtyp },						-- Only slot-specific
+		}
+	end,
 };
 local function Resolve_Extract(results, group, field)
 	if group.g then

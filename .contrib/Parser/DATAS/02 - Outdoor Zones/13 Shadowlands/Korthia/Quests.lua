@@ -999,6 +999,10 @@ _.Zones =
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.8, 22.6, KORTHIA },
 				}),
+				q(65146, {	-- Relic Hunter
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.8, 22.6, KORTHIA },
+				}),
 			}),
 		}),
 	}),

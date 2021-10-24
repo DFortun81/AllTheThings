@@ -276,6 +276,85 @@ _.Zones =
 								}),
 							},
 						}),
+						i(188156, {	-- Korthian Accessory
+							["cost"] = { { "c", 1767, 750 } },	-- 750x Stygia
+							["sym"] = {
+								{"sub", "korthian_armaments", "INVTYPE_FINGER" },
+								{"finalize"},	-- Push the unprocessed Items to the finalized list.
+								
+								{"sub", "korthian_armaments", "INVTYPE_TRINKET" },
+								{"finalize"},	-- Push the unprocessed Items to the finalized list.
+								{"merge"},
+							},
+						}),
+						i(188161, {	-- Korthian Belt
+							["cost"] = { { "c", 1767, 750 } },	-- 750x Stygia
+							["sym"] = {
+								{"sub", "korthian_armaments", "INVTYPE_WAIST" },
+							},
+						}),
+						i(188155, {	-- Korthian Boots
+							["cost"] = { { "c", 1767, 1000 } },	-- 1000x Stygia
+							["sym"] = {
+								{"sub", "korthian_armaments", "INVTYPE_FEET" },
+							},
+						}),
+						i(188163, {	-- Korthian Bracers
+							["cost"] = { { "c", 1767, 750 } },	-- 750x Stygia
+							["sym"] = {
+								{"sub", "korthian_armaments", "INVTYPE_WRIST" },
+							},
+						}),
+						i(188154, {	-- Korthian Chestpiece
+							["cost"] = { { "c", 1767, 1250 } },	-- 1250x Stygia
+							["sym"] = {
+								{"sub", "korthian_armaments", "INVTYPE_CHEST" },
+								{"finalize"},	-- Push the unprocessed Items to the finalized list.
+								
+								{"sub", "korthian_armaments", "INVTYPE_ROBE" },
+								{"finalize"},	-- Push the unprocessed Items to the finalized list.
+								{"merge"},
+							},
+						}),
+						i(188153, {	-- Korthian Cloak
+							["cost"] = { { "c", 1767, 750 } },	-- 750x Stygia
+							["sym"] = {
+								{"sub", "korthian_armaments", "INVTYPE_CLOAK" },
+							},
+						}),
+						i(188157, {	-- Korthian Gloves
+							["cost"] = { { "c", 1767, 1000 } },	-- 1000x Stygia
+							["sym"] = {
+								{"sub", "korthian_armaments", "INVTYPE_HAND" },
+							},
+						}),
+						i(188158, {	-- Korthian Helm
+							["cost"] = { { "c", 1767, 1250 } },	-- 1250x Stygia
+							["sym"] = {
+								{"sub", "korthian_armaments", "INVTYPE_HEAD" },
+							},
+						}),
+						i(188159, {	-- Korthian Legguards
+							["cost"] = { { "c", 1767, 1250 } },	-- 1250x Stygia
+							["sym"] = {
+								{"sub", "korthian_armaments", "INVTYPE_LEGS" },
+							},
+						}),
+						i(188160, {	-- Korthian Shoulders
+							["cost"] = { { "c", 1767, 1000 } },	-- 1000x Stygia
+							["sym"] = {
+								{"sub", "korthian_armaments", "INVTYPE_SHOULDER" },
+							},
+						}),
+						i(188162, {	-- Korthian Weaponry
+							["cost"] = { { "c", 1767, 1500 } },	-- 1500x Stygia
+							["sym"] = {
+								{"select", "itemID", 187187 },		-- Korthian Armaments
+								{"pop"},							-- Discard Header
+								{"where", "headerID", WEAPONS },	-- Weapons only
+								{"pop"},							-- Discard Header
+							},
+						}),
 					--	Epics
 						i(187541, {	-- Chain of Encircling Death
 							["cost"] = { { "c", 1767, 2000 } },	-- 2,000x Stygia
