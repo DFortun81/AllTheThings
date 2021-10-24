@@ -35,10 +35,14 @@ _.ExpansionFeatures =
 					ach(14839),		-- Bound to Adventure
 					ach(14834),		-- Bound with Purpose
 					ach(14627),		-- Choosing your Purpose
-					ach(14631, {	-- Champion of the Covenant
-						ach(14628),	-- The Road to Renown
-						ach(14629),	-- Gaining Respect
-						ach(14630),	-- Becoming a Hero
+					ach(15241, {	-- Renowned
+						["timeline"] = { "added 9.1.5" },
+						["g"] = {
+							ach(14628),	-- The Road to Renown
+							ach(14629),	-- Gaining Respect
+							ach(14630),	-- Becoming a Hero
+							ach(14631),	-- Champion of the Covenant
+						},
 					}),
 					ach(14632),		-- Conducting Anima
 					ach(14639),		-- Dedication to the Restoration
