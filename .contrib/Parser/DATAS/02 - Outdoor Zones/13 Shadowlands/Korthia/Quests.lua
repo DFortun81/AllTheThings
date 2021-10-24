@@ -984,6 +984,21 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.4, 21.4, KORTHIA },
 				}),
+			
+			-- ptr 9.1.5
+				q(65020, {	-- Practical Application
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.8, 22.6, KORTHIA },
+				}),
+				q(65266, {	-- Lost Research
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.8, 22.6, KORTHIA },
+					["isWeekly"] = true,
+				}),
+				q(65145, {	-- Relic Clues
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.8, 22.6, KORTHIA },
+				}),
 			}),
 		}),
 	}),
