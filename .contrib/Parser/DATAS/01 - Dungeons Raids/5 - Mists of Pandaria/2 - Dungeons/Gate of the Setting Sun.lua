@@ -146,45 +146,15 @@ _.Instances = { tier(MOP_TIER, {
 					}))
 				},
 			}),
+			-- #if AFTER 7.1.5.23360
 			d(24, {	-- Timewalking
-				["lvl"] = 91,
-				["groups"] = {
-					cr(56906, e(655, {	-- Saboteur Kip'tilak
-						i(144018),	-- Fallout-Filtering Hood
-						i(144102),	-- Pendant of Precise Timing
-						i(144100),	-- Saboteur's Stablizing Bracers
-						i(144134),	-- Grenadier's Belt
-						i(144135),	-- Pulled Grenade Pin
-					})),
-					cr(56589, e(675, {	-- Striker Ga'dok
-						i(143980),	-- Acid-Scarred Spaulders
-						i(144137),	-- Bomber's Precision Gloves
-						i(144095),	-- Impaler's Girdle
-						i(143983),	-- Airstream Treads
-						i(144136),	-- Vision of the Predator
-					})),
-					cr(56636, e(676, {	-- Commander Ri'mok
-						i(144098),	-- Mantid Trochanter
-						i(144019),	-- Swarmcall Helm
-						i(144138),	-- Ri'mok's Shattered Scale
-						i(143982),	-- Leggings of the Frenzy
-						i(144139),	-- Viscous Ring
-					})),
-					cr(56877, e(649, {	-- Raigonn
-						i(144101),	-- Carapace Breaker
-						i(144218),	-- Klatith, Fangs of the Swarm
-						i(144140),	-- Impervious Carapace
-						i(144104),	-- Shield of the Protectorate
-						i(143991),	-- Shoulders of Engulfing Winds
-						i(144141),	-- Drape of the Screeching Swarm
-						i(143955),	-- Swarmbringer Chestguards
-						i(144142),	-- Frenzyswarm Bracers
-						i(144105),	-- Hive Protector's Gauntlets
-						i(143977),	-- Wall-Breaker Legguards
-						i(143984),	-- Treads of Fixation
-					})),
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 303 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

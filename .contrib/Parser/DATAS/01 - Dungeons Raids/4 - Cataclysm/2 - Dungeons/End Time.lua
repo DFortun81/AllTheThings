@@ -123,71 +123,15 @@ _.Instances = { tier(CATA_TIER, {
 					i(72897),	-- Arrow of Time
 				})),
 			}),
+			-- #if AFTER 6.2.3.20601
 			d(24, {	-- Timewalking
-				["lvl"] = 86,
-				["g"] = {
-					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
-							54431,	-- Echo of Baine
-							54445,	-- Echo of Jaina
-							54123,	-- Echo of Sylvannas
-							54544,	-- Echo of Tyrande
-						},
-						["g"] = {
-							i(133391),	-- Dragonshrine Scepter
-							i(133415),	-- Crescent Wand
-							i(133393),	-- Echoing Headguard
-							i(133422),	-- Breastplate of Despair
-							i(133388),	-- Breastplate of Sorrow
-							i(133424),	-- Bindings of the End Time
-							i(133414),	-- Archivist's Gloves
-							i(133387),	-- Gauntlets of Temporal Interference
-							i(133392),	-- Gloves of the Hollow
-							i(133416),	-- Time Strand Gauntlets
-							i(133385),	-- Cord of Lost Hope
-							i(133390),	-- Girdle of Lost Heroes
-							i(133428),	-- Time-Dessicated Girdle
-							i(133394),	-- Waistguard of Lost Time
-							i(133389),	-- Time Traveler's Leggings
-							i(133418),	-- Boots of the Forked Road
-							i(133386),	-- Dead End Boots
-						},
-					}),
-					cr(54431, e(340, {	-- Echo of Baine
-						i(133401),	-- Axe of The Tauren Chieftain
-						i(133402),	-- Bloodhoof Legguards
-					})),
-					cr(54445, e(285, {	-- Echo of Jaina
-						i(133395),	-- Jaina's Staff
-						i(133396),	-- Ward of Incantations
-					})),
-					cr(54123, e(323, {	-- Echo of Sylvanas
-						i(133397),	-- Windrunner's Bow
-						i(133398),	-- Cloak of the Banshee Queen
-					})),
-					cr(54544, e(283, {	-- Echo of Tyrande
-						i(133399),	-- Crescent Moon
-						i(133400),	-- Whisperwind Robes
-					})),
-					cr(54432, e(289, {	-- Murozond
-						i(133409),	-- Jagged Edge of Time
-						i(133417),	-- Bronze Blaster
-						i(133421),	-- Cowl of Destiny
-						i(133407),	-- Crown of Epochs
-						i(133410),	-- Timeway Headgear
-						i(133412),	-- Mantle of Time
-						i(133408),	-- Temporal Pauldrons
-						i(133405),	-- Breastplate of Tarnished Bronze
-						i(133413),	-- Robes of Fate
-						i(133411),	-- Time Twisted Tunic
-						i(133419),	-- Time Twister's Gauntlets
-						i(133403),	-- Distortion Greaves
-						i(133404),	-- Time Altered Legguards
-						i(133406),	-- Chrono Boots
-						i(133420),	-- Arrow of Time
-					})),
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 184 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

@@ -258,65 +258,15 @@ _.Instances = { tier(WOTLK_TIER, {
 					})),
 				},
 			}),
+			-- #if AFTER 6.2.3.20601
 			d(24, {	-- Timewalking
-				["lvl"] = 81,
-				["groups"] = {
-					cr(26668, e(641, {	-- Svala Sorrowgrave
-						i(127458),	-- Ritualistic Arthame
-						i(127459),	-- Brazier Igniter
-						i(127482),	-- Silent Spectator Shoulderpads
-						i(127502),	-- Ymijar Physician's Robe
-						i(127484),	-- Cuffs of the Trussed Hall
-						i(127460),	-- Svala's Bloodied Shackles
-						i(127461),	-- Tear-Linked Gauntlets
-						i(127483),	-- Sorrowgrave's Breeches
-						i(127478),	-- Berserker's Sabatons
-						i(127481),	-- Echoing Stompers
-					})),
-					cr(26687, e(642, {	-- Gortok Palehoof
-						i(127463),	-- Trophy Gatherer
-						i(127464),	-- Seal of Valgarde
-						i(127488),	-- Ferocious Pauldrons of the Rhino
-						i(127486),	-- Massive Spaulders of the Jormungar
-						i(127462),	-- Shroud of Resurrection
-						i(127465),	-- Reanimated Armor
-						i(127487),	-- Ravenous Leggings of the Furbolg
-						i(127480),	-- Tundra Wolf Boots
-						i(127485),	-- Ring of the Frenzied Wolvar
-					})),
-					cr(26693, e(643, {	-- Skadi the Ruthless
-						i(44151),	-- Reins of the Blue Proto-Drake (MOUNT!)
-						i(127491),	-- Staff of Wayward Principles
-						i(127489),	-- Netherbreath Spellblade
-						i(127466),	-- Amulet of Deflected Blows
-						i(127467),	-- Silken Amice of the Ymijar
-						i(127469),	-- Dark Rider's Tunic
-						i(127503),	-- Bands of Fading Light
-						i(127479),	-- Dragonflayer Seer's Bindings
-						i(127490),	-- Skadi's Iron Belt
-						i(127492),	-- Crenelation Leggings
-						i(127468),	-- Harpooner's Striders
-					})),
-					cr(26861, e(644, {	-- King Ymiron
-						i(127471),	-- Jeweled Coronation Sword
-						i(127497),	-- Red Sword of Courage
-						i(127475),	-- Ymiron's Blade
-						i(127472),	-- Tor's Crest
-						i(127473),	-- Crown of the Forgotten Kings
-						i(127495),	-- Gold Amulet of Kings
-						i(127477),	-- Ceremonial Pyre Mantle
-						i(127496),	-- Mantle of Discarded Ways
-						i(127494),	-- Ornamented Plate Regalia
-						i(127500),	-- Gilt-Edged Leather Gauntlets
-						i(127499),	-- Girdle of Bane
-						i(127498),	-- Sovereign's Belt
-						i(127476),	-- Ancient Royal Legguards
-						i(127470),	-- Signet of Ranulf
-						i(127493),	-- Meteorite Whetstone
-						i(127474),	-- Vestige of Haldor
-					})),
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 286 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

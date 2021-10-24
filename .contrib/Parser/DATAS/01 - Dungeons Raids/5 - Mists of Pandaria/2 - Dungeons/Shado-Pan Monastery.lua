@@ -164,45 +164,15 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 				},
 			}),
+			-- #if AFTER 7.1.5.23360
 			d(24, {	-- Timewalking
-				["lvl"] = 91,
-				["groups"] = {
-					cr(56747, e(673, {	-- Gu Cloudstrike
-						i(144127),	-- Cloudstrike Pendant
-						i(143961),	-- Azure Serpent Chestguard
-						i(144126),	-- Star Summoner Bracers
-						i(144096),	-- Sparkbreath Girdle
-						i(143978),	-- Leggings of the Charging Soul
-					})),
-					cr(56541, e(657, {	-- Master Snowdrift
-						i(144110),	-- Snowdrift's Bladed Staff
-						i(144106),	-- Gauntlets of Resolute Fury
-						i(144097),	-- Quivering Heart Girdle
-						i(144129),	-- Eye of the Tornado
-						i(144128),	-- Heart of Fire
-					})),
-					cr(56719, e(685, {	-- Sha of Violence
-						i(144099),	-- Crescent of Ichor
-						i(144130),	-- Necklace of Disorientation
-						i(144131),	-- Bladed Smoke Bracers
-						i(144107),	-- Gloves of Enraged Slaughter
-						i(143985),	-- Spike-Soled Stompers
-					})),
-					cr(56884, e(686, {	-- Taran Zhu
-						i(144109),	-- Warmace of Taran Zhu
-						i(144215),	-- Ka'eng, Breath of the Shadow
-						i(144103),	-- Shield of Blind Hate
-						i(143981),	-- Shadowspine Shoulderguards
-						i(143962),	-- Hateshatter Chestplate
-						i(143990),	-- Robes of Fevered Dreams
-						i(144108),	-- Mindbender Plate Gloves
-						i(143979),	-- Darkbinder Leggings
-						i(143986),	-- Blastwalker Footguards
-						i(144133),	-- Ring of Malice
-						i(144132),	-- Seal of Hateful Meditation
-					})),
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 312 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

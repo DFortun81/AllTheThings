@@ -202,72 +202,15 @@ _.Instances = { tier(WOTLK_TIER, {
 					})),
 				},
 			}),
+			-- #if AFTER 6.2.3.20601
 			d(24, {	-- Timewalking
-				["lvl"] = 81,
-				["groups"] = {
-					-- NOTE: This boss is not listed in the Timewalking Dungeon Journal.
-					a(cr(26798, e(833, {	-- Commander Stoutbeard
-						i(127568),	-- Glacier Sharpened Vileblade [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127603),	-- Cloak of the Enemy [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127600),	-- Rippling Azure Cloak [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127604),	-- Grips of Sculptured Icicles [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127606),	-- Opposed Stasis Leggings [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127569),	-- Attuned Crystalline Boots [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127605),	-- Cleric's Linen Boots [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127570),	-- Band of Glittering Permafrost [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127594),	-- Sphere of Red Dragon's Blood [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-					}))),
-					h(cr(26796, e(617, {	-- Commander Kolurg
-						i(127568),	-- Glacier Sharpened Vileblade [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127603),	-- Cloak of the Enemy [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127600),	-- Rippling Azure Cloak [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127604),	-- Grips of Sculptured Icicles [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127606),	-- Opposed Stasis Leggings [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127569),	-- Attuned Crystalline Boots [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127605),	-- Cleric's Linen Boots [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127570),	-- Band of Glittering Permafrost [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-						i(127594),	-- Sphere of Red Dragon's Blood [DJ Shows Ormorok, but it's actually Commanders; WoWHead 2019-07-24]
-					}))),
-					cr(26731, e(618, {	-- Grand Magus Telestra
-						i(127579),	-- Wand of Shimmering Scales
-						i(127580),	-- Telestra's Journal
-						i(127581),	-- Arcane-Shielded Helm
-						i(127583),	-- Spaulders of the Careless Thief
-						i(127577),	-- Insulating Bindings
-						i(127582),	-- Bands of Channeled Energy
-						i(127578),	-- Belt of Draconic Runes
-					})),
-					cr(26763, e(619, {	-- Anomalus
-						i(127571),	-- Tome of the Lore Keepers (TW Only)
-						i(127586),	-- Helm of Anomalus [DJ doesn't list it. Confirmed 2019-03-18]
-						i(127584),	-- Amulet of Dazzling Light [DJ doesn't list it. Confirmed 2018-07-24]
-						i(127601),	-- Glassy Silver Bracers (TW Only)
-						i(127572),	-- Gauntlets of Serpent Scales [DJ doesn't list it. Confirmed 2018-05-29]
-						i(127585),	-- Hauberk of the Arcane Wraith
-						i(127573),	-- Cleated Ice Boots
-						i(127587),	-- Rift Striders
-					})),
-					cr(26794, e(620, {	-- Ormorok the Tree-Shaper
-						i(127574),	-- Drakonid Arm Blade [DJ Shows Anomalus, but it's actually Ormorok; #errors confirmed 5-29-18]
-						i(127575),	-- Chiseled Stalagmite Pauldrons [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
-						i(127590),	-- Gloves of the Crystal Gardener [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
-						i(127589),	-- Girdle of Ice [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
-						i(127591),	-- Frozen Forest Kilt [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
-						i(127602),	-- Cavern Leather Treads [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
-						i(127576),	-- Greaves of the Blue Flight [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
-						i(127588),	-- Band of Frosted Thorns [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
-					})),
-					cr(26723, e(621, {	-- Keristrasza
-						i(127596),	-- War Mace of Unrequited Love
-						i(127592),	-- Bulwark of the Noble Protector
-						i(127593),	-- Crystal-Infused Tunic
-						i(127597),	-- Interwoven Scale Bracers
-						i(127599),	-- Gloves of Glistening Runes
-						i(127598),	-- Flame-Bathed Steel Girdle
-						i(127595),	-- Dragon Slayer's Sabatons
-					})),
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 281 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

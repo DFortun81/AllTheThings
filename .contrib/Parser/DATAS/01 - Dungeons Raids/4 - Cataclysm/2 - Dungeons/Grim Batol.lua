@@ -173,51 +173,15 @@ _.Instances = { tier(CATA_TIER, {
 					})),
 				},
 			}),
+			-- #if AFTER 6.2.3.20601
 			d(24, {	-- Timewalking
-				["lvl"] = 86,
-				["g"] = {
-					cr(39625, e(131, {	-- General Umbriss
-						i(133283),	-- Modgud's Blade
-						i(133285),	-- Wildhammer Riding Helm
-						i(133284),	-- Cursed Skardyn Vest
-						i(133306),	-- Bracers of Umbral Mending
-						i(133307),	-- Abandoned Dark Iron Ring
-						i(133286),	-- Umbriss Band
-						i(133282),	-- Skardyn's Grace
-					})),
-					cr(40177, e(132, {	-- Forgemaster Throngus
-						i(133288),	-- Wand of Untainted Power
-						i(133353),	-- Troggbone Cinch
-						i(133289),	-- Belt of the Forgemaster
-						i(133308),	-- Curse-Tainted Leggings
-						i(133290),	-- Dark Iron Chain Boots
-						i(133287),	-- Ring of Dun Algaz
-						i(133304),	-- Gale of Shadows
-						i(133291),	-- Throngus's Finger
-					})),
-					cr(40319, e(133, {	-- Drahga Shadowburner
-						i(133296),	-- Windwalker Blade
-						i(133294),	-- Earthshape Pauldrons
-						i(133292),	-- Azureborne Cloak
-						i(133363),	-- Troggstitched Drape
-						i(133295),	-- Crimsonborne Bracers
-						i(133354),	-- Glimmerthread Pantalons
-						i(133293),	-- Red Scale Boots
-					})),
-					cr(40484, e(134, {	-- Erudax
-						i(133303),	-- Staff of Siphoned Essences
-						i(133298),	-- Wild Hammer
-						i(133301),	-- Mace of Transformed Bone
-						i(133302),	-- Crown of Enfeebled Bodies
-						i(133374),	-- Courier's Dragonriding Spaulders
-						i(133309),	-- Shroud of Dark Memories
-						i(133297),	-- Vest of Misshapen Hides
-						i(133299),	-- Circle of Bone
-						i(133305),	-- Corrupted Egg Shell
-						i(133300),	-- Mark of Khardros
-					})),
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 71 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

@@ -194,62 +194,15 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
+			-- #if AFTER 8.1.5.29701
 			d(24, {	-- Timewalking
-				["lvl"] = 50,
-				["groups"] = {
-					e(965, {	-- Ranjit
-						["crs"] = { 75964 },
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, HEAD},
-							{"sub", "common_wod_dungeon_drop", 24, WAIST},
-						},
-						["g"] = {
-							i(110030),	-- Chakram-Breaker Greatsword
-						},
-					}),
-					e(966, {	-- Araknath
-						["crs"] = { 76141 },
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, NECK},
-							{"sub", "common_wod_dungeon_drop", 24, FEET},
-						},
-						["g"] = {
-							i(110031),	-- Spire of the Furious Construct
-							i(110016),	-- Solar Containment Unit
-						},
-					}),
-					e(967, {	-- Rukhran
-						["crs"] = { 76143 },
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, WRIST},
-							{"sub", "common_wod_dungeon_drop", 24, HANDS},
-						},
-						["g"] = {
-							i(110032),	-- Beakbreaker Scimitar
-							i(110006),	-- Rukhran's Quill
-						},
-					}),
-					e(968, {	-- High Sage Viryx
-						["crs"] = { 76266 },
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, SHOULDER},
-							{"sub", "common_wod_dungeon_drop", 24, LEGS},
-							{"sub", "common_wod_dungeon_drop", 24, FINGER},
-						},
-						["g"] = {
-							i(127772, {	-- Gemcutter Module: Haste
-								["requireSkill"] = JEWELCRAFTING,
-								["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-								["spellID"] = 187635,
-								["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
-							}),
-							i(110033),	-- Arcanic of the High Sage
-							i(110034),	-- Viryx's Indomitable Bulwark
-							i(110011),	-- Fires of the Sun
-						},
-					}),
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 476 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

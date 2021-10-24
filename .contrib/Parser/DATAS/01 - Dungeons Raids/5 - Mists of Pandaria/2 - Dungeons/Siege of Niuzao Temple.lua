@@ -151,45 +151,15 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 				}
 			}),
+			-- #if AFTER 7.1.5.23360
 			d(24, {	-- Timewalking
-				["lvl"] = 91,
-				["groups"] = {
-					cr(61567, e(693, {	-- Vizier Jin'bak
-						i(144022),	-- Hood of Viridian Residue
-						i(144162),	-- Engraved Amber Pendant
-						i(144163),	-- Girdle of Soothing Detonation
-						i(143996),	-- Sap-Encrusted Legplates
-						i(144156),	-- Flashfrozen Resin Globule
-					})),
-					cr(61634, e(738, {	-- Commander Vo'jak
-						i(144164),	-- Siege-Captain's Scimitar
-						i(144023),	-- Sightfinder Helm
-						i(143963),	-- Chestwrap of Arcing Flame
-						i(144165),	-- Bombardment Bracers
-						i(144166),	-- Archer's Precision Grips
-					})),
-					cr(61485, e(692, {	-- General Pa'valak
-						i(144167),	-- Tempestuous Longbow
-						i(144170),	-- Aerial Bombardment Cloak
-						i(144168),	-- Siegeworn Bracers
-						i(144169),	-- Breezebinder Handwraps
-						i(144157),	-- Vial of Ichorous Blood
-					})),
-					cr(62205, e(727, {	-- Wing Leader Ner'onok
-						i(144172),	-- Gustwalker Staff
-						i(144171),	-- Ner'onok's Razor Katar
-						i(144219),	-- Tolakesh, Horn of the Black Ox
-						i(144025),	-- Breezeswept Hood
-						i(144024),	-- Windblast Helm
-						i(143998),	-- Spaulders of Immovable Stone
-						i(143999),	-- Whisperwind Spaulders
-						i(143964),	-- Galedodger Chestguard
-						i(144173),	-- Belt of Totemic Binding
-						i(144000),	-- Airbender Sandals
-						i(143997),	-- Anchoring Sabatons
-					})),
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 324 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

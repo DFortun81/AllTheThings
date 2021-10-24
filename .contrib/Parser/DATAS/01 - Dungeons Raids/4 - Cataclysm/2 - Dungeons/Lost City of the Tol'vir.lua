@@ -235,72 +235,15 @@ _.Instances = { tier(CATA_TIER, {
 					}),
 				},
 			}),
-			d(24,  {	-- Timewalking
-				["lvl"] = 86,
-				["groups"] = {
-					e(117, {	-- General Husam
-						["crs"] = { 44577 },	-- General Husam
-						["g"] = {
-							i(133257),	-- Saliza's Spear
-							i(133373),	-- Necklace of Rumbling Earth
-							i(133254),	-- Kaleki Cloak
-							i(133258),	-- Ionic Gloves
-							i(133256),	-- Greaves of Wu the Elder
-							i(133255),	-- Spirit Creeper Ring
-						},
-					}),
-					e(118, {	-- Lockmaw
-						["crs"] = {
-							43614,	-- Lockmaw
-							49045,	-- Augh
-						},
-						["g"] = {
-							i(133259),	-- Resonant Kris
-							i(133260),	-- Tauntka's Necklace
-							i(133280),	-- Oasis Bracers
-							i(133261),	-- Balkar's Waders
-							i(133263),	-- Ring of the Darkest Day
-							i(133281),	-- Impetuous Query
-							i(133266),	-- Veneficial Band
-							-- Swapped/Confirmed Drops
-							i(133267),	-- Sand Dune Belt (8.3.7, confirmed dropping here too on 11.08.2020)
-							-- i(133262),	-- Greaves of Wu the Younger (moved to Barim)
-							-- i(133278),	-- Evelyn's Belt (moved to Siamat)
-						},
-					}),
-					e(119, {	-- High Prophet Barim
-						["crs"] = { 43612 },	-- High Prophet Barim
-						["g"] = {
-							i(133265),	-- Barin's Main Gauche
-							i(133277),	-- Zora's Ward
-							i(133264),	-- Sand Silk Wristband
-							i(133276),	-- Leggings of the Path
-							i(133279),	-- Mirage Ring
-							i(133268),	-- Heart of Solace
-							-- Swapped/Confirmed Drops
-							i(133259),	-- Resonant Kris	-- 8.3.7, confirmed dropping here too on 18.08.2020
-							i(133278),	-- Evelyn's Belt	 -- 9.1, confirmed dropping here too on 27.09.2021
-							i(133262),	-- Greaves of Wu the Younger	 -- 9.1, confirmed dropping here too on 27.09.2021
-							--	i(133267),	-- Sand Dune Belt (movd to Lockmaw))
-							--	i(133266),	-- Veneficial Band (moved to Lockmaw)
-						},
-					}),
-					e(122, {	-- Siamat
-						["crs"] = { 44819 },	-- Siamat
-						["g"] = {
-							i(133271),	-- Hammer of Sparks
-							i(133376),	-- Hammer of Swirling Winds
-							i(133274),	-- Mantle of Master Cho
-							i(133272),	-- Geordan's Cloak
-							i(133278),	-- Evelyn's Belt (erroneously listed on Lockmaw in DJ -- drops from this boss)
-							i(133270),	-- Crafty's Gaiters
-							i(133273),	-- Ring of Three Lights
-							i(133275),	-- Sorrowsong
-							i(133269),	-- Tia's Grace
-						},
-					}),
+			-- #if AFTER 6.2.3.20601
+			d(24, {	-- Timewalking
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 69 },		-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

@@ -2867,6 +2867,16 @@ subroutines = {
 			{"pop"},									-- Discard the Header and acquire all of their children.
 		}
 	end,
+	-- Wod Dungeon TW
+	["common_wod_dungeon_drop_tw"] = function(difficultyID, headerID)
+		return {
+			{"select", "headerID", -23},				-- Common Dungeon Drops
+			{"isnt", "description"},					-- Not normal Common Drops
+			{"pop"},									-- Discard the Header and acquire all of their children.
+			{"where", "headerID", headerID},			-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
+			{"pop"},									-- Discard the Header and acquire all of their children.
+		}
+	end,
 	-- Pet Battle Rewards
 	["common_pb_rewards"] = function(itemID)
 		return {

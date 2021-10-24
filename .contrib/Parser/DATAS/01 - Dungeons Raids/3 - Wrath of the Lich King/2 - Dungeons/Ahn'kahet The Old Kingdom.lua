@@ -256,62 +256,15 @@ _.Instances = { tier(WOTLK_TIER, {
 					})),
 				},
 			}),
+			-- #if AFTER 6.2.3.20601
 			d(24, {	-- Timewalking
-				["lvl"] = 81,
-				["groups"] = {
-					cr(29309, e(580, {	-- Elder Nadox
-						i(127607),	-- Blade of Nadox
-						i(127619),	-- Brood Plague Helmet
-						i(127621),	-- Elder Headpiece
-						i(127616),	-- Glowworm Cavern Bindings
-						i(127608),	-- Ahn'kahar Handwraps
-						i(127609),	-- Crawler-Emblem
-						i(127618),	-- Nerubian Shield Ring
-					})),
-					cr(29308, e(581, {	-- Prince Taldaram
-						i(127622),	-- Necklace of Taldaram
-						i(127611),	-- Slasher's Amulet
-						i(127620),	-- Sprinting Shoulderpads
-						i(127642),	-- Subterranean Waterfall Shroud
-						i(127623),	-- Bonegrinder Breastplate
-						i(127624),	-- Flame Sphere Bindings
-						i(127625),	-- Gauntlets of the Plundering Geist
-						i(127612),	-- Gloves of the Blood Prince
-					})),
-					cr(30258, e(583, {	-- Amanitar
-						i(127643),	-- Amanitar Skullbow
-						i(127644),	-- Amulet of the Spell Flinger
-						i(127613),	-- Mantle of Echoing Bats
-						i(127617),	-- Spored Tendrils Spaulders
-						i(127646),	-- Silken Bridge Handwraps
-						i(127635),	-- Web Winder Gloves
-						i(127614),	-- Pyramid Embossed Belt
-						i(127645),	-- Legguards of Swarming Attacks
-						i(127615),	-- Volazj's Sabatons
-					})),
-					cr(29310, e(582, {	-- Jedoga Shadowseeker
-						i(127640),	-- Edge of Oblivion
-						i(127647),	-- Ice-Rimed Chopper
-						i(127610),	-- Talisman of Scourge Command
-						i(127639),	-- Faceguard of the Hammer Clan
-						i(127641),	-- Shadowseeker's Pendant
-						i(127637),	-- Cloak of the Darkcaster
-						i(127638),	-- Battlechest of the Twilight Cult
-						i(127636),	-- Jedoga's Greatring
-						i(127634),	-- Stained-Glass Shard Ring
-					})),
-					cr(29311, e(584, {	-- Herald Volazj
-						i(127628),	-- Staff of Sinister Claws
-						i(127626),	-- Titanium Compound Bow
-						i(127630),	-- Wand of Ahn'kahet
-						i(127631),	-- Bracers of the Herald
-						i(127633),	-- Fiery Obelisk Handguards
-						i(127627),	-- Kilt of the Forgotten One
-						i(127632),	-- Skirt of the Old Kingdom
-						i(127629),	-- Greaves of Ancient Evil
-					})),
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 271 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

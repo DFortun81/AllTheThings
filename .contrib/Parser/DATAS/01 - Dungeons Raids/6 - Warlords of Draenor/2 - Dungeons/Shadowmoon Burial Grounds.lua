@@ -186,56 +186,15 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
+			-- #if AFTER 8.1.5.29701
 			d(24, {	-- Timewalking
-				["lvl"] = 50,
-				["groups"] = {
-					e(1139, {	-- Sadana Bloodfury
-						["crs"] = { 75509 },
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, NECK},
-							{"sub", "common_wod_dungeon_drop", 24, BACK},
-						},
-						["g"] = {
-							i(110035),	-- Sadana's Grisly Visage
-						},
-					}),
-					e(1168, {	-- Nhallish
-						["crs"] = { 75829 },
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, WRIST},
-							{"sub", "common_wod_dungeon_drop", 24, CHEST},
-						},
-						["g"] = {
-							i(110036),	-- Nhallish's Bloody Polearm
-							i(110007),	-- Voidmender's Shadowgem
-						},
-					}),
-					e(1140, {	-- Bonemaw
-						["crs"] = { 75452 },
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, WAIST},
-							{"sub", "common_wod_dungeon_drop", 24, HANDS},
-						},
-						["g"] = {
-							i(110037),	-- Bonetooth Longbow
-							i(110012),	-- Bonemaw's Big Toe
-						},
-					}),
-					e(1160, {	-- Ner'zhul
-						["crs"] = { 76407 },
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, HEAD},
-							{"sub", "common_wod_dungeon_drop", 24, FEET},
-							{"sub", "common_wod_dungeon_drop", 24, FINGER},
-						},
-						["g"] = {
-							i(138806),	-- Illusion: Mark of Shadowmoon
-							i(110039),	-- Portal-Ripper's Staff
-							i(110038),	-- Ner'zhul's Ritual Blade
-						},
-					}),
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 537 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};

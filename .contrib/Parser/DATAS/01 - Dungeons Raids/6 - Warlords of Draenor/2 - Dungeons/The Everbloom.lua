@@ -249,74 +249,15 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
+			-- #if AFTER 8.1.5.29701
 			d(24, {	-- Timewalking
-				["lvl"] = 101,
-				["g"] = {
-					e(1214, {	-- Witherbark
-						["crs"] = { 81522 },	-- Witherbark
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, BACK},
-							{"sub", "common_wod_dungeon_drop", 24, HANDS},
-						},
-						["g"] = {
-							i(119175),	-- Leafhide Penetrator
-							i(109999),	-- Witherbark's Branch
-						},
-					}),
-					e(1207, {	-- Ancient Protectors
-						["crs"] = {
-							83894,	-- Dulhu
-							83893,	-- Earthshaper Telu
-							83892,	-- Life Warden Gola
-						},
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, WAIST},
-							{"sub", "common_wod_dungeon_drop", 24, LEGS},
-						},
-						["g"] = {
-							i(119176),	-- Interloper's Mossy Skull
-							i(110009),	-- Leaf of the Ancient Protectors
-						},
-					}),
-					e(1209, {	-- Xeri'tac
-						["crs"] = {
-							84666,	-- Xeri'tac (before pulling)
-							84550,	-- Xeri'tac
-						},
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, CHEST},
-							{"sub", "common_wod_dungeon_drop", 24, FEET},
-						},
-						["g"] = {
-							i(119173),	-- Dessicated Husk Shield
-							i(110019),	-- Xeri'tac's Unhatched Egg Sac
-						},
-					}),
-					e(1208, {	-- Archmage Sol
-						["crs"] = { 82682 },	-- Archmage Sol
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, HEAD},
-							{"sub", "common_wod_dungeon_drop", 24, WRIST},
-						},
-						["g"] = {
-							i(119174),	-- Sol's Magestaff
-							i(110014),	-- Spores of Alacrity
-						},
-					}),
-					e(1210, {	-- Yalnu
-						["crs"] = { 83846 },	-- Yalnu
-						["sym"] = {
-							{"sub", "common_wod_dungeon_drop", 24, NECK},
-							{"sub", "common_wod_dungeon_drop", 24, SHOULDER},
-							{"sub", "common_wod_dungeon_drop", 24, FINGER},
-						},
-						["g"] = {
-							i(119181),	-- Hoof of Yalnu
-							i(110004),	-- Coagulated Genesaur Blood
-						},
-					}),
+				["sym"] = {	-- link in Timewalking content
+					{ "select", "instanceID", 556 },	-- select this instance
+					{ "isnt", "coords" },				-- only the main entry of the instance contains the coords field
+					{ "pop" },							-- pop the instance header
 				},
 			}),
+			-- #endif
 		},
 	}),
 })};
