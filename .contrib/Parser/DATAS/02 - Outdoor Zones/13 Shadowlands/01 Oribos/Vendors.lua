@@ -1029,6 +1029,10 @@ _.Zones =
 					--	Shadowlands S2
 					--	Weapons (putting first for now in case they add covenant-locked stuff later)
 						n(WEAPONS, {
+							i(188660, {	-- Unchained Gladiator's Barrier
+								["cost"] = { { "c", 1602, 450 } },	-- 450x Conquest
+								["timeline"] = { "added 9.1.5" },
+							}),
 							i(185200, {	-- Unchained Gladiator's Ceremonial Sword
 								["cost"] = { { "c", 1602, 1350 } },	-- 1,350x Conquest
 							}),
@@ -1038,11 +1042,27 @@ _.Zones =
 							i(185317, {	-- Unchained Gladiator's Dory
 								["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
 							}),
+							i(188663, {	-- Unchained Gladiator's Focus Staff
+								["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
+								["timeline"] = { "added 9.1.5" },
+							}),
+							i(188661, {	-- Unchained Gladiator's Gavel
+								["cost"] = { { "c", 1602, 1350 } },	-- 1,350x Conquest
+								["timeline"] = { "added 9.1.5" },
+							}),
 							i(185199, {	-- Unchained Gladiator's Gladius
 								["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
 							}),
 							i(185301, {	-- Unchained Gladiator's Greataxe
 								["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
+							}),
+							i(188662, {	-- Unchained Gladiator's Greatstaff
+								["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
+								["timeline"] = { "added 9.1.5" },
+							}),
+							i(188668, {	-- Unchained Gladiator's Greatsword
+								["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
+								["timeline"] = { "added 9.1.5" },
 							}),
 							i(185126, {	-- Unchained Gladiator's Guard
 								["cost"] = { { "c", 1602, 450 } },	-- 450x Conquest
@@ -1056,8 +1076,24 @@ _.Zones =
 							i(185201, {	-- Unchained Gladiator's Lightbow
 								["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
 							}),
+							i(188664, {	-- Unchained Gladiator's Mageblade
+								["cost"] = { { "c", 1602, 1350 } },	-- 1,350x Conquest
+								["timeline"] = { "added 9.1.5" },
+							}),
+							i(188666, {	-- Unchained Gladiator's Rifle
+								["cost"] = { { "c", 1602, 1800 } },	-- 1,800x Conquest
+								["timeline"] = { "added 9.1.5" },
+							}),
+							i(188667, {	-- Unchained Gladiator's Ripper
+								["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
+								["timeline"] = { "added 9.1.5" },
+							}),
 							i(185316, {	-- Unchained Gladiator's Ritual Dagger
 								["cost"] = { { "c", 1602, 1350 } },	-- 1,350x Conquest
+							}),
+							i(188665, {	-- Unchained Gladiator's Slicer
+								["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest
+								["timeline"] = { "added 9.1.5" },
 							}),
 							i(185125, {	-- Unchained Gladiator's Splitter
 								["cost"] = { { "c", 1602, 900 } },	-- 900x Conquest

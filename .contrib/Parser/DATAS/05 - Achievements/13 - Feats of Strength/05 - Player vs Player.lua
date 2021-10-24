@@ -1286,11 +1286,17 @@ _.Achievements =
 				}),
 			})),
 			n(-694, {	-- Unchained Gladiator: Shadowlands Season 2
-				ach(14969),		-- Challenger: Shadowlands Season 2
-				ach(14968, {		-- Combatant: Shadowlands Season 2
+				ach(14969),		-- Challenger I: Shadowlands Season 2
+				ach(15233, {	-- Challenger II: Shadowlands Season 2
+					["timeline"] = { "added 9.1.5" },
+				}),
+				ach(14968, {	-- Combatant I: Shadowlands Season 2
 					title(78, {	-- Combatant <Name>
 						["collectible"] = false,
 					}),
+				}),
+				ach(15232, {	-- Combatant II: Shadowlands Season 2
+					["timeline"] = { "added 9.1.5" },
 				}),
 				ach(14971, {	-- Duelist: Shadowlands Season 2
 					i(185302),	-- Unchained Gladiator's Prestigious Cloak
@@ -1306,9 +1312,12 @@ _.Achievements =
 				ach(14976, {	-- Hero of the Horde: Unchained
 					["races"] = HORDE_ONLY,
 				}),
-				ach(14970),	-- Rival: Shadowlands Season 2
+				ach(14970),	-- Rival I: Shadowlands Season 2
 				ach(14973, {	-- Unchained Gladiator: Shadowlands Season 2
 					title(441),	-- Unchained Gladiator <Name>
+				}),
+				ach(15234, {	-- Rival II: Shadowlands Season 2
+					["timeline"] = { "added 9.1.5" },
 				}),
 			}),
 			un(REMOVED_FROM_GAME, ach(1161, {		-- High Five: 2200

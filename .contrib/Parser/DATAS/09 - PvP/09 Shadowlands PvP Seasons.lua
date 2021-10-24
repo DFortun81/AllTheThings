@@ -652,16 +652,43 @@ _.PVP =
 					i(185306),	-- Unchained Gladiator's Sigil of Adaptation
 				}),
 				n(WEAPONS, {
+					i(188660, {	-- Unchained Gladiator's Barrier
+						["timeline"] = { "added 9.1.5" },
+					}),
 					i(185200),	-- Unchained Gladiator's Ceremonial Sword
 					i(185203),	-- Unchained Gladiator's Chalice
 					i(185317),	-- Unchained Gladiator's Dory
+					i(188663, {	-- Unchained Gladiator's Focus Staff
+						["timeline"] = { "added 9.1.5" },
+					}),
+					i(188661, {	-- Unchained Gladiator's Gavel
+						["timeline"] = { "added 9.1.5" },
+					}),
 					i(185199),	-- Unchained Gladiator's Gladius
 					i(185301),	-- Unchained Gladiator's Greataxe
+					i(188662, {	-- Unchained Gladiator's Greatstaff
+						["timeline"] = { "added 9.1.5" },
+					}),
+					i(188668, {	-- Unchained Gladiator's Greatsword
+						["timeline"] = { "added 9.1.5" },
+					}),
 					i(185126),	-- Unchained Gladiator's Guard
 					i(185314),	-- Unchained Gladiator's Hacker
 					i(185202),	-- Unchained Gladiator's Knife
 					i(185201),	-- Unchained Gladiator's Lightbow
+					i(188664, {	-- Unchained Gladiator's Mageblade
+						["timeline"] = { "added 9.1.5" },
+					}),
+					i(188666, {	-- Unchained Gladiator's Rifle
+						["timeline"] = { "added 9.1.5" },
+					}),
+					i(188667, {	-- Unchained Gladiator's Ripper
+						["timeline"] = { "added 9.1.5" },
+					}),
 					i(185316),	-- Unchained Gladiator's Ritual Dagger
+					i(188665, {	-- Unchained Gladiator's Slicer
+						["timeline"] = { "added 9.1.5" },
+					}),
 					i(185125),	-- Unchained Gladiator's Splitter
 					i(185300),	-- Unchained Gladiator's Vesper
 					i(185312),	-- Unchained Gladiator's Warglaive
@@ -766,18 +793,45 @@ _.PVP =
 					i(185306),	-- Unchained Gladiator's Sigil of Adaptation
 				}),
 				n(WEAPONS, {
+					i(188660, {	-- Unchained Gladiator's Barrier
+						["timeline"] = { "added 9.1.5" },
+					}),
 					i(185200),	-- Unchained Gladiator's Ceremonial Sword
 					i(185203),	-- Unchained Gladiator's Chalice
 					i(185317),	-- Unchained Gladiator's Dory
+					i(188663, {	-- Unchained Gladiator's Focus Staff
+						["timeline"] = { "added 9.1.5" },
+					}),
+					i(188661, {	-- Unchained Gladiator's Gavel
+						["timeline"] = { "added 9.1.5" },
+					}),
 					i(185199),	-- Unchained Gladiator's Gladius
 					i(185301),	-- Unchained Gladiator's Greataxe
+					i(188662, {	-- Unchained Gladiator's Greatstaff
+						["timeline"] = { "added 9.1.5" },
+					}),
+					i(188668, {	-- Unchained Gladiator's Greatsword
+						["timeline"] = { "added 9.1.5" },
+					}),
 					i(185126),	-- Unchained Gladiator's Guard
 					i(185314),	-- Unchained Gladiator's Hacker
 					i(185202),	-- Unchained Gladiator's Knife
 					i(185201, {	-- Unchained Gladiator's Lightbow
 						["modID"] = 44,	-- this item does not use modID 14
 					}),
+					i(188664, {	-- Unchained Gladiator's Mageblade
+						["timeline"] = { "added 9.1.5" },
+					}),
+					i(188666, {	-- Unchained Gladiator's Rifle
+						["timeline"] = { "added 9.1.5" },
+					}),
+					i(188667, {	-- Unchained Gladiator's Ripper
+						["timeline"] = { "added 9.1.5" },
+					}),
 					i(185316),	-- Unchained Gladiator's Ritual Dagger
+					i(188665, {	-- Unchained Gladiator's Slicer
+						["timeline"] = { "added 9.1.5" },
+					}),
 					i(185125),	-- Unchained Gladiator's Splitter
 					i(185300, {	-- Unchained Gladiator's Vesper
 						["modID"] = 40,	-- this item does not use modID 14
