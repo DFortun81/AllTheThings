@@ -51,6 +51,7 @@ _.Achievements =
 				["u"] = REMOVED_FROM_GAME,	-- Unobtainable after MoP Launch
 			}),
 			un(REMOVED_FROM_GAME, ach(7852)),		-- They're Both Footballs?
+			ach(15308),								-- Tower Overwhelming
 			un(REMOVED_FROM_GAME, ach(4887)),		-- Tripping the Rifts
 			un(REMOVED_FROM_GAME, ach(2456)),		-- Vampire Hunter
 			un(REMOVED_FROM_GAME, ach(5533)),		-- Veteran of the Shifting Sands

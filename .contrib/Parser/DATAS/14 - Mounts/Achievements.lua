@@ -92,6 +92,7 @@ _.Mounts =
 		i(44842),	-- Red Dragonhawk
 		i(44160),	-- Red Proto-Drake
 		i(45802),	-- Rusted Proto-Drake
+		i(188674),	-- Soaring Spelltome
 		i(182717),	-- Sintouched Deathwalker
 		i(169194),	-- Snapback Scuttler
 		i(128706),	-- Soaring Skyterror

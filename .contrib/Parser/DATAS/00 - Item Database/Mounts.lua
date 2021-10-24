@@ -428,3 +428,4 @@ i(186495, 353858);	-- Winter Wilderling
 -- PATCH 9.1.5 --
 -----------------
 i(187595, 359013);	-- Val'sharah Hippogryph
+i(188674, 359318);	-- Soaring Spelltome
