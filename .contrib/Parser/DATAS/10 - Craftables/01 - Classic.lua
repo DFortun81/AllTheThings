@@ -969,8 +969,6 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			}),
 		}),
 		filter(1, {		-- Held in Off-hand
-			i(34486),	-- Old Crafty
-			i(34484),	-- Old Ironjaw
 			i(6292),	-- 10 Pound Mud Snapper
 			i(6294),	-- 12 Pound Mud Snapper
 			i(6295),	-- 15 Pound Mud Snapper
@@ -1086,6 +1084,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(3819),	-- Wintersbite [Herbalism 195]
 		},
 	}),
+	-- #if AFTER WRATH
 	prof(INSCRIPTION, {
 		filter(111, {	-- Glyphs
 			i(89868, {	-- Glyph of the Cheetah
@@ -1093,25 +1092,13 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				["classes"] = { DRUID },
 			}),
 		}),
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			i(44161, {	-- Arcane Tarot
 				i(44165),	-- Ace of Mages
 				i(44144),	-- Two of Mages
 				i(44145),	-- Three of Mages
 				i(44146),	-- Four of Mages
 				i(44147),	-- Five of Mages
-			}),
-			i(19228, {	-- Beasts Deck
-				["cost"] = {
-					{ "i", 19227, 1 },	-- Ace of Beasts
-					{ "i", 19230, 1 },	-- Two of Beasts
-					{ "i", 19231, 1 },	-- Three of Beasts
-					{ "i", 19232, 1 },	-- Four of Beasts
-					{ "i", 19233, 1 },	-- Five of Beasts
-					{ "i", 19234, 1 },	-- Six of Beasts
-					{ "i", 19235, 1 },	-- Seven of Beasts
-					{ "i", 19236, 1 },	-- Eight of Beasts
-				},
 			}),
 			i(44316, {	-- Darkmoon Card
 				i(19227),	-- Ace of Beasts
@@ -1147,59 +1134,10 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(19264),	-- Seven of Warlords
 				i(19265),	-- Eight of Warlords
 			}),
-			i(44158, {	-- Demons Deck
-				["cost"] = {
-					{ "i", 44143, 1 },	-- Ace of Demons
-					{ "i", 44154, 1 },	-- Two of Demons
-					{ "i", 44155, 1 },	-- Three of Demons
-					{ "i", 44156, 1 },	-- Four of Demons
-					{ "i", 44157, 1 },	-- Five of Demons
-				},
-			}),
-			i(19267, {	-- Elementals Deck
-				["cost"] = {
-					{ "i", 19268, 1 },	-- Ace of Elementals
-					{ "i", 19269, 1 },	-- Two of Elementals
-					{ "i", 19270, 1 },	-- Three of Elementals
-					{ "i", 19271, 1 },	-- Four of Elementals
-					{ "i", 19272, 1 },	-- Five of Elementals
-					{ "i", 19273, 1 },	-- Six of Elementals
-					{ "i", 19274, 1 },	-- Seven of Elementals
-					{ "i", 19275, 1 },	-- Eight of Elementals
-				},
-			}),
-			i(44148, {	-- Mages Deck
-				["cost"] = {
-					{ "i", 44165, 1 },	-- Ace of Mages
-					{ "i", 44144, 1 },	-- Two of Mages
-					{ "i", 44145, 1 },	-- Three of Mages
-					{ "i", 44146, 1 },	-- Four of Mages
-					{ "i", 44147, 1 },	-- Five of Mages
-				},
-			}),
 			i(37168, {	-- Mysterious Tarot
 				i(37140),	-- Ace of Rogues
 				i(37143),	-- Two of Rogues
 				i(37156),	-- Three of Rogues
-			}),
-			i(19277, {	-- Portals Deck
-				["cost"] = {
-					{ "i", 19276, 1 },	-- Ace of Portals
-					{ "i", 19278, 1 },	-- Two of Portals
-					{ "i", 19279, 1 },	-- Three of Portals
-					{ "i", 19280, 1 },	-- Four of Portals
-					{ "i", 19281, 1 },	-- Five of Portals
-					{ "i", 19282, 1 },	-- Six of Portals
-					{ "i", 19283, 1 },	-- Seven of Portals
-					{ "i", 19284, 1 },	-- Eight of Portals
-				},
-			}),
-			i(37163, {	-- Rogues Deck
-				["cost"] = {
-					{ "i", 37140, 1 },	-- Ace of Rogues
-					{ "i", 37143, 1 },	-- Two of Rogues
-					{ "i", 37156, 1 },	-- Three of Rogues
-				},
 			}),
 			i(44163, {	-- Shadowy Tarot
 				i(44143),	-- Ace of Demons
@@ -1214,26 +1152,6 @@ _.Craftables = { tier(CLASSIC_TIER, {
 				i(37159),	-- Three of Swords
 				i(37160),	-- Four of Swords
 			}),
-			i(37164, {	-- Swords Deck
-				["cost"] = {
-					{ "i", 37145, 1 },	-- Ace of Swords
-					{ "i", 37147, 1 },	-- Two of Swords
-					{ "i", 37159, 1 },	-- Three of Swords
-					{ "i", 37160, 1 },	-- Four of Swords
-				},
-			}),
-			i(19257, {	-- Warlords Deck
-				["cost"] = {
-					{ "i", 19258, 1 },	-- Ace of Warlords
-					{ "i", 19259, 1 },	-- Two of Warlords
-					{ "i", 19260, 1 },	-- Three of Warlords
-					{ "i", 19261, 1 },	-- Four of Warlords
-					{ "i", 19262, 1 },	-- Five of Warlords
-					{ "i", 19263, 1 },	-- Six of Warlords
-					{ "i", 19264, 1 },	-- Seven of Warlords
-					{ "i", 19265, 1 },	-- Eight of Warlords
-				},
-			}),
 		}),
 		filter(1, {	-- Off-hand
 			i(43661),	-- Book of Stars
@@ -1247,6 +1165,7 @@ _.Craftables = { tier(CLASSIC_TIER, {
 			i(43654),	-- Tome of the Dawn
 		}),
 	}),
+	-- #endif
 	-- #if AFTER TBC
 	prof(JEWELCRAFTING, {
 		filter(52, {	-- Finger

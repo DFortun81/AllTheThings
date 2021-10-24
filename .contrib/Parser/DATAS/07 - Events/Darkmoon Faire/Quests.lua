@@ -309,7 +309,7 @@ _.WorldEvents =
 					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
 				},
 			}),
-			q(7907, {	-- Darkmoon Beast Deck
+			applyclassicphase(PHASE_THREE, q(7907, {	-- Darkmoon Beast Deck
 				["providers"] = {
 					{ "i", 19228 },	-- Beasts Deck
 					{ "n", 14847 },	-- Professor Thaddeus
@@ -320,8 +320,8 @@ _.WorldEvents =
 				["g"] = {
 					i(19288),	-- Darkmoon Card: Blue Dragon
 				},
-			}),
-			q(10938, {	-- Darkmoon Blessings Deck
+			})),
+			applyclassicphase(TBC_PHASE_THREE, q(10938, {	-- Darkmoon Blessings Deck
 				["providers"] = {
 					{ "i", 31890 },	-- Blessings Deck
 					{ "n", 14847 },	-- Professor Thaddeus
@@ -332,8 +332,8 @@ _.WorldEvents =
 				["g"] = {
 					i(31856),	-- Darkmoon Card: Crusade
 				},
-			}),
-			q(13325, {	-- Darkmoon Chaos Deck
+			})),
+			applyclassicphase(WRATH_PHASE_ONE, q(13325, {	-- Darkmoon Chaos Deck
 				["providers"] = {
 					{ "i", 44276 },	-- Chaos Deck
 					{ "n", 14847 },	-- Professor Thaddeus
@@ -344,7 +344,7 @@ _.WorldEvents =
 				["g"] = {
 					i(42989),	-- Darkmoon Card: Berserker!
 				},
-			}),
+			})),
 			q(30449, {	-- Darkmoon Crane Deck
 				["providers"] = {
 					{ "i", 79325 },	-- Crane Deck
@@ -369,7 +369,7 @@ _.WorldEvents =
 					i(62048),	-- Darkmoon Card: Earthquake
 				},
 			}),
-			q(7929,  {	-- Darkmoon Elementals Deck
+			applyclassicphase(PHASE_THREE, q(7929,  {	-- Darkmoon Elementals Deck
 				["providers"] = {
 					{ "i", 19267 },	-- Elementals Deck
 					{ "n", 14847 },	-- Professor Thaddeus
@@ -380,8 +380,8 @@ _.WorldEvents =
 				["g"] = {
 					i(19289),	-- Darkmoon Card: Maelstrom
 				},
-			}),
-			q(10940, {	-- Darkmoon Furies Deck
+			})),
+			applyclassicphase(TBC_PHASE_THREE, q(10940, {	-- Darkmoon Furies Deck
 				["providers"] = {
 					{ "i", 31907 },	-- Furies Deck
 					{ "n", 14847 },	-- Professor Thaddeus
@@ -392,7 +392,7 @@ _.WorldEvents =
 				["g"] = {
 					i(31858),	-- Darkmoon Card: Vengeance
 				},
-			}),
+			})),
 			q(27665, {	-- Darkmoon Hurricane Deck
 				["providers"] = {
 					{ "i", 62045 },	-- Hurricane Deck
@@ -406,7 +406,7 @@ _.WorldEvents =
 					i(62049),	-- Darkmoon Card: Hurricane
 				},
 			}),
-			q(10941, {	-- Darkmoon Lunacy Deck
+			applyclassicphase(TBC_PHASE_THREE, q(10941, {	-- Darkmoon Lunacy Deck
 				["providers"] = {
 					{ "i", 31914 },	-- Lunacy Deck
 					{ "n", 14847 },	-- Professor Thaddeus
@@ -417,7 +417,7 @@ _.WorldEvents =
 				["g"] = {
 					i(31859),	-- Darkmoon Card: Madness
 				},
-			}),
+			})),
 			q(13326, {	-- Darkmoon Nobles Deck
 				["providers"] = {
 					{ "i", 44326 },	-- Nobles Deck
@@ -445,7 +445,7 @@ _.WorldEvents =
 					i(79329),	-- Relic of Niuzao
 				},
 			}),
-			q(7927,  {	-- Darkmoon Portals Deck
+			applyclassicphase(PHASE_THREE, q(7927,  {	-- Darkmoon Portals Deck
 				["providers"] = {
 					{ "i", 19277 },	-- Portals Deck
 					{ "n", 14847 },	-- Professor Thaddeus
@@ -456,7 +456,7 @@ _.WorldEvents =
 				["g"] = {
 					i(19290),	-- Darkmoon Card: Twisting Nether
 				},
-			}),
+			})),
 			q(13324, {	-- Darkmoon Prisms Deck
 				["providers"] = {
 					{ "i", 44259 },	-- Prisms Deck
@@ -481,7 +481,7 @@ _.WorldEvents =
 					i(79331),	-- Relic of Yu'lon
 				},
 			}),
-			q(10939, {	-- Darkmoon Storms Deck
+			applyclassicphase(TBC_PHASE_THREE, q(10939, {	-- Darkmoon Storms Deck
 				["providers"] = {
 					{ "i", 31891 },	-- Storms Deck
 					{ "n", 14847 },	-- Professor Thaddeus
@@ -492,7 +492,7 @@ _.WorldEvents =
 				["g"] = {
 					i(31857),	-- Darkmoon Card: Wrath
 				},
-			}),
+			})),
 			q(30452, {	-- Darkmoon Tiger Deck
 				["providers"] = {
 					{ "i", 79323 },	-- Tiger Deck
@@ -542,7 +542,7 @@ _.WorldEvents =
 					i(62047),	-- Darkmoon Card: Volcano
 				},
 			}),
-			q(7928,  {	-- Darkmoon Warlords Deck
+			applyclassicphase(PHASE_THREE, q(7928,  {	-- Darkmoon Warlords Deck
 				["providers"] = {
 					{ "i", 19257 },	-- Warlords Deck
 					{ "n", 14847 },	-- Professor Thaddeus
@@ -553,7 +553,7 @@ _.WorldEvents =
 				["g"] = {
 					i(19287),	-- Darkmoon Card: Heroism
 				},
-			}),
+			})),
 			q(13311, {	-- Demons Deck
 				["provider"] = { "i", 44158 },	-- Demons Deck
 				["repeatable"] = true,
