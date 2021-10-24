@@ -326,6 +326,15 @@ local insertionSort = function(t, compare)
 		end
 	end
 end
+local sortByTextSafely = function(a, b)
+	if a and a.text then
+		if b and b.text then
+			return a.text <= b.text;
+		end
+		return true;
+	end
+	return false;
+end;
 -- Performs table.concat(tbl, sep, i, j) on the given table, but uses the specified field of table values if provided,
 -- with a default fallback value if the field does not exist on the table entry
 app.TableConcat = function (tbl, field, def, sep, i, j)
@@ -1782,6 +1791,11 @@ end
 local function GetRelativeValue(group, field)
 	if group then
 		return group[field] or GetRelativeValue(group.sourceParent or group.parent, field);
+	end
+end
+local function GetDeepestRelativeValue(group, field)
+	if group then
+		return GetDeepestRelativeValue(group.sourceParent or group.parent, field) or group[field];
 	end
 end
 -- Returns the ItemID of the group (if existing) with a decimal portion containing the modID/100 and bonusID/1000000
@@ -14957,10 +14971,11 @@ function app:GetDataCache()
 			tinsert(g, db);
 		end
 
-		-- World Drops / Bind on Equips
+		-- World Drops
 		if app.Categories.WorldDrops then
 			db = {};
 			db.g = app.Categories.WorldDrops;
+			db.isWorldDropCategory = true;
 			db.expanded = false;
 			db.text = TRANSMOG_SOURCE_4;
 			db.icon = app.asset("Category_WorldDrops");
@@ -15003,6 +15018,7 @@ function app:GetDataCache()
 			db = app.CreateNPC(-3);
 			db.g = app.Categories.Holidays;
 			db.icon = app.asset("Category_Holidays");
+			db.isHolidayCategory = true;
 			db.expanded = false;
 			db.text = GetItemSubClassInfo(15,3);
 			tinsert(g, db);
@@ -15026,6 +15042,7 @@ function app:GetDataCache()
 			db.description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.";
 			db.icon = app.asset("Category_Promo");
 			db.g = app.Categories.Promotions;
+			db.isPromotionCategory = true;
 			db.expanded = false;
 			tinsert(g, db);
 		end
@@ -15066,6 +15083,7 @@ function app:GetDataCache()
 		if app.Categories.PVP then
 			db = {};
 			db.g = app.Categories.PVP;
+			db.isPVPCategory = true;
 			db.expanded = false;
 			db.text = STAT_CATEGORY_PVP;
 			db.icon = app.asset("Category_PvP");
@@ -15179,7 +15197,7 @@ function app:GetDataCache()
 			db.sourceIgnored = true;
 			tinsert(g, db);
 		end
-
+		
 		-- Toys
 		if app.Categories.Toys then
 			db = {};
@@ -15465,7 +15483,29 @@ function app:GetDataCache()
 			return db;
 		end)());
 		--]]
-
+		
+		
+		--[[
+		-- More attempts at dynamically built sections.
+		-- Titles
+		local titlesCategory = {};
+		titlesCategory.g = {};
+		titlesCategory.titles = {};
+		titlesCategory.expanded = false;
+		titlesCategory.text = PAPERDOLL_SIDEBAR_TITLES;
+		titlesCategory.icon = app.asset("Category_Titles");
+		table.insert(g, titlesCategory);
+		
+		-- Toys
+		local toyCategory = {};
+		toyCategory.g = {};
+		toyCategory.toys = {};
+		toyCategory.expanded = false;
+		toyCategory.text = TOY_BOX;
+		toyCategory.icon = app.asset("Category_ToyBox");
+		table.insert(g, toyCategory);
+		]]--
+		
 		-- Track Deaths!
 		tinsert(g, app:CreateDeathClass());
 
@@ -15550,7 +15590,142 @@ function app:GetDataCache()
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
-
+		
+		local buildCategoryEntry = function(self, headers, searchResults, inst)
+			local header = self;
+			for j,o in ipairs(searchResults) do
+				if o.u and o.u == 1 then
+					return nil;
+				else
+					for key,value in pairs(o) do rawset(inst, key, value); end
+					if o.parent then
+						if not o.sourceQuests then
+							local questID = GetRelativeValue(o, "questID");
+							if questID then
+								if not inst.sourceQuests then
+									inst.sourceQuests = {};
+								end
+								if not contains(inst.sourceQuests, questID) then
+									tinsert(inst.sourceQuests, questID);
+								end
+							else
+								local sourceQuests = GetRelativeValue(o, "sourceQuests");
+								if sourceQuests then
+									if not inst.sourceQuests then
+										inst.sourceQuests = {};
+										for k,questID in ipairs(sourceQuests) do
+											tinsert(inst.sourceQuests, questID);
+										end
+									else
+										for k,questID in ipairs(sourceQuests) do
+											if not contains(inst.sourceQuests, questID) then
+												tinsert(inst.sourceQuests, questID);
+											end
+										end
+									end
+								end
+							end
+						end
+						
+						if GetRelativeValue(o, "isHolidayCategory") then
+							header = headers[-3];
+							if not header then
+								header = app.CreateNPC(-3);
+								headers[-3] = header;
+								tinsert(self.g, header);
+								header.parent = self;
+								header.g = {};
+							end
+						elseif GetRelativeValue(o, "isPromotionCategory") then
+							header = headers["promo"];
+							if not header then
+								header = {};
+								header.text = BATTLE_PET_SOURCE_8;
+								header.icon = app.asset("Category_Promo");
+								headers["promo"] = header;
+								tinsert(self.g, header);
+								header.parent = self;
+								header.g = {};
+							end
+						elseif GetRelativeValue(o, "isPVPCategory") then
+							header = headers["pvp"];
+							if not header then
+								header = {};
+								header.text = PVP;
+								header.icon = app.asset("Category_PvP");
+								headers["pvp"] = header;
+								tinsert(self.g, header);
+								header.parent = self;
+								header.g = {};
+							end
+						elseif o.parent.headerID == 0 or o.parent.headerID == -1 or o.parent.headerID == -82 or GetRelativeValue(o, "isWorldDropCategory") then
+							header = headers["drop"];
+							if not header then
+								header = {};
+								header.text = BATTLE_PET_SOURCE_1;
+								header.icon = app.asset("Category_WorldDrops");
+								headers["drop"] = header;
+								tinsert(self.g, header);
+								header.parent = self;
+								header.g = {};
+							end
+						elseif o.parent.key == "npcID" then
+							if GetRelativeValue(o, "headerID") == -2 then
+								header = headers[-2];
+								if not header then
+									header = app.CreateNPC(-2);
+									headers[-2] = header;
+									tinsert(self.g, header);
+									header.parent = self;
+									header.g = {};
+								end
+							else
+								header = headers["drop"];
+								if not header then
+									header = {};
+									header.text = BATTLE_PET_SOURCE_1;
+									header.icon = app.asset("Category_WorldDrops");
+									headers["drop"] = header;
+									tinsert(self.g, header);
+									header.parent = self;
+									header.g = {};
+								end
+							end
+						elseif o.parent.key == "categoryID" then
+							header = headers["crafted"];
+							if not header then
+								header = {};
+								header.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
+								header.icon = app.asset("Category_Crafting");
+								headers["crafted"] = header;
+								tinsert(self.g, header);
+								header.parent = self;
+								header.g = {};
+							end
+						else
+							local headerID = GetDeepestRelativeValue(o, "headerID");
+							if headerID then
+								header = headers[headerID];
+								if not header then
+									header = app.CreateNPC(headerID);
+									headers[headerID] = header;
+									tinsert(self.g, header);
+									header.parent = self;
+									header.g = {};
+								end
+							end
+						end
+					end
+				end
+			end
+			inst.parent = header;
+			inst.progress = nil;
+			inst.total = nil;
+			inst.g = nil;
+			tinsert(inst.parent.g, inst);
+			return inst;
+		end
+		
 		-- Update Faction data.
 		--[[
 		-- TODO: Make a dynamic Factions section. It works, but we have one already, so we don't need it.
@@ -15627,6 +15802,65 @@ function app:GetDataCache()
 		flightPathsCategory:OnUpdate();
 		-- Needed for externally updating only this group when collecting a flight path since the records are not cached
 		app.FlightPathsCategory = flightPathsCategory;
+		
+		-- Update Title data.
+		if titlesCategory then
+			titlesCategory.OnUpdate = function(self)
+				local headers, header = {};
+				for i,header in ipairs(self.g) do
+					if header.headerID and header.key == "headerID" then
+						headers[header.headerID] = header;
+						if not header.g then
+							header.g = {};
+						end
+					end
+				end
+				for i,_ in pairs(fieldCache["titleID"]) do
+					if not self.titles[i] then
+						self.titles[i] = buildCategoryEntry(self, headers, _, app.CreateTitle(tonumber(i)));
+					end
+				end
+				insertionSort(self.g, sortByTextSafely);
+				for i,header in pairs(headers) do
+					if not header.ignoreSort then
+						insertionSort(header.g, sortByTextSafely);
+					end
+				end
+				for i=#self.g,1,-1 do
+					header = self.g[i];
+					if header.g and #header.g < 1 and header.headerID and header.key == "headerID" then
+						headers[header.headerID] = nil;
+						table.remove(self.g, i);
+					end
+				end
+			end
+			titlesCategory:OnUpdate();
+		end
+		
+		-- Update Toy data.
+		if toyCategory then
+			toyCategory.OnUpdate = function(self)
+				local headers = {};
+				for i,header in ipairs(self.g) do
+					if header.headerID and header.key == "headerID" then
+						headers[header.headerID] = header;
+						if not header.g then
+							header.g = {};
+						end
+					end
+				end
+				for i,_ in pairs(fieldCache["toyID"]) do
+					if not self.toys[i] then
+						self.toys[i] = buildCategoryEntry(self, headers, _, app.CreateToy(tonumber(i)));
+					end
+				end
+				insertionSort(self.g, sortByTextSafely);
+				for i,header in pairs(headers) do
+					insertionSort(header.g, sortByTextSafely);
+				end
+			end
+			toyCategory:OnUpdate();
+		end
 
 		-- Perform Heirloom caching/upgrade generation
 		app.CacheHeirlooms();
