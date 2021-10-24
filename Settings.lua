@@ -1022,7 +1022,7 @@ scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
 scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
 scrollbar.back:SetColorTexture(0,0,0,0.4)
 scrollbar.back:SetAllPoints(scrollbar);
-scrollbar:SetMinMaxValues(0, 40); -- Adding more max value to the scrollbar is what controls the vertical size.
+scrollbar:SetMinMaxValues(0, 43); -- Adding more max value to the scrollbar is what controls the vertical size.
 scrollbar:SetValueStep(1);
 scrollbar.CurrentValue = 0;
 scrollbar:SetWidth(16);
