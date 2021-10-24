@@ -14,6 +14,10 @@ _.Zones =
 						i(127325),	-- Axe of the Weepiong Wolf
 					},
 				}),
+				o(243690, {	-- Bejeweled Egg
+					["questID"] = 39469,
+					["coord"] = { 65.9, 85.0, TANAAN_JUNGLE },
+				}),
 				o(241835, {	-- Bleeding Hollow Mushroom Stash
 					["questID"] = 38809,
 					["coords"] = {
@@ -22,6 +26,13 @@ _.Zones =
 					},
 					["g"] = {
 						i(128223),	-- Bottomless Stygana Mushroom Brew (TOY!)
+					},
+				}),
+				o(241560, {	-- Bleeding Hollow Warchest
+					["questID"] = 38678,
+					["coord"] = { 22.0, 47.9, TANAAN_JUNGLE },
+					["g"] = {
+						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(241742, {	-- Book of Zyzzix
@@ -37,6 +48,13 @@ _.Zones =
 					["description"] = "At the top of the watchtower.",
 					["g"] = {
 						i(128222),	-- Smokeglass Lens Spyglass
+					},
+				}),
+				o(241775, {	-- Brazier of Awakening
+					["questID"] = 38788,
+					["coord"] = { 37.8, 80.8, TANAAN_JUNGLE },
+					["g"] = {
+						i(127770),	-- Brazier of Awakening
 					},
 				}),
 				o(241563, {	-- Censer of Torment
@@ -67,6 +85,13 @@ _.Zones =
 						i(127859),	-- Dazzling Rod Toy
 					},
 				}),
+				o(243693, {	-- Dead Man's Chest
+					["questID"] = 39470,
+					["coord"] = { 55.0, 90.4, TANAAN_JUNGLE },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
 				o(241600, {	-- Discarded Helm
 					["questID"] = 38702,
 					["coord"] = { 49.9, 81.2, TANAAN_JUNGLE },
@@ -95,6 +120,20 @@ _.Zones =
 						i(127339),	-- Forgotten Champion's Blade
 					},
 				}),
+				o(241602, {	-- Forgotten Iron Horde Supplies
+					["questID"] = 38704,
+					["coord"] = { 69.8, 55.9, TANAAN_JUNGLE },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
+				o(241433, {	-- Forgotten Sack
+					["questID"] = 38591,
+					["coord"] = { 56.9, 65.1, TANAAN_JUNGLE },
+					["g"] = {
+						i(127408),	-- Adventuring Journal
+					},
+				}),
 				o(241671, {	-- Forgotten Shard of the Cipher
 					["questID"] = 38740,
 					["coord"] = { 63.3, 28.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
@@ -103,6 +142,13 @@ _.Zones =
 						q(39394,{	-- The Cipher of Damnation
 							i(128309),  -- Shard of Cyrukh Pet
 						}),
+					},
+				}),
+				o(241712, {	-- Ironbeard's Treasure
+					["questID"] = 38758,
+					["coord"] = { 35.9, 78.6, TANAAN_JUNGLE },
+					["g"] = {
+						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(240580, {	-- Jewel of Hellfire
@@ -163,12 +209,43 @@ _.Zones =
 						i(127337),	-- Emanating Staff of Shadow
 					},
 				}),
+				o(241666, {	-- Mysterious Corrupted Obelisk
+					["questID"] = 38739,
+					["coord"] = { 46.3, 72.8, TANAAN_JUNGLE },
+					["g"] = {
+						i(128320),	-- Corrupted Primal Obelisk
+					},
+				}),
 				o(241656, {	-- Overgrown Relic
 					["questID"] = 38731,
 					["coord"] = { 50.8, 64.9, TANAAN_JUNGLE },
 					["g"] = {
 						i(127412),	-- Luminous Relic Ring
 					}
+				}),
+				o(241524, {	-- Pale Removal Equipment
+					["questID"] = 38640,
+					["coord"] = { 37.1, 46.2, TANAAN_JUNGLE },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
+				o(242249, {	-- Partially Mined Apexis Crystal
+					["questID"] = 38863,
+					["coord"] = { 28.9, 34.6, TANAAN_JUNGLE },
+					["g"] = {
+						currency(823),	-- Apexis Crystal x150
+					},
+				}),
+				o(241504, {	-- Polished Crystal
+					["questID"] = 38629,
+					["coord"] = { 30.5, 71.9, TANAAN_JUNGLE },
+					["g"] = {
+						i(127389),	-- Polished Crystal
+						i(127390, {	-- Polished Crystal
+							["requireSkill"] = JEWELCRAFTING,
+						}),
+					},
 				}),
 				o(241566, {	-- Rune Etched Femur
 					["questID"] = 38686,
@@ -203,6 +280,45 @@ _.Zones =
 					["coord"] = { 40.6, 79.8, TANAAN_JUNGLE },
 					["g"] = {
 						i(127333),	-- Ogra'mal Snake Charming Flute
+					},
+				}),
+				o(241699, {	-- Spoils of War
+					["questID"] = 38755,
+					["coord"] = { 17.4, 57.0, TANAAN_JUNGLE },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
+				o(241764, {	-- Stashed Bleeding Hollow Loot
+					["questID"] = 38779,
+					["coord"] = { 73.6, 43.3, TANAAN_JUNGLE },
+				}),
+				o(241714, {	-- Stashed Iron Sea Booty
+					["questID"] = 38760,
+					["coord"] = { 33.9, 78.1, TANAAN_JUNGLE },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
+				o(241715, {	-- Stashed Iron Sea Booty
+					["questID"] = 38761,
+					["coord"] = { 35.0, 77.5, TANAAN_JUNGLE },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
+				o(241716, {	-- Stashed Iron Sea Booty
+					["questID"] = 38762,
+					["coord"] = { 34.5, 78.3, TANAAN_JUNGLE },
+					["g"] = {
+						currency(824),	-- Garrison Resources
+					},
+				}),
+				o(240543, {	-- Stolen Captain's Chest
+					["questID"] = 38283,
+					["coord"] = { 17.0, 52.9, TANAAN_JUNGLE },
+					["g"] = {
+						i(128219),	-- Fel-Smoked Ham
 					},
 				}),
 				o(241599, {	-- Strange Fruit

@@ -1098,6 +1098,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			q(35621),	-- Tarenar Sunstrike
 			q(37113),	-- Thisalee Crow
 			-- Quests below are completable somehow (I have them all) -Darkal
+			q(39396),	-- NOT USED - TODO: figure out from where it gets completed
 			q(33267),	-- [Deprecated] - TODO: figure out from where it gets completed
 		}),
 	}),
